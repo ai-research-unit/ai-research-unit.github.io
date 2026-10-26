@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="worked-examples-of-eigenbasis-of-a-biquaternion"><strong>Worked Examples of Eigenbasis of a Biquaternion</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article computes the eigenvalue decomposition, the eigenbasis, the nilpotents and the spinors of eight biquaternions, one after another. The eight elements are those of <em>Worked Examples of Exponential Polar Decomposition of Biquaternions</em>, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>; the existence of the eigenbasis is proved in <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>; its construction and the nilpotents are those of <em>Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</em>, §<em>The Corners and the Nilpotents</em> and §<em>The Eigenbasis</em>; no definition or proof is repeated.</p>
+<p>This article computes the eigenvalue decomposition, the eigenbasis, the nilpotents and the spinors of eight biquaternions, one after another. The eight elements are those of <em>Worked Examples of Exponential Polar Decomposition of Biquaternions</em>, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>; the existence of the eigenbasis is proved in <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>; its construction and the nilpotents are those of <em>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</em>, §<em>The Corners and the Nilpotents</em> and §<em>The Eigenbasis</em>; no definition or proof is repeated.</p>
 <p>Each case is read from the four complex coordinates $Q_t,Q_x,Q_y,Q_z$ of $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. Write</p>
 <p>$$
 B^2=Q_x^2+Q_y^2+Q_z^2,
@@ -277,7 +277,7 @@ $$</p>
 \qquad
 \mu\in\mathbb{C}^{\times}.
 $$</p>
-<p><em>Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</em> fixes one representative uniformly, by the symmetric closed form and its axis chart. The examples with $B\neq0$ below choose the auxiliary vector $\tilde Q_1$ case by case, so their representatives differ from that one by the rescaling above. The idempotents, the spectrum and the diagonal form do not depend on the choice.</p>
+<p><em>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</em> fixes one representative uniformly, by the symmetric closed form and its axis chart. The examples with $B\neq0$ below choose the auxiliary vector $\tilde Q_1$ case by case, so their representatives differ from that one by the rescaling above. The idempotents, the spectrum and the diagonal form do not depend on the choice.</p>
 <p><strong>The shared solution for $\vec Q=Q_x\vec e_x$.</strong> For cases 2 to 5 the vector part is along $\vec e_x$, so</p>
 <p>$$
 \vec\Xi=-i\vec e_x,
@@ -1038,7 +1038,7 @@ $$</p>
 \tilde Q^2=e_t+2\tilde N
 =e_t+i\sqrt2\,\vec e_x+2\vec e_y+i\sqrt2\,\vec e_z.
 $$</p>
-<p>The element is $N$-regular and of norm one, although its vector part is null.</p>
+<p>The element is $\natural$-regular and of norm one, although its vector part is null.</p>
 <h3 id="case-7-a-generic-direction">Case 7: A Generic Direction</h3>
 <p><strong>Coordinates.</strong> For</p>
 <p>$$
@@ -1270,7 +1270,7 @@ $$</p>
 <p>$$
 \tilde Q^n=(1+i)^n\left(e_t+\frac{n}{1+i}\tilde N\right).
 $$</p>
-<p>The vector part is null, but the norm is $2i\neq0$: the element is $N$-regular. A null vector part is not a null element.</p>
+<p>The vector part is null, but the norm is $2i\neq0$: the element is $\natural$-regular. A null vector part is not a null element.</p>
 <h2 id="summary">Summary</h2>
 <h3 id="main-results">Main Results</h3>
 <div class="table-scroll"><table>
@@ -1480,10 +1480,10 @@ $$</p>
 <li>Cases 2 to 5 have the same vector direction $\vec e_x$. They therefore have the same root $\vec\Xi=-i\vec e_x$, the same eigenprojections $\tilde\Pi_\pm$, and the same nilpotents $\vec\Upsilon_\pm$. Only the two eigenvalues change. The eigenbasis is attached to the direction of the vector part, not to its magnitude or to the scalar part. This is the biquaternion form of the statement that the eigenbasis is attached to the root.</li>
 <li>Case 4 has $B=i$ and real eigenvalues. The root need not be real for the spectrum to be real. The sign of the root exchanges the two eigenvalues and the two projectors.</li>
 <li>Case 6 is the unipotent case with a real scalar part. The vector part is null, $B=0$, and the element is $e_t$ plus a square-zero element. The eigenspace has dimension two, so there is no eigenbasis.</li>
-<li>Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is $N$-regular. A null vector part does not imply an $N$-degenerate element.</li>
-<li>None of the eight is $N$-degenerate. The $N$-degenerate regime with $B\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$ is not represented, and neither is the nilpotent subcase $Q_t=0$, $B=0$. Case 8 is the closest miss: its vector part is null, but its scalar part keeps the norm nonzero.</li>
+<li>Case 8 is the unipotent case with a complex scalar part. The vector part is again null, the norm is $2i\neq0$, and the element is $\natural$-regular. A null vector part does not imply an $\natural$-degenerate element.</li>
+<li>None of the eight is $\natural$-degenerate. The $\natural$-degenerate regime with $B\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$ is not represented, and neither is the nilpotent subcase $Q_t=0$, $B=0$. Case 8 is the closest miss: its vector part is null, but its scalar part keeps the norm nonzero.</li>
 <li>Case 1 is the scalar regime. Every basis is an eigenbasis, and the construction of the eigenbasis does not apply.</li>
-<li>Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the transverse-vector construction. The symmetric closed form of <em>Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</em>, §<em>The Transverse-Vector Construction</em>, gives an admissible pair up to the reciprocal rescaling when the direction is off the exceptional cone; the transverse-vector construction is the one used here.</li>
+<li>Case 7 is the generic direction. The nilpotents are not aligned with the axes, and they are computed from the transverse-vector construction. The symmetric closed form of <em>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</em>, §<em>The Transverse-Vector Construction</em>, gives an admissible pair up to the reciprocal rescaling when the direction is off the exceptional cone; the transverse-vector construction is the one used here.</li>
 <li>In the distinct regime the eigenvalues repeat twice in the four-dimensional eigenbasis, and they are distinct on each two-dimensional spinor space. The $2\times2$ model records the two values once, one for each column.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -1561,10 +1561,10 @@ $$</p>
 <ul>
 <li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, §<em>The Eigenprojectors</em>, for the eigenvalue decomposition and the eigenprojections.</li>
 <li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion, the two eigenvalues and the existence of the eigenbasis.</li>
-<li><a href="spectral-regularity-and-construction-of-the-eigenbasis-of-a-biquaternion.html">Spectral Regularity and Construction of the Eigenbasis of a Biquaternion</a>, for the construction of the eigenbasis, the nilpotent pair and the normalisation.</li>
-<li><a href="the-quaternionic-norm-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, for the generic sector $\Sigma_{11}$, the Peirce corners and the spinor spaces.</li>
-<li><a href="the-quaternionic-norm-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the scalar line and the Jordan part, where the construction stops.</li>
-<li><a href="spectral-regularity-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html">Spectral Regularity and Eigenbasis of a Biquaternion in Matrix Element Representations</a>, for the fixed model, the eigenbasis model, the diagonalising matrix and the $4\times4$ regular matrices.</li>
+<li><a href="the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html">The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</a>, for the construction of the eigenbasis, the nilpotent pair and the normalisation.</li>
+<li><a href="the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, for the generic sector $\Sigma_{11}$, the Peirce corners and the spinor spaces.</li>
+<li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the scalar line and the Jordan part, where the construction stops.</li>
+<li><a href="the-spectrally-regular-sector-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html">The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations</a>, for the fixed model, the eigenbasis model, the diagonalising matrix and the $4\times4$ regular matrices.</li>
 <li><a href="worked-examples-of-exponential-polar-decomposition-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition of Biquaternions</a>, for the same eight elements read through the polar word.</li>
 <li><a href="worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions</a>, for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.</li>
 <li><a href="worked-examples-of-eigenbasis-of-a-split-complex-number.html">Worked Examples of Eigenbasis of a Split-Complex Number</a>, for the two-dimensional commutative companion.</li>

@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its remarkable subspaces. The goal is to define the exponential, the logarithm, the power functions, the trigonometric and hyperbolic functions, and the inverse functions, and to compute them in closed form. The article mirrors <em>Quaternion Special Functions</em> in its treatment of the elementary functions, adapted to the complexified algebra. The exponential is treated in full: its closed form, its exponential coordinates at the identity, its group law, its kernel, and the exponentials in the two real directions of the trace-free part. Its Lie-group consequences — the group of units and the norm-one group — are in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
 <p>The logarithm is treated in the same detail as the exponential: the exponential equation, its two components $Q_{\log,t}$ and $\vec Q_{\log}$, the scalar part and the norm, the eigenvalue formula with the eigenvalues $Q_t\pm iB$ and the eigenprojections $\tilde\Pi_\pm$, the three cases, the parity-matched branch lattice, the principal branch and its cut walls, the principal domain on which the exponential is bijective, the two compositions, the derivative, and the value of the power function on all branches. The eigenvalue decomposition used throughout — the eigenvalues $\lambda_\pm=Q_t\pm iB$, the eigenprojections $\tilde\Pi_\pm$, the pure root $\vec\Xi$ and the parity-matched lattice — is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Eigenprojectors</em>, for the eigenvalues, the eigenprojections and the pure root, and of §<em>The Eigenvalue Formula</em> below for the parity-matched lattice; this article cites them and does not derive them. The worked examples are the kernel and logarithm computations and the counterexamples that establish the failure of the addition formulas.</p>
-<p>The treatment is purely mathematical. No physics is invoked. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, written $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, and its four conjugations. An element is <strong>$N$-regular</strong> when $N(\tilde Q)\neq0$ and <strong>$N$-degenerate</strong> when $N(\tilde Q)=0$.</p>
+<p>The treatment is purely mathematical. No physics is invoked. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its biquaternion norm, written $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$, and its four conjugations. An element is <strong>$\natural$-regular</strong> when $\langle\tilde Q\rangle_{\natural}\neq0$ and <strong>$\natural$-degenerate</strong> when $\langle\tilde Q\rangle_{\natural}=0$.</p>
 <p>The key structural fact is that the elementary functions of a biquaternion are determined by the <strong>powers</strong> of the biquaternion, and the powers simplify dramatically in two regimes: when the vector part has a nonzero <strong>complex norm</strong>, and when the complex norm vanishes. These two regimes cover all possibilities. The first is the <strong>oscillatory regime</strong>; the second contains the <strong>nilpotent case</strong>, where the vector part is nonzero and squares to zero, and the <strong>scalar case</strong>, where the vector part vanishes. The purpose of this article is to develop the elementary functions in all three cases, with the scalar case distinguished where its logarithm or its powers are larger.</p>
 <p>The higher special functions — Bessel, hypergeometric, gamma, zeta, and the functions arising from the analysis — are treated in the companion article on biquaternion higher special functions.</p>
 <p><strong>Plan.</strong> The spectral setting is recalled first, with the complex norm, the eigenvalue data, the regimes and the spectral calculus (§<em>The Spectral Setting</em>). The exponential and the logarithm follow, with their closed forms, kernels, images and fibres (§<em>The Exponential</em>, §<em>The Logarithm</em>); the powers and roots follow from the logarithm (§<em>Powers and Roots</em>); the trigonometric and hyperbolic functions and their inverses follow (§<em>The Trigonometric and Hyperbolic Functions</em>); the relations to the quaternion and complex cases close the theory (§<em>Relations to the Neighbouring Cases</em>). The results are collected in tables in §<em>Summary</em>, including the comparison with the split-complex and reduced biquaternion cases.</p>
@@ -96,7 +96,7 @@ $$</p>
 $$
 B=\sqrt{Q_x^2+Q_y^2+Q_z^2},
 $$
-a fixed square root of the value of the complex quadratic form on $\vec Q$ (<em>N-Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Quaternionic Norm</em>), and, when $B\neq0$, the <strong>axis</strong>
+a fixed square root of the value of the complex quadratic form on $\vec Q$ (<em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>, §<em>The Quaternionic Norm</em>), and, when $B\neq0$, the <strong>axis</strong>
 $$
 \vec Q=B\vec U,\qquad \vec U=\frac{\vec Q}{B},\qquad \vec U^2=-e_t.
 $$
@@ -154,7 +154,7 @@ The square root, the axis and the pure root $\vec\Xi=-i\vec U$ are those of <em>
 </table></div>
 <p>The eigenvalues are distinct in the oscillatory regime and coincide in the nilpotent and scalar regimes; the eigenprojections exist only in the oscillatory regime. The lattice is the parity-matched lattice derived in §<em>The Logarithm</em> below; it is not the rectangular lattice $2\pi i\mathbb{Z}e_t\oplus2\pi\mathbb{Z}\vec U$.</p>
 <h3 id="the-regimes">The Regimes</h3>
-<p>The vector part $\vec Q$ is a zero divisor exactly when $(\vec Q, \vec Q) = 0$ and $\vec Q\neq0$, i.e. when $B = 0$ and $\vec Q\neq0$; the criterion is in <em>N-Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Zero Divisors</em>. The square root splits the discussion into two cases:</p>
+<p>The vector part $\vec Q$ is a zero divisor exactly when $(\vec Q, \vec Q) = 0$ and $\vec Q\neq0$, i.e. when $B = 0$ and $\vec Q\neq0$; the criterion is in <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>, §<em>The Zero Divisors</em>. The square root splits the discussion into two cases:</p>
 <ul>
 <li><strong>Oscillatory regime:</strong> $B \neq 0$. The vector part is not a zero divisor, and it can be normalized to a root of $-1$. The powers of $\vec Q$ alternate, as in the quaternion case.</li>
 <li><strong>Nilpotent regime:</strong> $B = 0$. The vector part is nilpotent, and $\vec Q^2 = 0$; when $\vec Q\neq0$ it is a pure zero divisor. The powers of $\vec Q$ truncate after the first.</li>
@@ -170,24 +170,24 @@ The square root, the axis and the pure root $\vec\Xi=-i\vec U$ are those of <em>
 </thead>
 <tbody>
 <tr>
-<td>Distinct, $N$-regular</td>
+<td>Distinct, $\natural$-regular</td>
 <td>$B\neq0$, $\langle\tilde Q\rangle_{\natural}\neq0$</td>
 <td>$\exp$ reaches it; $\log$ is defined; the powers and roots read two nonzero eigenvalues</td>
 </tr>
 <tr>
-<td>Oscillatory, $N$-degenerate</td>
+<td>Oscillatory, $\natural$-degenerate</td>
 <td>$B\neq0$, $\langle\tilde Q\rangle_{\natural}=0$</td>
-<td>$\exp$ does not reach it, so $\log$ and general powers are undefined; a trigonometric or hyperbolic value may be $N$-degenerate</td>
+<td>$\exp$ does not reach it, so $\log$ and general powers are undefined; a trigonometric or hyperbolic value may be $\natural$-degenerate</td>
 </tr>
 <tr>
 <td>Jordan</td>
 <td>$B=0$, $\vec Q\neq0$, $Q_t\neq0$</td>
-<td>$N$-regular; $\exp$ truncates and $\log$ exists; the powers are linear in $\vec Q$</td>
+<td>$\natural$-regular; $\exp$ truncates and $\log$ exists; the powers are linear in $\vec Q$</td>
 </tr>
 <tr>
 <td>Nilpotent</td>
 <td>$B=0$, $\vec Q\neq0$, $Q_t=0$</td>
-<td>$N$-degenerate and a nonzero zero divisor; $\exp$ truncates, $\log$ does not exist, and there is no square root</td>
+<td>$\natural$-degenerate and a nonzero zero divisor; $\exp$ truncates, $\log$ does not exist, and there is no square root</td>
 </tr>
 <tr>
 <td>Scalar</td>
@@ -196,7 +196,7 @@ The square root, the axis and the pure root $\vec\Xi=-i\vec U$ are those of <em>
 </tr>
 </tbody>
 </table></div>
-<p>The distinct and $N$-degenerate rows are the two subcases of $B\neq0$: the eigenvalues are distinct, and in the $N$-degenerate subcase one of them is zero. The distinct $N$-regular element is the domain of the logarithm and of general powers; the $N$-degenerate element has an eigenvalue decomposition but no logarithm. The $B=0$ case is the nilpotent regime, named for the vector part; the element is $N$-regular in the Jordan subcase $Q_t\neq0$ and $N$-degenerate and a pure nilpotent in the subcase $Q_t=0$. If $\vec Q=0$, the biquaternion is a complex scalar $\tilde Q=Q_te_t$, and the elementary functions reduce to the ordinary complex elementary functions. This is a degenerate subcase of the nilpotent regime, since $B=0$ and $\vec Q=0$; it is not in the oscillatory regime. It is treated separately in each section because its centraliser is the whole algebra.</p>
+<p>The distinct and $\natural$-degenerate rows are the two subcases of $B\neq0$: the eigenvalues are distinct, and in the $\natural$-degenerate subcase one of them is zero. The distinct $\natural$-regular element is the domain of the logarithm and of general powers; the $\natural$-degenerate element has an eigenvalue decomposition but no logarithm. The $B=0$ case is the nilpotent regime, named for the vector part; the element is $\natural$-regular in the Jordan subcase $Q_t\neq0$ and $\natural$-degenerate and a pure nilpotent in the subcase $Q_t=0$. If $\vec Q=0$, the biquaternion is a complex scalar $\tilde Q=Q_te_t$, and the elementary functions reduce to the ordinary complex elementary functions. This is a degenerate subcase of the nilpotent regime, since $B=0$ and $\vec Q=0$; it is not in the oscillatory regime. It is treated separately in each section because its centraliser is the whole algebra.</p>
 <p>In the nilpotent regime with a nonzero vector part, the element $\vec Q$ is a pure zero divisor, and its square vanishes. The elementary functions truncate, and the formulas are linear in $\vec Q$.</p>
 <p>The split-complex and reduced biquaternion cases have no nilpotent regime, because those algebras are reduced; the scalar row is their only spectral degeneration. The nilpotent row is what the biquaternion adds.</p>
 <h3 id="the-idempotent-principle">The Idempotent Principle</h3>
@@ -436,7 +436,7 @@ $$</p>
 \vec Q_{\log}=Q_{\log,x}\vec e_x+Q_{\log,y}\vec e_y+Q_{\log,z}\vec e_z.
 $$</p>
 <p>By the coefficient rule of <em>Conventions in Mathematics</em>, §<em>The Elements and their Coefficients</em>, the four coordinates are complex, $Q_{\log,t}=q_{\log,t}+iq'_{\log,t}$ and likewise $Q_{\log,x},Q_{\log,y},Q_{\log,z}$, and the subscript $\log$ is carried into each coordinate; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$, as its coefficients keep theirs. The <strong>scalar component</strong> $Q_{\log,t}$ is the coefficient of $e_t$; the <strong>vector component</strong> $\vec Q_{\log}$ is a pure biquaternion, not a scalar, and it carries the axis and the complex angle of the logarithm.</p>
-<p>The exponential is never $N$-degenerate, since $\langle\exp\tilde Q_1\rangle_{\natural}=\exp(2Q_{1t})\neq0$ for every $\tilde Q_1$ (§<em>Properties</em> of §<em>The Exponential</em>). Hence a logarithm can exist only on the $N$-regular set</p>
+<p>The exponential is never $\natural$-degenerate, since $\langle\exp\tilde Q_1\rangle_{\natural}=\exp(2Q_{1t})\neq0$ for every $\tilde Q_1$ (§<em>Properties</em> of §<em>The Exponential</em>). Hence a logarithm can exist only on the $\natural$-regular set</p>
 <p>$$
 \mathbb B^\times=\{\tilde Q\in\mathbb B:\langle\tilde Q\rangle_{\natural}\neq0\}.
 $$</p>
@@ -852,7 +852,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Every $N$-regular biquaternion has a logarithm, the Jordan case included. The $N$-degenerate biquaternion has none, the zero divisor and the pure nilpotent included. The principal logarithm is single-valued and satisfies $\exp(\operatorname{Log}\tilde Q)=\tilde Q$; it is discontinuous on the walls where an eigenvalue is a negative real number, and no continuous single-valued branch exists on the whole unit group. The ambiguity of the logarithm is the kernel of the exponential, constrained by the centraliser when the element is not scalar.</p>
+<p>Every $\natural$-regular biquaternion has a logarithm, the Jordan case included. The $\natural$-degenerate biquaternion has none, the zero divisor and the pure nilpotent included. The principal logarithm is single-valued and satisfies $\exp(\operatorname{Log}\tilde Q)=\tilde Q$; it is discontinuous on the walls where an eigenvalue is a negative real number, and no continuous single-valued branch exists on the whole unit group. The ambiguity of the logarithm is the kernel of the exponential, constrained by the centraliser when the element is not scalar.</p>
 <h2 id="powers-and-roots">Powers and Roots</h2>
 <h3 id="the-power-function">The Power Function</h3>
 <p>For $\tilde Q\in\mathbb B$ and $\alpha\in\mathbb C$, the <strong>power function</strong> is defined by</p>
@@ -1306,7 +1306,7 @@ $$</p>
 \operatorname{sech}\tilde Q=\frac{e_t}{\cosh\tilde Q},\qquad
 \operatorname{csch}\tilde Q=\frac{e_t}{\sinh\tilde Q}.
 $$</p>
-<p>They are defined wherever the denominator is $N$-regular. In $\mathbb B$ a denominator can be $N$-degenerate without being zero, so the domain is smaller than the complement of the zero set; the singularities are the $N$-degenerate values of $\cos$, $\sin$, $\cosh$ and $\sinh$.</p>
+<p>They are defined wherever the denominator is $\natural$-regular. In $\mathbb B$ a denominator can be $\natural$-degenerate without being zero, so the domain is smaller than the complement of the zero set; the singularities are the $\natural$-degenerate values of $\cos$, $\sin$, $\cosh$ and $\sinh$.</p>
 <p>In the oscillatory regime $B\neq0$, with $\vec U=\vec Q/B$, conjugation by the root $\vec U$ of $-e_t$ gives</p>
 <p>$$
 \tan\tilde Q=-\vec U\,\tanh(\tilde Q\vec U),
@@ -1404,7 +1404,7 @@ $$</p>
 <p><strong>The relation to the analysis.</strong> How do the elementary functions interact with the differential operators of the analysis article? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general biquaternion $\tilde{Q}$?</p>
 </li>
 <li>
-<p><strong>The logarithm at the boundary of the $N$-regular set.</strong> The logarithm exists on $\mathbb{B}^\times$ but not on the $N$-degenerate set, the zero divisor set $\mathcal{Z}$ together with the origin $0$. What is the correct object that replaces the logarithm on the boundary? The answer is likely to involve a formal logarithm or a deformation of the algebra.</p>
+<p><strong>The logarithm at the boundary of the $\natural$-regular set.</strong> The logarithm exists on $\mathbb{B}^\times$ but not on the $\natural$-degenerate set, the zero divisor set $\mathcal{Z}$ together with the origin $0$. What is the correct object that replaces the logarithm on the boundary? The answer is likely to involve a formal logarithm or a deformation of the algebra.</p>
 </li>
 <li>
 <p><strong>The derivative of the exponential in the vector directions.</strong> The formula $\partial/\partial Q_k \exp(\tilde{Q}) = \int_0^1 \exp(s \tilde{Q}) \vec e_k \exp((1-s)\tilde{Q})\,ds$ for $k\in\{x,y,z\}$ is the biquaternion analogue of the usual identity for the derivative of the exponential. What are the consequences of this formula for the analysis of biquaternion-valued functions?</p>
@@ -1787,7 +1787,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$</td>
-<td>Biquaternion norm, written $N$; $N\neq 0$ is the $N$-regular set, the group of units and the domain of the logarithm and of general powers; $N=0$ is the $N$-degenerate set</td>
+<td>Biquaternion norm, written $N$; $N\neq 0$ is the $\natural$-regular set, the group of units and the domain of the logarithm and of general powers; $N=0$ is the $\natural$-degenerate set</td>
 </tr>
 <tr>
 <td>$\tilde Q^*=\overline{\tilde Q^{\natural}}$</td>

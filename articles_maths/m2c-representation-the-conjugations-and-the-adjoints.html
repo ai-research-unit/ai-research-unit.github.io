@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-conjugations-and-the-adjoints"><strong>$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra carries four involutions: quaternion conjugation, complex conjugation, Hermitian conjugation and anti-Hermitian conjugation. In the matrix model they become four matrix operations: the adjugate, a conjugation dressed by the antisymmetric form, the conjugate transpose, and its negative.</p>
+<p>This article develops the four operations and their fixed spaces. It also records the warning that makes the table usable: complex conjugation is not the entrywise conjugation of the matrix. It is the matrix form of <em>The Group of Involutions</em>, §<em>The Four Involutions and Their Matrix Images</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The four involutions are</p>
+<p>$$
+\tilde Q^{\natural}=Q_t-\vec Q,\qquad
+\overline{\tilde Q}=\overline{Q_t}+\overline{\vec Q},\qquad
+\tilde Q^{*}=\overline{\tilde Q^{\natural}},\qquad
+\tilde Q^{\flat}=-\tilde Q^{*}.
+$$</p>
+<p>The antisymmetric matrix is $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, with $\epsilon^{\mathsf T}=-\epsilon$ and $\epsilon^{-1}=-\epsilon$.</p>
+<p><strong>Boundaries.</strong> The conjugations and their fixed spaces are <em>The Group of Involutions</em>; the four adjoints of linear maps are <em>The Four Adjoints of the Biquaternion Algebra in Examples</em>; the four forms are <em>$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</em>; the subspaces fixed by the involutions are <em>$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions</em>.</p>
+<h2 id="the-four-involutions">The Four Involutions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Involution</th>
+<th>Algebra definition</th>
+<th>Fixed space</th>
+<th>Anti-fixed space</th>
+<th>Matrix image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${}^{\natural}$</td>
+<td>$Q_t-\vec Q$</td>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\operatorname{adj}M$</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$\overline{Q_\mu}$</td>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\epsilon\bar M\epsilon^{-1}$</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$\overline{Q_t}-\overline{\vec Q}$</td>
+<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{M}_-$</td>
+<td>$M^{\dagger}$</td>
+</tr>
+<tr>
+<td>${}^{\flat}$</td>
+<td>$-\tilde Q^{*}$</td>
+<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{M}_+$</td>
+<td>$-M^{\dagger}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four columns are the four definitions, the four fixed spaces, the four anti-fixed spaces and the four matrix operations. The table is the complete dictionary; each row is proved below.</p>
+<p><strong>The relations among them.</strong> The first three generate a Klein four-group:</p>
+<p>$$
+{}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot},
+\qquad
+\bar{\cdot}={}^{*}\circ{}^{\natural}={}^{\natural}\circ{}^{*},
+\qquad
+{}^{\natural}={}^{*}\circ\bar{\cdot}=\bar{\cdot}\circ{}^{*}.
+$$</p>
+<p>The fourth is the negative of the third, $\flat=-{}^{*}$; it is an involution and an anti-automorphism, but it is not in the Klein group generated by the other three, because the minus sign is not a homomorphism. The table is therefore three involutions forming a group and a fourth obtained from one of them by the central sign.</p>
+<h2 id="the-adjugate">The Adjugate</h2>
+<p><strong>Definition.</strong> For $M=\begin{pmatrix}a&b\\c&d\end{pmatrix}$,</p>
+<p>$$
+\operatorname{adj}M=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}.
+$$</p>
+<p><strong>Proposition.</strong> The adjugate is the image of quaternion conjugation:</p>
+<p>$$
+\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q),
+$$</p>
+<p>and it satisfies</p>
+<p>$$
+\operatorname{adj}(MX)=\operatorname{adj}(X)\operatorname{adj}(M),\qquad
+\operatorname{adj}(\operatorname{adj}M)=M,\qquad
+M\operatorname{adj}M=(\det M)\mathrm I_2.
+$$</p>
+<p><em>Proof.</em> The first identity is checked on the general matrix: the image of $\tilde Q^{\natural}$ has entries $Q_t+iQ_z$, $iQ_x+Q_y$, $iQ_x-Q_y$, $Q_t-iQ_z$, which are the entries of the adjugate of $M$. The anti-automorphism is the multiplicativity of quaternion conjugation read in matrices. The third identity is the matrix form of $\tilde Q\tilde Q^{\natural}=N e_t$.</p>
+<p><strong>The adjugate as a linear map.</strong> For a two-by-two matrix,</p>
+<p>$$
+\operatorname{adj}M=(\operatorname{Tr}M)\mathrm I_2-M.
+$$</p>
+<p>The identity exhibits the adjugate as an affine function of $M$: it is the reflection of $M$ in the line of scalar matrices, composed with the trace. The eigenvalues of $\operatorname{adj}M$ are the eigenvalues of $M$ exchanged, and its characteristic polynomial is the same as that of $M$.</p>
+<p><strong>The dressed transpose.</strong> The adjugate is also</p>
+<p>$$
+\operatorname{adj}M=\epsilon M^{\mathsf T}\epsilon^{-1}.
+$$</p>
+<p>The antisymmetric form dresses the transpose; the two descriptions agree because $\epsilon$ is the invariant form of the spinor module. The identity is the matrix form of the fact that quaternion conjugation is the transpose with respect to the antisymmetric pairing.</p>
+<p><strong>The fixed space.</strong> $\operatorname{adj}M=M$ forces $b=c=0$ and $a=d$, so $M$ is scalar. The fixed space is the centre, as the table states; the anti-fixed space is the traceless matrices.</p>
+<h2 id="complex-conjugation">Complex Conjugation</h2>
+<p><strong>The formula.</strong></p>
+<p>$$
+\mathsf{M}_2(\overline{\tilde Q})=\epsilon\,\overline{\mathsf{M}_2(\tilde Q)}\,\epsilon^{-1},
+\qquad
+\epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> The entrywise conjugate of $M$ is $\begin{pmatrix}\bar Q_t+i\bar Q_z&i\bar Q_x-\bar Q_y\\i\bar Q_x+\bar Q_y&\bar Q_t-i\bar Q_z\end{pmatrix}$. Dressing it by $\epsilon$ exchanges the diagonal entries and changes the signs of the off-diagonal ones, giving the matrix of the element with coefficients $\bar Q_t,-\bar Q_x,-\bar Q_y,-\bar Q_z$, which is $\overline{\tilde Q}$.</p>
+<p><strong>Complex conjugation is not entrywise.</strong> The entrywise conjugation sends</p>
+<p>$$
+\mathsf{M}_2(\vec e_x)=-i\sigma_1\longmapsto i\sigma_1=-\mathsf{M}_2(\vec e_x),
+\qquad
+\mathsf{M}_2(\vec e_z)=-i\sigma_3\longmapsto i\sigma_3=-\mathsf{M}_2(\vec e_z),
+$$</p>
+<p>while $\mathsf{M}_2(\vec e_y)$ is fixed because its entries are real. The operation therefore negates the images of $\vec e_x$ and $\vec e_z$ and fixes the image of $\vec e_y$. It is the image of the conjugate-linear involution</p>
+<p>$$
+\sigma(\tilde Q)=\overline{Q_t}-\overline{Q_x}\vec e_x+\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z,
+$$</p>
+<p>which is complex conjugation composed with conjugation by $\vec e_y$. The map $\sigma$ is an involution of the real algebra and a conjugate-linear anti-automorphism, so it reverses the order of every product, but it is not one of the four: it is a fifth conjugate-linear involution, and it is not the complex conjugation $\bar{\cdot}$.</p>
+<p><strong>The consequence.</strong> The entrywise conjugate of a biquaternion matrix is the matrix of $\sigma(\tilde Q)$, not the matrix of $\overline{\tilde Q}$ and not the matrix of $\tilde Q^{*}$. The correct operation for complex conjugation is the dressed one, and the dressing is the antisymmetric form of the spinor module. The safe rule is: use the four formulas of the table for the four involutions, and never identify the entrywise conjugation with complex conjugation.</p>
+<p><strong>The fixed space.</strong> $\epsilon\bar M\epsilon^{-1}=M$ is the condition $M=\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix}$, the quaternion subspace. The anti-fixed space is $i$ times it.</p>
+<h2 id="hermitian-and-anti-hermitian-conjugation">Hermitian and Anti-Hermitian Conjugation</h2>
+<p><strong>The dagger.</strong> The Hermitian conjugation is the conjugate transpose:</p>
+<p>$$
+\mathsf{M}_2(\tilde Q^{*})=M^{\dagger}=\overline{M}^{\mathsf T}.
+$$</p>
+<p>Its fixed space is the Hermitian matrices $\mathbb{M}_+$, and its anti-fixed space is the anti-Hermitian matrices $\mathbb{M}_-$. The statement is the matrix form of the definition $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$ together with the adjugate identity.</p>
+<p><strong>The anti-Hermitian conjugation.</strong> The fourth involution is</p>
+<p>$$
+\mathsf{M}_2(\tilde Q^{\flat})=-M^{\dagger}.
+$$</p>
+<p>Its fixed space is the anti-Hermitian matrices, and its anti-fixed space is the Hermitian ones. The two rows of the table for ${}^{*}$ and ${}^{\flat}$ are exchanged, as they must be, because $\flat=-{}^{*}$.</p>
+<p><strong>The trace and determinant.</strong> On the Hermitian subspace the trace is real and the determinant has signature $(1,3)$; on the anti-Hermitian subspace the trace is purely imaginary and the determinant has signature $(3,1)$. The two statements are the matrix form of the reality conditions of the two sectors, and they are proved in <em>$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions</em>.</p>
+<h2 id="the-four-adjoints">The Four Adjoints</h2>
+<p><strong>The four words.</strong> The four involutions are the switches of the four forms. Writing $X=\mathsf{M}_2(\tilde P)$ and $Y=\mathsf{M}_2(\tilde Q)$,</p>
+<p>$$
+\tfrac12\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
+\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=\langle\tilde P,\tilde Q\rangle_{\natural},
+$$</p>
+<p>$$
+\tfrac12\operatorname{Tr}(XY^{\dagger})=\langle\tilde P,\tilde Q\rangle_{*},\qquad
+\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*}.
+$$</p>
+<p>The first form uses no involution, the second uses the adjugate in the first slot, the third the dagger in the second slot, and the fourth both. The four combinations are the four forms, and the table is the matrix form of the four products.</p>
+<p><strong>The element-level adjoints.</strong> The adjugate is the classical adjoint of a two-by-two matrix, and the dagger is the Hermitian adjoint. The four involutions are the element-level operations that the four forms use to move an argument from one slot to the other. The operator-level adjoints of a linear map are different objects: they are the maps $T^{\varphi}$ defined by $\varphi(Tx,y)=\varphi(x,T^{\varphi}y)$, and they are computed in <em>The Four Adjoints of the Biquaternion Algebra in Examples</em>.</p>
+<p><strong>The four fixed spaces.</strong> The fixed spaces of the four operations are the centre, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace. Together with the vector subspace and the anti-quaternion subspace, they are the six remarkable subspaces. The table of involutions is therefore the shortest route to the six subspaces: each row produces one fixed and one anti-fixed space, and the six are the distinct ones among the eight.</p>
+<p><strong>Why four and not two.</strong> The complex algebra has two independent real structures, ${}^{\natural}$ and $\bar{\cdot}$, and their product is the Hermitian conjugation. The fourth is the negative of the product. The four are the four ways of combining the quaternion conjugation with the complex conjugation, and the four forms are the four ways of switching them on and off in a trace.</p>
+<h2 id="summary">Summary</h2>
+<p>The four involutions of the algebra become the adjugate, the $\epsilon$-dressed entrywise conjugation, the conjugate transpose and its negative. Their fixed spaces are the centre, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace; their anti-fixed spaces are the vector, anti-quaternion, anti-Hermitian and Hermitian subspaces. The adjugate is $(\operatorname{Tr}M)\mathrm I_2-M$ and also $\epsilon M^{\mathsf T}\epsilon^{-1}$; complex conjugation is $\epsilon\bar M\epsilon^{-1}$ and not the entrywise conjugation. The four forms are the four half-traces of the words built from these switches.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{adj}M$</td>
+<td>the adjugate, the image of ${}^{\natural}$</td>
+</tr>
+<tr>
+<td>$\epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$</td>
+<td>the invariant antisymmetric form</td>
+</tr>
+<tr>
+<td>$\epsilon\bar M\epsilon^{-1}$</td>
+<td>the image of complex conjugation</td>
+</tr>
+<tr>
+<td>$M^{\dagger}$</td>
+<td>the conjugate transpose, the image of ${}^{*}$</td>
+</tr>
+<tr>
+<td>$-M^{\dagger}$</td>
+<td>the image of ${}^{\flat}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>the fixed spaces</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B}),i\mathbb{H}_{\mathbb{B}},\mathbb{M}_-,\mathbb{M}_+$</td>
+<td>the anti-fixed spaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-group-of-involutions.html">The Group of Involutions</a>, for the four involutions</li>
+<li><a href="the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>, for the operator-level adjoints</li>
+<li><a href="m2c-representation-the-four-words-and-the-four-traces.html">$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</a>, for the four forms</li>
+<li><a href="m2c-representation-the-six-subspaces-as-matrix-conditions.html">$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions</a>, for the fixed spaces</li>
+<li><a href="m2c-representation-the-matrix-product-and-the-algebra-structure.html">$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</a>, for the model</li>
+<li><a href="comparison-of-the-remarkable-subspaces.html">Comparison of the Remarkable Subspaces</a>, for the material reading</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

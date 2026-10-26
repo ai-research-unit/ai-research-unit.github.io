@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations between the Dual Norm and Spectral Degeneracy — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relations-between-the-dual-norm-and-spectral-degeneracy"><strong>Relations between the Dual Norm and Spectral Degeneracy</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The dual-number algebra $\mathbb{D}'_R=R[\varepsilon]/(\varepsilon^2)$ carries two invariants that are easy to confuse because both are degenerate. The <strong>norm</strong> is $\langle Q\rangle=Q\bar Q=a^2$; it is multiplicative, of rank one, and it vanishes exactly on the maximal ideal $\mathrm{M}=\{a=0\}$. <strong>Spectral degeneracy</strong> is the repetition of the eigenvalue; for $Q=a+b\varepsilon$ the characteristic polynomial is $(X-a)^2$, so it holds for every element and carries no information at all. The informative companion of the norm is therefore not spectral degeneracy but <strong>defect</strong>, the failure of an eigenbasis: the minimal polynomial is $X-a$ on the real axis and $(X-a)^2$ off it, so the defective set is</p>
+<p>$$
+D=\{a+b\varepsilon : b\neq0\}=\mathbb{D}'_R\setminus R\cdot1.
+$$</p>
+<p>This article compares the norm and the defect. The comparison has a sharp answer. A unit can be defective: every $a+b\varepsilon$ with $a\neq0$ and $b\neq0$ is a unit and has minimal polynomial $(X-a)^2$. The only semisimple non-unit is the origin. Consequently the two invariants are independent only in the direction of the unit group: the combination "unit and defective" is open and dense, while the combination "non-unit and semisimple" is a single point. The sector table has three non-empty cells and one empty one when read on the non-zero elements, the empty cell being the origin. The chain of invariants runs from the element through the minimal polynomial and the characteristic polynomial to the norm, and each step forgets something: the minimal polynomial forgets the value of the infinitesimal part, the characteristic polynomial forgets the defect, and the norm forgets the sign of the eigenvalue.</p>
+<p><strong>Notation and scope.</strong> The algebra is $\mathbb{D}'_R$ over a real closed field $R$, with the geometric case $R=\mathbb{R}$; a general element is $Q=a+b\varepsilon$ with $a=\operatorname{Re}Q$ and $b=\operatorname{Inf}Q$, equal to $q+\varepsilon q'$ in the prime notation of <em>Dual-Numbers Algebra</em>. The norm is $\langle Q\rangle=Q\bar Q=a^2$, the conjugation is $\bar Q=a-b\varepsilon$, and $\mathrm{M}=(\varepsilon)=\{a=0\}$. The spectral theory is <em>Spectral Regularity and Degeneracy in the Dual-Number Algebra</em>, the defect is <em>The Defective Sector of the Dual-Number Algebra</em>, and the norm is <em>Dual-Numbers Norm and Invertibility</em>. The four sectors of the biquaternion algebra, used only for comparison at the end, are <em>Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</em>.</p>
+<p><strong>A word on the two tables.</strong> The <strong>norm/spectrum</strong> table of article 1 has two empty cells, $\Sigma_{11}$ and $\Sigma_{01}$, because spectral regularity is impossible in $\mathbb{D}'_R$. The table of this article that has three non-empty cells and one empty one is the <strong>norm/defect</strong> table, not the norm/spectrum table. The two tables are distinguished in §<em>The Sector Tables</em>.</p>
+<h2 id="the-norm">The Norm</h2>
+<p><strong>The norm is a rank-one quadratic form whose radical is the maximal ideal; it is a function of the real part alone.</strong></p>
+<p><strong>Definition (the norm).</strong> The <strong>norm</strong> of $Q=a+b\varepsilon$ is</p>
+<p>$$
+\langle Q\rangle=Q\bar Q=(a+b\varepsilon)(a-b\varepsilon)=a^2.
+$$</p>
+<p><strong>Theorem (the properties of the norm).</strong></p>
+<ol>
+<li><strong>Rank one.</strong> The polar form is</li>
+</ol>
+<p>$$
+B(Q_1,Q_2)=\tfrac12\bigl(\langle Q_1+Q_2\rangle-\langle Q_1\rangle-\langle Q_2\rangle\bigr)=a_1a_2,
+$$</p>
+<p>of matrix $\begin{pmatrix}1&0\\0&0\end{pmatrix}$ in the basis $(1,\varepsilon)$; its radical is $\mathrm{M}$.</p>
+<ol>
+<li>
+<p><strong>Multiplicative.</strong> $\langle Q_1Q_2\rangle=\langle Q_1\rangle\langle Q_2\rangle$.</p>
+</li>
+<li>
+<p><strong>Vanishing locus.</strong> Over the real closed field $R$, $\langle Q\rangle=0$ if and only if $a=0$, that is, if and only if $Q\in\mathrm{M}$.</p>
+</li>
+<li>
+<p><strong>Unit criterion.</strong> $Q$ is a unit if and only if $\langle Q\rangle\neq0$, that is, if and only if $a\neq0$.</p>
+</li>
+</ol>
+<p><em>Proof.</em> (1) Expanding, $\langle Q_1+Q_2\rangle=(a_1+a_2)^2$, so the polar form is $a_1a_2$; the matrix has rank one and radical $\{a=0\}=\mathrm{M}$. (2) $Q_1Q_2=a_1a_2+(a_1b_2+b_1a_2)\varepsilon$, so the norm is $(a_1a_2)^2=a_1^2a_2^2$. (3) In a real closed field $a^2=0$ implies $a=0$. (4) The inverse formula $Q^{-1}=a^{-1}-a^{-2}b\varepsilon$ exists exactly when $a\neq0$.</p>
+<p><strong>Corollary (the norm is blind to the infinitesimal part).</strong> For every $Q$ and every $\eta\in\mathrm{M}$,</p>
+<p>$$
+\langle Q+\eta\rangle=\langle Q\rangle.
+$$</p>
+<p><em>Proof.</em> Adding $\eta$ does not change the real part.</p>
+<p><strong>Corollary (the norm is not a norm in the analytic sense).</strong> It is homogeneous of degree two but degenerate, vanishing on the non-zero elements of $\mathrm{M}$; the positive-definite Euclidean form $a^2+b^2$ carries the topology but is not multiplicative.</p>
+<p><em>Proof.</em> Homogeneity and degeneracy are immediate from $a^2$. The failure of multiplicativity of the Euclidean form is <em>Dual-Numbers Norm and Invertibility</em>, §<em>The Euclidean Form</em>.</p>
+<h2 id="the-defect">The Defect</h2>
+<p><strong>The defect is the non-vanishing of the nilpotent part; unlike the norm, it is blind to the real part.</strong></p>
+<p><strong>Definition (defect).</strong> An element $Q$ is <strong>defective</strong> if its minimal polynomial has a repeated factor, equivalently if $L_Q$ is not diagonalisable, equivalently if it has no eigenbasis. The <strong>defective set</strong> is $D$.</p>
+<p><strong>Theorem (the defect).</strong> For $Q=a+b\varepsilon$,</p>
+<p>$$
+m_Q(X)=\begin{cases}X-a,&b=0,\\ (X-a)^2,&b\neq0,\end{cases}
+\qquad
+D=\{a+b\varepsilon : b\neq0\}=\mathbb{D}'_R\setminus R\cdot1.
+$$</p>
+<p><em>Proof.</em> This is <em>The Defective Sector of the Dual-Number Algebra</em>, §<em>The Defective Set</em>: $Q-a=b\varepsilon$ has square zero and is non-zero exactly when $b\neq0$.</p>
+<p><strong>Corollary (the defect is blind to the real part).</strong> For every $a\in R$ and every non-zero $b$,</p>
+<p>$$
+a+b\varepsilon\in D.
+$$</p>
+<p>In particular the defective set contains the whole complement of the real axis, and not merely the punctured maximal ideal.</p>
+<p><em>Proof.</em> The minimal polynomial of $a+b\varepsilon$ is $(X-a)^2$ for every $a$ when $b\neq0$.</p>
+<p><strong>Remark (the nilpotent part).</strong> The projection $\nu(Q)=Q-\operatorname{Re}Q=b\varepsilon$ maps $D$ onto $\mathrm{M}\setminus\{0\}$; the defective set is the preimage of the punctured maximal ideal under $\nu$. Thus $\mathrm{M}\setminus\{0\}$ is the set of non-zero nilpotent parts, not the defective set. The defect is carried by the nilpotent part, exactly as the norm is carried by the real part.</p>
+<p><strong>The two invariants side by side.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>norm</th>
+<th>defect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quantity</td>
+<td>$a^2$</td>
+<td>the predicate $b\neq0$</td>
+</tr>
+<tr>
+<td>depends on</td>
+<td>the real part $a$</td>
+<td>the infinitesimal part $b$</td>
+</tr>
+<tr>
+<td>zero set</td>
+<td>$\mathrm{M}=\{a=0\}$</td>
+<td>the semisimple set $\{b=0\}$</td>
+</tr>
+<tr>
+<td>complement</td>
+<td>the units $\{a\neq0\}$</td>
+<td>the defective set $\{b\neq0\}$</td>
+</tr>
+<tr>
+<td>multiplicative</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>role</td>
+<td>the invertibility criterion</td>
+<td>the eigenbasis criterion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-implications">The Implications</h2>
+<p><strong>The two predicates point in opposite directions, and their interaction is exhausted by three statements.</strong></p>
+<p><strong>Theorem (the implications).</strong></p>
+<ol>
+<li>If $Q\neq0$ and $\langle Q\rangle=0$, then $Q$ is defective.</li>
+<li>If $Q\neq0$ and $Q$ is semisimple, then $\langle Q\rangle\neq0$.</li>
+<li>Every $a+b\varepsilon$ with $a\neq0$ and $b\neq0$ is a defective unit; in particular $1+\varepsilon$ is.</li>
+<li>The only semisimple non-unit is the origin.</li>
+</ol>
+<p><em>Proof.</em> (1) $\langle Q\rangle=0$ gives $a=0$, and $Q\neq0$ then gives $Q=b\varepsilon$ with $b\neq0$; the minimal polynomial is $X^2$, which is repeated. (2) Semisimple gives $b=0$, so $Q=a$; $Q\neq0$ gives $a\neq0$, and $a^2\neq0$. (3) The unit criterion gives the unit, and the minimal polynomial $(X-a)^2$ gives the defect; $1+\varepsilon$ is the case $a=b=1$. (4) Semisimple gives $Q=a$; a non-unit has $a=0$, hence $Q=0$.</p>
+<p><strong>Corollary (the witness table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>semisimple</th>
+<th>defective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>unit</strong></td>
+<td>$1$</td>
+<td>$1+\varepsilon$</td>
+</tr>
+<tr>
+<td><strong>non-unit</strong></td>
+<td>$0$</td>
+<td>$\varepsilon$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four elements have the data</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>norm</th>
+<th>minimal polynomial</th>
+<th>unit</th>
+<th>defect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+<td>$X-1$</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$1+\varepsilon$</td>
+<td>$1$</td>
+<td>$(X-1)^2$</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>$0$</td>
+<td>$X^2$</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$X$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The norms are $1,1,0,0$; the minimal polynomials are those of the table; the unit criterion is $a\neq0$; the defect criterion is $b\neq0$.</p>
+<p><strong>Theorem (the only direction of independence).</strong> On the non-zero elements, the norm and the defect are independent only on the norm-regular side. Precisely: the combination "norm-degenerate and semisimple" is empty away from the origin, while the combination "norm-regular and defective" is the open dense set</p>
+<p>$$
+D_1=\{a+b\varepsilon : a\neq0,\ b\neq0\}.
+$$</p>
+<p>The other two combinations, "norm-regular and semisimple" and "norm-degenerate and defective", are the punctured real axis $R^\times$ and the punctured maximal ideal $\mathrm{M}\setminus\{0\}$.</p>
+<p><em>Proof.</em> The four combinations are the intersections of $\{a\neq0\}$ or $\{a=0\}$ with $\{b=0\}$ or $\{b\neq0\}$; they are $R^\times$, $D_1$, $\{0\}$ and $\mathrm{M}\setminus\{0\}$. The second is open and dense because it is the complement of the two axes; the third is the origin.</p>
+<p>So the algebra is the disjoint union of four sets,</p>
+<p>$$
+\mathbb{D}'_R=R^\times\ \sqcup\ D_1\ \sqcup\ (\mathrm{M}\setminus\{0\})\ \sqcup\ \{0\},
+$$</p>
+<p>and the two invariants are the two coordinates of this decomposition: the norm decides between the first two sets and the last two, and the defect decides between the first and third and the second and fourth. The norm and the defect are not functions of one another: $1$ and $1+\varepsilon$ have the same norm and different defect; $\varepsilon$ and $1+\varepsilon$ have the same defect and different norm. They are both functions of the minimal polynomial, and the minimal polynomial is their common refinement.</p>
+<h2 id="the-sector-tables">The Sector Tables</h2>
+<p><strong>The norm/spectrum table has two empty cells; the norm/defect table has three non-empty cells and one empty one on the non-zero elements.</strong></p>
+<p><strong>Definition (the norm/spectrum sectors).</strong> For $i,j\in\{0,1\}$, the sector $\Sigma_{ij}$ is the set of elements with $\langle Q\rangle\neq0$ if $i=1$ and $\langle Q\rangle=0$ if $i=0$, and with $Q$ spectrally regular if $j=1$ and spectrally degenerate if $j=0$.</p>
+<p><strong>Theorem (the norm/spectrum table).</strong> In $\mathbb{D}'_R$,</p>
+<p>$$
+\Sigma_{11}=\varnothing,\qquad
+\Sigma_{01}=\varnothing,\qquad
+\Sigma_{10}=\{a\neq0\}=(\mathbb{D}'_R)^\times,\qquad
+\Sigma_{00}=\mathrm{M}=\{a=0\}.
+$$</p>
+<p><em>Proof.</em> Spectral regularity is impossible by <em>Spectral Regularity and Degeneracy in the Dual-Number Algebra</em>, §<em>The Theorem: Universal Spectral Degeneracy</em>; the remaining two sectors are the unit criterion and its complement.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>norm/spectrum</th>
+<th>spectrally regular</th>
+<th>spectrally degenerate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>norm-regular</strong></td>
+<td>$\Sigma_{11}=\varnothing$</td>
+<td>$\Sigma_{10}=\{a\neq0\}$</td>
+</tr>
+<tr>
+<td><strong>norm-degenerate</strong></td>
+<td>$\Sigma_{01}=\varnothing$</td>
+<td>$\Sigma_{00}=\mathrm{M}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Definition (the norm/defect sectors).</strong> For $i,j\in\{0,1\}$, let $T_{ij}$ be the set of elements with the norm condition indexed by $i$ and with $Q$ semisimple if $j=1$ and defective if $j=0$.</p>
+<p><strong>Theorem (the norm/defect table).</strong></p>
+<p>$$
+T_{11}=R^\times,\qquad
+T_{10}=D_1=\{a\neq0,\ b\neq0\},\qquad
+T_{01}=\{0\},\qquad
+T_{00}=\mathrm{M}\setminus\{0\}.
+$$</p>
+<p><em>Proof.</em> The four sets are the intersections of the two axes and their complements, computed in §<em>The Implications</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>norm/defect</th>
+<th>semisimple</th>
+<th>defective</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>norm-regular</strong></td>
+<td>$T_{11}=R^\times$</td>
+<td>$T_{10}=D_1$</td>
+</tr>
+<tr>
+<td><strong>norm-degenerate</strong></td>
+<td>$T_{01}=\{0\}$</td>
+<td>$T_{00}=\mathrm{M}\setminus\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary (the count).</strong> The norm/defect table has four non-empty cells if the origin is counted, and three non-empty cells and one empty one when it is read on the non-zero elements. The empty cell is $T_{01}=\{0\}$, the single semisimple non-unit. The three non-empty cells are the punctured real axis, the open dense set of defective units, and the punctured maximal ideal. The norm/spectrum table, by contrast, has two non-empty cells and two empty ones.</p>
+<p><em>Proof.</em> The identifications are the theorem; the only cell that disappears on removing the origin is $T_{01}$.</p>
+<p><strong>Remark (the refinement).</strong> The norm/defect table refines the norm/spectrum table:</p>
+<p>$$
+\Sigma_{10}=T_{11}\sqcup T_{10},\qquad
+\Sigma_{00}=T_{01}\sqcup T_{00}.
+$$</p>
+<p>The norm/spectrum table collapses the defect distinction inside the units and inside the maximal ideal. The norm/defect table keeps it, and it is the table in which the three non-empty cells and the empty one are visible.</p>
+<h2 id="the-chain-of-invariants">The Chain of Invariants</h2>
+<p><strong>The element determines its minimal polynomial, the minimal polynomial determines the characteristic polynomial, and the characteristic polynomial determines the norm; each arrow loses information: the value of $b$ is lost at the first, the defect at the second, and the sign of $a$ at the third.</strong></p>
+<p><strong>Theorem (the chain).</strong> For every $Q=a+b\varepsilon$,</p>
+<p>$$
+(a,b)\ \longmapsto\ m_Q\ \longmapsto\ p_Q\ \longmapsto\ \langle Q\rangle,
+$$</p>
+<p>with</p>
+<p>$$
+p_Q(X)=m_Q(X)^2\ \text{if } b=0,\qquad
+p_Q(X)=m_Q(X)\ \text{if } b\neq0,
+\qquad
+p_Q(X)=(X-a)^2,
+\qquad
+\langle Q\rangle=a^2.
+$$</p>
+<p>In particular the norm is the constant term of the characteristic polynomial, and the characteristic polynomial has only one independent coefficient:</p>
+<p>$$
+p_Q(X)=\Bigl(X-\frac{\operatorname{tr}L_Q}{2}\Bigr)^2,
+\qquad
+\langle Q\rangle=\Bigl(\frac{\operatorname{tr}L_Q}{2}\Bigr)^2.
+$$</p>
+<p><em>Proof.</em> The minimal polynomial is the dichotomy of §<em>The Defect</em>; the characteristic polynomial is $(X-a)^2$. If $b=0$, then $m_Q=X-a$ and $m_Q^2=(X-a)^2=p_Q$; if $b\neq0$, then $m_Q=(X-a)^2=p_Q$. The trace is $2a$, and the constant term is $a^2$.</p>
+<p><strong>The chain of information.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>value</th>
+<th>degeneration patterns</th>
+<th>what it sees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>norm</td>
+<td>$a^2$</td>
+<td>$2$</td>
+<td>whether the eigenvalue is zero</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>$(X-a)^2$, equivalently $2a$</td>
+<td>$2$</td>
+<td>the eigenvalue $a$, including its sign</td>
+</tr>
+<tr>
+<td>minimal polynomial</td>
+<td>$X-a$ or $(X-a)^2$</td>
+<td>$4$</td>
+<td>the eigenvalue and the defect</td>
+</tr>
+<tr>
+<td>Jordan type</td>
+<td>$aI$ or $J_2(a)$</td>
+<td>$4$</td>
+<td>the eigenvalue and the defect, up to conjugacy</td>
+</tr>
+<tr>
+<td>element</td>
+<td>$(a,b)$</td>
+<td>—</td>
+<td>the eigenvalue and the value of $b$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The count of patterns is the count of degeneration types, not of values: the characteristic polynomial and the minimal polynomial take infinitely many values, and the table counts the patterns into which those values fall.</p>
+<p><em>Proof.</em> The norm has two patterns, zero and non-zero. The characteristic polynomial is always a square, and the square is at zero or away from zero; its value records $a$. The minimal polynomial has the four patterns $X$, $X-a$ with $a\neq0$, $X^2$, and $(X-a)^2$ with $a\neq0$. The Jordan type has the four patterns $0$, $aI$ with $a\neq0$, $J_2(0)$ and $J_2(a)$ with $a\neq0$. The element is the pair $(a,b)$.</p>
+<p><strong>Corollary (the minimal polynomial is the first invariant that sees the defect).</strong> The norm and the characteristic polynomial depend only on $a$, so $a$ and $a+b\varepsilon$ have the same norm and the same characteristic polynomial. The minimal polynomial distinguishes them, $X-a$ against $(X-a)^2$.</p>
+<p><em>Proof.</em> The norm and the characteristic polynomial depend only on $a$; the minimal polynomial depends on $a$ and on whether $b=0$.</p>
+<h2 id="summary">Summary</h2>
+<p>The norm is $\langle Q\rangle=a^2$, a degenerate quadratic form of rank one, multiplicative, with radical $\mathrm{M}$, non-zero exactly on the units and blind to the infinitesimal part. The defect is the failure of an eigenbasis, decided by the minimal polynomial; the defective set is $D=\{b\neq0\}=\mathbb{D}'\setminus R\cdot1$, blind to the real part and carried by the nilpotent part $b\varepsilon\in\mathrm{M}$. The punctured maximal ideal is the nilpotent stratum, not the whole defective set.</p>
+<p>The interaction is exhausted by four statements: a non-zero norm-degenerate element is defective; a non-zero semisimple element is a unit; a unit can be defective ($1+\varepsilon$ is the simplest witness); and the only semisimple non-unit is the origin. Hence $\mathbb{D}'=R^\times\sqcup D_1\sqcup(\mathrm{M}\setminus\{0\})\sqcup\{0\}$. The norm/spectrum table has two empty cells, $\Sigma_{11}$ and $\Sigma_{01}$, and two non-empty cells, $\Sigma_{10}$ and $\Sigma_{00}$. The norm/defect table has $T_{11}=R^\times$, $T_{10}=D_1$, $T_{01}=\{0\}$, $T_{00}=\mathrm{M}\setminus\{0\}$; on the non-zero elements it has three non-empty cells and one empty one, the empty cell being the origin.</p>
+<p>The chain is $(a,b)\mapsto m_Q\mapsto p_Q\mapsto\langle Q\rangle$. The minimal polynomial fixes the eigenvalue and the defect bit but not $b$; the characteristic polynomial is $(X-a)^2$ in both defect cases, so it loses the defect, and it has one independent coefficient because the norm is the square of half the trace; the norm loses the sign of the eigenvalue. The minimal polynomial is the first invariant that sees the defect, and the norm is the last that still sees the eigenvalue, up to sign.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}'_R=R[\varepsilon]/(\varepsilon^2)$</td>
+<td>the dual-number algebra over $R$</td>
+</tr>
+<tr>
+<td>$Q=a+b\varepsilon$</td>
+<td>a general element, equal to $q+\varepsilon q'$ in the prime notation</td>
+</tr>
+<tr>
+<td>$a=\operatorname{Re}Q$, $b=\operatorname{Inf}Q$</td>
+<td>real and infinitesimal parts</td>
+</tr>
+<tr>
+<td>$\langle Q\rangle=Q\bar Q=a^2$</td>
+<td>the norm, the dual norm</td>
+</tr>
+<tr>
+<td>$B(Q_1,Q_2)=a_1a_2$</td>
+<td>the polar form of the norm</td>
+</tr>
+<tr>
+<td>$\mathrm{M}=(\varepsilon)=\{a=0\}$</td>
+<td>the maximal ideal, the radical of the norm</td>
+</tr>
+<tr>
+<td>$m_Q$</td>
+<td>the minimal polynomial: $X-a$ if $b=0$, $(X-a)^2$ if $b\neq0$</td>
+</tr>
+<tr>
+<td>$D=\{b\neq0\}$</td>
+<td>the defective set</td>
+</tr>
+<tr>
+<td>$D_1=\{a\neq0,b\neq0\}$</td>
+<td>the defective units</td>
+</tr>
+<tr>
+<td>$\mathrm{M}\setminus\{0\}=\{a=0,b\neq0\}$</td>
+<td>the nilpotent stratum</td>
+</tr>
+<tr>
+<td>$R^\times=\{a\neq0,b=0\}$</td>
+<td>the nonzero real scalars, the semisimple units</td>
+</tr>
+<tr>
+<td>$\{0\}$</td>
+<td>the unique semisimple non-unit</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the norm/spectrum sectors: $i$ for the norm, $j$ for spectral regularity</td>
+</tr>
+<tr>
+<td>$T_{ij}$</td>
+<td>the norm/defect sectors: $i$ for the norm, $j$ for semisimplicity</td>
+</tr>
+<tr>
+<td>$p_Q(X)=(X-a)^2$</td>
+<td>the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}L_Q=2a$</td>
+<td>the trace; $\langle Q\rangle=(\operatorname{tr}L_Q/2)^2$</td>
+</tr>
+<tr>
+<td>$J_2(a)$</td>
+<td>the Jordan block of the defective sector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="dual-numbers-algebra.html">Dual-Numbers Algebra</a>, for the algebra, the maximal ideal and the two conjugations.</li>
+<li><a href="dual-numbers-norm-and-invertibility.html">Dual-Numbers Norm and Invertibility</a>, for the norm, its rank, its radical and the unit criterion.</li>
+<li><a href="dual-numbers-zero-divisors.html">Dual-Numbers Zero Divisors</a>, for the nilpotent stratum and the zero-divisor set.</li>
+<li><a href="the-defective-sector-of-the-dual-number-algebra.html">The Defective Sector of the Dual-Number Algebra</a>, for the defect, its two strata and the module picture.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-dual-number-algebra.html">Spectral Regularity and Degeneracy in the Dual-Number Algebra</a>, for the characteristic polynomial, the universal degeneracy and the norm/spectrum sectors.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the chain of invariants in the biquaternion algebra.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the defect on the biquaternion spectral-degenerate cone.</li>
+<li><a href="nilpotent-elements-and-the-jordan-chevalley-decomposition.html">Nilpotent Elements and the Jordan–Chevalley Decomposition</a>, for semisimplicity and the additive decomposition.</li>
+<li><a href="modules-over-kx-and-the-jordan-form.html">Modules over $k[x]$ and the Jordan Form</a>, for the Jordan type and the module picture.</li>
+<li><a href="dual-numbers-matrix-element-representation.html">Dual-Numbers Matrix Element Representation</a>, for the matrix model and the determinant as the norm.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (2nd edition, Cambridge University Press, 2013), for the trace, the determinant and the characteristic polynomial.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, Providence, 2005), for degenerate quadratic forms and their radicals.</li>
+<li>Michael F. Atiyah and Ian G. Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, Reading, 1969), for local rings and nilpotent ideals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

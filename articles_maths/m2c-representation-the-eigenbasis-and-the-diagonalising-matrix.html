@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-eigenbasis-and-the-diagonalising-matrix"><strong>$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A spectrally regular element has a basis of eigenvectors, and in that basis its matrix is diagonal. The basis is not the standard one: it depends on the element, and the matrix that changes from the standard basis to it is the diagonalising matrix. The coordinate model attached to that basis is the one in which the element is diagonal, its two eigenvalues are the diagonal entries, and the two mixed Peirce elements are the off-diagonal units.</p>
+<p>This article develops the eigenbasis model and the diagonalising matrix. It is the matrix form of <em>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</em>, §<em>The Eigenbasis</em>, §<em>The Matrix Model</em> and §<em>Change of Basis</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The element is $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The spectral direction is $\vec\Xi=-i\vec Q/B$, the spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the eigenvalues are $\lambda_\pm=Q_t\pm iB$. The two mixed elements are written $\vec\Upsilon_-$ and $\vec\Upsilon_+$, with $\vec\Upsilon_-\mapsto E_{12}$ and $\vec\Upsilon_+\mapsto E_{21}$ in the eigenbasis model.</p>
+<p><strong>Boundaries.</strong> The construction of the basis and of the nilpotents is <em>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</em>; the spectral projectors are <em>$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents</em>; the Peirce coordinates of the standard pair are <em>$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units</em>; the 4×4 model is <em>The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations</em>.</p>
+<h2 id="the-eigenbasis">The Eigenbasis</h2>
+<p><strong>The basis.</strong> The eigenbasis is</p>
+<p>$$
+\big(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-\big),
+$$</p>
+<p>with $\tilde\Pi_\pm$ the spectral idempotents and $\vec\Upsilon_\pm$ the two spectral nilpotents. It is a $\mathbb{C}$-basis of $\mathbb{B}$ for every $B\neq0$. The order is the one adapted to the matrix units: the first and last elements are the two corners, and the two middle elements are the two mixed elements.</p>
+<p><strong>The multiplication table.</strong> The basis multiplies as the matrix units:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Pi_+^2$</td>
+<td>$\tilde\Pi_+$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_-^2$</td>
+<td>$\tilde\Pi_-$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+\tilde\Pi_-$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_-^2$, $\vec\Upsilon_+^2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_-\vec\Upsilon_+$</td>
+<td>$\tilde\Pi_+$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_+\vec\Upsilon_-$</td>
+<td>$\tilde\Pi_-$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+\vec\Upsilon_-=\vec\Upsilon_-\tilde\Pi_-$</td>
+<td>$\vec\Upsilon_-$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_-\vec\Upsilon_+=\vec\Upsilon_+\tilde\Pi_+$</td>
+<td>$\vec\Upsilon_+$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the standard matrix-unit table with the labels of the middle elements chosen so that $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$. The choice is the opposite of the standard pair's labelling, where $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$; the two labels are conventions and the table is the same.</p>
+<p><strong>The expansion.</strong> Every element has a unique expansion</p>
+<p>$$
+\tilde X=X_{11}\tilde\Pi_++X_{12}\vec\Upsilon_-+X_{21}\vec\Upsilon_++X_{22}\tilde\Pi_-,
+$$</p>
+<p>and the coordinate matrix is</p>
+<p>$$
+\mathsf{M}_2^{Q}(\tilde X)=\begin{pmatrix}X_{11}&X_{12}\\X_{21}&X_{22}\end{pmatrix}.
+$$</p>
+<p>The superscript $Q$ records that the model depends on the element $Q$ through its spectral direction. For the element itself,</p>
+<p>$$
+\mathsf{M}_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
+$$</p>
+<p>because $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ and the mixed coefficients vanish.</p>
+<p><strong>The coordinates by duality.</strong> The four coordinates are the trace pairings</p>
+<p>$$
+X_{11}=\operatorname{Tr}(\tilde\Pi_+\tilde X),\quad
+X_{12}=\operatorname{Tr}(\vec\Upsilon_+\tilde X),\quad
+X_{21}=\operatorname{Tr}(\vec\Upsilon_-\tilde X),\quad
+X_{22}=\operatorname{Tr}(\tilde\Pi_-\tilde X),
+$$</p>
+<p>with the two mixed elements exchanged in the dual basis, as in the standard pair. The exchange is the statement $\operatorname{Tr}(\vec\Upsilon_-\vec\Upsilon_+)=1=\operatorname{Tr}(\vec\Upsilon_+\vec\Upsilon_-)$.</p>
+<p><strong>The diagonal subalgebra.</strong> An element commutes with $\tilde Q$ exactly when its coordinate matrix is diagonal in the eigenbasis. The diagonal subalgebra is therefore $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$, of dimension two, and it is the centraliser of $\tilde Q$. The statement is the matrix form of the fact that a spectrally regular element has a two-dimensional commutative centraliser, spanned by its spectral idempotents.</p>
+<h2 id="the-diagonalising-matrix">The Diagonalising Matrix</h2>
+<p><strong>Definition.</strong> The diagonalising matrix is</p>
+<p>$$
+\mathsf{C}_Q=
+\begin{pmatrix}
+B-Q_z&Q_x-iQ_y\\
+-Q_x-iQ_y&B-Q_z
+\end{pmatrix}.
+$$</p>
+<p>Its columns are the first column of $2B\rho_+$ and the second column of $2B\rho_-$. Its determinant is</p>
+<p>$$
+\det\mathsf{C}_Q=(B-Q_z)^2-(-Q_x-iQ_y)(Q_x-iQ_y)
+=(B-Q_z)^2+Q_x^2+Q_y^2
+=2B(B-Q_z),
+$$</p>
+<p>using $Q_x^2+Q_y^2=B^2-Q_z^2$.</p>
+<p><strong>The inverse.</strong> When $B\neq Q_z$,</p>
+<p>$$
+\mathsf{C}_Q^{-1}=\frac{1}{2B(B-Q_z)}
+\begin{pmatrix}
+B-Q_z&-(Q_x-iQ_y)\\
+Q_x+iQ_y&B-Q_z
+\end{pmatrix}.
+$$</p>
+<p><strong>Theorem (diagonalisation).</strong></p>
+<p>$$
+\mathsf{C}_Q^{-1}\,\mathsf{M}_2(\tilde Q)\,\mathsf{C}_Q
+=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> The two columns of $\mathsf{C}_Q$ are eigenvectors: the first is an eigenvector for $\lambda_+$ and the second for $\lambda_-$. A matrix whose two columns are eigenvectors for distinct eigenvalues is diagonalised by the matrix of its eigenvectors, and the diagonal entries are the eigenvalues. The determinant is nonzero when $B\neq Q_z$, so the matrix is invertible.</p>
+<p><strong>The second chart.</strong> When $B=Q_z$ the first chart is singular, and the relation $B^2=Q_z^2+Q_x^2+Q_y^2$ forces $Q_x=Q_y=0$. The second chart is</p>
+<p>$$
+\mathsf{C}_Q'=
+\begin{pmatrix}
+-Q_x+iQ_y&B+Q_z\\
+B+Q_z&Q_x+iQ_y
+\end{pmatrix},
+\qquad
+\det\mathsf{C}_Q'=-2B(B+Q_z),
+$$</p>
+<p>and it satisfies the same diagonalisation identity whenever $B\neq-Q_z$. The two determinants cannot both vanish: $B\neq0$, and $B=Q_z$ and $B=-Q_z$ would give $Q_z=0$ and then $B=0$. One of the two charts therefore always applies.</p>
+<p><strong>The exchange of the labels.</strong> On the axis $\vec Q=Q_z\vec e_z$ the second chart is a permutation matrix, and the diagonalisation holds with the eigenvalues in the order $\lambda_+,\lambda_-$. The labels are a choice of the square root $B$; the reversed choice exchanges the two columns and the two diagonal entries.</p>
+<h2 id="the-freedom-of-the-change">The Freedom of the Change</h2>
+<p><strong>Right diagonal multiplication.</strong> If $D=\operatorname{diag}(\alpha,\beta)$ is invertible, then</p>
+<p>$$
+(\mathsf{C}_QD)^{-1}M(\mathsf{C}_QD)=D^{-1}\big(\mathsf{C}_Q^{-1}M\mathsf{C}_Q\big)D
+=\mathsf{C}_Q^{-1}M\mathsf{C}_Q,
+$$</p>
+<p>because a diagonal matrix commutes with a diagonal matrix. The diagonalising matrix is therefore defined up to right multiplication by an invertible diagonal matrix.</p>
+<p><strong>Left scalar multiplication.</strong> A nonzero scalar multiple $\mu\mathsf{C}_Q$ gives the same conjugation, so the matrix is also defined up to a nonzero scalar. The two freedoms together are the freedom of choosing the eigenvectors and their normalisation: each eigenvector can be rescaled independently, and the pair can be multiplied by a common scalar.</p>
+<p><strong>The eigenvector reading.</strong> The first column of $\mathsf{C}_Q$ is the eigenvector for $\lambda_+$, and the second is the eigenvector for $\lambda_-$. The right diagonal freedom rescales the two eigenvectors independently. The reciprocal scaling of the nilpotents is the same freedom read in the Peirce basis: the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$ can be rescaled by $(\alpha,\alpha^{-1})$ without changing the products, and that rescaling is a diagonal similarity of the coordinate model.</p>
+<p><strong>Normalisations.</strong> Two normalisations are useful. The first fixes the first entry of each eigenvector to one when it is nonzero; this is the chart in which $\mathsf{C}_Q$ is written above, up to the common factor $2B$. The second fixes the determinant of $\mathsf{C}_Q$ to one, which is possible because the determinant is nonzero; the normalised matrix is $\mathsf{C}_Q/\sqrt{2B(B-Q_z)}$, with a choice of square root. The first normalisation is algebraic and the second is metric; neither is canonical.</p>
+<p><strong>The diagonalising matrix is not a unit of the algebra.</strong> $\mathsf{C}_Q$ is a matrix, not necessarily the image of a biquaternion of unit norm. It is an element of $GL_2(\mathbb{C})$, and it acts by conjugation on the matrix algebra. Its columns are eigenvectors, not elements of the algebra in the biquaternion product. The distinction is the distinction between the algebra and its defining module.</p>
+<h2 id="change-from-one-element-to-another">Change from One Element to Another</h2>
+<p><strong>The transition matrix.</strong> Let $\tilde Q$ and $\tilde Q'$ be two spectrally regular elements, with diagonalising matrices $\mathsf{C}_Q$ and $\mathsf{C}_{Q'}$. The matrix</p>
+<p>$$
+T_{Q'Q}=\mathsf{C}_Q^{-1}\mathsf{C}_{Q'}
+$$</p>
+<p>changes the $Q'$-coordinates to the $Q$-coordinates:</p>
+<p>$$
+\mathsf{M}_2^{Q}(\tilde X)=T_{Q'Q}\,\mathsf{M}_2^{Q'}(\tilde X)\,T_{Q'Q}^{-1}.
+$$</p>
+<p><em>Proof.</em> Substitute the two definitions:</p>
+<p>$$
+\mathsf{C}_Q^{-1}M\mathsf{C}_Q
+=\mathsf{C}_Q^{-1}\mathsf{C}_{Q'}\big(\mathsf{C}_{Q'}^{-1}M\mathsf{C}_{Q'}\big)\mathsf{C}_{Q'}^{-1}\mathsf{C}_Q.
+$$</p>
+<p><strong>The cocycle.</strong> For three elements,</p>
+<p>$$
+T_{Q''Q}T_{Q'Q''}=T_{Q'Q},
+$$</p>
+<p>with the obvious convention on the order of the labels. The transition matrices satisfy the cocycle identity of a change of trivialisation, and the family of eigenbasis models is a trivialisation of the bundle of spectral frames over the spectrally regular set.</p>
+<p><strong>The diagonal form is not preserved by a general change.</strong> A transition matrix between two different spectral elements does not preserve the diagonal subalgebra unless the two elements have the same eigenbasis. The diagonal form is attached to one element, and the change to another element mixes the two eigenvalues. The statement is the matrix form of the fact that two spectrally regular elements are simultaneously diagonalisable exactly when they commute.</p>
+<p><strong>The commuting case.</strong> If $\tilde Q$ and $\tilde Q'$ commute, their spectral directions are parallel or the elements are scalar on the same two lines, and the transition matrix is diagonal. Then the two eigenbases coincide up to rescaling, and the two elements are simultaneously diagonal. The statement is the spectral theorem for a commuting family, read in the matrix model.</p>
+<h2 id="summary">Summary</h2>
+<p>The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ multiplies as the matrix units $E_{11},E_{12},E_{21},E_{22}$; in the coordinate model the element is diagonal with entries $\lambda_+,\lambda_-$, while left multiplication on the four-dimensional algebra has the doubled entries $\lambda_+,\lambda_+,\lambda_-,\lambda_-$. The diagonalising matrix $\mathsf{C}_Q$ has the two eigenvectors as columns, has determinant $2B(B-Q_z)$, and satisfies $\mathsf{C}_Q^{-1}M\mathsf{C}_Q=\operatorname{diag}(\lambda_+,\lambda_-)$; a second chart covers the axis $B=Q_z$. The matrix is defined up to a nonzero scalar and an invertible diagonal right factor, which are the rescalings of the two eigenvectors. Transitions between two spectral elements satisfy the cocycle identity and preserve the diagonal form only when the elements commute.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$</td>
+<td>the eigenbasis</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2^{Q}$</td>
+<td>the coordinate model attached to $\tilde Q$</td>
+</tr>
+<tr>
+<td>$X_{ij}$</td>
+<td>the eigenbasis coordinates</td>
+</tr>
+<tr>
+<td>$\mathsf{C}_Q$</td>
+<td>the diagonalising matrix</td>
+</tr>
+<tr>
+<td>$2B(B-Q_z)$</td>
+<td>its determinant</td>
+</tr>
+<tr>
+<td>$\mathsf{C}_Q'$</td>
+<td>the second chart, for $B=Q_z$</td>
+</tr>
+<tr>
+<td>$T_{Q'Q}=\mathsf{C}_Q^{-1}\mathsf{C}_{Q'}$</td>
+<td>the transition matrix</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the eigenvalues</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html">The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</a>, for the construction of the basis and the change of basis</li>
+<li><a href="m2c-representation-the-spectral-projectors-and-the-nilpotents.html">$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents</a>, for the projectors</li>
+<li><a href="m2c-representation-the-peirce-coordinates-and-the-matrix-units.html">$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units</a>, for the standard coordinate model</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion</li>
+<li><a href="the-spectrally-regular-sector-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html">The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations</a>, for the 4×4 model</li>
+<li><a href="eigenvalues-and-diagonalisation.html">Eigenvalues and Diagonalisation</a>, for the matrix theorem</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

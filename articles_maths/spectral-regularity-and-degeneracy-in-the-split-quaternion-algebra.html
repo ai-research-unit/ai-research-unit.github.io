@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectral Regularity and Degeneracy in the Split-Quaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spectral-regularity-and-degeneracy-in-the-split-quaternion-algebra"><strong>Spectral Regularity and Degeneracy in the Split-Quaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-quaternion algebra carries two quadratic conditions on one element. The first is the square of the vector part,</p>
+<p>$$
+S:=\vec v^2=-q_x^2+q_y^2+q_z^2,
+$$</p>
+<p>which involves no scalar term. The second is the split-quaternion norm $q\bar q=t^2-S$, which is multiplicative. This article studies the first condition: it defines left multiplication, proves the spectral polynomials, derives the eigenvalues $t\pm\sqrt S$, and separates the regular case $S\neq0$ from the degenerate cone $S=0$. On the cone, the scalar line is semisimple and its complement is defective with Jordan type $(2,2)$.</p>
+<p><strong>Notation.</strong> A general element is $q=t+\vec v$, with $t\in\mathbb R$ and $\vec v=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$. The basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x^2=-e_t$, $\vec e_y^2=\vec e_z^2=+e_t$ and $\vec e_x\vec e_y=\vec e_z$. The conjugation is $\bar q=t-\vec v$, and the split-quaternion norm is</p>
+<p>$$
+q\bar q=t^2-S=t^2+q_x^2-q_y^2-q_z^2.
+$$</p>
+<p>The symbol $S$ denotes $\vec v^2$; the scalar subspace is $\mathbb R\cdot1$.</p>
+<h2 id="left-multiplication-and-the-spectral-polynomial">Left Multiplication and the Spectral Polynomial</h2>
+<p><strong>Definition (left multiplication).</strong> For $q\in\mathbb H_{\mathrm s}$, the <strong>left multiplication</strong> $L_q$ is the endomorphism of $\mathbb H_{\mathrm s}$ defined by $L_q(x)=qx$. It is $\mathbb R$-linear and injective, since $L_q(1)=q$.</p>
+<p><strong>Proposition (the matrix).</strong> On the basis $(1,\vec e_x,\vec e_y,\vec e_z)$, the matrix of $L_q$ is</p>
+<p>$$
+L(q)=\begin{pmatrix}
+t&-q_x&q_y&q_z\\
+q_x&t&q_z&-q_y\\
+q_y&q_z&t&-q_x\\
+q_z&-q_y&q_x&t
+\end{pmatrix}.
+$$</p>
+<p>It has the block form</p>
+<p>$$
+L(q)=\begin{pmatrix}A&B\\B&A\end{pmatrix},\qquad
+A=\begin{pmatrix}t&-q_x\\q_x&t\end{pmatrix},\qquad
+B=\begin{pmatrix}q_y&q_z\\q_z&-q_y\end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> The columns are the products $q\cdot1$, $q\vec e_x$, $q\vec e_y$, $q\vec e_z$, read in the basis; the multiplication table gives the display. The block change $\frac1{\sqrt2}\begin{pmatrix}I&I\\I&-I\end{pmatrix}$ conjugates the matrix to $\operatorname{diag}(A+B,A-B)$.</p>
+<p><strong>Theorem (the spectral polynomial).</strong> Let $q=t+\vec v$.</p>
+<ol>
+<li>The characteristic polynomial of $L_q$ is
+$$
+p_{L_q}(\lambda)=\big((\lambda-t)^2-S\big)^2.
+$$</li>
+<li>If $q$ is not scalar, the minimal polynomial of $L_q$ is
+$$
+m_q(\lambda)=(\lambda-t)^2-S.
+$$
+If $q=t$ is scalar, $m_q(\lambda)=\lambda-t$.</li>
+<li>If $S=0$ and $\vec v\neq0$, then $L_q$ has the single eigenvalue $t$, an eigenspace of dimension $2$, minimal polynomial $(\lambda-t)^2$ and Jordan type $(2,2)$. If $q$ is scalar, $L_q=t\,\mathrm{id}$ and the Jordan type is $(1,1,1,1)$. If $S\neq0$, $L_q$ is semisimple with eigenvalues $t+\sqrt S$ and $t-\sqrt S$, each of multiplicity two.</li>
+</ol>
+<p><em>Proof.</em> Both $A+B$ and $A-B$ have trace $2t$ and determinant</p>
+<p>$$
+\det(A\pm B)=(t+q_y)(t-q_y)-(-q_x\pm q_z)(q_x\pm q_z)
+=t^2+q_x^2-q_y^2-q_z^2=t^2-S.
+$$</p>
+<p>Hence each $2\times2$ block has characteristic polynomial $\lambda^2-2t\lambda+(t^2-S)=(\lambda-t)^2-S$, and the characteristic polynomial of the $4\times4$ matrix is the product of the two, that is the square in (1).</p>
+<p>The minimal polynomial of a block diagonal matrix is the least common multiple of the minimal polynomials of its blocks. If $S\neq0$, the roots $t\pm\sqrt S$ are distinct, so each block has minimal polynomial $(\lambda-t)^2-S$, and the least common multiple is that polynomial. If $S=0$ and $\vec v\neq0$, then</p>
+<p>$$
+A+B=tI+\begin{pmatrix}q_y&-q_x+q_z\\q_x+q_z&-q_y\end{pmatrix},\qquad
+A-B=tI+\begin{pmatrix}-q_y&-q_x-q_z\\q_x-q_z&q_y\end{pmatrix},
+$$</p>
+<p>and each square-zero matrix on the right is non-zero. A non-zero $2\times2$ nilpotent is a single Jordan block $J_2(0)$, so each block is $J_2(t)$ with minimal polynomial $(\lambda-t)^2$; the least common multiple is $(\lambda-t)^2$. If $\vec v=0$, both blocks are $tI$ and the minimal polynomial is $\lambda-t$.</p>
+<p>For the Jordan type: at $S=0$, $\vec v\neq0$, $L_q=J_2(t)\oplus J_2(t)$ and the eigenspace has dimension $2$; at $S\neq0$ the direct sum is semisimple with each eigenvalue twice; at $\vec v=0$, $L_q=tI$.</p>
+<p><strong>Corollary (Cayley–Hamilton and the inverse).</strong> Every $q$ satisfies $q^2-2tq+(t^2-S)=0$; if $t^2-S\neq0$, then $q^{-1}=\bar q/(t^2-S)$.</p>
+<p><em>Proof.</em> Since $\vec v^2=S$, $q^2=t^2+2t\vec v+S=2tq-(t^2-S)$, and $q\bar q=\bar q q=t^2-S$.</p>
+<p><strong>Definition and criterion (spectrum, regular and degenerate).</strong> The <strong>spectrum</strong> is $\sigma(q)=\{t+\sqrt S,\ t-\sqrt S\}$. The element is <strong>spectrally regular</strong> when $S\neq0$ and <strong>spectrally degenerate</strong> when $S=0$. The regular case is equivalent to the distinctness of the two eigenvalues, to $4S\neq0$, and, for non-scalar $q$, to $p_q$ being the minimal polynomial and squarefree. For every non-scalar $q$ and every eigenvalue the eigenspace has dimension $2$ over $\mathbb C$; for the scalar, $\mathbb H_{\mathrm s}$. A non-scalar $q$ has an eigenbasis over $\mathbb C$ exactly when $S\neq0$.</p>
+<p><em>Proof.</em> The roots of $p_q$ are distinct exactly when $4S\neq0$. In the block decomposition each block contributes one eigenvector per eigenvalue, giving dimension $2$; at $S=0$ and $\vec v\neq0$ the geometric multiplicity $2$ is smaller than the algebraic multiplicity $4$, so no eigenbasis exists. If $S\neq0$ the minimal polynomial has distinct roots, so an eigenbasis exists.</p>
+<h2 id="the-spectral-cone">The Spectral Cone</h2>
+<p><strong>Definition (the spectral cone).</strong> The <strong>spectral cone</strong> is</p>
+<p>$$
+\mathcal C=\{q\in\mathbb H_{\mathrm s}:S=0\}=\{q:-q_x^2+q_y^2+q_z^2=0\}.
+$$</p>
+<p><strong>Theorem (the cone is the discriminant locus).</strong> For every $q$, $q\in\mathcal C$ exactly when the reduced polynomial $p_q=(\lambda-t)^2-S$ has a repeated root, that is, when the two eigenvalues coincide.</p>
+<p><em>Proof.</em> The discriminant of $p_q$ is $4S$. The characteristic polynomial is $p_q^2$, so the eigenvalues coincide exactly when $p_q$ has a repeated root, that is, when $S=0$.</p>
+<p><strong>Theorem (the geometry of the cone).</strong> Write $V=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ and</p>
+<p>$$
+N_V=\{\vec v\in V:\vec v^2=0\}=\{(q_x,q_y,q_z):q_x^2=q_y^2+q_z^2\}.
+$$</p>
+<p>Then $\mathcal C=\mathbb R\times N_V$. The cone has dimension $3$, is smooth off the scalar line and singular along it.</p>
+<p><em>Proof.</em> Since $S$ involves only $\vec v$, $t$ is free and $\mathcal C=\mathbb R\times N_V$. The gradient $(-2q_x,2q_y,2q_z)$ is non-zero off the origin, so $N_V$ has dimension $2$ and $\mathcal C$ has dimension $3$. The gradient of $S$ in four coordinates is $(0,-2q_x,2q_y,2q_z)$, which vanishes exactly along the scalar line.</p>
+<p><strong>Proposition (what the cone is not).</strong> The spectral cone is not a linear subspace, not the zero-divisor cone, not the set of non-units, and not the set of defective elements.</p>
+<p><em>Proof.</em> The elements $\vec e_x\pm\vec e_y$ lie on $\mathcal C$ while their sum $2\vec e_x$ does not, so $\mathcal C$ is not a subspace. The element $1+\vec e_y$ has norm $0$ and $S=1$; the element $1+\vec e_x+\vec e_y$ has norm $1$ and $S=0$; the scalar line lies on $\mathcal C$ and is semisimple. These witnesses separate $\mathcal C$ from the zero-divisor cone, from the non-units and from the defective set.</p>
+<h2 id="the-defective-stratum">The Defective Stratum</h2>
+<p><strong>Definition (the defective stratum).</strong> The <strong>defective stratum</strong> of the spectral cone is</p>
+<p>$$
+\mathcal D=\mathcal C\setminus\{q:\vec v=0\}=\{q:S=0,\ \vec v\neq0\}.
+$$</p>
+<p><strong>Theorem (the normal form on the defect).</strong> Let $q=t+\vec v$ with $S=0$ and $\vec v\neq0$. Then $\vec v^2=0$ and $\vec v\neq0$, and $L_q$ has minimal polynomial $(\lambda-t)^2$, characteristic polynomial $(\lambda-t)^4$, eigenspace $\ker L_{\vec v}$ of dimension $2$, and Jordan type $(2,2)$. No eigenbasis exists.</p>
+<p><em>Proof.</em> The spectral polynomial theorem gives the polynomials and Jordan type; the eigenspace is $\ker(L_q-t\,\mathrm{id})=\ker L_{\vec v}$, of dimension $2$. Since $2<4$, no eigenbasis exists.</p>
+<p><strong>Corollary (the cone is the scalar line plus the defect).</strong> The spectral cone is the disjoint union of the scalar line $\{\vec v=0\}$ and $\mathcal D$. On the scalar line $L_q=t\,\mathrm{id}$ is semisimple with minimal polynomial $\lambda-t$; on $\mathcal D$ the element is defective. Spectral degeneracy is therefore not defect: the scalar line is degenerate and semisimple.</p>
+<h2 id="the-matrix-model-and-the-singular-locus">The Matrix Model and the Singular Locus</h2>
+<p><strong>Theorem (the matrix model).</strong> The assignment</p>
+<p>$$
+\varphi(q)=\begin{pmatrix}t+q_y&q_x-q_z\\-(q_x+q_z)&t-q_y\end{pmatrix}
+$$</p>
+<p>is an isomorphism of $\mathbb H_{\mathrm s}$ onto $M_2(\mathbb R)$. It satisfies</p>
+<p>$$
+\det\varphi(q)=t^2+q_x^2-q_y^2-q_z^2=t^2-S,\qquad
+\operatorname{tr}\varphi(q)=2t,
+$$</p>
+<p>and the characteristic polynomial of $\varphi(q)$ is $(\lambda-t)^2-S$.</p>
+<p><em>Proof.</em> On the generators,</p>
+<p>$$
+\varphi(\vec e_x)=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+\varphi(\vec e_y)=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+\varphi(\vec e_z)=\begin{pmatrix}0&-1\\-1&0\end{pmatrix},
+$$</p>
+<p>and these satisfy the defining relations. The four images are linearly independent, so $\varphi$ is injective between four-dimensional algebras, hence an isomorphism. The determinant, trace and characteristic polynomial are direct computations.</p>
+<p><strong>Theorem (two different loci).</strong> In the matrix model the singular (non-invertible) locus $\{\det=0\}$ is the zero-divisor cone $\mathcal Z=\{t^2=S\}$. The discriminant locus, where the two eigenvalues coincide, is the spectral cone $\mathcal C=\{S=0\}$. The two loci are different, and their intersection is the set $\{t=0,S=0\}$.</p>
+<p><em>Proof.</em> The determinant $t^2-S$ vanishes exactly on $\mathcal Z$. The reduced characteristic polynomial $(\lambda-t)^2-S$ has discriminant $4S$, so its roots coincide exactly when $S=0$. Both conditions give $t^2=S=0$, hence $t=0$.</p>
+<h2 id="contrast-with-the-quaternion-and-biquaternion-cases">Contrast with the Quaternion and Biquaternion Cases</h2>
+<p>In each of the three algebras the reduced characteristic polynomial has the form</p>
+<p>$$
+(\lambda-t)^2-\vec v^2,
+$$</p>
+<p>the eigenvalues are $t\pm\sqrt{\vec v^2}$, and the spectral condition is $\vec v^2=0$. What changes is the signature of the form $\vec v^2$ on the vector subspace.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>$\vec v^2$</th>
+<th>spectral condition</th>
+<th>eigenvalues</th>
+<th>defective stratum</th>
+<th>norm</th>
+<th>norm cone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb H$</td>
+<td>$-\lvert\vec v\rvert^2$, negative definite</td>
+<td>$\vec v=0$</td>
+<td>$t\pm i\lvert\vec v\rvert$</td>
+<td>none</td>
+<td>$t^2+\lvert\vec v\rvert^2$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathbb B$</td>
+<td>$-B^2$, complex nondegenerate</td>
+<td>$B^2=0$</td>
+<td>$t\pm iB$</td>
+<td>$B^2=0,\ \vec v\neq0$</td>
+<td>$t^2+B^2$</td>
+<td>$t^2+B^2=0$</td>
+</tr>
+<tr>
+<td>$\mathbb H_{\mathrm s}$</td>
+<td>$S$, real of signature $(2,1)$</td>
+<td>$S=0$</td>
+<td>$t\pm\sqrt S$</td>
+<td>$S=0,\ \vec v\neq0$</td>
+<td>$t^2-S$</td>
+<td>$t^2=S$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The quaternion form is negative definite, so its spectral cone is the centre, every element is semisimple and there is no defective stratum; its norm is positive definite. The biquaternion form is complex nondegenerate, so its spectral cone is a complex cone containing the centre, with a defective part off the centre; its norm is a second complex cone. The split form is real of signature $(2,1)$, so its spectral cone is a real cone containing the scalar line, with a defective part off it; its norm is a second real cone. The split case is the only one in which both cones are real hypersurfaces and neither is the centre.</p>
+<h2 id="summary">Summary</h2>
+<p>The split-quaternion algebra carries the condition $S=\vec v^2=-q_x^2+q_y^2+q_z^2$. Left multiplication by $q=t+\vec v$ has characteristic polynomial $((\lambda-t)^2-S)^2$ and, for non-scalar $q$, minimal polynomial $(\lambda-t)^2-S$; the eigenvalues are $t\pm\sqrt S$, real for $S>0$, conjugate for $S<0$, and coincident at $t$ for $S=0$. The spectral criterion is $S\neq0$: the eigenvalues are distinct, $L_q$ is semisimple and an eigenbasis exists. The degenerate case is the spectral cone $\{S=0\}=\mathbb R\times\{q_x^2=q_y^2+q_z^2\}$, of dimension $3$, smooth off the scalar line and singular along it. The scalar line is semisimple; off it the element is defective with minimal polynomial $(\lambda-t)^2$, eigenspace of dimension $2$ and Jordan type $(2,2)$.</p>
+<p>The matrix model $\mathbb H_{\mathrm s}\cong M_2(\mathbb R)$ has determinant $t^2-S$ and trace $2t$; its singular (non-invertible) locus is the zero-divisor cone $t^2=S$, while its discriminant locus is the spectral cone $S=0$. The two loci differ: a unit can have a repeated eigenvalue and a zero divisor can have distinct eigenvalues. The comparison is <em>Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy</em>; the four combinations are <em>The Four Sectors of the Split-Quaternion Algebra</em>. The quaternion, biquaternion and split cases differ by the signature of $\vec v^2$: negative definite, complex nondegenerate, and real of signature $(2,1)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb H_{\mathrm s}$</td>
+<td>the split-quaternion algebra</td>
+</tr>
+<tr>
+<td>$q=t+\vec v$</td>
+<td>a general element</td>
+</tr>
+<tr>
+<td>$\vec v=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$</td>
+<td>the vector part</td>
+</tr>
+<tr>
+<td>$S=\vec v^2=-q_x^2+q_y^2+q_z^2$</td>
+<td>the square of the vector part, the spectral discriminant up to $4$</td>
+</tr>
+<tr>
+<td>$\bar q=t-\vec v$</td>
+<td>the conjugation</td>
+</tr>
+<tr>
+<td>$q\bar q=t^2-S$</td>
+<td>the split-quaternion norm</td>
+</tr>
+<tr>
+<td>$L_q(x)=qx$</td>
+<td>left multiplication</td>
+</tr>
+<tr>
+<td>$p_q(\lambda)=(\lambda-t)^2-S$</td>
+<td>the reduced characteristic polynomial</td>
+</tr>
+<tr>
+<td>$\sigma(q)=\{t\pm\sqrt S\}$</td>
+<td>the spectrum</td>
+</tr>
+<tr>
+<td>$\mathcal C=\{S=0\}$</td>
+<td>the spectral cone</td>
+</tr>
+<tr>
+<td>$\mathcal D=\mathcal C\setminus\{\vec v=0\}$</td>
+<td>the defective stratum</td>
+</tr>
+<tr>
+<td>$\mathcal Z=\{t^2=S\}$</td>
+<td>the zero-divisor cone</td>
+</tr>
+<tr>
+<td>$N_V=\{q_x^2=q_y^2+q_z^2\}$</td>
+<td>the vector null cone, with $\mathcal C=\mathbb R\times N_V$</td>
+</tr>
+<tr>
+<td>$\varphi(q)$</td>
+<td>the isomorphism $\mathbb H_{\mathrm s}\to M_2(\mathbb R)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="split-quaternion-algebra.html">Split-Quaternion Algebra</a>, for the algebra, its multiplication table, its conjugations and its idempotents.</li>
+<li><a href="split-quaternion-norm-and-invertibility.html">Split-Quaternion Norm and Invertibility</a>, for the norm $q\bar q=t^2-S$, its isotropy and the invertibility criterion.</li>
+<li><a href="split-quaternion-zero-divisors.html">Split-Quaternion Zero Divisors</a>, for the zero-divisor cone, its two families of minimal ideals and the non-zero nilpotents.</li>
+<li><a href="split-quaternion-spectral-theory.html">Split-Quaternion Spectral Theory</a>, for the spectrum, the left and right eigenvalue problems and the resolvent.</li>
+<li><a href="relations-between-the-split-quaternion-norm-and-spectral-regularity-and-degeneracy.html">Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy</a>, for the comparison of the two cones and the chain of invariants.</li>
+<li><a href="the-four-sectors-of-the-split-quaternion-algebra.html">The Four Sectors of the Split-Quaternion Algebra</a>, for the partition, the descriptions and the table of dimensions.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the complex analogue.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (2nd edition, Cambridge University Press, 2013), for the characteristic polynomial, diagonalisability and the Jordan form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

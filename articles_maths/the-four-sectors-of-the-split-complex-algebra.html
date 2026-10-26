@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Sectors of the Split-Complex Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-sectors-of-the-split-complex-algebra"><strong>The Four Sectors of the Split-Complex Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-complex algebra $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ carries two quadratic conditions on $q=t+bj$: the split norm $q\bar q=t^2-b^2$, which decides invertibility, and the spectral condition $b^2$, which decides whether the eigenvalues $t\pm b$ coincide. Their vanishing loci are the two null lines $t=\pm b$ and the real axis $b=0$. The truth values of the pair cut the plane into four sectors. This article defines them, proves all four non-empty, describes their geometry, and computes their closures, dimensions and components. It proves that none is a defective stratum. The sector $\Sigma_{11}$ is the largest: because $b=0$ is removed, it has six components, not two.</p>
+<p><strong>Notation.</strong> An element is $q=t+bj$, its conjugate is $\bar q=t-bj$, and the idempotents are $e_\pm=\tfrac12(1\pm j)$. The idempotent coordinates are $u=t+b$ and $v=t-b$, so that $q=ue_+ +ve_-$ and the eigenvalues are $u$ and $v$. The split norm is $q\bar q=uv=t^2-b^2$; it is indefinite and is not a length. The two conditions were compared in <em><a href="relations-between-the-split-norm-and-spectral-regularity-and-degeneracy.html">Relations between the Split Norm and Spectral Regularity and Degeneracy</a></em>.</p>
+<h2 id="the-four-sectors">The Four Sectors</h2>
+<p><strong>Definition (the sectors).</strong> For $i,j\in\{0,1\}$, $\Sigma_{ij}$ is the set on which the split norm is zero exactly when $i=0$, and the spectral condition is zero exactly when $j=0$:</p>
+<p>$$
+\Sigma_{11}=\{t^2\neq b^2,\ b\neq0\},\qquad
+\Sigma_{01}=\{t^2=b^2,\ b\neq0\},
+$$
+$$
+\Sigma_{10}=\{t^2\neq b^2,\ b=0\},\qquad
+\Sigma_{00}=\{t^2=b^2,\ b=0\}.
+$$</p>
+<p>The first index is $1$ when the norm is non-zero and $0$ when it is zero; the second is $1$ when $b$ is non-zero and $0$ when it is zero.</p>
+<p><strong>Proposition (the sectors cover the plane).</strong> The sets $\Sigma_{11},\Sigma_{01},\Sigma_{10},\Sigma_{00}$ are pairwise disjoint and their union is $\mathbb{D}$.</p>
+<p><em>Proof.</em> Each element has exactly one truth value for each of the two conditions, so it lies in exactly one of the four combinations.</p>
+<p><strong>Proposition (all four sectors are non-empty).</strong> The following witnesses lie in the four sectors:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>witness</th>
+<th>norm</th>
+<th>$b$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$2+j$</td>
+<td>$3$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$1+j$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$2$</td>
+<td>$4$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Direct evaluation of $t^2-b^2$ and $b$ at each witness.</p>
+<h2 id="the-sector-math50">The Sector $\Sigma_{11}$</h2>
+<p><strong>Theorem (the shape of $\Sigma_{11}$).</strong> The sector $\Sigma_{11}$ is the complement in $\mathbb{R}^2$ of the union of the three lines</p>
+<p>$$
+b=0,\qquad t=b,\qquad t=-b.
+$$</p>
+<p>It is open and dense, and it has exactly six connected components, the six open angular sectors cut out by the three lines.</p>
+<p><em>Proof.</em> The conditions defining $\Sigma_{11}$ exclude exactly the points with $b=0$ or $t^2=b^2$, that is the three lines. Their complement is open. Three distinct lines through the origin divide the plane into six open angular sectors; each is convex and therefore connected, and two different sectors are separated by a removed line. Hence there are six components.</p>
+<p>The open quadrants of positive norm are $Q_+=\{t>|b|\}$ and $Q_-=\{t<-|b|\}$. Each is convex, but the removed real axis cuts $Q_+$ into the components $b>0$ and $b<0$, and cuts $Q_-$ similarly. The negative-norm region $|t|<|b|$ contributes the components $b>|t|$ and $b<-|t|$. Hence four components have positive norm and two have negative norm.</p>
+<p><strong>Proposition (the elements of $\Sigma_{11}$).</strong> Every element of $\Sigma_{11}$ is a unit with two distinct real eigenvalues $t+b$ and $t-b$, and spectral decomposition $q=(t+b)e_+ +(t-b)e_-$.</p>
+<p><em>Proof.</em> The element is not scalar because $b\neq0$, so the eigenvalues are distinct. The norm is non-zero, so the element is a unit, with inverse $\bar q/(q\bar q)$. The idempotent expansion is the spectral decomposition.</p>
+<p>The two open quadrants $Q_+\cup Q_-$ are not the whole sector: after $b=0$ is removed each splits in two, and with the two negative-norm sectors the total is six.</p>
+<h2 id="the-sector-math76">The Sector $\Sigma_{01}$</h2>
+<p><strong>The sector $\Sigma_{01}$ is the union of the two null lines with the origin removed: the zero divisors with distinct eigenvalues.</strong></p>
+<p><strong>Theorem (the punctured null lines).</strong> The sector $\Sigma_{01}$ is</p>
+<p>$$
+\{t=b,\ t\neq0\}\cup\{t=-b,\ t\neq0\}.
+$$</p>
+<p>Every element has the form $q=2t e_+$ or $q=2t e_-$ with $t\neq0$. It is a zero divisor, its spectrum is $\{2t,0\}$, and its spectral decomposition is $q=2t\,e_\pm+0\cdot e_\mp$.</p>
+<p><em>Proof.</em> The condition $t^2=b^2$ gives $b=\pm t$; the condition $b\neq0$ excludes the origin. If $b=t$, then $q=t(1+j)=2t e_+$; if $b=-t$, then $q=t(1-j)=2t e_-$. The annihilator of $2t e_\pm$ contains $e_\mp$, so the element is a zero divisor.</p>
+<p><strong>Corollary (the components).</strong> The sector $\Sigma_{01}$ has real dimension one and four connected components, the four rays</p>
+<p>$$
+t>0,\ b=t;\qquad t<0,\ b=t;\qquad t>0,\ b=-t;\qquad t<0,\ b=-t.
+$$</p>
+<p><em>Proof.</em> Each punctured line has the two rays $t>0$ and $t<0$, and the two lines meet only at the origin, which is removed. Each ray is homeomorphic to an open interval.</p>
+<p>The two lines annihilate each other: $\operatorname{ann}(2t e_+)=\mathbb{R}e_-$ and $\operatorname{ann}(2t e_-)=\mathbb{R}e_+$ for $t\neq0$. The sector is the zero-divisor set of the algebra, studied in <em><a href="zero-divisors-of-the-split-complex-algebra.html">Zero Divisors of the Split-Complex Algebra</a></em>.</p>
+<h2 id="the-sector-math101">The Sector $\Sigma_{10}$</h2>
+<p><strong>The sector $\Sigma_{10}$ is the real axis minus the origin: the scalar units, with a repeated eigenvalue.</strong></p>
+<p><strong>Theorem (the real half-lines).</strong> The sector $\Sigma_{10}$ is $\mathbb{R}^{\times}=\{t\neq0,\ b=0\}$. Every element is the scalar $q=t$, a unit with $q^{-1}=1/t$, norm $t^2>0$, spectrum $\{t\}$ and minimal polynomial $X-t$. Its spectral decomposition is the one-term writing $q=t\cdot1$.</p>
+<p><em>Proof.</em> The conditions are $b=0$ and $t^2-b^2=t^2\neq0$, hence $t\neq0$. The inverse is $1/t$, the characteristic polynomial is $(X-t)^2$, and the minimal polynomial is $X-t$ because $q-t=0$.</p>
+<p><strong>Corollary (the components).</strong> The sector $\Sigma_{10}$ has real dimension one and two connected components, the positive and the negative half-lines.</p>
+<p><em>Proof.</em> The set $\mathbb{R}^{\times}$ is the disjoint union of $\{t>0\}$ and $\{t<0\}$, each homeomorphic to an open interval.</p>
+<p>This is the opposite divergence from $\Sigma_{01}$: units with a singleton spectrum. Invertibility and spectral separation are independent; see <em><a href="spectral-regularity-and-degeneracy-in-the-split-complex-algebra.html">Spectral Regularity and Degeneracy in the Split-Complex Algebra</a></em>.</p>
+<h2 id="the-sector-math123">The Sector $\Sigma_{00}$</h2>
+<p><strong>The sector $\Sigma_{00}$ is the origin: the zero element, degenerate for both conditions and not a zero divisor.</strong></p>
+<p><strong>Theorem (the origin).</strong> The sector $\Sigma_{00}$ is the singleton $\{0\}$. Its element has norm zero, spectrum $\{0\}$, minimal polynomial $X$, and is the only element with both eigenvalues zero. It is not a zero divisor.</p>
+<p><em>Proof.</em> The conditions $t^2=b^2$ and $b=0$ give $t=0$. The spectrum of $0$ is $\{0\}$ and its minimal polynomial is $X$; the definition of a zero divisor excludes $0$. Both eigenvalues vanish only if $t+b=0$ and $t-b=0$, hence $t=b=0$.</p>
+<p>The origin lies in the closure of every sector, as the next section shows.</p>
+<h2 id="closure-dimension-and-connected-components">Closure, Dimension and Connected Components</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>closure</th>
+<th>dimension</th>
+<th>components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$\mathbb{D}$</td>
+<td>$2$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$\mathcal{N}=\{t^2=b^2\}$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$\mathcal{S}=\{b=0\}$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (closures).</strong> The closures are as in the table. The sector $\Sigma_{11}$ is open and dense, $\Sigma_{00}$ is closed, and $\Sigma_{01}$ and $\Sigma_{10}$ are neither open nor closed. The origin lies in the closure of all four sectors.</p>
+<p><em>Proof.</em> The complement of $\Sigma_{11}$ is the union of the three lines, which has empty interior, so the closure is $\mathbb{D}$. The null cone $\mathcal{N}$ is closed and contains $\Sigma_{01}$, and the origin is a limit along either line, so the closure is $\mathcal{N}$. The real axis $\mathcal{S}$ is closed and contains $\Sigma_{10}$, and the origin is a limit of $t\neq0$, so the closure is $\mathcal{S}$. The singleton $\{0\}$ is closed.</p>
+<p>$\Sigma_{11}$ is the complement of a closed union of lines, hence open. A ball around a point of $\Sigma_{01}$ or $\Sigma_{10}$ contains points outside the sector, so neither is open; both miss the origin, which lies in their closures, so neither is closed.</p>
+<p><strong>Theorem (dimensions and components).</strong> The dimensions and component counts are as in the table. In particular $\Sigma_{11}$ has six components, $\Sigma_{01}$ four, $\Sigma_{10}$ two and $\Sigma_{00}$ one.</p>
+<p><em>Proof.</em> $\Sigma_{11}$ is open in $\mathbb{R}^2$, hence of dimension two; its six components are the open angular sectors of the three-line complement. $\Sigma_{01}$ and $\Sigma_{10}$ are unions of open rays, of dimension one, with four and two components. The origin has dimension zero and one component.</p>
+<p>The closures overlap: $\overline{\Sigma_{11}}=\mathbb{D}$ meets every sector, while $\overline{\Sigma_{01}}\cap\overline{\Sigma_{10}}=\{0\}$. The origin is the only point common to all four closures.</p>
+<h2 id="the-absence-of-a-defective-stratum">The Absence of a Defective Stratum</h2>
+<p><strong>Definition (defective).</strong> An element is <strong>semisimple</strong> if its minimal polynomial is squarefree; it is <strong>defective</strong> otherwise.</p>
+<p><strong>Theorem (no defective element).</strong> Every element of $\mathbb{D}$ is semisimple. Consequently no sector is a defective stratum.</p>
+<p><em>Proof.</em> If $b\neq0$, the minimal polynomial is $(X-t-b)(X-t+b)$, whose roots are distinct. If $b=0$, the minimal polynomial is $X-t$, which is squarefree. In both cases the minimal polynomial is squarefree.</p>
+<p><strong>Corollary (sector by sector).</strong> Elements of $\Sigma_{11}$ and $\Sigma_{01}$ have distinct eigenvalues; elements of $\Sigma_{10}$ and $\Sigma_{00}$ are scalar; all are semisimple. In particular $\Sigma_{00}$ is not a defective nilpotent stratum.</p>
+<p><em>Proof.</em> The first two sectors have $b\neq0$ and the last two $b=0$; apply the theorem.</p>
+<p>Unlike <em><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">the biquaternion algebra</a></em>, whose degenerate cone carries nilpotent and unipotent defective strata, $\mathbb{D}$ is reduced: its degenerate locus is the real axis, with no defective stratum. "Degenerate" records the vanishing of a condition, not a defect of the operator.</p>
+<h2 id="the-sectors-at-a-glance">The Sectors at a Glance</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition</th>
+<th>description</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$t^2\neq b^2,\ b\neq0$</td>
+<td>six open regions: the positive-norm quadrants $t>|b|$ and $t<-|b|$, each cut by the real axis into two, and the negative-norm sectors $b>|t|$ and $b<-|t|$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$t^2=b^2,\ b\neq0$</td>
+<td>the two punctured null lines $t=\pm b$, four rays; zero divisors with eigenvalues $2t$ and $0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$t^2\neq b^2,\ b=0$</td>
+<td>the two open real half-lines $t>0$ and $t<0$; units with the repeated eigenvalue $t$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$t^2=b^2,\ b=0$</td>
+<td>the origin; the zero element</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The four sectors are the truth-value cells of the split norm and the spectral condition. $\Sigma_{11}$ is the complement of the three lines $b=0$, $t=b$ and $t=-b$; it is open and dense, of dimension two, with six components: the positive-norm quadrants $t>|b|$ and $t<-|b|$, each split by the removed real axis, and the negative-norm sectors $b>|t|$ and $b<-|t|$. Its elements are units with distinct eigenvalues.</p>
+<p>$\Sigma_{01}$ is the two null lines with the origin removed, of dimension one and four rays; its elements are zero divisors $2t e_\pm$ with eigenvalues $2t$ and $0$. $\Sigma_{10}$ is the real axis minus the origin, of dimension one and two half-lines; its elements are scalar units with repeated eigenvalue $t$. $\Sigma_{00}$ is the origin, of dimension zero, the only element degenerate for both and not a zero divisor.</p>
+<p>The closures are $\mathbb{D}$, the null cone, the real axis and the origin. Every element is semisimple, so no sector is defective; the origin is not a defective nilpotent stratum. The sectors are the geometry of the independence proved in <em>Relations between the Split Norm and Spectral Regularity and Degeneracy</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}=\mathbb{R}[j]/(j^2-1)$</td>
+<td>the split-complex algebra</td>
+</tr>
+<tr>
+<td>$q=t+bj$</td>
+<td>a general element, $t,b\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$q\bar q=t^2-b^2$</td>
+<td>the split norm</td>
+</tr>
+<tr>
+<td>$b^2$</td>
+<td>the spectral condition</td>
+</tr>
+<tr>
+<td>$e_\pm=\tfrac12(1\pm j)$</td>
+<td>the two non-trivial idempotents</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with norm $i$ and spectrum $j$</td>
+</tr>
+<tr>
+<td>$\mathcal{N}=\{t^2=b^2\}$</td>
+<td>the null cone, the two null lines</td>
+</tr>
+<tr>
+<td>$\mathcal{S}=\{b=0\}$</td>
+<td>the real axis</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="relations-between-the-split-norm-and-spectral-regularity-and-degeneracy.html">Relations between the Split Norm and Spectral Regularity and Degeneracy</a>, for the two conditions and their independence.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-split-complex-algebra.html">Spectral Regularity and Degeneracy in the Split-Complex Algebra</a>, for the eigenvalue criterion.</li>
+<li><a href="zero-divisors-of-the-split-complex-algebra.html">Zero Divisors of the Split-Complex Algebra</a>, for the null lines and the annihilators.</li>
+<li><a href="split-complex-algebra.html">Split-Complex Algebra</a>, for the product and the idempotent decomposition.</li>
+<li><a href="eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html">Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</a>, for the spectral decomposition.</li>
+<li><a href="eigenbasis-of-a-split-complex-number-in-matrix-elements-representations.html">Eigenbasis of a Split-Complex Number in Matrix Elements Representations</a>, for the matrix models.</li>
+<li><a href="worked-examples-of-eigenbasis-of-a-split-complex-number.html">Worked Examples of Eigenbasis of a Split-Complex Number</a>, for explicit computations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

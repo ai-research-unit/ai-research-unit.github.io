@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Three Sectors of the Split-Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-three-sectors-of-the-split-biquaternion-algebra"><strong>The Three Sectors of the Split-Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two predicates cut the split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ into four cells: the reduced norm $\Delta=|Q_+|^2|Q_-|^2$ is zero or non-zero, and the reduced characteristic polynomial $p_{\tilde Q}=p_+p_-$ has a repeated root or not. The four cells are the <strong>sectors</strong> $\Sigma_{ij}$, with $i=1$ for $\Delta\neq0$ and $j=1$ for spectral regularity. Three of them are non-empty; the fourth, $\Sigma_{01}$, is empty. This article defines the sectors, proves that three are non-empty and one is empty, and describes each one with its dimension and closure. The spectral criterion is <em><a href="spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra</a></em>; the comparison is <em><a href="relations-between-the-split-biquaternion-reduced-norm-and-spectral-regularity-and-degeneracy.html">The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra</a></em>.</p>
+<p><strong>Conventions.</strong> The split complex unit is $j$, with $j^2=1$, and $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$, and $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2$. The spectrum is $\{t_+\pm i|\vec q_+|\}\cup\{t_-\pm i|\vec q_-|\}$, and a repeated root occurs exactly when $\vec q_+=0$, or $\vec q_-=0$, or $t_+=t_-$ and $|\vec q_+|=|\vec q_-|$. The algebra is <em><a href="split-biquaternion-algebra.html">Split-Biquaternion Algebra</a></em>; the norm and zero divisors are <em><a href="split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a></em> and <em><a href="split-biquaternion-zero-divisors.html">Split-Biquaternion Zero Divisors</a></em>.</p>
+<h2 id="the-sectors">The Sectors</h2>
+<p><strong>Definition (sectors).</strong> For $i,j\in\{0,1\}$, the <strong>sector</strong> $\Sigma_{ij}$ is the set of elements with $\Delta\neq0$ if $i=1$ and $\Delta=0$ if $i=0$, and with no repeated root of $p_{\tilde Q}$ if $j=1$ and with a repeated root if $j=0$. Explicitly,</p>
+<p>$$
+\Sigma_{11}=\{\Delta\neq0,\ \text{spectrally regular}\},\qquad
+\Sigma_{10}=\{\Delta\neq0,\ \text{spectrally degenerate}\},
+$$</p>
+<p>$$
+\Sigma_{01}=\{\Delta=0,\ \text{spectrally regular}\},\qquad
+\Sigma_{00}=\{\Delta=0,\ \text{spectrally degenerate}\}.
+$$</p>
+<p>The index $i$ refers to the reduced norm, not to a half's quaternion norm. The index $j$ refers to the reduced polynomial $p_{\tilde Q}$; the full operator polynomial is $p_{\tilde Q}^2$, so the two have the same root set.</p>
+<p><strong>Proposition (explicit conditions).</strong> The sectors are also given by</p>
+<p>$$
+\Sigma_{11}=\{\Delta\neq0,\ \vec q_+\neq0,\ \vec q_-\neq0,\ (t_+,|\vec q_+|)\neq(t_-,|\vec q_-|)\},
+$$</p>
+<p>$$
+\Sigma_{10}=\{\Delta\neq0,\ \vec q_+=0\text{ or }\vec q_-=0\text{ or }(t_+=t_-,\ |\vec q_+|=|\vec q_-|)\},
+$$</p>
+<p>$$
+\Sigma_{00}=\{\Delta=0\},\qquad
+\Sigma_{01}=\{\Delta=0,\ \vec q_+\neq0,\ \vec q_-\neq0,\ (t_+,|\vec q_+|)\neq(t_-,|\vec q_-|)\}.
+$$</p>
+<p><em>Proof.</em> The repeated-root criterion says that a repeated root occurs exactly in the three displayed cases. Its negation is that both vector parts are non-zero and the pairs $(t_\pm,|\vec q_\pm|)$ differ. On $\Sigma_{11}$ that negation holds; on $\Sigma_{10}$ it fails and $\Delta\neq0$; on $\Sigma_{00}$ the reduced norm vanishes; on $\Sigma_{01}$ the negation holds and the reduced norm vanishes.</p>
+<p><strong>Theorem (partition).</strong> The algebra is the disjoint union</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}}=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{01}\sqcup\Sigma_{00}.
+$$</p>
+<p><em>Proof.</em> Each element has exactly one truth value for $\Delta\neq0$ and exactly one for "spectrally regular", hence lies in exactly one of the four combinations.</p>
+<h2 id="three-non-empty-sectors-and-one-empty-sector">Three Non-Empty Sectors and One Empty Sector</h2>
+<p><strong>Theorem (the count).</strong> $\Sigma_{11}$, $\Sigma_{10}$ and $\Sigma_{00}$ are non-empty, and $\Sigma_{01}$ is empty.</p>
+<p><em>Proof.</em> Three witnesses and one theorem.</p>
+<ul>
+<li><strong>$\Sigma_{11}$.</strong> Take $Q_+=\vec e_x$ and $Q_-=2\vec e_z$. Then $\Delta=1\cdot4=4$. The plus spectrum is $\{i,-i\}$ and the minus spectrum is $\{2i,-2i\}$; they are disjoint, so the element is spectrally regular.</li>
+<li><strong>$\Sigma_{10}$.</strong> Take $Q_+=1$ and $Q_-=\vec e_z$. Then $\Delta=1$. The plus half is scalar, so $p_+=(\lambda-1)^2$ has the repeated root $1$; the element is spectrally degenerate.</li>
+<li><strong>$\Sigma_{00}$.</strong> Take $Q_+=0$ and $Q_-=1$. Then $\Delta=0$; the element is a zero divisor, hence spectrally degenerate.</li>
+</ul>
+<p>For $\Sigma_{01}$, suppose $\Delta=0$. By the zero criterion, $Q_+=0$ or $Q_-=0$. A zero half is the zero scalar, so $\vec q_+=0$ or $\vec q_-=0$; by the repeated-root criterion, $p_{\tilde Q}$ has a repeated root. Hence no element of $\{\Delta=0\}$ is spectrally regular, and $\Sigma_{01}=\varnothing$.</p>
+<p><strong>Corollary (three sectors).</strong> The algebra is the disjoint union of the three non-empty sectors</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}}=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{00}.
+$$</p>
+<p>The fourth cell is empty, so the partition has three members.</p>
+<h2 id="the-sector-math79-reduced-norm-regular-spectrally-regular">The Sector $\Sigma_{11}$: Reduced-Norm-Regular, Spectrally Regular</h2>
+<p><strong>Description.</strong> $\Sigma_{11}$ consists of the units whose two halves are both non-scalar and whose half-spectra are disjoint. It is the complement of the set where one half is scalar or the two spectra meet.</p>
+<p><strong>Theorem (dimension and topology).</strong> $\Sigma_{11}$ is open and dense in $\mathbb{H}_{\mathbb{D}}\cong\mathbb{R}^8$, has real dimension $8$, and its complement $S$ is closed of real dimension $6$. Hence $\Sigma_{11}$ has full measure and is the generic sector.</p>
+<p><em>Proof.</em> Let</p>
+<p>$$
+S=\{\vec q_+=0\}\cup\{\vec q_-=0\}\cup\{t_+=t_-,\ |\vec q_+|=|\vec q_-|\}.
+$$</p>
+<p>The first two sets are linear subspaces of dimension $5$. The third contains a $6$-dimensional piece, with $t_+=t_-$, $\vec q_+\neq0$, and a unit direction for $\vec q_-$; its remaining part is the diagonal scalar line of dimension $2$. Their union is closed of dimension $6$. Its complement is exactly $\Sigma_{11}$, and since $S$ is closed of dimension $6$, that complement is open, dense and of full measure.</p>
+<p><strong>Proposition (inverse closure).</strong> If $\tilde Q\in\Sigma_{11}$, then $\tilde Q^{-1}\in\Sigma_{11}$.</p>
+<p><em>Proof.</em> The halves of the inverse are $Q_\pm^{-1}$, both non-zero. A quaternion is scalar exactly when its inverse is scalar, so both inverse halves are non-scalar. The spectrum of $Q_\pm^{-1}$ is the image of the spectrum of $Q_\pm$ under $z\mapsto z^{-1}$; since inversion is injective, disjointness is preserved. Finally $\Delta(\tilde Q^{-1})=\Delta(\tilde Q)^{-1}\neq0$.</p>
+<p><strong>Proposition (not product closed).</strong> The product of two elements of $\Sigma_{11}$ need not lie in $\Sigma_{11}$.</p>
+<p><em>Proof.</em> Take $Q_+=\vec e_x$ and $Q_-=2\vec e_z$, an element of $\Sigma_{11}$. Its square has halves $\vec e_x^2=-1$ and $(2\vec e_z)^2=-4$, both non-zero real scalars. It is a unit with a repeated root, hence lies in $\Sigma_{10}$.</p>
+<h2 id="the-sector-math113-reduced-norm-regular-spectrally-degenerate">The Sector $\Sigma_{10}$: Reduced-Norm-Regular, Spectrally Degenerate</h2>
+<p><strong>Description.</strong> $\Sigma_{10}$ consists of the units with a repeated root. The repetition has two causes: one half is scalar, or the two non-scalar half-spectra meet.</p>
+<p><strong>Definition (the three pieces).</strong> Put</p>
+<p>$$
+\Sigma_{10}^{+}=\{\vec q_+=0,\ t_+\neq0,\ Q_-\neq0\},\qquad
+\Sigma_{10}^{-}=\{\vec q_-=0,\ t_-\neq0,\ Q_+\neq0\},
+$$</p>
+<p>$$
+\Sigma_{10}^{\mathrm{m}}=\{t_+=t_-,\ |\vec q_+|=|\vec q_-|>0\}.
+$$</p>
+<p><strong>Proposition (decomposition).</strong> $\Sigma_{10}=\Sigma_{10}^{+}\cup\Sigma_{10}^{-}\cup\Sigma_{10}^{\mathrm{m}}$.</p>
+<p><em>Proof.</em> If a half is scalar and non-zero, the element lies in $\Sigma_{10}^{+}$ or $\Sigma_{10}^{-}$, and $\Delta\neq0$ exactly when the other half is non-zero. If no half is scalar and the spectra meet, both vector parts are non-zero, $t_+=t_-$, and the norms are equal, so the element lies in $\Sigma_{10}^{\mathrm{m}}$. Conversely, each of the three pieces has $\Delta\neq0$ and a repeated root.</p>
+<p><strong>Theorem (dimension and closure).</strong> $\Sigma_{10}$ has real dimension $6$, empty interior, and closure</p>
+<p>$$
+\overline{\Sigma_{10}}=\Sigma_{10}\cup\Sigma_{00}=S.
+$$</p>
+<p>It is neither open nor closed.</p>
+<p><em>Proof.</em> Each of $\Sigma_{10}^{+}$ and $\Sigma_{10}^{-}$ has dimension $1+4=5$; $\Sigma_{10}^{\mathrm{m}}$ has dimension $1+3+2=6$. The union has dimension $6$. It has empty interior because it is contained in $S$, which has dimension $6$ in $\mathbb{R}^8$. The closure of $\Sigma_{10}$ is $S$: every point of $\Sigma_{00}$ is a limit of points of $\Sigma_{10}$ obtained by perturbing its zero halves to small non-zero scalars, and every other point of $S$ lies in $\Sigma_{10}$. Since $S$ is closed and strictly larger than $\Sigma_{10}$, the sector is not closed; since it has empty interior, it is not open.</p>
+<p><strong>Theorem (no defect).</strong> Every element of $\Sigma_{10}$ is semisimple. The repeated root is a coalescence of eigenvalues, not a Jordan block.</p>
+<p><em>Proof.</em> This is the semisimplicity theorem of <em><a href="spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra</a></em>: each half lies in the division algebra $\mathbb{H}$, hence is semisimple, and a direct sum of semisimple elements is semisimple. On the scalar pieces the minimal polynomial of the scalar half is linear; on the meeting piece the shared root occurs in two different summands and is recorded once.</p>
+<h2 id="the-sector-math146-reduced-norm-degenerate">The Sector $\Sigma_{00}$: Reduced-Norm-Degenerate</h2>
+<p><strong>Description.</strong> $\Sigma_{00}$ consists of the zero divisors together with the origin. It is the union of the two four-dimensional subspaces</p>
+<p>$$
+Z_+=\{Q_+=0\},\qquad Z_-=\{Q_-=0\},
+$$</p>
+<p>which meet only at $0$.</p>
+<p><strong>Theorem (dimension, closure and nilpotents).</strong> $\Sigma_{00}$ is closed, has real dimension $4$, and is the union of two $4$-planes that meet at the origin. It contains no non-zero nilpotent. Every element of $\Sigma_{00}$ is semisimple.</p>
+<p><em>Proof.</em> The condition $Q_+=0$ is four real linear equations, so $Z_+$ has dimension $4$; likewise $Z_-$. Their intersection is $Q_+=Q_-=0$, the origin. The set $\Sigma_{00}=Z_+\cup Z_-$ is closed, and its dimension is $4$. If $\tilde Q^2=0$, then $Q_+^2=0$ and $Q_-^2=0$; a division algebra has no non-zero nilpotent, so $Q_+=Q_-=0$ and $\tilde Q=0$. Semisimplicity is the general theorem for all elements of $\mathbb{H}_{\mathbb{D}}$.</p>
+<p><strong>Proposition (spectrum).</strong> Every element of $\Sigma_{00}$ is spectrally degenerate. If $Q_+=0$ and $Q_-\neq0$, the spectrum is $\{0\}\cup\{t_-\pm i|\vec q_-|\}$, and the value $0$ is repeated; the same holds with the halves exchanged.</p>
+<p><em>Proof.</em> The zero half has $t=0$ and $\vec q=0$, so its reduced polynomial is $\lambda^2$; the repeated-root criterion applies. The displayed spectrum is the union formula of the spectral article.</p>
+<p><strong>Remark (the defining equation).</strong> The set $\Sigma_{00}$ is not the zero set of the split-biquaternion norm: that norm is anisotropic and vanishes only at $0$. It is the zero set of the reduced norm $\Delta$, a real quartic that factors as $|Q_+|^2|Q_-|^2$.</p>
+<h2 id="the-absence-of-a-defective-stratum">The Absence of a Defective Stratum</h2>
+<p><strong>Definition (defective).</strong> An element is <strong>defective</strong> when it is not semisimple, equivalently when its minimal polynomial has a repeated factor.</p>
+<p><strong>Theorem (no defective stratum).</strong> Every element of $\mathbb{H}_{\mathbb{D}}$ is semisimple. Hence no sector contains a defective stratum.</p>
+<p><em>Proof.</em> Each half lies in the division algebra $\mathbb{H}$ and is semisimple. The minimal polynomial of the pair is the least common multiple of the two half-minimal-polynomials, and a least common multiple of squarefree polynomials is squarefree.</p>
+<p>The decomposition of $\Sigma_{10}$ into the scalar pieces and the meeting locus is therefore by the <strong>cause</strong> of the repeated root, not by defect. The biquaternion degenerate sector has nilpotent and Jordan strata; here neither occurs, only the scalar stratum. A nilpotent in a product would have nilpotent components, and a division algebra has none.</p>
+<h2 id="the-sectors-at-a-glance">The Sectors at a Glance</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Condition</th>
+<th>Description</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$\Delta\neq0$, $\vec q_\pm\neq0$, $(t_+,\lvert\vec q_+\rvert)\neq(t_-,\lvert\vec q_-\rvert)$</td>
+<td>Units with two non-scalar halves and disjoint spectra; open and dense</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$\Delta\neq0$ and ($\vec q_+=0$ or $\vec q_-=0$ or ($t_+=t_-$, $\lvert\vec q_+\rvert=\lvert\vec q_-\rvert$))</td>
+<td>Units with a scalar half or meeting spectra; semisimple, empty interior</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$\Delta=0$</td>
+<td>Zero divisors and $0$; one half zero; two $4$-planes</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$\Delta=0$ and spectrally regular</td>
+<td>Empty</td>
+<td>---</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>Two predicates cut the algebra into four sectors. Spectral regularity and reduced-norm regularity are not independent: $\Sigma_{01}$ is empty, because a vanishing reduced norm forces one half to be zero, and a zero half is a repeated root at zero. The three non-empty sectors are $\Sigma_{11}$, the units with two non-scalar halves and disjoint spectra; $\Sigma_{10}$, the units with a scalar half or meeting spectra; and $\Sigma_{00}$, the zero divisors and the origin.</p>
+<p>The dimensions are $8$, $6$ and $4$. $\Sigma_{11}$ is open and dense; $\Sigma_{10}$ has empty interior and closure $S$; $\Sigma_{00}$ is closed, the union of two $4$-planes. Every element is semisimple, so there is no defective stratum: the repeated roots are repetitions of eigenvalues, not Jordan blocks. The biquaternion algebra has a Jordan part and nilpotents; the product of two division algebras removes both.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$</td>
+<td>Split-biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$</td>
+<td>Idempotent decomposition</td>
+</tr>
+<tr>
+<td>$Q_\pm=t_\pm+\vec q_\pm$</td>
+<td>A half</td>
+</tr>
+<tr>
+<td>$\Delta=\lvert Q_+\rvert^2\lvert Q_-\rvert^2$</td>
+<td>Reduced norm</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>Sector with reduced-norm index $i$ and spectral index $j$</td>
+</tr>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>Reduced-norm regular, spectrally regular</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>Reduced-norm regular, spectrally degenerate</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>Reduced-norm degenerate, spectrally degenerate</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>Reduced-norm degenerate, spectrally regular; empty</td>
+</tr>
+<tr>
+<td>$S=\Sigma_{10}\cup\Sigma_{00}$</td>
+<td>Complement of $\Sigma_{11}$ and closure of $\Sigma_{10}$</td>
+</tr>
+<tr>
+<td>$Z_\pm=\{Q_\pm=0\}$</td>
+<td>The two $4$-planes of $\Sigma_{00}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="split-biquaternion-algebra.html">Split-Biquaternion Algebra</a>, for the algebra and its idempotents.</li>
+<li><a href="split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a>, for the reduced norm and the unit criterion.</li>
+<li><a href="split-biquaternion-zero-divisors.html">Split-Biquaternion Zero Divisors</a>, for the two ideals $Z_+$ and $Z_-$.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra</a>, for the union spectrum and the repeated-root criterion.</li>
+<li><a href="relations-between-the-split-biquaternion-reduced-norm-and-spectral-regularity-and-degeneracy.html">The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra</a>, for the empty mixed cell and the chain of invariants.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the defective Jordan part and the nilpotents.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

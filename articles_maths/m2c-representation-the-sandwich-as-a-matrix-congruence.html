@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-sandwich-as-a-matrix-congruence"><strong>$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The action of a biquaternion on the algebra is the sandwich</p>
+<p>$$
+\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
+$$</p>
+<p>In the matrix model it is the congruence $X\mapsto MXM^{\dagger}$. On the anti-Hermitian half the congruence is a Lorentz transformation; on the Hermitian half it is a congruence of a real quadratic form, and Sylvester's law of inertia governs it. The same formula does both, and the two readings differ only by the factor $i$ that exchanges the halves.</p>
+<p>This article develops the sandwich in the matrix model. It is the matrix form of <em>The Polar Decomposition and Remarkable Subspaces</em>, §<em>The Action on the Two Halves</em> and §<em>Which Subspaces the Sandwich Preserves</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian matrices, and $\mathbb{M}_-$, the anti-Hermitian matrices. The quaternionic norm is $N=\det M$. The modulus is $r=|\det M|^{1/2}$.</p>
+<p><strong>Boundaries.</strong> The sandwich as an operator, its kernel and its image are <em>Two-Sided Operator and the Polar Decomposition</em>; the polar decomposition of the element is <em>The Polar Decomposition of a Biquaternion</em>; the action on the subspaces is <em>The Polar Decomposition and Remarkable Subspaces</em>; the matrix polar decomposition is <em>$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</em>.</p>
+<h2 id="the-congruence">The Congruence</h2>
+<p><strong>Proposition.</strong> For invertible $M$ and any $X$,</p>
+<p>$$
+\Theta_M(X)=MXM^{\dagger}
+$$</p>
+<p>is the image of the sandwich $\Theta_{\tilde Q}(\tilde X)$ under $\mathsf{M}_2$. It is complex linear in $X$ and invertible. It is not an algebra automorphism in general: the identity</p>
+<p>$$
+\Theta_M(XY)=\Theta_M(X)\,\Theta_M(Y)
+$$</p>
+<p>holds exactly when $M$ is unitary, because the two sides differ by the factor $M^{\dagger}M$.</p>
+<p><em>Proof.</em> The map is the composite of left multiplication by $M$, right multiplication by $M^{\dagger}$, and the identification of the two; it is the image of the algebra sandwich, which is a linear isomorphism because $\tilde Q$ is a unit. The matrix identities follow from the algebra identities.</p>
+<p><strong>The two halves are preserved.</strong> If $X^{\dagger}=X$ then</p>
+<p>$$
+(MXM^{\dagger})^{\dagger}=MX^{\dagger}M^{\dagger}=MXM^{\dagger},
+$$</p>
+<p>so the Hermitian half is preserved. If $X^{\dagger}=-X$ then the image is anti-Hermitian, so the anti-Hermitian half is preserved. The two statements are the matrix form of the fact that the sandwich preserves both sectors for every invertible element.</p>
+<p><strong>The null cone is preserved.</strong> Taking determinants,</p>
+<p>$$
+\det(MXM^{\dagger})=|\det M|^2\det X,
+$$</p>
+<p>so the zero set of the determinant is preserved. In the algebra, $N(\Theta_Q(X))=|N(Q)|^2N(X)$, and the zero divisors are mapped to zero divisors.</p>
+<p><strong>The other four subspaces are not preserved in general.</strong> The centre, the vector subspace, the quaternion subspace and the anti-quaternion subspace are preserved exactly when $Q$ is a central multiple of a real unit quaternion, by <em>The Polar Decomposition and Remarkable Subspaces</em>, §<em>Which Subspaces the Sandwich Preserves</em>. A general sandwich moves a traceless matrix to a matrix with nonzero trace, and a quaternion matrix to one that is not quaternion.</p>
+<h2 id="the-anti-hermitian-half-as-four-vectors">The Anti-Hermitian Half as Four-Vectors</h2>
+<p><strong>The four-vector.</strong> An anti-Hermitian matrix is written</p>
+<p>$$
+X=i(a\mathrm I_2+\vec b\cdot\sigma),
+\qquad a\in\mathbb{R},\quad\vec b\in\mathbb{R}^3,
+$$</p>
+<p>where $\vec b\cdot\sigma=b_1\sigma_1+b_2\sigma_2+b_3\sigma_3$. Its determinant is</p>
+<p>$$
+\det X=-(a)^2+\lvert\vec b\rvert^2,
+$$</p>
+<p>the Lorentzian quadratic form of signature $(3,1)$. The three matrices $i\sigma_1,i\sigma_2,i\sigma_3$ and $i\mathrm I_2$ are a basis of the real space of anti-Hermitian matrices, and the determinant is the Minkowski form on that space.</p>
+<p><strong>The unit-norm action.</strong> Let $U$ be of unit norm, so $|\det U|=1$. Then</p>
+<p>$$
+\det(UXU^{\dagger})=\det X,
+$$</p>
+<p>and the map $X\mapsto UXU^{\dagger}$ is a linear isometry of the four-dimensional real space. It preserves the cone $\det X=0$. The group $SL_2(\mathbb{C})$ is connected, the map is continuous, and its kernel is $\{\pm\mathrm I_2\}$; both groups have real dimension six. The image is therefore the identity component of the Lorentz group:</p>
+<p>$$
+SL_2(\mathbb{C})\longrightarrow SO^{+}(1,3),\qquad U\longmapsto\Theta_U,
+$$</p>
+<p>a twofold cover.</p>
+<p><strong>The two factors.</strong> A unit-norm element factors as $U=U_{\mathrm b}U_{\mathrm r}$ with $U_{\mathrm b}$ Hermitian positive of determinant one and $U_{\mathrm r}\in SU(2)$. The sandwich factorises:</p>
+<p>$$
+\Theta_U=\Theta_{U_{\mathrm b}}\circ\Theta_{U_{\mathrm r}}.
+$$</p>
+<p>The rotor acts by rotating $\vec b$ and fixing $a$; the boost acts by a hyperbolic transformation mixing $a$ and the component of $\vec b$ along its axis, and fixing the orthogonal component. The two actions are the rotation and the boost of the Lorentz group, and their product is a general proper orthochronous transformation.</p>
+<p><strong>The general element.</strong> For $M=r\zeta U$ with $U$ of unit norm,</p>
+<p>$$
+\Theta_M=r^2\,\Theta_U,
+$$</p>
+<p>because the central scalars commute and $\zeta\bar\zeta=1$. The image is a conformal transformation: a Lorentz transformation composed with the dilation of ratio $r^2$. On the four-dimensional space of anti-Hermitian matrices the determinant of $\Theta_M$ is $r^8$, and the image of the unit group is the conformal group $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$.</p>
+<h2 id="the-hermitian-half-as-a-congruence">The Hermitian Half as a Congruence</h2>
+<p><strong>The congruence.</strong> For Hermitian $X$ and invertible $M$, the matrix $MXM^{\dagger}$ is Hermitian. It is a congruence of $X$ by $M$, not a similarity: the two factors are $M$ and $M^{\dagger}$, not $M$ and $M^{-1}$.</p>
+<p><strong>Sylvester's law.</strong> A congruence by an invertible matrix preserves the rank, the inertia and the signature of a Hermitian form. Hence $\Theta_M$ preserves the rank, the inertia and the causal type of $X$: a positive definite matrix stays positive definite, a matrix of signature $(1,3)$ stays of signature $(1,3)$, and a null matrix stays null. The statement is the matrix form of the fact that the sandwich preserves the two sectors and their cones.</p>
+<p><strong>The determinant scaling.</strong> From the congruence,</p>
+<p>$$
+\det(MXM^{\dagger})=|\det M|^2\det X=r^4\det X,
+$$</p>
+<p>because $|\det M|=r^2$. The determinant is not preserved; it is scaled by the fourth power of the modulus. The sign of the determinant is preserved, so the two cones of positive and negative determinant are each preserved. The factor $r^4$ is the reason the Hermitian half carries a conformal density rather than an invariant form.</p>
+<p><strong>The Minkowski reading.</strong> Writing $X=a\mathrm I_2+\vec b\cdot\sigma$ with $a,b$ real, the determinant is $a^2-\lvert\vec b\rvert^2$, of signature $(1,3)$. The congruence is a linear transformation of the four-dimensional space preserving the form up to the factor $r^4$; after rescaling by $r^{-1}$ it is a Lorentz transformation. The Hermitian and anti-Hermitian readings are the same Lorentz action composed with the multiplication by $i$.</p>
+<p><strong>The positivity cone.</strong> The positive semidefinite matrices form a cone inside the Hermitian half. The congruence preserves it, because $MXM^{\dagger}$ is positive semidefinite whenever $X$ is and $M$ is invertible. Its boundary is the null cone of the determinant, and the cone is the positivity cone of the Hermitian form.</p>
+<h2 id="the-two-halves-are-one-action">The Two Halves Are One Action</h2>
+<p><strong>The central $i$.</strong> Multiplication by $i$ exchanges the two halves:</p>
+<p>$$
+i\mathbb{M}_+=\mathbb{M}_-,\qquad i\mathbb{M}_-=\mathbb{M}_+.
+$$</p>
+<p>It is an anti-isometry of the determinants:</p>
+<p>$$
+\det(iX)=-\det X,
+$$</p>
+<p>and it intertwines the two readings of $\Theta$:</p>
+<p>$$
+\Theta_M(iX)=i\,\Theta_M(X),
+$$</p>
+<p>because $i$ is central. The sandwich commutes with the exchange, and the two halves are the same action in the two real forms.</p>
+<p><strong>The anti-isometry.</strong> The map $X\mapsto iX$ from $\mathbb{M}_+$ to $\mathbb{M}_-$ reverses the sign of the determinant and preserves the null cone. It is therefore an anti-isometry, not an isometry: the two sectors are anti-isometric and not isomorphic. The statement is the matrix form of the relation between the informational and material forms.</p>
+<p><strong>The common null cone.</strong> The null cone of $\mathbb{M}_+$ and the null cone of $\mathbb{M}_-$ are exchanged by $i$, and their images under $\Theta_M$ are the same set. The sandwich preserves the common null cone, and the two readings of the action agree on it.</p>
+<p><strong>The infinitesimal picture.</strong> Differentiating the sandwich at the identity gives the Lie algebra action</p>
+<p>$$
+X\longmapsto [\mathcal R,X]+\{\mathcal H,X\},
+$$</p>
+<p>with $\mathcal R$ the rotor generator and $\mathcal H$ the boost generator. The commutator is the rotation and the anticommutator the boost; the two are the infinitesimal forms of the two factors of the sandwich. The statement is developed in <em>The Polar Decomposition and Remarkable Subspaces</em>, §<em>The Infinitesimal Split</em>.</p>
+<h2 id="which-subspaces-the-sandwich-preserves">Which Subspaces the Sandwich Preserves</h2>
+<p><strong>The general rule.</strong> Every sandwich preserves the two halves and the null cone. It preserves the other four remarkable subspaces exactly when the element is a central multiple of a real unit quaternion.</p>
+<p><strong>The centre.</strong> A central element $\lambda e_t$ is sent to $\lambda QQ^{*}$. This is central exactly when $QQ^{*}$ is central, which happens for the central multiples of the real unit quaternions and not in general. For a unitary $Q$, $QQ^{*}=e_t$ and the centre is fixed pointwise.</p>
+<p><strong>The vector subspace.</strong> A traceless matrix is sent to a matrix whose trace is $\operatorname{Tr}(MXM^{\dagger})$, which need not vanish. The vector subspace is preserved exactly when the sandwich is a similarity of the trace form, that is when $M$ is a central multiple of a real unit quaternion.</p>
+<p><strong>The quaternion and anti-quaternion subspaces.</strong> The condition $X=\epsilon\bar X\epsilon^{-1}$ is not preserved by a general congruence; it is preserved when $M$ commutes with the conjugate-linear structure, which is the same condition.</p>
+<p><strong>The table.</strong> The four non-sector subspaces are preserved by the sandwich of a central multiple of a real unit quaternion, and by no other element. The two sectors are preserved by every invertible element. The statement is the matrix form of the table of <em>The Polar Decomposition and Remarkable Subspaces</em>, §<em>Which Subspaces the Sandwich Preserves</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The sandwich $\Theta_Q(X)=QXQ^{*}$ is the matrix congruence $MXM^{\dagger}$. It preserves the Hermitian and anti-Hermitian halves and the null cone. On the anti-Hermitian half, a unit-norm element acts by a proper orthochronous Lorentz transformation, and the map $SL_2\to SO^{+}(1,3)$ is a twofold cover; a general element adds the dilation $r^2$, and the image is $CO^{+}(1,3)$. On the Hermitian half the congruence preserves rank, inertia and causal type by Sylvester's law, and scales the determinant by $r^4$. The central $i$ exchanges the two halves and reverses the determinant, so the two readings are anti-isometric. The other four subspaces are preserved exactly by central multiples of real unit quaternions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Theta_Q(X)=QXQ^{*}$</td>
+<td>the sandwich</td>
+</tr>
+<tr>
+<td>$\Theta_M(X)=MXM^{\dagger}$</td>
+<td>its matrix form</td>
+</tr>
+<tr>
+<td>$r=|\det M|^{1/2}$</td>
+<td>the modulus, the dilation ratio</td>
+</tr>
+<tr>
+<td>$SL_2\to SO^{+}(1,3)$</td>
+<td>the Lorentz action on the anti-Hermitian half</td>
+</tr>
+<tr>
+<td>$CO^{+}(1,3)$</td>
+<td>the conformal image of the unit group</td>
+</tr>
+<tr>
+<td>$r^4$</td>
+<td>the determinant scaling on the Hermitian half</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a>, for the action on the subspaces</li>
+<li><a href="two-sided-operator-and-the-polar-decomposition.html">Two-Sided Operator and the Polar Decomposition</a>, for the sandwich as an operator</li>
+<li><a href="the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the factors</li>
+<li><a href="m2c-representation-the-polar-decomposition-of-a-matrix.html">$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</a>, for the matrix factors</li>
+<li><a href="m2c-representation-the-six-subspaces-as-matrix-conditions.html">$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions</a>, for the subspaces</li>
+<li><a href="biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, for the Lorentz group</li>
+<li><a href="quadratic-forms-and-polarisation.html">Quadratic Forms and Polarisation</a>, for the congruence</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-six-subspaces-as-matrix-conditions"><strong>$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The six remarkable subspaces of the biquaternion algebra are defined by the four conjugations and by the scalar–vector split. In the matrix model each definition becomes a matrix condition: the centre is the scalar matrices, the vector subspace is the traceless matrices, the quaternion subspace is a conjugate-linear pattern, the anti-quaternion subspace is $i$ times it, and the two sectors are the Hermitian and the anti-Hermitian matrices.</p>
+<p>This article collects the six descriptions, their determinants and their signatures. It is the matrix form of <em>Introduction to the Remarkable Subspaces</em>, §<em>Remarkable Subspaces</em>, and of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, §<em>The Two Complex Subspaces and the Four Real-Type Subspaces</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>: $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$, the unprimed $q_\mu$ real and the primed $q'_\mu$ real. The conjugations are quaternion conjugation ${}^{\natural}$, complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}$ and anti-Hermitian conjugation ${}^{\flat}=-{}^{*}$. The four matrix basis images are</p>
+<p>$$
+\mathsf{M}_2(e_t)=\mathrm I_2,\quad
+\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\quad
+\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+$$</p>
+<p><strong>Boundaries.</strong> The subspaces and their relations are <em>Introduction to the Remarkable Subspaces</em> and <em>Comparison of the Remarkable Subspaces</em>; the four forms restricted to them are <em>Remarkable Subspaces and the Four General Products, Forms and Norms</em>; the polar action on them is <em>The Polar Decomposition and Remarkable Subspaces</em>; the matrix form of that action is <em>$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence</em>.</p>
+<h2 id="the-table">The Table</h2>
+<p>Every subspace is the image of the basis vectors listed in its row, with the real parameters substituted as in the last column.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Defining condition</th>
+<th>Basis image</th>
+<th>Image</th>
+<th>Trace</th>
+<th>Determinant</th>
+<th>Real signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\tilde Q^{\natural}=\tilde Q$</td>
+<td>$\mathsf{M}_2(e_t),i\mathsf{M}_2(e_t)$</td>
+<td>scalar matrices</td>
+<td>$2Q_t$</td>
+<td>$Q_t^2$</td>
+<td>$(2,0)$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>$\tilde Q^{\natural}=-\tilde Q$</td>
+<td>$\mathsf{M}_2(\vec e_k),i\mathsf{M}_2(\vec e_k)$</td>
+<td>traceless matrices</td>
+<td>$0$</td>
+<td>$B^2$</td>
+<td>$(6,0)$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\overline{\tilde Q}=\tilde Q$</td>
+<td>the four $\mathsf{M}_2(e_\mu)$</td>
+<td>$\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix}$</td>
+<td>$2q_t$</td>
+<td>$\lvert z\rvert^2+\lvert w\rvert^2$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\overline{\tilde Q}=-\tilde Q$</td>
+<td>$i\mathsf{M}_2(e_\mu)$</td>
+<td>$i$ times the quaternion matrices</td>
+<td>$2iq'_t$</td>
+<td>$-\lvert z'\rvert^2-\lvert w'\rvert^2$</td>
+<td>$(0,4)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$\tilde Q^{*}=\tilde Q$</td>
+<td>$\mathsf{M}_2(e_t),i\mathsf{M}_2(\vec e_k)$</td>
+<td>Hermitian matrices</td>
+<td>$2q_t$</td>
+<td>$q_t^2-\lvert\vec q'\rvert^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>$\tilde Q^{\flat}=\tilde Q$</td>
+<td>$i\mathsf{M}_2(e_t),\mathsf{M}_2(\vec e_k)$</td>
+<td>$i$ times Hermitian matrices</td>
+<td>$2iq'_t$</td>
+<td>$-(q'_t)^2+\lvert\vec q\rvert^2$</td>
+<td>$(3,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the matrix form of the six definitions. The two complex subspaces are of real dimension two and six; the four real-type subspaces are of real dimension four. The determinants are the quaternionic norm restricted to each subspace, and the last column gives the signature of the real quadratic form on the real subspace.</p>
+<h2 id="the-centre-subspace">The Centre Subspace</h2>
+<p><strong>The fixed space of quaternion conjugation.</strong></p>
+<p>$$
+\mathsf{M}_2(Q_te_t)=Q_t\mathrm I_2=\begin{pmatrix}Q_t&0\\0&Q_t\end{pmatrix}
+=\begin{pmatrix}q_t+iq'_t&0\\0&q_t+iq'_t\end{pmatrix}.
+$$</p>
+<p>The image is the line of scalar matrices, of complex dimension one. The trace is $2Q_t$ and the determinant is $Q_t^2$; the norm is the square of the scalar, and it vanishes exactly at the origin. The subspace is the only commutative one and the only one of real dimension two. Its two real parameters are the informational scalar $q_t$ and the material scalar $q'_t$.</p>
+<p><strong>The intersection with the sectors.</strong> The centre meets $\mathbb{M}_+$ in the real line $\mathbb{R}e_t$ and $\mathbb{M}_-$ in the imaginary line $\mathbb{R}(ie_t)$. The statement is the matrix form of the split of the centre into its Hermitian and anti-Hermitian parts.</p>
+<h2 id="the-vector-subspace">The Vector Subspace</h2>
+<p><strong>The traceless matrices.</strong></p>
+<p>$$
+\mathsf{M}_2(\tilde Q)=\begin{pmatrix}-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&iQ_z\end{pmatrix},
+\qquad \operatorname{Tr}\mathsf{M}_2(\tilde Q)=0.
+$$</p>
+<p>The image is $\mathfrak{sl}_2(\mathbb{C})$, the traceless matrices, of complex dimension three. Its determinant is</p>
+<p>$$
+\det\mathsf{M}_2(\tilde Q)=Q_x^2+Q_y^2+Q_z^2=B^2,
+$$</p>
+<p>the norm with the scalar term dropped. The subspace is the derived subspace $[\mathbb{B},\mathbb{B}]$ and is closed under the commutator; it is not closed under the product, because the product of two traceless matrices need not be traceless: for example $E_{12}E_{21}=E_{11}$ has trace one.</p>
+<p><strong>The two blocks.</strong> Writing $Q_k=q_k+iq'_k$, the real and imaginary parts of the vector subspace are the material and informational spatial blocks, $\mathrm{Vect}(\mathbb{B})=X_{\mathrm{m}}\oplus X_{\mathrm{i}}$. The statement is the matrix form of the split of the traceless matrices into the real and imaginary parts of their entries.</p>
+<h2 id="the-quaternion-subspace">The Quaternion Subspace</h2>
+<p><strong>The real coefficients.</strong></p>
+<p>$$
+\mathsf{M}_2(q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z)
+=\begin{pmatrix}q_t-iq_z&-iq_x-q_y\\-iq_x+q_y&q_t+iq_z\end{pmatrix}
+=\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix},
+$$</p>
+<p>with $z=q_t-iq_z$ and $w=-iq_x-q_y$. The image is the set of matrices of the form $\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix}$, a complex-linear copy of $\mathbb{H}$ inside $M_2(\mathbb{C})$. The trace is $2q_t$, real, and the determinant is</p>
+<p>$$
+\det=|z|^2+|w|^2=q_t^2+q_x^2+q_y^2+q_z^2,
+$$</p>
+<p>positive definite. The subspace is closed under multiplication and is a division algebra: every nonzero element is invertible, with inverse the conjugate divided by the norm. The statement is the matrix form of the reality of the quaternion subspace.</p>
+<p><strong>The conjugate-linear pattern.</strong> The pattern $w\mapsto-\bar w$ is the matrix form of the quaternion conjugation: it is the unique conjugate-linear involution of $\mathbb{C}^2$ commuting with the left action. The quaternion subspace is the fixed space of complex conjugation, and its matrix image is the set of matrices commuting with that involution.</p>
+<h2 id="the-anti-quaternion-subspace">The Anti-Quaternion Subspace</h2>
+<p><strong>The imaginary coefficients.</strong></p>
+<p>$$
+\mathsf{M}_2(iq'_te_t+iq'_x\vec e_x+iq'_y\vec e_y+iq'_z\vec e_z)
+=i\begin{pmatrix}q'_t-iq'_z&-iq'_x-q'_y\\-iq'_x+q'_y&q'_t+iq'_z\end{pmatrix}.
+$$</p>
+<p>The image is $i$ times the quaternion matrices, and the determinant is</p>
+<p>$$
+\det=-\big((q'_t)^2+(q'_x)^2+(q'_y)^2+(q'_z)^2\big),
+$$</p>
+<p>negative definite. The subspace is not closed under multiplication. Together with the quaternion subspace it exhausts the algebra:</p>
+<p>$$
+\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}},
+$$</p>
+<p>the real-and-imaginary split, of two four-dimensional real summands.</p>
+<p><strong>The mirror.</strong> The two subspaces are exchanged by multiplication by the central $i$, and their determinants are opposite. The pair is the matrix form of the two real forms of the complex quaternion algebra: the division algebra and its imaginary multiple.</p>
+<h2 id="the-informational-subspace">The Informational Subspace</h2>
+<p><strong>The Hermitian matrices.</strong></p>
+<p>$$
+\mathsf{M}_2(q_te_t+iq'_x\vec e_x+iq'_y\vec e_y+iq'_z\vec e_z)
+=\begin{pmatrix}q_t+q'_z&q'_x-iq'_y\\q'_x+iq'_y&q_t-q'_z\end{pmatrix}.
+$$</p>
+<p>The image is the set of Hermitian matrices, of real dimension four. The trace is $2q_t$, real, and the determinant is</p>
+<p>$$
+\det=q_t^2-(q'_x)^2-(q'_y)^2-(q'_z)^2,
+$$</p>
+<p>of signature $(1,3)$. The subspace is not closed under multiplication; it is closed under the anticommutator, and it is the operator space of a two-state system. The three non-identity basis images are the Pauli matrices:</p>
+<p>$$
+i\mathsf{M}_2(\vec e_x)=\sigma_1,\qquad
+i\mathsf{M}_2(\vec e_y)=\sigma_2,\qquad
+i\mathsf{M}_2(\vec e_z)=\sigma_3.
+$$</p>
+<p><strong>The positivity cone.</strong> Inside the Hermitian subspace the positive semidefinite matrices are the observables with non-negative spectrum; the positive definite ones are the invertible observables; the rank-one ones are the pure states. The determinant is positive on the two positive cones and negative on the two negative cones, and the boundary is the null cone of the Minkowski form.</p>
+<h2 id="the-material-subspace">The Material Subspace</h2>
+<p><strong>The anti-Hermitian matrices.</strong></p>
+<p>$$
+\mathsf{M}_2(iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z)
+=i\begin{pmatrix}q'_t-q_z&-q_x+iq_y\\-q_x-iq_y&q'_t+q_z\end{pmatrix}.
+$$</p>
+<p>The image is $i$ times the Hermitian matrices, of real dimension four. The trace is $2iq'_t$, purely imaginary, and the determinant is</p>
+<p>$$
+\det=-(q'_t)^2+q_x^2+q_y^2+q_z^2,
+$$</p>
+<p>of signature $(3,1)$. The subspace is not closed under multiplication; it is the Lie algebra of the unitary group under the commutator, and it is the carrier of the material sector.</p>
+<p><strong>Why the material subspace is anti-Hermitian.</strong> The determinant on a Hermitian matrix has signature $(1,3)$; on an anti-Hermitian matrix it has the opposite signature $(3,1)$. The material form is the one with the positive spatial part, and it is obtained by multiplying the Hermitian matrices by $i$. The factor $i$ is the matrix form of the statement that the material sector is the anti-Hermitian one.</p>
+<h2 id="how-they-fit-together">How They Fit Together</h2>
+<p><strong>The three splits.</strong></p>
+<p>$$
+\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})
+=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}
+=\mathbb{M}_+\oplus\mathbb{M}_-.
+$$</p>
+<p>The first is the trace decomposition, of dimensions two and six; the second and third are four-plus-four and neither refines the other. Each sector takes its scalar from one half and its vectors from the other: the prime pattern of $\mathbb{M}_+$ is one real scalar and three imaginary vectors, and that of $\mathbb{M}_-$ is one imaginary scalar and three real vectors.</p>
+<p><strong>The subalgebras.</strong> The centre is closed under multiplication; the vector subspace is closed under the commutator but not under the product; the quaternion subspace is closed under multiplication; the anti-quaternion subspace and the two sectors are closed under neither. The statements are the matrix forms of the corresponding algebra statements, and they are read off the images above.</p>
+<p><strong>The involutions.</strong> The six subspaces are the fixed and anti-fixed spaces of the four involutions: the centre and the vector subspace for ${}^{\natural}$; the quaternion and anti-quaternion subspaces for $\bar{\cdot}$; the two sectors for ${}^{*}$ and ${}^{\flat}$. The matrix images are the scalar, traceless, conjugate-linear-pattern, $i$-pattern, Hermitian and anti-Hermitian conditions. The table at the head of the article is the complete list.</p>
+<p><strong>The real structure.</strong> The matrix model is a complex model, and it does not by itself distinguish $\mathbb{M}_+$ from $\mathbb{M}_-$. The distinction is the choice of the real form ${}^{\flat}$, and the matrix model displays it as the choice between the Hermitian and the anti-Hermitian matrices. The statement is the matrix form of the fact that the two sectors are anti-isometric and not isomorphic.</p>
+<h2 id="summary">Summary</h2>
+<p>The six remarkable subspaces are the scalar matrices, the traceless matrices, the matrices of the form $\begin{pmatrix}z&w\\-\bar w&\bar z\end{pmatrix}$, $i$ times them, the Hermitian matrices and $i$ times the Hermitian matrices. Their determinants are $Q_t^2$, $B^2$, the positive definite quaternion norm, its negative, the form of signature $(1,3)$ and the form of signature $(3,1)$. The three splits are the trace decomposition and the two four-plus-four decompositions; the centre and the quaternion subspace are subalgebras, the vector subspace is a Lie subalgebra, and the sectors are neither.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_\mu=q_\mu+iq'_\mu$</td>
+<td>complex coefficient and its two real parts</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>the centre, the scalar matrices</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the vector subspace, the traceless matrices</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the quaternion and anti-quaternion subspaces</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2(\mathbb{C})$</td>
+<td>the traceless matrices</td>
+</tr>
+<tr>
+<td>$(1,3)$, $(3,1)$</td>
+<td>the signatures of the two sector determinants</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="introduction-to-the-remarkable-subspaces.html">Introduction to the Remarkable Subspaces</a>, for the six subspaces and their definitions</li>
+<li><a href="comparison-of-the-remarkable-subspaces.html">Comparison of the Remarkable Subspaces</a>, for the three splits and the intersections</li>
+<li><a href="remarkable-subspaces-and-the-four-general-products-forms-and-norms.html">Remarkable Subspaces and the Four General Products, Forms and Norms</a>, for the forms restricted to the subspaces</li>
+<li><a href="the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a>, for the action on the subspaces</li>
+<li><a href="m2c-representation-the-sandwich-as-a-matrix-congruence.html">$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence</a>, for the matrix action on the two sectors</li>
+<li><a href="m2c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the determinant</li>
+<li><a href="comparison-of-the-remarkable-subspaces.html">Comparison of the Remarkable Subspaces</a>, for the material reading</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

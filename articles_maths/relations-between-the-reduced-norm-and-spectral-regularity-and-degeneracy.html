@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations between the Reduced Norm and Spectral Regularity and Degeneracy — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relations-between-the-reduced-norm-and-spectral-regularity-and-degeneracy"><strong>Relations between the Reduced Norm and Spectral Regularity and Degeneracy</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The reduced biquaternion algebra
+$$
+\mathbb{B}_{\mathrm r}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}
+$$
+carries two quadratic conditions on an element $\breve Q=Q_\blacktriangle+jQ_\blacktriangledown$:
+$$
+\nu(\breve Q)=Q_+Q_-=Q_\blacktriangle^{2}-Q_\blacktriangledown^{2},
+\qquad
+\delta(\breve Q)^{2}=(Q_+-Q_-)^{2}=4Q_\blacktriangledown^{2}.
+$$
+The first is the reduced norm; it is multiplicative, vanishes on the two hyperplanes $Q_+=0$ and $Q_-=0$, whose nonzero points are the zero divisors, and decides invertibility. The second is the square of the eigenvalue difference, the discriminant of the characteristic polynomial; it vanishes on the scalar line $Q_+=Q_-$ and decides whether the two eigenvalues can be told apart. This article compares the two, proves that the conditions are independent, shows that the zero divisors are spectrally regular and that the punctured scalar line is norm-regular and spectrally degenerate, identifies the origin as doubly degenerate, and records the chain of invariants. The spectral criterion is <em>Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra</em>; the four combinations are <em>The Four Sectors of the Reduced Biquaternion Algebra</em>.</p>
+<p><strong>Notation.</strong> The element is $\breve Q=Q_\blacktriangle+jQ_\blacktriangledown$ with $j^{2}=+1$, $ij=ji$ and $i^{2}=-1$; $\Pi_\pm=\tfrac12(1\pm j)$; $Q_\pm=Q_\blacktriangle\pm Q_\blacktriangledown$; and $\breve Q=Q_+\Pi_+ +Q_-\Pi_-$. The reduced norm and the unit criterion are <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>; the zero divisors are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the spectrum and the spectral decomposition are <em>Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion</em>.</p>
+<h2 id="the-two-quadratic-invariants">The Two Quadratic Invariants</h2>
+<p><strong>Definition (reduced norm).</strong> The <strong>reduced norm</strong> is
+$$
+\nu(\breve Q)=Q_+Q_-=(Q_\blacktriangle+Q_\blacktriangledown)(Q_\blacktriangle-Q_\blacktriangledown)=Q_\blacktriangle^{2}-Q_\blacktriangledown^{2}.
+$$</p>
+<p><strong>Definition (eigenvalue difference and discriminant).</strong> The <strong>eigenvalue difference</strong> is
+$$
+\delta(\breve Q)=Q_+-Q_-=2Q_\blacktriangledown,
+$$
+and the <strong>discriminant</strong> is
+$$
+\Delta(\breve Q)=\delta(\breve Q)^{2}=4Q_\blacktriangledown^{2}.
+$$</p>
+<p><strong>Theorem (the algebraic relation).</strong> The two invariants satisfy
+$$
+\Delta=(Q_++Q_-)^{2}-4Q_+Q_-=4Q_\blacktriangle^{2}-4(Q_\blacktriangle^{2}-Q_\blacktriangledown^{2})=4Q_\blacktriangledown^{2}.
+$$</p>
+<p><em>Proof.</em> Expand $(Q_++Q_-)^{2}-4Q_+Q_-=(Q_+-Q_-)^{2}=\delta^{2}$ and substitute $Q_\pm=Q_\blacktriangle\pm Q_\blacktriangledown$. The last equality is $4Q_\blacktriangle^{2}-4Q_\blacktriangle^{2}+4Q_\blacktriangledown^{2}$.</p>
+<p><strong>Proposition (the roles in the characteristic polynomial).</strong> The characteristic polynomial is
+$$
+p_{\breve Q}(X)=X^{2}-(Q_++Q_-)X+Q_+Q_-=X^{2}-2Q_\blacktriangle X+\nu(\breve Q).
+$$
+Its constant term is the reduced norm, its discriminant is $\Delta(\breve Q)$, and its trace is $Q_++Q_-=2Q_\blacktriangle$. The reduced norm is multiplicative,
+$$
+\nu(\breve Q_1\breve Q_2)=\nu(\breve Q_1)\nu(\breve Q_2),
+$$
+while the eigenvalue difference is additive, $\delta(\breve Q_1+\breve Q_2)=\delta(\breve Q_1)+\delta(\breve Q_2)$; its square $\Delta$ is neither multiplicative nor additive in general.</p>
+<p><em>Proof.</em> The polynomial is $(X-Q_+)(X-Q_-)$, so the coefficients are as displayed. Multiplicativity is the componentwise product in the idempotent coordinates,
+$$
+(Q_{1+}Q_{2+})(Q_{1-}Q_{2-})=(Q_{1+}Q_{1-})(Q_{2+}Q_{2-}).
+$$
+The difference is linear in the coordinates, hence additive. For the failure of multiplicativity of $\Delta$, take $\breve Q_1=\Pi_+$ and $\breve Q_2=\Pi_-$: their product is $0$, so $\Delta(\breve Q_1\breve Q_2)=0$, while $\Delta(\Pi_+)=1$ and $\Delta(\Pi_-)=1$, so $\Delta(\breve Q_1)\Delta(\breve Q_2)=1\neq0$. For the failure of additivity, $\Delta(\Pi_++\Pi_-)=\Delta(1)=0$, while $\Delta(\Pi_+)+\Delta(\Pi_-)=2$.</p>
+<p><strong>Remark (the two forms).</strong> In the coordinates $(Q_\blacktriangle,Q_\blacktriangledown)$, the reduced norm is the non-degenerate hyperbolic form $Q_\blacktriangle^{2}-Q_\blacktriangledown^{2}$, of real signature $(2,2)$. The discriminant is the square $4Q_\blacktriangledown^{2}$ of a linear form, hence degenerate; its zero set is the single line $Q_\blacktriangledown=0$, while the zero set of $\nu$ is the union of the two lines $Q_+=0$ and $Q_-=0$.</p>
+<h2 id="independence-of-the-two-conditions">Independence of the Two Conditions</h2>
+<p><strong>Definition (the predicates).</strong> An element is <strong>norm-regular</strong> if $\nu(\breve Q)\neq0$ and <strong>norm-degenerate</strong> if $\nu(\breve Q)=0$. It is <strong>spectrally regular</strong> if $\delta(\breve Q)\neq0$, that is $Q_+\neq Q_-$, and <strong>spectrally degenerate</strong> if $\delta(\breve Q)=0$, that is $Q_+=Q_-$.</p>
+<p><strong>Theorem (all four combinations occur).</strong> The two predicates are independent: each of the four combinations is realized.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>$(Q_+,Q_-)$</th>
+<th>element</th>
+<th>$\nu$</th>
+<th>$\delta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$(1,2)$</td>
+<td>$\tfrac32-\tfrac12 j$</td>
+<td>$2$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$(0,1)$</td>
+<td>$\Pi_-$</td>
+<td>$0$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$(1,1)$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$(0,0)$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The element is recovered from $(Q_+,Q_-)$ by $Q_\blacktriangle=\tfrac12(Q_++Q_-)$ and $Q_\blacktriangledown=\tfrac12(Q_+-Q_-)$, so each pair gives the displayed element. The values of $\nu$ and $\delta$ are read from the definitions. Hence neither predicate implies the other, and neither of the two zero sets contains the other.</p>
+<p><strong>Corollary (the zero sets meet only at the origin).</strong> The norm-zero set and the spectral-degenerate set satisfy
+$$
+\{Q_+Q_-=0\}\cap\{Q_+=Q_-\}=\{0\}.
+$$</p>
+<p><em>Proof.</em> If $Q_+=Q_-$, then $Q_+Q_-=Q_+^{2}$; it vanishes only when $Q_+=0$, hence also $Q_-=0$. The origin lies in both sets.</p>
+<p><strong>Remark (the geometric form of independence).</strong> In idempotent coordinates the norm-zero set is the union of the two coordinate axes and the spectral-degenerate set is the diagonal; the diagonal meets each axis only at the origin. The four sectors are the four regions cut by these three lines, and the two conditions are transverse at their only common point.</p>
+<h2 id="the-zero-divisors-are-spectrally-regular">The Zero Divisors Are Spectrally Regular</h2>
+<p><strong>Theorem (the zero divisors have distinct eigenvalues).</strong> Let $\breve Q$ be a nonzero zero divisor, so that $Q_+Q_-=0$ and $\breve Q\neq0$. Then exactly one of $Q_+,Q_-$ is zero and the other is nonzero; the spectrum is $\{0,\lambda\}$ with $\lambda\neq0$; the element is spectrally regular; and it has a two-term spectral decomposition with one zero eigenvalue.</p>
+<p><em>Proof.</em> The product $Q_+Q_-$ vanishes in the field $\mathbb{C}$ only when one factor vanishes. Since $\breve Q\neq0$, not both factors vanish. Hence exactly one is zero and the other is nonzero. The spectrum is $\{Q_+,Q_-\}=\{0,\lambda\}$ with $\lambda\neq0$, so the eigenvalues are distinct. If $Q_+=0$, then $\breve Q=Q_-\Pi_-$ with $Q_-\neq0$, and the spectral decomposition is
+$$
+\breve Q=0\cdot\Pi_+ +Q_-\Pi_-.
+$$
+If $Q_-=0$, the roles of $\Pi_+$ and $\Pi_-$ are exchanged.</p>
+<p><strong>Example.</strong> The element $\breve Q=1+j=2\Pi_+$ has $(Q_+,Q_-)=(2,0)$, reduced norm $0$ and spectrum $\{2,0\}$; its spectral decomposition is $2\Pi_+ +0\Pi_-$, so it is a zero divisor and spectrally regular at once.</p>
+<p><strong>Remark (the annihilated idempotent).</strong> If $Q_+=0$, the element is $Q_-\Pi_-$ and annihilates $\Pi_+$: $\breve Q\Pi_+=0$. The zero eigenvalue is attached to $\Pi_+$ and the nonzero eigenvalue $Q_-$ to $\Pi_-$: one spectral idempotent is annihilated, but the eigenvalues remain distinct.</p>
+<h2 id="the-central-line-and-the-origin">The Central Line and the Origin</h2>
+<p><strong>Theorem (the punctured scalar line is norm-regular and spectrally degenerate).</strong> On the set
+$$
+\mathbb{C}^{\times}\cdot1=\{Q_+=Q_-\neq0\}=\{Q_\blacktriangledown=0,\ Q_\blacktriangle\neq0\},
+$$
+the reduced norm is $\nu=Q_+^{2}\neq0$, so the element is a unit; the spectrum is the singleton $\{Q_+\}$; the characteristic polynomial is $(X-Q_+)^{2}$; the minimal polynomial is $X-Q_+$; the spectral decomposition is the one-term writing $Q_+1$; and the element is semisimple, not defective.</p>
+<p><em>Proof.</em> The identities $Q_+=Q_-$ and $Q_+\neq0$ give $Q_\blacktriangle=Q_+\neq0$ and $Q_\blacktriangledown=0$, hence $\nu=Q_+^{2}\neq0$. The spectrum, the characteristic polynomial and the minimal polynomial are those of the scalar line in <em>Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra</em>, §<em>The Scalar Stratum</em>. The minimal polynomial is linear, hence squarefree, so the element is semisimple.</p>
+<p><strong>Theorem (the origin is doubly degenerate).</strong> At $\breve Q=0$, both conditions degenerate: $\nu(0)=0$ and $\delta(0)=0$. The spectrum is $\{0\}$, the characteristic polynomial is $X^{2}$, the minimal polynomial is $X$, the eigenspace is all of $\mathbb{B}_{\mathrm r}$, and the spectral decomposition is the one-term writing $0=0\cdot1$.</p>
+<p><em>Proof.</em> The values follow from $Q_+=Q_-=0$. The spectrum is the singleton $\{0\}$, and $X$ is the monic polynomial of least degree annihilating $0$, so the minimal polynomial is $X$. Every vector $v$ satisfies $0v=0$, so the eigenspace is the whole algebra.</p>
+<h2 id="the-chain-of-invariants">The Chain of Invariants</h2>
+<p><strong>Definition (the binary invariants).</strong> Define
+$$
+\nu_0(\breve Q)=
+\begin{cases}1,&\nu(\breve Q)\neq0,\\0,&\nu(\breve Q)=0,\end{cases}
+\qquad
+\sigma_0(\breve Q)=
+\begin{cases}1,&\delta(\breve Q)\neq0,\\0,&\delta(\breve Q)=0.\end{cases}
+$$
+Then the four sectors are
+$$
+\Sigma_{ij}=\{\breve Q:\nu_0(\breve Q)=i,\ \sigma_0(\breve Q)=j\},
+\qquad i,j\in\{0,1\}.
+$$</p>
+<p><strong>Theorem (the chain).</strong> The invariants form the chain
+$$
+\breve Q\ \longmapsto\ (\nu(\breve Q),\delta(\breve Q))\ \longmapsto\ (\nu_0(\breve Q),\sigma_0(\breve Q)),
+$$
+and the types are counted in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>data</th>
+<th>number of types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>reduced norm</td>
+<td>$\nu=Q_+Q_-$</td>
+<td>$2$: $\nu\neq0$ (units) and $\nu=0$ (zero divisors and origin)</td>
+</tr>
+<tr>
+<td>eigenvalue difference</td>
+<td>$\delta=Q_+-Q_-$</td>
+<td>$2$: $\delta\neq0$ (regular) and $\delta=0$ (degenerate)</td>
+</tr>
+<tr>
+<td>pair</td>
+<td>$(\nu,\delta)$</td>
+<td>$4$: the four sectors</td>
+</tr>
+<tr>
+<td>element</td>
+<td>$(Q_+,Q_-)$</td>
+<td>continuum: all values</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The element determines $\nu$ and $\delta$ by their definitions, and the pair determines the two binary invariants. The four combinations of the binary invariants are the four sectors, and all four occur by the witness table of §<em>Independence of the Two Conditions</em>. The element has two complex degrees of freedom, so it is not determined by the two invariants; the pair $(\nu,\delta)$ determines the trace only up to sign, since $(Q_++Q_-)^{2}=\delta^{2}+4\nu$.</p>
+<p><strong>Corollary (the characteristic polynomial reads the chain).</strong> The characteristic polynomial is
+$$
+p_{\breve Q}(X)=X^{2}-(Q_++Q_-)X+\nu(\breve Q),
+$$
+of discriminant $\Delta(\breve Q)=\delta(\breve Q)^{2}$. The constant term is the reduced norm, the discriminant is the square of the eigenvalue difference, and the trace is the coefficient that the pair $(\nu,\delta)$ retains only up to sign.</p>
+<p><strong>Remark (the minimal polynomial does not refine the chain).</strong> The minimal polynomial is $X-Q_+$ on the scalar line $\Sigma_{10}\cup\Sigma_{00}$ and $(X-Q_+)(X-Q_-)$ on its complement $\Sigma_{11}\cup\Sigma_{01}$. It therefore separates two types, not four, and it does not split any sector. This is the effect of semisimplicity: the biquaternion algebra refines the four sectors into six strata by the minimal polynomial, because its scalar line splits into a scalar and a Jordan part and its origin splits into the origin and the nonzero nilpotents (<em>Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</em>, §<em>The Chain of Invariants</em>). In the reduced algebra those defective parts are empty.</p>
+<p><strong>Remark (the chain is not multiplicative).</strong> The reduced norm is multiplicative, but the sector is not. The unit group $\Sigma_{11}\cup\Sigma_{10}$ is closed under multiplication. In $\Sigma_{01}$, $\Pi_+^{2}=\Pi_+$ stays in the sector while $\Pi_+\Pi_-=0$ falls in $\Sigma_{00}$. Two elements of $\Sigma_{11}$ can multiply into $\Sigma_{10}$:
+$$
+\left(\tfrac32-\tfrac12 j\right)\left(\tfrac32+\tfrac12 j\right)=2,
+$$
+with factors $(1,2)$ and $(2,1)$. An element of $\Sigma_{01}$ times an element of $\Sigma_{10}$ stays in $\Sigma_{01}$, because one coordinate remains zero and the other is multiplied by a nonzero scalar.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced norm and the eigenvalue difference are the two quadratic invariants:
+$$
+\nu=Q_+Q_-=Q_\blacktriangle^{2}-Q_\blacktriangledown^{2},
+\qquad
+\delta^{2}=(Q_+-Q_-)^{2}=4Q_\blacktriangledown^{2}.
+$$
+The first is multiplicative, vanishes on the two hyperplanes $Q_+=0$ and $Q_-=0$, and decides invertibility. The second is the discriminant of the characteristic polynomial, vanishes on the scalar line $Q_+=Q_-$, and decides spectral degeneracy. They are related by $\delta^{2}=(Q_++Q_-)^{2}-4\nu$, so the characteristic polynomial is determined by the trace and the reduced norm.</p>
+<p>The conditions are independent: all four combinations occur, and the two zero sets meet only at the origin. The zero divisors $\Sigma_{01}$ are spectrally regular, with spectrum $\{0,\lambda\}$, $\lambda\neq0$, and a two-term decomposition with one zero eigenvalue. The punctured scalar line $\Sigma_{10}$ is norm-regular and spectrally degenerate, with reduced norm $Q_+^{2}\neq0$, spectrum $\{Q_+\}$ and linear minimal polynomial. The origin $\Sigma_{00}$ is doubly degenerate and is the only element in both zero sets.</p>
+<p>The chain runs from the element to $(\nu,\delta)$, then to the binary pair $(\nu_0,\sigma_0)$, which is the sector. The pair forgets the sign of the trace, and the minimal polynomial separates only two types, not four: every element is semisimple, so the defective strata of the biquaternion algebra are absent. The chain is not multiplicative; the four sectors are studied in <em>The Four Sectors of the Reduced Biquaternion Algebra</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu(\breve Q)=Q_+Q_-=Q_\blacktriangle^{2}-Q_\blacktriangledown^{2}$</td>
+<td>the reduced norm</td>
+</tr>
+<tr>
+<td>$\delta(\breve Q)=Q_+-Q_-=2Q_\blacktriangledown$</td>
+<td>the eigenvalue difference</td>
+</tr>
+<tr>
+<td>$\Delta(\breve Q)=\delta^{2}=4Q_\blacktriangledown^{2}$</td>
+<td>the discriminant</td>
+</tr>
+<tr>
+<td>$Q_++Q_-=2Q_\blacktriangle$</td>
+<td>the trace</td>
+</tr>
+<tr>
+<td>$\nu_0,\sigma_0$</td>
+<td>the binary norm and spectral predicates</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $\nu_0=i$ and $\sigma_0=j$</td>
+</tr>
+<tr>
+<td>$\{Q_+Q_-=0\}$</td>
+<td>the norm-zero set, the two coordinate hyperplanes</td>
+</tr>
+<tr>
+<td>$\{Q_+=Q_-\}$</td>
+<td>the spectral-degenerate set, the scalar line</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\times}\cdot1$</td>
+<td>the punctured scalar line</td>
+</tr>
+<tr>
+<td>$\Pi_\pm=\tfrac12(1\pm j)$</td>
+<td>the two idempotents</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="spectral-regularity-and-degeneracy-in-the-reduced-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra</a>, for the spectral criterion, the eigenspaces and the scalar stratum.</li>
+<li><a href="the-four-sectors-of-the-reduced-biquaternion-algebra.html">The Four Sectors of the Reduced Biquaternion Algebra</a>, for the four cells, their dimensions and their closures.</li>
+<li><a href="norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html">Norm and Invertibility in the Algebra of the Reduced Biquaternions</a>, for the reduced norm and the unit criterion.</li>
+<li><a href="zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Zero Divisors of the Algebra of the Reduced Biquaternions</a>, for the two punctured idempotent lines.</li>
+<li><a href="eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html">Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion</a>, for the spectrum and the spectral decomposition.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the non-commutative comparison and its finer chain of invariants.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

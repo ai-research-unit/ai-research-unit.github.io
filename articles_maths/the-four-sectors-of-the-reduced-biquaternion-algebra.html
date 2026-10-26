@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Sectors of the Reduced Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-sectors-of-the-reduced-biquaternion-algebra"><strong>The Four Sectors of the Reduced Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The reduced biquaternion algebra
+$$
+\mathbb{B}_{\mathrm r}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}
+$$
+carries two binary conditions. The reduced norm $Q_+Q_-$ is zero or nonzero, and the two eigenvalues $Q_+$ and $Q_-$ are equal or distinct. The conditions are independent, so they cut the algebra into four <strong>sectors</strong>. In the idempotent coordinates $Q_\pm=Q_\blacktriangle\pm Q_\blacktriangledown$, with $\breve Q=Q_+\Pi_+ +Q_-\Pi_-$, the sectors are
+$$
+\Sigma_{11}=\{Q_+\neq0,\ Q_-\neq0,\ Q_+\neq Q_-\},\qquad
+\Sigma_{01}=\{Q_+Q_-=0,\ Q_+\neq Q_-\},
+$$
+$$
+\Sigma_{10}=\{Q_+=Q_-\neq0\},\qquad
+\Sigma_{00}=\{Q_+=Q_-=0\}=\{0\}.
+$$
+The first index is the reduced norm ($1$ regular, $0$ degenerate), and the second is the spectrum ($1$ regular, $0$ degenerate). The article proves that all four are nonempty, describes each, computes its dimension and closure, and shows that no sector has a defective stratum. The spectral criterion is <em>Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra</em>; the comparison of the conditions is <em>Relations between the Reduced Norm and Spectral Regularity and Degeneracy</em>.</p>
+<p><strong>Notation.</strong> The element is $\breve Q=Q_\blacktriangle+jQ_\blacktriangledown$ with $j^{2}=+1$, $ij=ji$ and $i^{2}=-1$; $\Pi_\pm=\tfrac12(1\pm j)$; $Q_\pm=Q_\blacktriangle\pm Q_\blacktriangledown$; and $\breve Q=Q_+\Pi_+ +Q_-\Pi_-$. The algebra, the unit criterion and the zero divisors are <em>Reduced Biquaternion Space</em>, <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em> and <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>.</p>
+<h2 id="the-definition-and-the-partition">The Definition and the Partition</h2>
+<p><strong>Definition (the sectors).</strong> For $i,j\in\{0,1\}$, the <strong>sector</strong> $\Sigma_{ij}$ is the set of elements whose reduced norm is nonzero exactly when $i=1$ and whose eigenvalues are distinct exactly when $j=1$. Explicitly, the four sectors are the four displays of the introduction.</p>
+<p><strong>Theorem (the partition).</strong> The sectors form a partition:
+$$
+\mathbb{B}_{\mathrm r}=\Sigma_{11}\sqcup\Sigma_{01}\sqcup\Sigma_{10}\sqcup\Sigma_{00}.
+$$</p>
+<p><em>Proof.</em> Each element has one truth value for each binary predicate, so it lies in exactly one of the four combinations; the sets are disjoint and exhaustive.</p>
+<p><strong>Theorem (all four are nonempty).</strong> Each sector contains the element displayed in the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>$(Q_+,Q_-)$</th>
+<th>element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$(1,2)$</td>
+<td>$\tfrac32-\tfrac12 j$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$(0,1)$</td>
+<td>$\Pi_-$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$(1,1)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$(0,0)$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The element is recovered from $(Q_+,Q_-)$ by $Q_\blacktriangle=\tfrac12(Q_++Q_-)$ and $Q_\blacktriangledown=\tfrac12(Q_+-Q_-)$, and the two conditions are read from the definitions; the table displays the four witnesses.</p>
+<h2 id="the-sector-math40-the-open-dense-set">The Sector $\Sigma_{11}$: The Open Dense Set</h2>
+<p><strong>Theorem (the generic sector).</strong> The sector $\Sigma_{11}$ is the complement of the union of the three complex lines
+$$
+Q_+=0,\qquad Q_-=0,\qquad Q_+=Q_-.
+$$
+It is open and dense, connected, of complex dimension two and real dimension four. Its elements are units with distinct eigenvalues; each has a unique two-term spectral decomposition and the eigenbasis $(\Pi_+,\Pi_-)$.</p>
+<p><em>Proof.</em> The complement is open. The three lines are closed of real codimension two and empty interior, so the complement is dense and connected, the complement of a closed subset of real codimension at least two in a connected manifold being connected. The complex dimension is two because the algebra has complex dimension two and the removed set has complex dimension one. The elements are units because both idempotent coordinates are nonzero, and the eigenvalues are distinct by the second condition. The spectral decomposition and the eigenbasis are those of <em>Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra</em>, §<em>The Spectral Criterion</em> and §<em>The Eigenspaces</em>.</p>
+<p><strong>Remark (generic but not closed under multiplication).</strong> The complement of $\Sigma_{11}$ is a finite union of complex lines, so $\Sigma_{11}$ is the generic sector. It is not closed under multiplication: the factors $\tfrac32-\tfrac12 j$ and $\tfrac32+\tfrac12 j$ lie in $\Sigma_{11}$, and their product is the scalar $2$, which lies in $\Sigma_{10}$.</p>
+<h2 id="the-sector-math51-the-two-punctured-hyperplanes">The Sector $\Sigma_{01}$: The Two Punctured Hyperplanes</h2>
+<p><strong>Theorem (the zero divisors).</strong> The sector $\Sigma_{01}$ is the union of the two punctured hyperplanes
+$$
+\Sigma_{01}=\mathbb{C}^{\times}\Pi_+\cup\mathbb{C}^{\times}\Pi_-,
+\qquad
+\mathbb{C}^{\times}\Pi_+=\{Q_-=0,\ Q_+\neq0\},
+\quad
+\mathbb{C}^{\times}\Pi_-=\{Q_+=0,\ Q_-\neq0\}.
+$$
+Each is a complex line minus the origin, of complex dimension one and real dimension two; the two components are disjoint, so the sector has two connected components. Its elements are zero divisors with distinct eigenvalues $\{0,\lambda\}$, $\lambda\neq0$; each has a unique two-term spectral decomposition with one zero eigenvalue. Its closure is
+$$
+\overline{\Sigma_{01}}=\{Q_+Q_-=0\}=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-,
+$$
+the union of the two full lines, which contains the origin $\Sigma_{00}$.</p>
+<p><em>Proof.</em> The product $Q_+Q_-$ vanishes only when one factor vanishes. The condition $Q_+\neq Q_-$ excludes the origin, so exactly one factor is zero and the other is nonzero. If $Q_-=0$, then $\breve Q=Q_+\Pi_+$ with $Q_+\neq0$, which is $\mathbb{C}^{\times}\Pi_+$; if $Q_+=0$, then $\breve Q=Q_-\Pi_-$ with $Q_-\neq0$, which is $\mathbb{C}^{\times}\Pi_-$. The two lines meet only at the origin, which is excluded, so the components are disjoint. Each punctured line is homeomorphic to $\mathbb{C}^{\times}$ and is connected. The spectral decomposition is that of <em>Relations between the Reduced Norm and Spectral Regularity and Degeneracy</em>, §<em>The Zero Divisors Are Spectrally Regular</em>. The closure adds the origin to each line.</p>
+<h2 id="the-sector-math69-the-punctured-central-line">The Sector $\Sigma_{10}$: The Punctured Central Line</h2>
+<p><strong>Theorem (the scalar units).</strong> The sector $\Sigma_{10}$ is the punctured scalar line
+$$
+\Sigma_{10}=\mathbb{C}^{\times}\cdot1=\{Q_\blacktriangle\neq0,\ Q_\blacktriangledown=0\},
+$$
+of complex dimension one and real dimension two, and it is connected. Its elements are units with the repeated eigenvalue $Q_\blacktriangle$; the minimal polynomial is $X-Q_\blacktriangle$; the spectral decomposition is the one-term writing $Q_\blacktriangle1$; the eigenspace is all of $\mathbb{B}_{\mathrm r}$; and every element is semisimple, not defective. Its closure is the full scalar line
+$$
+\overline{\Sigma_{10}}=\mathbb{C}\cdot1=\{Q_+=Q_-\},
+$$
+which contains the origin $\Sigma_{00}$.</p>
+<p><em>Proof.</em> The conditions $Q_+=Q_-$ and $Q_+\neq0$ give $Q_\blacktriangle=Q_+\neq0$ and $Q_\blacktriangledown=0$. Conversely, a nonzero scalar has $Q_+=Q_-=Q_\blacktriangle\neq0$. The reduced norm is $Q_\blacktriangle^{2}\neq0$, so the element is a unit. The spectrum is the singleton $\{Q_\blacktriangle\}$, the characteristic polynomial is $(X-Q_\blacktriangle)^{2}$, and the minimal polynomial is $X-Q_\blacktriangle$, which is squarefree. The eigenspace is the whole algebra because $\breve Q=Q_\blacktriangle1$ acts as the scalar $Q_\blacktriangle$. The closure is the full line, the origin included.</p>
+<p><strong>Remark (no Jordan part).</strong> In the biquaternion algebra $\Sigma_{10}$ splits into a scalar line and a Jordan part; here the repeated eigenvalue forces the element to be scalar, so the Jordan part is empty.</p>
+<h2 id="the-sector-math90-the-origin">The Sector $\Sigma_{00}$: The Origin</h2>
+<p><strong>Theorem (the doubly degenerate point).</strong> The sector $\Sigma_{00}$ is the singleton $\{0\}$, of complex dimension zero, and it is closed. It is the only element in both zero sets. Its spectrum is $\{0\}$, its characteristic polynomial is $X^{2}$, its minimal polynomial is $X$, its eigenspace is all of $\mathbb{B}_{\mathrm r}$, and its spectral decomposition is the one-term writing $0=0\cdot1$. It is the only nilpotent of the algebra, and it lies in the closure of every other sector.</p>
+<p><em>Proof.</em> The conditions $Q_+=Q_-=0$ give $Q_\blacktriangle=0$ and $Q_\blacktriangledown=0$, hence $\breve Q=0$; conversely $0$ satisfies both. The spectrum, the polynomials and the eigenspace are the scalar formulas at $Q_\blacktriangle=0$. If $\breve N^{k}=0$, then $N_+^{k}=0$ and $N_-^{k}=0$ in the field $\mathbb{C}$, so $N_+=N_-=0$; hence $0$ is the only nilpotent. The origin lies in the closure of $\Sigma_{11}$ because $\Sigma_{11}$ is dense, and in the closures of $\Sigma_{01}$ and $\Sigma_{10}$ by the two closure theorems.</p>
+<h2 id="dimensions-and-closures">Dimensions and Closures</h2>
+<p><strong>Theorem (the dimensions).</strong> The dimensions and descriptions are collected in the table; the first dimension is complex and the second is real.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition</th>
+<th>description</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$Q_+\neq0,\ Q_-\neq0,\ Q_+\neq Q_-$</td>
+<td>open dense set, units with distinct eigenvalues</td>
+<td>$2$ complex, $4$ real</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$Q_+Q_-=0,\ Q_+\neq Q_-$</td>
+<td>two punctured hyperplanes, zero divisors with distinct eigenvalues</td>
+<td>$1$ complex, $2$ real</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$Q_+=Q_-\neq0$</td>
+<td>punctured central line, scalar units</td>
+<td>$1$ complex, $2$ real</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$Q_+=Q_-=0$</td>
+<td>the origin</td>
+<td>$0$ complex, $0$ real</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the closures).</strong> The closures are
+$$
+\overline{\Sigma_{11}}=\mathbb{B}_{\mathrm r},\qquad
+\overline{\Sigma_{01}}=\Sigma_{01}\cup\Sigma_{00},\qquad
+\overline{\Sigma_{10}}=\Sigma_{10}\cup\Sigma_{00},\qquad
+\overline{\Sigma_{00}}=\Sigma_{00}.
+$$</p>
+<p><em>Proof.</em> The complement of $\Sigma_{11}$ is the union of the three complex lines, a closed set with empty interior, so $\Sigma_{11}$ is dense and its closure is the whole algebra. The closure of a punctured complex line is the full line, which adds the origin; the closure of a union is the union of the closures. The origin is closed.</p>
+<p><strong>Corollary (a stratification by sectors).</strong> Each closure is a union of sectors, so the partition satisfies the frontier condition of a stratification. The sector $\Sigma_{11}$ is open and dense; the sectors $\Sigma_{01}$ and $\Sigma_{10}$ are locally closed; the sector $\Sigma_{00}$ is closed. The closures of the two mixed sectors meet at the origin.</p>
+<p><em>Proof.</em> The closure statements are the theorem. $\Sigma_{11}$ is open; $\Sigma_{01}=\{Q_+Q_-=0\}\cap\{Q_+\neq Q_-\}$ and $\Sigma_{10}=\{Q_+=Q_-\}\cap\{Q_+\neq0\}$ are locally closed; $\Sigma_{00}$ is closed. The frontier condition is the statement that each closure is a union of sectors.</p>
+<h2 id="the-absence-of-a-defective-stratum">The Absence of a Defective Stratum</h2>
+<p><strong>Theorem (no defective element).</strong> Every element of every sector is semisimple. There is no sector, and no subset of a sector, on which an element is defective.</p>
+<p><em>Proof.</em> On $\Sigma_{11}$ and $\Sigma_{01}$ the two eigenvalues are distinct, so the minimal polynomial is the product of two distinct linear factors, hence squarefree. On $\Sigma_{10}$ the element is scalar and the minimal polynomial is linear. On $\Sigma_{00}$ the element is zero and the minimal polynomial is $X$. In every case the minimal polynomial is squarefree, so the element is semisimple. A defective element would have a minimal polynomial with a repeated root, and none occurs.</p>
+<p><strong>Remark (the comparison with the biquaternion algebra).</strong> In the biquaternion algebra the minimal polynomial refines the sectors into six strata: $\Sigma_{10}$ splits into a scalar line and a Jordan part, and $\Sigma_{00}$ into the origin and the nonzero nilpotents. Those parts are empty here because $\mathbb{B}_{\mathrm r}\cong\mathbb{C}\times\mathbb{C}$ is reduced, while $M_2(\mathbb{C})$ is not: a nonzero nilpotent matrix exists in the matrix algebra, and no nonzero nilpotent exists in a product of fields.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced biquaternion algebra is partitioned into four sectors by the reduced norm $Q_+Q_-$ and the eigenvalue difference $Q_+-Q_-$:
+$$
+\Sigma_{11}=\{Q_+\neq0,Q_-\neq0,Q_+\neq Q_-\},\quad
+\Sigma_{01}=\{Q_+Q_-=0,Q_+\neq Q_-\},
+$$
+$$
+\Sigma_{10}=\{Q_+=Q_-\neq0\},\quad
+\Sigma_{00}=\{Q_+=Q_-=0\}=\{0\}.
+$$
+All four are nonempty.</p>
+<p>The generic sector $\Sigma_{11}$ is the complement of the three complex lines $Q_+=0$, $Q_-=0$ and $Q_+=Q_-$; it is open and dense, of complex dimension two, and consists of the units with distinct eigenvalues. The sector $\Sigma_{01}$ is the union of the two punctured hyperplanes $\mathbb{C}^{\times}\Pi_+$ and $\mathbb{C}^{\times}\Pi_-$, of complex dimension one, with two connected components; it consists of the zero divisors with distinct eigenvalues. The sector $\Sigma_{10}$ is the connected punctured scalar line $\mathbb{C}^{\times}\cdot1$, of complex dimension one; the sector $\Sigma_{00}$ is the origin.</p>
+<p>The dimensions are $2,1,1,0$ over $\mathbb{C}$ and $4,2,2,0$ over $\mathbb{R}$. The closures are $\overline{\Sigma_{11}}=\mathbb{B}_{\mathrm r}$, $\overline{\Sigma_{01}}=\Sigma_{01}\cup\Sigma_{00}$, $\overline{\Sigma_{10}}=\Sigma_{10}\cup\Sigma_{00}$ and $\overline{\Sigma_{00}}=\Sigma_{00}$; the partition is a stratification.</p>
+<p>No sector has a defective stratum. Every element is semisimple: the minimal polynomial is a product of distinct linear factors on $\Sigma_{11}$ and $\Sigma_{01}$, linear on $\Sigma_{10}$, and $X$ at the origin. The repeated-eigenvalue sector $\Sigma_{10}$ contains only scalars, and the only nilpotent is $0$. The defective cone and the Jordan parts of the biquaternion algebra are absent because $\mathbb{C}\times\mathbb{C}$ is reduced.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$Q_+\neq0$, $Q_-\neq0$, $Q_+\neq Q_-$: the open dense sector</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$Q_+Q_-=0$, $Q_+\neq Q_-$: the two punctured hyperplanes</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$Q_+=Q_-\neq0$: the punctured scalar line</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$Q_+=Q_-=0$: the origin</td>
+</tr>
+<tr>
+<td>$\nu_0$</td>
+<td>$1$ if $Q_+Q_-\neq0$, $0$ otherwise</td>
+</tr>
+<tr>
+<td>$\sigma_0$</td>
+<td>$1$ if $Q_+\neq Q_-$, $0$ otherwise</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\times}\Pi_\pm$</td>
+<td>the two punctured idempotent lines</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\times}\cdot1$</td>
+<td>the punctured scalar line</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="spectral-regularity-and-degeneracy-in-the-reduced-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra</a>, for the spectral criterion, the eigenspaces and the scalar stratum.</li>
+<li><a href="relations-between-the-reduced-norm-and-spectral-regularity-and-degeneracy.html">Relations between the Reduced Norm and Spectral Regularity and Degeneracy</a>, for the independence of the two conditions and the chain of invariants.</li>
+<li><a href="norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html">Norm and Invertibility in the Algebra of the Reduced Biquaternions</a>, for the reduced norm and the unit criterion.</li>
+<li><a href="zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Zero Divisors of the Algebra of the Reduced Biquaternions</a>, for the two punctured idempotent lines.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the defective cone and the Jordan strata that are absent here.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the non-commutative four sectors and the refinement by the minimal polynomial.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

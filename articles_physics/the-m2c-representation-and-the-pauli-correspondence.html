@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $M_2(\mathbb{C})$ Representation: The Pauli Correspondence — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-representation-the-pauli-correspondence"><strong>The $M_2(\mathbb{C})$ Representation: The Pauli Correspondence</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The $2\times2$ image is the one in which the algebra looks like the quantum mechanics of a two-state system. The reason is a single line: the three Hermitian units of the algebra map to the three Pauli matrices, and the three vector units map to $-i$ times them. Everything else in the correspondence follows from that line — the observables as Hermitian matrices, the states as positive trace-one matrices, the spin as a triple of commutators, the Bloch ball as the trace-one slice of a cone.</p>
+<p>This article states the correspondence and gives its physical interpretations, one by one, each with its boundary. It proves nothing: the identities are proved in the mathematics articles named in the source table, and the formulas of the state space are developed in <em>$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector</em>. What this article adds is the reading, and the separation between what the reading says and what it does not.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The assignment $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$, the isomorphism and the inverse map</td>
+<td><a href="../articles_maths/m2c-representation-the-matrix-product-and-the-algebra-structure.html">$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</a></td>
+</tr>
+<tr>
+<td>The Hermitian subspace $\mathbb M_+$ as the Hermitian matrices, the anti-Hermitian $\mathbb M_-$ as the anti-Hermitian matrices, and $\mathbb M_-=i\mathbb M_+$</td>
+<td><a href="../articles_maths/m2c-representation-the-six-subspaces-as-matrix-conditions.html">$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions</a></td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$, $\det\mathsf M_2(\tilde Q)=N$, and the norm on each subspace</td>
+<td><a href="../articles_maths/m2c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a></td>
+</tr>
+<tr>
+<td>The trace pairing $\tfrac12\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle$, its Gram matrix and its signature</td>
+<td><a href="../articles_maths/m2c-representation-the-four-words-and-the-four-traces.html">$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</a></td>
+</tr>
+<tr>
+<td>Hermitian conjugation ${}^{*}$ as the conjugate transpose, and the four involutions as four matrix operations</td>
+<td><a href="../articles_maths/m2c-representation-the-conjugations-and-the-adjoints.html">$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints</a></td>
+</tr>
+<tr>
+<td>The spin operators, the pure states, the density matrix, the Bloch vector and the measurement formulae</td>
+<td><a href="../articles_maths/m2c-representation-spin-qubits-and-the-bloch-vector.html">$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector</a></td>
+</tr>
+<tr>
+<td>The rank-one matrices, the two strata of the null cone and the trace-one idempotents</td>
+<td><a href="../articles_maths/m2c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</a></td>
+</tr>
+<tr>
+<td>The unit-norm slice as $SL_2(\mathbb{C})$, the unitary slice as $SU(2)$, and the polar decomposition</td>
+<td><a href="../articles_maths/m2c-representation-gl2-sl2-and-the-determinant.html">$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-correspondence">The Correspondence</h2>
+<h3 id="the-assignment-on-the-units">The Assignment on the Units</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>unit</th>
+<th>matrix</th>
+<th>square</th>
+<th>Hermitian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$\mathrm I_2$</td>
+<td>$\mathrm I_2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$\begin{pmatrix}0&-i\\-i&0\end{pmatrix}=-i\sigma_1$</td>
+<td>$-\mathrm I_2$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$\begin{pmatrix}0&-1\\1&0\end{pmatrix}=-i\sigma_2$</td>
+<td>$-\mathrm I_2$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$\begin{pmatrix}-i&0\\0&i\end{pmatrix}=-i\sigma_3$</td>
+<td>$-\mathrm I_2$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$i\vec e_x$</td>
+<td>$\sigma_1$</td>
+<td>$\mathrm I_2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$i\vec e_y$</td>
+<td>$\sigma_2$</td>
+<td>$\mathrm I_2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$i\vec e_z$</td>
+<td>$\sigma_3$</td>
+<td>$\mathrm I_2$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the whole correspondence. The algebra's own basis goes to $-i$ times the Pauli matrices; the Hermitian basis, which is the basis multiplied by $i$, goes to the Pauli matrices themselves. There is no third case: the factor $i$ is the only difference between the two rows.</p>
+<h3 id="the-general-element">The General Element</h3>
+<p>$$
+\boxed{\;\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)=
+\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}\;}.
+$$</p>
+<p>The scalar part multiplies the identity and the vector part multiplies the three Pauli matrices with the factor $-i$. In the Hermitian sector, where $Q_t$ is real and $Q_k=iq'_k$ with $q'_k$ real, the same formula reads</p>
+<p>$$
+\mathsf M_2(\tilde Q)=q_t\mathrm I_2+q'_x\sigma_1+q'_y\sigma_2+q'_z\sigma_3 ,
+$$</p>
+<p>with no factor and no sign. The four real numbers of a Hermitian element are the coefficients of the identity and the three Pauli matrices.</p>
+<h3 id="the-hermitian-units">The Hermitian Units</h3>
+<p>The three elements $i\vec e_k$ are Hermitian, and so are their images $\sigma_k$. The three elements $\vec e_k$ are anti-Hermitian, and so are their images $-i\sigma_k$. Hermitian conjugation on the algebra becomes the conjugate transpose on the matrices,</p>
+<p>$$
+\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger},
+$$</p>
+<p>so the fixed space of ${}^{*}$ is carried onto the fixed space of the dagger. That identity is the algebraic fact behind the word <strong>observable</strong>, and it is the subject of the first interpretation below.</p>
+<h2 id="the-factor-math61-is-the-complex-structure">The Factor $i$ Is the Complex Structure</h2>
+<p><strong>The factor is forced.</strong> A $2\times2$ matrix with real entries and square $-\mathrm I_2$ defines a complex structure on $\mathbb R^2$; three of them, anticommuting, define the quaternionic structure. The algebra in which $\vec e_k^2=-e_t$ holds is the complexified one, and the coefficient field supplies the $i$ that turns $\sigma_k$ into $-i\sigma_k$. With the assignment $\vec e_k\mapsto\sigma_k$ the square would be $+\mathrm I_2$, which is the split-quaternion sign, not the quaternion one.</p>
+<p><strong>The sign is then forced.</strong> The alternative assignment $\vec e_k\mapsto-\mathsf M_2(\vec e_k)$ preserves the squares and fails the products: $\vec e_x\vec e_y=\vec e_z$ becomes $(-\mathsf M_2(\vec e_x))(-\mathsf M_2(\vec e_y))=\mathsf M_2(\vec e_z)$, which is minus the image of $\vec e_z$ under that assignment. The check is two lines of matrix multiplication, and it fixes the sign.</p>
+<p><strong>The interpretation.</strong> The factor $i$ is not a bookkeeping convention of physicists. It is the statement that the three directions of the algebra are generators of rotations and not observables: $\vec e_k$ is anti-Hermitian and generates, $i\vec e_k$ is Hermitian and is measured. The two roles differ by the factor that the complexification supplies.</p>
+<p><strong>The boundary.</strong> This explains why the factor is present in the model. It does not say that nature is complex, and it does not derive the complex numbers from anything physical. The complex field is the coefficient field of the algebra, fixed before any interpretation begins.</p>
+<h2 id="physical-interpretations">Physical Interpretations</h2>
+<h3 id="the-hermitian-elements-are-the-observables">The Hermitian Elements Are the Observables</h3>
+<p>An element $\tilde H\in\mathbb M_+$ has a Hermitian matrix, and a Hermitian matrix has real eigenvalues and an orthogonal eigenbasis. The spectral theorem for the matrix is therefore the spectral statement for the element, and the eigenvalues are the possible outcomes of a measurement of $\tilde H$.</p>
+<p>The identification is exact: $\mathbb M_+$ is carried onto the Hermitian matrices, and the expectation is the trace of the product,</p>
+<p>$$
+\operatorname{Tr}\bigl(\mathsf M_2(\tilde{Ϛ})\mathsf M_2(\tilde H)\bigr)=2\langle\tilde{Ϛ},\tilde H\rangle_{*}=h_t+\vec r\cdot\vec h ,
+$$</p>
+<p>for the state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ of trace one.</p>
+<p><strong>Boundary.</strong> The word <em>observable</em> uses the involution ${}^{*}$, which belongs to the real structure of $\mathbb B$. The complex isomorphism $\mathbb B\cong M_2(\mathbb{C})$ alone does not single out $\mathbb M_+$: it carries $\mathbb M_+$ and $\mathbb M_-$ to two complementary subspaces of the same complex algebra, and the choice between them is physical. A reader who knows only the complex algebra cannot tell which half is measured.</p>
+<h3 id="the-three-directions-are-the-three-spin-axes">The Three Directions Are the Three Spin Axes</h3>
+<p>A traceless Hermitian element is $\tilde H=i\vec h$ with $\vec h\in\mathbb R^3$, and its matrix is $\vec h\cdot\vec\sigma$. The three coefficients are the components of a spatial vector, and the three Pauli matrices are the three components of the measurement. For the spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ the matrix is $\tfrac{\hbar}{2}\sigma_k$, and the commutator</p>
+<p>$$
+[\tilde S_i,\tilde S_j]=i\hbar\,\epsilon_{ijk}\tilde S_k
+$$</p>
+<p>is the angular-momentum algebra. The three directions close under the commutator into $\mathfrak{su}(2)$, and the exponentials are the rotations of the state space.</p>
+<p><strong>Boundary.</strong> The naming of the three directions $x,y,z$ is a choice of basis, and the algebra has no preferred axis. A rotation of $\mathbb R^3$ permutes the three operators and conjugates the matrices; the physics is invariant, the labels are not.</p>
+<h3 id="the-trace-is-the-weight">The Trace Is the Weight</h3>
+<p>The trace of the matrix is twice the scalar part, $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$. On a state the trace is normalised to one, and the scalar part is then $\tfrac12$. The factor two is the dimension of the spinor module, not a physical factor: it appears because the identity is a $2\times2$ matrix.</p>
+<p><strong>Boundary.</strong> The trace is additive and blind to the vector part. It cannot distinguish two states with the same scalar part, and it is not the norm. The invariant that sees the whole element is the determinant.</p>
+<h3 id="the-determinant-is-the-invariant">The Determinant Is the Invariant</h3>
+<p>The determinant of the matrix is the quaternionic norm, $\det\mathsf M_2(\tilde Q)=N(\tilde Q)$, and it reads differently on the two sectors:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>element</th>
+<th>determinant</th>
+<th>signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>material</td>
+<td>$iq'_te_t+q_k\vec e_k$</td>
+<td>$-(q'_t)^2+q_x^2+q_y^2+q_z^2$</td>
+<td>$(3,1)$</td>
+</tr>
+<tr>
+<td>informational</td>
+<td>$q_te_t+iq'_k\vec e_k$</td>
+<td>$q_t^2-(q'_x)^2-(q'_y)^2-(q'_z)^2$</td>
+<td>$(1,3)$</td>
+</tr>
+<tr>
+<td>state slice</td>
+<td>$\tfrac12(e_t+i\vec r)$</td>
+<td>$\tfrac14(1-\lvert\vec r\rvert^2)$</td>
+<td>positivity</td>
+</tr>
+</tbody>
+</table></div>
+<p>The same algebraic function is the interval on the material sector, the causal type and the positivity test on the informational sector, and the mixedness on the trace-one slice. The zero set is one object in the three readings: the light cone, the boundary of the state space, and the set of pure states.</p>
+<p><strong>Boundary.</strong> These are three restrictions of one function to three different real slices, not three different quantities. A statement about the determinant must say which slice it is on, because the sign, the signature and the physical meaning all change with the slice and the zero set does not.</p>
+<h3 id="the-determinant-is-a-volume">The Determinant Is a Volume</h3>
+<p>Multiplication by $M$ is a real linear map of $\mathbb C^2\cong\mathbb R^4$, and its real determinant is $\lvert\det M\rvert^2$. The complex determinant is the complex area scale of the parallelogram spanned by the two columns, and the real volume scale is its squared modulus. On the unit-norm slice $N=1$, that is $\det M=1$, the real determinant is $1$: the group is $SL_2(\mathbb C)$, and its action preserves the real volume. The larger slice $\lvert\det M\rvert=1$ also preserves it.</p>
+<p><strong>Boundary.</strong> The volume is the volume of the realification of the module, not a spacetime volume. On the material sector the same determinant is the interval, and an interval is not a volume. The two readings coincide in the zero set and nowhere else.</p>
+<h3 id="the-state-is-the-positive-trace-one-matrix">The State Is the Positive Trace-One Matrix</h3>
+<p>A state is a Hermitian element of trace one whose matrix is positive semidefinite. In the model it is</p>
+<p>$$
+\tilde{Ϛ}=\tfrac12(e_t+i\vec r),
+\qquad
+\rho=\mathsf M_2(\tilde{Ϛ})=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr),
+\qquad \lvert\vec r\rvert\le1 .
+$$</p>
+<p>The trace-one condition is the normalisation, the positivity is the condition $\lvert\vec r\rvert\le1$, and the purity is the boundary $\lvert\vec r\rvert=1$. The state space is the Bloch ball, the pure states are its boundary and the maximally mixed state is its centre.</p>
+<p><strong>Boundary.</strong> Positivity is not a property of the complex algebra. It uses the involution ${}^{*}$ and the orientation of $\mathbb M_+$, and it is the matrix form of the statement that the state space is the positive cone of the informational sector, intersected with the trace-one slice.</p>
+<h3 id="the-central-phase-is-the-fibre">The Central Phase Is the Fibre</h3>
+<p>The central element $e^{i\alpha}e_t$ maps to the scalar matrix $e^{i\alpha}\mathrm I_2$. It multiplies the element matrix by a phase, multiplies the determinant by $e^{2i\alpha}$, multiplies a state by $e^{i\alpha}$ and therefore does not preserve the trace-one slice, and it acts trivially in the sandwich. A pure state is a ray, not a vector: the spinor $\xi$ and $e^{i\alpha}\xi$ give the same $\rho$, and the circle of phases over each pure state is the fibre of the Hopf bundle.</p>
+<p><strong>Boundary.</strong> The bundle, its connection, its curvature and its holonomy are owned by <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em> and by <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em>. This article records the matrix identity — the phase is a scalar matrix and disappears from the congruence — and adds no topology.</p>
+<h3 id="the-double-cover-is-the-spin">The Double Cover Is the Spin</h3>
+<p>The unit-norm elements are $SL_2(\mathbb{C})$, and it covers the proper orthochronous Lorentz group two-to-one with kernel $\{\pm\mathrm I_2\}$. A rotation through $2\pi$ gives $-\mathrm I_2$ and a rotation through $4\pi$ gives $\mathrm I_2$. The sign is the sign of the spinor, and it is the discrete difference between the spinor picture and the four-vector picture.</p>
+<p><strong>Boundary.</strong> The double cover is a statement about the group, not about a particular state. It says that the two matrices $\pm M$ define the same transformation of the material sector; it does not say that the two signs are physically distinguishable for every state.</p>
+<h2 id="the-sign-and-the-conventions">The Sign and the Conventions</h2>
+<p><strong>The alternative assignment fails.</strong> If the three vector units were sent to $+\sigma_k$ instead of $-i\sigma_k$, the squares would be $+\mathrm I_2$ and the product $\vec e_x\vec e_y$ would be $\sigma_x\sigma_y=i\sigma_z$, while the image of $\vec e_z$ would be $\sigma_z$. The assignment is therefore fixed by the multiplication table, not chosen.</p>
+<p><strong>What a convention can change.</strong> Two conventions are common in the literature. The first drops the factor $i$ and writes the generators as $\sigma_k$, which is the same algebra written with anti-Hermitian generators renamed; the second chooses $\sigma_2$ with the opposite sign, which is conjugation by a diagonal phase. Both change the entries and the signs of the commutators, and neither changes the algebra or the physics.</p>
+<p><strong>Boundary.</strong> A convention is not a symmetry. Once a convention is chosen, every formula must be read in it, and the factor $i$ between $\vec e_k$ and $i\vec e_k$ is the place where the errors concentrate.</p>
+<h2 id="limits">Limits</h2>
+<p><strong>The correspondence does not derive quantum mechanics.</strong> It identifies which matrices carry the observables and the states. It does not produce a Hilbert space of states of a field, a Hamiltonian, a dynamics or a probability rule beyond the finite-dimensional Born pairing.</p>
+<p><strong>The real form is extra data.</strong> The identification $\mathbb B\cong M_2(\mathbb{C})$ is an isomorphism of complex algebras. The Hermitian sector, the positivity and the word <em>observable</em> use ${}^{*}$ and the choice of $\mathbb M_+$, which are not visible in the complex algebra alone.</p>
+<p><strong>The Pauli matrices are not elements of the algebra.</strong> They are the images of $i\vec e_k$. The real span of $\{\mathrm I_2,\sigma_1,\sigma_2,\sigma_3\}$ is the Hermitian subspace, which is not closed under multiplication; the complex span is the whole matrix algebra. A statement that identifies the algebra with the Pauli algebra is true only over $\mathbb C$ and only after the factor $i$ has been accounted for.</p>
+<p><strong>One chirality.</strong> The $2\times2$ image carries one copy of the spinor module. The second chirality is the conjugate module, and the mass coupling between the two is a right multiplication, which the $2\times2$ element picture alone does not show. The regular $4\times4$ image is the one that displays both copies.</p>
+<p><strong>No dynamics, no position, no field.</strong> The spin operators generate rotations of the state space, and the Hamiltonian that would generate a motion in time is a choice of observable, not a consequence of the model.</p>
+<h2 id="summary">Summary</h2>
+<p>The correspondence is $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\mathsf M_2(i\vec e_k)=\sigma_k$, so the general element is $Q_t\mathrm I_2-iQ_k\sigma_k$ and the Hermitian element is $q_t\mathrm I_2+q'_k\sigma_k$. Hermitian conjugation becomes the conjugate transpose, so the fixed space of ${}^{*}$ is the Hermitian matrices and the Hermitian elements are the observables. The three Hermitian units are the three spin directions, with $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$. The trace is twice the scalar part, the determinant is the norm, and the norm is the interval on the material sector, the causal type on the informational sector and the mixedness on the trace-one slice. The state is the positive trace-one matrix $\tfrac12(\mathrm I_2+\vec r\cdot\vec\sigma)$ with $\lvert\vec r\rvert\le1$, the pure states are the boundary $\lvert\vec r\rvert=1$, and the central phase is the scalar matrix that acts trivially in the sandwich. The factor $i$, the sign and the reality of the observables are forced by the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf M_2$</td>
+<td>the fixed $2\times2$ matrix model</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the Pauli matrices, $\sigma_k=\mathsf M_2(i\vec e_k)$</td>
+</tr>
+<tr>
+<td>$\mathbb M_+,\mathbb M_-$</td>
+<td>the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+<tr>
+<td>$\tilde H$</td>
+<td>a Hermitian observable</td>
+</tr>
+<tr>
+<td>$\tilde{Ϛ}$</td>
+<td>a state, $\tfrac12(e_t+i\vec r)$</td>
+</tr>
+<tr>
+<td>$\rho=\mathsf M_2(\tilde{Ϛ})$</td>
+<td>the density matrix</td>
+</tr>
+<tr>
+<td>$N=\det\mathsf M_2$</td>
+<td>the quaternionic norm</td>
+</tr>
+<tr>
+<td>$\vec r$</td>
+<td>the Bloch vector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-element-and-operator-representations.html">The Element and Operator Representations</a>, for the correspondence table of the four matrix pictures</li>
+<li><a href="the-matrix-images-mixedness-rapidity-and-the-phase-fibre.html">The Matrix Images: Mixedness, Rapidity and the Phase Fibre</a>, for the phase fibre and the mixedness interpretation</li>
+<li><a href="the-spinor-module-and-its-two-structures.html">The Spinor Module and Its Two Structures</a>, for the Born pairing and the Hilbert structure</li>
+<li><a href="the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a>, for the state geometry</li>
+<li><a href="angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a>, for the spin operators in the algebra</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the four forms read physically</li>
+<li><a href="the-hopf-fibration-and-the-biquaternion-gauge-bundle.html">The Hopf Fibration and the Biquaternion Gauge Bundle</a>, for the bundle over the state space</li>
+<li><a href="pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html">Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</a>, for the phase rule</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

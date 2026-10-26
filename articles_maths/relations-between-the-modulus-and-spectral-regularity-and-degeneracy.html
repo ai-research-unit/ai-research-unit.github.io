@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations between the Modulus and Spectral Regularity and Degeneracy — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relations-between-the-modulus-and-spectral-regularity-and-degeneracy"><strong>Relations between the Modulus and Spectral Regularity and Degeneracy</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex algebra $\mathbb{C}=\mathbb{R}[i]/(i^2+1)$ carries two quadratic conditions on one element. The <strong>modulus squared</strong> is</p>
+<p>$$
+M(z)=|z|^2=z\bar z=t^2+b^2,
+$$</p>
+<p>it is multiplicative, and it vanishes only at the origin. The <strong>square of the imaginary part</strong> is $B(z)=b^2$; it is not multiplicative, and it vanishes on the real axis. The first condition decides invertibility: $z$ is <strong>modulus-regular</strong> when $M\neq0$ and <strong>modulus-degenerate</strong> when $M=0$. The second decides whether the two eigenvalues are distinct: $z$ is <strong>spectrally regular</strong> when $B\neq0$ and <strong>spectrally degenerate</strong> when $B=0$. The two conditions are studied one at a time in <em>Complex Norm and Invertibility</em> and <em>Spectral Regularity and Degeneracy in the Complex Algebra</em>; this article compares them.</p>
+<p>The comparison has a definite shape. As functions, $M$ and $B$ are independent: neither determines the other. As vanishing conditions they are nested: $B\neq0$ implies $M\neq0$, because $M=B+t^2$. The nesting is strict, its strictness is the punctured real axis, and it is the content of the relation.</p>
+<p><strong>Conventions.</strong> The element is $z=t+bi$ with $t,b\in\mathbb{R}$, the conjugation is $\bar z=t-bi$, the modulus squared is $|z|^2=z\bar z=t^2+b^2$, and the modulus is $|z|=\sqrt{t^2+b^2}$. The companion articles write $Q=q+iq'$ and $\langle Q\rangle_*=Q\bar Q$; the translation is $t=q$, $b=q'$, $|z|^2=\langle Q\rangle_*$. The spectral criterion and the cells are those of <em>Spectral Regularity and Degeneracy in the Complex Algebra</em> and <em>The Three Sectors of the Complex Algebra</em>.</p>
+<h2 id="the-two-invariants">The Two Invariants</h2>
+<p><strong>Definition.</strong> The <strong>modulus squared</strong> is $M(z)=z\bar z=t^2+b^2$; the <strong>modulus</strong> is $|z|=\sqrt{M(z)}$. The <strong>square of the imaginary part</strong> is $B(z)=b^2$.</p>
+<p><strong>Proposition (the modulus).</strong> $M$ is real and non-negative, $M(z)=0$ exactly when $z=0$, it is multiplicative, $M(zw)=M(z)M(w)$, and it is invariant under conjugation.</p>
+<p><em>Proof.</em> $M=t^2+b^2$ is a sum of two squares. Multiplicativity is $(zw)\overline{(zw)}=z\bar z\,w\bar w$, and conjugation fixes $t^2+b^2$.</p>
+<p><strong>Proposition (the imaginary square).</strong> $B$ is real and non-negative, $B(z)=0$ exactly when $z$ is real, and $B$ is not multiplicative.</p>
+<p><em>Proof.</em> $B=b^2$ vanishes exactly when $b=0$. For non-multiplicativity, $B(i)=1$ and $B(i\cdot i)=B(-1)=0$, while $B(i)B(i)=1$.</p>
+<p><strong>Proposition (the comparison).</strong> For every $z$,</p>
+<p>$$
+0\leq B(z)\leq M(z),
+$$</p>
+<p>with $B=M$ exactly on the imaginary axis and $B=0$ exactly on the real axis.</p>
+<p><em>Proof.</em> $M-B=t^2\geq0$, and $t^2=0$ exactly when $t=0$.</p>
+<p><strong>Remark (the level sets).</strong> The set $M=r^2$ is the circle of radius $r$, and the set $B=c$ is the pair of horizontal lines $b=\pm\sqrt c$, coincident at $c=0$. The map $(t,b)\mapsto(M,B)$ has Jacobian determinant $4tb$, which vanishes on both axes: the invariants are not a coordinate system, and their level curves are tangent on the imaginary axis.</p>
+<h2 id="independence-and-nesting">Independence and Nesting</h2>
+<p><strong>Theorem (the functions are independent).</strong> Neither invariant is a function of the other.</p>
+<p><em>Proof.</em> The elements $1+i$ and $2+i$ have the same $B=1$ and different $M=2$ and $5$. The elements $1$ and $i$ have the same $M=1$ and different $B=0$ and $1$.</p>
+<p><strong>Theorem (the predicates are nested).</strong> The conditions satisfy</p>
+<p>$$
+B(z)\neq0\ \Longrightarrow\ M(z)\neq0,\qquad M(z)\neq0\ \not\Longrightarrow\ B(z)\neq0 .
+$$</p>
+<p><em>Proof.</em> If $B\neq0$ then $M=B+t^2\geq B>0$. The converse fails at $z=1$, where $M=1$ and $B=0$.</p>
+<p><strong>Corollary (the logical table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$M\neq0$</th>
+<th>$B\neq0$</th>
+<th>example</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>yes</td>
+<td>yes</td>
+<td>$i$</td>
+<td>non-empty</td>
+</tr>
+<tr>
+<td>yes</td>
+<td>no</td>
+<td>$1$</td>
+<td>non-empty</td>
+</tr>
+<tr>
+<td>no</td>
+<td>no</td>
+<td>$0$</td>
+<td>non-empty</td>
+</tr>
+<tr>
+<td>no</td>
+<td>yes</td>
+<td>none</td>
+<td>empty</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The first three rows are the examples. The fourth is impossible by the implication.</p>
+<p><strong>Remark (what independence means).</strong> The invariants are independent as functions and nested as vanishing predicates. The phrase <em>the two conditions are independent</em> is therefore true of $M$ and $B$ as functions on the plane, and false of the sets $\{M\neq0\}$ and $\{B\neq0\}$, which are ordered by inclusion. This distinction is the content of the comparison.</p>
+<h2 id="the-unit-circle">The Unit Circle</h2>
+<p><strong>Definition.</strong> The <strong>unit circle</strong> is $\mathrm{U}(1)=\{z:M(z)=1\}=\{t+bi:t^2+b^2=1\}$. Every point of it is modulus-regular and a unit, with inverse $\bar z$.</p>
+<p><strong>Theorem (the intersection with the real axis).</strong> The unit circle meets the real axis exactly at $z=1$ and $z=-1$. There $M=1$ and $B=0$: the two points are modulus-regular and spectrally degenerate, not doubly regular. The doubly regular points of the circle are the complement $\mathrm{U}(1)\setminus\{1,-1\}$, the two open arcs $b>0$ and $b<0$.</p>
+<p><em>Proof.</em> On the real axis $M=t^2$; $M=1$ gives $t=\pm1$, and $B=0$ there. Off the axis $b\neq0$, so $B>0$ and $M=1$; both conditions hold.</p>
+<p><strong>Remark (the arcs).</strong> The two open arcs are the connected components of the doubly regular part of the circle, and the spectral condition is constant on each. Degeneration is concentrated at the two real points.</p>
+<p>The phrase <em>the unit circle meets the real axis at $\pm1$</em> might suggest that the intersection points are doubly regular. They are the opposite: they are the spectrally degenerate points of the circle.</p>
+<h2 id="the-origin-and-the-empty-cell">The Origin and the Empty Cell</h2>
+<p><strong>Theorem (the vanishing locus of the modulus).</strong> For $z\in\mathbb{C}$, $M(z)=0$ exactly when $z=0$. There is no non-zero modulus-degenerate element, every non-zero complex number is a unit, and the zero-divisor class is empty.</p>
+<p><em>Proof.</em> $t^2+b^2=0$ forces $t=b=0$. The inverse of $z\neq0$ is $\bar z/M(z)$. If $ab=0$ with $a,b\neq0$, multiplicativity gives $M(a)M(b)=0$, hence $M(a)=0$ or $M(b)=0$, hence $a=0$ or $b=0$, a contradiction.</p>
+<p><strong>Corollary (the only doubly degenerate point).</strong> The origin is the only element that is both modulus-degenerate and spectrally degenerate.</p>
+<p><em>Proof.</em> $M(z)=0$ forces $z=0$, and $B(0)=0$. Conversely $B=0$ alone does not force $M=0$: every other real number is a counterexample.</p>
+<p><strong>Corollary (the empty cell).</strong> No element has $M=0$ and $B\neq0$.</p>
+<p><em>Proof.</em> $M=0$ forces $z=0$, and $B(0)=0$.</p>
+<p><strong>Remark (three-way classification).</strong> An element is a unit, a zero divisor, or zero. The zero-divisor class is empty, so the classification has two non-empty classes, the units and the origin. The modulus makes the classification; the spectral invariant plays no part in it. The detail is <em>Complex Norm and Invertibility</em>, §<em>The Three-Way Classification</em>.</p>
+<h2 id="the-chain-of-invariants">The Chain of Invariants</h2>
+<p><strong>Theorem (what each invariant separates).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>data</th>
+<th>patterns</th>
+<th>what it separates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>modulus squared</td>
+<td>$M=t^2+b^2$</td>
+<td>2</td>
+<td>the origin from the rest</td>
+</tr>
+<tr>
+<td>imaginary square</td>
+<td>$B=b^2$</td>
+<td>2</td>
+<td>the real axis from the rest</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>$(2t,M)$</td>
+<td>3</td>
+<td>the three cells</td>
+</tr>
+<tr>
+<td>minimal polynomial</td>
+<td>$X-t$ or $(X-t)^2+b^2$</td>
+<td>2</td>
+<td>the real axis from its complement</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The modulus vanishes only at the origin and $B$ only on the real axis. The characteristic polynomial is $X^2-2tX+M$: two distinct roots with non-zero product on $\Sigma_{11}$, a double non-zero root on $\Sigma_{10}$, and a double root at zero on $\Sigma_{00}$. The minimal polynomial is $X-t$ on the real axis and the characteristic polynomial off it.</p>
+<p><strong>Corollary (the spectral data do not see the conjugation).</strong> The elements $z$ and $\bar z$ have the same $M$, the same $B$, the same characteristic polynomial, the same spectrum and the same minimal polynomial. The invariants determine $z$ only up to the sign of $b$.</p>
+<p><em>Proof.</em> All the listed quantities depend on $t$ and $b^2$ only, and $z$ and $\bar z$ share both.</p>
+<p><strong>Remark (the chain stops).</strong> The modulus separates the origin from the rest, the imaginary square separates the real axis from the rest, and the characteristic polynomial separates the three cells. The minimal polynomial refines nothing: off the real axis it is the characteristic polynomial, and on it, it is the degree-one reduction. The chain has three cell-separating invariants and no fourth; the spectral invariant $B$ is the discriminant of the characteristic polynomial. In the biquaternion algebra the chain continues, because the minimal polynomial separates the nilpotent and unipotent strata of the degenerate cone; here there are no such strata.</p>
+<h2 id="the-place-among-the-algebras">The Place among the Algebras</h2>
+<p><strong>The complex case is the smallest definite algebra in which the spectral condition is not automatic.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>modulus or norm</th>
+<th>spectral condition</th>
+<th>$\Sigma_{01}$</th>
+<th>cells</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$t^2$, definite</td>
+<td>never holds (always degenerate)</td>
+<td>empty</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$t^2+b^2$, definite</td>
+<td>$b^2$</td>
+<td>empty</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$t^2+\lvert\vec v\rvert^2$, definite</td>
+<td>$\lvert\vec v\rvert^2$</td>
+<td>empty</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$t^2-b^2$, indefinite</td>
+<td>$b^2$</td>
+<td>non-empty</td>
+<td>4</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$Q_t^2+B^2$, complex</td>
+<td>$B^2$</td>
+<td>non-empty</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> In $\mathbb{R}$ the regular matrix is $(t)$, so the spectrum is $\{t\}$ and the spectral condition never holds. In $\mathbb{C}$ the criterion is this article. In $\mathbb{H}$ the eigenvalues of the regular representation are $t\pm i\lvert\vec v\rvert$, each twice, so the condition is $\vec v\neq0$ and the norm is definite. In $\mathbb{D}$ the norm is $t^2-b^2$, zero on the lines $t=\pm b$, and the spectral condition is $b\neq0$; the point $1+j$ has norm $0$ and $b=1$. In $\mathbb{B}$ the norm is $Q_t^2+B^2$, zero on non-zero elements, and the spectral condition is $B^2\neq0$; the details are <em>Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</em>.</p>
+<p><strong>Corollary (the meaning of the empty cell).</strong> A definite modulus forces $\Sigma_{01}$ to be empty; an indefinite or complex-valued modulus allows it to be non-empty. The complex algebra is definite, so it has three cells, and it is the first definite algebra in which the spectral condition is not automatic.</p>
+<p><em>Proof.</em> Definiteness says $M=0$ only at the origin, which is spectrally degenerate; hence no point has $M=0$ and $B\neq0$. The second sentence is the table.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex algebra carries the modulus squared $M=t^2+b^2$ and the square of the imaginary part $B=b^2$. The modulus is multiplicative and vanishes only at the origin; $B$ is not multiplicative and vanishes on the real axis. They satisfy $0\leq B\leq M$, with $M-B=t^2$.</p>
+<p>As functions, $M$ and $B$ are independent: $1+i$ and $2+i$ have the same $B$ and different $M$, while $1$ and $i$ have the same $M$ and different $B$. As vanishing conditions they are nested: $B\neq0$ implies $M\neq0$, and the implication is strict at every non-zero real number. The four logical combinations are three non-empty cases and the empty case $M=0$, $B\neq0$.</p>
+<p>The unit circle meets the real axis at $\pm1$. These points are modulus-regular and spectrally degenerate, not doubly regular; the doubly regular points of the circle are the two open arcs between them. The origin is the only doubly degenerate point, and there is no non-zero modulus-degenerate element, so every non-zero complex number is a unit and the zero-divisor class is empty.</p>
+<p>The characteristic polynomial $X^2-2tX+M$ separates the three cells; the minimal polynomial adds no cell. The spectral data determine $z$ only up to the sign of $b$, so $z$ and $\bar z$ are spectrally indistinguishable. Among the algebras of the corpus the complex case is the smallest definite case with three cells: $\mathbb{R}$ has two, $\mathbb{H}$ has three, and the split and biquaternion algebras have four because their norms are indefinite or complex.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}=\mathbb{R}[i]/(i^2+1)$</td>
+<td>the complex algebra</td>
+</tr>
+<tr>
+<td>$z=t+bi$</td>
+<td>a complex number</td>
+</tr>
+<tr>
+<td>$\bar z=t-bi$</td>
+<td>complex conjugation</td>
+</tr>
+<tr>
+<td>$M(z)=\lvert z\rvert^2=z\bar z=t^2+b^2$</td>
+<td>the modulus squared, the natural norm</td>
+</tr>
+<tr>
+<td>$B(z)=b^2$</td>
+<td>the square of the imaginary part</td>
+</tr>
+<tr>
+<td>modulus-regular / degenerate</td>
+<td>$M\neq0$ / $M=0$</td>
+</tr>
+<tr>
+<td>spectrally regular / degenerate</td>
+<td>$B\neq0$ / $B=0$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)=\{M=1\}$</td>
+<td>the unit circle</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the cell with $M\neq0$ iff $i=1$ and $B\neq0$ iff $j=1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>the empty cell</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="spectral-regularity-and-degeneracy-in-the-complex-algebra.html">Spectral Regularity and Degeneracy in the Complex Algebra</a>, for the characteristic polynomial, the discriminant and the spectral criterion.</li>
+<li><a href="eigenvalue-decomposition-and-eigenbasis-of-a-complex-number.html">Eigenvalue Decomposition and Eigenbasis of a Complex Number</a>, for the eigenbasis, the spectral idempotents and the polar reading.</li>
+<li><a href="the-three-sectors-of-the-complex-algebra.html">The Three Sectors of the Complex Algebra</a>, for the partition into cells, their closure and their dimension.</li>
+<li><a href="complex-norm-and-invertibility.html">Complex Norm and Invertibility</a>, for the modulus, multiplicativity, the inverse and the three-way classification.</li>
+<li><a href="complex-algebra.html">Complex Algebra</a>, for the algebra and its real and imaginary subspaces.</li>
+<li><a href="modulus-unit-polar-decomposition-of-complex-numbers.html">Modulus–Unit Polar Decomposition of Complex Numbers</a>, for the unit circle and the polar form.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four-sector case in the biquaternion algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

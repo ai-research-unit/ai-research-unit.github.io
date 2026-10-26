@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectral Regularity and Degeneracy in the Dual-Number Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spectral-regularity-and-degeneracy-in-the-dual-number-algebra"><strong>Spectral Regularity and Degeneracy in the Dual-Number Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The dual-number algebra $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$ is the simplest algebra over a field in which the characteristic polynomial of every element is a square. For $Q=a+b\varepsilon$, left multiplication has characteristic polynomial $(X-a)^2$, so the spectrum is the singleton $\{a\}$: the two eigenvalues of a quadratic have coalesced before any condition is imposed. This article defines the eigenvalue problem, proves the coalescence, and separates two notions that the coalescence puts at risk of being confused. <strong>Spectral degeneracy</strong> is the repetition of the eigenvalue; it holds for every element. <strong>Defect</strong> is the absence of an eigenbasis; it holds exactly when $b\neq0$. The first is universal, the second is a proper subset of the algebra, and the whole of the spectral theory of $\mathbb{D}'_R$ is the distance between them.</p>
+<p><strong>Notation and conventions.</strong> Throughout, $R$ is a real closed field, with the geometric case $R=\mathbb{R}$; the algebra is $\mathbb{D}'_R$, and a general element is</p>
+<p>$$
+Q = a + b\varepsilon, \qquad a, b \in R,
+$$</p>
+<p>with $a = \operatorname{Re}Q$ and $b = \operatorname{Inf}Q$. In the prime notation of <em>Dual-Numbers Algebra</em> the same element is $Q = q + \varepsilon q'$, with $a = q$ and $b = q'$. The <strong>norm</strong> (the <strong>dual norm</strong>) is</p>
+<p>$$
+\langle Q\rangle = Q\bar Q = (a + b\varepsilon)(a - b\varepsilon) = a^2,
+$$</p>
+<p>where $\bar Q = a - b\varepsilon$ is dual conjugation. The norm is a degenerate quadratic form of rank one, multiplicative, with radical the maximal ideal $\mathrm{M} = (\varepsilon) = \{a = 0\}$; it vanishes exactly on $\mathrm{M}$ and is non-zero exactly on the units. These facts are those of <em>Dual-Numbers Norm and Invertibility</em>. The <strong>characteristic polynomial</strong> of $Q$ is the characteristic polynomial of $L_Q$; it is computed below. The matrix-element representation $\mathsf{M}_2$ of <em>Dual-Numbers Matrix Element Representation</em> is used only to compare conventions, and the eigenvalue decomposition of a general element is <em>The Eigenvalue Decomposition of an Element</em>. The companion articles <em>The Defective Sector of the Dual-Number Algebra</em> and <em>Relations between the Dual Norm and Spectral Degeneracy</em> take up the defect and the comparison with the norm.</p>
+<h2 id="the-eigenvalue-problem">The Eigenvalue Problem</h2>
+<p><strong>An eigenvalue is a scalar for which the translate $Q-\lambda$ has a non-zero kernel, and the criterion is the invertibility criterion of the algebra.</strong></p>
+<p><strong>Definition (eigenvalue).</strong> A scalar $\lambda\in R$ is an <strong>eigenvalue</strong> of $Q$ if there is a non-zero $v\in\mathbb{D}'_R$ with</p>
+<p>$$
+Qv = \lambda v.
+$$</p>
+<p><strong>Definition (eigenvector, eigenspace, spectrum).</strong> A non-zero $v$ satisfying $Qv = \lambda v$ is an <strong>eigenvector</strong> of $Q$ for $\lambda$. The <strong>eigenspace</strong> of $\lambda$ is</p>
+<p>$$
+E_\lambda(Q) = \ker L_{Q-\lambda} = \{v : (Q-\lambda)v = 0\},
+$$</p>
+<p>where $L_A(v) = Av$ is left multiplication. The <strong>spectrum</strong> $\sigma(Q)$ is the set of eigenvalues.</p>
+<p><strong>Proposition (the eigenvalue criterion).</strong> A scalar $\lambda$ is an eigenvalue of $Q$ if and only if $Q-\lambda$ is not a unit of $\mathbb{D}'_R$.</p>
+<p><em>Proof.</em> If $Q-\lambda$ is a unit and $(Q-\lambda)v = 0$, then $v = (Q-\lambda)^{-1}(Q-\lambda)v = 0$, so no non-zero eigenvector exists. Conversely, if $Q-\lambda$ is not a unit, then its real part $a-\lambda$ vanishes, because the units of $\mathbb{D}'_R$ are exactly the elements with non-zero real part. Hence $Q-\lambda = b\varepsilon$, and</p>
+<p>$$
+(Q-\lambda)\varepsilon = b\varepsilon^2 = 0
+$$</p>
+<p>with $\varepsilon\neq0$, so $\varepsilon$ is an eigenvector and $\lambda$ is an eigenvalue. If $b=0$ as well, then $Q-\lambda=0$ and the kernel is the whole algebra.</p>
+<p><strong>Theorem (the spectrum is a singleton).</strong> For every $Q = a + b\varepsilon$,</p>
+<p>$$
+\sigma(Q) = \{a\}.
+$$</p>
+<p><em>Proof.</em> By the criterion, $\lambda$ is an eigenvalue exactly when $a-\lambda=0$, that is exactly when $\lambda=a$. The eigenvector equation at $\lambda=a$ is $b\varepsilon v = 0$, which has non-zero solutions for every $b$, as the proposition shows.</p>
+<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
+<p><strong>The operator is a scalar plus a nilpotent, and the nilpotent contributes nothing to the determinant.</strong></p>
+<p><strong>Proposition (the operator form).</strong> The operator $L_\varepsilon$ satisfies $L_\varepsilon^2 = 0$ and</p>
+<p>$$
+L_Q = a\,\mathrm{id} + bL_\varepsilon.
+$$</p>
+<p><em>Proof.</em> For $v = x + y\varepsilon$,</p>
+<p>$$
+L_Q(v) = (a + b\varepsilon)(x + y\varepsilon) = ax + (ay + bx)\varepsilon,
+$$</p>
+<p>while $a v + bL_\varepsilon(v) = a(x + y\varepsilon) + b x\varepsilon = ax + (ay + bx)\varepsilon$. For the square, $L_\varepsilon^2(v) = \varepsilon(\varepsilon v) = \varepsilon^2 v = 0$.</p>
+<p><strong>Theorem (the characteristic polynomial).</strong> In the basis $(1,\varepsilon)$ and with column vectors, the matrix of $L_Q$ is</p>
+<p>$$
+[L_Q]_{(1,\varepsilon)} = \begin{pmatrix} a & 0 \\ b & a \end{pmatrix},
+$$</p>
+<p>and</p>
+<p>$$
+p_Q(X) = \det\bigl(XI - [L_Q]_{(1,\varepsilon)}\bigr) = (X-a)^2.
+$$</p>
+<p>Moreover</p>
+<p>$$
+\operatorname{tr}L_Q = 2a, \qquad \det L_Q = a^2 = \langle Q\rangle, \qquad \operatorname{disc}p_Q = 0.
+$$</p>
+<p><em>Proof.</em> The first column is the image of $1$, namely $a + b\varepsilon$, and the second is the image of $\varepsilon$, namely $a\varepsilon$; this gives the matrix. It is upper triangular with diagonal entries $a$, so its characteristic polynomial is $(X-a)^2$. The trace is the sum of the diagonal entries, the determinant is their product, and the discriminant of $(X-a)^2$ is $4a^2 - 4a^2 = 0$.</p>
+<p><strong>Corollary (the eigenspace).</strong> For every $Q$,</p>
+<p>$$
+\dim_R E_a(Q) = \begin{cases} 2, & b = 0, \\ 1, & b\neq0. \end{cases}
+$$</p>
+<p><em>Proof.</em> By the theorem, $E_a(Q) = \ker(bL_\varepsilon)$. If $b=0$ the kernel is everything. If $b\neq0$, then $bL_\varepsilon(x + y\varepsilon) = bx\varepsilon$, which vanishes exactly when $x=0$, so the kernel is the line $R\varepsilon = \mathrm{M}$.</p>
+<p><strong>Remark (the matrix conventions).</strong> The matrix $\begin{pmatrix}a&b\\0&a\end{pmatrix}$ often written for $L_Q$ is the matrix in the reversed basis $(\varepsilon,1)$, the matrix-element representation $\mathsf{M}_2(Q)$ of <em>Dual-Numbers Matrix Element Representation</em>, and the matrix of left multiplication on row vectors. In the column convention and the basis $(1,\varepsilon)$ it is the transpose $\begin{pmatrix}a&0\\b&a\end{pmatrix}$ of <em>Dual-Numbers Element Representations</em>. The characteristic polynomial, trace, determinant and Jordan type are the same in all readings, since the matrices are similar or transposes.</p>
+<h2 id="the-theorem-universal-spectral-degeneracy">The Theorem: Universal Spectral Degeneracy</h2>
+<p><strong>Spectral regularity is the separation of the two roots of the characteristic polynomial; in $\mathbb{D}'_R$ there are never two roots to separate.</strong></p>
+<p><strong>Definition (spectrally regular, spectrally degenerate).</strong> An element $Q$ is <strong>spectrally regular</strong> if its characteristic polynomial is squarefree, equivalently if it has two distinct eigenvalues in $R$. It is <strong>spectrally degenerate</strong> if its characteristic polynomial has a repeated root, equivalently if its discriminant vanishes.</p>
+<p><strong>Theorem (every element is spectrally degenerate).</strong> For every $Q\in\mathbb{D}'_R$, the characteristic polynomial is $(X-a)^2$, of discriminant zero. Hence every element is spectrally degenerate, and there is no spectrally regular element.</p>
+<p><em>Proof.</em> The characteristic polynomial was computed in the preceding section; a square has a repeated root and discriminant zero.</p>
+<p><strong>Definition (the sectors).</strong> For $i,j\in\{0,1\}$, let $\Sigma_{ij}$ be the set of elements with $\langle Q\rangle\neq0$ if $i=1$ and $\langle Q\rangle=0$ if $i=0$, and with $Q$ spectrally regular if $j=1$ and spectrally degenerate if $j=0$. Thus</p>
+<p>$$
+\Sigma_{11} = \{\langle Q\rangle\neq0,\ p_Q \text{ squarefree}\}, \qquad
+\Sigma_{10} = \{\langle Q\rangle\neq0,\ p_Q \text{ not squarefree}\},
+$$</p>
+<p>and similarly for $\Sigma_{01}$ and $\Sigma_{00}$.</p>
+<p><strong>Corollary (the norm/spectrum classification).</strong> In $\mathbb{D}'_R$,</p>
+<p>$$
+\Sigma_{11} = \varnothing, \qquad
+\Sigma_{01} = \varnothing, \qquad
+\Sigma_{10} = \{a\neq0\} = (\mathbb{D}'_R)^\times, \qquad
+\Sigma_{00} = \mathrm{M} = \{a=0\}.
+$$</p>
+<p><em>Proof.</em> Both sets with $j=1$ are empty by the theorem. The condition $\langle Q\rangle\neq0$ is $a^2\neq0$, which over the real closed field $R$ is $a\neq0$; this is also the unit criterion. Its complement is $a=0$, namely $\mathrm{M}$.</p>
+<p><strong>Remark (degenerate is not defective).</strong> The theorem says that the eigenvalue is repeated; it does not say that the operator is not diagonalisable. The real axis $b=0$ consists of scalar operators $a\,\mathrm{id}$, which are diagonalisable, while $b\neq0$ is not. The word <strong>degenerate</strong> is fixed by the discriminant; <strong>defective</strong> is fixed by the minimal polynomial. The biquaternion cone draws the same distinction; see <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>.</p>
+<h2 id="the-minimal-polynomial-dichotomy">The Minimal Polynomial Dichotomy</h2>
+<p><strong>The minimal polynomial is the first invariant that sees the defect, and it takes exactly two forms.</strong></p>
+<p><strong>Definition (minimal polynomial).</strong> The <strong>minimal polynomial</strong> $m_Q$ of $Q$ is the monic polynomial of least degree in $R[X]$ with $m_Q(Q)=0$. Equivalently, it is the monic generator of the kernel of the evaluation map $R[X]\to\mathbb{D}'_R$, $X\mapsto Q$.</p>
+<p><strong>Theorem (the dichotomy).</strong> For $Q = a + b\varepsilon$,</p>
+<p>$$
+m_Q(X) = \begin{cases} X - a, & b = 0, \\ (X-a)^2, & b\neq0. \end{cases}
+$$</p>
+<p><em>Proof.</em> Since $Q-a = b\varepsilon$, one has $(Q-a)^2 = b^2\varepsilon^2 = 0$. If $b=0$ then $Q-a=0$, so $X-a$ annihilates $Q$ and is of degree one, hence is minimal. If $b\neq0$ then $Q-a\neq0$, so no polynomial of degree one annihilates $Q$; the polynomial $(X-a)^2$ does, and it is therefore minimal.</p>
+<p><strong>Corollary (semisimple and defective).</strong> The following are equivalent:</p>
+<ol>
+<li>$Q$ is semisimple, that is, $L_Q$ is diagonalisable over $R$;</li>
+<li>$m_Q$ is squarefree;</li>
+<li>$b = 0$;</li>
+<li>$Q$ lies on the real axis $R\cdot1$.</li>
+</ol>
+<p>The complement, $b\neq0$, is the <strong>defective set</strong>. It is the complement of the real axis, not the maximal ideal: the maximal ideal $\mathrm{M}\setminus\{0\}$ is the subset of the defective set on which the eigenvalue is zero. The defect is carried by the nilpotent part $Q-a = b\varepsilon$, and $\mathrm{M}\setminus\{0\}$ is the set of possible non-zero nilpotent parts.</p>
+<p><em>Proof.</em> The equivalence of (2) and (3) is the theorem, since $X-a$ is squarefree and $(X-a)^2$ is not. For (1) and (2), a linear operator is diagonalisable exactly when its minimal polynomial is squarefree and splits, and both polynomials here split. For (3) and (4), $b=0$ is the real axis by definition. The final description follows because $Q-a = b\varepsilon$ lies in $\mathrm{M}$ and is non-zero exactly when $b\neq0$.</p>
+<h2 id="the-jordan-form">The Jordan Form</h2>
+<p><strong>Off the real axis the operator is a single Jordan block, and the block is visible in a basis adapted to the nilpotent part.</strong></p>
+<p><strong>Theorem (the Jordan form).</strong> Let $b\neq0$. In the basis $(\varepsilon,\,b^{-1})$ of $\mathbb{D}'_R$, the matrix of $L_Q$ is</p>
+<p>$$
+[L_Q]_{(\varepsilon,b^{-1})} = \begin{pmatrix} a & 1 \\ 0 & a \end{pmatrix} = J_2(a).
+$$</p>
+<p>If $b=0$, the matrix is the scalar matrix $aI$ in every basis.</p>
+<p><em>Proof.</em> For $b\neq0$,</p>
+<p>$$
+L_Q(\varepsilon) = a\varepsilon, \qquad
+L_Q(b^{-1}) = \frac{a + b\varepsilon}{b} = \frac{a}{b} + \varepsilon = a\,b^{-1} + \varepsilon.
+$$</p>
+<p>The first column is therefore $(a,0)$ and the second is $(1,a)$, which is the displayed matrix. For $b=0$, $L_Q = a\,\mathrm{id}$.</p>
+<h2 id="the-one-term-spectral-decomposition">The One-Term Spectral Decomposition</h2>
+<p><strong>A spectral decomposition separates distinct eigenvalues by orthogonal idempotents; with one eigenvalue and no non-trivial idempotent, it can have only one term.</strong></p>
+<p><strong>Definition (spectral idempotent, spectral decomposition).</strong> A non-zero idempotent $e\in\mathbb{D}'_R$ is a <strong>spectral idempotent</strong> of $Q$ if $Qe = eQ = ae$ for some scalar $a$. A <strong>spectral decomposition</strong> of $Q$ is a finite sum</p>
+<p>$$
+Q = \sum_{i=1}^{r}\lambda_i e_i,
+$$</p>
+<p>where the $\lambda_i$ are distinct scalars, the $e_i$ are non-zero idempotents with $e_ie_j=0$ for $i\neq j$, and $\sum_i e_i = 1$.</p>
+<p><strong>Proposition (the idempotents).</strong> Over a field, the only idempotents of $\mathbb{D}'_R$ are $0$ and $1$.</p>
+<p><em>Proof.</em> Let $e = x + y\varepsilon$ and impose $e^2=e$:</p>
+<p>$$
+x^2 + 2xy\varepsilon = x + y\varepsilon,
+$$</p>
+<p>so $x^2=x$ and $2xy=y$. In a field $x=0$ or $x=1$. If $x=0$ then $y=0$; if $x=1$ then $2y=y$, so $y=0$ because $2$ is invertible. Hence $e=0$ or $e=1$.</p>
+<p><strong>Theorem (the one-term decomposition).</strong> A spectral decomposition of $Q$ exists if and only if $b=0$. In that case it is the one-term decomposition</p>
+<p>$$
+Q = a\cdot1,
+$$</p>
+<p>and it is unique. No element of $\mathbb{D}'_R$ has a two-term spectral decomposition.</p>
+<p><em>Proof.</em> A spectral idempotent must be $1$, by the proposition, and then $Q = a\cdot1 = a$, so $b=0$. Conversely, if $b=0$ then $Q=a$ and $Q=a\cdot1$ is a one-term decomposition; it is unique because the only non-zero idempotent is $1$ and the scalar is then $Q$ itself. A two-term decomposition would require two distinct eigenvalues, which the spectrum does not contain.</p>
+<p><strong>Remark (the Jordan–Chevalley decomposition).</strong> Every element has the additive decomposition</p>
+<p>$$
+Q = a\cdot1 + b\varepsilon,
+$$</p>
+<p>with $a\cdot1$ semisimple, $b\varepsilon$ nilpotent, and the two commuting. It is the Jordan–Chevalley decomposition of <em>Nilpotent Elements and the Jordan–Chevalley Decomposition</em>, and it is unique. It is not a spectral decomposition: the nilpotent part is not separated by an idempotent, and it is non-zero exactly on the defective set. The spectral decomposition is the special case $b=0$, where the nilpotent part vanishes.</p>
+<h2 id="contrast-with-the-complex-split-complex-quaternionic-and-biquaternionic-algebras">Contrast with the Complex, Split-Complex, Quaternionic and Biquaternionic Algebras</h2>
+<p><strong>In the neighbouring algebras the discriminant is the norm of the pure part; in the dual algebra the pure part lies in the radical of the norm, and the discriminant vanishes with it.</strong></p>
+<p>The spectral polynomial of an element is the monic quadratic whose roots are its eigenvalues. In each of the algebras below it has the form</p>
+<p>$$
+p(X) = (X-a)^2 + \langle\pi\rangle,
+$$</p>
+<p>where $a$ is the scalar part, $\pi$ is the pure part, and $\langle\pi\rangle$ is the norm of $\pi$ in that algebra. The discriminant is then</p>
+<p>$$
+\operatorname{disc}p = -4\langle\pi\rangle.
+$$</p>
+<p>The values are collected in the table; the dual row is the last.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>element</th>
+<th>pure part $\pi$</th>
+<th>norm $\langle\pi\rangle$</th>
+<th>spectral polynomial</th>
+<th>discriminant</th>
+<th>eigenvalues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$a+bi$</td>
+<td>$bi$</td>
+<td>$b^2$</td>
+<td>$(X-a)^2+b^2$</td>
+<td>$-4b^2$</td>
+<td>$a\pm ib$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}=\mathbb{R}[j]$</td>
+<td>$a+bj$</td>
+<td>$bj$</td>
+<td>$-b^2$</td>
+<td>$(X-a)^2-b^2$</td>
+<td>$4b^2$</td>
+<td>$a\pm b$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$q_t+\vec q$</td>
+<td>$\vec q$</td>
+<td>$\lvert\vec q\rvert^2$</td>
+<td>$(X-q_t)^2+\lvert\vec q\rvert^2$</td>
+<td>$-4\lvert\vec q\rvert^2$</td>
+<td>$q_t\pm i\lvert\vec q\rvert$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$Q_t+\vec Q$</td>
+<td>$\vec Q$</td>
+<td>$B^2$</td>
+<td>$(X-Q_t)^2+B^2$</td>
+<td>$-4B^2$</td>
+<td>$Q_t\pm iB$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>$a+b\varepsilon$</td>
+<td>$b\varepsilon$</td>
+<td>$0$</td>
+<td>$(X-a)^2$</td>
+<td>$0$</td>
+<td>$a$ (double)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Here $\mathbb{D}=\mathbb{R}[j]$ with $j^2=1$ and norm $a^2-b^2$; $\mathbb{H}$ is the quaternion algebra with norm $q_t^2+\lvert\vec q\rvert^2$; $\mathbb{B}$ is the biquaternion algebra with $B^2=Q_x^2+Q_y^2+Q_z^2$ and spectral polynomial as in <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>; and $\mathbb{D}'$ is the dual algebra, where $\langle b\varepsilon\rangle = b^2\varepsilon^2 = 0$.</p>
+<p><strong>Theorem (the discriminant is the norm of the pure part).</strong> In each row of the table, the spectral polynomial is $(X-a)^2+\langle\pi\rangle$ and its discriminant is $-4\langle\pi\rangle$.</p>
+<p><em>Proof.</em> The complex and split-complex rows are the ordinary quadratic formulae for the matrices of multiplication by $a+bi$ and $a+bj$. The quaternion row is the spectral polynomial of <em>Quaternion Spectral Theory</em>, and the biquaternion row is that of <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, with pure part $\vec q$ or $\vec Q$ and its norm. The dual row is the characteristic polynomial of the preceding section, with pure part $b\varepsilon$ and norm $\langle b\varepsilon\rangle=b^2\varepsilon^2=0$.</p>
+<p><strong>Corollary (spectral regularity in the five algebras).</strong> In $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$ and $\mathbb{B}$ the spectral-regular locus is the complement of the vanishing locus of a non-zero quadratic form in the pure part; it is non-empty and, over $\mathbb{R}$ or $\mathbb{C}$, open and dense. In $\mathbb{D}'$ the spectral-regular locus is empty.</p>
+<p><em>Proof.</em> The discriminant is $-4\langle\pi\rangle$, and the pure-part norm is a non-zero quadratic form in the first four algebras. A non-zero quadratic form is a non-zero polynomial function, so it takes a non-zero value at some point, and its zero set is closed with empty interior; hence its complement is non-empty, open and dense. In $\mathbb{D}'$ the pure part has norm zero, so the discriminant vanishes identically; this is the theorem of §<em>The Theorem: Universal Spectral Degeneracy</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The dual-number algebra $\mathbb{D}'_R$ has a single spectral phenomenon: every $Q=a+b\varepsilon$ has $p_Q=(X-a)^2$, discriminant zero, spectrum $\{a\}$, and eigenspace of dimension two when $b=0$ and one when $b\neq0$. Every element is spectrally degenerate, so $\Sigma_{11}=\Sigma_{01}=\varnothing$, $\Sigma_{10}=\{a\neq0\}$ and $\Sigma_{00}=\mathrm{M}$.</p>
+<p>Spectral degeneracy is not defect. The minimal polynomial is $X-a$ on the real axis and $(X-a)^2$ off it, so the real axis is the semisimple stratum and $b\neq0$ is the defective set; the defect is carried by the nilpotent part $b\varepsilon\in\mathrm{M}$, and $\mathrm{M}\setminus\{0\}$ is the subset with eigenvalue zero, not the whole defective set. Off the real axis the operator is $J_2(a)$ in the basis $(\varepsilon,b^{-1})$, the eigenspace is $R\varepsilon$, and there is no eigenbasis. The only idempotents are $0$ and $1$, so the only spectral decomposition is the one-term $Q=a\cdot1$ of the real axis; the additive Jordan–Chevalley decomposition $Q=a\cdot1+b\varepsilon$ always exists but is not spectral.</p>
+<p>The comparison with the neighbouring algebras is the comparison of discriminants: in $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$ and $\mathbb{B}$ the spectral polynomial is $(X-a)^2+\langle\pi\rangle$ with discriminant $-4\langle\pi\rangle$, so the spectral-regular locus is non-empty; in $\mathbb{D}'$ the pure part $b\varepsilon$ has norm zero, the discriminant vanishes identically, and the spectral-regular locus is empty.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}'_R=R[\varepsilon]/(\varepsilon^2)$</td>
+<td>the dual-number algebra over $R$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'=\mathbb{D}'_{\mathbb{R}}$</td>
+<td>the dual-number algebra over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$Q=a+b\varepsilon$</td>
+<td>a general element, equal to $q+\varepsilon q'$ in the prime notation</td>
+</tr>
+<tr>
+<td>$a=\operatorname{Re}Q$, $b=\operatorname{Inf}Q$</td>
+<td>real and infinitesimal parts</td>
+</tr>
+<tr>
+<td>$\bar Q=a-b\varepsilon$</td>
+<td>dual conjugation</td>
+</tr>
+<tr>
+<td>$\langle Q\rangle=Q\bar Q=a^2$</td>
+<td>the norm, the dual norm; degenerate of rank one, radical $\mathrm{M}$</td>
+</tr>
+<tr>
+<td>$\mathrm{M}=(\varepsilon)=\{a=0\}$</td>
+<td>the maximal ideal, the vanishing locus of the norm</td>
+</tr>
+<tr>
+<td>$L_Q(v)=Qv$, $R_Q(v)=vQ$</td>
+<td>left and right multiplication; equal because the algebra is commutative</td>
+</tr>
+<tr>
+<td>$p_Q(X)=(X-a)^2$</td>
+<td>the characteristic polynomial of $L_Q$</td>
+</tr>
+<tr>
+<td>$\operatorname{disc}p_Q=0$</td>
+<td>the discriminant; spectral degeneracy is universal</td>
+</tr>
+<tr>
+<td>$m_Q$</td>
+<td>the minimal polynomial: $X-a$ if $b=0$, $(X-a)^2$ if $b\neq0$</td>
+</tr>
+<tr>
+<td>$E_\lambda(Q)=\ker L_{Q-\lambda}$</td>
+<td>the eigenspace of $\lambda$</td>
+</tr>
+<tr>
+<td>$\sigma(Q)=\{a\}$</td>
+<td>the spectrum</td>
+</tr>
+<tr>
+<td>$J_2(a)=\begin{pmatrix}a&1\\0&a\end{pmatrix}$</td>
+<td>the Jordan block off the real axis</td>
+</tr>
+<tr>
+<td>$R\cdot1=\{b=0\}$</td>
+<td>the real axis, the semisimple stratum</td>
+</tr>
+<tr>
+<td>$\{b\neq0\}$</td>
+<td>the defective set</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the norm/spectrum sectors: $i$ for the norm, $j$ for spectral regularity</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(Q)=\begin{pmatrix}a&b\\0&a\end{pmatrix}$</td>
+<td>the matrix-element representation, the transpose convention of the regular representation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="dual-numbers-algebra.html">Dual-Numbers Algebra</a>, for the algebra, the two conjugations, the maximal ideal and the group of units.</li>
+<li><a href="dual-numbers-norm-and-invertibility.html">Dual-Numbers Norm and Invertibility</a>, for the norm, its degeneracy, the Euclidean form and the invertibility criterion.</li>
+<li><a href="dual-numbers-matrix-element-representation.html">Dual-Numbers Matrix Element Representation</a>, for the matrix model, the characteristic polynomial and the transpose convention.</li>
+<li><a href="dual-numbers-element-representations.html">Dual-Numbers Element Representations</a>, for the regular representation in the basis $(1,\varepsilon)$.</li>
+<li><a href="the-defective-sector-of-the-dual-number-algebra.html">The Defective Sector of the Dual-Number Algebra</a>, for the defect, its two strata, the module picture and the polar decomposition.</li>
+<li><a href="relations-between-the-dual-norm-and-spectral-degeneracy.html">Relations between the Dual Norm and Spectral Degeneracy</a>, for the comparison of the norm and the defect and the chain of invariants.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the same distinction on the biquaternion spectral-degenerate cone.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors in the biquaternion algebra.</li>
+<li><a href="nilpotent-elements-and-the-jordan-chevalley-decomposition.html">Nilpotent Elements and the Jordan–Chevalley Decomposition</a>, for the additive decomposition $Q=a\cdot1+b\varepsilon$.</li>
+<li><a href="modules-over-kx-and-the-jordan-form.html">Modules over $k[x]$ and the Jordan Form</a>, for the Jordan block and the module picture of the defect.</li>
+<li><a href="the-eigenvalue-decomposition-of-an-element.html">The Eigenvalue Decomposition of an Element</a>, for the spectral decomposition in the general theory.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (2nd edition, Cambridge University Press, 2013), for the characteristic polynomial, diagonalisability and the Jordan form.</li>
+<li>Kenneth Hoffman and Ray Kunze, <em>Linear Algebra</em> (2nd edition, Prentice-Hall, 1971), for the spectral theorem over $\mathbb{C}$ and the primary decomposition.</li>
+<li>Michael F. Atiyah and Ian G. Macdonald, <em>Introduction to Commutative Algebra</em> (Addison-Wesley, Reading, 1969), for local rings and nilpotent ideals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

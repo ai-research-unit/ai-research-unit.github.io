@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-reduced-norm-and-spectral-degeneracy-in-the-split-biquaternion-algebra"><strong>The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ carries two quadratic conditions on one element. The <strong>reduced norm</strong> $\Delta(\tilde Q)=|Q_+|^2|Q_-|^2$ is real, non-negative, multiplicative, and vanishes exactly when a half vanishes. The <strong>component invariants</strong> $|\vec q_\pm|^2$ are the squared lengths of the two vector parts; each vanishes exactly when its half is scalar. The first decides invertibility, the second detects scalar halves. The <strong>spectrum</strong> is regular when the reduced characteristic polynomial has no repeated root.</p>
+<p>This article compares these invariants. Spectral regularity forces $\Delta\neq0$, but $\Delta\neq0$ does not force spectral regularity. Hence the cell "reduced-norm-degenerate, spectrally regular" is empty, while its opposite is not: a vanishing reduced norm forces a whole half to vanish, and a vanishing half is scalar, hence spectrally degenerate. The biquaternion algebra differs: its norm is a sum, not a product, and its Hermitian idempotents are norm-degenerate with simple spectra.</p>
+<p><strong>Conventions.</strong> The split complex unit is $j$, with $j^2=1$, and the idempotents are $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$. An element is $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ with $Q_\pm=t_\pm+\vec q_\pm$, $t_\pm\in\mathbb{R}$, $\vec q_\pm=\sum_k q_{\pm k}\vec e_k$, and $|\vec q_\pm|^2=\sum_k q_{\pm k}^2$. The quaternion norm is $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The split-biquaternion norm is $\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_1+|Q_-|^2\tilde\Pi_2=\sum_\mu Q_\mu^2$, where $Q_\mu$ are the coefficients in the basis $e_\mu$. The reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The spectral classification is <em><a href="spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra</a></em>; the cells are <em><a href="the-three-sectors-of-the-split-biquaternion-algebra.html">The Three Sectors of the Split-Biquaternion Algebra</a></em>; the algebra and norm are <em><a href="split-biquaternion-algebra.html">Split-Biquaternion Algebra</a></em> and <em><a href="split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a></em>.</p>
+<h2 id="the-reduced-norm-and-the-component-invariants">The Reduced Norm and the Component Invariants</h2>
+<h3 id="definitions-and-identities">Definitions and Identities</h3>
+<p><strong>Lemma (the norm in the idempotent basis).</strong> For $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$,</p>
+<p>$$
+\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_1+|Q_-|^2\tilde\Pi_2
+=\sum_{\mu=t,x,y,z}Q_\mu^2.
+$$</p>
+<p><em>Proof.</em> Write $Q_\mu=a_\mu+jb_\mu$ with $a_\mu,b_\mu\in\mathbb{R}$. Since $a_\mu+jb_\mu=(a_\mu+b_\mu)\tilde\Pi_1+(a_\mu-b_\mu)\tilde\Pi_2$, the coefficient of $\tilde\Pi_1$ in $\sum_\mu Q_\mu^2$ is $\sum_\mu(a_\mu+b_\mu)^2$ and the coefficient of $\tilde\Pi_2$ is $\sum_\mu(a_\mu-b_\mu)^2$. Now $a_\mu=(q_{+\mu}+q_{-\mu})/2$ and $b_\mu=(q_{+\mu}-q_{-\mu})/2$, so</p>
+<p>$$
+\sum_\mu(a_\mu+b_\mu)^2=\sum_\mu q_{+\mu}^2=|Q_+|^2,
+\qquad
+\sum_\mu(a_\mu-b_\mu)^2=\sum_\mu q_{-\mu}^2=|Q_-|^2.
+$$</p>
+<p><strong>Definition (reduced norm).</strong> The <strong>reduced norm</strong> of $\tilde Q$ is</p>
+<p>$$
+\Delta(\tilde Q)=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}\in\mathbb{R}.
+$$</p>
+<p>It is a homogeneous real quartic in the eight real coordinates.</p>
+<p><strong>Theorem (positivity and the zero criterion).</strong> For every $\tilde Q$,</p>
+<p>$$
+\Delta(\tilde Q)\ge0,\qquad
+\Delta(\tilde Q)=0\iff Q_+=0\text{ or }Q_-=0.
+$$</p>
+<p>Consequently $\tilde Q$ is a unit exactly when $\Delta(\tilde Q)\neq0$.</p>
+<p><em>Proof.</em> Each $|Q_\pm|^2$ is a sum of four squares, hence non-negative and zero only at $Q_\pm=0$. A product of non-negative reals vanishes exactly when a factor vanishes. In $\mathbb{H}\oplus\mathbb{H}$, an element is invertible exactly when both components are non-zero, by <em><a href="split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a></em>.</p>
+<p><strong>Proposition (multiplicativity).</strong> The reduced norm is multiplicative:</p>
+<p>$$
+\Delta(\tilde P\tilde Q)=\Delta(\tilde P)\Delta(\tilde Q).
+$$</p>
+<p><em>Proof.</em> The halves multiply componentwise, $(\tilde P\tilde Q)_\pm=P_\pm Q_\pm$. The quaternion norm is multiplicative, since $|PQ|^2=(PQ)(PQ)^{*}=PQQ^{*}P^{*}=|P|^2|Q|^2$. Hence</p>
+<p>$$
+\Delta(\tilde P\tilde Q)=|P_+Q_+|^2|P_-Q_-|^2=|P_+|^2|P_-|^2|Q_+|^2|Q_-|^2.
+$$</p>
+<p><strong>Definition (component invariants).</strong> The <strong>component invariants</strong> are $|\vec q_+|^2$ and $|\vec q_-|^2$. Each is a sum of three squares and is not multiplicative: $\vec e_x^2=-1$ has zero vector part while $|\vec e_x|^2|\vec e_x|^2=1$.</p>
+<p>$\Delta$ is the product of the squared quaternion norms; the component invariants are the squared vector parts inside those norms. The identity $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$ splits each factor of $\Delta$ into a scalar square and a vector square.</p>
+<h3 id="the-two-kinds-of-invariant-side-by-side">The Two Kinds of Invariant Side by Side</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Invariant</th>
+<th>Formula</th>
+<th>Vanishes exactly when</th>
+<th>Multiplicative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Delta$</td>
+<td>$\lvert Q_+\rvert^2\lvert Q_-\rvert^2$</td>
+<td>$Q_+=0$ or $Q_-=0$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\lvert Q_+\rvert^2$</td>
+<td>$t_+^2+\lvert\vec q_+\rvert^2$</td>
+<td>$Q_+=0$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\lvert Q_-\rvert^2$</td>
+<td>$t_-^2+\lvert\vec q_-\rvert^2$</td>
+<td>$Q_-=0$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\lvert\vec q_+\rvert^2$</td>
+<td>$q_{+x}^2+q_{+y}^2+q_{+z}^2$</td>
+<td>$\vec q_+=0$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\lvert\vec q_-\rvert^2$</td>
+<td>$q_{-x}^2+q_{-y}^2+q_{-z}^2$</td>
+<td>$\vec q_-=0$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>A vanishing component invariant means only that one half is scalar; the half may still be a non-zero scalar, and then $\Delta$ is non-zero. A vanishing reduced norm is stronger: it requires a whole half to vanish.</p>
+<p><strong>Proposition (the only implications).</strong> The following hold.</p>
+<p>(i) If $|\vec q_+|^2\neq0$ and $|\vec q_-|^2\neq0$, then $\Delta\neq0$.
+(ii) If $\Delta=0$, then $|\vec q_+|^2=0$ or $|\vec q_-|^2=0$.
+(iii) Neither converse holds.</p>
+<p><em>Proof.</em> (i) A non-zero vector part makes its half non-zero, so both factors of $\Delta$ are non-zero. (ii) By the zero criterion, one half is zero, so its vector part is zero. (iii) $Q_+=1$, $Q_-=\vec e_z$ has $|\vec q_+|^2=0$ but $\Delta=1$, so neither converse holds.</p>
+<h2 id="independence-in-the-only-direction-available">Independence in the Only Direction Available</h2>
+<p><strong>Definition (the two predicates).</strong> An element is <strong>norm-regular</strong> when $\Delta\neq0$ and <strong>norm-degenerate</strong> when $\Delta=0$. It is <strong>spectrally regular</strong> when $p_{\tilde Q}$ has no repeated root and <strong>spectrally degenerate</strong> when it has one.</p>
+<p><strong>Theorem (the one-way implication).</strong> Spectral regularity implies norm regularity. Norm regularity does not imply spectral regularity.</p>
+<p><em>Proof.</em> If $\Delta=0$, then $Q_+=0$ or $Q_-=0$ by the zero criterion. If $Q_+=0$ then $\vec q_+=0$, so case 1 of the repeated-root theorem of <em><a href="spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra</a></em> applies; the other case is the same. Hence spectral regularity forces $\Delta\neq0$.</p>
+<p>For the converse, take $Q_+=1$ and $Q_-=\vec e_z$. Then $\Delta=1$ but $p_+=(\lambda-1)^2$ has a repeated root, so the element is spectrally degenerate.</p>
+<p><strong>Corollary (the mixed cells).</strong> The cell $\{\Delta\neq0,\ \text{spectrally degenerate}\}$ is non-empty, and the cell $\{\Delta=0,\ \text{spectrally regular}\}$ is empty.</p>
+<p>The only independence available is the failure of the converse: a unit can have a repeated root, but a zero divisor cannot have a simple spectrum. In logical form,</p>
+<p>$$
+\text{spectrally regular}\Longrightarrow\text{norm-regular},
+\qquad
+\text{norm-regular}\not\Longrightarrow\text{spectrally regular}.
+$$</p>
+<p>There is no element that is norm-degenerate and spectrally regular.</p>
+<h2 id="the-empty-mixed-cell-and-its-cause">The Empty Mixed Cell and Its Cause</h2>
+<p><strong>Definition (the mixed cell).</strong> Let</p>
+<p>$$
+\Sigma_{01}=\{\tilde Q:\Delta(\tilde Q)=0\text{ and }p_{\tilde Q}\text{ has no repeated root}\}.
+$$</p>
+<p><strong>Theorem ($\Sigma_{01}$ is empty).</strong> No split biquaternion is both norm-degenerate and spectrally regular.</p>
+<p><em>Proof.</em> Let $\Delta(\tilde Q)=0$. By the zero criterion, $Q_+=0$ or $Q_-=0$. Suppose $Q_+=0$. Then $Q_+=0$ is the zero scalar, so $\vec q_+=0$; by the repeated-root theorem, $p_{\tilde Q}$ has a repeated root. The case $Q_-=0$ is identical. Hence spectral regularity fails.</p>
+<p>The zero-divisor half is the <strong>zero</strong> scalar, so its reduced polynomial is $\lambda^2$, a double root at $0$. The other half may have a simple spectrum, but the double root already makes the element degenerate. A product of non-negative factors vanishes only through a zero factor.</p>
+<p><strong>Corollary (no norm-degenerate regular element).</strong> The empty cell is the failure of the converse. The non-empty cells are $\Sigma_{11}=\{\Delta\neq0,\ \text{spectrally regular}\}$, $\Sigma_{10}=\{\Delta\neq0,\ \text{spectrally degenerate}\}$ and $\Sigma_{00}=\{\Delta=0\}$; their geometry is <em><a href="the-three-sectors-of-the-split-biquaternion-algebra.html">The Three Sectors of the Split-Biquaternion Algebra</a></em>.</p>
+<h2 id="the-chain-of-invariants">The Chain of Invariants</h2>
+<p>The zero criterion, the definition of a zero half, and the repeated-root criterion form a chain:</p>
+<p>$$
+\Delta=0
+\iff Q_+=0\text{ or }Q_-=0
+\implies \vec q_+=0\text{ or }\vec q_-=0
+\implies p_{\tilde Q}\text{ has a repeated root}.
+$$</p>
+<p>The first equivalence is the zero criterion; the second says a zero quaternion has zero scalar and vector parts; the third is case 1 or case 2. The chain is one-way: $Q_+=1$, $Q_-=\vec e_z$ has $\vec q_+=0$ and a repeated root but $\Delta=1$; $Q_+=\vec e_x$, $Q_-=\vec e_z$ has both vector parts non-zero and a repeated root.</p>
+<p>In terms of information, the invariants form a hierarchy:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Invariant</th>
+<th>Data</th>
+<th>What it determines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Delta$</td>
+<td>one real number</td>
+<td>whether the element is a unit</td>
+</tr>
+<tr>
+<td>$(\lvert Q_+\rvert^2,\lvert Q_-\rvert^2)$</td>
+<td>two non-negative reals</td>
+<td>the two factors of $\Delta$ and which half vanishes</td>
+</tr>
+<tr>
+<td>$(t_\pm,\lvert\vec q_\pm\rvert^2)$</td>
+<td>four reals</td>
+<td>the two half-spectra and the repeated-root pattern</td>
+</tr>
+<tr>
+<td>$p_{\tilde Q}=p_+p_-$</td>
+<td>a monic quartic</td>
+<td>the spectrum with the multiplicity of the reduced polynomial</td>
+</tr>
+<tr>
+<td>$p_{\tilde Q}^2$</td>
+<td>a monic octic</td>
+<td>the spectrum with the multiplicity of $L_{\tilde Q}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The scalar/vector data determines the rest: the factor norms are $t_\pm^2+|\vec q_\pm|^2$, $\Delta$ is their product, and $p_{\tilde Q}=p_+p_-$. The reverse maps do not exist: $\Delta$ does not determine the factor norms, the factor norms do not determine the scalar/vector data, and $p_{\tilde Q}$ does not determine the pairing of roots with halves. The operator polynomial $p_{\tilde Q}^2$ adds only multiplicity.</p>
+<p><strong>Proposition (what $\Delta$ forgets).</strong> The reduced norm does not determine either component invariant, either scalar part, spectral regularity, or which half vanishes.</p>
+<p><em>Proof.</em> $Q_+=1$, $Q_-=\vec e_z$ has $\Delta=1$ and $|\vec q_+|^2=0$; $Q_+=\vec e_x$, $Q_-=\vec e_z$ has $\Delta=1$ and $|\vec q_+|^2=1$. $Q_+=1$, $Q_-=2\vec e_z$ and $Q_+=2$, $Q_-=\vec e_z$ both have $\Delta=4$ and scalar parts $(1,2)$ and $(2,1)$. At the same value $\Delta=4$, $Q_+=1$, $Q_-=2\vec e_z$ is degenerate while $Q_+=\vec e_x$, $Q_-=2\vec e_z$ is regular. Finally, $Q_+=0$, $Q_-=1$ and $Q_+=1$, $Q_-=0$ both have $\Delta=0$ and different vanishing halves.</p>
+<p>The comparison is thus of a product with its factors: $\Delta$ is the product, the component invariants are the internal vector squares, and the scalar parts are the remaining data.</p>
+<h2 id="contrast-with-the-biquaternion-case">Contrast with the Biquaternion Case</h2>
+<p>In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the norm is</p>
+<p>$$
+\eta=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
+$$</p>
+<p>with $Q_\mu\in\mathbb{C}$. It is a <strong>sum</strong>, not a product. The norm-degenerate set is the complex cone $\{Q_t^2+B^2=0\}$, and the spectral-degenerate set is $\{B^2=0\}$. The mixed cell $\Sigma_{01}$ is non-empty; the witnesses are the Hermitian idempotents.</p>
+<p>Let $\vec u\in\mathbb{R}^3$ with $\vec u\cdot\vec u=1$ and put</p>
+<p>$$
+E=\tfrac12(1+i\vec u).
+$$</p>
+<p>The element $E$ is Hermitian, $E^*=E$. Then</p>
+<p>$$
+E^2=\tfrac14(1+2i\vec u+i^2\vec u^2)
+=\tfrac14(1+2i\vec u-\vec u^2)
+=\tfrac12(1+i\vec u)=E,
+$$</p>
+<p>because $\vec u^2=-\vec u\cdot\vec u=-1$. Its scalar part is $1/2$ and its vector part is $i\vec u/2$, so</p>
+<p>$$
+\eta(E)=\tfrac14+\tfrac{i^2}{4}(\vec u\cdot\vec u)=\tfrac14-\tfrac14=0,
+\qquad
+B^2(E)=\tfrac{i^2}{4}(\vec u\cdot\vec u)=-\tfrac14\neq0.
+$$</p>
+<p>Since $E^2=E$ and $E\neq0,1$, its minimal polynomial is $X(X-1)$, so the spectrum $\{0,1\}$ is simple. Thus $E$ is norm-degenerate and spectrally regular: it lies in the biquaternion $\Sigma_{01}$, the cell that is empty in the split algebra. These idempotents are non-central, form a two-sphere, and are rank-one projections in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$.</p>
+<p>A sum can cancel: $Q_t^2$ and $B^2$ can be opposite non-zero complex numbers, whereas a product of non-negative reals needs a zero factor. And $\mathbb{H}_{\mathbb{D}}$ has only the four central idempotents $0,\tilde\Pi_1,\tilde\Pi_2,1$, because each division algebra has only $0$ and $1$; a non-zero idempotent of the split algebra has a zero half. The biquaternion matrix algebra has non-central idempotents, and the Hermitian ones are the witnesses the split algebra cannot produce.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced norm is $\Delta=|Q_+|^2|Q_-|^2$, the product of the two quaternion norms; it is real, non-negative, multiplicative, and vanishes exactly when one half vanishes. The component invariants vanish exactly when a half is scalar. A zero component invariant does not force $\Delta=0$ (the scalar half may be non-zero); $\Delta=0$ forces one component invariant to zero (the zero half).</p>
+<p>Spectral regularity implies norm regularity but not conversely. $\Sigma_{01}$ is empty; $\Sigma_{10}$ is non-empty. The scalar/vector data determines the factor norms, their product $\Delta$, and $p_{\tilde Q}$; these maps do not reverse.</p>
+<p>The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\tfrac12(1+i\vec u)$ have norm zero and spectrum $\{1,0\}$, so its $\Sigma_{01}$ is non-empty. The split algebra has no such element, and its empty cell measures the difference.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$</td>
+<td>Split-biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$</td>
+<td>Idempotent decomposition</td>
+</tr>
+<tr>
+<td>$Q_\pm=t_\pm+\vec q_\pm$</td>
+<td>A half</td>
+</tr>
+<tr>
+<td>$\lvert Q_\pm\rvert^2=t_\pm^2+\lvert\vec q_\pm\rvert^2$</td>
+<td>Quaternion norm of a half</td>
+</tr>
+<tr>
+<td>$\lvert\vec q_\pm\rvert^2$</td>
+<td>Component invariant, the squared vector part</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\lvert Q_+\rvert^2\tilde\Pi_1+\lvert Q_-\rvert^2\tilde\Pi_2$</td>
+<td>Split-biquaternion norm</td>
+</tr>
+<tr>
+<td>$\Delta=\lvert Q_+\rvert^2\lvert Q_-\rvert^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$</td>
+<td>Reduced norm</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}=\{\Delta=0,\ \text{spectrally regular}\}$</td>
+<td>The empty mixed cell</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}=\{\Delta\neq0,\ \text{spectrally degenerate}\}$</td>
+<td>The non-empty mixed cell</td>
+</tr>
+<tr>
+<td>$p_{\tilde Q}=p_+p_-$</td>
+<td>Reduced characteristic polynomial</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="split-biquaternion-algebra.html">Split-Biquaternion Algebra</a>, for the algebra and its idempotents.</li>
+<li><a href="split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a>, for the reduced norm, the inverse formula and the unit group.</li>
+<li><a href="split-biquaternion-zero-divisors.html">Split-Biquaternion Zero Divisors</a>, for the two ideals and the zero-divisor set.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra</a>, for the repeated-root criterion.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the complex cone and the comparison with the split case.</li>
+<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the biquaternion $\Sigma_{01}$ and the Hermitian idempotents.</li>
+<li><a href="the-three-sectors-of-the-split-biquaternion-algebra.html">The Three Sectors of the Split-Biquaternion Algebra</a>, for the three non-empty cells and their dimensions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

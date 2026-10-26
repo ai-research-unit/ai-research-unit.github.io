@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Three Sectors of the Quaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-three-sectors-of-the-quaternion-algebra"><strong>The Three Sectors of the Quaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two conditions cut the quaternion algebra into four cells: the vanishing of the quaternion norm and the vanishing of the squared length of the vector part. Because the norm is positive definite, one of the four cells is empty and the other three are nonempty. The three are the <strong>sectors</strong>: the non-real quaternions, the real axis minus the origin, and the origin. This article defines the cells, proves that exactly three are nonempty, describes each sector, computes its dimension and closure, and records the absence of defective elements and of nonzero norm-degenerate elements. A summary table collects the four cells.</p>
+<p>The algebra is <a href="quaternion-algebra.html">Quaternion Algebra</a>; the norm is <a href="norm-and-invertibility-in-the-quaternion-algebra.html">Norm and Invertibility in the Quaternion Algebra</a>; the spectral criterion is <a href="spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html">Spectral Regularity and Degeneracy in the Quaternion Algebra</a>; the comparison of the two conditions is <a href="relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html">Relations between the Quaternion Norm and Spectral Regularity and Degeneracy</a>; the biquaternion analogue is <a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>.</p>
+<p><strong>Notation.</strong> $\tilde q=q_t+\vec q=q_t e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\vec q^2=-|\vec q|^2e_t$, $\tilde q^{\natural}=q_t-\vec q$, $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$, $s=|\vec q|$.</p>
+<h2 id="the-two-predicates-and-the-sectors">The Two Predicates and the Sectors</h2>
+<p><strong>Definition (the cells).</strong> For $i,j\in\{0,1\}$ set
+$$\Sigma_{ij}=\{\tilde q\in\mathbb H:\ |\tilde q|^2\ne0\iff i=1,\quad |\vec q|^2\ne0\iff j=1\}.$$
+Explicitly,
+$$\Sigma_{11}=\{|\tilde q|^2\ne0,\ |\vec q|^2\ne0\},\quad \Sigma_{10}=\{|\tilde q|^2\ne0,\ |\vec q|^2=0\},$$
+$$\Sigma_{01}=\{|\tilde q|^2=0,\ |\vec q|^2\ne0\},\quad \Sigma_{00}=\{|\tilde q|^2=0,\ |\vec q|^2=0\}.$$</p>
+<p><strong>Theorem (partition).</strong> The four sets are pairwise disjoint and cover $\mathbb H$:
+$$\mathbb H=\Sigma_{11}\sqcup\Sigma_{10}\sqcup\Sigma_{01}\sqcup\Sigma_{00}.$$</p>
+<p><em>Proof.</em> Each element has exactly one truth value for each of the two conditions, hence lies in exactly one of the four cells.</p>
+<p><strong>Theorem (explicit description).</strong>
+$$\Sigma_{11}=\mathbb H\setminus\mathbb R,\qquad \Sigma_{10}=\mathbb R^\times,\qquad \Sigma_{01}=\varnothing,\qquad \Sigma_{00}=\{0\}.$$</p>
+<p><em>Proof.</em> The norm is positive definite, so $|\tilde q|^2=0$ exactly when $\tilde q=0$; the spectral form is positive semidefinite with radical the real axis, so $|\vec q|^2=0$ exactly when $\tilde q\in\mathbb R$. Hence $\Sigma_{11}$ is the set of nonzero quaternions outside $\mathbb R$, which is $\mathbb H\setminus\mathbb R$ because $0$ is real; $\Sigma_{10}$ is $\mathbb R\setminus\{0\}$; $\Sigma_{01}$ requires $\tilde q=0$ and $\tilde q\notin\mathbb R$, which is impossible; $\Sigma_{00}$ requires $\tilde q=0$ and $\tilde q\in\mathbb R$, which is the origin.</p>
+<p><strong>Corollary (three nonempty, one empty).</strong> The witnesses
+$$\vec e_x\in\Sigma_{11},\qquad 1\in\Sigma_{10},\qquad 0\in\Sigma_{00}$$
+show that the first, second and fourth cells are nonempty; the third is empty. The three nonempty cells are the <strong>sectors</strong>.</p>
+<h2 id="the-sector-of-the-non-real-quaternions">The Sector of the Non-Real Quaternions</h2>
+<p><strong>Theorem.</strong> $\Sigma_{11}=\mathbb H\setminus\mathbb R$. It is open, dense, connected and simply connected, of real dimension four. Its closure is $\mathbb H$, its boundary is the real axis $\mathbb R$, and it is not closed.</p>
+<p><em>Proof.</em> The complement of the closed line $\mathbb R$ is open; a line has empty interior, so the complement is dense. The map $\tilde q\mapsto(q_t,\vec q)$ is a homeomorphism of $\mathbb H\setminus\mathbb R$ onto $\mathbb R\times(\mathbb R^3\setminus\{0\})$, which is homeomorphic to $\mathbb R\times S^2\times\mathbb R_{>0}$; this space is connected and simply connected. The closure is $\mathbb H$ because every real quaternion is a limit of non-real ones. The boundary is $\mathbb R$ because the set is open and its closure is $\mathbb H$.</p>
+<p><strong>Spectral description.</strong> For $\tilde q\in\Sigma_{11}$ the eigenvalues $q_t\pm i|\vec q|$ are distinct, each of algebraic and geometric multiplicity two; $L_{\tilde q}$ is semisimple and diagonalisable over $\mathbb C$, with no real eigenvector. Its real canonical form is two copies of the rotation-scaling block. The eigenbasis is constructed in <a href="eigenvalue-decomposition-and-eigenbasis-of-a-quaternion.html">Eigenvalue Decomposition and Eigenbasis of a Quaternion</a>.</p>
+<p><strong>Norm description.</strong> Every element is a unit, $|\tilde q|>0$, and the polar decomposition is $\tilde q=|\tilde q|(\cos\theta+\sin\theta J_{\tilde q})$ with $\theta\in(0,\pi)$ and $J_{\tilde q}=\vec q/|\vec q|$.</p>
+<p><strong>Proposition (not a subgroup).</strong> $\Sigma_{11}$ is invariant under conjugation, under inversion and under multiplication by nonzero real scalars, but it is not closed under multiplication:
+$$(1+\vec e_x)(1-\vec e_x)=2\in\mathbb R.$$</p>
+<p><em>Proof.</em> The first three assertions follow from $|\tilde q^{\natural}|=|\tilde q|$, $|\tilde q^{-1}|=|\tilde q|^{-1}$ and $|\lambda\tilde q|^2=\lambda^2|\tilde q|^2$; the product computes to $1-\vec e_x^2=2$.</p>
+<h2 id="the-sector-of-the-real-axis-minus-the-origin">The Sector of the Real Axis Minus the Origin</h2>
+<p><strong>Theorem.</strong> $\Sigma_{10}=\mathbb R^\times$. It is a one-dimensional subgroup of $\mathbb H^\times$, central in $\mathbb H$, with two connected components $\mathbb R_{>0}$ and $\mathbb R_{<0}$. It is locally closed, not open and not closed in $\mathbb H$; its closure is $\mathbb R=\Sigma_{10}\cup\Sigma_{00}$, and its boundary is $\{0\}$.</p>
+<p><em>Proof.</em> The set is $\mathbb R\setminus\{0\}$; it is closed under multiplication and inversion, and real scalars commute with every quaternion. The two signs are the two components. A line has empty interior in $\mathbb R^4$, so it is not open; the origin is a limit point, so it is not closed; it is the intersection of the closed set $\mathbb R$ with the open set $\mathbb H\setminus\{0\}$, hence locally closed. The closure is $\mathbb R$, and the boundary is the origin.</p>
+<p><strong>Spectral description.</strong> For $q_t\ne0$, $L_{\tilde q}=q_t\,\mathrm{id}$, the spectrum is the singleton $\{q_t\}$, the eigenspace is all of $\mathbb H_{\mathbb C}$, and the minimal polynomial is $\lambda-q_t$. Every nonzero vector is an eigenvector and every basis is an eigenbasis; the element is semisimple. The spectrum is a single nonzero real point.</p>
+<p><strong>Norm description.</strong> $|\tilde q|^2=q_t^2>0$, the inverse is $q_t^{-1}$, and the polar angle is $\theta=0$ for $q_t>0$ and $\theta=\pi$ for $q_t<0$, with $J$ arbitrary. The positive ray is the identity component of the group.</p>
+<p><strong>Remark (the only coexistence).</strong> $\Sigma_{10}$ is the only sector whose elements are norm-regular and spectrally degenerate. Its elements are units and semisimple, so the degeneracy is neither non-invertibility nor defect: it is the collapse of the two eigenvalues onto the real axis. In the split-quaternion and biquaternion algebras the corresponding cell contains defective elements; see <a href="spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html">Spectral Regularity and Degeneracy in the Quaternion Algebra</a>.</p>
+<h2 id="the-sector-of-the-origin">The Sector of the Origin</h2>
+<p><strong>Theorem.</strong> $\Sigma_{00}=\{0\}$. It is a single point, closed, of dimension zero, and the unique non-unit of $\mathbb H$. For $\tilde q=0$, $L_0=0$, the characteristic polynomial is $\lambda^4$, the minimal polynomial is $\lambda$, and the spectrum is $\{0\}$; every nonzero vector is an eigenvector and every basis is an eigenbasis.</p>
+<p><em>Proof.</em> The cell was computed above; the norm is zero only at the origin, so the origin is the only non-unit. The matrix of $L_0$ is zero, and the polynomial statements are immediate.</p>
+<p><strong>Proposition (semisimple).</strong> The origin is semisimple: $\mathbb R[0]=\mathbb R$ is a field, and the minimal polynomial $\lambda$ is squarefree.</p>
+<p><strong>Proposition (closure).</strong> The origin lies in the closure of both $\Sigma_{11}$ and $\Sigma_{10}$; it is the boundary of $\Sigma_{10}$ and a frontier point of $\Sigma_{11}$.</p>
+<p><em>Proof.</em> Every neighborhood of $0$ contains nonzero real quaternions and non-real quaternions.</p>
+<p><strong>Remark (doubly degenerate, but not a cone).</strong> The origin is the only element that is both norm-degenerate and spectrally degenerate. In the split-quaternion and biquaternion algebras the doubly degenerate set is a cone with nonzero points; here the positive definiteness of both forms collapses it to a point.</p>
+<h2 id="dimensions-and-closures">Dimensions and Closures</h2>
+<p>The dimensions are the real dimensions of the cells as subsets of $\mathbb H\cong\mathbb R^4$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition</th>
+<th>description</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$|\tilde q|^2\ne0,\ |\vec q|^2\ne0$</td>
+<td>non-real quaternions; open, dense, connected; closure $\mathbb H$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$|\tilde q|^2\ne0,\ |\vec q|^2=0$</td>
+<td>real axis minus the origin; two components; closure $\mathbb R$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$|\tilde q|^2=0,\ |\vec q|^2\ne0$</td>
+<td>empty</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$|\tilde q|^2=0,\ |\vec q|^2=0$</td>
+<td>the origin; closed; closure $\{0\}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the closures).</strong> The closures of the four cells are
+$$\overline{\Sigma_{11}}=\mathbb H,\qquad \overline{\Sigma_{10}}=\mathbb R,\qquad \overline{\Sigma_{01}}=\varnothing,\qquad \overline{\Sigma_{00}}=\{0\}.$$
+Each closure is a union of cells, so the partition satisfies the frontier condition of a stratification.</p>
+<p><em>Proof.</em> The only nontrivial closure is that of $\Sigma_{11}$, which is $\mathbb H$ because the real axis is approximated by non-real quaternions; $\mathbb R$ is closed, and the remaining two cells are closed or empty. The closures are $\Sigma_{11}\cup\Sigma_{10}\cup\Sigma_{00}$, $\Sigma_{10}\cup\Sigma_{00}$, $\varnothing$ and $\Sigma_{00}$ respectively.</p>
+<p><strong>Remark (the dimensions do not add).</strong> $4+1+0=5>4$. The cells are disjoint, but the closures overlap: the real axis is the boundary of the open sector, and the origin is the boundary of the line. The dimension count of a stratification is not the dimension of the ambient space.</p>
+<p><strong>Corollary (the boundary).</strong> The boundary of $\Sigma_{11}$ is $\Sigma_{10}\cup\Sigma_{00}=\mathbb R$; the boundary of $\Sigma_{10}$ is $\Sigma_{00}$; the boundary of $\Sigma_{00}$ is $\Sigma_{00}$.</p>
+<h2 id="absence-of-defect-and-of-nonzero-norm-degenerate-elements">Absence of Defect and of Nonzero Norm-Degenerate Elements</h2>
+<p><strong>Theorem (no defect).</strong> Every element of every sector is semisimple, and there is no defective element in $\mathbb H$. The minimal polynomial is $\lambda-q_t$ on $\Sigma_{10}\cup\Sigma_{00}$ and $(\lambda-q_t)^2+|\vec q|^2$ on $\Sigma_{11}$; both are squarefree.</p>
+<p><em>Proof.</em> On the real axis $\mathbb R[\tilde q]=\mathbb R$; off it $\mathbb R[\tilde q]\cong\mathbb C$. Both are fields, and the displayed minimal polynomials have distinct roots.</p>
+<p><strong>Theorem (no nonzero norm-degenerate element).</strong> The norm-degenerate set is $\Sigma_{00}=\{0\}$. It contains no zero divisor, and every nonzero quaternion is a unit:
+$$\mathbb H^\times=\mathbb H\setminus\{0\}=\Sigma_{11}\cup\Sigma_{10}.$$</p>
+<p><em>Proof.</em> Positive definiteness gives the first statement; multiplicativity of the norm gives the absence of zero divisors; every nonzero element has the inverse $\tilde q^{\natural}/|\tilde q|^2$.</p>
+<p><strong>Corollary (the sectors are exhaustive).</strong> The three nonempty sectors are exactly the combinations that the positive definite norm permits; the fourth is forbidden. The table of the previous section is therefore complete.</p>
+<p><strong>Remark (the contrast with the biquaternion algebra).</strong> In $\mathbb B$ all four sectors are nonempty: the sector $\Sigma_{01}$ that is empty in $\mathbb H$ is present there, and its nonzero points are zero divisors. In $\mathbb H$ that sector is empty because the norm is definite. The comparison is in <a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>.</p>
+<h2 id="summary">Summary</h2>
+<p>The two conditions $|\tilde q|^2\ne0$ and $|\vec q|^2\ne0$ partition $\mathbb H$ into four cells. Because the norm is positive definite and the spectral form has radical the real axis, the cells are
+$$\Sigma_{11}=\mathbb H\setminus\mathbb R,\qquad \Sigma_{10}=\mathbb R^\times,\qquad \Sigma_{01}=\varnothing,\qquad \Sigma_{00}=\{0\}.$$
+The first is open, dense, connected and four-dimensional; the second is a one-dimensional subgroup with two components, locally closed, with closure the real axis; the third is empty; the fourth is a closed point, the only non-unit, the only doubly degenerate element and the only element of the norm-degenerate set.</p>
+<p>Every element is semisimple, so there is no defective element and no defective sector. No nonzero element is norm-degenerate, so every nonzero quaternion is a unit and $\mathbb H$ has no zero divisor. The fourth cell is empty precisely because the norm is definite; in the biquaternion algebra it is nonempty and carries zero divisors.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the cell with norm truth value $i$ and spectral truth value $j$</td>
+</tr>
+<tr>
+<td>$\Sigma_{11}=\mathbb H\setminus\mathbb R$</td>
+<td>the non-real sector</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}=\mathbb R^\times$</td>
+<td>the punctured real axis</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}=\varnothing$</td>
+<td>the empty cell</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}=\{0\}$</td>
+<td>the origin</td>
+</tr>
+<tr>
+<td>$\mathbb H^\times=\mathbb H\setminus\{0\}$</td>
+<td>the unit group</td>
+</tr>
+<tr>
+<td>$|\tilde q|^2=q_t^2+|\vec q|^2$</td>
+<td>the quaternion norm</td>
+</tr>
+<tr>
+<td>$|\vec q|^2$</td>
+<td>the spectral form</td>
+</tr>
+<tr>
+<td>dimension</td>
+<td>real dimension as a subset of $\mathbb H\cong\mathbb R^4$</td>
+</tr>
+<tr>
+<td>closure</td>
+<td>topological closure in $\mathbb H$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="quaternion-algebra.html">Quaternion Algebra</a>, for the multiplication and the scalar–vector decomposition.</li>
+<li><a href="norm-and-invertibility-in-the-quaternion-algebra.html">Norm and Invertibility in the Quaternion Algebra</a>, for the norm and the unit group.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html">Spectral Regularity and Degeneracy in the Quaternion Algebra</a>, for the spectral criterion.</li>
+<li><a href="eigenvalue-decomposition-and-eigenbasis-of-a-quaternion.html">Eigenvalue Decomposition and Eigenbasis of a Quaternion</a>, for the eigenbasis of the non-real sector.</li>
+<li><a href="relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html">Relations between the Quaternion Norm and Spectral Regularity and Degeneracy</a>, for the two forms and the chain of invariants.</li>
+<li><a href="comparison-of-norms-and-invertibility.html">Comparison of Norms and Invertibility</a>, for the norms of the eight algebras.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors of $\mathbb B$ and their comparison with $\mathbb H$.</li>
+<li><a href="the-eight-algebras-compared.html">The Eight Algebras Compared</a>, for the place of $\mathbb H$ among the eight.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

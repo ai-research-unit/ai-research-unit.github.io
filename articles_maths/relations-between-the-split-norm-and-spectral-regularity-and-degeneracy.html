@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations between the Split Norm and Spectral Regularity and Degeneracy — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relations-between-the-split-norm-and-spectral-regularity-and-degeneracy"><strong>Relations between the Split Norm and Spectral Regularity and Degeneracy</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An element $q=t+bj$ carries two quadratic conditions. The <strong>split norm</strong> $q\bar q=t^2-b^2$ is the determinant of left multiplication and the product of the eigenvalues; it vanishes exactly on the non-units. The <strong>spectral condition</strong> $b^2$ is a quarter of the discriminant and the square of half the eigenvalue difference; it vanishes exactly when the eigenvalues coincide. This article compares them, proves that neither implies the other, and reads the four combinations as four sectors. The mixed sectors are the point: a zero divisor with distinct eigenvalues, and a unit with a repeated one.</p>
+<p><strong>Notation.</strong> An element is $q=t+bj$, its conjugate is $\bar q=t-bj$, and the idempotents are $e_\pm=\tfrac12(1\pm j)$. The idempotent coordinates are $u=t+b$ and $v=t-b$, so that $q=ue_+ +ve_-$, the eigenvalues are $\lambda_+=u$ and $\lambda_-=v$, the split norm is $q\bar q=uv$, and $b=(u-v)/2$. The split norm is indefinite and is not a length. The corpus writes the same element $Q=q+jq'$, with its $q,q'$ equal to $t,b$ here and its $\Pi_\pm$ equal to the $e_\pm$.</p>
+<h2 id="the-two-conditions-in-one-quadratic">The Two Conditions in One Quadratic</h2>
+<p><strong>Definition (the two conditions).</strong> The <strong>split norm</strong> of $q$ is $q\bar q=t^2-b^2$; the element is <strong>norm-regular</strong> when the norm is non-zero and <strong>norm-degenerate</strong> when it is zero. The <strong>spectral condition</strong> is $b^2$; the element is <strong>spectrally regular</strong> when $b\neq0$ and <strong>spectrally degenerate</strong> when $b=0$.</p>
+<p><strong>Theorem (one polynomial carries both).</strong> For every $q$,</p>
+<p>$$
+p_q(X)=X^2-2tX+q\bar q=(X-\lambda_+)(X-\lambda_-),
+\qquad \lambda_\pm=t\pm b.
+$$</p>
+<p>The split norm is the constant term and the product of the eigenvalues; the spectral condition is a quarter of the discriminant and the square of half their difference:</p>
+<p>$$
+q\bar q=\lambda_+\lambda_-,\qquad
+b^2=\frac{(\lambda_+-\lambda_-)^2}{4},\qquad
+\operatorname{disc}p_q=4b^2.
+$$</p>
+<p><em>Proof.</em> The characteristic polynomial of $L_q$ is $X^2-2tX+t^2-b^2$, and its roots are $t\pm b$. The product and the difference of the roots give the displayed identities.</p>
+<p><strong>Corollary.</strong> The split norm vanishes exactly when one eigenvalue is zero; the spectral condition vanishes exactly when the eigenvalues coincide.</p>
+<p><em>Proof.</em> The product is $q\bar q$, and the difference is $\lambda_+-\lambda_-=2b$.</p>
+<p><strong>Proposition (multiplicativity).</strong> For $q_1,q_2\in\mathbb{D}$, $(q_1q_2)\overline{(q_1q_2)}=(q_1\bar q_1)(q_2\bar q_2)$.</p>
+<p><em>Proof.</em> The conjugation is an automorphism and the algebra is commutative: $(q_1q_2)\overline{(q_1q_2)}=q_1q_2\bar q_2\bar q_1=q_1\bar q_1q_2\bar q_2$.</p>
+<p><strong>Proposition (the spectral condition is not multiplicative).</strong> The elements $q_1=2+j$ and $q_2=-2+j$ have $b^2=1$, and $q_1q_2=-3$ has $b^2=0$.</p>
+<p><em>Proof.</em> Direct computation: $(2+j)(-2+j)=-4+2j-2j+1=-3$.</p>
+<p><strong>Corollary (the unit criterion).</strong> For $q\neq0$, $q$ is a unit exactly when $q\bar q\neq0$; then $q^{-1}=\bar q/(q\bar q)$. If the norm vanishes, $q$ is a zero divisor.</p>
+<p><em>Proof.</em> The product $q\bar q$ is real and equals $\bar q q$, so the formula gives an inverse when the denominator is non-zero. When it vanishes and $q\neq0$, the element is a non-unit in a finite-dimensional algebra, hence a zero divisor.</p>
+<h2 id="independence-of-the-two-conditions">Independence of the Two Conditions</h2>
+<p><strong>Theorem (independence).</strong> The two conditions are <strong>independent</strong>: neither implication $q\bar q=0\Rightarrow b=0$ and $b=0\Rightarrow q\bar q=0$ holds, and all four combinations occur.</p>
+<p><em>Proof.</em> Two witnesses.</p>
+<ul>
+<li>$q_1=1+j$ has $q_1\bar q_1=0$ and $b=1$; its spectrum is $\{2,0\}$.</li>
+<li>$q_2=2$ has $q_2\bar q_2=4$ and $b=0$; its spectrum is $\{2\}$.</li>
+</ul>
+<p>The first is norm-degenerate and spectrally regular; the second is norm-regular and spectrally degenerate. The other combinations occur at $2+j$, with norm $3$ and $b=1$, and at $0$.</p>
+<p><strong>Corollary (the zero loci meet only at the origin).</strong> If $q\bar q=0$ and $b=0$, then $t=0$ and $q=0$.</p>
+<p><em>Proof.</em> The second condition gives $b=0$; the first then gives $t^2=0$.</p>
+<p><strong>Corollary (four non-empty sectors).</strong> The four sets</p>
+<p>$$
+\Sigma_{11}=\{q\bar q\neq0,\ b\neq0\},\quad
+\Sigma_{01}=\{q\bar q=0,\ b\neq0\},\quad
+\Sigma_{10}=\{q\bar q\neq0,\ b=0\},\quad
+\Sigma_{00}=\{q\bar q=0,\ b=0\}
+$$</p>
+<p>are all non-empty, and $\mathbb{D}$ is their disjoint union.</p>
+<p><em>Proof.</em> The witnesses lie in the first three, and $0$ lies in the fourth. Each element has one truth value for each condition, so it lies in one combination. The first index is the split norm, $1$ for non-vanishing and $0$ for vanishing; the second is the spectral condition, with the same convention.</p>
+<h2 id="the-null-lines">The Null Lines</h2>
+<p><strong>The null lines are $t=\pm b$; away from the origin their elements are zero divisors with distinct eigenvalues.</strong></p>
+<p><strong>Theorem (the null lines).</strong> For $q\neq0$, the following are equivalent:</p>
+<ol>
+<li>$q\bar q=0$;</li>
+<li>$b=\pm t$;</li>
+<li>$q=2t e_+$ or $q=2t e_-$ with $t\neq0$;</li>
+<li>$\sigma(q)=\{2t,0\}$;</li>
+<li>$q$ is a zero divisor;</li>
+<li>$q$ is spectrally regular.</li>
+</ol>
+<p>Each admits the two-term spectral decomposition $q=2t\,e_\pm +0\cdot e_\mp$.</p>
+<p><em>Proof.</em> (1)$\iff$(2): $t^2-b^2=(t-b)(t+b)$, and $q\neq0$ excludes $t=b=0$. (2)$\iff$(3): if $b=t$, then $q=t(1+j)=2t e_+$; if $b=-t$, then $q=t(1-j)=2t e_-$. (3)$\iff$(4): $e_\pm$ are eigenvectors with eigenvalues $2t$ and $0$, distinct because $t\neq0$. (4)$\iff$(6): the spectrum has two elements exactly when $b\neq0$. (3)$\iff$(5): if $q=2t e_+$ then $qe_-=0$ with $e_-\neq0$, and symmetrically; conversely a zero divisor is a non-unit, so $q\bar q=0$ by the unit criterion.</p>
+<p><strong>Corollary (the annihilators).</strong> On the null cone,</p>
+<p>$$
+\operatorname{ann}(2t e_+)=\mathbb{R}e_-,\qquad
+\operatorname{ann}(2t e_-)=\mathbb{R}e_+,\qquad t\neq0.
+$$</p>
+<p><em>Proof.</em> For $q=2t e_+$ and $w=w_+e_++w_-e_-$, the product is $2t w_+e_+$, which vanishes exactly when $w_+=0$.</p>
+<p><strong>Corollary (the zero-divisor set).</strong> The zero-divisor set is exactly $\Sigma_{01}$, the two null lines with the origin removed. It has real dimension one and four connected components, the rays determined by the sign of $t$; its closure is $\mathcal{N}=\{q\bar q=0\}$.</p>
+<p><em>Proof.</em> The theorem identifies the zero divisors with the non-zero null elements. Each punctured line has the rays $t>0$ and $t<0$.</p>
+<h2 id="the-real-axis-minus-the-origin">The Real Axis Minus the Origin</h2>
+<p><strong>The real axis minus the origin is the sector of units with a repeated eigenvalue: the norm is positive and the spectrum is a singleton.</strong></p>
+<p><strong>Theorem (the real axis).</strong> For $q=t$ with $t\neq0$, one has $q\bar q=t^2>0$, $q^{-1}=1/t$, $\sigma(q)=\{t\}$, and minimal polynomial $X-t$. The element is norm-regular and spectrally degenerate, with the one-term spectral decomposition $q=t\cdot1$.</p>
+<p><em>Proof.</em> The norm is $t^2$, and $1/t$ is the inverse. The characteristic polynomial is $(X-t)^2$, whose only root is $t$; the minimal polynomial is $X-t$ because $q-t=0$.</p>
+<p><strong>Corollary.</strong> The sector $\Sigma_{10}$ is exactly $\mathbb{R}^{\times}$, with the two components $\mathbb{R}_{>0}$ and $\mathbb{R}_{<0}$.</p>
+<p><em>Proof.</em> The conditions are $b=0$ and $t^2-b^2=t^2\neq0$, that is $t\neq0$.</p>
+<p>The sign of the norm does not isolate this sector: $\Sigma_{11}$ also contains elements with positive norm. What isolates it is $b=0$.</p>
+<h2 id="the-origin">The Origin</h2>
+<p><strong>The origin is the unique element degenerate for both conditions, and the two degenerations coincide there.</strong></p>
+<p><strong>Theorem (the doubly degenerate element).</strong> The element $q=0$ is the only one with $q\bar q=0$ and $b=0$. Its spectrum is $\{0\}$, its minimal polynomial is $X$, and it is not a zero divisor.</p>
+<p><em>Proof.</em> The conditions give $t^2=b^2$ and $b=0$, hence $t=0$. The spectrum of $0$ is $\{0\}$ and its minimal polynomial is $X$. The definition of a zero divisor excludes $0$.</p>
+<p>The origin is $\mathcal{N}\cap\mathcal{S}$, the intersection of the null cone and the spectral-degenerate line. It is doubly degenerate but not a zero divisor.</p>
+<h2 id="the-chain-of-invariants">The Chain of Invariants</h2>
+<p><strong>The norm is the constant term of the characteristic polynomial, and the chain stops at the characteristic polynomial.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>invariant</th>
+<th>data</th>
+<th>degeneration types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>split norm</td>
+<td>$q\bar q=t^2-b^2$</td>
+<td>$2$: zero and non-zero</td>
+</tr>
+<tr>
+<td>spectral condition</td>
+<td>$b^2$</td>
+<td>$2$: zero and non-zero</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>$(2t,q\bar q)$</td>
+<td>$4$: the root patterns</td>
+</tr>
+<tr>
+<td>minimal polynomial</td>
+<td>$m_q$</td>
+<td>$4$: no new stratum</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the chain).</strong> The split norm is the constant term of $p_q$. The characteristic polynomial determines $t$ and $b^2=t^2-q\bar q$, hence the sector and the unordered pair of eigenvalues. The minimal polynomial determines the characteristic polynomial by</p>
+<p>$$
+p_q=
+\begin{cases}
+m_q, & \deg m_q=2,\\
+m_q^2, & \deg m_q=1.
+\end{cases}
+$$</p>
+<p>Consequently the minimal polynomial separates exactly the four sectors and adds no stratum.</p>
+<p><em>Proof.</em> The coefficients $2t$ and $q\bar q$ give $t$ and $b^2=t^2-q\bar q$; the eigenvalues $t\pm b$ follow up to order. If $b\neq0$, the minimal polynomial is $p_q$; if $b=0$, it is $X-t$ and its square is $p_q$. The four root patterns are two distinct non-zero roots, two distinct roots with one zero, a double non-zero root, and a double root at zero; they are the four sectors.</p>
+<p>In the biquaternion algebra, as <em><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a></em> proves, the minimal polynomial refines the degenerate cone into a scalar, a nilpotent and a unipotent stratum, and the last two are defective. In $\mathbb{D}$ no refinement exists, because the algebra is reduced and every element is semisimple.</p>
+<h2 id="the-place-of-the-case-among-the-algebras-of-the-corpus">The Place of the Case Among the Algebras of the Corpus</h2>
+<p><strong>The plane is the only algebra of the table in which the conditions are independent and neither creates a defect.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>norm</th>
+<th>spectral-degenerate locus</th>
+<th>defective elements</th>
+<th>$\Sigma_{01}$ non-empty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$t^2+b^2$, positive definite</td>
+<td>real axis</td>
+<td>none</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$t^2-b^2$, indefinite</td>
+<td>real axis</td>
+<td>none</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$t^2+\lVert\vec v\rVert^2$, positive definite</td>
+<td>real axis</td>
+<td>none</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>indefinite</td>
+<td>the cone $\langle\vec v\rangle_{\natural}=0$</td>
+<td>non-zero null vector part</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$Q_t^2+B^2$, complex-valued</td>
+<td>the cone $B^2=0$</td>
+<td>nilpotent and unipotent strata</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>In $\mathbb{C}$ and $\mathbb{H}$ the norm is positive definite and vanishes only at the origin; $\Sigma_{01}$ is empty and the picture has three non-empty cells, with $\Sigma_{00}=\{0\}$. In $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{B}$ the mixed sectors are non-empty, but the degenerate locus is a cone carrying defective elements. In $\mathbb{D}$ the norm is indefinite, the conditions are independent, the degenerate locus is a line, and every element is semisimple. The plane is therefore the unique algebra with four non-empty sectors and no defective stratum; the geometry of the sectors is <em>The Four Sectors of the Split-Complex Algebra</em>.</p>
+<p>The sign of $j^2$ separates the definite norm and complex spectrum of $\mathbb{C}$ from the indefinite norm and real spectrum of $\mathbb{D}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The split norm $q\bar q=t^2-b^2$ is the determinant of $L_q$ and the product of the eigenvalues; it decides invertibility. The spectral condition $b^2$ is a quarter of the discriminant; it decides whether the spectrum is separated. Both sit in $p_q(X)=X^2-2tX+q\bar q$: the norm as constant term, $4b^2$ as discriminant.</p>
+<p>The conditions are independent: $1+j$ has zero norm and eigenvalues $2,0$; $2$ has non-zero norm and repeated eigenvalue $2$. The null lines $t=\pm b$ are the zero divisors; the real axis minus the origin is the group of units with repeated eigenvalue $t$; the origin is the unique element degenerate for both and is not a zero divisor.</p>
+<p>The four combinations are $\Sigma_{11}$, $\Sigma_{01}$, $\Sigma_{10}$ and $\Sigma_{00}$. The norm separates units from non-units, the spectral condition regular from degenerate spectra, and the characteristic polynomial the four sectors. The minimal polynomial adds nothing: it reproduces the same four types, unlike the biquaternion case, where it refines the degenerate cone into three strata. The plane is the unique algebra of the table with four non-empty sectors and no defective element.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}=\mathbb{R}[j]/(j^2-1)$</td>
+<td>the split-complex algebra</td>
+</tr>
+<tr>
+<td>$q=t+bj$</td>
+<td>a general element, $t,b\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\bar q=t-bj$</td>
+<td>the conjugation</td>
+</tr>
+<tr>
+<td>$q\bar q=t^2-b^2$</td>
+<td>the split norm</td>
+</tr>
+<tr>
+<td>$u=t+b,\ v=t-b$</td>
+<td>the idempotent coordinates and the eigenvalues</td>
+</tr>
+<tr>
+<td>$e_\pm=\tfrac12(1\pm j)$</td>
+<td>the two non-trivial idempotents</td>
+</tr>
+<tr>
+<td>$p_q(X)=X^2-2tX+q\bar q$</td>
+<td>the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$b^2=\operatorname{disc}p_q/4$</td>
+<td>the spectral condition</td>
+</tr>
+<tr>
+<td>$\mathcal{N}=\{q\bar q=0\}$</td>
+<td>the null cone, the two null lines</td>
+</tr>
+<tr>
+<td>$\mathcal{S}=\{b=0\}$</td>
+<td>the spectral-degenerate line, the real axis</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with norm $i$ and spectrum $j$</td>
+</tr>
+<tr>
+<td>$m_q$</td>
+<td>the minimal polynomial</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="spectral-regularity-and-degeneracy-in-the-split-complex-algebra.html">Spectral Regularity and Degeneracy in the Split-Complex Algebra</a>, for the eigenvalue problem and the criterion.</li>
+<li><a href="the-four-sectors-of-the-split-complex-algebra.html">The Four Sectors of the Split-Complex Algebra</a>, for the geometry of the four cells.</li>
+<li><a href="zero-divisors-of-the-split-complex-algebra.html">Zero Divisors of the Split-Complex Algebra</a>, for the null lines and the annihilators.</li>
+<li><a href="norm-and-invertibility-in-the-general-split-complex-algebra.html">Norm and Invertibility in the General Split-Complex Algebra</a>, for the split norm.</li>
+<li><a href="eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html">Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number</a>, for the spectral decomposition.</li>
+<li><a href="eigenbasis-of-a-split-complex-number-in-matrix-elements-representations.html">Eigenbasis of a Split-Complex Number in Matrix Elements Representations</a>, for the matrix models.</li>
+<li><a href="worked-examples-of-eigenbasis-of-a-split-complex-number.html">Worked Examples of Eigenbasis of a Split-Complex Number</a>, for computations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

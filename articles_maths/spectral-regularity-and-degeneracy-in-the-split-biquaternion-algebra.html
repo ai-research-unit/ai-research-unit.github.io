@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra"><strong>Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of two copies of the quaternion division algebra. Its spectrum is therefore not a single quaternionic spectrum but the union of two of them: the spectrum of $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$ is the union of the spectra of the halves $Q_+$ and $Q_-$. This article proves the formula and separates the two spectral cases: <strong>regular</strong>, with simple roots, and <strong>degenerate</strong>, with a repeated root.</p>
+<p>The main results are these. The reduced characteristic polynomial is $p_{\tilde Q}=p_+p_-$, with $p_\pm(\lambda)=(\lambda-t_\pm)^2+|\vec q_\pm|^2$. A repeated root occurs exactly when one half is scalar or the half-spectra meet. Every element is semisimple, because each half lies in the division algebra $\mathbb{H}$; there is no defect. The contrast with the biquaternion algebra is sharp: there a complex isotropic vector exists and the spectral cone is defective off the scalar line; here the vector parts are real, their squared norms are sums of squares, and the product of two division algebras removes the defect.</p>
+<p><strong>Conventions.</strong> The split complex unit is $j$, with $j^2=1$, and it is central. The idempotents are $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$. An element is written</p>
+<p>$$
+\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2,\qquad Q_\pm\in\mathbb{H},
+$$</p>
+<p>with</p>
+<p>$$
+Q_\pm=t_\pm+\vec q_\pm,\qquad t_\pm\in\mathbb{R},\qquad
+\vec q_\pm=\sum_{k=x,y,z}q_{\pm k}\vec e_k,\qquad
+|\vec q_\pm|^2=\sum_{k=x,y,z}q_{\pm k}^2,
+$$</p>
+<p>and quaternion norm $|Q_\pm|^2=t_\pm^2+|\vec q_\pm|^2$. The split-biquaternion norm is</p>
+<p>$$
+\langle\tilde Q\rangle_{\natural}=|Q_+|^2\tilde\Pi_1+|Q_-|^2\tilde\Pi_2
+=\sum_{\mu=t,x,y,z}Q_\mu^2,
+$$</p>
+<p>and the reduced norm is $\Delta=|Q_+|^2|Q_-|^2=\langle\tilde Q\rangle_{\natural}\langle\tilde Q\rangle_{\natural}^{*}$. The algebra and idempotents are <em><a href="split-biquaternion-algebra.html">Split-Biquaternion Algebra</a></em> and <em><a href="split-biquaternion-idempotents-and-projections.html">Split-Biquaternion Idempotents and Projections</a></em>; the norm is <em><a href="split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a></em>; the spectrum is <em><a href="split-biquaternion-spectral-theory.html">Split-Biquaternion Spectral Theory</a></em>. The companion articles are <em><a href="relations-between-the-split-biquaternion-reduced-norm-and-spectral-regularity-and-degeneracy.html">The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra</a></em> and <em><a href="the-three-sectors-of-the-split-biquaternion-algebra.html">The Three Sectors of the Split-Biquaternion Algebra</a></em>.</p>
+<h2 id="the-spectrum-as-the-union-of-the-two-half-spectra">The Spectrum as the Union of the Two Half-Spectra</h2>
+<h3 id="the-spectrum-of-a-quaternion-half">The Spectrum of a Quaternion Half</h3>
+<p><strong>Definition (spectrum of a half).</strong> For $Q\in\mathbb{H}$, let $L_Q:\mathbb{H}\to\mathbb{H}$ be left multiplication, $L_Q(X)=QX$. The <strong>spectrum</strong> $\sigma(Q)$ is the set of complex eigenvalues of $L_Q$ after complexification.</p>
+<p><strong>Lemma (the spectrum of a quaternion).</strong> Write $Q=t+\vec q$ with $t\in\mathbb{R}$ and $\vec q\in\mathbb{R}^3$. If $\vec q\neq0$, then</p>
+<p>$$
+\sigma(Q)=\{t+i|\vec q|,\ t-i|\vec q|\},
+$$</p>
+<p>each value occurring with multiplicity two. If $\vec q=0$, then $\sigma(Q)=\{t\}$, with multiplicity four.</p>
+<p><em>Proof.</em> Suppose $\vec q\neq0$ and put $u=\vec q/|\vec q|$. Then $u^2=-1$ and $L_Q=t\,\mathrm{id}+|\vec q|L_u$. Right multiplication $R_u$ is a complex structure commuting with $L_u$, so $\mathbb{H}$ is a two-dimensional complex space and $L_u$ is complex-linear. Since $L_u^2=-\mathrm{id}$ and $\operatorname{tr}L_u=4\,\mathrm{Re}\,u=0$, its eigenvalues are $i$ and $-i$. Hence $L_Q$ has $t\pm i|\vec q|$, each with real multiplicity two. If $\vec q=0$, then $L_Q=t\,\mathrm{id}$ on $\mathbb{R}^4$.</p>
+<h3 id="the-spectrum-of-the-element">The Spectrum of the Element</h3>
+<p><strong>Definition (the spectrum).</strong> The <strong>spectrum</strong> of $\tilde Q$ is the spectrum of the real operator $L_{\tilde Q}$ on $\mathbb{H}_{\mathbb{D}}$, complexified.</p>
+<p><strong>Theorem (the union formula).</strong> For $\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$,</p>
+<p>$$
+\sigma(\tilde Q)
+=\{t_++i|\vec q_+|,\ t_+-i|\vec q_+|\}
+\cup
+\{t_-+i|\vec q_-|,\ t_--i|\vec q_-|\}.
+$$</p>
+<p>Each value contributed by a half occurs twice in the characteristic polynomial of $L_{\tilde Q}$; when a half is scalar, its two values coincide and its contribution has multiplicity four.</p>
+<p><em>Proof.</em> The idempotents $\tilde\Pi_{1,2}$ are central, so for $X=X_+\tilde\Pi_1+X_-\tilde\Pi_2$ one has</p>
+<p>$$
+\tilde QX=(Q_+X_+)\tilde\Pi_1+(Q_-X_-)\tilde\Pi_2.
+$$</p>
+<p>Hence $L_{\tilde Q}$ is the block diagonal operator $\mathrm{diag}(L_{Q_+},L_{Q_-})$ on the two copies of $\mathbb{H}$. The spectrum is the union of the two block spectra, with multiplicities added. The lemma gives the two displayed values and the multiplicities.</p>
+<p><strong>Corollary (the full characteristic polynomial).</strong> Let</p>
+<p>$$
+p_\pm(\lambda)=(\lambda-t_\pm)^2+|\vec q_\pm|^2.
+$$</p>
+<p>The characteristic polynomial of $L_{\tilde Q}$ is</p>
+<p>$$
+\chi_{\tilde Q}(\lambda)=p_+(\lambda)^2p_-(\lambda)^2.
+$$</p>
+<p><em>Proof.</em> By the lemma, the characteristic polynomial of $L_{Q_\pm}$ is $p_\pm^2$: for a non-scalar half the two roots of $p_\pm$ each occur twice, and for a scalar half $p_\pm=(\lambda-t_\pm)^2$ and its square is $(\lambda-t_\pm)^4$. The block diagonal characteristic polynomial is the product.</p>
+<h3 id="the-reduced-characteristic-polynomial">The Reduced Characteristic Polynomial</h3>
+<p><strong>Definition (reduced characteristic polynomial).</strong> The <strong>reduced characteristic polynomial</strong> is</p>
+<p>$$
+p_{\tilde Q}(\lambda)=p_+(\lambda)p_-(\lambda)
+=\bigl((\lambda-t_+)^2+|\vec q_+|^2\bigr)\bigl((\lambda-t_-)^2+|\vec q_-|^2\bigr).
+$$</p>
+<p>It is the monic polynomial with $\chi_{\tilde Q}=p_{\tilde Q}^2$. Its roots are the spectrum values counted once per half.</p>
+<p>Each half contributes its reduced polynomial $p_\pm$; the operator $L_{\tilde Q}$ doubles each factor, and $p_{\tilde Q}$ removes the doubling.</p>
+<h3 id="the-criterion-for-a-repeated-root">The Criterion for a Repeated Root</h3>
+<p><strong>Theorem (repeated roots).</strong> The reduced polynomial $p_{\tilde Q}$ has a repeated root exactly when one of the following holds:</p>
+<ol>
+<li>$\vec q_+=0$;</li>
+<li>$\vec q_-=0$;</li>
+<li>$t_+=t_-$ and $|\vec q_+|=|\vec q_-|$.</li>
+</ol>
+<p><em>Proof.</em> The polynomial $p_\pm$ has discriminant $-4|\vec q_\pm|^2$, so it has a double root exactly when $|\vec q_\pm|=0$, which is cases 1 and 2. A root is shared by $p_+$ and $p_-$ exactly when</p>
+<p>$$
+t_++\varepsilon i|\vec q_+|=t_-+\varepsilon' i|\vec q_-|
+$$</p>
+<p>for some signs $\varepsilon,\varepsilon'\in\{1,-1\}$. If $\varepsilon=\varepsilon'$, comparison of real and imaginary parts gives $t_+=t_-$ and $|\vec q_+|=|\vec q_-|$, which is case 3. If $\varepsilon=-\varepsilon'$, comparison of imaginary parts gives $|\vec q_+|=-|\vec q_-|$, hence both are zero, which is already contained in cases 1 and 2. Conversely, each of the three conditions produces a double root or a shared root.</p>
+<p><strong>Corollary (spectral regularity).</strong> The element is <strong>spectrally regular</strong> exactly when</p>
+<p>$$
+\vec q_+\neq0,\qquad \vec q_-\neq0,\qquad
+(t_+,|\vec q_+|)\neq(t_-,|\vec q_-|).
+$$</p>
+<p>It is <strong>spectrally degenerate</strong> exactly when one of the three cases of the theorem holds.</p>
+<p>The cases overlap at the origin and in the both-scalar part of case 3.</p>
+<h2 id="semisimplicity-and-the-absence-of-defect">Semisimplicity and the Absence of Defect</h2>
+<p><strong>Definition (semisimple and defective).</strong> An element of a finite-dimensional algebra is <strong>semisimple</strong> when its minimal polynomial is squarefree, equivalently when left multiplication by it is diagonalisable over the algebraic closure. An element is <strong>defective</strong> when it is not semisimple.</p>
+<p><strong>Lemma (division algebras have no defect).</strong> Every element of a finite-dimensional division algebra over $\mathbb{R}$ is semisimple.</p>
+<p><em>Proof.</em> Let $a$ be an element of a division algebra $D$ with minimal polynomial $m$. If $m=g^2h$ with $g$ non-constant, minimality gives $g(a)\neq0$ and $h(a)\neq0$, while $g(a)^2h(a)=0$; hence $g(a)$ is a zero divisor, impossible. Hence $m$ is squarefree.</p>
+<p><strong>Theorem (every split biquaternion is semisimple).</strong> Every element of $\mathbb{H}_{\mathbb{D}}$ is semisimple. Consequently there is no defective element and no defective stratum.</p>
+<p><em>Proof.</em> The two halves $Q_\pm$ lie in $\mathbb{H}$, which is a division algebra, so each is semisimple by the lemma. In the direct sum $\mathbb{H}\oplus\mathbb{H}$, the minimal polynomial of $(Q_+,Q_-)$ is the least common multiple of the minimal polynomials of the two halves. A least common multiple of squarefree polynomials is squarefree, so $\tilde Q$ is semisimple.</p>
+<p><strong>Corollary (repetition is not defect).</strong> A repeated root of $p_{\tilde Q}$ does not make $\tilde Q$ defective. A scalar half has a linear minimal polynomial, not the repeated quadratic $p_\pm$; a shared value occurs in two different summands and is recorded once. In both cases the minimal polynomial remains squarefree.</p>
+<h3 id="the-contrast-with-the-biquaternion-complex-cone">The Contrast with the Biquaternion Complex Cone</h3>
+<p>In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the vector part $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ has complex coefficients and</p>
+<p>$$
+B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t.
+$$</p>
+<p>When $B^2=0$ and $\vec Q\neq0$, the vector part is square-zero, so $L_{\vec Q}$ is nilpotent and $Q_te_t+\vec Q$ has minimal polynomial $(X-Q_t)^2$; it is defective. Thus the spectral cone $\{B^2=0\}$ has defect off its scalar line. This is <em><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a></em>, §<em>The Two Cases</em> and §<em>The Degenerate Case: The Cone</em>.</p>
+<p>The split algebra cannot reproduce this phenomenon. Its vector parts have real coefficients, and</p>
+<p>$$
+|\vec q_\pm|^2=q_{\pm x}^2+q_{\pm y}^2+q_{\pm z}^2
+$$</p>
+<p>is a sum of squares, vanishing only at $\vec q_\pm=0$. There is no non-zero isotropic vector, hence no non-zero square-zero vector part, hence no defect of that kind. Structurally, $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is a product of division algebras; a nilpotent in a product would have nilpotent components, and a division algebra has none.</p>
+<p>The product structure explains why a meeting is harmless: in $\mathbb{B}$ the two eigenvalues live in the same simple algebra $M_2(\mathbb{C})$, so coalescence can force a Jordan block; in $\mathbb{H}\oplus\mathbb{H}$ they live in different summands, so it is only an equality of values.</p>
+<h2 id="the-scalar-strata-of-the-halves">The Scalar Strata of the Halves</h2>
+<p><strong>Definition (scalar strata).</strong> The <strong>scalar strata</strong> of the two halves are</p>
+<p>$$
+\mathcal S_+=\{\tilde Q:\vec q_+=0\},\qquad
+\mathcal S_-=\{\tilde Q:\vec q_-=0\}.
+$$</p>
+<p><strong>Proposition (geometry and size).</strong> Each scalar stratum is a real linear subspace of dimension five: one real parameter $t_\pm$ for the scalar half and four real parameters for the other half. Their intersection is the centre,</p>
+<p>$$
+\mathcal S_+\cap\mathcal S_-=\{(t_+,t_-):t_+,t_-\in\mathbb{R}\}=\mathbb{D},
+$$</p>
+<p>of real dimension two.</p>
+<p><em>Proof.</em> The condition $\vec q_+=0$ removes three real coordinates, so $\dim\mathcal S_+=5$; likewise $\dim\mathcal S_-=5$. An element in both has both vector parts zero, so it is a pair of real scalars, exactly the centre $\mathbb{D}$.</p>
+<p><strong>Proposition (the spectrum on a scalar stratum).</strong> On $\mathcal S_+$ the plus half is the real scalar $t_+$, so $p_+=(\lambda-t_+)^2$ has a repeated root; hence $\mathcal S_+\cup\mathcal S_-$ is spectrally degenerate. If $t_+\neq0$ the half is a central unit; if $t_+=0$ it is the zero scalar.</p>
+<p><em>Proof.</em> This is case 1 of the repeated-root theorem. The unit and zero-divisor assertions are the invertibility criterion in the idempotent basis.</p>
+<p>The scalar strata are the parts of the spectral-degenerate locus where the repetition happens inside one half. The remaining part is the <strong>meeting locus</strong></p>
+<p>$$
+\mathcal M=\{\tilde Q:\vec q_+\neq0,\ \vec q_-\neq0,\ t_+=t_-,\ |\vec q_+|=|\vec q_-|\},
+$$</p>
+<p>where two non-scalar halves share a spectrum value. The spectral-degenerate locus is the union</p>
+<p>$$
+\{\text{repeated root}\}=\mathcal S_+\cup\mathcal S_-\cup\mathcal M.
+$$</p>
+<p>The scalar strata are linear; the meeting locus is not, being cut out by the equality of two norms.</p>
+<h2 id="summary">Summary</h2>
+<p>The spectrum of a split biquaternion is the union of the spectra of its two quaternion halves. A half $Q=t+\vec q$ contributes $t\pm i|\vec q|$, each value twice; when the half is scalar the two values coincide and the multiplicity is four. The reduced characteristic polynomial is $p_{\tilde Q}=p_+p_-$, with $p_\pm=(\lambda-t_\pm)^2+|\vec q_\pm|^2$, and the full characteristic polynomial of left multiplication is $p_{\tilde Q}^2$.</p>
+<p>A repeated root occurs exactly when one half is scalar or when the two half-spectra meet. The three cases are $\vec q_+=0$, $\vec q_-=0$, and $t_+=t_-$ with $|\vec q_+|=|\vec q_-|$. Spectral regularity is the negation of this list.</p>
+<p>Every element is semisimple, because each half lies in $\mathbb{H}$ and a direct sum of semisimple elements is semisimple. There is no defective element: a repeated root is a repetition of a value, not a Jordan block. The scalar strata are five-dimensional and meet in the two-dimensional centre; the biquaternion algebra, by contrast, has a complex vector part and defective elements off the scalar line. The product structure of the split algebra separates the two eigenvalue problems, and that is why the defect disappears.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{H}\oplus\mathbb{H}$</td>
+<td>Split-biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{1,2}=\tfrac12(1\pm j)$</td>
+<td>Central idempotents</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_+\tilde\Pi_1+Q_-\tilde\Pi_2$</td>
+<td>Idempotent decomposition into two quaternion halves</td>
+</tr>
+<tr>
+<td>$Q_\pm=t_\pm+\vec q_\pm$</td>
+<td>A half, with real scalar part and real vector part</td>
+</tr>
+<tr>
+<td>$\lvert Q_\pm\rvert^2=t_\pm^2+\lvert\vec q_\pm\rvert^2$</td>
+<td>Quaternion norm of a half</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\lvert Q_+\rvert^2\tilde\Pi_1+\lvert Q_-\rvert^2\tilde\Pi_2$</td>
+<td>Split-biquaternion norm</td>
+</tr>
+<tr>
+<td>$\Delta=\lvert Q_+\rvert^2\lvert Q_-\rvert^2$</td>
+<td>Reduced norm</td>
+</tr>
+<tr>
+<td>$p_\pm(\lambda)=(\lambda-t_\pm)^2+\lvert\vec q_\pm\rvert^2$</td>
+<td>Reduced characteristic polynomial of a half</td>
+</tr>
+<tr>
+<td>$p_{\tilde Q}=p_+p_-$</td>
+<td>Reduced characteristic polynomial of the element</td>
+</tr>
+<tr>
+<td>$\chi_{\tilde Q}=p_{\tilde Q}^2$</td>
+<td>Characteristic polynomial of $L_{\tilde Q}$</td>
+</tr>
+<tr>
+<td>$\sigma(\tilde Q)$</td>
+<td>Spectrum, the union of the two half-spectra</td>
+</tr>
+<tr>
+<td>$\mathcal S_\pm=\{\vec q_\pm=0\}$</td>
+<td>Scalar strata of the halves</td>
+</tr>
+<tr>
+<td>$\mathcal M$</td>
+<td>Meeting locus of the two non-scalar half-spectra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="split-biquaternion-algebra.html">Split-Biquaternion Algebra</a>, for the algebra, its idempotents and the isomorphism $\mathbb{H}\oplus\mathbb{H}$.</li>
+<li><a href="split-biquaternion-idempotents-and-projections.html">Split-Biquaternion Idempotents and Projections</a>, for the four idempotents.</li>
+<li><a href="split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a>, for the norm, the reduced norm and the unit criterion.</li>
+<li><a href="split-biquaternion-spectral-theory.html">Split-Biquaternion Spectral Theory</a>, for left multiplication and the quaternionic spectra.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the complex cone and the defective elements off the scalar line.</li>
+<li><a href="relations-between-the-split-biquaternion-reduced-norm-and-spectral-regularity-and-degeneracy.html">The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra</a>, for the comparison of the two predicates.</li>
+<li><a href="the-three-sectors-of-the-split-biquaternion-algebra.html">The Three Sectors of the Split-Biquaternion Algebra</a>, for the cells and their dimensions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

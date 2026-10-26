@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relations between the Quaternion Norm and Spectral Regularity and Degeneracy — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy"><strong>Relations between the Quaternion Norm and Spectral Regularity and Degeneracy</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two quadratic conditions single out the spectral behaviour of a quaternion. The first is the quaternion norm $|\tilde q|^2=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, which is multiplicative and positive definite. The second is the squared length $|\vec q|^2$ of the vector part, which is the discriminant of the eigenvalue problem. This article compares the two forms, proves that they are independent, identifies the cells they cut in $\mathbb H$, and shows that the real axis minus the origin is precisely the set where norm regularity and spectral degeneracy coexist. The origin is the only doubly degenerate point, and the norm-degenerate set is $\{0\}$, which contains no zero divisor.</p>
+<p>The algebra is <a href="quaternion-algebra.html">Quaternion Algebra</a>; the norm and invertibility are <a href="norm-and-invertibility-in-the-quaternion-algebra.html">Norm and Invertibility in the Quaternion Algebra</a>; the spectral criterion is <a href="spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html">Spectral Regularity and Degeneracy in the Quaternion Algebra</a>; the sectors are <a href="the-three-sectors-of-the-quaternion-algebra.html">The Three Sectors of the Quaternion Algebra</a>; the comparison of the eight algebras is <a href="comparison-of-the-algebras.html">Comparison of the Algebras</a>.</p>
+<p><strong>Notation.</strong> $\tilde q=q_t+\vec q=q_t e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\vec q^2=-|\vec q|^2e_t$, $\tilde q^{\natural}=q_t-\vec q$, $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$, $s=|\vec q|$.</p>
+<h2 id="the-two-quadratic-forms">The Two Quadratic Forms</h2>
+<p><strong>Definition.</strong> The <strong>quaternion norm</strong> is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+s^2$. The <strong>spectral form</strong> is $s^2=|\vec q|^2=q_x^2+q_y^2+q_z^2$. A quaternion is <strong>norm-regular</strong> if $\langle\tilde q\rangle_{\natural}\ne0$ and <strong>norm-degenerate</strong> if $\langle\tilde q\rangle_{\natural}=0$; it is <strong>spectrally regular</strong> if $s^2\ne0$ and <strong>spectrally degenerate</strong> if $s^2=0$.</p>
+<p><strong>Theorem (the two radicals).</strong> The norm is positive definite of rank four, with radical $\{0\}$:
+$$\langle\tilde q\rangle_{\natural}=0\iff\tilde q=0.$$
+The spectral form is positive semidefinite of rank three, with radical the real axis:
+$$s^2=0\iff\tilde q\in\mathbb R.$$
+Hence $\tilde q$ is norm-regular exactly when $\tilde q\ne0$, and spectrally regular exactly when $\tilde q\notin\mathbb R$.</p>
+<p><em>Proof.</em> Both forms are sums of squares of real coordinates. The norm is the sum of all four squares, so it vanishes only when all four coordinates vanish. The spectral form is the sum of the three vector squares, so it vanishes exactly when the vector part vanishes, that is, when $\tilde q=q_t\in\mathbb R$.</p>
+<p><strong>Theorem (the inequality).</strong> For every $\tilde q$,
+$$|\tilde q|^2=q_t^2+s^2\ge s^2\ge0,$$
+with equality $|\tilde q|^2=s^2$ exactly on the imaginary axis $q_t=0$. Both forms vanish together only at the origin.</p>
+<p><em>Proof.</em> $q_t^2\ge0$ and $s^2\ge0$; the first inequality is equality exactly when $q_t=0$. The last assertion is the two radicals: $\{0\}\cap\mathbb R=\{0\}$.</p>
+<p><strong>Proposition (multiplicativity).</strong> The norm is multiplicative and conjugation-invariant:
+$$|\tilde q_1\tilde q_2|^2=|\tilde q_1|^2|\tilde q_2|^2,\qquad |\tilde q^{\natural}|^2=|\tilde q|^2.$$
+The spectral form is conjugation-invariant but not multiplicative: $\vec e_x\vec e_x=-e_t$ gives $s^2(\vec e_x)s^2(\vec e_x)=1$ while $s^2(-e_t)=0$.</p>
+<p><em>Proof.</em> The norm identity is the multiplicativity of the quaternion norm; the conjugation identity is immediate from $q_t^2+s^2$. The counterexample computes both sides.</p>
+<p><strong>Corollary (the one-way implication).</strong> Spectral regularity implies norm regularity. Norm degeneracy implies spectral degeneracy. The converses fail.</p>
+<p><em>Proof.</em> $s^2>0$ gives $q_t^2+s^2>0$; $|\tilde q|^2=0$ gives $\tilde q=0\in\mathbb R$. The converses fail at $\tilde q=1$ and at $\tilde q=0$ respectively.</p>
+<h2 id="independence">Independence</h2>
+<p><strong>Theorem (the forms are independent).</strong> The two quadratic forms are not proportional, and neither determines the other.</p>
+<p><em>Proof.</em> If $|\tilde q|^2=c\,s^2$ for every $\tilde q$, evaluation at $\tilde q=1$ gives $1=0$, impossible. The forms are independent: $\tilde q=1$ and $\tilde q=2$ have $s^2=0$ but norms $1$ and $4$, so $s^2$ does not determine the norm; $\tilde q=2$ and $\tilde q=\sqrt3\,e_t+\vec e_x$ both have norm $4$ but $s^2=0$ and $1$, so the norm does not determine $s^2$.</p>
+<p><strong>Corollary (the zero loci are nested, not equal).</strong> The norm-degenerate set is $\{0\}$, the spectral-degenerate set is $\mathbb R$, and
+$$\{0\}\subsetneq\mathbb R.$$
+The only implication between the two degeneracies is norm degeneracy $\Rightarrow$ spectral degeneracy; the reverse fails on $\mathbb R^\times$.</p>
+<p><strong>Remark.</strong> The forms are independent because the same norm can carry different spectral behaviour and vice versa. The predicates are not symmetric: the norm's radical lies in the spectral radical, and this one-way dependence is the inequality $q_t^2+s^2\ge s^2$.</p>
+<h2 id="the-real-axis-minus-the-origin">The Real Axis Minus the Origin</h2>
+<p><strong>Theorem.</strong> The set
+$$\Sigma_{10}=\{\tilde q:|\tilde q|^2\ne0,\ s^2=0\}=\mathbb R^\times$$
+consists exactly of the nonzero real quaternions. Every element is norm-regular and spectrally degenerate. It is a one-dimensional subgroup of $\mathbb H^\times$, central in $\mathbb H$, with two connected components $\mathbb R_{>0}$ and $\mathbb R_{<0}$.</p>
+<p><em>Proof.</em> $s^2=0$ gives $\tilde q=q_t$; norm regularity gives $q_t\ne0$. The inverse of $q_t$ is $q_t^{-1}$, and the set is closed under multiplication; it is central because real scalars commute with every quaternion. The two signs give the two components.</p>
+<p><strong>Theorem (the operator on $\Sigma_{10}$).</strong> For $\tilde q=q_t\ne0$, $L_{\tilde q}=q_t\,\mathrm{id}$, the spectrum is $\{q_t\}$, the eigenspace is all of $\mathbb H_{\mathbb C}$, and the minimal polynomial is $\lambda-q_t$. The element is semisimple, and its spectrum is a single nonzero real point.</p>
+<p><em>Proof.</em> The matrix is scalar and $q_t\ne0$; the minimal polynomial is linear and squarefree.</p>
+<p><strong>Remark (the only coexistence).</strong> $\Sigma_{10}$ is the only cell in which a quaternion is norm-regular and spectrally degenerate. Its elements are units, so spectral degeneracy here is neither non-invertibility nor defect; it is the collapse of the two eigenvalues onto the real axis. The comparison with the split and biquaternion algebras, where norm-regular spectrally degenerate elements can be defective, is in <a href="spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html">Spectral Regularity and Degeneracy in the Quaternion Algebra</a>.</p>
+<h2 id="the-origin">The Origin</h2>
+<p><strong>Theorem.</strong> The set
+$$\Sigma_{00}=\{\tilde q:|\tilde q|^2=0,\ s^2=0\}=\{0\}$$
+is the unique doubly degenerate point. The origin is the only non-unit of $\mathbb H$, the only element of the norm-degenerate set, and the only element whose spectrum is $\{0\}$ with $L_0=0$.</p>
+<p><em>Proof.</em> Norm degeneracy gives $\tilde q=0$; the origin is real, hence spectrally degenerate. The spectrum of $L_0$ is $\{0\}$, the characteristic polynomial is $\lambda^4$, and the minimal polynomial is $\lambda$.</p>
+<p><strong>Proposition.</strong> The origin is semisimple: $\mathbb R[0]=\mathbb R$ is a field, and the minimal polynomial $\lambda$ is squarefree. It lies in the closure of both $\Sigma_{11}$ and $\Sigma_{10}$.</p>
+<p><em>Proof.</em> The algebra is $\mathbb R$; every neighborhood of $0$ contains non-real quaternions and nonzero real quaternions.</p>
+<p><strong>Remark (no cone).</strong> The doubly degenerate set is a point, not a cone. In the split-quaternion and biquaternion algebras the corresponding set is a cone with nonzero points; here the positive definiteness of both forms collapses it to the origin.</p>
+<h2 id="the-norm-degenerate-set">The Norm-Degenerate Set</h2>
+<p><strong>Theorem.</strong> The norm-degenerate set is $\{0\}$. It contains no zero divisor, and $\mathbb H$ has no zero divisor: if $\tilde q_1\tilde q_2=0$, then $\tilde q_1=0$ or $\tilde q_2=0$.</p>
+<p><em>Proof.</em> $|\tilde q_1\tilde q_2|^2=|\tilde q_1|^2|\tilde q_2|^2$; if the product is zero, one factor has norm zero, hence is zero. The zero element is excluded from the definition of a zero divisor, so $\{0\}$ contains none.</p>
+<p><strong>Corollary.</strong> Every nonzero quaternion is a unit, and the unit group is $\mathbb H^\times=\mathbb H\setminus\{0\}$.</p>
+<p><strong>Remark (the name).</strong> "Norm-degenerate" does not mean "zero divisor": the only norm-degenerate element is the zero, and the zero is not a zero divisor. The norm-degenerate set is the smallest possible, a single point.</p>
+<h2 id="the-place-among-the-eight-algebras">The Place among the Eight Algebras</h2>
+<p>The eight algebras are $\mathbb R$, $\mathbb C$, $\mathbb D$, $\mathbb D'$, $\mathbb H$, $\mathbb H_{\mathrm{s}}$, $\mathbb B$ and $\mathbb H_{\mathbb D}$. The table records the two conditions; for $\mathbb H_{\mathbb D}$ the norm is split-complex valued and the spectral column is read on the two quaternion factors.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>norm</th>
+<th>norm-degenerate</th>
+<th>spectrally degenerate</th>
+<th>$\Sigma_{01}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb R$</td>
+<td>$a^2$</td>
+<td>$\{0\}$</td>
+<td>all</td>
+<td>$\varnothing$</td>
+</tr>
+<tr>
+<td>$\mathbb C$</td>
+<td>$a^2+b^2$</td>
+<td>$\{0\}$</td>
+<td>real axis</td>
+<td>$\varnothing$</td>
+</tr>
+<tr>
+<td>$\mathbb D$</td>
+<td>$a^2-b^2$</td>
+<td>$a=\pm b$</td>
+<td>real axis</td>
+<td>nonempty</td>
+</tr>
+<tr>
+<td>$\mathbb D'$</td>
+<td>$a^2$</td>
+<td>imaginary axis</td>
+<td>all</td>
+<td>$\varnothing$</td>
+</tr>
+<tr>
+<td>$\mathbb H$</td>
+<td>$q_t^2+q_x^2+q_y^2+q_z^2$</td>
+<td>$\{0\}$</td>
+<td>real axis</td>
+<td>$\varnothing$</td>
+</tr>
+<tr>
+<td>$\mathbb H_{\mathrm{s}}$</td>
+<td>$q_t^2+q_x^2-q_y^2-q_z^2$</td>
+<td>null cone</td>
+<td>isotropic cone of $\vec q$</td>
+<td>nonempty</td>
+</tr>
+<tr>
+<td>$\mathbb B$</td>
+<td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2$ (complex)</td>
+<td>null cone</td>
+<td>$Q_x^2+Q_y^2+Q_z^2=0$</td>
+<td>nonempty</td>
+</tr>
+<tr>
+<td>$\mathbb H_{\mathbb D}$</td>
+<td>split-complex valued, anisotropic</td>
+<td>$\{0\}$</td>
+<td>read on the factors</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the place of $\mathbb H$).</strong> Among the eight, $\mathbb H$ is the only noncommutative division algebra, the only one whose norm is positive definite and whose spectral form has rank three. It is one of the four rows with $\Sigma_{01}=\varnothing$, the others being $\mathbb R$, $\mathbb C$ and $\mathbb D'$. The three rows with $\Sigma_{01}\ne\varnothing$ are $\mathbb D$, $\mathbb H_{\mathrm{s}}$ and $\mathbb B$.</p>
+<p><em>Proof.</em> The norms and signatures are those of <a href="comparison-of-norms-and-invertibility.html">Comparison of Norms and Invertibility</a>. The emptiness of $\Sigma_{01}$ in $\mathbb H$ is the implication of the previous section; in $\mathbb R$, $\mathbb C$ and $\mathbb D'$ it follows from the table. The nonemptiness in $\mathbb D$ is witnessed by $1+j$, with norm $0$ and eigenvalues $2,0$; in $\mathbb H_{\mathrm{s}}$ by $1+\vec e_y$, with norm $0$ and $\vec q^2=+1$; in $\mathbb B$ by $1+i\vec e_x$, with norm $0$ and $B^2=-1$.</p>
+<h2 id="the-chain-of-invariants">The Chain of Invariants</h2>
+<p><strong>Theorem (the chain).</strong> The following implication chain holds, and its middle implication is strict:
+$$\tilde q=0\iff|\tilde q|^2=0\implies s^2=0\iff\tilde q\in\mathbb R.$$
+The failure of the reverse implication is exactly $\Sigma_{10}=\mathbb R^\times$.</p>
+<p><em>Proof.</em> The first equivalence is positive definiteness; the implication is $s^2\le|\tilde q|^2$; the second equivalence is the radical of the spectral form. It fails at $\tilde q=1$.</p>
+<p><strong>The invariants.</strong> The norm $|\tilde q|^2$ decides invertibility; the spectral form $s^2$ decides the separation of the eigenvalues; the scalar part $q_t$ locates the centre of the spectrum and separates the positive and negative components of $\Sigma_{10}$. The pair $(q_t,s)$ gives the spectrum $q_t\pm is$ and the polar angle.</p>
+<p><strong>Corollary (the four sectors).</strong> The truth values of the two conditions partition $\mathbb H$ into
+$$\Sigma_{11}=\mathbb H\setminus\mathbb R,\qquad \Sigma_{10}=\mathbb R^\times,\qquad \Sigma_{01}=\varnothing,\qquad \Sigma_{00}=\{0\}.$$
+The partition, its dimensions and its closures are the subject of <a href="the-three-sectors-of-the-quaternion-algebra.html">The Three Sectors of the Quaternion Algebra</a>.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion norm $q_t^2+s^2$ and the spectral form $s^2$ are independent quadratic forms: neither is proportional to the other, and neither determines the other. The norm is positive definite with radical $\{0\}$; the spectral form is positive semidefinite of rank three with radical the real axis. Hence the norm-degenerate set is $\{0\}$ and the spectral-degenerate set is $\mathbb R$, with $\{0\}\subsetneq\mathbb R$. The real axis minus the origin is exactly the set of norm-regular, spectrally degenerate elements; these are the nonzero real scalars, all units and all semisimple. The origin is the only doubly degenerate point, the only non-unit and the only element of the norm-degenerate set, which contains no zero divisor.</p>
+<p>Among the eight, $\mathbb H$ is the only noncommutative division algebra with both forms positive definite. The cell $\Sigma_{01}$ is empty for $\mathbb R,\mathbb C,\mathbb D',\mathbb H$ and nonempty for $\mathbb D,\mathbb H_{\mathrm{s}},\mathbb B$. The chain
+$$\tilde q=0\iff|\tilde q|^2=0\implies s^2=0\iff\tilde q\in\mathbb R$$
+has one strict implication, whose failure is $\mathbb R^\times$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$</td>
+<td>the quaternion norm</td>
+</tr>
+<tr>
+<td>$|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$s=|\vec q|$</td>
+<td>the length of the vector part</td>
+</tr>
+<tr>
+<td>$s^2=|\vec q|^2$</td>
+<td>the spectral form</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the cell with norm truth value $i$ and spectral truth value $j$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}=\mathbb R^\times$</td>
+<td>norm-regular, spectrally degenerate</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}=\{0\}$</td>
+<td>doubly degenerate</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}=\varnothing$</td>
+<td>norm-degenerate, spectrally regular</td>
+</tr>
+<tr>
+<td>$\mathbb D,\mathbb D'$</td>
+<td>split-complex and dual numbers</td>
+</tr>
+<tr>
+<td>$\mathbb H_{\mathrm{s}},\mathbb B,\mathbb H_{\mathbb D}$</td>
+<td>split-quaternion, biquaternion, split-biquaternion algebras</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="quaternion-algebra.html">Quaternion Algebra</a>, for the multiplication and the scalar–vector decomposition.</li>
+<li><a href="norm-and-invertibility-in-the-quaternion-algebra.html">Norm and Invertibility in the Quaternion Algebra</a>, for the norm, its multiplicativity and the unit group.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html">Spectral Regularity and Degeneracy in the Quaternion Algebra</a>, for the spectral criterion and the minimal polynomial.</li>
+<li><a href="the-three-sectors-of-the-quaternion-algebra.html">The Three Sectors of the Quaternion Algebra</a>, for the partition, dimensions and closures.</li>
+<li><a href="comparison-of-norms-and-invertibility.html">Comparison of Norms and Invertibility</a>, for the norms and signatures of the eight algebras.</li>
+<li><a href="comparison-of-the-algebras.html">Comparison of the Algebras</a>, for the master table of the eight.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the biquaternion norm, its null cone and the four sectors.</li>
+<li><a href="split-quaternion-norm-and-invertibility.html">Split-Quaternion Norm and Invertibility</a>, for the indefinite norm and its null cone.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

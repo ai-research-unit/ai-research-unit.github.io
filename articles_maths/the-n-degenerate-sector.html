@@ -70,25 +70,25 @@
       <div class="article-body">
         <h1 id="the-n-degenerate-sector"><strong>The N-Degenerate Sector</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The quaternionic norm $N(\tilde Q)=Q_t^2+B^2$ is the one multiplicative norm of the biquaternion algebra. Its zero set is the <strong>$N$-degenerate sector</strong>,</p>
+<p>The quaternionic norm $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ is the one multiplicative norm of the biquaternion algebra. Its zero set is the <strong>$\natural$-degenerate sector</strong>,</p>
 <p>$$
-\mathcal{N}=\{\tilde Q\in\mathbb{B}:N(\tilde Q)=0\},
+\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\},
 $$</p>
 <p>the <strong>null cone</strong>. It contains the origin at its apex and the zero divisors at its punctured points. This article studies the sector as a set: its characterisation, its three strata, its geometry and link, its matrix picture, its multiplicative structure, the degeneration of the polar decomposition on it, and the way the spectral condition sits inside it. Its partner is <em>The N-Regular Sector</em>, the group of units.</p>
 <p>The cone is split by the scalar part into two strata, the <strong>pure</strong> stratum of nilpotents and the <strong>non-pure</strong> stratum of complex multiples of idempotents. On the cone this split coincides exactly with the spectral split: the pure stratum, with the origin adjoined, is the doubly degenerate cell $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular cell $\Sigma_{01}$. That coincidence is special to the cone and is the main structural link between the norm partition and the spectral partition.</p>
 <p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The <strong>quaternionic norm</strong> is</p>
 <p>$$
-N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
+\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
 $$</p>
 <p>a complex scalar; it is multiplicative. The <strong>spectral-degenerate cone</strong> is $\mathcal{S}=\{B^2=0\}$. The product is the plain product, with unit $e_t$. A <strong>sector</strong> is one of the two halves selected by the norm; a <strong>cell</strong> is one of the four intersections $\Sigma_{ij}$ selected by the norm and the spectrum together. The <strong>pure stratum</strong> is written $\mathcal{N}_{\mathrm{p}}$ and the <strong>non-pure stratum</strong> $\mathcal{N}_{\mathrm{np}}$.</p>
 <h2 id="definition-and-characterisation">Definition and Characterisation</h2>
-<p><strong>Definition.</strong> The <strong>$N$-degenerate sector</strong> is the null cone</p>
+<p><strong>Definition.</strong> The <strong>$\natural$-degenerate sector</strong> is the null cone</p>
 <p>$$
-\mathcal{N}=\{\tilde Q:N(\tilde Q)=0\},
+\mathcal{N}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\},
 $$</p>
 <p>and the <strong>zero-divisor set</strong> is its punctured part $\mathcal{Z}=\mathcal{N}\setminus\{0\}$.</p>
 <p><strong>Theorem (the criterion).</strong> For $\tilde Q\in\mathbb{B}$ the following are equivalent:</p>
-<p>(i) $N(\tilde Q)=0$;</p>
+<p>(i) $\langle\tilde Q\rangle_{\natural}=0$;</p>
 <p>(ii) $\det\mathsf{M}_2(\tilde Q)=0$;</p>
 <p>(iii) $\tilde Q$ is not invertible;</p>
 <p>(iv) $\tilde Q\tilde Q^{\natural}=0$;</p>
@@ -98,12 +98,12 @@ $$</p>
 <p>(vii) $\tilde Q$ is a zero divisor;</p>
 <p>(viii) $L_{\tilde Q}$ has complex rank $2$;</p>
 <p>(ix) $\mathsf{M}_2(\tilde Q)$ has rank $1$.</p>
-<p><em>Proof.</em> (i)$\iff$(iv) is the identity $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_t$. (i)$\iff$(ii) is the matrix picture, where the determinant is the norm. (ii)$\iff$(iii) is the determinant criterion for invertibility. (iii)$\iff$(v),(vi): an element is invertible exactly when its left and right translations are bijective. (vii) is the zero-divisor criterion of <em>N-Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The $N$-degenerate case: the origin together with the zero divisors</em>. For (viii) and (ix), a non-zero singular $2\times2$ matrix has rank one, and the left translation has complex rank twice the rank of the matrix.</p>
+<p><em>Proof.</em> (i)$\iff$(iv) is the identity $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$. (i)$\iff$(ii) is the matrix picture, where the determinant is the norm. (ii)$\iff$(iii) is the determinant criterion for invertibility. (iii)$\iff$(v),(vi): an element is invertible exactly when its left and right translations are bijective. (vii) is the zero-divisor criterion of <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>, §<em>The $\natural$-degenerate case: the origin together with the zero divisors</em>. For (viii) and (ix), a non-zero singular $2\times2$ matrix has rank one, and the left translation has complex rank twice the rank of the matrix.</p>
 <p><strong>Theorem (the cone is a complex hypersurface).</strong> The cone is a complex algebraic cone of complex dimension three and real dimension six, defined by one complex equation, hence by two real equations. It is closed, of empty interior, irreducible, and of real codimension two.</p>
 <p><em>Proof.</em> The norm is a non-degenerate quadratic form in four complex variables, hence irreducible over $\mathbb{C}$ and not the zero polynomial. Its zero set is a hypersurface of complex dimension three; one complex equation is two real equations, so the real codimension is two. A proper algebraic subset has empty interior.</p>
 <p><strong>Theorem (the cone is a semigroup ideal).</strong> For all $\tilde P,\tilde Q$,</p>
 <p>$$
-N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q).
+\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
 $$</p>
 <p>Hence if either factor lies in $\mathcal{N}$, so does the product. The cone is closed under multiplication on the left and on the right by any element of the algebra:</p>
 <p>$$
@@ -158,7 +158,7 @@ $$</p>
 <p><em>Proof.</em> Two elements are conjugate exactly when they have the same Jordan form. A non-zero nilpotent of index two in dimension two has the single Jordan form $\begin{pmatrix}0&1\\0&0\end{pmatrix}$. A non-trivial idempotent has eigenvalues $1,0$ and is diagonalisable, so all non-trivial idempotents are conjugate; multiplying by $c$ scales the eigenvalues to $c,0$, and the scalar $c$ is preserved by conjugation. The scalar part is $c/2$.</p>
 <h2 id="geometry">Geometry</h2>
 <p><strong>Theorem (the cone and its apex).</strong> The cone is a complex cone of real dimension six, invariant under every complex scalar. It is smooth off the origin, and the origin is its only singular point. It is contractible.</p>
-<p><em>Proof.</em> The norm is homogeneous, $N(\lambda\tilde Q)=\lambda^2N(\tilde Q)$, so the zero set is a cone. Its gradient is $2(Q_t,Q_x,Q_y,Q_z)$, which vanishes only at the origin; off the apex the cone is a smooth complex three-fold. The straight-line homotopy $\tilde Q\mapsto(1-s)\tilde Q$ contracts it to the apex.</p>
+<p><em>Proof.</em> The norm is homogeneous, $\langle\lambda\tilde Q\rangle_{\natural}=\lambda^2\langle\tilde Q\rangle_{\natural}$, so the zero set is a cone. Its gradient is $2(Q_t,Q_x,Q_y,Q_z)$, which vanishes only at the origin; off the apex the cone is a smooth complex three-fold. The straight-line homotopy $\tilde Q\mapsto(1-s)\tilde Q$ contracts it to the apex.</p>
 <p><strong>Theorem (the link).</strong> The link</p>
 <p>$$
 L=\mathcal{N}\cap S^7_E
@@ -222,10 +222,10 @@ $$</p>
 <p><em>Proof.</em> Closure is the multiplicativity of the norm. The identity $e_t$ is not null, so there is no identity. For the two behaviours, $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_+\tilde\Pi_+=\tilde\Pi_+\neq0$.</p>
 <p><strong>Remark (the pure product).</strong> For a pure element $\nu$, $\nu^{\natural}=-\nu$ and $\nu\nu^{\natural}=-\nu^2=0$. The conjugate of a pure null element is a pure null element, and their product is zero. The pure stratum therefore contains many pairs of orthogonal elements.</p>
 <p><strong>Theorem (no inverses).</strong> No element of the cone is invertible. The equations $\tilde Q\tilde X=e_t$ and $\tilde X\tilde Q=e_t$ have no solution in $\mathbb{B}$.</p>
-<p><em>Proof.</em> An invertible element has non-zero norm, and the norm is multiplicative with $N(e_t)=1$. The one-sided equations would make $\tilde Q$ invertible.</p>
+<p><em>Proof.</em> An invertible element has non-zero norm, and the norm is multiplicative with $\langle e_t\rangle_{\natural}=1$. The one-sided equations would make $\tilde Q$ invertible.</p>
 <p><strong>Remark (the cone is stable under similarity).</strong> For $\tilde P\in\mathbb{B}^{\times}$ and $\tilde Q\in\mathcal{N}$,</p>
 <p>$$
-N(\tilde P\tilde Q\tilde P^{-1})=N(\tilde Q)=0,
+\langle\tilde P\tilde Q\tilde P^{-1}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}=0,
 $$</p>
 <p>so the cone is invariant under conjugation by the units. The similarity classes inside it are the pure stratum and the idempotent multiples, as in §<em>The Three Strata</em>.</p>
 <p><strong>Remark (the product with a unit).</strong> A product of a null element and a unit is null by multiplicativity, and it can be zero or non-zero. In the matrix picture, multiplying a rank-one matrix by an invertible matrix on either side keeps the rank one; the result is zero exactly when the images and kernels align.</p>
@@ -238,7 +238,7 @@ $$</p>
 \tilde Q_0=\tilde Q_H^{+}\tilde Q,
 $$</p>
 <p>with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. For $\tilde Q\neq0$, $\tilde Q_H$ has rank one, $\tilde Q_0$ is not unitary, and its final projection is a rank-one projection. At the origin both factors vanish.</p>
-<p><em>Proof.</em> The existence and uniqueness are <em>The Polar Decomposition of a Biquaternion</em>, §<em>Uniqueness</em>; the rank and partial-isometry statements are <em>The Polar Decomposition of an N-Degenerate Biquaternion</em>, §<em>The Two-Factor Decomposition</em>.</p>
+<p><em>Proof.</em> The existence and uniqueness are <em>The Polar Decomposition of a Biquaternion</em>, §<em>Uniqueness</em>; the rank and partial-isometry statements are <em>The Polar Decomposition of a N-Degenerate Biquaternion</em>, §<em>The Two-Factor Decomposition</em>.</p>
 <p><strong>Theorem (the Hermitian factor).</strong> For $\tilde Q\neq0$ on the cone, write $\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{*}e_t+i\vec W$ with $\vec W$ real and put</p>
 <p>$$
 a=\sqrt{\frac{\langle\tilde Q\rangle_{*}}{2}},
@@ -246,7 +246,7 @@ a=\sqrt{\frac{\langle\tilde Q\rangle_{*}}{2}},
 \tilde Q_H=a\,e_t+\frac{i}{2a}\,\vec W .
 $$</p>
 <p>Then $\tilde Q_H^2=\tilde Q\tilde Q^{*}$, $\tilde Q_H$ is positive semidefinite of rank one, and its spectrum is $\{0,2a\}$. The scalar part of $\tilde Q_H$ is $a$ and its vector part has length $a$.</p>
-<p><em>Proof.</em> This is <em>The Polar Decomposition of an N-Degenerate Biquaternion</em>, §<em>The Hermitian Factor</em>, where the identities $\lvert\vec W\rvert=\langle\tilde Q\rangle_{*}$ and $\lvert\vec W\rvert=2a^2$ are proved; the spectrum follows from $\tilde Q_H^2=2a^2e_t+i\vec W$.</p>
+<p><em>Proof.</em> This is <em>The Polar Decomposition of a N-Degenerate Biquaternion</em>, §<em>The Hermitian Factor</em>, where the identities $\lvert\vec W\rvert=\langle\tilde Q\rangle_{*}$ and $\lvert\vec W\rvert=2a^2$ are proved; the spectrum follows from $\tilde Q_H^2=2a^2e_t+i\vec W$.</p>
 <p><strong>Remark (what degenerates).</strong> On the sector the Hermitian factor is positive definite and the isometry factor is unitary. On the cone the Hermitian factor drops to rank one and the isometry factor to a partial isometry; the two projections are rank-one and no longer the identity. The Hermitian factor is the continuous limit of the regular one; the isometry factor is not continuous at the cone.</p>
 <p><strong>Remark (the matrix reading).</strong> Under $\mathsf{M}_2$ the factor $\tilde Q_H$ is the positive semidefinite square root of $MM^{\dagger}$ and $\tilde Q_0$ is the isometry factor of the matrix polar decomposition, a partial isometry with rank-one initial and final projections. The matrix decomposition exists for every matrix and is unique; on the cone it is the degenerate case.</p>
 <h2 id="relation-to-the-spectral-partition">Relation to the Spectral Partition</h2>
@@ -267,8 +267,8 @@ $$</p>
 <p><em>Proof.</em> The two equivalences above. Off the cone the two conditions are independent: $e_t$ has $Q_t=1$ and $B^2=0$, while $\vec e_x$ has $Q_t=0$ and $B^2=1$.</p>
 <p><strong>Theorem (the spectrum on the cone).</strong> On $\Sigma_{01}$ the eigenvalues are $2Q_t\neq0$ and $0$, and the element is the idempotent multiple $2Q_t\tilde\Pi$. On $\Sigma_{00}$ the only eigenvalue is $0$, and the element is the origin or a non-zero nilpotent. In both cases $0$ is an eigenvalue.</p>
 <p><em>Proof.</em> The eigenvalues are $\lambda_\pm=Q_t\pm iB$. On the cone $\lambda_+\lambda_-=N=0$, so one of them is zero; if $B^2\neq0$ then $Q_t\neq0$ and the other is $2Q_t$; if $B^2=0$ then $Q_t=0$ and both vanish.</p>
-<p><strong>Corollary (the norm is the product of the eigenvalues).</strong> For every biquaternion $N(\tilde Q)=\lambda_+\lambda_-$. The cone is exactly the set on which at least one eigenvalue vanishes.</p>
-<p><em>Proof.</em> The characteristic polynomial is $X^2-2Q_tX+N$, whose roots are $\lambda_\pm$; their product is $N$.</p>
+<p><strong>Corollary (the norm is the product of the eigenvalues).</strong> For every biquaternion $\langle\tilde Q\rangle_{\natural}=\lambda_+\lambda_-$. The cone is exactly the set on which at least one eigenvalue vanishes.</p>
+<p><em>Proof.</em> The characteristic polynomial is $X^2-2Q_tX+N$, whose roots are $\lambda_\pm$; their product is $\langle\tilde Q\rangle_{\natural}$.</p>
 <p><strong>Remark (what the cone is not).</strong> The cone is neither of the two simpler sets. It is not the spectral-degenerate cone $\mathcal{S}=\{B^2=0\}$, which contains the unit $e_t$; and it is not the hyperplane $\{Q_t=0\}$, which contains the unit $\vec e_x$. It is the single complex equation that ties the two coefficients together, $Q_t^2+B^2=0$.</p>
 <h2 id="comparison-with-the-n-regular-sector">Comparison with the N-Regular Sector</h2>
 <p>The two sectors are complementary, and the comparison is the content of the norm partition.</p>
@@ -276,15 +276,15 @@ $$</p>
 <thead>
 <tr>
 <th></th>
-<th>$\mathcal{N}$, the N-degenerate sector</th>
-<th>$\mathbb{B}^{\times}$, the N-regular sector</th>
+<th>$\mathcal{N}$, the $\natural$-degenerate sector</th>
+<th>$\mathbb{B}^{\times}$, the $\natural$-regular sector</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>condition</td>
-<td>$N=0$</td>
-<td>$N\neq0$</td>
+<td>$\langle\tilde Q\rangle_{\natural}=0$</td>
+<td>$\langle\tilde Q\rangle_{\natural}\neq0$</td>
 </tr>
 <tr>
 <td>real dimension</td>
@@ -342,7 +342,7 @@ $$</p>
 <p>The spectral condition does not refine the cone into four cells: it meets only two of them, and on the cone the algebraic split and the spectral split coincide. The pure stratum, with the origin adjoined, is the doubly degenerate cell $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular cell $\Sigma_{01}$. The detailed study of those cells is <em>The N-Degenerate, Spectrally Degenerate Sector</em> and <em>The N-Degenerate, Spectrally Regular Sector</em>.</p>
 <p>The cone is the boundary of the group of units. The two articles together carry the norm partition: this one the zero half, <em>The N-Regular Sector</em> the invertible half.</p>
 <h2 id="summary">Summary</h2>
-<p>The $N$-degenerate sector is the null cone $\mathcal{N}=\{N=0\}$, the zero set of the quaternionic norm. It is a complex algebraic cone of complex dimension three and real dimension six, closed, of empty interior, contractible, smooth off its apex, with link $S^2\times S^3$ and projectivisation $S^2\times S^2$.</p>
+<p>The $\natural$-degenerate sector is the null cone $\mathcal{N}=\{N=0\}$, the zero set of the quaternionic norm. It is a complex algebraic cone of complex dimension three and real dimension six, closed, of empty interior, contractible, smooth off its apex, with link $S^2\times S^3$ and projectivisation $S^2\times S^2$.</p>
 <p>It is the determinantal variety of rank at most one. The origin is the apex and the only singular point; the punctured cone is the zero-divisor set. The cone is a two-sided ideal of the multiplicative semigroup and contains no invertible element.</p>
 <p>The cone splits into the origin, the pure stratum of nilpotents of index two, and the non-pure stratum of complex multiples of non-trivial idempotents. The three have real dimensions zero, four and six; the non-pure stratum is open and dense in the punctured cone. Under similarity the pure stratum is one orbit and each idempotent multiple family $c\tilde\Pi$ is one orbit, separated by the scalar part $Q_t$.</p>
 <p>On the cone the algebraic split by $Q_t$ and the spectral split by $B^2$ coincide: the pure stratum, with the origin adjoined, is the doubly degenerate cell $\Sigma_{00}$, and the non-pure stratum is the cell $\Sigma_{01}$. The cone meets neither $\Sigma_{11}$ nor $\Sigma_{10}$. The norm is the product of the eigenvalues, and the cone is exactly the set on which at least one eigenvalue vanishes.</p>
@@ -373,7 +373,7 @@ $$</p>
 <td>the Hermitian conjugation</td>
 </tr>
 <tr>
-<td>$N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$</td>
+<td>$\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$</td>
 <td>the quaternionic norm</td>
 </tr>
 <tr>
@@ -382,7 +382,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal{N}=\{N=0\}$</td>
-<td>the null cone, the $N$-degenerate sector</td>
+<td>the null cone, the $\natural$-degenerate sector</td>
 </tr>
 <tr>
 <td>$\mathcal{Z}=\mathcal{N}\setminus\{0\}$</td>
@@ -436,16 +436,16 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="n-regularity-and-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and Degeneracy in the Biquaternion Algebra</a>, for the norm, the criterion, the zero divisors and the two strata</li>
+<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the norm, the criterion, the zero divisors and the two strata</li>
 <li><a href="the-n-regular-sector.html">The N-Regular Sector</a>, for the partner article and the group of units</li>
-<li><a href="the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a>, for the two factors and the Hermitian factor on the cone</li>
-<li><a href="the-quaternionic-norm-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the non-pure stratum as a cell</li>
-<li><a href="the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the pure stratum as a cell</li>
+<li><a href="the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of a N-Degenerate Biquaternion</a>, for the two factors and the Hermitian factor on the cone</li>
+<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the non-pure stratum as a cell</li>
+<li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the pure stratum as a cell</li>
 <li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four cells and the chain of invariants</li>
 <li><a href="the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>, for the link, the projectivisation and the singularity</li>
 <li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the idempotents and the Peirce corners</li>
 <li><a href="square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html">Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</a>, for the pure stratum</li>
-<li><a href="introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html">Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</a>, for the rank-one matrices and the determinant</li>
+<li><a href="m2c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</a>, for the rank-one matrices and the determinant</li>
 <li><a href="the-biquaternion-unit-group-as-a-topological-group.html">The Biquaternion Unit Group as a Topological Group</a>, for the complement of the cone</li>
 <li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", <em>Advances in Applied Clifford Algebras</em> <strong>20</strong> (2010) 401--416.</li>
 <li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995).</li>

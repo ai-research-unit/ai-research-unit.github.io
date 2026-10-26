@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Sectors of the Split-Quaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-sectors-of-the-split-quaternion-algebra"><strong>The Four Sectors of the Split-Quaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two quadratic conditions act on a split quaternion $q=t+\vec v$. The norm $q\bar q=t^2-S$ vanishes exactly on the zero-divisor cone $\mathcal Z$, and the square of the vector part $S=\vec v^2=-q_x^2+q_y^2+q_z^2$ vanishes exactly on the spectral cone $\mathcal C$. Each condition has two values, zero and non-zero, so the pair of signs divides the algebra into four sectors. This article defines the sectors, proves that all four are non-empty, describes each one, and computes their closures and dimensions. The spectral theory is <em>Spectral Regularity and Degeneracy in the Split-Quaternion Algebra</em>; the comparison of the two conditions is <em>Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy</em>; the norm and the zero divisors are <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Zero Divisors</em>.</p>
+<p><strong>Notation.</strong> A general element is $q=t+\vec v$, with $t\in\mathbb R$ and $\vec v=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$. The basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x^2=-e_t$, $\vec e_y^2=\vec e_z^2=+e_t$ and $\vec e_x\vec e_y=\vec e_z$. Conjugation is $\bar q=t-\vec v$, and</p>
+<p>$$
+q\bar q=t^2-S=t^2+q_x^2-q_y^2-q_z^2,\qquad
+S:=\vec v^2=-q_x^2+q_y^2+q_z^2.
+$$</p>
+<p>The algebra and its multiplication table are <em>Split-Quaternion Algebra</em>.</p>
+<h2 id="the-four-sectors">The Four Sectors</h2>
+<p><strong>Definition (the sectors).</strong> Put $i=1$ when $t^2\neq S$ and $i=0$ when $t^2=S$; put $j=1$ when $S\neq0$ and $j=0$ when $S=0$. The <strong>sector</strong> $\Sigma_{ij}$ is the set of elements with these values. Explicitly,</p>
+<p>$$
+\Sigma_{11}=\{q:t^2\neq S,\ S\neq0\},\qquad
+\Sigma_{10}=\{q:t^2\neq S,\ S=0\},
+$$
+$$
+\Sigma_{01}=\{q:t^2=S,\ S\neq0\},\qquad
+\Sigma_{00}=\{q:t^2=S,\ S=0\}.
+$$</p>
+<p>The index $i$ records the norm: $i=1$ on the complement of $\mathcal Z$, $i=0$ on $\mathcal Z$. The index $j$ records the spectrum: $j=1$ on the complement of $\mathcal C$, $j=0$ on $\mathcal C$.</p>
+<p><strong>Proposition (the sectors form a partition).</strong> Every element lies in exactly one sector.</p>
+<p><em>Proof.</em> The two numbers $t^2-S$ and $S$ are each either zero or non-zero, giving four disjoint cases, and every element falls into one of them.</p>
+<p><strong>Corollary (the meaning of the indices).</strong> The following are equivalent: $i=1$; $q$ is a unit; $q\notin\mathcal Z$. The following are equivalent: $i=0$; $q$ is a non-unit; $q\in\mathcal Z$. The following are equivalent: $j=1$; $q$ has two distinct eigenvalues; $q\notin\mathcal C$. The following are equivalent: $j=0$; $q$ has a repeated eigenvalue; $q\in\mathcal C$.</p>
+<p><em>Proof.</em> By <em>Split-Quaternion Norm and Invertibility</em>, $q$ is a unit exactly when $t^2-S\neq0$, and the non-zero elements of $\mathcal Z$ are the zero divisors. By <em>Spectral Regularity and Degeneracy in the Split-Quaternion Algebra</em>, the eigenvalues are distinct exactly when $S\neq0$.</p>
+<p>The sectors therefore refine both dichotomies at once: the row $i=1$ consists of units, the row $i=0$ of non-units; the column $j=1$ consists of spectrally regular elements, the column $j=0$ of spectrally degenerate elements.</p>
+<p><strong>Proposition (the sectors are cones).</strong> If $q\in\Sigma_{ij}$ and $\lambda>0$, then $\lambda q\in\Sigma_{ij}$.</p>
+<p><em>Proof.</em> The two conditions are homogeneous of degree two: $(\lambda t)^2-\lambda^2S=\lambda^2(t^2-S)$ and $\lambda^2S$. Multiplication by $\lambda>0$ preserves zero and non-zero values, so it preserves both indices.</p>
+<h2 id="non-emptiness">Non-Emptiness</h2>
+<p><strong>Theorem (all four sectors are non-empty).</strong> Each sector contains one of the following elements.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>witness</th>
+<th>$t$</th>
+<th>$S$</th>
+<th>$t^2-S$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$2+\vec e_x$</td>
+<td>$2$</td>
+<td>$-1$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$1+\vec e_x+\vec e_y$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$1+\vec e_y$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$\vec e_x+\vec e_y$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The values in the table are computed from $S=-q_x^2+q_y^2+q_z^2$ and $t^2-S$. In each row the signs of $S$ and of $t^2-S$ match the sector. For the last row, $(\vec e_x+\vec e_y)^2=\vec e_x^2+\vec e_x\vec e_y+\vec e_y\vec e_x+\vec e_y^2=-1+\vec e_z-\vec e_z+1=0$, so $S=0$. The witnesses show that $\Sigma_{10}$ contains the scalar $1$ and the non-scalar $1+\vec e_x+\vec e_y$, and that $\Sigma_{00}$ contains the origin and the non-zero nilpotent $\vec e_x+\vec e_y$.</p>
+<h2 id="description-of-each-sector">Description of Each Sector</h2>
+<h3 id="math97-units-off-both-cones">$\Sigma_{11}$: Units off Both Cones</h3>
+<p>On $\Sigma_{11}$ the norm is non-zero and $S\neq0$. The element is a unit, the two eigenvalues $t\pm\sqrt S$ are distinct, and $L_q$ is semisimple. The minimal polynomial is $(\lambda-t)^2-S$, the characteristic polynomial is its square, over $\mathbb C$ each eigenspace has dimension $2$ and an eigenbasis exists. The eigenvalues are real when $S>0$ and a complex conjugate pair when $S<0$. The sector is open in $\mathbb H_{\mathrm s}$ and has dimension $4$.</p>
+<h3 id="math109-units-on-the-spectral-cone">$\Sigma_{10}$: Units on the Spectral Cone</h3>
+<p>On $\Sigma_{10}$ the norm is $t^2-S=t^2$, so the element is a unit exactly when $t\neq0$; the condition $t^2\neq S=0$ already gives $t\neq0$. Thus every element of $\Sigma_{10}$ is a unit on the spectral cone. The sector splits into two parts:</p>
+<p>$$
+\Sigma_{10}^{\mathrm s}=\{q:t\neq0,\ \vec v=0\},\qquad
+\Sigma_{10}^{\mathrm{def}}=\{q:t\neq0,\ \vec v\neq0,\ S=0\}.
+$$</p>
+<p>The first is the punctured scalar line. On it $q=t$ and $L_q=t\,\mathrm{id}$; the minimal polynomial is $\lambda-t$, the Jordan type is $(1,1,1,1)$, and the element is semisimple. It has dimension $1$.</p>
+<p>The second is the defective part. On it $\vec v^2=0$, $\vec v\neq0$, and $L_q$ has minimal polynomial $(\lambda-t)^2$, characteristic polynomial $(\lambda-t)^4$, eigenspace $\ker L_{\vec v}$ of dimension $2$, and Jordan type $(2,2)$. No eigenbasis exists. It has dimension $3$.</p>
+<p>A unit on the spectral cone is therefore defective exactly when its vector part is non-zero. The scalar units are semisimple. The element $1+\vec e_x+\vec e_y$ is a defective unit, with inverse $1-\vec e_x-\vec e_y$.</p>
+<h3 id="math133-zero-divisors-off-the-spectral-cone">$\Sigma_{01}$: Zero Divisors off the Spectral Cone</h3>
+<p>On $\Sigma_{01}$ the norm is zero and $S=t^2\neq0$. The element is a zero divisor and is spectrally regular. Its eigenvalues are $0$ and $2t$, its minimal polynomial is $\lambda(\lambda-2t)$, and its characteristic polynomial is $\lambda^2(\lambda-2t)^2$. It is semisimple, with an eigenbasis, and each eigenspace has dimension $2$. Moreover</p>
+<p>$$
+q^2=2tq,
+$$</p>
+<p>so $e=q/(2t)$ is a non-zero idempotent, $f=1-e$ is a non-zero idempotent, $ef=0$, and $q=2t\,e$ is the spectral decomposition. The sector has dimension $3$; it is open in the zero-divisor cone, which is smooth off the origin. The element $1+\vec e_y$ is an example, with $e=(1+\vec e_y)/2$ and $f=(1-\vec e_y)/2$.</p>
+<h3 id="math150-the-nilpotent-cone-and-the-origin">$\Sigma_{00}$: The Nilpotent Cone and the Origin</h3>
+<p>On $\Sigma_{00}$ both conditions hold: $t=0$ and $S=0$. The element is $q=\vec v$ with $\vec v^2=0$, so $q^2=0$. Conversely, if $q^2=0$ then $q\in\Sigma_{00}$: from $q^2=(t^2+S)+2t\vec v$, either $\vec v\neq0$ gives $t=0$ and then $S=0$, or $\vec v=0$ gives $t=0$ and $S=0$. Hence $\Sigma_{00}$ is exactly the nilpotent cone</p>
+<p>$$
+N_V=\{q=\vec v:\vec v^2=0\}=\{q_x^2=q_y^2+q_z^2\}.
+$$</p>
+<p>It splits into the origin and the non-zero nilpotents. At the origin $L_0=0$, the minimal polynomial is $\lambda$, the characteristic polynomial is $\lambda^4$, the Jordan type is $(1,1,1,1)$, and the element is semisimple; its dimension is $0$. At a non-zero nilpotent $q=\vec v$, the minimal polynomial is $\lambda^2$, the characteristic polynomial is $\lambda^4$, the eigenspace is $\ker L_{\vec v}$ of dimension $2$, and the Jordan type is $(2,2)$; the element is defective. This part has dimension $2$. The nilpotent cone is a double cone over a circle: for $\vec v\neq0$ write $q_x=\pm r$ and $(q_y,q_z)=r(\cos\theta,\sin\theta)$ with $r>0$.</p>
+<h2 id="closure-and-dimensions">Closure and Dimensions</h2>
+<p><strong>Theorem (closures).</strong> The closures of the sectors are</p>
+<p>$$
+\overline{\Sigma_{11}}=\mathbb H_{\mathrm s},\qquad
+\overline{\Sigma_{10}}=\mathcal C,\qquad
+\overline{\Sigma_{01}}=\mathcal Z,\qquad
+\overline{\Sigma_{00}}=\Sigma_{00}.
+$$</p>
+<p><em>Proof.</em> The set $\Sigma_{11}$ is the complement of $\mathcal Z\cup\mathcal C$, a finite union of zero sets of non-zero polynomials, so it is open and dense; its closure is $\mathbb H_{\mathrm s}$. The sector $\Sigma_{10}$ is $\mathcal C$ with the slice $t=0$ removed; every point of that slice is a limit of points with $t\neq0$ and the same vector part, so its closure is $\mathcal C$. The sector $\Sigma_{01}$ is $\mathcal Z$ with the slice $S=0$ removed; every point of that slice is a limit of points of $\mathcal Z$ with $S>0$ and $t=\sqrt S$ (add a small multiple of $\vec e_y$ if necessary), so its closure is $\mathcal Z$. The sector $\Sigma_{00}$ is the zero set of the two polynomials $t$ and $S$, hence closed.</p>
+<p><strong>Corollary (the common boundary).</strong> The origin lies in the closure of every sector, and</p>
+<p>$$
+\overline{\Sigma_{10}}\cap\overline{\Sigma_{01}}=\mathcal C\cap\mathcal Z=\Sigma_{00}.
+$$</p>
+<p><em>Proof.</em> The origin lies in $\mathbb H_{\mathrm s}$, in $\mathcal C$ and in $\mathcal Z$, and $\Sigma_{00}$ contains it. The intersection of the two cone closures is the intersection of the two cones, which is $\Sigma_{00}$ by definition.</p>
+<p><strong>Theorem (dimensions and openness).</strong> The dimensions of the sectors are $4,3,3,2$ in the order $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$. The sector $\Sigma_{11}$ is the only one open in $\mathbb H_{\mathrm s}$. The sectors $\Sigma_{10}$ and $\Sigma_{01}$ are open in $\mathcal C$ and $\mathcal Z$ respectively, and $\Sigma_{00}$ is closed.</p>
+<p><em>Proof.</em> The sector $\Sigma_{11}$ is open in $\mathbb R^4$, so it has dimension $4$. The cone $\mathcal C=\mathbb R\times N_V$ has dimension $3$, and $\Sigma_{10}$ is open in it, so $\Sigma_{10}$ has dimension $3$; the scalar part has dimension $1$ and the defective part has dimension $3$. The cone $\mathcal Z$ has dimension $3$ and is smooth off the origin, and $\Sigma_{01}=\mathcal Z\setminus N_V$ is open in it, so $\Sigma_{01}$ has dimension $3$. The nilpotent cone $N_V$ has dimension $2$, and the origin has dimension $0$. A sector on a proper cone is not open in $\mathbb R^4$, and $\Sigma_{00}$ is closed by the closure theorem.</p>
+<p><strong>Summary table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition</th>
+<th>description</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$t^2\neq S,\ S\neq0$</td>
+<td>units with two distinct eigenvalues; semisimple; open and dense</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$t^2\neq S,\ S=0$</td>
+<td>units on the spectral cone; scalar part semisimple, defective part Jordan $(2,2)$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$t^2=S,\ S\neq0$</td>
+<td>zero divisors with spectrum $\{0,2t\}$; semisimple; $q=2t e$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$t^2=S,\ S=0$</td>
+<td>the origin and the non-zero nilpotents; closed</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The four sectors are the four sign combinations of the norm $t^2-S$ and the spectral form $S$. All four are non-empty: $2+\vec e_x$ lies in $\Sigma_{11}$, $1+\vec e_x+\vec e_y$ in $\Sigma_{10}$, $1+\vec e_y$ in $\Sigma_{01}$, and $\vec e_x+\vec e_y$ in $\Sigma_{00}$. Each sector is a cone.</p>
+<p>The sector $\Sigma_{11}$ consists of units with simple spectrum; it is open and dense, of dimension $4$. The sector $\Sigma_{10}$ consists of units on the spectral cone. Its scalar part $t\neq0$, $\vec v=0$ is semisimple, and its defective part $t\neq0$, $\vec v\neq0$, $S=0$ has minimal polynomial $(\lambda-t)^2$ and Jordan type $(2,2)$; the sector has dimension $3$. A unit on the spectral cone is defective exactly when $\vec v\neq0$.</p>
+<p>The sector $\Sigma_{01}$ consists of zero divisors with simple spectrum $\{0,2t\}$; it is semisimple, with $q=2t e$ and $e=q/(2t)$ idempotent, and has dimension $3$. The sector $\Sigma_{00}$ is the nilpotent cone $q_x^2=q_y^2+q_z^2$, consisting of the origin and the non-zero nilpotents; it has dimension $2$ and is closed. The closures are $\mathbb H_{\mathrm s}$, $\mathcal C$, $\mathcal Z$ and $\Sigma_{00}$; the origin lies in the closure of every sector, and $\Sigma_{00}$ is the intersection of the two cones.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb H_{\mathrm s}$</td>
+<td>the split-quaternion algebra</td>
+</tr>
+<tr>
+<td>$q=t+\vec v$</td>
+<td>a general element</td>
+</tr>
+<tr>
+<td>$S=\vec v^2=-q_x^2+q_y^2+q_z^2$</td>
+<td>the square of the vector part</td>
+</tr>
+<tr>
+<td>$q\bar q=t^2-S$</td>
+<td>the split-quaternion norm</td>
+</tr>
+<tr>
+<td>$\mathcal Z=\{t^2=S\}$</td>
+<td>the zero-divisor cone</td>
+</tr>
+<tr>
+<td>$\mathcal C=\{S=0\}$</td>
+<td>the spectral cone</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with norm index $i$ and spectral index $j$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}^{\mathrm s}$</td>
+<td>the scalar part of $\Sigma_{10}$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}^{\mathrm{def}}$</td>
+<td>the defective part of $\Sigma_{10}$</td>
+</tr>
+<tr>
+<td>$N_V=\{q_x^2=q_y^2+q_z^2\}$</td>
+<td>the nilpotent cone, equal to $\Sigma_{00}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="spectral-regularity-and-degeneracy-in-the-split-quaternion-algebra.html">Spectral Regularity and Degeneracy in the Split-Quaternion Algebra</a>, for the spectral polynomials, the spectral cone and the defective stratum.</li>
+<li><a href="relations-between-the-split-quaternion-norm-and-spectral-regularity-and-degeneracy.html">Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy</a>, for the independence of the two conditions and the chain of invariants.</li>
+<li><a href="split-quaternion-norm-and-invertibility.html">Split-Quaternion Norm and Invertibility</a>, for the norm, its isotropy and the unit criterion.</li>
+<li><a href="split-quaternion-zero-divisors.html">Split-Quaternion Zero Divisors</a>, for the zero-divisor cone, the minimal ideals and the nilpotents.</li>
+<li><a href="split-quaternion-spectral-theory.html">Split-Quaternion Spectral Theory</a>, for the spectrum and the eigenvalue problems.</li>
+<li><a href="split-quaternion-algebra.html">Split-Quaternion Algebra</a>, for the multiplication table and the conjugations.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (2nd edition, Cambridge University Press, 2013), for the Jordan form and the spectral decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-trace-determinant-and-the-biquaternion-norm"><strong>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two matrix invariants carry the two invariants of the biquaternion algebra. The trace is twice the scalar part, and the determinant is the quaternionic norm:</p>
+<p>$$
+\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t,\qquad
+\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2.
+$$</p>
+<p>The first is additive and blind to the vector part; the second is multiplicative and sees the whole element. Together they give invertibility, the zero divisors, the spectrum and the characteristic polynomial.</p>
+<p>This article develops the two invariants and what they decide. It is the matrix form of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, §<em>The Four Algebraic Norms</em>, and of <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The Characteristic Polynomial</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>: $\tilde Q=Q_te_t+\vec Q$, $B^2=Q_x^2+Q_y^2+Q_z^2$, and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are written $\lambda_\pm=Q_t\pm iB$, with $B$ a chosen square root of $B^2$; the pair is unordered and the choice of $B$ exchanges the two labels.</p>
+<p><strong>Boundaries.</strong> The four forms and their norms are <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the spectral condition is <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>; the rank-one case is <em>$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</em>; the polar decomposition is <em>$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</em>; the groups defined by the determinant are <em>$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</em>.</p>
+<h2 id="the-trace">The Trace</h2>
+<p><strong>The trace is twice the scalar part.</strong> For $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a&b\\c&d\end{pmatrix}$,</p>
+<p>$$
+a=Q_t-iQ_z,\qquad d=Q_t+iQ_z,\qquad
+\operatorname{Tr}\mathsf{M}_2(\tilde Q)=a+d=2Q_t.
+$$</p>
+<p>The trace therefore kills the vector part, and the scalar part is recovered by $Q_t=\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde Q)$. The trace is $\mathbb{C}$-linear, vanishes on the traceless matrices, and is invariant under conjugation:</p>
+<p>$$
+\operatorname{Tr}(PMP^{-1})=\operatorname{Tr}M.
+$$</p>
+<p><strong>The trace pairing.</strong> The bilinear form $\langle\tilde P,\tilde Q\rangle=\tfrac12\operatorname{Tr}(XY)$ is the plain bilinear form of the algebra. Its Gram matrix on the coefficient basis is $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and it is non-degenerate. The trace is the invariant that makes the pairing, and the pairing is the one used to dualise the algebra.</p>
+<p><strong>The trace is not the norm.</strong> The trace is additive and complex-valued; it does not detect the vector part. An element with $Q_t=0$ is traceless whatever its vector part, and the traceless matrices are the image of the vector subspace. The statement is the matrix form of the split $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$.</p>
+<h2 id="the-determinant">The Determinant</h2>
+<p><strong>The determinant is the quaternionic norm.</strong> For the general matrix,</p>
+<p>$$
+\det\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}
+=(Q_t-iQ_z)(Q_t+iQ_z)-(-iQ_x-Q_y)(-iQ_x+Q_y)
+=Q_t^2+Q_x^2+Q_y^2+Q_z^2.
+$$</p>
+<p>The determinant is multiplicative:</p>
+<p>$$
+\det(XY)=\det X\det Y,
+$$</p>
+<p>which is the multiplicativity of the quaternionic norm, $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$. It is also invariant under conjugation, $\det(PMP^{-1})=\det M$, and under transposition, $\det(M^{\mathsf T})=\det M$.</p>
+<p><strong>Invertibility.</strong> A square matrix is invertible exactly when its determinant is nonzero, so</p>
+<p>$$
+\tilde Q\text{ is a unit}\iff\langle\tilde Q\rangle_{\natural}\neq0.
+$$</p>
+<p>The inverse is</p>
+<p>$$
+\mathsf{M}_2(\tilde Q)^{-1}=\frac{\operatorname{adj}\mathsf{M}_2(\tilde Q)}{\det\mathsf{M}_2(\tilde Q)}
+=\frac{1}{N}\begin{pmatrix}Q_t+iQ_z&iQ_x+Q_y\\iQ_x-Q_y&Q_t-iQ_z\end{pmatrix}.
+$$</p>
+<p>The numerator is the image of $\tilde Q^{\natural}$, and the formula is the matrix form of $\tilde Q^{-1}=\tilde Q^{\natural}/N$.</p>
+<p><strong>The zero divisors.</strong> A nonzero matrix is a zero divisor exactly when it is singular, and the singular matrices are those of rank at most one. The singular nonzero matrices form the determinantal variety $\{N=0\}$, the image of the null cone. The zero matrix is the apex. The cone is the subject of <em>$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</em>.</p>
+<p><strong>The determinant as a volume.</strong> Over $\mathbb{C}$ the determinant is a complex volume. Its modulus squared is the real volume of the image of the unit square, and its argument is twice the phase of the linear map. On the Hermitian matrices the determinant is real and is the Minkowski quadratic form; on the anti-Hermitian matrices it is real with the opposite sign. The two readings are the two real forms of the same complex determinant.</p>
+<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
+<p><strong>The characteristic polynomial is the biquadratic.</strong></p>
+<p>$$
+\chi_M(X)=X^2-\operatorname{Tr}(M)X+\det(M)
+=X^2-2Q_tX+\langle\tilde Q\rangle_{\natural}
+=X^2-2Q_tX+(Q_t^2+B^2).
+$$</p>
+<p>Its roots are</p>
+<p>$$
+\lambda_\pm=Q_t\pm iB,
+\qquad
+\lambda_++\lambda_-=2Q_t,\qquad
+\lambda_+\lambda_-=Q_t^2+B^2.
+$$</p>
+<p>The discriminant is</p>
+<p>$$
+\Delta=4Q_t^2-4(Q_t^2+B^2)=-4B^2.
+$$</p>
+<p>The discriminant depends only on the vector part. This is the spectral criterion in matrix form: the eigenvalues are distinct exactly when $B^2\neq0$, and they coincide exactly when $B^2=0$.</p>
+<p><strong>Cayley–Hamilton.</strong> The matrix satisfies its own characteristic polynomial:</p>
+<p>$$
+M^2-2Q_tM+\langle\tilde Q\rangle_{\natural}\mathrm I_2=0.
+$$</p>
+<p>The identity is verified by substituting the general matrix. It is the matrix form of the quadratic relation satisfied by every biquaternion, and it is the reason the algebra is of degree two over its centre: every element generates a commutative subalgebra of dimension at most two.</p>
+<p><strong>The spectrum and the trace.</strong> The trace is the sum of the eigenvalues and the determinant is their product. For a general element the two eigenvalues are complex conjugates up to the factor $iB$; for a Hermitian element $B^2$ is negative real (up to the choice of square root) and the eigenvalues are real; for an anti-Hermitian element they are purely imaginary. The three cases are the three real forms of the same complex pair.</p>
+<p><strong>The degenerate case.</strong> When $B=0$ the two eigenvalues coalesce at $Q_t$. The matrix is then $Q_t\mathrm I_2+N$ with $N$ nilpotent, and it has a single eigenvalue. It is diagonalisable exactly when $N=0$, that is when the matrix is scalar. Otherwise it is a single Jordan block. The statement is the matrix form of the spectral-degenerate cone.</p>
+<h2 id="the-determinant-and-the-modulus">The Determinant and the Modulus</h2>
+<p><strong>The modulus.</strong> In the polar decomposition of <em>$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</em>, a matrix is written</p>
+<p>$$
+M=r\,\zeta\,M_bM_r,
+\qquad r>0,\quad|\zeta|=1,\quad M_b\text{ Hermitian positive of determinant }1,\quad M_r\in SU(2).
+$$</p>
+<p>Taking determinants,</p>
+<p>$$
+\det M=r^2\zeta^2,
+$$</p>
+<p>because $\det M_b=1$ and $\det M_r=1$. Hence</p>
+<p>$$
+|\det M|=r^2,\qquad r=|\det M|^{1/2},
+$$</p>
+<p>and the phase of the determinant is twice the phase $\zeta$. The modulus $r$ is the real scale of the element, and the determinant sees it squared. The factor two is the reason the determinant of left multiplication on the four-dimensional algebra is $N^2$, and the real determinant of that operator is $|N|^4$, while the modulus is $|N|^{1/2}$.</p>
+<p><strong>The singular values.</strong> The singular values of $M$ are the square roots of the eigenvalues of $MM^{\dagger}$. From $M=r\zeta M_bM_r$ and the unitarity of $M_r$,</p>
+<p>$$
+MM^{\dagger}=r^2M_b^2,
+$$</p>
+<p>so the singular values are $r e^{\eta/2}$ and $r e^{-\eta/2}$, where $e^{\pm\eta}$ are the eigenvalues of $M_b^2$. Their product is $r^2=|\det M|$. They coincide exactly when $M_b=\mathrm I_2$, that is when the element is a scalar times a unitary; otherwise the boost separates them. A general complex matrix has two singular values whose product is $|\det M|$; in the polar word the pair is $re^{\pm\eta/2}$, and the rapidity is the parameter that separates them.</p>
+<p><strong>The determinant on the two halves.</strong> On $\mathbb{M}_+$ the determinant is $q_t^2-q_x'^2-q_y'^2-q_z'^2$, of signature $(1,3)$; on $\mathbb{M}_-$ it is $-(q_t')^2+q_x^2+q_y^2+q_z^2$, of signature $(3,1)$. The two are opposite, and the sign is the matrix form of the anti-isometry between the two sectors. The statement is proved in <em>$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The trace is twice the scalar part and the determinant is the quaternionic norm. The determinant is multiplicative, nonzero exactly on the units, and zero exactly on the singular matrices, which are the zero divisors. The characteristic polynomial is $X^2-2Q_tX+N$, with discriminant $-4B^2$; the eigenvalues are $Q_t\pm iB$, distinct exactly when $B^2\neq0$. The modulus of the polar decomposition is the square root of the modulus of the determinant, and the two singular values have product $|\det M|$ and are separated by the rapidity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t$</td>
+<td>the trace, twice the scalar part</td>
+</tr>
+<tr>
+<td>$\det\mathsf{M}_2(\tilde Q)=N=Q_t^2+B^2$</td>
+<td>the determinant, the quaternionic norm</td>
+</tr>
+<tr>
+<td>$\chi_M(X)=X^2-2Q_tX+N$</td>
+<td>the characteristic polynomial</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the two eigenvalues</td>
+</tr>
+<tr>
+<td>$\Delta=-4B^2$</td>
+<td>the discriminant</td>
+</tr>
+<tr>
+<td>$r=|\det M|^{1/2}$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$\{N=0\}$</td>
+<td>the null cone, the determinantal variety</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the four norms</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the characteristic polynomial and the criterion</li>
+<li><a href="m2c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</a>, for the singular matrices</li>
+<li><a href="m2c-representation-the-polar-decomposition-of-a-matrix.html">$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</a>, for the modulus</li>
+<li><a href="m2c-representation-the-six-subspaces-as-matrix-conditions.html">$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions</a>, for the determinants on the subspaces</li>
+<li><a href="the-n-regular-sector.html">The N-Regular Sector</a>, for the norm on the units</li>
+<li><a href="the-n-degenerate-sector.html">The N-Degenerate Sector</a>, for the null cone</li>
+<li><a href="the-determinant-and-alternating-forms.html">The Determinant and Alternating Forms</a></li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
