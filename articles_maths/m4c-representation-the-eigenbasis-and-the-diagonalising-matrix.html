@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-eigenbasis-and-the-diagonalising-matrix"><strong>$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A spectrally regular biquaternion has an eigenbasis of four vectors. In the regular model the basis is built from the two copies of the $2\times2$ eigenbasis: two vectors for each eigenvalue. The diagonalising matrix is the change to that basis, and its determinant is fixed, independent of the element, because the $2\times2$ diagonalisation acts by a similarity of determinant one.</p>
+<p>This article constructs the eigenbasis, proves the diagonal form, computes the diagonalising matrix and its determinant, and describes the freedom of the choice. It absorbs the $4\times4$ material of the former <em>The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations</em> and is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure</em>. The element is $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The $2\times2$ diagonalising matrix is
+$$
+\mathsf{C}_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},
+\qquad
+\det\mathsf{C}_Q=2B(B-Q_z).
+$$</p>
+<p><strong>Boundaries.</strong> The projectors and nilpotents are <em>$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents</em>; the centraliser is <em>$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser</em>; the $2\times2$ diagonalising matrix is <em>$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</em>; the construction of the spectral basis is <em>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</em>.</p>
+<h2 id="the-eigenbasis">The Eigenbasis</h2>
+<p><strong>The $2\times2$ eigenbasis.</strong> Let $E_{ij}$ be the ordinary $2\times2$ matrix units and put
+$$
+P_{ij}=\mathsf{C}_Q\,E_{ij}\,\mathsf{C}_Q^{-1}.
+$$
+The four matrices $P_{ij}$ are a basis of $M_2(\mathbb{C})$ and multiply as the matrix units,
+$$
+P_{ij}P_{kl}=\delta_{jk}P_{il}.
+$$
+They are the spectral matrix units: $P_{11}=\rho_+$ and $P_{22}=\rho_-$ are the spectral projectors, and $P_{12},P_{21}$ are the spectral nilpotents.</p>
+<p><strong>The $2\times2$ coordinate matrix.</strong> Every element $\tilde X$ has a unique expansion
+$$
+\tilde X=\sum_{i,j}X_{ij}P_{ij},
+\qquad
+\mathsf{M}_2^{Q}(\tilde X)=\begin{pmatrix}X_{11}&X_{12}\\X_{21}&X_{22}\end{pmatrix}.
+$$
+The coordinate matrix of the element itself is diagonal:
+$$
+\mathsf{M}_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
+$$
+because $\tilde Q=\lambda_+P_{11}+\lambda_-P_{22}$.</p>
+<p><strong>The $4\times4$ eigenbasis.</strong> The four coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the fixed basis $e_t,\vec e_x,\vec e_y,\vec e_z$ form a basis of $\mathbb{C}^4$. It is the <strong>eigenbasis</strong> of the regular model. In the order $(P_{11},P_{12},P_{21},P_{22})$, the regular matrix of a general element is
+$$
+\mathsf{M}_4^{Q}(\tilde X)=\mathsf{M}_2^{Q}(\tilde X)\otimes\mathrm I_2,
+$$
+because left multiplication acts on the row index of the matrix units and the copy index is untouched.</p>
+<h2 id="the-diagonalising-matrix">The Diagonalising Matrix</h2>
+<p><strong>Definition.</strong> The <strong>regular diagonalising matrix</strong> $\mathsf{C}_Q^{(4)}$ is the matrix whose columns are the coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the fixed basis. By construction,
+$$
+\bigl(\mathsf{C}_Q^{(4)}\bigr)^{-1}\mathsf{M}_4(\tilde Q)\,\mathsf{C}_Q^{(4)}
+=\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-).
+$$</p>
+<p><strong>Theorem (the determinant is fixed).</strong>
+$$
+\det\mathsf{C}_Q^{(4)}=\tfrac14
+$$
+for every spectrally regular element, independently of $Q$.</p>
+<p><em>Proof.</em> The map $X\mapsto\mathsf{C}_Q\,X\,\mathsf{C}_Q^{-1}$ is a linear map of $M_2(\mathbb{C})$ with determinant $(\det\mathsf{C}_Q)^2/(\det\mathsf{C}_Q)^2=1$. It sends the standard matrix-unit basis $E_{ij}$ to the spectral basis $P_{ij}$ with determinant one. The change from the standard matrix-unit basis to the quaternion coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is the fixed matrix with columns
+$$
+\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad
+\vec\Upsilon_-=\tfrac12(i\vec e_x-\vec e_y),\quad
+\vec\Upsilon_+=\tfrac12(i\vec e_x+\vec e_y),\quad
+\tilde\Pi_-=\tfrac12(e_t-i\vec e_z),
+$$
+whose determinant is $\tfrac14$. The two determinants multiply to $\tfrac14$. $\square$</p>
+<p>The $2\times2$ determinant $2B(B-Q_z)$ cancels in the similarity. The regular diagonalising matrix is therefore never singular on the spectrally regular sector, even when the $2\times2$ chart degenerates. What degenerates is the chart, not the $4\times4$ basis.</p>
+<p><strong>The second chart.</strong> When $B=Q_z$ the first chart is singular. The second chart of the $2\times2$ article,
+$$
+\mathsf{C}_Q'=\begin{pmatrix}-Q_x+iQ_y&B+Q_z\\B+Q_z&Q_x+iQ_y\end{pmatrix},
+\qquad
+\det\mathsf{C}_Q'=-2B(B+Q_z),
+$$
+replaces $\mathsf{C}_Q$ in the construction of the $P_{ij}$; its determinant is nonzero at $B=Q_z$ because $B\neq0$. The determinant of the regular change is again $\tfrac14$, by the same similarity argument. The two determinants cannot both vanish, so one of the two charts always applies, and they agree on their overlap up to the freedom below.</p>
+<h2 id="the-eigenbasis-in-the-fixed-model">The Eigenbasis in the Fixed Model</h2>
+<p><strong>The basis elements are the conjugates of the matrix units.</strong> In the fixed model,
+$$
+\mathsf M_4(\tilde\Pi_+)=S\operatorname{diag}(E_{11},E_{11})S^{-1},\qquad
+\mathsf M_4(\vec\Upsilon_+)=S\operatorname{diag}(E_{12},E_{12})S^{-1},
+$$
+$$
+\mathsf M_4(\vec\Upsilon_-)=S\operatorname{diag}(E_{21},E_{21})S^{-1},\qquad
+\mathsf M_4(\tilde\Pi_-)=S\operatorname{diag}(E_{22},E_{22})S^{-1}.
+$$
+The two assignments of the four basis elements — to the eigenbasis coordinates and to the fixed matrix units — differ by the change of basis $S$. This is the precise sense in which the eigenbasis model is the fixed model conjugated by the Peirce matrix.</p>
+<p><strong>The diagonal form.</strong> In the eigenbasis the regular matrix of $\tilde Q$ is
+$$
+\mathsf{M}_4^{Q}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-),
+$$
+so each eigenvalue occurs twice. The spectral projectors are the diagonal matrices $\operatorname{diag}(1,1,0,0)$ and $\operatorname{diag}(0,0,1,1)$, each of rank two, and the mixed units are the doubled off-diagonal units.</p>
+<p><strong>The trace pairing.</strong> With the ordering $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$, the Gram matrix of the trace pairing $\langle\tilde X,\tilde Y\rangle=\operatorname{Tr}(\tilde X\tilde Y)$ on the regular image is
+$$
+G=2\begin{pmatrix}
+1&0&0&0\\
+0&0&1&0\\
+0&1&0&0\\
+0&0&0&1
+\end{pmatrix},
+$$
+because $\operatorname{Tr}(\tilde\Pi_\pm)=2$, $\operatorname{Tr}(\vec\Upsilon_\pm)=0$, and the mixed products are the rank-two idempotents. The factor two is the duplication: each $2\times2$ pairing entry is counted twice. The basis is not orthonormal: the idempotents are length $\sqrt2$, the nilpotents are isotropic, and the two mixed products pair to two.</p>
+<p><strong>The invariants.</strong> For every element $\tilde X$ with eigenbasis coordinates $X_{ij}$,
+$$
+\operatorname{Tr}\mathsf M_4^{Q}(\tilde X)=2(X_{11}+X_{22})=4X_t,
+\qquad
+\det\mathsf M_4^{Q}(\tilde X)=(X_{11}X_{22}-X_{12}X_{21})^2=\langle\tilde X\rangle_{\natural}^2.
+$$
+The trace is four times the scalar part and the determinant is the square of the norm, as in the fixed model, because the two models differ by a conjugation.</p>
+<h2 id="the-freedom-of-the-change">The Freedom of the Change</h2>
+<p><strong>Right multiplication.</strong> Two eigenbases differ by an element of the commutant of the diagonal form:
+$$
+\mathsf{C}'=\mathsf{C}_Q^{(4)}G,
+\qquad
+G\in C\bigl(\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)\bigr).
+$$</p>
+<p><strong>The group.</strong> When $\lambda_+\neq\lambda_-$, the commutant is
+$$
+GL_2(\mathbb{C})\times GL_2(\mathbb{C}),
+$$
+of complex dimension eight. The first factor changes the basis inside the two-dimensional $\lambda_+$ eigenspace and the second inside the two-dimensional $\lambda_-$ eigenspace. In the $2\times2$ model the same eigenvalues have multiplicity one and the freedom is $GL_1\times GL_1$, of dimension two. The extra six parameters are the mixing of the two copies.</p>
+<p><strong>The determinant and the freedom.</strong> The determinant of the diagonalising matrix is multiplied by $\det G$ under the freedom. The value $\tfrac14$ is the determinant of one chosen basis, not an invariant of the element.</p>
+<p><strong>The degenerate case.</strong> When $\lambda_+=\lambda_-$, a diagonalisable $M$ is scalar and its commutant is all of $GL_4(\mathbb{C})$; a non-scalar $M$ with repeated eigenvalue is a Jordan block, has no eigenbasis, and is handled by the Jordan decomposition.</p>
+<h2 id="the-normal-case">The Normal Case</h2>
+<p><strong>Theorem.</strong> The regular matrix is normal,
+$$
+MM^{\dagger}=M^{\dagger}M,
+$$
+if and only if $\tilde Q$ is normal in the algebra. In that case the two eigenspaces are orthogonal, the spectral projectors are Hermitian, and the eigenbasis can be chosen orthonormal. The diagonal form becomes
+$$
+M=U\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)U^{\dagger},
+\qquad
+U\in U(4).
+$$</p>
+<p><em>Proof.</em> The map $\mathsf{M}_4$ is injective and satisfies $\mathsf{M}_4(\tilde Q^{*})=M^{\dagger}$, so $MM^{\dagger}=M^{\dagger}M$ is equivalent to $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$. For a normal element the spectral projectors are Hermitian, and the distinct eigenspaces are orthogonal. $\square$</p>
+<p><strong>The unitary ambiguity.</strong> In the normal case the freedom is reduced to
+$$
+U(2)\times U(2),
+$$
+the unitary changes inside the two eigenspaces. The determinant of the unitary diagonalising matrix has modulus one.</p>
+<p><strong>The real quaternion case.</strong> For a real quaternion $h$, $M=\mathsf{M}_4(h)$ is real and satisfies $M^{\mathsf T}M=N\mathrm I_4$. Hence $M/\sqrt N$ is orthogonal, and the eigenbasis can be chosen real orthonormal. The two copies of the defining representation are then two copies of the same real rotation.</p>
+<h2 id="change-from-one-element-to-another">Change from One Element to Another</h2>
+<p><strong>The relative change.</strong> If $\tilde Q$ and $\tilde Q'$ are two spectrally regular elements, the change from the eigenbasis of $\tilde Q$ to that of $\tilde Q'$ is
+$$
+\bigl(\mathsf{C}_Q^{(4)}\bigr)^{-1}\mathsf{C}_{Q'}^{(4)}.
+$$
+It is the matrix of the change of spectral coordinates, and it is defined up to the freedoms of the two bases.</p>
+<p><strong>The algebra form.</strong> On the algebra side the same change is the matrix of the linear map that sends the spectral basis $P_{ij}$ of $\tilde Q$ to the spectral basis $P'_{ij}$ of $\tilde Q'$. In the regular model it acts on the two copies by the same $2\times2$ change, so every relative change is doubled.</p>
+<p><strong>The invariant part.</strong> The eigenvalues are the invariants of the element; the eigenbasis is not. Two elements with the same eigenvalues can have different eigenbases, and the relative change measures the difference. In the regular model the relative change has the extra freedom of mixing the two copies, so it is defined only up to $GL_2\times GL_2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The eigenbasis is the basis of $\mathbb{C}^4$ formed by the coordinate columns of the spectral matrix units $P_{ij}=\mathsf{C}_QE_{ij}\mathsf{C}_Q^{-1}$. In it the regular matrix is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$, with each eigenvalue twice. The diagonalising matrix has determinant $\tfrac14$ for every spectrally regular element, because the $2\times2$ similarity has determinant one and the $2\times2$ factor cancels. The freedom is $GL_2\times GL_2$ for distinct eigenvalues, reduced to $U(2)\times U(2)$ in the normal case. The fixed Peirce change $S$ is not a diagonalisation; it is the reduction to the two copies that makes the diagonalisation a doubled $2\times2$ problem.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_{ij}=\mathsf{C}_QE_{ij}\mathsf{C}_Q^{-1}$</td>
+<td>the spectral matrix units</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2^{Q}$</td>
+<td>the spectral coordinate model</td>
+</tr>
+<tr>
+<td>$\mathsf{C}_Q$</td>
+<td>the $2\times2$ diagonalising matrix</td>
+</tr>
+<tr>
+<td>$\mathsf{C}_Q^{(4)}$</td>
+<td>the regular diagonalising matrix</td>
+</tr>
+<tr>
+<td>$GL_2\times GL_2$</td>
+<td>the ambiguity for distinct eigenvalues</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-representation-the-spectral-projectors-and-the-nilpotents.html">$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents</a>, for the projectors</li>
+<li><a href="m4c-representation-the-centraliser-and-the-double-centraliser.html">$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser</a>, for the ambiguity</li>
+<li><a href="m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html">$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</a>, for the $2\times2$ matrix</li>
+<li><a href="the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html">The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</a>, for the construction</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

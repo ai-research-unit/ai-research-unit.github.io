@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hamilton Root Pairing of the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hamilton-root-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion"><strong>The Hamilton Root Pairing of the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Hamilton root pairing writes an invertible biquaternion as a complex modulus times a single exponential,</p>
+<p>$$
+\tilde Q=\Rho\exp(\vec U\Theta),
+\qquad
+\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}},
+\qquad
+\vec U=\frac{\vec Q}{B},
+\qquad
+\cos\Theta=\frac{Q_t}{\Rho},
+\qquad
+\sin\Theta=\frac{B}{\Rho},
+$$</p>
+<p>with $B^2=\langle\vec Q,\vec Q\rangle_{\natural}$. The exponent is a complex multiple of a root of $-e_t$. The pairing is the Hamilton counterpart of the quaternion pairing and the Cartan pairing: it groups the scale and the phase into the modulus and leaves the boost and the rotor in one exponential.</p>
+<p>On the N-regular, spectrally degenerate sector $B^2=0$. The root $\vec U=\vec Q/B$ does not exist, and $\Theta$ is not defined by the displayed formulas. The pairing therefore has no literal form on the sector. It has a degeneration, and the degeneration is exact: the root is replaced by the nilpotent direction of the element, and the angle by the exact logarithm.</p>
+<h2 id="the-root-and-its-failure">The Root and Its Failure</h2>
+<p>The regular pairing needs three things: $B\neq0$, a choice of square root $B$, and the root $\vec U=\vec Q/B$ with $\vec U^2=-e_t$. On $\Sigma_{10}$ the vector part is null, $B^2=0$, so the second and third fail. The vector part is not a complex multiple of a root of $-e_t$; it is a nilpotent,</p>
+<p>$$
+\vec Q=Q_t\vec\Upsilon,
+\qquad
+\vec\Upsilon^2=0,
+\qquad
+\vec\Upsilon\neq0
+$$</p>
+<p>on the Jordan part. There is no unit axis parallel to it, because its length is zero.</p>
+<p>The angle fails in the same way. In the regular sector $\cos\Theta=Q_t/\Rho$ and $\sin\Theta=B/\Rho$; on the wall $\sin\Theta=0$ and $\cos\Theta=\pm1$, so $\Theta$ is a multiple of $\pi$ and carries no continuous information. The exponent $\vec U\Theta$ is a product of a divergent root and a vanishing angle, and its limit depends on the path.</p>
+<h2 id="the-degenerate-hamilton-form">The Degenerate Hamilton Form</h2>
+<p>The exact replacement is read from the normal form. Let</p>
+<p>$$
+\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr),
+\qquad
+\vec\Upsilon^2=0,
+\qquad
+Q_t\neq0,
+\qquad
+\Rho^2=Q_t^2,
+\qquad
+\varepsilon=\frac{Q_t}{\Rho}=\pm1.
+$$</p>
+<p>Then $Q_t=\varepsilon\Rho$ and</p>
+<p>$$
+\tilde Q=\Rho\bigl(\varepsilon e_t+\varepsilon\vec\Upsilon\bigr).
+$$</p>
+<p>Since $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, the element is</p>
+<p>$$
+\boxed{\;
+\tilde Q=\Rho\exp\Bigl(\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}\Bigr).
+\;}
+$$</p>
+<p>The exponent has a nilpotent noncentral part $\vec\Upsilon$ and a central part $0$ or $i\pi$. The central part is the sign: for $\varepsilon=+1$ it is absent, and for $\varepsilon=-1$ it is the principal logarithm of $-1$.</p>
+<p><strong>Theorem (the degenerate Hamilton form).</strong> Every element of $\Sigma_{10}$ is the product of its complex modulus $\Rho$ and the exponential of $\vec\Upsilon+i\pi(1-\varepsilon)/2$. The factorization is unique, and the exponent is the exact logarithm of the unit factor.</p>
+<p><em>Proof.</em> The normal form gives $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $Q_t=\varepsilon\Rho$. The exponential of a nilpotent truncates, $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, and the central term contributes the sign. The exponent is $\Log\tilde Q-\log\Rho=\Log\tilde U$, which is unique in the branch of <em>Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</em>, §<em>The Exact Logarithm</em>. $\square$</p>
+<p>The first factor is the complex modulus, as in the regular pairing. The second factor is not the exponential of a root times an angle; it is the exponential of a nilpotent, and its noncentral part is the logarithm of a unipotent element.</p>
+<h2 id="the-limit-from-the-regular-sector">The Limit From the Regular Sector</h2>
+<p>Approach the wall along a regular family with $B\neq0$. The root $\vec U=\vec Q/B$ diverges as $B\to0$, and the angle obeys $\sin\Theta=B/\Rho\to0$. The limit of the product $\vec U\Theta$ depends on the sign $\varepsilon=Q_t/\Rho$.</p>
+<p>For $\varepsilon=+1$, $\cos\Theta\to1$ and $\Theta\sim B/\Rho$. Then</p>
+<p>$$
+\vec U\Theta=\frac{\vec Q}{B}\Theta\longrightarrow\frac{\vec Q}{\Rho}=\vec\Upsilon,
+\qquad
+\exp(\vec U\Theta)\longrightarrow\exp(\vec\Upsilon)=e_t+\vec\Upsilon.
+$$</p>
+<p>For $\varepsilon=-1$, $\cos\Theta\to-1$ and $\Theta\to\pi$ while $\sin\Theta=B/\Rho$. Then</p>
+<p>$$
+\vec U\Theta=\frac{\vec Q}{B}\bigl(\pi+O(B)\bigr)
+=\pi\frac{\vec Q}{B}+O(1),
+$$</p>
+<p>which diverges. The root-angle product has no finite limit, and the Hamilton pairing fails at the wall on this side. The exact form above is the replacement in both cases: it keeps the central sign and the nilpotent exponent together, and it does not require the divergent root.</p>
+<p>The limit shows what survives and what does not. The modulus survives, the exponential survives, and the nilpotent direction survives. The root does not survive, and the angle does not survive as a continuous parameter. This is the same phenomenon as the survival of the polar word and the failure of the eigenbasis on the wall.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="the-standard-jordan-element">The Standard Jordan Element</h3>
+<p>Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $Q_t=1$, $\Rho=1$, $\varepsilon=1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The degenerate Hamilton form is</p>
+<p>$$
+\tilde Q=\exp(\vec e_x+i\vec e_y)=e_t+\vec e_x+i\vec e_y,
+$$</p>
+<p>because the square of the exponent vanishes. The regular root does not exist: $B=0$. The single exponential is exact, and its exponent is the logarithm of the element.</p>
+<h3 id="the-negative-jordan-element">The Negative Jordan Element</h3>
+<p>Take $\tilde Q=-e_t-\vec e_x-i\vec e_y$. Then $Q_t=-1$, $\Rho=1$, $\varepsilon=-1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The form is</p>
+<p>$$
+\tilde Q=\exp\bigl(\vec e_x+i\vec e_y+i\pi\bigr)
+=-\exp(\vec e_x+i\vec e_y)
+=-e_t-\vec e_x-i\vec e_y.
+$$</p>
+<p>The central $i\pi$ is the sign of the scalar part. It is the only difference from the previous case, and it is the reason the degenerate pairing needs the exact logarithm rather than the regular root.</p>
+<h3 id="the-scalar-line">The Scalar Line</h3>
+<p>On the scalar line $\vec\Upsilon=0$ and $\tilde Q=Q_te_t$. The form is</p>
+<p>$$
+\tilde Q=\Rho\exp\Bigl(i\pi\frac{1-\varepsilon}{2}\Bigr),
+$$</p>
+<p>which is $\Rho$ for $\varepsilon=+1$ and $-\Rho$ for $\varepsilon=-1$. This is the scalar limit of the Hamilton pairing: the root and the angle disappear, and only the modulus and the sign remain.</p>
+<h2 id="comparison-with-the-regular-pairing">Comparison with the Regular Pairing</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Regular sector</th>
+<th>Degenerate sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>modulus</td>
+<td>$\Rho=\sqrt{N}$</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>exponent</td>
+<td>$\vec U\Theta$, $\vec U^2=-e_t$</td>
+<td>$\vec\Upsilon+i\pi(1-\varepsilon)/2$, $\vec\Upsilon^2=0$</td>
+</tr>
+<tr>
+<td>root</td>
+<td>$\vec U=\vec Q/B$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>angle</td>
+<td>$\Theta$ with $\sin\Theta=B/\Rho$</td>
+<td>none; replaced by the exact logarithm</td>
+</tr>
+<tr>
+<td>exponent type</td>
+<td>complex multiple of a root of $-e_t$</td>
+<td>nilpotent plus a central sign</td>
+</tr>
+<tr>
+<td>uniqueness</td>
+<td>unique up to the branch of $B$</td>
+<td>unique in the branch of the logarithm</td>
+</tr>
+<tr>
+<td>survives the wall</td>
+<td>the root diverges</td>
+<td>the exponent is finite and exact</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Hamilton pairing is therefore the one pairing of the three that does not survive the wall as a pairing. The quaternion pairing survives as a regrouping, and the Cartan pairing survives as the polar decomposition of the unit group. The Hamilton pairing survives only after the root is replaced by the nilpotent direction, which is a different object.</p>
+<h2 id="summary">Summary</h2>
+<h3 id="main-results">Main Results</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>regular form</td>
+<td>$\tilde Q=\Rho\exp(\vec U\Theta)$</td>
+</tr>
+<tr>
+<td>degenerate form</td>
+<td>$\tilde Q=\Rho\exp(\vec\Upsilon+i\pi(1-\varepsilon)/2)$</td>
+</tr>
+<tr>
+<td>exponent</td>
+<td>nilpotent $\vec\Upsilon$ plus central $0$ or $i\pi$</td>
+</tr>
+<tr>
+<td>modulus</td>
+<td>$\Rho$, the complex square root of $N$</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>$\varepsilon=Q_t/\Rho=\pm1$</td>
+</tr>
+<tr>
+<td>root</td>
+<td>does not exist at $B=0$</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>$\vec U\Theta\to\vec\Upsilon$ for $\varepsilon=+1$; diverges for $\varepsilon=-1$</td>
+</tr>
+<tr>
+<td>exactness</td>
+<td>$\exp(\vec\Upsilon)=e_t+\vec\Upsilon$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a biquaternion</td>
+</tr>
+<tr>
+<td>$N=\langle\tilde Q\rangle_{\natural}$</td>
+<td>the reduced product</td>
+</tr>
+<tr>
+<td>$B^2=\langle\vec Q,\vec Q\rangle_{\natural}$</td>
+<td>the vector form</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>the N-regular, spectrally degenerate sector</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon=\vec Q/Q_t$</td>
+<td>the null vector of the normal form</td>
+</tr>
+<tr>
+<td>$\Rho$</td>
+<td>the modulus, principal square root of $N$</td>
+</tr>
+<tr>
+<td>$\varepsilon=Q_t/\Rho=\pm1$</td>
+<td>the sign of the scalar part of the unit factor</td>
+</tr>
+<tr>
+<td>$\vec U=\vec Q/B$</td>
+<td>the Hamilton root, defined only for $B\neq0$</td>
+</tr>
+<tr>
+<td>$\Theta$</td>
+<td>the Hamilton angle</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-hamilton-root-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html">The Hamilton Root Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion</a>, for the regular pairing and its root.</li>
+<li><a href="exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html">Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the exact logarithm and the word.</li>
+<li><a href="the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html">The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the pairing that survives without a root.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

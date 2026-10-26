@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-projective-line-and-the-mobius-action"><strong>$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The minimal left ideals of the biquaternion algebra form a projective line, and the group of units acts on that line by left multiplication. In the matrix model the ideals are the sets of matrices whose image lies in a fixed line of $\mathbb{C}^2$, the action is the defining action of $GL_2(\mathbb{C})$ on the lines, and in a chart it is the Möbius action of $PGL_2(\mathbb{C})$.</p>
+<p>This article develops the parametrisation, the action and its kernel, the chart and the Möbius formula, the idempotents, the orbits and the cross-ratio. It is the matrix form of <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>, §<em>The Projective Line and the Möbius Action</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$.</p>
+<p><strong>Boundaries.</strong> The lattice of left ideals and the parametrisation by $\mathbb{P}^1$ are <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>, §<em>The Lattice of Left Ideals</em>; the automorphism group and its identification with $PGL_2$ are <em>Biquaternion Automorphisms and Derivations</em>; the real structure on the lattice is <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>, §<em>The Real Structure</em>.</p>
+<h2 id="the-lines-and-the-minimal-left-ideals">The Lines and the Minimal Left Ideals</h2>
+<p>For a line $L\in\mathbb{P}^1(\mathbb{C})$ put</p>
+<p>$$
+I_L=\{M\in M_2(\mathbb{C}):\operatorname{im}M\subseteq L\}.
+$$</p>
+<p><strong>Proposition.</strong> $I_L$ is a minimal left ideal, and every minimal left ideal is $I_L$ for a unique $L$.</p>
+<p><em>Proof.</em> The set $I_L$ is a left ideal, because $\operatorname{im}(NM)\subseteq\operatorname{im}N\subseteq L$ for every $N$. It is a complex subspace of dimension two: choosing a basis with $L=\operatorname{span}\{e_1\}$, it is the space of matrices whose second column vanishes. A nonzero element of $I_L$ has rank one, and the left ideal it generates is the whole of $I_L$, so $I_L$ is minimal. Conversely, a minimal left ideal $I$ is generated by a rank-one idempotent $\Pi$, and $I=I_{\operatorname{im}\Pi}$; the image line is recovered from $I$ as the common image of its nonzero elements. $\square$</p>
+<p><strong>The two coordinate ideals.</strong> With $L_\infty=\operatorname{span}\{e_1\}$ and $L_0=\operatorname{span}\{e_2\}$,</p>
+<p>$$
+I_{L_\infty}=\left\{\begin{pmatrix}a&0\\c&0\end{pmatrix}\right\}=\mathbb{C}\{E_{11},E_{21}\},
+\qquad
+I_{L_0}=\left\{\begin{pmatrix}0&b\\0&d\end{pmatrix}\right\}=\mathbb{C}\{E_{12},E_{22}\}.
+$$</p>
+<p>These are the two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ of the Peirce decomposition.</p>
+<h2 id="the-action-of-math35">The Action of $GL_2(\mathbb{C})$</h2>
+<p>For $M\in GL_2(\mathbb{C})$ and a line $L$, put</p>
+<p>$$
+M\cdot L=ML .
+$$</p>
+<p><strong>Proposition.</strong> The product is a line, and the assignment is an action of $GL_2(\mathbb{C})$ on $\mathbb{P}^1(\mathbb{C})$:</p>
+<p>$$
+M\cdot I_L=I_{ML},\qquad M_1\cdot(M_2\cdot L)=(M_1M_2)\cdot L .
+$$</p>
+<p><em>Proof.</em> An invertible matrix carries a one-dimensional subspace to a one-dimensional subspace, and the second statement is associativity of the matrix product. $\square$</p>
+<p><strong>The kernel.</strong> If $M$ acts trivially on every line, then every vector is an eigenvector of $M$, and a matrix with that property is scalar. Hence</p>
+<p>$$
+\ker=\mathbb{C}^{\times}\mathrm I_2,
+\qquad
+GL_2(\mathbb{C})/\mathbb{C}^{\times}\mathrm I_2\cong PGL_2(\mathbb{C}).
+$$</p>
+<p>The action factors through $PGL_2(\mathbb{C})$, which is the automorphism group of $M_2(\mathbb{C})$ and, by transport, of the biquaternion algebra. On idempotents the same action reads</p>
+<p>$$
+\Pi\longmapsto M\Pi M^{-1},
+$$</p>
+<p>because $M I_{\operatorname{im}\Pi}=I_{M\operatorname{im}\Pi}=I_{\operatorname{im}(M\Pi M^{-1})}$.</p>
+<h2 id="the-chart-and-the-mobius-formula">The Chart and the Möbius Formula</h2>
+<p>Write a line by the column $\xi=(z,1)^{\mathsf T}$, with $z=\xi_1/\xi_2$, and let</p>
+<p>$$
+M=\begin{pmatrix}a&b\\c&d\end{pmatrix},\qquad ad-bc\neq0 .
+$$</p>
+<p>Then</p>
+<p>$$
+M\xi=\begin{pmatrix}az+b\\ cz+d\end{pmatrix},
+\qquad
+z'=\frac{az+b}{cz+d},
+$$</p>
+<p>which is the <strong>Möbius transformation</strong> attached to $M$. A nonzero scalar multiple of $M$ gives the same transformation, so the formula depends only on the class $[M]\in PGL_2(\mathbb{C})$, and composition of transformations is multiplication of matrices:</p>
+<p>$$
+\varphi_{M_1}\circ\varphi_{M_2}=\varphi_{M_1M_2}.
+$$</p>
+<p><strong>The two coordinate points.</strong> In this chart $I_{L_0}$ sits at $z=0$ and $I_{L_\infty}$ at $z=\infty$: the point at infinity is the line of the first basis vector. The two ideals are exchanged by the Möbius map $z\mapsto-1/z$, the image of the matrix $\epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.</p>
+<h2 id="the-idempotents">The Idempotents</h2>
+<p>A <strong>rank-one idempotent</strong> is a matrix $\Pi\neq0$ with $\Pi^2=\Pi$ and $\operatorname{rk}\Pi=1$. Its image is a line $L$ and its kernel is a line $K\neq L$, and it is the projection onto $L$ along $K$.</p>
+<p><strong>Proposition.</strong> Every rank-one idempotent with image $L$ and kernel $K$ is</p>
+<p>$$
+\Pi=u\eta,
+$$</p>
+<p>where $u$ spans $L$ and $\eta$ is the linear form with $\eta(u)=1$ and $\eta(K)=0$. The fibre of the map $\Pi\mapsto\operatorname{im}\Pi$ over $L$ is an affine line, parametrised by the kernel $K\neq L$.</p>
+<p><em>Proof.</em> The product $u\eta$ satisfies $(u\eta)^2=u\eta(u)\eta=u\eta$, has image $L$ and kernel $\ker\eta=K$. Conversely a rank-one idempotent with image $L$ is determined by its kernel, and the formula recovers it. The kernels $K\neq L$ form the affine line $\mathbb{P}^1\setminus\{L\}$. $\square$</p>
+<p><strong>The conjugacy class.</strong> Every rank-one idempotent is conjugate to $E_{11}$, since $GL_2$ acts transitively on the pairs (image, kernel) and the stabiliser of $E_{11}$ is the diagonal torus of complex dimension two. The class therefore has complex dimension two, and it is the union of the affine lines of the proposition over the projective line of images.</p>
+<p><strong>The four corners.</strong> The two idempotents $E_{11}$ and $E_{22}$ are orthogonal and sum to $\mathrm I_2$; they are the two coordinate points of the chart, and the Peirce decomposition of the algebra is the decomposition into the four matrix units.</p>
+<h2 id="orbits-stabilisers-and-the-cross-ratio">Orbits, Stabilisers and the Cross-Ratio</h2>
+<p><strong>Transitivity.</strong> The action is transitive: any two lines are carried to one another by an invertible matrix. The stabiliser of $z=0$ is the set of matrices with $b=0$,</p>
+<p>$$
+\left\{\begin{pmatrix}a&0\\c&d\end{pmatrix}:ad\neq0\right\},
+$$</p>
+<p>a Borel subgroup of $PGL_2(\mathbb{C})$, of complex dimension two.</p>
+<p><strong>Triple transitivity.</strong> The action is simply transitive on ordered triples of distinct points. A matrix is determined up to scalar by the images of three lines, and any three distinct lines can be sent to any other three.</p>
+<p><strong>The cross-ratio.</strong> For four distinct points the quantity</p>
+<p>$$
+[z_1,z_2;z_3,z_4]=\frac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}
+$$</p>
+<p>is invariant under every Möbius transformation, and it is the complete invariant of a quadruple: two quadruples are equivalent under $PGL_2(\mathbb{C})$ exactly when their cross-ratios agree.</p>
+<p><strong>The meaning for the ideals.</strong> The cross-ratio of four minimal left ideals is the invariant of their configuration, and the three-transitivity says that any ordered triple of distinct minimal left ideals can be normalised to the triple $(0,1,\infty)$ by a unique automorphism of the algebra.</p>
+<h2 id="the-plucker-form-of-the-cross-ratio">The Plücker Form of the Cross-Ratio</h2>
+<p><strong>The bracket.</strong> For two vectors $\xi,\eta\in\mathbb{C}^2$, put</p>
+<p>$$
+[\xi,\eta]=\det(\xi,\eta)=\xi_1\eta_2-\xi_2\eta_1 .
+$$</p>
+<p>The bracket is alternating and $\mathbb{C}$-bilinear, and $[\xi,\eta]\neq0$ exactly when the two lines are distinct.</p>
+<p><strong>The cross-ratio.</strong> For four vectors with nonzero brackets,</p>
+<p>$$
+[\xi_1,\xi_2;\xi_3,\xi_4]
+=\frac{[\xi_1,\xi_3]\,[\xi_2,\xi_4]}
+{[\xi_1,\xi_4]\,[\xi_2,\xi_3]} .
+$$</p>
+<p>In the chart $\xi_i=(z_i,1)^{\mathsf T}$ this is the cross-ratio formula of the preceding section, because $[\xi_i,\xi_j]=z_i-z_j$.</p>
+<p><strong>Invariance.</strong> Under $M\in GL_2(\mathbb{C})$,</p>
+<p>$$
+[M\xi,M\eta]=\det(M)\,[\xi,\eta],
+$$</p>
+<p>so every bracket in the numerator and the denominator is multiplied by the same determinant, and the cross-ratio is unchanged. This is the matrix reason for the invariance, and it is the form in which the cross-ratio is defined without a chart.</p>
+<p><strong>Normalisation.</strong> Three distinct lines can be sent to the three coordinate points, and the remaining freedom is the one complex parameter of the fourth line. In a basis $(\xi_1,\xi_2)$ with $\xi_3=\xi_1+\xi_2$ and $\xi_4=c\xi_1+d\xi_2$, the parameter is $c/d$, and it is the cross-ratio $[\xi_1,\xi_2;\xi_3,\xi_4]$.</p>
+<h2 id="the-real-structure">The Real Structure</h2>
+<p>Coefficient conjugation acts on matrices by</p>
+<p>$$
+\sigma(M)=\epsilon\,\overline{M}\,\epsilon^{-1},
+\qquad
+\epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+$$</p>
+<p>and on the defining module by the quaternionic structure $\xi\mapsto\epsilon\bar\xi$ (<em>$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints</em>). On the chart,</p>
+<p>$$
+\xi=(z,1)^{\mathsf T}\longmapsto\epsilon\,\overline{\xi}=(1,-\bar z)^{\mathsf T},
+\qquad
+z\longmapsto-\frac{1}{\bar z}.
+$$</p>
+<p><strong>No fixed point.</strong> The map $z\mapsto-1/\bar z$ has no fixed point: the equation $z\bar z=-1$ has no complex solution, since $z\bar z=|z|^2\geq0$. Hence no minimal left ideal is stable under coefficient conjugation. The real structure preserves the real subfamily $\mathbb{P}^1(\mathbb{R})$ and acts on it as the antipodal map, with no fixed point.</p>
+<p><strong>The intertwining.</strong> Since $\sigma$ is $\mathbb{C}$-antilinear, it carries the action of $M$ to the action of $\sigma(M)$:</p>
+<p>$$
+\sigma\circ\varphi_M=\varphi_{\sigma(M)}\circ\sigma .
+$$</p>
+<p>The two actions are therefore paired by the real structure, and the orbit of a line is carried to the orbit of its conjugate.</p>
+<h2 id="summary">Summary</h2>
+<p>The minimal left ideals are the sets $I_L$ of matrices whose image lies in a line $L$, and $L\mapsto I_L$ is a bijection between $\mathbb{P}^1(\mathbb{C})$ and the middle layer of the lattice. The group $GL_2(\mathbb{C})$ acts by $M\cdot I_L=I_{ML}$, with kernel the scalar matrices, so the action is that of $PGL_2(\mathbb{C})$, the automorphism group. In the chart $z=\xi_1/\xi_2$ the action is the Möbius transformation $z\mapsto(az+b)/(cz+d)$, with $I_{L_0}$ at $0$ and $I_{L_\infty}$ at $\infty$. The rank-one idempotents fibre over the projective line with an affine line of kernels, the action is simply transitive on ordered triples, and the cross-ratio is the complete invariant of a quadruple. Coefficient conjugation acts by $z\mapsto-1/\bar z$, with no fixed point.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$I_L=\{M:\operatorname{im}M\subseteq L\}$</td>
+<td>the minimal left ideal attached to the line $L$</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^1(\mathbb{C})$</td>
+<td>the projective line of lines of $\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$M\cdot L=ML$</td>
+<td>the action of $GL_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^\times\mathrm I_2$</td>
+<td>the kernel of the action</td>
+</tr>
+<tr>
+<td>$PGL_2(\mathbb{C})$</td>
+<td>the Möbius group, the automorphism group</td>
+</tr>
+<tr>
+<td>$z=\xi_1/\xi_2$</td>
+<td>the affine chart, $I_{L_0}$ at $0$ and $I_{L_\infty}$ at $\infty$</td>
+</tr>
+<tr>
+<td>$[z_1,z_2;z_3,z_4]$</td>
+<td>the cross-ratio</td>
+</tr>
+<tr>
+<td>$\epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$</td>
+<td>the matrix of the quaternionic structure</td>
+</tr>
+<tr>
+<td>$z\mapsto-1/\bar z$</td>
+<td>the induced coefficient conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the lattice, the projective line and the Möbius action</li>
+<li><a href="biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for $PGL_2$ and the automorphism group</li>
+<li><a href="m2c-representation-the-centraliser-and-the-double-centraliser.html">$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser</a>, for the commutant of an element</li>
+<li><a href="m2c-representation-the-conjugations-and-the-adjoints.html">$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints</a>, for the quaternionic structure and the real structure</li>
+<li><a href="m2c-representation-the-peirce-coordinates-and-the-matrix-units.html">$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units</a>, for the matrix units</li>
+<li><a href="modules-over-the-biquaternion-algebra.html">Modules over the Biquaternion Algebra</a>, for the module reading of the minimal left ideals</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

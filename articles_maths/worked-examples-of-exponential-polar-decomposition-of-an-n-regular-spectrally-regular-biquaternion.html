@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-examples-of-exponential-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion"><strong>Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article works eight numerical cases of the exponential polar decomposition in the N-regular, spectrally regular sector. Each case is an element</p>
+<p>$$
+\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,
+\qquad
+N=Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0,
+\qquad
+B^2=Q_x^2+Q_y^2+Q_z^2\neq0,
+$$</p>
+<p>and each is written as</p>
+<p>$$
+\tilde Q=r\,e^{i\alpha}\,
+\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr).
+$$</p>
+<p>The cases are chosen to display the spectral reading of the word: the normal elements, where the two axes are parallel and the word is one exponential, and the non-normal elements, where the axes are not the eigenlines and the spectrum does not determine the rapidity and the rotor angle. The article is independent of the main article of the same title; it repeats the recipe and the checks.</p>
+<p>The numbers are the ones of the computational verification described in §<em>Conventions and Recipes</em>. They are rounded to eight or nine significant digits; the computations were carried to double precision.</p>
+<p><strong>The plan.</strong> §<em>Conventions and Recipes</em> fixes the notation and the algorithm. §§<em>Case 1</em> to <em>Case 8</em> treat the eight elements, grouped by their normal or non-normal character. §<em>The Comparison</em> collects the spectral data and the defects. The summary gives the tables.</p>
+<h2 id="conventions-and-recipes">Conventions and Recipes</h2>
+<h3 id="the-coordinates">The Coordinates</h3>
+<p>A biquaternion is a four-tuple</p>
+<p>$$
+\tilde Q=(Q_t,Q_x,Q_y,Q_z)=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,
+$$</p>
+<p>with complex coordinates. The quaternion product is</p>
+<p>$$
+(ab)_t=a_tb_t-a_xb_x-a_yb_y-a_zb_z,
+\qquad
+(ab)_x=a_tb_x+a_xb_t+a_yb_z-a_zb_y,
+$$</p>
+<p>and cyclically for $y,z$. The conjugate is $\tilde Q^{\natural}=(Q_t,-Q_x,-Q_y,-Q_z)$, the star is $\tilde Q^*=(\bar Q_t,-\bar Q_x,-\bar Q_y,-\bar Q_z)$, and</p>
+<p>$$
+N=\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2.
+$$</p>
+<p>The notation is the one of <em>Conventions in Mathematics</em>.</p>
+<h3 id="the-recipe">The Recipe</h3>
+<p>Given $\tilde Q$:</p>
+<ol>
+<li>Compute $N$ and $B^2=Q_x^2+Q_y^2+Q_z^2$. The sector requires $N\neq0$ and $B^2\neq0$.</li>
+<li>Compute the modulus $\Rho$, the principal square root of $N$, and write $\Rho=r e^{i\alpha}$ with $r>0$ and $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$.</li>
+<li>Compute the unit factor $\tilde U=\tilde Q/\Rho$.</li>
+<li>Compute the Hermitian factor $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, positive of norm one, and the rotor $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$.</li>
+<li>Read the boost angle and axis from $\tilde U_{\mathrm b}=c_{\mathrm b}e_t+i s_{\mathrm b}\vec u_{\mathrm b}$, and the rotor angle and axis from $\tilde u_{\mathrm r}=c_{\mathrm r}e_t+s_{\mathrm r}\vec u_{\mathrm r}$.</li>
+<li>Check $\tilde Q=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and $\langle\tilde U\rangle_{\natural}=1$.</li>
+<li>Compute the eigen-data: $\lambda_\pm=Q_t\pm iB$, $\vec\Xi=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec\Xi)$, and $\mu_\pm=\lambda_\pm/\Rho$.</li>
+<li>Compute the true logarithm by the matrix logarithm, and compare its exponential with $\tilde Q$.</li>
+</ol>
+<p>The <strong>defect</strong> of a case is</p>
+<p>$$
+\delta=\bigl\lVert\exp(\tilde Q_{\log})-\tilde Q\bigr\rVert,
+\qquad
+\tilde Q_{\log}=\ln r+i\alpha+i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r},
+$$</p>
+<p>where the norm is the maximum modulus of the four coordinates. It is zero exactly in the normal cases and positive in the non-normal ones.</p>
+<h3 id="the-checks">The Checks</h3>
+<p>The following identities hold in every case and are used below without comment.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Identity</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde U\rangle_{\natural}=1$</td>
+<td>the unit factor has norm one</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b}^*=\tilde U_{\mathrm b}$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$</td>
+<td>the Hermitian factor is positive of norm one</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}^*=\tilde u_{\mathrm r}^{-1}$, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$</td>
+<td>the rotor is unitary of norm one</td>
+</tr>
+<tr>
+<td>$\tilde Q=\Rho\tilde U$</td>
+<td>the modulus–unit split</td>
+</tr>
+<tr>
+<td>$[\tilde Q,\tilde Q^*]=-2\vec Q\times\overline{\vec Q}$</td>
+<td>normality</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the eigenvalues</td>
+</tr>
+<tr>
+<td>$\mu_\pm=\lambda_\pm/\Rho$</td>
+<td>the eigenvalues of the unit factor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="case-1-a-rotor">Case 1: A Rotor</h2>
+<h3 id="the-element">The Element</h3>
+<p>$$
+\tilde Q=\vec e_x=(0,1,0,0).
+$$</p>
+<p>$$
+N=1,
+\qquad
+B^2=1,
+\qquad
+\Rho=1,
+\qquad
+r=1,
+\qquad
+\alpha=0.
+$$</p>
+<h3 id="the-polar-factors">The Polar Factors</h3>
+<p>$$
+\tilde U=\vec e_x,
+\qquad
+\tilde U_{\mathrm b}=e_t,
+\qquad
+\tilde u_{\mathrm r}=\vec e_x.
+$$</p>
+<p>The boost is the identity, with $\psi=0$ and an undefined axis. The rotor is</p>
+<p>$$
+\tilde u_{\mathrm r}=\vec e_x=\exp\Bigl(\frac{\pi}{2}\vec e_x\Bigr),
+$$</p>
+<p>so $\theta=\pi$ and $\vec u_{\mathrm r}=\vec e_x$.</p>
+<h3 id="the-word">The Word</h3>
+<p>$$
+\tilde Q=\exp\Bigl(\frac{\pi}{2}\vec e_x\Bigr).
+$$</p>
+<p>The word has $r=1$, $\alpha=0$, $\psi=0$, $\theta=\pi$, $\vec u_{\mathrm r}=\vec e_x$.</p>
+<h3 id="the-spectral-data">The Spectral Data</h3>
+<p>$$
+\lambda_+=i,
+\qquad
+\lambda_-=-i,
+\qquad
+\vec\Xi=-i\vec e_x,
+\qquad
+\tilde\Pi_\pm=\frac{e_t\mp i\vec e_x}{2},
+\qquad
+\mu_\pm=\pm i.
+$$</p>
+<p>The element is normal: $\vec Q\times\overline{\vec Q}=0$. The eigenbasis is the polar frame, and the common axis is $i\vec\Xi=\vec e_x$.</p>
+<h3 id="the-checks_1">The Checks</h3>
+<p>The norm is one; the Hermitian factor is the identity; the rotor is unitary. The true logarithm is</p>
+<p>$$
+\operatorname{Log}\tilde Q=\frac{\pi}{2}\vec e_x,
+$$</p>
+<p>and the formal exponent is the same, with defect $0$. The element is the exponential of a single pure vector, as the normal theorem predicts.</p>
+<h2 id="case-2-a-boost">Case 2: A Boost</h2>
+<h3 id="the-element_1">The Element</h3>
+<p>$$
+\tilde Q=\sqrt2\,e_t+i\vec e_x=(1.41421356,i,0,0).
+$$</p>
+<p>$$
+N=1,
+\qquad
+B^2=-1,
+\qquad
+\Rho=1,
+\qquad
+r=1,
+\qquad
+\alpha=0.
+$$</p>
+<h3 id="the-polar-factors_1">The Polar Factors</h3>
+<p>$$
+\tilde U=\sqrt2\,e_t+i\vec e_x,
+\qquad
+\tilde U_{\mathrm b}=\sqrt2\,e_t+i\vec e_x,
+\qquad
+\tilde u_{\mathrm r}=e_t.
+$$</p>
+<p>The rotor is the identity, with $\theta=0$ and an undefined axis. The boost is</p>
+<p>$$
+\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec e_x,
+\qquad
+\cosh\frac{\psi}{2}=\sqrt2,
+\qquad
+\sinh\frac{\psi}{2}=1,
+$$</p>
+<p>so $\psi=2\ln(1+\sqrt2)=1.762747174$ and $\vec u_{\mathrm b}=\vec e_x$.</p>
+<h3 id="the-word_1">The Word</h3>
+<p>$$
+\tilde Q=\exp\Bigl(i\frac{\psi}{2}\vec e_x\Bigr),
+\qquad
+\psi=2\ln(1+\sqrt2).
+$$</p>
+<h3 id="the-spectral-data_1">The Spectral Data</h3>
+<p>$$
+\lambda_+=\sqrt2-1=0.414213562,
+\qquad
+\lambda_-=\sqrt2+1=2.41421356,
+\qquad
+\vec\Xi=-i\vec e_x,
+\qquad
+\mu_\pm=\lambda_\pm.
+$$</p>
+<p>The element is normal, and the eigenvalues of the unit factor are real and reciprocal. The common axis is $i\vec\Xi=\vec e_x$.</p>
+<h3 id="the-checks_2">The Checks</h3>
+<p>The true logarithm is</p>
+<p>$$
+\operatorname{Log}\tilde Q=i\frac{\psi}{2}\vec e_x=i\ln(1+\sqrt2)\vec e_x=i\,0.88137359\vec e_x,
+$$</p>
+<p>and the formal exponent is the same, with defect $0$.</p>
+<h2 id="case-3-a-boost-followed-by-a-rotor-on-the-same-axis">Case 3: A Boost Followed by a Rotor on the Same Axis</h2>
+<h3 id="the-element_2">The Element</h3>
+<p>$$
+\tilde Q=\Bigl(1-\frac{i}{\sqrt2}\Bigr)e_t+\Bigl(1+\frac{i}{\sqrt2}\Bigr)\vec e_x
+=(1-0.70710678i,\ 1+0.70710678i,\ 0,\ 0).
+$$</p>
+<p>$$
+N=1,
+\qquad
+B^2=\frac12+i=0.5+1i,
+\qquad
+\Rho=1,
+\qquad
+r=1,
+\qquad
+\alpha=0.
+$$</p>
+<h3 id="the-polar-factors_2">The Polar Factors</h3>
+<p>$$
+\tilde U=\tilde Q,
+\qquad
+\tilde U_{\mathrm b}=\sqrt2\,e_t+i\vec e_x,
+\qquad
+\tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
+$$</p>
+<p>The Hermitian factor is the one of case 2, with $\psi=2\ln(1+\sqrt2)$ and $\vec u_{\mathrm b}=\vec e_x$. The rotor is the quarter-turn about $\vec e_x$, with $\theta=\frac{\pi}{2}$ and $\vec u_{\mathrm r}=\vec e_x$.</p>
+<h3 id="the-word_2">The Word</h3>
+<p>$$
+\tilde Q=\exp\Bigl(i\frac{\psi}{2}\vec e_x\Bigr)\exp\Bigl(\frac{\pi}{4}\vec e_x\Bigr)
+=\exp\Bigl(\Bigl(\frac{\pi}{4}+i\frac{\psi}{2}\Bigr)\vec e_x\Bigr),
+\qquad
+\psi=2\ln(1+\sqrt2).
+$$</p>
+<p>The two axes are equal, so the word is a single exponential of the complex angle $\frac{\pi}{4}+i\ln(1+\sqrt2)$.</p>
+<h3 id="the-spectral-data_2">The Spectral Data</h3>
+<p>$$
+\lambda_+=\Bigl(1-\frac{1}{\sqrt2}\Bigr)(1+i)=0.292893219(1+i),
+\qquad
+\lambda_-=\Bigl(1+\frac{1}{\sqrt2}\Bigr)(1-i)=1.70710678(1-i),
+\qquad
+\vec\Xi=-i\vec e_x,
+$$</p>
+<p>$$
+\mu_+=\lambda_+=0.414213562\,e^{i\pi/4},
+\qquad
+\mu_-=\lambda_-=2.41421356\,e^{-i\pi/4}.
+$$</p>
+<p>The element is normal. The eigenbasis is the polar frame, and the eigenvalues of the unit factor are</p>
+<p>$$
+\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2},
+\qquad
+\psi=1.762747174,
+\qquad
+\theta=\frac{\pi}{2}.
+$$</p>
+<h3 id="the-checks_3">The Checks</h3>
+<p>The true logarithm is</p>
+<p>$$
+\operatorname{Log}\tilde Q=\Bigl(\frac{\pi}{4}+i\ln(1+\sqrt2)\Bigr)\vec e_x
+=(0.78539816+0.88137359i)\vec e_x,
+$$</p>
+<p>and the formal exponent is the same, with defect $0$. This is the clean normal case with both angles nonzero.</p>
+<h2 id="case-4-a-quarter-turn-rotor">Case 4: A Quarter-Turn Rotor</h2>
+<h3 id="the-element_3">The Element</h3>
+<p>$$
+\tilde Q=\frac{e_t+\vec e_x}{\sqrt2}=(0.70710678,0.70710678,0,0).
+$$</p>
+<p>$$
+N=1,
+\qquad
+B^2=\frac12,
+\qquad
+\Rho=1,
+\qquad
+r=1,
+\qquad
+\alpha=0.
+$$</p>
+<h3 id="the-polar-factors_3">The Polar Factors</h3>
+<p>$$
+\tilde U=\tilde Q,
+\qquad
+\tilde U_{\mathrm b}=e_t,
+\qquad
+\tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
+$$</p>
+<p>The boost is the identity, with $\psi=0$. The rotor has $\theta=\frac{\pi}{2}$ and $\vec u_{\mathrm r}=\vec e_x$.</p>
+<h3 id="the-spectral-data_3">The Spectral Data</h3>
+<p>$$
+\lambda_\pm=\frac{1\pm i}{\sqrt2},
+\qquad
+\vec\Xi=-i\vec e_x,
+\qquad
+\mu_\pm=e^{\pm i\pi/4}.
+$$</p>
+<p>The element is normal, the axes are the same, and the eigenvalues of the unit factor have modulus one. The formula $\mu_\pm=e^{\mp\psi/2}e^{\pm i\theta/2}$ gives $e^{\pm i\pi/4}$.</p>
+<h3 id="the-checks_4">The Checks</h3>
+<p>The true logarithm is $\frac{\pi}{4}\vec e_x$, the formal exponent is the same, and the defect is $0$.</p>
+<h2 id="case-5-a-non-normal-element-with-orthogonal-axes">Case 5: A Non-Normal Element with Orthogonal Axes</h2>
+<h3 id="the-element_4">The Element</h3>
+<p>$$
+\tilde Q=\Bigl(1-\frac{i}{2}\Bigr)e_t+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z
+=(1-0.5i,\ 0.70710678+0.70710678i,\ 0.70710678,\ 0.5i).
+$$</p>
+<p>$$
+N=1,
+\qquad
+B^2=\frac14+i=0.25+1i,
+\qquad
+\Rho=1,
+\qquad
+r=1,
+\qquad
+\alpha=0.
+$$</p>
+<h3 id="the-polar-factors_4">The Polar Factors</h3>
+<p>$$
+\tilde U=\tilde Q,
+\qquad
+\tilde U_{\mathrm b}=\sqrt2\,e_t+i\vec e_x,
+\qquad
+\tilde u_{\mathrm r}=0.70710678\,e_t+0.5\,\vec e_x+0.5\,\vec e_y
+=\frac{e_t}{\sqrt2}+\frac{\vec e_x+\vec e_y}{2}.
+$$</p>
+<p>Its scalar part is $1/\sqrt2=\cos\frac{\pi}{4}$, so $\theta=\frac{\pi}{2}$, and its vector part is $\frac12(\vec e_x+\vec e_y)=\frac{1}{\sqrt2}\frac{\vec e_x+\vec e_y}{\sqrt2}$, so $\vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}$. The boost is the one of case 2, with $\psi=1.762747174$ and $\vec u_{\mathrm b}=\vec e_x$. The angle between the axes is</p>
+<p>$$
+c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=\frac{1}{\sqrt2}.
+$$</p>
+<h3 id="the-word_3">The Word</h3>
+<p>$$
+\tilde Q=\exp\Bigl(i\frac{\psi}{2}\vec e_x\Bigr)
+\exp\Bigl(\frac{\pi}{4}\frac{\vec e_x+\vec e_y}{\sqrt2}\Bigr),
+\qquad
+\psi=2\ln(1+\sqrt2).
+$$</p>
+<p>The two axes are neither parallel nor antiparallel, and both angles are nonzero. The element is non-normal:</p>
+<p>$$
+\vec Q\times\overline{\vec Q}
+=\Bigl(-\frac{i}{\sqrt2},\frac{i}{\sqrt2},i\Bigr)\neq0.
+$$</p>
+<h3 id="the-spectral-data_4">The Spectral Data</h3>
+<p>$$
+\vec\Xi=-i\frac{\vec Q}{B},
+\qquad
+\lambda_+=0.375189466+0.30024259i,
+\qquad
+\lambda_-=1.62481053-1.30024259i,
+$$</p>
+<p>$$
+\mu_+=0.480533816\,e^{+0.674888846i},
+\qquad
+\mu_-=2.081019\,e^{-0.674888846i}.
+$$</p>
+<p>The eigenbasis is not the polar frame. The common-axis formula fails: the moduli of $\mu_\pm$ are not $e^{\mp\psi/2}$, and the arguments are not $\pm\theta/2$.</p>
+<h3 id="the-spectral-gap">The Spectral Gap</h3>
+<p>The normal-case reading would give</p>
+<p>$$
+\psi_{\mathrm{spec}}=\ln\frac{2.081019}{0.480533816}=1.4657,
+\qquad
+\theta_{\mathrm{spec}}=2(0.674888846)=1.3498,
+$$</p>
+<p>while the true word has</p>
+<p>$$
+\psi=1.7627,
+\qquad
+\theta=1.5708.
+$$</p>
+<p>The spectrum is the same; the rapidity and the rotor angle are not. The gap is a measurement of the non-normality, not a rounding error.</p>
+<h3 id="the-checks_5">The Checks</h3>
+<p>The true logarithm is</p>
+<p>$$
+\operatorname{Log}\tilde Q
+=(0.57156069+0.79764558i)\vec e_x
++(0.68460314+0.11304245i)\vec e_y
++(-0.07993308+0.48408752i)\vec e_z,
+$$</p>
+<p>and the formal exponent is</p>
+<p>$$
+\tilde Q_{\log}
+=(0.55536037+0.88137359i)\vec e_x+0.55536037\vec e_y.
+$$</p>
+<p>The exponential of the formal exponent misses the element by $0.5$. The commutator $[\tilde U_{\mathrm b},\tilde Q]$ has norm $1.41$, so the polar factors are not diagonal in the eigenbasis.</p>
+<h2 id="case-6-a-generic-non-normal-element">Case 6: A Generic Non-Normal Element</h2>
+<h3 id="the-element_5">The Element</h3>
+<p>$$
+\tilde Q=(1+i)e_t+(1+i)\vec e_x+\vec e_y+\frac12\vec e_z
+=(1+i,\ 1+i,\ 1,\ 0.5).
+$$</p>
+<p>$$
+N=1.25+4i,
+\qquad
+B^2=1.25+2i,
+\qquad
+\Rho=1.649358004+1.212593018i,
+\qquad
+r=2.047135475,
+\qquad
+\alpha=0.6339557292.
+$$</p>
+<h3 id="the-polar-factors_5">The Polar Factors</h3>
+<p>$$
+\tilde U=0.68291874+0.10422086i
++(0.68291874+0.10422086i)\vec e_x
++(0.39356980-0.28934894i)\vec e_y
++(0.19678490-0.14467447i)\vec e_z,
+$$</p>
+<p>$$
+\tilde U_{\mathrm b}=1.06130933\,e_t-i0.11241774\,\vec e_y-i0.33725322\,\vec e_z,
+$$</p>
+<p>$$
+\tilde u_{\mathrm r}=0.64346814\,e_t+0.64346814\,\vec e_x+0.37083420\,\vec e_y+0.18541710\,\vec e_z.
+$$</p>
+<p>The word has</p>
+<p>$$
+\psi=0.696809291,
+\qquad
+\vec u_{\mathrm b}=(0,-0.316227766,-0.948683298),
+\qquad
+\theta=1.743551853,
+\qquad
+\vec u_{\mathrm r}=(0.840615184,0.484451122,0.242225561),
+$$</p>
+<p>and</p>
+<p>$$
+c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=-0.382992240.
+$$</p>
+<h3 id="the-spectral-data_5">The Spectral Data</h3>
+<p>$$
+\lambda_+=0.2555219+2.34322286i,
+\qquad
+\lambda_-=1.7444781-0.343222856i,
+$$</p>
+<p>$$
+\mu_+=1.15142045\,e^{+0.828222573i},
+\qquad
+\mu_-=0.868492475\,e^{-0.828222573i}.
+$$</p>
+<p>The element is non-normal:</p>
+<p>$$
+\vec Q\times\overline{\vec Q}=(0,-i,2i)\neq0.
+$$</p>
+<h3 id="the-spectral-gap_1">The Spectral Gap</h3>
+<p>The normal-case reading would give</p>
+<p>$$
+\psi_{\mathrm{spec}}=\bigl\lvert\ln\frac{0.868492475}{1.15142045}\bigr\rvert=0.2820,
+\qquad
+\theta_{\mathrm{spec}}=2(0.828222573)=1.6564,
+$$</p>
+<p>while the true word has $\psi=0.6968$ and $\theta=1.7436$. The gap is larger than in case 5, because the axes are farther from parallel.</p>
+<h3 id="the-checks_6">The Checks</h3>
+<p>The true logarithm is</p>
+<p>$$
+\operatorname{Log}\tilde Q
+=(0.71644149+0.63395573i)e_t
++(0.76892326+0.08545096i)\vec e_x
++(0.42718711-0.34173615i)\vec e_y
++(0.21359356-0.17086807i)\vec e_z,
+$$</p>
+<p>and the formal exponent is</p>
+<p>$$
+\tilde Q_{\log}
+=(0.71644149+0.63395573i)e_t
++0.73282808\vec e_x
++(0.42233283-0.11017522i)\vec e_y
++(0.21116641-0.33052567i)\vec e_z.
+$$</p>
+<p>The exponential of the formal exponent misses the element by $0.4222$. The commutator $[\tilde U_{\mathrm b},\tilde Q]$ has norm $0.954$.</p>
+<h2 id="case-7-a-normal-element-with-a-complex-phase">Case 7: A Normal Element with a Complex Phase</h2>
+<h3 id="the-element_6">The Element</h3>
+<p>$$
+\tilde Q=(1+i)(e_t+\vec e_x)=(1+i,\ 1+i,\ 0,\ 0).
+$$</p>
+<p>$$
+N=4i,
+\qquad
+B^2=2i,
+\qquad
+\Rho=\sqrt2(1+i),
+\qquad
+r=2,
+\qquad
+\alpha=\frac{\pi}{4}.
+$$</p>
+<h3 id="the-polar-factors_6">The Polar Factors</h3>
+<p>$$
+\tilde U=\frac{e_t+\vec e_x}{\sqrt2},
+\qquad
+\tilde U_{\mathrm b}=e_t,
+\qquad
+\tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
+$$</p>
+<p>The element is the phase $2e^{i\pi/4}$ times the quarter-turn rotor. The boost is the identity, with $\psi=0$; the rotor has $\theta=\frac{\pi}{2}$ and $\vec u_{\mathrm r}=\vec e_x$.</p>
+<h3 id="the-spectral-data_6">The Spectral Data</h3>
+<p>$$
+\lambda_+=2i,
+\qquad
+\lambda_-=2,
+\qquad
+\vec\Xi=-i\vec e_x,
+\qquad
+\mu_\pm=e^{\pm i\pi/4}.
+$$</p>
+<p>The element is normal. The eigenvalues of $\tilde Q$ have modulus $2$, and the eigenvalues of the unit factor have modulus one.</p>
+<h3 id="the-checks_7">The Checks</h3>
+<p>The true logarithm is</p>
+<p>$$
+\operatorname{Log}\tilde Q=\ln2+i\frac{\pi}{4}+i\frac{\pi}{4}\vec e_x
+=(0.69314718+0.78539816i)e_t+0.78539816\vec e_x,
+$$</p>
+<p>and the formal exponent is the same, with defect $0$. This case shows that the phase and the rotor angle add in the scalar and the vector parts independently.</p>
+<h2 id="case-8-a-pure-vector">Case 8: A Pure Vector</h2>
+<h3 id="the-element_7">The Element</h3>
+<p>$$
+\tilde Q=\vec e_x+\vec e_y=(0,1,1,0).
+$$</p>
+<p>$$
+N=2,
+\qquad
+B^2=2,
+\qquad
+\Rho=\sqrt2,
+\qquad
+r=\sqrt2,
+\qquad
+\alpha=0.
+$$</p>
+<h3 id="the-polar-factors_7">The Polar Factors</h3>
+<p>$$
+\tilde U=\frac{\vec e_x+\vec e_y}{\sqrt2},
+\qquad
+\tilde U_{\mathrm b}=e_t,
+\qquad
+\tilde u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}.
+$$</p>
+<p>The boost is the identity, with $\psi=0$. The rotor is a half-turn about the diagonal, with $\theta=\pi$ and $\vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}$.</p>
+<h3 id="the-spectral-data_7">The Spectral Data</h3>
+<p>$$
+\lambda_+=i\sqrt2,
+\qquad
+\lambda_-=-i\sqrt2,
+\qquad
+\vec\Xi=-\frac{i}{\sqrt2}(\vec e_x+\vec e_y),
+\qquad
+\mu_\pm=\pm i.
+$$</p>
+<p>The element is normal. The eigenbasis is the polar frame, and the common axis is $i\vec\Xi=\frac{\vec e_x+\vec e_y}{\sqrt2}$.</p>
+<h3 id="the-checks_8">The Checks</h3>
+<p>The true logarithm is</p>
+<p>$$
+\operatorname{Log}\tilde Q=\ln\sqrt2+\frac{\pi}{2}\frac{\vec e_x+\vec e_y}{\sqrt2}
+=0.34657359\,e_t+1.11072073(\vec e_x+\vec e_y),
+$$</p>
+<p>and the formal exponent is the same, with defect $0$.</p>
+<h2 id="the-comparison">The Comparison</h2>
+<h3 id="the-normal-cases">The Normal Cases</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Element</th>
+<th>$\psi$</th>
+<th>$\theta$</th>
+<th>Axes</th>
+<th>Defect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$\vec e_x$</td>
+<td>$0$</td>
+<td>$\pi$</td>
+<td>undefined, $\vec e_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\sqrt2e_t+i\vec e_x$</td>
+<td>$2\ln(1+\sqrt2)$</td>
+<td>$0$</td>
+<td>$\vec e_x$, undefined</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$(1-\frac{i}{\sqrt2})e_t+(1+\frac{i}{\sqrt2})\vec e_x$</td>
+<td>$2\ln(1+\sqrt2)$</td>
+<td>$\frac{\pi}{2}$</td>
+<td>$\vec e_x$, $\vec e_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\frac{e_t+\vec e_x}{\sqrt2}$</td>
+<td>$0$</td>
+<td>$\frac{\pi}{2}$</td>
+<td>undefined, $\vec e_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$(1+i)(e_t+\vec e_x)$</td>
+<td>$0$</td>
+<td>$\frac{\pi}{2}$</td>
+<td>undefined, $\vec e_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$\vec e_x+\vec e_y$</td>
+<td>$0$</td>
+<td>$\pi$</td>
+<td>undefined, $\frac{\vec e_x+\vec e_y}{\sqrt2}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>In every normal case the formal exponent is a logarithm, the axes coincide when both are defined, and the eigenvalues of the unit factor are $e^{\mp\psi/2}e^{\pm i\theta/2}$.</p>
+<h3 id="the-non-normal-cases">The Non-Normal Cases</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Element</th>
+<th>$\psi$</th>
+<th>$\theta$</th>
+<th>$c$</th>
+<th>$\psi_{\mathrm{spec}}$</th>
+<th>$\theta_{\mathrm{spec}}$</th>
+<th>Defect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>$1-\frac{i}{2}+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z$</td>
+<td>$1.7627$</td>
+<td>$1.5708$</td>
+<td>$0.7071$</td>
+<td>$1.4657$</td>
+<td>$1.3498$</td>
+<td>$0.5000$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$(1+i)(e_t+\vec e_x)+\vec e_y+\frac12\vec e_z$</td>
+<td>$0.6968$</td>
+<td>$1.7436$</td>
+<td>$-0.3830$</td>
+<td>$0.2820$</td>
+<td>$1.6564$</td>
+<td>$0.4222$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two columns $\psi_{\mathrm{spec}},\theta_{\mathrm{spec}}$ are the values extracted from the eigenvalues of the unit factor by the normal-case formulas. They disagree with the true word in both cases. The defect is nonzero in both.</p>
+<h3 id="the-eigenvalues-of-the-unit-factor">The Eigenvalues of the Unit Factor</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\mu_+$</th>
+<th>$\mu_-$</th>
+<th>$\lvert\mu_+\rvert$</th>
+<th>$\arg\mu_+$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$i$</td>
+<td>$-i$</td>
+<td>$1$</td>
+<td>$\frac{\pi}{2}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$0.414213562$</td>
+<td>$2.41421356$</td>
+<td>$0.414213562$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$0.414213562e^{i\pi/4}$</td>
+<td>$2.41421356e^{-i\pi/4}$</td>
+<td>$0.414213562$</td>
+<td>$\frac{\pi}{4}$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$e^{i\pi/4}$</td>
+<td>$e^{-i\pi/4}$</td>
+<td>$1$</td>
+<td>$\frac{\pi}{4}$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$0.480533816e^{0.674888846i}$</td>
+<td>$2.081019e^{-0.674888846i}$</td>
+<td>$0.480533816$</td>
+<td>$0.674888846$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$1.15142045e^{0.828222573i}$</td>
+<td>$0.868492475e^{-0.828222573i}$</td>
+<td>$1.15142045$</td>
+<td>$0.828222573$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$e^{i\pi/4}$</td>
+<td>$e^{-i\pi/4}$</td>
+<td>$1$</td>
+<td>$\frac{\pi}{4}$</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$i$</td>
+<td>$-i$</td>
+<td>$1$</td>
+<td>$\frac{\pi}{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 8 the moduli and arguments are $e^{\mp\psi/2}$ and $\pm\theta/2$. In cases 5 and 6 they are not.</p>
+<h2 id="summary">Summary</h2>
+<h3 id="the-cases">The Cases</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$\tilde Q$</th>
+<th>$N$</th>
+<th>$B^2$</th>
+<th>$\Rho$</th>
+<th>Normal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$\vec e_x$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\sqrt2e_t+i\vec e_x$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$(1-\frac{i}{\sqrt2})e_t+(1+\frac{i}{\sqrt2})\vec e_x$</td>
+<td>$1$</td>
+<td>$\frac12+i$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\frac{e_t+\vec e_x}{\sqrt2}$</td>
+<td>$1$</td>
+<td>$\frac12$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$1-\frac{i}{2}+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z$</td>
+<td>$1$</td>
+<td>$\frac14+i$</td>
+<td>$1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$(1+i)(e_t+\vec e_x)+\vec e_y+\frac12\vec e_z$</td>
+<td>$1.25+4i$</td>
+<td>$1.25+2i$</td>
+<td>$1.649+1.213i$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$(1+i)(e_t+\vec e_x)$</td>
+<td>$4i$</td>
+<td>$2i$</td>
+<td>$\sqrt2(1+i)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$\vec e_x+\vec e_y$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$\sqrt2$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-word-data">The Word Data</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$r$</th>
+<th>$\alpha$</th>
+<th>$\psi$</th>
+<th>$\vec u_{\mathrm b}$</th>
+<th>$\theta$</th>
+<th>$\vec u_{\mathrm r}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>--</td>
+<td>$\pi$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1.762747174$</td>
+<td>$\vec e_x$</td>
+<td>$0$</td>
+<td>--</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1.762747174$</td>
+<td>$\vec e_x$</td>
+<td>$\frac{\pi}{2}$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>--</td>
+<td>$\frac{\pi}{2}$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1.762747174$</td>
+<td>$\vec e_x$</td>
+<td>$\frac{\pi}{2}$</td>
+<td>$\frac{\vec e_x+\vec e_y}{\sqrt2}$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$2.047135$</td>
+<td>$0.633956$</td>
+<td>$0.696809$</td>
+<td>$(0,-0.3162,-0.9487)$</td>
+<td>$1.743552$</td>
+<td>$(0.8406,0.4845,0.2422)$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$2$</td>
+<td>$\frac{\pi}{4}$</td>
+<td>$0$</td>
+<td>--</td>
+<td>$\frac{\pi}{2}$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$\sqrt2$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>--</td>
+<td>$\pi$</td>
+<td>$\frac{\vec e_x+\vec e_y}{\sqrt2}$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-the-examples-show">What the Examples Show</h3>
+<ul>
+<li>The word exists in every case, with $N\neq0$ and $B^2\neq0$.</li>
+<li>In the normal cases the axes coincide when both are defined, the word is a single exponential, the formal exponent is the logarithm, and the spectrum gives the two angles by $\psi=\ln\lvert\mu_-/\mu_+\rvert$ and $\theta=2\arg\mu_+$.</li>
+<li>In the non-normal cases the axes are not the eigenlines, the formal exponent is not the logarithm, the defect is positive, and the spectrum does not give the two angles. The gap is visible in the table: $1.4657$ against $1.7627$ in case 5, and $0.2820$ against $0.6968$ in case 6.</li>
+<li>The two factors commute with the element exactly in the normal cases; the norm of the commutator is zero there and $1.41$ and $0.954$ in the two non-normal cases.</li>
+<li>The eigenvalues of the unit factor are the same function of $U_t$ in all cases; what changes is whether the word's angles can be read from them.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q$</td>
+<td>the element of the case</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the reduced product</td>
+</tr>
+<tr>
+<td>$B^2$</td>
+<td>the vector form</td>
+</tr>
+<tr>
+<td>$\Rho$</td>
+<td>the modulus, principal square root of $N$</td>
+</tr>
+<tr>
+<td>$r,\alpha$</td>
+<td>the polar coordinates of $\Rho$</td>
+</tr>
+<tr>
+<td>$\tilde U$</td>
+<td>the unit factor</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b}$</td>
+<td>the Hermitian positive factor</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}$</td>
+<td>the rotor</td>
+</tr>
+<tr>
+<td>$\psi,\vec u_{\mathrm b}$</td>
+<td>the rapidity and the boost axis</td>
+</tr>
+<tr>
+<td>$\theta,\vec u_{\mathrm r}$</td>
+<td>the rotor angle and the rotor axis</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>the cosine between the axes</td>
+</tr>
+<tr>
+<td>$\lambda_\pm$</td>
+<td>the eigenvalues of $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\vec\Xi$</td>
+<td>the root of one, $-i\vec Q/B$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm$</td>
+<td>the spectral idempotents</td>
+</tr>
+<tr>
+<td>$\mu_\pm$</td>
+<td>the eigenvalues of the unit factor</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\log}$</td>
+<td>the formal exponent</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>the defect of the case</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html">Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion</a>, for the theorem, the proofs and the spectral reading.</li>
+<li><a href="exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html">Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the companion sector and its worked examples.</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html">Worked Examples of Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the degenerate cases.</li>
+<li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of a N-Regular Biquaternion</a>, for the modulus–unit theorem.</li>
+<li><a href="the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html">The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</a>, for the eigenbasis and the spectral idempotents.</li>
+<li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the notation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

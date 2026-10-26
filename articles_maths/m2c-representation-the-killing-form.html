@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Representation : The Killing Form — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-killing-form"><strong>$M_2(\mathbb{C})$ Representation : The Killing Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The unit group of the biquaternion algebra is a real Lie group of real dimension eight, and the Killing form of its Lie algebra is the invariant bilinear form that measures the algebra's failure to be semisimple. In the matrix model the Lie algebra is $M_2(\mathbb{C})$ with the commutator, and the Killing form is a real bilinear form whose radical is the centre and whose restriction to the trace-free part has signature $(3,3)$.</p>
+<p>This article develops the adjoint operator, the formula, the radical, the signature on the trace-free part, the invariance and the relation to the trace form. It is the matrix form of <em>Biquaternion Lie Group and Exponential Structure</em>, §<em>The Killing Form</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The Lie algebra is $M_2(\mathbb{C})$ read as a real vector space, with bracket $[X,Y]=XY-YX$; the trace is the complex trace, the real part is written $\operatorname{Re}$, and $X=\mathsf M_2(\tilde X)$.</p>
+<p><strong>Boundaries.</strong> The Killing form of the algebra, its radical and its signature are <em>Biquaternion Lie Group and Exponential Structure</em>, §<em>The Killing Form</em>; the plain, quaternionic, Hermitian and Krein forms are <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the trace pairing is <em>$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</em>.</p>
+<h2 id="the-adjoint-operator">The Adjoint Operator</h2>
+<p>For $X\in M_2(\mathbb{C})$ the <strong>adjoint operator</strong> is</p>
+<p>$$
+\operatorname{ad}_X:M_2(\mathbb{C})\longrightarrow M_2(\mathbb{C}),\qquad
+\operatorname{ad}_X(Y)=[X,Y]=XY-YX .
+$$</p>
+<p>It is complex linear, hence real linear on the eight real dimensions, and it is a derivation of the algebra: $\operatorname{ad}_X(YZ)=(\operatorname{ad}_XY)Z+Y(\operatorname{ad}_XZ)$.</p>
+<p>On the matrix units,</p>
+<p>$$
+\operatorname{ad}_X(E_{ij})=(x_i-x_j)E_{ij}
+$$</p>
+<p>when $X$ is diagonal with eigenvalues $x_1,x_2$. The adjoint operator is therefore diagonal in the matrix-unit basis for diagonal $X$, with the four eigenvalues $0,x_1-x_2,x_2-x_1,0$.</p>
+<p><strong>The bracket is a commutator.</strong> The Jacobi identity is the associativity of the matrix product, and the Lie algebra is $\mathfrak{gl}_2(\mathbb{C})$ read over $\mathbb{R}$, of real dimension eight.</p>
+<h2 id="the-formula">The Formula</h2>
+<p>The <strong>Killing form</strong> is</p>
+<p>$$
+\kappa(X,Y)=\operatorname{tr}\bigl(\operatorname{ad}_X\operatorname{ad}_Y\bigr),
+$$</p>
+<p>the trace being the real trace on the eight-dimensional space.</p>
+<p><strong>Theorem.</strong> For all $X,Y\in M_2(\mathbb{C})$,</p>
+<p>$$
+\boxed{\;
+\kappa(X,Y)=8\operatorname{Re}\operatorname{tr}(XY)-4\operatorname{Re}\bigl(\operatorname{tr}X\,\operatorname{tr}Y\bigr)
+\;}
+$$</p>
+<p><em>Proof.</em> The centre lies in the radical, because $\operatorname{ad}_{\mathrm I_2}=0$. On $\mathfrak{sl}_2(\mathbb{C})$ use the basis</p>
+<p>$$
+H=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad E=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad F=\begin{pmatrix}0&0\\1&0\end{pmatrix},
+$$</p>
+<p>with brackets $[H,E]=2E$, $[H,F]=-2F$ and $[E,F]=H$. In this basis the adjoint operators are</p>
+<p>$$
+\operatorname{ad}_H=\operatorname{diag}(0,2,-2),\qquad
+\operatorname{ad}_E=\begin{pmatrix}0&0&1\\-2&0&0\\0&0&0\end{pmatrix},\qquad
+\operatorname{ad}_F=\begin{pmatrix}0&-1&0\\0&0&0\\2&0&0\end{pmatrix}.
+$$</p>
+<p>Hence</p>
+<p>$$
+\operatorname{ad}_H^2=\operatorname{diag}(0,4,4),\qquad
+\operatorname{ad}_E\operatorname{ad}_F=\operatorname{diag}(2,2,0),
+$$</p>
+<p>and the products $\operatorname{ad}_H\operatorname{ad}_E$, $\operatorname{ad}_H\operatorname{ad}_F$, $\operatorname{ad}_E^2$ and $\operatorname{ad}_F^2$ have zero complex trace. With the complex trace, therefore,</p>
+<p>$$
+\kappa_{\mathbb{C}}(H,H)=8,\qquad \kappa_{\mathbb{C}}(E,F)=4,\qquad
+\kappa_{\mathbb{C}}(H,E)=\kappa_{\mathbb{C}}(H,F)=\kappa_{\mathbb{C}}(E,E)=\kappa_{\mathbb{C}}(F,F)=0 .
+$$</p>
+<p>The form $4\operatorname{tr}(XY)$ takes exactly the same values on the basis, since $\operatorname{tr}(H^2)=2$, $\operatorname{tr}(EF)=\operatorname{tr}(FE)=1$ and the remaining products are traceless. Both forms are complex bilinear, so they agree on $\mathfrak{sl}_2(\mathbb{C})$:</p>
+<p>$$
+\kappa_{\mathbb{C}}(X,Y)=4\operatorname{tr}(XY).
+$$</p>
+<p>The real Killing form is twice the real part of the complex one, so</p>
+<p>$$
+\kappa(X,Y)=8\operatorname{Re}\operatorname{tr}(XY)
+$$</p>
+<p>on $\mathfrak{sl}_2(\mathbb{C})$. For general $X=a\mathrm I_2+U$ and $Y=b\mathrm I_2+V$ with $U,V$ traceless, the centre contributes nothing, so</p>
+<p>$$
+\kappa(X,Y)=\kappa(U,V)=8\operatorname{Re}\operatorname{tr}(UV)
+=8\operatorname{Re}\bigl(\operatorname{tr}(XY)-\tfrac12\operatorname{tr}X\operatorname{tr}Y\bigr),
+$$</p>
+<p>which is the displayed formula. $\square$</p>
+<p><strong>The complex form.</strong> The same computation over $\mathbb{C}$ gives the complex bilinear form</p>
+<p>$$
+\kappa_{\mathbb{C}}(X,Y)=4\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y,
+$$</p>
+<p>whose real part is twice the real Killing form, $\kappa=2\operatorname{Re}\kappa_{\mathbb{C}}$. The factor two is the realification of the complex trace.</p>
+<p><strong>A direct check.</strong> For $X=Y=\mathrm I_2$ both sides vanish. For $X=Y=\operatorname{diag}(1,0)$ the value is $4$; for $X=E_{12}$ and $Y=E_{21}$ the value is $8$; for $X=Y=\vec e_x$ in the algebra, that is $X=-i\sigma_1$, the value is $-16$.</p>
+<h2 id="the-radical">The Radical</h2>
+<p><strong>Theorem.</strong> The radical of $\kappa$ is the centre,</p>
+<p>$$
+\operatorname{rad}\kappa=\mathbb{C}\mathrm I_2 .
+$$</p>
+<p><em>Proof.</em> For $X=\mathrm I_2$ the formula gives $\kappa(\mathrm I_2,Y)=8\operatorname{Re}\operatorname{tr}Y-8\operatorname{Re}\operatorname{tr}Y=0$. Conversely write $X=a\mathrm I_2+U$ with $\operatorname{tr}U=0$. Then</p>
+<p>$$
+\kappa(X,Y)=8\operatorname{Re}\operatorname{tr}(UY),
+$$</p>
+<p>because the scalar parts cancel. If this vanishes for every $Y$, then $\operatorname{Re}\operatorname{tr}(UY)=0$ for every $Y$; taking $Y=U^{\dagger}$ gives $\operatorname{Re}\operatorname{tr}(UU^{\dagger})=\lVert U\rVert^2=0$, so $U=0$. $\square$</p>
+<p><strong>The degeneration.</strong> The Killing form is degenerate exactly along the centre, of real dimension two. This is the matrix form of the fact that $\mathfrak{gl}_2$ is reductive and not semisimple: the centre is an abelian ideal, and the Killing form vanishes on it.</p>
+<h2 id="the-trace-free-part-and-the-signature">The Trace-Free Part and the Signature</h2>
+<p>On the trace-free part $\mathfrak{sl}_2(\mathbb{C})=\{X:\operatorname{tr}X=0\}$ the second term vanishes and</p>
+<p>$$
+\kappa(X,Y)=8\operatorname{Re}\operatorname{tr}(XY).
+$$</p>
+<p>This is nondegenerate, because $\operatorname{tr}(XY)$ is the nondegenerate trace pairing on $\mathfrak{sl}_2$ and the real part of a nondegenerate complex bilinear form is nondegenerate.</p>
+<p><strong>The two real subspaces.</strong> Every traceless matrix splits into a Hermitian and an anti-Hermitian part,</p>
+<p>$$
+X=\tfrac12(X+X^{\dagger})+\tfrac12(X-X^{\dagger}),
+$$</p>
+<p>and both parts are traceless. Write</p>
+<p>$$
+\mathfrak{u}=\{X:X^{\dagger}=-X,\ \operatorname{tr}X=0\},\qquad
+\mathfrak{p}=\{X:X^{\dagger}=X,\ \operatorname{tr}X=0\},
+$$</p>
+<p>both of real dimension three, the Lie algebra of $SU(2)$ and its complementary subspace.</p>
+<p><strong>Theorem.</strong> The two subspaces are orthogonal for $\kappa$, and</p>
+<p>$$
+\kappa(X,X)=-8\operatorname{tr}(XX^{\dagger})<0\quad(X\in\mathfrak{u},\ X\neq0),
+\qquad
+\kappa(X,X)=8\operatorname{tr}(XX^{\dagger})>0\quad(X\in\mathfrak{p},\ X\neq0).
+$$</p>
+<p>Hence the signature of $\kappa$ on $\mathfrak{sl}_2(\mathbb{C})$ is $(3,3)$, negative on the compact real form and positive on its complement.</p>
+<p><em>Proof.</em> For $X\in\mathfrak{u}$ and $Y\in\mathfrak{p}$, the product $XY$ is anti-Hermitian, so $\operatorname{tr}(XY)$ is purely imaginary and $\operatorname{Re}\operatorname{tr}(XY)=0$; the subspaces are orthogonal. For $X\in\mathfrak{u}$, $\operatorname{tr}(X^2)=-\operatorname{tr}(XX^{\dagger})$ is real and negative; for $X\in\mathfrak{p}$, $\operatorname{tr}(X^2)=\operatorname{tr}(XX^{\dagger})$ is real and positive. $\square$</p>
+<p><strong>The model matrices.</strong> In the algebra model, $\mathfrak{u}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ and $\mathfrak{p}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, and</p>
+<p>$$
+\kappa(\vec e_j,\vec e_k)=-16\,\delta_{jk},\qquad
+\kappa(i\vec e_j,i\vec e_k)=+16\,\delta_{jk}.
+$$</p>
+<p>The full form on $M_2(\mathbb{C})$ therefore has signature $(3,3)$ with two zero directions, the two real dimensions of the centre.</p>
+<h2 id="the-real-forms-and-the-signature">The Real Forms and the Signature</h2>
+<p><strong>The two real forms.</strong> The complex Lie algebra $\mathfrak{sl}_2(\mathbb{C})$ has two real forms up to isomorphism: the compact form $\mathfrak{su}(2)$ and the split form $\mathfrak{sl}_2(\mathbb{R})$, the latter isomorphic to $\mathfrak{su}(1,1)$. The Killing form is negative definite on the compact form, of signature $(2,1)$ on the split form, and of signature $(3,3)$ on the complex algebra read over $\mathbb{R}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Real form</th>
+<th>Matrix condition</th>
+<th>$\kappa$ signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(2)$</td>
+<td>$X^{\dagger}=-X$, $\operatorname{tr}X=0$</td>
+<td>$(0,3)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2(\mathbb{R})$</td>
+<td>$X$ real, $\operatorname{tr}X=0$</td>
+<td>$(2,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2(\mathbb{C})$ over $\mathbb{R}$</td>
+<td>$\operatorname{tr}X=0$</td>
+<td>$(3,3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The compact form.</strong> On $\mathfrak{su}(2)$ the form is $\kappa(X,X)=-8\operatorname{tr}(XX^{\dagger})$, negative for every nonzero $X$, so the signature is $(0,3)$. In the biquaternion model this is the subspace $\mathrm{K}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$.</p>
+<p><strong>The split form.</strong> On real traceless matrices the form is $\kappa(X,Y)=8\operatorname{tr}(XY)$. In the basis</p>
+<p>$$
+H=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+E=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+F=\begin{pmatrix}0&0\\1&0\end{pmatrix},
+$$</p>
+<p>the matrix of the form is</p>
+<p>$$
+\begin{pmatrix}8&0&0\\0&0&4\\0&4&0\end{pmatrix},
+$$</p>
+<p>whose eigenvalues $8,4,-4$ give the signature $(2,1)$. The split form is therefore indefinite, and the null directions are the real matrices $X$ with $\operatorname{tr}(X^2)=0$.</p>
+<p><strong>The complex form.</strong> On $\mathfrak{sl}_2(\mathbb{C})$ read over $\mathbb{R}$ the Hermitian and anti-Hermitian subspaces are orthogonal and carry opposite signs, so the signature is $(3,3)$; the real form $\mathfrak{su}(1,1)$ is conjugate to $\mathfrak{sl}_2(\mathbb{R})$ and does not give a third signature.</p>
+<h2 id="invariance">Invariance</h2>
+<p><strong>Theorem.</strong> The Killing form is invariant under the adjoint action:</p>
+<p>$$
+K\bigl([X,Y],Z\bigr)+K\bigl(Y,[X,Z]\bigr)=0 .
+$$</p>
+<p><em>Proof.</em> This is the standard invariance of the trace of a product of adjoint operators, $\operatorname{tr}(\operatorname{ad}_{[X,Y]}\operatorname{ad}_Z)=-\operatorname{tr}(\operatorname{ad}_Y\operatorname{ad}_{[X,Z]})$, which follows from $\operatorname{ad}_{[X,Y]}=[\operatorname{ad}_X,\operatorname{ad}_Y]$ and the cyclicity of the trace. $\square$</p>
+<p><strong>Corollary.</strong> For every invertible $P$,</p>
+<p>$$
+\kappa(PXP^{-1},PYP^{-1})=\kappa(X,Y).
+$$</p>
+<p>The form is therefore a function of the conjugation class, and it descends to the adjoint group $PGL_2(\mathbb{C})=\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$. In the algebra it is invariant under every automorphism.</p>
+<h2 id="relation-to-the-trace-form">Relation to the Trace Form</h2>
+<p>The <strong>trace form</strong> of the matrix model is the pairing</p>
+<p>$$
+\tau(X,Y)=\operatorname{tr}(XY),
+$$</p>
+<p>whose real part is twice the plain bilinear form of the biquaternion algebra, $\operatorname{Re}\operatorname{tr}(XY)=2\operatorname{Re}\operatorname{Sc}(\tilde X\tilde Y)$ (<em>$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</em>). The Killing form is the trace form with its projection to the trace-free part made explicit:</p>
+<p>$$
+\kappa(X,Y)=8\operatorname{Re}\operatorname{tr}\bigl(X_{\mathrm{sl}}Y_{\mathrm{sl}}\bigr),
+\qquad
+X_{\mathrm{sl}}=X-\tfrac12(\operatorname{tr}X)\mathrm I_2 .
+$$</p>
+<p><strong>The two forms compared.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Trace form $\operatorname{Re}\operatorname{tr}(XY)$</th>
+<th>Killing form $\kappa$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nondegenerate on $M_2(\mathbb{C})$</td>
+<td>yes</td>
+<td>no; radical $\mathbb{C}\mathrm I_2$</td>
+</tr>
+<tr>
+<td>Nondegenerate on $\mathfrak{sl}_2$</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Signature on $\mathfrak{sl}_2$</td>
+<td>$(3,3)$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>Invariant under all automorphisms</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Invariant under the adjoint action</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>On $\mathfrak{sl}_2$ the two forms are proportional, $\kappa=8\operatorname{Re}\operatorname{tr}(XY)$, and the factor eight is the normalization of the Killing form. On the centre the trace form is nonzero and the Killing form vanishes; that difference is the whole content of the radical.</p>
+<h2 id="summary">Summary</h2>
+<p>The Killing form of $\mathfrak{gl}_2(\mathbb{C})$ read over $\mathbb{R}$ is $\kappa(X,Y)=8\operatorname{Re}\operatorname{tr}(XY)-4\operatorname{Re}(\operatorname{tr}X\operatorname{tr}Y)$. Its radical is the centre $\mathbb{C}\mathrm I_2$, of real dimension two. On the trace-free part it is $8\operatorname{Re}\operatorname{tr}(XY)$, nondegenerate, with signature $(3,3)$: negative on the anti-Hermitian traceless matrices, the Lie algebra of $SU(2)$, and positive on the Hermitian traceless ones. The form is invariant under the adjoint action and under conjugation, so it is a function of the conjugation class, and its restriction to $\mathfrak{sl}_2$ is eight times the trace form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{ad}_X(Y)=[X,Y]$</td>
+<td>the adjoint operator</td>
+</tr>
+<tr>
+<td>$\kappa(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$\kappa_{\mathbb{C}}(X,Y)=4\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$</td>
+<td>the complex bilinear form</td>
+</tr>
+<tr>
+<td>$\operatorname{rad}\kappa=\mathbb{C}\mathrm I_2$</td>
+<td>the radical, the centre</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_2(\mathbb{C})$</td>
+<td>the trace-free part</td>
+</tr>
+<tr>
+<td>$\mathfrak{u},\mathfrak{p}$</td>
+<td>the anti-Hermitian and Hermitian traceless subspaces, real dimension three each</td>
+</tr>
+<tr>
+<td>$\tau(X,Y)=\operatorname{tr}(XY)$</td>
+<td>the trace form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="biquaternion-lie-group-and-exponential-structure.html">Biquaternion Lie Group and Exponential Structure</a>, for the Killing form of the algebra and its signature</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the plain form and its signature</li>
+<li><a href="m2c-representation-the-four-words-and-the-four-traces.html">$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</a>, for the trace pairing</li>
+<li><a href="m2c-representation-the-centraliser-and-the-double-centraliser.html">$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser</a>, for the commutant and the centre</li>
+<li><a href="biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the automorphism group and its action</li>
+<li><a href="structure-of-lie-algebras.html">Structure of Lie Algebras</a>, for the general theory of the Killing form and semisimplicity</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

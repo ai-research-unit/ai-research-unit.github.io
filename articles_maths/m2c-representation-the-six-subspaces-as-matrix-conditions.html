@@ -79,7 +79,7 @@
 \mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
 \mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$</p>
-<p><strong>Boundaries.</strong> The subspaces and their relations are <em>Introduction to the Remarkable Subspaces</em> and <em>Comparison of the Remarkable Subspaces</em>; the four forms restricted to them are <em>Remarkable Subspaces and the Four General Products, Forms and Norms</em>; the polar action on them is <em>The Polar Decomposition and Remarkable Subspaces</em>; the matrix form of that action is <em>$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence</em>.</p>
+<p><strong>Boundaries.</strong> The subspaces and their relations are <em>Introduction to the Remarkable Subspaces</em> and <em>Comparison of the Remarkable Subspaces</em>; the four forms restricted to them are <em>Remarkable Subspaces and the Four General Products, Forms and Norms</em>; the polar action on them is <em>The Polar Decomposition and Remarkable Subspaces</em>; the matrix form of that action is <em>The Sandwich in the $M_2(\mathbb{C})$ Model</em>.</p>
 <h2 id="the-table">The Table</h2>
 <p>Every subspace is the image of the basis vectors listed in its row, with the real parameters substituted as in the last column.</p>
 <div class="table-scroll"><table>
@@ -151,7 +151,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the matrix form of the six definitions. The two complex subspaces are of real dimension two and six; the four real-type subspaces are of real dimension four. The determinants are the quaternionic norm restricted to each subspace, and the last column gives the signature of the real quadratic form on the real subspace.</p>
+<p>The table is the matrix form of the six definitions. The two complex subspaces are of real dimension two and six; the four real-type subspaces are of real dimension four. The determinants are the quaternionic norm restricted to each subspace: complex-valued on the centre and the vector subspace, real on the four real-type subspaces. The last column is the signature of the Hermitian norm on the two complex subspaces, where the determinant has no signature, and the signature of the determinant on the four real-type subspaces.</p>
 <h2 id="the-centre-subspace">The Centre Subspace</h2>
 <p><strong>The fixed space of quaternion conjugation.</strong></p>
 <p>$$
@@ -230,6 +230,50 @@ $$</p>
 $$</p>
 <p>of signature $(3,1)$. The subspace is not closed under multiplication; it is the Lie algebra of the unitary group under the commutator, and it is the carrier of the material sector.</p>
 <p><strong>Why the material subspace is anti-Hermitian.</strong> The determinant on a Hermitian matrix has signature $(1,3)$; on an anti-Hermitian matrix it has the opposite signature $(3,1)$. The material form is the one with the positive spatial part, and it is obtained by multiplying the Hermitian matrices by $i$. The factor $i$ is the matrix form of the statement that the material sector is the anti-Hermitian one.</p>
+<h2 id="the-roots-of-plus-one-and-the-idempotents">The Roots of Plus One and the Idempotents</h2>
+<p><strong>The roots of $+1$.</strong> A matrix $X$ with $X^2=\mathrm I_2$ is diagonalisable with eigenvalues $\pm1$: it is a scalar involution $\pm\mathrm I_2$ when the eigenvalues agree, and a traceless involution when they differ. The six subspaces carry the following roots.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subspace</th>
+<th>Roots of $+1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>$\pm\mathrm I_2$</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the traceless involutions, $\operatorname{Tr}X=0$, $X^2=\mathrm I_2$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\pm\mathrm I_2$</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$</td>
+<td>the Hermitian traceless involutions $\vec u\cdot\vec\sigma$, $\lvert\vec u\rvert=1$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>$\pm\mathrm I_2$ and $\vec u\cdot\vec\sigma$, $\lvert\vec u\rvert=1$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is immediate: an anti-Hermitian matrix has purely imaginary eigenvalues, so it cannot have the real eigenvalues $\pm1$. The table is the matrix form of the table of <em>Introduction to the Remarkable Subspaces</em>, §<em>The Roots of Zero and Plus One</em>.</p>
+<p><strong>The idempotents.</strong> A matrix $\Pi$ with $\Pi^2=\Pi$ is a projector; if it is not $0$ or $\mathrm I_2$, its rank is one. In the six subspaces the only nontrivial idempotents are</p>
+<p>$$
+\Pi(\vec u)=\tfrac12\bigl(\mathrm I_2+\vec u\cdot\vec\sigma\bigr),
+\qquad \vec u\in\mathbb{R}^3,\quad\lvert\vec u\rvert=1,
+$$</p>
+<p>and they all lie in the Hermitian subspace $\mathbb{M}_+$. The centre and the quaternion subspace contain only $0$ and $\mathrm I_2$; the vector subspace, the anti-quaternion subspace and $\mathbb{M}_-$ contain only $0$. The family is the matrix form of the Hermitian idempotents $\tfrac12(e_t+i\vec u)$ of <em>Introduction to the Remarkable Subspaces</em>, §<em>The Idempotents and the Ideals in the Remarkable Subspaces</em>.</p>
+<p><strong>The nilpotents.</strong> The roots of $0$ are the nilpotents, and a nonzero nilpotent has trace zero and rank one. It lies in the vector subspace and on the null cone, and it lies in none of the other five subspaces except through the common origin. The idempotent and the nilpotent are the two ends of the rank-one variety: $\Pi^2=\Pi$ and $N^2=0$.</p>
 <h2 id="how-they-fit-together">How They Fit Together</h2>
 <p><strong>The three splits.</strong></p>
 <p>$$
@@ -288,7 +332,7 @@ $$</p>
 <li><a href="comparison-of-the-remarkable-subspaces.html">Comparison of the Remarkable Subspaces</a>, for the three splits and the intersections</li>
 <li><a href="remarkable-subspaces-and-the-four-general-products-forms-and-norms.html">Remarkable Subspaces and the Four General Products, Forms and Norms</a>, for the forms restricted to the subspaces</li>
 <li><a href="the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a>, for the action on the subspaces</li>
-<li><a href="m2c-representation-the-sandwich-as-a-matrix-congruence.html">$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence</a>, for the matrix action on the two sectors</li>
+<li><a href="the-sandwich-in-the-m2c-model.html">The Sandwich in the $M_2(\mathbb{C})$ Model</a>, for the matrix action on the two sectors</li>
 <li><a href="m2c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the determinant</li>
 <li><a href="comparison-of-the-remarkable-subspaces.html">Comparison of the Remarkable Subspaces</a>, for the material reading</li>
 </ul>

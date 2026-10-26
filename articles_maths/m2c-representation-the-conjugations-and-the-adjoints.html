@@ -207,6 +207,24 @@ $$</p>
 <p><strong>The element-level adjoints.</strong> The adjugate is the classical adjoint of a two-by-two matrix, and the dagger is the Hermitian adjoint. The four involutions are the element-level operations that the four forms use to move an argument from one slot to the other. The operator-level adjoints of a linear map are different objects: they are the maps $T^{\varphi}$ defined by $\varphi(Tx,y)=\varphi(x,T^{\varphi}y)$, and they are computed in <em>The Four Adjoints of the Biquaternion Algebra in Examples</em>.</p>
 <p><strong>The four fixed spaces.</strong> The fixed spaces of the four operations are the centre, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace. Together with the vector subspace and the anti-quaternion subspace, they are the six remarkable subspaces. The table of involutions is therefore the shortest route to the six subspaces: each row produces one fixed and one anti-fixed space, and the six are the distinct ones among the eight.</p>
 <p><strong>Why four and not two.</strong> The complex algebra has two independent real structures, ${}^{\natural}$ and $\bar{\cdot}$, and their product is the Hermitian conjugation. The fourth is the negative of the product. The four are the four ways of combining the quaternion conjugation with the complex conjugation, and the four forms are the four ways of switching them on and off in a trace.</p>
+<h2 id="the-adjugate-of-the-dagger">The Adjugate of the Dagger</h2>
+<p>The dressed conjugation is the composition of the two anti-involutions:</p>
+<p>$$
+\operatorname{adj}(M^{\dagger})=(\operatorname{adj}M)^{\dagger}
+=\epsilon\bar M\epsilon^{-1}.
+$$</p>
+<p>For $M=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ all three expressions equal</p>
+<p>$$
+\begin{pmatrix}\bar d&-\bar c\\-\bar b&\bar a\end{pmatrix},
+$$</p>
+<p>which proves the identity. It is the matrix form of $\bar{\cdot}={}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}$: the algebra conjugation is the adjugate of the Hermitian conjugate, and the two operations commute because one acts on the order of the factors and the other on their values.</p>
+<p><strong>The Klein group.</strong> The three operations $\operatorname{adj}$, ${}^{\dagger}$ and $\operatorname{adj}\circ{}^{\dagger}$ are involutions and commute, so together with the identity they form a Klein four-group:</p>
+<p>$$
+\operatorname{adj}^2=\mathrm{id},\qquad
+(\dagger)^2=\mathrm{id},\qquad
+(\operatorname{adj}\dagger)^2=\mathrm{id}.
+$$</p>
+<p>The fourth algebra involution ${}^{\flat}$ is $-\dagger$, the negative of the Hermitian conjugation, and it is not in this group because the minus sign is not multiplicative. The matrix table of the four involutions is therefore the table of the three elements of the Klein group together with $-\dagger$.</p>
 <h2 id="summary">Summary</h2>
 <p>The four involutions of the algebra become the adjugate, the $\epsilon$-dressed entrywise conjugation, the conjugate transpose and its negative. Their fixed spaces are the centre, the quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace; their anti-fixed spaces are the vector, anti-quaternion, anti-Hermitian and Hermitian subspaces. The adjugate is $(\operatorname{Tr}M)\mathrm I_2-M$ and also $\epsilon M^{\mathsf T}\epsilon^{-1}$; complex conjugation is $\epsilon\bar M\epsilon^{-1}$ and not the entrywise conjugation. The four forms are the four half-traces of the words built from these switches.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

@@ -115,6 +115,71 @@ $$</p>
 <p>The numerator is the image of $\tilde Q^{\natural}$, and the formula is the matrix form of $\tilde Q^{-1}=\tilde Q^{\natural}/N$.</p>
 <p><strong>The zero divisors.</strong> A nonzero matrix is a zero divisor exactly when it is singular, and the singular matrices are those of rank at most one. The singular nonzero matrices form the determinantal variety $\{N=0\}$, the image of the null cone. The zero matrix is the apex. The cone is the subject of <em>$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</em>.</p>
 <p><strong>The determinant as a volume.</strong> Over $\mathbb{C}$ the determinant is a complex volume. Its modulus squared is the real volume of the image of the unit square, and its argument is twice the phase of the linear map. On the Hermitian matrices the determinant is real and is the Minkowski quadratic form; on the anti-Hermitian matrices it is real with the opposite sign. The two readings are the two real forms of the same complex determinant.</p>
+<h2 id="the-four-norms-as-matrix-invariants">The Four Norms as Matrix Invariants</h2>
+<p>The four algebraic norms of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, §<em>The Four Algebraic Norms</em>, are four matrix invariants of the same element.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Norm</th>
+<th>Algebra value</th>
+<th>Matrix formula</th>
+<th>Value ring</th>
+<th>Definite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plain $P$</td>
+<td>$Q_t^2-Q_x^2-Q_y^2-Q_z^2$</td>
+<td>$\tfrac12\operatorname{Tr}(M^2)$</td>
+<td>$\mathbb{C}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Quaternionic $N$</td>
+<td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
+<td>$\det M$</td>
+<td>$\mathbb{C}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Hermitian $H$</td>
+<td>$\sum_\mu\lvert Q_\mu\rvert^2$</td>
+<td>$\tfrac12\operatorname{Tr}(M^{\dagger}M)$</td>
+<td>$\mathbb{R}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Krein $K$</td>
+<td>$\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$</td>
+<td>$\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}(M)M^{\dagger}\bigr)$</td>
+<td>$\mathbb{R}$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The plain norm.</strong> Since $M=Q_t\mathrm I_2+\mathsf M_2(\vec Q)$ and $\mathsf M_2(\vec Q)$ is traceless,</p>
+<p>$$
+M^2=Q_t^2\mathrm I_2+2Q_t\mathsf M_2(\vec Q)+\mathsf M_2(\vec Q)^2,
+\qquad
+\operatorname{Tr}\bigl(\mathsf M_2(\vec Q)^2\bigr)=-2B^2,
+$$</p>
+<p>so $\tfrac12\operatorname{Tr}(M^2)=Q_t^2-B^2=P$. The word is the plain word $M^2$ closed by a trace.</p>
+<p><strong>The Hermitian norm.</strong> The identity $\tfrac12\operatorname{Tr}(M^{\dagger}M)=\tfrac12\sum_{ij}\lvert M_{ij}\rvert^2$ gives, on the general matrix,</p>
+<p>$$
+\tfrac12\operatorname{Tr}(M^{\dagger}M)
+=\tfrac12\Bigl(\lvert Q_t-iQ_z\rvert^2+\lvert -iQ_x-Q_y\rvert^2
++\lvert -iQ_x+Q_y\rvert^2+\lvert Q_t+iQ_z\rvert^2\Bigr)
+=\sum_\mu\lvert Q_\mu\rvert^2=H .
+$$</p>
+<p>It is the Frobenius norm squared, and it is the unique norm of the four that is positive definite.</p>
+<p><strong>The Krein norm.</strong> Since $\operatorname{adj}M=\mathsf M_2(\tilde Q^{\natural})=Q_t\mathrm I_2-\mathsf M_2(\vec Q)$ and $M^{\dagger}=\mathsf M_2(\tilde Q^{*})=\overline{Q_t}\mathrm I_2-\mathsf M_2(\overline{\vec Q})$, the two traceless parts contribute only through their product, whose trace is $-2\sum_k\lvert Q_k\rvert^2$. Hence</p>
+<p>$$
+\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}(M)M^{\dagger}\bigr)
+=\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2=K .
+$$</p>
+<p>The Krein norm is the only one of the four that is positive on the centre and negative on the vector subspace, and its signature on the real algebra is $(2,6)$.</p>
+<p>The table is the matrix form of the table of the four norms: the plain and the quaternionic norms are complex-valued, the Hermitian and the Krein norms are real-valued, and the quaternionic norm alone is multiplicative.</p>
 <h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
 <p><strong>The characteristic polynomial is the biquadratic.</strong></p>
 <p>$$
@@ -210,6 +275,7 @@ $$</p>
 <li><a href="m2c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</a>, for the singular matrices</li>
 <li><a href="m2c-representation-the-polar-decomposition-of-a-matrix.html">$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</a>, for the modulus</li>
 <li><a href="m2c-representation-the-six-subspaces-as-matrix-conditions.html">$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions</a>, for the determinants on the subspaces</li>
+<li><a href="m2c-representation-the-killing-form.html">$M_2(\mathbb{C})$ Representation : The Killing Form</a>, for the trace form on the Lie algebra</li>
 <li><a href="the-n-regular-sector.html">The N-Regular Sector</a>, for the norm on the units</li>
 <li><a href="the-n-degenerate-sector.html">The N-Degenerate Sector</a>, for the null cone</li>
 <li><a href="the-determinant-and-alternating-forms.html">The Determinant and Alternating Forms</a></li>

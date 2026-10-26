@@ -71,9 +71,9 @@
         <h1 id="math0-representation-the-polar-decomposition-of-a-matrix"><strong>$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Every invertible complex matrix is the product of a positive Hermitian matrix and a unitary one, and the product is unique. For a biquaternion matrix the two factors carry the two pieces of the polar decomposition of the element: the positive factor is the boost, the unitary factor is the phase times the rotor.</p>
-<p>This article develops the matrix polar decomposition, its refinement by the determinant, and its behaviour on the singular matrices. It is the matrix form of <em>The Polar Decomposition of a N-Regular Biquaternion</em>, §<em>The Matrix Picture</em>, and of <em>The Polar Decomposition of a N-Degenerate Biquaternion</em>, §<em>The Matrix Picture</em>.</p>
+<p>This article develops the matrix polar decomposition, its refinement by the determinant, its behaviour on the singular matrices, and the singular value decomposition. It is the matrix form of <em>The Polar Decomposition of a N-Regular Biquaternion</em>, §<em>The Matrix Picture</em>, and of <em>The Polar Decomposition of a N-Degenerate Biquaternion</em>, §<em>The Matrix Picture</em>.</p>
 <p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The norm is $N=\det M$. A matrix is <strong>positive</strong> when it is Hermitian with non-negative eigenvalues, and <strong>positive definite</strong> when the eigenvalues are positive. The unitary group is $U(2)$ and the special unitary group is $SU(2)$.</p>
-<p><strong>Boundaries.</strong> The polar decomposition of the element is <em>The Polar Decomposition of a Biquaternion</em>, of the regular element <em>The Polar Decomposition of a N-Regular Biquaternion</em>, and of the degenerate element <em>The Polar Decomposition of a N-Degenerate Biquaternion</em>; the sandwich action of the factors is <em>$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence</em>; the groups are <em>$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</em>.</p>
+<p><strong>Boundaries.</strong> The polar decomposition of the element is <em>The Polar Decomposition of a Biquaternion</em>, of the regular element <em>The Polar Decomposition of a N-Regular Biquaternion</em>, and of the degenerate element <em>The Polar Decomposition of a N-Degenerate Biquaternion</em>; the sandwich action of the factors is <em>The Sandwich in the $M_2(\mathbb{C})$ Model</em>; the groups are <em>$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</em>.</p>
 <h2 id="the-matrix-polar-decomposition">The Matrix Polar Decomposition</h2>
 <p><strong>Theorem.</strong> Every $M\in M_2(\mathbb{C})$ has a factorisation</p>
 <p>$$
@@ -103,6 +103,26 @@ $$</p>
 \det P=|\det M|,\qquad |\det V|=1.
 $$</p>
 <p>The polar decomposition is therefore the matrix form of the polar form of a nonzero complex number, applied to the determinant.</p>
+<h2 id="the-closed-form-of-the-positive-factor">The Closed Form of the Positive Factor</h2>
+<p><strong>The square root by Cayley–Hamilton.</strong> For a Hermitian $2\times2$ matrix $Y$ with non-negative eigenvalues, not both zero, the positive square root is the degree-one polynomial</p>
+<p>$$
+Y^{1/2}=\frac{Y+\sqrt{\det Y}\,\mathrm I_2}
+{\sqrt{\operatorname{Tr}Y+2\sqrt{\det Y}}},
+$$</p>
+<p>because $Y$ satisfies $Y^2-(\operatorname{Tr}Y)Y+(\det Y)\mathrm I_2=0$ and the scalar function is applied to the two eigenvalues. For $Y=MM^{\dagger}$ this gives the positive factor in closed form:</p>
+<p>$$
+P=(MM^{\dagger})^{1/2}
+=\frac{MM^{\dagger}+\lvert\det M\rvert\,\mathrm I_2}
+{\sqrt{\operatorname{Tr}(MM^{\dagger})+2\lvert\det M\rvert}},
+$$</p>
+<p>using $\sqrt{\det(MM^{\dagger})}=\lvert\det M\rvert$. The formula is valid for every nonzero $M$; for a singular $M$ it gives the rank-one positive factor.</p>
+<p><strong>The unitary factor.</strong> When $M$ is invertible, $P$ is positive definite and</p>
+<p>$$
+V=P^{-1}M
+=\frac{\sqrt{\operatorname{Tr}(MM^{\dagger})+2\lvert\det M\rvert}}
+{MM^{\dagger}+\lvert\det M\rvert\,\mathrm I_2}\,M,
+$$</p>
+<p>which is unitary. When $M$ is singular, $P$ is only positive semidefinite and the factor $V$ is the partial isometry obtained from the Moore–Penrose inverse $P^{+}$, not from $P^{-1}$.</p>
 <h2 id="the-biquaternion-word">The Biquaternion Word</h2>
 <p><strong>The two factors in the algebra.</strong> For a regular element, the matrix polar decomposition reads</p>
 <p>$$
@@ -193,8 +213,32 @@ $$</p>
 <p>a rank-one positive matrix, and $V$ maps $(\ker M)^{\perp}$ isometrically onto the image line of $M$ and kills $\ker M$. The unitary factor is not unitary: it has a one-dimensional kernel. The matrix is a partial isometry times a rank-one positive factor, and the missing direction is the kernel of the rank-one element.</p>
 <p><strong>The degenerate element.</strong> On the null cone the algebra-side polar decomposition has a vanishing modulus; the matrix factor $P$ is rank one and the factor $V$ is a partial isometry. The two chiralities of the rank-one element correspond to the image and the kernel of $V$. The details are <em>The Polar Decomposition of a N-Degenerate Biquaternion</em>, §<em>The Degenerate Factorisation</em>.</p>
 <p><strong>The cone.</strong> The map $M\mapsto P$ is continuous on the whole matrix algebra and sends the cone to the positive semidefinite matrices of rank at most one. The map $M\mapsto V$ is not continuous at the origin: the direction of $V$ depends on the direction of approach. The polar decomposition is a diffeomorphism on the open set of invertible matrices and only a bijection on the singular locus, where $V$ fails to be continuous at the origin.</p>
+<h2 id="the-singular-value-decomposition">The Singular Value Decomposition</h2>
+<p><strong>The theorem.</strong> Every $M\in M_2(\mathbb{C})$ factors as</p>
+<p>$$
+M=U\Sigma V^{\dagger},\qquad
+\Sigma=\operatorname{diag}(s_1,s_2),\quad s_1\ge s_2\ge0,
+$$</p>
+<p>with $U$ and $V$ unitary. The numbers $s_1,s_2$ are the <strong>singular values</strong>; they are the eigenvalues of the positive factor $P=(MM^{\dagger})^{1/2}$ and are determined by $M$. The factorisation is unique up to $U\mapsto U\Lambda$, $V\mapsto V\Lambda$ for a diagonal unitary $\Lambda$ when $s_1>s_2$.</p>
+<p><strong>From the polar decomposition.</strong> Write the polar decomposition as $M=PW$, with $W$ unitary when $M$ is invertible, and diagonalise the positive factor,</p>
+<p>$$
+P=U\Sigma U^{\dagger}.
+$$</p>
+<p>Then</p>
+<p>$$
+M=U\Sigma\,(W^{\dagger}U)^{\dagger},
+$$</p>
+<p>so the left unitary is the eigenbasis of $P$ and the right unitary is $W^{\dagger}U$. The SVD is the polar decomposition with the positive factor diagonalised; conversely $P=U\Sigma U^{\dagger}$ and $W=UV^{\dagger}$ recover the polar factors.</p>
+<p><strong>The singular values in the biquaternion word.</strong> With $M=r\zeta M_bM_r$, the positive factor is $P=rM_b$. The eigenvalues of $M_b$ are $e^{\pm\eta/2}$, so</p>
+<p>$$
+s_1=r e^{\eta/2},\qquad s_2=r e^{-\eta/2},\qquad s_1s_2=r^2=\lvert\det M\rvert.
+$$</p>
+<p>The singular values coincide exactly when $M_b=\mathrm I_2$, that is when $M$ is a scalar times a unitary. The rapidity $\eta$ is the parameter that separates them.</p>
+<p><strong>The normal case.</strong> The multiset of singular values equals the multiset of eigenvalue moduli exactly when $M$ is normal: $\sum_i s_i^2=\operatorname{tr}(MM^{\dagger})$ equals $\sum_i\lvert\lambda_i\rvert^2$ exactly in that case, by Schur's inequality. In the biquaternion word normality makes $M_b$ commute with $M_r$, and the eigenvalues then have moduli $r e^{\pm\eta/2}$.</p>
+<p><strong>The rank and the strata.</strong> The rank is the number of nonzero singular values. On the determinantal variety $s_2=0$: the rank-one matrices have $s_1>0$, $s_2=0$, and the zero matrix has $s_1=s_2=0$. The modulus of the determinant is the product $s_1s_2$, so it vanishes exactly when a singular value does.</p>
+<p><strong>The algebra reading.</strong> The left unitary is the eigenbasis of the boost, the diagonal factor is the boost read in that basis, and the right unitary is the rotor composed with the same basis. The SVD separates the two rotations from the rapidity; the polar decomposition keeps the boost and the rotor together.</p>
 <h2 id="summary">Summary</h2>
-<p>Every invertible matrix is uniquely $M=PV$ with $P$ positive definite and $V$ unitary; explicitly $P=(MM^{\dagger})^{1/2}$ and $V=P^{-1}M$. For a biquaternion matrix the word is $M=r\zeta M_bM_r$ with $r>0$, $|\zeta|=1$, $M_b$ positive Hermitian of determinant one and $M_r\in SU(2)$. The determinant is $r^2\zeta^2$, the modulus is $|\det M|^{1/2}$, and on $SL_2$ the decomposition is $Herm^{>0}_1\cdot SU(2)$. On singular matrices the positive factor is semidefinite and the unitary factor is only a partial isometry.</p>
+<p>Every invertible matrix is uniquely $M=PV$ with $P$ positive definite and $V$ unitary; explicitly $P=(MM^{\dagger})^{1/2}$ and $V=P^{-1}M$. For a biquaternion matrix the word is $M=r\zeta M_bM_r$ with $r>0$, $|\zeta|=1$, $M_b$ positive Hermitian of determinant one and $M_r\in SU(2)$. The determinant is $r^2\zeta^2$, the modulus is $|\det M|^{1/2}$, and on $SL_2$ the decomposition is $Herm^{>0}_1\cdot SU(2)$. On singular matrices the positive factor is semidefinite and the unitary factor is only a partial isometry. The singular value decomposition diagonalises the positive factor, $P=U\Sigma U^{\dagger}$, and the singular values are $r e^{\pm\eta/2}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -233,6 +277,18 @@ $$</p>
 <td>the rotor, in $SU(2)$</td>
 </tr>
 <tr>
+<td>$M=U\Sigma V^{\dagger}$</td>
+<td>the singular value decomposition</td>
+</tr>
+<tr>
+<td>$s_1,s_2$</td>
+<td>the singular values, the eigenvalues of $P$</td>
+</tr>
+<tr>
+<td>$W$</td>
+<td>the polar unitary in the SVD derivation</td>
+</tr>
+<tr>
 <td>$Herm^{>0}_1$</td>
 <td>positive Hermitian matrices of determinant one</td>
 </tr>
@@ -244,7 +300,7 @@ $$</p>
 <li><a href="the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of a N-Degenerate Biquaternion</a>, for the singular element</li>
 <li><a href="the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the general statement</li>
 <li><a href="m2c-representation-gl2-sl2-and-the-determinant.html">$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a>, for the group decomposition</li>
-<li><a href="m2c-representation-the-sandwich-as-a-matrix-congruence.html">$M_2(\mathbb{C})$ Representation : The Sandwich as a Matrix Congruence</a>, for the action of the factors</li>
+<li><a href="the-sandwich-in-the-m2c-model.html">The Sandwich in the $M_2(\mathbb{C})$ Model</a>, for the action of the factors</li>
 <li><a href="the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for $U(2)$</li>
 <li><a href="eigenvalues-and-diagonalisation.html">Eigenvalues and Diagonalisation</a>, for the matrix polar decomposition</li>
 </ul>

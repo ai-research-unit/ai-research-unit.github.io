@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Product of Two Unipotent Elements and Its Spectrum — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-product-of-two-unipotent-elements-and-its-spectrum"><strong>The Product of Two Unipotent Elements and Its Spectrum</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The unipotent elements of the biquaternion algebra are the elements $U=e_t+\vec\Upsilon$ with $\vec\Upsilon$ a pure nilpotent, $\vec\Upsilon^2=0$; the element is non-trivial when $\vec\Upsilon\neq0$. They are units of norm one, their spectrum is the double eigenvalue $1$, and the non-trivial ones have minimal polynomial $(X-1)^2$. The product of two non-trivial unipotents is again a unit of norm one, but it is not usually unipotent. This article computes its spectrum and shows that one complex number decides it.</p>
+<p>Let $U_i=e_t+\vec\Upsilon_i$ and $T=U_1U_2$. Put $t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$, the trace of the product of the two nilpotent parts. Then</p>
+<p>$$
+p_T(\lambda)=\lambda^2-(2+t)\lambda+1,
+$$</p>
+<p>with discriminant $\Delta=t(t+4)$, scalar part $Q_t=1+t/2$ and vector square $B^2(T)=-t(t+4)/4$. The product is defective exactly at $t=0$ and $t=-4$, with the scalar exception $T=e_t$ at $t=0$; otherwise it is regular. On the regular set, the spectrum is on the unit circle exactly when $t$ is real and $-4<t<0$, real and reciprocal when $t$ is real and $t>0$ or $t<-4$, and non-real and reciprocal when $t$ is not real. For real $t$, the sign of $t$ alone does not decide the type: the type is fixed by whether $t$ lies in $(-4,0)$ or outside it, equivalently by the sign of $t(t+4)$, and the sign of $t$ then separates the positive real branch from the negative one.</p>
+<p>The two examples show two of the regular types. With $t=-1$ the product has eigenvalues $e^{\pm i\pi/3}$; with $t=1$ it has eigenvalues $(3\pm\sqrt5)/2$. The two values differ only in the pairing of the two nilpotent parts. The article also proves that every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotent elements, and that every element of the unit group is a central scalar times an element of the norm-one slice.</p>
+<p>The product law on the spectral-degenerate sector, which uses the pairing $s=\vec\Upsilon_1\cdot\vec\Upsilon_2$, is <em>Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</em>, §<em>The Group Law</em>; the spectral criterion, the characteristic polynomial and the cone are <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>; the norm, the norm-one group and the matrix model are <em>The N-Regular Sector</em> and <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The relation $t=-2s$ is the bridge between the two computations, and nothing of the cited articles is reproved here.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The <strong>quaternionic norm</strong>, written $N$, is</p>
+<p>$$
+N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
+$$</p>
+<p>and the matrix model is fixed by</p>
+<p>$$
+\mathsf{M}_2(e_t)=\mathrm I_2,\qquad
+\mathsf{M}_2(\vec e_x)=-i\sigma_1,\qquad
+\mathsf{M}_2(\vec e_y)=-i\sigma_2,\qquad
+\mathsf{M}_2(\vec e_z)=-i\sigma_3.
+$$</p>
+<p>The trace is $\operatorname{Tr}$, with $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t=2\operatorname{Sc}\tilde Q$; for $\tilde Q\in\mathbb{B}$ we write $\operatorname{Tr}\tilde Q$ for $\operatorname{Tr}\mathsf{M}_2(\tilde Q)$. The determinant is $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and we write $\det\tilde Q$ for it. The <strong>norm-one group</strong> is</p>
+<p>$$
+\mathbb{B}^{\times}_1=\{\tilde Q:N(\tilde Q)=1\}\cong SL_2(\mathbb{C}).
+$$</p>
+<p>A <strong>pure nilpotent</strong> is a vector $\vec\Upsilon=\upsilon_x\vec e_x+\upsilon_y\vec e_y+\upsilon_z\vec e_z$ with $\vec\Upsilon^2=-B^2e_t=0$; it is <strong>non-zero</strong> when $\vec\Upsilon\neq0$. The dot product is $\vec\Upsilon_1\cdot\vec\Upsilon_2=\sum_k\upsilon_{1k}\upsilon_{2k}$, and $\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-\vec\Upsilon_1\cdot\vec\Upsilon_2$. A <strong>unipotent</strong> element is $U=e_t+\vec\Upsilon$ with $\vec\Upsilon$ a pure nilpotent; it is <strong>non-trivial</strong> when $\vec\Upsilon\neq0$. An element is <strong>regular</strong> (spectrally regular) when $B^2\neq0$, that is when it is semisimple with two distinct eigenvalues, and <strong>defective</strong> when it is not semisimple, that is when $B^2=0$ and $\vec Q\neq0$. The <strong>spectral-degenerate cone</strong> is $\mathcal S=\{B^2=0\}$, and the <strong>null cone</strong> is $\mathcal N=\{N=0\}$. The algebra, the norm and the cone are <em>The Biquaternion Algebra and Its Vector Spaces</em>, <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em> and <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em>.</p>
+<h2 id="the-norm-one-slice-and-the-unipotent-elements">The Norm-One Slice and the Unipotent Elements</h2>
+<p><strong>The spectral criterion on the slice.</strong> For a general element $\tilde Q=Q_te_t+\vec Q$ the characteristic polynomial is</p>
+<p>$$
+p_{\tilde Q}(X)=X^2-2Q_tX+N(\tilde Q),
+$$</p>
+<p>with discriminant $-4B^2$ and eigenvalues $Q_t\pm iB$. On the norm-one slice $N=1$ the constant term is one, so</p>
+<p>$$
+p_{\tilde Q}(X)=X^2-2Q_tX+1,\qquad \Delta=4(Q_t^2-1)=-4B^2.
+$$</p>
+<p>The element is defective exactly when $B^2=0$ and $\vec Q\neq0$. On the slice this forces $Q_t^2=1$, hence $Q_t=\pm1$. The part $Q_t=1$ consists of the unipotents $e_t+\vec\Upsilon$, and the part $Q_t=-1$ consists of their negatives, $-e_t+\vec\Upsilon=-(e_t-\vec\Upsilon)$.</p>
+<p>The table lists the $B^2=0$ part of the norm-one slice; in the last two rows $\vec\Upsilon$ is a non-zero pure nilpotent.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>$Q_t$</th>
+<th>$B^2$</th>
+<th>spectrum</th>
+<th>minimal polynomial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$\{1\}$</td>
+<td>$X-1$</td>
+</tr>
+<tr>
+<td>$e_t+\vec\Upsilon$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$\{1\}$</td>
+<td>$(X-1)^2$</td>
+</tr>
+<tr>
+<td>$-e_t$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$\{-1\}$</td>
+<td>$X+1$</td>
+</tr>
+<tr>
+<td>$-e_t+\vec\Upsilon$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$\{-1\}$</td>
+<td>$(X+1)^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two signs are exchanged by the central element $-e_t$, which multiplies the spectrum by $-1$ and leaves the defectivity unchanged; the classification of a single element is therefore the same on the two parts. The products computed below are products of two elements of the $Q_t=1$ part; the image theorem covers the rest of the group. The product of two non-trivial unipotents is again in the norm-one group, and the rest of the article computes its spectrum.</p>
+<h2 id="the-product-and-its-characteristic-polynomial">The Product and Its Characteristic Polynomial</h2>
+<p><strong>Theorem (the product).</strong> Let $\vec\Upsilon_1,\vec\Upsilon_2$ be non-zero pure nilpotents, $U_i=e_t+\vec\Upsilon_i$, $T=U_1U_2$, and $t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$. Then</p>
+<p>(i) $T=e_t+\vec\Upsilon_1+\vec\Upsilon_2+\vec\Upsilon_1\vec\Upsilon_2$;</p>
+<p>(ii) $\operatorname{Tr}T=2+t$ and $\det T=1$;</p>
+<p>(iii) the characteristic polynomial is</p>
+<p>$$
+p_T(\lambda)=\lambda^2-(2+t)\lambda+1,
+$$</p>
+<p>with discriminant $\Delta=t(t+4)$;</p>
+<p>(iv) the scalar part and the vector square are</p>
+<p>$$
+Q_t=1+\frac t2,\qquad B^2(T)=-\frac{t(t+4)}4;
+$$</p>
+<p>(v) with $s=\vec\Upsilon_1\cdot\vec\Upsilon_2$, one has $t=-2s$ and</p>
+<p>$$
+B^2(T)=s(2-s).
+$$</p>
+<p><em>Proof.</em> The expansion is the product. Since $\vec\Upsilon_i$ is a pure vector, $\operatorname{Tr}\vec\Upsilon_i=2\operatorname{Sc}\vec\Upsilon_i=0$, and since $\vec\Upsilon_i^2=0$, $\det U_i=N(U_i)=1$. Hence</p>
+<p>$$
+\operatorname{Tr}T=\operatorname{Tr}(e_t)+\operatorname{Tr}(\vec\Upsilon_1)+\operatorname{Tr}(\vec\Upsilon_2)+\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)=2+t,
+\qquad
+\det T=\det U_1\det U_2=1.
+$$</p>
+<p>The characteristic polynomial of a $2\times2$ matrix is $\lambda^2-\operatorname{Tr}T\,\lambda+\det T$, which gives (iii), and its discriminant is $(2+t)^2-4=t(t+4)$. The scalar part is half the trace, $Q_t=1+t/2$. The product is a unit of norm one, because the norm is multiplicative and $N(U_i)=1$; hence $B^2(T)=N(T)-Q_t^2=1-Q_t^2=-t(t+4)/4$. Finally, $\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-\vec\Upsilon_1\cdot\vec\Upsilon_2$ gives $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-2s$, and substitution gives $B^2(T)=s(2-s)$.</p>
+<p><strong>Remark (the product law on the sector).</strong> For $\tilde Q_i=Q_{ti}(e_t+\vec\Upsilon_i)$, <em>Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</em>, §<em>The Group Law</em>, proves</p>
+<p>$$
+B^2(\tilde Q_1\tilde Q_2)=Q_{t1}^2Q_{t2}^2\,s(2-s),\qquad s=\vec\Upsilon_1\cdot\vec\Upsilon_2.
+$$</p>
+<p>On the norm-one slice $Q_{t1}=Q_{t2}=1$, and $t=-2s$; the two formulas agree. The sector's criterion that the product stays on the spectral-degenerate cone exactly when $s=0$ or $s=2$ is the present criterion $t=0$ or $t=-4$.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>Theorem (defective or regular).</strong> With $T=U_1U_2$ and $t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$:</p>
+<p>(i) if $t\notin\{0,-4\}$, then $T$ is regular, with two distinct eigenvalues;</p>
+<p>(ii) if $t=0$, then $T$ has the single eigenvalue $1$; it is $e_t$ exactly when $\vec\Upsilon_2=-\vec\Upsilon_1$, and otherwise it is a non-trivial unipotent, hence defective;</p>
+<p>(iii) if $t=-4$, then $T$ has the single eigenvalue $-1$; it is $-e_t$ times a non-trivial unipotent, hence defective, and $T=-e_t$ is impossible.</p>
+<p><em>Proof.</em> (i) The discriminant $t(t+4)$ is non-zero, so the two roots of $p_T$ are distinct; a $2\times2$ matrix with distinct eigenvalues is diagonalisable, hence semisimple.</p>
+<p>(ii) For $t=0$, $p_T(\lambda)=(\lambda-1)^2$. A semisimple element with this spectrum is $e_t$: a diagonalisable matrix with both eigenvalues $1$ is the identity. If $T=e_t$, then $U_2=U_1^{-1}=e_t-\vec\Upsilon_1$, so $\vec\Upsilon_2=-\vec\Upsilon_1$; conversely this choice gives $T=e_t$. If $T\neq e_t$, the minimal polynomial is $(X-1)^2$, so $T-e_t$ is a non-zero nilpotent and $T$ is a non-trivial unipotent.</p>
+<p>(iii) For $t=-4$, $p_T(\lambda)=(\lambda+1)^2$. A semisimple element with this spectrum is $-e_t$. If $T=-e_t$, then $U_2=-U_1^{-1}=-e_t+\vec\Upsilon_1$, whose scalar part is $-1$, but $U_2=e_t+\vec\Upsilon_2$ has scalar part $1$; contradiction. Hence $T\neq-e_t$, the minimal polynomial is $(X+1)^2$, and $T=-e_t+M$ with $M^2=0$, $M\neq0$, that is $T=-(e_t-M)$ with $e_t-M$ unipotent.</p>
+<p>The two roots therefore carry different exceptions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$t$</th>
+<th>$p_T(\lambda)$</th>
+<th>$T$</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t\notin\{0,-4\}$</td>
+<td>two distinct roots</td>
+<td>regular</td>
+<td>semisimple</td>
+</tr>
+<tr>
+<td>$t=0$, $\vec\Upsilon_2=-\vec\Upsilon_1$</td>
+<td>$(\lambda-1)^2$</td>
+<td>$e_t$</td>
+<td>scalar</td>
+</tr>
+<tr>
+<td>$t=0$, $\vec\Upsilon_2\neq-\vec\Upsilon_1$</td>
+<td>$(\lambda-1)^2$</td>
+<td>non-trivial unipotent</td>
+<td>defective</td>
+</tr>
+<tr>
+<td>$t=-4$</td>
+<td>$(\lambda+1)^2$</td>
+<td>$-e_t$ times a non-trivial unipotent</td>
+<td>defective</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-three-regular-types">The Three Regular Types</h2>
+<p><strong>Theorem (the regular spectrum).</strong> Let $t\notin\{0,-4\}$. The eigenvalues of $T$ are</p>
+<p>$$
+\lambda_\pm=1+\frac t2\pm\frac12\sqrt{t(t+4)},\qquad \lambda_+\lambda_-=1.
+$$</p>
+<p>(i) If $t$ is real and $-4<t<0$, the eigenvalues are non-real conjugates on the unit circle, $\lambda_-=\bar\lambda_+=\lambda_+^{-1}$; this is the <strong>unit-circle type</strong>.</p>
+<p>(ii) If $t$ is real and $t>0$ or $t<-4$, the eigenvalues are real and reciprocal; they are both positive for $t>0$ and both negative for $t<-4$; this is the <strong>real type</strong>.</p>
+<p>(iii) If $t$ is not real, the eigenvalues are non-real and reciprocal, with $\lvert\lambda_\pm\rvert\neq1$; this is the <strong>non-real type</strong>.</p>
+<p><em>Proof.</em> The formula is the quadratic formula for $p_T$, and the product of the roots is the constant term, one.</p>
+<p>(i) For real $t$ in $(-4,0)$, $\Delta=t(t+4)<0$, so the roots are non-real conjugates; a conjugate pair with product one has modulus one.</p>
+<p>(ii) For real $t$ outside $[-4,0]$, $\Delta>0$, so the roots are real and distinct; their product is one, so they are reciprocal. For $t>0$, $Q_t=1+t/2>1$ and both roots $Q_t\pm\sqrt{Q_t^2-1}$ are positive; for $t<-4$, $Q_t<-1$ and both are negative.</p>
+<p>(iii) If $t$ is not real, the roots cannot be real, since their sum $2+t=2Q_t$ would then be real. They are reciprocal because the product is one. If $\lvert\lambda\rvert=1$, then $1/\lambda=\bar\lambda$, so the two roots are $\lambda$ and $\bar\lambda$, and their sum $2Q_t$ is real, which forces $t$ real; contradiction. Hence $\lvert\lambda\rvert\neq1$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$t$</th>
+<th>$Q_t$</th>
+<th>spectrum</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real, $-4<t<0$</td>
+<td>$-1<Q_t<1$</td>
+<td>$Q_t\pm iB$, $\lvert\lambda\rvert=1$</td>
+<td>unit circle</td>
+</tr>
+<tr>
+<td>real, $t>0$</td>
+<td>$Q_t>1$</td>
+<td>real, reciprocal, positive</td>
+<td>real</td>
+</tr>
+<tr>
+<td>real, $t<-4$</td>
+<td>$Q_t<-1$</td>
+<td>real, reciprocal, negative</td>
+<td>real</td>
+</tr>
+<tr>
+<td>not real</td>
+<td>not real</td>
+<td>non-real, reciprocal, $\lvert\lambda\rvert\neq1$</td>
+<td>non-real</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the special line $t=-2+ib$).</strong> On this line, $Q_t=ib/2$ is purely imaginary and $B^2=1+b^2/4>0$ is real positive, but the eigenvalues are $i(b/2\pm\sqrt{1+b^2/4})$, purely imaginary and reciprocal. They are not on the unit circle unless $b=0$. Thus $B^2>0$ alone does not imply the unit-circle type; the reality of $Q_t$ is also needed. For the product, $Q_t$ is real exactly when $t$ is real.</p>
+<h2 id="the-sign-of-the-pairing">The Sign of the Pairing</h2>
+<p>The invariant $t$ is the trace of the product of the two nilpotent parts; the invariant $s=\vec\Upsilon_1\cdot\vec\Upsilon_2=-t/2$ is their pairing, the one used in the product law on the sector. In terms of $s$, the criterion reads as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$s$</th>
+<th>$t=-2s$</th>
+<th>spectrum</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real, $s<0$</td>
+<td>$t>0$</td>
+<td>real, reciprocal, positive</td>
+<td>real, positive</td>
+</tr>
+<tr>
+<td>real, $0<s<2$</td>
+<td>$-4<t<0$</td>
+<td>unit circle</td>
+<td>unit circle</td>
+</tr>
+<tr>
+<td>real, $s>2$</td>
+<td>$t<-4$</td>
+<td>real, reciprocal, negative</td>
+<td>real, negative</td>
+</tr>
+<tr>
+<td>not real</td>
+<td>not real</td>
+<td>non-real, reciprocal</td>
+<td>non-real</td>
+</tr>
+<tr>
+<td>$s=0$</td>
+<td>$t=0$</td>
+<td>$\{1\}$</td>
+<td>trivial or non-trivial unipotent</td>
+</tr>
+<tr>
+<td>$s=2$</td>
+<td>$t=-4$</td>
+<td>$\{-1\}$</td>
+<td>$-e_t$ times a non-trivial unipotent</td>
+</tr>
+</tbody>
+</table></div>
+<p>The sign of $s$ alone does not decide the type. It is positive on $(0,2)$ and on $(2,\infty)$, which give the unit-circle and the real types respectively; it is negative on $(-\infty,0)$, which gives the real type. The type is fixed by whether $s$ lies in $(0,2)$ or outside it, equivalently by the sign of $s(2-s)$ when $s$ is real; the sign of $s$ then separates the two real branches. Since $B^2(T)=s(2-s)$, the type is read off the sign of $B^2(T)$ on the real line away from the two roots.</p>
+<p>In particular, the statement that a positive pairing gives a real spectrum and a negative pairing a unit-circle spectrum is false as stated: the positive interval $(0,2)$ gives the unit-circle type, and the positive interval $(2,\infty)$ gives the real type. The correct statement is that the unit-circle type is the interval $0<s<2$, the real type is $s<0$ or $s>2$, and the two endpoints are the scalar and defective roots.</p>
+<h2 id="two-examples">Two Examples</h2>
+<h3 id="a-unit-circle-product">A Unit-Circle Product</h3>
+<p>Take</p>
+<p>$$
+\vec\Upsilon_1=\frac i2\vec e_x-\frac12\vec e_y,\qquad
+\vec\Upsilon_2=-\frac i2\vec e_x-\frac12\vec e_y.
+$$</p>
+<p>Both are pure nilpotents: each has $B^2=(i/2)^2+(-1/2)^2=0$, so $\vec\Upsilon_i^2=0$. Their pairing is</p>
+<p>$$
+s=\vec\Upsilon_1\cdot\vec\Upsilon_2=\frac i2\left(-\frac i2\right)+\left(-\frac12\right)\left(-\frac12\right)=\frac12,
+$$</p>
+<p>hence $t=-1$. The unipotents are</p>
+<p>$$
+U_1=e_t+\frac i2\vec e_x-\frac12\vec e_y,\qquad
+U_2=e_t-\frac i2\vec e_x-\frac12\vec e_y,
+$$</p>
+<p>with matrix images</p>
+<p>$$
+\mathsf{M}_2(U_1)=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad
+\mathsf{M}_2(U_2)=\begin{pmatrix}1&0\\-1&1\end{pmatrix}.
+$$</p>
+<p>The product is</p>
+<p>$$
+T=U_1U_2=\frac12e_t-\vec e_y-\frac i2\vec e_z,\qquad
+\mathsf{M}_2(T)=\begin{pmatrix}0&1\\-1&1\end{pmatrix}.
+$$</p>
+<p>Its invariants are $Q_t=1/2$, $B^2(T)=3/4$, $N(T)=1$, and its characteristic polynomial is</p>
+<p>$$
+p_T(\lambda)=\lambda^2-\lambda+1,
+$$</p>
+<p>with eigenvalues $\lambda_\pm=(1\pm i\sqrt3)/2=e^{\pm i\pi/3}$. The product is regular and of unit-circle type.</p>
+<h3 id="a-real-product">A Real Product</h3>
+<p>Keep $\vec\Upsilon_1$ and replace the second nilpotent by</p>
+<p>$$
+\vec\Upsilon_3=\frac i2\vec e_x+\frac12\vec e_y=-\vec\Upsilon_2.
+$$</p>
+<p>It is a pure nilpotent, and</p>
+<p>$$
+s=\vec\Upsilon_1\cdot\vec\Upsilon_3=\frac i2\cdot\frac i2+\left(-\frac12\right)\frac12=-\frac12,
+$$</p>
+<p>hence $t=1$. The unipotent is</p>
+<p>$$
+U_3=e_t+\frac i2\vec e_x+\frac12\vec e_y,\qquad
+\mathsf{M}_2(U_3)=\begin{pmatrix}1&0\\1&1\end{pmatrix},
+$$</p>
+<p>and the product is</p>
+<p>$$
+T_3=U_1U_3=\frac32e_t+i\vec e_x+\frac i2\vec e_z,\qquad
+\mathsf{M}_2(T_3)=\begin{pmatrix}2&1\\1&1\end{pmatrix}.
+$$</p>
+<p>Its invariants are $Q_t=3/2$, $B^2(T_3)=-5/4$, $N(T_3)=1$, and its characteristic polynomial is</p>
+<p>$$
+p_{T_3}(\lambda)=\lambda^2-3\lambda+1,
+$$</p>
+<p>with eigenvalues $(3\pm\sqrt5)/2$. The product is regular and of real type.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>data</th>
+<th>unit-circle example</th>
+<th>real example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>second nilpotent</td>
+<td>$\vec\Upsilon_2=-\frac i2\vec e_x-\frac12\vec e_y$</td>
+<td>$\vec\Upsilon_3=\frac i2\vec e_x+\frac12\vec e_y$</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>$1/2$</td>
+<td>$-1/2$</td>
+</tr>
+<tr>
+<td>$t$</td>
+<td>$-1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>product</td>
+<td>$\frac12e_t-\vec e_y-\frac i2\vec e_z$</td>
+<td>$\frac32e_t+i\vec e_x+\frac i2\vec e_z$</td>
+</tr>
+<tr>
+<td>$p_T$</td>
+<td>$\lambda^2-\lambda+1$</td>
+<td>$\lambda^2-3\lambda+1$</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$e^{\pm i\pi/3}$</td>
+<td>$(3\pm\sqrt5)/2$</td>
+</tr>
+<tr>
+<td>type</td>
+<td>unit circle</td>
+<td>real</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-two-roots">The Two Roots</h2>
+<h3 id="the-identity-at-math331">The Identity at $t=0$</h3>
+<p>At $t=0$ the product is $e_t$ or a non-trivial unipotent. Both occur, and the difference is the inverse:</p>
+<ul>
+<li>with $U_2=U_1^{-1}=e_t-\vec\Upsilon_1$, the product is $T=e_t$;</li>
+<li>with $U_2=U_1$, the product is $T=e_t+2\vec\Upsilon_1$, a non-trivial unipotent.</li>
+</ul>
+<p>Both have $s=0$, characteristic polynomial $(\lambda-1)^2$, norm one and scalar part one; they differ in the minimal polynomial, $X-1$ against $(X-1)^2$. The root $t=0$ is therefore not a defective locus without exception: it is the coalescence of the scalar $e_t$ and the unipotent Jordan block.</p>
+<h3 id="the-second-root-at-math344">The Second Root at $t=-4$</h3>
+<p>A witness is</p>
+<p>$$
+\vec\Upsilon_1=\frac i2\vec e_x-\frac12\vec e_y,\qquad
+\vec\Upsilon_4=-\frac32i\vec e_x-\frac52\vec e_y+2i\vec e_z.
+$$</p>
+<p>The second is a pure nilpotent, because</p>
+<p>$$
+\left(-\frac32i\right)^2+\left(-\frac52\right)^2+(2i)^2=-\frac94+\frac{25}4-4=0,
+$$</p>
+<p>and its pairing with $\vec\Upsilon_1$ is</p>
+<p>$$
+s=\frac i2\left(-\frac32i\right)+\left(-\frac12\right)\left(-\frac52\right)=\frac34+\frac54=2,
+$$</p>
+<p>hence $t=-4$. The product is</p>
+<p>$$
+T_4=U_1U_4=-e_t-2i\vec e_x-2\vec e_y=-\bigl(e_t+2i\vec e_x+2\vec e_y\bigr),
+$$</p>
+<p>and the bracket is unipotent, since the square of its vector part is zero. So $T_4$ is $-e_t$ times a non-trivial unipotent. The scalar $-e_t$ itself is not a product: if $U_1U_2=-e_t$, then $U_2=-U_1^{-1}=-e_t+\vec\Upsilon_1$, whose scalar part is $-1$, not $1$.</p>
+<h2 id="the-image-of-the-product-map">The Image of the Product Map</h2>
+<p><strong>Theorem (the image).</strong> Every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotent elements. The element $-e_t$ is not.</p>
+<p><em>Proof.</em> Work in $M_2(\mathbb{C})$, with $I=\mathrm I_2$. If $g=-I$, suppose $g=U_1U_2$ with $U_i=I+K_i$, $K_i^2=0$. Then $U_2=-U_1^{-1}=-I+K_1$, whose trace is $-2$, while $U_2$ has trace $2$; contradiction. If $g=I$, take any non-zero nilpotent $K$ and write $I=(I+K)(I-K)$. If $g$ is unipotent and $g\neq I$, put $K=g-I$; then $K^2=0$, $K\neq0$, and $g=(I+K/2)^2$. Otherwise $g$ is neither scalar nor unipotent, so $\operatorname{Tr}g\neq2$ and $g$ is not scalar. The linear form $\varphi(K)=\operatorname{Tr}(Kg)$ is non-zero on $\mathfrak{sl}_2$, because the trace pairing is non-degenerate and $g$ is not scalar. Since the nilpotent cone spans $\mathfrak{sl}_2$ (the remark below), $\varphi$ is non-zero at some nilpotent $K_0$; the cone is closed under scaling, so $K=\lambda K_0$ with $\lambda=(\operatorname{Tr}g-2)/\varphi(K_0)$ is a non-zero nilpotent with $\varphi(K)=\operatorname{Tr}g-2$. Put $U_1=I+K$ and $X=U_1^{-1}g=(I-K)g$. Then $\operatorname{Tr}X=\operatorname{Tr}g-\operatorname{Tr}(Kg)=2$ and $\det X=1$. If $X=I$, then $g=I+K$ is unipotent, contrary to the case; so $X\neq I$, and a non-scalar element of trace $2$ and determinant $1$ is unipotent. Hence $g=U_1X$ is a product of two unipotent elements. In each construction the two factors are non-trivial: the nilpotent $K$ is chosen non-zero, and in the last case $X\neq I$.</p>
+<p><strong>Remark (the spanning of $\mathfrak{sl}_2$).</strong> The matrices</p>
+<p>$$
+A_+=\begin{pmatrix}-1&1\\-1&1\end{pmatrix},\qquad
+A_-=\begin{pmatrix}1&1\\-1&-1\end{pmatrix}
+$$</p>
+<p>are nilpotent, and $A_- - A_+ = 2\operatorname{diag}(1,-1)$. Together with $E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ and $E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix}$, which are also nilpotent, they span $\mathfrak{sl}_2$. Hence the nilpotent cone spans $\mathfrak{sl}_2$.</p>
+<p><strong>Corollary.</strong> The product map from pairs of non-trivial unipotent elements to the norm-one group is surjective onto $\mathbb{B}^{\times}_1\setminus\{-e_t\}$. In particular, every regular element and every defective element of the norm-one group occurs; the only element missed is the scalar $-e_t$.</p>
+<h2 id="scaling-and-the-general-unit-group">Scaling and the General Unit Group</h2>
+<p>The restriction to the norm-one slice loses nothing for defective elements. Every defective element of the unit group is of the form</p>
+<p>$$
+\tilde P=c\,U,\qquad c\in\mathbb{C}^{\times},\quad U=e_t+\vec\Upsilon,\quad \vec\Upsilon^2=0,\quad\vec\Upsilon\neq0,
+$$</p>
+<p>by <em>The N-Regular, Spectrally Degenerate Sector</em>, §<em>Definition and Characterisation</em>. For two such elements $\tilde P_i=c_iU_i$,</p>
+<p>$$
+\tilde P_1\tilde P_2=c_1c_2\,T,
+$$</p>
+<p>with $T=U_1U_2$ the product on the norm-one slice. The characteristic polynomial is</p>
+<p>$$
+p(\lambda)=\lambda^2-c_1c_2(2+t)\lambda+(c_1c_2)^2,
+$$</p>
+<p>the discriminant is $(c_1c_2)^2t(t+4)$, and the norm is $(c_1c_2)^2$. The discriminant vanishes exactly when $t(t+4)=0$, so the product is scalar or defective exactly at the two roots; the scalar exception at $t=0$ is scaled to $c_1c_2e_t$. The spectrum is scaled by the central factor $c_1c_2$: the modulus is multiplied by $\lvert c_1c_2\rvert$ and the argument is shifted by $\arg(c_1c_2)$. The unit-circle type is preserved only when $\lvert c_1c_2\rvert=1$, and the real/non-real dichotomy is preserved by a real scale but not in general by a non-real one. The three types are properties of the norm-one slice, and that is why the classification is stated there.</p>
+<h2 id="summary">Summary</h2>
+<p>The product of two non-trivial unipotent elements is a norm-one element whose spectrum is governed by the single number $t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$. The characteristic polynomial is $\lambda^2-(2+t)\lambda+1$, the discriminant is $t(t+4)$, the scalar part is $1+t/2$, and the vector square is $-t(t+4)/4=s(2-s)$ with $s=\vec\Upsilon_1\cdot\vec\Upsilon_2=-t/2$.</p>
+<p>The product is defective exactly at the two roots $t=0$ and $t=-4$, with the scalar exception $T=e_t$ at $t=0$; at $t=-4$ the product is always $-e_t$ times a non-trivial unipotent, and $-e_t$ itself never occurs. Off the roots the product is regular. The regular spectrum is on the unit circle exactly for real $t$ in $(-4,0)$, real and reciprocal for real $t$ in $(0,\infty)\cup(-\infty,-4)$, and non-real and reciprocal for non-real $t$.</p>
+<p>The type is not fixed by the sign of $t$, nor by the sign of $s$. It is fixed by whether $t$ lies in $(-4,0)$ or outside it, equivalently by the sign of $t(t+4)$ for real $t$, equivalently by whether $s$ lies in $(0,2)$ or outside it. The sign of $t$ then separates the positive real branch from the negative one. The two examples $t=-1$ and $t=1$ illustrate two of the regular types.</p>
+<p>Every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents. The general defective case reduces to the norm-one slice by the central scaling $\tilde P_i=c_iU_i$, which scales the spectrum and leaves the defectivity unchanged.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a general element</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$</td>
+<td>the quaternionic norm</td>
+</tr>
+<tr>
+<td>$B^2=Q_x^2+Q_y^2+Q_z^2$</td>
+<td>the square of the vector part</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\times}_1=\{N=1\}$</td>
+<td>the norm-one group, $SL_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_i$</td>
+<td>a non-zero pure nilpotent, $\vec\Upsilon_i^2=0$</td>
+</tr>
+<tr>
+<td>$U_i=e_t+\vec\Upsilon_i$</td>
+<td>a non-trivial unipotent element</td>
+</tr>
+<tr>
+<td>$T=U_1U_2$</td>
+<td>the product</td>
+</tr>
+<tr>
+<td>$t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$</td>
+<td>the trace of the product of the nilpotent parts</td>
+</tr>
+<tr>
+<td>$s=\vec\Upsilon_1\cdot\vec\Upsilon_2=-t/2$</td>
+<td>the pairing of the nilpotents</td>
+</tr>
+<tr>
+<td>$p_T(\lambda)=\lambda^2-(2+t)\lambda+1$</td>
+<td>the characteristic polynomial of $T$</td>
+</tr>
+<tr>
+<td>$\Delta=t(t+4)=-4B^2(T)$</td>
+<td>the discriminant</td>
+</tr>
+<tr>
+<td>$Q_t=1+t/2$</td>
+<td>the scalar part of $T$</td>
+</tr>
+<tr>
+<td>$B^2(T)=-t(t+4)/4=s(2-s)$</td>
+<td>the vector square of $T$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}$</td>
+<td>the matrix trace, $\operatorname{Tr}\tilde Q=2Q_t$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-n-regular-sector.html">The N-Regular Sector</a>, for the norm-one group, the matrix identification $\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$ and the polar retraction.</li>
+<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the quaternionic norm, its zero locus and the two norm cases.</li>
+<li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the unipotent elements, the scalar line and the Jordan part.</li>
+<li><a href="exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html">Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the group law on the sector, the product formula $B^2=Q_{t1}^2Q_{t2}^2s(2-s)$ and the two roots $s=0$ and $s=2$.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the characteristic polynomial, the discriminant, the cone and the similarity classification.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the place of the defective elements in them.</li>
+<li><a href="m2c-representation-the-matrix-product-and-the-algebra-structure.html">$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</a>, for the matrix model, the basis images and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$.</li>
+<li><a href="m2c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t$ and $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$.</li>
+<li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the pure nilpotents and the nilpotent stratum.</li>
+<li><a href="the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html">The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion</a>, for the defective elements, their Jordan form and their centraliser.</li>
+<li><a href="the-biquaternion-algebra-and-its-vector-spaces.html">The Biquaternion Algebra and Its Vector Spaces</a>, for the algebra, the conjugation and the remarkable subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

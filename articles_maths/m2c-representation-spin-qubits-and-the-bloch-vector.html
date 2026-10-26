@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The $2\times2$ model is the smallest matrix picture of the algebra, and it is the one in which the Hermitian subspace becomes the algebra of observables of a two-state system. Three objects carry the correspondence: the three Hermitian basis matrices $\mathsf M_2(i\vec e_k)=\sigma_k$; the trace-one Hermitian elements, which are the states; and the three traces against the basis matrices, which are the coordinates of a state in the Bloch ball.</p>
 <p>This article develops the dictionary. It states the spin operators and their algebra, the pure states as the rank-one Hermitian idempotents on the null cone, the general state and its Bloch vector, and the measurement formulae that read the vector back off the matrix. It proves the identities in the matrix model and leaves their physical interpretation to <em>The $M_2(\mathbb{C})$ Representation: The Pauli Correspondence</em>, which reads the same identities physically and states what they do not claim.</p>
-<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>: $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\mathsf M_2(e_t)=\mathrm I_2$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, the scalar part is $Q_t=\tfrac12\operatorname{Tr}\mathsf M_2(\tilde Q)$, and the quaternionic norm is $N=\det\mathsf M_2(\tilde Q)$. The Hermitian subspace is $\mathbb M_+$ and the anti-Hermitian subspace is $\mathbb M_-$. A state is written $\tilde{Ϛ}$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb R^3$.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>: $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\mathsf M_2(e_t)=\mathrm I_2$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, the scalar part is $Q_t=\tfrac12\operatorname{Tr}\mathsf M_2(\tilde Q)$, and the quaternionic norm is $N=\det\mathsf M_2(\tilde Q)$. The Hermitian subspace is $\mathbb M_+$ and the anti-Hermitian subspace is $\mathbb M_-$. A state is written $\tilde{\varrho}$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb R^3$.</p>
 <p><strong>Boundaries.</strong> The Born pairing and the Hilbert structure of the spinor module are <em>The Spinor Module and Its Two Structures</em>; the mixedness and phase-fibre interpretations of the same matrices are <em>The Matrix Images: Mixedness, Rapidity and the Phase Fibre</em>; the state geometry as a slice of the light cone is <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>; the pure states as idempotents are <em>Roots, Idempotents and Observables</em>; the spectral projectors of a general element are <em>$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents</em>.</p>
 <h2 id="the-hermitian-basis">The Hermitian Basis</h2>
 <p><strong>The three Pauli matrices are the images of the Hermitian units.</strong> Since $\mathsf M_2$ is $\mathbb C$-linear and $\sigma_k=i\mathsf M_2(\vec e_k)$,</p>
@@ -181,10 +181,10 @@ $$</p>
 <h2 id="the-general-state">The General State</h2>
 <p><strong>Definition.</strong> A state is a Hermitian element of trace one whose matrix is positive semidefinite:</p>
 <p>$$
-\tilde{Ϛ}=\tfrac12\bigl(e_t+i\vec r\bigr),
+\tilde{\varrho}=\tfrac12\bigl(e_t+i\vec r\bigr),
 \qquad \vec r\in\mathbb R^3,
 \qquad
-\mathsf M_2(\tilde{Ϛ})=\rho=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr).
+\mathsf M_2(\tilde{\varrho})=\rho=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr).
 $$</p>
 <p><strong>The three numbers.</strong> The matrix $\rho$ is Hermitian of trace one for every real $\vec r$, and its determinant and square are</p>
 <p>$$
@@ -192,19 +192,37 @@ $$</p>
 \qquad
 \operatorname{Tr}\rho^2=\tfrac12\bigl(1+|\vec r|^2\bigr).
 $$</p>
-<p><strong>Proposition.</strong> The following are equivalent: $\rho$ is positive semidefinite; $|\vec r|\le1$; $N(\tilde{Ϛ})\ge0$; the two eigenvalues $\tfrac12(1\pm|\vec r|)$ are non-negative. The state is pure exactly when $|\vec r|=1$, that is exactly when $N(\tilde{Ϛ})=0$.</p>
+<p><strong>Proposition.</strong> The following are equivalent: $\rho$ is positive semidefinite; $|\vec r|\le1$; $N(\tilde{\varrho})\ge0$; the two eigenvalues $\tfrac12(1\pm|\vec r|)$ are non-negative. The state is pure exactly when $|\vec r|=1$, that is exactly when $N(\tilde{\varrho})=0$.</p>
 <p><em>Proof.</em> The eigenvalues of $\vec r\cdot\vec\sigma$ are $\pm|\vec r|$, so those of $\rho$ are $\tfrac12(1\pm|\vec r|)$. The determinant is their product, and the norm is the determinant. The purity is the equality $\operatorname{Tr}\rho^2=(\operatorname{Tr}\rho)^2$, which reads $|\vec r|=1$.</p>
 <p><strong>The state space.</strong> The states are therefore the trace-one slice of the positive cone of $\mathbb M_+$,</p>
 <p>$$
-\mathcal S=\bigl\{\tilde{Ϛ}\in\mathbb M_+ : \operatorname{Tr}\mathsf M_2(\tilde{Ϛ})=1,\ N(\tilde{Ϛ})\ge0\bigr\},
+\mathcal S=\bigl\{\tilde{\varrho}\in\mathbb M_+ : \operatorname{Tr}\mathsf M_2(\tilde{\varrho})=1,\ N(\tilde{\varrho})\ge0\bigr\},
 $$</p>
-<p>and the map $\tilde{Ϛ}\mapsto\vec r$ is a bijection onto the closed unit ball of $\mathbb R^3$. The ball is the Bloch ball, its interior is the mixed states, its boundary is the pure states, and its centre is the maximally mixed state</p>
+<p>and the map $\tilde{\varrho}\mapsto\vec r$ is a bijection onto the closed unit ball of $\mathbb R^3$. The ball is the Bloch ball, its interior is the mixed states, its boundary is the pure states, and its centre is the maximally mixed state</p>
 <p>$$
 \tfrac12 e_t\longmapsto\tfrac12\mathrm I_2,
 \qquad \vec r=0 .
 $$</p>
 <p>The boundary is the trace-one slice of the null cone, so the pure states are exactly the states of vanishing norm. This is the matrix form of the statement that the pure states are the extreme points of the state space.</p>
-<p><strong>The radius as mixedness.</strong> The number $|\vec r|$ measures how far the state is from the centre, and $\det\rho=\frac14(1-|\vec r|^2)$ measures the distance from the boundary. Both are functions of the single invariant $|\vec r|$, and that invariant is the modulus of the vector part of $\tilde{Ϛ}$ in the Hermitian basis. The determinant of a state matrix is therefore not the interval: on the trace-one slice it is a measure of mixing, and its vanishing is purity.</p>
+<p><strong>The radius as mixedness.</strong> The number $|\vec r|$ measures how far the state is from the centre, and $\det\rho=\frac14(1-|\vec r|^2)$ measures the distance from the boundary. Both are functions of the single invariant $|\vec r|$, and that invariant is the modulus of the vector part of $\tilde{\varrho}$ in the Hermitian basis. The determinant of a state matrix is therefore not the interval: on the trace-one slice it is a measure of mixing, and its vanishing is purity.</p>
+<h2 id="the-born-rule-and-the-convex-splitting">The Born Rule and the Convex Splitting</h2>
+<p><strong>The Born rule.</strong> For a measurement along the unit vector $\vec u$, the two outcomes have probabilities</p>
+<p>$$
+p_\pm=\operatorname{Tr}\bigl(\rho\,\Pi_\pm(\vec u)\bigr)
+=\tfrac12\bigl(1\pm\vec r\cdot\vec u\bigr),
+\qquad
+\Pi_\pm(\vec u)=\tfrac12\bigl(\mathrm I_2\pm\vec u\cdot\vec\sigma\bigr).
+$$</p>
+<p>The probabilities are non-negative exactly when $\lvert\vec r\rvert\le1$, and they sum to one. The expectation of the spin operator $\tfrac{\hbar}{2}\vec u\cdot\vec\sigma$ is $\tfrac{\hbar}{2}\vec r\cdot\vec u$.</p>
+<p><strong>The convex splitting.</strong> For $\vec r\neq0$ every state is a convex combination of the two pure states along its own axis:</p>
+<p>$$
+\rho=\frac{1+\lvert\vec r\rvert}{2}\,\Pi_+(\hat r)
++\frac{1-\lvert\vec r\rvert}{2}\,\Pi_-(\hat r),
+\qquad
+\hat r=\frac{\vec r}{\lvert\vec r\rvert},
+$$</p>
+<p>and for $\vec r=0$ the state is $\tfrac12\mathrm I_2$. The weights are non-negative and sum to one. The decomposition is the chord of the Bloch ball through the centre: the state lies on the segment between the two boundary points $\pm\hat r$, and its distance from the centre is the bias of the mixture.</p>
+<p><strong>The geometry.</strong> The pure states are the boundary sphere, the maximally mixed state is the centre, and the ball is convex. The matrix form of the convex structure is the statement that the positive semidefinite matrices of trace one form a convex set whose extreme points are the rank-one projectors.</p>
 <h2 id="reading-the-vector-back">Reading the Vector Back</h2>
 <p><strong>Proposition.</strong> The Bloch coordinates are the traces against the Pauli matrices,</p>
 <p>$$
@@ -212,9 +230,9 @@ r_k=\operatorname{Tr}\bigl(\rho\,\sigma_k\bigr),
 $$</p>
 <p>and, in the algebra, twice the trace pairing against the Hermitian units,</p>
 <p>$$
-r_k=2\bigl\langle\tilde{Ϛ},i\vec e_k\bigr\rangle .
+r_k=2\bigl\langle\tilde{\varrho},i\vec e_k\bigr\rangle .
 $$</p>
-<p><em>Proof.</em> The first identity follows from $\operatorname{Tr}\sigma_k=0$ and $\operatorname{Tr}(\sigma_j\sigma_k)=2\delta_{jk}$. The second is the trace pairing $\langle\tilde P,\tilde Q\rangle=\tfrac12\operatorname{Tr}(\mathsf M_2(\tilde P)\mathsf M_2(\tilde Q))$ of <em>$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</em> applied to $\tilde{Ϛ}$ and $i\vec e_k$.</p>
+<p><em>Proof.</em> The first identity follows from $\operatorname{Tr}\sigma_k=0$ and $\operatorname{Tr}(\sigma_j\sigma_k)=2\delta_{jk}$. The second is the trace pairing $\langle\tilde P,\tilde Q\rangle=\tfrac12\operatorname{Tr}(\mathsf M_2(\tilde P)\mathsf M_2(\tilde Q))$ of <em>$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</em> applied to $\tilde{\varrho}$ and $i\vec e_k$.</p>
 <p><strong>The reconstruction.</strong> The three numbers $r_k$ determine the state, because</p>
 <p>$$
 \rho=\tfrac12\Bigl(\mathrm I_2+r_k\sigma_k\Bigr),
@@ -259,7 +277,7 @@ $$</p>
 <p><strong>The real form is extra data.</strong> The identification $\mathbb B\cong M_2(\mathbb C)$ is an isomorphism of complex algebras, and it does not by itself select $\mathbb M_+$. The statement that the Hermitian elements are the observables uses the involution ${}^{*}$, which is part of the real structure of $\mathbb B$ and is not visible in the complex algebra alone. The same matrix algebra carries the anti-Hermitian sector, and the choice between the two sectors is a physical choice, not a matrix identity.</p>
 <p><strong>No dynamics.</strong> Nothing in this article evolves a state. The spin operators generate the rotations of the state space through the commutator, and the Hamiltonian that would generate a motion in time is a choice of observable, not a consequence of the model.</p>
 <h2 id="summary">Summary</h2>
-<p>The Hermitian units of the algebra map to the Pauli matrices, $\mathsf M_2(i\vec e_k)=\sigma_k$, and the vector units map to $-i\sigma_k$; the general element is $Q_t\mathrm I_2-iQ_k\sigma_k$. The spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ satisfy $\{\tilde S_i,\tilde S_j\}=\tfrac{\hbar^2}{2}\delta_{ij}e_t$ and $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$, its matrix is $\rho=\tfrac12(\mathrm I_2+\vec r\cdot\vec\sigma)$, and its Bloch vector is recovered by $r_k=\operatorname{Tr}(\rho\sigma_k)=2\langle\tilde{Ϛ},i\vec e_k\rangle$. The pure states are the rank-one Hermitian idempotents, $|\vec r|=1$, $N=0$; they are the boundary of the ball and the trace-one slice of the null cone. The measurement formulae are $p_\pm(\vec u)=\tfrac12(1\pm\vec r\cdot\vec u)$ and $\langle S_{\vec u}\rangle=\tfrac{\hbar}{2}\vec r\cdot\vec u$. The correspondence uses the real form $\mathbb M_+$, which the complex isomorphism alone does not select.</p>
+<p>The Hermitian units of the algebra map to the Pauli matrices, $\mathsf M_2(i\vec e_k)=\sigma_k$, and the vector units map to $-i\sigma_k$; the general element is $Q_t\mathrm I_2-iQ_k\sigma_k$. The spin operators $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ satisfy $\{\tilde S_i,\tilde S_j\}=\tfrac{\hbar^2}{2}\delta_{ij}e_t$ and $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$. A state is $\tilde{\varrho}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$, its matrix is $\rho=\tfrac12(\mathrm I_2+\vec r\cdot\vec\sigma)$, and its Bloch vector is recovered by $r_k=\operatorname{Tr}(\rho\sigma_k)=2\langle\tilde{\varrho},i\vec e_k\rangle$. The pure states are the rank-one Hermitian idempotents, $|\vec r|=1$, $N=0$; they are the boundary of the ball and the trace-one slice of the null cone. The measurement formulae are $p_\pm(\vec u)=\tfrac12(1\pm\vec r\cdot\vec u)$ and $\langle S_{\vec u}\rangle=\tfrac{\hbar}{2}\vec r\cdot\vec u$. The correspondence uses the real form $\mathbb M_+$, which the complex isomorphism alone does not select.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -282,11 +300,11 @@ $$</p>
 <td>the pure state of spin up along $\vec u$</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$</td>
+<td>$\tilde{\varrho}=\tfrac12(e_t+i\vec r)$</td>
 <td>a general state</td>
 </tr>
 <tr>
-<td>$\rho=\mathsf M_2(\tilde{Ϛ})$</td>
+<td>$\rho=\mathsf M_2(\tilde{\varrho})$</td>
 <td>the density matrix</td>
 </tr>
 <tr>
@@ -294,7 +312,7 @@ $$</p>
 <td>the Bloch vector, $r_k=\operatorname{Tr}(\rho\sigma_k)$</td>
 </tr>
 <tr>
-<td>$N(\tilde{Ϛ})=\det\rho$</td>
+<td>$N(\tilde{\varrho})=\det\rho$</td>
 <td>the norm, $\tfrac14(1-\lvert\vec r\rvert^2)$ on the state slice</td>
 </tr>
 <tr>

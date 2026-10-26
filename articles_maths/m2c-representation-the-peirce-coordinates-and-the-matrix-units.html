@@ -71,7 +71,7 @@
         <h1 id="math0-representation-the-peirce-coordinates-and-the-matrix-units"><strong>$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A Peirce decomposition with two primitive idempotents writes every biquaternion in four corners. Read as a matrix, the four corner coordinates are the four entries, and the four corner basis elements are the four matrix units. The coordinate model is therefore the same isomorphism as the fixed matrix model, read in the basis adapted to the idempotents rather than the basis adapted to the vector part.</p>
-<p>This article develops the coordinate model, the systems of matrix units, and the rigidity statement that all such systems are conjugate. It is the matrix form of <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Peirce Coordinates and the Matrix Model</em> and §<em>Systems of Matrix Units</em>.</p>
+<p>This article develops the coordinate model, the systems of matrix units, and the rigidity statement that all such systems are conjugate. It is the matrix form of <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>, §<em>The Peirce Coordinates and the Matrix Model</em> and §<em>Systems of Matrix Units</em>.</p>
 <p><strong>Conventions.</strong> The algebra and the fixed model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The standard idempotent pair is</p>
 <p>$$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad
@@ -83,7 +83,7 @@ $$</p>
 \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y).
 $$</p>
 <p>The labels $x,y$ are the labels of the standard pair. The eigenbasis of a general element uses a different labelling, $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$, treated in <em>$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</em>.</p>
-<p><strong>Boundaries.</strong> The Peirce decomposition is <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>; the columns and rows are <em>$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module</em>; the nilpotents are <em>Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</em>; the inner automorphisms are <em>Biquaternion Automorphisms and Derivations</em>.</p>
+<p><strong>Boundaries.</strong> The Peirce decomposition is <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>; the columns and rows are <em>$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module</em>; the nilpotents are <em>Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</em>; the inner automorphisms are <em>Biquaternion Automorphisms and Derivations</em>.</p>
 <h2 id="the-peirce-table">The Peirce Table</h2>
 <p><strong>The four basis elements multiply as the four matrix units.</strong></p>
 <div class="table-scroll"><table>
@@ -159,6 +159,26 @@ $$</p>
 $$</p>
 <p>The scalar part is the sum of the two diagonal corners, and the quaternionic norm is the determinant of the corner matrix. The two symmetric functions of the corner coordinates are the two invariants of the algebra.</p>
 <p><strong>The ideals in the coordinates.</strong> The first column $\mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ is the image of $\mathbb{B}\tilde\Pi_+$, and the second column is the image of $\mathbb{B}\tilde\Pi_-$. The first row is the image of $\tilde\Pi_+\mathbb{B}$, and the second row is the image of $\tilde\Pi_-\mathbb{B}$. The columns are the left ideals and the rows are the right ideals; the coordinate model makes the two groupings of the same four entries visible at once.</p>
+<h2 id="the-coordinates-in-the-coefficients">The Coordinates in the Coefficients</h2>
+<p>The standard pair makes the Peirce coordinates equal to the entries of the fixed model. Expanding the general element in the four corner elements gives</p>
+<p>$$
+Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z
+=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_x+a_{21}\vec\Upsilon_y+a_{22}\tilde\Pi_-,
+$$</p>
+<p>with</p>
+<p>$$
+a_{11}=Q_t-iQ_z,\qquad
+a_{12}=-iQ_x-Q_y,\qquad
+a_{21}=-iQ_x+Q_y,\qquad
+a_{22}=Q_t+iQ_z .
+$$</p>
+<p>The four formulas are the inverse of the four definitions of the corner elements, and they give</p>
+<p>$$
+\mathsf M_2^{Q}(\tilde Q)=
+\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}
+=\mathsf M_2(\tilde Q).
+$$</p>
+<p>The fixed model is therefore the coordinate model attached to the standard pair, and the eigenbasis model is the coordinate model attached to the spectral pair. The equality is the matrix form of the fact that the standard idempotents are the coordinate idempotents.</p>
 <h2 id="systems-of-matrix-units">Systems of Matrix Units</h2>
 <p><strong>Definition.</strong> A system of $2\times2$ matrix units in $\mathbb{B}$ is a family $\{E_{11},E_{12},E_{21},E_{22}\}$ with</p>
 <p>$$
@@ -230,7 +250,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce decomposition and its uniqueness</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the Peirce decomposition and its uniqueness</li>
 <li><a href="square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html">Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</a>, for the nilpotent cone</li>
 <li><a href="m2c-representation-the-matrix-product-and-the-algebra-structure.html">$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</a>, for the fixed model</li>
 <li><a href="m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html">$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</a>, for the eigenbasis labelling</li>

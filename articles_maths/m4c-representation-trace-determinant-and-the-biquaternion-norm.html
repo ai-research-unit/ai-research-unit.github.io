@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-trace-determinant-and-the-biquaternion-norm"><strong>$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The trace of the regular matrix is four times the scalar part and the determinant is the square of the quaternionic norm. The doubling of the spectrum squares the determinant and doubles the trace; the norm itself survives as a quarter-trace of a word, not as the determinant.</p>
+<p>This article develops the two invariants, the four algebraic norms as matrix invariants, the characteristic and minimal polynomials, and the singular locus. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure</em>. Write $\mathsf{M}_4(\tilde Q)=M$, $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\lambda_\pm=Q_t\pm iB$.</p>
+<p><strong>Boundaries.</strong> The determinant as a group homomorphism is <em>$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</em>; the rank stratification is <em>$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety</em>; the four forms are <em>$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces</em>. The $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</em>.</p>
+<h2 id="the-trace">The Trace</h2>
+<p><strong>The trace is four times the scalar part.</strong></p>
+<p>$$
+\operatorname{Tr}M=4Q_t,\qquad Q_t=\tfrac14\operatorname{Tr}M.
+$$</p>
+<p>The trace kills the vector part and is blind to the two copies: each block contributes $2Q_t$, and the two blocks together contribute $4Q_t$. It is $\mathbb{C}$-linear and invariant under conjugation by units.</p>
+<p><strong>The trace of a power.</strong> Since $M=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q)$,</p>
+<p>$$
+\operatorname{Tr}(M^k)=2\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q)^k\bigr)
+$$</p>
+<p>for every $k\ge1$. The trace of the square is $4(Q_t^2-B^2)=4P$, where $P$ is the plain norm. The trace of the cube is $2(2Q_t^3-6Q_tB^2)=4Q_t(Q_t^2-3B^2)$.</p>
+<p><strong>The trace is not the norm.</strong> It is additive and complex-valued; it does not detect the vector part, and it does not see the doubling except through the factor four. An element with $Q_t=0$ is traceless whatever its vector part.</p>
+<h2 id="the-determinant">The Determinant</h2>
+<p><strong>The determinant is the squared norm.</strong></p>
+<p>$$
+\det M=\langle\tilde Q\rangle_{\natural}^2
+=(Q_t^2+B^2)^2.
+$$</p>
+<p><em>Proof.</em> The block form gives $\det M=\det\mathsf{M}_2(\tilde Q)^2$ and $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$. $\square$</p>
+<p>The determinant is multiplicative, $\det(M_PM_Q)=\det M_P\det M_Q$, and invariant under conjugation, $\det(PMP^{-1})=\det M$. Its modulus is the squared modulus of the norm, and its argument is twice the argument of the norm:
+$$
+\lvert\det M\rvert=\lvert\langle\tilde Q\rangle_{\natural}\rvert^2,
+\qquad
+\arg\det M=2\arg\langle\tilde Q\rangle_{\natural}.
+$$</p>
+<p><strong>Invertibility.</strong> The matrix is invertible exactly when the norm is nonzero:
+$$
+M\text{ invertible}\iff\tilde Q\text{ is a unit}\iff\langle\tilde Q\rangle_{\natural}\neq0.
+$$
+The inverse is
+$$
+M^{-1}=\mathsf{M}_4(\tilde Q^{-1})=\frac{\mathsf{M}_4(\tilde Q^{\natural})}{\langle\tilde Q\rangle_{\natural}}
+=\frac{M^{\mathsf T}}{\langle\tilde Q\rangle_{\natural}},
+$$
+because the transpose is quaternion conjugation in the regular model. Compare the $2\times2$ formula, where the numerator is the adjugate; in the $4\times4$ model the adjugate is degree three and the transpose is the linear object.</p>
+<p><strong>The zero divisors.</strong> A nonzero singular regular matrix has rank two, not rank one. The singular nonzero elements form the null cone $\{\langle\tilde Q\rangle_{\natural}=0\}$, and the zero matrix is its apex. The cone is the determinantal variety of the regular model.</p>
+<h2 id="the-four-norms-as-matrix-invariants">The Four Norms as Matrix Invariants</h2>
+<p>The four algebraic norms are four quarter-traces of words in $M$ and its transpose and dagger.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Norm</th>
+<th>Algebra value</th>
+<th>Matrix formula</th>
+<th>Value ring</th>
+<th>Definite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plain $P$</td>
+<td>$Q_t^2-Q_x^2-Q_y^2-Q_z^2$</td>
+<td>$\tfrac14\operatorname{Tr}(M^2)$</td>
+<td>$\mathbb{C}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Quaternionic $N$</td>
+<td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
+<td>$\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$</td>
+<td>$\mathbb{C}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Hermitian $H$</td>
+<td>$\sum_\mu\lvert Q_\mu\rvert^2$</td>
+<td>$\tfrac14\operatorname{Tr}(M^{\dagger}M)$</td>
+<td>$\mathbb{R}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Krein $K$</td>
+<td>$\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$</td>
+<td>$\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$</td>
+<td>$\mathbb{R}$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The block form and the identities $M^{\mathsf T}=\mathsf{M}_4(\tilde Q^{\natural})$, $M^{\dagger}=\mathsf{M}_4(\tilde Q^{*})$ reduce each quarter-trace to the scalar part of the corresponding product. For the quaternionic norm, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; for the Hermitian norm, $\tilde Q^{*}\tilde Q=He_t$; for the Krein norm, $\tilde Q^{\natural}\tilde Q^{*}=Ke_t$. The plain norm is $\tilde Q^2$ read in the scalar part. $\square$</p>
+<p><strong>The quaternionic norm is not the determinant.</strong> In the $2\times2$ model $\det\mathsf{M}_2(\tilde Q)=N$. In the $4\times4$ model $\det M=N^2$, and $N$ itself is the quarter-trace of $M^{\mathsf T}M$. The determinant is the square of the norm because the regular representation contains two copies of the defining module; the norm is recovered from the matrix by a word, not by the determinant.</p>
+<p><strong>The signatures.</strong> The Hermitian norm is positive definite; the Krein norm has signature $(2,6)$ on the real algebra; the plain and quaternionic norms are complex-valued and have no sign. The table is the regular-model form of the four-norm table of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
+<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
+<p><strong>The characteristic polynomial is the square of the biquadratic.</strong></p>
+<p>$$
+\chi_M(t)=\bigl(t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}\bigr)^2
+=t^4-4Q_tt^3+(4Q_t^2+2\langle\tilde Q\rangle_{\natural})t^2-4Q_t\langle\tilde Q\rangle_{\natural}t+\langle\tilde Q\rangle_{\natural}^2.
+$$</p>
+<p><em>Proof.</em> The block form gives $\chi_M(t)=\chi_{\mathsf{M}_2(\tilde Q)}(t)^2$. $\square$</p>
+<p>The roots are $\lambda_+=Q_t+iB$ and $\lambda_-=Q_t-iB$, each of algebraic multiplicity two. The discriminant of the quadratic factor is $-4B^2$, so the eigenvalues are distinct exactly when $B^2\neq0$. When $B^2=0$, the four eigenvalues coincide at $Q_t$.</p>
+<p><strong>The minimal polynomial does not square.</strong> If $\tilde Q$ is scalar, the minimal polynomial is $t-Q_t$. If $\tilde Q$ is not scalar, the minimal polynomial is
+$$
+t^2-2Q_tt+\langle\tilde Q\rangle_{\natural},
+$$
+of degree two, even when the eigenvalues coincide. The regular matrix is never nonderogatory: its minimal polynomial has degree at most two, while its characteristic polynomial has degree four.</p>
+<p><strong>Cayley–Hamilton.</strong> The matrix satisfies
+$$
+M^2-2Q_tM+\langle\tilde Q\rangle_{\natural}\mathrm I_4=0,
+$$
+and therefore also $\chi_M(M)=0$. The degree-two identity is the block form of the $2\times2$ Cayley–Hamilton identity; the degree-four identity is its square and carries no additional information.</p>
+<h2 id="the-determinant-and-the-modulus">The Determinant and the Modulus</h2>
+<p>Over $\mathbb{C}$ the determinant is a complex volume. Its modulus is the real volume of the image of the unit cube, and its argument is twice the phase of the linear map. On the Hermitian and anti-Hermitian subspaces the norm is real, so the determinant is real and non-negative. On the null cone the volume vanishes.</p>
+<p>The modulus of the element is
+$$
+\lvert\tilde Q\rvert=\sqrt{H}=\sqrt{\sum_\mu\lvert Q_\mu\rvert^2},
+$$
+and the modulus of the determinant is $\lvert\det M\rvert=\lvert N\rvert^2$, not $\lvert\tilde Q\rvert^4$. The inequality
+$$
+\lvert N\rvert\le H
+$$
+is the triangle inequality for the four squares $Q_\mu^2$, with equality exactly when the four squares are non-negative real multiples of one another, that is, when all four coefficients lie on one real line through the origin. Normality does not force equality: $\tilde Q=e_t+i\vec e_x$ is normal, with $N=0$ and $H=2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The trace is $4Q_t$ and the determinant is the squared norm $\langle\tilde Q\rangle_{\natural}^2$. The four algebraic norms are quarter-traces of the words $M^2$, $M^{\mathsf T}M$, $M^{\dagger}M$ and $M^{\mathsf T}M^{\dagger}$. The characteristic polynomial is the square of the $2\times2$ one, with eigenvalues $\lambda_\pm$ doubled, while the minimal polynomial keeps degree at most two. The singular nonzero matrices have rank two and form the null cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M=\mathsf{M}_4(\tilde Q)$</td>
+<td>the regular matrix</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$</td>
+<td>the quaternionic norm</td>
+</tr>
+<tr>
+<td>$P,N,H,K$</td>
+<td>the plain, quaternionic, Hermitian and Krein norms</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the eigenvalues, each double</td>
+</tr>
+<tr>
+<td>$\chi_M(t)$</td>
+<td>the characteristic polynomial</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-representation-the-four-words-and-the-four-traces.html">$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces</a>, for the trace normalization</li>
+<li><a href="m4c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety</a>, for the null cone</li>
+<li><a href="m4c-representation-gl2-sl2-and-the-determinant.html">$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a>, for the groups</li>
+<li><a href="m2c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the $2\times2$ version</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the norms</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

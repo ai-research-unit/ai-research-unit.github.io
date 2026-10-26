@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Representation : The Functional Calculus — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-functional-calculus"><strong>$M_2(\mathbb{C})$ Representation : The Functional Calculus</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The exponential, the logarithm and the square roots of a matrix are three values of one construction. A holomorphic function defined on a neighbourhood of the spectrum is applied to the matrix by the Cauchy integral, and the result is computed on the spectral data: the values on the eigenvalues for a diagonalisable matrix, the values and the derivatives at a repeated eigenvalue for a Jordan block. The exponential is the entire function $e^z$, the logarithm is a branch of $\log z$, and the square roots are the two branches of $z^{1/2}$.</p>
+<p>This article develops the calculus; the exponential series, its determinant identity, its closed forms, the one-parameter subgroups and the kernel; the logarithm equation, its branch families, the principal branch and its derivative; and the square-root equation, solved in the commutant and classified by spectral type. It is the matrix form of <em>Biquaternion Elementary Functions</em> and of <em>Square Roots of a General Element in the Biquaternion Algebra</em>, §<em>The Reduction</em> to §<em>The Classification</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The image of $\tilde Q$ is $X=\mathsf M_2(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, and $\operatorname{tr}X=2Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}$. In the square-root sections the complex square of the vector part is $(\vec Q,\vec Q)=B^2$.</p>
+<p><strong>Boundaries.</strong> The general holomorphic calculus is <em>Holomorphic Functional Calculus</em>; the biquaternion closed form and the logarithm are <em>Biquaternion Elementary Functions</em>; the Lie algebra and the correspondence are <em>Biquaternion Lie Group and Exponential Structure</em>; the algebra classification of square roots is <em>Square Roots of a General Element in the Biquaternion Algebra</em>; the roots of $\pm1$ and of $0$ are <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em> and <em>Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</em>; the polar decomposition is <em>$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</em>.</p>
+<h2 id="the-functional-calculus">The Functional Calculus</h2>
+<p><strong>Definition.</strong> Let $X\in M_2(\mathbb{C})$ and let $f$ be holomorphic on an open set containing the spectrum of $X$. Let $\gamma$ be a finite union of positively oriented closed contours that encloses the spectrum and lies in the domain of $f$. The <strong>functional calculus</strong> is
+$$
+f(X)=\frac{1}{2\pi i}\oint_{\gamma} f(z)\,(z\mathrm I_2-X)^{-1}\,dz .
+$$
+The integral does not depend on the contour, by Cauchy's theorem applied to the resolvent, and it defines a matrix.</p>
+<p><strong>The spectral form.</strong> If $X$ is diagonalisable, $X=C\operatorname{diag}(\lambda_1,\lambda_2)C^{-1}$, then
+$$
+f(X)=C\operatorname{diag}\bigl(f(\lambda_1),f(\lambda_2)\bigr)C^{-1}.
+$$
+If $X=\lambda\mathrm I_2+N$ with $N^2=0$, then
+$$
+f(X)=f(\lambda)\mathrm I_2+f'(\lambda)N .
+$$
+The two formulas are the residue theorem read on the two spectral types. They show that $f(X)$ depends only on the values of $f$ on the spectrum, and on the first derivative at a repeated eigenvalue.</p>
+<p><strong>Proposition (the calculus is a homomorphism).</strong> For two functions holomorphic on a common neighbourhood of the spectrum,
+$$
+(fg)(X)=f(X)g(X),\qquad 1(X)=\mathrm I_2,\qquad f(X)g(X)=g(X)f(X).
+$$
+The map is therefore an algebra homomorphism from the holomorphic functions to the commutative algebra generated by $X$. It sends a polynomial to the same polynomial in $X$, and a rational function to the same rational function where the denominator is invertible on the spectrum.</p>
+<p><strong>The spectral mapping theorem.</strong> The spectrum of $f(X)$ is the image of the spectrum:
+$$
+\operatorname{spec}f(X)=f\bigl(\operatorname{spec}X\bigr).
+$$
+For the exponential this is the statement that the eigenvalues of $\exp X$ are the exponentials of the eigenvalues of $X$; for the logarithm and the roots it is the branch rule.</p>
+<p><strong>The instances.</strong> The calculus contains the three objects of this article.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Domain</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(z)=e^z$</td>
+<td>entire</td>
+<td>the exponential $\exp X$</td>
+</tr>
+<tr>
+<td>$f(z)=\log z$</td>
+<td>a branch on $\mathbb{C}\setminus(-\infty,0]$</td>
+<td>a logarithm</td>
+</tr>
+<tr>
+<td>$f(z)=z^{1/2}$</td>
+<td>a branch of the square root</td>
+<td>a square root</td>
+</tr>
+<tr>
+<td>$f(z)=z^k$, $k\in\mathbb{Z}$</td>
+<td>$0$ excluded when $k<0$</td>
+<td>the powers and the inverse</td>
+</tr>
+<tr>
+<td>$f(z)=(w-z)^{-1}$</td>
+<td>$w\notin\operatorname{spec}X$</td>
+<td>the resolvent $(w\mathrm I_2-X)^{-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The exponential is the entire case, and it is the only one of the three that is defined on the whole matrix algebra. The logarithm and the roots need a branch, and the branch is the source of every multiplicity below.</p>
+<h2 id="the-exponential-series">The Exponential Series</h2>
+<p>For $X\in M_2(\mathbb{C})$ the <strong>matrix exponential</strong> is
+$$
+\exp X=\sum_{m=0}^{\infty}\frac{X^m}{m!}=\mathrm I_2+X+\frac{X^2}{2!}+\frac{X^3}{3!}+\cdots
+$$
+The series converges for every $X$, uniformly on bounded sets. For a submultiplicative norm the general term is bounded by $\lVert X\rVert^m/m!$, and the comparison with $e^{\lVert X\rVert}$ gives absolute convergence. The series is the Cauchy integral of $e^z$ written as a power series at the origin.</p>
+<p><strong>The basic identities.</strong> The map $\exp$ sends $0$ to $\mathrm I_2$, and $\exp X$ is invertible with inverse $\exp(-X)$. The derivative of the exponential line is
+$$
+\frac{d}{dt}\exp(tX)=X\exp(tX)=\exp(tX)X,
+$$
+so the differential at the origin is the identity and $\exp$ is a local diffeomorphism there.</p>
+<p><strong>The algebra identity.</strong> Since $\mathsf M_2$ is an algebra homomorphism and the series is an infinite sum of products,
+$$
+\exp\mathsf M_2(\tilde Q)=\mathsf M_2\bigl(\exp\tilde Q\bigr),
+$$
+where the exponential on the right is the biquaternion exponential of <em>Biquaternion Elementary Functions</em>. The identity is the reason every formula below is the image of an algebra formula.</p>
+<h2 id="the-determinant-and-the-trace">The Determinant and the Trace</h2>
+<p><strong>Theorem.</strong> For every $X$,
+$$
+\boxed{\;\det(\exp X)=\exp(\operatorname{tr}X)\;}
+$$</p>
+<p><em>Proof.</em> Triangularise $X=PTP^{-1}$ with $T$ upper triangular. Then $\exp X=P\exp(T)P^{-1}$, and $\exp T$ is upper triangular with diagonal entries $e^{\lambda_1},e^{\lambda_2}$, where $\lambda_1,\lambda_2$ are the eigenvalues of $X$. Hence $\det(\exp X)=e^{\lambda_1}e^{\lambda_2}=e^{\lambda_1+\lambda_2}=e^{\operatorname{tr}X}$.</p>
+<p><strong>Corollary (the trace-free part).</strong> If $\operatorname{tr}X=0$ then $\det(\exp X)=1$, so
+$$
+\exp\bigl(\mathfrak{sl}_2(\mathbb{C})\bigr)\subseteq SL_2(\mathbb{C}).
+$$
+The inclusion is an equality, because every invertible matrix has a logarithm, proved below. In the algebra, the same identity reads
+$$
+\langle\exp\tilde Q\rangle_{\natural}=\det\exp\mathsf M_2(\tilde Q)=\exp(2Q_t),
+$$
+so the exponential of a trace-free element has norm one, and the exponential of a general element has norm $e^{2Q_t}$.</p>
+<p><strong>The image.</strong> Every exponential is invertible, so the image lies in $GL_2(\mathbb{C})$; every invertible matrix has a logarithm, so the image is exactly $GL_2(\mathbb{C})$. The matrix $0$ is not in the image, and the exponential is neither injective nor a homomorphism.</p>
+<h2 id="the-group-law">The Group Law</h2>
+<p><strong>Proposition.</strong> If $XY=YX$ then
+$$
+\exp(X+Y)=\exp X\,\exp Y .
+$$</p>
+<p><em>Proof.</em> The binomial theorem applies to the commuting pair, and the two series multiply term by term to the series of $X+Y$.</p>
+<p><strong>Corollary.</strong> $\exp(-X)=(\exp X)^{-1}$, and the powers satisfy $\exp(mX)=(\exp X)^m$ for every integer $m$.</p>
+<p><strong>Failure in general.</strong> For non-commuting $X$ and $Y$ the identity fails, and the correction is the Baker–Campbell–Hausdorff series
+$$
+\exp X\,\exp Y=\exp\Bigl(X+Y+\tfrac12[X,Y]+\tfrac1{12}\bigl([X,[X,Y]]-[Y,[X,Y]]\bigr)+\cdots\Bigr).
+$$
+The exponential is therefore not a homomorphism from the additive group of the algebra to the group of units; it is a local isomorphism there, by the derivative at the origin. The defect is measured by the Lie bracket, which is the subject of <em>$M_2(\mathbb{C})$ Representation : The Killing Form</em>.</p>
+<h2 id="the-closed-form-of-the-exponential">The Closed Form of the Exponential</h2>
+<p><strong>Theorem.</strong> Let $\tilde Q=Q_te_t+\vec Q$ and let $B$ be a square root of $Q_x^2+Q_y^2+Q_z^2$. Then
+$$
+\boxed{\;
+\exp\mathsf M_2(\tilde Q)=e^{Q_t}\left(\cos B\,\mathrm I_2+\frac{\sin B}{B}\,\mathsf M_2(\vec Q)\right)
+\;}
+$$
+with $\sin B/B$ read as $1$ when $B=0$.</p>
+<p><em>Proof.</em> The three basis images satisfy $\mathsf M_2(\vec e_k)^2=-\mathrm I_2$ and anticommute in pairs, so $\mathsf M_2(\vec Q)^2=-B^2\mathrm I_2$. The even powers of $\mathsf M_2(\vec Q)$ are $(-1)^mB^{2m}\mathrm I_2$ and the odd powers are $(-1)^mB^{2m}\mathsf M_2(\vec Q)$; summing gives the two trigonometric series. At $B=0$ the square of $\mathsf M_2(\vec Q)$ vanishes, the series truncates to $\mathrm I_2+\mathsf M_2(\vec Q)$, and that is the limit of the formula.</p>
+<p>The formula separates into the two regimes of the biquaternion article.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Regime</th>
+<th>Condition</th>
+<th>$\exp\mathsf M_2(\tilde Q)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Oscillatory</td>
+<td>$B\neq0$</td>
+<td>$e^{Q_t}\bigl(\cos B\,\mathrm I_2+\frac{\sin B}{B}\mathsf M_2(\vec Q)\bigr)$</td>
+</tr>
+<tr>
+<td>Nilpotent</td>
+<td>$B=0$</td>
+<td>$e^{Q_t}\bigl(\mathrm I_2+\mathsf M_2(\vec Q)\bigr)$</td>
+</tr>
+<tr>
+<td>Scalar</td>
+<td>$\vec Q=0$</td>
+<td>$e^{Q_t}\mathrm I_2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The spectral reading.</strong> The eigenvalues of $\mathsf M_2(\tilde Q)$ are $Q_t\pm iB$, and those of the exponential are $e^{Q_t\pm iB}$. The formula is the spectral theorem written with the two eigenprojections, and it agrees with the eigenvalue formula of <em>Biquaternion Elementary Functions</em>, §<em>The Closed Form</em>. It is also the functional calculus of $e^z$ read on the two eigenvalues.</p>
+<h2 id="one-parameter-subgroups">One-Parameter Subgroups</h2>
+<p>A <strong>one-parameter subgroup</strong> of $GL_2(\mathbb{C})$ is a Lie-group homomorphism $\varphi:\mathbb{R}\to GL_2(\mathbb{C})$. For $X\in M_2(\mathbb{C})$ the <strong>exponential line</strong>
+$$
+\varphi_X(t)=\exp(tX)
+$$
+is one, by the group law. Its <strong>infinitesimal generator</strong> is $\varphi_X'(0)=X$.</p>
+<p><strong>Theorem.</strong> Every one-parameter subgroup of $GL_2(\mathbb{C})$ is $\varphi_X$ for a unique $X$.</p>
+<p><em>Proof.</em> Let $\varphi$ be a one-parameter subgroup and put $X=\varphi'(0)$. Differentiating $\varphi(s+t)=\varphi(s)\varphi(t)$ in $s$ at $s=0$ gives $\varphi'(t)=X\varphi(t)$. The product $\psi(t)=\exp(-tX)\varphi(t)$ satisfies
+$$
+\psi'(t)=-X\exp(-tX)\varphi(t)+\exp(-tX)X\varphi(t)=0,
+$$
+and $\psi(0)=\mathrm I_2$, so $\varphi(t)=\exp(tX)$. The generator is $\varphi'(0)$, hence unique.</p>
+<p><strong>The subgroup depends on the line.</strong> Since $t$ ranges over $\mathbb{R}$, the exponential lines of $X$ and of $\lambda X$ have the same image for every real $\lambda\neq0$. The subgroup, as a set, is the image of the real line $\mathbb{R}X$; the generator is fixed only once the parametrisation is fixed.</p>
+<p><strong>The two real directions.</strong> For $X=\mathsf M_2(\vec e_x)=-i\sigma_1$,
+$$
+\exp(tX)=\cos t\,\mathrm I_2-i\sin t\,\sigma_1,
+$$
+a circle in $U(2)$; for $X=i\mathsf M_2(\vec e_x)=\sigma_1$,
+$$
+\exp(tX)=\cosh t\,\mathrm I_2+\sinh t\,\sigma_1,
+$$
+an unbounded curve in the Hermitian matrices. The first is the compact case and the second the non-compact case, in the matrix model.</p>
+<p><strong>The four elementary subgroups.</strong> The two real directions are the rotor and the boost; together with the central phase and the unipotent translations they give the four elementary one-parameter subgroups.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Generator</th>
+<th>Subgroup</th>
+<th>Formula</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$i e_t$</td>
+<td>central phase</td>
+<td>$e^{it}\mathrm I_2$</td>
+<td>circle</td>
+</tr>
+<tr>
+<td>$\vec e_k$</td>
+<td>rotor</td>
+<td>$\cos t\,\mathrm I_2+\sin t\,\mathsf M_2(\vec e_k)$</td>
+<td>compact, in $SU(2)$</td>
+</tr>
+<tr>
+<td>$i\vec e_k$</td>
+<td>boost</td>
+<td>$\cosh t\,\mathrm I_2+\sinh t\,\sigma_k$</td>
+<td>non-compact, Hermitian positive</td>
+</tr>
+<tr>
+<td>$\vec P$, $\vec P^2=0$</td>
+<td>unipotent</td>
+<td>$\mathrm I_2+t\,\mathsf M_2(\vec P)$</td>
+<td>parabolic</td>
+</tr>
+</tbody>
+</table></div>
+<p>The phase is the centre, the rotor is the compact direction, the boost is the non-compact direction, and the unipotent line is the exponential of a nilpotent. The four are the basic real types; a general exponential line is their product after a conjugation and a complex scaling.</p>
+<p><strong>The subgroup lies in a centraliser.</strong> Every $\exp(tX)$ commutes with $X$, so the image of $\varphi_X$ lies in the group of units of $C(X)=\{Y:XY=YX\}$ (<em>$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser</em>). For a non-scalar $X$ that centraliser is the plane $\mathbb{C}[X]$, so a one-parameter subgroup is a real curve in a commutative surface.</p>
+<h2 id="the-kernel-of-the-exponential">The Kernel of the Exponential</h2>
+<p><strong>Theorem.</strong> $\exp X=\mathrm I_2$ if and only if $X$ is diagonalisable and every eigenvalue of $X$ lies in $2\pi i\mathbb{Z}$.</p>
+<p><em>Proof.</em> If $X$ is diagonalisable with eigenvalues $\lambda_1,\lambda_2$, then $\exp X$ is diagonalisable with eigenvalues $e^{\lambda_1},e^{\lambda_2}$, and it is the identity exactly when both are $1$. Conversely, put $X$ in Jordan form $\lambda\mathrm I_2+N$ with $N^2=0$; then $\exp X=e^{\lambda}(\mathrm I_2+N)$, which is the identity only if $N=0$ and $e^{\lambda}=1$.</p>
+<p><strong>In the model.</strong> A matrix lies in the kernel exactly when it is conjugate to $\operatorname{diag}(2\pi im,2\pi in)$ with $m,n\in\mathbb{Z}$. The kernel is the union of these conjugacy classes: for $m\neq n$ each is a complex surface, and for $m=n$ it is the single scalar $2\pi im\,\mathrm I_2$. It is not an additive subgroup.</p>
+<p><strong>In the algebra.</strong> With the eigenvalues $Q_t\pm iB$, the condition is
+$$
+Q_t=\pi im,\qquad B=\pi n,\qquad m,n\in\mathbb{Z},\quad m\equiv n\pmod 2 .
+$$</p>
+<p><strong>Example.</strong> The element $\tilde Q=\pi i\,e_t+\pi\,\vec e_z$ has
+$$
+\mathsf M_2(\tilde Q)=\pi i\,\mathrm I_2+\pi(-i\sigma_3)=\operatorname{diag}(0,2\pi i),
+$$
+so $\exp\mathsf M_2(\tilde Q)=\mathrm I_2$, while $\det\mathsf M_2(\tilde Q)=0$: a zero divisor lies in the kernel. The kernel therefore contains singular matrices, and the exponential does not detect invertibility of the exponent.</p>
+<h2 id="the-logarithm-equation">The Logarithm Equation</h2>
+<p>A <strong>logarithm</strong> of $X\in M_2(\mathbb{C})$ is a matrix $Y$ with
+$$
+\exp Y=X .
+$$</p>
+<p><strong>Theorem.</strong> $X$ has a logarithm if and only if $X$ is invertible.</p>
+<p><em>Proof.</em> If $X=\exp Y$ then $\det X=\exp(\operatorname{tr}Y)\neq0$. Conversely, put $X$ in Jordan form. A Jordan block with eigenvalue $\lambda\neq0$ has the logarithm
+$$
+\log(\lambda\mathrm I_2+N)=\log\lambda\,\mathrm I_2+\frac{N}{\lambda},
+$$
+because $N^2=0$ and the series $\log(\mathrm I_2+A)=\sum_{m\ge1}(-1)^{m+1}A^m/m$ truncates at the first term; the identity is checked by exponentiating. A diagonal block has the logarithm of each diagonal entry. Summing over the blocks gives a logarithm of $X$.</p>
+<p><strong>The elementary identities.</strong> From the functional equation of the logarithm,
+$$
+\log(X_1X_2)=\log X_1+\log X_2
+$$
+holds when $X_1$ and $X_2$ commute and the branches are chosen consistently; it fails in general, just as the exponential group law does. The determinant identity gives
+$$
+\operatorname{tr}\log X=\log\det X \pmod{2\pi i}.
+$$</p>
+<h2 id="the-branches-of-the-logarithm">The Branches of the Logarithm</h2>
+<p><strong>Theorem.</strong> Let $X$ be diagonalisable with distinct eigenvalues, $X=C\operatorname{diag}(\lambda_1,\lambda_2)C^{-1}$ with $\lambda_1\neq\lambda_2$. Then the logarithms of $X$ are exactly
+$$
+Y=C\operatorname{diag}(\mu_1,\mu_2)C^{-1},\qquad e^{\mu_1}=\lambda_1,\quad e^{\mu_2}=\lambda_2 .
+$$</p>
+<p><em>Proof.</em> If $\exp Y=X$ then $Y$ commutes with $\exp Y=X$, so $Y$ lies in the commutant $C(X)$, which for distinct eigenvalues is the diagonal algebra in the basis $C$ (<em>$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser</em>). Hence $Y=C\operatorname{diag}(\mu_1,\mu_2)C^{-1}$, and exponentiating gives $e^{\mu_i}=\lambda_i$. Conversely, any such $Y$ exponentiates to $X$.</p>
+<p><strong>The branches.</strong> Each equation $e^{\mu}=\lambda$ with $\lambda\neq0$ has the solutions
+$$
+\mu=\log|\lambda|+i\arg\lambda+2\pi ik,\qquad k\in\mathbb{Z},
+$$
+where $\arg\lambda$ is one fixed argument. The logarithm of a matrix with distinct eigenvalues therefore depends on two integers, one per eigenvalue, and the set of logarithms is a $\mathbb{Z}^2$-family. The two integers are the two branch choices of the scalar logarithm, read on the two eigenvalues.</p>
+<p><strong>Degenerate eigenvalues.</strong> If $X=\lambda\mathrm I_2+N$ with $N\neq0$ and $N^2=0$, then a logarithm must commute with $X$, hence has the form $Y=a\mathrm I_2+bN$, and
+$$
+\exp Y=e^a(\mathrm I_2+bN)=\lambda\mathrm I_2+N
+$$
+forces $e^a=\lambda$ and $b=1/\lambda$. The logarithm is
+$$
+Y=\Bigl(\log\lambda+2\pi ik\Bigr)\mathrm I_2+\frac{N}{\lambda},
+$$
+a $\mathbb{Z}$-family: the nilpotent part is fixed, and only the scalar shifts.</p>
+<p><strong>The scalar case.</strong> For $X=\lambda\mathrm I_2$ every matrix commutes with $X$, and the logarithms are exactly the diagonalisable matrices whose eigenvalues lie in the log-set of $\lambda$. The set is the translate
+$$
+\log\lambda\,\mathrm I_2+\ker\exp,
+$$
+because $\log\lambda\,\mathrm I_2$ is a logarithm and the kernel is the set of diagonalisable matrices with eigenvalues in $2\pi i\mathbb{Z}$. Besides the scalar logs $\log\lambda+2\pi ik$, the family contains the translates by the non-scalar kernel elements. In the eigenbasis of such an element,
+$$
+K=\operatorname{diag}(2\pi im,2\pi i\ell),\qquad m\neq\ell,
+$$
+and writing $K=\pi i(m+\ell)\mathrm I_2+V$ gives a traceless $V$ with
+$$
+V^2=-\pi^2(m-\ell)^2\mathrm I_2 .
+$$
+This is the matrix form of the vector logarithms of <em>Biquaternion Elementary Functions</em>, §<em>The Coordinates of a Logarithm</em>. The scalar case has the largest logarithm set.</p>
+<p>The three cases are collected in one table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type of $X$</th>
+<th>Eigenvalues</th>
+<th>Logarithms</th>
+<th>Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>diagonalisable, distinct eigenvalues</td>
+<td>$\lambda_1\neq\lambda_2$</td>
+<td>$C\operatorname{diag}(\mu_1,\mu_2)C^{-1}$, $e^{\mu_i}=\lambda_i$</td>
+<td>$\mathbb{Z}^2$</td>
+</tr>
+<tr>
+<td>non-scalar, repeated eigenvalue</td>
+<td>$\lambda$ double, $N\neq0$</td>
+<td>$(\log\lambda+2\pi ik)\mathrm I_2+N/\lambda$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>scalar</td>
+<td>$\lambda$ double</td>
+<td>diagonalisable $Y$ with spectrum in the log-set</td>
+<td>$\mathbb{Z}^2$ modulo conjugacy</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-principal-logarithm">The Principal Logarithm</h2>
+<p><strong>The principal branch.</strong> Let $\operatorname{Log}$ be the branch of the complex logarithm with imaginary part in $(-\pi,\pi)$, defined on $\mathbb{C}\setminus(-\infty,0]$. The <strong>principal logarithm</strong> of a matrix is the logarithm whose eigenvalues are the principal logarithms of the eigenvalues of $X$. It is defined when no eigenvalue of $X$ lies on the closed negative real axis, that is, on the <strong>principal domain</strong>
+$$
+\Omega=\bigl\{X\in GL_2(\mathbb{C}):\ \operatorname{spec}X\cap(-\infty,0]=\varnothing\bigr\}.
+$$</p>
+<p><strong>The series.</strong> Near the identity the principal logarithm is
+$$
+\operatorname{Log}(\mathrm I_2+A)=\sum_{m=1}^{\infty}\frac{(-1)^{m+1}}{m}A^m,
+$$
+convergent for $\lVert A\rVert<1$ in any submultiplicative norm. On the principal domain it is the holomorphic functional calculus of the scalar branch.</p>
+<p><strong>The two compositions.</strong> On the principal domain,
+$$
+\exp\operatorname{Log}X=X,
+$$
+and on the strip $\{Y:|\operatorname{Im}\mu|<\pi \text{ for every eigenvalue }\mu\text{ of }Y\}$,
+$$
+\operatorname{Log}\exp Y=Y .
+$$</p>
+<p><strong>The cut is not removable.</strong> For $X=-\mathrm I_2$ the eigenvalues lie on the cut and there is no principal logarithm; the logarithms are the diagonalisable matrices whose eigenvalues lie in $(2\mathbb{Z}+1)\pi i$, and none of those eigenvalues has imaginary part in $(-\pi,\pi)$. The example shows that the principal domain is a genuine restriction and not a convention.</p>
+<h2 id="the-derivative-and-the-local-inverse">The Derivative and the Local Inverse</h2>
+<p><strong>Proposition.</strong> The principal logarithm is holomorphic on $\Omega$, and its differential at the identity is the identity:
+$$
+\frac{d}{dt}\operatorname{Log}(\mathrm I_2+tA)\Big|_{t=0}=A .
+$$</p>
+<p><em>Proof.</em> The series gives $\operatorname{Log}(\mathrm I_2+tA)=tA+O(t^2)$.</p>
+<p><strong>Corollary.</strong> The exponential and the principal logarithm are inverse biholomorphisms between a neighbourhood of $0$ and a neighbourhood of $\mathrm I_2$. The exponential is therefore a local chart of $GL_2(\mathbb{C})$ at the identity, and the pair is the local form of the Lie correspondence of <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
+<p><strong>The derivative in general.</strong> Differentiating $\exp Y=X$ along a path gives
+$$
+\dot X=\int_0^1 e^{sY}\dot Y e^{(1-s)Y}\,ds,
+$$
+the matrix form of the fact that the derivative of the exponential is the average of the two adjoint actions.</p>
+<p><strong>The derivative of the logarithm.</strong> Inverting this relation gives, for $X$ with distinct eigenvalues $\lambda_\pm$ and eigenprojections $\Pi_\pm$,
+$$
+d\operatorname{Log}_X(H)
+=\frac{\Pi_+H\Pi_+}{\lambda_+}+\frac{\Pi_-H\Pi_-}{\lambda_-}
++\frac{\log\lambda_+-\log\lambda_-}{\lambda_+-\lambda_-}
+\bigl(\Pi_+H\Pi_-+\Pi_-H\Pi_+\bigr),
+$$
+the matrix form of the derivative computed in <em>Biquaternion Elementary Functions</em>, §<em>The Derivative</em>. When $[H,X]=0$ the cross terms vanish and $d\operatorname{Log}_X(H)=X^{-1}H$; in general the derivative is not a multiplication by $X^{-1}$ on either side.</p>
+<h2 id="from-the-logarithm-to-the-square-root">From the Logarithm to the Square Root</h2>
+<p><strong>Half a logarithm.</strong> If $Y$ is a logarithm of $X$, then $S=\exp(Y/2)$ satisfies $S^2=X$, and $S$ commutes with $X$ because $Y$ does. Conversely, if $S$ is a square root of an invertible $X$, then $S$ is invertible, and any logarithm $T$ of $S$ gives the logarithm $2T$ of $X$. Hence every square root of an invertible matrix is the exponential of half a logarithm. The two signs are the shift
+$$
+\exp\!\left(\frac{Y+2\pi i\,\mathrm I_2}{2}\right)=-S .
+$$</p>
+<p><strong>The principal choice.</strong> If the spectrum of $X$ avoids the negative real axis, the principal logarithm gives the principal square root
+$$
+X^{1/2}=\exp\!\left(\tfrac12\operatorname{Log}X\right),
+$$
+the one whose eigenvalues lie in the right half-plane. The next sections solve the equation in the commutant, give the closed form on each spectral type and collect the classification.</p>
+<p><strong>The singular case.</strong> A singular matrix may have a square root without having a logarithm, because a logarithm forces invertibility. The zero matrix has the nilpotent cone of square roots and no logarithm at all, and the nilpotent $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ has neither. The square-root equation is therefore the wider one.</p>
+<h2 id="the-square-root-equation">The Square-Root Equation</h2>
+<p><strong>Proposition.</strong> If $Y^2=X$ then $Y$ commutes with $X$.</p>
+<p><em>Proof.</em> $YX=Y^3=XY$.</p>
+<p><strong>Consequence.</strong> Every square root of $X$ lies in the commutant $C(X)$ of <em>$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser</em>, and the commutant has a normal form according to the spectral type of $X$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type of $X$</th>
+<th>$C(X)$</th>
+<th>Root ansatz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar $\lambda\mathrm I_2$</td>
+<td>$M_2(\mathbb{C})$</td>
+<td>any $Y$ with $Y^2=\lambda\mathrm I_2$</td>
+</tr>
+<tr>
+<td>distinct eigenvalues</td>
+<td>diagonal in the eigenbasis</td>
+<td>$Y=C\operatorname{diag}(\mu_+,\mu_-)C^{-1}$</td>
+</tr>
+<tr>
+<td>non-scalar, repeated $\lambda$</td>
+<td>$\{a\mathrm I_2+bN\}$</td>
+<td>$Y=a\mathrm I_2+bN$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The problem therefore reduces to one scalar equation per free parameter, and the three rows are solved separately.</p>
+<h2 id="the-spectral-cases">The Spectral Cases</h2>
+<h3 id="distinct-eigenvalues">Distinct Eigenvalues</h3>
+<p><strong>Theorem.</strong> Let $X=C\operatorname{diag}(\lambda_+,\lambda_-)C^{-1}$ with $\lambda_+\neq\lambda_-$. The square roots of $X$ are exactly
+$$
+Y=C\operatorname{diag}(\mu_+,\mu_-)C^{-1},\qquad \mu_+^2=\lambda_+,\quad \mu_-^2=\lambda_- .
+$$
+There are four roots when $\lambda_+\lambda_-\neq0$, and two roots when one eigenvalue is zero.</p>
+<p><em>Proof.</em> By the reduction $Y$ commutes with $X$, hence is diagonal in the eigenbasis, and squaring is entrywise. A nonzero complex number has two square roots and $0$ has one.</p>
+<p><strong>The count.</strong> The generic $2\times2$ matrix has distinct nonzero eigenvalues and therefore four square roots, the four sign choices of the two diagonal entries. When one eigenvalue vanishes, the corresponding sign choice collapses and two roots remain. The vanishing of an eigenvalue is the condition $\det X=0$ with $X\neq0$ and $\operatorname{tr}X\neq0$.</p>
+<h3 id="repeated-eigenvalue">Repeated Eigenvalue</h3>
+<p><strong>Theorem.</strong> Let $X=\lambda\mathrm I_2+N$ with $N\neq0$ and $N^2=0$.</p>
+<p>If $\lambda\neq0$, the square roots are the two matrices
+$$
+Y=\pm\left(\sqrt{\lambda}\,\mathrm I_2+\frac{N}{2\sqrt{\lambda}}\right).
+$$
+If $\lambda=0$, there is no square root.</p>
+<p><em>Proof.</em> By the reduction $Y=a\mathrm I_2+bN$, and
+$$
+Y^2=a^2\mathrm I_2+2abN .
+$$
+For $\lambda\neq0$ the conditions are $a^2=\lambda$ and $2ab=1$, which give the two roots. For $\lambda=0$ they are $a^2=0$ and $2ab=1$, which are incompatible.</p>
+<p><strong>The nilpotent case.</strong> A nonzero nilpotent matrix has no square root, and the failure is algebraic: a square root would have to be a nilpotent of order two, and every $2\times2$ nilpotent already squares to zero.</p>
+<h3 id="scalar-matrices">Scalar Matrices</h3>
+<p><strong>Theorem.</strong> Let $X=\lambda\mathrm I_2$.</p>
+<p>If $\lambda\neq0$, the square roots are the two scalars $\pm\sqrt{\lambda}\,\mathrm I_2$ together with the complex surface
+$$
+\mathcal S_\lambda=\{Y:\operatorname{tr}Y=0,\ Y^2=\lambda\mathrm I_2\},
+$$
+which is the conjugacy class of $\operatorname{diag}(\sqrt{\lambda},-\sqrt{\lambda})$, of complex dimension two.</p>
+<p>If $\lambda=0$, the square roots are the nilpotent cone
+$$
+\mathcal N=\{Y:Y^2=0\},
+$$
+of complex dimension two.</p>
+<p><em>Proof.</em> For $\lambda\neq0$ a root satisfies the polynomial $t^2-\lambda$ with distinct roots, hence is diagonalisable with eigenvalues $\pm\sqrt{\lambda}$. The scalar roots are the two constant choices, and the mixed choices form the conjugacy class of $\operatorname{diag}(\sqrt{\lambda},-\sqrt{\lambda})$. For $\lambda=0$ the equation is $Y^2=0$, which is the definition of the nilpotent cone.</p>
+<p><strong>The dimension.</strong> Each surface has complex dimension two, hence four real parameters, and it matches the four-parameter family of pure roots of <em>Square Roots of a General Element in the Biquaternion Algebra</em>, §<em>The Roots of a Complex Scalar</em>. The identity $\mathcal S_\lambda=\{\operatorname{tr}Y=0,\ \det Y=-\lambda\}$ exhibits it as the intersection of a hyperplane and a quadric.</p>
+<p><strong>The involution.</strong> Both surfaces are stable under $Y\mapsto-Y$, which is the sign symmetry of the root set.</p>
+<h2 id="the-principal-square-root-in-closed-form">The Principal Square Root in Closed Form</h2>
+<p><strong>The formula.</strong> For a matrix $X$ whose spectrum avoids the negative real axis and is not $\{0\}$,
+$$
+X^{1/2}=\frac{X+\sqrt{\det X}\,\mathrm I_2}
+{\sqrt{\operatorname{Tr}X+2\sqrt{\det X}}},
+$$
+where the eigenvalue square roots are principal and $\sqrt{\det X}=\sqrt{\lambda_+}\sqrt{\lambda_-}$ is their product. The denominator is nonzero unless both eigenvalues vanish, and the formula is the Cayley–Hamilton reduction of the scalar square root to degree one.</p>
+<p><strong>Why degree one.</strong> By Cayley–Hamilton, $X^2-(\operatorname{Tr}X)X+(\det X)\mathrm I_2=0$, so the algebra generated by $X$ is spanned by $\mathrm I_2$ and $X$. Every function of $X$ is therefore a linear combination of the two, and the coefficients are fixed by the values on the two eigenvalues. The closed form is the matrix form of the fact that a square root of $\tilde X$ lies in $\mathbb{C}[\tilde X]$.</p>
+<p><strong>The check.</strong> For $X=\lambda\mathrm I_2$ the formula gives $\sqrt{\lambda}\,\mathrm I_2$. For a Jordan block $X=\lambda\mathrm I_2+N$ with $\lambda\neq0$ it gives $\sqrt{\lambda}\,\mathrm I_2+N/(2\sqrt{\lambda})$, which is the root of the repeated-eigenvalue theorem. For a singular matrix with one nonzero eigenvalue $\lambda$ it gives $X/\sqrt{\lambda}$, the root with eigenvalues $\sqrt{\lambda}$ and $0$.</p>
+<h2 id="the-classification">The Classification</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Condition on $X$</th>
+<th>Number of roots</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>distinct eigenvalues, both nonzero</td>
+<td>four</td>
+</tr>
+<tr>
+<td>distinct eigenvalues, one zero</td>
+<td>two</td>
+</tr>
+<tr>
+<td>non-scalar, repeated eigenvalue $\lambda\neq0$</td>
+<td>two</td>
+</tr>
+<tr>
+<td>nonzero nilpotent, repeated eigenvalue $0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>scalar $\lambda\mathrm I_2$, $\lambda\neq0$</td>
+<td>two points and a complex surface</td>
+</tr>
+<tr>
+<td>zero matrix</td>
+<td>the nilpotent cone</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The dictionary with the algebra.</strong> The eigenvalues are $Q_t\pm iB$, so $\operatorname{tr}X=2Q_t$ and $\det X=Q_t^2+B^2=n$. The rows translate as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra condition</th>
+<th>Matrix condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec Q\neq0$, $(\vec Q,\vec Q)\neq0$, $n\neq0$</td>
+<td>distinct eigenvalues, both nonzero</td>
+</tr>
+<tr>
+<td>$\vec Q\neq0$, $(\vec Q,\vec Q)\neq0$, $n=0$</td>
+<td>distinct eigenvalues, one zero</td>
+</tr>
+<tr>
+<td>$\vec Q\neq0$, $(\vec Q,\vec Q)=0$, $Q_t\neq0$</td>
+<td>non-scalar, repeated $\lambda=Q_t\neq0$</td>
+</tr>
+<tr>
+<td>$\vec Q\neq0$, $(\vec Q,\vec Q)=0$, $Q_t=0$</td>
+<td>nonzero nilpotent</td>
+</tr>
+<tr>
+<td>$\vec Q=0$</td>
+<td>scalar: two points and a surface for $\lambda\neq0$, the nilpotent cone for $\lambda=0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The correspondence is exact: the four non-scalar rows of the algebra are the four non-scalar Jordan types of the matrix, and the scalar row splits according to whether $\lambda$ vanishes.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>An exponential.</strong> For $\tilde Q=2e_t+\vec e_x$ the closed form gives $B=1$ and
+$$
+\exp\mathsf M_2(\tilde Q)=e^2\bigl(\cos 1\,\mathrm I_2+\sin 1\,\mathsf M_2(\vec e_x)\bigr),
+$$
+with eigenvalues $e^{2\pm i}$ and determinant $e^4$.</p>
+<p><strong>A diagonal matrix.</strong> For $X=\operatorname{diag}(4,9)$ the roots are
+$$
+\operatorname{diag}(\pm2,\pm3),
+$$
+four matrices, one for each sign choice.</p>
+<p><strong>A Jordan block.</strong> For $X=\begin{pmatrix}1&1\\0&1\end{pmatrix}=\mathrm I_2+N$ the roots are
+$$
+\pm\left(\mathrm I_2+\frac{N}{2}\right)=\pm\begin{pmatrix}1&\tfrac12\\0&1\end{pmatrix},
+$$
+two matrices.</p>
+<p><strong>A nilpotent.</strong> For $X=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ there is no root, by the repeated-eigenvalue theorem with $\lambda=0$.</p>
+<p><strong>The identity.</strong> For $X=\mathrm I_2$ the roots are $\pm\mathrm I_2$ together with the traceless involutions
+$$
+\mathcal S_1=\{Y:\operatorname{tr}Y=0,\ Y^2=\mathrm I_2\},
+$$
+which contains the three Pauli matrices and every conjugate of $\operatorname{diag}(1,-1)$.</p>
+<p><strong>The zero matrix.</strong> For $X=0$ the roots are the nilpotents, the cone $\{Y:Y^2=0\}$, which contains $0$ and the two families of <em>Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The functional calculus applies a holomorphic function to a matrix by the Cauchy integral, and the result is read on the spectrum: the values on the eigenvalues, and the first derivative at a repeated eigenvalue.</p>
+<p>The exponential is the entire case. Its determinant is $\exp(\operatorname{tr}X)$; the trace-free matrices therefore exponentiate into $SL_2(\mathbb{C})$, and every invertible matrix is an exponential. The group law holds for commuting factors and fails otherwise, the correction being the Baker–Campbell–Hausdorff series. The closed form is $e^{Q_t}(\cos B\,\mathrm I_2+(\sin B/B)\mathsf M_2(\vec Q))$, with the nilpotent limit $\mathrm I_2+\mathsf M_2(\vec Q)$ at $B=0$. The one-parameter subgroups are the exponential lines $t\mapsto\exp(tX)$; every one-parameter subgroup is of this form, the generator being unique for a fixed parametrisation, and the subgroup depends only on the real line $\mathbb{R}X$. The kernel consists of the diagonalisable matrices with eigenvalues in $2\pi i\mathbb{Z}$, a union of conjugacy classes that is not a subgroup and contains zero divisors.</p>
+<p>A matrix has a logarithm exactly when it is invertible. Its logarithms form a $\mathbb{Z}^2$-family in the distinct case, a $\mathbb{Z}$-family at a non-scalar repeated eigenvalue, and the translates of a scalar logarithm by the kernel in the scalar case. The principal logarithm is defined when no eigenvalue lies on the closed negative real axis, and it is the local inverse of the exponential at the identity.</p>
+<p>A square root commutes with its matrix, so the square-root equation is solved in the commutant. A matrix with distinct eigenvalues has four roots when both eigenvalues are nonzero and two when one is zero; a non-scalar Jordan block with nonzero eigenvalue has two roots; a nonzero nilpotent has none; a scalar has two scalar roots and a surface, or the nilpotent cone at zero. Where both exist, the two problems meet: every square root of an invertible matrix is the exponential of half a logarithm, and the principal root is $\exp(\tfrac12\operatorname{Log}X)$. The singular matrices keep square roots without logarithms.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$f(X)=\frac{1}{2\pi i}\oint f(z)(z\mathrm I_2-X)^{-1}dz$</td>
+<td>the functional calculus</td>
+</tr>
+<tr>
+<td>$\exp X=\sum_m X^m/m!$</td>
+<td>the matrix exponential</td>
+</tr>
+<tr>
+<td>$X=\mathsf M_2(\tilde Q)$</td>
+<td>the matrix of a biquaternion</td>
+</tr>
+<tr>
+<td>$B^2=Q_x^2+Q_y^2+Q_z^2$</td>
+<td>the complex square of the vector part</td>
+</tr>
+<tr>
+<td>$\det(\exp X)=\exp(\operatorname{tr}X)$</td>
+<td>the determinant identity</td>
+</tr>
+<tr>
+<td>$\varphi_X(t)=\exp(tX)$</td>
+<td>the one-parameter subgroup with generator $X$</td>
+</tr>
+<tr>
+<td>$\ker\exp$</td>
+<td>diagonalisable matrices with eigenvalues in $2\pi i\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\log X$</td>
+<td>any solution of $\exp Y=X$</td>
+</tr>
+<tr>
+<td>$\operatorname{Log}X$</td>
+<td>the principal logarithm, eigenvalues with imaginary part in $(-\pi,\pi)$</td>
+</tr>
+<tr>
+<td>$\Omega$</td>
+<td>the principal domain, no eigenvalue in $(-\infty,0]$</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the eigenvalues of $X$</td>
+</tr>
+<tr>
+<td>$C(X)$</td>
+<td>the commutant of $X$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the nilpotent part of a Jordan block, $N^2=0$</td>
+</tr>
+<tr>
+<td>$Y^2=X$</td>
+<td>the square-root equation</td>
+</tr>
+<tr>
+<td>$\mathcal S_\lambda$</td>
+<td>the surface $\{\operatorname{tr}Y=0,\ Y^2=\lambda\mathrm I_2\}$</td>
+</tr>
+<tr>
+<td>$\mathcal N$</td>
+<td>the nilpotent cone $\{Y:Y^2=0\}$</td>
+</tr>
+<tr>
+<td>$n=Q_t^2+B^2=\det X$</td>
+<td>the conjugate scalar</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}^2$, $\mathbb{Z}$</td>
+<td>the branch families of the three spectral types</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="holomorphic-functional-calculus.html">Holomorphic Functional Calculus</a>, for the general calculus and its convergence</li>
+<li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the biquaternion closed form, the logarithm and the branch families</li>
+<li><a href="biquaternion-lie-group-and-exponential-structure.html">Biquaternion Lie Group and Exponential Structure</a>, for the one-parameter subgroups and the Lie correspondence</li>
+<li><a href="m4c-representation-the-functional-calculus.html">$M_4(\mathbb{C})_L$ Representation : The Functional Calculus</a>, for the $4\times4$ version</li>
+<li><a href="m2c-representation-the-matrix-product-and-the-algebra-structure.html">$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</a>, for the model</li>
+<li><a href="m2c-representation-the-centraliser-and-the-double-centraliser.html">$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser</a>, for the commutant used in both reductions</li>
+<li><a href="m2c-representation-the-polar-decomposition-of-a-matrix.html">$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</a>, for the polar factors</li>
+<li><a href="square-roots-of-a-general-element-in-the-biquaternion-algebra.html">Square Roots of a General Element in the Biquaternion Algebra</a>, for the algebra classification and its proofs</li>
+<li><a href="square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a>, for the roots of $+1$</li>
+<li><a href="square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html">Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</a>, for the roots of $0$</li>
+<li><a href="m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html">$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</a>, for the eigenbasis</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2nd ed. 2015), for the matrix exponential, the logarithm and the one-parameter subgroups</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

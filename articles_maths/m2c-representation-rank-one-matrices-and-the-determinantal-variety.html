@@ -71,9 +71,9 @@
         <h1 id="math0-representation-rank-one-matrices-and-the-determinantal-variety"><strong>$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The zero divisors of the biquaternion algebra are the nonzero elements of vanishing quaternionic norm. In the matrix model they are the nonzero singular matrices, and a nonzero singular two-by-two matrix has rank one. Every one of them is an outer product of two vectors, and the two vectors carry the two pieces of data the algebra sees: a direction and a covector.</p>
-<p>This article develops the factorisation, the two strata of the determinantal variety, the annihilators and the geometry of the cone. It is the matrix form of <em>The N-Degenerate Sector</em>, §<em>The Stratification of the Cone</em>, and of <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Peirce Coordinates and the Matrix Model</em>.</p>
+<p>This article develops the factorisation, the two strata of the determinantal variety, the annihilators and the geometry of the cone. It is the matrix form of <em>The N-Degenerate Sector</em>, §<em>The Stratification of the Cone</em>, and of <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>, §<em>The Peirce Coordinates and the Matrix Model</em>.</p>
 <p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The norm is $N=Q_t^2+B^2=\det\mathsf{M}_2(\tilde Q)$. A vector of $\mathbb{C}^2$ is a column $u$, a covector is a row $v^{\mathsf T}$, and $uv^{\mathsf T}$ is the matrix of entries $(uv^{\mathsf T})_{ij}=u_iv_j$. The standard idempotents are $\tilde\Pi_\pm$ and the standard nilpotents are $\vec\Upsilon_x,\vec\Upsilon_y$.</p>
-<p><strong>Boundaries.</strong> The null cone and its stratification are <em>The N-Degenerate Sector</em>; the nilpotents are <em>Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</em>; the rank-one elements and the Peirce corners are <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>; the singular matrices as a determinantal variety are also treated in <em>The Determinant and Alternating Forms</em>.</p>
+<p><strong>Boundaries.</strong> The null cone and its stratification are <em>The N-Degenerate Sector</em>; the nilpotents are <em>Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</em>; the rank-one elements and the Peirce corners are <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>; the singular matrices as a determinantal variety are also treated in <em>The Determinant and Alternating Forms</em>.</p>
 <h2 id="the-factorisation">The Factorisation</h2>
 <p><strong>Theorem.</strong> A nonzero matrix $M\in M_2(\mathbb{C})$ has rank one exactly when there are nonzero vectors $u,v\in\mathbb{C}^2$ with</p>
 <p>$$
@@ -96,6 +96,20 @@ $$</p>
 N=0\iff\det M=0\iff\operatorname{rank}M=1.
 $$</p>
 <p>The zero matrix is the only singular matrix of rank zero; it is the apex of the cone and the image of the zero biquaternion. Every other zero divisor is rank one.</p>
+<h2 id="the-coefficients-of-the-factorisation">The Coefficients of the Factorisation</h2>
+<p><strong>The four coefficients.</strong> For $M=uv^{\mathsf T}$ with $u=(u_1,u_2)^{\mathsf T}$ and $v=(v_1,v_2)^{\mathsf T}$,</p>
+<p>$$
+Q_t=\tfrac12 v^{\mathsf T}u,\qquad
+Q_k=\tfrac{i}{2}\,v^{\mathsf T}\sigma_k u\quad(k=x,y,z),
+$$</p>
+<p>and in entries</p>
+<p>$$
+Q_x=\tfrac{i}{2}(u_1v_2+u_2v_1),\qquad
+Q_y=\tfrac12(u_2v_1-u_1v_2),\qquad
+Q_z=\tfrac{i}{2}(u_1v_1-u_2v_2).
+$$</p>
+<p>The scalar part is half the contraction of the two vectors, and the three vector coefficients are the three contractions with the Pauli matrices. The factor $i$ is the same factor that makes $\mathsf M_2(\vec e_k)=-i\sigma_k$: the vector coefficients are read on the anti-Hermitian basis matrices $-i\sigma_k$, not on the Hermitian Pauli matrices.</p>
+<p><strong>The scaling.</strong> The reciprocal scaling $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$ leaves $uv^{\mathsf T}$ fixed and leaves every $Q_\mu$ fixed, because each formula is bilinear in the pair. The coefficients are therefore functions of the matrix, not of the chosen factorisation.</p>
 <h2 id="the-two-strata">The Two Strata</h2>
 <p><strong>The trace splits the cone into two pieces.</strong></p>
 <div class="table-scroll"><table>
@@ -223,7 +237,7 @@ $$</p>
 <ul>
 <li><a href="the-n-degenerate-sector.html">The N-Degenerate Sector</a>, for the null cone and its strata</li>
 <li><a href="square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html">Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</a>, for the nilpotent cone</li>
-<li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the rank-one elements and the corners</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the rank-one elements and the corners</li>
 <li><a href="the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>, for the link and its topology</li>
 <li><a href="m2c-representation-the-peirce-coordinates-and-the-matrix-units.html">$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units</a>, for the matrix units</li>
 <li><a href="m2c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the determinant</li>

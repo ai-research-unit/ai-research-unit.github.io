@@ -71,6 +71,7 @@
         <h1 id="the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion"><strong>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists, as a basis attached to the element, exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em> proves that such a basis exists. This article constructs it, proves that the normalised Peirce representative is unique, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and chirality in it.</p>
+<p><strong>Place among the Peirce decompositions.</strong> This article is the regular particular case of <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is the spectral pair: it exists exactly when $B^2\neq0$, it commutes with $\tilde Q$, and the Peirce matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$. Each couple is therefore a pair of eigenvectors, and the Peirce basis is the eigenbasis. The general theory leaves a reciprocal $\mathbb{C}^\times$ of mixed bases; the normalisation below fixes it.</p>
 <p>The construction has three steps. The root $\vec\Xi=-i\vec Q/B$ is a pure square root of $e_t$ and carries the two spectral idempotents $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$. The two mixed Peirce corners are complex lines, and a generator $\vec\Upsilon_+$ of one of them determines a generator $\vec\Upsilon_-$ of the other by the product condition $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. The pair is then determined up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$. A normalisation fixes $\mu$, and with the normalisation fixed the quadruple</p>
 <p>$$
 \mathcal{B}(\tilde Q)=(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-)
@@ -82,7 +83,7 @@ $$</p>
 <p>$$
 B^2=Q_x^2+Q_y^2+Q_z^2.
 $$</p>
-<p>The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. The quaternionic norm is $N=Q_t^2+B^2$. A general element is written $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},t}e_t+\vec Q_{\mathrm{sp}}$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$ and natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. The trace is $\operatorname{Tr}(\tilde Q_{\mathrm{sp}})=2Q_{\mathrm{sp},t}$, and $\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}=\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}$ is the scalar of $\tilde Q_{\mathrm{sp}}^{\natural}\tilde Q_{\mathrm{sp}}$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_{\mathrm{sp}}}$ and $R_{\tilde Q_{\mathrm{sp}}}$ denote left and right multiplication by $\tilde Q_{\mathrm{sp}}$.</p>
+<p>The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. The quaternionic norm is $N=Q_t^2+B^2$. A general element is written $\tilde Q_2=Q_{2,t}e_t+\vec Q_2$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$ and natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. The trace is $\operatorname{Tr}(\tilde Q_2)=2Q_{2,t}$, and $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ is the scalar of $\tilde Q_2^{\natural}\tilde Q_2$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ denote left and right multiplication by $\tilde Q_2$.</p>
 <h2 id="the-spectral-condition-and-the-root">The Spectral Condition and the Root</h2>
 <p><strong>Spectral regularity is the single hypothesis of the construction. It produces the root and the two idempotents, and nothing else is needed.</strong></p>
 <h3 id="the-two-spectral-regular-sectors">The Two Spectral-Regular Sectors</h3>
@@ -176,13 +177,13 @@ $$</p>
 <h3 id="the-peirce-corners">The Peirce Corners</h3>
 <p><strong>Definition (corners).</strong> For $s,t\in\{+,-\}$ put</p>
 <p>$$
-\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t=\{\tilde Q_{\mathrm{sp}}:\ \tilde\Pi_s\tilde Q_{\mathrm{sp}}=\tilde Q_{\mathrm{sp}},\ \tilde Q_{\mathrm{sp}}\tilde\Pi_t=\tilde Q_{\mathrm{sp}}\}.
+\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t=\{\tilde Q_2:\ \tilde\Pi_s\tilde Q_2=\tilde Q_2,\ \tilde Q_2\tilde\Pi_t=\tilde Q_2\}.
 $$</p>
 <p>The corner rule is</p>
 <p>$$
 \mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}.
 $$</p>
-<p>Each corner is a complex line (<em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>), and the direct sum is the algebra:</p>
+<p>Each corner is a complex line (<em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>), and the direct sum is the algebra:</p>
 <p>$$
 \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--}.
 $$</p>
@@ -413,17 +414,17 @@ the quadruple $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ is an eigenbasis of $L_{\tilde
 \vec\Upsilon_+\longmapsto E_{21},\qquad
 \tilde\Pi_-\longmapsto E_{22}.
 $$</p>
-<p>Then every element $\tilde Q_{\mathrm{sp}}\in\mathbb{B}$ has the unique expansion</p>
+<p>Then every element $\tilde Q_2\in\mathbb{B}$ has the unique expansion</p>
 <p>$$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
-\qquad Q_{\mathrm{sp},ij}\in\mathbb{C},
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
+\qquad Q_{2,ij}\in\mathbb{C},
 $$</p>
 <p>and is represented by</p>
 <p>$$
-\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=
+\mathsf M_2^{Q}(\tilde Q_2)=
 \begin{pmatrix}
-Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\
-Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}
+Q_{2,11}&Q_{2,12}\\
+Q_{2,21}&Q_{2,22}
 \end{pmatrix}.
 $$</p>
 <p>The assignment is an isomorphism of algebras, and the element $\tilde Q$ itself has the diagonal matrix</p>
@@ -434,15 +435,15 @@ $$</p>
 0&\lambda_-
 \end{pmatrix}.
 $$</p>
-<p>The two columns are the two spinor spaces, and the two rows are the two spectral eigenspaces. The entries are indexed by the corner: $Q_{\mathrm{sp},ij}$ is the coefficient of the basis vector in $\mathbb{B}_{ij}$.</p>
-<p><strong>Proposition (trace and determinant).</strong> For every $\tilde Q_{\mathrm{sp}}\in\mathbb{B}$,</p>
+<p>The two columns are the two spinor spaces, and the two rows are the two spectral eigenspaces. The entries are indexed by the corner: $Q_{2,ij}$ is the coefficient of the basis vector in $\mathbb{B}_{ij}$.</p>
+<p><strong>Proposition (trace and determinant).</strong> For every $\tilde Q_2\in\mathbb{B}$,</p>
 <p>$$
-\operatorname{Tr}\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=Q_{\mathrm{sp},11}+Q_{\mathrm{sp},22}=2Q_{\mathrm{sp},t},\qquad
-\det\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=Q_{\mathrm{sp},11}Q_{\mathrm{sp},22}-Q_{\mathrm{sp},12}Q_{\mathrm{sp},21}=\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}.
+\operatorname{Tr}\mathsf M_2^{Q}(\tilde Q_2)=Q_{2,11}+Q_{2,22}=2Q_{2,t},\qquad
+\det\mathsf M_2^{Q}(\tilde Q_2)=Q_{2,11}Q_{2,22}-Q_{2,12}Q_{2,21}=\langle\tilde Q_2\rangle_{\natural}.
 $$</p>
-<p><em>Proof.</em> The trace is $2Q_{\mathrm{sp},t}$ because the trace is a similarity invariant and $\operatorname{Tr}\tilde Q_{\mathrm{sp}}=2Q_{\mathrm{sp},t}$. The determinant is the quaternionic norm, because the matrix model is an algebra isomorphism and $\det\mathsf M_2(\tilde Q_{\mathrm{sp}})=\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}$.</p>
+<p><em>Proof.</em> The trace is $2Q_{2,t}$ because the trace is a similarity invariant and $\operatorname{Tr}\tilde Q_2=2Q_{2,t}$. The determinant is the quaternionic norm, because the matrix model is an algebra isomorphism and $\det\mathsf M_2(\tilde Q_2)=\langle\tilde Q_2\rangle_{\natural}$.</p>
 <h3 id="the-trace-pairing">The Trace Pairing</h3>
-<p>The trace pairing $\langle\tilde Q_{\mathrm{sp}},\tilde P\rangle=\operatorname{Tr}(\tilde Q_{\mathrm{sp}}\tilde P)$ is non-degenerate on $\mathbb{B}$. In the eigenbasis its Gram matrix is</p>
+<p>The trace pairing $\langle\tilde Q_2,\tilde P\rangle=\operatorname{Tr}(\tilde Q_2\tilde P)$ is non-degenerate on $\mathbb{B}$. In the eigenbasis its Gram matrix is</p>
 <p>$$
 G=
 \begin{pmatrix}
@@ -454,10 +455,10 @@ G=
 $$</p>
 <p>because $\operatorname{Tr}(\tilde\Pi_\pm)=1$, $\operatorname{Tr}(\vec\Upsilon_\pm)=0$ and $\operatorname{Tr}(\vec\Upsilon_+\vec\Upsilon_-)=\operatorname{Tr}(\tilde\Pi_-)=1$. The basis is not orthonormal: the two idempotents have square $1$ in the pairing, the two nilpotents are isotropic, and the two mixed products pair to $1$. The matrix is its own inverse, so the dual basis of $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$: the two nilpotents are exchanged and the two idempotents are self-dual. Consequently</p>
 <p>$$
-Q_{\mathrm{sp},11}=\operatorname{Tr}(\tilde\Pi_+\tilde Q_{\mathrm{sp}}),\qquad
-Q_{\mathrm{sp},12}=\operatorname{Tr}(\vec\Upsilon_+\tilde Q_{\mathrm{sp}}),\qquad
-Q_{\mathrm{sp},21}=\operatorname{Tr}(\vec\Upsilon_-\tilde Q_{\mathrm{sp}}),\qquad
-Q_{\mathrm{sp},22}=\operatorname{Tr}(\tilde\Pi_-\tilde Q_{\mathrm{sp}}).
+Q_{2,11}=\operatorname{Tr}(\tilde\Pi_+\tilde Q_2),\qquad
+Q_{2,12}=\operatorname{Tr}(\vec\Upsilon_+\tilde Q_2),\qquad
+Q_{2,21}=\operatorname{Tr}(\vec\Upsilon_-\tilde Q_2),\qquad
+Q_{2,22}=\operatorname{Tr}(\tilde\Pi_-\tilde Q_2).
 $$</p>
 <h2 id="expansion-of-every-biquaternion">Expansion of Every Biquaternion</h2>
 <p><strong>The eigenbasis is a basis: every biquaternion has one expansion in it. The expansion is not a spectral decomposition of the expanded element; it is its reading in the coordinates of $\tilde Q$.</strong></p>
@@ -466,23 +467,23 @@ $$</p>
 <p>$$
 \mathcal{B}(\tilde Q)=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)
 $$</p>
-<p>is unique, and every $\tilde Q_{\mathrm{sp}}\in\mathbb{B}$ has the unique expansion</p>
+<p>is unique, and every $\tilde Q_2\in\mathbb{B}$ has the unique expansion</p>
 <p>$$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
-\qquad Q_{\mathrm{sp},ij}\in\mathbb{C},
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
+\qquad Q_{2,ij}\in\mathbb{C},
 $$</p>
 <p>with the coordinates given by the trace formulas above. The element $\tilde Q$ has the coordinates $(\lambda_+,0,0,\lambda_-)$.</p>
 <p><em>Proof.</em> The four vectors are a basis by the theorem of the previous section, so the expansion exists and is unique. The coordinates of $\tilde Q$ are read from its diagonal left action, or from the Lagrange form.</p>
-<p><strong>Corollary (the coordinate map).</strong> The assignment $\tilde Q_{\mathrm{sp}}\mapsto\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})$ is an isomorphism of complex algebras from $\mathbb{B}$ onto $M_2(\mathbb{C})$. Consequently the coordinates of a product are the product of the coordinates, the coordinates of the inverse are the inverse matrix, and the spectrum of $\tilde Q_{\mathrm{sp}}$ is the spectrum of its coordinate matrix.</p>
-<p>The expansion of a general $\tilde Q_{\mathrm{sp}}$ is not a diagonalisation of $\tilde Q_{\mathrm{sp}}$: it is diagonal in $\mathcal{B}(\tilde Q)$ exactly when $Q_{\mathrm{sp},12}=Q_{\mathrm{sp},21}=0$. The basis is the eigenbasis of $\tilde Q$, not of $\tilde Q_{\mathrm{sp}}$.</p>
+<p><strong>Corollary (the coordinate map).</strong> The assignment $\tilde Q_2\mapsto\mathsf M_2^{Q}(\tilde Q_2)$ is an isomorphism of complex algebras from $\mathbb{B}$ onto $M_2(\mathbb{C})$. Consequently the coordinates of a product are the product of the coordinates, the coordinates of the inverse are the inverse matrix, and the spectrum of $\tilde Q_2$ is the spectrum of its coordinate matrix.</p>
+<p>The expansion of a general $\tilde Q_2$ is not a diagonalisation of $\tilde Q_2$: it is diagonal in $\mathcal{B}(\tilde Q)$ exactly when $Q_{2,12}=Q_{2,21}=0$. The basis is the eigenbasis of $\tilde Q$, not of $\tilde Q_2$.</p>
 <h3 id="the-diagonal-subalgebra">The Diagonal Subalgebra</h3>
-<p><strong>Proposition (what the basis diagonalises).</strong> For $\tilde Q_{\mathrm{sp}}\in\mathbb{B}$ the following are equivalent:</p>
+<p><strong>Proposition (what the basis diagonalises).</strong> For $\tilde Q_2\in\mathbb{B}$ the following are equivalent:</p>
 <ol>
-<li>$\tilde Q_{\mathrm{sp}}$ is diagonal in $\mathcal{B}(\tilde Q)$;</li>
-<li>$\tilde Q_{\mathrm{sp}}\in\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$;</li>
-<li>$\tilde Q_{\mathrm{sp}}\in\operatorname{span}_{\mathbb{C}}\{e_t,\tilde Q\}$.</li>
+<li>$\tilde Q_2$ is diagonal in $\mathcal{B}(\tilde Q)$;</li>
+<li>$\tilde Q_2\in\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$;</li>
+<li>$\tilde Q_2\in\operatorname{span}_{\mathbb{C}}\{e_t,\tilde Q\}$.</li>
 </ol>
-<p><em>Proof.</em> The diagonal elements are $Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},22}\tilde\Pi_-$, which is the second statement. Since $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ and $\vec\Xi=(\tilde Q-Q_te_t)/(iB)$, this is the plane spanned by $e_t$ and $\tilde Q$.</p>
+<p><em>Proof.</em> The diagonal elements are $Q_{2,11}\tilde\Pi_++Q_{2,22}\tilde\Pi_-$, which is the second statement. Since $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ and $\vec\Xi=(\tilde Q-Q_te_t)/(iB)$, this is the plane spanned by $e_t$ and $\tilde Q$.</p>
 <p>Thus the eigenbasis of $\tilde Q$ diagonalises simultaneously the whole pencil $\{a\tilde Q+b e_t\}$, and no other elements. This is the precise sense in which the basis is attached to $\tilde Q$: it is attached to the two-dimensional commutative subalgebra generated by $\tilde Q$.</p>
 <h3 id="a-worked-example">A Worked Example</h3>
 <p>Take</p>
@@ -606,7 +607,7 @@ $$</p>
 <p>$$
 e_b=e+b\vec N,\qquad b\in\mathbb{C},
 $$</p>
-<p>and the Peirce form is invariant: $e_b\vec Nf_b=\vec N$, with $f_b=e_t-e_b$. Equivalently, $e_b$ is the unique non-zero idempotent on the complement line $\mathbb{C}e_b$ to $\mathbb{C}\vec N$ in $\ker L_{\vec N}$; the parameter $b$ is the choice of that complement. The opposite corner $f_b\mathbb{B}e_b$ is a line that moves with $b$, so the Peirce quadruple is not a function of the element. The element has no eigenbasis, because its eigenspace is $\ker L_{\vec N}$, of complex dimension two.</p>
+<p>and the Peirce form is invariant: $e_b\vec Nf_b=\vec N$, with $f_b=e_t-e_b$. Equivalently, $e_b$ is the unique non-zero idempotent on the complement line $\mathbb{C}e_b$ to $\mathbb{C}\vec N$ in $\ker L_{\vec N}$; the parameter $b$ is the choice of that complement. The opposite corner $f_b\mathbb{B}e_b$ is a line that moves with $b$, so the Peirce quadruple is not a function of the element <strong>for the bilinear structure</strong>. The Hermitian form is definite and selects one complement on the cone, hence one quadruple; the construction is in <em>The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion</em>, §<em>The Definite Form</em> and §<em>The Jordan Basis</em>. The element has no eigenbasis, because its eigenspace is $\ker L_{\vec N}$, of complex dimension two.</p>
 <p><strong>The unipotent stratum.</strong> $Q_t\neq0$, $\vec Q\neq0$. Put $\vec\Upsilon=\vec Q/Q_t$. Then $\vec\Upsilon^2=0$ and</p>
 <p>$$
 \tilde Q=Q_tu,\qquad u=e_t+\vec\Upsilon,\qquad (u-e_t)^2=0.
@@ -627,9 +628,10 @@ $$</p>
 <p>$$
 0\subset\mathbb{C}\vec Q\subset\ker R_{\vec Q}\subset\mathbb{B},
 $$</p>
-<p>not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a gauge of two complex parameters.</p>
+<p>not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a Jordan basis; the definite Hermitian form removes both freedoms and selects one quadruple, constructed in <em>The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion</em>.</p>
 <h2 id="spinors-and-chirality">Spinors and Chirality</h2>
 <p><strong>The eigenbasis exhibits the two spinor spaces as the two columns of its matrix model. Each column is a minimal left ideal, each is a complex plane, and each carries both eigenvalues under left multiplication. Chirality is the right index, not the left one.</strong></p>
+<p>The general statement is in <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>, §<em>Spinors and the Two Couples</em>: the four Peirce vectors split into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, and left multiplication acts on each couple by the same Peirce matrix. Here that matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$, so each couple is a pair of eigenvectors.</p>
 <h3 id="the-two-spinor-spaces">The Two Spinor Spaces</h3>
 <p><strong>Definition (spinor space).</strong> A <strong>spinor space</strong> of $\mathbb{B}$ is a minimal non-zero left ideal. The two spinor spaces attached to $\tilde Q$ are</p>
 <p>$$
@@ -651,23 +653,23 @@ $$</p>
 <h3 id="the-left-action-on-a-spinor">The Left Action on a Spinor</h3>
 <p>A spinor of first chirality is</p>
 <p>$$
-\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+,
+\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
 $$</p>
-<p>with coordinates $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$, the first column. Under left multiplication by $\tilde Q$,</p>
+<p>with coordinates $(Q_{2,11},Q_{2,21})$, the first column. Under left multiplication by $\tilde Q$,</p>
 <p>$$
-\tilde Q\xi_+=\lambda_+Q_{\mathrm{sp},11}\tilde\Pi_++\lambda_-Q_{\mathrm{sp},21}\vec\Upsilon_+,
+\tilde Q\xi_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+,
 $$</p>
-<p>so the coordinate pair is sent to $(\lambda_+Q_{\mathrm{sp},11},\lambda_-Q_{\mathrm{sp},21})$. In the basis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$, the left action is</p>
+<p>so the coordinate pair is sent to $(\lambda_+Q_{2,11},\lambda_-Q_{2,21})$. In the basis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$, the left action is</p>
 <p>$$
 L_{\tilde Q}|_{S_+}=\operatorname{diag}(\lambda_+,\lambda_-).
 $$</p>
 <p>A spinor of second chirality is</p>
 <p>$$
-\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-,
+\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
 $$</p>
-<p>with coordinates $(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$, the second column. In the basis $(\vec\Upsilon_-,\tilde\Pi_-)$ of $S_-$,</p>
+<p>with coordinates $(Q_{2,12},Q_{2,22})$, the second column. In the basis $(\vec\Upsilon_-,\tilde\Pi_-)$ of $S_-$,</p>
 <p>$$
-\tilde Q\xi_-=\lambda_+Q_{\mathrm{sp},12}\vec\Upsilon_-+\lambda_-Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q\xi_-=\lambda_+Q_{2,12}\vec\Upsilon_-+\lambda_-Q_{2,22}\tilde\Pi_-,
 \qquad
 L_{\tilde Q}|_{S_-}=\operatorname{diag}(\lambda_+,\lambda_-).
 $$</p>
@@ -712,34 +714,34 @@ $$</p>
 </table></div>
 <p>The rows are the right ideals $\tilde\Pi_s\mathbb{B}$, the eigenspaces of $L_{\tilde Q}$; the columns are the left ideals $S_t$, the eigenspaces of $R_{\tilde Q}$. The two idempotents act on the two sides: left multiplication by $\tilde\Pi_s$ is the projection onto the row labelled $s$, and right multiplication by $\tilde\Pi_t$ is the projection onto the column labelled $t$.</p>
 <h3 id="a-general-element-is-a-pair-of-spinors">A General Element Is a Pair of Spinors</h3>
-<p>Every $\tilde Q_{\mathrm{sp}}\in\mathbb{B}$ splits as</p>
+<p>Every $\tilde Q_2\in\mathbb{B}$ splits as</p>
 <p>$$
-\tilde Q_{\mathrm{sp}}=\tilde Q_{\mathrm{sp}}\tilde\Pi_++\tilde Q_{\mathrm{sp}}\tilde\Pi_-,
+\tilde Q_2=\tilde Q_2\tilde\Pi_++\tilde Q_2\tilde\Pi_-,
 $$</p>
 <p>a spinor of first chirality plus a spinor of second chirality. In the matrix model the two summands are the two columns:</p>
 <p>$$
-\tilde Q_{\mathrm{sp}}\longmapsto
+\tilde Q_2\longmapsto
 \begin{pmatrix}
-Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\
-Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}
+Q_{2,11}&Q_{2,12}\\
+Q_{2,21}&Q_{2,22}
 \end{pmatrix},
 \qquad
-\tilde Q_{\mathrm{sp}}\tilde\Pi_+\longmapsto
+\tilde Q_2\tilde\Pi_+\longmapsto
 \begin{pmatrix}
-Q_{\mathrm{sp},11}&0\\
-Q_{\mathrm{sp},21}&0
+Q_{2,11}&0\\
+Q_{2,21}&0
 \end{pmatrix},
 \qquad
-\tilde Q_{\mathrm{sp}}\tilde\Pi_-\longmapsto
+\tilde Q_2\tilde\Pi_-\longmapsto
 \begin{pmatrix}
-0&Q_{\mathrm{sp},12}\\
-0&Q_{\mathrm{sp},22}
+0&Q_{2,12}\\
+0&Q_{2,22}
 \end{pmatrix}.
 $$</p>
 <p>A general element is therefore not a spinor: it has one spinor component of each chirality. Left multiplication by any $\tilde P\in\mathbb{B}$ acts on both columns by the same matrix $\mathsf M_2^{Q}(\tilde P)$,</p>
 <p>$$
-\tilde P\,\tilde Q_{\mathrm{sp}}\longmapsto
-\mathsf M_2^{Q}(\tilde P)\,\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}}),
+\tilde P\,\tilde Q_2\longmapsto
+\mathsf M_2^{Q}(\tilde P)\,\mathsf M_2^{Q}(\tilde Q_2),
 $$</p>
 <p>so it preserves each chirality. The off-diagonal entries of $\mathsf M_2^{Q}(\tilde P)$ mix the two components inside one column, that is, the two spectral components inside one chirality; they do not mix the two columns.</p>
 <p><strong>Remark (what mixes chirality).</strong> A left multiplication by an element never changes chirality, because $S_\pm$ are left ideals. An operation that changes chirality has to act on the right, or be a two-sided operation. In the matrix picture, right multiplication multiplies the matrix on the right and mixes the two columns. This is the algebraic distinction behind the two kinds of operation: the left action is the action of the algebra on its left modules, and it is chirality-diagonal; a chirality-changing term is not a left multiplication.</p>
@@ -752,7 +754,7 @@ $$</p>
 <h3 id="physical-interpretation">Physical Interpretation</h3>
 <p>In the language of physics, the pair of columns is the algebraic image of a Dirac spinor: one spinor of each chirality. The two eigenvalues $\lambda_\pm$ play the role of the two mass or energy labels. A spinor of definite chirality has both labels: it is a two-component object whose components are its $\lambda_+$ and $\lambda_-$ parts. A gauge transformation is a left multiplication by a unit, so it preserves chirality; a mass term couples the two chiralities and is therefore not a left multiplication by an element. It is a bilinear pairing between $S_+$ and $S_-$, not a term in the left action of the algebra. The general element of $\mathbb{B}$, which has off-diagonal entries, is a pair of spinors, one of each chirality, and its off-diagonal entries mix the two spectral components inside each chirality rather than the two chiralities.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>With $B^2\neq0$, the normalised basis $\mathcal{B}(\tilde Q)=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is unique, and every $\tilde Q_{\mathrm{sp}}\in\mathbb{B}$ has the unique expansion $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$. The two spinor spaces are its two columns.</strong></p>
+<p><strong>With $B^2\neq0$, the normalised basis $\mathcal{B}(\tilde Q)=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is unique, and every $\tilde Q_2\in\mathbb{B}$ has the unique expansion $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$. The two spinor spaces are its two columns.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -799,11 +801,11 @@ $$</p>
 </tr>
 <tr>
 <td>expansion</td>
-<td>$\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$, unique</td>
+<td>$\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$, unique</td>
 </tr>
 <tr>
 <td>coordinates</td>
-<td>algebra isomorphism onto $M_2(\mathbb{C})$, $\det=N$, $\operatorname{tr}=2Q_{\mathrm{sp},t}$</td>
+<td>algebra isomorphism onto $M_2(\mathbb{C})$, $\det=N$, $\operatorname{tr}=2Q_{2,t}$</td>
 </tr>
 <tr>
 <td>diagonal subalgebra</td>
@@ -902,7 +904,7 @@ $$</p>
 <td>the spinor spaces, the two chiralities</td>
 </tr>
 <tr>
-<td>$L_{\tilde Q_{\mathrm{sp}}}$, $R_{\tilde Q_{\mathrm{sp}}}$</td>
+<td>$L_{\tilde Q_2}$, $R_{\tilde Q_2}$</td>
 <td>left and right multiplication by the general element</td>
 </tr>
 <tr>
@@ -910,12 +912,12 @@ $$</p>
 <td>the matrix model attached to the eigenbasis</td>
 </tr>
 <tr>
-<td>$\operatorname{Tr}\tilde Q_{\mathrm{sp}}=2Q_{\mathrm{sp},t}$</td>
+<td>$\operatorname{Tr}\tilde Q_2=2Q_{2,t}$</td>
 <td>the trace</td>
 </tr>
 <tr>
-<td>$\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}=\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}$</td>
-<td>the scalar of $\tilde Q_{\mathrm{sp}}^{\natural}\tilde Q_{\mathrm{sp}}$</td>
+<td>$\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$</td>
+<td>the scalar of $\tilde Q_2^{\natural}\tilde Q_2$</td>
 </tr>
 </tbody>
 </table></div>
@@ -926,10 +928,10 @@ $$</p>
 <li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the sector $\Sigma_{01}$, the scaled idempotents and the same eigenbasis with a zero eigenvalue.</li>
 <li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the scalar line and the Jordan part, where the construction stops.</li>
 <li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the nilpotents and the origin.</li>
-<li><a href="the-spectrally-degenerate-sector.html">The Spectrally Degenerate Sector</a>, for the sector as a whole: the equation, the three strata, the geometry and the failure of the construction.</li>
-<li><a href="the-spectrally-regular-sector-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html">The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations</a>, for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.</li>
+<li><a href="the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html">The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion</a>, for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.</li>
+<li><a href="m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html">The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations</a>, for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.</li>
 <li><a href="worked-examples-of-eigenbasis-of-a-biquaternion.html">Worked Examples of Eigenbasis of a Biquaternion</a>, for computed eigenbases of the standard elements.</li>
-<li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the Peirce decomposition from a root of $+1$.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.</li>
 <li><a href="spinors-as-minimal-left-ideals-with-inner-conjugation.html">Spinors as Minimal Left Ideals with Inner Conjugation</a>, for the identification of the minimal left ideals with the spinor spaces and the chiral halves.</li>
 <li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the comparison of the two cones.</li>
 <li><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.</li>

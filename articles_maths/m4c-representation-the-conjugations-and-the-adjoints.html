@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_4(\mathbb{C})_L$ Representation : The Conjugations and the Adjoints — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-conjugations-and-the-adjoints"><strong>$M_4(\mathbb{C})_L$ Representation : The Conjugations and the Adjoints</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The four involutions of the biquaternion algebra become four matrix operations in the regular model: the transpose, the entrywise conjugation, the conjugate transpose and its negative. The dictionary is simpler than in the $2\times2$ model, because complex conjugation is now entrywise and the antisymmetric dressing disappears; the price is that the adjugate of the $4\times4$ matrix is no longer a linear involution.</p>
+<p>This article proves the four formulas, identifies the fixed spaces and relates the operations to the right regular matrix. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure</em>. The four involutions are
+$$
+\tilde Q^{\natural}=Q_t-\vec Q,\qquad
+\overline{\tilde Q}=\overline{Q_t}+\overline{\vec Q},\qquad
+\tilde Q^{*}=\overline{\tilde Q^{\natural}},\qquad
+\tilde Q^{\flat}=-\tilde Q^{*}.
+$$
+The matrix is $M=\mathsf{M}_4(\tilde Q)$.</p>
+<p><strong>Boundaries.</strong> The fixed spaces are <em>$M_4(\mathbb{C})_L$ Representation : The Six Subspaces as Matrix Conditions</em>; the four forms are <em>$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces</em>; the right regular matrix is <em>$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser</em>, §<em>The Right Regular Image</em>; the $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints</em>.</p>
+<h2 id="the-four-involutions">The Four Involutions</h2>
+<p><strong>Theorem.</strong> For every $\tilde Q$,</p>
+<p>$$
+\mathsf{M}_4(\tilde Q^{\natural})=M^{\mathsf T},\qquad
+\mathsf{M}_4(\overline{\tilde Q})=\overline M,\qquad
+\mathsf{M}_4(\tilde Q^{*})=M^{\dagger},\qquad
+\mathsf{M}_4(\tilde Q^{\flat})=-M^{\dagger}.
+$$</p>
+<p><em>Proof.</em> The first is checked entrywise: transposing the displayed matrix changes the signs of the three vector coefficients, which is quaternion conjugation. The second is immediate because every entry of $M$ is a coefficient of $\tilde Q$ with a sign, so conjugating the entries conjugates the coefficients. The third follows from the first two: $M^{\dagger}=\overline{M^{\mathsf T}}=\mathsf{M}_4(\overline{\tilde Q^{\natural}})=\mathsf{M}_4(\tilde Q^{*})$. The fourth is the definition of $\flat$. $\square$</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Involution</th>
+<th>Algebra definition</th>
+<th>Matrix operation</th>
+<th>Fixed space</th>
+<th>Anti-fixed space</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>${}^{\natural}$</td>
+<td>$Q_t-\vec Q$</td>
+<td>$M^{\mathsf T}$</td>
+<td>centre</td>
+<td>vector subspace</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>$\overline{Q_\mu}$</td>
+<td>$\overline M$</td>
+<td>quaternion subspace</td>
+<td>anti-quaternion subspace</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>$\overline{Q_t}-\overline{\vec Q}$</td>
+<td>$M^{\dagger}$</td>
+<td>$\mathbb{M}_+$</td>
+<td>$\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>${}^{\flat}$</td>
+<td>$-\tilde Q^{*}$</td>
+<td>$-M^{\dagger}$</td>
+<td>$\mathbb{M}_-$</td>
+<td>$\mathbb{M}_+$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is the complete dictionary. Each row is proved by applying the formula and reading the coefficient condition; the details are in the six-subspaces article.</p>
+<p><strong>The relations.</strong> The first three generate a Klein four-group,
+$$
+{}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot},
+\qquad
+\bar{\cdot}={}^{*}\circ{}^{\natural}={}^{\natural}\circ{}^{*},
+\qquad
+{}^{\natural}={}^{*}\circ\bar{\cdot}=\bar{\cdot}\circ{}^{*}.
+$$
+The fourth is the negative of the third, $\flat=-{}^{*}$; it is an involution, but it is not an anti-automorphism: the minus sign gives $\flat(PQ)=-\flat(Q)\flat(P)$, so it is not in the Klein group.</p>
+<h2 id="the-adjugate">The Adjugate</h2>
+<p><strong>Quaternion conjugation is transposition.</strong> The identity
+$$
+\mathsf{M}_4(\tilde Q^{\natural})=M^{\mathsf T}
+$$
+is the cleanest statement of the regular model. The fixed matrices are the symmetric ones; the condition $M^{\mathsf T}=M$ is $Q^{\natural}=Q$, hence $\vec Q=0$. The fixed space is the centre and the anti-fixed space is the vector subspace.</p>
+<p><strong>The adjugate is the transpose scaled by the norm.</strong>
+$$
+\operatorname{adj}M=\langle\tilde Q\rangle_{\natural}\,M^{\mathsf T}
+=\langle\tilde Q\rangle_{\natural}\,\mathsf{M}_4(\tilde Q^{\natural}).
+$$
+<em>Proof.</em> For invertible $M$, the adjugate is $\det(M)M^{-1}=N^2M^{-1}$, and $M^{-1}=M^{\mathsf T}/N$, so the formula holds. Both sides are polynomial in the coefficients and the invertible elements are dense, so the identity extends to all $\tilde Q$. $\square$</p>
+<p>For singular $\tilde Q$ the norm vanishes, and the adjugate of a rank-two $4\times4$ matrix is zero; the formula gives zero on both sides.</p>
+<p><strong>The properties.</strong> The adjugate is an anti-automorphism,
+$$
+\operatorname{adj}(MX)=\operatorname{adj}(X)\operatorname{adj}(M),
+\qquad
+M\operatorname{adj}M=(\det M)\mathrm I_4,
+$$
+but it is not an involution: $\operatorname{adj}(\operatorname{adj}M)=N^4M$. It is homogeneous of degree three, while the quaternion conjugation is linear; the two differ by the quadratic norm. The fixed space of the adjugate is the centre, as in the $2\times2$ model, and the anti-fixed space is the vector subspace.</p>
+<p><strong>The right regular matrix.</strong> The transpose also determines the right regular matrix:
+$$
+\mathsf{M}_4^{R}(\tilde Q)=D\,M^{\mathsf T}D=D\,\mathsf{M}_4(\tilde Q^{\natural})D,
+\qquad
+D=\operatorname{diag}(1,-1,-1,-1).
+$$
+The sign matrix $D$ is the price of using the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ instead of a basis adapted to the right action. In the Peirce basis the right matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$.</p>
+<h2 id="complex-conjugation">Complex Conjugation</h2>
+<p><strong>Complex conjugation is entrywise.</strong> In the regular model,
+$$
+\mathsf{M}_4(\overline{\tilde Q})=\overline M,
+$$
+with no dressing. This is the main simplification with respect to the $2\times2$ model, where the entrywise conjugate is the image of a fifth involution, $\sigma(\tilde Q)=\overline{Q_t}-\overline{Q_x}\vec e_x+\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z$, and complex conjugation must be dressed by $\epsilon$.</p>
+<p><strong>Why the dressing disappears.</strong> The regular basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is stable under coefficient conjugation, and the entries of the regular matrix are single coefficients. In the $2\times2$ model the entries are combinations such as $-iQ_x-Q_y$, and conjugating them conjugates both the coefficient and the central $i$, which is not the same as conjugating the coefficient alone. The dressing by $\epsilon$ corrects the combination. In the regular model there is no combination to correct.</p>
+<p><strong>The fixed space.</strong> The condition $\overline M=M$ is the reality of all four coefficients, so the fixed space is the quaternion subspace and the anti-fixed space is the anti-quaternion subspace. The matrices are the real and the purely imaginary matrices of the regular form.</p>
+<h2 id="hermitian-and-anti-hermitian-conjugation">Hermitian and Anti-Hermitian Conjugation</h2>
+<p><strong>The dagger is the conjugate transpose.</strong>
+$$
+\mathsf{M}_4(\tilde Q^{*})=M^{\dagger}=\overline{M}^{\mathsf T}.
+$$
+The fixed matrices are the Hermitian ones, the image of $\mathbb{M}_+$, and the anti-fixed ones are the anti-Hermitian matrices, the image of $\mathbb{M}_-$. The trace is real on the Hermitian subspace and purely imaginary on the anti-Hermitian one.</p>
+<p><strong>The anti-Hermitian conjugation.</strong>
+$$
+\mathsf{M}_4(\tilde Q^{\flat})=-M^{\dagger}.
+$$
+Its fixed space is the anti-Hermitian image and its anti-fixed space is the Hermitian one. The two rows of the table for ${}^{*}$ and ${}^{\flat}$ are exchanged, as they must be, because $\flat=-{}^{*}$.</p>
+<p><strong>The positive structure.</strong> The dagger is the only one of the four operations that is positive: $M^{\dagger}M$ is Hermitian and positive semidefinite for every $M$, and its trace is four times the Hermitian norm. The other three operations do not define a positive form.</p>
+<h2 id="the-four-adjoints">The Four Adjoints</h2>
+<p><strong>The four words.</strong> The four involutions are the switches of the four forms. With $X=\mathsf{M}_4(\tilde P)$ and $Y=\mathsf{M}_4(\tilde Q)$,
+$$
+\tfrac14\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
+\tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=\langle\tilde P,\tilde Q\rangle_{\natural},
+$$
+$$
+\tfrac14\operatorname{Tr}(XY^{\dagger})=\langle\tilde P,\tilde Q\rangle_{*},\qquad
+\tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*}.
+$$
+The first form uses no involution, the second uses the transpose in the first slot, the third the dagger in the second slot, and the fourth both.</p>
+<p><strong>The element-level and operator-level adjoints.</strong> The transpose and the dagger are element-level operations on matrices; the adjoint of a linear map is a different object, defined by $\varphi(Tx,y)=\varphi(x,T^{\varphi}y)$. The two are related by the Gram matrix of the form, and the relation is the four-adjoint theory of <em>The Four Adjoints of the Biquaternion Algebra in Examples</em>. In the regular model the Gram matrices are the identity or $\operatorname{diag}(1,-1,-1,-1)$, so the operator adjoints are the transposes and daggers composed with the sign matrix.</p>
+<h2 id="the-adjugate-of-the-dagger">The Adjugate of the Dagger</h2>
+<p><strong>The identity.</strong>
+$$
+\operatorname{adj}(M^{\dagger})=(\operatorname{adj}M)^{\dagger}
+=\langle\tilde Q\rangle_{\natural}\,\bar M,
+$$
+because the adjugate is a polynomial in $M$ with real coefficients, so it commutes with the dagger, and $M^{\dagger\mathsf T}=\bar M$.</p>
+<p><strong>The Klein group fails by one.</strong> The three operations $\operatorname{adj}$, ${}^{\dagger}$ and $\operatorname{adj}\circ{}^{\dagger}$ do not form a Klein four-group in the regular model, because $\operatorname{adj}$ is not an involution: $\operatorname{adj}^2(M)=N^4M$. The involutions are the transpose $M^{\mathsf T}$, the entrywise conjugation $\bar M$, the dagger $M^{\dagger}$ and its negative $-M^{\dagger}$. They satisfy
+$$
+{}^{\dagger}=\bar{\cdot}\circ{}^{\mathsf T}={}^{\mathsf T}\circ\bar{\cdot},
+\qquad
+\bar{\cdot}={}^{\dagger}\circ{}^{\mathsf T}={}^{\mathsf T}\circ{}^{\dagger},
+$$
+and the fourth is $-{}^{\dagger}$. The adjugate is outside this group by the scalar factor $N$, and that factor is the whole difference from the $2\times2$ model.</p>
+<p><strong>The algebra reading.</strong> The identity is the matrix form of $\bar{\cdot}={}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}$ composed with the norm: the algebra conjugation is the adjugate of the Hermitian conjugate up to the norm, and the two operations commute because one acts on the order of the factors and the other on their values. The scalar $N$ is invisible in the algebra, where the conjugation is linear, and visible in the matrix, where the adjugate is cubic.</p>
+<h2 id="summary">Summary</h2>
+<p>The four involutions become the transpose, the entrywise conjugation, the conjugate transpose and its negative. The transpose is quaternion conjugation, the entrywise conjugation is complex conjugation with no dressing, and the dagger is Hermitian conjugation. Their fixed spaces are the centre, the quaternion subspace, the two sectors, and the anti-fixed spaces are the complementary three. The adjugate of the regular matrix is the norm times the transpose, a cubic operation, not the linear adjugate of the $2\times2$ model.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M^{\mathsf T}$</td>
+<td>the image of ${}^{\natural}$</td>
+</tr>
+<tr>
+<td>$\overline M$</td>
+<td>the image of $\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$M^{\dagger}$</td>
+<td>the image of ${}^{*}$</td>
+</tr>
+<tr>
+<td>$-M^{\dagger}$</td>
+<td>the image of ${}^{\flat}$</td>
+</tr>
+<tr>
+<td>$\operatorname{adj}M=N M^{\mathsf T}$</td>
+<td>the adjugate of the regular matrix</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>the sign matrix of the right regular matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-representation-the-six-subspaces-as-matrix-conditions.html">$M_4(\mathbb{C})_L$ Representation : The Six Subspaces as Matrix Conditions</a>, for the fixed spaces</li>
+<li><a href="m4c-representation-the-centraliser-and-the-double-centraliser.html">$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser</a>, §<em>The Right Regular Image</em>, for the relation with the right matrix</li>
+<li><a href="m2c-representation-the-conjugations-and-the-adjoints.html">$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints</a>, for the $2\times2$ dictionary</li>
+<li><a href="the-group-of-involutions.html">The Group of Involutions</a>, for the abstract involutions</li>
+<li><a href="the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>, for the operator-level adjoints</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

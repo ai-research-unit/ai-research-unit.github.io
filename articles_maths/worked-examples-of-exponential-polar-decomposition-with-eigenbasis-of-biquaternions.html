@@ -71,7 +71,7 @@
         <h1 id="worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions"><strong>Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article collects the eigenbasis, the four basis elements (two idempotents and two nilpotents) and the two spinor spaces of the eight biquaternions of <em>Worked Examples of Exponential Polar Decomposition of Biquaternions</em>. The polar decomposition itself, with its coordinates, its word and its check, is in that article; here the same eight elements are read in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$.</p>
-<p>In the three cases with $B=0$, the identity of case 1 and the null-vector elements of cases 6 and 8, there is no eigenbasis singled out by the element. The paragraph of the case reads the element in a fixed Peirce basis $(\tilde\Pi_{+,0},\tilde\Pi_{-,0})$ of <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>; in case 1 the conclusion holds for every pair of complementary idempotents, so the fixed pair is only a choice.</p>
+<p>In the three cases with $B=0$, the identity of case 1 and the null-vector elements of cases 6 and 8, there is no eigenbasis singled out by the element. The paragraph of the case reads the element in a fixed Peirce basis $(\tilde\Pi_{+,0},\tilde\Pi_{-,0})$ of <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>; in case 1 the conclusion holds for every pair of complementary idempotents, so the fixed pair is only a choice.</p>
 <p>The eight elements, in the order of the cases, are collected in the table.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -158,7 +158,7 @@ $$
 $$
 \mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$
-When $\vec Q\parallel\vec e_z$ the eigenbasis is the standard Peirce basis of <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Biquaternion Case</em>, with the two labels exchanged according to the sign of $B$; the four matrices above are then the matrices of $\tilde\Pi_+$, $\vec\Upsilon_-$, $\vec\Upsilon_+$, $\tilde\Pi_-$ in that basis.</p>
+When $\vec Q\parallel\vec e_z$ the eigenbasis is the standard Peirce basis of <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>, §<em>The Biquaternion Case</em>, with the two labels exchanged according to the sign of $B$; the four matrices above are then the matrices of $\tilde\Pi_+$, $\vec\Upsilon_-$, $\vec\Upsilon_+$, $\tilde\Pi_-$ in that basis.</p>
 <p><strong>The spinor spaces.</strong> The two spinor spaces are the minimal left ideals
 $$
 S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
@@ -167,33 +167,33 @@ S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-.
 $$
 Each is two-dimensional over $\mathbb{C}$. A spinor is an element of one of them, so it has two complex coordinates, not one. A spinor of first chirality is
 $$
-\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+,
-\qquad (Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\in\mathbb{C}^2,
+\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
+\qquad (Q_{2,11},Q_{2,21})\in\mathbb{C}^2,
 $$
 the first column of the matrix; a spinor of second chirality is
 $$
-\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-,
-\qquad (Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\in\mathbb{C}^2,
+\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
+\qquad (Q_{2,12},Q_{2,22})\in\mathbb{C}^2,
 $$
 the second column. The four coordinates together belong to a general element of the algebra,
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
-\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix},
+\mathsf M_2^{Q}(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
 $$
 which is the pair $(\xi_+,\xi_-)$ and is not itself a spinor. The matrices of the two spinors are
 $$
-\mathsf M_2^{Q}(\xi_+)=\begin{pmatrix}Q_{\mathrm{sp},11}&0\\Q_{\mathrm{sp},21}&0\end{pmatrix},
+\mathsf M_2^{Q}(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
-\mathsf M_2^{Q}(\xi_-)=\begin{pmatrix}0&Q_{\mathrm{sp},12}\\0&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^{Q}(\xi_-)=\begin{pmatrix}0&Q_{2,12}\\0&Q_{2,22}\end{pmatrix}.
 $$
 Under multiplication by $\tilde Q$,
 $$
-(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})\longmapsto(\lambda_+Q_{\mathrm{sp},11},\;\lambda_-Q_{\mathrm{sp},21}),
+(Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\;\lambda_-Q_{2,21}),
 \qquad
-(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})\longmapsto(\lambda_+Q_{\mathrm{sp},12},\;\lambda_-Q_{\mathrm{sp},22}).
+(Q_{2,12},Q_{2,22})\longmapsto(\lambda_+Q_{2,12},\;\lambda_-Q_{2,22}).
 $$</p>
-<p><strong>The Peirce coordinates of $\tilde Q$.</strong> For the element $\tilde Q$ of the decomposition the nilpotent coordinates vanish, $Q_{\mathrm{sp},21}=Q_{\mathrm{sp},12}=0$, and $Q_{\mathrm{sp},11}=\lambda_+$, $Q_{\mathrm{sp},22}=\lambda_-$. Its Peirce components are therefore
+<p><strong>The Peirce coordinates of $\tilde Q_2=\tilde Q$.</strong> For the element $\tilde Q_2=\tilde Q$ of the decomposition the nilpotent coordinates vanish, $Q_{2,21}=Q_{2,12}=0$, and $Q_{2,11}=\lambda_+$, $Q_{2,22}=\lambda_-$. Its Peirce components are therefore
 $$
 \tilde Q\tilde\Pi_+=\lambda_+\tilde\Pi_+\longleftrightarrow\begin{pmatrix}\lambda_+\\0\end{pmatrix},
 \qquad
@@ -319,15 +319,15 @@ $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\ti
 and $S_-=\mathbb B\tilde\Pi_-=\mathbb C\vec\Upsilon_-\oplus\mathbb C\tilde\Pi_-$,
 and a general element of $\mathbb B$ is
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}.
 $$
-The first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is a spinor of first chirality,
-$Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$; the second column
-$(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is a spinor of second chirality,
-$Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$.
-For $\tilde Q$ itself the coordinates are $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12},Q_{\mathrm{sp},21},Q_{\mathrm{sp},22})=(1,0,0,1)$.</p>
+The first column $(Q_{2,11},Q_{2,21})$ is a spinor of first chirality,
+$Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$; the second column
+$(Q_{2,12},Q_{2,22})$ is a spinor of second chirality,
+$Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$.
+For $\tilde Q_2=\tilde Q$ the coordinates are $(Q_{2,11},Q_{2,12},Q_{2,21},Q_{2,22})=(1,0,0,1)$.</p>
 <h3 id="case-2-math151">Case 2: $\vec e_x$</h3>
 <p><strong>The four basis elements.</strong> $\vec Q=\vec e_x$ and $B=1$, so $\vec\Xi=-i\vec e_x$ and
 $$
@@ -343,15 +343,15 @@ $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\ti
 and $S_-=\mathbb B\tilde\Pi_-=\mathbb C\vec\Upsilon_-\oplus\mathbb C\tilde\Pi_-$,
 and a general element of $\mathbb B$ is
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}.
 $$
-The first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is a spinor of first chirality,
-$Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$; the second column
-$(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is a spinor of second chirality,
-$Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$.
-For $\tilde Q$ itself the coordinates are $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12},Q_{\mathrm{sp},21},Q_{\mathrm{sp},22})=(i,0,0,-i)$.</p>
+The first column $(Q_{2,11},Q_{2,21})$ is a spinor of first chirality,
+$Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$; the second column
+$(Q_{2,12},Q_{2,22})$ is a spinor of second chirality,
+$Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$.
+For $\tilde Q_2=\tilde Q$ the coordinates are $(Q_{2,11},Q_{2,12},Q_{2,21},Q_{2,22})=(i,0,0,-i)$.</p>
 <h3 id="case-3-math174">Case 3: $\tfrac{1}{\sqrt2}(e_t+\vec e_x)$</h3>
 <p><strong>The four basis elements.</strong> The vector part is again along $\vec e_x$, so $\vec\Xi=-i\vec e_x$ and the four basis elements are those of Case 2:
 $$
@@ -367,15 +367,15 @@ $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\ti
 and $S_-=\mathbb B\tilde\Pi_-=\mathbb C\vec\Upsilon_-\oplus\mathbb C\tilde\Pi_-$,
 and a general element of $\mathbb B$ is
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}.
 $$
-The first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is a spinor of first chirality,
-$Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$; the second column
-$(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is a spinor of second chirality,
-$Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$.
-For $\tilde Q$ itself the coordinates are $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12},Q_{\mathrm{sp},21},Q_{\mathrm{sp},22})=(\lambda_+,0,0,\lambda_-)$.</p>
+The first column $(Q_{2,11},Q_{2,21})$ is a spinor of first chirality,
+$Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$; the second column
+$(Q_{2,12},Q_{2,22})$ is a spinor of second chirality,
+$Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$.
+For $\tilde Q_2=\tilde Q$ the coordinates are $(Q_{2,11},Q_{2,12},Q_{2,21},Q_{2,22})=(\lambda_+,0,0,\lambda_-)$.</p>
 <h3 id="case-4-math196">Case 4: $\sqrt2\,e_t+i\vec e_x$</h3>
 <p><strong>The four basis elements.</strong> The vector part is again along $\vec e_x$, so $\vec\Xi=-i\vec e_x$ and the four basis elements are those of Case 2:
 $$
@@ -391,15 +391,15 @@ $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\ti
 and $S_-=\mathbb B\tilde\Pi_-=\mathbb C\vec\Upsilon_-\oplus\mathbb C\tilde\Pi_-$,
 and a general element of $\mathbb B$ is
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}.
 $$
-The first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is a spinor of first chirality,
-$Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$; the second column
-$(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is a spinor of second chirality,
-$Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$.
-For $\tilde Q$ itself the coordinates are $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12},Q_{\mathrm{sp},21},Q_{\mathrm{sp},22})=(\lambda_+,0,0,\lambda_-)$.</p>
+The first column $(Q_{2,11},Q_{2,21})$ is a spinor of first chirality,
+$Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$; the second column
+$(Q_{2,12},Q_{2,22})$ is a spinor of second chirality,
+$Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$.
+For $\tilde Q_2=\tilde Q$ the coordinates are $(Q_{2,11},Q_{2,12},Q_{2,21},Q_{2,22})=(\lambda_+,0,0,\lambda_-)$.</p>
 <h3 id="case-5-math218">Case 5: $\bigl(1-\tfrac{i}{\sqrt2}\bigr)e_t+\bigl(1+\tfrac{i}{\sqrt2}\bigr)\vec e_x$</h3>
 <p><strong>The four basis elements.</strong> The vector part is again along $\vec e_x$, so $\vec\Xi=-i\vec e_x$ and the four basis elements are those of Case 2:
 $$
@@ -415,15 +415,15 @@ $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\ti
 and $S_-=\mathbb B\tilde\Pi_-=\mathbb C\vec\Upsilon_-\oplus\mathbb C\tilde\Pi_-$,
 and a general element of $\mathbb B$ is
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}.
 $$
-The first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is a spinor of first chirality,
-$Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$; the second column
-$(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is a spinor of second chirality,
-$Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$.
-For $\tilde Q$ itself the coordinates are $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12},Q_{\mathrm{sp},21},Q_{\mathrm{sp},22})=(\lambda_+,0,0,\lambda_-)$.</p>
+The first column $(Q_{2,11},Q_{2,21})$ is a spinor of first chirality,
+$Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$; the second column
+$(Q_{2,12},Q_{2,22})$ is a spinor of second chirality,
+$Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$.
+For $\tilde Q_2=\tilde Q$ the coordinates are $(Q_{2,11},Q_{2,12},Q_{2,21},Q_{2,22})=(\lambda_+,0,0,\lambda_-)$.</p>
 <h3 id="case-6-math240">Case 6: $e_t+\vec e_y+\tfrac{i}{\sqrt2}\vec e_x+\tfrac{i}{\sqrt2}\vec e_z$</h3>
 <p><strong>The four basis elements.</strong> $B=0$, so there is no eigenbasis. The fixed Peirce basis of the algebra is
 $$
@@ -443,14 +443,14 @@ and the second matrix is square-zero. The element is unipotent: it is not diagon
 and $S_-=\mathbb B\tilde\Pi_-=\mathbb C\vec\Upsilon_-\oplus\mathbb C\tilde\Pi_-$,
 and a general element of $\mathbb B$ is
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}.
 $$
-The first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is a spinor of first chirality,
-$Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$; the second column
-$(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is a spinor of second chirality,
-$Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$.
+The first column $(Q_{2,11},Q_{2,21})$ is a spinor of first chirality,
+$Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$; the second column
+$(Q_{2,12},Q_{2,22})$ is a spinor of second chirality,
+$Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$.
 For $\tilde Q$ itself the two columns are $(1+\tfrac{1}{\sqrt2},1+\tfrac{1}{\sqrt2})$ and $(\tfrac{1}{\sqrt2}-1,1-\tfrac{1}{\sqrt2})$; left multiplication by $\tilde Q$ acts on them by $\mathsf M_2^Q(\tilde Q)$, not diagonally.</p>
 <h3 id="case-7-math262">Case 7: $\bigl(1-\tfrac{i}{2}\bigr)e_t+\tfrac{1+i}{\sqrt2}\vec e_x+\tfrac{1}{\sqrt2}\vec e_y+\tfrac{i}{2}\vec e_z$</h3>
 <p><strong>The four basis elements.</strong> $B=\sqrt{i+\tfrac14}$ and $\vec\Xi=-i\vec Q/B$, so
@@ -465,15 +465,15 @@ where $\vec W\cdot\vec Q=0$ and $\vec W\cdot\vec W=1$; then $\tilde\Pi_\pm^2=\ti
 and $S_-=\mathbb B\tilde\Pi_-=\mathbb C\vec\Upsilon_-\oplus\mathbb C\tilde\Pi_-$,
 and a general element of $\mathbb B$ is
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}.
 $$
-The first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is a spinor of first chirality,
-$Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$; the second column
-$(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is a spinor of second chirality,
-$Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$.
-For $\tilde Q$ itself the coordinates are $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},12},Q_{\mathrm{sp},21},Q_{\mathrm{sp},22})=(\lambda_+,0,0,\lambda_-)$.</p>
+The first column $(Q_{2,11},Q_{2,21})$ is a spinor of first chirality,
+$Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$; the second column
+$(Q_{2,12},Q_{2,22})$ is a spinor of second chirality,
+$Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$.
+For $\tilde Q_2=\tilde Q$ the coordinates are $(Q_{2,11},Q_{2,12},Q_{2,21},Q_{2,22})=(\lambda_+,0,0,\lambda_-)$.</p>
 <h3 id="case-8-math285">Case 8: $(1+i)e_t+\vec e_x+i\vec e_y$</h3>
 <p><strong>The four basis elements.</strong> $B=0$, so there is no eigenbasis. The fixed Peirce basis of the algebra is
 $$
@@ -493,14 +493,14 @@ and the second matrix is square-zero. The element is not diagonalisable and no e
 and $S_-=\mathbb B\tilde\Pi_-=\mathbb C\vec\Upsilon_-\oplus\mathbb C\tilde\Pi_-$,
 and a general element of $\mathbb B$ is
 $$
-\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-,
+\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
-\mathsf M_2^Q(\tilde Q_{\mathrm{sp}})=\begin{pmatrix}Q_{\mathrm{sp},11}&Q_{\mathrm{sp},12}\\Q_{\mathrm{sp},21}&Q_{\mathrm{sp},22}\end{pmatrix}.
+\mathsf M_2^Q(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix}.
 $$
-The first column $(Q_{\mathrm{sp},11},Q_{\mathrm{sp},21})$ is a spinor of first chirality,
-$Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$; the second column
-$(Q_{\mathrm{sp},12},Q_{\mathrm{sp},22})$ is a spinor of second chirality,
-$Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$.
+The first column $(Q_{2,11},Q_{2,21})$ is a spinor of first chirality,
+$Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$; the second column
+$(Q_{2,12},Q_{2,22})$ is a spinor of second chirality,
+$Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$.
 For $\tilde Q$ itself the two columns are $(1+i,0)$ and $(-2i,1+i)$; left multiplication by $\tilde Q$ acts on them by $\mathsf M_2^Q(\tilde Q)$, not diagonally.</p>
 <h2 id="summary">Summary</h2>
 <ul>
@@ -531,11 +531,11 @@ For $\tilde Q$ itself the two columns are $(1+i,0)$ and $(-2i,1+i)$; left multip
 <td>the two spinor spaces, minimal left ideals</td>
 </tr>
 <tr>
-<td>$\xi_+=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},21}\vec\Upsilon_+$, $\xi_-=Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},22}\tilde\Pi_-$</td>
+<td>$\xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+$, $\xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-$</td>
 <td>the two spinors, elements of $S_+$ and $S_-$</td>
 </tr>
 <tr>
-<td>$\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},11}\tilde\Pi_++Q_{\mathrm{sp},12}\vec\Upsilon_-+Q_{\mathrm{sp},21}\vec\Upsilon_++Q_{\mathrm{sp},22}\tilde\Pi_-$</td>
+<td>$\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$</td>
 <td>the general element; its two columns are the two spinors</td>
 </tr>
 <tr>

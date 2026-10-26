@@ -71,9 +71,9 @@
         <h1 id="math0-representation-the-columns-the-rows-and-the-spinor-module"><strong>$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The matrix model makes the ideal structure of the biquaternion algebra a statement about columns and rows. The two standard minimal left ideals are the two columns, the two standard minimal right ideals are the two rows, and the element acts on a column by matrix multiplication. Every minimal left ideal is a column in a suitable basis, and the family is a projective line. The column is the spinor module: not a space isomorphic to it, but the module itself, realised inside the algebra.</p>
-<p>This article develops the column and row picture, the chirality of the two columns, and the module theory that the picture makes visible. It is the matrix form of <em>Modules over the Biquaternion Algebra</em> and of <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>, §<em>The Decomposition into Minimal Left and Right Ideals</em> and §<em>The Lattice of Left Ideals</em>.</p>
+<p>This article develops the column and row picture, the chirality of the two columns, and the module theory that the picture makes visible. It is the matrix form of <em>Modules over the Biquaternion Algebra</em> and of <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>, §<em>The Decomposition into Minimal Left and Right Ideals</em> and §<em>The Lattice of Left Ideals</em>.</p>
 <p><strong>Conventions.</strong> The algebra and the fixed model are those of <em>$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</em>. The standard idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, the standard nilpotents are $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$, and the matrix units are $E_{ij}$. The two spinor spaces are $S_\pm=\mathbb{B}\tilde\Pi_\pm$.</p>
-<p><strong>Boundaries.</strong> The abstract ideals and the Peirce decomposition are <em>Ideals and Peirce Decompositions of the Biquaternion Algebra</em>; the module theory is <em>Modules over the Biquaternion Algebra</em>; the matrix units are <em>$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units</em>; the eigenbasis labelling is <em>$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</em>.</p>
+<p><strong>Boundaries.</strong> The abstract ideals and the Peirce decomposition are <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>; the module theory is <em>Modules over the Biquaternion Algebra</em>; the matrix units are <em>$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units</em>; the eigenbasis labelling is <em>$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</em>.</p>
 <h2 id="the-left-ideals-are-the-columns">The Left Ideals Are the Columns</h2>
 <p><strong>The two columns are two minimal left ideals, the standard ones.</strong></p>
 <p>$$
@@ -135,6 +135,28 @@ $$</p>
 $$</p>
 <p>so the regular module is $S\oplus S$. It is free of rank one, because it is $\mathbb{B}$ itself, and it is not simple, because it is the direct sum of the two columns. It is projective because it is free; and it is a generator, because every simple module is a quotient of it. These are the properties collected in <em>Modules over the Biquaternion Algebra</em>, §<em>The Four Properties of the Regular Object</em>.</p>
 <p><strong>Morita equivalence.</strong> The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is Morita equivalent to $\mathbb{C}$. The equivalence sends the simple module $S$ to $\mathbb{C}$ and the algebra to the matrix algebra of the module. It is the reason the module theory of $\mathbb{B}$ is the module theory of a field, read through a two-dimensional space: the categories of left modules are equivalent, and the equivalence is not an isomorphism of algebras.</p>
+<h2 id="the-endomorphisms-of-the-regular-module">The Endomorphisms of the Regular Module</h2>
+<p><strong>Right multiplications.</strong> For $X\in M_2(\mathbb{C})$ let $R_X$ be right multiplication, $R_X(M)=MX$. It is a map of left $M_2(\mathbb{C})$-modules, because</p>
+<p>$$
+R_X(NM)=(NM)X=N(MX)=N R_X(M),
+$$</p>
+<p>and every left-module endomorphism of $M_2(\mathbb{C})$ is of this form: the image of $\mathrm I_2$ is $X$, and left linearity gives $T(M)=T(M\mathrm I_2)=MT(\mathrm I_2)=MX$. The assignment is an algebra isomorphism</p>
+<p>$$
+M_2(\mathbb{C})^{\mathrm{op}}\longrightarrow
+\operatorname{End}_{M_2(\mathbb{C})}\bigl(M_2(\mathbb{C})\bigr),
+\qquad X\longmapsto R_X,
+$$</p>
+<p>with composition $R_XR_Y=R_{YX}$. Composing with the transpose identifies the endomorphism ring with $M_2(\mathbb{C})$ itself, because</p>
+<p>$$
+R_{X^{\mathsf T}}R_{Y^{\mathsf T}}=R_{(XY)^{\mathsf T}}.
+$$</p>
+<p>This is the matrix form of $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ of <em>Modules over the Biquaternion Algebra</em>, §<em>The Endomorphisms of the Regular Object</em>.</p>
+<p><strong>The bimodule endomorphisms.</strong> An endomorphism that is also right $M_2(\mathbb{C})$-linear satisfies $T(M)=T(\mathrm I_2M)=T(\mathrm I_2)M$, while left linearity gives $T(M)=MT(\mathrm I_2)$. Hence $T(\mathrm I_2)$ is central, and the bimodule endomorphisms are the scalar multiplications:</p>
+<p>$$
+\operatorname{End}_{M_2-M_2}\bigl(M_2(\mathbb{C})\bigr)\cong\mathbb{C}.
+$$</p>
+<p>In the algebra this is the centre $\mathbb{C}e_t$, and the statement is that the regular bimodule has no non-scalar endomorphisms.</p>
+<p><strong>The two columns.</strong> The left ideal $I_{L_\infty}=\mathbb{C}\{E_{11},E_{21}\}$ consists of the matrices whose image lies in the first coordinate line. Right multiplication replaces the two columns by combinations of themselves, so the image remains in that line; the left action therefore preserves the ideal. A left ideal is a submodule of the regular left module, while right multiplication is an endomorphism of it.</p>
 <h2 id="the-lattice-of-left-ideals">The Lattice of Left Ideals</h2>
 <p><strong>Every minimal left ideal is a column in some basis.</strong> A minimal left ideal of $\mathbb{B}$ is $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$, and every primitive idempotent is conjugate to $\tilde\Pi_+$. Conjugating the standard column by the unit that carries $\tilde\Pi_+$ to $\tilde\Pi$ gives the ideal. The set of minimal left ideals is therefore the set of conjugates of one column.</p>
 <p><strong>The projective line.</strong> In the matrix model a minimal left ideal is the set of matrices whose rows lie in a fixed line $L$ of the dual space; equivalently, after a change of basis adapted to $L$, it is one of the two columns. The line $L$ is a point of the projective line $\mathbb{P}^1(\mathbb{C})$, and the minimal left ideals are parametrised by that line. The two standard columns correspond to the two coordinate lines of the dual. Two ideals coincide exactly when the lines coincide. The right ideals are the same construction with the column space in place of the row space, and their projective line is the dual one.</p>
@@ -184,7 +206,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="modules-over-the-biquaternion-algebra.html">Modules over the Biquaternion Algebra</a>, for the regular module and Morita equivalence</li>
-<li><a href="ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html">Ideals and Peirce Decompositions of the Biquaternion Algebra</a>, for the ideals and the lattice</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the ideals and the lattice</li>
 <li><a href="m2c-representation-the-peirce-coordinates-and-the-matrix-units.html">$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units</a>, for the corner coordinates</li>
 <li><a href="m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html">$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix</a>, for the eigenbasis columns</li>
 <li><a href="modules-over-the-biquaternion-algebra.html">Modules over the Biquaternion Algebra</a>, for the abstract spinor module</li>

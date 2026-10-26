@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_4(\mathbb{C})_L$ Representation : Worked Examples — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-worked-examples"><strong>$M_4(\mathbb{C})_L$ Representation : Worked Examples</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article computes eight regular matrices through the same checklist used in the $2\times2$ series: the biquaternion coordinates, the trace and the determinant, the characteristic and minimal polynomials, the spectrum, the rank, the spectral projectors, the polar factors and the normality flags. The eight exhibit the scalar, the Jordan block, the distinct case, the singular case, the rank-one case, the unitary element, the Hermitian element and the normal element. A closing roster lists the twenty articles of the series with their key formulas.</p>
+<p>The article is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : Worked Examples</em> and the capstone of the series.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure</em>. In the Peirce basis,
+$$
+S^{-1}\mathsf{M}_4(\tilde Q)S=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q)=\operatorname{diag}(A,A),
+\qquad
+A=\mathsf{M}_2(\tilde Q),
+$$
+with
+$$
+A=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
+$$
+The inverse map is
+$$
+Q_t=\tfrac{a+d}{2},\quad
+Q_x=\tfrac{i(b+c)}{2},\quad
+Q_y=\tfrac{c-b}{2},\quad
+Q_z=\tfrac{i(a-d)}{2},
+$$
+for $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. The trace is $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, each twice.</p>
+<p><strong>Boundaries.</strong> The construction is <em>$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure</em>; the eigenbasis is <em>$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix</em>; the projectors are <em>$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents</em>; the polar factors are <em>$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix</em>; the rank is <em>$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety</em>; the groups are <em>$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</em>.</p>
+<h2 id="the-method">The Method</h2>
+<p><strong>The invariants.</strong> Put $\tau=\operatorname{Tr}A=2Q_t$ and $\delta=\det A=N$. The characteristic polynomial of $A$ is
+$$
+p_A(t)=t^2-\tau t+\delta=(t-\lambda_+)(t-\lambda_-),
+\qquad
+\lambda_\pm=\frac{\tau\pm\sqrt{\tau^2-4\delta}}{2}.
+$$
+The regular matrix has each eigenvalue twice, so
+$$
+p_X(t)=p_A(t)^2,\qquad
+\operatorname{Tr}X=2\tau=4Q_t,\qquad
+\det X=\delta^2=N^2.
+$$</p>
+<p><strong>The minimal polynomial.</strong> The spectral type is read from $p_A$ and from the size of the eigenspace:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>$m_A(t)$</th>
+<th>$m_X(t)$</th>
+<th>Diagonalisable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar, $A=\lambda\mathrm I_2$</td>
+<td>$t-\lambda$</td>
+<td>$t-\lambda$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>non-scalar, distinct eigenvalues</td>
+<td>$(t-\lambda_+)(t-\lambda_-)$</td>
+<td>$(t-\lambda_+)(t-\lambda_-)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>non-scalar, repeated eigenvalue</td>
+<td>$(t-\lambda)^2$</td>
+<td>$(t-\lambda)^2$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rank.</strong> The rank of $X$ is twice the rank of $A$: it is $4$ when $N\neq0$, $2$ when $N=0$ and $\tilde Q\neq0$, and $0$ when $\tilde Q=0$. The regular model therefore has only the ranks $0,2,4$.</p>
+<p><strong>The spectral projectors.</strong> When the eigenvalues are distinct,
+$$
+\Pi_+=\frac{A-\lambda_-\mathrm I_2}{\lambda_+-\lambda_-},
+\qquad
+\Pi_-=\mathrm I_2-\Pi_+,
+$$
+and the regular projectors are $\rho_\pm=\operatorname{diag}(\Pi_\pm,\Pi_\pm)$, of rank two. They satisfy $\rho_+\rho_-=0$ and $\rho_++\rho_-=\mathrm I_4$.</p>
+<p><strong>The polar factors.</strong> The positive factor is $P=(XX^{\dagger})^{1/2}$ and the unitary factor is $V$ with $X=PV$. When $X$ is invertible, $V=P^{-1}X$ is unitary; when $X$ is singular, $V=P^{+}X$ is a partial isometry.</p>
+<p><strong>The flags.</strong> A matrix is Hermitian when $X=X^{\dagger}$, unitary when $X^{\dagger}X=\mathrm I_4$, and normal when $XX^{\dagger}=X^{\dagger}X$. Hermitian and unitary matrices are normal.</p>
+<h2 id="the-eight-matrices">The Eight Matrices</h2>
+<p>The eight matrices, their blocks $A$ and their basic invariants are collected here; the sections that follow compute each one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$A$</th>
+<th>$(Q_t,Q_x,Q_y,Q_z)$</th>
+<th>$\operatorname{Tr}X$</th>
+<th>$\det X$</th>
+<th>Spectrum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalar</td>
+<td>$2\mathrm I_2$</td>
+<td>$(2,0,0,0)$</td>
+<td>$8$</td>
+<td>$16$</td>
+<td>$2,2,2,2$</td>
+</tr>
+<tr>
+<td>Jordan</td>
+<td>$\begin{pmatrix}1&1\\0&1\end{pmatrix}$</td>
+<td>$(1,\tfrac{i}{2},-\tfrac12,0)$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$1,1,1,1$</td>
+</tr>
+<tr>
+<td>Distinct</td>
+<td>$\begin{pmatrix}1&2\\3&4\end{pmatrix}$</td>
+<td>$(\tfrac52,\tfrac{5i}{2},\tfrac12,-\tfrac{3i}{2})$</td>
+<td>$10$</td>
+<td>$4$</td>
+<td>$\tfrac{5\pm\sqrt{33}}{2}$ twice</td>
+</tr>
+<tr>
+<td>Singular</td>
+<td>$\begin{pmatrix}2&0\\0&0\end{pmatrix}$</td>
+<td>$(1,0,0,i)$</td>
+<td>$4$</td>
+<td>$0$</td>
+<td>$2,0$ twice</td>
+</tr>
+<tr>
+<td>Rank one</td>
+<td>$\begin{pmatrix}1&2\\3&6\end{pmatrix}$</td>
+<td>$(\tfrac72,\tfrac{5i}{2},\tfrac12,-\tfrac{5i}{2})$</td>
+<td>$14$</td>
+<td>$0$</td>
+<td>$7,0$ twice</td>
+</tr>
+<tr>
+<td>Unitary</td>
+<td>$\tfrac{1}{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$</td>
+<td>$(\tfrac{1}{\sqrt2},-\tfrac{1}{\sqrt2},0,0)$</td>
+<td>$2\sqrt2$</td>
+<td>$1$</td>
+<td>$e^{\pm i\pi/4}$ twice</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>$\begin{pmatrix}2&1-i\\1+i&-1\end{pmatrix}$</td>
+<td>$(\tfrac12,i,i,\tfrac{3i}{2})$</td>
+<td>$2$</td>
+<td>$16$</td>
+<td>$\tfrac{1\pm\sqrt{17}}{2}$ twice</td>
+</tr>
+<tr>
+<td>Normal</td>
+<td>$\begin{pmatrix}1&1\\-1&1\end{pmatrix}$</td>
+<td>$(1,0,-1,0)$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$1\pm i$ twice</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table is read with the inverse map of the introduction; the coordinates are the four complex numbers $Q_t,Q_x,Q_y,Q_z$ of the block, and the regular matrix is $X=\operatorname{diag}(A,A)$.</p>
+<h2 id="the-scalar-matrix">The Scalar Matrix</h2>
+<p><strong>The matrix.</strong> $A=2\mathrm I_2$, $X=2\mathrm I_4$, and $\tilde Q=2e_t$. It is central.</p>
+<p><strong>The invariants.</strong> $\operatorname{Tr}X=8$, $\det X=16$, $p_X(t)=(t-2)^4$ and $m_X(t)=t-2$. The spectrum is $\{2\}$, the rank is $4$, and the eigenspace is the whole of $\mathbb{C}^4$.</p>
+<p><strong>The commutant.</strong> $C(X)=M_4(\mathbb{C})$, and the relative commutant is the whole image. The double relative commutant is $C_L(C_L(X))=\mathbb{C}\mathrm I_4$, the centre, because the image is a central simple algebra and its centraliser in itself is the centre.</p>
+<p><strong>The flags.</strong> The matrix is normal and Hermitian, because $2$ is real. It is not unitary, because $|2|\neq1$; the scalar $\tfrac12X=\mathrm I_4$ is unitary.</p>
+<p><strong>The polar factors.</strong> $P=2\mathrm I_4$ and $V=\mathrm I_4$.</p>
+<p><strong>The reading.</strong> The scalar is the degenerate spectral case: one eigenvalue, one spectral projector $\mathrm I_4$, and no eigenbasis to choose. In the algebra it is the central line $\mathbb{C}e_t$.</p>
+<h2 id="the-jordan-block">The Jordan Block</h2>
+<p><strong>The matrix.</strong> $A=J=\begin{pmatrix}1&1\\0&1\end{pmatrix}$, $X=\operatorname{diag}(J,J)$, and $\tilde Q=e_t+\tfrac{i}{2}\vec e_x-\tfrac12\vec e_y$. The vector part is null, $B=0$, and $Q_t=1$.</p>
+<p><strong>The invariants.</strong> $\operatorname{Tr}X=4$, $\det X=1$, $p_X(t)=(t-1)^4$ and $m_X(t)=(t-1)^2$. The spectrum is $\{1\}$, the rank is $4$, and each block has a one-dimensional eigenspace, of dimension two in $\mathbb{C}^4$. The matrix is invertible and not diagonalisable.</p>
+<p><strong>The Jordan chain.</strong> With $N=J-\mathrm I_2=\begin{pmatrix}0&1\\0&0\end{pmatrix}$, $N^2=0$ and $J=\mathrm I_2+N$. The chain is repeated in the two blocks.</p>
+<p><strong>The commutant.</strong> The relative commutant is $\{a\mathrm I_4+b\operatorname{diag}(N,N)\}$, of complex dimension two. The full commutant in $M_4(\mathbb{C})$ is $M_2(\mathbb{C})\otimes\mathbb{C}[J]$, of dimension eight.</p>
+<p><strong>The flags.</strong> The matrix is not normal, because $JJ^{\dagger}\neq J^{\dagger}J$.</p>
+<p><strong>The polar factors.</strong> $P=\operatorname{diag}((JJ^{\dagger})^{1/2},(JJ^{\dagger})^{1/2})$ and $V=P^{-1}X$; both are block diagonal, and $V$ is unitary because $J$ is invertible.</p>
+<h2 id="the-matrix-with-distinct-eigenvalues">The Matrix with Distinct Eigenvalues</h2>
+<p><strong>The matrix.</strong> $A=\begin{pmatrix}1&2\\3&4\end{pmatrix}$, $X=\operatorname{diag}(A,A)$, and $\tilde Q=\tfrac52e_t+\tfrac{5i}{2}\vec e_x+\tfrac12\vec e_y-\tfrac{3i}{2}\vec e_z$.</p>
+<p><strong>The invariants.</strong> $\operatorname{Tr}A=5$, $\det A=-2$, $\operatorname{Tr}X=10$, $\det X=4$. The eigenvalues of $A$ are $\tfrac{5\pm\sqrt{33}}{2}$, distinct and nonzero; the regular matrix has each twice. The rank is $4$.</p>
+<p><strong>The spectral projectors.</strong> The two rank-two projectors are
+$$
+\rho_\pm=\operatorname{diag}\left(\frac{A-\lambda_\mp\mathrm I_2}{\lambda_+-\lambda_-},\frac{A-\lambda_\mp\mathrm I_2}{\lambda_+-\lambda_-}\right),
+$$
+and $X=\lambda_+\rho_++\lambda_-\rho_-$. They are not Hermitian, because $A$ is not normal.</p>
+<p><strong>The commutant.</strong> The relative commutant is $\mathrm I_2\otimes\mathbb{C}[A]$, of complex dimension two; the full commutant is the eight-dimensional algebra of block matrices with each block in $\mathbb{C}[A]$.</p>
+<p><strong>The flags.</strong> The matrix is not normal, because $AA^{\dagger}\neq A^{\dagger}A$.</p>
+<p><strong>The polar factors.</strong> $P=\operatorname{diag}((AA^{\dagger})^{1/2},(AA^{\dagger})^{1/2})$ and $V=P^{-1}X$, unitary because $A$ is invertible.</p>
+<h2 id="the-singular-matrix">The Singular Matrix</h2>
+<p><strong>The matrix.</strong> $A=S=\begin{pmatrix}2&0\\0&0\end{pmatrix}$, $X=\operatorname{diag}(S,S)$, and $\tilde Q=e_t+i\vec e_z$. The norm is $1-1=0$, so the element is a zero divisor.</p>
+<p><strong>The invariants.</strong> $\operatorname{Tr}X=4$, $\det X=0$, $p_X(t)=t^2(t-2)^2$ and $m_X(t)=t(t-2)$. The spectrum is $\{2,0\}$ with multiplicity two each, the rank is $2$, and the matrix is diagonalisable.</p>
+<p><strong>The kernel and the image.</strong> Each block has kernel $\mathbb{C}(0,1)^{\mathsf T}$ and image $\mathbb{C}(1,0)^{\mathsf T}$; in the regular model the kernel and the image are the direct sums of the two, and the two coordinate planes are orthogonal.</p>
+<p><strong>The spectral projectors.</strong> $\rho_+=\operatorname{diag}(E_{11},E_{11})$ projects onto the image plane, and $\rho_-=\operatorname{diag}(E_{22},E_{22})$ projects onto the kernel plane. Both are Hermitian and orthogonal, because $S$ is normal.</p>
+<p><strong>The polar factors.</strong> $S\ge0$, so $P=X$ and $V=\rho_+$; the factor $V$ is a partial isometry, not a unitary matrix.</p>
+<p><strong>The pseudo-inverse.</strong> $X^{+}=\operatorname{diag}(\tfrac12E_{11},\tfrac12E_{11})$, and $XX^{+}=X^{+}X=\rho_+$.</p>
+<p><strong>The algebra reading.</strong> The two idempotents are the images of $\tfrac12(e_t+i\vec e_z)$ and $\tfrac12(e_t-i\vec e_z)$, doubled. The element is a non-pure zero divisor: $2$ times the Hermitian idempotent. The right annihilator is the doubled minimal right ideal, of complex dimension two, and the left annihilator is the doubled minimal left ideal.</p>
+<p><strong>The flags.</strong> The matrix is Hermitian and normal, not unitary. It is the normal singular case.</p>
+<h2 id="the-rank-one-matrix">The Rank-One Matrix</h2>
+<p><strong>The matrix.</strong> $A=R=\begin{pmatrix}1&2\\3&6\end{pmatrix}$, $X=\operatorname{diag}(R,R)$, and $\tilde Q=\tfrac72e_t+\tfrac{5i}{2}\vec e_x+\tfrac12\vec e_y-\tfrac{5i}{2}\vec e_z$. The block has eigenvalues $7$ and $0$.</p>
+<p><strong>The outer product.</strong> With $u=(1,3)^{\mathsf T}$ and $v=(1,2)^{\mathsf T}$,
+$$
+R=uv^{\mathsf T},\qquad v^{\mathsf T}u=7,\qquad R^2=7R.
+$$
+Hence $E=R/7$ is an idempotent, and $X=7\operatorname{diag}(E,E)$ is a complex multiple of a rank-two idempotent. The rank is $2$ and the determinant is $0$.</p>
+<p><strong>The kernel and the image.</strong> Each block has kernel $\mathbb{C}(-2,1)^{\mathsf T}$ and image $\mathbb{C}(1,3)^{\mathsf T}$; in the regular model these are doubled into planes.</p>
+<p><strong>The spectral projectors.</strong> $\rho_+=\operatorname{diag}(E,E)$ projects onto the image plane along the kernel plane, and $\mathrm I_4-\rho_+$ projects onto the kernel plane along the image plane. They are idempotent and orthogonal, but not Hermitian: $\rho_+^{\dagger}\neq\rho_+$.</p>
+<p><strong>The polar factors.</strong> $RR^{\dagger}=5\begin{pmatrix}1&3\\3&9\end{pmatrix}$ has rank one, so
+$$
+P=\frac{1}{\sqrt2}\operatorname{diag}\left(\begin{pmatrix}1&3\\3&9\end{pmatrix},\begin{pmatrix}1&3\\3&9\end{pmatrix}\right),
+\qquad
+V=\frac{1}{\sqrt{50}}X.
+$$
+The factor $P$ is positive semidefinite of rank two and $V$ is a partial isometry; $PV=X$.</p>
+<p><strong>The flags.</strong> The matrix is singular and rank two, but not normal, not Hermitian and not unitary.</p>
+<p><strong>The reading.</strong> The rank-two elements are the nonzero points of the null cone; the determinantal variety is their closure, with the origin as apex. The element is a non-pure zero divisor, $7$ times the idempotent. The contrast with the singular example is the contrast between a Hermitian rank-two projector and a non-Hermitian one.</p>
+<h2 id="the-unitary-matrix">The Unitary Matrix</h2>
+<p><strong>The matrix.</strong> $A=\tfrac{1}{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$, $X=\operatorname{diag}(A,A)$, and $\tilde Q=\tfrac{1}{\sqrt2}(e_t-\vec e_x)$.</p>
+<p><strong>The invariants.</strong> $\operatorname{Tr}A=\sqrt2$, $\det A=1$, $\operatorname{Tr}X=2\sqrt2$, $\det X=1$. The eigenvalues of $A$ are $e^{\pm i\pi/4}$, each twice. The rank is $4$.</p>
+<p><strong>The unitary condition.</strong> $A^{\dagger}A=\mathrm I_2$, because $\tilde Q^{*}\tilde Q=e_t$. The matrix $X$ is unitary, and its determinant has modulus one.</p>
+<p><strong>The spectral projectors.</strong> The two rank-two projectors are $\rho_\pm=\operatorname{diag}(\Pi_\pm,\Pi_\pm)$, with $\Pi_\pm$ the rank-one projectors of $A$. They are Hermitian and orthogonal.</p>
+<p><strong>The commutant.</strong> The relative commutant is $\mathrm I_2\otimes\mathbb{C}[A]$, of dimension two; the full commutant is $M_2(\mathbb{C})\otimes\mathbb{C}[A]$, of dimension eight.</p>
+<p><strong>The polar factors.</strong> $X$ is unitary, so $P=\mathrm I_4$ and $V=X$.</p>
+<p><strong>The reading.</strong> The element is a unit of norm one. Its eigenvalues lie on the unit circle, and the determinant is $1$; it is the double of a rotor of angle $\pi/2$.</p>
+<h2 id="the-hermitian-matrix">The Hermitian Matrix</h2>
+<p><strong>The matrix.</strong> $A=H=\begin{pmatrix}2&1-i\\1+i&-1\end{pmatrix}$, $X=\operatorname{diag}(H,H)$, and $\tilde Q=\tfrac12e_t+i(\vec e_x+\vec e_y+\tfrac32\vec e_z)$.</p>
+<p><strong>The invariants.</strong> $\operatorname{Tr}X=2$, $\det X=16$, and
+$$
+p_X(t)=(t^2-t-4)^2,
+\qquad
+\lambda_\pm=\frac{1\pm\sqrt{17}}{2},
+$$
+each twice. The eigenvalues are real and distinct, so $m_X=t^2-t-4$; the rank is $4$.</p>
+<p><strong>The eigenbasis.</strong> The eigenvectors are those of $H$, repeated in the two blocks; they are orthogonal because $H$ is Hermitian.</p>
+<p><strong>The spectral projectors.</strong> The Lagrange projectors $\rho_\pm=\operatorname{diag}(\Pi_\pm,\Pi_\pm)$ are Hermitian and orthogonal, of rank two each.</p>
+<p><strong>The polar factors.</strong> Because $H$ is Hermitian, $|X|=\operatorname{diag}(|H|,|H|)$ and $\operatorname{sign}(X)=\operatorname{diag}(\operatorname{sign}H,\operatorname{sign}H)$; both factors are Hermitian.</p>
+<p><strong>The flags.</strong> The matrix is Hermitian and normal, not unitary: the eigenvalues are real but not of modulus one.</p>
+<p><strong>The reading.</strong> The element lies in $\mathbb{M}_+$, so its spectral projectors are Hermitian and its eigenbasis is orthonormal. The two eigenvalues have opposite signs, so the Hermitian form has signature $(1,1)$ on the two spectral planes.</p>
+<h2 id="the-normal-matrix">The Normal Matrix</h2>
+<p><strong>The matrix.</strong> $A=N=\begin{pmatrix}1&1\\-1&1\end{pmatrix}$, $X=\operatorname{diag}(N,N)$, and $\tilde Q=e_t-\vec e_y$.</p>
+<p><strong>The invariants.</strong> $\operatorname{Tr}X=4$, $\det X=4$, and
+$$
+p_X(t)=(t^2-2t+2)^2,
+\qquad
+\lambda_\pm=1\pm i,
+$$
+each twice. The rank is $4$.</p>
+<p><strong>The normal flag.</strong> With $K=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, $A=\mathrm I_2+K$, $K^2=-\mathrm I_2$, and
+$$
+A^{\dagger}A=(\mathrm I_2-K)(\mathrm I_2+K)=2\mathrm I_2=AA^{\dagger},
+$$
+so $X$ is normal. It is not Hermitian and not unitary, because $X^{\dagger}X=2\mathrm I_4$.</p>
+<p><strong>The eigenbasis.</strong> The eigenvectors of $A$ are $(1,i)^{\mathsf T}$ and $(1,-i)^{\mathsf T}$, repeated in the two blocks; the eigenbasis is orthonormal.</p>
+<p><strong>The spectral projectors.</strong> $\rho_\pm=\operatorname{diag}(\Pi_\pm,\Pi_\pm)$ are Hermitian and orthogonal.</p>
+<p><strong>The polar factors.</strong> $|X|=\sqrt2\,\mathrm I_4$ and $V=X/\sqrt2$; the unitary factor has determinant $1$, so $X/\sqrt2$ lies in the image of $SU(2)$.</p>
+<p><strong>The flags.</strong> The matrix is normal, neither Hermitian nor unitary.</p>
+<h2 id="the-pattern">The Pattern</h2>
+<p>The checks are collected in one table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>$m_X(t)$</th>
+<th>Rank</th>
+<th>Diagonalisable</th>
+<th>Normal</th>
+<th>Hermitian</th>
+<th>Unitary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalar</td>
+<td>$t-2$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Jordan</td>
+<td>$(t-1)^2$</td>
+<td>$4$</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Distinct</td>
+<td>$t^2-5t-2$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Singular</td>
+<td>$t(t-2)$</td>
+<td>$2$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Rank one</td>
+<td>$t(t-7)$</td>
+<td>$2$</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Unitary</td>
+<td>$t^2-\sqrt2\,t+1$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>$t^2-t-4$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Normal</td>
+<td>$t^2-2t+2$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The implications.</strong> Hermitian implies normal, and unitary implies normal; the converse fails in both directions. A normal matrix with a repeated eigenvalue is scalar: the only normal matrix among the three Jordan types is the scalar. A non-scalar Jordan block is never normal. In the regular model each block is doubled, so every rank and every eigenvalue multiplicity is doubled, and the implications are read blockwise.</p>
+<p><strong>The spectral reading.</strong> For a normal matrix the spectral projectors are Hermitian and the eigenbasis is orthonormal; for a non-normal matrix with distinct eigenvalues the same Lagrange formula gives idempotents that are not Hermitian. The distinct-spectrum example and the rank-one example are the two non-normal diagonalisable cases; the Jordan block is the non-diagonalisable case.</p>
+<p><strong>The rank reading.</strong> The singular example and the rank-one example both have rank two and determinant zero. The first is a Hermitian projector up to scale, the second is a non-Hermitian idempotent up to scale. The difference is exactly the normality flag: the first is normal, the second is not.</p>
+<p><strong>The group reading.</strong> The unitary example lies in the image of $SU(2)$; the normal example is $\sqrt2$ times such an element; the Jordan block and the distinct-spectrum matrix both lie in the image of $GL_2(\mathbb{C})$, with determinants $1$ and $4$, so the first is in the image of $SL_2(\mathbb{C})$ and the second is not. The scalar lies in the centre.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Subject</th>
+<th>Key formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Matrix Product and the Algebra Structure</td>
+<td>the model</td>
+<td>$\mathsf{M}_4(\tilde Q)$ injective, $\operatorname{diag}(A,A)$ in the Peirce basis</td>
+</tr>
+<tr>
+<td>The Four Words and the Four Traces</td>
+<td>the trace pairing</td>
+<td>$\operatorname{Tr}(XY)=4\langle\tilde X,\tilde Y\rangle$</td>
+</tr>
+<tr>
+<td>The Peirce Coordinates and the Matrix Units</td>
+<td>the corners</td>
+<td>the four $2\times2$ blocks</td>
+</tr>
+<tr>
+<td>The Columns, the Rows and the Spinor Module</td>
+<td>the spinors</td>
+<td>$\mathbb{B}\Pi_\pm$, two copies of $\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>Trace, Determinant and the Biquaternion Norm</td>
+<td>the invariants</td>
+<td>$\operatorname{Tr}X=4Q_t$, $\det X=N^2$</td>
+</tr>
+<tr>
+<td>The Killing Form</td>
+<td>the Lie form</td>
+<td>$\kappa_{\mathbb{C}}=-8\vec X\cdot\vec Y$</td>
+</tr>
+<tr>
+<td>Rank-One Matrices and the Determinantal Variety</td>
+<td>the strata</td>
+<td>$\operatorname{rk}X=2\operatorname{rk}A\in\{0,2,4\}$</td>
+</tr>
+<tr>
+<td>Spin, Qubits and the Bloch Vector</td>
+<td>the states</td>
+<td>$\rho_4=\tfrac12\mathrm I_2\otimes\rho$</td>
+</tr>
+<tr>
+<td>The Polar Decomposition of a Matrix</td>
+<td>the factors</td>
+<td>$X=PV$, $P=(XX^{\dagger})^{1/2}$</td>
+</tr>
+<tr>
+<td>The Spectral Projectors and the Nilpotents</td>
+<td>the spectrum</td>
+<td>$\rho_\pm$ of rank two</td>
+</tr>
+<tr>
+<td>The Eigenbasis and the Diagonalising Matrix</td>
+<td>the basis</td>
+<td>$S^{-1}XS=\operatorname{diag}(A,A)$</td>
+</tr>
+<tr>
+<td>The Centraliser and the Double Centraliser</td>
+<td>the commutants and the right matrix</td>
+<td>$C_L(X)\cong\mathbb{C}[A]$, $C_L(C_L(X))\cong\mathbb{C}[A]$, $\mathsf{M}_4^{R}(\tilde Q)$</td>
+</tr>
+<tr>
+<td>The Conjugations and the Adjoints</td>
+<td>the involutions</td>
+<td>$X^{\dagger}=M_X^{\dagger}$, $X^{\mathsf T}=M_{X^{\natural}}$</td>
+</tr>
+<tr>
+<td>The Six Subspaces as Matrix Conditions</td>
+<td>the real forms</td>
+<td>Hermitian, anti-Hermitian, quaternion, anti-quaternion</td>
+</tr>
+<tr>
+<td>Worked Examples</td>
+<td>this article</td>
+<td>the eight matrices and the roster</td>
+</tr>
+<tr>
+<td>$GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</td>
+<td>the groups</td>
+<td>$\det X=N^2$, $\ker\det=\{N=\pm1\}$</td>
+</tr>
+<tr>
+<td>The Functional Calculus</td>
+<td>the exponential, the logarithm and the roots</td>
+<td>$\exp X=\mathsf{M}_4(\exp\tilde Q)$, $\log X=\mathsf{M}_4(\log\tilde Q)$, $X^{1/2}=(X+\sqrt N\mathrm I_4)/\sqrt{\tfrac12\operatorname{Tr}X+2\sqrt N}$</td>
+</tr>
+<tr>
+<td>The Sandwich as a Matrix Congruence</td>
+<td>the action</td>
+<td>$X\mapsto MXM^{\dagger}$, $\det$ scales by $\lvert N\rvert^4$</td>
+</tr>
+<tr>
+<td>The Projective Line and the Möbius Action</td>
+<td>the ideals</td>
+<td>$J_L$, $z\mapsto(az+b)/(cz+d)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The eight examples exhibit the scalar, the Jordan block, the distinct case, the singular case, the rank-one case, the unitary element, the Hermitian element and the normal element. The regular matrix has the invariants $\operatorname{Tr}X=4Q_t$, $\det X=N^2$, the eigenvalues $\lambda_\pm$ each twice, and the rank $2\operatorname{rk}A\in\{0,2,4\}$. The spectral projectors have rank two, the polar factors are the images of the algebra factors, and the flags Hermitian, unitary and normal are read from $X$. The roster collects the twenty articles of the series and their key formulas.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X=\mathsf{M}_4(\tilde Q)$</td>
+<td>the regular matrix</td>
+</tr>
+<tr>
+<td>$A=\mathsf{M}_2(\tilde Q)$</td>
+<td>the $2\times2$ block</td>
+</tr>
+<tr>
+<td>$\tau=2Q_t$, $\delta=N$</td>
+<td>the trace and determinant of $A$</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the eigenvalues, each twice</td>
+</tr>
+<tr>
+<td>$\rho_\pm$</td>
+<td>the rank-two spectral projectors</td>
+</tr>
+<tr>
+<td>$P,V$</td>
+<td>the polar factors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-representation-the-matrix-product-and-the-algebra-structure.html">$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure</a>, for the model</li>
+<li><a href="m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html">$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix</a>, for the basis</li>
+<li><a href="m2c-representation-worked-examples.html">$M_2(\mathbb{C})$ Representation : Worked Examples</a>, for the $2\times2$ version</li>
+<li><a href="worked-examples-of-eigenbasis-of-a-biquaternion.html">Worked Examples of Eigenbasis of a Biquaternion</a>, for the algebra</li>
+<li><a href="worked-examples-of-exponential-polar-decomposition-of-biquaternions.html">Worked Examples of Exponential Polar Decomposition of Biquaternions</a>, for the algebra</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

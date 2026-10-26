@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-polar-decomposition-of-a-matrix"><strong>$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every invertible regular matrix is the product of a positive Hermitian matrix and a unitary one, and the product is unique. The two factors are the images of the two factors of the biquaternion polar decomposition: the positive factor is the boost, the unitary factor is the phase times the rotor. The regular model doubles the eigenvalues and squares the determinants.</p>
+<p>This article develops the matrix polar decomposition, its refinement by the determinant, its closed form, its behaviour on the singular matrices, and the singular value decomposition. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure</em>. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det\mathsf{M}_4(\tilde Q)=N^2$. A matrix is <strong>positive</strong> when it is Hermitian with non-negative eigenvalues, and <strong>positive definite</strong> when the eigenvalues are positive. The unitary group of the image is $\mathrm U(\mathbb{B})\cong U(2)$.</p>
+<p><strong>Boundaries.</strong> The polar decomposition of the element is <em>The Polar Decomposition of a Biquaternion</em>; the groups are <em>$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</em>; the sandwich action is <em>The Sandwich in the $M_4(\mathbb{C})_L$ Model</em>; the $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</em>.</p>
+<h2 id="the-matrix-polar-decomposition">The Matrix Polar Decomposition</h2>
+<p><strong>Theorem.</strong> Every $M\in\mathsf{M}_4(\mathbb{B})$ has a factorisation
+$$
+M=PV,
+$$
+with $P$ positive semidefinite and $V$ a partial isometry. When $M$ is invertible, $P$ is positive definite, $V$ is unitary, and the factorisation is unique:
+$$
+P=(MM^{\dagger})^{1/2},\qquad V=P^{-1}M.
+$$</p>
+<p><em>Proof.</em> The matrix $MM^{\dagger}$ is Hermitian positive semidefinite, so it has a unique positive semidefinite square root $P$. If $M$ is invertible, $P$ is invertible and $V=P^{-1}M$ satisfies
+$$
+V^{\dagger}V=M^{\dagger}P^{-2}M=M^{\dagger}(MM^{\dagger})^{-1}M=\mathrm I_4,
+$$
+so $V$ is unitary. For uniqueness, $MM^{\dagger}=P^2=P'^2$ and the uniqueness of the positive square root give $P=P'$, hence $V=V'$. $\square$</p>
+<p><strong>The factors stay in the image.</strong> Since $M=\mathsf{M}_4(\tilde Q)$, the product $MM^{\dagger}=\mathsf{M}_4(\tilde Q\tilde Q^{*})$ is the image of a Hermitian positive element. Its positive square root is a function of $\tilde Q\tilde Q^{*}$, hence lies in the image; the unitary factor is the product of two images. Therefore
+$$
+P=\mathsf{M}_4(\tilde H),\qquad V=\mathsf{M}_4(\tilde U),
+$$
+with $\tilde H=\tilde H^{*}\ge0$ and $\tilde U^{*}\tilde U=e_t$.</p>
+<p><strong>The diffeomorphism.</strong> The map
+$$
+Herm^{>0}\times \mathrm U(\mathbb{B})\longrightarrow\mathsf{M}_4(\mathbb{B}^{\times}),
+\qquad
+(P,V)\longmapsto PV,
+$$
+is a diffeomorphism. The inverse is $M\mapsto((MM^{\dagger})^{1/2},(MM^{\dagger})^{-1/2}M)$. The two factors have real dimensions four and four, and the product accounts for the eight real dimensions of the regular group.</p>
+<h2 id="the-closed-form-of-the-positive-factor">The Closed Form of the Positive Factor</h2>
+<p><strong>The square root by the minimal polynomial.</strong> The Hermitian matrix $Y=MM^{\dagger}$ has eigenvalues $a,a,b,b$ with $a=\lvert\lambda_+\rvert^2$ and $b=\lvert\lambda_-\rvert^2$, so its minimal polynomial has degree at most two. Its positive square root is therefore a degree-one polynomial in $Y$:
+$$
+Y^{1/2}=\alpha Y+\beta\mathrm I_4,
+\qquad
+\alpha=\frac{1}{\sqrt a+\sqrt b},
+\qquad
+\beta=\frac{\sqrt{ab}}{\sqrt a+\sqrt b}.
+$$
+The coefficients are fixed by the two eigenvalues: on the $a$-eigenspace, $\alpha a+\beta=\sqrt a$, and on the $b$-eigenspace, $\alpha b+\beta=\sqrt b$.</p>
+<p><strong>The closed form.</strong> Since
+$$
+\sqrt a+\sqrt b=\sqrt{a+b+2\sqrt{ab}}
+=\sqrt{\tfrac12\operatorname{Tr}Y+2\sqrt{ab}},
+\qquad
+\sqrt{ab}=\lvert\lambda_+\lambda_-\rvert=\lvert N\rvert,
+$$
+the positive factor is
+$$
+\boxed{\;
+P=(MM^{\dagger})^{1/2}
+=\frac{MM^{\dagger}+\lvert N\rvert\,\mathrm I_4}
+{\sqrt{\tfrac12\operatorname{Tr}(MM^{\dagger})+2\lvert N\rvert}}
+\;}
+$$
+with $N=\langle\tilde Q\rangle_{\natural}$ and $\lvert N\rvert=\lvert\det M\rvert^{1/2}$.</p>
+<p><em>Check.</em> On the $a$-eigenspace the numerator is $a+\lvert N\rvert=a+\sqrt{ab}=\sqrt a(\sqrt a+\sqrt b)$, and the denominator is $\sqrt a+\sqrt b$; the quotient is $\sqrt a$. On the $b$-eigenspace it is $\sqrt b$. $\square$</p>
+<p><strong>The unitary factor.</strong> When $M$ is invertible,
+$$
+V=P^{-1}M
+=\frac{\sqrt{\tfrac12\operatorname{Tr}(MM^{\dagger})+2\lvert N\rvert}}
+{MM^{\dagger}+\lvert N\rvert\,\mathrm I_4}\,M,
+$$
+which is unitary. When $M$ is singular, $P$ is only positive semidefinite and $V$ is the partial isometry obtained from the Moore–Penrose inverse $P^{+}$.</p>
+<p><strong>The $2\times2$ comparison.</strong> In the $2\times2$ model the eigenvalues of $Y$ are $a,b$, $\operatorname{Tr}Y=a+b$, and $\sqrt{ab}=\lvert\det M\rvert=\lvert N\rvert$. The denominator is $\sqrt{\operatorname{Tr}Y+2\lvert N\rvert}=\sqrt a+\sqrt b$, and the formula is the $2\times2$ one. In the regular model the eigenvalues are doubled, $\operatorname{Tr}Y=2(a+b)$, and the half-trace appears. The numerator is unchanged.</p>
+<h2 id="the-biquaternion-word">The Biquaternion Word</h2>
+<p><strong>The two factors in the algebra.</strong> For a regular element, the matrix polar decomposition reads
+$$
+M=r\,\zeta\,\mathsf{M}_4(\tilde H_b)\,\mathsf{M}_4(\tilde U_r),
+\qquad
+r>0,\quad\lvert\zeta\rvert=1,
+$$
+with $\tilde H_b$ positive Hermitian of norm one and $\tilde U_r$ a rotor, $\tilde U_r^{*}\tilde U_r=e_t$ and $N(\tilde U_r)=1$. The factor $P$ is $r\mathsf{M}_4(\tilde H_b)$ and the factor $V$ is $\zeta\mathsf{M}_4(\tilde U_r)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Matrix</th>
+<th>Determinant</th>
+<th>Algebra-side name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r$</td>
+<td>$r\mathrm I_4$</td>
+<td>$r^4$</td>
+<td>the modulus</td>
+</tr>
+<tr>
+<td>$\zeta$</td>
+<td>$\zeta\mathrm I_4$</td>
+<td>$\zeta^4$</td>
+<td>the central phase</td>
+</tr>
+<tr>
+<td>$\tilde H_b$</td>
+<td>positive Hermitian, $N=1$</td>
+<td>$1$</td>
+<td>the boost</td>
+</tr>
+<tr>
+<td>$\tilde U_r$</td>
+<td>rotor, $N=1$, unitary</td>
+<td>$1$</td>
+<td>the rotor</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the determinants are fourth powers.</strong> The regular determinant is the square of the norm, and the norm of a scalar is the square of the scalar. Hence the scale $r$ contributes $r^4$ and the phase $\zeta$ contributes $\zeta^4$:
+$$
+\det M=r^4\zeta^4.
+$$
+The modulus is $r=\lvert\det M\rvert^{1/4}$ and the phase is a fourth root of $\det M/\lvert\det M\rvert$. The fourth root is the composition of the square in the norm and the square in the determinant.</p>
+<p><strong>The special linear case.</strong> If $M$ lies in the norm-one group, then $r=1$ and $\zeta^4=1$, so $\zeta$ is a fourth root of unity. The decomposition reduces to
+$$
+M=\mathsf{M}_4(\tilde H_b)\mathsf{M}_4(\tilde U_r),
+$$
+the positive factor of norm one and the rotor.</p>
+<p><strong>The Lie algebra.</strong> The polar decomposition at the identity is the Cartan decomposition
+$$
+\mathfrak{gl}_2(\mathbb{C})=\mathfrak{u}(2)\oplus Herm,
+$$
+the skew-Hermitian part and the Hermitian part. In the regular image the same decomposition is
+$$
+\mathsf{M}_4(\mathbb{B})=\mathsf{M}_4(\mathfrak{u}(\mathbb{B}))\oplus\mathsf{M}_4(Herm),
+$$
+with the two summands of real dimensions four and four.</p>
+<p><strong>The group.</strong> The multiplication map
+$$
+\mathrm U(\mathbb{B})\times Herm^{>0}\longrightarrow\mathbb{B}^{\times}
+$$
+is a diffeomorphism, and its image is the polar decomposition of the regular group. The two factors are the maximal compact subgroup and the positive Hermitian cone.</p>
+<h2 id="the-two-halves">The Two Halves</h2>
+<p><strong>The boost.</strong> A positive Hermitian matrix of determinant one is the exponential of a traceless Hermitian matrix:
+$$
+M_b=\exp(H),\qquad H=H^{\dagger},\quad\operatorname{Tr}H=0.
+$$
+Writing $H=\tfrac{\eta}{2}\hat u\cdot\Sigma$ with $\hat u$ a unit vector and $\eta\in\mathbb{R}$, the regular matrix is the block matrix
+$$
+\mathsf{M}_4(H_b)=\operatorname{diag}(M_b,M_b),
+$$
+with eigenvalues $e^{\pm\eta/2}$, each twice. The parameter $\eta$ is the rapidity and $\hat u$ the boost direction. In the algebra it is the Hermitian unit-norm element $\exp(\tfrac{\eta}{2}i\hat u\cdot\vec e)$.</p>
+<p><strong>The rotor.</strong> A special unitary matrix is the exponential of a traceless anti-Hermitian matrix:
+$$
+M_r=\exp(K),\qquad K=-K^{\dagger},\quad\operatorname{Tr}K=0,
+$$
+and writing $K=-\tfrac{i\theta}{2}\hat u\cdot\Sigma$ gives the block matrix
+$$
+\mathsf{M}_4(U_r)=\operatorname{diag}(M_r,M_r),
+$$
+with eigenvalues $e^{\pm i\theta/2}$, each twice. The parameter $\theta$ is the rotation angle and $\hat u$ the axis. In the algebra it is the rotor $\exp(\tfrac{\theta}{2}\hat u\cdot\vec e)$.</p>
+<p><strong>The order of the factors.</strong> The decomposition is $M=PV$, positive factor first, unitary second. The algebra decomposition is $\tilde Q=\tilde Q_H\tilde Q_0$ with the same order. The reverse order would give a different pair of factors, and the two orders are related by conjugating the unitary factor by the positive one. The convention is fixed by the matrix theorem, and the algebra articles use the same order.</p>
+<p><strong>The two real forms.</strong> The boost is Hermitian and the rotor is unitary. The Hermitian matrices are the informational subspace $\mathbb{M}_+$; the unitary group is the compact real form of the unit group. The polar decomposition is therefore a decomposition of the complex group into a non-compact Hermitian factor and a compact unitary factor, and it is the matrix form of the split of the algebra into its two real forms. In the regular model each factor is doubled, and the two copies are the two minimal left ideals.</p>
+<p><strong>Theorem.</strong> For an invertible $M$,
+$$
+\det M=\det P\,\det V,
+\qquad
+\det P=\lvert\det M\rvert,
+\qquad
+\lvert\det V\rvert=1.
+$$
+In the regular model,
+$$
+\det M=N^2,\qquad
+\det P=\lvert N\rvert^2,\qquad
+\det V=\frac{N^2}{\lvert N\rvert^2}.
+$$</p>
+<p><em>Proof.</em> The positive factor has positive real determinant, and the unitary factor has determinant of modulus one. The product is the determinant of $M$. For the regular matrix, $\det M=N^2$ and $\det P=(\lvert N\rvert)^2$. $\square$</p>
+<p><strong>The phase.</strong> The determinant of the unitary factor is a complex number of modulus one. It is the square of the phase of the norm, because the determinant is the square of the norm; equivalently it is the fourth power of the central phase $\zeta$.</p>
+<h2 id="the-singular-case">The Singular Case</h2>
+<p><strong>The partial isometry.</strong> For a nonzero singular $M$, the positive factor $P=(MM^{\dagger})^{1/2}$ has rank two, and $V$ is a partial isometry with initial space the kernel of $M$ and final space the image of $M$. The decomposition $M=PV$ is still unique if $P$ is required to be positive semidefinite and $V$ to vanish on the kernel.</p>
+<p><strong>The rank.</strong> The regular model has rank two on the singular stratum, so $P$ has rank two, $V$ has rank two, and the product has rank two. The polar decomposition preserves the rank stratification of <em>$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety</em>.</p>
+<p><strong>The zero matrix.</strong> At $M=0$ the positive factor is $0$ and the partial isometry is arbitrary; the decomposition is not unique.</p>
+<h2 id="the-singular-value-decomposition">The Singular Value Decomposition</h2>
+<p><strong>The theorem.</strong> Every $M\in M_4(\mathbb{C})$ factors as</p>
+<p>$$
+M=U\Sigma V^{\dagger},\qquad
+\Sigma=\operatorname{diag}(s_1,s_1,s_2,s_2),\quad s_1\ge s_2\ge0,
+$$</p>
+<p>with $U$ and $V$ unitary. The two numbers $s_1,s_2$ are the singular values of the regular matrix, each repeated twice.</p>
+<p><strong>The doubling.</strong> The assignment $\mathsf{M}_4$ is a $*$-isomorphism onto its image, so</p>
+<p>$$
+MM^{\dagger}=\mathsf{M}_4(\tilde Q\tilde Q^{*})
+$$</p>
+<p>has the eigenvalues of $AA^{\dagger}$ each twice, with $A=\mathsf{M}_2(\tilde Q)$. Hence the singular values of $\mathsf{M}_4(\tilde Q)$ are those of $A$, each twice, and the ambient $4\times4$ matrix has no further singular values.</p>
+<p><strong>From the polar decomposition.</strong> Write $M=PW$, with $W$ unitary when $M$ is invertible, and diagonalise the positive factor,</p>
+<p>$$
+P=U\Sigma U^{\dagger},\qquad
+\Sigma=\operatorname{diag}(s_1,s_1,s_2,s_2).
+$$</p>
+<p>Then</p>
+<p>$$
+M=U\Sigma\,(W^{\dagger}U)^{\dagger},
+$$</p>
+<p>so the left unitary is the eigenbasis of $P$ and the right unitary is $W^{\dagger}U$. The SVD is the polar decomposition with the positive factor diagonalised; conversely $P=U\Sigma U^{\dagger}$ and $W=UV^{\dagger}$ recover the polar factors.</p>
+<p><strong>The singular values in the biquaternion word.</strong> With $M=r\zeta\mathsf{M}_4(\tilde H_b)\mathsf{M}_4(\tilde U_r)$, the positive factor is $P=r\mathsf{M}_4(\tilde H_b)$. The eigenvalues of $\tilde H_b$ are $e^{\pm\eta/2}$, so</p>
+<p>$$
+s_1=r e^{\eta/2},\qquad s_2=r e^{-\eta/2},\qquad s_1^2s_2^2=r^4=\lvert\det M\rvert,
+$$</p>
+<p>each singular value repeated twice. The singular values coincide exactly when $\tilde H_b=e_t$.</p>
+<p><strong>The normal case.</strong> The multiset of singular values equals the multiset of eigenvalue moduli exactly when $M$ is normal, by the equality case of Schur's inequality. In the regular model the eigenvalues are doubled, and the condition is the normality of the underlying element.</p>
+<p><strong>The rank and the strata.</strong> The rank is the number of nonzero singular values counted with multiplicity: it is $4$ generically, $2$ on the nonzero part of the determinantal variety, and $0$ at the zero matrix. This is twice the rank of the $2\times2$ model, as the rank stratification requires.</p>
+<p><strong>The algebra reading.</strong> In the basis in which the regular matrix is the two copies of $A$, the SVD is the direct sum of two copies of the $2\times2$ SVD. The two unitaries then act identically on the two copies; the diagonal factor is the boost read in the eigenbasis, and it need not lie in the image.</p>
+<h2 id="summary">Summary</h2>
+<p>Every invertible regular matrix is uniquely $M=PV$ with $P$ positive definite Hermitian and $V$ unitary, both in the image. The positive factor is $(MM^{\dagger})^{1/2}$, with the closed form $(MM^{\dagger}+\lvert\det M\rvert\mathrm I_4)/\sqrt{\tfrac12\operatorname{Tr}(MM^{\dagger})+2\lvert\det M\rvert}$, and the unitary factor is $P^{-1}M$. The determinant splits as $\det P=\lvert\det M\rvert$ and $\lvert\det V\rvert=1$. In the algebra word $M=r\zeta\mathsf{M}_4(\tilde H_b)\mathsf{M}_4(\tilde U_r)$, the determinant is $r^4\zeta^4$: the regular model squares the $2\times2$ determinants. The singular case gives a rank-two positive factor and a partial isometry. The singular value decomposition diagonalises the positive factor, $P=U\Sigma U^{\dagger}$, and the singular values are $r e^{\pm\eta/2}$, each repeated twice.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M=PV$</td>
+<td>the polar decomposition</td>
+</tr>
+<tr>
+<td>$P=(MM^{\dagger})^{1/2}$</td>
+<td>the positive factor</td>
+</tr>
+<tr>
+<td>$V=P^{-1}M$</td>
+<td>the unitary factor</td>
+</tr>
+<tr>
+<td>$r=\lvert\det M\rvert^{1/4}$</td>
+<td>the modulus in the regular model</td>
+</tr>
+<tr>
+<td>$\zeta$</td>
+<td>the phase, a fourth root of the determinant phase</td>
+</tr>
+<tr>
+<td>$M=U\Sigma V^{\dagger}$</td>
+<td>the singular value decomposition</td>
+</tr>
+<tr>
+<td>$s_1,s_2$</td>
+<td>the singular values, each repeated twice</td>
+</tr>
+<tr>
+<td>$W$</td>
+<td>the polar unitary in the SVD derivation</td>
+</tr>
+<tr>
+<td>$\tilde H_b,\tilde U_r$</td>
+<td>the boost and the rotor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-representation-gl2-sl2-and-the-determinant.html">$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a>, for the groups</li>
+<li><a href="the-sandwich-in-the-m4c-l-model.html">The Sandwich in the $M_4(\mathbb{C})_L$ Model</a>, for the action of the factors</li>
+<li><a href="m2c-representation-the-polar-decomposition-of-a-matrix.html">$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix</a>, for the $2\times2$ version</li>
+<li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of a N-Regular Biquaternion</a>, for the algebra</li>
+<li><a href="the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of a N-Degenerate Biquaternion</a>, for the singular case</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
