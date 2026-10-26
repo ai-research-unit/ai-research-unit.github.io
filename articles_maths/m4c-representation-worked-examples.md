@@ -264,7 +264,7 @@ The checks are collected in one table.
 | The Matrix Product and the Algebra Structure | the model | $\mathsf{M}_4(\tilde Q)$ injective, $\operatorname{diag}(A,A)$ in the Peirce basis |
 | The Four Words and the Four Traces | the trace pairing | $\operatorname{Tr}(XY)=4\langle\tilde X,\tilde Y\rangle$ |
 | The Peirce Coordinates and the Matrix Units | the corners | the four $2\times2$ blocks |
-| The Columns, the Rows and the Spinor Module | the spinors | $\mathbb{B}\Pi_\pm$, two copies of $\mathbb{C}^2$ |
+| The Columns, the Rows and the Spinor Spaces | the spinors | $\mathbb{B}\Pi_\pm$, two copies of $\mathbb{C}^2$ |
 | Trace, Determinant and the Biquaternion Norm | the invariants | $\operatorname{Tr}X=4Q_t$, $\det X=N^2$ |
 | The Killing Form | the Lie form | $\kappa_{\mathbb{C}}=-8\vec X\cdot\vec Y$ |
 | Rank-One Matrices and the Determinantal Variety | the strata | $\operatorname{rk}X=2\operatorname{rk}A\in\{0,2,4\}$ |

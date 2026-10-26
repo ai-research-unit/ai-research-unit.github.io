@@ -12,6 +12,11 @@ Status: **KEEP** (title and body unchanged), **RENAME** (new title, body unchang
 and re-homed). Executed on 2026-09-27: all 34 articles exist, the menu carries the four
 sections, and the forms block follows.
 
+Amended 2026-09-27: *The Spinor Spaces* was inserted as article 16, *The Minimal Left
+Ideals* kept only the module layer, and the two Columns, Rows and Spinor Spaces articles
+moved from *The Modules* into *The Frame* as 19 and 20. The block has 35 articles; the
+tables below carry the new positions.
+
 ## 1. The Algebra
 
 The object, its element, its symmetries.
@@ -71,8 +76,11 @@ The two families the square produced, then the frame that arranges them.
 | 13 | Nilpotents | `square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md` | RENAME | 4,800 |
 | 14 | Idempotents | `square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md` | RENAME | 6,700 |
 | 15 | The Peirce Decomposition | `the-peirce-decomposition.md` (new) | SPLIT | 5,100 |
-| 16 | $M_2(\mathbb{C})$ Model : Peirce Coordinates and Matrix Units | existing | KEEP | 1,700 |
-| 17 | $M_4(\mathbb{C})_L$ Model : Peirce Coordinates and Matrix Units | existing | KEEP | 1,200 |
+| 16 | The Spinor Spaces | `the-spinor-spaces.md` (new) | NEW | 1,400 |
+| 17 | $M_2(\mathbb{C})$ Model : Peirce Coordinates and Matrix Units | existing | KEEP | 1,700 |
+| 18 | $M_4(\mathbb{C})_L$ Model : Peirce Coordinates and Matrix Units | existing | KEEP | 1,200 |
+| 19 | $M_2(\mathbb{C})$ Model : Columns, Rows and the Spinor Spaces | existing | RENAME | 2,000 |
+| 20 | $M_4(\mathbb{C})_L$ Model : Columns, Rows and the Spinor Spaces | existing | RENAME | 1,800 |
 
 Article 14 defines idempotents without the word *family* for the $Q_t\neq0$ half: the
 trivial idempotents $0,e_t$; the nontrivial ones, all with $Q_t=\tfrac12$ and
@@ -85,7 +93,7 @@ Article 15 takes §*Idempotents and Orthogonal Idempotents*, §*The Peirce Decom
 four corners, the corner rule, the matrix units, the reciprocal $\mathbb{C}^\times$ and
 the notion of a frame.
 
-Article 17 owns the Cayley block form.
+Article 16 owns the two planes $S_\pm$, the two couples and the two actions, with no form and no module. Article 18 owns the Cayley block form.
 
 ## 3. The Modules
 
@@ -93,24 +101,20 @@ The algebra acting on itself and on its ideals.
 
 | # | article | file | status | words |
 |---|---|---|---|---|
-| 18 | The Regular Module | `the-regular-module.md` (new) | SPLIT | 6,000 |
-| 19 | The Minimal Left Ideals | `the-minimal-left-ideals.md` (new) | SPLIT | 4,100 |
-| 20 | The Category of Modules | `the-category-of-modules.md` (new) | SPLIT | 7,400 |
-| 21 | $M_2(\mathbb{C})$ Model : Columns, Rows and the Spinor Module | existing | KEEP | 2,100 |
-| 22 | $M_4(\mathbb{C})_L$ Model : Columns, Rows and the Spinor Module | existing | KEEP | 1,900 |
+| 21 | The Regular Module | `the-regular-module.md` (new) | SPLIT | 6,000 |
+| 22 | The Minimal Left Ideals | `the-minimal-left-ideals.md` (new) | SPLIT | 1,400 |
+| 23 | The Category of Modules | `the-category-of-modules.md` (new) | SPLIT | 7,400 |
 
-Article 18 takes §*The Three Regular Modules*, §*The Submodules Are the Ideals*, §*The
+Article 21 takes §*The Three Regular Modules*, §*The Submodules Are the Ideals*, §*The
 Four Properties of the Regular Object*, §*The Endomorphisms of the Regular Object* and
 §*The Defining Module* of `modules-over-the-biquaternion-algebra.md`, plus §*The
 Two-Sided Ideals* and §*Artinian, Semisimple, and Length Two* of the Peirce article. It
 states: simple as an algebra (the two-sided ideals are $0$ and $\mathbb{B}$); length two
 as a left module; radical zero.
 
-Article 19 takes §*The Decomposition into Minimal Left and Right Ideals*, §*Spinors and
-the Two Couples* and §*The Two Sector Articles as Specialisations*. It owns the two
-copies, $\mathbb{C}^2$, the couples $\mathcal{C}_\pm$, chirality and the spinor reading.
+Article 22 takes §*The Decomposition into Minimal Left and Right Ideals* and the minimality. It owns the two copies as ideals, $\mathbb{C}^2$, the simple module and the classification. The couples, the chirality and the two actions are article 16.
 
-Article 20 takes §*The Category of Left Modules*, §*Projectivity and the Parity of
+Article 23 takes §*The Category of Left Modules*, §*Projectivity and the Parity of
 Freeness*, §*The Commutant of an Element*, §*Morita Equivalence with the Complex Field*,
 §*Torsion*, §*Real Structures* and §*The Biquaternion Case* of the module article, plus
 §*The Lattice of Left Ideals*, §*The Projective Line and the Möbius Action* and §*The

@@ -1,14 +1,14 @@
-# __$M_4(\mathbb{C})_L$ Model : Columns, Rows and the Spinor Module__
+# __$M_4(\mathbb{C})_L$ Model : Columns, Rows and the Spinor Spaces__
 
 ## Introduction
 
-The regular module of the biquaternion algebra splits into two identical minimal left ideals. Each is a two-dimensional complex space carrying the defining representation of $M_2(\mathbb{C})$, and each is a copy of the spinor module. In the $4\times4$ regular model the splitting is visible as two complementary coordinate planes, and the matrix acts on each plane by the same $2\times2$ matrix.
+The regular module of the biquaternion algebra splits into two identical minimal left ideals. Each is a two-dimensional complex space carrying the defining representation of $M_2(\mathbb{C})$, and each is one of the two spinor spaces of *The Spinor Spaces*. In the $4\times4$ regular model the splitting is visible as two complementary coordinate planes, and the matrix acts on each plane by the same $2\times2$ matrix.
 
-This article develops the splitting, the columns and rows, the endomorphisms and the lattice of left ideals. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*.
+This article develops the splitting, the columns and rows, the endomorphisms and the lattice of left ideals. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces*.
 
 **Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. The Peirce idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, the nilpotents are $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, and the change $S$ has columns $\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-$.
 
-**Boundaries.** The Peirce coordinates are *$M_4(\mathbb{C})_L$ Representation : The Peirce Coordinates and the Matrix Units*; the spectral projectors are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the right module is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the abstract ideals are *The Peirce Decomposition*. The $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*.
+**Boundaries.** The Peirce coordinates are *$M_4(\mathbb{C})_L$ Representation : The Peirce Coordinates and the Matrix Units*; the spectral projectors are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the right module is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the abstract spinor spaces are *The Spinor Spaces*; the abstract ideals are *The Regular Module* and *The Minimal Left Ideals*. The $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces*.
 
 ## The Left Ideals Are the Columns
 
@@ -33,7 +33,7 @@ $$
 
 and the two summands are minimal left ideals. Left multiplication by $\tilde Q$ preserves each summand and acts on each by the same matrix $\mathsf{M}_2(\tilde Q)$.
 
-*Proof.* The idempotents are orthogonal and sum to $e_t$, so every $\tilde X$ splits as $\tilde X\tilde\Pi_++\tilde X\tilde\Pi_-$. The ideal $\mathbb{B}\tilde\Pi_+$ is spanned by $\tilde\Pi_+$ and $\vec\Upsilon_+$, two linearly independent elements, and the Peirce table shows that it is closed under left multiplication and has no proper nonzero submodule. The action in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$ is $\mathsf{M}_2(\tilde Q)$ by the block theorem. The same holds for the second ideal in the basis $(\vec\Upsilon_-,\tilde\Pi_-)$. $\square$
+*Proof.* The idempotents are orthogonal and sum to $e_t$, so every $\tilde X$ splits as $\tilde X\tilde\Pi_++\tilde X\tilde\Pi_-$. The ideal $\mathbb{B}\tilde\Pi_+$ is spanned by $\tilde\Pi_+$ and $\vec\Upsilon_+$, two linearly independent elements, and the Peirce table shows that it is closed under left multiplication and has no proper nonzero submodule. The action in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$ is $\mathsf{M}_2(\tilde Q)$ by the block theorem. The same holds for the second ideal in the basis $(\vec\Upsilon_-,\tilde\Pi_-)$.
 
 **The two copies in the regular model.** In $M_4(\mathbb{C})$, the image of the first ideal is the column space of $\mathsf{M}_4(\tilde\Pi_+)$, a two-dimensional subspace $E_+\subset\mathbb{C}^4$; the second is $E_-$, the column space of $\mathsf{M}_4(\tilde\Pi_-)$. The two are complementary,
 $$
@@ -65,27 +65,27 @@ the four Peirce corners. The diagonal corners are the two ideals read on the lef
 
 **Left multiplication preserves each ideal.** For any $M$ in the image, the products $M\mathsf{M}_4(\tilde\Pi_+)$ and $M\mathsf{M}_4(\tilde\Pi_-)$ have column spaces $E_+$ and $E_-$. No left multiplication relates the two ideals. This is the matrix statement that a left ideal is stable on the left, read on the two pairs of columns.
 
-**Right multiplication exchanges the ideals.** Right multiplication by the off-diagonal unit maps $E_+$ onto $E_-$ and annihilates $E_-$:
+**Right multiplication exchanges the ideals.** Right multiplication by $\vec\Upsilon_-$ maps $E_+$ onto $E_-$ and annihilates $E_-$:
 $$
-\mathsf{M}_4(\tilde X)\mathsf{M}_4(\vec\Upsilon_+)=\mathsf{M}_4(\tilde X\vec\Upsilon_+),
+\mathsf{M}_4(\tilde X)\mathsf{M}_4(\vec\Upsilon_-)=\mathsf{M}_4(\tilde X\vec\Upsilon_-),
 $$
-and $\tilde X\vec\Upsilon_+$ lies in $\mathbb{B}\tilde\Pi_-$ for every $\tilde X$. In the Peirce basis the matrix has the two blocks
+and $\tilde X\vec\Upsilon_-$ lies in $\mathbb{B}\tilde\Pi_-$ for every $\tilde X$. In the Peirce basis the matrix has the two blocks
 $$
 \operatorname{diag}(E_{12},E_{12}),
 $$
 so the exchange is the block off-diagonal unit read twice, and it is not an algebra automorphism.
 
-**The mass term must be a right multiplication.** A term that couples the two chiralities cannot be a left multiplication, because a left multiplication preserves each ideal. It must be a right multiplication, and the element that performs it is the one carried to an off-diagonal matrix unit. This is the structural reason the biquaternionic Dirac equation couples the chiralities on the right. The spinor module, not the whole algebra, is the carrier of the Dirac field, and the right action of $\vec\Upsilon_+$ is the coupling. In the regular model the coupling is the doubled off-diagonal block, and the two copies of the spinor module are exchanged simultaneously.
+Read as a right multiplication, the mass term is the doubled off-diagonal block, and the two spinor spaces are exchanged simultaneously. The structural statement and the physical reading are §*The Right Action* of *The Spinor Spaces* and the $2\times2$ article.
 
 **The exchange is not canonical.** The two ideals are isomorphic as left modules, and the isomorphism is right multiplication by a suitable element, but it depends on the choice of the off-diagonal unit. In the regular model the choice is the Peirce basis, and a different basis changes the matrix of the exchange without changing the two ideals.
 
-## The Spinor Module
+## The Spinor Spaces in the Regular Model
 
-**Definition.** The **spinor module** is one minimal left ideal,
+**The two copies.** The two spinor spaces are
 $$
 \mathcal S=\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2,
 $$
-with the action of $\mathbb{B}$ by left multiplication. A **spinor** is an element of $\mathcal S$. The second copy $\mathcal S'=\mathbb{B}\tilde\Pi_-$ is isomorphic to $\mathcal S$, and the regular module is
+with the action of $\mathbb{B}$ by left multiplication, and $\mathcal S'=\mathbb{B}\tilde\Pi_-$ is the second. The regular module is
 $$
 \mathbb{B}\cong\mathcal S\oplus\mathcal S'.
 $$
@@ -95,11 +95,11 @@ $$
 \tilde Q\cdot\begin{pmatrix}x\\y\end{pmatrix}
 =\mathsf{M}_2(\tilde Q)\begin{pmatrix}x\\y\end{pmatrix}.
 $$
-The $4\times4$ matrix acts on $E_+$ by the same formula and on $E_-$ by the same formula again. The two spinor copies are not coupled by left multiplication; they are coupled only by right multiplication and by general endomorphisms of the regular module.
+The $4\times4$ matrix acts on $E_+$ by the same formula and on $E_-$ by the same formula again. The two spinor spaces are not coupled by left multiplication; they are coupled only by right multiplication and by general endomorphisms of the regular module.
 
-**Why two copies.** The algebra $M_2(\mathbb{C})$ acting on itself has one isotypic component of multiplicity two: the regular module is $S^{\oplus 2}$. The commutant is the full matrix algebra $M_2(\mathbb{C})$ on the multiplicity space, of dimension four. In the regular model the multiplicity is visible as the two blocks.
+**The multiplicity.** The algebra $M_2(\mathbb{C})$ acting on itself has one isotypic component of multiplicity two: the regular module is $S^{\oplus 2}$. The multiplicity is visible in the regular model as the two blocks, and the commutant is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*.
 
-## The Endomorphisms of the Regular Module
+## The Endomorphisms of the Algebra
 
 **Theorem.** Every $\mathbb{B}$-linear endomorphism of $\mathbb{B}$ is a right multiplication, and
 $$
@@ -112,11 +112,11 @@ $$
 $$
 T(\tilde X)=T(\tilde Xe_t)=\tilde XT(e_t)=\tilde X\tilde Q_0,
 $$
-so $T$ is right multiplication by $\tilde Q_0$. The map $\tilde Q_0\mapsto R_{\tilde Q_0}$ is an anti-isomorphism, hence an isomorphism onto the opposite algebra. $\square$
+so $T$ is right multiplication by $\tilde Q_0$. The map $\tilde Q_0\mapsto R_{\tilde Q_0}$ is an anti-isomorphism, hence an isomorphism onto the opposite algebra.
 
-**The matrix form.** In $M_4(\mathbb{C})$ the endomorphisms are the right regular matrices $\mathsf{M}_4^{R}(\tilde Q)$, and the statement is the double centraliser theorem of *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*. The two copies of the spinor module are exchanged by the endomorphisms that are not scalar on the multiplicity space; the scalar ones preserve each copy.
+**The matrix form.** In $M_4(\mathbb{C})$ the endomorphisms are the right regular matrices $\mathsf{M}_4^{R}(\tilde Q)$, and the statement is the double centraliser theorem of *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*. The two spinor spaces are exchanged by the endomorphisms that are not scalar on the multiplicity space; the scalar ones preserve each copy.
 
-**The Hom spaces.** For the two copies,
+**The Hom spaces.** For the two spaces,
 $$
 \operatorname{Hom}_{\mathbb{B}}(\mathcal S,\mathcal S)=\mathbb{C},\qquad
 \operatorname{Hom}_{\mathbb{B}}(\mathcal S,\mathcal S')=\mathbb{C},
@@ -125,7 +125,7 @@ by Schur's lemma and the isomorphism $\mathcal S\cong\mathcal S'$. An endomorphi
 
 ## The Lattice of Left Ideals
 
-**The minimal ideals.** The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the subspaces $M_2(\mathbb{C})P$ for the rank-one projections $P$. They are parametrized by the lines of $\mathbb{C}^2$, that is, by the projective line $\mathbb{P}^1(\mathbb{C})$. Each is isomorphic to the spinor module $\mathcal S$.
+**The minimal ideals.** The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the subspaces $M_2(\mathbb{C})P$ for the rank-one projections $P$. They are parametrized by the lines of $\mathbb{C}^2$, that is, by the projective line $\mathbb{P}^1(\mathbb{C})$. Each is isomorphic to the spinor space $\mathcal S$.
 
 **The two fixed points.** The idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ correspond to the two coordinate lines of $\mathbb{C}^2$, the two columns of the matrix model. The other minimal ideals correspond to the other lines; they are obtained from the two columns by conjugation by $GL_2(\mathbb{C})$.
 
@@ -135,14 +135,14 @@ by Schur's lemma and the isomorphism $\mathcal S\cong\mathcal S'$. An endomorphi
 
 ## Summary
 
-The regular module splits into two identical minimal left ideals, each a copy of the spinor module $\mathcal{S}\cong\mathbb{C}^2$. The $4\times4$ matrix preserves the two copies and acts on each by the same $2\times2$ matrix; in the Peirce basis they are the two coordinate planes. The endomorphisms of the regular module are the right multiplications, forming the opposite algebra $M_2(\mathbb{C})$. The minimal left ideals are parametrized by the projective line, with the two columns as the fixed points.
+The regular module splits into two identical minimal left ideals, each a spinor space $\mathcal{S}\cong\mathbb{C}^2$. The $4\times4$ matrix preserves the two spaces and acts on each by the same $2\times2$ matrix; in the Peirce basis they are the two coordinate planes. The endomorphisms of the regular module are the right multiplications, forming the opposite algebra $M_2(\mathbb{C})$. The minimal left ideals are parametrized by the projective line, with the two columns as the fixed points.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Pi_\pm$ | the two minimal idempotents |
-| $\mathcal S=\mathbb{B}\tilde\Pi_+$ | the spinor module |
+| $\mathcal S=\mathbb{B}\tilde\Pi_+$ | the first spinor space |
 | $E_\pm$ | the two coordinate planes in $\mathbb{C}^4$ |
 | $\operatorname{End}_{\mathbb{B}}(\mathbb{B})$ | the right multiplications |
 | $\mathbb{P}^1(\mathbb{C})$ | the lattice of minimal left ideals |
@@ -152,5 +152,5 @@ The regular module splits into two identical minimal left ideals, each a copy of
 - [$M_4(\mathbb{C})_L$ Representation : The Peirce Coordinates and the Matrix Units](m4c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the idempotents
 - [$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the endomorphisms
 - [$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector](m4c-representation-spin-qubits-and-the-bloch-vector.html), for the state space
-- [$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module](m2c-representation-the-columns-the-rows-and-the-spinor-module.html), for the $2\times2$ version
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the abstract lattice
+- [$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces](m2c-representation-the-columns-the-rows-and-the-spinor-spaces.html), for the $2\times2$ version
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the abstract lattice

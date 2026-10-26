@@ -31,8 +31,8 @@ This is the short answer; §1–§8 are the evidence. Status words are those of 
 
 **The order rule.** An entry may be written only after the article that introduces every
 notion it uses. The positions below are the article positions of the biquaternion algebra
-block, after the two menu moves of 2026-09-27. The first polar is article 44; the first
-N-polar is article 54; K-regularity is article 65. No entry is placed before its
+block, after the two menu moves of 2026-09-27. The first polar is article 45; the first
+N-polar is article 55; K-regularity is article 66. No entry is placed before its
 prerequisite.
 
 ### 0.1 Used in the corpus
@@ -40,25 +40,28 @@ prerequisite.
 | Decomposition | Form | Article (position) |
 |---|---|---|
 | Peirce at an idempotent | none | *The Peirce Decomposition* (15) |
-| Jordan–Chevalley additive | none | *The Semisimple–Nilpotent Split* (29) |
-| Eigenvalue decomposition | none | *The Spectrum* (23); *The Eigenbasis* (30); *The Jordan Normal Form* (33) |
+| Jordan–Chevalley additive | none | *The Semisimple–Nilpotent Split* (30) |
+| Eigenvalue decomposition | none | *The Spectrum* (24); *The Eigenbasis* (31); *The Jordan Normal Form* (34) |
+| Scalar–vector, quaternion and Hermitian eigenspace splits | none | *The Three Eigenspace Decompositions* (6) |
 | Zero divisor as one Peirce corner | none | *Zero Divisors and Units* (10); *Nilpotents* (13); *Idempotents* (14) |
-| Regular-module split | none | *The Regular Module* (18) |
-| Minimal left ideals and spinors | none | *The Minimal Left Ideals* (19) |
+| Regular-module split | none | *The Regular Module* (21) |
+| Spinor spaces and the two couples | none | *The Spinor Spaces* (16) |
+| Minimal left ideals | none | *The Minimal Left Ideals* (22) |
 | $M_2$ block form / $M_4$ block form | none | the two matrix-product articles (11, 12) |
-| $H$-polar, general and Cartan | H | *The Polar Decomposition of a Biquaternion* (44) |
-| $H$-spectral | H | *The Eigenbasis* (30) |
-| $H$-SVD at matrix level | H | *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix* (45) |
-| Modulus–unit $Q=\Rho U$ and the four-factor word | N + H | *The Polar Decomposition of an N-Regular Biquaternion* (54) |
+| $H$-polar, general and Cartan | H | *The Polar Decomposition of a Biquaternion* (45) |
+| $H$-spectral (normal, unitary eigenbasis) | H | *The Biquaternion Eigenvalue Decomposition* (Clifford block); *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix* (32) |
+| $H$-SVD at matrix level | H | *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix* (46) |
+| Modulus–unit $Q=\Rho U$ and the four-factor word | N + H | *The Polar Decomposition of an N-Regular Biquaternion* (55) |
+| Exponential polar | N + H | the exponential-polar series (99–121) |
 | Krein isometry group and Cartan decomposition | K | *The Krein Isometry Group and Its Cartan Decomposition* |
 
 ### 0.2 Suggested by the corpus, not implemented
 
 **None.** The corpus names no decomposition that it does not either write or defer to an
-article that exists. The four-factor refinement is in (54); the exponential polar is in
-the exponential-polar articles; the spectral decomposition is in (30) and (33); the
-multiplicative Jordan–Chevalley is in (29); the Moore–Penrose inverse is in
-*The Moore–Penrose Inverse in an Involutive Algebra*, cited by (44). Everything in §0.3
+article that exists. The four-factor refinement is in (55); the exponential polar is in
+the exponential-polar articles; the spectral decomposition is in (31) and (34); the
+multiplicative Jordan–Chevalley is in (30); the Moore–Penrose inverse is in
+*The Moore–Penrose Inverse in an Involutive Algebra*, cited by (45). Everything in §0.3
 is an extension, not a corpus suggestion.
 
 ### 0.3 Extensions, not in the corpus
@@ -103,8 +106,8 @@ norm, polar before SVD.
 
 This is the layer before the forms. It uses the product, the scalar part as a coefficient,
 and the characteristic polynomial. No pairing of two vectors occurs anywhere in it. In
-`maths.md` it is filed as two sections, in this order: *The Peirce Decomposition, Ideals
-and Modules* (the frame, §1.1) and *Spectral Algebra* (the element, §1.2–§1.5). The frame
+`maths.md` it is filed as two sections, in this order: *The Frame* (the frame, §1.1) and
+*Spectral Algebra* (the element, §1.2–§1.5). The frame
 comes first because it needs only an idempotent, while every spectral statement is read in
 it. LU is recorded at the end and rejected: it is algebraic, not spectral, and it is
 listed only to close the list.
@@ -423,8 +426,8 @@ Dropped from the earlier draft, with the reason.
   idempotents.
 
 **Filing.** Superseded for the form-free block by `articles_reserve/STRUCTURE-ALGEBRA.md`.
-The block is four sections: *The Algebra* (12 articles), *The Frame* (5), *The Modules*
-(5), *The Element* (12 and the worked examples). The forms block follows.
+The block is four sections: *The Algebra* (12 articles), *The Frame* (8), *The Modules*
+(3), *The Element* (12 and the worked examples). The forms block follows.
 
 Rules for the ladder.
 
@@ -514,9 +517,12 @@ $\operatorname{Sc}(\tau x\cdot\tau y)=\operatorname{Sc}(\tau(yx))=\operatorname{
 | $H$ | $A^{\#_H}=A^{*}$ | $U(4)$ | 16 | Hermitian |
 | $K$ | $A^{\#_K}=EA^{*}E$ | $U(1,3)$ | 16 | K-self-adjoint |
 
-$\operatorname{Isom}(P)=\operatorname{Isom}(N)$ as sets, and the adjoints differ. The
-groups coincide, the symmetry notions do not. This is why an $N$-theorem and its $P$-twin
-have the same group and still read differently in a fixed basis.
+$\operatorname{Isom}(P)=\{A:A^{\mathsf T}EA=E\}$ and
+$\operatorname{Isom}(N)=\{A:A^{\mathsf T}A=I\}$ are conjugate by
+$S=\operatorname{diag}(1,i,i,i)$, not equal: $A\in\operatorname{Isom}(P)\iff
+SAS^{-1}\in\operatorname{Isom}(N)$. Both are isomorphic to $O_4(\mathbb{C})$, and the
+adjoints differ. An $N$-theorem and its $P$-twin have the same group type and still read
+differently in a fixed basis.
 
 $K$ is an operator-level form: the element-level $K$-isometries are only the central
 phases $U(1)$. $H$ has the element-level group $U(\mathbb{B})\cong U(2)$. $N$ has
@@ -586,11 +592,15 @@ Three consequences.
 - Every $P$-metric item is an $N$-item conjugated by $S$. That is why §3 keeps the form
   but rejects its decompositions as separate articles.
 - The same conjugation sends $K$-normal to $H$-normal, whose diagonal is complex. The
-  note's K-spectral wants a real diagonal with signs, and that needs $K$-self-adjoint, not
-  merely $K$-normal. This is the structural reason behind the $L_{\vec e_x}$ counterexample
-  of §6.
-- On $Q\in\mathbb{R}^4$ the coefficientwise conjugation is the identity, so $P=N$ and
-  $H=K$. Four forms collapse to two, and the four-fold theory is genuinely complex.
+  note's K-spectral wants a real diagonal with signs; $K$-normality does not give one, and
+  neither does $K$-self-adjointness. The matrix $C$ of §6 is $K$-self-adjoint with
+  eigenvalues $\pm i\sqrt3$. This is the structural reason behind the $L_{\vec e_x}$
+  counterexample of §6.
+- On $Q\in\mathbb{R}^4$ the coefficientwise conjugation is the identity, so $P=K$ and
+  $N=H$: the two bilinear forms and the two sesquilinear forms coincide in pairs. Four
+  forms collapse to two, and the four-fold theory is genuinely complex. (The note pairs
+  them the other way, $P=N$ and $H=K$; that is wrong, since $P$ and $N$ differ by the
+  sign of the vector part on every non-pure element.)
 
 ### 2.6 The four shapes, once a form is fixed
 
@@ -922,7 +932,7 @@ which form constrains it.
 | 3 | The Indefinite Polar Decomposition of an Invertible Operator | K | polar | after 65 | research |
 | 4 | The Failure of the Indefinite SVD | K | SVD | after 65 | research, negative |
 | 5 | The Singular Values of a Biquaternion | H + N | SVD | after 47 | ready |
-| — | The Multiplicative Jordan–Chevalley Decomposition of a Unit | none | additive | covered (29) | **covered** by *The Semisimple–Nilpotent Split* |
+| — | The Multiplicative Jordan–Chevalley Decomposition of a Unit | none | additive | covered (30) | **covered** by *The Semisimple–Nilpotent Split* |
 
 The form-free family is now closed: the additive shape is §*The Multiplicative Form*
 of the JC article, and the other four shapes are covered or rejected.
@@ -1009,7 +1019,7 @@ of the JC article, and the other four shapes are covered or rejected.
 ### 8.7 The Moore–Penrose Inverse of a Biquaternion
 
 - **Family H + N, derived from the SVD.** **Covered**, not a decomposition to add.
-- **Where.** *The Polar Decomposition of a Biquaternion* (44) defines it, proves
+- **Where.** *The Polar Decomposition of a Biquaternion* (45) defines it, proves
   uniqueness, gives the closed form on the Hermitian factor and the three cases; the
   general theorem is *The Moore–Penrose Inverse in an Involutive Algebra*, cited there.
 - **Decision.** Do not write a biquaternion article for it unless the general algebra
@@ -1049,6 +1059,28 @@ of the JC article, and the other four shapes are covered or rejected.
 
 ## 10. Changelog
 
+- **2026-09-27 (Peirce/ideal ordering repair).** The ideal theory is no longer introduced
+  in *The Peirce Decomposition*: that article now uses only the product and the
+  idempotents, and the ideal definitions and the two-sided ideal theorem sit in
+  *The Regular Module*. No decomposition changed; Peirce (15) remains the only Peirce row
+  in §0.1.
+- **2026-09-27 (used-table correction).** §0.1 now cites the actual $H$-spectral
+  theorem (*The Biquaternion Eigenvalue Decomposition*, and the $M_2$ spectral theorem),
+  not *The Eigenbasis*, which is the Peirce eigenbasis and works for every spectrally
+  regular element. Added the three eigenspace splits (6) and the exponential polar series.
+- **2026-09-27 (K-spectral correction).** §2.5 no longer says that a real signed
+  diagonal needs $K$-self-adjointness. In an indefinite space $K$-self-adjointness does
+  not force a real spectrum: the matrix $C$ of §6 is $K$-self-adjoint with eigenvalues
+  $\pm i\sqrt3$.
+- **2026-09-27 (real-restriction correction).** §2.5 no longer says $P=N$ and $H=K$ on
+  $\mathbb{R}^4$. With real coefficients the star is the identity, so $N=H$ and $P=K$;
+  $P$ and $N$ differ by the sign of the vector part and never coincide off the scalar
+  line.
+- **2026-09-27 (isometry correction).** §2.2 no longer says
+  $\operatorname{Isom}(P)=\operatorname{Isom}(N)$ as sets. The two subgroups are
+  conjugate by $S=\operatorname{diag}(1,i,i,i)$, not equal: a Lorentz boost preserves $P$
+  and not $N$. The decomposition verdict is unchanged, since conjugacy is what makes the
+  $P$-family a rewrite of the $N$-family.
 - **2026-09-27 (norm-leak repair).** Removed the five premature groups from the form-free block: the determinant and quadratic signatures (7, 8, 23), the characteristic- and minimal-polynomial and Jordan language (9, 11, 12, 16, 17, 19, 21, 22), the primitivity criterion in ideal language (15), and the Euclidean unit, length and orthonormal wording (9, 13, 14, 17, 30, 31, 32). The zero-divisor tests in (19) and (23) are now written with the central scalar $Q_t^2+B^2$, and in (23) as $\tilde\Pi\tilde\Pi^{\natural}=0$. The block now names no algebraic norm, signature or form except in forward citations and in meta-sentences saying that no norm is used. Positions corrected in §0.1: zero divisors 10, matrix products 11 and 12.
 - **2026-09-27:** added §0, the one-page answer: used, suggested, worth implementing, possible. It is a summary only; §1–§8 remain the evidence. Corrected the corpus status of the algebraic polar to `ready` (no article yet) and listed the $H$-SVD element level first in the queue.
 - **2026-09-27:** file created.
@@ -1122,3 +1154,11 @@ of the JC article, and the other four shapes are covered or rejected.
   work that needs forms.
 - **2026-09-27 (order correction).** §0 was rebuilt after a slow read of the ordered articles. It had put polar first while the first polar is article 44, and had mixed corpus suggestions with extensions that no article introduces. The queue now follows the norm order of §3–§7 with an explicit earliest position: N (after 54), K (after 65), then the hybrids. The menu was corrected in two places: the two six-subspace matrix articles now follow the matrix-product articles they assume, and the worked examples now follow the polar articles whose factors they compute. Forward uses removed from *Nilpotents* (idempotents, article 14), *The Peirce Decomposition* (the eigenbasis, articles 30/33), *The Regular Module* (spinors, article 19), and the M2 norm article (the four-factor polar and the singular values, article 44/45).
 - **2026-09-27 (closed, not an issue).** *The Four General Products and Their Relations over the Biquaternion Algebra* (35) computes the four products and their four scalar parts itself, so it precedes the forms article (37) by design. The names Krein form, Hermitian form and fundamental symmetry in it label objects already displayed, and the inertia $(1,3)$ is read from the coordinate signs $\varepsilon=(1,-1,-1,-1)$. The trichotomy is a computation on the displayed scalar part and does not need article 37. Nothing is moved, nothing is rewritten.
+
+- **2026-09-27 (spinor split).** *The Spinor Spaces* was inserted as article 16, between *The
+  Peirce Decomposition* and the two Peirce-coordinate models, and the two Columns, Rows and
+  Spinor Spaces articles moved from *The Modules* to *The Frame* as 19 and 20, after the
+  Peirce-coordinate models. *The Frame* has eight articles and *The Modules* three; the
+  positions of *The Regular Module* (21) and *The Minimal Left Ideals* (22) are the only
+  §0.1 rows that moved, since the two articles removed from 22 and 23 were reinserted at
+  19 and 20. The historical entries of this log keep the numbers they had when written.

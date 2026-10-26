@@ -134,7 +134,7 @@ $$
 =\{c(e_t+i\vec u)\ :\ c\in\mathbb{C}^{\times},\ \vec u\in S^2\},
 $$
 
-that is, the union of the complex lines $\mathbb{C}(e_t+i\vec u)$. These are exactly the doubly null Peirce lines, whose idempotents, minimal ideals and Peirce decompositions are *The Peirce Decomposition*. The parametrisation by $(c,\vec u)$ is a bijection, and $\mathcal K_{\mathrm d}\setminus\{0\}$ is homotopy equivalent to $S^1\times S^2$.
+that is, the union of the complex lines $\mathbb{C}(e_t+i\vec u)$. These are exactly the doubly null Peirce lines, whose idempotents and Peirce decompositions are *The Peirce Decomposition*, and whose minimal ideals are *The Minimal Left Ideals*. The parametrisation by $(c,\vec u)$ is a bijection, and $\mathcal K_{\mathrm d}\setminus\{0\}$ is homotopy equivalent to $S^1\times S^2$.
 
 *Proof.* The computation of the preceding theorem gives the first equality; the identification with the Peirce lines is the classification of *The Peirce Decomposition*. Injectivity: $c(e_t+i\vec u)=c'(e_t+i\vec u')$ forces $c=c'$ from the scalar parts and then $\vec u=\vec u'$.
 
@@ -298,7 +298,7 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the null quadric and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its transitive action.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, the unit group and the zero-divisor cone.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce idempotents and the minimal left ideals behind the doubly null lines.
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce idempotents behind the doubly null lines.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the sandwich, the rank of left multiplication and the polar decomposition.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and its failure at the algebraic null cone.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restriction of the form to the six remarkable subspaces.

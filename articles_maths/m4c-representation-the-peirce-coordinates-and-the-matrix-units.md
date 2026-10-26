@@ -16,7 +16,7 @@ $$
 S^{-1}\mathsf{M}_4(\tilde Q)S=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q).
 $$
 
-**Boundaries.** The spectral projectors of a general element are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the minimal left ideals are *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module*; the abstract Peirce decomposition is *The Peirce Decomposition*; the $2\times2$ units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*.
+**Boundaries.** The spectral projectors of a general element are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the module reading of the splitting is *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces*; the abstract Peirce decomposition is *The Peirce Decomposition*; the $2\times2$ units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*.
 
 ## The Peirce Table
 
@@ -127,7 +127,7 @@ $$
 \sum_{i=1}^{2}\mathsf{M}_4(E_{ii})=\mathrm I_4.
 $$
 
-*Proof.* Apply $\mathsf{M}_4$ to the Peirce table. The last identity is $\mathsf{M}_4(\tilde\Pi_++\tilde\Pi_-)=\mathsf{M}_4(e_t)=\mathrm I_4$. $\square$
+*Proof.* Apply $\mathsf{M}_4$ to the Peirce table. The last identity is $\mathsf{M}_4(\tilde\Pi_++\tilde\Pi_-)=\mathsf{M}_4(e_t)=\mathrm I_4$.
 
 **The block form.** In the Peirce basis,
 
@@ -169,13 +169,13 @@ $$
 \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
 \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,
 $$
-so each nilpotent is a partial isomorphism between the two minimal left ideals. In the regular model this becomes a pair of maps between the two copies, one in each block.
+so each nilpotent carries one diagonal line onto the other. In the regular model this becomes a pair of maps between the two copies, one in each block.
 
 ## The Nilpotents as Off-Diagonal Units
 
 **Proposition.** Every nontrivial idempotent of $\mathbb{B}$ is a product of two nilpotents.
 
-*Proof.* Let $\tilde\Pi$ be a nontrivial idempotent and $\tilde\Pi'=e_t-\tilde\Pi$ its complement. The two mixed corners are square-zero, so every nonzero $u\in\tilde\Pi\mathbb{B}\tilde\Pi'$ and every nonzero $w\in\tilde\Pi'\mathbb{B}\tilde\Pi$ is nilpotent. The construction of the Peirce basis gives $uw=\lambda\tilde\Pi$ for some $\lambda\in\mathbb{C}^{\times}$; replacing $w$ by $\lambda^{-1}w$ keeps it in the corner, nonzero and square-zero, and gives $uw=\tilde\Pi$. The trivial idempotent $e_t$ is the exception: if $uv=e_t$ then $u$ is a unit, and a nilpotent is not a unit. $\square$
+*Proof.* Let $\tilde\Pi$ be a nontrivial idempotent and $\tilde\Pi'=e_t-\tilde\Pi$ its complement. The two mixed corners are square-zero, so every nonzero $u\in\tilde\Pi\mathbb{B}\tilde\Pi'$ and every nonzero $w\in\tilde\Pi'\mathbb{B}\tilde\Pi$ is nilpotent. The construction of the Peirce basis gives $uw=\lambda\tilde\Pi$ for some $\lambda\in\mathbb{C}^{\times}$; replacing $w$ by $\lambda^{-1}w$ keeps it in the corner, nonzero and square-zero, and gives $uw=\tilde\Pi$. The trivial idempotent $e_t$ is the exception: if $uv=e_t$ then $u$ is a unit, and a nilpotent is not a unit.
 
 **The regular image.** In the regular model the two off-diagonal units are
 $$
@@ -223,7 +223,7 @@ The four Peirce elements $\tilde\Pi_\pm,\vec\Upsilon_\pm$ map to four rank-two m
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module](m4c-representation-the-columns-the-rows-and-the-spinor-module.html), for the ideals
+- [$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces](m4c-representation-the-columns-the-rows-and-the-spinor-spaces.html), for the column and row groupings
 - [$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the spectral version
 - [$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units](m2c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the $2\times2$ system
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the abstract decomposition
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the abstract decomposition

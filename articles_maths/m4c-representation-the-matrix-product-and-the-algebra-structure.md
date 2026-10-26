@@ -236,7 +236,7 @@ so the models form a single orbit of $GL_4(\mathbb{C})$ acting by conjugation. T
 
 **The conjugations that change nothing.** A matrix $P$ that commutes with the image leaves every regular matrix unchanged, because $P^{-1}\mathsf{M}_4(\tilde Q)P=\mathsf{M}_4(\tilde Q)$. The commutant is the right regular image of *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*, of dimension four. The conjugations by $GL_4(\mathbb{C})$ that do change the matrices are the changes of basis that move the image inside $M_4(\mathbb{C})$; they give equivalent models, not different algebras.
 
-**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a quarter of the trace, the central scalar is the square root of the determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two pairs of columns of the model. These are collected in *$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module*.
+**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a quarter of the trace, the central scalar is the square root of the determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two pairs of columns of the model. These are collected in *$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces*.
 
 ## Summary
 
@@ -263,7 +263,7 @@ The assignment $\mathsf{M}_4$ sends $e_t$ to $\mathrm I_4$ and the three vector 
 - [$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants
 - [$M_4(\mathbb{C})_L$ Representation : The Peirce Coordinates and the Matrix Units](m4c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the coordinate model
 - [$M_4(\mathbb{C})_L$ Representation : Worked Examples](m4c-representation-worked-examples.html), for the matrices computed in the model
-- [$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module](m4c-representation-the-columns-the-rows-and-the-spinor-module.html), for the ideals as columns and rows
+- [$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces](m4c-representation-the-columns-the-rows-and-the-spinor-spaces.html), for the ideals as columns and rows
 - [$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the commutant
 - [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the $2\times2$ model
 - [Matrix Algebras](matrix-algebras.html), for the structure of $M_n(\mathbb{C})$

@@ -17,7 +17,7 @@ The three matrices are $-i$ times the Pauli matrices. The factor $i$ is forced b
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, and $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.
 
-**Boundaries.** The four forms and the four products are *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the trace and the determinant are *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*; the Peirce coordinates and the matrix units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*; the columns and the spinor module are *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*. The $4\times4$ regular representation is *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The algebra itself is *The Biquaternion Algebra*.
+**Boundaries.** The four forms and the four products are *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the trace and the determinant are *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*; the Peirce coordinates and the matrix units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*; the columns and the spinor module are *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces*. The $4\times4$ regular representation is *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. The algebra itself is *The Biquaternion Algebra*.
 
 ## The Assignment on the Basis
 
@@ -186,7 +186,7 @@ so the models form the single orbit described above. The trace and the determina
 
 **What the choice fixes.** The choice fixes the two columns, the diagonal axis, the matrix $\epsilon$, and the explicit entries of every element. None of these is invariant under conjugation, and none of them is needed to state the algebra. The invariants — the trace and the determinant — are unchanged by the choice, and they are the subject of the articles that follow.
 
-**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a trace, the central scalar is a determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two columns of the model. These are collected in *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*.
+**The matrix model is a change of coordinates.** It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a trace, the central scalar is a determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two columns of the model. These are collected in *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm* and in *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces*.
 
 ## Summary
 
@@ -212,7 +212,7 @@ The assignment $\mathsf{M}_2$ sends $e_t$ to $\mathrm I_2$ and the three vector 
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants
 - [$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units](m2c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the coordinate model
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the eight matrices computed in the model
-- [$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module](m2c-representation-the-columns-the-rows-and-the-spinor-module.html), for the ideals as columns and rows
+- [$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces](m2c-representation-the-columns-the-rows-and-the-spinor-spaces.html), for the ideals as columns and rows
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the four involutions
 - [Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the regular representation
 - [Matrix Algebras](matrix-algebras.html), for the structure of $M_n(\mathbb{C})$

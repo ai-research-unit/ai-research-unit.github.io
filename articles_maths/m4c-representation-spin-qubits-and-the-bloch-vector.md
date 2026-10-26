@@ -15,7 +15,7 @@ $$
 In the Peirce basis, $\Sigma_k=\operatorname{diag}(\sigma_k,\sigma_k)$; in the fixed coefficient basis the block form is conjugated by $S$.
 The Hermitian subspace is $\mathbb{M}_+$. A state is written $\tilde\varrho$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb{R}^3$.
 
-**Boundaries.** The spinor module is *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module*; the spectral projectors are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the physical reading is *The $M_2(\mathbb{C})$ Representation: The Pauli Correspondence*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
+**Boundaries.** The spinor module is *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces*; the spectral projectors are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the physical reading is *The $M_2(\mathbb{C})$ Representation: The Pauli Correspondence*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
 
 ## The Hermitian Basis
 
@@ -241,7 +241,7 @@ and the Bloch vector is the corresponding convex combination of the pure Bloch v
 $$
 S^3\longrightarrow S^2,\qquad \xi\longmapsto\vec r
 $$
-is the Hopf fibration, with fibre $S^1$; in the regular model the total space is the diagonal $S^3$ inside $S^3\times S^3$, and the base sphere and the fibre are the same. The left action preserves each copy and the right action mixes them, so the two copies give the two chiralities of *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module*.
+is the Hopf fibration, with fibre $S^1$; in the regular model the total space is the diagonal $S^3$ inside $S^3\times S^3$, and the base sphere and the fibre are the same. The left action preserves each copy and the right action mixes them, so the two copies give the two chiralities of *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces*.
 
 **The copy label.** The doubled spinor is not a spinor of the four-level system: it is two copies of the same spinor, and the state is the product of the maximally mixed copy label with the algebraic state. The phase circle over each pure state is the fibre of *The Matrix Images: Mixedness, Rapidity and the Phase Fibre*.
 
@@ -272,7 +272,7 @@ The Hermitian basis of the regular image is $\mathrm I_4$ and the three Pauli ma
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module](m4c-representation-the-columns-the-rows-and-the-spinor-module.html), for the two copies
+- [$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces](m4c-representation-the-columns-the-rows-and-the-spinor-spaces.html), for the two copies
 - [$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors
 - [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m2c-representation-spin-qubits-and-the-bloch-vector.html), for the $2\times2$ version
 - [The Spinor Module and Its Two Structures](../articles_physics/the-spinor-module-and-its-two-structures.html), for the spinor

@@ -88,7 +88,7 @@ and they coincide exactly when $B=0$, that is exactly when $B^2=0$. In the model
 
 **Corollary (the eigenspaces).** For a non-scalar $\tilde Q$ and each eigenvalue $\lambda$, the eigenspace $\operatorname{Ann}_{\ell}(\tilde Q-\lambda e_t)$ is a right ideal of complex dimension $2$. For $\tilde Q=Q_te_t$ the only eigenvalue is $Q_t$, and its eigenspace is all of $\mathbb{B}$.
 
-*Proof.* For $a=\tilde Q-\lambda e_t\neq0$, the eigenspace is the left annihilator of $a$, a right ideal. It is non-zero because $a$ is a zero divisor, and it is proper because $a\neq0$. Every non-zero proper right ideal of $\mathbb{B}$ is minimal of complex dimension $2$, by the ideal theory of *The Peirce Decomposition*, §*The Decomposition into Minimal Left and Right Ideals*. At the scalar the difference $\tilde Q-Q_te_t$ is zero, and its annihilator is all of $\mathbb{B}$.
+*Proof.* For $a=\tilde Q-\lambda e_t\neq0$, the eigenspace is the left annihilator of $a$, a right ideal. It is non-zero because $a$ is a zero divisor, and it is proper because $a\neq0$. Every non-zero proper right ideal of $\mathbb{B}$ is minimal of complex dimension $2$, by the ideal theory of *The Minimal Left Ideals*, §*The Two Minimal Left Ideals*. At the scalar the difference $\tilde Q-Q_te_t$ is zero, and its annihilator is all of $\mathbb{B}$.
 
 **Corollary (Cayley–Hamilton and the inverse).** Every $\tilde Q$ satisfies
 

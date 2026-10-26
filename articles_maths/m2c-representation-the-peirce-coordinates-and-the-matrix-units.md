@@ -22,7 +22,7 @@ $$
 
 The labels $x,y$ are the labels of the standard pair. A general element uses a different labelling, $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$, treated in *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*.
 
-**Boundaries.** The Peirce decomposition is *The Peirce Decomposition*; the columns and rows are *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module*; the nilpotents are *Nilpotents*; the inner automorphisms are *Biquaternion Automorphisms and Derivations*.
+**Boundaries.** The Peirce decomposition is *The Peirce Decomposition*; the columns and rows are *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces*; the nilpotents are *Nilpotents*; the inner automorphisms are *Biquaternion Automorphisms and Derivations*.
 
 ## The Peirce Table
 
@@ -83,7 +83,7 @@ $$
 
 The scalar part is the sum of the two diagonal corners, and the central scalar is the determinant of the corner matrix. The two symmetric functions of the corner coordinates are the two invariants of the algebra.
 
-**The ideals in the coordinates.** The first column $\mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ is the image of $\mathbb{B}\tilde\Pi_+$, and the second column is the image of $\mathbb{B}\tilde\Pi_-$. The first row is the image of $\tilde\Pi_+\mathbb{B}$, and the second row is the image of $\tilde\Pi_-\mathbb{B}$. The columns are the left ideals and the rows are the right ideals; the coordinate model makes the two groupings of the same four entries visible at once.
+**The columns and the rows in the coordinates.** The first column $\mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ is the image of $\mathbb{B}\tilde\Pi_+$, and the second column is the image of $\mathbb{B}\tilde\Pi_-$. The first row is the image of $\tilde\Pi_+\mathbb{B}$, and the second row is the image of $\tilde\Pi_-\mathbb{B}$. The columns and the rows are the two groupings of the same four entries; the spinor reading of the two planes is *The Spinor Spaces*, and the module reading of the two groupings is *The Minimal Left Ideals*.
 
 ## The Coordinates in the Coefficients
 
@@ -179,10 +179,10 @@ The Peirce coordinates of the standard pair are the matrix entries, and the four
 
 ## Further Reading
 
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce decomposition and its uniqueness
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce decomposition and its uniqueness
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone
 - [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the fixed model
 - [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis labelling
-- [$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Module](m2c-representation-the-columns-the-rows-and-the-spinor-module.html), for the ideals as columns and rows
+- [$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces](m2c-representation-the-columns-the-rows-and-the-spinor-spaces.html), for the two groupings as columns and rows
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the inner automorphisms
 - [Matrix Algebras](matrix-algebras.html), for systems of matrix units

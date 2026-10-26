@@ -4,7 +4,7 @@
 
 Every module over the biquaternion algebra is a direct sum of copies of the simple module $\mathbb{C}^2$. This article states that classification, counts the multiplicities, reads the lattice of left ideals as a projective line, and identifies the double centraliser.
 
-The article assumes the regular module and the minimal left ideals. It is the third and last of the module articles, and it closes the block's module layer.
+The article assumes the regular module and the minimal left ideals.
 
 The classification is the Morita statement: $\mathbb{B}\cong M_2(\mathbb{C})$ is Morita equivalent to $\mathbb{C}$, so the category of left $\mathbb{B}$-modules is equivalent to the category of complex vector spaces, with the multiplicity as the dimension. The lattice of left ideals is the projective line over $\mathbb{C}$, read through the $M_2$ model; the proof is the one of the matrix model, and it is cited, not repeated.
 
@@ -106,10 +106,6 @@ The module $S$ is consequently a bimodule over the pair $(\mathbb{B},\mathbb{C})
 
 The dual is not a new module. Let $S^*=\operatorname{Hom}_\mathbb{C}(S,\mathbb{C})$ carry the contragredient action, a right $\mathbb{B}$-module and hence a left $\mathbb{B}^{\mathrm{opp}}$-module; under that identification $S^*$ is simple of complex dimension two and therefore isomorphic to $S$.
 
-## The Commutant of an Element
-
-The commutant of an element is *The Centraliser*. The module-level double centraliser used here is the statement of the endomorphisms of the defining module: the endomorphisms of $S$ commuting with the left action are the scalars $\mathbb{C}=\operatorname{End}_\mathbb{B}(S)$, and the bicommutant of $\mathbb{B}$ in $\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$ is $\mathbb{B}$ again.
-
 ## Morita Equivalence with the Complex Field
 
 The pair $(\mathbb{B},\mathbb{C})$ is a Morita pair, and the equivalence is implemented by $S$.
@@ -170,23 +166,7 @@ which for $W=S^{\oplus k}$ holds exactly when $k$ is even. The obstruction to de
 
 ## The Biquaternion Case
 
-### Simple and semisimple
-
-**Proposition.** The algebra $\mathbb{B}$ is simple as a ring: its only two-sided ideals are $0$ and $\mathbb{B}$. Consequently the regular bimodule ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ is simple as a bimodule, and the algebra is Artinian and semisimple.
-
-**Proof.** The simplicity is *The Peirce Decomposition*, read through the theorem above as the absence of sub-bimodules between $0$ and ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$. Semisimplicity and the descending chain condition follow because $\mathbb{B}\cong M_2(\mathbb{C})$ is a matrix algebra over a field, and these are the Wedderburn–Artin properties of *Simple and Semisimple Modules*.
-
-### The left regular module is $S\oplus S$
-
-**Theorem.** There is a simple left $\mathbb{B}$-module $S$, of complex dimension two, with
-
-$$
-{}_{\mathbb{B}}\mathbb{B}\cong S\oplus S,\qquad \operatorname{End}_{\mathbb{B}}(S)=\mathbb{C},\qquad S\cong\mathbb{C}^2 .
-$$
-
-The decomposition is produced by the orthogonal idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, which satisfy $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$, by ${}_{\mathbb{B}}\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ with $\mathbb{B}\tilde\Pi_\pm\cong S$.
-
-**Proof.** The idempotents, the Peirce decomposition and the minimality of the ideals $\mathbb{B}\tilde\Pi_\pm$ are *The Peirce Decomposition*; the two minimal left ideals are isomorphic because the algebra is simple, and $S$ is their isomorphism class, the unique simple left module of *The Regular Module*, §*The Defining Module*, of complex dimension two. That $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$ is Schur's lemma, recorded there; in the matrix model $S$ is the column space $\mathbb{C}^2$ of $M_2(\mathbb{C})$.
+### Complete reducibility
 
 **Corollary (complete reducibility).** Every left $\mathbb{B}$-module is semisimple: it is a direct sum of copies of $S$, and by the Morita equivalence of §*Morita Equivalence with the Complex Field* it is $S\otimes_\mathbb{C}W$ for a complex vector space $W$, of complex dimension $2\dim_\mathbb{C}W$. The regular module is the particular case $W=\mathbb{C}^2$.
 
@@ -196,7 +176,7 @@ $$
 L_\ell=\{\tilde Q:\tilde Q S\subseteq\ell\},\qquad \ell \text{ a line in } S,
 $$
 
-one for each line $\ell$, so the family of minimal left ideals is a projective line; the two summands of the decomposition above correspond to the two coordinate lines, and the general element of the family is $\mathbb{B}\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ with image $\ell$. The classification is that of *The Peirce Decomposition*, and the theorem above adds only the reading that these are the simple submodules of the regular module.
+one for each line $\ell$, so the family of minimal left ideals is a projective line; the two summands of the regular module correspond to the two coordinate lines, and the general element of the family is $\mathbb{B}\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ with image $\ell$. The classification is that of *The Minimal Left Ideals*; the reading here is that these are the simple submodules of the regular module.
 
 ### Von Neumann regular and self-injective
 
@@ -205,22 +185,6 @@ one for each line $\ell$, so the family of minimal left ideals is a projective l
 **Proof.** Both properties are properties of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: it is von Neumann regular, and it is self-injective because it is a Frobenius algebra, the trace providing the non-degenerate associative pairing. Both are preserved by isomorphism, and the injectivity statement is the Baer criterion applied to ${}_{\mathbb{B}}\mathbb{B}$.
 
 **Corollary (the regular module is projective and injective).** The left regular module is free and therefore projective, and it is injective by the proposition; the two properties together mean that ${}_{\mathbb{B}}\mathbb{B}$ is a projective generator and an injective cogenerator of the module category, the reference object from which every module is built by direct sums, quotients and submodules.
-
-## Worked Verification
-
-The regular module of the biquaternion algebra is small enough that the general statements can be checked by hand. In the complex basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the following hold.
-
-| Item | Value | Where |
-|---|---|---|
-| ${}_{\mathbb{B}}\mathbb{B}$ | free of rank one, basis $\{e_t\}$ | §*Free of rank one* |
-| $\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | minimal left ideals, complex dimension $2$, $\mathbb{B}\tilde\Pi_+\cap\mathbb{B}\tilde\Pi_-=0$ | §*The left regular module is $S\oplus S$* |
-| ${}_{\mathbb{B}}\mathbb{B}$ | $\cong S\oplus S$, $\dim_\mathbb{C}S=2$ | §*The left regular module is $S\oplus S$* |
-| $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})$ | $\cong\mathbb{B}$, complex dimension $4$ | §*The one-sided endomorphisms* |
-| $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})$ | $\cong\mathbb{B}^{\mathrm{opp}}$, complex dimension $4$ | §*The one-sided endomorphisms* |
-| $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})$ | $\cong\mathbb{C}e_t$, complex dimension $1$ | §*The bimodule endomorphisms are the centre* |
-| two-sided ideals | $0$ and $\mathbb{B}$ only | §*Simple and semisimple* |
-
-The two idempotents $\tilde\Pi_+,\tilde\Pi_-$ are orthogonal and sum to the unit; the left ideals they generate are each of complex dimension two and meet only in $0$, so that ${}_{\mathbb{B}}\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ is a direct sum of two simple modules. The right multiplications give a copy of $\mathbb{B}^{\mathrm{opp}}$ in $\operatorname{End}_\mathbb{C}(\mathbb{B})$ whose commutant is the image of the left multiplications, the double centraliser statement of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*; the only operators that are simultaneously a left and a right multiplication are the multiplications by the central scalars, and they are the bimodule endomorphisms of complex dimension one.
 
 ## The Lattice of Left Ideals
 
@@ -244,7 +208,7 @@ $$
 
 the elements of the middle layer being pairwise incomparable, each covering $0$ and covered by $\mathbb{B}$. Because the length of $\mathbb{B}$ as a left module over itself is $2$, every minimal left ideal is also a **maximal** left ideal, nothing lying strictly between it and $\mathbb{B}$. The minimal left ideals are parametrized by the projective line $\mathbb{P}^1(\mathbb{C})$. Right ideals admit the same description, with the dual parametrization.
 
-The parameter space deserves a caution. In the Wedderburn–Artin decomposition $M_n(D)$ of a simple artinian algebra, the minimal one-sided ideals are parametrized by the projective space $\mathbb{P}^{n-1}(D)$ over the **division ring** $D$, not over an arbitrary base field. Here $D = \mathbb{C}$ and $n = 2$, so the parameter space is $\mathbb{P}^1(\mathbb{C})$. In particular, regarding $\mathbb{B}$ as an $\mathbb{R}$-algebra does not replace this by $\mathbb{P}^1(\mathbb{R})$: the one-sided ideals are still parametrized by $\mathbb{P}^1(\mathbb{C})$. The real projective line appears only as the subfamily that the real structure preserves, not as a set of fixed minimal left ideals: *The Peirce Decomposition*, §*The Real Structure* shows that no minimal left ideal is stable under coefficient conjugation.
+The parameter space deserves a caution. In the Wedderburn–Artin decomposition $M_n(D)$ of a simple artinian algebra, the minimal one-sided ideals are parametrized by the projective space $\mathbb{P}^{n-1}(D)$ over the **division ring** $D$, not over an arbitrary base field. Here $D = \mathbb{C}$ and $n = 2$, so the parameter space is $\mathbb{P}^1(\mathbb{C})$. In particular, regarding $\mathbb{B}$ as an $\mathbb{R}$-algebra does not replace this by $\mathbb{P}^1(\mathbb{R})$: the one-sided ideals are still parametrized by $\mathbb{P}^1(\mathbb{C})$. The real projective line appears only as the subfamily that the real structure preserves, not as a set of fixed minimal left ideals: §*The Projective Line and the Möbius Action* below shows that no minimal left ideal is stable under coefficient conjugation.
 
 ## The Projective Line and the Möbius Action
 
@@ -294,21 +258,15 @@ $$
 
 which is the Möbius transformation attached to $P$. A nonzero scalar multiple of $P$ gives the same transformation, so the formula depends only on the class $[P]\in PGL_2(\mathbb{C})$, and composition of transformations is multiplication of matrices. In this chart the idempotent $\tilde\Pi_-$ sits at $z=0$ and $\tilde\Pi_+$ at $z=\infty$; the point at infinity is the line of the first basis vector.
 
-**Transitivity, stabilisers and the cross-ratio.** The action is transitive, since any line can be sent to any other by an invertible matrix, and it is simply transitive on ordered triples of distinct points. The stabiliser of $z=0$ is the set of matrices with $b=0$,
+**Transitivity and stabilisers.** The action is transitive, since any line can be sent to any other by an invertible matrix, and it is simply transitive on ordered triples of distinct points. The stabiliser of $z=0$ is the set of matrices with $b=0$,
 
 $$
 \left\{\begin{pmatrix}a&0\\c&d\end{pmatrix}:ad\neq0\right\},
 $$
 
-a Borel subgroup of $PGL_2(\mathbb{C})$, of complex dimension two. For four distinct points the cross-ratio
+a Borel subgroup of $PGL_2(\mathbb{C})$, of complex dimension two.
 
-$$
-[z_1,z_2;z_3,z_4]=\frac{(z_1-z_3)(z_2-z_4)}{(z_1-z_4)(z_2-z_3)}
-$$
-
-is invariant under every Möbius transformation, and it is the complete invariant of a quadruple: two quadruples are equivalent under $PGL_2(\mathbb{C})$ exactly when their cross-ratios agree.
-
-**The real structure.** Coefficient conjugation $\sigma$ acts on the lattice by the antiholomorphic involution, $t\mapsto-1/\bar t$ in the chart of *The Peirce Decomposition*, §*The Real Structure*, with no fixed point; no minimal left ideal is therefore stable under it, and the real structure preserves the subfamily $\mathbb{P}^1(\mathbb{R})$, on which it acts as the antipodal map. Since $\sigma$ is $\mathbb{C}$-antilinear, it intertwines the action of a unit with that of its image, $\sigma\circ\varphi_{\tilde Q}=\varphi_{\sigma(\tilde Q)}\circ\sigma$; the two actions are not the same action, and the real structure pairs the orbit of a line under $\mathbb{B}^\times$ with the orbit of its conjugate.
+**The real structure.** Coefficient conjugation $\sigma$ acts on the lattice by the antiholomorphic involution, $t\mapsto-1/\bar t$ in the chart above, with no fixed point; no minimal left ideal is therefore stable under it, and the real structure preserves the subfamily $\mathbb{P}^1(\mathbb{R})$, on which it acts as the antipodal map. Since $\sigma$ is $\mathbb{C}$-antilinear, it intertwines the action of a unit with that of its image, $\sigma\circ\varphi_{\tilde Q}=\varphi_{\sigma(\tilde Q)}\circ\sigma$; the two actions are not the same action, and the real structure pairs the orbit of a line under $\mathbb{B}^\times$ with the orbit of its conjugate.
 
 ## Summary
 
@@ -331,4 +289,4 @@ is invariant under every Möbius transformation, and it is the complete invarian
 - [The Regular Module](the-regular-module.html), for the ideals as submodules.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the simple module in the algebra.
 - [The Centraliser](the-centraliser.html), for the commutant of an element.
-- [$M_2(\mathbb{C})$ Model : Columns, Rows and the Spinor Module](m2c-representation-the-columns-the-rows-and-the-spinor-module.html), for the matrix model of the classification.
+- [$M_2(\mathbb{C})$ Model : Columns, Rows and the Spinor Spaces](m2c-representation-the-columns-the-rows-and-the-spinor-spaces.html), for the matrix model of the classification.

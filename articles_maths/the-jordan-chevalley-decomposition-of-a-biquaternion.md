@@ -281,7 +281,7 @@ For a unit, the additive split gives the multiplicative form $\tilde Q=SU$ with 
 - [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the characteristic polynomial, the spectral criterion and the two cases.
 - [The Eigenbasis](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the spectral frame, the root and the eigenbasis.
 - [The Jordan Normal Form](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the defective sector, the support idempotents and the Jordan basis.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce decomposition, the corners and the mixed generators.
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce decomposition, the corners and the mixed generators.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the units, the zero divisors and their two strata.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the general theorem, its uniqueness and the multiplicative form.
 - [The Eigenvalue Decomposition in a Jordan Algebra](the-eigenvalue-decomposition-in-a-jordan-algebra.html), for the spectral idempotents read as Peirce idempotents.

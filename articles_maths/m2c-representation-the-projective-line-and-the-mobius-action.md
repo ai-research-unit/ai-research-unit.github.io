@@ -4,11 +4,11 @@
 
 The minimal left ideals of the biquaternion algebra form a projective line, and the group of units acts on that line by left multiplication. In the matrix model the ideals are the sets of matrices whose image lies in a fixed line of $\mathbb{C}^2$, the action is the defining action of $GL_2(\mathbb{C})$ on the lines, and in a chart it is the Möbius action of $PGL_2(\mathbb{C})$.
 
-This article develops the parametrisation, the action and its kernel, the chart and the Möbius formula, the idempotents, the orbits and the cross-ratio. It is the matrix form of *The Peirce Decomposition*, §*The Projective Line and the Möbius Action*.
+This article develops the parametrisation, the action and its kernel, the chart and the Möbius formula, the idempotents, the orbits and the cross-ratio. It is the matrix form of *The Category of Modules*, §*The Projective Line and the Möbius Action*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$.
 
-**Boundaries.** The lattice of left ideals and the parametrisation by $\mathbb{P}^1$ are *The Peirce Decomposition*, §*The Lattice of Left Ideals*; the automorphism group and its identification with $PGL_2$ are *Biquaternion Automorphisms and Derivations*; the real structure on the lattice is *The Peirce Decomposition*, §*The Real Structure*.
+**Boundaries.** The lattice of left ideals and the parametrisation by $\mathbb{P}^1$ are *The Category of Modules*, §*The Lattice of Left Ideals*; the automorphism group and its identification with $PGL_2$ are *Biquaternion Automorphisms and Derivations*; the real structure on the lattice is *The Category of Modules*, §*The Projective Line and the Möbius Action*.
 
 ## The Lines and the Minimal Left Ideals
 
@@ -206,7 +206,7 @@ The minimal left ideals are the sets $I_L$ of matrices whose image lies in a lin
 
 ## Further Reading
 
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the lattice, the projective line and the Möbius action
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the lattice, the projective line and the Möbius action
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for $PGL_2$ and the automorphism group
 - [$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser](m2c-representation-the-centraliser-and-the-double-centraliser.html), for the commutant of an element
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the quaternionic structure and the real structure

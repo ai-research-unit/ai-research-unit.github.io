@@ -151,7 +151,7 @@ The complex spinor module $S=\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$ of the biqu
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations and their order properties, and [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html) for their fixed spaces.
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for $\mathsf{M}_2(e_k)=-i\sigma_k$, the four matrix images and the dressed coefficient conjugation.
 - [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the defining module, its uniqueness and the module theory.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the minimal left ideals and the doubling $S\mapsto\bar S$.
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce corners and the doubling $S\mapsto\bar S$.
 - [Real Spinors and Reality Conditions with Inner Conjugation](real-spinors-and-reality-conditions-with-inner-conjugation.html), the general theory of the reality types and the eightfold table, of which this article is the three-dimensional instance.
 - [Bott Periodicity and the Classification](bott-periodicity-and-the-classification.html), for the period-eight classification and the sign table.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for reality structures, the signature dependence of the type and the low-dimensional spinor modules.

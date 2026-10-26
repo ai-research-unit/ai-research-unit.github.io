@@ -43,7 +43,7 @@ which exhibits $M$ as a polynomial in $\mathsf{M}_4(\vec\Xi)$. $\square$
 
 **Not Hermitian in general.** For a general complex element the projectors are not Hermitian: $\rho_\pm^{\dagger}$ is the projector of the conjugate direction. They are Hermitian exactly when $\vec\Xi$ is Hermitian, in particular when the element lies in the Hermitian or the anti-Hermitian subspace.
 
-**The column spaces.** Since $M\rho_+=\lambda_+\rho_+$ and $M\rho_-=\lambda_-\rho_-$, the column space of $\rho_+$ is the eigenspace of $\lambda_+$, of dimension two, and the column space of $\rho_-$ is the eigenspace of $\lambda_-$, of dimension two. The two eigenspaces are complementary. In the Peirce basis they are the two coordinate planes $E_+$ and $E_-$ of *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Module*.
+**The column spaces.** Since $M\rho_+=\lambda_+\rho_+$ and $M\rho_-=\lambda_-\rho_-$, the column space of $\rho_+$ is the eigenspace of $\lambda_+$, of dimension two, and the column space of $\rho_-$ is the eigenspace of $\lambda_-$, of dimension two. The two eigenspaces are complementary. In the Peirce basis they are the two coordinate planes $E_+$ and $E_-$ of *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces*.
 
 ## The Spectral Decomposition
 

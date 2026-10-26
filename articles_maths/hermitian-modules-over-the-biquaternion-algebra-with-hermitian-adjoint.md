@@ -130,7 +130,7 @@ $$
 \langle\tilde\Pi,\tilde\Pi\rangle_{*}=\mathrm{Sc}(\exp(\dagger)\tilde\Pi)=\tfrac12\operatorname{Tr}\bigl(\exp(\dagger)\tilde\Pi\bigr)>0,
 $$
 
-since $\exp(\dagger)\tilde\Pi$ is a nonzero positive semidefinite matrix and its trace is the squared Frobenius norm of $\tilde\Pi$. So every minimal left ideal of $\mathbb{B}$ carries a positive definite restriction of the scalar form. Since all minimal left ideals are isomorphic (*The Category of Modules*), the form is attached to the isomorphism class of the module and not merely to the representative $\mathbb{B}\tilde\Pi_+$, and it is transported by the automorphisms of the algebra along the projective line $\mathbb{P}^1(\mathbb{C})$ that parametrises them (*The Peirce Decomposition*).
+since $\exp(\dagger)\tilde\Pi$ is a nonzero positive semidefinite matrix and its trace is the squared Frobenius norm of $\tilde\Pi$. So every minimal left ideal of $\mathbb{B}$ carries a positive definite restriction of the scalar form. Since all minimal left ideals are isomorphic (*The Category of Modules*), the form is attached to the isomorphism class of the module and not merely to the representative $\mathbb{B}\tilde\Pi_+$, and it is transported by the automorphisms of the algebra along the projective line $\mathbb{P}^1(\mathbb{C})$ that parametrises them (*The Category of Modules*).
 
 **Theorem (uniqueness: Schur).** Every Hermitian form on the simple module $S$ satisfying the adjointness axiom is a positive real multiple of the restriction of the scalar form.
 
@@ -208,7 +208,7 @@ The **unitary slice** $U=\mathrm{U}(2)$ acts on every Hermitian module by unitar
 ## Further Reading
 
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
 - [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the classification of the modules, the simple module, the projective-not-free dichotomy and the endomorphism algebra.
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for $L_{\tilde Q_1}^{*}=L_{\tilde{Q}_1^{*}}$, the uniqueness of the invariant form and the module picture of the regular module.
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the sandwich, the cone and the definite slice viewed as a group of operators.

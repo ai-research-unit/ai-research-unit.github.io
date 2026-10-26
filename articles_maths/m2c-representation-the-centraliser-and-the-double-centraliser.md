@@ -4,11 +4,11 @@
 
 For a non-scalar matrix the elements commuting with it form a commutative algebra, the plane of polynomials in the matrix, of complex dimension two; for a scalar matrix the commutant is the whole matrix algebra, of complex dimension four, which is not commutative. The double centraliser returns the same algebra in every case.
 
-This article develops the commutant, the double commutant, the three spectral types, the eigenbasis ambiguity and the dimension count. It is the matrix form of *The Category of Modules*, §*The Commutant of an Element*.
+This article develops the commutant, the double commutant, the three spectral types, the eigenbasis ambiguity and the dimension count. It is the matrix form of *$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser*, §*The Commutant*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The matrix of $\tilde Q$ is $X=\mathsf M_2(\tilde Q)$, and $\mathbb{C}[X]$ is the algebra of polynomials in $X$.
 
-**Boundaries.** The module-theoretic commutant of an element and its double centraliser are *The Category of Modules*, §*The Commutant of an Element*; the eigenbasis and its construction are *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
+**Boundaries.** The module-theoretic commutant of an element and its double centraliser are *The Centraliser* and *The Category of Modules*, §*Endomorphisms and the Standard Bimodule*; the eigenbasis and its construction are *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
 
 ## The Commutant
 

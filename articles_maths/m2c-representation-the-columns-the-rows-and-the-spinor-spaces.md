@@ -1,14 +1,14 @@
-# __$M_2(\mathbb{C})$ Model : Columns, Rows and the Spinor Module__
+# __$M_2(\mathbb{C})$ Model : Columns, Rows and the Spinor Spaces__
 
 ## Introduction
 
-The matrix model makes the ideal structure of the biquaternion algebra a statement about columns and rows. The two standard minimal left ideals are the two columns, the two standard minimal right ideals are the two rows, and the element acts on a column by matrix multiplication. Every minimal left ideal is a column in a suitable basis, and the family is a projective line. The column is the spinor module: not a space isomorphic to it, but the module itself, realised inside the algebra.
+The matrix model makes the two spinor spaces of the biquaternion algebra the two columns, and the two right ideals the two rows. The element acts on a column by matrix multiplication; every minimal left ideal is a column in a suitable basis, and the family is a projective line. The columns are the spinor spaces realised inside the algebra, and their module theory is that of *The Minimal Left Ideals*.
 
-This article develops the column and row picture, the chirality of the two columns, and the module theory that the picture makes visible. It is the matrix form of *The Category of Modules* and of *The Peirce Decomposition*, §*The Decomposition into Minimal Left and Right Ideals* and §*The Lattice of Left Ideals*.
+This article develops the column and row picture, the chirality of the two columns, and the module theory that the picture makes visible. It is the matrix form of *The Spinor Spaces*, §*The Two Spinor Spaces* and §*The Left Action on Each Couple*, of *The Minimal Left Ideals*, §*The Two Minimal Left Ideals*, and of *The Category of Modules*, §*The Lattice of Left Ideals*.
 
 **Conventions.** The algebra and the fixed model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The standard idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$, the standard nilpotents are $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$, and the matrix units are $E_{ij}$. The two spinor spaces are $S_\pm=\mathbb{B}\tilde\Pi_\pm$.
 
-**Boundaries.** The abstract ideals and the Peirce decomposition are *The Peirce Decomposition*; the module theory is *The Category of Modules*; the matrix units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*; the eigenbasis labelling is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*.
+**Boundaries.** The abstract spinor spaces are *The Spinor Spaces*; the abstract ideals are *The Minimal Left Ideals*; the Peirce decomposition is *The Peirce Decomposition*; the module theory is *The Category of Modules*; the matrix units are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*; the eigenbasis labelling is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*.
 
 ## The Left Ideals Are the Columns
 
@@ -68,13 +68,13 @@ $$
 
 and right multiplication by $\vec\Upsilon_x$ maps $S_+=\mathbb{B}\tilde\Pi_+$ onto $S_-=\mathbb{B}\tilde\Pi_-$ and kills $S_-$.
 
-**The mass term must be a right multiplication.** A term that couples the two chiralities cannot be a left multiplication, because a left multiplication preserves each column. It must be a right multiplication, and the element that performs it is the one carried to an off-diagonal matrix unit. This is the structural reason the biquaternionic Dirac equation couples the chiralities on the right. The spinor module, not the whole algebra, is the carrier of the Dirac field, and the right action of $\vec\Upsilon_x$ is the coupling.
+**The mass term must be a right multiplication.** A term that couples the two chiralities cannot be a left multiplication, because a left multiplication preserves each column. It must be a right multiplication, and the element that performs it is the one carried to an off-diagonal matrix unit. This is the structural reason the biquaternionic Dirac equation couples the chiralities on the right. The column, not the whole algebra, is the carrier of the Dirac field, and the right action of $\vec\Upsilon_x$ is the coupling.
 
 **The exchange is not an algebra automorphism.** Right multiplication by $E_{12}$ is not invertible and not an automorphism; it is a module map from $S_+$ to $S_-$ composed with the zero map on $S_-$. The two columns are isomorphic as left modules, and the isomorphism is right multiplication by a suitable element, but it is not canonical: it depends on the choice of the off-diagonal unit.
 
-## The Spinor Module
+## The Columns as Spinor Spaces
 
-**The defining module.** The left module $S=\mathbb{B}\tilde\Pi_+$ is the **spinor module**. As a complex vector space it is $\mathbb{C}^2$, with basis $(\tilde\Pi_+,\vec\Upsilon_y)$; a spinor of first chirality is
+**The first column.** In the basis $(\tilde\Pi_+,\vec\Upsilon_y)$ a spinor of first chirality is
 
 $$
 \xi_+=Q_{11}\tilde\Pi_++Q_{21}\vec\Upsilon_y,
@@ -82,7 +82,7 @@ $$
 
 with coordinates $(Q_{11},Q_{21})$ and matrix representative the first column $\begin{pmatrix}Q_{11}\\Q_{21}\end{pmatrix}$.
 
-**The second chirality.** The module $S_-=\mathbb{B}\tilde\Pi_-$ has basis $(\vec\Upsilon_x,\tilde\Pi_-)$ and a spinor of second chirality is
+**The second column.** The space $S_-=\mathbb{B}\tilde\Pi_-$ has basis $(\vec\Upsilon_x,\tilde\Pi_-)$ and a spinor of second chirality is
 
 $$
 \xi_-=Q_{12}\vec\Upsilon_x+Q_{22}\tilde\Pi_-,
@@ -90,7 +90,7 @@ $$
 
 with coordinates $(Q_{12},Q_{22})$ and matrix representative the second column.
 
-**The two modules are isomorphic.** The map $\xi_+\mapsto\xi_+u$ with $u$ a unit carrying $\tilde\Pi_+$ to $\tilde\Pi_-$ is an isomorphism of left modules. The isomorphism is not unique: the stabiliser of $\tilde\Pi_+$ acts on the right, and the reciprocal scaling of the nilpotents changes the map. The two chiralities are therefore the same module in two copies, and the copy is a choice.
+**The exchange.** Right multiplication by $\vec\Upsilon_x$ carries the first column onto the second, and right multiplication by $\vec\Upsilon_y$ carries it back. The two columns are distinct subspaces; the exchange, and the reciprocal freedom of the mixed basis, are §*The Right Action* of *The Spinor Spaces*. The exchange is bijective, so the two columns are isomorphic as left modules; the classification of all of them is *The Minimal Left Ideals*, §*All Minimal Left Ideals*.
 
 **The endomorphisms.** By Schur's lemma, the endomorphisms of the simple module $S$ are the scalars:
 
@@ -100,17 +100,7 @@ $$
 
 In the matrix model an endomorphism of the column is a matrix commuting with every $M$, hence a scalar matrix; the scalar is the value by which the centre acts. The right action of the centre on $S$ is this scalar action, and it is the only right action that survives.
 
-**The regular module.** As a left module,
-
-$$
-\mathbb{B}=S_+\oplus S_-,\qquad S_+\cong S_-\cong S,
-$$
-
-so the regular module is $S\oplus S$. It is free of rank one, because it is $\mathbb{B}$ itself, and it is not simple, because it is the direct sum of the two columns. It is projective because it is free; and it is a generator, because every simple module is a quotient of it. These are the properties collected in *The Category of Modules*, §*The Four Properties of the Regular Object*.
-
-**Morita equivalence.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is Morita equivalent to $\mathbb{C}$. The equivalence sends the simple module $S$ to $\mathbb{C}$ and the algebra to the matrix algebra of the module. It is the reason the module theory of $\mathbb{B}$ is the module theory of a field, read through a two-dimensional space: the categories of left modules are equivalent, and the equivalence is not an isomorphism of algebras.
-
-## The Endomorphisms of the Regular Module
+## The Endomorphisms of the Algebra
 
 **Right multiplications.** For $X\in M_2(\mathbb{C})$ let $R_X$ be right multiplication, $R_X(M)=MX$. It is a map of left $M_2(\mathbb{C})$-modules, because
 
@@ -132,7 +122,7 @@ $$
 R_{X^{\mathsf T}}R_{Y^{\mathsf T}}=R_{(XY)^{\mathsf T}}.
 $$
 
-This is the matrix form of $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{op}}$ of *The Category of Modules*, §*The Endomorphisms of the Regular Object*.
+The abstract form of the same isomorphism is in *The Category of Modules*, §*Endomorphisms and the Standard Bimodule*.
 
 **The bimodule endomorphisms.** An endomorphism that is also right $M_2(\mathbb{C})$-linear satisfies $T(M)=T(\mathrm I_2M)=T(\mathrm I_2)M$, while left linearity gives $T(M)=MT(\mathrm I_2)$. Hence $T(\mathrm I_2)$ is central, and the bimodule endomorphisms are the scalar multiplications:
 
@@ -142,7 +132,7 @@ $$
 
 In the algebra this is the centre $\mathbb{C}e_t$, and the statement is that the regular bimodule has no non-scalar endomorphisms.
 
-**The two columns.** The left ideal $I_{L_\infty}=\mathbb{C}\{E_{11},E_{21}\}$ consists of the matrices whose image lies in the first coordinate line. Right multiplication replaces the two columns by combinations of themselves, so the image remains in that line; the left action therefore preserves the ideal. A left ideal is a submodule of the regular left module, while right multiplication is an endomorphism of it.
+**The two columns.** The left ideal $I_{L_\infty}=\mathbb{C}\{E_{11},E_{21}\}$ consists of the matrices whose image lies in the first coordinate line. Right multiplication replaces the two columns by combinations of themselves, so the image remains in that line; the left action therefore preserves the ideal. A left ideal is a subspace stable under left multiplication, while right multiplication is an endomorphism of it.
 
 ## The Lattice of Left Ideals
 
@@ -156,7 +146,7 @@ In the algebra this is the centre $\mathbb{C}e_t$, and the statement is that the
 
 ## Summary
 
-The columns of the matrix model are the two standard minimal left ideals, and the rows are the two standard minimal right ideals. Each column is a simple left module of complex dimension two, the spinor module; the two columns are isomorphic, and the isomorphism is a choice. Left multiplication preserves each column, so chirality-changing terms must act on the right; the off-diagonal unit $E_{12}$ performs the exchange. The endomorphisms of the spinor module are the scalars, the regular module is $S\oplus S$, and the algebra is Morita equivalent to $\mathbb{C}$. The minimal left ideals are the points of $\mathbb{P}^1(\mathbb{C})$, and the two columns are the two coordinate points.
+The columns of the matrix model are the two standard minimal left ideals, and the rows are the two standard minimal right ideals. Each column is a simple left module of complex dimension two, one of the two spinor spaces; the two columns are isomorphic, and the isomorphism is a choice. Left multiplication preserves each column, so chirality-changing terms must act on the right; the off-diagonal unit $E_{12}$ performs the exchange. The endomorphisms of the simple module are the scalars, the regular module is $S\oplus S$, and the algebra is Morita equivalent to $\mathbb{C}$. The minimal left ideals are the points of $\mathbb{P}^1(\mathbb{C})$, and the two columns are the two coordinate points.
 
 ## Summary of Notation
 
@@ -165,17 +155,16 @@ The columns of the matrix model are the two standard minimal left ideals, and th
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the standard minimal left ideals, the two columns |
 | $\tilde\Pi_\pm\mathbb{B}$ | the standard minimal right ideals, the two rows |
 | $E_{ij}$ | the matrix units |
-| $S=\mathbb{B}\tilde\Pi_+$ | the spinor module, $\mathbb{C}^2$ |
-| $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ | the endomorphisms of the spinor module |
+| $S=\mathbb{B}\tilde\Pi_+$ | the first spinor space, the first column, $\mathbb{C}^2$ |
+| $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ | the endomorphisms of the simple module |
 | $\mathbb{P}^1(\mathbb{C})$ | the lattice of minimal left ideals |
 | $E_{12}=\mathsf{M}_2(\vec\Upsilon_x)$ | the exchange of the two columns |
 
 ## Further Reading
 
 - [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the regular module and Morita equivalence
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the ideals and the lattice
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the corners and the matrix units
 - [$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units](m2c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the corner coordinates
 - [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis columns
-- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the abstract spinor module
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the action on spinors
 - [Matrix Algebras](matrix-algebras.html), for the module theory of $M_n(\mathbb{C})$
