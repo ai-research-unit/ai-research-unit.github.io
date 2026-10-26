@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Element, the Coordinates and the Conjugations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-element-the-coordinates-and-the-conjugations"><strong>The Element, the Coordinates and the Conjugations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article reads one element of the biquaternion algebra and the coordinates in which it is written. It is the second article of the block and it assumes the product, the basis and the axioms of <em>The Biquaternion Algebra</em>.</p>
+<p>The first two sections give the element and its three readings: the scalar-vector split $\tilde Q=Q_te_t+\vec Q$, the real, complex and hyperbolic coordinate systems, and the complex structure $J$ that carries the difference between the real and the complex readings. The third section defines the four conjugations and separates them by their relation to $J$. The last two sections read the same element over the real scalars and through $J$.</p>
+<p>The four conjugations are defined here and used throughout the block. Their group, its table, its orbits and the six fixed and anti-fixed subspaces are <em>The Group of Involutions</em>; the subspaces themselves are <em>The Six Subspaces</em>.</p>
+<p>Nothing in this article pairs two different elements and takes a scalar part. The hyperbolic basis of the plain scalar part is a form statement and is filed with the plain product, after the forms; the matrices of the two models are <em>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em> and <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>.</p>
+<h2 id="the-element-and-its-coordinates">The Element and Its Coordinates</h2>
+<h3 id="the-general-element">The General Element</h3>
+<p>A general element of $\mathbb{B}$ is</p>
+<p>$$
+\tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu = Q_t e_t + \vec Q , \qquad Q_\mu = q_\mu + i q'_\mu \in \mathbb{C} ,
+$$</p>
+<p>the <strong>$\mathbb{C}$ scalar part</strong> $Q_t e_t$ and the <strong>$\mathbb{C}$ vector part</strong> $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The four complex coefficients are eight real ones, $q_\mu$ the coefficient of $e_\mu$ and $q'_\mu$ the coefficient of $ie_\mu$. The element is also read as a pair of real quaternions, $\tilde Q = h_1 + i h_2$ with $h_1 = \sum_\mu q_\mu e_\mu$ and $h_2 = \sum_\mu q'_\mu e_\mu$, the three coordinate systems being the subject of §<em>The Element and Its Coordinates</em>, below.</p>
+<h3 id="the-coordinate-systems">The Coordinate Systems</h3>
+<p>The same element is written in three coordinate systems, and all three are used below.</p>
+<p><strong>Real coordinates.</strong> Splitting each complex coefficient as $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$ gives a list of eight real numbers on the real basis:</p>
+<p>$$
+\tilde{Q} = q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z + q'_t(ie_t) + q'_x(i\vec e_x) + q'_y(i\vec e_y) + q'_z(i\vec e_z).
+$$</p>
+<p><strong>Complex coordinates.</strong> Collecting the eight real numbers into four complex ones gives the developed form, four complex coordinates $(Q_t, Q_x, Q_y, Q_z)$ on the complex basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$.</p>
+<p><strong>Quaternionic coordinates.</strong> Collecting them by the scalar imaginary instead gives</p>
+<p>$$
+\tilde{Q} = h_1 + ih_2, \qquad h_1 = \sum_{\mu\in\{t,x,y,z\}} q_\mu e_\mu \in \mathbb{H}, \qquad h_2 = \sum_{\mu\in\{t,x,y,z\}} q'_\mu e_\mu \in \mathbb{H},
+$$</p>
+<p>a real quaternion plus $i$ times another real quaternion. The decomposition is unique, so in this view an element is a <strong>pair of quaternions</strong>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coordinates</th>
+<th>basis</th>
+<th>count</th>
+<th>scalars</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real</td>
+<td>$e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$</td>
+<td>$8$</td>
+<td>$\mathbb{R}$</td>
+</tr>
+<tr>
+<td>complex</td>
+<td>$e_t, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>$4$</td>
+<td>$\mathbb{C}$</td>
+</tr>
+<tr>
+<td>quaternionic</td>
+<td>$e_t, ie_t$</td>
+<td>$2$</td>
+<td>$\mathbb{H}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three rows count the same element against three scalar systems, and all three are used below. The first row is the coordinate list of the real reading, developed in §<em>The Real Scalars</em>; the eight real coordinates and the four complex ones differ only in how the eight real numbers are gathered.</p>
+<h3 id="the-scalarvector-split-and-the-two-products-of-vector-parts">The Scalar–Vector Split and the Two Products of Vector Parts</h3>
+<p>Writing $\vec Q_1 = \sum_k Q_{1k} \vec e_k$ and $\vec Q_2 = \sum_k Q_{2k} \vec e_k$, the two bilinear products of the vector parts are</p>
+<p>$$
+(\vec Q_1, \vec Q_2) = \sum_k Q_{1k} Q_{2k} , \qquad
+\vec Q_1 \times \vec Q_2 = (Q_{1y} Q_{2z} - Q_{1z} Q_{2y})\vec e_x + (Q_{1z} Q_{2x} - Q_{1x} Q_{2z})\vec e_y + (Q_{1x} Q_{2y} - Q_{1y} Q_{2x})\vec e_z .
+$$</p>
+<p>The first is the complex bilinear <strong>dot product</strong>, a scalar; the second is the complex bilinear <strong>cross product</strong>, a vector part, alternating, $(\vec Q_2, \vec Q_1) = (\vec Q_1, \vec Q_2)$ and $\vec Q_2 \times \vec Q_1 = -\vec Q_1 \times \vec Q_2$. The two are the ingredients of the scalar–vector form of the multiplication, and they are those of <em>Quaternion Algebra</em>, read with complex coefficients.</p>
+<h2 id="the-conjugations-and-the-classification">The Conjugations and the Classification</h2>
+<p><strong>Definition.</strong> The <strong>natural</strong>, the <strong>coefficient</strong> and the <strong>Hermitian</strong> conjugations of $\tilde Q=Q_te_t+\vec Q$ are</p>
+<p>$$
+\tilde Q^{\natural}=Q_te_t-\vec Q , \qquad
+(\overline{\tilde Q})_\mu=\bar Q_\mu , \qquad
+\tilde Q^{*}=\bar Q_te_t-\overline{\vec Q} ,
+$$</p>
+<p>with $\tilde Q^{\flat}=-\tilde Q^{*}$ the <strong>anti-Hermitian</strong> one. They are involutions, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and $\{\mathrm{id},\natural,\bar{\cdot},{}^{*}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$; the group, its table, its orbits and the six fixed and anti-fixed subspaces are <em>The Group of Involutions</em>.</p>
+<h2 id="the-real-scalars">The Real Scalars</h2>
+<p><strong>Definition.</strong> The <strong>real reading</strong> of $\mathbb{B}$ is the same additive group over the subfield $\mathbb{R}$ of $\mathbb{C}$, obtained by restriction of scalars: the elements are unchanged and the scalar domain is cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$. The general element is written in the eight real coordinates of §<em>The Element and Its Coordinates</em>, on the real basis</p>
+<p>$$
+e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z.
+$$</p>
+<p>Every element is a unique real combination of those eight, so the real dimension is the complex dimension doubled, $\dim_\mathbb{R}\mathbb{B} = 2\dim_\mathbb{C}\mathbb{B} = 8$, as recorded in §<em>The Element and Its Coordinates</em>.</p>
+<p><strong>Remark.</strong> No complex number is used as a scalar in this reading: the scalars are real, and the complex reading is the stronger structure rather than a different set. Every polynomial identity over $\mathbb{R}$ extends to $\mathbb{C}$ by scalar extension, and the real reading keeps the additive group, the basis and the product while dropping the complex scalars alone.</p>
+<h2 id="the-complex-structure">The Complex Structure</h2>
+<p>The difference between the two readings is carried by one operator. Multiplication by the central imaginary,</p>
+<p>$$
+J : \tilde{Q} \mapsto i\tilde{Q}, \qquad J^2 = -\mathrm{id},
+$$</p>
+<p>is real-linear, and it is the <strong>complex structure</strong> of the real space, already met in <em>The Biquaternion Algebra</em>, §<em>The Scalars, the Centre and the Structure Map</em>. It carries the whole gap between the readings: for $\lambda = a + bi$, the centrality of the scalars gives</p>
+<p>$$
+\boxed{\;
+\lambda\tilde{Q} = a\tilde{Q} + bJ(\tilde{Q})
+\;},
+$$</p>
+<p>so the complex action is the real action together with $J$, and the real space together with $J$ is the complex space.</p>
+<p><strong>Proposition (linearity is the commutator with $J$).</strong> A real-linear map $T$ of $\mathbb{B}$ is $\mathbb{C}$-linear exactly when it commutes with $J$, and antilinear exactly when it anticommutes with it:</p>
+<p>$$
+\boxed{\;
+T(\lambda\tilde{Q}) = \lambda T(\tilde{Q}) \text{ for all } \lambda \iff TJ = JT, \qquad T(\lambda\tilde{Q}) = \bar{\lambda} T(\tilde{Q}) \text{ for all } \lambda \iff TJ = -JT
+\;}.
+$$</p>
+<p><strong>Proof.</strong> Let $T$ be real-linear. Then $T(J\tilde{Q}) = T(i\tilde{Q})$ and $J(T\tilde{Q}) = iT(\tilde{Q})$, so the identity $T(i\tilde{Q}) = iT(\tilde{Q})$ is exactly $TJ = JT$; real-linearity then gives $T(\lambda\tilde{Q}) = T(a\tilde{Q} + bJ\tilde{Q}) = aT(\tilde{Q}) + bJT(\tilde{Q}) = \lambda T(\tilde{Q})$ for every $\lambda = a + bi$, and conversely $TJ = JT$ gives $T(i\tilde{Q}) = iT(\tilde{Q})$ and hence the same identity. The antilinear case is the same computation with the sign reversed, $T(i\tilde{Q}) = -iT(\tilde{Q})$, which is $TJ = -JT$.</p>
+<h3 id="linear-and-antilinear-maps">Linear and Antilinear Maps</h3>
+<p>The four conjugations of §<em>The Conjugations and the Classification</em> are all real-linear, and the proposition separates them into two classes: ${}^{\natural}$ commutes with $J$ and is $\mathbb{C}$-linear, while $\bar{\cdot}$, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and $\flat = -{}^{*}$ anticommute with $J$ and are antilinear. The line between the two kinds of map is thus the commutation with one operator.</p>
+<p>The real reading sees more linear maps than the complex one:</p>
+<p>$$
+\boxed{\;
+\operatorname{End}_\mathbb{R}(\mathbb{B}) \cong M_8(\mathbb{R}), \qquad \operatorname{End}_\mathbb{C}(\mathbb{B}) \cong M_4(\mathbb{C})
+\;},
+$$</p>
+<p>of real dimensions $64$ and $32$. The $\mathbb{C}$-linear maps are the real-linear ones commuting with $J$, a subspace of half the dimension; a real-linear map that anticommutes with $J$ is antilinear, an ordinary linear map of the real space that is not a complex-linear operator. The conjugations are the natural examples.</p>
+<h3 id="the-real-form">The Real Form</h3>
+<p>A real subspace of $\mathbb{B}$ of real dimension four need not be closed under $J$; when it meets its image under $J$ only at zero, the two together fill $\mathbb{B}$ and the subspace is a <strong>real form</strong>.</p>
+<p><strong>Proposition.</strong> Let $V$ be a real subspace of $\mathbb{B}$ of real dimension four. Then $V \cap JV = 0$ if and only if $\mathbb{B} = V \oplus JV$, and in that case the complex reading is recovered from $V$ by extension of scalars, $\mathbb{C}\otimes_\mathbb{R}V\cong\mathbb{B}$.</p>
+<p><strong>Proof.</strong> If $\mathbb{B} = V \oplus JV$, then $V \cap JV = 0$ by the directness of the sum. Conversely let $V \cap JV = 0$. If $v + Jw = 0$ with $v, w \in V$, then $v = -Jw$ lies in $V \cap JV$, so $v = 0$ and $Jw = 0$, hence $w = 0$; the map $V \oplus JV \to \mathbb{B}$, $v + Jw \mapsto v + Jw$, is therefore injective, and since both sides have real dimension eight it is an isomorphism, $\mathbb{B} = V \oplus JV$. The map $\mathbb{C}\otimes_\mathbb{R}V \to \mathbb{B}$, $z \otimes v \mapsto zv$, is then $\mathbb{C}$-linear and surjective, because its image contains $V$ and $JV$, hence all of $\mathbb{B}$, and both spaces have complex dimension four, so it is an isomorphism.</p>
+<p><strong>Example.</strong> The elements with real coefficients, spanned by $e_t, \vec e_x, \vec e_y, \vec e_z$, form a real form; its image under $J$ is the subspace of elements with purely imaginary coefficients, the two meet at zero and their sum is $\mathbb{B}$. Real forms are not unique, and the choice of one is data beyond the real reading.</p>
+<p><strong>Remark (the two real spaces, of dimensions eight and four).</strong> The two dimensions must not be confused. The restriction of scalars of the complex reading is the eight-dimensional space above, whose extension of scalars back to $\mathbb{C}$ has complex dimension eight; the extension of scalars of a real form is the four-dimensional complex space $\mathbb{B}$ itself. What returns the complex reading from the eight-dimensional space is the operator $J$, not a scalar extension. The version of this caution for the algebra and its base rings, where $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, is <em>The Realification and the Effect of the Change of Scalars</em>.</p>
+<p><strong>Remark (the remarkable subspaces in the real reading).</strong> The remarkable subspaces are real subspaces, and the complex structure sorts them: the centre and the vector subspace are carried to themselves by $J$ and are the only two that are complex subspaces, of complex dimensions one and three, while the other four are real forms, exchanged in two pairs by $J$. The remarkable subspaces are defined in <em>The Six Subspaces</em>, and the action of the central imaginary unit upon them is <em>The Lattice of the Subspaces</em>.</p>
+<h3 id="what-the-view-adds">What the View Adds</h3>
+<p>The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It drops the complex scalars, so the complex structure becomes an extra operator $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four general products of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em> are read over $\mathbb{R}$ unchanged.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The element is $\tilde Q=Q_te_t+\vec Q$, with $Q_\mu\in\mathbb{C}$ and $\vec Q$ in the three-dimensional complex vector space.</li>
+<li>The real, complex and hyperbolic coordinate systems are three bases of the same eight-real-dimensional space; the complex structure $J(\tilde Q)=i\tilde Q$ carries the passage between the first two.</li>
+<li>The four conjugations are $\mathrm{id}$, $\natural$, $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, with $\flat=-{}^{*}$ beside them; $\natural$ is the unique $\mathbb{C}$-linear one.</li>
+<li>A real-linear map is $\mathbb{C}$-linear exactly when it commutes with $J$, and antilinear exactly when it anticommutes.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>the general biquaternion</td>
+</tr>
+<tr>
+<td>$Q_\mu=q_\mu+iq'_\mu$</td>
+<td>the complex coefficients</td>
+</tr>
+<tr>
+<td>$J(\tilde Q)=i\tilde Q$</td>
+<td>the complex structure</td>
+</tr>
+<tr>
+<td>$\natural,\ \bar{\cdot},\ {}^{*},\ \flat$</td>
+<td>natural, coefficient, Hermitian and anti-Hermitian conjugations</td>
+</tr>
+</tbody>
+</table></div>
+<p>The marks and their case rules are those of <em>Conventions in Mathematics</em>.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-biquaternion-algebra-and-its-vector-spaces.html">The Biquaternion Algebra</a>, for the product and the axioms.</li>
+<li><a href="the-group-of-involutions.html">The Group of Involutions</a>, for the Klein group and the orbits.</li>
+<li><a href="introduction-to-the-remarkable-subspaces.html">The Six Subspaces</a>, for the fixed spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

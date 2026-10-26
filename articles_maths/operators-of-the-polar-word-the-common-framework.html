@@ -99,7 +99,7 @@ $$</p>
 <p>$$
 \boxed{\;\Theta_{\tilde Q}=\Theta_{\tilde Q_H}\circ\Theta_{\tilde Q_0}\;}
 $$</p>
-<p>The positive factor is the modulus of the operator: $\lvert\Theta_{\tilde Q}\rvert=\Theta_{\tilde Q_H}$. On the image of $\Theta_{\tilde Q_0}$ the factor $\Theta_{\tilde Q_H}$ acts as a scalar, so the sandwich collapses to a scalar times a partial isometry. This is the <strong>scalar collapse</strong>, and its value is the <strong>doubling</strong>: every quantity of the element is squared when it passes to the sandwich.</p>
+<p>The positive factor is the modulus of the operator: $\lvert\Theta_{\tilde Q}\rvert=\Theta_{\tilde Q_H}$. On the null cone the factor $\Theta_{\tilde Q_H}$ acts as the scalar $4a^{2}$ on the image of $\Theta_{\tilde Q_0}$, so the sandwich collapses to a scalar times a partial isometry. Off the null cone $\Theta_{\tilde Q_0}$ is invertible, and the collapse occurs exactly when $\tilde Q_H$ is a scalar, that is when the element is a scalar multiple of a unitary. This is the <strong>scalar collapse</strong>, and its value is the <strong>doubling</strong>: every quantity of the element is squared when it passes to the sandwich.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -148,7 +148,7 @@ $$</p>
 \Sigma_{01}=\{N=0,\ B^{2}\neq0\},\quad
 \Sigma_{00}=\{N=0,\ B^{2}=0\},
 $$</p>
-<p>the first index recording $N\neq0$ and the second $B^{2}\neq0$. On $\Sigma_{11}$ the element is a unit and $\lambda_\pm=Q_t\pm iB$ are the eigenvalues of $\tilde Q$, with $B$ a root of $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On $\Sigma_{01}$ the element is $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent. On $\Sigma_{10}$ it is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$. On $\Sigma_{00}$ it is a non-zero nilpotent $\tilde\nu$.</p>
+<p>the first index recording $N\neq0$ and the second $B^{2}\neq0$. On $\Sigma_{11}$ the element is a unit and $\lambda_\pm=Q_t\pm iB$ are the eigenvalues of $\tilde Q$, with $B$ a root of $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On $\Sigma_{01}$ the element is $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent. On $\Sigma_{10}$ it is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$; the scalar line $\vec\Upsilon=0$ is written $\Sigma_{10}^{\mathrm{s}}$, the Jordan part $\vec\Upsilon\neq0$ is $\Sigma_{10}^{\mathrm{J}}$. On $\Sigma_{00}$ it is a non-zero nilpotent $\tilde\nu$, with $\tilde\Pi_\pm$ the canonical Hermitian idempotents and $\tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-$.</p>
 <p><strong>The one-sided operators.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -157,7 +157,8 @@ $$</p>
 <th>rank</th>
 <th>spectrum</th>
 <th>Jordan type</th>
-<th>image</th>
+<th>image of $L_{\tilde Q}$</th>
+<th>image of $R_{\tilde Q}$</th>
 </tr>
 </thead>
 <tbody>
@@ -167,12 +168,22 @@ $$</p>
 <td>$\lambda_+,\lambda_-$, each twice</td>
 <td>diagonal, $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$</td>
 <td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\Sigma_{10}$</td>
+<td>$\Sigma_{10}^{\mathrm{s}}$</td>
+<td>$4$</td>
+<td>$Q_t$, algebraic multiplicity $4$, geometric $4$</td>
+<td>diagonal, $\operatorname{diag}(Q_t,Q_t,Q_t,Q_t)$</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}^{\mathrm{J}}$</td>
 <td>$4$</td>
 <td>$Q_t$, algebraic multiplicity $4$, geometric $2$</td>
 <td>$J_2(Q_t)\oplus J_2(Q_t)$</td>
+<td>$\mathbb{B}$</td>
 <td>$\mathbb{B}$</td>
 </tr>
 <tr>
@@ -180,7 +191,8 @@ $$</p>
 <td>$2$</td>
 <td>$c,0$, multiplicities $2,2$</td>
 <td>diagonal, $\operatorname{diag}(c,c,0,0)$</td>
-<td>the totally isotropic plane $\tilde Q\mathbb{B}=\mathbb{B}\tilde Q$</td>
+<td>the totally isotropic plane $\tilde Q\mathbb{B}$</td>
+<td>the totally isotropic plane $\mathbb{B}\tilde Q$</td>
 </tr>
 <tr>
 <td>$\Sigma_{00}$</td>
@@ -188,9 +200,11 @@ $$</p>
 <td>$0$, algebraic multiplicity $4$, geometric $2$</td>
 <td>$J_2(0)\oplus J_2(0)$</td>
 <td>$\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+=\ker L_{\tilde\nu}$</td>
+<td>$\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_-=\ker R_{\tilde\nu}$</td>
 </tr>
 </tbody>
 </table></div>
+<p>The two image columns differ on the null strata. On $\Sigma_{01}$ the planes $\tilde Q\mathbb{B}$ and $\mathbb{B}\tilde Q$ are distinct and meet in $\mathbb{C}\tilde\Pi$; on $\Sigma_{00}$ the two planes are distinct and meet in $\mathbb{C}\tilde\nu$. On $\Sigma_{11}$ and $\Sigma_{10}$ both images are the whole algebra.</p>
 <p><strong>The sandwich.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -211,7 +225,14 @@ $$</p>
 <td>$\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\Sigma_{10}$</td>
+<td>$\Sigma_{10}^{\mathrm{s}}$</td>
+<td>$4$</td>
+<td>$\lvert Q_t\rvert^{2}$, algebraic multiplicity $4$, geometric $4$</td>
+<td>diagonal, $\operatorname{diag}(\lvert Q_t\rvert^{2},\lvert Q_t\rvert^{2},\lvert Q_t\rvert^{2},\lvert Q_t\rvert^{2})$</td>
+<td>$\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}^{\mathrm{J}}$</td>
 <td>$4$</td>
 <td>$\lvert Q_t\rvert^{2}$, algebraic multiplicity $4$, geometric $2$</td>
 <td>$J_3(\lvert Q_t\rvert^{2})\oplus J_1(\lvert Q_t\rvert^{2})$</td>
@@ -233,7 +254,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The two tables are the whole sector theory in one page. Along each row the rank drops when $N=0$, and the Jordan type leaves the semisimple case when $B^{2}=0$; along each column the sandwich replaces the one-sided eigenvalue $\lambda_i$ by the product $\lambda_i\bar\lambda_j$, so it loses one factor of the spectrum.</p>
+<p>The two tables are the whole sector theory in one page. Along each row the rank drops when $N=0$, and the Jordan type leaves the semisimple case when $B^{2}=0$; on the scalar line $\Sigma_{10}^{\mathrm{s}}$ the element is central and the operator is a scalar multiple of the identity, so the defective types belong to the Jordan part alone. Along each column the sandwich replaces the one-sided eigenvalue $\lambda_i$ by the product $\lambda_i\bar\lambda_j$, so it loses one factor of the spectrum.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -274,6 +295,10 @@ $$</p>
 <tr>
 <td>$\tilde Q=Q_t(e_t+\vec\Upsilon)$</td>
 <td>the form of the element on $\Sigma_{10}$, $\vec\Upsilon^{2}=0$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}^{\mathrm{s}}$, $\Sigma_{10}^{\mathrm{J}}$</td>
+<td>the scalar line $\vec\Upsilon=0$ and the Jordan part $\vec\Upsilon\neq0$ of $\Sigma_{10}$</td>
 </tr>
 <tr>
 <td>$a$</td>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion — Biquaternion Universe</title>
+  <title>The Eigenbasis — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,73 +68,27 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion"><strong>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</strong></h1>
+        <h1 id="the-eigenbasis"><strong>The Eigenbasis</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists, as a basis attached to the element, exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em> proves that such a basis exists. This article constructs it, proves that the normalised Peirce representative is unique, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and chirality in it.</p>
-<p><strong>Place among the Peirce decompositions.</strong> This article is the regular particular case of <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is the spectral pair: it exists exactly when $B^2\neq0$, it commutes with $\tilde Q$, and the Peirce matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$. Each couple is therefore a pair of eigenvectors, and the Peirce basis is the eigenbasis. The general theory leaves a reciprocal $\mathbb{C}^\times$ of mixed bases; the normalisation below fixes it.</p>
+<p>The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists, as a basis attached to the element, exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article <em>The Spectrum</em> proves that such a basis exists. This article constructs it, proves that the normalised Peirce representative is unique, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and chirality in it.</p>
+<p><strong>Place among the Peirce decompositions.</strong> This article is the regular particular case of <em>The Peirce Decomposition</em>. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is the spectral pair: it exists exactly when $B^2\neq0$, it commutes with $\tilde Q$, and the Peirce matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$. Each couple is therefore a pair of eigenvectors, and the Peirce basis is the eigenbasis. The general theory leaves a reciprocal $\mathbb{C}^\times$ of mixed bases; the normalisation below fixes it.</p>
 <p>The construction has three steps. The root $\vec\Xi=-i\vec Q/B$ is a pure square root of $e_t$ and carries the two spectral idempotents $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$. The two mixed Peirce corners are complex lines, and a generator $\vec\Upsilon_+$ of one of them determines a generator $\vec\Upsilon_-$ of the other by the product condition $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. The pair is then determined up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$. A normalisation fixes $\mu$, and with the normalisation fixed the quadruple</p>
 <p>$$
 \mathcal{B}(\tilde Q)=(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-)
 $$</p>
-<p>is unique. The first two steps use only $B^2\neq0$; the norm $N$ plays no part, so the construction covers both $\Sigma_{11}$ and $\Sigma_{01}$. The two spectral-regular sector articles, <em>The N-Regular, Spectrally Regular Sector</em> and <em>The N-Degenerate, Spectrally Regular Sector</em>, record the specialisation of the construction to the two cells.</p>
+<p>is unique. The first two steps use only $B^2\neq0$, so the construction covers the whole spectral-regular sector.</p>
 <p>The basis has a further property that is easy to miss: it depends on $\tilde Q$ only through the complex line spanned by the vector part. The elements $\tilde Q$ and $a\tilde Q+b e_t$, with $a\neq0$, share the same eigenbasis, while their eigenvalues move affinely. The eigenbasis is therefore attached to a point of $\mathbb{P}^2$, not to a point of $\mathbb{B}$.</p>
 <p>The second part of the article reads spinors and chirality in this basis. The two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two chiralities. Each has a basis made of one idempotent and one nilpotent of $\mathcal{B}(\tilde Q)$, and left multiplication by $\tilde Q$ acts on each by the same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$. Chirality is a right-multiplication label, not a left eigenvalue: the two gradings are independent, and the four basis vectors are the four cells of their grid.</p>
 <p><strong>Notation.</strong> An element is $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $\vec Q^2=-B^2e_t$, where</p>
 <p>$$
 B^2=Q_x^2+Q_y^2+Q_z^2.
 $$</p>
-<p>The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. The quaternionic norm is $N=Q_t^2+B^2$. A general element is written $\tilde Q_2=Q_{2,t}e_t+\vec Q_2$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$ and natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. The trace is $\operatorname{Tr}(\tilde Q_2)=2Q_{2,t}$, and $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ is the scalar of $\tilde Q_2^{\natural}\tilde Q_2$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ denote left and right multiplication by $\tilde Q_2$.</p>
+<p>The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. A general element is written $\tilde Q_2=Q_{2,t}e_t+\vec Q_2$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$ and natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. The trace is $\operatorname{Tr}(\tilde Q_2)=2Q_{2,t}$, and $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ is the scalar of $\tilde Q_2^{\natural}\tilde Q_2$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ denote left and right multiplication by $\tilde Q_2$.</p>
 <h2 id="the-spectral-condition-and-the-root">The Spectral Condition and the Root</h2>
 <p><strong>Spectral regularity is the single hypothesis of the construction. It produces the root and the two idempotents, and nothing else is needed.</strong></p>
-<h3 id="the-two-spectral-regular-sectors">The Two Spectral-Regular Sectors</h3>
-<p>The condition $B^2\neq0$ defines the complement of the spectral-degenerate cone $\mathcal S$. It splits into the two sectors</p>
-<p>$$
-\Sigma_{11}=\{N\neq0,\ B^2\neq0\},\qquad
-\Sigma_{01}=\{N=0,\ B^2\neq0\},
-$$</p>
-<p>the norm-regular and the norm-degenerate spectral-regular sectors. The two remaining sectors are $\Sigma_{10}=\{N\neq0,\ B^2=0\}$ and $\Sigma_{00}=\{N=0,\ B^2=0\}$. On the two spectral-regular sectors the two eigenvalues are distinct, the minimal polynomial is squarefree, and the spectral decomposition exists. The norm distinguishes the two sectors but does not enter the construction: in $\Sigma_{11}$ both eigenvalues are non-zero, in $\Sigma_{01}$ one of them is zero, and the eigenbasis is the same kind of object in both cases.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>sector</th>
-<th>$N$</th>
-<th>$B^2$</th>
-<th>spectrum</th>
-<th>eigenbasis</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\Sigma_{11}$</td>
-<td>$\neq0$</td>
-<td>$\neq0$</td>
-<td>$\lambda_+\neq\lambda_-$, both $\neq0$</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>$\Sigma_{01}$</td>
-<td>$=0$</td>
-<td>$\neq0$</td>
-<td>$\{2Q_t,0\}$</td>
-<td>yes</td>
-</tr>
-<tr>
-<td>$\Sigma_{10}$</td>
-<td>$\neq0$</td>
-<td>$=0$</td>
-<td>$\{Q_t\}$</td>
-<td>only on the scalar line, trivially</td>
-</tr>
-<tr>
-<td>$\Sigma_{00}$</td>
-<td>$=0$</td>
-<td>$=0$</td>
-<td>$\{0\}$</td>
-<td>only at the origin, trivially</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>The four cases in brief.</strong> In $\Sigma_{11}$ the two eigenvalues are distinct and non-zero, and the construction below applies without change. In $\Sigma_{01}$ the two eigenvalues are distinct, one of them is zero, and the same construction applies; the only difference is that one of the two eigenvalues is zero. In $\Sigma_{10}$ the element is $Q_te_t+\vec Q$ with $\vec Q^2=0$ and $Q_t\neq0$. For $\vec Q\neq0$ its minimal polynomial is $(X-Q_t)^2$, so $L_{\tilde Q}$ has a two-dimensional eigenspace and no eigenbasis; on the scalar line $\vec Q=0$, $L_{\tilde Q}$ is scalar and every basis is an eigenbasis. In $\Sigma_{00}$ the element is either $0$, where every basis is an eigenbasis, or a non-zero nilpotent, where $L_{\tilde Q}$ has the single eigenvalue $0$, a two-dimensional eigenspace and no eigenbasis. Only the two spectral-regular sectors carry the construction; the two spectral-degenerate sectors carry at most the trivial eigenbasis of the scalar line and of the origin.</p>
+<h3 id="the-spectral-regular-sector">The Spectral-Regular Sector</h3>
+<p>The condition $B^2\neq0$ defines the complement of the spectral-degenerate cone $\mathcal S$. On it the two eigenvalues are distinct, the minimal polynomial is squarefree, and the spectral decomposition exists. Whether an eigenvalue vanishes is irrelevant to the construction: the formulas below treat both cases together.</p>
+<p>On $B^2=0$ the element is $Q_te_t+\vec Q$ with $\vec Q^2=0$. For $\vec Q\neq0$ its minimal polynomial is $(X-Q_t)^2$, so $L_{\tilde Q}$ has a two-dimensional eigenspace and no eigenbasis; on the scalar line $\vec Q=0$, $L_{\tilde Q}$ is scalar and every basis is an eigenbasis. At the origin every basis is an eigenbasis. The construction below therefore covers exactly $B^2\neq0$.</p>
 <h3 id="the-root">The Root</h3>
 <p><strong>Proposition (the root).</strong> Let $B^2\neq0$ and</p>
 <p>$$
@@ -145,7 +99,7 @@ $$</p>
 \tilde Q=Q_te_t+iB\vec\Xi.
 $$</p>
 <p><em>Proof.</em> Since $\vec Q^2=-B^2e_t$, one has $\vec\Xi^2=(-i)^2\vec Q^2/B^2=-(-B^2e_t)/B^2=e_t$. The element is pure because $\vec Q$ is pure. The last identity is $\vec Q=iB\vec\Xi$.</p>
-<p>The root is the unit vector of the vector part, up to the factor $-i$. It depends on $\vec Q$ only through its direction: replacing $\vec Q$ by $a\vec Q$ and $B$ by $aB$ leaves $\vec\Xi$ unchanged.</p>
+<p>The root is the vector part scaled to square $e_t$, up to the factor $-i$. It depends on $\vec Q$ only through its direction: replacing $\vec Q$ by $a\vec Q$ and $B$ by $aB$ leaves $\vec\Xi$ unchanged.</p>
 <h3 id="the-idempotents">The Idempotents</h3>
 <p><strong>Theorem (the spectral idempotents).</strong> With $\vec\Xi$ as above, put</p>
 <p>$$
@@ -183,7 +137,7 @@ $$</p>
 <p>$$
 \mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}.
 $$</p>
-<p>Each corner is a complex line (<em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>), and the direct sum is the algebra:</p>
+<p>Each corner is a complex line (<em>The Peirce Decomposition</em>), and the direct sum is the algebra:</p>
 <p>$$
 \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--}.
 $$</p>
@@ -266,7 +220,7 @@ $$</p>
 <p>At least one of the three axes satisfies $Q_\mu^2\neq B^2$ when $B^2\neq0$, because otherwise $Q_x^2=Q_y^2=Q_z^2=B^2$ would give $B^2=3B^2$.</p>
 <p>The two formulas are the same construction with two different auxiliary vectors. On their common domain they differ by the reciprocal rescaling of the theorem, because both pairs satisfy the same product conditions.</p>
 <p><strong>Remark (the normalisation used in this article).</strong> The convention is: use the symmetric formula when $\Sigma^2\neq3B^2$; otherwise use the axis chart of the first $\mu\in\{x,y,z\}$, in that order, with $Q_\mu^2\neq B^2$; and fix the square roots at one representative of each direction $[\vec Q]$, extending along the fibre by $B(a\tilde Q+b e_t)=aB(\tilde Q)$ and $\sqrt{a^2s}=a\sqrt s$ for $a\neq0$. The condition $\Sigma^2=3B^2$ and the axis choice depend on $[\vec Q]$ only. This selects one pair at every spectral-regular $\tilde Q$, and the displayed formulas are homogeneous of degree zero. The choice is pointwise: it assigns a pair to each element, and no continuity of the branch is required. It is a normalisation in the sense of the previous subsection, and it is the one used in the displayed formulas. The axis charts are only a coordinate device: they cover the exceptional cone, where the symmetric formula is singular, and they do not add a second eigenbasis.</p>
-<h2 id="the-eigenbasis">The Eigenbasis</h2>
+<h2 id="the-eigenbasis_1">The Eigenbasis</h2>
 <p><strong>With the normalisation fixed, the four vectors are a basis, and left and right multiplication by $\tilde Q$ are diagonal in it.</strong></p>
 <h3 id="the-basis-and-the-multiplication-table">The Basis and the Multiplication Table</h3>
 <p><strong>Definition (the eigenbasis).</strong> For a spectral-regular $\tilde Q$ with the normalisation above, the <strong>eigenbasis</strong> is</p>
@@ -332,7 +286,7 @@ $$</p>
 <p>The table is the corner rule written out. It shows that the basis is a system of matrix units, with $\tilde\Pi_+$ and $\tilde\Pi_-$ the two diagonal units and the nilpotents the two off-diagonal units.</p>
 <p><strong>Remark (in what sense the eigenbasis is unique).</strong> The uniqueness is that of the normalised Peirce representative. The operator $L_{\tilde Q}$ has two distinct eigenvalues, and each eigenspace is two-dimensional; any basis of each eigenspace is therefore an eigenbasis of $L_{\tilde Q}$, and the set of eigenbases is not unique. What is unique, with the normalisation of §<em>The Transverse-Vector Construction</em>, is the quadruple made of the two spectral idempotents and the two normalised corner generators. Every statement of uniqueness in this article refers to that quadruple.</p>
 <h3 id="the-fourier-reading-of-the-basis">The Fourier Reading of the Basis</h3>
-<p>Put $\rho=i\vec\Xi=\vec Q/B$, a pure root of $-1$. Choose a pure $\nu$ with $\nu^2=1$, orthogonal to $\rho$ in the complex bilinear form, and put $\xi=\rho\nu$; then $(e_t,\rho,\nu,\xi)$ is the root-adapted basis of <em>Biquaternion Continuous Harmonic Analysis</em>, §<em>The Change of Basis</em>, and</p>
+<p>Put $\rho=i\vec\Xi=\vec Q/B$, a pure root of $-1$. Choose a pure $\nu$ with $\nu^2=1$ and $\nu\cdot\rho=0$, and put $\xi=\rho\nu$; then $(e_t,\rho,\nu,\xi)$ is the root-adapted basis of <em>Biquaternion Continuous Harmonic Analysis</em>, §<em>The Change of Basis</em>, and</p>
 <p>$$
 L_\rho\sim
 \begin{pmatrix}
@@ -441,7 +395,7 @@ $$</p>
 \operatorname{Tr}\mathsf M_2^{Q}(\tilde Q_2)=Q_{2,11}+Q_{2,22}=2Q_{2,t},\qquad
 \det\mathsf M_2^{Q}(\tilde Q_2)=Q_{2,11}Q_{2,22}-Q_{2,12}Q_{2,21}=\langle\tilde Q_2\rangle_{\natural}.
 $$</p>
-<p><em>Proof.</em> The trace is $2Q_{2,t}$ because the trace is a similarity invariant and $\operatorname{Tr}\tilde Q_2=2Q_{2,t}$. The determinant is the quaternionic norm, because the matrix model is an algebra isomorphism and $\det\mathsf M_2(\tilde Q_2)=\langle\tilde Q_2\rangle_{\natural}$.</p>
+<p><em>Proof.</em> The trace is $2Q_{2,t}$ because the trace is a similarity invariant and $\operatorname{Tr}\tilde Q_2=2Q_{2,t}$. The determinant is the central scalar, because the matrix model is an algebra isomorphism and $\det\mathsf M_2(\tilde Q_2)=\langle\tilde Q_2\rangle_{\natural}$.</p>
 <h3 id="the-trace-pairing">The Trace Pairing</h3>
 <p>The trace pairing $\langle\tilde Q_2,\tilde P\rangle=\operatorname{Tr}(\tilde Q_2\tilde P)$ is non-degenerate on $\mathbb{B}$. In the eigenbasis its Gram matrix is</p>
 <p>$$
@@ -453,7 +407,7 @@ G=
 0&0&0&1
 \end{pmatrix},
 $$</p>
-<p>because $\operatorname{Tr}(\tilde\Pi_\pm)=1$, $\operatorname{Tr}(\vec\Upsilon_\pm)=0$ and $\operatorname{Tr}(\vec\Upsilon_+\vec\Upsilon_-)=\operatorname{Tr}(\tilde\Pi_-)=1$. The basis is not orthonormal: the two idempotents have square $1$ in the pairing, the two nilpotents are isotropic, and the two mixed products pair to $1$. The matrix is its own inverse, so the dual basis of $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$: the two nilpotents are exchanged and the two idempotents are self-dual. Consequently</p>
+<p>because $\operatorname{Tr}(\tilde\Pi_\pm)=1$, $\operatorname{Tr}(\vec\Upsilon_\pm)=0$ and $\operatorname{Tr}(\vec\Upsilon_+\vec\Upsilon_-)=\operatorname{Tr}(\tilde\Pi_-)=1$. The trace matrix of the basis is not the identity: the two idempotents have trace $1$, the two nilpotents have trace $0$, and the two mixed products have trace $1$. The matrix is its own inverse, so the dual basis of $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$: the two nilpotents are exchanged and the two idempotents are self-dual. Consequently</p>
 <p>$$
 Q_{2,11}=\operatorname{Tr}(\tilde\Pi_+\tilde Q_2),\qquad
 Q_{2,12}=\operatorname{Tr}(\vec\Upsilon_+\tilde Q_2),\qquad
@@ -578,7 +532,7 @@ $$</p>
 $$</p>
 <p>The idempotents depend on $\vec\Xi$ only. The closed forms are homogeneous of degree zero in $(\vec Q,B)$, so the pair is unchanged. The eigenvalues are $Q_t'\pm iB'=(aQ_t+b)\pm iaB=a\lambda_\pm+b$.</p>
 <p><strong>Corollary (the projective reading).</strong> The eigenbasis is a function on the complement of the conic $B^2=0$ in $\mathbb{P}^2$, the projective space of the vector part. The element $\tilde Q$ projects to the point $[\vec Q]$, and the fibre of the projection is the affine line $\{a\tilde Q+b e_t\}$. On that fibre the eigenbasis is constant and the spectrum is affine. The spectral cone is the conic $B^2=0$, and it is exactly the locus where the construction stops.</p>
-<p>This explains why the norm does not enter: $N$ changes along the fibre, while the eigenbasis does not.</p>
+<p>This explains why the central scalar does not enter: it changes along the fibre, while the eigenbasis does not.</p>
 <h3 id="equivariance-under-inner-automorphisms">Equivariance under Inner Automorphisms</h3>
 <p><strong>Proposition (conjugation).</strong> Let $S$ be a unit of $\mathbb{B}$ and put $\tilde Q'=S\tilde QS^{-1}$. Then $S\tilde\Pi_\pm S^{-1}$ are the idempotents of $\tilde Q'$, and</p>
 <p>$$
@@ -607,7 +561,7 @@ $$</p>
 <p>$$
 e_b=e+b\vec N,\qquad b\in\mathbb{C},
 $$</p>
-<p>and the Peirce form is invariant: $e_b\vec Nf_b=\vec N$, with $f_b=e_t-e_b$. Equivalently, $e_b$ is the unique non-zero idempotent on the complement line $\mathbb{C}e_b$ to $\mathbb{C}\vec N$ in $\ker L_{\vec N}$; the parameter $b$ is the choice of that complement. The opposite corner $f_b\mathbb{B}e_b$ is a line that moves with $b$, so the Peirce quadruple is not a function of the element <strong>for the bilinear structure</strong>. The Hermitian form is definite and selects one complement on the cone, hence one quadruple; the construction is in <em>The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion</em>, §<em>The Definite Form</em> and §<em>The Jordan Basis</em>. The element has no eigenbasis, because its eigenspace is $\ker L_{\vec N}$, of complex dimension two.</p>
+<p>and the product identity $e_b\vec Nf_b=\vec N$ holds, with $f_b=e_t-e_b$. Equivalently, $e_b$ is the unique non-zero idempotent on the complement line $\mathbb{C}e_b$ to $\mathbb{C}\vec N$ in $\ker L_{\vec N}$; the parameter $b$ is the choice of that complement. The opposite corner $f_b\mathbb{B}e_b$ is a line that moves with $b$, so the Peirce quadruple is not a function of the element <strong>for the plain product</strong>. A canonical choice of complement on the cone, hence of one quadruple, is made in <em>The Jordan Normal Form</em>, §<em>The Jordan Basis</em>. The element has no eigenbasis, because its eigenspace is $\ker L_{\vec N}$, of complex dimension two.</p>
 <p><strong>The unipotent stratum.</strong> $Q_t\neq0$, $\vec Q\neq0$. Put $\vec\Upsilon=\vec Q/Q_t$. Then $\vec\Upsilon^2=0$ and</p>
 <p>$$
 \tilde Q=Q_tu,\qquad u=e_t+\vec\Upsilon,\qquad (u-e_t)^2=0.
@@ -628,10 +582,10 @@ $$</p>
 <p>$$
 0\subset\mathbb{C}\vec Q\subset\ker R_{\vec Q}\subset\mathbb{B},
 $$</p>
-<p>not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a Jordan basis; the definite Hermitian form removes both freedoms and selects one quadruple, constructed in <em>The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion</em>.</p>
+<p>not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a Jordan basis; a canonical choice of the complement removes both freedoms and selects one quadruple, constructed in <em>The Jordan Normal Form</em>.</p>
 <h2 id="spinors-and-chirality">Spinors and Chirality</h2>
 <p><strong>The eigenbasis exhibits the two spinor spaces as the two columns of its matrix model. Each column is a minimal left ideal, each is a complex plane, and each carries both eigenvalues under left multiplication. Chirality is the right index, not the left one.</strong></p>
-<p>The general statement is in <em>Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</em>, §<em>Spinors and the Two Couples</em>: the four Peirce vectors split into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, and left multiplication acts on each couple by the same Peirce matrix. Here that matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$, so each couple is a pair of eigenvectors.</p>
+<p>The general statement is in <em>The Peirce Decomposition</em>, §<em>Spinors and the Two Couples</em>: the four Peirce vectors split into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, and left multiplication acts on each couple by the same Peirce matrix. Here that matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$, so each couple is a pair of eigenvectors.</p>
 <h3 id="the-two-spinor-spaces">The Two Spinor Spaces</h3>
 <p><strong>Definition (spinor space).</strong> A <strong>spinor space</strong> of $\mathbb{B}$ is a minimal non-zero left ideal. The two spinor spaces attached to $\tilde Q$ are</p>
 <p>$$
@@ -750,9 +704,9 @@ $$</p>
 <p>$$
 S_+^*=(\mathbb{B}\tilde\Pi_+)^*=\tilde\Pi_+^*\mathbb{B}.
 $$</p>
-<p>It therefore does not act inside the chiral decomposition: the two chiralities are left ideals, and their images are right ideals. A minimal left ideal of $M_2(\mathbb{C})$ is not a right ideal, so the image is not one of the two chiralities. Chirality belongs to the left-ideal decomposition, not to the Hermitian structure. The spinor adjoints, the reality conditions and the Hermitian forms are treated in <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> and in the companion articles on the signed adjoints.</p>
+<p>It therefore does not act inside the chiral decomposition: the two chiralities are left ideals, and their images are right ideals. A minimal left ideal of $M_2(\mathbb{C})$ is not a right ideal, so the image is not one of the two chiralities. Chirality belongs to the left-ideal decomposition, not to the matrix adjoint. The spinor adjoints and the reality conditions are treated in <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> and in the companion articles on the signed adjoints.</p>
 <h3 id="physical-interpretation">Physical Interpretation</h3>
-<p>In the language of physics, the pair of columns is the algebraic image of a Dirac spinor: one spinor of each chirality. The two eigenvalues $\lambda_\pm$ play the role of the two mass or energy labels. A spinor of definite chirality has both labels: it is a two-component object whose components are its $\lambda_+$ and $\lambda_-$ parts. A gauge transformation is a left multiplication by a unit, so it preserves chirality; a mass term couples the two chiralities and is therefore not a left multiplication by an element. It is a bilinear pairing between $S_+$ and $S_-$, not a term in the left action of the algebra. The general element of $\mathbb{B}$, which has off-diagonal entries, is a pair of spinors, one of each chirality, and its off-diagonal entries mix the two spectral components inside each chirality rather than the two chiralities.</p>
+<p>In the language of physics, the pair of columns is the algebraic image of a Dirac spinor: one spinor of each chirality. The two eigenvalues $\lambda_\pm$ play the role of the two mass or energy labels. A spinor of definite chirality has both labels: it is a two-component object whose components are its $\lambda_+$ and $\lambda_-$ parts. A gauge transformation is a left multiplication by a unit, so it preserves chirality; a mass term couples the two chiralities and is therefore not a left multiplication by an element. The general element of $\mathbb{B}$, which has off-diagonal entries, is a pair of spinors, one of each chirality, and its off-diagonal entries mix the two spectral components inside each chirality rather than the two chiralities.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>With $B^2\neq0$, the normalised basis $\mathcal{B}(\tilde Q)=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is unique, and every $\tilde Q_2\in\mathbb{B}$ has the unique expansion $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$. The two spinor spaces are its two columns.</strong></p>
 <div class="table-scroll"><table>
@@ -765,11 +719,11 @@ $$</p>
 <tbody>
 <tr>
 <td>hypothesis</td>
-<td>$B^2\neq0$; the norm is irrelevant</td>
+<td>$B^2\neq0$; the central scalar is irrelevant</td>
 </tr>
 <tr>
 <td>domain</td>
-<td>$\Sigma_{11}\cup\Sigma_{01}$, the complement of the spectral cone</td>
+<td>$B^2\neq0$, the complement of the spectral cone</td>
 </tr>
 <tr>
 <td>root</td>
@@ -833,7 +787,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The construction fails exactly on the spectral-degenerate cone, and the failure has three forms. On the scalar stratum and at the origin every basis is an eigenbasis and none is attached to the element; the one-term decomposition is canonical, and the gauge is the idempotent variety. On the nilpotent and unipotent strata there is no eigenbasis: the canonical data are the line, the flag, and the affine family $e_b=e+b\vec Q$ of Peirce idempotents, and the two-sided action does not repair the defect. The spectral condition is thus the exact domain of the construction, and the norm is not part of it.</p>
+<p>The construction fails exactly on the spectral-degenerate cone, and the failure has three forms. On the scalar stratum and at the origin every basis is an eigenbasis and none is attached to the element; the one-term decomposition is canonical, and the gauge is the idempotent variety. On the nilpotent and unipotent strata there is no eigenbasis: the canonical data are the line, the flag, and the affine family $e_b=e+b\vec Q$ of Peirce idempotents, and the two-sided action does not repair the defect. The spectral condition is thus the exact domain of the construction, and the central scalar is not part of it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -858,10 +812,6 @@ $$</p>
 <tr>
 <td>$B$</td>
 <td>a fixed square root of $B^2$</td>
-</tr>
-<tr>
-<td>$N=Q_t^2+B^2$</td>
-<td>the quaternionic norm</td>
 </tr>
 <tr>
 <td>$\vec\Xi=-i\vec Q/B$</td>

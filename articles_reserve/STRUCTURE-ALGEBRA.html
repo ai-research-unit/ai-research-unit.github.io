@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Algebra Block — New Structure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-algebra-block-new-structure">The Algebra Block — New Structure</h1>
+<p>The block ends where a pairing of two different elements begins. Every article below uses
+the plain product, the coefficients, and the characteristic polynomial. No article pairs
+$Q_1$ with $Q_2$ and takes a scalar part. The reduced norm appears only as the constant
+term of $p_Q$, never as a form.</p>
+<p>Four sections: the object, the frame, the modules, the element.</p>
+<p>Status: <strong>KEEP</strong> (title and body unchanged), <strong>RENAME</strong> (new title, body unchanged),
+<strong>SPLIT</strong> (text moved into a new article), <strong>NEW</strong> (written), <strong>TRIM</strong> (sections removed
+and re-homed). Executed on 2026-09-27: all 34 articles exist, the menu carries the four
+sections, and the forms block follows.</p>
+<h2 id="1-the-algebra">1. The Algebra</h2>
+<p>The object, its element, its symmetries.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>file</th>
+<th>status</th>
+<th>words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The Biquaternion Algebra</td>
+<td><code>the-biquaternion-algebra-and-its-vector-spaces.md</code></td>
+<td>SPLIT, RENAME</td>
+<td>5,000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The Element, the Coordinates and the Conjugations</td>
+<td><code>the-element-the-coordinates-and-the-conjugations.md</code></td>
+<td>SPLIT</td>
+<td>2,200</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The Group of Involutions</td>
+<td><code>the-group-of-involutions.md</code></td>
+<td>KEEP</td>
+<td>2,900</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The Six Subspaces</td>
+<td><code>introduction-to-the-remarkable-subspaces.md</code></td>
+<td>RENAME, TRIM</td>
+<td>7,000</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The Lattice of the Subspaces</td>
+<td><code>comparison-of-the-remarkable-subspaces.md</code></td>
+<td>RENAME</td>
+<td>3,400</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Three Eigenspace Decompositions</td>
+<td><code>decompositions-along-the-remarkable-subspaces.md</code></td>
+<td>RENAME</td>
+<td>1,800</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>2,100</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>1,700</td>
+</tr>
+<tr>
+<td>9</td>
+<td>The Square of an Element</td>
+<td><code>the-square-of-an-element.md</code> (new)</td>
+<td>NEW</td>
+<td>1,200</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Zero Divisors and Units</td>
+<td><code>zero-divisors-and-units.md</code> (new)</td>
+<td>NEW</td>
+<td>2,000</td>
+</tr>
+<tr>
+<td>11</td>
+<td>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</td>
+<td><code>m2c-representation-the-matrix-product-and-the-algebra-structure.md</code></td>
+<td>RENAME</td>
+<td>2,400</td>
+</tr>
+<tr>
+<td>12</td>
+<td>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</td>
+<td><code>m4c-representation-the-matrix-product-and-the-algebra-structure.md</code></td>
+<td>RENAME</td>
+<td>2,500</td>
+</tr>
+</tbody>
+</table></div>
+<p>Article 1 owns the product, the axioms, the centre and the presentation. It proves
+non-division by the explicit product $(e_t+ie_x)(e_t-ie_x)=0$; no norm is named.</p>
+<p>Article 2 owns the scalar–vector split, the three coordinate systems, the four
+conjugations and $\mathbb{C}[Q]=\operatorname{span}\{e_t,Q\}$. It states that the
+centraliser is two-dimensional for a non-central element but does not identify it with
+$\mathbb{C}[X]/(p_Q)$: that needs $p_Q$, in article 23, and is done in article 26.</p>
+<p>Article 3 keeps the Klein group, its table and its orbits; the four-map definitions moved
+to article 2.</p>
+<p>Article 4 loses §<em>The Roots of Zero and Plus One</em> and §<em>The Idempotents and the Ideals in
+the Remarkable Subspaces</em>; both are re-homed in §2 and §3. It keeps the six definitions,
+the bases, the dimensions and the derivation $4\times2-2=6$: the four non-identity
+conjugations give eight eigenspaces, and the two of the reversal $\flat$ coincide with
+those of ${}^{*}$.</p>
+<p>Article 5 owns intersections, sums and the lattice. Article 6 owns the three eigenspace
+decompositions.</p>
+<p>Article 9 states $Q^2=(Q_t^2-B^2)e_t+2Q_t\vec Q$, the cone $B^2=0$, and the three
+equations with their destinations: $Q^2=0\to13$, $Q^2=Q\to14$, $Q^2=A\to34$.</p>
+<p>Article 10 states $QQ^{\natural}=(Q_t^2+B^2)e_t$, unit $\iff QQ^{\nu}\neq0$, the two families
+($Q_t=0$ nilpotent; $Q_t\neq0$ a scalar multiple of the idempotent $Q/(2Q_t)$), and the
+chain to the minimal left ideal and the spinor. It is the only article in §1 that counts
+zero divisors.</p>
+<p>The pair 11–12 closes the section. It reads the product, the coefficients and the unit
+group. Subtitles mirror; only the model label changes.</p>
+<h2 id="2-the-frame">2. The Frame</h2>
+<p>The two families the square produced, then the frame that arranges them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>file</th>
+<th>status</th>
+<th>words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13</td>
+<td>Nilpotents</td>
+<td><code>square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md</code></td>
+<td>RENAME</td>
+<td>4,800</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Idempotents</td>
+<td><code>square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md</code></td>
+<td>RENAME</td>
+<td>6,700</td>
+</tr>
+<tr>
+<td>15</td>
+<td>The Peirce Decomposition</td>
+<td><code>the-peirce-decomposition.md</code> (new)</td>
+<td>SPLIT</td>
+<td>5,100</td>
+</tr>
+<tr>
+<td>16</td>
+<td>$M_2(\mathbb{C})$ Model : Peirce Coordinates and Matrix Units</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>1,700</td>
+</tr>
+<tr>
+<td>17</td>
+<td>$M_4(\mathbb{C})_L$ Model : Peirce Coordinates and Matrix Units</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>1,200</td>
+</tr>
+</tbody>
+</table></div>
+<p>Article 14 defines idempotents without the word <em>family</em> for the $Q_t\neq0$ half: the
+trivial idempotents $0,e_t$; the nontrivial ones, all with $Q_t=\tfrac12$ and
+$\vec Q\neq0$, obtained as $Q/(2Q_t)$; the halving map; the four-parameter family;
+primitive and complete pairs; the Hermitian subfamily.</p>
+<p>Article 15 takes §<em>Idempotents and Orthogonal Idempotents</em>, §<em>The Peirce Decompositions</em>,
+§<em>The Peirce Coordinates and the Matrix Model</em> and §<em>The Real Structure</em> of
+<code>ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.md</code>. It owns the
+four corners, the corner rule, the matrix units, the reciprocal $\mathbb{C}^\times$ and
+the notion of a frame.</p>
+<p>Article 17 owns the Cayley block form.</p>
+<h2 id="3-the-modules">3. The Modules</h2>
+<p>The algebra acting on itself and on its ideals.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>file</th>
+<th>status</th>
+<th>words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>18</td>
+<td>The Regular Module</td>
+<td><code>the-regular-module.md</code> (new)</td>
+<td>SPLIT</td>
+<td>6,000</td>
+</tr>
+<tr>
+<td>19</td>
+<td>The Minimal Left Ideals</td>
+<td><code>the-minimal-left-ideals.md</code> (new)</td>
+<td>SPLIT</td>
+<td>4,100</td>
+</tr>
+<tr>
+<td>20</td>
+<td>The Category of Modules</td>
+<td><code>the-category-of-modules.md</code> (new)</td>
+<td>SPLIT</td>
+<td>7,400</td>
+</tr>
+<tr>
+<td>21</td>
+<td>$M_2(\mathbb{C})$ Model : Columns, Rows and the Spinor Module</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>2,100</td>
+</tr>
+<tr>
+<td>22</td>
+<td>$M_4(\mathbb{C})_L$ Model : Columns, Rows and the Spinor Module</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>1,900</td>
+</tr>
+</tbody>
+</table></div>
+<p>Article 18 takes §<em>The Three Regular Modules</em>, §<em>The Submodules Are the Ideals</em>, §<em>The
+Four Properties of the Regular Object</em>, §<em>The Endomorphisms of the Regular Object</em> and
+§<em>The Defining Module</em> of <code>modules-over-the-biquaternion-algebra.md</code>, plus §<em>The
+Two-Sided Ideals</em> and §<em>Artinian, Semisimple, and Length Two</em> of the Peirce article. It
+states: simple as an algebra (the two-sided ideals are $0$ and $\mathbb{B}$); length two
+as a left module; radical zero.</p>
+<p>Article 19 takes §<em>The Decomposition into Minimal Left and Right Ideals</em>, §<em>Spinors and
+the Two Couples</em> and §<em>The Two Sector Articles as Specialisations</em>. It owns the two
+copies, $\mathbb{C}^2$, the couples $\mathcal{C}_\pm$, chirality and the spinor reading.</p>
+<p>Article 20 takes §<em>The Category of Left Modules</em>, §<em>Projectivity and the Parity of
+Freeness</em>, §<em>The Commutant of an Element</em>, §<em>Morita Equivalence with the Complex Field</em>,
+§<em>Torsion</em>, §<em>Real Structures</em> and §<em>The Biquaternion Case</em> of the module article, plus
+§<em>The Lattice of Left Ideals</em>, §<em>The Projective Line and the Möbius Action</em> and §<em>The
+Radical</em>. It owns the lattice of left ideals as $\mathbb{P}^1$ through the $M_2$ model,
+and the double centraliser.</p>
+<h2 id="4-the-element">4. The Element</h2>
+<p>Intrinsic data, then normal forms.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>article</th>
+<th>file</th>
+<th>status</th>
+<th>words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>23</td>
+<td>The Spectrum</td>
+<td><code>spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.md</code></td>
+<td>RENAME</td>
+<td>5,600</td>
+</tr>
+<tr>
+<td>24</td>
+<td>$M_2(\mathbb{C})$ Model : The Spectral Projectors</td>
+<td><code>m2c-representation-the-spectral-projectors-and-the-nilpotents.md</code></td>
+<td>RENAME</td>
+<td>1,700</td>
+</tr>
+<tr>
+<td>25</td>
+<td>$M_4(\mathbb{C})_L$ Model : The Spectral Projectors</td>
+<td><code>m4c-representation-the-spectral-projectors-and-the-nilpotents.md</code></td>
+<td>RENAME</td>
+<td>1,300</td>
+</tr>
+<tr>
+<td>26</td>
+<td>The Centraliser</td>
+<td><code>the-centraliser.md</code> (new)</td>
+<td>SPLIT</td>
+<td>1,600</td>
+</tr>
+<tr>
+<td>27</td>
+<td>$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>1,200</td>
+</tr>
+<tr>
+<td>28</td>
+<td>$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>1,900</td>
+</tr>
+<tr>
+<td>29</td>
+<td>The Semisimple–Nilpotent Split</td>
+<td><code>the-jordan-chevalley-decomposition-of-a-biquaternion.md</code></td>
+<td>RENAME, TRIM</td>
+<td>2,900</td>
+</tr>
+<tr>
+<td>30</td>
+<td>The Eigenbasis</td>
+<td><code>the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.md</code></td>
+<td>RENAME</td>
+<td>6,800</td>
+</tr>
+<tr>
+<td>31</td>
+<td>$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>2,600</td>
+</tr>
+<tr>
+<td>32</td>
+<td>$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix</td>
+<td>existing</td>
+<td>KEEP</td>
+<td>1,600</td>
+</tr>
+<tr>
+<td>33</td>
+<td>The Jordan Normal Form</td>
+<td><code>the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.md</code></td>
+<td>RENAME, TRIM</td>
+<td>5,500</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Square Roots of an Element</td>
+<td><code>square-roots-of-a-general-element-in-the-biquaternion-algebra.md</code></td>
+<td>MOVE, RENAME</td>
+<td>2,900</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Worked Examples</em> — <code>worked-examples-of-eigenbasis-of-a-biquaternion.md</code>, KEEP,
+unnumbered, closes the block.</p>
+<p>Article 23 owns the criterion, the characteristic polynomial, the discriminant, and the
+cone $B^2=0$ as the degeneracy locus.</p>
+<p>Article 26 takes §<em>The Two Frames</em> of the Jordan–Chevalley article and expands it:
+$C(Q)=\mathbb{C}[Q]$ off the scalar line, all of $\mathbb{B}$ at the scalar, the dual
+numbers on the cone, the dimension count.</p>
+<p>Article 29 takes the remainder of the Jordan–Chevalley article: existence by the
+discriminant, uniqueness from the centraliser, and the four types (scalar, semisimple,
+Jordan, nilpotent) that name the normal forms of 30 and 33.</p>
+<p>Article 33 loses §<em>The Definite Form</em>, §<em>The Polar Decomposition on the Sector</em> and the
+$N$-language of §<em>The Norm inside the Sector</em>. The first two need $H$ and belong after the
+forms; the third is a theorem about the coincidence $N=Q_t^2$ on the cone, not a
+definition.</p>
+<p>Article 34 moves from §2 to §4: its classification is by the discriminant of $p_Q$, so it
+belongs after article 23, not after the idempotents.</p>
+<h2 id="what-leaves-the-block">What leaves the block</h2>
+<p>Everything that pairs two elements. In reading order this is the next block, not a
+residue:</p>
+<ul>
+<li><em>The Four General Products and Their Relations</em> and <em>Symmetric and Antisymmetric
+  Decomposition of the Four General Products</em>, with their two trace companions. This is
+  the first article of the forms block: the four products are the four forms.</li>
+<li><em>The Four Forms and the Four Algebraic Norms</em>, with its four companions.</li>
+<li>The $H$, $N$, $K$ sections and <em>The Spectral Strata</em>.</li>
+<li><em>Remarkable Subspaces and the Four General Products, Forms and Norms</em> and <em>The Polar
+  Decomposition and Remarkable Subspaces</em>.</li>
+<li><em>The Conjugations and the Adjoints</em> ($M_2$ and $M_4$): adjoints are forms.</li>
+<li><em>Operators</em> and the matrix worked examples.</li>
+</ul>
+<h2 id="deviations-from-the-29-article-list">Deviations from the 29-article list</h2>
+<p>Three, all forced by the corpus.</p>
+<ol>
+<li><strong>The Four Conjugations and the Six Subspaces are two articles, not one.</strong> The merged
+   article would be 10,700 words, and the two existing articles have different subjects
+   (the group and its orbits; the six fixed spaces). +1.</li>
+<li><strong>The Six Subspaces keeps its model pair.</strong> Two existing articles, 3,800 words,
+   already read it. Dropping them would delete work; keeping them adds a pair. +2.</li>
+<li><strong>Two form-free subspace articles rejoin the block</strong>: <em>The Lattice of the Subspaces</em>
+   and <em>The Three Eigenspace Decompositions</em>. Both use only the conjugations. Leaving
+   them in the old <em>Remarkable Subspaces</em> section would split the symmetries across two
+   sections. +2.</li>
+</ol>
+<p><em>The Centraliser</em> is unchanged in count: it was article 21 of the approved list and is
+article 26 here. All five additions are in §1.</p>
+<p>Total: 34 articles plus the unnumbered worked examples.</p>
+<p>The 29-article version is obtained by merging 3–4, dropping 7–8, and folding 5–6 into 4.
+That version is shorter and loses four finished articles.</p>
+<h2 id="the-rules">The rules</h2>
+<ol>
+<li><strong>Boundary.</strong> No article pairs two different elements. The reduced norm is the
+   constant term of $p_Q$, not a form.</li>
+<li><strong>Companions.</strong> A pair is one subtitle with its $M_2$ and $M_4$ articles. Pairs close
+   the group they read. Subtitles mirror; only the model label changes.</li>
+<li><strong>Equations.</strong> Article 9 sends $Q^2=0\to13$, $Q^2=Q\to14$, $Q^2=A\to34$. No other
+   article announces them.</li>
+<li><strong>Naming.</strong> One name per concept; the owner is the article that states it, not every
+   article that uses it.</li>
+<li><strong>Forward destinations.</strong> Real forms, adjoints, polar decompositions, the four
+   products and the Killing form go to the forms block. The block names them; it does not
+   define them.</li>
+</ol>
+<h2 id="the-work">The work</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operation</th>
+<th>count</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>new text</td>
+<td>4 articles, ~6,000 words</td>
+<td>2, 9, 10, 26; 2 is a split with expansion</td>
+</tr>
+<tr>
+<td>splits</td>
+<td>4 files</td>
+<td>algebra, Peirce, modules, Jordan–Chevalley</td>
+</tr>
+<tr>
+<td>renames</td>
+<td>13</td>
+<td>title and menu line; file rename optional</td>
+</tr>
+<tr>
+<td>trims</td>
+<td>3</td>
+<td>subspaces, Jordan basis, algebra</td>
+</tr>
+<tr>
+<td>unchanged</td>
+<td>9</td>
+<td>companions and worked examples</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

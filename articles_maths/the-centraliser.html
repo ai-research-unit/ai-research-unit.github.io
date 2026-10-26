@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Centraliser — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-centraliser"><strong>The Centraliser</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The centraliser of an element is the set of elements that commute with it. In the biquaternion algebra it is small and completely determined: for every non-central element it is the plane spanned by $e_t$ and the element itself, of complex dimension two, and only its algebra type changes with the discriminant. The central element is the single exception, and there the centraliser is the whole algebra.</p>
+<p>The article is the intrinsic half of the element's theory. It gives the centraliser, its type, the double centraliser and the dimension count, and it supplies the uniqueness proof of <em>The Semisimple–Nilpotent Split</em>: the two parts of the split are polynomials in the element, hence lie in a commutative centraliser, hence commute.</p>
+<p>The article is form-free. It uses the product, the coefficients and the square of <em>The Square of an Element</em>.</p>
+<h2 id="the-definition">The Definition</h2>
+<p>For $\tilde Q\in\mathbb{B}$ the <strong>centraliser</strong> is</p>
+<p>$$
+C(\tilde Q)=\{\tilde X\in\mathbb{B}:\ \tilde X\tilde Q=\tilde Q\tilde X\},
+$$</p>
+<p>a unital complex subalgebra of $\mathbb{B}$ containing $\tilde Q$ and the centre $\mathbb{C}e_t$. The <strong>double centraliser</strong> is $C(C(\tilde Q))$.</p>
+<p>Two elementary facts are used below.</p>
+<ul>
+<li>$C(\tilde Q)$ is a subalgebra: the sum and the product of two elements that commute with $\tilde Q$ commute with $\tilde Q$.</li>
+<li>$\mathbb{C}[\tilde Q]=\operatorname{span}\{e_t,\tilde Q\}\subseteq C(\tilde Q)$, with equality exactly when the two spaces have the same dimension.</li>
+</ul>
+<h2 id="the-three-cases">The Three Cases</h2>
+<p><strong>The central element.</strong> If $\tilde Q=Q_te_t$ then $\tilde Q$ commutes with everything, so</p>
+<p>$$
+C(\tilde Q)=\mathbb{B},\qquad C(C(\tilde Q))=\mathbb{C}e_t .
+$$</p>
+<p>The double centraliser is the centre, not the element: the central element carries no information.</p>
+<p><strong>The element off the cone, $B^2\neq0$.</strong> Then the minimal polynomial of $\tilde Q$ is</p>
+<p>$$
+p_{\tilde Q}(X)=(X-Q_t)^2+B^2,
+$$</p>
+<p>of degree two with distinct roots $\lambda_\pm=Q_t\pm iB$. In the matrix model $\tilde Q$ is a $2\times2$ matrix whose minimal polynomial has degree two, equal to the size of the matrix: it is <strong>nonderogatory</strong>. The commutant of a nonderogatory matrix is the algebra of polynomials in it, so</p>
+<p>$$
+C(\tilde Q)=\mathbb{C}[\tilde Q]\cong\mathbb{C}[X]/(p_{\tilde Q})\cong\mathbb{C}\times\mathbb{C},
+$$</p>
+<p>of complex dimension two. The isomorphism is the pair of evaluations at the two eigenvalues, $\tilde X\mapsto(\tilde X(\lambda_+),\tilde X(\lambda_-))$.</p>
+<p><strong>The element on the cone, $B^2=0$ and $\tilde Q$ non-central.</strong> Write $\tilde Q=Q_te_t+\tilde N$ with $\tilde N=\vec Q\neq0$ and $\tilde N^2=0$. The minimal polynomial is $(X-Q_t)^2$, of degree two, so the matrix is again nonderogatory, and</p>
+<p>$$
+C(\tilde Q)=\mathbb{C}[\tilde Q]\cong\mathbb{C}[X]/((X-Q_t)^2)\cong\mathbb{C}[\varepsilon]/(\varepsilon^2),
+$$</p>
+<p>the <strong>dual numbers</strong>, of complex dimension two. The isomorphism sends $\varepsilon$ to $\tilde N=\tilde Q-Q_te_t$.</p>
+<p>The three cases are exhaustive: an element is central, or $B^2\neq0$, or $B^2=0$ and non-central. In every non-central case the centraliser is two-dimensional, and the type is decided by the discriminant:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>$C(\tilde Q)$</th>
+<th>type</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t$</td>
+<td>$\mathbb{B}$</td>
+<td>the algebra</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$B^2\neq0$</td>
+<td>$\mathbb{C}[\tilde Q]$</td>
+<td>$\mathbb{C}\times\mathbb{C}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$B^2=0$, $\tilde Q$ non-central</td>
+<td>$\mathbb{C}[\tilde Q]$</td>
+<td>dual numbers</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The equality $C(\tilde Q)=\mathbb{C}[\tilde Q]$ is the statement that the element is nonderogatory</strong>, and it fails only at the centre, where the minimal polynomial has degree one while the algebra has dimension four.</p>
+<h2 id="the-double-centraliser">The Double Centraliser</h2>
+<p>For a non-central element, $C(\tilde Q)=\mathbb{C}[\tilde Q]$ is commutative and equals its own centraliser:</p>
+<p>$$
+C(C(\tilde Q))=C(\mathbb{C}[\tilde Q])=\mathbb{C}[\tilde Q]=C(\tilde Q).
+$$</p>
+<p>For the central element, $C(\tilde Q)=\mathbb{B}$ and $C(\mathbb{B})=\mathbb{C}e_t$. The two cases are the two extremes of the double-centraliser theorem: the bicommutant of a subalgebra of a matrix algebra is the subalgebra itself when the subalgebra is its own bicommutant, and the centre is the fixed point of the operation.</p>
+<p>The double centraliser is the algebra-side statement of the module classification: the endomorphism ring of the simple module is $\mathbb{C}$, and the double centraliser of $\mathbb{C}$ is $\mathbb{B}$. The module form is <em>The Category of Modules</em>.</p>
+<h2 id="the-uniqueness-of-the-split">The Uniqueness of the Split</h2>
+<p>The centraliser is what makes the semisimple–nilpotent split unique.</p>
+<p>Let $\tilde Q=\tilde S+\tilde N$ with $\tilde S$ semisimple, $\tilde N$ nilpotent and $\tilde S\tilde N=\tilde N\tilde S$. Both $\tilde S$ and $\tilde N$ are polynomials in $\tilde Q$ by the Chinese-remainder construction on the two eigenvalues, and $\tilde N$ has zero constant term; hence both lie in $\mathbb{C}[\tilde Q]=C(\tilde Q)$. The centraliser is commutative, so any two such decompositions commute, and their semisimple and nilpotent parts agree by the uniqueness of the Jordan decomposition in a commutative algebra.</p>
+<p>The two explicit cases are these.</p>
+<ul>
+<li>$B^2\neq0$: $\tilde Q$ is semisimple already, so $\tilde S=\tilde Q$ and $\tilde N=0$.</li>
+<li>$B^2=0$: $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$, so $\tilde S=Q_te_t$ and $\tilde N=\vec Q$.</li>
+</ul>
+<p>The four types of the split — scalar, semisimple, Jordan, nilpotent — are the four positions of $(\tilde S,\tilde N)$ in these two cases. They are stated, with the corner pattern, in <em>The Semisimple–Nilpotent Split</em>.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>$C(\tilde Q)=\{\tilde X:\tilde X\tilde Q=\tilde Q\tilde X\}$ is a unital subalgebra containing $\tilde Q$.</li>
+<li>For a non-central element $C(\tilde Q)=\mathbb{C}[\tilde Q]$, of complex dimension two.</li>
+<li>Off the cone, $C(\tilde Q)\cong\mathbb{C}\times\mathbb{C}$; on the cone, $C(\tilde Q)\cong\mathbb{C}[\varepsilon]/(\varepsilon^2)$, the dual numbers.</li>
+<li>For the central element, $C(\tilde Q)=\mathbb{B}$ and $C(C(\tilde Q))=\mathbb{C}e_t$.</li>
+<li>The double centraliser of a non-central element is its centraliser.</li>
+<li>The parts of the semisimple–nilpotent split are polynomials in the element, hence lie in the commutative centraliser; this is the uniqueness proof.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C(\tilde Q)$</td>
+<td>the centraliser of $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[\tilde Q]=\operatorname{span}\{e_t,\tilde Q\}$</td>
+<td>the polynomial algebra of $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[\varepsilon]/(\varepsilon^2)$</td>
+<td>the dual numbers</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">The Spectrum</a>, for the discriminant and the two eigenvalues.</li>
+<li><a href="the-jordan-chevalley-decomposition-of-a-biquaternion.html">The Semisimple–Nilpotent Split</a>, for the decomposition.</li>
+<li><a href="m2c-representation-the-centraliser-and-the-double-centraliser.html">$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</a>, for the matrix form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

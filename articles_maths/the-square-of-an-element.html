@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Square of an Element — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-square-of-an-element"><strong>The Square of an Element</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The square is the first operation of the algebra that is not linear. This article computes it on the general element, in the coordinates of that element, and reads the two parts of the result. It then reads the square as a condition: when the square is central, when it vanishes, and when it equals the element again.</p>
+<p>The article is form-free. It uses the product, the coefficients and the scalar–vector split of <em>The Element, the Coordinates and the Conjugations</em>, and it pairs no two different elements. No norm and no form appears.</p>
+<h2 id="the-formula">The Formula</h2>
+<p>Write the general element in the scalar–vector split,</p>
+<p>$$
+\tilde Q=Q_te_t+\vec Q,\qquad
+\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad
+Q_\mu=q_\mu+iq'_\mu,
+$$</p>
+<p>with the four complex coefficients $Q_\mu$, their real parts $q_\mu$ and their imaginary parts $q'_\mu$. The <strong>complex length</strong> of the vector part is</p>
+<p>$$
+B=\sqrt{Q_x^2+Q_y^2+Q_z^2},\qquad B^2=Q_x^2+Q_y^2+Q_z^2=(\vec Q,\vec Q),
+$$</p>
+<p>defined up to sign; this article uses the square $B^2$, which is branch-free. The square of the pure element is central,</p>
+<p>$$
+\vec Q^2=-B^2e_t,
+$$</p>
+<p>and the multiplication of the scalar and the vector part gives the square as</p>
+<p>$$
+\boxed{\;\tilde Q^2=\bigl(Q_t^2-B^2\bigr)e_t+2Q_t\vec Q\;}.
+$$</p>
+<p>In coordinates, the square has scalar part $Q_t^2-B^2$ and vector part $2Q_t\vec Q$:</p>
+<p>$$
+\tilde Q^2=\underbrace{\bigl(Q_t^2-B^2\bigr)}_{\text{scalar}}e_t+\underbrace{2Q_t\vec Q}_{\text{vector}} .
+$$</p>
+<p>The scalar part is the square of the scalar coefficient minus the square of the complex length; the vector part is the vector part of the element, multiplied by twice the scalar coefficient. The square is unchanged when the element changes sign, $(-\tilde Q)^2=\tilde Q^2$.</p>
+<p><strong>Example.</strong> For $\tilde Q=e_t+i\vec e_x$ the scalar coefficient is $1$ and $B^2=i^2=-1$, so $\tilde Q^2=2e_t+2i\vec e_x=2\tilde Q$. For $\tilde Q=i\vec e_x+\vec e_y$ the scalar coefficient is $0$ and $B^2=-1+1=0$, so $\tilde Q^2=0$.</p>
+<h2 id="the-two-parts">The Two Parts</h2>
+<p>The vector part of the square is $2Q_t\vec Q$: it is the vector part of the element, multiplied by the complex number $2Q_t$ and not turned. Three consequences are read off at once.</p>
+<ul>
+<li>If $Q_t\neq0$ and $\vec Q\neq0$, the square has a non-zero vector part, a complex multiple of $\vec Q$.</li>
+<li>If $Q_t=0$, the square is central, whatever the vector part.</li>
+<li>If $\vec Q=0$, the square is the central element $Q_t^2e_t$.</li>
+</ul>
+<h2 id="the-central-square">The Central Square</h2>
+<p>The square is central exactly when its vector part vanishes, $Q_t\vec Q=0$:</p>
+<p>$$
+\tilde Q^2\in\mathbb{C}e_t\iff Q_t=0\ \text{or}\ \vec Q=0 .
+$$</p>
+<p>A pure element has the central square $\vec Q^2=-B^2e_t$, and a central element has the central square $(Q_te_t)^2=Q_t^2e_t$; these are the only two ways. The alternative $\vec Q=0$ cannot be replaced by $B=0$: the complex length vanishes on a non-zero isotropic vector part, and for $Q_t\neq0$ the square then has vector part $2Q_t\vec Q\neq0$.</p>
+<h2 id="the-square-that-vanishes">The Square that Vanishes</h2>
+<p>The square vanishes when both of its parts vanish. If $Q_t\neq0$ the vector equation $2Q_t\vec Q=0$ gives $\vec Q=0$, and the scalar equation then reads $Q_t^2=0$, which is impossible. Hence $Q_t=0$; the scalar equation reduces to $B^2=0$, and the vector equation holds automatically. So</p>
+<p>$$
+\tilde Q^2=0\iff Q_t=0\ \text{and}\ B^2=0 .
+$$</p>
+<p>The elements whose square vanishes are exactly the pure elements whose complex length is zero. The non-zero elements of this set are treated in <em>Nilpotents</em>.</p>
+<h2 id="the-square-that-equals-the-element">The Square that Equals the Element</h2>
+<p>The equation $\tilde Q^2=\tilde Q$ compares the two coordinate pairs. The vector equation is $2Q_t\vec Q=\vec Q$, and the scalar equation is $Q_t^2-B^2=Q_t$.</p>
+<p>If $\vec Q=0$, the vector equation holds and the scalar equation is $Q_t^2=Q_t$, so $Q_t\in\{0,1\}$. If $\vec Q\neq0$, the vector equation forces $Q_t=\tfrac12$, and the scalar equation then gives</p>
+<p>$$
+B^2=Q_t^2-Q_t=\tfrac14-\tfrac12=-\tfrac14 .
+$$</p>
+<p>Conversely, each of these cases satisfies both equations. So</p>
+<p>$$
+\tilde Q^2=\tilde Q\iff \tilde Q\in\{0,e_t\}\ \text{or}\ \Bigl(Q_t=\tfrac12,\ B^2=-\tfrac14\Bigr).
+$$</p>
+<p>The second case is the family $\tilde Q=\tfrac12(e_t+\vec u)$ with $\vec u$ a pure element of $(\vec u,\vec u)=-1$. These elements are classified in <em>Idempotents</em>.</p>
+<h2 id="the-isotropic-cone">The Isotropic Cone</h2>
+<p>The condition $B^2=0$ defines the <strong>isotropic cone</strong> of the vector part. Writing $\vec Q=\vec q+i\vec q'$ with $\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ and $\vec q'=q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z$ real,</p>
+<p>$$
+B^2=(\vec q,\vec q)-(\vec q',\vec q')+2i(\vec q,\vec q'),
+$$</p>
+<p>so the cone is the pair of real equations</p>
+<p>$$
+(\vec q,\vec q)=(\vec q',\vec q'),\qquad (\vec q,\vec q')=0 .
+$$</p>
+<p>Two real equations in six real coordinates: the cone has real dimension four. It is the set of pairs of real vectors of equal length and vanishing dot product, $\vec Q=r(\vec u+i\vec v)$ with $r\ge0$ and $\vec u,\vec v$ orthonormal in $\mathbb{R}^3$. On the cone $B=0$, and the branch of the complex length disappears.</p>
+<p>The cone cuts the set of elements with vanishing square through the scalar condition $Q_t=0$: the square-zero elements are the pure points of the cone, $\tilde Q=\vec Q$ with $B^2=0$.</p>
+<h2 id="intrinsic-nature">Intrinsic Nature</h2>
+<p>The quantity $B^2$ is the scalar of the square of the pure part, $\vec Q^2=-B^2e_t$, so it is read from the element and the product alone, with no coordinate choice. The same holds for $Q_t$, the scalar part of the element. The square and its two parts are therefore intrinsic objects of the algebra, and $B$ is the complex length of the vector part, defined up to sign.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>$\tilde Q^2=(Q_t^2-B^2)e_t+2Q_t\vec Q$, with $B^2=Q_x^2+Q_y^2+Q_z^2=(\vec Q,\vec Q)$ and $\vec Q^2=-B^2e_t$.</li>
+<li>The vector part of the square is $2Q_t\vec Q$, the vector part of the element scaled by $2Q_t$.</li>
+<li>The square is central exactly when $Q_t=0$ or $\vec Q=0$; $B=0$ alone is not enough.</li>
+<li>$\tilde Q^2=0$ iff $Q_t=0$ and $B^2=0$.</li>
+<li>$\tilde Q^2=\tilde Q$ iff $\tilde Q\in\{0,e_t\}$ or $Q_t=\tfrac12$ and $B^2=-\tfrac14$.</li>
+<li>$B^2=0$ is the isotropic cone, of real dimension four.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>the element, with $Q_\mu=q_\mu+iq'_\mu$</td>
+</tr>
+<tr>
+<td>$B=\sqrt{Q_x^2+Q_y^2+Q_z^2}$</td>
+<td>the complex length of the vector part, up to sign</td>
+</tr>
+<tr>
+<td>$B^2=(\vec Q,\vec Q)$</td>
+<td>its square, branch-free</td>
+</tr>
+<tr>
+<td>$\vec Q^2=-B^2e_t$</td>
+<td>the square of the pure element</td>
+</tr>
+<tr>
+<td>$\vec q,\ \vec q'$</td>
+<td>the real and the imaginary vector parts of $\vec Q=\vec q+i\vec q'$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-element-the-coordinates-and-the-conjugations.html">The Element, the Coordinates and the Conjugations</a>, for the split and the coefficients.</li>
+<li><a href="square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html">Nilpotents</a>, for the elements whose square vanishes.</li>
+<li><a href="square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Idempotents</a>, for the elements fixed by their square.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">The Spectrum</a>, for the degenerate cone.</li>
+<li><a href="the-biquaternion-algebra-and-its-vector-spaces.html">The Biquaternion Algebra</a>, for the product and the basis.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
