@@ -16,7 +16,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t.
 $$
 
-The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The companion article *N-Regularity and Degeneracy in the Biquaternion Algebra* studies the multiplicative norm and its two cases; this article studies $B^2$ and uses that norm only in one remark, which records that the two conditions are independent. The matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* is used only to compute the determinant $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*; the eigenvalue decomposition, the normality criterion and the spectral theorem are *The Biquaternion Eigenvalue Decomposition*.
+The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The companion article *N-Regularity and N-Degeneracy in the Biquaternion Algebra* studies the multiplicative norm and its two cases; this article studies $B^2$ and uses that norm only in one remark, which records that the two conditions are independent. The matrix realization $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure* is used only to compute the determinant $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$. The algebra and its conventions are *The Biquaternion Algebra and Its Vector Spaces*; the eigenvalue decomposition, the normality criterion and the spectral theorem are *The Biquaternion Eigenvalue Decomposition*.
 
 ## The Spectral Criterion
 
@@ -298,7 +298,7 @@ $$
 Then $\tilde\Pi^{2}=\tilde\Pi$, and
 
 $$
-N(\tilde\Pi)=\frac14+B^{2}(\tilde\Pi)=\frac14-\frac14=0,\qquad
+\langle\tilde\Pi\rangle_{\natural}=\frac14+B^{2}(\tilde\Pi)=\frac14-\frac14=0,\qquad
 B^{2}(\tilde\Pi)=\frac{i^{2}}{4}(\vec u\cdot\vec u)=-\frac14.
 $$
 
@@ -473,10 +473,11 @@ The degeneracy case is the cone $B^2=0$, of complex dimension $3$ and real dimen
 
 ## Further Reading
 
-- [Spectral Regularity and Construction of the Eigenbasis of a Biquaternion](spectral-regularity-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction, the normalisation, the expansion of every biquaternion and the spinor reading.
+- [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction, the normalisation, the expansion of every biquaternion and the spinor reading.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the two cones, the four sectors, the two decompositions and the two operator loci.
-- [The N-Regular, Spectrally Degenerate Sector](the-quaternionic-norm-regular-spectrally-degenerate-sector.html), for the unipotent stratum inside the unit group.
-- [The N-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for the nilpotent stratum and the origin.
+- [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unipotent stratum inside the unit group.
+- [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotent stratum and the origin.
+- [The Spectrally Degenerate Sector](the-spectrally-degenerate-sector.html), for the sector as a whole: the equation, the three strata, the geometry and the failure of the construction.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections, the degenerate regimes, the Hermitian case and the spectral theorem.
 - [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), for the existence and uniqueness of the spectral decomposition in the general theory.
 - [The Lagrange–Sylvester Eigenprojector Formula](the-lagrange-sylvester-eigenprojector-formula.html), for the interpolating idempotents.

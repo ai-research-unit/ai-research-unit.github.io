@@ -111,7 +111,7 @@ them exactly the **Hermitian idempotents** $\tfrac12(e_t+\tilde\Xi)$ over the re
 $\vec u$ are idempotents of the block; the others are zero divisors of the block and not
 idempotents of it.
 
-*Proof.* The plain description is *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*. An idempotent of
+*Proof.* The plain description is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*. An idempotent of
 the block is a Hermitian idempotent of the plain product (*Idempotents of the General Plain
 Sesqualgebra*), and a Hermitian idempotent $\tilde\Pi$ has
 $\tilde\Pi\star\tilde\Pi=\tilde\Pi\tilde\Pi^{*}=\tilde\Pi^{2}=\tilde\Pi$; the Hermitian ones are
@@ -188,7 +188,7 @@ annihilators, and changes the index.
 - [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), for the product, the class and the involution in the second slot.
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the relative definitions of the zero divisor and the annihilator.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the theorem that the four zero-divisor sets coincide and for the one-sided inverse equations.
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion $C(\tilde Q)=0$, the pure and the non-pure families and their geometry.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the criterion $C(\tilde Q)=0$, the pure and the non-pure families and their geometry.
 - [Norm and Invertibility in the General Plain Sesqualgebra](norm-and-invertibility-in-the-general-plain-sesqualgebra.html), for the algebraic norm, the invertibility criterion and the definiteness of the scalar form.
 - [Square Roots of One and the Idempotents of the General Plain Sesqualgebra](square-roots-of-one-and-the-idempotents-of-the-general-plain-sesqualgebra.html), for the Hermitian idempotents that are the block idempotents among the non-pure zero divisors.
 - [Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra](square-roots-of-zero-and-the-nilpotents-of-the-general-plain-sesqualgebra.html), for the pure family read as the nilpotent family, of index three.

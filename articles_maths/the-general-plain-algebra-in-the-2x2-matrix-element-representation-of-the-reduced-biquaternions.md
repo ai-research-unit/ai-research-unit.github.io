@@ -159,7 +159,7 @@ $$
 | $\Pi_+$ | $E_{11}$ | $0$ | $1$ |
 | $\Pi_-$ | $E_{22}$ | $0$ | $1$ |
 
-The table exhibits the two features of the model: the four real basis elements span the real four-dimensional space of the diagonal matrices, and the two idempotents are the two matrix units, with no off-diagonal partner. The comparison with the biquaternion $2\times2$ model, whose images are $\mathrm I_{2}$ and $-i\sigma_{1},-i\sigma_{2},-i\sigma_{3}$ and which span the whole of $M_{2}(\mathbb{C})$, is the content of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*.
+The table exhibits the two features of the model: the four real basis elements span the real four-dimensional space of the diagonal matrices, and the two idempotents are the two matrix units, with no off-diagonal partner. The comparison with the biquaternion $2\times2$ model, whose images are $\mathrm I_{2}$ and $-i\sigma_{1},-i\sigma_{2},-i\sigma_{3}$ and which span the whole of $M_{2}(\mathbb{C})$, is the content of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*.
 
 ## Summary
 
@@ -186,4 +186,4 @@ The general plain algebra is realised as the algebra of the complex diagonal $2\
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the ideals and the Peirce spaces in the model.
 - [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the diagonalisation of the operators in these coordinates.
 - [The Forms of the Algebra of the Reduced Biquaternions](the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the four forms read in the model.
-- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the non-commutative companion realising the whole matrix algebra.
+- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the non-commutative companion realising the whole matrix algebra.

@@ -38,7 +38,7 @@ Second, the biquaternion norm is the determinant of the $2\times2$ representatio
 
 The physics of the representation is the physics of combining four objects under one multiplication, and the algebra of the representation is the matrix polar decomposition of $GL(2,\mathbb{C})$.
 
-The conventions are those of *Conventions in the Biquaternion Universe* as used by *The Four-Vector Element Representation of Biquaternions*, *The Element and Operator Representations* and *The Element and Operator Representations*.
+The conventions are those of *Conventions in the Biquaternion Universe* as used by *The Element and Operator Representations* and *The Element and Operator Representations*.
 
 - **The basis.** $e_t = 1$ the algebra unit and $\vec e_x,\vec e_y,\vec e_z$ the quaternion units with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, so an element is written $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with coefficients $Q_\mu \in \mathbb{C}$.
 - **The scalar imaginary.** $i$, central, with $i^2 = -1$.

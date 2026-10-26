@@ -30,10 +30,10 @@ Every nonzero nilpotent is a zero divisor, since $a \cdot a^{n-1} = 0$ with $a^{
 | $k[x]/(x^n)$ | $x$, with $x^n = 0$ | $n$ | *Examples of Rings and Fields* |
 | $\mathbb{F}_2[C_2]$ | $x + 1$, with $(x+1)^2 = 0$ | $2$ | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | the strictly upper triangular $N = E_{12}$ | $2$ | *Matrix Algebras* |
-| $\mathbb{B}$, the biquaternions | the pure zero divisors satisfying $\tilde{Q}^2 = 0$ | $2$ | *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
+| $\mathbb{B}$, the biquaternions | the pure zero divisors satisfying $\tilde{Q}^2 = 0$ | $2$ | *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
 | $\mathbb{Z}/12\mathbb{Z}$ | $6$, with $6^2 = 0$ | $2$ | *Modular Arithmetic and the Ring of Residues* |
 
-The nilpotents of a commutative ring form an ideal, the nilradical, which is the intersection of the prime ideals; this is developed in *Reduced Rings and the Nilradical* and *Rings*, §§6–7. In $\mathbb{B}$ the nilpotents are exactly the pure zero divisors, the elements with vanishing scalar part and $\tilde{Q}^2 = 0$, and they form the nilpotent cone of real dimension $4$ described in *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; a nilpotent element carries the glyph $\tilde\Upsilon$ where the nilpotency is the point (§*The nilpotent convention* of *Conventions in Mathematics*).
+The nilpotents of a commutative ring form an ideal, the nilradical, which is the intersection of the prime ideals; this is developed in *Reduced Rings and the Nilradical* and *Rings*, §§6–7. In $\mathbb{B}$ the nilpotents are exactly the pure zero divisors, the elements with vanishing scalar part and $\tilde{Q}^2 = 0$, and they form the nilpotent cone of real dimension $4$ described in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; a nilpotent element carries the glyph $\tilde\Upsilon$ where the nilpotency is the point (§*The nilpotent convention* of *Conventions in Mathematics*).
 
 ## The Idempotent Zero Divisors
 
@@ -67,7 +67,7 @@ The torsion case is where the three kinds of zero divisor separate most cleanly:
 | Ring | Nilpotents | Idempotent zero divisors | Introduced in |
 |---|---|---|---|
 | $M_2(\mathbb{R})$ | yes: the nilpotent matrices with $N^2 = 0$ | yes: $E_{11}$, $E_{22}$ | *Matrix Algebras* |
-| $\mathbb{B}$, the biquaternions | yes: the pure zero divisors | yes: the complex multiples of the idempotents | *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
+| $\mathbb{B}$, the biquaternions | yes: the pure zero divisors | yes: the complex multiples of the idempotents | *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | no nonzero nilpotents | yes: $\pi_x$, $\pi_y$ | *Split-Biquaternion Zero Divisors* |
 | $\mathbb{H}$ | none | none | *Quaternion Algebra* |
 | the upper triangular matrices | yes: the strictly upper triangular matrices | yes: the diagonal idempotents | *Matrix Algebras* |

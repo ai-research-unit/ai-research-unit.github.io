@@ -56,7 +56,7 @@ A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t+i\vec e_z\},\qq
 $$
 In each line the first generator is $\tilde Q^{\natural}$, so the two planes share it, and the two second generators differ in one sign, which is what makes the planes distinct. The pure element $\vec e_x+i\vec e_y$ lies in its own annihilators and the non-pure element $e_t+i\vec e_x$ does not. The dimension is two, the kernel of a rank-two multiplication.
 
-The cone is *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+The cone is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra
 
@@ -339,7 +339,7 @@ The single example that ties them together is $\tilde Q=e_t+i\vec e_x$, whose no
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve names and their three-letter codes.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve products and their class-preserving exchange.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four algebraic norms $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{\natural*}$, the two products that carry each, and the norm $\langle\cdot\rangle_{\natural}$ that decides the annihilators.
-- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the kernels of the multiplications read in the matrix model.
+- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the kernels of the multiplications read in the matrix model.
 - [Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space](annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.html), for the reading in the three companion structures of the quaternion space, where the elements that annihilate every partner are tabulated.
 
 The owners of the twelve subsections, grouped by the article that carries them, are:

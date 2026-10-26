@@ -424,7 +424,7 @@ The three forms are three presentations of one factorisation. The modulus–unit
 
 In $\mathbb{C}$ the exponential is onto $\mathbb{C}^\times$, the angle is periodic, and no discrete factor is needed. Here the image is one component and $\mathbb{D}^\times/\exp(\mathbb{D})\cong(\mathbb{Z}/2\mathbb{Z})^2$. The obstruction is a failure of existence, not a failure of uniqueness.
 
-In a noncommutative algebra the amalgamation into one exponential fails; in the polar word of *The Polar Decomposition of an N-Regular Biquaternion* the order of the factors carries information.
+In a noncommutative algebra the amalgamation into one exponential fails; in the polar word of *The Polar Decomposition of a N-Regular Biquaternion* the order of the factors carries information.
 
 | Property | Modulus–unit | Rational-chart | Exponential |
 |---|---|---|---|

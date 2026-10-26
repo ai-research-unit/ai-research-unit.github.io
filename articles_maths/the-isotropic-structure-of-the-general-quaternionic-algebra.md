@@ -11,7 +11,7 @@ $$
 
 has for its null set the zero-divisor cone of the algebra. This article develops the cone: its two families of maximal totally isotropic planes, the minimal ideals it carries, and its identification with the zero-divisor set of the algebra. The topology of the cone and the realified invariants are not developed here; the pointers are in the last paragraph of this introduction.
 
-The form itself, its polarisation and its quadratic space are *N-Regularity and Degeneracy in the Biquaternion Algebra*; the remarkable subspaces and their restriction matrices are *Remarkable Subspaces under the General Quaternionic Algebra*; the classification of the isotropic elements is *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; and the invertibility criterion that makes the cone the boundary of the group of units is *N-Regularity and Degeneracy in the Biquaternion Algebra*. The topology of the cone, its dimension, its apex and its link are *The Topology of the Zero-Divisor Cone*; the index, the defect and the signature of the realified form are *The Realification of the Four Forms*, and their values on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra*.
+The form itself, its polarisation and its quadratic space are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*; the remarkable subspaces and their restriction matrices are *Remarkable Subspaces under the General Quaternionic Algebra*; the classification of the isotropic elements is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; and the invertibility criterion that makes the cone the boundary of the group of units is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The topology of the cone, its dimension, its apex and its link are *The Topology of the Zero-Divisor Cone*; the index, the defect and the signature of the realified form are *The Realification of the Four Forms*, and their values on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra*.
 
 ## The Null Cone
 
@@ -79,7 +79,7 @@ an antidiagonal matrix: **the form is hyperbolic in the Peirce basis, and the fo
 
 **A null vector of the vector subspace.** For $\tilde Q=\vec e_x+i\vec e_y$ the norm is $1+i^{2}=0$, so the element lies on the cone and is a zero divisor; it is one of the isotropic directions of the vector subspace, a point of the conic $\sum_kQ_k^{2}=0$.
 
-**A non-pure null element.** For $\tilde Q=e_t+i\vec e_x$ the norm is again $1+i^{2}=0$, but the element is not pure: it is a non-pure zero divisor, so the cone has points outside the pure cone of the vector subspace, and the classification of the two families is *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
+**A non-pure null element.** For $\tilde Q=e_t+i\vec e_x$ the norm is again $1+i^{2}=0$, but the element is not pure: it is a non-pure zero divisor, so the cone has points outside the pure cone of the vector subspace, and the classification of the two families is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 
 **A point of each family.** On the complex generators displayed, $\langle e_t+i\vec e_x,\vec e_y+i\vec e_z\rangle_{\natural}=0$ and $\langle e_t+i\vec e_x,\vec e_y-i\vec e_z\rangle_{\natural}=0$, so the line $\mathbb{C}(e_t+i\vec e_x)$ lies in one plane of each family; the two planes $W_+$ and $W_-$ meet along it, as the proposition records.
 
@@ -102,7 +102,7 @@ The null cone of the general quaternionic bilinear form is $\sum_\mu Q_\mu^2=0$,
 ## Further Reading
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the classification of the isotropic elements
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the classification of the isotropic elements
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the restrictions of the form to the remarkable subspaces, the indexes and the maximal totally isotropic dimensions of the restrictions
 - [The Realification of the Eight Derived Structures](the-realification-of-the-eight-derived-structures.html), for the realified null cones of the four forms and the comparison of the cones
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link of the cone

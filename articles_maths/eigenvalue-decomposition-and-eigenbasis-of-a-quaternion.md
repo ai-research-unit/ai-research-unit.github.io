@@ -1,0 +1,164 @@
+# __Eigenvalue Decomposition and Eigenbasis of a Quaternion__
+
+## Introduction
+
+The preceding article, [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html), found the complex eigenvalues of a quaternion: for $\tilde q=q_t+\vec q$ they are $\lambda_\pm=q_t\pm i|\vec q|$, each of multiplicity two when $\vec q\ne0$, and the single value $q_t$ when $\vec q=0$. This article constructs the eigenvectors. For a non-real quaternion the centraliser $\mathbb R[\tilde q]$ is a copy of $\mathbb C$, the vector part defines a complex structure $J_{\tilde q}=\vec q/|\vec q|$, and $\mathbb H$ becomes a two-dimensional complex vector space. The complexified regular representation splits into two eigenspaces of complex dimension two, with bases $\pi_+,\pi_+j$ and $\pi_-,\pi_-j$; in that basis $L_{\tilde q}$ is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. Over $\mathbb R$ the operator is two copies of a rotation-scaling block, and the scalar case is the limit in which the two eigenlines coalesce. The article closes with the polar decomposition and with the left, right and S-spectra of the quaternion spectrum literature.
+
+The algebra is [Quaternion Algebra](quaternion-algebra.html); the norm is [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html); the spectral criterion is [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html); the quaternionic matrix theory is [Quaternion Spectral Theory](quaternion-spectral-theory.html); the sphere of imaginary units is [Square Roots of a General Element in the Quaternion Algebra](square-roots-of-a-general-element-in-the-quaternion-algebra.html).
+
+**Notation.** $\tilde q=q_t+\vec q$, $\vec q^2=-|\vec q|^2e_t$, $s=|\vec q|$, $\tilde q^{\natural}=q_t-\vec q$, $\langle\tilde q\rangle_{\natural}=q_t^2+s^2$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$. The complexification is $\mathbb H_{\mathbb C}=\mathbb H\otimes_{\mathbb R}\mathbb C$.
+
+## The Centraliser and the Complex Structure
+
+**Definition.** The **centraliser** of $\tilde q$ is $C(\tilde q)=\{x\in\mathbb H:x\tilde q=\tilde q x\}$.
+
+**Theorem.** If $\tilde q\notin\mathbb R$, then
+$$C(\tilde q)=\mathbb R[\tilde q]=\operatorname{span}_{\mathbb R}\{1,J_{\tilde q}\}\cong\mathbb C,\qquad J_{\tilde q}=\frac{\vec q}{|\vec q|}.$$
+If $\tilde q\in\mathbb R$, then $C(\tilde q)=\mathbb H$.
+
+*Proof.* Write $x=x_t+\vec x$. The scalar parts commute, and
+$$x\tilde q-\tilde q x=[\vec x,\vec q]=2\,\vec x\times\vec q.$$
+If $\vec q\ne0$, the cross product vanishes exactly when $\vec x$ is parallel to $\vec q$, so $x=x_t+\lambda\vec q=x_t+\lambda sJ_{\tilde q}$; conversely every such $x$ commutes with $\tilde q$. If $\vec q=0$, the commutator vanishes for every $x$.
+
+**Corollary.** For $\vec q\ne0$, $J_{\tilde q}^2=-1$, $\tilde q=q_t+sJ_{\tilde q}$, and the map $\mathbb R[\tilde q]\to\mathbb C$ sending $J_{\tilde q}$ to $i$ is an isomorphism of fields.
+
+**Theorem (the complex structure).** For $\vec q\ne0$, left multiplication by $J_{\tilde q}$ is a complex structure on $\mathbb H$:
+$$L_{J_{\tilde q}}^2=-\mathrm{id},\qquad L_{J_{\tilde q}}L_{\tilde q}=L_{\tilde q}L_{J_{\tilde q}}.$$
+Hence $\mathbb H$ is a complex vector space of complex dimension two under the scalar action $(a+bJ_{\tilde q})x=ax+bJ_{\tilde q}x$, and $L_{\tilde q}$ is complex-linear.
+
+*Proof.* $J_{\tilde q}^2=-1$ gives $L_{J_{\tilde q}}^2=L_{-e_t}=-\mathrm{id}$; the commutation is the centrality of $J_{\tilde q}$ in $\mathbb R[\tilde q]$.
+
+**Proposition (a complex basis).** Let $j$ be a unit pure quaternion orthogonal to $\vec q$. Then $jJ_{\tilde q}=-J_{\tilde q}j$, the four elements $1,J_{\tilde q},j,J_{\tilde q}j$ are an orthonormal real basis of $\mathbb H$, and $\{1,j\}$ is a basis of $\mathbb H$ over $\mathbb C_{\tilde q}=\mathbb R[\tilde q]$.
+
+*Proof.* The product $J_{\tilde q}j$ is pure and has square $(J_{\tilde q}j)^2=J_{\tilde q}jJ_{\tilde q}j=-J_{\tilde q}^2j^2=-1$; the orthogonality follows from $\langle J_{\tilde q}j,J_{\tilde q}\rangle=\langle J_{\tilde q}j,j\rangle=0$. The four unit vectors are therefore a real basis, and $a+bj$ with $a,b\in\operatorname{span}\{1,J_{\tilde q}\}$ exhausts their span. Uniqueness follows from the independence of the real basis.
+
+## The Two Eigenlines
+
+**Definition (the idempotents).** For $\vec q\ne0$ set
+$$\pi_+=\tfrac12(1-iJ_{\tilde q}),\qquad \pi_-=\tfrac12(1+iJ_{\tilde q}),$$
+where $i$ is the scalar imaginary of $\mathbb C_{\tilde q}\otimes\mathbb C$.
+
+**Proposition.** The elements $\pi_\pm$ are idempotent and orthogonal,
+$$\pi_+^2=\pi_+,\qquad \pi_-^2=\pi_-,\qquad \pi_+\pi_-=\pi_-\pi_+=0,\qquad \pi_++\pi_-=1,$$
+and
+$$J_{\tilde q}\pi_+=i\pi_+,\qquad J_{\tilde q}\pi_-=-i\pi_-.$$
+Consequently
+$$\tilde q\pi_+=(q_t+is)\pi_+=\lambda_+\pi_+,\qquad \tilde q\pi_-=(q_t-is)\pi_-=\lambda_-\pi_-.$$
+
+*Proof.* The identities follow by expanding and using $J_{\tilde q}^2=-1$. For example, $\pi_+^2=\tfrac14(1-2iJ_{\tilde q}-J_{\tilde q}^2)=\tfrac12(1-iJ_{\tilde q})=\pi_+$, and $\pi_+\pi_-=\tfrac14(1+J_{\tilde q}^2)=0$. The action of $J_{\tilde q}$ is immediate from $J_{\tilde q}\pi_+=\tfrac12(J_{\tilde q}-iJ_{\tilde q}^2)=\tfrac12(J_{\tilde q}+i)=i\pi_+$.
+
+**Definition (the eigenlines).** The **eigenlines** of $\tilde q$ are the two lines
+$$\ell_+=\mathbb C\pi_+,\qquad \ell_-=\mathbb C\pi_-$$
+in $\mathbb C_{\tilde q}\otimes\mathbb C$. They are the two lines cut out by the points of the spectrum of $\mathbb C_{\tilde q}\otimes\mathbb C$.
+
+**Theorem.** The algebra $\mathbb C_{\tilde q}\otimes\mathbb C$ is isomorphic to $\mathbb C\times\mathbb C$ by $J_{\tilde q}\mapsto(i,-i)$, and $\pi_+,\pi_-$ are the corresponding idempotents. The eigenlines are the two lines corresponding to the two points of the spectrum; they are distinct and one-dimensional over $\mathbb C$.
+
+*Proof.* The isomorphism sends $\pi_+$ to $(1,0)$ and $\pi_-$ to $(0,1)$; the nontrivial idempotents of $\mathbb C\times\mathbb C$ are exactly these two. Since $J_{\tilde q}$ has the two distinct eigenvalues $\pm i$ on $\mathbb C_{\tilde q}\otimes\mathbb C$, the two lines are distinct.
+
+## The Eigenbasis and the Diagonal Form
+
+**Theorem (the eigenbasis).** Let $j$ be a unit pure quaternion orthogonal to $\vec q$, and let
+$$E_+=\pi_+(\mathbb H_{\mathbb C}),\qquad E_-=\pi_-(\mathbb H_{\mathbb C}).$$
+Then
+$$E_+=\operatorname{span}_{\mathbb C}\{\pi_+,\pi_+j\},\qquad E_-=\operatorname{span}_{\mathbb C}\{\pi_-,\pi_-j\},$$
+the sum is direct, $\mathbb H_{\mathbb C}=E_+\oplus E_-$, and in the basis $(\pi_+,\pi_+j,\pi_-,\pi_-j)$ the operator $L_{\tilde q}$ has the matrix
+$$\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-).$$
+
+*Proof.* For $x=\pi_+y$, $\tilde qx=\tilde q\pi_+y=\lambda_+\pi_+y=\lambda_+x$; hence $E_+\subseteq\ker(L_{\tilde q}-\lambda_+)$. The four vectors are a basis: $\{\pi_+,\pi_-\}$ is a $\mathbb C$-basis of $\mathbb C_{\tilde q}\otimes\mathbb C$, and $\{\pi_+j,\pi_-j\}$ is the corresponding basis. Hence $\dim_{\mathbb C}(E_++E_-)=4$, and the eigenspaces for the distinct eigenvalues $\lambda_+\ne\lambda_-$ are independent; the sum is direct. The matrix is diagonal because each basis vector is an eigenvector.
+
+**Corollary (the multiplicities).** For $\vec q\ne0$ each eigenvalue has geometric multiplicity two, equal to its algebraic multiplicity. The operator $L_{\tilde q}$ is diagonalisable over $\mathbb C$.
+
+**Corollary (the real canonical form).** In the real basis $(1,J_{\tilde q},j,J_{\tilde q}j)$ the operator $L_{\tilde q}$ is block-diagonal with two copies of
+$$B_{\tilde q}=\begin{pmatrix}q_t&-s\\ s&q_t\end{pmatrix},\qquad s=|\vec q|.$$
+Hence its real canonical form is two identical rotation-scaling blocks; the eigenvalues are $q_t\pm is$.
+
+*Proof.* $L_{\tilde q}(1)=q_t+sJ_{\tilde q}$ and $L_{\tilde q}(J_{\tilde q})=-s+q_tJ_{\tilde q}$ give the first block; the same computation on $j,J_{\tilde q}j$ gives the second.
+
+**Remark (complex eigenvectors may be nilpotent).** The vector $\pi_+j$ is not in $\mathbb H$, and it is square-zero:
+$$(\pi_+j)^2=\pi_+j\pi_+j=\pi_+\pi_-j^2=0.$$
+A complex eigenbasis of a real operator may therefore contain nilpotent vectors; this is not a defect: the minimal polynomial is squarefree.
+
+**Remark (non-uniqueness).** The eigenspaces $E_\pm$ are canonical, but the basis is not: any unit pure $j$ orthogonal to $\vec q$ gives one, and any invertible change of basis inside each $E_\pm$ gives another.
+
+## The Scalar Case
+
+**Theorem.** If $\tilde q=q_t\in\mathbb R$, then $L_{\tilde q}=q_t\,\mathrm{id}$, the spectrum is $\{q_t\}$, every nonzero vector of $\mathbb H_{\mathbb C}$ is an eigenvector, every basis is an eigenbasis, and the diagonal form is $q_t I_4$. The centraliser is $\mathbb H$, and no complex structure $J_{\tilde q}$ is distinguished.
+
+*Proof.* The matrix is scalar; the assertions are immediate.
+
+**Remark (the limit $s\to0$).** The non-scalar formulas have a well-defined limit: $\lambda_\pm\to q_t$, the two eigenlines coalesce, and the basis $(\pi_+,\pi_+j,\pi_-,\pi_-j)$ tends to a basis in which $L_{\tilde q}=q_tI$. The idempotents $\pi_\pm$ themselves depend on a chosen unit pure $J$, and both act as $q_t$; the decomposition is not canonical there.
+
+## The Polar Decomposition
+
+**Theorem.** Every nonzero quaternion has a polar decomposition
+$$\tilde q=|\tilde q|\bigl(\cos\theta+\sin\theta\,J_{\tilde q}\bigr),\qquad \theta\in[0,\pi].$$
+For $\tilde q\notin\mathbb R$, $J_{\tilde q}=\vec q/|\vec q|$ and $\theta\in(0,\pi)$ are unique, with
+$$\cos\theta=\frac{q_t}{|\tilde q|},\qquad \sin\theta=\frac{s}{|\tilde q|}.$$
+For $\tilde q>0$, $\theta=0$ and $J$ is arbitrary; for $\tilde q<0$, $\theta=\pi$ and $J$ is arbitrary.
+
+*Proof.* The modulus is $|\tilde q|=\sqrt{q_t^2+s^2}$, and the displayed cosine and sine have squares summing to one. For $s\ne0$, $J_{\tilde q}$ is determined by $\vec q$ and $\theta$ by $q_t/|\tilde q|$; for $s=0$, the vector term vanishes and $J$ drops out.
+
+**Corollary (the eigenvalues as modulus and argument).** For $\tilde q\ne0$,
+$$\lambda_\pm=|\tilde q|e^{\pm i\theta}.$$
+Both eigenvalues have modulus $|\tilde q|$; the spectral radius of $L_{\tilde q}$ is $|\tilde q|$.
+
+*Proof.* $q_t\pm is=|\tilde q|(\cos\theta\pm i\sin\theta)$.
+
+**Remark.** The polar decomposition is the geometric content of the eigenbasis: the axis $J_{\tilde q}$ is the complex structure, the two eigenlines are its two orientations, $|\tilde q|$ is the common modulus of the eigenvalues, and $\theta$ is their argument.
+
+## The Quaternion Spectrum
+
+**Definition (left and right spectra).** For a quaternionic matrix $M$, a quaternion $\lambda$ is a **left eigenvalue** if $Mv=\lambda v$ for some nonzero $v$, and a **right eigenvalue** if $Mv=v\lambda$. The sets are the **left spectrum** $\sigma_L(M)$ and the **right spectrum** $\sigma_R(M)$.
+
+**Theorem (the 1×1 case).**
+$$\sigma_L([\tilde q])=\{\tilde q\},\qquad \sigma_R([\tilde q])=\{v^{-1}\tilde qv:v\in\mathbb H^\times\}.$$
+For a non-real quaternion the right spectrum is the two-sphere
+$$\sigma_R([\tilde q])=q_t+\{\vec w:|\vec w|=s\};$$
+for a real quaternion it is the point $\{q_t\}$.
+
+*Proof.* $L_{\tilde q}v=\lambda v$ with $v\ne0$ forces $\lambda=\tilde q$ by division. $R_{\tilde q}v=v\lambda$ gives $\lambda=v^{-1}\tilde qv$. Conjugation fixes $q_t$ and rotates $\vec q$ without changing $|\vec q|$, and the rotation group acts transitively on the sphere of radius $s$.
+
+**Definition (the S-spectrum).** The **S-spectrum** of $\tilde q$ is
+$$\sigma_S(\tilde q)=\{\lambda\in\mathbb H:\tilde q^2-2\operatorname{Re}(\lambda)\tilde q+|\lambda|^2\text{ is not invertible}\}.$$
+For a matrix the same definition uses $M^2-2\operatorname{Re}(\lambda)M+|\lambda|^2I$.
+
+**Theorem.** For a single quaternion the S-spectrum equals the right spectrum.
+
+*Proof.* Complete the square:
+$$\tilde q^2-2t\tilde q+|\lambda|^2=(\tilde q-t)^2+|\vec\lambda|^2,\qquad \lambda=t+\vec\lambda.$$
+If $\tilde q\notin\mathbb R$, the right side has vector part $2(q_t-t)\vec q$ and scalar part $(q_t-t)^2-s^2+|\vec\lambda|^2$; it vanishes exactly when $t=q_t$ and $|\vec\lambda|=s$. If $\tilde q\in\mathbb R$, it vanishes exactly at $\lambda=q_t$. In both cases this is the right spectrum.
+
+**Corollary (the complex eigenvalues on the sphere).** Under the isomorphism $\mathbb C_{\tilde q}\cong\mathbb C$ sending $J_{\tilde q}$ to $i$, the complex eigenvalues correspond to the two quaternions $q_t\pm sJ_{\tilde q}$. These are the two points where the S-sphere meets the real plane $\mathbb R+\mathbb R J_{\tilde q}$, and they are antipodal on it.
+
+**Remark (which spectrum is which).** The left spectrum is the single point $\{\tilde q\}$, the right and S-spectra are the two-sphere, and the complex spectrum corresponds to a pair of points on the sphere. The multiplicity two of each complex eigenvalue is the complex dimension of its eigenspace in $\mathbb H_{\mathbb C}$, not a multiplicity of points of the right spectrum. The right eigenspace attached to the representative $q_t+sJ_{\tilde q}$ is the complex line $\mathbb C_{\tilde q}$ in $\mathbb H$, of real dimension two; the complexified eigenspace $E_+$ has complex dimension two, of real dimension four. They answer different problems.
+
+## Summary
+
+For a non-real quaternion the centraliser is $\mathbb C_{\tilde q}=\mathbb R[\tilde q]=\operatorname{span}\{1,J_{\tilde q}\}\cong\mathbb C$, with $J_{\tilde q}=\vec q/|\vec q|$ a complex structure commuting with $L_{\tilde q}$. The idempotents $\pi_\pm=\tfrac12(1\mp iJ_{\tilde q})$ satisfy $\tilde q\pi_\pm=\lambda_\pm\pi_\pm$. Choosing a unit pure $j\perp\vec q$ gives the eigenspaces $E_\pm=\operatorname{span}_{\mathbb C}\{\pi_\pm,\pi_\pm j\}$, the direct sum $\mathbb H_{\mathbb C}=E_+\oplus E_-$, and the diagonal form $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. Over $\mathbb R$ the operator is two copies of the rotation-scaling block. The scalar case is the limit. The polar decomposition $\tilde q=|\tilde q|(\cos\theta+\sin\theta J_{\tilde q})$ gives $\lambda_\pm=|\tilde q|e^{\pm i\theta}$, and the left, right and S-spectra are respectively a point, the two-sphere and the same two-sphere.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $\mathbb H_{\mathbb C}=\mathbb H\otimes_{\mathbb R}\mathbb C$ | the complexification |
+| $C(\tilde q)$ | the centraliser $\{x:x\tilde q=\tilde qx\}$ |
+| $J_{\tilde q}=\vec q/|\vec q|$ | the complex structure of a non-real quaternion |
+| $\mathbb C_{\tilde q}=\mathbb R[\tilde q]$ | the centraliser, isomorphic to $\mathbb C$ |
+| $\pi_\pm=\tfrac12(1\mp iJ_{\tilde q})$ | the spectral idempotents |
+| $\ell_\pm=\mathbb C\pi_\pm$ | the two eigenlines |
+| $E_\pm=\pi_\pm(\mathbb H_{\mathbb C})$ | the complexified eigenspaces |
+| $j$ | a unit pure quaternion orthogonal to $\vec q$ |
+| $\lambda_\pm=q_t\pm i|\vec q|$ | the complex eigenvalues |
+| $\sigma_L,\sigma_R,\sigma_S$ | left, right and S-spectra |
+| $\theta$ | the polar angle, $\cos\theta=q_t/|\tilde q|$ |
+
+## Further Reading
+
+- [Quaternion Algebra](quaternion-algebra.html), for the multiplication, conjugation and scalar–vector decomposition.
+- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm, the modulus and the polar decomposition.
+- [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html), for the characteristic and minimal polynomials and the eigenvalues.
+- [Quaternion Spectral Theory](quaternion-spectral-theory.html), for the left, right and S-spectra of quaternionic matrices.
+- [Square Roots of a General Element in the Quaternion Algebra](square-roots-of-a-general-element-in-the-quaternion-algebra.html), for the sphere of imaginary units.
+- [Quaternion Automorphisms and Derivations](quaternion-automorphisms-and-derivations.html), for conjugation and similarity.
+- [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), for the general spectral decomposition.
+- Fuzhen Zhang, *Quaternions and Matrices of Quaternions*, Linear Algebra and its Applications 251 (1997), 21–57, for the standard form and the right spectrum.

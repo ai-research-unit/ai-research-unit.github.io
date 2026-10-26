@@ -1,4 +1,4 @@
-# __Spectral Regularity and Construction of the Eigenbasis of a Biquaternion__
+# __The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion__
 
 ## Introduction
 
@@ -22,7 +22,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2.
 $$
 
-The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. The quaternionic norm is $N=Q_t^2+B^2$. A general element is written $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},t}e_t+\vec Q_{\mathrm{sp}}$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$ and natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. The trace is $\operatorname{Tr}(\tilde Q_{\mathrm{sp}})=2Q_{\mathrm{sp},t}$, and $\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}=N(\tilde Q_{\mathrm{sp}})$ is the scalar of $\tilde Q_{\mathrm{sp}}^{\natural}\tilde Q_{\mathrm{sp}}$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_{\mathrm{sp}}}$ and $R_{\tilde Q_{\mathrm{sp}}}$ denote left and right multiplication by $\tilde Q_{\mathrm{sp}}$.
+The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. The quaternionic norm is $N=Q_t^2+B^2$. A general element is written $\tilde Q_{\mathrm{sp}}=Q_{\mathrm{sp},t}e_t+\vec Q_{\mathrm{sp}}$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$ and natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. The trace is $\operatorname{Tr}(\tilde Q_{\mathrm{sp}})=2Q_{\mathrm{sp},t}$, and $\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}=\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}$ is the scalar of $\tilde Q_{\mathrm{sp}}^{\natural}\tilde Q_{\mathrm{sp}}$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_{\mathrm{sp}}}$ and $R_{\tilde Q_{\mathrm{sp}}}$ denote left and right multiplication by $\tilde Q_{\mathrm{sp}}$.
 
 ## The Spectral Condition and the Root
 
@@ -379,7 +379,7 @@ The two columns are the two spinor spaces, and the two rows are the two spectral
 
 $$
 \operatorname{Tr}\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=Q_{\mathrm{sp},11}+Q_{\mathrm{sp},22}=2Q_{\mathrm{sp},t},\qquad
-\det\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=Q_{\mathrm{sp},11}Q_{\mathrm{sp},22}-Q_{\mathrm{sp},12}Q_{\mathrm{sp},21}=N(\tilde Q_{\mathrm{sp}}).
+\det\mathsf M_2^{Q}(\tilde Q_{\mathrm{sp}})=Q_{\mathrm{sp},11}Q_{\mathrm{sp},22}-Q_{\mathrm{sp},12}Q_{\mathrm{sp},21}=\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}.
 $$
 
 *Proof.* The trace is $2Q_{\mathrm{sp},t}$ because the trace is a similarity invariant and $\operatorname{Tr}\tilde Q_{\mathrm{sp}}=2Q_{\mathrm{sp},t}$. The determinant is the quaternionic norm, because the matrix model is an algebra isomorphism and $\det\mathsf M_2(\tilde Q_{\mathrm{sp}})=\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}$.
@@ -495,7 +495,7 @@ $$
 D_{\tilde Q,\tilde Q''}=D_{\tilde Q,\tilde Q'}\,D_{\tilde Q',\tilde Q''}.
 $$
 
-The change is not diagonal: two different elements have different idempotents and different nilpotents, so their eigenbases are related by a general change of basis. The matrix is the biquaternion analogue of the matrix $\mathsf C_Q$ of *Spectral Regularity and Eigenbasis of a Biquaternion in Matrix Element Representations*, and the cocycle is the same.
+The change is not diagonal: two different elements have different idempotents and different nilpotents, so their eigenbases are related by a general change of basis. The matrix is the biquaternion analogue of the matrix $\mathsf C_Q$ of *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*, and the cocycle is the same.
 
 ## The Frame Attached to the Direction
 
@@ -806,16 +806,17 @@ The construction fails exactly on the spectral-degenerate cone, and the failure 
 | $L_{\tilde Q_{\mathrm{sp}}}$, $R_{\tilde Q_{\mathrm{sp}}}$ | left and right multiplication by the general element |
 | $\mathsf M_2^{Q}$ | the matrix model attached to the eigenbasis |
 | $\operatorname{Tr}\tilde Q_{\mathrm{sp}}=2Q_{\mathrm{sp},t}$ | the trace |
-| $\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}=N(\tilde Q_{\mathrm{sp}})$ | the scalar of $\tilde Q_{\mathrm{sp}}^{\natural}\tilde Q_{\mathrm{sp}}$ |
+| $\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}=\langle\tilde Q_{\mathrm{sp}}\rangle_{\natural}$ | the scalar of $\tilde Q_{\mathrm{sp}}^{\natural}\tilde Q_{\mathrm{sp}}$ |
 
 ## Further Reading
 
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the two eigenvalues, the cone and the existence of the eigenbasis.
-- [The N-Regular, Spectrally Regular Sector](the-quaternionic-norm-regular-spectrally-regular-sector.html), for the sector $\Sigma_{11}$, the Peirce corners and the spinor spaces.
-- [The N-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the sector $\Sigma_{01}$, the scaled idempotents and the same eigenbasis with a zero eigenvalue.
-- [The N-Regular, Spectrally Degenerate Sector](the-quaternionic-norm-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
-- [The N-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for the nilpotents and the origin.
-- [Spectral Regularity and Eigenbasis of a Biquaternion in Matrix Element Representations](spectral-regularity-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
+- [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the sector $\Sigma_{11}$, the Peirce corners and the spinor spaces.
+- [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector $\Sigma_{01}$, the scaled idempotents and the same eigenbasis with a zero eigenvalue.
+- [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
+- [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotents and the origin.
+- [The Spectrally Degenerate Sector](the-spectrally-degenerate-sector.html), for the sector as a whole: the equation, the three strata, the geometry and the failure of the construction.
+- [The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations](the-spectrally-regular-sector-and-eigenbasis-of-a-biquaternion-in-matrix-element-representations.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
 - [Worked Examples of Eigenbasis of a Biquaternion](worked-examples-of-eigenbasis-of-a-biquaternion.html), for computed eigenbases of the standard elements.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce decomposition from a root of $+1$.
 - [Spinors as Minimal Left Ideals with Inner Conjugation](spinors-as-minimal-left-ideals-with-inner-conjugation.html), for the identification of the minimal left ideals with the spinor spaces and the chiral halves.

@@ -21,7 +21,7 @@ The article is a catalogue in the genre of the subspace and obstruction catalogu
 | --- | --- |
 | The sectors as the eigenspaces of Hermitian conjugation, their bases and dimensions | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The four conjugations as a Klein four-group, their commutativity and their fixed spaces | [The Group of Involutions](../articles_maths/the-group-of-involutions.html) |
-| The norm, its multiplicativity and the identity $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ | [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The norm, its multiplicativity and the identity $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four general products and their behaviour on the sectors | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 | The sandwich by a Hermitian rotor and the adjoint action | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html), [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 
@@ -232,7 +232,7 @@ The algebra splits into the material and the informational sectors, the eigenspa
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the sectors, the conjugations and the trace.
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group and its fixed spaces.
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm identity and its multiplicativity.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm identity and its multiplicativity.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) and [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the products and their sector behaviour.
 - [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) and [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the sandwich and the rotors.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the interval and the Lorentz action read at length.

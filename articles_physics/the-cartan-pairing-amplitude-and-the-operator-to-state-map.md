@@ -18,7 +18,7 @@ The conventions are those of *Conventions in the Biquaternion Universe*. The alg
 |---|---|---|
 | the Cartan pairing, its theorem and its domain | [*The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), §*The Statement*, §*The Domain* | $\tilde Q=\tilde H\tilde U$, $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ |
 | the positive cone and the Hermitian square root | [*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), §*The Polar Decomposition* | existence and uniqueness of $\tilde H\ge0$ |
-| the generalized pairing on the null cone | [*The Polar Decomposition of an N-Degenerate Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), §*The Two-Factor Decomposition* | the rank-one case and the partial isometry |
+| the generalized pairing on the null cone | [*The Polar Decomposition of a N-Degenerate Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), §*The Two-Factor Decomposition* | the rank-one case and the partial isometry |
 | the state space, the Bloch ball and the Born rule | [*Quantum Physics in Biquaternionic Form*](quantum-physics-in-biquaternionic-form.html), §*States* | the normalisation and the trace-one condition |
 | the trace reading of the Born weight | [*The Born Rule from the Hermitian Form*](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), §*The Trace Reading and Normalisation* | $\operatorname{Tr}(\tilde Q\tilde Q^{*})=2\langle\tilde Q,\tilde Q\rangle_{*}$ |
 | the modular Hamiltonian of a faithful state | [*The Modular Hamiltonian in Biquaternionic Form*](the-modular-hamiltonian-in-biquaternionic-form.html), §*Definition from the Modular Operator* | $\tilde K_{\mathrm{mod}}=-\ln\tilde{Ϛ}$ |
@@ -226,7 +226,7 @@ Read as a whole, the table is a dictionary between the algebra's rank straticati
 ## Further Reading
 
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the theorem, the uniqueness and the domain.
-- [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the rank-one case and the partial isometry.
+- [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the rank-one case and the partial isometry.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone and the square root.
 - [The Three Polar Factors of a Biquaternion: Frame, Mass and State](the-three-polar-factors-of-a-biquaternion-frame-mass-and-state.html), for the comparison of the three first factors.
 - [The Polar Decomposition of a Kraus Operator](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the measurement reading of the three strata.

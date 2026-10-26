@@ -12,8 +12,8 @@ The article is a reader and owns no new theorem. Each result is stated in a sent
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The coefficient space, the product formula, the norm and the inverse | [The Four-Vector Element Representation of Biquaternions](../articles_maths/the-four-vector-element-representation-of-biquaternions.html) |
-| The algebra isomorphism $\mathsf{M}_2$, the trace, the determinant, the sectors and the ideals | [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html) |
+| The coefficient space and the norm | [The Biquaternion Algebra and Its Vector Spaces](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html) |
+| The algebra isomorphism $\mathsf{M}_2$, the trace, the determinant, the sectors and the ideals | [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](../articles_maths/m2c-representation-the-matrix-product-and-the-algebra-structure.html) |
 | The left regular matrix, its determinant $N^2$, its trace $4Q_t$ and its block decomposition | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
 | The right regular matrix and its relation to the left one | [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html) |
 | The congruence, the two-sided maps and the enveloping operator algebra | [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html) |
@@ -254,8 +254,7 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 
 ## Further Reading
 
-- [The Four-Vector Element Representation of Biquaternions](../articles_maths/the-four-vector-element-representation-of-biquaternions.html), for the product formula, the norm and the inverse in coordinates.
-- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the isomorphism, the trace, the determinant and the ideals.
+- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](../articles_maths/m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the isomorphism, the trace, the determinant and the ideals.
 - [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html), for the regular matrix, its block form and the right matrix.
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the one-sided and two-sided maps, the congruence and the enveloping algebra.
 - [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html), for the sandwich on the material sector, the four-vector image and the null cone.

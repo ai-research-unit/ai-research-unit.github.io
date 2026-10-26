@@ -182,4 +182,3 @@ The reduced biquaternion element is a real quadruple $\breve Q=(q_{\blacktriangl
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the conjugations and their fixed spaces.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the four products and the norms.
 - [Introduction to the Remarkable Subspaces of the Reduced Biquaternions](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the coordinate planes.
-- [The Four-Vector Element Representation of Biquaternions](the-four-vector-element-representation-of-biquaternions.html), for the non-commutative companion, where the row and the column differ.

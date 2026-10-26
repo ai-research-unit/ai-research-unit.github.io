@@ -91,7 +91,7 @@ The free algebra is the strongest domain at which the passage to a division ring
 | Object | Why it is not a boundary witness here | Introduced in |
 |---|---|---|
 | $M_2(\mathbb{R})$ | it fails commutativity, but it also has zero divisors, so it is not maximal before a single failure | *Matrix Algebras* |
-| $\mathbb{B}$ | it has zero divisors and is not commutative; it is not maximal before any one property of the ladder | *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
+| $\mathbb{B}$ | it has zero divisors and is not commutative; it is not maximal before any one property of the ladder | *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* |
 | the zero ring $\{0\}$ | excluded by the convention $1 \neq 0$ | *Rings*, §2 |
 
 ## Summary

@@ -4,7 +4,7 @@
 
 **The subject.** This article reads the polar decomposition against the six remarkable subspaces of the algebra.
 
-The four-factor word is that of *The Polar Decomposition of an N-Regular Biquaternion*, the refinement of the two-factor pair of *The Polar Decomposition of a Biquaternion*, and it reads
+The four-factor word is that of *The Polar Decomposition of a N-Regular Biquaternion*, the refinement of the two-factor pair of *The Polar Decomposition of a Biquaternion*, and it reads
 
 $$
 \tilde{Q} = r\,\zeta\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -12,7 +12,7 @@ $$
 
 with the positive real scale $r$, the central phase $\zeta$ of modulus one on the branch $\arg\zeta\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, the Hermitian positive unit-norm boost $\tilde U_{\mathrm b}$ and the unit real quaternion rotor $\tilde u_{\mathrm r}$.
 
-The pair is defined on the whole algebra, with a Hermitian positive semidefinite factor and a partial isometry. On the elements of non-vanishing norm the partial isometry is unitary and splits into the phase and the rotor, which is the word above; on the null cone it does not split, and the pair is computed there in *The Polar Decomposition of an N-Degenerate Biquaternion*.
+The pair is defined on the whole algebra, with a Hermitian positive semidefinite factor and a partial isometry. On the elements of non-vanishing norm the partial isometry is unitary and splits into the phase and the rotor, which is the word above; on the null cone it does not split, and the pair is computed there in *The Polar Decomposition of a N-Degenerate Biquaternion*.
 
 The algebra carries six **remarkable subspaces**, defined in *Introduction to the Remarkable Subspaces*: the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
@@ -24,7 +24,7 @@ Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} 
 
 The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
-The symbols $r$, $\zeta$, $\alpha$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\zeta$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *Introduction to the Remarkable Subspaces*, and the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$ are those of *Comparison of the Remarkable Subspaces*.
+The symbols $r$, $\zeta$, $\alpha$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\zeta$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of a N-Regular Biquaternion*. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *Introduction to the Remarkable Subspaces*, and the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$ are those of *Comparison of the Remarkable Subspaces*.
 
 No physics is invoked; the physical interpretation is cited where it clarifies the algebra.
 
@@ -80,7 +80,7 @@ $$
 1+1+3+3 = 8 = \dim_{\mathbb{R}}\mathbb{B} ,
 $$
 
-and it is the same statement as the independence of the four factors in *The Polar Decomposition of an N-Regular Biquaternion*.
+and it is the same statement as the independence of the four factors in *The Polar Decomposition of a N-Regular Biquaternion*.
 
 Because the four exponents lie in the four blocks and the four blocks add to the algebra, **the four exponents of a generic polar word are linearly independent**: they occupy one direction in each block, so they span a real four-dimensional subspace of $\mathbb{B}$, one dimension in each block, and the word is generated, block by block, by one scalar, one pseudoscalar, one Clifford vector and one bivector generator, in the grade notation of the next section.
 
@@ -318,7 +318,7 @@ The three subspaces on which the polar word fails only at the origin are exactly
 
 The behaviour of the word at the boundary completes the picture: along a path to the cone of $\mathbb{M}_+$ the scale collapses and the word tends to the minimal idempotent $\tfrac{1}{2}(e_t+\vec\Xi i)$ with $\vec\Xi$ a unit real vector, Hermitian, of norm zero and idempotent. The boundary of the family of boosts is the family of minimal idempotents of the Hermitian subspace, and within $\mathbb{M}_+$ the null cone is the cone over that family: every nonzero null element of the Hermitian half is a real multiple of a Hermitian minimal idempotent.
 
-The failure is of the four-factor word, not of the decomposition. On the cone the two-factor pair survives, with a Hermitian positive semidefinite factor and a partial isometry; the minimal idempotent above is its positive factor up to the scalar. The general statement is *The Polar Decomposition of a Biquaternion*, and the closed forms on the two sectors of the cone are *The Polar Decomposition of an N-Degenerate Biquaternion*.
+The failure is of the four-factor word, not of the decomposition. On the cone the two-factor pair survives, with a Hermitian positive semidefinite factor and a partial isometry; the minimal idempotent above is its positive factor up to the scalar. The general statement is *The Polar Decomposition of a Biquaternion*, and the closed forms on the two sectors of the cone are *The Polar Decomposition of a N-Degenerate Biquaternion*.
 
 ## The Action on the Two Halves
 
@@ -576,9 +576,9 @@ The two products of the series are the product of two boosts, which is a boost t
 
 ## Further Reading
 
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, their closed forms, the count $1+1+3+3$, the order of the factors and the branch of the modulus.
+- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, their closed forms, the count $1+1+3+3$, the order of the factors and the branch of the modulus.
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the two-factor pair on the whole algebra, its uniqueness, its continuity and its behaviour at the null cone and at the origin.
-- [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the closed forms of the pair on the two sectors of the cone.
+- [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the closed forms of the pair on the two sectors of the cone.
 - [The Polar Decomposition in Subspaces](../articles_physics/the-polar-decomposition-in-subspaces.html), for the same restriction read sector by sector on the physics side: the norm of each subspace, the criteria for a trivial boost and a trivial rotor, and the worked examples of every sector. Its boost has rapidity $\psi$ and the sign $-i$, where the maths series has rapidity $\tfrac{\psi}{2}$ and the sign $+i$ in the same closed form, so for the same element the parameter of the maths series is twice the one used there; the sign of the imaginary unit is the orientation of the axis and carries nothing more.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hermitian positive and unitary factors, and for the split of the exponents into $\mathbb{M}_+$ and $\mathbb{M}_-$ that the incidence of this article reproduces.
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html) and [The Quaternion Pairing of the Polar Decomposition of Biquaternions](the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), for the two partial pairings of the same four factors and their domains, which are the two regroupings the incidence of this article does not see.

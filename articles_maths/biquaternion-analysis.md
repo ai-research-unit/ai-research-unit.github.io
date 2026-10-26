@@ -167,7 +167,7 @@ These two conventions give different results in general. So the derivative would
 
 ### The Second Obstruction: Zero Divisors
 
-The quotient $\tilde{Q} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{B}$, however, there are nonzero elements $\tilde{H}$ with vanishing norm, $\tilde{H} \tilde{H}^{\natural} = 0$. These are the $N$-degenerate elements, and a nonzero one is a **zero divisor** of the algebra; the zero-divisor structure is discussed in detail in the article on biquaternion zero divisors. For such $\tilde{H}$, the quotient $\tilde{Q} / \tilde{H}$ is undefined, and the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is $N$-degenerate.
+The quotient $\tilde{Q} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{B}$, however, there are nonzero elements $\tilde{H}$ with vanishing norm, $\tilde{H} \tilde{H}^{\natural} = 0$. These are the $\natural$-degenerate elements, and a nonzero one is a **zero divisor** of the algebra; the zero-divisor structure is discussed in detail in the article on biquaternion zero divisors. For such $\tilde{H}$, the quotient $\tilde{Q} / \tilde{H}$ is undefined, and the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is $\natural$-degenerate.
 
 ### The Standard Approach
 

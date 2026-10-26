@@ -6,7 +6,7 @@ The corpus speaks of "the polar decomposition" and "the modulus" as if there wer
 
 The thesis is one sentence. **The three first factors are three readings of one element, not three objects: they have different types, different domains and different physical questions, only $\Rho$ is a scalar, and the three together carry ten real numbers for an eight-dimensional element, the redundancy being the scale $r$ that all three contain.** The consequences are these. The quaternion factor is a real quaternion and is the spatial frame. The Hamilton factor is central and complex and is the invariant mass of a four-momentum, or the invariant amplitude of a general element. The Cartan factor is Hermitian positive and is the amplitude of the state that the element defines. No one of them is more fundamental than the others, and none of them is a field.
 
-The article is a synthesis. It proves nothing new: the three factorisations are owned by the three mathematical articles, and the word they bracket is owned by *The Polar Decomposition of an N-Regular Biquaternion*. What is added here is the comparison — the types, the domains, the witnesses that separate the domains, and the count that shows the factors are not independent data.
+The article is a synthesis. It proves nothing new: the three factorisations are owned by the three mathematical articles, and the word they bracket is owned by *The Polar Decomposition of a N-Regular Biquaternion*. What is added here is the comparison — the types, the domains, the witnesses that separate the domains, and the count that shows the factors are not independent data.
 
 The conventions are those of *Conventions in the Biquaternion Universe*, §*The Polar Word and the Three Pairings*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the norm is $N=\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, and the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$. The state glyph is $\tilde{Ϛ}$. The word is $\tilde Q=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $r>0$ and $\alpha\in(-\pi/2,\pi/2]$.
 
@@ -14,11 +14,11 @@ The conventions are those of *Conventions in the Biquaternion Universe*, §*The 
 
 | result | established in | used here for |
 |---|---|---|
-| the four-factor word and its uniqueness off the cone | [*The Polar Decomposition of an N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Four Factors*, §*Existence and Uniqueness* | the common reference that the three pairings bracket |
+| the four-factor word and its uniqueness off the cone | [*The Polar Decomposition of a N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Four Factors*, §*Existence and Uniqueness* | the common reference that the three pairings bracket |
 | the quaternion pairing, its construction and its domain | [*The Quaternion Pairing of the Polar Decomposition of Biquaternions*](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), §*The Statement*, §*The Domain* | $\tilde q=r\tilde u_{\mathrm r}$ and the witness $\tilde q_r=0$ |
 | the Hamilton pairing, the complex modulus and the axis | [*The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), §*The Statement*, §*The Domain* | $\Rho=r e^{i\alpha}$ and the witness $B=0$ |
 | the Cartan pairing and the Hermitian square root | [*The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), §*The Statement* | $\tilde H=r\tilde U_{\mathrm b}$ and the witness on the cone |
-| the generalized pairing on the null cone | [*The Polar Decomposition of an N-Degenerate Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), §*The Two-Factor Decomposition* | the partial-isometry extension at the boundary |
+| the generalized pairing on the null cone | [*The Polar Decomposition of a N-Degenerate Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), §*The Two-Factor Decomposition* | the partial-isometry extension at the boundary |
 | the domains of the three pairings and their witnesses | [*Conventions in the Biquaternion Universe*](conventions-in-the-biquaternion-universe.html), §*The Domains of the Three Pairings* | the domain table and the separation of factorisation from construction |
 | the four-momentum as a Hamilton element | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | the mass reading of $\Rho$ |
 
@@ -225,11 +225,11 @@ The reading that changes the theory most is the Cartan one. It says that the sta
 
 ## Further Reading
 
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word, its existence and its uniqueness.
+- [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word, its existence and its uniqueness.
 - [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), for the real quaternion modulus and the construction from the parts.
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the complex modulus, the axis and the complex angle.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hermitian positive factor and the unitary quotient.
-- [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the extension to the cone.
+- [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the extension to the cone.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the hub that brackets the word and records the action of the factors.
 - [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the state map in full.
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass reading and the complex angle.

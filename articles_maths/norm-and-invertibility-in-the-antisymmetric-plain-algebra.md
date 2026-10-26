@@ -88,7 +88,7 @@ There is therefore no central-valued quadratic map built from the product, neith
 
 **The invertibility criterion of the parent product is not read in the block: the block has no unit against which to invert and no algebraic norm to decide anything.**
 
-**Remark (the criterion of the parent is not read here).** The general plain bilinear product $\tilde Q_1\tilde Q_2$ is associative and unital with unit $e_t$, and its invertibility is decided by the non-vanishing of its algebraic norm $\langle\cdot\rangle$, the diagonal of $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ (*N-Regularity and Degeneracy in the Biquaternion Algebra*). That form is a different algebraic norm, it is not the algebraic norm of the block, and it is not read here. The block has no unit against which to invert and no algebraic norm to decide anything: no element is invertible, and the empty group of units is the sharp form of the statement.
+**Remark (the criterion of the parent is not read here).** The general plain bilinear product $\tilde Q_1\tilde Q_2$ is associative and unital with unit $e_t$, and its invertibility is decided by the non-vanishing of its algebraic norm $\langle\cdot\rangle$, the diagonal of $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*). That form is a different algebraic norm, it is not the algebraic norm of the block, and it is not read here. The block has no unit against which to invert and no algebraic norm to decide anything: no element is invertible, and the empty group of units is the sharp form of the statement.
 
 ## Summary
 
@@ -111,6 +111,6 @@ The antisymmetric plain multiplication $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\time
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*The Unit and the Inverse*, for the unit, the inverse and the relativity of the definitions to the product.
 - [Introduction to the Antisymmetric Plain Algebra](introduction-to-the-antisymmetric-plain-algebra.html), for the operation, its class, its image and the absence of a unit.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the unit table of the four general products.
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form of this block.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form of this block.
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the antisymmetrisation from which the block is written.
 - [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra.html), for the invariant forms of the block.

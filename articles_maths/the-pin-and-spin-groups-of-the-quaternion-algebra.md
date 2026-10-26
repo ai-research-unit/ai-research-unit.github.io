@@ -60,8 +60,8 @@ Thus the spin group of the definite form is the unit sphere of the algebra, and 
 
 **Theorem.** Let $\tilde u\in V$ with $\langle\tilde u\rangle_{\natural}=1$, so that $\tilde u\in\mathbb{H}^1$, and let $\tilde q_3\in V$. Then
 
-$$ \boxed{\; \tilde u\tilde q_3\tilde u=\tilde q_3-2\,\mathrm B_N(\tilde u,\tilde q_3)\tilde u,\qquad
-\operatorname{Ad}_{\tilde u}(\tilde q_3)=\tilde u\tilde q_3\tilde u^{-1}=2\,\mathrm B_N(\tilde u,\tilde q_3)\tilde u-\tilde q_3 \;} ,$$
+$$ \boxed{\; \tilde u\tilde q_3\tilde u=\tilde q_3-2\,\mathrm B_\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u,\qquad
+\operatorname{Ad}_{\tilde u}(\tilde q_3)=\tilde u\tilde q_3\tilde u^{-1}=2\,\mathrm B_\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u-\tilde q_3 \;} ,$$
 
 where $\mathrm B_N$ is the polar form of $\langle\cdot,\cdot\rangle_{\natural}$ restricted to $V$; the first map fixes the plane $\tilde u^{\perp}$ and negates the line $\mathbb{R}\tilde u$, and the second is its negative, fixing the line $\mathbb{R}\tilde u$ and negating the plane $\tilde u^{\perp}$.
 

@@ -9066,6 +9066,8 @@ two readings of the same diagonalization.
 
 
 
+
+
 Technical explanation of the Fourier dictionary for the biquaternion exponential
 
 1. The exponential of a regular element
@@ -9284,6 +9286,215 @@ a new theorem.
 
 
 
+
+
+
+What happens when B = 0
+
+The condition B^2 = 0 is the spectral-degenerate cone
+
+    S = { B^2 = 0 } = { \vec Q^2 = 0 } = { disc p_Q = 0 }.
+
+It is the set of elements whose two eigenvalues have coalesced.
+
+1. The spectral statement
+
+The characteristic polynomial is
+
+    p_Q(X) = X^2 - 2 Q_t X + (Q_t^2 + B^2) = (X - Q_t)^2 + B^2,
+
+with discriminant -4B^2. When B = 0,
+
+    p_Q(X) = (X - Q_t)^2,    \lambda_+ = \lambda_- = Q_t.
+
+There is one eigenvalue, not two, and the spectrum is the singleton {Q_t}.
+
+The minimal polynomial depends on which stratum of the cone the element
+lies in:
+
+    stratum     condition                minimal polynomial
+    scalar      \vec Q = 0               X - Q_t
+    nilpotent   Q_t = 0, \vec Q != 0     X^2
+    unipotent   Q_t != 0, \vec Q != 0    (X - Q_t)^2
+
+The scalar stratum is semisimple; the other two are defective.
+
+2. The three readings of B^2 = 0
+
+    geometric:  the vector part is isotropic, Q_x^2 + Q_y^2 + Q_z^2 = 0;
+    algebraic:  the vector part is square-zero, \vec Q^2 = 0, hence
+                nilpotent of index two when nonzero;
+    spectral:   the discriminant vanishes, the two eigenvalues coincide
+                at Q_t.
+
+3. The geometry
+
+    S = C e_t x { \vec Q in Vect(B) : \vec Q^2 = 0 }.
+
+It is a complex cone of complex dimension 3 and real dimension 6, the
+product of the scalar line with the isotropic cone of the vector
+subspace. Its gradient with respect to (Q_t, Q_x, Q_y, Q_z) is
+(0, 2Q_x, 2Q_y, 2Q_z), which vanishes exactly when \vec Q = 0.
+Therefore:
+
+    the singular locus is the vertex { \vec Q = 0 }, the whole scalar
+    line;
+    off the vertex the cone is a smooth hypersurface.
+
+The cone is blind to the scalar part: the whole scalar line lies on it.
+It is not a subspace: e_x + i e_y and e_x - i e_y lie on it, but their
+sum 2 e_x does not. It is not the set of defective elements: the vertex
+is semisimple.
+
+4. The three strata
+
+The cone splits as
+
+    S = S_s ⊔ S_n ⊔ S_u,
+
+with
+
+    S_s = { \vec Q = 0 },
+    S_n = { Q_t = 0, \vec Q != 0 },
+    S_u = { Q_t != 0, \vec Q != 0 }.
+
+    stratum     normal form          unit?      rank L_Q      centraliser
+    scalar      Q_t e_t              iff Q_t!=0 4, or 0 at origin   B
+    nilpotent   N, N^2 = 0           no         2             C[N]
+    unipotent   Q_t u, u=e_t+N/Q_t   yes        4             C[N]
+
+On both defective strata the centraliser is the dual numbers
+C[N] = { a e_t + b N }, whose only idempotents are 0 and e_t.
+
+Scalar stratum. The element is central. Its minimal polynomial is
+X - Q_t, it is semisimple, every idempotent commutes with it, the
+spectral decomposition is the one-term writing Q = Q_t e_t, and every
+basis is an eigenbasis. The origin is the one point of the stratum where
+the element is not a unit and L_Q = 0.
+
+Nilpotent stratum. The element is its own nilpotent part: Q = N,
+N^2 = 0, N != 0. Minimal polynomial X^2, defective. The eigenspace is
+ker L_N = im L_N, of complex dimension 2. There is no non-trivial
+spectral idempotent and no two-term spectral decomposition. The
+similarity class is that of J_2(0), and it is the only class on the
+stratum: all nonzero square-zero elements are conjugate.
+
+Unipotent stratum. Write N = \vec Q, \eta = N/Q_t, so \eta^2 = 0.
+Then
+
+    Q = Q_t u,   u = e_t + \eta,   (u - e_t)^2 = 0.
+
+The element u is unipotent: u^n = e_t + n \eta for every integer n, so
+u^{-1} = e_t - \eta and Q^{-1} = Q_t^{-1} (e_t - \eta). Minimal
+polynomial (X - Q_t)^2, defective. The eigenspace is ker L_N, of
+complex dimension 2, no two-term decomposition and no eigenbasis. The
+similarity class is that of J_2(Q_t), and it is the only class on the
+stratum for a fixed Q_t.
+
+5. The exponential on the cone
+
+Write Q = Q_t e_t + N with N^2 = 0. The exponential series truncates
+after the linear term:
+
+    e^{\theta Q} = e^{\theta Q_t} ( e_t + \theta N ).
+
+This is the dual-number kernel. It is polynomial in \theta, not
+oscillatory, and it has no frequency and no period. By stratum:
+
+    scalar:     e^{\theta Q_t} e_t
+    nilpotent:  e_t + \theta N
+    unipotent:  e^{\theta Q_t} ( e_t + \theta Q_t \eta )
+
+On the nilpotent stratum the element is a zero divisor, but its
+exponential is a unit: e_t + \theta N has inverse e_t - \theta N. This
+is the cone form of the non-vanishing of the exponential.
+
+6. What fails on the cone
+
+The root
+
+    \rho = \vec Q / B = N / B
+
+is undefined, because B = 0. The Fourier dictionary fails at its first
+step:
+
+    no root \rho of -e_t is supplied;
+    no frequency B/2\pi;
+    no two-term spectral decomposition off the scalar stratum;
+    no eigenbasis off the scalar stratum;
+    no Fourier kernel W(t,\omega): it is a function of a root that
+    does not exist.
+
+The parametrised closed form
+
+    e^{\theta Q} = e^{\theta Q_t} ( cos(B\theta) e_t
+                                    + (sin(B\theta)/B) \vec Q )
+
+does not extend to B = 0 as a root-parametrised formula, because
+\rho = \vec Q/B does not exist. But the form without the root is entire
+in B, and its limit as B -> 0 is exactly the truncated form
+e^{\theta Q_t} (e_t + \theta \vec Q). So the flow extends; the root,
+the frequency, and the kernel do not.
+
+7. The canonical objects: a flag, not a splitting
+
+Let (\cdot,\cdot) be the symmetric bilinear form on the vector
+subspace, so that (\vec Q,\vec Q) = B^2.
+
+    When B^2 != 0, the line C\vec Q is non-isotropic, and
+
+        C^3 = C\vec Q ⊕ \vec Q^⊥
+
+    is a direct sum of non-degenerate summands, canonical in \vec Q.
+
+    When B^2 = 0 and \vec Q != 0, the line is isotropic, and
+    \vec Q ∈ \vec Q^⊥. The sum C\vec Q + \vec Q^⊥ = \vec Q^⊥ is not
+    direct. There is no canonical complement: the canonical objects are
+    only
+
+        0 ⊂ C\vec Q ⊂ \vec Q^⊥ ⊂ C^3,
+
+    a flag.
+
+On the algebra, \vec Q^2 = 0 gives im L_N ⊂ ker L_N, and both have
+complex dimension 2, so they coincide. The canonical flag is
+
+    0 ⊂ C N ⊂ ker L_N = im L_N ⊂ B.
+
+A Jordan basis would need a vector outside ker L_N; the quotient
+B / ker L_N is two-dimensional, but no splitting is determined by N.
+This is why the eigenbasis fails on the cone: the isotropic line admits
+no canonical complement. The same absence is the discontinuity of the
+polar decomposition at the null cone in the companion article.
+
+8. What survives
+
+The two-factor polar decomposition Q = Q_H Q_0 survives:
+
+    Q_H = (Q Q*)^{1/2} is Hermitian positive semidefinite of rank 1
+    (or 0 at the origin);
+    Q_0 = Q_H^+ Q is a partial isometry of rank 1 (or 0), not unitary.
+
+The truncated exponential survives. The three strata survive as a
+classification. The similarity classification survives: off the cone
+the unordered spectrum determines the class; on the cone the
+discriminant separates the central class from the non-semisimple one,
+and Q_t separates the nilpotent class from the unipotent one.
+
+What does not survive: the modulus P, the four-factor word, the root,
+the frequency, the Fourier kernel as a function of the element, the
+two-term spectral decomposition, and the eigenbasis (except on the
+scalar stratum, where every basis is an eigenbasis but none is
+canonical).
+
+9. One-line summary
+
+At B = 0 the two eigenvalues coalesce at Q_t, the cone splits into the
+scalar, nilpotent and unipotent strata, the exponential becomes the
+truncated dual-number form e^{\theta Q_t}(e_t + \theta N), the root and
+the frequency disappear, the kernel has no limit, and the only
+canonical objects are the line and the flag — not a splitting, not a
+basis.
 
 
 

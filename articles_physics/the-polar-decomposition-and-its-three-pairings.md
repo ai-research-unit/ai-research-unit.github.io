@@ -19,12 +19,12 @@ Two distinctions organise the article and are worth naming at the start. A **pai
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The four factors, their ranges, their dimensions, the theorem and the uniqueness | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| The four factors, their ranges, their dimensions, the theorem and the uniqueness | [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | The exponential word, the logarithm, the kernel and the boundary limits | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
 | The quaternion pairing, its construction and its domain | [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html) |
 | The Hamilton pairing, the complex modulus and the complex angle | [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html) |
 | The Cartan pairing and the matrix polar decomposition | [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html) |
-| The generalized pairing on the null cone | [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
+| The generalized pairing on the null cone | [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 | The action of the four factors on the sectors and the six remarkable subspaces | [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html) |
 
 ## The Four Factors
@@ -245,7 +245,7 @@ The pairings read the same data under different headings, and the readings are d
 
 ## Further Reading
 
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the theorem and the uniqueness.
+- [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the theorem and the uniqueness.
 - [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the exponential word, the logarithm, the kernel and the boundary limits.
 - [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), for the real quaternion modulus and the angle.
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the complex axis-angle.

@@ -26,7 +26,7 @@ The article owns no new theorem. Each result is stated in a sentence, the mathem
 | The four forms, their brackets, their Gram matrices, their signatures and their isometry groups | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The four algebraic norms, multiplicativity, definiteness and the impossibility of both | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The restrictions of the forms and the norms to the six remarkable subspaces | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
-| Invertibility, the zero-divisor cone and the norm-one group | [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| Invertibility, the zero-divisor cone and the norm-one group | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The identities linking the four scalar parts | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 
 ## The Forms
@@ -255,6 +255,6 @@ Only the $N$ cut is the invertibility partition. A degenerate biquaternion is no
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the count of the four forms, the table and the isometry groups, and for the four algebraic norms, multiplicativity, definiteness and the zero divisors.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the restrictions on the six subspaces.
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the inverse and the norm-one group.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the inverse and the norm-one group.
 - [The Four General Products: Composition, Probability, Causality, Gauge](the-four-general-products-composition-probability-causality-gauge.html), for the four products whose scalar parts these forms are.
 - [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the indefinite structure and the fundamental symmetry.

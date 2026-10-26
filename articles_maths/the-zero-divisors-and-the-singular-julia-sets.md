@@ -4,7 +4,7 @@
 
 The biquaternion algebra is not a division algebra, and the failure is concentrated on a single cone: the set of non-zero elements of norm zero, equivalently the set of non-invertible elements, equivalently the rank-one matrices in the model. The cone is the critical set of the quadratic map, the set on which the square can collapse, the set on which no escape radius is uniform, the set on which the Green's function loses its normalization, the set on which the equilibrium measure loses its mass, and the set on which the Julia set is not a complex manifold. It is not a negligible exceptional set: for the parameter zero the whole surface of idempotents lies on the Julia set.
 
-The zero divisors and their classification are *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the matrix model, the rank-one elements and the determinant are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the quadratic family and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the collapse of the square and the conditional radius are *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the Green's function and the conditional equilibrium measure are *The Escape Radius and the Green's Function for the Biquaternions*.
+The zero divisors and their classification are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the idempotents are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the matrix model, the rank-one elements and the determinant are *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*; the quadratic family and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the collapse of the square and the conditional radius are *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the Green's function and the conditional equilibrium measure are *The Escape Radius and the Green's Function for the Biquaternions*.
 
 The article owns the two kinds of zero divisor and the closed form of their square, the invariance of the cone under squaring, the affine dynamics it carries, the definition of the singular Julia set, the mass loss of the equilibrium measure at the cone, and the theorem that the idempotent manifold lies on the Julia set of the parameter zero. It does not re-derive the classification of the zero divisors, which is the zero-divisor article, and it does not treat the dimension of the singular set, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
@@ -20,7 +20,7 @@ $$
 
 and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line $\mathbb{C}\tilde Q$. In particular the cone is closed under squaring.
 
-**Proof.** The Cayley–Hamilton identity of the matrix model reads $\tilde Q^2-2Q_t\tilde Q+\langle\tilde Q\rangle_{\natural}e_t=0$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). On $\mathscr{Z}$ the last term vanishes and the identity is the displayed formula. Then $\langle\tilde Q^2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}^2=0$ by multiplicativity of the norm, so $\tilde Q^2$ is a zero divisor; and $\tilde Q^2\in\mathbb{C}\tilde Q$ because $2Q_t\in\mathbb{C}$.
+**Proof.** The Cayley–Hamilton identity of the matrix model reads $\tilde Q^2-2Q_t\tilde Q+\langle\tilde Q\rangle_{\natural}e_t=0$ (*$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*). On $\mathscr{Z}$ the last term vanishes and the identity is the displayed formula. Then $\langle\tilde Q^2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}^2=0$ by multiplicativity of the norm, so $\tilde Q^2$ is a zero divisor; and $\tilde Q^2\in\mathbb{C}\tilde Q$ because $2Q_t\in\mathbb{C}$.
 
 **Theorem (the two kinds).** Every $\tilde Q\in\mathscr{Z}$ is exactly one of the following.
 
@@ -115,7 +115,7 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_t\tilde 
 
 ## Further Reading
 
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the classification of the zero divisors and their rank-one form.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the classification of the zero divisors and their rank-one form.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents, the bijection with the roots of $-1$ and the standard idempotents.
 - [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the critical set and the corollary on the parameter zero.
 - [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the four roots of a generic element and the cone of roots of zero.

@@ -26,7 +26,7 @@ Each article opens with a table of two columns. **Mathematical Content** names t
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The subspace, its basis and its defining involution | [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
-| The norm, its signature and the inverse formula | [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The norm, its signature and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 
 The rows follow the order in which the article uses the results. A row without a link is not allowed: the reader must be able to open the proof of every item the article interprets. A result that the corpus does not contain is named as missing, not written as if it were proved.
 
@@ -104,8 +104,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Properties of the Biquaternion Algebra over $\mathbb{C}$
 
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html)
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html)
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html)
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html)
 - [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
@@ -113,7 +113,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html)
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html)
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html)
-- [N-Regularity and Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html)
 
 #### Remarkable Subspaces
 
@@ -125,17 +125,15 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Biquaternions Standard Element Representations
 
-- [Introduction to Biquaternion Element Representations](../articles_maths/introduction-to-biquaternion-element-representations.html)
-- [The Four-Vector Element Representation of Biquaternions](../articles_maths/the-four-vector-element-representation-of-biquaternions.html)
-- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html)
+- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](../articles_maths/m2c-representation-the-matrix-product-and-the-algebra-structure.html)
 - [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html)
-- [Biquaternion Other Algebraic Element Representations](../articles_maths/biquaternion-other-algebraic-element-representations.html)
+- [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html)
 
 #### Biquaternions Polar Decomposition
 
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html)
+- [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html)
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html)
-- [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html)
+- [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html)
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
 
 #### Operators
@@ -185,7 +183,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [Biquaternion Discrete Harmonic Analysis](../articles_maths/biquaternion-discrete-harmonic-analysis.html)
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html)
 - [Two-Sided Operator and the Polar Decomposition](../articles_maths/two-sided-operator-and-the-polar-decomposition.html)
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html)
+- [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html)
 - [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html)
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html)
 

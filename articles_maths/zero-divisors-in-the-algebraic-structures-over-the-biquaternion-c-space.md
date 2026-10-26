@@ -28,7 +28,7 @@ the **generic norm** of *The Four Forms and the Four Algebraic Norms over the Bi
 
 ### The Cone Is the Complement of the Group of Units
 
-The elements of $\mathbb{B}$ fall into three classes. The invertible elements of the plain product, the units, are exactly those of non-vanishing norm, $\mathbb{B}^{\times}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)\neq0\}$ (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*); the origin is never a zero divisor; and the remaining elements are the zero divisors of the four general products. Hence
+The elements of $\mathbb{B}$ fall into three classes. The invertible elements of the plain product, the units, are exactly those of non-vanishing norm, $\mathbb{B}^{\times}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)\neq0\}$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*); the origin is never a zero divisor; and the remaining elements are the zero divisors of the four general products. Hence
 
 $$
 \mathbb{B}=\{0\}\cup\mathbb{B}^{\times}\cup\bigl(\mathcal{N}\setminus\{0\}\bigr) .
@@ -303,7 +303,7 @@ These five statements are not about the twelve products. They are about the one 
 
 ## The One-Sided Inverse Equations
 
-Only the plain product has a two-sided unit, so the classical equivalence *zero divisor if and only if not a unit* is available for it alone, and there it is exact: for a nonzero $\tilde Q_1$ the statements *$\tilde Q_1$ is a zero divisor of the plain product*, *$\mathrm{Norm}(\tilde Q_1)=0$* and *$\tilde Q_1$ is not invertible* are equivalent (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). The substitute for the other three products is the one-sided inverse criterion.
+Only the plain product has a two-sided unit, so the classical equivalence *zero divisor if and only if not a unit* is available for it alone, and there it is exact: for a nonzero $\tilde Q_1$ the statements *$\tilde Q_1$ is a zero divisor of the plain product*, *$\mathrm{Norm}(\tilde Q_1)=0$* and *$\tilde Q_1$ is not invertible* are equivalent (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). The substitute for the other three products is the one-sided inverse criterion.
 
 **Theorem (the inverse equations).** Let $\star$ be one of the four general products and let $\tilde Q_1\neq0$. Then $\tilde Q_1$ is a zero divisor of $\star$ exactly when neither of the two equations
 
@@ -361,7 +361,7 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the general vocabulary: the zero divisor, the annihilator, the idempotent, the nilpotent and the rest, each stated once for a general product.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form $\langle\cdot,\cdot\rangle_{\natural}$ and the four algebraic norms read at the two equal arguments.
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the plain-product criterion, the classification of the cone's elements and the parametrisation of the pure family.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the plain-product criterion, the classification of the cone's elements and the parametrisation of the pure family.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the property table, the four idempotent sets, the four square-root problems and the four unit entries.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the four general products and their symmetric and antisymmetric parts.
 - [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the twelve names, the three letters of each and the class of each.
@@ -369,7 +369,7 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 - [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the four root problems.
 - [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the two one-sided annihilators of one element of the cone and their relation by the conjugations.
 - [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the four square-zero sets and the twelve square-zero readings.
-- [Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html), for the isomorphism and the singular matrices.
+- [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the isomorphism and the singular matrices.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general plain bilinear form and its isotropic cone.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces, the pure cone and the non-pure families.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the criterion $Q_{2t}=0$ or $\mathrm{Norm}(\tilde Q_2)=0$ of the enlarged set of $\mathrm{SPA}$.

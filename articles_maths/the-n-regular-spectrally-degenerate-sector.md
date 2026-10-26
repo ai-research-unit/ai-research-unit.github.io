@@ -5,7 +5,7 @@
 This is cell $10$ of the four-sector arrangement of the two quadratic conditions
 
 $$
-N(\tilde Q)=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
+\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,\qquad B^2=Q_x^2+Q_y^2+Q_z^2,
 $$
 
 the sector on which the quaternionic norm does not vanish and the vector square does. It is the difference of the spectral-degenerate cone and the null cone,
@@ -14,9 +14,9 @@ $$
 \Sigma_{10}=\mathcal S\setminus\mathcal N,
 $$
 
-and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *N-Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The N-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The N-Degenerate, Spectrally Regular Sector*.
+and it is one of the two **mixed** sectors: the two cells on which the norm problem and the spectral problem give different answers. Its partner is $\Sigma_{01}=\mathcal N\setminus\mathcal S$; the two together are the witness that the problems are independent. The vocabulary, the two cones and the naming convention are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The opposite corner $\Sigma_{00}$ is treated in *The N-Degenerate, Spectrally Degenerate Sector* and $\Sigma_{01}$ in *The N-Degenerate, Spectrally Regular Sector*.
 
-Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally degenerate** means $B^2=0$, and it is a statement about the spectrum, not about diagonalisability.
+Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **spectrally degenerate** means $B^2=0$, and it is a statement about the spectrum, not about diagonalisability.
 
 ## Definition and Characterisation
 
@@ -38,7 +38,7 @@ $$
 
 (v) $\tilde Q$ is a unit whose two eigenvalues coincide at $Q_t$.
 
-*Proof.* (i) $\iff$ (ii): on $B^2=0$ one has $N=Q_t^2$, so $N\neq0$ exactly when $Q_t\neq0$. (ii) $\iff$ (iii): the vector part is pure, and $\vec Q^2=-B^2e_t=0$, so $\vec\Upsilon=\vec Q$ is nilpotent; conversely $B^2=0$ follows from $\vec\Upsilon^2=0$. (iii) $\iff$ (iv): $u=e_t+\vec\Upsilon$ has $u-e_t$ nilpotent, and conversely. (ii) $\iff$ (v): with $B^2=0$ the characteristic polynomial is $X^2-2Q_tX+Q_t^2=(X-Q_t)^2$, so both eigenvalues are $Q_t$; and $N=Q_t^2\neq0$ makes $\tilde Q$ a unit.
+*Proof.* (i) $\iff$ (ii): on $B^2=0$ one has $\langle\tilde Q\rangle_{\natural}=Q_t^2$, so $\langle\tilde Q\rangle_{\natural}\neq0$ exactly when $Q_t\neq0$. (ii) $\iff$ (iii): the vector part is pure, and $\vec Q^2=-B^2e_t=0$, so $\vec\Upsilon=\vec Q$ is nilpotent; conversely $B^2=0$ follows from $\vec\Upsilon^2=0$. (iii) $\iff$ (iv): $u=e_t+\vec\Upsilon$ has $u-e_t$ nilpotent, and conversely. (ii) $\iff$ (v): with $B^2=0$ the characteristic polynomial is $X^2-2Q_tX+Q_t^2=(X-Q_t)^2$, so both eigenvalues are $Q_t$; and $\langle\tilde Q\rangle_{\natural}=Q_t^2\neq0$ makes $\tilde Q$ a unit.
 
 **Corollary (positive characterisation).** The sector is the non-zero complex cone over the unipotent variety:
 
@@ -56,7 +56,7 @@ The pair $(Q_t,u)$ is determined by $\tilde Q$: the scalar part gives $Q_t$, and
 
 **Theorem (the cone and its vertex).** $\mathcal S=\{B^2=0\}$ is the cone in $\mathbb{C}^4$ over the smooth conic $\{Q_x^2+Q_y^2+Q_z^2=0\}\subset\mathbb{P}^2$, with vertex the scalar line $\mathbb{C}e_t$. Its singular locus is exactly that line. The sector $\Sigma_{10}=\mathcal S\setminus\Sigma_{00}\subset\mathcal S$ is Zariski-open, of complex dimension $3$ and real dimension $6$, connected, and it contains the singular locus of $\mathcal S$ with the origin removed.
 
-*Proof.* The gradient of $B^2$ is $2(0,\vec Q)$, which vanishes exactly on $\vec Q=0$, the scalar line; off that line the cone is smooth, and the projection to $\mathbb{P}^2$ exhibits it as the cone over the conic. In $\mathcal S$ one has $N=Q_t^2$, so $\mathcal N\cap\mathcal S=\{Q_t=0,\ B^2=0\}=\Sigma_{00}$, and $\Sigma_{10}=\{Q_t\neq0\}$ is Zariski-open in $\mathcal S$. Its dimension is that of $\mathcal S$, namely $4-1=3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$. It is connected because it is $\mathbb{C}^\times$ times the punctured nilpotent cone, both factors connected.
+*Proof.* The gradient of $B^2$ is $2(0,\vec Q)$, which vanishes exactly on $\vec Q=0$, the scalar line; off that line the cone is smooth, and the projection to $\mathbb{P}^2$ exhibits it as the cone over the conic. In $\mathcal S$ one has $\langle\tilde Q\rangle_{\natural}=Q_t^2$, so $\mathcal N\cap\mathcal S=\{Q_t=0,\ B^2=0\}=\Sigma_{00}$, and $\Sigma_{10}=\{Q_t\neq0\}$ is Zariski-open in $\mathcal S$. Its dimension is that of $\mathcal S$, namely $4-1=3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$. It is connected because it is $\mathbb{C}^\times$ times the punctured nilpotent cone, both factors connected.
 
 **Parametrisation.** The map
 
@@ -174,7 +174,7 @@ $$
 **Products stay off the null cone.** The norm is multiplicative, so for $\tilde P,\tilde Q\in\Sigma_{10}$,
 
 $$
-N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)\neq0,
+\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0,
 $$
 
 and the product lies in the unit group $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. All three outcomes inside the unit group occur.
@@ -205,12 +205,12 @@ $$
 \tilde P\tilde Q=(1-2i)e_t+(1+i)\vec e_x+(1+i)\vec e_y+2\vec e_z,
 $$
 
-with $B^2=4+4i\neq0$ and $N=1$. So the product lies in $\Sigma_{11}$.
+with $B^2=4+4i\neq0$ and $\langle\tilde Q\rangle_{\natural}=1$. So the product lies in $\Sigma_{11}$.
 
-**Inversion stays inside the sector.** Since $N(\tilde Q)=Q_t^2\neq0$, every element of the sector is a unit, with
+**Inversion stays inside the sector.** Since $\langle\tilde Q\rangle_{\natural}=Q_t^2\neq0$, every element of the sector is a unit, with
 
 $$
-\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)}
+\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}}
 =\frac{Q_t-\vec\Upsilon}{Q_t^2}
 =\frac{1}{Q_t}(e_t-\vec\Upsilon).
 $$
@@ -252,14 +252,14 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 
 | sector | conditions | elements | spectrum | Peirce decomposition | product |
 |---|---|---|---|---|---|
-| **doubly regular** $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | units with distinct eigenvalues | $\{\lambda_+,\lambda_-\}$, distinct, non-zero | exists, unique | stays in $\mathbb{B}^\times$; can land in $\Sigma_{10}$ |
-| **$N$-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal N$; all three outcomes |
-| **$N$-regular, spectrally degenerate** $\Sigma_{10}$ | $N\neq0$, $B^2=0$ | $Q_tu$, $u$ unipotent | $\{Q_t\}$, repeated | fails on $\Sigma_{10}^{\mathrm{J}}$; one-term and non-unique on $\Sigma_{10}^{\mathrm{s}}$ | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
-| **doubly degenerate** $\Sigma_{00}$ | $N=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
+| **doubly regular** $\Sigma_{11}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2\neq0$ | units with distinct eigenvalues | $\{\lambda_+,\lambda_-\}$, distinct, non-zero | exists, unique | stays in $\mathbb{B}^\times$; can land in $\Sigma_{10}$ |
+| **$\natural$-degenerate, spectrally regular** $\Sigma_{01}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2\neq0$ | $c\tilde\Pi$, $\tilde\Pi$ a non-trivial idempotent | $\{c,0\}$ | exists, unique | stays on $\mathcal N$; all three outcomes |
+| **$\natural$-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | $Q_tu$, $u$ unipotent | $\{Q_t\}$, repeated | fails on $\Sigma_{10}^{\mathrm{J}}$; one-term and non-unique on $\Sigma_{10}^{\mathrm{s}}$ | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
+| **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
-**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is $N$-degenerate with a full eigenbasis, $\Sigma_{10}$ is $N$-regular with none. Neither cone contains the other, and these are the cells that show it.
+**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is $\natural$-degenerate with a full eigenbasis, $\Sigma_{10}$ is $\natural$-regular with none. Neither cone contains the other, and these are the cells that show it.
 
-**Position among the four sectors.** Sector $10$ is the **degenerate half of the unit group**, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $N\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
+**Position among the four sectors.** Sector $10$ is the **degenerate half of the unit group**, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
 
 ## Consequences
 
@@ -279,7 +279,7 @@ $$
 
 which is polynomial in $\theta$; it grows even when $Q_t$ is purely imaginary. The flow is never oscillatory, and no Fourier basis is attached to the element.
 
-**Polar decomposition.** It exists throughout the sector, because $N\neq0$ and the modulus $\Rho=\sqrt{N(\tilde Q)}\neq0$ is defined; the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* applies. This is the sector's positive feature and its sharpest contrast with $\Sigma_{01}$: there the eigenbasis exists and the polar decomposition does not; here the polar decomposition exists and the eigenbasis does not.
+**Polar decomposition.** It exists throughout the sector, because $\langle\tilde Q\rangle_{\natural}\neq0$ and the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}\neq0$ is defined; the modulus–unit polar decomposition of *The Polar Decomposition of a N-Regular Biquaternion* applies. This is the sector's positive feature and its sharpest contrast with $\Sigma_{01}$: there the eigenbasis exists and the polar decomposition does not; here the polar decomposition exists and the eigenbasis does not.
 
 **One-sided operators.** Since $\tilde Q$ is a unit, $L_{\tilde Q}$ and $R_{\tilde Q}$ are bijections of complex rank $4$, with zero kernel, and both annihilators are $\{0\}$. The spectral defectivity is invisible to the one-sided structure: on $\Sigma_{10}$ and on $\Sigma_{11}$ alike, both multiplications are invertible. No ideal-theoretic condition can detect a repeated eigenvalue.
 
@@ -302,7 +302,7 @@ $$
 The eigenvalue is repeated:
 
 $$
-\boxed{\ \lambda=Q_t\ \text{with multiplicity }2,\qquad \lambda^2=N(\tilde Q)\ }
+\boxed{\ \lambda=Q_t\ \text{with multiplicity }2,\qquad \lambda^2=\langle\tilde Q\rangle_{\natural}\ }
 $$
 
 On $\mathbb{B}$, the operators $L_{\tilde Q}$ and $R_{\tilde Q}$ have the single eigenvalue $Q_t$, of multiplicity four. There is no Q-adapted root, and no eigenbasis off the scalar line, because $B=0$. On the scalar line every basis diagonalises $L_{\tilde Q}$, but the two eigenvalues coincide and no spectral pair is singled out. In the Peirce basis $(e,\vec\Upsilon,\vec X,f)$ relative to the pair $(e,f)$ the element is the sum
@@ -355,8 +355,8 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 
 | symbol | meaning |
 |---|---|
-| $\Sigma_{ij}$ | the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$ |
-| $\Sigma_{10}$ | the $N$-regular, spectrally degenerate sector, this article |
+| $\Sigma_{ij}$ | the sector with $i=1$ iff $\langle\tilde Q\rangle_{\natural}\neq0$, $j=1$ iff $B^2\neq0$ |
+| $\Sigma_{10}$ | the $\natural$-regular, spectrally degenerate sector, this article |
 | $\mathcal N=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\Sigma_{10}^{\mathrm{s}}=\mathbb{C}^\times e_t$ | the scalar line |
@@ -368,11 +368,12 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 
 ## Further Reading
 
-- [The N-Degenerate, Spectrally Degenerate Sector](the-quaternionic-norm-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
-- [The N-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the unit group.
+- [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
+- [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the unit group.
+- [The Spectrally Degenerate Sector](the-spectrally-degenerate-sector.html), for the sector as a whole: the equation, the three strata, the geometry and the failure of the construction.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the discriminant and the spectral-degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal left ideals.
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
+- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

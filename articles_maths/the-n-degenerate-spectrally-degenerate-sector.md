@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two quadratic conditions. The quaternionic norm $N(\tilde Q)=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, vanishes exactly on the non-units; its zero locus is the null cone $\mathcal{N}$. The square $B^2$ of the vector part vanishes exactly when the two eigenvalues of $\tilde Q$ coincide; its zero locus is the spectral-degenerate cone $\mathcal S$. The two conditions cut the algebra into four sectors. Write $\Sigma_{ij}$ for the sector with $i=1$ if $N\neq0$ and $i=0$ if $N=0$, and $j=1$ if $B^2\neq0$ and $j=0$ if $B^2=0$. This article treats $\Sigma_{00}$, the sector on which both conditions degenerate; the doubly regular sector $\Sigma_{11}$ is the sector on which neither does.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two quadratic conditions. The quaternionic norm $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, vanishes exactly on the non-units; its zero locus is the null cone $\mathcal{N}$. The square $B^2$ of the vector part vanishes exactly when the two eigenvalues of $\tilde Q$ coincide; its zero locus is the spectral-degenerate cone $\mathcal S$. The two conditions cut the algebra into four sectors. Write $\Sigma_{ij}$ for the sector with $i=1$ if $\langle\tilde Q\rangle_{\natural}\neq0$ and $i=0$ if $\langle\tilde Q\rangle_{\natural}=0$, and $j=1$ if $B^2\neq0$ and $j=0$ if $B^2=0$. This article treats $\Sigma_{00}$, the sector on which both conditions degenerate; the doubly regular sector $\Sigma_{11}$ is the sector on which neither does.
 
 The sector is the set-theoretic intersection of the two cones. It has three descriptions, given in §*The Sector and Its Three Descriptions*: it is $\{Q_t=0,\ \vec Q^2=0\}$, it is the set of square-zero elements, and it is the pure stratum of the null cone with the origin adjoined. The article then computes its geometry (a complex cone of dimension two), its elements (nilpotents of index two), the special role of the origin, and its behaviour under multiplication. The last sections compare it with the other three sectors and collect the consequences.
 
-**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $N(\tilde Q)=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *N-Regularity and Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. A **sector** is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $N=0$ and $B^2=0$.
+**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. A **sector** is one of the four cells cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $\langle\tilde Q\rangle_{\natural}=0$ and $B^2=0$.
 
 ## The Sector and Its Three Descriptions
 
@@ -30,9 +30,9 @@ $$
 \tilde Q^2=(Q_t^2-B^2)e_t+2Q_t\vec Q
 $$
 
-separates the central and the vector parts, so $\tilde Q^2=0$ exactly when $Q_t^2=B^2$ and $Q_t\vec Q=0$. If $Q_t\neq0$, the second equation gives $\vec Q=0$, hence $B^2=0$, hence $Q_t^2=0$, a contradiction. Therefore $Q_t=0$, and then $B^2=0$. Conversely, $Q_t=0$ and $B^2=0$ give $\tilde Q^2=-B^2e_t=0$. This proves (ii) $\iff$ (iii). For (i), $N=0$ with $Q_t=0$ gives $B^2=0$; conversely $N=0$ with $B^2=0$ gives $Q_t^2=0$, hence $Q_t=0$.
+separates the central and the vector parts, so $\tilde Q^2=0$ exactly when $Q_t^2=B^2$ and $Q_t\vec Q=0$. If $Q_t\neq0$, the second equation gives $\vec Q=0$, hence $B^2=0$, hence $Q_t^2=0$, a contradiction. Therefore $Q_t=0$, and then $B^2=0$. Conversely, $Q_t=0$ and $B^2=0$ give $\tilde Q^2=-B^2e_t=0$. This proves (ii) $\iff$ (iii). For (i), $\langle\tilde Q\rangle_{\natural}=0$ with $Q_t=0$ gives $B^2=0$; conversely $\langle\tilde Q\rangle_{\natural}=0$ with $B^2=0$ gives $Q_t^2=0$, hence $Q_t=0$.
 
-**Remark (the names of the pieces).** On $\Sigma_{00}\setminus\{0\}$ the three descriptions say: pure, square-zero, nilpotent of index two. This is exactly the **pure stratum** $\mathcal{N}_{\mathrm p}$ of the null cone of *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the origin together with the zero divisors*. The sector adds the origin, which is square-zero but is not a nilpotent of index two, since the word is reserved for non-zero elements. The name "nilpotent cone" refers to $\mathcal{N}_{\mathrm p}$; the sector is that cone with its apex adjoined.
+**Remark (the names of the pieces).** On $\Sigma_{00}\setminus\{0\}$ the three descriptions say: pure, square-zero, nilpotent of index two. This is exactly the **pure stratum** $\mathcal{N}_{\mathrm p}$ of the null cone of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the origin together with the zero divisors*. The sector adds the origin, which is square-zero but is not a nilpotent of index two, since the word is reserved for non-zero elements. The name "nilpotent cone" refers to $\mathcal{N}_{\mathrm p}$; the sector is that cone with its apex adjoined.
 
 ## Geometry
 
@@ -52,7 +52,7 @@ $$
 \tilde Q=r(\vec u+i\vec u_\perp),\qquad r\ge0,\quad \vec u\ \text{a real unit vector},\quad \vec u_\perp\ \text{a real unit vector perpendicular to}\ \vec u,
 $$
 
-the origin occurring at $r=0$. The count is $1+2+1=4$ real parameters, in agreement with the dimension. This is the parametrisation of the pure stratum of *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the origin together with the zero divisors*, with $r=0$ added.
+the origin occurring at $r=0$. The count is $1+2+1=4$ real parameters, in agreement with the dimension. This is the parametrisation of the pure stratum of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the origin together with the zero divisors*, with $r=0$ added.
 
 **Scheme-theoretic form.** As a scheme, the intersection of the two cones is defined by
 
@@ -145,7 +145,7 @@ The origin $\tilde Q=0$ lies in $\Sigma_{00}$ and is its only element that is no
 
 ## Multiplication
 
-**The sector is not closed under the product.** The quaternionic norm is multiplicative, so $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)=0$ for $\tilde P,\tilde Q\in\Sigma_{00}$: products stay on the null cone. They do not stay on the sector. The witness is
+**The sector is not closed under the product.** The quaternionic norm is multiplicative, so $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}=0$ for $\tilde P,\tilde Q\in\Sigma_{00}$: products stay on the null cone. They do not stay on the sector. The witness is
 
 $$
 (\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z,
@@ -165,7 +165,7 @@ $$
 \tilde P\tilde Q=-\vec u\cdot\vec v+\vec u\times\vec v.
 $$
 
-If the scalar part vanishes, $\vec u$ and $\vec v$ are orthogonal isotropic vectors of $\mathbb{C}^3$, hence proportional, since otherwise they would span a totally isotropic plane, which the form $Q_x^2+Q_y^2+Q_z^2$ does not admit; then the product is zero. If the scalar part does not vanish, the product has $N=0$ and
+If the scalar part vanishes, $\vec u$ and $\vec v$ are orthogonal isotropic vectors of $\mathbb{C}^3$, hence proportional, since otherwise they would span a totally isotropic plane, which the form $Q_x^2+Q_y^2+Q_z^2$ does not admit; then the product is zero. If the scalar part does not vanish, the product has norm $0$ and
 
 $$
 B^2(\tilde P\tilde Q)=-(\vec u\cdot\vec v)^2\neq0,
@@ -193,10 +193,10 @@ and they agree wherever $Q_t=0$, that is, on all of $\Sigma_{00}$. At the origin
 
 | sector | conditions | elements | Peirce decomposition | product |
 |---|---|---|---|---|
-| **doubly regular** $\Sigma_{11}$ | $N\neq0$, $B^2\neq0$ | units with distinct eigenvalues | exists, unique | $N\neq0$ preserved; can land in $\Sigma_{10}$ |
-| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $2Q_t\tilde\Pi$ with $\tilde\Pi$ a non-trivial idempotent and $Q_t\neq0$; spectrum $\{0,2Q_t\}$ | exists, unique | $N=0$ preserved; can land in $\Sigma_{00}$ |
-| **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $N\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$; spectrum $\{Q_t\}$ | fails off the scalar line, one term on it | $N\neq0$ preserved; can land in $\Sigma_{11}$ |
-| **doubly degenerate** $\Sigma_{00}$ | $N=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin; spectrum $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
+| **doubly regular** $\Sigma_{11}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2\neq0$ | units with distinct eigenvalues | exists, unique | $\langle\tilde Q\rangle_{\natural}\neq0$ preserved; can land in $\Sigma_{10}$ |
+| **norm-degenerate, spectrally regular** $\Sigma_{01}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2\neq0$ | $2Q_t\tilde\Pi$ with $\tilde\Pi$ a non-trivial idempotent and $Q_t\neq0$; spectrum $\{0,2Q_t\}$ | exists, unique | $\langle\tilde Q\rangle_{\natural}=0$ preserved; can land in $\Sigma_{00}$ |
+| **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$; spectrum $\{Q_t\}$ | fails off the scalar line, one term on it | $\langle\tilde Q\rangle_{\natural}\neq0$ preserved; can land in $\Sigma_{11}$ |
+| **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin; spectrum $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
 **No sector is closed under multiplication.** Only the norm dichotomy is: $\mathcal{N}$ is a semigroup and $\mathbb{B}^{\times}$ is a group. The four witnesses are
 
@@ -216,7 +216,7 @@ $$
 (\vec e_x+i\vec e_y)(\vec e_x-i\vec e_y)=-2e_t-2i\vec e_z\in\Sigma_{01}.
 $$
 
-The first product has $N=4$ and $B^2=0$; the second vanishes because $(e_t+i\vec e_x)(e_t+i\vec e_x)^{\natural}=N(e_t+i\vec e_x)e_t=0$; the third has $N=4$ and $B^2=4$; the fourth has $N=0$ and $B^2=-4$. So each sector leaks into another, and the finer spectral split is not multiplicative.
+The first product has norm $4$ and $B^2=0$; the second vanishes because $(e_t+i\vec e_x)(e_t+i\vec e_x)^{\natural}=\langle e_t+i\vec e_x\rangle_{\natural}e_t=0$; the third has norm $4$ and $B^2=4$; the fourth has norm $0$ and $B^2=-4$. So each sector leaks into another, and the finer spectral split is not multiplicative.
 
 The two mixed sectors, $\Sigma_{01}$ and $\Sigma_{10}$, are the witnesses that the two problems are independent: each is degenerate in one respect and non-degenerate in the other. The sector $\Sigma_{00}$ is the opposite case, where the two answers coincide, both negative, and it is the unique such sector.
 
@@ -238,7 +238,7 @@ $$
 
 polynomial in $\theta$; the flow is never oscillatory, and no Fourier basis is attached to the element. The exponential is a unit on the sector, although the element is a zero divisor or the origin.
 
-**Polar decomposition.** The modulus is $\Rho=\sqrt{N(\tilde Q)}=0$, so the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* has no value on the sector: there is no unit factor of norm one.
+**Polar decomposition.** The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$, so the modulus–unit polar decomposition of *The Polar Decomposition of a N-Regular Biquaternion* has no value on the sector: there is no unit factor of norm one.
 
 **One-sided operators.** Rank $2$, square-zero; the kernels are the two annihilator planes; neither multiplication is invertible on either side.
 
@@ -261,7 +261,7 @@ $$
 The eigenvalue is zero, with multiplicity two:
 
 $$
-\boxed{\ \lambda=0\ \text{with multiplicity }2,\qquad N(\tilde Q)=B^2(\tilde Q)=0\ }
+\boxed{\ \lambda=0\ \text{with multiplicity }2,\qquad \langle\tilde Q\rangle_{\natural}=B^2(\tilde Q)=0\ }
 $$
 
 On $\mathbb{B}$, the operators $L_{\tilde Q}$ and $R_{\tilde Q}$ have the single eigenvalue $0$, of multiplicity four. There is no eigenbasis off the origin. In the Peirce basis $(e,\vec\Upsilon,\vec X,f)$ relative to the pair $(e,f)$ the element is the sum
@@ -316,7 +316,7 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 
 | symbol | meaning |
 |---|---|
-| $\Sigma_{ij}$ | the sector with $i=1$ iff $N\neq0$, $j=1$ iff $B^2\neq0$ |
+| $\Sigma_{ij}$ | the sector with $i=1$ iff $\langle\tilde Q\rangle_{\natural}\neq0$, $j=1$ iff $B^2\neq0$ |
 | $\Sigma_{00}$ | the doubly degenerate sector, this article |
 | $\mathcal{N}=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
@@ -329,11 +329,12 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 
 ## Further Reading
 
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the null cone and its pure and non-pure strata.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the null cone and its pure and non-pure strata.
+- [The Spectrally Degenerate Sector](the-spectrally-degenerate-sector.html), for the sector as a whole: the equation, the three strata, the geometry and the failure of the construction.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the two cases and the degenerate cone.
 - [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the independence of the two cones, the nilpotent intersection and the four sectors.
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
+- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
 - [Ideals and Peirce Decompositions of the Biquaternion Algebra](ideals-and-peirce-decompositions-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
-- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the place of $N$ among the four norms and of $B^2$ outside them.
-- [The N-Degenerate, Spectrally Regular Sector](the-quaternionic-norm-degenerate-spectrally-regular-sector.html), for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the place of $\langle\tilde Q\rangle_{\natural}$ among the four norms and of $B^2$ outside them.
+- [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the companion sector $\Sigma_{01}$, the scaled idempotents and their products.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

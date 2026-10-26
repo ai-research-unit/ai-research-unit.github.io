@@ -74,7 +74,7 @@ The inverse is defined by an equation in $\star$, so it is relative to the produ
 
 The table is verified on the identity equations and it is the unit table of *The Four General Products and Their Relations over the Biquaternion Algebra*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*.
 
-The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde Q$ invertible exactly when the central square $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ is nonzero, is *N-Regularity and Degeneracy in the Biquaternion Algebra*.
+The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde Q$ invertible exactly when the central square $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ is nonzero, is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*.
 
 ---
 
@@ -96,7 +96,7 @@ Written on the four general products, the definition of a left zero divisor is o
 $$
 \{\tilde Q\neq0:\ C(\tilde Q)=0\},
 $$
-a fact about the algebra and not a property of the definitions, proved in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*. **The word is *coincide*, not *independent*:** the four products are four definitions, and their agreement is a theorem. The criterion $C(\tilde Q)=0$ for the plain product, the two families and their structure are *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the annihilators of one zero divisor, which do depend on the product, are in *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*, and in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+a fact about the algebra and not a property of the definitions, proved in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*. **The word is *coincide*, not *independent*:** the four products are four definitions, and their agreement is a theorem. The criterion $C(\tilde Q)=0$ for the plain product, the two families and their structure are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*; the annihilators of one zero divisor, which do depend on the product, are in *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*, and in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ---
 
@@ -238,6 +238,6 @@ A definition of the element theory names a product. This article states, once an
 
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html) and [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](the-algebraic-structures-over-the-biquaternion-c-space.html), for the products and the structures the definitions here serve, and for the tables of the laws, the units and the images.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the product-relative definition read on the four products, the coincidence of the four zero-divisor sets, and the product-dependent readings of the annihilators, the square, the idempotents and the units.
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), *Idempotents of the General Plain Algebra* and *Nilpotents of the General Plain Algebra*, for the three element classes of the plain product.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), *Idempotents of the General Plain Algebra* and *Nilpotents of the General Plain Algebra*, for the three element classes of the plain product.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the two readings of §5 and §9 that the four products decide.
 - [Unital Algebras](unital-algebras.html) and [Conventions in Mathematics](conventions-in-mathematics.html), for the general algebra vocabulary and the corpus-wide readings of the words, and [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html) for the elements and the conjugations.

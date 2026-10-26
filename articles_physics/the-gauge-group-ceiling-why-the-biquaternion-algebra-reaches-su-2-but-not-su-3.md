@@ -19,7 +19,7 @@ Three distinct questions must be separated, because they have different answers 
 The article answers all three, and the answers are consistent: the algebra's intrinsic compact gauge algebra is $\mathrm{U}(2)$, of real dimension four; $SU(3)$ needs an eight-dimensional compact algebra and cannot be contained in it; and the smallest carrier that contains $SU(3)$ is $M_2(\mathbb B)$, whose intrinsic group is $\mathrm{U}(4)$.
 
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian gauge structure.
-- The mathematics articles *Biquaternion Rotations and Lorentz Transformations* and *Biquaternion Other Algebraic Element Representations*, for the representation theory of the algebra and for its spinor and Clifford realizations.
+- The mathematics articles *Biquaternion Rotations and Lorentz Transformations* and *Biquaternion Versors and the Orthogonal Group*, for the representation theory of the algebra and for its spinor and Clifford realizations.
 - The mathematics article *The Biquaternion Unit Group as a Topological Group*, for the topological obstructions.
 - Companion article *The Hopf Fibration and the Biquaternion Gauge Bundle*, for the intrinsic $\mathrm{U}(2)$ as a structure group.
 - Companion article *Grand Unification and the Biquaternion Algebra Ceiling*, for the consequence for unification.

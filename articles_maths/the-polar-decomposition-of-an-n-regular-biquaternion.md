@@ -1,4 +1,4 @@
-# __The Polar Decomposition of an N-Regular Biquaternion__
+# __The Polar Decomposition of a N-Regular Biquaternion__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ $$
 \tilde Q=\tilde Q_H\,\tilde Q_0,
 $$
 
-with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. On the N-regular elements, those with $\langle\tilde Q\rangle_{\natural}\neq0$, the pair sharpens: $\tilde Q_H$ is positive definite and $\tilde Q_0$ is unitary. This article takes the pair apart.
+with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. On the $\natural$-regular elements, those with $\langle\tilde Q\rangle_{\natural}\neq0$, the pair sharpens: $\tilde Q_H$ is positive definite and $\tilde Q_0$ is unitary. This article takes the pair apart.
 
 The pair has two factors, and each factor splits again into two. The element is written first as a modulus times a unit factor,
 
@@ -38,11 +38,11 @@ The two levels are collected in the table.
 
 The same four factors are regrouped in three ways, and the article follows the splits and the regroupings. It proves the sharpening and computes the modulus and the unit factor (§*The Two Factors*), splits them into the four factors (§*The Four Factors*), reads the group of units (§*The Group of Units*), separates the two halves of the algebra (§*The Two Halves*), gives the three pairings (§*The Three Pairings*), records the matrix picture (§*The Matrix Picture*), reads the word on the spinor module (§*The Operator Reading: the Twist*), proves existence and uniqueness (§*Existence and Uniqueness*), and closes with the algorithm and a worked example.
 
-The conventions and the symbols are those of *Conventions in Mathematics*, *N-Regularity and Degeneracy in the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the symbols are collected in §*Summary of Notation*. The product is the plain product, the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the norm is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$.
+The conventions and the symbols are those of *Conventions in Mathematics*, *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the symbols are collected in §*Summary of Notation*. The product is the plain product, the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the norm is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$.
 
 ## The Two Factors
 
-Let $\tilde Q$ be N-regular, $\langle\tilde Q\rangle_{\natural}\neq0$. Then $\tilde Q$ is invertible (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The N-regular case: The Group of Units*), and the two factors of the general decomposition are
+Let $\tilde Q$ be $\natural$-regular, $\langle\tilde Q\rangle_{\natural}\neq0$. Then $\tilde Q$ is invertible (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Units*), and the two factors of the general decomposition are
 
 $$
 \tilde Q_H=\bigl(\tilde Q\tilde Q^{*}\bigr)^{1/2},\qquad \tilde Q_0=\tilde Q_H^{-1}\tilde Q .
@@ -60,7 +60,7 @@ and symmetrically $\tilde Q_0^{*}\tilde Q_0=e_t$. $\square$
 
 The unitarity is the sharpening: the partial isometry of the general case is now invertible, and its two projections are both $e_t$.
 
-**The modulus.** The norm is a complex number, and it vanishes exactly on the zero-divisor cone $\mathcal N$ (*N-Regularity and Degeneracy in the Biquaternion Algebra*). A modulus is a square root of the norm,
+**The modulus.** The norm is a complex number, and it vanishes exactly on the zero-divisor cone $\mathcal N$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*). A modulus is a square root of the norm,
 
 $$
 \Rho^{2}=\langle\tilde Q\rangle_{\natural},
@@ -118,7 +118,7 @@ $$
 \boxed{\;\mathbb B^{\times}_{1}\cong SL_2(\mathbb C)\;}
 $$
 
-of complex dimension three and real dimension six (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The N-regular case: The Group of Units*).
+of complex dimension three and real dimension six (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Units*).
 
 The group is not compact. It contains the Hermitian positive elements of norm one, and those are unbounded: the element $c\,e_t+i\sqrt{c^{2}-1}\,\vec e_x$ has norm one for every $c\ge1$. This is the sharpest difference from the quaternion case, where the norm-one set is the sphere $S^{3}$. The biquaternion unit factor has three compact directions and three non-compact ones, and the split into boost and rotor separates them.
 
@@ -239,7 +239,7 @@ The four separate factors are not continuous across the negative real axis of th
 
 ## The Group of Units
 
-The group of units is the N-regular set, $\mathbb B^{\times}=\mathbb B\setminus\mathcal N$, the complement of the zero-divisor cone. The decomposition read as a map
+The group of units is the $\natural$-regular set, $\mathbb B^{\times}=\mathbb B\setminus\mathcal N$, the complement of the zero-divisor cone. The decomposition read as a map
 
 $$
 \Phi:\mathbb B^{\times}\longrightarrow\mathcal H\times SL_2(\mathbb C),\qquad \Phi(\tilde Q)=(\Rho,\tilde U),
@@ -295,7 +295,7 @@ This is the precise sense in which the biquaternion case is the complexification
 
 ## The Three Pairings
 
-The four factors can be bracketed in three ways. Each bracketing is a **pairing**: the factors are regrouped, and the two composite factors are recognised as elements of a smaller structure. Two pairings are partial, their construction dividing by a part of the element that can vanish; the third is total on the N-regular set.
+The four factors can be bracketed in three ways. Each bracketing is a **pairing**: the factors are regrouped, and the two composite factors are recognised as elements of a smaller structure. Two pairings are partial, their construction dividing by a part of the element that can vanish; the third is total on the $\natural$-regular set.
 
 ### The quaternion pairing
 
@@ -325,7 +325,7 @@ $$
 \tilde Q=\bigl(r\tilde U_{\mathrm b}\bigr)\bigl(\zeta\tilde u_{\mathrm r}\bigr)=\tilde Q_H\,\tilde Q_0 .
 $$
 
-The first factor is Hermitian positive definite, the second unitary. The pairing solves $\tilde Q\tilde Q^{*}=\tilde H^{2}$, so both factors are functions of the element alone, and it is total on the N-regular set. It is the algebra form of the matrix polar decomposition.
+The first factor is Hermitian positive definite, the second unitary. The pairing solves $\tilde Q\tilde Q^{*}=\tilde H^{2}$, so both factors are functions of the element alone, and it is total on the $\natural$-regular set. It is the algebra form of the matrix polar decomposition.
 
 The three pairings are collected in the table.
 
@@ -335,7 +335,7 @@ The three pairings are collected in the table.
 | Hamilton root | $\Rho$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^{2}\neq0$ |
 | Cartan Hermitian | $r\tilde U_{\mathrm b}$ | $\zeta\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ |
 
-The two partial domains are not nested, and the Cartan domain contains both. The elements of the N-regular set outside both partial domains are the nonzero purely imaginary complex scalars.
+The two partial domains are not nested, and the Cartan domain contains both. The elements of the $\natural$-regular set outside both partial domains are the nonzero purely imaginary complex scalars.
 
 ## The Matrix Picture
 
@@ -345,7 +345,7 @@ $$
 M_2:\mathbb B\longrightarrow M_2(\mathbb C),\qquad M_2(e_t)=I,\qquad M_2(\vec e_k)=-i\sigma_k,
 $$
 
-with $\sigma_k$ the Pauli matrices, and the isomorphism is one of complex algebras, not only of real ones (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb C)$ of Biquaternions*). The determinant is the biquaternion norm,
+with $\sigma_k$ the Pauli matrices, and the isomorphism is one of complex algebras, not only of real ones (*$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*). The determinant is the biquaternion norm,
 
 $$
 \det M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},
@@ -429,13 +429,13 @@ The regular modules themselves are *Modules over the Biquaternion Algebra*; the 
 
 ## Existence and Uniqueness
 
-**Theorem.** Every N-regular biquaternion $\tilde Q$ has exactly one modulus–unit decomposition with modulus in $\mathcal H$, and exactly one four-factor word with that modulus.
+**Theorem.** Every $\natural$-regular biquaternion $\tilde Q$ has exactly one modulus–unit decomposition with modulus in $\mathcal H$, and exactly one four-factor word with that modulus.
 
 *Proof (existence).* Let $\Rho$ be the principal square root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$, and put $\tilde U=\tilde Q/\Rho$. Then $\langle\tilde U\rangle_{\natural}=1$, so $\tilde U$ is invertible and the boost and rotor of §*The Four Factors* are defined. With $r=\lvert\Rho\rvert$ and $\zeta=\Rho/r$ the word follows by multiplication. $\square$
 
 *Proof (uniqueness).* Suppose $\tilde Q=\Rho\tilde U=\Rho'\tilde U'$ with $\Rho,\Rho'\in\mathcal H$ and $\langle\tilde U\rangle_{\natural}=\langle\tilde U'\rangle_{\natural}=1$. Taking norms gives $\Rho^{2}=\Rho'^{2}$, so $\Rho'=\pm\Rho$; both lie in $\mathcal H$, which contains no pair of opposite points, so $\Rho'=\Rho$. Dividing, $\tilde U'=\tilde U$. The polar decomposition of $\tilde U$ is unique: $\tilde U\tilde U^{*}$ has exactly one Hermitian positive square root, hence $\tilde U_{\mathrm b}$ is unique, and then $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is unique. $\square$
 
-The word exists exactly on the N-regular elements. On the null cone the norm vanishes, the modulus is zero, and no modulus–unit form exists; the two-factor decomposition survives and is the subject of *The Polar Decomposition of an N-Degenerate Biquaternion*.
+The word exists exactly on the $\natural$-regular elements. On the null cone the norm vanishes, the modulus is zero, and no modulus–unit form exists; the two-factor decomposition survives and is the subject of *The Polar Decomposition of a N-Degenerate Biquaternion*.
 
 The uniqueness is a statement about the factors, not about a coordinate on the boost or on the rotor. Two different charts of $H^{3}$ assign different parameters to the same boost, and two different charts of $S^{3}$ assign different parameters to the same rotor; the factors themselves are fixed.
 
@@ -443,7 +443,7 @@ The uniqueness is a statement about the factors, not about a coordinate on the b
 
 The four factors are computed in five steps.
 
-1. **The norm.** Compute $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$. If it is zero, stop: the element is N-degenerate and has no four-factor word.
+1. **The norm.** Compute $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$. If it is zero, stop: the element is $\natural$-degenerate and has no four-factor word.
 
 2. **The modulus.** Compute $\Rho$ from the branch formula of §*The Two Factors*. The result satisfies $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$ and lies in $\mathcal H$.
 
@@ -520,7 +520,7 @@ The checks hold: $\tilde U_{\mathrm b}^{2}=\tilde U\tilde U^{*}$, $\tilde u_{\ma
 
 ## Summary
 
-The polar decomposition of an N-regular biquaternion is the modulus–unit form, refined factor by factor into four, and read on the spinor module as a twisted representation.
+The polar decomposition of an $\natural$-regular biquaternion is the modulus–unit form, refined factor by factor into four, and read on the spinor module as a twisted representation.
 
 | item | result |
 |---|---|
@@ -540,15 +540,15 @@ The polar decomposition of an N-regular biquaternion is the modulus–unit form,
 | pairings | quaternion, Hamilton root, Cartan Hermitian; the first two partial, the last total |
 | closed forms | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*}+e_t)/\sqrt{2(1+s)}$, $\tilde u_{\mathrm r}=\bigl((2s+1)e_t-\tilde U\tilde U^{*}\bigr)\tilde U/\sqrt{2(1+s)}$ |
 
-The four statements to carry away are these. On the N-regular set the general pair sharpens, the Hermitian factor becoming positive definite and the isometry factor unitary. The pair then splits twice, the modulus into a scale and a phase and the unit factor into a boost and a rotor, and the four factors fill the eight dimensions of the algebra. The regroupings of the four factors give the two-factor readings and the three pairings, of which the Cartan Hermitian pairing is the general polar decomposition itself. Read on the spinor module $S=\mathbb{C}^{2}$, left multiplication acts by the scalar $\Rho$ and the norm-one operator $\tilde U$; the scale and the phase enter through the character $\chi(\Rho)=\Rho$, and the irreducible modules are the $(j,j')_{(a,b)}$ with $a-b\equiv2j+2j'\pmod2$.
+The four statements to carry away are these. On the $\natural$-regular set the general pair sharpens, the Hermitian factor becoming positive definite and the isometry factor unitary. The pair then splits twice, the modulus into a scale and a phase and the unit factor into a boost and a rotor, and the four factors fill the eight dimensions of the algebra. The regroupings of the four factors give the two-factor readings and the three pairings, of which the Cartan Hermitian pairing is the general polar decomposition itself. Read on the spinor module $S=\mathbb{C}^{2}$, left multiplication acts by the scalar $\Rho$ and the norm-one operator $\tilde U$; the scale and the phase enter through the character $\chi(\Rho)=\Rho$, and the irreducible modules are the $(j,j')_{(a,b)}$ with $a-b\equiv2j+2j'\pmod2$.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\tilde Q$ | an N-regular biquaternion |
-| $N=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, complex and nonzero |
-| $\Rho$ | the modulus, the principal root of $N$ in $\mathcal H$ |
+| $\tilde Q$ | an $\natural$-regular biquaternion |
+| $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, complex and nonzero |
+| $\Rho$ | the modulus, the principal root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$ |
 | $r$ | the scale, $\lvert\Rho\rvert$ |
 | $\zeta$ | the central phase, $\Rho/r$ |
 | $\tilde U$ | the unit factor, $\tilde Q/\Rho$, of norm one |
@@ -574,4 +574,4 @@ The four statements to carry away are these. On the N-regular set the general pa
 - [The Quaternion Pairing of the Polar Decomposition of Biquaternions](the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html) and [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the three regroupings of the four factors.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), §*Finite-Dimensional Representations of the Lorentz Group*, for the spin-$j$ modules and the non-unitarity, and §*The Double Covers and the Lorentz Group*, for the double cover.
 - [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the regular modules and the bi-module structure used in §*What the Algebra Carries*.
-- [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html) and [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two-factor pair that the word refines and its behaviour on the cone.
+- [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html) and [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two-factor pair that the word refines and its behaviour on the cone.

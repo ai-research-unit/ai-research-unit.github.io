@@ -1,4 +1,4 @@
-# __The Polar Decomposition of an N-Degenerate Biquaternion__
+# __The Polar Decomposition of a N-Degenerate Biquaternion__
 
 ## Introduction
 
@@ -8,17 +8,17 @@ $$
 \tilde Q=\tilde Q_H\,\tilde Q_0,
 $$
 
-with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. The companion article *The Polar Decomposition of an N-Regular Biquaternion* treated the case $\langle\tilde Q\rangle_{\natural}\neq0$, where the factors sharpen: $\tilde Q_H$ is positive definite, $\tilde Q_0$ is unitary, and the pair refines into the four-factor word $\tilde Q=r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}$.
+with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. The companion article *The Polar Decomposition of a N-Regular Biquaternion* treated the case $\langle\tilde Q\rangle_{\natural}\neq0$, where the factors sharpen: $\tilde Q_H$ is positive definite, $\tilde Q_0$ is unitary, and the pair refines into the four-factor word $\tilde Q=r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}$.
 
 This article treats the complementary case $\langle\tilde Q\rangle_{\natural}=0$. The modulus vanishes, so the modulus–unit form $\tilde Q=\Rho\tilde U$ with $\Rho\neq0$ does not exist, and neither does the four-factor word, whose product has norm $\Rho^{2}=0$ and cannot represent a nonzero element. What survives is the two-factor decomposition: $\tilde Q_H$ is positive semidefinite of rank at most one, and $\tilde Q_0$ is a partial isometry that is not unitary.
 
 The article states why the modulus and the four factors fail (§*The Vanishing of the Modulus*), records the surviving pair (§*The Two-Factor Decomposition*), computes the two factors in closed form (§*The Hermitian Factor*, §*The Partial-Isometry Factor*), describes the two sectors of the null cone (§*The Two Sectors*), and gives four worked examples. The general pair, its uniqueness and the continuity of its Hermitian factor are established in *The Polar Decomposition of a Biquaternion* and are cited, not proved again.
 
-The conventions and the symbols are those of *Conventions in Mathematics*, *N-Regularity and Degeneracy in the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the symbols are collected in §*Summary of Notation*. The product is the plain product and the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$.
+The conventions and the symbols are those of *Conventions in Mathematics*, *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the symbols are collected in §*Summary of Notation*. The product is the plain product and the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$.
 
 ## The Vanishing of the Modulus
 
-Let $\tilde Q$ be N-degenerate, $\langle\tilde Q\rangle_{\natural}=0$. The modulus of the N-regular article is a square root of the norm,
+Let $\tilde Q$ be $\natural$-degenerate, $\langle\tilde Q\rangle_{\natural}=0$. The modulus of the $\natural$-regular article is a square root of the norm,
 
 $$
 \Rho^{2}=\langle\tilde Q\rangle_{\natural}=0,
@@ -40,17 +40,17 @@ $$
 
 A product of norm zero cannot equal a nonzero element. At the origin the failure is stronger: $\Rho=0$ forces $r=0$, which contradicts $r>0$.
 
-The modulus–unit form and the four-factor word therefore exist exactly on the N-regular elements. The N-degenerate elements are the null cone
+The modulus–unit form and the four-factor word therefore exist exactly on the $\natural$-regular elements. The $\natural$-degenerate elements are the null cone
 
 $$
 \mathcal N=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\},
 $$
 
-one complex equation, hence two real equations, of real codimension two (*N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*).
+one complex equation, hence two real equations, of real codimension two (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*).
 
 ## The Two-Factor Decomposition
 
-The general pair survives on the null cone. Every N-degenerate element is
+The general pair survives on the null cone. Every $\natural$-degenerate element is
 
 $$
 \boxed{\;\tilde Q=\tilde Q_H\,\tilde Q_0,\qquad \tilde Q_H=\bigl(\tilde Q\tilde Q^{*}\bigr)^{1/2},\quad \tilde Q_0=\tilde Q_H^{+}\tilde Q,\;}
@@ -60,7 +60,7 @@ with ${}^{+}$ the Moore–Penrose inverse. The pair exists for every element of 
 
 **Proposition.** If $\langle\tilde Q\rangle_{\natural}=0$, then $\tilde Q_H$ is Hermitian positive semidefinite of rank at most one, $\tilde Q_0$ is a partial isometry, and $\tilde Q_0$ is not unitary for $\tilde Q\neq0$. At the origin both factors vanish.
 
-The rank is one exactly when $\tilde Q\neq0$, and zero at the origin. The partial isometry is not unitary because its final projection $\tilde Q_0\tilde Q_0^{*}=\tilde Q_H/(2a)$ is a rank-one projection, not the identity, for $a>0$. The two factors are functions of $\tilde Q$ alone. The Hermitian factor is the continuous limit of the N-regular Hermitian factor as the element approaches the cone; the isometry factor is not continuous there (*The Polar Decomposition of a Biquaternion*, §*Continuity*).
+The rank is one exactly when $\tilde Q\neq0$, and zero at the origin. The partial isometry is not unitary because its final projection $\tilde Q_0\tilde Q_0^{*}=\tilde Q_H/(2a)$ is a rank-one projection, not the identity, for $a>0$. The two factors are functions of $\tilde Q$ alone. The Hermitian factor is the continuous limit of the $\natural$-regular Hermitian factor as the element approaches the cone; the isometry factor is not continuous there (*The Polar Decomposition of a Biquaternion*, §*Continuity*).
 
 ## The Hermitian Factor
 
@@ -278,14 +278,14 @@ On the null cone the modulus–unit form and the four-factor word do not exist: 
 | projections | $\tilde Q_0\tilde Q_0^{*}=\tilde Q_H/(2a)$ |
 | sectors | $\Sigma_{01}$ ($B^{2}\neq0$) and $\Sigma_{00}$ ($B^{2}=0$), the latter split into the origin and the nilpotents |
 
-The factorization exists for every element of the null cone, including the origin. The four-factor refinement is the privilege of the N-regular elements, where the modulus is nonzero.
+The factorization exists for every element of the null cone, including the origin. The four-factor refinement is the privilege of the $\natural$-regular elements, where the modulus is nonzero.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\tilde Q$ | an N-degenerate biquaternion |
-| $N=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, zero on the null cone |
+| $\tilde Q$ | an $\natural$-degenerate biquaternion |
+| $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, zero on the null cone |
 | $\langle\tilde Q\rangle_{*}$ | the Hermitian norm, $\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\tilde Q\tilde Q^{*}$ | $\langle\tilde Q\rangle_{*}e_t+i\vec W$ |
 | $\vec W$ | $W_x\vec e_x+W_y\vec e_y+W_z\vec e_z$, real |

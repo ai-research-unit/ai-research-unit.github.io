@@ -8,9 +8,9 @@ $$
 \tilde Q=r\,\exp(i\alpha)\,\exp\Bigl(i\frac{\psi}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$ the scale, $\alpha$ the phase, $\psi\ge0$ the rapidity, $\theta\in[0,2\pi]$ the rotor angle, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit axes. The four factors are the **scale**, the **phase**, the **boost** and the **rotor**, in this order. The scale and the phase are central and may be moved; the boost and the rotor do not commute. The decomposition is the exponential form of the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion*, which writes every invertible biquaternion as $\tilde Q=\Rho\tilde U$ with $\Rho=r\exp(i\alpha)$ in the branch $\operatorname{Re}\Rho\ge0$ and $\tilde U$ of norm one.
+with $r>0$ the scale, $\alpha$ the phase, $\psi\ge0$ the rapidity, $\theta\in[0,2\pi]$ the rotor angle, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit axes. The four factors are the **scale**, the **phase**, the **boost** and the **rotor**, in this order. The scale and the phase are central and may be moved; the boost and the rotor do not commute. The decomposition is the exponential form of the modulus–unit polar decomposition of *The Polar Decomposition of a N-Regular Biquaternion*, which writes every invertible biquaternion as $\tilde Q=\Rho\tilde U$ with $\Rho=r\exp(i\alpha)$ in the branch $\operatorname{Re}\Rho\ge0$ and $\tilde U$ of norm one.
 
-The exponential and the logarithm are those of *Biquaternion Elementary Functions*: the exponential is the matrix exponential through the algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, and the logarithm is its inverse, multivalued. The modulus–unit theorem and the topology of the unit group are those of *The Polar Decomposition of an N-Regular Biquaternion*; the Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ is that of *Biquaternion Lie Group and Exponential Structure*. These facts are quoted, not re-proved. What the article owns is the polar word itself, its existence and uniqueness, the relation between the Cartan logarithm and the single logarithm, the group law, the matrix picture, the exponential coordinates and the boundary behaviour.
+The exponential and the logarithm are those of *Biquaternion Elementary Functions*: the exponential is the matrix exponential through the algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, and the logarithm is its inverse, multivalued. The modulus–unit theorem and the topology of the unit group are those of *The Polar Decomposition of a N-Regular Biquaternion*; the Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ is that of *Biquaternion Lie Group and Exponential Structure*. These facts are quoted, not re-proved. What the article owns is the polar word itself, its existence and uniqueness, the relation between the Cartan logarithm and the single logarithm, the group law, the matrix picture, the exponential coordinates and the boundary behaviour.
 
 The decomposition is noncommutative in an essential way. The boost and the rotor exponents do not commute, so the four exponents do not add: their sum, the **formal exponent**, is not a logarithm of the element. The Baker–Campbell–Hausdorff correction is another boost. The polar word is therefore a canonical product of four exponentials, not one exponential; it is a section of the **word map**, not of the exponential. This is the structural difference from the complex, split-complex and reduced biquaternion cases, where the algebra is commutative and the word is a single exponential.
 
@@ -228,7 +228,7 @@ $$
 
 with $r>0$, $\alpha\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one, and $\tilde u_{\mathrm r}$ a unit real quaternion. Consequently it has the exponential writing above, with $\psi\ge0$, $\theta\in[0,2\pi]$, and the two axes; the axes are unique when $\psi>0$ and $\theta\notin\{0,2\pi\}$.
 
-**Proof.** The algebraic statement is the modulus–unit theorem of *The Polar Decomposition of an N-Regular Biquaternion*: the modulus $\Rho$ is the principal square root of $\tilde Q\tilde Q^{\natural}$, in the branch $\operatorname{Re}\Rho\ge0$, and $\tilde U=\tilde Q/\Rho$ has norm one. The matrix image of $\tilde U$ lies in $SL(2,\mathbb{C})$, and the global Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ gives the unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}$ positive Hermitian of determinant one and $\tilde u_{\mathrm r}$ unitary of determinant one. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis; a unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch.
+**Proof.** The algebraic statement is the modulus–unit theorem of *The Polar Decomposition of a N-Regular Biquaternion*: the modulus $\Rho$ is the principal square root of $\tilde Q\tilde Q^{\natural}$, in the branch $\operatorname{Re}\Rho\ge0$, and $\tilde U=\tilde Q/\Rho$ has norm one. The matrix image of $\tilde U$ lies in $SL(2,\mathbb{C})$, and the global Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ gives the unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}$ positive Hermitian of determinant one and $\tilde u_{\mathrm r}$ unitary of determinant one. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis; a unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch.
 
 The count of parameters is
 
@@ -434,7 +434,7 @@ The exponential is a local biholomorphism on the complement of its critical set;
 
 ## The Three Polar Decompositions
 
-The exponential form is one of three presentations of the same factorisation. The algebraic word $\tilde Q=\Rho\tilde U$ of *The Polar Decomposition of an N-Regular Biquaternion* is the coarsest; the Cartan form splits the unit factor into a Hermitian positive factor and a unitary factor; the exponential form writes each factor as an exponential. The three agree on the element and differ in the functions they use and in the group law.
+The exponential form is one of three presentations of the same factorisation. The algebraic word $\tilde Q=\Rho\tilde U$ of *The Polar Decomposition of a N-Regular Biquaternion* is the coarsest; the Cartan form splits the unit factor into a Hermitian positive factor and a unitary factor; the exponential form writes each factor as an exponential. The three agree on the element and differ in the functions they use and in the group law.
 
 ### The Three Forms
 
@@ -503,7 +503,7 @@ $$
 \mathbb{B}^{\times}\simeq U(2)\cong S^{1}\times S^{3}.
 $$
 
-The branch of the modulus makes $\tilde Q\mapsto(\Rho,\tilde U)$ a bijection onto $\mathbb{C}^{\times}\times SL(2,\mathbb{C})$, but not a homeomorphism: on the cut the phase jumps by the factor $-1$ and the rotor changes sign, so the circular direction is carried by the phase, and the branch coordinate does not see it continuously. The fundamental group of the group of units is therefore $\mathbb{Z}$, carried by the phase alone; the rotor contributes the simply connected factor $S^{3}$, and the scale and the boost are the two non-compact directions. This is the exponential reading of the homotopy statement of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Group of Units*.
+The branch of the modulus makes $\tilde Q\mapsto(\Rho,\tilde U)$ a bijection onto $\mathbb{C}^{\times}\times SL(2,\mathbb{C})$, but not a homeomorphism: on the cut the phase jumps by the factor $-1$ and the rotor changes sign, so the circular direction is carried by the phase, and the branch coordinate does not see it continuously. The fundamental group of the group of units is therefore $\mathbb{Z}$, carried by the phase alone; the rotor contributes the simply connected factor $S^{3}$, and the scale and the boost are the two non-compact directions. This is the exponential reading of the homotopy statement of *The Polar Decomposition of a N-Regular Biquaternion*, §*The Group of Units*.
 
 ### The Conformal Factor
 
@@ -523,7 +523,7 @@ $$
 \mathcal N=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\}.
 $$
 
-The cone is one complex equation, hence a cone of real dimension six. In the matrix model it is the determinant-zero set, so its nonzero elements are exactly the rank-one matrices, that is, the zero divisors of the algebra (*N-Regularity and Degeneracy in the Biquaternion Algebra*). On the cone the rapidity diverges, the scale collapses, and the word has boundary values rather than a value.
+The cone is one complex equation, hence a cone of real dimension six. In the matrix model it is the determinant-zero set, so its nonzero elements are exactly the rank-one matrices, that is, the zero divisors of the algebra (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*). On the cone the rapidity diverges, the scale collapses, and the word has boundary values rather than a value.
 
 ### The Two Strata
 
@@ -703,11 +703,11 @@ The table compares the three exponential polar decompositions; in the split-comp
 - [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the eight cases, the reconstruction and logarithm tables, and the null cone.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm, their closed forms, the kernel and the principal branch.
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the unit factor and the uniqueness of the pair.
+- [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the unit factor and the uniqueness of the pair.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hermitian positive and unitary factors.
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Cartan decomposition, the Baker–Campbell–Hausdorff formula and the Lie algebra.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four coordinate blocks and the boost family.
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null cone and the zero divisors.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone and the zero divisors.
 - [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html), for the quaternion case.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the commutative two-dimensional case.
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional case.

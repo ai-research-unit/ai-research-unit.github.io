@@ -299,7 +299,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
-used throughout the series and read on the four forms and their norms in §*The Involutions and the Four Forms* and §*The Four Algebraic Norms and the Unitary Convention* below. It is **multiplicative** and complex-valued in general, and it is not an analytic norm; its unit group and its invertibility reading are *N-Regularity and Degeneracy in the Biquaternion Algebra*, §*The Group of Units*.
+used throughout the series and read on the four forms and their norms in §*The Involutions and the Four Forms* and §*The Four Algebraic Norms and the Unitary Convention* below. It is **multiplicative** and complex-valued in general, and it is not an analytic norm; its unit group and its invertibility reading are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Group of Units*.
 
 Each of the four marks has a fixed space, and each of these is one of the **remarkable subspaces** of the algebra. Which involution defines which subspace, and which of them are anti-fixed, is recorded with the subspaces themselves, in *The Remarkable Subspaces* below.
 
@@ -759,7 +759,7 @@ The series writes one polar word and reads it in three bracketings. The word, it
 
 ### The Word and Its Factors
 
-**The domain.** The word exists on the complement of the zero-divisor cone, $\langle\tilde Q\rangle_{\natural}\neq0$, and on no larger set. The existence and uniqueness are those of *The Polar Decomposition of an N-Regular Biquaternion*.
+**The domain.** The word exists on the complement of the zero-divisor cone, $\langle\tilde Q\rangle_{\natural}\neq0$, and on no larger set. The existence and uniqueness are those of *The Polar Decomposition of a N-Regular Biquaternion*.
 
 **The word.** Every element off the cone is the ordered product
 
@@ -955,7 +955,7 @@ The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, th
 
 ## The Four-Vector Representation
 
-The algebra is read as the quadruple of its complex coefficients, in *The Four-Vector Element Representation of Biquaternions*. Each unit is one coordinate place,
+The algebra is read as the quadruple of its complex coefficients, in *The Biquaternion Algebra and Its Vector Spaces*, §*The Coordinate Systems*. Each unit is one coordinate place,
 
 $$
 e_t \longleftrightarrow (1,0,0,0), \qquad \vec e_x \longleftrightarrow (0,1,0,0), \qquad \vec e_y \longleftrightarrow (0,0,1,0), \qquad \vec e_z \longleftrightarrow (0,0,0,1),

@@ -193,4 +193,4 @@ The left multiplication operator of the block is $L_{\tilde Q_3}\tilde Q_2=Q_{3t
 - [The Left Multiplications of the Quaternionic Product and the Opposite Monoid](the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.html), for the operators of the parent product
 - [Two-Sided Operators on the General Quaternionic Algebra](two-sided-operators-on-the-general-quaternionic-algebra.html), for the two-sided family of the parent product
 - [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.html), for the Lie case, whose adjoint map is a representation and whose derivations are inner
-- [N-Regularity and Degeneracy in the Biquaternion Algebra](n-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the norm and its isotropic cone, on which the rank of the operator drops
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm and its isotropic cone, on which the rank of the operator drops

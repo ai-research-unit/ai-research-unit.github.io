@@ -565,7 +565,7 @@ P(\tilde Q_1,\tilde Q_2)=-h_tk_t+\sum_{j=1}^{3}h_jk_j,\qquad
 H(\tilde Q_1,\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}h_\mu k_\mu,
 $$
 $$
-N(\tilde Q_1,\tilde Q_2)=-\sum_{\mu\in\{t,x,y,z\}}h_\mu k_\mu,\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=-\sum_{\mu\in\{t,x,y,z\}}h_\mu k_\mu,\qquad
 K(\tilde Q_1,\tilde Q_2)=h_tk_t-\sum_{j=1}^{3}h_jk_j,
 $$
 

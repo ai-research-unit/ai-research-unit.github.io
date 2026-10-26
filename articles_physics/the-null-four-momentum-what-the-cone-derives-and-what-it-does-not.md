@@ -230,7 +230,7 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 
 ## Further Reading
 
-- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, and [N-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the zero-divisor set and its two strata.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, and [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) for the zero-divisor set and its two strata.
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover), for the light cone and the null interval.
 - Albert Einstein, "Zur Elektrodynamik bewegter Körper", *Annalen der Physik* **17** (1905) 891–921, for the independence of the speed of light from the state of motion of the emitter.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for isotropic vectors and zero divisors in $\mathbb{C}\otimes\mathbb{H}$ and $M_2(\mathbb{C})$.
