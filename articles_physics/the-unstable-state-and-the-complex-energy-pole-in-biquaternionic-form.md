@@ -376,7 +376,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 
 - [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the nilpotent regime and the spectral contrast with a Jordan block.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the word and the Cartan amplitude used in this section.
-- [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the amplitude as the square root of the state and the modular reading.
+- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the amplitude as the square root of the state and the modular reading.
 - [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the compact and non-compact regimes and the complex angle.
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the domain $B\neq0$ that excludes the central element from the Hamilton pairing.
 - [The S-Matrix in Biquaternionic Form](the-s-matrix-in-biquaternionic-form.html), for the Cartan factor of a truncated S-matrix.

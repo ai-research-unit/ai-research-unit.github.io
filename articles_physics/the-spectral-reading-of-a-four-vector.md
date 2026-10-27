@@ -26,13 +26,13 @@ $$
 =i\left(\frac{E}{c}\pm\lvert\vec p\rvert\right)\;}.
 $$
 
-Write $\nu_\pm=\lambda_\pm/i$. The pair $\nu_\pm$ is real and non-negative,
+Write $\nu_\pm=\lambda_\pm/i$. For a physical momentum on the future mass shell, $E/c\ge\lvert\vec p\rvert$, so the pair is real and non-negative,
 
 $$
 \nu_\pm=\frac{E}{c}\pm\lvert\vec p\rvert\ge0,
 $$
 
-and it is the pair of light-cone frequencies of the momentum. The rapidity $\psi$ of the momentum is fixed by
+and it is the pair of light-cone frequencies of the momentum. Off the shell one of the two can be negative. For $m>0$ the rapidity $\psi$ of the momentum is fixed by
 
 $$
 \cosh\psi=\frac{E}{mc},
@@ -50,7 +50,7 @@ $$
 \lambda_\pm=i\,mc\,e^{\pm\psi}\;}.
 $$
 
-This is the **Doppler pair**: the two frequencies are the rest frequency $mc$ scaled by the two reciprocal Doppler factors of the momentum's own rapidity. The sum, the difference, the product and the ratio are the four physical invariants of the pair.
+This is the **Doppler pair**: the two frequencies are the rest frequency $mc$ scaled by the two reciprocal Doppler factors of the momentum's own rapidity. The sum, the difference, the product and the ratio are the four physical quantities of the pair; only the product is invariant.
 
 | Quantity | Expression | Reading |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ $$
 =i\,mc\left(e^{\psi}\tilde\Pi_++e^{-\psi}\tilde\Pi_-\right)\;}.
 $$
 
-Each term is a complex multiple of a minimal idempotent, hence a null element. The two terms are the two **lightlike components** of the momentum, and the coefficients are the Doppler-scaled rest frequencies. In light-cone coordinates the writing is the standard split of a timelike vector into two null vectors,
+Each term is an imaginary multiple of a minimal idempotent, hence a null element. The two terms are the two **lightlike components** of the momentum, and the coefficients are the Doppler-scaled rest frequencies. In light-cone coordinates the writing is the standard split of a timelike vector into two null vectors,
 
 $$
 \tilde P=k_++k_-,
@@ -97,7 +97,7 @@ k_\pm=i\,mc\,e^{\pm\psi}\,\tilde\Pi_\pm,
 \langle k_\pm\rangle_{\natural}=0.
 $$
 
-The decomposition is unique up to the exchange of the two labels. The exchange is produced by $\vec u_p\mapsto-\vec u_p$, that is, by the other square root $B\mapsto-B$, and it leaves $\tilde P$ unchanged. No physical statement may depend on which term is called $+$.
+The decomposition is unique up to the exchange of the two labels, $(\lambda_+,\tilde\Pi_+)\leftrightarrow(\lambda_-,\tilde\Pi_-)$, which leaves $\tilde P$ unchanged. No physical statement may depend on which term is called $+$.
 
 The two idempotents are the pure states along $-\vec u_p$ and $+\vec u_p$ respectively: $\tilde\Pi_+$ has Bloch vector $-\vec u_p$ and $\tilde\Pi_-$ has Bloch vector $+\vec u_p$. The momentum therefore selects an axis, and the two null components are the two states on that axis. The axis is the direction of motion, and the pair of states is the pair of lightlike directions along it.
 
@@ -105,7 +105,7 @@ The two idempotents are the pure states along $-\vec u_p$ and $+\vec u_p$ respec
 
 No. The two eigenvalues are the one momentum written in the two idempotent coordinates, and the two terms are two null components of one element.
 
-The sum is the check. The two coefficients satisfy $\nu_++\nu_-=2E/c$, not $E/c$; they are not the energies of two particles whose total is $E$. The two terms are null and complex, so neither is a positive-energy state. The density matrix of a physical particle is a Hermitian positive element of the informational sector, and the $k_\pm$ are not of that kind.
+The sum is the check. The two coefficients satisfy $\nu_++\nu_-=2E/c$, not $E/c$; they are not the energies of two particles whose total is $E$. The two terms are null and anti-Hermitian, so neither is a positive-energy state. The density matrix of a physical particle is a Hermitian positive element of the informational sector, and the $k_\pm$ are not of that kind.
 
 The comparison with a genuine two-particle object makes the difference explicit. A two-particle state is a tensor product or a pair of independent four-momenta; it lives in a larger space and carries two independent mass-shell conditions. The two-term writing lives in one algebra element and carries one mass-shell condition, $\nu_+\nu_-=m^2c^2$. It is a decomposition, not a pair.
 
@@ -231,10 +231,10 @@ and the two objects play different roles. The eigenvalues are the coefficients; 
 
 ## Physical Readings
 
-- **The eigenpair is the Doppler pair.** The two eigenvalues are the two light-cone frequencies, $mc\,e^{\pm\psi}$, and their ratio is the squared Doppler factor. The reading is the spectral form of the relativistic Doppler effect.
+- **The eigenpair is the Doppler pair.** The two eigenvalues are $i\,mc\,e^{\pm\psi}$, and the two light-cone frequencies are $mc\,e^{\pm\psi}$; their ratio is the squared Doppler factor. The reading is the spectral form of the relativistic Doppler effect.
 - **The sum and the difference are the energy and the momentum.** Twice the energy and twice the momentum are the symmetric and antisymmetric combinations of the pair. The reading is the light-cone bookkeeping of a four-vector.
 - **The product is the mass shell.** The product of the eigenvalues is the norm, and the norm is $-m^2c^2$. The reading is that the mass is the invariant of the pair, not a property of either member.
-- **The two terms are the two null components.** Each term is a complex multiple of a minimal idempotent, and the two idempotents are the two pure states along the direction of motion. The reading is the lightlike decomposition of a timelike momentum.
+- **The two terms are the two null components.** Each term is an imaginary multiple of a minimal idempotent, and the two idempotents are the two pure states along the direction of motion. The reading is the lightlike decomposition of a timelike momentum.
 - **The frame dependence is the Doppler shift.** A boost rescales the two coefficients reciprocally. The reading is that the pair is a frame-dependent coordinate of a frame-independent product.
 - **The rest frame is the degenerate frame.** At rest the pair coalesces and the two-term writing is not unique. The reading is that a massive particle at rest has no preferred null pair.
 - **The massless limit is a one-term writing.** One coefficient vanishes and the element becomes a null multiple of one idempotent. The reading is the massless spectrum as the boundary of the massive pair.

@@ -98,7 +98,7 @@ $$
 \langle\tilde H,e_t\rangle_{*}=h_t,\qquad \operatorname{Tr}(\tilde H)=2h_t=\lambda_++\lambda_-,\qquad \langle\tilde H\rangle_{\natural}=h_t^2-\lvert\vec h\rvert^2=\lambda_+\lambda_-.
 $$
 
-The element is **positive** exactly when $h_t\geq\lvert\vec h\rvert$, that is, exactly when both eigenvalues are non-negative. Positivity is a statement about the eigenvalues, not about the biquaternion norm: it is negative exactly when the two eigenvalues have opposite signs.
+The element is **positive** exactly when $h_t\geq\lvert\vec h\rvert$, that is, exactly when both eigenvalues are non-negative. Positivity is a statement about the eigenvalues, not about the biquaternion norm: the norm is negative exactly when the two eigenvalues have opposite signs.
 
 The **state slice**, which the trace reads as the trace-one slice, is the family
 
@@ -120,7 +120,7 @@ $$
 \langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14\bigl(1-\lvert\vec r\rvert^2\bigr),
 $$
 
-so every pure state is a **zero divisor**, while a mixed state is not. The Bloch ball is the state slice of the positive cone, and its boundary sphere is the intersection of that slice with the future light cone of the biquaternion norm. The positivity of the plain form and the causal cone of the interval therefore have one and the same boundary.
+so every pure state is a **zero divisor**, while a mixed state is not. The Bloch ball is the state slice of the positive cone, and its boundary sphere is the intersection of that slice with the future light cone of the biquaternion norm. The positive cone of the sector and the causal cone of the interval therefore have one and the same boundary.
 
 ### The Action on the Material Sector
 
@@ -192,13 +192,13 @@ $$
 \text{pure states}=\{\tilde Q\in\mathbb{M}_+:\langle\tilde Q,e_t\rangle=\tfrac12\langle e_t\rangle,\ \langle\tilde Q\rangle_{\natural}=0\}.
 $$
 
-The state space and the causal cone therefore share their boundary. The fact is the same one stated in the material article: the positivity of the plain form and the causal cone of the interval have one and the same boundary.
+The state space and the causal cone therefore share their boundary in the state slice. The fact is the same one stated in the material article: the positive cone of the sector and the causal cone of the interval have one and the same boundary.
 
 **The boundary.** The families are nested, not disjoint, and the words *state* and *observable* name roles, not types. The sector does not supply a measurement postulate; it supplies the algebraic shape that a measurement postulate takes.
 
 ### The State Space Is the Bloch Ball
 
-The state slice of the sector is the family $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r$ a real three-vector, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image). Its spectral decomposition is a convex combination of two orthogonal pure states,
+The state slice of the sector is the family $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r$ a real three-vector, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image). With $\vec r=r\vec u$ and $r=\lvert\vec r\rvert$, its spectral decomposition is a convex combination of two orthogonal pure states,
 
 $$
 \tilde{Ϛ}=\frac{1+r}{2}\tilde\Pi_1(\vec u)+\frac{1-r}{2}\tilde\Pi_2(\vec u),
@@ -234,7 +234,7 @@ Three properties fix the map. It is **right-invariant**, $(\tilde Q\tilde W)(\ti
 
 The direction is the one that is easy to get backwards: the reversible operators produce the least informative state, and the zero divisors produce the pure states. The reason is that the map keeps the ratios of the singular values and discards the unitary factor and the overall scale; a reversible operator has equal singular values, so its image carries no information beyond the normalisation.
 
-**The boundary.** The map takes an operator to a state without an input. A measurement instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}/p$, and the two coincide only when the input is $\tfrac12e_t$. The operator-to-state map is therefore the input-free shadow of the instrument, not the instrument, and it neither selects an outcome nor supplies a dynamics. It is developed in *The Cartan Pairing, the Amplitude and the Operator-to-State Map*.
+**The boundary.** The map takes an operator to a state without an input. A measurement instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}/p$, and the two coincide only when the input is $\tfrac12e_t$. The operator-to-state map is therefore the input-free shadow of the instrument, not the instrument, and it neither selects an outcome nor supplies a dynamics. It is developed in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*.
 
 ### The Spectral Decomposition Is the Readout
 
@@ -244,7 +244,7 @@ $$
 \tilde H=\lambda_+\tilde\Pi_1(\vec u_h)+\lambda_-\tilde\Pi_2(\vec u_h),\qquad \lambda_\pm=h_t\pm\lvert\vec h\rvert,
 $$
 
-with $\tilde\Pi_1+\tilde\Pi_2=e_t$ and $\tilde\Pi_1\tilde\Pi_2=0$. The two coefficients are the eigenvalues, the two idempotents are the eigen-idempotents, and the pair is a resolution of the identity. The decomposition degenerates to $h_t$ exactly when $\vec h=0$.
+with $\tilde\Pi_1+\tilde\Pi_2=e_t$ and $\tilde\Pi_1\tilde\Pi_2=0$. The two coefficients are the eigenvalues, the two idempotents are the eigen-idempotents, and the pair is a resolution of the identity. The decomposition degenerates to $h_t e_t$ exactly when $\vec h=0$.
 
 The trace and the biquaternion norm read
 
@@ -276,9 +276,9 @@ The same formula carries three physical regimes, distinguished only by the norma
 | --- | --- | --- |
 | Lorentz rotor | $\langle\tilde Q\rangle_{\natural}=1$ | reversible change of frame on $\mathbb{M}_-$ |
 | Matrix-unitary | $\tilde Q\tilde Q^{*}=e_t$ | reversible evolution of states |
-| Idempotent | $\tilde Q^2=\tilde Q$ | irreversible measurement projection |
+| Hermitian idempotent, $\tilde\Pi\neq0,e_t$ | $\tilde Q^2=\tilde Q$ and $\tilde Q^{*}=\tilde Q$ | irreversible measurement projection |
 
-A unit-norm element is a Lorentz rotor: it preserves the interval and acts on the material sector. A matrix-unitary element preserves the trace and maps states to states; it is a rotation rotor up to a central phase, and its effective action on the Bloch ball is $SO(3)$. An idempotent does not preserve the norm, and its action is a projection: $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$, with probability $2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*})$ and normalised post-measurement state $\tilde\Pi\tilde{Ϛ}\tilde\Pi/(2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*}))$.
+A unit-norm element is a Lorentz rotor: it preserves the interval and acts on the material sector. A matrix-unitary element preserves the trace and maps states to states; it is a rotation rotor up to a central phase, and its effective action on the Bloch ball is $SO(3)$. A proper Hermitian idempotent, neither $0$ nor $e_t$, does not preserve the norm, and its action is a projection: $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$, with probability $2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*})$ and normalised post-measurement state $\tilde\Pi\tilde{Ϛ}\tilde\Pi/(2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*}))$.
 
 The dichotomy between reversible and irreversible actions is therefore intrinsic to the sector: a norm-preserving rotor against a norm-destroying projection. On the material sector the rotor is a Lorentz transformation; on the state side the reversible class narrows to the matrix-unitary elements, and the pair is exactly the quantum-information dichotomy between unitary evolution and measurement.
 
@@ -323,7 +323,7 @@ The asymmetry is the physical content of the names. The material element is a co
 
 The anticommutator of two Hermitian elements is Hermitian, so $\mathbb{M}_+$ is closed under the symmetrised product $\tfrac12\{\tilde Q_1,\tilde Q_2\}$. It is a **special Jordan algebra**. The commutator does not close on the sector: it lands in $\mathbb{M}_-$, and it is the Lie algebra of the material sector. The two sectors therefore carry two different algebraic structures: the material sector is a Lie algebra, and the informational sector is a Jordan algebra.
 
-The asymmetry is structural and not interpretive. The material sector carries the compact part of the Lorentz algebra, the three rotation generators with the time direction central, and a Lie algebra is what a space of generators carries. The three boost generators lie in $\mathbb{M}_+$, among the observables. The informational sector is the space of observables, and a Jordan algebra is what a space of observables carries: the symmetrised product is the algebraic form of the simultaneous measurement of two observables, and it is commutative but not associative. The square of an element lies in $\mathbb{M}_+$ in both cases, because the square is the symmetrised product of an element with itself.
+The asymmetry is structural and not interpretive. The material sector carries the compact rotation generators together with the central phase, and a Lie algebra is what a space of generators carries. The three boost generators lie in $\mathbb{M}_+$, among the observables. The informational sector is the space of observables, and a Jordan algebra is what a space of observables carries: the symmetrised product is the algebraic form of the simultaneous measurement of two observables, and it is commutative but not associative. The square of an element lies in $\mathbb{M}_+$ in both cases, because the square is the symmetrised product of an element with itself.
 
 **The boundary.** The bracket is not the physical composition of observables. The Jordan product is the symmetrised part of the algebra product, and the Lie product is the antisymmetrised part; the two are the two halves of one multiplication, and they land in opposite sectors.
 
@@ -340,7 +340,7 @@ The mathematics of the sector and its action on the material sector is structura
 | Unitary gate $U$ | matrix-unitary $\tilde U$, $\tilde U\tilde U^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball |
 | Expectation value $\operatorname{Tr}(\rho H)$ | $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $2\operatorname{Sc}(\tilde{Ϛ}\tilde H^{*})$; the trace enters only at normalisation |
 | Reversible evolution $U\rho U^{\dagger}$ | rotor conjugation $\tilde U\tilde{Ϛ}\tilde U^{*}$ |
-| Projective measurement $\rho\mapsto P\rho P$ | idempotent projection $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ |
+| Projective measurement $\rho\mapsto P\rho P$ | Hermitian idempotent projection $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ |
 
 The basis of the module is one idempotent and one nilpotent: $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$, with $\tilde\Pi_+^2=\tilde\Pi_+$, $\vec\Upsilon_2^2=0$ and Gram matrix $\tfrac12 I_2$. A general spinor is $s_1\tilde\Pi_++s_2\vec\Upsilon_2$ with complex coefficients; the two states are carried by the coefficients, not by the two basis elements. The module is a genuine Hilbert space, with $\langle\psi,\psi\rangle_{*}=\tfrac12(\lvert s_1\rvert^2+\lvert s_2\rvert^2)$ positive definite.
 
@@ -354,9 +354,9 @@ The basis of the module is one idempotent and one nilpotent: $\tilde\Pi_+=\tfrac
 
 The sector carries the algebra of observables of a spin-1/2 system, and the biquaternion algebra widens the carrier without changing the state space. In non-relativistic spin-1/2 physics the state space is $\mathbb{C}^2$, the observables are the Hermitian $2\times2$ matrices, and the group that preserves the state space is the compact $U(2)$. In the biquaternion framework the state space is the spinor module of $\mathbb{B}$, the observables are the Hermitian elements of $\mathbb{M}_+$, and the group that preserves the state slice is again $U(2)$.
 
-The Lorentz group enters through the generators, and they are split between the sectors. The three rotation generators are the real vector units $\vec e_k\in\mathbb{M}_-$, anti-Hermitian and compact. The three boost generators are the traceless Hermitian elements $i\vec h\in\mathbb{M}_+$, non-compact. Together with the central directions they generate $SL(2,\mathbb{C})$, which acts on the material sector and on the ambient algebra but not on the Bloch ball: a boost carries a state off the state slice. The compact/non-compact distinction is the distinction between rotations in a spacelike plane and boosts in a timelike plane.
+The Lorentz group enters through the generators, and they are split between the sectors. The three rotation generators are the real vector units $\vec e_k\in\mathbb{M}_-$, anti-Hermitian and compact. The three boost generators are the traceless Hermitian elements $i\vec h\in\mathbb{M}_+$, non-compact. The two triples generate $SL(2,\mathbb{C})$, which acts on the material sector and on the ambient algebra but not on the Bloch ball: a boost carries a state off the state slice. The central direction $i e_t$ generates the $\mathfrak{u}(1)$ phase and is not part of the Lorentz algebra. The compact/non-compact distinction is the distinction between rotations in a spacelike plane and boosts in a timelike plane.
 
-The framework can therefore be read as a relativistic generalisation of the spin-1/2 formalism at the level of the algebra: the observables of $\mathbb{M}_+$ include the boost generators alongside the central scalar, the rotation generators lie in the material sector, and the Lorentz group is generated by the two sectors together. The state space itself remains the non-relativistic Bloch ball.
+The framework can therefore be read as a relativistic generalisation of the spin-1/2 formalism at the level of the algebra: the observables of $\mathbb{M}_+$ include the boost generators alongside the central scalar, the rotation generators lie in the material sector, and the Lorentz group is generated by the rotations of $\mathbb{M}_-$ and the boosts of $\mathbb{M}_+$. The state space itself remains the non-relativistic Bloch ball.
 
 **The boundary.** The single-qubit state space is a fixed Bloch ball, and a boost carries a state off the state slice. Making the state space itself relativistic is open work, not a result of the framework. The analogy is exact at the level of the algebra of one qubit; it is not a derivation of the relativistic state space.
 
@@ -381,7 +381,7 @@ Eight statements of this article are not properties of the vector space $\mathbb
 | Statement | Algebraic address | Owner |
 | --- | --- | --- |
 | The Born pairing is the Hilbert–Schmidt pairing | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_2)^{\dagger}\mathsf{M}_2(\tilde Q_1)\bigr)$ | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
-| The form makes $\mathbb{B}$ a Hilbert space | $\operatorname{Sc}(\tilde Q_1^{*}\tilde S)$ is positive definite of signature $(8,0)$ | [The Completion of a Sesqualgebra with a Form](../articles_maths/the-completion-of-a-sesqualgebra-with-a-form.html) |
+| The form makes $\mathbb{B}$ a Hilbert space | $\operatorname{Sc}(\tilde Q_1^{*}\tilde Q_2)$ is positive definite of signature $(8,0)$ | [The Completion of a Sesqualgebra with a Form](../articles_maths/the-completion-of-a-sesqualgebra-with-a-form.html) |
 | The level sets are the groups the physics uses | $\tilde U\tilde U^{*}=e_t$ gives $U(2)$; $\langle\tilde U\rangle_{\natural}=1$ gives $SL(2,\mathbb{C})$; the Euclidean sphere is not used | [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The operator dictionary is the adjointness dictionary | observables $\mathbb{M}_+$, generators $\mathbb{M}_-$, unitaries $U(2)$; $\tilde H=iA$ for $A\in\mathbb{M}_-$ | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
 | One operator carries both evolutions | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, evaluated at a unitary or an idempotent parameter | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
@@ -449,7 +449,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - The spectral decomposition writes every observable as two eigenvalues times two orthogonal idempotents.
 - Evolution and measurement are one sandwich, with the parameter unit-norm, matrix-unitary or idempotent.
 - The Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*}=2\operatorname{Sc}(\tilde{Ϛ}\tilde H^{*})$, with $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$.
-- The sector is a special Jordan algebra under the anticommutator, and not a Lie algebra; the material sector carries the Lie algebra of the spatial rotations.
+- The sector is a special Jordan algebra under the anticommutator, and not a Lie algebra; the material sector carries the compact Lie algebra $\mathfrak{u}(2)$, the spatial rotations together with the central phase.
 - The sector is phase-free in the scalar sense, but its vector product carries the coherence.
 - The physical realisation of the sector is a hypothesis, with eight open questions.
 
@@ -460,7 +460,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 | $\mathbb{M}_+$ | the Hermitian subspace, the informational sector |
 | $\tilde Q_{\mathrm H}=c t e_t+i\vec q'$ | an informational element, the Hermitian part |
 | $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | the pure-state idempotents |
-| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a state, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$; the Bloch vector $\vec r$ |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a state when $\lvert\vec r\rvert\leq1$, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$; the Bloch vector $\vec r$ |
 | $\tilde H=h_te_t+i\vec h$ | an observable, with eigenvalues $h_t\pm\lvert\vec h\rvert$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, $\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}$ | the Hermitian form and its norm, positive definite on $\mathbb{B}$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ | the plain form and its norm, the restriction of the Hermitian form to $\mathbb{M}_+$ |
@@ -487,4 +487,4 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), for the derivation of the probability formula and its comparison with the postulate.
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the geometry of the state space.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the full correspondence with quantum information.
-- [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the operator-to-state map and its purity stratigraphy.
+- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the operator-to-state map and its purity stratigraphy.

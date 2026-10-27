@@ -119,7 +119,7 @@ $$
 \cong\mathbb{C}[\varepsilon]/(\varepsilon^2),
 $$
 
-whose only idempotents are $0$ and $e_t$. No non-trivial idempotent commutes with $\vec\Upsilon$, so there is no Peirce decomposition relative to it and no spectral decomposition. The closest structure is the flag
+whose only idempotents are $0$ and $e_t$. No non-trivial idempotent commutes with $\vec\Upsilon$, so no non-trivial Peirce decomposition is attached to it and there is no spectral decomposition. A Peirce decomposition still exists relative to an idempotent adapted to the nilpotent; in it $\vec\Upsilon$ lies in the mixed corner. The closest structure is the flag
 
 $$
 0\subset\mathbb{C}\vec\Upsilon\subset\ker L_{\vec\Upsilon},
@@ -239,7 +239,7 @@ No dynamics is supplied. The cell says what the vacuum and the nilpotents are at
 
 - $\Sigma_{00}=\{N=0,\ B^2=0\}=\{\vec\Upsilon:\vec\Upsilon^2=0\}$ is the nilpotent cone, of real dimension four, with the origin as vertex.
 - The origin is the vacuum: the zero four-momentum, the unique element with no scale and no mode; it is the additive zero, not the identity.
-- Off the origin the element is a non-zero nilpotent: defective, minimal polynomial $X^2$, dual-number centraliser, no idempotent, no Peirce decomposition, no inverse, no logarithm.
+- Off the origin the element is a non-zero nilpotent: defective, minimal polynomial $X^2$, dual-number centraliser, no idempotent, no canonical Peirce decomposition; a chosen adapted idempotent gives $J_2(0)$, and there is no inverse and no logarithm.
 - A pair of nilpotents with anticommutator $e_t$ is the fermionic ladder; their products are two orthogonal Hermitian idempotents, the two rungs.
 - The ladder has exactly two rungs; the algebra is $M_2(\mathbb{C})$ and the module is two-dimensional.
 - The product of two nilpotents is zero or a scaled idempotent in $\Sigma_{01}$; the cell is not product-closed.

@@ -82,7 +82,7 @@ $$
 \tilde Q=Q_t\tilde\Pi_1+Q_t\tilde\Pi_2,
 $$
 
-with the same coefficient on both terms, and the pair is not determined by $\tilde Q$. The Peirce decomposition relative to $\tilde Q$ exists only in the one-term form $\tilde Q=Q_te_t$.
+with the same coefficient on both terms, and the pair is not determined by $\tilde Q$. The canonical Peirce decomposition attached to $\tilde Q$ has one term, $\tilde Q=Q_te_t$; every two-term refinement is non-unique.
 
 ### The Physics
 
@@ -133,7 +133,16 @@ $$
 \cong\mathbb{C}[\varepsilon]/(\varepsilon^2),
 $$
 
-whose only idempotents are $0$ and $e_t$. No non-trivial idempotent commutes with $\tilde Q$, so there is no Peirce decomposition relative to $\tilde Q$ and no spectral decomposition. The closest structure is a flag: an isotropic line, its image, and no canonical complement.
+whose only idempotents are $0$ and $e_t$. No non-trivial idempotent commutes with $\tilde Q$, so no non-trivial Peirce decomposition is attached to the element and there is no spectral decomposition. A Peirce decomposition still exists: with $f=e_t-e$ and an idempotent $e$ such that $\vec\Upsilon=e\vec\Upsilon f$, the Peirce form is
+
+$$
+e\tilde Qe=Q_te,\qquad
+e\tilde Qf=\vec\Upsilon,\qquad
+f\tilde Qe=0,\qquad
+f\tilde Qf=Q_tf,
+$$
+
+and the Peirce matrix is the single block $J_2(Q_t)$ for every such choice. The closest structure attached to the element is a flag: an isotropic line inside the common kernel–image of $L_{\vec\Upsilon}$, with no canonical complement. The flag is invariant; only the scale of the vector that spans its line is a gauge of the flag, and the frame that splits the flag is chosen.
 
 The powers and the inverse are
 
@@ -167,7 +176,7 @@ The cell has one eigenvalue. The two spectral questions have different answers:
 | diagonalisable? | yes | no |
 | eigenbasis? | every basis | none |
 | spectral decomposition? | one term, non-unique refinement | none |
-| Peirce decomposition relative to $\tilde Q$? | one term | none |
+| canonical Peirce decomposition attached to $\tilde Q$? | one term | none; a chosen adapted idempotent gives $J_2(Q_t)$ |
 | inverse? | yes | yes |
 | generator? | yes, up to the lattice | yes, up to the lattice |
 
@@ -202,7 +211,7 @@ The boundary of the cell inside the spectral cone is the null-cone intersection 
 - **The double pole is the defective response.** The inverse has a double pole in the scalar part; in a resolvent or a propagator, the double pole is the signature of a coalesced mode.
 - **The beat stops and the rate remains.** The cell has one frequency; there is no oscillation between two modes, but there is still a global phase and a one-parameter group.
 - **The cell is the boundary of the two-mode regime.** A massive particle in motion approaches the rest frame as $\vec p\to0$; the element has a limit, the eigenbasis does not.
-- **No Peirce decomposition, only a flag.** On the Jordan part there is no pair of non-trivial idempotents attached to the element, no spectral decomposition and no eigenbasis. The closest structure is a flag; the flag is the invariant, and only the scale of its vector is a gauge.
+- **No canonical Peirce decomposition, only a flag.** A Peirce decomposition always exists, but on the Jordan part no pair of non-trivial idempotents is attached to the element: a chosen adapted idempotent gives the Jordan block $J_2(Q_t)$. There is no spectral decomposition and no eigenbasis. The closest structure attached to the element is a flag; the flag is the invariant, and only the scale of the vector that spans its line is a gauge of the flag.
 
 ## Limits
 
@@ -222,7 +231,7 @@ No dynamics is supplied. The cell says what the element is at an instant; it doe
 
 - $\Sigma_{10}=\{N\neq0,\ B^2=0\}$ is the spectral cone minus the null cone: units with a repeated eigenvalue $Q_t$, of real dimension six.
 - The scalar line $Q_te_t$ is semisimple, central and the real rest frame: one frequency, no preferred axis, non-unique two-term writing.
-- The Jordan part $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$ is defective: one eigenvalue, one Jordan block, no eigenbasis, no Peirce decomposition.
+- The Jordan part $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$ is defective: one eigenvalue, one Jordan block, no eigenbasis, no canonical Peirce decomposition; a chosen adapted idempotent gives $J_2(Q_t)$, and the flag is the invariant.
 - The physical reading of the Jordan part is the exceptional point: coalesced modes, a shear, a double pole in the inverse.
 - The beat stops on the whole cell; the rate remains. The cell has one frequency and still generates a one-parameter group.
 - The cell is inverse-closed and not product-closed; products stay in $\Sigma_{10}\cup\Sigma_{11}$.

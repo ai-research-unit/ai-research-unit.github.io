@@ -344,6 +344,6 @@ The channel-level statement is the correction that the polar programme makes to 
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the state space and the measurement update.
 - [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), for the trace reading of the Born weight.
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the original formulation of completely positive maps and instruments.
-- [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the input-free operator-to-state map and the purity table that the three outcome strata follow.
+- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the input-free operator-to-state map and the purity table that the three outcome strata follow.
 - M.-D. Choi, "Completely positive linear maps on complex matrices," *Linear Algebra and its Applications* **10** (1975) 285–290, for the Choi matrix and the minimal Kraus rank.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Kraus representation, the polar decomposition of operators, and generalized measurements.

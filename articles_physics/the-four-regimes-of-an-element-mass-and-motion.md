@@ -128,7 +128,7 @@ The physical content is therefore double. The scalar line is **the rest frame**:
 
 The cell of zero divisors with two distinct eigenvalues. The element is a non-zero multiple of a non-trivial idempotent, $\tilde Q=\kappa\tilde\Pi$ with $\kappa=2Q_t\neq0$, and its spectrum is $\{\kappa,0\}$. On the material sector it is the light cone minus the apex: a massless momentum, with one light-cone eigenvalue zero and the other $2iE/c$. It has a unique Peirce decomposition, a mode basis, and no rest frame: one eigenvalue is zero, so there is no frame in which the two eigenvalues coincide.
 
-The physical content is the **light ray**: a rank-one element, a direction and a scale, a point of the celestial sphere together with a little-group phase. It is a zero divisor, hence not invertible; it has no logarithm and no generator. The cell is part of the boundary of the unit group: the null cone with its vertex and the doubly degenerate cone removed.
+The physical content is the **light ray**: a rank-one element, a direction and a scale; a spinor representative adds a little-group phase. It is a zero divisor, hence not invertible; it has no logarithm and no generator. The cell is part of the boundary of the unit group: the null cone with its vertex and the doubly degenerate cone removed.
 
 ### The Vacuum and the Nilpotent Ladder: $\Sigma_{00}$
 

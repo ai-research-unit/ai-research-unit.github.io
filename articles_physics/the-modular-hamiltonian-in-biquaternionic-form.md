@@ -146,7 +146,7 @@ $$
 \tilde K_{\mathrm{mod}}=-2\log\tilde A+\log\!\bigl(2\langle\tilde A,\tilde A\rangle_{*}\bigr)e_t,
 $$
 
-the last term being the central constant that a modular Hamiltonian always carries. The derivation is in *The Cartan Pairing, the Amplitude and the Operator-to-State Map*, §*The Modular Reading*; it is repeated here because this article is where the flow is used.
+the last term being the central constant that a modular Hamiltonian always carries. The derivation is in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*, §*The Modular Reading*; it is repeated here because this article is where the flow is used.
 
 **The spectrum.** If $\tilde{Ϛ}$ has eigenvalues $\lambda_\pm$, then $\hat H$ has eigenvalues $\sqrt{\lambda_\pm}$ and $\tilde K_{\mathrm{mod}}$ has eigenvalues $-\log\lambda_\pm$. The amplitude's eigenvalues are the square roots of the Boltzmann weights; the modular Hamiltonian's are their logarithms. The factor $2$ is the exponent in $\tilde{Ϛ}=\hat H^{2}$: the state is the square of the amplitude.
 
@@ -453,7 +453,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 - Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state, the thermal operator, and $\tilde{K}_{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$.
 - Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the wedge, the Bisognano–Wichmann identification, and the temperature derived from the two-point function.
 - Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
-- Companion article [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the amplitude as the square root of the state and the modular reading.
+- Companion article [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the amplitude as the square root of the state and the modular reading.
 - Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector, the four-vectors, and the zero-divisor cone.
 - Companion article [The Conformal Group in Biquaternionic Form](the-conformal-group-in-biquaternionic-form.html), for the boundary that the special conformal generators are not elements of $\mathbb{B}$.
 - Companion article [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the boost generators $K_k=i\vec e_k$ whose $k=1$ case is the wedge modular Hamiltonian.

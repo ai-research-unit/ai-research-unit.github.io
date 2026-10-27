@@ -9,11 +9,11 @@ $$
 =r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}.
 $$
 
-The word is the **N-norm** refinement. The general **H-norm** decomposition is the two-factor pair $\tilde Q=\tilde H\tilde U$, with $\tilde H=(\tilde Q\tilde Q^{*})^{1/2}\ge0$ and $\tilde U=\tilde H^{+}\tilde Q$ a partial isometry on the cone; it is defined for every nonzero element and is read in *The Cartan Pairing, the Amplitude and the Operator-to-State Map*. The four-factor word below exists only where $\langle\tilde Q\rangle_{\natural}\neq0$.
+The word is the **N-norm** refinement. The general **H-norm** decomposition is the two-factor pair $\tilde Q=\tilde H\tilde U$, with $\tilde H=(\tilde Q\tilde Q^{*})^{1/2}\ge0$ and $\tilde U=\tilde H^{+}\tilde Q$ a partial isometry on the cone; it is defined for every nonzero element and is read in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*. The four-factor word below exists only where $\langle\tilde Q\rangle_{\natural}\neq0$.
 
 The four factors carry $1+1+3+3=8$ real parameters, the real dimension of the algebra. The word is a change of coordinates on the complement of the zero-divisor cone, not a dynamical decomposition: it says what an element is at one instant and not how it evolves.
 
-The article is the hub of the polar programme. It fixes the word, brackets it in the three ways the corpus uses, compares the bracketings, and records what each factor does to the remarkable subspaces. The detail now lives in two synthesis articles: *The Cartan Pairing, the Amplitude and the Operator-to-State Map* develops the amplitude–phase reading, and *The Hamilton Pairing: Mass as Modulus and the Complex Angle* develops the invariant and the complex angle. The comparison of the three first factors is stated below, in §*The Three Factors Compared*.
+The article is the hub of the polar programme. It fixes the word, brackets it in the three ways the corpus uses, compares the bracketings, and records what each factor does to the remarkable subspaces. The detail now lives in two synthesis articles: *The General Polar Decomposition, the Amplitude and the Operator-to-State Map* develops the amplitude–phase reading, and *The Hamilton Pairing: Mass as Modulus and the Complex Angle* develops the invariant and the complex angle. The comparison of the three first factors is stated below, in §*The Three Factors Compared*.
 
 Two distinctions organise the article and are worth naming at the start. A **pairing** is a bracketing of the four-factor product into two factors; a **split** is a direct-sum decomposition of the algebra as a vector space. The corpus has three of each, and the two threes are not the same three. §*The Three Splits* separates them.
 
@@ -118,7 +118,7 @@ $$
 \tilde U=\tilde H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}\;}.
 $$
 
-The first factor is the amplitude, the part that changes norms and not phases; the second is the phase, the part that preserves the inner product. The state reading is developed in *The Cartan Pairing, the Amplitude and the Operator-to-State Map*.
+The first factor is the amplitude, the part that changes norms and not phases; the second is the phase, the part that preserves the inner product. The state reading is developed in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*.
 
 The Cartan pairing has the widest construction domain, the quaternion pairing the most direct electromagnetic reading, and the Hamilton pairing the most direct Lorentz-group reading. None is more fundamental than the others, and none adds information to the four-factor word.
 
@@ -300,7 +300,7 @@ The pairings read the same data under different headings, and the readings are d
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the complex axis-angle.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the amplitude–phase split.
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html), for the sector action, the cross-term signs and the preservation table.
-- [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the state defined by an operator and the modular reading.
+- [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the state defined by an operator and the modular reading.
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass shell and the complex angle.
 - [The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers](the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.html), for the Cartan pair as diattenuator and retarder, and the polarizer as its cone case.
 - [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), §*The Polar Word and the Three Pairings*, for the frozen notation and the domains.

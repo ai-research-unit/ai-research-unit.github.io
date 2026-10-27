@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The material sector is the anti-Hermitian subspace $\mathbb{M}_-$. It is the fixed space of the reversal $\flat=-{}^{*}$, the half of the algebra in which the scalar coefficient is imaginary and the three vector coefficients are real. Its elements are the four-vectors of relativistic physics: the four-position, the four-velocity, the four-momentum, the four-wavevector, the four-potential, the four-current and the four-force. The quaternionic norm on the sector is the Minkowski interval; its zero set is the light cone; its unit group is the complement of the cone; its commutator is the Lie algebra of the spatial rotations; and the Lorentz group acts on it by rotor conjugation.
+The material sector is the anti-Hermitian subspace $\mathbb{M}_-$. It is the fixed space of the reversal $\flat=-{}^{*}$, the half of the algebra in which the scalar coefficient is imaginary and the three vector coefficients are real. Its elements are the four-vectors of relativistic physics: the four-position, the four-velocity, the four-momentum, the four-wavevector, the four-potential, the four-current and the four-force. The quaternionic norm on the sector is the Minkowski interval; its zero set is the light cone; its set of units, the material elements that are units of the algebra, is the complement of the cone; its commutator is the compact Lie algebra $\mathfrak{u}(2)$, the spatial rotations together with the central phase; and the Lorentz group acts on it by rotor conjugation.
 
 This article interprets the mathematics of that subspace. It states each result in brief, links the mathematics article that owns it, and gives the physical interpretation with its boundary.
 
@@ -13,7 +13,7 @@ The results used are these.
 | The subspace, its basis and its coordinate blocks | [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
 | The norm, its signature and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The zero divisors and the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| The unit group as the complement of the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| The units of the algebra in the sector, the complement of the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four forms and their restrictions | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | The commutator and the Lie algebra | [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html) |
 | The sandwich and the adjoint action | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
@@ -65,7 +65,7 @@ $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}},
 $$
 
-so an element is $N$-regular exactly when its norm is non-zero. The **unit group** is the $N$-regular set, the complement of the norm-zero set. On that set the element is $N$-degenerate and a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_{t'}^2/c^2$, whose principal symbol vanishes exactly on the null directions.
+so an element is $N$-regular exactly when its norm is non-zero. The **set of units** of the sector is the $N$-regular set, the complement of the norm-zero set. It is not a subgroup: the inverse of a material element is material, but the product of two material elements need not be. On the complement the inverse exists; at a non-zero point of the norm-zero set the element is $N$-degenerate and a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The origin is $N$-degenerate but not a zero divisor. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_{t'}^2/c^2$, whose principal symbol vanishes exactly on the null directions.
 
 ### The Four Forms
 
@@ -167,7 +167,7 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 
 Every entry has the same structure: an imaginary scalar part, which is the time component, and a real vector part, which is the spatial one. Every entry transforms by rotor conjugation, with a boost rotor for a change of velocity and a rotation rotor for a change of spatial frame. The norm is the invariant of the entry: the interval for the position, $-c^2$ for the velocity, $-m^2c^2$ for the momentum, zero for the wavevector of light.
 
-The **mass shell** is the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The **four-potential** is defined up to a gauge transformation $\tilde A\mapsto\tilde A+\partial\chi$, and its norm is not gauge invariant; the field strength built from it is. The **four-current** satisfies the continuity equation $\partial_\mu J^\mu=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The **four-force** $\tilde K_{\mathrm f}$ is orthogonal to the four-velocity when it does not change the rest mass, $\tilde K_{\mathrm f}\cdot\tilde V=0$, and then the norm $\langle\tilde V\rangle_{\natural}=-c^2$ is preserved. A force with a non-zero $\tilde K_{\mathrm f}\cdot\tilde V$ changes the rest mass.
+The **mass shell** is the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$, that is $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. A massive particle lies on a two-sheeted hyperboloid, one sheet for each sign of the energy; a massless particle lies on the cone. The **four-potential** is defined up to a gauge transformation $\tilde A\mapsto\tilde A+\partial\chi$, and its norm is not gauge invariant; the field strength built from it is. The **four-current** satisfies the continuity equation $\partial_\mu J^\mu=0$, which in the sector is the statement that the divergence of the four-vector vanishes. The **four-force** of the table is orthogonal to the four-velocity, $\tilde K_{\mathrm f}\cdot\tilde V=0$, because its power is $\vec f\cdot\vec v$; this is the statement that the three-force $\vec f$ does not change the rest mass, and the norm $\langle\tilde V\rangle_{\natural}=-c^2$ is preserved. A four-force with a component along $\tilde V$, that is, one whose power differs from $\vec f\cdot\vec v$, changes the rest mass.
 
 **The boundary.** The table is a dictionary, not a derivation. The field equations, the Lorentz force law and the Dirac equation are not results of the algebra; the algebra supplies the carrier space and the invariant. The identification of an algebraic element with a physical four-vector is the interpretive step, and it is the same step as in the standard four-vector formalism.
 
@@ -193,13 +193,13 @@ The two eigenvalues are not two particles and not two energies. They are the one
 
 ### The Light Cone Is the Zero-Divisor Cone
 
-The norm-zero set of the sector is exactly its set of zero divisors. A null four-vector has $\langle\tilde Q\rangle_{\natural}=0$, so the inverse formula fails and the element has no inverse; equivalently, there is a non-zero element annihilated by it. The **light cone** of Minkowski space is therefore the **zero-divisor cone** of the biquaternion algebra, a structural identity and not an additional assumption.
+The norm-zero set of the sector is exactly its set of zero divisors away from the origin. A non-zero null four-vector has $\langle\tilde Q\rangle_{\natural}=0$, so the inverse formula fails and the element has no inverse; equivalently, there is a non-zero element annihilated by it. The origin is the apex of the cone and is not a zero divisor. The **light cone** of Minkowski space is therefore the **zero-divisor cone** of the biquaternion algebra, a structural identity and not an additional assumption.
 
-The cone carries three physical readings. First, it is the set of light rays: a null displacement is the displacement of a signal travelling at $c$. Second, it is the characteristic cone of the wave operator: the principal symbol of $\Box$ vanishes exactly on the null directions, so a discontinuity propagates along the cone. Third, it is the boundary of the unit group: on one side of the cone the elements are invertible, on the cone they are not, and the group of units is the complement of the cone.
+The cone carries three physical readings. First, it is the set of light rays: a null displacement is the displacement of a signal travelling at $c$. Second, it is the characteristic cone of the wave operator: the principal symbol of $\Box$ vanishes exactly on the null directions, so a discontinuity propagates along the cone. Third, it is the boundary of the set of units: off the cone the elements are invertible, on the cone they are not, and the set of units of the sector is the complement of the cone.
 
-The cone also separates the two sheets of the future and the past. The sign of the time component selects the sheet, and the Lorentz group preserves the sheet because it preserves the sign of the time component for a timelike or null vector. A null four-potential is a zero divisor, which is the algebraic form of the statement that a radiation field has no rest frame; a null four-current is the current of a massless charge.
+The cone also separates the two sheets of the future and the past. The sign of the time component selects the sheet, and the Lorentz group preserves the sheet because it preserves the sign of the time component for a timelike or null vector. A null four-momentum is a zero divisor, which is the algebraic form of the statement that a massless particle has no rest frame; a null four-current is a charge flow at the speed of light.
 
-The same cone is the boundary of the positive cone of the informational sector. The Bloch ball is the trace-one slice of the future light cone of the norm, so the causal cone of the material sector and the positivity cone of the informational sector have one and the same boundary. This is the structural link between causality and probability in the framework.
+The same cone is the boundary of the positive cone of the informational sector. The Bloch ball is the trace-one slice of the future light cone of the norm, so the causal cone of the material sector and the positive cone of the informational sector have one and the same boundary. This is the structural link between causality and probability in the framework.
 
 **The boundary.** The cone is a set of elements; the propagation of a field along it is a dynamical statement, not an algebraic one. The zero-divisor property is exact; the identification of the zero-divisor cone with the physical light cone is the interpretation.
 
@@ -223,11 +223,11 @@ $$
 
 It has no time component, so the time direction is central, and the bracket is the Lie algebra $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$. The commutator stays in $\mathbb{M}_-$, and the anticommutator goes to $\mathbb{M}_+$; the product of two material elements is Hermitian exactly when their spatial parts are collinear, because the cross product vanishes then and only then.
 
-The bracket is the Lie algebra of the spatial rotations, not of the full Lorentz group. The boost generators do not lie in $\mathbb{M}_-$; they lie in $\mathbb{M}_+$ as the Hermitian elements $i\vec h$, and the full Lorentz algebra is generated by the rotations of $\mathbb{M}_-$ together with the boosts of $\mathbb{M}_+$. The material sector is therefore a Lie algebra for the compact part and not for the full group.
+The bracket is the compact Lie algebra $\mathfrak{u}(2)$, whose traceless part is the Lie algebra of the spatial rotations; it is not the full Lorentz algebra. The boost generators do not lie in $\mathbb{M}_-$; they lie in $\mathbb{M}_+$ as the Hermitian elements $i\vec h$, and the full Lorentz algebra is generated by the rotations of $\mathbb{M}_-$ together with the boosts of $\mathbb{M}_+$. The material sector is therefore a Lie algebra for the compact part and not for the full group.
 
 The square of a material element is in $\mathbb{M}_+$, because $\{\tilde Q,\tilde Q\}=2\tilde Q^2$ and the two arguments lie in one sector. Its scalar part is the negative Euclidean square, $-(q'_t)^2-\lvert\vec q\rvert^2$, not the interval; the interval is the quaternionic norm, which is a different form. The two must not be conflated: the square is an informational element, and its scalar part is a Euclidean weight, not a causal interval.
 
-**The boundary.** The bracket is not the physical composition of four-vectors. It is the Lie algebra of the spatial part, and the time direction is central to it. The failure of the material sector to be closed under the product is the algebraic reason a product of two four-vectors is not generally a four-vector.
+**The boundary.** The bracket is not the physical composition of four-vectors. Its traceless part is the Lie algebra of the spatial part, and the time direction is central to it. The failure of the material sector to be closed under the product is the algebraic reason a product of two four-vectors is not generally a four-vector.
 
 ### The Sector Is Phase-Free and Carries the Metric
 
@@ -273,14 +273,14 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 - The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$.
 - Its norm is the Minkowski interval, of signature $(3,1)$, and its zero set is the light cone.
-- The light cone is the $N$-degenerate set, the zero-divisor cone; on it the elements have no inverse, and it is the characteristic cone of the wave operator.
-- The unit group is the $N$-regular set, the complement of the cone; the inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
+- The light cone is the $N$-degenerate set; its non-zero points are the zero divisors; on it the elements have no inverse; and it is the characteristic cone of the wave operator.
+- The set of units of the sector is the $N$-regular set, the complement of the cone; the inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
 - The four forms are real on the sector: the interval, its negative, the Euclidean square and its negative; the sector carries no scalar area pairing.
 - The seven four-vectors of relativistic physics are the elements of the sector, with the imaginary scalar part as the time component.
 - The two eigenvalues of the four-momentum are $i(E/c\pm\lvert\vec p\rvert)$; they are the Doppler pair, and their product is the norm $-m^2c^2$.
 - The Lorentz group acts by rotor conjugation, with the general rotor $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ a unit-norm biquaternion, the boost factor $\tilde U_{\mathrm b}$ Hermitian positive in $\mathbb{M}_+$, and the rotation factor $\tilde u_{\mathrm r}$ a real quaternion in $\mathbb{H}_{\mathbb{B}}$.
 - The boost factor is positive definite, so the word $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is unique; the opposite order, $\tilde U_{\mathrm L}=\tilde u_{\mathrm r}B_{\mathrm{right}}$, uses a different boost $B_{\mathrm{right}}=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and the same rotation.
-- The commutator is twice the cross product of the spatial parts, with the time direction central; the sector is a Lie algebra for the spatial rotations.
+- The commutator is twice the cross product of the spatial parts, with the time direction central; the sector is a Lie algebra for the compact part, the spatial rotations together with the central phase.
 - The sign of the interval is the product of the signs of the factors, and it is data of the embedding: a change of local complex structure moves it, while the mass is read off the modulus of the norm.
 - The sector is the acted-upon side of the action of the informational sector, and it owns no non-trivial idempotent.
 
