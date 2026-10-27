@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ c
 $$
 \mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+, \qquad \mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm \tilde{Q}\}.
 $$
-The two summands are the **material** and the **informational** subspaces of the foundational articles: $\mathbb{M}_-$ carries the four-vectors, the interval, and the configuration data of a relativistic system, while $\mathbb{M}_+$ carries the states, the effects and the observables — the Hermitian representatives $iA$ of the material elements — of its quantum description. A **material element** is an element of $\mathbb{M}_-$; it is what is observed. This is a kinematic split, and the purpose of this article is to ask a structural question about it: does it define a **superselection structure**?
+A general element splits as $\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A}$ into an **informational part** and a **material part**, the two sectors of the foundational articles: $\mathbb{M}_-$ carries the four-vectors, the interval, and the configuration data of a relativistic system, while $\mathbb{M}_+$ carries the states, the effects and the observables — the Hermitian representatives $iA$ of the material elements — of its quantum description. A **material element** is an element of $\mathbb{M}_-$; it is what is observed. This is a kinematic split, and the purpose of this article is to ask a structural question about it: does it define a **superselection structure**?
 
 The question is sharp because the two things that a superselection structure is expected to supply are both present in a weak form and both absent in the strong form. Present: the split is the eigenspace decomposition of an involutive charge, no operation of the framework of the conjugation type maps one summand into the other, and the relative phase between the two summands is unobservable. Absent: the framework is central simple, its only central idempotents are $0$ and $e_t$, and it therefore admits no decomposition into non-interfering branches of the standard algebraic kind. The thesis of this article is that both statements are exact, that they do not conflict, and that the correct interpretation of the split is as a **superselection structure of a real form** — a grading carried by the algebra's antilinear real structure $\flat = -{}^{*}$ rather than by its centre.
 
@@ -58,8 +58,8 @@ $$
 $$
 Both summands are four-real-dimensional. A general Hermitian element and a general anti-Hermitian element are
 $$
-\tilde{H} = h_t\,e_t + i\vec h, \qquad \vec h = h_x\vec e_x+h_y\vec e_y+h_z\vec e_z, \qquad
-\tilde{Q} = i x_t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \qquad h_t,h_x,h_y,h_z,x_t,x,y,z\in\mathbb{R},
+\tilde Q_{\mathrm H}=\tilde{H} = h_t\,e_t + i\vec h, \qquad \vec h = h_x\vec e_x+h_y\vec e_y+h_z\vec e_z, \qquad
+\tilde Q_{\mathrm A} = i x_t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \qquad h_t,h_x,h_y,h_z,x_t,x,y,z\in\mathbb{R},
 $$
 so that $\mathbb{M}_+$ is the span of $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ and $\mathbb{M}_-$ is the span of $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$. The real structure
 $$
@@ -186,26 +186,26 @@ so a material element carries an informational element to a material one. The tw
 
 The kinematic form of the superselection statement requires a third check beyond sector preservation: that the relative phase between the sectors cannot be observed. The check succeeds, and the reason is the identity of the algebra's complex structure with the sector exchange.
 
-**The relative phase is central.** Let a general element be decomposed as $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$. The only way to give the two summands a relative phase in this algebra is to multiply the sum by a central phase,
+**The relative phase is central.** Let a general element be decomposed as $\tilde{Q} = \tilde{Q}_{\mathrm H} + \tilde{Q}_{\mathrm A}$. The only way to give the two summands a relative phase in this algebra is to multiply the sum by a central phase,
 $$
-\tilde{Q}(\theta) = \exp(i\theta)\bigl(\tilde{Q}_+ + \tilde{Q}_-\bigr)
-= \bigl(\cos\theta\,\tilde{Q}_+ + \sin\theta\, i\tilde{Q}_-\bigr)
-+ \bigl(\cos\theta\,\tilde{Q}_- + \sin\theta\, i\tilde{Q}_+\bigr),
+\tilde{Q}(\theta) = \exp(i\theta)\bigl(\tilde{Q}_{\mathrm H} + \tilde{Q}_{\mathrm A}\bigr)
+= \bigl(\cos\theta\,\tilde{Q}_{\mathrm H} + \sin\theta\, i\tilde{Q}_{\mathrm A}\bigr)
++ \bigl(\cos\theta\,\tilde{Q}_{\mathrm A} + \sin\theta\, i\tilde{Q}_{\mathrm H}\bigr),
 $$
-using $\exp(i\theta) = \cos\theta\,e_t + \sin\theta\,(ie_t)$ and $i\tilde{Q}_\pm\in\mathbb{M}_\mp$. The central phase does mix the sectors — it is that mixing — but it is an element of the centre, and on the defining module it acts as the scalar $\exp(i\theta)$:
+using $\exp(i\theta) = \cos\theta\,e_t + \sin\theta\,(ie_t)$ and $i\tilde{Q}_{\mathrm H}\in\mathbb{M}_-$ and $i\tilde{Q}_{\mathrm A}\in\mathbb{M}_+$. The central phase does mix the sectors — it is that mixing — but it is an element of the centre, and on the defining module it acts as the scalar $\exp(i\theta)$:
 $$
 \rho_S\bigl(\exp(i\theta)\tilde{Q}\bigr)\,|u\rangle = \exp(i\theta)\,\rho_S(\tilde{Q})\,|u\rangle .
 $$
 Here $\rho_S$ is the action on the defining module and $|u\rangle$ a module vector.
 It therefore fixes every ray of the state space. No state, and no expectation value of any observable in any state, distinguishes $\tilde{Q}$ from $\exp(i\theta)\tilde{Q}$: the relative phase generated by the sector exchange is a gauge redundancy. The forbidden coherence is unobservable not because the algebra is too small to contain the exchange, but because the exchange is central and the centre acts trivially on rays.
 
-**The pairing separates the sectors.** The same conclusion can be read off the Born pairing, which is the operational content of the framework. For a state $\tilde{Ϛ}\in\mathbb{M}_+$ and an element $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$,
+**The pairing separates the sectors.** The same conclusion can be read off the Born pairing, which is the operational content of the framework. For a state $\tilde{Ϛ}\in\mathbb{M}_+$ and an element $\tilde{Q} = \tilde{Q}_{\mathrm H} + \tilde{Q}_{\mathrm A}$,
 $$
-\mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_+\bigr) + \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_-\bigr),
+\mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_{\mathrm H}\bigr) + \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_{\mathrm A}\bigr),
 $$
-and the two terms have definite reality types. Because $\tilde{Ϛ}$ and $\tilde{Q}_+$ are Hermitian, $\tilde{Ϛ}\tilde{Q}_+$ has a real scalar part, so $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_+^{*})\in\mathbb{R}$. Because $\tilde{Ϛ}$ is Hermitian and $\tilde{Q}_-$ is anti-Hermitian, $\tilde{Ϛ}\tilde{Q}_-$ is anti-Hermitian, so its scalar part is purely imaginary and $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_-^{*})\in i\mathbb{R}$. The observable real part of the pairing therefore involves the informational component alone:
+and the two terms have definite reality types. Because $\tilde{Ϛ}$ and $\tilde{Q}_{\mathrm H}$ are Hermitian, $\tilde{Ϛ}\tilde{Q}_{\mathrm H}$ has a real scalar part, so $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_{\mathrm H}^{*})\in\mathbb{R}$. Because $\tilde{Ϛ}$ is Hermitian and $\tilde{Q}_{\mathrm A}$ is anti-Hermitian, $\tilde{Ϛ}\tilde{Q}_{\mathrm A}$ is anti-Hermitian, so its scalar part is purely imaginary and $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_{\mathrm A}^{*})\in i\mathbb{R}$. The observable real part of the pairing therefore involves the informational component alone:
 $$
-\boxed{\;\mathrm{Re}\,\mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\,\mathrm{Re}_{\mathbb{B}}\,\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_+\bigr)\;}.
+\boxed{\;\mathrm{Re}\,\mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\,\mathrm{Re}_{\mathbb{B}}\,\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_{\mathrm H}\bigr)\;}.
 $$
 The material component contributes only to the imaginary part, which no Hermitian observable reads out. The material component is invisible to every expectation value, exactly as a superselection charge is invisible to every observable that commutes with it. This is a statement about the pairing and not about the physical importance of the material sector: the material sector enters the theory through invariants — the interval $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the four-velocity norm, the mass shell — and not through expectation values.
 
@@ -256,7 +256,7 @@ with even part $\mathbb{M}_-^{0}$ and odd part $\mathbb{M}_+^{0}$.
 
 The material-informational split is a superselection structure of a definite and restricted kind. It is worth stating the interpretation in one place.
 
-**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
+**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R}=\tilde Q_{\mathrm A}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
 
 Each observable is the representative $iA$ of a **material element** $A\in\mathbb{M}_-$; the material element is what is observed, and the Hermitian representative is its reading operator.
 
@@ -295,8 +295,8 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | Hermitian decomposition |
 | $P_\pm = \tfrac12(\mathrm{id}\pm{}^{*})$ | Real-linear sector projections (not in $\mathbb{B}$) |
 | $Z(\mathbb{B}) = \mathbb{C}e_t$ | Centre; $\mathbb{R}e_t$ informational, $\mathbb{R}(ie_t)$ material |
-| $\tilde{H} = h_te_t + i\vec h$ | General Hermitian element |
-| $\tilde{Q} = ix_te_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | General anti-Hermitian element |
+| $\tilde Q_{\mathrm H} = h_te_t + i\vec h$ | General Hermitian element, the informational part |
+| $\tilde Q_{\mathrm A} = ix_te_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | General anti-Hermitian element, the material part |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Congruence (physical operation) |
 | $\mathbb{M}_\pm^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0}$ |

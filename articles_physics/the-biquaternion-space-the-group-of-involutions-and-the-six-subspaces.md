@@ -51,12 +51,12 @@ with $c$ the speed of light in the medium, $c=1/\sqrt{\epsilon\mu}$, and $c_0$ i
 The two ends of the table are the two coordinates of the framework,
 
 $$
-\tilde R=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z,\qquad \tilde Q=c t\,e_t+i\bigl(x'\vec e_x+y'\vec e_y+z'\vec e_z\bigr),
+\tilde Q_{\mathrm A}=\tilde R=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z,\qquad \tilde Q_{\mathrm H}=c t\,e_t+i\bigl(x'\vec e_x+y'\vec e_y+z'\vec e_z\bigr),
 $$
 
-the **material coordinate**, with an imaginary time and a real space, and the **informational coordinate**, with a real time and an imaginary space.
+the **material coordinate** $\tilde Q_{\mathrm A}$, with an imaginary time and a real space, and the **informational coordinate** $\tilde Q_{\mathrm H}$, with a real time and an imaginary space.
 
-**One element, one point, one label.** Every coefficient contributes exactly one real number to each writing, so one element of $\mathbb{B}$ carries a material four-coordinate and an informational four-coordinate at the same time. A material element is a spacetime event, $i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$, and the four informational parameters it also carries are its internal label; an informational element is a point $c t\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$ of the state side, and the four material parameters it also carries are its spacetime label. No coefficient is idle, and this is why one element can serve both as a four-vector and as a state.
+**One element, one point, one label.** Every coefficient contributes exactly one real number to each writing, so one element of $\mathbb{B}$ carries a material four-coordinate and an informational four-coordinate at the same time. The element splits as $\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A}$, and the two coordinates are its parts. Read on its material part, the element is a spacetime event, $\tilde Q_{\mathrm A}=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$, and its informational part $\tilde Q_{\mathrm H}$ supplies the four parameters of its **internal label**; read on its informational part, it is a point of the state side, $\tilde Q_{\mathrm H}=c t\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$, and its material part $\tilde Q_{\mathrm A}$ supplies the four parameters of its **spacetime label**. No coefficient is idle, and this is why one element can serve both as a four-vector and as a state.
 
 **Why the material time is imaginary.** The factor $i$ in $i c t'$ is what makes the temporal displacement count with the opposite sign to the spatial ones, because $i^2=-1$. With $c t'$ real in the time slot the material sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the complex structure on the time coordinate, not an independent axiom.
 
@@ -308,6 +308,7 @@ The article interprets the linear structure, the involutions and the real forms.
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ | the centre and the vector subspace |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
+| $\tilde Q_{\mathrm H}$, $\tilde Q_{\mathrm A}$ | the informational and material parts of an element, $\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A}$ |
 | $A_1,A_2$ | the scalar blocks $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ |
 | $B_1,B_2$ | the real and imaginary vector blocks |
 | $c t$, $i c t'$ | the informational and material times |

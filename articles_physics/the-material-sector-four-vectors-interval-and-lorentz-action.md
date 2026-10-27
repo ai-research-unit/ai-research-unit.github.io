@@ -69,7 +69,7 @@ so an element is $N$-regular exactly when its norm is non-zero. The **unit group
 
 ### The Four Forms
 
-The four forms of the algebra are all real on $\mathbb{M}_-$. Writing $\tilde Q_1=i q'_t e_t+\vec q$ and $\tilde Q_2=i r'_t e_t+\vec r$, they read
+The four forms of the algebra are all real on $\mathbb{M}_-$. Every element of the sector is its own material part, $\tilde Q=\tilde Q_{\mathrm A}$, so writing $\tilde Q_1=i q'_t e_t+\vec q$ and $\tilde Q_2=i r'_t e_t+\vec r$, they read
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle=-(q'_t r'_t)-(\vec q,\vec r),
@@ -157,7 +157,7 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 
 | Four-vector | Element | Components | Norm |
 | --- | --- | --- | --- |
-| four-position | $\tilde R=i c t'\,e_t+\vec x$ | $(ct',x,y,z)$ | $s^2=-c^2{t'}^2+\lvert\vec x\rvert^2$ |
+| four-position | $\tilde R=\tilde Q_{\mathrm A}=i c t'\,e_t+\vec x$ | $(ct',x,y,z)$ | $s^2=-c^2{t'}^2+\lvert\vec x\rvert^2$ |
 | four-velocity | $\tilde V=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
 | four-momentum | $\tilde P=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
 | four-wavevector | $\tilde K=i\frac{\omega}{c}\,e_t+\vec k$ | $(\omega/c,\vec k)$ | $0$ for light |
@@ -289,7 +289,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{M}_-$ | the anti-Hermitian subspace, the material sector |
-| $\tilde Q=i q'_t e_t+\vec q$ | a material element, with $q'_t=c t'$ |
+| $\tilde Q=\tilde Q_{\mathrm A}=i q'_t e_t+\vec q$ | a material element, with $q'_t=c t'$; it is its own material part |
 | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{M}_-$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse, defined off the cone |

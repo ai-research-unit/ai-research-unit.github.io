@@ -82,7 +82,7 @@ and it is the quaternionic norm of the algebra, the determinant of the $2\times2
 
 ## The Forms on the Two Sectors
 
-The physical dictionary places the material element $\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ in the anti-Hermitian sector $\mathbb{M}_-$ and the informational element in the Hermitian sector $\mathbb{M}_+$. The restrictions of the four forms are the algebra's own statement of which form belongs to which sector.
+The physical dictionary places the material element $\tilde R=\tilde Q_{\mathrm A}=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ in the anti-Hermitian sector $\mathbb{M}_-$ and the informational element $\tilde Q_{\mathrm H}$ in the Hermitian sector $\mathbb{M}_+$. The restrictions of the four forms are the algebra's own statement of which form belongs to which sector.
 
 | Form | Signature on $\mathbb{M}_-$, material | Signature on $\mathbb{M}_+$, informational |
 | --- | --- | --- |
@@ -250,6 +250,7 @@ Only the $N$ cut is the invertibility partition. A degenerate biquaternion is no
 | $\lVert\tilde Q\rVert_E$ | the Euclidean norm, the square root of $\langle\tilde Q\rangle_{*}$ |
 | $\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\sum_kQ_k\sigma_k$ | the $2\times2$ representation whose determinant is $\langle\tilde Q\rangle_{\natural}$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
+| $\tilde Q_{\mathrm A}$, $\tilde Q_{\mathrm H}$ | the material and informational parts, $\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A}$ |
 
 ## Further Reading
 

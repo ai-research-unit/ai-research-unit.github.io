@@ -82,7 +82,7 @@ $$
 
 **Proposition.** Every element decomposes uniquely as the sum of a Hermitian and an anti-Hermitian part,
 $$
-\breve Q=Q_{\mathrm H}+Q_{\mathrm A},\qquad Q_{\mathrm H}=\tfrac12(\breve Q+\breve Q^{*}),\quad Q_{\mathrm A}=\tfrac12(\breve Q-\breve Q^{*}),
+\breve Q=P_+\breve Q+P_-\breve Q,
 $$
 and the two parts are the projections of §*The Fixed and Anti-Fixed Space of an Involution* for $\sigma={}^{*}$.
 

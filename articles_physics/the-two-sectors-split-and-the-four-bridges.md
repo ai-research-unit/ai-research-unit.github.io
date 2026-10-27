@@ -32,8 +32,9 @@ The article is a catalogue in the genre of the subspace and obstruction catalogu
 Every biquaternion decomposes uniquely into a Hermitian and an anti-Hermitian part:
 
 $$
-\tilde Q=\tfrac12(\tilde Q+\tilde Q^{*})+\tfrac12(\tilde Q-\tilde Q^{*}),\qquad
-\tfrac12(\tilde Q\pm\tilde Q^{*})\in\mathbb{M}_\pm .
+\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A},\qquad
+\tilde Q_{\mathrm H}=\tfrac12(\tilde Q+\tilde Q^{*})\in\mathbb{M}_+,\qquad
+\tilde Q_{\mathrm A}=\tfrac12(\tilde Q-\tilde Q^{*})\in\mathbb{M}_- .
 $$
 
 With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tilde Q^{*}=\tilde Q$ reads $z_0=\bar z_0$ and $z_k=-\bar z_k$: a real scalar and three imaginary vector coefficients. The informational sector therefore has the real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and the material sector, with the opposite signs, has $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Each is four-real-dimensional.
@@ -91,7 +92,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}\;}.
 $$
 
-For a material element $\tilde R=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ the value is
+For a material element $\tilde R=\tilde Q_{\mathrm A}=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ the value is
 
 $$
 \langle\tilde R\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2,
@@ -109,7 +110,7 @@ is a map $\mathbb{M}_-\to\mathbb{M}_+$ with image the real scalar line $\mathbb{
 
 **Boundary.** The map is not an evolution, and the bare product of two material elements does not share its property: unless the spatial parts are parallel, the product carries both a Hermitian part and a material rotation part. The norm square is the coupling; the product is not. The same formula applied to an informational element returns $h_t^2-\lvert\vec h\rvert^2$, which is the determinant of the matrix of the state and not a probability. The map lands in the informational sector because its value is a scalar, not because every value is a weight.
 
-**Remark (preparation).** The same map run backwards prepares a state. For a material element $\tilde R$, the element $\tilde H=-\tfrac{i}{2}\tilde R$ is Hermitian, with $\operatorname{Tr}\tilde H=ct'$ and $\langle\tilde H\rangle_{\natural}=-\tfrac14\langle\tilde R\rangle_{\natural}$. On the trace-one slice of the future cone it is a state of the Bloch ball. The map is a dictionary of preparation, not a dynamics, and it is a second instance of the map kind rather than a fifth kind.
+**Remark (preparation).** The same map run backwards prepares a state. For a material element $\tilde R=\tilde Q_{\mathrm A}$, the element $\tilde Q_{\mathrm H}=-\tfrac{i}{2}\tilde Q_{\mathrm A}$ is Hermitian, with $\operatorname{Tr}\tilde Q_{\mathrm H}=ct'$ and $\langle\tilde Q_{\mathrm H}\rangle_{\natural}=-\tfrac14\langle\tilde Q_{\mathrm A}\rangle_{\natural}$. On the trace-one slice of the future cone it is a state of the Bloch ball. The map is a dictionary of preparation, not a dynamics, and it is a second instance of the map kind rather than a fifth kind.
 
 ### A Bijection: the Central Imaginary
 
@@ -224,8 +225,8 @@ The algebra splits into the material and the informational sectors, the eigenspa
 | $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | The material ($-$) and informational ($+$) sectors |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat=-{}^{*}$ | Quaternion conjugation, coefficient conjugation and the real structure |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The biquaternion norm |
-| $\tilde R=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ | A material element |
-| $\tilde H=h_te_t+i\vec h$ | An informational element |
+| $\tilde R=\tilde Q_{\mathrm A}=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ | A material element, the anti-Hermitian part |
+| $\tilde H=\tilde Q_{\mathrm H}=h_te_t+i\vec h$ | An informational element, the Hermitian part |
 | $\operatorname{Sc}$ | The scalar part of a biquaternion |
 
 ## Further Reading

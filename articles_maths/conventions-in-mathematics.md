@@ -60,7 +60,7 @@ $$
 
 with $\mu$ the label and $e_\mu$ the unit it carries — the arrowless $e_t$ at $\mu = t$ and the arrowed $\vec e_\mu$ at $\mu = x, y, z$. The same rule reads a quaternion, $\tilde q = \sum_{\mu} q_\mu e_\mu$, and a four-vector of the algebra, and the primed coefficients follow the same labels, $Q_\mu = q_\mu + iq'_\mu$: the label marks the direction and the prime marks the slot that carries the $i$.
 
-**A complex element carries a majuscule**, $Q$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $Q = q + iq'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers; a second and a third complex element are $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$. **The four quaternionic elements carry a tilde**: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. The reduced biquaternion element carries **no tilde but the breve**: its algebra has no quaternionic factor, being the commutative two-parameter system over the complex scalars, and it is written $\breve Q = Q_{\blacktriangle} + jQ_{\blacktriangledown}$, the ascending triangle for the coefficient of $1$ and the descending triangle for the coefficient of $j$, with the two complex coordinates $Q_{\blacktriangle} = q_{\blacktriangle} + iq'_{\blacktriangle}$ and $Q_{\blacktriangledown} = q_{\blacktriangledown} + iq'_{\blacktriangledown}$, the second unit $j$ being the hyperbolic unit of the corpus, $j^{2} = +1$ and $ji = ij$, so that the basis is $1, i, j, ij$. And **the arithmetic systems and the reals carry a letter that is theirs alone**: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $q, q_1, q_2$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations. Finally, **the element is a scalar part plus, where the layer has one, a vector part**: the scalar part is carried by the unit — $1$ in the commutative two-parameter systems, $e_t$ in the quaternionic ones — and the vector part, in the quaternionic layers alone, by the remaining basis directions, carrying the arrow, $\vec q$ or $\vec Q$, so that $\tilde Q = Q_te_t + \vec Q$ is written in the coefficients according to the system; in the commutative two-parameter systems the second term is an imaginary, hyperbolic or dual part and not a vector part; in the quaternionic layers the two are the fixed and the anti-fixed spaces of the intrinsic conjugate, and the arithmetic systems, which are not written as linear combinations, have no vector part. **A pure element carries the arrow.** A pure element is one with no scalar part, a vector of its layer, and it is written with the arrow of the vector part: $\vec q$ and $\vec Q$ are the pure elements of the quaternion and of the biquaternion layers, standing by themselves (§*Pure Elements and their Coefficients*). The arrow names the vector part of a named element, $\vec Q$ in $\tilde Q = Q_te_t + \vec Q$, and it names the same object when the element is read on its own; the arrow and the tilde are never stacked.
+**A complex element carries a majuscule**, $Q$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $Q = q + iq'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers; a second and a third complex element are $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$. **The four quaternionic elements carry a tilde**: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. The reduced biquaternion element carries **no tilde but the breve**: its algebra has no quaternionic factor, being the commutative two-parameter system over the complex scalars, and it is written $\breve Q = Q_{\blacktriangle} + jQ_{\blacktriangledown}$, the ascending triangle for the coefficient of $1$ and the descending triangle for the coefficient of $j$, with the two complex coordinates $Q_{\blacktriangle} = q_{\blacktriangle} + iq'_{\blacktriangle}$ and $Q_{\blacktriangledown} = q_{\blacktriangledown} + iq'_{\blacktriangledown}$, the second unit $j$ being the hyperbolic unit of the corpus, $j^{2} = +1$ and $ji = ij$, so that the basis is $1, i, j, ij$. And **the arithmetic systems and the reals carry a letter that is theirs alone**: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $q, q_1, q_2$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations. Finally, **the element is a scalar part plus, where the layer has one, a vector part**: the scalar part is carried by the unit — $1$ in the commutative two-parameter systems, $e_t$ in the quaternionic ones — and the vector part, in the quaternionic layers alone, by the remaining basis directions, carrying the arrow, $\vec q$ or $\vec Q$, so that $\tilde Q = Q_te_t + \vec Q$ is written in the coefficients according to the system; in the commutative two-parameter systems the second term is an imaginary, hyperbolic or dual part and not a vector part; in the quaternionic layers the two are the fixed and the anti-fixed spaces of the intrinsic conjugate, and the arithmetic systems, which are not written as linear combinations, have no vector part. **A pure element carries the arrow.** A pure element is one with no scalar part, a vector of its layer, and it is written with the arrow of the vector part: $\vec q$ and $\vec Q$ are the pure elements of the quaternion and of the biquaternion layers, standing by themselves (§*The Centre and the Vector Subspace*). The arrow names the vector part of a named element, $\vec Q$ in $\tilde Q = Q_te_t + \vec Q$, and it names the same object when the element is read on its own; the arrow and the tilde are never stacked.
 
 For the biquaternions, whose basis is $e_t, \vec e_x, \vec e_y, \vec e_z$ with $e_t = 1$ the unit,
 
@@ -82,7 +82,32 @@ Where the constructions that share a glyph must be told apart — the complex fr
 
 **A logarithm carries the glyph of its element and the subscript $\log$.** The logarithm is not a new kind of object: it is a solution of the exponential equation in the same algebra, so it carries the glyph of that algebra and the subscript, and the definition reads $\exp(Q_{\log}) = Q$. The glyph is $Q_{\log}$ for a complex, split-complex or dual element, $\tilde q_{\log}$ for a quaternion or split-quaternion, $\tilde Q_{\log}$ for a biquaternion or split-biquaternion, and $\breve Q_{\log}$ for a reduced biquaternion. The subscript is a word, not a letter, so it competes neither with the direction labels, $Q_t$ and $Q_x$, nor with the counts, $Q_1$; a numbered element keeps its number in front of the subscript, $\tilde Q_{1\log}$ and $\breve Q_{2\log}$, as its coefficients keep theirs. The subscript is dropped when the logarithm is written as an operator, $\log Q$ or $\operatorname{Log}Q$, because an operator carries no subscript. **The coordinates of a logarithm follow the coefficient rule**: the element $Q_{\log}=q_{\log}+iq'_{\log}$ has real part $q_{\log}$ and imaginary part $q'_{\log}$, with $j$ in place of $i$ in the split-complex case. The prime marks the imaginary coordinate and nothing else. The logarithm of a real number is the ordinary real logarithm and takes no glyph of an algebra, so it is written $\log q$; the glyph $q_{\log}$ is the real coordinate of $Q_{\log}$, not the logarithm of $q$.
 
-## Pure Elements and their Coefficients
+## The Remarkable Subspaces of Biquaternions
+
+The eight real parameters of a general element group into **remarkable subspaces**: the centre, the vector subspace, the quaternion and antiquaternion halves, and the Hermitian and anti-Hermitian halves. Each is cut out by a conjugation:
+
+| Subspace | Defining condition | Dimension over $\mathbb{R}$ |
+|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$, the centre | $\tilde{Q}^{\natural} = \tilde{Q}$ | $2$ |
+| $\mathrm{Vect}(\mathbb{B})$, the vector subspace | $\tilde{Q}^{\natural} = -\tilde{Q}$ | $6$ |
+| $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | $\bar{\tilde{Q}} = \tilde{Q}$ | $4$ |
+| $i\mathbb{H}_{\mathbb{B}}$, the antiquaternion subspace | $\bar{\tilde{Q}} = -\tilde{Q}$ | $4$ |
+| $\mathbb{M}_+$, the Hermitian subspace | $\tilde{Q}^{*} = \tilde{Q}$ | $4$ |
+| $\mathbb{M}_-$, the anti-Hermitian subspace | $\tilde{Q}^{\flat} = \tilde{Q}$ | $4$ |
+
+The four marks are those of §*The Conjugations*. The first pair is the split of the scalar direction $e_t$ from the three vector directions; the second pair, the split by the coefficient conjugation; the third, the split by the star.
+
+### The Centre and the Vector Subspace
+
+The algebra is the direct sum
+
+$$
+\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}),
+$$
+
+the centre with the traceless part.
+
+**The centre and the vector subspace carry a glyph each.** The centre is written with the tilde-free coefficient of $e_t$, $Q_te_t$, a complex scalar times the unit; the vector subspace is written $\vec Q$, the pure element, with the arrow and without the tilde.
 
 A **pure element** is an element with no scalar part. The notion belongs to the four quaternionic layers alone. In these layers the scalar part is carried by $e_t$, so a pure element is one whose $e_t$-coefficient vanishes and which is carried by the three vector directions alone. The pure elements are exactly the elements of the **vector subspace** $\mathrm{Vect}$, the anti-fixed space of the intrinsic conjugate,
 
@@ -110,6 +135,42 @@ Three rules are read off the table. **A pure element is the vector part of an el
 **The arrow has priority over the tilde.** Where an element is pure, the arrow is written whatever else the element is, and the tilde of a special glyph is dropped: a pure root is $\vec\Xi$ and a pure nilpotent is $\vec\Upsilon$ (or $\vec\xi$ and $\vec\nu$ in the quaternion layers), never $\tilde\Xi$ or $\tilde\Upsilon$. The tilde belongs to the general element, read with its scalar part beside its vector part, and a pure element has no scalar part to be read against; purity therefore decides the mark. The special conventions that write the root $\tilde\Xi$ or the nilpotent $\tilde\Upsilon$ name the **general** element of that class, which need not be pure, and an element that is at once special and pure is written with the arrow and only the arrow.
 
 A pure glyph is given from the quaternions to the biquaternions only. The layers with no quaternionic factor have no vector subspace, hence no pure element and no arrow: their second term is an imaginary, hyperbolic, dual or $j$-part carried by one coefficient — real in $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$, complex in $\mathbb{B}_{\mathrm{r}}$ — and written $Q = q + iq'$, with $j$ or $\varepsilon$ in place of $i$, in the three two-dimensional layers.
+
+### The Quaternion and Antiquaternion Subspaces
+
+The algebra is the direct sum
+
+$$
+\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}},
+$$
+
+the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, whose elements carry real coefficients throughout, with the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$, whose elements carry purely imaginary ones: the two are the **real and imaginary halves** of the algebra. The prime splits the element into the two parts,
+
+$$
+\tilde Q = \tilde q + i\tilde q',\qquad
+\tilde q = q_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z \in \mathbb{H}_{\mathbb{B}},\qquad
+\tilde q' = q'_t\,e_t + q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z \in \mathbb{H}_{\mathbb{B}}.
+$$
+
+The prime marks the second glyph and the split is uniform: $\tilde q$ takes the unprimed parameters and $\tilde q'$ the primed ones.
+
+### The Hermitian and Anti-Hermitian Subspaces
+
+The algebra is the direct sum
+
+$$
+\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-,
+$$
+
+the Hermitian subspace with the anti-Hermitian one. The element splits across the coefficient slots,
+
+$$
+\tilde Q = \tilde Q_{\mathrm H} + \tilde Q_{\mathrm A},\qquad
+\tilde Q_{\mathrm H} = q_t\,e_t + i\bigl(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z\bigr),\qquad
+\tilde Q_{\mathrm A} = iq'_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z.
+$$
+
+$\tilde Q_{\mathrm H}$ takes the real scalar slot with the imaginary vector slots, and $\tilde Q_{\mathrm A}$ the imaginary scalar slot with the real vector slots. The two letters label the parts of one element and not two fields, so no label passes into the coefficients.
 
 ## The Conjugations
 
@@ -239,9 +300,9 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 | $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
 | $\tilde\nu$ | A nilpotent of the quaternion or split-quaternion layer |
 | $\tilde\Upsilon$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates |
-| $\vec\Upsilon$, $\vec\nu$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of §*Pure Elements and their Coefficients* |
+| $\vec\Upsilon$, $\vec\nu$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of §*The Centre and the Vector Subspace* |
 
-**The standard pair carries the arrow, not the tilde.** The two off-diagonal Peirce units are pure, $\vec\Upsilon_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec\Upsilon_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by §*Pure Elements and their Coefficients* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec\Upsilon_1, \vec\Upsilon_2$ and never $\tilde\Upsilon_1, \tilde\Upsilon_2$. The tilde is kept for the general nilpotent $\tilde\Upsilon$, which may carry a scalar part and is not pure.
+**The standard pair carries the arrow, not the tilde.** The two off-diagonal Peirce units are pure, $\vec\Upsilon_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec\Upsilon_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by §*The Centre and the Vector Subspace* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec\Upsilon_1, \vec\Upsilon_2$ and never $\tilde\Upsilon_1, \tilde\Upsilon_2$. The tilde is kept for the general nilpotent $\tilde\Upsilon$, which may carry a scalar part and is not pure.
 
 ## The Twelve Products and Their Names
 
@@ -976,7 +1037,7 @@ The conventions below are those used throughout the corpus.
 | $\mathbb{H}_{\mathbb{D}}$ | The split-biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
 | Lower case, upper case | The scalar sector is the reals, or larger than the reals |
 | Tilde | The presence of the quaternionic factor |
-| Arrow | The vector part of a named element and a pure element standing by itself — $\vec q$ or $\vec Q$ (§*Pure Elements and their Coefficients*) |
+| Arrow | The vector part of a named element and a pure element standing by itself — $\vec q$ or $\vec Q$ (§*The Centre and the Vector Subspace*) |
 | $\alpha, \beta$; $q, q_1, q_2$ | The generic elements of the Booleans, and of the rationals and the reals |
 | $r/s$ | A rational written as a fraction, with numerator $r \in \mathbb{Z}$ and denominator $s \in \mathbb{N}_{\geq 1}$; in lowest terms $\gcd(r,s) = 1$; the letter $q$ is never a numerator or a denominator |
 | $n$, $m$ | The generic elements of the naturals and the integers, and the signature indices, the counts of positive and negative directions of a real form, as in $\mathrm{Cl}_{n,m}$ and $O(n,m)$ |
@@ -987,6 +1048,10 @@ The conventions below are those used throughout the corpus.
 | $Q_{\log}$ | A logarithm of $Q$, a solution of $\exp(Q_{\log}) = Q$: $Q_{\log}$ in the complex, split-complex and dual algebras, $\tilde q_{\log}$ in the quaternion and split-quaternion layers, $\tilde Q_{\log}$ in the biquaternion and split-biquaternion layers, $\breve Q_{\log}$ in the reduced biquaternion algebra |
 | $\vec q$ | A pure element of the quaternion or split-quaternion layer, an element with no scalar part |
 | $\vec Q$ | A pure element of the biquaternion or split-biquaternion layer |
+| $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ | The centre and the vector subspace of the biquaternion algebra, the fixed and anti-fixed spaces of the intrinsic conjugate (§*The Remarkable Subspaces of Biquaternions*) |
+| $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | The quaternion and antiquaternion subspaces, the real and imaginary halves of the biquaternion algebra |
+| $\mathbb{M}_+$, $\mathbb{M}_-$ | The Hermitian and anti-Hermitian subspaces, the fixed and anti-fixed spaces of the star |
+| $\tilde Q_{\mathrm H}$, $\tilde Q_{\mathrm A}$ | The Hermitian and anti-Hermitian parts of an element, $\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A}$ (§*The Hermitian and Anti-Hermitian Subspaces*) |
 | $G$; $R$; $k$, $F$; $V$; $M$; $A$ | A group; a ring; a field; a vector space; a module; an algebra |
 | $\mathrm{G}, \mathrm{H}, \mathrm{SL}_n$ | Lie algebras |
 | $\mathrm{M}, \mathrm{P}$ | Ideals and prime ideals |
