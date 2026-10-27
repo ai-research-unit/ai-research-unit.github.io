@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Eigenbasis — Biquaternion Universe</title>
+  <title>The Eigenbasis of a Spectrally Regular Biquaternion — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-eigenbasis"><strong>The Eigenbasis</strong></h1>
+        <h1 id="the-eigenbasis-of-a-spectrally-regular-biquaternion"><strong>The Eigenbasis of a Spectrally Regular Biquaternion</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists, as a basis attached to the element, exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article <em>The Spectrum</em> proves that such a basis exists. This article constructs it, proves that the normalised Peirce representative is unique, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and chirality in it.</p>
 <p><strong>Place among the Peirce decompositions.</strong> This article is the regular particular case of <em>The Peirce Decomposition</em>. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is the spectral pair: it exists exactly when $B^2\neq0$, it commutes with $\tilde Q$, and the Peirce matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$. Each couple is therefore a pair of eigenvectors, and the Peirce basis is the eigenbasis. The general theory leaves a reciprocal $\mathbb{C}^\times$ of mixed bases; the normalisation below fixes it.</p>
@@ -220,7 +220,7 @@ $$</p>
 <p>At least one of the three axes satisfies $Q_\mu^2\neq B^2$ when $B^2\neq0$, because otherwise $Q_x^2=Q_y^2=Q_z^2=B^2$ would give $B^2=3B^2$.</p>
 <p>The two formulas are the same construction with two different auxiliary vectors. On their common domain they differ by the reciprocal rescaling of the theorem, because both pairs satisfy the same product conditions.</p>
 <p><strong>Remark (the normalisation used in this article).</strong> The convention is: use the symmetric formula when $\Sigma^2\neq3B^2$; otherwise use the axis chart of the first $\mu\in\{x,y,z\}$, in that order, with $Q_\mu^2\neq B^2$; and fix the square roots at one representative of each direction $[\vec Q]$, extending along the fibre by $B(a\tilde Q+b e_t)=aB(\tilde Q)$ and $\sqrt{a^2s}=a\sqrt s$ for $a\neq0$. The condition $\Sigma^2=3B^2$ and the axis choice depend on $[\vec Q]$ only. This selects one pair at every spectral-regular $\tilde Q$, and the displayed formulas are homogeneous of degree zero. The choice is pointwise: it assigns a pair to each element, and no continuity of the branch is required. It is a normalisation in the sense of the previous subsection, and it is the one used in the displayed formulas. The axis charts are only a coordinate device: they cover the exceptional cone, where the symmetric formula is singular, and they do not add a second eigenbasis.</p>
-<h2 id="the-eigenbasis_1">The Eigenbasis</h2>
+<h2 id="the-eigenbasis">The Eigenbasis</h2>
 <p><strong>With the normalisation fixed, the four vectors are a basis, and left and right multiplication by $\tilde Q$ are diagonal in it.</strong></p>
 <h3 id="the-basis-and-the-multiplication-table">The Basis and the Multiplication Table</h3>
 <p><strong>Definition (the eigenbasis).</strong> For a spectral-regular $\tilde Q$ with the normalisation above, the <strong>eigenbasis</strong> is</p>
@@ -549,7 +549,7 @@ $$</p>
 e\tilde Qe=Q_te,\qquad e\tilde Qf=0,\qquad f\tilde Qe=0,\qquad f\tilde Qf=Q_tf,
 $$</p>
 <p>with both off-diagonal corners zero, and the two diagonal coefficients equal. The gauge is the whole idempotent variety, of complex dimension two. At the origin the eigenvalue is zero as well, and the one-term writing is $0=0\cdot e_t$.</p>
-<p><strong>The nilpotent stratum.</strong> $Q_t=0$, $\vec Q\neq0$, $\vec Q^2=0$. Write $\vec N=\vec Q$. The canonical data are the line $\mathbb{C}\vec N$, the plane $\ker L_{\vec N}=\operatorname{im}L_{\vec N}$, and the flag</p>
+<p><strong>The nilpotent stratum.</strong> $\vec Q\neq0$, $Q_t=0$, $\vec Q^2=0$. Write $\vec N=\vec Q$. The canonical data are the line $\mathbb{C}\vec N$, the plane $\ker L_{\vec N}=\operatorname{im}L_{\vec N}$, and the flag</p>
 <p>$$
 0\subset\mathbb{C}\vec N\subset\ker L_{\vec N}\subset\mathbb{B}.
 $$</p>
@@ -561,8 +561,8 @@ $$</p>
 <p>$$
 e_b=e+b\vec N,\qquad b\in\mathbb{C},
 $$</p>
-<p>and the product identity $e_b\vec Nf_b=\vec N$ holds, with $f_b=e_t-e_b$. Equivalently, $e_b$ is the unique non-zero idempotent on the complement line $\mathbb{C}e_b$ to $\mathbb{C}\vec N$ in $\ker L_{\vec N}$; the parameter $b$ is the choice of that complement. The opposite corner $f_b\mathbb{B}e_b$ is a line that moves with $b$, so the Peirce quadruple is not a function of the element <strong>for the plain product</strong>. A canonical choice of complement on the cone, hence of one quadruple, is made in <em>The Jordan Normal Form</em>, §<em>The Jordan Basis</em>. The element has no eigenbasis, because its eigenspace is $\ker L_{\vec N}$, of complex dimension two.</p>
-<p><strong>The unipotent stratum.</strong> $Q_t\neq0$, $\vec Q\neq0$. Put $\vec\Upsilon=\vec Q/Q_t$. Then $\vec\Upsilon^2=0$ and</p>
+<p>and the product identity $e_b\vec Nf_b=\vec N$ holds, with $f_b=e_t-e_b$. Equivalently, $e_b$ is the unique non-zero idempotent on the complement line $\mathbb{C}e_b$ to $\mathbb{C}\vec N$ in $\ker L_{\vec N}$; the parameter $b$ is the choice of that complement. The opposite corner $f_b\mathbb{B}e_b$ is a line that moves with $b$, so the Peirce quadruple is not a function of the element <strong>for the plain product</strong>. A canonical choice of complement on the cone, hence of one quadruple, is made in <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>, §<em>The Jordan Basis</em>. The element has no eigenbasis, because its eigenspace is $\ker L_{\vec N}$, of complex dimension two.</p>
+<p><strong>The unipotent stratum.</strong> $\vec Q\neq0$, $Q_t\neq0$. Put $\vec\Upsilon=\vec Q/Q_t$. Then $\vec\Upsilon^2=0$ and</p>
 <p>$$
 \tilde Q=Q_tu,\qquad u=e_t+\vec\Upsilon,\qquad (u-e_t)^2=0.
 $$</p>
@@ -582,7 +582,7 @@ $$</p>
 <p>$$
 0\subset\mathbb{C}\vec Q\subset\ker R_{\vec Q}\subset\mathbb{B},
 $$</p>
-<p>not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a Jordan basis; a canonical choice of the complement removes both freedoms and selects one quadruple, constructed in <em>The Jordan Normal Form</em>.</p>
+<p>not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a Jordan basis; a canonical choice of the complement removes both freedoms and selects one quadruple, constructed in <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>.</p>
 <h2 id="spinors-and-chirality">Spinors and Chirality</h2>
 <p><strong>The eigenbasis exhibits the two spinor spaces as the two columns of its matrix model. Each column is a minimal left ideal, each is a complex plane, and each carries both eigenvalues under left multiplication. Chirality is the right index, not the left one.</strong></p>
 <p>The general statement is in <em>The Spinor Spaces</em>, §<em>The Two Couples</em>: the four Peirce vectors split into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, and left multiplication acts on each couple by the same Peirce matrix. Here that matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$, so each couple is a pair of eigenvectors.</p>
@@ -878,12 +878,12 @@ $$</p>
 <li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the sector $\Sigma_{01}$, the scaled idempotents and the same eigenbasis with a zero eigenvalue.</li>
 <li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the scalar line and the Jordan part, where the construction stops.</li>
 <li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the nilpotents and the origin.</li>
-<li><a href="the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html">The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion</a>, for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.</li>
+<li><a href="the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html">The Jordan Basis of a Spectrally Degenerate Biquaternion</a>, for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.</li>
 <li><a href="m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html">The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations</a>, for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.</li>
 <li><a href="worked-examples-of-eigenbasis-of-a-biquaternion.html">Worked Examples of Eigenbasis of a Biquaternion</a>, for computed eigenbases of the standard elements.</li>
 <li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.</li>
 <li><a href="spinors-as-minimal-left-ideals-with-inner-conjugation.html">Spinors as Minimal Left Ideals with Inner Conjugation</a>, for the identification of the minimal left ideals with the spinor spaces and the chiral halves.</li>
-<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the comparison of the two cones.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the comparison of the two cones.</li>
 <li><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.</li>
 <li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, for the spectral decomposition in the wider theory.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (2nd edition, Cambridge University Press, 2013), for the spectral projectors, the trace pairing and the matrix models.</li>

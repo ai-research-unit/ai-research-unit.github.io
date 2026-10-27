@@ -180,6 +180,11 @@ The square root, the axis and the pure root $\vec\Xi=-i\vec U$ are those of <em>
 <td>$\exp$ does not reach it, so $\log$ and general powers are undefined; a trigonometric or hyperbolic value may be $\natural$-degenerate</td>
 </tr>
 <tr>
+<td>Scalar</td>
+<td>$B=0$, $\vec Q=0$</td>
+<td>one complex scalar; the algebra of functions is the complex one; for $\tilde Q\neq0$ the logarithm gains the vector families</td>
+</tr>
+<tr>
 <td>Jordan</td>
 <td>$B=0$, $\vec Q\neq0$, $Q_t\neq0$</td>
 <td>$\natural$-regular; $\exp$ truncates and $\log$ exists; the powers are linear in $\vec Q$</td>
@@ -188,11 +193,6 @@ The square root, the axis and the pure root $\vec\Xi=-i\vec U$ are those of <em>
 <td>Nilpotent</td>
 <td>$B=0$, $\vec Q\neq0$, $Q_t=0$</td>
 <td>$\natural$-degenerate and a nonzero zero divisor; $\exp$ truncates, $\log$ does not exist, and there is no square root</td>
-</tr>
-<tr>
-<td>Scalar</td>
-<td>$\vec Q=0$</td>
-<td>one complex scalar; the algebra of functions is the complex one; for $\tilde Q\neq0$ the logarithm gains the vector families</td>
 </tr>
 </tbody>
 </table></div>
@@ -541,7 +541,7 @@ $$</p>
 <p><strong>The eigenvalue description.</strong> Equivalently, the logarithms of a complex scalar are exactly the diagonalisable biquaternions whose two eigenvalues lie in $\operatorname{Log}Q_t+2\pi i\mathbb Z$. A non-diagonalisable biquaternion has $\exp\tilde Q_1=\exp(Q_{1t})(e_t+\vec Q_1)\neq Q_t e_t$, so it cannot occur. The set is the translate $\operatorname{Log}Q_t\,e_t+\ker\exp$; it is not a coset in the group sense, because $\ker\exp$ is not a subgroup.</p>
 <p><strong>The fibre is not discrete.</strong> For $\tilde Q=e_t$, the elements $2\pi\vec e_x$ and $2\pi\vec e_y$ are both logarithms, but their difference $2\pi(\vec e_x-\vec e_y)$ is not a logarithm of $e_t$: its exponential has scalar part $\cos(2\pi\sqrt2)\neq1$. Two logarithms need not differ by an element of the kernel, even though each is the principal logarithm plus a kernel element. The scalar logarithms also contain continuous families: for each $n\neq0$, the set $\{(\vec Q_1,\vec Q_1)=(\pi n)^2\}$ is a complex quadric, not a finite sphere. The quaternion spheres of logarithms of a real scalar are replaced by complex quadrics.</p>
 <h3 id="the-coordinates-of-a-logarithm">The Coordinates of a Logarithm</h3>
-<p>The components in the three regimes are collected in one table. The first row is the eigenvalue formula, the second the nilpotent formula, and the last two the two kinds of scalar logarithm.</p>
+<p>The components in the three regimes are collected in one table, in the order of the discriminant: the eigenvalue formula first, then the two kinds of scalar logarithm, then the nilpotent formula.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -559,22 +559,22 @@ $$</p>
 <td>$\dfrac{\mu_++\mu_-}{2}\,e_t+\dfrac{\mu_+-\mu_-}{2i}\,\vec U$</td>
 </tr>
 <tr>
-<td>$B=0$, $\vec Q\neq0$</td>
-<td>$\operatorname{Log}Q_t+2\pi i k$, $k\in\mathbb Z$</td>
-<td>$\dfrac{\vec Q}{Q_t}$</td>
-<td>$(\operatorname{Log}Q_t+2\pi i k)e_t+\dfrac{\vec Q}{Q_t}$</td>
-</tr>
-<tr>
-<td>$\vec Q=0$, scalar logarithms</td>
+<td>$B=0$, $\vec Q=0$, scalar logarithms</td>
 <td>$\operatorname{Log}Q_t+2\pi i k$, $k\in\mathbb Z$</td>
 <td>$0$</td>
 <td>$(\operatorname{Log}Q_t+2\pi i k)e_t$</td>
 </tr>
 <tr>
-<td>$\vec Q=0$, vector logarithms</td>
+<td>$B=0$, $\vec Q=0$, vector logarithms</td>
 <td>$\operatorname{Log}Q_t+\pi i n+2\pi i k$, $n\in\mathbb Z\setminus\{0\}$, $k\in\mathbb Z$</td>
 <td>$\vec Q_1$, $(\vec Q_1,\vec Q_1)=(\pi n)^2$</td>
 <td>$(\operatorname{Log}Q_t+\pi i n+2\pi i k)e_t+\vec Q_1$</td>
+</tr>
+<tr>
+<td>$B=0$, $\vec Q\neq0$</td>
+<td>$\operatorname{Log}Q_t+2\pi i k$, $k\in\mathbb Z$</td>
+<td>$\dfrac{\vec Q}{Q_t}$</td>
+<td>$(\operatorname{Log}Q_t+2\pi i k)e_t+\dfrac{\vec Q}{Q_t}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -833,6 +833,12 @@ $$</p>
 <td>empty</td>
 </tr>
 <tr>
+<td>$B=0$, $\vec Q=0$</td>
+<td>scalar and vector values of §<em>The Degenerate Regimes</em></td>
+<td>$\operatorname{Log}Q_t\,e_t$</td>
+<td>translate of $\ker\exp$</td>
+</tr>
+<tr>
 <td>$B=0$, $\vec Q\neq0$, $Q_t\neq0$</td>
 <td>$(\operatorname{Log}Q_t+2\pi i k)e_t+\vec Q/Q_t$</td>
 <td>$\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$</td>
@@ -843,12 +849,6 @@ $$</p>
 <td>none</td>
 <td>none</td>
 <td>empty</td>
-</tr>
-<tr>
-<td>$\vec Q=0$</td>
-<td>scalar and vector values of §<em>The Degenerate Regimes</em></td>
-<td>$\operatorname{Log}Q_t\,e_t$</td>
-<td>translate of $\ker\exp$</td>
 </tr>
 </tbody>
 </table></div>
@@ -922,7 +922,7 @@ $$</p>
 <td>multiply by $\exp(2\pi i\alpha k)$, $k\in\mathbb Z$</td>
 </tr>
 <tr>
-<td>Scalar unit, $\vec Q=0$, $Q_t\neq0$</td>
+<td>Scalar unit, $B=0$, $\vec Q=0$, $Q_t\neq0$</td>
 <td>$Q_t^\alpha$</td>
 <td>scalar phases and vector quadrics described above</td>
 </tr>
@@ -1015,7 +1015,7 @@ $$</p>
 </tr>
 <tr>
 <td>Scalar unit</td>
-<td>$\vec Q=0$, $Q_t\neq0$</td>
+<td>$B=0$, $\vec Q=0$, $Q_t\neq0$</td>
 <td>continuous family, $n\ge2$</td>
 </tr>
 <tr>
@@ -1051,7 +1051,7 @@ $$</p>
 =\langle\tilde Q\rangle_{\natural}^\alpha.
 $$</p>
 <p>The identity is <strong>branch-dependent</strong>: the powers $R^\alpha$ and $R^{2\alpha}$, or $Q_t^\alpha$ and $Q_t^{2\alpha}$, must be chosen compatibly. The principal branch of $\tilde Q^\alpha$ satisfies it with the branch of $\langle\tilde Q\rangle_{\natural}^\alpha$ determined by the same logarithm; that branch need not be the principal branch of the scalar power. The scalar axis already shows the point: $(-e_t)^{1/2}=i e_t$ has norm $-1$, while $\langle -e_t\rangle_{\natural}=1$ and its principal square root is $1$. If a non-scalar logarithm of a scalar is used, the vector factor has norm $1$ but the scalar phase can change the two sides by a root of unity; the identity is then read with that phase.</p>
-<h3 id="the-math982-th-root-limits">The $n$-th Root Limits</h3>
+<h3 id="the-math988-th-root-limits">The $n$-th Root Limits</h3>
 <p>Let $\tilde Q$ be a unit and let $L$ be a chosen logarithm of $\tilde Q$. Then</p>
 <p>$$
 \tilde Q^{1/n}=\exp(L/n).
@@ -1448,7 +1448,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Regimes</td>
-<td>$B\neq0$, $\langle\tilde Q\rangle_{\natural}\neq0$ (distinct), $B\neq0$, $\langle\tilde Q\rangle_{\natural}=0$ (zero divisor), $B=0,\ \vec Q\neq0,\ Q_t\neq0$ (Jordan), $B=0,\ \vec Q\neq0,\ Q_t=0$ (nilpotent), $\vec Q=0$ (scalar)</td>
+<td>$B\neq0$, $\langle\tilde Q\rangle_{\natural}\neq0$ (distinct), $B\neq0$, $\langle\tilde Q\rangle_{\natural}=0$ (zero divisor), $B=0,\ \vec Q=0$ (scalar), $B=0,\ \vec Q\neq0,\ Q_t\neq0$ (Jordan), $B=0,\ \vec Q\neq0,\ Q_t=0$ (nilpotent)</td>
 </tr>
 <tr>
 <td>Spectrum</td>
@@ -1472,7 +1472,7 @@ $$</p>
 </tr>
 <tr>
 <td>Logarithm</td>
-<td>eigenvalue formula for $B\neq0$ and a unit; $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$ for $B=0,\vec Q\neq0,Q_t\neq0$; scalar and vector families for $\vec Q=0$; no logarithm for a zero divisor or a nonzero nilpotent</td>
+<td>eigenvalue formula for $B\neq0$ and a unit; scalar and vector families for $B=0,\ \vec Q=0$; $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$ for $B=0,\ \vec Q\neq0,\ Q_t\neq0$; no logarithm for a zero divisor or a nonzero nilpotent</td>
 </tr>
 <tr>
 <td>Principal domain</td>
@@ -1533,7 +1533,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{Log}\tilde Q$</td>
-<td>$B\neq0$: $\dfrac{\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-}{2}e_t+\dfrac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}\vec U$; $B=0$, $\vec Q\neq0$: $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$; $\vec Q=0$: $\operatorname{Log}Q_t\,e_t$</td>
+<td>$B\neq0$: $\dfrac{\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-}{2}e_t+\dfrac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}\vec U$; $B=0$, $\vec Q=0$: $\operatorname{Log}Q_t\,e_t$; $B=0$, $\vec Q\neq0$: $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$</td>
 <td>the units</td>
 </tr>
 <tr>

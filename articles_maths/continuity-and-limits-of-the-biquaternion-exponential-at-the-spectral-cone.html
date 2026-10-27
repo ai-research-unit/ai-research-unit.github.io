@@ -71,7 +71,7 @@
         <h1 id="continuity-and-limits-of-the-biquaternion-exponential-at-the-spectral-cone"><strong>Continuity and Limits of the Biquaternion Exponential at the Spectral Cone</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The exponential of a biquaternion is entire, so no point of the spectral-degenerate cone is a singularity of the map. What degenerates at $B^2=0$ is the spectral parametrisation of the exponential: the two eigenvalues coalesce, the element-attached root of $-1$ disappears, the spectral idempotents diverge, and the oscillatory closed form truncates. This article separates three questions that the word <em>limit</em> confuses. Which formulas extend continuously? Which spectral objects have limits? Which fail, and at which stratum?</p>
-<p>The article assumes the spectral criterion, the cone and its three strata of <em>The Spectrum</em>; the closed forms and the principal logarithm of <em>Biquaternion Elementary Functions</em>; the element-supplied root, the kernel identity and the Hermitian norm of <em>Relations between the Biquaternion Exponential and the Fourier Kernel</em>; and the polar factors of <em>The Polar Decomposition of a N-Regular Biquaternion</em> and <em>The Polar Decomposition of a N-Degenerate Biquaternion</em>. It reproves none of them. It owns the passage to the cone: the entire form of the closed form, the differential and its critical locus, the double pole of the resolvent, the continuity of the Hermitian norm, and the distinction between spectral degeneracy and polar degeneracy. It does not treat the transform theory, which belongs to <em>Biquaternion Continuous Harmonic Analysis</em>, nor the physical interpretation, which belongs to the companion article in the physics corpus.</p>
+<p>The article assumes the spectral criterion, the cone of <em>The Spectrum</em> and the three strata of <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>; the closed forms and the principal logarithm of <em>Biquaternion Elementary Functions</em>; the element-supplied root, the kernel identity and the Hermitian norm of <em>Relations between the Biquaternion Exponential and the Fourier Kernel</em>; and the polar factors of <em>The Polar Decomposition of a N-Regular Biquaternion</em> and <em>The Polar Decomposition of a N-Degenerate Biquaternion</em>. It reproves none of them. It owns the passage to the cone: the entire form of the closed form, the differential and its critical locus, the double pole of the resolvent, the continuity of the Hermitian norm, and the distinction between spectral degeneracy and polar degeneracy. It does not treat the transform theory, which belongs to <em>Biquaternion Continuous Harmonic Analysis</em>, nor the physical interpretation, which belongs to the companion article in the physics corpus.</p>
 <p><strong>The result in one table.</strong> The table is the plan of the article.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -204,10 +204,10 @@ $$</p>
 <p><strong>The three strata of the cone.</strong> On $\mathcal S$ put</p>
 <p>$$
 \mathcal S^{\mathrm{s}}=\{\vec Q=0\},\qquad
-\mathcal S^{\mathrm{n}}=\{Q_t=0,\ \vec Q\neq0\},\qquad
-\mathcal S^{\mathrm{u}}=\{Q_t\neq0,\ \vec Q\neq0\},
+\mathcal S^{\mathrm{n}}=\{\vec Q\neq0,\ Q_t=0\},\qquad
+\mathcal S^{\mathrm{u}}=\{\vec Q\neq0,\ Q_t\neq0\},
 $$</p>
-<p>the <strong>scalar</strong>, <strong>nilpotent</strong> and <strong>unipotent</strong> strata. The elements of the last two are written $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$; on the unipotent stratum one also writes $\vec N=Q_t\eta$, with $\eta^2=0$. The classification is that of <em>The Spectrum</em>, §<em>The Three Strata</em>.</p>
+<p>the <strong>scalar</strong>, <strong>nilpotent</strong> and <strong>unipotent</strong> strata. The elements of the last two are written $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$; on the unipotent stratum one also writes $\vec N=Q_t\eta$, with $\eta^2=0$. The classification is that of <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>, §<em>The Three Strata</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -230,7 +230,7 @@ $$</p>
 </tr>
 <tr>
 <td>nilpotent</td>
-<td>$Q_t=0$, $\vec Q\neq0$</td>
+<td>$\vec Q\neq0$, $Q_t=0$</td>
 <td>$\vec N$, $\vec N^2=0$</td>
 <td>$\{0\}$</td>
 <td>$X^2$</td>
@@ -238,7 +238,7 @@ $$</p>
 </tr>
 <tr>
 <td>unipotent</td>
-<td>$Q_t\neq0$, $\vec Q\neq0$</td>
+<td>$\vec Q\neq0$, $Q_t\neq0$</td>
 <td>$Q_tu$, $u=e_t+\eta$</td>
 <td>$\{Q_t\}$</td>
 <td>$(X-Q_t)^2$</td>
@@ -669,14 +669,15 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion, the cone, the three strata, the flag and the similarity classification.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion, the cone, the flag and the similarity classification.</li>
+<li><a href="the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html">The Jordan Basis of a Spectrally Degenerate Biquaternion</a>, for the three strata, their normal forms and their spectral behaviour.</li>
 <li><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, for the closed forms, the exponential, the logarithm and the principal branch.</li>
 <li><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the root, the kernel identity, the Hermitian norm and the Fourier dictionary.</li>
 <li><a href="biquaternion-continuous-harmonic-analysis.html">Biquaternion Continuous Harmonic Analysis</a>, for the transform pair, inversion, Plancherel and the kernel.</li>
 <li><a href="biquaternion-discrete-harmonic-analysis.html">Biquaternion Discrete Harmonic Analysis</a>, for the discrete transform and the condition on the root.</li>
 <li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of a N-Regular Biquaternion</a>, for the modulus, the unit factor and the four-factor word.</li>
 <li><a href="the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of a N-Degenerate Biquaternion</a>, for the two-factor decomposition on the null cone, the rank-one Hermitian factor and the partial isometry.</li>
-<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the independence of the two conditions.</li>
+<li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the independence of the two conditions.</li>
 <li><a href="biquaternion-lie-group-and-exponential-structure.html">Biquaternion Lie Group and Exponential Structure</a>, for the exponential as a map of Lie groups and the Cartan decomposition.</li>
 <li><a href="dual-numbers-harmonic-analysis.html">Dual Numbers Harmonic Analysis</a>, for the truncated characters of the nilpotent regime.</li>
 <li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the conjugations, the Hermitian norm and the notation.</li>

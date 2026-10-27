@@ -73,7 +73,7 @@
 <p>Spectral regularity is the condition that the two eigenvalues of a biquaternion can be told apart. It is a condition on the operator the element generates, not on a motion of the element. When it holds, the operator carries a complex structure: two invariant planes, a mode basis, a non-zero splitting. When it fails, the operator carries a nilpotent part: a flag, not a basis, and the element is a degeneracy.</p>
 <p>The article reads the two cases physically. The regular case gives the mode picture: two complex frequencies, a mode frame, a normal-mode decomposition of every element. The degenerate case is not one phenomenon. The operator is $Q_t I+N$ with $N^2=0$, and the three normal forms — $N=0$, $Q_t=0$, and both non-zero — are the scalar line, the nilpotent stratum and the unipotent stratum. Each has its own interpretation: a pure rate with no direction; a null shift with no rate; a rate with a shear. On none of them is there a canonical mode basis, and the reason is the same in all three: the spectral idempotents do not exist, and the Peirce idempotents are a gauge.</p>
 <p>The vocabulary is the harmonic one, and it is exact. The regular element supplies the root of the Fourier kernel, and the degenerate cone is where that kernel stops oscillating. The two readings are the same construction seen from the spectrum and from the transform.</p>
-<p>The mathematics is proved in <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em> and <em>The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</em>. The article belongs to <em>Biquaternion Physical Interpretation of Mathematics</em>: it interprets that mathematics, and it proves nothing. It identifies the physical objects, labels the interpretations, and states the boundary of each.</p>
+<p>The mathematics is proved in <em>Spectral Regularity and Degeneracy in the Biquaternion Algebra</em> and <em>The Eigenbasis of a Spectrally Regular Biquaternion</em>. The article belongs to <em>Biquaternion Physical Interpretation of Mathematics</em>: it interprets that mathematics, and it proves nothing. It identifies the physical objects, labels the interpretations, and states the boundary of each.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -105,7 +105,7 @@
 </tr>
 <tr>
 <td>The three strata, their minimal polynomials, centralisers and normal forms</td>
-<td><a href="../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, §<em>The Three Strata</em></td>
+<td><a href="../articles_maths/the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html">The Jordan Basis of a Spectrally Degenerate Biquaternion</a>, §<em>The Three Strata</em></td>
 </tr>
 <tr>
 <td>The isotropic line, the canonical flag and the absence of a canonical complement</td>
@@ -113,11 +113,11 @@
 </tr>
 <tr>
 <td>The normalised Peirce basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the unique expansion</td>
-<td><a href="../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html">The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</a>, §<em>The Eigenbasis</em> and §<em>Expansion of Every Biquaternion</em></td>
+<td><a href="../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a>, §<em>The Eigenbasis</em> and §<em>Expansion of Every Biquaternion</em></td>
 </tr>
 <tr>
 <td>The four sectors $\Sigma_{ij}$ and the independence of $N\neq0$ and $B^2\neq0$</td>
-<td><a href="../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, §<em>The Four Sectors</em></td>
+<td><a href="../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, §<em>The Four Sectors</em></td>
 </tr>
 <tr>
 <td>The similarity classification on the cone</td>
@@ -529,7 +529,7 @@ $$</p>
 </tr>
 <tr>
 <td><strong>nilpotent</strong></td>
-<td>$Q_t=0$, $\vec Q\neq0$</td>
+<td>$\vec Q\neq0$, $Q_t=0$</td>
 <td>$\vec N$, $\vec N^2=0$</td>
 <td>$X^2$</td>
 <td>no</td>
@@ -538,7 +538,7 @@ $$</p>
 </tr>
 <tr>
 <td><strong>unipotent</strong></td>
-<td>$Q_t\neq0$, $\vec Q\neq0$</td>
+<td>$\vec Q\neq0$, $Q_t\neq0$</td>
 <td>$Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$</td>
 <td>$(X-Q_t)^2$</td>
 <td>yes</td>
@@ -603,7 +603,7 @@ $$</p>
 <p><strong>Interpretation 5: a fermionic mode.</strong> A pair of nilpotents with anticommutator $e_t$ is the one-site fermionic ladder; the square-zero property is the exclusion principle at the level of one mode. The physical interpretation is a <strong>mode</strong>, not a field. The details are in <em>Nilpotents and Fermions</em>; this article uses the interpretation only to locate the stratum.</p>
 <p><strong>Boundary.</strong> The algebra supplies the mode and the local corner, not the field, the lattice, the dynamics or the physical null momentum.</p>
 <h3 id="the-unipotent-stratum-a-rate-with-a-shear">The Unipotent Stratum: A Rate with a Shear</h3>
-<p>For $Q_t\neq0$, $\vec Q\neq0$ and $B^2=0$, put $\vec\Upsilon=\vec Q/Q_t$. Then $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$, and</p>
+<p>For $B^2=0$, $\vec Q\neq0$, $Q_t\neq0$, put $\vec\Upsilon=\vec Q/Q_t$. Then $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$, and</p>
 <p>$$
 \boxed{\;\tilde Q=Q_t\left(e_t+\vec\Upsilon\right),
 \qquad
@@ -801,9 +801,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the criterion, the two cases, the three strata and the flag.</li>
-<li><a href="../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html">The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion</a>, for the normalised Peirce basis, the unique expansion and the spinor interpretation.</li>
+<li><a href="../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a>, for the normalised Peirce basis, the unique expansion and the spinor interpretation.</li>
 <li><a href="../articles_maths/the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, for the spectrum, the eigenprojections and the matrix model.</li>
-<li><a href="../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between Quaternionic Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the independence of the two conditions.</li>
+<li><a href="../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the independence of the two conditions.</li>
 <li><a href="../articles_maths/the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, for the eigenbasis, the Peirce corners and the spinor structure of $\Sigma_{11}$.</li>
 <li><a href="../articles_maths/the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the unipotent stratum, its flag and its Peirce corners.</li>
 <li><a href="../articles_maths/the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the massless zero divisors and the one live mode of $\Sigma_{01}$.</li>
