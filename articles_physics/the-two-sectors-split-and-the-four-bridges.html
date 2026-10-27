@@ -113,8 +113,9 @@ $$</p>
 <h3 id="the-two-eigenspaces">The Two Eigenspaces</h3>
 <p>Every biquaternion decomposes uniquely into a Hermitian and an anti-Hermitian part:</p>
 <p>$$
-\tilde Q=\tfrac12(\tilde Q+\tilde Q^{*})+\tfrac12(\tilde Q-\tilde Q^{*}),\qquad
-\tfrac12(\tilde Q\pm\tilde Q^{*})\in\mathbb{M}_\pm .
+\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A},\qquad
+\tilde Q_{\mathrm H}=\tfrac12(\tilde Q+\tilde Q^{*})\in\mathbb{M}_+,\qquad
+\tilde Q_{\mathrm A}=\tfrac12(\tilde Q-\tilde Q^{*})\in\mathbb{M}_- .
 $$</p>
 <p>With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tilde Q^{*}=\tilde Q$ reads $z_0=\bar z_0$ and $z_k=-\bar z_k$: a real scalar and three imaginary vector coefficients. The informational sector therefore has the real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and the material sector, with the opposite signs, has $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Each is four-real-dimensional.</p>
 <p>Two properties of the split are used throughout.</p>
@@ -150,7 +151,7 @@ $$</p>
 \boxed{\;\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t,\qquad
 \langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}\;}.
 $$</p>
-<p>For a material element $\tilde R=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ the value is</p>
+<p>For a material element $\tilde R=\tilde Q_{\mathrm A}=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ the value is</p>
 <p>$$
 \langle\tilde R\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2,
 $$</p>
@@ -161,7 +162,7 @@ $$</p>
 <p>is a map $\mathbb{M}_-\to\mathbb{M}_+$ with image the real scalar line $\mathbb{R}e_t$.</p>
 <p><strong>Interpretation.</strong> The norm square is the interval, and the interval is a value of the informational sector. The bridge is the minimal one the product supplies: a process is sent to the scalar that measures it, and no further structure is used. For $\tilde R=2ie_t+3\vec e_x$ the interval is $-4+9=5$, and the bridge sends the element to $5e_t$. A lightlike element is sent to $0$: the zero-divisor cone lies in the kernel of the bridge.</p>
 <p><strong>Boundary.</strong> The map is not an evolution, and the bare product of two material elements does not share its property: unless the spatial parts are parallel, the product carries both a Hermitian part and a material rotation part. The norm square is the coupling; the product is not. The same formula applied to an informational element returns $h_t^2-\lvert\vec h\rvert^2$, which is the determinant of the matrix of the state and not a probability. The map lands in the informational sector because its value is a scalar, not because every value is a weight.</p>
-<p><strong>Remark (preparation).</strong> The same map run backwards prepares a state. For a material element $\tilde R$, the element $\tilde H=-\tfrac{i}{2}\tilde R$ is Hermitian, with $\operatorname{Tr}\tilde H=ct'$ and $\langle\tilde H\rangle_{\natural}=-\tfrac14\langle\tilde R\rangle_{\natural}$. On the trace-one slice of the future cone it is a state of the Bloch ball. The map is a dictionary of preparation, not a dynamics, and it is a second instance of the map kind rather than a fifth kind.</p>
+<p><strong>Remark (preparation).</strong> The same map run backwards prepares a state. For a material element $\tilde R=\tilde Q_{\mathrm A}$, the element $\tilde Q_{\mathrm H}=-\tfrac{i}{2}\tilde Q_{\mathrm A}$ is Hermitian, with $\operatorname{Tr}\tilde Q_{\mathrm H}=ct'$ and $\langle\tilde Q_{\mathrm H}\rangle_{\natural}=-\tfrac14\langle\tilde Q_{\mathrm A}\rangle_{\natural}$. On the trace-one slice of the future cone it is a state of the Bloch ball. The map is a dictionary of preparation, not a dynamics, and it is a second instance of the map kind rather than a fifth kind.</p>
 <h3 id="a-bijection-the-central-imaginary">A Bijection: the Central Imaginary</h3>
 <p>The central scalar is anti-Hermitian, $i^{*}=-i$. For every $\tilde Q$,</p>
 <p>$$
@@ -287,12 +288,12 @@ $$</p>
 <td>The biquaternion norm</td>
 </tr>
 <tr>
-<td>$\tilde R=ict'+x\vec e_x+y\vec e_y+z\vec e_z$</td>
-<td>A material element</td>
+<td>$\tilde R=\tilde Q_{\mathrm A}=ict'+x\vec e_x+y\vec e_y+z\vec e_z$</td>
+<td>A material element, the anti-Hermitian part</td>
 </tr>
 <tr>
-<td>$\tilde H=h_te_t+i\vec h$</td>
-<td>An informational element</td>
+<td>$\tilde H=\tilde Q_{\mathrm H}=h_te_t+i\vec h$</td>
+<td>An informational element, the Hermitian part</td>
 </tr>
 <tr>
 <td>$\operatorname{Sc}$</td>
