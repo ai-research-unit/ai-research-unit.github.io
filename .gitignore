@@ -15,6 +15,7 @@ __pycache__/
 .claude/
 
 # Internal review work - confidential, never published, never committed
+.openhands/
 REVIEW-PLAN*
 BRAINSTORMING.md
 *.thinking
