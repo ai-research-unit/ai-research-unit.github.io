@@ -70,9 +70,9 @@
       <div class="article-body">
         <h1 id="the-cartan-pairing-the-amplitude-and-the-operator-to-state-map"><strong>The Cartan Pairing, the Amplitude and the Operator-to-State Map</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Every nonzero operator in the algebra defines a state. The definition is one line, $\tilde Q\mapsto\tilde Q\tilde Q^{*}$, normalised by the trace. The state is not added to the operator from outside and the operator is not a state in disguise: the map forgets the unitary phase and keeps the positive amplitude. The Cartan pairing is the factorization that makes the forgetting explicit, $\tilde Q=\tilde H\tilde U$, with $\tilde H$ the amplitude and $\tilde U$ the phase.</p>
+<p>Every nonzero operator in the algebra defines a state. The definition is one line, $\tilde Q\mapsto\tilde Q\tilde Q^{*}$, normalised by the trace. The state is not added to the operator from outside and the operator is not a state in disguise: the map forgets the unitary phase and keeps the positive amplitude. The Cartan pairing is the factorization that makes the forgetting explicit, $\tilde Q=\tilde H\tilde U$, with $\tilde H$ the amplitude and $\tilde U$ the phase. It is the <strong>H-norm</strong> statement: $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}\ge0$ is defined for every nonzero element, and on the null cone $\tilde U=\tilde H^{+}\tilde Q$ is a partial isometry. The four-factor word, which needs $\langle\tilde Q\rangle_{\natural}\neq0$, is the N-norm refinement read in <em>The Polar Decomposition and Its Three Pairings</em>.</p>
 <p>The thesis is one sentence. <strong>The map $\tilde Q\mapsto\tilde Q\tilde Q^{*}/2\langle\tilde Q,\tilde Q\rangle_{*}$ sends every nonzero operator to a state, the Cartan factor $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ is that state's unnormalised amplitude, and the stratigraphy of the map is the stratigraphy of the algebra: the null cone goes to the pure states, the unitary group goes to the maximally mixed state, and the invertible elements in between go to the mixed states.</strong> The last clause is the part that is easy to state and easy to get backwards: the reversible elements produce the most mixed states, and the zero divisors produce the pure ones.</p>
-<p>The article is a synthesis of the Cartan pairing with the state space of the informational sector. It proves no new theorem. The factorisation is owned by <em>The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</em>, the state space and the Born rule by the quantum-physics articles, and the modular Hamiltonian by the Tomita–Takesaki articles. What is added here is the map as a map: its fibre, its stratigraphy, its covariance, and the boundary of its name.</p>
+<p>The article is a synthesis of the Cartan pairing with the state space of the informational sector. It proves no new theorem. The general two-factor decomposition, its Moore–Penrose inverse and the partial isometry on the cone are owned by <em>The Polar Decomposition of a Biquaternion</em>; its N-regular sharpening, where the second factor is unitary, by <em>The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</em>; the state space and the Born rule by the quantum-physics articles; and the modular Hamiltonian by the Tomita–Takesaki articles. What is added here is the map as a map: its fibre, its stratigraphy, its covariance, and the boundary of its name.</p>
 <p>The name needs a warning at the start. The <strong>operator-to-state map</strong> is not the operator-state correspondence of a conformal field theory. There is no conformal boundary, no radial quantisation, no state–operator isomorphism and no Virasoro algebra in what follows. The map is the elementary algebraic one $\tilde Q\mapsto\tilde Q\tilde Q^{*}$, and the name is used only because it says what the map does.</p>
 <p>The conventions are those of <em>Conventions in the Biquaternion Universe</em>. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, and a state is $\tilde{Ϛ}\in\mathbb{M}_+$ with $\operatorname{Tr}\tilde{Ϛ}=1$, that is, $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
@@ -86,9 +86,14 @@
 </thead>
 <tbody>
 <tr>
-<td>the Cartan pairing, its theorem and its domain</td>
+<td>the general two-factor decomposition, the Moore–Penrose inverse and the partial isometry</td>
+<td><a href="../articles_maths/the-polar-decomposition-of-a-biquaternion.html"><em>The Polar Decomposition of a Biquaternion</em></a>, §<em>The Moore–Penrose Inverse of the Hermitian Factor</em>, §<em>The Isometry Factor</em></td>
+<td>$\tilde Q=\tilde H\tilde U$ for every nonzero element, and the cone case</td>
+</tr>
+<tr>
+<td>the Cartan pairing on the N-regular set, its theorem and its domain</td>
 <td><a href="../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html"><em>The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</em></a>, §<em>The Statement</em>, §<em>The Domain</em></td>
-<td>$\tilde Q=\tilde H\tilde U$, $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$</td>
+<td>the unitary second factor off the cone</td>
 </tr>
 <tr>
 <td>the positive cone and the Hermitian square root</td>
@@ -96,9 +101,9 @@
 <td>existence and uniqueness of $\tilde H\ge0$</td>
 </tr>
 <tr>
-<td>the generalized pairing on the null cone</td>
-<td><a href="../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html"><em>The Polar Decomposition of a N-Degenerate Biquaternion</em></a>, §<em>The Two-Factor Decomposition</em></td>
-<td>the rank-one case and the partial isometry</td>
+<td>the rank-one case and the partial isometry on the null cone</td>
+<td><a href="../articles_maths/the-polar-decomposition-of-a-biquaternion.html"><em>The Polar Decomposition of a Biquaternion</em></a>, §<em>The Isometry Factor</em>, §<em>Examples</em></td>
+<td>the cone case of the same general pair</td>
 </tr>
 <tr>
 <td>the state space, the Bloch ball and the Born rule</td>
@@ -211,13 +216,13 @@ $$</p>
 </ul>
 <p>The identification of the cone with the pure states is exact and is the strongest statement in the article. It is also the one that connects the map to measurement: a sharp outcome is a zero divisor, and its state is pure; a weak outcome is invertible, and its state is mixed; a unitary evolution is a scalar unitary, and its state is maximally mixed. The three strata of <em>The Polar Decomposition of a Kraus Operator</em> are the three rows of this table, read through the map.</p>
 <h2 id="the-phase-and-the-fibre">The Phase and the Fibre</h2>
-<p>The Cartan factorization writes $\tilde Q=\tilde H\tilde U$ with $\tilde U$ unitary. The map keeps $\tilde H$ and discards $\tilde U$. The fibre over a state is therefore the set of operators with the same $\tilde H$, that is,</p>
+<p>Off the null cone the Cartan factorization writes $\tilde Q=\tilde H\tilde U$ with $\tilde U$ unitary; on the cone $\tilde U$ is a partial isometry. The map keeps $\tilde H$ and discards $\tilde U$. The fibre over a state is therefore the set of operators with the same $\tilde H$: off the cone it is</p>
 <p>$$
 \{\tilde H\tilde W:\ \tilde W\ \text{unitary}\},
 $$</p>
-<p>which is a $\mathrm{U}(2)$ torsor when $\tilde H>0$ and a smaller orbit when $\tilde H$ is rank one. The phase is not a gauge field and not a physical field: it is the coordinate along the fibre. Choosing a representative of each fibre is choosing a section of the map, and the Cartan factorization is the canonical section $\tilde U=\tilde H^{-1}\tilde Q$ when $\tilde H$ is invertible.</p>
+<p>a $\mathrm{U}(2)$ torsor when $\tilde H>0$, and on the cone it is the orbit of partial isometries with the same initial projection. The phase is not a gauge field and not a physical field: it is the coordinate along the fibre. Choosing a representative of each fibre is choosing a section of the map, and the Cartan factorization is the canonical section $\tilde U=\tilde H^{-1}\tilde Q$ when $\tilde H$ is invertible.</p>
 <p>This gives a clean statement of what a <strong>gauge choice</strong> is in this language. A gauge transformation acts on the right, $\tilde Q\mapsto\tilde Q\tilde W$, and leaves the state fixed. A change of frame acts on the left, $\tilde Q\mapsto\tilde V\tilde Q$, and rotates the state. The two are not the same operation, and confusing them is the common error. Gauge freedom is the fibre; frame freedom is the base.</p>
-<p>The fibre also shows why the map cannot be inverted. A state determines the normalised amplitude $\hat H$ uniquely, because the positive square root is unique, but it determines neither $\tilde U$ nor the scale of $\tilde H$. Two operators with the same singular values and different unitary factors define the same state and the same amplitude, with different Cartan phases: the state is blind to the phase.</p>
+<p>The fibre also shows why the map cannot be inverted. A state determines the normalised amplitude $\hat H$ uniquely, because the positive square root is unique, but it determines neither $\tilde U$ nor the scale of $\tilde H$. Two operators with the same singular values and different unitary factors, or different partial isometries on the cone, define the same state and the same amplitude, with different Cartan phases: the state is blind to the phase.</p>
 <h3 id="the-reversed-reading">The Reversed Reading</h3>
 <p>The Cartan factorization of the <strong>adjoint</strong> element is</p>
 <p>$$
@@ -233,7 +238,7 @@ $$</p>
 <p>The last term is central and is the additive constant that a modular Hamiltonian always carries. The amplitude is therefore the square root of the state, and its logarithm is minus half the modular Hamiltonian up to that constant. This is the exact sense in which the Cartan amplitude is the modular square root.</p>
 <p>Two boundaries must be kept.</p>
 <ul>
-<li>The modular <strong>conjugation</strong> is anti-unitary and is not the Cartan factor $\tilde U$. The Tomita–Takesaki conjugation depends on the state and on the algebra; the Cartan factor is the unitary quotient of the operator. They are different objects and the notation must not identify them.</li>
+<li>The modular <strong>conjugation</strong> is anti-unitary and is not the Cartan factor $\tilde U$. The Tomita–Takesaki conjugation depends on the state and on the algebra; the Cartan factor is the unitary quotient of the operator off the cone and the partial-isometry quotient on it. They are different objects and the notation must not identify them.</li>
 <li>The modular reading needs $\tilde{Ϛ}_Q>0$, hence $\tilde H>0$, hence $\tilde Q$ invertible. On the null cone the state is pure, the logarithm diverges and the modular Hamiltonian does not exist. The purity table and the modular table have the same boundary.</li>
 </ul>
 <h2 id="where-the-map-appears">Where the Map Appears</h2>
@@ -280,7 +285,7 @@ $$</p>
 <p>The phrase "operator-to-state map" is used in two unrelated senses in the literature.</p>
 <ul>
 <li>In <strong>conformal field theory</strong>, the operator-state correspondence is a theorem of radial quantisation: a local operator at the origin defines a state on the boundary sphere, and the map is an isomorphism of Hilbert spaces with a Virasoro action. It needs a conformal boundary, a radial time and a state–operator isomorphism.</li>
-<li>In <strong>this article</strong>, the map is $\tilde Q\mapsto\tilde Q\tilde Q^{*}$, defined on a finite-dimensional algebra, with no boundary, no radial time and no isomorphism. It is a many-to-one map onto the state space, and its fibre is a unitary orbit.</li>
+<li>In <strong>this article</strong>, the map is $\tilde Q\mapsto\tilde Q\tilde Q^{*}$, defined on a finite-dimensional algebra, with no boundary, no radial time and no isomorphism. It is a many-to-one map onto the state space, and its fibre is a unitary orbit off the cone and a partial-isometry orbit on it.</li>
 </ul>
 <p>The two share a name and nothing else. The corpus states the disclaimer wherever the name appears, because the CFT phrase would be a false citation. There is no conformal field theory in the biquaternion framework, and this article does not introduce one.</p>
 <h2 id="physical-interpretation">Physical Interpretation</h2>
@@ -295,7 +300,7 @@ $$</p>
 <h2 id="what-this-does-not-claim">What This Does Not Claim</h2>
 <ul>
 <li>It does not claim the operator-state correspondence of a conformal field theory. There is no boundary, no radial quantisation and no isomorphism.</li>
-<li>It does not claim that every state arises from a unique operator. The map is many-to-one, and the fibre is the unitary right factor.</li>
+<li>It does not claim that every state arises from a unique operator. The map is many-to-one; off the cone the fibre is the unitary right factor, and on the cone it is the partial isometry.</li>
 <li>It does not claim that the amplitude $\tilde H$ is a state, or that the state $\tilde{Ϛ}_Q$ is an amplitude. The chain is $\tilde Q\rightsquigarrow\tilde H\rightsquigarrow\hat H\rightsquigarrow\tilde{Ϛ}_Q$, and each step loses information.</li>
 <li>It does not claim a modular reading on the null cone. The modular Hamiltonian needs a faithful state and diverges at purity.</li>
 <li>It does not claim that the map is a channel, an instrument or a dynamics. It is a map from operators to states, with no input state and no time.</li>
@@ -352,7 +357,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde U=\tilde H^{+}\tilde Q$</td>
-<td>the unitary phase, the coordinate along the fibre</td>
+<td>the unitary phase off the cone, the partial isometry on it; the coordinate along the fibre</td>
 </tr>
 <tr>
 <td>$\tilde K_{\mathrm{mod}}=-\ln\tilde{Ϛ}_Q$</td>
@@ -370,8 +375,8 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html">The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</a>, for the theorem, the uniqueness and the domain.</li>
-<li><a href="../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of a N-Degenerate Biquaternion</a>, for the rank-one case and the partial isometry.</li>
+<li><a href="../articles_maths/the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a>, for the general two-factor decomposition, the Moore–Penrose inverse and the partial isometry on the cone.</li>
+<li><a href="../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html">The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions</a>, for the N-regular sharpening, the uniqueness and the domain.</li>
 <li><a href="../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html">Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</a>, for the positive cone and the square root.</li>
 <li><a href="the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a>, for the comparison of the three first factors.</li>
 <li><a href="the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a>, for the measurement reading of the three strata.</li>

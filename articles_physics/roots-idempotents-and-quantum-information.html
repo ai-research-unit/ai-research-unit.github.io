@@ -70,12 +70,12 @@
       <div class="article-body">
         <h1 id="roots-idempotents-and-quantum-information"><strong>Roots, Idempotents and Quantum Information</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The Hermitian idempotents of the biquaternion algebra are the pure states of the informational sector, and the Hermitian roots of $+1$ are its involutive observables. The halving map</p>
+<p>The nontrivial Hermitian idempotents of the biquaternion algebra are the pure states of the informational sector, and the Hermitian roots of $+1$ are its involutive observables. The halving map</p>
 <p>$$
 \tilde\Pi=\tfrac12(e_t+\tilde\Xi),\qquad \tilde\Xi=2\tilde\Pi-e_t
 $$</p>
 <p>passes from one to the other. That dictionary was built in <em>Roots, Idempotents and Observables</em>. This article reads the same objects through the questions of quantum information: which observables can be measured together, what a measurement with unsharp outcomes is, what protects a state from error, which bases are mutually unbiased, and what a shared entangled state accomplishes.</p>
-<p>Five interpretations are developed: contextuality, positive operator-valued measures, error-correcting code spaces, mutually unbiased bases, and teleportation. A sixth statement is a boundary rather than an interpretation: the defining module is the two-dimensional spin-$\tfrac12$ representation and is irreducible, so the carrier has no spin-zero ray.</p>
+<p>Six interpretations are developed: contextuality, positive operator-valued measures, error-correcting code spaces, mutually unbiased bases, teleportation, and entanglement, which is a property of the tensor square rather than a new product. A seventh statement is a boundary rather than an interpretation: the defining module is the two-dimensional spin-$\tfrac12$ representation and is irreducible, so the carrier has no spin-zero ray.</p>
 <p>The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composites are tensor powers. The article owns no theorem. The classification of idempotents, the Peirce decomposition, the plain form and the unitary group are stated in the mathematics articles linked below, and the identities that the article uses are either standard or verified in two or three lines.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
@@ -88,23 +88,23 @@ $$</p>
 <tbody>
 <tr>
 <td>The roots of $+1$, the halving map and the idempotents</td>
-<td><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a></td>
+<td><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Idempotents</a></td>
 </tr>
 <tr>
 <td>Orthogonality, completeness, primitivity and the Peirce decomposition</td>
-<td><a href="../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a></td>
+<td><a href="../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a></td>
 </tr>
 <tr>
 <td>The positive cone, the order interval and its extreme points</td>
 <td><a href="../articles_maths/jordan-algebras-and-the-positive-cone.html">Jordan Algebras and the Positive Cone</a></td>
 </tr>
 <tr>
-<td>The plain form and the Hilbert–Schmidt form (proportional by $1/2$)</td>
-<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, <a href="../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html">The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation</a></td>
+<td>The plain form and the Hilbert–Schmidt pairing (the same on $\mathbb{M}_+$, with $\operatorname{Tr}=2\operatorname{Sc}$)</td>
+<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, <a href="../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html">$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions</a></td>
 </tr>
 <tr>
 <td>The unitary group and the matrix-unitary condition</td>
-<td><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">Unitary Operators of a Sesqualgebra</a></td>
+<td><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">The Unitary Operators of a Sesqualgebra</a></td>
 </tr>
 <tr>
 <td>The tensor product and the isomorphism $M_m\otimes M_n\cong M_{mn}$</td>
@@ -120,7 +120,7 @@ $$</p>
 <p>A <strong>noncontextual value assignment</strong> is a map $v$ from the Hermitian elements to the reals that is linear and multiplicative on every context, with $v(e_t)=1$ and $v(\tilde\Pi)\in\{0,1\}$ on idempotents. The Kochen–Specker theorem says that in dimension at least three no such assignment exists.</p>
 <p>Two facts fix the interpretation.</p>
 <ul>
-<li><strong>The native qubit has no obstruction.</strong> The defining module is two-dimensional, every context is a pair of orthogonal rank-one idempotents, and a consistent assignment is available. Fix a hidden direction $\vec u_\lambda$ and set $v_\lambda(\tilde\Pi_{\pm}(\vec u))=1$ when $\pm\vec u\cdot\vec u_\lambda>0$ and $0$ otherwise, with $\tilde\Pi_{\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$, a convention on the measure-zero equator, and linear extension. Exactly one idempotent of each antipodal pair receives $1$. No ray belongs to two distinct contexts (the identity, which belongs to all, imposes no constraint), so noncontextuality is vacuous.</li>
+<li><strong>The native qubit has no obstruction.</strong> The defining module is two-dimensional, every context is a pair of orthogonal rank-one idempotents, and a consistent assignment is available. Fix a hidden direction $\vec u_\lambda$ and set $v_\lambda(\tilde\Pi_{\pm}(\vec u))=1$ when $\pm\vec u\cdot\vec u_\lambda>0$ and $0$ otherwise, with $\tilde\Pi_{\pm}(\vec u)=\tfrac12(e_t\pm i\vec u)$, a fixed tie-break on the measure-zero equator, and extension by linearity on each context. Exactly one idempotent of each antipodal pair receives $1$. No ray belongs to two distinct contexts (the identity, which belongs to all, imposes no constraint), so noncontextuality is vacuous.</li>
 <li><strong>The smallest arena is the two-qubit algebra.</strong> $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ has a four-dimensional module, and it carries the Mermin–Peres square.</li>
 </ul>
 <p>The square uses the Pauli gates $X=i\vec e_x$, $Y=i\vec e_y$ and $Z=i\vec e_z$, with the identity written $e_t$ in each factor.</p>
@@ -154,7 +154,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Each row and each column is a commuting triple. The product of every row is $e_t\otimes e_t$, the product of the first two columns is $e_t\otimes e_t$, and the product of the third column is $-e_t\otimes e_t$, because $XYZ=i\,e_t$ and $(XYZ)\otimes(XYZ)=(i\,e_t)\otimes(i\,e_t)=-e_t\otimes e_t$. A noncontextual $\{\pm1\}$ assignment would make the product of the nine entries both $+1$ and $-1$.</p>
+<p>Each row and each column is a commuting triple. The product of every row is $e_t\otimes e_t$, the product of the first two columns is $e_t\otimes e_t$, and the product of the third column is $-e_t\otimes e_t$: $XYZ=i\,e_t$ and $YXZ=-i\,e_t$, so the third row gives $(i\,e_t)\otimes(-i\,e_t)=e_t\otimes e_t$, while the third column gives $(XYZ)\otimes(XYZ)=(i\,e_t)\otimes(i\,e_t)=-e_t\otimes e_t$. A noncontextual $\{\pm1\}$ assignment would make the product of the nine entries both $+1$ and $-1$.</p>
 <p><strong>Interpretation.</strong> A context is a measurement basis and its idempotents are the outcomes. Contextuality is the failure of one outcome table to serve every basis at once. The algebra supplies the contexts and the idempotent resolutions natively; the obstruction appears as soon as the module is large enough to share an observable between two contexts.</p>
 <p><strong>Boundary.</strong> The obstruction is not a property of the biquaternion algebra alone. It requires dimension at least three, and the native carrier has dimension two, so the interpretation lives on a composite. The magic square is the smallest instance, and its construction uses the tensor product, whose status in the framework is an open question.</p>
 <h2 id="sharp-and-soft-effects-povms">Sharp and Soft Effects: POVMs</h2>
@@ -169,9 +169,9 @@ $$</p>
 $$</p>
 <p>in some idempotent basis, and it is soft when one eigenvalue lies strictly between $0$ and $1$. A <strong>POVM</strong> is a finite family $\{\tilde E_a\}$ of effects with $\sum_a\tilde E_a=e_t$, and the Born weight of an outcome is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde E_a\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde E_a^{*})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde E_a^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde E_a)$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real and non-negative.</p>
 <p><strong>Interpretation.</strong> A measurement is a resolution of the identity into effects. The sharp outcomes are the idempotents, the unsharp ones are their convex combinations, and the state space is the same in both cases. Naimark's dilation theorem makes every POVM a projective measurement on a larger module, so the sharp idempotent remains the primitive object and the soft effect is a shadow of a projection on an enlarged space.</p>
-<p><strong>Boundary.</strong> The algebra supplies the effects, the order and the dilation. It does not supply the instrument, the map from outcomes to posterior states, and it does not supply the dynamics of the apparatus. A POVM is a statement about statistics, not about what the apparatus does.</p>
+<p><strong>Boundary.</strong> The algebra supplies the effects and the order; Naimark's theorem supplies the dilation. The algebra does not supply the instrument, the map from outcomes to posterior states, and it does not supply the dynamics of the apparatus. A POVM is a statement about statistics, not about what the apparatus does.</p>
 <h2 id="stabilizer-codes-idempotents-and-images">Stabilizer Codes: Idempotents and Images</h2>
-<p>A <strong>stabilizer group</strong> on $n$ qubits is an abelian subgroup $S$ of the Hermitian involutions of $\mathbb{B}^{\otimes n}$ that does not contain $-e_t^{\otimes n}$. The <strong>code idempotent</strong> is the average</p>
+<p>A <strong>stabilizer group</strong> on $n$ qubits is an abelian subgroup $S$ of the Pauli group (the group generated by the Hermitian Pauli tensors $e_t,i\vec e_x,i\vec e_y,i\vec e_z$) that does not contain $-e_t^{\otimes n}$. The <strong>code idempotent</strong> is the average</p>
 <p>$$
 \tilde\Pi_S=\frac{1}{|S|}\sum_{\tilde U\in S}\tilde U .
 $$</p>
@@ -189,11 +189,11 @@ $$</p>
 <p><strong>Interpretation.</strong> A code is an idempotent, and its logical subspace is the image of that idempotent; the Peirce corner is its algebra-side counterpart. Encoding is the choice of the idempotent, the syndrome measurement is the family of idempotents that resolves it, and the error condition says that the errors act on the component as scalars.</p>
 <p><strong>Boundary.</strong> The algebra gives the code subspace and the exact condition. It gives no threshold, no noise model and no fault-tolerance analysis, because those are statements about a physical error process and not about the algebra.</p>
 <h2 id="the-three-unbiased-bases">The Three Unbiased Bases</h2>
-<p>A <strong>basis of the module</strong> is a complete family of orthogonal rank-one idempotents:</p>
+<p>A <strong>basis of the module</strong> is a complete family of orthogonal rank-one Hermitian idempotents:</p>
 <p>$$
 \tilde\Pi_i\tilde\Pi_j=\delta_{ij}\tilde\Pi_i,\qquad \sum_i\tilde\Pi_i=e_t,\qquad \operatorname{Tr}\tilde\Pi_i=1 .
 $$</p>
-<p>For the qubit the rank-one idempotents are $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ with $\vec u$ a unit vector, and the Hilbert-space overlap of two rays is the normalised Hermitian form, read through the trace:</p>
+<p>For the qubit the rank-one Hermitian idempotents are $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ with $\vec u$ a unit vector, and the Hilbert-space overlap of two rays is the normalised Hermitian form, read through the trace:</p>
 <p>$$
 \lvert\langle\psi|\phi\rangle\rvert^2=\operatorname{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr).
 $$</p>
@@ -206,7 +206,7 @@ $$</p>
 p_k(\pm)=\tfrac12(1\pm r_k),\qquad r_k=p_k(+)-p_k(-),
 $$</p>
 <p>so the three bases reconstruct the state. The algebra's three imaginary units are the three bases; mutual unbiasedness is the anticommutation of the units seen through the trace.</p>
-<p><strong>Boundary.</strong> The qubit supplies the three bases natively. The two-qubit maximum is five, and the tensor product of qubit bases gives only three. The Bell basis does not complete the three product bases to a fourth: with respect to each of the computational, $X$ and $Y$ product bases, every Bell vector is orthogonal to half of the basis vectors, so the cross overlaps are $0$ or $\tfrac12$ and not uniformly $\tfrac12$. The algebra does not supply a complete set of unbiased bases by naive tensor product.</p>
+<p><strong>Boundary.</strong> The qubit supplies the three bases natively. The two-qubit maximum is five, and the tensor product of qubit bases gives only three. The Bell basis does not complete the three product bases to a fourth: with respect to each of the computational, $X$ and $Y$ product bases, every Bell vector is orthogonal to half of the basis vectors, so the cross traces are $0$ or $\tfrac12$, not the uniform $\tfrac14$ that unbiasedness in dimension four requires. The algebra does not supply a complete set of unbiased bases by naive tensor product.</p>
 <h2 id="teleportation-four-idempotents-and-four-unitaries">Teleportation: Four Idempotents and Four Unitaries</h2>
 <p>The four <strong>Bell idempotents</strong> of $\mathbb{B}\otimes\mathbb{B}$ are</p>
 <p>$$
@@ -222,12 +222,12 @@ $$</p>
 <p>The defining module of $\mathbb{B}\cong M_2(\mathbb{C})$ is $\mathbb{C}^2$, and the Lorentz action on it is the spin-$\tfrac12$ representation. That representation is irreducible: a spin-zero ray would be a line fixed by every Lorentz transformation, and the only fixed vector is $0$. The algebra has no one-dimensional module either, so a scalar is not a ray of the carrier at all. The centre acts on the module by scalars, but a scalar multiple of a vector is the same ray, not a one-dimensional submodule.</p>
 <p><strong>Interpretation.</strong> Every state of the defining module is spin-$\tfrac12$. A spin-zero object can appear only as a singlet in a tensor power, not as a ray of the carrier. There is no scalar sector in the state space: a scalar field, if the framework uses one, is not a state of this module. The statement is the algebraic form of the fact that the carrier is a spinor.</p>
 <p><strong>Boundary.</strong> The statement is about the defining module of this algebra. It does not say that no spin-zero object can appear in a larger construction; it says that the native carrier does not contain one.</p>
-<h2 id="entanglement-is-not-a-fifth-job">Entanglement Is Not a Fifth Job</h2>
-<p>The four jobs are jobs of one product on one algebra. Entanglement is a property of the <strong>tensor square</strong>, not a fifth product. The tensor square $\mathbb{B}\otimes\mathbb{B}$ has no sector of its own: a vector $v\otimes w$ is not material or informational, and the form on it is the tensor square of the one-sector form. The correlations the framework can describe are therefore between the two tensor factors — between the rows, not inside one row — and the partial trace is taken over one factor and lands in the other.</p>
+<h2 id="entanglement-is-not-a-fifth-product">Entanglement Is Not a Fifth Product</h2>
+<p>The four products are the four jobs of one algebra. Entanglement is a property of the <strong>tensor square</strong>, not a fifth product. The tensor square $\mathbb{B}\otimes\mathbb{B}$ is a new arena, not a new product: it carries the induced involution, whose Hermitian part is $\mathbb{M}_+\otimes\mathbb{M}_+\oplus\mathbb{M}_-\otimes\mathbb{M}_-$, and the tensor products of the forms on $\mathbb{B}$. The correlations the framework can describe are therefore between the two tensor factors — between the two factors, not inside one — and the partial trace is taken over one factor and lands in the other.</p>
 <p>The partial trace is not one of the four products. It uses the trace pairing on the factor that is traced out and the identity on the factor that remains; it is a map on the tensor square, and it has no analogue inside a single algebra. This is why entanglement is not a fifth row of the grid: the grid classifies products on $\mathbb{B}$, and the partial trace lives one level up.</p>
 <p><strong>The interpretation.</strong> A correlation is a statement about two copies, not a new operation on one. The algebra supplies the tensor square, the Bell idempotents and the partial trace; the nonlocal content is in the tensor structure, not in an additional product.</p>
-<p><strong>The boundary.</strong> The tensor product is assumed, not derived; the algebra is one-mode, and the two-qubit arena is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. No dynamics, no channel and no measure of entanglement are supplied. The reading does not say that entanglement is reducible to a product, only that it is not a product of the same kind.</p>
-<h2 id="the-interpretations">The Interpretations</h2>
+<p><strong>The boundary.</strong> The tensor product is assumed, not derived; the algebra is one-mode, and the two-qubit arena is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. No dynamics, no channel and no measure of entanglement are supplied. The interpretation does not say that entanglement is reducible to a product, only that it is not a product of the same kind.</p>
+<h2 id="physical-interpretations">Physical Interpretations</h2>
 <p>The six interpretations share one theme: the idempotent is the native object of measurement and of the state, and the unitary is the native object of motion; entanglement adds no new object of that kind, only a property of the tensor square.</p>
 <ul>
 <li><strong>Contextuality</strong> reads a context as a maximal commutative subalgebra and its outcomes as idempotents; the obstruction is the failure of one value table to serve all contexts, and it appears only on a composite.</li>
@@ -235,21 +235,21 @@ $$</p>
 <li><strong>Error correction</strong> reads a code as an idempotent and its logical subspace as the image of that idempotent, with the Peirce corner as the algebra-side counterpart.</li>
 <li><strong>Unbiased bases</strong> read the three coordinate measurements as the three idempotent bases of the qubit, with the normalised Hermitian form as the overlap.</li>
 <li><strong>Teleportation</strong> reads the resource and the measurement as Bell idempotents and the corrections as unitaries.</li>
-<li><strong>Entanglement</strong> reads a correlation as a property of the tensor square, not a fifth product; the partial trace is taken over one factor, and the correlations live between the rows, not inside one.</li>
+<li><strong>Entanglement</strong> reads a correlation as a property of the tensor square, not a fifth product; the partial trace is taken over one factor, and the correlations live between the two factors, not inside one.</li>
 </ul>
-<p>The theme is not an analogy. In the first five cases the object that the information-theoretic construction names is an element of the algebra, and the operation it names is one of the algebra's own operations: commutation for a context, the order interval for an effect, the Peirce corner for a code, the normalised Hermitian form for an overlap, the tensor product for a shared state. Entanglement is the exception that proves the rule: its object is the tensor square, and its operation, the partial trace, lives one level up. What the algebra adds is the exactness of the statement and the boundary where it stops.</p>
+<p>The theme is not an analogy. In the first five cases the object that the information-theoretic construction names is an element or a family of elements of the algebra, and the structure it names is one of the algebra's own: commutation for a context, the order interval for an effect, the Peirce corner for a code, the normalised Hermitian form for an overlap, the tensor product for a shared state. Entanglement is the exception that proves the rule: its object is the tensor square, and its operation, the partial trace, lives one level up. What the algebra adds is the exactness of the statement and the boundary where it stops.</p>
 <h2 id="limits">Limits</h2>
 <ul>
 <li><strong>The obstruction needs a composite.</strong> The native qubit has no Kochen–Specker obstruction; the magic square lives in $\mathbb{B}\otimes\mathbb{B}$.</li>
 <li><strong>The tensor product is assumed.</strong> The two-qubit algebra is used as $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$; whether the tensor product is canonical for the framework is an open question inherited from the companion articles.</li>
 <li><strong>No classical channel.</strong> The algebra represents the outcome label and the correction, not the transmission of the label.</li>
 <li><strong>No thresholds and no error models.</strong> The code condition is exact; the fault-tolerance analysis is not in the algebra.</li>
-<li><strong>No dynamics.</strong> Every interpretation is a statement about states, effects and bases; none supplies an equation of motion.</li>
+<li><strong>No dynamics.</strong> Every interpretation is a statement about states, effects, bases or the tensor square; none supplies an equation of motion.</li>
 <li><strong>The Bell basis is relative to the tensor structure.</strong> It is canonical once the tensor product is fixed, and it is not claimed to be canonical without it.</li>
-<li><strong>Three standard results are cited, not proved.</strong> The Kochen–Specker theorem, Naimark's dilation theorem and the maximum of five mutually unbiased bases in dimension four are named as standard results; the mathematics corpus does not own them, and the article does not derive them.</li>
+<li><strong>Four standard results are cited, not proved.</strong> The Kochen–Specker theorem, Naimark's dilation theorem, the Knill–Laflamme condition and the maximum of five mutually unbiased bases in dimension four are named as standard results; the mathematics corpus does not own them, and the article does not derive them.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The Hermitian idempotents are the pure states and the Hermitian roots of $+1$ are the involutive observables; the halving map is the dictionary between them. Six information-theoretic constructions are read here. A context is a maximal commutative subalgebra, its outcomes are a complete family of orthogonal idempotents, and the Kochen–Specker obstruction is the failure of a single value assignment to serve every context; on the native qubit there is no obstruction, and the smallest arena is the two-qubit algebra with the Mermin–Peres square. A POVM is a resolution of the identity into effects; the sharp effects are the idempotents, the extreme points of the order interval, and the soft ones are their convex combinations. A stabilizer code is an idempotent, its code space the image of that idempotent, and the Knill–Laflamme condition the exact statement that the errors act on it as scalars. The three unbiased bases of the qubit are the eigenbases of the three imaginary units, and the normalised Hermitian form is the overlap, read as the trace pairing. Teleportation forces apart the two classes of acting element: the resource and the measurement are Bell idempotents, the corrections are unitaries. Entanglement is not a fifth job: a correlation is a property of the tensor square, and the partial trace is taken over one factor rather than inside a row. The carrier itself has no spin-zero ray, because the defining module is the irreducible spin-$\tfrac12$ representation. Each interpretation names an element or an operation of the algebra, or a property of its tensor square, and each has a boundary: the obstruction needs a composite, the protocols need a classical channel, and none of them is a dynamics.</p>
+<p>The nontrivial Hermitian idempotents are the pure states and the Hermitian roots of $+1$ are the involutive observables; the halving map is the dictionary between them. Six information-theoretic constructions are read here. A context is a maximal commutative subalgebra, its outcomes are a complete family of orthogonal idempotents, and the Kochen–Specker obstruction is the failure of a single value assignment to serve every context; on the native qubit there is no obstruction, and the smallest arena is the two-qubit algebra with the Mermin–Peres square. A POVM is a resolution of the identity into effects; the sharp effects are the idempotents, the extreme points of the order interval, and the soft ones are their convex combinations. A stabilizer code is an idempotent, its code space the image of that idempotent, and the Knill–Laflamme condition the exact statement that the errors act on it as scalars. The three unbiased bases of the qubit are the eigenbases of the three imaginary units, and the normalised Hermitian form is the overlap, read as the trace pairing. Teleportation forces apart the two classes of acting element: the resource and the measurement are Bell idempotents, the corrections are unitaries. Entanglement is not a fifth product: a correlation is a property of the tensor square, and the partial trace is taken over one factor rather than inside a factor. The carrier itself has no spin-zero ray, because the defining module is the irreducible spin-$\tfrac12$ representation. Each interpretation names an element, a family of elements or a structure of the algebra, or a property of its tensor square, and each has a boundary: the obstruction needs a composite, the protocols need a classical channel, and none of them is a dynamics.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -269,11 +269,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde\Pi$</td>
-<td>An idempotent; a rank-one idempotent is a pure state</td>
+<td>An idempotent; a rank-one Hermitian idempotent is a pure state</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$</td>
-<td>The two rank-one idempotents along a unit vector $\vec u$</td>
+<td>The two rank-one Hermitian idempotents along a unit vector $\vec u$</td>
 </tr>
 <tr>
 <td>$\tilde\Xi$</td>
@@ -303,10 +303,10 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a>, for the classification, the halving map and the pair map.</li>
-<li><a href="../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for orthogonality, primitivity and the Peirce components.</li>
+<li><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Idempotents</a>, for the classification, the halving map and the pair map.</li>
+<li><a href="../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for orthogonality, primitivity and the Peirce components.</li>
 <li><a href="../articles_maths/jordan-algebras-and-the-positive-cone.html">Jordan Algebras and the Positive Cone</a>, for the order interval and its extreme points.</li>
-<li><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">Unitary Operators of a Sesqualgebra</a>, for the unitary group and the matrix-unitary condition.</li>
+<li><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">The Unitary Operators of a Sesqualgebra</a>, for the unitary group and the matrix-unitary condition.</li>
 <li><a href="../articles_maths/tensor-products-of-algebras.html">Tensor Products of Algebras</a>, for $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$.</li>
 <li><a href="roots-idempotents-and-observables.html">Roots, Idempotents and Observables</a>, for the state-observable dictionary read at length.</li>
 <li><a href="contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form.html">Contextuality and the Kochen–Specker Theorem in Biquaternionic Form</a>, for the magic square and the value assignments.</li>
