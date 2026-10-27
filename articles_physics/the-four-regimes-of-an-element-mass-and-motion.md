@@ -19,14 +19,14 @@ $$
 
 The partition is the subject of this article. It is not a classification of mathematical cases with physical labels added afterwards. It is the mass–motion classification of a four-momentum, extended to the full complex algebra, and each cell is a different physical regime with its own spectral behaviour, its own invertibility, and its own relation to the mass shell and the light cone.
 
-The four cells are treated one to an article: *Mass in Motion: The Two-Mode Regime* for $\Sigma_{11}$, *The Rest Frame and the Exceptional Point* for $\Sigma_{10}$, *The Massless Regime: Light Rays* for $\Sigma_{01}$, and *The Vacuum and the Nilpotent Ladder* for $\Sigma_{00}$. This article states the partition, the table, the real slices and the limits of the reading. It proves nothing; the sector theorems are those of the four mathematics articles cited below.
+The four cells are treated one to an article: *The N-Regular, Spectrally Regular Sector: Mass in Motion* for $\Sigma_{11}$, *The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point* for $\Sigma_{10}$, *The N-Degenerate, Spectrally Regular Sector: The Massless Regime* for $\Sigma_{01}$, and *The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder* for $\Sigma_{00}$. This article states the partition, the table, the real slices and the limits of the reading. It proves nothing; the sector theorems are those of the four mathematics articles cited below.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The norm, the null cone and its two strata | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| The characteristic polynomial, the discriminant and the two eigenvalues | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The characteristic polynomial, the discriminant and the two eigenvalues | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The independence of the two conditions and the four sectors | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html) |
 | The doubly regular sector | [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html) |
 | The norm-regular, spectrally degenerate sector | [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) |
@@ -106,7 +106,7 @@ The independence is also the reason the partition is fourfold and not twofold. T
 | $\Sigma_{01}$ | $N=0$, $B^2\neq0$ | $\{2Q_t,0\}$ distinct | no | unique, one coefficient zero | a massless momentum, $\vec p\neq0$ | **light ray** |
 | $\Sigma_{00}$ | $N=0$, $B^2=0$ | $\{0\}$ | no | none off the origin | the zero momentum, and nothing else | **vacuum and nilpotent ladder** |
 
-The last two columns are the interpretive step, and they are the reason the table is worth an article. The first four columns are algebraic; the last two say what the algebra is a table of.
+The last two columns are the interpretive step, and they are the reason the table is worth an article. The first five columns are algebraic; the last two say what the algebra is a table of.
 
 The table is exhaustive: every element lies in exactly one cell. The cells are the four combinations of the two conditions; the two cones are their boundaries, and the origin lies in the closure of all four.
 
@@ -120,7 +120,7 @@ The physical content is the **two-mode picture**: two invariant planes, a mode b
 
 ### The Rest Frame and the Exceptional Point: $\Sigma_{10}$
 
-The cell of units with a repeated eigenvalue. It has two faces. The **scalar line** $Q_te_t$ is the real rest frame: $\vec p=0$, $B=0$, $N=Q_t^2$, and the single eigenvalue $Q_t=iE/c$. It is semisimple, every basis is an eigenbasis, and the two-term writing is not unique. The **Jordan part** $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ is defective: one eigenvalue, a Jordan block, no eigenbasis, a shear. It is not on the real material slice, because a real spatial vector has $B^2=\lvert\vec p\rvert^2$, which vanishes only at $\vec p=0$.
+The cell of units with a repeated eigenvalue. It has two faces. The **scalar line** $Q_te_t$ is the real rest frame: $\vec p=0$, $B=0$, $N=Q_t^2$, and the single eigenvalue $Q_t=iE/c$. It is semisimple, every basis is an eigenbasis, and the two-term writing is not unique. The **Jordan part** $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ is defective: one eigenvalue, a Jordan block, no eigenbasis, a shear. It is not on the real material slice, because a real spatial vector has $B^2=\lvert\vec p\rvert^2$, which vanishes only at $\vec p=0$.
 
 The physical content is therefore double. The scalar line is **the rest frame**: the frame in which the momentum is purely temporal and the two light-cone frequencies coincide. The Jordan part is **the exceptional point**: a complexified momentum at which two modes have coalesced and the operator has become defective. The two share the algebra $N\neq0$, $B^2=0$; they do not share a physics.
 
@@ -128,7 +128,7 @@ The physical content is therefore double. The scalar line is **the rest frame**:
 
 The cell of zero divisors with two distinct eigenvalues. The element is a non-zero multiple of a non-trivial idempotent, $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$, and its spectrum is $\{c,0\}$. On the material sector it is the light cone minus the apex: a massless momentum, with one light-cone frequency zero and the other $2E/c$. It has a unique Peirce decomposition, a mode basis, and no rest frame: one eigenvalue is zero, so there is no frame in which the two eigenvalues coincide.
 
-The physical content is the **light ray**: a rank-one element, a direction and a scale, a point of the celestial sphere together with a phase. It is a zero divisor, hence not invertible; it has no logarithm and no generator. The cell is the boundary of the unit group and the interior of the null cone.
+The physical content is the **light ray**: a rank-one element, a direction and a scale, a point of the celestial sphere together with a phase. It is a zero divisor, hence not invertible; it has no logarithm and no generator. The cell is part of the boundary of the unit group: the null cone with its vertex and the doubly degenerate cone removed.
 
 ### The Vacuum and the Nilpotent Ladder: $\Sigma_{00}$
 
@@ -182,9 +182,9 @@ The sign reversal is the content of the sector bridge. The same $B^2$ is non-neg
 The four cells are not the mass shell and the light cone. They are the regions cut by the two cones, and the physically distinguished level sets cut across them.
 
 - The **mass shell** $N=-m^2c^2$ is a level set of the norm. It lies in $\Sigma_{11}$ for $\vec p\neq0$ and meets $\Sigma_{10}$ at the rest point $\vec p=0$. It is not a cell: it is a hypersurface that crosses the spectral cone at the rest frame.
-- The **light cone** $N=0$ is the union of $\Sigma_{01}$ and the apex $\Sigma_{00}$. It is the boundary of the unit group and the set of zero divisors.
+- The **light cone** $N=0$ is the union of $\Sigma_{01}$ and the doubly degenerate cell $\Sigma_{00}$. It is the boundary of the unit group and the set of zero divisors.
 - The **spectral cone** $B^2=0$ is the union of $\Sigma_{10}$ and $\Sigma_{00}$. It is the set of elements with a repeated eigenvalue.
-- The **origin** is the intersection of the two cones and the only point at which all four cells meet.
+- The **origin** lies on both cones and in the closure of all four cells. The intersection of the two cones is the doubly degenerate cell $\Sigma_{00}$.
 
 The reading is the reason the partition is physically useful. A particle is not a cell; a particle is a level set of $N$ together with a motion class. The four cells tell what kind of spectral object the level set is made of. A massive particle at rest and a massive particle in motion are in different cells, although they lie on the same mass shell; a massless particle and the vacuum are in different cells, although they lie on the same light cone.
 
@@ -202,9 +202,9 @@ The table does not say that the cells are Lorentz invariant. The norm is invaria
 
 - **The partition is the mass–motion classification.** $N$ is the invariant mass-squared, and $B^2$ is the motion. The four cells are massive at rest, massive in motion, massless, and the vacuum, extended to the complex algebra.
 - **The two questions are independent.** A zero divisor can have two modes, and a unit can have one. The mixed cells are the proof, and they are the reason the algebra needs four sectors and not two.
-- **The spectrum is the pair of light-cone frequencies.** $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$ on the material slice. The sum is twice the energy, the difference twice the momentum, and the product minus the mass squared.
+- **The spectrum is the pair of light-cone frequencies.** $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$ on the material slice. The sum is $2iE/c$, the difference $2i\lvert\vec p\rvert$, and the product $-m^2c^2$.
 - **The rest frame is the scalar line.** It is the only real momentum with one mode, and the only frame in which the spectral writing is not unique. The exceptional point is its complex neighbour, where the one mode is defective.
-- **The light cone is the massless cell plus the apex.** A massless momentum is a scaled idempotent: a rank-one element with one zero mode. The vacuum is the apex, the only element with no scale and no mode.
+- **The light cone is the massless cell plus the doubly degenerate cell.** A massless momentum is a scaled idempotent: a rank-one element with one zero mode. The origin is the apex, the only element with no scale and no mode; the nilpotent directions complete the cell.
 - **The mass shell crosses the cells.** A particle at rest and a particle in motion are on the same mass shell but in different cells; the cell is the spectral type, the shell is the value of the norm.
 - **The real slices select half of the table.** On each real slice the vector square has a definite sign, so the spectral cone meets the slice only on the scalar line. The Jordan part and the nilpotents are complex regimes.
 - **The arrangement is the boundary structure of the unit group.** The units are $\Sigma_{11}\cup\Sigma_{10}$; the zero divisors are $\Sigma_{01}\cup\Sigma_{00}$; the spectral cone is $\Sigma_{10}\cup\Sigma_{00}$; the origin is the common limit.
@@ -231,7 +231,7 @@ The cells are not phases and not basins of attraction. No dynamics, no order par
 - $\Sigma_{01}$ is the zero divisor with spectrum $\{2Q_t,0\}$: a scaled idempotent, a rank-one light ray.
 - $\Sigma_{00}$ is the square-zero cell: the origin, the vacuum, and the non-zero nilpotents, the fermionic ladder.
 - On the material slice $B^2\ge0$ and the spectral cone meets the slice only on the scalar line; the Jordan part and the nilpotents are complex regimes.
-- The mass shell crosses $\Sigma_{11}$ and $\Sigma_{10}$; the light cone is $\Sigma_{01}$ together with the apex. The cells are spectral types, not level sets.
+- The mass shell crosses $\Sigma_{11}$ and $\Sigma_{10}$; on the material slice the light cone is $\Sigma_{01}$ together with the apex. The cells are spectral types, not level sets.
 - The table is a partition of elements at an instant. It supplies no dynamics, no mass spectrum and no phase structure.
 
 ## Summary of Notation
@@ -252,10 +252,10 @@ The cells are not phases and not basins of attraction. No dynamics, no order par
 
 ## Further Reading
 
-- [Mass in Motion: The Two-Mode Regime](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for $\Sigma_{11}$.
-- [The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), for $\Sigma_{10}$.
-- [The Massless Regime: Light Rays](the-n-degenerate-spectrally-regular-sector-the-massless-regime.html), for $\Sigma_{01}$.
-- [The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for $\Sigma_{00}$.
+- [The N-Regular, Spectrally Regular Sector: Mass in Motion](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for $\Sigma_{11}$.
+- [The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), for $\Sigma_{10}$.
+- [The N-Degenerate, Spectrally Regular Sector: The Massless Regime](the-n-degenerate-spectrally-regular-sector-the-massless-regime.html), for $\Sigma_{01}$.
+- [The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for $\Sigma_{00}$.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the Doppler pair and the two-term writing.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vector dictionary.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone and the massless limit.

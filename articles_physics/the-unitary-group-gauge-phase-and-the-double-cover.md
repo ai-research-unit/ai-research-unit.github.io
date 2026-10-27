@@ -28,7 +28,7 @@ The three are often conflated because they share the group $SU(2)$. They act on 
 | --- | --- |
 | The unitary group, its normal form and its topology | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The polar decomposition and the retractions | [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html) |
-| The three actions and the sandwich | [Operators and the Three Actions](the-element-and-operator-representations.html) |
+| The three actions and the sandwich | [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html) |
 | The minimal left ideals and the spinor spaces | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
 | The Krein isometry group and its Cartan decomposition | [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html) |
 | The Krein form and the gauge calibration | [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html) |
@@ -284,7 +284,7 @@ No dynamics is supplied. The group is the group of reversible changes of basis; 
 
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html), for the group and its topology.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the amplitude–frame split.
-- [Operators and the Three Actions](the-element-and-operator-representations.html), for the left action, the inner automorphism and the sandwich.
+- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), for the left action, the inner automorphism and the sandwich.
 - [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html), for $U(1,3)$ and the compact part.
 - [Spin and the Two State Spaces](spin-and-the-two-state-spaces.html), for the spinor spaces and the double cover.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the Born form.

@@ -136,7 +136,7 @@ The ideas, collected by difficulty.
 |---|---|---|
 | 1 Time a parameter | 3, the signature from $i^2=-1$ | $\langle\tilde{Q}_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^2$ with $Q_{1t}=ict'$ |
 | 1 Problem of time | 4, the time as a coordinate | $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the exchange as an internal clock |
-| 2 Born rule an axiom | 1, states and observables in one subspace | $\operatorname{Tr}(\tilde{\Pi}\tilde{Ϛ}^{*})=\operatorname{Tr}(\tilde{\Pi}\tilde{Ϛ})=\tfrac12(1+\vec u\cdot\vec r)$ |
+| 2 Born rule an axiom | 1, states and observables in one subspace | $\langle\tilde H\rangle_{\tilde{Ϛ},*}=\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})/\mathrm{Sc}(\tilde{Ϛ})=h_t+\vec r\cdot\vec h$; for $\tilde H=\tilde\Pi_{1,2}(\vec u)$ this is $\tfrac12(1\pm\vec u\cdot\vec r)$ |
 | 3 Spin–statistics | 6, two classes of representation | $-e_t$ acts as $\pm\mathrm{id}$ by module |
 | 4 Two evolutions | 5, two classes of acting element | Unitary and idempotent elements of one biquaternion space |
 | 5 Quantisation a recipe | no numbered idea; see Programme 3 | $\mathfrak{sl}(2,\mathbb{C})$ as the natural bracket algebra |
@@ -231,7 +231,7 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 | $\vec u$ | Unit vector, the axis of an idempotent |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\leq1$ | State (Bloch ball), Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
-| $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\operatorname{Tr}(\tilde{\Pi}_{1,2}\tilde{Ϛ}^{*})=\operatorname{Tr}(\tilde{\Pi}_{1,2}\tilde{Ϛ})=\tfrac12(1\pm\vec u\cdot\vec r)$ | Born rule, trace at normalisation last |
+| $\langle\tilde H\rangle_{\tilde{Ϛ},*}=\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})/\mathrm{Sc}(\tilde{Ϛ})=h_t+\vec r\cdot\vec h$ | Born rule, the normalised Hermitian form; for $\tilde H=\tilde\Pi_{1,2}(\vec u)$, $\tfrac12(1\pm\vec u\cdot\vec r)$ |
 | $\langle\tilde{Q}_1\rangle_{\natural}=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\tilde{Q}_1\tilde{Q}_1^{\natural}=\sum_\mu Q_{1,\mu}^{2}$ | Biquaternion norm; indefinite, complex in general; $-c^2{t'}^2+x^2+y^2+z^2$ on $\mathbb{M}_-$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$ | Sesquilinear form; real, positive definite; the Hilbert structure |
 | $\langle\tilde{H}\rangle_{\natural}=h_t^2-\lvert\vec h\rvert^2$ | Biquaternion norm on a Hermitian element $\tilde{H}=h_te_t+i\vec h$ |

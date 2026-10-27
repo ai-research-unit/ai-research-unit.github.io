@@ -288,5 +288,5 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 - [K-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the orthogonality, the isotropy and the Krein cone.
 - [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html), for the group, the boosts, the contractions and the Cartan decomposition.
 - [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the ball and the two hyperbolic models.
-- [The Operators: One-Sided, Two-Sided, Sandwich](the-element-and-operator-representations.html), for the one-sided and two-sided operators of the form.
+- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), for the one-sided and two-sided operators of the form.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the factors that the isometries act on.

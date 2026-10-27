@@ -6,7 +6,7 @@ An exceptional point is a degeneracy at which two eigenvalues coincide **and** t
 
 The biquaternion spectrum has both. For $\tilde Q=Q_te_t+\vec Q$ the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=(\vec Q,\vec Q)$. They coincide exactly when $B=0$. If $\vec Q=0$ the element is central and semisimple: the degeneracy is diabolic. If $\vec Q\neq0$ and $B=0$ the element is a single Jordan block: the degeneracy is exceptional. The second case is the subject of this article.
 
-The article owns the question, not the theorem. The spectrum and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*; the spectral-degenerate cone and the Jordan normal form are those of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
+The article owns the question, not the theorem. The spectrum and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*; the spectral-degenerate cone and the Jordan normal form are those of *The Spectrum*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
 
 ## The Results It Uses
 
@@ -14,7 +14,7 @@ The article owns the question, not the theorem. The spectrum and the eigenprojec
 | --- | --- |
 | The spectrum, the characteristic polynomial and the discriminant | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The eigenprojections and the Hermitian case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
-| The spectral-degenerate cone and the Jordan normal form | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The spectral-degenerate cone and the Jordan normal form | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | The exponential in the nilpotent regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The logarithm of a Jordan block | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The two strata of the zero-divisor cone | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
@@ -73,7 +73,7 @@ The two normal forms are separated by the scalar part.
 
 | Case | Condition | Normal form | Unit? | Exponential |
 | --- | --- | --- | --- | --- |
-| Invertible Jordan | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $Q_t(e_t+N)$, $N^2=0$ | yes | $e^{Q_t}(e_t+N)$ |
+| Invertible Jordan | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $Q_t e_t+N$, $N^2=0$ | yes | $e^{Q_t}(e_t+N)$ |
 | Nilpotent | $B=0$, $\vec Q\neq0$, $Q_t=0$ | $N$, $N^2=0$ | no | $e_t+N$ |
 
 The second row is the sharp one. The element $N$ is a nonzero zero divisor, yet $\exp(N)=e_t+N$ is a unit, with inverse $e_t-N$. The exponential of a nilpotent is unipotent, and the unipotent line $t\mapsto e_t+tN$ is a line of units whose tangent at the identity is a zero divisor. The zero divisor is the velocity of the line, not a point of it.
@@ -150,7 +150,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 - The spectrum of $\tilde Q=Q_te_t+\vec Q$ degenerates exactly when $B^2=(\vec Q,\vec Q)=0$.
 - The scalar part separates a diabolic point ($\vec Q=0$, semisimple) from an exceptional point ($\vec Q\neq0$, a Jordan block).
 - At an exceptional point the two eigenvalues coalesce, the eigenprojections diverge, and the centraliser contains no nontrivial idempotent pair.
-- The invertible Jordan normal form is $Q_t(e_t+N)$ with $N^2=0$ and $Q_t\neq0$; the nilpotent normal form is $N$ with $N^2=0$ and $Q_t=0$.
+- The invertible Jordan normal form is $Q_t e_t+N$ with $N^2=0$ and $Q_t\neq0$; the nilpotent normal form is $N$ with $N^2=0$ and $Q_t=0$.
 - The exponential is $\exp(Q_te_t+\vec Q)=e^{Q_t}(e_t+\vec Q)$; in particular $\exp(N)=e_t+N$ is a unit although $N$ is a zero divisor.
 - A linear perturbation splits the eigenvalues as $\sqrt{\epsilon}$ for a generic direction; the law belongs to the family, not to the point.
 - No exceptional point exists for a real vector part or for a Hermitian element; the phenomenon needs complex coefficients.
@@ -172,7 +172,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 
 ## Further Reading
 
-- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the spectral-degenerate cone and the Jordan normal form.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the spectral-degenerate cone and the Jordan normal form.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the logarithm in the nilpotent regime.
 - [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the boundary of the word and the two strata of the cone.
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotents and their square-zero property.

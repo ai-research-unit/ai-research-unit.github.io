@@ -8,22 +8,22 @@ The article reads the two cases physically. The regular case gives the mode pict
 
 The vocabulary is the harmonic one, and it is exact. The regular element supplies the root of the Fourier kernel, and the degenerate cone is where that kernel stops oscillating. The two readings are the same construction seen from the spectrum and from the transform.
 
-The mathematics is proved in *Spectral Regularity and Degeneracy in the Biquaternion Algebra* and *The Eigenbasis of a Spectrally Regular Biquaternion*. The article belongs to *Biquaternion Physical Interpretation of Mathematics*: it interprets that mathematics, and it proves nothing. It identifies the physical objects, labels the interpretations, and states the boundary of each.
+The mathematics is proved in *The Spectrum* and *The Eigenbasis of a Spectrally Regular Biquaternion*. The article belongs to *Biquaternion Physical Interpretation of Mathematics*: it interprets that mathematics, and it proves nothing. It identifies the physical objects, labels the interpretations, and states the boundary of each.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The characteristic polynomial, the discriminant $-4B^2$, the eigenvalues $Q_t\pm iB$ and the two spectral cases | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Spectral Criterion* and §*The Two Cases* |
+| The characteristic polynomial, the discriminant $-4B^2$, the eigenvalues $Q_t\pm iB$ and the two spectral cases | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Spectral Criterion* and §*The Two Cases* |
 | The norm $N=Q_t^2+B^2$, its multiplicativity and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), §*The Quaternionic Norm* and §*The $N$-degenerate case* |
-| The operator form $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $L_{\vec Q}^2=-B^2\mathrm{id}$ | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Operator Form of the Criterion* |
-| The spectral idempotents $\tilde\Pi_\pm$, the two-term writing and its uniqueness | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Spectral Decomposition* |
-| The eigenspaces of dimension two and the existence of an eigenbasis | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Eigenbasis of Left Multiplication* |
+| The operator form $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $L_{\vec Q}^2=-B^2\mathrm{id}$ | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Operator Form of the Criterion* |
+| The spectral idempotents $\tilde\Pi_\pm$, the two-term writing and its uniqueness | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Spectral Decomposition* |
+| The eigenspaces of dimension two and the existence of an eigenbasis | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Eigenbasis of Left Multiplication* |
 | The three strata, their minimal polynomials, centralisers and normal forms | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), §*The Three Strata* |
-| The isotropic line, the canonical flag and the absence of a canonical complement | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Isotropic Line and the Flag* |
+| The isotropic line, the canonical flag and the absence of a canonical complement | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Isotropic Line and the Flag* |
 | The normalised Peirce basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the unique expansion | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), §*The Eigenbasis* and §*Expansion of Every Biquaternion* |
 | The four sectors $\Sigma_{ij}$ and the independence of $N\neq0$ and $B^2\neq0$ | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), §*The Four Sectors* |
-| The similarity classification on the cone | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Similarity Classification* |
+| The similarity classification on the cone | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Similarity Classification* |
 | The exponential and the logarithm in the regular, nilpotent and unipotent regimes | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The Fourier kernel, the root and the root-adapted basis | [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html), §*The Fourier Kernel* and §*Factorization into Complex Fourier Transforms* |
 | The unitary character and the root criterion | [The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root](../articles_maths/the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html), §*Unitarity of the Character and the Root* |
@@ -336,7 +336,7 @@ On the cone the two eigenvalues have coalesced at $Q_t$, the complex structure i
 | --- | --- | --- | --- | --- | --- | --- |
 | **scalar** | $\vec Q=0$ | $Q_te_t$ | $X-Q_t$ | iff $Q_t\neq0$ | $4$, or $0$ at the origin | pure rate; rest frame; trivial observable |
 | **nilpotent** | $\vec Q\neq0$, $Q_t=0$ | $\vec N$, $\vec N^2=0$ | $X^2$ | no | $2$ | null field; null shift; zero-frequency coupling |
-| **unipotent** | $\vec Q\neq0$, $Q_t\neq0$ | $Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$ | $(X-Q_t)^2$ | yes | $4$ | defective resonance; locked modes; reversible non-normal |
+| **unipotent** | $\vec Q\neq0$, $Q_t\neq0$ | $Q_t e_t+\vec\Upsilon$, $\vec\Upsilon^2=0$ | $(X-Q_t)^2$ | yes | $4$ | defective resonance; locked modes; reversible non-normal |
 
 **Interpretation.** The three strata are not three degrees of one phenomenon. They are the three normal forms of a nilpotent perturbation of a scalar: no perturbation ($N=0$), a perturbation with no scalar ($Q_t=0$), and a perturbation carried by a scalar ($Q_t\neq0$). The scalar line is the vertex of the cone; the nilpotent stratum is the zero-frequency subcone; the unipotent stratum is the generic part of the cone. The physical names follow the same division: a pure rate, a pure shift, and a rate with a shift.
 
@@ -607,7 +607,7 @@ The article does not claim that the three strata exhaust the physics of the cone
 
 ## Further Reading
 
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion, the two cases, the three strata and the flag.
+- [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion, the two cases, the three strata and the flag.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the normalised Peirce basis, the unique expansion and the spinor interpretation.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, the eigenprojections and the matrix model.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two conditions.
@@ -625,7 +625,7 @@ The article does not claim that the three strata exhaust the physics of the cone
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the four-momentum as the Doppler pair.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the defective strata as exceptional points and the $\sqrt{\epsilon}$ law.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the null cone, the massless spectrum and the null field.
-- [Nilpotents and Fermions](nilpotents-and-fermions-modes-lattices-and-the-semiclassical-limit.html), for the nilpotent as a fermionic mode.
+- [Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit](nilpotents-and-fermions-modes-lattices-and-the-semiclassical-limit.html), for the nilpotent as a fermionic mode.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the non-normal mode basis on the regular set.
 - [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the generator of a defective but reversible process.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material-sector dictionary and the rest frame.

@@ -391,7 +391,7 @@ The correspondence does not say that nature is complex, and it does not derive t
 
 ## Further Reading
 
-- [The Element and Operator Representations](the-element-and-operator-representations.html), for the correspondence table this article extends.
+- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), for the correspondence table this article extends.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections.
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the ball and its boundary.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state conditions and the Born pairing.

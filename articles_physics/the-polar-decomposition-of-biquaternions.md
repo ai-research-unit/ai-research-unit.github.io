@@ -379,7 +379,7 @@ The rotor is the Thomas–Wigner rotation when two boosts are composed, and it i
 ## Further Reading
 
 - [The Polar Decomposition in Subspaces](the-polar-decomposition-in-subspaces.html), for the Hamilton, complex and Cartan representations as the three pairings of the four factors.
-- [The Element and Operator Representations](the-element-and-operator-representations.html), for the 2×2 and 4×4 matrix images, the determinant $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$, the two chiralities and the coefficient space.
+- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), for the 2×2 and 4×4 matrix images, the determinant $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$, the two chiralities and the coefficient space.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Cartan decomposition, the non-closure of the boosts and the Thomas–Wigner rotation.
 - [The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form](the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.html), for the $\pm e_t$ kernel and the sign normalisation of the rotor.
 - [Spin Entropy and the Lorentz Group in Biquaternionic Form](spin-entropy-and-the-lorentz-group-in-biquaternionic-form.html), for the interpretation of the central circle and the boost parameters as information.

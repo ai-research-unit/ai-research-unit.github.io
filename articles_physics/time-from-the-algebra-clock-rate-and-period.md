@@ -23,9 +23,9 @@ The article develops five readings: the root as a clock, the Fourier kernel as t
 | The logarithm, the branch lattice and the generator | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), §*The Logarithm* |
 | The material and informational slices | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) |
 | The local complex structure and the speed of light | [The Local Complex Structure and the Speed of Light](the-local-complex-structure-and-the-speed-of-light.html) |
-| The generator as a gauge | [Generators, Periods and the Boundary of Evolution](the-exponential-the-logarithm-and-the-generator.html) |
+| The generator as a gauge | [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html) |
 | The no-clock theorem of the probability band | [The Probability Band: No Clock, Three Species and the Geometric Phase](the-probability-band-no-clock-three-species-and-the-geometric-phase.html) |
-| The modular flow of a state | [Thermality from the Modular Pair](thermality-from-the-modular-pair-state-clock-and-the-definite-reading.html) |
+| The modular flow of a state | [Thermality from the Modular Pair: State, Clock and the Definite Reading](thermality-from-the-modular-pair-state-clock-and-the-definite-reading.html) |
 
 ## A Clock Is a Root of $-1$
 
@@ -232,9 +232,9 @@ No dynamics is supplied. The article reads the clocks the algebra carries; it do
 
 ## Further Reading
 
-- [Generators, Periods and the Boundary of Evolution](the-exponential-the-logarithm-and-the-generator.html), for the logarithm, the branch lattice and the generator as a gauge.
+- [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the logarithm, the branch lattice and the generator as a gauge.
 - [The Probability Band: No Clock, Three Species and the Geometric Phase](the-probability-band-no-clock-three-species-and-the-geometric-phase.html), for the no-clock theorem and the holonomy.
 - [The Local Complex Structure and the Speed of Light](the-local-complex-structure-and-the-speed-of-light.html), for the two slices and the Wick rotation.
-- [Thermality from the Modular Pair](thermality-from-the-modular-pair-state-clock-and-the-definite-reading.html), for the thermal clock.
+- [Thermality from the Modular Pair: State, Clock and the Definite Reading](thermality-from-the-modular-pair-state-clock-and-the-definite-reading.html), for the thermal clock.
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html), for the Fourier kernel and its roots.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material time.

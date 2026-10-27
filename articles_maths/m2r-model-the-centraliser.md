@@ -1,0 +1,133 @@
+# __$M_2(\mathbb{R})$ Model : The Centraliser__
+
+## Introduction
+
+The centraliser of an element $\tilde q$ is the set of elements that commute with it. In a matrix algebra the centraliser of a matrix is governed by its minimal polynomial, and for $2\times2$ matrices the answer is short: a non-scalar matrix has a two-dimensional centraliser, spanned by the identity and the matrix itself, and the isomorphism type of that plane is decided by the discriminant of the characteristic polynomial.
+
+This article proves the two-dimensionality, identifies the centraliser with the polynomial algebra $\mathbb{R}[\tilde q]$, and separates the three types: the field $\mathbb{C}$, the product $\mathbb{R}\times\mathbb{R}$ and the dual numbers. The three types are exactly the three real Jordan forms of a $2\times2$ matrix, so the centraliser classifies the element up to conjugacy together with its trace and determinant.
+
+The element itself is *Split-Quaternion Algebra*, its spectrum is *Spectral Regularity and Degeneracy in the Split-Quaternion Algebra*, and the conjugation action is *$M_2(\mathbb{R})$ Model : The Sandwich and the Adjoint Action*. The Peirce decomposition is *$M_2(\mathbb{R})$ Model : The Idempotents and the Peirce Decomposition*.
+
+## The Centraliser of a Non-Scalar Element
+
+**Definition.** The **centraliser** of an element $\tilde q$ is
+
+$$
+C(\tilde q)=\{\tilde p : \tilde p\tilde q=\tilde q\tilde p\}.
+$$
+
+**Theorem (the centraliser is the polynomial algebra).** If $\tilde q$ is not scalar then
+
+$$
+C(\tilde q)=\mathbb{R}[\tilde q]=\operatorname{span}\{1,\tilde q\},
+$$
+
+a two-dimensional commutative subalgebra. If $\tilde q$ is scalar then $C(\tilde q)$ is the whole algebra.
+
+**Proof.** The scalar case is immediate. For the non-scalar case, let $X=\mathsf{M}_2(\tilde q)$. Since $X$ is not a scalar matrix, there is a vector $v$ such that $v$ and $Xv$ are linearly independent: if $v$ and $Xv$ were dependent for every $v$, every vector would be an eigenvector, which forces $X$ to be scalar. If $Y$ commutes with $X$ then $Y(Xv)=X(Yv)$, so $Y$ is determined on the basis $(v,Xv)$ by its value $Yv$; hence the centraliser has dimension at most two. The algebra $\mathbb{R}[X]$ contains $I$ and $X$, which are independent, so it has dimension two and is contained in the centraliser. The two dimensions agree.
+
+**Corollary (the multiplication table).** For a non-scalar element, in the basis $1,\tilde q$ the multiplication is
+
+$$
+\tilde q^2=2q_t\,\tilde q-\langle\tilde q\rangle_{\natural},
+$$
+
+so that
+
+$$
+C(\tilde q)\cong\mathbb{R}[x]\big/\bigl(x^2-2q_t x+\langle\tilde q\rangle_{\natural}\bigr).
+$$
+
+**Proof.** The identity is the Cayley–Hamilton identity of $\mathsf{M}_2(\tilde q)$, whose trace is $2q_t$ and whose determinant is the norm.
+
+**Corollary (the double centraliser).** For every element, $C(C(\tilde q))=C(\tilde q)$.
+
+**Proof.** The inclusion $C(\tilde q)\subseteq C(C(\tilde q))$ holds because $C(\tilde q)$ is commutative. Conversely, every element of $C(C(\tilde q))$ commutes with $\tilde q$, so it lies in $C(\tilde q)$.
+
+## The Three Types
+
+**Definition.** The **discriminant** of the element is the discriminant of its characteristic polynomial:
+
+$$
+\Delta=(2q_t)^2-4\langle\tilde q\rangle_{\natural}=4\bigl(q_t^2-q_x^2+q_y^2+q_z^2\bigr)=4\bigl(q_y^2+q_z^2-q_x^2\bigr).
+$$
+
+**Theorem (the trichotomy).** The centraliser of a non-scalar element is determined by the sign of the discriminant:
+
+| sign of $\Delta$ | centraliser | real Jordan form |
+|---|---|---|
+| $\Delta<0$ | $\mathbb{C}$ | a rotation-scaling block |
+| $\Delta=0$ | the dual numbers $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ | a Jordan block $\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}$ |
+| $\Delta>0$ | $\mathbb{R}\times\mathbb{R}$ | two distinct real eigenvalues |
+
+**Proof.** The quotient $\mathbb{R}[x]/(x^2-2q_t x+\langle\tilde q\rangle_{\natural})$ is a field exactly when the quadratic is irreducible, that is when $\Delta<0$; it is $\mathbb{R}\times\mathbb{R}$ exactly when the quadratic splits with distinct roots, that is when $\Delta>0$; and it is the dual numbers exactly when the quadratic is a square, that is when $\Delta=0$. The Jordan forms are the normal forms of the three cases, and the centraliser of a matrix depends only on its Jordan type.
+
+**Corollary (the centraliser of an idempotent).** The centraliser of the idempotent $\tilde\pi_+=\tfrac12(1+\vec e_y)$ is the diagonal part of the Peirce decomposition:
+
+$$
+C(\tilde\pi_+)=\operatorname{span}\{1,\vec e_y\}=D.
+$$
+
+**Proof.** The idempotent is not scalar, so its centraliser is $\operatorname{span}\{1,\tilde\pi_+\}=\operatorname{span}\{1,\vec e_y\}$, which is the diagonal part of the Peirce article.
+
+**Corollary (the centraliser of a nilpotent).** The centraliser of a non-zero nilpotent is the dual-number algebra spanned by the identity and the nilpotent.
+
+**Proof.** A non-zero nilpotent is not scalar and has $\Delta=0$, so its centraliser is the dual numbers, generated by $1$ and the nilpotent.
+
+## The Three Types in Coordinates
+
+**Proposition (the representatives).** The three types occur on the following representatives:
+
+| element | $q_t$ | norm | $\Delta$ | centraliser |
+|---|---|---|---|---|
+| $\vec e_x$ | $0$ | $1$ | $-4$ | $\mathbb{C}$ |
+| $2+\vec e_y$ | $2$ | $3$ | $4$ | $\mathbb{R}\times\mathbb{R}$ |
+| $\vec e_x+\vec e_y$ | $0$ | $0$ | $0$ | dual numbers |
+
+**Proof.** The discriminant is computed from the displayed formula. For $\vec e_x$ the norm is one and $\Delta=-4$; for $2+\vec e_y$ the norm is $4-1=3$ and $\Delta=4(4-3)=4$; for $\vec e_x+\vec e_y$ the norm is $1-1=0$ and $\Delta=0$, and indeed $(\vec e_x+\vec e_y)^2=0$.
+
+**Example (the complex type).** The element $\tilde q=3+4\vec e_x$ has $q_t=3$ and norm $9+16=25$, so $\Delta=4(9-25)=-64$. Its centraliser is the complex plane $\operatorname{span}\{1,3+4\vec e_x\}$, and the matrix is
+
+$$
+\mathsf{M}_2(3+4\vec e_x)=\begin{pmatrix}3&-4\\4&3\end{pmatrix}=5R_\theta,
+$$
+
+a scaling by five composed with the rotation of angle $\arctan(4/3)$.
+
+**Example (the split type).** The element $\tilde q=2+\vec e_y$ has matrix $\begin{pmatrix}2&1\\1&2\end{pmatrix}$, with eigenvalues $3$ and $1$. Its centraliser is the plane $\operatorname{span}\{1,2+\vec e_y\}$, which is the algebra $\mathbb{R}\times\mathbb{R}$ generated by the two idempotents $\tfrac12(1\pm\vec e_y)$.
+
+**Example (the parabolic type).** The element $\tilde q=\vec e_x+\vec e_y$ has matrix $\begin{pmatrix}0&0\\2&0\end{pmatrix}$, a non-zero nilpotent. Its centraliser is $\operatorname{span}\{1,\vec e_x+\vec e_y\}$, the dual-number algebra of the Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ after a change of basis.
+
+## Conjugacy and the Centraliser
+
+**Theorem (trace and determinant determine the class).** Two non-scalar matrices of $M_2(\mathbb{R})$ are conjugate under $GL_2(\mathbb{R})$ exactly when they have the same trace and the same determinant.
+
+**Proof.** A non-scalar $2\times2$ matrix has a minimal polynomial of degree two, equal to its characteristic polynomial $x^2-(\operatorname{tr}X)x+\det X$. Two matrices with the same characteristic polynomial therefore have the same rational canonical form, and they are conjugate.
+
+**Corollary (the dimension of a class).** The conjugacy class of a non-scalar element has dimension two, and the conjugacy classes are the level sets of the map $\tilde q\mapsto(2q_t,\langle\tilde q\rangle_{\natural})$.
+
+**Proof.** The centraliser has dimension two by the theorem, and the orbit has dimension $4-2=2$. The class is determined by the pair by the preceding theorem.
+
+**Remark (the discriminant curve).** The two invariants $(2q_t,\langle\tilde q\rangle_{\natural})$ are the trace and the determinant, and the discriminant is $\Delta=(\operatorname{tr})^2-4\det$. The curve $\Delta=0$ is the locus where the two eigenvalues coincide; there the centraliser degenerates from a field or a product to the dual numbers, and the element becomes a Jordan block rather than a diagonalisable matrix. The scalar elements are the points where the minimal polynomial has degree one, and their centraliser jumps to the whole algebra.
+
+## Summary
+
+The centraliser of a non-scalar split quaternion is the two-dimensional algebra $\mathbb{R}[\tilde q]=\operatorname{span}\{1,\tilde q\}$, and the centraliser of a scalar is the whole algebra. The centraliser is the quotient of the polynomial ring by the characteristic polynomial $x^2-2q_t x+\langle\tilde q\rangle_{\natural}$, and its type is decided by the discriminant $\Delta=4(q_y^2+q_z^2-q_x^2)$: the field $\mathbb{C}$ when $\Delta<0$, the dual numbers when $\Delta=0$, and the product $\mathbb{R}\times\mathbb{R}$ when $\Delta>0$.
+
+The three types are exactly the three real Jordan forms, so the centraliser, together with the trace and the determinant, classifies the element up to conjugacy. The centraliser of the idempotent $\tfrac12(1+\vec e_y)$ is the diagonal part of the Peirce decomposition, and the centraliser of a non-zero nilpotent is the dual-number algebra it generates.
+
+## Summary of Notation
+
+| Symbol | Meaning | Article |
+|---|---|---|
+| $C(\tilde q)$ | the centraliser of $\tilde q$ | this article |
+| $\mathbb{R}[\tilde q]$ | the polynomial algebra generated by $\tilde q$ | this article |
+| $\Delta$ | the discriminant $(\operatorname{tr})^2-4\det$ | *Spectral Regularity and Degeneracy in the Split-Quaternion Algebra* |
+| $D$ | the diagonal part of the Peirce decomposition | *$M_2(\mathbb{R})$ Model : The Idempotents and the Peirce Decomposition* |
+| $R_\theta$ | the rotation matrix of angle $\theta$ | *Split-Quaternion Matrix Element Representations* |
+
+## Further Reading
+
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the centraliser and the double centraliser of an element of a matrix algebra.
+- Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for the double centraliser theorem in the finite-dimensional case.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the real Jordan forms and the discriminant of a $2\times2$ matrix.

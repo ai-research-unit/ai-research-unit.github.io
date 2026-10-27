@@ -6304,6 +6304,9 @@
 <a href="articles_maths/split-quaternion-relations-between-subspaces.html">Split-Quaternion Relations Between Subspaces</a>
 <!-- the decompositions of the algebra and the remarkable subspaces at a glance, with defining conditions, bases, dimensions, closure properties and norms; the block decomposition; the tables of the intersections and the sums; the involutions as sign patterns; the action of the product and the commutator on each subspace; the relation to the corresponding article for $\mathbb{B}$. The comparison of the subspaces, the relation between them and the summary of the operators. -->
 
+<a href="articles_maths/m2r-model-the-subspaces-as-matrix-conditions.html">$M_2(\mathbb{R})$ Model : The Subspaces as Matrix Conditions</a>
+<!-- the scalar line as the scalar matrices and the vector subspace as the traceless matrices; the three coordinate planes through the identity and the family of planes $\operatorname{span}\{1,\vec v\}$ with its three types; the symmetric and the skew-symmetric parts; the dictionary between the split-quaternion coordinates and the matrix entries. -->
+
 <a href="articles_maths/split-quaternion-involution-lattice.html">Split-Quaternion Involution Lattice</a>
 <!-- the three involutions, their antilinearity and their antiautomorphism properties; the composition rules; the group they generate and its composition table; the fixed and anti-fixed spaces and the reduction of the labelled spaces; the lattice over the coordinate blocks; the orbits and the orbit stabiliser count; the relation to the involution lattice of $\mathbb{B}$. -->
 
@@ -6315,11 +6318,17 @@
 <a href="articles_maths/split-quaternion-ideals-and-peirce-decomposition.html">Split-Quaternion Ideals and Peirce Decomposition</a>
 <!-- ideals in a non-simple algebra; the two-sided ideals and the identification of the algebra with the $2\times2$ real matrix algebra; the minimal left and right ideals and the two idempotents; the Peirce decomposition; the matrix units; the contrast with $\mathbb{H}$, which has no proper ideals, and with $\mathbb{B}$. -->
 
+<a href="articles_maths/m2r-model-the-idempotents-and-the-peirce-decomposition.html">$M_2(\mathbb{R})$ Model : The Idempotents and the Peirce Decomposition</a>
+<!-- the idempotents $\tfrac12(1+\vec v)$ over the pure vectors of norm $-1$ as the rank-one projections; the hyperboloid of idempotents and its two standard points; the four Peirce corners as the matrix units in the basis adapted to the splitting; the diagonal and off-diagonal parts and the non-centrality, in contrast with the reduced biquaternions. -->
+
 <a href="articles_maths/split-quaternion-roots-of-minus-one.html">Split-Quaternion Roots of Minus One</a>
 <!-- the classification of the solutions of $\xi^2=-1$; their identification with the complex structures of $\mathbb{R}^2$; the root set as a single conjugacy class and as a homogeneous space; the relation to the idempotents and to the zero divisors; comparison with the quaternion and biquaternion cases. -->
 
 <a href="articles_maths/split-quaternion-zero-divisors.html">Split-Quaternion Zero Divisors</a>
 <!-- definition and criterion; the zero divisor set as the null cone; the rank-one matrices and the isotropic lines; the structure of the two families; the existence of nonzero nilpotents, in contrast with $\mathbb{H}$ and with $\mathbb{H}_{\mathbb{D}}$; the distribution of the zero divisors. The determinant form is a form and a distance and belongs to *Split-Quaternion Norm and Invertibility*. -->
+
+<a href="articles_maths/m2r-model-rank-one-matrices-and-the-null-cone.html">$M_2(\mathbb{R})$ Model : Rank-One Matrices and the Null Cone</a>
+<!-- the determinant as the norm of signature $(2,2)$; the rank stratification of units, zero divisors and the origin; the outer-product parametrisation $uv^{\mathsf T}$ and the square $(v^{\mathsf T}u)X$; the nilpotents as the pure null elements; the Clifford torus as the link of the null cone and the doubly ruled quadric. -->
 
 #### The Forms and the Split-Quaternion Norm
 
@@ -6350,16 +6359,24 @@
 <a href="articles_maths/split-quaternion-matrix-element-representations.html">Split-Quaternion Matrix Element Representations</a>
 <!-- the faithful $2\times2$ real matrix representation, its existence and its uniqueness up to conjugacy; the determinant as norm and the trace as scalar part; the image of the algebra as a linear subspace of $M_2(\mathbb{R})$; comparison with $\mathbb{H}$ and with the absence of such a representation for $\mathbb{H}_{\mathbb{D}}$. -->
 
+<a href="articles_maths/m2r-model-the-centraliser.html">$M_2(\mathbb{R})$ Model : The Centraliser</a>
+<!-- the centraliser of a non-scalar element as $\mathbb{R}[\tilde q]$, of dimension two; the discriminant and the trichotomy $\mathbb{C}$, the dual numbers and $\mathbb{R}\times\mathbb{R}$; the double centraliser; the conjugacy classes by trace and determinant. -->
+
+<a href="articles_maths/m2r-model-the-conjugations-and-the-adjoints.html">$M_2(\mathbb{R})$ Model : The Conjugations and the Adjoints</a>
+<!-- the conjugation as the adjugate, the principal involution as an inner automorphism and the reversal as a twisted transpose; the fourth anti-involution given by the transpose; the determinant form and the trace form; the adjoints of left and right multiplication and the self-adjoint and skew-adjoint subspaces; the Killing form of the traceless part. -->
+
 <a href="articles_maths/split-quaternion-four-vector-element-representation.html">Split-Quaternion Four-Vector Element Representation</a>
 <!-- the split quaternion read as its four real coordinates; the column and the dual row vector; multiplication in components; the three involutions in coordinates; the scalar and vector subspaces; the norm with its signs; the analogue of the four-vector representation of $\mathbb{B}$. -->
 
 <a href="articles_maths/split-quaternion-other-algebraic-element-representations.html">Split-Quaternion Other Algebraic Element Representations</a>
 <!-- the realizations with no dedicated article: the identification of the algebra with a Clifford algebra, the Clifford module structure, and the relation to the split complex and matrix models; the relation to the representations of $\mathbb{B}$; the role of choices. -->
 
-### Topology
+#### Operators
 
-<a href="articles_maths/split-quaternion-norm-and-invertibility.html">Split-Quaternion Norm and Invertibility</a>
-<!-- the split-quaternion norm and the determinant form of signature $(2,2)$; isotropy; the invertibility criterion $\det\neq0$; the group of units and its relation to $GL_2(\mathbb{R})$; the three-way classification of the elements; the distribution of the invertible elements; comparison with the quaternion and split-biquaternion cases. -->
+<a href="articles_maths/m2r-model-the-sandwich-and-the-adjoint-action.html">$M_2(\mathbb{R})$ Model : The Sandwich and the Adjoint Action</a>
+<!-- the sandwiches $T_{A,B}(X)=AXB^{-1}$ and the group $(GL_2\times GL_2)/\Delta$; the determinant-preserving subgroup $SO(2,2)$ and its identity component $(SL_2\times SL_2)/\{\pm1\}$; the adjoint action $PGL_2\cong SO(2,1)$ and the double cover of the Lorentz group; the action on the rulings; the enveloping algebra and the Kronecker form. -->
+
+### Topology
 
 <a href="articles_maths/split-quaternion-topology.html">Split-Quaternion Topology</a>
 <!-- the topology of the algebra as $\mathbb{R}^4$; contractibility; the group of units and its components; the null cone, the link it carries and the two families of isotropic lines; comparison with the topology of $\mathbb{B}$. -->
@@ -6400,6 +6417,9 @@
 
 <a href="articles_maths/split-quaternion-rotations-and-the-lorentz-group.html">Split-Quaternion Rotations and the Lorentz Group</a>
 <!-- the unit split-quaternions, their two components and the group $\mathrm{SL}_2(\mathbb{R})$; the adjoint action on the vector subspace and the double cover $\mathrm{SL}_2(\mathbb{R})\to\mathrm{SO}^+(2,1)$; the three-dimensional Lorentz group of signature $(2,1)$; hyperbolic rotations and the trichotomy of timelike, lightlike and spacelike elements; comparison with the quaternion and split-biquaternion cases. -->
+
+<a href="articles_maths/m2r-model-the-projective-line-and-the-mobius-action.html">$M_2(\mathbb{R})$ Model : The Projective Line and the Möbius Action</a>
+<!-- the minimal left ideals as the lines of $\mathbb{R}^2$; the action of $PGL_2(\mathbb{R})$ and its two components, with $PSL_2$ the identity component; the chart and the Möbius formula; the idempotents as projections onto a line, fibred over $\mathbb{R}P^1$; the cross-ratio; the boundary of the hyperbolic plane and the comparison with $\mathbb{C}P^1$. -->
 
 <a href="articles_maths/split-quaternion-automorphisms-and-derivations.html">Split-Quaternion Automorphisms and Derivations</a>
 <!-- the automorphisms of the algebra over $\mathbb{R}$ as the inner automorphisms of the matrix model; the derivations and their identification with the traceless matrices under the bracket; the outer automorphisms; the contrast with the biquaternion case; the Lie algebra statement. -->

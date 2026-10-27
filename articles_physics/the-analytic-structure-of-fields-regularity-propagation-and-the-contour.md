@@ -211,4 +211,4 @@ The shifted operator's parameter is not necessarily a physical mass. It is an el
 - [Fueter Theory for Biquaternions](../articles_maths/fueter-theory-for-biquaternions.html), for the axial construction.
 - [Biquaternion Integration](../articles_maths/biquaternion-integration.html), for the fundamental solution, the Kirchhoff–Green formula and the residue.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone and the massless limit.
-- [Thermality from the Modular Pair](thermality-from-the-modular-pair-state-clock-and-the-definite-reading.html), for the state and the clock.
+- [Thermality from the Modular Pair: State, Clock and the Definite Reading](thermality-from-the-modular-pair-state-clock-and-the-definite-reading.html), for the state and the clock.

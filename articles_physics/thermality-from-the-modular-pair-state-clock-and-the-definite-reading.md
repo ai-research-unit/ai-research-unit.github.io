@@ -15,8 +15,8 @@ The article reads the modular structure physically: the modular flow as the cloc
 | The Tomita operator, the polar decomposition and the modular flow | [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html) |
 | The obstruction in the indefinite reading | [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html), §*The Indefinite Obstruction* |
 | The Krein adjoint and the failure of the Krein–von Neumann property | [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html) |
-| The modular reading of the Cartan amplitude | [The Cartan Pairing: Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html) |
-| The two sides and the commutant | [Operators and the Three Actions](the-element-and-operator-representations.html) |
+| The modular reading of the Cartan amplitude | [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html) |
+| The two sides and the commutant | [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html) |
 | The indefinite form and its cones | [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html) |
 | The state space and the Born form | [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) |
 | The modular clock | [Time from the Algebra: Clock, Rate and Period](time-from-the-algebra-clock-rate-and-period.html) |
@@ -213,7 +213,7 @@ No dynamics is supplied. The modular flow is a clock, not an equation of motion,
 
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html), for the operator and the obstruction.
 - [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html), for the indefinite adjoint and the envelope.
-- [The Cartan Pairing: Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the modular reading of the amplitude.
+- [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the modular reading of the amplitude.
 - [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the gauge calibration and the cones.
 - [Time from the Algebra: Clock, Rate and Period](time-from-the-algebra-clock-rate-and-period.html), for the clock reading.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the Born form.

@@ -1,4 +1,4 @@
-# __The Vacuum and the Nilpotent Ladder__
+# __The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ $$
 \tilde Q^2=0,
 $$
 
-and the two eigenvalues are both zero. The cell is the intersection of the null cone and the spectral cone, the apex of the arrangement.
+and the two eigenvalues are both zero. The cell is the intersection of the null cone and the spectral cone, the degenerate stratum of the arrangement.
 
 It has two faces. The **origin** is the only semisimple element: the zero element, with no scale, no mode and no direction. The **nilpotent cone** is the set of non-zero pure isotropic vectors: elements that square to zero but are not zero. On the material slice only the origin survives. In the full algebra the nilpotents are the fermionic ladder: a pair of them anticommutes to the identity, and their products are the two orthogonal rungs of a two-level system.
 
@@ -219,7 +219,7 @@ A path in the rest-frame cell that sends $Q_t\to0$ lands at the origin. A path i
 - **The ladder is capped at two rungs.** The algebra is $M_2(\mathbb{C})$, the module is two-dimensional, and there is no third orthogonal idempotent. The reading is a single fermionic mode, not a field.
 - **The square-zero is exclusion.** Applying the same nilpotent twice gives zero; the mode cannot be occupied twice. The algebraic statement is the skeleton of the Pauli exclusion principle, not its derivation.
 - **The vacuum is not the identity.** $e_t$ is a unit on the scalar line; the vacuum is $0$. The algebra has no zero multiplicative identity, and the two must not be confused.
-- **The cell is the apex of the arrangement.** Every cell has the origin in its closure; the nilpotent cone is the tangent cone at the origin. The vacuum is the limit of every regime.
+- **The cell sits at the apex of the arrangement.** Every cell has the origin in its closure; the nilpotent cone is the tangent cone at the origin. The vacuum is the limit of every regime.
 - **The nilpotent is not a photon.** A massless momentum is a zero divisor with $B^2\neq0$ and a non-zero square; a nilpotent has $B^2=0$ and a zero square. The two degenerate cells are different physical regimes.
 - **The ladder is the bridge to the state space.** The nilpotents are not Hermitian, but their products are; the rungs lie in the informational sector. The reading connects the vacuum cell to the two-state space.
 
@@ -243,7 +243,7 @@ No dynamics is supplied. The cell says what the vacuum and the nilpotents are at
 - A pair of nilpotents with anticommutator $e_t$ is the fermionic ladder; their products are two orthogonal Hermitian idempotents, the two rungs.
 - The ladder has exactly two rungs; the algebra is $M_2(\mathbb{C})$ and the module is two-dimensional.
 - The product of two nilpotents is zero or a light-ray idempotent; the cell is not product-closed.
-- The cell is the apex of the arrangement: every cell has the origin in its closure, and the nilpotent cone is the tangent cone at the origin.
+- The cell sits at the apex of the arrangement: every cell has the origin in its closure, and the nilpotent cone is the tangent cone at the origin.
 - The nilpotent is not a photon: a massless momentum has $B^2\neq0$ and a non-zero square; a nilpotent has $B^2=0$ and a zero square.
 - The cell supplies no dynamics, no field, no statistics and no derivation of exclusion.
 
@@ -262,7 +262,7 @@ No dynamics is supplied. The cell says what the vacuum and the nilpotents are at
 
 - [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three cells.
 - [Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit](nilpotents-and-fermions-modes-lattices-and-the-semiclassical-limit.html), for the nine readings of the nilpotent.
-- [The Massless Regime: Light Rays](the-n-degenerate-spectrally-regular-sector-the-massless-regime.html), for the other degenerate cell.
-- [The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), for the defective unit.
+- [The N-Degenerate, Spectrally Regular Sector: The Massless Regime](the-n-degenerate-spectrally-regular-sector-the-massless-regime.html), for the other degenerate cell.
+- [The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), for the defective unit.
 - [Spin and the Two State Spaces](spin-and-the-two-state-spaces.html), for the rungs and the state space.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the nesting of the cones.

@@ -20,7 +20,7 @@ The conventions are those of *Conventions in the Biquaternion Universe*. The alg
 | the positive cone and the Hermitian square root | [*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), §*The Polar Decomposition* | existence and uniqueness of $\tilde H\ge0$ |
 | the generalized pairing on the null cone | [*The Polar Decomposition of a N-Degenerate Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), §*The Two-Factor Decomposition* | the rank-one case and the partial isometry |
 | the state space, the Bloch ball and the Born rule | [*Quantum Physics in Biquaternionic Form*](quantum-physics-in-biquaternionic-form.html), §*States* | the normalisation and the trace-one condition |
-| the trace reading of the Born weight | [*The Born Rule from the Hermitian Form*](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), §*The Trace Reading and Normalisation* | $\operatorname{Tr}(\tilde Q\tilde Q^{*})=2\langle\tilde Q,\tilde Q\rangle_{*}$ |
+| the trace reading of the Born weight | [*The Born Rule from the Hermitian Form — Derivation and Comparison*](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), §*The Trace Reading and Normalisation* | $\operatorname{Tr}(\tilde Q\tilde Q^{*})=2\langle\tilde Q,\tilde Q\rangle_{*}$ |
 | the modular Hamiltonian of a faithful state | [*The Modular Hamiltonian in Biquaternionic Form*](the-modular-hamiltonian-in-biquaternionic-form.html), §*Definition from the Modular Operator* | $\tilde K_{\mathrm{mod}}=-\ln\tilde{Ϛ}$ |
 
 ## The Map
@@ -156,10 +156,10 @@ The map is not an extra structure added to the theory; it is the common form of 
 
 | object | operator | state it defines | article |
 |---|---|---|---|
-| measurement outcome | Kraus operator $\tilde K_y$ | $\tilde K_y\tilde{Ϛ}\tilde K_y^{*}/p_y$ | [*The Polar Decomposition of a Kraus Operator*](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html) |
-| polarization | Jones matrix $\tilde J$ | the normalized $\tilde J\tilde J^{*}$, the output coherency | [*Pancharatnam's Phase and the Polarization Sphere*](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html) |
+| measurement outcome | Kraus operator $\tilde K_y$ | $\tilde K_y\tilde{Ϛ}\tilde K_y^{*}/p_y$ | [*The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary*](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html) |
+| polarization | Jones matrix $\tilde J$ | the normalized $\tilde J\tilde J^{*}$, the output coherency | [*Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html) |
 | scattering | S-matrix element $\tilde S$ | the normalized $\tilde S\tilde S^{*}$ | [*The S-Matrix in Biquaternionic Form*](the-s-matrix-in-biquaternionic-form.html) |
-| field | field strength $\tilde F$ | the normalized $\tilde F\tilde F^{*}$, an energy–momentum direction | [*The Field Strength Biquaternion and Its Invariants*](the-field-strength-biquaternion-and-its-invariants.html) |
+| field | field strength $\tilde F$ | the normalized $\tilde F\tilde F^{*}$, an energy–momentum direction | [*The Field-Strength Biquaternion and Its Invariants*](the-field-strength-biquaternion-and-its-invariants.html) |
 
 In each row the map is the same and the physical name of the state is different. The measurement row adds a conditioning on the initial state; the polarization row reads the state as a coherency matrix; the scattering row reads it as the state produced by an interaction; the field row reads it as the direction of the energy–momentum element. The unity is algebraic, and the differences are in the interpretation of the operator.
 
@@ -229,7 +229,7 @@ Read as a whole, the table is a dictionary between the algebra's rank straticati
 - [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the rank-one case and the partial isometry.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone and the square root.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the comparison of the three first factors.
-- [The Polar Decomposition of a Kraus Operator](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the measurement reading of the three strata.
+- [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the measurement reading of the three strata.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the state space and the Born rule.
 - [The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html), for the modular operator and the Tomita–Takesaki conjugation.
 - [The Ontology of the Quantum State under the Biquaternion Framework](the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html), for the state as the Hermitian square.

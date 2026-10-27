@@ -168,7 +168,7 @@ The question has a sharp answer.
 | Process | Element | In the image of $\exp$? | Generator |
 | --- | --- | --- | --- |
 | reversible, distinct spectrum | unit, $B\neq0$ | yes | $\tilde L$ up to the parity lattice |
-| reversible, Jordan | unit, $Q_t(e_t+N)$ | yes | $\tilde L$ up to $2\pi i\mathbb{Z}e_t$ |
+| reversible, Jordan | unit, $Q_t e_t+N$ | yes | $\tilde L$ up to $2\pi i\mathbb{Z}e_t$ |
 | reversible, scalar | unit, $Q_te_t$ | yes | $\tilde L$ plus the vector logarithms |
 | zero divisor | $2Q_t\tilde\Pi$ or $N$ | no | none |
 | irreversible channel | completely positive trace-preserving map | not a single element | no algebraic generator |

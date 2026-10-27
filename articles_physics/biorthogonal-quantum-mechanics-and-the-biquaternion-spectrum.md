@@ -16,9 +16,9 @@ This article reads that structure in the biquaternion algebra. The spectral deco
 | The normality criterion and the Hermitian case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | Left and right eigenvalues, and the central-spectrum convention | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The spectral theorem for a normal element | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
-| The matrix model and the determinant | [The Element and Operator Representations](the-element-and-operator-representations.html) |
+| The matrix model and the determinant | [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html) |
 | The Hermitian norm of the flow and the norm deficit $\lVert\rho\rVert^2-1$ | [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), §*Normality, Unitarity and the Hermitian Norm of the Flow* |
-| The degenerate case and the non-semisimple class | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The degenerate case and the non-semisimple class | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 
 ## The Two Eigenbases
 
@@ -256,7 +256,7 @@ No dynamics, no arrow of time and no preferred metric are supplied. The article 
 
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, the eigenprojections and the normality criterion.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the left and right eigenvalue problems and the spectral theorem.
-- [The Element and Operator Representations](the-element-and-operator-representations.html), for the matrix model used throughout.
+- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), for the matrix model used throughout.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the degenerate limit of the two bases.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian state space and the Born rule.
 - [The Measurement Problem in Algebraic Form](the-measurement-problem-in-algebraic-form.html), for the measurement postulate that this article does not derive.

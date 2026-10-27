@@ -232,8 +232,8 @@ A nilpotent is a nonzero square-zero element of $\mathbb{B}$, necessarily pure w
 - [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html), for the root sets of $0$ in the twelve products.
 - [Roots, Idempotents and Observables](roots-idempotents-and-observables.html), for the idempotents as states and the roots of $+1$.
 - [Roots, Idempotents and Quantum Information](roots-idempotents-and-quantum-information.html), for the idempotent basis of the qubit and the stabilizer codes.
-- [The Spinor Module and Its Two Structures](spin-and-the-two-state-spaces.html), for the module on which the ladder acts.
-- [The Complementary Ideal and the Second State Space](spin-and-the-two-state-spaces.html), for the mass coupling as a nilpotent matrix unit.
+- [Spin and the Two State Spaces](spin-and-the-two-state-spaces.html), for the module on which the ladder acts.
+- [Spin and the Two State Spaces](spin-and-the-two-state-spaces.html), for the mass coupling as a nilpotent matrix unit.
 - [The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form](the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.html), for the hole-theory reading.
 - [The Jordan–Wigner Transformation in Biquaternionic Form](the-jordan-wigner-transformation-in-biquaternionic-form.html), for the one-site square root and the string.
 - [Grassmann Coherent States in Biquaternionic Form](grassmann-coherent-states-in-biquaternionic-form.html), for the odd extension.

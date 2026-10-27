@@ -1,4 +1,4 @@
-# __The Massless Regime: Light Rays__
+# __The N-Degenerate, Spectrally Regular Sector: The Massless Regime__
 
 ## Introduction
 
@@ -51,7 +51,7 @@ $$
 \tilde\Pi=\frac{\tilde Q}{2Q_t}=\frac{\tilde Q}{c}.
 $$
 
-The cell is of real dimension six. It is the interior of the null cone in the sense of the cone's smooth part: the apex and the nilpotent directions are removed. Its closure is the full null cone, and the removed set is the cell $\Sigma_{00}$.
+The cell is of real dimension six. It is the null cone with the apex and the nilpotent directions removed. Its closure is the full null cone, and the removed set is the cell $\Sigma_{00}$.
 
 An element of the cell has the characteristic polynomial
 
@@ -167,7 +167,7 @@ The idempotent is not a Hermitian pure state on the material slice. It is a null
 
 ## The Zero Divisor
 
-The cell is the smooth part of the zero-divisor cone. The vanishing of the norm is the vanishing of the product with the conjugate:
+The cell is the zero-divisor cone with its vertex and its nilpotent directions removed. The vanishing of the norm is the vanishing of the product with the conjugate:
 
 $$
 \tilde Q\tilde Q^{\natural}=N e_t=0.
@@ -195,9 +195,9 @@ $$
 
 and both outcomes occur. The product of two scaled idempotents is a scaled idempotent when the idempotents compose to an idempotent, and zero when they are orthogonal. The product is never a unit.
 
-The boundary of the cell is the doubly degenerate cell $\Sigma_{00}$: the apex and the nilpotent directions. The cell is the boundary of the unit group at $N=0$: a path in $\Sigma_{11}$ that reaches $N=0$ lands here, unless it also reaches $B=0$, in which case it lands in $\Sigma_{00}$.
+The boundary of the cell is the doubly degenerate cell $\Sigma_{00}$: the apex and the nilpotent directions. The cell lies on the boundary of the unit group at $N=0$: a path in $\Sigma_{11}$ that reaches $N=0$ lands here, unless it also reaches $B=0$, in which case it lands in $\Sigma_{00}$.
 
-The cell is the interior of the null cone minus its singular part. Its closure is the full cone; the removed set is the set of elements with one mode, which is the other degenerate cell.
+The cell is the null cone minus its vertex and its nilpotent directions. Its closure is the full cone; the removed set is the set of elements with one mode, which is the other degenerate cell.
 
 ## Physical Interpretations
 
@@ -207,8 +207,8 @@ The cell is the interior of the null cone minus its singular part. Its closure i
 - **The spectrum has one zero.** The two-term writing survives with one term; the massless limit is a limit of coefficients, not a breakdown of the spectral decomposition.
 - **There is no inverse and no generator.** The element is not invertible, and the exponential is invertible, so no logarithm exists. The ray is not a reversible process.
 - **The idempotent is a null flag, not a state.** On the material slice it is not Hermitian; it is a rank-one projector in the matrix model, not a density matrix. The physical reading is a ray, not a pure state.
-- **The cone is ruled.** The rays are the null lines; the celestial sphere is the base, the scale is the fiber. The cell is the smooth part of the cone.
-- **The cell is the boundary of the unit group.** A massive element reaching the light cone lands here; a massless element is the limit of a moving massive one.
+- **The cone is ruled.** The rays are the null lines; the celestial sphere is the base, the scale is the fiber. The cell is the generic part of the cone.
+- **The cell lies on the boundary of the unit group.** A massive element reaching the light cone lands here unless it also reaches the nilpotent directions; a massless element is the limit of a moving massive one.
 
 ## Limits
 
@@ -231,7 +231,7 @@ The cell is not a particle count. One zero eigenvalue is one frozen mode, not an
 - The element is not invertible, has no logarithm and no generator; the process is not reversible.
 - On the material slice it is a massless momentum: one light-cone frequency zero, the other $2E/c$; the massless limit of the Doppler pair.
 - The idempotent is a null flag, not a Hermitian pure state; the physical reading is a ray, not a density matrix.
-- The cone is ruled by the null lines; the cell is the smooth part, with the doubly degenerate cell as boundary.
+- The cone is ruled by the null lines; the cell is the generic part, with the doubly degenerate cell as boundary.
 - The cell supplies no dynamics, no wave equation and no particle count.
 
 ## Summary of Notation
@@ -252,6 +252,6 @@ The cell is not a particle count. One zero eigenvalue is one frozen mode, not an
 - [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three cells.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone, its rulings and the massless limit.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the massless limit of the Doppler pair.
-- [The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for the boundary of the cell.
-- [Mass in Motion: The Two-Mode Regime](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for the cell whose boundary this is.
+- [The N-Degenerate, Spectrally Degenerate Sector: The Vacuum and the Nilpotent Ladder](the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html), for the boundary of the cell.
+- [The N-Regular, Spectrally Regular Sector: Mass in Motion](the-n-regular-spectrally-regular-sector-mass-in-motion.html), for the cell whose boundary this is.
 - [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html), for the primitive idempotents and the spinor spaces.

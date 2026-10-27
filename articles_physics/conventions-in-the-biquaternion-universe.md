@@ -726,7 +726,7 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 | the general plain sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | $H$ | the Hermitian norm $\langle\tilde{Q}\rangle_{*}$ |
 | the general quaternionic sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$ | $K$ | the Krein norm $\langle\tilde{Q}\rangle_{\natural*}$ |
 
-**The qualified regular and the qualified degenerate.** For a letter $\Phi$ of the four, a biquaternion is **$\Phi$-regular** when $\Phi(\tilde{Q})\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the unit group and $N$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, so the letter is never omitted.
+**The qualified regular and the qualified degenerate.** For a letter $\Phi$ of the four, a biquaternion is **$\Phi$-regular** when $\Phi(\tilde{Q})\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the unit group and $N$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
 
 ### The Unitary Convention
 
@@ -1491,4 +1491,4 @@ The tilde-marked element glyphs are collected in §*The Most Common Quaternions 
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for idempotents, minimal left ideals, and the conjugations of a Clifford algebra.
 - F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for real structures and real forms on Clifford algebras.
 - [The Biquaternion Space, the Group of Involutions and the Six Subspaces](the-biquaternion-space-the-group-of-involutions-and-the-six-subspaces.html), companion article, for the relations among the subspaces defined here — their coordinate blocks, intersections, spans, gradings and biquaternion norms.
-- [The Element and Operator Representations](the-element-and-operator-representations.html), companion article, for the coefficient space, the 2×2 and 4×4 matrix images, the determinant and the two chiralities.
+- [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), companion article, for the coefficient space, the 2×2 and 4×4 matrix images, the determinant and the two chiralities.
