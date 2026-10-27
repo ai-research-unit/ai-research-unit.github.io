@@ -216,7 +216,7 @@ $$
 \left\{\tilde{Q} : \langle\tilde Q\rangle_{\natural}\neq0 \ \text{ and } \ \langle\vec Q,\vec Q\rangle_{\natural}\neq0\right\},
 $$
 
-which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the degenerate case $B=0$, $\vec Q\neq0$ of *The Spectrum*, §*The Behaviour on the Cone*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec\Xi=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\Rho$ and $B$ are fixed.
+which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the degenerate case $B=0$, $\vec Q\neq0$ of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec\Xi=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\Rho$ and $B$ are fixed.
 
 ## The Three Pairings
 
@@ -534,7 +534,7 @@ the complex number $\frac{\theta}{2}-i\frac{\psi}{2} = 1.080834538-0.378136610i$
 
 ### The Element with a Null Vector Part
 
-Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = 1$ but $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so $B=0$ and the Hamilton axis does not exist. The element lies in the degenerate case of *The Spectrum*, §*The Behaviour on the Cone*, where the vector part $N=\vec Q$ satisfies $N^2=0$: a single Jordan block, with no eigenvalue decomposition. The four-factor word exists, and with it the quaternion and Cartan pairings of the companion articles; only the Hamilton pairing is unavailable.
+Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = 1$ but $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so $B=0$ and the Hamilton axis does not exist. The element lies in the degenerate case of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*, where the vector part $N=\vec Q$ satisfies $N^2=0$: a single Jordan block, with no eigenvalue decomposition. The four-factor word exists, and with it the quaternion and Cartan pairings of the companion articles; only the Hamilton pairing is unavailable.
 
 ### The Element with a Vanishing Real Part
 
@@ -548,7 +548,7 @@ The real quaternion part vanishes, $\tilde q_r = 0$, so the quaternion construct
 
 ### The Scalar Imaginary
 
-Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=0$, so $B=0$: the modulus $\Rho=i$ exists but the axis and the angle do not, and the Hamilton representation is unavailable. The polar word is $i = 1\cdot\exp(i\pi/2)\cdot e_t\cdot e_t$. The element is the scalar vertex of *The Spectrum*, §*The Behaviour on the Cone*, in which the eigenprojections are not unique. The Cartan pairing reads $i=e_t\cdot i$; the quaternion construction also fails, since $\tilde q_r=0$.
+Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=0$, so $B=0$: the modulus $\Rho=i$ exists but the axis and the angle do not, and the Hamilton representation is unavailable. The polar word is $i = 1\cdot\exp(i\pi/2)\cdot e_t\cdot e_t$. The element is the scalar vertex of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Boundary*. The Cartan pairing reads $i=e_t\cdot i$; the quaternion construction also fails, since $\tilde q_r=0$.
 
 ### An Element at a Root of One
 

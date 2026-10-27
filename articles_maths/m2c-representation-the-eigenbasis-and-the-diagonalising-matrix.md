@@ -4,11 +4,11 @@
 
 A spectrally regular element has a basis of eigenvectors, and in that basis its matrix is diagonal. The basis is not the standard one: it depends on the element, and the matrix that changes from the standard basis to it is the diagonalising matrix. The coordinate model attached to that basis is the one in which the element is diagonal, its two eigenvalues are the diagonal entries, and the two mixed Peirce elements are the off-diagonal units.
 
-This article develops the eigenbasis model and the diagonalising matrix. It is the matrix form of *The Eigenbasis*, §*The Eigenbasis*, §*The Matrix Model* and §*Change of Basis*.
+This article develops the eigenbasis model and the diagonalising matrix. It is the matrix form of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Eigenbasis*, §*The Matrix Model* and §*Change of Basis*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The element is $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The spectral direction is $\vec\Xi=-i\vec Q/B$, the spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, and the eigenvalues are $\lambda_\pm=Q_t\pm iB$. The two mixed elements are written $\vec\Upsilon_-$ and $\vec\Upsilon_+$, with $\vec\Upsilon_-\mapsto E_{12}$ and $\vec\Upsilon_+\mapsto E_{21}$ in the eigenbasis model.
 
-**Boundaries.** The construction of the basis and of the nilpotents is *The Eigenbasis*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*; the Peirce coordinates of the standard pair are *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*; the 4×4 model is *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
+**Boundaries.** The construction of the basis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the spectral projectors are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*; the Peirce coordinates of the standard pair are *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the 4×4 model is *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
 
 ## The Eigenbasis
 
@@ -356,9 +356,9 @@ The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ multipl
 
 ## Further Reading
 
-- [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction of the basis and the change of basis
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction of the basis and the change of basis
 - [$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents](m2c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors
-- [$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units](m2c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the standard coordinate model
+- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the standard coordinate model
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the eight worked matrices, including the normal example
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion
 - [The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations](m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the 4×4 model

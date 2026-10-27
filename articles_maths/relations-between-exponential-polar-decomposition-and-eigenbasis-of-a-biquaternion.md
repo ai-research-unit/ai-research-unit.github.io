@@ -679,7 +679,7 @@ The polar domain is the complement of the null cone $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$.
 | Stratum | Condition | Spectral data | Form | Polar limit |
 |---|---|---|---|---|
 | Idempotent | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | $\lambda_+\neq\lambda_-$, one zero | $\tilde Q=\lambda_\sigma\tilde\Pi_\sigma$, a complex multiple of a minimal idempotent | $r\to0$, $\psi\to\infty$, $r e^{\psi/2}\to R$ |
-| Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $Q_t=0$, $\vec Q\neq0$ | $\lambda_+=\lambda_-=0$, no eigenprojection | $\tilde Q=\vec Q$, $\vec Q^2=0$ | the same limit with the rotor anticommuting with the boost axis |
+| Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\lambda_+=\lambda_-=0$, no eigenprojection | $\tilde Q=\vec Q$, $\vec Q^2=0$ | the same limit with the rotor anticommuting with the boost axis |
 
 For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec\Xi)$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *Idempotents* and *The Peirce Decomposition*, §*The Peirce Decompositions*; they are not repeated here.
 
@@ -912,7 +912,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 - [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the eight cases, the reconstruction and logarithm tables, and the null cone.
 - [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-biquaternions.html), for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* and §*The Eigenprojectors*, for the spectrum and the eigenprojections.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Two Cases* and §*The Degenerate Case: The Cone*, for the degenerate case.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Two Cases* and §*The Degenerate Case: The Spectral-Degenerate Cone*, for the degenerate case.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal branch.
 - [Exponential Polar Decomposition of Biquaternions](exponential-polar-decomposition-of-biquaternions.html), for the four-factor word, the Cartan decomposition, existence and uniqueness, the group law and the boundary.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus and the unit factor.

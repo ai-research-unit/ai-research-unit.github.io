@@ -15,7 +15,7 @@ $$
 
 and $\rho_\pm=\mathsf{M}_2(\tilde\Pi_\pm)$.
 
-**Boundaries.** The spectral criterion is *The Spectrum*; the eigenbasis construction is *The Eigenbasis*; the diagonalising matrix is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the nilpotent cone is *Nilpotents*; the 4×4 spectral representation remains in *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
+**Boundaries.** The spectral criterion is *The Spectrum*; the eigenbasis construction is *The Eigenbasis of a Spectrally Regular Biquaternion*; the diagonalising matrix is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the nilpotent cone is *Nilpotents*; the 4×4 spectral representation remains in *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
 
 ## The Spectral Projectors
 
@@ -145,7 +145,7 @@ $$
 
 *Proof.* Conjugation carries the matrix-unit relations $E_{12}^2=E_{21}^2=0$, $E_{12}E_{21}=E_{11}$, $E_{21}E_{12}=E_{22}$ to the stated relations, and it carries $E_{11},E_{22}$ to $\rho_+,\rho_-$. Trace and determinant are conjugation-invariant; the rank is one because the matrices are nonzero and square-zero in dimension two.
 
-**The explicit matrices.** In the fixed model the nilpotents are the conjugates of the off-diagonal units by $\mathsf C_Q$. The conjugation is the change from the standard eigenbasis to the spectral one, and it is the reason the nilpotents are not simply $E_{12}$ and $E_{21}$: the spectral eigenbasis is not the standard one unless the element points along the $z$-axis. The general closed form in the coefficients is given in *The Eigenbasis*, §*The Nilpotent Pair*.
+**The explicit matrices.** In the fixed model the nilpotents are the conjugates of the off-diagonal units by $\mathsf C_Q$. The conjugation is the change from the standard eigenbasis to the spectral one, and it is the reason the nilpotents are not simply $E_{12}$ and $E_{21}$: the spectral eigenbasis is not the standard one unless the element points along the $z$-axis. The general closed form in the coefficients is given in *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Nilpotent Pair*.
 
 **The Jordan form.** A nonzero nilpotent of $M_2(\mathbb{C})$ is conjugate to the Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$. The two nilpotents $N_\pm$ are therefore conjugate to each other and to the two standard off-diagonal units; the labels $+$ and $-$ record which mixed corner they occupy, not a conjugacy class. The nilpotent is the matrix form of the spectral-degenerate part of the element: it is the off-diagonal entry that appears when the two eigenvalues coalesce.
 
@@ -231,7 +231,7 @@ For a spectrally regular element the two spectral projectors are $\rho_\pm=\tfra
 
 ## Further Reading
 
-- [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction of the eigenbasis and the nilpotents
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction of the eigenbasis and the nilpotents
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion
 - [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix $\mathsf C_Q$
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone

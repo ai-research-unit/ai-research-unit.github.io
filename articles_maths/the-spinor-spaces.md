@@ -172,7 +172,7 @@ S_+\longmapsto\mathbb{C}E_{11}\oplus\mathbb{C}E_{21},
 S_-\longmapsto\mathbb{C}E_{12}\oplus\mathbb{C}E_{22}.
 $$
 
-A spinor of first chirality is a column vector, and the left action of $\tilde P$ is multiplication of that column by $\mathsf M(\tilde P)$. The right action multiplies the whole matrix on the right and therefore mixes the two columns. The matrix form, with the row picture and the lattice, is *$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces*.
+A spinor of first chirality is a column vector, and the left action of $\tilde P$ is multiplication of that column by $\mathsf M(\tilde P)$. The right action multiplies the whole matrix on the right and therefore mixes the two columns. The matrix form is *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
 ## Summary
 
@@ -196,5 +196,5 @@ A spinor of first chirality is a column vector, and the left action of $\tilde P
 
 - [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the corners, the Peirce table and the mixed units.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the module reading of the two spaces.
-- [$M_2(\mathbb{C})$ Representation : The Columns, the Rows and the Spinor Spaces](m2c-representation-the-columns-the-rows-and-the-spinor-spaces.html), for the matrix picture.
+- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix picture.
 - [Spinors as Minimal Left Ideals with Inner Conjugation](spinors-as-minimal-left-ideals-with-inner-conjugation.html), for the adjoints and the reality conditions.

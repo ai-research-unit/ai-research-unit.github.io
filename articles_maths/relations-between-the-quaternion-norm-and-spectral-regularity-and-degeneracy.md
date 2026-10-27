@@ -150,5 +150,5 @@ has one strict implication, whose failure is $\mathbb R^\times$.
 - [The Three Sectors of the Quaternion Algebra](the-three-sectors-of-the-quaternion-algebra.html), for the partition, dimensions and closures.
 - [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html), for the norms and signatures of the eight algebras.
 - [Comparison of the Algebras](comparison-of-the-algebras.html), for the master table of the eight.
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the biquaternion norm, its null cone and the four sectors.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the biquaternion norm, its null cone and the four sectors.
 - [Split-Quaternion Norm and Invertibility](split-quaternion-norm-and-invertibility.html), for the indefinite norm and its null cone.

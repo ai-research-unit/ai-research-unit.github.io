@@ -226,7 +226,7 @@ On the sector the eigenvalues are $\lambda_\pm=Q_t\pm iB$, both non-zero, and $\
 
 (ii) On $\Sigma_{10}$ the two eigenvalues coincide at the value $Q_t$, which is non-zero on the cell. The element is either the scalar $Q_t e_t$, with minimal polynomial $X-Q_t$, or a Jordan element $Q_t e_t+\vec\Upsilon$ with $\vec\Upsilon\neq0$ and $\vec\Upsilon^2=0$, with minimal polynomial $(X-Q_t)^2$; the second is not diagonalisable.
 
-*Proof.* The discriminant is $-4B^2$, so it vanishes exactly on $\Sigma_{10}$. On $\Sigma_{10}$ the element is $Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$; hence there is no non-trivial spectral decomposition off the scalar line (*Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Two Decompositions*).
+*Proof.* The discriminant is $-4B^2$, so it vanishes exactly on $\Sigma_{10}$. On $\Sigma_{10}$ the element is $Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^2=0$, and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$; hence there is no non-trivial spectral decomposition off the scalar line (*Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Two Decompositions*).
 
 **Definition.** The **scalar line** and the **Jordan cone** of the sector are
 
@@ -339,7 +339,7 @@ The spectrum does not split the sector into two open halves. The spectrally regu
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the four factors and the group of units
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the open dense cell
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan cone
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the determinant sequence, the centre and the covering
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the polar retraction, the homotopy groups and the universal cover
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the boundary of the sector and its link

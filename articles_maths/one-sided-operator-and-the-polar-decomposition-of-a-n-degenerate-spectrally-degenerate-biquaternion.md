@@ -298,7 +298,7 @@ $$
 \bigl(\tilde\Pi_+,\ \tilde\nu,\ \vec X,\ \tilde\Pi_-\bigr)
 $$
 
-form a basis, the canonical Jordan basis of *The Jordan Normal Form*, with the Peirce form purely off-diagonal:
+form a basis, the canonical Jordan basis of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, with the Peirce form purely off-diagonal:
 
 $$
 \tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-,
@@ -635,6 +635,6 @@ The phase $e^{i\beta}$ is in $\tilde Q_0$; the singular value $2\lvert c_0\rvert
 - [Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the companion sandwich and the single nilpotent chain.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the canonical Hermitian pair, the Peirce data and the no-eigenbasis theorem.
-- [The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the Jordan basis used in the Peirce matrices.
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the Jordan basis used in the Peirce matrices.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the contrasting spectrally regular case.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone and the quaternionic norm.

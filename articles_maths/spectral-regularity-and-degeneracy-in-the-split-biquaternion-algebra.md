@@ -144,7 +144,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t.
 $$
 
-When $B^2=0$ and $\vec Q\neq0$, the vector part is square-zero, so $L_{\vec Q}$ is nilpotent and $Q_te_t+\vec Q$ has minimal polynomial $(X-Q_t)^2$; it is defective. Thus the spectral cone $\{B^2=0\}$ has defect off its scalar line. This is *[Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html)*, §*The Two Cases* and §*The Degenerate Case: The Cone*.
+When $B^2=0$ and $\vec Q\neq0$, the vector part is square-zero, so $L_{\vec Q}$ is nilpotent and $Q_te_t+\vec Q$ has minimal polynomial $(X-Q_t)^2$; it is defective. Thus the spectral cone $\{B^2=0\}$ has defect off its scalar line. This is *[Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html)*, §*The Two Cases* and §*The Degenerate Case: The Spectral-Degenerate Cone*.
 
 The split algebra cannot reproduce this phenomenon. Its vector parts have real coefficients, and
 

@@ -152,7 +152,7 @@ This is the only sector in which the Peirce decomposition relative to $\tilde Q$
 $$
 \tilde Q=\lambda_+e_++\lambda_-e_-,\qquad \lambda_\pm=Q_t\pm\beta,\quad \beta=iB,
 $$
-is the eigenvalue decomposition of $\tilde Q$. It exists because the minimal polynomial is split and squarefree, and it is unique: the eigenvalues are distinct, so the spectral idempotents are determined by $\tilde Q$. The eigenbasis construction — the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonalisation of $L_{\tilde Q}$ — is in §*The Eigenbasis, the Nilpotents, and the Peirce Corners*; the general construction is in *The Eigenbasis*, §*The Eigenbasis*.
+is the eigenvalue decomposition of $\tilde Q$. It exists because the minimal polynomial is split and squarefree, and it is unique: the eigenvalues are distinct, so the spectral idempotents are determined by $\tilde Q$. The eigenbasis construction — the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the diagonalisation of $L_{\tilde Q}$ — is in §*The Eigenbasis, the Nilpotents, and the Peirce Corners*; the general construction is in *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Eigenbasis*.
 
 **Powers, inverse, and the eigenvalue map.** For every polynomial $f\in\mathbb{C}[X]$,
 $$
@@ -180,7 +180,7 @@ so the inverse lies in the sector.
 
 ## The Eigenbasis, the Nilpotents, and the Peirce Corners
 
-**Every $\tilde Q\in\Sigma_{11}$ has $B^2\neq0$. Its own root carries a Peirce pair, the two mixed corners carry a pair of nilpotents, and the four elements form a basis in which left multiplication by $\tilde Q$ is diagonal. The basis is a normalised Peirce eigenbasis of left multiplication; the two minimal left ideals are the eigenspaces of right multiplication, not of left multiplication.** This is the Q-dependent specialisation of the Peirce decomposition of *The Peirce Decomposition*, §*The Peirce Decompositions*: the four corner lines are the same construction, read relative to the pair of $\tilde Q$'s own root. The general construction, its normalisation and the expansion of an arbitrary biquaternion are in *The Eigenbasis*.
+**Every $\tilde Q\in\Sigma_{11}$ has $B^2\neq0$. Its own root carries a Peirce pair, the two mixed corners carry a pair of nilpotents, and the four elements form a basis in which left multiplication by $\tilde Q$ is diagonal. The basis is a normalised Peirce eigenbasis of left multiplication; the two minimal left ideals are the eigenspaces of right multiplication, not of left multiplication.** This is the Q-dependent specialisation of the Peirce decomposition of *The Peirce Decomposition*, §*The Peirce Decompositions*: the four corner lines are the same construction, read relative to the pair of $\tilde Q$'s own root. The general construction, its normalisation and the expansion of an arbitrary biquaternion are in *The Eigenbasis of a Spectrally Regular Biquaternion*.
 
 ### The Root, the Idempotents, and the Eigenvalues
 
@@ -359,7 +359,7 @@ $$
 $$
 which is the transverse-vector construction with $\vec X=\vec e_\mu$. The chart with axis $\mu$ is defined when $Q_\mu^2\neq B^2$, that is, when $Q_\nu^2+Q_\rho^2\neq0$ for the two other coordinates. At least one of the three is defined whenever $B\neq0$: if all three failed, then $Q_x^2+Q_y^2=Q_y^2+Q_z^2=Q_z^2+Q_x^2=0$, hence $Q_x^2=Q_y^2=Q_z^2$ and $2Q_x^2=0$, so $B=0$. The charts are the one formula read with $\mu=x,y,z$, and the ones that are defined give pairs differing by the reciprocal rescaling. The symmetric formula off the cone and the axis charts on it cover every $\vec Q$ with $B\neq0$.
 
-**The normalisation.** The symmetric formula off the exceptional cone, the axis chart on it and one fixed branch of the square root are the normalisation of *The Eigenbasis*, §*The Transverse-Vector Construction*: they fix the scale of the pair, and with them the quadruple $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is unique. Without this choice the pair is determined only up to the reciprocal rescaling of the theorem above.
+**The normalisation.** The symmetric formula off the exceptional cone, the axis chart on it and one fixed branch of the square root are the normalisation of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Transverse-Vector Construction*: they fix the scale of the pair, and with them the quadruple $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is unique. Without this choice the pair is determined only up to the reciprocal rescaling of the theorem above.
 
 **Why no formula is axis-free everywhere.** A closed form with no auxiliary vector would be a map $F$ with $F(S\vec Q)=S\,F(\vec Q)$ for every rotation $S$, rational in $\vec Q$ and $B$. By invariant theory the only such maps are $F(\vec Q)=f(B^2)\vec Q$: the invariant tensors are $\delta_{ij}$ and $\epsilon_{ijk}$, and $\epsilon$ cannot build a vector from a single vector. But the corner is transverse to $\vec Q$, so $F$ would vanish. Every explicit generator therefore uses an auxiliary vector: the symmetric formula uses the permutation-invariant $\vec w$, the axis charts use $\vec e_x,\vec e_y,\vec e_z$. The corner line is a spinor line, and a spinor is not a function of $\vec Q$ alone.
 
@@ -606,7 +606,7 @@ The two readings are compared in the table.
 
 ## Spinors and Chirality
 
-**A spinor space of $\mathbb{B}$ is a minimal nonzero left ideal. The two spinor spaces are $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, each a complex plane, and the algebra is their direct sum.** This is the specialisation of §*Spinors and Chirality* of *The Eigenbasis*.
+**A spinor space of $\mathbb{B}$ is a minimal nonzero left ideal. The two spinor spaces are $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, each a complex plane, and the algebra is their direct sum.** This is the specialisation of §*Spinors and Chirality* of *The Eigenbasis of a Spectrally Regular Biquaternion*.
 
 ### The Two Spinor Spaces
 
@@ -962,7 +962,7 @@ coincide whenever $Q_t=0$. At a common point of the two cones one has $Q_t=0$ an
 
 The four cells are exhaustive and disjoint. $\Sigma_{11}$ is the unique cell in which both predicates hold, $\Sigma_{00}$ the unique cell in which both fail, and the two mixed cells are the remaining two rows of the truth table.
 
-**Position among the four sectors.** Sector $11$ is the **distinct sector**: two distinct non-zero eigenvalues, a unique two-term spectral decomposition, and no point of either cone. The finer split inside the other sectors is by the minimal polynomial, not by the two predicates; it is recorded in *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*. On this sector the two classifications coincide, because the sector is homogeneous: every element has two distinct non-zero eigenvalues and a unique Peirce decomposition relative to $\tilde Q$.
+**Position among the four sectors.** Sector $11$ is the **distinct sector**: two distinct non-zero eigenvalues, a unique two-term spectral decomposition, and no point of either cone. The finer split inside the other sectors is by the minimal polynomial, not by the two predicates; it is recorded in *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*. On this sector the two classifications coincide, because the sector is homogeneous: every element has two distinct non-zero eigenvalues and a unique Peirce decomposition relative to $\tilde Q$.
 
 ## Consequences
 
@@ -1082,13 +1082,13 @@ The sector is the generic sector. It is the set of units with distinct non-zero 
 
 ## Further Reading
 
-- [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction in full generality, the normalisation, the expansion of an arbitrary biquaternion and the spinor reading.
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction in full generality, the normalisation, the expansion of an arbitrary biquaternion and the spinor reading.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the unipotents and the scalar line.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its strata and the unit group.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the discriminant, the spectral criterion and the spectral-degenerate cone.
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce corners and the minimal ideals.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

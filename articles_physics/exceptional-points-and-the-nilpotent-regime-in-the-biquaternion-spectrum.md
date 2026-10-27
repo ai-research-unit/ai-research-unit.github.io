@@ -125,7 +125,7 @@ The two degeneracies are different normal forms, and the difference is visible w
 
 A diabolic point is a degeneracy of the spectrum with the algebra still semisimple. A Dirac point in a band structure is of this kind when the two bands touch with independent states. An exceptional point is a degeneracy with the algebra non-semisimple: the two states have become one. The names are standard in the non-Hermitian literature, and the table is the translation of the two normal forms into the biquaternion spectrum.
 
-The diabolic case is the scalar vertex of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Behaviour on the Cone*, and it is the only degeneracy available in the Hermitian sector. The exceptional case is the non-semisimple class, and it is the only one that destroys the eigenprojections. The two are not two degrees of a single phenomenon: one is a coincidence of eigenvalues, the other is a coincidence of eigenvalues and eigenvectors.
+The diabolic case is the scalar vertex of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Boundary*, and it is the only degeneracy available in the Hermitian sector. The exceptional case is the non-semisimple class, and it is the only one that destroys the eigenprojections. The two are not two degrees of a single phenomenon: one is a coincidence of eigenvalues, the other is a coincidence of eigenvalues and eigenvectors.
 
 ## Physical Readings
 

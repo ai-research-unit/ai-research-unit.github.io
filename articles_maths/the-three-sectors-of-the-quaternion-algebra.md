@@ -105,7 +105,7 @@ $$\mathbb H^\times=\mathbb H\setminus\{0\}=\Sigma_{11}\cup\Sigma_{10}.$$
 
 **Corollary (the sectors are exhaustive).** The three nonempty sectors are exactly the combinations that the positive definite norm permits; the fourth is forbidden. The table of the previous section is therefore complete.
 
-**Remark (the contrast with the biquaternion algebra).** In $\mathbb B$ all four sectors are nonempty: the sector $\Sigma_{01}$ that is empty in $\mathbb H$ is present there, and its nonzero points are zero divisors. In $\mathbb H$ that sector is empty because the norm is definite. The comparison is in [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html).
+**Remark (the contrast with the biquaternion algebra).** In $\mathbb B$ all four sectors are nonempty: the sector $\Sigma_{01}$ that is empty in $\mathbb H$ is present there, and its nonzero points are zero divisors. In $\mathbb H$ that sector is empty because the norm is definite. The comparison is in [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html).
 
 ## Summary
 
@@ -138,5 +138,5 @@ Every element is semisimple, so there is no defective element and no defective s
 - [Eigenvalue Decomposition and Eigenbasis of a Quaternion](eigenvalue-decomposition-and-eigenbasis-of-a-quaternion.html), for the eigenbasis of the non-real sector.
 - [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html), for the two forms and the chain of invariants.
 - [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html), for the norms of the eight algebras.
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors of $\mathbb B$ and their comparison with $\mathbb H$.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors of $\mathbb B$ and their comparison with $\mathbb H$.
 - [The Eight Algebras Compared](the-eight-algebras-compared.html), for the place of $\mathbb H$ among the eight.

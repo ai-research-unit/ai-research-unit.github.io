@@ -1,8 +1,8 @@
-# __The Jordan Normal Form__
+# __The Jordan Basis of a Spectrally Degenerate Biquaternion__
 
 ## Introduction
 
-The biquaternion algebra carries two quadratic conditions. The first is the determinant $\det\tilde Q=Q_t^2+B^2$, whose zero set is the null cone. The second is the square of the vector part,
+The biquaternion algebra carries many quadratic conditions. Two of them organise this article. The first is the determinant $\det\tilde Q=Q_t^2+B^2$, whose zero set is the null cone. The second is the square of the vector part,
 
 $$
 B^2=Q_x^2+Q_y^2+Q_z^2,
@@ -14,7 +14,7 @@ $$
 \mathcal S=\{B^2=0\}.
 $$
 
-This article studies that sector and the spectral basis it carries. On the complement $B^2\neq0$ the two eigenvalues are distinct, and *The Eigenbasis* builds an eigenbasis. On $\mathcal S$ they coincide; on its defective part no eigenbasis exists, because the eigenspace has complex dimension two and four eigenvectors cannot be found. The root $\vec\Xi=-i\vec Q/B$ of the regular construction diverges at $B=0$, and the two spectral idempotents have no limit.
+This article studies that sector and the spectral basis it carries. On the complement $B^2\neq0$ the two eigenvalues are distinct, and *The Eigenbasis of a Spectrally Regular Biquaternion* builds an eigenbasis. On $\mathcal S$ they coincide; on its defective part no eigenbasis exists, because the eigenspace has complex dimension two and four eigenvectors cannot be found. The root $\vec\Xi=-i\vec Q/B$ of the regular construction diverges at $B=0$, and the two spectral idempotents have no limit.
 
 The sector is not without a basis. Off the scalar line the element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$, and the **flag** replaces the root. It selects a complete orthogonal pair of idempotents $\tilde\Pi_\pm$, and with them the two corner generators $\vec\Upsilon_\pm$; the pair is chosen, and the Jordan form does not depend on the choice. The quadruple
 
@@ -76,7 +76,7 @@ $$
 
 and the spectrum is the single point $\{Q_t\}$: the two roots have merged, so no symmetric function of them can separate them.
 
-**Remark (three readings of one equation).** The equation is **geometric** — the vector part is isotropic, $\vec Q\cdot\vec Q=0$ for the complex dot product of the vector subspace; **algebraic** — the vector part is square-zero, hence nilpotent of index two when it is non-zero; and **spectral** — the discriminant vanishes. The three readings are those of *The Spectrum*, §*The Spectral-Degenerate Cone*, where the proofs and the stratification are given in full.
+**Remark (three readings of one equation).** The equation is **geometric** — the vector part is isotropic, $\vec Q\cdot\vec Q=0$ for the complex dot product of the vector subspace; **algebraic** — the vector part is square-zero, hence nilpotent of index two when it is non-zero; and **spectral** — the discriminant vanishes. The three readings are those of *The Spectrum*, §*The Spectral-Degenerate Cone*, where the proofs are given; the stratification is §*The Three Strata* below.
 
 **Remark (a closed cone, not a subspace).** The sector is a complex cone: it is closed under multiplication by scalars, since $B^2$ is homogeneous of degree two. It is not closed under addition, since $\vec e_x+i\vec e_y$ and $\vec e_x-i\vec e_y$ both lie in it while their sum $2\vec e_x$ does not. It is a proper algebraic subset, of empty interior in $\mathbb{B}$.
 
@@ -117,8 +117,8 @@ $$
 
 $$
 \mathcal S^{\mathrm{s}}=\{\vec Q=0\},\qquad
-\mathcal S^{\mathrm{n}}=\{Q_t=0,\ \vec Q\neq0\},\qquad
-\mathcal S^{\mathrm{u}}=\{Q_t\neq0,\ \vec Q\neq0\},
+\mathcal S^{\mathrm{n}}=\{\vec Q\neq0,\ Q_t=0\},\qquad
+\mathcal S^{\mathrm{u}}=\{\vec Q\neq0,\ Q_t\neq0\},
 $$
 
 the **scalar**, **nilpotent** and **unipotent** strata. The union $\mathcal S^{\mathrm{n}}\cup\mathcal S^{\mathrm{u}}$ is the **Jordan part** of the sector; its complement, the scalar stratum, is the common vertex.
@@ -132,8 +132,8 @@ the **scalar**, **nilpotent** and **unipotent** strata. The union $\mathcal S^{\
 | stratum | condition | normal form | $m_{\tilde Q}$ | $\operatorname{rank}L_{\tilde Q}$ | centraliser | $\det$ |
 |---|---|---|---|---|---|---|
 | **scalar** | $\vec Q=0$ | $Q_te_t$ | $X-Q_t$ | $4$, or $0$ at the origin | $\mathbb{B}$ | $Q_t^2$ |
-| **nilpotent** | $Q_t=0$, $\vec Q\neq0$ | $\vec Q$, with $\vec Q^2=0$ | $X^2$ | $2$ | $\mathbb{C}[\vec Q]$ | $0$ |
-| **unipotent** | $Q_t\neq0$, $\vec Q\neq0$ | $Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon=\vec Q/Q_t$ | $(X-Q_t)^2$ | $4$ | $\mathbb{C}[\vec Q]$ | $Q_t^2$ |
+| **nilpotent** | $\vec Q\neq0$, $Q_t=0$ | $\vec Q$, with $\vec Q^2=0$ | $X^2$ | $2$ | $\mathbb{C}[\vec Q]$ | $0$ |
+| **unipotent** | $\vec Q\neq0$, $Q_t\neq0$ | $Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon=\vec Q/Q_t$ | $(X-Q_t)^2$ | $4$ | $\mathbb{C}[\vec Q]$ | $Q_t^2$ |
 
 *Proof.* The scalar stratum is immediate: the element is central, with the stated minimal polynomial, and left multiplication is $Q_t\,\mathrm{id}$, of rank $4$, or zero at the origin. On the other two strata $\vec Q^2=0$ and $\vec Q\neq0$, so $\tilde Q-Q_te_t$ is non-zero with square zero; the minimal polynomial is $(X-Q_t)^2$ and the centraliser is that of $\vec Q$, the dual numbers $\mathbb{C}[\vec Q]=\{ae_t+b\vec Q\}$, of complex dimension two. On the nilpotent stratum the element is a non-zero square-zero element, not a unit, and its minimal polynomial is $X^2$; on the unipotent stratum $u=e_t+\vec\Upsilon$ is unipotent, so $\tilde Q=Q_tu$ is a unit with inverse $Q_t^{-1}(e_t-\vec\Upsilon)$. Left multiplication by a non-zero square-zero element has image contained in its kernel, and both spaces have complex dimension two, so the rank is two; on the units the rank is four. ∎
 
@@ -196,7 +196,7 @@ A Jordan basis of $L_{\vec Q}$ needs two vectors outside the kernel whose images
 
 ## The Matrix Picture
 
-Under $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure* the sector becomes the set of matrices whose two eigenvalues coincide. The characteristic polynomial is $(X-Q_t)^2$, the trace is $2Q_t$ and the determinant is $Q_t^2$. The Jordan form is determined by the minimal polynomial:
+Under $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant* the sector becomes the set of matrices whose two eigenvalues coincide. The characteristic polynomial is $(X-Q_t)^2$, the trace is $2Q_t$ and the determinant is $Q_t^2$. The Jordan form is determined by the minimal polynomial:
 
 | stratum | $\mathsf{M}_2(\tilde Q)$ | Jordan form | rank |
 |---|---|---|---|
@@ -237,9 +237,38 @@ Such a pair exists: choose a complement of $\mathbb{C}\vec Q$ in $\ker L_{\vec Q
 
 *Proof.* The identities give $\tilde\Pi_+\vec Q=\vec Q$ and $\tilde\Pi_-\vec Q=0$, so $\vec Q=\tilde\Pi_+\vec Q\tilde\Pi_-$ lies in the corner $\mathbb{B}_{+-}$; completeness and orthogonality are the definition of the pair. ∎
 
-**Remark (the choice is real).** The complement is not determined by $\vec Q$: two complements differ by a linear map from $\mathbb{C}\vec Q$ to the complement, and the idempotents differ by the affine family $\tilde\Pi_+(b)=\tilde\Pi_+ + b\vec Q$, $b\in\mathbb{C}$, with $\tilde\Pi_-(b)=e_t-\tilde\Pi_+(b)$. The Jordan form below is independent of $b$; the frame is not. No canonical value of $b$ is claimed in this article. A canonical choice requires extra structure; it is made in the forms block.
+**Remark (the choice is real).** The complement is not determined by $\vec Q$: two complements differ by a linear map from $\mathbb{C}\vec Q$ to the complement, and the idempotents differ by the affine family $\tilde\Pi_+(b)=\tilde\Pi_+ + b\vec Q$, $b\in\mathbb{C}$, with $\tilde\Pi_-(b)=e_t-\tilde\Pi_+(b)$. The Jordan form below is independent of $b$; the frame is not. No canonical value of $b$ is claimed for the product alone. The definite Hermitian form selects one, and it is constructed in the next subsection.
 
 **Remark (not a limit).** The idempotents are not the limits of the regular spectral idempotents $(e_t\pm\vec\Xi)/2$, which diverge as $B\to0$. They are a new pair, attached to the flag of $\vec Q$ and to the chosen complement.
+
+### The Canonical Frame
+
+**The definite Hermitian form selects one value of $b$.** The form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of *Conventions in Mathematics*, §*The Form Convention, the Norm Convention and the Unitary Convention*, and $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$ on the sector off the scalar line.
+
+**Theorem (the canonical pair).** Put $\vec\Upsilon_-=\vec Q$ and
+
+$$
+\tilde\Pi_+=\frac{\vec Q\vec Q^*}{2\langle\vec Q\rangle_*},\qquad
+\tilde\Pi_-=\frac{\vec Q^*\vec Q}{2\langle\vec Q\rangle_*},\qquad
+\vec\Upsilon_+=\frac{\vec Q^*}{2\langle\vec Q\rangle_*}.
+$$
+
+Then $\tilde\Pi_\pm$ are the **support idempotents**: Hermitian idempotents with $\tilde\Pi_+\tilde\Pi_-=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$, and
+
+$$
+\tilde\Pi_+\vec Q=\vec Q,\qquad
+\vec Q\tilde\Pi_-=\vec Q,\qquad
+\vec Q\vec\Upsilon_+=\tilde\Pi_+,\qquad
+\vec\Upsilon_+\vec Q=\tilde\Pi_-.
+$$
+
+*Proof.* In the fixed model $Q=\mathsf M_2(\vec Q)$ is a rank-one nilpotent with singular value $s=\sqrt{2\langle\vec Q\rangle_*}$, so $Q=suv^\dagger$ with $u,v$ orthonormal. The Frobenius norm gives $s^2=\operatorname{Tr}(Q^\dagger Q)=2\langle\vec Q\rangle_*$. The four elements are the images of $uu^\dagger$, $suv^\dagger$, $s^{-1}vu^\dagger$ and $vv^\dagger$, and the identities are the matrix-unit identities. ∎
+
+**Corollary (uniqueness).** The canonical pair is the value $b=0$ of the affine family. Every adapted pair is $\tilde\Pi_+(b)=\tilde\Pi_+ + b\vec Q$ with $\tilde\Pi_-(b)=\tilde\Pi_- - b\vec Q$, and the pair is Hermitian exactly when $b=0$.
+
+*Proof.* If $\tilde\Pi_+(b)$ is Hermitian, then $\bar b\vec Q^*=b\vec Q$. If $b\neq0$, then $\vec Q^*=\mu\vec Q$ with $\lvert\mu\rvert=1$, hence $\vec Q^*\vec Q=\mu\vec Q^2=0$, contrary to $\vec Q^*\vec Q$ being a nonzero projection. Hence $b=0$. ∎
+
+**Remark (the matrix form).** The pair is the SVD frame of the nilpotent. The Jordanising matrix, its determinant and its freedom are in *$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix*.
 
 ## The Corners and the Jordan Pair
 
@@ -610,7 +639,7 @@ $$
 \Sigma_{01}=\{\det\tilde Q=0,\ B^2\neq0\}.
 $$
 
-On it the eigenvalues are distinct, the discriminant is non-zero, the root $\vec\Xi=-i\vec Q/B$ exists, and the eigenbasis of *The Eigenbasis* is constructed. The root and the eigenbasis do not cross the boundary; the defective part of the sector has the Jordan basis instead, selected by an adapted frame. The two constructions are separated by the single equation $B^2=0$, and the passage from one to the other is the collapse of the two eigenvalues.
+On it the eigenvalues are distinct, the discriminant is non-zero, the root $\vec\Xi=-i\vec Q/B$ exists, and the eigenbasis of *The Eigenbasis of a Spectrally Regular Biquaternion* is constructed. The root and the eigenbasis do not cross the boundary; the defective part of the sector has the Jordan basis instead, selected by an adapted frame. The two constructions are separated by the single equation $B^2=0$, and the passage from one to the other is the collapse of the two eigenvalues.
 
 The regular article reads its basis in a root-adapted Fourier form. There is no such reading here: the Fourier form needs the pure root $\rho=i\vec\Xi$ with $\rho^2=-1$, and the degenerate vector part is nilpotent. The counterpart is the truncated exponential, $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec Q)$, of §*Multiplication, Inversion, and the Exponential*.
 
@@ -623,7 +652,7 @@ The four cells are collected in the table.
 | $\Sigma_{01}$ | $=0$ | $\neq0$ | $3$ | the zero divisor with distinct eigenvalues, one of them zero |
 | $\Sigma_{00}$ | $=0$ | $=0$ | $2$ | the nilpotents, with the origin adjoined |
 
-**Remark (density and boundary).** The sector is closed with empty interior, so every point of it is a limit of points of the spectrally regular sector; it is the boundary of the open set on which the eigenbasis exists. The two conditions are independent, and the cells $\Sigma_{10}$ and $\Sigma_{01}$ are the witnesses: each is a non-empty open part of one cone on which the other condition is non-zero. The comparison of the two cones is *Relations between Quaternionic Norm and Spectral Regularity and Degeneracy*.
+**Remark (density and boundary).** The sector is closed with empty interior, so every point of it is a limit of points of the spectrally regular sector; it is the boundary of the open set on which the eigenbasis exists. The two conditions are independent, and the cells $\Sigma_{10}$ and $\Sigma_{01}$ are the witnesses: each is a non-empty open part of one cone on which the other condition is non-zero. The comparison of the two cones is *Relations between the N Norm and Spectral Regularity and Degeneracy*.
 
 ## Consequences
 
@@ -664,7 +693,7 @@ Here $\lambda_\pm=Q_t\pm iB$ are the two eigenvalues, $J_2(Q_t)=\begin{pmatrix}Q
 
 **The rigidity applies to all three columns.** By §*Systems of Matrix Units*, every pair of primitive orthogonal idempotents summing to $e_t$ is the image of the standard pair under an inner automorphism. The pairs are therefore conjugate, and the three columns are not three decompositions of different kinds: what changes from one column to the next is the position of the element in the decomposition, not the decomposition itself. The regular pair commutes with $\tilde Q$; the support pair does not; on the scalar line every pair commutes.
 
-**The regular case.** For $B^2\neq0$ the pair is the spectral pair of $\tilde Q$. It satisfies $[\tilde\Pi_\pm,\tilde Q]=0$, so $\mathsf M_{\tilde\Pi}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$ and each couple is a pair of eigenvectors. The basis $\mathcal{P}$ is the eigenbasis $\mathcal{B}(\tilde Q)$ of *The Eigenbasis*; the reciprocal freedom is fixed there by the normalisation of the mixed generators.
+**The regular case.** For $B^2\neq0$ the pair is the spectral pair of $\tilde Q$. It satisfies $[\tilde\Pi_\pm,\tilde Q]=0$, so $\mathsf M_{\tilde\Pi}(\tilde Q)=\operatorname{diag}(\lambda_+,\lambda_-)$ and each couple is a pair of eigenvectors. The basis $\mathcal{P}$ is the eigenbasis $\mathcal{B}(\tilde Q)$ of *The Eigenbasis of a Spectrally Regular Biquaternion*; the reciprocal freedom is fixed there by the normalisation of the mixed generators.
 
 **The degenerate case.** For $B^2=0$ and $\vec Q\neq0$ the root is gone, and an adapted frame supplies the pair. The pair is still complete, orthogonal and primitive, so the four corners and the basis are the general Peirce data. What changes is the Peirce matrix: $\mathsf M_{\tilde\Pi}(\tilde Q)=J_2(Q_t)$, with $\tilde Q\tilde\Pi_+=Q_t\tilde\Pi_+$ and $\tilde\Pi_+\tilde Q=Q_t\tilde\Pi_++\vec\Upsilon_-$. Each couple is a single Jordan chain rather than a pair of eigenvectors. The basis is the Jordan basis $\mathcal{J}(\tilde Q)$ of §*The Jordan Basis*; the reciprocal freedom is fixed there by $\vec\Upsilon_-=\vec Q$.
 
@@ -684,7 +713,7 @@ The two constructions are compared in the table.
 | | regular, $B^2\neq0$ | degenerate, $B^2=0$, $\vec Q\neq0$ |
 |---|---|---|
 | root | $\vec\Xi=-i\vec Q/B$, with $\vec\Xi^2=e_t$ | none |
-| idempotents | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | a chosen adapted pair $\tilde\Pi_+,\tilde\Pi_-$ |
+| idempotents | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the canonical pair of §*The Canonical Frame* |
 | generators | a pair, up to reciprocal rescaling, then one normalisation | $\vec\Upsilon_-=\vec Q$, and $\vec\Upsilon_+$ is the unique element with $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ |
 | left action | $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ | $J_2(Q_t)\oplus J_2(Q_t)$ |
 | right action | $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$ | $J_2(Q_t)\oplus J_2(Q_t)$, other pairing |
@@ -692,7 +721,7 @@ The two constructions are compared in the table.
 | spectrum | two distinct eigenvalues | one eigenvalue, minimal polynomial $(X-Q_t)^2$ |
 | dependence | the direction $[\vec Q]\in\mathbb{P}^2$ | the vector $\vec Q$ |
 
-The Jordan basis is not the limit of the eigenbasis. The spectral idempotents diverge as $B\to0$; the new pair is selected by an adapted frame, and the two constructions meet through the flag of the isotropic line.
+The Jordan basis is not the limit of the eigenbasis. The spectral idempotents diverge as $B\to0$; the new pair is selected by the definite Hermitian form, and the two constructions meet through the flag of the isotropic line.
 
 ## Summary of Notation
 
@@ -709,13 +738,13 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 | $\Sigma_{10}=\{Q_t\neq0\}$ | the unit half of the sector |
 | $\Sigma_{00}=\{Q_t=0\}$ | the zero-divisor half of the sector |
 | $\mathcal S^{\mathrm{s}}=\{\vec Q=0\}$ | the scalar stratum, the vertex |
-| $\mathcal S^{\mathrm{n}}=\{Q_t=0,\ \vec Q\neq0\}$ | the nilpotent stratum |
-| $\mathcal S^{\mathrm{u}}=\{Q_t\neq0,\ \vec Q\neq0\}$ | the unipotent stratum |
+| $\mathcal S^{\mathrm{n}}=\{\vec Q\neq0,\ Q_t=0\}$ | the nilpotent stratum |
+| $\mathcal S^{\mathrm{u}}=\{\vec Q\neq0,\ Q_t\neq0\}$ | the unipotent stratum |
 | $p_{\tilde Q}(X)=(X-Q_t)^2$ | the characteristic polynomial on the sector |
 | $\mathsf{M}_2(\tilde Q)$ | the $2\times2$ matrix model, with $\det\tilde Q=Q_t^2+B^2$ |
 | $J_2(Q_t)$ | the Jordan block of the defective strata |
 | $\mathbb{C}[\vec Q]=\{ae_t+b\vec Q\}$ | the dual numbers, the centraliser of a defective element |
-| $\tilde\Pi_\pm$ | the idempotents of a chosen adapted frame |
+| $\tilde\Pi_\pm$ | the idempotents of an adapted frame; the canonical pair is $\vec Q\vec Q^*/(2\langle\vec Q\rangle_*)$ and $\vec Q^*\vec Q/(2\langle\vec Q\rangle_*)$ |
 | $\vec\Upsilon_-=\vec Q$, $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ | the generators of the mixed corners, unique given the frame |
 | $\mathcal{J}(\tilde Q)=(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ | the Jordan basis, chain by chain; the corner order is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ |
 | $\mathsf M_2^{\tilde Q}$ | the coordinate model of the Jordan basis, with $\mathsf M_2^{\tilde Q}(\tilde Q)=J_2(Q_t)$ |
@@ -723,10 +752,12 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 
 ## Further Reading
 
+- [$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix](m2c-representation-the-jordan-basis-and-the-jordanising-matrix.html), for the matrix form, the Jordanising matrix and the defect
+- [$M_4(\mathbb{C})_L$ Model : The Jordan Basis and the Jordanising Matrix](m4c-representation-the-jordan-basis-and-the-jordanising-matrix.html), for the $4\times4$ model
 - [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the general Peirce construction and the Jordan basis as a particular Peirce matrix
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the cone, the three strata and the similarity classification
-- [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the complementary sector and the eigenbasis construction
-- [The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations](m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix reading of the eigenbasis
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the complementary sector and the eigenbasis construction
+- [$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the matrix reading of the eigenbasis
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unit half as a cell, with the Peirce data and the degenerate limits of the eigenbasis
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotent half as a cell, with the same Peirce data
 - [Relations between Exponential, Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Degenerate Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the chain as the limit of a rescaled eigenbasis
@@ -735,8 +766,8 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm and its partition
 - [The N-Regular Sector](the-n-regular-sector.html) and [The N-Degenerate Sector](the-n-degenerate-sector.html), for the two halves of the norm partition
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the vanishing modulus and the partial isometry
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the independence of the two cones
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the independence of the two cones
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, its coordinates and its conjugations
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the matrix model, the determinant and the trace
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the matrix model, the determinant and the trace
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and its truncated form
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).

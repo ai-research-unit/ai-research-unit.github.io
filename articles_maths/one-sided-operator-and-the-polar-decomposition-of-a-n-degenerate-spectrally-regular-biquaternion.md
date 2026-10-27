@@ -364,7 +364,7 @@ The element modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$. The nu
 
 ## The Eigenbasis and the Two Slots
 
-Since $B^{2}\neq0$, the eigenbasis of *The Eigenbasis* exists. Its spectral projectors are $\tilde\Pi$ and $\tilde\Pi'$, and the Peirce form of $\tilde Q$ is
+Since $B^{2}\neq0$, the eigenbasis of *The Eigenbasis of a Spectrally Regular Biquaternion* exists. Its spectral projectors are $\tilde\Pi$ and $\tilde\Pi'$, and the Peirce form of $\tilde Q$ is
 
 $$
 \tilde\Pi\tilde Q\tilde\Pi=c\tilde\Pi,\qquad

@@ -603,6 +603,6 @@ The phase $e^{i\beta}$ cancels in the sandwich. The sandwich depends only on $\l
 - [One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the companion one-sided operator.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the canonical Hermitian pair, the Peirce data and the no-eigenbasis theorem.
-- [The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the Jordan basis used in the chain.
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the Jordan basis used in the chain.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the contrasting spectrally regular case.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone and the quaternionic norm.

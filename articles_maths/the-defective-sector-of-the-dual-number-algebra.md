@@ -201,13 +201,13 @@ $$
 \mathcal S=\{B^2=0\}, \qquad B^2=Q_x^2+Q_y^2+Q_z^2,
 $$
 
-and it splits into three strata, exactly as in *The Spectrum*:
+and it splits into three strata, exactly as in *The Jordan Basis of a Spectrally Degenerate Biquaternion*:
 
 | stratum of $\mathcal S$ | condition | minimal polynomial | Jordan type | defect |
 |---|---|---|---|---|
 | scalar | $\vec Q=0$ | $X-Q_t$ | $(1,1,1,1)$ | semisimple |
-| nilpotent | $Q_t=0$, $\vec Q\neq0$ | $X^2$ | $(2,2)$ | defective |
-| unipotent | $Q_t\neq0$, $\vec Q\neq0$ | $(X-Q_t)^2$ | $(2,2)$ | defective |
+| nilpotent | $\vec Q\neq0$, $Q_t=0$ | $X^2$ | $(2,2)$ | defective |
+| unipotent | $\vec Q\neq0$, $Q_t\neq0$ | $(X-Q_t)^2$ | $(2,2)$ | defective |
 
 **The nilpotent cone.** The nilpotent cone in the strict sense is
 
@@ -217,15 +217,15 @@ $$
 
 It contains the origin, which is scalar and semisimple, and the non-zero nilpotents, which are defective. The defect is therefore not the whole nilpotent cone: it is the cone with its vertex removed. The same statement holds in the dual algebra, where the maximal ideal $\mathrm{M}$ contains the semisimple origin and the defective punctured line $\mathrm{M}\setminus\{0\}$. The vertex is the one point at which the defect disappears.
 
-**The unipotent stratum.** The defect in $\mathbb{B}$ is not confined to the nilpotent cone. The unipotent stratum $Q_t\neq0$, $\vec Q\neq0$ consists of units, and every element of it is defective. The same is true in $\mathbb{D}'$: the stratum $D_1$ consists of units and every element of it is defective. In both algebras the defect has the same two parts, a nilpotent one and a unipotent one, separated by the scalar part.
+**The unipotent stratum.** The defect in $\mathbb{B}$ is not confined to the nilpotent cone. The unipotent stratum $\vec Q\neq0$, $Q_t\neq0$ consists of units, and every element of it is defective. The same is true in $\mathbb{D}'$: the stratum $D_1$ consists of units and every element of it is defective. In both algebras the defect has the same two parts, a nilpotent one and a unipotent one, separated by the scalar part.
 
 **The correspondence.** The table records the matching.
 
 | $\mathbb{B}$ | $\mathbb{D}'$ |
 |---|---|
 | centre $\mathbb{C}e_t$, scalar stratum $\vec Q=0$ | real axis $R\cdot1$, semisimple stratum $b=0$ |
-| nilpotent stratum $Q_t=0$, $\vec Q\neq0$ | nilpotent stratum $a=0$, $b\neq0$ |
-| unipotent stratum $Q_t\neq0$, $\vec Q\neq0$ | unipotent stratum $a\neq0$, $b\neq0$ |
+| nilpotent stratum $\vec Q\neq0$, $Q_t=0$ | nilpotent stratum $a=0$, $b\neq0$ |
+| unipotent stratum $\vec Q\neq0$, $Q_t\neq0$ | unipotent stratum $a\neq0$, $b\neq0$ |
 | spectral-degenerate cone $\mathcal S$, complex dimension $3$ | defective sector $D$, real dimension $2$ |
 | eigenspace complex dimension $2$ | eigenspace real dimension $1$ |
 | Jordan type $(2,2)$ | Jordan type $(2)$ |
@@ -233,7 +233,7 @@ It contains the origin, which is scalar and semisimple, and the non-zero nilpote
 
 **The differences.** Three differences are differences of dimension. The biquaternion defect sits inside the proper hypersurface $\mathcal S$ of a four-complex-dimensional algebra, and there are spectrally regular biquaternions off $\mathcal S$; the dual defect is the complement of a real line in a two-real-dimensional algebra, and there are no spectrally regular elements. The biquaternion defect has Jordan type $(2,2)$ on a four-dimensional space with a two-dimensional eigenspace; the dual defect has type $(2)$ on a two-dimensional space with a one-dimensional eigenspace. The semisimple stratum in $\mathbb{B}$ is the centre $\mathbb{C}e_t$; in $\mathbb{D}'$ it is the real axis $R\cdot1$, which is not the centre because the algebra is commutative. What the cases share is the local structure: the algebra generated at a defective dual point is $R[Q]=R[X]/(X^2)$, with $Q-a=b\varepsilon$ nilpotent and non-zero, and at a defective biquaternion point it is $\mathbb{C}[\vec Q]=\mathbb{C}[X]/(X^2)$ on each of the two blocks; the defect is the single Jordan block of that local algebra.
 
-*Proof.* The biquaternion strata and Jordan types are *The Spectrum*, §*The Degenerate Case: The Cone*; the dual strata and types are the theorems of this article. The dimension counts are those of $\mathcal S$ (one complex equation in four complex coordinates) and of $D$ (the complement of a real line in the real plane).
+*Proof.* The biquaternion strata and Jordan types are *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*; the dual strata and types are the theorems of this article. The dimension counts are those of $\mathcal S$ (one complex equation in four complex coordinates) and of $D$ (the complement of a real line in the real plane).
 
 ## Summary
 
@@ -274,7 +274,7 @@ The polar decomposition $Q=ru\exp(s\varepsilon)$ exposes the defect as the parab
 - [Dual-Numbers Element Representations](dual-numbers-element-representations.html), for the regular representation.
 - [Spectral Regularity and Degeneracy in the Dual-Number Algebra](spectral-regularity-and-degeneracy-in-the-dual-number-algebra.html), for the characteristic polynomial, the minimal polynomial dichotomy and the one-term decomposition.
 - [Relations between the Dual Norm and Spectral Degeneracy](relations-between-the-dual-norm-and-spectral-degeneracy.html), for the comparison of the norm and the defect.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the three strata of the biquaternion spectral-degenerate cone.
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the three strata of the biquaternion spectral-degenerate cone.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for semisimplicity, defect and the additive decomposition.
 - [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html), for the structure theorem behind the module picture.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the Jordan form and the geometric multiplicity.

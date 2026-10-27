@@ -150,7 +150,7 @@ the sphere of **real roots of $-1$**; it is compact, connected and simply connec
 
 ## Summary of Notation
 
-One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone uses it. The positive cone of the reduced algebra is $\mathcal C_{+}$, the Krein cone is $\mathcal K$, and the second quadratic cone of the spectral analysis, the zero set of $B^{2}$, is $\mathcal S$.
+One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone uses it. The positive cone of the reduced algebra is $\mathcal C_{+}$, the Krein cone is $\mathcal K$, and the quadratic cone of the spectral analysis, the zero set of $B^{2}$, is $\mathcal S$.
 
 | Symbol | Meaning |
 |---|---|

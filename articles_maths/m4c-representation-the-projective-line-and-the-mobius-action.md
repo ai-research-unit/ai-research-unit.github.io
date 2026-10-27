@@ -163,7 +163,7 @@ The minimal right ideals of the regular image are the rank-two ideals $J_L=\{M:\
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces](m4c-representation-the-columns-the-rows-and-the-spinor-spaces.html), for the ideals
+- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two columns
 - [$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector](m4c-representation-spin-qubits-and-the-bloch-vector.html), for the real picture
 - [$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action](m2c-representation-the-projective-line-and-the-mobius-action.html), for the $2\times2$ version
 - [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the lattice of ideals

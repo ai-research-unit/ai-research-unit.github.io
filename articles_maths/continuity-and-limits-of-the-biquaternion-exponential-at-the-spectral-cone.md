@@ -4,7 +4,7 @@
 
 The exponential of a biquaternion is entire, so no point of the spectral-degenerate cone is a singularity of the map. What degenerates at $B^2=0$ is the spectral parametrisation of the exponential: the two eigenvalues coalesce, the element-attached root of $-1$ disappears, the spectral idempotents diverge, and the oscillatory closed form truncates. This article separates three questions that the word *limit* confuses. Which formulas extend continuously? Which spectral objects have limits? Which fail, and at which stratum?
 
-The article assumes the spectral criterion, the cone and its three strata of *The Spectrum*; the closed forms and the principal logarithm of *Biquaternion Elementary Functions*; the element-supplied root, the kernel identity and the Hermitian norm of *Relations between the Biquaternion Exponential and the Fourier Kernel*; and the polar factors of *The Polar Decomposition of a N-Regular Biquaternion* and *The Polar Decomposition of a N-Degenerate Biquaternion*. It reproves none of them. It owns the passage to the cone: the entire form of the closed form, the differential and its critical locus, the double pole of the resolvent, the continuity of the Hermitian norm, and the distinction between spectral degeneracy and polar degeneracy. It does not treat the transform theory, which belongs to *Biquaternion Continuous Harmonic Analysis*, nor the physical interpretation, which belongs to the companion article in the physics corpus.
+The article assumes the spectral criterion, the cone of *The Spectrum* and the three strata of *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the closed forms and the principal logarithm of *Biquaternion Elementary Functions*; the element-supplied root, the kernel identity and the Hermitian norm of *Relations between the Biquaternion Exponential and the Fourier Kernel*; and the polar factors of *The Polar Decomposition of a N-Regular Biquaternion* and *The Polar Decomposition of a N-Degenerate Biquaternion*. It reproves none of them. It owns the passage to the cone: the entire form of the closed form, the differential and its critical locus, the double pole of the resolvent, the continuity of the Hermitian norm, and the distinction between spectral degeneracy and polar degeneracy. It does not treat the transform theory, which belongs to *Biquaternion Continuous Harmonic Analysis*, nor the physical interpretation, which belongs to the companion article in the physics corpus.
 
 **The result in one table.** The table is the plan of the article.
 
@@ -60,17 +60,17 @@ The algebra is their disjoint union, and the intersection $\mathcal N\cap\mathca
 
 $$
 \mathcal S^{\mathrm{s}}=\{\vec Q=0\},\qquad
-\mathcal S^{\mathrm{n}}=\{Q_t=0,\ \vec Q\neq0\},\qquad
-\mathcal S^{\mathrm{u}}=\{Q_t\neq0,\ \vec Q\neq0\},
+\mathcal S^{\mathrm{n}}=\{\vec Q\neq0,\ Q_t=0\},\qquad
+\mathcal S^{\mathrm{u}}=\{\vec Q\neq0,\ Q_t\neq0\},
 $$
 
-the **scalar**, **nilpotent** and **unipotent** strata. The elements of the last two are written $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$; on the unipotent stratum one also writes $\vec N=Q_t\eta$, with $\eta^2=0$. The classification is that of *The Spectrum*, §*The Three Strata*.
+the **scalar**, **nilpotent** and **unipotent** strata. The elements of the last two are written $\tilde Q=Q_te_t+\vec N$ with $\vec N=\vec Q$ and $\vec N^2=0$; on the unipotent stratum one also writes $\vec N=Q_t\eta$, with $\eta^2=0$. The classification is that of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*.
 
 | stratum | condition | normal form | spectrum | minimal polynomial | unit |
 |---|---|---|---|---|---|
 | scalar | $\vec Q=0$ | $Q_te_t$ | $\{Q_t\}$ | $X-Q_t$ | iff $Q_t\neq0$ |
-| nilpotent | $Q_t=0$, $\vec Q\neq0$ | $\vec N$, $\vec N^2=0$ | $\{0\}$ | $X^2$ | no |
-| unipotent | $Q_t\neq0$, $\vec Q\neq0$ | $Q_tu$, $u=e_t+\eta$ | $\{Q_t\}$ | $(X-Q_t)^2$ | yes |
+| nilpotent | $\vec Q\neq0$, $Q_t=0$ | $\vec N$, $\vec N^2=0$ | $\{0\}$ | $X^2$ | no |
+| unipotent | $\vec Q\neq0$, $Q_t\neq0$ | $Q_tu$, $u=e_t+\eta$ | $\{Q_t\}$ | $(X-Q_t)^2$ | yes |
 
 The scalar stratum is the vertex, the whole scalar line. The other two are the **Jordan part** of the cone; they are defective, with a two-dimensional eigenspace and no eigenbasis. The unbounded idempotents of §*The Resolvent and the Double Pole* live on the Jordan part; the vertex is the semisimple part of the cone.
 
@@ -475,14 +475,15 @@ The Hermitian norm is continuous across the cone, with limit $\exp(2\theta\opera
 
 ## Further Reading
 
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the cone, the three strata, the flag and the similarity classification.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the cone, the flag and the similarity classification.
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the three strata, their normal forms and their spectral behaviour.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the closed forms, the exponential, the logarithm and the principal branch.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the root, the kernel identity, the Hermitian norm and the Fourier dictionary.
 - [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), for the transform pair, inversion, Plancherel and the kernel.
 - [Biquaternion Discrete Harmonic Analysis](biquaternion-discrete-harmonic-analysis.html), for the discrete transform and the condition on the root.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the unit factor and the four-factor word.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two-factor decomposition on the null cone, the rank-one Hermitian factor and the partial isometry.
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two conditions.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two conditions.
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the exponential as a map of Lie groups and the Cartan decomposition.
 - [Dual Numbers Harmonic Analysis](dual-numbers-harmonic-analysis.html), for the truncated characters of the nilpotent regime.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the conjugations, the Hermitian norm and the notation.

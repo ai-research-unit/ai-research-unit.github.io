@@ -210,5 +210,5 @@ The minimal left ideals are the sets $I_L$ of matrices whose image lies in a lin
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for $PGL_2$ and the automorphism group
 - [$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser](m2c-representation-the-centraliser-and-the-double-centraliser.html), for the commutant of an element
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the quaternionic structure and the real structure
-- [$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units](m2c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the matrix units
+- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units
 - [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the module reading of the minimal left ideals

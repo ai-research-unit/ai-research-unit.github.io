@@ -259,8 +259,8 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 
 ## Further Reading
 
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the second quadratic condition $B^2$, the spectral-degenerate cone and the behaviour on it.
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the norm with the spectral condition, the four sectors and the information each invariant carries.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quadratic condition $B^2$, the spectral-degenerate cone and the behaviour on it.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the norm with the spectral condition, the four sectors and the information each invariant carries.
 - [The N-Regular Sector](the-n-regular-sector.html), for the unit group as a sector, its matrix model, its topology and its two spectral cells.
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the null cone, its three strata, its link and its degenerate polar decomposition.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the norm and the one-sided inverses of a non-associative algebra.

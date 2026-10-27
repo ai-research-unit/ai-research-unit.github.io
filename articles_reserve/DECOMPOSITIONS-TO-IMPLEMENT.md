@@ -30,44 +30,45 @@ This is the short answer; §1–§8 are the evidence. Status words are those of 
 `research` (theorem not checked), `optional`, `rejected`.
 
 **The order rule.** An entry may be written only after the article that introduces every
-notion it uses. The positions below are the article positions of the biquaternion algebra
-block, after the two menu moves of 2026-09-27. The first polar is article 45; the first
-N-polar is article 55; K-regularity is article 66. No entry is placed before its
-prerequisite.
+notion it uses. The positions below are the article positions of the `## Biquaternions`
+menu, after the two menu moves of 2026-09-27. The numbering is counted from *The
+Biquaternion Algebra* (1). The first polar is article 43; the first N-polar is article 53;
+K-regularity is article 64. No entry is placed before its prerequisite.
 
 ### 0.1 Used in the corpus
 
 | Decomposition | Form | Article (position) |
 |---|---|---|
 | Peirce at an idempotent | none | *The Peirce Decomposition* (15) |
-| Jordan–Chevalley additive | none | *The Semisimple–Nilpotent Split* (30) |
-| Eigenvalue decomposition | none | *The Spectrum* (24); *The Eigenbasis* (31); *The Jordan Normal Form* (34) |
+| Jordan–Chevalley additive | none | *The Semisimple–Nilpotent Split* (28) |
+| Eigenvalue decomposition | none | *The Spectrum* (22); *The Eigenbasis of a Spectrally Regular Biquaternion* (29); *The Jordan Basis of a Spectrally Degenerate Biquaternion* (32) |
 | Scalar–vector, quaternion and Hermitian eigenspace splits | none | *The Three Eigenspace Decompositions* (6) |
-| Zero divisor as one Peirce corner | none | *Zero Divisors and Units* (10); *Nilpotents* (13); *Idempotents* (14) |
-| Regular-module split | none | *The Regular Module* (21) |
+| Zero divisor as one Peirce corner | none | *Zero Divisors and Units* (8); *Nilpotents* (13); *Idempotents* (14) |
+| Regular-module split | none | *The Regular Module* (19) |
 | Spinor spaces and the two couples | none | *The Spinor Spaces* (16) |
-| Minimal left ideals | none | *The Minimal Left Ideals* (22) |
-| $M_2$ block form / $M_4$ block form | none | the two matrix-product articles (11, 12) |
-| $H$-polar, general and Cartan | H | *The Polar Decomposition of a Biquaternion* (45) |
-| $H$-spectral (normal, unitary eigenbasis) | H | *The Biquaternion Eigenvalue Decomposition* (Clifford block); *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix* (32) |
-| $H$-SVD at matrix level | H | *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix* (46) |
-| Modulus–unit $Q=\Rho U$ and the four-factor word | N + H | *The Polar Decomposition of an N-Regular Biquaternion* (55) |
-| Exponential polar | N + H | the exponential-polar series (99–121) |
-| Krein isometry group and Cartan decomposition | K | *The Krein Isometry Group and Its Cartan Decomposition* |
+| Minimal left ideals | none | *The Minimal Left Ideals* (20) |
+| $M_2$ block form / $M_4$ block form | none | the two matrix-product articles (9, 10) |
+| $H$-polar, general and Cartan | H | *The Polar Decomposition of a Biquaternion* (43) |
+| $H$-spectral (normal, unitary eigenbasis) | H | *The Biquaternion Eigenvalue Decomposition* (Clifford block); *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix* (30) |
+| $H$-SVD at matrix level | H | *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix* (44) |
+| Modulus–unit $Q=\Rho U$ and the four-factor word | N + H | *The Polar Decomposition of an N-Regular Biquaternion* (53) |
+| Exponential polar | N + H | the exponential-polar series (100–122) |
+| Krein isometry group and Cartan decomposition | K | *The Krein Isometry Group and Its Cartan Decomposition* (131) |
 
 ### 0.2 Suggested by the corpus, not implemented
 
 **None.** The corpus names no decomposition that it does not either write or defer to an
-article that exists. The four-factor refinement is in (55); the exponential polar is in
-the exponential-polar articles; the spectral decomposition is in (31) and (34); the
-multiplicative Jordan–Chevalley is in (30); the Moore–Penrose inverse is in
-*The Moore–Penrose Inverse in an Involutive Algebra*, cited by (45). Everything in §0.3
+article that exists. The four-factor refinement is in (53); the exponential polar is in
+the exponential-polar articles; the spectral decomposition is in (29) and (32); the
+multiplicative Jordan–Chevalley is in (28); the Moore–Penrose inverse is in
+*The Moore–Penrose Inverse in an Involutive Algebra*, cited by (43). Everything in §0.3
 is an extension, not a corpus suggestion.
 
 ### 0.3 Extensions, not in the corpus
 
 These are new mathematics. No article names them, so none is a "suggestion"; each is a
-possible addition, placed after the article that introduces its ingredients.
+possible addition, placed after the article that introduces its ingredients. An entry
+marked *after n* is inserted immediately after the article at position *n*.
 
 | Decomposition | Form | Status | Earliest position | Note |
 |---|---|---|---|---|
@@ -77,7 +78,7 @@ possible addition, placed after the article that introduces its ingredients.
 | Failure of the indefinite SVD | K | research, negative | after 65 | §8.4 |
 | Singular values at element level | H + N | ready | after 47 | §8.1 |
 
-The word *polar* is not available before article 44. The algebraic and indefinite polars
+The word *polar* is not available before article 43. The algebraic and indefinite polars
 are not in the corpus at all.
 
 ### 0.4 Order of writing
@@ -426,8 +427,9 @@ Dropped from the earlier draft, with the reason.
   idempotents.
 
 **Filing.** Superseded for the form-free block by `articles_reserve/STRUCTURE-ALGEBRA.md`.
-The block is four sections: *The Algebra* (12 articles), *The Frame* (8), *The Modules*
-(3), *The Element* (12 and the worked examples). The forms block follows.
+The block is four sections: *The Algebra* (12 articles), *The Frame* (6), *The Modules*
+(3), *The Element* (14), plus the unnumbered worked examples. The block has 35 articles,
+and the forms block follows.
 
 Rules for the ladder.
 
@@ -932,7 +934,7 @@ which form constrains it.
 | 3 | The Indefinite Polar Decomposition of an Invertible Operator | K | polar | after 65 | research |
 | 4 | The Failure of the Indefinite SVD | K | SVD | after 65 | research, negative |
 | 5 | The Singular Values of a Biquaternion | H + N | SVD | after 47 | ready |
-| — | The Multiplicative Jordan–Chevalley Decomposition of a Unit | none | additive | covered (30) | **covered** by *The Semisimple–Nilpotent Split* |
+| — | The Multiplicative Jordan–Chevalley Decomposition of a Unit | none | additive | covered (28) | **covered** by *The Semisimple–Nilpotent Split* |
 
 The form-free family is now closed: the additive shape is §*The Multiplicative Form*
 of the JC article, and the other four shapes are covered or rejected.
@@ -952,7 +954,7 @@ of the JC article, and the other four shapes are covered or rejected.
   $\lVert M\rVert_F^2=2H(Q)$.
 - **Factorisation.** Unitary biquaternions $Q_U,Q_V$ and a Hermitian positive semidefinite
   $Q_\Sigma$ give $Q=Q_UQ_\Sigma Q_V^{\#}$.
-- **Rank.** $\sigma_2>0$ iff $N(Q)\ne0$; $\sigma_2=0<\sigma_1$ iff $N(Q)=0$ and $Q\ne0$.
+- **Rank.** $\sigma_2>0$ iff $N(Q)\ne0$. If $N(Q)=0$, then $\sigma_2=0$, and $\sigma_1>0$ exactly when $Q\ne0$.
 - **Equality case.** $\sigma_1=\sigma_2$ iff $H=|N|$ iff $Q=\zeta q$ with $|\zeta|=1$ and
   $q\in\mathbb{R}^4$.
 - **Worked values.** $e_t$: $(1,1)$. $e_t+e_x$: $(\sqrt2,\sqrt2)$. $e_t+i e_x$: $(2,0)$.
@@ -1019,7 +1021,7 @@ of the JC article, and the other four shapes are covered or rejected.
 ### 8.7 The Moore–Penrose Inverse of a Biquaternion
 
 - **Family H + N, derived from the SVD.** **Covered**, not a decomposition to add.
-- **Where.** *The Polar Decomposition of a Biquaternion* (45) defines it, proves
+- **Where.** *The Polar Decomposition of a Biquaternion* (43) defines it, proves
   uniqueness, gives the closed form on the Hermitian factor and the three cases; the
   general theorem is *The Moore–Penrose Inverse in an Involutive Algebra*, cited there.
 - **Decision.** Do not write a biquaternion article for it unless the general algebra
@@ -1058,6 +1060,13 @@ of the JC article, and the other four shapes are covered or rejected.
     $\det A\ne0$.
 
 ## 10. Changelog
+
+- **2026-09-27 (position repair).** §0, §8 and the filing line now use the current menu
+  positions: the first polar is 43, the first N-polar is 53, K-regularity is 64, and the
+  exponential-polar series is 100–122. The Frame has six articles and The Element
+  fourteen, so the block has 35 articles. The queue anchors are unchanged and now match
+  the menu: the N entries after 54, the K entries after 65, the singular values after 47.
+  No decomposition changed.
 
 - **2026-09-27 (Peirce/ideal ordering repair).** The ideal theory is no longer introduced
   in *The Peirce Decomposition*: that article now uses only the product and the
@@ -1162,3 +1171,12 @@ of the JC article, and the other four shapes are covered or rejected.
   positions of *The Regular Module* (21) and *The Minimal Left Ideals* (22) are the only
   §0.1 rows that moved, since the two articles removed from 22 and 23 were reinserted at
   19 and 20. The historical entries of this log keep the numbers they had when written.
+
+- **2026-09-27 (Peirce pair merged).** The four matrix articles of *The Frame* were replaced
+  by one pair: *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor
+  Planes* and *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor
+  Planes*. Each carries the Peirce table, the coordinate isomorphism, the systems of matrix
+  units and the two spinor planes in one article, with no ideal or module language. The
+  *Columns, Rows and the Spinor Spaces* pair is deleted; *The Frame* has six articles and
+  *The Modules* is unchanged.
+

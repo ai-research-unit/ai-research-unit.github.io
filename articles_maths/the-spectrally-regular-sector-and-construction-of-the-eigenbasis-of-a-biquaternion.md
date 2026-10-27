@@ -1,4 +1,4 @@
-# __The Eigenbasis__
+# __The Eigenbasis of a Spectrally Regular Biquaternion__
 
 ## Introduction
 
@@ -542,7 +542,7 @@ $$
 
 with both off-diagonal corners zero, and the two diagonal coefficients equal. The gauge is the whole idempotent variety, of complex dimension two. At the origin the eigenvalue is zero as well, and the one-term writing is $0=0\cdot e_t$.
 
-**The nilpotent stratum.** $Q_t=0$, $\vec Q\neq0$, $\vec Q^2=0$. Write $\vec N=\vec Q$. The canonical data are the line $\mathbb{C}\vec N$, the plane $\ker L_{\vec N}=\operatorname{im}L_{\vec N}$, and the flag
+**The nilpotent stratum.** $\vec Q\neq0$, $Q_t=0$, $\vec Q^2=0$. Write $\vec N=\vec Q$. The canonical data are the line $\mathbb{C}\vec N$, the plane $\ker L_{\vec N}=\operatorname{im}L_{\vec N}$, and the flag
 
 $$
 0\subset\mathbb{C}\vec N\subset\ker L_{\vec N}\subset\mathbb{B}.
@@ -560,9 +560,9 @@ $$
 e_b=e+b\vec N,\qquad b\in\mathbb{C},
 $$
 
-and the product identity $e_b\vec Nf_b=\vec N$ holds, with $f_b=e_t-e_b$. Equivalently, $e_b$ is the unique non-zero idempotent on the complement line $\mathbb{C}e_b$ to $\mathbb{C}\vec N$ in $\ker L_{\vec N}$; the parameter $b$ is the choice of that complement. The opposite corner $f_b\mathbb{B}e_b$ is a line that moves with $b$, so the Peirce quadruple is not a function of the element **for the plain product**. A canonical choice of complement on the cone, hence of one quadruple, is made in *The Jordan Normal Form*, §*The Jordan Basis*. The element has no eigenbasis, because its eigenspace is $\ker L_{\vec N}$, of complex dimension two.
+and the product identity $e_b\vec Nf_b=\vec N$ holds, with $f_b=e_t-e_b$. Equivalently, $e_b$ is the unique non-zero idempotent on the complement line $\mathbb{C}e_b$ to $\mathbb{C}\vec N$ in $\ker L_{\vec N}$; the parameter $b$ is the choice of that complement. The opposite corner $f_b\mathbb{B}e_b$ is a line that moves with $b$, so the Peirce quadruple is not a function of the element **for the plain product**. A canonical choice of complement on the cone, hence of one quadruple, is made in *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Jordan Basis*. The element has no eigenbasis, because its eigenspace is $\ker L_{\vec N}$, of complex dimension two.
 
-**The unipotent stratum.** $Q_t\neq0$, $\vec Q\neq0$. Put $\vec\Upsilon=\vec Q/Q_t$. Then $\vec\Upsilon^2=0$ and
+**The unipotent stratum.** $\vec Q\neq0$, $Q_t\neq0$. Put $\vec\Upsilon=\vec Q/Q_t$. Then $\vec\Upsilon^2=0$ and
 
 $$
 \tilde Q=Q_tu,\qquad u=e_t+\vec\Upsilon,\qquad (u-e_t)^2=0.
@@ -592,7 +592,7 @@ $$
 0\subset\mathbb{C}\vec Q\subset\ker R_{\vec Q}\subset\mathbb{B},
 $$
 
-not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a Jordan basis; a canonical choice of the complement removes both freedoms and selects one quadruple, constructed in *The Jordan Normal Form*.
+not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a Jordan basis; a canonical choice of the complement removes both freedoms and selects one quadruple, constructed in *The Jordan Basis of a Spectrally Degenerate Biquaternion*.
 
 ## Spinors and Chirality
 
@@ -804,12 +804,12 @@ The construction fails exactly on the spectral-degenerate cone, and the failure 
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector $\Sigma_{01}$, the scaled idempotents and the same eigenbasis with a zero eigenvalue.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotents and the origin.
-- [The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
 - [The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations](m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
 - [Worked Examples of Eigenbasis of a Biquaternion](worked-examples-of-eigenbasis-of-a-biquaternion.html), for computed eigenbases of the standard elements.
 - [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.
 - [Spinors as Minimal Left Ideals with Inner Conjugation](spinors-as-minimal-left-ideals-with-inner-conjugation.html), for the identification of the minimal left ideals with the spinor spaces and the chiral halves.
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the spectral decomposition in the wider theory.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the spectral projectors, the trace pairing and the matrix models.

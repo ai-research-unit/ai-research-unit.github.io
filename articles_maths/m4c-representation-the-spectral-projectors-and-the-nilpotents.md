@@ -14,7 +14,7 @@ $$
 $$
 The projectors are $\rho_\pm=\mathsf{M}_4(\tilde\Pi_\pm)$.
 
-**Boundaries.** The spectral criterion is *The Spectrum*; the construction of the eigenbasis and of the nilpotents is *The Eigenbasis*; the diagonalising matrix is *$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix*; the degenerate cone is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
+**Boundaries.** The spectral criterion is *The Spectrum*; the construction of the eigenbasis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the diagonalising matrix is *$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix*; the degenerate cone is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
 
 ## The Spectral Projectors
 
@@ -43,7 +43,7 @@ which exhibits $M$ as a polynomial in $\mathsf{M}_4(\vec\Xi)$. $\square$
 
 **Not Hermitian in general.** For a general complex element the projectors are not Hermitian: $\rho_\pm^{\dagger}$ is the projector of the conjugate direction. They are Hermitian exactly when $\vec\Xi$ is Hermitian, in particular when the element lies in the Hermitian or the anti-Hermitian subspace.
 
-**The column spaces.** Since $M\rho_+=\lambda_+\rho_+$ and $M\rho_-=\lambda_-\rho_-$, the column space of $\rho_+$ is the eigenspace of $\lambda_+$, of dimension two, and the column space of $\rho_-$ is the eigenspace of $\lambda_-$, of dimension two. The two eigenspaces are complementary. In the Peirce basis they are the two coordinate planes $E_+$ and $E_-$ of *$M_4(\mathbb{C})_L$ Representation : The Columns, the Rows and the Spinor Spaces*.
+**The column spaces.** Since $M\rho_+=\lambda_+\rho_+$ and $M\rho_-=\lambda_-\rho_-$, the column space of $\rho_+$ is the eigenspace of $\lambda_+$, of dimension two, and the column space of $\rho_-$ is the eigenspace of $\lambda_-$, of dimension two. The two eigenspaces are complementary. In the Peirce basis they are the two coordinate planes $E_+$ and $E_-$ of *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
 ## The Spectral Decomposition
 
@@ -176,5 +176,5 @@ For a spectrally regular element the two spectral projectors are $\rho_\pm=\tfra
 - [$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix](m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis
 - [$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the cone
 - [$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents](m2c-representation-the-spectral-projectors-and-the-nilpotents.html), for the $2\times2$ version
-- [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone

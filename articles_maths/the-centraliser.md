@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The centraliser of an element is the set of elements that commute with it. In the biquaternion algebra it is small and completely determined: for every non-central element it is the plane spanned by $e_t$ and the element itself, of complex dimension two, and only its algebra type changes with the discriminant. The central element is the single exception, and there the centraliser is the whole algebra.
+The centraliser of an element is the set of elements that commute with it. In the biquaternion algebra it is small and completely determined: for every non-central element it is the plane spanned by $e_t$ and the element itself, of complex dimension two, and its algebra type changes with the discriminant, $\mathbb{C}\times\mathbb{C}$ off the spectral-degenerate cone and the dual numbers on it. The central element is the single exception, and it lies on that same cone: there the centraliser is the whole algebra.
 
 The article is the intrinsic half of the element's theory. It gives the centraliser, its type, the double centraliser and the dimension count, and it supplies the uniqueness proof of *The Semisimple–Nilpotent Split*: the two parts of the split are polynomials in the element, hence lie in a commutative centraliser, hence commute.
 
@@ -25,15 +25,9 @@ Two elementary facts are used below.
 
 ## The Three Cases
 
-**The central element.** If $\tilde Q=Q_te_t$ then $\tilde Q$ commutes with everything, so
+**The order is by the discriminant, and centrality refines the degenerate side.** The first case is $B^2\neq0$, the spectrally regular case. The second and the third are the two halves of $B^2=0$: the central case $\vec Q=0$, and the non-central case $\vec Q\neq0$. The central element is therefore a particular case of the spectral-degenerate cone, the scalar line, not a fourth case beside it. In every case the centraliser contains $\mathbb{C}[\tilde Q]=\operatorname{span}\{e_t,\tilde Q\}$; its dimension is two off the centre and four at the centre, and its type off the centre is decided by the discriminant.
 
-$$
-C(\tilde Q)=\mathbb{B},\qquad C(C(\tilde Q))=\mathbb{C}e_t .
-$$
-
-The double centraliser is the centre, not the element: the central element carries no information.
-
-**The element off the cone, $B^2\neq0$.** Then the minimal polynomial of $\tilde Q$ is
+**First case: spectrally regular, $B^2\neq0$.** Then the minimal polynomial of $\tilde Q$ is
 
 $$
 p_{\tilde Q}(X)=(X-Q_t)^2+B^2,
@@ -47,23 +41,31 @@ $$
 
 of complex dimension two. The isomorphism is the pair of evaluations at the two eigenvalues, $\tilde X\mapsto(\tilde X(\lambda_+),\tilde X(\lambda_-))$.
 
-**The element on the cone, $B^2=0$ and $\tilde Q$ non-central.** Write $\tilde Q=Q_te_t+\tilde N$ with $\tilde N=\vec Q\neq0$ and $\tilde N^2=0$. The minimal polynomial is $(X-Q_t)^2$, of degree two, so the matrix is again nonderogatory, and
+**Second case: spectrally degenerate and central, $B^2=0$ and $\vec Q=0$.** The condition $\vec Q=0$ is exactly $\tilde Q=Q_te_t$, with $Q_t$ arbitrary: this is the whole scalar line, the vertex of the spectral-degenerate cone, and it contains the origin. The element is central, so it commutes with everything:
+
+$$
+C(\tilde Q)=\mathbb{B},\qquad C(C(\tilde Q))=\mathbb{C}e_t .
+$$
+
+Its minimal polynomial is $X-Q_t$, of degree one, so the matrix is derogatory and $C(\tilde Q)\neq\mathbb{C}[\tilde Q]$: the polynomial algebra is the scalar line itself, of complex dimension one, while the centraliser has dimension four. The double centraliser is the centre, not the element: the central element carries no information.
+
+**Third case: spectrally degenerate and non-central, $B^2=0$ and $\vec Q\neq0$.** Write $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon=\vec Q\neq0$ and $\vec\Upsilon^2=0$. The minimal polynomial is $(X-Q_t)^2$, of degree two, so the matrix is again nonderogatory, and
 
 $$
 C(\tilde Q)=\mathbb{C}[\tilde Q]\cong\mathbb{C}[X]/((X-Q_t)^2)\cong\mathbb{C}[\varepsilon]/(\varepsilon^2),
 $$
 
-the **dual numbers**, of complex dimension two. The isomorphism sends $\varepsilon$ to $\tilde N=\tilde Q-Q_te_t$.
+the **dual numbers**, of complex dimension two. The isomorphism sends $\varepsilon$ to $\vec\Upsilon=\tilde Q-Q_te_t$.
 
-The three cases are exhaustive: an element is central, or $B^2\neq0$, or $B^2=0$ and non-central. In every non-central case the centraliser is two-dimensional, and the type is decided by the discriminant:
+The three cases are exhaustive: either $B^2\neq0$, or $B^2=0$ and $\vec Q$ is zero or non-zero. In both non-central cases the centraliser is two-dimensional, and the type is decided by the discriminant: $\mathbb{C}\times\mathbb{C}$ off the cone, the dual numbers on it. The central case is the whole algebra.
 
-| element | $C(\tilde Q)$ | type | dimension |
-|---|---|---|---|
-| $\tilde Q=Q_te_t$ | $\mathbb{B}$ | the algebra | $4$ |
-| $B^2\neq0$ | $\mathbb{C}[\tilde Q]$ | $\mathbb{C}\times\mathbb{C}$ | $2$ |
-| $B^2=0$, $\tilde Q$ non-central | $\mathbb{C}[\tilde Q]$ | dual numbers | $2$ |
+| case | element | $C(\tilde Q)$ | type | complex dimension |
+|---|---|---|---|---|
+| spectrally regular, $B^2\neq0$ | general, non-central | $\mathbb{C}[\tilde Q]$ | $\mathbb{C}\times\mathbb{C}$ | $2$ |
+| spectrally degenerate, central, $B^2=0$ and $\vec Q=0$ | $Q_te_t$ | $\mathbb{B}$ | the algebra | $4$ |
+| spectrally degenerate, non-central, $B^2=0$ and $\vec Q\neq0$ | $Q_te_t+\vec N$, $\vec N\neq0$, $\vec N^2=0$ | $\mathbb{C}[\tilde Q]$ | dual numbers | $2$ |
 
-**The equality $C(\tilde Q)=\mathbb{C}[\tilde Q]$ is the statement that the element is nonderogatory**, and it fails only at the centre, where the minimal polynomial has degree one while the algebra has dimension four.
+**The equality $C(\tilde Q)=\mathbb{C}[\tilde Q]$ is the statement that the element is nonderogatory**, and it fails only at the centre, $B^2=0$ with $\vec Q=0$, where the minimal polynomial has degree one while the algebra has dimension four.
 
 ## The Double Centraliser
 
@@ -81,21 +83,21 @@ The double centraliser is the algebra-side statement of the module classificatio
 
 The centraliser is what makes the semisimple–nilpotent split unique.
 
-Let $\tilde Q=\tilde S+\tilde N$ with $\tilde S$ semisimple, $\tilde N$ nilpotent and $\tilde S\tilde N=\tilde N\tilde S$. Both $\tilde S$ and $\tilde N$ are polynomials in $\tilde Q$ by the Chinese-remainder construction on the two eigenvalues, and $\tilde N$ has zero constant term; hence both lie in $\mathbb{C}[\tilde Q]=C(\tilde Q)$. The centraliser is commutative, so any two such decompositions commute, and their semisimple and nilpotent parts agree by the uniqueness of the Jordan decomposition in a commutative algebra.
+Let $\tilde Q=\tilde Q_s+\vec\Upsilon$ with $\tilde Q_s$ semisimple, $\vec\Upsilon$ nilpotent and $\tilde Q_s\vec\Upsilon=\vec\Upsilon\tilde Q_s$. Both $\tilde Q_s$ and $\vec\Upsilon$ are polynomials in $\tilde Q$ by the Chinese-remainder construction on the two eigenvalues, and $\vec\Upsilon$ has zero constant term; hence both lie in $\mathbb{C}[\tilde Q]=C(\tilde Q)$. The centraliser is commutative, so any two such decompositions commute, and their semisimple and nilpotent parts agree by the uniqueness of the Jordan decomposition in a commutative algebra.
 
 The two explicit cases are these.
 
-- $B^2\neq0$: $\tilde Q$ is semisimple already, so $\tilde S=\tilde Q$ and $\tilde N=0$.
-- $B^2=0$: $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$, so $\tilde S=Q_te_t$ and $\tilde N=\vec Q$.
+- $B^2\neq0$: $\tilde Q$ is semisimple already, so $\tilde Q_s=\tilde Q$ and $\vec\Upsilon=0$.
+- $B^2=0$: $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$, so $\tilde Q_s=Q_te_t$ and $\vec\Upsilon=\vec Q$. This covers both halves of the cone; at the centre $\vec Q=0$ and the nilpotent part vanishes.
 
-The four types of the split — scalar, semisimple, Jordan, nilpotent — are the four positions of $(\tilde S,\tilde N)$ in these two cases. They are stated, with the corner pattern, in *The Semisimple–Nilpotent Split*.
+The four types of the split — scalar, semisimple, Jordan, nilpotent — are the four positions of $(\tilde Q_s,\vec\Upsilon)$ in these two cases. They are stated, with the corner pattern, in *The Semisimple–Nilpotent Split*.
 
 ## Summary
 
 - $C(\tilde Q)=\{\tilde X:\tilde X\tilde Q=\tilde Q\tilde X\}$ is a unital subalgebra containing $\tilde Q$.
-- For a non-central element $C(\tilde Q)=\mathbb{C}[\tilde Q]$, of complex dimension two.
-- Off the cone, $C(\tilde Q)\cong\mathbb{C}\times\mathbb{C}$; on the cone, $C(\tilde Q)\cong\mathbb{C}[\varepsilon]/(\varepsilon^2)$, the dual numbers.
-- For the central element, $C(\tilde Q)=\mathbb{B}$ and $C(C(\tilde Q))=\mathbb{C}e_t$.
+- If $B^2\neq0$, then $C(\tilde Q)=\mathbb{C}[\tilde Q]\cong\mathbb{C}\times\mathbb{C}$, of complex dimension two.
+- If $B^2=0$ and $\tilde Q=Q_te_t$ is central, then $C(\tilde Q)=\mathbb{B}$ and $C(C(\tilde Q))=\mathbb{C}e_t$.
+- If $B^2=0$ and $\tilde Q$ is non-central, then $C(\tilde Q)=\mathbb{C}[\tilde Q]\cong\mathbb{C}[\varepsilon]/(\varepsilon^2)$, the dual numbers, of complex dimension two.
 - The double centraliser of a non-central element is its centraliser.
 - The parts of the semisimple–nilpotent split are polynomials in the element, hence lie in the commutative centraliser; this is the uniqueness proof.
 

@@ -1,8 +1,8 @@
-# __Relations between Quaternionic Norm and Spectral Regularity and Degeneracy__
+# __Relations between the N Norm and Spectral Regularity and Degeneracy__
 
 ## Introduction
 
-The biquaternion algebra carries two quadratic conditions on one element. The **quaternionic norm** $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, is multiplicative; it vanishes exactly on the non-units, and its zero locus is the **null cone** $\mathcal{N}$. The **square of the vector part** $B^2$ carries no scalar term and is not multiplicative; it vanishes exactly when the two eigenvalues of $\tilde Q$ coincide, and its zero locus is the **spectral-degenerate cone** $\mathcal S$. The first condition decides invertibility, the second decides whether the spectrum is separated. The two are studied one at a time in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*; this article compares them.
+The biquaternion algebra carries many quadratic conditions on one element; this article compares two of them. The **quaternionic norm** $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, is multiplicative; it vanishes exactly on the non-units, and its zero locus is the **null cone** $\mathcal{N}$. The **square of the vector part** $B^2$ carries no scalar term and is not multiplicative; it vanishes exactly when the two eigenvalues of $\tilde Q$ coincide, and its zero locus is the **spectral-degenerate cone** $\mathcal S$. The first condition decides invertibility, the second decides whether the spectrum is separated. The two are studied one at a time in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*; this article compares them.
 
 The comparison is organised by the pair of predicates $(N\neq0,\ B^2\neq0)$. The pair cuts $\mathbb{B}$ into four **sectors**, and the same four sectors are the four degeneration patterns of the characteristic polynomial. Each sector is treated in its own article: *The N-Regular, Spectrally Regular Sector*, *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The index $i$ in $\Sigma_{ij}$ is the norm and the index $j$ the spectrum; the four articles are ordered $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$, the units first and the null cone second.
 
@@ -202,7 +202,7 @@ with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-
 (iii) On $\Sigma_{10}^{\mathrm{J}}$ no non-trivial idempotent commutes with $\tilde Q$, so there is no two-term decomposition.
 (iv) On $\Sigma_{00}$ the same holds off the origin; at the origin only the trivial one-term writing $0=0\cdot e_t$ exists.
 
-*Proof.* The first two statements and the last are *The Spectrum*, §*The Spectral Decomposition* and §*The Behaviour on the Cone*. On $\Sigma_{10}^{\mathrm{J}}$ the minimal polynomial is $(X-Q_t)^2$ and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$.
+*Proof.* The first two statements and the last are *The Spectrum*, §*The Spectral Decomposition*, and *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*. On $\Sigma_{10}^{\mathrm{J}}$ the minimal polynomial is $(X-Q_t)^2$ and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$.
 
 **Definition (modulus–unit polar decomposition).** A **modulus–unit polar decomposition** of $\tilde Q$ is a writing $\tilde Q=\Rho\tilde U$ with $\Rho\in\mathbb{C}$, $\Rho\neq0$, $\Rho^2=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$.
 
@@ -282,7 +282,7 @@ If $B^{2}=0$ then $\mathrm{ad}_{\vec Q}^{3}=0$. If $B^{2}\neq0$ then $\vec Q\neq
 
 ## Summary
 
-The biquaternion algebra carries two quadratic conditions. The quaternionic norm $N=Q_t^2+B^2$ is the constant term of the characteristic polynomial and the product of the eigenvalues; it is multiplicative, and it decides invertibility. The square of the vector part $B^2$ is the discriminant up to $-4$ and vanishes exactly when the two eigenvalues coincide; it is not multiplicative, and it decides whether the spectrum is separated. The null cone is the locus of an eigenvalue at zero, the spectral-degenerate cone the locus of a double eigenvalue.
+The biquaternion algebra carries many quadratic conditions; this article compares two of them. The quaternionic norm $N=Q_t^2+B^2$ is the constant term of the characteristic polynomial and the product of the eigenvalues; it is multiplicative, and it decides invertibility. The square of the vector part $B^2$ is the discriminant up to $-4$ and vanishes exactly when the two eigenvalues coincide; it is not multiplicative, and it decides whether the spectrum is separated. The null cone is the locus of an eigenvalue at zero, the spectral-degenerate cone the locus of a double eigenvalue.
 
 The pair of predicates $(N\neq0,\ B^2\neq0)$ cuts the algebra into four sectors, and the four sectors are the four degeneration patterns of a quadratic: two distinct non-zero roots, a double non-zero root, two distinct roots with one zero, a double root at zero. The origin is doubly degenerate and belongs to $\Sigma_{00}$; it is not a fifth case. The finer reading separates the punctured scalar line from the Jordan part and the origin from the non-zero nilpotents, but that split is by the minimal polynomial, not by the two conditions.
 

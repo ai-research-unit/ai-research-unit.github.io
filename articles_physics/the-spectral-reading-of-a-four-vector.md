@@ -135,7 +135,7 @@ The transformation law is the reason for the name. The two coefficients are the 
 
 ### The Rest Frame
 
-At $\vec p=0$ the rapidity vanishes, $\nu_\pm=mc$, and the two eigenvalues coincide at $imc$. The element is the scalar $i\frac{E}{c}e_t$ with $E=mc^2$, so the degeneracy is the diabolic case, the scalar vertex of *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, §*The Behaviour on the Cone*. The two-term writing still holds, but it is not unique: every complementary pair of Hermitian idempotents gives
+At $\vec p=0$ the rapidity vanishes, $\nu_\pm=mc$, and the two eigenvalues coincide at $imc$. The element is the scalar $i\frac{E}{c}e_t$ with $E=mc^2$, so the degeneracy is the diabolic case, the scalar vertex of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Boundary*. The two-term writing still holds, but it is not unique: every complementary pair of Hermitian idempotents gives
 
 $$
 i\,mc\left(\tilde\Pi_++\tilde\Pi_-\right)=i\,mc\,e_t,

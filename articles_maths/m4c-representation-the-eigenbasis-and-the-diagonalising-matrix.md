@@ -13,7 +13,7 @@ $$
 \det\mathsf{C}_Q=2B(B-Q_z).
 $$
 
-**Boundaries.** The projectors and nilpotents are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the centraliser is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*; the $2\times2$ diagonalising matrix is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the construction of the spectral basis is *The Eigenbasis*.
+**Boundaries.** The projectors and nilpotents are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the centraliser is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*; the $2\times2$ diagonalising matrix is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the construction of the spectral basis is *The Eigenbasis of a Spectrally Regular Biquaternion*.
 
 ## The Eigenbasis
 
@@ -189,4 +189,4 @@ The eigenbasis is the basis of $\mathbb{C}^4$ formed by the coordinate columns o
 - [$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors
 - [$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), for the ambiguity
 - [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the $2\times2$ matrix
-- [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction

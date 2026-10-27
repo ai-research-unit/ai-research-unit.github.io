@@ -143,8 +143,8 @@ with $\sin B/B$ read as $1$ when $B=0$.
 | Regime | Condition | $\exp\mathsf{M}_4(\tilde Q)$ |
 |---|---|---|
 | Oscillatory | $B\neq0$ | $e^{Q_t}\bigl(\cos B\,\mathrm I_4+\frac{\sin B}{B}\mathsf{M}_4(\vec Q)\bigr)$ |
-| Nilpotent | $B=0$ | $e^{Q_t}\bigl(\mathrm I_4+\mathsf{M}_4(\vec Q)\bigr)$ |
-| Scalar | $\vec Q=0$ | $e^{Q_t}\mathrm I_4$ |
+| Scalar | $B=0$, $\vec Q=0$ | $e^{Q_t}\mathrm I_4$ |
+| Nilpotent | $B=0$, $\vec Q\neq0$ | $e^{Q_t}\bigl(\mathrm I_4+\mathsf{M}_4(\vec Q)\bigr)$ |
 
 **The spectral reading.** The eigenvalues of $\mathsf{M}_4(\tilde Q)$ are $Q_t\pm iB$, each double, and those of the exponential are $e^{Q_t\pm iB}$, each double. The formula is the spectral theorem written with the two rank-two eigenprojections. It is also the functional calculus of $e^z$ read on the two distinct eigenvalues.
 
@@ -501,4 +501,4 @@ The square roots in the image are the images of the biquaternion roots: four for
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Lie correspondence
 - [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the algebra classification
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots of one
-- [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the spectral basis
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the spectral basis

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two quadratic conditions. The quaternionic norm $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, vanishes exactly on the non-units; its zero locus is the null cone $\mathcal{N}$. The square $B^2$ of the vector part vanishes exactly when the two eigenvalues of $\tilde Q$ coincide; its zero locus is the spectral-degenerate cone $\mathcal S$. The two conditions cut the algebra into four sectors. Write $\Sigma_{ij}$ for the sector with $i=1$ if $\langle\tilde Q\rangle_{\natural}\neq0$ and $i=0$ if $\langle\tilde Q\rangle_{\natural}=0$, and $j=1$ if $B^2\neq0$ and $j=0$ if $B^2=0$. This article treats $\Sigma_{00}$, the sector on which both conditions degenerate; the doubly regular sector $\Sigma_{11}$ is the sector on which neither does.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries many quadratic conditions. Two of them cut the algebra into four sectors. The quaternionic norm $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, vanishes exactly on the non-units; its zero locus is the null cone $\mathcal{N}$. The square $B^2$ of the vector part vanishes exactly when the two eigenvalues of $\tilde Q$ coincide; its zero locus is the spectral-degenerate cone $\mathcal S$. Write $\Sigma_{ij}$ for the sector with $i=1$ if $\langle\tilde Q\rangle_{\natural}\neq0$ and $i=0$ if $\langle\tilde Q\rangle_{\natural}=0$, and $j=1$ if $B^2\neq0$ and $j=0$ if $B^2=0$. This article treats $\Sigma_{00}$, the sector on which both conditions degenerate; the doubly regular sector $\Sigma_{11}$ is the sector on which neither does.
 
 The sector is the set-theoretic intersection of the two cones. It has three descriptions, given in §*The Sector and Its Three Descriptions*: it is $\{Q_t=0,\ \vec Q^2=0\}$, it is the set of square-zero elements, and it is the pure stratum of the null cone with the origin adjoined. The article then computes its geometry (a complex cone of dimension two), its elements (nilpotents of index two), the special role of the origin, and its behaviour under multiplication. The last sections compare it with the other three sectors and collect the consequences.
 
@@ -130,7 +130,7 @@ $$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}=J_2(0).
 $$
 
-**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Jordan Normal Form* exists; what fails is the eigenbasis.
+**No eigenbasis.** The construction needs a root $\vec\Xi=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Jordan Basis of a Spectrally Degenerate Biquaternion* exists; what fails is the eigenbasis.
 
 ## The Origin
 
@@ -198,7 +198,7 @@ and they agree wherever $Q_t=0$, that is, on all of $\Sigma_{00}$. At the origin
 | **norm-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$; spectrum $\{Q_t\}$ | the spectral pair fails off the scalar line; a canonical Jordan pair exists; one term on the scalar line | $\langle\tilde Q\rangle_{\natural}\neq0$ preserved; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin; spectrum $\{0\}$ | the spectral pair fails off the origin; a canonical Jordan pair exists off the origin | $0$ or $\Sigma_{01}$ |
 
-On the two degenerate rows the canonical pair is the one selected by the definite Hermitian form off the origin, and the corresponding Jordan basis is constructed in *The Jordan Normal Form*.
+On the two degenerate rows the canonical pair is the one selected by the definite Hermitian form off the origin, and the corresponding Jordan basis is constructed in *The Jordan Basis of a Spectrally Degenerate Biquaternion*.
 
 **No sector is closed under multiplication.** Only the norm dichotomy is: $\mathcal{N}$ is a semigroup and $\mathbb{B}^{\times}$ is a group. The four witnesses are
 
@@ -332,9 +332,9 @@ The sector is the doubly degenerate cell: the set of square-zero elements, the i
 ## Further Reading
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the null cone and its pure and non-pure strata.
-- [The Spectrally Degenerate Sector and Construction of the Jordan Basis of a Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
 - [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the two cases and the degenerate cone.
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the independence of the two cones, the nilpotent intersection and the four sectors.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the independence of the two cones, the nilpotent intersection and the four sectors.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and the unit factor of norm one.
 - [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the place of $\langle\tilde Q\rangle_{\natural}$ among the four norms and of $B^2$ outside them.

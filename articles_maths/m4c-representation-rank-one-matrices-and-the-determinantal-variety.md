@@ -153,7 +153,7 @@ $$
 E_{12}E_{21}=E_{11},\qquad E_{21}E_{12}=E_{22},\qquad
 E_{12}^2=E_{21}^2=0.
 $$
-The product of the two doubled nilpotents is the doubled idempotent of the opposite corner, and every rank-two idempotent arises this way after a change of matrix units. The statement is the matrix form of the fact that every nontrivial idempotent is a product of two nilpotents, proved in *$M_4(\mathbb{C})_L$ Representation : The Peirce Coordinates and the Matrix Units*.
+The product of the two doubled nilpotents is the doubled idempotent of the opposite corner, and every rank-two idempotent arises this way after a change of matrix units. The statement is the matrix form of the fact that every nontrivial idempotent is a product of two nilpotents, proved in *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
 **The scaled idempotent.** A rank-two idempotent is not nilpotent: $P_L^2=P_L$ and $P_L\neq0$. It is nevertheless a zero divisor, because $P_L(e_t-P_L)=0$; its annihilator is the ideal of the complementary plane. The distinction between the idempotent and the nilpotent is the distinction between the non-pure and the pure strata.
 
@@ -180,7 +180,7 @@ A nonzero singular matrix in the regular image has rank two and is the double of
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone
 - [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the rank-one elements and the corners
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link and its topology
-- [$M_4(\mathbb{C})_L$ Representation : The Peirce Coordinates and the Matrix Units](m4c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the matrix units
+- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units
 - [$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the $2\times2$ version
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for determinantal varieties

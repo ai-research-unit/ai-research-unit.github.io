@@ -127,8 +127,8 @@ The formula separates into the two regimes of the biquaternion article.
 | Regime | Condition | $\exp\mathsf M_2(\tilde Q)$ |
 |---|---|---|
 | Oscillatory | $B\neq0$ | $e^{Q_t}\bigl(\cos B\,\mathrm I_2+\frac{\sin B}{B}\mathsf M_2(\vec Q)\bigr)$ |
-| Nilpotent | $B=0$ | $e^{Q_t}\bigl(\mathrm I_2+\mathsf M_2(\vec Q)\bigr)$ |
-| Scalar | $\vec Q=0$ | $e^{Q_t}\mathrm I_2$ |
+| Scalar | $B=0$, $\vec Q=0$ | $e^{Q_t}\mathrm I_2$ |
+| Nilpotent | $B=0$, $\vec Q\neq0$ | $e^{Q_t}\bigl(\mathrm I_2+\mathsf M_2(\vec Q)\bigr)$ |
 
 **The spectral reading.** The eigenvalues of $\mathsf M_2(\tilde Q)$ are $Q_t\pm iB$, and those of the exponential are $e^{Q_t\pm iB}$. The formula is the spectral theorem written with the two eigenprojections, and it agrees with the eigenvalue formula of *Biquaternion Elementary Functions*, §*The Closed Form*. It is also the functional calculus of $e^z$ read on the two eigenvalues.
 

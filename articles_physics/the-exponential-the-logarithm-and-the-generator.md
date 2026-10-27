@@ -76,10 +76,10 @@ A logarithm of a unit $\tilde Q$ is any $\tilde L$ with $\exp\tilde L=\tilde Q$.
 | Regime | Principal logarithm | Ambiguity |
 | --- | --- | --- |
 | $B\neq0$ | $\dfrac{\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-}{2}e_t+\dfrac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}\vec U$ | $2\pi i\left(k_+\tilde\Pi_++k_-\tilde\Pi_-\right)$, $k_\pm\in\mathbb{Z}$ |
+| $B=0$, $\vec Q=0$ | $\operatorname{Log}Q_t\,e_t$ | scalar logarithms and vector logarithms, not a coset |
 | $B=0$, $\vec Q\neq0$ | $\operatorname{Log}Q_t\,e_t+\dfrac{\vec Q}{Q_t}$ | $2\pi i k\,e_t$, $k\in\mathbb{Z}$ |
-| $\vec Q=0$ | $\operatorname{Log}Q_t\,e_t$ | scalar logarithms and vector logarithms, not a coset |
 
-The first two rows are lattice cosets. The third is not: a scalar unit has logarithms with a nonzero vector part, whose vector component runs over the complex quadric $(\vec Q_1,\vec Q_1)=(\pi n)^2$. The fibre over a scalar is therefore larger than a translate of the kernel by a lattice, and the coset language must not be used there.
+The first and the third rows are lattice cosets. The second is not: a scalar unit has logarithms with a nonzero vector part, whose vector component runs over the complex quadric $(\vec Q_1,\vec Q_1)=(\pi n)^2$. The fibre over a scalar is therefore larger than a translate of the kernel by a lattice, and the coset language must not be used there.
 
 The eigenvalue formula is the general one. The scalar part of the logarithm is fixed by the norm up to the imaginary part, and the vector part is the complex angle along the axis. The principal branch takes the arguments of $\lambda_\pm$ in $(-\pi,\pi]$; the other branches are the lattice shifts.
 

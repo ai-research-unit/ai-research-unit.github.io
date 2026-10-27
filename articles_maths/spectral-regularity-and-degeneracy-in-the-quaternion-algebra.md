@@ -109,7 +109,7 @@ a real line through the origin, closed in $\mathbb H$, of dimension one and meas
 
 **Corollary.** Among the three, $\mathbb H$ is the only division algebra, the only one with a definite vector form, and the only one with no defective element; its degenerate locus is the smallest possible nonempty one, a line.
 
-**Remark.** In $\mathbb B$ the spectral cone $B^2=0$ is distinct from the null cone of the norm, $Q_t^2+B^2=0$; the first is where the eigenvalues coalesce, the second where the element is a zero divisor. See [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html).
+**Remark.** In $\mathbb B$ the spectral cone $B^2=0$ is distinct from the null cone of the norm, $Q_t^2+B^2=0$; the first is where the eigenvalues coalesce, the second where the element is a zero divisor. See [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html).
 
 ## Summary
 

@@ -27,7 +27,7 @@ The four forms are the scalar parts of the four general products, one to each pa
 $$
 \boxed{\;
 P(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\qquad
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\qquad
 H(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\qquad
 K(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})
 \;}.
@@ -40,7 +40,7 @@ Each is written on the coordinates of a pair, with its Gram matrix and its signa
 **The plain form, written $P$.**
 
 $$
-P(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2),
+P(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
 $$
 
 the scalar part of the general plain bilinear product. It is symmetric, $\mathbb{C}$-bilinear and complex-valued, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. It is non-degenerate. Its null set, the set of $\tilde Q$ with $\langle\tilde Q,\tilde Q\rangle=0$, is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$, of real dimension six, and it is neither the zero-divisor cone nor the null cone. On the anti-Hermitian subspace its algebraic norm is negative definite, and on the Hermitian subspace positive definite.
@@ -50,17 +50,17 @@ the scalar part of the general plain bilinear product. It is symmetric, $\mathbb
 **The quaternionic form, written $N$.**
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
 $$
 
-the scalar part of the general quaternionic bilinear product: the same form as $\langle\cdot,\cdot\rangle$ read through the natural conjugation of the first slot, differing from it by the sign of the vector part alone. It is symmetric, $\mathbb{C}$-bilinear and complex-valued, its Gram matrix is the identity $\mathrm I_4$, and its realification is of signature $(4,4)$. It is non-degenerate. Its null set is the zero-divisor cone $\mathcal N=\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, of real dimension six, the null cone. Its algebraic norm is the **interval**, the quadratic form $Q_t^{2}+(\vec Q,\vec Q)$, and the pair of the first slot is what gives the square the positive sign on the vector part.
+the scalar part of the general quaternionic bilinear product: the same form as $\langle\cdot,\cdot\rangle$ read through the natural conjugation of the first slot, differing from it by the sign of the vector part alone. It is symmetric, $\mathbb{C}$-bilinear and complex-valued, its Gram matrix is the identity $\mathrm I_4$, and its realification is of signature $(4,4)$. It is non-degenerate. Its null set is the zero-divisor cone $\mathcal N=\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, of real dimension six, the null cone. Its algebraic norm is the quadratic form $Q_t^{2}+(\vec Q,\vec Q)$, and the pair of the first slot is what gives the square the positive sign on the vector part.
 
 ### The General Plain Sesquilinear Form, the Hermitian Form
 
 **The Hermitian form, written $H$.**
 
 $$
-H(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2}),
+H(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2}),
 $$
 
 the scalar part of the general plain sesquilinear product. It is conjugate-symmetric, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{*}}$, sesquilinear in the second slot, and its algebraic norm is real and positive definite, $\langle\tilde Q_2,\tilde Q_2\rangle_{*}>0$ for $\tilde Q_2\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. It is non-degenerate, and its null set is the origin alone, so it has no cone. Its algebraic norm is the square of the unique topological norm of the space, $\lVert\tilde Q_2\rVert_E^{2}$.
@@ -70,7 +70,7 @@ the scalar part of the general plain sesquilinear product. It is conjugate-symme
 **The Krein form, written $K$.**
 
 $$
-K(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2}),
+K(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2}),
 $$
 
 the scalar part of the general quaternionic sesquilinear product: the same form as $\langle\cdot,\cdot\rangle_{*}$ read through the natural conjugation of the first slot, differing from it by the sign of the vector part alone. It is conjugate-symmetric and sesquilinear, its algebraic norm is real and indefinite, its Gram matrix is the sign matrix $\mathrm E$, and its realification is of signature $(2,6)$. It is non-degenerate, and its null set is the real cone $\mathcal K$, the null cone of the Krein form. It is indefinite, of mixed signature on every subspace.
@@ -80,10 +80,10 @@ the scalar part of the general quaternionic sesquilinear product: the same form 
 
 | Full form name | Reduced name | Letter | Bracket | Expression with $\mathrm{Sc}$ | Coordinates | Gram | Signature over $\mathbb{R}$ | Null set | Algebraic norm lands in |
 |---|---|---|---|---|---|---|---|---|---|
-| The general plain bilinear form | **Plain Form** | $P$ | $\langle\cdot,\cdot\rangle$ | $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | $Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)$ | $\mathrm E$ | $(4,4)$ | the complex cone | $\mathbb{C}$ |
-| The general quaternionic bilinear form | **Quaternionic Form** | $N$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | $Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the $\natural$-degenerate set, the zero-divisor cone | $\mathbb{C}$ |
-| The general plain sesquilinear form | **Hermitian Form** | $H$ | $\langle\cdot,\cdot\rangle_{*}$ | $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | $Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | $\mathbb{R}$ |
-| The general quaternionic sesquilinear form | **Krein Form** | $K$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | $Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | $\mathrm E$ | $(2,6)$ | $\mathcal K$ | $\mathbb{R}$ |
+| The general plain bilinear form | **Plain Form** | $P$ | $\langle\cdot,\cdot\rangle$ | $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ | $\mathrm E$ | $(4,4)$ | the complex cone | $\mathbb{C}$ |
+| The general quaternionic bilinear form | **Quaternionic Form** | $N$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | $Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the $\natural$-degenerate set, the zero-divisor cone | $\mathbb{C}$ |
+| The general plain sesquilinear form | **Hermitian Form** | $H$ | $\langle\cdot,\cdot\rangle_{*}$ | $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | $Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | $\mathbb{R}$ |
+| The general quaternionic sesquilinear form | **Krein Form** | $K$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | $Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | $\mathrm E$ | $(2,6)$ | $\mathcal K$ | $\mathbb{R}$ |
 
 The table separates the four by their letter, their bracket and the product under $\mathrm{Sc}$, by the Gram matrix and the signature of the realification of their algebraic norm, by their null set, and by the field in which the algebraic norm lands — complex for the two bilinear forms and real for the two sesquilinear ones, the conjugating second slot being what makes a algebraic norm real.
 
@@ -94,11 +94,11 @@ The four forms are the scalar parts of the four general products, and the eight 
 
 **Lemma.** For a general product $f$ with parts $f^{\mathrm s}$ and $f^{\mathrm a}$, $\mathrm{Sc}\,f^{\mathrm s}=\mathrm{Sc}\,f$ and $\mathrm{Sc}\,f^{\mathrm a}=0$.
 
-*Proof.* For the two bilinear families $\mathrm{Sc}$ is commutative, so the half-sum equals $\mathrm{Sc}\,f$ and the half-difference vanishes. For the two sesquilinear families the exchange is the conjugate transpose, and the value it pairs with $f(\tilde Q_1,\tilde Q_2)$ has the same scalar part, $\mathrm{Sc}\,\overline{f(\tilde Q_2,\tilde Q_1)}=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$; the half-sum therefore keeps the scalar part and the half-difference kills it.
+*Proof.* For the two bilinear families the scalar part is symmetric, $\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\,f(\tilde Q_2,\tilde Q_1)$, so the half-sum equals $\mathrm{Sc}\,f$ and the half-difference vanishes. For the two sesquilinear families the exchange is the conjugate transpose, and the value it pairs with $f(\tilde Q_1,\tilde Q_2)$ has the same scalar part, $\mathrm{Sc}\,\overline{f(\tilde Q_2,\tilde Q_1)}=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$; the half-sum therefore keeps the scalar part and the half-difference kills it.
 
 **Proposition.** The twelve operations carry exactly four non-zero forms, each shared by a general product and its symmetric part: $\langle\cdot,\cdot\rangle$ on $\mathrm{GPA}$ and $\mathrm{SPA}$, $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathrm{GQA}$ and $\mathrm{SQA}$, $\langle\cdot,\cdot\rangle_{*}$ on $\mathrm{GPS}$ and $\mathrm{SPS}$, and $\langle\cdot,\cdot\rangle_{\natural*}$ on $\mathrm{GQS}$ and $\mathrm{SQS}$; the four antisymmetric operations carry the zero form.
 
-*Proof.* The lemma gives the first clause. The four are distinct: at $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_x+i\vec e_x$ they take the four different values $-(1+i)$, $1+i$, $-(1-i)$ and $1-i$.
+*Proof.* The lemma gives the first clause. The four are distinct: at $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_x+i\vec e_x$ they take the four different values $-(1+i)$, $1+i$, $1-i$ and $-(1-i)$.
 
 **Remark.** The zero form is not counted as a fifth: the four antisymmetric operations have zero scalar part and their values lie in the vector subspace, so the form they carry is the zero form. The alternating parts of the two Hermitian forms are not scalar parts of these operations; they are read in *Remarkable Subspaces and the Four General Products, Forms and Norms*, §*The Alternating Forms on the Whole Space*.
 
@@ -121,7 +121,7 @@ $$
 
 of real dimensions $12$, $12$, $16$ and $16$.
 
-*Proof.* A form with Gram matrix $G$ is preserved by a $\mathbb{C}$-linear $T$ exactly when $T^{\mathsf T}GT=G$ in the bilinear case and $T^{*}GT=G$ in the Hermitian case, $T^{\mathsf T}$ the transpose and $T^{*}$ the conjugate transpose. With $G=\mathrm I_4$ these are the defining equations of the complex orthogonal group $O_4(\mathbb{C})$ and of the unitary group $\mathrm{U}(4)$. With $G=\mathrm E$ the sign matrix is congruent to the identity over $\mathbb{C}$, $\mathrm E=(S^{-1})^{\mathsf T}S^{-1}$ for $S=\operatorname{diag}(1,i,i,i)$, so that $T$ preserves $\langle\cdot,\cdot\rangle$ exactly when $STS^{-1}$ is orthogonal and $T$ preserves $\langle\cdot,\cdot\rangle_{\natural*}$ exactly when $STS^{-1}$ is unitary; the two groups with $\mathrm E$ are conjugates of the two groups with $\mathrm I_4$, and this is why the same name $O_4(\mathbb{C})$ serves both bilinear forms and why the second group is written $\mathrm{U}(1,3)$. The dimensions are the classical ones, $\dim_{\mathbb{R}}O_4(\mathbb{C})=12$ and $\dim_{\mathbb{R}}\mathrm{U}(4)=\dim_{\mathbb{R}}\mathrm{U}(1,3)=16$, and they were recomputed as the dimensions of the four Lie algebras $\{X:X^{\mathsf T}G+GX=0\}$.
+*Proof.* A form with Gram matrix $G$ is preserved by a $\mathbb{C}$-linear $T$ exactly when $T^{\mathsf T}GT=G$ in the bilinear case and $T^{*}GT=G$ in the Hermitian case, $T^{\mathsf T}$ the transpose and $T^{*}$ the conjugate transpose. With $G=\mathrm I_4$ these are the defining equations of the complex orthogonal group $O_4(\mathbb{C})$ and of the unitary group $\mathrm{U}(4)$. With $G=\mathrm E$ the sign matrix is congruent to the identity over $\mathbb{C}$, $\mathrm E=(S^{-1})^{\mathsf T}S^{-1}$ for $S=\operatorname{diag}(1,i,i,i)$, so that $T$ preserves $\langle\cdot,\cdot\rangle$ exactly when $S T S^{-1}$ is complex orthogonal. The two bilinear groups are therefore conjugate copies of $O_4(\mathbb{C})$, which is why the same name serves both bilinear forms. The sesquilinear pair is not of this kind: a Hermitian congruence preserves signature, $\mathrm E$ has signature $(1,3)$ and $\mathrm I_4$ has $(4,0)$, so no invertible $S$ has $S^{*}\mathrm E S=\mathrm I_4$, and $\mathrm{U}(1,3)$ is not a conjugate of $\mathrm{U}(4)$. It is the indefinite unitary group of $\mathrm E$, of the same real dimension $16$ but non-compact. The dimensions are the classical ones, $\dim_{\mathbb{R}}O_4(\mathbb{C})=12$ and $\dim_{\mathbb{R}}\mathrm{U}(4)=\dim_{\mathbb{R}}\mathrm{U}(1,3)=16$, and they were recomputed as the dimensions of the four Lie algebras $\{X:X^{\mathsf T}G+GX=0\}$.
 
 **Remark (the two slots read on the groups).** The **second slot** decides whether the group is **orthogonal** or **unitary**, since it decides whether the form is bilinear or Hermitian; the **first slot** decides **which** orthogonal or unitary form, the sign matrix $\mathrm E$ against the identity $\mathrm I_4$ — the same division of labour that §*What the Four Forms Separate* reads on the symmetry and the signature.
 
@@ -142,7 +142,7 @@ of real dimensions $12$, $12$, $16$ and $16$.
 
 **Proposition (no two of the four agree).** No two of the four forms are equal as functions of two elements.
 
-*Proof.* On $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_x+i\vec e_x$ the four values are $-(1+i)$, $1+i$, $-(1-i)$ and $1-i$, four different complex numbers, as in the proposition of §*Why the Other Eight Operations Add No New Form*.
+*Proof.* On $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_x+i\vec e_x$ the four values are $-(1+i)$, $1+i$, $1-i$ and $-(1-i)$, four different complex numbers, as in the proposition of §*Why the Other Eight Operations Add No New Form*.
 
 **The second slot gives the symmetry, the first slot the signature.** The four forms fall into two pairs by symmetry, $\{\langle\cdot,\cdot\rangle,\langle\cdot,\cdot\rangle_{\natural}\}$ bilinear and $\{\langle\cdot,\cdot\rangle_{*},\langle\cdot,\cdot\rangle_{\natural*}\}$ sesquilinear, and into two other pairs by Gram matrix, $\{\langle\cdot,\cdot\rangle,\langle\cdot,\cdot\rangle_{\natural*}\}$ of Gram $\mathrm E$ and $\{\langle\cdot,\cdot\rangle_{*},\langle\cdot,\cdot\rangle_{\natural}\}$ of Gram $\mathrm I_4$. The two divisions are independent, and their product is the four: each form is the intersection of one symmetry with one Gram matrix, which is the two-by-two grid of the two slots.
 
@@ -153,7 +153,7 @@ of real dimensions $12$, $12$, $16$ and $16$.
 
 ## The Algebraic Norm of an Operation
 
-**Definition (algebraic norm).** Let $f$ be an operation on $\mathbb{B}$ with scalar-part form $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$. The **algebraic norm of the operation $f$** is the algebraic norm
+**Definition (algebraic norm).** Let $f$ be an operation on $\mathbb{B}$ with scalar-part form $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$. The **algebraic norm of the operation $f$** is the function
 
 $$
 \varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q),
@@ -190,7 +190,7 @@ Each algebraic norm is the diagonal of its form:
 $$
 \boxed{\;
 P(\tilde Q)=\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},\qquad
-\langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},\qquad
+\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},\qquad
 H(\tilde Q)=\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2},\qquad
 K(\tilde Q)=\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}
 \;}.
@@ -206,17 +206,17 @@ $$
 P(\tilde Q)=\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},
 $$
 
-the general plain bilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1,0}Q_{2t}-(\vec Q_1,\vec Q_2)$. It is complex-valued and $\mathbb{C}$-quadratic, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. Its vanishing set is the complex cone $\langle\tilde Q\rangle=0$, already the complex quadric of §*The Four Forms*, above. It is not multiplicative. The algebraic norm is that of the **plain product**, the multiplication of the algebra, and it is the one algebraic norm the plain product carries.
+the general plain bilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$. It is complex-valued and $\mathbb{C}$-quadratic, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. Its vanishing set is the complex cone $\langle\tilde Q\rangle=0$, already the complex quadric of §*The Four Forms*, above. It is not multiplicative. The algebraic norm is that of the **plain product**, the multiplication of the algebra, and it is the one algebraic norm the plain product carries.
 
 ### The General Quaternionic Bilinear Algebraic Norm
 
 **The quaternionic norm, written $N$.**
 
 $$
-\langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
+\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$
 
-the general quaternionic bilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1,0}Q_{2t}+(\vec Q_1,\vec Q_2)$. It is complex-valued, its Gram matrix is the identity $\mathrm I_4$, and its realification is of signature $(4,4)$. Its vanishing set is the zero-divisor cone $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$, of real dimension $6$, and the algebraic norm is the reason $\mathbb{B}$ has zero divisors at all.
+the general quaternionic bilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$. It is complex-valued, its Gram matrix is the identity $\mathrm I_4$, and its realification is of signature $(4,4)$. Its vanishing set is the zero-divisor cone $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$, of real dimension $6$, and the algebraic norm is the reason $\mathbb{B}$ has zero divisors at all.
 
 **Proposition (multiplicativity).** $\langle\cdot\rangle_{\natural}$ is multiplicative:
 $$
@@ -237,7 +237,7 @@ $$
 H(\tilde Q)=\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2},
 $$
 
-the general plain sesquilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=Q_{1,0}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $\langle\tilde Q\rangle_{*}>0$ for $\tilde Q\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. Its vanishing set is the origin alone, and it is the square of the topological norm, $\langle\tilde Q\rangle_{*}=\lVert\tilde Q\rVert_E^{2}$.
+the general plain sesquilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $\langle\tilde Q\rangle_{*}>0$ for $\tilde Q\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. Its vanishing set is the origin alone, and it is the square of the topological norm, $\langle\tilde Q\rangle_{*}=\lVert\tilde Q\rVert_E^{2}$.
 
 The algebraic norm is definite, and it is the one of the four whose square root is the topological norm: $\lVert\tilde Q\rVert_E$ is the unique topological norm of the real vector space $\mathbb{B}\cong\mathbb{R}^{8}$, up to equivalence, and it is the topological norm of *Topology in the Space of Biquaternions*. It is not multiplicative.
 
@@ -249,7 +249,7 @@ $$
 K(\tilde Q)=\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2},
 $$
 
-the general quaternionic sesquilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=Q_{1,0}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$; it is the **Krein algebraic norm** of the algebra, the algebraic norm of the Krein form. It is real-valued and indefinite, its Gram matrix is the sign matrix $\mathrm E$, and its realification is of signature $(2,6)$. Its vanishing set is the real cone $\mathcal K=\{\lVert c\rVert_E=\lVert v\rVert_E\}$ of the centre–vector split, and by the identity $\langle\tilde Q\rangle_{\natural*}=\lVert c\rVert_E^{2}-\lVert v\rVert_E^{2}$ it is the null cone of the indefinite metric. It is not multiplicative. The algebraic norm is the one that the **Krein structure** of the algebra produces, the pair of a definite and an indefinite form, and its positive and negative value-one sets are $S^{1}\times\mathbb{R}^{6}$ and $S^{5}\times\mathbb{R}^{2}$.
+the general quaternionic sesquilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$; it is the **Krein algebraic norm** of the algebra, the algebraic norm of the Krein form. It is real-valued and indefinite, its Gram matrix is the sign matrix $\mathrm E$, and its realification is of signature $(2,6)$. Its vanishing set is the real cone $\mathcal K=\{\lVert c\rVert_E=\lVert v\rVert_E\}$ of the centre–vector split, and by the identity $\langle\tilde Q\rangle_{\natural*}=\lVert c\rVert_E^{2}-\lVert v\rVert_E^{2}$ it is the null cone of the indefinite metric. It is not multiplicative. The algebraic norm is the one that the **Krein structure** of the algebra produces, the pair of a definite and an indefinite form, and its positive and negative value-one sets are $S^{1}\times\mathbb{R}^{6}$ and $S^{5}\times\mathbb{R}^{2}$.
 
 
 ## The Table of the Four Algebraic Norms
@@ -257,7 +257,7 @@ the general quaternionic sesquilinear algebraic norm $\langle\tilde Q_1,\tilde Q
 | Algebraic norm | Full norm name | Reduced name | Letter | Multiplicative | Definite | Use | Value | Gram | Signature over $\mathbb{R}$ | Vanishing set |
 |---|---|---|---|---|---|---|---|---|---|---|
 | $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | The general plain bilinear algebraic norm | **Plain Norm** | $P$ | no | — | product and its square | $\mathbb{C}$ | $\mathrm E$ | $(4,4)$ | complex cone |
-| $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The general quaternionic bilinear algebraic norm | **Quaternionic Norm** | $N$ | **yes** | — | interval, invertibility, the reduced norm | $\mathbb{C}$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the $\natural$-degenerate set, the zero-divisor cone |
+| $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The general quaternionic bilinear algebraic norm | **Quaternionic Norm** | $N$ | **yes** | — | the quadratic form, invertibility, the reduced norm | $\mathbb{C}$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the $\natural$-degenerate set, the zero-divisor cone |
 | $\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | The general plain sesquilinear algebraic norm | **Hermitian Norm** | $H$ | no | **yes** | topology, $\lVert\tilde Q\rVert_E^{2}$ | $\mathbb{R}$ | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ |
 | $\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | The general quaternionic sesquilinear algebraic norm | **Krein Norm** | $K$ | no | no | indefinite geometry | $\mathbb{R}$ | $\mathrm E$ | $(2,6)$ | $\mathcal K$ |
 
@@ -265,7 +265,7 @@ The table separates the four by their letter, by the field of their values, by t
 
 **The plain norm: no job of its own.** $P(\tilde Q)=\langle\tilde Q\rangle=\mathrm{Sc}(\tilde Q^{2})$ is the scalar part of the ordinary square, the quadratic form of the plain product. It is neither definite nor multiplicative, and it decides no invertibility: the unit $e_t+\vec e_x$ has $P(e_t+\vec e_x)=0$, while the zero divisor $e_t+i\vec e_x$ has $P(e_t+i\vec e_x)=2$. It is the value of the product read on the diagonal and carries no job of its own: the square, its idempotents, its Peirce decompositions, its roots and its cone are properties of the product, which comes before the form.
 
-**The use of the quaternionic norm: invertibility.** $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ is the determinant of the $2\times2$ image, hence multiplicative. Its vanishing set is exactly the zero-divisor cone, so $\tilde Q$ is invertible if and only if the value is non-zero, and the unit group is the level set $1$. The value is the interval, the quadratic form of the quaternionic layer. It answers *when is the element invertible*, a yes-or-no question and not a how-big one, and the price of multiplicativity is that it is complex and vanishes off the origin.
+**The use of the quaternionic norm: invertibility.** $\langle\tilde Q\rangle_{\natural}$ is the determinant of the $2\times2$ image, hence multiplicative. Its vanishing set is exactly the zero-divisor cone, so $\tilde Q$ is invertible if and only if the value is non-zero, and the unit group is the level set $1$. The value is the quadratic form of the quaternionic layer. It answers *when is the element invertible*, a yes-or-no question and not a how-big one, and the price of multiplicativity is that it is complex and vanishes off the origin.
 
 **The use of the Hermitian norm: topology.** $H(\tilde Q)=\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ is real and positive definite, and its square root is the Euclidean norm $\lVert\tilde Q\rVert_E$, the unique topological norm of the space. It gives the distance, the balls, the Cauchy–Schwarz inequality, the bounded operators and the completion. It is the pairing of the positive cone. It answers *what is the distance*, and the price of definiteness is that it is not multiplicative.
 
@@ -276,9 +276,9 @@ The table separates the four by their letter, by the field of their values, by t
 
 ## What the Four Algebraic Norms Separate
 
-**Proposition (no algebraic norm is both definite and multiplicative).** No function on $\mathbb{B}$ is both definite and multiplicative.
+**Proposition (no algebraic norm is both definite and multiplicative).** No function $\varphi$ on $\mathbb{B}$ with $\varphi(0)=0$ is both definite — real-valued and non-zero off the origin — and multiplicative.
 
-*Proof.* The algebra has zero divisors, $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with $e_t\pm i\vec e_x\neq0$ and $\langle e_t\pm i\vec e_x\rangle_{\natural}=1+i^{2}=0$. A multiplicative function $\varphi$ would give $\varphi(e_t+i\vec e_x)\varphi(e_t-i\vec e_x)=\varphi(0)=0$, so one of the two values is zero, on a nonzero element; a definite function is nonzero off the origin. No function is both.
+*Proof.* The algebra has zero divisors, $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with $e_t\pm i\vec e_x\neq0$ and $\langle e_t\pm i\vec e_x\rangle_{\natural}=1+i^{2}=0$. A multiplicative function $\varphi$ with $\varphi(0)=0$ would give $\varphi(e_t+i\vec e_x)\varphi(e_t-i\vec e_x)=\varphi(0)=0$, so one of the two values is zero, on a nonzero element; a definite function is nonzero off the origin. No function is both.
 
 **Corollary.** $\langle\cdot\rangle_{*}$ is definite and not multiplicative; $\langle\cdot\rangle_{\natural}$ is multiplicative and not definite; and no third algebraic norm of the four repairs the split. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra — the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$ of the Hurwitz theorem are exactly the ones in which the two senses coincide.
 
@@ -289,6 +289,38 @@ The table separates the four by their letter, by the field of their values, by t
 **Remark (the two senses of *norm*).** Two different things carry the name. The **algebraic norm** of this article is a map into the ring — $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$ into $\mathbb{C}$, $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ into $\mathbb{R}$ — and it is algebra: algebraic norms, quadratic forms, polarisations, zero divisors. The **topological norm** is the one selection of positive real values, $\lVert\tilde Q\rVert_E=\bigl(\langle\tilde Q\rangle_{*}\bigr)^{1/2}$, and it is topology: distance, balls, convergence, completeness. Only $\langle\cdot\rangle_{*}$ of the four yields it, because only $\langle\cdot\rangle_{*}$ is real and definite; $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$ are complex-valued, and $\langle\cdot\rangle_{\natural*}$ is real but indefinite. The two senses are the two layers of *Introduction to Mathematics*, and no third function holds them together.
 
 **Remark (the four collapse to two on real elements).** For real $\tilde Q_1,\tilde Q_2$ the coefficientwise conjugation is the identity, so $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,\tilde Q_2\rangle$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$. On the real part of the space the four algebraic norms are the two, $\langle\cdot\rangle=\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{\natural}=\langle\cdot\rangle_{*}$, and the four operations of the two bilinear rows and of the two sesquilinear rows coincide there. This is the real-form caution of *Symmetric and Antisymmetric Decomposition of the Four General Products* read at the two equal arguments: a computation restricted to real elements sees two algebraic norms and hides the other two. On the remarkable real subspaces the four algebraic norms restrict to the two real forms in the same way, and the restrictions, their signatures and the definiteness of each on each are the subject of *Remarkable Subspaces and the Four General Products, Forms and Norms*.
+
+
+## Commutativity, Multiplicativity and Definiteness
+
+**The precise claim.** The proposition of §*What the Four Algebraic Norms Separate* is the organising fact of the four-norm table, and it is often paraphrased as the statement that no form on $\mathbb{B}$ can be both commutative and definite. The paraphrase misplaces the word. Commutativity is a property of a product; a form is symmetric or conjugate-symmetric, and all four forms here have that property by construction. What the proposition separates is **multiplicativity**, $\varphi(\tilde Q_1\tilde Q_2)=\varphi(\tilde Q_1)\varphi(\tilde Q_2)$, and **definiteness**: real values, $\varphi(0)=0$, and $\varphi(\tilde Q)\neq0$ for $\tilde Q\neq0$. The normalisation $\varphi(0)=0$ belongs to the definition: without it the constant function $1$ is multiplicative and non-zero off the origin. Every algebraic norm vanishes at the origin.
+
+**Symmetry is not the failing property.** The scalar part of a product is symmetric,
+
+$$
+\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1),
+$$
+
+because the commutator is purely vector, $[\tilde Q_1,\tilde Q_2]=2\vec Q_1\times\vec Q_2$, and the scalar part kills it. This is why $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are symmetric and why $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ are conjugate-symmetric. The algebra itself is not commutative: $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. The symmetry of the four forms therefore survives the non-commutativity of the product, and it is not a property that can fail in the passage from one form to another.
+
+**The mechanism is the zero divisors.** Let $\varphi$ be multiplicative and definite, and let $z_\pm=e_t\pm i\vec e_x$. Then $z_+z_-=0$ with $z_\pm\neq0$, so
+
+$$
+\varphi(z_+)\varphi(z_-)=\varphi(0)=0.
+$$
+
+Both values are non-zero by definiteness, and their product cannot be zero. No commutativity is used. The converse explains the mechanism: in a finite-dimensional associative real algebra without zero divisors, left multiplication $L_{\tilde Q}$ is invertible for $\tilde Q\neq0$, the map $\tilde Q\mapsto\det L_{\tilde Q}$ is multiplicative, and $\lvert\det L_{\tilde Q}\rvert$ is a definite multiplicative function. The obstruction is therefore the existence of zero divisors, not the failure of commutativity. The quaternions make the first point: $\mathbb{H}$ is not commutative, and $q\mapsto q\bar q$ is definite and multiplicative. The dual numbers $\mathbb{C}[\varepsilon]/(\varepsilon^{2})$ make the second: the algebra is commutative, has zero divisors, and admits no definite multiplicative function, since $\varphi(\varepsilon)^{2}=\varphi(\varepsilon^{2})=\varphi(0)=0$ forces $\varphi(\varepsilon)=0$ on a non-zero element.
+
+**The four cells.** $\langle\cdot\rangle_{\natural}$ is multiplicative but not definite: it is complex-valued and vanishes on the whole zero-divisor cone $\mathcal N$. $\langle\cdot\rangle_{*}$ is definite but not multiplicative: it is a sum of four non-negative terms, while $\langle \vec e_x+i\vec e_y\rangle_{*}=2$ and $(\vec e_x+i\vec e_y)^{2}=0$. $\langle\cdot\rangle$ is neither: it is complex-valued, indefinite, and $\langle \vec e_x\vec e_y\rangle=-1$ while $\langle \vec e_x\rangle\langle \vec e_y\rangle=1$. $\langle\cdot\rangle_{\natural*}$ is neither: it is real and indefinite, and $\langle e_t+\vec e_x\rangle_{\natural*}=0$ while $(e_t+\vec e_x)^{2}=2\vec e_x$ has value $-4$. The two-by-two table is therefore
+
+| | definite | not definite |
+|---|---|---|
+| **multiplicative** | empty | $\langle\cdot\rangle_{\natural}$ |
+| **not multiplicative** | $\langle\cdot\rangle_{*}$ | $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural*}$ |
+
+The empty cell is the proposition. The other three cells are the two single-property survivors and the pair that keeps neither.
+
+**The Hurwitz comparison.** In $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$ the norm form is both definite and multiplicative, because there are no zero divisors; the two senses of *norm* coincide. In $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the complexification creates zero divisors, and the quaternion norm complexifies to $\langle\cdot\rangle_{\natural}$, which keeps multiplicativity and loses definiteness, while the Euclidean norm of the coefficient space is the square root of $\langle\cdot\rangle_{*}$, which keeps definiteness and loses multiplicativity. The split is the failure of $\mathbb{B}$ to be a normed division algebra, and the zero divisors are its mechanism. Commutativity is neither necessary nor sufficient for the coincidence: $\mathbb{H}$ is non-commutative and has it, and the dual numbers are commutative and do not.
 
 
 ## Regular and Degenerate Biquaternions

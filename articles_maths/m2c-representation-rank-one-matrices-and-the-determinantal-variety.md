@@ -164,7 +164,7 @@ E_{12}E_{21}=E_{11},\qquad E_{21}E_{12}=E_{22},\qquad
 E_{12}^2=E_{21}^2=0.
 $$
 
-The product of the two nilpotents is the idempotent of the opposite corner, and every rank-one idempotent arises this way after a change of matrix units. The statement is the matrix form of the fact that every nontrivial idempotent is a product of two nilpotents, proved in *$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units*.
+The product of the two nilpotents is the idempotent of the opposite corner, and every rank-one idempotent arises this way after a change of matrix units. The statement is the matrix form of the fact that every nontrivial idempotent is a product of two nilpotents, proved in *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
 **The scaled idempotent.** A rank-one idempotent is not nilpotent: $P^2=P$ and $P\neq0$. It is nevertheless a zero divisor, because $P(e_t-P)=0$ and $e_t-P\neq0$; its annihilator is the ideal of the complementary line. The distinction between the idempotent and the nilpotent is the distinction between the non-pure and the pure strata.
 
@@ -190,6 +190,6 @@ A nonzero singular matrix has rank one and factorises as $uv^{\mathsf T}$, uniqu
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone
 - [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the rank-one elements and the corners
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link and its topology
-- [$M_2(\mathbb{C})$ Representation : The Peirce Coordinates and the Matrix Units](m2c-representation-the-peirce-coordinates-and-the-matrix-units.html), for the matrix units
+- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for determinantal varieties

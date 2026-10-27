@@ -80,9 +80,9 @@ These two cases cover all possibilities for the vector part; the case $\vec Q=0$
 |---|---|---|
 | Distinct, $\natural$-regular | $B\neq0$, $\langle\tilde Q\rangle_{\natural}\neq0$ | $\exp$ reaches it; $\log$ is defined; the powers and roots read two nonzero eigenvalues |
 | Oscillatory, $\natural$-degenerate | $B\neq0$, $\langle\tilde Q\rangle_{\natural}=0$ | $\exp$ does not reach it, so $\log$ and general powers are undefined; a trigonometric or hyperbolic value may be $\natural$-degenerate |
+| Scalar | $B=0$, $\vec Q=0$ | one complex scalar; the algebra of functions is the complex one; for $\tilde Q\neq0$ the logarithm gains the vector families |
 | Jordan | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $\natural$-regular; $\exp$ truncates and $\log$ exists; the powers are linear in $\vec Q$ |
 | Nilpotent | $B=0$, $\vec Q\neq0$, $Q_t=0$ | $\natural$-degenerate and a nonzero zero divisor; $\exp$ truncates, $\log$ does not exist, and there is no square root |
-| Scalar | $\vec Q=0$ | one complex scalar; the algebra of functions is the complex one; for $\tilde Q\neq0$ the logarithm gains the vector families |
 
 The distinct and $\natural$-degenerate rows are the two subcases of $B\neq0$: the eigenvalues are distinct, and in the $\natural$-degenerate subcase one of them is zero. The distinct $\natural$-regular element is the domain of the logarithm and of general powers; the $\natural$-degenerate element has an eigenvalue decomposition but no logarithm. The $B=0$ case is the nilpotent regime, named for the vector part; the element is $\natural$-regular in the Jordan subcase $Q_t\neq0$ and $\natural$-degenerate and a pure nilpotent in the subcase $Q_t=0$. If $\vec Q=0$, the biquaternion is a complex scalar $\tilde Q=Q_te_t$, and the elementary functions reduce to the ordinary complex elementary functions. This is a degenerate subcase of the nilpotent regime, since $B=0$ and $\vec Q=0$; it is not in the oscillatory regime. It is treated separately in each section because its centraliser is the whole algebra.
 
@@ -493,14 +493,14 @@ and $\exp(Q_{1t})=(-1)^n Q_t$, so the product is $Q_t e_t$. Conversely, if $\exp
 
 ### The Coordinates of a Logarithm
 
-The components in the three regimes are collected in one table. The first row is the eigenvalue formula, the second the nilpotent formula, and the last two the two kinds of scalar logarithm.
+The components in the three regimes are collected in one table, in the order of the discriminant: the eigenvalue formula first, then the two kinds of scalar logarithm, then the nilpotent formula.
 
 | Regime | $Q_{\log,t}$ | $\vec Q_{\log}$ | $\tilde Q_{\log}$ |
 |---|---|---|---|
 | $B\neq0$ | $\dfrac{\mu_++\mu_-}{2}$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$, $k_\pm\in\mathbb Z$ | $\dfrac{\mu_+-\mu_-}{2i}\,\vec U$ | $\dfrac{\mu_++\mu_-}{2}\,e_t+\dfrac{\mu_+-\mu_-}{2i}\,\vec U$ |
+| $B=0$, $\vec Q=0$, scalar logarithms | $\operatorname{Log}Q_t+2\pi i k$, $k\in\mathbb Z$ | $0$ | $(\operatorname{Log}Q_t+2\pi i k)e_t$ |
+| $B=0$, $\vec Q=0$, vector logarithms | $\operatorname{Log}Q_t+\pi i n+2\pi i k$, $n\in\mathbb Z\setminus\{0\}$, $k\in\mathbb Z$ | $\vec Q_1$, $(\vec Q_1,\vec Q_1)=(\pi n)^2$ | $(\operatorname{Log}Q_t+\pi i n+2\pi i k)e_t+\vec Q_1$ |
 | $B=0$, $\vec Q\neq0$ | $\operatorname{Log}Q_t+2\pi i k$, $k\in\mathbb Z$ | $\dfrac{\vec Q}{Q_t}$ | $(\operatorname{Log}Q_t+2\pi i k)e_t+\dfrac{\vec Q}{Q_t}$ |
-| $\vec Q=0$, scalar logarithms | $\operatorname{Log}Q_t+2\pi i k$, $k\in\mathbb Z$ | $0$ | $(\operatorname{Log}Q_t+2\pi i k)e_t$ |
-| $\vec Q=0$, vector logarithms | $\operatorname{Log}Q_t+\pi i n+2\pi i k$, $n\in\mathbb Z\setminus\{0\}$, $k\in\mathbb Z$ | $\vec Q_1$, $(\vec Q_1,\vec Q_1)=(\pi n)^2$ | $(\operatorname{Log}Q_t+\pi i n+2\pi i k)e_t+\vec Q_1$ |
 
 The scalar component is complex. Its real part is fixed by the biquaternion norm,
 
@@ -728,9 +728,9 @@ Thus $n\operatorname{Log}\tilde Q$ is a logarithm of $\tilde Q^n$; the principal
 |---|---|---|---|
 | $B\neq0$, $\langle\tilde Q\rangle_{\natural}\neq0$ | $\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$ | the same with principal $\operatorname{Log}\lambda_\pm$ | coset of the parity-matched lattice |
 | $B\neq0$, $\langle\tilde Q\rangle_{\natural}=0$ | none | none | empty |
+| $B=0$, $\vec Q=0$ | scalar and vector values of §*The Degenerate Regimes* | $\operatorname{Log}Q_t\,e_t$ | translate of $\ker\exp$ |
 | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $(\operatorname{Log}Q_t+2\pi i k)e_t+\vec Q/Q_t$ | $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$ | $2\pi i\mathbb Z e_t$ |
 | $B=0$, $\vec Q\neq0$, $Q_t=0$ | none | none | empty |
-| $\vec Q=0$ | scalar and vector values of §*The Degenerate Regimes* | $\operatorname{Log}Q_t\,e_t$ | translate of $\ker\exp$ |
 
 Every $\natural$-regular biquaternion has a logarithm, the Jordan case included. The $\natural$-degenerate biquaternion has none, the zero divisor and the pure nilpotent included. The principal logarithm is single-valued and satisfies $\exp(\operatorname{Log}\tilde Q)=\tilde Q$; it is discontinuous on the walls where an eigenvalue is a negative real number, and no continuous single-valued branch exists on the whole unit group. The ambiguity of the logarithm is the kernel of the exponential, constrained by the centraliser when the element is not scalar.
 
@@ -810,7 +810,7 @@ The three cases are collected in one table.
 |---|---|---|
 | Oscillatory unit, $B\neq0$, $\langle\tilde Q\rangle_{\natural}\neq0$ | $R^\alpha(\cos(\alpha\Theta)e_t+\sin(\alpha\Theta)\vec U)$ | multiply by $\exp(\alpha\pi i m)(\cos(\alpha\pi n)+\sin(\alpha\pi n)\vec U)$, $m\equiv n\pmod2$ |
 | Jordan unit, $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $Q_t^\alpha e_t+\alpha Q_t^{\alpha-1}\vec Q$ | multiply by $\exp(2\pi i\alpha k)$, $k\in\mathbb Z$ |
-| Scalar unit, $\vec Q=0$, $Q_t\neq0$ | $Q_t^\alpha$ | scalar phases and vector quadrics described above |
+| Scalar unit, $B=0$, $\vec Q=0$, $Q_t\neq0$ | $Q_t^\alpha$ | scalar phases and vector quadrics described above |
 | Oscillatory zero divisor, $B\neq0$, $\langle\tilde Q\rangle_{\natural}=0$ | none | none |
 | Nonzero nilpotent, $B=0$, $\vec Q\neq0$, $Q_t=0$ | none | none |
 
@@ -856,7 +856,7 @@ For $n\ge1$, a **root** of $\tilde Q$ is an element $\tilde R$ with $\tilde R^n=
 | Oscillatory zero divisor | $B\neq0$, $\langle\tilde Q\rangle_{\natural}=0$, $Q_t\neq0$ | $n$ |
 | Jordan unit | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $n$ |
 | Nonzero nilpotent | $B=0$, $\vec Q\neq0$, $Q_t=0$ | $0$ |
-| Scalar unit | $\vec Q=0$, $Q_t\neq0$ | continuous family, $n\ge2$ |
+| Scalar unit | $B=0$, $\vec Q=0$, $Q_t\neq0$ | continuous family, $n\ge2$ |
 | Zero | $\tilde Q=0$ | continuous family, $n\ge2$ |
 
 For $n=2$ the table gives the square roots: four for an oscillatory unit, two for an oscillatory zero divisor, two for a Jordan unit, none for a nonzero nilpotent, and a continuous family on the scalar axis and at $0$. In the oscillatory unit case they are $\pm R_0$ and $\pm i\vec U R_0$, where $R_0=\exp(\tfrac12\operatorname{Log}\tilde Q)$ is the principal square root; in the oscillatory zero-divisor case they are $\pm\sqrt{2Q_t}\,\tilde\Pi_\sigma$, the roots of the nonzero eigenvalue $2Q_t$; in the Jordan case they are $\pm R_0$; and the square roots of $e_t$ include $i\vec U$ for every root $\vec U$ of $-e_t$. The principal branch gives one of the four values in the oscillatory regime; the other three come from shifting the two eigenvalue logarithms independently by $2\pi i$, modulo the shifts that leave the root fixed. The two-branch picture of the non-real quaternion case does not survive the complexification.
@@ -1274,13 +1274,13 @@ The exponential, the trigonometric and the hyperbolic functions are defined for 
 
 | Result | Statement |
 |---|---|
-| Regimes | $B\neq0$, $\langle\tilde Q\rangle_{\natural}\neq0$ (distinct), $B\neq0$, $\langle\tilde Q\rangle_{\natural}=0$ (zero divisor), $B=0,\ \vec Q\neq0,\ Q_t\neq0$ (Jordan), $B=0,\ \vec Q\neq0,\ Q_t=0$ (nilpotent), $\vec Q=0$ (scalar) |
+| Regimes | $B\neq0$, $\langle\tilde Q\rangle_{\natural}\neq0$ (distinct), $B\neq0$, $\langle\tilde Q\rangle_{\natural}=0$ (zero divisor), $B=0,\ \vec Q=0$ (scalar), $B=0,\ \vec Q\neq0,\ Q_t\neq0$ (Jordan), $B=0,\ \vec Q\neq0,\ Q_t=0$ (nilpotent) |
 | Spectrum | $\lambda_\pm=Q_t\pm iB$, $B^2=Q_x^2+Q_y^2+Q_z^2$; distinct exactly when $B\neq0$ |
 | Eigenprojections | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$, $\vec\Xi=-i\vec U$, for $B\neq0$ |
 | Idempotent Principle | $f(\tilde Q)=f(\lambda_+)\tilde\Pi_++f(\lambda_-)\tilde\Pi_-$ when $B\neq0$; the series truncates when $B=0$ |
 | Exponential | $\exp(Q_t)(\cos B\,e_t+\sin B\,\vec U)$ if $B\neq0$; $\exp(Q_t)(e_t+\vec Q)$ if $B=0$ |
 | Kernel and image | $\ker\exp$: $\exp\tilde Q_1=e_t$ exactly when $\tilde Q_1$ is diagonalizable with all eigenvalues in $2\pi i\mathbb Z$; not a subgroup. $\operatorname{im}\exp=\mathbb B^\times=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ |
-| Logarithm | eigenvalue formula for $B\neq0$ and a unit; $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$ for $B=0,\vec Q\neq0,Q_t\neq0$; scalar and vector families for $\vec Q=0$; no logarithm for a zero divisor or a nonzero nilpotent |
+| Logarithm | eigenvalue formula for $B\neq0$ and a unit; scalar and vector families for $B=0,\ \vec Q=0$; $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$ for $B=0,\ \vec Q\neq0,\ Q_t\neq0$; no logarithm for a zero divisor or a nonzero nilpotent |
 | Principal domain | $D$: every eigenvalue has imaginary part in $(-\pi,\pi]$; $\exp:D\to\mathbb B^\times$ is bijective |
 | Fibre | a coset of $\ker\exp\cap\mathbb C[\tilde Q]$ for a non-scalar unit; the set $\operatorname{Log}Q_t\,e_t+\ker\exp$ for a scalar unit, not a coset in general |
 | Derivative of the logarithm | $d\operatorname{Log}_{\tilde Q}(H)=\sum_\pm\lambda_\pm^{-1}\tilde\Pi_\pm H\tilde\Pi_\pm+\frac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{\lambda_+-\lambda_-}(\tilde\Pi_+H\tilde\Pi_-+\tilde\Pi_-H\tilde\Pi_+)$; equals $\tilde Q^{-1}H$ when $[H,\tilde Q]=0$ |
@@ -1297,7 +1297,7 @@ The exponential, the trigonometric and the hyperbolic functions are defined for 
 | Function | Value | Domain |
 |---|---|---|
 | $\exp\tilde Q$ | $B\neq0$: $\exp(Q_t)(\cos B\,e_t+\sin B\,\vec U)$; $B=0$: $\exp(Q_t)(e_t+\vec Q)$ | all $\tilde Q$ |
-| $\operatorname{Log}\tilde Q$ | $B\neq0$: $\dfrac{\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-}{2}e_t+\dfrac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}\vec U$; $B=0$, $\vec Q\neq0$: $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$; $\vec Q=0$: $\operatorname{Log}Q_t\,e_t$ | the units |
+| $\operatorname{Log}\tilde Q$ | $B\neq0$: $\dfrac{\operatorname{Log}\lambda_++\operatorname{Log}\lambda_-}{2}e_t+\dfrac{\operatorname{Log}\lambda_+-\operatorname{Log}\lambda_-}{2i}\vec U$; $B=0$, $\vec Q=0$: $\operatorname{Log}Q_t\,e_t$; $B=0$, $\vec Q\neq0$: $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$ | the units |
 | $\tilde Q^\alpha$ | $B\neq0$: $R^\alpha(\cos(\alpha\Theta)e_t+\sin(\alpha\Theta)\vec U)$; $B=0$, $\vec Q\neq0$: $Q_t^\alpha e_t+\alpha Q_t^{\alpha-1}\vec Q$ | the units |
 | $\sin\tilde Q$ | $B\neq0$: $\sin Q_t\cosh B\,e_t+\cos Q_t\sinh B\,\vec U$; $B=0$: $\sin Q_t\,e_t+\cos Q_t\,\vec Q$ | all $\tilde Q$ |
 | $\cos\tilde Q$ | $B\neq0$: $\cos Q_t\cosh B\,e_t-\sin Q_t\sinh B\,\vec U$; $B=0$: $\cos Q_t\,e_t-\sin Q_t\,\vec Q$ | all $\tilde Q$ |

@@ -39,13 +39,13 @@ The article proves the bridge, the kernel identity, the two unitarity criteria a
 | The closed form of the exponential, the oscillatory and truncated regimes | [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), §*The Exponential* |
 | The Hermitian norm of the flow, the norm deficit and the unitary and self-adjoint criteria | [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), §*The Hermitian Norm and the Unitary Flow* |
 | The kernel as the exponential of a regular element | [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), §*The Kernel as the Exponential of an Element* |
-| The Fourier reading of the normalised Peirce basis | [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), §*The Fourier Reading of the Basis* |
-| The truncated exponential on the spectral cone | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Exponential on the Cone* |
+| The Fourier reading of the normalised Peirce basis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), §*The Fourier Reading of the Basis* |
+| The truncated exponential on the spectral cone | [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), §*Multiplication, Inversion, and the Exponential* |
 | The characteristic polynomial, the eigenvalues $Q_t\pm iB$ and the spectral criterion | [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Spectral Criterion* |
-| The idempotents $\tilde\Pi_\pm$, the eigenspaces and the normalised Peirce basis | [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), §*The Eigenbasis* |
+| The idempotents $\tilde\Pi_\pm$, the eigenspaces and the normalised Peirce basis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), §*The Eigenbasis* |
 | Normality, the Hermitian projectors and the orthogonal spectral resolution | [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Hermitian Case* |
 | The Fourier kernel, the root-adapted basis and the factorization into complex transforms | [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), §*The Fourier Kernel* and §*Factorization into Complex Fourier Transforms* |
-| The expansion of every biquaternion in the eigenbasis | [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), §*Expansion of Every Biquaternion* |
+| The expansion of every biquaternion in the eigenbasis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), §*Expansion of Every Biquaternion* |
 | The three families of roots of $-1$ | [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), §*The Roots of Minus One* |
 | The conjugations $\natural$ and $*$ | [Conventions in Mathematics](conventions-in-mathematics.html), §*The Conjugations* |
 
@@ -222,7 +222,7 @@ and $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ is a basis of $\mathbb{B}$ in which $L_{
 
 *Proof.* The first identity is $\rho(e_t\mp i\rho)/2=(\rho\pm i e_t)/2=\pm i(e_t\mp i\rho)/2$. The second is $\rho(\nu\mp i\xi)/2=(\xi\pm i\nu)/2=\pm i(\nu\mp i\xi)/2$, using $\rho\nu=\xi$ and $\rho\xi=-\nu$. The two vectors of the first block are independent, the two of the second block are independent, and the two planes are complementary because $(e_t,\rho,\nu,\xi)$ is a basis (*Biquaternion Continuous Harmonic Analysis*, §*The Change of Basis*); so the four are a basis. Left multiplication by $\tilde Q$ is $Q_t\,\mathrm{id}+B\,L_\rho$, which gives the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
-The pair $(u_-,u_+)$ spans the two nilpotent lines of the eigenbasis. Those lines are determined up to the reciprocal rescaling $(\mu,\mu^{-1})$ of *The Eigenbasis*, §*The Transverse-Vector Construction*, and the normalisation of that article fixes $\mu$; the pair above is one representative. The idempotents and the four lines are the same.
+The pair $(u_-,u_+)$ spans the two nilpotent lines of the eigenbasis. Those lines are determined up to the reciprocal rescaling $(\mu,\mu^{-1})$ of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Transverse-Vector Construction*, and the normalisation of that article fixes $\mu$; the pair above is one representative. The idempotents and the four lines are the same.
 
 **The two cuts are transverse.** The Fourier factorization cuts $\mathbb{B}$ into the two planes $\operatorname{span}\{e_t,\rho\}$ and $\operatorname{span}\{\nu,\xi\}$, each of which carries both signs of $i$. The spectral decomposition cuts it into the two eigenspaces $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ and $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$, each of which takes one line from each plane. Neither cut refines the other. The Fourier factorization keeps the two blocks and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue. The first computes the transform of a function, the second the flow of one element, and both use the same root and the same complex structure.
 
@@ -365,7 +365,7 @@ the right-hand side is entire in $B$ and its value at $B=0$ is $e^{\theta Q_t}(e
 
 ### The Three Strata
 
-The cone carries three normal forms, those of *The Spectrum*, §*The Degenerate Case: The Cone*, and each has its own exponential.
+The cone carries three normal forms, those of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*, and each has its own exponential.
 
 | Stratum | Normal form | Exponential | Root | Eigenbasis |
 | --- | --- | --- | --- | --- |
@@ -377,7 +377,7 @@ The scalar stratum is a central character with no direction. The nilpotent strat
 
 ## Global versus Element-Attached
 
-**What is canonical.** For a regular element, the pair of eigenspaces $\{E_+,E_-\}$ is unique, and the eigenvalues are determined up to the exchange of the two branches. The vectors inside each eigenspace are a gauge: multiplying a vector of $E_+$ by a non-zero scalar and a vector of $E_-$ by another leaves the eigenspaces unchanged. The normalised Peirce basis of *The Eigenbasis* fixes that gauge; the root-adapted basis of §*The Eigenbasis Is a Fourier Basis* fixes it differently.
+**What is canonical.** For a regular element, the pair of eigenspaces $\{E_+,E_-\}$ is unique, and the eigenvalues are determined up to the exchange of the two branches. The vectors inside each eigenspace are a gauge: multiplying a vector of $E_+$ by a non-zero scalar and a vector of $E_-$ by another leaves the eigenspaces unchanged. The normalised Peirce basis of *The Eigenbasis of a Spectrally Regular Biquaternion* fixes that gauge; the root-adapted basis of §*The Eigenbasis Is a Fourier Basis* fixes it differently.
 
 **Every element expands in the basis of a given regular element.** The four vectors of Proposition 2 form a basis of $\mathbb{B}$, so every biquaternion has coordinates in it; the spectral decomposition of the given element is diagonal in those coordinates. This is the sense in which a regular element supplies a frame for the whole algebra — a frame attached to the element, not a frame of the algebra.
 
@@ -504,12 +504,13 @@ On the cone there is no root and no frequency. The exponential is the truncated 
 - [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), for the kernel, the transform pair, inversion, Plancherel and the factorization into complex transforms.
 - [Biquaternion Discrete Harmonic Analysis](biquaternion-discrete-harmonic-analysis.html), for the discrete transform and the condition on the root.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Hermitian Case*, for normality, the Hermitian projectors and the orthogonal spectral resolution.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the cone and the three strata.
-- [The Spectrally Regular Sector and Construction of the Eigenbasis of a Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the normalised Peirce basis, the unique expansion and the spinor spaces.
+- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion and the cone.
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the three strata and their normal forms.
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the normalised Peirce basis, the unique expansion and the spinor spaces.
 - [The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root](the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html), for the unitarity criterion of the character.
 - [Dual Numbers Harmonic Analysis](dual-numbers-harmonic-analysis.html), for the non-oscillating characters of the truncated regime.
 - [Harmonic Analysis over Hypercomplex Systems](harmonic-analysis-over-hypercomplex-systems.html), for the place of the transform among the eight systems.
-- [Relations between Quaternionic Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two conditions.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two conditions.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the companion dictionary between the exponential and the spectrum.
 - [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the physical interpretation of the two cases.
 - [Derivatives, Fields and Transforms](../articles_physics/derivatives-fields-and-transforms.html), for the root as the clock and the frequency as its rate.
