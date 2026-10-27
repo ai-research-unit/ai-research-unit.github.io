@@ -105,7 +105,7 @@ $$</p>
 </ul>
 <p>The remaining non-zero matrices have rank one, and they are exactly the zero divisors. The zero matrix has rank zero.</p>
 <p><strong>Proof.</strong> A square matrix is invertible exactly when its determinant is non-zero, and the determinant is the norm; the invertibility criterion of <em>Split-Quaternion Norm and Invertibility</em> says that an element is a unit exactly when its norm is non-zero. A non-zero matrix which is not invertible has rank one.</p>
-<p><strong>Proposition (the strata are the orbits).</strong> The group $GL_2(\mathbb{R})$ acts transitively on the matrices of each rank, and the three orbits are the units, the non-zero zero divisors and the origin.</p>
+<p><strong>Proposition (the strata are the orbits).</strong> The group $GL_2(\mathbb{R})\times GL_2(\mathbb{R})$ acts transitively on the matrices of each rank by $(P,Q)\cdot X=PXQ$, and the three orbits are the units, the non-zero zero divisors and the origin.</p>
 <p><strong>Proof.</strong> Two matrices of the same rank are equivalent under left and right multiplication by invertible matrices: this is the rank normal form. For rank one, $X=uv^{\mathsf T}$ with $u,v\neq0$, and $P X Q = (Pu)(Q^{\mathsf T}v)^{\mathsf T}$ is again of rank one.</p>
 <p><strong>Corollary (the cone is smooth off the apex).</strong> The zero-divisor set is the cone $\mathcal N=\{\det X=0\}$, a real cone of dimension three with apex at the origin, and it is a smooth hypersurface away from the apex.</p>
 <p><strong>Proof.</strong> The gradient of $\det$ at $X$ is the adjugate transposed. At a non-zero singular matrix the adjugate is non-zero, since $\operatorname{adj}X=0$ would make every $1\times1$ minor vanish and force $X=0$. So the gradient does not vanish on $\mathcal N\setminus\{0\}$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p>$$
 q_t=0, \qquad q_x^2=q_y^2+q_z^2.
 $$</p>
-<p><strong>Proof.</strong> Write $\tilde q=t+\vec v$. Then $\tilde q^2=t^2+N(\vec v)+2t\vec v$. Both parts must vanish; over $\mathbb{R}$, $2t\vec v=0$ gives $t=0$ or $\vec v=0$, and $\vec v=0$ with $t^2=0$ gives $t=0$. So $t=0$ and $N(\vec v)=0$, which is the displayed equation.</p>
+<p><strong>Proof.</strong> Write $\tilde q=t+\vec v$. Then $\tilde q^2=t^2-N(\vec v)+2t\vec v$. Both parts must vanish; over $\mathbb{R}$, $2t\vec v=0$ gives $t=0$ or $\vec v=0$, and $\vec v=0$ with $t^2=0$ gives $t=0$. So $t=0$ and $N(\vec v)=0$, which is the displayed equation.</p>
 <p><strong>Corollary (two nappes).</strong> The non-zero nilpotents form the cone $q_x^2=q_y^2+q_z^2$ in the vector subspace $V$, of signature $(2,1)$. It has two connected components, the nappes $q_x>0$ and $q_x<0$, each homeomorphic to $S^1\times\mathbb{R}_{>0}$.</p>
 <p><strong>Proof.</strong> The equation gives $q_x=\pm\sqrt{q_y^2+q_z^2}$, and the two signs are separated by $q_x=0$, where the equation forces $q_y=q_z=0$. Each nappe is parametrised by the sign of $q_x$, an angle in the plane $(q_y,q_z)$ and a positive radius.</p>
 <p>So the nilpotent cone is a proper subcone of the zero-divisor cone: it is the part of the cone lying in the traceless subspace, of dimension two, while the zero-divisor cone has dimension three and is connected.</p>
@@ -143,14 +143,14 @@ $$</p>
 <p><strong>Proof.</strong> The squared Frobenius norm is $2(\lvert z_1\rvert^2+\lvert z_2\rvert^2)$ and the determinant is $\lvert z_1\rvert^2-\lvert z_2\rvert^2$. On the unit sphere the two equations give $\lvert z_1\rvert^2=\lvert z_2\rvert^2=\tfrac14$, that is $\lvert z_1\rvert=\lvert z_2\rvert=\tfrac12$, which is the product of the two circles of radius $1/2$. The coordinates $z_1,z_2$ are related to the matrix entries by an orthogonal change of variables up to the factor $\sqrt2$, so this is the intersection with the round sphere.</p>
 <p><strong>Corollary (the projectivised cone).</strong> The projectivised zero-divisor cone is the doubly ruled quadric</p>
 <p>$$
-\mathcal N/\mathbb{R}^\times \cong \mathbb{R}P^1\times\mathbb{R}P^1,
+\mathcal N/\mathbb{R}^\times \cong \mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R}),
 $$</p>
 <p>the two rulings being the image line $[u]$ and the kernel line $[v]$ of a rank-one matrix $uv^{\mathsf T}$.</p>
-<p><strong>Proof.</strong> The pair of lines $([u],[v])$ determines $X$ up to scale, and conversely $X$ determines its image and kernel. This is the Segre embedding of $\mathbb{R}P^1\times\mathbb{R}P^1$ as the quadric of rank-one matrices, developed in <em>Split-Quaternion Null Quadric and Projective Geometry</em>.</p>
+<p><strong>Proof.</strong> The pair of lines $([u],[v])$ determines $X$ up to scale, and conversely $X$ determines its image and kernel. This is the Segre embedding of $\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R})$ as the quadric of rank-one matrices, developed in <em>Split-Quaternion Null Quadric and Projective Geometry</em>.</p>
 <p>The link being a torus is the topological form of the double ruling: the torus is the product of the two circles of directions, and the two families of rulings are the two families of circles.</p>
 <h2 id="summary">Summary</h2>
 <p>The determinant of the model is the split-quaternion norm, a quadratic form of signature $(2,2)$, which in the complex coordinates $z_1=q_t-iq_x$ and $z_2=q_y+iq_z$ reads $\lvert z_1\rvert^2-\lvert z_2\rvert^2$. The invertible matrices are the units, the non-zero singular matrices are the zero divisors, and they have rank one; the origin is the only matrix of rank zero.</p>
-<p>Every rank-one matrix is an outer product $uv^{\mathsf T}$, with $X^2=(v^{\mathsf T}u)X$. The nilpotents are the case $v^{\mathsf T}u=0$, equivalently $q_t=0$ and $q_x^2=q_y^2+q_z^2$, a two-dimensional cone with two nappes; the multiples of the idempotents are the complementary dense family. The projectivised cone is the doubly ruled quadric $\mathbb{R}P^1\times\mathbb{R}P^1$, and the link of the cone in the Euclidean sphere is the Clifford torus.</p>
+<p>Every rank-one matrix is an outer product $uv^{\mathsf T}$, with $X^2=(v^{\mathsf T}u)X$. The nilpotents are the case $v^{\mathsf T}u=0$, equivalently $q_t=0$ and $q_x^2=q_y^2+q_z^2$, a two-dimensional cone with two nappes; the multiples of the idempotents are the complementary dense family. The projectivised cone is the doubly ruled quadric $\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R})$, and the link of the cone in the Euclidean sphere is the Clifford torus.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -187,7 +187,7 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\mathbb{R}P^1$</td>
+<td>$\mathbb{P}^1(\mathbb{R})$</td>
 <td>the projective line of directions</td>
 <td><em>Split-Quaternion Null Quadric and Projective Geometry</em></td>
 </tr>

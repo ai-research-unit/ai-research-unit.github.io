@@ -71,7 +71,7 @@
         <h1 id="math0-model-the-sandwich-and-the-adjoint-action"><strong>$M_2(\mathbb{R})$ Model : The Sandwich and the Adjoint Action</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A <strong>sandwich</strong> is the linear map $X\mapsto AXB^{-1}$ of the matrix algebra, and the <strong>adjoint action</strong> is the special case $A=B$, the conjugation $X\mapsto AXA^{-1}$. The two-sided maps are the natural operators of the algebra: they are the ones that act by multiplication on the left and on the right, they contain the inner automorphisms, and their group is a quotient of $GL_2(\mathbb{R})\times GL_2(\mathbb{R})$.</p>
-<p>This article computes the sandwich group, its determinant-preserving subgroup and the adjoint subgroup. The determinant-preserving subgroup is the orientation-preserving isometry group $SO(2,2)$ of the determinant form; its identity component is $(SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm(I,I)\}$. The adjoint action preserves the scalar line and the traceless subspace, and on the traceless subspace it is the Lorentz group $SO^{+}(2,1)$; the group $SL_2(\mathbb{R})$ is its double cover, as in <em>Split-Quaternion Rotations and the Lorentz Group</em>. The article closes with the action on the rulings of the null cone and with the enveloping algebra of the sandwiches.</p>
+<p>This article computes the sandwich group, its determinant-preserving subgroup and the adjoint subgroup. The determinant-preserving subgroup is the index-two subgroup $SO(2,2)$ of the isometry group of the determinant form; its identity component is $(SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm(I,I)\}$. The adjoint action preserves the scalar line and the traceless subspace, and on the traceless subspace it is the Lorentz group $SO^{+}(2,1)$; the group $SL_2(\mathbb{R})$ is its double cover, as in <em>Split-Quaternion Rotations and the Lorentz Group</em>. The article closes with the action on the rulings of the null cone and with the enveloping algebra of the sandwiches.</p>
 <p>The one-sided operators are <em>$M_2(\mathbb{R})$ Model : The Conjugations and the Adjoints</em>; the rank-one matrices are <em>$M_2(\mathbb{R})$ Model : Rank-One Matrices and the Null Cone</em>; and the biquaternion analogue is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>.</p>
 <h2 id="the-sandwich-group">The Sandwich Group</h2>
 <p><strong>Definition.</strong> For invertible matrices $A,B$ the <strong>sandwich</strong> is</p>
@@ -140,7 +140,7 @@ $$</p>
 T_{A,B}(X)=(Au)\bigl(B^{-\mathsf T}v\bigr)^{\mathsf T}.
 $$</p>
 <p><strong>Proof.</strong> $Auv^{\mathsf T}B^{-1}=Au\,(B^{-\mathsf T}v)^{\mathsf T}$, since $(B^{-1})^{\mathsf T}=B^{-\mathsf T}$.</p>
-<p><strong>Corollary (the action on the quadric).</strong> On the projective null quadric $\mathbb{R}P^1\times\mathbb{R}P^1$, the sandwich acts by</p>
+<p><strong>Corollary (the action on the quadric).</strong> On the projective null quadric $\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R})$, the sandwich acts by</p>
 <p>$$
 ([u],[v])\longmapsto\bigl([Au],[B^{-\mathsf T}v]\bigr).
 $$</p>
@@ -169,7 +169,7 @@ $$</p>
 <p><strong>Proof.</strong> The image of the scalar line is the line spanned by $T_{A,B}(I)=AB^{-1}$, and the traceless subspace is not preserved by the previous proposition.</p>
 <p>So the determinant-preserving sandwiches of the theorem are not the same as the sandwiches preserving the algebra's scalar–vector decomposition. The isometry group $SO(2,2)$ is larger than the group of scalar multiples of inner automorphisms, and the extra transformations mix the scalar direction with the traceless directions.</p>
 <h2 id="summary">Summary</h2>
-<p>The sandwiches $T_{A,B}(X)=AXB^{-1}$ form the group $(GL_2\times GL_2)/\Delta$ of dimension seven, with $\Delta$ the diagonal scalars. Every sandwich scales the determinant by $\det A/\det B$, and the sandwiches with $\det A=\det B$ are exactly the orientation-preserving isometries of the determinant form: they form $SO(2,2)$, whose identity component is $(SL_2\times SL_2)/\{\pm(I,I)\}\cong SO^{+}(2,2)$.</p>
+<p>The sandwiches $T_{A,B}(X)=AXB^{-1}$ form the group $(GL_2\times GL_2)/\Delta$ of dimension seven, with $\Delta$ the diagonal scalars. Every sandwich scales the determinant by $\det A/\det B$, and the sandwiches with $\det A=\det B$ are exactly the isometries of determinant one: they form $SO(2,2)$, whose identity component is $(SL_2\times SL_2)/\{\pm(I,I)\}\cong SO^{+}(2,2)$.</p>
 <p>The adjoint action has kernel the scalars and image $PGL_2\cong SO(2,1)$. It fixes the identity, preserves the traceless subspace, and acts there as $SO(2,1)$; on the identity components it is $PSL_2\cong SO^{+}(2,1)$, and the map $SL_2\to SO^{+}(2,1)$ is the double cover of the Lorentz group. On the null quadric the sandwich moves the two rulings independently, by $A$ and by $B^{-\mathsf T}$, and the sandwiches span the full endomorphism algebra $M_4(\mathbb{R})$. A sandwich preserves the scalar–vector splitting only when it is a scalar multiple of an inner automorphism.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -208,7 +208,7 @@ $$</p>
 </tr>
 <tr>
 <td>$SO(2,1)$</td>
-<td>the orientation-preserving isometry group of the traceless part</td>
+<td>the determinant-one isometry group of the traceless part</td>
 <td>this article</td>
 </tr>
 <tr>
