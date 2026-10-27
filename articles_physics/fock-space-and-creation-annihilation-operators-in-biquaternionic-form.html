@@ -208,6 +208,45 @@ $$</p>
 $$</p>
 <p>which is Hermitian, squares to $e_t$, and satisfies $(-1)^F\vec\Upsilon_x(-1)^F=-\vec\Upsilon_x$ and $(-1)^F\tilde\Pi_-(-1)^F=\tilde\Pi_-$. The $\mathbb{Z}/2$ grading the Dirac quantization article had to impose on the mode algebra is, for one mode, realized <strong>inside</strong> $\mathbb{B}$: it is the inner automorphism by the Hermitian involution $(-1)^F\in\mathbb{M}_+$, and its odd subspace is the two-complex-dimensional span of the ladder and its adjoint.
 - <strong>The grading is not unique.</strong> The choice $i\vec e_z$ is the choice of a mode; for any unit pure quaternion $\vec u$ the element $i\vec u$ is Hermitian, squares to $e_t$, and defines a grading whose odd part consists of the ladder operators in the corresponding plane, with $\tilde\Pi_-=\tfrac12(e_t-i\vec u)$. This was checked on $\vec u=(\vec e_x+\vec e_y+\vec e_z)/\sqrt3$, a direction chosen after the claim rather than the $\vec e_z$ direction that suggested it. The family is parametrized by the unit pure quaternions, that is, by a two-sphere, with $\vec u$ and $-\vec u$ giving the same grading.</p>
+<h3 id="what-the-creation-operator-creates">What the Creation Operator Creates</h3>
+<p><strong>The pair is a creator and an annihilator of one occupation quantum. The creator moves the vacuum rung to the occupied rung; it creates neither a particle with quantum numbers nor a second nilpotent.</strong></p>
+<p>The matrix images fix which is which, because the module fixes them:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>matrix image</th>
+<th>action</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec\Upsilon_y$</td>
+<td>$\lvert1\rangle\langle0\rvert$</td>
+<td>$\vec\Upsilon_y\lvert0\rangle=\lvert1\rangle$, $\vec\Upsilon_y\lvert1\rangle=0$</td>
+<td>creator</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_x$</td>
+<td>$\lvert0\rangle\langle1\rvert$</td>
+<td>$\vec\Upsilon_x\lvert1\rangle=\lvert0\rangle$, $\vec\Upsilon_x\lvert0\rangle=0$</td>
+<td>annihilator</td>
+</tr>
+</tbody>
+</table></div>
+<p>The order of the product names the rung:</p>
+<p>$$
+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-,
+\qquad
+\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+.
+$$</p>
+<p>Read from the right, $\vec\Upsilon_y\vec\Upsilon_x$ annihilates and then creates, and it is the number operator $\tilde\Pi_-$; the reverse creates and then annihilates, and it is the vacuum projector $\tilde\Pi_+$. The two rungs are the two orderings, and the anticommutator is their sum.</p>
+<p><strong>What is created.</strong> One occupation quantum of the mode: the ray changes from $|0\rangle$ to $|1\rangle$. The created object is a state in the fundamental module $S=\mathbb{C}^2$, not an element of $\mathbb{B}$. The nilpotent is the operator; the state is what it acts on. In particular the creator does not create a new nilpotent, and it does not create a second mode — the dimension count of §<em>The Capacity of the Algebra</em> forbids that.</p>
+<p>Nor does it create a particle with momentum, mass or charge. Momentum and spin are labels of the mode once the mode is embedded in a field: $a^{\mathrm{fop}\dagger}_r(\vec p)$ creates a fermion of momentum $\vec p$ and spin $r$, and $b^{\mathrm{fop}\dagger}_r(\vec p)$ the antifermion, as in §<em>The One-Particle Space and the Field Expansions</em>. Mass is a parameter of the field, and charge is the fermion number $N_a-N_b$. The algebra supplies the occupation slot; the field supplies the rest. The one label the algebra itself carries is the two-valued rung.</p>
+<p><strong>The star and the name.</strong> The word "creator" is fixed by the choice of vacuum rung, not by the star. In the standard frame $\vec\Upsilon_y=\vec\Upsilon_x^{*}$, the vacuum is $\tilde\Pi_+$, and the creator is the adjoint of the annihilator. Under the reciprocal rescaling of <em>The Peirce Decomposition</em>, $\vec\Upsilon_x\mapsto\mu\vec\Upsilon_x$, $\vec\Upsilon_y\mapsto\mu^{-1}\vec\Upsilon_y$, the two rungs and the number operator are unchanged, and the creator still maps the vacuum ray to the occupied ray, now with the scalar: $\vec\Upsilon_y|0\rangle=\mu^{-1}|1\rangle$. But $\vec\Upsilon_y=\vec\Upsilon_x^{*}$ survives only for $|\mu|=1$. For other $\mu$ the two elements still span the two mixed corners and still multiply to the two rungs, but $\vec\Upsilon_y$ is not the adjoint of $\vec\Upsilon_x$: the adjoint is $|\mu|^2\vec\Upsilon_y$, the same corner with a different normalisation. The pair is conjugate up to the positive scale $|\mu|^2$, which equals one exactly for $|\mu|=1$. The rungs remain Hermitian throughout this rescaling; it is the ladder that loses its conjugation.</p>
+<p><strong>The spin and the name.</strong> The same two matrix units are the spin ladder, read the other way. In the standard frame the corpus writes $\tilde S_+=\hbar\vec\Upsilon_x$ and $\tilde S_-=\hbar\vec\Upsilon_y$, so $\vec\Upsilon_x$ raises the spin and $\vec\Upsilon_y$ lowers it. Since $|0\rangle$ is the $+1$ eigenstate of $\mathsf{M}_2(i\vec e_z)=\sigma_3$, the Fock vacuum is the top spin rung, and the spin-raising operator is the fermion annihilation operator. Neither name is more physical than the other: they are the same ladder read from opposite ends.</p>
+<p><strong>One square-zero that is not a mode.</strong> The BRST charge also squares to zero, but it is a differential: it shifts ghost number, creates no particle, has no vacuum idempotent, and pairs with no identity. Its content is the cohomology $\ker Q/\mathrm{im}\,Q$. The contrast is §<em>The Differential</em> of <em>The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</em>; the construction is <em>BRST Symmetry in Biquaternionic Form</em>. The equation $X^2=0$ alone does not make $X$ a creator. What makes it one is the pair, the two rungs and the module.</p>
 <h3 id="what-the-capacity-statement-does-and-does-not-say">What the Capacity Statement Does and Does Not Say</h3>
 <p>It does say that the fermionic canonical anticommutation relations, the one-mode number operator, the vacuum idempotent, and the fermion-parity grading all exist as elements of $\mathbb{B}$, and that this is forced by the dimension count rather than chosen: one mode saturates the algebra, so every other choice of a single mode is equivalent, and no second mode can be added.</p>
 <p>It does not say that the framework <strong>derives</strong> fermionic statistics, or statistics at all. The anticommutation relations are imposed on $\vec\Upsilon_x,\vec\Upsilon_y$; the identification exhibits a realization, not a derivation. Whether the framework selects the fermionic structure, or merely happens to have the dimension that hosts one fermionic mode, is the open question of the article and is recorded as such in the closing section. The dimension coincidence $4=4$ is exact but it is a coincidence of dimensions until something more is said.</p>
@@ -275,6 +314,7 @@ $$</p>
 <p><strong>Established, and recomputed here.</strong></p>
 <ul>
 <li>The single fermionic mode is realized in $\mathbb{B}$: $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and are nilpotent, with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ idempotent.</li>
+<li>The matrix model fixes the roles: $\mathsf{M}_2(\vec\Upsilon_x)=|0\rangle\langle1|$ and $\mathsf{M}_2(\vec\Upsilon_y)=|1\rangle\langle0|$, so $\vec\Upsilon_y$ creates the occupation rung and $\vec\Upsilon_x$ annihilates it, and the created object is a state in the module rather than an algebra element. The reciprocal rescaling preserves the rungs and the roles; it preserves adjointness only for $|\mu|=1$.</li>
 <li>The one-mode Fock space is the fundamental module of $\mathbb{B}$, and $\mathbb{B}$ is its endomorphism algebra.</li>
 <li>Fermion parity for one mode is the element $(-1)^F=i\vec e_z\in\mathbb{M}_+$, and conjugation by it is the $\mathbb{Z}/2$ grading; the grading is defined by the choice of a unit pure quaternion, a two-sphere of choices.</li>
 <li>The capacity of $\mathbb{B}$ is one fermionic mode: $m$ modes generate $M_{2^m}(\mathbb{C})$, of dimension $4^m$, which exceeds four for $m\ge2$.</li>
@@ -292,7 +332,7 @@ $$</p>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The creation and annihilation operators of the biquaternion Dirac and Maxwell fields are the mode operators constructed in the two canonical-quantization articles; their Fock spaces are the exterior and symmetric algebras of the modules on which those operators act. Neither Fock space is an object of the algebra $\mathbb{B}$. The finite-dimensional part of the construction is exactly one fermionic mode: $\mathbb{B}\cong M_2(\mathbb{C})$ is the whole one-mode operator algebra, its Fock space is the fundamental module, its number operator $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is an idempotent, and its fermion parity $(-1)^F=i\vec e_z$ is a Hermitian element whose conjugation is the $\mathbb{Z}/2$ grading. These are the oscillator article's truncated ladder operators; they satisfy the fermionic, not the bosonic, canonical relation.</p>
-<p>The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mathbb{C})$ of dimension $4^m$, which leaves no room in a four-dimensional algebra as soon as $m\ge2$. The bosonic case is worse rather than analogous: no pair in $\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, because the trace of a commutator vanishes, so the Maxwell ladder is not in the algebra at all. The statistics is carried by the bracket, and the framework's own algebra carries the fermionic bracket once.</p>
+<p>The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mathbb{C})$ of dimension $4^m$, which leaves no room in a four-dimensional algebra as soon as $m\ge2$. The bosonic case is worse rather than analogous: no pair in $\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, because the trace of a commutator vanishes, so the Maxwell ladder is not in the algebra at all. The statistics is carried by the bracket, and the framework's own algebra carries the fermionic bracket once. The creator is $\vec\Upsilon_y$: it creates one occupation quantum, the change of rung from $|0\rangle$ to $|1\rangle$, and it creates no particle with quantum numbers. Which element is called the creator is fixed by the vacuum rung, not by the star, and the same matrix units read as the spin ladder run the other way.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -393,7 +433,7 @@ $$</p>
 <li>O. Bratteli and D. W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em> 2 (Springer, 1997), for the CAR and CCR algebras and the Fock representations generated by finitely and infinitely many modes.</li>
 <li>P. A. M. Dirac, <em>The Principles of Quantum Mechanics</em> (Oxford, 1930), for the occupation-number treatment of the oscillator and its two-level truncation.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), and H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton, 1989), for the Clifford algebras $\mathrm{Cl}(2N)$ and the isomorphism $\mathrm{Cl}(2)\cong M_2(\mathbb{C})$ used in the capacity count.</li>
-<li>Companion articles: <a href="canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>; <a href="canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a>; <a href="the-harmonic-oscillator-in-biquaternionic-form.html">The Harmonic Oscillator in Biquaternionic Form</a>; <a href="angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a>; <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>.</li>
+<li>Companion articles: <a href="canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>; <a href="canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a>; <a href="the-harmonic-oscillator-in-biquaternionic-form.html">The Harmonic Oscillator in Biquaternionic Form</a>; <a href="angular-momentum-and-spin-in-biquaternionic-form.html">Angular Momentum and Spin in Biquaternionic Form</a>; <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>; <a href="the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a>; <a href="brst-symmetry-in-biquaternionic-form.html">BRST Symmetry in Biquaternionic Form</a>.</li>
 </ul>
       </div>
     </main>
