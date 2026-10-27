@@ -4,7 +4,7 @@
 
 A **sandwich** is the linear map $X\mapsto AXB^{-1}$ of the matrix algebra, and the **adjoint action** is the special case $A=B$, the conjugation $X\mapsto AXA^{-1}$. The two-sided maps are the natural operators of the algebra: they are the ones that act by multiplication on the left and on the right, they contain the inner automorphisms, and their group is a quotient of $GL_2(\mathbb{R})\times GL_2(\mathbb{R})$.
 
-This article computes the sandwich group, its determinant-preserving subgroup and the adjoint subgroup. The determinant-preserving subgroup is the orientation-preserving isometry group $SO(2,2)$ of the determinant form; its identity component is $(SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm(I,I)\}$. The adjoint action preserves the scalar line and the traceless subspace, and on the traceless subspace it is the Lorentz group $SO^{+}(2,1)$; the group $SL_2(\mathbb{R})$ is its double cover, as in *Split-Quaternion Rotations and the Lorentz Group*. The article closes with the action on the rulings of the null cone and with the enveloping algebra of the sandwiches.
+This article computes the sandwich group, its determinant-preserving subgroup and the adjoint subgroup. The determinant-preserving subgroup is the index-two subgroup $SO(2,2)$ of the isometry group of the determinant form; its identity component is $(SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm(I,I)\}$. The adjoint action preserves the scalar line and the traceless subspace, and on the traceless subspace it is the Lorentz group $SO^{+}(2,1)$; the group $SL_2(\mathbb{R})$ is its double cover, as in *Split-Quaternion Rotations and the Lorentz Group*. The article closes with the action on the rulings of the null cone and with the enveloping algebra of the sandwiches.
 
 The one-sided operators are *$M_2(\mathbb{R})$ Model : The Conjugations and the Adjoints*; the rank-one matrices are *$M_2(\mathbb{R})$ Model : Rank-One Matrices and the Null Cone*; and the biquaternion analogue is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
 
@@ -118,7 +118,7 @@ $$
 
 **Proof.** $Auv^{\mathsf T}B^{-1}=Au\,(B^{-\mathsf T}v)^{\mathsf T}$, since $(B^{-1})^{\mathsf T}=B^{-\mathsf T}$.
 
-**Corollary (the action on the quadric).** On the projective null quadric $\mathbb{R}P^1\times\mathbb{R}P^1$, the sandwich acts by
+**Corollary (the action on the quadric).** On the projective null quadric $\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R})$, the sandwich acts by
 
 $$
 ([u],[v])\longmapsto\bigl([Au],[B^{-\mathsf T}v]\bigr).
@@ -168,7 +168,7 @@ So the determinant-preserving sandwiches of the theorem are not the same as the 
 
 ## Summary
 
-The sandwiches $T_{A,B}(X)=AXB^{-1}$ form the group $(GL_2\times GL_2)/\Delta$ of dimension seven, with $\Delta$ the diagonal scalars. Every sandwich scales the determinant by $\det A/\det B$, and the sandwiches with $\det A=\det B$ are exactly the orientation-preserving isometries of the determinant form: they form $SO(2,2)$, whose identity component is $(SL_2\times SL_2)/\{\pm(I,I)\}\cong SO^{+}(2,2)$.
+The sandwiches $T_{A,B}(X)=AXB^{-1}$ form the group $(GL_2\times GL_2)/\Delta$ of dimension seven, with $\Delta$ the diagonal scalars. Every sandwich scales the determinant by $\det A/\det B$, and the sandwiches with $\det A=\det B$ are exactly the isometries of determinant one: they form $SO(2,2)$, whose identity component is $(SL_2\times SL_2)/\{\pm(I,I)\}\cong SO^{+}(2,2)$.
 
 The adjoint action has kernel the scalars and image $PGL_2\cong SO(2,1)$. It fixes the identity, preserves the traceless subspace, and acts there as $SO(2,1)$; on the identity components it is $PSL_2\cong SO^{+}(2,1)$, and the map $SL_2\to SO^{+}(2,1)$ is the double cover of the Lorentz group. On the null quadric the sandwich moves the two rulings independently, by $A$ and by $B^{-\mathsf T}$, and the sandwiches span the full endomorphism algebra $M_4(\mathbb{R})$. A sandwich preserves the scalar–vector splitting only when it is a scalar multiple of an inner automorphism.
 
@@ -181,7 +181,7 @@ The adjoint action has kernel the scalars and image $PGL_2\cong SO(2,1)$. It fix
 | $\Delta$ | the diagonal scalars $(\lambda I,\lambda I)$ | this article |
 | $B_{\det}$ | the determinant form of signature $(2,2)$ | *$M_2(\mathbb{R})$ Model : The Conjugations and the Adjoints* |
 | $SO^{+}(2,2)$ | the identity component of the isometry group of $B_{\det}$ | this article |
-| $SO(2,1)$ | the orientation-preserving isometry group of the traceless part | this article |
+| $SO(2,1)$ | the determinant-one isometry group of the traceless part | this article |
 | $SO^{+}(2,1)$ | the Lorentz group of signature $(2,1)$ | *Split-Quaternion Rotations and the Lorentz Group* |
 | $\operatorname{vec}$ | column-stacking vectorisation | this article |
 

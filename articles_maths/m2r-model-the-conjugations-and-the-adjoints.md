@@ -161,11 +161,11 @@ $$
 B_{\mathrm{K}}(X,Y)=4\operatorname{tr}(XY),
 $$
 
-and it has signature $(2,1)$. It is not the trace form $B_{\operatorname{tr}}(X,Y)=\operatorname{tr}(X^{\mathsf T}Y)$ of the article: the two agree when $X$ is symmetric and differ by a sign when $X$ is skew.
+and it has signature $(2,1)$. It is not the trace form $B_{\operatorname{tr}}(X,Y)=\operatorname{tr}(X^{\mathsf T}Y)$ of the article: the two differ by the factor four on the symmetric part and by the factor minus four on the skew part, $B_{\mathrm{K}}(X,Y)=4B_{\operatorname{tr}}(X,Y)$ when $X$ is symmetric and $B_{\mathrm{K}}(X,Y)=-4B_{\operatorname{tr}}(X,Y)$ when $X$ is skew.
 
-**Proof.** For $\mathfrak{sl}_n$ the Killing form is $2n\operatorname{tr}(XY)$, which is $4\operatorname{tr}(XY)$ for $n=2$. For $X=\begin{pmatrix}a&b\\c&-a\end{pmatrix}$ one has $\operatorname{tr}(X^2)=2a^2+2bc$, and in the coordinates $u=b+c$ and $v=b-c$ this is $2a^2+\tfrac12(u^2-v^2)$, of signature $(2,1)$. The comparison with $B_{\operatorname{tr}}$ follows from $X^{\mathsf T}=X$ on symmetric matrices and $X^{\mathsf T}=-X$ on skew ones.
+**Proof.** For $\mathfrak{sl}_n$ the Killing form is $2n\operatorname{tr}(XY)$, which is $4\operatorname{tr}(XY)$ for $n=2$. For $X=\begin{pmatrix}a&b\\c&-a\end{pmatrix}$ one has $\operatorname{tr}(X^2)=2a^2+2bc$, and in the coordinates $u=b+c$ and $v=b-c$ this is $2a^2+\tfrac12(u^2-v^2)$, of signature $(2,1)$. The comparison with $B_{\operatorname{tr}}$ follows from $X^{\mathsf T}=X$ on symmetric matrices and $X^{\mathsf T}=-X$ on skew ones, together with the factor four.
 
-The Killing form is indefinite on $V$, while the trace form is positive definite on the whole algebra; the two forms coincide on the symmetric part and differ by a sign on the skew part. The determinant form restricted to $V$ has signature $(2,1)$ as well, since $\operatorname{diag}(1,1,-1,-1)$ restricts to the three last coordinates with signs $(+,-,-)$.
+The Killing form is indefinite on $V$, while the trace form is positive definite on the whole algebra; the two forms are proportional by the factor four on the symmetric part and by minus four on the skew part. The determinant form restricted to $V$ has signature $(2,1)$ as well, since $\operatorname{diag}(1,1,-1,-1)$ restricts to the three last coordinates with signs $(+,-,-)$.
 
 ## Summary
 

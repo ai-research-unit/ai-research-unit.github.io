@@ -143,7 +143,7 @@ The distinguished subspaces of the algebra correspond to the following subspaces
 | Subspace of $\mathbb{H}_{\mathrm{s}}$ | Image in $M_2(\mathbb{R})$ | Description |
 |---|---|---|
 | $S = \mathbb{R}\cdot 1$ | $\mathbb{R} I$ | the scalar matrices |
-| $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | $\mathrm{SL}_2(\mathbb{R})$ | the traceless matrices |
+| $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | $\mathfrak{sl}_2(\mathbb{R})$ | the traceless matrices |
 | $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ | $\left\{\begin{pmatrix}p & q \\ q & p\end{pmatrix}\right\}$ | the symmetric matrices with equal diagonal |
 | $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ | $\left\{\begin{pmatrix}p & 0 \\ 0 & q\end{pmatrix}\right\}$ | the diagonal matrices |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$, $\tilde\pi_1 \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_w}$, $R_{\ell_v}$ | maximal isotropic subspaces |

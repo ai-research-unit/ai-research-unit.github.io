@@ -57,7 +57,7 @@ The remaining non-zero matrices have rank one, and they are exactly the zero div
 
 **Proof.** A square matrix is invertible exactly when its determinant is non-zero, and the determinant is the norm; the invertibility criterion of *Split-Quaternion Norm and Invertibility* says that an element is a unit exactly when its norm is non-zero. A non-zero matrix which is not invertible has rank one.
 
-**Proposition (the strata are the orbits).** The group $GL_2(\mathbb{R})$ acts transitively on the matrices of each rank, and the three orbits are the units, the non-zero zero divisors and the origin.
+**Proposition (the strata are the orbits).** The group $GL_2(\mathbb{R})\times GL_2(\mathbb{R})$ acts transitively on the matrices of each rank by $(P,Q)\cdot X=PXQ$, and the three orbits are the units, the non-zero zero divisors and the origin.
 
 **Proof.** Two matrices of the same rank are equivalent under left and right multiplication by invertible matrices: this is the rank normal form. For rank one, $X=uv^{\mathsf T}$ with $u,v\neq0$, and $P X Q = (Pu)(Q^{\mathsf T}v)^{\mathsf T}$ is again of rank one.
 
@@ -101,7 +101,7 @@ $$
 q_t=0, \qquad q_x^2=q_y^2+q_z^2.
 $$
 
-**Proof.** Write $\tilde q=t+\vec v$. Then $\tilde q^2=t^2+N(\vec v)+2t\vec v$. Both parts must vanish; over $\mathbb{R}$, $2t\vec v=0$ gives $t=0$ or $\vec v=0$, and $\vec v=0$ with $t^2=0$ gives $t=0$. So $t=0$ and $N(\vec v)=0$, which is the displayed equation.
+**Proof.** Write $\tilde q=t+\vec v$. Then $\tilde q^2=t^2-N(\vec v)+2t\vec v$. Both parts must vanish; over $\mathbb{R}$, $2t\vec v=0$ gives $t=0$ or $\vec v=0$, and $\vec v=0$ with $t^2=0$ gives $t=0$. So $t=0$ and $N(\vec v)=0$, which is the displayed equation.
 
 **Corollary (two nappes).** The non-zero nilpotents form the cone $q_x^2=q_y^2+q_z^2$ in the vector subspace $V$, of signature $(2,1)$. It has two connected components, the nappes $q_x>0$ and $q_x<0$, each homeomorphic to $S^1\times\mathbb{R}_{>0}$.
 
@@ -124,12 +124,12 @@ with $z_1,z_2$ the complex coordinates of the previous section. This set is a fl
 **Corollary (the projectivised cone).** The projectivised zero-divisor cone is the doubly ruled quadric
 
 $$
-\mathcal N/\mathbb{R}^\times \cong \mathbb{R}P^1\times\mathbb{R}P^1,
+\mathcal N/\mathbb{R}^\times \cong \mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R}),
 $$
 
 the two rulings being the image line $[u]$ and the kernel line $[v]$ of a rank-one matrix $uv^{\mathsf T}$.
 
-**Proof.** The pair of lines $([u],[v])$ determines $X$ up to scale, and conversely $X$ determines its image and kernel. This is the Segre embedding of $\mathbb{R}P^1\times\mathbb{R}P^1$ as the quadric of rank-one matrices, developed in *Split-Quaternion Null Quadric and Projective Geometry*.
+**Proof.** The pair of lines $([u],[v])$ determines $X$ up to scale, and conversely $X$ determines its image and kernel. This is the Segre embedding of $\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R})$ as the quadric of rank-one matrices, developed in *Split-Quaternion Null Quadric and Projective Geometry*.
 
 The link being a torus is the topological form of the double ruling: the torus is the product of the two circles of directions, and the two families of rulings are the two families of circles.
 
@@ -137,7 +137,7 @@ The link being a torus is the topological form of the double ruling: the torus i
 
 The determinant of the model is the split-quaternion norm, a quadratic form of signature $(2,2)$, which in the complex coordinates $z_1=q_t-iq_x$ and $z_2=q_y+iq_z$ reads $\lvert z_1\rvert^2-\lvert z_2\rvert^2$. The invertible matrices are the units, the non-zero singular matrices are the zero divisors, and they have rank one; the origin is the only matrix of rank zero.
 
-Every rank-one matrix is an outer product $uv^{\mathsf T}$, with $X^2=(v^{\mathsf T}u)X$. The nilpotents are the case $v^{\mathsf T}u=0$, equivalently $q_t=0$ and $q_x^2=q_y^2+q_z^2$, a two-dimensional cone with two nappes; the multiples of the idempotents are the complementary dense family. The projectivised cone is the doubly ruled quadric $\mathbb{R}P^1\times\mathbb{R}P^1$, and the link of the cone in the Euclidean sphere is the Clifford torus.
+Every rank-one matrix is an outer product $uv^{\mathsf T}$, with $X^2=(v^{\mathsf T}u)X$. The nilpotents are the case $v^{\mathsf T}u=0$, equivalently $q_t=0$ and $q_x^2=q_y^2+q_z^2$, a two-dimensional cone with two nappes; the multiples of the idempotents are the complementary dense family. The projectivised cone is the doubly ruled quadric $\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R})$, and the link of the cone in the Euclidean sphere is the Clifford torus.
 
 ## Summary of Notation
 
@@ -148,7 +148,7 @@ Every rank-one matrix is an outer product $uv^{\mathsf T}$, with $X^2=(v^{\maths
 | $z_1,z_2$ | the complex coordinates $q_t-iq_x$ and $q_y+iq_z$ | this article |
 | $\mathcal N$ | the null cone $\{\det=0\}$ | *Split-Quaternion Zero Divisors* |
 | $u,v$ | the outer-product parameters of a rank-one matrix | this article |
-| $\mathbb{R}P^1$ | the projective line of directions | *Split-Quaternion Null Quadric and Projective Geometry* |
+| $\mathbb{P}^1(\mathbb{R})$ | the projective line of directions | *Split-Quaternion Null Quadric and Projective Geometry* |
 
 ## Further Reading
 

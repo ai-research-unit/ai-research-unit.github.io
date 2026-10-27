@@ -28,7 +28,7 @@ $$
 \tilde\xi = \pm e_t \quad\text{or}\quad \tilde\xi\in V,\; N(\tilde\xi)=-1.
 $$
 
-**Proof.** Write $\tilde\xi = s+\vec v$ with $s$ scalar and $\vec v$ pure. Then $\tilde\xi^2=s^2+N(\vec v)+2s\vec v$, since $\vec v^2=-N(\vec v)e_t$. The equation $\tilde\xi^2=1$ gives $2s\vec v=0$ and $s^2+N(\vec v)=1$. If $s\neq0$ then $\vec v=0$ and $s=\pm1$. If $s=0$ then $N(\vec v)=-1$.
+**Proof.** Write $\tilde\xi = s+\vec v$ with $s$ scalar and $\vec v$ pure. Then $\tilde\xi^2=s^2-N(\vec v)+2s\vec v$, since $\vec v^2=-N(\vec v)e_t$. The equation $\tilde\xi^2=1$ gives $2s\vec v=0$ and $s^2-N(\vec v)=1$. If $s\neq0$ then $\vec v=0$ and $s=\pm1$. If $s=0$ then $N(\vec v)=-1$.
 
 **Corollary (the idempotents).** The idempotents of the algebra are $0$, $1$, and the elements
 
@@ -64,7 +64,7 @@ $$
 \det P = \tfrac14\bigl(1-v_z^2-(v_y-v_x)(v_x+v_y)\bigr) = \tfrac14\bigl(1-v_z^2-v_y^2+v_x^2\bigr) = \tfrac14\bigl(1+N(\vec v)\bigr)=0.
 $$
 
-The square is $P$ by the proposition on the halving map. Conversely, a matrix with $P^2=P$, $\operatorname{tr}P=1$ and $\det P=0$ has eigenvalues $1$ and $0$, so it has rank one and is a projection; its traceless part $\tilde v=2P-I$ is pure with $\tilde v^2=1$, that is $N(\tilde v)=-1$.
+The square is $P$ by the proposition on the halving map. Conversely, a matrix with $P^2=P$, $\operatorname{tr}P=1$ and $\det P=0$ has eigenvalues $1$ and $0$, so it has rank one and is a projection; its traceless part $\vec v=2P-I$ is pure with $\vec v^2=1$, that is $N(\vec v)=-1$.
 
 **Corollary (the two standard idempotents).** The idempotents $\tilde\pi_\pm=\tfrac12(1\pm\vec e_y)$ become
 

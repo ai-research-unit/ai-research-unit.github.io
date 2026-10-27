@@ -6354,7 +6354,7 @@
 #### Element Representations
 
 <a href="articles_maths/split-quaternion-element-representations.html">Split-Quaternion Element Representations</a>
-<!-- the representations of $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ and their classification; semisimplicity and the irreducible representations; the representation ring; the relation to the representations of the Lie algebra $\mathrm{SL}_2(\mathbb{R})$; the double cover of the Lorentz group of signature $(2,1)$; comparison with the quaternion case. -->
+<!-- the representations of $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ and their classification; semisimplicity and the irreducible representations; the representation ring; the relation to the representations of the Lie algebra $\mathfrak{sl}_2(\mathbb{R})$; the double cover of the Lorentz group of signature $(2,1)$; comparison with the quaternion case. -->
 
 <a href="articles_maths/split-quaternion-matrix-element-representations.html">Split-Quaternion Matrix Element Representations</a>
 <!-- the faithful $2\times2$ real matrix representation, its existence and its uniqueness up to conjugacy; the determinant as norm and the trace as scalar part; the image of the algebra as a linear subspace of $M_2(\mathbb{R})$; comparison with $\mathbb{H}$ and with the absence of such a representation for $\mathbb{H}_{\mathbb{D}}$. -->
@@ -6419,7 +6419,7 @@
 <!-- the unit split-quaternions, their two components and the group $\mathrm{SL}_2(\mathbb{R})$; the adjoint action on the vector subspace and the double cover $\mathrm{SL}_2(\mathbb{R})\to\mathrm{SO}^+(2,1)$; the three-dimensional Lorentz group of signature $(2,1)$; hyperbolic rotations and the trichotomy of timelike, lightlike and spacelike elements; comparison with the quaternion and split-biquaternion cases. -->
 
 <a href="articles_maths/m2r-model-the-projective-line-and-the-mobius-action.html">$M_2(\mathbb{R})$ Model : The Projective Line and the Möbius Action</a>
-<!-- the minimal left ideals as the lines of $\mathbb{R}^2$; the action of $PGL_2(\mathbb{R})$ and its two components, with $PSL_2$ the identity component; the chart and the Möbius formula; the idempotents as projections onto a line, fibred over $\mathbb{R}P^1$; the cross-ratio; the boundary of the hyperbolic plane and the comparison with $\mathbb{C}P^1$. -->
+<!-- the minimal left ideals as the lines of $\mathbb{R}^2$; the action of $PGL_2(\mathbb{R})$ and its two components, with $PSL_2$ the identity component; the chart and the Möbius formula; the idempotents as projections onto a line, fibred over $\mathbb{P}^1(\mathbb{R})$; the cross-ratio; the boundary of the hyperbolic plane and the comparison with $\mathbb{P}^1(\mathbb{C})$. -->
 
 <a href="articles_maths/split-quaternion-automorphisms-and-derivations.html">Split-Quaternion Automorphisms and Derivations</a>
 <!-- the automorphisms of the algebra over $\mathbb{R}$ as the inner automorphisms of the matrix model; the derivations and their identification with the traceless matrices under the bracket; the outer automorphisms; the contrast with the biquaternion case; the Lie algebra statement. -->

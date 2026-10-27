@@ -6,13 +6,13 @@ The minimal left ideals of the split-quaternion algebra form a real projective l
 
 This article develops the parametrisation, the action and its kernel, the chart and the Möbius formula, the idempotents, the orbits and the cross-ratio. It is the real counterpart of *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*, and the geometric content is the action of the Lorentz group on the boundary of the hyperbolic plane.
 
-**Conventions.** The algebra and the model are those of *Split-Quaternion Matrix Element Representations*. A vector of $\mathbb{R}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{R}P^1$. The chart is $t=\xi_1/\xi_2$ on the open set $\xi_2\neq0$.
+**Conventions.** The algebra and the model are those of *Split-Quaternion Matrix Element Representations*. A vector of $\mathbb{R}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{R})$. The chart is $t=\xi_1/\xi_2$ on the open set $\xi_2\neq0$.
 
-**Boundaries.** The lattice of left ideals and the parametrisation by $\mathbb{R}P^1$ are *Split-Quaternion Ideals and Peirce Decomposition*; the null quadric and its two rulings are *Split-Quaternion Null Quadric and Projective Geometry*; the Lorentz group is *Split-Quaternion Rotations and the Lorentz Group*.
+**Boundaries.** The lattice of left ideals and the parametrisation by $\mathbb{P}^1(\mathbb{R})$ are *Split-Quaternion Ideals and Peirce Decomposition*; the null quadric and its two rulings are *Split-Quaternion Null Quadric and Projective Geometry*; the Lorentz group is *Split-Quaternion Rotations and the Lorentz Group*.
 
 ## The Lines and the Minimal Left Ideals
 
-For a line $L\in\mathbb{R}P^1$ put
+For a line $L\in\mathbb{P}^1(\mathbb{R})$ put
 
 $$
 I_L=\{M\in M_2(\mathbb{R}):\operatorname{im}M\subseteq L\}.
@@ -41,7 +41,7 @@ $$
 
 **Proof.** $\operatorname{im}(AM)\subseteq A(\operatorname{im}M)\subseteq AL$, and the map is invertible because $A$ is. The line $AL$ depends only on $A$ and $L$.
 
-**Proposition (the kernel).** The kernel of the action of $GL_2(\mathbb{R})$ on $\mathbb{R}P^1$ is the group of scalar matrices, so the action factorises through
+**Proposition (the kernel).** The kernel of the action of $GL_2(\mathbb{R})$ on $\mathbb{P}^1(\mathbb{R})$ is the group of scalar matrices, so the action factorises through
 
 $$
 PGL_2(\mathbb{R})=GL_2(\mathbb{R})/\mathbb{R}^\times I.
@@ -55,7 +55,7 @@ $$
 PSL_2(\mathbb{R})=SL_2(\mathbb{R})/\{\pm I\},
 $$
 
-and it consists of the transformations that preserve the orientation of the circle $\mathbb{R}P^1$. The other component consists of the orientation-reversing transformations.
+and it consists of the transformations that preserve the orientation of the circle $\mathbb{P}^1(\mathbb{R})$. The other component consists of the orientation-reversing transformations.
 
 **Proof.** $GL_2$ has two components, distinguished by the sign of the determinant, and scaling by $\lambda$ multiplies the determinant by $\lambda^2>0$, so it preserves that sign. Hence $PGL_2$ has exactly two components. The identity component is the image of $SL_2$, which is connected; it is $PSL_2$. A transformation with a representative of negative determinant reverses the orientation of the projective line, as the example $[x:y]\mapsto[x:-y]$ shows.
 
@@ -104,13 +104,13 @@ $$
 
 **Proof.** The first matrix is $uv^{\mathsf T}$ with $u=(1,1)$ and $v=(1,1)/2$, so that $v^{\mathsf T}u=1$; its image is $[u]=[1:1]$. The second is $u=(1,-1)$ and $v=(1,-1)/2$, with image $[1:-1]$.
 
-**Corollary (the fibration of the idempotent variety).** The map $\Pi\mapsto\operatorname{im}\Pi$ sends the two-dimensional family of non-trivial idempotents onto $\mathbb{R}P^1$, with one-dimensional affine fibres. In the coordinates $\tilde v$ of the halving map, this is the map $\tilde v\mapsto\operatorname{im}\mathsf{M}_2\bigl(\tfrac12(1+\tilde v)\bigr)$ from the hyperboloid $N(\tilde v)=-1$ to the projective line.
+**Corollary (the fibration of the idempotent variety).** The map $\Pi\mapsto\operatorname{im}\Pi$ sends the two-dimensional family of non-trivial idempotents onto $\mathbb{P}^1(\mathbb{R})$, with one-dimensional affine fibres. Writing the idempotent as $\tfrac12(1+\vec v)$ with $N(\vec v)=-1$, this is the map $\vec v\mapsto\operatorname{im}\mathsf{M}_2\bigl(\tfrac12(1+\vec v)\bigr)$ from the hyperboloid $N(\vec v)=-1$ to the projective line.
 
-**Proof.** The family of idempotents is two-dimensional and the fibres are affine lines by the proposition, so the map is a fibration with one-dimensional fibres.
+**Proof.** The fibres are affine lines by the proposition. The map is equivariant for $GL_2(\mathbb{R})$, which acts transitively on the base, and the stabiliser of a line acts transitively on the fibre over it; hence the map is a fibre bundle with fibre $\mathbb{R}$.
 
 ## Orbits, Stabilisers and the Cross-Ratio
 
-**Theorem (sharp three-transitivity).** The group $PGL_2(\mathbb{R})$ acts sharply three-transitively on $\mathbb{R}P^1$: for any two ordered triples of distinct points there is a unique Möbius transformation carrying the first triple to the second.
+**Theorem (sharp three-transitivity).** The group $PGL_2(\mathbb{R})$ acts sharply three-transitively on $\mathbb{P}^1(\mathbb{R})$: for any two ordered triples of distinct points there is a unique Möbius transformation carrying the first triple to the second.
 
 **Proof.** It suffices to show that a unique transformation carries a given triple to $(\infty,0,1)$. The stabiliser of $\infty$ is the affine group $t\mapsto\alpha t+\beta$ with $\alpha\neq0$, of dimension two; it acts simply transitively on the pairs $(\beta,\beta+\alpha)$ with $\alpha\neq0$, that is on the ordered pairs of distinct finite points. Hence the stabiliser of $\infty$ is transitive on the pairs of distinct finite points, and the stabiliser of the triple is trivial. Counting dimensions, $\dim PGL_2=3$ equals the dimension of the space of triples, three.
 
@@ -118,7 +118,7 @@ $$
 
 **Proof.** The dimension count of the theorem gives $3-1=2$, and the affine group is one such stabiliser.
 
-**Definition.** The **cross-ratio** of four distinct points $t_1,t_2,t_3,t_4$ of $\mathbb{R}P^1$ is
+**Definition.** The **cross-ratio** of four distinct points $t_1,t_2,t_3,t_4$ of $\mathbb{P}^1(\mathbb{R})$ is
 
 $$
 (t_1,t_2;t_3,t_4)=\frac{(t_1-t_3)(t_2-t_4)}{(t_1-t_4)(t_2-t_3)},
@@ -142,9 +142,9 @@ and the four factors cancel in the cross-ratio.
 
 ## The Rulings of the Null Quadric
 
-**Proposition (the incidence).** A point of the projective null quadric is a pair of lines $([u],[v])$, and it is the image-kernel pair of the rank-one matrix $uv^{\mathsf T}$. The two rulings are the two factors of $\mathbb{R}P^1\times\mathbb{R}P^1$.
+**Proposition (the incidence).** A point of the projective null quadric is a pair of lines $([u],[v])$, and it is the image-kernel pair of the rank-one matrix $uv^{\mathsf T}$. The two rulings are the two factors of $\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R})$.
 
-**Proof.** This is *$M_2(\mathbb{R})$ Model : Rank-One Matrices and the Null Cone*, where the projectivised cone is identified with $\mathbb{R}P^1\times\mathbb{R}P^1$ by the image and kernel lines.
+**Proof.** This is *$M_2(\mathbb{R})$ Model : Rank-One Matrices and the Null Cone*, where the projectivised cone is identified with $\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R})$ by the image and kernel lines.
 
 **Corollary (the diagonal action).** The adjoint action of $PGL_2(\mathbb{R})$ on the quadric acts diagonally on the two rulings:
 
@@ -154,37 +154,37 @@ $$
 
 **Proof.** Conjugation is the sandwich with $A=B$, and the sandwich formula of *$M_2(\mathbb{R})$ Model : The Sandwich and the Adjoint Action* gives $(Au)(A^{-\mathsf T}v)^{\mathsf T}$.
 
-So the adjoint action moves both rulings by the same projective transformation, while a general sandwich moves them independently. This is the geometric difference between the Lorentz group, which is a diagonal copy of the Möbius group inside $PGL_2\times PGL_2$, and the full conformal group of the determinant form.
+So the adjoint action moves both rulings by the same projective transformation, while a general sandwich moves them independently. This is the geometric difference between the Lorentz group, which is a diagonal copy of the Möbius group inside $PGL_2\times PGL_2$, and the group of conformal similarities of the determinant form that the sandwiches realise.
 
 ## The Hyperbolic Plane and the Biquaternion Analogue
 
-**Proposition (the boundary of the hyperbolic plane).** The projective line $\mathbb{R}P^1$ is the boundary of the hyperbolic plane, and $PSL_2(\mathbb{R})$ acts on it as the group of orientation-preserving isometries of the plane.
+**Proposition (the boundary of the hyperbolic plane).** The projective line $\mathbb{P}^1(\mathbb{R})$ is the boundary of the hyperbolic plane, and $PSL_2(\mathbb{R})$ acts on it as the group of orientation-preserving isometries of the plane.
 
-**Proof.** The upper half-plane $\mathbb{H}^2=\{z:\operatorname{Im}z>0\}$ has boundary $\mathbb{R}\cup\{\infty\}=\mathbb{R}P^1$, and the Möbius transformations with real coefficients and positive determinant act on $\mathbb{H}^2$ by isometries of the hyperbolic metric; the group is $PSL_2(\mathbb{R})$, and it is the full orientation-preserving isometry group.
+**Proof.** The upper half-plane $\mathbb{H}^2=\{z:\operatorname{Im}z>0\}$ has boundary $\mathbb{R}\cup\{\infty\}=\mathbb{P}^1(\mathbb{R})$, and the Möbius transformations with real coefficients and positive determinant act on $\mathbb{H}^2$ by isometries of the hyperbolic metric; the group is $PSL_2(\mathbb{R})$, and it is the full orientation-preserving isometry group.
 
-**Corollary (the Lorentz group on the boundary).** Under the isomorphism $PSL_2(\mathbb{R})\cong SO^{+}(2,1)$ of *$M_2(\mathbb{R})$ Model : The Sandwich and the Adjoint Action*, the action on $\mathbb{R}P^1$ is the action of the Lorentz group on the boundary of the hyperbolic plane.
+**Corollary (the Lorentz group on the boundary).** Under the isomorphism $PSL_2(\mathbb{R})\cong SO^{+}(2,1)$ of *$M_2(\mathbb{R})$ Model : The Sandwich and the Adjoint Action*, the action on $\mathbb{P}^1(\mathbb{R})$ is the action of the Lorentz group on the boundary of the hyperbolic plane.
 
 **Proof.** The isomorphism is the adjoint action on the traceless part, and the identification of the projective line with the boundary is the proposition above.
 
-**Remark (the biquaternion analogue).** In the biquaternion category the same construction gives the projective line $\mathbb{C}P^1$, which is a two-sphere and the boundary of hyperbolic three-space; the Möbius group is $PGL_2(\mathbb{C})\cong PSL_2(\mathbb{C})$, connected, and its action is developed in *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*. Over the reals the boundary is a circle and the Möbius group has two components; over the complex numbers the boundary is a sphere and the Möbius group is connected. This is the geometric form of the difference between the two signatures.
+**Remark (the biquaternion analogue).** In the biquaternion category the same construction gives the projective line $\mathbb{P}^1(\mathbb{C})$, which is a two-sphere and the boundary of hyperbolic three-space; the Möbius group is $PGL_2(\mathbb{C})\cong PSL_2(\mathbb{C})$, connected, and its action is developed in *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*. Over the reals the boundary is a circle and the Möbius group has two components; over the complex numbers the boundary is a sphere and the Möbius group is connected. This is the geometric form of the difference between the two signatures.
 
 ## Summary
 
 The minimal left ideals of the split-quaternion algebra are the sets $I_L$ of matrices whose image lies in a line $L$, and they are parametrised by the real projective line. The group of units acts by $[u]\mapsto[Au]$, with kernel the scalars, so the acting group is $PGL_2(\mathbb{R})$. In the chart $t=\xi_1/\xi_2$ the action is the Möbius formula $t\mapsto(at+b)/(ct+d)$.
 
-The group $PGL_2(\mathbb{R})$ has two components; its identity component is $PSL_2(\mathbb{R})$, not the whole group as in the complex case, and it acts sharply three-transitively. The rank-one idempotents are the projections $uv^{\mathsf T}$ with $v^{\mathsf T}u=1$, their image lines give a fibration of the idempotent hyperboloid over $\mathbb{R}P^1$, and the two standard idempotents correspond to $[1:1]$ and $[1:-1]$. The projective line is the boundary of the hyperbolic plane, and the action of $PSL_2$ is the action of the Lorentz group on that boundary.
+The group $PGL_2(\mathbb{R})$ has two components; its identity component is $PSL_2(\mathbb{R})$, not the whole group as in the complex case. The full group acts sharply three-transitively. The rank-one idempotents are the projections $uv^{\mathsf T}$ with $v^{\mathsf T}u=1$, their image lines give a fibration of the idempotent hyperboloid over $\mathbb{P}^1(\mathbb{R})$, and the two standard idempotents correspond to $[1:1]$ and $[1:-1]$. The projective line is the boundary of the hyperbolic plane, and the action of $PSL_2$ is the action of the Lorentz group on that boundary.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\mathbb{R}P^1$ | the real projective line, the lines of $\mathbb{R}^2$ | this article |
+| $\mathbb{P}^1(\mathbb{R})$ | the real projective line, the lines of $\mathbb{R}^2$ | this article |
 | $I_L$ | the minimal left ideal of matrices with image in $L$ | *Split-Quaternion Ideals and Peirce Decomposition* |
 | $PGL_2(\mathbb{R})$ | $GL_2$ modulo the scalars | this article |
 | $PSL_2(\mathbb{R})$ | $SL_2$ modulo $\{\pm I\}$, the identity component of $PGL_2$ | this article |
 | $t$ | the chart $\xi_1/\xi_2$ | this article |
 | $(t_1,t_2;t_3,t_4)$ | the cross-ratio | this article |
-| $\mathbb{H}^2$ | the hyperbolic plane, with boundary $\mathbb{R}P^1$ | *Split-Quaternions and Hyperbolic Geometry* |
+| $\mathbb{H}^2$ | the hyperbolic plane, with boundary $\mathbb{P}^1(\mathbb{R})$ | *Split-Quaternions and Hyperbolic Geometry* |
 
 ## Further Reading
 

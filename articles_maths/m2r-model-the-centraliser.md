@@ -104,7 +104,7 @@ a scaling by five composed with the rotation of angle $\arctan(4/3)$.
 
 **Proof.** A non-scalar $2\times2$ matrix has a minimal polynomial of degree two, equal to its characteristic polynomial $x^2-(\operatorname{tr}X)x+\det X$. Two matrices with the same characteristic polynomial therefore have the same rational canonical form, and they are conjugate.
 
-**Corollary (the dimension of a class).** The conjugacy class of a non-scalar element has dimension two, and the conjugacy classes are the level sets of the map $\tilde q\mapsto(2q_t,\langle\tilde q\rangle_{\natural})$.
+**Corollary (the dimension of a class).** The conjugacy class of a non-scalar element has dimension two, and the conjugacy classes of the non-scalar elements are the non-scalar parts of the level sets of the map $\tilde q\mapsto(2q_t,\langle\tilde q\rangle_{\natural})$.
 
 **Proof.** The centraliser has dimension two by the theorem, and the orbit has dimension $4-2=2$. The class is determined by the pair by the preceding theorem.
 
@@ -112,7 +112,7 @@ a scaling by five composed with the rotation of angle $\arctan(4/3)$.
 
 ## Summary
 
-The centraliser of a non-scalar split quaternion is the two-dimensional algebra $\mathbb{R}[\tilde q]=\operatorname{span}\{1,\tilde q\}$, and the centraliser of a scalar is the whole algebra. The centraliser is the quotient of the polynomial ring by the characteristic polynomial $x^2-2q_t x+\langle\tilde q\rangle_{\natural}$, and its type is decided by the discriminant $\Delta=4(q_y^2+q_z^2-q_x^2)$: the field $\mathbb{C}$ when $\Delta<0$, the dual numbers when $\Delta=0$, and the product $\mathbb{R}\times\mathbb{R}$ when $\Delta>0$.
+The centraliser of a non-scalar split quaternion is the two-dimensional algebra $\mathbb{R}[\tilde q]=\operatorname{span}\{1,\tilde q\}$, and the centraliser of a scalar is the whole algebra. For a non-scalar element, the centraliser is the quotient of the polynomial ring by the characteristic polynomial $x^2-2q_t x+\langle\tilde q\rangle_{\natural}$, and its type is decided by the discriminant $\Delta=4(q_y^2+q_z^2-q_x^2)$: the field $\mathbb{C}$ when $\Delta<0$, the dual numbers when $\Delta=0$, and the product $\mathbb{R}\times\mathbb{R}$ when $\Delta>0$.
 
 The three types are exactly the three real Jordan forms, so the centraliser, together with the trace and the determinant, classifies the element up to conjugacy. The centraliser of the idempotent $\tfrac12(1+\vec e_y)$ is the diagonal part of the Peirce decomposition, and the centraliser of a non-zero nilpotent is the dual-number algebra it generates.
 
