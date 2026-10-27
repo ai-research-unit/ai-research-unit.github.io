@@ -134,7 +134,7 @@ $$
 \langle\tilde R\rangle_{\natural}=-c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2},
 $$
 
-of signature $(3,1)$. The zero set is the zero-divisor cone; its cut by $\mathbb{M}_-$ is the light cone; and the level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$ is the mass shell.
+of signature $(3,1)$. The zero set is the zero-divisor cone; its cut by $\mathbb{M}_-$ is the light cone; and the level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$, on $\mathbb{M}_-$, is the mass shell.
 
 The form is **multiplicative**,
 
@@ -160,13 +160,13 @@ On the material sector the Krein form is minus the interval, $\langle\cdot,\cdot
 
 The indefinite form is read as a **constraint** and not as a state. A gauge calibration fixes a redundancy; it does not prepare a state, and its form cannot supply a probability. The signature is what an object is: a definite Hermitian form counts states, an indefinite one counts a constraint.
 
-The antisymmetric half of the gauge product is the gauge bracket, the conjugate cross product. It fails the Jacobi identity, and the failure needs a complex witness: on the real forms the bracket coincides with the antisymmetric plain bilinear product, which is a Lie bracket, so no real form can diagnose the failure. The complex structure is the carrier of the obstruction, not a convenience. The failure is structural — the low operation of a higher structure — and the strict group that remains is $\mathrm{U}(2)$. The gauge bracket is valued in the vector subspace: a pure vector, an axial direction read as a polarisation direction, with no central component and no state. The discrete charge is the label of the compact part, and it is discrete because that part is compact.
+The antisymmetric half of the gauge product is the gauge bracket, the conjugate cross product. It fails the Jacobi identity, and the failure needs a complex witness: on the real forms the bracket coincides with the antisymmetric plain bilinear product, which is a Lie bracket, so no real form can diagnose the failure. The complex structure is the carrier of the obstruction, not a convenience. The failure is structural — the low operation of a higher structure — and the group that survives is the algebra's unitary group, $\mathrm{U}(2)$. The gauge bracket is valued in the vector subspace: a pure vector, an axial direction read as a polarisation direction, with no central component and no state. The discrete charge is the label of the compact part, and it is discrete because that part is compact.
 
 **The boundary.** The Krein form is a form, not a gauge theory. No gauge group, no coupling constant and no field content is derived here; the indefinite structure — the Krein space, its fundamental symmetry and its signatures — is the subject of the entry *The Krein Form and the Indefinite Structure*. The gauge bracket does not close and supplies no internal symmetry algebra; the closure that exists is the cross-product closure of the real quaternion forms, and the failure of the gauge bracket is invisible to a computation with real coefficients. The ceiling of the internal group is its own question, and the biquaternion algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$.
 
 ### The $4\times3$ Table as a Mnemonic
 
-The four products and the three involutions can be read as a $4\times3$ table of questions. The four rows are the jobs; the three columns are the product read as it stands, read through the natural conjugation, and read through the star.
+The four products and the three readings can be arranged as a $4\times3$ table of questions. The four rows are the jobs; the three columns are the product read as it stands, read through the natural conjugation, and read through the star.
 
 | product | as it stands | through ${}^{\natural}$ | through ${}^{*}$ |
 | --- | --- | --- | --- |
@@ -175,9 +175,9 @@ The four products and the three involutions can be read as a $4\times3$ table of
 | probability | decision | weight | phase |
 | gauge | gauge | measurement | polarisation |
 
-The table is a mnemonic. The row words are the four jobs; the column words are the question each involution puts to the product. Read across a row, the three words are the operation, the quantity and the order or phase of one job: composition, commutation and rotation are the operation, the reversed order and the bracket; causality, coupling and obstruction are the interval, its scalar pairing and its cone; decision, weight and phase are the outcome, the expectation and the interference; gauge, measurement and polarisation are the constraint, the calibration and the axial direction.
+The table is a mnemonic. The row words are the four jobs; the column words are the question each column map puts to the product. Read across a row, the three words are the operation, the quantity and the order or phase of one job: composition, commutation and rotation are the operation, the reversed order and the bracket; causality, coupling and obstruction are the interval, its scalar pairing and its cone; decision, weight and phase are the outcome, the expectation and the interference; gauge, measurement and polarisation are the constraint, the calibration and the axial direction.
 
-The natural conjugation reverses the order of a product, and the star is the Hermitian adjoint; those are the threads of the two outer columns. The assignment is a mnemonic and not a derivation: the four products and the three involutions are algebraic, and the twelve words are the framework's names for the questions they can be asked.
+The natural conjugation reverses the order of a product, and the star is the Hermitian adjoint; those are the threads of the two outer columns. The assignment is a mnemonic and not a derivation: the four products and the three maps (identity, natural conjugation, star) are algebraic, and the twelve words are the framework's names for the questions they can be asked.
 
 The table does not add a product, a theorem or a completeness claim. It is the four-by-three shape of the twelve questions, and it is offered as a mnemonic because the names are easier to remember in the table than in the list. The algebra's own caution stands: no single product carries both a metric and a closed symmetry, and the twelve are four jobs with two halves, not twelve equivalent structures.
 
@@ -227,7 +227,7 @@ The physical identification of the material sector with spacetime and of the inf
 - Probability is the plain sesquilinear product, with the positive definite Born form; it is the only form definite on every subspace.
 - Causality is the quaternionic bilinear product; its square is the interval, its zero set the light cone on the sector, its level sets the mass shells, and its norm is multiplicative.
 - Gauge is the quaternionic sesquilinear product, with the indefinite Krein form; it is minus the interval on the material sector and the interval itself on the informational one.
-- The four products and the three involutions form a $4\times3$ table of twelve questions, offered as a mnemonic and not as a completeness claim.
+- The four products and the three readings form a $4\times3$ table of twelve questions, offered as a mnemonic and not as a completeness claim.
 - On the real part the four forms collapse to two and the twelve products to ten; the count of twelve is a count over $\mathbb{C}$.
 
 ## Summary of Notation

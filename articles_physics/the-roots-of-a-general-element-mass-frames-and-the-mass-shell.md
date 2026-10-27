@@ -18,11 +18,11 @@ The article owns no theorem. It states the algebraic classification, with its so
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The plain square root problem, the four roots, the degenerate rows and the four-parameter family | [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html) |
-| The four roots in the unit case, the branch count and the root table by regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
+| The plain square root problem, the four roots, the degenerate rows and the four-parameter family | [Square Roots of an Element](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html) |
+| The four roots, the branch count and the root table by regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The root sets of the twelve products and the four existence classes | [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
-| The roots of $0$ and the nilpotents | [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
-| The roots of $+1$ and the idempotents | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
+| The roots of $0$ and the nilpotents | [Nilpotents](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
+| The roots of $+1$ and the idempotents | [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | The norm, its multiplicativity and the inverse | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four forms and the interval | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The $2\times2$ matrix model and the eigenvalues of the mass operator | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
@@ -53,7 +53,7 @@ $$
 
 The roots come in opposite pairs $\pm\tilde\Xi$. There are **four roots** when $(\vec Q,\vec Q)\neq0$ and $n=Q_t^2+(\vec Q,\vec Q)\neq0$; **two roots** in the two degenerate rows; **no roots** when $(\vec Q,\vec Q)=0$, $n=0$ and $Q_t=0$; and a continuous family for a complex scalar radicand $\tilde Q=Q_te_t$, whose two scalar roots $\pm\sqrt{Q_t}e_t$ are joined by a **four-real-parameter family** of pure $\vec\Xi$ with $(\vec\Xi,\vec\Xi)=-Q_t$.
 
-That count is the unit-case count of *Biquaternion Elementary Functions*, §*The Roots*. The table there reads the same multiplicity by regime. There are four for a unit with $(\vec Q,\vec Q)\neq0$, two when the norm vanishes with $Q_t\neq0$, two in the Jordan row, none for a nonzero nilpotent, and a continuous family on the scalar axis. The four plain roots are the four combinations of the two eigenvalue logarithms, modulo the global sign. The shifts that leave the root fixed remove the rest of the lattice.
+That count is the one given in *Biquaternion Elementary Functions*, §*The Roots*. The table there reads the same multiplicity by regime. There are four for a unit with $(\vec Q,\vec Q)\neq0$, two when the norm vanishes with $Q_t\neq0$, two in the Jordan row, none for a nonzero nilpotent, and a continuous family on the scalar axis. The four plain roots are the four combinations of the two eigenvalue logarithms, modulo the global sign. The shifts that leave the root fixed remove the rest of the lattice.
 
 The root set of $0$ is the nilpotent cone together with the origin. In the natural band the root set of a nonzero value is a level set, not a cone; in the plain band it is the set of the classification — finite for a non-scalar radicand, and a finite set together with a four-parameter family for a central scalar. For a **central** nonzero value, every root is a unit: the scalar roots are units, and a pure root has $(\vec\Xi,\vec\Xi)\neq0$, so its norm does not vanish. A non-trivial idempotent is its own root and is therefore a zero divisor; the unit statement is a statement about central values.
 
@@ -87,7 +87,7 @@ $$
 
 The root set of the value $-m^2c^2$ in the natural band is the whole shell, a three-dimensional two-sheeted hyperboloid, not a finite set. Every point of the shell is a four-momentum; the root is the four-momentum itself. This is the precise sense in which the root problem is the mass-shell problem: it is the natural root problem, not the plain one.
 
-The mass shell is not the plain root set of a central value. The plain roots of $-m^2c^2$ include the scalar elements $\pm imc\,e_t$ and a four-parameter family of pure roots with $(\vec\Xi,\vec\Xi)=m^2c^2$; they are not the four-momenta of the shell. The two statements are different and both are correct in their own band.
+The mass shell is not the plain root set of a central value. The plain roots of $-m^2c^2$ include the scalar elements $\pm imc\,e_t$, which are the two rest points of the shell, and a four-parameter family of pure roots with $(\vec\Xi,\vec\Xi)=m^2c^2$, which are not four-momenta of the shell. The two statements are different and both are correct in their own band.
 
 ### The Hermitian Square and the Mass Operator
 
@@ -121,7 +121,7 @@ $$
 \Theta=-i\psi\;},
 $$
 
-and the mass is $m=\lvert\Rho\rvert/c$. The root set of the value $-m^{2}c^{2}$ is the orbit of the element $\Rho e^{\vec U\Theta}$ under the frame factor: every point of the shell has the same $\lvert\Rho\rvert$ and a different angle. The level set is the geometric form of the statement, and the modulus is the invariant that defines it.
+and the mass is $m=\lvert\Rho\rvert/c$. The root set of the value $-m^{2}c^{2}$ is the union of the two sheets of the shell, the two orbits of the restricted Lorentz group: the orbit of $\Rho e^{\vec U\Theta}$ and the orbit of its central negative. Every point of the shell has the same $\lvert\Rho\rvert$ and a different angle. The level set is the geometric form of the statement, and the modulus is the invariant that defines it.
 
 The mass is the modulus and not the energy. The energy is $mc^{2}\cosh\psi$, the modulus times the frame factor; a boost changes the energy and leaves the modulus. The same division appears in the spectrum: $\lambda_+\lambda_-=\Rho^{2}$ is the modulus, and $\lambda_+/\lambda_-=e^{2\psi}$ is the frame.
 
@@ -138,11 +138,11 @@ $$
 
 a complex quadric of four real dimensions. On the material slice $\vec Q\in\mathbb{R}^{3}$ and the family is the sphere $\lvert\vec p\rvert=B$: the directions of motion at fixed energy and momentum magnitude.
 
-The family is the set that a spectrum-only measurement leaves open. It is also the common level set of the two invariants, the trace and the norm. A dynamics that conserves both moves inside the family and does not leave it.
+The family is the set that a spectrum-only measurement leaves open. It is also the common level set of the trace and the norm, the two spectral invariants. A dynamics that conserves both moves inside the family and does not leave it.
 
-The family is larger than a physical frame orbit. On the material slice a rotation acts transitively on the sphere, so the family is one rotation orbit. On the whole algebra the family contains complex vector parts that no real Lorentz transformation reaches: the spectrum is invariant under the full conjugation group, the physical frame group is a subgroup, and the difference is the part of the family that is not a frame.
+On the material slice the family is the sphere of directions at fixed energy and momentum magnitude; a rotation acts transitively on it, so it is one rotation orbit. The mass shell is larger: it is the union of the two orbits of the restricted Lorentz group at fixed mass, and a boost changes the trace and the spectrum while preserving the norm. On the whole algebra the family is the complex quadric of four real dimensions, and it contains complex vector parts that no real Lorentz transformation reaches; those are the members that are not frames.
 
-The degenerate case splits. At $B=0$ the eigenvalues coincide at $Q_t$, and the family is the isotropic quadric $(\vec Q,\vec Q)=0$, the cone through the origin. Within the matrix image a repeated eigenvalue has two conjugation classes, the scalar $Q_te_t$ and the Jordan block $Q_t(e_t+N_0)$. They have the same spectrum and the same norm, and they are not conjugate. The minimal polynomial, not the spectrum, separates them.
+The degenerate case splits. At $B=0$ the eigenvalues coincide at $Q_t$, and the family is the isotropic quadric $(\vec Q,\vec Q)=0$ in the vector part, a cone with vertex at the origin of $\vec Q$-space. Within the matrix image a repeated eigenvalue has two conjugation classes, the scalar $Q_te_t$ and the Jordan block $Q_t(e_t+N_0)$. They have the same spectrum and the same norm, and they are not conjugate. The minimal polynomial, not the spectrum, separates them.
 
 **The boundary.** The family is a set of elements, not a set of states and not a set of particles. Two isospectral elements need not be related by a physical transformation, and the article does not claim that they are. The reading is epistemic: it names what the spectrum leaves undetermined, and the algebra supplies no principle that selects one member.
 
@@ -193,7 +193,7 @@ and the vanishing norm forces a zero eigenvalue. The example $\tilde E=\vec e_x+
 The massless biquaternion equation carries the axial symmetry $\tilde\Psi\mapsto\exp(i\alpha\gamma_5)\tilde\Psi$. A mass term breaks it: the vector phase passes through the mass, the axial phase does not, and the axial current obeys a divergence proportional to the mass, which vanishes at $m=0$; the axial anomaly is a separate quantum effect. A nonzero vacuum expectation of the fermion bilinear,
 
 $$
-\langle\bar\Psi\Psi\rangle_{*}\neq0,
+\langle\bar\Psi\Psi\rangle\neq0,
 $$
 
 is the order parameter of the breaking. The mass term and the condensate multiply the same bilinear, so the dynamically generated coefficient is
@@ -248,7 +248,7 @@ The three bands answer three different root questions. The table states the diff
 | --- | --- | --- | --- |
 | plain | $\tilde\Xi^2=\tilde Q$ | four, two or none for a non-scalar radicand; two scalars and a four-parameter family for a central scalar | the algebraic multiplicity; roots as frames |
 | natural | $\tilde\Xi\tilde\Xi^{\natural}=\lambda e_t$ | the level set $\langle\tilde\Xi\rangle_{\natural}=\lambda$ | the mass shell; the causal class |
-| Hermitian | $\tilde\Xi\tilde\Xi^{*}=\tilde Q$ | a positive semidefinite family | the mass-squared operator; the Born weight |
+| Hermitian | $\tilde\Xi\tilde\Xi^{*}=\tilde Q$ | a family of amplitudes with fixed Born weight; only positive semidefinite values | the mass-squared operator; the Born weight |
 
 ## Limits
 
@@ -258,7 +258,7 @@ The bands must be kept apart. The plain root set of a central value is a finite 
 
 ## Summary
 
-The root problem $\tilde\Xi^2=\tilde Q$ is band-dependent. In the plain band the roots are generically four, falling to two or to none, with a four-parameter family for a central scalar; the root of $0$ is the nilpotent cone. In the natural band the root set of a central value is the level set of the interval, and on the material sector the level set $-m^2c^2$ is the mass shell. In the Hermitian band the root set is the mass-squared family of a doublet. The five interpretations use these sets: the mass shell is a propagator pole; the mass can be a field whose eigenvalues are the doublet masses; the mass can be generated by a chiral condensate; the root can be the Kustaanheimo–Stiefel square root of the position; and the roots are frames, the representatives the algebra does not choose among. The mass itself is the Hamilton modulus, $m=\lvert\Rho\rvert/c$, and the shell is its level set. The isospectral family of a generic element is the complex quadric of fixed trace and fixed vector square; on the material slice it is the sphere of directions, and at a repeated eigenvalue it splits into a scalar and a Jordan class. The algebra supplies the sets and the identities; it supplies no numerical mass, no dynamics and no choice of contour.
+The root problem $\tilde\Xi^2=\tilde Q$ is band-dependent. In the plain band the roots are generically four, falling to two or to none, with a four-parameter family for a central scalar; the root of $0$ is the nilpotent cone. In the natural band the root set of a central value is the level set of the interval, and on the material sector the level set $-m^2c^2$ is the mass shell. In the Hermitian band the root set is the family of amplitudes over a positive value, and the eigenvalues of that value are the mass-squareds of a doublet. The five interpretations use these sets: the mass shell is a propagator pole; the mass can be a field whose eigenvalues are the doublet masses; the mass can be generated by a chiral condensate; the root can be the Kustaanheimo–Stiefel square root of the position; and the roots are frames, the representatives the algebra does not choose among. The mass itself is the Hamilton modulus, $m=\lvert\Rho\rvert/c$, and the shell is its level set. The isospectral family of a generic element is the complex quadric of fixed trace and fixed vector square; on the material slice it is the sphere of directions, and at a repeated eigenvalue it splits into a scalar and a Jordan class. The algebra supplies the sets and the identities; it supplies no numerical mass, no dynamics and no choice of contour.
 
 ## Summary of Notation
 
@@ -275,7 +275,7 @@ The root problem $\tilde\Xi^2=\tilde Q$ is band-dependent. In the plain band the
 | $\langle\bar\Psi\Psi\rangle$ | the chiral condensate |
 | $\gamma_5$ | the chirality involution of the spinor module, $\gamma_5=\mathrm{diag}(-I_2,I_2)$ |
 | $\varsigma$ | the Kustaanheimo–Stiefel coordinates |
-| $\Rho=imc$ | the Hamilton modulus of a four-momentum, the mass |
+| $\Rho=imc$ | the Hamilton modulus of a four-momentum; its modulus is $mc$ |
 | $\mathcal I(\lambda_+,\lambda_-)$ | the isospectral family of a pair of eigenvalues |
 
 ## Further Reading

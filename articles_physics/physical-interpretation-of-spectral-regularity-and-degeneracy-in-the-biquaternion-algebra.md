@@ -4,7 +4,7 @@
 
 Spectral regularity is the condition that the two eigenvalues of a biquaternion can be told apart. It is a condition on the operator the element generates, not on a motion of the element. When it holds, the operator carries a complex structure: two invariant planes, a mode basis, a non-zero splitting. When it fails, the operator carries a nilpotent part: a flag, not a basis, and the element is a degeneracy.
 
-The article reads the two cases physically. The regular case gives the mode picture: two complex frequencies, a mode frame, a normal-mode decomposition of every element. The degenerate case is not one phenomenon. The operator is $Q_t I+N$ with $N^2=0$, and the three normal forms — $N=0$, $Q_t=0$, and both non-zero — are the scalar line, the nilpotent stratum and the unipotent stratum. Each has its own interpretation: a pure rate with no direction; a null shift with no rate; a rate with a shear. On none of them is there a canonical mode basis, and the reason is the same in all three: the spectral idempotents do not exist, and the Peirce idempotents are a gauge.
+The article reads the two cases physically. The regular case gives the mode picture: two complex frequencies, a mode frame, a normal-mode decomposition of every element. The degenerate case is not one phenomenon. The operator is $Q_t I+N$ with $N^2=0$, and the three normal forms — $N=0$, $Q_t=0$, and both non-zero — are the scalar line, the nilpotent stratum and the unipotent stratum. Each has its own interpretation: a pure rate with no direction; a null shift with no rate; a rate with a shear. On none of them is there a canonical mode basis, and the reason is the same in all three: no two-term spectral decomposition exists, and the Peirce idempotents are a gauge.
 
 The vocabulary is the harmonic one, and it is exact. The regular element supplies the root of the Fourier kernel, and the degenerate cone is where that kernel stops oscillating. The two readings are the same construction seen from the spectrum and from the transform.
 
@@ -27,7 +27,7 @@ The mathematics is proved in *The Spectrum* and *The Eigenbasis of a Spectrally 
 | The exponential and the logarithm in the regular, nilpotent and unipotent regimes | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The Fourier kernel, the root and the root-adapted basis | [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html), §*The Fourier Kernel* and §*Factorization into Complex Fourier Transforms* |
 | The unitary character and the root criterion | [The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root](../articles_maths/the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html), §*Unitarity of the Character and the Root* |
-| The degenerate characters and the non-oscillating transform | [Dual Numbers Harmonic Analysis](../articles_maths/dual-numbers-harmonic-analysis.html), §*The Dual Characters* and §*The Structure of the Transform* |
+| The degenerate characters and the non-oscillating transform | [Dual-Numbers Harmonic Analysis](../articles_maths/dual-numbers-harmonic-analysis.html), §*The Dual Characters* and §*The Structure of the Transform* |
 
 The table is the contract: every physical statement below is an interpretation of a result in one of these rows. The physics companions are *The Spectral Reading of a Four-Vector*, *Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum*, *The Zero-Divisor Cone and the Massless Spectrum*, *Nilpotents and Fermions*, *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* and *The Exponential, the Logarithm and the Generator*; they are linked where their interpretations are used, and this article does not repeat them.
 
@@ -53,10 +53,10 @@ $$
 
 They coincide exactly when $B^2=0$, because their difference is $2iB$. The number $B$ is one of the two square roots of $B^2$; the other exchanges the two eigenvalues and changes nothing else. Every physical statement must therefore be written in terms of $B^2$, or in terms of the unordered pair $\{\lambda_+,\lambda_-\}$, and the sign of $B$ is a label.
 
-| case | condition | spectrum | spectral idempotents | eigenbasis |
+| case | condition | spectrum | spectral decomposition | eigenbasis |
 | --- | --- | --- | --- | --- |
-| **spectrally regular** | $B^2\neq0$ | two distinct eigenvalues | two, unique | exists |
-| **spectrally degenerate** | $B^2=0$ | one repeated eigenvalue $Q_t$ | one iff $\vec Q=0$, none otherwise | every basis iff $\vec Q=0$, none otherwise |
+| **spectrally regular** | $B^2\neq0$ | two distinct eigenvalues | two terms, unique | exists |
+| **spectrally degenerate** | $B^2=0$ | one repeated eigenvalue $Q_t$ | one term iff $\vec Q=0$, none otherwise | every basis iff $\vec Q=0$, none otherwise |
 
 **The first physical statement is a warning.** Regular does not mean invertible, and degenerate does not mean non-invertible. The norm $N=Q_t^2+B^2$ decides invertibility; $B^2$ decides whether the two eigenvalues can be told apart. The two conditions are independent, and the independence is the subject of §*The Four Sectors* below. A massless particle has $N=0$ and, away from the zero momentum, $B^2\neq0$: it is a zero divisor with a perfectly good mode basis. A unipotent element has $N=Q_t^2\neq0$ and $B^2=0$: it is a unit with no mode basis. The words *regular* and *degenerate* in this article always mean spectral regularity and spectral degeneracy, and never invertibility.
 
@@ -109,7 +109,7 @@ The identity $L_{\vec Q}^2=-B^2\,\mathrm{id}$ is the algebraic core of the whole
 
 This is the sense in which $B$ is **operator-linked**. It is the coefficient of the complex structure of the operator, not the speed of a motion of the element. The word *clock* is a name for that structure: $J_{\tilde Q}$ has period $2\pi$ in the flow parameter, and the element's rate $B$ converts the period to $2\pi/B$. At $B=0$ the clock stops, and the flow becomes a unipotent translation.
 
-**Boundary.** The flow parameter $\theta$ is the parameter of the one-parameter group, not automatically a physical time. The identification $\theta=t$ is a separate, sector-dependent step: it is the Schrödinger evolution when the generator is $i\tilde H$, and it is not a spacetime translation for a four-momentum — the translation is the central phase $e^{i\tilde P\cdot\tilde X}$, a different construction. The operator interpretation of $B$ is a statement about the spectrum and the invariant subspaces; it is not a dynamics.
+**Boundary.** The flow parameter $\theta$ is the parameter of the one-parameter group, not automatically a physical time. The identification $\theta=t$ is a separate, sector-dependent step: it is the Schrödinger evolution when the generator is $-i\tilde H$ in the convention $e^{-i\tilde Ht}$, and it is not a spacetime translation for a four-momentum — the translation is the central phase $e^{i\tilde P\cdot\tilde X}$, a different construction. The operator interpretation of $B$ is a statement about the spectrum and the invariant subspaces; it is not a dynamics. The complex structure $J_{\tilde Q}$ is internal: it is a root of $-\mathrm{id}$ on $\mathbb{B}$, not the local complex structure of the material sector, which is a choice of real slice and imaginary-time direction.
 
 ### The Four Sectors
 
@@ -156,8 +156,8 @@ The real part of $B$ is half the difference of the damping rates, in the order $
 | Hermitian observable | $h_t+i\vec h$ | $h_t\mp\lvert\vec h\rvert$ | $B=i\lvert\vec h\rvert$: the half-gap is $\lvert\vec h\rvert$ |
 | normal, real $B$ | $\vec Q$ real, $B$ real | $Q_t\pm iB$ | real half-gap; the damping sits in $Q_t$ |
 | normal, complex $B$ | $\vec Q$ a complex multiple of a real vector, $B$ complex | complex | complex half-gap; orthogonal modes, growing norm |
-| non-normal | $\vec Q$ not a complex multiple of a real vector | real or complex | biorthogonal modes; real $B$ does not prevent a bounded norm |
-| null idempotent multiple | $c\tilde\Pi$ | $c$ and $0$ | the two roots are the amplitude and zero |
+| non-normal | $\vec Q$ not a complex multiple of a real vector | real or complex | biorthogonal modes; non-normality alone does not force growth |
+| null idempotent multiple | $c\tilde\Pi$ | $c$ and $0$ | the eigenvalues are the amplitude and zero |
 
 **Interpretation.** The same $B$ is interpreted as a **half-gap** in the informational sector, as a **momentum magnitude** in the material sector, and as a **complex half-splitting** for an element with complex $B$; a normal element with real $B$ has a real half-gap and carries its damping in $Q_t$. The algebra supplies one number; the sector supplies the physical name. The gap of a two-level system is $2\lvert B\rvert$ in the Hermitian case, and the beat frequency of the two modes is $2\lvert B\rvert$ in the general case. The massless case is the limit in which one of the two eigenvalues reaches zero.
 
@@ -251,9 +251,9 @@ $$
 | Hermitian observable | Hermitian projectors | the two outcomes; orthogonal; the Born rule applies |
 | material four-momentum | Hermitian idempotents | the two null components; the Doppler pair |
 | general non-normal element | non-Hermitian idempotents | two biorthogonal modes; no orthogonal basis |
-| null element, $N=0$, $B^2\neq0$ | one coefficient zero | one live mode; the massless one-term writing |
+| null element, $N=0$, $B^2\neq0$ | one coefficient zero | one live mode; the massless limit of the two-term writing |
 
-**Boundary.** The two terms are not two particles and not two energies. They are two spectral components of one element; their sum is twice the scalar part, not the energy, and their product is the norm, not a second mass-shell condition. The interpretation of the terms as *outcomes* is licensed only for a Hermitian element; the interpretation as *null components* only for the material four-momentum; the interpretation as *biorthogonal modes* only for a non-normal element, where the two dual bases differ. The algebra gives the decomposition in all three cases; it does not give one physical interpretation of it.
+**Boundary.** The two terms are not two particles and not two energies. They are two spectral components of one element; the sum of their coefficients is twice the scalar part, not the energy, and the product of their coefficients is the norm, not a second mass-shell condition. The interpretation of the terms as *outcomes* is licensed only for a Hermitian element; the interpretation as *null components* only for the material four-momentum; the interpretation as *biorthogonal modes* only for a non-normal element, where the two dual bases differ. The algebra gives the decomposition in all three cases; it does not give one physical interpretation of it.
 
 ### The Mode Frame
 
@@ -295,7 +295,7 @@ $$
 \lambda_+\lambda_-=N,
 $$
 
-and it fixes nothing else about the vector part. The axis $\vec\Xi$ has two free complex angles, four real parameters, and the two eigenvalues are blind to them. At $B^2=0$ the axis is not defined, and the idempotents do not exist except on the scalar line.
+and it fixes nothing else about the vector part. The axis $\vec\Xi$ has two free complex angles, four real parameters, and the two eigenvalues are blind to them. At $B^2=0$ the axis is not defined, and the two-term spectral decomposition does not exist except on the scalar line.
 
 **Interpretation.** A spectral measurement reads the two frequencies and leaves the frame free. The set of elements with a given spectrum is the set of elements obtained by changing the axis; for a four-momentum it is the two-sphere of directions at fixed energy and momentum magnitude. The spectrum is therefore a **frame-blind** observable: it sees the splitting and the mean, not the orientation.
 
@@ -305,7 +305,7 @@ and it fixes nothing else about the vector part. The axis $\vec\Xi$ has two free
 
 The sector table has two off-diagonal entries, and they are the two physical warnings.
 
-- **$\Sigma_{01}$: a null element with distinct eigenvalues.** A massless four-momentum has $N=0$ and $B^2=\lvert\vec p\rvert^2\neq0$ away from $\vec p=0$. Its two eigenvalues are $2iE/c$ and $0$. The second coefficient vanishes, so the spectral writing has one term, but the **basis still exists**: the zero eigenvalue has a two-dimensional eigenspace, and the element's component along it is zero. The mode is present in the basis and absent from the element. The physical interpretation is a massless particle with one live light-cone mode; the zero mode is a genuine spectral direction, not a failure of the decomposition.
+- **$\Sigma_{01}$: a null element with distinct eigenvalues.** A massless four-momentum has $N=0$ and $B^2=\lvert\vec p\rvert^2\neq0$ away from $\vec p=0$. Its two eigenvalues are $2iE/c$ and $0$. The second coefficient vanishes, so only one term of the two-term writing survives, but the **basis still exists**: the zero eigenvalue has a two-dimensional eigenspace, and the element's component along it is zero. The mode is present in the basis and absent from the element. The physical interpretation is a massless particle with one live light-cone mode; the zero mode is a genuine spectral direction, not a failure of the decomposition.
 - **$\Sigma_{10}$: a unit with no mode basis.** A unipotent element has $N=Q_t^2\neq0$ and $B^2=0$. It is invertible, its inverse is $Q_t^{-1}(e_t-\vec\Upsilon)$, and it has no eigenbasis. The physical interpretation is a reversible process with a defective mode; the reversibility is the norm, the defect is the spectrum, and neither implies the other.
 
 **Interpretation.** *Having a mode basis* and *being reversible* are independent properties. The first is spectral, the second is the norm. The generic element has both; the massless element has the first without the second; the unipotent element has the second without the first; the nilpotent has neither.
@@ -336,7 +336,7 @@ On the cone the two eigenvalues have coalesced at $Q_t$, the complex structure i
 | --- | --- | --- | --- | --- | --- | --- |
 | **scalar** | $\vec Q=0$ | $Q_te_t$ | $X-Q_t$ | iff $Q_t\neq0$ | $4$, or $0$ at the origin | pure rate; rest frame; trivial observable |
 | **nilpotent** | $\vec Q\neq0$, $Q_t=0$ | $\vec N$, $\vec N^2=0$ | $X^2$ | no | $2$ | null field; null shift; zero-frequency coupling |
-| **unipotent** | $\vec Q\neq0$, $Q_t\neq0$ | $Q_t e_t+\vec\Upsilon$, $\vec\Upsilon^2=0$ | $(X-Q_t)^2$ | yes | $4$ | defective resonance; locked modes; reversible non-normal |
+| **unipotent** | $\vec Q\neq0$, $Q_t\neq0$ | $Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$ | $(X-Q_t)^2$ | yes | $4$ | defective resonance; locked modes; reversible non-normal |
 
 **Interpretation.** The three strata are not three degrees of one phenomenon. They are the three normal forms of a nilpotent perturbation of a scalar: no perturbation ($N=0$), a perturbation with no scalar ($Q_t=0$), and a perturbation carried by a scalar ($Q_t\neq0$). The scalar line is the vertex of the cone; the nilpotent stratum is the zero-frequency subcone; the unipotent stratum is the generic part of the cone. The physical names follow the same division: a pure rate, a pure shift, and a rate with a shift.
 
@@ -348,7 +348,7 @@ $$
 e^{\theta\tilde Q}=e^{\theta Q_t}\left(e_t+\theta\vec N\right),
 $$
 
-which is the dual-number exponential $e^{a+b\varepsilon}=e^a(1+b\varepsilon)$ in the algebra generated by $\vec N$, with $\varepsilon=\vec N$ and $b=\theta$. Its character has nilpotent deviation from the identity and does not oscillate; the model is the dual-number transform of *Dual Numbers Harmonic Analysis*, not the oscillatory Fourier transform. The three normal forms are the three degenerate characters: the scalar line is the central character $e^{\theta Q_t}$ with no direction; the nilpotent is $e_t+\theta\vec N$, a null translation; the unipotent is $e^{\theta Q_t}(e_t+\theta\vec\Upsilon)$, a scaled null translation, the defective analogue of a character. On the nilpotent and unipotent strata there is no Fourier basis attached to the element; on the scalar line every basis diagonalises the flow, but the element supplies no root and no direction.
+which is the dual-number exponential $e^{a+b\varepsilon}=e^a(1+b\varepsilon)$ in the algebra generated by $\vec N$, with $\varepsilon=\vec N$ and $b=\theta$. Its character has nilpotent deviation from the identity and does not oscillate; the model is the dual-number transform of *Dual-Numbers Harmonic Analysis*, not the oscillatory Fourier transform. The three normal forms are the three degenerate characters: the scalar line is the central character $e^{\theta Q_t}$ with no direction; the nilpotent is $e_t+\theta\vec N$, a null translation; the unipotent is $e^{\theta Q_t}(e_t+\theta\vec\Upsilon)$, a scaled null translation, the defective analogue of a character. On the nilpotent and unipotent strata there is no Fourier basis attached to the element; on the scalar line every basis diagonalises the flow, but the element supplies no root and no direction.
 
 ### The Scalar Line: A Pure Rate
 
@@ -400,7 +400,7 @@ The last identity is the sharp one: the element $\vec N$ is a zero divisor, but 
 
 **Boundary.** The nilpotent is a field strength, not a four-momentum. The physical null momentum is a zero divisor with a non-zero square, an imaginary multiple of a Hermitian idempotent; it is not pure, and it is not a nilpotent. The physical null field has real $\vec E$ and $\vec B$, and its biquaternion representative is complex-pure; that is the slice of the complex nilpotent cone the identification uses, not the whole cone.
 
-**Interpretation 2: a null translation.** The identity $\vec N^2=0$ says that two successive null displacements compose to nothing. The exponential $e_t+\theta\vec N$ is a one-parameter group of unipotent transformations whose generator is a zero divisor. The physical interpretation is a **reversible translation with a non-invertible generator**: the motion can be undone, the velocity cannot be inverted.
+**Interpretation 2: a null translation.** The identity $\vec N^2=0$ says that the displacement is square-zero: the generator applied twice vanishes, so the exponential truncates at first order. The exponential $e_t+\theta\vec N$ is a one-parameter group of unipotent transformations whose generator is a zero divisor. The physical interpretation is a **reversible translation with a non-invertible generator**: the motion can be undone, the velocity cannot be inverted.
 
 **Boundary.** The physical lightlike displacement is real and has $Q_t=ict'\neq0$ and $B=\lvert\vec x\rvert\neq0$ away from the origin; it is spectrally regular, not nilpotent. The nilpotent is the complex isotropic model of a null direction; the two must not be identified. This is the same distinction as *the nilpotent is not a four-momentum*, stated for displacements rather than momenta.
 
@@ -452,11 +452,11 @@ The element is a unit. It has the repeated eigenvalue $Q_t$, the minimal polynom
 
 **Boundary.** The interpretation needs a non-Hermitian description. No Hermitian element and no real-vector element lies on the stratum: for a Hermitian $H$, $B^2=-\lvert\vec h\rvert^2$ vanishes only at $\vec h=0$, which is the scalar line; for a real vector part, $B^2=\lvert\vec Q\rvert^2$ vanishes only at $\vec Q=0$. The stratum is complex.
 
-**Interpretation 3: reversible but not normal.** The element is a unit, so its action can be undone; it is not diagonalisable, so it has no normal form. The physical interpretation is a **reversible process with no reversible normal form**: the inverse exists, and it is defective too, $Q_t^{-1}(e_t-\vec\Upsilon)$. Reversibility is not diagonalisability.
+**Interpretation 3: reversible but not normal.** The element is a unit, so its action can be undone; it is not diagonalisable, so it has no orthogonal eigenbasis. The physical interpretation is a **reversible process with no normal mode basis**: the inverse exists, and it is defective too, $Q_t^{-1}(e_t-\vec\Upsilon)$. Reversibility is not diagonalisability.
 
 **Boundary.** Invertibility is an algebraic property. A physical process described by the element can still be dissipative when the complex scalar $Q_t$ has a real part, and the word *reversible* then refers to the algebraic inverse, not to the thermodynamics of the process.
 
-**Interpretation 4: a null field with an amplitude and a phase.** The scalar $Q_t$ is a complex amplitude and phase; the nilpotent direction $\vec\Upsilon$ is the null polarization. The element is a **null plane wave with an amplitude**: a classical radiation field with a complex scalar prefactor, one eigenvalue, and no rest frame. The nilpotent stratum is the same wave at zero scalar; the unipotent stratum is the wave with its amplitude turned on.
+**Interpretation 4: a null field with an amplitude and a phase.** The scalar $Q_t$ is a complex amplitude and phase; the nilpotent direction $\vec\Upsilon$ is the null polarization. The element is a **null-polarized plane wave with an amplitude**: a classical radiation field with a complex scalar prefactor, one eigenvalue, and no rest frame. The nilpotent stratum is the same wave at zero scalar; the unipotent stratum is the wave with its amplitude turned on.
 
 **Boundary.** The amplitude is a complex scalar, not an intensity; the phase is not a gauge phase; the field is complex-pure plus a scalar, not a general field. The identification of $Q_t$ with an amplitude is an interpretation of the scalar coefficient, not a normalization of the field.
 
@@ -478,9 +478,9 @@ $$
 \mathbb{C}[\tilde Q]=\left\{ae_t+b\vec Q\right\},
 $$
 
-and its only idempotents are $0$ and $e_t$. A two-term spectral decomposition needs two non-trivial orthogonal idempotents summing to $e_t$; there are none. The spectrum is a single number, the one-term writing $\tilde Q=Q_te_t$ exists only on the scalar line, and the Born rule has nothing to project on. On the scalar line the centraliser is the whole algebra, but the element is central: every idempotent commutes with it, and the only spectral idempotent is $e_t$.
+and its only idempotents are $0$ and $e_t$. A two-term spectral decomposition needs two non-trivial orthogonal idempotents summing to $e_t$; there are none. The spectrum is a single number, the one-term writing $\tilde Q=Q_te_t$ exists only on the scalar line, and the Born rule has nothing to project on. On the scalar line the centraliser is the whole algebra, but the element is central: every idempotent commutes with it, and the spectral decomposition is the one-term writing with $e_t$.
 
-The idempotents that do exist are the **Peirce idempotents**
+The idempotents outside the centraliser are the **Peirce idempotents**
 
 $$
 e_b=e+b\vec Q,
@@ -506,7 +506,7 @@ on the unipotent stratum, with $Q_t=0$ on the nilpotent one. The family is affin
 
 **Interpretation.** A defective element does not select a state basis. The Peirce pair $(e_b,f_b)$ is a choice of **polarization** or of **detector**: every choice gives the same element and the same flag, and none is selected by the element. The physical statement is the flag, not the basis. The two-parameter family is the freedom of the polarization frame.
 
-**Boundary.** *No spectral idempotent* does not mean *no idempotent*. The Peirce idempotents exist; they are not spectral idempotents, they do not commute with $\tilde Q$, and they are not states of the element. The pure states are elsewhere: the non-trivial idempotents of the algebra have $N=0$ and $B^2=-\tfrac14$, so they lie on $\Sigma_{01}$, the spectrally regular part of the null cone, not on $\mathcal S$. The spectral cone is not the idempotent locus.
+**Boundary.** *No two-term spectral decomposition* does not mean *no idempotent*. On the defective strata the Peirce idempotents exist; they are not spectral idempotents, they do not commute with $\tilde Q$, and they are not eigenstates of the element. They are nevertheless non-trivial idempotents: every non-trivial idempotent of the algebra has $N=0$ and $B^2=-\tfrac14$, so every one lies on $\Sigma_{01}$, the spectrally regular part of the null cone, not on $\mathcal S$. The Peirce idempotents are pure states of the algebra in this sense, but they are not states of the element. The spectral cone is not the idempotent locus.
 
 ### The Two Sides and the Absence of a Simultaneous Basis
 
@@ -531,14 +531,14 @@ The left action has a two-dimensional eigenspace, the right action has a two-dim
 - **Spectral regularity is the mode picture.** Two distinct eigenvalues, two invariant two-dimensional subspaces, a normal-mode frame, and a unique expansion of every element. The interpretation is a two-mode system with a non-zero complex splitting.
 - **The splitting is the gap.** $\lambda_+-\lambda_-=2iB$. In the Hermitian sector the gap is $2\lvert B\rvert$; in the material sector $B$ is the momentum magnitude; in a normal element with complex $B$ it is a complex half-gap with an orthogonal eigenbasis, in a non-normal element it is a complex half-splitting with biorthogonal modes, and a normal element with real $B$ has a real half-gap and carries its damping in $Q_t$.
 - **The spectrum is the Fourier spectrum.** The eigenvalues are the two character exponents of the flow, the eigenbasis is the Fourier basis of the root $\rho=\vec Q/B$, and $B$ is the rate relative to that root. The regular element supplies the root that the Fourier transform otherwise postulates.
-- **The two-term writing is the mode decomposition.** The element is a sum of two spectral components; the terms are not two particles, two energies or an antiparticle pair. Their sum is twice the scalar part and their product is the norm.
+- **The two-term writing is the mode decomposition.** The element is a sum of two spectral components; the terms are not two particles, two energies or an antiparticle pair. The sum of their coefficients is twice the scalar part and the product of their coefficients is the norm.
 - **The eigenbasis is a frame attached to the element.** The two eigenspaces are unique, and the normalised Peirce vectors are unique; without that normalisation, the vectors inside each eigenspace are a gauge. The frame is not a laboratory frame.
 - **Spectral regularity is not invertibility.** A massless element has a mode basis and is a zero divisor; a unipotent element is a unit and has no mode basis. The two conditions are independent.
 - **The regular set is generic.** The spectral cone is a complex hypersurface of real codimension two; a generic element has a mode basis, and a degeneracy needs two real conditions.
 - **The scalar line is a pure rate.** A central element is a global phase and a scale, a rest frame and a time-only displacement, a trivial observable or the maximally mixed state, and a superselection charge. Every basis is an eigenbasis, and none is preferred.
 - **The nilpotent stratum is a null shift.** A pure isotropic element is a null field, a null translation, a zero-frequency one-way coupling, and a flag. It has no frequency and no eigenbasis.
-- **The unipotent stratum is a rate with a shear.** A non-zero scalar times a null shift is a defective resonance with a secular drift, two coalesced modes with locked hands, a reversible process with no normal form, and a null wave with an amplitude and a phase. It has a generator and no eigenbasis.
-- **The cone has no two-term spectral decomposition.** The only spectral idempotent on it is $e_t$ on the scalar line; elsewhere there is none. The Peirce idempotents are a two-parameter gauge, not a state basis. The pure states lie on the spectrally regular part of the null cone, not on the spectral cone.
+- **The unipotent stratum is a rate with a shear.** A non-zero scalar times a null shift is a defective resonance with a secular drift, two coalesced modes with locked hands, a reversible process with no normal mode basis, and a null wave with an amplitude and a phase. It has a generator and no eigenbasis.
+- **The cone has no two-term spectral decomposition.** The only spectral decomposition on it is the one-term writing with $e_t$ on the scalar line; elsewhere there is none. The Peirce idempotents are a two-parameter gauge, not an eigenbasis. The pure states lie on the spectrally regular part of the null cone, not on the spectral cone.
 - **The cone is the non-oscillating regime.** At $B=0$ the root disappears, the exponential degenerates to the dual-number kernel $e^{\theta Q_t}(e_t+\theta N)$, and the characters have nilpotent deviation: there is no oscillation and no Fourier basis attached to the element.
 - **The defective element has a flag, not a basis.** The left and right actions share only the null line; there is no simultaneous eigenbasis and no biorthogonal mode basis.
 - **The algebra gives normal forms, not dynamics.** The interpretations locate the physical object; they do not supply an equation of motion, a particle content or a mass spectrum.
@@ -555,7 +555,7 @@ The interpretations are sector-dependent. The same element can be read as an obs
 
 The algebra is complex. The real material and informational sectors are slices, and the exceptional points, the nilpotent stratum and the unipotent stratum need complex coefficients. A physical interpretation that requires a real slice cannot use the whole cone.
 
-The cone carries no non-trivial probability rule. There are no two orthogonal spectral idempotents, so the Born rule has nothing to project on; the biorthogonal rule needs $B^2\neq0$. The Peirce idempotents are a gauge, not a measurement.
+The cone carries no non-trivial probability rule. Off the scalar line there are no two orthogonal spectral idempotents, so the Born rule has nothing to project on; on the scalar line every idempotent is spectral, but all outcomes are the same, so the rule is trivial. The biorthogonal rule needs $B^2\neq0$. The Peirce idempotents are a gauge, not a measurement.
 
 *Generic* is an algebraic word. The regular set is open and dense in the algebra, but the cone is physically important: the rest frame, the null field and the exceptional point all lie on it or on its relatives. A thin set is not a negligible set.
 
@@ -566,7 +566,7 @@ The article does not claim that the three strata exhaust the physics of the cone
 - The spectral condition is $B^2=(\vec Q,\vec Q)\neq0$; the eigenvalues are $\lambda_\pm=Q_t\pm iB$, and they coincide exactly when $B^2=0$.
 - The condition is operator-linked: $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $L_{\vec Q}^2=-B^2\,\mathrm{id}$, so the directional part is a complex structure for $B^2\neq0$ and a nilpotent for $B^2=0$.
 - For $B^2\neq0$ there are two invariant two-dimensional subspaces, two distinct complex frequencies, two eigenspaces of dimension two and an eigenbasis.
-- The two-term writing is the mode decomposition; the terms are spectral components, not two particles; their sum is twice the scalar part and their product is the norm.
+- The two-term writing is the mode decomposition; the terms are spectral components, not two particles; the sum of their coefficients is twice the scalar part and the product of their coefficients is the norm.
 - The eigenbasis is unique as a pair of eigenspaces and unique as a normalised Peirce basis; the vectors inside each eigenspace are a gauge.
 - The regular case is the harmonic case: $e^{\theta\tilde Q}=e^{\theta Q_t}W(-\theta,B/2\pi)$ with the root $\rho=\vec Q/B$, the eigenbasis is a root-adapted Fourier basis, and the eigenvalues are the two character exponents of the flow. On the cone there is no root, and the kernel degenerates to the dual-number form $e^{\theta Q_t}(e_t+\theta\vec N)$.
 - The Hermitian norm of the flow separates three independent data: the scalar rate $\operatorname{Re}Q_t$ (damping), the imaginary half-gap $\operatorname{Im}B$ (boost), and the norm deficit $\lVert\rho\rVert_E^2-1$ (non-normality, an amplitude). Non-normality is not a damping mechanism.
@@ -576,8 +576,8 @@ The article does not claim that the three strata exhaust the physics of the cone
 - For $B^2=0$ the operator is $Q_t\,\mathrm{id}+N$ with $N^2=0$, and there are three strata: the scalar line, the nilpotent stratum and the unipotent stratum.
 - The scalar line is a pure rate: a global phase and a scale, a rest frame and a time-only displacement, a trivial observable or the maximally mixed state, and a superselection charge. Every basis is an eigenbasis.
 - The nilpotent stratum is a null shift: a null field, a null translation, a zero-frequency one-way coupling and a flag. It has no frequency and no eigenbasis.
-- The unipotent stratum is a rate with a shear: a defective resonance with a secular drift, two coalesced modes with locked hands, a reversible process with no normal form, and a null wave with an amplitude and a phase. It has a generator and no eigenbasis.
-- The cone has no two-term spectral decomposition; the only spectral idempotent on it is $e_t$ on the scalar line. The Peirce idempotents are a two-parameter gauge, not a state basis; the pure states lie on the spectrally regular part of the null cone.
+- The unipotent stratum is a rate with a shear: a defective resonance with a secular drift, two coalesced modes with locked hands, a reversible process with no normal mode basis, and a null wave with an amplitude and a phase. It has a generator and no eigenbasis.
+- The cone has no two-term spectral decomposition; the only spectral decomposition on it is the one-term writing with $e_t$ on the scalar line. The Peirce idempotents are a two-parameter gauge, not an eigenbasis; the pure states lie on the spectrally regular part of the null cone.
 - The defective element has two flags and one common line, not two bases.
 - The algebra gives normal forms, not dynamics, particle content or a mass spectrum.
 
@@ -619,7 +619,7 @@ The article does not claim that the three strata exhaust the physics of the cone
 - [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html), for the Fourier kernel, the root-adapted basis and the factorization into complex transforms.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as the kernel at negative time, the root supplied by the element, the character exponents, the Hermitian norm of the flow and the exact unitarity criterion.
 - [The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root](../articles_maths/the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html), for the unitarity criterion and the normal/non-normal root.
-- [Dual Numbers Harmonic Analysis](../articles_maths/dual-numbers-harmonic-analysis.html), for the non-oscillating characters of the nilpotent stratum.
+- [Dual-Numbers Harmonic Analysis](../articles_maths/dual-numbers-harmonic-analysis.html), for the non-oscillating characters of the nilpotent stratum.
 - [Harmonic Analysis over Hypercomplex Systems](../articles_maths/harmonic-analysis-over-hypercomplex-systems.html), for the reduction to complex transforms and the degenerate systems.
 - [Derivatives, Fields and Transforms](derivatives-fields-and-transforms.html), for the Fourier transform as a change of description and *the root is the clock*.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the four-momentum as the Doppler pair.

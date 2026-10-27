@@ -2,14 +2,14 @@
 
 ## Introduction
 
-The twelve products of the biquaternion complex space carry four **forms** and no more, and the four forms carry four **algebraic norms**. The form of a product is its scalar part, a function of two elements; the algebraic norm of a form is that form read at its two equal arguments, a function of one. The chain is short and rigid: twelve operations, four scalar parts, four functions of one element. This article reads the chain physically. The four forms are the **sector sign** $\langle\cdot,\cdot\rangle$, the **Born form** $\langle\cdot,\cdot\rangle_{*}$, the **interval** $\langle\cdot,\cdot\rangle_{\natural}$ and the **Krein form** $\langle\cdot,\cdot\rangle_{\natural*}$. They carry the letters $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one. The four algebraic norms are the four sums
+The twelve products of the biquaternion complex space carry four **forms** and no more, and the four forms carry four **algebraic norms**. The form of a product is its scalar part, a function of two elements; the algebraic norm of a form is that form read at its two equal arguments, a function of one. The chain is short and rigid: twelve operations, four scalar parts, four functions of one element. This article reads the chain physically. The four forms are the **sector sign** $\langle\cdot,\cdot\rangle$, the **interval** $\langle\cdot,\cdot\rangle_{\natural}$, the **Born form** $\langle\cdot,\cdot\rangle_{*}$ and the **Krein form** $\langle\cdot,\cdot\rangle_{\natural*}$. They carry the letters $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one. The four algebraic norms are the four sums
 
 $$
 \boxed{\;\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},
 \qquad
-\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2},
-\qquad
 \langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},
+\qquad
+\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2},
 \qquad
 \langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}\;},
 $$
@@ -35,7 +35,7 @@ The article owns no new theorem. Each result is stated in a sentence, the mathem
 
 A form is the **scalar part** of a product. The twelve products split into four general products and their symmetrisations and antisymmetrisations, and the passage to the scalar part collapses them: the symmetrisation of a family keeps the scalar part of the general product, and the antisymmetrisation kills it. Hence the four general products and their four symmetrisations carry the four forms, two operations to a form, and the four antisymmetric operations carry the zero form. Four forms and no more.
 
-The four forms are distinct as functions of two elements. On the pair $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_x+i\vec e_x$ their values are $P=-(1+i)$, $H=1-i$, $N=1+i$ and $K=-(1-i)$, four different complex numbers. Each form is, up to the factor of the trace convention, the trace form of its own product:
+The four forms are distinct as functions of two elements. On the pair $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_x+i\vec e_x$ their values are $P=-(1+i)$, $N=1+i$, $H=1-i$ and $K=-(1-i)$, four different complex numbers. Each form is, up to the factor of the trace convention, the trace form of its own product:
 
 $$
 2\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Tr}(\tilde Q_1\tilde Q_2),
@@ -168,9 +168,9 @@ The four forms are forms over $\mathbb{C}$. Realifying the space is what a compu
 $$
 \boxed{\;(4,4)\ \text{for}\ \langle\cdot,\cdot\rangle,
 \qquad
-(8,0)\ \text{for}\ \langle\cdot,\cdot\rangle_{*},
-\qquad
 (4,4)\ \text{for}\ \langle\cdot,\cdot\rangle_{\natural},
+\qquad
+(8,0)\ \text{for}\ \langle\cdot,\cdot\rangle_{*},
 \qquad
 (2,6)\ \text{for}\ \langle\cdot,\cdot\rangle_{\natural*}\;}.
 $$
@@ -200,7 +200,7 @@ Only the first reading is the mass: $\langle\tilde R\rangle_{\natural}=-m^{2}c^{
 
 The article reads the algebra's own chain: twelve products, four forms, four algebraic norms. The physics is the naming of the four forms and of the four norms, and the naming is a reading, not a theorem. The algebra proves the count, the Gram matrices, the signatures, the null sets, the multiplicativity of $\langle\cdot\rangle_{\natural}$ and the definiteness of $\langle\cdot\rangle_{*}$; it does not prove that these are the four quantities a physical theory evaluates, nor that the four jobs are the only four.
 
-Three levels of signature must be kept apart. The **complex form** has a Gram matrix and a complex rank; its **realification** has a signature over $\mathbb{R}$, and the four are $(4,4)$, $(8,0)$, $(4,4)$ and $(2,6)$; its **restriction** to a sector has a signature of its own, and on the material sector the four are $(0,4)$, $(4,0)$, $(3,1)$ and $(1,3)$. The physical interval is the third level, not the second, and a reader who carries $(4,4)$ into a statement about spacetime has changed the object.
+Three levels of signature must be kept apart. The **complex form** has a Gram matrix and a complex rank; its **realification** has a signature over $\mathbb{R}$, and the four are $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$; its **restriction** to a sector has a signature of its own, and on the material sector the four are $(0,4)$, $(3,1)$, $(4,0)$ and $(1,3)$. The physical interval is the third level, not the second, and a reader who carries $(4,4)$ into a statement about spacetime has changed the object.
 
 Two senses of *norm* must be kept apart. The **algebraic norm** is a map into the ring — $\mathbb{C}$ for the two bilinear forms, $\mathbb{R}$ for the two Hermitian ones — and it is algebra. The **topological norm** is the one selection of positive real values, $\lVert\tilde Q\rVert_E=(\langle\tilde Q\rangle_{*})^{1/2}$, and it is topology. Only the Hermitian form yields the second; the other three are algebraic norms and give no distance. A norm is not a distance until a square root is taken and a positivity is declared.
 
@@ -225,10 +225,10 @@ Only the $N$ cut is the invertibility partition. A degenerate biquaternion is no
 - The four forms are the sector sign $\langle\cdot,\cdot\rangle$ written $P$, the interval $\langle\cdot,\cdot\rangle_{\natural}$ written $N$, the Born form $\langle\cdot,\cdot\rangle_{*}$ written $H$ and the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ written $K$, with Gram matrices $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.
 - A $\Phi$-regular biquaternion has $\Phi(\tilde Q)\neq0$ and a $\Phi$-degenerate one has $\Phi(\tilde Q)=0$; only the $N$ cut is the invertibility partition, $N$-regular being the unit group and $N$-degenerate the null cone, the origin together with the zero divisors.
 - The second slot decides the symmetry and the reality of the algebraic norm; the first slot decides the Gram matrix and the signature.
-- The four algebraic norms are $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$, $\sum_\mu Q_\mu^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$.
+- The four algebraic norms are $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$.
 - $\langle\cdot\rangle_{*}$ is the definite one, and its square root is the unique topological norm; $\langle\cdot\rangle_{\natural}$ is the multiplicative one, the quaternionic norm and the criterion of invertibility.
 - No function is both definite and multiplicative: the zero divisors forbid it, and the failure is the failure of the biquaternions to be a normed division algebra.
-- On the material sector the forms are $(0,4)$, $(4,0)$, $(3,1)$ and $(1,3)$; on the informational sector they are $(4,0)$, $(4,0)$, $(1,3)$ and $(1,3)$.
+- On the material sector the forms are $(0,4)$, $(3,1)$, $(4,0)$ and $(1,3)$; on the informational sector they are $(4,0)$, $(1,3)$, $(4,0)$ and $(1,3)$.
 - The Born form is minus the sector sign on the material sector and the sector sign on the informational one; the Krein form is minus the interval on the material sector and the interval on the informational one.
 - The interval's level sets are the mass shells on the material sector, its zero set cut by the sector is the light cone, and its zero set on the algebra is the zero-divisor cone; the Krein cone is a different cone, of one more real dimension.
 - On the real part the four forms collapse to two and the twelve products to ten; the count of twelve is a count over $\mathbb{C}$.
