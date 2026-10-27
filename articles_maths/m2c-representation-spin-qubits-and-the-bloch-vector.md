@@ -4,11 +4,11 @@
 
 The $2\times2$ model is the smallest matrix picture of the algebra, and it is the one in which the Hermitian subspace becomes the algebra of observables of a two-state system. Three objects carry the correspondence: the three Hermitian basis matrices $\mathsf M_2(i\vec e_k)=\sigma_k$; the trace-one Hermitian elements, which are the states; and the three traces against the basis matrices, which are the coordinates of a state in the Bloch ball.
 
-This article develops the dictionary. It states the spin operators and their algebra, the pure states as the rank-one Hermitian idempotents on the null cone, the general state and its Bloch vector, and the measurement formulae that read the vector back off the matrix. It proves the identities in the matrix model and leaves their physical interpretation to *The $M_2(\mathbb{C})$ Representation: The Pauli Correspondence*, which reads the same identities physically and states what they do not claim.
+This article develops the dictionary. It states the spin operators and their algebra, the pure states as the rank-one Hermitian idempotents on the null cone, the general state and its Bloch vector, and the measurement formulae that read the vector back off the matrix. It proves the identities in the matrix model and leaves their physical interpretation to *The Pauli Correspondence and the Matrix Image*, which reads the same identities physically and states what they do not claim.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*: $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\mathsf M_2(e_t)=\mathrm I_2$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, the scalar part is $Q_t=\tfrac12\operatorname{Tr}\mathsf M_2(\tilde Q)$, and the quaternionic norm is $N=\det\mathsf M_2(\tilde Q)$. The Hermitian subspace is $\mathbb M_+$ and the anti-Hermitian subspace is $\mathbb M_-$. A state is written $\tilde{\varrho}$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb R^3$.
 
-**Boundaries.** The Born pairing and the Hilbert structure of the spinor module are *The Spinor Module and Its Two Structures*; the mixedness and phase-fibre interpretations of the same matrices are *The Matrix Images: Mixedness, Rapidity and the Phase Fibre*; the state geometry as a slice of the light cone is *The Bloch Ball as the Normalised Slice of the Future Light Cone*; the pure states as idempotents are *Roots, Idempotents and Observables*; the spectral projectors of a general element are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
+**Boundaries.** The Born pairing and the Hilbert structure of the spinor module are *Spin and the Two State Spaces*; the mixedness and phase-fibre interpretations of the same matrices are *The Pauli Correspondence and the Matrix Image*; the state geometry as a slice of the light cone is *The Bloch Ball as the Normalised Slice of the Future Light Cone*; the pure states as idempotents are *Roots, Idempotents and Observables*; the spectral projectors of a general element are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
 
 ## The Hermitian Basis
 
@@ -239,7 +239,7 @@ $$
 \operatorname{Tr}\bigl(\rho\,\mathsf M_2(\tilde H)\bigr)=h_t+\vec r\cdot\vec h ,
 $$
 
-which is the affine function of the state determined by the four numbers $(h_t,\vec h)$. The Born pairing of *The Spinor Module and Its Two Structures* is the same identity written with the state idempotent.
+which is the affine function of the state determined by the four numbers $(h_t,\vec h)$. The Born pairing of *Spin and the Two State Spaces* is the same identity written with the state idempotent.
 
 ## The Qubit as a Spinor
 
@@ -257,7 +257,7 @@ $$
 r_k=\xi^{\dagger}\sigma_k\xi .
 $$
 
-The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the minimal left ideal $\mathbb B\tilde\Pi_+$, and the module structure that makes it a Hilbert space is the second structure of *The Spinor Module and Its Two Structures*.
+The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the minimal left ideal $\mathbb B\tilde\Pi_+$, and the module structure that makes it a Hilbert space is the second structure of *Spin and the Two State Spaces*.
 
 **The mixed case.** A general state is a convex combination of pure ones,
 
@@ -268,7 +268,7 @@ $$
 
 and the Bloch vector is the corresponding convex combination of the pure Bloch vectors. The ball is the convex hull of the sphere, which is the matrix form of the statement that every state is a mixture.
 
-**The phase.** The central phase $e^{i\alpha}e_t$ acts on the spinor by multiplication and on the algebra by the identity sandwich. It is a scalar matrix, it multiplies $\rho$ by $e^{i\alpha}$ and does not preserve the trace-one slice; the physical state is the ray, and the circle of phases over each pure state is the fibre of *The Matrix Images: Mixedness, Rapidity and the Phase Fibre*. This article records the matrix identity and adds no topology.
+**The phase.** The central phase $e^{i\alpha}e_t$ acts on the spinor by multiplication and on the algebra by the identity sandwich. It is a scalar matrix, it multiplies $\rho$ by $e^{i\alpha}$ and does not preserve the trace-one slice; the physical state is the ray, and the circle of phases over each pure state is the fibre of *The Pauli Correspondence and the Matrix Image*. This article records the matrix identity and adds no topology.
 
 ## Where the Correspondence Stops
 
@@ -302,8 +302,7 @@ The Hermitian units of the algebra map to the Pauli matrices, $\mathsf M_2(i\vec
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the null cone and its two strata
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant as the norm
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the trace pairing
-- [The $M_2(\mathbb{C})$ Representation: The Pauli Correspondence](../articles_physics/the-m2c-representation-and-the-pauli-correspondence.html), for the physical interpretation of these identities
-- [The Spinor Module and Its Two Structures](../articles_physics/the-spinor-module-and-its-two-structures.html), for the Hilbert structure of the module
-- [The Matrix Images: Mixedness, Rapidity and the Phase Fibre](../articles_physics/the-matrix-images-mixedness-rapidity-and-the-phase-fibre.html), for the phase fibre and the mixedness reading
+- [The Pauli Correspondence and the Matrix Image](../articles_physics/the-m2c-representation-and-the-pauli-correspondence.html), for the physical interpretation of these identities
+- [Spin and the Two State Spaces](../articles_physics/spin-and-the-two-state-spaces.html), for the Hilbert structure of the module
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](../articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the state geometry
 - G. B. Folland, *Quantum Field Theory: A Tourist Guide for Mathematicians* (AMS, 2008), for the Pauli and Bloch conventions.

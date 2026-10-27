@@ -383,7 +383,7 @@ S_-=\mathbb{B}\tilde\Pi'=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi',
 \mathbb{B}=S_+\oplus S_- .
 $$
 
-On each chirality, left multiplication by $\tilde Q$ has the matrix $\operatorname{diag}(c,0)$; right multiplication is $c$ on $S_+$ and $0$ on $S_-$. The zero eigenvalue is a value on a component, not a missing direction. This is the specialisation to $\Sigma_{01}$ of the spinorial reading of *The N-Degenerate, Spectrally Regular Sector*, §*Spinors and Chirality*.
+On each chirality, left multiplication by $\tilde Q$ has the matrix $\operatorname{diag}(c,0)$; right multiplication is $c$ on $S_+$ and $0$ on $S_-$. The zero eigenvalue is a value on a component, not a missing direction. This is the specialisation to $\Sigma_{01}$ of the spinorial reading of *The N-Degenerate, Spectrally Regular Sector*, §*Spinors and Chirality*. The reading is spinorial in the module sense, not in the little-group sense: the generator is a scaled projection rather than a rotor or a boost, so there is no half-angle to read and the half-angle theorem of the regular sector does not apply.
 
 In the matrix model the two slots are the singular vectors $u$ and $v$. The left multiplication $L_{\tilde Q}$ writes on the left slot $u$ and reads the right covector $v^{\dagger}$; the right multiplication reads the $u$-component and writes on the $v$-slot. The one-sided operator sees the complex overlap $v^{\dagger}u=Q_t/a$. Its eigenvalue is $c=2a\,v^{\dagger}u$, twice. The modulus of the overlap is $\cos\theta=1/\sqrt{\kappa}$; the phase of the overlap is the phase of $c$. The sandwich of the companion article sees only the squared modulus $\cos^{2}\theta$; this is the precise form of the one-sided/two-sided contrast in this sector.
 

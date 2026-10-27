@@ -228,7 +228,7 @@ Read as a whole, the table is a dictionary between the algebra's rank straticati
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the theorem, the uniqueness and the domain.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the rank-one case and the partial isometry.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone and the square root.
-- [The Three Polar Factors of a Biquaternion: Frame, Mass and State](the-three-polar-factors-of-a-biquaternion-frame-mass-and-state.html), for the comparison of the three first factors.
+- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the comparison of the three first factors.
 - [The Polar Decomposition of a Kraus Operator](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the measurement reading of the three strata.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the state space and the Born rule.
 - [The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html), for the modular operator and the Tomita–Takesaki conjugation.

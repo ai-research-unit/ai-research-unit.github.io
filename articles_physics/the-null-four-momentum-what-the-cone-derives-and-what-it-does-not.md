@@ -160,6 +160,8 @@ This is what makes the identification "the photon's four-momentum is a zero divi
 
 The spectrum makes the same point. The eigenvalues are $2Q_t=2iE/c$ and $0$. They are distinct, so the element is semisimple and has two eigenprojections; the vanishing eigenvalue is the massless condition $E=c\lvert\vec p\rvert$ read spectrally. A nonzero nilpotent is the opposite case: its two eigenvalues coincide at zero and it has no pair of nonzero eigenprojections. The null momentum is therefore on the idempotent stratum of the cone and not on the nilpotent stratum. The eigenpair of the massive momentum, its two null components and their limits are read in *The Spectral Reading of a Four-Vector*.
 
+The one-parameter group $\exp(s\tilde P)$ multiplies one spectral component by the phase $\exp(2iEs/c)$ and fixes the other. That is a phase action, not a rotation and not a spinor action. The spin of a massless particle is carried by the little-group representation, not by the exponential of its momentum.
+
 ### What this gives and what it does not
 
 What it gives is a genuine structural coincidence: the algebra's non-invertible elements in the material sector are in one-to-one correspondence with the Hermitian idempotents of the informational sector, up to a scale. The cone of the material sector is the scaled image of the idempotent sphere of the informational sector. That is a strong internal linkage between the two sectors, and it is derived.

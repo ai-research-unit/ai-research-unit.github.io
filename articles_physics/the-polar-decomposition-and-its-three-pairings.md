@@ -11,7 +11,7 @@ $$
 
 The four factors carry $1+1+3+3=8$ real parameters, the real dimension of the algebra. The word is a change of coordinates on the complement of the zero-divisor cone, not a dynamical decomposition: it says what an element is at one instant and not how it evolves.
 
-The article is the hub of the polar programme. It fixes the word, brackets it in the three ways the corpus uses, compares the bracketings, and records what each factor does to the remarkable subspaces. The detail now lives in three synthesis articles: *The Three Polar Factors* compares the three first factors, *The Cartan Pairing, the Amplitude and the Operator-to-State Map* develops the amplitude–phase reading, and *The Hamilton Pairing: Mass as Modulus and the Complex Angle* develops the invariant and the complex angle. The hub states the grammar once and links.
+The article is the hub of the polar programme. It fixes the word, brackets it in the three ways the corpus uses, compares the bracketings, and records what each factor does to the remarkable subspaces. The detail now lives in two synthesis articles: *The Cartan Pairing, the Amplitude and the Operator-to-State Map* develops the amplitude–phase reading, and *The Hamilton Pairing: Mass as Modulus and the Complex Angle* develops the invariant and the complex angle. The comparison of the three first factors is stated below, in §*The Three Factors Compared*.
 
 Two distinctions organise the article and are worth naming at the start. A **pairing** is a bracketing of the four-factor product into two factors; a **split** is a direct-sum decomposition of the algebra as a vector space. The corpus has three of each, and the two threes are not the same three. §*The Three Splits* separates them.
 
@@ -91,7 +91,7 @@ $$
 \exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\;}.
 $$
 
-The modulus is an ordinary quaternion in its polar form, and it is the spatial frame. The exponent has scalar part $\alpha$ and pure part $\tfrac{\psi_w}{2}\vec u_{\mathrm b,2}$, with the boost axis rotated by the rotor. The reading is developed in *The Three Polar Factors*, §*The Quaternion Factor*.
+The modulus is an ordinary quaternion in its polar form, and it is the spatial frame. The exponent has scalar part $\alpha$ and pure part $\tfrac{\psi_w}{2}\vec u_{\mathrm b,2}$, with the boost axis rotated by the rotor. The reading is the frame: the rotor carries the reference axes to the axes of the element, and $r$ is the scale at which the frame is taken. §*The Three Factors Compared* states it with the other two.
 
 ### The Hamilton Pairing
 
@@ -119,6 +119,50 @@ $$
 The first factor is the amplitude, the part that changes norms and not phases; the second is the phase, the part that preserves the inner product. The state reading is developed in *The Cartan Pairing, the Amplitude and the Operator-to-State Map*.
 
 The Cartan pairing has the widest construction domain, the quaternion pairing the most direct electromagnetic reading, and the Hamilton pairing the most direct Lorentz-group reading. None is more fundamental than the others, and none adds information to the four-factor word.
+
+## The Three Factors Compared
+
+The three pairings have three first factors, and the comparison is the synthesis that the separate articles used to carry.
+
+| pairing | first factor | type | real dimension | the question it answers |
+| --- | --- | --- | --- | --- |
+| quaternion | $\tilde q=r\tilde u_{\mathrm r}$ | real quaternion, norm $r^{2}$ | $4$ | what is the spatial frame? |
+| Hamilton | $\Rho=r e^{i\alpha}$ | central complex scalar | $2$ | what is the invariant? |
+| Cartan | $\tilde H=r\tilde U_{\mathrm b}$ | Hermitian positive, $\det=r^{2}$ | $4$ | what is the state amplitude? |
+
+The three factors have three different types. Two of them are not scalars. Only $\Rho$ is central. The real dimensions add to $10$, not to $8$:
+
+$$
+4+2+4=10=8+2.
+$$
+
+The redundancy is exactly the scale $r$, which appears in all three factors. Each factor is a partial description that includes the scale and adds one structural datum: the rotor, the phase, or the boost. The three together are three summaries of the same eight numbers, each shaped for a different question. This is the precise sense in which the pairings are readings and not decompositions.
+
+| factor | determined by | blind to |
+| --- | --- | --- |
+| $\tilde q=r\tilde u_{\mathrm r}$ | $r$, the rotation angle and axis | the phase $\alpha$, the rapidity $\psi_w$, the boost axis |
+| $\Rho=r e^{i\alpha}$ | $r$, the phase | the rotation, the boost, both axes |
+| $\tilde H=r\tilde U_{\mathrm b}$ | $r$, the rapidity, the boost axis | the phase, the rotation angle and axis |
+
+The factors are three **products**, not three terms:
+
+$$
+\tilde Q=\tilde q\,e^{i\tilde\Psi}
+=\Rho\,e^{\tilde U\Theta}
+=\tilde H\,\tilde U.
+$$
+
+There is no sense in which $\tilde Q=\tilde q+\Rho+\tilde H$. Each identity is the whole element, written three times. No conservation law attaches to a factor, no factor is a field, and no factor evolves on its own: the polar factors of $\tilde Q(t)$ depend on $t$ through $\tilde Q(t)$.
+
+The three questions and their readings are:
+
+| question | factor | reading | the object where the reading is sharpest |
+| --- | --- | --- | --- |
+| what frame? | $\tilde q=r\tilde u_{\mathrm r}$ | the spatial orientation and the scale of the frame | a rotation, a rigid body, a polarization frame |
+| what invariant? | $\Rho=r e^{i\alpha}$ | the mass of a four-momentum, or the invariant amplitude | a particle, a scattering element |
+| what state? | $\tilde H=r\tilde U_{\mathrm b}$ | the positive amplitude of the state $\tilde H^{2}$ | a Kraus operator, a Jones matrix, a state preparation |
+
+The readings are compatible because they read one element. A scattering element has a Cartan factor that gives the state it prepares, a Hamilton modulus that gives its invariant size, and a quaternion factor that gives the frame in which its spin is described. The three descriptions are not three measurements and do not compete.
 
 ## The Three Splits
 
@@ -219,6 +263,8 @@ The pairings read the same data under different headings, and the readings are d
 - The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$; the Hamilton pairing is $\tilde Q=\Rho(\cos\Theta+\vec\Xi\sin\Theta)$; the Cartan pairing is $\tilde Q=\tilde H\tilde U$.
 - The three pairings are the three bracketings of the four-factor word; none adds information to it.
 - The three first factors have three types — a real quaternion, a central complex scalar, a Hermitian positive element — and only the Hamilton factor is a scalar.
+- The three factors carry $4+2+4=10$ real numbers for an eight-dimensional element; the redundancy is the scale, which all three contain.
+- The factors are three products of the same element, not three terms; none is conserved, none is a field, and none evolves on its own.
 - The domains are not nested: $i\vec e_x+i\vec e_y$ has no quaternion construction, $e_t+\vec e_x+i\vec e_y$ has no Hamilton pairing, and $e_t+i\vec e_x$ needs the generalized Cartan form.
 - The algebra has three splits — real/imaginary, Hermitian/anti-Hermitian, scalar/vector — and they are not the three pairings.
 - The Cartan factors are not the two sectors; only their logarithms lie in $\mathbb{M}_\pm$.
@@ -251,7 +297,6 @@ The pairings read the same data under different headings, and the readings are d
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the complex axis-angle.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the amplitude–phase split.
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html), for the sector action, the cross-term signs and the preservation table.
-- [The Three Polar Factors of a Biquaternion: Frame, Mass and State](the-three-polar-factors-of-a-biquaternion-frame-mass-and-state.html), for the type-by-type comparison of the three first factors.
 - [The Cartan Pairing, the Amplitude and the Operator-to-State Map](the-cartan-pairing-amplitude-and-the-operator-to-state-map.html), for the state defined by an operator and the modular reading.
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass shell and the complex angle.
 - [The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers](the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.html), for the Cartan pair as diattenuator and retarder, and the polarizer as its cone case.

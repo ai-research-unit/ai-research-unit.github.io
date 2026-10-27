@@ -249,7 +249,7 @@ The reading that changes the theory most is the identification of the modulus wi
 - [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the theorem, the domain and the roots of one.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, the eigenprojections and the multiplicativity of the norm.
 - [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and the branch of the modulus.
-- [The Three Polar Factors of a Biquaternion: Frame, Mass and State](the-three-polar-factors-of-a-biquaternion-frame-mass-and-state.html), for the comparison with the quaternion and Cartan first factors.
+- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the comparison with the quaternion and Cartan first factors.
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the mass shell and the eigenvalues of a four-momentum.
 - [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the mass as a modulus and the isospectral family.
 - [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), §*The Four Objects Called a Boost*, for the rapidity conventions and the factor of two.

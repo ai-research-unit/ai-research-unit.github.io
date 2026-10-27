@@ -95,6 +95,8 @@ $$
 
 Each was obtained by applying $\tfrac12\mathrm{ad}_{i\vec e_k}$ to the basis units and reading the coefficients of $\vec e_x,\vec e_y,\vec e_z$, and the matrices agree with the standard spin-one representation in the Cartesian basis. They are Hermitian and traceless, and the trace vanishing is the statement that the weights of the triplet sum to zero. The deeper distinction between integer and half-integer spin is visible in the weight set itself: for integer $s$ the weights are $-s,\dots,0,\dots,s$ and include $m=0$, so the multiplet dimension $2s+1$ is odd and the minimal polynomial of $J_3$ has odd degree; for half-integer $s$ the weights are $\pm\tfrac12,\pm\tfrac32,\dots$, no weight vanishes, and the dimension is even. The adjoint action produces only the first case, because its representation space is a subspace of the algebra and the algebra is built from integer weights.
 
+The factor $\tfrac12$ in $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ is the Hermitian normalisation, not a half-angle. Since $\mathrm{ad}_{\vec e_k}$ acts as $v\mapsto2\vec e_k\times v$, the factor $2$ cancels it and the weights of the adjoint action are integers. The half-angle belongs to the one-sided exponent of a unit rotor, not to this generator.
+
 ## The Spin-One Multiplet and Its Weight Basis
 
 ### Diagonalizing the Third Generator

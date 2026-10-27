@@ -1369,6 +1369,7 @@ The table compares the elementary functions across the three algebras; in the bi
 
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenprojectors*, for the eigenvalues, the eigenprojections and the pure root $\vec\Xi$; §*The Eigenvalue Formula* of this article, for the parity-matched lattice used there.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a biquaternion Fourier kernel, the root supplied by the element, the character exponents and the Hermitian norm of the flow.
+- [The Photon in Biquaternionic Form](../articles_physics/the-photon-in-biquaternionic-form.html), for the null translation as a shear, the gauge orbit along which it moves, and the helicity of the massless field.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of the quaternion exponential and logarithm.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), Chapter 3, for the elementary functions of biquaternions.
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the exponential of complexified quaternions.

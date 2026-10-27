@@ -444,7 +444,7 @@ $$
 
 a unipotent Lorentz flow of Jordan type $2+1+1$. It fixes the kernel hyperplane and shears along the single chain. The generator $\Theta_{\tilde Q}$ is singular; the one-parameter group it generates is invertible.
 
-The one-sided exponential of the companion article is a unipotent shear of the operator space, not a Lorentz transformation. The two-sided exponential is a unipotent Lorentz flow; the difference is the same as in the regular sector, where the one-sided operator acts on spinors and the sandwich acts on the vector side.
+The one-sided exponential of the companion article is a unipotent shear of the operator space, not a Lorentz transformation. The two-sided exponential is a unipotent Lorentz flow. The difference is the same as in the regular sector, at the level of the slots: the one-sided operator reads one slot and the sandwich pairs two. The analogy stops there. In the regular sector the one-sided slot carries the half-angle $\theta/2$; here there is no angle to halve, and the one-sided exponential is unipotent.
 
 ## Worked Example
 

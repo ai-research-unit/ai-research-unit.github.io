@@ -15,7 +15,7 @@ $$
 In the Peirce basis, $\Sigma_k=\operatorname{diag}(\sigma_k,\sigma_k)$; in the fixed coefficient basis the block form is conjugated by $S$.
 The Hermitian subspace is $\mathbb{M}_+$. A state is written $\tilde\varrho$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb{R}^3$.
 
-**Boundaries.** The two spinor planes are *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the spectral projectors are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the physical reading is *The $M_2(\mathbb{C})$ Representation: The Pauli Correspondence*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
+**Boundaries.** The two spinor planes are *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the spectral projectors are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the physical reading is *The Pauli Correspondence and the Matrix Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
 
 ## The Hermitian Basis
 
@@ -215,7 +215,7 @@ More generally, for a Hermitian observable $\tilde H=h_t e_t+i\vec h$ the expect
 $$
 \operatorname{Tr}\bigl(\rho_4\,\mathsf M_4(\tilde H)\bigr)=h_t+\vec r\cdot\vec h,
 $$
-which is the affine function of the state determined by the four numbers $(h_t,\vec h)$. The Born pairing of *The Spinor Module and Its Two Structures* is the same identity written with the state idempotent, and the doubling cancels because both copies carry the same state.
+which is the affine function of the state determined by the four numbers $(h_t,\vec h)$. The Born pairing of *Spin and the Two State Spaces* is the same identity written with the state idempotent, and the doubling cancels because both copies carry the same state.
 
 ## The Qubit as a Spinor
 
@@ -228,7 +228,7 @@ a rank-two projector with Bloch vector
 $$
 r_k=\xi^{\dagger}\sigma_k\xi.
 $$
-The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the minimal left ideal $\mathbb B\tilde\Pi_+$, and the module structure that makes it a Hilbert space is the second structure of *The Spinor Module and Its Two Structures*.
+The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the minimal left ideal $\mathbb B\tilde\Pi_+$, and the module structure that makes it a Hilbert space is the second structure of *Spin and the Two State Spaces*.
 
 **The mixed case.** A general state is a convex combination of pure ones,
 $$
@@ -243,7 +243,7 @@ S^3\longrightarrow S^2,\qquad \xi\longmapsto\vec r
 $$
 is the Hopf fibration, with fibre $S^1$; in the regular model the total space is the diagonal $S^3$ inside $S^3\times S^3$, and the base sphere and the fibre are the same. The left action preserves each copy and the right action mixes them, so the two copies give the two chiralities of *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
-**The copy label.** The doubled spinor is not a spinor of the four-level system: it is two copies of the same spinor, and the state is the product of the maximally mixed copy label with the algebraic state. The phase circle over each pure state is the fibre of *The Matrix Images: Mixedness, Rapidity and the Phase Fibre*.
+**The copy label.** The doubled spinor is not a spinor of the four-level system: it is two copies of the same spinor, and the state is the product of the maximally mixed copy label with the algebraic state. The phase circle over each pure state is the fibre of *The Pauli Correspondence and the Matrix Image*.
 
 ## Where the Correspondence Stops
 
@@ -275,5 +275,5 @@ The Hermitian basis of the regular image is $\mathrm I_4$ and the three Pauli ma
 - [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two copies
 - [$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors
 - [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m2c-representation-spin-qubits-and-the-bloch-vector.html), for the $2\times2$ version
-- [The Spinor Module and Its Two Structures](../articles_physics/the-spinor-module-and-its-two-structures.html), for the spinor
-- [The $M_2(\mathbb{C})$ Representation: The Pauli Correspondence](../articles_physics/the-m2c-representation-and-the-pauli-correspondence.html), for the physical reading
+- [Spin and the Two State Spaces](../articles_physics/spin-and-the-two-state-spaces.html), for the spinor
+- [The Pauli Correspondence and the Matrix Image](../articles_physics/the-m2c-representation-and-the-pauli-correspondence.html), for the physical reading
