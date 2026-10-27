@@ -162,7 +162,7 @@ The three questions and their readings are:
 | --- | --- | --- | --- |
 | what frame? | $\tilde q=r\tilde u_{\mathrm r}$ | the spatial orientation and the scale of the frame | a rotation, a rigid body, a polarization frame |
 | what invariant? | $\Rho=r e^{i\alpha}$ | the mass of a four-momentum, or the invariant amplitude | a particle, a scattering element |
-| what state? | $\tilde H=r\tilde U_{\mathrm b}$ | the positive amplitude of the state $\tilde H^{2}$ | a Kraus operator, a Jones matrix, a state preparation |
+| what state? | $\tilde H=r\tilde U_{\mathrm b}$ | the positive amplitude whose normalised square is the state | a Kraus operator, a Jones matrix, a state preparation |
 
 The readings are compatible because they read one element. A scattering element has a Cartan factor that gives the state it prepares, a Hamilton modulus that gives its invariant size, and a quaternion factor that gives the frame in which its spin is described. The three descriptions are not three measurements and do not compete.
 
@@ -190,10 +190,10 @@ The four factors act by four different operations, and the table records which s
 | --- | --- | --- |
 | scale $r$ | dilation by $r^2$ | all six |
 | phase $\exp(i\alpha)$ | multiplication by the scalar | centre, vector space |
-| boost $\tilde U_{\mathrm b}$ | congruence | centre, $\mathbb{M}_+$, $\mathbb{M}_-$ |
+| boost $\tilde U_{\mathrm b}$ | congruence | $\mathbb{M}_+$, $\mathbb{M}_-$ |
 | rotor $\tilde u_{\mathrm r}$ | conjugation | all six |
 
-The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector space $\operatorname{Vect}(\mathbb{B})$, the real quaternion space $\mathbb{H}_{\mathbb{B}}$, the imaginary quaternion space $i\mathbb{H}_{\mathbb{B}}$, and the two sectors $\mathbb{M}_\pm$. Apart from the centre, no subspace is preserved by all four factors, and that is why no single subspace characterises the word.
+The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector space $\operatorname{Vect}(\mathbb{B})$, the real quaternion space $\mathbb{H}_{\mathbb{B}}$, the imaginary quaternion space $i\mathbb{H}_{\mathbb{B}}$, and the two sectors $\mathbb{M}_\pm$. No subspace is preserved by all four factors, and that is why no single subspace characterises the word.
 
 On the material sector the boost reads
 
@@ -269,8 +269,8 @@ The pairings read the same data under different headings, and the readings are d
 - The factors are three products of the same element, not three terms; none is conserved, none is a field, and none evolves on its own.
 - The domains are not nested: $i\vec e_x+i\vec e_y$ has no quaternion construction, $e_t+\vec e_x+i\vec e_y$ has no Hamilton pairing, and $e_t+i\vec e_x$ needs the generalized Cartan form.
 - The algebra has three splits — real/imaginary, Hermitian/anti-Hermitian, scalar/vector — and they are not the three pairings.
-- The Cartan factors are not the two sectors; only their logarithms lie in $\mathbb{M}_\pm$.
-- The scale and the rotor preserve all six remarkable subspaces, the phase preserves the centre and the vector space, and the boost preserves the centre and the two sectors.
+- The Cartan factors do not split one per sector: $\tilde H$ is Hermitian and lies in $\mathbb{M}_+$, $\tilde U$ is unitary and not in $\mathbb{M}_-$, and $\ln\tilde H$ and $\ln\tilde U$ lie in the two sectors.
+- The scale and the rotor preserve all six remarkable subspaces, the phase preserves the centre and the vector space, and the boost preserves the two sectors and moves the centre.
 - A four-vector transforms by the congruence and a spinor by the left multiplication; the first is bilinear in the spinor, the second linear.
 
 ## Summary of Notation

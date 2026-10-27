@@ -29,7 +29,7 @@ The mathematics is proved in *The Spectrum* and *The Eigenbasis of a Spectrally 
 | The unitary character and the root criterion | [The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root](../articles_maths/the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html), §*Unitarity of the Character and the Root* |
 | The degenerate characters and the non-oscillating transform | [Dual-Numbers Harmonic Analysis](../articles_maths/dual-numbers-harmonic-analysis.html), §*The Dual Characters* and §*The Structure of the Transform* |
 
-The table is the contract: every physical statement below is an interpretation of a result in one of these rows. The physics companions are *The Spectral Reading of a Four-Vector*, *Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum*, *The Zero-Divisor Cone and the Massless Spectrum*, *Nilpotents and Fermions*, *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* and *The Exponential, the Logarithm and the Generator*; they are linked where their interpretations are used, and this article does not repeat them.
+The table is the contract: every physical statement below is an interpretation of a result in one of these rows. The physics companions are *The Spectral Reading of a Four-Vector*, *Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum*, *The Zero-Divisor Cone and the Massless Spectrum*, *The Square-Zero Element*, *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* and *The Exponential, the Logarithm and the Generator*; they are linked where their interpretations are used, and this article does not repeat them.
 
 ## The Spectral Condition
 
@@ -426,7 +426,7 @@ The line has no canonical complement, so there is no canonical pair of complemen
 
 **Boundary.** A flag is not a basis. A basis can be chosen by adding a complement, but the complement is a gauge; the physical content of the element is the flag.
 
-**Interpretation 5: a fermionic mode.** A pair of nilpotents with anticommutator $e_t$ is the one-site fermionic ladder; the square-zero property is the exclusion principle at the level of one mode. The physical interpretation is a **mode**, not a field. The details are in *Nilpotents and Fermions*; this article uses the interpretation only to locate the stratum.
+**Interpretation 5: a fermionic mode.** A pair of nilpotents with anticommutator $e_t$ is the one-site fermionic ladder; the square-zero property is the exclusion principle at the level of one mode. The physical interpretation is a **mode**, not a field. The details are in *The Square-Zero Element*; this article uses the interpretation only to locate the stratum.
 
 **Boundary.** The algebra supplies the mode and the local corner, not the field, the lattice, the dynamics or the physical null momentum.
 
@@ -625,7 +625,7 @@ The article does not claim that the three strata exhaust the physics of the cone
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the four-momentum as the Doppler pair.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the defective strata as exceptional points and the $\sqrt{\epsilon}$ law.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the null cone, the massless spectrum and the null field.
-- [Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit](nilpotents-and-fermions-modes-lattices-and-the-semiclassical-limit.html), for the nilpotent as a fermionic mode.
+- [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html), for the nilpotent as a fermionic mode and the nine interpretations.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the non-normal mode basis on the regular set.
 - [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the generator of a defective but reversible process.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material-sector dictionary and the rest frame.

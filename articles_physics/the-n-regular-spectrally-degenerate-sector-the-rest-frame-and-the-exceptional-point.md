@@ -108,7 +108,7 @@ The **rest frame** is therefore the scalar line. The reading has three parts.
 
 - **One frequency.** The two light-cone frequencies coincide; the spectral splitting, which is twice the momentum, vanishes. There is no beat and no preferred null pair.
 - **No preferred axis.** Every direction is an eigenaxis, because the element is central. The two-term writing is not unique: every complementary pair of idempotents gives the same element. The rest frame is the only frame in which the momentum has no preferred axis.
-- **A global phase and a scale.** The central element commutes with everything; it acts as a scalar on every module. The phase $e^{i\theta}$ is unobservable, and the modulus is the mass. The rest frame carries the rest frequency, not an orientation.
+- **A global phase and a scale.** The central element commutes with everything and acts as a scalar on every module. Its modulus is the mass; its phase is the causal label of the material sector, fixed to $i$ on the positive-energy timelike slice. Read on a state module, the same central phase multiplies every component and is unobservable on rays. The rest frame carries the rest frequency, not an orientation.
 
 The scalar line is the boundary of the two-mode cell. A massive particle in motion approaches it as $\vec p\to0$; the two eigenvalues coalesce, the two-term writing becomes non-unique, and the direction $\vec p/\lvert\vec p\rvert$ is lost. The limit is continuous in the element and discontinuous in the frame: the element has a limit, the eigenbasis does not.
 
@@ -147,11 +147,11 @@ The inverse exists, and it is again in the Jordan part. The element is a unit, b
 
 ### The Physics
 
-The physical reading of the Jordan part is the **exceptional point**. If the element is read as the operator $L_{\tilde Q}$ on the algebra, then at $B=0$ with $\vec Q\neq0$ two eigenvalues and two eigendirections have coalesced: the operator is defective, the eigenbasis has collapsed, and a perturbation needs a Jordan chain. The reading is the algebraic form of the exceptional point of a non-Hermitian operator.
+The physical reading of the Jordan part is the **exceptional point**. Read as the $2\times2$ element, the two eigenvalues and the two eigendirections have coalesced into one eigenvalue and one eigendirection: the element is a single Jordan block. Read as the operator $L_{\tilde Q}$ on the algebra, the four eigendirections of the generic case collapse to a two-dimensional eigenspace, and $L_{\tilde Q}$ has two Jordan blocks; the eigenbasis has disappeared, and a perturbation needs a Jordan chain. The reading is the algebraic form of the exceptional point of a non-Hermitian operator.
 
 Three consequences follow, and each is a reading of a theorem.
 
-- **Coalesced modes.** The two eigenvalues are equal and the two eigendirections have merged. The operator cannot be diagonalised, and the response to a perturbation is not a sum of two exponentials but a term linear in the parameter times the exponential.
+- **Coalesced modes.** The two eigenvalues are equal and the two eigendirections of the element have merged. The element and $L_{\tilde Q}$ cannot be diagonalised, and the response to a perturbation is not a sum of two exponentials but a term linear in the parameter times the exponential.
 - **A shear.** The element is a scale times a unipotent, $Q_t e_t+\vec\Upsilon=Q_t(e_t+\vec\Upsilon/Q_t)$ with $(\vec\Upsilon/Q_t)^2=0$. The unipotent is a null rotation of the frame: it preserves the flag and moves along it. The reading is a rate with a shear, not a rate with a direction.
 - **A double pole.** The inverse $\tilde Q^{-1}=Q_t^{-1}e_t-Q_t^{-2}\vec\Upsilon$ has a double pole in $Q_t$. In a propagator or a resolvent, the double pole is the signature of a defective mode; the residue is not a projector but a projector plus a nilpotent.
 
@@ -191,18 +191,18 @@ $$
 
 The scalar line is closed under products and lies in the cell. The Jordan part is closed under powers: the square of $Q_t e_t+\vec\Upsilon$ is $Q_t^2 e_t+2Q_t\vec\Upsilon$, which is again Jordan. A product of two Jordan elements with different nilpotent directions can leave the cell and land in $\Sigma_{11}$; the norm stays non-zero, so the product never reaches the null cone.
 
-The boundary of the cell is its intersection with the null cone, $\Sigma_{00}$, and the interior boundary between the two regimes is the scalar line. The cell is the boundary of the two-mode cell $\Sigma_{11}$ at $B=0$: a path in $\Sigma_{11}$ that reaches $B=0$ lands here.
+The boundary of the cell inside the spectral cone is the null-cone intersection $\Sigma_{00}$, which the cell does not contain; the interior boundary between the two regimes is the scalar line. The cell is the boundary of the two-mode cell $\Sigma_{11}$ at $B=0$: a path in $\Sigma_{11}$ that reaches $B=0$ lands here.
 
 ## Physical Interpretations
 
 - **The scalar line is the rest frame.** A massive momentum at rest has $Q_t=imc$ and $\vec p=0$. The two light-cone frequencies coincide, the two-term writing is not unique, and no axis is preferred. The rest frame is the only real momentum with one mode.
-- **The central element is a global phase and a scale.** It commutes with the algebra, acts as a scalar on every module, and carries no orientation. The phase is unobservable and the modulus is the mass.
-- **The Jordan part is the exceptional point.** Two eigenvalues and two eigendirections have coalesced; the operator is defective; the eigenbasis has collapsed; a perturbation needs a Jordan chain.
+- **The central element is a global phase and a scale.** It commutes with the algebra, acts as a scalar on every module, and carries no orientation. Its modulus is the mass; its phase is the causal label on the material sector, and on a state module it is the unobservable global phase.
+- **The Jordan part is the exceptional point.** The element has a single eigenvalue and a single eigendirection; $L_{\tilde Q}$ is defective, its eigenbasis has collapsed, and a perturbation needs a Jordan chain.
 - **The unipotent is a shear.** The element is a scale times a null rotation. It preserves the flag and moves along it; the reading is a rate with a shear, not a rate with a direction.
 - **The double pole is the defective response.** The inverse has a double pole in the scalar part; in a resolvent or a propagator, the double pole is the signature of a coalesced mode.
 - **The beat stops and the rate remains.** The cell has one frequency; there is no oscillation between two modes, but there is still a global phase and a one-parameter group.
 - **The cell is the boundary of the two-mode regime.** A massive particle in motion approaches the rest frame as $\vec p\to0$; the element has a limit, the eigenbasis does not.
-- **No Peirce decomposition, only a flag.** On the Jordan part there is no pair of non-trivial idempotents attached to the element, no spectral decomposition and no eigenbasis. The closest structure is a flag, and the flag is a gauge.
+- **No Peirce decomposition, only a flag.** On the Jordan part there is no pair of non-trivial idempotents attached to the element, no spectral decomposition and no eigenbasis. The closest structure is a flag; the flag is the invariant, and only the scale of its vector is a gauge.
 
 ## Limits
 

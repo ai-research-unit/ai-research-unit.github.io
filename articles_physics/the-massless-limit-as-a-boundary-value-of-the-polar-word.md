@@ -196,7 +196,7 @@ $$
 =2i\frac{E}{c}\,\tilde\Pi(-\vec u_p)\;},
 $$
 
-with $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ the Hermitian minimal idempotent along the direction of motion. The limit is an imaginary multiple of a Hermitian idempotent: a null four-momentum, not a nilpotent.
+with $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ the Hermitian minimal idempotent along the direction opposite to the motion. The limit is an imaginary multiple of a Hermitian idempotent: a null four-momentum, not a nilpotent.
 
 | Quantity | Massive | Massless limit |
 | --- | --- | --- |
@@ -209,11 +209,11 @@ with $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ the Hermitian minimal idempo
 
 **The defect is of order $m^2$.** The approach to the boundary is $O(e^{-2\psi})=O(m^2c^4/E^2)$ at fixed energy. The massive momentum itself carries the same order in its algebraic defect, $\tilde P^2=2P_t\tilde P+m^2c^2e_t$, so the massless relation $\tilde P^2=2P_t\tilde P$ is the boundary identity and the mass term is the defect. The two statements are of the same order in the mass; they are not the same statement, one being a defect of the element and the other a defect of the path.
 
-**The idempotent stratum is larger than the null momenta.** A general boundary value in the first row of the stratum table is a complex multiple of a minimal idempotent, not necessarily a Hermitian one. The physical null momenta are the anti-Hermitian slice of that stratum: $L^{*}=-L$ requires $\tau$ purely imaginary, which the data above satisfy. The identification of the stratum with the photon is therefore an identification of one slice, not of the whole stratum.
+**The idempotent stratum is larger than the null momenta.** A general boundary value in the first row of the stratum table is a complex multiple of a minimal idempotent, not necessarily a Hermitian one. The physical null momenta are the anti-Hermitian slice of that stratum: for the Hermitian representative, $L^{*}=-L$ requires $\tau$ purely imaginary, which the data above satisfy. The identification of the stratum with the photon is therefore an identification of one slice, not of the whole stratum.
 
 ## The Path Dependence
 
-The limit depends on the path, and the dependence is not a technicality. Two families with the same scale $R$ and the same phase $\zeta$ but different asymptotic rotors reach different points of the cone:
+The limit depends on the path, and the dependence is not a technicality. Two families with the same scale $R$ and the same phase $\zeta$ but different asymptotic rotors reach different points of the cone for generic rotors:
 
 $$
 L_1=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r,1},
@@ -221,12 +221,12 @@ L_1=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r,1},
 L_2=\frac{R\zeta}{2}\left(e_t+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r,2},
 $$
 
-and $L_1\neq L_2$ whenever $\tilde u_{\mathrm r,1}\neq\tilde u_{\mathrm r,2}$. A path along which the boost axis turns reaches the point determined by its asymptotic axis, not by the axis at any finite parameter. The map from paths to points of the cone is therefore not injective, and the cone is not the graph of a function over the units.
+and $L_1\neq L_2$ unless the rotors differ by the stabiliser of the idempotent. A path along which the boost axis turns reaches the point determined by its asymptotic axis, not by the axis at any finite parameter. The map from paths to points of the cone is therefore not injective, and the cone is not the graph of a function over the units.
 
 Three consequences follow.
 
 1. **The boundary value is a function of the germ of the path at infinity.** It is fixed by the limiting values of $\zeta$, $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$, and by the limiting product $r e^{\psi/2}$. It is not fixed by the element at any finite $\psi$.
-2. **The word has no continuous extension to the cone.** A continuous extension would assign one value to each point of the cone independently of the path. No such assignment exists, because two paths with the same endpoint in the parameter space can have different asymptotic data.
+2. **The word has no continuous extension to the cone.** A continuous extension would assign one set of word data to each point of the cone independently of the path. No such assignment exists: two paths with the same endpoint on the cone can have different asymptotic data, because the factorization of the limit into a scale, a phase, a boost axis and a rotor is not unique.
 3. **The two strata can be reached from the same neighbourhood.** A rotor with $a-ib\neq0$ and a rotor with $a=b=0$ are both limits of unit rotors, so an arbitrarily small change of the path can move the boundary value from one stratum to the other. The stratum is stable under a small change of the path that keeps $a-ib$ away from zero; near the surface $a=b=0$ it is not.
 
 The physical reading of the path dependence is that the massless limit is not a property of the massive element alone. It is a property of the massive element together with the direction in which the limit is taken, and the direction is the physical input: which axis the boost is taken along, and which polarization the rotor carries.
@@ -298,7 +298,7 @@ For the material momentum the data are $r=mc$, $\zeta=i$, $\vec u_{\mathrm b}=-\
 | $\tilde u_{\mathrm r}=a e_t+b\vec u_{\mathrm b}+\tilde u_\perp$ | the rotor in the frame of the boost |
 | $\tau=2\operatorname{Sc}L=R\zeta(a-ib)$ | the scale of the idempotent, $L^2=\tau L$ |
 | $\tilde P=i\frac{E}{c}e_t+\vec p$ | the material four-momentum |
-| $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ | the Hermitian minimal idempotent along the motion |
+| $\tilde\Pi(-\vec u_p)=\tfrac12(e_t-i\vec u_p)$ | the Hermitian minimal idempotent opposite the motion |
 | $\psi_w=2\psi$ | the word rapidity of the momentum against its Lorentz rapidity |
 
 ## Further Reading

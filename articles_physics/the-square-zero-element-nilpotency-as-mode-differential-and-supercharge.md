@@ -12,27 +12,27 @@ The purpose of this article is to state what separates these objects. The equati
 
 Two further objects complete the list. The **Grassmann label** multiplies rather than acts, and has no module, no vacuum and no cohomology; its square-zero is the truncation of the exterior algebra. The **chiral corner** is the local Pauli ladder of a Dirac symbol at a node, not a global operator; its square-zero is the two-level ladder at the crossing. One object is excluded: the **physical null momentum**, which lies on the same cone as the nilpotent but is a zero divisor with a nonzero square.
 
-The article's new content is not a new physical result. It is the classification, and three distinctions that the separate articles do not state together. The first is the distinction between the two $\mathbb{Z}/2$ gradings in play: the **Clifford parity**, which is trivial on $\mathbb{B}=\mathrm{Cl}^0_{1,3}$, and the **occupation parity**, which is the inner automorphism by $(-1)^F=i\vec e_z$ and is nontrivial on $\mathbb{B}$. The one-mode ladder is even in the first and odd in the second; "fermionic" names the second, not the first. The second is the distinction between the two anticommutators: the mode's is the identity, a number, and the supercharge's is the Hamiltonian, an operator. The same algebra with a different right-hand side has a different physics. The third is the distinction between the three pairings of the square: the mode's anticommutator splits the identity into the two rungs; the supercharge's is the Hamiltonian, whose kernel is the zero-mode space; the differential has no such pairing at all, and its cohomology is the whole content.
+The article's new content is not a new physical result. It is the classification, the three distinctions that the separate articles do not state together, and the nine interpretations collected under it. The first distinction is between the two $\mathbb{Z}/2$ gradings in play: the **Clifford parity**, which is trivial on $\mathbb{B}=\mathrm{Cl}^0_{1,3}$, and the **occupation parity**, which is the inner automorphism by $(-1)^F=i\vec e_z$ and is nontrivial on $\mathbb{B}$. The one-mode ladder is even in the first and odd in the second; "fermionic" names the second, not the first. The second is the distinction between the two anticommutators: the mode's is the identity, a number, and the supercharge's is the Hamiltonian, an operator. The same algebra with a different right-hand side has a different physics. The third is the distinction between the three pairings of the square: the mode's anticommutator splits the identity into the two rungs; the supercharge's is the Hamiltonian, whose kernel is the zero-mode space; the differential has no such pairing at all, and its cohomology is the whole content.
 
-The mode's algebra, its lattice interpretations and its semiclassical limit are the subject of *Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit*; this article refers to that treatment and does not repeat it.
+The same nilpotent carries the lattice and semiclassical interpretations: the null point of a band symbol, the paired zero of a lattice symbol, the vanishing phase gradient at a turning point, and the cone as the degenerate end of a contraction. Those are not a fourth role. Each uses the mode or the corner, and they are collected in §*The Nine Interpretations*, each with its boundary.
 
-The article is organised as follows. The results it borrows are stated with their sources. The equation and the three questions are then set out, with the two-term complex that every nilpotent defines. The three principal roles follow, one section each, and then the two boundary objects and the excluded case. The gradings are collected in one table, the taxonomy in another, and the closing sections state what the classification buys, what it does not claim, and the open questions it inherits.
+The article is organised as follows. The results it borrows are stated with their sources. The equation and the three questions are then set out, with the nilpotent cone and the two-term complex that every nilpotent defines. The three principal roles follow, one section each; then the two boundary objects, the excluded case and the nine interpretations. The gradings are collected in one table, the taxonomy in a second and the interpretations in a third, and the closing sections state what the classification buys, what it does not claim, and the open questions it inherits.
 
 ## The Results It Uses
 
 **The conventions.** The notation, the Clifford dictionary and the sector splitting are those of *Conventions in the Biquaternion Universe*; the algebra and its two sectors are those of *Introduction to the Biquaternion Universe*, *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*.
 
-**The algebra.** The one-mode canonical anticommutation relations in $\mathbb{B}$, the pair $\vec\Upsilon_x,\vec\Upsilon_y$, the rungs $\tilde\Pi_\pm$, the inner parity $(-1)^F=i\vec e_z$, the capacity count and the bosonic obstruction are those of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the vacuum idempotent, its zero-divisor property and the Peirce corner at the vacuum are those of *The Biquaternion Vacuum as a Minimal Idempotent*; the Peirce decomposition, the matrix units and the Peirce coordinates are those of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra* and *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
+**The algebra.** The one-mode canonical anticommutation relations in $\mathbb{B}$, the pair $\vec\Upsilon_x,\vec\Upsilon_y$, the rungs $\tilde\Pi_\pm$, the inner parity $(-1)^F=i\vec e_z$, the capacity count and the bosonic obstruction are those of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the roots of $+1$, the idempotents and the halving map are those of *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the vacuum idempotent, its zero-divisor property and the Peirce corner at the vacuum are those of *The Biquaternion Vacuum as a Minimal Idempotent*; the Peirce decomposition, the matrix units and the Peirce coordinates are those of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra* and *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
-**The cone.** The classification of the nilpotent cone, the pure condition, the index-two property and the distinction from the physical null momentum are those of *Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit* and *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the zero-divisor cone, its topology and its massless interpretation are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, *The Zero-Divisor Cone and the Massless Spectrum*, *The Topology of the Zero-Divisor Cone* and *The Light Cone as the Biquaternion Zero-Divisor Cone*.
+**The cone.** The classification of the nilpotent cone, the pure condition, the index-two property and the distinction from the physical null momentum are those of *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the rank-one matrix model is that of *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the root sets across the twelve products are those of *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the zero-divisor cone, its topology and its massless interpretation are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, *The Zero-Divisor Cone and the Massless Spectrum*, *The Topology of the Zero-Divisor Cone* and *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 
 **The differential.** The BRST transformation, the ghost fields, the Grassmann envelope, the nilpotency $s^2=0$ inherited from associativity and the Jacobi identity, the ghost-number grading, the cohomological characterization of the physical states and the Kugo–Ojima quartet are those of *BRST Symmetry in Biquaternionic Form*.
 
 **The supercharge.** The algebra $\{Q,Q^\dagger\}=H$, $Q^2=0$, the partner spectra, the zero modes, the Witten index, the biquaternion Dirac operator $\mathcal{D}=Q+Q^\dagger$ with $\mathcal{D}^2=\Box$, chirality as the grading, the mass pair and the superpotential are those of *Supersymmetric Quantum Physics in the Biquaternion Framework*; the statement that an odd supercharge is an element of the ambient graded algebra and never an element of $\mathbb{B}$ is that of *The Superalgebra Reading and the Odd Extension with Signed Inner Conjugation in Biquaternionic Form*; the several gradings and the warning against conflating them are those of *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form*.
 
-**The label and the corner.** The Grassmann algebra as the minimal odd extension, Berezin integration and the fermionic coherent states are those of *Grassmann Coherent States in Biquaternionic Form*; the exact one-mode Wick theorem is that of *The Wick Theorem in Biquaternionic Form*; the Jordan–Wigner square root and its string are those of *The Jordan–Wigner Transformation in Biquaternionic Form*; the Dirac points, the chiral blocks and the topological nodes are those of *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form* and *Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form*; the index-two ceiling and the qutrit outside the algebra are those of *The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra*.
+**The label, the corner and the interpretations.** The Grassmann algebra as the minimal odd extension, Berezin integration and the fermionic coherent states are those of *Grassmann Coherent States in Biquaternionic Form*; the exact one-mode Wick theorem is that of *The Wick Theorem in Biquaternionic Form*; the Jordan–Wigner square root and its string are those of *The Jordan–Wigner Transformation in Biquaternionic Form*; the Dirac points, the chiral blocks and the topological nodes are those of *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form* and *Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form*; the index-two ceiling and the qutrit outside the algebra are those of *The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra*; the hole-theory interpretation is that of *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*; and the WKB phase gradient and the squeezing contraction are those of *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* and *Squeezing Beyond the Biquaternion Algebra*.
 
-Nothing in this article re-derives those results. What it adds is the comparison.
+Nothing in this article re-derives those results. The coordinate computation of §*The Nilpotent Cone* is the elementary form of the classification, and the rest of the article adds the comparison and the nine interpretations.
 
 ## The Equation and the Three Questions
 
@@ -67,6 +67,29 @@ H^0=\ker X,\qquad H^1=M/\mathrm{im}\,X .
 $$
 
 The dimension of $H^0$ is the number of closed states; the dimension of $H^1$ counts the states modulo the exact ones. Their difference is the index of the complex, the graded count that the roles below use. The mode is this minimal case. A graded complex replaces $M$ by a direct sum of graded pieces and $X$ by maps between adjacent pieces; the supercharge and the BRST differential are graded complexes of this kind, and their cohomology is read degree by degree. The two-term formulas are the local model for each degree. The roles that have a complex are readings of these two spaces, degree by degree, and the differences between the roles are differences in what supplies the splitting of $M$ and in which grading is imposed on the cohomology.
+
+### The Nilpotent Cone
+
+Write a general element as $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients. The square is
+
+$$
+\tilde Q^2=\bigl(Q_t^2-(\vec Q,\vec Q)\bigr)e_t+2Q_t\vec Q,
+\qquad
+(\vec Q,\vec Q)=Q_x^2+Q_y^2+Q_z^2 .
+$$
+
+The equation $\tilde Q^2=0$ splits into $2Q_t\vec Q=0$ and $Q_t^2=(\vec Q,\vec Q)$. The scalar branch returns $\tilde Q=0$. The nonzero branch has $Q_t=0$ and $(\vec Q,\vec Q)=0$: the nilpotent is a pure element with an isotropic complex vector part. The set is the **nilpotent cone**, of complex dimension two and real dimension four, inside the six-real-dimensional zero-divisor cone. In this algebra every nilpotent has index two, so $\vec\Upsilon^3=0$ exactly when $\vec\Upsilon^2=0$, and no nilpotent is an idempotent; the two classes meet only at the origin. In the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.
+
+The pure condition is what separates the nilpotent from the rest of the cone. An element of the cone with a nonzero scalar part is a complex multiple of a non-trivial idempotent; it is a zero divisor but not a nilpotent. The nilpotent is the part of the cone that is also pure. The table places the three nearby objects beside it.
+
+| object | equation | where it lives | physical interpretation |
+|---|---|---|---|
+| nilpotent | $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ | pure vector subspace, complex isotropic | one fermionic mode; null symbol; contraction limit |
+| physical null four-momentum | $\langle\tilde P\rangle_{\natural}=0$, $\tilde P^2\neq0$ | material sector $\mathbb{M}_-$ | photon or other massless carrier |
+| idempotent | $\tilde\Pi^2=\tilde\Pi$ | all of $\mathbb{B}$; the Hermitian ones in $\mathbb{M}_+$ | state, rung, vacuum |
+| Grassmann label | $\theta^2=0$ | outside $\mathbb{B}$ | odd label of a coherent state |
+
+The second row is derived in §*The Excluded Case: The Physical Null Momentum*, the third is the rung of §*The Mode*, and the fourth is the label of §*The Label*. The table is a map of the neighbourhood, not a list of nilpotents: only the first row satisfies $X^2=0$.
 
 ### The Three Questions
 
@@ -119,17 +142,17 @@ $$
 \vec\Upsilon_y=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),
 $$
 
-with $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\vec\Upsilon_x^*=\vec\Upsilon_y$. The products $\tilde\Pi_+=\vec\Upsilon_x\vec\Upsilon_y$ and $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$ are orthogonal idempotents summing to $e_t$, and they are the two rungs. In the matrix image $\mathsf M_2(\vec e_k)=-i\sigma_k$,
+with $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\vec\Upsilon_x^*=\vec\Upsilon_y$. The products $\tilde\Pi_+=\vec\Upsilon_x\vec\Upsilon_y$ and $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$ are orthogonal idempotents summing to $e_t$, and they are the two rungs. In the matrix image $\mathsf{M}_2(\vec e_k)=-i\sigma_k$,
 
 $$
-\mathsf M_2(\vec\Upsilon_x)=|0\rangle\langle1|,\qquad
-\mathsf M_2(\vec\Upsilon_y)=|1\rangle\langle0|,\qquad
-\mathsf M_2(i\vec e_z)=\sigma_3,
+\mathsf{M}_2(\vec\Upsilon_x)=|0\rangle\langle1|,\qquad
+\mathsf{M}_2(\vec\Upsilon_y)=|1\rangle\langle0|,\qquad
+\mathsf{M}_2(i\vec e_z)=\sigma_3,
 $$
 
-with $|0\rangle=(1,0)^{\mathsf T}$ and $|1\rangle=(0,1)^{\mathsf T}$. The pair, the rungs, the ladder action and the capacity count are those of *Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit*; the Peirce corners are those of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*. This article restates only what the taxonomy needs and does not repeat their derivation. What the taxonomy adds is the cohomological and grading reading that follows.
+with $|0\rangle=(1,0)^{\mathsf{T}}$ and $|1\rangle=(0,1)^{\mathsf{T}}$. The rungs act on the module as the ladder: $\vec\Upsilon_x\tilde\Pi_-=\vec\Upsilon_x$ and $\vec\Upsilon_y\tilde\Pi_+=\vec\Upsilon_y$, while $\vec\Upsilon_x\tilde\Pi_+=\vec\Upsilon_y\tilde\Pi_-=0$. The Peirce corners are those of *Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra*. The rest of this section is the cohomological and grading reading that the taxonomy adds.
 
-Two constructions in *Nilpotents and Fermions* use the pair without adding a role. The Jordan–Wigner map is the one-site square root extended along a chain, with the nonlocal string as the price of the extension. The exact one-mode Wick theorem is the termination of the contraction expansion, forced by the same square-zero. Neither is a separate row of the taxonomy.
+Two of the nine interpretations, Jordan–Wigner and the exact one-mode Wick theorem, use the pair without adding a role. Neither is a separate row of the taxonomy; both are in §*The Nine Interpretations*.
 
 ### The Two Rungs Are the Cohomology
 
@@ -327,13 +350,105 @@ $$
 H(k)=\begin{pmatrix}0&h(k)\\ h^\dagger(k)&0\end{pmatrix},
 $$
 
-with $h(k)$ the chiral block. At a node $k_0$ the block vanishes, and near it $h(k_0+\delta k)\approx\boldsymbol\sigma\cdot\delta k$. The local ladder is the nilpotent Pauli pair $\sigma_\pm=\tfrac12(\sigma_x\pm i\sigma_y)$, with $\sigma_\pm^2=0$ and $\{\sigma_+,\sigma_-\}=I$. The corner differs from the mode in three ways: the nilpotent is a block on an internal space rather than an element acting on the defining module; the square-zero is a local statement about the symbol and not a dynamics; and the node is a zero of the symbol, not a nilpotent momentum. The graphene interpretation and the Nielsen–Ninomiya pairing are those of *Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit*; the taxonomy uses the corner only as the case of a local ladder with no cohomology.
+with $h(k)$ the chiral block. At a node $k_0$ the block vanishes, and near it $h(k_0+\delta k)\approx\boldsymbol\sigma\cdot\delta k$. The local ladder is the nilpotent Pauli pair $\sigma_\pm=\tfrac12(\sigma_x\pm i\sigma_y)$, with $\sigma_\pm^2=0$ and $\{\sigma_+,\sigma_-\}=I$. The corner differs from the mode in three ways: the nilpotent is a block on an internal space rather than an element acting on the defining module; the square-zero is a local statement about the symbol and not a dynamics; and the node is a zero of the symbol, not a nilpotent momentum. The graphene and Nielsen–Ninomiya interpretations are §*The Nine Interpretations*; the taxonomy uses the corner only as the case of a local ladder with no cohomology.
 
 ## The Excluded Case: The Physical Null Momentum
 
-The object most often confused with the nilpotent is the physical null four-momentum. Write $\tilde P=iP_t e_t+\vec p$ with $P_t^2=\vec p^{\,2}$. Its quaternionic norm vanishes, $\langle\tilde P\rangle_{\natural}=0$, so it lies on the zero-divisor cone; its square does not vanish, $\tilde P^2=2iP_t\tilde P$, and its trace does not vanish, $\mathrm{Tr}\,\tilde P=2iP_t$. (The previous article absorbs the $i$ into its $P_t$ and writes $2P_t\tilde P$.) It is therefore a nonzero multiple of a rank-one idempotent, not a nilpotent. The nilpotent is pure, traceless and similar to $\begin{pmatrix}0&1\\0&0\end{pmatrix}$; the null momentum is similar to a nonzero multiple of $\begin{pmatrix}1&0\\0&0\end{pmatrix}$. The trace, or equivalently the scalar part, separates the two.
+The object most often confused with the nilpotent is the physical null four-momentum. Write $\tilde P=iP_t e_t+\vec p$ with $P_t^2=\vec p^{\,2}$. Its quaternionic norm vanishes, $\langle\tilde P\rangle_{\natural}=0$, so it lies on the zero-divisor cone; its square does not vanish, $\tilde P^2=2iP_t\tilde P$, and its trace does not vanish, $\mathrm{Tr}\,\tilde P=2iP_t$. It is therefore a nonzero multiple of a rank-one idempotent, not a nilpotent. The nilpotent is pure, traceless and similar to $\begin{pmatrix}0&1\\0&0\end{pmatrix}$; the null momentum is similar to a nonzero multiple of $\begin{pmatrix}1&0\\0&0\end{pmatrix}$. The trace, or equivalently the scalar part, separates the two.
 
-The full treatment, with the cone, the norms and the physical interpretation, is that of *Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit*. The taxonomy uses the distinction only as its negative boundary: the equation $X^2=0$ selects the nilpotent, and the cone alone does not.
+The cone and the norms are §*The Nilpotent Cone*; the photon interpretation is that of *The Zero-Divisor Cone and the Massless Spectrum*. The taxonomy uses the distinction only as its negative boundary: the equation $X^2=0$ selects the nilpotent, and the cone alone does not.
+
+## The Nine Interpretations
+
+The nine interpretations below place the object in a mode, a lattice null point, a limit, or a boundary case where the identification fails. Each names the structure it uses and the boundary it does not cross; the taxonomy of the preceding sections is the frame that keeps them apart.
+
+### Dirac's Hole Is Not a Nilpotent
+
+Hole theory fills the negative-energy sea and reads a missing occupation as a hole. The hole is a **difference** from the sea: it carries the quantum numbers that make it an antiparticle of the missing state, and it disappears when the state is refilled. The nilpotent is not that difference. It is the mode operator itself, the object whose square is zero and whose repeated application is impossible.
+
+The modern interpretation makes the distinction sharper. The vacuum is empty, the negative-frequency modes create antiparticles, and no sea is needed. The nilpotent remains the mode; the antiparticle is a state created by the mode, not a square-zero element. The algebra supplies the anticommutation of the modes, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ with $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, and the exclusion principle is its square-zero consequence. The hole, if one keeps the language, is a relational object: a missing rung, not a nilpotent.
+
+**Boundary.** The interpretation does not adjudicate between hole theory and the modern one. It says which algebraic object carries which role. The hole has no square-zero representative in $\mathbb{B}$; the nilpotent has no charge label by itself. A reader who identifies the two will look for a nilpotent with the quantum numbers of a positron and will not find one.
+
+### Jordan–Wigner Is a Choice of Square Root
+
+The one-site spin ladder is already fermionic. The raising and lowering operators of a spin one half are nilpotent, and their anticommutator is the identity. The Jordan–Wigner transformation is the choice of that square root and its extension along a chain. At one site the spin algebra and the fermion algebra are the same algebra, and the map is a relabelling of its generators; the nonlocal string appears only when a second site is added, and it is the branch cut that keeps the square root consistent across the chain.
+
+The algebraic content is therefore one sentence: nilpotency is a one-site fact, and the string is the price of a consistent global choice of square root.
+
+**Boundary.** Jordan–Wigner is an equivalence of algebras on a chain, not a derivation of fermions from spins. The string is a nonlocal rewriting; it changes the locality of the operators, not the spectrum. The algebra supplies the one-site nilpotent, not the chain.
+
+### Grassmann Coherent States Are the Minimal Odd Extension
+
+A fermionic coherent state is written with a Grassmann label $\theta$,
+
+$$
+|\theta\rangle_{*}=|0\rangle+\theta|1\rangle,
+\qquad
+\theta^2=0 .
+$$
+
+The label is odd, and the algebra $\mathbb{B}$ is even. The Grassmann algebra generated by one odd variable per mode is a minimal extension in which the fermionic grading can be written. The states of the original algebra are even; the odd label is a coordinate on the coherent-state manifold, not a state.
+
+**Boundary.** The odd generator is not an element of $\mathbb{B}$. The extension $\mathbb{B}\otimes\Lambda$ is not unique, and the Berezin integral is an extra structure on it. The algebra supplies the even carrier; the odd label is the minimal addition that makes the grading writable.
+
+### The WKB Phase Gradient Avoids the Cone
+
+In the semiclassical approximation the leading-order momentum is the phase gradient, the real quaternion
+
+$$
+\nabla S=\sum_\mu\frac{\partial S}{\partial Q_\mu}\vec e_\mu .
+$$
+
+The Hamilton–Jacobi equation fixes its norm to the energy defect,
+
+$$
+\boxed{\;\langle\nabla S\rangle_{\natural}=2m(E-V)\;}.
+$$
+
+In the classically allowed region this is positive, and the gradient is never a nonzero nilpotent. The cone $\langle\nabla S\rangle_{\natural}=0$ is reached only where $\nabla S=0$, at a turning point: the gradient vanishes, and the origin is not a nilpotent either. A material four-momentum is a different object, since it carries the energy as its imaginary scalar part; its mass shell is not the level set of the phase gradient.
+
+**Boundary.** The statement is about the leading order. Caustics, tunneling and backreaction are outside it. The gradient is not the wavefunction, and the WKB approximation is not exact. The algebra says where the leading-order momentum can live; it does not say that the exact solution stays there.
+
+### The Dirac Point of Graphene Is a Null Momentum
+
+The effective Hamiltonian of graphene near a Dirac point is linear in the momentum, $H=v_F(k_x\sigma_x+k_y\sigma_y)$, and its square is quadratic, $H^2=v_F^2|\vec k|^2I$. The linear branch is the square root of the quadratic symbol. The Dirac point is the apex of the cone, and the gapless excitations around it lie on the null cone $\langle\tilde P\rangle_{\natural}=0$.
+
+In the biquaternion interpretation the physical branch is the **zero-divisor cone**: a null four-momentum is a zero divisor, and the node is its apex. The nilpotent appears in the **chiral block** of the symbol, where the raising and lowering combinations of the Pauli matrices are square-zero; it is the algebraic corner of the branch, not the four-momentum of a particle on it. The Dirac point itself is where the momentum vanishes, and the origin is not a nilpotent.
+
+**Boundary.** The lattice model, the two valleys and the topological protection are input. The algebra supplies the form of the linear branch and the null cone; it does not derive the band structure of graphene. The physical branch is the zero-divisor cone, not the nilpotent cone; the phrase "nilpotent corner" names the algebraic form of the chiral block, not a particle with a nonzero momentum.
+
+### Nielsen–Ninomiya Is a Pairing of Lattice Null Points
+
+On a periodic lattice the zeros of the Bloch symbol are counted by topology. The signed count is the degree of the symbol on the boundary of the Brillouin zone; on a torus the boundary is empty, so the count vanishes and the zeros come in pairs of opposite chirality. A single null point cannot be removed by a local deformation. The nilpotent is the local square-zero corner, and the pairing is the global statement that the corners cannot be unpaired.
+
+**Boundary.** The theorem assumes a local, periodic, finite-range Hamiltonian with a Hermitian symbol. It is a no-go statement, not a construction. The algebra sees the local null symbol; the signed count is a property of the band bundle over the Brillouin zone, not of the algebra alone. A lattice with defects or a boundary can evade the pairing, and the theorem says nothing about that case.
+
+### The Fermionic Wick Theorem Is Exact
+
+For a single nilpotent mode, a product that contains a repeated mode vanishes, because the repeated pair squares to zero. The only nonzero contractions are the two-point ones, and the graph expansion terminates. This is why the fermionic Wick theorem is an exact operator identity for the mode and not an approximation: there is no infinite series of higher contractions to resum.
+
+**Boundary.** The statement is per mode. For a fermionic field the standard Grassmann Wick theorem is exact, but its exactness is a property of the Grassmann algebra, not of $\mathbb{B}$ alone; the single mode is the smallest instance. The algebra's nilpotency supplies the mode, not the Gaussian state or the measure. The theorem is not a substitute for the path integral, and it does not by itself define the vacuum.
+
+### The Ladder Is Capped at Two Rungs
+
+A nilpotent raising operator climbs one step and stops. A complete family of orthogonal idempotents in $\mathbb{B}$ has at most two members, as the pair $\tilde\Pi_\pm$ shows, and no three-level module exists in $\mathbb{B}$. The qutrit is outside the algebra. The cap is the $2\times2$ matrix model: a complex module has dimension two, and three mutually orthogonal rank-one idempotents cannot fit.
+
+**Boundary.** The cap is on the native module, not on composite systems. Two qubits give four levels, and a qutrit can be embedded in $M_3(\mathbb{C})$, but not in $\mathbb{B}$. The algebra says that its own ladder has two rungs; it does not say that nature has only two levels.
+
+### Squeezing Is a Contraction to the Cone
+
+A contraction of the algebra rescales the structure constants and the norm together. In the corpus's example the bracket and the norm degenerate as
+
+$$
+[E_2,E_3]=2\epsilon^2E_1,
+\qquad
+\langle E_2\rangle_{\natural}=\epsilon^2e_t,
+$$
+
+so that at $\epsilon=0$ the elements $E_2$ and $E_3$ are nilpotent and mutually annihilating, the bracket $[E_2,E_3]$ vanishes while $[E_1,E_2]$ and $[E_1,E_3]$ survive, and the basis elements that were invertible are zero divisors. The cone is the limiting locus of the degeneration.
+
+**Boundary.** A contraction is a limit of algebras, not a physical squeezing process. At $\epsilon>0$ the family is a rescaled basis of $\mathbb{B}$; at $\epsilon=0$ the limit algebra is not $\mathbb{B}$, and the cone is a boundary of the family, not a dynamics. No state is squeezed by the algebra; the interpretation explains why the cone is the endpoint, not how a physical system reaches it.
 
 ## The Two Gradings
 
@@ -380,6 +495,22 @@ The table is the article's answer to the question with which it began. The first
 
 The table also explains why the same equation appears five times without the five being the same. $X^2=0$ is the simplest way to have a two-term complex and a two-rung module. The physics chooses which of the two structures to read, and the choice is not in the equation.
 
+## The Interpretations in One Table
+
+The nine interpretations share one algebraic object and divide its roles. The table states the division.
+
+| interpretation | the object it uses | what the algebra supplies | what it does not supply |
+| --- | --- | --- | --- |
+| Dirac's hole | nilpotent mode against the vacuum | exclusion as square-zero composition | the sea, the hole's quantum numbers |
+| Jordan–Wigner | one-site nilpotent | the local square root | the chain and the string |
+| Grassmann coherent states | odd label $\theta$ | the even carrier to be extended | the odd generator, the Berezin integral |
+| WKB | phase gradient | the energy defect as a norm | the approximation, the caustics |
+| graphene | null momentum | the linear branch as a square root | the lattice and the valleys |
+| Nielsen–Ninomiya | null points of the symbol | the local square-zero corner | the global index and its pairing |
+| Wick theorem | one nilpotent mode | termination of the expansion | the Gaussian state |
+| qutrit | two-rung ladder | the cap at two idempotents | composite level counting |
+| squeezing | contraction parameter | the cone as a limit | the physical process |
+
 ## What the Classification Buys
 
 **Three errors it prevents.**
@@ -409,13 +540,15 @@ The article is a taxonomy, not a derivation. It does not derive the BRST transfo
 
 The taxonomy covers the corpus's uses of $X^2=0$; it does not claim to exhaust the mathematical uses of square-zero elements. The de Rham differential, the boundary operator of a chain complex and the Koszul differential are further differentials; they fall under the differential row and add nothing to the classification beyond a further example. The article does not treat them.
 
-The article adds no dynamics, no mass, no coupling, no lattice and no empirical prediction. The physical interpretations it compares are the corpus's, and the comparison does not make them more or less empirical.
+The article adds no dynamics, no mass, no coupling and no empirical prediction. It gives the nilpotent, the ladder and the pairing, but no field content: a field is a collection of modes, and the qutrit is outside $\mathbb{B}$. The lattice interpretations are topological and model-dependent; the algebra is not a lattice. The WKB interpretation is leading order; the exact solution, the caustics and the tunneling lie outside it. The contraction is a limit, not a process. The physical interpretations it compares are the corpus's, and the comparison does not make them more or less empirical. The sharpest limit is the distinction of §*The Excluded Case: The Physical Null Momentum*: the physical null momentum is a zero divisor with a nonzero square, and the nilpotent is a pure displacement with a zero square.
 
 ## Summary
 
 A nilpotent is a nonzero element with $X^2=0$. The equation is one, and the corpus's uses of it are five: the one-mode ladder of $\mathbb{B}$, the BRST differential, the supersymmetric supercharge, the Grassmann label and the chiral corner. A sixth object, the physical null momentum, is a zero divisor with a nonzero square and is not a nilpotent.
 
 The classification is fixed by three questions. What does $X$ act on? A module, a complex, a Hilbert space, or nothing. Which grading is $X$ odd under? The occupation parity, the ghost number, the chirality, the exterior degree, or none. What is $X$ paired with? The identity, the Hamiltonian, nothing, or nothing at all.
+
+The nilpotent itself is necessarily pure with an isotropic complex vector part: the nilpotent cone is of complex dimension two and real dimension four, inside the six-real-dimensional zero-divisor cone, and every nilpotent has index two. In the matrix model it is a nonzero trace-free singular matrix. The pure condition separates it from the other zero divisors, which are nonzero multiples of idempotents.
 
 The mode is an element of $\mathbb{B}$ acting on the defining module, odd under the inner parity $(-1)^F=i\vec e_z$, and paired with its adjoint by $\{X,X^*\}=e_t$. Its two rungs represent the two cohomology spaces of the two-term complex, its index is zero, and its content is the splitting of the identity into $\tilde\Pi_+$ and $\tilde\Pi_-$. The algebra carries exactly one mode: $m$ modes generate $M_{2^m}(\mathbb{C})$, dimension $4^m$, which exceeds four for $m\ge2$; every nonzero nilpotent of $\mathbb{B}$ has index two, so no three-level ladder exists inside it.
 
@@ -426,6 +559,8 @@ The supercharge is an odd operator on a graded Hilbert space, with $Q^2=0$ and $
 The Grassmann label multiplies rather than acts; it is an odd extension, adjoined in $\mathbb{B}\otimes\Lambda$, and two independent generators with a nonzero product have no faithful representation in $\mathbb{B}$. The chiral corner is the local ladder $\sigma_\pm$ of a chiral symbol at a node; the node is a null point of the symbol, not a nilpotent momentum.
 
 The physical null momentum, $\tilde P=iP_t e_t+\vec p$ with $P_t^2=\vec p^{\,2}$, has $\langle\tilde P\rangle_{\natural}=0$ but $\tilde P^2=2iP_t\tilde P\ne0$ and trace $2iP_t\ne0$; it is a multiple of a rank-one idempotent. The trace separates it from the nilpotent.
+
+The nine interpretations use the object as a mode, a lattice null point and a limit: the Dirac hole as a difference and not a nilpotent, Jordan–Wigner as a one-site square root with the string as its branch cut, the Grassmann coherent state as the minimal odd extension, the WKB phase gradient off the cone, the graphene Dirac point as a null momentum with the nilpotent as its chiral corner, Nielsen–Ninomiya as the topological pairing of lattice zeros, the exact one-mode Wick theorem, the two-rung cap that puts the qutrit outside the algebra, and squeezing as a contraction to the cone.
 
 The two $\mathbb{Z}/2$ gradings in play are the Clifford parity, trivial on the algebra, and the occupation parity, the inner automorphism by $i\vec e_z$. The ladder is even in the first and odd in the second; "fermionic" names the second. The sector splitting $\mathbb{M}_+\oplus\mathbb{M}_-$ is not an algebra grading; the number grading lives on the Fock space; the chirality grading lives on the Dirac module.
 
@@ -438,6 +573,9 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | biquaternion algebra |
 | $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_k^2=-e_t$ |
 | $\mathbb{M}_\pm$ | Hermitian (informational) and anti-Hermitian (material) sectors |
+| $\vec\Upsilon$ | a pure nilpotent, $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ |
+| $\tilde\Pi$ | an idempotent, $\tilde\Pi^2=\tilde\Pi$ |
+| $\langle\tilde Q\rangle_{\natural}$ | the natural norm $\sum_\mu Q_\mu^2$ |
 | $a,a^\dagger$ | the abstract one-mode annihilation and creation operators; $a=\vec\Upsilon_x$, $a^\dagger=\vec\Upsilon_y$ |
 | $\vec\Upsilon_x,\vec\Upsilon_y$ | the canonical nilpotent pair, $\tfrac12(i\vec e_x-\vec e_y)$ and $\tfrac12(i\vec e_x+\vec e_y)$ |
 | $\tilde\Pi_\pm$ | the two rungs, $\tfrac12(e_t\pm i\vec e_z)$ |
@@ -471,3 +609,4 @@ The classification is a map, not a derivation. It adds no physics, and it leaves
 - Alexander Altland and Ben Simons, *Condensed Matter Field Theory* (Cambridge University Press, 2nd ed. 2010), for the two-band models, the Dirac points and the Nielsen–Ninomiya pairing.
 - Mikio Nakahara, *Geometry, Topology and Physics* (IOP, 2nd ed. 2003), for the de Rham and Koszul differentials and the cohomological reading of square-zero operators.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. II (Cambridge University Press, 1996), for the BRST quantization of gauge theories and the physical-state cohomology.
+- Companion articles: [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html); [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html); [The Physical Interpretation of the 12 Products](the-physical-interpretation-of-the-12-products.html); [Roots, Idempotents and Observables](roots-idempotents-and-observables.html); [Roots, Idempotents and Quantum Information](roots-idempotents-and-quantum-information.html); [Spin and the Two State Spaces](spin-and-the-two-state-spaces.html); [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html); [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html); [The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form](the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.html); [The Jordan–Wigner Transformation in Biquaternionic Form](the-jordan-wigner-transformation-in-biquaternionic-form.html); [Grassmann Coherent States in Biquaternionic Form](grassmann-coherent-states-in-biquaternionic-form.html); [The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form](the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.html); [Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form](dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html); [Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form](fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html); [The Wick Theorem in Biquaternionic Form](the-wick-theorem-in-biquaternionic-form.html); [The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra](the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra.html); [Squeezing Beyond the Biquaternion Algebra](squeezing-beyond-the-biquaternion-algebra.html); [BRST Symmetry in Biquaternionic Form](brst-symmetry-in-biquaternionic-form.html); [Supersymmetric Quantum Physics in the Biquaternion Framework](supersymmetric-quantum-physics-in-the-biquaternion-framework.html).

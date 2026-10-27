@@ -12,14 +12,14 @@ and the two eigenvalues are both zero. The cell is the intersection of the null 
 
 It has two faces. The **origin** is the only semisimple element: the zero element, with no scale, no mode and no direction. The **nilpotent cone** is the set of non-zero pure isotropic vectors: elements that square to zero but are not zero. On the material slice only the origin survives. In the full algebra the nilpotents are the fermionic ladder: a pair of them anticommutes to the identity, and their products are the two orthogonal rungs of a two-level system.
 
-The physical content is therefore the **vacuum and its nilpotent excitations**. The article reads the cell, the origin, the nilpotent, the ladder and the products. It proves nothing; the nilpotent cone and the ladder are those of *Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit*, and the sector theorems are those of *The N-Degenerate, Spectrally Degenerate Sector*.
+The physical content is therefore the **vacuum and its nilpotent excitations**. The article reads the cell, the origin, the nilpotent, the ladder and the products. It proves nothing; the nilpotent cone and the ladder are those of *The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge*, and the sector theorems are those of *The N-Degenerate, Spectrally Degenerate Sector*.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The definition, the five descriptions and the geometry of the cell | [The N-Degenerate, Spectrally Degenerate Sector](../articles_maths/the-n-degenerate-spectrally-degenerate-sector.html) |
-| The nilpotent cone, the ladder and the ladder action | [Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit](nilpotents-and-fermions-modes-lattices-and-the-semiclassical-limit.html) |
+| The nilpotent cone, the ladder and the ladder action | [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html) |
 | The zero-divisor cone and its strata | [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html) |
 | The primitive idempotents and the minimal left ideals | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
 | The independence of the two conditions | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html) |
@@ -42,7 +42,7 @@ $$
 \Sigma_{00}=\{\vec\Upsilon\ :\ \vec\Upsilon^2=0\}.
 $$
 
-It is the **nilpotent cone**, of complex dimension two and real dimension four, together with the origin. The cone is not a manifold at the origin; the origin is its vertex. Off the origin the element is a non-zero nilpotent.
+It is the **nilpotent cone** — the non-zero pure isotropic vectors — with the origin adjoined. It has complex dimension two and real dimension four. The cone is not a manifold at the origin; the origin is its vertex. Off the origin the element is a non-zero nilpotent.
 
 The characteristic polynomial is
 
@@ -88,7 +88,7 @@ Q_t=0,\quad\vec p=0
 N=0,\quad B=0.
 $$
 
-The reading is the **vacuum**: the zero four-momentum, the element that carries neither mass nor motion. It is not the multiplicative identity. The identity $e_t$ is a unit, with $N=1$ and $B^2=0$; it lies on the scalar line of $\Sigma_{10}$, not in $\Sigma_{00}$. The algebra has no zero multiplicative identity, and the vacuum is the additive zero, not a state with a norm.
+The reading is the **vacuum**: the zero four-momentum, the element that carries neither mass nor motion. It is the additive zero, not the multiplicative identity. The identity $e_t$ is a unit, with $N=1$ and $B^2=0$; it lies on the scalar line of $\Sigma_{10}$, not in $\Sigma_{00}$, and the vacuum is not a state with a norm.
 
 The origin is the apex of the arrangement. Every cell has the origin in its closure:
 
@@ -189,7 +189,7 @@ $$
 
 The photon is a zero divisor of the light-ray cell $\Sigma_{01}$, not a nilpotent. The nilpotent is the pure lightlike displacement, the element whose composition with itself is nothing. The distinction is the distinction between the two degenerate cells.
 
-The nilpotent is not an idempotent. The two classes meet only at the origin. An idempotent is a rung; a nilpotent is a ladder operator between rungs. The product of two nilpotents can be an idempotent; the product of an idempotent with itself is itself.
+The nilpotent is not an idempotent. The two classes meet only at the origin. An idempotent is a rung; a nilpotent is a ladder operator between rungs. The product of two nilpotents can be a non-zero element of the light-ray cell; the product of an idempotent with itself is itself.
 
 The nilpotent is not a Grassmann label. A Grassmann number $\theta$ with $\theta^2=0$ lives outside the algebra; the nilpotent is an element of the algebra. The algebraic square-zero and the exterior square-zero are different structures, and the ladder is the bridge between them.
 
@@ -210,7 +210,7 @@ $$
 =\overline{\Sigma_{10}}\cap\overline{\Sigma_{01}}\cap\overline{\Sigma_{11}}.
 $$
 
-A path in the rest-frame cell that sends $Q_t\to0$ lands at the origin. A path in the light-ray cell that sends the scale to zero lands at the origin. A path in the two-mode cell that sends both invariants to zero lands at the origin. The origin is the common limit; the nilpotent cone is the tangent cone at the origin.
+A path in the rest-frame cell that sends $Q_t\to0$ lands in $\Sigma_{00}$: at the origin if the nilpotent part also vanishes, and at a non-zero nilpotent otherwise. A path in the light-ray cell that sends the scale to zero lands at the origin. A path in the two-mode cell that sends both invariants to zero lands somewhere in $\Sigma_{00}$, not necessarily at the origin. The origin is in the closure of every cell; the nilpotent cone is the tangent cone at the origin.
 
 ## Physical Interpretations
 
@@ -218,8 +218,8 @@ A path in the rest-frame cell that sends $Q_t\to0$ lands at the origin. A path i
 - **The nilpotent is a fermionic mode.** A square-zero direction; a pair of them anticommutes to the identity; their products are the two rungs of a two-level system.
 - **The ladder is capped at two rungs.** The algebra is $M_2(\mathbb{C})$, the module is two-dimensional, and there is no third orthogonal idempotent. The reading is a single fermionic mode, not a field.
 - **The square-zero is exclusion.** Applying the same nilpotent twice gives zero; the mode cannot be occupied twice. The algebraic statement is the skeleton of the Pauli exclusion principle, not its derivation.
-- **The vacuum is not the identity.** $e_t$ is a unit on the scalar line; the vacuum is $0$. The algebra has no zero multiplicative identity, and the two must not be confused.
-- **The cell sits at the apex of the arrangement.** Every cell has the origin in its closure; the nilpotent cone is the tangent cone at the origin. The vacuum is the limit of every regime.
+- **The vacuum is not the identity.** $e_t$ is a unit on the scalar line; the vacuum is $0$. Zero is not the multiplicative identity, and the two must not be confused.
+- **The origin is the apex of the arrangement; the cell is the common boundary.** Every cell has the origin in its closure; the nilpotent cone is the tangent cone at the origin. The vacuum is the limit of every regime.
 - **The nilpotent is not a photon.** A massless momentum is a zero divisor with $B^2\neq0$ and a non-zero square; a nilpotent has $B^2=0$ and a zero square. The two degenerate cells are different physical regimes.
 - **The ladder is the bridge to the state space.** The nilpotents are not Hermitian, but their products are; the rungs lie in the informational sector. The reading connects the vacuum cell to the two-state space.
 
@@ -242,8 +242,8 @@ No dynamics is supplied. The cell says what the vacuum and the nilpotents are at
 - Off the origin the element is a non-zero nilpotent: defective, minimal polynomial $X^2$, dual-number centraliser, no idempotent, no Peirce decomposition, no inverse, no logarithm.
 - A pair of nilpotents with anticommutator $e_t$ is the fermionic ladder; their products are two orthogonal Hermitian idempotents, the two rungs.
 - The ladder has exactly two rungs; the algebra is $M_2(\mathbb{C})$ and the module is two-dimensional.
-- The product of two nilpotents is zero or a light-ray idempotent; the cell is not product-closed.
-- The cell sits at the apex of the arrangement: every cell has the origin in its closure, and the nilpotent cone is the tangent cone at the origin.
+- The product of two nilpotents is zero or a scaled idempotent in $\Sigma_{01}$; the cell is not product-closed.
+- The cell is the common boundary of the arrangement: every cell has the origin in its closure, and the nilpotent cone is the tangent cone at the origin.
 - The nilpotent is not a photon: a massless momentum has $B^2\neq0$ and a non-zero square; a nilpotent has $B^2=0$ and a zero square.
 - The cell supplies no dynamics, no field, no statistics and no derivation of exclusion.
 
@@ -261,7 +261,7 @@ No dynamics is supplied. The cell says what the vacuum and the nilpotents are at
 ## Further Reading
 
 - [The Four Regimes of an Element: Mass and Motion](the-four-regimes-of-an-element-mass-and-motion.html), for the partition and the other three cells.
-- [Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit](nilpotents-and-fermions-modes-lattices-and-the-semiclassical-limit.html), for the nine readings of the nilpotent.
+- [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html), for the nine interpretations of the nilpotent.
 - [The N-Degenerate, Spectrally Regular Sector: The Massless Regime](the-n-degenerate-spectrally-regular-sector-the-massless-regime.html), for the other degenerate cell.
 - [The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), for the defective unit.
 - [Spin and the Two State Spaces](spin-and-the-two-state-spaces.html), for the rungs and the state space.

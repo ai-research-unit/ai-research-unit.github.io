@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A biquaternion carries two invariant quadratic numbers, and each answers a physical question. The first is the norm
+A biquaternion carries two quadratic numbers invariant under the algebra's automorphisms, and each answers a physical question. The first is the norm
 
 $$
 N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,
@@ -35,7 +35,7 @@ The four cells are treated one to an article: *The N-Regular, Spectrally Regular
 | The four-vector dictionary and the interval | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
 | The spectral reading of a four-momentum | [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) |
 | The massless cone and its spectrum | [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html) |
-| The fermionic reading of the nilpotents | [Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit](nilpotents-and-fermions-modes-lattices-and-the-semiclassical-limit.html) |
+| The fermionic interpretation of the nilpotents | [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html) |
 
 ## The Two Questions
 
@@ -126,15 +126,15 @@ The physical content is therefore double. The scalar line is **the rest frame**:
 
 ### The Light Ray: $\Sigma_{01}$
 
-The cell of zero divisors with two distinct eigenvalues. The element is a non-zero multiple of a non-trivial idempotent, $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$, and its spectrum is $\{c,0\}$. On the material sector it is the light cone minus the apex: a massless momentum, with one light-cone frequency zero and the other $2E/c$. It has a unique Peirce decomposition, a mode basis, and no rest frame: one eigenvalue is zero, so there is no frame in which the two eigenvalues coincide.
+The cell of zero divisors with two distinct eigenvalues. The element is a non-zero multiple of a non-trivial idempotent, $\tilde Q=\kappa\tilde\Pi$ with $\kappa=2Q_t\neq0$, and its spectrum is $\{\kappa,0\}$. On the material sector it is the light cone minus the apex: a massless momentum, with one light-cone eigenvalue zero and the other $2iE/c$. It has a unique Peirce decomposition, a mode basis, and no rest frame: one eigenvalue is zero, so there is no frame in which the two eigenvalues coincide.
 
-The physical content is the **light ray**: a rank-one element, a direction and a scale, a point of the celestial sphere together with a phase. It is a zero divisor, hence not invertible; it has no logarithm and no generator. The cell is part of the boundary of the unit group: the null cone with its vertex and the doubly degenerate cone removed.
+The physical content is the **light ray**: a rank-one element, a direction and a scale, a point of the celestial sphere together with a little-group phase. It is a zero divisor, hence not invertible; it has no logarithm and no generator. The cell is part of the boundary of the unit group: the null cone with its vertex and the doubly degenerate cone removed.
 
 ### The Vacuum and the Nilpotent Ladder: $\Sigma_{00}$
 
 The cell of square-zero elements. Off the origin the element is a pure nilpotent, $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$; the origin is the only semisimple point. On the material sector the cell contains only the origin: a real four-momentum with $N=0$ and $B=0$ has $Q_t=0$ and $\vec p=0$. The non-zero nilpotents are not physical null four-momenta; they are the algebraic ladder.
 
-The physical content is therefore the **vacuum** together with its **nilpotent excitations**. The origin is the unique zero-momentum, zero-scale element. The nilpotents are the one-site fermionic ladder: two nilpotents with anticommutator $e_t$, whose products are orthogonal idempotents and whose products land in $\Sigma_{01}$. The cell is the apex of the arrangement, the common limit of the other three.
+The physical content is therefore the **vacuum** together with its **nilpotent excitations**. The origin is the unique zero-momentum, zero-scale element. The nilpotents are the one-site fermionic ladder: two nilpotents with anticommutator $e_t$, whose products are orthogonal idempotents in $\Sigma_{01}$. The cell is the common boundary of the other three; its origin is the apex and the common limit.
 
 ## The Real Slices
 
@@ -196,7 +196,7 @@ The table does not supply a dynamics. It does not say how an element moves from 
 
 The table does not say that the non-zero nilpotents are physical. On the real material slice they are absent; in the full algebra they are the fermionic ladder, and the corpus's reading of them is algebraic, not a claim about physical statistics.
 
-The table does not say that the cells are Lorentz invariant. The norm is invariant under the dagger sandwich, and the discriminant is not. A boost preserves $N$ and changes $B$, so it moves a massive element along its mass shell; in particular, it moves a massive element from the rest frame $\Sigma_{10}$ into $\Sigma_{11}$. The mass shell and the light cone are Lorentz invariant; the cells are not. A cell is a spectral type at an instant, not an orbit of the Lorentz group.
+The table does not say that the cells are Lorentz invariant. The norm is invariant under a norm-one dagger sandwich, and the discriminant is not. A boost preserves $N$ and changes $B$, so it moves a massive element along its mass shell; in particular, it moves a massive element from the rest frame $\Sigma_{10}$ into $\Sigma_{11}$. The mass shell and the light cone are Lorentz invariant; the cells are not. A cell is a spectral type at an instant, not an orbit of the Lorentz group.
 
 ## Physical Interpretations
 

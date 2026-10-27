@@ -6,7 +6,7 @@ Every biquaternion off the zero-divisor cone is an ordered product of four expon
 
 The parametrization fails in two ways, and they are different. The four exponents do not add: the exponential of their sum is not the product, because the boost and the rotor do not commute. And the parametrization does not reach the cone: on the cone the scale collapses and the rapidity diverges, so the word has boundary values rather than a value.
 
-The article reads the word, the defect and the boundary. The decomposition, the defect and the boundary limits are those of *Exponential Polar Decomposition of Biquaternions* and *The Polar Decomposition of Biquaternions*. The article owns the physical reading and its limits.
+The article reads the word, the defect and the boundary. The decomposition, the defect and the boundary limits are those of *Exponential Polar Decomposition of Biquaternions* and *The Polar Decomposition of a N-Regular Biquaternion*. The article owns the physical reading and its limits.
 
 $$
 \tilde Q=r\,e^{i\alpha}\,\tilde B\,\tilde u_{\mathrm r},

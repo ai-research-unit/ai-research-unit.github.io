@@ -175,11 +175,11 @@ $$
 \tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
 $$
 
-exists on the whole cell, with $r=\lvert N\rvert^{1/2}$ and the three factors a scale, a central phase, a Hermitian boost and a real rotor. The cell is therefore the domain of the polar decomposition: every element of the cell has a frame, an amplitude and a phase.
+exists on the whole cell, with $r=\lvert N\rvert^{1/2}$ and the three factors a scale, a central phase, a Hermitian boost and a real rotor. The cell is therefore contained in the domain of the polar decomposition: every element of the cell has a frame, an amplitude and a phase.
 
 The cell is inverse-closed but not product-closed. The norm is multiplicative, so the product of two elements of the cell has non-zero norm and lies in $\Sigma_{11}\cup\Sigma_{10}$; both outcomes occur, and inside $\Sigma_{10}$ both the scalar line and the Jordan part occur. A product of two elements of the cell can land on the scalar line, where the two eigenvalues coincide, or in the Jordan part, where the element is defective. The cell is a symmetric subset of the unit group, not a subgroup: it contains no subgroup, because it does not contain the identity.
 
-The boundary of the cell is the arrangement. A path inside the cell that reaches $B=0$ lands in $\Sigma_{10}$; a path that reaches $N=0$ lands in $\Sigma_{01}$; a path that reaches both lands in $\Sigma_{00}$. The rest frame is the boundary component $B=0$ with $N\neq0$; the light cone is the boundary component $N=0$ with $B\neq0$.
+The boundary of the cell is the arrangement. A path inside the cell that reaches $B=0$ lands in $\Sigma_{10}$; a path that reaches $N=0$ lands in $\Sigma_{01}$; a path that reaches both lands in $\Sigma_{00}$. The scalar line is the rest-frame part of the boundary $B=0$, and the Jordan part is its exceptional-point part; the cell $\Sigma_{01}$ is the boundary component $N=0$ with $B\neq0$.
 
 ## Physical Interpretations
 
@@ -188,8 +188,8 @@ The boundary of the cell is the arrangement. A path inside the cell that reaches
 - **The causal sign is the sign of the norm.** Timelike and spacelike momenta share the cell because both conditions are non-zero; they differ in the sign of $N$ and in the placement of the eigenvalues on the imaginary axis. The cell is a spectral type, and the causal class is a second invariant read from the same element.
 - **The eigenbasis is a frame attached to the element.** The two eigenspaces are unique; the idempotents are unique; the nilpotents inside each eigenspace are a gauge. The frame is not a laboratory frame, and the mode basis is not a measurement basis until a laboratory frame is chosen.
 - **A spinor carries both modes.** Each minimal ideal is a complex plane on which the left action is diagonal with both eigenvalues. Chirality is the right eigenvalue. The reading is the algebraic form of the two-component spinor, not a derivation of the spin-statistics theorem.
-- **The cell is the domain of the polar word.** Every element has a scale, a phase, a boost and a rotor. The frame is a coordinate on the cell, and the word fails only on the boundary, where the modulus vanishes or the eigenvalues coalesce.
-- **The cell is generic.** Its complement is the union of the two complex hypersurfaces $N=0$ and $B^2=0$, of measure zero. A generic element is a unit with two distinct modes; each cone is one complex equation, hence two real conditions, and a degeneracy needs the two of a single cone.
+- **The cell lies in the domain of the polar word.** Every element has a scale, a phase, a boost and a rotor. The frame is a coordinate on the cell; the word exists on the whole cell and degenerates on the boundary, failing when the modulus vanishes ($N=0$) and losing its axis data when the eigenvalues coalesce ($B=0$).
+- **The cell is generic.** Its complement is the union of the two complex hypersurfaces $N=0$ and $B^2=0$, of measure zero. A generic element is a unit with two distinct modes; each cone is one complex equation, hence two real conditions, and a degeneracy is the vanishing of one of the two.
 - **Invertibility is reversibility.** The element has an inverse, a logarithm up to the branch lattice, and a one-parameter group. The cell is the regime in which the element is a reversible process with a generator.
 
 ## Limits
@@ -212,7 +212,7 @@ No dynamics is supplied. The cell is a property of one element at one instant; t
 - The sign of $N$ separates the timelike branch (eigenvalues on the same imaginary half) from the spacelike branch (opposite halves).
 - The eigenbasis is unique, the Peirce decomposition is diagonal with both coefficients non-zero, and the spinor spaces each carry both eigenvalues.
 - The cell is inverse-closed and not product-closed; products land in $\Sigma_{11}$ or in $\Sigma_{10}$, on its scalar line or its Jordan part.
-- The cell is the domain of the polar word: scale, phase, boost and rotor.
+- The cell lies in the domain of the polar word: scale, phase, boost and rotor.
 - The boundary of the cell is the arrangement: $B=0$ gives the rest frame and the exceptional point, $N=0$ gives the light ray.
 - The cell is generic and reversible; it supplies no dynamics, no particle count and no mass spectrum.
 
