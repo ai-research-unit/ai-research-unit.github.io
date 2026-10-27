@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Massless Regime: Light Rays — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-massless-regime-light-rays"><strong>The Massless Regime: Light Rays</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The cell $\Sigma_{01}$ is the set of elements with vanishing norm and non-vanishing vector square: $N=0$ and $B^2\neq0$. The element is a zero divisor, and it has two distinct eigenvalues, one of which is zero. It is a non-zero multiple of a primitive idempotent,</p>
+<p>$$
+\tilde Q=\kappa\,\tilde\Pi,
+\qquad
+\tilde\Pi^2=\tilde\Pi,
+\qquad
+\kappa=2Q_t\neq0,
+$$</p>
+<p>and its spectrum is $\{\kappa,0\}$. On the material slice it is the light cone minus the apex: a massless momentum, with one light-cone frequency zero and the other $2E/c$.</p>
+<p>The physical content is the <strong>light ray</strong>: a rank-one element, a direction and a scale, one null mode and one frozen mode, no inverse and no generator. The article reads the cell, the idempotent, the zero divisor, the spectrum and the boundary. It proves nothing; the sector theorems are those of <em>The N-Degenerate, Spectrally Regular Sector</em>, and the cone is that of <em>The Zero-Divisor Cone and the Massless Spectrum</em>.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The definition, the five descriptions and the geometry of the cell</td>
+<td><a href="../articles_maths/the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a></td>
+</tr>
+<tr>
+<td>The zero-divisor cone, its rulings and the massless limit</td>
+<td><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a></td>
+</tr>
+<tr>
+<td>The primitive idempotents and the minimal left ideals</td>
+<td><a href="../articles_maths/the-minimal-left-ideals.html">The Minimal Left Ideals</a></td>
+</tr>
+<tr>
+<td>The spectrum and the two-term writing</td>
+<td><a href="../articles_maths/the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a></td>
+</tr>
+<tr>
+<td>The independence of the two conditions</td>
+<td><a href="../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a></td>
+</tr>
+<tr>
+<td>The four-vector dictionary and the light cone</td>
+<td><a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a></td>
+</tr>
+<tr>
+<td>The spectral reading of a four-momentum</td>
+<td><a href="the-spectral-reading-of-a-four-vector.html">The Spectral Reading of a Four-Vector</a></td>
+</tr>
+<tr>
+<td>The indefinite form and the cone</td>
+<td><a href="the-krein-form-and-the-indefinite-structure.html">The Krein Form and the Indefinite Structure</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-cell">The Cell</h2>
+<p>The cell is</p>
+<p>$$
+\Sigma_{01}=\{N=0,\ B^2\neq0\}
+=\{Q_t^2+B^2=0,\ B^2\neq0\}.
+$$</p>
+<p>On the null cone $N=0$ one has $Q_t^2=-B^2$, so $B^2\neq0$ is equivalent to $Q_t\neq0$. The cell is the null cone minus the doubly degenerate cone:</p>
+<p>$$
+\Sigma_{01}=\mathcal N\setminus\mathcal S
+=\{\kappa\tilde\Pi\ :\ \kappa\in\mathbb{C}^\times,\ \tilde\Pi^2=\tilde\Pi,\ \tilde\Pi\neq0,e_t\}.
+$$</p>
+<p>Every element of the cell is a non-zero complex multiple of a primitive idempotent. The scalar part is $c/2$, and the idempotent is recovered as</p>
+<p>$$
+\tilde\Pi=\frac{\tilde Q}{2Q_t}=\frac{\tilde Q}{c}.
+$$</p>
+<p>The cell is of real dimension six. It is the interior of the null cone in the sense of the cone's smooth part: the apex and the nilpotent directions are removed. Its closure is the full null cone, and the removed set is the cell $\Sigma_{00}$.</p>
+<p>An element of the cell has the characteristic polynomial</p>
+<p>$$
+p_{\tilde Q}(X)=X(X-c),
+\qquad
+\lambda_+=\kappa,
+\qquad
+\lambda_-=0,
+$$</p>
+<p>with $\kappa=2Q_t\neq0$. The two eigenvalues are distinct, so the cell is spectrally regular; one of them is zero, so the element is not invertible. The spectral idempotents are</p>
+<p>$$
+e_+=\tilde\Pi=\frac{\tilde Q}{c},
+\qquad
+e_-=e_t-\tilde\Pi,
+\qquad
+e_+e_-=0,
+\qquad
+e_++e_-=e_t,
+$$</p>
+<p>and the spectral decomposition has one term,</p>
+<p>$$
+\tilde Q=\kappa\,\tilde\Pi+0\,e_-.
+$$</p>
+<p>This is the only cell in which the spectrum is regular and one coefficient is zero.</p>
+<h2 id="the-light-ray">The Light Ray</h2>
+<h3 id="the-idempotent">The Idempotent</h3>
+<p>The idempotent $\tilde\Pi$ is primitive: it is not a sum of two non-zero orthogonal idempotents. In the matrix model it is a rank-one projector. Its left ideal</p>
+<p>$$
+S_+=\mathbb{B}\tilde\Pi
+$$</p>
+<p>is a minimal left ideal, a complex plane. The element acts on it as the scalar $\kappa$:</p>
+<p>$$
+\tilde Q\,X=\kappa\,X
+\qquad
+(X\in S_+).
+$$</p>
+<p>On the complementary ideal</p>
+<p>$$
+S_-=\mathbb{B}e_-,
+\qquad
+e_-=e_t-\tilde\Pi,
+$$</p>
+<p>the element acts as zero:</p>
+<p>$$
+\tilde Q\,X=0
+\qquad
+(X\in S_-).
+$$</p>
+<p>The left multiplication $L_{\tilde Q}$ therefore has a two-dimensional image $S_+$ and a two-dimensional kernel $S_-$. The element itself is rank one in the matrix model; the operator is a projection onto a plane followed by the scalar $\kappa$.</p>
+<h3 id="the-reading">The Reading</h3>
+<p>The structure is the algebraic form of a <strong>light ray</strong>:</p>
+<ul>
+<li><strong>A direction.</strong> The idempotent is the direction. It is a point of the projective null cone, the celestial sphere of the momentum. The direction is the only frame data the element carries.</li>
+<li><strong>A scale and a phase.</strong> The coefficient $\kappa$ is complex. Its modulus is the energy scale, and its phase is a gauge: multiplying $\tilde\Pi$ by a phase and $\kappa$ by the inverse phase gives the same element. The physical ray has a direction and an energy, not a phase.</li>
+<li><strong>One null mode.</strong> The eigenvalue $\kappa$ is the non-zero light-cone frequency, $2E/c$ on the material slice. The eigenvalue $0$ is the frozen mode. The two-term writing has one term because the second coefficient vanishes.</li>
+<li><strong>No inverse.</strong> The element is a zero divisor: there is a non-zero $X$ with $\tilde Q X=0$, and no $\tilde Q^{-1}$. The process has no inverse; the kernel is the information that the element annihilates.</li>
+<li><strong>No generator.</strong> The exponential is invertible, so a non-invertible element has no logarithm. The light ray has no one-parameter group and no generator in the algebra.</li>
+</ul>
+<h3 id="the-massless-limit">The Massless Limit</h3>
+<p>On the material slice, the massless momentum is</p>
+<p>$$
+\tilde P=i\frac{E}{c}e_t+\frac{E}{c}\,\hat p,
+\qquad
+B=\frac{E}{c},
+\qquad
+N=0,
+$$</p>
+<p>with $\hat p$ a real unit vector. The idempotent is</p>
+<p>$$
+\tilde\Pi=\frac{1}{2}\left(e_t-i\hat p\right).
+$$</p>
+<p>The idempotent is the null flag along $\hat p$; the opposite sign belongs to the opposite null direction. The spectrum is</p>
+<p>$$
+\lambda_+=2i\frac{E}{c},
+\qquad
+\lambda_-=0,
+$$</p>
+<p>and the spectral writing is one term,</p>
+<p>$$
+\tilde P=2i\frac{E}{c}\,\tilde\Pi.
+$$</p>
+<p>The massless limit of the Doppler pair is a limit of the coefficients, not a failure of the decomposition: $\nu_-\to0$ and $\nu_+\to2E/c$. The cell is the boundary of the two-mode cell at $N=0$, and the limit is continuous in the element.</p>
+<p>The idempotent is not a Hermitian pure state on the material slice. It is a null flag: $\tilde\Pi^*\neq\tilde\Pi$ in general, and its matrix is rank one but not self-adjoint. The physical reading is a light ray, not a density matrix.</p>
+<h2 id="the-zero-divisor">The Zero Divisor</h2>
+<p>The cell is the smooth part of the zero-divisor cone. The vanishing of the norm is the vanishing of the product with the conjugate:</p>
+<p>$$
+\tilde Q\tilde Q^{\natural}=N e_t=0.
+$$</p>
+<p>The element is a zero divisor, and its annihilator is the complementary ideal:</p>
+<p>$$
+\tilde Q\,S_-=0,
+\qquad
+\dim_{\mathbb{C}}S_-=2.
+$$</p>
+<p>The reading is information loss. The element maps the four-dimensional algebra onto a two-dimensional plane and annihilates the other two dimensions. The kernel is not a defect of the description; it is the structure of the ray. A light ray has a direction and a scale, and it carries no longitudinal mode.</p>
+<p>The cone is ruled by the null lines $\mathbb{C}\tilde Q$. Each line is a ray; the idempotent is the normalised representative. The rulings are the fibers of the projection to the celestial sphere, and the scale is the coordinate along the ruling. The cell is the total space of a bundle over the celestial sphere with fiber $\mathbb{C}^\times$.</p>
+<h2 id="products-and-the-boundary">Products and the Boundary</h2>
+<p>The cell is not closed under products. The product of two elements of the cell is null,</p>
+<p>$$
+\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal N=\Sigma_{01}\cup\Sigma_{00},
+$$</p>
+<p>and both outcomes occur. The product of two scaled idempotents is a scaled idempotent when the idempotents compose to an idempotent, and zero when they are orthogonal. The product is never a unit.</p>
+<p>The boundary of the cell is the doubly degenerate cell $\Sigma_{00}$: the apex and the nilpotent directions. The cell is the boundary of the unit group at $N=0$: a path in $\Sigma_{11}$ that reaches $N=0$ lands here, unless it also reaches $B=0$, in which case it lands in $\Sigma_{00}$.</p>
+<p>The cell is the interior of the null cone minus its singular part. Its closure is the full cone; the removed set is the set of elements with one mode, which is the other degenerate cell.</p>
+<h2 id="physical-interpretations">Physical Interpretations</h2>
+<ul>
+<li><strong>The cell is a light ray.</strong> $N=0$ and $B\neq0$: a massless momentum, one non-zero light-cone frequency and one zero frequency, a direction and an energy.</li>
+<li><strong>The element is a scaled idempotent.</strong> The idempotent is the direction, the coefficient is the scale and the phase. The ray is the projective class of the element.</li>
+<li><strong>The zero divisor is information loss.</strong> The element annihilates a two-dimensional ideal and maps onto a two-dimensional ideal. The longitudinal mode is absent.</li>
+<li><strong>The spectrum has one zero.</strong> The two-term writing survives with one term; the massless limit is a limit of coefficients, not a breakdown of the spectral decomposition.</li>
+<li><strong>There is no inverse and no generator.</strong> The element is not invertible, and the exponential is invertible, so no logarithm exists. The ray is not a reversible process.</li>
+<li><strong>The idempotent is a null flag, not a state.</strong> On the material slice it is not Hermitian; it is a rank-one projector in the matrix model, not a density matrix. The physical reading is a ray, not a pure state.</li>
+<li><strong>The cone is ruled.</strong> The rays are the null lines; the celestial sphere is the base, the scale is the fiber. The cell is the smooth part of the cone.</li>
+<li><strong>The cell is the boundary of the unit group.</strong> A massive element reaching the light cone lands here; a massless element is the limit of a moving massive one.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>The light-ray reading needs the material slice and the massless dispersion relation $E=\lvert\vec p\rvert c$. In the full algebra the cell is the null cone minus the spectral cone, and the names energy and momentum are readings of $Q_t$ and $B$.</p>
+<p>The idempotent is not a physical pure state on the material slice. It is a null flag, and its matrix is not self-adjoint. The pure states of the informational sector are the Hermitian idempotents, which lie in a different cell.</p>
+<p>The zero divisor is not a division by zero in a physical theory. It is a non-invertible element; the algebra supplies the kernel and the image, not a physical singularity.</p>
+<p>No dynamics is supplied. The cell says what a massless element is at an instant; it does not say how it propagates, and it does not supply a wave equation.</p>
+<p>The cell is not a particle count. One zero eigenvalue is one frozen mode, not an empty state and not a second particle.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>$\Sigma_{01}=\{N=0,\ B^2\neq0\}$ is the null cone minus the spectral cone: zero divisors with two distinct eigenvalues, of real dimension six.</li>
+<li>Every element is a non-zero multiple of a primitive idempotent, $\tilde Q=\kappa\tilde\Pi$ with $\kappa=2Q_t\neq0$, and the spectrum is $\{\kappa,0\}$.</li>
+<li>The idempotent is the direction, the coefficient is the scale and phase; the ray is the projective class.</li>
+<li>The left multiplication has a two-dimensional image and a two-dimensional kernel; the element is rank one in the matrix model.</li>
+<li>The element is not invertible, has no logarithm and no generator; the process is not reversible.</li>
+<li>On the material slice it is a massless momentum: one light-cone frequency zero, the other $2E/c$; the massless limit of the Doppler pair.</li>
+<li>The idempotent is a null flag, not a Hermitian pure state; the physical reading is a ray, not a density matrix.</li>
+<li>The cone is ruled by the null lines; the cell is the smooth part, with the doubly degenerate cell as boundary.</li>
+<li>The cell supplies no dynamics, no wave equation and no particle count.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>the cell $N=0$, $B^2\neq0$</td>
+</tr>
+<tr>
+<td>$\tilde Q=\kappa\tilde\Pi$</td>
+<td>the scaled idempotent</td>
+</tr>
+<tr>
+<td>$\kappa=2Q_t$</td>
+<td>the non-zero eigenvalue, the complex scale</td>
+</tr>
+<tr>
+<td>$\lambda_+=\kappa,\ \lambda_-=0$</td>
+<td>the spectrum</td>
+</tr>
+<tr>
+<td>$e_+=\tilde\Pi,\ e_-=e_t-\tilde\Pi$</td>
+<td>the spectral idempotents</td>
+</tr>
+<tr>
+<td>$S_+=\mathbb{B}\tilde\Pi$</td>
+<td>the image, a minimal left ideal</td>
+</tr>
+<tr>
+<td>$S_-=\mathbb{B}e_-$</td>
+<td>the kernel, the complementary ideal</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{N=0\}$</td>
+<td>the null cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-regimes-of-an-element-mass-and-motion.html">The Four Regimes of an Element: Mass and Motion</a>, for the partition and the other three cells.</li>
+<li><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a>, for the cone, its rulings and the massless limit.</li>
+<li><a href="the-spectral-reading-of-a-four-vector.html">The Spectral Reading of a Four-Vector</a>, for the massless limit of the Doppler pair.</li>
+<li><a href="the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html">The Vacuum and the Nilpotent Ladder</a>, for the boundary of the cell.</li>
+<li><a href="the-n-regular-spectrally-regular-sector-mass-in-motion.html">Mass in Motion: The Two-Mode Regime</a>, for the cell whose boundary this is.</li>
+<li><a href="../articles_maths/the-minimal-left-ideals.html">The Minimal Left Ideals</a>, for the primitive idempotents and the spinor spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spin and the Two State Spaces — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spin-and-the-two-state-spaces"><strong>Spin and the Two State Spaces</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spinor space of the biquaternion framework is the minimal left ideal</p>
+<p>$$
+S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},
+\qquad
+\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),
+\qquad
+\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
+$$</p>
+<p>of complex dimension two. The algebra acts on it by left multiplication, and the action carries the defining representation of the double cover of the Lorentz group. That is one structure. The same carrier also carries a positive definite Hermitian form and a Born pairing, and that is a second structure, belonging to a different product of the same algebra.</p>
+<p>The algebra also offers a <strong>second copy</strong>. The plain product splits it into two minimal left ideals,</p>
+<p>$$
+\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-,
+\qquad
+\tilde\Pi_-=e_t-\tilde\Pi_+=\tfrac12(e_t-i\vec e_z),
+$$</p>
+<p>and the second summand, $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$ with $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, is the complementary ideal. It is a left module isomorphic to $S$, metrically identical, and a different subspace. The mass coupling is the pair of right multiplications by the two nilpotents that carries $S$ onto its complement and back.</p>
+<p>The article's thesis is that the structures are <strong>not two views of one object</strong>, and that the doubling is a copy and not a second particle. The module structure belongs to the plain bilinear product, the Hilbert structure to the plain sesquilinear product, and the complement to the right multiplication. The sharpest evidence for the separation is that the algebra's own bilinear form is degenerate on the carrier: its Gram matrix is $\operatorname{diag}(\tfrac12,0)$. The module has no norm of its own, and the metric is added by the second slot.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The plain product as the only associative unital law of the twelve, and left alternativity as its threshold</td>
+<td><a href="../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html">The Biquaternion Algebra and Its Vector Spaces</a></td>
+</tr>
+<tr>
+<td>The idempotents, the Peirce decomposition, the minimal left ideals and the matrix units</td>
+<td><a href="../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The module theory: the simple module, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$</td>
+<td><a href="../articles_maths/modules-over-the-biquaternion-algebra.html">Modules over the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The column ideal of a matrix ring: one idempotent and $n-1$ nilpotents</td>
+<td><a href="../articles_maths/the-column-ideals-of-a-matrix-ring.html">The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents</a></td>
+</tr>
+<tr>
+<td>The canonical Hermitian form on the regular module, its positivity and its Gram matrix</td>
+<td><a href="../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html">The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The four forms of the twelve products, their Gram matrices and their signatures</td>
+<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The embedding of the algebra in $\operatorname{End}_{\mathbb{C}}(S)$</td>
+<td><a href="../articles_maths/modules-over-the-biquaternion-algebra.html">Modules over the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The roots of $+1$ and the non-Hermitian idempotents</td>
+<td><a href="../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">Square Roots of One and the Idempotents of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The spectral triple and the chirality conventions</td>
+<td><a href="the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-carrier-and-its-forced-basis">The Carrier and Its Forced Basis</h2>
+<p>The two idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are orthogonal and complete in the plain product, and the Peirce decomposition cuts the algebra into four one-dimensional complex corners:</p>
+<p>$$
+\tilde\Pi_+\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+,\quad
+\tilde\Pi_+\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_x,\quad
+\tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\vec\Upsilon_y,\quad
+\tilde\Pi_-\mathbb{B}\tilde\Pi_-=\mathbb{C}\tilde\Pi_-.
+$$</p>
+<p>The spinor space is one column, the sum of a diagonal corner and an off-diagonal one:</p>
+<p>$$
+S=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+
+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_y .
+$$</p>
+<p>The basis is therefore not a choice. A minimal left ideal is one column of the matrix model, and a column of a rank-two matrix algebra is one diagonal corner plus one off-diagonal corner. The diagonal corner contributes the idempotent $\tilde\Pi_+$; the off-diagonal corner contributes a nilpotent, $\vec\Upsilon_y$. Every element of an off-diagonal corner is square-zero, because $(fae)(fae)=fa(ef)ae=0$ for orthogonal idempotents $e,f$. In rank $n$ the same count gives one idempotent and $n-1$ nilpotents; the spinor space is the case $n=2$.</p>
+<blockquote>
+<p><strong>The basis of the spinor space is one idempotent and one nilpotent, and the nilpotency is structural.</strong> It is not a property of the particular column, and it is not a choice of coordinates.</p>
+</blockquote>
+<p>The physical reading of the basis is the first statement of the article. The idempotent is the <strong>state</strong> direction of the column, and the nilpotent is the <strong>shift</strong> direction, the off-diagonal element that raises or lowers the column index. The two directions are what a two-level carrier needs: one projection and one shift. The algebra supplies both, and it supplies them in that proportion.</p>
+<h2 id="the-module-structure-composition">The Module Structure: Composition</h2>
+<p>The plain product makes $S$ a left $\mathbb{B}$-module. On the basis $(\tilde\Pi_+,\vec\Upsilon_y)$ the left multiplications by the four basis elements are</p>
+<p>$$
+L_{\tilde\Pi_+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
+L_{\tilde\Pi_-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
+L_{\vec\Upsilon_x}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+L_{\vec\Upsilon_y}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
+$$</p>
+<p>the matrices of $\mathsf M_2(\mathbb{C})$ in the model $\mathsf M_2(\vec e_k)=-i\sigma_k$. The module is literally the column space $\mathbb{C}^2$ on which the algebra acts by matrix multiplication.</p>
+<p>Three module-theoretic facts carry the reading.</p>
+<ul>
+<li><strong>The module is simple and unique.</strong> $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and finite-dimensional, so its modules are completely reducible and there is, up to isomorphism, exactly one simple module. By Schur's lemma $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$.</li>
+<li><strong>The algebra is the endomorphism algebra.</strong> $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$, and the left regular module splits as $\mathbb{B}\cong S\oplus S$. The algebra is the algebra of all linear maps of the carrier, and the regular module is two copies of it.</li>
+<li><strong>The Lorentz action is the left action.</strong> A unit-norm biquaternion $\tilde U$, $\tilde U\tilde U^{\natural}=e_t$, acts by $\psi\mapsto\tilde U\psi$, and the action is the defining representation of $SL(2,\mathbb{C})$.</li>
+</ul>
+<p>The third fact is the physical content of the module structure. The action is faithful, and it does not descend to the Lorentz group: $-e_t$ acts as $-\mathrm{id}$ on $S$ while it acts trivially by conjugation on the four-vectors of $\mathbb{M}_-$. The double cover therefore appears on the module side and not on the four-vector side, and <strong>spin-$\tfrac12$ is a module datum</strong>. It is a property of how the algebra acts on the carrier, not of a form on the carrier.</p>
+<p>One caution belongs here, because it is easy to state wrongly. <strong>A single minimal left ideal is one chirality, not two.</strong> The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the same defining representation. The two Weyl halves are $S$ and its conjugate module $\bar S$, which are non-isomorphic as complex representations. The doubling below treats the second ideal; this section treats one carrier and its two structures.</p>
+<h2 id="the-probability-structure-the-second-slot">The Probability Structure: the Second Slot</h2>
+<p>The second structure uses the plain sesquilinear product. Its scalar part is the Hermitian form</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*}),
+$$</p>
+<p>which is positive definite on the algebra. Restricted to the carrier, its Gram matrix on the basis $(\tilde\Pi_+,\vec\Upsilon_y)$ is</p>
+<p>$$
+\boxed{\;G=\begin{pmatrix}\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{*} & \langle\tilde\Pi_+,\vec\Upsilon_y\rangle_{*}\\[2pt]\langle\vec\Upsilon_y,\tilde\Pi_+\rangle_{*} & \langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_{*}\end{pmatrix}
+=\tfrac12 I_2\;}.
+$$</p>
+<p>The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the difference is exactly the phase. In module coordinates the same form is the spinor inner product $h(\psi,\phi)=\psi^{\dagger}\phi$. The <strong>Born pairing</strong> is the trace formula</p>
+<p>$$
+\operatorname{Tr}(\tilde\Pi\tilde H^{*})=2\operatorname{Sc}(\tilde\Pi\tilde H),
+$$</p>
+<p>which pairs a state idempotent with an observable. The normalisation $\langle\psi,\psi\rangle_{*}=1$ is a condition on the Hilbert structure alone.</p>
+<p>The physical reading of the second structure is the one the informational sector has built. A <strong>state</strong> is a Hilbert vector, an <strong>observable</strong> is a Hermitian element, and the pairing is the probability. The ray, not the vector, is the state: $\psi$ and $e^{i\alpha}\psi$ define the same ray and the same probabilities, and the Hilbert form is blind to the phase.</p>
+<p>The sharpest way to see that this is a second structure and not a second view is the behaviour of the <strong>algebra's own form</strong> on the same carrier. The symmetric bilinear form</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle=\operatorname{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)
+$$</p>
+<p>is non-degenerate on $\mathbb{B}$, of signature $(4,4)$ on the real space. On the carrier its Gram matrix is</p>
+<p>$$
+\boxed{\;B_S=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix}\;},
+$$</p>
+<p>of rank one, with radical $\mathbb{C}\vec\Upsilon_y$. The nilpotent is orthogonal to both basis spinors and to every element of $S$: it has zero scalar part and squares to zero. <strong>The algebra's own form cannot separate the two basis spinors and cannot produce a norm on the carrier.</strong> Positivity is not a property of the plain product at all; it needs the second slot.</p>
+<h2 id="the-second-column">The Second Column</h2>
+<p>The complement is a left ideal for the same reason $S$ is. The Peirce decomposition with respect to the pair $(\tilde\Pi_+,\tilde\Pi_-)$ cuts the algebra into four one-dimensional complex corners, and the second column is the sum of its diagonal and off-diagonal corners:</p>
+<p>$$
+\boxed{\;\mathbb{B}\tilde\Pi_-=
+\tilde\Pi_-\mathbb{B}\tilde\Pi_-\oplus\tilde\Pi_+\mathbb{B}\tilde\Pi_-
+=\mathbb{C}\tilde\Pi_-\oplus\mathbb{C}\vec\Upsilon_x\;}.
+$$</p>
+<p>In the matrix model $\mathsf M_2(\vec e_k)=-i\sigma_k$ the four elements are the matrix units</p>
+<p>$$
+\tilde\Pi_+\leftrightarrow E_{11},\quad
+\vec\Upsilon_y\leftrightarrow E_{21},\quad
+\vec\Upsilon_x\leftrightarrow E_{12},\quad
+\tilde\Pi_-\leftrightarrow E_{22},
+$$</p>
+<p>so $S$ is the first column and $\mathbb{B}\tilde\Pi_-$ is the second. The basis of the complement is again one idempotent and one nilpotent, and the nilpotent is again structural: it is the off-diagonal corner.</p>
+<p>The left action on the complement's own basis is the mirror of the action on $S$:</p>
+<p>$$
+L_{\tilde\Pi_+}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\quad
+L_{\tilde\Pi_-}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\quad
+L_{\vec\Upsilon_x}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\quad
+L_{\vec\Upsilon_y}=\begin{pmatrix}0&1\\0&0\end{pmatrix}.
+$$</p>
+<p>The pattern is the interchange $\tilde\Pi_+\leftrightarrow\tilde\Pi_-$ and $\vec\Upsilon_x\leftrightarrow\vec\Upsilon_y$, but that interchange is a statement about the two left actions and <strong>not</strong> a map between the modules. The next section supplies the actual map.</p>
+<p>The two columns have a second reading, in which they are the two levels of one mode. Writing the matrix units as occupation idempotents,</p>
+<p>$$
+\tilde\Pi_+=|0\rangle\langle0|,\qquad
+\tilde\Pi_-=|1\rangle_{*}\langle1|,\qquad
+\vec\Upsilon_x=|0\rangle\langle1|,\qquad
+\vec\Upsilon_y=|1\rangle\langle0|,
+$$</p>
+<p>the spinor space is the ideal of the level $|0\rangle$ and the complement is the ideal of the level $|1\rangle$. The nilpotents that exchange the two are the raising and lowering operators of the mode, and their nilpotency is the algebraic form of the statement that two raises erase the state. The <strong>occupation reading</strong> is that the doubling is the ground and the excited ideal, or the empty and the occupied ideal, of a single fermionic mode.</p>
+<p>The reading is one of several and not a decision. The same map that reads as a chirality flip reads as a level shift, and the two vocabularies are different readings of one algebraic fact: the mass section uses the column, the occupation reading uses the level, and neither is derived from the other.</p>
+<h2 id="the-isomorphism-is-a-right-multiplication">The Isomorphism Is a Right Multiplication</h2>
+<p>The module isomorphism $S\to\mathbb{B}\tilde\Pi_-$ is right multiplication by the nilpotent:</p>
+<p>$$
+\tilde\Pi_+\vec\Upsilon_x=\vec\Upsilon_x,\qquad
+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-,
+\qquad
+S\vec\Upsilon_x=\mathbb{C}\{\vec\Upsilon_x,\tilde\Pi_-\}=\mathbb{B}\tilde\Pi_- .
+$$</p>
+<p>It is a module map because it acts on the right and the algebra acts on the left: $\tilde Q(x\vec\Upsilon_x)=(\tilde Qx)\vec\Upsilon_x$. It is nonzero between simple modules of the same dimension, so it is an isomorphism. Symmetrically, right multiplication by $\vec\Upsilon_y$ returns:</p>
+<p>$$
+\boxed{\;\tilde\Pi_-\vec\Upsilon_y=\vec\Upsilon_y,\qquad
+\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+,\qquad
+(\mathbb{B}\tilde\Pi_-)\vec\Upsilon_y=S\;}.
+$$</p>
+<p>The naive basis swap is <strong>not</strong> the map. The relabelling $\tilde\Pi_+\leftrightarrow\tilde\Pi_-$, $\vec\Upsilon_y\leftrightarrow\vec\Upsilon_x$ does not commute with the left action: $\tilde\Pi_-\tilde\Pi_+=0$ while $\tilde\Pi_-\tilde\Pi_-=\tilde\Pi_-$. The isomorphism must mix the two idempotents, and right multiplication by the nilpotent is exactly such a mixing.</p>
+<blockquote>
+<p><strong>The complement is reached by multiplying on the right by a nilpotent, not by relabelling the basis.</strong></p>
+</blockquote>
+<p>Two properties of the map are worth naming. It is <strong>$\mathbb{C}$-linear and $\mathbb{B}$-linear on the left</strong>, so it preserves the module structure and the Lorentz action. It is <strong>not invertible as an element of the algebra</strong>, because $\vec\Upsilon_x^2=0$ and a nilpotent is not a unit; its inverse between the modules is the right multiplication by $\vec\Upsilon_y$, and the two maps compose to the identity on each side. So the <em>element</em> is not invertible while the <em>map</em> is an isomorphism: the inverse is another right multiplication, not an inverse element.</p>
+<p>That asymmetry is the algebraic form of a physical statement. The complement is a copy, and the operation that reaches it is a nilpotent: a step whose generator squares to zero. The next section reads that step as the mass.</p>
+<h2 id="the-mass-coupling">The Mass Coupling</h2>
+<p>The corpus's chirality-off-diagonal mass is a right multiplication, and the pair of right multiplications by $\vec\Upsilon_x$ and $\vec\Upsilon_y$ moves a state from $S$ to its complement and back. The reading rests on three algebraic facts.</p>
+<ul>
+<li><strong>The mass is off-diagonal.</strong> A coupling that is $\mathbb{B}$-linear on the left cannot be a left multiplication by an element of $\mathbb{B}$: the left action preserves each ideal, since the ideals are left ideals. Such a coupling is a right multiplication, and right multiplication is what the module theory supplies.</li>
+<li><strong>The generator is null, the map is an isometry.</strong> The natural generator is the matrix unit $\vec\Upsilon_x$: it has vanishing norm and $\vec\Upsilon_x^2=0$, so it is not a unit of the algebra. The map it induces is nevertheless an isometry of the two Hilbert structures, because $\vec\Upsilon_x\vec\Upsilon_x^{*}=\tilde\Pi_+$ acts as the identity on $S$. The nilpotence is a property of the chosen generator and not of the map: the representatives that induce the same map differ by an element of $\operatorname{Ann}(S)=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$, and some of them are units. The inverse between the modules is the right multiplication by $\vec\Upsilon_y$.</li>
+<li><strong>The coupling flips the column.</strong> It sends $\tilde\Pi_+\mapsto\vec\Upsilon_x$ and $\vec\Upsilon_y\mapsto\tilde\Pi_-$, so the column index changes. In the corpus's chirality-off-diagonal convention that column index is the chirality, and the mass term is a chirality flip. In the spectral-triple reading the same off-diagonal entry is the finite Dirac operator, odd under the chirality, and the two ideals are its two chiralities.</li>
+</ul>
+<blockquote>
+<p><strong>The mass is the right multiplication that takes a state to the other state space.</strong></p>
+</blockquote>
+<p>The reading has a boundary that must be stated in the same breath. <strong>The article gives the algebraic mechanism and no mass value and no mass spectrum.</strong> The number belongs to the dynamical articles, where the mass is a parameter of the equation and not a property of the doubling. What the algebra supplies is the <strong>shape</strong> of the coupling: off-diagonal, column-flipping, generated by a nilpotent matrix unit. What it does not supply is its size.</p>
+<p>A convention warning belongs here, because the corpus uses the word <em>chirality</em> in two ways. The two ideals are sometimes called the two chiralities, and the two Weyl halves are $S$ and its conjugate module $\bar S$. These are different objects. The ideals are isomorphic as modules; $S$ and $\bar S$ are not. The mass coupling of this section moves between the two <strong>ideals</strong>, and the chirality flip it performs is the column flip of the first convention. It is not the passage to the conjugate module.</p>
+<h2 id="three-complements">Three Complements</h2>
+<p>The word <em>complement</em> names three subspaces in this algebra, and only two of them coincide.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>complement</th>
+<th>definition</th>
+<th>subspace</th>
+<th>dimension over $\mathbb{C}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>module complement</td>
+<td>the other Peirce summand</td>
+<td>$\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Hilbert complement</td>
+<td>$S^{\perp}$ for the positive definite form $\langle\cdot,\cdot\rangle_{*}$</td>
+<td>$\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$-orthogonal complement</td>
+<td>$S^{\perp_B}$ for the algebra's own form</td>
+<td>$\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The <strong>module complement</strong> is the second ideal. The <strong>Hilbert complement</strong> is the orthogonal complement for the sesquilinear form of the second slot, $S^{\perp}=\{v:\langle u,v\rangle_{*}=0\ \forall u\in S\}$, and it is computed on the matrix units: the four units are mutually orthogonal of norm $\tfrac12$, so the orthogonal complement of the first column is the second column. The coincidence is exact, and it is the algebraic core of the doubling:</p>
+<p>$$
+\mathbb{B}=S\oplus\mathbb{B}\tilde\Pi_-=S\perp\mathbb{B}\tilde\Pi_-,
+$$</p>
+<p>a direct sum of left modules and an orthogonal direct sum of Hilbert spaces at once.</p>
+<p>The coincidence is not automatic. <strong>It holds because $\tilde\Pi_+$ is Hermitian.</strong> The Peirce complement of a Hermitian idempotent is Hermitian, so $\tilde\Pi_-$ is Hermitian, and the two columns are orthogonal for the positive definite form. For a general idempotent $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$, whose root $\tilde\Xi$ need not be Hermitian, the two summands are still complementary left modules, but the Hilbert complement need not coincide with the module complement: the cross pairing $\langle\tilde\Pi,e_t-\tilde\Pi\rangle_{*}$ can be nonzero. The identification of the two complements is therefore a property of the <strong>vacuum pair</strong>, not of the algebra's decomposition alone.</p>
+<p>The <strong>algebra's-own-form complement</strong> is a third subspace. Because the symmetric form $\langle\tilde Q_1,\tilde Q_2\rangle=\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is degenerate on the carrier, with $B_S=\operatorname{diag}(\tfrac12,0)$ and radical $\mathbb{C}\vec\Upsilon_y$, the orthogonal complement of $S$ is</p>
+<p>$$
+\boxed{\;S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}\;},
+$$</p>
+<p>which shares the idempotent $\tilde\Pi_-$ with the module complement and differs in its nilpotent. Equivalently,</p>
+<p>$$
+\langle\vec\Upsilon_y,\vec\Upsilon_x\rangle=\tfrac12,
+\qquad
+S\cap S^{\perp_B}=\operatorname{rad}B_S=\mathbb{C}\vec\Upsilon_y,
+\qquad
+S+S^{\perp_B}=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y,\tilde\Pi_-\},
+$$</p>
+<p>a sum of dimension three. The nilpotent direction is exactly what the algebra's own form cannot see, and the module decomposition is not orthogonal for it.</p>
+<blockquote>
+<p><strong>The module and Hilbert complements coincide; the algebra's-own-form complement does not.</strong></p>
+</blockquote>
+<p>The three-way table is the sharpest statement of the article about the word <em>complement</em>. The first two are the doubling the physics uses: two identical copies, module-isomorphic and metrically orthogonal. The third is a different subspace, and it is a warning that the algebra's bilinear form is not the metric.</p>
+<h2 id="what-the-complement-is-not">What the Complement Is Not</h2>
+<p>Three negative statements keep the reading exact.</p>
+<ul>
+<li><strong>It is not the dual.</strong> The dual of $S$ is the right ideal $S^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_x\}$, the first row of the matrix model, reached by the Hermitian conjugation ${}^{*}$. The complement is a left ideal reached by right multiplication. A bra is not an antiparticle.</li>
+<li><strong>It is not a second representation.</strong> The complement is isomorphic to $S$, so it carries the same defining representation of the double cover. The two chiral halves, in the module sense, are $S$ and its conjugate module $\bar S$, which are non-isomorphic. The doubling is a <strong>copy</strong>, not a second representation.</li>
+<li><strong>It is not a second sector.</strong> Each ideal meets each sector in exactly one real dimension: $S\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$, $S\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, and similarly for the complement. Neither ideal is material or informational, and the sector split cuts across both. There is, in particular, no nonzero idempotent in $\mathbb{M}_-$, so the complement cannot be the material sector.</li>
+</ul>
+<p>The independence is sharper than the dimension count. Multiplication by the central imaginary exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so a complex subspace contained in one sector is zero; the two ideals are complex two-dimensional and can never be split along $\mathbb{M}_\pm$. The sector content of an ideal sits entirely on its <strong>diagonal</strong> corner: $\mathbb{C}\tilde\Pi_+\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$ and $\mathbb{C}\tilde\Pi_+\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, while the nilpotent line $\mathbb{C}\vec\Upsilon_y$ meets both sectors in $\{0\}$. The sector label therefore attaches to the idempotent and not to the ladder: the doubling is an <strong>informational</strong> doubling, two idempotents of $\mathbb{M}_+$, and not a material–informational pair.</p>
+<p>The map that does carry $S$ onto the complement at the level of the ring is the <strong>coefficient conjugation</strong> $\bar{\cdot}$, which fixes the four basis elements and negates $i$:</p>
+<p>$$
+\overline{\tilde\Pi_+}=\tilde\Pi_-,\qquad
+\overline{\vec\Upsilon_y}=-\vec\Upsilon_x,\qquad
+\bar S=\mathbb{B}\tilde\Pi_- .
+$$</p>
+<p>It is anti-linear, it is a real structure, and it is not an operation of the plain product. The complement is therefore reached by two different maps: the $\mathbb{B}$-linear right multiplication by the nilpotent, and the anti-linear coefficient conjugation. The first is the module isomorphism; the second is the ring-level conjugation. They agree on the subspace and differ in what they preserve.</p>
+<h2 id="what-the-structures-do-not-carry">What the Structures Do Not Carry</h2>
+<p>Three separations keep the article honest.</p>
+<ul>
+<li><strong>No positivity.</strong> The algebra's form is indefinite on the real space and degenerate on $S$. The module has no canonical normalised state.</li>
+<li><strong>No Born rule.</strong> The probability pairing is the scalar part of the sesquilinear product, not of the plain product. It belongs to the second structure.</li>
+<li><strong>No pairing of the carrier by the product.</strong> The sesquilinear products do not preserve $S$: they couple a state to a conjugate slot and land outside the ideal. A sesquilinear product pairs the space; it does not act on it.</li>
+</ul>
+<p>A fourth separation is about the sectors. The carrier meets each of $\mathbb{M}_\pm$ in one real dimension, so <strong>the spinor space is not a sector</strong>, and its two structures are not the material–informational split. The sector split is a third structure, real and independent, and it cuts across the ideal.</p>
+<p>The doubling adds its own separations:</p>
+<ul>
+<li><strong>No mass value and no spectrum.</strong> The mass coupling is a shape; the number is dynamical.</li>
+<li><strong>No choice between the readings of the doubling.</strong> The second chirality, the occupation ladder and the conjugate state space are readings of one algebraic fact.</li>
+<li><strong>The coincidence is conditional.</strong> The module and Hilbert complements coincide for the Hermitian vacuum pair; for a general idempotent they separate.</li>
+<li><strong>One pair of ideals only.</strong> The general idempotent $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ generates a minimal left ideal for every unit vector, and its complement is a different subspace. The article treats the coordinate pair.</li>
+<li><strong>No dynamics.</strong> Nothing here says how a state moves between the copies in time, or why the mass has the value it has.</li>
+</ul>
+<h2 id="the-two-structures-side-by-side">The Two Structures Side by Side</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>job</th>
+<th>structure</th>
+<th>the algebra's part</th>
+<th>the physical carrier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>composition</td>
+<td>module</td>
+<td>plain left multiplication</td>
+<td>the Lorentz action and the double cover</td>
+</tr>
+<tr>
+<td>probability</td>
+<td>Hilbert space</td>
+<td>the plain sesquilinear pairing</td>
+<td>the norm, the normalisation and the Born rule</td>
+</tr>
+</tbody>
+</table></div>
+<p>The module structure makes the carrier an <strong>arena</strong>: the algebra is the algebra of operators and the carrier is what they act on. The Hilbert structure makes the arena a <strong>probability space</strong>: the form is what can be evaluated on a state and squared into a number. Neither structure alone gives the pair. A module without a form has no numbers; a form without an action has no observables.</p>
+<p>The two structures separate the two physical data of a spinor.</p>
+<ul>
+<li><strong>The spin is a module datum.</strong> The double cover acts faithfully on the module, $-e_t$ acts as $-\mathrm{id}$, and that is where spin-$\tfrac12$ lives.</li>
+<li><strong>The ray is a Hilbert datum.</strong> The form is blind to the sign and to the phase, so the state is a ray and not a vector.</li>
+<li><strong>The vacuum is a module datum.</strong> The choice of idempotent $\tilde\Pi_+$ selects the module, and the module is fixed only up to the equivalence of idempotents.</li>
+<li><strong>The normalisation is a Hilbert datum.</strong> $\langle\psi,\psi\rangle_{*}=1$ is a condition on the form and makes the amplitudes into probabilities.</li>
+</ul>
+<p>The state space is normalised by the metric and selected by the vacuum, and the two acts are of different kinds: one is a pairing, the other is a choice of generator. The two structures also meet the corpus's word <strong>quantisation</strong>. The insertion of the star into the second slot, the step from $\tilde Q_1\tilde Q_2$ to $\tilde Q_1\tilde Q_2^{*}$, is what turns the composition pairing into the probability pairing. Read on the carrier, the spinor space is <strong>compositional before the step and probabilistic after it</strong>. The step is not an added axiom; it is the choice of what to put in the second slot.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<ul>
+<li><strong>One carrier, two structures, two jobs.</strong> The state space is not one structure but two: the composition structure that makes the algebra act, and the probability structure that makes the states pair. Boundary: a statement about the algebraic structures, and it adds no identity between composition and probability.</li>
+<li><strong>The module is composition.</strong> The plain product composes two elements, and the module is that composition read with one factor held fixed. Boundary: an interpretation of the algebra's law, not a dynamics.</li>
+<li><strong>The spin is a module datum, the ray is a Hilbert datum.</strong> The double cover acts faithfully on the module, while the Hilbert structure is blind to the phase and yields the ray. Boundary: a separation of two known facts by the two structures.</li>
+<li><strong>The observables are module endomorphisms.</strong> $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$, so the observables are the endomorphisms of the carrier and the trace formula is the pairing of the two structures. Boundary: the identification of the spinor and the qubit is not made.</li>
+<li><strong>The carrier has no norm of its own.</strong> The algebra's form is degenerate on $S$, so an unnormalised spinor is what the module gives, and normalisation is added by the metric. Boundary: a statement about the two forms.</li>
+<li><strong>The Born rule is a product, not a postulate.</strong> The probability pairing is the scalar part of the plain sesquilinear product, so positivity is the definiteness of a form and the trace formula is the scalar pairing. Boundary: the derivation and its bounds are <em>The Born Rule from the Hermitian Form</em>.</li>
+<li><strong>The spinor and the qubit are one carrier read twice.</strong> The Weyl spinor of the Lorentz action and the two-level state of the informational sector inhabit one complex plane, once as the defining module and once as the Hilbert space. Boundary: the carrier is one; the physics of the two readings is not thereby identified.</li>
+<li><strong>Quantisation is the second slot.</strong> The step from the plain product to the plain sesquilinear product is exactly the step from the module structure to the Hilbert structure. Boundary: the algebra supplies the pairing and no equation of motion and no measure.</li>
+<li><strong>The state space is doubled.</strong> The algebra offers two copies of the same state space, module-isomorphic and Hilbert-orthogonal. Boundary: a counting statement; it adds no second particle.</li>
+<li><strong>The mass takes a state to its complement.</strong> The chirality-off-diagonal mass is the right multiplication by the nilpotent $\vec\Upsilon_x$, which carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and flips the column. Boundary: the mechanism is algebraic; the mass value and the spectrum are not in the article.</li>
+<li><strong>The mass generator is null and off-diagonal.</strong> The coupling cannot be a left multiplication, because the left action preserves the ideals; its natural generator is the nilpotent matrix unit, so the generator is not a unit, while the map it induces is an isometry. Boundary: a statement about the shape of the coupling, not its strength.</li>
+<li><strong>The two ideals are the two levels of one mode.</strong> The columns are the empty and the occupied ideal of a single fermionic mode, and the nilpotents that exchange them are the raising and lowering operators. Boundary: the same pair reads as two chiralities and as two levels; the article does not choose.</li>
+<li><strong>The second vacuum is the other idempotent.</strong> The two one-mode ideals are the two vacuum choices, and no algebraic fact selects one. Boundary: the module is unique; only the vacuum is a choice.</li>
+<li><strong>The module and Hilbert complements coincide.</strong> The decomposition into the two ideals is at once a module decomposition and an orthogonal decomposition of Hilbert spaces. Boundary: the coincidence uses the Hermiticity of the vacuum idempotent; it fails for a general idempotent.</li>
+<li><strong>The algebra's own form does not see the split.</strong> $S^{\perp_B}$ is a third subspace, sharing only the idempotent, so the orthogonal reading of the doubling needs the metric and not the composition form. Boundary: a statement about the two forms.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<ul>
+<li><strong>No measurement postulate and no Born derivation.</strong> The Born rule is cited from its owner; the article states where it sits among the structures.</li>
+<li><strong>No identification of the two physics.</strong> The carrier is one, but the spinor index is not identified with the qubit's two levels.</li>
+<li><strong>No mass value and no spectrum.</strong> The article states the coupling's algebraic shape; the number is dynamical.</li>
+<li><strong>No choice between the interpretations of the doubling.</strong> The second chirality, the occupation ladder and the conjugate state space are three readings of one algebraic fact.</li>
+<li><strong>The coincidence is conditional.</strong> The module and Hilbert complements coincide for the Hermitian vacuum pair. For a general idempotent they separate.</li>
+<li><strong>One pair of ideals only.</strong> The general idempotent generates a minimal left ideal for every unit vector, and its complement is a different subspace.</li>
+<li><strong>Not the dual and not a sector.</strong> The dual is the right ideal reached by ${}^{*}$; the sectors cut across both ideals.</li>
+<li><strong>The algebra's form is not the metric.</strong> It is indefinite and degenerate on $S$; the positive definite form is $\langle\cdot,\cdot\rangle_{*}$.</li>
+<li><strong>One ideal is one chirality.</strong> The two ideals are isomorphic; the two Weyl halves are $S$ and $\bar S$.</li>
+<li><strong>No dynamics.</strong> Nothing here says how a state moves between the copies in time, or why the mass has the value it has.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ is a minimal left ideal of the plain algebra, with a forced basis of one idempotent and one nilpotent. As a module it is the unique simple module, with $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$; the left action is the defining representation of the double cover, and $-e_t$ acts as $-\mathrm{id}$, which is where spin-$\tfrac12$ lives.</p>
+<p>The same carrier carries a second structure from the plain sesquilinear product: a positive definite Hermitian form of Gram matrix $\tfrac12 I_2$, the Born pairing and the normalisation. The two structures do not coincide: the algebra's own bilinear form is degenerate on the carrier, $\operatorname{diag}(\tfrac12,0)$, with radical the nilpotent line. The module is composition and the Hilbert space is probability; the spin is a module datum and the ray a Hilbert datum; the vacuum is a module choice and the normalisation a metric condition.</p>
+<p>The algebra also splits into two minimal left ideals, the second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, module-isomorphic to $S$ through right multiplication by $\vec\Upsilon_x$ and Hilbert-orthogonal to it. The mass coupling is the pair of right multiplications by the two nilpotents, off-diagonal and column-flipping; the natural generators are null, the induced maps are isometries, and the nilpotence is a choice of generator and not an invariant. The complement is not the dual, not a second representation and not a sector. Three complements must be kept apart: the module and Hilbert complements coincide, the algebra's-own-form complement $S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ is a third subspace, and the coincidence of the first two is conditional on the Hermiticity of the vacuum idempotent.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=e_t-\tilde\Pi_+$</td>
+<td>the vacuum idempotent and its Peirce complement</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$</td>
+<td>the nilpotent matrix units $E_{12}$ and $E_{21}$</td>
+</tr>
+<tr>
+<td>$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$</td>
+<td>the spinor space, first column</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$</td>
+<td>the complementary ideal, second column</td>
+</tr>
+<tr>
+<td>$\mathbb{B}=S\oplus\mathbb{B}\tilde\Pi_-$</td>
+<td>the Peirce (module) decomposition</td>
+</tr>
+<tr>
+<td>$S\vec\Upsilon_x=\mathbb{B}\tilde\Pi_-$</td>
+<td>the module isomorphism, right multiplication</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$</td>
+<td>the Hilbert form of the second slot</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle=\operatorname{Sc}(\tilde Q_1\tilde Q_2)$</td>
+<td>the algebra's own bilinear form</td>
+</tr>
+<tr>
+<td>$B_S=\operatorname{diag}(\tfrac12,0)$</td>
+<td>the restriction of the algebra's form to $S$</td>
+</tr>
+<tr>
+<td>$S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$</td>
+<td>its orthogonal complement of $S$</td>
+</tr>
+<tr>
+<td>$S^{*}=\tilde\Pi_+\mathbb{B}$</td>
+<td>the dual, a right ideal, not the complement</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}$</td>
+<td>the coefficient conjugation, $\bar S=\mathbb{B}\tilde\Pi_-$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the corners, the matrix units and the minimal ideals.</li>
+<li><a href="../articles_maths/modules-over-the-biquaternion-algebra.html">Modules over the Biquaternion Algebra</a>, for simplicity, the endomorphism ring and the regular module.</li>
+<li><a href="../articles_maths/the-column-ideals-of-a-matrix-ring.html">The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents</a>, for the structural count of the basis.</li>
+<li><a href="../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html">The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra</a>, for the positive definite form and its Gram matrix.</li>
+<li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the probability structure.</li>
+<li><a href="the-born-rule-as-a-trace-formula-derivation-and-comparison.html">The Born Rule from the Hermitian Form — Derivation and Comparison</a>, for the derivation and its bounds.</li>
+<li><a href="the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a>, for the vacuum choice and the family of idempotents.</li>
+<li><a href="the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a>, for the chirality conventions of the doubling.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

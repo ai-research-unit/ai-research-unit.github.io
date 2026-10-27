@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Analytic Structure of Fields: Regularity, Propagation and the Contour — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-analytic-structure-of-fields-regularity-propagation-and-the-contour"><strong>The Analytic Structure of Fields: Regularity, Propagation and the Contour</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra carries a differential calculus, and the calculus has a physical reading. A field is not an arbitrary function of four variables: it is a function that satisfies a first-order constraint. The constraint is the Cauchy–Riemann system of the algebra, its square is the wave operator, and the solutions are the fields that propagate. The kernel that inverts the constraint is the propagator, and the contour that defines the inverse is the choice of causal boundary condition.</p>
+<p>The article reads the analytic structure physically. It states the regularity constraint, the two notions of holomorphy, the Fueter construction, the fundamental solution, the Kirchhoff–Green representation, the residue and the zero-divisor boundary. It does not derive a wave equation, a mass spectrum or a dynamics; it reads the structures the calculus already carries.</p>
+<p>The central statement is that <strong>regularity is an on-shell constraint</strong>. The operator</p>
+<p>$$
+D=\sum_\mu e_\mu\frac{\partial}{\partial Q_\mu}
+$$</p>
+<p>satisfies $DD^{\natural}=D^{\natural}D=\Box$, so a regular field, $DF=0$, is automatically harmonic, $\Box F=0$. The first-order equation is the field equation; the second-order equation is its consequence. The physical reading is the Dirac-type constraint: not every function is a field, and the fields are the kernel of the constraint.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Cauchy–Riemann operator, regularity and harmonicity</td>
+<td><a href="../articles_maths/biquaternion-regular-functions.html">Biquaternion Regular Functions</a></td>
+</tr>
+<tr>
+<td>The shifted operator, the boundary-value criterion and the Helmholtz splitting</td>
+<td><a href="../articles_maths/biquaternion-regular-functions.html">Biquaternion Regular Functions</a>, §<em>The Shifted Operator</em></td>
+</tr>
+<tr>
+<td>The Fueter operator and the axial construction</td>
+<td><a href="../articles_maths/fueter-theory-for-biquaternions.html">Fueter Theory for Biquaternions</a></td>
+</tr>
+<tr>
+<td>The fundamental solution, Green's formulas and the Kirchhoff–Green representation</td>
+<td><a href="../articles_maths/biquaternion-integration.html">Biquaternion Integration</a></td>
+</tr>
+<tr>
+<td>The residue and the residue theorem</td>
+<td><a href="../articles_maths/biquaternion-integration.html">Biquaternion Integration</a>, §<em>The Residue Theory</em></td>
+</tr>
+<tr>
+<td>The gradient, the d'Alembertian and the symbol</td>
+<td><a href="derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a></td>
+</tr>
+<tr>
+<td>The mass shell and the propagation cone</td>
+<td><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a></td>
+</tr>
+<tr>
+<td>The two helicities of a time-harmonic field</td>
+<td><a href="the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.html">The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="regularity-as-a-constraint">Regularity as a Constraint</h2>
+<h3 id="the-operator">The Operator</h3>
+<p>On a four-dimensional real subspace $V\subset\mathbb{B}$ with complex coordinates $Q_t,\dots,Q_z$, the Cauchy–Riemann operator and its conjugate are</p>
+<p>$$
+D=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+\qquad
+D^{\natural}=e_t\frac{\partial}{\partial Q_t}-\sum_{k=1}^{3}\vec e_k\frac{\partial}{\partial Q_k}.
+$$</p>
+<p>The units satisfy the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural}=2\delta_{\mu\nu}e_t$, so the cross terms cancel:</p>
+<p>$$
+DD^{\natural}=D^{\natural}D=\Box
+=\left(\frac{\partial^2}{\partial Q_t^2}+\frac{\partial^2}{\partial Q_x^2}+\frac{\partial^2}{\partial Q_y^2}+\frac{\partial^2}{\partial Q_z^2}\right)e_t.
+$$</p>
+<p>The d'Alembertian is scalar and acts component-wise. On the Euclidean real form it is the Laplacian of signature $(4,0)$; on the material slice it is $-\partial_{t'}^2+\Delta$ of signature $(3,1)$; on the informational slice it is $\partial_t^2-\Delta$ of signature $(1,3)$.</p>
+<h3 id="the-constraint">The Constraint</h3>
+<p>A continuously differentiable function $F$ is <strong>left-regular</strong> if</p>
+<p>$$
+DF=0.
+$$</p>
+<p>The equation is a first-order system of four real equations for four real components. It is not the wave equation; it is the square root of the wave equation. A regular field is harmonic, but a harmonic field need not be regular: the constraint is stronger by one order.</p>
+<p>The physical reading is the <strong>on-shell constraint</strong>. The field equation is first order; the second-order equation is a consequence. A field that satisfies the constraint is a field that propagates; a field that satisfies only the second-order equation is a superposition of propagating and non-propagating parts. The regularity condition selects the propagating part.</p>
+<p>The two notions of regularity are two physical ansätze:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>notion</th>
+<th>condition</th>
+<th>physical reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>single-plane holomorphy</td>
+<td>$F$ independent of two coordinates and holomorphic in $A=q_t+\vec e_xq_x$</td>
+<td>a field on a two-dimensional plane: a plane wave, a reduced model</td>
+</tr>
+<tr>
+<td>hypercomplex regularity</td>
+<td>$DF=0$ in all four coordinates</td>
+<td>a fully four-dimensional constrained field</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first is a reduction; the second is the full constraint. The complex analogy holds on the plane and fails in four dimensions, and the failure is the zero divisors.</p>
+<h2 id="the-fueter-construction">The Fueter Construction</h2>
+<p>The Fueter operator is the same first-order operator read on the quaternionic real form. The <strong>Fueter construction</strong> takes a holomorphic function of one complex variable and extends it axially to a regular function of four variables. The theorem says that the axial extension is regular, and the construction is injective.</p>
+<p>The physical reading is the <strong>axial ansatz</strong>. A field that is symmetric about an axis can be generated from a two-dimensional seed; the Fueter theorem says the ansatz is complete for that symmetry class. The reading is a reduction: the four-dimensional constrained field is assembled from a holomorphic seed, and the seed carries the two-dimensional profile.</p>
+<p>The construction is not a general solution. A regular field need not be axial, and the Fueter construction does not generate the general kernel. It generates the axially symmetric sector, and the theorem is the statement that the sector is exactly the axial extension of the holomorphic functions. The physical reading is a symmetric ansatz with a completeness theorem, not a general propagator.</p>
+<h2 id="the-fundamental-solution">The Fundamental Solution</h2>
+<h3 id="the-kernel">The Kernel</h3>
+<p>The fundamental solution of $D$ on the Euclidean real form is</p>
+<p>$$
+G(Q)=\frac{Q^{\natural}}{\lVert Q\rVert_E^4},
+\qquad
+DG=2\pi^2\delta_0 e_t.
+$$</p>
+<p>It is homogeneous of degree $-3$, and it is regular away from the origin. The constant $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.</p>
+<p>The physical reading is the <strong>propagator</strong>. The kernel is the field of a point source at the origin; the $1/r^3$ falloff is the four-dimensional static field of a point source. The distributional equation is the statement that the source is a delta function at the origin, and the field away from the origin is regular.</p>
+<h3 id="the-representation">The Representation</h3>
+<p>The Borel–Pompeiu formula and the Kirchhoff–Green representation express a field in a region in terms of its boundary values and its sources:</p>
+<p>$$
+F(X)=\int_{\partial\Omega}K(X,Y)F(Y)\,dS_Y
++\int_\Omega G(X-Y)\,DF(Y)\,dV_Y .
+$$</p>
+<p>For a regular field the volume term vanishes, and the field is determined by its boundary data. The physical reading is the <strong>boundary determination</strong>: a regular field inside a region is fixed by its values on the boundary. The representation is the analytic form of the initial-boundary-value problem.</p>
+<p>The Kirchhoff–Green form is the biquaternionic version of the classical representation. It carries the same causal structure: the field at a point is a sum of boundary contributions, and the kernel is singular on the characteristic cone. On the Minkowski slice the cone is the light cone; on the Euclidean form it is the sphere. The reading is the propagation cone, not a signal velocity.</p>
+<h3 id="the-residue">The Residue</h3>
+<p>The Cauchy integral formula and the residue theorem hold where the kernel is defined. The residue at a pole is the coefficient of the singular part, and the contour integral picks the poles enclosed.</p>
+<p>The physical reading is the <strong>pole prescription</strong>. If the kernel is read as a propagator, the pole is the on-shell mode, and the contour is the choice of boundary condition: retarded, advanced or Feynman. The residue is the on-shell residue; the contour is the causal choice. The algebra supplies the poles and the residues; the contour is an extra choice, and the three choices are the three propagators.</p>
+<p>The reading is conditional. The corpus's residue theory is the mathematical theorem; the identification of the contour with a physical propagator is the interpretive step, and it requires a dynamics and a vacuum state that the algebra does not supply.</p>
+<h2 id="the-zero-divisor-boundary">The Zero-Divisor Boundary</h2>
+<p>The Cauchy integral formula fails on the null cone. The kernel $G(Q)=Q^{\natural}/\lVert Q\rVert_E^4$ is singular at $Q=0$, and the algebra's zero divisors make the inverse and the naive inverse function fail on the cone.</p>
+<p>The physical reading is the <strong>boundary of the analytic domain</strong>. The null cone is where the analytic continuation degenerates; the zero divisors are the obstruction. On the material slice the cone is the light cone, and the failure is the massless limit: the kernel is on the cone, the residue is at the pole, and the contour is the prescription.</p>
+<p>The zero divisors also make the naive inverse function fail. The inverse function theorem needs a non-zero Jacobian, and on the cone the Jacobian degenerates. The physical reading is the caustic: the image of a regular map folds, and the fold is the cone.</p>
+<h2 id="the-shifted-operator">The Shifted Operator</h2>
+<p>The shifted operator is</p>
+<p>$$
+D_\alpha=D+M_\alpha,
+\qquad
+\alpha\in\mathbb{B},
+$$</p>
+<p>where $M_\alpha$ is right multiplication by $\alpha$. The equation $D_\alpha F=0$ defines the $\alpha$-hyperholomorphic functions. The parameter is an arbitrary element: it may be a zero divisor, its square need not be scalar, and it need not commute.</p>
+<p>The physical reading is the <strong>mass or chemical potential</strong>. The shift is a constant term in the first-order equation; it is the analogue of a mass term in the Dirac equation or a chemical potential in a finite-density system. The parameter's norm is the mass shell: for the pure element $\alpha=-(i\omega\vec e_x+m\vec e_y)$ the norm is $m^2-\omega^2$, and $\alpha$ is a zero divisor exactly at $\omega=m$. The degenerate branch of the shifted theory is the mass shell of the parameter.</p>
+<p>The boundary-value criterion,</p>
+<p>$$
+P_\alpha f=f
+\quad\text{on }\Gamma,
+\qquad
+P_\alpha=\tfrac12(I+S_\alpha),
+$$</p>
+<p>is the statement that the boundary datum lies in the $+1$ eigenspace of the singular integral operator. The physical reading is the <strong>admissible boundary condition</strong>: not every boundary value is the boundary value of a solution. The criterion selects the admissible data, and the three branches of the theory are the three cases of the parameter: regular, zero divisor with non-zero scalar part, and pure zero divisor.</p>
+<p>The Helmholtz splitting is the <strong>two-helicity decomposition</strong>:</p>
+<p>$$
+\ker(\Delta-\alpha^2)=\ker D_\alpha\oplus\ker D_{-\alpha}
+$$</p>
+<p>for scalar $\alpha$. The two shifted kernels are the two circular polarizations of a time-harmonic field. The differential projectors $\Pi_{\pm\alpha}$ split the ambient space into the two helicity sectors, and the boundary projectors $P_\alpha,Q_\alpha$ split the boundary data. The physical reading is the decomposition of a time-harmonic field into two chiral components, each satisfying a first-order equation.</p>
+<h2 id="physical-interpretations">Physical Interpretations</h2>
+<ul>
+<li><strong>Regularity is an on-shell constraint.</strong> $DF=0$ is the first-order field equation; $DD^{\natural}=\Box$ makes every regular field harmonic. The constraint selects the propagating part.</li>
+<li><strong>The two regularities are two ansätze.</strong> Single-plane holomorphy is a two-dimensional reduction; hypercomplex regularity is the full four-dimensional constraint. The difference is the dimension of the propagation.</li>
+<li><strong>The Fueter construction is the axial ansatz.</strong> A holomorphic seed generates an axially symmetric regular field, and the theorem says the ansatz is complete for that symmetry class.</li>
+<li><strong>The fundamental solution is the propagator.</strong> $G=Q^{\natural}/\lVert Q\rVert^4$ is the field of a point source; the $1/r^3$ falloff is the four-dimensional static field.</li>
+<li><strong>The Kirchhoff–Green formula is boundary determination.</strong> A regular field inside a region is fixed by its boundary values and its sources; the kernel is singular on the propagation cone.</li>
+<li><strong>The residue is the on-shell mode, and the contour is the causal choice.</strong> The poles are the modes; the contour selects retarded, advanced or Feynman. The algebra supplies the poles; the contour is an extra choice.</li>
+<li><strong>The zero divisors are the boundary of the analytic domain.</strong> The Cauchy formula, the inverse and the naive inverse function fail on the null cone; the cone is the caustic of the regular map.</li>
+<li><strong>The shift is a mass or a chemical potential.</strong> The parameter's norm is the mass shell; the degenerate branch is the lightlike parameter; the Helmholtz splitting is the two-helicity decomposition.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>The analytic structure is a calculus, not a dynamics. The article does not derive a wave equation, a mass spectrum, a coupling or a scattering amplitude.</p>
+<p>The propagator reading needs a choice of real slice and a contour. On the Euclidean form the kernel is the static Green function; on the Minkowski slice the propagator is a boundary value of the same kernel, and the boundary value is the causal choice.</p>
+<p>The residue reading is conditional. The residue theorem is mathematical; the identification of the residue with an on-shell mode needs a dynamics.</p>
+<p>The Fueter construction is not a general solution. It generates the axial sector, and the theorem is the completeness of that sector, not of the whole kernel.</p>
+<p>The shifted operator's parameter is not necessarily a physical mass. It is an element of the algebra; the identification with a mass or a chemical potential is a reading, and the mass shell is the zero-divisor condition of the parameter.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The Cauchy–Riemann operator $D$ satisfies $DD^{\natural}=\Box$; a regular field $DF=0$ is harmonic.</li>
+<li>Regularity is an on-shell constraint: the first-order equation is the field equation, the second-order equation its consequence.</li>
+<li>Single-plane holomorphy is a two-dimensional reduction; hypercomplex regularity is the full four-dimensional constraint.</li>
+<li>The Fueter construction is the axial ansatz: a holomorphic seed generates an axially symmetric regular field, and the ansatz is complete for that class.</li>
+<li>The fundamental solution $G=Q^{\natural}/\lVert Q\rVert^4$ is the propagator; the Kirchhoff–Green formula determines a regular field from its boundary data.</li>
+<li>The residue is the on-shell mode; the contour is the causal choice. The algebra supplies the poles, the contour is an extra choice.</li>
+<li>The zero divisors are the boundary of the analytic domain: the Cauchy formula, the inverse and the naive inverse function fail on the null cone.</li>
+<li>The shifted operator $D_\alpha$ is a mass or chemical potential; its norm is the mass shell; the Helmholtz splitting is the two-helicity decomposition.</li>
+<li>The calculus supplies no dynamics, no mass spectrum and no coupling.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D=\sum_\mu e_\mu\partial_\mu$</td>
+<td>the Cauchy–Riemann operator</td>
+</tr>
+<tr>
+<td>$D^{\natural}$</td>
+<td>its quaternion conjugate</td>
+</tr>
+<tr>
+<td>$\Box=DD^{\natural}$</td>
+<td>the d'Alembertian</td>
+</tr>
+<tr>
+<td>$G=Q^{\natural}/\lVert Q\rVert_E^4$</td>
+<td>the fundamental solution</td>
+</tr>
+<tr>
+<td>$D_\alpha=D+M_\alpha$</td>
+<td>the shifted operator</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the shift, a mass or chemical potential</td>
+</tr>
+<tr>
+<td>$\Pi_{\pm\alpha}$</td>
+<td>the Helmholtz projectors</td>
+</tr>
+<tr>
+<td>$S_\alpha$</td>
+<td>the singular integral operator</td>
+</tr>
+<tr>
+<td>$P_\alpha=\tfrac12(I+S_\alpha)$</td>
+<td>the boundary projector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="derivatives-fields-and-transforms.html">Derivatives, Fields and Transforms</a>, for the gradient, the d'Alembertian and the symbol.</li>
+<li><a href="../articles_maths/biquaternion-regular-functions.html">Biquaternion Regular Functions</a>, for the regularity system and the shifted operator.</li>
+<li><a href="../articles_maths/fueter-theory-for-biquaternions.html">Fueter Theory for Biquaternions</a>, for the axial construction.</li>
+<li><a href="../articles_maths/biquaternion-integration.html">Biquaternion Integration</a>, for the fundamental solution, the Kirchhoff–Green formula and the residue.</li>
+<li><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a>, for the cone and the massless limit.</li>
+<li><a href="thermality-from-the-modular-pair-state-clock-and-the-definite-reading.html">Thermality from the Modular Pair</a>, for the state and the clock.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

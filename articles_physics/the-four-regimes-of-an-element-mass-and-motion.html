@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Regimes of an Element: Mass and Motion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-regimes-of-an-element-mass-and-motion"><strong>The Four Regimes of an Element: Mass and Motion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A biquaternion carries two invariant quadratic numbers, and each answers a physical question. The first is the norm</p>
+<p>$$
+N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2,
+\qquad B^2=Q_x^2+Q_y^2+Q_z^2 .
+$$</p>
+<p>On the material sector $N$ is the interval, and on a four-momentum it is $-m^2c^2$: it answers <strong>is there a mass, and of which causal sign?</strong> The second is the vector square $B^2$. It is the discriminant of the characteristic polynomial, and it answers <strong>are there two distinct modes?</strong> On a four-momentum $B=\lvert\vec p\rvert$: it answers <strong>is the element in motion?</strong></p>
+<p>The two questions are independent, and their four answers partition the algebra:</p>
+<p>$$
+\Sigma_{ij}=\{N=0\text{ iff }i=0,\quad B^2=0\text{ iff }j=0\}.
+$$</p>
+<p>The partition is the subject of this article. It is not a classification of mathematical cases with physical labels added afterwards. It is the mass–motion classification of a four-momentum, extended to the full complex algebra, and each cell is a different physical regime with its own spectral behaviour, its own invertibility, and its own relation to the mass shell and the light cone.</p>
+<p>The four cells are treated one to an article: <em>Mass in Motion: The Two-Mode Regime</em> for $\Sigma_{11}$, <em>The Rest Frame and the Exceptional Point</em> for $\Sigma_{10}$, <em>The Massless Regime: Light Rays</em> for $\Sigma_{01}$, and <em>The Vacuum and the Nilpotent Ladder</em> for $\Sigma_{00}$. This article states the partition, the table, the real slices and the limits of the reading. It proves nothing; the sector theorems are those of the four mathematics articles cited below.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The norm, the null cone and its two strata</td>
+<td><a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The characteristic polynomial, the discriminant and the two eigenvalues</td>
+<td><a href="../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The independence of the two conditions and the four sectors</td>
+<td><a href="../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a></td>
+</tr>
+<tr>
+<td>The doubly regular sector</td>
+<td><a href="../articles_maths/the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a></td>
+</tr>
+<tr>
+<td>The norm-regular, spectrally degenerate sector</td>
+<td><a href="../articles_maths/the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a></td>
+</tr>
+<tr>
+<td>The norm-degenerate, spectrally regular sector</td>
+<td><a href="../articles_maths/the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a></td>
+</tr>
+<tr>
+<td>The doubly degenerate sector</td>
+<td><a href="../articles_maths/the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a></td>
+</tr>
+<tr>
+<td>The four-vector dictionary and the interval</td>
+<td><a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a></td>
+</tr>
+<tr>
+<td>The spectral reading of a four-momentum</td>
+<td><a href="the-spectral-reading-of-a-four-vector.html">The Spectral Reading of a Four-Vector</a></td>
+</tr>
+<tr>
+<td>The massless cone and its spectrum</td>
+<td><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a></td>
+</tr>
+<tr>
+<td>The fermionic reading of the nilpotents</td>
+<td><a href="nilpotents-and-fermions-modes-lattices-and-the-semiclassical-limit.html">Nilpotents and Fermions: Modes, Lattices and the Semiclassical Limit</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-two-questions">The Two Questions</h2>
+<h3 id="the-norm-mass-and-causal-sign">The Norm: Mass and Causal Sign</h3>
+<p>The norm is the constant term of the characteristic polynomial,</p>
+<p>$$
+p_{\tilde Q}(X)=X^2-2Q_tX+N,
+\qquad N=Q_t^2+B^2 .
+$$</p>
+<p>It is multiplicative, $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and its vanishing set is the null cone $\mathcal N$, the set of zero divisors. On the material sector, with $\tilde P=i\frac{E}{c}e_t+\vec p$,</p>
+<p>$$
+N=-\frac{E^2}{c^2}+\lvert\vec p\rvert^2=-m^2c^2 .
+$$</p>
+<p>The sign of $N$ is the causal sign: negative timelike, zero lightlike, positive spacelike. The norm therefore answers two questions at once: whether there is an invariant magnitude, and which causal class that magnitude carries. The second is a property of the real slice; in the full algebra $N$ is complex, and only its vanishing is invariant under the full structure.</p>
+<h3 id="the-vector-square-motion">The Vector Square: Motion</h3>
+<p>The vector square is the discriminant,</p>
+<p>$$
+\operatorname{disc}p_{\tilde Q}=-4B^2,
+\qquad \lambda_\pm=Q_t\pm iB .
+$$</p>
+<p>It vanishes exactly when the two eigenvalues coincide. On a four-momentum $B=\lvert\vec p\rvert$, so the condition $B^2=0$ is the condition $\vec p=0$: the element is at rest. The second question is therefore <strong>motion</strong>: a four-momentum has two distinct light-cone frequencies exactly when it moves, and one frequency when it is at rest.</p>
+<p>The identification is not a metaphor. The eigenvalues are $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$, and their difference is $2i\lvert\vec p\rvert$. The splitting is twice the momentum. The rest frame is the only frame in which the splitting vanishes, and it is the only frame in which the two-term spectral writing is not unique.</p>
+<h3 id="why-the-two-questions-are-independent">Why the Two Questions Are Independent</h3>
+<p>The two conditions are two quadratic equations in four complex variables, and neither implies the other. The mixed cells are the witnesses:</p>
+<p>$$
+e_t+i\vec e_x\in\Sigma_{01}
+\qquad(N=0,\ B^2=-1),
+$$</p>
+<p>$$
+e_t+\vec e_x\in\Sigma_{11}
+\qquad(N=2,\ B^2=1),
+$$</p>
+<p>$$
+i e_t\in\Sigma_{10}
+\qquad(N=-1,\ B^2=0),
+$$</p>
+<p>$$
+\vec e_x+i\vec e_y\in\Sigma_{00}
+\qquad(N=0,\ B^2=0).
+$$</p>
+<p>The first is a zero divisor with two distinct modes; the second is a unit with two distinct modes; the third is a unit with one mode; the fourth is a zero divisor with one mode. The four together are the proof that mass and motion are independent questions: each combination occurs.</p>
+<p>The independence is also the reason the partition is fourfold and not twofold. The norm alone gives the unit group and the null cone. The discriminant alone gives the regular and the degenerate cone. The arrangement of the two cones is the four-cell partition, and the cells are the four combinations.</p>
+<h2 id="the-table">The Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>cell</th>
+<th>conditions</th>
+<th>spectrum</th>
+<th>invertible?</th>
+<th>Peirce decomposition</th>
+<th>real material slice</th>
+<th>physical name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$N\neq0$, $B^2\neq0$</td>
+<td>$\{\lambda_+,\lambda_-\}$ distinct, both non-zero</td>
+<td>yes</td>
+<td>unique, both coefficients non-zero</td>
+<td>timelike or spacelike momentum with $\vec p\neq0$</td>
+<td><strong>mass in motion</strong></td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$N\neq0$, $B^2=0$</td>
+<td>$\{Q_t\}$ repeated</td>
+<td>yes</td>
+<td>one term on the scalar line; none on the Jordan part</td>
+<td>a massive momentum at rest; the complex Jordan part is the exceptional point</td>
+<td><strong>rest frame and exceptional point</strong></td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$N=0$, $B^2\neq0$</td>
+<td>$\{2Q_t,0\}$ distinct</td>
+<td>no</td>
+<td>unique, one coefficient zero</td>
+<td>a massless momentum, $\vec p\neq0$</td>
+<td><strong>light ray</strong></td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$N=0$, $B^2=0$</td>
+<td>$\{0\}$</td>
+<td>no</td>
+<td>none off the origin</td>
+<td>the zero momentum, and nothing else</td>
+<td><strong>vacuum and nilpotent ladder</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>The last two columns are the interpretive step, and they are the reason the table is worth an article. The first four columns are algebraic; the last two say what the algebra is a table of.</p>
+<p>The table is exhaustive: every element lies in exactly one cell. The cells are the four combinations of the two conditions; the two cones are their boundaries, and the origin lies in the closure of all four.</p>
+<h2 id="the-four-regimes">The Four Regimes</h2>
+<h3 id="mass-in-motion-math45">Mass in Motion: $\Sigma_{11}$</h3>
+<p>The generic cell. The element is a unit with two distinct eigenvalues, and it is the only cell in which the spectral decomposition has two non-zero coefficients. On the material sector it is a timelike momentum with $\vec p\neq0$ or a spacelike momentum. The eigenvalues are the two light-cone frequencies $mc\,e^{\pm\psi}$ multiplied by $i$; the product is $-m^2c^2$ and the ratio is the squared Doppler factor. The cell is open and dense, of real dimension eight, and its complement is the arrangement.</p>
+<p>The physical content is the <strong>two-mode picture</strong>: two invariant planes, a mode basis, a beat, and a unique decomposition of the element into two null components. It is the regime in which a particle has both a mass and a direction of motion, and in which the mass shell is a level set rather than the cell itself.</p>
+<h3 id="the-rest-frame-and-the-exceptional-point-math50">The Rest Frame and the Exceptional Point: $\Sigma_{10}$</h3>
+<p>The cell of units with a repeated eigenvalue. It has two faces. The <strong>scalar line</strong> $Q_te_t$ is the real rest frame: $\vec p=0$, $B=0$, $N=Q_t^2$, and the single eigenvalue $Q_t=iE/c$. It is semisimple, every basis is an eigenbasis, and the two-term writing is not unique. The <strong>Jordan part</strong> $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, $\vec\Upsilon\neq0$ is defective: one eigenvalue, a Jordan block, no eigenbasis, a shear. It is not on the real material slice, because a real spatial vector has $B^2=\lvert\vec p\rvert^2$, which vanishes only at $\vec p=0$.</p>
+<p>The physical content is therefore double. The scalar line is <strong>the rest frame</strong>: the frame in which the momentum is purely temporal and the two light-cone frequencies coincide. The Jordan part is <strong>the exceptional point</strong>: a complexified momentum at which two modes have coalesced and the operator has become defective. The two share the algebra $N\neq0$, $B^2=0$; they do not share a physics.</p>
+<h3 id="the-light-ray-math63">The Light Ray: $\Sigma_{01}$</h3>
+<p>The cell of zero divisors with two distinct eigenvalues. The element is a non-zero multiple of a non-trivial idempotent, $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$, and its spectrum is $\{c,0\}$. On the material sector it is the light cone minus the apex: a massless momentum, with one light-cone frequency zero and the other $2E/c$. It has a unique Peirce decomposition, a mode basis, and no rest frame: one eigenvalue is zero, so there is no frame in which the two eigenvalues coincide.</p>
+<p>The physical content is the <strong>light ray</strong>: a rank-one element, a direction and a scale, a point of the celestial sphere together with a phase. It is a zero divisor, hence not invertible; it has no logarithm and no generator. The cell is the boundary of the unit group and the interior of the null cone.</p>
+<h3 id="the-vacuum-and-the-nilpotent-ladder-math68">The Vacuum and the Nilpotent Ladder: $\Sigma_{00}$</h3>
+<p>The cell of square-zero elements. Off the origin the element is a pure nilpotent, $\tilde Q=\vec\Upsilon$ with $\vec\Upsilon^2=0$; the origin is the only semisimple point. On the material sector the cell contains only the origin: a real four-momentum with $N=0$ and $B=0$ has $Q_t=0$ and $\vec p=0$. The non-zero nilpotents are not physical null four-momenta; they are the algebraic ladder.</p>
+<p>The physical content is therefore the <strong>vacuum</strong> together with its <strong>nilpotent excitations</strong>. The origin is the unique zero-momentum, zero-scale element. The nilpotents are the one-site fermionic ladder: two nilpotents with anticommutator $e_t$, whose products are orthogonal idempotents and whose products land in $\Sigma_{01}$. The cell is the apex of the arrangement, the common limit of the other three.</p>
+<h2 id="the-real-slices">The Real Slices</h2>
+<p>The table is a table of the full algebra. A physical four-momentum is a point of a real four-dimensional slice, and the slice selects part of each cell.</p>
+<h3 id="the-material-slice">The Material Slice</h3>
+<p>On $\mathbb{M}_-$ the coordinates are $Q_t=ict'$ and $\vec Q=(x,y,z)$ real. Hence</p>
+<p>$$
+B^2=x^2+y^2+z^2\ge0,
+\qquad
+N=-c^2t'^2+x^2+y^2+z^2 .
+$$</p>
+<p>The vector square is non-negative and vanishes exactly at the spatial origin. The material slice therefore meets the four cells as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>cell</th>
+<th>intersection with $\mathbb{M}_-$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>timelike momenta with $\vec p\neq0$, and spacelike momenta</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>the scalar line $Q_t\neq0$, $\vec p=0$: the rest frame</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>the light cone minus the apex: massless momenta</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>the origin only</td>
+</tr>
+</tbody>
+</table></div>
+<p>This is the mass–motion table of a real four-momentum. A real momentum has two distinct modes exactly when it moves. At rest it has one mode. On the light cone it has one zero mode. At the origin it has neither.</p>
+<p>The table also shows what is <strong>not</strong> on the real slice: the Jordan part of $\Sigma_{10}$ and the non-zero nilpotents of $\Sigma_{00}$. Both need a complex isotropic spatial vector. They are regimes of the complexified algebra, not of a real four-momentum, and the physics articles that use them say so.</p>
+<h3 id="the-informational-slice">The Informational Slice</h3>
+<p>On $\mathbb{M}_+$ the coordinates are $Q_t=ct$ real and $\vec Q=i(x',y',z')$. Hence</p>
+<p>$$
+B^2=-(x'^2+y'^2+z'^2)\le0,
+\qquad
+N=c^2t^2-x'^2-y'^2-z'^2 .
+$$</p>
+<p>The vector square is non-positive and vanishes exactly at the spatial origin. The slice meets $\Sigma_{10}$ on the scalar line $x'=y'=z'=0$ and meets $\Sigma_{00}$ only at the origin. The mirror symmetry is exact: on each real slice the vector square has a definite sign, and the spectral cone cuts the slice only along the scalar line.</p>
+<p>The sign reversal is the content of the sector bridge. The same $B^2$ is non-negative on matter and non-positive on information, and the same norm is the interval on one and minus the interval on the other. The four-cell partition is the same partition on both slices; the mirror reverses the signs, not the cells.</p>
+<h2 id="the-mass-shell-and-the-light-cone">The Mass Shell and the Light Cone</h2>
+<p>The four cells are not the mass shell and the light cone. They are the regions cut by the two cones, and the physically distinguished level sets cut across them.</p>
+<ul>
+<li>The <strong>mass shell</strong> $N=-m^2c^2$ is a level set of the norm. It lies in $\Sigma_{11}$ for $\vec p\neq0$ and meets $\Sigma_{10}$ at the rest point $\vec p=0$. It is not a cell: it is a hypersurface that crosses the spectral cone at the rest frame.</li>
+<li>The <strong>light cone</strong> $N=0$ is the union of $\Sigma_{01}$ and the apex $\Sigma_{00}$. It is the boundary of the unit group and the set of zero divisors.</li>
+<li>The <strong>spectral cone</strong> $B^2=0$ is the union of $\Sigma_{10}$ and $\Sigma_{00}$. It is the set of elements with a repeated eigenvalue.</li>
+<li>The <strong>origin</strong> is the intersection of the two cones and the only point at which all four cells meet.</li>
+</ul>
+<p>The reading is the reason the partition is physically useful. A particle is not a cell; a particle is a level set of $N$ together with a motion class. The four cells tell what kind of spectral object the level set is made of. A massive particle at rest and a massive particle in motion are in different cells, although they lie on the same mass shell; a massless particle and the vacuum are in different cells, although they lie on the same light cone.</p>
+<h2 id="what-the-table-does-not-say">What the Table Does Not Say</h2>
+<p>The table is a partition of the algebra by two invariant values. It does not say that the four cells are phases of matter, that they evolve into one another, or that a physical system occupies one cell for all time. The cells are properties of one element at one instant.</p>
+<p>The table does not supply a dynamics. It does not say how an element moves from one cell to another, and it does not supply a mass spectrum. The mass shell is a level set, not an equation of motion.</p>
+<p>The table does not say that the non-zero nilpotents are physical. On the real material slice they are absent; in the full algebra they are the fermionic ladder, and the corpus's reading of them is algebraic, not a claim about physical statistics.</p>
+<p>The table does not say that the cells are Lorentz invariant. The norm is invariant under the dagger sandwich, and the discriminant is not. A boost preserves $N$ and changes $B$, so it moves a massive element along its mass shell; in particular, it moves a massive element from the rest frame $\Sigma_{10}$ into $\Sigma_{11}$. The mass shell and the light cone are Lorentz invariant; the cells are not. A cell is a spectral type at an instant, not an orbit of the Lorentz group.</p>
+<h2 id="physical-interpretations">Physical Interpretations</h2>
+<ul>
+<li><strong>The partition is the mass–motion classification.</strong> $N$ is the invariant mass-squared, and $B^2$ is the motion. The four cells are massive at rest, massive in motion, massless, and the vacuum, extended to the complex algebra.</li>
+<li><strong>The two questions are independent.</strong> A zero divisor can have two modes, and a unit can have one. The mixed cells are the proof, and they are the reason the algebra needs four sectors and not two.</li>
+<li><strong>The spectrum is the pair of light-cone frequencies.</strong> $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$ on the material slice. The sum is twice the energy, the difference twice the momentum, and the product minus the mass squared.</li>
+<li><strong>The rest frame is the scalar line.</strong> It is the only real momentum with one mode, and the only frame in which the spectral writing is not unique. The exceptional point is its complex neighbour, where the one mode is defective.</li>
+<li><strong>The light cone is the massless cell plus the apex.</strong> A massless momentum is a scaled idempotent: a rank-one element with one zero mode. The vacuum is the apex, the only element with no scale and no mode.</li>
+<li><strong>The mass shell crosses the cells.</strong> A particle at rest and a particle in motion are on the same mass shell but in different cells; the cell is the spectral type, the shell is the value of the norm.</li>
+<li><strong>The real slices select half of the table.</strong> On each real slice the vector square has a definite sign, so the spectral cone meets the slice only on the scalar line. The Jordan part and the nilpotents are complex regimes.</li>
+<li><strong>The arrangement is the boundary structure of the unit group.</strong> The units are $\Sigma_{11}\cup\Sigma_{10}$; the zero divisors are $\Sigma_{01}\cup\Sigma_{00}$; the spectral cone is $\Sigma_{10}\cup\Sigma_{00}$; the origin is the common limit.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>The identification of $N$ with $-m^2c^2$ needs the material slice and the four-momentum chart. In the full algebra $N$ is complex, and calling it a mass is an extra identification.</p>
+<p>The identification of $B$ with $\lvert\vec p\rvert$ needs the material slice. In the full algebra $B^2$ is a complex invariant, and "motion" is a name for the spectral splitting, not a velocity.</p>
+<p>The table is a partition of elements, not of states. It does not say that a quantum state is in one cell, and it does not supply a Hilbert-space interpretation of the cells.</p>
+<p>The non-zero nilpotents are not physical null four-momenta. On the real material slice the doubly degenerate cell contains only the origin.</p>
+<p>The cells are not phases and not basins of attraction. No dynamics, no order parameter and no transition is claimed.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The norm $N=Q_t^2+B^2$ answers whether there is an invariant magnitude and, on the material slice, which causal sign it carries. On a four-momentum $N=-m^2c^2$.</li>
+<li>The vector square $B^2$ is the discriminant. It answers whether there are two distinct modes. On a four-momentum $B=\lvert\vec p\rvert$, so it answers whether the momentum moves.</li>
+<li>The two conditions are independent and partition the algebra into four cells: $\Sigma_{11}$ (mass in motion), $\Sigma_{10}$ (rest frame and exceptional point), $\Sigma_{01}$ (light ray), $\Sigma_{00}$ (vacuum and nilpotent ladder).</li>
+<li>$\Sigma_{11}$ is the generic unit with two distinct non-zero eigenvalues and a unique two-term spectral decomposition.</li>
+<li>$\Sigma_{10}$ is the unit with a repeated eigenvalue: the scalar line is the real rest frame, the Jordan part is the complex exceptional point.</li>
+<li>$\Sigma_{01}$ is the zero divisor with spectrum $\{2Q_t,0\}$: a scaled idempotent, a rank-one light ray.</li>
+<li>$\Sigma_{00}$ is the square-zero cell: the origin, the vacuum, and the non-zero nilpotents, the fermionic ladder.</li>
+<li>On the material slice $B^2\ge0$ and the spectral cone meets the slice only on the scalar line; the Jordan part and the nilpotents are complex regimes.</li>
+<li>The mass shell crosses $\Sigma_{11}$ and $\Sigma_{10}$; the light cone is $\Sigma_{01}$ together with the apex. The cells are spectral types, not level sets.</li>
+<li>The table is a partition of elements at an instant. It supplies no dynamics, no mass spectrum and no phase structure.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a biquaternion</td>
+</tr>
+<tr>
+<td>$N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$</td>
+<td>the quaternionic norm</td>
+</tr>
+<tr>
+<td>$B^2=Q_x^2+Q_y^2+Q_z^2$</td>
+<td>the vector square, the discriminant</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$</td>
+<td>the two eigenvalues</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{N=0\}$</td>
+<td>the null cone, the zero-divisor cone</td>
+</tr>
+<tr>
+<td>$\mathcal S=\{B^2=0\}$</td>
+<td>the spectral-degenerate cone</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the cell with $N=0$ iff $i=0$ and $B^2=0$ iff $j=0$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>the material slice, $Q_t=ict'$, $\vec Q$ real</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>the informational slice, $Q_t=ct$, $\vec Q$ imaginary</td>
+</tr>
+<tr>
+<td>$\tilde P=i\frac{E}{c}e_t+\vec p$</td>
+<td>the four-momentum chart</td>
+</tr>
+<tr>
+<td>$m$, $\vec p$, $\psi$</td>
+<td>mass, momentum, rapidity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-n-regular-spectrally-regular-sector-mass-in-motion.html">Mass in Motion: The Two-Mode Regime</a>, for $\Sigma_{11}$.</li>
+<li><a href="the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html">The Rest Frame and the Exceptional Point</a>, for $\Sigma_{10}$.</li>
+<li><a href="the-n-degenerate-spectrally-regular-sector-the-massless-regime.html">The Massless Regime: Light Rays</a>, for $\Sigma_{01}$.</li>
+<li><a href="the-n-degenerate-spectrally-degenerate-sector-the-vacuum-and-the-nilpotent-ladder.html">The Vacuum and the Nilpotent Ladder</a>, for $\Sigma_{00}$.</li>
+<li><a href="the-spectral-reading-of-a-four-vector.html">The Spectral Reading of a Four-Vector</a>, for the Doppler pair and the two-term writing.</li>
+<li><a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>, for the four-vector dictionary.</li>
+<li><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a>, for the cone and the massless limit.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

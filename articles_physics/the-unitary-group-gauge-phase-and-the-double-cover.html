@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unitary Group: Gauge, Phase and the Double Cover — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-unitary-group-gauge-phase-and-the-double-cover"><strong>The Unitary Group: Gauge, Phase and the Double Cover</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The unitary group of the biquaternion algebra is</p>
+<p>$$
+U(\mathbb{B})=\{\tilde U\in\mathbb{B}:\tilde U^{*}\tilde U=e_t\}\cong U(2),
+$$</p>
+<p>not $U(4)$. It is the group of the algebra's unitary elements, and it acts on spinors by left multiplication and on states by conjugation. Its centre is the global phase $U(1)$; its quotient by the centre is $SO(3)$; its norm-one slice is $SU(2)\cong S^3$, the double cover of $SO(3)$.</p>
+<p>The article reads the group physically. It states the group and its topology, reads the left action as the gauge of the spinor and the conjugation as the gauge of the state, the quotient as the Bloch sphere, the flag variety as the space of measurement bases, the polar decomposition as the amplitude–frame split, and the double cover as the spinor. It closes with the relation to the Krein isometry group and with the limits of the gauge reading.</p>
+<p>The distinction that organises the article is the distinction between three actions:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>action</th>
+<th>group</th>
+<th>what it preserves</th>
+<th>physical reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left multiplication on spinors</td>
+<td>$U(2)$</td>
+<td>the Hermitian form and the spinor norm</td>
+<td>the gauge of the spinor</td>
+</tr>
+<tr>
+<td>conjugation $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$</td>
+<td>$U(2)/U(1)\cong SO(3)$</td>
+<td>Hermiticity, trace, positivity and the product</td>
+<td>the gauge of the state and the frame</td>
+</tr>
+<tr>
+<td>dagger sandwich</td>
+<td>$SU(2)\cong S^3$ (norm-one)</td>
+<td>the norm and the two sectors</td>
+<td>the Lorentz group, not a gauge</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three are often conflated because they share the group $SU(2)$. They act on different objects and preserve different structures, and the physical reading of each is different.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The unitary group, its normal form and its topology</td>
+<td><a href="../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The polar decomposition and the retractions</td>
+<td><a href="../articles_maths/the-polar-decomposition-of-a-biquaternion.html">The Polar Decomposition of a Biquaternion</a></td>
+</tr>
+<tr>
+<td>The three actions and the sandwich</td>
+<td><a href="the-element-and-operator-representations.html">Operators and the Three Actions</a></td>
+</tr>
+<tr>
+<td>The minimal left ideals and the spinor spaces</td>
+<td><a href="../articles_maths/the-minimal-left-ideals.html">The Minimal Left Ideals</a></td>
+</tr>
+<tr>
+<td>The Krein isometry group and its Cartan decomposition</td>
+<td><a href="../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a></td>
+</tr>
+<tr>
+<td>The Krein form and the gauge calibration</td>
+<td><a href="the-krein-form-and-the-indefinite-structure.html">The Krein Form and the Indefinite Structure</a></td>
+</tr>
+<tr>
+<td>The state space and the Born form</td>
+<td><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a></td>
+</tr>
+<tr>
+<td>The Lorentz action as a sandwich</td>
+<td><a href="frames-rotations-and-the-lorentz-group.html">Frames, Rotations and the Lorentz Group</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-group">The Group</h2>
+<h3 id="the-normal-form">The Normal Form</h3>
+<p>A unitary biquaternion is a scalar multiple of a unit quaternion:</p>
+<p>$$
+\tilde U=\lambda\,\hat u,
+\qquad
+\lvert\lambda\rvert=1,
+\qquad
+\hat u\in Sp(1)\cong SU(2).
+$$</p>
+<p>The scalar phase and the rotor commute, and the intersection is $\{\pm e_t\}$, so</p>
+<p>$$
+U(\mathbb{B})=S^1\cdot S^3
+\cong(S^1\times S^3)/\{\pm e_t\}
+\cong S^1\times S^3 .
+$$</p>
+<p>The group is four-dimensional, compact and connected. Its maximal torus is $T^2=S^1\times S^1$, and the flag variety is</p>
+<p>$$
+U(\mathbb{B})/T^2\cong S^2 .
+$$</p>
+<p>The homotopy groups are</p>
+<p>$$
+\pi_1(U(\mathbb{B}))=\mathbb{Z},
+\qquad
+\pi_3(U(\mathbb{B}))=\mathbb{Z},
+$$</p>
+<p>and the universal cover is $\mathbb{R}\times S^3$. The norm is the determinant in the matrix model, and it gives the two quotients</p>
+<p>$$
+U(\mathbb{B})/S^3\cong S^1,
+\qquad
+U(\mathbb{B})/U(1)\cong SO(3).
+$$</p>
+<p>The norm-one slice is $SU(2)\cong S^3$; the centre is the global phase $U(1)$; the quotient by the centre is the rotation group.</p>
+<h3 id="the-reading">The Reading</h3>
+<p>The group has three layers, and each is a physical statement.</p>
+<ul>
+<li><strong>The phase.</strong> The centre $U(1)$ is the global phase. It acts trivially on rays and on the algebra's inner automorphisms; it is the redundancy of the description, not a physical degree of freedom.</li>
+<li><strong>The rotor.</strong> The $S^3$ factor is the spatial rotation. Its quotient by the centre is $SO(3)$; its double cover is the spinor.</li>
+<li><strong>The norm.</strong> The determinant $N$ is the scale. On the unitary group it is a phase; the norm-one slice is the determinant-one subgroup.</li>
+</ul>
+<p>The decomposition $U(2)\cong S^1\times S^3$ is therefore the decomposition into phase, rotor and scale, with the scale fixed to a phase on the group. The physical state has a phase and a rotor, not a scale; the scale is the amplitude, and the amplitude is not unitary.</p>
+<h2 id="the-gauge-of-the-state-space">The Gauge of the State Space</h2>
+<h3 id="the-left-action">The Left Action</h3>
+<p>The unitary group acts on the algebra by left multiplication:</p>
+<p>$$
+L_{\tilde U}(\tilde X)=\tilde U\tilde X,
+\qquad
+\tilde U\in U(\mathbb{B}).
+$$</p>
+<p>The action preserves the Hermitian form:</p>
+<p>$$
+\langle\tilde U\tilde X,\tilde U\tilde Y\rangle_{*}
+=\mathrm{Sc}\bigl((\tilde U\tilde X)^{*}\tilde U\tilde Y\bigr)
+=\mathrm{Sc}(\tilde X^{*}\tilde Y)
+=\langle\tilde X,\tilde Y\rangle_{*} .
+$$</p>
+<p>It is an isometry of the Hilbert space. It does not preserve Hermiticity: $(\tilde U\tilde X)^{*}=\tilde X^{*}\tilde U^{*}\neq\tilde U\tilde X$ in general. The left action is therefore the action on the spinor space, not on the state space; the state space carries the conjugation instead.</p>
+<p>The reading is the <strong>gauge of the spinor</strong>. A spinor is an element of a minimal left ideal; a unitary left multiplication is a change of the basis of the spinor. The Hermitian form on the spinor space is invariant, and the global phase is the kernel of the action on rays.</p>
+<p>The state space is not the spinor space. A state is a positive trace-one element, and it transforms by conjugation:</p>
+<p>$$
+\rho\longmapsto \tilde U\rho\tilde U^{*}.
+$$</p>
+<p>The conjugation preserves Hermiticity, the trace, the positivity and the algebra product; its kernel is the global phase. It is the action on the state space, and its effective group is $U(2)/U(1)\cong SO(3)$. The left multiplication and the conjugation are different actions on different objects, and the distinction is the first thing the gauge reading must keep.</p>
+<h3 id="the-bloch-sphere">The Bloch Sphere</h3>
+<p>The quotient by the global phase is</p>
+<p>$$
+U(\mathbb{B})/U(1)\cong SO(3),
+$$</p>
+<p>and the space of pure states of a two-level system is the Bloch sphere $S^2$. The pure states are the Hermitian idempotents; the unitary group acts transitively on them, and the stabiliser of one is the $U(1)$ of the phase. The quotient is the sphere.</p>
+<p>The reading is the <strong>state space</strong>. The unitary group is the group of reversible changes of basis; the quotient by the phase is the space of rays; the pure states are the orbit. The mixed states are the interior of the Bloch ball, and the unitary group acts on them by conjugation.</p>
+<h3 id="the-flag-variety">The Flag Variety</h3>
+<p>The quotient by the maximal torus is</p>
+<p>$$
+U(\mathbb{B})/T^2\cong S^2 .
+$$</p>
+<p>A maximal torus is a pair of commuting phases, and a point of the flag variety is a <strong>measurement basis</strong>: a pair of orthogonal states, up to the two phases. The reading is the choice of a complete measurement. The torus is the pair of phases of the two outcomes; the flag variety is the basis itself.</p>
+<p>The three quotients are therefore three physical spaces:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quotient</th>
+<th>space</th>
+<th>physical reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U(\mathbb{B})/U(1)$</td>
+<td>$SO(3)$</td>
+<td>the space of rays / the Bloch sphere</td>
+</tr>
+<tr>
+<td>$U(\mathbb{B})/T^2$</td>
+<td>$S^2$</td>
+<td>the space of measurement bases</td>
+</tr>
+<tr>
+<td>$U(\mathbb{B})/S^3$</td>
+<td>$S^1$</td>
+<td>the phase / the determinant</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two are both spheres, but they are different spheres: one is the space of states, the other the space of bases.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
+<p>Every invertible element has a polar decomposition</p>
+<p>$$
+\tilde Q=\tilde A\,\tilde U,
+\qquad
+\tilde A=\lvert\tilde Q\rvert\text{ positive},
+\qquad
+\tilde U\text{ unitary},
+$$</p>
+<p>and the unitary group is a strong deformation retract of the unit group. The reading is the <strong>amplitude–frame split</strong>: every operator is a positive amplitude times a unitary frame. The amplitude is the state (the positive factor); the frame is the basis (the unitary factor).</p>
+<p>The polar decomposition is the operator-to-state map. The positive factor carries the probabilities; the unitary factor carries the phase and the orientation. The map is not unique at the degenerate boundary, where the amplitude is not invertible; the unitary factor is then defined only up to the kernel.</p>
+<p>The reading is the reason the unitary group is the gauge group: the physical content of an operator is the positive factor, and the unitary factor is the choice of frame. A gauge transformation is a change of the unitary factor that leaves the amplitude invariant.</p>
+<h2 id="the-double-cover">The Double Cover</h2>
+<p>The norm-one slice is</p>
+<p>$$
+SU(2)\cong S^3,
+$$</p>
+<p>and the map</p>
+<p>$$
+SU(2)\longrightarrow SO(3)
+$$</p>
+<p>is the double cover. A rotation by $2\pi$ is the identity in $SO(3)$ and $-e_t$ in $SU(2)$; a rotation by $4\pi$ is the identity in both. The unitary group is the spin group, and its two-valued representation is the spinor.</p>
+<p>The physical reading is the <strong>spinor</strong>. A state that transforms under $SU(2)$ rather than $SO(3)$ changes sign under a full turn; the sign is unobservable in a single state but observable in an interference experiment. The algebra's minimal left ideals are the spinor spaces, and the unitary group acts on them by left multiplication. The double cover is the algebraic form of half-integer spin.</p>
+<p>The reading is not a derivation of the spin-statistics theorem. It is the statement that the algebra's unitary group is the double cover of the rotation group, and that the spinor representation is the fundamental representation. The statistics is an extra input.</p>
+<h2 id="inside-the-krein-group">Inside the Krein Group</h2>
+<p>The Krein isometry group of the indefinite form is</p>
+<p>$$
+U_J(\mathbb{B})=\{T:T^{*}ET=E\}\cong U(1,3),
+$$</p>
+<p>of real dimension sixteen, non-compact, with maximal compact subgroup $U(1)\times U(3)$ and centre $U(1)$. The compact subgroup generated by the algebra's own isometries is</p>
+<p>$$
+U(1)\times PU(2)\cong U(1)\times SO(3),
+$$</p>
+<p>of dimension four: the central phases and the unitary sandwiches. The norm-one sandwiches form $PSL(2,\mathbb{C})\cong SO^+(1,3)$, the Lorentz group; their non-unitary members are isometries but not automorphisms of the algebra.</p>
+<p>The reading is the <strong>split of the gauge from the frame change</strong>. The compact part is the gauge: the phase and the rotation. The non-compact part is the boost: a change of frame, not a redundancy. The Krein group contains both, and the Cartan decomposition separates them:</p>
+<p>$$
+\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p},
+\qquad
+\mathfrak{k}=\mathfrak{u}(1,3),
+\qquad
+\mathfrak{p}=J\cdot\mathrm{Herm}_4 .
+$$</p>
+<p>The compact part is the gauge; the non-compact part is the physical frame change. The reading is the reason the gauge group is not the whole of $U(1,3)$: the boosts are physical, and only the compact directions are redundant.</p>
+<p>The Cartan involution $\theta_0(T)=(T^{*})^{-1}$ of $U(1,3)$ has fixed group $U(1)\times U(3)$ and symmetric space</p>
+<p>$$
+U(1,3)/(U(1)\times U(3))\cong\mathbb{CH}^3 .
+$$</p>
+<p>The reading is the space of frames: the complex hyperbolic ball is the space of time axes, and the gauge group is the stabiliser of a point. The boosts act transitively on the ball; the gauge group fixes a point.</p>
+<h2 id="physical-interpretations">Physical Interpretations</h2>
+<ul>
+<li><strong>The gauge group of the state space is $U(2)$.</strong> The unitary elements act on spinors by left multiplication and on states by conjugation; the conjugation preserves the Born form and the trace-one slice. The global phase is the kernel; the physical state is a ray.</li>
+<li><strong>The quotient by the phase is the Bloch sphere.</strong> $U(2)/U(1)\cong SO(3)$; the pure states are the Hermitian idempotents, and the unitary group acts transitively on them.</li>
+<li><strong>The quotient by the maximal torus is the space of measurement bases.</strong> $U(2)/T^2\cong S^2$; a maximal torus is a pair of orthogonal states up to their phases.</li>
+<li><strong>The polar decomposition is the amplitude–frame split.</strong> Every operator is a positive amplitude times a unitary frame; the amplitude is the state, the frame is the gauge.</li>
+<li><strong>The double cover is the spinor.</strong> $SU(2)\to SO(3)$; a $2\pi$ rotation is $-e_t$; the spinor changes sign. The algebra's minimal ideals are the spinor spaces.</li>
+<li><strong>The gauge is the compact part of the Krein group.</strong> $U(1)\times PU(2)$ is the compact subgroup; the boosts are physical frame changes, not gauge.</li>
+<li><strong>The norm is the determinant and the scale.</strong> $U(2)/S^3\cong S^1$; the norm-one slice is $SU(2)$; the phase is the $U(1)$ factor.</li>
+<li><strong>The gauge is not a field.</strong> The group is the group of changes of basis; the article supplies no connection, no curvature and no field strength.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<p>The unitary group of the algebra is $U(2)$, not $U(4)$. The full isometry group of the definite Hermitian form on $\mathbb{B}\cong\mathbb{C}^4$ is $U(4)$, but it mixes the left and right actions and does not preserve the algebra product. The algebra's unitary group is the subgroup that acts by left multiplication.</p>
+<p>The left action is not an automorphism of the algebra. It preserves the Hermitian form, but it does not preserve Hermiticity or the product. The conjugation is the automorphism, and its effective group is $U(2)/U(1)\cong SO(3)$. The two actions must not be conflated.</p>
+<p>The dagger sandwich is the Lorentz group, not a gauge group. It preserves the norm and the two sectors, and it acts on the four-vectors; it is a change of frame, not a redundancy of the description.</p>
+<p>The gauge reading is the state-space action. It is not a derivation of the Standard Model gauge group, and it is not a claim that the physical gauge group is $U(2)$.</p>
+<p>The double cover is the spinor, not a derivation of the spin-statistics theorem. The statistics is an extra input.</p>
+<p>No dynamics is supplied. The group is the group of reversible changes of basis; the article does not supply a Hamiltonian, a connection or a field.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>$U(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}\cong U(2)$, with structure $S^1\times S^3$, maximal torus $T^2$, flag variety $S^2$ and universal cover $\mathbb{R}\times S^3$.</li>
+<li>The left action preserves the Hermitian form on spinors; the conjugation preserves the state space. The global phase is the kernel of both, and the quotient $U(2)/U(1)\cong SO(3)$ is the Bloch sphere of rays.</li>
+<li>The quotient $U(2)/T^2\cong S^2$ is the space of measurement bases.</li>
+<li>The polar decomposition splits every operator into a positive amplitude and a unitary frame; the amplitude is the state, the frame is the gauge.</li>
+<li>The norm-one slice is $SU(2)\cong S^3$, the double cover of $SO(3)$; the spinor changes sign under a $2\pi$ rotation.</li>
+<li>The compact part of the Krein group is $U(1)\times PU(2)\cong U(1)\times SO(3)$; the boosts are physical frame changes, not gauge.</li>
+<li>The norm is the determinant and the scale; $U(2)/S^3\cong S^1$ and the norm-one slice is $SU(2)$.</li>
+<li>The group supplies no connection, no curvature, no field and no dynamics.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$U(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$</td>
+<td>the unitary group, $\cong U(2)$</td>
+</tr>
+<tr>
+<td>$S^1\cdot S^3$</td>
+<td>the phase times the rotor</td>
+</tr>
+<tr>
+<td>$T^2$</td>
+<td>a maximal torus</td>
+</tr>
+<tr>
+<td>$U(\mathbb{B})/T^2\cong S^2$</td>
+<td>the flag variety, the measurement bases</td>
+</tr>
+<tr>
+<td>$U(\mathbb{B})/U(1)\cong SO(3)$</td>
+<td>the rays, the Bloch sphere</td>
+</tr>
+<tr>
+<td>$U(\mathbb{B})/S^3\cong S^1$</td>
+<td>the determinant, the phase</td>
+</tr>
+<tr>
+<td>$\tilde Q=\tilde A\tilde U$</td>
+<td>the polar decomposition</td>
+</tr>
+<tr>
+<td>$U(1,3)$</td>
+<td>the Krein isometry group</td>
+</tr>
+<tr>
+<td>$U(1)\times PU(2)$</td>
+<td>its compact subgroup</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for the group and its topology.</li>
+<li><a href="the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a>, for the amplitude–frame split.</li>
+<li><a href="the-element-and-operator-representations.html">Operators and the Three Actions</a>, for the left action, the inner automorphism and the sandwich.</li>
+<li><a href="../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a>, for $U(1,3)$ and the compact part.</li>
+<li><a href="spin-and-the-two-state-spaces.html">Spin and the Two State Spaces</a>, for the spinor spaces and the double cover.</li>
+<li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the state space and the Born form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
