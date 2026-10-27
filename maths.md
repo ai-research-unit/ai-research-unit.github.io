@@ -6547,6 +6547,11 @@
 <a href="articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html">Square Roots of an Element</a>
 <!-- the problem $\tilde\Xi^2=\tilde Q$ for an arbitrary $\tilde Q$; the method free of Clifford algebras, norms and forms, by the same vector–scalar split that solves the central values; the two equations $2\Xi_t\vec\Xi=\vec Q$ and $\Xi_t^2-(\vec\Xi,\vec\Xi)=Q_t$; the two cases according to whether the vector part $\vec Q$ vanishes; the reduced quadratic $4x^2-4Q_tx-(\vec Q,\vec Q)=0$ for $x=\Xi_t^2$, of discriminant $16n$ with the conjugate scalar $n=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}=ne_t$, and the pair $\pm(\sqrt{x}\,e_t+\vec Q/(2\sqrt{x}))$ from each nonzero solution; the complex-scalar case, with the elements $\pm\sqrt{Q_t}e_t$ and the four-real-parameter family of pure $\vec\Xi$ of complex square $-Q_t$, the nilpotent cone at $\tilde Q=0$; the classification of no root, two roots, four roots and continuum, with the roots stated in each case; the specialisation to the three central values, cited to the two companion articles, the roots of $+1$ and of $-1$ in the first and the roots of $0$ in the second and used as a consistency check; the worked examples, verified by squaring. This article owns the classification of $\tilde\Xi^2=\tilde Q$. -->
 
+<a href="articles_maths/m2c-representation-worked-examples.html">$M_2(\mathbb{C})$ Representation : Worked Examples</a>
+<!-- the eight matrices, scalar, Jordan, distinct spectrum, singular, rank one, unitary, Hermitian and normal: the coordinates, the trace and the determinant, the spectrum and the minimal polynomial, the rank, the diagonalising matrix or the Jordan chain, the commutant, the spectral projectors, the polar factors and the normality flags, and the pattern of the eight. -->
+
+<a href="articles_maths/m4c-representation-worked-examples.html">$M_4(\mathbb{C})_L$ Representation : Worked Examples</a>
+<!-- the eight matrices, the checklist of invariants, the projectors, the polar factors and the roster of the series. -->
 
 #### The Four General Products
 
@@ -6613,15 +6618,10 @@
 <a href="articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of a N-Regular Biquaternion</a>
 <!-- the refinement of the two-factor decomposition on the N-regular set $N(\tilde Q)\neq0$, where $\tilde Q_H$ is positive definite and $\tilde Q_0$ is unitary: the modulus $\Rho$ the principal square root of $N(\tilde Q)$ in $\mathcal H$, the unit factor $\tilde U=\tilde Q/\Rho$ of norm one, the scale $r=\lvert\Rho\rvert$ and the central phase $\zeta=\Rho/r$; the four-factor word $\tilde Q=r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the boost $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*})^{1/2}$ Hermitian positive definite of norm one and the rotor $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ a unit real quaternion in $SU(2)$, with the closed forms in $\tilde U\tilde U^{*}$ and the count $8=1+1+3+3$; the relations $\tilde Q_H=r\tilde U_{\mathrm b}$ and $\tilde Q_0=\zeta\tilde u_{\mathrm r}$; the three pairings, the quaternion, the Hamilton root and the Cartan Hermitian, two partial and one total; existence and uniqueness of the word; the algorithm, the group of units $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$, the maximal compact $U(2)$ and the matrix picture; the operator reading on the spinor module, with the twist $\chi(\Rho)=\Rho$ and the labels $(j,j')_{(a,b)}$, $a-b\equiv2j+2j'\pmod 2$; and the worked example $(1+i)e_t+\vec e_x+i\vec e_y$. -->
 
-#### Worked Examples of the Matrix Series
+<a href="articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of a N-Degenerate Biquaternion</a>
+<!-- the polar decomposition on the null cone $N(\tilde Q)=0$, where the modulus vanishes and the modulus–unit form and the four-factor word do not exist: the surviving two-factor decomposition $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H$ Hermitian positive semidefinite of rank at most one and $\tilde Q_0$ a partial isometry; the closed formulas $\tilde Q_H=a e_t+i\vec W/(2a)$, $\tilde Q_H^{+}=\tilde Q_H/(4a^{2})$ and $\tilde Q_0=\tilde Q_H\tilde Q/(4a^{2})$ with $a=\sqrt{\langle\tilde Q\rangle_{*}/2}$ and $\lvert\vec W\rvert=2a^{2}$; the two sectors $\Sigma_{01}$ and $\Sigma_{00}$, the latter split into the origin and the nilpotents; and the four worked examples. -->
 
-<a href="articles_maths/m2c-representation-worked-examples.html">$M_2(\mathbb{C})$ Representation : Worked Examples</a>
-<!-- the eight matrices, scalar, Jordan, distinct spectrum, singular, rank one, unitary, Hermitian and normal: the coordinates, the trace and the determinant, the spectrum and the minimal polynomial, the rank, the diagonalising matrix or the Jordan chain, the commutant, the spectral projectors, the polar factors and the normality flags, and the pattern of the eight. -->
-
-<a href="articles_maths/m4c-representation-worked-examples.html">$M_4(\mathbb{C})_L$ Representation : Worked Examples</a>
-<!-- the eight matrices, the checklist of invariants, the projectors, the polar factors and the roster of the series. -->
-
-#### The Spectral Strata
+#### The Spectral Strata and the N Norm
 
 <a href="articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>
 <!-- the two quadratic conditions read together: the quaternionic norm $N=Q_t^2+B^2$ as the constant term of the characteristic polynomial and the spectral condition $B^2=0$ as its vanishing discriminant, with $N=\lambda_+\lambda_-$, $2Q_t=\lambda_++\lambda_-$ and $-4B^2=4(Q_t^2-N)$; the two degenerations of one quadratic, a zero root and a double root; the four spectral patterns; the norm determined by the spectrum and not conversely; the norm on each cone, $N=Q_t^2$ on $\mathcal S$ and the spectrum $\{2Q_t,0\}$ on $\mathcal N$; the scalar line and the Jordan part sharing the norm and the characteristic polynomial but not the minimal polynomial; the independence of the two cones with the witnesses $e_t+i\vec e_x$ and $e_t+\vec e_x+i\vec e_y$; the intersection $\mathcal N\cap\mathcal S=\{\tilde Q^2=0\}$ the nilpotent cone with the origin, the equal gradients along it and the non-multiplicativity of $\mathcal S$ against the multiplicative $\mathcal N$; the four sectors with their eigenvalue patterns, norms and minimal polynomials, the six strata, and the three partitions by the norm, the characteristic polynomial and the minimal polynomial, the norm the coarser projection; the two decompositions compared, the eigenbasis following the discriminant and the polar decomposition following the norm; the three operator readings, the rank of left multiplication and the sandwich singular exactly on the null cone and the inner derivation nilpotent exactly on the spectral-degenerate cone; and the information chain, the norm the crudest invariant, the characteristic polynomial complete off $\mathcal S$ and two-to-one on it, and the minimal polynomial separating the scalar from the Jordan regime. The norm is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, the spectral side is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*, the sectors are *The N-Regular, Spectrally Regular Sector*, *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*, and the polar-eigenbasis comparison is *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*. -->
@@ -6701,16 +6701,16 @@
 <!-- the sandwich: the scalar times a unipotent operator, the $3+1$ Jordan structure, the polar decomposition of the operator, the coalescence of the two slots, the fixed directions, and the example. -->
 
 <a href="articles_maths/one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html">The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion</a>
-<!-- the one-sided operators on the sector $\tilde Q=c\tilde\Pi$: the rank-one polar pair $\tilde Q=2a\tilde Q_0$, the closed form $\tilde Q_H=2aP$ and $\tilde Q_0=(c/\lvert c\rvert)\tilde\Pi/\sqrt{\kappa}$, the scalar collapse $L_{\tilde Q}=2aL_{\tilde Q_0}$, the projection $L_{\tilde Q}=cL_{\tilde\Pi}$, the rank two, the spectrum $\{c,c,0,0\}$ and the diagonal Peirce form, the image $\tilde Q\mathbb{B}$ and the annihilator kernel, the non-zero singular value $2a$, the phase, the overlap $\cos\theta=1/\sqrt{\kappa}$ of the two singular slots. -->
+<!-- the one-sided operators on the sector $\tilde Q=c\tilde\Pi$: the rank-one polar pair $\tilde Q=2a\tilde Q_0$, the closed form $\tilde Q_H=2aP$ and $\tilde Q_0=(c/\lvert c\rvert)\tilde\Pi/\sqrt{\kappa}$, the scalar collapse $L_{\tilde Q}=2aL_{\tilde Q_0}$, the projection $L_{\tilde Q}=cL_{\tilde\Pi}$, the rank two, the spectrum $\{c,c,0,0\}$ and the diagonal Peirce form, the image $\tilde Q\mathbb{B}$ and the annihilator kernel, the non-zero singular value $2a$, the phase, the overlap $\cos\theta=1/\sqrt{\kappa}$ of the two singular slots, and the exponential. -->
 
 <a href="articles_maths/two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html">The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion</a>
-<!-- the sandwich on the sector: the closed form $\lvert c\rvert^2\Theta_{\tilde\Pi}$, the rank one and the spectrum $\{\lvert c\rvert^2,0,0,0\}$, the image the null line $\mathbb{C}P$ with $P=\tilde Q\tilde Q^{*}/(4a^2)$, the kernel hyperplane, the oblique projection and the eigenvalue-to-singular-value ratio $\cos^2\theta$, the scalar collapse $\Theta_{\tilde Q}=4a^2\Theta_{\tilde Q_0}$, the cancellation of the phase, and the two singular slots. -->
+<!-- the sandwich on the sector: the closed form $\lvert c\rvert^2\Theta_{\tilde\Pi}$, the rank one and the spectrum $\{\lvert c\rvert^2,0,0,0\}$, the image the null line $\mathbb{C}P$ with $P=\tilde Q\tilde Q^{*}/(4a^2)$, the kernel hyperplane, the oblique projection and the eigenvalue-to-singular-value ratio $\cos^2\theta$, the scalar collapse $\Theta_{\tilde Q}=4a^2\Theta_{\tilde Q_0}$, the cancellation of the phase, the two singular slots, and the exponential. -->
 
 <a href="articles_maths/one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html">The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion</a>
-<!-- the one-sided operators of a nilpotent: $L_{\tilde\nu}^2=R_{\tilde\nu}^2=0$, rank two with two Jordan blocks $J_2(0)$, the common image and kernel planes $\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_\pm$, the Peirce matrices and the chains, the scalar collapse $L_{\tilde\nu}=2aL_{\tilde Q_0}$ through the nilpotent partial isometry, and the singular value $2a$. -->
+<!-- the one-sided operators of a nilpotent: $L_{\tilde\nu}^2=R_{\tilde\nu}^2=0$, rank two with two Jordan blocks $J_2(0)$, the common image and kernel planes $\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_\pm$, the Peirce matrices and the chains, the scalar collapse $L_{\tilde\nu}=2aL_{\tilde Q_0}$ through the nilpotent partial isometry, the singular value $2a$, and the unipotent exponential. -->
 
 <a href="articles_maths/two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html">The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion</a>
-<!-- the sandwich of a nilpotent: rank one and square-zero, the single chain $\tilde\Pi_-\mapsto4a^2\tilde\Pi_+\mapsto0$, the image the null line $\mathbb{C}\tilde\Pi_+$, the kernel hyperplane, the Jordan form $J_2(0)\oplus0\oplus0$, the scalar collapse $\Theta_{\tilde Q}=4a^2\Theta_{\tilde Q_0}$ through the nilpotent partial isometry, and the orthogonal singular slots. -->
+<!-- the sandwich of a nilpotent: rank one and square-zero, the single chain $\tilde\Pi_-\mapsto4a^2\tilde\Pi_+\mapsto0$, the image the null line $\mathbb{C}\tilde\Pi_+$, the kernel hyperplane, the Jordan form $J_2(0)\oplus0\oplus0$, the scalar collapse $\Theta_{\tilde Q}=4a^2\Theta_{\tilde Q_0}$ through the nilpotent partial isometry, the orthogonal singular slots, and the unipotent Lorentz flow. -->
 
 <a href="articles_maths/the-sandwich-in-the-m2c-model.html">The Sandwich in the $M_2(\mathbb{C})$ Model</a>
 <!-- the sandwich as the congruence $MXM^{\dagger}$, the preservation of the two halves, the Lorentz action on the anti-Hermitian half, the congruence on the Hermitian half, the factor $r^4$ and the image $CO^{+}(1,3)$. -->
@@ -6803,12 +6803,6 @@
 <a href="articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html">Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion</a>
 <!-- the word on the sector $N\neq0$, $B^2\neq0$: the four factors, the component form, the parameter count, the spectral reading with the distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and the eigenprojectors, the normal and non-normal cases, the Cartan and single logarithms, the group law, the matrix picture, the exponential coordinates, and the two walls. -->
 
-<a href="articles_maths/the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html">The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion</a>
-<!-- the operator exponential $\exp(tL_{\tilde Q})=L_{\exp(t\tilde Q)}$ on the regular sector: its definition and convergence, the spectral form, the half-spin theorem with the weights $e^{\pm i\theta/2}$ and $e^{\mp\psi/2}$, the exponents of the four polar factors, and the behaviour on the walls. -->
-
-<a href="articles_maths/the-two-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html">The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion</a>
-<!-- the operator exponential on the regular sector: $\exp(t\Theta_{\tilde Q})(\tilde X)=\exp(t\tilde Q)\tilde X\exp(t\tilde Q^{*})$, the four eigenvalues, the doubling rule for the exponents of the factors, the cancellation of the central phase, and the weights of the four slots. -->
-
 <a href="articles_maths/relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion</a>
 <!-- the dictionary between the polar word and the eigenvalue data on the regular sector: the scalar factor and the unit-factor eigenvalues, the one-parameter freedom, the eigenprojectors, the Cartan square root, the parallel-axis case, the regimes and the boundary. -->
 
@@ -6827,16 +6821,16 @@
 <a href="articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html">The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion</a>
 <!-- the regrouping $\tilde Q=\tilde H\tilde V$ with $\tilde H$ positive Hermitian and $\tilde V$ unitary, the single equation $\tilde Q\tilde Q^{*}=\tilde H^2$, the exponent split, the comparison with the partial pairings, and the full domain. -->
 
+<a href="articles_maths/the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html">The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion</a>
+<!-- the operator exponential $\exp(tL_{\tilde Q})=L_{\exp(t\tilde Q)}$ on the regular sector: its definition and convergence, the spectral form, the half-spin theorem with the weights $e^{\pm i\theta/2}$ and $e^{\mp\psi/2}$, the exponents of the four polar factors, and the behaviour on the walls. -->
+
+<a href="articles_maths/the-two-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html">The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion</a>
+<!-- the operator exponential on the regular sector: $\exp(t\Theta_{\tilde Q})(\tilde X)=\exp(t\tilde Q)\tilde X\exp(t\tilde Q^{*})$, the four eigenvalues, the doubling rule for the exponents of the factors, the cancellation of the central phase, and the weights of the four slots. -->
+
 #### Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion
 
 <a href="articles_maths/exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html">Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</a>
 <!-- the word on the sector $N\neq0$, $B^2=0$: the normal form $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, the unipotent unit factor, the scalar and axis constraints, the Jordan part, the exact logarithm, the product law, the matrix picture, the exponential coordinates, and the boundary. -->
-
-<a href="articles_maths/the-one-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html">The One-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion</a>
-<!-- the operator exponential of the shear: $\exp(tL_{\tilde Q})=e^{tQ_t}(I+tQ_tL_{\vec\Upsilon})$, the exact exponent, the locked angles, and the behaviour at the scalar line. -->
-
-<a href="articles_maths/the-two-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html">The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion</a>
-<!-- the operator exponential of the null rotation: the finite sandwich $\exp(t\Theta_{\tilde Q})$, the exponent $A+B$ with $A=L_{\vec\Upsilon}$, $B=R_{\vec\Upsilon^{*}}$, and the locked parameter. -->
 
 <a href="articles_maths/relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-degenerate-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Degenerate Biquaternion</a>
 <!-- the polar word read against the Jordan form: the single eigenvalue, the chain, the unipotent unit factor, the exact logarithm, the scalar constraint, the two-frame comparison, and the matrix picture. -->
@@ -6855,6 +6849,12 @@
 
 <a href="articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html">The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</a>
 <!-- the pairing $\tilde Q=\tilde H\tilde V$ on the sector: the positive and unitary factors, the unipotent product, the eigenvalue contrast, the non-commutativity, and the example. -->
+
+<a href="articles_maths/the-one-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html">The One-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion</a>
+<!-- the operator exponential of the shear: $\exp(tL_{\tilde Q})=e^{tQ_t}(I+tQ_tL_{\vec\Upsilon})$, the exact exponent, the locked angles, and the behaviour at the scalar line. -->
+
+<a href="articles_maths/the-two-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html">The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion</a>
+<!-- the operator exponential of the null rotation: the finite sandwich $\exp(t\Theta_{\tilde Q})$, the exponent $A+B$ with $A=L_{\vec\Upsilon}$, $B=R_{\vec\Upsilon^{*}}$, and the locked parameter. -->
 
 ### Geometry
 
