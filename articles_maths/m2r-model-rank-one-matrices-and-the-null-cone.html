@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{R})$ Model : Rank-One Matrices and the Null Cone — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-model-rank-one-matrices-and-the-null-cone"><strong>$M_2(\mathbb{R})$ Model : Rank-One Matrices and the Null Cone</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The determinant of the model is the split-quaternion norm, so the singular matrices are exactly the zero divisors, and the rank of the matrix measures how far an element is from being a unit. In a $2\times2$ matrix the rank takes only the values two, one and zero, and the two non-generic strata are the zero divisors and the origin.</p>
+<p>This article reads the three strata in the model. It proves that the zero divisors are the rank-one matrices, parametrises them as outer products $u v^{\mathsf T}$, separates the nilpotents from the scalar multiples of the idempotents, and computes the link of the null cone: under an orthogonal change of coordinates the cone is $\{|z_1|=|z_2|\}$ and its link in the Euclidean sphere is the Clifford torus.</p>
+<p>The zero divisors themselves are <em>Split-Quaternion Zero Divisors</em>; the norm is <em>Split-Quaternion Norm and Invertibility</em>; the projective geometry of the cone is <em>Split-Quaternion Null Quadric and Projective Geometry</em>; the idempotents are <em>$M_2(\mathbb{R})$ Model : The Idempotents and the Peirce Decomposition</em>.</p>
+<h2 id="the-determinant-as-a-quadratic-form">The Determinant as a Quadratic Form</h2>
+<p><strong>Proposition (the norm is a quadratic form of signature $(2,2)$).</strong> In the split-quaternion coordinates</p>
+<p>$$
+\det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2,
+$$</p>
+<p>and the associated symmetric bilinear form is</p>
+<p>$$
+B(\tilde p,\tilde q) = \tfrac12\bigl(\langle\tilde p+\tilde q\rangle_{\natural}-\langle\tilde p\rangle_{\natural}-\langle\tilde q\rangle_{\natural}\bigr) = p_tq_t+p_xq_x-p_yq_y-p_zq_z.
+$$</p>
+<p>In the basis $1,\vec e_x,\vec e_y,\vec e_z$ its matrix is $\operatorname{diag}(1,1,-1,-1)$.</p>
+<p><strong>Proof.</strong> The determinant is computed in <em>Split-Quaternion Matrix Element Representations</em>, §<em>The Determinant and the Trace</em>. The polar form of a diagonal quadratic form is the diagonal bilinear form with the same signs.</p>
+<p><strong>Corollary (the diagonalisation).</strong> With the complex coordinates</p>
+<p>$$
+z_1 = q_t-iq_x, \qquad z_2 = q_y+iq_z,
+$$</p>
+<p>the norm reads</p>
+<p>$$
+\langle\tilde q\rangle_{\natural} = \lvert z_1\rvert^2-\lvert z_2\rvert^2,
+$$</p>
+<p>and the squared Frobenius norm of the matrix is $2(\lvert z_1\rvert^2+\lvert z_2\rvert^2)$.</p>
+<p><strong>Proof.</strong> Expand $\lvert z_1\rvert^2-\lvert z_2\rvert^2 = q_t^2+q_x^2-q_y^2-q_z^2$, and $\lvert z_1\rvert^2+\lvert z_2\rvert^2 = q_t^2+q_x^2+q_y^2+q_z^2$. The dictionary gives $a^2+b^2+c^2+d^2=2(q_t^2+q_x^2+q_y^2+q_z^2)$, which is twice the latter sum.</p>
+<p>The two complex coordinates exhibit the norm as the difference of two positive definite Hermitian forms in two variables each. This is the split signature $(2,2)$: two positive directions and two negative ones, with no isotropic direction in the coordinate planes.</p>
+<h2 id="the-three-strata">The Three Strata</h2>
+<p><strong>Theorem (the rank stratification).</strong> For a matrix $X=\mathsf{M}_2(\tilde q)$ the following are equivalent:</p>
+<ul>
+<li>$\operatorname{rank}X=2$;</li>
+<li>$\det X\neq0$;</li>
+<li>$X$ is invertible;</li>
+<li>$\tilde q$ is a unit.</li>
+</ul>
+<p>The remaining non-zero matrices have rank one, and they are exactly the zero divisors. The zero matrix has rank zero.</p>
+<p><strong>Proof.</strong> A square matrix is invertible exactly when its determinant is non-zero, and the determinant is the norm; the invertibility criterion of <em>Split-Quaternion Norm and Invertibility</em> says that an element is a unit exactly when its norm is non-zero. A non-zero matrix which is not invertible has rank one.</p>
+<p><strong>Proposition (the strata are the orbits).</strong> The group $GL_2(\mathbb{R})$ acts transitively on the matrices of each rank, and the three orbits are the units, the non-zero zero divisors and the origin.</p>
+<p><strong>Proof.</strong> Two matrices of the same rank are equivalent under left and right multiplication by invertible matrices: this is the rank normal form. For rank one, $X=uv^{\mathsf T}$ with $u,v\neq0$, and $P X Q = (Pu)(Q^{\mathsf T}v)^{\mathsf T}$ is again of rank one.</p>
+<p><strong>Corollary (the cone is smooth off the apex).</strong> The zero-divisor set is the cone $\mathcal N=\{\det X=0\}$, a real cone of dimension three with apex at the origin, and it is a smooth hypersurface away from the apex.</p>
+<p><strong>Proof.</strong> The gradient of $\det$ at $X$ is the adjugate transposed. At a non-zero singular matrix the adjugate is non-zero, since $\operatorname{adj}X=0$ would make every $1\times1$ minor vanish and force $X=0$. So the gradient does not vanish on $\mathcal N\setminus\{0\}$.</p>
+<h2 id="the-rank-one-parametrisation">The Rank-One Parametrisation</h2>
+<p><strong>Theorem (the outer-product form).</strong> Every rank-one matrix is</p>
+<p>$$
+X = uv^{\mathsf T}, \qquad u,v\in\mathbb{R}^2\setminus\{0\},
+$$</p>
+<p>and the pair $(u,v)$ is determined up to the scaling $u\mapsto\lambda u$, $v\mapsto\lambda^{-1}v$.</p>
+<p><strong>Proof.</strong> A rank-one matrix has a one-dimensional image, spanned by some $u\neq0$, and its kernel is a line; a linear functional $v^{\mathsf T}$ with that kernel satisfies $X=uv^{\mathsf T}$ after the choice of $u$. If $u_1v_1^{\mathsf T}=u_2v_2^{\mathsf T}\neq0$ then $u_1$ and $u_2$ span the same line, so $u_2=\lambda u_1$, and then $v_2=\lambda^{-1}v_1$.</p>
+<p><strong>Proposition (the square of a rank-one matrix).</strong> For $X=uv^{\mathsf T}$,</p>
+<p>$$
+X^2 = (v^{\mathsf T}u)\,X.
+$$</p>
+<p>Consequently $X$ is nilpotent exactly when $v^{\mathsf T}u=0$, and $X$ is a non-zero scalar multiple of an idempotent exactly when $v^{\mathsf T}u\neq0$, the idempotent being $X/(v^{\mathsf T}u)$.</p>
+<p><strong>Proof.</strong> $X^2=u(v^{\mathsf T}u)v^{\mathsf T}=(v^{\mathsf T}u)uv^{\mathsf T}$. The two criteria follow, and in the second case $X/(v^{\mathsf T}u)$ has square itself.</p>
+<p><strong>Corollary (the two families of the cone).</strong> The zero divisors split into the nilpotents, the rank-one matrices with $v^{\mathsf T}u=0$, and the multiples of the idempotents, the rank-one matrices with $v^{\mathsf T}u\neq0$. The first family is a cone of dimension two and the second is the complement, a dense open subset of the cone of dimension three.</p>
+<p><strong>Proof.</strong> The condition $v^{\mathsf T}u=0$ is one scalar equation, so the nilpotents are codimension one in the cone. The complementary condition is open and dense.</p>
+<p><strong>Example.</strong> The matrix $X=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ is $uv^{\mathsf T}$ with $u=v=(1,1)$, and $v^{\mathsf T}u=2$, so $X/2$ is the idempotent $\mathsf{M}_2(\tilde\pi_+)$. The matrix $Y=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$ is $uv^{\mathsf T}$ with $u=(1,1)$ and $v=(1,-1)$, and $v^{\mathsf T}u=0$, so $Y$ is nilpotent; it is $4\mathsf{M}_2(\tilde\pi_+E_{11}\tilde\pi_-)$ of the Peirce article.</p>
+<h2 id="the-nilpotents">The Nilpotents</h2>
+<p><strong>Proposition (the nilpotents are the pure null elements).</strong> An element $\tilde q$ satisfies $\tilde q^2=0$ exactly when</p>
+<p>$$
+q_t=0, \qquad q_x^2=q_y^2+q_z^2.
+$$</p>
+<p><strong>Proof.</strong> Write $\tilde q=t+\vec v$. Then $\tilde q^2=t^2+N(\vec v)+2t\vec v$. Both parts must vanish; over $\mathbb{R}$, $2t\vec v=0$ gives $t=0$ or $\vec v=0$, and $\vec v=0$ with $t^2=0$ gives $t=0$. So $t=0$ and $N(\vec v)=0$, which is the displayed equation.</p>
+<p><strong>Corollary (two nappes).</strong> The non-zero nilpotents form the cone $q_x^2=q_y^2+q_z^2$ in the vector subspace $V$, of signature $(2,1)$. It has two connected components, the nappes $q_x>0$ and $q_x<0$, each homeomorphic to $S^1\times\mathbb{R}_{>0}$.</p>
+<p><strong>Proof.</strong> The equation gives $q_x=\pm\sqrt{q_y^2+q_z^2}$, and the two signs are separated by $q_x=0$, where the equation forces $q_y=q_z=0$. Each nappe is parametrised by the sign of $q_x$, an angle in the plane $(q_y,q_z)$ and a positive radius.</p>
+<p>So the nilpotent cone is a proper subcone of the zero-divisor cone: it is the part of the cone lying in the traceless subspace, of dimension two, while the zero-divisor cone has dimension three and is connected.</p>
+<h2 id="the-link-of-the-null-cone">The Link of the Null Cone</h2>
+<p><strong>Theorem (the link is a Clifford torus).</strong> In the Euclidean sphere of matrices of Frobenius norm one, the zero-divisor cone cuts the torus</p>
+<p>$$
+\mathcal N\cap S^3 = \{X : \lvert z_1\rvert=\lvert z_2\rvert=\tfrac12\},
+$$</p>
+<p>with $z_1,z_2$ the complex coordinates of the previous section. This set is a flat torus $S^1\times S^1$.</p>
+<p><strong>Proof.</strong> The squared Frobenius norm is $2(\lvert z_1\rvert^2+\lvert z_2\rvert^2)$ and the determinant is $\lvert z_1\rvert^2-\lvert z_2\rvert^2$. On the unit sphere the two equations give $\lvert z_1\rvert^2=\lvert z_2\rvert^2=\tfrac14$, that is $\lvert z_1\rvert=\lvert z_2\rvert=\tfrac12$, which is the product of the two circles of radius $1/2$. The coordinates $z_1,z_2$ are related to the matrix entries by an orthogonal change of variables up to the factor $\sqrt2$, so this is the intersection with the round sphere.</p>
+<p><strong>Corollary (the projectivised cone).</strong> The projectivised zero-divisor cone is the doubly ruled quadric</p>
+<p>$$
+\mathcal N/\mathbb{R}^\times \cong \mathbb{R}P^1\times\mathbb{R}P^1,
+$$</p>
+<p>the two rulings being the image line $[u]$ and the kernel line $[v]$ of a rank-one matrix $uv^{\mathsf T}$.</p>
+<p><strong>Proof.</strong> The pair of lines $([u],[v])$ determines $X$ up to scale, and conversely $X$ determines its image and kernel. This is the Segre embedding of $\mathbb{R}P^1\times\mathbb{R}P^1$ as the quadric of rank-one matrices, developed in <em>Split-Quaternion Null Quadric and Projective Geometry</em>.</p>
+<p>The link being a torus is the topological form of the double ruling: the torus is the product of the two circles of directions, and the two families of rulings are the two families of circles.</p>
+<h2 id="summary">Summary</h2>
+<p>The determinant of the model is the split-quaternion norm, a quadratic form of signature $(2,2)$, which in the complex coordinates $z_1=q_t-iq_x$ and $z_2=q_y+iq_z$ reads $\lvert z_1\rvert^2-\lvert z_2\rvert^2$. The invertible matrices are the units, the non-zero singular matrices are the zero divisors, and they have rank one; the origin is the only matrix of rank zero.</p>
+<p>Every rank-one matrix is an outer product $uv^{\mathsf T}$, with $X^2=(v^{\mathsf T}u)X$. The nilpotents are the case $v^{\mathsf T}u=0$, equivalently $q_t=0$ and $q_x^2=q_y^2+q_z^2$, a two-dimensional cone with two nappes; the multiples of the idempotents are the complementary dense family. The projectivised cone is the doubly ruled quadric $\mathbb{R}P^1\times\mathbb{R}P^1$, and the link of the cone in the Euclidean sphere is the Clifford torus.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+<th>Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde q\rangle_{\natural}$</td>
+<td>the split-quaternion norm, the determinant</td>
+<td><em>Split-Quaternion Norm and Invertibility</em></td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the polar form of the determinant, signature $(2,2)$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$z_1,z_2$</td>
+<td>the complex coordinates $q_t-iq_x$ and $q_y+iq_z$</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathcal N$</td>
+<td>the null cone $\{\det=0\}$</td>
+<td><em>Split-Quaternion Zero Divisors</em></td>
+</tr>
+<tr>
+<td>$u,v$</td>
+<td>the outer-product parameters of a rank-one matrix</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathbb{R}P^1$</td>
+<td>the projective line of directions</td>
+<td><em>Split-Quaternion Null Quadric and Projective Geometry</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the rank stratification of a matrix algebra.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the Segre embedding and the doubly ruled quadric.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed. (Cambridge University Press, 2001), for the null cones of the low-dimensional Clifford algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
