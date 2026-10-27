@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion"><strong>The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the analytic companion of <em>The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion</em>. On the sector the sandwich is $\lvert Q_t\rvert^{2}$ times a unipotent operator, $\Theta_{\tilde Q}=\lvert Q_t\rvert^{2}(I+\mathsf N)$ with $\mathsf N^{3}=0$, so its exponential is a finite polynomial and the one-parameter group is a family of null rotations.</p>
+<p>The algebra of the sandwich — the $3+1$ Jordan structure, the polar decomposition of the operator, the two slots and the fixed directions — is in the companion. This article reads the exponent: the closed form of $\Theta_{\tilde Q}$ as $e^{A+B}$, the one-parameter group, the interpretation as a null rotation, and the exponents that the boost and the rotor keep.</p>
+<h2 id="the-exponential-at-the-wall">The Exponential at the Wall</h2>
+<p><strong>The exponent of the sandwich.</strong> Write $\vec\Upsilon=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real, so that $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$, and put $A=L_{\vec\Upsilon}$ and $B=R_{\vec\Upsilon^{*}}$. Write $\bar\Upsilon=\vec A-i\vec B$ for the coefficient conjugate. The operators $A$ and $B$ commute and square to zero. Since $\tilde U=e^{\vec\Upsilon}$ and $\tilde U^{*}=e^{\vec\Upsilon^{*}}$,</p>
+<p>$$
+\Theta_{\tilde U}=L_{e^{\vec\Upsilon}}\circ R_{e^{\vec\Upsilon^{*}}}=e^{A}e^{B}=e^{A+B},
+$$</p>
+<p>and $(A+B)^2=2AB$ and $(A+B)^3=0$. Hence</p>
+<p>$$
+\boxed{\;\Theta_{\tilde Q}=\lvert Q_t\rvert^{2}\Theta_{\tilde U}
+=\lvert Q_t\rvert^{2}e^{A+B}
+=\lvert Q_t\rvert^{2}\bigl(I+A+B+AB\bigr)
+=\lvert Q_t\rvert^{2}(I+\mathsf N).\;}
+$$</p>
+<p><strong>The one-parameter group.</strong> Since $\mathsf N^2=2AB$ and $\mathsf N^3=0$,</p>
+<p>$$
+\boxed{\;\exp\bigl(t\Theta_{\tilde Q}\bigr)
+=e^{t\lvert Q_t\rvert^{2}}
+\Bigl(I+t\lvert Q_t\rvert^{2}\mathsf N+\frac{t^{2}\lvert Q_t\rvert^{4}}{2}\mathsf N^{2}\Bigr)\;}
+$$</p>
+<p>for every complex $t$.</p>
+<p><em>Proof.</em> $\Theta_{\tilde Q}=\lvert Q_t\rvert^{2}(I+\mathsf N)$, and $I$ commutes with $\mathsf N$; hence the exponential is $e^{t\lvert Q_t\rvert^{2}}\exp(t\lvert Q_t\rvert^{2}\mathsf N)$, and the second factor truncates at $\mathsf N^3=0$.</p>
+<p><strong>Interpretation: a null rotation.</strong> On $\mathbb{M}_-$ the factor $\tilde U$ has norm one, so $\Theta_{\tilde U}$ preserves the Minkowski form $\langle X\rangle_{\natural}$; the path $\Theta_{e^{t\vec\Upsilon}}$, $0\le t\le1$, connects it to the identity, so it is a proper orthochronous Lorentz transformation. Its single eigenvalue is $1$, and its Jordan form is one block of size three and one of size one. A Lorentz transformation of that type is a <strong>null rotation</strong> (a parabolic element): it fixes a null direction and shears the two transverse directions. The exponential displays the finite shear as $I+s\mathsf N+\frac{s^2}{2}\mathsf N^2$ with $s=t\lvert Q_t\rvert^2$. It contains no rotation angle and no rapidity; the two are locked to the single null parameter $a$. The modulus scales the shear, and the phase cancels.</p>
+<p><strong>What the factors keep.</strong> The factors are not degenerate in the same way as their product. $\Theta_{\tilde U_{\mathrm b}}$ has the simple eigenvalues $e^{\psi}$ and $e^{-\psi}$ and the eigenvalue $1$ with multiplicity two; $\Theta_{\tilde u_{\mathrm r}}$ has the simple eigenvalues $e^{i\theta}$ and $e^{-i\theta}$ and the eigenvalue $1$ with multiplicity two. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$, four times. The boost and the angle are therefore present in the factors and absent from the spectrum of the product. In the product they survive only through the locked parameter $a$, with $\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\psi}{2}=a$.</p>
+<p>The rate is the square of the one-sided rate: $\lvert Q_t\rvert^{2}$ here, $Q_t$ there. The reason is the slot count. The sandwich carries $\vec\Upsilon$ in its left slot and $\vec\Upsilon^{*}$ in its right slot, so the scalar $Q_t$ appears once on each side and the modulus is squared; the one-sided operator carries the left slot only. This is the wall form of the doubling rule: on a vector the two slots add their exponents, and at the wall they add $\vec\Upsilon$ and $\vec\Upsilon^{*}$.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p>The companion gives the matrix of $\Theta_{\tilde Q}$ and its nilpotent part $\mathsf N$. Its exponential is the finite null rotation</p>
+<p>$$
+\exp\bigl(t\Theta_{\tilde Q}\bigr)
+=e^{t}\Bigl(I+t\mathsf N+\frac{t^{2}}{2}\mathsf N^{2}\Bigr)
+=e^{t}
+\begin{pmatrix}
+1+2t+2t^{2}&0&-2it&2it(1+t)\\
+0&1&0&0\\
+2it&0&1&-2t\\
+2it(1+t)&0&2t&1-2t-2t^{2}
+\end{pmatrix},
+$$</p>
+<p>with the matrix $\mathsf N$ above. The fixed coordinate is the second one, which is the $1\times1$ block; the remaining three coordinates carry the chain of length three.</p>
+<h2 id="summary">Summary</h2>
+<p>The sandwich is a scalar times a unipotent operator. With $A=L_{\vec\Upsilon}$ and $B=R_{\vec\Upsilon^{*}}$, the two commute and square to zero, and</p>
+<p>$$
+\Theta_{\tilde Q}=\lvert Q_t\rvert^{2}e^{A+B}
+=\lvert Q_t\rvert^{2}(I+\mathsf N),
+\qquad \mathsf N=A+B+AB,
+\qquad \mathsf N^{2}=2AB,\quad \mathsf N^{3}=0 .
+$$</p>
+<p>Its one-parameter group is the finite polynomial</p>
+<p>$$
+\exp\bigl(t\Theta_{\tilde Q}\bigr)
+=e^{t\lvert Q_t\rvert^{2}}
+\Bigl(I+t\lvert Q_t\rvert^{2}\mathsf N
++\frac{t^{2}\lvert Q_t\rvert^{4}}{2}\mathsf N^{2}\Bigr).
+$$</p>
+<p>On $\mathbb{M}_-$ it is a null rotation: a proper orthochronous Lorentz transformation with the single eigenvalue $1$ and the Jordan form $J_3(1)\oplus J_1(1)$. It fixes a null direction and shears the two transverse directions; it contains no rotation angle and no rapidity.</p>
+<p>The boost and the rotor keep their angles in the factors, with the eigenvalues $e^{\pm\psi}$ and $e^{\pm i\theta}$ and the eigenvalue $1$ twice each, but the product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The two parameters are locked to the null parameter $a$, and the rate is $\lvert Q_t\rvert^{2}$, the square of the one-sided rate.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
+<td>the Hermitian sandwich</td>
+</tr>
+<tr>
+<td>$A=L_{\vec\Upsilon}$, $B=R_{\vec\Upsilon^{*}}$</td>
+<td>the two commuting square-zero operators</td>
+</tr>
+<tr>
+<td>$\mathsf N=A+B+AB$</td>
+<td>the nilpotent part, $\mathsf N^{2}=2AB$, $\mathsf N^{3}=0$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon=\vec A+i\vec B$</td>
+<td>the null vector, with $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$</td>
+</tr>
+<tr>
+<td>$\vec c=\vec A\times\vec B/a^{2}$</td>
+<td>the unit vector of the fixed null direction</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b},\tilde u_{\mathrm r}$</td>
+<td>the positive factor and the rotor</td>
+</tr>
+<tr>
+<td>$\psi,\theta$</td>
+<td>the rapidity and the rotor angle</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>the null parameter</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html">The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the algebraic companion: the Jordan structure, the polar decomposition and the fixed directions.</li>
+<li><a href="the-one-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html">The One-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the shear generated by one multiplication.</li>
+<li><a href="exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html">Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the element word, the exact logarithm and the log defect.</li>
+<li><a href="operators-of-the-polar-word-the-common-framework.html">Operators of the Polar Word: The Common Framework</a>, for the three operators and the sector table.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The One-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-one-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion"><strong>The One-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the analytic companion of <em>The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion</em>. On the sector the element is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$, so the one-sided operator is $Q_t(I+L_{\vec\Upsilon})$ with $L_{\vec\Upsilon}^{2}=0$. Its exponential therefore truncates at degree one: the one-parameter group is a line of shears, not a circle of rotations.</p>
+<p>The algebra of the operator — the two Jordan blocks, the determinant and the trace, the polar word, the image and the kernel — is in the companion. This article reads the exponent: the exact logarithm of the element, the operator exponential, and the constraints that the wall imposes on the rapidity and the angle. The two polar factors survive at the wall, but their exponents are locked to the single null parameter $a$.</p>
+<h2 id="the-exponential-at-the-wall">The Exponential at the Wall</h2>
+<p><strong>One null exponent.</strong> On the sector the element is a scalar times a unipotent element, so its exponential is polynomial. Since $\vec\Upsilon^2=0$,</p>
+<p>$$
+\boxed{\;\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr)=r e^{i\alpha}\varepsilon\,e^{\vec\Upsilon},\qquad
+e^{\vec\Upsilon}=e_t+\vec\Upsilon,\qquad
+\varepsilon=\frac{Q_t}{\Rho}=\pm1.\;}
+$$</p>
+<p>Write $\vec\Upsilon=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real; then $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$. The regular word carries two independent exponents, $i\frac{\psi}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$, about two independent axes. At the wall both factors remain, but their exponents do not add. The formal exponent $i\frac{\psi}{2}\vec u_{\mathrm b}+\frac{\theta}{2}\vec u_{\mathrm r}$ is not the logarithm: its difference from the true exponent $\vec\Upsilon$ is the log defect of <em>Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</em>, §<em>The Formal Exponent and the Defect</em>, whose cross term $i\varepsilon\tanh\frac{\psi}{2}\tan\frac{\theta}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ is non-zero because the axes are orthogonal. The exact exponent is $\vec\Upsilon$ itself. What the wall leaves is a pair of constraints between the two factors:</p>
+<p>$$
+\boxed{\;\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0,\qquad
+\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\psi}{2}=a.\;}
+$$</p>
+<p><em>Proof.</em> From the coordinate boxes of <em>Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</em>, $\cosh\frac{\psi}{2}=\sqrt{1+a^2}$, $\sinh\frac{\psi}{2}=a$, $\lvert\cos\frac{\theta}{2}\rvert=1/\sqrt{1+a^2}$ and $\sin\frac{\theta}{2}=a/\sqrt{1+a^2}$. Hence $\varepsilon\tan\frac{\theta}{2}=a=\sinh\frac{\psi}{2}$. The axes are $\vec u_{\mathrm b}\propto\vec B+\vec A\times\vec B$ and $\vec u_{\mathrm r}=\varepsilon\vec A/a$. The vectors $\vec B$ and $\vec A\times\vec B$ are both orthogonal to $\vec A$, because $\vec A\cdot\vec B=0$, so $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$.</p>
+<p>The wall therefore removes neither factor. It removes two real degrees of freedom: the rapidity and the angle are locked to the single parameter $a$, and the two axes are forced orthogonal. The product of the two factors is the unipotent $\tilde U$, up to the sign $\varepsilon$.</p>
+<p><strong>The operator exponential.</strong> Left multiplication is a representation, $L_{\tilde X}L_{\tilde Y}=L_{\tilde X\tilde Y}$, hence $L_{\exp\tilde X}=\exp L_{\tilde X}$. Since $L_{\vec\Upsilon}^2=L_{\vec\Upsilon^2}=0$,</p>
+<p>$$
+\boxed{\;\exp\bigl(tL_{\tilde Q}\bigr)
+=\exp\bigl(tQ_t(I+L_{\vec\Upsilon})\bigr)
+=e^{tQ_t}\bigl(I+tQ_tL_{\vec\Upsilon}\bigr)\;}
+$$</p>
+<p>for every complex $t$. In particular $\exp L_{\tilde Q}=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$.</p>
+<p><em>Proof.</em> $L_{\tilde Q}=Q_tL_{e_t+\vec\Upsilon}=Q_t(I+L_{\vec\Upsilon})$ and $L_{\vec\Upsilon}^2=0$. The two terms of the exponent commute, because both are polynomials in $L_{\vec\Upsilon}$, so the exponential is $e^{tQ_t}\exp(tQ_tL_{\vec\Upsilon})$, and the second factor is $I+tQ_tL_{\vec\Upsilon}$.</p>
+<p><strong>Interpretation.</strong> The one-parameter group is a line of shears, not a circle of rotations. The exponential moves the identity along the nilpotent direction and stops at degree one; it has no period and carries no angle. The polar angles are in the factors: $L_{\tilde U_{\mathrm b}}$ has the eigenvalues $e^{\pm\psi/2}$, each twice, and $L_{\tilde u_{\mathrm r}}$ has $e^{\pm i\theta/2}$, each twice. Their product has the single eigenvalue $Q_t$, with two Jordan blocks of size two, and its spectrum carries no angle at all. In the regular sector the eigenvalues of $L_{\tilde Q}$ are $\Rho\mu_\pm$ with $\mu_\pm=U_t\pm i\sqrt{1-U_t^2}$ and $U_t=\operatorname{Sc}\tilde U$; at the wall $U_t\to\varepsilon$ and both eigenvalues tend to $\Rho\varepsilon=Q_t$. The only trace of the two angles is the single parameter $a$ that measures the nilpotent part.</p>
+<p>At the wall the spinor exponent is $\vec\Upsilon$ itself, carried by the left slot. The vector exponent of the sandwich is $\vec\Upsilon$ in the left slot plus $\vec\Upsilon^{*}$ in the right. That is the wall form of the doubling: the spinor reading has one slot, the vector reading has two, and the scalar part appears once per slot. This is why the modulus is $Q_t$ in the one-sided reading and $\lvert Q_t\rvert^2$ in the two-sided one, and not a doubled exponent.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p>The companion gives the operator and its nilpotent part in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. Its exponential is the shear</p>
+<p>$$
+\exp\bigl(tL_{\tilde Q}\bigr)=e^{t}\bigl(I+t\,\mathsf M(L_{\vec\Upsilon})\bigr)
+=e^{t}
+\begin{pmatrix}
+1&-t&-it&0\\
+t&1&0&it\\
+it&0&1&-t\\
+0&-it&t&1
+\end{pmatrix},
+$$</p>
+<p>which is the identity plus $t$ times the nilpotent matrix above, multiplied by $e^{t}$. At $t=1$ it is $e$ times the unipotent matrix of the operator, as the box requires.</p>
+<p>The example displays the general form: $\exp(tL_{\tilde Q})=e^{tQ_t}(I+tQ_tL_{\vec\Upsilon})$ with $Q_t=1$ and $\mathsf M(L_{\vec\Upsilon})$ the nilpotent matrix above.</p>
+<h2 id="summary">Summary</h2>
+<p>The element is a scalar times a unipotent element, so its exponential is polynomial:</p>
+<p>$$
+\tilde Q=Q_t(e_t+\vec\Upsilon)=r e^{i\alpha}\varepsilon\,e^{\vec\Upsilon},
+\qquad
+e^{\vec\Upsilon}=e_t+\vec\Upsilon,
+\qquad \varepsilon=\frac{Q_t}{\Rho}=\pm1 .
+$$</p>
+<p>The one-sided operator exponential is a shear,</p>
+<p>$$
+\exp\bigl(tL_{\tilde Q}\bigr)=e^{tQ_t}\bigl(I+tQ_tL_{\vec\Upsilon}\bigr),
+$$</p>
+<p>with no period and no angle. Its eigenvalues are $e^{tQ_t}$, each with a Jordan block of size two; the spectrum of the product $L_{\tilde Q}$ itself is $Q_t$ alone, with two Jordan blocks of size two.</p>
+<p>The two polar factors survive at the wall, with the eigenvalues $e^{\pm\psi/2}$ and $e^{\pm i\theta/2}$, each twice, but their parameters are not free: the axes are orthogonal and</p>
+<p>$$
+\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0,
+\qquad
+\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\psi}{2}=a .
+$$</p>
+<p>The two angles leave a single trace in the spectrum, the null parameter $a$. The spinor exponent is $\vec\Upsilon$ itself, carried by one slot; the vector exponent is $\vec\Upsilon$ in the left slot plus $\vec\Upsilon^{*}$ in the right, which is the wall form of the doubling.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_t(e_t+\vec\Upsilon)$</td>
+<td>the normal form on $\Sigma_{10}$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon=\vec A+i\vec B$</td>
+<td>the null vector, with $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$</td>
+</tr>
+<tr>
+<td>$L_{\tilde Q},R_{\tilde Q}$</td>
+<td>the left and right multiplications</td>
+</tr>
+<tr>
+<td>$L_{\vec\Upsilon}$</td>
+<td>the left multiplication by the null vector, $L_{\vec\Upsilon}^{2}=0$</td>
+</tr>
+<tr>
+<td>$\Rho=r e^{i\alpha}$</td>
+<td>the complex modulus</td>
+</tr>
+<tr>
+<td>$\varepsilon=Q_t/\Rho=\pm1$</td>
+<td>the sign of the scalar part</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b},\tilde u_{\mathrm r}$</td>
+<td>the positive factor and the rotor</td>
+</tr>
+<tr>
+<td>$\psi,\theta$</td>
+<td>the rapidity and the rotor angle</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>the null parameter</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html">The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the algebraic companion: the Jordan structure, the polar word and the image.</li>
+<li><a href="the-two-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html">The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the null rotation generated by the sandwich.</li>
+<li><a href="exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html">Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion</a>, for the element word, the exact logarithm and the log defect.</li>
+<li><a href="operators-of-the-polar-word-the-common-framework.html">Operators of the Polar Word: The Common Framework</a>, for the three operators and the sector table.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
