@@ -1,4 +1,4 @@
-# __One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion__
+# __The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion__
 
 ## Introduction
 
@@ -469,7 +469,7 @@ $$
 
 Hence the exponential is a unit with $B^{2}=0$: for every $t$ it lies in the N-regular, spectrally degenerate sector $\Sigma_{10}$ (at $t=0$ it is $e_t$), not in the doubly regular sector. This is the mirror of the generic $\Sigma_{01}$ flow, which leaves both walls and lies in $\Sigma_{11}$. The exponential moves the element one wall away: it removes the norm degeneration and preserves the spectral one.
 
-The one-sided operator exponential is unipotent with two Jordan blocks of size two at eigenvalue one; this is the operator type of the N-regular, spectrally degenerate one-sided operator of *One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion*. The two-sided companion is a unipotent Lorentz flow of Jordan type $2+1+1$. The one-sided exponential is a shear of the operator space, not a Lorentz transformation.
+The one-sided operator exponential is unipotent with two Jordan blocks of size two at eigenvalue one; this is the operator type of the N-regular, spectrally degenerate one-sided operator of *The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion*. The two-sided companion is a unipotent Lorentz flow of Jordan type $2+1+1$. The one-sided exponential is a shear of the operator space, not a Lorentz transformation.
 
 ## Worked Example
 
@@ -630,9 +630,9 @@ The phase $e^{i\beta}$ is in $\tilde Q_0$; the singular value $2\lvert c_0\rvert
 
 ## Further Reading
 
-- [One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the same two-block Jordan type with a non-zero eigenvalue.
-- [One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the projection case of the same sector pair.
-- [Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the companion sandwich and the single nilpotent chain.
+- [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the same two-block Jordan type with a non-zero eigenvalue.
+- [The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the projection case of the same sector pair.
+- [The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the companion sandwich and the single nilpotent chain.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the canonical Hermitian pair, the Peirce data and the no-eigenbasis theorem.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the Jordan basis used in the Peirce matrices.

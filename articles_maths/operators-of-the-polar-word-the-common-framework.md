@@ -53,13 +53,10 @@ The positive factor is the modulus of the operator: $\lvert\Theta_{\tilde Q}\rve
 | element | sandwich |
 |---|---|
 | scale $r$ | $r^{2}$ |
-| exponent $\ln r$ | $2\ln r$ |
-| one-slot angle $\theta/2$ | $\theta$ |
-| one-slot rapidity $\psi/2$ | $\psi$ |
 | singular value $2a$ | $4a^{2}$ |
 | phase $e^{i\alpha}$ | $1$ |
 
-The first five rows are the doubling of the exponent. The last row is the cancellation of the central phase: $\Theta_{\zeta\tilde Q}=\Theta_{\tilde Q}$ for every central unit $\zeta$, because $\zeta$ commutes with $\tilde X$ and $\zeta\zeta^{*}=1$. On the null cone the collapse is exact and reads
+The scale and the singular value double. The last row is the cancellation of the central phase: $\Theta_{\zeta\tilde Q}=\Theta_{\tilde Q}$ for every central unit $\zeta$, because $\zeta$ commutes with $\tilde X$ and $\zeta\zeta^{*}=1$. The doubling of the exponents $\ln r$, $\theta/2$ and $\psi/2$ is in the operator-exponential companions. On the null cone the collapse is exact and reads
 
 $$
 \Theta_{\tilde Q}=4a^{2}\,\Theta_{\tilde Q_0},\qquad
@@ -122,9 +119,10 @@ The two tables are the whole sector theory in one page. Along each row the rank 
 
 ## Further Reading
 
-- [One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html) and [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the unit case: the four factors, the half-spin, the doubling rule and the conformal image.
-- [One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html) and [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent case and the Jordan types $2+2$ and $3+1$.
-- [One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html) and [Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the rank-one polar pair and the oblique projection.
-- [One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html) and [Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent case and the single chain.
+- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html) and [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the unit case: the four factors, the half-spin, the doubling rule and the conformal image.
+- [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html) and [The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the operator exponential and the doubling of the exponents.
+- [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html) and [The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent case and the Jordan types $2+2$ and $3+1$.
+- [The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html) and [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the rank-one polar pair and the oblique projection.
+- [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html) and [The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent case and the single chain.
 - [The Sandwich in the $M_2(\mathbb{C})$ Model](the-sandwich-in-the-m2c-model.html) and [The Sandwich in the $M_4(\mathbb{C})_L$ Model](the-sandwich-in-the-m4c-l-model.html), for the congruence $X\mapsto MXM^{\dagger}$ in the two matrix models.
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the polar word itself.

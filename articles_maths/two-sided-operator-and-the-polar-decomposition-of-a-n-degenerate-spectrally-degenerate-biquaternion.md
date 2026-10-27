@@ -1,8 +1,8 @@
-# __Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion__
+# __The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion__
 
 ## Introduction
 
-This article is the vector-side companion of *One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion*. The element is a pure null vector
+This article is the vector-side companion of *The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion*. The element is a pure null vector
 
 $$
 \tilde Q=\tilde\nu=\vec A+i\vec B,
@@ -598,9 +598,9 @@ The phase $e^{i\beta}$ cancels in the sandwich. The sandwich depends only on $\l
 
 ## Further Reading
 
-- [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent three-plus-one sandwich at the spectral wall of the regular sector.
-- [Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the projection case of the same sector pair.
-- [One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the companion one-sided operator.
+- [The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent three-plus-one sandwich at the spectral wall of the regular sector.
+- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the projection case of the same sector pair.
+- [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the companion one-sided operator.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the canonical Hermitian pair, the Peirce data and the no-eigenbasis theorem.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the Jordan basis used in the chain.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An algebra acts on itself in two ways at once: from the left, $\tilde Q_3\mapsto \tilde Q_1\tilde Q_3$, and from the right, $\tilde Q_3\mapsto \tilde Q_3\tilde Q_2$. The corpus studies the two families of operators in *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra*, for the indefinite general plain form, and it uses their commuting product in *Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*, §*The Eigenbasis and the Two Spinor Slots*. What the corpus does not yet carry is the **algebra** in which the pair of actions naturally lives. That algebra is the **enveloping algebra**
+An algebra acts on itself in two ways at once: from the left, $\tilde Q_3\mapsto \tilde Q_1\tilde Q_3$, and from the right, $\tilde Q_3\mapsto \tilde Q_3\tilde Q_2$. The corpus studies the two families of operators in *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra*, for the indefinite general plain form, and it uses their commuting product in *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion*, §*The Eigenbasis and the Two Spinor Slots*. What the corpus does not yet carry is the **algebra** in which the pair of actions naturally lives. That algebra is the **enveloping algebra**
 
 $$
 \mathbb B^{\mathrm e} = \mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}},

@@ -1,4 +1,4 @@
-# __One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Regular Biquaternion__
+# __The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion__
 
 ## Introduction
 
@@ -30,7 +30,7 @@ $$
 \boxed{\;L_{\tilde Q}=2a\,L_{\tilde Q_0},\qquad R_{\tilde Q}=2a\,R_{\tilde Q_0},\qquad \tilde Q=2a\,\tilde Q_0\;}
 $$
 
-with $a=\sqrt{\langle\tilde Q\rangle_{*}/2}>0$. The scalar $2a$ is the non-zero singular value of $\tilde Q$ in the matrix model. The operator $L_{\tilde Q}$ has rank two, spectrum $\{c,c,0,0\}$ and no Jordan defect; it is a projection up to scale, not a nilpotent. The spectral wall $B^{2}=0$ is the boundary at which this projection gives way to the square-zero operator of *One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion*.
+with $a=\sqrt{\langle\tilde Q\rangle_{*}/2}>0$. The scalar $2a$ is the non-zero singular value of $\tilde Q$ in the matrix model. The operator $L_{\tilde Q}$ has rank two, spectrum $\{c,c,0,0\}$ and no Jordan defect; it is a projection up to scale, not a nilpotent. The spectral wall $B^{2}=0$ is the boundary at which this projection gives way to the square-zero operator of *The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion*.
 
 The article is organized as follows. §*The Polar Pair* proves the rank-one singular value decomposition. §*The One-Sided Operators* computes the composition laws, the rank, the spectrum, the image and the kernel. §*The Polar Pair, One-Sided* proves the scalar collapse and reads the operator through the pair. §*The Eigenbasis and the Two Slots* gives the diagonal form and the spinorial reading. §*The Exponential* computes the one-parameter group. §*Worked Examples* treats a Hermitian and a non-Hermitian idempotent. The article closes with the summary, the notation and the readings.
 
@@ -544,10 +544,10 @@ with eigenvalues $2,2,0,0$ and singular values $2\sqrt2,2\sqrt2,0,0$. The exampl
 
 ## Further Reading
 
-- [One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the general one-sided theory and the four-factor word.
-- [One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent two-block operator at the spectral wall of the regular sector.
-- [Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the companion sandwich, the rank-one projection and the cancellation of the phase.
-- [One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent case of the same sector pair.
+- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the general one-sided theory and the four-factor word.
+- [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent two-block operator at the spectral wall of the regular sector.
+- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the companion sandwich, the rank-one projection and the cancellation of the phase.
+- [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent case of the same sector pair.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the definition, the spectral decomposition and the spinorial reading of the sector.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the wall $B^{2}=0$, the nilpotents and the canonical Jordan pair.

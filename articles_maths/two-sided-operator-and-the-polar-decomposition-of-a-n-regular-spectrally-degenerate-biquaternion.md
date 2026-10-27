@@ -1,4 +1,4 @@
-# __Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion__
+# __The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion__
 
 ## Introduction
 
@@ -10,9 +10,9 @@ $$
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
 
-It is the two-sided operator of the polar decomposition, and its theory in the regular sector is *Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*. On the N-regular, spectrally degenerate sector the sandwich becomes especially simple: it is a positive scalar times a unipotent operator. The scalar is $|Q_t|^2$; on the Jordan part the unipotent operator has one Jordan block of size three and one of size one, while on the scalar line it is the identity.
+It is the two-sided operator of the polar decomposition, and its theory in the regular sector is *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion*. On the N-regular, spectrally degenerate sector the sandwich becomes especially simple: it is a positive scalar times a unipotent operator. The scalar is $|Q_t|^2$; on the Jordan part the unipotent operator has one Jordan block of size three and one of size one, while on the scalar line it is the identity.
 
-The article states the sandwich, proves the Jordan structure, reads the polar decomposition of the operator, and explains how the two spinor slots of the regular article coalesce at the wall.
+The article states the sandwich, proves the Jordan structure, reads the polar decomposition of the operator, computes the fixed directions, and explains how the two spinor slots of the regular article coalesce at the wall. The exponential of the operator is the companion *The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion*.
 
 ## The Sandwich of the Word
 
@@ -94,7 +94,7 @@ $$
 
 the fourth power of the element determinant, as in the regular sector.
 
-The fixed subspace of $\Theta_{\tilde U}$ is two-dimensional. It is not the centralizer of $\tilde U$: the norm-one element is not unitary, and $\Theta_{\tilde U}$ is not a conjugation. One fixed vector comes from the $3\times3$ block and one from the $1\times1$ block; both are written explicitly in §*The Exponential at the Wall*.
+The fixed subspace of $\Theta_{\tilde U}$ is two-dimensional. It is not the centralizer of $\tilde U$: the norm-one element is not unitary, and $\Theta_{\tilde U}$ is not a conjugation. One fixed vector comes from the $3\times3$ block and one from the $1\times1$ block; both are written explicitly in §*The Fixed Directions*.
 
 ## The Polar Decomposition of the Sandwich
 
@@ -118,40 +118,11 @@ In the regular sector the sandwich has two spinor slots, and the rotor angle and
 
 The central phase is invisible in the sandwich, as in the regular sector: $\Theta_{e^{i\alpha}}=\mathrm{id}$. The phase is visible only in the one-sided operator. The sector therefore preserves the one-sided/two-sided contrast: the phase is a one-sided datum, and the sandwich sees only the scale, the boost and the rotor.
 
-## The Exponential at the Wall
+## The Fixed Directions
 
-**The exponent of the sandwich.** Write $\vec\Upsilon=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real, so that $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$, and put $A=L_{\vec\Upsilon}$ and $B=R_{\vec\Upsilon^{*}}$. Write $\bar\Upsilon=\vec A-i\vec B$ for the coefficient conjugate. The operators $A$ and $B$ commute and square to zero. Since $\tilde U=e^{\vec\Upsilon}$ and $\tilde U^{*}=e^{\vec\Upsilon^{*}}$,
+The fixed subspace is $\ker\mathsf N$, of dimension two. Put $\vec c=\vec A\times\vec B/a^2$, so that $\lvert\vec c\rvert=1$, and $X=e_t+i\vec c$.
 
-$$
-\Theta_{\tilde U}=L_{e^{\vec\Upsilon}}\circ R_{e^{\vec\Upsilon^{*}}}=e^{A}e^{B}=e^{A+B},
-$$
-
-and $(A+B)^2=2AB$ and $(A+B)^3=0$. Hence
-
-$$
-\boxed{\;\Theta_{\tilde Q}=\lvert Q_t\rvert^{2}\Theta_{\tilde U}
-=\lvert Q_t\rvert^{2}e^{A+B}
-=\lvert Q_t\rvert^{2}\bigl(I+A+B+AB\bigr)
-=\lvert Q_t\rvert^{2}(I+\mathsf N).\;}
-$$
-
-**The one-parameter group.** Since $\mathsf N^2=2AB$ and $\mathsf N^3=0$,
-
-$$
-\boxed{\;\exp\bigl(t\Theta_{\tilde Q}\bigr)
-=e^{t\lvert Q_t\rvert^{2}}
-\Bigl(I+t\lvert Q_t\rvert^{2}\mathsf N+\frac{t^{2}\lvert Q_t\rvert^{4}}{2}\mathsf N^{2}\Bigr)\;}
-$$
-
-for every complex $t$.
-
-*Proof.* $\Theta_{\tilde Q}=\lvert Q_t\rvert^{2}(I+\mathsf N)$, and $I$ commutes with $\mathsf N$; hence the exponential is $e^{t\lvert Q_t\rvert^{2}}\exp(t\lvert Q_t\rvert^{2}\mathsf N)$, and the second factor truncates at $\mathsf N^3=0$.
-
-**Interpretation: a null rotation.** On $\mathbb M_-$ the factor $\tilde U$ has norm one, so $\Theta_{\tilde U}$ preserves the Minkowski form $\langle X\rangle_{\natural}$; the path $\Theta_{e^{t\vec\Upsilon}}$, $0\le t\le1$, connects it to the identity, so it is a proper orthochronous Lorentz transformation. Its single eigenvalue is $1$, and its Jordan form is one block of size three and one of size one. A Lorentz transformation of that type is a **null rotation** (a parabolic element): it fixes a null direction and shears the two transverse directions. The exponential displays the finite shear as $I+s\mathsf N+\frac{s^2}{2}\mathsf N^2$ with $s=t\lvert Q_t\rvert^2$. It contains no rotation angle and no rapidity; the two are locked to the single null parameter $a$. The modulus scales the shear, and the phase cancels.
-
-**The fixed null directions.** The fixed subspace is $\ker\mathsf N$, of dimension two. Put $\vec c=\vec A\times\vec B/a^2$, so that $\lvert\vec c\rvert=1$, and $X=e_t+i\vec c$.
-
-*Proposition.* $\Theta_{\tilde U}$ fixes $\vec A$ and $X$. These two vectors span the fixed subspace. On $\mathbb M_-$ the fixed null vector is $iX=ie_t-\vec c$.
+*Proposition.* $\Theta_{\tilde U}$ fixes $\vec A$ and $X$. These two vectors span the fixed subspace. On $\mathbb{M}_-$ the fixed null vector is $iX=ie_t-\vec c$.
 
 *Proof.* From $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$,
 
@@ -184,10 +155,6 @@ $$
 The vector $\vec A$ has zero scalar part and $X$ has scalar part one, so they are independent. Since $\ker\mathsf N$ is two-dimensional, they span it.
 
 The vector $X$ is null, $\langle X\rangle_{\natural}=1-\lvert\vec c\rvert^2=0$, so the fixed line is the null line of the rotation. The vector $\vec A$ is spacelike, of norm $-a^2$.
-
-**What the factors keep.** The factors are not degenerate in the same way as their product. $\Theta_{\tilde U_{\mathrm b}}$ has the simple eigenvalues $e^{\psi}$ and $e^{-\psi}$ and the eigenvalue $1$ with multiplicity two; $\Theta_{\tilde u_{\mathrm r}}$ has the simple eigenvalues $e^{i\theta}$ and $e^{-i\theta}$ and the eigenvalue $1$ with multiplicity two. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$, four times. The boost and the angle are therefore present in the factors and absent from the spectrum of the product. In the product they survive only through the locked parameter $a$, with $\varepsilon\tan\frac{\theta}{2}=\sinh\frac{\psi}{2}=a$.
-
-The rate is the square of the one-sided rate: $\lvert Q_t\rvert^{2}$ here, $Q_t$ there. The reason is the slot count. The sandwich carries $\vec\Upsilon$ in its left slot and $\vec\Upsilon^{*}$ in its right slot, so the scalar $Q_t$ appears once on each side and the modulus is squared; the one-sided operator carries the left slot only. This is the wall form of the doubling rule: on a vector the two slots add their exponents, and at the wall they add $\vec\Upsilon$ and $\vec\Upsilon^{*}$.
 
 ## Worked Example
 
@@ -226,21 +193,7 @@ $$
 $$
 
 and the sandwich is the composition of the positive operator $\Theta_{\tilde H}$ and the unitary operator $\Theta_{\tilde V}$. The example shows the general structure: the product is unipotent, the factors are not, and the fixed coordinate is the remnant of the $1\times1$ block.
-The exponential is the finite null rotation
 
-$$
-\exp\bigl(t\Theta_{\tilde Q}\bigr)
-=e^{t}\Bigl(I+t\mathsf N+\frac{t^{2}}{2}\mathsf N^{2}\Bigr)
-=e^{t}
-\begin{pmatrix}
-1+2t+2t^{2}&0&-2it&2it(1+t)\\
-0&1&0&0\\
-2it&0&1&-2t\\
-2it(1+t)&0&2t&1-2t-2t^{2}
-\end{pmatrix},
-$$
-
-with the matrix $\mathsf N$ above. The fixed coordinate is the second one, which is the $1\times1$ block; the remaining three coordinates carry the chain of length three.
 
 
 ## Summary
@@ -260,12 +213,9 @@ with the matrix $\mathsf N$ above. The fixed coordinate is the second one, which
 | determinant | $\lvert Q_t\rvert^{8}$ |
 | polar factors | $\Theta_{\tilde H}$ positive, $\Theta_{\tilde V}$ unitary |
 | phase | invisible, $\Theta_{e^{i\alpha}}=\mathrm{id}$ |
-| exponential | $\Theta_{\tilde Q}=\lvert Q_t\rvert^2e^{A+B}$, $e^{A+B}=I+\mathsf N$ |
-| one-parameter group | $\exp(t\Theta_{\tilde Q})=e^{t\lvert Q_t\rvert^2}(I+t\lvert Q_t\rvert^2\mathsf N+\frac{t^2\lvert Q_t\rvert^4}{2}\mathsf N^2)$ |
-| rate | $\lvert Q_t\rvert^2$, the square of the one-sided rate |
 | fixed subspace | the span of $\vec A$ and $e_t+i\vec c$, $\vec c=\vec A\times\vec B/a^2$ |
 
-On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: rank four, spectrum $\lvert Q_t\rvert^{2}$ with geometric multiplicity four, Jordan type $1+1+1+1$, and $\mathsf N=0$. The Jordan data in the table are those of the Jordan part.
+On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: rank four, spectrum $\lvert Q_t\rvert^{2}$ with geometric multiplicity four, Jordan type $1+1+1+1$, and $\mathsf N=0$. The Jordan data in the table are those of the Jordan part. The exponential of the operator is the companion *The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion*.
 
 ### What the Sandwich Shows
 
@@ -273,7 +223,6 @@ On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: r
 - Its polar decomposition is the sandwich of the Cartan factors; the factors are positive and unitary, and their product is unipotent.
 - The two spinor slots of the regular sector coalesce into the Jordan chain.
 - The phase cancels, so the sandwich sees only the scale, the boost and the rotor.
-- The exponential is a null rotation on $\mathbb M_-$: it fixes the null direction $ie_t-\vec c$ and shears the two transverse directions.
 
 ## Summary of Notation
 
@@ -295,6 +244,7 @@ On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: r
 
 ## Further Reading
 
-- [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the general sandwich and its two slots.
-- [One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the one-sided companion.
+- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the general sandwich and its two slots.
+- [The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion](the-two-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the null rotation and the locked parameter.
+- [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the one-sided companion.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the element-level factorization used here.

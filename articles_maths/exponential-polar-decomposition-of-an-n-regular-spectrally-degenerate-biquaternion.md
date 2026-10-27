@@ -629,7 +629,7 @@ $\square$
 
 The logarithm is the sum of the scalar logarithm and the nilpotent vector part. The period $2\pi ik\,e_t$ can be added to the scalar logarithm, and no other ambiguity is present on the Jordan part: the logarithm is unique modulo the central periods, because the nilpotent part is fixed by $\tilde Q$.
 
-The operator form of this single exponent is in §*The Exponential at the Wall* of *One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion* and of *Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the sandwich is the null rotation $\Theta_{\tilde Q}=|Q_t|^2e^{A+B}$.
+The operator form of this single exponent is in §*The Exponential at the Wall* of *The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion* and of *The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the sandwich is the null rotation $\Theta_{\tilde Q}=|Q_t|^2e^{A+B}$.
 
 ### The Formal Exponent and the Defect
 

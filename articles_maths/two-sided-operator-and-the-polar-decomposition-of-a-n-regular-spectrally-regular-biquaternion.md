@@ -1,4 +1,4 @@
-# __Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion__
+# __The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion__
 
 ## Introduction
 
@@ -20,11 +20,11 @@ $$
 \qquad \Rho=r\exp(i\alpha),
 $$
 
-the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\psi\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: **what does each factor do to the operator, and what becomes of its exponent?** The answer is a table with one row per factor, and the row that matters is the second. The phase does nothing.
+the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\psi\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: **what does each factor do to the operator?** The answer is read one factor at a time, and the phase does nothing.
 
-The article is the vector-side companion of *The Polar Decomposition of a N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. **The half-spin is the one-sided operator**: a single slot carries the half-angle $\theta/2$ and the half-rapidity $\psi/2$, and the sandwich of this article is their double, the full angle $\theta$ and the full rapidity $\psi$.
+The article is the vector-side companion of *The Polar Decomposition of a N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*.
 
-The plan is the following. §*The Sandwich of the Word* proves the multiplicativity and the closed form $\Theta_{\tilde Q}=r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the full spin as the double of the one-sided half-spin. §*The Angle Bookkeeping* collects the exponents and states the doubling rule. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Vanishing of the Modulus* records the degenerate case. The article closes with the summary, the notation and the readings.
+The plan is the following. §*The Sandwich of the Word* proves the multiplicativity and the closed form $\Theta_{\tilde Q}=r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. The exponent bookkeeping is in *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Vanishing of the Modulus* records the degenerate case. The article closes with the summary, the notation and the readings.
 
 ## Conventions
 
@@ -158,16 +158,6 @@ $$
 \langle\Theta_r(\tilde X)\rangle_{\natural}=r^{4}\langle \tilde X\rangle_{\natural}.
 $$
 
-### The Exponent
-
-The exponent is $\ln r$, and the sandwich sends it to
-
-$$
-\boxed{\;\ln r\longmapsto 2\ln r\;}.
-$$
-
-There is no angle. The factor two is nevertheless the same factor two as in the boost and the rotor: the exponent of the factor is half the exponent of its image. The scale is the case in which the doubled parameter is a dilation and not a rotation or a rapidity. The map $r\mapsto r^{2}$ is an isomorphism of $\mathbb{R}_{>0}$, so the scale is recovered from its sandwich; only the sign of the factor is lost, and the polar word has $r>0$.
-
 ## The Central Phase
 
 ### The Factor
@@ -192,7 +182,7 @@ The two scalars commute with $\tilde X$ and with each other, and the second is t
 
 ### Remark (the Cancelled Phase)
 
-This is the central remark of the article. The phase is the only factor of the word whose sandwich is the identity whatever the value of its parameter. It is not halved, not doubled and not shifted: it is annihilated. Six consequences follow.
+This is the central remark of the article. The phase is the only factor of the word whose sandwich is the identity whatever the value of its parameter. It is not halved, not doubled and not shifted: it is annihilated. Four consequences follow.
 
 **First, the cancellation is exact and global.** It holds for every $\tilde X$, not merely on one subspace, and it uses only two properties, centrality and unitarity. Any central factor of modulus one cancels in any sandwich: if $C$ is central and $C^{*}=C^{-1}$, then
 
@@ -217,10 +207,6 @@ On the unit circle $|\lambda|=1$ the two sandwiches are equal, so the whole $U(1
 The first two are quadratic in $\Rho$ and see $2\alpha$; the third is linear and sees $\alpha$; the sandwich multiplies by $\Rho$ on the left and by $\bar\Rho$ on the right and sees $0$.
 
 **Fourth, the spectral reading confirms it.** The eigenvalues of $\Theta_{\tilde Q}$ are the products $\lambda_i\bar\lambda_j$ of the eigenvalues of $\mathsf M_2(\tilde Q)$, as in §*The Spectrum of the Sandwich*. A phase multiplies every $\lambda_i$ by $\exp(i\alpha)$ and every $\bar\lambda_j$ by $\exp(-i\alpha)$, so every product is unchanged. The cancellation is visible in the spectrum without any computation in coordinates.
-
-**Fifth, the factor $\exp(2i\alpha)$ of the norm is not a doubling by the sandwich.** It is the square of the factor in the product $\tilde Q\tilde Q^{\natural}$: the product has two factors and both carry $\exp(i\alpha)$. The doubling of the boost and the rotor is a different phenomenon, computed in the next two sections. The two must not be conflated: the norm doubles the phase because the product has two factors, while the sandwich doubles the boost because its two slots carry the same exponent, and doubles the rotor because the conjugation is the double cover.
-
-**Sixth, the phase row of the table is zero.** A table that halves every exponent would put $\alpha/2$ in the phase row and would be wrong by the whole phase; a table that repeats the exponent would put $\alpha$ there and would be wrong by the sign of the right factor. The only correct entry is $0$.
 
 ## The Boost
 
@@ -306,10 +292,6 @@ $$
 
 with $B_+=B_-^{-1}$. Each preserves its form, $B_\pm^{T}G_\pm B_\pm=G_\pm$, where $G_+=\operatorname{diag}(1,-1,-1,-1)$ and $G_-=-G_+=\operatorname{diag}(-1,1,1,1)$.
 
-### The Exponent and the Rapidity
-
-The exponent is $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ and the output is the rapidity $\psi$. The parameter of the factor is half the parameter of its image, and the doubling is exact. The boost is Hermitian, so both slots carry the exponent with the same sign; the sandwich adds the two exponents instead of cancelling them, and the sum is $2\cdot\tfrac{\psi}{2}=\psi$.
-
 ## The Rotor
 
 ### The Factor
@@ -357,10 +339,6 @@ $$
 $$
 
 On $\mathbb{M}_-$ the rotor fixes the time direction $ie_t$ and rotates $\vec b$; on $\mathbb{M}_+$ it fixes $e_t$ and rotates $i\vec b$. The formula is the same on the two sectors because $i$ is central.
-
-### The Exponent and the Angle
-
-The exponent is $\tfrac{\theta}{2}\vec u_{\mathrm r}$ and the output is the rotation of angle $\theta$ about $\vec u_{\mathrm r}$. The parameter of the factor is half the parameter of its image. The rotor is unitary, so the two slots carry opposite signs; the sandwich conjugates instead of composing the two exponents, and the conjugation by $\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ is the rotation of angle $\theta$. Equivalently, the double cover $SU(2)\to SO(3)$ sends $\pm\tilde u_{\mathrm r}$ to the same rotation, and the parameter $\theta$ of the image is twice the parameter $\theta/2$ of the rotor. The sandwich sees the rotation and not the sign; the sign is the extra data of the one-sided operator.
 
 ## The Eigenbasis and the Two Spinor Slots
 
@@ -420,108 +398,9 @@ $$
 \overline{\lambda_+\bar\lambda_-}=\lambda_-\bar\lambda_+.
 $$
 
-This is the precise sense in which the sandwich uses **two slots**. A one-sided operator uses one slot and carries the pair $(\lambda_+,\lambda_-)$; the sandwich uses two slots and carries the four products. The factor attached to a slot is half of the factor attached to the pair of slots, which is the spectral form of the doubling rule.
+This is the precise sense in which the sandwich uses **two slots**. A one-sided operator uses one slot and carries the pair $(\lambda_+,\lambda_-)$; the sandwich uses two slots and carries the four products. The factor attached to a slot is the square root of the corresponding product; the exponent reading of that relation is in the companion.
 
 The common eigenbasis is not the eigenbasis of $L_{\tilde Q}$ in general. It is the tensor product of a left eigenbasis of $L_{\tilde Q}$ and a right eigenbasis of $R_{\tilde Q^{*}}$. The two agree whenever $\tilde Q^{*}$ is diagonal in the eigenbasis of $L_{\tilde Q}$; this includes the Hermitian case $\tilde Q^{*}=\tilde Q$, where the four products are the pairings $\lambda_i\lambda_j$, and also the case in which $\tilde Q^{*}$ lies in the span of the two eigenprojections. In general they differ. For a generic polar word the sandwich mixes the two chiral left ideals $S_+$ and $S_-$ of the one-sided reading; the four products are still exact, but they are not the diagonal entries of the Peirce matrix. The pure factors are the exceptions: a pure boost satisfies $\tilde Q^{*}=\tilde Q$, a pure rotor satisfies $\tilde Q^{*}=\tilde Q^{-1}$, and both commute with their own eigenprojections, so their sandwiches preserve $S_+$ and $S_-$. This does not contradict the preservation of the real forms $\mathbb{M}_\pm$: the splitting $\mathbb{B}=S_+\oplus S_-$ is a complex splitting into left ideals, while $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is a real splitting into Hermitian sectors, and they are different decompositions.
-
-### The Pure Factors and the Full Spin
-
-For each pure factor, read with the other factors absent, the products are elementary. The scale $r$ has $\lambda_\pm=r$ and products $r^{2}$. The central phase has $\lambda_\pm=\exp(i\alpha)$ and products $\exp(i\alpha)\exp(-i\alpha)=1$. The boost has
-$$
-\lambda_+=e^{-\psi/2},\qquad \lambda_-=e^{\psi/2},
-$$
-so its products are
-$$
-e^{-\psi},\quad 1,\quad 1,\quad e^{\psi}.
-$$
-The rotor has
-$$
-\lambda_+=e^{i\theta/2},\qquad \lambda_-=e^{-i\theta/2},
-$$
-so its products are
-$$
-e^{i\theta},\quad 1,\quad 1,\quad e^{-i\theta}.
-$$
-The sandwich therefore carries the full rapidity $\psi$ and the full angle $\theta$, while the one-sided operator carries the half-rapidity and the half-angle. The phase cancels and the scale doubles.
-
-**The half-spin is the one-sided operator.** The sandwich has no half-angle of its own: it pairs two one-sided slots, and each slot is the spinor action of *One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*, §*The Half-Spin: the Eigenbasis and the Two Spinor Spaces*. The half-angle $\theta/2$ and the half-rapidity $\psi/2$ live on a single slot; this article computes their products, which are the full angle $\theta$ and the full rapidity $\psi$.
-
-| factor | one-slot pair $(\lambda_+,\lambda_-)$ | two-slot products | output |
-|---|---|---|---|
-| scale $r$ | $(r,r)$ | $r^{2},r^{2},r^{2},r^{2}$ | dilation $r^{2}$ |
-| phase $\exp(i\alpha)$ | $(e^{i\alpha},e^{i\alpha})$ | $1,1,1,1$ | identity |
-| boost $\tilde U_{\mathrm b}$ | $(e^{-\psi/2},e^{\psi/2})$ | $e^{-\psi},1,1,e^{\psi}$ | rapidity $\psi$ |
-| rotor $\tilde u_{\mathrm r}$ | $(e^{i\theta/2},e^{-i\theta/2})$ | $e^{i\theta},1,1,e^{-i\theta}$ | angle $\theta$ |
-
-The scale and the phase are central. Their rows are read as scalar multipliers of a word with $B\neq0$; for a purely central element $B=0$ and the spectrum collapses to $Q_t\bar Q_t$.
-
-For a general word the two factors do not commute, and the common eigenbasis is not the eigenbasis of $L_{\tilde Q}$. The product formula for the spectrum remains exact. The splitting of the products into a boost and a rotation is the content of §*The Boost* and §*The Rotor* when the axes commute; in general the effective exponent is the sum of the two slot exponents only after the common eigenbasis is chosen. The relation between the spectral data and the polar parameters is *Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion*, §*The Spectral Data from the Polar Factors*.
-
-**Corollary (the sandwich is the two-slot operator).** The sandwich acts on the left and the right slots of the matrix model. Its spectrum is the four products $\lambda_i\bar\lambda_j$. The one-sided operator is the restriction to one slot; the two-sided operator is the pairing of the two slots. The half-angle of the rotor and the half-rapidity of the boost belong to one slot; their doubles belong to the pair.
-
-### The Vector Representation as the Double of the Half-Spin
-
-The two slots are the two tensor factors of $\mathbb{B}\cong S\otimes S^{*}$, where $S=\mathbb{C}^{2}$ is the spinor space and $S^{*}$ its dual. The left factor acts on $S$, the right on $S^{*}$, and the sandwich is
-$$
-\Theta_{\tilde Q}=\rho(\tilde Q)\otimes\bar\rho(\tilde Q),
-$$
-where $\rho$ is the defining representation on $S=\mathbb{C}^{2}$ and $\bar\rho$ its conjugate. The tensor product of the defining representation and its conjugate is the complexified vector representation,
-$$
-2\otimes\bar 2=4,
-$$
-so the sandwich is the vector and the one-sided operator, on one slot, is the spinor.
-
-The weights add. For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta/2}$ and $\bar\rho(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta/2}$; the four sums are $\theta,0,0,-\theta$. For the boost, both slots carry $e^{\mp\psi/2}$ because the boost is Hermitian; the four sums are $\psi,0,0,-\psi$. In both cases the vector weights are the sums of the two spinor weights, and each extremal vector weight is twice a spinor weight.
-
-**The sandwich has no half-angle of its own.** It is the vector representation, of dimension four; its weights are the sums. The half-angle $\theta/2$ and the half-rapidity $\psi/2$ live on a single slot, in *One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion*, §*The Half-Spin: the Eigenbasis and the Two Spinor Spaces*. The sandwich is the double of the half-spin, not a half-spin itself.
-
-**The two Peirce chiralities are not the two Lorentz chiralities.** The two columns $S_+$ and $S_-$ carry the same Weyl representation $\rho$; the two Lorentz chiralities are the two tensor slots $S$ and $S^{*}$, that is the left and right slots.
-
-**The addition is at the level of generators.** For a general word the two slot exponents do not combine into one rapidity and one angle unless the axes commute. The four products $\lambda_i\bar\lambda_j$ remain exact; the split into a boost and a rotation is the content of §*The Boost* and §*The Rotor* for commuting axes. For a pure non-central factor the eigenvalue $1$ occurs twice in the list; for the scale the value $r^{2}$ occurs four times, and for the phase the value $1$ occurs four times.
-
-The whole section assumes $B\neq0$. When $B=0$ and $\vec Q\neq0$, $L_{\tilde Q}$ is defective, with two Jordan blocks of size two, the common eigenbasis of $L_{\tilde Q}$ and $R_{\tilde Q^{*}}$ does not exist, and the spectral formula is unavailable; the sandwich itself remains defined. This is the degenerate case of *The Spectrum*, §*The Degenerate Case: The Spectral-Degenerate Cone*.
-
-## The Angle Bookkeeping
-
-### The Table
-
-| factor | exponent | kind of exponent | sandwich | output parameter | angle |
-|---|---|---|---|---|---|
-| scale $r$ | $\ln r$ | real scalar | $r^{2}\tilde X$ | $2\ln r$ | none |
-| phase $\exp(i\alpha)$ | $i\alpha$ | imaginary scalar | $\tilde X$ | $0$ | none |
-| boost $\tilde U_{\mathrm b}$ | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | imaginary vector | congruence | rapidity $\psi$ | rapidity |
-| rotor $\tilde u_{\mathrm r}$ | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | real vector | automorphism | angle $\theta$ | rotation |
-
-The table is a table of exponents, not of angles alone. The scale doubles its exponent and produces no angle; the phase produces no exponent and no angle; the boost and the rotor double theirs and produce a rapidity and a rotation.
-
-### The Doubling Rule
-
-**Proposition (the doubling rule).** Write each factor as $F=\exp(tA)$, where $t$ is its scalar parameter and $A$ its generator: $A=e_t$ for the scale, $A=i$ for the phase, $A=i\vec u_{\mathrm b}$ for the boost and $A=\vec u_{\mathrm r}$ for the rotor. Then
-
-$$
-\Theta_F(\tilde X)=\exp(tA)\,\tilde X\,\exp(tA^{*}).
-$$
-
-Three cases exhaust the word:
-
-**(a)** $A^{*}=A$ (Hermitian). The two slots carry the same exponent $+tA$. If $A$ is central, as for the scale with $A=e_t$, the sandwich is multiplication by $\exp(2tA)$; if $A$ is non-central, as for the boost with $A=i\vec u_{\mathrm b}$, the sandwich is the congruence whose parameter is $2t$. In both cases the output parameter is $2t$.
-
-**(b)** $A^{*}=-A$ and $A$ non-central (the rotor, $A=\vec u_{\mathrm r}$). The two slots carry opposite exponents, so the sandwich is the conjugation $\exp(t\,\mathrm{ad}_A)$, whose vector action is the rotation of angle $2t$; the output parameter is $2t$.
-
-**(c)** $A^{*}=-A$ and $A$ central (the phase, $A=i$). The two slots carry opposite exponents and $A$ commutes with everything, so $\mathrm{ad}_A=0$ and the output parameter is $0$.
-
-In one formula,
-
-$$
-\text{output parameter}=
-\begin{cases}
-2t, & A^{*}=A,\\
-2t, & A^{*}=-A\ \text{and}\ A\ \text{non-central},\\
-0, & A^{*}=-A\ \text{and}\ A\ \text{central}.
-\end{cases}
-$$
-
-The doubling is therefore a property of the non-central factors, and of the Hermitian central one; the cancellation is a property of the skew-Hermitian central one. "Half-angle" is the name of the boost and rotor rows; it is not a property of the phase.
 
 ## The Image and the Kernel
 
@@ -597,14 +476,14 @@ $$
 \Theta_{\exp(i\alpha)}=\mathrm{id}.
 $$
 
-The scale dilates by $r^{2}$ and doubles its exponent $\ln r$ to $2\ln r$. The phase cancels: its exponent $i\alpha$ produces nothing, because it is central and unitary, and the whole $U(1)$-orbit of an element has one sandwich. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$; its exponent $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ produces the rapidity $\psi$. The rotor is an inner automorphism; its exponent $\tfrac{\theta}{2}\vec u_{\mathrm r}$ produces the rotation of angle $\theta$. The doubling rule is that a Hermitian exponent and a non-central skew-Hermitian exponent double, while a central skew-Hermitian exponent cancels. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the sandwich is an isometry on the unit-norm slice.
+The scale dilates by $r^{2}$. The phase cancels: the whole $U(1)$-orbit of an element has one sandwich, because the phase is central and unitary. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$, and the rotor is an inner automorphism; on the norm-one slice they produce the rapidity $\psi$ and the rotation of angle $\theta$. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the sandwich is an isometry on the unit-norm slice.
 
-The spectral form of the rule is the product formula. The left and right slots commute, and their eigenvalues are $\lambda_\pm$ and $\bar\lambda_\pm$. The spectrum of the sandwich is
+The spectral form of the pairing is the product formula. The left and right slots commute, and their eigenvalues are $\lambda_\pm$ and $\bar\lambda_\pm$. The spectrum of the sandwich is
 $$
 \operatorname{spec}\Theta_{\tilde Q}
 =\bigl\{\lambda_+\bar\lambda_+,\ \lambda_+\bar\lambda_-,\ \lambda_-\bar\lambda_+,\ \lambda_-\bar\lambda_-\bigr\}.
 $$
-The one-slot pair of the rotor is $(e^{i\theta/2},e^{-i\theta/2})$ and the two-slot products are $e^{\pm i\theta}$; the one-slot pair of the boost is $(e^{-\psi/2},e^{\psi/2})$ and the products are $e^{\pm\psi}$; the scale gives $r^{2}$ and the phase gives $1$. The sandwich is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\rho\otimes\bar\rho$, the complexified vector representation: the vector weights are the sums of the two spinor weights, so the sandwich is the double of the half-spin, not a half-spin itself. **The half-spin is the one-sided operator**: the half-angle and the half-rapidity are carried by one slot, and the full angle and the full rapidity are their products over the two slots.
+The sandwich is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\rho\otimes\bar\rho$, the complexified vector representation: the vector weights are the sums of the two spinor weights. The exponent reading of this doubling is in *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*.
 
 The image of the sandwich on the group of units is $CO^{+}(1,3)$, the kernel is $U(1)$, and the isometry slice is $r=1$, where the image is $SO^{+}(1,3)$. On the norm-one slice the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$. On the null cone the sandwich survives as an operator of complex rank one, with image the line spanned by $\tilde Q\tilde Q^{*}$.
 
@@ -645,7 +524,8 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 
 ## Further Reading
 
-- [One-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.
+- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.
+- [The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the operator exponential, the doubling rule and the cancellation of the phase.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.

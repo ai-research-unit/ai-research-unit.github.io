@@ -1,8 +1,8 @@
-# __Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Regular Biquaternion__
+# __The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion__
 
 ## Introduction
 
-This article is the vector-side companion of *One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Regular Biquaternion*. The element $\tilde Q$ lies in the N-degenerate, spectrally regular sector $\Sigma_{01}$,
+This article is the vector-side companion of *The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion*. The element $\tilde Q$ lies in the N-degenerate, spectrally regular sector $\Sigma_{01}$,
 
 $$
 \tilde Q=c\,\tilde\Pi,\qquad c=2Q_t\neq0,\qquad \tilde\Pi^{2}=\tilde\Pi,\qquad \tilde\Pi\neq0,e_t,
@@ -31,7 +31,7 @@ $$
 \boxed{\;\Theta_{\tilde Q}=4a^{2}\,\Theta_{\tilde Q_0}\;}
 $$
 
-because the positive factor $\Theta_{\tilde Q_H}=4a^{2}\Theta_P$ acts as the scalar $4a^{2}$ on the image of $\Theta_{\tilde Q_0}$. The operator has rank one, spectrum $\{\lvert c\rvert^{2},0,0,0\}$ and is diagonalizable; it is an oblique projection onto a null line, not a nilpotent. The wall $B^{2}=0$ is the boundary at which this projection gives way to the square-zero sandwich of *Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion*.
+because the positive factor $\Theta_{\tilde Q_H}=4a^{2}\Theta_P$ acts as the scalar $4a^{2}$ on the image of $\Theta_{\tilde Q_0}$. The operator has rank one, spectrum $\{\lvert c\rvert^{2},0,0,0\}$ and is diagonalizable; it is an oblique projection onto a null line, not a nilpotent. The wall $B^{2}=0$ is the boundary at which this projection gives way to the square-zero sandwich of *The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion*.
 
 The article is organized as follows. §*The Polar Pair* recalls the rank-one pair and the matrix model. §*The Sandwich* computes the closed form, the rank, the spectrum, the image and the kernel. §*The Polar Decomposition of the Sandwich* reads the pair and proves the scalar collapse. §*The Two Slots* gives the Peirce and singular-vector pictures and the cancellation of the phase. §*The Exponential* computes the one-parameter group. §*Worked Examples* treats a Hermitian and a non-Hermitian idempotent.
 
@@ -433,10 +433,10 @@ The sandwich is $\Theta_{\tilde Q}=4\Theta_{\tilde\Pi}$, with rank one, eigenval
 
 ## Further Reading
 
-- [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the general sandwich and the conformal Lorentz action.
-- [Two-Sided Operator and the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent three-plus-one sandwich at the spectral wall of the regular sector.
-- [One-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the companion one-sided operator and the phase.
-- [Two-Sided Operator and the Polar Decomposition of a N-Degenerate, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent sandwich of the same sector pair.
+- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the general sandwich and the conformal Lorentz action.
+- [The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent three-plus-one sandwich at the spectral wall of the regular sector.
+- [The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the companion one-sided operator and the phase.
+- [The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent sandwich of the same sector pair.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector, the spinors and the eigenbasis.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the wall $B^{2}=0$ and the canonical Jordan pair.
