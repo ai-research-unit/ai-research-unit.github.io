@@ -119,7 +119,7 @@ $$
 \Delta>0 \quad\Longleftrightarrow\quad \ker\Delta=\{0\}.
 $$
 The kernel of $\Delta$ equals the kernel of $S$, so $\Delta>0$ is again the faithfulness hypothesis: a non-faithful state gives $\Delta$ a zero eigenvalue, and at that eigenvalue $-\log\Delta$ diverges. This is the sense in which positivity is not a technicality. It is the same hypothesis as cyclic and separating, read off the spectrum of $\Delta$ rather than off the vector. Section "Verification: $\tilde{K}_{\mathrm{mod}}$ Generates the Modular Flow" exhibits the failure explicitly.</p>
-<p><strong>Self-adjointness and unitarity.</strong> Because $\Delta>0$, the spectral theorem gives a self-adjoint $\log\Delta$ and hence a self-adjoint $\tilde{K}_{\mathrm{mod}}$; the unitary group $\exp(-i\tilde{K}_{\mathrm{mod}}t')=\Delta^{it'}$ is then well defined for all real $t'$, and $\Delta^{it'}$ is unitary. The flow $\sigma_{t'}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde{K}_{\mathrm{mod}}$ is the self-adjoint generator of the unitary group that implements it.</p>
+<p><strong>Self-adjointness and unitarity.</strong> Because $\Delta>0$, the spectral theorem gives a self-adjoint $\log\Delta$ and hence a self-adjoint $\tilde{K}_{\mathrm{mod}}$; the $*$-unitary group $\exp(-i\tilde{K}_{\mathrm{mod}}t')=\Delta^{it'}$ is then well defined for all real $t'$, and $\Delta^{it'}$ is $*$-unitary. The flow $\sigma_{t'}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde{K}_{\mathrm{mod}}$ is the self-adjoint generator of the $*$-unitary group that implements it.</p>
 <h3 id="the-sign-convention-fixed-and-held">The Sign Convention, Fixed and Held</h3>
 <p>The relation between $\Delta$ and $\tilde{K}_{\mathrm{mod}}$ is a convention, and the two choices are inequivalent. This article uses
 $$
@@ -127,7 +127,7 @@ $$
 \sigma_{t'}(\tilde Q_3)=\exp(-i\tilde{K}_{\mathrm{mod}}t')\tilde Q_3 \exp(i\tilde{K}_{\mathrm{mod}}t').
 $$
 The opposite choice, $\Delta=\exp(+\tilde{K}_{\mathrm{mod}})$ with $\Delta^{it'}=\exp(+i\tilde{K}_{\mathrm{mod}}t')$, is the same equation with $\tilde{K}_{\mathrm{mod}}\mapsto-\tilde{K}_{\mathrm{mod}}$. It is not a relabelling: the Takesaki–Winnink theorem says that a faithful normal state satisfies the KMS condition with respect to $\sigma_{-t'}$, not $\sigma_{t'}$, and reversing the sign of $\tilde{K}_{\mathrm{mod}}$ reverses the flow and exchanges the two. In the finite-dimensional model the convention is pinned by $\tilde{Ϛ}=\exp(-\tilde{K}_{\mathrm{mod}})$ and $\sigma_{t'}(\tilde Q_3)=\tilde{Ϛ}^{it'}\tilde Q_3\tilde{Ϛ}^{-it'}$, which is the parent's convention; the generator identity $\frac{d}{dt'}\sigma_{t'}(\tilde Q_3)|_{t'=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde Q_3]$ follows from it and is the form used throughout. A displayed formula that writes $\Delta^{it'}=\exp(+i\tilde{K}_{\mathrm{mod}}t')$ together with $\tilde{K}_{\mathrm{mod}}=-\log\Delta$ is internally inconsistent — it would give $\Delta^{it'}=\Delta^{-it'}$ — and the sign is fixed here once, in the direction above, and held.</p>
-<h3 id="the-state-is-thermal-with-respect-to-math111">The State Is Thermal with Respect to $\tilde{K}_{\mathrm{mod}}$</h3>
+<h3 id="the-state-is-thermal-with-respect-to-math114">The State Is Thermal with Respect to $\tilde{K}_{\mathrm{mod}}$</h3>
 <p>The KMS property gives $\tilde{K}_{\mathrm{mod}}$ its <strong>physical interpretation</strong>. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-t'}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde{Ϛ}\in\mathbb{M}_+$ that is positive definite and of trace one,
 $$
 \omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\,\tilde Q_3^{*}),
@@ -197,7 +197,7 @@ $$</p>
 <p>which is the same conjugation as before. The amplitude is the operator whose logarithm generates the flow; the state has no Cartan phase, so the flow is the flow of the amplitude alone.</p>
 <p><strong>The reading.</strong> The modular Hamiltonian is minus twice the logarithm of the Cartan amplitude. A state has no Cartan phase; its amplitude is its square root, and its modular flow is the logarithm of that amplitude. This is the exact sense in which the Cartan amplitude is the modular square root, and it is the state-side counterpart of the operator-side statement that the amplitude is what remains when the phase is forgotten.</p>
 <p><strong>The boundary.</strong> The reading needs $\tilde{Ϛ}>0$. At a pure state $\lambda_-=0$, $\tilde Q_{\mathrm n}$ is rank one and not invertible, $\log\tilde Q_{\mathrm n}$ diverges, and $\tilde K_{\mathrm{mod}}$ does not exist; the amplitude is still defined, but its logarithm is not. The modular conjugation is anti-unitary and is not the Cartan phase; the two objects must not be identified.</p>
-<h3 id="the-spectral-form-of-math168">The Spectral Form of $\tilde{K}_{\mathrm{mod}}$</h3>
+<h3 id="the-spectral-form-of-math171">The Spectral Form of $\tilde{K}_{\mathrm{mod}}$</h3>
 <p>Write the faithful state in Bloch form,
 $$
 \tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),
@@ -225,7 +225,7 @@ $$
 =\Big\{1,\ \frac{\lambda_+}{\lambda_-},\ \frac{\lambda_-}{\lambda_+}\Big\},
 $$
 all strictly positive because $\lambda_\pm>0$. This is the concrete form of $\Delta>0$.</p>
-<h3 id="math190-generates-the-same-flow-as-math191">$\tilde{K}_{\mathrm{mod}}$ Generates the Same Flow as $\Delta^{it'}$</h3>
+<h3 id="math193-generates-the-same-flow-as-math194">$\tilde{K}_{\mathrm{mod}}$ Generates the Same Flow as $\Delta^{it'}$</h3>
 <p>The two displays are equal, not merely analogous. From $\tilde{Ϛ}=\exp(-\tilde{K}_{\mathrm{mod}})$,
 $$
 \Delta^{it'}(\tilde Q_3)=e^{-it'\tilde K_{\mathrm{mod}}}\tilde Q_3\,e^{it'\tilde K_{\mathrm{mod}}}
@@ -240,7 +240,7 @@ $$
 =-i[\tilde{K}_{\mathrm{mod}},\tilde Q_3],
 $$
 which is the generator identity of the definition. So the $\tilde{K}_{\mathrm{mod}}$ constructed from the state is the same operator that generates the flow constructed from the Tomita operator, and the check is a recomputation rather than a quotation.</p>
-<h2 id="verification-math198-generates-the-modular-flow">Verification: $\tilde{K}_{\mathrm{mod}}$ Generates the Modular Flow</h2>
+<h2 id="verification-math201-generates-the-modular-flow">Verification: $\tilde{K}_{\mathrm{mod}}$ Generates the Modular Flow</h2>
 <p>The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
 $$
 \vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
@@ -340,7 +340,7 @@ $$
 $$
 for any local operator $\mathcal O$ and weight $f$; for a free field it contains bilocal terms, quadratic in the field at two separated points, and the obstruction to removing them is physical rather than technical. Second, and more invariantly, the modular flow $\sigma_{t'}$ of a general region does <strong>not</strong> map $\mathcal A(V)$ to itself: it is not a geometric flow of the region, and an operator localized in $V$ is, under the flow, spread outside it. This is the precise sense in which $\tilde{K}_{\mathrm{mod},V}$ is nonlocal — not that it fails to be an operator, but that it is not tied to the local algebra of $V$ the way a Hamiltonian density is.</p>
 <p>The nonlocality is also why the Tomita–Takesaki theory is not a tool for computing a local energy: $\tilde{K}_{\mathrm{mod},V}$ is defined for every region and state, but its content is generally as complicated as the entanglement structure of the state across the boundary of $V$.</p>
-<h3 id="the-exceptional-answer-the-cases-where-math299-is-geometric">The Exceptional Answer: The Cases Where $\tilde{K}_{\mathrm{mod},V}$ Is Geometric</h3>
+<h3 id="the-exceptional-answer-the-cases-where-math302-is-geometric">The Exceptional Answer: The Cases Where $\tilde{K}_{\mathrm{mod},V}$ Is Geometric</h3>
 <p>There are cases in which the modular flow <strong>is</strong> a spacetime symmetry flow and $\tilde{K}_{\mathrm{mod},V}$ is therefore a local geometric generator. They are the exceptions, and they are known.</p>
 <ul>
 <li><strong>Half-spaces and wedges: the Bisognano–Wichmann theorem.</strong> For the vacuum of a Wightman field theory and a wedge region (in particular a half-space), the modular operator is

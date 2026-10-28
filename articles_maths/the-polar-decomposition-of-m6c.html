@@ -77,7 +77,7 @@ A=UP,
 U\in U(6),\quad
 P=(A^*A)^{1/2}\ge0,
 $$</p>
-<p>with $P$ positive semidefinite and Hermitian. The factor $P$ is unique; the unitary factor $U$ is unique when $A$ is invertible, and is free on the kernel when $A$ is singular. The decomposition separates the <strong>rotation</strong> $U$ from the <strong>scale</strong> $P$, and it is the matrix form of the singular value decomposition</p>
+<p>with $P$ positive semidefinite and Hermitian. The factor $P$ is unique; the $*$-unitary factor $U$ is unique when $A$ is invertible, and is free on the kernel when $A$ is singular. The decomposition separates the <strong>rotation</strong> $U$ from the <strong>scale</strong> $P$, and it is the matrix form of the singular value decomposition</p>
 <p>$$
 A=U\Sigma V^*,
 \qquad
@@ -90,7 +90,7 @@ $$</p>
 GL_6\cong U(6)\times\operatorname{Herm}_6^{>0}.
 $$</p>
 <p>The exponential form is $A=Ue^H$ with $H$ Hermitian; the logarithm of the positive factor is the Hermitian exponent.</p>
-<p>The article assumes the unitary group and the Hermitian form of <em>The Involution and the Hermitian Structure</em> and the singular values of <em>The Forms, the Norms and the Singular Set</em>. It uses the exponential of Hermitian matrices, whose general theory is <em>The Exponential and the Lie Group</em>. The mass block's polar decomposition is <em>The Mass Block and the Chiral Polar Decomposition</em>; the biquaternion case is <em>The Polar Decomposition of the Biquaternion Algebra</em>.</p>
+<p>The article assumes the $*$-unitary group and the Hermitian form of <em>The Involution and the Hermitian Structure</em> and the singular values of <em>The Forms, the Norms and the Singular Set</em>. It uses the exponential of Hermitian matrices, whose general theory is <em>The Exponential and the Lie Group</em>. The mass block's polar decomposition is <em>The Mass Block and the Chiral Polar Decomposition</em>; the biquaternion case is <em>The Polar Decomposition of a Biquaternion</em>.</p>
 <h2 id="the-polar-decomposition_1">The Polar Decomposition</h2>
 <h3 id="existence">Existence</h3>
 <p><strong>Theorem (the right polar decomposition).</strong> Every $A\in M_6(\mathbb{C})$ has a factorization</p>
@@ -109,7 +109,7 @@ $$</p>
 <p>$$
 \lVert Ax\rVert^2=\langle x,A^*Ax\rangle=\langle x,P^2x\rangle=\lVert Px\rVert^2 .
 $$</p>
-<p>Extend $U$ from the image of $P$ to its orthogonal complement, the kernel of $P$, by any unitary isomorphism onto $(\operatorname{im}A)^\perp$; both complements have dimension $6-\operatorname{rank}A$. Then $U$ is unitary and $UPx=Ax$ for all $x$, so $A=UP$.</p>
+<p>Extend $U$ from the image of $P$ to its orthogonal complement, the kernel of $P$, by any $*$-unitary isomorphism onto $(\operatorname{im}A)^\perp$; both complements have dimension $6-\operatorname{rank}A$. Then $U$ is $*$-unitary and $UPx=Ax$ for all $x$, so $A=UP$.</p>
 <p><strong>Corollary (the left polar decomposition).</strong> Every $A$ has a factorization</p>
 <p>$$
 A=P'U,
@@ -120,13 +120,14 @@ $$</p>
 <p>and $P'=UPU^*$.</p>
 <p><strong>Proof.</strong> Apply the right polar decomposition to $A^*$: $A^*=VQ$, so $A=QV^*$ with $Q=(AA^*)^{1/2}$ and $V^*\in U(6)$.</p>
 <h3 id="uniqueness">Uniqueness</h3>
-<p><strong>Theorem.</strong> The positive factor $P=(A^*A)^{1/2}$ is unique. If $A$ is invertible, the unitary factor is unique as well.</p>
-<p><strong>Proof.</strong> $P$ is determined by $A^*A$. If $A=U_1P_1=U_2P_2$ with $P_i>0$, then $U_2^*U_1=P_2P_1^{-1}$; the left side is unitary, the right side is positive definite, and a unitary positive definite matrix is the identity (its eigenvalues are positive and of modulus one, hence $1$). So $U_1=U_2$ and $P_1=P_2$.</p>
-<p><strong>Corollary (the singular case).</strong> If $A$ has rank $k<6$, the positive factor is unique, and the unitary factor is determined on the image of $P$ and arbitrary on the kernel:</p>
+<p><strong>Theorem.</strong> The positive factor $P=(A^*A)^{1/2}$ is unique. If $A$ is invertible, the $*$-unitary factor is unique as well.</p>
+<p><strong>Proof.</strong> $P$ is determined by $A^*A$. If $A=U_1P_1=U_2P_2$ with $P_i>0$, then $A^*A=P_1^2=P_2^2$, and the positive definite square root is unique, so $P_1=P_2$. Then $U_1P_1=U_2P_1$ and $P_1$ is invertible, so $U_1=U_2$.</p>
+<p><strong>Corollary (the singular case).</strong> If $A$ has rank $k<6$, the positive factor is unique, and the $*$-unitary factor is determined on the image of $P$ and arbitrary on the kernel:</p>
 <p>$$
-U\big|_{\ker P}\in U(\ker P)\cong U(6-k).
+U\big|_{\ker P}:\ker P\longrightarrow(\operatorname{im}A)^{\perp}
+\ \text{any unitary isomorphism}.
 $$</p>
-<p><strong>Proof.</strong> $P$ is unique; on the image of $P$ the map $U$ is determined by $A$; on the kernel of $P$ any unitary extension is allowed. The freedom is the unitary group of the $(6-k)$-dimensional kernel.</p>
+<p><strong>Proof.</strong> $P$ is unique; on the image of $P$ the map $U$ is determined by $A$; on the kernel of $P$ any unitary isomorphism onto $(\operatorname{im}A)^{\perp}$ is allowed. The freedom is a torsor under the $*$-unitary group of the $(6-k)$-dimensional kernel.</p>
 <h3 id="the-singular-value-decomposition">The Singular Value Decomposition</h3>
 <p><strong>Theorem (the SVD).</strong> Every $A$ has a factorization</p>
 <p>$$
@@ -152,8 +153,8 @@ $$</p>
 <p><strong>Corollary (the polar decomposition is the SVD with phases separated).</strong> The SVD separates the two unitaries $U,V$; the polar decomposition combines them into $U_{\mathrm{polar}}=UV^*$ and keeps the positive factor $V\Sigma V^*$.</p>
 <p><strong>Proof.</strong> Multiply the two factors.</p>
 <p><strong>Corollary (the singular values are the eigenvalues of $P$).</strong> The eigenvalues of $P$ are $\sigma_1,\dots,\sigma_6$; the eigenvalues of $U_{\mathrm{polar}}$ are the phases of the SVD.</p>
-<p><strong>Proof.</strong> $P=V\Sigma V^*$; the unitary factor $UV^*$ has eigenvalues on the unit circle.</p>
-<h2 id="the-manifold-math84">The Manifold $GL_6/U(6)$</h2>
+<p><strong>Proof.</strong> $P=V\Sigma V^*$; the $*$-unitary factor $UV^*$ has eigenvalues on the unit circle.</p>
+<h2 id="the-manifold-math94">The Manifold $GL_6/U(6)$</h2>
 <h3 id="the-positive-cone">The Positive Cone</h3>
 <p><strong>Definition.</strong> The <strong>positive cone</strong> is</p>
 <p>$$
@@ -177,7 +178,7 @@ $$</p>
 <p><strong>Proof.</strong> The polar decomposition gives the map and its inverse $A\mapsto(U,P)$; it is smooth because $P=(A^*A)^{1/2}$ and $U=AP^{-1}$ are smooth on the invertible locus. The dimensions add: $36+36=72$.</p>
 <p><strong>Corollary (the principal bundle).</strong> $GL_6$ is a principal $U(6)$-bundle over the positive cone, with fibre $U(6)$.</p>
 <p><strong>Proof.</strong> The action of $U(6)$ on $GL_6$ by left multiplication is free, and the quotient is the positive cone by the polar decomposition.</p>
-<p><strong>Remark (the symmetric space).</strong> The quotient is the symmetric space of the Cartan involution $\theta(A)=-A^*$; the geodesics are the curves $P^{1/2}e^{tH}P^{1/2}$? The exponential of Hermitian matrices gives the geodesics through the identity. The metric is the Hilbert–Schmidt metric.</p>
+<p><strong>Remark (the symmetric space).</strong> The quotient is the symmetric space of the Cartan involution $\theta(A)=-A^*$; the geodesics are the curves $P^{1/2}e^{tX}P^{1/2}$ with $X$ Hermitian, and through the identity they are the exponentials $e^{tX}$. The metric is the Hilbert–Schmidt metric.</p>
 <h2 id="the-singular-element">The Singular Element</h2>
 <h3 id="the-freedom-on-the-kernel">The Freedom on the Kernel</h3>
 <p><strong>Theorem.</strong> Let $A$ have rank $k$ and polar decomposition $A=U_0P$. Then the polar factors of $A$ are exactly</p>
@@ -187,7 +188,7 @@ U=U_0V,
 V\in U(\ker P)\cong U(6-k),
 $$</p>
 <p>with $V$ acting as the identity on the image of $P$. The set is a coset of $U(6-k)$, of real dimension $(6-k)^2$.</p>
-<p><strong>Proof.</strong> Any other unitary factor differs from $U_0$ by a unitary that commutes with $P$ on the image and is arbitrary on the kernel; the kernel is $\ker P=\ker A$, of dimension $6-k$.</p>
+<p><strong>Proof.</strong> Any other $*$-unitary factor differs from $U_0$ by a $*$-unitary that commutes with $P$ on the image and is arbitrary on the kernel; the kernel is $\ker P=\ker A$, of dimension $6-k$.</p>
 <p><strong>Corollary (the image and the kernel).</strong> The polar factor maps</p>
 <p>$$
 \operatorname{im}P\longrightarrow\operatorname{im}A,
@@ -195,9 +196,9 @@ $$</p>
 \ker P\longrightarrow(\operatorname{im}A)^\perp,
 $$</p>
 <p>and is arbitrary on the second factor.</p>
-<p><strong>Proof.</strong> $A=UP$; $U$ is unitary, so $U((\operatorname{im}P)^\perp)=(\operatorname{im}A)^\perp$; the kernel of $P$ is the orthogonal complement of the image of $P$.</p>
+<p><strong>Proof.</strong> $A=UP$; $U$ is $*$-unitary, so $U((\operatorname{im}P)^\perp)=(\operatorname{im}A)^\perp$; the kernel of $P$ is the orthogonal complement of the image of $P$.</p>
 <h3 id="the-limit-at-a-singular-element">The Limit at a Singular Element</h3>
-<p><strong>Theorem.</strong> The positive factor $P(A)=(A^*A)^{1/2}$ is continuous everywhere. The unitary factor $U(A)$ is continuous on the invertible locus; at a singular element it may fail to have a limit, and when it has one, the limit depends on the direction of approach.</p>
+<p><strong>Theorem.</strong> The positive factor $P(A)=(A^*A)^{1/2}$ is continuous everywhere. The $*$-unitary factor $U(A)$ is continuous on the invertible locus; at a singular element it may fail to have a limit, and when it has one, the limit depends on the direction of approach.</p>
 <p><strong>Proof.</strong> The square root is continuous; $U=AP^{-1}$ is continuous where $P$ is invertible. On the singular locus, the freedom on the kernel is a coset, and different approaches select different points of the coset.</p>
 <p><strong>Example.</strong> For $A(\varepsilon)=\operatorname{diag}(1,\varepsilon e^{\mathrm i\theta})$ with $\varepsilon>0$, the polar factor is $\operatorname{diag}(1,e^{\mathrm i\theta})$, which tends to $\operatorname{diag}(1,e^{\mathrm i\theta})$ as $\varepsilon\to0$; the limit depends on $\theta$. The positive factor tends to $\operatorname{diag}(1,0)$ independently of $\theta$.</p>
 <p><strong>Corollary (the polar map is not continuous at the singular set).</strong> The map $A\mapsto U(A)$ does not extend continuously to the singular matrices.</p>
@@ -254,7 +255,7 @@ A=UP,
 U\in U(6),\quad
 P=(A^*A)^{1/2}\ge0 .
 $$</p>
-<p>The positive factor is unique; the unitary factor is unique for invertible $A$ and free on the kernel for singular $A$, with freedom $U(6-k)$ of real dimension $(6-k)^2$. The SVD is</p>
+<p>The positive factor is unique; the $*$-unitary factor is unique for invertible $A$ and free on the kernel for singular $A$, with freedom $U(6-k)$ of real dimension $(6-k)^2$. The SVD is</p>
 <p>$$
 A=U\Sigma V^*,
 \qquad
@@ -283,7 +284,7 @@ $$</p>
 <td>$P=(A^*A)^{1/2}$, unique</td>
 </tr>
 <tr>
-<td>Unitary factor</td>
+<td>$*$-Unitary factor</td>
 <td>unique if $A$ invertible</td>
 </tr>
 <tr>
@@ -323,7 +324,7 @@ $$</p>
 </tr>
 <tr>
 <td>$U$</td>
-<td>the unitary polar factor</td>
+<td>the $*$-unitary polar factor</td>
 </tr>
 <tr>
 <td>$\sigma_1,\dots,\sigma_6$</td>
@@ -345,13 +346,12 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the unitary group and the positive definite form.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the $*$-unitary group and the positive definite form.</li>
 <li><a href="the-forms-the-norms-and-the-singular-set-of-m6c.html">The Forms, the Norms and the Singular Set</a>, for the singular values.</li>
 <li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html">The Mass Block and the Chiral Polar Decomposition</a>, for the polar decomposition of the mass block.</li>
 <li><a href="the-exponential-and-the-lie-group-of-m6c.html">The Exponential and the Lie Group</a>, for the exponential of Hermitian matrices.</li>
 <li><a href="spectral-theory-and-the-spectral-projectors-of-m6c.html">Spectral Theory and the Spectral Projectors</a>, for the spectral theorem behind the square root.</li>
-<li><a href="the-polar-decomposition-of-the-biquaternion-algebra.html">The Polar Decomposition of the Biquaternion Algebra</a>, for the rank-one case.</li>
-<li><a href="the-polar-decomposition.html">The Polar Decomposition</a>, for the general theory in a Hilbert space.</li>
+<li><a href="comparison-of-the-polar-decomposition.html">Comparison of the Polar Decomposition</a>, for the eight-algebra comparison.</li>
 <li><a href="symmetric-spaces.html">Symmetric Spaces</a>, for the Cartan decomposition and the positive cone.</li>
 </ul>
       </div>

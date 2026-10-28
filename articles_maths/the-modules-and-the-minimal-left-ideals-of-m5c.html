@@ -116,9 +116,9 @@ $$</p>
 M_5P\longrightarrow V,\qquad A\longmapsto Av,
 $$</p>
 <p>where $v$ spans the image of $P$.</p>
-<p><strong>Proof.</strong> The ideal $M_5P$ consists of the matrices whose image is contained in $\operatorname{im}P=\mathbb{C}v$; its dimension is $5$, because such a matrix is determined by its values on a basis, all in the line $\mathbb{C}v$. The map $A\mapsto Av$ is left $M_5$-linear and surjective (for any $w$, choose $A$ with $Av=w$); its kernel on $M_5P$ is zero because $A=BP$ and $Av=0$ imply $A=0$ on the image of $P$, hence $A=0$. So it is an isomorphism. For minimality, let $0\ne A\in M_5P$; then $A=BP$ and $BP$ acts on $\operatorname{im}P$ by a nonzero scalar $\lambda$; hence $P=\lambda^{-1}P(BP)\in M_5A$, and $M_5P\subseteq M_5A$, so $M_5A=M_5P$. A nonzero submodule is the whole, so $M_5P$ is simple and minimal.</p>
+<p><strong>Proof.</strong> For $P=v\ell$ with $\ell(v)=1$, the ideal $M_5P$ consists of the matrices $A=BP=Bv\,\ell=w\ell$ with $w=Bv\in V$; it is five-dimensional, because $w$ is free. The map $A\mapsto Av=w$ is left $M_5$-linear and surjective, and its kernel on $M_5P$ is zero: $A=w\ell$ and $Av=w$, so $Av=0$ gives $w=0$ and $A=0$. It is therefore an isomorphism onto $V$. For minimality, let $0\ne A=w\ell\in M_5P$ with $w\ne0$; choose $B$ with $Bw=v$; then $BA=Bw\,\ell=v\ell=P$, so $P\in M_5A$ and $M_5P\subseteq M_5A$. Hence $M_5A=M_5P$, and $M_5P$ is simple.</p>
 <p><strong>Corollary.</strong> Every minimal left ideal is of the form $M_5P$ for a rank-one idempotent $P$, and every minimal left ideal is isomorphic to $V$. The minimal left ideals are the simple submodules of the left regular module.</p>
-<p><strong>Proof.</strong> By the standard structure theorem for full matrix algebras, every minimal left ideal is $M_5P$ for an idempotent $P$ (see Pierce, <em>Associative Algebras</em>). The idempotent can be chosen of rank one: if $\operatorname{rank}P=r$, then $M_5P$ consists of the matrices whose image lies in $\operatorname{im}P$, of dimension $5r$, so minimality forces $r=1$. The theorem above then gives the isomorphism with $V$.</p>
+<p><strong>Proof.</strong> By the standard structure theorem for full matrix algebras, every minimal left ideal is $M_5P$ for an idempotent $P$ (see Pierce, <em>Associative Algebras</em>). The idempotent can be chosen of rank one: if $\operatorname{rank}P=r$, then $M_5P$ consists of the matrices that vanish on $\ker P$, equivalently $A=AP$, and it has dimension $5r$; minimality forces $r=1$. The theorem above then gives the isomorphism with $V$.</p>
 <h3 id="the-column-ideals">The Column Ideals</h3>
 <p><strong>Proposition.</strong> For the diagonal idempotents $E_{jj}$,</p>
 <p>$$
@@ -148,6 +148,16 @@ P_kM_5=\bigoplus_{l}A_{kl}.
 $$</p>
 <p><strong>Proof.</strong> The lines are the intersections $P_kM_5P_l$; the column is the sum over $k$ for fixed $l$; the row is the sum over $l$ for fixed $k$.</p>
 <p><strong>Remark.</strong> <strong>The Peirce line and the minimal left ideal must not be identified.</strong> The line is one-dimensional and is not a module; the ideal is five-dimensional and is the simple module. The biquaternion article uses the columns as the minimal left ideals; in $M_5$ the columns are the five-dimensional ideals $M_5P_l$, and the lines inside them are the Peirce lines. The word <em>spinor</em> is not attached to either: the simple module is the carrier, of spin $2$.</p>
+<h3 id="the-peirce-carrier">The Peirce Carrier</h3>
+<p><strong>Definition.</strong> The <strong>left Peirce carrier</strong> of a rank-one idempotent $P$ is the left ideal $C_L(P)=M_5P$; the <strong>right Peirce carrier</strong> is the right ideal $C_R(P)=PM_5$. With $Q=I-P$, the Peirce decomposition reads</p>
+<p>$$
+C_L(P)=PM_5P\oplus QM_5P,\qquad
+C_R(P)=PM_5P\oplus PM_5Q,
+$$</p>
+<p>with summands of dimensions $1$, $4$, $4$, so that both carriers have dimension $1+4=5$.</p>
+<p><strong>Proposition.</strong> The left carrier is isomorphic to $V$ as a left module, the right carrier to $V^*$ as a right module. For a spectral projector $P=P_k$, $C_L(P_k)=\bigoplus_lA_{lk}$ is the $k$-th column and $C_R(P_k)=\bigoplus_lA_{kl}$ is the $k$-th row.</p>
+<p><strong>Proof.</strong> The two decompositions are the Peirce decomposition read on the left and on the right. The dimensions are $\dim PM_5P=1$ and $\dim QM_5P=\dim PM_5Q=4$. The isomorphism $M_5P\cong V$ is the theorem of §<em>The Ideals $M_5P$</em>; for the right carrier, $PM_5=\{v\varphi:\varphi\in V^*\}$ and $v\varphi\mapsto\varphi$ is an isomorphism onto $V^*$. For the spectral projector, $A_{lk}=P_lM_5P_k$ and the column is the sum over $l$; the row is the sum over $l$ of $A_{kl}$.</p>
+<p><strong>Remark.</strong> The formula $PM_5P\oplus PM_5Q$ is the <strong>right</strong> carrier; the <strong>left</strong> carrier is $PM_5P\oplus QM_5P$. The two mixed corners are exchanged by transposition and by the involution, and they are different subspaces of $M_5$. Both carriers are the module $V$ up to isomorphism; neither is a Peirce line, and neither is a spinor.</p>
 <h2 id="the-double-centralizer">The Double Centralizer</h2>
 <h3 id="the-commutant">The Commutant</h3>
 <p><strong>Theorem.</strong> The commutant of $M_5(\mathbb{C})$ in $\operatorname{End}_\mathbb{C}(V)$ is the scalars:</p>
@@ -167,7 +177,7 @@ $$</p>
 <p><strong>Proof.</strong> The natural map $M_5\to\operatorname{End}_\mathbb{C}(V)$ is injective (the action is faithful) and both spaces have dimension $25$, so it is an isomorphism; the bicommutant is the algebra.</p>
 <p><strong>Remark.</strong> <strong>The double centralizer is the algebraic form of the statement that the only operators commuting with all matrices are scalars.</strong> It is the reason the module $V$ has no extra structure: an $M_5$-linear map is scalar, and the endomorphism algebra of $V$ is the whole matrix algebra. The same statement in the biquaternion case gives the quaternion structure on the spinor; in $M_5$ it gives only the scalars.</p>
 <h2 id="the-classification">The Classification</h2>
-<h3 id="every-module-is-a-direct-sum-of-copies-of-math227">Every Module Is a Direct Sum of Copies of $V$</h3>
+<h3 id="every-module-is-a-direct-sum-of-copies-of-math259">Every Module Is a Direct Sum of Copies of $V$</h3>
 <p><strong>Theorem.</strong> Every left $M_5$-module is isomorphic to $V^{\oplus m}$ for a unique $m\ge0$. Every right module is isomorphic to $(V^*)^{\oplus m}$.</p>
 <p><strong>Proof.</strong> The algebra is semisimple, so every module is a direct sum of simple modules; every simple module is isomorphic to $V$ by the minimal-left-ideal theorem; the multiplicity is the dimension divided by $5$. The right case is the dual: the simple right module is $V^*$, and the right regular module is $(V^*)^{\oplus5}$.</p>
 <p><strong>Corollary.</strong> The left regular module is $V^{\oplus5}$, the right regular module is $(V^*)^{\oplus5}$, and the algebra as a bimodule is $V\otimes V^*$.</p>
@@ -191,11 +201,11 @@ $$</p>
 <p><strong>Corollary.</strong> The left and right regular modules are dual, and the bimodule $M_5$ is $V\otimes V^*$.</p>
 <p><strong>Proof.</strong> The dual of $V^{\oplus5}$ is $(V^*)^{\oplus5}$; the tensor product identification is the standard one.</p>
 <h2 id="the-biquaternion-comparison">The Biquaternion Comparison</h2>
-<h3 id="the-math260-case">The $M_2$ Case</h3>
+<h3 id="the-math292-case">The $M_2$ Case</h3>
 <p>For $n=2$, the algebra $M_2(\mathbb{C})\cong\mathbb{B}$ has a two-dimensional simple module, the <strong>spinor</strong>. The minimal left ideals are the column ideals $M_2E_{11}$ and $M_2E_{22}$, each of dimension $2$ and isomorphic to the spinor; the left regular module is $(\mathbb{C}^2)^{\oplus2}$. The Peirce lines are one-dimensional; the minimal left ideal is two-dimensional; the same distinction holds.</p>
 <p><strong>Proposition.</strong> The $M_2$ minimal left ideal $M_2P$ is two-dimensional and is the spinor of the biquaternion model. The commutant of $M_2$ is $\mathbb{C}I$, and the bicommutant is $M_2$.</p>
 <p><strong>Proof.</strong> The same proofs with $n=2$: the column has dimension $2$; the commutant is scalar; the bicommutant is the algebra.</p>
-<h3 id="no-spinors-at-math274">No Spinors at $M_5$</h3>
+<h3 id="no-spinors-at-math306">No Spinors at $M_5$</h3>
 <p><strong>Theorem.</strong> The simple module of $M_5$ is the carrier $V=\mathbb{C}^5$, of spin $2$. There is no spinor module at $n=5$: the carrier is the symmetric fourth power $\operatorname{Sym}^4(\mathbb{C}^2)$, and its weights are the integers $2,1,0,-1,-2$.</p>
 <p><strong>Proof.</strong> The identification of the carrier with the symmetric power is <em>The Spin Chain and the Adjoint Decomposition</em>; the weights are integers, so no half-integer weight occurs. The simple module is unique up to isomorphism and is $V$.</p>
 <p><strong>Corollary.</strong> The minimal left ideal of $M_5$ is five-dimensional and is isomorphic to the carrier; it is not a spinor, not a column of a matrix in the sense of an element, and not a Peirce line. The word <em>spinor</em> is reserved for the two-dimensional module of $M_2$.</p>

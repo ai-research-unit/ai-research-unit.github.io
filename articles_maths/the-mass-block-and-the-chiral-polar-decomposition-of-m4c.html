@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-mass-block-and-the-chiral-polar-decomposition"><strong>The Mass Block and the Chiral Polar Decomposition</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The mass block is the four-dimensional space of maps from the right chirality to the left chirality, and its chiral polar decomposition separates a unitary mixing from two singular values.</strong> The block is</p>
+<p><strong>The mass block is the four-dimensional space of maps from the right chirality to the left chirality, and its chiral polar decomposition separates a $*$-unitary mixing from two singular values.</strong> The block is</p>
 <p>$$
 \mathcal{B}=P_+M_4P_-=\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C}),
 $$</p>
@@ -153,14 +153,14 @@ $$</p>
 =\frac{\langle v_j,M^*Mv_k\rangle}{\sigma_j\sigma_k}
 =\delta_{jk}.
 $$</p>
-<p>Extend the $u_k$ with $\sigma_k>0$ to an orthonormal basis of $\mathbb{C}^2_+$, and let $U$ be the corresponding unitary. Then $Mv_k=\sigma_ku_k$ for every $k$, so $M=U\Sigma V^*$. The uniqueness of the singular values is the uniqueness of the eigenvalues of $M^*M$.</p>
+<p>Extend the $u_k$ with $\sigma_k>0$ to an orthonormal basis of $\mathbb{C}^2_+$, and let $U$ be the corresponding $*$-unitary. Then $Mv_k=\sigma_ku_k$ for every $k$, so $M=U\Sigma V^*$. The uniqueness of the singular values is the uniqueness of the eigenvalues of $M^*M$.</p>
 <p><strong>The polar decomposition.</strong> The SVD gives the <strong>chiral polar decomposition</strong></p>
 <p>$$
 M=WP,\qquad
 W=UV^*:\mathbb{C}^2_-\to\mathbb{C}^2_+,\qquad
 P=V\Sigma V^*:\mathbb{C}^2_-\to\mathbb{C}^2_- .
 $$</p>
-<p>The factor $W$ is unitary (an isometry between the two chiral planes), and $P$ is positive semidefinite. Equivalently,</p>
+<p>The factor $W$ is $*$-unitary (an isometry between the two chiral planes), and $P$ is positive semidefinite. Equivalently,</p>
 <p>$$
 M=U\Sigma V^*=(UV^*)(V\Sigma V^*).
 $$</p>
@@ -204,7 +204,7 @@ $$</p>
 \det(U_LMU_R^*)=e^{i(\theta_L-\theta_R)}e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2,
 $$</p>
 <p>so the phase shifts by the determinant phases of the gauge; the modulus $\sigma_1\sigma_2$ is invariant.</p>
-<p><strong>The special unitary gauge.</strong> Under $SU(2)_L\times SU(2)_R$, the determinant phases of the gauge are $1$, so the determinant of $M$ is invariant and equals $\sigma_1\sigma_2\ge0$. The chiral phase is then an invariant of $M$ itself, not a gauge artefact. Under the full $U(2)_L\times U(2)_R$, only the modulus is invariant; the phase can be removed by the two determinant factors.</p>
+<p><strong>The special unitary gauge.</strong> Under $SU(2)_L\times SU(2)_R$, the determinant phases of the gauge are $1$, so $\det M$ is invariant. Its modulus is $\sigma_1\sigma_2$, and its phase is the chiral phase, an invariant of $M$ itself, not a gauge artefact. Under the full $U(2)_L\times U(2)_R$, only the modulus is invariant; the phase can be removed by the two determinant factors.</p>
 <p><strong>The rank and the masslessness.</strong> The rank of $M$ is the number of nonzero singular values:</p>
 <p>$$
 \operatorname{rank}M=
@@ -250,7 +250,7 @@ $$</p>
 <p>There is one singular value $\lvert z\rvert$, one phase $e^{i\theta}$, and the rank is $1$ for $z\ne0$ and $0$ for $z=0$. The two singular values of the four-dimensional mass block degenerate to one modulus; the chiral phase is the only phase. The comparison with the three-parameter gauge of the $M_4$ frame is <em>The Three-Parameter Gauge and the Chiral Polar Decomposition</em>.</p>
 <p><strong>The general pattern.</strong> For $M_{2m}(\mathbb{C})$ with the chirality split into two $m$-dimensional planes, the mass block is $M_m(\mathbb{C})$, and its chiral polar decomposition has $m$ singular values. For $m=1$ there is one modulus; for $m=2$ there are two; for $m=3$ there are three. The two singular values of the $M_4$ mass block are the first nontrivial case.</p>
 <h2 id="summary">Summary</h2>
-<p>The mass block $\mathcal{B}=P_+M_4P_-\cong\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C})$ is the four-dimensional space of maps from the right chirality to the left. The chiral gauge $U(2)_L\times U(2)_R$ acts by $M\mapsto U_LMU_R^*$. Every $M$ has a singular value decomposition $M=U\Sigma V^*$ with two singular values $\sigma_1\ge\sigma_2\ge0$, and a chiral polar decomposition $M=WP$ with $W=UV^*$ unitary and $P=V\Sigma V^*$ positive semidefinite. The determinant is $e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2$; its modulus is the product of the singular values, and its phase is the chiral phase. The rank counts the massless modes: rank $2$ is massive, rank $1$ has one massless mode, rank $0$ is fully massless. The massless locus is a complex hypersurface of dimension $3$ and real codimension $2$. The off-diagonal block is the only coupling of the chiralities; the diagonal part preserves them. At $n=2$ the mass block is a line and the polar decomposition is the polar form of a complex scalar.</p>
+<p>The mass block $\mathcal{B}=P_+M_4P_-\cong\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C})$ is the four-dimensional space of maps from the right chirality to the left. The chiral gauge $U(2)_L\times U(2)_R$ acts by $M\mapsto U_LMU_R^*$. Every $M$ has a singular value decomposition $M=U\Sigma V^*$ with two singular values $\sigma_1\ge\sigma_2\ge0$, and a chiral polar decomposition $M=WP$ with $W=UV^*$ $*$-unitary and $P=V\Sigma V^*$ positive semidefinite. The determinant is $e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2$; its modulus is the product of the singular values, and its phase is the chiral phase. The rank counts the massless modes: rank $2$ is massive, rank $1$ has one massless mode, rank $0$ is fully massless. The massless locus is a complex hypersurface of dimension $3$ and real codimension $2$. The off-diagonal block is the only coupling of the chiralities; the diagonal part preserves them. At $n=2$ the mass block is a line and the polar decomposition is the polar form of a complex scalar.</p>
 <p>$$
 \boxed{\ M=U\Sigma V^*,\quad \sigma_1\ge\sigma_2\ge0,\quad \lvert\det M\rvert=\sigma_1\sigma_2,\quad \operatorname{rank}M\in\{0,1,2\},\quad \dim_\mathbb{C}\mathcal{B}=4.\ }
 $$</p>
@@ -323,7 +323,7 @@ $$</p>
 </tr>
 <tr>
 <td>$W=UV^*$</td>
-<td>the chiral phase, a unitary between the planes</td>
+<td>the chiral phase, a $*$-unitary between the planes</td>
 </tr>
 <tr>
 <td>$P=V\Sigma V^*$</td>

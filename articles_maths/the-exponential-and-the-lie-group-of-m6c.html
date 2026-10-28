@@ -85,7 +85,7 @@ e^{PJP^{-1}}=Pe^JP^{-1},
 e^{\lambda I+N}=e^\lambda\sum_{k=0}^{m-1}\frac{N^k}{k!},
 $$</p>
 <p>and the eigenvalues of $e^X$ are $e^{\lambda_1},\dots,e^{\lambda_6}$.</p>
-<p>The article assumes the Jordan form of <em>The Element, the Coordinates and the Trace</em> and the unitary group of <em>The Involution and the Hermitian Structure</em>. It uses the holomorphic functional calculus of <em>Spectral Theory and the Spectral Projectors</em>. The polar decomposition is <em>The Polar Decomposition</em>; the topology of the group is <em>The Topology of $M_6(\mathbb{C})$</em>.</p>
+<p>The article assumes the Jordan form of <em>The Element, the Coordinates and the Trace</em> and the $*$-unitary group of <em>The Involution and the Hermitian Structure</em>. It uses the holomorphic functional calculus of <em>Spectral Theory and the Spectral Projectors</em>. The polar decomposition is <em>The Polar Decomposition</em>; the topology of the group is <em>The Topology of $M_6(\mathbb{C})$</em>.</p>
 <h2 id="the-exponential">The Exponential</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> For $X\in M_6(\mathbb{C})$,</p>
@@ -145,7 +145,7 @@ X=\log A,
 $$</p>
 <p>defined by the Dunford calculus with the principal branch of the logarithm.</p>
 <p><strong>Proof.</strong> The principal logarithm is holomorphic on $\mathbb{C}\setminus(-\infty,0]$; the Dunford calculus applies; the spectral mapping gives $e^{\log A}=A$; the spectrum condition fixes the branch.</p>
-<p><strong>Corollary (the branch ambiguity).</strong> The logarithm is not unique. For a diagonalizable $A$ with eigenvalues $\lambda_i$, the logarithms are</p>
+<p><strong>Corollary (the branch ambiguity).</strong> The logarithm is not unique. For a diagonalizable $A$ with distinct eigenvalues $\lambda_i$, the logarithms are</p>
 <p>$$
 X_0+2\pi\mathrm i\,\operatorname{diag}(k_1,\dots,k_6)
 $$</p>
@@ -202,8 +202,8 @@ $$</p>
 <p><strong>Proof.</strong> The bracket is bilinear, antisymmetric and satisfies the Jacobi identity; the center is the scalars; the derived algebra is the traceless matrices because $[E_{ij},E_{ji}]=E_{ii}-E_{jj}$ and the commutators span the traceless part.</p>
 <p><strong>Corollary (the real form).</strong> The real Lie algebra $\mathfrak{gl}_6(\mathbb{R})$ has dimension $36$; the complex algebra, viewed as a real algebra, has dimension $72$.</p>
 <p><strong>Proof.</strong> A complex $n\times n$ matrix has $2n^2$ real parameters; a real one has $n^2$.</p>
-<h3 id="the-special-unitary-algebra">The Special Unitary Algebra</h3>
-<p><strong>Definition.</strong> The <strong>special unitary algebra</strong> is</p>
+<h3 id="the-special-math121-unitary-algebra">The Special $*$-Unitary Algebra</h3>
+<p><strong>Definition.</strong> The <strong>special $*$-unitary algebra</strong> is</p>
 <p>$$
 \mathfrak{su}(6)=\{X\in M_6(\mathbb{C}):X^*=-X,\ \operatorname{tr}X=0\}.
 $$</p>
@@ -240,7 +240,7 @@ $$</p>
 \det e^X=\prod_{i=1}^{6}e^{\lambda_i}=e^{\operatorname{tr}X}.
 $$</p>
 <p><strong>Proof.</strong> The eigenvalues of $e^X$ are $e^{\lambda_i}$ with the algebraic multiplicities; the trace is the sum and the determinant the product.</p>
-<p><strong>Corollary (the real eigenvalues).</strong> If $X$ is Hermitian, $e^X$ is Hermitian positive definite; if $X$ is skew-Hermitian, $e^X$ is unitary.</p>
+<p><strong>Corollary (the real eigenvalues).</strong> If $X$ is Hermitian, $e^X$ is Hermitian positive definite; if $X$ is skew-Hermitian, $e^X$ is $*$-unitary.</p>
 <p><strong>Proof.</strong> The spectral theorem; the exponential acts on the eigenvalues by $e^{\lambda}$.</p>
 <h3 id="the-exponential-of-a-sum">The Exponential of a Sum</h3>
 <p><strong>Theorem (the Baker–Campbell–Hausdorff formula).</strong> For $X,Y$ near $0$,</p>
@@ -372,13 +372,12 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>, for the Jordan form.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the unitary and special unitary groups.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the $*$-unitary and special $*$-unitary groups.</li>
 <li><a href="spectral-theory-and-the-spectral-projectors-of-m6c.html">Spectral Theory and the Spectral Projectors</a>, for the Dunford calculus and the principal logarithm.</li>
 <li><a href="the-polar-decomposition-of-m6c.html">The Polar Decomposition</a>, for the exponential form $A=Ue^H$.</li>
 <li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the Lie algebra and its derivations.</li>
 <li><a href="the-topology-of-m6c.html">The Topology of $M_6(\mathbb{C})$</a>, for the fundamental group and the center.</li>
-<li><a href="the-exponential-map.html">The Exponential Map</a>, for the general theory of the Lie group exponential.</li>
-<li><a href="the-baker-campbell-hausdorff-formula.html">The Baker–Campbell–Hausdorff Formula</a>, for the BCH series.</li>
+<li><a href="analysis-on-m6c.html">Analysis on $M_6(\mathbb{C})$</a>, for the exponential as a holomorphic map and its differential.</li>
 </ul>
       </div>
     </main>

@@ -278,9 +278,9 @@ Z(A)\cong\mathbb{C}^6,
 \qquad
 Z(A)\cap GL_6\cong(\mathbb{C}^\times)^6,
 \qquad
-Z(A)\cap PGL_6\cong(\mathbb{C}^\times)^5 .
+\text{image of }Z(A)\cap GL_6\text{ in }PGL_6\cong(\mathbb{C}^\times)^5 .
 $$</p>
-<p>The first is the torus of dimension six, the second its unit group, the third the gauge torus of dimension five.</p>
+<p>The first is the algebra $\mathbb{C}^6$; the second is its unit group, the torus of dimension six; the third is the gauge torus of dimension five.</p>
 <p><strong>Proof.</strong> If the spectrum is simple, $A$ is diagonalizable and $\mathbb{C}[A]$ is the algebra of diagonal matrices in the eigenbasis, isomorphic to $\mathbb{C}^6$. Its units are the diagonal matrices with nonzero entries, $(\mathbb{C}^\times)^6$. The projective quotient removes the overall scalar, leaving $(\mathbb{C}^\times)^5$.</p>
 <p><strong>Corollary (the root).</strong> For the root $H$ of <em>Roots of Unity and the Lagrange Idempotents</em>, the centralizer in $GL_6$ is the maximal torus $(\mathbb{C}^\times)^6$, of dimension six, and the gauge is its projective quotient, of dimension five.</p>
 <p><strong>Proof.</strong> $H$ has simple spectrum and $\chi_H=t^6-1$, so it is cyclic. Its centralizer is the diagonal torus in the eigenbasis.</p>
@@ -290,7 +290,7 @@ $$</p>
 \dim(GL_6\cdot A)=36-6=30 .
 $$</p>
 <p><strong>Proof.</strong> The orbit–stabilizer theorem: the stabilizer is the centralizer, of dimension six.</p>
-<p><strong>Corollary.</strong> The simple stratum is the union of the orbits of the cyclic elements, each of dimension $30$; the eigenvalues are the six parameters of the orbit.</p>
+<p><strong>Corollary.</strong> The simple stratum is the union of the orbits of the cyclic elements, each of dimension $30$; the eigenvalues are the six parameters transverse to the orbit.</p>
 <p><strong>Proof.</strong> A matrix with simple spectrum is cyclic, and its orbit is the set of matrices with the same spectrum, of dimension $30$. The simple stratum is the union over the six-dimensional space of spectra.</p>
 <p><strong>Remark (the non-cyclic centralizer).</strong> A non-cyclic element has a centralizer of dimension greater than six. The extreme case is the scalar matrix $\lambda I_6$, whose centralizer is all of $M_6$, of dimension $36$. The dimension of the centralizer measures the degeneracy of the spectrum: it is six exactly on the cyclic elements, and it grows as the Jordan structure coarsens.</p>
 <h2 id="the-spectral-projectors">The Spectral Projectors</h2>
@@ -449,7 +449,7 @@ $$</p>
 <p>$$
 \boxed{\ \dim S_\lambda=30+r,\qquad \text{simple spectrum }36,\qquad \text{one root }31 .\ }
 $$</p>
-<p>A cyclic element has centralizer $\mathbb{C}[A]\cong\mathbb{C}^6$, the maximal torus; its orbit has dimension $30$. The root $H$ is cyclic, and its gauge is the projective centralizer of dimension $5$.</p>
+<p>A cyclic element has centralizer $\mathbb{C}[A]\cong\mathbb{C}[t]/(m_A)$, of dimension $6$; with simple spectrum this is $\mathbb{C}^6$, whose unit group is the maximal torus. Its orbit has dimension $30$. The root $H$ is cyclic, and its gauge is the projective centralizer of dimension $5$.</p>
 <p>On the simple stratum the spectral projectors are the Lagrange projectors $P_i=\prod_{j\neq i}(A-\lambda_j)/(\lambda_i-\lambda_j)$; at a repeated root the individual projectors have poles, the cluster projectors extend, and the nilpotent part is the residue.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -477,7 +477,7 @@ $$</p>
 </tr>
 <tr>
 <td>Cyclic centralizer</td>
-<td>$\mathbb{C}^6$, dimension $6$</td>
+<td>$\mathbb{C}[t]/(m_A)$, dimension $6$</td>
 </tr>
 <tr>
 <td>Cyclic orbit</td>
@@ -547,8 +547,6 @@ $$</p>
 <li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>, for the scalar-traceless decomposition.</li>
 <li><a href="spectral-theory-and-the-spectral-projectors-of-m6c.html">Spectral Theory and the Spectral Projectors</a>, for the Hermitian spectral theorem.</li>
 <li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the projectors as points of a homogeneous space.</li>
-<li><a href="spectral-theory.html">Spectral Theory</a>, for the general theory of the characteristic polynomial and the spectral projectors.</li>
-<li><a href="the-discriminant-and-the-resultant.html">The Discriminant and the Resultant</a>, for the discriminant of a polynomial.</li>
 <li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 1995), for the contour integral projectors and their limits at a coalescence.</li>
 <li>James E. Humphreys, <em>Linear Algebraic Groups</em> (Springer, 1975), for the cyclic elements and the maximal torus.</li>
 </ul>

@@ -97,7 +97,7 @@ $$</p>
 $$</p>
 <p>which is the replacement that turns Hamilton's rule into the paper's: on vectors, the paper's product is the Pauli product $\vec q_x\cdot\vec q_y + i\,\vec q_x\times\vec q_y$, with <strong>both</strong> the dot and the cross term of opposite sign to the corpus's Hamilton product. The same convention and the same caution are recorded in <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em>, and the reader is referred there for the worked comparison. Two consequences matter here.</p>
 <p><strong>The dictionary.</strong> An element the paper writes as $(s,\vec q)$ is the corpus's element $(s, i\vec q)$. So the paper's vector coefficients $E_\mu$ enter the corpus's vector slots as $iE_\mu$. The paper's $\vec e_x, \vec e_y, \vec e_z$ are the corpus's $i\vec e_x, i\vec e_y, i\vec e_z$ — that is, the basis $e_t, x, y, z$ with $x = i\vec e_x$ and so on, whose vector units square to $+e_t$, which is the basis of <em>The Element and Operator Representations</em>.</p>
-<p><strong>The norm.</strong> The paper's square modulus, $\mathcal{B}\bar{\mathcal{B}} = s^2 - \vec q^2$, is <strong>indefinite</strong> in this basis: the "unitary" biquaternions, $\mathcal{B}\bar{\mathcal{B}} = 1$, are those with $s^2 - \lvert\vec q\rvert^2 = 1$, not those on a sphere. In the corpus's Hamilton basis the same expression would read $s^2 + \lvert\vec q\rvert^2$, because the vector units square to $-e_t$ there; the sign is the dictionary's, and the caution is repeated here because the paper's Lorentz group is built on the indefinite form.</p>
+<p><strong>The norm.</strong> The paper's square modulus, $\mathcal{B}\bar{\mathcal{B}} = s^2 - \vec q^2$, is <strong>indefinite</strong> in this basis: the "$*$-unitary" biquaternions, $\mathcal{B}\bar{\mathcal{B}} = 1$, are those with $s^2 - \lvert\vec q\rvert^2 = 1$, not those on a sphere. In the corpus's Hamilton basis the same expression would read $s^2 + \lvert\vec q\rvert^2$, because the vector units square to $-e_t$ there; the sign is the dictionary's, and the caution is repeated here because the paper's Lorentz group is built on the indefinite form.</p>
 <p>The algebra is $\mathbb{C}\otimes\mathbb{H}$, isomorphic to the $2\times2$ complex matrices and therefore carrying zero divisors; the corpus's <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>, §<em>The Zero Divisors</em> and <em>The Null Cone</em> treat them, and the null field $F^2 = 0$ of the twisting section is one of them.</p>
 <h3 id="the-field-and-the-lorentz-action">The Field, and the Lorentz Action</h3>
 <p>The field is the <strong>Riemann–Silberstein vector</strong>, the paper's (2.5),</p>
@@ -111,8 +111,8 @@ $$</p>
 Z_2 = U^{*}ZU, \qquad P_2 = U^{*}PU, \qquad F_{\mathrm L} = \bar{U}FU,
 \tag{2.1, 2.4, 2.6}
 $$</p>
-<p>with $U$ a unitary biquaternion, $U\bar{U} = 1$ in the sense above, and with the overline the quaternion conjugate and the star the complex conjugate. The text extraction of the PDF drops the overlines, as it does in the sibling paper; the two are restored here and the placement was settled by recomputation, not by reading. Of the $64$ ways to place a conjugate or its absence on each of the three equations, exactly four close under a covariant test, and the printed one is among them. The placement matters: the paper's group action preserves the indefinite interval, and the conjugation form $UZU^{-1}$, which a reader coming from the corpus's rotor conjugation might expect, is not even real in this algebra; it was checked and fails on both counts.</p>
-<p>Two caveats about the action belong here, both recomputed. First, $Z_2 = U^{*}ZU$ does preserve ${t'}^2 - |\vec r|^2$, to $8.4 \times 10^{-15}$ over $100$ random unitary biquaternions, so it is a Lorentz transformation and the paper is entitled to the group. Second, as a <em>parametrization</em> it is degenerate on the real parameters that the paper uses for boosts: for those, $U^{*} = U$ and the complex conjugate that makes the law a homomorphism is invisible, so the correspondence $U \mapsto (Z \mapsto UZU)$ is not multiplicative. This is a bookkeeping matter about which $U$ represents a composite transformation, not an error in the transformation law itself; it is recorded because the paper's (2.2), $U = \exp(\theta)$ with $\theta$ complex, is what makes the star do work elsewhere.</p>
+<p>with $U$ a $*$-unitary biquaternion, $U\bar{U} = 1$ in the sense above, and with the overline the quaternion conjugate and the star the complex conjugate. The text extraction of the PDF drops the overlines, as it does in the sibling paper; the two are restored here and the placement was settled by recomputation, not by reading. Of the $64$ ways to place a conjugate or its absence on each of the three equations, exactly four close under a covariant test, and the printed one is among them. The placement matters: the paper's group action preserves the indefinite interval, and the conjugation form $UZU^{-1}$, which a reader coming from the corpus's rotor conjugation might expect, is not even real in this algebra; it was checked and fails on both counts.</p>
+<p>Two caveats about the action belong here, both recomputed. First, $Z_2 = U^{*}ZU$ does preserve ${t'}^2 - |\vec r|^2$, to $8.4 \times 10^{-15}$ over $100$ random $*$-unitary biquaternions, so it is a Lorentz transformation and the paper is entitled to the group. Second, as a <em>parametrization</em> it is degenerate on the real parameters that the paper uses for boosts: for those, $U^{*} = U$ and the complex conjugate that makes the law a homomorphism is invisible, so the correspondence $U \mapsto (Z \mapsto UZU)$ is not multiplicative. This is a bookkeeping matter about which $U$ represents a composite transformation, not an error in the transformation law itself; it is recorded because the paper's (2.2), $U = \exp(\theta)$ with $\theta$ complex, is what makes the star do work elsewhere.</p>
 <h3 id="the-biquaternionic-quadratic-form">The Biquaternionic Quadratic Form</h3>
 <p>The derivation needs a real-valued quadratic form in the field that transforms as the energy–momentum of a particle. The paper proposes, as its (3.1),</p>
 <p>$$
@@ -464,7 +464,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathcal{B}\bar{\mathcal{B}} = s^2 - \vec q^2$</td>
-<td>Square modulus, indefinite; "unitary" means $U\bar U = 1$</td>
+<td>Square modulus, indefinite; "$*$-unitary" means $U\bar U = 1$</td>
 </tr>
 <tr>
 <td>$Z = (t', \vec r)$</td>
@@ -472,7 +472,7 @@ $$</p>
 </tr>
 <tr>
 <td>$U$, $\bar U$, $U^{*}$</td>
-<td>Unitary biquaternion of the Lorentz action and its two conjugates</td>
+<td>$*$-Unitary biquaternion of the Lorentz action and its two conjugates</td>
 </tr>
 <tr>
 <td>$F = \vec E + i\vec H$</td>

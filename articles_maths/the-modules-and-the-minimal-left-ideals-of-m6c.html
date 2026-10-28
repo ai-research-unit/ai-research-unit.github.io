@@ -88,7 +88,7 @@ $$</p>
 C(P)=PMP\oplus PMQ
 $$</p>
 <p>has dimension $1+5=6$; it is the row $PM$, the dual of the column. The minimal left ideal is the carrier of the spin chain: the Peirce $\mathfrak{su}_2$ of the rank-one idempotent acts irreducibly on it, with spin $5/2$.</p>
-<p>The article assumes the Peirce decomposition of <em>The Peirce Decomposition</em> and the spin chain of <em>The Spin Chain and the Adjoint Decomposition</em>. It uses no form and no topology. The modules over the biquaternion algebra are <em>The Modules over the Biquaternion Algebra</em>; the Morita equivalence is <em>Morita Equivalence</em>.</p>
+<p>The article assumes the Peirce decomposition of <em>The Peirce Decomposition</em> and the spin chain of <em>The Spin Chain and the Adjoint Decomposition</em>. It uses no form and no topology. The modules over the biquaternion algebra are <em>Modules over the Biquaternion Algebra</em>; the Morita equivalence is <em>Morita Equivalence</em>.</p>
 <h2 id="the-minimal-left-ideal">The Minimal Left Ideal</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> Let $P\in M_6(\mathbb{C})$ be an idempotent of rank one. The <strong>minimal left ideal</strong> of $P$ is</p>
@@ -231,19 +231,19 @@ $$</p>
 <p>$$
 MP=PMP\oplus QMP,
 $$</p>
-<p>of dimension $1+5=6$, the column; the Peirce carrier is the row $PM=PMP\oplus PMQ$, the dual. The two are exchanged by the transpose.</p>
-<p><strong>Proof.</strong> The Peirce decomposition of <em>The Peirce Decomposition</em> gives $MP=PMP\oplus QMP$ and $PM=PMP\oplus PMQ$.</p>
+<p>of dimension $1+5=6$, the column; the Peirce carrier is the row $PM=PMP\oplus PMQ$, the dual. The trace pairing pairs them perfectly; the transpose reverses the multiplication, so it is not an intertwiner of the two actions.</p>
+<p><strong>Proof.</strong> The Peirce decomposition of <em>The Peirce Decomposition</em> gives $MP=PMP\oplus QMP$ and $PM=PMP\oplus PMQ$. The trace pairing $\operatorname{tr}(XY)$ pairs the column with the row.</p>
 <h3 id="the-spin-chain">The Spin Chain</h3>
-<p><strong>Theorem.</strong> The Peirce $\mathfrak{su}_2$ of the rank-one idempotent acts irreducibly on the six-dimensional carrier, with highest weight $5/2$:</p>
+<p><strong>Theorem.</strong> The Peirce $\mathfrak{su}_2$ of the rank-one idempotent acts irreducibly on the six-dimensional left module $MP$, with highest weight $5/2$:</p>
 <p>$$
-C(P)\cong V_{5/2},
+MP\cong V_{5/2},
 \qquad
 \dim V_{5/2}=6 .
 $$</p>
-<p><strong>Proof.</strong> The spin chain of <em>The Spin Chain and the Adjoint Decomposition</em> has ladder operators $J_\pm$ and $J_3$ acting on the carrier; the highest weight vector is the top Peirce line, and the ladder has six steps, from $-5/2$ to $5/2$. The module is irreducible because the ladder generates the whole space.</p>
-<p><strong>Corollary (the module is the spin module).</strong> The minimal left ideal $L=MP$ and the Peirce carrier $C(P)=PM$ are both six-dimensional carriers of the spin-$5/2$ module; the left module is the column, the carrier is the dual row.</p>
-<p><strong>Proof.</strong> The two spaces are dual by the trace pairing, and the spin chain is self-dual (the spin-$5/2$ representation of $\mathfrak{su}_2$ is self-dual).</p>
-<p><strong>Remark (the module as the carrier).</strong> The minimal left ideal is not a spinor, not a column of spin coefficients, and not a Peirce space. It is the six-dimensional carrier of the defining representation, on which the Peirce chain acts irreducibly. <strong>The module is the carrier; the spin chain is the action.</strong></p>
+<p><strong>Proof.</strong> The spin chain of <em>The Spin Chain and the Adjoint Decomposition</em> has ladder operators $J_\pm$ and $J_3$ acting on the column $MP$ by left multiplication; the highest weight vector is the top Peirce line, and the ladder has six steps, from $-5/2$ to $5/2$. The module is irreducible because the ladder generates the whole space.</p>
+<p><strong>Corollary (the dual row).</strong> The Peirce carrier $C(P)=PM$ is the dual of the carrier $MP$. The contragredient action has the opposite weights, and the two representations are isomorphic because the spin-$5/2$ representation of $\mathfrak{su}_2$ is self-dual; the isomorphism is the duality pairing, not the transpose.</p>
+<p><strong>Proof.</strong> The trace pairing identifies $PM$ with $(MP)^*$; the contragredient action is $X\cdot r=-rX$, whose weights are the negatives. The spin-$5/2$ representation is self-dual, so the dual is isomorphic to $V_{5/2}$.</p>
+<p><strong>Remark (the module as the carrier).</strong> The minimal left ideal is the six-dimensional carrier of the defining representation, not a Peirce space and not a column of spin coefficients. The Peirce chain acts irreducibly on it. <strong>The module is the carrier; the spin chain is the action.</strong></p>
 <h2 id="summary">Summary</h2>
 <p>A rank-one idempotent $P$ of $M_6(\mathbb{C})$ gives the minimal left ideal</p>
 <p>$$
@@ -365,9 +365,9 @@ $$</p>
 <li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m6c.html">The Spin Chain and the Adjoint Decomposition</a>, for the action of the Peirce $\mathfrak{su}_2$ on the carrier.</li>
 <li><a href="the-two-chiralities-of-m6c.html">The Two Chiralities</a>, for the chiral halves, which are not minimal ideals.</li>
 <li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the rank-one matrices and the tensor product.</li>
-<li><a href="the-modules-over-the-biquaternion-algebra.html">The Modules over the Biquaternion Algebra</a>, for the rank-one case.</li>
+<li><a href="modules-over-the-biquaternion-algebra.html">Modules over the Biquaternion Algebra</a>, for the rank-one case.</li>
 <li><a href="morita-equivalence.html">Morita Equivalence</a>, for the equivalence of the module category with vector spaces.</li>
-<li><a href="simple-artinian-rings.html">Simple Artinian Rings</a>, for the classification of the modules.</li>
+<li><a href="noetherian-and-artinian-rings.html">Noetherian and Artinian Rings</a>, for the classification of the modules.</li>
 <li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the projective space of the minimal ideals.</li>
 </ul>
       </div>

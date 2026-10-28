@@ -218,12 +218,12 @@ $$</p>
 \mathfrak{u}(4)\longrightarrow U(4),\qquad
 \mathfrak{su}(4)\longrightarrow SU(4),
 $$</p>
-<p>because $\det e^X=e^{\operatorname{tr}X}$ and $(e^X)^*=e^{X^*}$. The exponential of a traceless matrix has determinant one; the exponential of a skew-Hermitian matrix is unitary; the exponential of a Hermitian matrix is positive definite.</p>
+<p>because $\det e^X=e^{\operatorname{tr}X}$ and $(e^X)^*=e^{X^*}$. The exponential of a traceless matrix has determinant one; the exponential of a skew-Hermitian matrix is $*$-unitary; the exponential of a Hermitian matrix is positive definite.</p>
 <p><strong>The polar decomposition.</strong> Every invertible $A$ is</p>
 <p>$$
 A=UP=e^{iK}e^H,
 $$</p>
-<p>with $K,H$ Hermitian. The unitary factor is the exponential of a skew-Hermitian matrix $iK$, and the positive factor is the exponential of the Hermitian matrix $H$. The polar decomposition is the global Cartan decomposition of the group.</p>
+<p>with $K,H$ Hermitian. The $*$-unitary factor is the exponential of a skew-Hermitian matrix $iK$, and the positive factor is the exponential of the Hermitian matrix $H$. The polar decomposition is the global Cartan decomposition of the group.</p>
 <h2 id="surjectivity-and-non-injectivity">Surjectivity and Non-Injectivity</h2>
 <p><strong>Theorem (surjectivity over $\mathbb{C}$).</strong> Every invertible complex matrix has a logarithm:</p>
 <p>$$
@@ -246,10 +246,10 @@ $$</p>
 $$</p>
 <p>The fibre is not a subgroup of the additive group, because the exponential is not a homomorphism on non-commuting matrices.</p>
 <p><strong>The principal logarithm.</strong> On the domain of matrices with no eigenvalues on the closed negative real axis, the <strong>principal logarithm</strong> is holomorphic and satisfies $e^{\log A}=A$. It is the inverse of the exponential on a neighbourhood of $I$, extended by the spectral calculus.</p>
-<p><strong>The image of the exponential.</strong> The image is all of $GL_4(\mathbb{C})$; the exponential is a surjective local diffeomorphism. It is not a covering map, because the fibre over $I$ is not discrete (it contains the continuous family of diagonalisable matrices with eigenvalues $2\pi i k$? The set of eigenvalues is discrete, but the conjugating matrix varies continuously; the fibre is a union of conjugacy classes of dimension up to $12$, not discrete). The exponential is not a covering.</p>
+<p><strong>The image of the exponential.</strong> The image is all of $GL_4(\mathbb{C})$; the exponential is surjective and is a local diffeomorphism away from the critical set. It is not a covering map, because the fibre over $I$ is not discrete: it is a union of conjugacy classes, and the conjugating matrix varies continuously, so the fibre has positive dimension. The exponential is not a covering.</p>
 <h2 id="the-global-structure-of-math136">The Global Structure of $GL_4$</h2>
 <p><strong>Connectedness.</strong> The Lie algebra $\mathfrak{gl}_4$ is connected, and the exponential is continuous and surjective, so $GL_4(\mathbb{C})$ is connected.</p>
-<p><strong>The maximal compact subgroup.</strong> The unitary group $U(4)$ is a maximal compact subgroup of $GL_4(\mathbb{C})$. The polar decomposition gives the diffeomorphism</p>
+<p><strong>The maximal compact subgroup.</strong> The $*$-unitary group $U(4)$ is a maximal compact subgroup of $GL_4(\mathbb{C})$. The polar decomposition gives the diffeomorphism</p>
 <p>$$
 GL_4(\mathbb{C})\cong U(4)\times P_+,
 $$</p>
@@ -263,7 +263,7 @@ $$</p>
 <p>$$
 PGL_4=GL_4/\mathbb{C}^\times I,
 $$</p>
-<p>of dimension $15$; the projective unitary group is $PU(4)=U(4)/U(1)I$, of dimension $15$.</p>
+<p>of dimension $15$; the projective $*$-unitary group is $PU(4)=U(4)/U(1)I$, of dimension $15$.</p>
 <p><strong>The Lie algebra centre.</strong> The centre of $\mathfrak{gl}_4$ is $\mathbb{C}I$, of dimension $1$; the traceless algebra $\mathfrak{sl}_4$ has dimension $15$ and is the Lie algebra of $SL_4$ and of $PGL_4$.</p>
 <h2 id="the-exponential-of-the-root-and-the-torus">The Exponential of the Root and the Torus</h2>
 <p><strong>The root generates a torus.</strong> The root</p>
@@ -279,14 +279,14 @@ $$</p>
 <p>$$
 \operatorname{diag}(e^{i\theta_1},e^{i\theta_2},e^{i\theta_3},e^{i\theta_4})
 $$</p>
-<p>form the maximal torus $T^4$ of $U(4)$, of real dimension $4$. The quotient by the diagonal $U(1)$ is the maximal torus of $PU(4)$, of dimension $3$, the gauge torus of <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<p>form the maximal torus $T^4$ of $U(4)$, of real dimension $4$. The quotient by the diagonal $U(1)$ is the maximal torus of $PU(4)$, of dimension $3$, the compact form of the gauge torus of <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
 <p><strong>The nilpotent exponential.</strong> For the simple nilpotents,</p>
 <p>$$
 e^{tE_{12}}=I+tE_{12},\qquad
 e^{tE_{23}}=I+tE_{23},\qquad
 e^{tE_{34}}=I+tE_{34},
 $$</p>
-<p>unipotent one-parameter subgroups. The products $e^{t_1E_{12}}e^{t_2E_{23}}e^{t_3E_{34}}$ form the maximal unipotent subgroup of the upper triangular Borel.</p>
+<p>unipotent one-parameter subgroups. The products $e^{t_1E_{12}}e^{t_2E_{23}}e^{t_3E_{34}}$ form a three-dimensional slice of the maximal unipotent subgroup; the group generated by the three one-parameter subgroups is the full six-dimensional unipotent radical of the upper triangular Borel.</p>
 <h2 id="the-biquaternion-case">The Biquaternion Case</h2>
 <p><strong>At $n=2$ the same theorem.</strong> For $M_2(\mathbb{C})$,</p>
 <p>$$
@@ -299,7 +299,7 @@ $$</p>
 <p>The biquaternion algebra's exponential is the same exponential on $2\times2$ matrices; the regular model embeds it in $M_4$.</p>
 <p><strong>The comparison.</strong> The exponential of the full algebra is the $4\times4$ exponential; the biquaternion exponential is the $2\times2$ exponential. The Lie algebra dimensions are $32$ and $8$; the Lie groups are $GL_4$ and $GL_2$. The exponential is surjective in both cases over $\mathbb{C}$.</p>
 <h2 id="summary">Summary</h2>
-<p>The exponential $e^X=\sum X^n/n!$ maps the Lie algebra $\mathfrak{gl}_4$ to the Lie group $GL_4$. It satisfies $e^{X+Y}=e^Xe^Y$ for commuting $X,Y$, $e^{-X}=(e^X)^{-1}$, $\det e^X=e^{\operatorname{tr}X}$, and $e^{SXS^{-1}}=Se^XS^{-1}$. Its differential at $0$ is the identity, so it is a local diffeomorphism near $0$; at $X$ the differential is $e^X(1-e^{-\operatorname{ad}_X})/\operatorname{ad}_X$, singular exactly when two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. The Baker–Campbell–Hausdorff series reconstructs the local group from the bracket. Over $\mathbb{C}$ the exponential is surjective onto $GL_4$ and not injective; the fibre over $I$ contains the conjugates of the diagonal matrices with eigenvalues in $2\pi i\mathbb{Z}$. The group $GL_4$ is connected, of real dimension $32$, with maximal compact $U(4)$, polar decomposition $GL_4\cong U(4)\times P_+$, and fundamental group $\mathbb{Z}$; it deformation retracts onto $U(4)$. The Lie algebras of $SL_4,U(4),SU(4)$ are $\mathfrak{sl}_4,\mathfrak{u}(4),\mathfrak{su}(4)$, of real dimensions $30,16,15$. The root generates the one-parameter subgroup $\operatorname{diag}(e^t,e^{it},e^{-t},e^{-it})$, the nilpotents generate unipotent subgroups, and the compact diagonal torus is the gauge torus of the frame.</p>
+<p>The exponential $e^X=\sum X^n/n!$ maps the Lie algebra $\mathfrak{gl}_4$ to the Lie group $GL_4$. It satisfies $e^{X+Y}=e^Xe^Y$ for commuting $X,Y$, $e^{-X}=(e^X)^{-1}$, $\det e^X=e^{\operatorname{tr}X}$, and $e^{SXS^{-1}}=Se^XS^{-1}$. Its differential at $0$ is the identity, so it is a local diffeomorphism near $0$; at $X$ the differential is $e^X(1-e^{-\operatorname{ad}_X})/\operatorname{ad}_X$, singular exactly when two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. The Baker–Campbell–Hausdorff series reconstructs the local group from the bracket. Over $\mathbb{C}$ the exponential is surjective onto $GL_4$ and not injective; the fibre over $I$ contains the conjugates of the diagonal matrices with eigenvalues in $2\pi i\mathbb{Z}$. The group $GL_4$ is connected, of real dimension $32$, with maximal compact $U(4)$, polar decomposition $GL_4\cong U(4)\times P_+$, and fundamental group $\mathbb{Z}$; it deformation retracts onto $U(4)$. The Lie algebras of $SL_4,U(4),SU(4)$ are $\mathfrak{sl}_4,\mathfrak{u}(4),\mathfrak{su}(4)$, of real dimensions $30,16,15$. The root generates the one-parameter subgroup $\operatorname{diag}(e^t,e^{it},e^{-t},e^{-it})$, the nilpotents generate unipotent subgroups, and the compact diagonal torus is the compact part of the gauge torus of the frame.</p>
 <p>$$
 \boxed{\ \exp:\mathfrak{gl}_4\to GL_4\ \text{surjective},\quad \det e^X=e^{\operatorname{tr}X},\quad d(\exp)_0=I,\quad GL_4\simeq U(4),\quad \pi_1(GL_4)=\mathbb{Z}. }
 $$</p>

@@ -161,7 +161,7 @@ $$</p>
 \tilde U\tilde U^*=\frac{\tilde Q\tilde Q^*}{|\Rho|^2}
 =\frac{\lVert\tilde Q\rVert_E^2}{|N|}\,e_t+i\vec a.
 $$</p>
-<p>The word gives $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ unitary, hence</p>
+<p>The word gives $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ $*$-unitary, hence</p>
 <p>$$
 \tilde U\tilde U^*=\tilde U_{\mathrm b}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^*\tilde U_{\mathrm b}^*=\tilde U_{\mathrm b}^2.
 $$</p>
@@ -531,7 +531,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The spectrum and the eigenprojectors together determine the element. The polar word is another eight data. The two parametrizations share the four data $(r,\alpha,U_t)$; the spectrum determines the remaining data only in the normal case, where the eigenprojectors are the polar axes. In the non-normal case the eigenprojectors do not determine the polar axes, and the spectrum does not determine the two angles.</p>
-<p>The spectral decomposition is a diagonalization over $\mathbb{C}$: it writes $\tilde Q$ as two complex multiples of two idempotents. The polar decomposition is a Cartan decomposition over $\mathbb{R}$: it writes $\tilde Q$ as a positive Hermitian factor times a unitary factor. The two agree on the scalar factor and on the eigenvalues of $\tilde Q$, and on nothing else in the non-normal case.</p>
+<p>The spectral decomposition is a diagonalization over $\mathbb{C}$: it writes $\tilde Q$ as two complex multiples of two idempotents. The polar decomposition is a Cartan decomposition over $\mathbb{R}$: it writes $\tilde Q$ as a positive Hermitian factor times a $*$-unitary factor. The two agree on the scalar factor and on the eigenvalues of $\tilde Q$, and on nothing else in the non-normal case.</p>
 <p><strong>Remark (the two decompositions are transverse).</strong> The eigenbasis depends on the complex structure of the vector part; the polar frame depends on the Hermitian structure of the unit factor. The normal elements are the intersection: the elements for which the two frames coincide. The intersection is the normal set, $Q_t+\zeta\vec u$ with $Q_t,\zeta\in\mathbb{C}$ and $\vec u\in S^2$, of real dimension $2+2+2=6$; it is not open in the sector.</p>
 <h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
 <p><strong>Theorem (the exponential polar decomposition).</strong> Every $\tilde Q\in\Sigma_{11}$ has a unique writing</p>
@@ -547,7 +547,7 @@ P=\{\text{positive Hermitian of determinant }1\},
 \qquad
 K=SU(2),
 $$</p>
-<p>gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis. A unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch. $\square$</p>
+<p>gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch. $\square$</p>
 <p>The proof uses only the invertibility of $\tilde Q$; the spectral condition $B^2\neq0$ enters only through the domain, not through the existence. This is why the companion article can repeat the same theorem verbatim.</p>
 <p><strong>The degeneracies.</strong> The boost axis is undefined at $\psi=0$, where the boost is the identity. The rotor axis is undefined at $\theta=0$, where the rotor is the identity, and at $\theta=2\pi$, where the rotor is $-e_t$ for every axis. These are the usual coordinate singularities of polar coordinates; the element is smooth there and the word is unique.</p>
 <div class="table-scroll"><table>
@@ -715,8 +715,8 @@ $$</p>
 <p>$$
 \mathsf M(\tilde Q)=r e^{i\alpha}\,\mathsf M(\tilde U_{\mathrm b})\,\mathsf M(\tilde u_{\mathrm r}),
 $$</p>
-<p>with $\mathsf M(\tilde U_{\mathrm b})$ positive definite of determinant one and $\mathsf M(\tilde u_{\mathrm r})$ unitary of determinant one.</p>
-<p>The spectral reading is the diagonalization of the matrix. The matrix $\mathsf M(\tilde Q)$ has the two distinct eigenvalues $\lambda_\pm$, and it is diagonalizable; the eigenbasis is a basis of $\mathbb{C}^2$ consisting of the two eigenvectors. The polar factors are the positive and unitary factors of the matrix polar decomposition. They are diagonal in that basis exactly when the matrix is normal, which is the matrix form of the theorem of §<em>The Normal Case</em>.</p>
+<p>with $\mathsf M(\tilde U_{\mathrm b})$ positive definite of determinant one and $\mathsf M(\tilde u_{\mathrm r})$ $*$-unitary of determinant one.</p>
+<p>The spectral reading is the diagonalization of the matrix. The matrix $\mathsf M(\tilde Q)$ has the two distinct eigenvalues $\lambda_\pm$, and it is diagonalizable; the eigenbasis is a basis of $\mathbb{C}^2$ consisting of the two eigenvectors. The polar factors are the positive and $*$-unitary factors of the matrix polar decomposition. They are diagonal in that basis exactly when the matrix is normal, which is the matrix form of the theorem of §<em>The Normal Case</em>.</p>
 <p>The four exponents sit in the two summands of</p>
 <p>$$
 \mathfrak{gl}_2(\mathbb{C})=\mathfrak{u}(2)\oplus\mathfrak{H},
@@ -743,7 +743,7 @@ $$</p>
 <td>boost</td>
 </tr>
 <tr>
-<td>unitary determinant-one matrix</td>
+<td>$*$-unitary determinant-one matrix</td>
 <td>unit real quaternion</td>
 <td>$3$</td>
 <td>rotor</td>
@@ -928,7 +928,7 @@ $$</p>
 <tr>
 <td>factors</td>
 <td>two idempotents</td>
-<td>positive Hermitian times unitary</td>
+<td>positive Hermitian times $*$-unitary</td>
 </tr>
 <tr>
 <td>coefficients</td>

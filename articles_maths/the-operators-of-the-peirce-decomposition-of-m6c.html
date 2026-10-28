@@ -89,7 +89,7 @@ $$</p>
 \operatorname{Aut}(M_6)=PGL_6(\mathbb{C}),
 $$</p>
 <p>with the transpose as an anti-automorphism and the transpose-inverse as the outer automorphism of the Lie algebra $\mathfrak{sl}_6$.</p>
-<p>The article assumes the Peirce decomposition of <em>The Peirce Decomposition</em> and the tensor product of <em>The Modules and the Minimal Left Ideals</em>. It uses no form and no topology. The adjoint action and the orbits are <em>The Adjoint Action, the Orbits and the Flag Variety</em>; the derivations of the biquaternion algebra are <em>Derivations of the Biquaternion Algebra</em>.</p>
+<p>The article assumes the Peirce decomposition of <em>The Peirce Decomposition</em> and the tensor product of <em>The Modules and the Minimal Left Ideals</em>. It uses no form and no topology. The adjoint action and the orbits are <em>The Adjoint Action, the Orbits and the Flag Variety</em>; the derivations of the biquaternion algebra are <em>Biquaternion Automorphisms and Derivations</em>.</p>
 <h2 id="the-multiplication-operators">The Multiplication Operators</h2>
 <h3 id="left-and-right-multiplication">Left and Right Multiplication</h3>
 <p><strong>Definition.</strong> For $a\in M_6(\mathbb{C})$,</p>
@@ -327,15 +327,22 @@ $$</p>
 <p>with $j=r$, $s=k$. In the rank-one case all four corners are one-dimensional, and the sandwich is a scalar.</p>
 <p><strong>Proof.</strong> The domain of $T_{a,b}$ is $A_{rs}$; the target is $A_{il}$; the map is bilinear in $(a,b)$.</p>
 <h3 id="the-sandwich-matrix">The Sandwich Matrix</h3>
-<p><strong>Theorem.</strong> In the basis of matrix units $E_{ij}$,</p>
+<p><strong>Theorem.</strong> In the basis of matrix units $E_{rs}$,</p>
 <p>$$
-T_{a,b}(E_{rs})=\delta_{jr}\delta_{sk}\,a_{ij}b_{kl}\,E_{il},
+T_{a,b}(E_{rs})=aE_{rs}b=\sum_{i,l}a_{ir}b_{sl}\,E_{il},
 $$</p>
 <p>so the matrix of $T_{a,b}$ has entries</p>
 <p>$$
-(T_{a,b})_{(il),(rs)}=a_{ij}b_{kl}\,\delta_{jr}\delta_{sk}.
+(T_{a,b})_{(il),(rs)}=a_{ir}b_{sl}.
 $$</p>
-<p><strong>Proof.</strong> $aE_{rs}b=(\sum_{ij}a_{ij}E_{ij})E_{rs}(\sum_{kl}b_{kl}E_{kl})=a_{ir}b_{sl}E_{il}$? Let me compute: $E_{ij}E_{rs}E_{kl}=\delta_{jr}\delta_{sk}E_{il}$, so the coefficient is $a_{ij}b_{kl}$ with $j=r$, $s=k$. The index of $a$ is $(i,j)=(i,r)$ and of $b$ is $(k,l)=(s,l)$; so the entry is $a_{ir}b_{sl}$.</p>
+<p><strong>Proof.</strong> Expand $a$ and $b$ in the matrix units:</p>
+<p>$$
+aE_{rs}b
+=\sum_{ijkl}a_{ij}b_{kl}E_{ij}E_{rs}E_{kl}
+=\sum_{ijkl}a_{ij}b_{kl}\delta_{jr}\delta_{sk}E_{il}
+=a_{ir}b_{sl}E_{il}.
+$$</p>
+<p>Hence the entry in the $(il),(rs)$ position is $a_{ir}b_{sl}$.</p>
 <p><strong>Corollary (the rank).</strong> $\operatorname{rank}T_{a,b}=\operatorname{rank}(a)\operatorname{rank}(b)$.</p>
 <p><strong>Proof.</strong> $T_{a,b}=b^{\mathsf T}\otimes a$; the rank of a Kronecker product is the product of the ranks.</p>
 <p><strong>Corollary (the invertible sandwiches).</strong> $T_{a,b}$ is invertible iff $a$ and $b$ are invertible; the group of invertible sandwiches is $(GL_6\times GL_6)/\mathbb{C}^\times$.</p>
@@ -397,7 +404,7 @@ $$</p>
 <tr>
 <td>$\operatorname{ad}_a$</td>
 <td>$I_6\otimes a-a^{\mathsf T}\otimes I_6$</td>
-<td>eigenvalue $\delta_{rs}-\delta_{rt}$ on $A_{st}$</td>
+<td>$\lambda_s-\lambda_t$ on $A_{st}$ for diagonal $a=\sum_k\lambda_kE_{kk}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -450,10 +457,7 @@ $$</p>
 <li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the derivations and the automorphisms.</li>
 <li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the inner automorphisms as a group action.</li>
 <li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals</a>, for the left and right regular modules.</li>
-<li><a href="the-enveloping-operator-algebra.html">The Enveloping Operator Algebra</a>, for the sandwich monoid and its span.</li>
-<li><a href="derivations-of-the-biquaternion-algebra.html">Derivations of the Biquaternion Algebra</a>, for the rank-one case.</li>
-<li><a href="the-outer-automorphism-of-sl6.html">The Outer Automorphism of $\mathfrak{sl}_6$</a>, for the Dynkin diagram symmetry.</li>
-<li><a href="skolem-noether-theorem.html">Skolem–Noether Theorem</a>, for the innerness of the automorphisms.</li>
+<li><a href="biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the rank-one case.</li>
 </ul>
       </div>
     </main>

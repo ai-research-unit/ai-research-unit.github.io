@@ -101,7 +101,7 @@ $$</p>
 <p>$$
 \sum_{n \in \mathbb{Z}} |(\mathcal F f)(n)|^2 = \int_0^1 |f(a)|^2 \, da,
 $$</p>
-<p>and $f \mapsto ((\mathcal F f)(n))$ is a unitary isomorphism $L^2(\mathbb{T}) \to \ell^2(\mathbb{Z})$. Consequently, for $f, g \in L^2(\mathbb{T})$,</p>
+<p>and $f \mapsto ((\mathcal F f)(n))$ is a $*$-unitary isomorphism $L^2(\mathbb{T}) \to \ell^2(\mathbb{Z})$. Consequently, for $f, g \in L^2(\mathbb{T})$,</p>
 <p>$$
 \sum_{n \in \mathbb{Z}} (\mathcal F f)(n) \overline{(\mathcal F g)(n)} = \int_0^1 f(a) \overline{g(a)} \, da.
 $$</p>
@@ -130,13 +130,13 @@ $$</p>
 <p>for almost every $a$, and for every $a$ if $f$ is continuous.</p>
 <p><strong>Proof.</strong> For $\epsilon > 0$ define $f_\epsilon(a) = \int (\mathcal F f)(\xi) \exp(-\pi \epsilon^2 \xi^2) \exp(2\pi i \xi a) d\xi$. Since $\mathcal F f \in L^1$, convolution with the Gaussian $G_\epsilon(a) = \epsilon^{-1} \exp(-\pi a^2/\epsilon^2)$ gives $f_\epsilon = f * G_\epsilon$. As $(G_\epsilon)$ is an approximate identity, $f_\epsilon \to f$ in $L^1$ and at Lebesgue points, while dominated convergence gives $f_\epsilon(a) \to \int (\mathcal F f)(\xi) \exp(2\pi i \xi a) d\xi$ at every $a$.</p>
 <h3 id="the-plancherel-theorem">The Plancherel Theorem</h3>
-<p><strong>Theorem (Plancherel).</strong> The Fourier transform on $L^1(\mathbb{R}) \cap L^2(\mathbb{R})$ satisfies $\|\mathcal F f\|_2 = \|f\|_2$ and $\langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle$, and extends uniquely to a unitary operator</p>
+<p><strong>Theorem (Plancherel).</strong> The Fourier transform on $L^1(\mathbb{R}) \cap L^2(\mathbb{R})$ satisfies $\|\mathcal F f\|_2 = \|f\|_2$ and $\langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle$, and extends uniquely to a $*$-unitary operator</p>
 <p>$$
 \mathcal{F} : L^2(\mathbb{R}) \to L^2(\mathbb{R}).
 $$</p>
 <p><strong>Proof.</strong> For $f \in L^1 \cap L^2$, put $f^{\mathrm{refl}}(a) = \overline{f(-a)}$. Then $\widehat{f * f^{\mathrm{refl}}} = |\mathcal F f|^2$, so inversion at $0$ gives $\int |\mathcal F f|^2 = (f * f^{\mathrm{refl}})(0) = \int |f|^2$; polarization gives the inner-product identity. Since $L^1 \cap L^2$ is dense and $\mathcal{F}$ is an isometry there, it extends uniquely to an isometry of $L^2$ whose range is closed and dense.</p>
 <p>For $f \in L^2(\mathbb{R})$ the transform is the $L^2$ limit of the truncated integrals, and $\mathcal{F}^2 f(a) = f(-a)$, $\mathcal{F}^{-1} = \mathcal{F}^3$, $\mathcal{F}^4 = \mathrm{Id}$.</p>
-<h2 id="the-fourier-transform-on-math95">The Fourier Transform on $\mathbb{R}^n$</h2>
+<h2 id="the-fourier-transform-on-math97">The Fourier Transform on $\mathbb{R}^n$</h2>
 <h3 id="definition_2">Definition</h3>
 <p>For $f \in L^1(\mathbb{R}^n)$ the <strong>Fourier transform</strong> is</p>
 <p>$$
@@ -151,9 +151,9 @@ $$</p>
 <p>$$
 \widehat{\Delta f}(\xi) = -4\pi^2 |\xi|^2 (\mathcal F f)(\xi).
 $$</p>
-<h3 id="inversion-and-plancherel-on-math113">Inversion and Plancherel on $\mathbb{R}^n$</h3>
+<h3 id="inversion-and-plancherel-on-math115">Inversion and Plancherel on $\mathbb{R}^n$</h3>
 <p><strong>Theorem (Inversion).</strong> If $f \in L^1(\mathbb{R}^n)$ and $\mathcal F f \in L^1(\mathbb{R}^n)$, then $f(a) = \int_{\mathbb{R}^n} (\mathcal F f)(\xi) \exp(2\pi i \xi \cdot a) d\xi$ for almost every $a$, and everywhere if $f$ is continuous.</p>
-<p><strong>Theorem (Plancherel).</strong> The Fourier transform extends uniquely to a unitary operator $\mathcal{F} : L^2(\mathbb{R}^n) \to L^2(\mathbb{R}^n)$, and for all $f, g \in L^2(\mathbb{R}^n)$,</p>
+<p><strong>Theorem (Plancherel).</strong> The Fourier transform extends uniquely to a $*$-unitary operator $\mathcal{F} : L^2(\mathbb{R}^n) \to L^2(\mathbb{R}^n)$, and for all $f, g \in L^2(\mathbb{R}^n)$,</p>
 <p>$$
 \|\mathcal F f\|_2 = \|f\|_2, \qquad \langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle.
 $$</p>
@@ -244,7 +244,7 @@ $$</p>
 <p>so $H$ is a skew-adjoint isometry of $L^2(\mathbb{R})$, the operator corresponding to the conjugate-function operator of Fourier series.</p>
 <p><strong>Boundedness on $L^{r}$.</strong> The Hilbert transform is bounded on $L^{r}(\mathbb{R})$ for every $1 < r < \infty$: there is $C_r$ with $\|Hf\|_r \le C_r \|f\|_r$ (the Riesz theorem for the conjugate function). It is not bounded on $L^1$ and not bounded on $L^\infty$.</p>
 <p><strong>Weak $(1,1)$.</strong> For $f \in L^1(\mathbb{R})$ there is $C$ with $|\{a : |Hf(a)| > \lambda\}| \le C \lambda^{-1} \|f\|_1$ (Kolmogorov). Together with the $L^2$ isometry this yields the $L^{r}$ bounds by interpolation. The truncated maximal Hilbert transform $H^* f = \sup_{\epsilon > 0} |H_\epsilon f|$ obeys the same weak $(1,1)$ and strong $L^{r}$ bounds.</p>
-<h2 id="interpolation-and-math275-theory">Interpolation and $L^{r}$ Theory</h2>
+<h2 id="interpolation-and-math278-theory">Interpolation and $L^{r}$ Theory</h2>
 <h3 id="the-rieszthorin-theorem">The Riesz–Thorin Theorem</h3>
 <p><strong>Theorem (Riesz–Thorin).</strong> Let $1 \le r_0, r_1, s_0, s_1 \le \infty$ and let $T$ be a linear operator bounded from $L^{r_0}$ to $L^{s_0}$ with norm $M_0$ and from $L^{r_1}$ to $L^{s_1}$ with norm $M_1$. For $0 < \theta < 1$ define</p>
 <p>$$
@@ -293,7 +293,7 @@ $$</p>
 <p>$$
 \|f\|_{H^s}^2 = \int_{\mathbb{R}^n} (1 + |\xi|^2)^s \, |(\mathcal F f)(\xi)|^2 \, d\xi < \infty.
 $$</p>
-<p><strong>Theorem.</strong> For every real $s$, $H^s(\mathbb{R}^n)$ is a Hilbert space under the inner product $\langle f, g \rangle_{H^s} = \int (1 + |\xi|^2)^s (\mathcal F f)(\xi) \overline{(\mathcal F g)(\xi)} d\xi$, and the Fourier transform is a unitary isomorphism onto $L^2(\mathbb{R}^n, (1 + |\xi|^2)^s d\xi)$. For $s = k$ a non-negative integer, $H^k(\mathbb{R}^n) = W^{k,2}(\mathbb{R}^n)$ with equivalent norms.</p>
+<p><strong>Theorem.</strong> For every real $s$, $H^s(\mathbb{R}^n)$ is a Hilbert space under the inner product $\langle f, g \rangle_{H^s} = \int (1 + |\xi|^2)^s (\mathcal F f)(\xi) \overline{(\mathcal F g)(\xi)} d\xi$, and the Fourier transform is a $*$-unitary isomorphism onto $L^2(\mathbb{R}^n, (1 + |\xi|^2)^s d\xi)$. For $s = k$ a non-negative integer, $H^k(\mathbb{R}^n) = W^{k,2}(\mathbb{R}^n)$ with equivalent norms.</p>
 <p>The <strong>homogeneous</strong> Sobolev space $\mathring{H}^s$ uses the seminorm $\|f\|_{\mathring{H}^s}^2 = \int |\xi|^{2s} |(\mathcal F f)(\xi)|^2 d\xi$, and $\partial^\alpha : H^s \to H^{s - |\alpha|}$ is bounded for all real $s$.</p>
 <h3 id="sobolev-embedding">Sobolev Embedding</h3>
 <p><strong>Theorem (Sobolev embedding).</strong> Let $k \ge 1$ and $1 \le r < \infty$. If $k < n/r$, then $W^{k,r}(\mathbb{R}^n) \subset L^{s}(\mathbb{R}^n)$ continuously for $\frac{1}{s} = \frac{1}{r} - \frac{k}{n}$. If $k = n/r$, then $W^{k,r}(\mathbb{R}^n) \subset L^{s}(\mathbb{R}^n)$ for every $r \le s < \infty$. If $k > n/r$, then $W^{k,r}(\mathbb{R}^n) \subset C^m(\mathbb{R}^n)$ for $m < k - n/r$, after modification on a null set.</p>

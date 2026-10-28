@@ -281,8 +281,8 @@ $$</p>
 X\longmapsto M X M^{\dagger}, \qquad M=\mathsf{M}_2(\tilde Q).
 $$</p>
 <p>Off the cone, $M$ is invertible, the congruence is a bijection, it preserves the rank of every argument, and it scales the determinant by $|\det M|^2=|N|^2$. On the cone, $M$ has rank one and the congruence collapses: every image is a multiple of the Hermitian rank-one matrix $u u^{\dagger}$, the image is a single complex line, and the operator has rank one. The value of the trace $4|Q_t|^2$ decides whether the surviving operator is nilpotent ($Q_t=0$) or a scaled projection ($Q_t\neq0$).</p>
-<p>The congruence is a completely positive map with a single Kraus operator. It is trace-preserving exactly when $M$ is unitary, that is for the unitary elements; otherwise it rescales the trace. On the cone it is a destructive map: it projects every operand onto one line and erases the distinctions between them. The algebra supplies the shape of a quantum channel and of a measurement; it does not supply the probability rule for the outcomes.</p>
-<h3 id="the-math101-operator">The $4\times4$ Operator</h3>
+<p>The congruence is a completely positive map with a single Kraus operator. It is trace-preserving exactly when $M$ is $*$-unitary, that is for the $*$-unitary elements; otherwise it rescales the trace. On the cone it is a destructive map: it projects every operand onto one line and erases the distinctions between them. The algebra supplies the shape of a quantum channel and of a measurement; it does not supply the probability rule for the outcomes.</p>
+<h3 id="the-math103-operator">The $4\times4$ Operator</h3>
 <p>On the algebra the same sandwich is the matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$. If $\mathsf{M}_2(\tilde Q)$ has eigenvalues $\lambda_1,\lambda_2$, the operator has the four eigenvalues</p>
 <p>$$
 \lambda_1\bar\lambda_1,\quad \lambda_1\bar\lambda_2,\quad \lambda_2\bar\lambda_1,\quad \lambda_2\bar\lambda_2,
@@ -389,7 +389,7 @@ $$</p>
 \bigl(\operatorname{H}_{\tilde Q}\bigr)^{\dagger}=\operatorname{H}_{\tilde Q^{*}},
 $$</p>
 <p>so the sandwich is self-adjoint iff $\tilde Q^{*}=\lambda\tilde Q$ with $|\lambda|=1$, equivalently iff a central-phase multiple of $\tilde Q$ lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. The criterion is algebraic; it does not by itself make the self-adjoint sandwiches observables. A Lorentz boost is a Hermitian parameter, hence gives a self-adjoint sandwich, and it is a transformation, not an observable.</p>
-<p>On the unitary slice $\tilde Q\tilde Q^{*}=e_t$, the sandwich is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the product, not only the sector. Off the slice it is a congruence that scales the interval. On the null cone it survives as a rank-one map; the nilpotent and the scaled projection are its two faces.</p>
+<p>On the $*$-unitary slice $\tilde Q\tilde Q^{*}=e_t$, the sandwich is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the product, not only the sector. Off the slice it is a congruence that scales the interval. On the null cone it survives as a rank-one map; the nilpotent and the scaled projection are its two faces.</p>
 <h3 id="the-monoid-of-acting-maps">The Monoid of Acting Maps</h3>
 <p>The left multiplications form a monoid under composition, isomorphic to the multiplicative monoid of $\mathbb{B}$:</p>
 <p>$$
@@ -530,7 +530,7 @@ $$</p>
 <li>The one-sided composition laws are $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$; the two families commute. The sandwich is multiplicative, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but not linear.</li>
 <li>The adjoint for the plain form swaps the sides and leaves the parameter alone; self-adjoint one-sided operators are the central multiplications. The orientation is in the commutator, not in the form.</li>
 <li>A two-sided operator is a pair defined up to a common central factor; it is invertible exactly when both parameters are units.</li>
-<li>The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. On the unitary slice it is an inner automorphism.</li>
+<li>The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. On the $*$-unitary slice it is an inner automorphism.</li>
 <li>The acting maps form a monoid; the reversible maps are the units off the cone, the states are the idempotents, and the cone is the boundary between them.</li>
 <li>The Peirce decomposition gives the four corners: populations on the diagonal, coherences off it.</li>
 <li>No picture is more fundamental than another; each is a choice of what to make visible, and the correspondence table is the translation between them.</li>

@@ -104,8 +104,8 @@ $$</p>
 <td><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, §<em>The Exponential</em></td>
 </tr>
 <tr>
-<td>The Hermitian norm of the flow, the norm deficit and the unitary and self-adjoint criteria</td>
-<td><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, §<em>The Hermitian Norm and the Unitary Flow</em></td>
+<td>The Hermitian norm of the flow, the norm deficit and the $*$-unitary and self-adjoint criteria</td>
+<td><a href="biquaternion-elementary-functions.html">Biquaternion Elementary Functions</a>, §<em>The Hermitian Norm and the $*$-Unitary Flow</em></td>
 </tr>
 <tr>
 <td>The kernel as the exponential of a regular element</td>
@@ -360,10 +360,10 @@ W(t,\omega)^*=\exp(2\pi\bar\rho\,\omega t),
 \qquad
 W(t,\omega)W(t,\omega)^*=\exp\bigl(-2\pi(\rho-\bar\rho)\omega t\bigr),
 $$</p>
-<p>and the kernel is unitary for the positive Hermitian form exactly when $\rho=\bar\rho$, that is, when $\rho$ is real. This is the criterion of <em>The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root</em>, §<em>Unitarity of the Character and the Root</em>, read on the root the element supplies.</p>
+<p>and the kernel is $*$-unitary for the positive Hermitian form exactly when $\rho=\bar\rho$, that is, when $\rho$ is real. This is the criterion of <em>The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root</em>, §<em>Unitarity of the Character and the Root</em>, read on the root the element supplies.</p>
 <p><strong>Proposition 3 (unitarity and self-adjointness of the flow).</strong> Let $B^2\neq0$ and let $\theta$ be real. The following are equivalent:</p>
 <ul>
-<li>$e^{\theta\tilde Q}$ is unitary for the Hermitian form for every $\theta$;</li>
+<li>$e^{\theta\tilde Q}$ is $*$-unitary for the Hermitian form for every $\theta$;</li>
 <li>$\tilde Q^*=-\tilde Q$;</li>
 <li>$Q_t\in i\mathbb{R}$ and $\vec Q\in\mathbb{R}^3$.</li>
 </ul>
@@ -373,7 +373,7 @@ $$</p>
 <li>$\tilde Q^*=\tilde Q$;</li>
 <li>$Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$.</li>
 </ul>
-<p><em>Proof.</em> If $E=e^{\theta\tilde Q}$ is unitary for every $\theta$, differentiating $EE^*=e_t$ at $\theta=0$ gives $\tilde Q+\tilde Q^*=0$. Conversely, if $\tilde Q^*=-\tilde Q$ then $E^*=e^{\theta\tilde Q^*}=e^{-\theta\tilde Q}=E^{-1}$. The equivalence with the coordinate conditions is the computation of $*$ on $Q_te_t+\vec Q$: the scalar part is conjugated and the vector part is negated and conjugated, so $\tilde Q^*=-\tilde Q$ means $\bar Q_t=-Q_t$ and $\overline{\vec Q}=\vec Q$. The self-adjoint case is the same computation with the opposite signs.</p>
+<p><em>Proof.</em> If $E=e^{\theta\tilde Q}$ is $*$-unitary for every $\theta$, differentiating $EE^*=e_t$ at $\theta=0$ gives $\tilde Q+\tilde Q^*=0$. Conversely, if $\tilde Q^*=-\tilde Q$ then $E^*=e^{\theta\tilde Q^*}=e^{-\theta\tilde Q}=E^{-1}$. The equivalence with the coordinate conditions is the computation of $*$ on $Q_te_t+\vec Q$: the scalar part is conjugated and the vector part is negated and conjugated, so $\tilde Q^*=-\tilde Q$ means $\bar Q_t=-Q_t$ and $\overline{\vec Q}=\vec Q$. The self-adjoint case is the same computation with the opposite signs.</p>
 <p>The first family is the material sector and the second is the Hermitian sector. Unitarity is strictly stronger than normality, because $\tilde Q^*=-\tilde Q$ implies $\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$; the converse fails.</p>
 <h3 id="normality-unitarity-and-the-hermitian-norm-of-the-flow">Normality, Unitarity and the Hermitian Norm of the Flow</h3>
 <p>The normality theorem is that of <em>The Biquaternion Eigenvalue Decomposition</em>, §<em>The Hermitian Case</em>, with $\vec U=\vec Q/B=\rho$. For $B^2\neq0$, the following are equivalent:</p>
@@ -386,7 +386,7 @@ $$</p>
 <li>$E_+$ and $E_-$ are orthogonal for the Hermitian form.</li>
 </ul>
 <p>The criterion involves the vector part alone. The scalar part is free, and this is the first source of confusion: a normal element can have any complex rate $Q_t$.</p>
-<p><strong>Corollary 1.</strong> Normality does not imply unitarity. The element $\tilde Q=(1+i)\vec e_x$ is normal, since $\rho=\vec e_x$ is real, but $\tilde Q^*\neq-\tilde Q$ and $\tilde Q^*\neq\tilde Q$. Its flow is neither unitary nor self-adjoint.</p>
+<p><strong>Corollary 1.</strong> Normality does not imply unitarity. The element $\tilde Q=(1+i)\vec e_x$ is normal, since $\rho=\vec e_x$ is real, but $\tilde Q^*\neq-\tilde Q$ and $\tilde Q^*\neq\tilde Q$. Its flow is neither $*$-unitary nor self-adjoint.</p>
 <p><strong>Corollary 2.</strong> Normality does not imply a constant norm. The same element has $\lvert B\rvert=\sqrt2$ and $\operatorname{Im}B=1$, and its Hermitian norm grows as $\cosh(2\theta)$.</p>
 <p><strong>Corollary 3.</strong> Non-normality does not imply growth. The element $\tilde Q=i\vec e_x+\vec e_y+\vec e_z$ has $\rho=(i,1,1)$ and is not normal, but its Hermitian norm is</p>
 <p>$$
@@ -491,7 +491,7 @@ $$</p>
 <p><strong>No canonical root.</strong> A non-central root $\rho$ is moved by an inner automorphism: if $U$ is a unit with $U\rho\neq\rho U$, then $U\rho U^{-1}$ is another root of $-1$. The central roots $\pm i$ are fixed by every inner automorphism, but they are not pure and no regular element supplies them. The algebra therefore has no root that is both canonical and available to the dictionary.</p>
 <p><strong>On the cone.</strong> The scalar line has every basis as an eigenbasis and none as a canonical one. The nilpotent and unipotent strata have no eigenbasis. The global statement is the one of the introduction: the eigenbasis exists on the open dense set $B^2\neq0$, is attached to the element, and is not canonical as a global object.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p>The table reads five elements through the dictionary. The last three columns record whether the flow is normal, unitary and self-adjoint.</p>
+<p>The table reads five elements through the dictionary. The last three columns record whether the flow is normal, $*$-unitary and self-adjoint.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -502,7 +502,7 @@ $$</p>
 <th>$e^{\theta\tilde Q}$</th>
 <th>$\langle e^{\theta\tilde Q}\rangle_*$</th>
 <th>normal</th>
-<th>unitary</th>
+<th>$*$-unitary</th>
 <th>self-adjoint</th>
 </tr>
 </thead>
@@ -564,8 +564,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The first two rows are the two real forms. The first is the material case: real $B$, real root, unitary flow, constant norm. The second is the Hermitian case: imaginary $B$, real root, self-adjoint flow, hyperbolic norm.</p>
-<p>The third row is normal, with a real root, and is neither unitary nor self-adjoint; its $B$ is genuinely complex and its norm grows. It shows that normality is orthogonal diagonalisation and nothing more. The fourth row is not normal, and its norm oscillates between $1$ and $3$; it shows that non-normality is not a decay. The fifth row is normal and grows because of the scalar rate $Q_t=1+i$.</p>
+<p>The first two rows are the two real forms. The first is the material case: real $B$, real root, $*$-unitary flow, constant norm. The second is the Hermitian case: imaginary $B$, real root, self-adjoint flow, hyperbolic norm.</p>
+<p>The third row is normal, with a real root, and is neither $*$-unitary nor self-adjoint; its $B$ is genuinely complex and its norm grows. It shows that normality is orthogonal diagonalisation and nothing more. The fourth row is not normal, and its norm oscillates between $1$ and $3$; it shows that non-normality is not a decay. The fifth row is normal and grows because of the scalar rate $Q_t=1+i$.</p>
 <p>The kernel identity is visible in the first row: $e^{\theta\vec e_x}=W(-\theta,1/2\pi)$, since $Q_t=0$ and $B=1$. In the second row the same kernel with an imaginary frequency gives the hyperbolic form, because $\cos(i\theta)=\cosh\theta$ and $\sin(i\theta)=i\sinh\theta$.</p>
 <p><strong>The cone.</strong> Take $\vec N=\vec e_x+i\vec e_y$. Then $\vec N^2=(-1)+(-1)(i^2)=0$ and $e^{\theta\vec N}=e_t+\theta\vec N$. Adjoining a scalar, $\tilde Q=Q_te_t+\vec N$ gives $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec N)$. The element is unipotent when $Q_t\neq0$ and nilpotent when $Q_t=0$; the exponential is polynomial in both cases, and no root is available.</p>
 <h2 id="the-boundary">The Boundary</h2>
@@ -583,7 +583,7 @@ e^{\theta\tilde Q}
 =e^{\theta Q_t}W\!\left(-\theta,\frac{B}{2\pi}\right).
 $$</p>
 <p>The eigenvalues $\lambda_\pm=Q_t\pm iB$ are the character exponents, the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\mp i\rho)$ are the algebraic projections onto the two frequency components, and the eigenbasis is the root-adapted Fourier basis diagonalized block by block. The Fourier factorization keeps the two invariant planes; the spectral decomposition regroups their four lines by eigenvalue; the two cuts are transverse.</p>
-<p>The kernel is natural-unitary for every pure root, and Hermitian-unitary exactly when the root is real. The flow is Hermitian-unitary exactly in the material sector, and Hermitian-self-adjoint exactly in the Hermitian sector. Normality is the orthogonality of the eigenbasis: it is a condition on $\vec Q$ alone, it is weaker than unitarity, and it does not make the norm constant.</p>
+<p>The kernel is natural-unitary for every pure root, and Hermitian-$*$-unitary exactly when the root is real. The flow is Hermitian-$*$-unitary exactly in the material sector, and Hermitian-self-adjoint exactly in the Hermitian sector. Normality is the orthogonality of the eigenbasis: it is a condition on $\vec Q$ alone, it is weaker than unitarity, and it does not make the norm constant.</p>
 <p>The Hermitian norm of the flow is</p>
 <p>$$
 \bigl\langle e^{\theta\tilde Q}\bigr\rangle_*
@@ -644,7 +644,7 @@ $$</p>
 <td>$W^*=W^{-1}$ iff $\rho$ real</td>
 </tr>
 <tr>
-<td>Unitary flow</td>
+<td>$*$-Unitary flow</td>
 <td>$\tilde Q^*=-\tilde Q$ iff $Q_t\in i\mathbb{R}$, $\vec Q\in\mathbb{R}^3$</td>
 </tr>
 <tr>

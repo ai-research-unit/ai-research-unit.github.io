@@ -162,7 +162,7 @@ $$</p>
 <p>$$
 |A|^2 + |D|^2 = |B|^2 + |C|^2 .
 $$</p>
-<p>This is exactly the statement that $S$ is <strong>unitary</strong>,</p>
+<p>This is exactly the statement that $S$ is <strong>$*$-unitary</strong>,</p>
 <p>$$
 S^{*} S = I_2,
 $$</p>
@@ -170,7 +170,7 @@ $$</p>
 <p>$$
 \boxed{\;|r|^2 + |t|^2 = R + T = 1\;}.
 $$</p>
-<p>Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a <strong>unitary element</strong>, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the Lorentz rotor $\tilde U_{\mathrm L}$, the unit-norm element with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$, is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.</p>
+<p>Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a <strong>$*$-unitary element</strong>, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the Lorentz rotor $\tilde U_{\mathrm L}$, the unit-norm element with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$, is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.</p>
 <h2 id="exactly-solvable-potentials">Exactly Solvable Potentials</h2>
 <h3 id="the-step">The step</h3>
 <p>Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\phi$ and $\partial\phi/\partial x$ at the origin, with the ansatz $\phi = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\phi = t\exp(ik_2x)$ on the right, gives</p>
@@ -281,7 +281,7 @@ $$</p>
 <p>$$
 P(a) = \begin{pmatrix} \exp(\,iqa) & 0 \\ 0 & \exp(-iqa) \end{pmatrix}.
 $$</p>
-<p>A potential built from $n$ piecewise-constant regions therefore has a <strong>transfer matrix</strong> $M$ that is the product of $n$ step inverses and $n-1$ propagation matrices, and the asymptotic coefficients are related by $M$. The physical $S$-matrix is obtained from $M$ by imposing the outgoing boundary conditions. The transfer matrix is not itself unitary — it preserves the flux bilinear form rather than the norm — while the $S$-matrix extracted from it is unitary, because the two boundary conditions select a Lagrangian subspace of the two-dimensional coefficient space.</p>
+<p>A potential built from $n$ piecewise-constant regions therefore has a <strong>transfer matrix</strong> $M$ that is the product of $n$ step inverses and $n-1$ propagation matrices, and the asymptotic coefficients are related by $M$. The physical $S$-matrix is obtained from $M$ by imposing the outgoing boundary conditions. The transfer matrix is not itself $*$-unitary — it preserves the flux bilinear form rather than the norm — while the $S$-matrix extracted from it is $*$-unitary, because the two boundary conditions select a Lagrangian subspace of the two-dimensional coefficient space.</p>
 <h3 id="composition-and-a-worked-identity">Composition and a worked identity</h3>
 <p>The value of the transfer matrix is that a composite potential is a matrix product: the transfer matrix of a sequence of regions is the ordered product of the step matrices (inverted, as above) and the propagation matrices, taken from left to right. This is why a potential built from many weak barriers can be solved by multiplying two-by-two matrices rather than by matching many boundary conditions at once.</p>
 <p>A single delta potential is a convenient worked element. Its transfer matrix in the local frame of the delta, relating the coefficients $\phi=A\exp(ikx)+B\exp(-ikx)$ on the two sides by $\begin{pmatrix}A\\B\end{pmatrix} = M_\delta\begin{pmatrix}A_2\\B_2\end{pmatrix}$, is obtained from the continuity and jump conditions and is</p>
@@ -296,12 +296,12 @@ M_\delta(\beta) =
 $$</p>
 <p>as one verifies by eliminating $B_2$ with the outgoing condition $B_2=0$ and recovering $t = (1+i\beta)^{-1}$ and $r = -i\beta/(1+i\beta)$. With that convention the matrix has unit determinant, reflecting the flux preservation of the transfer relation, and its product with a propagation matrix carries the phase accumulated between two scatterers. The composition law also shows how resonances arise: a single barrier has a monotonically rising $T$, whereas two barriers separated by a well have a transmission with sharp peaks at the energies for which the round-trip phase is a multiple of $2\pi$. The algebra of the product, not any new input, produces the resonance structure.</p>
 <h2 id="the-biquaternion-reading-of-scattering">The Biquaternion Reading of Scattering</h2>
-<h3 id="the-math193-matrix-is-central-in-the-module">The $S$-matrix is central in the module</h3>
+<h3 id="the-math197-matrix-is-central-in-the-module">The $S$-matrix is central in the module</h3>
 <p>Because the Hamiltonian of every potential treated here is central, the $S$-matrix is</p>
 <p>$$
 \boxed{\;\tilde S = S \otimes I_2\;},
 $$</p>
-<p>a two-by-two matrix in the channel space (left- and right-moving amplitudes) tensored with the identity on the state module. Equivalently, in the algebra, it commutes with the module's unitary group: for every $\tilde Q$ with $\tilde Q\tilde Q^{*} = e_t$ that acts on the module,</p>
+<p>a two-by-two matrix in the channel space (left- and right-moving amplitudes) tensored with the identity on the state module. Equivalently, in the algebra, it commutes with the module's $*$-unitary group: for every $\tilde Q$ with $\tilde Q\tilde Q^{*} = e_t$ that acts on the module,</p>
 <p>$$
 [\tilde S,\tilde U] = 0,
 $$</p>
@@ -341,7 +341,7 @@ $$</p>
 <ul>
 <li><strong>Centrality of the potential coupling, made manifest.</strong> The potential multiplies $e_t$, so the Hamiltonian is central and the $S$-matrix factorises as $S\otimes I_2$. The absence of spin-flip and spin-dependent amplitudes is read off the algebra rather than assumed from rotational invariance.</li>
 <li><strong>A flux from the plain form.</strong> The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.</li>
-<li><strong>One notion of unit resolved.</strong> The $S$-matrix is unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.</li>
+<li><strong>One notion of unit resolved.</strong> The $S$-matrix is $*$-unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.</li>
 <li><strong>A clean statement of what a scalar potential can do.</strong> The potential can shape the envelope without touching the module; the framework exhibits the module as a spectator of every problem with a central Hamiltonian.</li>
 </ul>
 <p><strong>What remains open.</strong></p>
@@ -360,7 +360,7 @@ $$</p>
 <p>The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x))e_t\,\psi = E\psi$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\psi = \phi\chi$ with $\chi$ a constant module element, and no potential treated here acts on the module.</p>
 <p>The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.</p>
 <p>The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\kappa a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.</p>
-<p>The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a unitary element $\tilde S\tilde S^{*} = e_t$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.</p>
+<p>The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a $*$-unitary element $\tilde S\tilde S^{*} = e_t$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -424,7 +424,7 @@ $$</p>
 </tr>
 <tr>
 <td>$S = \begin{pmatrix} t & r_2 \\ r & t_2\end{pmatrix}$</td>
-<td>Scattering matrix; unitary, $S^{*} S = I_2$</td>
+<td>Scattering matrix; $*$-unitary, $S^{*} S = I_2$</td>
 </tr>
 <tr>
 <td>$R = |r|^2$, $T = |t|^2$</td>

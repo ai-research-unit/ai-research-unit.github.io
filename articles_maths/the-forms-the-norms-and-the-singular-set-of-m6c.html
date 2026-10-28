@@ -97,7 +97,7 @@ $$</p>
 $$</p>
 <p>with equality if and only if $A=0$.</p>
 <p><strong>Proof.</strong> This is <em>The Involution and the Hermitian Structure</em>.</p>
-<p><strong>Corollary (the real and imaginary parts).</strong> The real part is the Euclidean inner product of the $72$ real coordinates; the imaginary part is a symplectic form. The form is definite, so its isotropic cone is $\{0\}$.</p>
+<p><strong>Corollary (the real and imaginary parts).</strong> The real part is the Euclidean inner product of the $72$ real coordinates; the imaginary part is a symplectic form. The form is definite, so its isotropic set is $\{0\}$.</p>
 <p><strong>Proof.</strong> Expand in the real and imaginary coordinates; the sum of squares is positive definite, and the imaginary part is alternating.</p>
 <h3 id="the-complex-bilinear-trace-pairing">The Complex Bilinear Trace Pairing</h3>
 <p><strong>Definition.</strong> The <strong>trace pairing</strong> is</p>
@@ -106,7 +106,7 @@ $$</p>
 $$</p>
 <p><strong>Theorem.</strong> The trace pairing is symmetric, nondegenerate and invariant, but it is indefinite: it has nonzero isotropic vectors.</p>
 <p><strong>Proof.</strong> It is <em>The Element, the Coordinates and the Trace</em>. The matrix unit $E_{12}$ is isotropic: $\operatorname{tr}(E_{12}^2)=0$.</p>
-<p><strong>Remark (two forms, two roles).</strong> The complex bilinear pairing is the algebra form; it identifies the algebra with its dual and gives the Killing form on $\mathfrak{sl}_6$. The Hermitian form is the metric; it gives the Frobenius norm and the Hilbert-space structure. <strong>The trace pairing has a null cone; the Hermitian form does not.</strong></p>
+<p><strong>Remark (two forms, two roles).</strong> The complex bilinear pairing is the algebra form; it identifies the algebra with its dual and gives the Killing form on $\mathfrak{sl}_6$. The Hermitian form is the metric; it gives the Frobenius norm and the Hilbert-space structure. <strong>The complex bilinear trace pairing has a null cone; the Hermitian form does not.</strong></p>
 <h3 id="the-determinant">The Determinant</h3>
 <p><strong>Definition.</strong> The <strong>determinant</strong> is the polynomial</p>
 <p>$$
@@ -119,7 +119,7 @@ d(\det)_A(B)=\det(A)\operatorname{tr}(A^{-1}B).
 $$</p>
 <p>For singular $A$ of rank five, the derivative is the cofactor pairing, and it is nonzero.</p>
 <p><strong>Proof.</strong> $\det(A+tB)=\det(A)\det(I+tA^{-1}B)=\det(A)(1+t\operatorname{tr}(A^{-1}B)+O(t^2))$. At rank five, the adjugate is nonzero and $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$.</p>
-<p><strong>Corollary (the singular set is smooth at rank five).</strong> The gradient of $\det$ is nonzero exactly at the matrices of rank five.</p>
+<p><strong>Corollary (the singular set is smooth at rank five).</strong> The gradient of $\det$ is nonzero at every matrix of rank five or six.</p>
 <p><strong>Proof.</strong> The adjugate of a rank-five matrix is nonzero (it is the product of the nonzero cofactors), and it vanishes at rank at most four.</p>
 <h2 id="the-norms">The Norms</h2>
 <h3 id="the-singular-values">The Singular Values</h3>
@@ -135,7 +135,7 @@ $$</p>
 \lvert\det A\rvert=\prod_i\sigma_i .
 $$</p>
 <p><strong>Proof.</strong> The spectral theorem for the positive semidefinite $A^*A$; the trace is the sum of the eigenvalues, the determinant is the product.</p>
-<p><strong>Corollary (the unitary invariance).</strong> The singular values are invariant under $A\mapsto UAV$ for $U,V\in U(6)$.</p>
+<p><strong>Corollary (the $*$-unitary invariance).</strong> The singular values are invariant under $A\mapsto UAV$ for $U,V\in U(6)$.</p>
 <p><strong>Proof.</strong> $(UAV)^*(UAV)=V^*A^*AV$, unitarily conjugate to $A^*A$.</p>
 <h3 id="the-schatten-norms">The Schatten Norms</h3>
 <p><strong>Definition.</strong> For $1\le p<\infty$,</p>
@@ -452,8 +452,7 @@ $$</p>
 <li><a href="the-polar-decomposition-of-m6c.html">The Polar Decomposition</a>, for the singular values and the positive factor.</li>
 <li><a href="the-topology-of-m6c.html">The Topology of $M_6(\mathbb{C})$</a>, for the complement of the singular set and the link.</li>
 <li><a href="the-biquaternion-algebra-and-its-vector-spaces.html">The Biquaternion Algebra and Its Vector Spaces</a>, for the biquaternion null cone.</li>
-<li><a href="schatten-norms.html">Schatten Norms</a>, for the general theory of the singular value norms.</li>
-<li><a href="the-determinantal-variety.html">The Determinantal Variety</a>, for the rank stratification of a matrix space.</li>
+<li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the matrix units and the rank.</li>
 </ul>
       </div>
     </main>

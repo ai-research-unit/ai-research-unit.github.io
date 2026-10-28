@@ -85,7 +85,7 @@ $$</p>
 \sigma_1\ge\sigma_2\ge\sigma_3\ge0 .
 $$</p>
 <p>The mass block has a polar decomposition $M=U_L\Sigma U_R^{-1}$ with $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3)$. The full element $A\in GL_6(\mathbb{C})$ has its own polar decomposition $A=UP$ with $U\in U(6)$ and $P$ positive definite; the two polar decompositions are different, and the article keeps them apart.</p>
-<p>The article assumes the chiral split of <em>The Two Chiralities</em> and the rank-three corners of <em>The Rank-Two and Rank-Three Splits</em>. It uses no topology beyond the unitary groups. The polar decomposition of the full algebra is <em>The Polar Decomposition</em>; the exponential is <em>The Exponential and the Lie Group</em>; the comparison with $M_4$ is <em>The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em>.</p>
+<p>The article assumes the chiral split of <em>The Two Chiralities</em> and the rank-three corners of <em>The Rank-Two and Rank-Three Splits</em>. It uses no topology beyond the $*$-unitary groups. The polar decomposition of the full algebra is <em>The Polar Decomposition</em>; the exponential is <em>The Exponential and the Lie Group</em>; the comparison with $M_4$ is <em>The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-mass-block">The Mass Block</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> In the chiral split $\mathbb{C}^6=V_+\oplus V_-$, the <strong>mass block</strong> is</p>
@@ -165,7 +165,7 @@ $$</p>
 \qquad
 \lvert\det M\rvert=\sigma_1\sigma_2\sigma_3 .
 $$</p>
-<p>The phase of $\det M$ is the phase of the unitary polar factor $UV^*$; under the chiral gauge it transforms by $\det U_L/\det U_R$ and can be gauged to $1$.</p>
+<p>The phase of $\det M$ is the phase of the $*$-unitary polar factor $UV^*$; under the chiral gauge it transforms by $\det U_L/\det U_R$ and can be gauged to $1$.</p>
 <p><strong>Proof.</strong> The determinant is multiplicative, $\det\Sigma=\sigma_1\sigma_2\sigma_3$, and $\lvert\det U\rvert=\lvert\det V\rvert=1$. Under $M\mapsto U_LMU_R^{-1}$ the determinant is multiplied by $\det U_L/\det U_R$, a phase that can be any unit complex number.</p>
 <p><strong>Corollary (the invariants of the orbit).</strong> The orbit invariants are the three singular values; the phase of the determinant is not an invariant.</p>
 <p><strong>Proof.</strong> The singular values classify the orbit by the theorem above; the phase can be changed arbitrarily by $U_L$.</p>
@@ -197,7 +197,7 @@ U\in U(6),\quad
 P=(A^*A)^{1/2}>0 .
 $$</p>
 <p>For a singular $A$, the positive factor $P$ is unique, and $U$ is unique on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.</p>
-<p><strong>Proof.</strong> $A^*A$ is positive semidefinite, so it has a unique positive semidefinite square root $P$. If $A$ is invertible, $P>0$ and $U=AP^{-1}$ is unitary: $U^*U=P^{-1}A^*AP^{-1}=I$. Uniqueness follows by applying the same computation to any decomposition. For singular $A$, $P$ is still unique; $U$ is determined on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.</p>
+<p><strong>Proof.</strong> $A^*A$ is positive semidefinite, so it has a unique positive semidefinite square root $P$. If $A$ is invertible, $P>0$ and $U=AP^{-1}$ is $*$-unitary: $U^*U=P^{-1}A^*AP^{-1}=I$. Uniqueness follows by applying the same computation to any decomposition. For singular $A$, $P$ is still unique; $U$ is determined on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.</p>
 <p><strong>Definition.</strong> The <strong>$U(6)$ polar factor</strong> of $A$ is $U=A(A^*A)^{-1/2}$; the <strong>positive factor</strong> is $P=(A^*A)^{1/2}$.</p>
 <p><strong>Theorem (the chiral block form).</strong> Write</p>
 <p>$$
@@ -212,11 +212,11 @@ $$</p>
 <p><strong>Proof.</strong> Multiply the block matrices $A=UP$ and read the upper-right block.</p>
 <p><strong>Corollary (the two extreme cases).</strong></p>
 <ul>
-<li>If $A$ is unitary, $P=I_6$ and $M=U_{+-}$: the mass block is the off-diagonal block of the $U(6)$ polar factor.</li>
+<li>If $A$ is $*$-unitary, $P=I_6$ and $M=U_{+-}$: the mass block is the off-diagonal block of the $U(6)$ polar factor.</li>
 <li>If $A$ is positive definite, $U=I_6$ and $M=P_{+-}$: the mass block is the off-diagonal block of the positive factor.</li>
 </ul>
 <p><strong>Proof.</strong> In the first case $A=U$, in the second $A=P$.</p>
-<p><strong>Remark (the two polar decompositions are different).</strong> The mass block's polar decomposition uses $U(3)\times U(3)$ and produces the three singular values of $M$. The $U(6)$ polar decomposition uses the whole unitary group and produces the six singular values of $A$. The off-diagonal block $U_{+-}$ of the $U(6)$ polar factor is not the unitary factor $U_L$ of $M$; the mass block of $A$ is the sum of two products of blocks of $U$ and $P$. <strong>The chiral polar decomposition of $M$ and the $U(6)$ polar decomposition of $A$ are different decompositions of different objects.</strong></p>
+<p><strong>Remark (the two polar decompositions are different).</strong> The mass block's polar decomposition uses $U(3)\times U(3)$ and produces the three singular values of $M$. The $U(6)$ polar decomposition uses the whole $*$-unitary group and produces the six singular values of $A$. The off-diagonal block $U_{+-}$ of the $U(6)$ polar factor is not the $*$-unitary factor $U_L$ of $M$; the mass block of $A$ is the sum of two products of blocks of $U$ and $P$. <strong>The chiral polar decomposition of $M$ and the $U(6)$ polar decomposition of $A$ are different decompositions of different objects.</strong></p>
 <h3 id="the-positive-factor-and-the-mass">The Positive Factor and the Mass</h3>
 <p><strong>Proposition.</strong> The positive factor $P$ is block positive: the matrix $P$ is positive definite, but its off-diagonal block $P_{+-}$ need not be small or zero. The mass block of $A$ is not the positive factor of $M$.</p>
 <p><strong>Proof.</strong> A positive definite $6\times6$ matrix can have nonzero off-diagonal blocks; for example $P=I_6+t(E_{14}+E_{41})$ is positive for small $t$, and its off-diagonal block is nonzero.</p>
@@ -231,12 +231,12 @@ $$</p>
 <p><strong>Proof.</strong> The singular value decomposition gives a representative $\Sigma$ for every orbit, and two diagonal matrices with the same ordered singular values are equal. The ordering removes the permutation.</p>
 <p><strong>Corollary (the mass spectrum).</strong> The mass spectrum has three channels; the number of nonzero channels is the rank of $M$; the product of the channels is $\lvert\det M\rvert$.</p>
 <p><strong>Proof.</strong> The rank is the number of nonzero singular values, and the determinant modulus is their product.</p>
-<h3 id="the-math190-invariants">The $U(6)$ Invariants</h3>
+<h3 id="the-math196-invariants">The $U(6)$ Invariants</h3>
 <p><strong>Proposition.</strong> The $U(6)$ orbit of $A$ is determined by the six singular values of $A$; the polar factor $U$ distinguishes the orbits inside a fixed singular-value type.</p>
-<p><strong>Proof.</strong> The singular value decomposition $A=U\Sigma V^*$ with $U,V\in U(6)$; the singular values classify the $U(6)\times U(6)$ orbit, and the polar factor is the unitary part.</p>
-<p><strong>Remark (the two invariant lists).</strong> The mass block contributes three numbers (the mass scales); the full element contributes six (the singular values of $A$) plus the unitary polar factor. The mass scales are not the singular values of $A$; they are the singular values of the off-diagonal block, which depends on the chiral split.</p>
-<h2 id="the-comparison-with-math200">The Comparison with $M_4$</h2>
-<h3 id="the-math201-mass-block">The $2\times2$ Mass Block</h3>
+<p><strong>Proof.</strong> The singular value decomposition $A=U\Sigma V^*$ with $U,V\in U(6)$; the singular values classify the $U(6)\times U(6)$ orbit, and the polar factor is the $*$-unitary part.</p>
+<p><strong>Remark (the two invariant lists).</strong> The mass block contributes three numbers (the mass scales); the full element contributes six (the singular values of $A$) plus the $*$-unitary polar factor. The mass scales are not the singular values of $A$; they are the singular values of the off-diagonal block, which depends on the chiral split.</p>
+<h2 id="the-comparison-with-math208">The Comparison with $M_4$</h2>
+<h3 id="the-math209-mass-block">The $2\times2$ Mass Block</h3>
 <p>For $M_4(\mathbb{C})$ the chiral split is $2+2$, the mass block is a $2\times2$ matrix, and the chiral gauge is $U(2)\times U(2)$. The singular values are two,</p>
 <p>$$
 \sigma_1\ge\sigma_2\ge0,
@@ -413,8 +413,7 @@ $$</p>
 <li><a href="the-m3-m3-and-m2-m4-corners-of-m6c.html">The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners</a>, for the massless algebra and the relative scale.</li>
 <li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html">The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</a>, for the $2\times2$ comparison.</li>
 <li><a href="the-polar-decomposition-of-m6c.html">The Polar Decomposition</a>, for the full $U(6)$ polar decomposition.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the unitary group $U(6)$.</li>
-<li><a href="singular-value-decomposition.html">Singular Value Decomposition</a>, for the general theory of the SVD.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the $*$-unitary group $U(6)$.</li>
 <li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the homogeneous spaces of the chiral unitaries.</li>
 </ul>
       </div>

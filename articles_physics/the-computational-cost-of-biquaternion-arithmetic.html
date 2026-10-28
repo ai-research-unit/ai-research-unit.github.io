@@ -236,11 +236,11 @@ $$</p>
 <p>$$
 M = \begin{pmatrix} 0 & A \\ B & 0 \end{pmatrix},
 $$</p>
-<p>a Hadamard-type unitary transformation turns it into a block-diagonal matrix whose two blocks differ by a sign. With</p>
+<p>a Hadamard-type $*$-unitary transformation turns it into a block-diagonal matrix whose two blocks differ by a sign. With</p>
 <p>$$
 \boxed{\;U_\alpha = \frac{1}{\sqrt2}\begin{pmatrix} I & I \\ \alpha I & -\alpha I \end{pmatrix}, \qquad |\alpha| = 1\;},
 $$</p>
-<p>one has $M_{\mathrm{rot}} = U_\alpha^{\dagger}MU_\alpha$ block diagonal exactly when $\alpha^{*}B = \alpha A$, and then the blocks are $\alpha A$ and $-\alpha A$. The relevant root is fixed by the relation between the two non-zero blocks: when they are opposite, $B = -A$, the condition holds for $\alpha = \pm i$, and when they are equal, $B = A$, for $\alpha = \pm 1$. Both occur in the source's symmetry classes, for a single active vector component: $\vec e_y$ alone gives $B = -A$ and $\vec e_x$ alone gives $B = A$, while $\vec e_z$ alone is already block diagonal and needs no rotation. When the two blocks are not simply related, the unitary matrix is completed by a complex matrix $G$ built from the singular value decomposition $A = U\Sigma V^{\dagger}$ of the upper block as $G = VU^{\dagger}$, which restores the condition $AG = (AG)^{*}$.</p>
+<p>one has $M_{\mathrm{rot}} = U_\alpha^{\dagger}MU_\alpha$ block diagonal exactly when $\alpha^{*}B = \alpha A$, and then the blocks are $\alpha A$ and $-\alpha A$. The relevant root is fixed by the relation between the two non-zero blocks: when they are opposite, $B = -A$, the condition holds for $\alpha = \pm i$, and when they are equal, $B = A$, for $\alpha = \pm 1$. Both occur in the source's symmetry classes, for a single active vector component: $\vec e_y$ alone gives $B = -A$ and $\vec e_x$ alone gives $B = A$, while $\vec e_z$ alone is already block diagonal and needs no rotation. When the two blocks are not simply related, the $*$-unitary matrix is completed by a complex matrix $G$ built from the singular value decomposition $A = U\Sigma V^{\dagger}$ of the upper block as $G = VU^{\dagger}$, which restores the condition $AG = (AG)^{*}$.</p>
 <p>It is a statement of linear algebra — a rotation of a two-block matrix into its eigenbasis — and the biquaternion content is only the guarantee that the blocks carry the stated structure, so that the reduction applies.</p>
 <h2 id="the-cost-in-the-frameworks-terms">The Cost in the Framework's Terms</h2>
 <p>The two splits of the algebra do not align, and the arithmetic makes the misalignment concrete.</p>
@@ -336,7 +336,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Multiplying two general biquaternions naively costs sixteen complex multiplications, that is sixty-four real multiplications. The bilinear scheme of the source — the general quaternionic bilinear identity evaluated in eight intermediate products, combined with Gauss's three-multiplication rule for each complex product — brings the count to twenty-four: eight Hadamard products of the two coefficient vectors, four corner products, and Gauss's rule, with no further reduction possible for the full algebra. On the real-quaternion and antiquaternion halves the scheme stops at eight real multiplications against the naive sixteen, because the coefficients are already real or purely imaginary.</p>
 <p>The same scheme applies unchanged to matrix-valued biquaternions, because it is bilinear with scalar coefficients and never uses commutativity: a fully populated matrix-valued product costs twenty-four real matrix-matrix multiplications instead of sixty-four, and a real-quaternion one eight instead of sixteen. The memory of the array form equals that of its $2n\times2n$ complex image, and the array form reaches roughly twice the dimension before a 32-bit workspace limit binds.</p>
-<p>The image is the object the machine consumes, and its structure is the corpus's structure: a real-quaternion array is a complex matrix with the time-reversal symmetric block form, an antiquaternion array one with the time-reversal antisymmetric form, the image of the entrywise product is the product of the images, the trace of the image is the biquaternion trace $2\,\mathrm{Sc}$, and the image of the dagger is the conjugate transpose. A Hermitian biquaternion eigenvalue problem is mapped to the complex image and reduced, when the blocks are diagonal or anti-diagonal, to two problems of half the dimension by a Hadamard-type unitary rotation.</p>
+<p>The image is the object the machine consumes, and its structure is the corpus's structure: a real-quaternion array is a complex matrix with the time-reversal symmetric block form, an antiquaternion array one with the time-reversal antisymmetric form, the image of the entrywise product is the product of the images, the trace of the image is the biquaternion trace $2\,\mathrm{Sc}$, and the image of the dagger is the conjugate transpose. A Hermitian biquaternion eigenvalue problem is mapped to the complex image and reduced, when the blocks are diagonal or anti-diagonal, to two problems of half the dimension by a Hadamard-type $*$-unitary rotation.</p>
 <p>The split the arithmetic respects is $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, not the sector split $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; the two cuts cross, so a sector-restricted problem need not be the cheap one. The source's measurements on modern CPU and GPU systems show the count turning into speed, by factors from about $1.2$ to about $7.3$ on multiplication and by about $12$ and $61$ on diagonalisation, at dimensions in the tens of thousands. All of it is arithmetic about an algebra: it neither supports nor threatens the claim that the algebra is the world's.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -421,7 +421,7 @@ $$</p>
 </tr>
 <tr>
 <td>$U_\alpha=\frac{1}{\sqrt2}\begin{pmatrix}I&I\\\alpha I&-\alpha I\end{pmatrix}$</td>
-<td>Hadamard-type unitary, $|\alpha|=1$, $M$ block anti-diagonal</td>
+<td>Hadamard-type $*$-unitary, $|\alpha|=1$, $M$ block anti-diagonal</td>
 </tr>
 <tr>
 <td>$\alpha^{*}B=\alpha A$</td>

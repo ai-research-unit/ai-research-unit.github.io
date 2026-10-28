@@ -176,7 +176,7 @@ $$</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
 <p><strong>1. The Hamiltonian is a Hermitian element of $\mathbb{M}_+$.</strong> The observable $\tilde{S}_z = \frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{M}_+$, and the Hamiltonian $\tilde{H} = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a <strong>Hermitian element of the same subspace</strong> as the observables and the states.</p>
 <p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde{H}$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
-<p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{Ϛ}(t') = \tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.</p>
+<p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{Ϛ}(t') = \tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.</p>
 <p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{Ϛ}(t') = \frac{1}{2}(e_t + i\vec r(t'))$ with</p>
 <p>$$
 \boxed{\;\vec r(t') = \cos(\omega_L t')\,\vec e_x - \sin(\omega_L t')\,\vec e_y\;}.
@@ -206,7 +206,7 @@ $$</p>
 <tr>
 <td>Structural object</td>
 <td>Idempotent (state) + idempotent (projector)</td>
-<td>Idempotent (state) + unitary (evolution)</td>
+<td>Idempotent (state) + $*$-unitary (evolution)</td>
 </tr>
 <tr>
 <td>Rule used</td>

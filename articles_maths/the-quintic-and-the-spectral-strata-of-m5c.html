@@ -79,7 +79,7 @@ $$</p>
 1+1+1+1+1,\quad 2+1+1+1,\quad 2+2+1,\quad 3+1+1,\quad 3+2,\quad 4+1,\quad 5 .
 $$</p>
 <p>The first is the <strong>regular semisimple</strong> stratum, the open stratum of matrices with five distinct eigenvalues; the last is the scalar stratum, the unique closed stratum. The root orbit of <em>Roots of Unity and the Lagrange Idempotents</em> is the conjugacy class of a fixed root, of dimension $20$, inside the regular semisimple locus.</p>
-<p>The <strong>discriminant</strong> $\Delta$ is the polynomial in the coefficients whose vanishing is the condition of a repeated root. Its zero locus is the <strong>singular set</strong> of the characteristic polynomial map, a hypersurface of codimension $1$; its complement is the regular semisimple locus. The orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions $0,2,4,6,8,12,20$; the discriminant locus is the union of all the strata with a repeated root, including the non-semisimple matrices, and it has dimension $24$.</p>
+<p>The <strong>discriminant</strong> $\Delta$ is the polynomial in the coefficients whose vanishing is the condition of a repeated root. Its zero locus is the <strong>singular set</strong> of the characteristic polynomial map, a hypersurface of codimension $1$; its complement is the regular semisimple locus. The orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions $5,7,9,11,13,17,25$ in $M_5$; the discriminant locus is the union of all the strata with a repeated root, including the non-semisimple matrices, and it has dimension $24$.</p>
 <p>The <strong>quintic</strong> enters because the eigenvalues of a $5\times5$ matrix are the roots of a quintic. A general quintic has no solution in radicals: the Galois group of the general quintic is $S_5$, which is not solvable (Abel–Ruffini, Galois). The eigenvalues exist by the fundamental theorem of algebra, and the Lagrange projectors exist at a simple spectrum, but neither fact produces a radical formula for the roots. The projectors are algebraic functions of the coefficients, not generally radical functions.</p>
 <p>The article assumes the matrix algebra and the root. It uses no form and no topology. The determinant and the discriminant are treated as polynomials; the singular set $\det=0$ of <em>The Forms, the Norms and the Singular Set</em> is a different locus, and it is not the discriminant.</p>
 <h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
@@ -158,56 +158,56 @@ $$</p>
 <p>$$
 \dim=25-\sum_{i=1}^{r}m_i^2,
 $$</p>
-<p>in $M_5$ and in $PGL_5$. Its codimension is $\sum_i m_i^2-5$.</p>
+<p>in $M_5$ and in $PGL_5$. Its codimension in $M_5$ is $\sum_i m_i^2$, and its codimension in $PGL_5$ is $\sum_i m_i^2-1$.</p>
 <p><strong>Proof.</strong> The centraliser of a diagonal matrix with distinct eigenvalues on blocks of sizes $m_i$ is $\prod_iGL_{m_i}$, of dimension $\sum_i m_i^2$. The conjugacy class has dimension $\dim GL_5-\sum_i m_i^2=25-\sum_i m_i^2$. In $PGL_5$ the centraliser is the image of the product modulo scalars, of dimension $\sum_i m_i^2-1$, and the orbit has dimension $24-(\sum_i m_i^2-1)=25-\sum_i m_i^2$; the two dimensions agree.</p>
-<p><strong>Corollary.</strong> The dimensions and codimensions are</p>
+<p><strong>Corollary.</strong> The dimensions and the codimensions in $M_5$ are</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Partition</th>
 <th>Dimension</th>
-<th>Codimension</th>
+<th>Codimension in $M_5$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$(1,1,1,1,1)$</td>
 <td>$20$</td>
-<td>$0$</td>
+<td>$5$</td>
 </tr>
 <tr>
 <td>$(2,1,1,1)$</td>
 <td>$18$</td>
-<td>$2$</td>
+<td>$7$</td>
 </tr>
 <tr>
 <td>$(2,2,1)$</td>
 <td>$16$</td>
-<td>$4$</td>
+<td>$9$</td>
 </tr>
 <tr>
 <td>$(3,1,1)$</td>
 <td>$14$</td>
-<td>$6$</td>
+<td>$11$</td>
 </tr>
 <tr>
 <td>$(3,2)$</td>
 <td>$12$</td>
-<td>$8$</td>
+<td>$13$</td>
 </tr>
 <tr>
 <td>$(4,1)$</td>
 <td>$8$</td>
-<td>$12$</td>
+<td>$17$</td>
 </tr>
 <tr>
 <td>$(5)$</td>
 <td>$0$</td>
-<td>$20$</td>
+<td>$25$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Proof.</strong> Evaluate $25-\sum m_i^2$: for $1^5$, $25-5=20$; for $2,1,1,1$, $25-7=18$; for $2,2,1$, $25-9=16$; for $3,1,1$, $25-11=14$; for $3,2$, $25-13=12$; for $4,1$, $25-17=8$; for $5$, $25-25=0$. The codimension is $\sum m_i^2-5$.</p>
+<p><strong>Proof.</strong> Evaluate $25-\sum m_i^2$: for $1^5$, $25-5=20$; for $2,1,1,1$, $25-7=18$; for $2,2,1$, $25-9=16$; for $3,1,1$, $25-11=14$; for $3,2$, $25-13=12$; for $4,1$, $25-17=8$; for $5$, $25-25=0$. The codimension in $M_5$ is $25-\dim=\sum m_i^2$; in $PGL_5$ it is one less.</p>
 <h3 id="the-closure-order">The Closure Order</h3>
 <p><strong>Proposition.</strong> The closure of the stratum of $\lambda$ contains the stratum of $\mu$ if and only if $\lambda$ is a coarsening of $\mu$ (equivalently, $\mu$ refines $\lambda$). In particular the regular stratum $(1,1,1,1,1)$ is open and dense, and the scalar stratum $(5)$ is the unique closed stratum.</p>
 <p><strong>Proof.</strong> A diagonal matrix with eigenvalue multiplicities $\mu$ can be deformed to one with multiplicities $\lambda$ by letting groups of eigenvalues coalesce; the multiplicities can only merge under a limit, never split. The regular stratum is open because the discriminant is nonzero; the scalar stratum is a single point, hence closed.</p>
@@ -242,7 +242,7 @@ $$</p>
 <p><strong>Proof.</strong> An automorphism of the splitting field permutes the roots and hence the projectors $P_k$, which are labelled by the roots. For a general quintic the Galois group is $S_5$.</p>
 <p><strong>Corollary.</strong> The projectors are permuted transitively by the Galois group of a general quintic; no single projector is defined over the field of coefficients. The <strong>set</strong> of five projectors is Galois-invariant, but the individual projector is not.</p>
 <p><strong>Proof.</strong> $S_5$ acts transitively on the five roots; the projectors are labelled by the roots; a projector fixed by the whole group would correspond to a root fixed by the whole group, which does not exist for a general quintic.</p>
-<h2 id="the-spectral-strata-of-math180">The Spectral Strata of $M_5$</h2>
+<h2 id="the-spectral-strata-of-math188">The Spectral Strata of $M_5$</h2>
 <h3 id="the-characteristic-map">The Characteristic Map</h3>
 <p><strong>Proposition.</strong> The characteristic map $\chi:M_5\to\mathbb{C}^5$ is surjective, and its fibre over a polynomial with distinct roots is the conjugacy class of the companion matrix, of dimension $20$. The fibre over a polynomial with a repeated root is larger, and the discriminant locus is the preimage of the discriminant hypersurface in $\mathbb{C}^5$.</p>
 <p><strong>Proof.</strong> Surjectivity is the companion matrix. Over a polynomial with distinct roots, every matrix with that characteristic polynomial is diagonalizable with the five distinct eigenvalues, hence conjugate to the diagonal matrix, hence to the companion matrix; the conjugacy class has dimension $20$. Over a repeated root, the fibre contains matrices with different Jordan types and has larger dimension.</p>
@@ -305,7 +305,7 @@ $$</p>
 <p>$$
 \boxed{\ \text{The spectral types are }1^5,\,2\,1^3,\,2^2\,1,\,3\,1^2,\,3\,2,\,4\,1,\,5;\quad \text{the root orbit }1^5\text{ has dimension }20.\ }
 $$</p>
-<p>The semisimple orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions $0,2,4,6,8,12,20$; the characteristic strata have dimensions $25,24,23,23,22,22,21$. The root orbit is the orbit of the fixed root; the regular semisimple locus is the open characteristic stratum.</p>
+<p>The semisimple orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions in $M_5$ $5,7,9,11,13,17,25$; the characteristic strata have dimensions $25,24,23,23,22,22,21$. The root orbit is the orbit of the fixed root; the regular semisimple locus is the open characteristic stratum.</p>
 <p>A general quintic has no radical solution: its Galois group is $S_5$, not solvable. The eigenvalues exist by the fundamental theorem of algebra; the Lagrange projectors exist at a simple spectrum and are polynomial in $H$; neither fact gives a radical formula for the roots. The Galois group permutes the five projectors, and for a general quintic the action is transitive.</p>
 <div class="table-scroll"><table>
 <thead>

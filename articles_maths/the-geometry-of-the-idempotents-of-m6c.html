@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometry of the Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometry-of-the-idempotents"><strong>The Geometry of the Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An idempotent of $M_6(\mathbb{C})$ is a matrix $E$ with</p>
+<p>$$
+E^2=E.
+$$</p>
+<p>It is a projector: $V=\operatorname{im}E\oplus\ker E$, and $E$ is the projection onto its image along its kernel. The rank-$p$ idempotents form a smooth variety</p>
+<p>$$
+\mathcal E_p=\{E:E^2=E,\ \operatorname{rank}E=p\},
+$$</p>
+<p>of complex dimension</p>
+<p>$$
+\dim\mathcal E_p=2p(6-p).
+$$</p>
+<p>For $p=1$ the variety is an affine bundle of rank $5$ over $\mathbb{P}^5$, of dimension $10$; for general $p$ it is the homogeneous space</p>
+<p>$$
+\mathcal E_p\cong PGL_6/P(GL_p\times GL_{6-p}),
+$$</p>
+<p>a fibre bundle over $\operatorname{Gr}(p,6)$ with the contractible fibre of complements. The full flag variety $GL_6/B$ has dimension $15$; the partial flags and their incidence relations organise the idempotents, and the gauge is the fibre of the frame bundle.</p>
+<p>The article assumes the Grassmannians and the orbit–stabilizer count of <em>The Adjoint Action, the Orbits and the Flag Variety</em> and the Peirce decomposition of <em>The Peirce Decomposition</em>. It uses the elementary geometry of homogeneous spaces. The idempotents of the biquaternion algebra are <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>; the spectral geometry is <em>The Sextic and the Spectral Strata</em>.</p>
+<h2 id="the-idempotents">The Idempotents</h2>
+<h3 id="definition-and-rank">Definition and Rank</h3>
+<p><strong>Definition.</strong> An <strong>idempotent</strong> is $E\in M_6(\mathbb{C})$ with $E^2=E$. Its <strong>rank</strong> is the dimension of its image.</p>
+<p><strong>Theorem.</strong> If $E^2=E$, then</p>
+<p>$$
+V=\operatorname{im}E\oplus\ker E,
+\qquad
+E|_{\operatorname{im}E}=I,\quad
+E|_{\ker E}=0,
+$$</p>
+<p>and the rank is the trace. Conversely, every direct sum decomposition $V=U\oplus W$ defines the idempotent $E$ with image $U$ and kernel $W$.</p>
+<p><strong>Proof.</strong> For $v\in V$, $v=Ev+(v-Ev)$; $Ev\in\operatorname{im}E$ and $v-Ev\in\ker E$ because $E(v-Ev)=Ev-E^2v=0$. The intersection is zero: if $Ev=0$ and $Ev=v$, then $v=0$. On the image, $E(Ev)=E^2v=Ev$; on the kernel, $E=0$. The trace is the sum of the eigenvalues, which are $1$ on the image and $0$ on the kernel.</p>
+<p><strong>Corollary (the eigenvalues).</strong> The eigenvalues of an idempotent are $0$ and $1$; the rank is the multiplicity of $1$.</p>
+<p><strong>Proof.</strong> The minimal polynomial divides $t^2-t=t(t-1)$.</p>
+<h3 id="the-rank-one-idempotents">The Rank-One Idempotents</h3>
+<p><strong>Theorem.</strong> A rank-one idempotent is</p>
+<p>$$
+E=u\varphi,
+\qquad
+\varphi(u)=1,
+$$</p>
+<p>with $u\in\mathbb{C}^6$ and $\varphi\in(\mathbb{C}^6)^*$. Its image is the line $\mathbb{C}u$, and its kernel is the hyperplane $\ker\varphi$.</p>
+<p><strong>Proof.</strong> A rank-one matrix is $u\varphi$; $E^2=u\varphi(u)\varphi=\varphi(u)E$, so $E^2=E$ iff $\varphi(u)=1$. The image is $\mathbb{C}u$; the kernel is $\ker\varphi$.</p>
+<p><strong>Theorem (the affine bundle).</strong> The rank-one idempotents form an affine bundle of rank $5$ over $\mathbb{P}^5$:</p>
+<p>$$
+\pi:\mathcal E_1\longrightarrow\mathbb{P}^5,
+\qquad
+E\longmapsto\operatorname{im}E .
+$$</p>
+<p>The fibre over the line $L$ is the affine space of complements $H$ to $L$ in $\mathbb{C}^6$, of dimension $5$. Hence</p>
+<p>$$
+\dim\mathcal E_1=5+5=10 .
+$$</p>
+<p><strong>Proof.</strong> The image of a rank-one idempotent is a line, so the map is well defined and surjective. The fibre over $L$ is the set of kernels $H$ complementary to $L$, equivalently the set of splittings $V=L\oplus H$. The set of complements to $L$ is an affine space modelled on $\operatorname{Hom}(V/L,L)$, of dimension $5$. The total dimension is the sum.</p>
+<p><strong>Corollary (the affine structure).</strong> Choose a line $L$ and a complement $H_0$. Every other complement is the graph of a linear map $L\to H_0$; the affine coordinates are the $5$ parameters of that map.</p>
+<p><strong>Proof.</strong> A complement $H$ transverse to $L$ is the graph of a unique linear map $L\to H_0$; the graph is a $5$-dimensional affine space.</p>
+<p><strong>Corollary (the explicit form).</strong> In a basis with $L=\mathbb{C}e_1$ and $H_0=\langle e_2,\dots,e_6\rangle$, the rank-one idempotents with image $L$ are</p>
+<p>$$
+E=\begin{pmatrix}1&a_2&\cdots&a_6\\0&0&\cdots&0\\\vdots&\vdots&&\vdots\\0&0&\cdots&0\end{pmatrix},
+\qquad
+(a_2,\dots,a_6)\in\mathbb{C}^5 .
+$$</p>
+<p><strong>Proof.</strong> $E=e_1\varphi$ with $\varphi(e_1)=1$ and $\varphi(e_j)=a_j$; the matrix is the row $(1,a_2,\dots,a_6)$ in the first row.</p>
+<h3 id="the-rank-math84-idempotents">The Rank-$p$ Idempotents</h3>
+<p><strong>Theorem.</strong> The rank-$p$ idempotents form the homogeneous space</p>
+<p>$$
+\mathcal E_p\cong PGL_6/P(GL_p\times GL_{6-p}),
+$$</p>
+<p>of complex dimension</p>
+<p>$$
+\dim\mathcal E_p=2p(6-p).
+$$</p>
+<p><strong>Proof.</strong> $PGL_6$ acts transitively on rank-$p$ idempotents: every such idempotent is conjugate to $E_p=\operatorname{diag}(I_p,0)$. The stabilizer of $E_p$ is the image in $PGL_6$ of the block-diagonal $GL_p\times GL_{6-p}$, of dimension $p^2+(6-p)^2-1$. The orbit dimension is</p>
+<p>$$
+35-\bigl(p^2+(6-p)^2-1\bigr)=36-p^2-(6-p)^2=2p(6-p).
+$$</p>
+<p><strong>Corollary (the table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$p$</th>
+<th>$2p(6-p)$</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>the zero idempotent</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$10$</td>
+<td>affine bundle over $\mathbb{P}^5$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$16$</td>
+<td>affine bundle over $\operatorname{Gr}(2,6)$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$18$</td>
+<td>affine bundle over $\operatorname{Gr}(3,6)$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$16$</td>
+<td>affine bundle over $\operatorname{Gr}(4,6)$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$10$</td>
+<td>affine bundle over $\operatorname{Gr}(5,6)=\mathbb{P}^5$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$0$</td>
+<td>the identity</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Substitute $p$ in $2p(6-p)$.</p>
+<p><strong>Theorem (the bundle over the Grassmannian).</strong> The image map</p>
+<p>$$
+\pi_p:\mathcal E_p\longrightarrow\operatorname{Gr}(p,6),
+\qquad
+E\longmapsto\operatorname{im}E
+$$</p>
+<p>is a fibre bundle with fibre the affine space of complements, of dimension $p(6-p)$. Hence</p>
+<p>$$
+\dim\mathcal E_p=p(6-p)+p(6-p)=2p(6-p).
+$$</p>
+<p><strong>Proof.</strong> The image is a $p$-plane; the kernel is a complementary $(6-p)$-plane. The set of complements to a fixed $p$-plane is an affine space modelled on $\operatorname{Hom}(\mathbb{C}^6/V_p,V_p)$, of dimension $p(6-p)$. The total dimension is the sum.</p>
+<p><strong>Corollary (the contractible fibre).</strong> The fibre is an affine space, hence contractible; the variety $\mathcal E_p$ is homotopy equivalent to the Grassmannian $\operatorname{Gr}(p,6)$.</p>
+<p><strong>Proof.</strong> A fibre bundle with contractible fibre has the homotopy type of the base.</p>
+<p><strong>Remark (the two descriptions).</strong> The homogeneous-space description $PGL_6/P(GL_p\times GL_{6-p})$ and the affine-bundle description over $\operatorname{Gr}(p,6)$ are the same variety: the base is the image Grassmannian, the fibre is the complement, and the structure group is the affine general linear group of the complement.</p>
+<h2 id="the-flag-variety">The Flag Variety</h2>
+<h3 id="the-full-flag-variety">The Full Flag Variety</h3>
+<p><strong>Definition.</strong> A <strong>complete flag</strong> is a chain</p>
+<p>$$
+0\subset V_1\subset V_2\subset\cdots\subset V_5\subset\mathbb{C}^6,
+\qquad
+\dim V_i=i .
+$$</p>
+<p>The <strong>full flag variety</strong> is</p>
+<p>$$
+\mathcal F=GL_6/B,
+$$</p>
+<p>where $B$ is the Borel subgroup of upper triangular matrices.</p>
+<p><strong>Theorem.</strong> $\mathcal F$ is a smooth projective variety of dimension</p>
+<p>$$
+\dim\mathcal F=36-21=15 .
+$$</p>
+<p><strong>Proof.</strong> $GL_6$ acts transitively on complete flags; the stabilizer of the standard flag is $B$, of dimension $21$ (six diagonal and fifteen upper off-diagonal parameters); the quotient has dimension $15$.</p>
+<p><strong>Corollary (the iterated bundle).</strong> The flag variety is an iterated projective bundle with fibres</p>
+<p>$$
+\mathbb{P}^5,\ \mathbb{P}^4,\ \mathbb{P}^3,\ \mathbb{P}^2,\ \mathbb{P}^1,
+$$</p>
+<p>and</p>
+<p>$$
+15=5+4+3+2+1 .
+$$</p>
+<p><strong>Proof.</strong> Choose $V_1$ in $\mathbb{P}^5$; then $V_2/V_1$ in $\mathbb{P}^4$; then $V_3/V_2$ in $\mathbb{P}^3$; then $V_4/V_3$ in $\mathbb{P}^2$; then $V_5/V_4$ in $\mathbb{P}^1$.</p>
+<h3 id="the-partial-flags">The Partial Flags</h3>
+<p><strong>Definition.</strong> A <strong>partial flag of type $(p_1,\dots,p_k)$</strong> is a chain</p>
+<p>$$
+0\subset V_{p_1}\subset\cdots\subset V_{p_k}\subset\mathbb{C}^6,
+\qquad
+\dim V_{p_i}=p_i .
+$$</p>
+<p><strong>Theorem.</strong> The partial flag variety of type $(p)$ is the Grassmannian</p>
+<p>$$
+\mathcal F_{(p)}=\operatorname{Gr}(p,6),
+\qquad
+\dim=p(6-p).
+$$</p>
+<p>For the type $(p,q)$ with $p<q$, the dimension is</p>
+<p>$$
+\dim\mathcal F_{(p,q)}=p(6-p)+(q-p)(6-q).
+$$</p>
+<p><strong>Proof.</strong> Choose $V_p$ (dimension $p(6-p)$); then $V_q/V_p$ is a $(q-p)$-plane in $\mathbb{C}^6/V_p\cong\mathbb{C}^{6-p}$, of dimension $(q-p)(6-p-(q-p))=(q-p)(6-q)$.</p>
+<p><strong>Corollary (the table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(1)$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$(2)$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$(3)$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$(1,2)$</td>
+<td>$5+4=9$</td>
+</tr>
+<tr>
+<td>$(2,4)$</td>
+<td>$8+2\cdot2=12$</td>
+</tr>
+<tr>
+<td>$(1,3)$</td>
+<td>$5+2\cdot3=11$</td>
+</tr>
+<tr>
+<td>$(1,2,3)$</td>
+<td>$5+4+3=12$</td>
+</tr>
+<tr>
+<td>$(1,2,3,4,5)$</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Apply the formula.</p>
+<h3 id="the-incidence">The Incidence</h3>
+<p><strong>Theorem.</strong> The full flag variety fibres over every partial flag variety:</p>
+<p>$$
+\pi_{p_1,\dots,p_k}:\mathcal F\longrightarrow\mathcal F_{(p_1,\dots,p_k)},
+$$</p>
+<p>with fibre the product of the flag varieties of the successive quotients.</p>
+<p><strong>Proof.</strong> A complete flag projects to its subspaces of the prescribed dimensions; the fibre consists of the flags refining the partial flag.</p>
+<p><strong>Corollary (the rank-$p$ idempotent and the flag).</strong> A rank-$p$ idempotent determines the two-step partial flag</p>
+<p>$$
+0\subset\operatorname{im}E\subset\mathbb{C}^6,
+$$</p>
+<p>but not a complete flag; the complete flag requires the further splitting of the image and the kernel. The fibre of $\mathcal F\to\operatorname{Gr}(p,6)$ over the image is the product of the full flag varieties of the $p$-plane and the $(6-p)$-quotient, of dimension</p>
+<p>$$
+\frac{p(p-1)}2+\frac{(6-p)(5-p)}2 .
+$$</p>
+<p><strong>Proof.</strong> The image and the quotient are the two blocks of the idempotent; a complete flag refining $0\subset\operatorname{im}E\subset V$ is a flag of the image times a flag of the quotient.</p>
+<p><strong>Remark (idempotent versus flag).</strong> An idempotent of rank $p$ is more than its image: it also chooses the kernel, a complement. <strong>The Grassmannian records the image; the idempotent records the splitting; the flag records the refinement.</strong></p>
+<h2 id="the-gauge-and-the-frame-bundle">The Gauge and the Frame Bundle</h2>
+<h3 id="the-frame-bundle">The Frame Bundle</h3>
+<p><strong>Definition.</strong> A <strong>frame</strong> of $\mathbb{C}^6$ is an ordered basis $(v_1,\dots,v_6)$. The <strong>frame bundle</strong> over the flag variety is</p>
+<p>$$
+\pi:GL_6\longrightarrow GL_6/B=\mathcal F,
+$$</p>
+<p>sending a frame to the flag of its coordinate spans.</p>
+<p><strong>Theorem.</strong> $\pi$ is a principal $B$-bundle: the fibre over a flag is the Borel subgroup $B$ of dimension $21$.</p>
+<p><strong>Proof.</strong> Two frames give the same flag iff they differ by an upper triangular change of basis, that is by an element of $B$.</p>
+<p><strong>Corollary (the gauge).</strong> The <strong>gauge</strong> is the maximal torus of $B$ modulo the center,</p>
+<p>$$
+(\mathbb{C}^\times)^5,
+$$</p>
+<p>of dimension $5$. It acts on the frame by rescaling the basis vectors.</p>
+<p><strong>Proof.</strong> The diagonal torus of $GL_6$ is $(\mathbb{C}^\times)^6$; modulo the center $\mathbb{C}^\times I_6$ it is $(\mathbb{C}^\times)^5$. The rescaling of the frame preserves the flag.</p>
+<h3 id="the-gauge-as-the-fibre">The Gauge as the Fibre</h3>
+<p><strong>Theorem.</strong> Over the root $H$, the eigenframe bundle is a principal $(\mathbb{C}^\times)^6$-bundle; modulo the overall scale it is a principal $(\mathbb{C}^\times)^5$-bundle, and the gauge is its fibre.</p>
+<p><strong>Proof.</strong> The eigenbases of $H$ are the frames in which $H$ is diagonal; two such frames differ by independent rescalings, the torus $(\mathbb{C}^\times)^6$. The overall scale acts trivially on the projective frame, so the gauge is $(\mathbb{C}^\times)^6/\mathbb{C}^\times\cong(\mathbb{C}^\times)^5$.</p>
+<p><strong>Corollary (the dimensions).</strong></p>
+<p>$$
+\dim GL_6=36=\dim\mathcal F+\dim B=15+21,
+\qquad
+\dim B=21=15+6 .
+$$</p>
+<p>The Borel has dimension $21$; its maximal torus has dimension $6$; the unipotent radical has dimension $15$; the gauge is the torus modulo the center, of dimension $5$.</p>
+<p><strong>Proof.</strong> The Borel is the semidirect product of the torus (dimension $6$) and the unipotent radical (dimension $15$); the flag variety has dimension $15$.</p>
+<p><strong>Remark (the three fibres).</strong> The frame bundle over the flag variety has fibre the Borel ($21$); the eigenframe bundle over the root has fibre the torus ($6$, or $5$ projectively); the idempotent bundle over the Grassmannian has fibre the affine space of complements ($p(6-p)$). <strong>The gauge is the torus fibre; the flag fibre is the Borel; the idempotent fibre is the complement.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The rank-$p$ idempotents form the smooth variety</p>
+<p>$$
+\mathcal E_p\cong PGL_6/P(GL_p\times GL_{6-p}),
+\qquad
+\dim_{\mathbb{C}}\mathcal E_p=2p(6-p),
+$$</p>
+<p>an affine bundle over the Grassmannian $\operatorname{Gr}(p,6)$ with fibre the contractible affine space of complements, of dimension $p(6-p)$.</p>
+<p>$$
+\boxed{\ \dim\mathcal E_1=10=5+5,\qquad \dim\mathcal E_p=2p(6-p),\qquad \dim GL_6/B=15 .\ }
+$$</p>
+<p>For $p=1$ the variety is an affine bundle of rank $5$ over $\mathbb{P}^5$; for $p=3$ it has dimension $18$; for $p=6$ it is the single identity.</p>
+<p>The full flag variety $GL_6/B$ has dimension $15$, with the iterated bundle $5+4+3+2+1$. The partial flags are the Grassmannians and their incidences; an idempotent determines the two-step flag of its image, and the complete flag refines it. The gauge $(\mathbb{C}^\times)^5$ is the fibre of the frame bundle over the root; the Borel is the fibre over the flag.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal E_1$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$\mathcal E_2$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\mathcal E_3$</td>
+<td>$18$</td>
+</tr>
+<tr>
+<td>$\mathcal E_p$</td>
+<td>$2p(6-p)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(p,6)$</td>
+<td>$p(6-p)$</td>
+</tr>
+<tr>
+<td>Full flag variety</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>Borel $B$</td>
+<td>$21$</td>
+</tr>
+<tr>
+<td>Gauge $(\mathbb{C}^\times)^5$</td>
+<td>$5$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal E_p$</td>
+<td>the rank-$p$ idempotents</td>
+</tr>
+<tr>
+<td>$P(GL_p\times GL_{6-p})$</td>
+<td>the projective Levi stabilizer</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(p,6)$</td>
+<td>the Grassmannian of $p$-planes</td>
+</tr>
+<tr>
+<td>$\mathcal F=GL_6/B$</td>
+<td>the full flag variety</td>
+</tr>
+<tr>
+<td>$\mathcal F_{(p_1,\dots,p_k)}$</td>
+<td>the partial flag variety</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Borel subgroup of upper triangular matrices</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the orbit–stabilizer count and the Grassmannians.</li>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>, for the corners of an idempotent.</li>
+<li><a href="the-rank-two-and-rank-three-splits-of-m6c.html">The Rank-Two and Rank-Three Splits</a>, for the rank-two and rank-three idempotents.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals</a>, for the projective space of the minimal ideals.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the gauge torus.</li>
+<li><a href="grassmannians-and-stiefel-manifolds.html">The Grassmannian</a>, for the general theory of $\operatorname{Gr}(p,n)$.</li>
+<li><a href="flag-manifolds.html">The Flag Variety</a>, for the general theory of $GL_n/B$ and the incidence.</li>
+<li><a href="square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">The Idempotents of the Biquaternion Algebra</a>, for the rank-one case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

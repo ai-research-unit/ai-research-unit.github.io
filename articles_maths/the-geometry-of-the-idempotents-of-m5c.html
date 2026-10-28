@@ -135,8 +135,8 @@ $$</p>
 <h3 id="the-contractible-fibre">The Contractible Fibre</h3>
 <p><strong>Proposition.</strong> The complement of a $p$-plane $L$ in $\mathbb{C}^5$ is the affine space $\operatorname{Hom}(\mathbb{C}^5/L,L)$, which is contractible; the bundle of complements is the affine bundle associated with the tautological quotient and subbundles.</p>
 <p><strong>Proof.</strong> A complement $K$ is the graph of a linear map $\mathbb{C}^5/L\to L$; the graph is a $(5-p)$-plane transverse to $L$; every complement arises uniquely from such a map. The space of maps is a vector space, hence contractible.</p>
-<p><strong>Corollary.</strong> The idempotents of rank $p$ are the sections of the affine bundle; the zero section would be a canonical complement, which does not exist without a choice of Hermitian metric.</p>
-<p><strong>Proof.</strong> A canonical complement would be the orthogonal complement, which requires a metric; without a metric, there is no zero section.</p>
+<p><strong>Corollary.</strong> The idempotents of rank $p$ are the <strong>total space</strong> of the affine bundle; a section would be a canonical choice of complement for each $p$-plane, which does not exist without a choice of Hermitian metric.</p>
+<p><strong>Proof.</strong> A canonical complement would be the orthogonal complement, which requires a metric; without a metric, there is no preferred point in each fibre, hence no canonical section.</p>
 <p><strong>Remark.</strong> <strong>The idempotents are the transverse pairs, not the nested flags.</strong> The image and the kernel are complementary, not nested; the nested partial flag $L\subset K$ is a different homogeneous space, of dimension $p(5-p)$ for the Grassmannian, not $2p(5-p)$. The affine bundle of complements is the geometric content of the idempotent.</p>
 <h2 id="the-rank-stratification">The Rank Stratification</h2>
 <h3 id="the-orbits">The Orbits</h3>
@@ -149,8 +149,8 @@ $$</p>
 <p><strong>Proof.</strong> The eigenvalues of an idempotent are $0$ and $1$; the trace is the number of $1$s, which is the rank. The trace is a continuous function, and an integer-valued continuous function is locally constant. The preimage of the value $p$ is open and closed.</p>
 <p><strong>Corollary.</strong> The idempotent variety is the disjoint union of the six smooth orbits $\mathcal{I}_0,\dots,\mathcal{I}_5$, of dimensions $0,8,12,12,8,0$; it is smooth but disconnected, and it is not irreducible.</p>
 <p><strong>Proof.</strong> Each orbit is a homogeneous space, hence smooth; the rank is locally constant, so the orbits are the connected components (each orbit is connected because $GL_5(\mathbb{C})$ is connected); the dimensions are $2p(5-p)$.</p>
-<p><strong>Corollary.</strong> The closure of $\mathcal{I}_p$ in $M_5$ contains matrices of lower rank, but no idempotent of lower rank: the idempotent variety itself has no closure inclusions between different ranks. The lower-rank limits are non-idempotent.</p>
-<p><strong>Proof.</strong> A sequence $P_n\in\mathcal{I}_p$ can converge to a rank-$q$ matrix $P$ with $q<p$; if the limit were idempotent, its rank would be $\operatorname{tr}P=\lim\operatorname{tr}P_n=p$, a contradiction. So the lower-rank limit is not idempotent. The idempotent variety is closed, because $P^2=P$ is polynomial; hence no idempotent of lower rank lies in the closure.</p>
+<p><strong>Corollary.</strong> The closure of $\mathcal{I}_p$ in $M_5$ is $\mathcal{I}_p$ itself: each rank stratum is closed in $M_5$. There is no degeneration of a rank-$p$ idempotent to a different rank.</p>
+<p><strong>Proof.</strong> The idempotent variety is closed, because $P^2=P$ is polynomial; the rank is continuous and equals the trace on the variety; the preimage of $p$ is closed and open in the variety, hence closed in $M_5$.</p>
 <h3 id="the-peirce-decomposition">The Peirce Decomposition</h3>
 <p><strong>Theorem.</strong> Relative to an idempotent $P$ of rank $p$, the algebra decomposes as</p>
 <p>$$
@@ -172,7 +172,7 @@ $$</p>
 <p><strong>Proposition.</strong> $GL_5$ acts transitively on the full flags; the stabilizer of the standard flag is $B$; the flag variety is the homogeneous space $GL_5/B$.</p>
 <p><strong>Proof.</strong> A flag is the span of a basis $v_1,\dots,v_5$ with $V_k=\langle v_1,\dots,v_k\rangle$; $GL_5$ acts transitively on the bases and hence on the flags; the stabilizer of the standard flag is the group of upper triangular matrices.</p>
 <p><strong>Corollary.</strong> The flag variety is compact and projective; it is the quotient of $GL_5$ by the Borel.</p>
-<p><strong>Proof.</strong> The flag variety is a closed subvariety of a product of Grassmannians, hence projective; it is compact because $GL_5/B$ is the image of the compact unitary group $U(5)$ (the Iwasawa decomposition).</p>
+<p><strong>Proof.</strong> The flag variety is a closed subvariety of a product of Grassmannians, hence projective; it is compact because $GL_5/B$ is the image of the compact $*$-unitary group $U(5)$ (the Iwasawa decomposition).</p>
 <h3 id="the-dimension_1">The Dimension</h3>
 <p><strong>Theorem.</strong> The full flag variety has dimension $10$:</p>
 <p>$$
@@ -199,12 +199,12 @@ $$</p>
 <p><strong>Proof.</strong> The dimension is the sum of the dimensions of the Grassmannians of the successive quotients: $d_i(d_{i+1}-d_i)$ for each step. The sum telescopes to $\dim GL_5-\dim P$.</p>
 <p><strong>Corollary.</strong> The full flag has type $(1,2,3,4)$, dimension $1\cdot1+2\cdot1+3\cdot1+4\cdot1=10$. The Grassmannian $\operatorname{Gr}(p,5)$ has type $(p)$, dimension $p(5-p)$.</p>
 <p><strong>Proof.</strong> Evaluate the formula for the two types.</p>
-<p><strong>Corollary.</strong> The nested partial flags are not the idempotents: the nested partial flag of type $(p,5-p)$ has dimension $p(5-p)$ for the $p$-plane alone, while the rank-$p$ idempotents have dimension $2p(5-p)$. The idempotent needs the transverse kernel as well.</p>
+<p><strong>Corollary.</strong> The nested partial flags are not the idempotents: the nested partial flag of type $(p)$ (a single $p$-plane) has dimension $p(5-p)$, while the rank-$p$ idempotents have dimension $2p(5-p)$. The idempotent needs the transverse kernel as well.</p>
 <p><strong>Proof.</strong> The formula gives $p(5-p)$ for the nested flag; the idempotent adds the complement, of dimension $p(5-p)$.</p>
 <h3 id="the-transverse-pairs">The Transverse Pairs</h3>
 <p><strong>Theorem.</strong> The rank-$p$ idempotents are the transverse pairs $(L,K)$ with $\dim L=p$, $\dim K=5-p$, $L\oplus K=\mathbb{C}^5$; they form the homogeneous space $GL_5/(GL_p\times GL_{5-p})$ of dimension $2p(5-p)$.</p>
 <p><strong>Proof.</strong> The pair determines the projection; the stabilizer is the block diagonal; the dimension is $2p(5-p)$.</p>
-<p><strong>Corollary.</strong> The transverse pair is not a nested partial flag; the incidence "L\subset K" is a different variety, of dimension $p(5-p)$; the transverse incidence "L\oplus K=V" is open in $\operatorname{Gr}(p,5)\times\operatorname{Gr}(5-p,5)$.</p>
+<p><strong>Corollary.</strong> The transverse pair is not a nested partial flag. For $p\le2$, the incidence $L\subset K$ is a partial flag of type $(p,5-p)$ and has dimension $p(10-3p)$ (equal to $7$ for $p=1$ and $8$ for $p=2$); for $p\ge3$ the dual incidence $K\subset L$ has dimension $(5-p)(10-3(5-p))$, which is $8$ for $p=3$ and $7$ for $p=4$. The transverse incidence $L\oplus K=V$ is open in $\operatorname{Gr}(p,5)\times\operatorname{Gr}(5-p,5)$, of dimension $2p(5-p)$.</p>
 <p><strong>Proof.</strong> The nested incidence is the closed condition $L\subset K$; the transverse condition is the open condition $L\cap K=0$; the dimensions differ.</p>
 <p><strong>Corollary.</strong> The idempotent variety maps to the product of Grassmannians by $P\mapsto(\operatorname{im}P,\ker P)$; the image is the open set of transverse pairs; the map is an isomorphism onto its image.</p>
 <p><strong>Proof.</strong> The projection is determined by the transverse pair; the map is bijective onto the open set of transverse pairs.</p>

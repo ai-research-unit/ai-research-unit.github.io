@@ -83,7 +83,7 @@ $$
 J M J = M_{\mathrm c}, \qquad \Delta^{it'}M\Delta^{it'*}=M, \qquad \sigma_{t'}(A):=\Delta^{it'}A\Delta^{it'*},
 $$
 so that $J$ identifies $M$ with its commutant and $t'\mapsto\sigma_{t'}$ is a one-parameter group of automorphisms of $M$, the <strong>modular automorphism group</strong> of the pair $(M,\Omega)$.</p>
-<p>The article writes the construction in its <strong>Hermitian form</strong>, the form used by the companion articles. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$; the modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element of $\mathbb{M}_+$; the modular flow is the inner automorphism by the unitary $e^{-it'K}$; and the modular operator is built from the Hermitian exponentials $e^{-K}$ and $e^{K}$. The parameters are Hermitian ($K$) or unitary ($U_{t'}=e^{-it'K}$ and $\Delta^{it'}$), so their inverses are their adjoints; the two exponentials $e^{-K}$ and $e^{K}$ are both Hermitian functions of $K$.</p>
+<p>The article writes the construction in its <strong>Hermitian form</strong>, the form used by the companion articles. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$; the modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element of $\mathbb{M}_+$; the modular flow is the inner automorphism by the $*$-unitary $e^{-it'K}$; and the modular operator is built from the Hermitian exponentials $e^{-K}$ and $e^{K}$. The parameters are Hermitian ($K$) or $*$-unitary ($U_{t'}=e^{-it'K}$ and $\Delta^{it'}$), so their inverses are their adjoints; the two exponentials $e^{-K}$ and $e^{K}$ are both Hermitian functions of $K$.</p>
 <p>This article is the companion of <em>The KMS Condition and the Biquaternion Framework</em>. That article stated the KMS condition and located the modular Hamiltonian $K=-\log\rho$ in the informational sector $\mathbb{M}_+$. It used, but did not construct, the operator $S$ whose polar decomposition produces the modular flow. The present article constructs $S$ explicitly in the finite-dimensional biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, takes its polar decomposition in closed form, and verifies the resulting identities by recomputation. The KMS condition is the parent's subject and is not restated here; the one thing imported from it is the result that the modular flow is the flow for which the thermal state satisfies the KMS boundary relation.</p>
 <p>Three features of the construction are easy to get wrong, and they organize what follows.</p>
 <ul>
@@ -147,7 +147,7 @@ The operator form of this statement is
 $$
 J\,i\,J = -i,
 $$
-with $i$ the scalar imaginary. The modular conjugation does not commute with $i$; it <strong>inverts</strong> it. Every modular quantity that carries a factor of $i$ — the generator of the flow, the imaginary-time displacement of the KMS condition, the imaginary vector part of a density matrix — is conjugated by $J$. This is the first trap: treating $J$ as a unitary (linear) involution loses the conjugation and reverses the resulting flow.</p>
+with $i$ the scalar imaginary. The modular conjugation does not commute with $i$; it <strong>inverts</strong> it. Every modular quantity that carries a factor of $i$ — the generator of the flow, the imaginary-time displacement of the KMS condition, the imaginary vector part of a density matrix — is conjugated by $J$. This is the first trap: treating $J$ as a $*$-unitary (linear) involution loses the conjugation and reverses the resulting flow.</p>
 <h2 id="why-the-hypotheses-are-load-bearing">Why the Hypotheses Are Load-Bearing</h2>
 <p><strong>Cyclicity</strong> is what gives $S_0$ a dense domain. If $M\Omega$ were not dense in $\mathcal{H}$, the polar decomposition of the (then not densely defined) operator would not be available.</p>
 <p><strong>Separation</strong> is what makes $S_0$ single-valued. Without it there are $A\in M$ with $A\Omega=0$ but $A^*\Omega\neq0$, and the rule $A\Omega\mapsto A^*\Omega$ has no content.</p>
@@ -216,7 +216,7 @@ The <strong>modular flow</strong> is
 $$
 \boxed{\;\sigma_{t'}(\tilde{Q}_3) = \Delta^{it'}\tilde{Q}_3\Delta^{it'*} = e^{-it'\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{it'\tilde K_{\mathrm{mod}}}\;},
 $$
-which is an <strong>inner</strong> automorphism of $\mathbb{B}$, implemented by the unitary $\tilde{Ϛ}^{it'}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_{t'}(\tilde{Q}_3^{*})=\sigma_{t'}(\tilde{Q}_3)^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
+which is an <strong>inner</strong> automorphism of $\mathbb{B}$, implemented by the $*$-unitary $\tilde{Ϛ}^{it'}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_{t'}(\tilde{Q}_3^{*})=\sigma_{t'}(\tilde{Q}_3)^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
 $$
 \tilde{K}_{\mathrm{mod}} := -\log\tilde{Ϛ} \ \in\mathbb{M}_+,
 $$
@@ -243,7 +243,7 @@ $$
 \tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_t,
 $$
 with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_t$ and with that article's partition function.</p>
-<h2 id="the-biquaternion-candidate-for-math216">The Biquaternion Candidate for $S$</h2>
+<h2 id="the-biquaternion-candidate-for-math220">The Biquaternion Candidate for $S$</h2>
 <p>The framework supplies a natural candidate for $S$, and it is the Hermitian conjugation ${}^{*}$ itself:
 $$
 S_0:\ \tilde{Q}_3\mapsto\tilde{Q}_3^{*} .
@@ -260,7 +260,7 @@ $$
 $$
 the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde{Ϛ}=\exp(-\beta\tilde H)/\mathrm{Tr}(\exp(-\beta\tilde H))$ with $\tilde H\in\mathbb{M}_+$, and for those $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}$ generates the flow; but the algebra itself does not select one. <strong>This is a gap, and it is left visible:</strong> the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.</p>
 <h2 id="the-type-of-the-algebra-and-inner-versus-outer-modular-flow">The Type of the Algebra and Inner Versus Outer Modular Flow</h2>
-<p>The finite-dimensional algebra is a factor of <strong>type I$_2$</strong>: a finite factor is I$_n$ exactly when it is $M_n(\mathbb{C})$, and $\mathbb{B}\cong M_2(\mathbb{C})$, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the unitary $\tilde{Ϛ}^{it'}$ inside $\mathbb{B}$,
+<p>The finite-dimensional algebra is a factor of <strong>type I$_2$</strong>: a finite factor is I$_n$ exactly when it is $M_n(\mathbb{C})$, and $\mathbb{B}\cong M_2(\mathbb{C})$, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the $*$-unitary $\tilde{Ϛ}^{it'}$ inside $\mathbb{B}$,
 $$
 \sigma_{t'}(\tilde{Q}_3)=e^{-it'\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{it'\tilde K_{\mathrm{mod}}},\qquad \tilde{Ϛ}^{it'}\in\mathbb{B}.
 $$

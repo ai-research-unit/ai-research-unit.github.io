@@ -136,7 +136,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The squaring map $\zeta\mapsto\zeta^2$ sends the four roots onto $\{1,-1\}$, each value twice: $\zeta_1^2=\zeta_3^2=1$ and $\zeta_2^2=\zeta_4^2=-1$. This is the quotient $\mathbb{Z}/4\to\mathbb{Z}/2$ that becomes the chirality in §<em>The Chirality Involution</em>. The conjugation $\zeta\mapsto\bar\zeta$ is the inversion $\zeta\mapsto\zeta^{-1}$, and it exchanges $\zeta_1\leftrightarrow\zeta_3$ and $\zeta_2\leftrightarrow\zeta_4$.</p>
+<p>The squaring map $\zeta\mapsto\zeta^2$ sends the four roots onto $\{1,-1\}$, each value twice: $\zeta_1^2=\zeta_3^2=1$ and $\zeta_2^2=\zeta_4^2=-1$. This is the quotient $\mathbb{Z}/4\to\mathbb{Z}/2$ that becomes the chirality in §<em>The Chirality Involution</em>. The conjugation $\zeta\mapsto\bar\zeta$ is the inversion $\zeta\mapsto\zeta^{-1}$; it fixes $\zeta_1=1$ and $\zeta_3=-1$ and exchanges $\zeta_2\leftrightarrow\zeta_4$.</p>
 <h2 id="the-root">The Root</h2>
 <p><strong>Definition.</strong> A <strong>root of unity of order four</strong> in $M_4(\mathbb{C})$ is an element $H$ with</p>
 <p>$$
@@ -306,7 +306,7 @@ P_3=\begin{pmatrix}0&0&0&0\\0&0&1&-1\\0&0&1&-1\\0&0&0&0\end{pmatrix},
 P_4=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&1\end{pmatrix},
 $$</p>
 <p>and their sum is $I$. The example shows that the construction depends on $H$ and not on a choice of orthonormal basis.</p>
-<h2 id="the-spectral-resolution-and-the-math204-grading">The Spectral Resolution and the $\mathbb{Z}/4$ Grading</h2>
+<h2 id="the-spectral-resolution-and-the-math205-grading">The Spectral Resolution and the $\mathbb{Z}/4$ Grading</h2>
 <h3 id="the-resolution">The Resolution</h3>
 <p><strong>Theorem.</strong> The root is the weighted sum of its projectors:</p>
 <p>$$
@@ -323,7 +323,7 @@ H^2=P_1-P_2+P_3-P_4,\qquad
 H^3=P_1-iP_2-P_3+iP_4 .
 $$</p>
 <p><strong>Proof.</strong> The first identity is the interpolation corollary applied to the polynomial $x$; the second is the same corollary applied to $x^m$. The four displayed cases are $m=0,1,2,3$.</p>
-<p><strong>Corollary.</strong> The four elements $I,H,H^2,H^3$ are a basis of $\mathbb{C}[H]$, and the four $P_k$ are the dual basis under the interpolation pairing. The matrix of the change of basis is the Vandermonde matrix of the fourth roots.</p>
+<p><strong>Corollary.</strong> The four elements $I,H,H^2,H^3$ are a basis of $\mathbb{C}[H]$, and the four $P_k$ are the Lagrange basis for the evaluations $f\mapsto f(\zeta_k)$ at the four roots. The matrix of the change of basis is the Vandermonde matrix of the fourth roots.</p>
 <h3 id="the-grading">The Grading</h3>
 <p><strong>Definition.</strong> Conjugation by $H$ is the automorphism</p>
 <p>$$
@@ -411,14 +411,14 @@ $$</p>
 \mathbb{C}^2_-=\operatorname{im}P_-,\qquad P_-=\frac12(I-\Gamma)=P_2+P_4,
 $$</p>
 <p>are the <strong>two chiralities</strong> of the root. Each is a plane. The involution $\Gamma$ is the $\mathbb{Z}/2$ quotient of the $\mathbb{Z}/4$ grading: on $\mathcal{M}^{(r)}$ it acts by $(-1)^r$ under $\operatorname{Ad}_\Gamma$. The two chiralities, the block decomposition and the mass block are <em>The Two Chiralities</em> and <em>The Rank-Two Split</em>.</p>
-<p><strong>The root and the chirality.</strong> The map $H\mapsto\Gamma=H^2$ forgets the choice of which line in each chirality carries $+1$ rather than $-1$, or $i$ rather than $-i$: on $\mathbb{C}^2_+$ the root restricts with eigenvalues $+1,-1$ on the two lines, and on $\mathbb{C}^2_-$ with eigenvalues $i,-i$. The fibre of the map has four points, the two orderings in each plane. The image is the conjugacy class of involutions with spectrum $(1,1,-1,-1)$, of complex dimension $8$; the fibre has dimension $4$; the root set has dimension $12$, as §<em>The Root Set</em> confirms.</p>
-<h2 id="the-root-of-math313-as-the-order-two-case">The Root of $+1$ as the Order-Two Case</h2>
+<p><strong>The root and the chirality.</strong> The map $H\mapsto\Gamma=H^2$ forgets the choice of which line in each chirality carries $+1$ rather than $-1$, or $i$ rather than $-i$: on $\mathbb{C}^2_+$ the root restricts with eigenvalues $+1,-1$ on the two lines, and on $\mathbb{C}^2_-$ with eigenvalues $i,-i$. The fibre of the map is the space of ordered decompositions of the two planes into their spectral lines, of complex dimension four (real dimension eight); the four eigenvalue assignments are the discrete labels attached to the two lines in each plane, and they do not add to the dimension. The image is the conjugacy class of involutions with spectrum $(1,1,-1,-1)$, of complex dimension $8$; the fibre has dimension $4$; the root set has dimension $12$, as §<em>The Root Set</em> confirms.</p>
+<h2 id="the-root-of-math315-as-the-order-two-case">The Root of $+1$ as the Order-Two Case</h2>
 <p><strong>At $n=2$ the same construction is the biquaternion algebra $M_2(\mathbb{C})$.</strong> The roots of $x^2-1$ are $+1$ and $-1$, and the Lagrange projectors are</p>
 <p>$$
 P_+=\frac{I+H}{2},\qquad P_-=\frac{I-H}{2},\qquad H=P_+-P_- .
 $$</p>
 <p>These are the idempotents $\tilde\Pi_\pm=(e_t\pm\tilde\Xi)/2$ of <em>The Peirce Decomposition</em>, with $H=\tilde\Xi$ and $I=e_t$. The order-two root is the biquaternion root of $+1$; it is the case $n=2$ of the order-four construction, not a separate principle.</p>
-<p><strong>The old "second root" is the gauge.</strong> In the biquaternion article the frame was presented as a root of $+1$ together with a second root anticommuting with it. The second element does not produce new idempotents: the two idempotents are already produced by the first root. What it supplies is a vector in each mixed Peirce line, equivalently the normalisation of the two nilpotents. That is the gauge parameter $\lambda$ of <em>The Frame, the Simple Nilpotents and the Gauge</em>, and at $n=2$ it is one complex number. There is no primitive root pair. For $n=4$ the gauge has three parameters, one per simple nilpotent, and no single second root plays the role of $\lambda$.</p>
+<p><strong>The old "second root" is the gauge.</strong> In the biquaternion article the frame was presented as a root of $+1$ together with a second root anticommuting with it. The second element does not produce new idempotents: the two idempotents are already produced by the first root. What it supplies is a vector in each mixed Peirce line, equivalently the normalisation of the two nilpotents. That is the gauge parameter $\lambda$ of <em>The Frame, the Simple Nilpotents and the Gauge</em>, and at $n=2$ it is one complex number. There is no second primitive element. For $n=4$ the gauge has three parameters, one per simple nilpotent, and no single second root plays the role of $\lambda$.</p>
 <p><strong>The count in the two cases.</strong> For $n=2$ the root set is $PGL_2/T$, of complex dimension $2$, and the gauge is one complex dimension; the frame modulo scale has dimension $3$, which is six real dimensions. For $n=4$ the root set is $PGL_4/T$, of complex dimension $12$, and the gauge is three complex dimensions; the frame modulo scale has dimension $15$.</p>
 <h2 id="the-root-set">The Root Set</h2>
 <p><strong>Definition.</strong> Let</p>
@@ -571,7 +571,7 @@ $$</p>
 <li><a href="roots-of-unity-and-the-lagrange-idempotents-mnc.html">Roots of Unity and the Lagrange Idempotents</a>, for the general construction at order $n$.</li>
 <li><a href="the-peirce-decomposition-and-the-corner-recursion-mnc.html">The Peirce Decomposition and the Corner Recursion</a>, for the lines that the idempotents produce.</li>
 <li><a href="the-frame-the-simple-nilpotents-and-the-gauge-mnc.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the vectors inside the lines and the gauge.</li>
-<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the biquaternion case $n=2$ and the parameter $\lambda$.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the biquaternion case $n=2$ and the parameter $\lambda$.</li>
 <li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the algebra of this category.</li>
 <li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition</a>, for the sixteen corners of the frame.</li>
 <li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the frame of $M_4(\mathbb{C})$ and its three gauge parameters.</li>

@@ -71,7 +71,7 @@
         <h1 id="the-matrix-algebra-math0"><strong>The Matrix Algebra $M_5(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The algebra $M_5(\mathbb{C})$ is the algebra of complex $5\times5$ matrices with the ordinary product. It is the model on which every structure of this category is read: the root $H$, the Lagrange idempotents, the Peirce lines, the frame, the spin chain and the adjoint action are all structures on this one algebra. This article fixes the algebra itself: the matrix units and their product rule, the trace and the determinant, the centre, the simplicity, the real dimension $50$, the unit group $GL_5(\mathbb{C})$, the projective group $PGL_5(\mathbb{C})$ of complex dimension $24$, and the reading of the algebra as the complexification of the real Lie algebra $\mathfrak{u}(5)$.</p>
-<p>The article uses <strong>no form and no topology</strong>. The conjugate transpose appears only to exhibit the real form $\mathfrak{u}(5)$ and the Hermitian and skew-Hermitian parts; the positive definite trace form, the Frobenius norm and the unitary group as a metric object are <em>The Involution and the Hermitian Structure</em>. The determinant is used as a polynomial and as the criterion of invertibility, not as a volume. The root and the idempotents are later articles; the algebra is their common ground.</p>
+<p>The article uses <strong>no form and no topology</strong>. The conjugate transpose appears only to exhibit the real form $\mathfrak{u}(5)$ and the Hermitian and skew-Hermitian parts; the positive definite trace form, the Frobenius norm and the $*$-unitary group as a metric object are <em>The Involution and the Hermitian Structure</em>. The determinant is used as a polynomial and as the criterion of invertibility, not as a volume. The root and the idempotents are later articles; the algebra is their common ground.</p>
 <p>The article assumes the general theory of associative algebras of <em>Associative Algebras</em> and <em>Matrix Algebras</em>: the matrix units, the trace, the determinant, the centre and the two-sided ideals. It proves the facts in the case $n=5$ so that the rest of the category can cite them without returning to the general theory.</p>
 <h2 id="the-algebra-and-the-matrix-units">The Algebra and the Matrix Units</h2>
 <h3 id="the-definition">The Definition</h3>
@@ -255,13 +255,13 @@ $$</p>
 A=\underbrace{\tfrac12(A-A^*)}_{\text{skew-Hermitian}}+\underbrace{\tfrac12(A+A^*)}_{\text{Hermitian}} .
 $$</p>
 <p><strong>Proof.</strong> The two projections are idempotent and sum to the identity; the first is skew-Hermitian, the second Hermitian, and the intersection is zero because a matrix that is both Hermitian and skew-Hermitian is zero. The real dimension of $\mathfrak{u}(5)$ is $25$: a skew-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal ($10$ complex $=20$ real), total $5+20=25$; the Hermitian part has real diagonal entries (five) and arbitrary complex entries above the diagonal (twenty), also $25$.</p>
-<p><strong>Corollary.</strong> The <strong>special unitary</strong> algebra</p>
+<p><strong>Corollary.</strong> The <strong>special $*$-unitary</strong> algebra</p>
 <p>$$
 \mathfrak{su}(5)=\{A\in\mathfrak{u}(5):\operatorname{tr}A=0\}
 $$</p>
 <p>has real dimension $24$. The trace is a real linear functional on $\mathfrak{u}(5)$ (the diagonal entries are purely imaginary, and the trace is their sum), and its kernel has dimension $24$.</p>
 <p><strong>Proof.</strong> The trace of a skew-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}A=0$ is one real linear equation on the $25$-dimensional space.</p>
-<h3 id="the-complexification-of-math231">The Complexification of $\mathfrak{u}(5)$</h3>
+<h3 id="the-complexification-of-math233">The Complexification of $\mathfrak{u}(5)$</h3>
 <p><strong>Theorem.</strong> The complexification of the real Lie algebra $\mathfrak{u}(5)$ is the complex Lie algebra $\mathfrak{gl}_5(\mathbb{C})=M_5(\mathbb{C})$:</p>
 <p>$$
 \mathbb{C}\otimes_{\mathbb{R}}\mathfrak{u}(5)\cong\mathfrak{gl}_5(\mathbb{C}),\qquad
@@ -395,11 +395,11 @@ $$</p>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the matrix units, the simplicity of a full matrix algebra and the Wedderburn theorem.</li>
 <li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, second edition, 2001), for the centre, the two-sided ideals and the central simple algebras.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the trace, the determinant, the matrix units and the elementary matrices.</li>
-<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for $GL_5$, $SL_5$, $PGL_5$, the unitary algebra $\mathfrak{u}(5)$ and the complexification of a real Lie algebra.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for $GL_5$, $SL_5$, $PGL_5$, the $*$-unitary algebra $\mathfrak{u}(5)$ and the complexification of a real Lie algebra.</li>
 <li><a href="matrix-algebras.html">Matrix Algebras</a>, for the general theory of $M_n(R)$.</li>
 <li><a href="central-simple-algebras-and-the-brauer-group.html">Central Simple Algebras and the Brauer Group</a>, for the classification and the triviality of the Brauer group of $\mathbb{C}$.</li>
 <li><a href="the-element-the-coordinates-and-the-trace-of-m5c.html">The Element, the Coordinates and the Trace</a>, for the coordinates, the trace pairing and the Jordan decomposition.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the conjugate transpose, the positive definite trace form and the unitary group.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the conjugate transpose, the positive definite trace form and the $*$-unitary group.</li>
 <li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m5c.html">Roots of Unity and the Lagrange Idempotents</a>, for the first structure built on the algebra.</li>
 <li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the matrix units and the diagonal gauge.</li>
 </ul>

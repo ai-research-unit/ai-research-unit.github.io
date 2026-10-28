@@ -202,23 +202,23 @@ $$</p>
 <p>$$
 T_P\mathcal{I}_p=\{X\in M_4:XP+PX=X\}.
 $$</p>
-<p><strong>The Peirce form.</strong> In the decomposition $\mathbb{C}^4=U\oplus W$, write $X$ in blocks:</p>
+<p><strong>The Peirce form.</strong> In the decomposition $\mathbb{C}^4=U\oplus W$, write</p>
 <p>$$
-X=\begin{pmatrix}X_{11}&X_{12}\\X_{21}&X_{22}\end{pmatrix}.
-$$</p>
-<p>The condition $XP+PX=X$ gives</p>
-<p>$$
-X_{11}=2X_{11}\ \Rightarrow\ X_{11}=0,\qquad
-X_{22}=0\ \Rightarrow\ X_{22}=0,
-$$</p>
-<p>while $X_{12}$ and $X_{21}$ are free. Hence</p>
-<p>$$
-T_P\mathcal{I}_p=\left\{\begin{pmatrix}0&X_{12}\\X_{21}&0\end{pmatrix}\right\},
+P=\begin{pmatrix}I_p&B\\0&0\end{pmatrix},
 \qquad
-\dim=2p(4-p),
+X=\begin{pmatrix}X_{11}&X_{12}\\X_{21}&X_{22}\end{pmatrix},
+\qquad B:W\to U .
 $$</p>
-<p>the off-diagonal blocks of the Peirce decomposition. The diagonal blocks are the normal directions; the off-diagonal blocks are the tangent directions.</p>
-<p><strong>Smoothness.</strong> The idempotent variety is a homogeneous space, so it is smooth, and the tangent space has the expected dimension. The rank stratification is the orbit stratification; the closure of the rank-$p$ stratum contains the lower ranks.</p>
+<p>The condition $XP+PX=X$ is equivalent to</p>
+<p>$$
+X_{11}=-BX_{21},\qquad X_{22}=X_{21}B,
+$$</p>
+<p>with $X_{12}:W\to U$ and $X_{21}:U\to W$ free. Hence</p>
+<p>$$
+\dim T_P\mathcal{I}_p=p(4-p)+p(4-p)=2p(4-p).
+$$</p>
+<p>Equivalently, in the Peirce decomposition of $P$, the tangent space is $PMQ\oplus QMP$, the two off-diagonal corners. The diagonal Peirce corners $PMP\oplus QMQ$ are the normal directions for the trace form. At the orthogonal projection $B=0$ the coordinate blocks and the Peirce corners coincide, and the tangent space is the off-diagonal block space.</p>
+<p><strong>Smoothness.</strong> Each rank-$p$ stratum is a homogeneous space $PGL_4/P$, so it is smooth, and the tangent space has the expected dimension. The rank is locally constant on the idempotent variety, because $\operatorname{rank}P=\operatorname{tr}P$ is continuous and integer-valued; the strata are therefore open and closed, and there is no closure order between different ranks.</p>
 <h2 id="the-rank-stratification">The Rank Stratification</h2>
 <p><strong>The strata.</strong> The idempotents split by rank:</p>
 <p>$$
@@ -227,12 +227,12 @@ $$</p>
 \mathcal{I}_p=\{P:P^2=P,\ \operatorname{rank}P=p\}.
 $$</p>
 <p>The strata are the orbits of $PGL_4$; the rank is the only invariant, because every rank-$p$ idempotent is conjugate to $\operatorname{diag}(I_p,0)$.</p>
-<p><strong>The closures.</strong> The closure of $\mathcal{I}_p$ is the union of the strata of rank at most $p$:</p>
+<p><strong>The strata are clopen.</strong> The rank of an idempotent is its trace, $\operatorname{rank}P=\operatorname{tr}P$, which is continuous and integer-valued on the idempotent variety. Hence each $\mathcal{I}_p$ is both open and closed, and the closure of $\mathcal{I}_p$ is $\mathcal{I}_p$ itself:</p>
 <p>$$
-\overline{\mathcal{I}_p}=\bigsqcup_{q=0}^{p}\mathcal{I}_q.
+\overline{\mathcal{I}_p}=\mathcal{I}_p.
 $$</p>
-<p>The zero idempotent is the unique closed orbit, and the identity is the unique open orbit. The rank-one closure is $\mathcal{I}_0\sqcup\mathcal{I}_1$; the rank-three closure is everything except the identity.</p>
-<p><strong>The rank-two case.</strong> The rank-two idempotents have dimension $8$; the orthogonal ones form $\operatorname{Gr}(2,4)$ of dimension $4$. The two chiral idempotents $P_+$ and $P_-$ of <em>The Two Chiralities</em> are two particular orthogonal rank-two idempotents; they are points of the Grassmannian, not components. The general rank-two idempotent has a nonzero mass block; the Peirce table is <em>The Rank-Two Split</em>.</p>
+<p>The variety is the disjoint union of the five connected components $\mathcal{I}_0,\dots,\mathcal{I}_4$. The zero idempotent and the identity are isolated points; the rank-one and rank-three strata are six-dimensional; the rank-two stratum is eight-dimensional. There is no closure order between different ranks: a limit of rank-$p$ idempotents has rank $p$.</p>
+<p><strong>The rank-two case.</strong> The rank-two idempotents have dimension $8$; the orthogonal ones form $\operatorname{Gr}(2,4)$ of dimension $4$. In the standard frame the two chiral idempotents $P_+$ and $P_-$ of <em>The Two Chiralities</em> are two particular orthogonal rank-two idempotents, points of the Grassmannian, not components. For a general root they are non-Hermitian projections and correspond to transverse pairs of planes, not to points of $\operatorname{Gr}(2,4)$. The general rank-two idempotent has a nonzero mass block; the Peirce table is <em>The Rank-Two Split</em>.</p>
 <p><strong>The decomposition.</strong> The rank-$p$ idempotent gives the Peirce corners</p>
 <p>$$
 p^2+p(4-p)+(4-p)p+(4-p)^2=16,
@@ -286,12 +286,12 @@ $$</p>
 p(4-p)+(q-p)(4-q).
 $$</p>
 <p>The full flag maps to it with fibres the product of the full flag varieties of the subquotients $U$, $V/U$ and $\mathbb{C}^4/V$. The standard incidence correspondences are the projections to the two Grassmannians; the fibres are Grassmannians of the subquotients. These are the nested-flag analogues of the transverse-pair bundle of the idempotents.</p>
-<p><strong>The gauge as the fibre of the frame bundle.</strong> The frame bundle of $\mathbb{C}^4$ is the principal $GL_4$-bundle</p>
+<p><strong>The gauge as the fibre of the frame bundle.</strong> The projection</p>
 <p>$$
 GL_4\longrightarrow\mathbb{P}^3,\qquad
 S\longmapsto S e_1,
 $$</p>
-<p>with fibre the parabolic stabiliser of the line. The maximal torus $T\cong(\mathbb{C}^\times)^3$ of $PGL_4$ is the gauge torus; the frame bundle over the root orbit,</p>
+<p>is a principal bundle with fibre the parabolic stabiliser of the line. The maximal torus $T\cong(\mathbb{C}^\times)^3$ of $PGL_4$ is the gauge torus; the frame bundle over the root orbit,</p>
 <p>$$
 PGL_4\longrightarrow PGL_4/T,
 $$</p>
@@ -328,7 +328,7 @@ $$</p>
 \qquad
 \dim_\mathbb{C}\mathcal{I}_p=2p(4-p).
 $$</p>
-<p>For $p=1$ this is an affine bundle of rank $3$ over $\mathbb{P}^3$, of dimension $6$; for $p=2$ it is an affine bundle of rank $4$ over $\operatorname{Gr}(2,4)$, of dimension $8$; for $p=3$ it is the dual affine bundle over $\mathbb{P}^3$, of dimension $6$. The fibre over a $p$-plane is the affine space of complements, of dimension $p(4-p)$, contractible; the orthogonal projections form the zero section $\operatorname{Gr}(p,4)$, and $\mathcal{I}_p$ is homotopy equivalent to $\operatorname{Gr}(p,4)$. The tangent space at $P$ is the off-diagonal Peirce block $\{X:XP+PX=X\}$, of dimension $2p(4-p)$; the rank stratification has closures $\overline{\mathcal{I}_p}=\bigsqcup_{q\le p}\mathcal{I}_q$. The full flag variety $GL_4/B$ has dimension $6$ and is simply connected; the idempotents are transverse pairs of a $p$-plane and a $(4-p)$-plane, not nested flags. The gauge torus $T\cong(\mathbb{C}^\times)^3$ is the fibre of the frame bundle over the root orbit, and $15=12+3$.</p>
+<p>For $p=1$ this is an affine bundle of rank $3$ over $\mathbb{P}^3$, of dimension $6$; for $p=2$ it is an affine bundle of rank $4$ over $\operatorname{Gr}(2,4)$, of dimension $8$; for $p=3$ it is the dual affine bundle over $\mathbb{P}^3$, of dimension $6$. The fibre over a $p$-plane is the affine space of complements, of dimension $p(4-p)$, contractible; the orthogonal projections form the zero section $\operatorname{Gr}(p,4)$, and $\mathcal{I}_p$ is homotopy equivalent to $\operatorname{Gr}(p,4)$. The tangent space at $P$ is the sum of the two off-diagonal Peirce corners $\{X:XP+PX=X\}$, of dimension $2p(4-p)$; the rank strata are clopen components, with $\overline{\mathcal{I}_p}=\mathcal{I}_p$ because $\operatorname{rank}P=\operatorname{tr}P$ is locally constant. The full flag variety $GL_4/B$ has dimension $6$ and is simply connected; the idempotents are transverse pairs of a $p$-plane and a $(4-p)$-plane, not nested flags. The gauge torus $T\cong(\mathbb{C}^\times)^3$ is the fibre of the frame bundle over the root orbit, and $15=12+3$.</p>
 <p>$$
 \boxed{\ \dim_\mathbb{C}\mathcal{I}_p=2p(4-p),\quad \mathcal{I}_1\to\mathbb{P}^3\ \text{affine rank }3,\quad \mathcal{I}_p\simeq\operatorname{Gr}(p,4),\quad \dim_\mathbb{C}\mathcal{F}=6. }
 $$</p>
@@ -389,7 +389,7 @@ $$</p>
 </tr>
 <tr>
 <td>$P(GL_p\times GL_{4-p})$</td>
-<td>the projective block-diagonal stabiliser</td>
+<td>the projective parabolic stabiliser, with Levi $GL_p\times GL_{4-p}$</td>
 </tr>
 <tr>
 <td>$\operatorname{Gr}(p,4)$</td>

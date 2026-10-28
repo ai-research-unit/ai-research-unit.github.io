@@ -103,7 +103,7 @@ $$</p>
 <p>It satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}/r^2 = 1$, so it lies on the <strong>unit sphere</strong></p>
 <p>$$ \boxed{\; \mathrm{Sp}(1) = \{\,\tilde u\in\mathbb{H} : \langle\tilde u\rangle_{\natural} = 1\,\} = S^3 \;} .$$</p>
 <p>The sphere is a group under multiplication. If $\langle\tilde u_1\rangle_{\natural} = \langle\tilde u_2\rangle_{\natural} = 1$ then multiplicativity gives $\langle\tilde u_1\tilde u_2\rangle_{\natural}=1$, and the inverse of a unit is its conjugate, $\tilde u^{-1}=\tilde u^{\natural}$, because $\tilde u\tilde u^{\natural}=1$. The sphere is a closed and bounded subset of $\mathbb{H}\cong\mathbb{R}^4$, hence compact, and it is connected. It is not abelian: $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. The complex unit circle is abelian, and this is the first structural difference between the two cases.</p>
-<p>The phrase <strong>unit factor</strong> names the norm-one elements. It is not the <strong>group of units</strong> $\mathbb{H}^{\times}$, which is the wider set of invertible elements; the two senses of the word <em>unit</em> are kept apart throughout, as in <em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>. In $\mathbb{H}$ every nonzero element is invertible, so $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, but the unit factor is the smaller set of norm-one elements.</p>
+<p>The phrase <strong>unit factor</strong> names the norm-one elements. It is not the <strong>group of units</strong> $\mathbb{H}^{\times}$, which is the wider set of invertible elements; the two senses of the word <em>unit</em> are kept apart throughout, as in <em>Conventions in Mathematics</em>, §<em>The $*$-Unitary Convention</em>. In $\mathbb{H}$ every nonzero element is invertible, so $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, but the unit factor is the smaller set of norm-one elements.</p>
 <h3 id="the-count-of-the-parameters">The Count of the Parameters</h3>
 <p>A quaternion carries four real parameters. The modulus carries one, the positive real $r$. The unit factor is constrained by the single real equation $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ on the four parameters of $\mathbb{H}$, so it retains three real degrees of freedom. The counts add:</p>
 <p>$$
@@ -246,7 +246,7 @@ $$</p>
 <p>$$
 \det\iota(\tilde q)=q_t^2+q_x^2+q_y^2+q_z^2=\langle\tilde q\rangle_{\natural},
 $$</p>
-<p>and the image of the unit sphere is the special unitary group,</p>
+<p>and the image of the unit sphere is the special $*$-unitary group,</p>
 <p>$$
 \iota\bigl(\mathrm{Sp}(1)\bigr)=SU(2).
 $$</p>
@@ -265,7 +265,7 @@ $$</p>
 <p>$$
 B^{\dagger}B = \iota(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}I = r^2 I .
 $$</p>
-<p>The matrix $B$ is therefore conformal: its columns are orthogonal and of equal length $r$. The general polar decomposition of an invertible matrix is $B=PU$, with $P=(BB^{\dagger})^{1/2}$ positive definite Hermitian and $U$ unitary. Here $P=rI$ and $U=M_{\tilde u}\in SU(2)$, so the positive factor is a scalar and the unitary factor is special. The scalar factor is forced because the only positive definite Hermitian matrices in the image of $\mathbb{H}$ are the positive real multiples of the identity.</p>
+<p>The matrix $B$ is therefore conformal: its columns are orthogonal and of equal length $r$. The general polar decomposition of an invertible matrix is $B=PU$, with $P=(BB^{\dagger})^{1/2}$ positive definite Hermitian and $U$ $*$-unitary. Here $P=rI$ and $U=M_{\tilde u}\in SU(2)$, so the positive factor is a scalar and the $*$-unitary factor is special. The scalar factor is forced because the only positive definite Hermitian matrices in the image of $\mathbb{H}$ are the positive real multiples of the identity.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -296,7 +296,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>In the split cases the matrix of a unit is not orthogonal: the form it preserves is indefinite, so the matrix is symmetric or hyperbolic rather than unitary. The contrast is a property of the norm and not of the matrix representation.</p>
+<p>In the split cases the matrix of a unit is not orthogonal: the form it preserves is indefinite, so the matrix is symmetric or hyperbolic rather than $*$-unitary. The contrast is a property of the norm and not of the matrix representation.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <h3 id="a-generic-quaternion">A Generic Quaternion</h3>
 <p>Take</p>
@@ -437,7 +437,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Every nonzero quaternion has exactly one modulus–unit polar decomposition $\tilde q=r\tilde u_{\mathrm r}$, with modulus $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$ and unit factor $\tilde u_{\mathrm r}=\tilde q/r$ on the unit sphere. The pair is unique with no sign or branch choice. The modulus is a positive central scale, and the unit factor is a point of $S^3=\mathrm{Sp}(1)$, a compact, connected, simply connected, non-abelian group.</p>
 <p>The group of units splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$, the sphere being the maximal compact subgroup and a deformation retract of the whole group. The scalar line is Hermitian and carries the modulus; the pure subspace is anti-Hermitian and is the axis of the rotor. The sphere is simple modulo its centre $\{\pm1\}$, with quotient $SO(3)$, so there is no second continuous factor. The norm is definite, so there is no boundary: the origin is the only excluded element.</p>
-<p>In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}=rM_{\tilde u}$ of the conformal matrix, with positive factor $rI$ and special unitary factor $M_{\tilde u}\in SU(2)$.</p>
+<p>In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}=rM_{\tilde u}$ of the conformal matrix, with positive factor $rI$ and special $*$-unitary factor $M_{\tilde u}\in SU(2)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -511,7 +511,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 1985), for the polar decomposition of an invertible matrix and the special unitary group.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 1985), for the polar decomposition of an invertible matrix and the special $*$-unitary group.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd edition 2001), for the quaternion algebra, the unit sphere and the exponential.</li>
 <li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for $SU(2)$, the unit quaternions and the covering of the rotation group.</li>
 <li>Michael Artin, <em>Algebra</em> (Prentice Hall, 2nd edition 2011), for the group of units, direct products and the maximal compact subgroup.</li>

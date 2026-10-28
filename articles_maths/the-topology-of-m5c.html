@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Topology of $M_5(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-topology-of-math0"><strong>The Topology of $M_5(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra $M_5(\mathbb{C})$ is a real vector space of dimension $50$, hence contractible. The interesting topology is in the complement of the singular set:</p>
+<p>$$
+M_5(\mathbb{C})\cong\mathbb{R}^{50},\qquad
+GL_5(\mathbb{C})=M_5\setminus\{\det=0\}.
+$$</p>
+<p>The <strong>singular set</strong> is the determinant hypersurface, a complex hypersurface of real codimension $2$; the complement $GL_5$ is connected but not simply connected. The polar decomposition gives the homotopy equivalence</p>
+<p>$$
+GL_5(\mathbb{C})\simeq U(5),
+$$</p>
+<p>and the homotopy groups are</p>
+<p>$$
+\pi_1(GL_5)=\mathbb{Z},\qquad \pi_2(GL_5)=0 .
+$$</p>
+<p>The determinant $GL_5\to\mathbb{C}^\times$ induces an isomorphism $\pi_1(GL_5)\cong\pi_1(\mathbb{C}^\times)=\mathbb{Z}$; the second homotopy group vanishes because $U(5)\cong SU(5)\times S^1$ and $SU(5)$ is simply connected with $\pi_2=0$.</p>
+<p>The <strong>idempotents of rank $p$</strong> form an affine bundle over the Grassmannian $\operatorname{Gr}(p,5)$ with contractible fibre, so they are homotopy equivalent to $\operatorname{Gr}(p,5)$. The <strong>full flag variety</strong> $GL_5/B$ is simply connected, with the Bruhat decomposition into $5!=120$ even-dimensional cells. The <strong>determinant bundle</strong> is the dual of the top exterior power of the tautological subbundle over $\operatorname{Gr}(p,5)$; its first Chern class is the positive generator of $H^2(\operatorname{Gr}(p,5);\mathbb{Z})\cong\mathbb{Z}$ for $1\le p\le4$. Over $GL_5$ itself there is no nontrivial complex line bundle at all, because $H^2(GL_5;\mathbb{Z})=0$; the determinant is a nowhere-zero function, not a nontrivial bundle.</p>
+<p>The article proves the contractibility, the polar homotopy equivalence, the homotopy groups, the homotopy type of the idempotents, the simple connectivity of the flag variety, and the first Chern class of the determinant bundle over the Grassmannian. It assumes the polar decomposition, the geometry of the idempotents and the flag variety. It avoids the null cone: the positive-definite form has no null vectors, and the determinant hypersurface is not the null cone of a quadratic form.</p>
+<h2 id="the-contractibility-of-math23">The Contractibility of $M_5$</h2>
+<h3 id="the-vector-space">The Vector Space</h3>
+<p><strong>Theorem.</strong> $M_5(\mathbb{C})\cong\mathbb{R}^{50}$ is contractible.</p>
+<p><strong>Proof.</strong> The linear homotopy $H_t(A)=(1-t)A$ contracts $M_5$ to the zero matrix: $H_0(A)=A$, $H_1(A)=0$, and $H_t$ is continuous. The identification with $\mathbb{R}^{50}$ is the real and imaginary parts of the $25$ entries.</p>
+<p><strong>Corollary.</strong> Every continuous map from $M_5$ to a path-connected space is null-homotopic; the homotopy groups of $M_5$ vanish.</p>
+<p><strong>Proof.</strong> A contractible space has the homotopy type of a point; all homotopy groups vanish; every map to a path-connected space is null-homotopic.</p>
+<p><strong>Corollary.</strong> $M_5$ is not compact; its one-point compactification is the sphere $S^{50}$.</p>
+<p><strong>Proof.</strong> $\mathbb{R}^{50}$ is not compact; the Alexandroff compactification of $\mathbb{R}^{n}$ is $S^n$.</p>
+<h3 id="the-one-point-compactification">The One-Point Compactification</h3>
+<p><strong>Proposition.</strong> The one-point compactification $M_5\cup\{\infty\}$ is homeomorphic to $S^{50}$; the complement of a large closed ball is a neighborhood of $\infty$.</p>
+<p><strong>Proof.</strong> The one-point compactification of $\mathbb{R}^{50}$ is $S^{50}$; the topology at infinity is the cofinite topology of the complement of compact sets.</p>
+<p><strong>Corollary.</strong> The singular set $\det=0$ is closed and noncompact; its one-point compactification is a closed subset of $S^{50}$ containing $\infty$.</p>
+<p><strong>Proof.</strong> The determinant is continuous; its zero set is closed; it is unbounded because it is a cone; the one-point compactification adds $\infty$.</p>
+<h3 id="the-complement-math48">The Complement $GL_5$</h3>
+<p><strong>Theorem.</strong> $GL_5(\mathbb{C})=\{\det\ne0\}$ is open, connected and not simply connected.</p>
+<p><strong>Proof.</strong> The determinant is continuous, so the complement of $\det=0$ is open. The determinant map $GL_5\to\mathbb{C}^\times$ is surjective; the fibre $SL_5$ is connected, because it is generated by the elementary matrices $I+tE_{ij}$ ($i\ne j$), each of which lies in a connected one-parameter subgroup; the base $\mathbb{C}^\times$ is connected; hence $GL_5$ is connected. The fundamental group is computed below: $\pi_1(GL_5)=\mathbb{Z}$, so $GL_5$ is not simply connected.</p>
+<p><strong>Corollary.</strong> The singular set $\det=0$ is connected and has real codimension $2$.</p>
+<p><strong>Proof.</strong> The rank-$4$ matrices form the smooth locus of the determinant hypersurface; they are a single orbit under $GL_5\times GL_5$ (the equivalence of rank-$4$ matrices), hence connected; the hypersurface is their closure, hence connected. The determinant is a holomorphic function with nonzero derivative at the rank-$4$ points; its zero set has complex codimension $1$, real codimension $2$.</p>
+<p><strong>Corollary.</strong> The singular set is not the null cone of a quadratic form; it is the determinantal hypersurface, a complex cone.</p>
+<p><strong>Proof.</strong> The determinant is homogeneous of degree $5$, so its zero set is a cone. The determinant is an irreducible polynomial of degree $5$; a quadratic form has degree $2$, and its zero set is a quadric (or a pair of hyperplanes). If the two zero sets coincided, the irreducible determinant would divide the quadratic form, which is impossible by degree. A positive-definite form has no nonzero null vectors, so there is no null cone to compare with.</p>
+<h2 id="the-homotopy-type-of-math70">The Homotopy Type of $GL_5$</h2>
+<h3 id="the-polar-deformation">The Polar Deformation</h3>
+<p><strong>Theorem.</strong> $GL_5(\mathbb{C})$ deformation retracts onto $U(5)$; hence $GL_5\simeq U(5)$.</p>
+<p><strong>Proof.</strong> The polar decomposition $A=U|A|$ with $U$ $*$-unitary and $|A|$ positive definite gives a continuous map $r(A)=A|A|^{-1}=U$ from $GL_5$ to $U(5)$. The homotopy</p>
+<p>$$
+H_t(A)=U\left((1-t)|A|+tI\right),\qquad 0\le t\le1,
+$$</p>
+<p>starts at $H_0(A)=U|A|=A$, ends at $H_1(A)=U$, and stays in $GL_5$ because $(1-t)|A|+tI$ is positive definite for $t>0$ and $|A|$ is positive definite at $t=0$. On $U(5)$, $|U|=I$ and $H_t(U)=U$. Hence $r$ is a deformation retraction.</p>
+<p><strong>Corollary.</strong> $GL_5$ and $U(5)$ have the same homotopy groups, homology and cohomology.</p>
+<p><strong>Proof.</strong> A deformation retraction is a homotopy equivalence.</p>
+<p><strong>Corollary.</strong> $GL_5$ is homotopy equivalent to the compact group $U(5)$; the determinant map corresponds to the determinant $U(5)\to S^1$.</p>
+<p><strong>Proof.</strong> The determinant of $A=U|A|$ is $\det U\cdot\det|A|$ with $\det|A|>0$; the homotopy retraction sends $\det A$ to $\det U$, which lies on the unit circle.</p>
+<h3 id="the-math103-unitary-group">The $*$-Unitary Group</h3>
+<p><strong>Theorem.</strong> $U(5)$ is connected, compact, and homeomorphic to $SU(5)\times S^1$.</p>
+<p><strong>Proof.</strong> The $*$-unitary group is the zero set of $U^*U=I$, closed and bounded in $M_5$, hence compact; it is connected because every $*$-unitary is $e^{iH}$ with $H$ Hermitian, and the Hermitian matrices are connected. The map</p>
+<p>$$
+U(5)\longrightarrow SU(5)\times S^1,\qquad U\longmapsto\left(U s(\det U)^{-1},\ \det U\right),
+$$</p>
+<p>with $s(z)=\operatorname{diag}(z,1,1,1,1)$, is a homeomorphism: the section $s(z)$ has determinant $z$, the product $U s(\det U)^{-1}$ lies in $SU(5)$, and the inverse is $(V,z)\mapsto Vs(z)$.</p>
+<p><strong>Corollary.</strong> $\pi_1(U(5))=\pi_1(SU(5))\oplus\pi_1(S^1)=\mathbb{Z}$, and $\pi_2(U(5))=\pi_2(SU(5))\oplus\pi_2(S^1)=0$.</p>
+<p><strong>Proof.</strong> The product decomposition; $SU(5)$ is simply connected; $\pi_2(SU(5))=0$; the circle has $\pi_1=\mathbb{Z}$ and $\pi_2=0$.</p>
+<h3 id="the-homotopy-groups">The Homotopy Groups</h3>
+<p><strong>Theorem.</strong> $SU(5)$ is simply connected and $\pi_2(SU(5))=0$. Hence</p>
+<p>$$
+\pi_1(GL_5)=\mathbb{Z},\qquad \pi_2(GL_5)=0 .
+$$</p>
+<p><strong>Proof.</strong> The group $SU(n)$ acts transitively on $S^{2n-1}$ with stabilizer $SU(n-1)$; the long exact sequence of the fibration</p>
+<p>$$
+SU(n-1)\longrightarrow SU(n)\longrightarrow S^{2n-1}
+$$</p>
+<p>gives $\pi_1(SU(n-1))\to\pi_1(SU(n))\to\pi_1(S^{2n-1})=0$ and $\pi_2(SU(n-1))\to\pi_2(SU(n))\to\pi_2(S^{2n-1})=0$. Induction from $SU(2)\cong S^3$ (simply connected, $\pi_2=0$) gives the result for $SU(5)$. The homotopy equivalence $GL_5\simeq U(5)\cong SU(5)\times S^1$ gives the displayed groups.</p>
+<p><strong>Corollary.</strong> The determinant $GL_5\to\mathbb{C}^\times$ induces an isomorphism $\pi_1(GL_5)\to\pi_1(\mathbb{C}^\times)=\mathbb{Z}$.</p>
+<p><strong>Proof.</strong> The fibration $SL_5\to GL_5\xrightarrow{\det}\mathbb{C}^\times$ has fibre $SL_5$, which is simply connected: the polar decomposition restricts to a deformation retraction $SL_5\to SU(5)$. The long exact sequence gives the isomorphism.</p>
+<p><strong>Corollary.</strong> The universal cover of $GL_5$ is $\mathbb{C}\times SL_5$; the fundamental group is generated by the loop $t\mapsto\operatorname{diag}(e^{2\pi it},1,1,1,1)$, whose determinant winds once.</p>
+<p><strong>Proof.</strong> The map $A\mapsto(A\operatorname{diag}((\det A)^{-1},1,1,1,1),\det A)$ is a diffeomorphism $GL_5\to SL_5\times\mathbb{C}^\times$, with inverse $(B,z)\mapsto B\operatorname{diag}(z,1,1,1,1)$; hence $GL_5$ has the universal cover $SL_5\times\mathbb{C}$. The group $SL_5$ is simply connected, and $\mathbb{C}$ is the universal cover of $\mathbb{C}^\times$ via the exponential. The loop $\operatorname{diag}(e^{2\pi it},1,1,1,1)$ has determinant $e^{2\pi it}$, which winds once around $\mathbb{C}^\times$; it generates $\pi_1$.</p>
+<h2 id="the-singular-set">The Singular Set</h2>
+<h3 id="the-determinant-hypersurface">The Determinant Hypersurface</h3>
+<p><strong>Theorem.</strong> The singular set $\Sigma=\{\det=0\}$ is a complex hypersurface of real codimension $2$. Its smooth locus is the set of rank-$4$ matrices; its singular locus is the set of matrices of rank at most $3$.</p>
+<p><strong>Proof.</strong> The determinant is holomorphic; at a rank-$4$ matrix, the adjugate is nonzero, so the derivative $D\det_A(H)=\operatorname{tr}(\operatorname{adj}(A)H)$ is nonzero; the implicit function theorem gives a smooth hypersurface of complex dimension $24$, real codimension $2$. At rank at most $3$, the adjugate is zero and the derivative vanishes; the hypersurface is singular there.</p>
+<p><strong>Corollary.</strong> The singular set is connected and path-connected; its smooth locus is the rank-$4$ stratum, a single $GL_5\times GL_5$-orbit.</p>
+<p><strong>Proof.</strong> The rank-$4$ matrices are the orbit of $\operatorname{diag}(1,1,1,1,0)$ under the equivalence $A\mapsto gAh$; the group $GL_5\times GL_5$ is connected; the orbit is connected. The hypersurface is the closure of the orbit, hence connected.</p>
+<p><strong>Corollary.</strong> The complement $GL_5$ is connected; the singular set is connected; the complement is not simply connected.</p>
+<p><strong>Proof.</strong> The complement of a complex hypersurface in $\mathbb{C}^{25}$ is connected; the determinant map gives the nontrivial fundamental group.</p>
+<h3 id="the-rank-stratification">The Rank Stratification</h3>
+<p><strong>Proposition.</strong> The rank-$r$ matrices form a smooth submanifold of $M_5$ of complex dimension $10r-r^2$, for $r=0,\dots,5$.</p>
+<p><strong>Proof.</strong> The rank-$r$ matrices are the orbit of $\operatorname{diag}(I_r,0)$ under the equivalence $A\mapsto gAh^{-1}$ with $g,h\in GL_5$. The stabilizer consists of the pairs</p>
+<p>$$
+g=\begin{pmatrix}P^{-1}&B\\0&D\end{pmatrix},\qquad
+h^{-1}=\begin{pmatrix}P&0\\R&S\end{pmatrix},
+$$</p>
+<p>with $P\in GL_r$, $D,S\in GL_{5-r}$, $B$ of size $r\times(5-r)$ and $R$ of size $(5-r)\times r$; its dimension is $r^2+2r(5-r)+2(5-r)^2$. The orbit dimension is $50$ minus that, which simplifies to $10r-r^2$. Equivalently, a rank-$r$ matrix is $UV^*$ with $U,V$ of size $5\times r$ of rank $r$, giving $5r+5r-r^2=10r-r^2$ parameters.</p>
+<p><strong>Corollary.</strong> The dimensions are $r=4$: $24$ (the smooth locus of the determinant hypersurface); $r=3$: $21$ (the singular locus); $r=2$: $16$; $r=1$: $9$; $r=0$: $0$.</p>
+<p><strong>Proof.</strong> Evaluate $10r-r^2$.</p>
+<p><strong>Corollary.</strong> The singular locus of the determinant hypersurface is the union of the rank-$r$ strata for $r\le3$; it has dimension $21$.</p>
+<p><strong>Proof.</strong> The derivative of the determinant vanishes exactly when the adjugate vanishes, i.e., at rank at most $3$; the largest of these strata is the rank-$3$ stratum, of dimension $21$.</p>
+<h3 id="the-complement">The Complement</h3>
+<p><strong>Theorem.</strong> $GL_5$ is connected; its fundamental group is $\mathbb{Z}$; it is homotopy equivalent to $U(5)$.</p>
+<p><strong>Proof.</strong> The polar decomposition; the determinant; the homotopy groups above.</p>
+<p><strong>Corollary.</strong> The singular set is connected; the complement $GL_5$ is connected but not simply connected; the pair $(M_5,GL_5)$ has the topology of a complex hypersurface and its complement.</p>
+<p><strong>Proof.</strong> The rank-$4$ stratum is connected; the complement of a complex hypersurface in $\mathbb{C}^{n}$ is connected; the determinant gives the nontrivial loop.</p>
+<h2 id="the-idempotents-and-the-grassmannians">The Idempotents and the Grassmannians</h2>
+<h3 id="the-affine-bundle">The Affine Bundle</h3>
+<p><strong>Theorem.</strong> For $p=0,\dots,5$, the idempotents of rank $p$ form an affine bundle over $\operatorname{Gr}(p,5)$ with contractible fibre; hence they are homotopy equivalent to $\operatorname{Gr}(p,5)$.</p>
+<p><strong>Proof.</strong> The map $P\mapsto\operatorname{im}P$ is a fibre bundle with fibre the affine space of complements, which is contractible. The orthogonal projection $L\mapsto P_L$ is a continuous section, and the affine contraction of each fibre to $P_L$ gives a deformation retraction of the total space onto the image of the section; hence the total space is homotopy equivalent to the base.</p>
+<p><strong>Corollary.</strong> The rank-one idempotents are homotopy equivalent to $\mathbb{P}^4$; the rank-two idempotents are homotopy equivalent to $\operatorname{Gr}(2,5)$; the rank-three to $\operatorname{Gr}(3,5)$; the rank-four to $\mathbb{P}^4$ (dual).</p>
+<p><strong>Proof.</strong> The dimensions and the homotopy equivalence; the Grassmannians $\operatorname{Gr}(1,5)=\mathbb{P}^4$ and $\operatorname{Gr}(4,5)\cong\mathbb{P}^4$.</p>
+<p><strong>Corollary.</strong> The idempotent variety has the homotopy type of the disjoint union of the Grassmannians $\operatorname{Gr}(p,5)$, for $p=0,\dots,5$; it is not connected.</p>
+<p><strong>Proof.</strong> The idempotent variety is the disjoint union of the rank strata; each stratum is homotopy equivalent to its Grassmannian; the disjoint union of the homotopy types.</p>
+<h3 id="the-homotopy-equivalence">The Homotopy Equivalence</h3>
+<p><strong>Proposition.</strong> The inclusion of the Grassmannian into the idempotents, $L\mapsto$ the orthogonal projection onto $L$, is a homotopy inverse to the image map; the two spaces are homotopy equivalent.</p>
+<p><strong>Proof.</strong> The orthogonal projection is a continuous section of the image map; the affine fibre contracts to the orthogonal projection; the section and the contraction give the homotopy equivalence.</p>
+<p><strong>Corollary.</strong> The fundamental group of the rank-$p$ idempotents is $\pi_1(\operatorname{Gr}(p,5))$; the Grassmannian is simply connected for all $p$.</p>
+<p><strong>Proof.</strong> The homotopy equivalence; the Grassmannian $\operatorname{Gr}(p,5)=U(5)/(U(p)\times U(5-p))$ is simply connected: the long exact sequence of the fibration gives $\pi_1(U(p)\times U(5-p))=\mathbb{Z}^2\to\pi_1(U(5))=\mathbb{Z}\to\pi_1(\operatorname{Gr})\to0$, and the map is surjective, so $\pi_1(\operatorname{Gr})=0$.</p>
+<h3 id="the-rank-strata">The Rank Strata</h3>
+<p><strong>Proposition.</strong> The rank strata are the connected components of the idempotent variety; each is homotopy equivalent to a Grassmannian; the rank is locally constant.</p>
+<p><strong>Proof.</strong> The rank is the trace, continuous and integer-valued; the strata are open and closed; each is connected; the homotopy equivalence.</p>
+<p><strong>Corollary.</strong> The idempotents of rank $p$ and the Grassmannian $\operatorname{Gr}(p,5)$ have the same homology and cohomology; the determinant bundle of the tautological subbundle is the pullback of the determinant bundle over the Grassmannian.</p>
+<p><strong>Proof.</strong> The homotopy equivalence; the tautological subbundle pulls back along the image map.</p>
+<h2 id="the-flag-variety">The Flag Variety</h2>
+<h3 id="the-bruhat-decomposition">The Bruhat Decomposition</h3>
+<p><strong>Theorem.</strong> The full flag variety has the Bruhat decomposition</p>
+<p>$$
+GL_5/B=\bigsqcup_{w\in S_5}BwB/B,
+$$</p>
+<p>with the Schubert cell $BwB/B\cong\mathbb{C}^{\ell(w)}$, of complex dimension the length $\ell(w)$. There are $5!=120$ cells, all of even complex dimension.</p>
+<p><strong>Proof.</strong> The Bruhat decomposition of $GL_5$ into the double cosets $BwB$; the quotient by $B$ gives the cells; the cell $BwB/B$ is isomorphic to $\mathbb{C}^{\ell(w)}$; the number of permutations is $120$.</p>
+<p><strong>Corollary.</strong> The flag variety is a CW complex with cells only in even real dimensions; its $1$-skeleton is a point; it is simply connected.</p>
+<p><strong>Proof.</strong> The cells have real dimension $2\ell(w)$, even; there are no $1$-cells; a CW complex with a single $0$-cell and no $1$-cells is simply connected.</p>
+<p><strong>Corollary.</strong> The Euler characteristic of the flag variety is $120$; the cohomology has rank $120$; the Schubert classes form a basis.</p>
+<p><strong>Proof.</strong> The Euler characteristic of a CW complex with $120$ even-dimensional cells is $120$; the Schubert classes are the cell closures, a basis of the cohomology.</p>
+<h3 id="simple-connectivity">Simple Connectivity</h3>
+<p><strong>Theorem.</strong> The full flag variety $GL_5/B$ is compact, projective and simply connected.</p>
+<p><strong>Proof.</strong> The flag variety is a closed subvariety of a product of Grassmannians, hence projective and compact. The Bruhat decomposition gives the CW structure with no $1$-cells, so it is simply connected.</p>
+<p><strong>Corollary.</strong> The partial flag varieties $GL_5/P$ are simply connected; they are the Grassmannians and the intermediate flag varieties.</p>
+<p><strong>Proof.</strong> The partial flag varieties have Bruhat decompositions with even-dimensional cells; the $1$-skeleton is a point; simply connected.</p>
+<p><strong>Corollary.</strong> The $*$-unitary group acts transitively on the flag variety with stabilizer the torus $T$; the flag variety is $U(5)/T$, of complex dimension $10$ (real dimension $20$).</p>
+<p><strong>Proof.</strong> The Iwasawa decomposition $GL_5=U(5)B$ gives $GL_5/B=U(5)/T$; the complex dimension is $\dim_{\mathbb{C}}GL_5-\dim_{\mathbb{C}}B=25-15=10$, and the real dimension is $20$.</p>
+<h2 id="the-determinant-bundle">The Determinant Bundle</h2>
+<h3 id="over-the-grassmannian">Over the Grassmannian</h3>
+<p><strong>Definition.</strong> Let $S\subset\mathbb{C}^5\times\operatorname{Gr}(p,5)$ be the tautological subbundle, whose fibre at $L$ is $L$. The <strong>determinant bundle</strong> is the dual of the top exterior power,</p>
+<p>$$
+\det S^*=\Lambda^pS^*,
+$$</p>
+<p>a line bundle over $\operatorname{Gr}(p,5)$.</p>
+<p><strong>Theorem.</strong> For $1\le p\le4$, the first Chern class $c_1(\det S^*)$ is the positive generator of $H^2(\operatorname{Gr}(p,5);\mathbb{Z})\cong\mathbb{Z}$. The determinant bundle is ample; its curvature form is the Fubini–Study form of the Plücker embedding.</p>
+<p><strong>Proof.</strong> The Grassmannian is the quotient $U(5)/(U(p)\times U(5-p))$; the determinant bundle is the line bundle associated with the character $\det^{-1}$ of $U(p)$ (the dual of the determinant of the tautological bundle); its first Chern class is the image of that character in $H^2$, the positive generator; the Plücker embedding has $\det S^*$ as its hyperplane bundle, hence ample; the curvature is the Fubini–Study form.</p>
+<p><strong>Corollary.</strong> For $p=1$, $\operatorname{Gr}(1,5)=\mathbb{P}^4$ and $\det S^*=\mathcal{O}(1)$; its first Chern class is the hyperplane class, the positive generator of $H^2(\mathbb{P}^4;\mathbb{Z})$.</p>
+<p><strong>Proof.</strong> The tautological line bundle over $\mathbb{P}^4$ is $\mathcal{O}(-1)$; its dual is $\mathcal{O}(1)$; the first Chern class is the hyperplane class.</p>
+<p><strong>Corollary.</strong> The first Chern class of the determinant bundle over the rank-$p$ idempotents is the pullback of the generator along the image map; the idempotents and the Grassmannian have the same first Chern class.</p>
+<p><strong>Proof.</strong> The homotopy equivalence and the pullback of the tautological bundle.</p>
+<h3 id="over-the-group">Over the Group</h3>
+<p><strong>Theorem.</strong> The group $H^2(GL_5(\mathbb{C});\mathbb{Z})$ vanishes; equivalently, every complex line bundle on $GL_5(\mathbb{C})$ is trivial. The determinant $\det:GL_5\to\mathbb{C}^\times$ is a nowhere-zero holomorphic function, hence a global frame of the trivial line bundle; it defines no nontrivial line bundle and no nonzero first Chern class.</p>
+<p><strong>Proof.</strong> $GL_5\simeq U(5)\cong SU(5)\times S^1$; by Künneth, $H^2(GL_5;\mathbb{Z})=H^2(SU(5);\mathbb{Z})\oplus H^2(S^1;\mathbb{Z})$. The cohomology of $SU(5)$ is the exterior algebra on generators of degrees $3,5,7,9$, so $H^2(SU(5))=0$; $H^2(S^1)=0$. Complex line bundles are classified by $H^2(\cdot;\mathbb{Z})$, so all are trivial. The determinant has no zeros on $GL_5$, so it is a global section of the trivial bundle.</p>
+<p><strong>Corollary.</strong> The determinant character is a nontrivial homomorphism and induces the isomorphism $\pi_1(GL_5)\cong\mathbb{Z}$, but this topology is detected by the map, not by a line bundle over the group. The nontrivial determinant bundle is over the Grassmannian.</p>
+<p><strong>Proof.</strong> A line bundle over $GL_5$ would give a class in $H^2(GL_5;\mathbb{Z})=0$; the determinant map gives instead the isomorphism on $\pi_1$.</p>
+<p><strong>Remark.</strong> The determinant character gives a nontrivial <strong>representation</strong> of $GL_5$ on $\mathbb{C}$ and a nontrivial equivariant structure on the trivial bundle; it does not give a nontrivial bundle over the group. The two notions must not be confused.</p>
+<h3 id="over-the-flag-variety">Over the Flag Variety</h3>
+<p><strong>Definition.</strong> The flag variety has the tautological line bundles $L_k=V_k/V_{k-1}$, for $k=1,\dots,5$; the <strong>determinant bundle of the tautological filtration</strong> is $\bigotimes_kL_k=\det V_5$, which is trivial because $V_5$ is the trivial rank-$5$ bundle.</p>
+<p><strong>Theorem.</strong> The determinant of the tautological filtration is trivial; its first Chern class is $0$. The determinant of the tangent bundle (the anticanonical bundle) has first Chern class $2\rho$, the sum of the positive roots; the canonical bundle has first Chern class $-2\rho$.</p>
+<p><strong>Proof.</strong> The top exterior power of the trivial rank-$5$ bundle is trivial; the tangent bundle of the flag variety has the decomposition $\bigoplus_{i<j}L_i^{-1}L_j$ (the sum of the positive root line bundles); the determinant is $\bigotimes_{i<j}L_i^{-1}L_j$, whose first Chern class is the sum of the positive roots, $2\rho$.</p>
+<p><strong>Corollary.</strong> The first Chern class of the anticanonical bundle is the sum of the positive roots; the anticanonical is ample, so the flag variety is Fano.</p>
+<p><strong>Proof.</strong> The anticanonical is the determinant of the tangent; the first Chern class is $2\rho$; the positivity of $2\rho$ gives the Fano property.</p>
+<p><strong>Remark.</strong> <strong>The determinant bundle depends on which determinant is meant.</strong> Over the Grassmannian, it is the dual of the top exterior power of the tautological subbundle, with first Chern class the positive generator. Over the group there is no nontrivial determinant bundle: $H^2(GL_5;\mathbb{Z})=0$ and the determinant is a nowhere-zero function. Over the flag variety, the determinant of the tautological filtration is trivial; the determinant of the tangent bundle is the anticanonical, with first Chern class $2\rho$. The three are different statements.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_5(\mathbb{C})\cong\mathbb{R}^{50}$ is contractible; the singular set $\det=0$ is a complex hypersurface of real codimension $2$; $GL_5$ is connected and homotopy equivalent to $U(5)$.</p>
+<p>$$
+\boxed{\ M_5\simeq*;\quad GL_5\simeq U(5);\quad \pi_1(GL_5)=\mathbb{Z},\ \pi_2(GL_5)=0;\quad \mathcal{I}_p\simeq\operatorname{Gr}(p,5);\quad GL_5/B\text{ simply connected}.\ }
+$$</p>
+<p>The idempotents of rank $p$ are an affine bundle over $\operatorname{Gr}(p,5)$ with contractible fibre, hence homotopy equivalent to the Grassmannian. The full flag variety is simply connected, with $120$ even-dimensional Bruhat cells and Euler characteristic $120$. The determinant bundle over the Grassmannian has first Chern class the positive generator; over the group there is no nontrivial complex line bundle at all, since $H^2(GL_5;\mathbb{Z})=0$; over the flag variety, the tautological determinant is trivial and the anticanonical has first Chern class $2\rho$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Topology</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_5$</td>
+<td>Contractible, $\mathbb{R}^{50}$</td>
+</tr>
+<tr>
+<td>$GL_5$</td>
+<td>$\simeq U(5)$, $\pi_1=\mathbb{Z}$, $\pi_2=0$</td>
+</tr>
+<tr>
+<td>Singular set</td>
+<td>Complex hypersurface, real codimension $2$</td>
+</tr>
+<tr>
+<td>Rank-$p$ idempotents</td>
+<td>$\simeq\operatorname{Gr}(p,5)$</td>
+</tr>
+<tr>
+<td>Flag variety</td>
+<td>Simply connected, Euler characteristic $120$</td>
+</tr>
+<tr>
+<td>$\det S^*$ over $\operatorname{Gr}(p,5)$</td>
+<td>$c_1$ positive generator</td>
+</tr>
+<tr>
+<td>Complex line bundles over $GL_5$</td>
+<td>All trivial, $H^2=0$</td>
+</tr>
+<tr>
+<td>Anticanonical over $GL_5/B$</td>
+<td>$c_1=2\rho$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma=\{\det=0\}$</td>
+<td>The singular set</td>
+</tr>
+<tr>
+<td>$GL_5$</td>
+<td>The invertible matrices</td>
+</tr>
+<tr>
+<td>$U(5)$</td>
+<td>The $*$-unitary group</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(p,5)$</td>
+<td>The Grassmannian</td>
+</tr>
+<tr>
+<td>$GL_5/B$</td>
+<td>The full flag variety</td>
+</tr>
+<tr>
+<td>$\det S^*$</td>
+<td>The dual determinant bundle of the tautological subbundle</td>
+</tr>
+<tr>
+<td>$2\rho$</td>
+<td>The sum of the positive roots</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge University Press, 2002), for the homotopy groups, the CW complexes and the Euler characteristic.</li>
+<li>Raoul Bott and Loring W. Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for the first Chern class, the determinant bundle and the Chern–Weil theory.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the Grassmannians, the flag varieties and the Schubert calculus.</li>
+<li>William Fulton, <em>Young Tableaux</em> (Cambridge University Press, 1997), for the Schubert classes and the cohomology of the Grassmannians.</li>
+<li><a href="the-polar-decomposition-of-m5c.html">The Polar Decomposition</a>, for the deformation retraction and the positive cone.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m5c.html">The Geometry of the Idempotents</a>, for the affine bundle over the Grassmannian.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the flag variety and the orbit dimensions.</li>
+<li><a href="the-partial-flags-of-m5c.html">The Partial Flags</a>, for the partial flag varieties and their dimensions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-informational-sector-states-observables-and-probability"><strong>The Informational Sector: States, Observables and Probability</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The informational sector is the Hermitian subspace $\mathbb{M}_+$. It is the fixed space of the Hermitian conjugation, the half of the algebra in which the scalar coefficient is real and the three vector coefficients are imaginary. Its mathematics is the mathematics of a two-state quantum system: the Hermitian elements are observables, the positive elements normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ are states, the Hermitian idempotents are pure states, the Hermitian form is the Born pairing, and the sandwich by a matrix-unitary element is the evolution.</p>
+<p>The informational sector is the Hermitian subspace $\mathbb{M}_+$. It is the fixed space of the Hermitian conjugation, the half of the algebra in which the scalar coefficient is real and the three vector coefficients are imaginary. Its mathematics is the mathematics of a two-state quantum system: the Hermitian elements are observables, the positive elements normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$ are states, the Hermitian idempotents are pure states, the Hermitian form is the Born pairing, and the sandwich by a matrix-$*$-unitary element is the evolution.</p>
 <p>That mathematics is established algebra. What is not established is whether the sector is a distinct sector of the physical world in the sense in which the material sector is spacetime. The article states the hypothesis, develops the algebraic interpretation in full, and marks the boundary at the point where the algebra ends and the physics begins.</p>
 <p>This article states each result in brief, links the mathematics article that owns it, and gives the physical interpretation with its boundary.</p>
 <p>The results used are these.</p>
@@ -107,8 +107,8 @@
 <td><a href="../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html">Two-Sided Operators on the General Plain Sesqualgebra</a></td>
 </tr>
 <tr>
-<td>The unitary slice and the matrix-unitary condition</td>
-<td><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">Unitary Operators of a Sesqualgebra</a></td>
+<td>The $*$-unitary slice and the matrix-$*$-unitary condition</td>
+<td><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">$*$-Unitary Operators of a Sesqualgebra</a></td>
 </tr>
 <tr>
 <td>The Jordan algebra of the symmetrised product</td>
@@ -136,7 +136,7 @@ $$</p>
 $$</p>
 <p>The basis is $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the real scalar block $A_1=\mathbb{R}e_t$ and the imaginary vector block $B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$. Every element of the sector is its own Hermitian part, $\tilde Q=\tilde Q_{\mathrm H}$. The temporal direction carries a real coordinate and the three spatial directions carry imaginary ones, the reverse of the material sector; the placement of the $i$ is a property of the sector, fixed by the conjugation that defines it.</p>
 <p>The sector is not a subalgebra: the product of two Hermitian elements is Hermitian exactly when they commute, and the commutator of two of them lies in $\mathbb{M}_-$. The sector is a <strong>special Jordan algebra</strong> under the symmetrised product $\tfrac12\{\tilde Q_1,\tilde Q_2\}$, and it is not a Lie algebra.</p>
-<h3 id="the-idempotents-and-the-roots-of-math17">The Idempotents and the Roots of $+1$</h3>
+<h3 id="the-idempotents-and-the-roots-of-math21">The Idempotents and the Roots of $+1$</h3>
 <p>A real unit vector $\vec u$ gives a root of $+1$ in the sector,</p>
 <p>$$
 (i\vec u)^2=i^2\vec u^2=(-1)(-e_t)=+e_t,
@@ -189,7 +189,7 @@ $$</p>
 <p>$$
 \tilde Q_-\longmapsto\tilde Q_+\tilde Q_-\tilde Q_+^{*},\qquad \tilde Q_+\in\mathbb{M}_+,\ \tilde Q_-\in\mathbb{M}_-.
 $$</p>
-<p>The image is in $\mathbb{M}_-$, because the star is an anti-automorphism and the two signs cancel. The action is linear in $\tilde Q_-$, it is a group action, and it preserves the biquaternion norm when the acting element has unit biquaternion norm, $\langle\tilde Q_+\rangle_{\natural}=1$. That condition is the condition of $SL(2,\mathbb{C})$; it is not the matrix-unitary condition $\tilde Q_+\tilde Q_+^{*}=e_t$, which defines $U(2)$ and preserves the trace of a state. A boost is Hermitian and has unit norm, but it is not matrix-unitary; a rotation is both.</p>
+<p>The image is in $\mathbb{M}_-$, because the star is an anti-automorphism and the two signs cancel. The action is linear in $\tilde Q_-$, it is a group action, and it preserves the biquaternion norm when the acting element has unit biquaternion norm, $\langle\tilde Q_+\rangle_{\natural}=1$. That condition is the condition of $SL(2,\mathbb{C})$; it is not the matrix-$*$-unitary condition $\tilde Q_+\tilde Q_+^{*}=e_t$, which defines $U(2)$ and preserves the trace of a state. A boost is Hermitian and has unit norm, but it is not matrix-$*$-unitary; a rotation is both.</p>
 <p>The action is the algebraic form of <strong>operators acting on states</strong>: the material sector is the space of kinematic configurations, and the informational sector is the space of the things that act on them. The asymmetry is the content of the names, and it is what earns the sector the adjective <em>informational</em> or <em>operational</em>.</p>
 <h3 id="the-four-forms-and-the-bracket-table">The Four Forms and the Bracket Table</h3>
 <p>The four forms are real on $\mathbb{M}_+$. With $\tilde Q_1=a_te_t+i\vec p$ and $\tilde Q_2=b_te_t+i\vec q$, they collapse in pairs. The two pairs are stated separately.</p>
@@ -292,7 +292,7 @@ $$</p>
 \langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})>0 ,
 $$</p>
 <p>and its image is Hermitian, positive and normalised by $\langle\tilde{Ϛ}_{\tilde Q},e_t\rangle_{*}=\tfrac12$, hence a point of the Bloch ball. The Cartan amplitude $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ is the unnormalised square root of the image, and the eigenvalues of $\tilde H$ are the singular values of $\tilde Q$.</p>
-<p>Three properties fix the map. It is <strong>right-invariant</strong>, $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde Q^{*}$ for unitary $\tilde W$, so the right unitary is a gauge fibre. It is <strong>left-covariant</strong>, $\tilde{Ϛ}_{\tilde V\tilde Q}=\tilde V\tilde{Ϛ}_{\tilde Q}\tilde V^{*}$, so a left unitary is a change of frame. And it is <strong>stratified</strong> by the rank of the operator:</p>
+<p>Three properties fix the map. It is <strong>right-invariant</strong>, $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde Q^{*}$ for $*$-unitary $\tilde W$, so the right $*$-unitary is a gauge fibre. It is <strong>left-covariant</strong>, $\tilde{Ϛ}_{\tilde V\tilde Q}=\tilde V\tilde{Ϛ}_{\tilde Q}\tilde V^{*}$, so a left $*$-unitary is a change of frame. And it is <strong>stratified</strong> by the rank of the operator:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -303,12 +303,12 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>unitary up to scale</td>
+<td>$*$-unitary up to scale</td>
 <td>equal</td>
 <td>maximally mixed</td>
 </tr>
 <tr>
-<td>invertible, not unitary up to scale</td>
+<td>invertible, not $*$-unitary up to scale</td>
 <td>distinct</td>
 <td>mixed</td>
 </tr>
@@ -319,7 +319,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The direction is the one that is easy to get backwards: the reversible operators produce the least informative state, and the zero divisors produce the pure states. The reason is that the map keeps the ratios of the singular values and discards the unitary factor and the overall scale; a reversible operator has equal singular values, so its image carries no information beyond the normalisation.</p>
+<p>The direction is the one that is easy to get backwards: the reversible operators produce the least informative state, and the zero divisors produce the pure states. The reason is that the map keeps the ratios of the singular values and discards the $*$-unitary factor and the overall scale; a reversible operator has equal singular values, so its image carries no information beyond the normalisation.</p>
 <p><strong>The boundary.</strong> The map takes an operator to a state without an input. A measurement instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}/p$, and the two coincide only when the input is $\tfrac12e_t$. The operator-to-state map is therefore the input-free shadow of the instrument, not the instrument, and it neither selects an outcome nor supplies a dynamics. It is developed in <em>The General Polar Decomposition, the Amplitude and the Operator-to-State Map</em>.</p>
 <h3 id="the-spectral-decomposition-is-the-readout">The Spectral Decomposition Is the Readout</h3>
 <p>Every Hermitian element is a real combination of two orthogonal idempotents,</p>
@@ -357,7 +357,7 @@ $$</p>
 <td>reversible change of frame on $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>Matrix-unitary</td>
+<td>Matrix-$*$-unitary</td>
 <td>$\tilde Q\tilde Q^{*}=e_t$</td>
 <td>reversible evolution of states</td>
 </tr>
@@ -368,8 +368,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>A unit-norm element is a Lorentz rotor: it preserves the interval and acts on the material sector. A matrix-unitary element preserves the trace and maps states to states; it is a rotation rotor up to a central phase, and its effective action on the Bloch ball is $SO(3)$. A proper Hermitian idempotent, neither $0$ nor $e_t$, does not preserve the norm, and its action is a projection: $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$, with probability $2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*})$ and normalised post-measurement state $\tilde\Pi\tilde{Ϛ}\tilde\Pi/(2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*}))$.</p>
-<p>The dichotomy between reversible and irreversible actions is therefore intrinsic to the sector: a norm-preserving rotor against a norm-destroying projection. On the material sector the rotor is a Lorentz transformation; on the state side the reversible class narrows to the matrix-unitary elements, and the pair is exactly the quantum-information dichotomy between unitary evolution and measurement.</p>
+<p>A unit-norm element is a Lorentz rotor: it preserves the interval and acts on the material sector. A matrix-$*$-unitary element preserves the trace and maps states to states; it is a rotation rotor up to a central phase, and its effective action on the Bloch ball is $SO(3)$. A proper Hermitian idempotent, neither $0$ nor $e_t$, does not preserve the norm, and its action is a projection: $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$, with probability $2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*})$ and normalised post-measurement state $\tilde\Pi\tilde{Ϛ}\tilde\Pi/(2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*}))$.</p>
+<p>The dichotomy between reversible and irreversible actions is therefore intrinsic to the sector: a norm-preserving rotor against a norm-destroying projection. On the material sector the rotor is a Lorentz transformation; on the state side the reversible class narrows to the matrix-$*$-unitary elements, and the pair is exactly the quantum-information dichotomy between $*$-unitary evolution and measurement.</p>
 <p><strong>The boundary.</strong> The sandwich is one operator; the three cases differ by the normalisation of the parameter, not by the operation. The projection is the algebraic form of a measurement, but the collapse is not derived from the algebra. The identification of the projection with a physical measurement is the interpretive step, and the probabilities it gives are the Born weights, not frequencies.</p>
 <h3 id="the-born-rule-is-the-normalised-hermitian-form">The Born Rule Is the Normalised Hermitian Form</h3>
 <p>For a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec u)$ and an observable $\tilde H=h_te_t+i\vec h$, the state is normalised against the unit, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, and the Born weight is</p>
@@ -424,8 +424,8 @@ $$</p>
 <td>Hermitian element $\tilde H\in\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>Unitary gate $U$</td>
-<td>matrix-unitary $\tilde Q$, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball</td>
+<td>$*$-Unitary gate $U$</td>
+<td>matrix-$*$-unitary $\tilde Q$, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball</td>
 </tr>
 <tr>
 <td>Expectation value $\operatorname{Tr}(\rho H)$</td>
@@ -482,7 +482,7 @@ $$</p>
 <tr>
 <td>The level sets are the groups the physics uses</td>
 <td>$\tilde U\tilde U^{*}=e_t$ gives $U(2)$; $\langle\tilde U\rangle_{\natural}=1$ gives $SL(2,\mathbb{C})$; the Euclidean sphere is not used</td>
-<td><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">Unitary Operators of a Sesqualgebra</a>, <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units</a></td>
+<td><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">$*$-Unitary Operators of a Sesqualgebra</a>, <a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units</a></td>
 </tr>
 <tr>
 <td>The operator dictionary is the adjointness dictionary</td>
@@ -491,7 +491,7 @@ $$</p>
 </tr>
 <tr>
 <td>One operator carries both evolutions</td>
-<td>$\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, evaluated at a unitary or an idempotent parameter</td>
+<td>$\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, evaluated at a $*$-unitary or an idempotent parameter</td>
 <td><a href="../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html">Two-Sided Operators on the General Plain Sesqualgebra</a></td>
 </tr>
 <tr>
@@ -514,7 +514,7 @@ $$</p>
 <p>The table is the algebraic address book of the interpretation. Each physical statement has a mathematical owner, and the interpretation adds no theorem to the list.</p>
 <h3 id="the-hypothesis-and-its-open-questions">The Hypothesis and Its Open Questions</h3>
 <p>The <strong>hypothesis</strong> is that the Hermitian subspace is physically realised as a distinct sector, the arena of operations and information, in the same sense in which the anti-Hermitian subspace is the arena of events and four-vectors.</p>
-<p><strong>What it claims.</strong> The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of a two-state quantum system. Its elements act as operators on the spinor module. The reversible/irreversible dichotomy is the unitary/measurement dichotomy. The Born pairing is the normalised Hermitian form; in the $2\times2$ image, the trace formula.</p>
+<p><strong>What it claims.</strong> The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of a two-state quantum system. Its elements act as operators on the spinor module. The reversible/irreversible dichotomy is the $*$-unitary/measurement dichotomy. The Born pairing is the normalised Hermitian form; in the $2\times2$ image, the trace formula.</p>
 <p><strong>What it does not claim.</strong> That the sector has been observed. That it has a specified dynamics beyond the quantum formalism. That there is a specified coupling to the material sector beyond the Lorentz action. That it makes an empirical prediction distinguishing it from standard physics. That its imaginary directions are extra spatial dimensions.</p>
 <p><strong>The honest position.</strong> The mathematics is established; the physical interpretation is a research programme, not a theory. The material sector reproduces the four-vectors of relativistic physics, and the observables of $\mathbb{M}_+$ generate the operator algebra of a qubit. Whether the sector is a distinct physical sector, or only a mathematical structure that describes a qubit, is open.</p>
 <p>The open questions are concrete.</p>
@@ -529,7 +529,7 @@ $$</p>
 <li><strong>Imaginary directions.</strong> In what sense are the imaginary directions informational rather than spatial? The Fourier reading answers partially: an imaginary direction is a direction the pairing uses, along which the conjugate variable is paired, not a direction in which anything propagates.</li>
 </ol>
 <h2 id="examples">Examples</h2>
-<p><strong>The boost biquaternion.</strong> $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec u_{\mathrm b}$ is Hermitian, has unit norm, and lies in $\mathbb{M}_+$. It acts on $\mathbb{M}_-$ by rotor conjugation and implements a Lorentz boost. It is not matrix-unitary, and it does not preserve the normalisation $\mathrm{Sc}(\tilde\varrho)=\tfrac12$ (the trace of a state); it is an operator on four-vectors, not an evolution of states.</p>
+<p><strong>The boost biquaternion.</strong> $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec u_{\mathrm b}$ is Hermitian, has unit norm, and lies in $\mathbb{M}_+$. It acts on $\mathbb{M}_-$ by rotor conjugation and implements a Lorentz boost. It is not matrix-$*$-unitary, and it does not preserve the normalisation $\mathrm{Sc}(\tilde\varrho)=\tfrac12$ (the trace of a state); it is an operator on four-vectors, not an evolution of states.</p>
 <p><strong>A pure state.</strong> $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is Hermitian, idempotent, with $2\,\mathrm{Sc}(\tilde\Pi_+)=1$ (trace one), and a zero divisor. It is the pure state along $+z$, the Bloch vector $\vec r=\vec e_z$, and the north pole of the Bloch sphere. The orthogonal idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is the south pole.</p>
 <p><strong>A mixed state.</strong> $\tilde{Ϛ}=\tfrac12(e_t+\tfrac12 i\vec e_z)$ has $\lvert\vec r\rvert=\tfrac12$, so it is positive and mixed, with $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac{3}{16}>0$. It is not a zero divisor. At $\vec r=0$ the state is $\tfrac12e_t$, the maximally mixed state.</p>
 <p><strong>An observable.</strong> $\tilde H=h_te_t+i\vec h$ has eigenvalues $h_t\pm\lvert\vec h\rvert$ and spectral decomposition $\tilde H=\lambda_+\tilde\Pi_1(\vec u_h)+\lambda_-\tilde\Pi_2(\vec u_h)$. For $h_t=1$ and $\lvert\vec h\rvert=\tfrac12$ the readings are $\tfrac32$ and $\tfrac12$; for $\lvert\vec h\rvert=2$ they are $3$ and $-1$, and the element is not positive.</p>
@@ -586,7 +586,7 @@ $$</p>
 <li>The state slice (normalised by $\langle\tilde\varrho,e_t\rangle_*=\tfrac12$; trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.</li>
 <li>The Bloch ball is the state slice of the future light cone of the biquaternion norm; probability and causality share their boundary.</li>
 <li>The spectral decomposition writes every observable as two eigenvalues times two orthogonal idempotents.</li>
-<li>Evolution and measurement are one sandwich, with the parameter unit-norm, matrix-unitary or idempotent.</li>
+<li>Evolution and measurement are one sandwich, with the parameter unit-norm, matrix-$*$-unitary or idempotent.</li>
 <li>The Born rule is the normalised Hermitian form $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\langle\tilde{Ϛ},\tilde H\rangle_{*}=2\operatorname{Sc}(\tilde{Ϛ}\tilde H^{*})$, with $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$.</li>
 <li>The sector is a special Jordan algebra under the anticommutator, and not a Lie algebra; the material sector carries the compact Lie algebra $\mathfrak{u}(2)$, the spatial rotations together with the central phase.</li>
 <li>The sector is phase-free in the scalar sense, but its vector product carries the coherence.</li>
@@ -643,7 +643,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde Q\tilde Q^{*}=e_t$</td>
-<td>the matrix-unitary condition, $U(2)$</td>
+<td>the matrix-$*$-unitary condition, $U(2)$</td>
 </tr>
 <tr>
 <td>$\langle\tilde U\rangle_{\natural}=1$</td>
@@ -664,7 +664,7 @@ $$</p>
 <li><a href="biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a>, for the biorthogonal pairing and its difference from the Born form.</li>
 <li><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a> and <a href="../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html">Remarkable Subspaces and the Four General Products, Forms and Norms</a>, for the forms and the absence of the area pairing.</li>
 <li><a href="../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html">Two-Sided Operators on the General Plain Sesqualgebra</a>, for the sandwich.</li>
-<li><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">Unitary Operators of a Sesqualgebra</a>, for the matrix-unitary slice.</li>
+<li><a href="../articles_maths/the-unitary-operators-of-a-sesqualgebra.html">$*$-Unitary Operators of a Sesqualgebra</a>, for the matrix-$*$-unitary slice.</li>
 <li><a href="../articles_maths/jordan-algebras-of-sesqualgebras.html">Jordan Algebras of Sesqualgebras</a>, for the symmetrised product.</li>
 <li><a href="../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html">$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions</a>, for the Hilbert–Schmidt pairing and the matrix trace.</li>
 <li><a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>, for the partner sector and the action on it.</li>

@@ -82,7 +82,7 @@ $$</p>
 <p>$$
 0\subset F_1\subset F_2\subset F_3\subset F_4=\mathbb{C}^4,\qquad \dim F_k=k.
 $$</p>
-<p>The flag is <strong>spectral</strong>: it is produced by $H$, not fixed in advance. The standard flag of <em>The Matrix Algebra $M_4(\mathbb{C})$</em> is the case $V_k=\mathbb{C}e_k$, that is, $H=H_0=\operatorname{diag}(1,i,-1,-i)$. Every other root gives a flag in general position with respect to the standard one. The construction depends only on the flag and the lines, so it is invariant under a change of basis that preserves $H$.</p>
+<p>The flag is <strong>spectral</strong>: it is produced by $H$, not fixed in advance. The standard flag of <em>The Matrix Algebra $M_4(\mathbb{C})$</em> is the case $V_k=\mathbb{C}e_k$, that is, $H=H_0=\operatorname{diag}(1,i,-1,-i)$. A general root gives a flag in general position with respect to the standard one. The construction depends only on the flag and the lines, so it is invariant under a change of basis that preserves $H$.</p>
 <h2 id="the-peirce-lines">The Peirce Lines</h2>
 <p><strong>Definition.</strong> Relative to the complete orthogonal family $P_1,\dots,P_4$, the <strong>Peirce corners</strong> are</p>
 <p>$$
@@ -248,7 +248,7 @@ $$</p>
 <td>$\mathcal{A}$</td>
 <td>$\mathcal{A}$</td>
 <td>$\mathcal{B}$</td>
-<td>$0$</td>
+<td>$\mathcal{C}$</td>
 <td>$0$</td>
 </tr>
 <tr>
@@ -275,7 +275,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The products $\mathcal{B}\mathcal{C}\subseteq\mathcal{A}$ and $\mathcal{C}\mathcal{B}\subseteq\mathcal{D}$ are the cross terms $rc'$ and $cr'$. They are the reason the coarse split is not a direct sum of algebras: the off-diagonal blocks multiply back into the diagonal. The diagonal part $\mathcal{A}\oplus\mathcal{D}$ is a subalgebra with unit $I$, isomorphic to $\mathbb{C}\oplus M_3(\mathbb{C})$, but it is not an ideal: multiplying a diagonal element by a general element produces an off-diagonal part. The algebra $M_4(\mathbb{C})$ is simple, so it has no proper two-sided ideal at all.</p>
-<p><strong>The corner units.</strong> The unit of $\mathcal{A}$ is $\Pi$, not $I$; the unit of $\mathcal{D}$ is $Q$. The trace of an element of $\mathcal{A}$ as a matrix algebra is the compression $\operatorname{tr}(\Pi X\Pi)$, not $\operatorname{tr}X$. This is the sense in which $\mathcal{A}$ and $\mathcal{D}$ are matrix algebras with compressed units, and it is why $\mathcal{A}\oplus\mathcal{D}$ is a subalgebra of $M_4$ but not a unital subalgebra with the unit $I$.</p>
+<p><strong>The corner units.</strong> The unit of $\mathcal{A}$ is $\Pi$, not $I$; the unit of $\mathcal{D}$ is $Q$. For an element $X$, the trace of its compression to $\mathcal{A}$ is $\operatorname{tr}(\Pi X\Pi)$, which differs from $\operatorname{tr}X$ in general; on $\mathcal{A}$ itself the two agree, because $\Pi$ has rank one. On $\mathcal{D}$ the compressed trace $\operatorname{tr}(QXQ)$ is the trace of the $3\times3$ block. Each of $\mathcal{A}$ and $\mathcal{D}$ is a non-unital subalgebra of $M_4$, with unit $\Pi$ or $Q$; their sum $\mathcal{A}\oplus\mathcal{D}$ is unital, with unit $\Pi+Q=I$.</p>
 <h2 id="refining-the-coarse-split">Refining the Coarse Split</h2>
 <p><strong>The coarse split by one rank-one idempotent leaves a $9$-dimensional corner $\mathcal{D}\cong M_3(\mathbb{C})$, and the same construction inside that corner refines it.</strong> The complement of $\Pi=P_1$ in $M_4$ is $Q=P_2+P_3+P_4$, and $\mathcal{D}=QM_4Q$ is a copy of $M_3$. Inside it, the idempotent $P_2$ is rank one, and its complement in $\mathcal{D}$ is $Q-P_2=P_3+P_4$. The corners of $\mathcal{D}$ relative to $P_2$ have dimensions</p>
 <p>$$
@@ -442,7 +442,7 @@ $$</p>
 <li><a href="the-rank-two-split-of-m4c.html">The Rank-Two Split</a>, for the coarse split by an idempotent of rank two.</li>
 <li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m4c.html">The Spin Chain and the Adjoint Decomposition</a>, for the carrier, which is not a corner.</li>
 <li><a href="the-peirce-decomposition-and-the-corner-recursion-mnc.html">The Peirce Decomposition and the Corner Recursion</a>, for the general construction at order $n$.</li>
-<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the biquaternion case $n=2$, where the coarse and fine splits coincide.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the biquaternion case $n=2$, where the coarse and fine splits coincide.</li>
 </ul>
       </div>
     </main>

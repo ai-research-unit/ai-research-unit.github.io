@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometry of the Idempotents of $M_3(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometry-of-the-idempotents-of-math0"><strong>The Geometry of the Idempotents of $M_3(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The idempotents of rank one form an affine bundle of rank $2$ over $\mathbb{P}^{2}$, of complex dimension $4$; the idempotents of rank $p$ form the homogeneous space $PGL_3/P(GL_p\times GL_{3-p})$, of dimension $2p(3-p)$, a fibre bundle over the Grassmannian $\operatorname{Gr}(p,3)$ whose fibre is the contractible space of complements.</strong> For $p=1$ and $p=2$ the dimension is $4$; the two cases are exchanged by $E\mapsto I-E$. The full flag variety $GL_3/B$ has dimension $3$, and the partial flags are the Grassmannians. The gauge torus $T/\mathbb{C}^{\times}$ is the two-dimensional quotient of the diagonal torus inside the fibre of the frame bundle over the flag variety, and it rescales the nilpotents $E_{12},E_{23}$ while fixing the idempotents.</p>
+<p>An idempotent is a solution of $E^{2}=E$; it is a projection onto its image along its kernel. The geometry of the idempotents is therefore the geometry of pairs of complementary subspaces, and the rank stratification is the stratification by the dimension of the image. The article proves the orbit description, identifies the fibres, computes the dimensions, describes the incidence relations and the flag variety, and works explicit matrices. The Peirce decomposition is <em>The Peirce Decomposition of $M_3(\mathbb{C})$</em>; the frame and the gauge are <em>The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$</em>; the topology is <em>The Topology of $M_3(\mathbb{C})$</em>.</p>
+<h2 id="idempotents-and-complementary-pairs">Idempotents and Complementary Pairs</h2>
+<p><strong>Definition.</strong> An idempotent is a matrix $E\in M_3(\mathbb{C})$ with $E^{2}=E$. Its rank is the dimension of its image.</p>
+<p><strong>Proposition.</strong> Let $E$ be an idempotent of rank $p$. Then</p>
+<p>$$
+\mathbb{C}^{3}=\operatorname{im}E\oplus\ker E,
+$$</p>
+<p>and $E$ is the projection onto $\operatorname{im}E$ along $\ker E$. Conversely, every direct sum decomposition $\mathbb{C}^{3}=V\oplus W$ with $\dim V=p$ defines an idempotent $E_{V,W}$ of rank $p$ with image $V$ and kernel $W$.</p>
+<p><strong>Proof.</strong> If $v\in\operatorname{im}E\cap\ker E$, then $v=Ew$ and $Ev=0$, so $v=Ew=E^{2}w=E(Ev)=0$. If $x\in\mathbb{C}^{3}$, then $x=Ex+(x-Ex)$, with $Ex\in\operatorname{im}E$ and $E(x-Ex)=Ex-E^{2}x=0$, so $x\in\operatorname{im}E+\ker E$. The map $E_{V,W}$ is defined by $E(v+w)=v$ for $v\in V$, $w\in W$; it is linear, has image $V$, kernel $W$, and squares to itself.</p>
+<p><strong>Corollary.</strong> The idempotents of rank $p$ are in bijection with the pairs $(V,W)$ of complementary subspaces with $\dim V=p$. The bijection is $E\mapsto(\operatorname{im}E,\ker E)$.</p>
+<p><strong>The trace.</strong> An idempotent of rank $p$ has trace $p$, because the trace is the sum of the eigenvalues and the eigenvalues of an idempotent are $0$ and $1$. In particular, the rank is determined by the trace.</p>
+<h2 id="the-orbits">The Orbits</h2>
+<p><strong>Theorem.</strong> The group $GL_3(\mathbb{C})$ acts transitively on the idempotents of rank $p$ by conjugation,</p>
+<p>$$
+E\longmapsto SES^{-1},
+$$</p>
+<p>and the stabiliser of the idempotent $E_p=\operatorname{diag}(I_p,0)$ is the block diagonal subgroup</p>
+<p>$$
+P_p=\left\{\begin{pmatrix}A&0\\0&D\end{pmatrix}:A\in GL_p(\mathbb{C}),\ D\in GL_{3-p}(\mathbb{C})\right\}.
+$$</p>
+<p>Hence the variety of idempotents of rank $p$ is</p>
+<p>$$
+\mathcal{E}_p\cong GL_3(\mathbb{C})/P_p\cong PGL_3(\mathbb{C})/P(GL_p\times GL_{3-p}),
+$$</p>
+<p>of complex dimension</p>
+<p>$$
+\dim\mathcal{E}_p=9-\big(p^{2}+(3-p)^{2}\big)=2p(3-p).
+$$</p>
+<p><strong>Proof of transitivity.</strong> Two idempotents of rank $p$ have images of dimension $p$ and kernels of dimension $3-p$; choose bases adapted to the decompositions $\mathbb{C}^{3}=\operatorname{im}E\oplus\ker E$ and $\mathbb{C}^{3}=\operatorname{im}F\oplus\ker F$. The change of basis maps one decomposition to the other and conjugates $E$ to $F$.</p>
+<p><strong>Proof of the stabiliser.</strong> The condition $SE_p=E_pS$ in block form $S=\begin{pmatrix}A&B\\C&D\end{pmatrix}$ gives</p>
+<p>$$
+\begin{pmatrix}A&0\\C&0\end{pmatrix}
+=\begin{pmatrix}A&B\\0&0\end{pmatrix},
+$$</p>
+<p>so $B=0$ and $C=0$. The blocks $A$ and $D$ must be invertible because $S$ is invertible. The dimension is $p^{2}+(3-p)^{2}$; subtracting from $9$ gives $2p(3-p)$.</p>
+<p><strong>The centre.</strong> The scalar matrices act trivially by conjugation, so the orbit is also the quotient of $PGL_3$ by the image of $P_p$. The dimension is the same because the centre is one-dimensional and is contained in $P_p$.</p>
+<p><strong>The values.</strong> For $p=0$ and $p=3$ the orbit is a point, the zero matrix and the identity. For $p=1$ and $p=2$,</p>
+<p>$$
+\dim\mathcal{E}_1=\dim\mathcal{E}_2=2\cdot1\cdot2=4 .
+$$</p>
+<p><strong>The complement map.</strong> The map $E\mapsto I-E$ is a bijection between idempotents of rank $p$ and idempotents of rank $3-p$; it exchanges image and kernel, and it is an isomorphism of varieties. So the geometry of rank two is the geometry of rank one.</p>
+<h2 id="the-affine-bundle-over-the-grassmannian">The Affine Bundle over the Grassmannian</h2>
+<p><strong>The projection.</strong> For $p=1$, the map</p>
+<p>$$
+\pi:\mathcal{E}_1\longrightarrow\mathbb{P}^{2},\qquad E\longmapsto\operatorname{im}E,
+$$</p>
+<p>sends an idempotent to its image line. The fibre over a line $L$ is the set of idempotents with image $L$, equivalently the set of kernels $W$ complementary to $L$.</p>
+<p><strong>Theorem.</strong> The fibre $\pi^{-1}(L)$ is an affine space of dimension $2$, and $\mathcal{E}_1$ is an affine bundle of rank $2$ over $\mathbb{P}^{2}$.</p>
+<p><strong>Proof.</strong> Fix a line $L$. A complement $W$ to $L$ is the graph of a linear map $L\to\mathbb{C}^{3}/L$; the set of such graphs is an affine space modelled on $\operatorname{Hom}(L,\mathbb{C}^{3}/L)\cong\mathbb{C}^{2}$. The identification depends on the choice of a base complement, so the bundle is affine and not a vector bundle. The total space has dimension $2+2=4$.</p>
+<p><strong>Explicit coordinates.</strong> Choose a vector $u$ spanning $L$ and a linear functional $\varphi$ with $\varphi(u)=1$. The idempotent is</p>
+<p>$$
+E=u\varphi,
+$$</p>
+<p>and the kernel is $\ker\varphi$, a complement of $L$. The pair $(u,\varphi)$ is determined by $E$ up to the scaling $(u,\varphi)\mapsto(\lambda u,\lambda^{-1}\varphi)$, so the fibre has the two parameters of $\varphi$ modulo the normalisation $\varphi(u)=1$, which is the affine space $\mathbb{C}^{2}$.</p>
+<p><strong>The rank-two case.</strong> For $p=2$, the map $E\mapsto\ker E$ sends a rank-two idempotent to a line, and the fibre is again an affine space of dimension $2$; via $E\mapsto I-E$ this is the rank-one picture with image and kernel exchanged.</p>
+<p><strong>Worked example.</strong> Take</p>
+<p>$$
+u=\begin{pmatrix}1\\1\\0\end{pmatrix},
+\qquad
+\varphi=\begin{pmatrix}1&0&0\end{pmatrix},
+\qquad
+E=u\varphi=\begin{pmatrix}1&0&0\\1&0&0\\0&0&0\end{pmatrix}.
+$$</p>
+<p>Then $E^{2}=E$, $\operatorname{im}E=\mathbb{C}u$, and $\ker E=\ker\varphi=\{x:x_1=0\}=\operatorname{span}(e_2,e_3)$, a complement of the line $\mathbb{C}u$. The rank is $1$, the trace is $1$, and the point of $\mathbb{P}^{2}$ is $[1:1:0]$. The fibre coordinate is the functional $\varphi$ restricted to the quotient, with the normalisation $\varphi(u)=1$.</p>
+<p><strong>The zero and the identity.</strong> The idempotents of rank $0$ and $3$ are isolated: the zero matrix and the identity. The variety of all idempotents has four connected components. The rank-one and rank-two varieties are connected, and the zero and identity are points, so the total has four connected components, of dimensions $0,4,4,0$.</p>
+<h2 id="flags-and-grassmannians">Flags and Grassmannians</h2>
+<p><strong>The Grassmannians.</strong> For $0\le p\le3$, the Grassmannian $\operatorname{Gr}(p,3)$ is the set of $p$-dimensional subspaces of $\mathbb{C}^{3}$. It is a compact complex manifold of dimension</p>
+<p>$$
+\dim\operatorname{Gr}(p,3)=p(3-p),
+$$</p>
+<p>with $\operatorname{Gr}(0,3)$ and $\operatorname{Gr}(3,3)$ points, and $\operatorname{Gr}(1,3)\cong\mathbb{P}^{2}\cong\operatorname{Gr}(2,3)$.</p>
+<p><strong>The full flag variety.</strong> A full flag is a chain</p>
+<p>$$
+0\subset L_1\subset L_2\subset\mathbb{C}^{3},
+\qquad \dim L_1=1,\quad \dim L_2=2 .
+$$</p>
+<p>The group $GL_3(\mathbb{C})$ acts transitively on the full flags. The stabiliser of the standard flag $\langle e_1\rangle\subset\langle e_1,e_2\rangle$ is the Borel subgroup $B$ of upper triangular invertible matrices, of dimension $6$ (three diagonal and three upper entries). Hence the flag variety is</p>
+<p>$$
+\operatorname{Flags}=GL_3/B\cong PGL_3/B',
+$$</p>
+<p>of dimension $9-6=3$; $B'$ is the image of $B$ in $PGL_3$, of dimension $5$, and $8-5=3$.</p>
+<p><strong>The partial flags.</strong> A partial flag of type $(p)$ is a $p$-dimensional subspace, so the variety of partial flags of type $(p)$ is $\operatorname{Gr}(p,3)$, of dimension $p(3-p)$. A partial flag of type $(1,2)$ is a full flag: a line contained in a plane. The incidence variety</p>
+<p>$$
+\{(L,V):L\subset V\}\subset\mathbb{P}^{2}\times\mathbb{P}^{2}
+$$</p>
+<p>has dimension $3$: it is the full flag variety, and the two projections to $\mathbb{P}^{2}$ are fibrations with fibre $\mathbb{P}^{1}$.</p>
+<p><strong>Proof of the incidence dimension.</strong> Fix $L$; the planes $V$ containing $L$ form a $\mathbb{P}^{1}$, so the incidence variety has dimension $2+1=3$. Fix $V$; the lines $L\subset V$ form a $\mathbb{P}^{1}$, the same count. The two projections exhibit the flag variety as a $\mathbb{P}^{1}$-bundle over either Grassmannian.</p>
+<p><strong>The incidence of idempotents.</strong> For idempotents $E$ of rank $1$ and $F$ of rank $2$, the relation</p>
+<p>$$
+EF=FE=E
+$$</p>
+<p>says that $E$ is a subprojection of $F$: the image of $E$ is contained in the image of $F$, and the kernel of $F$ is contained in the kernel of $E$. The pair $(\operatorname{im}E,\operatorname{im}F)$ is a flag $L\subset V$. The variety of such pairs maps to the full flag variety; the map is surjective, and its fibres are the choices of the complementary kernels. The idempotent incidence is the linear realisation of the flag incidence.</p>
+<p><strong>Worked example.</strong> Let</p>
+<p>$$
+E=E_{11}=\begin{pmatrix}1&0&0\\0&0&0\\0&0&0\end{pmatrix},
+\qquad
+F=E_{11}+E_{22}=\begin{pmatrix}1&0&0\\0&1&0\\0&0&0\end{pmatrix}.
+$$</p>
+<p>Then $E^{2}=E$, $F^{2}=F$, and $EF=FE=E$. The images are $L=\langle e_1\rangle\subset V=\langle e_1,e_2\rangle$, and the kernels are $\ker E=\langle e_2,e_3\rangle$ and $\ker F=\langle e_3\rangle$, with $\ker F\subset\ker E$. The flag is the standard one.</p>
+<p><strong>The complement example.</strong> For</p>
+<p>$$
+E'=\begin{pmatrix}1&0&0\\1&0&0\\0&0&0\end{pmatrix},
+\qquad
+F'=I-E'=\begin{pmatrix}0&0&0\\-1&1&0\\0&0&1\end{pmatrix},
+$$</p>
+<p>one has $E'F'=F'E'=0$ and $E'+F'=I$. The idempotents are complementary: the image of $E'$ is the kernel of $F'$ and the kernel of $E'$ is the image of $F'$. The pair is a decomposition of the identity, not a flag incidence.</p>
+<h2 id="the-gauge-and-the-frame-bundle">The Gauge and the Frame Bundle</h2>
+<p><strong>The frame bundle.</strong> A frame is an ordered basis $(u_1,u_2,u_3)$ of $\mathbb{C}^{3}$, that is, a matrix $S\in GL_3$ whose columns are the frame vectors. The map</p>
+<p>$$
+GL_3\longrightarrow\operatorname{Flags},\qquad
+S\longmapsto\big(\langle u_1\rangle\subset\langle u_1,u_2\rangle\big),
+$$</p>
+<p>is a principal bundle with fibre the Borel $B$, of dimension $6$. The fibre over a flag is the set of frames adapted to the flag.</p>
+<p><strong>The gauge torus.</strong> Inside $B$ sits the diagonal torus</p>
+<p>$$
+T=\{\operatorname{diag}(t_1,t_2,t_3):t_i\neq0\},
+$$</p>
+<p>which rescales the frame vectors without changing the flag. The scalar matrices $\mathbb{C}^{\times}I$ act trivially on the flag and on the idempotents, so the gauge group of the frame is</p>
+<p>$$
+T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},
+$$</p>
+<p>of complex dimension $2$ and real dimension $4$. The two gauge parameters are</p>
+<p>$$
+\lambda_1=t_1/t_2,\qquad
+\lambda_2=t_2/t_3 .
+$$</p>
+<p><strong>The action on the nilpotents.</strong> In the frame adapted to the root $H$, the gauge acts by</p>
+<p>$$
+E_{12}\mapsto\lambda_1E_{12},\qquad
+E_{23}\mapsto\lambda_2E_{23},\qquad
+E_{13}\mapsto\lambda_1\lambda_2E_{13}.
+$$</p>
+<p>The product is forced by the composition: $t_1/t_3=(t_1/t_2)(t_2/t_3)$. The idempotents $P_k$ are invariant, because they are diagonal in the frame and the gauge rescales the frame vectors within their own lines. The gauge is therefore the fibre direction of the frame bundle that is invisible to the idempotents.</p>
+<p><strong>The gauge as a fibre.</strong> The fibration $GL_3\to\operatorname{Flags}$ has fibre $B$; the diagonal torus $T$ is the subgroup of the fibre that preserves the splitting of the flag into lines, and $T/\mathbb{C}^{\times}$ is the gauge torus. The gauge is not an extra symmetry of the idempotent variety: it is the ambiguity in choosing a frame over a flag, and the idempotents depend only on the flag data and the complementary kernels.</p>
+<p><strong>Proof.</strong> A diagonal matrix $t$ acts on the frame by $u_i\mapsto t_iu_i$; the flag $\langle u_1\rangle\subset\langle u_1,u_2\rangle$ is unchanged. The conjugation $tE_{ij}t^{-1}$ multiplies $E_{ij}$ by $t_i/t_j$, which gives the three rescalings. The idempotents $P_k$ have matrix units $E_{kk}$ on the diagonal, so they are fixed.</p>
+<h2 id="the-geometry-of-the-strata">The Geometry of the Strata</h2>
+<p><strong>The rank stratification.</strong> The idempotents stratify by rank:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rank $p$</th>
+<th>Variety</th>
+<th>Complex dimension</th>
+<th>Fibre over $\operatorname{Gr}(p,3)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>point</td>
+<td>$0$</td>
+<td>point</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>affine bundle over $\mathbb{P}^{2}$</td>
+<td>$4$</td>
+<td>$\mathbb{C}^{2}$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>affine bundle over $\mathbb{P}^{2}$</td>
+<td>$4$</td>
+<td>$\mathbb{C}^{2}$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>point</td>
+<td>$0$</td>
+<td>point</td>
+</tr>
+</tbody>
+</table></div>
+<p>The middle two strata are isomorphic by $E\mapsto I-E$.</p>
+<p><strong>The strata are closed.</strong> The rank is locally constant on the idempotent variety: for an idempotent, $\operatorname{rank}E=\operatorname{tr}E$, and the trace is continuous with integer values, hence constant on a connected neighbourhood. Therefore each rank stratum is open and closed in the variety of idempotents, and the four strata are its connected components.</p>
+<p><strong>The tangent space.</strong> At an idempotent $E$, the tangent space of the orbit is</p>
+<p>$$
+T_E\mathcal{E}_p=\operatorname{im}(\operatorname{ad}_E)=\{[X,E]:X\in M_3\},
+$$</p>
+<p>the set of commutators. Its dimension is $2p(3-p)$, and its orthogonal complement for the trace form is $\ker(\operatorname{ad}_{E^{*}})$, the centraliser of $E^{*}$.</p>
+<p><strong>Proof.</strong> The derivative of $SES^{-1}$ at $S=I$ in the direction $X$ is $[X,E]$. The image of $\operatorname{ad}_E$ has dimension $\dim GL_3-\dim\ker\operatorname{ad}_E=9-(p^{2}+(3-p)^{2})=2p(3-p)$, which matches the orbit dimension. The orthogonal complement of the image for the trace form is the kernel of $\operatorname{ad}_{E^{*}}$; for an idempotent, $E^{*}$ is another idempotent, and the centraliser has the same dimension.</p>
+<p><strong>The normal directions.</strong> The complement of the tangent space is the centraliser of $E^{*}$, of dimension $p^{2}+(3-p)^{2}$. The normal directions to the orbit are the ways of moving the image and the kernel independently; the fibre directions of the affine bundle are the normal directions that change the kernel while fixing the image.</p>
+<p><strong>Worked dimension check.</strong> For $p=1$, the orbit has dimension $4$ and the centraliser has dimension $1+4=5$; the sum is $9$. For $p=2$, the orbit has dimension $4$ and the centraliser has dimension $4+1=5$; the sum is $9$. For $p=0$ and $p=3$ the orbit is a point and the centraliser is all of $M_3$.</p>
+<h2 id="summary">Summary</h2>
+<p>The idempotents of rank $p$ are the projections onto a $p$-plane along a complementary $(3-p)$-plane. They form the homogeneous space</p>
+<p>$$
+\mathcal{E}_p\cong GL_3/P_p\cong PGL_3/P(GL_p\times GL_{3-p}),
+\qquad
+\dim\mathcal{E}_p=2p(3-p),
+$$</p>
+<p>with $P_p$ the block diagonal $GL_p\times GL_{3-p}$. For $p=1$ the variety is an affine bundle of rank $2$ over $\mathbb{P}^{2}$, of dimension $4$; the fibre over a line $L$ is the affine space of complements to $L$, isomorphic to $\mathbb{C}^{2}$ and contractible. For $p=2$ the map $E\mapsto I-E$ identifies the geometry with the rank-one case. The strata of ranks $0,1,2,3$ are the four connected components of the idempotent variety, of dimensions $0,4,4,0$. The full flag variety $GL_3/B$ has dimension $3$, and the incidence variety of a line in a plane is the same flag variety, a $\mathbb{P}^{1}$-bundle over either $\mathbb{P}^{2}$. The gauge torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2}$ has complex dimension $2$ and real dimension $4$; it rescales $E_{12},E_{23}$ by $\lambda_1,\lambda_2$ and $E_{13}$ by the forced product $\lambda_1\lambda_2$, while fixing the spectral idempotents $P_k$.</p>
+<p>$$
+\boxed{\ \mathcal{E}_p=GL_3/(GL_p\times GL_{3-p}),\quad \dim=2p(3-p);\quad \mathcal{E}_1\to\mathbb{P}^{2}\text{ affine } \mathbb{C}^{2}\text{-bundle};\quad \dim\mathrm{Flags}=3;\quad \dim(T/\mathbb{C}^{\times})=2.\ }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Complex dimension</th>
+<th>Real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{E}_1$</td>
+<td>$4$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\mathcal{E}_2$</td>
+<td>$4$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(p,3)$</td>
+<td>$p(3-p)$</td>
+<td>$2p(3-p)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Flags}$</td>
+<td>$3$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$T/\mathbb{C}^{\times}$</td>
+<td>$2$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E$</td>
+<td>idempotent, $E^{2}=E$</td>
+</tr>
+<tr>
+<td>$\mathcal{E}_p$</td>
+<td>idempotents of rank $p$</td>
+</tr>
+<tr>
+<td>$P_p$</td>
+<td>block diagonal $GL_p\times GL_{3-p}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(p,3)$</td>
+<td>Grassmannian of $p$-planes in $\mathbb{C}^{3}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Flags}$</td>
+<td>full flag variety $GL_3/B$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>diagonal torus of the frame</td>
+</tr>
+<tr>
+<td>$\lambda_1,\lambda_2$</td>
+<td>gauge parameters $t_1/t_2$, $t_2/t_3$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the Grassmannians, the flag variety and the Borel subgroup.</li>
+<li>Joe Harris, <em>Algebraic Geometry: A First Course</em> (Springer, 1992), for the determinantal varieties and the incidence varieties.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the geometry of the Grassmannians.</li>
+<li><a href="the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a>, for the idempotents in the algebra.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html">The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$</a>, for the frame and the gauge parameters.</li>
+<li><a href="the-topology-of-m3c.html">The Topology of $M_3(\mathbb{C})$</a>, for the homotopy type of the idempotent varieties.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -230,7 +230,7 @@ $$</p>
 <p>$$
 XX^{\dagger}=X^{\dagger}X .
 $$</p>
-<p>Every Hermitian matrix, every unitary matrix and every scalar matrix is normal. Normality is the condition that the two Hermitian matrices in the Hermitian decomposition commute.</p>
+<p>Every Hermitian matrix, every $*$-unitary matrix and every scalar matrix is normal. Normality is the condition that the two Hermitian matrices in the Hermitian decomposition commute.</p>
 <p><strong>The Hermitian decomposition.</strong> Every matrix has a unique decomposition</p>
 <p>$$
 X=A+iB,
@@ -244,7 +244,7 @@ $$</p>
 XX^{\dagger}-X^{\dagger}X=2i(BA-AB),
 $$</p>
 <p>so $X$ is normal exactly when $[A,B]=0$. The two Hermitian parts are the real and imaginary parts of the matrix, and normality says that they are simultaneously diagonalisable.</p>
-<p><strong>The spectral theorem.</strong> A $2\times2$ matrix is normal exactly when it is unitarily diagonalisable: there are a unitary $U$ and complex numbers $\lambda_+,\lambda_-$ with</p>
+<p><strong>The spectral theorem.</strong> A $2\times2$ matrix is normal exactly when it is unitarily diagonalisable: there are a $*$-unitary $U$ and complex numbers $\lambda_+,\lambda_-$ with</p>
 <p>$$
 X=U\operatorname{diag}(\lambda_+,\lambda_-)U^{\dagger}.
 $$</p>
@@ -270,7 +270,7 @@ a,b\in\mathbb{C},
 \quad
 \vec n\in\mathbb{R}^3,
 $$</p>
-<p>with $\vec\sigma=(\sigma_1,\sigma_2,\sigma_3)$ and $\vec n$ real, with $\vec n\cdot\vec n$ not necessarily one. The two eigenvalues are $a\pm b\sqrt{\vec n\cdot\vec n}$. The form displays the normal locus as the union of the complex planes spanned by $\mathrm I_2$ and a point of the Bloch sphere, that is, the union of the unitary conjugates of the diagonal algebra.</p>
+<p>with $\vec\sigma=(\sigma_1,\sigma_2,\sigma_3)$ and $\vec n$ real, with $\vec n\cdot\vec n$ not necessarily one. The two eigenvalues are $a\pm b\sqrt{\vec n\cdot\vec n}$. The form displays the normal locus as the union of the complex planes spanned by $\mathrm I_2$ and a point of the Bloch sphere, that is, the union of the $*$-unitary conjugates of the diagonal algebra.</p>
 <p><strong>The algebra reading.</strong> In the model $X=\mathsf{M}_2(\tilde Q)$, the matrix is normal exactly when</p>
 <p>$$
 [\vec Q,\bar{\vec Q}]=0,
@@ -291,14 +291,14 @@ $$</p>
 <p>$$
 \tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)=\tfrac12\Bigl(e_t\mp i\frac{\vec p}{|\vec p|}\Bigr)
 $$</p>
-<p>are Hermitian idempotents, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, and their product vanishes. Conversely, if the spectral idempotents are Hermitian, $\vec\Xi$ is pure imaginary and $\vec Q=iB\vec\Xi$ is a complex scalar times a real vector. In a unitary eigenbasis the star exchanges the two nilpotents, $\vec\Upsilon_-^{*}=\vec\Upsilon_+$, and the two idempotents are the orthogonal spectral projectors.</p>
+<p>are Hermitian idempotents, $\tilde\Pi_\pm^{*}=\tilde\Pi_\pm$, and their product vanishes. Conversely, if the spectral idempotents are Hermitian, $\vec\Xi$ is pure imaginary and $\vec Q=iB\vec\Xi$ is a complex scalar times a real vector. In a $*$-unitary eigenbasis the star exchanges the two nilpotents, $\vec\Upsilon_-^{*}=\vec\Upsilon_+$, and the two idempotents are the orthogonal spectral projectors.</p>
 <p><strong>The three normal types.</strong> For a normal matrix with distinct eigenvalues:</p>
 <ul>
 <li>$X$ is Hermitian exactly when $\lambda_\pm\in\mathbb{R}$; then $\vec Q$ is pure imaginary.</li>
-<li>$X$ is unitary exactly when $|\lambda_\pm|=1$.</li>
+<li>$X$ is $*$-unitary exactly when $|\lambda_\pm|=1$.</li>
 <li>$X$ is both exactly when $\lambda_\pm=\pm1$, that is, when $X$ is an involution.</li>
 </ul>
-<p>A normal matrix with a repeated eigenvalue is scalar: it is unitarily diagonalisable with equal diagonal entries. The scalar is Hermitian when the scalar is real and unitary when its modulus is one.</p>
+<p>A normal matrix with a repeated eigenvalue is scalar: it is unitarily diagonalisable with equal diagonal entries. The scalar is Hermitian when the scalar is real and $*$-unitary when its modulus is one.</p>
 <p><strong>The example.</strong> The normal matrix</p>
 <p>$$
 N=\begin{pmatrix}1&1\\-1&1\end{pmatrix}
@@ -308,8 +308,8 @@ $$</p>
 \mathsf M_2(\tilde\Pi_\pm)=\tfrac12(\mathrm I_2\pm\sigma_2)
 =\tfrac12\begin{pmatrix}1&\mp i\\\pm i&1\end{pmatrix},
 $$</p>
-<p>the orthogonal projectors onto the eigenvectors $(1,i)$ and $(1,-i)$ respectively. The eigenvalues are $1\pm i$, neither real nor of modulus one: the matrix is normal, but neither Hermitian nor unitary. The example is computed with the other seven in <em>$M_2(\mathbb{C})$ Representation : Worked Examples</em>.</p>
-<p><strong>What the normal case adds to the eigenbasis.</strong> In the normal case the diagonalising matrix can be chosen unitary. The freedom of the change is then the freedom of multiplying by a diagonal unitary, not an arbitrary invertible diagonal matrix. The Lagrange formula for the projectors is the same as in the general case; only the Hermitian property is new. The normal case is the exact intersection of the eigenbasis construction with the spectral theorem.</p>
+<p>the orthogonal projectors onto the eigenvectors $(1,i)$ and $(1,-i)$ respectively. The eigenvalues are $1\pm i$, neither real nor of modulus one: the matrix is normal, but neither Hermitian nor $*$-unitary. The example is computed with the other seven in <em>$M_2(\mathbb{C})$ Representation : Worked Examples</em>.</p>
+<p><strong>What the normal case adds to the eigenbasis.</strong> In the normal case the diagonalising matrix can be chosen $*$-unitary. The freedom of the change is then the freedom of multiplying by a diagonal $*$-unitary, not an arbitrary invertible diagonal matrix. The Lagrange formula for the projectors is the same as in the general case; only the Hermitian property is new. The normal case is the exact intersection of the eigenbasis construction with the spectral theorem.</p>
 <h2 id="change-from-one-element-to-another">Change from One Element to Another</h2>
 <p><strong>The transition matrix.</strong> Let $\tilde Q$ and $\tilde Q'$ be two spectrally regular elements, with diagonalising matrices $\mathsf{C}_Q$ and $\mathsf{C}_{Q'}$. The matrix</p>
 <p>$$
@@ -332,7 +332,7 @@ $$</p>
 <p><strong>The diagonal form is not preserved by a general change.</strong> A transition matrix between two different spectral elements does not preserve the diagonal subalgebra unless the two elements have the same eigenbasis. The diagonal form is attached to one element, and the change to another element mixes the two eigenvalues. The statement is the matrix form of the fact that two spectrally regular elements are simultaneously diagonalisable exactly when they commute.</p>
 <p><strong>The commuting case.</strong> If $\tilde Q$ and $\tilde Q'$ commute, their spectral directions are parallel or the elements are scalar on the same two lines, and the transition matrix is diagonal. Then the two eigenbases coincide up to rescaling, and the two elements are simultaneously diagonal. The statement is the spectral theorem for a commuting family, read in the matrix model.</p>
 <h2 id="summary">Summary</h2>
-<p>The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ multiplies as the matrix units $E_{11},E_{12},E_{21},E_{22}$; in the coordinate model the element is diagonal with entries $\lambda_+,\lambda_-$ and vanishing mixed coordinates. The diagonalising matrix $\mathsf{C}_Q$ has the two eigenvectors as columns, has determinant $2B(B-Q_z)$, and satisfies $\mathsf{C}_Q^{-1}M\mathsf{C}_Q=\operatorname{diag}(\lambda_+,\lambda_-)$; a second chart covers the axis $B=Q_z$. The matrix is defined up to a nonzero scalar and an invertible diagonal right factor, which are the rescalings of the two eigenvectors. Transitions between two spectral elements satisfy the cocycle identity and preserve the diagonal form only when the elements commute. In the normal case the diagonalising matrix can be chosen unitary and the spectral projectors Hermitian; the normal elements are exactly those whose vector part is a complex scalar times a real vector.</p>
+<p>The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ multiplies as the matrix units $E_{11},E_{12},E_{21},E_{22}$; in the coordinate model the element is diagonal with entries $\lambda_+,\lambda_-$ and vanishing mixed coordinates. The diagonalising matrix $\mathsf{C}_Q$ has the two eigenvectors as columns, has determinant $2B(B-Q_z)$, and satisfies $\mathsf{C}_Q^{-1}M\mathsf{C}_Q=\operatorname{diag}(\lambda_+,\lambda_-)$; a second chart covers the axis $B=Q_z$. The matrix is defined up to a nonzero scalar and an invertible diagonal right factor, which are the rescalings of the two eigenvectors. Transitions between two spectral elements satisfy the cocycle identity and preserve the diagonal form only when the elements commute. In the normal case the diagonalising matrix can be chosen $*$-unitary and the spectral projectors Hermitian; the normal elements are exactly those whose vector part is a complex scalar times a real vector.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
