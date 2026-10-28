@@ -565,9 +565,9 @@ A unit element carries its own glyph, the **$u$** in the two cases, beside the r
 
 | Layer | Glyph | The norm | The condition | The norm-one elements |
 |---|---|---|---|---|
-| $\mathbb{R}$ | — | $N(q)=q^{2}$ | $q=\pm1$ | $\{\pm1\}=O(1)$ |
-| $\mathbb{C}$ | $U$ | $\langle Q\rangle_{*}=Q\bar Q$ | $\lvert Q\rvert=1$ | $\mathrm{U}(1)=S^{1}$ |
-| $\mathbb{D}$, split-complex | $U$ | $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$ | $q^{2}-q'^{2}=1$ | the unit hyperbola, two branches |
+| $\mathbb{R}$ | — | $\langle q\rangle=q^{2}$ | $q=\pm1$ | $\{\pm1\}=O(1)$ |
+| $\mathbb{C}$ | $U$ | $\lvert Q\rvert=(Q\bar Q)^{1/2}$, the modulus | $\lvert Q\rvert=1$ | $\mathrm{U}(1)=S^{1}$ |
+| $\mathbb{D}$, split-complex | $U$ | $Q\bar Q=q^{2}-q'^{2}$, the split norm | $Q\bar Q=1$ | the unit hyperbola, two branches |
 | $\mathbb{D}'$, dual | $U$ | $\langle Q\rangle=q^{2}$ | $q=\pm1$, $q'$ free | the two lines $\pm1+\mathrm{M}$; the identity component is the shear group |
 | $\mathbb{B}_{\mathrm{r}}$, reduced biquaternion | $U$ | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | $\langle\breve Q\rangle_{\mathrm{ts}}=1$ | the reduced-norm quadric |
 | $\mathbb{H}$, quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $Sp(1)=S^{3}=\mathrm{SU}(2)$ |
@@ -575,7 +575,7 @@ A unit element carries its own glyph, the **$u$** in the two cases, beside the r
 | $\mathbb{B}$, biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ and no other | $\langle\tilde Q\rangle_{\natural}=e_t$ | $\mathbb{B}^{\times}_{1}\cong\mathrm{SL}(2,\mathbb{C})$ |
 | $\mathbb{H}_{\mathbb{D}}$, split-biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ | $\langle\tilde Q\rangle_{\natural}=e_t$ | $S^{3}\times S^{3}$ |
 
-**Where the norm is indefinite, the sign is not part of the glyph.** In $\mathbb{D}$ the level set $\langle Q\rangle_{*}=1$ is the two-branched hyperbola; the polar decomposition of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* takes its unit factor on $\lvert\langle u\rangle_{*}\rvert=1$, four branches, because the sign of the norm is a regime carried by that factor. In $\mathbb{B}_{\mathrm{r}}$ the reduced norm cuts the quadric of the table, while *Modulus–Unit Polar Decomposition of Reduced Biquaternions* puts its unit factor on the bar-unitary torus and states that the torus is not a norm-one set. The glyph follows the level set $\mathrm{Norm}=1$; a modulus-one factor of an indefinite layer is not a second meaning of the glyph.
+**Where the norm is indefinite, the sign is not part of the glyph.** In $\mathbb{D}$ the level set $Q\bar Q=1$ is the two-branched hyperbola; the polar decomposition of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* takes its unit factor on $\lvert Q\bar Q\rvert=1$, four branches, because the sign of the norm is a regime carried by that factor. In $\mathbb{B}_{\mathrm{r}}$ the reduced norm cuts the quadric of the table, while *Modulus–Unit Polar Decomposition of Reduced Biquaternions* puts its unit factor on the bar-unitary torus and states that the torus is not a norm-one set. The glyph follows the level set $\mathrm{Norm}=1$; a modulus-one factor of an indefinite layer is not a second meaning of the glyph.
 
 **The biquaternion layer uses $N$ and only $N$.** The glyph $\tilde U$ is the $N$-norm-one element,
 
