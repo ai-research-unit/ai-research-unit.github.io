@@ -71,7 +71,7 @@ for $F=B,N,H,K$; hence each involution is an isometry of $\mathbb{B}_{\mathrm{r}
 | $\langle\cdot\rangle_{*}$ | $\langle \breve Q\rangle_{*}=1$, that is $q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}-q_{\blacktriangledown}^{2}-{q'_{\blacktriangledown}}^{2}=1$ | a one-sheeted hyperboloid of signature $(2,2)$ |
 | $\langle\cdot\rangle_{\mathrm{ts}*}$ | $\langle \breve Q\rangle_{\mathrm{ts}*}=1$, that is $q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}=1$ | the Euclidean sphere $S^{3}$ |
 
-**Theorem (the unit sets).** The level sets are the unit sets of the four products relative to their norms, by the unitary convention; the level set of $\langle\cdot\rangle_{\mathrm{ts}*}$ is the compact sphere $S^{3}$, that of $\langle\cdot\rangle_{\mathrm{ts}}$ is the non-compact hyperboloid of the units, and the level sets of $\langle\cdot\rangle$ and $\langle\cdot\rangle_{*}$ are the complex quadric and the indefinite hyperboloid.
+**Theorem (the unit sets).** The level sets are the unit sets of the four products relative to their norms, by the $*$-unitary convention; the level set of $\langle\cdot\rangle_{\mathrm{ts}*}$ is the compact sphere $S^{3}$, that of $\langle\cdot\rangle_{\mathrm{ts}}$ is the non-compact hyperboloid of the units, and the level sets of $\langle\cdot\rangle$ and $\langle\cdot\rangle_{*}$ are the complex quadric and the indefinite hyperboloid.
 
 *Proof.* Each level set is the norm-one set of its form, as *Conventions in Mathematics*, §*The Unitary Convention*, records; the shapes are those of *The Forms of the Algebra of the Reduced Biquaternions*, and the compactness of the sphere is the positive definiteness of $\langle\cdot\rangle_{\mathrm{ts}*}$.
 

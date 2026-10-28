@@ -59,9 +59,9 @@ $$
 \|\tilde{Q}^{\natural}\|_E=\|\bar{\tilde{Q}}\|_E=\|\tilde{Q}^{*}\|_E=\|\tilde{Q}\|_E .
 $$
 
-Moreover, for every unitary biquaternion $\tilde Q$ the inner conjugation $\Theta_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$ is a Euclidean isometry.
+Moreover, for every $*$-unitary biquaternion $\tilde Q$ the inner conjugation $\Theta_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$ is a Euclidean isometry.
 
-**Proof.** A central multiplier scales every coefficient by $A$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\mathsf{M}_2$ carries $\Theta_{\tilde Q}$ to $M\mapsto M_{\tilde Q}XM_{\tilde Q}^{\dagger}$ with $M_{\tilde Q}$ unitary, and the Frobenius norm is invariant under unitary similarity.
+**Proof.** A central multiplier scales every coefficient by $A$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\mathsf{M}_2$ carries $\Theta_{\tilde Q}$ to $M\mapsto M_{\tilde Q}XM_{\tilde Q}^{\dagger}$ with $M_{\tilde Q}$ $*$-unitary, and the Frobenius norm is invariant under $*$-unitary similarity.
 
 ## The Contractibility of the Algebra
 
@@ -104,7 +104,7 @@ and $\tilde{Q}_0$ is $\natural$-degenerate, a zero divisor. Hence $S^{7}_{E}\not
 
 **Proof.** The null cone is a real algebraic cone of real dimension $6$ with its only singular point at the origin (*The Topology of the Zero-Divisor Cone*); intersecting the smooth part with the transverse unit sphere and removing the origin gives a compact smooth manifold of dimension $6-1=5$, the link. The identification of the link with $S^{2}\times S^{3}$ is the theorem of *The Topology of the Zero-Divisor Cone*.
 
-**Remark (the one sphere the topological norm defines).** The Euclidean sphere $S^{7}_{E}$ is the only sphere the topological norm of the space defines. The level sets of the algebra that carry a group structure — the compact subgroup $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ of the unitary elements and the group developed in *The Biquaternion Unit Group as a Topological Group* — are not level sets of the topological norm, and their topology is proved in *The Unitary Group of the Biquaternion Algebra*.
+**Remark (the one sphere the topological norm defines).** The Euclidean sphere $S^{7}_{E}$ is the only sphere the topological norm of the space defines. The level sets of the algebra that carry a group structure — the compact subgroup $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ of the $*$-unitary elements and the group developed in *The Biquaternion Unit Group as a Topological Group* — are not level sets of the topological norm, and their topology is proved in *The Unitary Group of the Biquaternion Algebra*.
 
 ## The Euclidean Space and the Duality
 
@@ -112,11 +112,11 @@ The real inner product $(\cdot,\cdot)_{\mathbb{R}}$ makes $\mathbb{B}$ a Euclide
 
 **The Riesz duality.** Every $\mathbb{R}$-linear functional on $\mathbb{B}$ is $(\tilde{Q}_2,\cdot)_{\mathbb{R}}$ for a unique $\tilde{Q}_2$. This is the finite-dimensional Riesz representation theorem, and it is what makes the adjoint operations of the operator articles well defined.
 
-**The Riemannian metric.** $(\cdot,\cdot)_{\mathbb{R}}$ is the flat Riemannian metric of $\mathbb{B}\cong\mathbb{R}^{8}$; the orthogonal group $O(8)$ is its isometry group, and the $\mathbb{C}$-linear isometries that preserve the algebra structure are exactly the inner automorphisms by the unitary biquaternions, of group $PU(2)\cong SO(3)$ (*Biquaternion Automorphisms and Derivations*). Over $\mathbb{R}$ the coefficient conjugation adds one more coset, since it is an $\mathbb{R}$-algebra automorphism of unit Euclidean norm, so the real-linear automorphisms that are Euclidean isometries form $PU(2)\rtimes\mathbb{Z}/2$.
+**The Riemannian metric.** $(\cdot,\cdot)_{\mathbb{R}}$ is the flat Riemannian metric of $\mathbb{B}\cong\mathbb{R}^{8}$; the orthogonal group $O(8)$ is its isometry group, and the $\mathbb{C}$-linear isometries that preserve the algebra structure are exactly the inner automorphisms by the $*$-unitary biquaternions, of group $PU(2)\cong SO(3)$ (*Biquaternion Automorphisms and Derivations*). Over $\mathbb{R}$ the coefficient conjugation adds one more coset, since it is an $\mathbb{R}$-algebra automorphism of unit Euclidean norm, so the real-linear automorphisms that are Euclidean isometries form $PU(2)\rtimes\mathbb{Z}/2$.
 
 ## Summary
 
-The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$, and central multipliers, the conjugations and inner conjugations by unitary elements are Euclidean isometries. The algebra is contractible, as is each of its remarkable subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the null cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in *The Biquaternion Unit Group as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*.
+The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coefficient map is a linear isometry $\mathbb{B}\cong\mathbb{R}^{8}$. Multiplication satisfies the sharp inequality $\|\tilde{Q}_1\tilde{Q}_2\|_E\leq\sqrt2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E$, and central multipliers, the conjugations and inner conjugations by $*$-unitary elements are Euclidean isometries. The algebra is contractible, as is each of its remarkable subspaces, so every map into $\mathbb{B}$ is null-homotopic. The Euclidean unit sphere $S^{7}_{E}$ is a genuine $S^{7}$ but is not a group and contains zero divisors; its intersection with the null cone is a compact $5$-manifold, the link. The level sets of the algebra that carry a group structure are treated in *The Biquaternion Unit Group as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*.
 
 ## Summary of Notation
 
@@ -135,7 +135,7 @@ The Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, and the coe
 
 - [Topology in the Space of Biquaternions](topology-in-the-space-of-biquaternions.html), for the definitions, the equivalence of norms and the uniqueness of the topology used here
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the zero divisors, their cone and the link used here
-- [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the group of the unitary elements and the retraction of the group of units onto it
+- [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the group of the $*$-unitary elements and the retraction of the group of units onto it
 - [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the matrix reading of $\|\cdot\|_E$
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the invertibility criterion and the group of units
 - John B. Conway, *A Course in Functional Analysis*, 2nd edition (Springer, 1990), for the finite-dimensional inner-product-space facts used here

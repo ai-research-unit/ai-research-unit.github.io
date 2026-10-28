@@ -4,7 +4,7 @@
 
 The **matrix algebra** $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices under the product. It is the ambient algebra of this category: the root, the idempotents, the Peirce corners, the frame, the spin chain and the chiralities are all structures on it. This article fixes the algebra itself: the matrix units, the trace, the determinant, the centre, the simplicity, the real dimension, the unit group $GL_4(\mathbb{C})$ and the projective group $PGL_4(\mathbb{C})$.
 
-Throughout, $M_4=M_4(\mathbb{C})=\operatorname{End}(\mathbb{C}^4)$, $I$ is the identity, and $A^*=\bar A^{\mathsf T}$ is the conjugate transpose. No form, no norm and no topology are used; the positive definite trace form and the topology are *The Involution and the Hermitian Structure* and *The Topology of $M_4(\mathbb{C})$*. The element, its coordinates and the trace are *The Element, the Coordinates and the Trace*.
+Throughout, $M_4=M_4(\mathbb{C})=\operatorname{End}(\mathbb{C}^4)$, $I$ is the identity, and $A^*=\bar A^{\mathsf T}$ is the conjugate transpose. No positive definite form, no norm and no topology are used; the positive definite trace form and the topology are *The Involution and the Hermitian Structure* and *The Topology of $M_4(\mathbb{C})$*. The element, its coordinates and the trace are *The Element, the Coordinates and the Trace*.
 
 The algebra is **central simple** of complex dimension $16$ and real dimension $32$. It has centre $\mathbb{C}I$, no proper two-sided ideal, and many zero divisors. Its unit group is $GL_4(\mathbb{C})$, of complex dimension $16$; its projective group is $PGL_4(\mathbb{C})$, of complex dimension $15$. The group $PGL_4$ is the group of frames modulo overall scale, and it is the group that acts on the root and on the gauge in the articles that follow.
 
@@ -142,7 +142,7 @@ $$
 (A,B)\longmapsto\operatorname{tr}(AB)
 $$
 
-is symmetric and non-degenerate, because $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$ and the matrix of the pairing in the unit basis is a permutation matrix. It is not positive definite: $\operatorname{tr}(A^2)$ can be negative or zero for $A\ne0$. The positive definite form is $\operatorname{tr}(A^*B)$, and it is a different object; it belongs to *The Involution and the Hermitian Structure*.
+is symmetric and non-degenerate, because $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$ and the matrix of the pairing in the unit basis is a permutation matrix. It is not positive definite: $\operatorname{tr}(A^2)$ can be negative for real $A$, and it can be zero for $A\ne0$. The positive definite form is $\operatorname{tr}(A^*B)$, and it is a different object; it belongs to *The Involution and the Hermitian Structure*.
 
 ## The Centre and the Simplicity
 
@@ -260,7 +260,7 @@ $$
 J:M_4\longrightarrow M_4,\qquad J(A)=iA,
 $$
 
-with $J^2=-\mathrm{id}$. It is not complex-linear; it is the complex structure that makes the real algebra into a complex algebra. The real algebra $M_4(\mathbb{C})$ is the complexification of the real algebra $M_4(\mathbb{R})$:
+with $J^2=-\mathrm{id}$. It is complex-linear as a map of the complex vector space, and it is the complex structure that exhibits the real algebra as a complex algebra. The real algebra $M_4(\mathbb{C})$ is the complexification of the real algebra $M_4(\mathbb{R})$:
 
 $$
 M_4(\mathbb{C})=\mathbb{C}\otimes_{\mathbb{R}}M_4(\mathbb{R}).
@@ -293,17 +293,17 @@ $$
 \mathfrak{u}(4)=\{A:A^*=-A\}
 $$
 
-have real dimensions $16$ each, and $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ as a real vector space. The skew-Hermitian space is the Lie algebra $\mathfrak{u}(4)$ of the unitary group; its traceless part is $\mathfrak{su}(4)$, of real dimension $15$.
+have real dimensions $16$ each, and $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ as a real vector space. The skew-Hermitian space is the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group; its traceless part is $\mathfrak{su}(4)$, of real dimension $15$. As a complex Lie algebra, $M_4(\mathbb{C})=\mathfrak{u}(4)\otimes_{\mathbb{R}}\mathbb{C}=\mathfrak{u}(4)\oplus i\mathfrak{u}(4)$, with the Hermitian matrices $i\mathfrak{u}(4)$.
 
-**The unitary groups.** The **unitary group** is
+**The $*$-unitary groups.** The **$*$-unitary group** is
 
 $$
 U(4)=\{U:U^*U=I\},
 $$
 
-of real dimension $16$, and the **special unitary group** is $SU(4)=U(4)\cap SL_4(\mathbb{C})$, of real dimension $15$. The projective unitary group $PU(4)=U(4)/U(1)$ is a maximal compact subgroup of $PGL_4(\mathbb{C})$. These groups are used in *The Polar Decomposition* and *The Exponential and the Lie Group*; the present article only records the real structure.
+of real dimension $16$, and the **special $*$-unitary group** is $SU(4)=U(4)\cap SL_4(\mathbb{C})$, of real dimension $15$. The projective $*$-unitary group $PU(4)=U(4)/U(1)$ is a maximal compact subgroup of $PGL_4(\mathbb{C})$. These groups are used in *The Polar Decomposition* and *The Exponential and the Lie Group*; the present article only records the real structure.
 
-**No form is used.** The Hermitian involution defines the positive definite trace form $\operatorname{tr}(A^*B)$ on the real space, but this article does not use it. The algebraic statements above — centre, simplicity, trace, determinant, groups — are independent of any form. The one form that does appear, the bilinear pairing $\operatorname{tr}(AB)$, is indefinite and is not the Hermitian form.
+**No positive definite form is used.** The Hermitian involution defines the positive definite trace form $\operatorname{tr}(A^*B)$ on the real space, but this article does not use it. The algebraic statements above — centre, simplicity, trace, determinant, groups — are independent of any form. The one form that does appear, the bilinear pairing $\operatorname{tr}(AB)$, is indefinite and is not the Hermitian form.
 
 ## The Full Algebra and the Regular Model
 
@@ -319,7 +319,7 @@ $$
 L:\mathbb{B}\longrightarrow\operatorname{End}_\mathbb{C}(\mathbb{B})\cong M_4(\mathbb{C}),
 $$
 
-and the image is a four-dimensional subalgebra of $M_4(\mathbb{C})$ isomorphic to $\mathbb{B}$. The $M_4(\mathbb{C})_L$ articles study that image: its matrix product, its trace, its determinant (the biquaternion norm), its spectral projectors and its Peirce coordinates. The subscript $L$ records that the matrices are matrices of left multiplication.
+and the image is a four-dimensional subalgebra of $M_4(\mathbb{C})$ isomorphic to $\mathbb{B}$. The $M_4(\mathbb{C})_L$ articles study that image: its matrix product, its trace, its determinant (the square of the biquaternion norm), its spectral projectors and its Peirce coordinates. The subscript $L$ records that the matrices are matrices of left multiplication.
 
 **The full algebra is sixteen-dimensional.** The algebra $M_4(\mathbb{C})$ of this category is the whole of $\operatorname{End}(\mathbb{C}^4)$, of complex dimension $16$. It contains many four-dimensional subalgebras isomorphic to $M_2(\mathbb{C})$, one for each embedding, and the regular model is one of them. The full algebra has sixteen matrix units, sixteen Peirce lines and a sixteen-dimensional adjoint representation; the regular model has four matrix units in its own basis, four Peirce lines and a four-dimensional adjoint representation.
 
@@ -329,7 +329,7 @@ and the image is a four-dimensional subalgebra of $M_4(\mathbb{C})$ isomorphic t
 
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The unit group is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and skew-Hermitian parts of real dimension $16$ each, and the unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_L$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified.
+The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The unit group is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and skew-Hermitian parts of real dimension $16$ each, and the $*$-unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_L$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified.
 
 $$
 \boxed{\ \dim_\mathbb{C}M_4(\mathbb{C})=16,\quad \dim_\mathbb{R}=32,\quad Z(M_4)=\mathbb{C}I,\quad \dim_\mathbb{C}PGL_4=15,\quad \dim_\mathbb{C}SL_4=15.\ }

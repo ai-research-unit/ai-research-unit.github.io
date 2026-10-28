@@ -4,20 +4,20 @@
 
 A Kraus operator is the amplitude of one outcome, not the outcome itself. The probability of the outcome is the trace of the effect $\tilde K^{*}\tilde K$; the post-measurement state is the normalized image $\tilde K\tilde{Ϛ}\tilde K^{*}$; and the element $\tilde K$ carries both, together with a phase that the probability discards. This article asks what the polar decomposition of $\tilde K$ says about the three objects.
 
-The thesis is one sentence. **Every Kraus operator factors as $\tilde K=\tilde K_H\tilde K_0$, with $\tilde K_H$ Hermitian positive semidefinite and $\tilde K_0$ a partial isometry; the positive factor is the outcome's strength, the partial isometry is its backaction, and the effect is the squared strength conjugated by the backaction, $\tilde E=\tilde K^{*}\tilde K=\tilde K_0^{*}\tilde K_H^{2}\tilde K_0$.** Three consequences follow. A one-Kraus channel is trace preserving exactly when the strength is trivial, $\tilde K_H=e_t$, and then the channel is unitary. A sharp outcome has a rank-one amplitude on the null cone, where the strength is a scaled projection and the backaction a partial isometry. And the reversibility of a channel is its Kraus rank, not the strength of any single term: a channel can be a sum of terms whose individual polar factors are unitary and still be irreversible.
+The thesis is one sentence. **Every Kraus operator factors as $\tilde K=\tilde K_H\tilde K_0$, with $\tilde K_H$ Hermitian positive semidefinite and $\tilde K_0$ a partial isometry; the positive factor is the outcome's strength, the partial isometry is its backaction, and the effect is the squared strength conjugated by the backaction, $\tilde E=\tilde K^{*}\tilde K=\tilde K_0^{*}\tilde K_H^{2}\tilde K_0$.** Three consequences follow. A one-Kraus channel is trace preserving exactly when the strength is trivial, $\tilde K_H=e_t$, and then the channel is $*$-unitary. A sharp outcome has a rank-one amplitude on the null cone, where the strength is a scaled projection and the backaction a partial isometry. And the reversibility of a channel is its Kraus rank, not the strength of any single term: a channel can be a sum of terms whose individual polar factors are $*$-unitary and still be irreversible.
 
 The distinction between one Kraus operator, an instrument, and a channel is the source of most misreadings: the polar decomposition is always available for one operator, while the one-Kraus unitarity and the multi-Kraus irreversibility are statements about a channel.
 
 This article is the pilot of the polar programme in the physics corpus: the object is the Kraus operator of a measurement outcome, the examples are two-dimensional, and every numerical claim is checked in the matrix model. It does not derive the measurement postulate or classify channels; it tests the grammar of the generalized Cartan pairing on the object where that grammar has the most work to do.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{M}_+$, the anti-Hermitian subspace is $\mathbb{M}_-$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $|\vec r|\leq1$. The positive factor of the polar decomposition is written $\tilde K_H$ and the partial isometry $\tilde K_0$; they are the $\tilde K_H$ and $\tilde K_0$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde H_R$ and the unitary element $\tilde K_0$ of a channel. The trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{M}_+$, the anti-Hermitian subspace is $\mathbb{M}_-$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $|\vec r|\leq1$. The positive factor of the polar decomposition is written $\tilde K_H$ and the partial isometry $\tilde K_0$; they are the $\tilde K_H$ and $\tilde K_0$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde H_R$ and the $*$-unitary element $\tilde K_0$ of a channel. The trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.
 
 ## The Results It Uses
 
 | result | established in | used here for |
 |---|---|---|
 | the generalized Cartan pairing on all of $\mathbb{B}$ | [*The Polar Decomposition of a Biquaternion*](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), §*The Isometry Factor* | $\tilde K=\tilde K_H\tilde K_0$, $\tilde K_H=\sqrt{\tilde K\tilde K^{*}}$, $\tilde K_0=\tilde K_H^{+}\tilde K$ |
-| the Cartan pairing off the null cone | **The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions**, §*The Statement* | the invertible case, where $\tilde K_0$ is unitary |
+| the Cartan pairing off the null cone | **The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions**, §*The Statement* | the invertible case, where $\tilde K_0$ is $*$-unitary |
 | the positive cone and the Hermitian square root | [*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), §*The Polar Decomposition* | positivity of $\tilde K_H$ and of the effect |
 | the rank-one Hermitian idempotents | [*Square Roots of One and the Idempotents of the Biquaternion Algebra*](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), §*The Classification of the Idempotents* | the sharp outcome $\tilde K=\tilde\Pi$ and the Bloch form of its projections |
 | the zero-divisor cone | [*N-Regularity and N-Degeneracy in the Biquaternion Algebra*](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), §*The Zero Divisor Set* | the boundary where the amplitude loses rank |
@@ -49,10 +49,10 @@ The polar decomposition is a statement about $\tilde K$, not about the channel. 
 | statement | object | condition | content |
 |---|---|---|---|
 | polar form | one Kraus operator | none | $\tilde K=\tilde K_H\tilde K_0$ |
-| one-Kraus channel | the map $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}$ | $\tilde K^{*}\tilde K=e_t$ | $\tilde K$ is unitary, $\tilde K_H=e_t$ |
-| irreversible channel | the sum $\sum_y\tilde K_y\cdot\tilde K_y^{*}$ | minimal Kraus rank $\geq2$ | no single unitary represents the map |
+| one-Kraus channel | the map $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}$ | $\tilde K^{*}\tilde K=e_t$ | $\tilde K$ is $*$-unitary, $\tilde K_H=e_t$ |
+| irreversible channel | the sum $\sum_y\tilde K_y\cdot\tilde K_y^{*}$ | minimal Kraus rank $\geq2$ | no single $*$-unitary represents the map |
 
-The three rows are independent. A single Kraus operator can have a non-trivial $\tilde K_H$ and still be a legitimate outcome of an instrument. A single Kraus operator can have a trivial $\tilde K_H$ and belong to an irreversible channel. A channel can be a sum of two terms whose individual $\tilde K_H$ are scalar and whose individual $\tilde K_0$ are unitary, and still be irreversible.
+The three rows are independent. A single Kraus operator can have a non-trivial $\tilde K_H$ and still be a legitimate outcome of an instrument. A single Kraus operator can have a trivial $\tilde K_H$ and belong to an irreversible channel. A channel can be a sum of two terms whose individual $\tilde K_H$ are scalar and whose individual $\tilde K_0$ are $*$-unitary, and still be irreversible.
 
 ## The Polar Form of a Kraus Operator
 
@@ -83,7 +83,7 @@ $$
 with $\sigma_i\geq0$, and $u_i,v_i$ orthonormal in the matrix model. The two readings are:
 
 - **strength**: the unordered pair $\{\sigma_1,\sigma_2\}$, the eigenvalues of $\tilde K_H$. It is basis-independent; it is the list of singular values of $\tilde K$.
-- **backaction**: the partial isometry $\tilde K_0$, which carries the input direction $v_i$ to the output direction $u_i$. Off the cone it is unitary; on the cone it has rank one.
+- **backaction**: the partial isometry $\tilde K_0$, which carries the input direction $v_i$ to the output direction $u_i$. Off the cone it is $*$-unitary; on the cone it has rank one.
 
 The strength is what the outcome probability can see: the effect has eigenvalues $\sigma_i^{2}$. The backaction is what the probability discards: two amplitudes with the same singular values but different $\tilde K_0$ have the same effect and different post-measurement states.
 
@@ -92,8 +92,8 @@ The domains are fixed once and for all:
 | statement | domain | factors |
 |---|---|---|
 | generalized polar form | every $\tilde K\in\mathbb{B}$, including $0$ | $\tilde K_H\geq0$, $\tilde K_0$ a partial isometry |
-| Cartan pairing off the cone | $\langle\tilde K\rangle_{\natural}\neq0$ | $\tilde K_H>0$, $\tilde K_0$ unitary |
-| one-Kraus channel | $\tilde K^{*}\tilde K=e_t$ | $\tilde K_H=e_t$, $\tilde K_0=\tilde K$ unitary |
+| Cartan pairing off the cone | $\langle\tilde K\rangle_{\natural}\neq0$ | $\tilde K_H>0$, $\tilde K_0$ $*$-unitary |
+| one-Kraus channel | $\tilde K^{*}\tilde K=e_t$ | $\tilde K_H=e_t$, $\tilde K_0=\tilde K$ $*$-unitary |
 | null case | $\langle\tilde K\rangle_{\natural}=0$, $\tilde K\neq0$ | $\operatorname{rank}\tilde K_H=1$, $\tilde K_0$ rank one |
 
 The strength decides the case of the operator, not the case of the channel; the four cases are collected in §*The Three Strata*.
@@ -114,11 +114,11 @@ $$
 \tilde K_H=\sqrt{\tilde K\tilde K^{*}}=e_t,\qquad \tilde K_0=\tilde K,
 $$
 
-and $\tilde K$ is unitary. Conversely, if $\tilde K_H=e_t$ and $\tilde K_0$ is unitary, then $\tilde K=\tilde K_0$ and $\tilde K^{*}\tilde K=e_t$. Therefore:
+and $\tilde K$ is $*$-unitary. Conversely, if $\tilde K_H=e_t$ and $\tilde K_0$ is $*$-unitary, then $\tilde K=\tilde K_0$ and $\tilde K^{*}\tilde K=e_t$. Therefore:
 
-> A one-Kraus channel is trace preserving if and only if its positive factor is trivial; the channel is then conjugation by a unitary biquaternion.
+> A one-Kraus channel is trace preserving if and only if its positive factor is trivial; the channel is then conjugation by a $*$-unitary biquaternion.
 
-This is the reversible case of *Quantum Channels and the Reversible/Irreversible Dichotomy*, read in the polar language. The Hamiltonian $\tilde H_R\in\mathbb{M}_+$ generates the unitary factor through $\tilde K_0=\exp(-i\tilde H_Rt'/\hbar)$, and the generator $-i\tilde H_R/\hbar$ lies in $\mathbb{M}_-$. The polar factor $\tilde K_0$ is the evolution itself; its logarithm is the material generator. The condition $\tilde K_H=e_t$ says that the evolution attenuates nothing.
+This is the reversible case of *Quantum Channels and the Reversible/Irreversible Dichotomy*, read in the polar language. The Hamiltonian $\tilde H_R\in\mathbb{M}_+$ generates the $*$-unitary factor through $\tilde K_0=\exp(-i\tilde H_Rt'/\hbar)$, and the generator $-i\tilde H_R/\hbar$ lies in $\mathbb{M}_-$. The polar factor $\tilde K_0$ is the evolution itself; its logarithm is the material generator. The condition $\tilde K_H=e_t$ says that the evolution attenuates nothing.
 
 ### What Trace Preservation Does Not Say
 
@@ -217,7 +217,7 @@ The formula is not $\tilde E=\tilde K_H^{2}$ in general. The two agree only when
 
 ### The Effect Does Not Determine the Split
 
-The effect determines the singular values, not the factorization. If $\tilde W$ is unitary and $\tilde K'=\tilde W\tilde K$, then
+The effect determines the singular values, not the factorization. If $\tilde W$ is $*$-unitary and $\tilde K'=\tilde W\tilde K$, then
 
 $$
 \tilde K'^{*}\tilde K'=\tilde K^{*}\tilde K=\tilde E,
@@ -260,8 +260,8 @@ The four cases of the amplitude are the four rows of the table. The rank is the 
 
 | stratum | $\operatorname{rank}\tilde K$ | $\tilde K_H$ | $\tilde K_0$ | effect $\tilde E$ | example |
 |---|---|---|---|---|---|
-| unitary | $2$ | $e_t$ | $\tilde K$, unitary | $e_t$ | reversible one-Kraus channel |
-| invertible, not unitary | $2$ | positive definite, $\neq e_t$ | unitary, $\neq\tilde K$ | positive definite, $<e_t$ | unsharp outcome |
+| $*$-unitary | $2$ | $e_t$ | $\tilde K$, $*$-unitary | $e_t$ | reversible one-Kraus channel |
+| invertible, not $*$-unitary | $2$ | positive definite, $\neq e_t$ | $*$-unitary, $\neq\tilde K$ | positive definite, $<e_t$ | unsharp outcome |
 | null, rank one | $1$ | $\sigma\tilde\Pi_{\mathrm f}$, $\sigma>0$ | rank-one partial isometry | $\sigma^{2}\tilde\Pi_{\mathrm i}$ | sharp ($\sigma=1$) or soft ($\sigma<1$) outcome |
 | zero | $0$ | $0$ | $0$ | $0$ | null outcome |
 
@@ -275,7 +275,7 @@ $$
 
 It satisfies $\tilde\Pi^{2}=\tilde\Pi=\tilde\Pi^{*}$ and $\langle\tilde\Pi\rangle_{\natural}=0$, so it is a zero divisor. Its polar factors are $\tilde K_H=\tilde K_0=\tilde\Pi$, because $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ and $\tilde\Pi^{+}=\tilde\Pi$. The effect is $\tilde E=\tilde\Pi$, and the two projections of the partial isometry are both $\tilde\Pi$. The outcome probability for a state $\tilde{Ϛ}$ is $p=\operatorname{Tr}(\tilde{Ϛ}\tilde\Pi)$, and the post-measurement state is $\tilde\Pi$.
 
-The sharp outcome therefore sits exactly on the null cone, and its amplitude is a partial isometry, not a unitary. The "collapse" is the rank drop: the amplitude has rank one, the effect has rank one, and the post-measurement state is a pure state. The mathematical pairing that covers it is the generalized Cartan pairing; the Cartan pairing on $\langle\tilde K\rangle_{\natural}\neq0$ does not.
+The sharp outcome therefore sits exactly on the null cone, and its amplitude is a partial isometry, not a $*$-unitary. The "collapse" is the rank drop: the amplitude has rank one, the effect has rank one, and the post-measurement state is a pure state. The mathematical pairing that covers it is the generalized Cartan pairing; the Cartan pairing on $\langle\tilde K\rangle_{\natural}\neq0$ does not.
 
 A projective measurement of a two-level system is the pair $\tilde\Pi_1,\tilde\Pi_2$ with $\tilde\Pi_1+\tilde\Pi_2=e_t$. Both Kraus operators are null; both effects are idempotent; the instrument is sharp. The resolution of the identity is the statement $\tilde\Pi_1+\tilde\Pi_2=e_t$, not a statement about either factor alone.
 
@@ -283,17 +283,17 @@ A projective measurement of a two-level system is the pair $\tilde\Pi_1,\tilde\P
 
 ### The Invertible Outcome
 
-An outcome is **unsharp** when $\tilde K$ is invertible. Then $\tilde K_H$ is positive definite, $\tilde K_0$ is unitary, and the effect is positive definite. The post-measurement state is
+An outcome is **unsharp** when $\tilde K$ is invertible. Then $\tilde K_H$ is positive definite, $\tilde K_0$ is $*$-unitary, and the effect is positive definite. The post-measurement state is
 
 $$
 \tilde{Ϛ}_y=\frac{\tilde K_H\tilde K_0\tilde{Ϛ}\tilde K_0^{*}\tilde K_H}{p_y}.
 $$
 
-The order is fixed by the word: the unitary factor acts first, then the positive filter. The backaction is the rotation $\tilde K_0$; the filter is the strength $\tilde K_H$ in the output basis. A weak measurement is the regime in which the $\sigma_i$ are close to $1$; the outcome then disturbs the state only slightly, and the effect is close to $e_t$.
+The order is fixed by the word: the $*$-unitary factor acts first, then the positive filter. The backaction is the rotation $\tilde K_0$; the filter is the strength $\tilde K_H$ in the output basis. A weak measurement is the regime in which the $\sigma_i$ are close to $1$; the outcome then disturbs the state only slightly, and the effect is close to $e_t$.
 
 ### A Worked Unsharp Outcome
 
-Take the strength $\tilde H_0=\tfrac{1+\eta}{2}e_t+\tfrac{\eta-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\eta=0.6$ and eigenvalues $0.6$ and $1$, and the unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta=\pi/3$. Set $\tilde K=\tilde Q_{\mathrm{ba}}\tilde H_0$. The polar factors are
+Take the strength $\tilde H_0=\tfrac{1+\eta}{2}e_t+\tfrac{\eta-1}{2}i\vec e_z=0.8e_t-0.2i\vec e_z$ with $\eta=0.6$ and eigenvalues $0.6$ and $1$, and the $*$-unitary backaction $\tilde Q_{\mathrm{ba}}=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec e_x=0.866025404e_t+0.5\vec e_x$ with $\theta=\pi/3$. Set $\tilde K=\tilde Q_{\mathrm{ba}}\tilde H_0$. The polar factors are
 
 $$
 \tilde K_H=\tilde Q_{\mathrm{ba}}\tilde H_0\tilde Q_{\mathrm{ba}}^{*}=0.8e_t+0.173205081i\vec e_y-0.1i\vec e_z,\qquad
@@ -330,7 +330,7 @@ The polar decomposition of the sum is not the sum of the polar decompositions. T
 
 ### The Dichotomy Is the Minimal Number of Terms
 
-A channel is reversible exactly when it has a one-term Kraus representation, and then the term is unitary. It is irreversible exactly when its minimal Kraus rank is at least two. The value of one $\tilde K_H$ does not decide the channel: a term can have $\tilde K_H=e_t$ and the channel can still be irreversible, and a term can have $\tilde K_H\neq e_t$ and the channel can still be reversible if the representation is non-minimal and the map has a one-term form.
+A channel is reversible exactly when it has a one-term Kraus representation, and then the term is $*$-unitary. It is irreversible exactly when its minimal Kraus rank is at least two. The value of one $\tilde K_H$ does not decide the channel: a term can have $\tilde K_H=e_t$ and the channel can still be irreversible, and a term can have $\tilde K_H\neq e_t$ and the channel can still be reversible if the representation is non-minimal and the map has a one-term form.
 
 ### Dephasing as the Counterexample
 
@@ -347,7 +347,7 @@ $$
 \tilde K_1=\sqrt{\tfrac p2}\,Z,\qquad Z=i\vec e_z,
 $$
 
-with $Z$ unitary and $Z^{2}=e_t$. For $0<p<1$ both terms have scalar strength, $\tilde H_{\mathrm{pos},0}=\sqrt{1-p/2}e_t$ and $\tilde H_{\mathrm{pos},1}=\sqrt{p/2}e_t$, and both have unitary backaction, $\tilde U_{\mathrm{p},0}=e_t$ and $\tilde U_{\mathrm{p},1}=Z$. The channel is nevertheless irreversible for every $p>0$, because its minimal Kraus rank is two. At $p=0$ the second term vanishes and the channel is the identity; at $p=1$ the two terms are $e_t/\sqrt2$ and $Z/\sqrt2$ and the channel is fully dephasing.
+with $Z$ $*$-unitary and $Z^{2}=e_t$. For $0<p<1$ both terms have scalar strength, $\tilde H_{\mathrm{pos},0}=\sqrt{1-p/2}e_t$ and $\tilde H_{\mathrm{pos},1}=\sqrt{p/2}e_t$, and both have $*$-unitary backaction, $\tilde U_{\mathrm{p},0}=e_t$ and $\tilde U_{\mathrm{p},1}=Z$. The channel is nevertheless irreversible for every $p>0$, because its minimal Kraus rank is two. At $p=0$ the second term vanishes and the channel is the identity; at $p=1$ the two terms are $e_t/\sqrt2$ and $Z/\sqrt2$ and the channel is fully dephasing.
 
 The example states the article's negative thesis. The reversibility of a channel is not the triviality of a single strength and not the unitarity of a single backaction. It is the minimal number of terms in the sum.
 
@@ -355,11 +355,11 @@ The example states the article's negative thesis. The reversibility of a channel
 
 The polar form separates two questions that the outcome probability answers together. The strength answers **how much** the outcome responds to each direction; the backaction answers **which way** the state is carried when the outcome occurs. The probability is the trace of the effect, so it sees only the squares of the strengths. The post-measurement state sees the backaction as well. Two amplitudes with the same effect but different $\tilde K_0$ are indistinguishable in their statistics and distinguishable in their aftermath; the polar form is what makes the difference explicit.
 
-The unitary stratum is the case of no filter. The outcome rotates the state and does not weight it; if it is the whole channel, the process is reversible and its generator is a Hamiltonian in $\mathbb{M}_-$. The invertible stratum is the unsharp outcome: the state is rotated and then weighted, no direction is annihilated, and the effect lies strictly inside the effect body. The null stratum is the sharp or soft rank-one outcome: the amplitude projects onto a line, the effect is rank one, and the post-measurement state is pure. The three strata are the three physical regimes of a measurement outcome, read from the rank of the amplitude.
+The $*$-unitary stratum is the case of no filter. The outcome rotates the state and does not weight it; if it is the whole channel, the process is reversible and its generator is a Hamiltonian in $\mathbb{M}_-$. The invertible stratum is the unsharp outcome: the state is rotated and then weighted, no direction is annihilated, and the effect lies strictly inside the effect body. The null stratum is the sharp or soft rank-one outcome: the amplitude projects onto a line, the effect is rank one, and the post-measurement state is pure. The three strata are the three physical regimes of a measurement outcome, read from the rank of the amplitude.
 
 The null cone is the **measurement boundary** in a precise but limited sense. It is the locus where the amplitude loses rank, the boundary of the positive cone, and the boundary between the invertible and the rank-one outcomes. It is not a boundary in space or time, and it is not a dynamical condition that says when a measurement occurs. The algebra classifies the amplitude; it does not select it. The companion article *The Measurement Problem in Algebraic Form* owns that distinction, and this article does not improve on it.
 
-The channel-level statement is the correction that the polar programme makes to a natural but false reading. It is tempting to say that a process is reversible when its positive factor is trivial, or that a process is a measurement when its backaction is a projector. Neither is a statement about a channel. A channel is a sum, and its reversibility is the minimal number of terms. The dephasing channel is the counterexample: two scalar strengths and two unitary backactions, and an irreversible map.
+The channel-level statement is the correction that the polar programme makes to a natural but false reading. It is tempting to say that a process is reversible when its positive factor is trivial, or that a process is a measurement when its backaction is a projector. Neither is a statement about a channel. A channel is a sum, and its reversibility is the minimal number of terms. The dephasing channel is the counterexample: two scalar strengths and two $*$-unitary backactions, and an irreversible map.
 
 ## What This Does Not Claim
 
@@ -367,7 +367,7 @@ The channel-level statement is the correction that the polar programme makes to 
 - It does not classify channels by the polar factor of one Kraus operator. The channel dichotomy is the minimal Kraus rank; the polar factor is a property of a term.
 - It does not identify $\tilde K_H$ with a physical field or $\tilde K_0$ with a force. The strength and backaction are readings of the amplitude, not new dynamics.
 - It does not claim that the null cone is a physical boundary in space or time. It is the singular locus of the algebra.
-- It does not resolve the measurement problem. It restates the classification of the acting element; the selection of the outcome and of the unitary-versus-idempotent case is not in the algebra.
+- It does not resolve the measurement problem. It restates the classification of the acting element; the selection of the outcome and of the $*$-unitary-versus-idempotent case is not in the algebra.
 - It does not treat continuous POVMs, non-completely-positive maps, or the polar decomposition of a channel as a superoperator.
 
 ## Summary
@@ -378,16 +378,16 @@ The channel-level statement is the correction that the polar programme makes to 
 |---|---|
 | polar form | $\tilde K=\tilde K_H\tilde K_0$, $\tilde K_H=\sqrt{\tilde K\tilde K^{*}}$, $\tilde K_0=\tilde K_H^{+}\tilde K$ |
 | strength | the singular values $\sigma_i$, the eigenvalues of $\tilde K_H$ |
-| backaction | the partial isometry $\tilde K_0$, unitary off the cone, rank one on it |
+| backaction | the partial isometry $\tilde K_0$, $*$-unitary off the cone, rank one on it |
 | effect | $\tilde E=\tilde K^{*}\tilde K=\tilde K_0^{*}\tilde K_H^{2}\tilde K_0$, eigenvalues $\sigma_i^{2}$ |
 | four factors | $\tilde K=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, $\tilde K_H=r\tilde U_{\mathrm b}$, $\tilde K_0=e^{i\alpha}\tilde u_{\mathrm r}$ |
 | effect in the word | eigenvalues $r^{2}e^{\pm\psi_w}$; admissible iff $r^{2}e^{\psi_w}\le1$ |
-| one-Kraus channel | $\tilde K^{*}\tilde K=e_t$ iff $\tilde K_H=e_t$ and $\tilde K_0=\tilde K$ unitary |
+| one-Kraus channel | $\tilde K^{*}\tilde K=e_t$ iff $\tilde K_H=e_t$ and $\tilde K_0=\tilde K$ $*$-unitary |
 | sharp outcome | $\tilde K=\tilde\Pi$: $\tilde K_H=\tilde K_0=\tilde\Pi$, $\tilde E=\tilde\Pi$, on the null cone |
 | soft rank-one outcome | $\tilde K=\sigma\tilde\Pi$: $\tilde K_H=\sigma\tilde\Pi$, $\tilde K_0=\tilde\Pi$, $\tilde E=\sigma^{2}\tilde\Pi$ |
-| unsharp outcome | $\tilde K$ invertible: $\tilde K_H>0$, $\tilde K_0$ unitary, $\tilde E>0$ |
+| unsharp outcome | $\tilde K$ invertible: $\tilde K_H>0$, $\tilde K_0$ $*$-unitary, $\tilde E>0$ |
 | channel | $\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t$; reversible iff minimal Kraus rank one |
-| dephasing | two scalar strengths and two unitary backactions, minimal Kraus rank two, irreversible for $p>0$ |
+| dephasing | two scalar strengths and two $*$-unitary backactions, minimal Kraus rank two, irreversible for $p>0$ |
 
 ## Summary of Notation
 
@@ -407,21 +407,21 @@ The channel-level statement is the correction that the polar programme makes to 
 | $\tilde\Pi_{\mathrm i}=\tilde K_0^{*}\tilde K_0$, $\tilde\Pi_{\mathrm f}=\tilde K_0\tilde K_0^{*}$ | initial and final projections of $\tilde K_0$ |
 | $\sigma_i$ | singular values of $\tilde K$, eigenvalues of $\tilde K_H$ |
 | $\Phi(\tilde{Ϛ})=\sum_l\tilde K_l\tilde{Ϛ}\tilde K_l^{*}$ | channel |
-| $Z=i\vec e_z$ | the unitary Pauli-$z$ element, $Z^{2}=e_t$ |
+| $Z=i\vec e_z$ | the $*$-unitary Pauli-$z$ element, $Z^{2}=e_t$ |
 | $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | trace convention |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | biquaternion norm (determinant) |
 
 ## Further Reading
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the theorem, its uniqueness with the initial and final projections, and the rank-one case.
-- *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the pairing off the null cone and the unitary factor.
+- *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the pairing off the null cone and the $*$-unitary factor.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the four-factor word and the action of each factor on the two sectors.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone and the Hermitian square root.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the rank-one idempotents and the Bloch sphere.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone and its singular locus.
 - [Quantum Channels and the Reversible/Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), for the Kraus representation, the channel dichotomy, and the dephasing channel.
 - [POVMs and the Positive Cone in Biquaternionic Form](povms-and-the-positive-cone-in-biquaternionic-form.html), for effects, the effect body, and the Born rule.
-- [The Measurement Problem in Algebraic Form](the-measurement-problem-in-algebraic-form.html), for the selection problem and the unitary-versus-idempotent acting element.
+- [The Measurement Problem in Algebraic Form](the-measurement-problem-in-algebraic-form.html), for the selection problem and the $*$-unitary-versus-idempotent acting element.
 - [Decoherence as Idempotent Projection](decoherence-as-idempotent-projection.html), for the dephasing channel and the pointer basis.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), for the state space and the measurement update.
 - [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), for the trace reading of the Born weight.

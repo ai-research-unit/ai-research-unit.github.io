@@ -171,7 +171,7 @@ U\in U(2),\quad V\in U(4),\quad
 \Sigma=\begin{pmatrix}\sigma_1&0&0&0\\0&\sigma_2&0&0\end{pmatrix}.
 $$
 
-**Proof.** The rank of a $2\times4$ matrix is at most $2$, so its singular value decomposition has at most two nonzero singular values; the unitary groups act on the two sides.
+**Proof.** The rank of a $2\times4$ matrix is at most $2$, so its singular value decomposition has at most two nonzero singular values; the $*$-unitary groups act on the two sides.
 
 **Corollary (the mass has two channels).** The rank-two split has two mass channels, the two singular values of $M$. The rank-three split has three, and the rank-one split has one.
 
@@ -473,7 +473,6 @@ the two traceless corner tori and the relative scale. The relative scale is the 
 - [The Two Chiralities](the-two-chiralities-of-m6c.html), for the $3+3$ split of the carrier.
 - [The Rank-Two and Rank-Three Splits](the-rank-two-and-rank-three-splits-of-m6c.html), for the idempotent geometry of the two ranks.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the trace, the determinant and the block multiplication.
-- [The Matrix Algebra $M_2(\mathbb{C})$](the-matrix-algebra-m2c.html), for the biquaternion block.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the $3\times3$ block.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the $4\times4$ block.
-- [Parabolic Subgroups and Flag Varieties](parabolic-subgroups-and-flag-varieties.html), for the Levi factors and the radicals.
+- [Flag Manifolds](flag-manifolds.html), for the Levi factors and the radicals.

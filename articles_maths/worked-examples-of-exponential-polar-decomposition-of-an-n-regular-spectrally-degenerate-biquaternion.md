@@ -92,7 +92,7 @@ The following identities hold in every case and are used below without comment.
 | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ | the unit factor is $\pm$unipotent |
 | $(\tilde U-\varepsilon e_t)^2=0$ | the minimal polynomial is a square |
 | $\tilde U_{\mathrm b}^*=\tilde U_{\mathrm b}$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$ | the Hermitian factor is positive of norm one |
-| $\tilde u_{\mathrm r}^*=\tilde u_{\mathrm r}^{-1}$, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ | the rotor is unitary of norm one |
+| $\tilde u_{\mathrm r}^*=\tilde u_{\mathrm r}^{-1}$, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ | the rotor is $*$-unitary of norm one |
 | $\cosh\frac{\psi}{2}\cos\frac{\theta}{2}=\varepsilon$ | the scalar constraint |
 | $\sinh\frac{\psi}{2}\sin\frac{\theta}{2}\,c=0$ | the axis constraint |
 | $\operatorname{Log}\tilde Q=\log Q_t+\vec\Upsilon$ | the exact logarithm |

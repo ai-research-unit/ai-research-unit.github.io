@@ -251,6 +251,8 @@ so the coarse corners are $1+1+1+1$.
 
 **Corollary (coarse equals fine).** In $M_2(\mathbb{C})$ the coarse split by a rank-one idempotent coincides with the fine Peirce decomposition relative to the complete pair $(P,Q)$. There is no room for a further refinement: both diagonal corners are lines, as are the two off-diagonal corners.
 
+**Proof.** The four coarse corners have dimensions $1,1,1,1$, and the fine decomposition has one line for each ordered pair; the four lines are the same four corners.
+
 **Remark (the contrast).** In $M_6(\mathbb{C})$ the same construction gives $1+5+5+25$, and the fine decomposition is strictly finer: the diagonal corner $QMQ$ is $M_5$, not a line. The biquaternion case is the case $n=2$, where the complement of a line is a line; the six-line case is the case $n=6$, where the complement of a line is five-dimensional. **The coincidence of coarse and fine is an accident of dimension two, and it is the reason the biquaternion Peirce decomposition has exactly four lines.**
 
 ## Summary

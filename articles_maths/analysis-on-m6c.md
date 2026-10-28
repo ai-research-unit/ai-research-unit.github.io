@@ -18,7 +18,7 @@ $$
 
 is the spectral projector onto the part of the spectrum inside $\Gamma$. The **Fourier transform** on $\mathbb{C}^{36}$ is the Euclidean Fourier transform of the $72$ real coordinates; the Schwartz space, the inversion theorem, the Plancherel theorem and the Gaussian are the standard ones.
 
-The article also fixes the boundary against **Fueter theory**. The field $\mathbb{C}$ has no zero divisors; the algebra $M_6(\mathbb{C})$ does: the nilpotents satisfy $E_{12}^2=0$. The ordinary matrix analysis is the analysis over the field, with the spectrum, the resolvent and the functional calculus. Fueter theory is the quaternionic or Clifford analysis of the Cauchy–Fueter operator; it needs a different structure, a real division algebra or a Clifford module with a Dirac operator, which $M_6(\mathbb{C})$ does not carry. The holomorphic functional calculus is not Fueter theory.
+The article also fixes the boundary against **Fueter theory**. The field $\mathbb{C}$ has no zero divisors; the algebra $M_6(\mathbb{C})$ does: the nilpotents satisfy $E_{12}^2=0$. The ordinary matrix analysis is the analysis over the field, with the spectrum, the resolvent and the functional calculus. Fueter theory is the quaternionic or Clifford analysis of the Cauchy–Fueter operator; it needs a different structure, a real division algebra or a Clifford module with a Dirac operator, and neither is the structure used here. The holomorphic functional calculus is not Fueter theory.
 
 The article assumes the trace, the determinant, the norms, the Hermitian structure and the spectral theorem. It proves the derivative formulas, the Wirtinger rules, the resolvent and Riesz formulas, and it states the Fourier theorems with their standard proofs.
 
@@ -68,9 +68,9 @@ $$
 
 **Definition.** The **Lebesgue measure** on $M_6$ is the translation-invariant measure $dA$ of $\mathbb{R}^{72}$.
 
-**Proposition.** The measure is invariant under translations and under the unitary group: $d(UA)=dA$ and $d(AU)=dA$ for $U\in U(6)$. It is not invariant under general linear changes of coordinates; the Jacobian of $A\mapsto gA$ is $\lvert\det g\rvert^{12}$.
+**Proposition.** The measure is invariant under translations and under the $*$-unitary group: $d(UA)=dA$ and $d(AU)=dA$ for $U\in U(6)$. It is not invariant under general linear changes of coordinates; the Jacobian of $A\mapsto gA$ is $\lvert\det g\rvert^{12}$.
 
-**Proof.** Translation invariance is the Lebesgue measure on $\mathbb{R}^{72}$; unitary invariance follows because $A\mapsto UA$ preserves the Frobenius norm. For a general $g$, left multiplication on $M_6$ has complex determinant $(\det g)^6$ (six column blocks, each with determinant $\det g$), so the real Jacobian is $\lvert(\det g)^6\rvert^2=\lvert\det g\rvert^{12}$.
+**Proof.** Translation invariance is the Lebesgue measure on $\mathbb{R}^{72}$; $*$-unitary invariance follows because $A\mapsto UA$ preserves the Frobenius norm. For a general $g$, left multiplication on $M_6$ has complex determinant $(\det g)^6$ (six column blocks, each with determinant $\det g$), so the real Jacobian is $\lvert(\det g)^6\rvert^2=\lvert\det g\rvert^{12}$.
 
 **Corollary (the Gaussian).** The Gaussian integral converges:
 
@@ -288,7 +288,7 @@ maps $\mathcal{S}$ into itself.
 
 **Proof.** The derivatives of $\hat f$ multiply by powers of $\xi$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.
 
-**Corollary (Plancherel and inversion).** The Fourier transform extends to a unitary operator on $L^2(\mathbb{R}^{72})$, and
+**Corollary (Plancherel and inversion).** The Fourier transform extends to a $*$-unitary operator on $L^2(\mathbb{R}^{72})$, and
 
 $$
 f(x)=\int_{\mathbb{R}^{72}}\hat f(\xi)e^{2\pi\mathrm i\langle\xi,x\rangle}\,d\xi .
@@ -298,7 +298,7 @@ $$
 
 ### The Inversion and Plancherel
 
-**Theorem.** The Fourier transform is an isomorphism of $\mathcal{S}$ with itself, and it extends to a unitary isomorphism of $L^2$; the Plancherel identity is
+**Theorem.** The Fourier transform is an isomorphism of $\mathcal{S}$ with itself, and it extends to a $*$-unitary isomorphism of $L^2$; the Plancherel identity is
 
 $$
 \lVert f\rVert_2=\lVert\hat f\rVert_2 .
@@ -377,15 +377,15 @@ $$
 Df=\sum_{\mu=0}^{3}e_\mu\frac{\partial f}{\partial x_\mu},
 $$
 
-acting on functions with values in a quaternion or Clifford algebra. It requires a real division algebra or a Clifford module with a Dirac operator. The algebra $M_6(\mathbb{C})$ carries no such structure of the required kind.
+acting on functions with values in a quaternion or Clifford algebra. It is a first-order theory in four real variables with values in a division algebra or a Clifford module. The analysis of this article is the holomorphic functional calculus on the complex matrix algebra $M_6(\mathbb{C})$, which is a different theory.
 
-**Proof.** The Fueter operator uses the multiplication and the conjugates of the quaternion algebra; its regularity is a first-order system in four real variables. $M_6(\mathbb{C})$ is a complex matrix algebra of complex dimension $36$; its only conjugation is the Hermitian transpose, and its product is the matrix product. The holomorphic functional calculus uses the resolvent and the Cauchy integral in the complex plane, not a Dirac operator.
+**Proof.** The Fueter operator uses the multiplication and the conjugates of the quaternion algebra; its regularity is a first-order system in four real variables. The holomorphic functional calculus uses the resolvent and the Cauchy integral in the complex plane; the two theories have different operators and different function spaces.
 
 **Corollary (the two analyses).** The holomorphic functional calculus and the Fueter calculus are different theories: the first is the analysis of the spectrum of a matrix over $\mathbb{C}$, the second is the analysis of a Dirac operator over a quaternionic or Clifford module.
 
 **Proof.** The first is commutative in the scalar variable and uses the Cauchy kernel $1/(z-A)$; the second is a first-order operator with a noncommutative coefficient algebra.
 
-**Remark (where the quaternionic structure lives).** The quaternionic structure lives in the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, which is the rank-one case of the present family, not in $M_6(\mathbb{C})$. **The boundary is the dimension and the algebra: $M_6$ has the ordinary complex analysis, and Fueter theory needs another structure.**
+**Remark (where the quaternionic structure lives).** The quaternionic structure lives in the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, which is the $n=2$ case of the present family, not in $M_6(\mathbb{C})$. **The boundary is the dimension and the algebra: $M_6$ has the ordinary complex analysis, and Fueter theory needs another structure.**
 
 ## Summary
 
@@ -409,7 +409,7 @@ $$
 
 The Wirtinger calculus gives the holomorphic functions; the Dunford calculus gives the spectral projectors and the spectral mapping theorem; the Fourier transform on $\mathbb{C}^{36}$ gives the Schwartz space, the inversion, the Plancherel theorem, the Gaussian and the heat kernel $(4\pi t)^{-36}e^{-\lvert x\rvert^2/(4t)}$.
 
-The field $\mathbb{C}$ has no zero divisors; the algebra $M_6$ has the nilpotent zero divisors and the singular set of real codimension two. The ordinary matrix analysis is the analysis over the field; the boundary against Fueter theory is the quaternionic or Clifford structure that $M_6$ does not carry.
+The field $\mathbb{C}$ has no zero divisors; the algebra $M_6$ has the nilpotent zero divisors and the singular set of real codimension two. The ordinary matrix analysis is the analysis over the field; the boundary against Fueter theory is the passage from the holomorphic functional calculus to a Dirac operator on a quaternionic or Clifford module.
 
 | Object | Data |
 |---|---|
@@ -440,7 +440,7 @@ The field $\mathbb{C}$ has no zero divisors; the algebra $M_6$ has the nilpotent
 - [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the resolvent and the Dunford calculus.
 - [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m6c.html), for the exponential and the logarithm.
 - [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the positive cone and the singular values.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the Hermitian form and the unitary group.
+- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the Hermitian form and the $*$-unitary group.
 - [Analysis on $M_5(\mathbb{C})$](analysis-on-m5c.html), for the same analysis in the neighbouring dimension.
-- [The Holomorphic Functional Calculus](the-holomorphic-functional-calculus.html), for the Dunford calculus in a Banach algebra.
+- [Holomorphic Functional Calculus](holomorphic-functional-calculus.html), for the Dunford calculus in a Banach algebra.
 - [Fueter Theory](fueter-theory.html), for the quaternionic analysis and its Cauchy–Fueter operator.

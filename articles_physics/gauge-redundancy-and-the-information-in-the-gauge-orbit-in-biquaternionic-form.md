@@ -22,7 +22,7 @@ The distinction this article draws is worth setting out at the start, because tw
 - **Loss.** Many configurations, one record. The map is many-to-one *after* the redundancy has been quotiented out, and no choice of description recovers the configuration. The information is inaccessible, not merely redundant. Confinement, treated in the companion article, is of this kind.
 - **Relocation.** The information is re-encoded in a different carrier, reversibly. The total is conserved and a gauge-invariant record remains. The Higgs mechanism, treated in the companion article, is of this kind.
 
-The biquaternion framework makes the first of the three exact, because the abelian gauge group it localizes is the unitary part of the centre of the algebra: the redundancy is the unobservability of a central phase, and a central phase acts trivially on the informational sector. The orbit is therefore not merely "unobservable" in a practical sense; it is invisible to every Hermitian observable the algebra carries. The framework also realizes the compact algebra $\mathrm{SU}(2)$ in its sectors, and the non-abelian orbit — the adjoint orbit, for which the same triviality does not hold — is treated in the companions and recorded as an open item below.
+The biquaternion framework makes the first of the three exact, because the abelian gauge group it localizes is the $*$-unitary part of the centre of the algebra: the redundancy is the unobservability of a central phase, and a central phase acts trivially on the informational sector. The orbit is therefore not merely "unobservable" in a practical sense; it is invisible to every Hermitian observable the algebra carries. The framework also realizes the compact algebra $\mathrm{SU}(2)$ in its sectors, and the non-abelian orbit — the adjoint orbit, for which the same triviality does not hold — is treated in the companions and recorded as an open item below.
 
 The article proceeds as follows. The orbit is defined and its structure as a torsor is established. The orbit is then identified as the fibre of the curvature map, and the counting of physical degrees of freedom is extracted from the rank of that map. The information-theoretic invariance of the orbit is proved through the relative entropy, and the central triviality of the abelian phase is exhibited. The global information of the orbit — its holonomy — is then separated from its local emptiness. A comparison of redundancy, loss and relocation sets the article against its two companions. A closing ledger states what the algebra supplies and what it only transcribes.
 
@@ -98,7 +98,7 @@ $$
 D_2 = \lambda\,D\,\lambda^{-1}.
 $$
 
-This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{\Psi})$ and the pair $(\tilde{A}_2,\tilde{\Psi}_2)$ are related by the local unitary $\lambda$, and every quantity built from $D$ and $\tilde{\Psi}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
+This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{\Psi})$ and the pair $(\tilde{A}_2,\tilde{\Psi}_2)$ are related by the local $*$-unitary $\lambda$, and every quantity built from $D$ and $\tilde{\Psi}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.
 
 Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism $\iota_\lambda$ of the algebra is the identity, and the transformation acts on the pair $(\tilde{A},\tilde{\Psi})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.
 
@@ -179,21 +179,21 @@ $$
 \omega_2 = \omega \circ \mathrm{Ad}_{\lambda^{-1}} .
 $$
 
-Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a unitary of the algebra, and the GNS representations of $\omega$ and $\omega_2$ are unitarily equivalent. For any two backgrounds $\tilde{A}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:
+Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a $*$-unitary of the algebra, and the GNS representations of $\omega$ and $\omega_2$ are unitarily equivalent. For any two backgrounds $\tilde{A}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:
 
 $$
 \boxed{\;S(\tilde{Ϛ}_{\tilde{A}_2}\,\|\,\tilde{Ϛ}_{\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\tilde{A}}\,\|\,\tilde{Ϛ}_{\tilde{Q}_1})\;}.
 $$
 
-This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde Q\rho \tilde Q^\dagger\|\tilde Q\sigma \tilde Q^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
+This is the invariance, under $*$-unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde Q\rho \tilde Q^\dagger\|\tilde Q\sigma \tilde Q^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
 
 Three consequences of the invariance spell out the redundancy.
 
 **No information measure can detect the orbit.** Relative entropy is the sharpest distinguishability measure of the theory, and it is constant along the orbit. Whatever else the orbit is, it is not a difference of states.
 
-**The invariance is not confined to the relative entropy.** Every functional of the state that is invariant under unitary conjugation inherits it: the spectrum of $\tilde{Ϛ}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.
+**The invariance is not confined to the relative entropy.** Every functional of the state that is invariant under $*$-unitary conjugation inherits it: the spectrum of $\tilde{Ϛ}$, the fidelity between two states, any $f$-divergence, and, for a phase acting as a local $*$-unitary on a subsystem, that subsystem's entanglement entropy. The redundancy is therefore a property of the representation rather than of any particular measure; and because the abelian phase is central and of unit modulus, each of these quantities is here not merely preserved along the orbit but unchanged.
 
-**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the unitary part of the centre, so $\lambda = \exp(i\theta)$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}\in\mathbb{M}_+$ its action is
+**The abelian orbit is invisible to the informational sector.** This is the framework-specific sharpening. The gauge group is the $*$-unitary part of the centre, so $\lambda = \exp(i\theta)$ commutes with every element of $\mathbb{B}$. On a state $\tilde{Ϛ}\in\mathbb{M}_+$ its action is
 
 $$
 \tilde{Ϛ} \longmapsto \lambda\,\tilde{Ϛ}\,\lambda^\dagger = |\lambda|^2\tilde{Ϛ} = \tilde{Ϛ},
@@ -243,7 +243,7 @@ The middle row is the subject of the companion article on confinement, and the b
 
 ## Gauge Redundancy and the Informational Sector
 
-The framework's gauge group is not put in by hand: it is the unitary part of the centre, $\mathrm{U}(1) = \{\exp(i\theta)\}$. This has a consequence for the relation between the gauge orbit and the informational sector that is worth isolating.
+The framework's gauge group is not put in by hand: it is the $*$-unitary part of the centre, $\mathrm{U}(1) = \{\exp(i\theta)\}$. This has a consequence for the relation between the gauge orbit and the informational sector that is worth isolating.
 
 **The orbit is a material-sector structure.** The connection lies in $\mathbb{M}_-$, and the gauge transformation shifts it by the gradient of a real scalar, which is again in $\mathbb{M}_-$. The orbit is therefore an orbit inside the material sector. The gauge group acts on it, but the group is one-dimensional precisely because it is the centre, and a central action on $\mathbb{M}_-$ is a shift by the identity direction.
 
@@ -269,7 +269,7 @@ The boundary is drawn as in the companion articles.
 - Companion article *Wilson Loops in Biquaternionic Form*, for the holonomy, the loop as a two-sector bilinear, and the small-loop expansion.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the constraint structure and the absent gauge-fixing principle.
 - Companion article *The Informational Sector: States, Observables and Probability*, for the state space, the trace, and the absence of an observable conjugate to the central phase.
-- Companion article *Relative Entropy and the Biquaternion Framework*, for the relative entropy and its invariance under unitary conjugation.
+- Companion article *Relative Entropy and the Biquaternion Framework*, for the relative entropy and its invariance under $*$-unitary conjugation.
 - Companion article *Confinement and the Loss of Partonic Information in Biquaternionic Form*, for the loss case against which this article's redundancy is defined.
 - Companion article *The Higgs Mechanism as an Erasure of Information in Biquaternionic Form*, for the relocation case against which this article's redundancy is defined.
 
@@ -277,7 +277,7 @@ The boundary is drawn as in the companion articles.
 
 1. **A gauge-fixing principle.** The orbit is a torsor, so no member is preferred. Is there an algebraic principle that selects a representative — a condition natural to $\mathbb{B}$ rather than imported — or is the choice irreducibly extrinsic, as the canonical-quantization article suggests?
 
-2. **The non-abelian orbit.** For a non-central gauge group the orbit is the adjoint orbit of the connection, $A_\mu\mapsto \tilde Q A_\mu \tilde Q^{-1} + (i/\kappa)(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$, and it is no longer a torsor of an abelian group but a coadjoint-type space. Does the orbit still have a clean fibre interpretation, and does the relative-entropy invariance survive with the appropriate unitary?
+2. **The non-abelian orbit.** For a non-central gauge group the orbit is the adjoint orbit of the connection, $A_\mu\mapsto \tilde Q A_\mu \tilde Q^{-1} + (i/\kappa)(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$, and it is no longer a torsor of an abelian group but a coadjoint-type space. Does the orbit still have a clean fibre interpretation, and does the relative-entropy invariance survive with the appropriate $*$-unitary?
 
 3. **The orbit and the local complex structure.** The framework makes the complex structure local through the speed of light $c = 1/\sqrt{\epsilon\mu}$. Is the gauge orbit — a local shift by a gradient — related to that local complex structure, or are the two local structures independent? No relation is established here.
 
@@ -291,7 +291,7 @@ The boundary is drawn as in the companion articles.
 
 The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}) = \{\tilde{A} - \tilde{\nabla}\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.
 
-Information-theoretically the orbit is a **redundancy**, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(iϙ\Gamma/\hbar)$, which is unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
+Information-theoretically the orbit is a **redundancy**, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(iϙ\Gamma/\hbar)$, which is $*$-unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
 
 $$
 S(\tilde{Ϛ}_{\tilde{A}_2}\|\tilde{Ϛ}_{\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{Ϛ}_{\tilde{Q}_1}).
@@ -339,8 +339,8 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the counting of physical polarizations and the role of the Bianchi identity.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the gauge orbit as the fibre of the connection and the degree-of-freedom count.
 - Kenneth G. Wilson, "Confinement of Quarks," *Physical Review D* **10** (1974) 2445–2459, for the holonomy, the Wilson loop, and the obstruction interpretation.
-- Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the unitary invariance of relative entropy and the distinguishability measures of quantum states.
-- M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for relative entropy, its monotonicity, and its invariance under unitary conjugation.
+- Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the $*$-unitary invariance of relative entropy and the distinguishability measures of quantum states.
+- M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for relative entropy, its monotonicity, and its invariance under $*$-unitary conjugation.
 - H. Araki, "Relative entropy of states of von Neumann algebras," *Publications of the Research Institute for Mathematical Sciences* **11** (1976) 809–833, for the state-theoretic invariance used here.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric interpretation of the connection and its curvature in the same algebraic setting.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the identification of the biquaternion algebra with the even part of $\mathrm{Cl}_{1,3}$ and the bivector structure of the curvature.

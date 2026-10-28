@@ -155,7 +155,7 @@ WHY IT IS NEEDED
   gL = gR leaves only the diagonal SU(2)V.
 * The second factor is the axial symmetry. Without it there is no axial
   current, no Goldstone coset and no breaking pattern.
-* For unitary parameters, and in particular on the unit real
+* For $*$-unitary parameters, and in particular on the unit real
   quaternions, the adjoint is the group inverse. The map gL X gR* is
   therefore the usual left-right action, with both factors written by
   one operation and no operator inverse.

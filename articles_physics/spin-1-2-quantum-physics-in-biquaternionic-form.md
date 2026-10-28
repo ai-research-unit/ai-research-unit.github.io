@@ -10,7 +10,7 @@ The consequence is a **structural identification**:
 
 > The biquaternion algebra $\mathbb{B}$ contains the complete algebraic structure of a spin-1/2 quantum-mechanical system.
 
-This is not an analogy. It is an identity of algebras. Every rank-one idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state idempotent. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The normalised Hermitian form $\langle\tilde\Pi,\tilde H\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde H\rangle_{*}$ is the Born rule for spin-1/2; in the $2\times2$ image it reads the trace formula $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$, the star being inert and the unstarred trace real, and non-negative when $\tilde H\ge0$. The unitary biquaternions of $SU(2)$ are the spin rotation operators.
+This is not an analogy. It is an identity of algebras. Every rank-one idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state idempotent. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The normalised Hermitian form $\langle\tilde\Pi,\tilde H\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde H\rangle_{*}$ is the Born rule for spin-1/2; in the $2\times2$ image it reads the trace formula $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$, the star being inert and the unstarred trace real, and non-negative when $\tilde H\ge0$. The $*$-unitary biquaternions of $SU(2)$ are the spin rotation operators.
 
 This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about **where** this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
 
@@ -246,7 +246,7 @@ The action of $\mathbb{B}$ on $\mathbb{C}^2$ is the **fundamental representation
 The subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ act on the spinor space in specific ways:
 
 - **Hermitian elements** (in $\mathbb{M}_+$) act as **Hermitian operators** on $\mathbb{C}^2$. These are the observables, whose eigenvalues are real.
-- **Anti-Hermitian elements** (in $\mathbb{M}_-$) act as **anti-Hermitian operators** on $\mathbb{C}^2$. These are the generators of unitary transformations, whose exponentials give the unitary group $\mathrm{U}(2)$.
+- **Anti-Hermitian elements** (in $\mathbb{M}_-$) act as **anti-Hermitian operators** on $\mathbb{C}^2$. These are the generators of $*$-unitary transformations, whose exponentials give the $*$-unitary group $\mathrm{U}(2)$.
 
 The action of the algebra on the spinor space is the fundamental operation of quantum physics: the observables act on the states, and the generators act on the states to produce the dynamics.
 
@@ -266,11 +266,11 @@ This is a subtle point, but it is the correct statement. The simpler (and slight
 
 ## The Rotations and the Boosts
 
-The unitary biquaternions generate the spin rotation group, and the Hermitian biquaternions generate the boost group.
+The $*$-unitary biquaternions generate the spin rotation group, and the Hermitian biquaternions generate the boost group.
 
-### Unitary Biquaternions
+### $*$-Unitary Biquaternions
 
-A biquaternion $\tilde Q$ is **unitary** if $\tilde Q\tilde Q^{*} = e_t$. In the matrix representation, $\tilde Q$ maps to a unitary matrix. The group of unitary biquaternions is $\mathrm{U}(2)$.
+A biquaternion $\tilde Q$ is **$*$-unitary** if $\tilde Q\tilde Q^{*} = e_t$. In the matrix representation, $\tilde Q$ maps to a $*$-unitary matrix. The group of $*$-unitary biquaternions is $\mathrm{U}(2)$.
 
 The subgroup of $\mathrm{U}(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the **spin rotation group**. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{M}_-$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.
 
@@ -280,7 +280,7 @@ So the **spin rotations of a spin-1/2 particle are realized in the biquaternion 
 
 The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the **boost biquaternions** $\tilde U = \cosh(\psi/2) + i\sinh(\psi/2)\vec u_{\mathrm b}$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.
 
-In the quantum-mechanical context, the boosts are **not** unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still **invertible**: a boost has unit norm, so it inverts to $\tilde U^{\natural}$, and it represents a reversible change of state — unlike the rank-one idempotent projections, which are not invertible.
+In the quantum-mechanical context, the boosts are **not** $*$-unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-$*$-unitary but still **invertible**: a boost has unit norm, so it inverts to $\tilde U^{\natural}$, and it represents a reversible change of state — unlike the rank-one idempotent projections, which are not invertible.
 
 The full group of unit-norm biquaternions is $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. It contains $SU(2)$ as the compact subgroup of spatial rotations, and the Hermitian elements as the non-compact set of boosts.
 
@@ -382,7 +382,7 @@ The identification raises several questions.
 
 3. **The state space.** The spinor space $\mathbb{C}^2$ is the fundamental representation of the biquaternion algebra. Is there a natural interpretation of the spinor space in the material/informational dichotomy? Does the spinor space belong to $\mathbb{M}_-$, or is it a separate structure?
 
-4. **The role of $\mathbb{M}_-$.** In the identification, $\mathbb{M}_+$ is the space of observables and $\mathbb{M}_-$ is the space of generators. The state space is the fundamental module, which is not directly $\mathbb{M}_-$ or $\mathbb{M}_+$. Is there a natural interpretation of $\mathbb{M}_-$ in the spin-1/2 framework (beyond being the generators of unitary evolution)?
+4. **The role of $\mathbb{M}_-$.** In the identification, $\mathbb{M}_+$ is the space of observables and $\mathbb{M}_-$ is the space of generators. The state space is the fundamental module, which is not directly $\mathbb{M}_-$ or $\mathbb{M}_+$. Is there a natural interpretation of $\mathbb{M}_-$ in the spin-1/2 framework (beyond being the generators of $*$-unitary evolution)?
 
 5. **The extension to higher spins.** The biquaternion algebra contains only spin-1/2. How does it extend to spin-1 (the photon), spin-3/2, or spin-2 (the graviton)? These would require tensor products or larger algebras.
 

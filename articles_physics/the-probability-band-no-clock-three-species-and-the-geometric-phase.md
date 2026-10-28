@@ -10,7 +10,7 @@ $$
 
 whose scalar form is the positive definite Hermitian pairing and whose job in the framework is probability. It is one of the four general products, and this article reads what that product carries: a weight, a cone at the third power, three grades of reality, a purity gap, an arrow from a process to an observable, and a phase.
 
-It also carries an absence, and the absence organises the rest. The band has no element whose square is $-e_t$, so it has no algebraic clock. The clock is owned by the composition band, where the central imaginary squares to minus the identity, and the probability band imports it as the parameter of a unitary family whose generator is material. A band that measures weights does not also generate the phase it measures.
+It also carries an absence, and the absence organises the rest. The band has no element whose square is $-e_t$, so it has no algebraic clock. The clock is owned by the composition band, where the central imaginary squares to minus the identity, and the probability band imports it as the parameter of a $*$-unitary family whose generator is material. A band that measures weights does not also generate the phase it measures.
 
 The order is the order of the readings. Each section states the algebraic result first, the interpretation second, and its boundary last.
 
@@ -69,13 +69,13 @@ $$
 (ze_t)\star(ze_t)=ze_t\,\overline{ze_t}=z\bar z\,e_t=\lvert z\rvert^{2}e_t .
 $$
 
-The phase of $z$ disappears. A central value $\lambda e_t$ has a root exactly when $\lambda$ is a non-negative real number. For $\lambda>0$ the roots are the elements with $\tilde Q\tilde Q^{*}=\lambda e_t$, equivalently the matrices $\sqrt{\lambda}\,U$ with $U$ unitary; the central roots $z e_t$ with $\lvert z\rvert^{2}=\lambda$ are a subset, not the whole root set. The negative central values have no root. The central imaginary is the sharpest case:
+The phase of $z$ disappears. A central value $\lambda e_t$ has a root exactly when $\lambda$ is a non-negative real number. For $\lambda>0$ the roots are the elements with $\tilde Q\tilde Q^{*}=\lambda e_t$, equivalently the matrices $\sqrt{\lambda}\,U$ with $U$ $*$-unitary; the central roots $z e_t$ with $\lvert z\rvert^{2}=\lambda$ are a subset, not the whole root set. The negative central values have no root. The central imaginary is the sharpest case:
 
 $$
 \boxed{\;(ie_t)\star(ie_t)=ie_t\,\overline{ie_t}=i(-i)e_t=e_t\;}.
 $$
 
-The element that generates the phase in the composition band squares to $+e_t$ here. It is not a root of $-e_t$; it is a unitary. The central phase $e^{i\theta}e_t$ is likewise a unitary, and its logarithm $i\theta e_t$ is a coefficient, not a band element with a negative square.
+The element that generates the phase in the composition band squares to $+e_t$ here. It is not a root of $-e_t$; it is a $*$-unitary. The central phase $e^{i\theta}e_t$ is likewise a $*$-unitary, and its logarithm $i\theta e_t$ is a coefficient, not a band element with a negative square.
 
 **Theorem (no clock element).** The band has no element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi=-e_t$. The central values with a root in the band are exactly the non-negative real numbers.
 
@@ -459,7 +459,7 @@ The band has no clock element, and the phase is not one: the phase is the argume
 
 ## Limits
 
-- **No clock element.** The band has no root of $-e_t$; the clock is imported as the parameter of a unitary family whose generator is material.
+- **No clock element.** The band has no root of $-e_t$; the clock is imported as the parameter of a $*$-unitary family whose generator is material.
 - **No derivation of the Born rule.** The pairing and the trace formula supply the weight; the identification with a frequency is the hypothesis of the informational sector.
 - **The trichotomy is a grading.** The algebra fixes the three grades; the particle identification is a hypothesis, and no mass, charge or coupling is derived.
 - **The purity gap is a reading.** The identity $\mathrm{Tr}(\tilde{Ϛ}^{2})=2P$ is exact on the trace-one slice, and the gap is $P-I=\mathrm{Tr}(\tilde{Ϛ}^{2})-\tfrac12$; it is the trace purity shifted by a constant, and the name information content is the interpretation.

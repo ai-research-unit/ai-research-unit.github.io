@@ -38,7 +38,7 @@ The relevant subgroups are: $\mathbb{B}^\times$, the nonzero-norm elements (comp
 
 $S^3$ is the maximal compact subgroup of $\mathbb{B}^\times_1$, with Lie algebra the compact subalgebra $\mathrm{K}$ of *Symmetric and Antisymmetric Decomposition of the Four General Products*, §*The Trace-Free Subalgebra*. The centre $\{\pm e_t\}$ is discrete, so the quotient $\mathbb{B}^\times_1/\{\pm e_t\}$ is a Lie group of real dimension $6$.
 
-## The Unitary Subgroup and the Defining Module
+## The $*$-Unitary Subgroup and the Defining Module
 
 The algebra acts on the defining module $\mathbb{C}^2$ by the defining representation, in which a biquaternion acts as its $2\times2$ matrix $\mathsf{M}_2(\tilde{Q})$ (*$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*). The elements that preserve the standard Hermitian form of $\mathbb{C}^2$ are exactly those with $\tilde{Q}^{*}\tilde{Q}=e_t$, and they form a compact subgroup of the group of units,
 $$
@@ -48,12 +48,12 @@ of real dimension $4$. The determinant-one elements inside it are the unit quate
 $$
 \mathrm{U}(2)\cap SL(2,\mathbb{C})=S^3=SU(2),
 $$
-consistently with the unit quaternions being the unitary part of the norm-one group. Every element of $\mathrm{U}(2)$ is the product of a unit quaternion and a unit complex scalar, and the two factors meet in $\{\pm e_t\}$:
+consistently with the unit quaternions being the $*$-unitary part of the norm-one group. Every element of $\mathrm{U}(2)$ is the product of a unit quaternion and a unit complex scalar, and the two factors meet in $\{\pm e_t\}$:
 $$
 \boxed{\; \mathrm{U}(2)=S^3\cdot \mathrm{U}(1)\cong (SU(2)\times \mathrm{U}(1))/\{\pm(1,1)\} \;}.
 $$
 
-**Proof.** If $\tilde{Q}\in \mathrm{U}(2)$ then $|\det\mathsf{M}_2(\tilde{Q})|=1$, so $P=\tilde{Q}\,(\det\mathsf{M}_2(\tilde{Q}))^{-1/2}\in \mathrm{U}(2)$ has determinant one, hence lies in $S^3$ by the identification of the determinant-one unitary elements with the unit quaternions; the scalar $(\det\mathsf{M}_2(\tilde{Q}))^{1/2}$ is a unit complex number. The intersection $\{\pm e_t\}$ is the set of scalars $\lambda e_t$ of determinant $\lambda^2=1$, and the kernel of $S^3\times \mathrm{U}(1)\to \mathrm{U}(2)$, $(\tilde q,\lambda)\mapsto\lambda\tilde q$, is $\{\pm(1,1)\}$.
+**Proof.** If $\tilde{Q}\in \mathrm{U}(2)$ then $|\det\mathsf{M}_2(\tilde{Q})|=1$, so $P=\tilde{Q}\,(\det\mathsf{M}_2(\tilde{Q}))^{-1/2}\in \mathrm{U}(2)$ has determinant one, hence lies in $S^3$ by the identification of the determinant-one $*$-unitary elements with the unit quaternions; the scalar $(\det\mathsf{M}_2(\tilde{Q}))^{1/2}$ is a unit complex number. The intersection $\{\pm e_t\}$ is the set of scalars $\lambda e_t$ of determinant $\lambda^2=1$, and the kernel of $S^3\times \mathrm{U}(1)\to \mathrm{U}(2)$, $(\tilde q,\lambda)\mapsto\lambda\tilde q$, is $\{\pm(1,1)\}$.
 
 **Remark.** The norm-one group $\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$ is strictly larger: it acts on the defining module too, but it does not preserve the Hermitian form, and unlike $\mathrm{U}(2)$ it is non-compact.
 
@@ -296,7 +296,7 @@ Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connect
 
 The one-parameter subgroups are the exponential lines $t\mapsto\exp(t\tilde X)$; every one-parameter subgroup is of this form, with generator $\tilde X$ unique for a fixed parametrisation. The Killing form is $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}(\operatorname{Sc}(\tilde X\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y)$; its radical is the centre $\mathbb{C}e_t$, and on the trace-free part it has signature $(3,3)$, negative on the compact $\mathrm{K}$ and positive on $i\mathrm{K}$.
 
-The larger unitary groups are reached by enlarging the carrier and not the algebra. The matrices over the algebra satisfy $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, so $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{su}(3)$ with its eight generators, and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ — a Lie-type form and Euler-angles forms, built from the antisymmetric, diagonal and diagonal-less symmetric linear functions of the enveloping-algebra article — are the explicit elements of those groups written with $3\times3$ matrices of biquaternions. They do not put an octet inside $\mathbb{B}$: each element fixes $e_t$ and acts on the vector part, so the matrix is $\operatorname{diag}(\tilde U_3,1)$ and the group is an $\mathrm{SU}(3)$ block on a three-dimensional complex space, while the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert. The ceiling is thus untouched and the price of the embedding is the factor $2$ in each matrix direction.
+The larger $*$-unitary groups are reached by enlarging the carrier and not the algebra. The matrices over the algebra satisfy $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, so $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{su}(3)$ with its eight generators, and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ — a Lie-type form and Euler-angles forms, built from the antisymmetric, diagonal and diagonal-less symmetric linear functions of the enveloping-algebra article — are the explicit elements of those groups written with $3\times3$ matrices of biquaternions. They do not put an octet inside $\mathbb{B}$: each element fixes $e_t$ and acts on the vector part, so the matrix is $\operatorname{diag}(\tilde U_3,1)$ and the group is an $\mathrm{SU}(3)$ block on a three-dimensional complex space, while the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert. The ceiling is thus untouched and the price of the embedding is the factor $2$ in each matrix direction.
 
 ## Summary of Notation
 

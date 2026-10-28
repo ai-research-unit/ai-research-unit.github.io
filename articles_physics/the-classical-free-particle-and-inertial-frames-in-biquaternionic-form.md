@@ -143,7 +143,7 @@ $$
 R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{\mathrm r} \in \mathbb{H}_{\mathbb{B}} ,
 $$
 
-which is unitary, $R^{-1} = R^{\natural} = R^{*}$, and acts on the vector part by $R(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)R^{-1}$, rotating $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ by the angle $\theta$ about the axis $\vec u_{\mathrm r}$. A general Lorentz transformation has its rotor in the full algebra. The classification is that of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, and the action of the real-quaternion rotors on the vector part is the same adjoint action that the companion article *The Reflection and the Rotation in Biquaternionic Form* develops.
+which is $*$-unitary, $R^{-1} = R^{\natural} = R^{*}$, and acts on the vector part by $R(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)R^{-1}$, rotating $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ by the angle $\theta$ about the axis $\vec u_{\mathrm r}$. A general Lorentz transformation has its rotor in the full algebra. The classification is that of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, and the action of the real-quaternion rotors on the vector part is the same adjoint action that the companion article *The Reflection and the Rotation in Biquaternionic Form* develops.
 
 ### The Relativity Principle
 
@@ -225,7 +225,7 @@ This is the algebraic form of a familiar statement. The Galilean group is the **
 
 Three structures survive intact, and it is worth naming them because they are the ones the non-relativistic articles use.
 
-**The spatial rotation subgroup survives exactly.** A real-quaternion rotor is unitary and rotationally acts on the real vector part alone; it is unchanged by the contraction, and it remains a genuine conjugation in the limit. The rotations are the compact part of both groups, and the contraction touches only the non-compact part.
+**The spatial rotation subgroup survives exactly.** A real-quaternion rotor is $*$-unitary and rotationally acts on the real vector part alone; it is unchanged by the contraction, and it remains a genuine conjugation in the limit. The rotations are the compact part of both groups, and the contraction touches only the non-compact part.
 
 **The time coordinate survives as a scalar parameter.** In the limit the scalar direction $ie_t$ of $\mathbb{M}_-$ is inert: the shear fixes it, and it can be treated as a real parameter $t'$ multiplying the constant $ic$. The non-relativistic world is therefore $\mathbb{R} \times \mathbb{R}^3$, realized in the algebra as $ie_t\mathbb{R} \oplus \mathrm{span}\{\vec e_x, \vec e_y, \vec e_z\}$, which is exactly the material sector read as one scalar direction plus three vector directions.
 

@@ -196,7 +196,7 @@ Two cautions belong with this result. First, the boost acts on $\mathbb{M}_-$, t
 
 The exercise settles the two-sector claim and separates what the algebra adds from what it merely restates.
 
-**Familiar, rewritten.** The oscillator's ladder, quadratures, number operator, and energy are the standard ones. The finite-dimensional part that lives in $\mathbb{B}$ is the two-level truncation, which is the two-state system of the parent articles; its dynamics is the standard unitary precession, its Born rule is $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$ for a state $\tilde\Pi$, and its canonical commutator fails by boundary terms as it does in any finite truncation. None of this is new.
+**Familiar, rewritten.** The oscillator's ladder, quadratures, number operator, and energy are the standard ones. The finite-dimensional part that lives in $\mathbb{B}$ is the two-level truncation, which is the two-state system of the parent articles; its dynamics is the standard $*$-unitary precession, its Born rule is $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$ for a state $\tilde\Pi$, and its canonical commutator fails by boundary terms as it does in any finite truncation. None of this is new.
 
 **Structurally new or newly visible.**
 

@@ -125,7 +125,7 @@ named as a gap and not proposed as a formula.
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{U}(1)=\exp(i\theta)e_t$ | the compact central phase, dual to the integer charge lattice |
-| $U\cong \mathrm{U}(2)$ | the compact unitary slice, whose irreducible labels are the internal quantum numbers |
+| $U\cong \mathrm{U}(2)$ | the compact $*$-unitary slice, whose irreducible labels are the internal quantum numbers |
 | $\omega_n=2\pi n/\beta$ | the Matsubara frequencies, the dual lattice of the thermal circle |
 | $Sp(1)\cong SU(2)$ | the compact real unit sphere, in which the orders and their finite unit groups sit |
 | $\beta=\hbar/(k_BT)$ | the circumference of the thermal circle, in the coordinate $t'$ |

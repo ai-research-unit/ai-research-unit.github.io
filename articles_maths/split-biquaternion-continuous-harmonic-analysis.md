@@ -151,7 +151,7 @@ $$
 
 ### The Plancherel Theorem
 
-**Theorem (Plancherel).** The transform extends uniquely to a unitary operator on the space $L^2(\mathbb{R}, \mathbb{H}_{\mathbb{D}})$ of square-integrable split-biquaternion-valued functions, with
+**Theorem (Plancherel).** The transform extends uniquely to a $*$-unitary operator on the space $L^2(\mathbb{R}, \mathbb{H}_{\mathbb{D}})$ of square-integrable split-biquaternion-valued functions, with
 
 $$
 \boxed{\;

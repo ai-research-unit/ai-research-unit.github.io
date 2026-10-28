@@ -123,7 +123,7 @@ $$
 
 where $\mathbf 1$ is the $n_3\times1$ column of ones. The identity is the transform of the block circulant definition; the factor $1/n_3$ is the inverse transform, not a normalisation of the product.
 
-**Remark (the normalisation).** The source uses the unitary Fourier matrix with entries $n_3^{-1/2}\omega^{(s-1)(t-1)}$ and carries the factors $\sqrt{n_3}$ in the transform. The product is the same; only the normalisation of the intermediate arrays differs. The convention here is the unnormalised transform, so that $\widehat{A\ast B}^{(k)}=\widehat A^{(k)}\widehat B^{(k)}$ without a scalar factor.
+**Remark (the normalisation).** The source uses the $*$-unitary Fourier matrix with entries $n_3^{-1/2}\omega^{(s-1)(t-1)}$ and carries the factors $\sqrt{n_3}$ in the transform. The product is the same; only the normalisation of the intermediate arrays differs. The convention here is the unnormalised transform, so that $\widehat{A\ast B}^{(k)}=\widehat A^{(k)}\widehat B^{(k)}$ without a scalar factor.
 
 ## The Idempotent Reduction
 
@@ -223,13 +223,13 @@ which is the transform of $B^{\mathsf H}\ast A^{\mathsf H}$.
 
 Without the reversal the identity fails for $n_3\ge3$: the conjugate of $\omega$ is $\omega^{-1}$, and the slice order must be reversed to compensate. For $n_3\le2$ the reversal is trivial and the frontal conjugate transpose is the adjoint.
 
-**Unitary and Hermitian tensors.** A tensor $U\in\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ is **unitary** if
+**$*$-Unitary and Hermitian tensors.** A tensor $U\in\mathbb{B}_{\mathrm{r}}^{n\times n\times n_3}$ is **$*$-unitary** if
 
 $$
 U^{\mathsf H}\ast U=U\ast U^{\mathsf H}=\mathrm I,
 $$
 
-and a tensor $A$ is **Hermitian** if $A^{\mathsf H}=A$. By the transform criterion, $U$ is unitary if and only if every $\widehat U^{(k)}$ is a unitary matrix over $\mathbb{B}_{\mathrm{r}}$, and $A$ is Hermitian if and only if every $\widehat A^{(k)}$ is Hermitian. The two statements follow from the algebra isomorphism of the transform and the preservation of the conjugate transpose.
+and a tensor $A$ is **Hermitian** if $A^{\mathsf H}=A$. By the transform criterion, $U$ is $*$-unitary if and only if every $\widehat U^{(k)}$ is a $*$-unitary matrix over $\mathbb{B}_{\mathrm{r}}$, and $A$ is Hermitian if and only if every $\widehat A^{(k)}$ is Hermitian. The two statements follow from the algebra isomorphism of the transform and the preservation of the conjugate transpose.
 
 ## The Cost
 

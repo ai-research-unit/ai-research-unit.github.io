@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The mass block is the four-dimensional space of maps from the right chirality to the left chirality, and its chiral polar decomposition separates a unitary mixing from two singular values.** The block is
+**The mass block is the four-dimensional space of maps from the right chirality to the left chirality, and its chiral polar decomposition separates a $*$-unitary mixing from two singular values.** The block is
 
 $$
 \mathcal{B}=P_+M_4P_-=\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C}),
@@ -127,7 +127,7 @@ $$
 =\delta_{jk}.
 $$
 
-Extend the $u_k$ with $\sigma_k>0$ to an orthonormal basis of $\mathbb{C}^2_+$, and let $U$ be the corresponding unitary. Then $Mv_k=\sigma_ku_k$ for every $k$, so $M=U\Sigma V^*$. The uniqueness of the singular values is the uniqueness of the eigenvalues of $M^*M$.
+Extend the $u_k$ with $\sigma_k>0$ to an orthonormal basis of $\mathbb{C}^2_+$, and let $U$ be the corresponding $*$-unitary. Then $Mv_k=\sigma_ku_k$ for every $k$, so $M=U\Sigma V^*$. The uniqueness of the singular values is the uniqueness of the eigenvalues of $M^*M$.
 
 **The polar decomposition.** The SVD gives the **chiral polar decomposition**
 
@@ -137,7 +137,7 @@ W=UV^*:\mathbb{C}^2_-\to\mathbb{C}^2_+,\qquad
 P=V\Sigma V^*:\mathbb{C}^2_-\to\mathbb{C}^2_- .
 $$
 
-The factor $W$ is unitary (an isometry between the two chiral planes), and $P$ is positive semidefinite. Equivalently,
+The factor $W$ is $*$-unitary (an isometry between the two chiral planes), and $P$ is positive semidefinite. Equivalently,
 
 $$
 M=U\Sigma V^*=(UV^*)(V\Sigma V^*).
@@ -203,7 +203,7 @@ $$
 
 so the phase shifts by the determinant phases of the gauge; the modulus $\sigma_1\sigma_2$ is invariant.
 
-**The special unitary gauge.** Under $SU(2)_L\times SU(2)_R$, the determinant phases of the gauge are $1$, so the determinant of $M$ is invariant and equals $\sigma_1\sigma_2\ge0$. The chiral phase is then an invariant of $M$ itself, not a gauge artefact. Under the full $U(2)_L\times U(2)_R$, only the modulus is invariant; the phase can be removed by the two determinant factors.
+**The special unitary gauge.** Under $SU(2)_L\times SU(2)_R$, the determinant phases of the gauge are $1$, so $\det M$ is invariant. Its modulus is $\sigma_1\sigma_2$, and its phase is the chiral phase, an invariant of $M$ itself, not a gauge artefact. Under the full $U(2)_L\times U(2)_R$, only the modulus is invariant; the phase can be removed by the two determinant factors.
 
 **The rank and the masslessness.** The rank of $M$ is the number of nonzero singular values:
 
@@ -272,7 +272,7 @@ There is one singular value $\lvert z\rvert$, one phase $e^{i\theta}$, and the r
 
 ## Summary
 
-The mass block $\mathcal{B}=P_+M_4P_-\cong\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C})$ is the four-dimensional space of maps from the right chirality to the left. The chiral gauge $U(2)_L\times U(2)_R$ acts by $M\mapsto U_LMU_R^*$. Every $M$ has a singular value decomposition $M=U\Sigma V^*$ with two singular values $\sigma_1\ge\sigma_2\ge0$, and a chiral polar decomposition $M=WP$ with $W=UV^*$ unitary and $P=V\Sigma V^*$ positive semidefinite. The determinant is $e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2$; its modulus is the product of the singular values, and its phase is the chiral phase. The rank counts the massless modes: rank $2$ is massive, rank $1$ has one massless mode, rank $0$ is fully massless. The massless locus is a complex hypersurface of dimension $3$ and real codimension $2$. The off-diagonal block is the only coupling of the chiralities; the diagonal part preserves them. At $n=2$ the mass block is a line and the polar decomposition is the polar form of a complex scalar.
+The mass block $\mathcal{B}=P_+M_4P_-\cong\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C})$ is the four-dimensional space of maps from the right chirality to the left. The chiral gauge $U(2)_L\times U(2)_R$ acts by $M\mapsto U_LMU_R^*$. Every $M$ has a singular value decomposition $M=U\Sigma V^*$ with two singular values $\sigma_1\ge\sigma_2\ge0$, and a chiral polar decomposition $M=WP$ with $W=UV^*$ $*$-unitary and $P=V\Sigma V^*$ positive semidefinite. The determinant is $e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2$; its modulus is the product of the singular values, and its phase is the chiral phase. The rank counts the massless modes: rank $2$ is massive, rank $1$ has one massless mode, rank $0$ is fully massless. The massless locus is a complex hypersurface of dimension $3$ and real codimension $2$. The off-diagonal block is the only coupling of the chiralities; the diagonal part preserves them. At $n=2$ the mass block is a line and the polar decomposition is the polar form of a complex scalar.
 
 $$
 \boxed{\ M=U\Sigma V^*,\quad \sigma_1\ge\sigma_2\ge0,\quad \lvert\det M\rvert=\sigma_1\sigma_2,\quad \operatorname{rank}M\in\{0,1,2\},\quad \dim_\mathbb{C}\mathcal{B}=4.\ }
@@ -297,7 +297,7 @@ $$
 | $M:\mathbb{C}^2_-\to\mathbb{C}^2_+$ | a mass operator |
 | $U_L,U_R$ | the chiral gauge unitaries |
 | $\sigma_1,\sigma_2$ | the singular values |
-| $W=UV^*$ | the chiral phase, a unitary between the planes |
+| $W=UV^*$ | the chiral phase, a $*$-unitary between the planes |
 | $P=V\Sigma V^*$ | the mass modulus, positive on $\mathbb{C}^2_-$ |
 | $\theta_U,\theta_V$ | the determinant phases of $U,V$ |
 

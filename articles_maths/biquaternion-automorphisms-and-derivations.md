@@ -16,7 +16,7 @@ We use the conventions of the article on the biquaternion algebra throughout: th
 $$
 \mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{*},
 $$
-and it is not an automorphism of the algebra: it is multiplicative exactly on the unitary elements, and it preserves the two Hermitian sectors rather than the product. That action is the isometry of the algebra treated in *Biquaternion Rotations and Lorentz Transformations*, and the two maps coincide exactly on the unitary slice.
+and it is not an automorphism of the algebra: it is multiplicative exactly on the $*$-unitary elements, and it preserves the two Hermitian sectors rather than the product. That action is the isometry of the algebra treated in *Biquaternion Rotations and Lorentz Transformations*, and the two maps coincide exactly on the $*$-unitary slice.
 
 No physics is invoked and no new results are claimed. Everything below is standard structure theory of the algebra over each of the two ground fields.
 

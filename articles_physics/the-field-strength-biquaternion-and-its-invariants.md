@@ -226,7 +226,7 @@ $$
 \tilde F_0=\tilde F_H^{+}\tilde F .
 $$
 
-The amplitude $\tilde F_H$ is Hermitian positive and the phase $\tilde F_0$ is unitary. On the invertible part $\langle\tilde F\rangle_{\natural}\neq0$ the pair is unique; on the null cone the generalized form replaces $\tilde F_0$ by a partial isometry.
+The amplitude $\tilde F_H$ is Hermitian positive and the phase $\tilde F_0$ is $*$-unitary. On the invertible part $\langle\tilde F\rangle_{\natural}\neq0$ the pair is unique; on the null cone the generalized form replaces $\tilde F_0$ by a partial isometry.
 
 **The amplitude carries the intensity and the boost.** The trace of its square is four times the energy density, $\operatorname{Tr}\tilde F_H^{2}=2\langle\tilde F,\tilde F\rangle_{*}=4W$, and its determinant is the modulus of the complex invariant,
 
@@ -237,11 +237,11 @@ $$
 
 The norm of the amplitude is real and non-negative even though the norm of the field is complex. The two singular values of $\tilde F$ are the eigenvalues of $\tilde F_H$, and they are fixed by $W$ and by $\lvert\langle\tilde F\rangle_{\natural}\rvert$: the energy density gives their sum of squares and the invariant modulus gives their product. The amplitude is therefore the part of the field that the operator-to-state map keeps, up to its overall scale.
 
-**The phase is the duality angle and the polarization rotation.** The unitary factor is $\tilde F_0=\exp(i\alpha)\tilde u_{\mathrm r}$; its central phase is the duality angle, $\alpha=\tfrac12\arg\langle\tilde F\rangle_{\natural}$, and its rotor is the rotation of the polarization plane. A duality rotation $\tilde F\mapsto\exp(i\theta)\tilde F$ leaves $\tilde F_H$ unchanged and multiplies $\tilde F_0$ by $\exp(i\theta)$; it is a motion along the phase fibre, not a change of amplitude. This is the polar form of the statement that $I_1$ and $I_2$ rotate into one another while $I_1^{2}+4c^{2}I_2^{2}$ is fixed.
+**The phase is the duality angle and the polarization rotation.** The $*$-unitary factor is $\tilde F_0=\exp(i\alpha)\tilde u_{\mathrm r}$; its central phase is the duality angle, $\alpha=\tfrac12\arg\langle\tilde F\rangle_{\natural}$, and its rotor is the rotation of the polarization plane. A duality rotation $\tilde F\mapsto\exp(i\theta)\tilde F$ leaves $\tilde F_H$ unchanged and multiplies $\tilde F_0$ by $\exp(i\theta)$; it is a motion along the phase fibre, not a change of amplitude. This is the polar form of the statement that $I_1$ and $I_2$ rotate into one another while $I_1^{2}+4c^{2}I_2^{2}$ is fixed.
 
 **The null field is a pure state.** On the cone, $I_1=I_2=0$, the amplitude is a scaled idempotent and the phase is a partial isometry, so the state $\tilde F\tilde F^{*}/2\langle\tilde F,\tilde F\rangle_{*}$ is pure. The radiative field is the zero divisor of the field space, and the operator-to-state map sends it to the boundary of the Bloch ball. This is the same cone that the massless spectrum article reads as the lightlike limit.
 
-**The boundary.** The split is canonical in the algebra, and it is not a Lorentz-covariant factorisation: the field is a bivector in the tensor reading, its Lorentz action is not the four-vector congruence, and it does not act on $\tilde F_H$ and $\tilde F_0$ separately by one and the same operation. Only the invariants, and the modulus $\lvert\langle\tilde F\rangle_{\natural}\rvert$, are invariant. The polar split is also not the self-dual/anti-self-dual split: the latter uses the Hodge star and separates the two helicities, while the Cartan phase is the compact unitary quotient. The two decompositions answer different questions and must not be identified.
+**The boundary.** The split is canonical in the algebra, and it is not a Lorentz-covariant factorisation: the field is a bivector in the tensor reading, its Lorentz action is not the four-vector congruence, and it does not act on $\tilde F_H$ and $\tilde F_0$ separately by one and the same operation. Only the invariants, and the modulus $\lvert\langle\tilde F\rangle_{\natural}\rvert$, are invariant. The polar split is also not the self-dual/anti-self-dual split: the latter uses the Hodge star and separates the two helicities, while the Cartan phase is the compact $*$-unitary quotient. The two decompositions answer different questions and must not be identified.
 
 ## Lorentz Invariance of the Invariants
 

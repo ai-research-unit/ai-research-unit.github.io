@@ -94,11 +94,11 @@ $$
 
 the fourth power of the element determinant, as in the regular sector.
 
-The fixed subspace of $\Theta_{\tilde U}$ is two-dimensional. It is not the centralizer of $\tilde U$: the norm-one element is not unitary, and $\Theta_{\tilde U}$ is not a conjugation. One fixed vector comes from the $3\times3$ block and one from the $1\times1$ block; both are written explicitly in §*The Fixed Directions*.
+The fixed subspace of $\Theta_{\tilde U}$ is two-dimensional. It is not the centralizer of $\tilde U$: the norm-one element is not $*$-unitary, and $\Theta_{\tilde U}$ is not a conjugation. One fixed vector comes from the $3\times3$ block and one from the $1\times1$ block; both are written explicitly in §*The Fixed Directions*.
 
 ## The Polar Decomposition of the Sandwich
 
-Write the Cartan pairing of the element as $\tilde Q=\tilde H\tilde V$ with $\tilde H=r\tilde U_{\mathrm b}$ positive and $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$ unitary. Then
+Write the Cartan pairing of the element as $\tilde Q=\tilde H\tilde V$ with $\tilde H=r\tilde U_{\mathrm b}$ positive and $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$ $*$-unitary. Then
 
 $$
 \Theta_{\tilde Q}=\Theta_{\tilde H}\circ\Theta_{\tilde V},
@@ -108,9 +108,9 @@ $$
 \Theta_{\tilde V}(\tilde X)=\tilde V\tilde X\tilde V^{*}.
 $$
 
-The first factor is a positive operator on $\mathbb{B}$, because $\tilde H$ is positive. The second is a unitary operator, because $\tilde V$ is unitary. This is the polar decomposition of the operator $\Theta_{\tilde Q}$.
+The first factor is a positive operator on $\mathbb{B}$, because $\tilde H$ is positive. The second is a $*$-unitary operator, because $\tilde V$ is $*$-unitary. This is the polar decomposition of the operator $\Theta_{\tilde Q}$.
 
-The product $\Theta_{\tilde Q}$ is $\lvert Q_t\rvert^{2}$ times a unipotent operator, while the two factors are not unipotent. The positive factor has eigenvalues $r^{2}e^{\pm\psi}$ on the two spinor slots, and the unitary factor has eigenvalues $e^{\pm i\theta}$ after the phase cancels. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The factors do not commute, and the non-commutativity is the Jordan defect of the sandwich.
+The product $\Theta_{\tilde Q}$ is $\lvert Q_t\rvert^{2}$ times a unipotent operator, while the two factors are not unipotent. The positive factor has eigenvalues $r^{2}e^{\pm\psi}$ on the two spinor slots, and the $*$-unitary factor has eigenvalues $e^{\pm i\theta}$ after the phase cancels. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The factors do not commute, and the non-commutativity is the Jordan defect of the sandwich.
 
 ## The Two Slots
 
@@ -192,7 +192,7 @@ $$
 \tilde V=\frac{e_t+\vec e_x}{\sqrt2},
 $$
 
-and the sandwich is the composition of the positive operator $\Theta_{\tilde H}$ and the unitary operator $\Theta_{\tilde V}$. The example shows the general structure: the product is unipotent, the factors are not, and the fixed coordinate is the remnant of the $1\times1$ block.
+and the sandwich is the composition of the positive operator $\Theta_{\tilde H}$ and the $*$-unitary operator $\Theta_{\tilde V}$. The example shows the general structure: the product is unipotent, the factors are not, and the fixed coordinate is the remnant of the $1\times1$ block.
 
 
 
@@ -211,7 +211,7 @@ and the sandwich is the composition of the positive operator $\Theta_{\tilde H}$
 | Jordan form | one block of size three and one of size one |
 | eigenvalue | $\lvert Q_t\rvert^{2}$ |
 | determinant | $\lvert Q_t\rvert^{8}$ |
-| polar factors | $\Theta_{\tilde H}$ positive, $\Theta_{\tilde V}$ unitary |
+| polar factors | $\Theta_{\tilde H}$ positive, $\Theta_{\tilde V}$ $*$-unitary |
 | phase | invisible, $\Theta_{e^{i\alpha}}=\mathrm{id}$ |
 | fixed subspace | the span of $\vec A$ and $e_t+i\vec c$, $\vec c=\vec A\times\vec B/a^2$ |
 
@@ -220,7 +220,7 @@ On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: r
 ### What the Sandwich Shows
 
 - On the Jordan part the two-sided operator is a scalar times a unipotent operator with a single $3\times3$ block and a single $1\times1$ block; on the scalar line it is a scalar.
-- Its polar decomposition is the sandwich of the Cartan factors; the factors are positive and unitary, and their product is unipotent.
+- Its polar decomposition is the sandwich of the Cartan factors; the factors are positive and $*$-unitary, and their product is unipotent.
 - The two spinor slots of the regular sector coalesce into the Jordan chain.
 - The phase cancels, so the sandwich sees only the scale, the boost and the rotor.
 
@@ -235,7 +235,7 @@ On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: r
 | $\vec\Upsilon=\vec Q/Q_t$ | the null vector of the normal form |
 | $\Theta_{\tilde Q}$ | the sandwich $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$ |
 | $L_{\tilde Q},R_{\tilde Q}$ | left and right multiplication |
-| $\tilde H,\tilde V$ | the positive and unitary Cartan factors |
+| $\tilde H,\tilde V$ | the positive and $*$-unitary Cartan factors |
 | $\psi,\theta$ | the rapidity and the rotor angle |
 | $\vec A,\vec B$ | the real and imaginary parts of $\vec\Upsilon$; the arrows distinguish them from the operators $A,B$ |
 | $a$ | the null parameter, $\lvert\vec A\rvert=\lvert\vec B\rvert=a$ |

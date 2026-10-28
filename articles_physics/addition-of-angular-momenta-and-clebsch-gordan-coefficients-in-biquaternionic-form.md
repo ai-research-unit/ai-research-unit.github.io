@@ -168,7 +168,7 @@ $$
 |j,m\rangle=\sum_{m_1+m_2=m}\langle j_1,m_1;j_2,m_2|j,m\rangle\,|j_1,m_1\rangle|j_2,m_2\rangle ,
 $$
 
-where the bracket is the **Clebsch–Gordan coefficient**. The coefficients vanish unless $m=m_1+m_2$ and $j$ lies in the range above. They are the matrix elements of the unitary change of basis between the product basis and the coupled basis, and therefore satisfy the orthogonality and completeness relations
+where the bracket is the **Clebsch–Gordan coefficient**. The coefficients vanish unless $m=m_1+m_2$ and $j$ lies in the range above. They are the matrix elements of the $*$-unitary change of basis between the product basis and the coupled basis, and therefore satisfy the orthogonality and completeness relations
 
 $$
 \sum_{m_1,m_2}\langle j_1,m_1;j_2,m_2|j,m\rangle\langle j_1,m_1;j_2,m_2|j_{\mathrm{II}},m_{\mathrm{II}}\rangle=\delta_{j,j_{\mathrm{II}}}\delta_{m,m_{\mathrm{II}}} ,
@@ -313,7 +313,7 @@ U=\begin{pmatrix}
 U^\dagger U=UU^\dagger=I_4 ,
 $$
 
-whose rows are the coupled states and whose columns are the product states. As an element of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ it is unitary in the matrix sense, $U U^\dagger=e_t\otimes e_t$, and it is a legitimate element of the two-qubit algebra: every $4\times 4$ matrix is.
+whose rows are the coupled states and whose columns are the product states. As an element of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ it is $*$-unitary in the matrix sense, $U U^\dagger=e_t\otimes e_t$, and it is a legitimate element of the two-qubit algebra: every $4\times 4$ matrix is.
 
 Two properties of $U$ are worth recording, because they are the algebraic face of the entanglement of the coupled basis.
 
@@ -323,9 +323,9 @@ $$
 |0,0\rangle=\tfrac{1}{\sqrt2}\left(|\!\uparrow\downarrow\rangle-|\!\downarrow\uparrow\rangle\right),
 $$
 
-which is maximally entangled in the product basis and is therefore not a product vector, while the rows of a product unitary $\tilde Q_1\otimes\tilde Q_2$ are the tensor products of the rows of $\tilde Q_1$ and of $\tilde Q_2$, hence product vectors in every row. No product unitary can have the singlet among its rows, so $U\neq\tilde Q_1\otimes\tilde Q_2$. Equivalently, the idempotents $\tilde\Pi_{\mathrm{sym}}$ and $\tilde\Pi_{\mathrm{asym}}$ are not of product form. The Clebsch–Gordan transformation of two fundamental systems is therefore not a rotation of one factor; it is a genuinely two-factor transformation.
+which is maximally entangled in the product basis and is therefore not a product vector, while the rows of a product $*$-unitary $\tilde Q_1\otimes\tilde Q_2$ are the tensor products of the rows of $\tilde Q_1$ and of $\tilde Q_2$, hence product vectors in every row. No product $*$-unitary can have the singlet among its rows, so $U\neq\tilde Q_1\otimes\tilde Q_2$. Equivalently, the idempotents $\tilde\Pi_{\mathrm{sym}}$ and $\tilde\Pi_{\mathrm{asym}}$ are not of product form. The Clebsch–Gordan transformation of two fundamental systems is therefore not a rotation of one factor; it is a genuinely two-factor transformation.
 
-Second, the local transformations form a proper subgroup. The elements $\tilde Q_1\otimes\tilde Q_2$ with $\tilde Q_a\in\mathbb{B}$ unitary constitute $\mathrm{U}(2)\times \mathrm{U}(2)$, of real dimension $8$, inside the $\mathrm{U}(4)$ of the two-qubit algebra, of real dimension $16$. The Clebsch–Gordan transformation lies in the complement of the local subgroup, in the sense that it changes the entanglement of the basis while preserving the total angular momentum.
+Second, the local transformations form a proper subgroup. The elements $\tilde Q_1\otimes\tilde Q_2$ with $\tilde Q_a\in\mathbb{B}$ $*$-unitary constitute $\mathrm{U}(2)\times \mathrm{U}(2)$, of real dimension $8$, inside the $\mathrm{U}(4)$ of the two-qubit algebra, of real dimension $16$. The Clebsch–Gordan transformation lies in the complement of the local subgroup, in the sense that it changes the entanglement of the basis while preserving the total angular momentum.
 
 The transformation is not unique as a matrix. Only the coupled *idempotents* are canonical: the decomposition $\mathbb{C}^4=\mathrm{Sym}^2\oplus\Lambda^2$ is canonical, and within each summand the diagonalisation of $\tilde S_3$ is canonical once the axis is fixed. What remains free is the phase of each coupled state, and it is fixed below by the Condon–Shortley convention. This is the same freedom that appears for any multiplet in the framework: a state is defined up to a central phase $\exp(i\alpha)e_t$, and the relative phases of a multiplet are a convention.
 
@@ -429,7 +429,7 @@ The article established the following.
   $$\tilde\Pi_{\mathrm{sym}}=\tfrac14\left(3e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k\right),\qquad \tilde\Pi_{\mathrm{asym}}=\tfrac14\left(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k\right),$$
   of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$, and the total Casimir is $\tilde S^2=\hbar^2(e_t\otimes e_t+F)=2\hbar^2\tilde\Pi_{\mathrm{sym}}$.
 - **The coupling term.** $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{2}F-\tfrac{\hbar^2}{4}e_t\otimes e_t$, whence $[F,\tilde S_k]=0$: the exchange operator is central in the coupled rotation algebra, which is why it is simultaneously diagonal with the coupled Casimir.
-- **The transformation.** The Clebsch–Gordan transformation is the unitary element $U$ of $\mathbb{B}\otimes\mathbb{B}$ that diagonalises $\tilde S^2$ and $\tilde S_3$; it is not a product of one-factor unitaries, since it maps product states to entangled states.
+- **The transformation.** The Clebsch–Gordan transformation is the $*$-unitary element $U$ of $\mathbb{B}\otimes\mathbb{B}$ that diagonalises $\tilde S^2$ and $\tilde S_3$; it is not a product of one-factor unitaries, since it maps product states to entangled states.
 - **The triplet coupling.** For $1\otimes1$ the coupled states carry $j(j+1)=6,2,0$; the quintet is totally symmetric, the singlet totally antisymmetric, and the triplet antisymmetric in the two vector factors.
 - **Recursions and phase.** The coefficients satisfy the standard raising and lowering recursions, and the phase is fixed by the Condon–Shortley convention, in which the coefficient of the largest $m_1$ is positive.
 - **Division of labour.** The coefficients, their recursion, and their phase convention are imported from the representation theory of the rotation group; the operators that generate the coupling, the idempotents, and the exchange operator are elements of the biquaternion algebra and its tensor square.

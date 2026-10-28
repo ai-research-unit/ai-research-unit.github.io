@@ -279,7 +279,7 @@ $$
 \tilde Q_0=\tilde Q_H^{+}\tilde Q,
 $$
 
-with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. For $\tilde Q\neq0$, $\tilde Q_H$ has rank one, $\tilde Q_0$ is not unitary, and its final projection is a rank-one projection. At the origin both factors vanish.
+with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. For $\tilde Q\neq0$, $\tilde Q_H$ has rank one, $\tilde Q_0$ is not $*$-unitary, and its final projection is a rank-one projection. At the origin both factors vanish.
 
 *Proof.* The existence and uniqueness are *The Polar Decomposition of a Biquaternion*, §*Uniqueness*; the rank and partial-isometry statements are *The Polar Decomposition of a N-Degenerate Biquaternion*, §*The Two-Factor Decomposition*.
 
@@ -295,7 +295,7 @@ Then $\tilde Q_H^2=\tilde Q\tilde Q^{*}$, $\tilde Q_H$ is positive semidefinite 
 
 *Proof.* This is *The Polar Decomposition of a N-Degenerate Biquaternion*, §*The Hermitian Factor*, where the identities $\lvert\vec W\rvert=\langle\tilde Q\rangle_{*}$ and $\lvert\vec W\rvert=2a^2$ are proved; the spectrum follows from $\tilde Q_H^2=2a^2e_t+i\vec W$.
 
-**Remark (what degenerates).** On the sector the Hermitian factor is positive definite and the isometry factor is unitary. On the cone the Hermitian factor drops to rank one and the isometry factor to a partial isometry; the two projections are rank-one and no longer the identity. The Hermitian factor is the continuous limit of the regular one; the isometry factor is not continuous at the cone.
+**Remark (what degenerates).** On the sector the Hermitian factor is positive definite and the isometry factor is $*$-unitary. On the cone the Hermitian factor drops to rank one and the isometry factor to a partial isometry; the two projections are rank-one and no longer the identity. The Hermitian factor is the continuous limit of the regular one; the isometry factor is not continuous at the cone.
 
 **Remark (the matrix reading).** Under $\mathsf{M}_2$ the factor $\tilde Q_H$ is the positive semidefinite square root of $MM^{\dagger}$ and $\tilde Q_0$ is the isometry factor of the matrix polar decomposition, a partial isometry with rank-one initial and final projections. The matrix decomposition exists for every matrix and is unique; on the cone it is the degenerate case.
 
@@ -345,7 +345,7 @@ The two sectors are complementary, and the comparison is the content of the norm
 | multiplication | semigroup with absorbing $0$, no identity | group |
 | inverse | none | two-sided |
 | matrix model | rank at most $1$ | invertible, rank $2$ |
-| polar factors | $\tilde Q_H$ of rank one, $\tilde Q_0$ a partial isometry | $\tilde Q_H$ positive definite, $\tilde Q_0$ unitary |
+| polar factors | $\tilde Q_H$ of rank one, $\tilde Q_0$ a partial isometry | $\tilde Q_H$ positive definite, $\tilde Q_0$ $*$-unitary |
 | spectrum | $0$ is an eigenvalue | $\lambda_\pm\neq0$ |
 | boundary | the boundary of the sector | $\partial\mathbb{B}^{\times}=\mathcal{N}$ |
 

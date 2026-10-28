@@ -142,7 +142,7 @@ $$
 - $r(A)<1$;
 - $A^n\to0$ as $n\to\infty$;
 - the series $\sum_{n\ge0}A^n$ converges;
-- $I_6-A$ is invertible with inverse $\sum_{n\ge0}A^n$.
+- $I_6-A$ is invertible, and then $(I_6-A)^{-1}=\sum_{n\ge0}A^n$.
 
 **Proof.** If $r(A)<1$, the Gelfand formula gives $\lVert A^n\rVert^{1/n}<1$ eventually, so $A^n\to0$ and the geometric series converges. Conversely, if the series converges, its terms tend to zero, so $r(A)<1$ (otherwise the eigenvalues of modulus at least one would prevent convergence). The inverse identity is the geometric series.
 
@@ -445,6 +445,6 @@ At a simple spectrum the projectors are the Lagrange projectors $P_i=\prod_{j\ne
 - [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the Hermitian spectral theorem.
 - [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m6c.html), for the exponential as a Dunford calculus.
 - [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the spectral theory of $A^*A$.
-- [Spectral Theory](spectral-theory.html), for the general theory of the resolvent and the functional calculus.
-- [The Holomorphic Functional Calculus](the-holomorphic-functional-calculus.html), for the Dunford calculus in a Banach algebra.
+- [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the characteristic polynomial and Cayley–Hamilton.
+- [Holomorphic Functional Calculus](holomorphic-functional-calculus.html), for the Dunford calculus in a Banach algebra.
 - Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 1995), for the resolvent and the spectral projectors at a coalescence.

@@ -28,7 +28,7 @@ the entropy is a function of the single scalar by which the state fails to be id
 
 This is the informational interpretation of a geometric fact. The article does not claim that entropy is *derived* from the biquaternion norm in the sense of being forced by it — the function $h$ is the standard one, and its form is a theorem of information theory, not of the algebra — but it makes precise which algebraic invariant the entropy sees. The biquaternion norm supplies the number; information theory supplies the function. Two invariants of the algebra are in play throughout the framework and must not be conflated: the **Hermitian form**, $\langle\tilde{P},\tilde{H}\rangle_{*}=\mathrm{Sc}(\tilde{P}\tilde{H}^{*})$, whose $2\times2$ reading is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H})$ and which gives the Born rule, and the **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, which is indefinite of signature $(1,3)$ and gives the cone. Entropy belongs to the second.
 
-The article proceeds as follows. The state, its purity, and the biquaternion norm are recalled and the identities connecting them are derived. Then the spectral decomposition is used to compute the entropy and to write it as a function of the biquaternion norm, and the logarithm is exhibited as an element of the algebra. Then the consequences are collected: monotonicity, bounds, concavity, unitary invariance, and the behaviour at the two ends of the cone slice. Then the relation to the standard matrix formula is stated, and a section separates what the biquaternion-norm description adds from what it merely restates. Open questions and the usual closing sections follow.
+The article proceeds as follows. The state, its purity, and the biquaternion norm are recalled and the identities connecting them are derived. Then the spectral decomposition is used to compute the entropy and to write it as a function of the biquaternion norm, and the logarithm is exhibited as an element of the algebra. Then the consequences are collected: monotonicity, bounds, concavity, $*$-unitary invariance, and the behaviour at the two ends of the cone slice. Then the relation to the standard matrix formula is stated, and a section separates what the biquaternion-norm description adds from what it merely restates. Open questions and the usual closing sections follow.
 
 ## The State, Its Purity, and the Biquaternion Norm
 
@@ -209,9 +209,9 @@ $$
 
 In the biquaternion-norm description this is the statement that the composition $H\circ N$ is concave along convex combinations of states. Since $\langle\cdot\rangle_{\natural}$ is a quadratic (and hence not affine) function of the state, the concavity of $H\circ N$ is not a trivial consequence of the concavity of $H$; it is the statement that mixing cannot decrease information, verified spectrum by spectrum. The maximally mixed state is the unique fixed point of the mixing map $\tilde{Ϛ}\mapsto\tfrac12\tilde{Ϛ}+\tfrac14 e_t$ and is the state of largest entropy.
 
-### Unitary invariance
+### $*$-Unitary invariance
 
-Rotor conjugation by a matrix-unitary biquaternion, $\tilde{Ϛ}\mapsto\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_t$, rotates the Bloch vector without changing its length. It therefore preserves $\langle\tilde{Ϛ}\rangle_{\natural}$, the purity, the spectrum, and the entropy. This is the statement that the entropy is a unitary invariant, as it must be; in the framework it is the statement that $S$ is a function of the biquaternion norm, which the inner automorphisms of the algebra preserve.
+Rotor conjugation by a matrix-unitary biquaternion, $\tilde{Ϛ}\mapsto\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_t$, rotates the Bloch vector without changing its length. It therefore preserves $\langle\tilde{Ϛ}\rangle_{\natural}$, the purity, the spectrum, and the entropy. This is the statement that the entropy is a $*$-unitary invariant, as it must be; in the framework it is the statement that $S$ is a function of the biquaternion norm, which the inner automorphisms of the algebra preserve.
 
 ## Relation to the Standard Formula
 
@@ -243,7 +243,7 @@ None of this is available in the same form for a general $d$-level system, where
 
 ## Open Questions
 
-**1. Entropy from the algebra alone.** The entropy is a function of the biquaternion norm, but the function $h$ is not algebraic. Is there a characterization of the entropy as the unique (up to scale) quantity on the cone slice that is monotone, concave, and unitary invariant? For the qubit this is plausible; a derivation from algebraic axioms alone has not been given.
+**1. Entropy from the algebra alone.** The entropy is a function of the biquaternion norm, but the function $h$ is not algebraic. Is there a characterization of the entropy as the unique (up to scale) quantity on the cone slice that is monotone, concave, and $*$-unitary invariant? For the qubit this is plausible; a derivation from algebraic axioms alone has not been given.
 
 **2. The many-qubit case.** For $n$ qubits the state space is the positive cone slice of $\mathbb{M}_+^{\otimes n}$, and the biquaternion norm is replaced by a family of invariants. Which algebraic data determine the entropy there, and does the biquaternion norm of the tensor product play the role the single norm plays here?
 
@@ -270,7 +270,7 @@ S(\tilde{Ϛ}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{
 = -\mathrm{Tr}\bigl(\tilde{Ϛ}\log\tilde{Ϛ}\bigr),
 $$
 
-with $S=0$ exactly on the pure states (the zero divisors of the biquaternion norm) and $S=\log2$ exactly at the maximally mixed state (the maximum of the biquaternion norm on the slice). Entropy is monotone in the biquaternion norm, concave, and invariant under the unitary inner automorphisms that preserve the biquaternion norm.
+with $S=0$ exactly on the pure states (the zero divisors of the biquaternion norm) and $S=\log2$ exactly at the maximally mixed state (the maximum of the biquaternion norm on the slice). Entropy is monotone in the biquaternion norm, concave, and invariant under the $*$-unitary inner automorphisms that preserve the biquaternion norm.
 
 The description is the standard qubit entropy, and it predicts nothing new. What it makes precise is which invariant the entropy measures: not the Hermitian form of the Born rule, whose $2\times2$ reading is the trace pairing, but the biquaternion norm whose cone is the state space, and, on that cone slice, the departure of the state from the zero-divisor boundary.
 

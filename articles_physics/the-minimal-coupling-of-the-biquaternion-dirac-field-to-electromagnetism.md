@@ -50,7 +50,7 @@ $$
 \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,\, ie_t\},
 $$
 
-and its unitary elements are the phases $\lambda = \exp(i\theta)$ with $\theta \in \mathbb{R}$. A **constant** central phase
+and its $*$-unitary elements are the phases $\lambda = \exp(i\theta)$ with $\theta \in \mathbb{R}$. A **constant** central phase
 
 $$
 \tilde{\Psi} \;\longmapsto\; \exp(i\theta)\tilde{\Psi}, \qquad \theta \ \text{constant},
@@ -281,7 +281,7 @@ It is worth separating the two, because they are easily conflated.
 
 **What the algebra supplies.**
 
-- *A canonical abelian coupling.* The gauge group is the unitary part of the centre, and the centre is the only place a central phase can live. The $\mathrm{U}(1)$ that minimal coupling gauges is attached to the algebra without a choice of representation, as the gauge principle article establishes.
+- *A canonical abelian coupling.* The gauge group is the $*$-unitary part of the centre, and the centre is the only place a central phase can live. The $\mathrm{U}(1)$ that minimal coupling gauges is attached to the algebra without a choice of representation, as the gauge principle article establishes.
 - *The covariant derivative as the localization of the phase.* The interaction term $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ is not added by hand: it is the term the localized phase forces, and the connection it forces is exactly the potential biquaternion of the Maxwell article.
 - *Exact covariance of the massless coupled equation*, with the component operators $D_\mu$ and the phase law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ inherited unchanged.
 - *A material-sector connection.* For a real gauge function the connection stays in $\mathbb{M}_-$, so the coupling respects the sector decomposition the framework is built on.

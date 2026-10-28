@@ -88,7 +88,7 @@ The transverse components of the Bloch vector are multiplied by $1-p$, while the
 
 **Problem.** Compute the Choi matrix of $\Phi^{\mathrm{deph}}_p$ in the computational basis and determine its rank. Deduce the minimal Kraus rank, exhibit a minimal Kraus representation, and decide whether the three-operator representation of Problem 1 is minimal.
 
-**Solution.** The rank of the Choi matrix is invariant under unitary conjugation, and dephasing along any unit axis is unitarily equivalent to dephasing along $\vec e_z$; we therefore fix $\vec u_x = \vec e_z$. Let $E_{jk} = |j\rangle\langle k|$ be the matrix units of the computational basis, expressed in the algebra as
+**Solution.** The rank of the Choi matrix is invariant under $*$-unitary conjugation, and dephasing along any unit axis is unitarily equivalent to dephasing along $\vec e_z$; we therefore fix $\vec u_x = \vec e_z$. Let $E_{jk} = |j\rangle\langle k|$ be the matrix units of the computational basis, expressed in the algebra as
 $$
 E_{00} = \tfrac{1}{2}(e_t + i\vec e_z), \quad
 E_{11} = \tfrac{1}{2}(e_t - i\vec e_z), \quad
@@ -124,7 +124,7 @@ By the parent's rank theorem, the **minimal Kraus rank is two** for $0<p<2$, and
 $$
 \boxed{\;\tilde{K}_0 = \sqrt{1-\tfrac{p}{2}}\;e_t, \qquad \tilde{K}_1 = \sqrt{\tfrac{p}{2}}\;i\vec u_x\;} .
 $$
-At $p=2$ the first operator vanishes, $\tilde{K}_0=0$, and the pair collapses to the single operator $\tilde{K}_1=i\vec u_x$, which is unitary; that endpoint lies outside the parent's physical range $0\le p\le 1$.
+At $p=2$ the first operator vanishes, $\tilde{K}_0=0$, and the pair collapses to the single operator $\tilde{K}_1=i\vec u_x$, which is $*$-unitary; that endpoint lies outside the parent's physical range $0\le p\le 1$.
 
 Trace preservation holds because $(i\vec u_x)^{*}(i\vec u_x) = (i\vec u_x)^2 = i^2\vec u_x^2 = e_t$, so $\tilde{K}_0^{*}\tilde{K}_0 + \tilde{K}_1^{*}\tilde{K}_1 = (1-\tfrac{p}{2})e_t + \tfrac{p}{2}e_t = e_t$. The action is
 $$
@@ -132,7 +132,7 @@ $$
 $$
 Since $(i\vec u_x)\tilde{Ϛ}(i\vec u_x) = -\vec u_x\tilde{Ϛ}\vec u_x = \tfrac{1}{2}\left(e_t - i\vec r + 2i(\vec u_x\cdot\vec r)\vec u_x\right)$, this reproduces $\vec r_{\mathrm{out}} = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, as required.
 
-**Conclusion.** The three-operator representation of Problem 1 is valid but **not minimal**: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde\Pi_1 + \tilde\Pi_2)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the unitary conjugation $\tilde{Ϛ}\mapsto(i\vec u_x)\tilde{Ϛ}(i\vec u_x)^{*}$, of Kraus rank one and reversible.
+**Conclusion.** The three-operator representation of Problem 1 is valid but **not minimal**: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde\Pi_1 + \tilde\Pi_2)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the $*$-unitary conjugation $\tilde{Ϛ}\mapsto(i\vec u_x)\tilde{Ϛ}(i\vec u_x)^{*}$, of Kraus rank one and reversible.
 
 ## Problem 3: A Positive Map That Is Not Completely Positive
 
@@ -164,7 +164,7 @@ $$
 $$
 The Choi matrix is therefore not positive semidefinite, and by the parent's criterion $\Phi_T$ is **not completely positive**. Equivalently, transposing one qubit of a maximally entangled state can produce an operator with a negative eigenvalue: the antisymmetric direction of $J_T$ is exactly the singlet, which acquires the eigenvalue $-1$. No physical process can act that way on half of an entangled pair, so $\Phi_T$ is not a channel, despite being positive and trace preserving. This is the parent's point that positivity must be strengthened to complete positivity, made explicit on the simplest example.
 
-The conclusion does not depend on the choice of matrix representative: transposes in two orthonormal bases are related by unitary conjugation, and the spectrum of the Choi matrix is invariant under unitary conjugation of the channel.
+The conclusion does not depend on the choice of matrix representative: transposes in two orthonormal bases are related by $*$-unitary conjugation, and the spectrum of the Choi matrix is invariant under $*$-unitary conjugation of the channel.
 
 ## Problem 4: The Amplitude-Damping Channel
 

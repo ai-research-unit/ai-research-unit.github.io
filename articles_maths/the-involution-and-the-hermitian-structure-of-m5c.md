@@ -123,21 +123,21 @@ $$
 
 **Proof.** The inner product of two standard basis vectors is the Kronecker delta; the identification is $y\mapsto\langle\cdot,y\rangle$.
 
-### The Unitary Group
+### The $*$-Unitary Group
 
-**Definition.** The **unitary group** is
+**Definition.** The **$*$-unitary group** is
 
 $$
 U(5)=\{U\in GL_5(\mathbb{C}):U^*U=I\},
 $$
 
-and the **special unitary group** is $SU(5)=U(5)\cap SL_5(\mathbb{C})$.
+and the **special $*$-unitary group** is $SU(5)=U(5)\cap SL_5(\mathbb{C})$.
 
 **Proposition.** $U(5)$ is the group of linear isometries of the standard Hermitian form; it is a compact real Lie group of real dimension $25$. Its Lie algebra is $\mathfrak{u}(5)$, and the Lie algebra of $SU(5)$ is $\mathfrak{su}(5)$, of real dimension $24$.
 
 **Proof.** A linear map preserves the form iff $U^*U=I$. The group is the zero set of the polynomial equations $U^*U=I$, hence closed and bounded in $M_5\cong\mathbb{R}^{50}$ (the columns are orthonormal), hence compact. The tangent space at $I$ is $\{X:X^*=-X\}=\mathfrak{u}(5)$; the traceless condition gives $\mathfrak{su}(5)$.
 
-**Corollary.** For $X\in\mathfrak{u}(5)$ and $t\in\mathbb{R}$, the exponential $e^{tX}$ is unitary; the map $t\mapsto e^{tX}$ is a one-parameter subgroup of $U(5)$.
+**Corollary.** For $X\in\mathfrak{u}(5)$ and $t\in\mathbb{R}$, the exponential $e^{tX}$ is $*$-unitary; the map $t\mapsto e^{tX}$ is a one-parameter subgroup of $U(5)$.
 
 **Proof.** $(e^{tX})^*=e^{tX^*}=e^{-tX}=(e^{tX})^{-1}$.
 
@@ -197,23 +197,23 @@ $$
 \|UAV\|_F=\|A\|_F\qquad(U,V\in U(5)).
 $$
 
-**Proof.** The norm is the Euclidean norm of the $25$ complex coordinates; the triangle inequality and homogeneity are those of the Euclidean norm. For unitary $U,V$, $(UAV)^*(UAV)=V^*A^*U^*UAV=V^*A^*AV$, which has the same trace as $A^*A$ by cyclicity.
+**Proof.** The norm is the Euclidean norm of the $25$ complex coordinates; the triangle inequality and homogeneity are those of the Euclidean norm. For $*$-unitary $U,V$, $(UAV)^*(UAV)=V^*A^*U^*UAV=V^*A^*AV$, which has the same trace as $A^*A$ by cyclicity.
 
-**Corollary.** The unitary group acts on $M_5$ by isometries of the Frobenius form, on the left and on the right.
+**Corollary.** The $*$-unitary group acts on $M_5$ by isometries of the Frobenius form, on the left and on the right.
 
-**Proof.** $\langle U A,V B\rangle_F=\operatorname{tr}(A^*U^*VB)$; for $U=V$ unitary this is $\operatorname{tr}(A^*B)$; the left action is unitary. The right action is the same with $A\mapsto AU$.
+**Proof.** $\langle U A,V B\rangle_F=\operatorname{tr}(A^*U^*VB)$; for $U=V$ $*$-unitary this is $\operatorname{tr}(A^*B)$; the left action is $*$-unitary. The right action is the same with $A\mapsto AU$.
 
 ### The Hilbert Space
 
-**Theorem.** $M_5(\mathbb{C})$ with the Frobenius form is a complex Hilbert space of dimension $25$ (real dimension $50$). The left and right regular representations of $U(5)$ are unitary, and the adjoint representation of $U(5)$ is unitary.
+**Theorem.** $M_5(\mathbb{C})$ with the Frobenius form is a complex Hilbert space of dimension $25$ (real dimension $50$). The left and right regular representations of $U(5)$ are $*$-unitary, and the adjoint representation of $U(5)$ is $*$-unitary.
 
-**Proof.** A finite-dimensional inner product space is complete, hence a Hilbert space. The left and right actions preserve the form by the proposition; the adjoint action $A\mapsto UAU^{-1}$ is the composition of the left and right actions with $U^{-1}=U^*$, hence unitary.
+**Proof.** A finite-dimensional inner product space is complete, hence a Hilbert space. The left and right actions preserve the form by the proposition; the adjoint action $A\mapsto UAU^{-1}$ is the composition of the left and right actions with $U^{-1}=U^*$, hence $*$-unitary.
 
 **Corollary.** The Hilbert space structure is the one used in *The Polar Decomposition* and *Analysis on $M_5(\mathbb{C})$*: the norm, the inner product and the orthogonal projection onto a subspace are those of the Frobenius form.
 
 **Proof.** The form is positive definite; the orthogonal projection is defined by the inner product.
 
-## The Unitary Action
+## The $*$-Unitary Action
 
 ### The Left and Right Actions
 
@@ -223,7 +223,7 @@ $$
 L_U(A)=UA,\qquad R_U(A)=AU .
 $$
 
-**Proposition.** Both actions are unitary for the Frobenius form, and they commute. The map $(U,V)\mapsto L_UR_V$ is an action of $U(5)\times U(5)$.
+**Proposition.** Both actions are $*$-unitary for the Frobenius form, and they commute. The map $(U,V)\mapsto L_UR_V$ is an action of $U(5)\times U(5)$.
 
 **Proof.** $\langle UA,UB\rangle_F=\operatorname{tr}(A^*U^*UB)=\operatorname{tr}(A^*B)$; $\langle AU,BU\rangle_F=\operatorname{tr}(U^*A^*BU)=\operatorname{tr}(A^*B)$; the actions commute because $UAV$ is associative.
 
@@ -239,9 +239,9 @@ $$
 \operatorname{Ad}_U(A)=UAU^{-1}=UAU^*.
 $$
 
-**Proposition.** The adjoint action is unitary, and it preserves the Hermitian and skew-Hermitian subspaces; it preserves the trace and the determinant.
+**Proposition.** The adjoint action is $*$-unitary, and it preserves the Hermitian and skew-Hermitian subspaces; it preserves the trace and the determinant.
 
-**Proof.** It is the composition of the left and right unitary actions; $(UAU^*)^*=UA^*U^*$, so Hermitian and skew-Hermitian elements are preserved; the trace and determinant are conjugation-invariant.
+**Proof.** It is the composition of the left and right $*$-unitary actions; $(UAU^*)^*=UA^*U^*$, so Hermitian and skew-Hermitian elements are preserved; the trace and determinant are conjugation-invariant.
 
 **Corollary.** The adjoint orbit of $A$ is contained in the set of matrices with the same characteristic polynomial; the orbit is a submanifold of the Frobenius sphere of radius $\|A\|_F$.
 
@@ -251,9 +251,9 @@ $$
 
 **Theorem.** The Lie algebra $\mathfrak{u}(5)$ is the compact real form of $\mathfrak{gl}_5(\mathbb{C})$, and the exponential map $\mathfrak{u}(5)\to U(5)$ is surjective.
 
-**Proof.** The compactness is the closed boundedness of $U(5)$; the real form is the skew-Hermitian subspace. The surjectivity of the exponential is the standard theorem for compact connected Lie groups: every unitary matrix is diagonalizable by a unitary matrix, $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_5})$, and $U=e^{iH}$ with $H=V\operatorname{diag}(\theta_1,\dots,\theta_5)V^*\in\mathfrak{u}(5)$.
+**Proof.** The compactness is the closed boundedness of $U(5)$; the real form is the skew-Hermitian subspace. The surjectivity of the exponential is the standard theorem for compact connected Lie groups: every $*$-unitary matrix is diagonalizable by a $*$-unitary matrix, $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_5})$, and $U=e^{iH}$ with $H=V\operatorname{diag}(\theta_1,\dots,\theta_5)V^*\in\mathfrak{u}(5)$.
 
-**Corollary.** Every unitary matrix is the exponential of a skew-Hermitian matrix, and every special unitary matrix is the exponential of a traceless skew-Hermitian matrix.
+**Corollary.** Every $*$-unitary matrix is the exponential of a skew-Hermitian matrix, and every special $*$-unitary matrix is the exponential of a traceless skew-Hermitian matrix.
 
 **Proof.** The diagonal angles can be chosen with sum zero for determinant one; the traceless condition is the sum of the angles.
 
@@ -308,7 +308,7 @@ $$
 \boxed{\ \langle A,B\rangle_F=\operatorname{tr}(A^*B)\text{ is positive definite};\quad \Sigma=\{\det=0\}\text{ has real codimension }2;\quad \text{no null cone.}\ }
 $$
 
-The Frobenius form is the Hilbert space structure on $M_5\cong\mathbb{C}^{25}\cong\mathbb{R}^{50}$; the unitary group $U(5)$ acts by isometries on the left, on the right and by conjugation. The singular set is the complex hypersurface of singular matrices, of real codimension $2$; its complement $GL_5$ is connected and dense. There is no null cone: the only null vector of the positive definite form is zero.
+The Frobenius form is the Hilbert space structure on $M_5\cong\mathbb{C}^{25}\cong\mathbb{R}^{50}$; the $*$-unitary group $U(5)$ acts by isometries on the left, on the right and by conjugation. The singular set is the complex hypersurface of singular matrices, of real codimension $2$; its complement $GL_5$ is connected and dense. There is no null cone: the only null vector of the positive definite form is zero.
 
 | Object | Value |
 |---|---|
@@ -316,7 +316,7 @@ The Frobenius form is the Hilbert space structure on $M_5\cong\mathbb{C}^{25}\co
 | Hermitian matrices | $A^*=A$, real dimension $25$ |
 | Skew-Hermitian matrices | $A^*=-A$, real dimension $25$ |
 | Compact real form | $\mathfrak{u}(5)$, real dimension $25$ |
-| Special unitary | $\mathfrak{su}(5)$, real dimension $24$ |
+| Special $*$-unitary | $\mathfrak{su}(5)$, real dimension $24$ |
 | Frobenius form | $\operatorname{tr}(A^*B)$, positive definite |
 | Frobenius norm | $\sum_{ij}|A_{ij}|^2$ |
 | Singular set | $\det=0$, real codimension $2$ |
@@ -331,16 +331,16 @@ The Frobenius form is the Hilbert space structure on $M_5\cong\mathbb{C}^{25}\co
 | $\mathfrak{u}(5)$ | The skew-Hermitian matrices, the compact real form |
 | $\mathfrak{su}(5)$ | The traceless skew-Hermitian matrices |
 | $\langle x,y\rangle=\sum\bar x_iy_i$ | The standard Hermitian form on $\mathbb{C}^5$ |
-| $U(5)$, $SU(5)$ | The unitary and special unitary groups |
+| $U(5)$, $SU(5)$ | The $*$-unitary and special $*$-unitary groups |
 | $\langle A,B\rangle_F=\operatorname{tr}(A^*B)$ | The Frobenius form |
 | $\|A\|_F$ | The Frobenius norm |
 | $\Sigma=\{\det=0\}$ | The singular set, real codimension $2$ |
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the conjugate transpose, the Hermitian matrices and the unitary group.
-- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the involutions of a central simple algebra and the unitary groups.
-- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form $\mathfrak{u}(5)$, the exponential of a skew-Hermitian matrix and the unitary group.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the conjugate transpose, the Hermitian matrices and the $*$-unitary group.
+- Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the involutions of a central simple algebra and the $*$-unitary groups.
+- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form $\mathfrak{u}(5)$, the exponential of a skew-Hermitian matrix and the $*$-unitary group.
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra, the conjugate transpose and the real form.
 - [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m5c.html), for the trace, the trace pairing and the Jordan decomposition.
 - [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m5c.html), for the determinant and the singular set.

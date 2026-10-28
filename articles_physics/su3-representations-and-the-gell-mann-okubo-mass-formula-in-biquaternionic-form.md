@@ -132,7 +132,7 @@ $$
 m^2 = m_0^2+\delta m^2,
 $$
 
-where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = D^{a}_{\ b}Z^{b}_{\ a}$ is a unitary moment $D$ contracted with a unitary field $Z$,
+where $m_0^2$ is $\mathrm{SU}(3)$-symmetric — proportional to the identity on the representation — and $\delta m^2 = D^{a}_{\ b}Z^{b}_{\ a}$ is a $*$-unitary moment $D$ contracted with a $*$-unitary field $Z$,
 
 $$
 D^{a}_{\ b} = \lambda\delta^{a}_{\ b}\mathbf{1}+\mu A^{a}_{\ b}+\nu A^{a}_{\ c}A^{c}_{\ b}+\dots,
@@ -208,11 +208,11 @@ The programme closes the system by identifying $m_0$ with the mass of the spin r
 
 ## The Biquaternion Reading
 
-The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A^{i}_{\ k}$, the unitary field $Z$ and the mass splitting are **not elements of the biquaternion algebra**. The companion *Gauge Group Ceiling* shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.
+The interpretation is short because the framework's own limit is known. The $\mathrm{SU}(3)$ representations, the Okubo operators $A^{i}_{\ k}$, the $*$-unitary field $Z$ and the mass splitting are **not elements of the biquaternion algebra**. The companion *Gauge Group Ceiling* shows the algebra's compact structure stops at $\mathrm{SU}(2)$, so no $\mathfrak{su}(3)$ with an octet of generators can be built from $\mathbb{B}$; the Okubo matrices are $3\times3$, and the algebra of three-by-three matrices is not the biquaternion algebra. The $\mathrm{SU}(3)$ machinery is external, and the article's purpose is to record it accurately beside the framework's own statements, not to claim it.
 
 What the framework can host is the **structure of the splitting**. The Gell-Mann–Okubo formula separates a symmetric part $m_0$ from a symmetry-breaking part $\delta m$ built from the Cartan directions of the algebra; the framework knows the analogous separation — a central, $\mathrm{SU}(2)$-invariant part and a breaking part along a distinguished direction — in its own sector structure and in the hypercharge direction of the charge factor. Whether the hypercharge splitting has a biquaternion image is not established here; the honest statement is that the algebra hosts the singlet/triplet/doublet isospin reduction (since those are $\mathrm{SU}(2)$ representations) and not the octet of $\mathrm{SU}(3)$.
 
-One further point is worth recording because the programme itself flags it. The **unitary field** $Z$ — the analogue of the external magnetic field in the Zeeman effect — has, the programme says, no known physical sense; it differs between supermultiplets only by two real parameters, and it is suggested that it be read as a non-local substrate in the sense of decoherence, a field whose coupling localises particles into the energy levels of a supermultiplet. The corpus's companion articles on information in the gauge orbit and on the Higgs mechanism as erasure are the natural place to compare such an interpretation; here it is recorded as the programme's speculation, not as a framework claim.
+One further point is worth recording because the programme itself flags it. The **$*$-unitary field** $Z$ — the analogue of the external magnetic field in the Zeeman effect — has, the programme says, no known physical sense; it differs between supermultiplets only by two real parameters, and it is suggested that it be read as a non-local substrate in the sense of decoherence, a field whose coupling localises particles into the energy levels of a supermultiplet. The corpus's companion articles on information in the gauge orbit and on the Higgs mechanism as erasure are the natural place to compare such an interpretation; here it is recorded as the programme's speculation, not as a framework claim.
 
 ## What the Framework Establishes, Transcribes, and Does Not
 
@@ -226,13 +226,13 @@ One further point is worth recording because the programme itself flags it. The 
 **Transcribed, not derived.**
 
 - The Okubo basis, the commutators, the three $\mathfrak{su}(2)$ subalgebras and the charge operator.
-- The Zeeman analogy, the unitary moment and field, and the derivation of the formula through the Casimirs.
+- The Zeeman analogy, the $*$-unitary moment and field, and the derivation of the formula through the Casimirs.
 - The particle content of the octets and the identification of $m_0$ with the spin–mass formula's value.
 
 **Gap, left visible.**
 
 - $\mathrm{SU}(3)$ is not an algebra of $\mathbb{B}$; the whole structure is external to the framework, and the article says so in its opening and its closing sections.
-- The physical sense of the unitary field $Z$ is unknown, by the programme's own statement.
+- The physical sense of the $*$-unitary field $Z$ is unknown, by the programme's own statement.
 - The charge-splitting parameter $\theta$ and the constants $\alpha,\beta,\gamma$ are fitted to the measured masses; $\mathrm{SU}(3)$ symmetry predicts the *form* of the splitting, not its size.
 
 ## Open Questions
@@ -243,7 +243,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 3. **The decuplet's equal spacing.** The decuplet $(3,0)$ obeys equal spacing, $m_\Omega-m_{\Xi^*}=m_{\Xi^*}-m_{\Sigma^*}=m_{\Sigma^*}-m_\Delta$, a different relation from the octet's. Is it a statement in I-spin or U-spin, and is the corpus's representation ring able to derive the two relations at once?
 
-4. **The unitary field and decoherence.** The programme's speculation that $Z$ describes a non-local substrate that localises particles overlaps the corpus's information-theoretic articles. Is there a biquaternion interpretation of $Z$ that is not a fitting parameter?
+4. **The $*$-unitary field and decoherence.** The programme's speculation that $Z$ describes a non-local substrate that localises particles overlaps the corpus's information-theoretic articles. Is there a biquaternion interpretation of $Z$ that is not a fitting parameter?
 
 5. **Charm and the fourth flavour.** The programme records that adding the charm quark extends $\mathrm{SU}(3)$ to $\mathrm{SU}(4)$. Does the admissibility condition generalise, and does the degree formula have an $\mathrm{SU}(N)$ form the corpus can state?
 
@@ -264,7 +264,7 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 | $I_3,U_3,V_3$ | I-spin, U-spin, V-spin of the three $\mathfrak{su}(2)$ subalgebras |
 | $Y,Ϙ,I,U$ | Hypercharge, charge, and the I-spin and U-spin quantum numbers |
 | $m^2=m_0^2+\delta m^2+\delta m_2^2$ | Mass operator split into symmetric and breaking parts |
-| $Z$, $D^{a}_{\ b}$ | Unitary field and unitary moment of the Zeeman analogy |
+| $Z$, $D^{a}_{\ b}$ | $*$-Unitary field and $*$-unitary moment of the Zeeman analogy |
 | $\theta$ | Ratio of charge to hypercharge splitting, $\lvert\theta\rvert\ll1$ |
 | $m_\Xi+m_N=\tfrac12(3m_\Lambda+m_\Sigma)$ | Gell-Mann–Okubo relation, baryon octet |
 | $n-m\equiv0\pmod3$ | Admissibility condition for a hadron supermultiplet |
@@ -273,7 +273,7 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 
 - M. Gell-Mann, "Symmetries of baryons and mesons," *Physical Review* **125** (1962) 1067–1084, for the eightfold way and the mass formula.
 - Y. Ne'eman, "Derivation of strong interactions from a gauge invariance," *Nuclear Physics* **26** (1961) 222–229, for the independent proposal of the $\mathrm{SU}(3)$ classification.
-- S. Okubo, "Note on unitary symmetry in strong interactions," *Progress of Theoretical Physics* **27** (1962) 949–966, for the mass formula and the Okubo basis.
+- S. Okubo, "Note on $*$-unitary symmetry in strong interactions," *Progress of Theoretical Physics* **27** (1962) 949–966, for the mass formula and the Okubo basis.
 - S. Okubo, *Introduction to Octonion and Other Non-Associative Algebras in Physics*, and *Lecture Notes in Physics* **94**, for the Okubo operators and the Zeeman analogy.
 - M. Gell-Mann and Y. Ne'eman, *The Eightfold Way* (Benjamin, 1964), for the octets, the decuplet and the mass relations.
 - Particle Data Group, *Review of Particle Physics*, for the hadron masses used in the checks.

@@ -44,7 +44,7 @@ with equality if and only if $A=0$.
 
 **Proof.** This is *The Involution and the Hermitian Structure*.
 
-**Corollary (the real and imaginary parts).** The real part is the Euclidean inner product of the $72$ real coordinates; the imaginary part is a symplectic form. The form is definite, so its isotropic cone is $\{0\}$.
+**Corollary (the real and imaginary parts).** The real part is the Euclidean inner product of the $72$ real coordinates; the imaginary part is a symplectic form. The form is definite, so its isotropic set is $\{0\}$.
 
 **Proof.** Expand in the real and imaginary coordinates; the sum of squares is positive definite, and the imaginary part is alternating.
 
@@ -60,7 +60,7 @@ $$
 
 **Proof.** It is *The Element, the Coordinates and the Trace*. The matrix unit $E_{12}$ is isotropic: $\operatorname{tr}(E_{12}^2)=0$.
 
-**Remark (two forms, two roles).** The complex bilinear pairing is the algebra form; it identifies the algebra with its dual and gives the Killing form on $\mathfrak{sl}_6$. The Hermitian form is the metric; it gives the Frobenius norm and the Hilbert-space structure. **The trace pairing has a null cone; the Hermitian form does not.**
+**Remark (two forms, two roles).** The complex bilinear pairing is the algebra form; it identifies the algebra with its dual and gives the Killing form on $\mathfrak{sl}_6$. The Hermitian form is the metric; it gives the Frobenius norm and the Hilbert-space structure. **The complex bilinear trace pairing has a null cone; the Hermitian form does not.**
 
 ### The Determinant
 
@@ -82,7 +82,7 @@ For singular $A$ of rank five, the derivative is the cofactor pairing, and it is
 
 **Proof.** $\det(A+tB)=\det(A)\det(I+tA^{-1}B)=\det(A)(1+t\operatorname{tr}(A^{-1}B)+O(t^2))$. At rank five, the adjugate is nonzero and $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$.
 
-**Corollary (the singular set is smooth at rank five).** The gradient of $\det$ is nonzero exactly at the matrices of rank five.
+**Corollary (the singular set is smooth at rank five).** The gradient of $\det$ is nonzero at every matrix of rank five or six.
 
 **Proof.** The adjugate of a rank-five matrix is nonzero (it is the product of the nonzero cofactors), and it vanishes at rank at most four.
 
@@ -107,7 +107,7 @@ $$
 
 **Proof.** The spectral theorem for the positive semidefinite $A^*A$; the trace is the sum of the eigenvalues, the determinant is the product.
 
-**Corollary (the unitary invariance).** The singular values are invariant under $A\mapsto UAV$ for $U,V\in U(6)$.
+**Corollary (the $*$-unitary invariance).** The singular values are invariant under $A\mapsto UAV$ for $U,V\in U(6)$.
 
 **Proof.** $(UAV)^*(UAV)=V^*A^*AV$, unitarily conjugate to $A^*A$.
 
@@ -390,5 +390,4 @@ The Hermitian form has the single isotropic vector $0$. The biquaternion algebra
 - [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the singular values and the positive factor.
 - [The Topology of $M_6(\mathbb{C})$](the-topology-of-m6c.html), for the complement of the singular set and the link.
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the biquaternion null cone.
-- [Schatten Norms](schatten-norms.html), for the general theory of the singular value norms.
-- [The Determinantal Variety](the-determinantal-variety.html), for the rank stratification of a matrix space.
+- [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the matrix units and the rank.

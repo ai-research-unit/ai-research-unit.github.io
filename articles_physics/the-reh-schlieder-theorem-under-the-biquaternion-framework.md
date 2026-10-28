@@ -26,7 +26,7 @@ Let $\mathcal H$ be the Hilbert space of a Wightman quantum field theory, $\Omeg
 
 Both halves hold for every open region $O$ whose causal complement has nonempty interior. Cyclicity and separating are dual: a vector is cyclic for a von Neumann algebra $M$ if and only if it is separating for the commutant $M_{\mathrm c}$, and vice versa. The theorem is therefore often stated as: the vacuum is cyclic for $\mathcal A(O)$ and separating for $\mathcal A(O)'$, or the reverse, depending on which algebra is being discussed.
 
-The hypotheses are the standard Wightman ones: the fields are operator-valued distributions on a Hilbert space with a positive-energy unitary representation of the Poincaré group, $\Omega$ is the unique Poincaré-invariant vector, and locality holds — fields at spacelike separation commute or anticommute. The theorem is proved by combining locality with the spectrum condition, using the analyticity of the vacuum correlation functions.
+The hypotheses are the standard Wightman ones: the fields are operator-valued distributions on a Hilbert space with a positive-energy $*$-unitary representation of the Poincaré group, $\Omega$ is the unique Poincaré-invariant vector, and locality holds — fields at spacelike separation commute or anticommute. The theorem is proved by combining locality with the spectrum condition, using the analyticity of the vacuum correlation functions.
 
 ### The Spectrum Condition and Why Separating Is the Deeper Half
 

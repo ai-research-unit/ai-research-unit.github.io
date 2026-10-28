@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Every invertible complex matrix is the product of a positive Hermitian matrix and a unitary one, and the product is unique. For a biquaternion matrix the two factors carry the two pieces of the polar decomposition of the element: the positive factor is the boost, the unitary factor is the phase times the rotor.
+Every invertible complex matrix is the product of a positive Hermitian matrix and a $*$-unitary one, and the product is unique. For a biquaternion matrix the two factors carry the two pieces of the polar decomposition of the element: the positive factor is the boost, the $*$-unitary factor is the phase times the rotor.
 
 This article develops the matrix polar decomposition, its refinement by the determinant, its behaviour on the singular matrices, and the singular value decomposition. It is the matrix form of *The Polar Decomposition of a N-Regular Biquaternion*, §*The Matrix Picture*, and of *The Polar Decomposition of a N-Degenerate Biquaternion*, §*The Matrix Picture*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The norm is $N=\det M$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The unitary group is $U(2)$ and the special unitary group is $SU(2)$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The norm is $N=\det M$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The $*$-unitary group is $U(2)$ and the special $*$-unitary group is $SU(2)$.
 
 **Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*, of the regular element *The Polar Decomposition of a N-Regular Biquaternion*, and of the degenerate element *The Polar Decomposition of a N-Degenerate Biquaternion*; the sandwich action of the factors is *The Sandwich in the $M_2(\mathbb{C})$ Model*; the groups are *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
@@ -18,7 +18,7 @@ $$
 M=PV,
 $$
 
-with $P$ positive semidefinite and $V$ a partial isometry. When $M$ is invertible, $P$ is positive definite, $V$ is unitary, and the factorisation is unique:
+with $P$ positive semidefinite and $V$ a partial isometry. When $M$ is invertible, $P$ is positive definite, $V$ is $*$-unitary, and the factorisation is unique:
 
 $$
 P=(MM^{\dagger})^{1/2},\qquad V=P^{-1}M.
@@ -30,7 +30,7 @@ $$
 V^{\dagger}V=M^{\dagger}P^{-2}M=M^{\dagger}(MM^{\dagger})^{-1}M=\mathrm I_2,
 $$
 
-so $V$ is unitary. For uniqueness, suppose $M=PV=P'V'$ with $P,P'$ positive definite and $V,V'$ unitary. Then $MM^{\dagger}=P^2=P'^2$, and the uniqueness of the positive square root gives $P=P'$, hence $V=V'$.
+so $V$ is $*$-unitary. For uniqueness, suppose $M=PV=P'V'$ with $P,P'$ positive definite and $V,V'$ $*$-unitary. Then $MM^{\dagger}=P^2=P'^2$, and the uniqueness of the positive square root gives $P=P'$, hence $V=V'$.
 
 **The diffeomorphism.** The map
 
@@ -74,7 +74,7 @@ $$
 
 using $\sqrt{\det(MM^{\dagger})}=\lvert\det M\rvert$. The formula is valid for every nonzero $M$; for a singular $M$ it gives the rank-one positive factor.
 
-**The unitary factor.** When $M$ is invertible, $P$ is positive definite and
+**The $*$-unitary factor.** When $M$ is invertible, $P$ is positive definite and
 
 $$
 V=P^{-1}M
@@ -82,7 +82,7 @@ V=P^{-1}M
 {MM^{\dagger}+\lvert\det M\rvert\,\mathrm I_2}\,M,
 $$
 
-which is unitary. When $M$ is singular, $P$ is only positive semidefinite and the factor $V$ is the partial isometry obtained from the Moore–Penrose inverse $P^{+}$, not from $P^{-1}$.
+which is $*$-unitary. When $M$ is singular, $P$ is only positive semidefinite and the factor $V$ is the partial isometry obtained from the Moore–Penrose inverse $P^{+}$, not from $P^{-1}$.
 
 ## The Biquaternion Word
 
@@ -105,7 +105,7 @@ The factor $P$ is $rM_b$ and the factor $V$ is $\zeta M_r$. The four factors are
 | $M_b$ | positive Hermitian, $\det1$ | $1$ | the boost |
 | $M_r$ | $SU(2)$ | $1$ | the rotor |
 
-**Why the factors are these.** The positive Hermitian matrices are the images of the Hermitian elements; the positive definite ones of determinant one are the images of the Hermitian unit-norm elements, which are the boosts. The unitary matrices are the images of the elements with $\tilde Q^{*}\tilde Q=e_t$; those of determinant one are the images of the rotors. The scale is the modulus and the phase is the central $U(1)$. The matrix polar decomposition is therefore the algebra polar decomposition read factor by factor.
+**Why the factors are these.** The positive Hermitian matrices are the images of the Hermitian elements; the positive definite ones of determinant one are the images of the Hermitian unit-norm elements, which are the boosts. The $*$-unitary matrices are the images of the elements with $\tilde Q^{*}\tilde Q=e_t$; those of determinant one are the images of the rotors. The scale is the modulus and the phase is the central $U(1)$. The matrix polar decomposition is therefore the algebra polar decomposition read factor by factor.
 
 **The determinant check.** From the word,
 
@@ -121,7 +121,7 @@ $$
 SL_2(\mathbb{C})=Herm^{>0}_1\cdot SU(2),
 $$
 
-the positive Hermitian matrices of determinant one times the special unitary group. Both factors are of real dimension three, and the product is a diffeomorphism. The factor $Herm^{>0}_1$ is the boost and $SU(2)$ is the rotor.
+the positive Hermitian matrices of determinant one times the special $*$-unitary group. Both factors are of real dimension three, and the product is a diffeomorphism. The factor $Herm^{>0}_1$ is the boost and $SU(2)$ is the rotor.
 
 **The cost of the division.** The decomposition has a computational face. Sangwine and Hitzer observe that the matrix image is not the cheaper route to the numbers: the biquaternion itself carries four complex numbers, the general matrix carries four complex entries, but only the matrices of the model occur, and a general numerical polar decomposition of an arbitrary matrix need not preserve that form over a long computation. Their algorithm obtains the hyperbolic factor by dividing out the trigonometric factor, $	ilde U_{\mathrm b}=\tilde Q\tilde u_{\mathrm r}^{-1}$, which costs a division; the square root $\sqrt{\tilde Q\tilde Q^{*}}$ used above exhibits the existence and the Hermiticity of the factor, and is not the cheapest way to compute it.
 
@@ -141,7 +141,7 @@ $$
 
 with eigenvalues $e^{\pm\eta/2}$. The parameter $\eta$ is the rapidity and $\hat u$ the boost direction. In the algebra it is the Hermitian unit-norm element $\exp(\tfrac{\eta}{2}i\hat u\cdot\vec e)$.
 
-**The rotor.** A special unitary matrix is the exponential of a traceless anti-Hermitian matrix:
+**The rotor.** A special $*$-unitary matrix is the exponential of a traceless anti-Hermitian matrix:
 
 $$
 M_r=\exp(K),\qquad K=-K^{\dagger},\quad\operatorname{Tr}K=0,
@@ -155,9 +155,9 @@ $$
 
 with eigenvalues $e^{\pm i\theta/2}$. The parameter $\theta$ is the rotation angle and $\hat u$ the axis. In the algebra it is the rotor $\exp(\tfrac{\theta}{2}\hat u\cdot\vec e)$.
 
-**The order of the factors.** The decomposition is $M=PV$, positive factor first, unitary second. The algebra decomposition is $\tilde Q=\tilde Q_H\tilde Q_0$ with the same order. The reverse order would give a different pair of factors, and the two orders are related by conjugating the unitary factor by the positive one. The convention is fixed by the matrix theorem, and the algebra articles use the same order.
+**The order of the factors.** The decomposition is $M=PV$, positive factor first, $*$-unitary second. The algebra decomposition is $\tilde Q=\tilde Q_H\tilde Q_0$ with the same order. The reverse order would give a different pair of factors, and the two orders are related by conjugating the $*$-unitary factor by the positive one. The convention is fixed by the matrix theorem, and the algebra articles use the same order.
 
-**The two real forms.** The boost is Hermitian and the rotor is unitary. The Hermitian matrices are the informational subspace $\mathbb{M}_+$; the unitary group is the compact real form of the unit group. The polar decomposition is therefore a decomposition of the complex group into a non-compact Hermitian factor and a compact unitary factor, and it is the matrix form of the split of the algebra into its two real forms.
+**The two real forms.** The boost is Hermitian and the rotor is $*$-unitary. The Hermitian matrices are the informational subspace $\mathbb{M}_+$; the $*$-unitary group is the compact real form of the unit group. The polar decomposition is therefore a decomposition of the complex group into a non-compact Hermitian factor and a compact $*$-unitary factor, and it is the matrix form of the split of the algebra into its two real forms.
 
 ## The Singular Case
 
@@ -171,7 +171,7 @@ MM^{\dagger}=\|v\|^2\,uu^{\dagger},
 P=\|v\|\,\frac{uu^{\dagger}}{\|u\|},
 $$
 
-a rank-one positive matrix, and $V$ maps $(\ker M)^{\perp}$ isometrically onto the image line of $M$ and kills $\ker M$. The unitary factor is not unitary: it has a one-dimensional kernel. The matrix is a partial isometry times a rank-one positive factor, and the missing direction is the kernel of the rank-one element.
+a rank-one positive matrix, and $V$ maps $(\ker M)^{\perp}$ isometrically onto the image line of $M$ and kills $\ker M$. The $*$-unitary factor is not $*$-unitary: it has a one-dimensional kernel. The matrix is a partial isometry times a rank-one positive factor, and the missing direction is the kernel of the rank-one element.
 
 **The degenerate element.** On the null cone the algebra-side polar decomposition has a vanishing modulus; the matrix factor $P$ is rank one and the factor $V$ is a partial isometry. The two chiralities of the rank-one element correspond to the image and the kernel of $V$. The details are *The Polar Decomposition of a N-Degenerate Biquaternion*, §*The Degenerate Factorisation*.
 
@@ -186,9 +186,9 @@ M=U\Sigma V^{\dagger},\qquad
 \Sigma=\operatorname{diag}(s_1,s_2),\quad s_1\ge s_2\ge0,
 $$
 
-with $U$ and $V$ unitary. The numbers $s_1,s_2$ are the **singular values**; they are the eigenvalues of the positive factor $P=(MM^{\dagger})^{1/2}$ and are determined by $M$. The factorisation is unique up to $U\mapsto U\Lambda$, $V\mapsto V\Lambda$ for a diagonal unitary $\Lambda$ when $s_1>s_2$.
+with $U$ and $V$ $*$-unitary. The numbers $s_1,s_2$ are the **singular values**; they are the eigenvalues of the positive factor $P=(MM^{\dagger})^{1/2}$ and are determined by $M$. The factorisation is unique up to $U\mapsto U\Lambda$, $V\mapsto V\Lambda$ for a diagonal $*$-unitary $\Lambda$ when $s_1>s_2$.
 
-**From the polar decomposition.** Write the polar decomposition as $M=PW$, with $W$ unitary when $M$ is invertible, and diagonalise the positive factor,
+**From the polar decomposition.** Write the polar decomposition as $M=PW$, with $W$ $*$-unitary when $M$ is invertible, and diagonalise the positive factor,
 
 $$
 P=U\Sigma U^{\dagger}.
@@ -200,7 +200,7 @@ $$
 M=U\Sigma\,(W^{\dagger}U)^{\dagger},
 $$
 
-so the left unitary is the eigenbasis of $P$ and the right unitary is $W^{\dagger}U$. The SVD is the polar decomposition with the positive factor diagonalised; conversely $P=U\Sigma U^{\dagger}$ and $W=UV^{\dagger}$ recover the polar factors.
+so the left $*$-unitary is the eigenbasis of $P$ and the right $*$-unitary is $W^{\dagger}U$. The SVD is the polar decomposition with the positive factor diagonalised; conversely $P=U\Sigma U^{\dagger}$ and $W=UV^{\dagger}$ recover the polar factors.
 
 **The singular values in the biquaternion word.** With $M=r\zeta M_bM_r$, the positive factor is $P=rM_b$. The eigenvalues of $M_b$ are $e^{\pm\eta/2}$, so
 
@@ -208,17 +208,17 @@ $$
 s_1=r e^{\eta/2},\qquad s_2=r e^{-\eta/2},\qquad s_1s_2=r^2=\lvert\det M\rvert.
 $$
 
-The singular values coincide exactly when $M_b=\mathrm I_2$, that is when $M$ is a scalar times a unitary. The rapidity $\eta$ is the parameter that separates them.
+The singular values coincide exactly when $M_b=\mathrm I_2$, that is when $M$ is a scalar times a $*$-unitary. The rapidity $\eta$ is the parameter that separates them.
 
 **The normal case.** The multiset of singular values equals the multiset of eigenvalue moduli exactly when $M$ is normal: $\sum_i s_i^2=\operatorname{tr}(MM^{\dagger})$ equals $\sum_i\lvert\lambda_i\rvert^2$ exactly in that case, by Schur's inequality. In the biquaternion word normality makes $M_b$ commute with $M_r$, and the eigenvalues then have moduli $r e^{\pm\eta/2}$.
 
 **The rank and the strata.** The rank is the number of nonzero singular values. On the determinantal variety $s_2=0$: the rank-one matrices have $s_1>0$, $s_2=0$, and the zero matrix has $s_1=s_2=0$. The modulus of the determinant is the product $s_1s_2$, so it vanishes exactly when a singular value does.
 
-**The algebra reading.** The left unitary is the eigenbasis of the boost, the diagonal factor is the boost read in that basis, and the right unitary is the rotor composed with the same basis. The SVD separates the two rotations from the rapidity; the polar decomposition keeps the boost and the rotor together.
+**The algebra reading.** The left $*$-unitary is the eigenbasis of the boost, the diagonal factor is the boost read in that basis, and the right $*$-unitary is the rotor composed with the same basis. The SVD separates the two rotations from the rapidity; the polar decomposition keeps the boost and the rotor together.
 
 ## Summary
 
-Every invertible matrix is uniquely $M=PV$ with $P$ positive definite and $V$ unitary; explicitly $P=(MM^{\dagger})^{1/2}$ and $V=P^{-1}M$. For a biquaternion matrix the word is $M=r\zeta M_bM_r$ with $r>0$, $|\zeta|=1$, $M_b$ positive Hermitian of determinant one and $M_r\in SU(2)$. The determinant is $r^2\zeta^2$, the modulus is $|\det M|^{1/2}$, and on $SL_2$ the decomposition is $Herm^{>0}_1\cdot SU(2)$. On singular matrices the positive factor is semidefinite and the unitary factor is only a partial isometry. The singular value decomposition diagonalises the positive factor, $P=U\Sigma U^{\dagger}$, and the singular values are $r e^{\pm\eta/2}$.
+Every invertible matrix is uniquely $M=PV$ with $P$ positive definite and $V$ $*$-unitary; explicitly $P=(MM^{\dagger})^{1/2}$ and $V=P^{-1}M$. For a biquaternion matrix the word is $M=r\zeta M_bM_r$ with $r>0$, $|\zeta|=1$, $M_b$ positive Hermitian of determinant one and $M_r\in SU(2)$. The determinant is $r^2\zeta^2$, the modulus is $|\det M|^{1/2}$, and on $SL_2$ the decomposition is $Herm^{>0}_1\cdot SU(2)$. On singular matrices the positive factor is semidefinite and the $*$-unitary factor is only a partial isometry. The singular value decomposition diagonalises the positive factor, $P=U\Sigma U^{\dagger}$, and the singular values are $r e^{\pm\eta/2}$.
 
 ## Summary of Notation
 
@@ -226,14 +226,14 @@ Every invertible matrix is uniquely $M=PV$ with $P$ positive definite and $V$ un
 |---|---|
 | $M=PV$ | the polar decomposition |
 | $P=(MM^{\dagger})^{1/2}$ | the positive factor |
-| $V=P^{-1}M$ | the unitary factor |
+| $V=P^{-1}M$ | the $*$-unitary factor |
 | $r=|\det M|^{1/2}$ | the modulus |
 | $\zeta$ | the central phase, $|\zeta|=1$ |
 | $M_b$ | the boost, positive Hermitian of determinant one |
 | $M_r$ | the rotor, in $SU(2)$ |
 | $M=U\Sigma V^{\dagger}$ | the singular value decomposition |
 | $s_1,s_2$ | the singular values, the eigenvalues of $P$ |
-| $W$ | the polar unitary in the SVD derivation |
+| $W$ | the polar $*$-unitary in the SVD derivation |
 | $Herm^{>0}_1$ | positive Hermitian matrices of determinant one |
 
 ## Further Reading

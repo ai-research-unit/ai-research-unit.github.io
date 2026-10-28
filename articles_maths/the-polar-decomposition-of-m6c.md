@@ -11,7 +11,7 @@ U\in U(6),\quad
 P=(A^*A)^{1/2}\ge0,
 $$
 
-with $P$ positive semidefinite and Hermitian. The factor $P$ is unique; the unitary factor $U$ is unique when $A$ is invertible, and is free on the kernel when $A$ is singular. The decomposition separates the **rotation** $U$ from the **scale** $P$, and it is the matrix form of the singular value decomposition
+with $P$ positive semidefinite and Hermitian. The factor $P$ is unique; the $*$-unitary factor $U$ is unique when $A$ is invertible, and is free on the kernel when $A$ is singular. The decomposition separates the **rotation** $U$ from the **scale** $P$, and it is the matrix form of the singular value decomposition
 
 $$
 A=U\Sigma V^*,
@@ -29,7 +29,7 @@ $$
 
 The exponential form is $A=Ue^H$ with $H$ Hermitian; the logarithm of the positive factor is the Hermitian exponent.
 
-The article assumes the unitary group and the Hermitian form of *The Involution and the Hermitian Structure* and the singular values of *The Forms, the Norms and the Singular Set*. It uses the exponential of Hermitian matrices, whose general theory is *The Exponential and the Lie Group*. The mass block's polar decomposition is *The Mass Block and the Chiral Polar Decomposition*; the biquaternion case is *The Polar Decomposition of the Biquaternion Algebra*.
+The article assumes the $*$-unitary group and the Hermitian form of *The Involution and the Hermitian Structure* and the singular values of *The Forms, the Norms and the Singular Set*. It uses the exponential of Hermitian matrices, whose general theory is *The Exponential and the Lie Group*. The mass block's polar decomposition is *The Mass Block and the Chiral Polar Decomposition*; the biquaternion case is *The Polar Decomposition of a Biquaternion*.
 
 ## The Polar Decomposition
 
@@ -58,7 +58,7 @@ $$
 \lVert Ax\rVert^2=\langle x,A^*Ax\rangle=\langle x,P^2x\rangle=\lVert Px\rVert^2 .
 $$
 
-Extend $U$ from the image of $P$ to its orthogonal complement, the kernel of $P$, by any unitary isomorphism onto $(\operatorname{im}A)^\perp$; both complements have dimension $6-\operatorname{rank}A$. Then $U$ is unitary and $UPx=Ax$ for all $x$, so $A=UP$.
+Extend $U$ from the image of $P$ to its orthogonal complement, the kernel of $P$, by any $*$-unitary isomorphism onto $(\operatorname{im}A)^\perp$; both complements have dimension $6-\operatorname{rank}A$. Then $U$ is $*$-unitary and $UPx=Ax$ for all $x$, so $A=UP$.
 
 **Corollary (the left polar decomposition).** Every $A$ has a factorization
 
@@ -75,17 +75,18 @@ and $P'=UPU^*$.
 
 ### Uniqueness
 
-**Theorem.** The positive factor $P=(A^*A)^{1/2}$ is unique. If $A$ is invertible, the unitary factor is unique as well.
+**Theorem.** The positive factor $P=(A^*A)^{1/2}$ is unique. If $A$ is invertible, the $*$-unitary factor is unique as well.
 
-**Proof.** $P$ is determined by $A^*A$. If $A=U_1P_1=U_2P_2$ with $P_i>0$, then $U_2^*U_1=P_2P_1^{-1}$; the left side is unitary, the right side is positive definite, and a unitary positive definite matrix is the identity (its eigenvalues are positive and of modulus one, hence $1$). So $U_1=U_2$ and $P_1=P_2$.
+**Proof.** $P$ is determined by $A^*A$. If $A=U_1P_1=U_2P_2$ with $P_i>0$, then $A^*A=P_1^2=P_2^2$, and the positive definite square root is unique, so $P_1=P_2$. Then $U_1P_1=U_2P_1$ and $P_1$ is invertible, so $U_1=U_2$.
 
-**Corollary (the singular case).** If $A$ has rank $k<6$, the positive factor is unique, and the unitary factor is determined on the image of $P$ and arbitrary on the kernel:
+**Corollary (the singular case).** If $A$ has rank $k<6$, the positive factor is unique, and the $*$-unitary factor is determined on the image of $P$ and arbitrary on the kernel:
 
 $$
-U\big|_{\ker P}\in U(\ker P)\cong U(6-k).
+U\big|_{\ker P}:\ker P\longrightarrow(\operatorname{im}A)^{\perp}
+\ \text{any unitary isomorphism}.
 $$
 
-**Proof.** $P$ is unique; on the image of $P$ the map $U$ is determined by $A$; on the kernel of $P$ any unitary extension is allowed. The freedom is the unitary group of the $(6-k)$-dimensional kernel.
+**Proof.** $P$ is unique; on the image of $P$ the map $U$ is determined by $A$; on the kernel of $P$ any unitary isomorphism onto $(\operatorname{im}A)^{\perp}$ is allowed. The freedom is a torsor under the $*$-unitary group of the $(6-k)$-dimensional kernel.
 
 ### The Singular Value Decomposition
 
@@ -124,7 +125,7 @@ $$
 
 **Corollary (the singular values are the eigenvalues of $P$).** The eigenvalues of $P$ are $\sigma_1,\dots,\sigma_6$; the eigenvalues of $U_{\mathrm{polar}}$ are the phases of the SVD.
 
-**Proof.** $P=V\Sigma V^*$; the unitary factor $UV^*$ has eigenvalues on the unit circle.
+**Proof.** $P=V\Sigma V^*$; the $*$-unitary factor $UV^*$ has eigenvalues on the unit circle.
 
 ## The Manifold $GL_6/U(6)$
 
@@ -164,7 +165,7 @@ $$
 
 **Proof.** The action of $U(6)$ on $GL_6$ by left multiplication is free, and the quotient is the positive cone by the polar decomposition.
 
-**Remark (the symmetric space).** The quotient is the symmetric space of the Cartan involution $\theta(A)=-A^*$; the geodesics are the curves $P^{1/2}e^{tH}P^{1/2}$? The exponential of Hermitian matrices gives the geodesics through the identity. The metric is the Hilbert–Schmidt metric.
+**Remark (the symmetric space).** The quotient is the symmetric space of the Cartan involution $\theta(A)=-A^*$; the geodesics are the curves $P^{1/2}e^{tX}P^{1/2}$ with $X$ Hermitian, and through the identity they are the exponentials $e^{tX}$. The metric is the Hilbert–Schmidt metric.
 
 ## The Singular Element
 
@@ -180,7 +181,7 @@ $$
 
 with $V$ acting as the identity on the image of $P$. The set is a coset of $U(6-k)$, of real dimension $(6-k)^2$.
 
-**Proof.** Any other unitary factor differs from $U_0$ by a unitary that commutes with $P$ on the image and is arbitrary on the kernel; the kernel is $\ker P=\ker A$, of dimension $6-k$.
+**Proof.** Any other $*$-unitary factor differs from $U_0$ by a $*$-unitary that commutes with $P$ on the image and is arbitrary on the kernel; the kernel is $\ker P=\ker A$, of dimension $6-k$.
 
 **Corollary (the image and the kernel).** The polar factor maps
 
@@ -192,11 +193,11 @@ $$
 
 and is arbitrary on the second factor.
 
-**Proof.** $A=UP$; $U$ is unitary, so $U((\operatorname{im}P)^\perp)=(\operatorname{im}A)^\perp$; the kernel of $P$ is the orthogonal complement of the image of $P$.
+**Proof.** $A=UP$; $U$ is $*$-unitary, so $U((\operatorname{im}P)^\perp)=(\operatorname{im}A)^\perp$; the kernel of $P$ is the orthogonal complement of the image of $P$.
 
 ### The Limit at a Singular Element
 
-**Theorem.** The positive factor $P(A)=(A^*A)^{1/2}$ is continuous everywhere. The unitary factor $U(A)$ is continuous on the invertible locus; at a singular element it may fail to have a limit, and when it has one, the limit depends on the direction of approach.
+**Theorem.** The positive factor $P(A)=(A^*A)^{1/2}$ is continuous everywhere. The $*$-unitary factor $U(A)$ is continuous on the invertible locus; at a singular element it may fail to have a limit, and when it has one, the limit depends on the direction of approach.
 
 **Proof.** The square root is continuous; $U=AP^{-1}$ is continuous where $P$ is invertible. On the singular locus, the freedom on the kernel is a coset, and different approaches select different points of the coset.
 
@@ -282,7 +283,7 @@ U\in U(6),\quad
 P=(A^*A)^{1/2}\ge0 .
 $$
 
-The positive factor is unique; the unitary factor is unique for invertible $A$ and free on the kernel for singular $A$, with freedom $U(6-k)$ of real dimension $(6-k)^2$. The SVD is
+The positive factor is unique; the $*$-unitary factor is unique for invertible $A$ and free on the kernel for singular $A$, with freedom $U(6-k)$ of real dimension $(6-k)^2$. The SVD is
 
 $$
 A=U\Sigma V^*,
@@ -302,7 +303,7 @@ The polar decomposition is the diffeomorphism $GL_6\cong U(6)\times\operatorname
 |---|---|
 | Polar decomposition | $A=UP$, $U\in U(6)$, $P\ge0$ |
 | Positive factor | $P=(A^*A)^{1/2}$, unique |
-| Unitary factor | unique if $A$ invertible |
+| $*$-Unitary factor | unique if $A$ invertible |
 | Singular freedom | $U(6-k)$, dimension $(6-k)^2$ |
 | SVD | $A=U\Sigma V^*$ |
 | Quotient | $GL_6/U(6)\cong\operatorname{Herm}_6^{>0}$ |
@@ -314,7 +315,7 @@ The polar decomposition is the diffeomorphism $GL_6\cong U(6)\times\operatorname
 | Symbol | Meaning |
 |---|---|
 | $P=(A^*A)^{1/2}$ | the positive factor |
-| $U$ | the unitary polar factor |
+| $U$ | the $*$-unitary polar factor |
 | $\sigma_1,\dots,\sigma_6$ | the singular values |
 | $\operatorname{Herm}_6^{>0}$ | the positive definite Hermitian cone |
 | $GL_6/U(6)$ | the symmetric space of the polar decomposition |
@@ -322,11 +323,10 @@ The polar decomposition is the diffeomorphism $GL_6\cong U(6)\times\operatorname
 
 ## Further Reading
 
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the unitary group and the positive definite form.
+- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the $*$-unitary group and the positive definite form.
 - [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m6c.html), for the singular values.
 - [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
 - [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m6c.html), for the exponential of Hermitian matrices.
 - [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the spectral theorem behind the square root.
-- [The Polar Decomposition of the Biquaternion Algebra](the-polar-decomposition-of-the-biquaternion-algebra.html), for the rank-one case.
-- [The Polar Decomposition](the-polar-decomposition.html), for the general theory in a Hilbert space.
+- [Comparison of the Polar Decomposition](comparison-of-the-polar-decomposition.html), for the eight-algebra comparison.
 - [Symmetric Spaces](symmetric-spaces.html), for the Cartan decomposition and the positive cone.

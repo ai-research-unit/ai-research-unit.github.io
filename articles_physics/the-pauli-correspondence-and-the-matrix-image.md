@@ -20,7 +20,7 @@ The article states the correspondence and reads its invariants: the trace as the
 | Hermitian conjugation ${}^{*}$ as the conjugate transpose, and the four involutions as four matrix operations | [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](../articles_maths/m2c-representation-the-conjugations-and-the-adjoints.html) |
 | The spin operators, the pure states, the density matrix, the Bloch vector and the measurement formulae | [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](../articles_maths/m2c-representation-spin-qubits-and-the-bloch-vector.html) |
 | The rank-one matrices, the two strata of the null cone and the trace-one idempotents | [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](../articles_maths/m2c-representation-rank-one-matrices-and-the-determinantal-variety.html) |
-| The unit-norm slice as $SL_2(\mathbb{C})$, the unitary slice as $SU(2)$, and the polar decomposition | [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](../articles_maths/m2c-representation-gl2-sl2-and-the-determinant.html) |
+| The unit-norm slice as $SL_2(\mathbb{C})$, the $*$-unitary slice as $SU(2)$, and the polar decomposition | [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](../articles_maths/m2c-representation-gl2-sl2-and-the-determinant.html) |
 | The eigenvalue decomposition and the eigenprojections | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The bundle, the connection, the curvature and the holonomy | [Fibre Bundles, Connections and Curvature](../articles_maths/fibre-bundles-connections-and-curvature.html) |
 

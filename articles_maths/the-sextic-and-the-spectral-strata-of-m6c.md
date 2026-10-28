@@ -207,10 +207,10 @@ Z(A)\cong\mathbb{C}^6,
 \qquad
 Z(A)\cap GL_6\cong(\mathbb{C}^\times)^6,
 \qquad
-Z(A)\cap PGL_6\cong(\mathbb{C}^\times)^5 .
+\text{image of }Z(A)\cap GL_6\text{ in }PGL_6\cong(\mathbb{C}^\times)^5 .
 $$
 
-The first is the torus of dimension six, the second its unit group, the third the gauge torus of dimension five.
+The first is the algebra $\mathbb{C}^6$; the second is its unit group, the torus of dimension six; the third is the gauge torus of dimension five.
 
 **Proof.** If the spectrum is simple, $A$ is diagonalizable and $\mathbb{C}[A]$ is the algebra of diagonal matrices in the eigenbasis, isomorphic to $\mathbb{C}^6$. Its units are the diagonal matrices with nonzero entries, $(\mathbb{C}^\times)^6$. The projective quotient removes the overall scalar, leaving $(\mathbb{C}^\times)^5$.
 
@@ -228,7 +228,7 @@ $$
 
 **Proof.** The orbit–stabilizer theorem: the stabilizer is the centralizer, of dimension six.
 
-**Corollary.** The simple stratum is the union of the orbits of the cyclic elements, each of dimension $30$; the eigenvalues are the six parameters of the orbit.
+**Corollary.** The simple stratum is the union of the orbits of the cyclic elements, each of dimension $30$; the eigenvalues are the six parameters transverse to the orbit.
 
 **Proof.** A matrix with simple spectrum is cyclic, and its orbit is the set of matrices with the same spectrum, of dimension $30$. The simple stratum is the union over the six-dimensional space of spectra.
 
@@ -369,7 +369,7 @@ $$
 \boxed{\ \dim S_\lambda=30+r,\qquad \text{simple spectrum }36,\qquad \text{one root }31 .\ }
 $$
 
-A cyclic element has centralizer $\mathbb{C}[A]\cong\mathbb{C}^6$, the maximal torus; its orbit has dimension $30$. The root $H$ is cyclic, and its gauge is the projective centralizer of dimension $5$.
+A cyclic element has centralizer $\mathbb{C}[A]\cong\mathbb{C}[t]/(m_A)$, of dimension $6$; with simple spectrum this is $\mathbb{C}^6$, whose unit group is the maximal torus. Its orbit has dimension $30$. The root $H$ is cyclic, and its gauge is the projective centralizer of dimension $5$.
 
 On the simple stratum the spectral projectors are the Lagrange projectors $P_i=\prod_{j\neq i}(A-\lambda_j)/(\lambda_i-\lambda_j)$; at a repeated root the individual projectors have poles, the cluster projectors extend, and the nilpotent part is the residue.
 
@@ -379,7 +379,7 @@ On the simple stratum the spectral projectors are the Lagrange projectors $P_i=\
 | Strata | $11$ partitions of $6$ |
 | Simple stratum | open dense, dimension $36$ |
 | Discriminant | codimension $1$, $S_{(2,1^4)}$ |
-| Cyclic centralizer | $\mathbb{C}^6$, dimension $6$ |
+| Cyclic centralizer | $\mathbb{C}[t]/(m_A)$, dimension $6$ |
 | Cyclic orbit | dimension $30$ |
 | Root set | fibre over $t^6-1$, dimension $30$ |
 | Projectors | Lagrange on $U$, cluster at the discriminant |
@@ -405,7 +405,5 @@ On the simple stratum the spectral projectors are the Lagrange projectors $P_i=\
 - [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m6c.html), for the scalar-traceless decomposition.
 - [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the Hermitian spectral theorem.
 - [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the projectors as points of a homogeneous space.
-- [Spectral Theory](spectral-theory.html), for the general theory of the characteristic polynomial and the spectral projectors.
-- [The Discriminant and the Resultant](the-discriminant-and-the-resultant.html), for the discriminant of a polynomial.
 - Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 1995), for the contour integral projectors and their limits at a coalescence.
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for the cyclic elements and the maximal torus.

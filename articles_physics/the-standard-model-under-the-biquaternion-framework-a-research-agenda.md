@@ -6,7 +6,7 @@
 
 The starting position is stated at the outset, because the whole agenda depends on it and because it is easy to overstate.
 
-- **The framework has an abelian gauge principle.** The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; its unitary part is $\mathrm{U}(1)$; localizing a central phase forces a connection with the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, a covariant derivative, and a curvature. This is established in *The Gauge Principle in Biquaternionic Form* and is recalled in the next section.
+- **The framework has an abelian gauge principle.** The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; its $*$-unitary part is $\mathrm{U}(1)$; localizing a central phase forces a connection with the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, a covariant derivative, and a curvature. This is established in *The Gauge Principle in Biquaternionic Form* and is recalled in the next section.
 - **The framework has a compact non-abelian gauge algebra inside the material sector.** The material sector decomposes as a Lie algebra, $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, and on the $\mathrm{SU}(2)$ factor the full non-abelian gauge construction — a connection transforming in the adjoint, a curvature containing the commutator term, the Bianchi identity, and a gauge-invariant Yang–Mills density — is built. This is established in *Non-Abelian Gauge Fields in Biquaternionic Form* and is recalled in the next section.
 - **The framework has not derived the Standard Model's gauge group, its chiral weak-isospin action, its hypercharge, or its scalar sector.** No source in the series derives a colour group or any three-valued internal structure. The $\mathrm{SU}(2)$ that is present acts vector-like on the algebra's own module and is therefore not weak isospin. No source derives a hypercharge assignment; the word "hypercharge" does not occur in any of the sources this agenda builds on. The scalar and symmetry-breaking sector is not built.
 
@@ -28,7 +28,7 @@ The discipline this forces on the article is the one the genre requires: **an ag
 
 The read-list article *The Gauge Principle in Biquaternionic Form* derives the framework's abelian gauge structure from the centre of the algebra. Its results are established and are recalled here unchanged.
 
-The centre of $\mathbb{B}$ is the complex scalar line $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and its unitary part is
+The centre of $\mathbb{B}$ is the complex scalar line $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and its $*$-unitary part is
 
 $$
 \mathrm{U}(1) \;=\; \{\lambda = \exp(i\theta) : \theta \in \mathbb{R}\} \;\subset\; \mathbb{C}_{\mathbb{B}} .
@@ -110,7 +110,7 @@ Two further results of that article bear on the agenda. The framework's **own** 
 
 **Source.** *The Gauge Principle in Biquaternionic Form*. **Status.** The gauge principle is established; the identification with weak hypercharge is not made and has no route yet.
 
-What is established is a single abelian gauge factor, canonical and vector-like: the unitary part of the centre, with connection law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and curvature $[D_\mu,D_\nu] = \tfrac{iϙ}{\hbar}F_{\mu\nu}$. What weak hypercharge requires is a factor that (i) carries a definite set of **assignments** — different eigenvalues on different Standard Model multiplets, the pattern that makes $Ϙ = T_3 + Y$ work and that cancels the anomalies — and (ii) acts **chirally**, with independent left and right charges on a single fermion, since the left- and right-handed components of the Standard Model fermions carry different hypercharge.
+What is established is a single abelian gauge factor, canonical and vector-like: the $*$-unitary part of the centre, with connection law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ and curvature $[D_\mu,D_\nu] = \tfrac{iϙ}{\hbar}F_{\mu\nu}$. What weak hypercharge requires is a factor that (i) carries a definite set of **assignments** — different eigenvalues on different Standard Model multiplets, the pattern that makes $Ϙ = T_3 + Y$ work and that cancels the anomalies — and (ii) acts **chirally**, with independent left and right charges on a single fermion, since the left- and right-handed components of the Standard Model fermions carry different hypercharge.
 
 The framework's abelian factor supplies neither. Its action on the algebra's module is scalar, so it gives every component the same charge; under the alternative real-structure interpretation it would be axial, but still a single one-dimensional charge with no room for independent left and right assignments. And the coupling $ϙ$ is one parameter, not a table. There is no object in the series from which the numbers $1/6$, $-1/2$, $2/3$, and so on could be read off. **An abelian gauge factor is established; weak hypercharge is not derived, and no computation in the series points toward it.** This item is classified **no route yet**.
 
@@ -158,7 +158,7 @@ Not established: a **chiral gauge group**. The framework's canonical gauge group
 
 ### Hypercharge is underived
 
-The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific assignment table and a chiral action, and it is the ingredient that makes the electric charge $Ϙ = T_3 + Y$ and cancels the gauge and gravitational anomalies. The framework has a $\mathrm{U}(1)$ — the unitary centre — but the assignment table is not derivable from it, and the word "hypercharge" does not occur in any of the sources this agenda builds on. The only abelian charge the framework possesses is a single parameter $ϙ$, the same for every component; the gauge principle supplies no second abelian direction, no non-central abelian action is available to it, and there is no anomaly computation from which an assignment could be inferred. **No route yet.**
+The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific assignment table and a chiral action, and it is the ingredient that makes the electric charge $Ϙ = T_3 + Y$ and cancels the gauge and gravitational anomalies. The framework has a $\mathrm{U}(1)$ — the $*$-unitary centre — but the assignment table is not derivable from it, and the word "hypercharge" does not occur in any of the sources this agenda builds on. The only abelian charge the framework possesses is a single parameter $ϙ$, the same for every component; the gauge principle supplies no second abelian direction, no non-central abelian action is available to it, and there is no anomaly computation from which an assignment could be inferred. **No route yet.**
 
 ### The content is not selected — and what the framework supplies, counted
 
@@ -166,7 +166,7 @@ The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific a
 
 The framework supplies:
 
-- **One compact gauge factor of each kind.** One abelian factor — the unitary centre, real dimension $1$ — and one compact simple factor — $\mathrm{SU}(2)$, real dimension $3$ — joined in the material sector's Lie algebra $\mathrm{U}(2)$ of real dimension $4$.
+- **One compact gauge factor of each kind.** One abelian factor — the $*$-unitary centre, real dimension $1$ — and one compact simple factor — $\mathrm{SU}(2)$, real dimension $3$ — joined in the material sector's Lie algebra $\mathrm{U}(2)$ of real dimension $4$.
 - **One exact chiral module structure**, on a four-complex-dimensional Dirac module $\Delta = S\oplus\bar{S}$, with projectors, a chirality-odd mass bilinear, and the selection rule.
 - **The general connections, curvatures, Bianchi identities, and gauge-invariant densities** on the two factors, each carrying a coupling parameter whose value the algebra does not fix, and with no relation between the two couplings.
 
@@ -186,7 +186,7 @@ The table collects the agenda's items and sorts each into the three-way classifi
 
 | Item | Status | Object or computation that would settle it |
 |---|---|---|
-| Abelian gauge principle: centre $\mathbb{C}_{\mathbb{B}}$, unitary $\mathrm{U}(1)$, connection $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, covariant derivative, curvature identity | Established (source 6) | — |
+| Abelian gauge principle: centre $\mathbb{C}_{\mathbb{B}}$, $*$-unitary $\mathrm{U}(1)$, connection $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, covariant derivative, curvature identity | Established (source 6) | — |
 | Compact algebra in the material sector: $[e_a,e_b]=2\varepsilon_{abc}e_c$, $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)=\mathrm{U}(2)$ | Established (source 5) | — |
 | Non-abelian machinery: adjoint connection law, commutator curvature, Bianchi identity, gauge-invariant Yang–Mills density | Established (source 5) | — |
 | Ceiling: compact subalgebra of $\mathbb{B}$ has dimension $\le 4$; every $\mathbb{B}$-module has complex dimension $2k$ | Established | — |
@@ -224,7 +224,7 @@ A short 2001 comment by Gsponer and Hurni is the most useful *methodological* so
 
 **The diagnosis, and the Gürsey interpretation.** Compared with matrix or tensor formulations, Clifford-number formulations suffer losses of information (the numbers carry no spinor or tensor indices), ambiguities from noncommutativity and residual definitional freedom, and — the difficulty this agenda meets most often — an **increase in the number of components** when a vector or a spinor is replaced by a Clifford number, and again when an ordinary scalar such as the mass is promoted to one. The comment's fifth difficulty is the one the corpus's own algebra is exempt from: with a **real** Clifford algebra in place of a complexified one the quantum-mechanical imaginary is left implicit, and the authors record the well known fact that "if '$i$' is not explicit in a quantum theory, it must be replaced by the definition of special rules or by an equivalent antiunitary operator." The comment chooses the biquaternions precisely because they are the complexified algebra, $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, in which there are no difficulties with the quantum interpretation; the corpus's central scalar imaginary is the explicit $i$ the condition demands. That is the one place in this list where the framework's *choice of algebra* is not a matter of taste, and it is the positive side of a fact recorded in *The Empirical Status of the Biquaternion Framework*: quaternionic quantum-statistical deviations are unavailable there because the algebra is complex and associative — the same complexification that forecloses the deviations is what leaves the quantum interpretation unrestricted.
 
-The comment records that these difficulties were met long ago (Lanczos, Proca, Einstein) and that in the interpretation **Gürsey** initiated they are resolved by recognising that **most such generalizations describe superpositions of particles of different intrinsic spin and isospin**. The worked instance is the simplest generalization of the Dirac equation: replacing the two Weyl spinors by two biquaternions $A$, $B$ gives Lanczos's fundamental system $\nabla A = mB$, $\nabla B = mA$, invariant under $A\to AG$, $B\to BG$ with $G$ unitary, and the doubled solution count is the **isospin doublet** of the two spin-$\frac12$ superpositions
+The comment records that these difficulties were met long ago (Lanczos, Proca, Einstein) and that in the interpretation **Gürsey** initiated they are resolved by recognising that **most such generalizations describe superpositions of particles of different intrinsic spin and isospin**. The worked instance is the simplest generalization of the Dirac equation: replacing the two Weyl spinors by two biquaternions $A$, $B$ gives Lanczos's fundamental system $\nabla A = mB$, $\nabla B = mA$, invariant under $A\to AG$, $B\to BG$ with $G$ $*$-unitary, and the doubled solution count is the **isospin doublet** of the two spin-$\frac12$ superpositions
 
 $$
 D_+ = A\sigma + B^{*}\bar{\sigma},
@@ -330,7 +330,7 @@ The article commits throughout to the agenda's central discipline: no section as
 
 ## Further Reading
 
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge principle, the centre and its unitary part, the connection, the covariant derivative, and the origin of the $\mathrm{U}(1)$ factor this agenda follows.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge principle, the centre and its $*$-unitary part, the connection, the covariant derivative, and the origin of the $\mathrm{U}(1)$ factor this agenda follows.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the decomposition $\mathbb{M}_-=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, the adjoint connection and curvature, the Bianchi identity, the gauge-invariant density, and the open reality-class gap.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html) — the abelian connection whose non-abelian extension the parent builds.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the module's chirality structure, the vector-like centre, the mass selection rule, the linear mass and the real structure, and the statement that the framework has no chiral gauge group.

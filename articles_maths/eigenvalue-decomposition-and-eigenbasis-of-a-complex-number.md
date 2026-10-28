@@ -140,7 +140,7 @@ so $A$ is normal. If $z\neq0$, then $A/|z|$ is orthogonal with determinant $+1$,
 
 *Proof.* $A^{\mathsf{T}}=tI-bJ$, so $A^{\mathsf{T}}A=(tI-bJ)(tI+bJ)=t^2I-b^2J^2=(t^2+b^2)I$; the product in the other order is the same because $A$ and $A^{\mathsf{T}}$ commute. The determinant is $t^2+b^2=|z|^2$, so $\det(A/|z|)=1$, and orthogonality is $A^{\mathsf{T}}A=|z|^2I$.
 
-**Remark.** For $z\neq0$, the matrices $A$ are the conformal matrices $tI+bJ$: each is a positive scalar times a rotation. The eigenbasis $(v_+,v_-)$ is orthogonal, with squared Hermitian norm $2$, so the diagonal form is unitary, as normality requires.
+**Remark.** For $z\neq0$, the matrices $A$ are the conformal matrices $tI+bJ$: each is a positive scalar times a rotation. The eigenbasis $(v_+,v_-)$ is orthogonal, with squared Hermitian norm $2$, so the diagonal form is $*$-unitary, as normality requires.
 
 ## The Relation to the Polar Decomposition
 

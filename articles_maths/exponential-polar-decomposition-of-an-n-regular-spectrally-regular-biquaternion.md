@@ -133,7 +133,7 @@ $$
 =\frac{\lVert\tilde Q\rVert_E^2}{|N|}\,e_t+i\vec a.
 $$
 
-The word gives $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ unitary, hence
+The word gives $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ $*$-unitary, hence
 
 $$
 \tilde U\tilde U^*=\tilde U_{\mathrm b}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^*\tilde U_{\mathrm b}^*=\tilde U_{\mathrm b}^2.
@@ -574,7 +574,7 @@ The comparison is a count of real data.
 
 The spectrum and the eigenprojectors together determine the element. The polar word is another eight data. The two parametrizations share the four data $(r,\alpha,U_t)$; the spectrum determines the remaining data only in the normal case, where the eigenprojectors are the polar axes. In the non-normal case the eigenprojectors do not determine the polar axes, and the spectrum does not determine the two angles.
 
-The spectral decomposition is a diagonalization over $\mathbb{C}$: it writes $\tilde Q$ as two complex multiples of two idempotents. The polar decomposition is a Cartan decomposition over $\mathbb{R}$: it writes $\tilde Q$ as a positive Hermitian factor times a unitary factor. The two agree on the scalar factor and on the eigenvalues of $\tilde Q$, and on nothing else in the non-normal case.
+The spectral decomposition is a diagonalization over $\mathbb{C}$: it writes $\tilde Q$ as two complex multiples of two idempotents. The polar decomposition is a Cartan decomposition over $\mathbb{R}$: it writes $\tilde Q$ as a positive Hermitian factor times a $*$-unitary factor. The two agree on the scalar factor and on the eigenvalues of $\tilde Q$, and on nothing else in the non-normal case.
 
 **Remark (the two decompositions are transverse).** The eigenbasis depends on the complex structure of the vector part; the polar frame depends on the Hermitian structure of the unit factor. The normal elements are the intersection: the elements for which the two frames coincide. The intersection is the normal set, $Q_t+\zeta\vec u$ with $Q_t,\zeta\in\mathbb{C}$ and $\vec u\in S^2$, of real dimension $2+2+2=6$; it is not open in the sector.
 
@@ -598,7 +598,7 @@ P=\{\text{positive Hermitian of determinant }1\},
 K=SU(2),
 $$
 
-gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis. A unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch. $\square$
+gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch. $\square$
 
 The proof uses only the invertibility of $\tilde Q$; the spectral condition $B^2\neq0$ enters only through the domain, not through the existence. This is why the companion article can repeat the same theorem verbatim.
 
@@ -730,9 +730,9 @@ $$
 \mathsf M(\tilde Q)=r e^{i\alpha}\,\mathsf M(\tilde U_{\mathrm b})\,\mathsf M(\tilde u_{\mathrm r}),
 $$
 
-with $\mathsf M(\tilde U_{\mathrm b})$ positive definite of determinant one and $\mathsf M(\tilde u_{\mathrm r})$ unitary of determinant one.
+with $\mathsf M(\tilde U_{\mathrm b})$ positive definite of determinant one and $\mathsf M(\tilde u_{\mathrm r})$ $*$-unitary of determinant one.
 
-The spectral reading is the diagonalization of the matrix. The matrix $\mathsf M(\tilde Q)$ has the two distinct eigenvalues $\lambda_\pm$, and it is diagonalizable; the eigenbasis is a basis of $\mathbb{C}^2$ consisting of the two eigenvectors. The polar factors are the positive and unitary factors of the matrix polar decomposition. They are diagonal in that basis exactly when the matrix is normal, which is the matrix form of the theorem of §*The Normal Case*.
+The spectral reading is the diagonalization of the matrix. The matrix $\mathsf M(\tilde Q)$ has the two distinct eigenvalues $\lambda_\pm$, and it is diagonalizable; the eigenbasis is a basis of $\mathbb{C}^2$ consisting of the two eigenvectors. The polar factors are the positive and $*$-unitary factors of the matrix polar decomposition. They are diagonal in that basis exactly when the matrix is normal, which is the matrix form of the theorem of §*The Normal Case*.
 
 The four exponents sit in the two summands of
 
@@ -749,7 +749,7 @@ of real dimensions $4$ and $4$. The scale and the boost lie in $\mathfrak H$; th
 | Matrix object | Algebra object | Dimension | Factor |
 |---|---|---|---|
 | positive determinant-one matrix | Hermitian positive unit-norm element | $3$ | boost |
-| unitary determinant-one matrix | unit real quaternion | $3$ | rotor |
+| $*$-unitary determinant-one matrix | unit real quaternion | $3$ | rotor |
 | positive real scalar | scale | $1$ | $r$ |
 | unit complex scalar | phase | $1$ | $e^{i\alpha}$ |
 
@@ -870,7 +870,7 @@ The contrast is the exact content of the difference between the two articles. Th
 | Property | Spectral reading | Polar reading |
 |---|---|---|
 | decomposition of | the element $\tilde Q$ | the unit factor $\tilde U$ |
-| factors | two idempotents | positive Hermitian times unitary |
+| factors | two idempotents | positive Hermitian times $*$-unitary |
 | coefficients | $\lambda_\pm$ | exponentials of $\psi,\theta$ |
 | diagonal in the eigenbasis | always | exactly when normal |
 | survives $B^2\to0$ | no on the Jordan part | yes |

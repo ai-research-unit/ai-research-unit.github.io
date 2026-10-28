@@ -18,7 +18,7 @@ The results used are these.
 | The eigenvalue decomposition, the normality criterion and the non-normal pair | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The four forms and their restrictions | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | The action on the material sector and the sandwich | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
-| The unitary slice and the matrix-unitary condition | [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html) |
+| The $*$-unitary slice and the matrix-unitary condition | [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html) |
 | The Jordan algebra of the symmetrised product | [Jordan Algebras of Sesqualgebras](../articles_maths/jordan-algebras-of-sesqualgebras.html) |
 | The matrix model and the Hilbert–Schmidt pairing | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
 
@@ -226,15 +226,15 @@ $$
 
 and its image is Hermitian, positive and normalised by $\langle\tilde{Ϛ}_{\tilde Q},e_t\rangle_{*}=\tfrac12$, hence a point of the Bloch ball. The Cartan amplitude $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ is the unnormalised square root of the image, and the eigenvalues of $\tilde H$ are the singular values of $\tilde Q$.
 
-Three properties fix the map. It is **right-invariant**, $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde Q^{*}$ for unitary $\tilde W$, so the right unitary is a gauge fibre. It is **left-covariant**, $\tilde{Ϛ}_{\tilde V\tilde Q}=\tilde V\tilde{Ϛ}_{\tilde Q}\tilde V^{*}$, so a left unitary is a change of frame. And it is **stratified** by the rank of the operator:
+Three properties fix the map. It is **right-invariant**, $(\tilde Q\tilde W)(\tilde Q\tilde W)^{*}=\tilde Q\tilde Q^{*}$ for $*$-unitary $\tilde W$, so the right $*$-unitary is a gauge fibre. It is **left-covariant**, $\tilde{Ϛ}_{\tilde V\tilde Q}=\tilde V\tilde{Ϛ}_{\tilde Q}\tilde V^{*}$, so a left $*$-unitary is a change of frame. And it is **stratified** by the rank of the operator:
 
 | operator | singular values | image |
 | --- | --- | --- |
-| unitary up to scale | equal | maximally mixed |
-| invertible, not unitary up to scale | distinct | mixed |
+| $*$-unitary up to scale | equal | maximally mixed |
+| invertible, not $*$-unitary up to scale | distinct | mixed |
 | rank one, a zero divisor | one vanishing | pure |
 
-The direction is the one that is easy to get backwards: the reversible operators produce the least informative state, and the zero divisors produce the pure states. The reason is that the map keeps the ratios of the singular values and discards the unitary factor and the overall scale; a reversible operator has equal singular values, so its image carries no information beyond the normalisation.
+The direction is the one that is easy to get backwards: the reversible operators produce the least informative state, and the zero divisors produce the pure states. The reason is that the map keeps the ratios of the singular values and discards the $*$-unitary factor and the overall scale; a reversible operator has equal singular values, so its image carries no information beyond the normalisation.
 
 **The boundary.** The map takes an operator to a state without an input. A measurement instrument takes an operator and an input state, $\tilde{Ϛ}\mapsto\tilde K\tilde{Ϛ}\tilde K^{*}/p$, and the two coincide only when the input is $\tfrac12e_t$. The operator-to-state map is therefore the input-free shadow of the instrument, not the instrument, and it neither selects an outcome nor supplies a dynamics. It is developed in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*.
 
@@ -277,12 +277,12 @@ The same formula carries three physical regimes, distinguished only by the norma
 | Regime | Condition on $\tilde Q$ | Physical reading |
 | --- | --- | --- |
 | Lorentz rotor | $\langle\tilde Q\rangle_{\natural}=1$ | reversible change of frame on $\mathbb{M}_-$ |
-| Matrix-unitary | $\tilde Q\tilde Q^{*}=e_t$ | reversible evolution of states |
+| Matrix-$*$-unitary | $\tilde Q\tilde Q^{*}=e_t$ | reversible evolution of states |
 | Hermitian idempotent, $\tilde\Pi\neq0,e_t$ | $\tilde Q^2=\tilde Q$ and $\tilde Q^{*}=\tilde Q$ | irreversible measurement projection |
 
 A unit-norm element is a Lorentz rotor: it preserves the interval and acts on the material sector. A matrix-unitary element preserves the trace and maps states to states; it is a rotation rotor up to a central phase, and its effective action on the Bloch ball is $SO(3)$. A proper Hermitian idempotent, neither $0$ nor $e_t$, does not preserve the norm, and its action is a projection: $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$, with probability $2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*})$ and normalised post-measurement state $\tilde\Pi\tilde{Ϛ}\tilde\Pi/(2\operatorname{Sc}(\tilde\Pi\tilde{Ϛ}^{*}))$.
 
-The dichotomy between reversible and irreversible actions is therefore intrinsic to the sector: a norm-preserving rotor against a norm-destroying projection. On the material sector the rotor is a Lorentz transformation; on the state side the reversible class narrows to the matrix-unitary elements, and the pair is exactly the quantum-information dichotomy between unitary evolution and measurement.
+The dichotomy between reversible and irreversible actions is therefore intrinsic to the sector: a norm-preserving rotor against a norm-destroying projection. On the material sector the rotor is a Lorentz transformation; on the state side the reversible class narrows to the matrix-unitary elements, and the pair is exactly the quantum-information dichotomy between $*$-unitary evolution and measurement.
 
 **The boundary.** The sandwich is one operator; the three cases differ by the normalisation of the parameter, not by the operation. The projection is the algebraic form of a measurement, but the collapse is not derived from the algebra. The identification of the projection with a physical measurement is the interpretive step, and the probabilities it gives are the Born weights, not frequencies.
 
@@ -339,7 +339,7 @@ The mathematics of the sector and its action on the material sector is structura
 | Density matrix $\rho$ (Hermitian, positive, trace one) | element $\tilde{Ϛ}\in\mathbb{M}_+$ (Hermitian, positive, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$; trace one in the image) |
 | Pure state $\lvert\psi\rangle_{*}\langle\psi\rvert$ | idempotent $\tfrac12(e_t+i\vec u)$ |
 | Observable (Hermitian operator) | Hermitian element $\tilde H\in\mathbb{M}_+$ |
-| Unitary gate $U$ | matrix-unitary $\tilde Q$, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball |
+| $*$-Unitary gate $U$ | matrix-unitary $\tilde Q$, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball |
 | Expectation value $\operatorname{Tr}(\rho H)$ | $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $2\operatorname{Sc}(\tilde{Ϛ}\tilde H^{*})$; the trace enters only at normalisation |
 | Reversible evolution $U\rho U^{\dagger}$ | rotor conjugation $\tilde U\tilde{Ϛ}\tilde U^{*}$ |
 | Projective measurement $\rho\mapsto P\rho P$ | Hermitian idempotent projection $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ |
@@ -386,7 +386,7 @@ Eight statements of this article are not properties of the vector space $\mathbb
 | The form makes $\mathbb{B}$ a Hilbert space | $\operatorname{Sc}(\tilde Q_1^{*}\tilde Q_2)$ is positive definite of signature $(8,0)$ | [The Completion of a Sesqualgebra with a Form](../articles_maths/the-completion-of-a-sesqualgebra-with-a-form.html) |
 | The level sets are the groups the physics uses | $\tilde U\tilde U^{*}=e_t$ gives $U(2)$; $\langle\tilde U\rangle_{\natural}=1$ gives $SL(2,\mathbb{C})$; the Euclidean sphere is not used | [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The operator dictionary is the adjointness dictionary | observables $\mathbb{M}_+$, generators $\mathbb{M}_-$, unitaries $U(2)$; $\tilde H=iA$ for $A\in\mathbb{M}_-$ | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
-| One operator carries both evolutions | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, evaluated at a unitary or an idempotent parameter | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
+| One operator carries both evolutions | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, evaluated at a $*$-unitary or an idempotent parameter | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
 | Projections come from one sector only | no non-zero idempotent lies in $\mathbb{M}_-$ | [Square Roots of One and the Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), [Ideals and the Peirce Decomposition](../articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-sesqualgebra.html) |
 | Two pairings, because one is not Hermitian | interval $\langle\cdot,\cdot\rangle_{\natural}$, probability $\langle\cdot,\cdot\rangle_{*}$; on $\mathbb{M}_-$ they coincide on the space part and differ in the sign of the time part, on $\mathbb{M}_+$ they coincide on the time part and differ in the sign of the space part | [Hermitian Forms over Algebras and Norms](../articles_maths/hermitian-forms-over-algebras-and-norms.html), [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | No alternating companion on the sector | the four forms are real on $\mathbb{M}_+$, so their imaginary parts vanish | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
@@ -397,7 +397,7 @@ The table is the algebraic address book of the interpretation. Each physical sta
 
 The **hypothesis** is that the Hermitian subspace is physically realised as a distinct sector, the arena of operations and information, in the same sense in which the anti-Hermitian subspace is the arena of events and four-vectors.
 
-**What it claims.** The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of a two-state quantum system. Its elements act as operators on the spinor module. The reversible/irreversible dichotomy is the unitary/measurement dichotomy. The Born pairing is the normalised Hermitian form; in the $2\times2$ image, the trace formula.
+**What it claims.** The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of a two-state quantum system. Its elements act as operators on the spinor module. The reversible/irreversible dichotomy is the $*$-unitary/measurement dichotomy. The Born pairing is the normalised Hermitian form; in the $2\times2$ image, the trace formula.
 
 **What it does not claim.** That the sector has been observed. That it has a specified dynamics beyond the quantum formalism. That there is a specified coupling to the material sector beyond the Lorentz action. That it makes an empirical prediction distinguishing it from standard physics. That its imaginary directions are extra spatial dimensions.
 

@@ -24,7 +24,7 @@ $$
 
 The mass block has a polar decomposition $M=U_L\Sigma U_R^{-1}$ with $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3)$. The full element $A\in GL_6(\mathbb{C})$ has its own polar decomposition $A=UP$ with $U\in U(6)$ and $P$ positive definite; the two polar decompositions are different, and the article keeps them apart.
 
-The article assumes the chiral split of *The Two Chiralities* and the rank-three corners of *The Rank-Two and Rank-Three Splits*. It uses no topology beyond the unitary groups. The polar decomposition of the full algebra is *The Polar Decomposition*; the exponential is *The Exponential and the Lie Group*; the comparison with $M_4$ is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
+The article assumes the chiral split of *The Two Chiralities* and the rank-three corners of *The Rank-Two and Rank-Three Splits*. It uses no topology beyond the $*$-unitary groups. The polar decomposition of the full algebra is *The Polar Decomposition*; the exponential is *The Exponential and the Lie Group*; the comparison with $M_4$ is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
 
 ## The Mass Block
 
@@ -101,7 +101,7 @@ $$
 \lvert\det M\rvert=\sigma_1\sigma_2\sigma_3 .
 $$
 
-The phase of $\det M$ is the phase of the unitary polar factor $UV^*$; under the chiral gauge it transforms by $\det U_L/\det U_R$ and can be gauged to $1$.
+The phase of $\det M$ is the phase of the $*$-unitary polar factor $UV^*$; under the chiral gauge it transforms by $\det U_L/\det U_R$ and can be gauged to $1$.
 
 **Proof.** The determinant is multiplicative, $\det\Sigma=\sigma_1\sigma_2\sigma_3$, and $\lvert\det U\rvert=\lvert\det V\rvert=1$. Under $M\mapsto U_LMU_R^{-1}$ the determinant is multiplied by $\det U_L/\det U_R$, a phase that can be any unit complex number.
 
@@ -155,7 +155,7 @@ $$
 
 For a singular $A$, the positive factor $P$ is unique, and $U$ is unique on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.
 
-**Proof.** $A^*A$ is positive semidefinite, so it has a unique positive semidefinite square root $P$. If $A$ is invertible, $P>0$ and $U=AP^{-1}$ is unitary: $U^*U=P^{-1}A^*AP^{-1}=I$. Uniqueness follows by applying the same computation to any decomposition. For singular $A$, $P$ is still unique; $U$ is determined on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.
+**Proof.** $A^*A$ is positive semidefinite, so it has a unique positive semidefinite square root $P$. If $A$ is invertible, $P>0$ and $U=AP^{-1}$ is $*$-unitary: $U^*U=P^{-1}A^*AP^{-1}=I$. Uniqueness follows by applying the same computation to any decomposition. For singular $A$, $P$ is still unique; $U$ is determined on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.
 
 **Definition.** The **$U(6)$ polar factor** of $A$ is $U=A(A^*A)^{-1/2}$; the **positive factor** is $P=(A^*A)^{1/2}$.
 
@@ -177,12 +177,12 @@ $$
 
 **Corollary (the two extreme cases).**
 
-- If $A$ is unitary, $P=I_6$ and $M=U_{+-}$: the mass block is the off-diagonal block of the $U(6)$ polar factor.
+- If $A$ is $*$-unitary, $P=I_6$ and $M=U_{+-}$: the mass block is the off-diagonal block of the $U(6)$ polar factor.
 - If $A$ is positive definite, $U=I_6$ and $M=P_{+-}$: the mass block is the off-diagonal block of the positive factor.
 
 **Proof.** In the first case $A=U$, in the second $A=P$.
 
-**Remark (the two polar decompositions are different).** The mass block's polar decomposition uses $U(3)\times U(3)$ and produces the three singular values of $M$. The $U(6)$ polar decomposition uses the whole unitary group and produces the six singular values of $A$. The off-diagonal block $U_{+-}$ of the $U(6)$ polar factor is not the unitary factor $U_L$ of $M$; the mass block of $A$ is the sum of two products of blocks of $U$ and $P$. **The chiral polar decomposition of $M$ and the $U(6)$ polar decomposition of $A$ are different decompositions of different objects.**
+**Remark (the two polar decompositions are different).** The mass block's polar decomposition uses $U(3)\times U(3)$ and produces the three singular values of $M$. The $U(6)$ polar decomposition uses the whole $*$-unitary group and produces the six singular values of $A$. The off-diagonal block $U_{+-}$ of the $U(6)$ polar factor is not the $*$-unitary factor $U_L$ of $M$; the mass block of $A$ is the sum of two products of blocks of $U$ and $P$. **The chiral polar decomposition of $M$ and the $U(6)$ polar decomposition of $A$ are different decompositions of different objects.**
 
 ### The Positive Factor and the Mass
 
@@ -214,9 +214,9 @@ $$
 
 **Proposition.** The $U(6)$ orbit of $A$ is determined by the six singular values of $A$; the polar factor $U$ distinguishes the orbits inside a fixed singular-value type.
 
-**Proof.** The singular value decomposition $A=U\Sigma V^*$ with $U,V\in U(6)$; the singular values classify the $U(6)\times U(6)$ orbit, and the polar factor is the unitary part.
+**Proof.** The singular value decomposition $A=U\Sigma V^*$ with $U,V\in U(6)$; the singular values classify the $U(6)\times U(6)$ orbit, and the polar factor is the $*$-unitary part.
 
-**Remark (the two invariant lists).** The mass block contributes three numbers (the mass scales); the full element contributes six (the singular values of $A$) plus the unitary polar factor. The mass scales are not the singular values of $A$; they are the singular values of the off-diagonal block, which depends on the chiral split.
+**Remark (the two invariant lists).** The mass block contributes three numbers (the mass scales); the full element contributes six (the singular values of $A$) plus the $*$-unitary polar factor. The mass scales are not the singular values of $A$; they are the singular values of the off-diagonal block, which depends on the chiral split.
 
 ## The Comparison with $M_4$
 
@@ -306,6 +306,5 @@ The full element has the $U(6)$ polar decomposition $A=UP$, with $U\in U(6)$ and
 - [The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners](the-m3-m3-and-m2-m4-corners-of-m6c.html), for the massless algebra and the relative scale.
 - [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the $2\times2$ comparison.
 - [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the full $U(6)$ polar decomposition.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the unitary group $U(6)$.
-- [Singular Value Decomposition](singular-value-decomposition.html), for the general theory of the SVD.
+- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the $*$-unitary group $U(6)$.
 - [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the homogeneous spaces of the chiral unitaries.

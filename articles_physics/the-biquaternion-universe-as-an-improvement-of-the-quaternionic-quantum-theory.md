@@ -67,7 +67,7 @@ The formalism as described here was constructed in 1962 and developed in full in
 
 ### A Complete Formalism
 
-The theory was built out in full: state space, observable algebra, probability rule, projection postulate, unitary dynamics, composite systems and scattering. Adler's 1995 monograph is a systematic development of the whole programme, including quaternionic field theory and the stability conditions that a quaternionic dynamics has to satisfy. The limits of the next section are therefore the limits of a finished theory and not of an unfinished one, and they are the limits of the theory as it stands.
+The theory was built out in full: state space, observable algebra, probability rule, projection postulate, $*$-unitary dynamics, composite systems and scattering. Adler's 1995 monograph is a systematic development of the whole programme, including quaternionic field theory and the stability conditions that a quaternionic dynamics has to satisfy. The limits of the next section are therefore the limits of a finished theory and not of an unfinished one, and they are the limits of the theory as it stands.
 
 ### The Scalar Field Is an Input, Not a Theorem
 
@@ -112,7 +112,7 @@ The limits are stated in the order in which they were raised. The first three co
 
 **One version of this limit is often repeated and is not correct.** It is said that the spectral theorem does not hold over $\mathbb{H}$. For the operators a quantum theory uses, it does hold.
 
-**The quaternionic spectral theorem, Hermitian case.** A quaternionic Hermitian matrix is diagonalisable by a quaternionic unitary, and its eigenvalues are real.
+**The quaternionic spectral theorem, Hermitian case.** A quaternionic Hermitian matrix is diagonalisable by a quaternionic $*$-unitary, and its eigenvalues are real.
 
 *The reason.* Under the regular representation above, a quaternionic $n\times n$ matrix becomes a complex $2n\times 2n$ matrix, quaternionic conjugation becomes conjugate transposition, and the quaternionic Hermitian condition becomes the ordinary Hermitian condition. The measurement postulates are therefore not lost.
 
@@ -199,7 +199,7 @@ Two of them are the metric and the probability. The form $\langle\cdot\rangle_{\
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu}Q_{1\mu}\overline{Q_{2\mu}},
 $$
-which is linear in the first slot, conjugate-linear in the second, and **positive definite**; its unit group is $\mathrm{U}(2)$, its signature is $(8,0)$ on $\mathbb{B}$ and $(4,0)$ on $\mathbb{M}_{-}$, and it is the internal Hilbert-space structure that the Born rule and the unitary evolution use. On the material sector all four forms are real and $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=-\langle\tilde Q_1,\tilde Q_2\rangle$, so the definite form and the indefinite form meet there in the way that the quaternionic conjugation and the quaternionic norm met.
+which is linear in the first slot, conjugate-linear in the second, and **positive definite**; its unit group is $\mathrm{U}(2)$, its signature is $(8,0)$ on $\mathbb{B}$ and $(4,0)$ on $\mathbb{M}_{-}$, and it is the internal Hilbert-space structure that the Born rule and the $*$-unitary evolution use. On the material sector all four forms are real and $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=-\langle\tilde Q_1,\tilde Q_2\rangle$, so the definite form and the indefinite form meet there in the way that the quaternionic conjugation and the quaternionic norm met.
 
 **The state module.** The algebra is an algebra of operators on a complex two-dimensional module,
 $$

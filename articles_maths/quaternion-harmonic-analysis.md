@@ -107,7 +107,7 @@ $$
 
 ### The Plancherel Theorem
 
-**Theorem.** The quaternion Fourier transform extends uniquely to a unitary operator
+**Theorem.** The quaternion Fourier transform extends uniquely to a $*$-unitary operator
 
 $$
 \mathcal{F} : L^2(\mathbb{H}) \to L^2(\mathbb{H}),

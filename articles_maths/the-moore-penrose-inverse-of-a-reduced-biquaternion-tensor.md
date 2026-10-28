@@ -35,7 +35,7 @@ The proof also gives the computation: transform, take the matrix Moore-Penrose i
 
 ## The SVD Formula
 
-Let $A=U\ast S\ast V^{\mathsf H}$ be the t-SVD of *The Singular Value Decomposition of a Reduced Biquaternion Tensor*, with $U$ and $V$ unitary and $S$ f-diagonal. Let $S^\dagger$ be the f-diagonal tensor defined in the transform by
+Let $A=U\ast S\ast V^{\mathsf H}$ be the t-SVD of *The Singular Value Decomposition of a Reduced Biquaternion Tensor*, with $U$ and $V$ $*$-unitary and $S$ f-diagonal. Let $S^\dagger$ be the f-diagonal tensor defined in the transform by
 
 $$
 \widehat{S^\dagger}^{(k)}=\operatorname{diag}\bigl((\widehat S^{(k)}(1,1))^\dagger,\dots,(\widehat S^{(k)}(r,r))^\dagger\bigr),\qquad 1\le k\le n_3,
@@ -58,7 +58,7 @@ $$
 
 **Remark (the inversion is in the transform).** The diagonal entry of $S$ at $(i,i,k)$ is an element of $\mathbb{B}_{\mathrm{r}}$, but it is not inverted entry by entry in the time domain. A diagonal tube of units can have a vanishing Fourier coefficient: for $n_3=2$, the tube $(1,1)$ has transform $(2,0)$, and the entrywise inverse $(1,1)$ is not the Moore-Penrose inverse of the tube. **The reciprocal-or-zero is taken on the transform slices**, as in the display.
 
-*Proof of the formula.* In the transform, $S$ is f-diagonal, so the four Penrose equations for $S$ and $S^\dagger$ reduce to the scalar equations on each diagonal entry of each slice; hence $S^\dagger$ is the Moore-Penrose inverse of $S$. For unitary $U,V$, the four equations for $A=U\ast S\ast V^{\mathsf H}$ and $X=V\ast S^\dagger\ast U^{\mathsf H}$ follow by cancellation:
+*Proof of the formula.* In the transform, $S$ is f-diagonal, so the four Penrose equations for $S$ and $S^\dagger$ reduce to the scalar equations on each diagonal entry of each slice; hence $S^\dagger$ is the Moore-Penrose inverse of $S$. For $*$-unitary $U,V$, the four equations for $A=U\ast S\ast V^{\mathsf H}$ and $X=V\ast S^\dagger\ast U^{\mathsf H}$ follow by cancellation:
 
 $$
 A\ast X\ast A=U\ast S\ast S^\dagger\ast S\ast V^{\mathsf H}=U\ast S\ast V^{\mathsf H}=A,
@@ -106,7 +106,7 @@ $$
 
 *Proof.* Apply the conjugate transpose to the four equations for $A^\dagger$, using $(X\ast Y)^{\mathsf H}=Y^{\mathsf H}\ast X^{\mathsf H}$ and $(A^{\mathsf H})^{\mathsf H}=A$. The result is the four equations for $(A^{\mathsf H})^\dagger$ with the unknown $(A^\dagger)^{\mathsf H}$; uniqueness gives the identity.
 
-**Proposition (unitary invariance).** If $P$ and $Q$ are unitary tensors of compatible sizes, then
+**Proposition ($*$-unitary invariance).** If $P$ and $Q$ are $*$-unitary tensors of compatible sizes, then
 
 $$
 \boxed{\;
@@ -114,7 +114,7 @@ $$
 \;}.
 $$
 
-*Proof.* Substitute $X=Q^{\mathsf H}\ast A^\dagger\ast P^{\mathsf H}$ into the four equations for $P\ast A\ast Q$ and cancel the unitary factors using $P^{\mathsf H}\ast P=Q\ast Q^{\mathsf H}=\mathrm I$.
+*Proof.* Substitute $X=Q^{\mathsf H}\ast A^\dagger\ast P^{\mathsf H}$ into the four equations for $P\ast A\ast Q$ and cancel the $*$-unitary factors using $P^{\mathsf H}\ast P=Q\ast Q^{\mathsf H}=\mathrm I$.
 
 **Proposition (idempotency).** The tensors $A\ast A^\dagger$ and $A^\dagger\ast A$ are Hermitian idempotents:
 
@@ -174,11 +174,11 @@ $$
 
 ## Verification
 
-The four Penrose equations were recomputed on random tensors of sizes $3\times2\times4$ and $3\times3\times4$, with at most $36$ entries. The residuals of the four equations were $2.3\times10^{-15}$, $8.3\times10^{-17}$, $2.5\times10^{-16}$ and $4.9\times10^{-16}$; reflexivity held to $2.7\times10^{-15}$; the adjoint identity held to $1.3\times10^{-16}$; the two idempotency identities held to $4.8\times10^{-16}$ and $2.8\times10^{-16}$; the projector identities held to $2.2\times10^{-15}$; unitary invariance held to $3.5\times10^{-16}$; and the Hermitian idempotent reproduced its own inverse exactly. The computation used the transform, the slicewise complex SVD and the reciprocal-or-zero rule on the transform diagonal. The entrywise inverse was checked to fail: for the diagonal tube $(1,1)$ with $n_3=2$, the entrywise inverse differs from $S^\dagger$ by $1.06$ in Frobenius norm, and the product $S\ast S^\dagger$ is not the identity.
+The four Penrose equations were recomputed on random tensors of sizes $3\times2\times4$ and $3\times3\times4$, with at most $36$ entries. The residuals of the four equations were $2.3\times10^{-15}$, $8.3\times10^{-17}$, $2.5\times10^{-16}$ and $4.9\times10^{-16}$; reflexivity held to $2.7\times10^{-15}$; the adjoint identity held to $1.3\times10^{-16}$; the two idempotency identities held to $4.8\times10^{-16}$ and $2.8\times10^{-16}$; the projector identities held to $2.2\times10^{-15}$; $*$-unitary invariance held to $3.5\times10^{-16}$; and the Hermitian idempotent reproduced its own inverse exactly. The computation used the transform, the slicewise complex SVD and the reciprocal-or-zero rule on the transform diagonal. The entrywise inverse was checked to fail: for the diagonal tube $(1,1)$ with $n_3=2$, the entrywise inverse differs from $S^\dagger$ by $1.06$ in Frobenius norm, and the product $S\ast S^\dagger$ is not the identity.
 
 ## Summary
 
-Every reduced biquaternion tensor $A$ has a unique Moore-Penrose inverse $A^\dagger$, the solution of the four Penrose equations under the t-product. It is computed from the t-SVD by $A^\dagger=V\ast S^\dagger\ast U^{\mathsf H}$, where $S^\dagger$ is f-diagonal with the elementwise pseudoinverses of the transform diagonal entries; the scalar pseudoinverse is the reciprocal in each nonzero idempotent coordinate and zero in a vanishing coordinate. Equivalently, the inverse is the pair of the two complex t-product pseudoinverses, computed slicewise in the Fourier domain. It satisfies $(A^\dagger)^\dagger=A$, $(A^\dagger)^{\mathsf H}=(A^{\mathsf H})^\dagger$, unitary invariance, and the idempotency of $A\ast A^\dagger$ and $A^\dagger\ast A$; a Hermitian idempotent is its own inverse. The projectors $L_A=\mathrm I-A^\dagger\ast A$ and $R_A=\mathrm I-A\ast A^\dagger$ are the orthogonal projections onto the kernel and the cokernel. **The inverse exists even when the algebra inverse does not, because the Penrose equations are solved coordinatewise.**
+Every reduced biquaternion tensor $A$ has a unique Moore-Penrose inverse $A^\dagger$, the solution of the four Penrose equations under the t-product. It is computed from the t-SVD by $A^\dagger=V\ast S^\dagger\ast U^{\mathsf H}$, where $S^\dagger$ is f-diagonal with the elementwise pseudoinverses of the transform diagonal entries; the scalar pseudoinverse is the reciprocal in each nonzero idempotent coordinate and zero in a vanishing coordinate. Equivalently, the inverse is the pair of the two complex t-product pseudoinverses, computed slicewise in the Fourier domain. It satisfies $(A^\dagger)^\dagger=A$, $(A^\dagger)^{\mathsf H}=(A^{\mathsf H})^\dagger$, $*$-unitary invariance, and the idempotency of $A\ast A^\dagger$ and $A^\dagger\ast A$; a Hermitian idempotent is its own inverse. The projectors $L_A=\mathrm I-A^\dagger\ast A$ and $R_A=\mathrm I-A\ast A^\dagger$ are the orthogonal projections onto the kernel and the cokernel. **The inverse exists even when the algebra inverse does not, because the Penrose equations are solved coordinatewise.**
 
 ## Summary of Notation
 

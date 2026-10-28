@@ -4,7 +4,7 @@
 
 The algebra $M_{3}(\mathbb{C})$ is the algebra of $3\times3$ complex matrices under the ordinary product. It is the model of a central simple algebra, the algebra of endomorphisms of $\mathbb{C}^{3}$, and the ambient algebra of the whole $M_{3}(\mathbb{C})$ category. This article fixes it: the basis of matrix units and the product rule, the trace and the determinant, the centre and the simplicity, the real dimension, the unit group and the projective group, and the reading of the algebra over the real numbers as the complexification of the skew-Hermitian matrices.
 
-No quadratic form and no topology are used here. The trace form $\operatorname{tr}(AB)$ is mentioned only to record that it is symmetric and nondegenerate; the positive definite Hermitian form $\operatorname{tr}(A^{*}B)$ and the norm it defines are *The Involution and the Hermitian Structure*. The dimensions are algebraic dimensions, not homotopy invariants; the topology of the algebra and of its unit group is *The Topology of $M_{3}(\mathbb{C})$*.
+No quadratic form is used in the proofs here. The trace form $\operatorname{tr}(AB)$ is mentioned only to record that it is symmetric and nondegenerate; the positive definite Hermitian form $\operatorname{tr}(A^{*}B)$ and the norm it defines are *The Involution and the Hermitian Structure*. The dimensions are algebraic dimensions, not homotopy invariants; the topology of the algebra and of its unit group is *The Topology of $M_{3}(\mathbb{C})$*.
 
 The article is the first of the category. The element and its coordinates are *The Element, the Coordinates and the Trace*; the root and its idempotents are *Roots of Unity and the Lagrange Idempotents*; the Peirce decomposition is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*.
 
@@ -154,7 +154,9 @@ $$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B),
 $$
 
-with $A^{*}=\bar A^{\mathsf T}$, and it is the subject of *The Involution and the Hermitian Structure*. The two forms agree on the real subspace of Hermitian matrices only after the sign convention of the involution is fixed; the trace form of this article is the complex bilinear one.
+with $A^{*}=\bar A^{\mathsf T}$, and it is the subject of *The Involution and the Hermitian Structure*. The two forms agree on Hermitian matrices, where $A^{*}=A$, and differ by a sign on skew-Hermitian matrices, where $A^{*}=-A$; the trace form of this article is the complex bilinear one.
+
+**No null cone.** The form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ is positive definite, so its only isotropic vector is $0$. The singular set $\{\det A=0\}$ is a complex hypersurface of real codimension two, not the null cone of a quadratic form. At $n=2$ the algebra is the biquaternion algebra $\mathbb{B}\cong M_{2}(\mathbb{C})$, where the determinant is the N-norm, an indefinite quadratic form with a genuine null cone; that cone is a feature of the two-dimensional case and is not imported here.
 
 ## The Centre and Simplicity
 
@@ -310,7 +312,7 @@ Its centre is $\mathbb{C}I$, and it is simple and central simple. Its trace is t
 | Projective group | $PGL_{3}(\mathbb{C})$, $\dim_{\mathbb{C}}=8$ |
 | Real form | $\mathfrak{u}(3)\oplus i\mathfrak{u}(3)$, $\dim_{\mathbb{R}}\mathfrak{u}(3)=9$, $\dim_{\mathbb{R}}\mathfrak{su}(3)=8$ |
 
-The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ of skew-Hermitian matrices, and the Hermitian and skew-Hermitian parts are the real and imaginary readings of one element. No quadratic form and no topology are used in this article; the positive definite form is *The Involution and the Hermitian Structure*, and the homotopy of the unit group is *The Topology of $M_{3}(\mathbb{C})$*.
+The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ of skew-Hermitian matrices, and the Hermitian and skew-Hermitian parts are the real and imaginary readings of one element. No quadratic form is used in the proofs of this article; the positive definite form is *The Involution and the Hermitian Structure*, and the homotopy of the unit group is *The Topology of $M_{3}(\mathbb{C})$*.
 
 ## Summary of Notation
 

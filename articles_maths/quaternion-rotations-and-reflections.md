@@ -75,9 +75,9 @@ Hamilton's word for a unit quaternion is a **versor**, from the Latin *versari*,
 
 ### The Group $\mathrm{SU}(2)$
 
-**Theorem.** The group $Sp(1)$ of unit quaternions is the special unitary group $\mathrm{SU}(2)$, the group of $2\times2$ complex unitary matrices of determinant one.
+**Theorem.** The group $Sp(1)$ of unit quaternions is the special $*$-unitary group $\mathrm{SU}(2)$, the group of $2\times2$ complex $*$-unitary matrices of determinant one.
 
-This is the standard identification of the unit sphere of the quaternion division algebra with the special unitary group, quoted here as standard; its infinitesimal form is the Lie algebra identification $\operatorname{Im}\mathbb{H}\cong\mathrm{SU}(2)$.
+This is the standard identification of the unit sphere of the quaternion division algebra with the special $*$-unitary group, quoted here as standard; its infinitesimal form is the Lie algebra identification $\operatorname{Im}\mathbb{H}\cong\mathrm{SU}(2)$.
 
 **Theorem.** $Sp(1)\cong S^3$ is compact, connected, and simply connected, and it is a three-dimensional real Lie group with Lie algebra $\operatorname{Im}\mathbb{H}$.
 
@@ -502,7 +502,7 @@ The sandwich $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is the
 | $Sp(1) = \{\tilde q : \lvert \tilde q\rvert = 1\} = S^3$ | Group of unit quaternions |
 | $Z(Sp(1)) = \{\pm1\}$ | Centre of $Sp(1)$ |
 | $\exp(u\theta) = \cos\theta + u\sin\theta$ | Exponential of a unit vector |
-| $SU(2)$ | Special unitary group, $Sp(1)\cong SU(2)$ |
+| $SU(2)$ | Special $*$-unitary group, $Sp(1)\cong SU(2)$ |
 | $\operatorname{Ad}_{\tilde q}(\vec q) = \tilde q \vec q\tilde q^{-1}$ | Adjoint action |
 | $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}\operatorname{Ad}_{\tilde q}$ | Sandwich; equals the adjoint action on the unit slice |
 | $L_{\tilde q}(\vec q) = \tilde q \vec q$, $\rho_{\tilde q}(\vec q) = \vec q\tilde q$ | Left and right multiplication operators of the regular representation |

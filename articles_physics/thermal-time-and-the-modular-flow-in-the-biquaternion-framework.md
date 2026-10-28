@@ -44,9 +44,9 @@ Three properties of the flow are used below.
 
 A flow is **inner** if there are unitaries $u_t\in M$ with $\sigma_{t'}=\mathrm{Ad}(u_t)$, and **outer** otherwise; the outer part is the image of the flow in the group $\mathrm{Out}(M)=\mathrm{Aut}(M)/\mathrm{Inn}(M)$ of outer automorphisms. The distinction determines whether the thermal time hypothesis has content.
 
-- On a **type I algebra** — matrices, and therefore the biquaternion algebra itself — every automorphism is inner. The modular flow of any state is conjugation by a unitary in the algebra, and its generator is an element of the algebra. A Hamiltonian exists and is the modular Hamiltonian.
+- On a **type I algebra** — matrices, and therefore the biquaternion algebra itself — every automorphism is inner. The modular flow of any state is conjugation by a $*$-unitary in the algebra, and its generator is an element of the algebra. A Hamiltonian exists and is the modular Hamiltonian.
 - On a **type II algebra** there is a trace, and the modular flow of a state is again inner.
-- On a **type III algebra**, which is what the local algebra of a quantum field theory is, no trace exists and the modular flow of a normal state is **outer**. There is no density matrix, no Hamiltonian, and no inner unitary implementing the flow.
+- On a **type III algebra**, which is what the local algebra of a quantum field theory is, no trace exists and the modular flow of a normal state is **outer**. There is no density matrix, no Hamiltonian, and no inner $*$-unitary implementing the flow.
 
 This is why thermal time is a proposal about type III. Where the flow is inner, an ordinary Hamiltonian evolution is available and the state merely provides a preferred one; where the flow is outer, the state provides the only flow there is, and calling it time is a substantive hypothesis rather than a reformulation.
 

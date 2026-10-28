@@ -231,7 +231,7 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 
 **2. The geometry of the Bell-diagonal tetrahedron.** The Bell-diagonal states form a tetrahedron inscribed in the two-qubit state space, and the separable subset is the octahedron $\sum_j|c_j|\leq1$. What is the corresponding geometry in the cone of $\mathbb{M}_+^{\otimes2}$, and where does the discord vanish on it?
 
-**3. Discord and the local unitary orbit.** The Bell states form one local-unitary orbit; the discord is invariant under local unitaries. Is the discord constant on the orbits of the local unitary group, and does the algebra's structure — the tensor product of two $\mathbb{B}$'s and its inner automorphisms — organize those orbits?
+**3. Discord and the local $*$-unitary orbit.** The Bell states form one local-$*$-unitary orbit; the discord is invariant under local unitaries. Is the discord constant on the orbits of the local $*$-unitary group, and does the algebra's structure — the tensor product of two $\mathbb{B}$'s and its inner automorphisms — organize those orbits?
 
 **4. Many parties.** For three and more subsystems there are several inequivalent discord-like measures. What is their form in $\mathbb{B}^{\otimes n}$, and does the partial trace suffice to define them?
 

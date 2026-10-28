@@ -8,7 +8,7 @@ $$
 A=U|A|,\qquad |A|=(A^*A)^{1/2},
 $$
 
-where $|A|$ is positive semidefinite and $U$ is a partial isometry; if $A$ is invertible, $U$ is unitary and $|A|$ is positive definite. The decomposition is the matrix analogue of the polar form $z=re^{i\theta}$ of a complex number: the positive part $|A|$ is the modulus, the unitary part $U$ is the phase.
+where $|A|$ is positive semidefinite and $U$ is a partial isometry; if $A$ is invertible, $U$ is $*$-unitary and $|A|$ is positive definite. The decomposition is the matrix analogue of the polar form $z=re^{i\theta}$ of a complex number: the positive part $|A|$ is the modulus, the $*$-unitary part $U$ is the phase.
 
 The **singular value decomposition** is the diagonalization of the positive part:
 
@@ -17,7 +17,7 @@ A=V\Sigma W^*,\qquad \Sigma=\operatorname{diag}(\sigma_1,\dots,\sigma_5),
 \qquad \sigma_1\ge\cdots\ge\sigma_5\ge0,
 $$
 
-with $V,W$ unitary. The numbers $\sigma_k$ are the **singular values**, the eigenvalues of $|A|$. They give the operator norm $\|A\|_{\mathrm{op}}=\sigma_1$, the Frobenius norm $\|A\|_F=\sqrt{\sum_k\sigma_k^2}$, the determinant $|\det A|=\prod_k\sigma_k$, and the condition number $\sigma_1/\sigma_5$ for an invertible $A$.
+with $V,W$ $*$-unitary. The numbers $\sigma_k$ are the **singular values**, the eigenvalues of $|A|$. They give the operator norm $\|A\|_{\mathrm{op}}=\sigma_1$, the Frobenius norm $\|A\|_F=\sqrt{\sum_k\sigma_k^2}$, the determinant $|\det A|=\prod_k\sigma_k$, and the condition number $\sigma_1/\sigma_5$ for an invertible $A$.
 
 The polar decomposition is also the **geometry of $GL_5$**: the map
 
@@ -25,7 +25,7 @@ $$
 U(5)\times\mathcal{P}\longrightarrow GL_5,\qquad (U,P)\longmapsto UP,
 $$
 
-is a diffeomorphism, where $\mathcal{P}$ is the open convex cone of positive definite Hermitian matrices. The quotient $GL_5/U(5)\cong\mathcal{P}$ is a symmetric space of noncompact type; the geodesics and the distance are given by the logarithm and the Frobenius norm. The unitary group is the compact direction, the positive cone the noncompact direction.
+is a diffeomorphism, where $\mathcal{P}$ is the open convex cone of positive definite Hermitian matrices. The quotient $GL_5/U(5)\cong\mathcal{P}$ is a symmetric space of noncompact type; the geodesics and the distance are given by the logarithm and the Frobenius norm. The $*$-unitary group is the compact direction, the positive cone the noncompact direction.
 
 The article proves the polar decomposition, the uniqueness, the SVD, the norm and determinant formulas, and the geometry of $GL_5$. It assumes the Hermitian spectral theorem, the positive semidefinite order, the square root and the functional calculus of *Spectral Theory and the Spectral Projectors*. It uses no topology beyond the homotopy type of $GL_5$.
 
@@ -59,7 +59,7 @@ In particular $\ker|A|=\ker A$.
 
 **Proof.** $\ker|A|=\ker A$; invertibility is the triviality of the kernel; the inverse of a positive definite matrix is positive definite.
 
-### The Unitary Part
+### The $*$-Unitary Part
 
 **Theorem (polar decomposition).** Every $A\in M_5(\mathbb{C})$ can be written as
 
@@ -67,9 +67,9 @@ $$
 A=U|A|,
 $$
 
-where $U$ is a partial isometry with initial space $\overline{\operatorname{ran}}|A|$ and final space $\overline{\operatorname{ran}}A$. If $A$ is invertible, $U$ is unitary.
+where $U$ is a partial isometry with initial space $\overline{\operatorname{ran}}|A|$ and final space $\overline{\operatorname{ran}}A$. If $A$ is invertible, $U$ is $*$-unitary.
 
-**Proof.** Define $U$ on $\operatorname{ran}|A|$ by $U(|A|x)=Ax$. This is well defined: if $|A|x=|A|y$, then $|A|(x-y)=0$, so $A(x-y)=0$ by the kernel identity. It is isometric: $\||A|x\|=\|Ax\|$. Extend $U$ by zero on $\ker|A|$; then $U$ is a partial isometry and $U|A|x=Ax$ for all $x$. If $A$ is invertible, $|A|$ is invertible, $\operatorname{ran}|A|=\mathbb{C}^5$, and $U=A|A|^{-1}$ is unitary: $U^*U=|A|^{-1}A^*A|A|^{-1}=I$ and $UU^*=A|A|^{-2}A^*=A(A^*A)^{-1}A^*=I$.
+**Proof.** Define $U$ on $\operatorname{ran}|A|$ by $U(|A|x)=Ax$. This is well defined: if $|A|x=|A|y$, then $|A|(x-y)=0$, so $A(x-y)=0$ by the kernel identity. It is isometric: $\||A|x\|=\|Ax\|$. Extend $U$ by zero on $\ker|A|$; then $U$ is a partial isometry and $U|A|x=Ax$ for all $x$. If $A$ is invertible, $|A|$ is invertible, $\operatorname{ran}|A|=\mathbb{C}^5$, and $U=A|A|^{-1}$ is $*$-unitary: $U^*U=|A|^{-1}A^*A|A|^{-1}=I$ and $UU^*=A|A|^{-2}A^*=A(A^*A)^{-1}A^*=I$.
 
 **Corollary.** For invertible $A$, the polar decomposition is $A=U|A|$ with $U=A|A|^{-1}$; equivalently $A=|A^*|U$ with $|A^*|=(AA^*)^{1/2}$.
 
@@ -77,9 +77,9 @@ where $U$ is a partial isometry with initial space $\overline{\operatorname{ran}
 
 ### Uniqueness
 
-**Theorem.** If $A=UP=U'P'$ with $U,U'$ unitary and $P,P'$ positive definite, then $U=U'$ and $P=P'$. For a general $A$, the positive part is unique, and the partial isometry is unique on $\operatorname{ran}|A|$; it is arbitrary on $\ker A$.
+**Theorem.** If $A=UP=U'P'$ with $U,U'$ $*$-unitary and $P,P'$ positive definite, then $U=U'$ and $P=P'$. For a general $A$, the positive part is unique, and the partial isometry with initial space $\operatorname{ran}|A|$ is unique; it is zero on $\ker A$. A unitary extension is determined by an isometry from $\ker A$ onto $(\operatorname{ran}A)^\perp$.
 
-**Proof.** $A^*A=P^2=P'^2$; the positive definite square root is unique, so $P=P'$. Then $UP=U'P$ and $P$ is invertible, so $U=U'$. For a general $A$, $A^*A$ determines $|A|$ uniquely; $U$ is determined on $\operatorname{ran}|A|$ by $U(|A|x)=Ax$, and on $\ker|A|=\ker A$ it can be any isometry onto the orthogonal complement of $\operatorname{ran}A$.
+**Proof.** $A^*A=P^2=P'^2$; the positive definite square root is unique, so $P=P'$. Then $UP=U'P$ and $P$ is invertible, so $U=U'$. For a general $A$, $A^*A$ determines $|A|$ uniquely; the canonical $U$ is determined on $\operatorname{ran}|A|$ by $U(|A|x)=Ax$ and is zero on $\ker|A|=\ker A$. A unitary extension is determined on $\ker A$ by an isometry onto $(\operatorname{ran}A)^\perp$.
 
 **Corollary.** The polar decomposition gives a bijection between $GL_5$ and $U(5)\times\mathcal{P}$, where $\mathcal{P}$ is the cone of positive definite Hermitian matrices.
 
@@ -95,7 +95,7 @@ where $U$ is a partial isometry with initial space $\overline{\operatorname{ran}
 
 **Proof.** $|A|^2=A^*A$; the eigenvalues of $|A|$ are the square roots of those of $A^*A$. The rank is the number of nonzero eigenvalues of $A^*A$, which is the number of nonzero singular values.
 
-**Corollary.** The singular values are invariant under left and right multiplication by unitary matrices: $\sigma_k(UAV)=\sigma_k(A)$.
+**Corollary.** The singular values are invariant under left and right multiplication by $*$-unitary matrices: $\sigma_k(UAV)=\sigma_k(A)$.
 
 **Proof.** $(UAV)^*(UAV)=V^*A^*AV$, which has the same eigenvalues as $A^*A$; the singular values are unchanged.
 
@@ -107,9 +107,9 @@ $$
 A=V\Sigma W^*,
 $$
 
-with $V,W$ unitary and $\Sigma=\operatorname{diag}(\sigma_1,\dots,\sigma_5)$ the diagonal matrix of the singular values.
+with $V,W$ $*$-unitary and $\Sigma=\operatorname{diag}(\sigma_1,\dots,\sigma_5)$ the diagonal matrix of the singular values.
 
-**Proof.** Diagonalize $|A|$ by a unitary $W$: $|A|=W\Sigma W^*$ with $\Sigma$ the diagonal of singular values. Then $A=U|A|=UW\Sigma W^*$; put $V=UW$, which is unitary when $A$ is invertible. In the general case, $U$ is a partial isometry; extend it to a unitary $V$ on the orthogonal complement of $\operatorname{ran}|A|$; the formula still holds because $\Sigma$ kills the kernel.
+**Proof.** Diagonalize $|A|$ by a $*$-unitary $W$: $|A|=W\Sigma W^*$ with $\Sigma$ the diagonal of singular values. Then $A=U|A|=UW\Sigma W^*$; put $V=UW$, which is $*$-unitary when $A$ is invertible. In the general case, $U$ is a partial isometry; extend it to a $*$-unitary $V$ on the orthogonal complement of $\operatorname{ran}|A|$; the formula still holds because $\Sigma$ kills the kernel.
 
 **Corollary.** The columns of $V$ are the left singular vectors, the columns of $W$ the right singular vectors, and $Av_k=\sigma_kw_k$? With the convention $A=V\Sigma W^*$, $Aw_k=\sigma_kv_k$ and $A^*v_k=\sigma_kw_k$.
 
@@ -131,9 +131,9 @@ $$
 
 **Proof.** The operator norm is the square root of the largest eigenvalue of $A^*A$, which is $\sigma_1$; the Frobenius norm is the square root of the trace of $A^*A$, which is the sum of the squares; the determinant is the product of the eigenvalues of $A$, whose moduli are the singular values (the eigenvalues of $|A|$).
 
-**Corollary.** The condition number of an invertible $A$ is $\kappa(A)=\sigma_1/\sigma_5\ge1$, with equality iff $A$ is a scalar multiple of a unitary matrix.
+**Corollary.** The condition number of an invertible $A$ is $\kappa(A)=\sigma_1/\sigma_5\ge1$, with equality iff $A$ is a scalar multiple of a $*$-unitary matrix.
 
-**Proof.** The ratio of the largest to the smallest singular value is at least $1$; equality means all singular values are equal, so $|A|$ is scalar and $A$ is a scalar multiple of a unitary.
+**Proof.** The ratio of the largest to the smallest singular value is at least $1$; equality means all singular values are equal, so $|A|$ is scalar and $A$ is a scalar multiple of a $*$-unitary.
 
 **Corollary.** The determinant of $A$ is nonzero iff all singular values are nonzero; the singular set $\det=0$ is the set of matrices with at least one zero singular value.
 
@@ -199,7 +199,7 @@ $$
 
 **Proof.** The metric is invariant under the group action; the exponential of Hermitian matrices is a diffeomorphism onto $\mathcal{P}$; completeness is the Hopf–Rinow theorem for the complete metric.
 
-**Remark.** **The geometry of $GL_5$ is the product of the compact unitary group and the noncompact positive cone.** The polar decomposition splits the group into a compact direction $U(5)$ and a noncompact direction $\mathcal{P}$; the positive cone is a symmetric space of nonpositive curvature, and the geodesics are the matrix analogues of the straight lines in the logarithm. The determinant is the volume of the image of the unit ball, and the singular values are the lengths of the semi-axes of the ellipsoid $A(S^5)$.
+**Remark.** **The geometry of $GL_5$ is the product of the compact $*$-unitary group and the noncompact positive cone.** The polar decomposition splits the group into a compact direction $U(5)$ and a noncompact direction $\mathcal{P}$; the positive cone is a symmetric space of nonpositive curvature, and the geodesics are the matrix analogues of the straight lines in the logarithm. The determinant is the volume of the image of the unit ball, and the singular values are the lengths of the semi-axes of the ellipsoid $A(S^5)$.
 
 ## The Degenerate Case
 
@@ -211,21 +211,21 @@ $$
 
 **Proof.** $U$ is isometric on $\operatorname{ran}|A|$ and zero on its orthogonal complement; $U^*U$ is the projection onto $\operatorname{ran}|A|$; $UU^*$ is the projection onto the range of $U$, which is $\operatorname{ran}A$.
 
-**Corollary.** $U$ is unitary iff $A$ is invertible; it is an isometry iff $A$ is injective; it is a coisometry iff $A$ is surjective.
+**Corollary.** $U$ is $*$-unitary iff $A$ is invertible; it is an isometry iff $A$ is injective; it is a coisometry iff $A$ is surjective.
 
-**Proof.** $U$ is unitary iff both projections are the identity, i.e., $\ker A=0$ and $\operatorname{ran}A=\mathbb{C}^5$.
+**Proof.** $U$ is $*$-unitary iff both projections are the identity, i.e., $\ker A=0$ and $\operatorname{ran}A=\mathbb{C}^5$.
 
 ### The Non-Uniqueness
 
-**Proposition.** For a singular $A$, the positive part $|A|$ is unique, but the partial isometry $U$ is not: on $\ker A$ it can be any isometry onto the orthogonal complement of $\operatorname{ran}A$.
+**Proposition.** For a singular $A$, the positive part $|A|$ is unique, and the canonical partial isometry with initial space $\operatorname{ran}|A|$ is unique. A unitary extension is not unique: on $\ker A$ it can be any isometry onto $(\operatorname{ran}A)^\perp$.
 
-**Proof.** The polar decomposition determines $U$ on $\operatorname{ran}|A|$; on $\ker|A|=\ker A$, the condition $A=U|A|$ imposes nothing, so $U$ can be chosen arbitrarily as an isometry onto $\ker A^\perp\cap(\operatorname{ran}A)^\perp$? More precisely, $U$ maps $\ker|A|$ into $(\operatorname{ran}A)^\perp$ isometrically; any such choice gives a polar decomposition.
+**Proof.** The canonical $U$ is determined on $\operatorname{ran}|A|$ and is zero on $\ker|A|=\ker A$. For a unitary extension, the condition $A=U|A|$ imposes nothing on $\ker A$ beyond $U(\ker A)\subseteq(\operatorname{ran}A)^\perp$ and isometry; any such choice gives $A=U|A|$.
 
-**Corollary.** The polar decomposition is unique for invertible $A$; for singular $A$, the ambiguity is the choice of the isometry on the kernel. The positive part and the singular values are always unique.
+**Corollary.** The canonical polar decomposition is unique for every $A$; for singular $A$, the ambiguity of a unitary extension is the choice of the isometry on the kernel. The positive part and the singular values are always unique.
 
 **Proof.** The positive part is determined by $A^*A$; the singular values are its eigenvalues; the ambiguity is exactly the kernel isometry.
 
-**Remark.** **The polar decomposition is the matrix analogue of the polar form, with the partial isometry as the phase.** For an invertible matrix the phase is unitary; for a singular matrix the phase is only a partial isometry, and the kernel is the ambiguity. The singular values are the moduli; the positive part is the modulus matrix; the SVD diagonalizes the modulus.
+**Remark.** **The polar decomposition is the matrix analogue of the polar form, with the partial isometry as the phase.** For an invertible matrix the phase is $*$-unitary; for a singular matrix the phase is only a partial isometry, and the kernel is the ambiguity. The singular values are the moduli; the positive part is the modulus matrix; the SVD diagonalizes the modulus.
 
 ## Summary
 
@@ -235,7 +235,7 @@ $$
 A=U|A|,\qquad |A|=(A^*A)^{1/2},
 $$
 
-with $|A|$ positive semidefinite and $U$ a partial isometry; for invertible $A$, $U$ is unitary and the decomposition is unique. The singular value decomposition is
+with $|A|$ positive semidefinite and $U$ a partial isometry; for invertible $A$, $U$ is $*$-unitary and the decomposition is unique. The singular value decomposition is
 
 $$
 A=V\Sigma W^*,\qquad \Sigma=\operatorname{diag}(\sigma_1,\dots,\sigma_5),
@@ -253,7 +253,7 @@ The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient 
 |---|---|
 | Positive part | $|A|=(A^*A)^{1/2}$ |
 | Polar decomposition | $A=U|A|$ |
-| Unitary part | $U=A|A|^{-1}$ for invertible $A$ |
+| $*$-Unitary part | $U=A|A|^{-1}$ for invertible $A$ |
 | Singular values | Eigenvalues of $|A|$ |
 | SVD | $A=V\Sigma W^*$ |
 | Operator norm | $\sigma_1$ |
@@ -267,7 +267,7 @@ The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient 
 | Symbol | Meaning |
 |---|---|
 | $|A|=(A^*A)^{1/2}$ | The positive part |
-| $U$ | The partial isometry (unitary if $A$ is invertible) |
+| $U$ | The partial isometry ($*$-unitary if $A$ is invertible) |
 | $\sigma_k$ | The singular values |
 | $V,\Sigma,W$ | The SVD factors |
 | $\mathcal{P}$ | The positive definite cone |
@@ -279,6 +279,6 @@ The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient 
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the positive definite cone, the trace metric and the matrix geometric means.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for the symmetric space $GL_n(\mathbb{C})/U(n)$, the Cartan decomposition and the geodesics.
 - [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the Hermitian spectral theorem, the square root and the functional calculus.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form and the unitary group.
+- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form and the $*$-unitary group.
 - [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m5c.html), for the exponential map and the Lie group.
 - [The Exponential-Polar Decomposition](the-exponential-polar-decomposition-of-m5c.html), for the combination of the exponential and the polar decomposition.

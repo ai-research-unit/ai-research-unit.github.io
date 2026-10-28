@@ -32,15 +32,15 @@ $$
 M_5^{(0)}\subset M_5^{(1)}\subset M_5^{(2)}\subset M_5^{(3)}\subset M_5^{(4)}=\Sigma,
 $$
 
-of complex dimensions $0,9,16,21,24$ and complex codimensions $25,16,9,4,1$. The successive differences of the codimensions are the odd numbers
+of complex dimensions $0,9,16,21,24$ and complex codimensions $25,16,9,4,1$. The successive differences of the dimensions are $9,7,5,3$, and the codimension of $\Sigma$ in $M_5$ is $1$; the odd numbers
 
 $$
-1,3,5,7,9,
+1,3,5,7,9
 $$
 
-the dimensions of the adjoint summands of *The Spin Chain and the Adjoint Decomposition*.
+are the dimensions of the adjoint summands of *The Spin Chain and the Adjoint Decomposition*.
 
-The trace form $\operatorname{tr}(A^*B)$ is positive definite and has **no null cone**; the singular set is not a null cone of the metric. The complex bilinear pairing $\operatorname{tr}(AB)$ is indefinite, and its isotropic cone is a different set. The article assumes the matrix algebra, the trace and the involution; it uses the spectral theorem only through the definition of the operator norm, and it proves the basic inequalities directly.
+The Hermitian trace form $\operatorname{tr}(A^*B)$, the Frobenius form, is positive definite and has **no null cone**; the singular set is not a null cone of the metric. The complex bilinear pairing $\operatorname{tr}(AB)$ is indefinite, and its isotropic cone is a different set. The article assumes the matrix algebra, the trace and the involution; it uses the spectral theorem only through the definition of the operator norm, and it proves the basic inequalities directly.
 
 ## The Determinant as a Form
 
@@ -239,7 +239,7 @@ $$
 \boxed{\ \det\text{ is a multiplicative form of degree }5;\quad \Sigma=\{\det=0\}\text{ has real codimension }2;\quad \text{no null cone.}\ }
 $$
 
-The singular set is the determinantal hypersurface of rank at most $4$, of complex dimension $24$ and real codimension $2$. The rank strata have complex dimensions $0,9,16,21,24$ and complex codimensions $25,16,9,4,1$; their successive codimensional differences are the odd numbers $1,3,5,7,9$. The singular locus of $\Sigma$ is the rank-at-most-$3$ variety. The Frobenius form is positive definite and has no null cone; the trace pairing is indefinite and has an isotropic cone; the determinant zero set is neither.
+The singular set is the determinantal hypersurface of rank at most $4$, of complex dimension $24$ and real codimension $2$. The rank strata have complex dimensions $0,9,16,21,24$ and complex codimensions $25,16,9,4,1$; the successive codimensional differences are $9,7,5,3$, and the codimension of $\Sigma$ is $1$, so the odd numbers in reverse order are $9,7,5,3,1$. The singular locus of $\Sigma$ is the rank-at-most-$3$ variety. The Frobenius form is positive definite and has no null cone; the trace pairing is indefinite and has an isotropic cone; the determinant zero set is neither.
 
 | Object | Value |
 |---|---|

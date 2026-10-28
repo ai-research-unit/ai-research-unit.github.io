@@ -354,7 +354,7 @@ $$
 \dim\mathfrak{gl}_{2j+1}=\sum_{r=0}^{2j}(2r+1)=(2j+1)^2 .
 $$
 
-For $j=2$ this is $5=2\cdot2+1$, $1+3+5+7+9=25$. The formula is the odd case; the even case begins at $n=2$, where the carrier is the two-dimensional spinor of weight $\tfrac12$, not a symmetric power of $\mathbb{C}^2$ of odd degree, and the weights are half-integers.
+For $j=2$ this is $5=2\cdot2+1$, $1+3+5+7+9=25$. The formula is the odd-$n$ case; at $n=2$ the same construction gives the two-dimensional spinor of weight $\tfrac12$, the symmetric power $\operatorname{Sym}^{1}(\mathbb{C}^2)$ of odd degree, and the weights are half-integers.
 
 **Proof.** The identification of the carrier with the symmetric power is the theorem of §*The Carrier as a Symmetric Power* for $j=2$; the general case is the same monomial computation. The adjoint decomposition is the Clebsch–Gordan square of the spin-$j$ module, whose summands are $V_0,\dots,V_{2j}$.
 
@@ -402,7 +402,7 @@ The adjoint decomposition is multiplicity-free, one summand per highest weight $
 - Werner Greub, *Multilinear Algebra* (Springer, second edition, 1978), for the symmetric powers and the apolar pairing.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the Clebsch–Gordan decomposition, the highest-weight classification and the symmetric powers of $\mathbb{C}^2$.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the semisimplicity of finite-dimensional $\mathfrak{sl}_2$-modules, the Casimir element and the weight multiplicities.
-- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form $\mathfrak{su}_2$ and the unitary generators $iJ_3,iJ_+,iJ_-$.
+- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form $\mathfrak{su}_2$ and the $*$-unitary generators $iJ_3,iJ_+,iJ_-$.
 - [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$, the weight spaces and the multiplication rule.
 - [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge that rescales the simple nilpotents and the ladder coefficients.
 - [The Spin-Two Chain and the Adjoint $1+3+5+7+9$](the-spin-two-chain-and-the-adjoint-of-m5c.html), for the explicit spin-two chain, the weights and the absence of chirality.

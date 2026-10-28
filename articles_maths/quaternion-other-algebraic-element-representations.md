@@ -19,9 +19,9 @@ $$
 \tilde q\cdot v = \iota(\tilde q)\,v, \qquad v\in\mathbb{C}^2.
 $$
 
-**Theorem.** The spinor representation is a faithful $\mathbb{R}$-linear representation of $\mathbb{H}$ by complex-linear maps of $\mathbb{C}^2$; restricted to the unit group it is the defining two-dimensional unitary representation of $Sp(1)\cong SU(2)$.
+**Theorem.** The spinor representation is a faithful $\mathbb{R}$-linear representation of $\mathbb{H}$ by complex-linear maps of $\mathbb{C}^2$; restricted to the unit group it is the defining two-dimensional $*$-unitary representation of $Sp(1)\cong SU(2)$.
 
-*Proof.* The action is a representation because $\iota$ is multiplicative, and it is faithful because $\iota$ is injective. For a unit $u$, $\iota(u)$ is unitary by *Quaternion 2x2 Matrix Element Representation*, so the restriction is a unitary representation; its dimension is two and it is irreducible, since any $\mathbb{C}$-linear map of $\mathbb{C}^2$ lies in $M_2(\mathbb{C})$, the complex span of $\iota(\mathbb{H})$, and the algebra acts transitively on non-zero vectors.
+*Proof.* The action is a representation because $\iota$ is multiplicative, and it is faithful because $\iota$ is injective. For a unit $u$, $\iota(u)$ is $*$-unitary by *Quaternion 2x2 Matrix Element Representation*, so the restriction is a $*$-unitary representation; its dimension is two and it is irreducible, since any $\mathbb{C}$-linear map of $\mathbb{C}^2$ lies in $M_2(\mathbb{C})$, the complex span of $\iota(\mathbb{H})$, and the algebra acts transitively on non-zero vectors.
 
 **Proposition.** The spinor representation is the fundamental representation of $Sp(1)$ and is the source of the double cover $Sp(1)\to SO(3)$: the adjoint (three-dimensional) representation is the symmetric square of the spinor representation, and the tensor square decomposes as $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathrm{Sym}^2\oplus\Lambda^2$, of dimensions three and one.
 
@@ -81,11 +81,11 @@ $$ \boxed{\; \mathrm{Cl}^0_{3,0}\cong M_2(\mathbb{R}) \;} .$$
 
 **Theorem.** Two choices in any of these three lists differ by the action of the compact group $Sp(1)$ (equivalently $SO(3)$ on the imaginary subspace), and all the structural statements of the article are invariant under this action.
 
-*Proof.* A change of orthonormal basis of the negative plane is a rotation of $\operatorname{Im}\mathbb{H}$, and every rotation is the adjoint action of a unit quaternion, so the generators change by conjugation by a unit; the matrix realization changes by conjugation by the corresponding unitary matrix; and the root $\tilde\xi$ changes to $u\tilde\xi u^{-1}$ under the adjoint action. Each of the invariants — the quaternion norm, the trace, the determinant, the module ranks — is unchanged.
+*Proof.* A change of orthonormal basis of the negative plane is a rotation of $\operatorname{Im}\mathbb{H}$, and every rotation is the adjoint action of a unit quaternion, so the generators change by conjugation by a unit; the matrix realization changes by conjugation by the corresponding $*$-unitary matrix; and the root $\tilde\xi$ changes to $u\tilde\xi u^{-1}$ under the adjoint action. Each of the invariants — the quaternion norm, the trace, the determinant, the module ranks — is unchanged.
 
 ## Summary
 
-The spinor representation of the quaternion algebra is the action on two-component complex vectors by the matrix realization $\iota$; it is faithful, its restriction to $Sp(1)$ is the defining unitary representation, and its symmetric square is the adjoint representation, so it is the source of the double cover $Sp(1)\to SO(3)$. The module carries three anticommuting complex structures $\iota(\vec e_x),\iota(\vec e_y),\iota(\vec e_z)$ and is therefore a quaternionic line.
+The spinor representation of the quaternion algebra is the action on two-component complex vectors by the matrix realization $\iota$; it is faithful, its restriction to $Sp(1)$ is the defining $*$-unitary representation, and its symmetric square is the adjoint representation, so it is the source of the double cover $Sp(1)\to SO(3)$. The module carries three anticommuting complex structures $\iota(\vec e_x),\iota(\vec e_y),\iota(\vec e_z)$ and is therefore a quaternionic line.
 
 The Clifford identifications are $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ and $\mathbb{H}\cong\mathrm{Cl}^0_{0,3}$, with the scalar subspace as the degree-zero part and the vector subspace as the sum of the degree-one and degree-two parts of the first.
 

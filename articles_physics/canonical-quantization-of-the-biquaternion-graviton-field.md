@@ -125,7 +125,7 @@ The spin-two piece has dimension five, which is $2s+1$ at $s=2$; it is the carri
 
 ## Helicity and the Massless Little Group
 
-The masslessness of the graviton is what fixes the number two, and the reason is the representation theory of the little group. A massless particle's momentum is left invariant by the Euclidean group of the plane transverse to it, $\mathrm{ISO}(2)$, and the unitary representations of that group are labelled by a single number, the **helicity** $h$, together with a continuous label that a physical, local field must set to zero. For a field of a given Lorentz type the allowed helicities are finite in number, and for a field that is single-valued — one that returns to itself after a rotation by $2\pi$ — the helicity is an integer.
+The masslessness of the graviton is what fixes the number two, and the reason is the representation theory of the little group. A massless particle's momentum is left invariant by the Euclidean group of the plane transverse to it, $\mathrm{ISO}(2)$, and the $*$-unitary representations of that group are labelled by a single number, the **helicity** $h$, together with a continuous label that a physical, local field must set to zero. For a field of a given Lorentz type the allowed helicities are finite in number, and for a field that is single-valued — one that returns to itself after a rotation by $2\pi$ — the helicity is an integer.
 
 The material vector $V$ is a three-dimensional representation of the rotation group, and under the massless little group it decomposes into the helicities $+1$, $-1$ and $0$, the third being the longitudinal component. The graviton's carrier, the symmetric square $V\odot V$, decomposes correspondingly into
 

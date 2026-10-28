@@ -91,7 +91,7 @@ c^{\mathrm{fop}}_j=\Big(\prod_{k=1}^{j-1}\sigma^z_k\Big)\sigma^+_j ,
 c^{\mathrm{fop}\dagger}_j=\Big(\prod_{k=1}^{j-1}\sigma^z_k\Big)\sigma^-_j .
 $$
 
-The string $\prod_{k<j}\sigma^z_k$ is Hermitian and unitary, and it commutes with $\sigma^\pm_j$ because it acts on different sites. Three identities follow, and all three were verified by exact matrix computation on chains of up to four sites with the Kronecker-product representation of $\mathcal{H}$.
+The string $\prod_{k<j}\sigma^z_k$ is Hermitian and $*$-unitary, and it commutes with $\sigma^\pm_j$ because it acts on different sites. Three identities follow, and all three were verified by exact matrix computation on chains of up to four sites with the Kronecker-product representation of $\mathcal{H}$.
 
 **The anticommutator.** For $i,j$ in any order,
 

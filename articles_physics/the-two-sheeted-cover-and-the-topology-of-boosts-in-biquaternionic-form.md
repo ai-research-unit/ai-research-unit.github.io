@@ -69,7 +69,7 @@ $$
 
 form a real Lie group of dimension six, because the single complex equation $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ is two real conditions on the eight real coordinates of $\tilde U_{\mathrm L}$. It is the double cover of the restricted Lorentz group and, as a manifold, it has a simple structure given by the polar decomposition.
 
-Every invertible matrix has a unique decomposition into a unitary and a positive Hermitian factor; in the right polar order, transported to the algebra, this reads
+Every invertible matrix has a unique decomposition into a $*$-unitary and a positive Hermitian factor; in the right polar order, transported to the algebra, this reads
 
 $$
 \tilde U_{\mathrm L} = \tilde u_{\mathrm r}\,B_{\mathrm{right}},
@@ -81,7 +81,7 @@ B_{\mathrm{right}}^\dagger = B_{\mathrm{right}},
 B_{\mathrm{right}}\ \text{positive} .
 $$
 
-For a unit-norm rotor the two factors are themselves unit-norm: $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle B_{\mathrm{right}}\rangle_{\natural} = 1$. The unitary factor lives in the compact subgroup
+For a unit-norm rotor the two factors are themselves unit-norm: $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle B_{\mathrm{right}}\rangle_{\natural} = 1$. The $*$-unitary factor lives in the compact subgroup
 
 $$
 SU(2) = \{\,\tilde u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}} : \langle\tilde u_{\mathrm r}\rangle_{\natural} = e_t\,\}\cong S^3,
@@ -118,7 +118,7 @@ $$
 B_{\mathrm{right}} = (\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L})^{1/2},
 $$
 
-using $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. The other ordering gives $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*} = \tilde u_{\mathrm r}B_{\mathrm{right}}^2\tilde u_{\mathrm r}^{-1}$, whose square root is the corpus boost factor $\tilde U_{\mathrm b}=\tilde u_{\mathrm r}B_{\mathrm{right}}\tilde u_{\mathrm r}^{-1}$. It is a different boost whenever the rotation axis is not parallel to the boost axis, and it is the factor of the word $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not of the word used here. With $\tilde u_{\mathrm r} = \tilde U_{\mathrm L}B_{\mathrm{right}}^{-1}$ the factor $\tilde u_{\mathrm r}$ was unitary and lay in $\mathbb{H}_{\mathbb{B}}$, the factor $B_{\mathrm{right}}$ was Hermitian positive with $\langle B_{\mathrm{right}}\rangle_{\natural}=e_t$, and the reconstruction $\tilde u_{\mathrm r}B_{\mathrm{right}}$ reproduced $\tilde U_{\mathrm L}$ to machine precision. The eigenvalues of $B_{\mathrm{right}}$ were real and positive, as required for the positive square root.
+using $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. The other ordering gives $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*} = \tilde u_{\mathrm r}B_{\mathrm{right}}^2\tilde u_{\mathrm r}^{-1}$, whose square root is the corpus boost factor $\tilde U_{\mathrm b}=\tilde u_{\mathrm r}B_{\mathrm{right}}\tilde u_{\mathrm r}^{-1}$. It is a different boost whenever the rotation axis is not parallel to the boost axis, and it is the factor of the word $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, not of the word used here. With $\tilde u_{\mathrm r} = \tilde U_{\mathrm L}B_{\mathrm{right}}^{-1}$ the factor $\tilde u_{\mathrm r}$ was $*$-unitary and lay in $\mathbb{H}_{\mathbb{B}}$, the factor $B_{\mathrm{right}}$ was Hermitian positive with $\langle B_{\mathrm{right}}\rangle_{\natural}=e_t$, and the reconstruction $\tilde u_{\mathrm r}B_{\mathrm{right}}$ reproduced $\tilde U_{\mathrm L}$ to machine precision. The eigenvalues of $B_{\mathrm{right}}$ were real and positive, as required for the positive square root.
 
 ## The Two-Sheeted Cover
 
@@ -407,5 +407,5 @@ with $\omega\approx\tfrac{\psi^2}{2}\sin\theta$ for small rapidity and $\omega\t
 - John Milnor, "The fundamental group of the Lorentz group," chapter in *Collected Papers* (Publish or Perish, 1994), for the topology of the Lorentz group and its coverings.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor description of rotations and boosts and the belt-trick interpretation.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the rotor double-valuedness and the spacetime-algebra treatment of boosts.
-- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the composition of Lorentz transformations and the origin of the Wigner rotation.
+- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the composition of Lorentz transformations and the origin of the Wigner rotation.
 - A. Ben-Menahem, "Wigner rotation and Thomas precession," *American Journal of Physics* **53** (1985) 62–68, for a direct derivation of the Wigner angle formula used here.

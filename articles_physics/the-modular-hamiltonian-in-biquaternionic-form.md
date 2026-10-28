@@ -62,7 +62,7 @@ $$
 $$
 The kernel of $\Delta$ equals the kernel of $S$, so $\Delta>0$ is again the faithfulness hypothesis: a non-faithful state gives $\Delta$ a zero eigenvalue, and at that eigenvalue $-\log\Delta$ diverges. This is the sense in which positivity is not a technicality. It is the same hypothesis as cyclic and separating, read off the spectrum of $\Delta$ rather than off the vector. Section "Verification: $\tilde{K}_{\mathrm{mod}}$ Generates the Modular Flow" exhibits the failure explicitly.
 
-**Self-adjointness and unitarity.** Because $\Delta>0$, the spectral theorem gives a self-adjoint $\log\Delta$ and hence a self-adjoint $\tilde{K}_{\mathrm{mod}}$; the unitary group $\exp(-i\tilde{K}_{\mathrm{mod}}t')=\Delta^{it'}$ is then well defined for all real $t'$, and $\Delta^{it'}$ is unitary. The flow $\sigma_{t'}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde{K}_{\mathrm{mod}}$ is the self-adjoint generator of the unitary group that implements it.
+**Self-adjointness and unitarity.** Because $\Delta>0$, the spectral theorem gives a self-adjoint $\log\Delta$ and hence a self-adjoint $\tilde{K}_{\mathrm{mod}}$; the $*$-unitary group $\exp(-i\tilde{K}_{\mathrm{mod}}t')=\Delta^{it'}$ is then well defined for all real $t'$, and $\Delta^{it'}$ is $*$-unitary. The flow $\sigma_{t'}$ is thus a one-parameter group of $*$-automorphisms of $M$, as the parent verifies, and $\tilde{K}_{\mathrm{mod}}$ is the self-adjoint generator of the $*$-unitary group that implements it.
 
 ### The Sign Convention, Fixed and Held
 

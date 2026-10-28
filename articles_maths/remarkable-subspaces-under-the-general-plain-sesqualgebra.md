@@ -4,7 +4,7 @@
 
 The general plain sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu|Q_\mu|^{2}$, positive definite on the algebra, is read here on the remarkable real subspaces of *The Six Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
 
-The form is used, not re-derived. Its definition, its Hermitian symmetry, its Gram matrix $\mathrm{I}_4$ in the coefficient basis and its unitary automorphism group $\mathrm{U}(4)$ are the matter of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the remarkable subspaces and their bases are *The Six Subspaces*; and the companion readings of the same remarkable subspaces by the other three pairings are *Remarkable Subspaces and the Four General Products, Forms and Norms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Quaternionic Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
+The form is used, not re-derived. Its definition, its Hermitian symmetry, its Gram matrix $\mathrm{I}_4$ in the coefficient basis and its $*$-unitary automorphism group $\mathrm{U}(4)$ are the matter of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the remarkable subspaces and their bases are *The Six Subspaces*; and the companion readings of the same remarkable subspaces by the other three pairings are *Remarkable Subspaces and the Four General Products, Forms and Norms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Quaternionic Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
 
 ## The Restriction Matrices
 
@@ -61,7 +61,7 @@ It is the real orthogonal group of the dimension of $V$.
 
 The definite norm of the algebra is $\lVert\tilde Q\rVert_E$, of *The Euclidean Topology of the Biquaternion Algebra*, and the restriction of the form is the square of the restriction of the norm; the rows are therefore the remarkable definite subspaces of the ambient space, of dimensions $2$, $6$ and $4$.
 
-**Remark (the ambient unitary group and the restriction groups).** The complex-linear automorphism group of the whole form is the unitary group $\mathrm{U}(4)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, of real dimension $16$. The real-linear automorphism group of the realified form is the larger $O(8)$, and the complex-linear automorphisms of a subspace restriction need not extend to the algebra, nor an automorphism of the algebra preserve the subspace; the groups of the table are the largest groups preserving the restriction.
+**Remark (the ambient $*$-unitary group and the restriction groups).** The complex-linear automorphism group of the whole form is the $*$-unitary group $\mathrm{U}(4)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, of real dimension $16$. The real-linear automorphism group of the realified form is the larger $O(8)$, and the complex-linear automorphisms of a subspace restriction need not extend to the algebra, nor an automorphism of the algebra preserve the subspace; the groups of the table are the largest groups preserving the restriction.
 
 **Remark (the orthogonality of the remarkable subspaces).** The form is diagonal in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, so two of the remarkable subspaces are orthogonal exactly when their coefficient supports are disjoint. The centre has support $\{t\}$ and the vector subspace support $\{x,y,z\}$, while the quaternion, anti-quaternion and Hermitian subspaces have full support; the centre and the vector subspace are therefore orthogonal complements, and they are the only orthogonal pair among the remarkable subspaces, exactly as for the other three pairings. The common orthogonal pair of the four pairings is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
@@ -99,7 +99,7 @@ On the remarkable real subspaces the general plain sesquilinear form carries the
 
 ## Further Reading
 
-- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its Hermitian symmetry and its unitary group
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its Hermitian symmetry and its $*$-unitary group
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the definite norm and the topology it defines
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces and their bases
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the indefinite reading of the same six by the general plain bilinear form

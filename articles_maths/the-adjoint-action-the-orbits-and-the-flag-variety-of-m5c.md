@@ -102,7 +102,7 @@ of dimension $20$; in $PGL_5$ it is $PGL_5/T$, also of dimension $20$. It is the
 
 **Proof.** The conjugates of $H$ have the same characteristic polynomial and the same five distinct eigenvalues. Conversely, two matrices with the same five distinct eigenvalues are diagonalizable with the same diagonal form, hence conjugate. The centralizer is $T$, of dimension $5$, so the orbit has dimension $20$; in $PGL_5$ the stabilizer is $T/\mathbb{C}^\times$, of dimension $4$, and the orbit has dimension $24-4=20$.
 
-**Corollary.** The root orbit is a single conjugacy class, not the whole regular semisimple locus. The regular semisimple locus is the union of all the root orbits with distinct eigenvalues, of dimension $25$.
+**Corollary.** The root orbit is a single conjugacy class, not the whole regular semisimple locus. The regular semisimple locus is the union of the conjugacy classes of matrices with five distinct eigenvalues, of dimension $25$.
 
 **Proof.** The orbit fixes the five eigenvalues $\zeta_k$; a different choice of five distinct eigenvalues gives a different orbit. The union over all choices is the open locus of distinct eigenvalues, of dimension $25$.
 
@@ -165,9 +165,9 @@ the set of rank-one idempotents, of dimension $8$. Its stabilizer is $GL_1\times
 
 **Proof.** The Jordan type is the partition $[2,1,1,1]$; the centralizer dimension is $\sum_i(\lambda_i')^2$ for the conjugate partition $[4,1]$, which is $16+1=17$; the orbit dimension is $25-17=8$.
 
-**Corollary.** The rank-one projection orbit and the rank-one nilpotent orbit both have dimension $8$, but they are different orbits: one is semisimple (eigenvalues $1,0,0,0,0$), the other nilpotent (all eigenvalues $0$). Their closures meet at the zero matrix.
+**Corollary.** The rank-one projection orbit and the rank-one nilpotent orbit both have dimension $8$, but they are different orbits: one is semisimple (eigenvalues $1,0,0,0,0$), the other nilpotent (all eigenvalues $0$). The nilpotent orbit closure contains the zero matrix; the projection orbit closure does not, because its trace is $1$. The two orbits are disjoint.
 
-**Proof.** The projection is semisimple with eigenvalues $1,0,0,0,0$; the nilpotent has all eigenvalues zero. The closures both contain the zero matrix; the orbits are disjoint.
+**Proof.** The projection is semisimple with eigenvalues $1,0,0,0,0$ and trace $1$; the nilpotent has all eigenvalues zero and trace $0$. The zero matrix is in the closure of the nilpotent orbit but not in the closure of the projection orbit; the eigenvalue types are different, so the orbits are disjoint.
 
 ### Dimension 8
 
@@ -223,7 +223,7 @@ $$
 
 ### The Semisimple Orbits
 
-**Theorem.** The semisimple orbits are classified by the eigenvalue multiplicities $(m_1,\dots,m_r)$, a partition of $5$. The orbit of the partition has dimension $25-\sum_im_i^2$. The list is
+**Theorem.** The semisimple orbits are classified by the distinct eigenvalues together with their multiplicities $(m_1,\dots,m_r)$, a partition of $5$. For a fixed set of distinct eigenvalues, the orbit is determined by the partition, and its dimension is $25-\sum_im_i^2$. The list is
 
 | Partition | Dimension |
 |---|---|

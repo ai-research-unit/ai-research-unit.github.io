@@ -36,7 +36,7 @@ The findings are the following, and they are separated at the outset in the corp
 
 ## The Invariant Potential and Its Symmetry
 
-The scalar sector of the framework is a single complex central field, and its symmetry is the unitary part of the centre. The general renormalizable potential that is invariant under the central phase $\varphi\mapsto \exp(i\alpha)\varphi$ and real as a density is an arbitrary function of the invariant $\rho = \varphi^*\varphi = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$,
+The scalar sector of the framework is a single complex central field, and its symmetry is the $*$-unitary part of the centre. The general renormalizable potential that is invariant under the central phase $\varphi\mapsto \exp(i\alpha)\varphi$ and real as a density is an arbitrary function of the invariant $\rho = \varphi^*\varphi = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$,
 
 $$
 V(\tilde{\Phi}) = V(\rho), \qquad \rho = \mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right) = |\varphi|^2 ,

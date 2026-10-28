@@ -138,7 +138,7 @@ $$
 \boxed{\;\Phi^{\mathrm{deph}}_1(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,(\vec u\cdot\vec r)\,\vec u\right)\;}.
 $$
 
-Its image is the **diameter** of the Bloch ball along $\vec u$: the set of states with $\vec r \parallel \vec u$. It is non-unitary and it is idempotent, $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$. It is also **measure-and-forget**: measuring the observable $\alpha = i\vec u$ and discarding the outcome leaves precisely
+Its image is the **diameter** of the Bloch ball along $\vec u$: the set of states with $\vec r \parallel \vec u$. It is non-$*$-unitary and it is idempotent, $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$. It is also **measure-and-forget**: measuring the observable $\alpha = i\vec u$ and discarding the outcome leaves precisely
 
 $$
 p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = \Phi^{\mathrm{deph}}_1(\tilde{Ϛ}),
@@ -240,11 +240,11 @@ What the algebra does **not** supply is which $\vec u$ is selected. The directio
 
 ## Relation to the Quantum–Classical Divide
 
-The companion article *The Quantum–Classical Divide in the Biquaternion Framework* expresses the operational criterion of Korolkova, Sánchez-Soto, and Leuchs in the language of this series: quantum non-separability is signalled by **two idempotents** acting on the two partitions (two projective measurements), classical non-separability by **one idempotent and one unitary** (one measurement, one filter). The article closes by asking whether the *number of available idempotents* can itself be a dynamical variable — whether a configuration can lose an idempotent measurement channel through decoherence.
+The companion article *The Quantum–Classical Divide in the Biquaternion Framework* expresses the operational criterion of Korolkova, Sánchez-Soto, and Leuchs in the language of this series: quantum non-separability is signalled by **two idempotents** acting on the two partitions (two projective measurements), classical non-separability by **one idempotent and one $*$-unitary** (one measurement, one filter). The article closes by asking whether the *number of available idempotents* can itself be a dynamical variable — whether a configuration can lose an idempotent measurement channel through decoherence.
 
 The dephasing channel answers that question in a precise and limited way. Two observations.
 
-First, full dephasing *is* the operation the classical side of the criterion uses. At $p=1$, $\Phi^{\mathrm{deph}}_1$ is a non-selective idempotent operation on the partition: it is a projective measurement followed by discarding the outcome. An idempotent acting on one partition, with a unitary filter on the other, is exactly the classical pattern $\tilde Q_A \otimes \tilde\Pi_B$ of the divide article. So the fully decohered partition has, operationally, the classical profile: its only idempotent measurements are the commuting pointer ones, and its remaining structure is a classical probability distribution over them.
+First, full dephasing *is* the operation the classical side of the criterion uses. At $p=1$, $\Phi^{\mathrm{deph}}_1$ is a non-selective idempotent operation on the partition: it is a projective measurement followed by discarding the outcome. An idempotent acting on one partition, with a $*$-unitary filter on the other, is exactly the classical pattern $\tilde Q_A \otimes \tilde\Pi_B$ of the divide article. So the fully decohered partition has, operationally, the classical profile: its only idempotent measurements are the commuting pointer ones, and its remaining structure is a classical probability distribution over them.
 
 Second, partial dephasing explains how a partition gets there. For $0<p<1$, the coherence that the quantum case requires — the transverse Bloch components, which make two non-commuting measurements jointly informative — is damped but not erased. The map is a contraction toward the pointer diameter, and for every $0<p\le1$ the only pure states in its image are the two pointer idempotents; in the coarse-grained description, therefore, the idempotents surviving on a decohered partition are $\tilde\Pi_{1,2}(\vec u)$, which commute and span only a commutative subalgebra, so no two *incompatible* idempotents remain and the partition's state space has become a classical simplex. In this operational sense the count of usable idempotents is indeed dynamical, as the divide article conjectured.
 

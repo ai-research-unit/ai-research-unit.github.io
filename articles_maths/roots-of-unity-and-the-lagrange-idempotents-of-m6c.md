@@ -215,7 +215,7 @@ P_2=\frac16
 \end{pmatrix}.
 $$
 
-Each row is the previous row multiplied by $\zeta$; the matrix is circulant, its columns sum to $0$ because $k\neq1$, and $P_2^2=P_2$ is the identity $\frac1{36}\sum_{r,s}\zeta^{-r-s}\rho^{r+s}=\frac16\sum_t6\delta_{t,0}\zeta^{-t}\rho^t=P_2$. The projector $P_1$ of the eigenvalue $1$ is the all-ones matrix $\frac16J$.
+Each row is the previous row multiplied by $\zeta$; the matrix is circulant, its columns sum to $0$ because $k\neq1$, and $P_2^2=P_2$ is the identity $\frac1{36}\sum_{r,s}\zeta^{-r-s}\rho^{r+s}=\frac16\sum_t\zeta^{-t}\rho^t=P_2$. The projector $P_1$ of the eigenvalue $1$ is the all-ones matrix $\frac16J$.
 
 **Remark.** The two examples are conjugate: $\rho$ is the regular representation of $\mathbb{Z}/6$ and $H$ is its decomposition into characters. Every root is conjugate to the diagonal one, by §*The Root Set*, so the two examples exhaust the isomorphism types of the pair $(H,\{P_k\})$.
 
@@ -375,11 +375,11 @@ $$
 
 **Proof.** Given a full flag, choosing a line $V_k$ in each successive quotient splits the flag; the choices are independent, of dimensions $5,4,3,2,1,0$, whose sum is $15$. The root is recovered from the splitting and the assignment of $\zeta_k$ to $V_k$.
 
-**Proposition (the $6!$ of the labelling).** The six eigenvalues are exactly the six roots, so a root is an ordered decomposition into six lines. The symmetric group $S_6$, of order $6!=720$, acts freely by permuting the lines and hence the roots; the quotient is the space of unordered decompositions. Over that quotient the root set is a cover of degree $6!$.
+**Proposition (the $6!$ of the labelling).** A root is an ordered decomposition into six lines, the $k$-th line carrying the eigenvalue $\zeta_k$. The symmetric group $S_6$, of order $6!=720$, acts freely by permuting the positions and hence the roots; the quotient is the space of unordered decompositions. Over that quotient the root set is a cover of degree $6!$.
 
-**Proof.** The eigenvalue attached to a line is determined by the line, so a permutation of the lines permutes the eigenvalues and produces another root. The action is free because the six lines are distinct. The fibre of the quotient map is the set of bijections between the six abstract roots and the six lines, of cardinality $6!$.
+**Proof.** Write the root as $(L_1,\dots,L_6)$ with $H|_{L_k}=\zeta_kI$. Permuting the positions gives $(L_{\sigma(1)},\dots,L_{\sigma(6)})$, the root $\sum_k\zeta_kP_{L_{\sigma(k)}}$, which differs from $H$ for $\sigma\neq\mathrm{id}$ because the six lines are distinct. The action is free. The fibre over the unordered set $\{L_1,\dots,L_6\}$ is the set of bijections from the six positions to the six lines, of cardinality $6!$.
 
-**Remark.** The two numbers $30$ and $15$ are not in conflict. The root set has dimension $30$; the flag variety has dimension $15$; the fibre of the forgetful map is the $15$-dimensional space of splittings. The $6!$ is a discrete relabelling, not a continuous parameter. This is the precise form of the statement that the root set is a $6!$-fold cover of the unordered decomposition space over the flag variety.
+**Remark.** The two numbers $30$ and $15$ are not in conflict. The root set has dimension $30$; the flag variety has dimension $15$; the fibre of the forgetful map is the $15$-dimensional space of splittings. The $6!$ is a discrete relabelling, not a continuous parameter: the root set is a $6!$-fold cover of the space of unordered decompositions. The map to the flag variety is defined on the root, where the eigenvalues order the lines; it does not descend to the unordered space.
 
 ### The Root and the Gauge
 

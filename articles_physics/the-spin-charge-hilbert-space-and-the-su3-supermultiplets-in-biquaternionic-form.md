@@ -4,7 +4,7 @@
 
 The framework carries the Lorentz group and its spinor module, and its gauge-principle article reaches the compact group $\mathrm{SU}(2)$ inside the material sector. It does not carry $\mathrm{SU}(3)$: the companion *The Gauge Group Ceiling* shows that the algebra's own compact structure stops at $\mathrm{SU}(2)$, and *The Gluon: An Octet Outside the Biquaternion Algebra* states the cost of embedding beyond it. Yet the Standard Model's particle content is organised by $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$ multiplets, and the spinor-structure programme supplies a way to write that content as vectors of a single Hilbert space built from **spin multiplets** and **charge multiplets**. It is worth recording because it is the bridge the programme builds between the spinor structure and the particle classification, and because it makes explicit which parts of the classification the framework can host and which it can only transcribe.
 
-The construction is the following. Wigner's definition makes an elementary particle an irreducible unitary representation of the Poincaré group, acting in an abstract Hilbert space $\mathcal{H}_\infty$. Pauli's doubling of the wave function — the physics of spin — replaces $\mathcal{H}_\infty$ by $\mathcal{H}_S^{2s+1}\otimes\mathcal{H}_\infty$, the tensor product of a finite-dimensional **spin space** with the infinite-dimensional one. Heisenberg's proton–neutron doubling, and Kemmer's three-charge generalisation, replace it by $\mathcal{H}_Q\otimes\mathcal{H}_\infty$ with a finite-dimensional **charge space**. The two doublings combine into
+The construction is the following. Wigner's definition makes an elementary particle an irreducible $*$-unitary representation of the Poincaré group, acting in an abstract Hilbert space $\mathcal{H}_\infty$. Pauli's doubling of the wave function — the physics of spin — replaces $\mathcal{H}_\infty$ by $\mathcal{H}_S^{2s+1}\otimes\mathcal{H}_\infty$, the tensor product of a finite-dimensional **spin space** with the infinite-dimensional one. Heisenberg's proton–neutron doubling, and Kemmer's three-charge generalisation, replace it by $\mathcal{H}_Q\otimes\mathcal{H}_\infty$ with a finite-dimensional **charge space**. The two doublings combine into
 
 $$
 \mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty,
@@ -116,7 +116,7 @@ Not every superposition of vectors of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\
 
 ### Wigner's Theorem
 
-A second structural point concerns the representation of the symmetry group. A physical state is a **ray** — a unit vector up to phase — and a symmetry maps rays to rays preserving transition probabilities. By Wigner's theorem the map is **unitary or antiunitary**, and the two possibilities are available exactly when the space is defined over $\mathbb{C}$, since the complex field has exactly two absolute-value-preserving automorphisms, the identity and complex conjugation; over $\mathbb{R}$ only unitary maps occur. This is the same dichotomy as the anti-unitary $T$ of the CPT article, and it is the field-theoretic origin of the corpus's observation that the algebra's complex conjugation supplies the anti-linear part of the discrete operations.
+A second structural point concerns the representation of the symmetry group. A physical state is a **ray** — a unit vector up to phase — and a symmetry maps rays to rays preserving transition probabilities. By Wigner's theorem the map is **$*$-unitary or antiunitary**, and the two possibilities are available exactly when the space is defined over $\mathbb{C}$, since the complex field has exactly two absolute-value-preserving automorphisms, the identity and complex conjugation; over $\mathbb{R}$ only $*$-unitary maps occur. This is the same dichotomy as the anti-unitary $T$ of the CPT article, and it is the field-theoretic origin of the corpus's observation that the algebra's complex conjugation supplies the anti-linear part of the discrete operations.
 
 ### The Ray Representation
 
@@ -126,7 +126,7 @@ $$
 \boxed{\;T_{gh} = \omega(g,h)\,T_g\,T_h, \qquad \omega(g,h)\in \mathrm{U}(1)\;},
 $$
 
-and when $\omega\ne1$ the ordinary theory of group representations does not apply. The remedy is the **central extension**: the group $G$ is enlarged to $E$ whose ordinary representations reproduce all the ray representations of $G$, and a symmetry group of the physical system is represented by the unitary or antiunitary maps of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ that lift the ray representation. The internal symmetry groups $\mathrm{SU}(2),\mathrm{SU}(3),\dots$ act in this way, and the supermultiplet structure of the eightfold way is the orbit structure of their action.
+and when $\omega\ne1$ the ordinary theory of group representations does not apply. The remedy is the **central extension**: the group $G$ is enlarged to $E$ whose ordinary representations reproduce all the ray representations of $G$, and a symmetry group of the physical system is represented by the $*$-unitary or antiunitary maps of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ that lift the ray representation. The internal symmetry groups $\mathrm{SU}(2),\mathrm{SU}(3),\dots$ act in this way, and the supermultiplet structure of the eightfold way is the orbit structure of their action.
 
 ## The Biquaternion Reading
 
@@ -142,7 +142,7 @@ The infinite-dimensional factor $\mathcal{H}_\infty$ is the third point. It is w
 
 - The spin multiplet is $\mathcal{H}_S^{2s+1}\otimes\mathcal{H}_\infty$ and the charge multiplet is $\mathcal{H}_Q^m\otimes\mathcal{H}_\infty$; the spin triplet's fundamental members are $\tau^{1,0}$, $\tau^{1/2,1/2}$ and $\tau^{0,1}$, with spins $+1,0,-1$, and the spin doublet's is $\tau^{1/2,0}\oplus\tau^{0,1/2}$, with spins $\pm\frac12$. These are the tensor-product decompositions and are checkable in the corpus's representation ring.
 - The degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals $(2l+1)(2\bar l+1)$ for $\tau^{l\bar l}$ with $k=2l$, $r=2\bar l$, so the vector label's two entries carry the same number.
-- A symmetry of rays is unitary or antiunitary, and the two possibilities exist exactly over $\mathbb{C}$; this is Wigner's theorem and the field-automorphism argument, both standard.
+- A symmetry of rays is $*$-unitary or antiunitary, and the two possibilities exist exactly over $\mathbb{C}$; this is Wigner's theorem and the field-automorphism argument, both standard.
 
 **Transcribed, not derived.**
 
@@ -168,7 +168,7 @@ The infinite-dimensional factor $\mathcal{H}_\infty$ is the third point. It is w
 
 ## Summary
 
-The spinor-structure programme assembles the particle content of the Standard Model into a single Hilbert space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$: the spin factor from Pauli's doubling of the wave function, the charge factor from Heisenberg's and Kemmer's doublings for the nucleon and the three-charge particle, and the infinite-dimensional factor from Wigner's definition of an elementary particle. A state vector is a list of a Lorentz representation $\tau^{l\bar l}$ (fixing the spin), its symmetric representation space, its Clifford algebra and spin space, and the discrete-operation group; the charge takes the three values $\pm1,0,\bar0$ that the companion division-ring article separates. Superpositions are restricted by superselection rules into coherent subspaces labelled by spin and charge, and the internal symmetry groups act through a central extension of their ray representations, over $\mathbb{C}$ admitting both unitary and antiunitary maps.
+The spinor-structure programme assembles the particle content of the Standard Model into a single Hilbert space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$: the spin factor from Pauli's doubling of the wave function, the charge factor from Heisenberg's and Kemmer's doublings for the nucleon and the three-charge particle, and the infinite-dimensional factor from Wigner's definition of an elementary particle. A state vector is a list of a Lorentz representation $\tau^{l\bar l}$ (fixing the spin), its symmetric representation space, its Clifford algebra and spin space, and the discrete-operation group; the charge takes the three values $\pm1,0,\bar0$ that the companion division-ring article separates. Superpositions are restricted by superselection rules into coherent subspaces labelled by spin and charge, and the internal symmetry groups act through a central extension of their ray representations, over $\mathbb{C}$ admitting both $*$-unitary and antiunitary maps.
 
 The framework's relation to this is a relation of one factor. The spin factor is its own spinor structure, with the companion mass formula fixing degrees on the spin lines. The charge factor lies beyond the gauge-group ceiling, so the $\mathrm{SU}(3)$ structure is transcribed, not contained. The infinite-dimensional factor has no constructed counterpart in the corpus's field description. Recorded as a scheme, the spin–charge space is a clean bridge between the spinor structure and the particle classification, and a clear statement of exactly where the framework stops.
 
@@ -189,7 +189,7 @@ The framework's relation to this is a relation of one factor. The spin factor is
 
 ## Further Reading
 
-- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the definition of an elementary particle and the unitary/antiunitary dichotomy.
+- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the definition of an elementary particle and the $*$-unitary/antiunitary dichotomy.
 - J. von Neumann, *Mathematical Foundations of Quantum Mechanics* (Springer, 1932), for the abstract Hilbert space and the convergence conditions.
 - W. Pauli, "Zur Quantenmechanik des magnetischen Elektrons," *Zeitschrift für Physik* **43** (1927) 601–623, for the spin doubling of the wave function.
 - W. Heisenberg, "Über den Bau der Atomkerne I," *Zeitschrift für Physik* **77** (1932) 1–11, for the proton–neutron charge doublet.

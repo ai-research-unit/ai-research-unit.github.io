@@ -102,7 +102,7 @@ $$
 =\tfrac12 I_2\;}.
 $$
 
-The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the extra factor is the central phase. In module coordinates the same form is the spinor inner product $h(\psi,\phi)=\tfrac12\psi^{\dagger}\phi$, with the basis spinors of norm $1/\sqrt2$. The **Born pairing** is the trace formula
+The carrier is therefore a two-dimensional Hilbert space with the standard metric, and the two basis spinors are orthogonal and of equal norm. The form is invariant under the $*$-unitary slice $\mathrm{U}(2)=\{\tilde U:\tilde U\tilde U^{*}=e_t\}$; inside $SL(2,\mathbb{C})$ the invariance is the compact subgroup $SU(2)$, and a generic phase $e^{i\theta}e_t$ is an isometry of the Hilbert structure that lies outside $SL(2,\mathbb{C})$. The Hilbert form is therefore invariant under a group that is not the Lorentz group, and the extra factor is the central phase. In module coordinates the same form is the spinor inner product $h(\psi,\phi)=\tfrac12\psi^{\dagger}\phi$, with the basis spinors of norm $1/\sqrt2$. The **Born pairing** is the trace formula
 
 $$
 \operatorname{Tr}(\tilde\Pi\tilde H^{*})=2\operatorname{Sc}(\tilde\Pi\tilde H),

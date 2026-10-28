@@ -208,7 +208,7 @@ $$
 \det\iota(\tilde q)=q_t^2+q_x^2+q_y^2+q_z^2=\langle\tilde q\rangle_{\natural},
 $$
 
-and the image of the unit sphere is the special unitary group,
+and the image of the unit sphere is the special $*$-unitary group,
 
 $$
 \iota\bigl(\mathrm{Sp}(1)\bigr)=SU(2).
@@ -238,7 +238,7 @@ $$
 B^{\dagger}B = \iota(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}I = r^2 I .
 $$
 
-The matrix $B$ is therefore conformal: its columns are orthogonal and of equal length $r$. The general polar decomposition of an invertible matrix is $B=PU$, with $P=(BB^{\dagger})^{1/2}$ positive definite Hermitian and $U$ unitary. Here $P=rI$ and $U=M_{\tilde u}\in SU(2)$, so the positive factor is a scalar and the unitary factor is special. The scalar factor is forced because the only positive definite Hermitian matrices in the image of $\mathbb{H}$ are the positive real multiples of the identity.
+The matrix $B$ is therefore conformal: its columns are orthogonal and of equal length $r$. The general polar decomposition of an invertible matrix is $B=PU$, with $P=(BB^{\dagger})^{1/2}$ positive definite Hermitian and $U$ $*$-unitary. Here $P=rI$ and $U=M_{\tilde u}\in SU(2)$, so the positive factor is a scalar and the $*$-unitary factor is special. The scalar factor is forced because the only positive definite Hermitian matrices in the image of $\mathbb{H}$ are the positive real multiples of the identity.
 
 | factor | matrix | determinant | action |
 |---|---|---|---|
@@ -246,7 +246,7 @@ The matrix $B$ is therefore conformal: its columns are orthogonal and of equal l
 | unit factor | $M_{\tilde u}\in SU(2)$ | $1$ | rotation of the sphere |
 | $\tilde q$ | $M_{\tilde q}$ | $r^2$ | conformal map |
 
-In the split cases the matrix of a unit is not orthogonal: the form it preserves is indefinite, so the matrix is symmetric or hyperbolic rather than unitary. The contrast is a property of the norm and not of the matrix representation.
+In the split cases the matrix of a unit is not orthogonal: the form it preserves is indefinite, so the matrix is symmetric or hyperbolic rather than $*$-unitary. The contrast is a property of the norm and not of the matrix representation.
 
 ## Worked Examples
 
@@ -309,7 +309,7 @@ Every nonzero quaternion has exactly one modulus–unit polar decomposition $\ti
 
 The group of units splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$, the sphere being the maximal compact subgroup and a deformation retract of the whole group. The scalar line is Hermitian and carries the modulus; the pure subspace is anti-Hermitian and is the axis of the rotor. The sphere is simple modulo its centre $\{\pm1\}$, with quotient $SO(3)$, so there is no second continuous factor. The norm is definite, so there is no boundary: the origin is the only excluded element.
 
-In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}=rM_{\tilde u}$ of the conformal matrix, with positive factor $rI$ and special unitary factor $M_{\tilde u}\in SU(2)$.
+In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}=rM_{\tilde u}$ of the conformal matrix, with positive factor $rI$ and special $*$-unitary factor $M_{\tilde u}\in SU(2)$.
 
 ## Summary of Notation
 
@@ -333,7 +333,7 @@ In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 1985), for the polar decomposition of an invertible matrix and the special unitary group.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 1985), for the polar decomposition of an invertible matrix and the special $*$-unitary group.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd edition 2001), for the quaternion algebra, the unit sphere and the exponential.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for $SU(2)$, the unit quaternions and the covering of the rotation group.
 - Michael Artin, *Algebra* (Prentice Hall, 2nd edition 2011), for the group of units, direct products and the maximal compact subgroup.

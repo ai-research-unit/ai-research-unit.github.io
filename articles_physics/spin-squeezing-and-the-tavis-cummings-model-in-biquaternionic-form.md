@@ -236,7 +236,7 @@ The interaction term $g(a^\dagger\tilde{J}_- + a\tilde{J}_+)$ is an $\mathbb{M}_
 
 2. **The exact Tavis–Cummings dynamics at finite $N$.** The model is integrable in each excitation sector; the finite-$N$ dynamics of the collective spin, including the revivals and the collapse, is standard. Does the algebraic formulation streamline the finite-$N$ treatment?
 
-3. **Dissipation and superradiance.** The cooperative decay that gives superradiance requires an open system; the framework is unitary, and the open-system extension is the same gap noted for the Rabi problem.
+3. **Dissipation and superradiance.** The cooperative decay that gives superradiance requires an open system; the framework is $*$-unitary, and the open-system extension is the same gap noted for the Rabi problem.
 
 4. **The best squeezing.** Two-axis countertwisting reaches the Heisenberg scaling only in the ideal case; the optimal control problem for squeezing is a question about the reachable set of the collective algebra, and it is not addressed here.
 

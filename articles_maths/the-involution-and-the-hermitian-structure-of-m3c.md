@@ -6,7 +6,7 @@ The conjugate transpose
 $$
 A^{*}=\bar A^{\mathsf T},\qquad (A^{*})_{ij}=\overline{a_{ji}},
 $$
-is a real-linear involution of $M_{3}(\mathbb{C})$. It is not complex-linear: $(iA)^{*}=-iA^{*}$. Its fixed points are the Hermitian matrices, its anti-fixed points are the skew-Hermitian matrices, and the elements that preserve the Hermitian form are the unitary matrices. The involution gives the algebra a **Hermitian structure**, and the trace form
+is a real-linear involution of $M_{3}(\mathbb{C})$. It is not complex-linear: $(iA)^{*}=-iA^{*}$. Its fixed points are the Hermitian matrices, its anti-fixed points are the skew-Hermitian matrices, and the elements that preserve the Hermitian form are the $*$-unitary matrices. The involution gives the algebra a **Hermitian structure**, and the trace form
 $$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B)
 $$
@@ -14,7 +14,7 @@ is a positive definite Hermitian inner product. This is the form that is used th
 
 The article defines the involution and its three distinguished sets, proves the decomposition into Hermitian and skew-Hermitian parts, establishes the positive definiteness of the trace form and the Frobenius norm, identifies the real forms $\mathfrak{u}(3)$ and $\mathfrak{su}(3)$, and compares the definite form with the null cone of the biquaternion algebra. The comparison is the reason for the article: the biquaternion algebra has a quadratic form with nonzero isotropic vectors, while $M_{3}(\mathbb{C})$ with the Hermitian trace form has none. The singular set $\det A=0$ is not a null cone; it is a complex hypersurface of real codimension two, treated in *The Forms, the Norms and the Singular Set*.
 
-The construction is root-first. The matrix units $E_{ij}$ are those of *The Matrix Algebra $M_{3}(\mathbb{C})$*; the involution acts on them by $E_{ij}^{*}=E_{ji}$, and the standard root $H_{0}=\operatorname{diag}(1,\omega,\omega^{2})$ is unitary, because its eigenvalues have modulus one. The Hermitian structure is compatible with the frame but does not depend on it.
+The construction is root-first. The matrix units $E_{ij}$ are those of *The Matrix Algebra $M_{3}(\mathbb{C})$*; the involution acts on them by $E_{ij}^{*}=E_{ji}$, and the standard root $H_{0}=\operatorname{diag}(1,\omega,\omega^{2})$ is $*$-unitary, because its eigenvalues have modulus one. The Hermitian structure is compatible with the frame but does not depend on it.
 
 ## The Involution
 
@@ -32,7 +32,7 @@ It is conjugate-linear, not complex-linear, and it is an anti-automorphism of th
 
 - $A$ is **Hermitian** when $A^{*}=A$, equivalently $a_{ij}=\bar a_{ji}$.
 - $A$ is **skew-Hermitian** when $A^{*}=-A$, equivalently $a_{ij}=-\bar a_{ji}$.
-- $A$ is **unitary** when $A^{*}A=AA^{*}=I$.
+- $A$ is **$*$-unitary** when $A^{*}A=AA^{*}=I$.
 
 The diagonal entries of a Hermitian matrix are real; the diagonal entries of a skew-Hermitian matrix are purely imaginary. The identity $I$ is Hermitian, and $iI$ is skew-Hermitian.
 
@@ -58,15 +58,15 @@ $$
 $$
 Both are closed under the commutator: if $A^{*}=-A$ and $B^{*}=-B$, then $[A,B]^{*}=[B^{*},A^{*}]=[-B,-A]=-[A,B]$. The complexifications are $\mathfrak{u}(3)_{\mathbb{C}}=\mathfrak{gl}_{3}(\mathbb{C})$ and $\mathfrak{su}(3)_{\mathbb{C}}=\mathfrak{sl}_{3}(\mathbb{C})$.
 
-**The unitary group.** The unitary matrices form the group
+**The $*$-unitary group.** The $*$-unitary matrices form the group
 $$
 U(3)=\{U:U^{*}U=I\},\qquad \dim_{\mathbb{R}}U(3)=9,
 $$
-and the special unitary matrices form
+and the special $*$-unitary matrices form
 $$
 SU(3)=\{U\in U(3):\det U=1\},\qquad \dim_{\mathbb{R}}SU(3)=8.
 $$
-The Lie algebra of $U(3)$ is $\mathfrak{u}(3)$ and the Lie algebra of $SU(3)$ is $\mathfrak{su}(3)$. The determinant of a unitary matrix has modulus one, because $|\det U|^{2}=\det(U^{*}U)=1$; the condition $\det U=1$ removes one real dimension, hence $9-1=8$.
+The Lie algebra of $U(3)$ is $\mathfrak{u}(3)$ and the Lie algebra of $SU(3)$ is $\mathfrak{su}(3)$. The determinant of a $*$-unitary matrix has modulus one, because $|\det U|^{2}=\det(U^{*}U)=1$; the condition $\det U=1$ removes one real dimension, hence $9-1=8$.
 
 **The Cartan involution.** The map
 $$
@@ -131,14 +131,14 @@ with equality exactly when $A$ and $B$ are linearly dependent. The inequality is
 $$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B)=\overline{\operatorname{tr}(A^{\mathsf T}\bar B)},
 $$
-and the two agree on real matrices, where $A^{*}=A^{\mathsf T}$. On complex matrices they differ: $\operatorname{tr}(AB)$ is complex bilinear and indefinite, $\operatorname{tr}(A^{*}B)$ is Hermitian and definite. The first is the trace pairing of *The Element, the Coordinates and the Trace*; the second is the form of this article.
+and the two agree on real symmetric matrices, where $A^{*}=A^{\mathsf T}=A$; on general complex matrices they differ: $\operatorname{tr}(AB)$ is complex bilinear and indefinite, $\operatorname{tr}(A^{*}B)$ is Hermitian and definite. The first is the trace pairing of *The Element, the Coordinates and the Trace*; the second is the form of this article.
 
 ## The Hermitian Spectral Theorem
 
 **Theorem.** Let $H$ be Hermitian. Then:
 
 1. The eigenvalues of $H$ are real.
-2. There is a unitary $U$ and a real diagonal matrix $\Lambda$ with $H=U\Lambda U^{*}$.
+2. There is a $*$-unitary $U$ and a real diagonal matrix $\Lambda$ with $H=U\Lambda U^{*}$.
 3. The spectral projectors are Hermitian and orthogonal, and $H=\sum_{k}\lambda_{k}P_{k}$ with $P_{k}^{*}=P_{k}$, $P_{k}P_{l}=\delta_{kl}P_{k}$, $\sum_{k}P_{k}=I$.
 4. $H$ is positive definite exactly when all its eigenvalues are positive.
 
@@ -146,7 +146,7 @@ and the two agree on real matrices, where $A^{*}=A^{\mathsf T}$. On complex matr
 $$
 \lambda\langle v,v\rangle=\langle v,Hv\rangle=\langle Hv,v\rangle=\bar\lambda\langle v,v\rangle,
 $$
-so $\lambda=\bar\lambda$ and $\lambda$ is real. The spectral theorem for a Hermitian matrix gives an orthonormal basis of eigenvectors, hence $H=U\Lambda U^{*}$ with $U$ unitary and $\Lambda$ real diagonal. The projectors onto the eigenspaces are Hermitian because the eigenspaces are orthogonal, and the spectral identity is the expansion in that basis. The positive definiteness is the positivity of $\langle v,Hv\rangle=\sum_{k}\lambda_{k}|\langle v,u_{k}\rangle|^{2}$ for every nonzero $v$, which holds exactly when every $\lambda_{k}>0$.
+so $\lambda=\bar\lambda$ and $\lambda$ is real. The spectral theorem for a Hermitian matrix gives an orthonormal basis of eigenvectors, hence $H=U\Lambda U^{*}$ with $U$ $*$-unitary and $\Lambda$ real diagonal. The projectors onto the eigenspaces are Hermitian because the eigenspaces are orthogonal, and the spectral identity is the expansion in that basis. The positive definiteness is the positivity of $\langle v,Hv\rangle=\sum_{k}\lambda_{k}|\langle v,u_{k}\rangle|^{2}$ for every nonzero $v$, which holds exactly when every $\lambda_{k}>0$.
 
 **The positive definite cone.** The set of positive definite Hermitian matrices is open in $\operatorname{Herm}_{3}$ and is a single orbit of $GL_{3}(\mathbb{C})$ under $H\mapsto gHg^{*}$; it is the symmetric space $GL_{3}(\mathbb{C})/U(3)$. Its boundary is the set of positive semidefinite matrices with a zero eigenvalue, contained in $\det H=0$. The determinant is real on Hermitian matrices, and positive on the positive definite cone.
 
@@ -166,7 +166,7 @@ and the Hermitian form of $H$ with itself is $16$. The matrix
 $$
 K=iH=\begin{pmatrix}i&-1&0\\1&2i&0\\0&0&3i\end{pmatrix}
 $$
-is skew-Hermitian, $K^{*}=-K$; its eigenvalues are $i$ times the eigenvalues of $H$, purely imaginary. The matrix $U=\exp(iH)$ is unitary, because $(e^{iH})^{*}=e^{-iH}=(e^{iH})^{-1}$.
+is skew-Hermitian, $K^{*}=-K$; its eigenvalues are $i$ times the eigenvalues of $H$, purely imaginary. The matrix $U=\exp(iH)$ is $*$-unitary, because $(e^{iH})^{*}=e^{-iH}=(e^{iH})^{-1}$.
 
 ## The Real Forms and the Comparison with the Biquaternion Cone
 
@@ -179,7 +179,7 @@ is skew-Hermitian, $K^{*}=-K$; its eigenvalues are $i$ times the eigenvalues of 
 | $\mathfrak{su}(3)$ | traceless skew-Hermitian | $8$ |
 | $\operatorname{Herm}_{3}$ | Hermitian | $9$ |
 
-The first is a real algebra; the second and third are real Lie algebras; the fourth is a real vector space, not closed under multiplication. The unitary group $U(3)$ is the compact real form of $GL_{3}(\mathbb{C})$, and $SU(3)$ is the compact real form of $SL_{3}(\mathbb{C})$.
+The first is a real algebra; the second and third are real Lie algebras; the fourth is a real vector space, not closed under multiplication. The $*$-unitary group $U(3)$ is the compact real form of $GL_{3}(\mathbb{C})$, and $SU(3)$ is the compact real form of $SL_{3}(\mathbb{C})$.
 
 **The biquaternion comparison.** The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a quadratic form with nonzero isotropic vectors. For example, in the basis $e_{t},e_{x},e_{y},e_{z}$,
 $$
@@ -212,7 +212,7 @@ $$
 \mathfrak{u}(3)=\operatorname{Skew}_{3}\quad(\dim 9),\qquad
 \mathfrak{su}(3)=\{A\in\mathfrak{u}(3):\operatorname{tr}A=0\}\quad(\dim 8).
 $$
-The unitary group has $\dim U(3)=9$ and $\dim SU(3)=8$.
+The $*$-unitary group has $\dim U(3)=9$ and $\dim SU(3)=8$.
 
 The Hermitian trace form is
 $$
@@ -221,7 +221,7 @@ $$
 $$
 It is positive definite, with Frobenius norm $\|A\|_{\mathrm{F}}=\sqrt{\operatorname{tr}(A^{*}A)}$, and its only isotropic vector is $0$. There is no null cone.
 
-The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diagonal and $U$ unitary; the eigenvalues of a Hermitian matrix are real, and the positive definite cone is the set of Hermitian matrices with positive eigenvalues.
+The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diagonal and $U$ $*$-unitary; the eigenvalues of a Hermitian matrix are real, and the positive definite cone is the set of Hermitian matrices with positive eigenvalues.
 
 | Quantity | Value for $M_{3}(\mathbb{C})$ |
 |---|---|
@@ -245,7 +245,7 @@ The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diag
 | $\operatorname{Skew}_{3}$ | the skew-Hermitian matrices, real dimension $9$ |
 | $\mathfrak{u}(3)$ | the skew-Hermitian Lie algebra |
 | $\mathfrak{su}(3)$ | the traceless skew-Hermitian Lie algebra |
-| $U(3),SU(3)$ | the unitary and special unitary groups |
+| $U(3),SU(3)$ | the $*$-unitary and special $*$-unitary groups |
 | $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ | the positive definite Hermitian trace form |
 | $\|A\|_{\mathrm{F}}$ | the Frobenius norm |
 | $\theta(A)=-A^{*}$ | the Cartan involution |
@@ -259,4 +259,4 @@ The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diag
 - [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m3c.html), for $U(3)$ and $SU(3)$.
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the null cone of the biquaternion form.
 - [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the comparison with the biquaternion zero divisors.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure.html), for the general theory of the star.
+- [Hermitian Adjoints on a Hermitian Algebra](hermitian-adjoints-on-a-hermitian-algebra.html), for the general theory of the star and the adjoint.

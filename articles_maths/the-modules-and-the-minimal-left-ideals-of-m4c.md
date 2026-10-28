@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The algebra $M_4(\mathbb{C})$ has a unique simple left module $S=\mathbb{C}^4$, the minimal left ideals are the four columns $M_4P_k\cong S$, and the algebra is the bimodule $S\otimes S^*$.** The left regular module is $S^{\oplus4}$, the right regular module is $(S^*)^{\oplus4}$, and the minimal left and right ideals are dual by the trace pairing. The Peirce carrier $C(P)=PMP\oplus PMQ$ of a rank-one idempotent has dimension $1+3=4$, and the spin chain acts on the dual column.
+**The algebra $M_4(\mathbb{C})$ has a unique simple left module $S=\mathbb{C}^4$, the minimal left ideals are the four columns $M_4P_k\cong S$, and the algebra is the bimodule $S\otimes S^*$.** The left regular module is $S^{\oplus4}$, the right regular module is $(S^*)^{\oplus4}$, and the minimal left and right ideals are dual by the trace pairing. The Peirce carrier $C(P)=PMP\oplus PMQ$ of a rank-one idempotent has dimension $1+3=4$; it is the dual row, and the spin chain acts on the column dual to that carrier.
 
 The article describes the regular module, the minimal left and right ideals, the column and the row, the tensor-product decomposition $M_4\cong\mathbb{C}^4\otimes(\mathbb{C}^4)^*$, the non-canonical exchange of the minimal ideals, and the Peirce carrier. The Peirce decomposition is *The Peirce Decomposition*; the spin chain is *The Spin Chain and the Adjoint Decomposition*; the regular model is *The Regular Module*.
 
@@ -324,4 +324,4 @@ $$
 - [The Peirce Decomposition](the-peirce-decomposition-of-m4c.html), for the corners $1+3+3+9$.
 - [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the spin-chain action on the carrier.
 - [The Regular Module](the-regular-module.html), for the biquaternion regular module.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case.

@@ -216,7 +216,7 @@ The first factor is the Born rule for the initial measurement; the second factor
 | | Measuring Spin Along an Arbitrary Direction | Spin Precession in a Magnetic Field | Successive Measurements of Spin |
 |---|---|---|---|
 | Physical process | Single measurement | Time evolution | Successive measurements |
-| Structural object | Idempotent + idempotent | Idempotent + unitary | Sequence of idempotents |
+| Structural object | Idempotent + idempotent | Idempotent + $*$-unitary | Sequence of idempotents |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas |
 | Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t')$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ |
 

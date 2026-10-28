@@ -215,7 +215,7 @@ where the last equality uses the one-mode identity $(-1)^F=i\vec e_z$ of the par
 
 ## The Inner Product, States and the Trace Pairing
 
-The Fock space is a Hilbert space under the Hermitian form induced from $S$: the one-particle form $\langle\xi,\eta\rangle=\xi^{*}\eta$ extends to $\Lambda S$ by the rule that distinct occupation numbers are orthogonal and the norm of a basis vector is one. The extensions of $a^{\mathrm{fop}}$ and $a^{\mathrm{fop}\dagger}$ to $\Lambda S$ are adjoint with respect to this form, which is the sense in which the Fock construction is unitary.
+The Fock space is a Hilbert space under the Hermitian form induced from $S$: the one-particle form $\langle\xi,\eta\rangle=\xi^{*}\eta$ extends to $\Lambda S$ by the rule that distinct occupation numbers are orthogonal and the norm of a basis vector is one. The extensions of $a^{\mathrm{fop}}$ and $a^{\mathrm{fop}\dagger}$ to $\Lambda S$ are adjoint with respect to this form, which is the sense in which the Fock construction is $*$-unitary.
 
 The biquaternion content enters through the description of states. A pure state of the finite Fock space is a ray; its density matrix $\tilde\Pi$ is a Hermitian idempotent of trace one,
 

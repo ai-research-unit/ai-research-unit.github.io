@@ -232,7 +232,7 @@ $$
 \mathcal{F}_2 = \tfrac12\sum_{\mu\nu}\bigl(\tilde UF_{\mu\nu}\tilde U^{-1}\bigr)\bar{e}_\mu e_\nu .
 $$
 
-This is **not** the single algebra conjugation $\tilde Q\mathcal{F}\tilde Q^{-1}$, because $\tilde Q^{-1}$ does not pass through the basis product $\bar{e}_\mu e_\nu$. The two agree only when the group element $\tilde Q$ commutes with the basis product $\bar{e}_\mu e_\nu$, i.e. in the centre case. This was verified: with a generic constant unitary $\tilde Q$, $\mathcal{F}_2 = \tfrac12\sum(\tilde UF_{\mu\nu}\tilde Q^{-1})\bar{e}_\mu e_\nu$ holds to machine precision, while $\mathcal{F}_2 = \tilde Q\mathcal{F}\tilde Q^{-1}$ fails by order unity. The componentwise law is what makes the current transform as $J_{2,\nu} = \tilde UJ_\nu \tilde Q^{-1}$ and what keeps the field equation covariant; the packaged law is simply not available.
+This is **not** the single algebra conjugation $\tilde Q\mathcal{F}\tilde Q^{-1}$, because $\tilde Q^{-1}$ does not pass through the basis product $\bar{e}_\mu e_\nu$. The two agree only when the group element $\tilde Q$ commutes with the basis product $\bar{e}_\mu e_\nu$, i.e. in the centre case. This was verified: with a generic constant $*$-unitary $\tilde Q$, $\mathcal{F}_2 = \tfrac12\sum(\tilde UF_{\mu\nu}\tilde Q^{-1})\bar{e}_\mu e_\nu$ holds to machine precision, while $\mathcal{F}_2 = \tilde Q\mathcal{F}\tilde Q^{-1}$ fails by order unity. The componentwise law is what makes the current transform as $J_{2,\nu} = \tilde UJ_\nu \tilde Q^{-1}$ and what keeps the field equation covariant; the packaged law is simply not available.
 
 Two consequences follow, and both are stated as findings rather than repairs.
 

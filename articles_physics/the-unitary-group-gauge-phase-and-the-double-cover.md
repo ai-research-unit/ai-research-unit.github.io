@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The unitary group of the biquaternion algebra is
+The $*$-unitary group of the biquaternion algebra is
 
 $$
 U(\mathbb{B})=\{\tilde Q\in\mathbb{B}:\tilde Q^{*}\tilde Q=e_t\}\cong U(2),
 $$
 
-not $U(4)$. It is the group of the algebra's unitary elements, and it acts on spinors by left multiplication and on states by conjugation. Its centre is the global phase $U(1)$; its quotient by the centre is $SO(3)$; its norm-one slice is $SU(2)\cong S^3$, the double cover of $SO(3)$.
+not $U(4)$. It is the group of the algebra's $*$-unitary elements, and it acts on spinors by left multiplication and on states by conjugation. Its centre is the global phase $U(1)$; its quotient by the centre is $SO(3)$; its norm-one slice is $SU(2)\cong S^3$, the double cover of $SO(3)$.
 
 The article reads the group physically. It states the group and its topology, reads the left action as the gauge of the spinor and the conjugation as the gauge of the state, the pure-state orbit as the Bloch sphere, the flag variety as the space of measurement bases, the polar decomposition as the amplitude–frame split, and the double cover as the spinor. It closes with the relation to the Krein isometry group and with the limits of the gauge reading.
 
@@ -26,7 +26,7 @@ The three are often conflated because their compact parts all involve $SU(2)$. T
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The unitary group, its normal form and its topology | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
+| The $*$-unitary group, its normal form and its topology | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The polar decomposition and the retractions | [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html) |
 | The three actions and the sandwich | [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html) |
 | The minimal left ideals and the spinor spaces | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
@@ -39,7 +39,7 @@ The three are often conflated because their compact parts all involve $SU(2)$. T
 
 ### The Normal Form
 
-A unitary biquaternion is a scalar multiple of a unit quaternion:
+A $*$-unitary biquaternion is a scalar multiple of a unit quaternion:
 
 $$
 \tilde U=\lambda\,\hat u,
@@ -87,15 +87,15 @@ The group has three layers, and each is a physical statement.
 
 - **The phase.** The centre $U(1)$ is the global phase. It acts trivially on rays and on the algebra's inner automorphisms; it is the redundancy of the description, not a physical degree of freedom.
 - **The rotor.** The $S^3$ factor is the spatial rotation. Its quotient by the centre is $SO(3)$; its double cover is the spinor.
-- **The norm.** The determinant $N$ is the scale. On the unitary group it is a phase; the norm-one slice is the determinant-one subgroup.
+- **The norm.** The determinant $N$ is the scale. On the $*$-unitary group it is a phase; the norm-one slice is the determinant-one subgroup.
 
-The decomposition $U(2)\cong S^1\times S^3$ is therefore the decomposition into the central phase and the rotor. The physical state has a phase and a rotor, not a scale; the scale is the amplitude of the polar decomposition, and it is not unitary.
+The decomposition $U(2)\cong S^1\times S^3$ is therefore the decomposition into the central phase and the rotor. The physical state has a phase and a rotor, not a scale; the scale is the amplitude of the polar decomposition, and it is not $*$-unitary.
 
 ## The Gauge of the State Space
 
 ### The Left Action
 
-The unitary group acts on the algebra by left multiplication:
+The $*$-unitary group acts on the algebra by left multiplication:
 
 $$
 L_{\tilde U}(\tilde X)=\tilde U\tilde X,
@@ -114,7 +114,7 @@ $$
 
 It is an isometry of the Hilbert space. It does not preserve Hermiticity: $(\tilde U\tilde X)^{*}=\tilde X^{*}\tilde U^{*}\neq\tilde U\tilde X$ in general. The left action is therefore the action on the spinor space, not on the state space; the state space carries the conjugation instead.
 
-The reading is the **gauge of the spinor**. A spinor is an element of a Peirce carrier, which is a minimal left ideal in this algebra; a unitary left multiplication is a change of the basis of the spinor. The Hermitian form on the spinor space is invariant, and the global phase is the kernel of the action on rays.
+The reading is the **gauge of the spinor**. A spinor is an element of a Peirce carrier, which is a minimal left ideal in this algebra; a $*$-unitary left multiplication is a change of the basis of the spinor. The Hermitian form on the spinor space is invariant, and the global phase is the kernel of the action on rays.
 
 The state space is not the spinor space. A state is a positive trace-one element, and it transforms by conjugation:
 
@@ -138,9 +138,9 @@ $$
 U(\mathbb{B})/T^2\cong S^2 .
 $$
 
-The pure states are the Hermitian idempotents; the unitary group acts transitively on them, and the stabiliser of one is $T^2$. The orbit is the Bloch sphere.
+The pure states are the Hermitian idempotents; the $*$-unitary group acts transitively on them, and the stabiliser of one is $T^2$. The orbit is the Bloch sphere.
 
-The reading is the **state space**. The unitary group is the group of reversible changes of basis; the quotient by the phase is the effective rotation group $SO(3)$, which acts on the rays; the pure states are the orbit $U(2)/T^2\cong S^2$. The mixed states are the interior of the Bloch ball, and the unitary group acts on them by conjugation.
+The reading is the **state space**. The $*$-unitary group is the group of reversible changes of basis; the quotient by the phase is the effective rotation group $SO(3)$, which acts on the rays; the pure states are the orbit $U(2)/T^2\cong S^2$. The mixed states are the interior of the Bloch ball, and the $*$-unitary group acts on them by conjugation.
 
 ### The Flag Variety
 
@@ -171,14 +171,14 @@ $$
 \qquad
 \tilde A=\lvert\tilde Q\rvert\text{ positive},
 \qquad
-\tilde Q\text{ unitary},
+\tilde Q\text{ }{}^{*}\text{-unitary},
 $$
 
-and the unitary group is a strong deformation retract of the unit group. The reading is the **amplitude–frame split**: every invertible operator is a positive amplitude times a unitary frame. The amplitude is the state (the positive factor); the frame is the basis (the unitary factor).
+and the $*$-unitary group is a strong deformation retract of the unit group. The reading is the **amplitude–frame split**: every invertible operator is a positive amplitude times a $*$-unitary frame. The amplitude is the state (the positive factor); the frame is the basis (the $*$-unitary factor).
 
-The polar decomposition is the operator-to-state map. The positive factor carries the probabilities; the unitary factor carries the phase and the orientation. The map is not unique at the degenerate boundary, where the amplitude is not invertible; the frame is then a partial isometry, not a unitary.
+The polar decomposition is the operator-to-state map. The positive factor carries the probabilities; the $*$-unitary factor carries the phase and the orientation. The map is not unique at the degenerate boundary, where the amplitude is not invertible; the frame is then a partial isometry, not a $*$-unitary.
 
-The reading is the reason the unitary group is the gauge group: the physical content of an operator is the positive factor, and the unitary factor is the choice of frame. A gauge transformation is a change of the unitary factor that leaves the amplitude invariant.
+The reading is the reason the $*$-unitary group is the gauge group: the physical content of an operator is the positive factor, and the $*$-unitary factor is the choice of frame. A gauge transformation is a change of the $*$-unitary factor that leaves the amplitude invariant.
 
 ## The Double Cover
 
@@ -196,9 +196,9 @@ $$
 
 is the double cover. A rotation by $2\pi$ is the identity in $SO(3)$ and $-e_t$ in $SU(2)$; a rotation by $4\pi$ is the identity in both. The norm-one slice $SU(2)$ is the spin group, and its two-valued representation is the spinor.
 
-The physical reading is the **spinor**. A state that transforms under $SU(2)$ rather than $SO(3)$ changes sign under a full turn; the sign is unobservable in a single state but observable in an interference experiment. The algebra's Peirce carriers are the spinor spaces, and here they are the minimal left ideals; the unitary group acts on them by left multiplication. The double cover is the algebraic form of half-integer spin.
+The physical reading is the **spinor**. A state that transforms under $SU(2)$ rather than $SO(3)$ changes sign under a full turn; the sign is unobservable in a single state but observable in an interference experiment. The algebra's Peirce carriers are the spinor spaces, and here they are the minimal left ideals; the $*$-unitary group acts on them by left multiplication. The double cover is the algebraic form of half-integer spin.
 
-The reading is not a derivation of the spin-statistics theorem. It is the statement that the algebra's norm-one unitary group $SU(2)$ is the double cover of the rotation group, and that the spinor representation is the fundamental representation. The statistics is an extra input.
+The reading is not a derivation of the spin-statistics theorem. It is the statement that the algebra's norm-one $*$-unitary group $SU(2)$ is the double cover of the rotation group, and that the spinor representation is the fundamental representation. The statistics is an extra input.
 
 ## Inside the Krein Group
 
@@ -214,7 +214,7 @@ $$
 U(1)\times PU(2)\cong U(1)\times SO(3),
 $$
 
-of dimension four: the central phases and the unitary sandwiches. The norm-one sandwiches form $PSL(2,\mathbb{C})\cong SO^+(1,3)$, the Lorentz group; their non-unitary members are isometries but not automorphisms of the algebra.
+of dimension four: the central phases and the $*$-unitary sandwiches. The norm-one sandwiches form $PSL(2,\mathbb{C})\cong SO^+(1,3)$, the Lorentz group; their non-$*$-unitary members are isometries but not automorphisms of the algebra.
 
 The reading is the **split of the gauge from the frame change**. Inside the algebra's own isometries, the compact subgroup $U(1)\times PU(2)$ is the gauge — the central phase and the spatial rotation — and the non-compact norm-one sandwiches are the boosts, a change of frame rather than a redundancy. The full Krein group is larger: its maximal compact subgroup is $U(1)\times U(3)$, and its non-compact directions are the complex hyperbolic boosts.
 
@@ -240,10 +240,10 @@ The reading is the space of frames: the complex hyperbolic ball is the space of 
 
 ## Physical Interpretations
 
-- **The gauge group of the state space is $U(2)$.** The unitary elements act on spinors by left multiplication and on states by conjugation; the conjugation preserves the Born form and the trace-one slice. The global phase is the kernel; the physical state is a ray.
+- **The gauge group of the state space is $U(2)$.** The $*$-unitary elements act on spinors by left multiplication and on states by conjugation; the conjugation preserves the Born form and the trace-one slice. The global phase is the kernel; the physical state is a ray.
 - **The quotient by the phase is the effective rotation group.** $U(2)/U(1)\cong SO(3)$; the pure states are the Hermitian idempotents, and their orbit is the Bloch sphere $U(2)/T^2\cong S^2$.
 - **The quotient by the maximal torus is the Bloch sphere.** $U(2)/T^2\cong S^2$; it is the space of pure states and, read dually, the space of measurement bases, since a maximal torus is a pair of orthogonal states up to their phases.
-- **The polar decomposition is the amplitude–frame split.** Every invertible operator is a positive amplitude times a unitary frame; the amplitude is the state, the frame is the gauge.
+- **The polar decomposition is the amplitude–frame split.** Every invertible operator is a positive amplitude times a $*$-unitary frame; the amplitude is the state, the frame is the gauge.
 - **The double cover is the spinor.** $SU(2)\to SO(3)$; a $2\pi$ rotation is $-e_t$; the spinor changes sign. The algebra's minimal ideals are the spinor spaces.
 - **The gauge is the compact algebraic subgroup of the Krein group.** $U(1)\times PU(2)$ is the compact subgroup generated by the algebra's own isometries; the boosts are physical frame changes, not gauge.
 - **The norm is the determinant and the scale.** $U(2)/S^3\cong S^1$; the norm-one slice is $SU(2)$; the phase is the $U(1)$ factor.
@@ -251,7 +251,7 @@ The reading is the space of frames: the complex hyperbolic ball is the space of 
 
 ## Limits
 
-The unitary group of the algebra is $U(2)$, not $U(4)$. The full isometry group of the definite Hermitian form on $\mathbb{B}\cong\mathbb{C}^4$ is $U(4)$, but it mixes the left and right actions and does not preserve the algebra product. The algebra's unitary group is the subgroup that acts by left multiplication.
+The $*$-unitary group of the algebra is $U(2)$, not $U(4)$. The full isometry group of the definite Hermitian form on $\mathbb{B}\cong\mathbb{C}^4$ is $U(4)$, but it mixes the left and right actions and does not preserve the algebra product. The algebra's $*$-unitary group is the subgroup that acts by left multiplication.
 
 The left action is not an automorphism of the algebra. It preserves the Hermitian form, but it does not preserve Hermiticity or the product. The conjugation is the automorphism, and its effective group is $U(2)/U(1)\cong SO(3)$. The two actions must not be conflated.
 
@@ -268,7 +268,7 @@ No dynamics is supplied. The group is the group of reversible changes of basis; 
 - $U(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong U(2)$, with structure $S^1\times S^3$, maximal torus $T^2$, flag variety $S^2$ and universal cover $\mathbb{R}\times S^3$.
 - The left action preserves the Hermitian form on spinors; the conjugation preserves the state space. The global phase is the kernel of both; the quotient $U(2)/U(1)\cong SO(3)$ is the effective rotation group, and the Bloch sphere of rays is the orbit $U(2)/T^2\cong S^2$.
 - The quotient $U(2)/T^2\cong S^2$ is the Bloch sphere, read as the pure states and as the measurement bases.
-- The polar decomposition splits every invertible operator into a positive amplitude and a unitary frame; the amplitude is the state, the frame is the gauge.
+- The polar decomposition splits every invertible operator into a positive amplitude and a $*$-unitary frame; the amplitude is the state, the frame is the gauge.
 - The norm-one slice is $SU(2)\cong S^3$, the double cover of $SO(3)$; the spinor changes sign under a $2\pi$ rotation.
 - The compact subgroup generated by the algebra's own isometries is $U(1)\times PU(2)\cong U(1)\times SO(3)$; the boosts are physical frame changes, not gauge.
 - The norm is the determinant and the scale; $U(2)/S^3\cong S^1$ and the norm-one slice is $SU(2)$.
@@ -278,7 +278,7 @@ No dynamics is supplied. The group is the group of reversible changes of basis; 
 
 | symbol | meaning |
 | --- | --- |
-| $U(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ | the unitary group, $\cong U(2)$ |
+| $U(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ | the $*$-unitary group, $\cong U(2)$ |
 | $S^1\cdot S^3$ | the phase times the rotor |
 | $T^2$ | a maximal torus |
 | $U(\mathbb{B})/T^2\cong S^2$ | the flag variety (measurement bases) and the pure-state orbit (Bloch sphere) |

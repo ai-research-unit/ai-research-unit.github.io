@@ -135,7 +135,7 @@ The three-dimensional representation is therefore available in the framework's *
 
 A second way to see the obstruction is to count the operations available on the three levels.
 
-The observables of the algebra are the Hermitian elements of $\mathbb{M}_+$, a real vector space of dimension four; their unitary exponentials form $\mathrm{U}(2)$, of real dimension four, which is the full group of unitary operations on two levels. A three-level system admits $\mathrm{U}(3)$, of real dimension nine, and its traceless part $\mathrm{SU}(3)$ has dimension eight. The comparison is decisive at every level of structure:
+The observables of the algebra are the Hermitian elements of $\mathbb{M}_+$, a real vector space of dimension four; their $*$-unitary exponentials form $\mathrm{U}(2)$, of real dimension four, which is the full group of $*$-unitary operations on two levels. A three-level system admits $\mathrm{U}(3)$, of real dimension nine, and its traceless part $\mathrm{SU}(3)$ has dimension eight. The comparison is decisive at every level of structure:
 
 $$
 \dim_{\mathbb{R}}\mathbb{M}_+=4<9=\dim_{\mathbb{R}}\mathrm{U}(3),\qquad

@@ -39,7 +39,7 @@ $$
 L=\Sigma\cap S^{31}
 $$
 
-is a real hypersurface of dimension $29$ in the unit sphere $S^{31}\subset\mathbb{R}^{32}$; it is the interesting part of the singular set.
+is a real algebraic hypersurface of dimension $29$ in the unit sphere $S^{31}\subset\mathbb{R}^{32}$, singular along the rank-at-most-two locus; it is the interesting part of the singular set.
 
 **The complement.** The complement of the singular set is the general linear group:
 
@@ -79,7 +79,7 @@ $$
 
 has contractible base, which again gives the homotopy equivalence.
 
-**The maximal compact.** The unitary group $U(4)$ is a maximal compact subgroup of $GL_4(\mathbb{C})$. Every compact subgroup is conjugate into $U(4)$; the polar decomposition shows that $U(4)$ meets every component of $GL_4$ and is a deformation retract.
+**The maximal compact.** The $*$-unitary group $U(4)$ is a maximal compact subgroup of $GL_4(\mathbb{C})$. Every compact subgroup is conjugate into $U(4)$; the polar decomposition shows that $U(4)$ meets every component of $GL_4$ and is a deformation retract.
 
 **The dimensions.** The real dimensions are
 
@@ -124,10 +124,10 @@ and the determinant bundle is the pullback of the generator.
 **The second homotopy group.** Every Lie group has
 
 $$
-\pi_2(G)=0,
+\pi_2(G)=0
 $$
 
-because the universal cover of a Lie group is a Lie group and the fibre of a covering has no $\pi_2$. Hence
+(Cartan's theorem; see Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Ch. II). Hence
 
 $$
 \pi_2(GL_4)=0,\qquad \pi_2(U(4))=0.
@@ -196,15 +196,15 @@ H^*(\mathcal{I}_p;\mathbb{Z})\cong H^*(\operatorname{Gr}(p,4);\mathbb{Z}),
 \chi(\mathcal{I}_p)=\binom{4}{p}.
 $$
 
-The rank-one idempotents are homotopy equivalent to $\mathbb{P}^3$; the rank-two idempotents are homotopy equivalent to $\operatorname{Gr}(2,4)$; the rank-three idempotents are homotopy equivalent to $\mathbb{P}^3$. The idempotents themselves are noncompact affine bundles, but their homotopy type is compact.
+The rank-one idempotents are homotopy equivalent to $\mathbb{P}^3$; the rank-two idempotents are homotopy equivalent to $\operatorname{Gr}(2,4)$; the rank-three idempotents are homotopy equivalent to $\mathbb{P}^3$. For $1\le p\le3$ the idempotent stratum itself is a noncompact affine bundle, but its homotopy type is compact.
 
-**The rank stratification.** The closures of the strata are
+**The rank stratification.** The rank is locally constant on the idempotent variety, since $\operatorname{rank}P=\operatorname{tr}P$ is continuous and integer-valued. Hence each stratum is open and closed, with
 
 $$
-\overline{\mathcal{I}_p}=\bigsqcup_{q=0}^{p}\mathcal{I}_q,
+\overline{\mathcal{I}_p}=\mathcal{I}_p,
 $$
 
-so the space of all idempotents is a stratified space with the Grassmannian homotopy types on the strata. The zero and identity strata are points; the rank-one and rank-three strata are $\mathbb{P}^3$ up to homotopy; the rank-two stratum is $\operatorname{Gr}(2,4)$ up to homotopy.
+and the space of all idempotents is the disjoint union of the five clopen strata, with the Grassmannian homotopy types on the strata. The zero and identity strata are points; the rank-one and rank-three strata are $\mathbb{P}^3$ up to homotopy; the rank-two stratum is $\operatorname{Gr}(2,4)$ up to homotopy.
 
 ## The Flag Variety
 
@@ -362,7 +362,7 @@ The rank-one idempotents form an affine bundle of rank $1$ over $\mathbb{P}^1$, 
 
 **The determinant bundle.** The determinant line bundle over $U(2)$ has first Chern class $1$; over $\mathbb{P}^1$ the tautological bundle $\mathcal{O}(-1)$ has $c_1=-1$ and the dual $\mathcal{O}(1)$ has $c_1=1$. The pattern is the $n=2$ case of the $n=4$ formulas.
 
-**The comparison with the regular model.** The full algebra $M_4(\mathbb{C})$ has the singular set $\{\det=0\}$, a contractible cone; the biquaternion algebra has the null cone of its quaternionic norm, also a contractible cone. The complements have the homotopy type of $U(4)$ and $U(2)$ respectively; the determinant bundles have first Chern class $1$ in both cases. The topology of the regular model $M_4(\mathbb{C})_L$ is the topology of the full algebra with the null cone distinguished; the full algebra's singular set is the determinantal hypersurface.
+**The comparison with the regular model.** The full algebra $M_4(\mathbb{C})$ has the singular set $\{\det=0\}$, a contractible cone; the biquaternion algebra has the null cone of its quaternionic norm, also a contractible cone. The complements have the homotopy type of $U(4)$ and $U(2)$ respectively; the determinant bundles have first Chern class $1$ in both cases. The regular model $M_4(\mathbb{C})_L$ is a four-dimensional complex subspace with the null cone as its singular set; the full algebra's singular set is the determinantal hypersurface.
 
 ## Summary
 
@@ -374,7 +374,7 @@ $$
 \pi_3(GL_4)=\mathbb{Z},
 $$
 
-and the universal cover of $U(4)$ is $SU(4)\times\mathbb{R}$. The idempotents of rank $p$ are affine bundles over $\operatorname{Gr}(p,4)$ with contractible fibres, so $\mathcal{I}_p\simeq\operatorname{Gr}(p,4)$; the Grassmannian has Poincaré polynomial $\binom{4}{p}_q$ and Euler characteristic $\binom{4}{p}$, giving $1,4,6,4,1$ for $p=0,1,2,3,4$. The full flag variety $GL_4/B$ is simply connected, of dimension $6$, with Poincaré polynomial $[4]_q!=1+3q+5q^2+6q^3+5q^4+3q^5+q^6$ and Euler characteristic $24$. The determinant bundle over $GL_4$ has first Chern class the generator of $H^2=\mathbb{Z}$; over $\operatorname{Gr}(p,4)$ the determinant of the tautological bundle has $c_1=-H$ and the Plücker bundle has $c_1=H$; over the flag variety the determinant of the tangent bundle is $L_{2\rho}$ with $c_1=2\rho=(3,1,-1,-3)$, and the canonical bundle is $L_{-2\rho}$. The singular set is a contractible cone whose link is a real hypersurface of dimension $29$.
+and the universal cover of $U(4)$ is $SU(4)\times\mathbb{R}$. The idempotents of rank $p$ are affine bundles over $\operatorname{Gr}(p,4)$ with contractible fibres, so $\mathcal{I}_p\simeq\operatorname{Gr}(p,4)$; the Grassmannian has Poincaré polynomial $\binom{4}{p}_q$ and Euler characteristic $\binom{4}{p}$, giving $1,4,6,4,1$ for $p=0,1,2,3,4$. The full flag variety $GL_4/B$ is simply connected, of dimension $6$, with Poincaré polynomial $[4]_q!=1+3q+5q^2+6q^3+5q^4+3q^5+q^6$ and Euler characteristic $24$. The determinant bundle over $GL_4$ has first Chern class the generator of $H^2=\mathbb{Z}$; over $\operatorname{Gr}(p,4)$ the determinant of the tautological bundle has $c_1=-H$ and the Plücker bundle has $c_1=H$; over the flag variety the determinant of the tangent bundle is $L_{2\rho}$ with $c_1=2\rho=(3,1,-1,-3)$, and the canonical bundle is $L_{-2\rho}$. The singular set is a contractible cone whose link is a real algebraic hypersurface of dimension $29$, singular along the rank-at-most-two locus.
 
 $$
 \boxed{\ M_4\simeq*,\quad GL_4\simeq U(4),\quad \pi_1(GL_4)=\mathbb{Z},\quad \pi_2(GL_4)=0,\quad \mathcal{I}_p\simeq\operatorname{Gr}(p,4),\quad \pi_1(\mathcal{F})=0. }
@@ -406,6 +406,7 @@ $$
 - Allen Hatcher, *Algebraic Topology* (Cambridge, 2002), for homotopy groups, fibrations and the cohomology of homogeneous spaces.
 - Raoul Bott and Loring Tu, *Differential Forms in Algebraic Topology* (Springer, 1982), for characteristic classes and the first Chern class.
 - Phillip Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the cohomology of Grassmannians and flag varieties and the Schubert calculus.
+- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the vanishing of $\pi_2$ of a Lie group and the topology of homogeneous spaces.
 - [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m4c.html), for the affine bundles and the homotopy equivalence.
 - [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the deformation retraction onto $U(4)$.
 - [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m4c.html), for the homotopy groups and the universal cover.

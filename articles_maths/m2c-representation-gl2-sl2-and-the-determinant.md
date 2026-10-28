@@ -4,11 +4,11 @@
 
 The units of the biquaternion algebra are the invertible matrices, and the determinant is the quaternionic norm. The two statements together identify the group of units with $GL_2(\mathbb{C})$ and cut out the norm-one subgroup as $SL_2(\mathbb{C})$. The identification is an isomorphism of complex Lie groups, and the determinant is its only numerical invariant.
 
-This article develops the group picture: the isomorphism, the determinant sequence and its splittings, the geometry of the level sets, and the relation to the unitary group through the polar decomposition. It is the matrix form of *The Biquaternion Unit Group as a Topological Group* and of *The N-Regular Sector*.
+This article develops the group picture: the isomorphism, the determinant sequence and its splittings, the geometry of the level sets, and the relation to the $*$-unitary group through the polar decomposition. It is the matrix form of *The Biquaternion Unit Group as a Topological Group* and of *The N-Regular Sector*.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=\det\mathsf{M}_2(\tilde Q)$. The unit group of the algebra is $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$, and the norm-one group is $\mathbb{B}^{\times}_1=\{\tilde Q:N=1\}$.
 
-**Boundaries.** The unit group as a topological group, its homotopy and its covering are *The Biquaternion Unit Group as a Topological Group*; the norm-one group and the polar factors are *The Polar Decomposition of a N-Regular Biquaternion*; the unitary group is *The Unitary Group of the Biquaternion Algebra*; the level sets of the norm and the sector are *The N-Regular Sector*; the polar decomposition of a matrix is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
+**Boundaries.** The unit group as a topological group, its homotopy and its covering are *The Biquaternion Unit Group as a Topological Group*; the norm-one group and the polar factors are *The Polar Decomposition of a N-Regular Biquaternion*; the $*$-unitary group is *The Unitary Group of the Biquaternion Algebra*; the level sets of the norm and the sector are *The N-Regular Sector*; the polar decomposition of a matrix is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
 ## The Group Isomorphism
 
@@ -97,9 +97,9 @@ with the diagonal embedding. The statement is the matrix form of the transitivit
 
 **The cone.** The level set $c=0$ is the null cone, and it is not smooth: it is the cone over the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$, with the apex at the origin. The apex is the only singular point, and it is the image of the zero element. The cone is the subject of *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*.
 
-## The Unit Group and the Unitary Group
+## The Unit Group and the $*$-Unitary Group
 
-**The unitary subgroup.** The fixed points of the Hermitian adjoint are the Hermitian matrices; the matrices satisfying $M^{\dagger}M=\mathrm I_2$ are the unitary group $U(2)$. In the algebra, the condition is $\tilde Q^{*}\tilde Q=e_t$, and the subgroup is
+**The $*$-unitary subgroup.** The fixed points of the Hermitian adjoint are the Hermitian matrices; the matrices satisfying $M^{\dagger}M=\mathrm I_2$ are the $*$-unitary group $U(2)$. In the algebra, the condition is $\tilde Q^{*}\tilde Q=e_t$, and the subgroup is
 
 $$
 \mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong U(2),
@@ -107,9 +107,9 @@ $$
 
 of real dimension four. It is the maximal compact subgroup of $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$.
 
-**The special unitary subgroup.** The intersection $U(2)\cap SL_2=SU(2)$, of real dimension three, is the group of rotation rotors. It is the maximal compact subgroup of $SL_2$.
+**The special $*$-unitary subgroup.** The intersection $U(2)\cap SL_2=SU(2)$, of real dimension three, is the group of rotation rotors. It is the maximal compact subgroup of $SL_2$.
 
-**The polar decomposition.** Every invertible matrix is a product of a positive Hermitian matrix and a unitary one:
+**The polar decomposition.** Every invertible matrix is a product of a positive Hermitian matrix and a $*$-unitary one:
 
 $$
 GL_2(\mathbb{C})=Herm^{>0}\cdot U(2),
@@ -256,7 +256,7 @@ The last row is not a covering; it is the Hopf fibration, included for contrast.
 
 ## Summary
 
-The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are $SL_2(\mathbb{C})$. The determinant is the norm and fits the exact sequence $1\to SL_2\to GL_2\to\mathbb{C}^{\times}\to1$, which splits non-centrally but not centrally; the multiplication map $\mathbb{C}^{\times}\times SL_2\to GL_2$ is a twofold cover. Each nonzero level set of the norm is a smooth connected complex hypersurface of dimension three, homogeneous under $SL_2\times SL_2$. The unitary group $U(2)$ is the maximal compact subgroup, and the polar decomposition is the matrix form of the unit-factor splitting. The centre is $\mathbb{C}^{\times}\mathrm I_2$, and the automorphism group is $PGL_2$. Three double covers have kernel $\{\pm\mathrm I_2\}$: $SU(2)\to SO(3)$, $SL_2(\mathbb{C})\to SO^+(1,3)$ and $SL_2(\mathbb{C})\to PGL_2(\mathbb{C})$; the Hopf fibration $SU(2)\to S^2$ has fibre $S^1$ and is not a covering.
+The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are $SL_2(\mathbb{C})$. The determinant is the norm and fits the exact sequence $1\to SL_2\to GL_2\to\mathbb{C}^{\times}\to1$, which splits non-centrally but not centrally; the multiplication map $\mathbb{C}^{\times}\times SL_2\to GL_2$ is a twofold cover. Each nonzero level set of the norm is a smooth connected complex hypersurface of dimension three, homogeneous under $SL_2\times SL_2$. The $*$-unitary group $U(2)$ is the maximal compact subgroup, and the polar decomposition is the matrix form of the unit-factor splitting. The centre is $\mathbb{C}^{\times}\mathrm I_2$, and the automorphism group is $PGL_2$. Three double covers have kernel $\{\pm\mathrm I_2\}$: $SU(2)\to SO(3)$, $SL_2(\mathbb{C})\to SO^+(1,3)$ and $SL_2(\mathbb{C})\to PGL_2(\mathbb{C})$; the Hopf fibration $SU(2)\to S^2$ has fibre $S^1$ and is not a covering.
 
 ## Summary of Notation
 
@@ -266,7 +266,7 @@ The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are 
 | $\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$ | the norm-one group |
 | $\det$ | the determinant, equal to $\langle\cdot\rangle_{\natural}$ |
 | $\mathbb{C}^{\times}\mathrm I_2$ | the centre |
-| $U(2)$ | the unitary subgroup, maximal compact |
+| $U(2)$ | the $*$-unitary subgroup, maximal compact |
 | $SU(2)$ | the rotation rotors |
 | $PGL_2$ | the inner automorphism group |
 | $SO^+(1,3)$ | the proper orthochronous Lorentz group |

@@ -126,7 +126,7 @@ $$
 W(t',\omega)^{-1}=\cos(2\pi\omega t')e_t+\sin(2\pi\omega t')\rho,
 $$
 
-and the identity $WW^{-1}=(\cos^2+\sin^2)e_t=e_t$ uses only $\rho^2=-e_t$. For a **pure** root, one with vanishing scalar part, the quaternion conjugate is the inverse, $W^{\natural}=W^{-1}$, and the kernel is unitary, $W^{\natural}W=e_t$; for the central root $\rho=\pm i$ the kernel is the central scalar $\exp(\mp2\pi i\omega t')e_t$, of unit complex modulus, and the inverse is the complex conjugate.
+and the identity $WW^{-1}=(\cos^2+\sin^2)e_t=e_t$ uses only $\rho^2=-e_t$. For a **pure** root, one with vanishing scalar part, the quaternion conjugate is the inverse, $W^{\natural}=W^{-1}$, and the kernel is $*$-unitary, $W^{\natural}W=e_t$; for the central root $\rho=\pm i$ the kernel is the central scalar $\exp(\mp2\pi i\omega t')e_t$, of unit complex modulus, and the inverse is the complex conjugate.
 
 The roots of $-1$ fall into three families: the central imaginary $\rho=\pm i$; the unit pure real quaternions $\rho=\pm\hat\mu$; and the non-trivial roots $\rho=b\hat\mu+d\hat\nu i$ with $\hat\mu,\hat\nu$ perpendicular unit pure real quaternions and $b^2-d^2=1$. The last two families are pure; the first is not. The choice of family changes the transform, and it is the subject of the clock interpretation below.
 
@@ -139,7 +139,7 @@ $$
 f(t')=\int_{-\infty}^{\infty}W(t',\omega)^{-1}F(\omega)\,d\omega\;},
 $$
 
-under the standard convergence hypotheses. The kernel may stand on the left or on the right; the placement is part of the convention. The kernel is invertible for every root. The Plancherel identity holds for square-integrable functions when the root is unitary, $\rho^{*}=-\rho$ — the central imaginary and the unit real roots — and it is that unitarity which the condition encodes,
+under the standard convergence hypotheses. The kernel may stand on the left or on the right; the placement is part of the convention. The kernel is invertible for every root. The Plancherel identity holds for square-integrable functions when the root is $*$-unitary, $\rho^{*}=-\rho$ — the central imaginary and the unit real roots — and it is that unitarity which the condition encodes,
 
 $$
 \int_{-\infty}^{\infty}\overline{f(t')}g(t')\,dt'=\int_{-\infty}^{\infty}\overline{F(\omega)}G(\omega)\,d\omega.

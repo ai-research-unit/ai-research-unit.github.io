@@ -64,7 +64,7 @@ The **displacement operator** is $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-
 $$
 \mathsf{P}(\alpha)=D(\alpha)\,(-1)^{\vec u}\,D(\alpha)^\dagger,\qquad \vec u=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}},
 $$
-is Hermitian, unitary, and has eigenvalues $\pm1$ exactly, because $(-1)^{\vec u}$ does and $D(\alpha)$ is unitary. It is the standard continuous-variable pseudo-spin: a genuinely continuous-family observable with a discrete, dichotomic, $\pm1$ spectrum. This is the observable family used throughout the article, because it is the family for which the CHSH combination is defined without further normalisation and for which the discrete bound $2$ applies verbatim as the classical bound.
+is Hermitian, $*$-unitary, and has eigenvalues $\pm1$ exactly, because $(-1)^{\vec u}$ does and $D(\alpha)$ is $*$-unitary. It is the standard continuous-variable pseudo-spin: a genuinely continuous-family observable with a discrete, dichotomic, $\pm1$ spectrum. This is the observable family used throughout the article, because it is the family for which the CHSH combination is defined without further normalisation and for which the discrete bound $2$ applies verbatim as the classical bound.
 
 Two facts about $\mathsf{P}(\alpha)$ are used below. First, its expectation is a fixed multiple of the Wigner function evaluated at the corresponding phase-space point,
 $$

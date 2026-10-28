@@ -66,7 +66,7 @@ and the same computation on the right with $(\tilde{Q}_1\tilde Q_4)^{\dagger}=\t
 
 **Remark (which half of the dagger is used).** The adjoint of $L_{\tilde Q_3}$ is $L_{\tilde Q_3^{*}}$ and **not** $R_{\tilde Q_3^{*}}$: the cross identity $(L_{\tilde Q_3}\tilde{Q}_1,\tilde Q_2)=(\tilde{Q}_1,R_{\tilde Q_3^{*}}\tilde Q_2)$ is false in general. In the matrix model the point is that the Hilbert structure of the algebra is the space of matrices with the Hilbert–Schmidt form, and the adjoint of left multiplication is again left multiplication.
 
-## Self-Adjoint, Skew and Unitary One-Sided Operators
+## Self-Adjoint, Skew and $*$-Unitary One-Sided Operators
 
 **Theorem (the type criteria).** Let $\tilde Q_3\in\mathbb{B}$ and let $L_{\tilde Q_3}$ be the left multiplication. Then
 
@@ -76,7 +76,7 @@ L_{\tilde Q_3}\ \text{skew-adjoint} \iff \tilde Q_3\in\mathbb{M}_- \;},
 $$
 
 $$
-L_{\tilde Q_3}\ \text{unitary} \iff \tilde Q_3\in U,\qquad
+L_{\tilde Q_3}\ \text{}{}^{*}\text{-unitary} \iff \tilde Q_3\in U,\qquad
 L_{\tilde Q_3}\ \text{an automorphism of } (\cdot,\cdot) \iff \tilde Q_3\in U,
 $$
 
@@ -92,7 +92,7 @@ $$
 
 This is the sharpest contrast with the companion article, where both sectors give self-adjoint operators and no nonzero operator is skew: there the parameter appears twice, and the sign that separates the sectors is squared away.
 
-**Corollary (the exponential and the unitary group).** Since $L_{\tilde Q_3}^{*}=L_{\tilde Q_3^{*}}$, the image of the slice $U$ under $L$ is a group of unitary operators isomorphic to $\mathrm{U}(2)$, and the image of the anti-Hermitian subspace $\mathbb{M}_-$ is a space of skew-adjoint operators closed under the commutator, that is the Lie algebra of that unitary group. The exponential of a skew-adjoint one-sided operator is again one-sided: $\exp(L_{\tilde Q_3})=L_{\exp(\tilde Q_3)}$ for $\tilde Q_3\in\mathbb{M}_-$, since the exponential series and the linearity of the assignment commute. In the matrix model this is the familiar statement that the anti-Hermitian matrices exponentiate into $\mathrm{U}(2)$.
+**Corollary (the exponential and the $*$-unitary group).** Since $L_{\tilde Q_3}^{*}=L_{\tilde Q_3^{*}}$, the image of the slice $U$ under $L$ is a group of $*$-unitary operators isomorphic to $\mathrm{U}(2)$, and the image of the anti-Hermitian subspace $\mathbb{M}_-$ is a space of skew-adjoint operators closed under the commutator, that is the Lie algebra of that $*$-unitary group. The exponential of a skew-adjoint one-sided operator is again one-sided: $\exp(L_{\tilde Q_3})=L_{\exp(\tilde Q_3)}$ for $\tilde Q_3\in\mathbb{M}_-$, since the exponential series and the linearity of the assignment commute. In the matrix model this is the familiar statement that the anti-Hermitian matrices exponentiate into $\mathrm{U}(2)$.
 
 ## The Commutant and the Double Centraliser
 
@@ -137,7 +137,7 @@ and it is, up to a positive scalar, the **only** general plain sesquilinear form
 
 ## Worked Examples
 
-**The identity and the central scalars.** $L_{e_t}=R_{e_t}=\mathrm{id}$. For a central scalar $\lambda e_t$ the two one-sided operators agree, $L_{\lambda e_t}=R_{\lambda e_t}=\lambda\,\mathrm{id}$, and they are self-adjoint exactly for $\lambda$ real, skew-adjoint exactly for $\lambda$ imaginary, unitary exactly for $\lvert\lambda\rvert=1$. The central circle gives the scalar unitary operators, a subgroup $\mathrm{U}(1)$ of the group of unitary operators, to be compared with the kernel $\mathrm{U}(1)$ of the two-sided assignment.
+**The identity and the central scalars.** $L_{e_t}=R_{e_t}=\mathrm{id}$. For a central scalar $\lambda e_t$ the two one-sided operators agree, $L_{\lambda e_t}=R_{\lambda e_t}=\lambda\,\mathrm{id}$, and they are self-adjoint exactly for $\lambda$ real, skew-adjoint exactly for $\lambda$ imaginary, $*$-unitary exactly for $\lvert\lambda\rvert=1$. The central circle gives the scalar $*$-unitary operators, a subgroup $\mathrm{U}(1)$ of the group of $*$-unitary operators, to be compared with the kernel $\mathrm{U}(1)$ of the two-sided assignment.
 
 **The vector generators.** For $\tilde Q_3=\vec e_\mu$, $\mu\in\{x,y,z\}$, one has $\vec e_\mu^{\dagger}=-\vec e_\mu$ and $\vec e_\mu^{2}=-e_t$, so $L_{\vec e_\mu}$ is skew-adjoint and $L_{\vec e_\mu}^{2}=L_{-e_t}=-\mathrm{id}$: the left multiplication by a vector generator is a complex structure on the algebra, of square minus the identity. This is the operator form of the relations of the Clifford structure (*Biquaternion Versors and the Orthogonal Group*), and the three operators $L_{\vec e_x},L_{\vec e_y},L_{\vec e_z}$ satisfy the anticommutation relations of the generators.
 
@@ -155,7 +155,7 @@ and is therefore of neither of the two types, in agreement with the theorem: the
 
 ## Summary
 
-The left and the right multiplications $L_{\tilde Q_3}(\tilde{Q}_1)=\tilde Q_3\tilde{Q}_1$ and $R_{\tilde Q_4}(\tilde{Q}_1)=\tilde{Q}_1\tilde Q_4$ are the one-sided operators of the biquaternion algebra, and the two-sided operator of the companion article is their product $\Theta_{\tilde Q_3}=L_{\tilde Q_3}R_{\tilde Q_3^{*}}$. The parameter enters **linearly**, and everything follows: the assignment is additive and injective, the composition laws are $L_{\tilde Q_3}L_{\tilde Q_4}=L_{\tilde Q_3\tilde Q_4}$, $R_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4\tilde Q_3}$ and $L_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4}L_{\tilde Q_3}$, the adjoints are $(L_{\tilde Q_3})^{*}=L_{\tilde Q_3^{*}}$ and $(R_{\tilde Q_4})^{*}=R_{\tilde Q_4^{*}}$, so that $L$ is a faithful $*$-representation of the algebra on the Hilbert space of the scalar form, of complex dimension four, that is two copies of the standard module. The **type criteria** are the ones of the involution lattice: $L_{\tilde Q_3}$ is self-adjoint exactly on $\mathbb{M}_+$, skew-adjoint exactly on $\mathbb{M}_-$, unitary and congruent exactly on the slice $U$, and invertible exactly on the group of units; the Lie algebra of the unitary one-sided operators is $L_{\mathbb{M}_-}$ and the exponential stays inside the family, $\exp(L_{\tilde Q_3})=L_{\exp(\tilde Q_3)}$. The **double centraliser theorem** holds in two lines: the commutant of the left multiplications is the right multiplications and conversely, the bicommutant is the scalars, and the mixed operators $L_{\tilde Q_3}R_{\tilde Q_4}$ with two independent parameters are the ones that are not two-sided. Finally the scalar form is characterised among the positive definite general plain sesquilinear forms by the property that the adjoint of the action is the action of the adjoint element, which is the statement that the algebra is a Hermitian Clifford module over itself. The pair of articles isolates in this way what the doubling of the parameter in the sandwich costs: the additivity, the separation of the two sectors, the existence of skew operators, and the injectivity of the assignment.
+The left and the right multiplications $L_{\tilde Q_3}(\tilde{Q}_1)=\tilde Q_3\tilde{Q}_1$ and $R_{\tilde Q_4}(\tilde{Q}_1)=\tilde{Q}_1\tilde Q_4$ are the one-sided operators of the biquaternion algebra, and the two-sided operator of the companion article is their product $\Theta_{\tilde Q_3}=L_{\tilde Q_3}R_{\tilde Q_3^{*}}$. The parameter enters **linearly**, and everything follows: the assignment is additive and injective, the composition laws are $L_{\tilde Q_3}L_{\tilde Q_4}=L_{\tilde Q_3\tilde Q_4}$, $R_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4\tilde Q_3}$ and $L_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4}L_{\tilde Q_3}$, the adjoints are $(L_{\tilde Q_3})^{*}=L_{\tilde Q_3^{*}}$ and $(R_{\tilde Q_4})^{*}=R_{\tilde Q_4^{*}}$, so that $L$ is a faithful $*$-representation of the algebra on the Hilbert space of the scalar form, of complex dimension four, that is two copies of the standard module. The **type criteria** are the ones of the involution lattice: $L_{\tilde Q_3}$ is self-adjoint exactly on $\mathbb{M}_+$, skew-adjoint exactly on $\mathbb{M}_-$, $*$-unitary and congruent exactly on the slice $U$, and invertible exactly on the group of units; the Lie algebra of the $*$-unitary one-sided operators is $L_{\mathbb{M}_-}$ and the exponential stays inside the family, $\exp(L_{\tilde Q_3})=L_{\exp(\tilde Q_3)}$. The **double centraliser theorem** holds in two lines: the commutant of the left multiplications is the right multiplications and conversely, the bicommutant is the scalars, and the mixed operators $L_{\tilde Q_3}R_{\tilde Q_4}$ with two independent parameters are the ones that are not two-sided. Finally the scalar form is characterised among the positive definite general plain sesquilinear forms by the property that the adjoint of the action is the action of the adjoint element, which is the statement that the algebra is a Hermitian Clifford module over itself. The pair of articles isolates in this way what the doubling of the parameter in the sandwich costs: the additivity, the separation of the two sectors, the existence of skew operators, and the injectivity of the assignment.
 
 ## Summary of Notation
 
@@ -170,7 +170,7 @@ The left and the right multiplications $L_{\tilde Q_3}(\tilde{Q}_1)=\tilde Q_3\t
 | $L_{\tilde Q_3}L_{\tilde Q_4}=L_{\tilde Q_3\tilde Q_4}$, $R_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4\tilde Q_3}$ | Composition laws |
 | $L_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4}L_{\tilde Q_3}$ | The two families commute |
 | $(L_{\tilde Q_3})^{*}=L_{\tilde Q_3^{*}}$, $(R_{\tilde Q_4})^{*}=R_{\tilde Q_4^{*}}$ | The adjoints; $L$ is a $*$-representation |
-| $U=\{\tilde{Q}^{*}\tilde Q=e_t\}=\mathrm{U}(2)$ | The unitary slice; the automorphisms and the unitary operators |
+| $U=\{\tilde{Q}^{*}\tilde Q=e_t\}=\mathrm{U}(2)$ | The $*$-unitary slice; the automorphisms and the $*$-unitary operators |
 | $\{S : SL_{\tilde Q_3}=L_{\tilde Q_3}S\ \forall \tilde Q_3\}=R(\mathbb{B})$ | The double centraliser theorem |
 | $L_{\tilde Q_3}R_{\tilde Q_4}$ | Mixed operator; two-sided only if $\tilde Q_4=\lambda \tilde Q_3^{*}$ |
 

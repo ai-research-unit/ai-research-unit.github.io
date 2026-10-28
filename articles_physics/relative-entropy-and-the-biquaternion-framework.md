@@ -34,7 +34,7 @@ Writing $\rho=\sum_i\lambda_i|i\rangle\langle i|$ and $\sigma=\sum_j\mu_j|j\rang
 $$
 S(\rho\|\sigma)=\sum_{i,j}|\langle i|j\rangle|^2\,\lambda_i\big(\log\lambda_i-\log\mu_j\big),
 $$
-the sum being restricted to $\mu_j>0$. The definition is basis-independent and invariant under unitary conjugation of both arguments. It is not symmetric, $S(\rho\|\sigma)\neq S(\sigma\|\rho)$ in general, and it is not a metric: it belongs to the family of statistical divergences rather than to the metrics.
+the sum being restricted to $\mu_j>0$. The definition is basis-independent and invariant under $*$-unitary conjugation of both arguments. It is not symmetric, $S(\rho\|\sigma)\neq S(\sigma\|\rho)$ in general, and it is not a metric: it belongs to the family of statistical divergences rather than to the metrics.
 
 ### The Properties That Make It Basic
 

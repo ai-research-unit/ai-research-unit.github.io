@@ -347,7 +347,7 @@ $$
 =\cosh\psi\,e_t+i\sinh\psi\,\vec u_{\mathrm b},
 $$
 
-so the formula returns the boost $\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is unitary of determinant one. This is the Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ read algebraically.
+so the formula returns the boost $\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is $*$-unitary of determinant one. This is the Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ read algebraically.
 
 **Step 4: the two angles and the two axes.** From the closed forms
 
@@ -716,7 +716,7 @@ $$
 \mathsf M_2(\tilde u_{\mathrm r})=\cos\frac{\theta}{2}\,I-i\sin\frac{\theta}{2}\,\boldsymbol\sigma\cdot\vec u_{\mathrm r}.
 $$
 
-The first factor is Hermitian positive with eigenvalues $e^{\pm\psi/2}$; the second is unitary with eigenvalues $e^{\mp i\theta/2}$; the product has determinant one and trace
+The first factor is Hermitian positive with eigenvalues $e^{\pm\psi/2}$; the second is $*$-unitary with eigenvalues $e^{\mp i\theta/2}$; the product has determinant one and trace
 
 $$
 2\Bigl(\cosh\frac{\psi}{2}\cos\frac{\theta}{2}
@@ -918,7 +918,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal branch.
 - [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the four-factor word, the Cartan decomposition, existence and uniqueness, the group law and the boundary.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus and the unit factor.
-- [The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the Hermitian positive and unitary factors.
+- [The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the Hermitian positive and $*$-unitary factors.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the real two-dimensional analogue.
 - [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the commutative four-dimensional analogue.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.

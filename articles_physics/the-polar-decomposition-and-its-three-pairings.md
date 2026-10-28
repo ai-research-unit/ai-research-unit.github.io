@@ -110,7 +110,7 @@ The modulus is the only central scalar of the three pairings. The axis and the a
 
 ### The Cartan Pairing
 
-The Cartan pairing writes the element as a **Hermitian positive factor** times a **unitary factor**:
+The Cartan pairing writes the element as a **Hermitian positive factor** times a **$*$-unitary factor**:
 
 $$
 \boxed{\;\tilde Q=\tilde Q_H\tilde Q_0, \qquad
@@ -180,7 +180,7 @@ The quaternion construction uses the **first** split. The physical sectors are t
 
 The three splits and the three pairings are different structures with the same number. A split asks what the algebra is made of; a pairing asks how the product is grouped. The word's four factors are grouped by the pairings and typed by the splits, and neither classification implies the other.
 
-The **Cartan exponents** are the one place where a split and a pairing meet. The logarithms lie in the two sectors, $\ln\tilde Q_H=\ln r\,e_t+i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$ and $\ln\tilde Q_0=i\alpha\,e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$, but the **factors** do not split one per sector: $\tilde Q_H$ is Hermitian positive, while $\tilde Q_0$ is unitary and not an element of the linear subspace $\mathbb{M}_-$. Only the logarithms split cleanly. The direct sum is a statement about the Lie algebra of generators, not about the product. The Cartan pairing is $\tilde Q_H\tilde Q_0$, not $\mathbb{M}_+\times\mathbb{M}_-$.
+The **Cartan exponents** are the one place where a split and a pairing meet. The logarithms lie in the two sectors, $\ln\tilde Q_H=\ln r\,e_t+i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$ and $\ln\tilde Q_0=i\alpha\,e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$, but the **factors** do not split one per sector: $\tilde Q_H$ is Hermitian positive, while $\tilde Q_0$ is $*$-unitary and not an element of the linear subspace $\mathbb{M}_-$. Only the logarithms split cleanly. The direct sum is a statement about the Lie algebra of generators, not about the product. The Cartan pairing is $\tilde Q_H\tilde Q_0$, not $\mathbb{M}_+\times\mathbb{M}_-$.
 
 ## The Action on the Sectors and the Subspaces
 
@@ -295,7 +295,7 @@ The pairings read the same data under different headings, and the readings are d
 - The factors are three products of the same element, not three terms; none is conserved, none is a field, and none evolves on its own.
 - The domains are not nested: $i\vec e_x+i\vec e_y$ has no quaternion construction, $e_t+\vec e_x+i\vec e_y$ has no Hamilton pairing, and $e_t+i\vec e_x$ needs the generalized Cartan form.
 - The algebra has three splits — real/imaginary, Hermitian/anti-Hermitian, scalar/vector — and they are not the three pairings.
-- The Cartan factors do not split one per sector: $\tilde Q_H$ is Hermitian and lies in $\mathbb{M}_+$, $\tilde Q_0$ is unitary and not in $\mathbb{M}_-$, and $\ln\tilde Q_H$ and $\ln\tilde Q_0$ lie in the two sectors.
+- The Cartan factors do not split one per sector: $\tilde Q_H$ is Hermitian and lies in $\mathbb{M}_+$, $\tilde Q_0$ is $*$-unitary and not in $\mathbb{M}_-$, and $\ln\tilde Q_H$ and $\ln\tilde Q_0$ lie in the two sectors.
 - The scale and the rotor preserve all six remarkable subspaces, the phase preserves the centre and the vector space, and the boost preserves the two sectors and moves the centre.
 - A four-vector transforms by the congruence and a spinor by the left multiplication; the first is bilinear in the spinor, the second linear.
 
@@ -314,7 +314,7 @@ The pairings read the same data under different headings, and the readings are d
 | $\tilde\Psi=\alpha+\tfrac{\psi_w}{2}\vec u_{\mathrm b,2}$ | the real quaternion angle of the quaternion pairing |
 | $\Rho=\sqrt N$, $\vec\Xi$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
 | $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part root, not the four-vector factor $\mathcal B$ |
-| $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and unitary factors of the Cartan pairing |
+| $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and $*$-unitary factors of the Cartan pairing |
 | $\mathbb{M}_\pm$ | the Hermitian and anti-Hermitian sectors |
 
 ## Further Reading

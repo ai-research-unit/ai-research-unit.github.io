@@ -49,7 +49,7 @@ The last property is what makes the protocol worth performing: **Alice's half, o
 
 ### The four operations
 
-Alice acts on her factor with a local unitary. The available unitaries are the unit quaternions and their central multiples; since a central phase cancels in conjugation, the distinct operations are the four coset representatives
+Alice acts on her factor with a local $*$-unitary. The available unitaries are the unit quaternions and their central multiples; since a central phase cancels in conjugation, the distinct operations are the four coset representatives
 
 $$
 e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z \in Q_8/\{\pm e_t\} \cong \mathbb{Z}_2\times\mathbb{Z}_2 ,
@@ -57,13 +57,13 @@ e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z \in Q_8/\{\pm e_t\} \cong \mathbb{Z}_2\time
 \text{mapping to } I,\ -i\sigma_1,\ -i\sigma_2,\ -i\sigma_3 .
 $$
 
-Each is unitary, $\vec e_k\,\vec e_k^{*} = \vec e_k(-\vec e_k) = e_t$, and Hermitian up to the central $i$; each acts on the state by
+Each is $*$-unitary, $\vec e_k\,\vec e_k^{*} = \vec e_k(-\vec e_k) = e_t$, and Hermitian up to the central $i$; each acts on the state by
 
 $$
 \boxed{\;\tilde{Ϛ} = \tilde\Pi_{\Phi^+} \ \longmapsto\ (\vec e_k\otimes e_t)\,\tilde{Ϛ}\,(\vec e_k\otimes e_t)^{*}\;}.
 $$
 
-Because $\vec e_k$ is a unit quaternion, the map is an inner automorphism of the first factor tensored with the identity on the second: it is a **local unitary of the algebra**, and it preserves the spectrum, the trace, and the idempotency of the state.
+Because $\vec e_k$ is a unit quaternion, the map is an inner automorphism of the first factor tensored with the identity on the second: it is a **local $*$-unitary of the algebra**, and it preserves the spectrum, the trace, and the idempotency of the state.
 
 ### The permutation of the Bell basis
 
@@ -88,7 +88,7 @@ $$
 
 and likewise among all pairs, with the diagonal equal to one. Orthogonal states are perfectly distinguishable, so a single measurement on Bob's two qubits can identify the codeword with certainty. This is why the protocol transmits two bits and not merely one: the four codewords live in a four-dimensional space and are orthogonal there, while any four states confined to a single qubit could not be.
 
-**Why conjugation preserves the idempotent structure.** The operation $\vec e_k\otimes e_t$ is unitary and, on each factor, multiplicative; conjugating an idempotent by a unitary returns an idempotent of the same rank, because
+**Why conjugation preserves the idempotent structure.** The operation $\vec e_k\otimes e_t$ is $*$-unitary and, on each factor, multiplicative; conjugating an idempotent by a $*$-unitary returns an idempotent of the same rank, because
 
 $$
 \bigl(U\tilde\Pi U^{*}\bigr)^2 = U\tilde\Pi U^{*} U\tilde\Pi U^{*} = U\tilde\Pi^2U^\dagger = U\tilde\Pi U^{*},
@@ -96,7 +96,7 @@ $$
 \mathrm{Tr}\bigl(U\tilde\Pi U^{*}\bigr) = \mathrm{Tr}(\tilde\Pi) = 1 .
 $$
 
-Hence the image of $\tilde\Pi_{\Phi^+}$ is again a rank-one idempotent, i.e. again a pure state, and since the local unitary preserves the algebra it maps the Bell basis into itself. The four images $\vec e_k\otimes e_t$ acting on the resource exhaust the Bell idempotents because the conjugation action of the group $Q_8/\{\pm e_t\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$ on the four-element Bell basis is transitive: the stabilizer of any Bell idempotent in this action is trivial, so the orbit has four elements, one for each coset. This is the algebraic reason no fifth codeword is available and no third bit can be sent: the orbit of the resource under the local group has exactly four elements.
+Hence the image of $\tilde\Pi_{\Phi^+}$ is again a rank-one idempotent, i.e. again a pure state, and since the local $*$-unitary preserves the algebra it maps the Bell basis into itself. The four images $\vec e_k\otimes e_t$ acting on the resource exhaust the Bell idempotents because the conjugation action of the group $Q_8/\{\pm e_t\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$ on the four-element Bell basis is transitive: the stabilizer of any Bell idempotent in this action is trivial, so the orbit has four elements, one for each coset. This is the algebraic reason no fifth codeword is available and no third bit can be sent: the orbit of the resource under the local group has exactly four elements.
 
 ## Decoding
 
@@ -184,7 +184,7 @@ $$
 \text{one ebit} + \text{one qubit} \ \longleftrightarrow\ \text{two cbits},
 $$
 
-read in the two directions. It is a statement about the tensor-product algebra: the Bell measurement and the local unitary encoding are dual processes, both built from the idempotent basis $\{\tilde\Pi_\epsilon\}$ and the group of local unitaries acting on it.
+read in the two directions. It is a statement about the tensor-product algebra: the Bell measurement and the local $*$-unitary encoding are dual processes, both built from the idempotent basis $\{\tilde\Pi_\epsilon\}$ and the group of local unitaries acting on it.
 
 ## What the Framework Adds and What It Does Not
 

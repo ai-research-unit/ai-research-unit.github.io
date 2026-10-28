@@ -8,7 +8,7 @@ $$
 $$
 The reconstruction is the precise sense in which a state and a representation are two views of one object.
 
-This article carries the construction out for the biquaternion algebra $\mathbb{B}$ in the **Hermitian form** used throughout the corpus. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$ with $\tilde{Ϛ}$ Hermitian; the modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element; and every parameter of the modular flow is unitary, so its inverse *is* its Hermitian adjoint. The modular operator is built from the Hermitian exponentials $e^{-K}$ and $e^{K}$. No inverse of a general element is written anywhere in the construction.
+This article carries the construction out for the biquaternion algebra $\mathbb{B}$ in the **Hermitian form** used throughout the corpus. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$ with $\tilde{Ϛ}$ Hermitian; the modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element; and every parameter of the modular flow is $*$-unitary, so its inverse *is* its Hermitian adjoint. The modular operator is built from the Hermitian exponentials $e^{-K}$ and $e^{K}$. No inverse of a general element is written anywhere in the construction.
 
 The finite dimensionality of $\mathbb{B}$ removes every technical obstruction and makes the construction explicit. States are density matrices, the Hilbert space is the algebra itself with the Hermitian inner product, the representation is left multiplication, and the cyclic vector is the class of the identity.
 
@@ -48,7 +48,7 @@ a left ideal because $\langle \tilde Q_1\tilde Q_3,\tilde Q_1\tilde Q_3\rangle_\
 > $$
 > \pi_\omega(\tilde Q_3)[\tilde Q_1] \;=\; [\tilde Q_3\tilde Q_1]
 > $$
-> is a well-defined $*$-representation of $\mathcal{A}$ on $\mathcal{H}_\omega$, the vector $\Omega_\omega=[e]$ is **cyclic** (the set $\pi_\omega(\mathcal{A})\Omega_\omega$ is dense), and $\omega(\tilde Q_3)=\langle\Omega_\omega|\pi_\omega(\tilde Q_3)|\Omega_\omega\rangle$. The triple $(\mathcal{H}_\omega,\pi_\omega,\Omega_\omega)$ is unique up to unitary equivalence.
+> is a well-defined $*$-representation of $\mathcal{A}$ on $\mathcal{H}_\omega$, the vector $\Omega_\omega=[e]$ is **cyclic** (the set $\pi_\omega(\mathcal{A})\Omega_\omega$ is dense), and $\omega(\tilde Q_3)=\langle\Omega_\omega|\pi_\omega(\tilde Q_3)|\Omega_\omega\rangle$. The triple $(\mathcal{H}_\omega,\pi_\omega,\Omega_\omega)$ is unique up to $*$-unitary equivalence.
 
 Two corollaries will be used constantly. First, $\omega$ is **pure** — not a nontrivial convex combination of other states — if and only if $\pi_\omega$ is **irreducible**. Second, the **cyclic vector is annihilated by the radical**:
 $$
@@ -173,7 +173,7 @@ $$
 \qquad
 U_t \;=\; e^{-itK_{\tilde{Ϛ}}},
 $$
-a Hermitian sandwich whose parameter $U_t$ is unitary: $U_tU_t^{*}=e_t$ and $U_t^{*}=U_{-t}$. Its generator is
+a Hermitian sandwich whose parameter $U_t$ is $*$-unitary: $U_tU_t^{*}=e_t$ and $U_t^{*}=U_{-t}$. Its generator is
 $$
 \frac{d}{dt}\sigma_t(\tilde Q_3)\Big|_{t=0} \;=\; -i\,[K_{\tilde{Ϛ}},\tilde Q_3].
 $$
@@ -231,7 +231,7 @@ One state of $\mathbb{B}$ is distinguished by the algebra rather than by a dynam
 $$
 \tau(\tilde Q_3) \;=\; \tfrac12 \mathrm{Tr}(\tilde Q_3) \;=\; \mathrm{Sc}(\tilde Q_3).
 $$
-It is the unique tracial state — the unique state with $\tau(\tilde Q_3\tilde Q_1)=\tau(\tilde Q_1\tilde Q_3)$ for all $\tilde Q_3,\tilde Q_1$ — and it is invariant under every inner automorphism; for a unitary $\tilde Q$ the invariance reads
+It is the unique tracial state — the unique state with $\tau(\tilde Q_3\tilde Q_1)=\tau(\tilde Q_1\tilde Q_3)$ for all $\tilde Q_3,\tilde Q_1$ — and it is invariant under every inner automorphism; for a $*$-unitary $\tilde Q$ the invariance reads
 $$
 \tau(\tilde U\tilde Q_3\tilde U^{*})=\tau(\tilde Q_3).
 $$
@@ -239,7 +239,7 @@ Its GNS space is the whole algebra with the Hilbert–Schmidt inner product, and
 $$
 \pi_\tau(\tilde Q_3)\tilde Q_1 = \tilde Q_3\tilde Q_1 ,
 $$
-so every element of the algebra appears as a "state" in the reconstruction. The trace state is maximally mixed, and its modular Hamiltonian is the central element $K_\tau=(\log 2)e_t$: the implementing unitary is a central phase, so the flow is trivial, $\sigma_t=\mathrm{id}$, with $\Delta_\tau=1$, and $J_\tau$ is the involution $[\tilde Q_3]\mapsto[\tilde Q_3^{*}]$.
+so every element of the algebra appears as a "state" in the reconstruction. The trace state is maximally mixed, and its modular Hamiltonian is the central element $K_\tau=(\log 2)e_t$: the implementing $*$-unitary is a central phase, so the flow is trivial, $\sigma_t=\mathrm{id}$, with $\Delta_\tau=1$, and $J_\tau$ is the involution $[\tilde Q_3]\mapsto[\tilde Q_3^{*}]$.
 
 The trace state plays for $\mathbb{B}$ the role that the vacuum plays for a field algebra: it is the reference state relative to which the algebra's own structure is displayed. Its two differences from the vacuum are worth naming. It is **mixed**, so its representation is reducible, and it is **not null**, so its modular structure exists. The two reference states are thus at opposite ends of the state space:
 $$
@@ -278,7 +278,7 @@ is linear, positive, and normalised on the convolution algebra of $G$, and the G
 ## What Is Established and What Is Interpretation
 
 **Established (theorem).**
-- The GNS theorem: a state determines a Hilbert space, an irreducible-or-reducible representation, and a cyclic vector, uniquely up to unitary equivalence; purity is irreducibility.
+- The GNS theorem: a state determines a Hilbert space, an irreducible-or-reducible representation, and a cyclic vector, uniquely up to $*$-unitary equivalence; purity is irreducibility.
 - For an abelian group, Bochner's theorem: a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, and it is a state on the convolution algebra whose GNS reconstruction is $L^2$ of that measure.
 - The finite-dimensional Hermitian Tomita–Takesaki structure: $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ with $U_t=e^{-itK}$, $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$, $S_{\tilde{Ϛ}}(\tilde Q_3)=\tilde Q_3^{*}$, $S_{\tilde{Ϛ}}=J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}^{1/2}$, and $J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}=1$.
 
@@ -313,7 +313,7 @@ $$
 of complex dimension $2\,\mathrm{rank}\,\tilde{Ϛ}$.
 For the **vacuum** $\tilde{Ϛ}=\tilde\Pi_+$ the dimension is two, the space is the Peirce carrier $\mathbb{B}\tilde\Pi_+$ — the one-particle spinor module, the minimal left ideal here — and the representation is irreducible; the annihilation operator lies in the radical, so the reconstructed vacuum vector is annihilated by the ladder, which is the GNS form of the mode condition. For the **trace state** $\tilde{Ϛ}=\tfrac12e_t$ the dimension is four, the space is the whole algebra with the Hilbert–Schmidt inner product, and the representation is the regular one. Pure states are the Bloch sphere, mixed states the interior, and the trace state the unique tracial state at the centre.
 
-The construction carries the finite-dimensional Hermitian Tomita–Takesaki structure: the modular Hamiltonian is $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, the modular flow is $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ with $U_t=e^{-itK_{\tilde{Ϛ}}}$, the modular operator is $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$, and the modular conjugation satisfies $J_{\tilde{Ϛ}}^2=1$ and $J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}=1$. The parameters are Hermitian ($K_{\tilde{Ϛ}}$) or unitary ($U_t=e^{-itK_{\tilde{Ϛ}}}$ and $\Delta_{\tilde{Ϛ}}^{it}$), so their inverses are their adjoints; the two exponentials $e^{-K}$ and $e^{K}$ are both Hermitian functions of $K_{\tilde{Ϛ}}$. For a Gibbs state $K_{\tilde{Ϛ}}=\beta\tilde H+(\log Z)e_t$. The modular structure exists on the interior of the Bloch ball where the state is invertible and degenerates on the pure boundary, where the state is a zero divisor.
+The construction carries the finite-dimensional Hermitian Tomita–Takesaki structure: the modular Hamiltonian is $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, the modular flow is $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ with $U_t=e^{-itK_{\tilde{Ϛ}}}$, the modular operator is $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$, and the modular conjugation satisfies $J_{\tilde{Ϛ}}^2=1$ and $J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}=1$. The parameters are Hermitian ($K_{\tilde{Ϛ}}$) or $*$-unitary ($U_t=e^{-itK_{\tilde{Ϛ}}}$ and $\Delta_{\tilde{Ϛ}}^{it}$), so their inverses are their adjoints; the two exponentials $e^{-K}$ and $e^{K}$ are both Hermitian functions of $K_{\tilde{Ϛ}}$. For a Gibbs state $K_{\tilde{Ϛ}}=\beta\tilde H+(\log Z)e_t$. The modular structure exists on the interior of the Bloch ball where the state is invertible and degenerates on the pure boundary, where the state is a zero divisor.
 
 A state has a second description, from harmonic analysis. For an abelian group a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, the same function is the state functional on the convolution algebra, and its GNS reconstruction is $L^2(G^{\vee},\mu)$, with Fourier inversion as the reconstruction. The biquaternion-valued transform of a measure is not such a function, because the algebra's norm is indefinite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — and the definite object is the Hermitian pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3^{*}\tilde Q_1)$, which is the inner product this article uses.
 
@@ -339,7 +339,7 @@ The Hermitian GNS construction supplies the bridge from the vacuum state of *The
 | $\Omega_\omega=[e_t]$ | Cyclic (vacuum) vector |
 | $\dim_\mathbb{C}\mathcal{H}_{\tilde{Ϛ}}=2\,\mathrm{rank}\,\tilde{Ϛ}$ | GNS dimension ($2$ pure, $4$ full-rank/mixed) |
 | $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$ | Modular Hamiltonian (Hermitian) |
-| $U_t=e^{-itK_{\tilde{Ϛ}}}$ | Unitary parameter of the modular flow, $U_t^{*}=U_{-t}$ |
+| $U_t=e^{-itK_{\tilde{Ϛ}}}$ | $*$-Unitary parameter of the modular flow, $U_t^{*}=U_{-t}$ |
 | $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ | Modular flow (Hermitian sandwich) |
 | $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$ | Modular operator (positive, self-adjoint) |
 | $S_{\tilde{Ϛ}}(\tilde Q_3)=\tilde Q_3^{*}$ | Tomita operator |

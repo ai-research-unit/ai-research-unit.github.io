@@ -86,11 +86,11 @@ $$
 
 where $v$ spans the image of $P$.
 
-**Proof.** The ideal $M_5P$ consists of the matrices whose image is contained in $\operatorname{im}P=\mathbb{C}v$; its dimension is $5$, because such a matrix is determined by its values on a basis, all in the line $\mathbb{C}v$. The map $A\mapsto Av$ is left $M_5$-linear and surjective (for any $w$, choose $A$ with $Av=w$); its kernel on $M_5P$ is zero because $A=BP$ and $Av=0$ imply $A=0$ on the image of $P$, hence $A=0$. So it is an isomorphism. For minimality, let $0\ne A\in M_5P$; then $A=BP$ and $BP$ acts on $\operatorname{im}P$ by a nonzero scalar $\lambda$; hence $P=\lambda^{-1}P(BP)\in M_5A$, and $M_5P\subseteq M_5A$, so $M_5A=M_5P$. A nonzero submodule is the whole, so $M_5P$ is simple and minimal.
+**Proof.** For $P=v\ell$ with $\ell(v)=1$, the ideal $M_5P$ consists of the matrices $A=BP=Bv\,\ell=w\ell$ with $w=Bv\in V$; it is five-dimensional, because $w$ is free. The map $A\mapsto Av=w$ is left $M_5$-linear and surjective, and its kernel on $M_5P$ is zero: $A=w\ell$ and $Av=w$, so $Av=0$ gives $w=0$ and $A=0$. It is therefore an isomorphism onto $V$. For minimality, let $0\ne A=w\ell\in M_5P$ with $w\ne0$; choose $B$ with $Bw=v$; then $BA=Bw\,\ell=v\ell=P$, so $P\in M_5A$ and $M_5P\subseteq M_5A$. Hence $M_5A=M_5P$, and $M_5P$ is simple.
 
 **Corollary.** Every minimal left ideal is of the form $M_5P$ for a rank-one idempotent $P$, and every minimal left ideal is isomorphic to $V$. The minimal left ideals are the simple submodules of the left regular module.
 
-**Proof.** By the standard structure theorem for full matrix algebras, every minimal left ideal is $M_5P$ for an idempotent $P$ (see Pierce, *Associative Algebras*). The idempotent can be chosen of rank one: if $\operatorname{rank}P=r$, then $M_5P$ consists of the matrices whose image lies in $\operatorname{im}P$, of dimension $5r$, so minimality forces $r=1$. The theorem above then gives the isomorphism with $V$.
+**Proof.** By the standard structure theorem for full matrix algebras, every minimal left ideal is $M_5P$ for an idempotent $P$ (see Pierce, *Associative Algebras*). The idempotent can be chosen of rank one: if $\operatorname{rank}P=r$, then $M_5P$ consists of the matrices that vanish on $\ker P$, equivalently $A=AP$, and it has dimension $5r$; minimality forces $r=1$. The theorem above then gives the isomorphism with $V$.
 
 ### The Column Ideals
 
@@ -139,6 +139,23 @@ $$
 **Proof.** The lines are the intersections $P_kM_5P_l$; the column is the sum over $k$ for fixed $l$; the row is the sum over $l$ for fixed $k$.
 
 **Remark.** **The Peirce line and the minimal left ideal must not be identified.** The line is one-dimensional and is not a module; the ideal is five-dimensional and is the simple module. The biquaternion article uses the columns as the minimal left ideals; in $M_5$ the columns are the five-dimensional ideals $M_5P_l$, and the lines inside them are the Peirce lines. The word *spinor* is not attached to either: the simple module is the carrier, of spin $2$.
+
+### The Peirce Carrier
+
+**Definition.** The **left Peirce carrier** of a rank-one idempotent $P$ is the left ideal $C_L(P)=M_5P$; the **right Peirce carrier** is the right ideal $C_R(P)=PM_5$. With $Q=I-P$, the Peirce decomposition reads
+
+$$
+C_L(P)=PM_5P\oplus QM_5P,\qquad
+C_R(P)=PM_5P\oplus PM_5Q,
+$$
+
+with summands of dimensions $1$, $4$, $4$, so that both carriers have dimension $1+4=5$.
+
+**Proposition.** The left carrier is isomorphic to $V$ as a left module, the right carrier to $V^*$ as a right module. For a spectral projector $P=P_k$, $C_L(P_k)=\bigoplus_lA_{lk}$ is the $k$-th column and $C_R(P_k)=\bigoplus_lA_{kl}$ is the $k$-th row.
+
+**Proof.** The two decompositions are the Peirce decomposition read on the left and on the right. The dimensions are $\dim PM_5P=1$ and $\dim QM_5P=\dim PM_5Q=4$. The isomorphism $M_5P\cong V$ is the theorem of §*The Ideals $M_5P$*; for the right carrier, $PM_5=\{v\varphi:\varphi\in V^*\}$ and $v\varphi\mapsto\varphi$ is an isomorphism onto $V^*$. For the spectral projector, $A_{lk}=P_lM_5P_k$ and the column is the sum over $l$; the row is the sum over $l$ of $A_{kl}$.
+
+**Remark.** The formula $PM_5P\oplus PM_5Q$ is the **right** carrier; the **left** carrier is $PM_5P\oplus QM_5P$. The two mixed corners are exchanged by transposition and by the involution, and they are different subspaces of $M_5$. The left carrier is the module $V$; the right carrier is the dual right module $V^*$. Neither is a Peirce line, and neither is a spinor.
 
 ## The Double Centralizer
 

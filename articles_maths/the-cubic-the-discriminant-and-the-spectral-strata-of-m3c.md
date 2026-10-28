@@ -161,7 +161,7 @@ Eliminating $a$ gives the two equations
 $$
 s=\frac{t^{2}}{3},\qquad d=\frac{t^{3}}{27},
 $$
-which are independent, so the triple stratum has dimension $9-2=7$. Equivalently, every matrix with a triple root is $aI+N$ with $N$ nilpotent; the scalar $a$ contributes one dimension, and the nilpotent cone in $M_{3}$ has dimension $6$, so the total is $1+6=7$. The scalar matrices $aI$ form the one-dimensional semisimple part of this stratum. The double stratum is the discriminant hypersurface minus the triple stratum, hence of dimension $8$.
+which are independent, so the triple stratum has dimension $9-2=7$. Equivalently, every matrix with a triple root is $aI+N$ with $N$ nilpotent; the scalar $a$ contributes one dimension, and the nilpotent cone in $M_{3}$ is the set $\chi=x^{3}$, equivalently $t=s=d=0$, of dimension $9-3=6$, so the total is $1+6=7$. The scalar matrices $aI$ form the one-dimensional semisimple part of this stratum. The double stratum is the discriminant hypersurface minus the triple stratum, hence of dimension $8$.
 
 **The generic Jordan forms.** The three strata have the following generic Jordan forms:
 
@@ -171,7 +171,7 @@ which are independent, so the triple stratum has dimension $9-2=7$. Equivalently
 | double | $\operatorname{diag}(J_{2}(a),b)$, $a\neq b$ | $3$ |
 | triple | $J_{3}(a)$ | $3$ |
 
-The centraliser of a generic element is three-dimensional in all three cases; the difference is the structure of the centraliser, not its dimension. For the simple spectrum it is the diagonal torus $\mathbb{C}^{\times}\times\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ modulo the diagonal scalar, of dimension $3$; for the double root it is $\mathbb{C}[A]\cong\mathbb{C}[x]/((x-a)^{2}(x-b))$, of dimension $3$, with a nilpotent; for the triple root it is $\mathbb{C}[A]\cong\mathbb{C}[x]/((x-a)^{3})$, of dimension $3$, local.
+The centraliser of a generic element is three-dimensional in all three cases; the difference is the structure of the centraliser, not its dimension. For the simple spectrum it is the diagonal torus $\mathbb{C}^{\times}\times\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, of dimension $3$; for the double root it is $\mathbb{C}[A]\cong\mathbb{C}[x]/((x-a)^{2}(x-b))$, of dimension $3$, with a nilpotent; for the triple root it is $\mathbb{C}[A]\cong\mathbb{C}[x]/((x-a)^{3})$, of dimension $3$, local.
 
 **The centraliser of a cyclic element.** An element $A$ is **cyclic** when its minimal polynomial has degree $3$, equivalently when $\mathbb{C}[A]$ has dimension $3$, equivalently when there is a vector $v$ such that $v,Av,A^{2}v$ is a basis. For a cyclic element the centraliser is exactly $\mathbb{C}[A]$, of dimension $3$.
 
@@ -276,4 +276,4 @@ At a simple spectrum the Lagrange projectors are the spectral projectors. At a d
 - [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m3c.html), for the Dunford calculus.
 - [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m3c.html), for the Hermitian spectral theorem.
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the general spectral theory.
-- [The Determinant of a Linear Map](the-determinant-of-a-linear-map.html), for the determinant and the resultant.
+- [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant and its properties.

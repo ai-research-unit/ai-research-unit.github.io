@@ -78,7 +78,7 @@ so that the quaternionic form is the determinant of the image, read positively.
 
 *Proof.* $\det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural} > 0$ for $\tilde q \neq 0$, and the image is closed under products and inverses.
 
-**Theorem (the shell).** The shell $N = 1$ corresponds to the matrices of the image with $\det = 1$ and $A^{\dagger}A = \mathbb{1}$; it is the special unitary group,
+**Theorem (the shell).** The shell $N = 1$ corresponds to the matrices of the image with $\det = 1$ and $A^{\dagger}A = \mathbb{1}$; it is the special $*$-unitary group,
 
 $$
 \boxed{\;\mathsf{M}_2(\mathbb{H}^1) = SU(2)\;},
@@ -86,9 +86,9 @@ $$
 
 a compact group of real dimension three.
 
-*Proof.* $A^{\dagger}A = \mathsf{M}_2(\tilde q)^{\dagger}\mathsf{M}_2(\tilde q) = \mathsf{M}_2(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}\mathbb{1}$, so on the shell $A$ is unitary; and $\det A = \langle\tilde q\rangle_{\natural} = 1$, so $A \in SU(2)$. Conversely a unitary matrix of the image has $N = \det = 1$.
+*Proof.* $A^{\dagger}A = \mathsf{M}_2(\tilde q)^{\dagger}\mathsf{M}_2(\tilde q) = \mathsf{M}_2(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}\mathbb{1}$, so on the shell $A$ is $*$-unitary; and $\det A = \langle\tilde q\rangle_{\natural} = 1$, so $A \in SU(2)$. Conversely a $*$-unitary matrix of the image has $N = \det = 1$.
 
-**Corollary.** The pin and spin groups of the quaternionic form are the shell $\mathbb{H}^1$, by *The Pin and Spin Groups of the General Quaternionic Algebra*, above this article in this category, and the matrix model identifies them with $SU(2)$; the identification is the standard one of the unit quaternions with the special unitary group.
+**Corollary.** The pin and spin groups of the quaternionic form are the shell $\mathbb{H}^1$, by *The Pin and Spin Groups of the General Quaternionic Algebra*, above this article in this category, and the matrix model identifies them with $SU(2)$; the identification is the standard one of the unit quaternions with the special $*$-unitary group.
 
 ## The Inner Automorphisms
 
@@ -120,5 +120,5 @@ Under the embedding $\mathsf{M}_2(e_t) = \mathbb{1}$, $\mathsf{M}_2(\vec e_k) = 
 ## Further Reading
 
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the Pauli-matrix representation of the quaternions and the unit sphere.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the embedding of the quaternions in $M_2(\mathbb{C})$, the real form and the special unitary group.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the embedding of the quaternions in $M_2(\mathbb{C})$, the real form and the special $*$-unitary group.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for representations of a division algebra and the trace pairing.

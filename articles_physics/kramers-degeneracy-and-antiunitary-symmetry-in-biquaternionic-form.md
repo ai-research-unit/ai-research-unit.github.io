@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A symmetry that reverses time is not represented by a unitary operator on the state space; it is represented by an **antiunitary** one, and that one word carries the whole of Kramers' theorem. The companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* establishes that the biquaternion algebra carries three antilinear involutions — complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$ — alongside the *linear* quaternion conjugation, that their fixed spaces are four distinct subspaces, and that the algebra's real structure $\flat$ and the module's charge conjugation $\mathcal{C}$ are **different real structures on different spaces**. The companion article *Spin-1/2 Quantum Physics in Biquaternionic Form* and the spin–statistics companion fix the $2\pi$ covering sign. This article puts those two ingredients together.
+A symmetry that reverses time is not represented by a $*$-unitary operator on the state space; it is represented by an **antiunitary** one, and that one word carries the whole of Kramers' theorem. The companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form* establishes that the biquaternion algebra carries three antilinear involutions — complex conjugation $\bar{\cdot}$, Hermitian conjugation ${}^{*}$, and the anti-Hermitian conjugation $\flat=-{}^{*}$ — alongside the *linear* quaternion conjugation, that their fixed spaces are four distinct subspaces, and that the algebra's real structure $\flat$ and the module's charge conjugation $\mathcal{C}$ are **different real structures on different spaces**. The companion article *Spin-1/2 Quantum Physics in Biquaternionic Form* and the spin–statistics companion fix the $2\pi$ covering sign. This article puts those two ingredients together.
 
 It establishes four things.
 
@@ -25,7 +25,7 @@ $$
 \langle\mathcal T u,\mathcal T v\rangle=\overline{\langle u,v\rangle} ,
 $$
 
-so that $|\langle\mathcal T u,\mathcal T v\rangle|=|\langle u,v\rangle|$ and the map is a symmetry of the ray space. Every antiunitary map is of the form $\mathcal T=UK$ with $U$ unitary and $K$ a fixed antilinear involution; the pair $(U,K)$ is not unique, but the *sign* of $\mathcal T^2$ is a property of $\mathcal T$ alone.
+so that $|\langle\mathcal T u,\mathcal T v\rangle|=|\langle u,v\rangle|$ and the map is a symmetry of the ray space. Every antiunitary map is of the form $\mathcal T=UK$ with $U$ $*$-unitary and $K$ a fixed antilinear involution; the pair $(U,K)$ is not unique, but the *sign* of $\mathcal T^2$ is a property of $\mathcal T$ alone.
 
 **The algebra's antilinear structure.** The companion article tabulates three antilinear involutions, $\bar{\cdot}$, $\flat$ and ${}^{*}$, with fixed spaces of real dimensions $4$, $4$ and $4$; the two sectors are the fixed spaces of $\flat$ ($\mathbb{M}_-$) and ${}^{*}$ ($\mathbb{M}_+$), and $\flat$ acts on them as $+$ and $-$. Antilinearity is therefore not an add-on to the framework; it is present three times over, and the sectors are among its fixed spaces.
 
@@ -176,13 +176,13 @@ The value of $\mathcal T^2$ is not a detail of the operator; it selects the symm
 
 | $\mathcal T^2$ | Class | Structure on the state space | Enforced degeneracy |
 |---|---|---|---|
-| no antiunitary symmetry | unitary | complex | none |
+| no antiunitary symmetry | $*$-unitary | complex | none |
 | $+e_t$ | orthogonal | real | none |
 | $-e_t$ | symplectic | quaternionic | Kramers (even) |
 
 The three rows are the three ways a complex Hilbert space can be given a real structure: none, a real structure (a conjugation $K$ with $K^2=1$), and a quaternionic structure (an antiunitary $J$ with $J^2=-1$). Only the last enforces a degeneracy, and the reason is the one the proof exhibits: $J^2=-1$ is what makes the partner orthogonal to its source, whereas a real structure's partner is not orthogonal to it in general and no degeneracy follows. The opposite-sign verification above is the second row of the table realized: a real symmetric matrix has no enforced degeneracy.
 
-The biquaternion interpretation is that the algebra contains the units for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_k$ square to $-e_t$ and supply candidate $J$'s; its involutions $\bar{\cdot}$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
+The biquaternion interpretation is that the algebra contains the units for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_k$ square to $-e_t$ and supply candidate $J$'s; its involutions $\bar{\cdot}$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The $*$-unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
 
 ## What Breaks the Symmetry
 
@@ -259,7 +259,7 @@ The same antiunitary $J$ with $J^2=-e_t$ is a quaternionic structure, and the co
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal T=UK$ | Antiunitary time reversal; $U$ unitary, $K$ antilinear involution |
+| $\mathcal T=UK$ | Antiunitary time reversal; $U$ $*$-unitary, $K$ antilinear involution |
 | $\langle\mathcal Tu,\mathcal Tv\rangle=\overline{\langle u,v\rangle}$ | Antiunitarity |
 | $U=\exp(\tfrac{\pi}{2}n\cdot e)=n\cdot e$ | $\pi$-rotation element; $(n\cdot e)^2=-e_t$, $U^*=U$ |
 | $\mathcal T^2=UU^*=U^2=-e_t$ | Kramers sign as the covering element |
@@ -276,7 +276,7 @@ The same antiunitary $J$ with $J^2=-e_t$ is a quaternionic structure, and the co
 | $\vec e_x,\vec e_y,\vec e_z$ | The three imaginary units = the three candidate axes |
 | $H=\begin{pmatrix}A&B\\-B^*&A^*\end{pmatrix}$, $A=A^\dagger$, $B=-B^T$ | $\mathcal T$-invariant Hermitian form on $\mathbb{C}^{2N}$ |
 | $\dim_\mathbb{R}\{H\text{ invariant}\}=N(2N-1)$ | Counting against $4N^2$ for general Hermitian |
-| $\mathcal T^2$ absent / $+e_t$ / $-e_t$ | Unitary / orthogonal / symplectic class |
+| $\mathcal T^2$ absent / $+e_t$ / $-e_t$ | $*$-Unitary / orthogonal / symplectic class |
 
 ## Further Reading
 
@@ -287,5 +287,5 @@ The same antiunitary $J$ with $J^2=-e_t$ is a quaternionic structure, and the co
 - S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford, 1995), for the quaternionic structure of a Hilbert space with an antiunitary $J$, $J^2=-1$, and its physical consequences.
 - C. L. Kane and E. J. Mele, "Quantum spin Hall effect in graphene," *Physical Review Letters* **95** (2005) 226801, and J. E. Moore, "The birth of topological insulators," *Nature* **464** (2010) 194–198, for Kramers degeneracy and its topological protection.
 - B. A. Bernevig and T. L. Hughes, *Topological Insulators and Topological Superconductors* (Princeton, 2013), for time reversal, Kramers pairs, and the $\mathbb{Z}_2$ classification.
-- F. Haake, *Quantum Signatures of Chaos* (Springer, 2010), for the three symmetry classes (unitary, orthogonal, symplectic) selected by $\mathcal T^2=0,\pm1$.
+- F. Haake, *Quantum Signatures of Chaos* (Springer, 2010), for the three symmetry classes ($*$-unitary, orthogonal, symplectic) selected by $\mathcal T^2=0,\pm1$.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the conjugation involutions of the biquaternion/Clifford algebra and their fixed spaces.

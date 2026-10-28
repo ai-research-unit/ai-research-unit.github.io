@@ -55,7 +55,7 @@ U(x)\;\longmapsto\; g_L\,U(x)\,g_R^{*},
 \qquad g_L, g_R \in G ,
 $$
 
-and the invariant Lagrangian is built from $U^{*}\partial/\partial Q_{1,\mu} U$ or, equivalently, from $\partial/\partial Q_{1,\mu} U\,U^{*}$. The diagonal subgroup $g_L = g_R$ is the unbroken $H$ realised linearly; the axial directions $g_L = g_R^{*}$ are the broken ones. This is the structure that the framework's unit quaternion realises, and the next sections construct it. The right factor is the adjoint; on the unitary parameters, and in particular on the unit real quaternions, it is the group inverse, so this is the usual left–right action written without an operator inverse.
+and the invariant Lagrangian is built from $U^{*}\partial/\partial Q_{1,\mu} U$ or, equivalently, from $\partial/\partial Q_{1,\mu} U\,U^{*}$. The diagonal subgroup $g_L = g_R$ is the unbroken $H$ realised linearly; the axial directions $g_L = g_R^{*}$ are the broken ones. This is the structure that the framework's unit quaternion realises, and the next sections construct it. The right factor is the adjoint; on the $*$-unitary parameters, and in particular on the unit real quaternions, it is the group inverse, so this is the usual left–right action written without an operator inverse.
 
 ## From the Linear Model to the Nonlinear One
 
@@ -165,7 +165,7 @@ WHY IT IS NEEDED
   gL = gR leaves only the diagonal SU(2)V.
 * The second factor is the axial symmetry. Without it there is no axial
   current, no Goldstone coset and no breaking pattern.
-* For unitary parameters, and in particular on the unit real
+* For $*$-unitary parameters, and in particular on the unit real
   quaternions, the adjoint is the group inverse. The map gL X gR* is
   therefore the usual left-right action, with both factors written by
   one operation and no operator inverse.

@@ -13,7 +13,7 @@ and the abelian factor on the central phase $\mathbb C_{\mathbb B}$. The reason 
 Three distinct questions must be separated, because they have different answers and conflating them produces a spurious "problem".
 
 1. *What is the gauge group of the fields that live in the algebra itself?* The fields are valued in the algebra $\mathbb B$ or in its defining module; the group that acts unitarily on them is intrinsic, and it is the answer to this question that the article establishes: $\mathrm{U}(2)$, i.e. $SU(2)\times \mathrm{U}(1)$ up to finite identification.
-2. *What gauge group can be embedded in a matrix algebra over $\mathbb B$?* Once the carrier is enlarged to $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$, the intrinsic group is $\mathrm{U}(2n)$ and any compact Lie group of dimension at most $4n^2$ with a faithful $2n$-dimensional unitary representation embeds. $SU(3)$ embeds for $n\ge2$, because $SU(3)\subset \mathrm{U}(3)\subset \mathrm{U}(4)$. This is an embedding *into* a larger group, not the algebra's own group.
+2. *What gauge group can be embedded in a matrix algebra over $\mathbb B$?* Once the carrier is enlarged to $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$, the intrinsic group is $\mathrm{U}(2n)$ and any compact Lie group of dimension at most $4n^2$ with a faithful $2n$-dimensional $*$-unitary representation embeds. $SU(3)$ embeds for $n\ge2$, because $SU(3)\subset \mathrm{U}(3)\subset \mathrm{U}(4)$. This is an embedding *into* a larger group, not the algebra's own group.
 3. *Can the colour triplet be a module of the algebra?* No. A module over $\mathbb B\cong M_2(\mathbb C)$ has even complex dimension, and colour requires a complex three-dimensional space.
 
 The article answers all three, and the answers are consistent: the algebra's intrinsic compact gauge algebra is $\mathrm{U}(2)$, of real dimension four; $SU(3)$ needs an eight-dimensional compact algebra and cannot be contained in it; and the smallest carrier that contains $SU(3)$ is $M_2(\mathbb B)$, whose intrinsic group is $\mathrm{U}(4)$.
@@ -52,7 +52,7 @@ $$
 \mathbb M_+=\bigl\{x\in\mathbb B:x^{*}=x\bigr\}=\mathrm{span}_{\mathbb R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 
-of real dimensions $4$ and $4$, with $x^\flat=-x^{*}$ and $x^{*}=\bar x^{\,*}$; quaternion conjugation alone ($\vec e_k\mapsto-\vec e_k$, $i$ fixed) preserves both sectors but has as its fixed space neither of them — it is the centre $\mathbb C_{\mathbb B}$. The anti-Hermitian sector is the compact, unitary direction: exponentiating it gives the unitary group of the defining module,
+of real dimensions $4$ and $4$, with $x^\flat=-x^{*}$ and $x^{*}=\bar x^{\,*}$; quaternion conjugation alone ($\vec e_k\mapsto-\vec e_k$, $i$ fixed) preserves both sectors but has as its fixed space neither of them — it is the centre $\mathbb C_{\mathbb B}$. The anti-Hermitian sector is the compact, $*$-unitary direction: exponentiating it gives the $*$-unitary group of the defining module,
 
 $$
 \boxed{\;\exp\bigl(\mathbb M_-\bigr)=\mathrm{U}(2),
@@ -234,12 +234,12 @@ The ceiling is passed by enlarging the carrier to $M_n(\mathbb B)\cong M_{2n}(\m
 
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the classification of real division algebras and the octonion automorphism group.
 - John C. Baez, "The octonions", *Bulletin of the American Mathematical Society* 39 (2002) 145–205, for the route from the normed division algebras to $SU(3)$, $G_2$ and the exceptional groups.
-- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the division algebras $\mathbb R,\mathbb C,\mathbb H,\mathbb O$ and their automorphism and unitary groups.
+- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the division algebras $\mathbb R,\mathbb C,\mathbb H,\mathbb O$ and their automorphism and $*$-unitary groups.
 - Israel M. Gelfand, Raoul A. Minlos and Z. Ya. Shapiro, *Representations of the Rotation and Lorentz Groups* (Pergamon, 1963), for the representation theory of $SU(2)$ and the module structure used here.
 - Theodore Frankel, *The Geometry of Physics* (Cambridge University Press, 3rd ed. 2011), for the geometry of $\mathrm{U}(2)$, $SU(2)$ and the compact forms of the classical groups.
 - Howard Georgi, *Lie Algebras in Particle Physics* (Westview, 2nd ed. 1999), for the dimension and rank counting of $\mathrm{SU}(n)$ and the Standard-Model gauge group.
 - Leonard Susskind and John Kogut, "Preface to the strong interactions", and Kenneth G. Wilson, "Confinement of quarks", *Physical Review D* 10 (1974) 2445–2459, for the singlet-sector structure of the colour sector.
-- Mikio Nakahara, *Geometry, Topology and Physics* (CRC Press, 2nd ed. 2003), for the quaternion algebra, its automorphisms and its unitary groups.
+- Mikio Nakahara, *Geometry, Topology and Physics* (CRC Press, 2nd ed. 2003), for the quaternion algebra, its automorphisms and its $*$-unitary groups.
 - R. Slansky, "Group theory for unified model building", *Physics Reports* 79 (1981) 1–128, for the representation theory of the unified groups and the dimension counting of the Standard-Model factors.
 - Michael Atiyah, *The Geometry and Physics of Knots* (Cambridge University Press, 1990), for the geometry of the classical groups and the quaternionic structures that constrain them.
 - A. Gsponer, "Explicit closed-form parametrization of SU(3) and SU(4) in terms of complex quaternions and elementary functions," arXiv:math-ph/0211056v2, 2002, for the explicit closed forms of the elements of the embedded $\mathrm{SU}(3)$ used in *What Would Be Needed to Pass the Ceiling*.

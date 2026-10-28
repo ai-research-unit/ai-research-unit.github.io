@@ -127,7 +127,7 @@ The sector sign is read as a **flag** and not as a metric. It says which half an
 
 ### The Born Form, $H$
 
-The Hermitian form is positive definite of signature $(8,0)$ on the real algebra, and it is the only one of the four that is definite on every subspace. Its square root is the unique topological norm, and it is the form a probability is built from. It is the **Born pairing** of a state and an observable, the form preserved by the unitary evolution, and the form whose isometry group is $\mathrm{U}(4)$.
+The Hermitian form is positive definite of signature $(8,0)$ on the real algebra, and it is the only one of the four that is definite on every subspace. Its square root is the unique topological norm, and it is the form a probability is built from. It is the **Born pairing** of a state and an observable, the form preserved by the $*$-unitary evolution, and the form whose isometry group is $\mathrm{U}(4)$.
 
 It is blind to the sector: positive on the material and on the informational side alike. That blindness is the precise content of the corpus's rule that the material sector is invisible in the sesquilinear layer. On the material sector the Born form is the Euclidean square, $c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2}$, and it is minus the sector sign; the sign of the sector lives in the bilinear layer, and the sesquilinear layer does not carry it.
 

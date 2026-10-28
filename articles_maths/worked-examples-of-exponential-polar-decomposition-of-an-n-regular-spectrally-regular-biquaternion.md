@@ -83,7 +83,7 @@ The following identities hold in every case and are used below without comment.
 |---|---|
 | $\langle\tilde U\rangle_{\natural}=1$ | the unit factor has norm one |
 | $\tilde U_{\mathrm b}^*=\tilde U_{\mathrm b}$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$ | the Hermitian factor is positive of norm one |
-| $\tilde u_{\mathrm r}^*=\tilde u_{\mathrm r}^{-1}$, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ | the rotor is unitary of norm one |
+| $\tilde u_{\mathrm r}^*=\tilde u_{\mathrm r}^{-1}$, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ | the rotor is $*$-unitary of norm one |
 | $\tilde Q=\Rho\tilde U$ | the modulus–unit split |
 | $[\tilde Q,\tilde Q^*]=-2\vec Q\times\overline{\vec Q}$ | normality |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
@@ -153,7 +153,7 @@ The element is normal: $\vec Q\times\overline{\vec Q}=0$. The eigenbasis is the 
 
 ### The Checks
 
-The norm is one; the Hermitian factor is the identity; the rotor is unitary. The true logarithm is
+The norm is one; the Hermitian factor is the identity; the rotor is $*$-unitary. The true logarithm is
 
 $$
 \operatorname{Log}\tilde Q=\frac{\pi}{2}\vec e_x,

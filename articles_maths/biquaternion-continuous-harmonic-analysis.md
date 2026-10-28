@@ -170,7 +170,7 @@ $$
 
 ### The Plancherel Theorem
 
-**Theorem (Plancherel).** For a root with $\rho^{*} = -\rho$ — the scalar imaginary and the real roots — the transform extends uniquely to a unitary operator on the space $L^2(\mathbb{R}, \mathbb{B})$ of square-integrable biquaternion-valued functions, with
+**Theorem (Plancherel).** For a root with $\rho^{*} = -\rho$ — the scalar imaginary and the real roots — the transform extends uniquely to a $*$-unitary operator on the space $L^2(\mathbb{R}, \mathbb{B})$ of square-integrable biquaternion-valued functions, with
 
 $$
 \boxed{\; \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega \;}.
@@ -178,7 +178,7 @@ $$
 
 **Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_t, \rho, \nu, \xi\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.
 
-**Remark (the genuinely complex roots).** Off the degenerate families the factorization still holds and the transform is still invertible on $L^2(\mathbb{R}, \mathbb{B})$, but it is **not** an isometry for the Euclidean norm. What it preserves is the coefficient norm of the root-adapted basis, and the two norms differ because a genuinely complex root is not a Euclidean unit vector, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$ for $\rho = b\mu + d\nu i$. The unitary statement is therefore exactly the statement $\rho^{*} = -\rho$, the same dichotomy that governs the positivity of the transform of a measure (*The General Plain Sesqualgebra (GPS) over $\mathbb{C}$*), and the transform remains a faithful change of description for every root.
+**Remark (the genuinely complex roots).** Off the degenerate families the factorization still holds and the transform is still invertible on $L^2(\mathbb{R}, \mathbb{B})$, but it is **not** an isometry for the Euclidean norm. What it preserves is the coefficient norm of the root-adapted basis, and the two norms differ because a genuinely complex root is not a Euclidean unit vector, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$ for $\rho = b\mu + d\nu i$. The $*$-unitary statement is therefore exactly the statement $\rho^{*} = -\rho$, the same dichotomy that governs the positivity of the transform of a measure (*The General Plain Sesqualgebra (GPS) over $\mathbb{C}$*), and the transform remains a faithful change of description for every root.
 
 **Corollary (Parseval).** For a root with $\rho^{*} = -\rho$ and for $f, g \in L^2(\mathbb{R}, \mathbb{B})$,
 
@@ -459,7 +459,7 @@ $$
 \langle\tilde{Q},\omega\rangle_{\natural*}^{-1} = W_2(Q_y, -\omega_2) \, W_1(Q_x, -\omega_1).
 $$
 
-For two pure roots the kernel is unitary in the sense of the previous section,
+For two pure roots the kernel is $*$-unitary in the sense of the previous section,
 
 $$
 \langle K\rangle_{\natural} = e_t, \qquad \overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},\omega\rangle_{\natural*}^{-1},

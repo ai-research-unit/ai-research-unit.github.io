@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Entanglement is a property of a joint state, and a change of inertial frame is a change of the joint state. It is therefore not obvious that the entanglement of two particles should be the same for two observers in relative motion, and the relativistic quantum information literature has established that in general it is not: the reduced entropy of a particle's spin is frame-dependent when its momentum is uncertain, and the spin entanglement of a pair of wave packets changes under a boost. The mechanism is not a direct action of the boost on the spin. It is the **momentum dependence of the Wigner rotation**: at definite momentum a Lorentz transformation acts on the spin by a unitary element of the little group, and a momentum-independent unitary cannot change entanglement; when the momentum is a superposition, the Wigner rotation differs from branch to branch, the boost correlates spin with momentum, and tracing the momentum leaves a spin state whose entanglement has changed.
+Entanglement is a property of a joint state, and a change of inertial frame is a change of the joint state. It is therefore not obvious that the entanglement of two particles should be the same for two observers in relative motion, and the relativistic quantum information literature has established that in general it is not: the reduced entropy of a particle's spin is frame-dependent when its momentum is uncertain, and the spin entanglement of a pair of wave packets changes under a boost. The mechanism is not a direct action of the boost on the spin. It is the **momentum dependence of the Wigner rotation**: at definite momentum a Lorentz transformation acts on the spin by a $*$-unitary element of the little group, and a momentum-independent $*$-unitary cannot change entanglement; when the momentum is a superposition, the Wigner rotation differs from branch to branch, the boost correlates spin with momentum, and tracing the momentum leaves a spin state whose entanglement has changed.
 
-This article develops that mechanism inside the biquaternion framework. The joint state of two qubits is an element of the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$; the reduced state of one qubit is a partial trace; the entanglement measures are the standard ones — the Schmidt coefficients, the concurrence, the entanglement entropy — computed with the algebra's trace pairing. The relativistic content is the action of the unit-norm group on the spin factor, which at sharp momentum is the tensor product of two unitary Wigner rotations and at uncertain momentum is a momentum-controlled rotation. The article derives both regimes, obtains the sharp-momentum invariance as a theorem, produces the frame dependence as an explicit computation on a state with a two-branch momentum distribution, and states what the framework adds to the standard account and what it does not.
+This article develops that mechanism inside the biquaternion framework. The joint state of two qubits is an element of the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$; the reduced state of one qubit is a partial trace; the entanglement measures are the standard ones — the Schmidt coefficients, the concurrence, the entanglement entropy — computed with the algebra's trace pairing. The relativistic content is the action of the unit-norm group on the spin factor, which at sharp momentum is the tensor product of two $*$-unitary Wigner rotations and at uncertain momentum is a momentum-controlled rotation. The article derives both regimes, obtains the sharp-momentum invariance as a theorem, produces the frame dependence as an explicit computation on a state with a two-branch momentum distribution, and states what the framework adds to the standard account and what it does not.
 
 The findings are stated in advance.
 
@@ -64,7 +64,7 @@ The framework inherits all three unchanged: they are computed from the trace and
 
 ## The Lorentz Transformation of a Two-Particle State
 
-### Sharp momenta: local unitary rotations
+### Sharp momenta: local $*$-unitary rotations
 
 Consider two massive particles with sharp four-velocities $\tilde{V}_1,\tilde{V}_2$. Their joint state is a product of a momentum part and a spin part,
 $$
@@ -76,9 +76,9 @@ $$
 \qquad
 \tilde{W}_j = \tilde{W}(\tilde U_{\mathrm L},\tilde{V}_j)\in SU(2).
 $$
-This is the standard action of the Lorentz group on definite-momentum one-particle states, and it is the content of the Wigner construction: the momentum labels move, the spin is rotated by an element of the little group, and the transformation is unitary on the full Hilbert space.
+This is the standard action of the Lorentz group on definite-momentum one-particle states, and it is the content of the Wigner construction: the momentum labels move, the spin is rotated by an element of the little group, and the transformation is $*$-unitary on the full Hilbert space.
 
-The spin state is therefore transformed by a **local unitary** $\tilde{W}_1\otimes\tilde{W}_2$. Local unitaries preserve every entanglement measure:
+The spin state is therefore transformed by a **local $*$-unitary** $\tilde{W}_1\otimes\tilde{W}_2$. Local unitaries preserve every entanglement measure:
 $$
 \boxed{\;C\bigl((\tilde{W}_1\otimes\tilde{W}_2)|\chi\rangle\bigr) = C(|\chi\rangle), \qquad
 S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{(\tilde{W}_1\otimes\tilde{W}_2)\chi}\bigr) = S\bigl(\mathrm{Tr}_2\,\tilde\Pi_{\chi}\bigr)\;},
@@ -87,7 +87,7 @@ because $\tilde{W}_1\otimes\tilde{W}_2$ preserves the tensor product structure a
 
 **Theorem (sharp-momentum invariance).** For two particles of definite four-velocity, and for any Lorentz transformation, the spin entanglement of the pair — its Schmidt coefficients, its concurrence, and its entanglement entropy — is invariant.
 
-The theorem is worth stating because it is the exact sense in which the framework reproduces the standard result, and because it isolates the only remaining source of frame dependence. A sharp momentum cannot produce a frame-dependent spin entanglement, because a momentum-independent unitary on the spin factor cannot create or destroy entanglement. If the framework is to exhibit frame dependence, it must come from a state that is not a momentum eigenstate.
+The theorem is worth stating because it is the exact sense in which the framework reproduces the standard result, and because it isolates the only remaining source of frame dependence. A sharp momentum cannot produce a frame-dependent spin entanglement, because a momentum-independent $*$-unitary on the spin factor cannot create or destroy entanglement. If the framework is to exhibit frame dependence, it must come from a state that is not a momentum eigenstate.
 
 ### A worked sharp-momentum instance
 
@@ -97,7 +97,7 @@ $$
 = 0.995308\,e_t + 0.096756\,\vec u_y,
 \qquad \alpha = 0.193815\ \text{rad} = 11.1048^\circ ,
 $$
-a rotation about $\vec u_y\propto\vec u_z\times\vec u_p$, as the geometry requires. Starting from $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, the spin state is rotated by $\tilde{W}_A\otimes e_t$ and its concurrence is $1.00000000$; the reduced state of $A$ is the maximally mixed state carried to a rotated maximally mixed state, hence unchanged, and the reduced entropy remains $\log 2$. This is the theorem in one instance: at sharp momentum the boost is a local unitary and every entanglement measure is invariant.
+a rotation about $\vec u_y\propto\vec u_z\times\vec u_p$, as the geometry requires. Starting from $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, the spin state is rotated by $\tilde{W}_A\otimes e_t$ and its concurrence is $1.00000000$; the reduced state of $A$ is the maximally mixed state carried to a rotated maximally mixed state, hence unchanged, and the reduced entropy remains $\log 2$. This is the theorem in one instance: at sharp momentum the boost is a local $*$-unitary and every entanglement measure is invariant.
 
 ## Momentum Superposition and the Frame Dependence
 
@@ -120,9 +120,9 @@ $$
 \tilde{Ϛ}_{\mathrm{spin}} \ \longmapsto\
 \sum_i w_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{Ϛ}_{\mathrm{spin},i}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger ,
 $$
-a **mixed-unitary channel** on the spin factor whose Kraus operators are the branch Wigner rotations. Two features are immediate and are the whole of the mechanism.
+a **mixed-$*$-unitary channel** on the spin factor whose Kraus operators are the branch Wigner rotations. Two features are immediate and are the whole of the mechanism.
 
-First, the channel is unitary — hence entanglement-preserving — if and only if the Wigner rotation is the same on every branch, which is the sharp-momentum case of the theorem. Second, when the rotations differ across branches the channel is a non-trivial average of local unitaries; it can and generally does change both the reduced state and the entanglement, and it is unital (it preserves the maximally mixed state) but not unitary.
+First, the channel is $*$-unitary — hence entanglement-preserving — if and only if the Wigner rotation is the same on every branch, which is the sharp-momentum case of the theorem. Second, when the rotations differ across branches the channel is a non-trivial average of local unitaries; it can and generally does change both the reduced state and the entanglement, and it is unital (it preserves the maximally mixed state) but not $*$-unitary.
 
 ### The symmetric two-branch case: a dephasing channel
 
@@ -176,7 +176,7 @@ The channel of the previous subsection is **unital**: each branch rotates the id
 $$
 \sum_i w_i\,\tilde{W}_i\,e_t\,\tilde{W}_i^{*} = \sum_i w_i\,e_t = e_t ,
 $$
-because every Wigner rotor is unitary. The maximally mixed spin state is therefore fixed, and the fully mixed state is a fixed point of every frame transformation. A consequence is worth recording: for the state $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$ the marginal of each particle is maximally mixed, and it remains maximally mixed under the boost, so the entire frame dependence of the concurrence is invisible in the single-particle marginals. The effect is a change in the *correlations* of the pair, not in the statistics of either particle alone. This is also why the boost cannot be used to signal: the marginal of the un-boosted particle is untouched, by the cyclicity of the partial trace, and the change in the joint state is only visible to an observer who has access to both particles and knows the momentum distribution.
+because every Wigner rotor is $*$-unitary. The maximally mixed spin state is therefore fixed, and the fully mixed state is a fixed point of every frame transformation. A consequence is worth recording: for the state $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$ the marginal of each particle is maximally mixed, and it remains maximally mixed under the boost, so the entire frame dependence of the concurrence is invisible in the single-particle marginals. The effect is a change in the *correlations* of the pair, not in the statistics of either particle alone. This is also why the boost cannot be used to signal: the marginal of the un-boosted particle is untouched, by the cyclicity of the partial trace, and the change in the joint state is only visible to an observer who has access to both particles and knows the momentum distribution.
 
 ### The invariant spinor concurrence and where the invariance goes
 
@@ -230,11 +230,11 @@ with the coefficient $1/2$ confirmed by a numerical limit in which both rapiditi
 
 ## What Is Frame-Dependent and What Is Not
 
-**Not frame-dependent.** The entanglement of the *full* state, momentum included, is a property of a state under a unitary transformation and is invariant: the Lorentz group acts unitarily on the full one-particle Hilbert space, so the entanglement between the two particles including their momenta is a Lorentz invariant. The spin entanglement of two sharp-momentum particles is likewise invariant, by the theorem above. And no observable marginal can be changed by a local operation on the other particle, by the cyclicity of the partial trace — the framework's form of no-signaling, recorded in the entangled-subsystems companion.
+**Not frame-dependent.** The entanglement of the *full* state, momentum included, is a property of a state under a $*$-unitary transformation and is invariant: the Lorentz group acts unitarily on the full one-particle Hilbert space, so the entanglement between the two particles including their momenta is a Lorentz invariant. The spin entanglement of two sharp-momentum particles is likewise invariant, by the theorem above. And no observable marginal can be changed by a local operation on the other particle, by the cyclicity of the partial trace — the framework's form of no-signaling, recorded in the entangled-subsystems companion.
 
 **Frame-dependent.** The spin entanglement of a *reduced* state obtained by tracing an uncertain momentum is frame-dependent, because the boost entangles spin with momentum and the trace discards the momentum. The reduced spin entropy, the concurrence, and the spin correlation functions of a wave packet therefore all transform non-trivially. The effect is second order in the momentum spread in the sense that it vanishes as the distribution narrows to a delta function, and it vanishes as the boost is removed.
 
-**The physical location of the non-invariance.** The invariance group of the spin factor is the little group $SU(2)$, and $SU(2)$ acts unitarily; the frame dependence is not a failure of unitarity but the consequence of an operation that does not factorise as spin $\times$ momentum. A boost is a unitary operation on the full Hilbert space which is *not* a product of an operation on the momentum factor and an operation on the spin factor; it correlates them. The spin state, which is a partial description, therefore changes. This is the same structure that produces the Unruh effect for accelerated observers and the thermal character of a restricted vacuum; the field-theoretic case belongs to the information theory of quantum fields, and the present article treats the single-particle kinematic mechanism only.
+**The physical location of the non-invariance.** The invariance group of the spin factor is the little group $SU(2)$, and $SU(2)$ acts unitarily; the frame dependence is not a failure of unitarity but the consequence of an operation that does not factorise as spin $\times$ momentum. A boost is a $*$-unitary operation on the full Hilbert space which is *not* a product of an operation on the momentum factor and an operation on the spin factor; it correlates them. The spin state, which is a partial description, therefore changes. This is the same structure that produces the Unruh effect for accelerated observers and the thermal character of a restricted vacuum; the field-theoretic case belongs to the information theory of quantum fields, and the present article treats the single-particle kinematic mechanism only.
 
 ## Relativistic Quantum Information: The Biquaternion Reading
 
@@ -246,13 +246,13 @@ Third, the invariant is a spinor bilinear form. The symplectic concurrence that 
 
 ## Summary
 
-For two particles of definite four-velocity, a Lorentz transformation acts on the spin state by the local unitary Wigner rotation $\tilde{W}_1\otimes\tilde{W}_2$ and therefore preserves the spin entanglement: the Schmidt coefficients, the concurrence, and the entanglement entropy are invariant. This is the sharp-momentum theorem, and it is exact.
+For two particles of definite four-velocity, a Lorentz transformation acts on the spin state by the local $*$-unitary Wigner rotation $\tilde{W}_1\otimes\tilde{W}_2$ and therefore preserves the spin entanglement: the Schmidt coefficients, the concurrence, and the entanglement entropy are invariant. This is the sharp-momentum theorem, and it is exact.
 
-For a momentum superposition, the boost acts branch by branch and is a momentum-controlled rotation; tracing the momentum leaves the spin state acted on by the mixed-unitary channel
+For a momentum superposition, the boost acts branch by branch and is a momentum-controlled rotation; tracing the momentum leaves the spin state acted on by the mixed-$*$-unitary channel
 $$
 \tilde{Ϛ}\ \longmapsto\ \sum_i w_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{Ϛ}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger .
 $$
-The channel is unitary exactly when the Wigner rotation is branch-independent, and otherwise it changes the entanglement. In the symmetric two-branch case it is the dephasing about the Wigner axis, with the parallel Bloch component preserved and the transverse components damped by $\cos\alpha$; the single-particle entropy produced is $h((1+r_{\mathrm{red}})/2)$, and the concurrence of a maximally entangled pair decreases monotonically with the boost rapidity, equalling $\cos\alpha$ for the symmetric configuration. For a state with $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, $A$ in a symmetric two-branch superposition with $\theta = 0.8$ and speed $0.5c$, and $B$ at sharp momentum along the boost axis, the concurrence falls from $1$ at $\psi = 0$ to $0.98127650$ at $\psi = 1$ and $0.92765115$ at $\psi = 2.5$, with the von Neumann entropy of the two-qubit spin state rising from $0$ to $0.076532$ and $0.224468$.
+The channel is $*$-unitary exactly when the Wigner rotation is branch-independent, and otherwise it changes the entanglement. In the symmetric two-branch case it is the dephasing about the Wigner axis, with the parallel Bloch component preserved and the transverse components damped by $\cos\alpha$; the single-particle entropy produced is $h((1+r_{\mathrm{red}})/2)$, and the concurrence of a maximally entangled pair decreases monotonically with the boost rapidity, equalling $\cos\alpha$ for the symmetric configuration. For a state with $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, $A$ in a symmetric two-branch superposition with $\theta = 0.8$ and speed $0.5c$, and $B$ at sharp momentum along the boost axis, the concurrence falls from $1$ at $\psi = 0$ to $0.98127650$ at $\psi = 1$ and $0.92765115$ at $\psi = 2.5$, with the von Neumann entropy of the two-qubit spin state rising from $0$ to $0.076532$ and $0.224468$.
 
 The invariant behind the computation is the spinor symplectic concurrence $\mathcal{C}(\psi) = |\psi^{\mathsf T}(\epsilon\otimes\epsilon)\psi|$, which is exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant because $\tilde U_{\mathrm L}^{\mathsf T}\epsilon\tilde U_{\mathrm L} = \det(\tilde U_{\mathrm L})\epsilon = \epsilon$. The frame dependence appears only in the normalized ratio, because a boost preserves the bilinear pairing but not the spinor norm; a sharp momentum has a single branch and the effect cancels. The entanglement of the full state, momentum included, is frame-independent, and no local operation changes the marginal statistics of the other particle; what is frame-dependent is the partial description that discards the momentum, and what produces it is the momentum dependence of the little-group rotor.
 
@@ -286,5 +286,5 @@ The invariant behind the computation is the spinor symplectic concurrence $\math
 - William K. Wootters, "Entanglement of formation of an arbitrary state of two qubits," *Physical Review Letters* **80** (1998) 2245–2248, for the concurrence and its mixed-state form.
 - Scott Hill and William K. Wootters, "Entanglement of a pair of quantum bits," *Physical Review Letters* **78** (1997) 5022–5025, for the entanglement of formation of two qubits.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Schmidt decomposition, the partial trace, and the entanglement measures.
-- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the Wigner rotation.
-- S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the unitary action of the Lorentz group on one-particle states.
+- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the Wigner rotation.
+- S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the $*$-unitary action of the Lorentz group on one-particle states.

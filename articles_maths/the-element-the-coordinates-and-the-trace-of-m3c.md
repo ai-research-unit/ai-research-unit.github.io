@@ -193,7 +193,7 @@ The first identity is the sum of the traces of the two diagonal blocks; the seco
 
 **The real and imaginary parts are not the Hermitian decomposition.** The decomposition $A=X+iY$ separates the entries into their real and imaginary parts. The Hermitian decomposition separates $A$ into $\tfrac12(A+A^{*})$ and $\tfrac12(A-A^{*})$, which are Hermitian and skew-Hermitian; it is a different real decomposition, of $M_{3}(\mathbb{C})$ into two nine-dimensional real spaces. The two decompositions agree only on the real matrices, where $Y=0$ and $A=A^{*}$ if $A$ is symmetric. The Hermitian one is *The Involution and the Hermitian Structure*.
 
-**The complex structure and the real form.** The real algebra $M_{3}(\mathbb{C})$ is the complexification of the real algebra $M_{3}(\mathbb{R})$: every element is $X+iY$ with $X,Y$ real, and the product is the complex bilinear extension of the real product. The complex conjugation $A\mapsto\bar A$ is the real structure; its fixed points are $M_{3}(\mathbb{R})$, of real dimension $9$. The unitary real form is different: it is the skew-Hermitian part for the star, of real dimension $9$, and it is not the real matrices.
+**The complex structure and the real form.** The real algebra $M_{3}(\mathbb{C})$ is the complexification of the real algebra $M_{3}(\mathbb{R})$: every element is $X+iY$ with $X,Y$ real, and the product is the complex bilinear extension of the real product. The complex conjugation $A\mapsto\bar A$ is the real structure; its fixed points are $M_{3}(\mathbb{R})$, of real dimension $9$. The $*$-unitary real form is different: it is the skew-Hermitian part for the star, of real dimension $9$, and it is not the real matrices.
 
 ## The Trace Pairing
 
@@ -305,4 +305,4 @@ The trace pairing is symmetric, nondegenerate and invariant, with Gram matrix $\
 - [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m3c.html), for the positive definite Hermitian form.
 - [The Two-Parameter Gauge](the-two-parameter-gauge-of-m3c.html), for the gauge of the coordinates.
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the Jordan form.
-- [The Trace and the Determinant](the-trace-and-the-determinant.html), for the general theory of the two invariants.
+- [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant as an alternating form.

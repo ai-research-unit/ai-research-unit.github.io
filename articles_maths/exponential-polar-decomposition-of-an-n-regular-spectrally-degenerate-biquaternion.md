@@ -148,7 +148,7 @@ $$
 \tilde U\tilde U^*=(1+2a^2)e_t+2i\bigl(\vec B+\vec A\times\vec B\bigr).
 $$
 
-**The boost.** Since $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ unitary, $\tilde U\tilde U^*=\tilde U_{\mathrm b}^2$. With $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$,
+**The boost.** Since $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ $*$-unitary, $\tilde U\tilde U^*=\tilde U_{\mathrm b}^2$. With $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$,
 
 $$
 \tilde U_{\mathrm b}^2=\cosh\psi\,e_t+i\sinh\psi\,\vec u_{\mathrm b}.
@@ -556,7 +556,7 @@ P=\{\text{positive Hermitian of determinant }1\},
 K=SU(2),
 $$
 
-gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis. A unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch. $\square$
+gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\psi}{2}\vec u_{\mathrm b}$ with $\psi\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta}{2}\vec u_{\mathrm r}$ with $\theta\in[0,2\pi]$. The endpoint $\theta=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch. $\square$
 
 The proof uses only the invertibility of $\tilde Q$; the degeneracy $B^2=0$ enters only through the domain. This is why the companion article can repeat the same theorem verbatim.
 
@@ -755,7 +755,7 @@ $$
 \mathsf M(\tilde Q)=r e^{i\alpha}\,\mathsf M(\tilde U_{\mathrm b})\,\mathsf M(\tilde u_{\mathrm r}),
 $$
 
-with $\mathsf M(\tilde U_{\mathrm b})$ positive definite of determinant one and $\mathsf M(\tilde u_{\mathrm r})$ unitary of determinant one.
+with $\mathsf M(\tilde U_{\mathrm b})$ positive definite of determinant one and $\mathsf M(\tilde u_{\mathrm r})$ $*$-unitary of determinant one.
 
 On the Jordan part, $\mathsf M(\vec\Upsilon)$ is a nonzero nilpotent matrix, so
 
@@ -769,7 +769,7 @@ N^2=0,
 N\neq0.
 $$
 
-The matrix is $Q_t$ times a single unipotent Jordan block. Its eigenvalue is $Q_t$, with algebraic multiplicity two and geometric multiplicity one; its determinant is $Q_t^2$; its two singular values are $r e^{\psi/2}$ and $r e^{-\psi/2}$. The polar factors are the positive and unitary factors of the block, and the unitary factor is the rotor. The sign $\varepsilon$ is the sign of the scalar part of the unit block.
+The matrix is $Q_t$ times a single unipotent Jordan block. Its eigenvalue is $Q_t$, with algebraic multiplicity two and geometric multiplicity one; its determinant is $Q_t^2$; its two singular values are $r e^{\psi/2}$ and $r e^{-\psi/2}$. The polar factors are the positive and $*$-unitary factors of the block, and the $*$-unitary factor is the rotor. The sign $\varepsilon$ is the sign of the scalar part of the unit block.
 
 The spectral reading is degenerate in the matrix picture: the matrix has no eigenbasis, the two eigenvalues coincide, and the diagonal form does not exist. The polar decomposition still exists, because it is the Cartan decomposition of $SL(2,\mathbb{C})$, which does not require diagonalizability. This is the matrix form of the contrast between the two articles.
 

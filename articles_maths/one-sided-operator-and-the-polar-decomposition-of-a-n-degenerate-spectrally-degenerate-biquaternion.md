@@ -132,7 +132,7 @@ $$
 \tilde Q_0^{2}=0 .
 $$
 
-A nilpotent partial isometry is not a contradiction: the Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ is a partial isometry and squares to zero. The polar pair is the rank-one singular value decomposition of the nilpotent; the "unitary" factor is a nilpotent partial isometry.
+A nilpotent partial isometry is not a contradiction: the Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ is a partial isometry and squares to zero. The polar pair is the rank-one singular value decomposition of the nilpotent; the "$*$-unitary" factor is a nilpotent partial isometry.
 
 ### The matrix model
 

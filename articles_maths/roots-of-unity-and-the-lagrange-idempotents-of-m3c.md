@@ -177,7 +177,7 @@ P_{3}=\frac{1}{3}(I+\omega S+\omega^{2}S^{2})
 =\frac{1}{3}\begin{pmatrix}1&\omega^{2}&\omega\\\omega&1&\omega^{2}\\\omega^{2}&\omega&1\end{pmatrix}.
 $$
 
-The three matrices are idempotent, pairwise orthogonal and sum to $I$; each has trace $1$ and rank $1$; each is Hermitian, because $S$ is unitary and the projectors are polynomials in $S$. The spectral identity is checked on the first row:
+The three matrices are idempotent, pairwise orthogonal and sum to $I$; each has trace $1$ and rank $1$; each is Hermitian, because $S$ is $*$-unitary and the projectors are polynomials in $S$. The spectral identity is checked on the first row:
 
 $$
 P_{1}+\omega P_{2}+\omega^{2}P_{3}
@@ -235,13 +235,13 @@ $$
 
 each of dimension three, and they sum directly to the nine-dimensional algebra. The product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$ gives $E_{ij}E_{jl}=E_{il}$, whose degree is $(i-j)+(j-l)=i-l$, so the product of a degree-$r$ and a degree-$s$ element has degree $r+s$; the general statement follows by bilinearity.
 
-**Corollary.** $M_{3}^{(0)}$ is the diagonal subalgebra $\mathbb{C}^{3}$, of dimension three. The degree-one and degree-two parts are three-dimensional nilpotent subspaces: every element of $M_{3}^{(1)}$ or $M_{3}^{(2)}$ is nilpotent of index at most three.
+**Corollary.** $M_{3}^{(0)}$ is the centraliser of $H$, the algebra of matrices diagonal in an eigenbasis, isomorphic to $\mathbb{C}^{3}$ and of dimension three. The degree-one and degree-two parts are three-dimensional subspaces, spanned by the off-diagonal units of the two classes. They are not nilpotent subspaces: the element $X=E_{21}+E_{32}+E_{13}\in M_{3}^{(1)}$ has cube $I$.
 
-**Proof.** The diagonal matrices are exactly the elements commuting with $H$, which is the degree-zero condition. An element of degree $r\neq0$ is a strictly upper or lower triangular matrix in the eigenbasis, with zero diagonal; its third power vanishes because it is strictly triangular in a three-dimensional space. The dimension is the number of matrix units in the class, three.
+**Proof.** The matrices commuting with $H$ are exactly those diagonal in an eigenbasis, because the eigenvalues are distinct; this is the degree-zero condition, and its dimension is the number of matrix units in the class, three. The dimension count is the same for the other two classes. For the non-nilpotence, $X^{2}=E_{23}+E_{31}+E_{12}$ and $X^{3}=E_{11}+E_{22}+E_{33}=I$.
 
 **The grading is not a $\mathbb{Z}$-grading.** The exponents are read modulo three, and $M_{3}^{(1)}M_{3}^{(2)}\subseteq M_{3}^{(0)}$ while $M_{3}^{(2)}M_{3}^{(1)}\subseteq M_{3}^{(0)}$; the two products are not the same in general, and the algebra is not graded-commutative. The grading is the algebraic shadow of the cyclic order of the three eigenvalues; it is the $\mathbb{Z}/3$ of the root, not a second structure.
 
-**The trace is homogeneous of degree zero.** $\operatorname{tr}(M_{3}^{(r)})=0$ for $r\neq0$, because the elements of those pieces are strictly triangular; $\operatorname{tr}$ is nonzero on $M_{3}^{(0)}$ and identifies it with $\mathbb{C}$ up to the scalar $\tfrac13$. The graded pieces are the eigenspaces of $\operatorname{ad}_{H}$; their dimensions $3,3,3$ are the multiplicities of the three characters of $\mathbb{Z}/3$ in the adjoint representation of the diagonal torus.
+**The trace is homogeneous of degree zero.** $\operatorname{tr}(M_{3}^{(r)})=0$ for $r\neq0$, because $\operatorname{tr}(HAH^{-1})=\operatorname{tr}(A)$ and $HAH^{-1}=\omega^{r}A$ give $\operatorname{tr}(A)=\omega^{r}\operatorname{tr}(A)$; $\operatorname{tr}$ is nonzero on $M_{3}^{(0)}$ and identifies it with $\mathbb{C}$ up to the scalar $\tfrac13$. The graded pieces are the eigenspaces of the automorphism $\operatorname{Ad}_{H}(A)=HAH^{-1}$, of order three; their dimensions $3,3,3$ are the multiplicities of the three characters of $\mathbb{Z}/3$.
 
 ## The Variety of Roots
 
@@ -275,19 +275,19 @@ $$
 
 is surjective onto the set $U$ of such decompositions. Its fibre is the set of assignments of the three distinct eigenvalues to the three lines, a torsor under the symmetric group $S_{3}$, of cardinality $3!=6$. So $X\to U$ is a $6$-fold covering and $\dim U=6$ as well. The space $U$ is $PGL_{3}/N(T)$, where $N(T)$ is the normaliser of the torus, of dimension $8-2=6$.
 
-**The flag variety is a further quotient.** A decomposition into three ordered lines determines the flag
+**The flag variety is a further quotient.** A decomposition into three **ordered** lines determines the flag
 
 $$
 0\subset\ell_{1}\subset\ell_{1}\oplus\ell_{2}\subset\mathbb{C}^{3},
 $$
 
-so there is a map $U\to PGL_{3}/B$, where $B$ is the Borel subgroup of upper triangular matrices. The flag variety has dimension
+so there is a map from the ordered triple space (the $6$-fold cover of $U$) to $PGL_{3}/B$, where $B$ is the Borel subgroup of upper triangular matrices. The flag variety has dimension
 
 $$
 \dim PGL_{3}/B=8-5=3,
 $$
 
-and the fibre of $U\to PGL_{3}/B$ is $B/N(T)$, of dimension $5-2=3$. The factor $3!$ is the fibre of $X\to U$, the ordering of the three eigenlines; it is not a finite cover of the flag variety. A finite cover of a three-dimensional variety is three-dimensional, whereas $X$ is six-dimensional. The two counts $6=3+3$ and $6=3!$ are different readings of the same six: three dimensions for the flag and three for the choice of the three lines inside the flag, against six orderings of the three labels.
+and the fibre is $B/T$, of dimension $5-2=3$. The unordered $U$ does not map canonically to the flag: the flag requires the choice of the first line and of the plane spanned by the first two, and an unordered triple does not supply that choice. The factor $3!$ is the fibre of $X\to U$, the ordering of the three eigenlines; it is not a finite cover of the flag variety. A finite cover of a three-dimensional variety is three-dimensional, whereas $X$ is six-dimensional. The dimension count is $6=3+3$: three dimensions for the flag and three for the choice of the three lines inside the flag. The cardinality $3!=6$ is the number of orderings of the three labels, a separate count.
 
 **The root set is not the flag variety.** The root carries the three lines and their labels; the flag carries the first line and the first two lines, and forgets the splitting of the plane into two lines and the position of the third line inside the quotient. The Peirce decomposition of the next article is the decomposition by the three lines; the flag is its quotient, not its replacement.
 
@@ -343,7 +343,7 @@ with each graded piece of dimension three; in the eigenbasis, $E_{kl}$ has degre
 | $\dim_{\mathbb{C}}$ of the gauge torus | $2$ |
 | $\dim_{\mathbb{C}}$ of the full flag variety | $3$ |
 
-The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the space of unordered eigenline decompositions, and the flag variety is a further quotient with three-dimensional fibres. The order-two case is the biquaternion frame, with two idempotents $(I\pm H)/2$; the order-three case is the frame of this category.
+The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the space of unordered eigenline decompositions. The flag variety is a quotient of the ordered triple space (equivalently, of the root orbit) with three-dimensional fibres; the unordered space does not map canonically to it. The order-two case is the biquaternion frame, with two idempotents $(I\pm H)/2$; the order-three case is the frame of this category.
 
 ## Summary of Notation
 

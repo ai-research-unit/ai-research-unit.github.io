@@ -141,7 +141,7 @@ of complex dimension eight. The first factor changes the basis inside the two-di
 $$
 MM^{\dagger}=M^{\dagger}M,
 $$
-if and only if $\tilde Q$ is normal in the algebra. In that case the two eigenspaces are orthogonal, the spectral projectors are Hermitian, and the diagonalising matrix can be chosen unitary. The diagonal form becomes
+if and only if $\tilde Q$ is normal in the algebra. In that case the two eigenspaces are orthogonal, the spectral projectors are Hermitian, and the diagonalising matrix can be chosen $*$-unitary. The diagonal form becomes
 $$
 M=U\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)U^{\dagger},
 \qquad
@@ -150,11 +150,11 @@ $$
 
 *Proof.* The map $\mathsf{M}_4$ is injective and satisfies $\mathsf{M}_4(\tilde Q^{*})=M^{\dagger}$, so $MM^{\dagger}=M^{\dagger}M$ is equivalent to $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$. For a normal element the spectral projectors are Hermitian, and the distinct eigenspaces are orthogonal. $\square$
 
-**The unitary ambiguity.** In the normal case the freedom is reduced to
+**The $*$-unitary ambiguity.** In the normal case the freedom is reduced to
 $$
 U(2)\times U(2),
 $$
-the unitary changes inside the two eigenspaces. The determinant of the unitary diagonalising matrix has modulus one.
+the $*$-unitary changes inside the two eigenspaces. The determinant of the $*$-unitary diagonalising matrix has modulus one.
 
 **The real quaternion case.** For a real quaternion $h=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the matrix $M=\mathsf{M}_4(h)$ is real and satisfies $M^{\mathsf T}M=(q_t^2+q_x^2+q_y^2+q_z^2)\mathrm I_4$. The eigenbasis can be chosen real. The two copies of the defining representation are then two copies of the same real matrix.
 

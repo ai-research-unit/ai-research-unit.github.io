@@ -330,7 +330,7 @@ The three triplet members therefore fall into two classes: $\tilde\Pi_{1,\pm1}$ 
 
 ## Relation to the Bell Basis
 
-The coupled idempotents and the four Bell idempotents are two orthogonal families of minimal idempotents resolving the identity of $\mathbb{B}\otimes\mathbb{B}$; they are two idempotent bases in the sense of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, related by a unitary change of basis.
+The coupled idempotents and the four Bell idempotents are two orthogonal families of minimal idempotents resolving the identity of $\mathbb{B}\otimes\mathbb{B}$; they are two idempotent bases in the sense of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, related by a $*$-unitary change of basis.
 
 The singlet belongs to both bases: $\tilde\Pi_{0,0}=\tilde\Pi_{\epsilon}$ with $\epsilon=(+1,+1,+1)$, which is the singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ of the companion articles. The middle triplet member $\tilde\Pi_{1,0}$ is the Bell idempotent with $\epsilon=(-1,-1,+1)$, the state $|\Psi^+\rangle$. The two remaining Bell idempotents are the idempotents associated with the states $\tfrac{1}{\sqrt2}\left(|\!\uparrow\uparrow\rangle\pm|\!\downarrow\downarrow\rangle\right)$, they involve off-diagonal matrix units linking the extreme product states, and are not members of the coupled multiplet.
 
@@ -340,7 +340,7 @@ $$
 \sigma_1\otimes\sigma_1,\qquad \sigma_3\otimes\sigma_3 ,
 $$
 
-whose four eigenvalue pairs $(s_1,s_3)\in\{\pm1\}^2$ label the four Bell states: $(+,+)$ for $\tfrac{1}{\sqrt2}(|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)$, $(+,-)$ for $\tfrac{1}{\sqrt2}(|\!\uparrow\downarrow\rangle+|\!\downarrow\uparrow\rangle)$, $(-,+)$ for $\tfrac{1}{\sqrt2}(|\!\uparrow\uparrow\rangle-|\!\downarrow\downarrow\rangle)$, and $(-,-)$ for the singlet. Both are complete sets of commuting observables, and they are related by a fixed unitary rotation — the Hadamard transformation on the pair of outer states — which is not a product of one-particle operations, since it maps a product state to a Bell state. The two-spin system therefore carries, already at this level, two inequivalent physical questions — "what is the total spin" and "which Bell state is it" — whose answers are bases of the same algebra.
+whose four eigenvalue pairs $(s_1,s_3)\in\{\pm1\}^2$ label the four Bell states: $(+,+)$ for $\tfrac{1}{\sqrt2}(|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)$, $(+,-)$ for $\tfrac{1}{\sqrt2}(|\!\uparrow\downarrow\rangle+|\!\downarrow\uparrow\rangle)$, $(-,+)$ for $\tfrac{1}{\sqrt2}(|\!\uparrow\uparrow\rangle-|\!\downarrow\downarrow\rangle)$, and $(-,-)$ for the singlet. Both are complete sets of commuting observables, and they are related by a fixed $*$-unitary rotation — the Hadamard transformation on the pair of outer states — which is not a product of one-particle operations, since it maps a product state to a Bell state. The two-spin system therefore carries, already at this level, two inequivalent physical questions — "what is the total spin" and "which Bell state is it" — whose answers are bases of the same algebra.
 
 ## The Assumption of Composition
 

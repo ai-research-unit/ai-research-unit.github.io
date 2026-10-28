@@ -154,7 +154,7 @@ with $(\mathbb{B}^{\times})^{\mathrm{cov}}\simeq\mathbb{R}\times S^{3}$.
 
 **The kernel is not discrete.** The exponential is onto the group. Its kernel meets the diagonal part in the parity-matched lattice $L=\pi i m\,e_t+\pi n\,\vec U$ with $m\equiv n\pmod2$ (*Biquaternion Elementary Functions*), but the full kernel also contains continuous families of logarithms. It is therefore not a discrete set and not a covering group, and its lattice part is not the fundamental group. The loops and the third homotopy group are those of the compact core, by the polar retraction of the preceding paragraph; the kernel is the fibre of the exponential over the identity, a gauge ambiguity of the logarithm rather than a set of components of the group. *The Exponential, the Logarithm and the Generator* reads it as such.
 
-**The topology is carried by the compact form.** Every unit can be deformed to a unitary one, and every norm-one unit to a unit quaternion. The qualitative features of the group — its connectedness, its loops, its third homotopy — are therefore the features of $\mathrm{U}(2)$ and $S^{3}$; the non-compact directions are a contractible thickening. Interpreted physically, the reversible region has the topology of its compact core, and the boosts and dilations add no new loops or components.
+**The topology is carried by the compact form.** Every unit can be deformed to a $*$-unitary one, and every norm-one unit to a unit quaternion. The qualitative features of the group — its connectedness, its loops, its third homotopy — are therefore the features of $\mathrm{U}(2)$ and $S^{3}$; the non-compact directions are a contractible thickening. Interpreted physically, the reversible region has the topology of its compact core, and the boosts and dilations add no new loops or components.
 
 **The boundary of the interpretation.** The retraction is a deformation, not a physical relaxation. The path supplied by the polar decomposition is a mathematical homotopy and is not a sequence of physical operations.
 
@@ -294,7 +294,7 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 | $\mathcal{N}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | the zero-divisor cone; the wall of reversibility |
 | $\langle\tilde Q\rangle_{\natural}$ | the general quaternionic algebraic norm; the invertibility criterion |
 | $\mathbb{B}^{\times}_{1}=\{\langle\tilde Q\rangle_{\natural}=1\}$ | the norm-one group; the spin frame slice |
-| $\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ | the unitary group; maximal compact subgroup, $\cong U(2)$ |
+| $\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ | the $*$-unitary group; maximal compact subgroup, $\cong U(2)$ |
 | $L=\mathcal{N}\cap S^{7}_{E}$ | the link of the cone; $L\cong S^{2}\times S^{3}$, an $S^{1}$-bundle over $S^{2}\times S^{2}$ |
 | $\mathcal{L}$, $\mathcal{L}_{\mathrm{H}}$ | the Lipschitz and Hurwitz orders |
 | $Q_8$, $2T$ | the unit groups of $\mathcal{L}$ and $\mathcal{L}_{\mathrm{H}}$ |

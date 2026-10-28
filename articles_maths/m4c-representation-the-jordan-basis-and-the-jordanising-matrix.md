@@ -4,7 +4,7 @@
 
 A spectrally degenerate biquaternion has a single eigenvalue. In the left regular representation the eigenvalue occurs four times, in two Jordan blocks of size two. The Jordan basis of the algebra gives a basis of $\mathbb{C}^4$ in which the regular matrix is $J_2(Q_t)\otimes\mathrm I_2$, equivalently $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$ in the chain order, and the change to that basis is the $4\times4$ Jordanising matrix. The $2\times2$ similarity that builds the basis has determinant one, so the $4\times4$ determinant is fixed at $\tfrac14$, independent of the element, exactly as in the regular eigenbasis model.
 
-This article constructs the basis, proves the determinant theorem, identifies the freedom and its unitary subgroup, and describes the defect. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix* and the degenerate counterpart of *$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix*.
+This article constructs the basis, proves the determinant theorem, identifies the freedom and its $*$-unitary subgroup, and describes the defect. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix* and the degenerate counterpart of *$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix*.
 
 **Conventions.** The algebra and the $4\times4$ model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$. The $2\times2$ model is $M=\mathsf M_2(\tilde Q)=Q_t\mathrm I_2+Q$, with $Q=\mathsf M_2(\vec Q)$. The nilpotent has singular value
 
@@ -163,7 +163,7 @@ of the commutant, the image of the Toeplitz group under the representation $G\ma
 
 **The determinant and the freedom.** Under $\mathsf G$ the determinant is multiplied by $\det\mathsf G$. The value $\tfrac14$ is the determinant of the canonical basis; an arbitrary Jordanising matrix multiplies it by $\det\mathsf G$.
 
-**The unitary subgroup.** The eigenbasis freedom reduces to $U(2)\times U(2)$ in the normal case. Here no non-scalar element is normal, but the unitary subgroup of the commutant is still defined. A matrix $\begin{pmatrix}A&B\\0&A\end{pmatrix}$ is unitary exactly when $B=0$ and $A\in U(2)$. The two copies cannot be rotated independently; only their common unitary mixing survives.
+**The $*$-unitary subgroup.** The eigenbasis freedom reduces to $U(2)\times U(2)$ in the normal case. Here no non-scalar element is normal, but the $*$-unitary subgroup of the commutant is still defined. A matrix $\begin{pmatrix}A&B\\0&A\end{pmatrix}$ is $*$-unitary exactly when $B=0$ and $A\in U(2)$. The two copies cannot be rotated independently; only their common $*$-unitary mixing survives.
 
 ## The Defect
 
@@ -180,9 +180,9 @@ $$
 =\bigl(\mathsf M_2(\tilde Q)\mathsf M_2(\tilde Q)^{\dagger}\bigr)\otimes\mathrm I_2,
 $$
 
-and similarly for the other order. The regular matrix is normal exactly when the $2\times2$ matrix is normal, that is exactly when $\tilde Q$ is scalar. Off the scalar line the $4\times4$ matrix is not normal, and there is no unitary diagonalisation.
+and similarly for the other order. The regular matrix is normal exactly when the $2\times2$ matrix is normal, that is exactly when $\tilde Q$ is scalar. Off the scalar line the $4\times4$ matrix is not normal, and there is no $*$-unitary diagonalisation.
 
-**The unitary form.** In a unitary basis,
+**The $*$-unitary form.** In a $*$-unitary basis,
 
 $$
 U^{\dagger}\mathsf M_4(\tilde Q)U
@@ -229,7 +229,7 @@ in the corner order, and the $2\times2$ coordinate model by $D=\operatorname{dia
 
 ## Summary
 
-The Jordan basis is the basis of $\mathbb{C}^4$ formed by the coordinate columns of the spectral matrix units $P_{ij}=\mathsf S_QE_{ij}\mathsf S_Q^{-1}$. In the corner order the regular matrix is $J_2(Q_t)\otimes\mathrm I_2$; in the chain order it is $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$. The canonical Jordanising matrix has determinant $\tfrac14$ for every element of the sector off the scalar line, because the $2\times2$ similarity has determinant one and the fixed Peirce change has determinant $\tfrac14$. In the chain order the determinant is $-\tfrac14$. The freedom is the invertible commutant $GL_2(\mathbb{C})\ltimes M_2(\mathbb{C})$, of complex dimension eight, with unitary subgroup $U(2)$. No non-scalar element is normal; the best unitary form is the singular Jordan block doubled, and the defect is the singular value $s=\sqrt{2\langle\vec Q\rangle_*}$.
+The Jordan basis is the basis of $\mathbb{C}^4$ formed by the coordinate columns of the spectral matrix units $P_{ij}=\mathsf S_QE_{ij}\mathsf S_Q^{-1}$. In the corner order the regular matrix is $J_2(Q_t)\otimes\mathrm I_2$; in the chain order it is $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$. The canonical Jordanising matrix has determinant $\tfrac14$ for every element of the sector off the scalar line, because the $2\times2$ similarity has determinant one and the fixed Peirce change has determinant $\tfrac14$. In the chain order the determinant is $-\tfrac14$. The freedom is the invertible commutant $GL_2(\mathbb{C})\ltimes M_2(\mathbb{C})$, of complex dimension eight, with $*$-unitary subgroup $U(2)$. No non-scalar element is normal; the best $*$-unitary form is the singular Jordan block doubled, and the defect is the singular value $s=\sqrt{2\langle\vec Q\rangle_*}$.
 
 ## Summary of Notation
 
@@ -244,7 +244,7 @@ The Jordan basis is the basis of $\mathbb{C}^4$ formed by the coordinate columns
 | $J_2(Q_t)\otimes\mathrm I_2$ | the regular matrix in the corner order |
 | $\operatorname{diag}(J_2,J_2)$ | the regular matrix in the chain order |
 | $GL_2(\mathbb{C})\ltimes M_2(\mathbb{C})$ | the freedom of the change |
-| $U(2)$ | its unitary subgroup |
+| $U(2)$ | its $*$-unitary subgroup |
 | $s=\sqrt{2\langle\vec Q\rangle_*}$ | the defect |
 
 ## Further Reading

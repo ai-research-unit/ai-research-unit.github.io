@@ -2,9 +2,9 @@
 
 ## Introduction
 
-A spectrally degenerate biquaternion has one eigenvalue. Off the scalar line its matrix has a single Jordan block, its eigenspace is two-dimensional while the algebra is four-dimensional, and the two missing vectors are supplied by a chain. The change from the fixed model to a Jordan basis is the Jordanising matrix. It cannot be unitary, because a non-scalar Jordan block is not normal. The definite Hermitian form nevertheless selects a canonical chain, and the Jordanising matrix becomes the singular-value frame of the nilpotent.
+A spectrally degenerate biquaternion has one eigenvalue. Off the scalar line its matrix has a single Jordan block, its eigenspace is two-dimensional while the algebra is four-dimensional, and the two missing vectors are supplied by a chain. The change from the fixed model to a Jordan basis is the Jordanising matrix. It cannot be $*$-unitary, because a non-scalar Jordan block is not normal. The definite Hermitian form nevertheless selects a canonical chain, and the Jordanising matrix becomes the singular-value frame of the nilpotent.
 
-This article develops the Jordan basis and its coordinate model, the canonical and general Jordanising matrices, their determinants and freedom, the trace pairing, the unitary form and the defect, and the transitions between elements. It is the matrix form of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Jordan Basis*, §*The Canonical Frame*, §*The Matrix Model* and §*Expansion of Every Biquaternion*, and the degenerate counterpart of *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
+This article develops the Jordan basis and its coordinate model, the canonical and general Jordanising matrices, their determinants and freedom, the trace pairing, the $*$-unitary form and the defect, and the transitions between elements. It is the matrix form of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Jordan Basis*, §*The Canonical Frame*, §*The Matrix Model* and §*Expansion of Every Biquaternion*, and the degenerate counterpart of *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
 
 **Conventions.** The algebra and the fixed model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$. Put $B^2=\vec Q\cdot\vec Q=0$, $Q=\mathsf M_2(\vec Q)$, and $M=\mathsf M_2(\tilde Q)=Q_t\mathrm I_2+Q$. The nilpotent $Q$ is rank one. The Jordan block is $J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$. The corner order is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; the chain order is $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$.
 
@@ -228,32 +228,32 @@ The two idempotents are the support idempotents: the orthogonal projections onto
 
 **The boundary.** At $\vec Q=0$ the formulas divide by zero. The element is scalar, every basis is an eigenbasis, the Jordan type of $M$ is two blocks $J_1(Q_t)$, and no adapted frame is distinguished. The scalar line is the boundary of the construction, not a chart of it.
 
-## The Unitary Form and the Defect
+## The $*$-Unitary Form and the Defect
 
 **No normal non-scalar.** A matrix is normal when $MM^{\dagger}=M^{\dagger}M$. A non-scalar element of the sector is never normal.
 
 *Proof.* Normality of $M$ is $[\vec Q,\overline{\vec Q}]=0$, which for a vector part means $\vec Q=\zeta\vec p$ with $\zeta\in\mathbb{C}$ and $\vec p\in\mathbb{R}^3$. Then $\vec Q^2=\zeta^2(\vec p\cdot\vec p)=0$, so $\zeta=0$ or $\vec p=0$; in both cases $\vec Q=0$. ∎
 
-**The unitary form.** Put $U=(u\ v)$. Since $U$ is unitary and $U^{\dagger}QU=sE_{12}$,
+**The $*$-unitary form.** Put $U=(u\ v)$. Since $U$ is $*$-unitary and $U^{\dagger}QU=sE_{12}$,
 
 $$
 U^{\dagger}MU=
 \begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}.
 $$
 
-The superdiagonal $s=\sqrt{2\langle\vec Q\rangle_*}$ is the singular value of the nilpotent. No unitary change removes it: a unitary diagonalisation would make $M$ normal, and a normal matrix with the single eigenvalue $Q_t$ is $Q_t\mathrm I_2$, which has no superdiagonal. The canonical Jordanising matrix is
+The superdiagonal $s=\sqrt{2\langle\vec Q\rangle_*}$ is the singular value of the nilpotent. No $*$-unitary change removes it: a $*$-unitary diagonalisation would make $M$ normal, and a normal matrix with the single eigenvalue $Q_t$ is $Q_t\mathrm I_2$, which has no superdiagonal. The canonical Jordanising matrix is
 
 $$
 \mathsf S_Q=U\operatorname{diag}(1,s^{-1}),
 $$
 
-the product of the unitary singular-value frame and the real scaling that normalises the superdiagonal to one.
+the product of the $*$-unitary singular-value frame and the real scaling that normalises the superdiagonal to one.
 
 **The polar decomposition.** The decomposition $\mathsf S_Q=U\operatorname{diag}(1,s^{-1})$ is the polar decomposition of $\mathsf S_Q$, with positive factor $\operatorname{diag}(1,s^{-1})$ in the $u,v$ basis. The singular values of $\mathsf S_Q$ are $1$ and $s^{-1}$, and the determinant modulus $s^{-1}$ is the reciprocal of the defect.
 
-**When the matrix is unitary.** The canonical $\mathsf S_Q$ is unitary exactly when $s=1$, that is when $2\langle\vec Q\rangle_*=1$, or $\lVert Q\rVert_F=1$. This is a normalisation of the element, not a generic property. In the regular case a normal element always has a unitary diagonalising matrix; in the degenerate case the best unitary form is the singular Jordan block above, and the defect is the norm of the nilpotent.
+**When the matrix is $*$-unitary.** The canonical $\mathsf S_Q$ is $*$-unitary exactly when $s=1$, that is when $2\langle\vec Q\rangle_*=1$, or $\lVert Q\rVert_F=1$. This is a normalisation of the element, not a generic property. In the regular case a normal element always has a $*$-unitary diagonalising matrix; in the degenerate case the best $*$-unitary form is the singular Jordan block above, and the defect is the norm of the nilpotent.
 
-**The scalar line.** At $\vec Q=0$ the defect vanishes, $M=Q_t\mathrm I_2$ is normal, and every orthonormal basis is an eigenbasis. The unitary form is the scalar matrix and the Jordan form is $Q_t\mathrm I_2$, not $J_2(Q_t)$: the defective Jordanising matrix does not exist there, and any unitary matrix diagonalises the element.
+**The scalar line.** At $\vec Q=0$ the defect vanishes, $M=Q_t\mathrm I_2$ is normal, and every orthonormal basis is an eigenbasis. The $*$-unitary form is the scalar matrix and the Jordan form is $Q_t\mathrm I_2$, not $J_2(Q_t)$: the defective Jordanising matrix does not exist there, and any $*$-unitary matrix diagonalises the element.
 
 ## The Jordan Basis in the Fixed Model
 
@@ -372,7 +372,7 @@ It preserves the block structure only when the vector parts are proportional; th
 
 ## Summary
 
-The Jordan basis $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ is a system of matrix units; in the corner order the element is $J_2(Q_t)$. The Jordanising matrix has the canonical representative $\mathsf S_Q=(u\ s^{-1}v)$ from the singular-value decomposition $Q=suv^{\dagger}$ of the nilpotent, with $s=\sqrt{2\langle\vec Q\rangle_*}$. It satisfies $\mathsf S_Q^{-1}M\mathsf S_Q=J_2(Q_t)$, and its determinant has modulus $s^{-1}$. The general representative is $\mathsf S_Q\mathsf G$ with $\mathsf G$ upper triangular Toeplitz; the shift is the affine family of adapted pairs and the scale is the normalisation of the chain. A non-scalar element of the sector is never normal; the best unitary form is $\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}$, and the defect $s$ is the norm of the nilpotent. Within a fixed vector line the frame is fixed and the two generators are rescaled reciprocally; a shift of the scalar part leaves the basis unchanged.
+The Jordan basis $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ is a system of matrix units; in the corner order the element is $J_2(Q_t)$. The Jordanising matrix has the canonical representative $\mathsf S_Q=(u\ s^{-1}v)$ from the singular-value decomposition $Q=suv^{\dagger}$ of the nilpotent, with $s=\sqrt{2\langle\vec Q\rangle_*}$. It satisfies $\mathsf S_Q^{-1}M\mathsf S_Q=J_2(Q_t)$, and its determinant has modulus $s^{-1}$. The general representative is $\mathsf S_Q\mathsf G$ with $\mathsf G$ upper triangular Toeplitz; the shift is the affine family of adapted pairs and the scale is the normalisation of the chain. A non-scalar element of the sector is never normal; the best $*$-unitary form is $\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}$, and the defect $s$ is the norm of the nilpotent. Within a fixed vector line the frame is fixed and the two generators are rescaled reciprocally; a shift of the scalar part leaves the basis unchanged.
 
 ## Summary of Notation
 
@@ -388,8 +388,8 @@ The Jordan basis $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ is a 
 | $\lvert\det\mathsf S_Q\rvert=s^{-1}$ | its determinant modulus |
 | $\mathsf G=\begin{pmatrix}\alpha&\beta\\0&\alpha\end{pmatrix}$ | the freedom of the change |
 | $b=-\beta/\alpha$ | the affine parameter of the frame |
-| $U=(u\ v)$ | the unitary singular-value frame |
-| $U^{\dagger}MU=\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}$ | the unitary form |
+| $U=(u\ v)$ | the $*$-unitary singular-value frame |
+| $U^{\dagger}MU=\begin{pmatrix}Q_t&s\\0&Q_t\end{pmatrix}$ | the $*$-unitary form |
 | $T_{Q'Q}=\mathsf S_Q^{-1}\mathsf S_{Q'}$ | the transition matrix |
 
 ## Further Reading

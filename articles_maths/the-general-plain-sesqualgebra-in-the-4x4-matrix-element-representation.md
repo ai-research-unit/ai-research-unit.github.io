@@ -60,7 +60,7 @@ so the Frobenius norm of the regular matrix is twice the definite norm of the el
 
 **The signature and the null set.** The pairing is positive definite: on the sixteen complex coordinates of $M_4(\mathbb{C})$ it has signature $(32,0)$, and its null set is $\{0\}$ alone.
 
-**The automorphism group.** The Hilbert–Schmidt pairing on $M_4(\mathbb{C})$ has automorphism group the unitary group $\mathrm{U}(16)$, of real dimension $256$; among these, the structure-preserving maps $X\mapsto UXV^{\dagger}$ form the subgroup $\mathrm{U}(4)\times \mathrm{U}(4)$ modulo the common centre, which is the part that also preserves the algebra structure.
+**The automorphism group.** The Hilbert–Schmidt pairing on $M_4(\mathbb{C})$ has automorphism group the $*$-unitary group $\mathrm{U}(16)$, of real dimension $256$; among these, the structure-preserving maps $X\mapsto UXV^{\dagger}$ form the subgroup $\mathrm{U}(4)\times \mathrm{U}(4)$ modulo the common centre, which is the part that also preserves the algebra structure.
 
 **The two-sided action and the double cover.** The positive definite form makes the Hermitian subspace $\mathbb{M}_+$ a definite space of real dimension $4$, and the norm-one group $G=\{\tilde{A}:\langle\tilde{A}\rangle_{\natural}=1\}=SL_2(\mathbb{C})$ acts on it by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, preserving the determinant:
 

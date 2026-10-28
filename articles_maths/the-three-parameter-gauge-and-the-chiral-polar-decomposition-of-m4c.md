@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The frame carries a three-parameter complex torus, one parameter per simple nilpotent, and the mass block carries a chiral polar decomposition with two singular values; the two are different structures.** The gauge is a complex rescaling of the frame; the polar decomposition is a factorization over the compact unitary group. The gauge has three complex parameters; the polar decomposition of the mass block has two real singular values and one phase. The article compares them and records the degeneration at $n=2$, where the gauge has a single parameter $\lambda$.
+**The frame carries a three-parameter complex torus, one parameter per simple nilpotent, and the mass block carries a chiral polar decomposition with two singular values; the two are different structures.** The gauge is a complex rescaling of the frame; the polar decomposition is a factorization over the compact $*$-unitary group. The gauge has three complex parameters; the polar decomposition of the mass block has two real singular values and one phase. The article compares them and records the degeneration at $n=2$, where the gauge has a single parameter $\lambda$.
 
 The article recalls the three-parameter gauge and its action on the mass block, proves the blockwise polar decomposition of a block-diagonal element and the antidiagonal case, states the general $U(4)$ polar factor, and compares the chiral polar decomposition with the single $\lambda$ of the biquaternion algebra.
 
@@ -69,13 +69,14 @@ $$
 E_{14}=E_{12}E_{23}E_{34}\longmapsto\lambda_1\lambda_2\lambda_3E_{14}.
 $$
 
-The weights of the composites are determined by the weights of the simple nilpotents and the product rule. There is no fourth independent scalar: the product $\lambda_1\lambda_2\lambda_3$ is not a new parameter, it is the weight of the top composite. The cocycle condition
+The weights of the composites are determined by the weights of the simple nilpotents and the product rule. There is no fourth independent scalar: the product $\lambda_1\lambda_2\lambda_3$ is not a new parameter, it is the weight of the top composite. The cocycle condition is
 
 $$
-\lambda_1\lambda_2\lambda_3\cdot\lambda_3^{-1}\lambda_2^{-1}\lambda_1^{-1}=1
+\lambda_1\lambda_2\lambda_3\lambda_4=1,
+\qquad \lambda_4=\frac{t_4}{t_1},
 $$
 
-is the statement that the product around the cycle is trivial.
+the statement that the product around the cycle is $1$.
 
 **The count.** The root has $12$ complex parameters and the gauge has $3$, for
 
@@ -148,13 +149,13 @@ $$
 
 The weight of the determinant is $\lambda_1\lambda_3$, not the product $\lambda_1\lambda_2\lambda_3$ of all three. The middle parameter $\lambda_2$ cancels between the two terms. This is the mass-block form of the cocycle.
 
-**The gauge is complex, not unitary.** The parameters $\lambda_k$ are nonzero complex numbers. The gauge changes the singular values of $M$: for a diagonal mass matrix the two singular values are multiplied by $\lvert\lambda_1\rvert$ and $\lvert\lambda_3\rvert$. The compact subgroup
+**The gauge is complex, not $*$-unitary.** The parameters $\lambda_k$ are nonzero complex numbers. The gauge changes the singular values of $M$: for a diagonal mass matrix the two singular values are multiplied by $\lvert\lambda_1\rvert$ and $\lvert\lambda_3\rvert$. The compact subgroup
 
 $$
 U(1)^3=\{(\lambda_1,\lambda_2,\lambda_3):\lvert\lambda_k\rvert=1\}
 $$
 
-preserves the singular values and only changes the phases. The full compact chiral group $U(2)_L\times U(2)_R$ is larger; the three-parameter torus is its diagonal subgroup, and the polar decomposition is adapted to the full compact group, not to the complex torus.
+preserves the singular values and only changes the phases. The full compact chiral group $U(2)_L\times U(2)_R$ is larger; the compact three-parameter torus is a three-dimensional subtorus of it, and the polar decomposition is adapted to the full compact group, not to the complex torus.
 
 ## The Blockwise Polar Decomposition
 
@@ -215,7 +216,7 @@ N\lvert N\rvert^{-1}&0
 \end{pmatrix}.
 $$
 
-The blocks $M\lvert M\rvert^{-1}$ and $N\lvert N\rvert^{-1}$ are the unitary chiral phases of $M$ and $N$. The full polar decomposition of an antidiagonal matrix is the direct sum of the two chiral polar decompositions, one for each off-diagonal block.
+The blocks $M\lvert M\rvert^{-1}$ and $N\lvert N\rvert^{-1}$ are the $*$-unitary chiral phases of $M$ and $N$. The full polar decomposition of an antidiagonal matrix is the direct sum of the two chiral polar decompositions, one for each off-diagonal block.
 
 **The general case.** For a general block matrix
 
@@ -247,7 +248,7 @@ $$
 \lVert Av\rVert^2=\langle Av,Av\rangle=\langle v,A^*Av\rangle=\langle v,P^2v\rangle=\lVert Pv\rVert^2.
 $$
 
-Extend $U$ isometrically from the range of $P$ to its orthogonal complement, which is the kernel of $P$, with values in the kernel of $A^*$. The dimensions agree, because $\operatorname{rank}P=\operatorname{rank}A$, so the extension exists and $U$ is unitary. Then $A=UP$. Uniqueness on the invertible elements follows because $P$ is determined by $A^*A$ and $U=AP^{-1}$.
+Extend $U$ isometrically from the range of $P$ to its orthogonal complement, which is the kernel of $P$, with values in the kernel of $A^*$. The dimensions agree, because $\operatorname{rank}P=\operatorname{rank}A$, so the extension exists and $U$ is $*$-unitary. Then $A=UP$. Uniqueness on the invertible elements follows because $P$ is determined by $A^*A$ and $U=AP^{-1}$.
 
 **The chiral polar decomposition is different.** The decomposition $M=U\Sigma V^*$ of the mass block uses two unitaries, one on each chirality, and a diagonal map between them. It is the polar decomposition of a map between two different Hilbert spaces, not of an endomorphism of one space. The full $U(4)$ polar factor of the block matrix is an endomorphism of $\mathbb{C}^4$; it mixes the chiralities in general, and it is not the pair $(U_L,U_R)$ of the mass block.
 
@@ -272,11 +273,11 @@ W=UV^*:\mathbb{C}^2_-\to\mathbb{C}^2_+,\quad
 P=V\Sigma V^*:\mathbb{C}^2_-\to\mathbb{C}^2_- .
 $$
 
-The factor $W$ is the unitary phase, and $P$ is the mass modulus. The two singular values $\sigma_1,\sigma_2$ are the invariants of the compact chiral gauge; the phase of $\det M$ is the remaining invariant under the special unitary gauge.
+The factor $W$ is the $*$-unitary phase, and $P$ is the mass modulus. The two singular values $\sigma_1,\sigma_2$ are the invariants of the compact chiral gauge; the phase of $\det M$ is the remaining invariant under the special unitary gauge.
 
 **The gauge weights of the polar data.** Under the three-parameter gauge, the mass block transforms by $M\mapsto D_+MD_-^{-1}$ with $D_+=\operatorname{diag}(\lambda_1,\lambda_2^{-1})$ and $D_-=\operatorname{diag}(1,(\lambda_2\lambda_3)^{-1})$. The singular values are invariant exactly when the gauge lies in the compact subgroup $U(1)^3$, that is, when $\lvert\lambda_1\rvert=\lvert\lambda_2\rvert=\lvert\lambda_3\rvert=1$; a complex rescaling changes the moduli. The determinant transforms by $\lambda_1\lambda_3$. The chiral phase transforms by the phase of $\lambda_1\lambda_3$. The two singular values and the phase are therefore **not** the three gauge parameters: the gauge is complex, and it changes the moduli.
 
-**The invariant count.** The mass block has complex dimension $4$, hence real dimension $8$. The three-parameter gauge has complex dimension $3$, hence real dimension $6$. The quotient has real dimension $2$. On the generic rank-two locus the quotient is parametrised by one complex invariant, the cross ratio $ad/(bc)$ of the four entries; as two real invariants, it is the modulus and the argument of the cross ratio. The two singular values are two real invariants of the **compact** gauge, but they are not invariant under the complex gauge; the quotient invariants are the combinations that survive the complex rescalings. The phase of $\det M$ is not a quotient invariant.
+**The invariant count.** The mass block has complex dimension $4$, hence real dimension $8$. The three-parameter gauge has complex dimension $3$, hence real dimension $6$. The quotient has real dimension $2$. On the open dense locus where $bc\ne0$, the quotient is parametrised by one complex invariant, the cross ratio $ad/(bc)$ of the four entries; as two real invariants, it is the modulus and the argument of the cross ratio. The two singular values are two real invariants of the **compact** gauge, but they are not invariant under the complex gauge; the quotient invariants are the combinations that survive the complex rescalings. The phase of $\det M$ is not a quotient invariant.
 
 ## The Single $\lambda$ of $\mathbb{B}$
 
@@ -353,10 +354,10 @@ $$
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the polar decomposition, the singular value decomposition and the unitary group.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the polar decomposition, the singular value decomposition and the $*$-unitary group.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $U(4)$, $U(2)\times U(2)$ and the exponential.
 - [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the torus and the cocycle.
 - [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block and its polar decomposition.
 - [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the full $U(4)$ decomposition.
 - [The Exponential Polar Decomposition](the-exponential-polar-decomposition-of-m4c.html), for the exponential form.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge.html), for the biquaternion case.
+- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge and its comparison with the biquaternion case.

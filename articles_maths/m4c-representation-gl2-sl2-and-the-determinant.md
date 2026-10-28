@@ -4,11 +4,11 @@
 
 The units of the biquaternion algebra are the invertible matrices, and the determinant of the left regular matrix is the square of the quaternionic norm. The group of units is $GL_2(\mathbb{C})$ in the $2\times2$ model; in the regular model it is a subgroup of $GL_4(\mathbb{C})$ isomorphic to $GL_2(\mathbb{C})$, and the norm-one subgroup is a subgroup of $SL_4(\mathbb{C})$ isomorphic to $SL_2(\mathbb{C})$. The determinant of the $4\times4$ matrix is the square of the determinant of the $2\times2$ matrix, and that square is the one difference between the two readings of the group.
 
-This article develops the group picture in the regular model: the isomorphism, the determinant sequence and its splittings, the geometry of the level sets, the unitary group and the polar decomposition, the Bruhat decomposition, the centre and the double covers. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
+This article develops the group picture in the regular model: the isomorphism, the determinant sequence and its splittings, the geometry of the level sets, the $*$-unitary group and the polar decomposition, the Bruhat decomposition, the centre and the double covers. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
 **Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and $\det\mathsf{M}_4(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$. The unit group of the algebra is $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$, and the norm-one group is $\mathbb{B}^{\times}_1=\{\tilde Q:N=1\}$. The image is $M_4(\mathbb{C})_L=\mathsf{M}_4(\mathbb{B})$.
 
-**Boundaries.** The unit group as a topological group, its homotopy and its covering are *The Biquaternion Unit Group as a Topological Group*; the norm-one group and the polar factors are *The Polar Decomposition of a N-Regular Biquaternion*; the unitary group is *The Unitary Group of the Biquaternion Algebra*; the level sets of the norm and the sector are *The N-Regular Sector*; the polar decomposition of a matrix is *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*.
+**Boundaries.** The unit group as a topological group, its homotopy and its covering are *The Biquaternion Unit Group as a Topological Group*; the norm-one group and the polar factors are *The Polar Decomposition of a N-Regular Biquaternion*; the $*$-unitary group is *The Unitary Group of the Biquaternion Algebra*; the level sets of the norm and the sector are *The N-Regular Sector*; the polar decomposition of a matrix is *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*.
 
 ## The Group Isomorphism
 
@@ -82,17 +82,17 @@ with the diagonal embedding. In the regular model the same action is read blockw
 
 **The cone.** The level set $c=0$ is the null cone, and it is not smooth: it is the cone over the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$, with the apex at the origin. The apex is the only singular point, and it is the image of the zero element. In the regular model the cone is the intersection of the image with the determinant-zero locus, and it is the subject of *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*.
 
-## The Unit Group and the Unitary Group
+## The Unit Group and the $*$-Unitary Group
 
-**The unitary subgroup.** The matrices in the image satisfying $M^{\dagger}M=\mathrm I_4$ form the unitary subgroup $U(2)$ read twice, of real dimension four. In the algebra, the condition is $\tilde Q^{*}\tilde Q=e_t$, and the subgroup is
+**The $*$-unitary subgroup.** The matrices in the image satisfying $M^{\dagger}M=\mathrm I_4$ form the $*$-unitary subgroup $U(2)$ read twice, of real dimension four. In the algebra, the condition is $\tilde Q^{*}\tilde Q=e_t$, and the subgroup is
 $$
 \mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong U(2),
 $$
 embedded in $U(4)$ by $\mathsf{M}_4$. It is the maximal compact subgroup of the image.
 
-**The special unitary subgroup.** The intersection with the norm-one group is $SU(2)$, of real dimension three, the group of rotation rotors. It is the maximal compact subgroup of $SL_2$, and in the regular model it is the diagonal copy $\operatorname{diag}(U,U)$ of $SU(2)$ inside $SU(4)$.
+**The special $*$-unitary subgroup.** The intersection with the norm-one group is $SU(2)$, of real dimension three, the group of rotation rotors. It is the maximal compact subgroup of $SL_2$, and in the regular model it is the diagonal copy $\operatorname{diag}(U,U)$ of $SU(2)$ inside $SU(4)$.
 
-**The polar decomposition.** Every invertible matrix in the image is a product of a positive Hermitian matrix and a unitary one:
+**The polar decomposition.** Every invertible matrix in the image is a product of a positive Hermitian matrix and a $*$-unitary one:
 $$
 GL_4(\mathbb{C})_L=Herm^{>0}_L\cdot U(2)_L,
 $$
@@ -210,7 +210,7 @@ The last row is not a covering; it is the Hopf fibration, included for contrast.
 
 ## Summary
 
-The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are $SL_2(\mathbb{C})$; in the regular model they are a four-dimensional subgroup of $GL_4(\mathbb{C})$ and a three-dimensional subgroup of $SL_4(\mathbb{C})$, both isomorphic to the $2\times2$ groups. The determinant of the regular matrix is the square of the norm and fits the exact sequence $1\to SL_2\to GL_2\to\mathbb{C}^{\times}\to1$, which splits non-centrally but not centrally; the multiplication map $\mathbb{C}^{\times}\times SL_2\to GL_2$ is a twofold cover. Each nonzero level set of the norm is a smooth connected complex hypersurface of dimension three, homogeneous under $SL_2\times SL_2$. The unitary group $U(2)$ is the maximal compact subgroup, and the polar decomposition is the matrix form of the unit-factor splitting. The centre is $\mathbb{C}^{\times}\mathrm I_4$, and the automorphism group is $PGL_2$. Three double covers have kernel $\{\pm\mathrm I_4\}$: $SU(2)\to SO(3)$, $SL_2(\mathbb{C})\to SO^+(1,3)$ and $SL_2(\mathbb{C})\to PGL_2(\mathbb{C})$; the Hopf fibration $SU(2)\to S^2$ has fibre $S^1$ and is not a covering.
+The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are $SL_2(\mathbb{C})$; in the regular model they are a four-dimensional subgroup of $GL_4(\mathbb{C})$ and a three-dimensional subgroup of $SL_4(\mathbb{C})$, both isomorphic to the $2\times2$ groups. The determinant of the regular matrix is the square of the norm and fits the exact sequence $1\to SL_2\to GL_2\to\mathbb{C}^{\times}\to1$, which splits non-centrally but not centrally; the multiplication map $\mathbb{C}^{\times}\times SL_2\to GL_2$ is a twofold cover. Each nonzero level set of the norm is a smooth connected complex hypersurface of dimension three, homogeneous under $SL_2\times SL_2$. The $*$-unitary group $U(2)$ is the maximal compact subgroup, and the polar decomposition is the matrix form of the unit-factor splitting. The centre is $\mathbb{C}^{\times}\mathrm I_4$, and the automorphism group is $PGL_2$. Three double covers have kernel $\{\pm\mathrm I_4\}$: $SU(2)\to SO(3)$, $SL_2(\mathbb{C})\to SO^+(1,3)$ and $SL_2(\mathbb{C})\to PGL_2(\mathbb{C})$; the Hopf fibration $SU(2)\to S^2$ has fibre $S^1$ and is not a covering.
 
 ## Summary of Notation
 
@@ -220,7 +220,7 @@ The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are 
 | $\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$ | the norm-one group |
 | $\mathsf{M}_4$ | the left regular matrix, $\det\mathsf{M}_4(\tilde Q)=N^2$ |
 | $\mathbb{C}^{\times}\mathrm I_4$ | the centre of the image |
-| $U(2)_L$ | the unitary subgroup, maximal compact |
+| $U(2)_L$ | the $*$-unitary subgroup, maximal compact |
 | $SU(2)_L$ | the rotation rotors, $\operatorname{diag}(U,U)$ |
 | $PGL_2$ | the inner automorphism group |
 | $SO^+(1,3)$ | the proper orthochronous Lorentz group |

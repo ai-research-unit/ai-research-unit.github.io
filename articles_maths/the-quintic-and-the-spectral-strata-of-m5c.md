@@ -16,7 +16,7 @@ $$
 
 The first is the **regular semisimple** stratum, the open stratum of matrices with five distinct eigenvalues; the last is the scalar stratum, the unique closed stratum. The root orbit of *Roots of Unity and the Lagrange Idempotents* is the conjugacy class of a fixed root, of dimension $20$, inside the regular semisimple locus.
 
-The **discriminant** $\Delta$ is the polynomial in the coefficients whose vanishing is the condition of a repeated root. Its zero locus is the **singular set** of the characteristic polynomial map, a hypersurface of codimension $1$; its complement is the regular semisimple locus. The orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions $0,2,4,6,8,12,20$; the discriminant locus is the union of all the strata with a repeated root, including the non-semisimple matrices, and it has dimension $24$.
+The **discriminant** $\Delta$ is the polynomial in the coefficients whose vanishing is the condition of a repeated root. Its zero locus is the **singular set** of the characteristic polynomial map, a hypersurface of codimension $1$; its complement is the regular semisimple locus. The orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions $5,7,9,11,13,17,25$ in $M_5$; the discriminant locus is the union of all the strata with a repeated root, including the non-semisimple matrices, and it has dimension $24$.
 
 The **quintic** enters because the eigenvalues of a $5\times5$ matrix are the roots of a quintic. A general quintic has no solution in radicals: the Galois group of the general quintic is $S_5$, which is not solvable (Abel–Ruffini, Galois). The eigenvalues exist by the fundamental theorem of algebra, and the Lagrange projectors exist at a simple spectrum, but neither fact produces a radical formula for the roots. The projectors are algebraic functions of the coefficients, not generally radical functions.
 
@@ -148,23 +148,23 @@ $$
 \dim=25-\sum_{i=1}^{r}m_i^2,
 $$
 
-in $M_5$ and in $PGL_5$. Its codimension is $\sum_i m_i^2-5$.
+in $M_5$ and in $PGL_5$. Its codimension in $M_5$ is $\sum_i m_i^2$, and its codimension in $PGL_5$ is $\sum_i m_i^2-1$.
 
 **Proof.** The centraliser of a diagonal matrix with distinct eigenvalues on blocks of sizes $m_i$ is $\prod_iGL_{m_i}$, of dimension $\sum_i m_i^2$. The conjugacy class has dimension $\dim GL_5-\sum_i m_i^2=25-\sum_i m_i^2$. In $PGL_5$ the centraliser is the image of the product modulo scalars, of dimension $\sum_i m_i^2-1$, and the orbit has dimension $24-(\sum_i m_i^2-1)=25-\sum_i m_i^2$; the two dimensions agree.
 
-**Corollary.** The dimensions and codimensions are
+**Corollary.** The dimensions and the codimensions in $M_5$ are
 
-| Partition | Dimension | Codimension |
+| Partition | Dimension | Codimension in $M_5$ |
 |---|---|---|
-| $(1,1,1,1,1)$ | $20$ | $0$ |
-| $(2,1,1,1)$ | $18$ | $2$ |
-| $(2,2,1)$ | $16$ | $4$ |
-| $(3,1,1)$ | $14$ | $6$ |
-| $(3,2)$ | $12$ | $8$ |
-| $(4,1)$ | $8$ | $12$ |
-| $(5)$ | $0$ | $20$ |
+| $(1,1,1,1,1)$ | $20$ | $5$ |
+| $(2,1,1,1)$ | $18$ | $7$ |
+| $(2,2,1)$ | $16$ | $9$ |
+| $(3,1,1)$ | $14$ | $11$ |
+| $(3,2)$ | $12$ | $13$ |
+| $(4,1)$ | $8$ | $17$ |
+| $(5)$ | $0$ | $25$ |
 
-**Proof.** Evaluate $25-\sum m_i^2$: for $1^5$, $25-5=20$; for $2,1,1,1$, $25-7=18$; for $2,2,1$, $25-9=16$; for $3,1,1$, $25-11=14$; for $3,2$, $25-13=12$; for $4,1$, $25-17=8$; for $5$, $25-25=0$. The codimension is $\sum m_i^2-5$.
+**Proof.** Evaluate $25-\sum m_i^2$: for $1^5$, $25-5=20$; for $2,1,1,1$, $25-7=18$; for $2,2,1$, $25-9=16$; for $3,1,1$, $25-11=14$; for $3,2$, $25-13=12$; for $4,1$, $25-17=8$; for $5$, $25-25=0$. The codimension in $M_5$ is $25-\dim=\sum m_i^2$; in $PGL_5$ it is one less.
 
 ### The Closure Order
 
@@ -270,7 +270,7 @@ $$
 \boxed{\ \text{The spectral types are }1^5,\,2\,1^3,\,2^2\,1,\,3\,1^2,\,3\,2,\,4\,1,\,5;\quad \text{the root orbit }1^5\text{ has dimension }20.\ }
 $$
 
-The semisimple orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions $0,2,4,6,8,12,20$; the characteristic strata have dimensions $25,24,23,23,22,22,21$. The root orbit is the orbit of the fixed root; the regular semisimple locus is the open characteristic stratum.
+The semisimple orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions in $M_5$ $5,7,9,11,13,17,25$; the characteristic strata have dimensions $25,24,23,23,22,22,21$. The root orbit is the orbit of the fixed root; the regular semisimple locus is the open characteristic stratum.
 
 A general quintic has no radical solution: its Galois group is $S_5$, not solvable. The eigenvalues exist by the fundamental theorem of algebra; the Lagrange projectors exist at a simple spectrum and are polynomial in $H$; neither fact gives a radical formula for the roots. The Galois group permutes the five projectors, and for a general quintic the action is transitive.
 

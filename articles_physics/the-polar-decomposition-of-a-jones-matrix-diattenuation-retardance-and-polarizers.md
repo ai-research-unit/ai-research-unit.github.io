@@ -4,7 +4,7 @@
 
 A Jones matrix is a $2\times2$ complex matrix that carries the transverse electric field of a monochromatic beam through a linear optical element. The corpus reads the same object as a biquaternion: the algebra is isomorphic to $M_2(\mathbb{C})$, the matrix acts on the two-component Jones vector, and composition of elements is composition of optical elements. This article reads the polar decomposition of that element and gives its optical names.
 
-The decomposition is the **Cartan pairing**. A general Jones matrix is neither Hermitian nor unitary, so the quaternion and Hamilton pairings do not apply to it in general; the Cartan pairing does, and on the invertible elements it is unique. Its two factors are the two independent optical anisotropies: a Hermitian positive **diattenuator**, which transmits two orthogonal polarizations with different amplitudes, and a unitary **retarder**, which delays them by different phases.
+The decomposition is the **Cartan pairing**. A general Jones matrix is neither Hermitian nor $*$-unitary, so the quaternion and Hamilton pairings do not apply to it in general; the Cartan pairing does, and on the invertible elements it is unique. Its two factors are the two independent optical anisotropies: a Hermitian positive **diattenuator**, which transmits two orthogonal polarizations with different amplitudes, and a $*$-unitary **retarder**, which delays them by different phases.
 
 The article states the correspondence, computes the standard optical parameters from the factors, and treats the boundary case. A polarizer is a rank-one Jones matrix. It lies on the zero-divisor cone, where the norm vanishes, the element is not invertible, and the classical Cartan pairing stops. The generalized Cartan pairing continues there with a positive semidefinite factor and a partial isometry, and the polarizer becomes the canonical example of that extension.
 
@@ -13,11 +13,11 @@ The article states the correspondence, computes the standard optical parameters 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The element image $\mathsf{M}_2(\tilde J)$ and the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ | [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](../articles_maths/m2c-representation-the-matrix-product-and-the-algebra-structure.html) |
-| The Cartan pairing $\tilde J=\tilde J_H\tilde J_0$, the positive factor and the unitary factor | *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions* |
+| The Cartan pairing $\tilde J=\tilde J_H\tilde J_0$, the positive factor and the $*$-unitary factor | *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions* |
 | The generalized pairing on the cone, the partial isometry and its projections | [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 | The eigenvalue decomposition, the eigenprojections and the rank-one case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The norm, the invertibility criterion and the zero-divisor cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| The unitary group and its matrix model | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
+| The $*$-unitary group and its matrix model | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The square root of a positive element | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 
 The physical sources are *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form* for the Jones vector, the Stokes parameters and the coherency biquaternion, *The General Polar Decomposition, the Amplitude and the Operator-to-State Map* for the state that an operator defines, and *The Matrix Images: Mixedness, Rapidity and the Phase Fibre* for the singular values of the amplitude.
@@ -51,10 +51,10 @@ The norm is the determinant. For an element $\tilde J$ the biquaternion norm is 
 | element | biquaternion condition | optical name |
 | --- | --- | --- |
 | Hermitian, positive | $\tilde J=\tilde J^{*}$, spectrum $\ge0$ | diattenuator |
-| unitary | $\tilde J\tilde J^{*}=e_t$ | retarder |
+| $*$-unitary | $\tilde J\tilde J^{*}=e_t$ | retarder |
 | rank one | $\langle\tilde J\rangle_{\natural}=0$, $\tilde J\neq0$ | polarizer |
 
-A general Jones matrix is none of the three. It is not Hermitian, because it has both amplitude and phase anisotropy, and it is not unitary, because it absorbs. Its norm is a general complex number: a pure retarder has $\lvert\langle\tilde J\rangle_{\natural}\rvert=1$, an ideal polarizer has $\langle\tilde J\rangle_{\natural}=0$, and a general element lies between them. The element is therefore outside the domains of the quaternion and Hamilton pairings, which need a real-quaternion factor and a non-null vector part respectively; the Cartan pairing is the one that applies.
+A general Jones matrix is none of the three. It is not Hermitian, because it has both amplitude and phase anisotropy, and it is not $*$-unitary, because it absorbs. Its norm is a general complex number: a pure retarder has $\lvert\langle\tilde J\rangle_{\natural}\rvert=1$, an ideal polarizer has $\langle\tilde J\rangle_{\natural}=0$, and a general element lies between them. The element is therefore outside the domains of the quaternion and Hamilton pairings, which need a real-quaternion factor and a non-null vector part respectively; the Cartan pairing is the one that applies.
 
 ## The Cartan Pair
 
@@ -66,13 +66,13 @@ $$
 \tilde J_0=\tilde J_H^{-1}\tilde J\;}.
 $$
 
-The factor $\tilde J_H$ is Hermitian positive and the factor $\tilde J_0$ is unitary. The pair is unique: the positive square root is unique, and the unitary factor is then fixed. In the matrix image this is the polar decomposition $\mathsf{J}=\mathsf{H}\mathsf{U}$, with $\mathsf{H}$ positive definite and $\mathsf{U}$ unitary.
+The factor $\tilde J_H$ is Hermitian positive and the factor $\tilde J_0$ is $*$-unitary. The pair is unique: the positive square root is unique, and the $*$-unitary factor is then fixed. In the matrix image this is the polar decomposition $\mathsf{J}=\mathsf{H}\mathsf{U}$, with $\mathsf{H}$ positive definite and $\mathsf{U}$ $*$-unitary.
 
-**The optical order.** With the column-vector convention, $\tilde J=\tilde J_H\tilde J_0$ acts as $\tilde J_0$ first and $\tilde J_H$ second: a retarder followed by a diattenuator. The optics literature more often writes the reverse order, $\mathsf{J}=\mathsf{J}_{\mathrm R}\mathsf{J}_{\mathrm D}$, a diattenuator followed by a retarder. That is the right polar form, $\mathsf{J}=\mathsf{V}\mathsf{P}$ with $\mathsf{P}=\sqrt{\mathsf{J}^{\dagger}\mathsf{J}}$ and $\mathsf{V}$ unitary; it has the same unitary factor, $\mathsf{V}=\mathsf{U}$, and the positive factor $\mathsf{P}=\mathsf{U}^{\dagger}\mathsf{H}\mathsf{U}$, which is $\mathsf{H}$ in the frame of $\mathsf{U}$. The principal transmissions and the retardance are therefore independent of the order convention; only the axis of the diattenuator is rotated by the retarder. This article uses the corpus's left form and states the order when it matters.
+**The optical order.** With the column-vector convention, $\tilde J=\tilde J_H\tilde J_0$ acts as $\tilde J_0$ first and $\tilde J_H$ second: a retarder followed by a diattenuator. The optics literature more often writes the reverse order, $\mathsf{J}=\mathsf{J}_{\mathrm R}\mathsf{J}_{\mathrm D}$, a diattenuator followed by a retarder. That is the right polar form, $\mathsf{J}=\mathsf{V}\mathsf{P}$ with $\mathsf{P}=\sqrt{\mathsf{J}^{\dagger}\mathsf{J}}$ and $\mathsf{V}$ $*$-unitary; it has the same $*$-unitary factor, $\mathsf{V}=\mathsf{U}$, and the positive factor $\mathsf{P}=\mathsf{U}^{\dagger}\mathsf{H}\mathsf{U}$, which is $\mathsf{H}$ in the frame of $\mathsf{U}$. The principal transmissions and the retardance are therefore independent of the order convention; only the axis of the diattenuator is rotated by the retarder. This article uses the corpus's left form and states the order when it matters.
 
 **The parameter count.** A Jones matrix has eight real parameters. The pair has four in $\tilde J_H$ and four in $\tilde J_0$, and the decomposition is a bijection on the invertible elements. One of the four in $\tilde J_0$ is the central phase, which is invisible in the optical response, so the physical element has seven parameters: the transmission scale, the diattenuation and its axis, the retardance and its axis. The count is the optical content of the uniqueness statement.
 
-**On the cone.** When $\langle\tilde J\rangle_{\natural}=0$ the element is not invertible and $\tilde J_H^{-1}$ does not exist. The generalized pair replaces the inverse by the Moore–Penrose inverse, the positive factor by a positive semidefinite one, and the unitary factor by a partial isometry:
+**On the cone.** When $\langle\tilde J\rangle_{\natural}=0$ the element is not invertible and $\tilde J_H^{-1}$ does not exist. The generalized pair replaces the inverse by the Moore–Penrose inverse, the positive factor by a positive semidefinite one, and the $*$-unitary factor by a partial isometry:
 
 $$
 \boxed{\;\tilde J=\tilde H_{\mathrm{pos}}\tilde Q_{\mathrm p},\qquad
@@ -84,7 +84,7 @@ The pair is unique once the projections of $\tilde Q_{\mathrm p}$ are fixed to b
 
 | element | pair | what the pair defines |
 | --- | --- | --- |
-| $\langle\tilde J\rangle_{\natural}\neq0$ | $\tilde J_H>0$, $\tilde J_0$ unitary | diattenuation and retardance |
+| $\langle\tilde J\rangle_{\natural}\neq0$ | $\tilde J_H>0$, $\tilde J_0$ $*$-unitary | diattenuation and retardance |
 | $\langle\tilde J\rangle_{\natural}=0$, $\tilde J\neq0$ | $\tilde H_{\mathrm{pos}}\ge0$, $\tilde Q_{\mathrm p}$ partial isometry | diattenuation, no retardance |
 | $\tilde J=0$ | $\tilde H_{\mathrm{pos}}=0$, $\tilde Q_{\mathrm p}=0$ | neither |
 
@@ -124,7 +124,7 @@ The half-angle is the boost-factor convention: the eigenvalues are the exponenti
 
 ## Retardance
 
-The retarder is the unitary factor. Its spectral decomposition is
+The retarder is the $*$-unitary factor. Its spectral decomposition is
 
 $$
 \tilde J_0=\exp(i\phi_1)\tilde\Pi_+(\vec u_U)+\exp(i\phi_2)\tilde\Pi_-(\vec u_U),
@@ -138,7 +138,7 @@ $$
 
 The eigenpolarizations $\vec u_U$ and $-\vec u_U$ are the **retarder axes**; one is fast and one is slow, and the sign convention for $\delta$ fixes which is which. The global phase $\tfrac12(\phi_1+\phi_2)$ is not a retardance. It is the central phase of the element and has no optical consequence.
 
-The unitary factor splits into that phase and a real rotor,
+The $*$-unitary factor splits into that phase and a real rotor,
 
 $$
 \tilde J_0=\exp(i\alpha)\tilde u_{\mathrm r},\qquad
@@ -148,7 +148,7 @@ $$
 
 The rotor is a real quaternion of unit norm, and its eigenvalues are $\exp(\pm i\delta/2)$. **The retardance is twice the exponent angle of the rotor**, and the rotor is the half-angle object that the double cover of the rotation group requires. A rotor with exponent angle $\pi/2$ is a retardance of $\pi$, not $\pi/2$.
 
-**The boundary.** The retardance is defined modulo $2\pi$ and its sign depends on the labelling of the two axes. The unitary factor of a polarizer is a partial isometry, not a unitary element, so a polarizer has no retardance: one of its two eigenvalues is zero and the phase difference is not defined.
+**The boundary.** The retardance is defined modulo $2\pi$ and its sign depends on the labelling of the two axes. The $*$-unitary factor of a polarizer is a partial isometry, not a $*$-unitary element, so a polarizer has no retardance: one of its two eigenvalues is zero and the phase difference is not defined.
 
 ## Polarizers and the Cone
 
@@ -170,11 +170,11 @@ $$
 \tilde J=\tilde\Pi(\vec u)\tilde\Pi(\vec u).
 $$
 
-The positive factor is the final projection and the partial isometry is the same projection; both are rank one. A rank-one element with different input and output rays is $\tilde J=\sigma\lvert f\rangle\langle i\rvert$ with $\sigma>0$ and normalised rays; it has $\tilde H_{\mathrm{pos}}=\sigma\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$, a partial isometry from the input ray to the output ray. It is a polarizer along $i$ followed by a unitary transformation that carries $i$ to $f$, with the amplitude $\sigma$, and the two projections are the two pure states that the element connects.
+The positive factor is the final projection and the partial isometry is the same projection; both are rank one. A rank-one element with different input and output rays is $\tilde J=\sigma\lvert f\rangle\langle i\rvert$ with $\sigma>0$ and normalised rays; it has $\tilde H_{\mathrm{pos}}=\sigma\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$, a partial isometry from the input ray to the output ray. It is a polarizer along $i$ followed by a $*$-unitary transformation that carries $i$ to $f$, with the amplitude $\sigma$, and the two projections are the two pure states that the element connects.
 
 **Absorption is monotone.** The rank of a product cannot exceed the rank of a factor, so a polarizer anywhere in a sequence leaves the output rank one. The light that the polarizer absorbs is not recovered by anything downstream; the subsequent elements can rotate and attenuate the surviving polarization but cannot restore the killed component. This is the optical form of the statement that a zero divisor forgets a direction.
 
-**The optical parameters at the wall.** A polarizer has $D=1$ and no retardance. It is the limit of a diattenuator as $T_2\to0$, and the limit is singular: inside the cone the pair of a Hermitian diattenuator is $(\tilde J_H,\tilde J_0)=(\tilde J,e_t)$, while at the wall it is $(T_1\tilde\Pi_1,\tilde\Pi_1)$. The unitary factor jumps from the identity to a projection. The discontinuity is the rank drop, and it is the same discontinuity that the generalized pairing records on the cone.
+**The optical parameters at the wall.** A polarizer has $D=1$ and no retardance. It is the limit of a diattenuator as $T_2\to0$, and the limit is singular: inside the cone the pair of a Hermitian diattenuator is $(\tilde J_H,\tilde J_0)=(\tilde J,e_t)$, while at the wall it is $(T_1\tilde\Pi_1,\tilde\Pi_1)$. The $*$-unitary factor jumps from the identity to a projection. The discontinuity is the rank drop, and it is the same discontinuity that the generalized pairing records on the cone.
 
 ## Relation to the Mueller Matrix
 
@@ -213,7 +213,7 @@ D=\frac{1-\tfrac14}{1+\tfrac14}=0.6,\qquad
 \psi=\ln2=0.693147181 .
 $$
 
-The check $D=\tanh\psi=\tanh 0.693147181=0.6$ holds. The unitary factor has eigenvalues $1$ and $i$, so its retardance is $\delta=\pi/2$, its central phase is $\alpha=\pi/4$, and its rotor has exponent angle $\pi/4$. The norm is $\langle\tilde J\rangle_{\natural}=\det\mathsf{J}=i/2$, with modulus $\tfrac12$, which equals $\langle\tilde J_H\rangle_{\natural}=\det\mathsf{H}$.
+The check $D=\tanh\psi=\tanh 0.693147181=0.6$ holds. The $*$-unitary factor has eigenvalues $1$ and $i$, so its retardance is $\delta=\pi/2$, its central phase is $\alpha=\pi/4$, and its rotor has exponent angle $\pi/4$. The norm is $\langle\tilde J\rangle_{\natural}=\det\mathsf{J}=i/2$, with modulus $\tfrac12$, which equals $\langle\tilde J_H\rangle_{\natural}=\det\mathsf{H}$.
 
 For unpolarized input the output state is
 
@@ -236,7 +236,7 @@ Three readings follow from the algebra.
 - **Retardance is a fibre.** It rotates the state along its phase orbit and leaves the degree of polarisation, and hence the purity, invariant. The operator-to-state map discards it: the output for unpolarised input does not see it. It is visible in the element and invisible in the state's spectrum.
 - **The cone is the wall.** Polarizers are the zero divisors, the pure states and the non-invertible elements at once. The ideal polarizer is the point where the reversible description fails and the generalized description takes over.
 
-**The boundary of the interpretation.** The decomposition is canonical, but it is not a claim that the physical device is built of two plates in that order. Any factorisation of a matrix into a positive and a unitary factor is unique only when the factors are restricted to those classes; a real device has one Jones matrix, and the split is a canonical rewriting of it. The order of the factors is a convention, and the physics is in the pair, not in the order. The article also treats a single frequency: a real element has a Jones matrix per frequency, and dispersion is outside the single-matrix description.
+**The boundary of the interpretation.** The decomposition is canonical, but it is not a claim that the physical device is built of two plates in that order. Any factorisation of a matrix into a positive and a $*$-unitary factor is unique only when the factors are restricted to those classes; a real device has one Jones matrix, and the split is a canonical rewriting of it. The order of the factors is a convention, and the physics is in the pair, not in the order. The article also treats a single frequency: a real element has a Jones matrix per frequency, and dispersion is outside the single-matrix description.
 
 ## What This Does Not Claim
 
@@ -253,10 +253,10 @@ A Jones matrix is a biquaternion, and its Cartan pair is its optical decompositi
 $$
 \tilde J=\tilde J_H\tilde J_0,\qquad
 \tilde J_H=\sqrt{\tilde J\tilde J^{*}}\ge0,\qquad
-\tilde J_0=\tilde J_H^{-1}\tilde J\ \text{unitary}.
+\tilde J_0=\tilde J_H^{-1}\tilde J\ \text{}{}^{*}\text{-unitary}.
 $$
 
-The Hermitian positive factor is the **diattenuator**. Its eigenvalues $T_1\ge T_2\ge0$ are the principal amplitude transmissions, its eigenpolarizations are the principal axes, its mean intensity transmission is $\tfrac12(T_1^{2}+T_2^{2})$, and its diattenuation is $D=(T_1^{2}-T_2^{2})/(T_1^{2}+T_2^{2})=\tanh\psi$, where $\psi$ is the rapidity of the amplitude read as a boost. The unitary factor is the **retarder**. Its eigenvalues are $\exp(i\phi_{1,2})$, its eigenpolarizations are the retarder axes, its retardance is $\delta=\phi_1-\phi_2$, and its central phase is the unobservable global phase; the retardance is twice the exponent angle of the real rotor $\tilde u_{\mathrm r}$ in $\tilde J_0=\exp(i\alpha)\tilde u_{\mathrm r}$.
+The Hermitian positive factor is the **diattenuator**. Its eigenvalues $T_1\ge T_2\ge0$ are the principal amplitude transmissions, its eigenpolarizations are the principal axes, its mean intensity transmission is $\tfrac12(T_1^{2}+T_2^{2})$, and its diattenuation is $D=(T_1^{2}-T_2^{2})/(T_1^{2}+T_2^{2})=\tanh\psi$, where $\psi$ is the rapidity of the amplitude read as a boost. The $*$-unitary factor is the **retarder**. Its eigenvalues are $\exp(i\phi_{1,2})$, its eigenpolarizations are the retarder axes, its retardance is $\delta=\phi_1-\phi_2$, and its central phase is the unobservable global phase; the retardance is twice the exponent angle of the real rotor $\tilde u_{\mathrm r}$ in $\tilde J_0=\exp(i\alpha)\tilde u_{\mathrm r}$.
 
 The polarizer is the boundary case. It is a rank-one element, hence a zero divisor with $\langle\tilde J\rangle_{\natural}=0$, hence non-invertible; the classical pair does not exist, and the generalized pair gives $\tilde H_{\mathrm{pos}}=\tilde\Pi_f$ and $\tilde Q_{\mathrm p}=\lvert f\rangle\langle i\rvert$. Its diattenuation is one and its retardance is undefined. The operator-to-state map reads the same structure: for unpolarized input the output state is $\tilde J\tilde J^{*}/2\langle\tilde J,\tilde J\rangle_{*}$, its Bloch length is $D$, and its purity is $\tfrac12(1+D^{2})$. A retarder alone leaves that state maximally mixed.
 
@@ -267,13 +267,13 @@ The polarizer is the boundary case. It is a rank-one element, hence a zero divis
 | $\tilde J$, $\mathsf{J}$ | the Jones matrix as a biquaternion and as its $2\times2$ image |
 | $\vec J=(E_x,E_y)$ | the Jones vector of the beam |
 | $\tilde J_H$, $\mathsf{H}$ | the diattenuator, the Hermitian positive factor |
-| $\tilde J_0$, $\mathsf{U}$ | the retarder, the unitary factor |
+| $\tilde J_0$, $\mathsf{U}$ | the retarder, the $*$-unitary factor |
 | $T_1,T_2$ | the principal amplitude transmissions, $T_1\ge T_2\ge0$ |
 | $\bar T$ | the mean intensity transmission, $\tfrac12(T_1^{2}+T_2^{2})$ |
 | $D$ | the diattenuation, $(T_1^{2}-T_2^{2})/(T_1^{2}+T_2^{2})$ |
 | $\psi$ | the rapidity of the amplitude, $\ln(T_1/T_2)$ |
-| $\delta$ | the retardance, the phase difference of the unitary factor |
-| $\alpha$ | the central phase of the unitary factor |
+| $\delta$ | the retardance, the phase difference of the $*$-unitary factor |
+| $\alpha$ | the central phase of the $*$-unitary factor |
 | $\tilde u_{\mathrm r}$ | the real rotor of the retarder, angle $\delta/2$ |
 | $\tilde\Pi_\pm(\vec u)$ | the spectral projectors $\tfrac12(e_t\pm i\vec u)$; $\tilde\Pi_+$ is the ideal polarizer |
 | $\langle\tilde J\rangle_{\natural}$ | the biquaternion norm, equal to $\det\mathsf{J}$ |

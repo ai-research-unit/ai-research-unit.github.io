@@ -205,7 +205,7 @@ The classes are physical. The bilateral structures read every value, phase and a
 
 ### The Three Named Values
 
-A root of $+1$ is an element whose square in the product is the identity: in the plain product an **involution**, a parity or a discrete symmetry; in the natural product an element of $N$-norm one; and, in the probability band, a unitary transformation of the state space. The plain product's roots are the involutions of the module, the natural product's roots are the elements of $N$-norm one, and the probability band's root is the unitary group $\mathrm{U}(2)$; the symmetrisation replaces unitarity by normalisation, the root being a normalised amplitude without its phase; and a bracket produces no root of $+1$ at all. The compactness of $\mathrm{U}(2)$ is what makes the internal labels discrete.
+A root of $+1$ is an element whose square in the product is the identity: in the plain product an **involution**, a parity or a discrete symmetry; in the natural product an element of $N$-norm one; and, in the probability band, a $*$-unitary transformation of the state space. The plain product's roots are the involutions of the module, the natural product's roots are the elements of $N$-norm one, and the probability band's root is the $*$-unitary group $\mathrm{U}(2)$; the symmetrisation replaces unitarity by normalisation, the root being a normalised amplitude without its phase; and a bracket produces no root of $+1$ at all. The compactness of $\mathrm{U}(2)$ is what makes the internal labels discrete.
 
 An **idempotent** is an element equal to its own square. In the plain product the two equations are one equation read through the halving map,
 

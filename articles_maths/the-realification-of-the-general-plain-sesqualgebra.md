@@ -96,7 +96,7 @@ The complex structure **preserves** the form,
 $$
 H_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=+H_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
-the opposite of the case of a bilinear form. The map $J$ is therefore an isometry of the Euclidean form, an element of the orthogonal group $O(8)$ in the real basis, and the $\mathbb{C}$-linear endomorphisms that preserve $\langle\cdot,\cdot\rangle_{*}$ form the unitary group $\mathrm{U}(4)$.
+the opposite of the case of a bilinear form. The map $J$ is therefore an isometry of the Euclidean form, an element of the orthogonal group $O(8)$ in the real basis, and the $\mathbb{C}$-linear endomorphisms that preserve $\langle\cdot,\cdot\rangle_{*}$ form the $*$-unitary group $\mathrm{U}(4)$.
 
 The square of the block is positive for this form. The element $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is Hermitian, and its scalar part is the squared Euclidean norm,
 $$

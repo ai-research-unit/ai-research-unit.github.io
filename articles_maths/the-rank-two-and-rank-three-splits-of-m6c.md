@@ -346,7 +346,7 @@ The two-sided Peirce table is the same in both cases,
 | $FME$ | $FME$ | $FMF$ | $0$ | $0$ |
 | $FMF$ | $0$ | $0$ | $FME$ | $FMF$ |
 
-and the rank-three products are surjective where the rank-two products are not.
+and both corner products are surjective in the rank-three split, while in the rank-two split $EMF\cdot FME=EME$ is surjective and $FME\cdot EMF$ is only the rank-at-most-two locus of $FMF$.
 
 | Split | $EME$ | $EMF$ | $FME$ | $FMF$ | Mass block | Channels |
 |---|---|---|---|---|---|---|
@@ -373,5 +373,5 @@ and the rank-three products are surjective where the rank-two products are not.
 - [The Two Chiralities](the-two-chiralities-of-m6c.html), for the rank-three split by $\Pi_+$.
 - [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
 - [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the corner modules.
-- [Idempotents and Projections](idempotents-and-projections.html), for the conjugacy of idempotents of a fixed rank.
+- [Idempotents and Involutions of an Algebra](idempotents-and-involutions-of-an-algebra.html), for the conjugacy of idempotents of a fixed rank.
 - [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the homogeneous space of the rank-$p$ idempotents.

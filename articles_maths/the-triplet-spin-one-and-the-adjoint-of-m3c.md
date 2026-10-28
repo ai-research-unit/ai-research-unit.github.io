@@ -109,7 +109,7 @@ where $\mathfrak{h}_{0}$ is the traceless diagonal. The triplet is one nilpotent
 $$
 M_{3}(\mathbb{C})=V_{2}\oplus V_{1}\oplus\mathbb{C}I,\qquad \dim V_{2}=5,\quad \dim V_{1}=3,\quad \dim\mathbb{C}I=1,
 $$
-with highest weights $2,1,0$. The summand $V_{1}$ is the **spin-one triplet**, the carrier $\mathbb{C}^{3}$ of the defining representation; $V_{2}$ is the spin-two module $\operatorname{Sym}^{4}(\mathbb{C}^{2})$; the line $\mathbb{C}I$ is the trivial module. The decomposition is proved in *The Spin Chain and the Adjoint Decomposition* by the character computation and by exhibiting the highest-weight vectors.
+with highest weights $2,1,0$. The summand $V_{1}$ is the **spin-one triplet**, isomorphic to the carrier $\mathbb{C}^{3}$ of the defining representation; $V_{2}$ is the spin-two module $\operatorname{Sym}^{4}(\mathbb{C}^{2})$; the line $\mathbb{C}I$ is the trivial module. The decomposition is proved in *The Spin Chain and the Adjoint Decomposition* by the character computation and by exhibiting the highest-weight vectors.
 
 **The explicit basis of $V_{1}$.** In the standard frame,
 $$
@@ -208,6 +208,8 @@ and $u_{0}$ is diagonal, not strictly upper triangular. The same happens in the 
 | $\mathbb{C}I$ | $1$ | $0$ | ideal | yes, trivial |
 
 The nilpotent triplet and the spin-one triplet have the same dimension and the same highest-weight line, but they are different objects: one is a subalgebra with weights $1,1,2$, the other is an irreducible module with weights $1,0,-1$. The word **triplet** alone is ambiguous; this article calls $\mathfrak{n}_{+}$ the nilpotent triplet and $V_{1}$ the spin-one triplet. The nilpotent triplet is not a spin-one module, and no element of it is a spinor.
+
+**No half-integer weight.** Every weight in this article is an integer: $1,1,2$ for $\mathfrak{n}_{+}$, $1,0,-1$ for $V_{1}$, and $2,1,0,-1,-2$ for $V_{2}$. There is no half-integer weight and hence no spinorial representation in this category. Half-integer weights first appear in the two-dimensional carrier of the biquaternion algebra, where the spin is $\tfrac12$ and the module is $\mathbb{C}^{2}$; that module is a spinor, while the three-dimensional carrier here is the spin-one module.
 
 ## Summary
 

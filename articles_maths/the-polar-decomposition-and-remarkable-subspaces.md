@@ -12,7 +12,7 @@ $$
 
 with the positive real scale $r$, the central phase $\zeta$ of modulus one on the branch $\arg\zeta\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, the Hermitian positive unit-norm boost $\tilde U_{\mathrm b}$ and the unit real quaternion rotor $\tilde u_{\mathrm r}$.
 
-The pair is defined on the whole algebra, with a Hermitian positive semidefinite factor and a partial isometry. On the elements of non-vanishing norm the partial isometry is unitary and splits into the phase and the rotor, which is the word above; on the null cone it does not split, and the pair is computed there in *The Polar Decomposition of a N-Degenerate Biquaternion*.
+The pair is defined on the whole algebra, with a Hermitian positive semidefinite factor and a partial isometry. On the elements of non-vanishing norm the partial isometry is $*$-unitary and splits into the phase and the rotor, which is the word above; on the null cone it does not split, and the pair is computed there in *The Polar Decomposition of a N-Degenerate Biquaternion*.
 
 The algebra carries six **remarkable subspaces**, defined in *The Six Subspaces*: the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
@@ -580,7 +580,7 @@ The two products of the series are the product of two boosts, which is a boost t
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the two-factor pair on the whole algebra, its uniqueness, its continuity and its behaviour at the null cone and at the origin.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the closed forms of the pair on the two sectors of the cone.
 - *The Polar Decomposition in Subspaces*, for the same restriction read sector by sector on the physics side: the norm of each subspace, the criteria for a trivial boost and a trivial rotor, and the worked examples of every sector. Its boost has rapidity $\psi$ and the sign $-i$, where the maths series has rapidity $\tfrac{\psi}{2}$ and the sign $+i$ in the same closed form, so for the same element the parameter of the maths series is twice the one used there; the sign of the imaginary unit is the orientation of the axis and carries nothing more.
-- *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the Hermitian positive and unitary factors, and for the split of the exponents into $\mathbb{M}_+$ and $\mathbb{M}_-$ that the incidence of this article reproduces.
+- *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the Hermitian positive and $*$-unitary factors, and for the split of the exponents into $\mathbb{M}_+$ and $\mathbb{M}_-$ that the incidence of this article reproduces.
 - *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions* and *The Quaternion Pairing of the Polar Decomposition of Biquaternions*, for the two partial pairings of the same four factors and their domains, which are the two regroupings the incidence of this article does not see.
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the six subspaces one by one, their bases, their dimensions, their elements and their ideals.
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the four coordinate blocks, the intersections, the lattice of the fixed spaces and the action of the conjugations on the subspaces.
@@ -589,4 +589,4 @@ The two products of the series are the product of two boosts, which is a boost t
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Thomas-Wigner rotation of the product of two boosts and the double cover read on the rotor.
 - [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich as an operator, its kernel $U(1)$, its image $CO^{+}(1,3)$ and the factor-by-factor word.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group, its double cover and the reflections.
-- [Conventions in Mathematics](conventions-in-mathematics.html), for the symbols, the root convention and the unitary convention.
+- [Conventions in Mathematics](conventions-in-mathematics.html), for the symbols, the root convention and the $*$-unitary convention.

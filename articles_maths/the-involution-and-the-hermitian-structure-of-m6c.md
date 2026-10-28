@@ -8,7 +8,7 @@ $$
 A\longmapsto A^*=\overline{A}^{\mathsf T}
 $$
 
-is a conjugate-linear involution of $M_6(\mathbb{C})$. Its fixed points are the Hermitian matrices, its antiefixed points the skew-Hermitian ones, and its isometries the unitary matrices. The Hermitian form
+is a conjugate-linear involution of $M_6(\mathbb{C})$. Its fixed points are the Hermitian matrices, its antiefixed points the skew-Hermitian ones, and its isometries the $*$-unitary matrices. The Hermitian form
 
 $$
 \langle A,B\rangle=\operatorname{tr}(A^*B)
@@ -22,7 +22,7 @@ $$
 
 The skew-Hermitian matrices form the real Lie algebra $\mathfrak{u}(6)$ of dimension $36$; the traceless skew-Hermitian matrices form $\mathfrak{su}(6)$ of dimension $35$. The form is definite, so its only isotropic vector is $0$. This is the sharp contrast with the biquaternion algebra, whose conjugation is $\mathbb{C}$-linear and whose trace form has a nonzero null cone.
 
-The article assumes the coordinates and the trace pairing of *The Element, the Coordinates and the Trace*. It uses no topology beyond the finite-dimensional metric. The polar decomposition is *The Polar Decomposition*; the unitary group is *The Exponential and the Lie Group*; the real forms of the biquaternion algebra are *The Biquaternion Algebra and Its Vector Spaces*.
+The article assumes the coordinates and the trace pairing of *The Element, the Coordinates and the Trace*. It uses no topology beyond the finite-dimensional metric. The polar decomposition is *The Polar Decomposition*; the $*$-unitary group is *The Exponential and the Lie Group*; the real forms of the biquaternion algebra are *The Biquaternion Algebra and Its Vector Spaces*.
 
 ## The Conjugate Transpose
 
@@ -54,13 +54,13 @@ $$
 
 **Proof.** The four identities above are the axioms of a *-algebra.
 
-### Hermitian, Skew-Hermitian and Unitary Elements
+### Hermitian, Skew-Hermitian and $*$-Unitary Elements
 
 **Definition.** An element $A$ is
 
 - **Hermitian** if $A^*=A$;
 - **skew-Hermitian** if $A^*=-A$;
-- **unitary** if $A^*A=AA^*=I_6$;
+- **$*$-unitary** if $A^*A=AA^*=I_6$;
 - **normal** if $A^*A=AA^*$.
 
 **Theorem (the Cartesian decomposition).** Every $A$ has a unique decomposition
@@ -86,13 +86,13 @@ as real vector spaces, of real dimension $72$.
 
 **Proof.** The diagonal of a Hermitian matrix is real; the off-diagonal entries are paired by $a_{ji}=\overline{a_{ij}}$. For skew-Hermitian, the diagonal is purely imaginary and $a_{ji}=-\overline{a_{ij}}$.
 
-**Theorem (the unitary group).** The unitary elements form the group
+**Theorem (the $*$-unitary group).** The $*$-unitary elements form the group
 
 $$
 U(6)=\{U\in GL_6(\mathbb{C}):U^*U=I_6\},
 $$
 
-of real dimension $36$; the special unitary elements
+of real dimension $36$; the special $*$-unitary elements
 
 $$
 SU(6)=\{U\in U(6):\det U=1\}
@@ -110,17 +110,17 @@ $$
 
 has dimension $35$.
 
-**Proof.** A unitary matrix commuting with all unitaries is scalar; the scalar unitaries are $U(1)I_6$. The quotient by a one-dimensional center has dimension $36-1=35$.
+**Proof.** A $*$-unitary matrix commuting with all unitaries is scalar; the scalar unitaries are $U(1)I_6$. The quotient by a one-dimensional center has dimension $36-1=35$.
 
 ### The Lie Algebra
 
-**Definition.** The **unitary Lie algebra** is
+**Definition.** The **$*$-unitary Lie algebra** is
 
 $$
 \mathfrak{u}(6)=\{X\in M_6(\mathbb{C}):X^*=-X\},
 $$
 
-and the **special unitary Lie algebra** is
+and the **special $*$-unitary Lie algebra** is
 
 $$
 \mathfrak{su}(6)=\{X\in\mathfrak{u}(6):\operatorname{tr}X=0\}.
@@ -144,7 +144,7 @@ $$
 
 is surjective.
 
-**Proof.** The curve $t\mapsto e^{tX}$ is unitary for $X$ skew-Hermitian, and its derivative at zero is $X$; the tangent space is exactly $\mathfrak{u}(6)$. Every unitary matrix is diagonalizable with eigenvalues on the unit circle, so it is the exponential of a skew-Hermitian matrix (the diagonal logarithm).
+**Proof.** The curve $t\mapsto e^{tX}$ is $*$-unitary for $X$ skew-Hermitian, and its derivative at zero is $X$; the tangent space is exactly $\mathfrak{u}(6)$. Every $*$-unitary matrix is diagonalizable with eigenvalues on the unit circle, so it is the exponential of a skew-Hermitian matrix (the diagonal logarithm).
 
 ## The Positive Definite Trace Form
 
@@ -227,7 +227,7 @@ $$
 
 ## The Real Forms
 
-### The Unitary Form
+### The $*$-Unitary Form
 
 **Theorem.** $\mathfrak{u}(6)$ is a real form of the complex Lie algebra $\mathfrak{gl}_6(\mathbb{C})$:
 
@@ -255,7 +255,7 @@ as real vector spaces, and the symmetric space $GL_6(\mathbb{C})/U(6)$ is the sp
 
 **Proof.** $\theta$ is an involution because $(A^*)^*=A$; $\theta(X)=X$ iff $X^*=-X$; $\theta(X)=-X$ iff $X^*=X$. The quotient is the symmetric space of the Cartan involution, identified with the positive definite Hermitian matrices by the polar decomposition.
 
-### The Special Unitary Form
+### The Special $*$-Unitary Form
 
 **Theorem.** $\mathfrak{su}(6)$ is a simple real Lie algebra of dimension $35$, and its complexification is $\mathfrak{sl}_6(\mathbb{C})$.
 
@@ -269,7 +269,7 @@ as real vector spaces, and the symmetric space $GL_6(\mathbb{C})/U(6)$ is the sp
 
 **Proof.** For skew-Hermitian $X$, $\operatorname{tr}(X^*X)=-\operatorname{tr}(X^2)$; the first is positive definite, the second is the Killing form up to $12$ and is negative definite.
 
-## The Definite Form and the Null Cone
+## The Definite Form and the Isotropic Set
 
 ### The Isotropic Vectors
 
@@ -283,9 +283,9 @@ $$
 
 **Proof.** $\langle A,A\rangle=\sum_{ij}\lvert a_{ij}\rvert^2$; a sum of nonnegative terms vanishes only if every term vanishes.
 
-**Corollary (the null cone).** The null cone of the Hermitian form is the single point $\{0\}$. There is no nonzero isotropic vector, no null cone of positive dimension, and no zero divisor in the metric sense.
+**Corollary (the isotropic set).** The isotropic set of the Hermitian form is the single point $\{0\}$. There is no nonzero isotropic vector and no null cone, and no zero divisor in the metric sense.
 
-**Proof.** The null cone is the zero set of the quadratic form $\langle A,A\rangle$; by the theorem it is $\{0\}$.
+**Proof.** The isotropic set is the zero set of the quadratic form $\langle A,A\rangle$; by the theorem it is $\{0\}$.
 
 ### The Contrast with the Biquaternion Algebra
 
@@ -339,8 +339,8 @@ The definite form has no nonzero isotropic vector. The biquaternion algebra, who
 | Conjugate transpose | $A^*=\overline{A}^{\mathsf T}$, conjugate-linear involution |
 | Hermitian matrices | real dimension $36$ |
 | Skew-Hermitian matrices | real dimension $36$ |
-| Unitary group | $U(6)$, dimension $36$ |
-| Special unitary group | $SU(6)$, dimension $35$ |
+| $*$-Unitary group | $U(6)$, dimension $36$ |
+| Special $*$-unitary group | $SU(6)$, dimension $35$ |
 | Trace form | $\operatorname{tr}(A^*B)$, positive definite |
 | Frobenius norm | $\lVert A\rVert_F^2=\sum\lvert a_{ij}\rvert^2$ |
 | Isotropic vectors | only $0$ |
@@ -367,5 +367,4 @@ The definite form has no nonzero isotropic vector. The biquaternion algebra, who
 - [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the adjoint action of $U(6)$ and $PU(6)$.
 - [The Topology of $M_6(\mathbb{C})$](the-topology-of-m6c.html), for the unit sphere and the Frobenius metric.
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the biquaternion conjugation and its null cone.
-- [The Involution and the Hermitian Structure of the Biquaternion Algebra](the-involution-and-the-hermitian-structure-of-the-biquaternion-algebra.html), for the comparison.
-- [Hermitian Forms and the Unitary Group](hermitian-forms-and-the-unitary-group.html), for the general theory.
+- [Hermitian Forms and Unitary Geometry](hermitian-forms-and-unitary-geometry.html), for the general theory.

@@ -97,7 +97,7 @@ The product is $\tilde\Xi\tilde Q$, and its square is the plain square, of scala
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra
 
-The product is $\tilde\Xi\tilde Q^{*}$, and its square is the Hermitian element $\tilde\Xi\tilde\Xi^{*}$, of scalar part $\langle\tilde\Xi\rangle_{*}$. The roots of $+1$ are the unitary family $\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_t\}$, the group of the linear maps preserving the Hermitian form, of real dimension four, described as the family $\exp(i\theta)w$ over the real unit quaternions $w$; it contains $e_t$, $-e_t$ and the purely imaginary unit vectors $\tilde\Xi$. **The negative values are reached nowhere**, the scalar part $H$ being non-negative. The article is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*.
+The product is $\tilde\Xi\tilde Q^{*}$, and its square is the Hermitian element $\tilde\Xi\tilde\Xi^{*}$, of scalar part $\langle\tilde\Xi\rangle_{*}$. The roots of $+1$ are the $*$-unitary family $\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_t\}$, the group of the linear maps preserving the Hermitian form, of real dimension four, described as the family $\exp(i\theta)w$ over the real unit quaternions $w$; it contains $e_t$, $-e_t$ and the purely imaginary unit vectors $\tilde\Xi$. **The negative values are reached nowhere**, the scalar part $H$ being non-negative. The article is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra
 

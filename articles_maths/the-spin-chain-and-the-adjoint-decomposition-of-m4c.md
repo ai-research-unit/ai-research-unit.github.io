@@ -69,7 +69,7 @@ $$
 
 **Proof.** $J_+^{\mathsf T}=J_-$, so $J_1$ is real symmetric and $J_2$ is real skew-symmetric divided by $i$, hence Hermitian. The commutators follow from the three relations above by taking real and imaginary parts. The complex span of $J_1,J_2,J_3$ is the three-dimensional Lie algebra $\mathfrak{sl}_2(\mathbb{C})$.
 
-**The representation is unitary.** The generators $J_1,J_2,J_3$ are Hermitian, so the one-parameter groups $e^{itJ_a}$ are unitary and the representation of $SU(2)$ on $\mathbb{C}^4$ is unitary. The weights of $J_3$ are real, as they must be.
+**The representation is $*$-unitary.** The generators $J_1,J_2,J_3$ are Hermitian, so the one-parameter groups $e^{itJ_a}$ are $*$-unitary and the representation of $SU(2)$ on $\mathbb{C}^4$ is $*$-unitary. The weights of $J_3$ are real, as they must be.
 
 ## The Weights and the Ladder
 
@@ -219,7 +219,12 @@ $$
 \operatorname{ad}_{J_+}(I)=0.
 $$
 
-For example, $\operatorname{ad}_{J_+}(E_{14})=J_+E_{14}-E_{14}J_+=(J_+e_1)e_4^{\mathsf T}-e_1(J_+^{\mathsf T}e_4)^{\mathsf T}$; the first term is $0$ because $J_+e_1=0$, and the second is $0$ because $J_+^{\mathsf T}e_4=J_-e_4=0$. The other three vanish by the same boundary argument, or by the weight: a vector of weight $k$ killed by $J_+$ is a highest weight vector. The lowering chain from $w_k$ has nonzero coefficients (the ladder coefficients are nonzero), so the cyclic module has dimension $2k+1$. The four cyclic modules are independent because their highest weights are distinct; the dimension count $7+5+3+1=16$ shows that they span the algebra.
+For example, $\operatorname{ad}_{J_+}(E_{14})=J_+E_{14}-E_{14}J_+=(J_+e_1)e_4^{\mathsf T}-e_1(J_+^{\mathsf T}e_4)^{\mathsf T}$; the first term is $0$ because $J_+e_1=0$, and the second is $0$ because $J_+^{\mathsf T}e_4=J_-e_4=0$. For the sum,
+$$
+\operatorname{ad}_{J_+}(E_{13})=-\sqrt3\,E_{14},\qquad
+\operatorname{ad}_{J_+}(E_{24})=\sqrt3\,E_{14},
+$$
+so the two terms cancel. The remaining two are immediate: $[J_+,J_+]=0$ and $[J_+,I]=0$. The lowering chain from $w_k$ has nonzero coefficients (the ladder coefficients are nonzero), so the cyclic module has dimension $2k+1$. The four cyclic modules are independent because their highest weights are distinct; the dimension count $7+5+3+1=16$ shows that they span the algebra.
 
 **The adjoint of $\mathfrak{sl}_4$.** The centre $\mathbb{C}I$ is the module $\mathcal{V}_0$. The adjoint representation of $\mathfrak{sl}_4(\mathbb{C})$ is the traceless part,
 
@@ -272,7 +277,7 @@ $$
 
 and $e_2,e_4$ have chirality $-1$ while $e_1,e_3$ have chirality $+1$. The operator $J_+$ changes the chirality; $J_-$ changes it back. The carrier is irreducible under the Peirce $\mathfrak{sl}_2$, so there is no proper invariant subspace that is one chirality. The chain is a spin-$\tfrac32$ chain that runs through both chiralities, not a pair of independent spin-$\tfrac12$ chains.
 
-**The chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ is different.** The subalgebra that preserves $\Gamma$ is the block-diagonal $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ acting on the two planes $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$. It commutes with $\Gamma$, it is six-dimensional, and each chirality is a spin-$\tfrac12$ module for one of its two factors. The Peirce $\mathfrak{sl}_2$ is three-dimensional and irreducible; it is not contained in the chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, because its raising and lowering operators are odd with respect to $\Gamma$. The two chains are different structures on the same carrier. The precise comparison, with the branching rules, is *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$*.
+**The chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ is different.** The traceless block-diagonal subalgebra that commutes with $\Gamma$ is $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ acting on the two planes $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$. It is six-dimensional, and each chirality is a spin-$\tfrac12$ module for one of its two factors. The full centraliser of $\Gamma$ in $\mathfrak{sl}_4$ is spanned by this algebra and $\Gamma$, of dimension $7$; the chiral algebra is the six-dimensional traceless part. The Peirce $\mathfrak{sl}_2$ is three-dimensional and irreducible; it is not contained in the chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, because its raising and lowering operators are odd with respect to $\Gamma$. The two chains are different structures on the same carrier. The precise comparison, with the branching rules, is *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$*.
 
 **The $n=2$ case.** For the biquaternion algebra $M_2(\mathbb{C})$ the carrier is $\mathbb{C}^2=\operatorname{Sym}^1(\mathbb{C}^2)$, the spin-$\tfrac12$ module. The generators are
 
@@ -348,4 +353,4 @@ $$
 - [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the chain of simple nilpotents.
 - [The Two Chiralities](the-two-chiralities-of-m4c.html), for the $2+2$ split.
 - [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the comparison of the two chains.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.

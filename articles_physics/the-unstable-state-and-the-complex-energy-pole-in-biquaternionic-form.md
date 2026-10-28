@@ -15,7 +15,7 @@ $$
 \tilde H = h_t\,e_t + i\,\vec h, \qquad h_t\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(t')=\exp(-i\tilde Ht'/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t')=\tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$; the evolution is unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(t')=\exp(-i\tilde Ht'/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t')=\tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -204,7 +204,7 @@ $$
 \tilde A(t')=\sqrt{\tilde U_\star(t')\tilde U_\star(t')^{*}}=e^{-\Gamma t'/2\hbar}e_t,
 $$
 
-and the unitary factor is the phase $e^{-iE_Rt'/\hbar}e_t$. The survival probability is the square of the amplitude, $\langle\tilde U_\star(t')\rangle_{*}=e^{-\Gamma t'/\hbar}$, which is the Hermitian norm of the element. The quaternionic norm is the complex number $\langle\tilde U_\star(t')\rangle_{\natural}=e^{-2iE_Rt'/\hbar}e^{-\Gamma t'/\hbar}$: it multiplies the survival probability by the doubled phase, and it is the reason the amplitude and the probability must not be read from the same bracket.
+and the $*$-unitary factor is the phase $e^{-iE_Rt'/\hbar}e_t$. The survival probability is the square of the amplitude, $\langle\tilde U_\star(t')\rangle_{*}=e^{-\Gamma t'/\hbar}$, which is the Hermitian norm of the element. The quaternionic norm is the complex number $\langle\tilde U_\star(t')\rangle_{\natural}=e^{-2iE_Rt'/\hbar}e^{-\Gamma t'/\hbar}$: it multiplies the survival probability by the doubled phase, and it is the reason the amplitude and the probability must not be read from the same bracket.
 
 **The generator.** With $\hbar=1$, the generator $G_\star=-iz_\star$ splits into a Hermitian and an anti-Hermitian part,
 
@@ -216,7 +216,7 @@ G_\star=-\frac{\Gamma}{2}e_t-iE_Re_t,
 -iE_Re_t\in\mathbb{M}_- .
 $$
 
-The damping is the Hermitian part and the energy is the anti-Hermitian part. A stable state has $\Gamma=0$, its generator is anti-Hermitian, and the evolution is unitary. A resonance adds a Hermitian part to the generator; that part is the absorption, and it is the same object the Cartan factor of a truncated S-matrix reports as an eigenvalue below one (*The S-Matrix in Biquaternionic Form*, §*The Cartan Factor of the S-Matrix*).
+The damping is the Hermitian part and the energy is the anti-Hermitian part. A stable state has $\Gamma=0$, its generator is anti-Hermitian, and the evolution is $*$-unitary. A resonance adds a Hermitian part to the generator; that part is the absorption, and it is the same object the Cartan factor of a truncated S-matrix reports as an eigenvalue below one (*The S-Matrix in Biquaternionic Form*, §*The Cartan Factor of the S-Matrix*).
 
 **The sheet.** The sign of $\mathrm{Im}\,z_\star$, equivalently of $\mathrm{Im}\,\theta_\star$, is the sheet. The retarded pole has $\mathrm{Im}\,z_\star=-\Gamma/2<0$ and decays; the advanced mirror has $\mathrm{Im}\,z_\star=+\Gamma/2>0$ and grows. In the word, the sign is the sign of $\mathrm{Re}\,\Theta$: a negative scale exponent is decay, a positive one is growth. The algebra does not select the sign; the retarded boundary condition does, as §*The Pole in the Algebra* established.
 
@@ -353,7 +353,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde H=h_te_t+i\vec h$ | Hamiltonian, Hermitian, $h_t\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$ |
 | $\tilde\Pi_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
-| $\tilde Q(t')=\exp(-i\tilde Ht'/\hbar)$ | Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$ |
+| $\tilde Q(t')=\exp(-i\tilde Ht'/\hbar)$ | $*$-Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$ |
 | $A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde Q(t'))$ | Survival amplitude; $P(t')=\lvert A(t')\rvert^{2}$ |
 | $(\Delta\tilde H)^{2}$ | Variance of $\tilde H$ in the initial state |
 | $G(z)=(z-\tilde H)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |
@@ -364,7 +364,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$ | Pole on the second sheet |
 | $\Theta(t')=-iz_\star t'/\hbar$ | Complex angle of the resonance; $\mathrm{Re}\,\Theta$ is the decay exponent, $\mathrm{Im}\,\Theta$ the phase |
 | $\tilde A(t')=e^{-\Gamma t'/2\hbar}e_t$ | Cartan amplitude of the pole term, the survival amplitude in the pole approximation |
-| $\tilde U_\star(t')=\exp(-iz_\star t'/\hbar)$ | Pole term of the evolution; not unitary, $\tilde U_\star\tilde U_\star^{*}\neq e_t$ |
+| $\tilde U_\star(t')=\exp(-iz_\star t'/\hbar)$ | Pole term of the evolution; not $*$-unitary, $\tilde U_\star\tilde U_\star^{*}\neq e_t$ |
 | $\tau=\hbar/\Gamma$ | Lifetime |
 | $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$ | Effective self-energy of an eliminated slot |
 | $H_{\mathrm{c}},H_{\mathrm{nc}},V$ | Entries of the slot block matrix; $V$ couples the two slots |

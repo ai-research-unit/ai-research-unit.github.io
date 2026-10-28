@@ -4,7 +4,7 @@
 
 The algebra $M_5(\mathbb{C})$ is the algebra of complex $5\times5$ matrices with the ordinary product. It is the model on which every structure of this category is read: the root $H$, the Lagrange idempotents, the Peirce lines, the frame, the spin chain and the adjoint action are all structures on this one algebra. This article fixes the algebra itself: the matrix units and their product rule, the trace and the determinant, the centre, the simplicity, the real dimension $50$, the unit group $GL_5(\mathbb{C})$, the projective group $PGL_5(\mathbb{C})$ of complex dimension $24$, and the reading of the algebra as the complexification of the real Lie algebra $\mathfrak{u}(5)$.
 
-The article uses **no form and no topology**. The conjugate transpose appears only to exhibit the real form $\mathfrak{u}(5)$ and the Hermitian and skew-Hermitian parts; the positive definite trace form, the Frobenius norm and the unitary group as a metric object are *The Involution and the Hermitian Structure*. The determinant is used as a polynomial and as the criterion of invertibility, not as a volume. The root and the idempotents are later articles; the algebra is their common ground.
+The article uses **no form and no topology**. The conjugate transpose appears only to exhibit the real form $\mathfrak{u}(5)$ and the Hermitian and skew-Hermitian parts; the positive definite trace form, the Frobenius norm and the $*$-unitary group as a metric object are *The Involution and the Hermitian Structure*. The determinant is used as a polynomial and as the criterion of invertibility, not as a volume. The root and the idempotents are later articles; the algebra is their common ground.
 
 The article assumes the general theory of associative algebras of *Associative Algebras* and *Matrix Algebras*: the matrix units, the trace, the determinant, the centre and the two-sided ideals. It proves the facts in the case $n=5$ so that the rest of the category can cite them without returning to the general theory.
 
@@ -257,7 +257,7 @@ $$
 
 **Proof.** The two projections are idempotent and sum to the identity; the first is skew-Hermitian, the second Hermitian, and the intersection is zero because a matrix that is both Hermitian and skew-Hermitian is zero. The real dimension of $\mathfrak{u}(5)$ is $25$: a skew-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal ($10$ complex $=20$ real), total $5+20=25$; the Hermitian part has real diagonal entries (five) and arbitrary complex entries above the diagonal (twenty), also $25$.
 
-**Corollary.** The **special unitary** algebra
+**Corollary.** The **special $*$-unitary** algebra
 
 $$
 \mathfrak{su}(5)=\{A\in\mathfrak{u}(5):\operatorname{tr}A=0\}
@@ -337,10 +337,10 @@ The trace is linear, cyclic and nondegenerate as a complex bilinear pairing; the
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the matrix units, the simplicity of a full matrix algebra and the Wedderburn theorem.
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, second edition, 2001), for the centre, the two-sided ideals and the central simple algebras.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the trace, the determinant, the matrix units and the elementary matrices.
-- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for $GL_5$, $SL_5$, $PGL_5$, the unitary algebra $\mathfrak{u}(5)$ and the complexification of a real Lie algebra.
+- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for $GL_5$, $SL_5$, $PGL_5$, the $*$-unitary algebra $\mathfrak{u}(5)$ and the complexification of a real Lie algebra.
 - [Matrix Algebras](matrix-algebras.html), for the general theory of $M_n(R)$.
 - [Central Simple Algebras and the Brauer Group](central-simple-algebras-and-the-brauer-group.html), for the classification and the triviality of the Brauer group of $\mathbb{C}$.
 - [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m5c.html), for the coordinates, the trace pairing and the Jordan decomposition.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the conjugate transpose, the positive definite trace form and the unitary group.
+- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the conjugate transpose, the positive definite trace form and the $*$-unitary group.
 - [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the first structure built on the algebra.
 - [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the matrix units and the diagonal gauge.

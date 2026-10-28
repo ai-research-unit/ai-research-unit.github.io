@@ -43,7 +43,7 @@ non-trivially, and the framework's matter lives in modules on which a central ph
 ## Why the Centre Caps the Group
 
 With the obstruction stated, the reason the gauge group stays at $\mathrm{U}(2)$ follows. The intrinsic gauge group of the
-algebra is the unitary slice $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$, the central product
+algebra is the $*$-unitary slice $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$, the central product
 $(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, and the **abelian factor is exactly the central phase**. The structure of
 the group is the structure of the centre:
 
@@ -130,7 +130,7 @@ question is being asked.
 The framework's continuous symmetry is the central phase $\exp(i\theta)e_t\cong \mathrm{U}(1)$, central, compact and
 global, and it is the whole of the algebra's uniform symmetry. Its gauge extension is blocked by centrality:
 a local phase needs a connection valued in a non-central generator, the algebra's only uniform generator is
-the central $ie_t$, and a central connection couples to nothing. The intrinsic gauge group is the unitary
+the central $ie_t$, and a central connection couples to nothing. The intrinsic gauge group is the $*$-unitary
 slice $\mathrm{U}(2)=(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, whose abelian factor is the central phase and whose size is
 fixed by the four-dimensional anti-Hermitian sector; a larger group requires an enlarged carrier with
 non-central generators, not a larger centre. Two interpretations are stated and neither is chosen: that the central
@@ -143,7 +143,7 @@ does not contain.
 |---|---|
 | $\exp(i\theta)e_t$ | the central phase, the group $\mathrm{U}(1)$ of central unitaries |
 | $ie_t$ | the generator of the central phase, central and of one real dimension |
-| $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$ | the unitary slice, the algebra's intrinsic gauge group |
+| $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$ | the $*$-unitary slice, the algebra's intrinsic gauge group |
 | $(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$ | the structure of the slice, with the abelian factor the central phase |
 | $\mathfrak{u}(2)$ | the anti-Hermitian sector of the algebra, the Lie algebra of the slice |
 

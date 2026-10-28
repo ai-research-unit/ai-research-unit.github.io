@@ -178,7 +178,7 @@ The reduced state $\tilde{Ϛ}_1 = \frac{1}{2} e_t$ has three notable properties.
 
 **1. It is a mixed state.** In the biquaternion framework, a general state of $\mathbb{M}_+$ has the form $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$. The pure states are the ones with $|\vec r| = 1$ (the idempotents), and the maximally mixed state is the one with $\vec r = 0$. The reduced state $\tilde{Ϛ}_1 = \frac{1}{2} e_t$ corresponds to $\vec r = 0$, i.e., the centre of the Bloch ball. It is a mixed state, at the maximal distance from the pure states.
 
-**2. It is invariant under all unitary transformations.** Under a rotor conjugation $\tilde{Ϛ}_1 \mapsto \tilde Q\tilde{Ϛ}_1\tilde Q^{*}$ with $\tilde Q\tilde Q^{*} = e_t$, the reduced state is unchanged:
+**2. It is invariant under all $*$-unitary transformations.** Under a rotor conjugation $\tilde{Ϛ}_1 \mapsto \tilde Q\tilde{Ϛ}_1\tilde Q^{*}$ with $\tilde Q\tilde Q^{*} = e_t$, the reduced state is unchanged:
 
 $$
 \tilde{U}\left(\tfrac{1}{2}e_t\right)\tilde{U}^{*} = \tfrac{1}{2}\tilde{U}\tilde{U}^{*} = \tfrac{1}{2}e_t.
@@ -249,7 +249,7 @@ The contrast is the operational signature of entanglement: **product states have
 |---|---|---|---|---|---|
 | System | One qubit | One qubit | One qubit | Two qubits | Two qubits |
 | Physical process | Measurement | Evolution | Successive measurements | Entangled measurement | Reduced state |
-| Structural object | Idempotent + idempotent | Idempotent + unitary | Sequence of idempotents | State in $\mathbb{B}\otimes\mathbb{B}$ | Partial trace of a state |
+| Structural object | Idempotent + idempotent | Idempotent + $*$-unitary | Sequence of idempotents | State in $\mathbb{B}\otimes\mathbb{B}$ | Partial trace of a state |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula | Partial trace + trace formula |
 | Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t')$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1-\vec u_a\cdot\vec u_b)$ | $\tilde{Ϛ}_1 = \frac{1}{2}e_t$, purity $\frac{1}{2}$, entropy $\log 2$ |
 

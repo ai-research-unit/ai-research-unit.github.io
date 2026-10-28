@@ -51,7 +51,7 @@ f(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} (\mathcal F f)(\xi)\, \exp(-2\pi \m
 \;},
 $$
 
-the transform extends to a unitary operator on $L^2(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.
+the transform extends to a $*$-unitary operator on $L^2(\mathbb{H}_{\mathrm{s}},\mathbb{H}_{\mathrm{s}})$ up to the usual normalisation, and the Riemann–Lebesgue lemma holds. All of this is the classical Fourier analysis of $\mathbb{R}^4$ applied to each of the four components.
 
 **Proof.** The scalar theory of *Fourier Analysis on Euclidean Spaces* applies componentwise; the unitarity is the Plancherel theorem in each component.
 

@@ -17,14 +17,14 @@ S(\tilde{Ϛ}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{
 $$
 This is the article's central structural statement, and the Lorentz group is read through it.
 
-Three further results follow, and they are the content of the article. First, the entropy is invariant under the compact subgroup: $SU(2)$ conjugation preserves the biquaternion norm and hence the entropy, and the entropy is in fact a complete invariant of the little-group orbit of a state, so it is the coordinate on the orbit space of the compact group. Second, the entropy is invariant under the **physical** action of a Lorentz transformation at sharp momentum, because that action is the unitary Wigner rotation; the entropy is not invariant under the non-unitary congruence of the algebra, but the congruence is not a state transformation, and its effect is to move a state off the trace-one slice while preserving the unnormalized biquaternion norm. Third, when the momentum is uncertain, the boost acts by a mixed-unitary channel whose effect on the entropy is an increase bounded by one bit per qubit, and the increase is governed by the Wigner angle, saturating at $h((1+\sqrt{1-v^2/c^2})/2)$ for a particle of speed $v$ transverse to the boost.
+Three further results follow, and they are the content of the article. First, the entropy is invariant under the compact subgroup: $SU(2)$ conjugation preserves the biquaternion norm and hence the entropy, and the entropy is in fact a complete invariant of the little-group orbit of a state, so it is the coordinate on the orbit space of the compact group. Second, the entropy is invariant under the **physical** action of a Lorentz transformation at sharp momentum, because that action is the $*$-unitary Wigner rotation; the entropy is not invariant under the non-$*$-unitary congruence of the algebra, but the congruence is not a state transformation, and its effect is to move a state off the trace-one slice while preserving the unnormalized biquaternion norm. Third, when the momentum is uncertain, the boost acts by a mixed-$*$-unitary channel whose effect on the entropy is an increase bounded by one bit per qubit, and the increase is governed by the Wigner angle, saturating at $h((1+\sqrt{1-v^2/c^2})/2)$ for a particle of speed $v$ transverse to the boost.
 
 The findings are stated in advance.
 
 1. **The entropy is a function of the biquaternion norm alone.** For a state, $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)$ and $S = h((1+\sqrt{1-4N})/2)$; it vanishes on the pure states ($N = 0$) and equals one bit on the maximally mixed state ($N = \tfrac14$).
-2. **The compact subgroup leaves it invariant.** Conjugation by any unitary element preserves $\langle\cdot\rangle_{\natural}$ and hence $S$; since $SU(2)$ acts transitively on the spheres of the Bloch ball, the entropy is constant on every $SU(2)$ orbit and is a complete invariant of that orbit.
-3. **The physical Lorentz action leaves it invariant at sharp momentum.** The Wigner rotation is unitary, so $\langle\tilde{W}\tilde{Ϛ}\tilde{W}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}$ and the spin entropy is frame-independent for a momentum eigenstate.
-4. **The non-unitary congruence is not the state action.** The congruence preserves the unnormalized biquaternion norm but not the trace, so after normalization the radius is scaled; the maximally mixed state is carried to $\vec r = \tanh\psi\,\vec u_{\mathrm b}$, a *purer* state, with the entropy $h((1+\tanh\psi)/2)$ falling towards zero. A channel is linear and trace-preserving and cannot rescale the trace of a state; a unital channel cannot raise the purity of a state. The congruence does both, which is the cleanest demonstration that it is a map on the algebra and not on the state space.
+2. **The compact subgroup leaves it invariant.** Conjugation by any $*$-unitary element preserves $\langle\cdot\rangle_{\natural}$ and hence $S$; since $SU(2)$ acts transitively on the spheres of the Bloch ball, the entropy is constant on every $SU(2)$ orbit and is a complete invariant of that orbit.
+3. **The physical Lorentz action leaves it invariant at sharp momentum.** The Wigner rotation is $*$-unitary, so $\langle\tilde{W}\tilde{Ϛ}\tilde{W}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}$ and the spin entropy is frame-independent for a momentum eigenstate.
+4. **The non-$*$-unitary congruence is not the state action.** The congruence preserves the unnormalized biquaternion norm but not the trace, so after normalization the radius is scaled; the maximally mixed state is carried to $\vec r = \tanh\psi\,\vec u_{\mathrm b}$, a *purer* state, with the entropy $h((1+\tanh\psi)/2)$ falling towards zero. A channel is linear and trace-preserving and cannot rescale the trace of a state; a unital channel cannot raise the purity of a state. The congruence does both, which is the cleanest demonstration that it is a map on the algebra and not on the state space.
 5. **Momentum uncertainty makes the entropy frame-dependent.** The boost's channel is unital, so the maximally mixed state is fixed, but a non-maximally-mixed state is dephased by the Wigner angle and its entropy rises; for a transverse spin the entropy is $h((1+\cos\alpha)/2)$ with $\alpha$ the Wigner angle.
 6. **The entropy labels the little-group orbit.** The quotient of the Bloch ball by $SU(2)$ is the interval of radii, and the entropy is a bijection from that interval onto $[0,1]$ bit; the Lorentz group acts on the orbit label only through the momentum, so the entropy of a sharp-momentum state is a genuine little-group invariant.
 
@@ -90,7 +90,7 @@ The entropy is therefore the information content of the framework's own probabil
 
 ### The entropy is a complete little-group invariant
 
-Let $\tilde Q\in SU(2)$ be a unitary element and let $\tilde{Ϛ}$ be a state. The biquaternion norm is multiplicative,
+Let $\tilde Q\in SU(2)$ be a $*$-unitary element and let $\tilde{Ϛ}$ be a state. The biquaternion norm is multiplicative,
 $$
 \langle\tilde{Q}_1\tilde{Q}_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural}\langle\tilde{Q}_2\rangle_{\natural},
 $$
@@ -114,14 +114,14 @@ The physical action of a Lorentz transformation on a spin state at definite four
 $$
 \tilde{Ϛ} \ \longmapsto\ \tilde{W}\tilde{Ϛ}\tilde{W}^{*}, \qquad \tilde{W} = \tilde{W}(\tilde U_{\mathrm L},\tilde V)\in SU(2) .
 $$
-Since $\tilde{W}$ is unitary, the previous computation applies verbatim,
+Since $\tilde{W}$ is $*$-unitary, the previous computation applies verbatim,
 $$
 \boxed{\ \langle\tilde{W}\tilde{Ϛ}\tilde{W}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}, \qquad
 S(\tilde{W}\tilde{Ϛ}\tilde{W}^{*}) = S(\tilde{Ϛ})\ } ,
 $$
 and the spin entropy of a momentum eigenstate is a **Lorentz invariant**. This is the entropy form of the sharp-momentum theorem of the relativistic-qubit article, and it is exact: a frame change rotates the spin and leaves its entropy alone, because a rotation moves a state along its $SU(2)$ orbit and the entropy is constant on the orbit.
 
-### The non-unitary congruence is not a state transformation
+### The non-$*$-unitary congruence is not a state transformation
 
 The congruence of the algebra,
 $$
@@ -155,11 +155,11 @@ A genuine quantum channel is linear and trace-preserving and cannot rescale the 
 
 ### The channel at uncertain momentum
 
-When the momentum is uncertain, the boost acts branch by branch on the spin and the physical spin state is the output of the mixed-unitary channel
+When the momentum is uncertain, the boost acts branch by branch on the spin and the physical spin state is the output of the mixed-$*$-unitary channel
 $$
 \tilde{Ϛ}\ \longmapsto\ \sum_i w_i\,\tilde{W}_i\tilde{Ϛ}\tilde{W}_i^{*}, \qquad \tilde{W}_i = \tilde{W}(\tilde U_{\mathrm L},\tilde V_i) .
 $$
-The channel is unital — the identity is fixed, because every $\tilde{W}_i$ is unitary — so the maximally mixed state is invariant; in the symmetric two-branch configuration below, the entropy of a state is unchanged only if the state is a fixed point of every branch rotation. In the symmetric two-branch configuration the channel is the dephasing about the Wigner axis, the transverse Bloch components are damped by $\cos\alpha$, and the entropy becomes $h((1+\cos\alpha)/2)$ for a purely transverse initial state. For a particle of speed $0.5c$ at transverse momentum,
+The channel is unital — the identity is fixed, because every $\tilde{W}_i$ is $*$-unitary — so the maximally mixed state is invariant; in the symmetric two-branch configuration below, the entropy of a state is unchanged only if the state is a fixed point of every branch rotation. In the symmetric two-branch configuration the channel is the dephasing about the Wigner axis, the transverse Bloch components are damped by $\cos\alpha$, and the entropy becomes $h((1+\cos\alpha)/2)$ for a purely transverse initial state. For a particle of speed $0.5c$ at transverse momentum,
 
 | $\psi$ | $0.5$ | $1.0$ | $2.0$ | $3.0$ | $5.0$ |
 |---|---|---|---|---|---|
@@ -207,25 +207,25 @@ Two group-theoretic facts organise the interpretation. First, the mass and the s
 $$
 P^2 = m^2c^2, \qquad -W^2 = m^2c^2\,s(s+1),
 $$
-with $W^\mu$ the Pauli–Lubanski vector; they label the irreducible representation, not the state. Second, the entropy is *not* a Casimir; it is a function on the representation space, constant on the little-group orbits. The pair $(m,s)$ says which representation a particle belongs to; the entropy is one invariant of the orbit within it that a given state occupies. The Lorentz group maps the representation to itself and the orbit to an orbit, and at sharp momentum it maps each orbit to itself, because the map is the unitary little-group action. This is the precise group-theoretic sense in which spin entropy is a frame-independent property of a momentum eigenstate.
+with $W^\mu$ the Pauli–Lubanski vector; they label the irreducible representation, not the state. Second, the entropy is *not* a Casimir; it is a function on the representation space, constant on the little-group orbits. The pair $(m,s)$ says which representation a particle belongs to; the entropy is one invariant of the orbit within it that a given state occupies. The Lorentz group maps the representation to itself and the orbit to an orbit, and at sharp momentum it maps each orbit to itself, because the map is the $*$-unitary little-group action. This is the precise group-theoretic sense in which spin entropy is a frame-independent property of a momentum eigenstate.
 
 ### Massless particles and helicity
 
-For a massless particle the four-momentum is null and the little group is the two-dimensional Euclidean group $E(2)$, whose finite-dimensional unitary representations are one-dimensional and labelled by the helicity. A helicity eigenstate has no internal entropy at all: the internal state space is one-dimensional, the entropy is zero, and a Lorentz transformation can only multiply the state by a phase, leaving the entropy zero. The polarization entropy of a massless particle is therefore identically zero for a helicity eigenstate, and any positive entropy in a massless state is entropy of a superposition of helicities, which the little group does not mix. This is the sharpest contrast with the massive case: the massive qubit has a one-parameter family of entropies, the massless helicity state has none.
+For a massless particle the four-momentum is null and the little group is the two-dimensional Euclidean group $E(2)$, whose finite-dimensional $*$-unitary representations are one-dimensional and labelled by the helicity. A helicity eigenstate has no internal entropy at all: the internal state space is one-dimensional, the entropy is zero, and a Lorentz transformation can only multiply the state by a phase, leaving the entropy zero. The polarization entropy of a massless particle is therefore identically zero for a helicity eigenstate, and any positive entropy in a massless state is entropy of a superposition of helicities, which the little group does not mix. This is the sharpest contrast with the massive case: the massive qubit has a one-parameter family of entropies, the massless helicity state has none.
 
 ### The entropy of the compact subgroup
 
-The two cases can be stated together. The little group is a subgroup of the unit-norm group, and the entropy of a state is a function of the biquaternion norm, which is invariant under the **unitary** part of the group and only under it. The unitary part is $SU(2)$ for a massive particle and a phase group for a massless one; correspondingly, the spin entropy is a non-trivial function on the state space in the massive case and a trivial one in the massless case. The entropy therefore reflects the size of the compact part of the little group available to the state, which is the representation-theoretic content of the statement that spin entropy is a relativistic quantity: it is nontrivial because the massive little group is non-abelian.
+The two cases can be stated together. The little group is a subgroup of the unit-norm group, and the entropy of a state is a function of the biquaternion norm, which is invariant under the **$*$-unitary** part of the group and only under it. The $*$-unitary part is $SU(2)$ for a massive particle and a phase group for a massless one; correspondingly, the spin entropy is a non-trivial function on the state space in the massive case and a trivial one in the massless case. The entropy therefore reflects the size of the compact part of the little group available to the state, which is the representation-theoretic content of the statement that spin entropy is a relativistic quantity: it is nontrivial because the massive little group is non-abelian.
 
 ## The Two Regimes of Frame Dependence
 
-**Sharp momentum.** The spin entropy is a Lorentz invariant. The physical transformation is the unitary Wigner rotation, it preserves the biquaternion norm, and the entropy is a function of the biquaternion norm; the result is exact and holds for every rapidity and every boost direction.
+**Sharp momentum.** The spin entropy is a Lorentz invariant. The physical transformation is the $*$-unitary Wigner rotation, it preserves the biquaternion norm, and the entropy is a function of the biquaternion norm; the result is exact and holds for every rapidity and every boost direction.
 
 **Uncertain momentum.** The spin entropy is frame-dependent, increasing under a boost by the dephasing produced by the branch-dependent Wigner rotations. The increase is bounded by one bit for a qubit, saturated in the ultrarelativistic limit, and equal to $h((1+\cos\alpha)/2)$ for a transverse spin in the symmetric two-branch configuration. It is invisible in the maximally mixed state, which is a fixed point of the unital channel.
 
-**The contrast with the congruence.** The non-unitary congruence produces the opposite behaviour: it *decreases* the entropy of the maximally mixed state, from one bit towards zero, by scaling the trace and renormalizing. The contrast is the operational test that separates the two actions, and it can be stated in one sentence: a physical transformation of a state cannot rescale its trace and, being unital, cannot raise its purity, and the congruence does both; the physical transformation at sharp momentum is the unitary Wigner rotation, and at uncertain momentum it is the unital channel built from the Wigner rotations of the branches.
+**The contrast with the congruence.** The non-$*$-unitary congruence produces the opposite behaviour: it *decreases* the entropy of the maximally mixed state, from one bit towards zero, by scaling the trace and renormalizing. The contrast is the operational test that separates the two actions, and it can be stated in one sentence: a physical transformation of a state cannot rescale its trace and, being unital, cannot raise its purity, and the congruence does both; the physical transformation at sharp momentum is the $*$-unitary Wigner rotation, and at uncertain momentum it is the unital channel built from the Wigner rotations of the branches.
 
-**What is invariant.** The entropy is invariant under $SU(2)$, under the unitary little group of the massive case, under the phase little group of the massless case, and along every orbit of these groups; it is invariant under the classical Lorentz action on the material sector (which does not touch the spin at all); and it is invariant under the physical action of the Lorentz group at sharp momentum. It is not invariant under the non-unitary congruence, which is not a state transformation, and it is not invariant under the physical action at uncertain momentum, which is a channel.
+**What is invariant.** The entropy is invariant under $SU(2)$, under the $*$-unitary little group of the massive case, under the phase little group of the massless case, and along every orbit of these groups; it is invariant under the classical Lorentz action on the material sector (which does not touch the spin at all); and it is invariant under the physical action of the Lorentz group at sharp momentum. It is not invariant under the non-$*$-unitary congruence, which is not a state transformation, and it is not invariant under the physical action at uncertain momentum, which is a channel.
 
 ## The Entropy and the Biquaternion Norm
 
@@ -236,9 +236,9 @@ S(\tilde{Ϛ}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{
 $$
 so the entropy is not an independent quantity attached to the state from outside; it is the binary entropy of the algebraic invariant $\langle\cdot\rangle_{\natural}$, read on the trace-one slice. The Lorentz group is a group of norm-preserving congruences on the algebra, and its action on the entropy is therefore controlled entirely by what it does to the trace and to the biquaternion norm:
 
-- the unitary subgroup preserves the trace as well, so the entropy is invariant;
-- the unit-norm, non-unitary elements preserve the biquaternion norm but not the trace, so the entropy of the *normalized* element changes, and the direction of the change — purity increase — shows that the congruence is not a state transformation;
-- the momentum-averaged channel replaces the single congruence by an average of unitary ones, restoring trace preservation and therefore making the change of entropy a genuine change of state, driven by the Wigner angles of the branches.
+- the $*$-unitary subgroup preserves the trace as well, so the entropy is invariant;
+- the unit-norm, non-$*$-unitary elements preserve the biquaternion norm but not the trace, so the entropy of the *normalized* element changes, and the direction of the change — purity increase — shows that the congruence is not a state transformation;
+- the momentum-averaged channel replaces the single congruence by an average of $*$-unitary ones, restoring trace preservation and therefore making the change of entropy a genuine change of state, driven by the Wigner angles of the branches.
 
 This is the whole content of the Lorentz group's action on spin entropy, and it is a statement about the biquaternion norm and the trace.
 
@@ -251,9 +251,9 @@ $$
 $$
 a function of the algebra's biquaternion norm alone. It vanishes on the pure states, where $N = 0$, and equals one bit on the maximally mixed state, where $N = \tfrac14$.
 
-The entropy is invariant under the compact subgroup, because $\langle\tilde{U}\tilde{Ϛ}\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}$ for every unitary $\tilde Q$, and it is a complete invariant of the $SU(2)$ orbit: the quotient of the state space by the little group is the interval of radii, and the entropy is a bijection from it onto $[0,1]$ bit. It is invariant under the physical Lorentz action at sharp momentum, which is the unitary Wigner rotation $\tilde{Ϛ}\mapsto\tilde{W}\tilde{Ϛ}\tilde{W}^{*}$, and it is not invariant under the non-unitary congruence $\tilde{Ϛ}\mapsto\tilde U_{\mathrm L}\tilde{Ϛ}\tilde U_{\mathrm L}^{*}$, which preserves the unnormalized biquaternion norm but not the trace and carries the maximally mixed state to $\vec r = \tanh\psi\,\vec u_{\mathrm b}$ with entropy $h((1+\tanh\psi)/2)$ — an increase of purity, and therefore a proof that the congruence is not a state transformation.
+The entropy is invariant under the compact subgroup, because $\langle\tilde{U}\tilde{Ϛ}\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}\rangle_{\natural}$ for every $*$-unitary $\tilde Q$, and it is a complete invariant of the $SU(2)$ orbit: the quotient of the state space by the little group is the interval of radii, and the entropy is a bijection from it onto $[0,1]$ bit. It is invariant under the physical Lorentz action at sharp momentum, which is the $*$-unitary Wigner rotation $\tilde{Ϛ}\mapsto\tilde{W}\tilde{Ϛ}\tilde{W}^{*}$, and it is not invariant under the non-$*$-unitary congruence $\tilde{Ϛ}\mapsto\tilde U_{\mathrm L}\tilde{Ϛ}\tilde U_{\mathrm L}^{*}$, which preserves the unnormalized biquaternion norm but not the trace and carries the maximally mixed state to $\vec r = \tanh\psi\,\vec u_{\mathrm b}$ with entropy $h((1+\tanh\psi)/2)$ — an increase of purity, and therefore a proof that the congruence is not a state transformation.
 
-At uncertain momentum the boost acts by the unital mixed-unitary channel $\tilde{Ϛ}\mapsto\sum_iw_i\tilde{W}_i\tilde{Ϛ}\tilde{W}_i^{*}$; the maximally mixed state is a fixed point, and a transverse spin is dephased by the Wigner angle, its entropy becoming $h((1+\cos\alpha)/2)$. For a particle of speed $0.5c$ at transverse momentum the entropy is $0.039902$, $0.112969$, $0.242196$, $0.309540$, and $0.348220$ at rapidities $0.5$, $1$, $2$, $3$, and $5$, saturating at $h((1+\sqrt{1-v^2/c^2})/2) = 0.354578$. The increase is bounded by one bit and saturates only in the ultrarelativistic limit.
+At uncertain momentum the boost acts by the unital mixed-$*$-unitary channel $\tilde{Ϛ}\mapsto\sum_iw_i\tilde{W}_i\tilde{Ϛ}\tilde{W}_i^{*}$; the maximally mixed state is a fixed point, and a transverse spin is dephased by the Wigner angle, its entropy becoming $h((1+\cos\alpha)/2)$. For a particle of speed $0.5c$ at transverse momentum the entropy is $0.039902$, $0.112969$, $0.242196$, $0.309540$, and $0.348220$ at rapidities $0.5$, $1$, $2$, $3$, and $5$, saturating at $h((1+\sqrt{1-v^2/c^2})/2) = 0.354578$. The increase is bounded by one bit and saturates only in the ultrarelativistic limit.
 
 For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s)$, and the entropy is a function on the representation space, constant on the little-group orbits: the pair $(m,s)$ names the representation and the entropy is constant on each orbit within it. For a massless particle the little group is $E(2)$, the internal space of a helicity eigenstate is one-dimensional, and the spin entropy is identically zero. The entropy is a relativistic quantity because the massive little group is non-abelian, and it is frame-independent exactly when the momentum is sharp.
 
@@ -280,7 +280,7 @@ For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s
 
 ## Further Reading
 
-- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little groups and the Casimir classification.
+- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little groups and the Casimir classification.
 - Eugene P. Wigner, "Relativistic invariance and quantum phenomena," *Reviews of Modern Physics* **29** (1957) 255–268, for the physical interpretation of the little group and its representations.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the one-particle representations, the Pauli–Lubanski vector, and the little-group construction.
 - Asher Peres, Petra F. Scudo, and Daniel R. Terno, "Quantum entropy and special relativity," *Physical Review Letters* **88** (2002) 230402, for the frame dependence of the reduced spin entropy.

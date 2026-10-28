@@ -48,7 +48,7 @@ $$
 \boxed{\;\Theta_{\tilde Q}=\Theta_{\tilde Q_H}\circ\Theta_{\tilde Q_0}\;}
 $$
 
-The positive factor is the modulus of the operator: $\lvert\Theta_{\tilde Q}\rvert=\Theta_{\tilde Q_H}$. On the null cone the factor $\Theta_{\tilde Q_H}$ acts as the scalar $4a^{2}$ on the image of $\Theta_{\tilde Q_0}$, so the sandwich collapses to a scalar times a partial isometry. Off the null cone $\Theta_{\tilde Q_0}$ is invertible, and the collapse occurs exactly when $\tilde Q_H$ is a scalar, that is when the element is a scalar multiple of a unitary. This is the **scalar collapse**, and its value is the **doubling**: every quantity of the element is squared when it passes to the sandwich.
+The positive factor is the modulus of the operator: $\lvert\Theta_{\tilde Q}\rvert=\Theta_{\tilde Q_H}$. On the null cone the factor $\Theta_{\tilde Q_H}$ acts as the scalar $4a^{2}$ on the image of $\Theta_{\tilde Q_0}$, so the sandwich collapses to a scalar times a partial isometry. Off the null cone $\Theta_{\tilde Q_0}$ is invertible, and the collapse occurs exactly when $\tilde Q_H$ is a scalar, that is when the element is a scalar multiple of a $*$-unitary. This is the **scalar collapse**, and its value is the **doubling**: every quantity of the element is squared when it passes to the sandwich.
 
 | element | sandwich |
 |---|---|

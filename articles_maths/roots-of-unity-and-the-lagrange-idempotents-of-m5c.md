@@ -58,7 +58,7 @@ $$
 \ell_k(x)=\prod_{l\ne k}\frac{x-\zeta_l}{\zeta_k-\zeta_l}.
 $$
 
-It has degree $4$, and its denominator is $\prod_{l\ne k}(\zeta_k-\zeta_l)=\Phi_5'(\zeta_k)=5\zeta_k^4$.
+It has degree $4$, and its denominator is the product over the other four roots, $\prod_{l\ne k}(\zeta_k-\zeta_l)=(x^5-1)'(\zeta_k)=5\zeta_k^4$.
 
 **Proposition.** The polynomials $\ell_0,\dots,\ell_4$ satisfy
 
@@ -192,7 +192,7 @@ $$
 M^{(r)}M^{(s)}\subseteq M^{(r+s)},\qquad \dim_{\mathbb{C}}M^{(r)}=5,\qquad M^{(0)}=\mathbb{C}[H].
 $$
 
-The trace annihilates every nonzero grade, $\operatorname{tr}M^{(r)}=0$ for $r\ne0$, and the trace is the projection onto the grade zero.
+The trace annihilates every nonzero grade, $\operatorname{tr}M^{(r)}=0$ for $r\ne0$, and it reads only the grade-zero component: for $A=\sum_rA_r$ with $A_r\in M^{(r)}$, $\operatorname{tr}A=\operatorname{tr}A_0$.
 
 **Proof.** If $A\in M^{(r)}$ and $B\in M^{(s)}$, then
 
@@ -327,19 +327,19 @@ and the sum over $k$ is $\frac15\sum_k\zeta^{k(l-i)}=\delta_{il}$.
 
 ### The Grading
 
-The grade $M^{(r)}$ consists of the matrices whose entries propagate along each diagonal class by the factor $\zeta^r$:
+The grade $M^{(r)}$ consists of the matrices whose entries propagate along each diagonal class by the factor $\zeta^{-r}$:
 
 $$
-A_{i+1,j+1}=\zeta^rA_{ij}.
+A_{i+1,j+1}=\zeta^{-r}A_{ij},
 $$
 
-Each grade is five-dimensional, spanned by the five matrices supported on a single diagonal class $i-j=d$ with the propagation law; the class is free and the entries on it are determined by one constant. The grade zero is the algebra of circulant matrices, which is $\mathbb{C}[S]$; it is commutative and five-dimensional. The shift itself is
+equivalently $SAS^{-1}=\zeta^rA$. Each grade is five-dimensional, spanned by the five matrices supported on a single diagonal class $i-j=d$ with the propagation law; the class is free and the entries on it are determined by one constant. The grade zero is the algebra of circulant matrices, which is $\mathbb{C}[S]$; it is commutative and five-dimensional. The shift itself is
 
 $$
 S=\sum_{k=0}^{4}\zeta_kP_k,
 $$
 
-a sum of one element of each grade, and it is invertible, which shows that a homogeneous element of nonzero grade need not be nilpotent.
+and it is grade zero, since it commutes with itself. A homogeneous element of nonzero grade can nevertheless be invertible: on the diagonal class $i-j=d$ put $A_{ij}=c\zeta^{-ri}$; then $A\in M^{(r)}$ and $A^5=c^5I$.
 
 ## Summary
 

@@ -115,7 +115,7 @@ where the brackets on the right are the ordinary commutator of the algebra.
 
 **Proof.** For Hermitian $\tilde H_1$ the derived operation is the algebra product in both slots, $\tilde H_1\star\tilde H_2=\tilde H_1\tilde H_2$, so the bracket is the ordinary commutator; for skew-Hermitian $\tilde Q_3$ the involution contributes a sign, $\tilde Q_3^{*}=-\tilde Q_3$, so $[\tilde Q_3,\tilde Q_4]_\varsigma=-(\tilde Q_3\tilde Q_4-\tilde Q_4\tilde Q_3)$; and for the mixed pair $[\tilde Q_3,\tilde H_1]_\varsigma=\tilde Q_3\tilde H_1^{*}-\tilde H_1\tilde Q_3^{*}=\tilde Q_3\tilde H_1+\tilde H_1\tilde Q_3$. This is the theorem of *The Sesquilinear Commutator*, §*The Two Halves*.
 
-**Corollary (the Lie algebra of the skew-Hermitian half).** On the skew-Hermitian half the sesquilinear bracket is $\mathbb{R}$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the sesquilinear bracket and the ordinary commutator make $\mathbb{M}_-$ one and the same Lie algebra over $\mathbb{R}$, up to the sign of the bracket. That Lie algebra is the unitary Lie algebra of *The Unitary Group of the Biquaternion Algebra* and *Lie Algebras of Sesqualgebras*.
+**Corollary (the Lie algebra of the skew-Hermitian half).** On the skew-Hermitian half the sesquilinear bracket is $\mathbb{R}$-bilinear, antisymmetric and satisfies the Jacobi identity, being the negative of the commutator of the associative envelope; the sesquilinear bracket and the ordinary commutator make $\mathbb{M}_-$ one and the same Lie algebra over $\mathbb{R}$, up to the sign of the bracket. That Lie algebra is the $*$-unitary Lie algebra of *The Unitary Group of the Biquaternion Algebra* and *Lie Algebras of Sesqualgebras*.
 
 **Proof.** The theorem gives $[\tilde Q_3,\tilde Q_4]_\varsigma=-[\tilde Q_3,\tilde Q_4]$ on $\mathbb{M}_-$, and the commutator of an associative algebra is a Lie bracket; the sign carries through the three terms of the Jacobi identity.
 
@@ -296,7 +296,7 @@ The bilinear commutator $\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1$ and the bili
 
 ## Summary
 
-The sesquilinear multiplication splits as $\tilde Q_1\star\tilde Q_2=\tilde Q_1\circ\tilde Q_2+\tfrac12[\tilde Q_1,\tilde Q_2]_\varsigma$ into the symmetrised product and the sesquilinear commutator, both $\mathbb{R}$-bilinear and no more, $\mathbb{R}$ being the fixed field of the conjugation. The commutator is antisymmetric, takes its values in the skew-Hermitian half, and is the negative of the ordinary commutator on that half, so the skew-Hermitian half is a Lie algebra over $\mathbb{R}$, the unitary Lie algebra; its Jacobi identity fails on the whole algebra, with the three-Hermitian-element witness $\tilde\Pi_1(\vec u_z),\tilde\Pi_2(\vec u_z),i\vec e_x$ giving $2\vec e_y$, because the outer brackets obey the symmetrised rule on the skew-Hermitian values.
+The sesquilinear multiplication splits as $\tilde Q_1\star\tilde Q_2=\tilde Q_1\circ\tilde Q_2+\tfrac12[\tilde Q_1,\tilde Q_2]_\varsigma$ into the symmetrised product and the sesquilinear commutator, both $\mathbb{R}$-bilinear and no more, $\mathbb{R}$ being the fixed field of the conjugation. The commutator is antisymmetric, takes its values in the skew-Hermitian half, and is the negative of the ordinary commutator on that half, so the skew-Hermitian half is a Lie algebra over $\mathbb{R}$, the $*$-unitary Lie algebra; its Jacobi identity fails on the whole algebra, with the three-Hermitian-element witness $\tilde\Pi_1(\vec u_z),\tilde\Pi_2(\vec u_z),i\vec e_x$ giving $2\vec e_y$, because the outer brackets obey the symmetrised rule on the skew-Hermitian values.
 
 The symmetrised product is the polarisation of the square, takes its values in the Hermitian half, has scalar part the real part of the Hermitian form, and agrees with the plain symmetrisation on the Hermitian half, where it is a Jordan algebra; off the half the Jordan identity fails, with the witness $\tilde Q_3=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ giving $\tfrac{i}{4}\vec e_x$ against $0$. On the basis the symmetrised product is $\delta_{\mu\nu}e_t$ and the commutator of two vector basis elements is $-2$ times their cross product. The two bilinear operations of *Symmetric and Antisymmetric Decomposition of the Four General Products* are the $\mathbb{C}$-bilinear case, with their identities everywhere; the sesquilinear operations carry them on the two halves alone.
 
@@ -310,7 +310,7 @@ The symmetrised product is the polarisation of the square, takes its values in t
 | $\tilde Q_1\circ\tilde Q_1=\tilde Q_1\star\tilde Q_1=\tilde Q_1\tilde Q_1^{*}$ | the diagonal is the square |
 | $\mathbb{R}=\mathbb{C}^{\varsigma}$ | the fixed field, the ring of scalars of the two operations |
 | $[\tilde H_1,\tilde H_2]_\varsigma=[\tilde H_1,\tilde H_2]$ | the bracket on the Hermitian half |
-| $[\tilde Q_1,\tilde Q_2]_\varsigma=-[\tilde Q_1,\tilde Q_2]$, $\tilde Q_1,\tilde Q_2\in\mathbb{M}_-$ | the bracket on the skew-Hermitian half, the unitary Lie algebra |
+| $[\tilde Q_1,\tilde Q_2]_\varsigma=-[\tilde Q_1,\tilde Q_2]$, $\tilde Q_1,\tilde Q_2\in\mathbb{M}_-$ | the bracket on the skew-Hermitian half, the $*$-unitary Lie algebra |
 | $(\tilde H_1\circ\tilde H_2)\circ(\tilde H_1\circ\tilde H_1)=\tilde H_1\circ(\tilde H_2\circ(\tilde H_1\circ\tilde H_1))$ | the Jordan identity, on $\mathbb{M}_+$ |
 | $\tilde\Pi_1(\vec u_z),\tilde\Pi_2(\vec u_z),i\vec e_x$ | the Hermitian triple whose Jacobi sum is $2\vec e_y$ |
 | $\tfrac12(i\vec e_x-\vec e_y),\tfrac12(e_t-i\vec e_z)$ | the pair whose Jordan identity fails, $\tfrac{i}{4}\vec e_x$ against $0$ |
@@ -320,7 +320,7 @@ The symmetrised product is the polarisation of the square, takes its values in t
 
 ## Further Reading
 
-- Nathan Jacobson, *Lie Algebras* (Interscience, 1962), for the Jacobi identity, the Lie algebras of an associative algebra and the unitary Lie algebra.
+- Nathan Jacobson, *Lie Algebras* (Interscience, 1962), for the Jacobi identity, the Lie algebras of an associative algebra and the $*$-unitary Lie algebra.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the Jordan identity, the symmetrisation of an associative algebra and the Lie-admissible and Jordan-admissible algebras.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the Jordan product, its powers and the Jordan identity.
 - K. A. Zhevlakov, A. M. Slin'ko, I. P. Shestakov and A. I. Shirshov, *Rings That Are Nearly Associative* (Academic Press, 1982), for the identities of the Lie and the Jordan symmetrisations of a non-associative algebra.

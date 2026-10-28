@@ -201,17 +201,17 @@ The definition rests on the identity $s^2-2\operatorname{Re}(s)s+|s|^2 = 0$, whi
 
 *Proof.* If $Mv = vs$ then $(M^2-2\operatorname{Re}(s)M+|s|^2I)v = v(s^2-2\operatorname{Re}(s)s+|s|^2) = 0$, so $\sigma_R(M)\subseteq\sigma_S(M)$; the reverse inclusion and the identification with the classes are standard (Rodman 2014). The single-quaternion statement is the sphere of eigenvalues computed above.
 
-**Definition.** $M$ is **normal** if $MM^{*} = M^{*}M$, where $\bar{\cdot}$ is the entrywise quaternion conjugation combined with transposition; **Hermitian** if $M^{*} = M$, and **unitary** if $M^{*}M = I$.
+**Definition.** $M$ is **normal** if $MM^{*} = M^{*}M$, where $\bar{\cdot}$ is the entrywise quaternion conjugation combined with transposition; **Hermitian** if $M^{*} = M$, and **$*$-unitary** if $M^{*}M = I$.
 
-**Theorem (quaternionic spectral theorem).** If $M\in M_n(\mathbb{H})$ is normal then there is a unitary $U$ and complex numbers $\lambda_1,\dots,\lambda_n$ in a fixed slice with
+**Theorem (quaternionic spectral theorem).** If $M\in M_n(\mathbb{H})$ is normal then there is a $*$-unitary $U$ and complex numbers $\lambda_1,\dots,\lambda_n$ in a fixed slice with
 
 $$ \boxed{\; M = U\,\operatorname{diag}(\lambda_1,\dots,\lambda_n)\,U^{*} \;} ,$$
 
-so the S-spectrum is the union of the classes, $\sigma_S(M) = \bigcup_{i=1}^{n}[\lambda_i]$; for Hermitian $M$ the $\lambda_i$ are real, and for unitary $M$ they have modulus one, in which case every $s\in\sigma_S(M)$ has modulus one.
+so the S-spectrum is the union of the classes, $\sigma_S(M) = \bigcup_{i=1}^{n}[\lambda_i]$; for Hermitian $M$ the $\lambda_i$ are real, and for $*$-unitary $M$ they have modulus one, in which case every $s\in\sigma_S(M)$ has modulus one.
 
 *Proof.* The diagonalisation is the spectral theorem for normal quaternionic matrices; it is stated and proved in the references (Rodman 2014; Colombo, Sabadini and Struppa 2011).
 
-**Corollary.** For a normal matrix the S-spectrum determines the operator up to unitary equivalence, the spectral radius equals the operator norm, and a Hermitian matrix has real S-spectrum, a unitary one has S-spectrum contained in the unit sphere $S^3$.
+**Corollary.** For a normal matrix the S-spectrum determines the operator up to $*$-unitary equivalence, the spectral radius equals the operator norm, and a Hermitian matrix has real S-spectrum, a $*$-unitary one has S-spectrum contained in the unit sphere $S^3$.
 
 ## Summary
 
@@ -221,7 +221,7 @@ The Cayley–Hamilton identity $\tilde q^2-T(\tilde q)\tilde q+D(\tilde q) = 0$ 
 
 The right eigenspace attached to a class is a right $\mathbb{H}$-subspace, of dimension one over $\mathbb{H}$ for a single quaternion, whereas the eigenspace of a fixed non-real representative is only a complex line; the left eigenspace for a single quaternion is all of $\mathbb{H}$. The S-resolvent and the left resolvent have explicit closed forms, and the spectral radius of a single quaternion is its modulus; in general the spectral radius obeys the Gelfand-type limit formula and, for normal matrices, equals the operator norm.
 
-The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ singular}\}$ equals the right spectrum, and the quaternionic spectral theorem diagonalises a normal matrix as $M = U\operatorname{diag}(\lambda_i)U^{*}$ with $\sigma_S(M) = \bigcup_i[\lambda_i]$; Hermitian matrices have real S-spectrum and unitary ones S-spectrum on $S^3$.
+The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ singular}\}$ equals the right spectrum, and the quaternionic spectral theorem diagonalises a normal matrix as $M = U\operatorname{diag}(\lambda_i)U^{*}$ with $\sigma_S(M) = \bigcup_i[\lambda_i]$; Hermitian matrices have real S-spectrum and $*$-unitary ones S-spectrum on $S^3$.
 
 ## Summary of Notation
 

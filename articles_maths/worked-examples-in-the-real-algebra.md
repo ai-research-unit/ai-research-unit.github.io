@@ -47,7 +47,7 @@ and $q_1^2 = (-q_1)^2$ although $q_1 \neq -q_1$: the square forgets the sign whi
 
 The real algebra carries one involution, the identity.
 
-**The identity.** $\operatorname{id}(q_1) = q_1 = -\tfrac{3}{4}$ and $\operatorname{id}(q_2) = q_2 = \tfrac{7}{2}$. The identity fixes every element, and it is the only involution of $\mathbb{R}$: an $\mathbb{R}$-algebra involution is a field automorphism of $\mathbb{R}$, and there is no nontrivial one, so there is no analogue here of the conjugation of $\mathbb{C}$. The absence is the mathematical content of the unitary case.
+**The identity.** $\operatorname{id}(q_1) = q_1 = -\tfrac{3}{4}$ and $\operatorname{id}(q_2) = q_2 = \tfrac{7}{2}$. The identity fixes every element, and it is the only involution of $\mathbb{R}$: an $\mathbb{R}$-algebra involution is a field automorphism of $\mathbb{R}$, and there is no nontrivial one, so there is no analogue here of the conjugation of $\mathbb{C}$. The absence is the mathematical content of the $*$-unitary case.
 
 It is an involution, $\operatorname{id}(\operatorname{id}(q)) = q$ for every $q$, and the relation is immediate because $\operatorname{id}$ is the identity map.
 

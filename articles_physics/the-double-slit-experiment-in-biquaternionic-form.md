@@ -18,7 +18,7 @@ The article is organized as follows. The next section writes the two-route ampli
 
 ## The Two-Path Amplitude
 
-Let $K_j(X)$ be the amplitude for the particle to arrive at the screen point $X$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a **central** unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:
+Let $K_j(X)$ be the amplitude for the particle to arrive at the screen point $X$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a **central** $*$-unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:
 
 $$
 K_j(X) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]/\hbar), \qquad \exp(iS_j/\hbar) \in \mathbb{C}_{\mathbb{B}}, \qquad \frac{iS_j}{\hbar} \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- .
@@ -189,7 +189,7 @@ $$
 \exp(\vec{u}\,S/\hbar) = \cos\!\Big(\frac{S}{\hbar}\Big)e_t + \sin\!\Big(\frac{S}{\hbar}\Big)\vec{u},
 $$
 
-which is unitary, $(\exp(\vec{u}S/\hbar))(\exp(\vec{u}S/\hbar))^\dagger = e_t$, and whose exponent $\vec{u}S/\hbar$ also lies in $\mathbb{M}_-$. Under the isomorphism $\vec e_k \mapsto -i\sigma_k$ with $\vec{u} = \vec e_z$ it maps to
+which is $*$-unitary, $(\exp(\vec{u}S/\hbar))(\exp(\vec{u}S/\hbar))^\dagger = e_t$, and whose exponent $\vec{u}S/\hbar$ also lies in $\mathbb{M}_-$. Under the isomorphism $\vec e_k \mapsto -i\sigma_k$ with $\vec{u} = \vec e_z$ it maps to
 
 $$
 \exp(\vec e_z S/\hbar) \;\longmapsto\; \operatorname{diag}\!\bigl(\exp(-iS/\hbar),\, \exp(+iS/\hbar)\bigr),
@@ -341,7 +341,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html) — the Hermitian sector, its idempotents, and the trace formula.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html) — states, observables, the Born rule, and the measurement update.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html) — the wave function as a spinor in a Peirce carrier, a minimal left ideal here, and the central imaginary as the complex structure.
-- [The Path Integral in Biquaternionic Form](the-path-integral-in-biquaternionic-form.html) — the phase $\exp(iS/\hbar)$ as a central unitary, its exponent in $\mathbb{M}_-$, and the measure/paths gap.
+- [The Path Integral in Biquaternionic Form](the-path-integral-in-biquaternionic-form.html) — the phase $\exp(iS/\hbar)$ as a central $*$-unitary, its exponent in $\mathbb{M}_-$, and the measure/paths gap.
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html) — the state space as a slice of the biquaternion-norm cone.
 - [Decoherence as Idempotent Projection](decoherence-as-idempotent-projection.html) — the dephasing channel and the destruction of coherence.
 - [The Measurement Problem in Algebraic Form](the-measurement-problem-in-algebraic-form.html) — the mixture versus the realised outcome.

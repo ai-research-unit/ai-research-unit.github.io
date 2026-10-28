@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Cartan Hermitian pairing writes an invertible biquaternion as a positive Hermitian factor times a unitary factor,
+The Cartan Hermitian pairing writes an invertible biquaternion as a positive Hermitian factor times a $*$-unitary factor,
 
 $$
 \tilde Q=\tilde H\tilde V,
@@ -28,11 +28,11 @@ $$
 \tilde V=e^{i\alpha}\tilde u_{\mathrm r},
 $$
 
-with $\tilde H$ positive Hermitian of determinant $r^2$ and $\tilde V$ unitary. The factorization is unique.
+with $\tilde H$ positive Hermitian of determinant $r^2$ and $\tilde V$ $*$-unitary. The factorization is unique.
 
-*Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\alpha}\tilde u_{\mathrm r}$ is the polar word of *Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion*. $\square$
+*Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is $*$-unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\alpha}\tilde u_{\mathrm r}$ is the polar word of *Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion*. $\square$
 
-The pairing groups the scale with the boost and the phase with the rotor. This is the opposite grouping to the Hamilton root pairing, which puts the scale and the phase in the modulus. The Cartan grouping is the one that makes both factors lie in groups: $\tilde H$ in the positive Hermitian space and $\tilde V$ in the unitary group.
+The pairing groups the scale with the boost and the phase with the rotor. This is the opposite grouping to the Hamilton root pairing, which puts the scale and the phase in the modulus. The Cartan grouping is the one that makes both factors lie in groups: $\tilde H$ in the positive Hermitian space and $\tilde V$ in the $*$-unitary group.
 
 ### The Matrix Form
 
@@ -42,7 +42,7 @@ $$
 \mathsf M(\tilde Q)=\mathsf M(\tilde H)\,\mathsf M(\tilde V),
 $$
 
-with $\mathsf M(\tilde H)$ positive definite of determinant $r^2$ and $\mathsf M(\tilde V)$ unitary. The matrix factorization is the polar decomposition of $\mathrm{GL}_2(\mathbb{C})$. It does not require diagonalizability, which is why it survives on the Jordan part.
+with $\mathsf M(\tilde H)$ positive definite of determinant $r^2$ and $\mathsf M(\tilde V)$ $*$-unitary. The matrix factorization is the polar decomposition of $\mathrm{GL}_2(\mathbb{C})$. It does not require diagonalizability, which is why it survives on the Jordan part.
 
 ## The Unipotent Product
 
@@ -70,7 +70,7 @@ $$
 
 which is $Q_t$ times a unipotent element. This is the sector condition in the pairing.
 
-**Proposition (the factors are not unipotent).** On the Jordan part, neither $\tilde H$ nor $\tilde V$ is unipotent. The positive factor has eigenvalues $r e^{\pm\psi/2}$, and the unitary factor has eigenvalues $e^{i(\alpha\pm\theta/2)}$. Their product has the double eigenvalue $\varepsilon$.
+**Proposition (the factors are not unipotent).** On the Jordan part, neither $\tilde H$ nor $\tilde V$ is unipotent. The positive factor has eigenvalues $r e^{\pm\psi/2}$, and the $*$-unitary factor has eigenvalues $e^{i(\alpha\pm\theta/2)}$. Their product has the double eigenvalue $\varepsilon$.
 
 *Proof.* The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\psi/2}$ because it is positive of determinant one; the eigenvalues of $\tilde u_{\mathrm r}$ are $e^{\pm i\theta/2}$ because it is a unit real quaternion; the phase shifts them by $e^{i\alpha}$. The product is $\tilde U$, whose only eigenvalue is $\varepsilon$. $\square$
 
@@ -103,7 +103,7 @@ $$
 \tilde V=\frac{e_t+\vec e_x}{\sqrt2}.
 $$
 
-The positive factor has determinant one and eigenvalues $\sqrt2$ and $1/\sqrt2$; the unitary factor has determinant one and eigenvalues $e^{\pm i\pi/4}$. Their product is
+The positive factor has determinant one and eigenvalues $\sqrt2$ and $1/\sqrt2$; the $*$-unitary factor has determinant one and eigenvalues $e^{\pm i\pi/4}$. Their product is
 
 $$
 \tilde H\tilde V
@@ -118,14 +118,14 @@ $$
 =\bigl(\vec e_x+i\vec e_y\bigr)^2=0.
 $$
 
-The factors do not commute. Their commutator is nonzero, and its size measures the Jordan defect. The example is the smallest one in which the Cartan pairing is nontrivial: the positive factor is not scalar and the unitary factor is not central, while the product is defective.
+The factors do not commute. Their commutator is nonzero, and its size measures the Jordan defect. The example is the smallest one in which the Cartan pairing is nontrivial: the positive factor is not scalar and the $*$-unitary factor is not central, while the product is defective.
 
 ## Comparison with the Other Pairings
 
 | Property | Cartan pairing | Quaternion pairing | Hamilton pairing |
 |---|---|---|---|
 | first factor | positive Hermitian | real quaternion modulus | complex modulus |
-| second factor | unitary | exponential of a real quaternion | exponential of a root times an angle |
+| second factor | $*$-unitary | exponential of a real quaternion | exponential of a root times an angle |
 | survives $\Sigma_{10}$ | yes, without change | yes, with orthogonal data | no, the root fails |
 | product on $\Sigma_{10}$ | unipotent up to $Q_t$ | regrouping of the same word | exact exponential of a nilpotent |
 | spectral input | none | none | root and angle |
@@ -140,7 +140,7 @@ The Cartan pairing is the one that needs no spectral data at all. It is defined 
 |---|---|
 | factorization | $\tilde Q=\tilde H\tilde V$ |
 | positive factor | $\tilde H=r\tilde U_{\mathrm b}$, determinant $r^2$ |
-| unitary factor | $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$, determinant $e^{2i\alpha}$ |
+| $*$-unitary factor | $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$, determinant $e^{2i\alpha}$ |
 | product | $\tilde H\tilde V=Q_t(e_t+\vec\Upsilon)$, unipotent up to $Q_t$ |
 | factor eigenvalues | $r e^{\pm\psi/2}$ and $e^{i(\alpha\pm\theta/2)}$ |
 | product eigenvalue | $\varepsilon$, double |
@@ -165,7 +165,7 @@ The Cartan pairing is the one that needs no spectral data at all. It is defined 
 | $\Rho=r e^{i\alpha}$ | the modulus |
 | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ | the unit factor |
 | $\tilde H=r\tilde U_{\mathrm b}$ | the positive Hermitian factor |
-| $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$ | the unitary factor |
+| $\tilde V=e^{i\alpha}\tilde u_{\mathrm r}$ | the $*$-unitary factor |
 | $\psi,\theta$ | the rapidity and the rotor angle |
 | $\varepsilon=\pm1$ | the sign of the scalar part of the unit factor |
 

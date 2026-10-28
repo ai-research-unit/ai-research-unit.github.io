@@ -210,7 +210,7 @@ $$
 \omega_{*}(\tilde Q_1,\tilde Q_2)=\operatorname{Im}\langle\tilde Q_1,\tilde Q_2\rangle_{*},\qquad
 \omega_{\natural*}(\tilde Q_1,\tilde Q_2)=\operatorname{Im}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} .
 $$
-In the real coordinates $q_\mu,q'_\mu$ each is a direct sum over the four coefficients of the standard symplectic form on the pair $(q_\mu,q'_\mu)$, with the sign $\varepsilon_\mu$ for $\omega_{\natural*}$, so both are non-degenerate and of rank $8$. The real-linear isometry group of each is the real symplectic group $Sp(8,\mathbb{R})$, of real dimension $36$; the complex-linear isometries are $\mathrm{U}(4)$ for $\omega_{*}$ and $\mathrm{U}(1,3)$ for $\omega_{\natural*}$, the unitary groups of the two Hermitian forms; and the maximal isotropic subspaces are the Lagrangian planes, of real dimension $4$.
+In the real coordinates $q_\mu,q'_\mu$ each is a direct sum over the four coefficients of the standard symplectic form on the pair $(q_\mu,q'_\mu)$, with the sign $\varepsilon_\mu$ for $\omega_{\natural*}$, so both are non-degenerate and of rank $8$. The real-linear isometry group of each is the real symplectic group $Sp(8,\mathbb{R})$, of real dimension $36$; the complex-linear isometries are $\mathrm{U}(4)$ for $\omega_{*}$ and $\mathrm{U}(1,3)$ for $\omega_{\natural*}$, the $*$-unitary groups of the two Hermitian forms; and the maximal isotropic subspaces are the Lagrangian planes, of real dimension $4$.
 
 The two are **not** the scalar parts of the two antisymmetrised sesquilinear products. Those values are pure vector and their scalar part vanishes; the alternating forms are the scalar parts, divided by $2i$, of the two sesquilinear commutators,
 $$

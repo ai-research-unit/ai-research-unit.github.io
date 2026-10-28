@@ -130,7 +130,7 @@ $$
 
 *Proof.* $\langle L_{\tilde Q_6}\tilde Q_4,\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_6\tilde Q_4\tilde Q_1^{*})$ and $\langle\tilde Q_4,L_{\tilde Q_6^{*}}\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_4(\tilde Q_6^{*}\tilde Q_1)^{*})=\mathrm{Sc}(\tilde Q_4\tilde Q_1^{*}\tilde Q_6)$; the two agree by the cyclicity of the scalar part, since $(\tilde Q_6^{*}\tilde Q_1)^{*}=\tilde Q_1^{*}\tilde Q_6$.
 
-**Corollary (the sectors for the dagger).** For the Hermitian form, $L_{\tilde Q_6}$ is self-adjoint exactly for $\tilde Q_6\in\mathbb{M}_+$, skew-adjoint exactly for $\tilde Q_6\in\mathbb{M}_-$, and unitary exactly on the slice $a^{*}a=e_t$; the two sectors are the two halves of the Hermitian splitting, and the dagger layer is where the pair of sectors is symmetric (*One-Sided Operators on the General Plain Sesqualgebra*).
+**Corollary (the sectors for the dagger).** For the Hermitian form, $L_{\tilde Q_6}$ is self-adjoint exactly for $\tilde Q_6\in\mathbb{M}_+$, skew-adjoint exactly for $\tilde Q_6\in\mathbb{M}_-$, and $*$-unitary exactly on the slice $a^{*}a=e_t$; the two sectors are the two halves of the Hermitian splitting, and the dagger layer is where the pair of sectors is symmetric (*One-Sided Operators on the General Plain Sesqualgebra*).
 
 ## Worked Examples
 

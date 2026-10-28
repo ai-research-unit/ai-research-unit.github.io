@@ -15,7 +15,7 @@ Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_t
 $$
 of real dimension one. So the classical sector of the algebra is one-dimensional in the operator sense: the only Hermitian central element is a real multiple of the identity. Three consequences follow, and together they are the content of the article.
 
-First, **the centre is exactly the set of observables invariant under every symmetry.** The adjoint action $\tilde{Q}\mapsto\tilde Q\tilde{Q}\tilde Q^{*}$ of the unitary group generates all conjugations, and an element is fixed by all of them precisely when it is central. Since conjugation by unitaries implements the rotations of the Bloch sphere, the only rotation-invariant Hermitian observable is the identity. The centre is the framework's answer to the question "which observables are classical?" — and, as stated, that answer is minimal.
+First, **the centre is exactly the set of observables invariant under every symmetry.** The adjoint action $\tilde{Q}\mapsto\tilde Q\tilde{Q}\tilde Q^{*}$ of the $*$-unitary group generates all conjugations, and an element is fixed by all of them precisely when it is central. Since conjugation by unitaries implements the rotations of the Bloch sphere, the only rotation-invariant Hermitian observable is the identity. The centre is the framework's answer to the question "which observables are classical?" — and, as stated, that answer is minimal.
 
 Second, **the centre is the classical sector in the literal sense of $c$-numbers.** Central elements are the ones that multiply every element on the same side, so they are the scalars with respect to which all algebraic operations are linear. The framework's external parameters — $\hbar$, the speed $c$, a mass $m$, a coupling constant — enter the equations as real multiples of $e_t$, hence as central elements, and the chirality-off-diagonal mass of the linear extension enters as the central coefficient $m e_t$. The centre is where the theory's classical data live.
 
@@ -81,7 +81,7 @@ The centre can be described from five directions, and the equivalence of the des
 
 **1. The commuting part.** This is the definition: $\tilde{Q}\in Z(\mathbb{B})$ if and only if $\tilde{Q}$ commutes with every element. In the language of observables, the central Hermitian elements are exactly the observables compatible with every observable; they form the maximally commutative and symmetry-blind part of the algebra.
 
-**2. The fixed points of the adjoint action.** Let $\mathrm{Ad}_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$; for $\tilde Q$ unitary this is the conjugation action on the Hermitian sector, and it implements the inner automorphisms of $\mathbb{B}$. An element is fixed by every inner automorphism if and only if it commutes with every element,
+**2. The fixed points of the adjoint action.** Let $\mathrm{Ad}_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$; for $\tilde Q$ $*$-unitary this is the conjugation action on the Hermitian sector, and it implements the inner automorphisms of $\mathbb{B}$. An element is fixed by every inner automorphism if and only if it commutes with every element,
 $$
 \bigl\{\tilde{Q}:\ \mathrm{Ad}_{\tilde Q}\tilde{Q}=\tilde{Q}\ \ \forall\tilde Q\in \mathrm{U}(2)\bigr\}=Z(\mathbb{B}).
 $$
@@ -91,7 +91,7 @@ This is the operational characterization of the classical sector: it is the set 
 $$
 Z(\mathbb{B})=\bigcap_{\tilde{Q}\in\mathbb{B}}\ker\bigl(\mathrm{ad}_{\tilde{Q}}\bigr),
 $$
-and since the derivations are the infinitesimal symmetries, this is the infinitesimal form of characterization 2. The Lie algebra of the unitary group here is $\mathrm{U}(2)=\mathbb{M}_-$ (the anti-Hermitian subspace), and the centre is the one-dimensional subspace of $\mathrm{U}(2)$ on which the adjoint representation is trivial, $\mathrm{Z}(\mathrm{U}(2))=\mathbb{R}\,ie_t$.
+and since the derivations are the infinitesimal symmetries, this is the infinitesimal form of characterization 2. The Lie algebra of the $*$-unitary group here is $\mathrm{U}(2)=\mathbb{M}_-$ (the anti-Hermitian subspace), and the centre is the one-dimensional subspace of $\mathrm{U}(2)$ on which the adjoint representation is trivial, $\mathrm{Z}(\mathrm{U}(2))=\mathbb{R}\,ie_t$.
 
 **4. Factorization of the plain form.** An element $\tilde{Q}$ is central if and only if its Hilbert–Schmidt correlations factorize,
 $$
@@ -221,11 +221,11 @@ Z(\mathbb{B})_{\mathrm c}=\mathbb{B},
 $$
 because every element commutes with the scalars. The two statements together identify the centre as the fixed point of the commutant operation: it is the subalgebra whose commutant is as large as possible, and it is itself the commutant of the algebra. For a maximal commutative subalgebra $\mathbb{A}$ one has $\mathbb{A}_{\mathrm c}=\mathbb{A}$, so the MASAs are exactly the self-commuting subalgebras, and the centre is their common part. This is the von Neumann bicommutant picture restricted to the finite-dimensional matrix algebra; there is no topological content to add.
 
-**2. Trivial action on the projective state space.** A central element acts on the state module by scalar multiplication, $\tilde Q_3\psi=(\lambda e_t)\psi=\lambda\psi$. On a ray $[\psi]$ this is invisible, since $[\lambda\psi]=[\psi]$ for $\lambda\neq0$. The centre is therefore the **kernel of the action of $\mathbb{B}^\times$ on the projective state space**: its unitary part $\mathrm{U}(1)=\{\lambda e_t:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
+**2. Trivial action on the projective state space.** A central element acts on the state module by scalar multiplication, $\tilde Q_3\psi=(\lambda e_t)\psi=\lambda\psi$. On a ray $[\psi]$ this is invisible, since $[\lambda\psi]=[\psi]$ for $\lambda\neq0$. The centre is therefore the **kernel of the action of $\mathbb{B}^\times$ on the projective state space**: its $*$-unitary part $\mathrm{U}(1)=\{\lambda e_t:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central $*$-unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
 $$
 \Gamma_{\tilde Q_3}(\tilde{Ϛ})=(\lambda e_t)\,\tilde{Ϛ}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{Ϛ},
 $$
-It is a positive multiple of $\tilde{Ϛ}$, hence the same state after normalization, and it is the identity on trace-one states exactly for the unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
+It is a positive multiple of $\tilde{Ϛ}$, hence the same state after normalization, and it is the identity on trace-one states exactly for the $*$-unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
 
 **3. The central normalizations.** The two normalizations that the framework imposes on its states are central conditions. The trace-one condition is $\mathrm{Tr}(\tilde{Ϛ})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $\mathrm{Tr}(\psi^\dagger\psi)=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.
 
@@ -284,7 +284,7 @@ The centre of the biquaternion algebra is
 $$
 \boxed{\;Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}\cong\mathbb{C}\;},
 $$
-the two-real-dimensional subalgebra of complex multiples of the unit; its Hermitian part is the one-real-dimensional line $\mathbb{R}e_t$. It is characterized equivalently as the commuting part of the algebra, the fix-point set of the adjoint action of the unitary group, the common kernel of the inner derivations, the locus where the plain form factorizes, and the preimage of the scalar matrices in the matrix model. These characterizations agree, which is what makes the centre canonical rather than conventional, and it is in this sense that it is **the** classical sector.
+the two-real-dimensional subalgebra of complex multiples of the unit; its Hermitian part is the one-real-dimensional line $\mathbb{R}e_t$. It is characterized equivalently as the commuting part of the algebra, the fix-point set of the adjoint action of the $*$-unitary group, the common kernel of the inner derivations, the locus where the plain form factorizes, and the preimage of the scalar matrices in the matrix model. These characterizations agree, which is what makes the centre canonical rather than conventional, and it is in this sense that it is **the** classical sector.
 
 As a classical sector it has four exact properties: central observables have state-independent expectation values and zero variance, so they are parameters rather than observables; they commute with every generator, so they are frozen under every dynamics; they are the home of the framework's $c$-number data, including the central mass coefficient $m e_t$; and as a commutative $C^{*}$-algebra the centre is $C(\{\ast\})$, the algebra of a one-point space, a single classical degree of freedom. The framework's genuine classical bits live in the maximal commutative subalgebras, which are isomorphic to $\mathbb{C}^2$ and are context-dependent: their common intersection is the centre, and no one of them is singled out by the algebra.
 
@@ -308,7 +308,7 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\vec u),e_t-\tilde\Pi(\vec u)\}$ | Maximal commutative subalgebra (MASA) |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure-state idempotent, $|\vec u|=1$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ |
-| $\mathrm{U}(2)=\mathbb{M}_-$ | Lie algebra of the unitary group |
+| $\mathrm{U}(2)=\mathbb{M}_-$ | Lie algebra of the $*$-unitary group |
 | $C(\{\ast\})$ | Gelfand character algebra of the centre |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

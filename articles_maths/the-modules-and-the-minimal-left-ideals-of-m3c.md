@@ -208,7 +208,7 @@ Then $J_{3}=\tfrac12(x\partial_{x}-y\partial_{y})$, $J_{+}=x\partial_{y}$, $J_{-
 
 **No spinors for $n=3$.** The carrier is three-dimensional and carries spin one. A spinor would be a two-dimensional module, and $M_{3}(\mathbb{C})$ has no two-dimensional simple module: its simple module is $\mathbb{C}^{3}$, of dimension three. The two-dimensional spinorial module exists only for $M_{2}(\mathbb{C})$, where the minimal left ideal is $\mathbb{C}^{2}$ and the Peirce decomposition has four lines. For $n=3$ the Peirce lines are one-dimensional subspaces of the algebra, the minimal left ideal is a three-dimensional module, and neither is a spinor. The word **spinor** is reserved for the $n=2$ case; the carrier of the $n=3$ spin chain is the spin-one module.
 
-**The Peirce line is not a module.** The Peirce line $A_{kl}=\mathbb{C}E_{kl}$ is a one-dimensional subspace of the algebra. It is not closed under the left action of $M_{3}$: $E_{12}E_{11}=0$ but $E_{12}E_{21}=E_{11}$, so the left action sends the line $A_{11}$ to the line $A_{21}$ and to zero, not to itself. The line is a Peirce summand of the algebra, not a submodule of the defining representation. The confusion between a Peirce line and a spinor is the confusion between a one-dimensional subspace of the algebra and a minimal module; the two have different dimensions and different actions.
+**The Peirce line is not a module.** The Peirce line $A_{kl}=\mathbb{C}E_{kl}$ is a one-dimensional subspace of the algebra. It is not closed under the left action of $M_{3}$: $E_{21}E_{11}=E_{21}$ and $E_{31}E_{11}=E_{31}$, so the left action sends the line $A_{11}$ into $A_{21}$ and $A_{31}$; the left ideal it generates is the whole first column $M_{3}E_{11}$, of dimension three, not the line. The line is a Peirce summand of the algebra, not a submodule of the defining representation. The confusion between a Peirce line and a spinor is the confusion between a one-dimensional subspace of the algebra and a minimal module; the two have different dimensions and different actions.
 
 ## Summary
 
@@ -271,4 +271,4 @@ The carrier of the spin chain is $M_{3}P_{1}\cong\mathbb{C}^{3}$, with weights $
 - [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the normalized frame and the exchange.
 - [The Two-Parameter Gauge](the-two-parameter-gauge-of-m3c.html), for the $\mathbb{C}^{\times}$-torsor of the exchange.
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the $n=2$ case and the spinorial module.
-- [Modules over Algebras](modules-over-algebras.html), for the general theory of simple modules.
+- [Modules over an Algebra](modules-over-an-algebra.html), for the general theory of modules and simple modules.

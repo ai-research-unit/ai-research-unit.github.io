@@ -398,7 +398,7 @@ $$
 
 as it must be, since the determinant of the exponential is the exponential of the trace.
 
-Every invertible complex $2\times2$ matrix has a polar decomposition $B=PU$ with $P$ Hermitian positive definite and $U$ unitary, and for $B=M_{\tilde q}$ the conformal identity $M_{\tilde q}M_{\tilde q}^{\dagger}=r^2I$ gives $P=rI$ and $U=M_{\tilde u_{\mathrm r}}\in SU(2)$. The positive factor is a scalar because the only positive definite Hermitian matrices in the family are the positive multiples of the identity. The general theorem is the same splitting without the conformal restriction; the positive factor then carries the two singular values instead of the single scale $r$.
+Every invertible complex $2\times2$ matrix has a polar decomposition $B=PU$ with $P$ Hermitian positive definite and $U$ $*$-unitary, and for $B=M_{\tilde q}$ the conformal identity $M_{\tilde q}M_{\tilde q}^{\dagger}=r^2I$ gives $P=rI$ and $U=M_{\tilde u_{\mathrm r}}\in SU(2)$. The positive factor is a scalar because the only positive definite Hermitian matrices in the family are the positive multiples of the identity. The general theorem is the same splitting without the conformal restriction; the positive factor then carries the two singular values instead of the single scale $r$.
 
 | factor | matrix | logarithm | determinant |
 |---|---|---|---|
@@ -589,7 +589,7 @@ with pure exponent $\vec v=\theta\vec n$, angle $\theta=\sqrt{\langle\vec v\rang
 
 The kernel is $\{0\}\cup2\pi S^2\cup4\pi S^2\cup\cdots$, a union of spheres and not a subgroup. The exponential is therefore not a homomorphism: the bracket of two pure exponents is twice their cross product, and $\exp(\tilde q_1+\tilde q_2)\neq\exp(\tilde q_1)\exp(\tilde q_2)$ for non-commuting exponents. The group of units is not $\mathbb{H}/\ker\exp$: off the real axis the fibres are lines, on the real axis they are spheres, and only the positive real axis gives cosets of the kernel. The amalgamation into one exponential survives because the logarithmic scale is central; the group law survives in the modulus–unit form, $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$.
 
-The differential of the exponential is invertible exactly off the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, $k\ge1$, whose image is the nonzero real axis; its determinant is $\exp(4q_t)(\sin\theta/\theta)^2$. In the matrix picture the exponential is $\exp(\ln r\,I+\theta N)$ with $N$ skew-Hermitian and $N^2=-I$, and the matrix polar decomposition of the conformal matrix has positive factor $rI$ and special unitary factor. The exponential coordinates are a diffeomorphism from the cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ onto the cut space; they are conformal from the cylinder $\mathbb{R}\times S^3$, not from the Euclidean metric on that cylinder.
+The differential of the exponential is invertible exactly off the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, $k\ge1$, whose image is the nonzero real axis; its determinant is $\exp(4q_t)(\sin\theta/\theta)^2$. In the matrix picture the exponential is $\exp(\ln r\,I+\theta N)$ with $N$ skew-Hermitian and $N^2=-I$, and the matrix polar decomposition of the conformal matrix has positive factor $rI$ and special $*$-unitary factor. The exponential coordinates are a diffeomorphism from the cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ onto the cut space; they are conformal from the cylinder $\mathbb{R}\times S^3$, not from the Euclidean metric on that cylinder.
 
 ## Summary of Notation
 

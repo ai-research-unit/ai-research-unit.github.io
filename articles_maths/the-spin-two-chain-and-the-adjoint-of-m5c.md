@@ -294,7 +294,7 @@ $$
 \mathfrak{gl}_2=V_0\oplus V_1,\qquad 1+3=4 .
 $$
 
-The chain vectors are $X_0=I$ and $X_1=J_+$; the lowering is $\operatorname{ad}_{J_-}J_+=-2J_3$, $\operatorname{ad}_{J_-}J_3=J_-$, $\operatorname{ad}_{J_-}J_-=0$. The chain is $J_+\to-2J_3\to J_-$, of weights $1,0,-1$.
+The chain vectors are $X_0=I$ and $X_1=J_+$; the lowering is $\operatorname{ad}_{J_-}J_+=-2J_3$, $\operatorname{ad}_{J_-}J_3=J_-$, $\operatorname{ad}_{J_-}J_-=0$. The chain is $J_+\to-2J_3\to-2J_-$, of weights $1,0,-1$; rescaling the last vector gives $J_+\to-2J_3\to J_-$.
 
 **Proof.** The matrices satisfy the $\mathfrak{sl}_2$ relations with $c_1=1$; the formulas are the $n=2$ case of the lowering formula. The adjoint dimensions are $1+3=4=\dim\mathfrak{gl}_2$.
 
@@ -302,11 +302,11 @@ The chain vectors are $X_0=I$ and $X_1=J_+$; the lowering is $\operatorname{ad}_
 
 **Theorem.** For $n=5$ the carrier $V_2=\mathbb{C}^5$ is self-conjugate and has no chirality: its weights are symmetric under $m\mapsto-m$, and the adjoint decomposition $1+3+5+7+9$ is multiplicity-free. There is no pair of inequivalent half-spin modules.
 
-**Proof.** The weights of $V_2$ are $2,1,0,-1,-2$, symmetric under $m\mapsto-m$. The dual of $V_2$ is isomorphic to $V_2$ by the invariant apolar pairing. The five summands of the adjoint have highest weights $0,1,2,3,4$, each once; there is no half-integer highest weight and no pair of modules exchanged by conjugation. The half-integer weights occur only at $n=2$, where the carrier is the spinor $V_{1/2}$ and the two components of opposite weight have opposite chirality.
+**Proof.** The weights of $V_2$ are $2,1,0,-1,-2$, symmetric under $m\mapsto-m$. The dual of $V_2$ is isomorphic to $V_2$ by the invariant apolar pairing. The five summands of the adjoint have highest weights $0,1,2,3,4$, each once; there is no half-integer highest weight and no pair of modules exchanged by conjugation. The half-integer weights occur only at $n=2$, where the carrier is the spinor $V_{1/2}$; at $n=5$ the carrier is the spin-2 module $V_2$.
 
-**Corollary.** The spin-two chain is a single self-conjugate chain of integer weights. The word *chirality* does not apply to $M_5(\mathbb{C})$; the carrier is a real (self-conjugate) module, and the adjoint is its symmetric square, decomposed without chirality.
+**Corollary.** The spin-two chain is a single self-conjugate chain of integer weights. The word *chirality* does not apply to $M_5(\mathbb{C})$; the carrier is a real (self-conjugate) module, and the adjoint is the tensor square $V_2\otimes V_2$, the sum of the symmetric square $V_0\oplus V_2\oplus V_4$ and the exterior square $V_1\oplus V_3$, decomposed without chirality.
 
-**Proof.** A chirality would require two inequivalent modules of the same highest weight, exchanged by the conjugation; the decomposition is multiplicity-free, so no such pair exists.
+**Proof.** A chirality is a splitting of a spinor module into two halves exchanged by the conjugation. At $n=5$ there is no spinor module: the carrier $V_2$ has integer weights and no half-integer highest weight. The adjoint decomposition is multiplicity-free, so there is no pair of conjugate half-spin modules to exchange. The self-conjugacy is the apolar pairing.
 
 **Remark.** **The comparison is a comparison of the carrier, not of the algebra.** At $n=2$ the carrier is the spinor and the algebra is the biquaternion model; at $n=5$ the carrier is the spin-two module and the algebra is $M_5$. The adjoint chain $1+3$ at $n=2$ and $1+3+5+7+9$ at $n=5$ are the same construction applied to the two carriers; the difference of the weights, half-integer versus integer, is the difference of the two spin chains.
 
@@ -356,7 +356,7 @@ with $c_0=c_5=0$. The weight multiplicities are $1,2,3,4,5,4,3,2,1$; the chain f
 
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the highest-weight classification, the Clebsch–Gordan decomposition and the weight diagrams of $\mathfrak{sl}_2$.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the highest weight vectors, the cyclic modules and the character argument.
-- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form and the unitary generators.
+- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form and the $*$-unitary generators.
 - [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m5c.html), for the carrier, the generators and the Clebsch–Gordan proof of the decomposition.
 - [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the matrix units and the Peirce lines that carry the weights.
 - [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge that rescales the simple nilpotents and the ladder coefficients.

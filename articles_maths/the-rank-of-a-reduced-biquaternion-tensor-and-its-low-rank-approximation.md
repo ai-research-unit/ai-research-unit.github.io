@@ -16,7 +16,7 @@ $$
 A=U\ast S\ast V^{\mathsf H},
 $$
 
-with $U$ and $V$ unitary and $S$ f-diagonal. Write $w=\min(n_1,n_2)$. The **tubal rank** of $A$ is
+with $U$ and $V$ $*$-unitary and $S$ f-diagonal. Write $w=\min(n_1,n_2)$. The **tubal rank** of $A$ is
 
 $$
 \operatorname{rank}_{\mathrm t}(A)=\#\{i\in\{1,\dots,w\}:\|S(i,i,:)\|_{\mathrm F}>0\}.
@@ -52,7 +52,7 @@ Here $U(:,i,:)$ is $n_1\times1\times n_3$, $S(i,i,:)$ is $1\times1\times n_3$, a
 
 **Proposition.** The tensor $A_k$ has tubal rank at most $k$. It has tubal rank exactly $k$ when the tubes $S(1,1,:),\dots,S(k,k,:)$ are all nonzero.
 
-*Proof.* The t-SVD of $A_k$ is obtained by keeping the first $k$ diagonal tubes and setting the others to zero; the unitary factors are unchanged. The number of nonzero tubes is therefore at most $k$, and it is $k$ when the first $k$ tubes are nonzero.
+*Proof.* The t-SVD of $A_k$ is obtained by keeping the first $k$ diagonal tubes and setting the others to zero; the $*$-unitary factors are unchanged. The number of nonzero tubes is therefore at most $k$, and it is $k$ when the first $k$ tubes are nonzero.
 
 **The algorithm.** Compute the t-SVD of $A$ by the algorithm of *The Singular Value Decomposition of a Reduced Biquaternion Tensor*; keep the first $k$ diagonal tubes and the corresponding columns of $U$ and $V$; reconstruct by the t-product. The cost is the cost of the t-SVD,
 

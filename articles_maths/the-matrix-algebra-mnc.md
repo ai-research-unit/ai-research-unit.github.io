@@ -44,7 +44,7 @@ $$
 \mathfrak{u}(n)=\{K: K^{*}=-K\},\qquad \dim_{\mathbb{R}}\mathfrak{u}(n)=n^{2},
 $$
 
-and its traceless part is $\mathfrak{su}(n)$ of real dimension $n^{2}-1$. The unitary group is $U(n)=\{U: U^{*}U=I\}$; the projective unitary group $PU(n)=U(n)/U(1)$ is the maximal compact subgroup of $PGL_n(\mathbb{C})$.
+and its traceless part is $\mathfrak{su}(n)$ of real dimension $n^{2}-1$. The $*$-unitary group is $U(n)=\{U: U^{*}U=I\}$; the projective $*$-unitary group $PU(n)=U(n)/U(1)$ is the maximal compact subgroup of $PGL_n(\mathbb{C})$.
 
 **The trace form is positive definite.** Define
 

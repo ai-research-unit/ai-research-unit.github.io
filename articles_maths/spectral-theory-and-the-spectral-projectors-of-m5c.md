@@ -22,9 +22,9 @@ $$
 
 and the **positive semidefinite order** is read on the eigenvalues: $A\ge0$ iff all $\lambda_k\ge0$. The square root $A^{1/2}=\sum_k\sqrt{\lambda_k}P_k$ and the absolute value $|A|=(A^*A)^{1/2}$ follow.
 
-The article proves the Hermitian spectral theorem by the eigenvector induction, constructs the spectral projectors, and develops the operator norm, the positive semidefinite order and the functional calculus. It then treats the **normal** case (the unitary matrices, including the root $H=\sum_k\zeta_kE_{kk}$) and the **general** case: a matrix with simple spectrum has Lagrange projectors, but they are not orthogonal unless the matrix is normal for the standard form. The distinction is the difference between the algebraic spectral decomposition of the root and the Hilbert-space spectral theorem.
+The article proves the Hermitian spectral theorem by the eigenvector induction, constructs the spectral projectors, and develops the operator norm, the positive semidefinite order and the functional calculus. It then treats the **normal** case (the $*$-unitary matrices, including the root $H=\sum_k\zeta_kE_{kk}$) and the **general** case: a matrix with simple spectrum has Lagrange projectors, but they are not orthogonal unless the matrix is normal for the standard form. The distinction is the difference between the algebraic spectral decomposition of the root and the Hilbert-space spectral theorem.
 
-The article assumes the Hermitian form, the Frobenius form and the trace. It uses the determinant and the characteristic polynomial; it does not use the Jordan form beyond the existence of eigenvalues. The polar decomposition and the singular value decomposition are the next article.
+The article assumes the Hermitian form, the Frobenius form and the trace. It uses the determinant and the characteristic polynomial; the general case uses the Jordan decomposition through the Dunford calculus, while the Hermitian case uses only the spectral theorem. The polar decomposition and the singular value decomposition are the next article.
 
 ## The Spectral Theorem for Hermitian Matrices
 
@@ -66,7 +66,7 @@ $$
 
 The restriction of $A$ to $x^\perp\cong\mathbb{C}^4$ is Hermitian, so by induction it has an orthonormal basis of eigenvectors. Together with $x$, this gives an orthonormal basis of $\mathbb{C}^5$.
 
-**Corollary.** $A$ is unitarily diagonalizable: $A=UDU^*$ with $U$ unitary and $D=\operatorname{diag}(\lambda_1,\dots,\lambda_5)$ real.
+**Corollary.** $A$ is unitarily diagonalizable: $A=UDU^*$ with $U$ $*$-unitary and $D=\operatorname{diag}(\lambda_1,\dots,\lambda_5)$ real.
 
 **Proof.** The orthonormal eigenbasis is the columns of $U$; the diagonal entries are the eigenvalues.
 
@@ -122,9 +122,19 @@ They are polynomial in $A$ of degree $4$, with coefficients rational in the eige
 
 **Proof.** The Lagrange polynomial $L_k(t)=\prod_{l\ne k}(t-\lambda_l)/(\lambda_k-\lambda_l)$ satisfies $L_k(\lambda_j)=\delta_{kj}$; the polynomial identities at the five distinct eigenvalues give the projector identities after evaluating at $A$. The degree is $4$; the coefficients are rational in the $\lambda_k$.
 
-**Corollary.** The Lagrange projectors are the spectral projectors of the algebra for any simple spectrum. They are not necessarily self-adjoint: $P_k^*=P_k$ iff $A$ is normal for the standard form.
+**Proposition.** At a simple spectrum the minimal polynomial equals the characteristic polynomial,
 
-**Proof.** The projectors are determined by the spectral decomposition; the self-adjointness is the orthogonality of the spectral projections, which holds exactly when the eigenvectors are orthogonal, i.e., when $A$ is normal.
+$$
+\mu_A(t)=\chi_A(t)=\prod_{k=1}^{5}(t-\lambda_k),
+$$
+
+and the Jordan form is diagonal. For a general matrix, the minimal polynomial is $\prod_\lambda(t-\lambda)^{m_\lambda}$, where $m_\lambda$ is the size of the largest Jordan block of $\lambda$; the Jordan decomposition is treated in *The Element, the Coordinates and the Trace*.
+
+**Proof.** The characteristic polynomial has the five distinct roots $\lambda_k$, so it is squarefree; a squarefree annihilating polynomial of degree $5$ is the minimal polynomial, and the matrix is diagonalizable. The general formula is the standard Jordan description.
+
+**Corollary.** The Lagrange projectors are the spectral projectors of the algebra for any simple spectrum. They are not necessarily self-adjoint: **all** of them are self-adjoint iff $A$ is normal for the standard form. An individual Lagrange projector can be self-adjoint for a non-normal $A$.
+
+**Proof.** The projectors are determined by the spectral decomposition. All of them are self-adjoint iff every eigenspace is orthogonal to the sum of the others, i.e., iff the eigenvectors are mutually orthogonal, which is normality. A single projector requires only its own eigenvector to be orthogonal to the other eigenspaces.
 
 ### The Orthogonal Projectors
 
@@ -138,7 +148,7 @@ They are polynomial in $A$ of degree $4$, with coefficients rational in the eige
 
 ### The Root Versus the Hermitian Case
 
-**Proposition.** The standard root $H=\sum_k\zeta_kE_{kk}$ is unitary, hence normal; its spectral projectors are $E_{kk}$, and they are orthogonal for the standard Hermitian form. A general conjugate $gHg^{-1}$ has spectral projectors $gE_{kk}g^{-1}$, which are idempotent but not self-adjoint unless the columns of $g$ are mutually orthogonal.
+**Proposition.** The standard root $H=\sum_k\zeta_kE_{kk}$ is $*$-unitary, hence normal; its spectral projectors are $E_{kk}$, and they are orthogonal for the standard Hermitian form. A general conjugate $gHg^{-1}$ has spectral projectors $gE_{kk}g^{-1}$, which are idempotent but not self-adjoint unless the columns of $g$ are mutually orthogonal.
 
 **Proof.** $H$ is diagonal with entries of modulus $1$, so $H^*H=I$; it is normal. The spectral projectors of a diagonal matrix are the diagonal units $E_{kk}$, which are orthogonal. Conjugation sends the projectors to $gE_{kk}g^{-1}$; this is self-adjoint iff $gE_{kk}g^{-1}=g^{-*}E_{kk}g^*$ for all $k$, which holds iff $g^*g$ is diagonal, i.e., the columns of $g$ are mutually orthogonal.
 
@@ -146,23 +156,23 @@ They are polynomial in $A$ of degree $4$, with coefficients rational in the eige
 
 **Proof.** The conjugation by $g$ is the gauge; it preserves the idempotent identities but not, in general, the self-adjointness. The standard point $H$ is the diagonal representative.
 
-**Remark.** **The Lagrange projectors and the orthogonal spectral projectors are the same only for normal matrices.** The root $H$ is unitary, so at the standard point they coincide with $E_{kk}$; a general matrix with simple spectrum has Lagrange projectors that are not orthogonal. The spectral theorem is a theorem about normal matrices; the Lagrange decomposition is a theorem about any simple spectrum. The two must not be conflated.
+**Remark.** **The Lagrange projectors and the orthogonal spectral projectors are the same only for normal matrices.** The root $H$ is $*$-unitary, so at the standard point they coincide with $E_{kk}$; a general matrix with simple spectrum has Lagrange projectors that are not orthogonal. The spectral theorem is a theorem about normal matrices; the Lagrange decomposition is a theorem about any simple spectrum. The two must not be conflated.
 
 ## The Normal Case
 
-### Unitary Diagonalization
+### $*$-Unitary Diagonalization
 
-**Theorem.** A matrix $A$ is normal, $A^*A=AA^*$, if and only if it is unitarily diagonalizable: $A=UDU^*$ with $U$ unitary and $D$ diagonal.
+**Theorem.** A matrix $A$ is normal, $A^*A=AA^*$, if and only if it is unitarily diagonalizable: $A=UDU^*$ with $U$ $*$-unitary and $D$ diagonal.
 
-**Proof.** If $A=UDU^*$, then $A^*A=UD^*DU^*=UDD^*U^*=AA^*$. Conversely, if $A$ is normal, write $A=B+iC$ with $B=(A+A^*)/2$ and $C=(A-A^*)/(2i)$ Hermitian. The normality is equivalent to $[B,C]=0$; commuting Hermitian matrices are simultaneously diagonalizable by a unitary matrix (apply the Hermitian spectral theorem on each eigenspace of $B$, where $C$ acts Hermitian). Then $A$ is diagonal in the common eigenbasis.
+**Proof.** If $A=UDU^*$, then $A^*A=UD^*DU^*=UDD^*U^*=AA^*$. Conversely, if $A$ is normal, write $A=B+iC$ with $B=(A+A^*)/2$ and $C=(A-A^*)/(2i)$ Hermitian. The normality is equivalent to $[B,C]=0$; commuting Hermitian matrices are simultaneously diagonalizable by a $*$-unitary matrix (apply the Hermitian spectral theorem on each eigenspace of $B$, where $C$ acts Hermitian). Then $A$ is diagonal in the common eigenbasis.
 
 **Corollary.** The eigenvalues of a normal matrix are complex; the eigenvectors are orthogonal; the spectral projectors are orthogonal.
 
-**Proof.** The unitary diagonalization gives an orthonormal eigenbasis; the eigenspaces are orthogonal; the projections are self-adjoint.
+**Proof.** The $*$-unitary diagonalization gives an orthonormal eigenbasis; the eigenspaces are orthogonal; the projections are self-adjoint.
 
-**Corollary.** The root $H$ is normal (unitary), and the spectral theorem applies to it at the standard point. The general element of the root orbit is diagonalizable but need not be normal for the standard form.
+**Corollary.** The root $H$ is normal ($*$-unitary), and the spectral theorem applies to it at the standard point. The general element of the root orbit is diagonalizable but need not be normal for the standard form.
 
-**Proof.** $H$ is unitary; a general conjugate $gHg^{-1}$ is diagonalizable. It is normal for the standard form when the eigenbasis is orthonormal, i.e., when the columns of $g$ are mutually orthogonal; this fails for a general $g$.
+**Proof.** $H$ is $*$-unitary; a general conjugate $gHg^{-1}$ is diagonalizable. It is normal for the standard form when the eigenbasis is orthonormal, i.e., when the columns of $g$ are mutually orthogonal; this fails for a general $g$.
 
 ### The Spectral Measure
 
@@ -254,7 +264,7 @@ $$
 
 **Proof.** $A^*A$ is positive semidefinite; its square root $|A|$ is positive semidefinite. Define $U$ on the range of $|A|$ by $U(|A|x)=Ax$; this is well defined and isometric because $\||A|x\|=\|Ax\|$; extend by zero on the orthogonal complement. Then $A=U|A|$ and $U$ is a partial isometry.
 
-**Corollary.** The polar decomposition is the matrix analogue of the polar form of a complex number; the positive part is $|A|$ and the unitary part is $U$.
+**Corollary.** The polar decomposition is the matrix analogue of the polar form of a complex number; the positive part is $|A|$ and the $*$-unitary part is $U$.
 
 **Proof.** The construction is the polar decomposition; the details are in the next article.
 
@@ -302,6 +312,24 @@ where $\sigma$ denotes the spectrum.
 
 **Proof.** The spectral mapping with $f(t)=t$; the norm formula.
 
+### The Resolvent and the Dunford Projectors
+
+**Definition.** For $A\in M_5(\mathbb{C})$, the **resolvent** is $R(z)=(zI-A)^{-1}$, holomorphic on $\mathbb{C}\setminus\sigma(A)$. For an isolated eigenvalue $\lambda$, the **Dunford projector** is
+
+$$
+P_\lambda=\frac{1}{2\pi i}\oint_\Gamma(zI-A)^{-1}\,dz,
+$$
+
+where $\Gamma$ is a small positively oriented circle around $\lambda$ enclosing no other eigenvalue.
+
+**Theorem.** $P_\lambda$ is the spectral projector of the generalized eigenspace of $\lambda$: it is idempotent, $P_\lambda P_\mu=\delta_{\lambda\mu}P_\lambda$, $\sum_\lambda P_\lambda=I$, and $A=\sum_\lambda(\lambda P_\lambda+N_\lambda)$ with $N_\lambda=P_\lambda(A-\lambda I)P_\lambda$ nilpotent and commuting with $P_\lambda$. At a simple eigenvalue, $P_\lambda$ is the Lagrange projector.
+
+**Proof.** The contour integral of the resolvent is the standard Dunford calculus; the residue at $\lambda$ is the projection onto the generalized eigenspace along the sum of the other generalized eigenspaces (Kato, *Perturbation Theory*, or Pierce, *Associative Algebras*). The nilpotency of $N_\lambda$ is the definition of the generalized eigenspace. At a simple eigenvalue, the residue is $\prod_{\mu\ne\lambda}(A-\mu I)/(\lambda-\mu)$, which is the Lagrange projector.
+
+**Proposition (degeneration at a repeated eigenvalue).** Let $A_t$ be a holomorphic family with simple spectrum for $t\ne0$ and limit $A_0$ with a repeated eigenvalue $\lambda$ of multiplicity $m$. The individual Lagrange projectors of the $m$ branches need not have limits as $t\to0$; their sum tends to the Dunford projector $P_\lambda$. When the family is normal for the standard form, the limit is the orthogonal projection onto the generalized eigenspace; in general it need not be self-adjoint.
+
+**Proof.** The sum of the Lagrange projectors of the $m$ branches is the contour integral of the resolvent over a contour enclosing those branches and no other eigenvalue; as $t\to0$ the contour tends to one around $\lambda$, and the integral tends to $P_\lambda$ by continuity of the resolvent. The individual projectors carry factors $(\lambda_i(t)-\lambda_j(t))^{-1}$ and may fail to converge when the branches collide. For a normal family the eigenspaces are orthogonal, so the Dunford projector is the orthogonal projection; for a non-normal family it is not self-adjoint.
+
 ## Summary
 
 A Hermitian matrix $A$ has an orthonormal eigenbasis, real eigenvalues and the spectral decomposition
@@ -316,19 +344,20 @@ $$
 
 The spectral projectors are the orthogonal projections onto the eigenspaces; at a simple spectrum they are the Lagrange projectors. The operator norm of a Hermitian matrix is its spectral radius; for a general matrix it is the square root of the spectral radius of $A^*A$. The positive semidefinite order is the eigenvalue order; the square root, the absolute value and the polar decomposition follow from the functional calculus.
 
-The normal matrices are exactly the unitarily diagonalizable matrices; the root $H$ is unitary and normal at the standard point, and its projectors are orthogonal there. A general conjugate $gHg^{-1}$ has idempotent projectors $gE_{kk}g^{-1}$ that are not self-adjoint unless $g$ is unitary. The algebraic Lagrange decomposition holds for every simple spectrum; the Hilbert-space orthogonality holds only for normal matrices.
+The normal matrices are exactly the unitarily diagonalizable matrices; the root $H$ is $*$-unitary and normal at the standard point, and its projectors are orthogonal there. A general conjugate $gHg^{-1}$ has idempotent projectors $gE_{kk}g^{-1}$ that are not self-adjoint unless $g$ is $*$-unitary. The algebraic Lagrange decomposition holds for every simple spectrum; the Hilbert-space orthogonality holds only for normal matrices. For a general matrix with a repeated eigenvalue, the Dunford projector is the contour integral of the resolvent over the eigenvalue; the Lagrange projectors of a splitting tend to it in sum, but not individually, and it is orthogonal when the matrix is normal; in general it need not be.
 
 | Object | Value |
 |---|---|
 | Hermitian eigenvalues | Real |
 | Spectral projectors | Orthogonal, $P_k^*=P_k$ |
+| Dunford projector | $\frac{1}{2\pi i}\oint_\Gamma(zI-A)^{-1}dz$ |
 | Operator norm (Hermitian) | $\max_k|\lambda_k|$ |
 | Operator norm (general) | $\sqrt{\rho(A^*A)}$ |
 | Positive semidefinite | All eigenvalues $\ge0$ |
 | Square root | $A^{1/2}=\sum_k\sqrt{\lambda_k}P_k$ |
 | Functional calculus | $f(A)=\sum_kf(\lambda_k)P_k$ |
 | Normal matrices | Unitarily diagonalizable |
-| Root $H$ | Unitary, normal, projectors $E_{kk}$ |
+| Root $H$ | $*$-Unitary, normal, projectors $E_{kk}$ |
 
 ## Summary of Notation
 
@@ -347,8 +376,10 @@ The normal matrices are exactly the unitarily diagonalizable matrices; the root 
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the spectral theorem, the spectral projectors, the operator norm and the positive semidefinite order.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the functional calculus, the Loewner order and the matrix square root.
-- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the spectral theorem for Hermitian and normal matrices and the unitary diagonalization.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form and the unitary group.
+- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the spectral theorem for Hermitian and normal matrices and the $*$-unitary diagonalization.
+- Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 1995), for the resolvent, the Dunford projectors and the degeneration at a repeated eigenvalue.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the algebraic spectral decomposition and the Dunford calculus.
+- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form and the $*$-unitary group.
 - [The Polar Decomposition](the-polar-decomposition-of-m5c.html), for the absolute value and the polar decomposition.
 - [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m5c.html), for the exponential and the functional calculus.
 - [The Quintic and the Spectral Strata](the-quintic-and-the-spectral-strata-of-m5c.html), for the characteristic polynomial and the spectral strata.

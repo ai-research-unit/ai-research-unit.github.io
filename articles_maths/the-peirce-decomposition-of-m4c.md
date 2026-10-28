@@ -22,7 +22,7 @@ $$
 0\subset F_1\subset F_2\subset F_3\subset F_4=\mathbb{C}^4,\qquad \dim F_k=k.
 $$
 
-The flag is **spectral**: it is produced by $H$, not fixed in advance. The standard flag of *The Matrix Algebra $M_4(\mathbb{C})$* is the case $V_k=\mathbb{C}e_k$, that is, $H=H_0=\operatorname{diag}(1,i,-1,-i)$. Every other root gives a flag in general position with respect to the standard one. The construction depends only on the flag and the lines, so it is invariant under a change of basis that preserves $H$.
+The flag is **spectral**: it is produced by $H$, not fixed in advance. The standard flag of *The Matrix Algebra $M_4(\mathbb{C})$* is the case $V_k=\mathbb{C}e_k$, that is, $H=H_0=\operatorname{diag}(1,i,-1,-i)$. A general root gives a flag in general position with respect to the standard one. The construction depends only on the flag and the lines, so it is invariant under a change of basis that preserves $H$.
 
 ## The Peirce Lines
 
@@ -221,14 +221,14 @@ The table of corners is
 
 | $\cdot$ | $\mathcal{A}$ | $\mathcal{B}$ | $\mathcal{C}$ | $\mathcal{D}$ |
 |---|---|---|---|---|
-| $\mathcal{A}$ | $\mathcal{A}$ | $\mathcal{B}$ | $0$ | $0$ |
+| $\mathcal{A}$ | $\mathcal{A}$ | $\mathcal{B}$ | $\mathcal{C}$ | $0$ |
 | $\mathcal{B}$ | $0$ | $0$ | $\mathcal{A}$ | $\mathcal{B}$ |
 | $\mathcal{C}$ | $\mathcal{C}$ | $\mathcal{D}$ | $0$ | $0$ |
 | $\mathcal{D}$ | $0$ | $0$ | $\mathcal{C}$ | $\mathcal{D}$ |
 
 The products $\mathcal{B}\mathcal{C}\subseteq\mathcal{A}$ and $\mathcal{C}\mathcal{B}\subseteq\mathcal{D}$ are the cross terms $rc'$ and $cr'$. They are the reason the coarse split is not a direct sum of algebras: the off-diagonal blocks multiply back into the diagonal. The diagonal part $\mathcal{A}\oplus\mathcal{D}$ is a subalgebra with unit $I$, isomorphic to $\mathbb{C}\oplus M_3(\mathbb{C})$, but it is not an ideal: multiplying a diagonal element by a general element produces an off-diagonal part. The algebra $M_4(\mathbb{C})$ is simple, so it has no proper two-sided ideal at all.
 
-**The corner units.** The unit of $\mathcal{A}$ is $\Pi$, not $I$; the unit of $\mathcal{D}$ is $Q$. The trace of an element of $\mathcal{A}$ as a matrix algebra is the compression $\operatorname{tr}(\Pi X\Pi)$, not $\operatorname{tr}X$. This is the sense in which $\mathcal{A}$ and $\mathcal{D}$ are matrix algebras with compressed units, and it is why $\mathcal{A}\oplus\mathcal{D}$ is a subalgebra of $M_4$ but not a unital subalgebra with the unit $I$.
+**The corner units.** The unit of $\mathcal{A}$ is $\Pi$, not $I$; the unit of $\mathcal{D}$ is $Q$. For an element $X$, the trace of its compression to $\mathcal{A}$ is $\operatorname{tr}(\Pi X\Pi)$, which differs from $\operatorname{tr}X$ in general; on $\mathcal{A}$ itself the two agree, because $\Pi$ has rank one. On $\mathcal{D}$ the compressed trace $\operatorname{tr}(QXQ)$ is the trace of the $3\times3$ block. Each of $\mathcal{A}$ and $\mathcal{D}$ is a non-unital subalgebra of $M_4$, with unit $\Pi$ or $Q$; their sum $\mathcal{A}\oplus\mathcal{D}$ is unital, with unit $\Pi+Q=I$.
 
 ## Refining the Coarse Split
 
@@ -342,4 +342,4 @@ $$
 - [The Rank-Two Split](the-rank-two-split-of-m4c.html), for the coarse split by an idempotent of rank two.
 - [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the carrier, which is not a corner.
 - [The Peirce Decomposition and the Corner Recursion](the-peirce-decomposition-and-the-corner-recursion-mnc.html), for the general construction at order $n$.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$, where the coarse and fine splits coincide.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$, where the coarse and fine splits coincide.

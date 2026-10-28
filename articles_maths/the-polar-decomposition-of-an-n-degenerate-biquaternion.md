@@ -8,9 +8,9 @@ $$
 \tilde Q=\tilde Q_H\,\tilde Q_0,
 $$
 
-with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. The companion article *The Polar Decomposition of a N-Regular Biquaternion* treated the case $\langle\tilde Q\rangle_{\natural}\neq0$, where the factors sharpen: $\tilde Q_H$ is positive definite, $\tilde Q_0$ is unitary, and the pair refines into the four-factor word $\tilde Q=r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}$.
+with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. The companion article *The Polar Decomposition of a N-Regular Biquaternion* treated the case $\langle\tilde Q\rangle_{\natural}\neq0$, where the factors sharpen: $\tilde Q_H$ is positive definite, $\tilde Q_0$ is $*$-unitary, and the pair refines into the four-factor word $\tilde Q=r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}$.
 
-This article treats the complementary case $\langle\tilde Q\rangle_{\natural}=0$. The modulus vanishes, so the modulus–unit form $\tilde Q=\Rho\tilde U$ with $\Rho\neq0$ does not exist, and neither does the four-factor word, whose product has norm $\Rho^{2}=0$ and cannot represent a nonzero element. What survives is the two-factor decomposition: $\tilde Q_H$ is positive semidefinite of rank at most one, and $\tilde Q_0$ is a partial isometry that is not unitary.
+This article treats the complementary case $\langle\tilde Q\rangle_{\natural}=0$. The modulus vanishes, so the modulus–unit form $\tilde Q=\Rho\tilde U$ with $\Rho\neq0$ does not exist, and neither does the four-factor word, whose product has norm $\Rho^{2}=0$ and cannot represent a nonzero element. What survives is the two-factor decomposition: $\tilde Q_H$ is positive semidefinite of rank at most one, and $\tilde Q_0$ is a partial isometry that is not $*$-unitary.
 
 The article states why the modulus and the four factors fail (§*The Vanishing of the Modulus*), records the surviving pair (§*The Two-Factor Decomposition*), computes the two factors in closed form (§*The Hermitian Factor*, §*The Partial-Isometry Factor*), describes the two sectors of the null cone (§*The Two Sectors*), and gives four worked examples. The general pair, its uniqueness and the continuity of its Hermitian factor are established in *The Polar Decomposition of a Biquaternion* and are cited, not proved again.
 
@@ -58,9 +58,9 @@ $$
 
 with ${}^{+}$ the Moore–Penrose inverse. The pair exists for every element of the algebra and is unique (*The Polar Decomposition of a Biquaternion*, §*Uniqueness*); on the null cone it takes the following form.
 
-**Proposition.** If $\langle\tilde Q\rangle_{\natural}=0$, then $\tilde Q_H$ is Hermitian positive semidefinite of rank at most one, $\tilde Q_0$ is a partial isometry, and $\tilde Q_0$ is not unitary for $\tilde Q\neq0$. At the origin both factors vanish.
+**Proposition.** If $\langle\tilde Q\rangle_{\natural}=0$, then $\tilde Q_H$ is Hermitian positive semidefinite of rank at most one, $\tilde Q_0$ is a partial isometry, and $\tilde Q_0$ is not $*$-unitary for $\tilde Q\neq0$. At the origin both factors vanish.
 
-The rank is one exactly when $\tilde Q\neq0$, and zero at the origin. The partial isometry is not unitary because its final projection $\tilde Q_0\tilde Q_0^{*}=\tilde Q_H/(2a)$ is a rank-one projection, not the identity, for $a>0$. The two factors are functions of $\tilde Q$ alone. The Hermitian factor is the continuous limit of the $\natural$-regular Hermitian factor as the element approaches the cone; the isometry factor is not continuous there (*The Polar Decomposition of a Biquaternion*, §*Continuity*).
+The rank is one exactly when $\tilde Q\neq0$, and zero at the origin. The partial isometry is not $*$-unitary because its final projection $\tilde Q_0\tilde Q_0^{*}=\tilde Q_H/(2a)$ is a rank-one projection, not the identity, for $a>0$. The two factors are functions of $\tilde Q$ alone. The Hermitian factor is the continuous limit of the $\natural$-regular Hermitian factor as the element approaches the cone; the isometry factor is not continuous there (*The Polar Decomposition of a Biquaternion*, §*Continuity*).
 
 ## The Hermitian Factor
 
@@ -150,7 +150,7 @@ $$
 
 using $\tilde Q_H\tilde Q_H^{+}=\tilde Q_H/(2a)$, which is the final projection of the Hermitian factor. This product is a rank-one projection, so the first Penrose identity gives $\tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde Q_0$, and the second follows symmetrically. $\square$
 
-The factor $\tilde Q_0$ is not unitary: its product with its conjugate is the rank-one projection $\tilde Q_H/(2a)$, not $e_t$. At the origin, $\tilde Q_H=0$, $\tilde Q_H^{+}=0$ and $\tilde Q_0=0$.
+The factor $\tilde Q_0$ is not $*$-unitary: its product with its conjugate is the rank-one projection $\tilde Q_H/(2a)$, not $e_t$. At the origin, $\tilde Q_H=0$, $\tilde Q_H^{+}=0$ and $\tilde Q_0=0$.
 
 ## The Two Sectors
 
@@ -202,7 +202,7 @@ $$
 e_t+i\vec e_x=\bigl(e_t+i\vec e_x\bigr)\cdot\frac{e_t+i\vec e_x}{2}.
 $$
 
-The factor $\tilde Q_0$ is a projection, hence a partial isometry, but not unitary: $\tilde Q_0\tilde Q_0^{*}=\tilde Q_0$ is a rank-one projection, not the identity.
+The factor $\tilde Q_0$ is a projection, hence a partial isometry, but not $*$-unitary: $\tilde Q_0\tilde Q_0^{*}=\tilde Q_0$ is a rank-one projection, not the identity.
 
 ### Example 2: the sector $\Sigma_{01}$
 
@@ -224,7 +224,7 @@ e_t+\vec e_x+i\vec e_y+i\vec e_z
 =\bigl(\sqrt2\,e_t+i\sqrt2\,\vec e_z\bigr)\cdot\frac{\tilde Q}{2\sqrt2}.
 $$
 
-The factor $\tilde Q_0$ is a partial isometry of rank one, not unitary.
+The factor $\tilde Q_0$ is a partial isometry of rank one, not $*$-unitary.
 
 ### Example 3: the sector $\Sigma_{00}$, a nonzero nilpotent
 
@@ -246,7 +246,7 @@ $$
 \vec e_x+i\vec e_y=\bigl(e_t+i\vec e_z\bigr)\cdot\frac{\vec e_x+i\vec e_y}{2}.
 $$
 
-The Hermitian factor has rank one, and the isometry factor is a partial isometry of rank one, not unitary.
+The Hermitian factor has rank one, and the isometry factor is a partial isometry of rank one, not $*$-unitary.
 
 ### Example 4: the origin
 

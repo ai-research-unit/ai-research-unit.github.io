@@ -130,7 +130,7 @@ $$
 
 The operator $a^{\mathrm{fop}}_{\vec p}$ annihilates a particle of momentum $\vec p$ and $b^{\mathrm{fop}}_{\vec p}$ annihilates an antiparticle; the two branches of the parent equation, distinguished by the sign of the frequency, become the particle and antiparticle branches.
 
-The biquaternion form of the expansion is the replacement of the phase $\exp(\mp ip\cdot x)$ by a central unitary element built from the material four-wavevector. With $\tilde P/\hbar=iE_{\vec p}e_t+\vec p$ in natural units, the identity above gives
+The biquaternion form of the expansion is the replacement of the phase $\exp(\mp ip\cdot x)$ by a central $*$-unitary element built from the material four-wavevector. With $\tilde P/\hbar=iE_{\vec p}e_t+\vec p$ in natural units, the identity above gives
 
 $$
 \mathrm{Sc}\!\left(\tilde P\tilde R^{\natural}\right)/\hbar=\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-E_{\vec p}t'=-p\cdot x ,

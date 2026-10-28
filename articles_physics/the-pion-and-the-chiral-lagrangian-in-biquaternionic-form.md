@@ -130,7 +130,7 @@ $$
 \tilde U(\tilde{Q}) = \exp\!\left(\frac{\vec\pi(\tilde{Q})}{f_\pi}\right)\in\mathbb{H}^1_{\mathbb{B}} ,
 $$
 
-which is unitary because $\vec\pi$ is anti-Hermitian, and which may be written in the closed form
+which is $*$-unitary because $\vec\pi$ is anti-Hermitian, and which may be written in the closed form
 
 $$
 \tilde U = \cos\frac{|\pi|}{f_\pi}\,e_t + \frac{\sin(|\pi|/f_\pi)}{|\pi|}\,\vec\pi ,
@@ -179,7 +179,7 @@ WHY IT IS NEEDED
   gL = gR leaves only the diagonal SU(2)V.
 * The second factor is the axial symmetry. Without it there is no axial
   current, no Goldstone coset and no breaking pattern.
-* For unitary parameters, and in particular on the unit real
+* For $*$-unitary parameters, and in particular on the unit real
   quaternions, the adjoint is the group inverse. The map gL X gR* is
   therefore the usual left-right action, with both factors written by
   one operation and no operator inverse.

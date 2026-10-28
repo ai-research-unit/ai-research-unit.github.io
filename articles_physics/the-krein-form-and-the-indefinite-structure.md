@@ -105,13 +105,13 @@ $$
 
 with multiplicities. The eigenvalues on the unit circle are paired by conjugation and the eigenvalues off it occur in inverted pairs. A Krein isometry is therefore not confined to the unit circle: the boosts leave it, and that is the group-level form of the non-compactness.
 
-The compact algebraic isometries form a small subgroup. The central phases and the sandwiches by the unitary elements generate
+The compact algebraic isometries form a small subgroup. The central phases and the sandwiches by the $*$-unitary elements generate
 
 $$
 \mathrm{U}(1)\times PU(2)\cong\mathrm{U}(1)\times SO(3),
 $$
 
-of real dimension $4$. The phases are the scalar isometries; the unitary sandwiches are inner automorphisms of the algebra; the two families commute and meet only at the identity. The compact subgroup is far from the whole group, whose dimension is $16$. The norm-one sandwiches are isometries too; the non-unitary ones are not inner automorphisms, and the slice forms the non-compact proper orthochronous Lorentz group $\mathrm{PSL}(2,\mathbb{C})\cong SO^{+}(1,3)$.
+of real dimension $4$. The phases are the scalar isometries; the $*$-unitary sandwiches are inner automorphisms of the algebra; the two families commute and meet only at the identity. The compact subgroup is far from the whole group, whose dimension is $16$. The norm-one sandwiches are isometries too; the non-$*$-unitary ones are not inner automorphisms, and the slice forms the non-compact proper orthochronous Lorentz group $\mathrm{PSL}(2,\mathbb{C})\cong SO^{+}(1,3)$.
 
 ## The Level Sets
 

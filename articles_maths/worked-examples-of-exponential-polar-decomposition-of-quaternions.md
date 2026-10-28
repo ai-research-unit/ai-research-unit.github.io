@@ -74,7 +74,7 @@ $$
 
 when $\vec q\neq0$. The unit factor is a rotor: it lies on $S^3$, and its sandwich rotates by $2\theta$ about $\vec n$.
 
-There is no Hermitian factor to split off. In the biquaternion case the unit factor factors as $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a Hermitian positive factor and a unitary factor, with two angles and two axes. Here the Hermitian factor is the identity and the unitary factor is the whole unit factor. The two objects of the decomposition are the scale $r$ and the rotor $\tilde u_{\mathrm r}$; the axis is a coordinate of the rotor, not a third factor.
+There is no Hermitian factor to split off. In the biquaternion case the unit factor factors as $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a Hermitian positive factor and a $*$-unitary factor, with two angles and two axes. Here the Hermitian factor is the identity and the $*$-unitary factor is the whole unit factor. The two objects of the decomposition are the scale $r$ and the rotor $\tilde u_{\mathrm r}$; the axis is a coordinate of the rotor, not a third factor.
 
 | object | formula | range |
 |---|---|---|
@@ -176,7 +176,7 @@ $$
 U=\frac{\mathsf M(\tilde q)}{r}\in SU(2).
 $$
 
-The positive factor is the scalar matrix $rI$, and the unitary factor is the matrix of the rotor. In the exponential form, with $N=-i\vec n\cdot\vec\sigma$,
+The positive factor is the scalar matrix $rI$, and the $*$-unitary factor is the matrix of the rotor. In the exponential form, with $N=-i\vec n\cdot\vec\sigma$,
 
 $$
 N^2=-I,
@@ -707,7 +707,7 @@ The two architectures compare as follows.
 |---|---|---|
 | coordinates | $Q_t,Q_x,Q_y,Q_z\in\mathbb{C}$ | $q_t,q_x,q_y,q_z\in\mathbb{R}$ |
 | modulus | $re^{i\alpha}$, principal square root | $r>0$ |
-| unit factor | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, Hermitian times unitary | $\tilde u_{\mathrm r}$, a rotor |
+| unit factor | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, Hermitian times $*$-unitary | $\tilde u_{\mathrm r}$, a rotor |
 | angles and axes | $\psi,\theta_{\mathrm b}$; $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | $\theta$; $\vec n$ |
 | polar word | $re^{i\alpha}\exp(i\frac{\psi}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$ | $\exp(\ln r+\theta\vec n)$ |
 | defect of one element's polar word | the cross term when the axes are non-parallel | zero |

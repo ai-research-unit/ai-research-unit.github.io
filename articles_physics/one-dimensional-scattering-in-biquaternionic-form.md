@@ -140,7 +140,7 @@ $$
 |A|^2 + |D|^2 = |B|^2 + |C|^2 .
 $$
 
-This is exactly the statement that $S$ is **unitary**,
+This is exactly the statement that $S$ is **$*$-unitary**,
 
 $$
 S^{*} S = I_2,
@@ -152,7 +152,7 @@ $$
 \boxed{\;|r|^2 + |t|^2 = R + T = 1\;}.
 $$
 
-Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a **unitary element**, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the Lorentz rotor $\tilde U_{\mathrm L}$, the unit-norm element with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$, is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.
+Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a **$*$-unitary element**, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the Lorentz rotor $\tilde U_{\mathrm L}$, the unit-norm element with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$, is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.
 
 ## Exactly Solvable Potentials
 
@@ -309,7 +309,7 @@ $$
 P(a) = \begin{pmatrix} \exp(\,iqa) & 0 \\ 0 & \exp(-iqa) \end{pmatrix}.
 $$
 
-A potential built from $n$ piecewise-constant regions therefore has a **transfer matrix** $M$ that is the product of $n$ step inverses and $n-1$ propagation matrices, and the asymptotic coefficients are related by $M$. The physical $S$-matrix is obtained from $M$ by imposing the outgoing boundary conditions. The transfer matrix is not itself unitary — it preserves the flux bilinear form rather than the norm — while the $S$-matrix extracted from it is unitary, because the two boundary conditions select a Lagrangian subspace of the two-dimensional coefficient space.
+A potential built from $n$ piecewise-constant regions therefore has a **transfer matrix** $M$ that is the product of $n$ step inverses and $n-1$ propagation matrices, and the asymptotic coefficients are related by $M$. The physical $S$-matrix is obtained from $M$ by imposing the outgoing boundary conditions. The transfer matrix is not itself $*$-unitary — it preserves the flux bilinear form rather than the norm — while the $S$-matrix extracted from it is $*$-unitary, because the two boundary conditions select a Lagrangian subspace of the two-dimensional coefficient space.
 
 ### Composition and a worked identity
 
@@ -339,7 +339,7 @@ $$
 \boxed{\;\tilde S = S \otimes I_2\;},
 $$
 
-a two-by-two matrix in the channel space (left- and right-moving amplitudes) tensored with the identity on the state module. Equivalently, in the algebra, it commutes with the module's unitary group: for every $\tilde Q$ with $\tilde Q\tilde Q^{*} = e_t$ that acts on the module,
+a two-by-two matrix in the channel space (left- and right-moving amplitudes) tensored with the identity on the state module. Equivalently, in the algebra, it commutes with the module's $*$-unitary group: for every $\tilde Q$ with $\tilde Q\tilde Q^{*} = e_t$ that acts on the module,
 
 $$
 [\tilde S,\tilde U] = 0,
@@ -399,7 +399,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 - **Centrality of the potential coupling, made manifest.** The potential multiplies $e_t$, so the Hamiltonian is central and the $S$-matrix factorises as $S\otimes I_2$. The absence of spin-flip and spin-dependent amplitudes is read off the algebra rather than assumed from rotational invariance.
 - **A flux from the plain form.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
-- **One notion of unit resolved.** The $S$-matrix is unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
+- **One notion of unit resolved.** The $S$-matrix is $*$-unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
 - **A clean statement of what a scalar potential can do.** The potential can shape the envelope without touching the module; the framework exhibits the module as a spectator of every problem with a central Hamiltonian.
 
 **What remains open.**
@@ -427,7 +427,7 @@ The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - 
 
 The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\kappa a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
-The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a unitary element $\tilde S\tilde S^{*} = e_t$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.
+The biquaternion content is that the potential couples only to the scalar slot, so the $S$-matrix is central in the module, $S\otimes I_2$. It is a $*$-unitary element $\tilde S\tilde S^{*} = e_t$ and not a unit-norm rotor. There is no spin-flip or spin-dependent amplitude, because the operator that would produce one is not in the central Hamiltonian. The framework thus supplies the flux, the sector pairing, the unitarity, and the absence of module dynamics; it does not supply the matching conditions or the tunnelling law, which are scalar analysis, and it adds no prediction distinguishing the reformulation from scalar Schrödinger scattering.
 
 ## Summary of Notation
 
@@ -446,7 +446,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$ | One-dimensional current |
 | $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
 | $\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\phi|^2$ | Density |
-| $S = \begin{pmatrix} t & r_2 \\ r & t_2\end{pmatrix}$ | Scattering matrix; unitary, $S^{*} S = I_2$ |
+| $S = \begin{pmatrix} t & r_2 \\ r & t_2\end{pmatrix}$ | Scattering matrix; $*$-unitary, $S^{*} S = I_2$ |
 | $R = |r|^2$, $T = |t|^2$ | Flux reflection and transmission |
 | $\beta = m\lambda/\hbar^2 k$ | Dimensionless delta-potential coupling |
 | $E_b = -m\lambda^2/2\hbar^2$ | Bound state of the attractive delta |

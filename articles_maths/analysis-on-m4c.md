@@ -29,7 +29,7 @@ $$
 \langle E_{ij},E_{kl}\rangle=\delta_{ik}\delta_{jl}.
 $$
 
-**The identification with $\mathbb{C}^{16}$.** The map $A\mapsto(A_{11},A_{12},\dots,A_{44})$ is a unitary isomorphism
+**The identification with $\mathbb{C}^{16}$.** The map $A\mapsto(A_{11},A_{12},\dots,A_{44})$ is a $*$-unitary isomorphism
 
 $$
 M_4(\mathbb{C})\cong\mathbb{C}^{16}.
@@ -185,7 +185,7 @@ for every ball of radius $r$ contained in its domain. The average over the spher
 **The Dirichlet problem.** On a ball, the Dirichlet problem for the Laplacian has a unique solution given by the Poisson integral. The Poisson kernel for the ball $B_R(0)\subset\mathbb{R}^{32}$ is
 
 $$
-P_R(A,u)=\frac{R^2-\lVert A\rVert^2}{\lvert S^{31}\rvert R\lVert A-u\rVert^{32}},
+P_R(A,u)=\frac{R^2-\lVert A\rVert^2}{\lvert S^{31}\rvert R\lVert A-Ru\rVert^{32}},
 \qquad u\in S^{31},
 $$
 
@@ -245,7 +245,7 @@ $$
 A=\sum_{k=1}^{4}\lambda_kE_k .
 $$
 
-**The exponential and the logarithm.** The entire function $e^z$ gives the matrix exponential; the holomorphic logarithm on a domain avoiding the negative real axis gives the matrix logarithm. The resolvent, the spectral projectors, the fractional powers $A^s$ on the positive definite cone and the unitary group $e^{iK}$ are all instances of the functional calculus.
+**The exponential and the logarithm.** The entire function $e^z$ gives the matrix exponential; the holomorphic logarithm on a domain avoiding the negative real axis gives the matrix logarithm. The resolvent, the spectral projectors, the fractional powers $A^s$ on the positive definite cone and the $*$-unitary group $e^{iK}$ are all instances of the functional calculus.
 
 **The approximation.** By Runge's theorem and the density of polynomials, every holomorphic function on a neighbourhood of the spectrum is uniformly approximated by polynomials on the spectrum; hence the holomorphic calculus is the closure of the polynomial calculus. The finite dimension makes the calculus algebraic: $f(A)$ depends only on $f$ and its derivatives at the eigenvalues, through the Lagrange–Sylvester interpolation formula.
 
@@ -369,7 +369,7 @@ $$
 d f_A(B)=\operatorname{Re}\operatorname{tr}(\nabla f(A)^*B).
 $$
 
-For the determinant, $\nabla\det(A)=\operatorname{adj}(A)$; for the trace, $\nabla\operatorname{tr}(A)=I$; for the squared norm, $\nabla\lVert A\rVert^2=2A$.
+For the real function $\operatorname{Re}\det$, the gradient is $\nabla(\operatorname{Re}\det)(A)=\operatorname{adj}(A)^*$; the holomorphic derivative of the determinant itself is $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$. For $\operatorname{Re}\operatorname{tr}$, the gradient is $I$; for the squared norm, $\nabla\lVert A\rVert^2=2A$.
 
 **The product.** The product map $(A,B)\mapsto AB$ is bilinear, and
 
@@ -394,9 +394,9 @@ $$
 
 the second coefficient of the characteristic polynomial.
 
-**The critical points of the determinant.** The gradient $\operatorname{adj}(A)$ vanishes exactly when $\operatorname{rank}A\le2$. The critical set of the determinant is therefore the variety of rank at most two, of complex dimension $12$; it is the singular locus of the hypersurface $\det=0$.
+**The critical points of the determinant.** The gradient $\operatorname{adj}(A)^*$ of $\operatorname{Re}\det$ vanishes exactly when $\operatorname{adj}(A)=0$, that is, when $\operatorname{rank}A\le2$. The critical set of the determinant is therefore the variety of rank at most two, of complex dimension $12$; it is the singular locus of the hypersurface $\det=0$.
 
-**The unitary group.** The modulus $\lvert\det\rvert$ is identically $1$ on $U(4)$, so it has no distinguished critical point there; the closest-unitary problem of *The Polar Decomposition* is the variational problem for the Frobenius distance to $U(4)$.
+**The $*$-unitary group.** The modulus $\lvert\det\rvert$ is identically $1$ on $U(4)$, so it has no distinguished critical point there; the closest-$*$-unitary problem of *The Polar Decomposition* is the variational problem for the Frobenius distance to $U(4)$.
 
 **The inverse and implicit function theorems.** The inverse function theorem applies to the holomorphic maps with invertible differential: the exponential near $0$, the inverse on $GL_4$, the resolvent off the spectrum. The implicit function theorem gives the local manifold structure of the level sets $\{\det=c\}$ and of the spectral strata.
 
@@ -420,15 +420,15 @@ $$
 \{A:\det A=0\},
 $$
 
-a complex hypersurface of real codimension two. What is absent is not the zero divisors but the **null cone** of an indefinite norm: the trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, so its only isotropic vector is $0$. The singular set is the determinantal hypersurface, not the isotropic cone of a form.
+a complex hypersurface of real codimension two. What is absent in the full algebra is a **null cone** of its positive definite trace form: the trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, so its only isotropic vector is $0$. The singular set is the determinantal hypersurface, not the isotropic cone of a form. The biquaternion algebra, by contrast, has the complex-valued norm and its null cone.
 
 **The ordinary matrix analysis.** Because the algebra is a full matrix algebra, the analysis of its elements is the ordinary matrix analysis: rank, determinant, characteristic polynomial, Jordan form, spectral projectors, singular values, polar decomposition and the Schatten norms. The Frobenius form is definite; the operator and nuclear norms are the Schatten norms; the exponential and the logarithm are the matrix functions. There is no division-algebra norm and no null cone to divide by.
 
-**The boundary against Fueter theory.** Fueter's quaternionic analysis uses the Cauchy–Fueter operator and the quaternionic multiplication; it requires a quaternionic structure on the space. The full algebra $M_4(\mathbb{C})$ has the complex structure of $\mathbb{C}^{16}$ and the ordinary Cauchy–Riemann equations; it does not carry a quaternionic structure as a complex algebra. The biquaternion algebra $\mathbb{B}$ carries the quaternionic structure, and its regular model $M_4(\mathbb{C})_L$ carries the Fueter theory; the full algebra's analysis is the ordinary several-complex-variable analysis. The two analyses meet through the biquaternion subalgebra and the regular representation. The positive definite Frobenius form does not produce a Cauchy–Fueter operator; the Fueter operator needs the quaternionic units, not the complex structure. This is the boundary between the ordinary matrix analysis of the full algebra and the quaternionic analysis of the biquaternion algebra.
+**The boundary against Fueter theory.** Fueter's quaternionic analysis uses the Cauchy–Fueter operator and the quaternionic multiplication; it requires a quaternionic structure on the space. The full algebra $M_4(\mathbb{C})$ has the complex structure of $\mathbb{C}^{16}$ and the ordinary Cauchy–Riemann equations; it does not carry a complex-linear quaternionic structure; the quaternionic structure of the regular model is real-linear and lives on the biquaternion subalgebra. The biquaternion algebra $\mathbb{B}$ carries the quaternionic structure, and its regular model $M_4(\mathbb{C})_L$ carries the Fueter theory; the full algebra's analysis is the ordinary several-complex-variable analysis. The two analyses meet through the biquaternion subalgebra and the regular representation. The positive definite Frobenius form does not produce a Cauchy–Fueter operator; the Fueter operator needs the quaternionic units, not the complex structure. This is the boundary between the ordinary matrix analysis of the full algebra and the quaternionic analysis of the biquaternion algebra.
 
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is a complex Hilbert space of dimension $16$ with the Frobenius form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ and the Lebesgue measure on $\mathbb{R}^{32}$. The holomorphic functions are the entire functions of the sixteen complex coordinates, characterised by the Cauchy–Riemann equations $\partial f/\partial\bar A_{ij}=0$; the real-analytic functions are the convergent series in the thirty-two real coordinates. The Wirtinger derivatives give the complex differential, the derivative of the determinant $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$ and the derivative of the inverse $d(A^{-1})_A(B)=-A^{-1}BA^{-1}$. The Laplacian is $\Delta=4\sum\partial^2/\partial A_{ij}\partial\bar A_{ij}$; the holomorphic functions are harmonic, with the mean value property, the maximum principle and the Poisson integral. The functional calculus is the polynomial, holomorphic and normal $C^*$-calculus; the Gaussian measure $\pi^{-16}e^{-\lVert A\rVert^2}dA$ has the Wick moments, and the heat kernel is $(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$. The Fourier transform on $\mathbb{C}^{16}$ converts the Wirtinger derivatives into multiplication by $\pi i\bar\xi_{ij}$ and the Laplacian into $-4\pi^2\lVert\xi\rVert^2$; it diagonalises the translation-invariant analysis but not the algebra product. The full algebra has the ordinary zero divisors of the singular set, not a null cone; its analysis is the ordinary matrix analysis, and the boundary against Fueter theory is the quaternionic structure carried by the biquaternion algebra and its regular model. The critical set of the determinant is the rank-at-most-two variety, and the critical points of the norm on the unitary group give the polar decomposition.
+The algebra $M_4(\mathbb{C})$ is a complex Hilbert space of dimension $16$ with the Frobenius form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ and the Lebesgue measure on $\mathbb{R}^{32}$. The holomorphic functions are the entire functions of the sixteen complex coordinates, characterised by the Cauchy–Riemann equations $\partial f/\partial\bar A_{ij}=0$; the real-analytic functions are the convergent series in the thirty-two real coordinates. The Wirtinger derivatives give the complex differential, the derivative of the determinant $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$ and the derivative of the inverse $d(A^{-1})_A(B)=-A^{-1}BA^{-1}$. The Laplacian is $\Delta=4\sum\partial^2/\partial A_{ij}\partial\bar A_{ij}$; the holomorphic functions are harmonic, with the mean value property, the maximum principle and the Poisson integral. The functional calculus is the polynomial, holomorphic and normal $C^*$-calculus; the Gaussian measure $\pi^{-16}e^{-\lVert A\rVert^2}dA$ has the Wick moments, and the heat kernel is $(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$. The Fourier transform on $\mathbb{C}^{16}$ converts the Wirtinger derivatives into multiplication by $\pi i\bar\xi_{ij}$ and the Laplacian into $-4\pi^2\lVert\xi\rVert^2$; it diagonalises the translation-invariant analysis but not the algebra product. The full algebra has the ordinary zero divisors of the singular set, not a null cone; its analysis is the ordinary matrix analysis, and the boundary against Fueter theory is the quaternionic structure carried by the biquaternion algebra and its regular model. The critical set of the determinant is the rank-at-most-two variety, and the closest-$*$-unitary problem for the Frobenius distance is the variational problem of the polar decomposition.
 
 $$
 \boxed{\ \dim_\mathbb{C}M_4=16,\quad \langle A,B\rangle=\operatorname{tr}(A^*B),\quad \Delta=4\sum_{i,j}\partial_{A_{ij}}\partial_{\bar A_{ij}},\quad d\mu=\pi^{-16}e^{-\lVert A\rVert^2}dA. }
@@ -441,7 +441,7 @@ $$
 | Laplacian | $\Delta=4\sum\partial_{A_{ij}}\partial_{\bar A_{ij}}$ |
 | Gaussian measure | $\pi^{-16}e^{-\lVert A\rVert^2}dA$ |
 | Heat kernel | $(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$ |
-| Gradient of $\det$ | $\operatorname{adj}(A)$ |
+| Gradient of $\operatorname{Re}\det$ | $\operatorname{adj}(A)^*$ |
 | Gradient of $\operatorname{tr}$ | $I$ |
 | Fourier transform | $\hat f(\xi)=\int f(A)e^{-2\pi i\operatorname{Re}\operatorname{tr}(\xi^*A)}dA$ |
 
@@ -455,7 +455,7 @@ $$
 | $d\mu$ | the Gaussian probability measure |
 | $K_t(A,B)$ | the heat kernel |
 | $f(A)$ | the functional calculus |
-| $\operatorname{adj}(A)$ | the adjugate, the gradient of the determinant |
+| $\operatorname{adj}(A)$ | the adjugate; $\operatorname{adj}(A)^*$ is the gradient of $\operatorname{Re}\det$ |
 
 ## Further Reading
 

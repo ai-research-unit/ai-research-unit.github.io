@@ -64,9 +64,9 @@ $$
 
 **Definition.** The **Lebesgue measure** on $M_5$ is the translation-invariant measure $dA$ of $\mathbb{R}^{50}$.
 
-**Proposition.** The measure is invariant under translations and under the unitary group: $d(UA)=dA$ and $d(AU)=dA$ for $U\in U(5)$. It is not invariant under general linear changes of coordinates; the Jacobian is $|\det g|^{10}$ for $A\mapsto gA$ (or $A\mapsto Ag$).
+**Proposition.** The measure is invariant under translations and under the $*$-unitary group: $d(UA)=dA$ and $d(AU)=dA$ for $U\in U(5)$. It is not invariant under general linear changes of coordinates; the Jacobian is $|\det g|^{10}$ for $A\mapsto gA$ (or $A\mapsto Ag$).
 
-**Proof.** The translation invariance is the Lebesgue measure on $\mathbb{R}^{50}$; the unitary invariance is the orthogonality of the real linear map $A\mapsto UA$ (the Frobenius norm is preserved). For a general $g$, the left multiplication $L_g$ on $M_5$ has complex determinant $(\det g)^5$ (five column blocks, each with determinant $\det g$), so its real Jacobian is $|(\det g)^5|^2=|\det g|^{10}$.
+**Proof.** The translation invariance is the Lebesgue measure on $\mathbb{R}^{50}$; the $*$-unitary invariance is the orthogonality of the real linear map $A\mapsto UA$ (the Frobenius norm is preserved). For a general $g$, the left multiplication $L_g$ on $M_5$ has complex determinant $(\det g)^5$ (five column blocks, each with determinant $\det g$), so its real Jacobian is $|(\det g)^5|^2=|\det g|^{10}$.
 
 **Corollary.** The Gaussian integral converges:
 
@@ -301,7 +301,7 @@ maps $\mathcal{S}$ into itself.
 
 **Proof.** The derivatives of $\hat f$ multiply by powers of $\xi$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.
 
-**Corollary.** The Fourier transform extends to a unitary operator on $L^2(\mathbb{R}^{50})$ (Plancherel), and the inversion formula holds:
+**Corollary.** The Fourier transform extends to a $*$-unitary operator on $L^2(\mathbb{R}^{50})$ (Plancherel), and the inversion formula holds:
 
 $$
 f(x)=\int_{\mathbb{R}^{50}}\hat f(\xi)e^{2\pi i\langle\xi,x\rangle}\,d\xi .
@@ -311,7 +311,7 @@ $$
 
 ### The Inversion and Plancherel
 
-**Theorem.** The Fourier transform is an isomorphism of $\mathcal{S}$ with itself, and it extends to a unitary isomorphism of $L^2$; the Plancherel identity is
+**Theorem.** The Fourier transform is an isomorphism of $\mathcal{S}$ with itself, and it extends to a $*$-unitary isomorphism of $L^2$; the Plancherel identity is
 
 $$
 \|f\|_2=\|\hat f\|_2 .

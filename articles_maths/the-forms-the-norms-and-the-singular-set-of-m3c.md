@@ -47,7 +47,7 @@ $$
 $$
 using $U^{*}U=I$ and the cyclic property of the trace. The polarisation is the standard one for a Hermitian form.
 
-**The trace form.** The form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ is positive definite, with only isotropic vector $0$. The Frobenius norm is the norm it defines. The complex bilinear trace pairing $\operatorname{tr}(AB)$ is a different form: it is indefinite, and its isotropic vectors are the nonzero matrices with $\operatorname{tr}(A^{2})=0$, such as $E_{12}$. The two forms agree on real matrices but not on complex ones.
+**The trace form.** The form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ is positive definite, with only isotropic vector $0$. The Frobenius norm is the norm it defines. The complex bilinear trace pairing $\operatorname{tr}(AB)$ is a different form: it is indefinite, and its isotropic vectors are the nonzero matrices with $\operatorname{tr}(A^{2})=0$, such as $E_{12}$. The two forms agree on real symmetric matrices but not in general.
 
 **The unit sphere.** The set $\{A:\|A\|_{\mathrm{F}}=1\}$ is the unit sphere $S^{17}\subset\mathbb{R}^{18}$, compact and smooth. The Frobenius distance between two matrices is the Euclidean distance of their coordinate vectors; the algebra is a Euclidean space of real dimension $18$ with this norm.
 
@@ -152,7 +152,7 @@ of complex dimension $5$. At a rank-one matrix all $2\times2$ minors vanish, and
 
 **The determinant is not a norm.** The determinant is homogeneous of degree three, $\det(\lambda A)=\lambda^{3}\det A$, and it is complex-valued; it vanishes on the singular set and is negative on some invertible matrices (for example, a permutation matrix with an odd permutation). The Frobenius norm is homogeneous of degree one, nonnegative, and vanishes only at zero. The two functions have different geometries: the unit ball of the norm is bounded, while the set $|\det A|\leq1$ is unbounded.
 
-**The determinant cone.** The singular set is a cone: if $\det A=0$, then $\det(\lambda A)=\lambda^{3}\det A=0$ for every $\lambda\in\mathbb{C}$. It is the affine cone over the projective hypersurface of singular matrices in $\mathbb{P}^{8}$. The cone is cubic, not quadratic; it is not the null cone of a quadratic form. The trace form is positive definite and has no nonzero isotropic vectors, so the null cone of the form is the single point $0$, not the hypersurface $\Sigma$.
+**The determinant cone.** The singular set is a cone: if $\det A=0$, then $\det(\lambda A)=\lambda^{3}\det A=0$ for every $\lambda\in\mathbb{C}$. It is the affine cone over the projective hypersurface of singular matrices in $\mathbb{P}^{8}$. The cone is cubic, not quadratic; it is not the null cone of a quadratic form. The trace form is positive definite and has no nonzero isotropic vectors, so the isotropic set of the form is the single point $0$, not the hypersurface $\Sigma$.
 
 ## The Rank Stratification
 
@@ -177,7 +177,7 @@ The rank-three stratum is open and dense; the rank-two stratum is the smooth par
 $$
 M_{\leq r}=\{A:\operatorname{rank}A\leq r\},
 $$
-defined by the vanishing of all $(r+1)\times(r+1)$ minors. For $r=2$ it is $\Sigma$, of dimension $8$; for $r=1$ it is the rank-one determinantal variety, of dimension $5$; for $r=0$ it is $\{0\}$. The singular locus of $M_{\leq r}$ is $M_{\leq r-1}$; in particular, the singular locus of $\Sigma$ is the rank-one variety.
+defined by the vanishing of all $(r+1)\times(r+1)$ minors. For $r=2$ it is $\Sigma$, of dimension $8$; for $r=1$ it is the rank-one determinantal variety, of dimension $5$; for $r=0$ it is $\{0\}$. For $r=1,2$, the singular locus of $M_{\leq r}$ is $M_{\leq r-1}$; in particular, the singular locus of $\Sigma=M_{\leq2}$ is the rank-one variety.
 
 **The distance to the rank strata.** By the Eckart–Young theorem, the distance from $A$ to $M_{\leq r}$ in the operator norm (and in the Frobenius norm) is $\sigma_{r+1}$, with the convention $\sigma_{4}=0$:
 $$
@@ -206,7 +206,7 @@ has rank one, lies in the singular locus of $\Sigma$, and has singular values $\
 $$
 \{A:\langle A,A\rangle=0\}=\{0\}.
 $$
-There is no nonzero null vector, no null cone, and no link.
+There is no nonzero null vector and no null cone of this form; the link of its isotropic set is empty.
 
 **The determinant cone is not the null cone.** The determinant zero set $\Sigma$ is a cone, because the determinant is homogeneous, but it is the zero set of a cubic polynomial, not of the quadratic form $\operatorname{tr}(A^{*}A)$. The two cones are different:
 $$
@@ -233,7 +233,7 @@ is a genuine cone of complex dimension three, with a link: its intersection with
 |---|---|---|
 | Defining form | $\operatorname{tr}(A^{*}B)$, positive definite | $Q$, indefinite |
 | Isotropic vectors | $0$ only | nonzero null vectors |
-| Null cone | $\{0\}$ | genuine cone |
+| Null cone | none ($\{0\}$ only) | genuine cone |
 | Link | empty | real dimension five |
 | Singular set | $\det=0$, real codimension two | $Q=0$, the null cone |
 | Zero divisors | singular matrices | nonzero null vectors |
@@ -301,5 +301,5 @@ The trace form is positive definite, with isotropic set $\{0\}$; there is no nul
 - [The Cubic, the Discriminant and the Spectral Strata](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the determinant and the spectral strata.
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the null cone of $\mathbb{B}$.
 - [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the zero divisors of $\mathbb{B}$.
-- [The Singular Value Decomposition](the-singular-value-decomposition.html), for the general theory of the singular values.
-- [The Determinant of a Linear Map](the-determinant-of-a-linear-map.html), for the determinant and its geometry.
+- [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for the singular values as the eigenvalues of the positive factor.
+- [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant and its geometry.

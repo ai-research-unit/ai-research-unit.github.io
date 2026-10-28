@@ -30,7 +30,7 @@ $$
 \Theta_M(XY)=\Theta_M(X)\,\Theta_M(Y)
 $$
 
-holds exactly when $M$ is unitary, because the two sides differ by the factor $M^{\dagger}M$.
+holds exactly when $M$ is $*$-unitary, because the two sides differ by the factor $M^{\dagger}M$.
 
 *Proof.* The map is the composite of left multiplication by $M$, right multiplication by $M^{\dagger}$, and the identification of the two; it is the image of the algebra sandwich, which is a linear isomorphism because $\tilde Q$ is a unit. The matrix identities follow from the algebra identities.
 
@@ -157,7 +157,7 @@ with $\mathcal R$ the rotor generator and $\mathcal H$ the boost generator. The 
 
 **The general rule.** Every sandwich preserves the two halves and the null cone. It preserves the other four remarkable subspaces exactly when the element is a central multiple of a real unit quaternion.
 
-**The centre.** A central element $\lambda e_t$ is sent to $\lambda QQ^{*}$. This is central exactly when $QQ^{*}$ is central, which happens for the central multiples of the real unit quaternions and not in general. For a unitary $Q$, $QQ^{*}=e_t$ and the centre is fixed pointwise.
+**The centre.** A central element $\lambda e_t$ is sent to $\lambda QQ^{*}$. This is central exactly when $QQ^{*}$ is central, which happens for the central multiples of the real unit quaternions and not in general. For a $*$-unitary $Q$, $QQ^{*}=e_t$ and the centre is fixed pointwise.
 
 **The vector subspace.** A traceless matrix is sent to a matrix whose trace is $\operatorname{Tr}(MXM^{\dagger})$, which need not vanish. The vector subspace is preserved exactly when the sandwich is a similarity of the trace form, that is when $M$ is a central multiple of a real unit quaternion.
 

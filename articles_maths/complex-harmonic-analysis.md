@@ -87,7 +87,7 @@ where $\xi/\bar{\lambda}$ is complex division.
 
 ### The Plancherel Theorem
 
-**Theorem.** The Fourier transform extends uniquely to a unitary operator
+**Theorem.** The Fourier transform extends uniquely to a $*$-unitary operator
 
 $$
 \mathcal{F} : L^2(\mathbb{C}) \to L^2(\mathbb{C}),

@@ -245,7 +245,7 @@ $$
 \tilde{Ϛ} = \tfrac12 e_t,
 $$
 
-the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac14 e_t$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_1(\vec u) + \tfrac12\tilde\Pi_2(\vec u)$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full unitary group $\mathrm{U}(2)$, which acts on the ball by rotations. It is also the barycentre: the uniform average of the pure states over the boundary sphere is
+the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac14 e_t$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_1(\vec u) + \tfrac12\tilde\Pi_2(\vec u)$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full $*$-unitary group $\mathrm{U}(2)$, which acts on the ball by rotations. It is also the barycentre: the uniform average of the pure states over the boundary sphere is
 
 $$
 \frac{1}{4\pi}\int_{S^2}\tilde\Pi(\vec u)\,d\Omega

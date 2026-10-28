@@ -205,7 +205,7 @@ The first is antisymmetric, the second diagonal, the third diagonal-less symmetr
 
 The quaternion formulation of the classical types is complete in dimension three and incomplete in dimension four.
 
-**Remark (the method degrades from three to four dimensions).** The antisymmetric, the diagonal and the diagonal-less symmetric functions exhaust the traceless maps that act on the vector part and fix the scalar. For a general traceless map the same three families no longer suffice: the symmetric part needs a function that mixes the scalar and the vector parts, and the source records that its expression is cumbersome and not useful. The four-dimensional unitary groups are therefore assembled from two $SO(4)$ factors rather than from a single quaternion closed form — the same asymmetry that the Lie-group article reads as the clean three-dimensional and the less clean four-dimensional parametrisations.
+**Remark (the method degrades from three to four dimensions).** The antisymmetric, the diagonal and the diagonal-less symmetric functions exhaust the traceless maps that act on the vector part and fix the scalar. For a general traceless map the same three families no longer suffice: the symmetric part needs a function that mixes the scalar and the vector parts, and the source records that its expression is cumbersome and not useful. The four-dimensional $*$-unitary groups are therefore assembled from two $SO(4)$ factors rather than from a single quaternion closed form — the same asymmetry that the Lie-group article reads as the clean three-dimensional and the less clean four-dimensional parametrisations.
 
 ## The Base Field and the Real Dimension Count
 
@@ -261,7 +261,7 @@ The enveloping algebra is a **luxury of the associative unital case**. The const
 
 1. **The physical assignment.** Which tensor factor of $\mathbb B^{\mathrm e}$ carries the spin and which the internal quantum numbers of the physical Dirac field? The algebra settles the existence of both actions; the assignment is the remaining physical question, and the conserved-current constraint of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* is the natural tool.
 
-2. **The two-sided operators as rank-one elements.** The corpus's two-sided operators $\Theta_{\tilde Q_1}$ are the elementary tensors $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$. Does the corpus's classification of the two-sided operators (self-adjoint, unitary, and the rest) become the classification of elementary tensors by their factors, and does the enveloping algebra give the general operator a decomposition into such elementary pieces?
+2. **The two-sided operators as rank-one elements.** The corpus's two-sided operators $\Theta_{\tilde Q_1}$ are the elementary tensors $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$. Does the corpus's classification of the two-sided operators (self-adjoint, $*$-unitary, and the rest) become the classification of elementary tensors by their factors, and does the enveloping algebra give the general operator a decomposition into such elementary pieces?
 
 3. **The enveloping algebra and the trace.** The trace form $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is the algebra's $\mathbb C$-bilinear pairing. Does it extend to a trace on $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$, and is the resulting trace the one the corpus's spectral article uses on the operators?
 

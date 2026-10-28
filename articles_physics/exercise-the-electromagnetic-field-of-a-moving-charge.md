@@ -392,7 +392,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t'_r)\right)$ | Four-velocity biquaternion, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\tilde{V}/\gamma = ic\,e_t+\vec v(t'_r)$ | Retarded coordinate velocity, the four-velocity divided by $\gamma$ |
 | $iR\,e_t+\vec R$ | Retarded null separation, in $\mathbb{M}_-$ |
-| $\tilde K_{\mathrm{ret}} = \tilde{\nabla}^{\natural}t'_r = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not unitary) |
+| $\tilde K_{\mathrm{ret}} = \tilde{\nabla}^{\natural}t'_r = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary) |
 | $\tilde{\mathcal L}_{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde K_{\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\mathrm{ret}}$ |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |
 | $\vec E_v, \vec E_a$ | Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$ |

@@ -528,6 +528,4 @@ The Jordan decomposition is $A=S+N$ with $S$ semisimple, $N$ nilpotent, $SN=NS$,
 - [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the positive definite form $\operatorname{tr}(A^*B)$.
 - [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the left and right regular modules.
 - [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the multiplicative analogue of the Jordan decomposition.
-- [The Jordan Decomposition](the-jordan-decomposition.html), for the general theory over an algebraically closed field.
-- [The Trace Form](the-trace-form.html), for the invariant bilinear form and the Killing form.
-- [The Symmetric and Alternating Forms](the-symmetric-and-alternating-forms.html), for the decomposition of the space of bilinear forms.
+- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m6c.html), for the Frobenius norm and the definite form.

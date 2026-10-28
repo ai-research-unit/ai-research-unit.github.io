@@ -4,15 +4,15 @@
 
 The dispute over whether "classical entanglement" is genuine entanglement has been argued for over two decades, and it shows no sign of settling. On one side, Eberly and collaborators have argued that entanglement is a **vector-space property** — present in any theory whose states live in a tensor-product vector space — so that there is no essential distinction between quantum and classical entanglement. On the other side, Karimi and Boyd have responded that "entanglement is a property of the quantum world; classical systems need not apply," pointing to the absence of non-locality in the classical cases. Both sides can point to experiments that support their interpretation, and the dispute has become partly substantive and partly terminological.
 
-A recent paper by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024) proposes a way out of this impasse. Their claim is operational: the distinction between quantum and classical non-separability is not in the states, not in the non-locality, not in the number of particles involved, and not in the mathematical non-separability itself. It is in **the operations performed**. Quantum entanglement involves **two projective measurements** on the two partitions of the Hilbert space, producing statistical correlations between their outcomes. Classical non-separability involves **one projective measurement** plus one **unitary filtering or sorting operation**, producing deterministic correlations between the filter setting and the single measurement outcome. The paper presents this as the decisive criterion.
+A recent paper by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024) proposes a way out of this impasse. Their claim is operational: the distinction between quantum and classical non-separability is not in the states, not in the non-locality, not in the number of particles involved, and not in the mathematical non-separability itself. It is in **the operations performed**. Quantum entanglement involves **two projective measurements** on the two partitions of the Hilbert space, producing statistical correlations between their outcomes. Classical non-separability involves **one projective measurement** plus one **$*$-unitary filtering or sorting operation**, producing deterministic correlations between the filter setting and the single measurement outcome. The paper presents this as the decisive criterion.
 
 This article asks a specific question: does the biquaternion framework developed in the companion articles have a natural home for the operational criterion, and if so, does it add anything to it?
 
-The answer to the first part is yes. The framework already distinguishes between two kinds of operation: unitary elements $\tilde Q$ (with $\tilde Q\tilde Q^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
+The answer to the first part is yes. The framework already distinguishes between two kinds of operation: $*$-unitary elements $\tilde Q$ (with $\tilde Q\tilde Q^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
 
 The answer to the second part is a qualified **not yet**. The framework expresses the criterion cleanly, and it suggests a structural reason for *why* the criterion works — the material/informational split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$. But it does not yet predict anything the operational criterion does not already predict, and it does not yet specify the dynamics of the cross-sector coupling that would be needed to make the structural reason a dynamical reason. The framework sharpens the criterion; it does not extend it.
 
-The article is organized as follows. Section 2 presents the operational criterion in the paper's own terms. Section 3 gives the criterion in the framework's language: idempotent/unitary on the two partitions. Section 4 maps the paper's four subsets (I, IIa, IIb, III) to the framework's algebra. Section 5 discusses the *fundamental versus derived* distinction that the framework suggests but the operational criterion does not require. Section 6 states what the framework adds and what remains open. Section 7 concludes.
+The article is organized as follows. Section 2 presents the operational criterion in the paper's own terms. Section 3 gives the criterion in the framework's language: idempotent/$*$-unitary on the two partitions. Section 4 maps the paper's four subsets (I, IIa, IIb, III) to the framework's algebra. Section 5 discusses the *fundamental versus derived* distinction that the framework suggests but the operational criterion does not require. Section 6 states what the framework adds and what remains open. Section 7 concludes.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. Two-qubit states live in $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the tensor-product trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
@@ -24,7 +24,7 @@ Consider a bipartite non-separable state $\tilde{Ϛ}$ on the tensor product $\ma
 
 **Quantum entanglement.** Both partitions support **projective measurements**. A measurement is performed on partition $A$ and a measurement is performed on partition $B$. The two outcomes are correlated statistically, and the correlation function requires an ensemble of runs to be measured. The prototypical example is the singlet state with spin measurements on the two particles: two idempotents, one on each factor, joint statistics from the Hermitian form, read through the trace.
 
-**Classical non-separability.** Only one partition supports a projective measurement. The other partition supports a **unitary filtering, sorting, or basis-choice operation**. The correlation between the filter setting and the single measurement outcome is *deterministic* — the filter setting predetermines the outcome on the other partition, without any statistical distribution. The prototypical example is a vector light beam with transverse spatial mode correlated with polarization: the spatial-mode selection is a unitary operation (a spatial light modulator, a mode sorter), and the polarization measurement outcome is fixed by the spatial-mode choice.
+**Classical non-separability.** Only one partition supports a projective measurement. The other partition supports a **$*$-unitary filtering, sorting, or basis-choice operation**. The correlation between the filter setting and the single measurement outcome is *deterministic* — the filter setting predetermines the outcome on the other partition, without any statistical distribution. The prototypical example is a vector light beam with transverse spatial mode correlated with polarization: the spatial-mode selection is a $*$-unitary operation (a spatial light modulator, a mode sorter), and the polarization measurement outcome is fixed by the spatial-mode choice.
 
 The criterion is operational in the sense that it does not require any prior commitment to what the "objects" in the two partitions are, whether the partitions are spatially separated, or whether the state is "really" non-separable. It requires only that the operations performed on the two partitions be classified.
 
@@ -47,7 +47,7 @@ The paper maps the landscape of non-separable states into four nested subsets (t
 - **Subset I** (two objects): two electrons in a singlet, two photons in orthogonal polarizations. Two idempotents, one per particle. Quantum.
 - **Subset IIa** (one excitation, split by a beam splitter): one photon incident on a beam splitter, with the two output modes individually measurable. Two idempotents, one per output mode. Quantum.
 - **Subset IIb** (one excitation in two degrees of freedom): a single 2D harmonic oscillator, or a trapped ion with internal and motional states. Two idempotents, one per degree of freedom. Quantum.
-- **Subset III** (non-separable mode functions without attached excitations): a vector light beam with mode-and-polarization non-separability. Only one partition supports an idempotent; the other supports only a unitary filter. Classical.
+- **Subset III** (non-separable mode functions without attached excitations): a vector light beam with mode-and-polarization non-separability. Only one partition supports an idempotent; the other supports only a $*$-unitary filter. Classical.
 
 The paper's key move is to treat the "excitation" as the decisive feature. A mode function is a frame for an excitation; it is not itself an excitation. When there are two excitations, or one excitation shared across two measurable output modes, or one excitation in two internal degrees of freedom, there are two idempotents, and the case is quantum. When there is a mode function with no attached excitation, only one idempotent is available, and the case is classical.
 
@@ -55,11 +55,11 @@ The paper's key move is to treat the "excitation" as the decisive feature. A mod
 
 The biquaternion framework has a structural feature that maps directly onto this operational criterion. Two kinds of acting element are distinguished in the algebra:
 
-- **Unitary elements** $\tilde Q \in \mathbb{B}$ satisfy $\tilde Q\tilde Q^{*} = e_t$ and act on states by **rotor conjugation**:
+- **$*$-Unitary elements** $\tilde Q \in \mathbb{B}$ satisfy $\tilde Q\tilde Q^{*} = e_t$ and act on states by **rotor conjugation**:
 $$
 \tilde{Ϛ} \;\longmapsto\; \tilde{U}\,\tilde{Ϛ}\,\tilde{U}^{*}.
 $$
-The action is reversible. The unitary element is a rotor in the sense of geometric algebra, and its conjugation action is the algebraic form of a basis change, a mode rotation, a filter, or a sorter.
+The action is reversible. The $*$-unitary element is a rotor in the sense of geometric algebra, and its conjugation action is the algebraic form of a basis change, a mode rotation, a filter, or a sorter.
 
 - **Idempotent elements** $\tilde\Pi \in \mathbb{M}_+$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and act on states by the **sandwich**:
 $$
@@ -67,7 +67,7 @@ $$
 $$
 The action is irreversible. The idempotent represents a pure state, and its sandwich action is the algebraic form of a projective measurement.
 
-In the companion articles, this dichotomy is presented as a *structural* feature of the algebra: unitary and idempotent elements are the two classes of acting elements, and the reversible/irreversible distinction is read off from the algebra rather than postulated. In the specific setting of non-separability, the dichotomy acquires a direct operational meaning.
+In the companion articles, this dichotomy is presented as a *structural* feature of the algebra: $*$-unitary and idempotent elements are the two classes of acting elements, and the reversible/irreversible distinction is read off from the algebra rather than postulated. In the specific setting of non-separability, the dichotomy acquires a direct operational meaning.
 
 **Quantum entanglement: two idempotents.** A bipartite state $\tilde{Ϛ}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes two projective measurements, one on each partition. The joint probability of outcomes $i,j$ is
 
@@ -77,19 +77,19 @@ $$
 
 where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the normalised Hermitian form of the state with a **product of two idempotents**, read as the trace pairing. The pattern is exactly the one used in *Exercise: The CHSH Inequality and Tsirelson's Bound*, question 4: the Born rule applied twice, with the joint probability being the tensor-product Hermitian form of the state with the joint idempotent, read as the trace pairing. The result is a **statistical correlation** between the two outcomes.
 
-**Classical non-separability: one idempotent, one unitary.** A bipartite state $\tilde{Ϛ}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
+**Classical non-separability: one idempotent, one $*$-unitary.** A bipartite state $\tilde{Ϛ}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one $*$-unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
 
 $$
 p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_t\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde Q_A^{(k)}\otimes e_t\bigr)\circ \tilde{Ϛ}\circ\bigl(\tilde Q_A^{(k){}^{*}}\otimes e_t\bigr)\right),
 $$
 
-using the cyclicity of the trace. This is a **single trace formula**, preceded by a unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde Q_A^{(k)}$ acts only on $A$ and the trace is cyclic:
+using the cyclicity of the trace. This is a **single trace formula**, preceded by a $*$-unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde Q_A^{(k)}$ acts only on $A$ and the trace is cyclic:
 
 $$
 p(j\mid k) = \mathrm{Tr}_{\mathbb{B}}\!\left(\tilde\Pi_B^{(j)}\,\tilde{Ϛ}_B\right), \qquad \tilde{Ϛ}_B = \mathrm{Tr}_A \tilde{Ϛ}.
 $$
 
-The conditional probability is therefore **independent of the filter setting** $k$, and it equals $1$ only when the reduced state $\tilde{Ϛ}_B$ is pure — which makes $\tilde{Ϛ}$ separable. The general formula above gives the conditional probability for any state and any pair of operations, but it does not by itself reproduce the deterministic filter-outcome correlation of the classical configuration: that correlation is a feature of the one-idempotent-one-unitary setup itself, not a consequence of this trace formula.
+The conditional probability is therefore **independent of the filter setting** $k$, and it equals $1$ only when the reduced state $\tilde{Ϛ}_B$ is pure — which makes $\tilde{Ϛ}$ separable. The general formula above gives the conditional probability for any state and any pair of operations, but it does not by itself reproduce the deterministic filter-outcome correlation of the classical configuration: that correlation is a feature of the one-idempotent-one-$*$-unitary setup itself, not a consequence of this trace formula.
 
 The distinction in the framework's notation is therefore:
 
@@ -97,7 +97,7 @@ $$
 \boxed{\;\text{Quantum: } \tilde\Pi_A \otimes \tilde\Pi_B \qquad\qquad \text{Classical: } \tilde Q_A \otimes \tilde\Pi_B\;}.
 $$
 
-Two idempotents, or one idempotent and one unitary. The framework's reversible/irreversible dichotomy is the operational criterion, stated in the framework's native vocabulary.
+Two idempotents, or one idempotent and one $*$-unitary. The framework's reversible/irreversible dichotomy is the operational criterion, stated in the framework's native vocabulary.
 
 This is not a coincidence. It is a structural fact of the algebra: the two kinds of acting element are distinguished by their algebraic properties ($\tilde{U}\tilde{U}^{*} = e_t$ vs. $\tilde\Pi^2 = \tilde\Pi$), and their physical roles (reversible evolution vs. irreversible measurement) follow from these properties. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs is thus the *physical content*, in the setting of non-separability, of an algebraic distinction that the framework already contains.
 
@@ -139,9 +139,9 @@ The case is a vector light beam with a non-separable structure between its trans
 
 In the framework, the mode functions are **not** states of $\mathbb{M}_+$. A mode function is a frame, a basis vector, a degree of freedom; it is not an excitation, and it does not have a canonical sector assignment. A complex field configuration decomposes into a real part (in $\mathbb{M}_-$) and an imaginary part (in $\mathbb{M}_+$), but the mode function per se is a structural feature of the field, not a state of either sector.
 
-This means only one partition supports an idempotent. The polarization mode carries the excitation, and a projective measurement on polarization is possible: an idempotent $\tilde\Pi_B^{(H)}$ or $\tilde\Pi_B^{(V)}$. The spatial mode does not carry an excitation, and no idempotent acts on it. The operation on the spatial mode is a unitary filter — a mode sorter, a spatial light modulator, a basis choice — which corresponds to a unitary element $\tilde Q_A$.
+This means only one partition supports an idempotent. The polarization mode carries the excitation, and a projective measurement on polarization is possible: an idempotent $\tilde\Pi_B^{(H)}$ or $\tilde\Pi_B^{(V)}$. The spatial mode does not carry an excitation, and no idempotent acts on it. The operation on the spatial mode is a $*$-unitary filter — a mode sorter, a spatial light modulator, a basis choice — which corresponds to a $*$-unitary element $\tilde Q_A$.
 
-The framework reads this case as classical: one idempotent, one unitary.
+The framework reads this case as classical: one idempotent, one $*$-unitary.
 
 The paper's distinction between "mode functions" and "excitations" is thus given a natural home in the framework: an excitation is a state of $\mathbb{M}_+$; a mode function is not. The framework's split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ is the algebraic expression of the paper's observation that mode functions and excitations are different kinds of object.
 
@@ -174,7 +174,7 @@ The structural refinement is not part of the paper's criterion, and the paper do
 
 ### What the framework adds
 
-**1. A natural algebraic home for the criterion.** The operational criterion — count the idempotents applied to the two partitions — is the framework's reversible/irreversible dichotomy, applied to non-separable states. The framework already distinguishes unitary from idempotent acting elements for independent reasons, and the operational criterion emerges as the **physical interpretation** of this algebraic distinction in the specific setting of non-separability.
+**1. A natural algebraic home for the criterion.** The operational criterion — count the idempotents applied to the two partitions — is the framework's reversible/irreversible dichotomy, applied to non-separable states. The framework already distinguishes $*$-unitary from idempotent acting elements for independent reasons, and the operational criterion emerges as the **physical interpretation** of this algebraic distinction in the specific setting of non-separability.
 
 **2. A structural reason for the criterion.** The framework suggests that the count of idempotents reflects whether the non-separable element is fundamental (quantum) or derived (classical). This is not required by the operational criterion, and the criterion does not depend on it, but it gives the criterion a structural interpretation in terms of the material/informational split of the algebra.
 
@@ -192,7 +192,7 @@ The structural refinement is not part of the paper's criterion, and the paper do
 
 ## Summary
 
-Korolkova, Sánchez-Soto, and Leuchs propose an operational criterion for the quantum–classical divide in non-separability: two idempotents is quantum, one idempotent and one unitary is classical. The biquaternion framework has a natural home for this criterion in its reversible/irreversible dichotomy — unitary elements vs. idempotent elements of the algebra — and it expresses the criterion in its native vocabulary.
+Korolkova, Sánchez-Soto, and Leuchs propose an operational criterion for the quantum–classical divide in non-separability: two idempotents is quantum, one idempotent and one $*$-unitary is classical. The biquaternion framework has a natural home for this criterion in its reversible/irreversible dichotomy — $*$-unitary elements vs. idempotent elements of the algebra — and it expresses the criterion in its native vocabulary.
 
 Beyond expressing the criterion, the framework suggests a *structural reason* for it: the count of idempotents reflects whether the non-separable element is a fundamental state of the informational sector (quantum) or a derived coherence matrix of a deeper classical field configuration in the material sector (classical). This structural interpretation is not required by the operational criterion, but it is the framework's way of interpreting why the criterion holds.
 
@@ -209,11 +209,11 @@ The paper and the framework are complementary. The paper tells us what to look f
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde\Pi_A^{(i)}, \tilde\Pi_B^{(j)}$ | Idempotents on partitions $A,B$ (measurements) |
-| $\tilde Q_A^{(k)}$ | Unitary on partition $A$ (filter, sorter, basis choice) |
+| $\tilde Q_A^{(k)}$ | $*$-Unitary on partition $A$ (filter, sorter, basis choice) |
 | $p(i,j) = \operatorname{Tr}((\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)})\circ \tilde{Ϛ})$ | Joint probability, quantum case (trace reading at normalisation) |
 | $p(j\mid k) = \mathrm{Tr}((e_t\otimes \tilde\Pi_B^{(j)})\circ(\tilde Q_A^{(k)}\otimes e_t)\circ \tilde{Ϛ}\circ(\tilde Q_A^{(k){}^{*}}\otimes e_t))$ | Conditional probability, classical case |
 | $\tilde\Pi_A \otimes \tilde\Pi_B$ | Quantum: two idempotents, statistical correlation |
-| $\tilde Q_A \otimes \tilde\Pi_B$ | Classical: one idempotent, one unitary |
+| $\tilde Q_A \otimes \tilde\Pi_B$ | Classical: one idempotent, one $*$-unitary |
 | $W_{ij} = \langle E_i^* E_j\rangle$ | Coherence matrix (derived element) |
 | Fundamental element | Joint state of $\mathbb{M}_+^{\otimes n}$ (quantum) |
 | Derived element | Coherence matrix from a classical field configuration (classical) |

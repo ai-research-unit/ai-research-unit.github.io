@@ -370,7 +370,7 @@ $$
 \lVert\vec U\rVert_E^2\ge1,
 $$
 
-with equality exactly when the element is normal: $\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$, with $\tilde X^*=\overline{\tilde X^\natural}$ (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*). The flow is unitary for the Hermitian form exactly when $Q_t\in i\mathbb{R}$ and $\vec Q\in\mathbb{R}^3$ — the massless material case — and self-adjoint exactly when $Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$. Spectral regularity, not invertibility, is what the Fourier dictionary needs.
+with equality exactly when the element is normal: $\tilde Q\tilde Q^*=\tilde Q^*\tilde Q$, with $\tilde X^*=\overline{\tilde X^\natural}$ (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*). The flow is $*$-unitary for the Hermitian form exactly when $Q_t\in i\mathbb{R}$ and $\vec Q\in\mathbb{R}^3$ — the massless material case — and self-adjoint exactly when $Q_t\in\mathbb{R}$ and $\vec Q\in i\mathbb{R}^3$. Spectral regularity, not invertibility, is what the Fourier dictionary needs.
 
 **Polar decomposition.** The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$, so the modulus–unit polar decomposition of *The Polar Decomposition of a N-Regular Biquaternion* has no value on the sector. The failure is caused by the norm, not by the spectrum.
 

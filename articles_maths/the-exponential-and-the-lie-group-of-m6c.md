@@ -24,7 +24,7 @@ $$
 
 and the eigenvalues of $e^X$ are $e^{\lambda_1},\dots,e^{\lambda_6}$.
 
-The article assumes the Jordan form of *The Element, the Coordinates and the Trace* and the unitary group of *The Involution and the Hermitian Structure*. It uses the holomorphic functional calculus of *Spectral Theory and the Spectral Projectors*. The polar decomposition is *The Polar Decomposition*; the topology of the group is *The Topology of $M_6(\mathbb{C})$*.
+The article assumes the Jordan form of *The Element, the Coordinates and the Trace* and the $*$-unitary group of *The Involution and the Hermitian Structure*. It uses the holomorphic functional calculus of *Spectral Theory and the Spectral Projectors*. The polar decomposition is *The Polar Decomposition*; the topology of the group is *The Topology of $M_6(\mathbb{C})$*.
 
 ## The Exponential
 
@@ -118,7 +118,7 @@ defined by the Dunford calculus with the principal branch of the logarithm.
 
 **Proof.** The principal logarithm is holomorphic on $\mathbb{C}\setminus(-\infty,0]$; the Dunford calculus applies; the spectral mapping gives $e^{\log A}=A$; the spectrum condition fixes the branch.
 
-**Corollary (the branch ambiguity).** The logarithm is not unique. For a diagonalizable $A$ with eigenvalues $\lambda_i$, the logarithms are
+**Corollary (the branch ambiguity).** The logarithm is not unique. For a diagonalizable $A$ with distinct eigenvalues $\lambda_i$, the logarithms are
 
 $$
 X_0+2\pi\mathrm i\,\operatorname{diag}(k_1,\dots,k_6)
@@ -212,9 +212,9 @@ $$
 
 **Proof.** A complex $n\times n$ matrix has $2n^2$ real parameters; a real one has $n^2$.
 
-### The Special Unitary Algebra
+### The Special $*$-Unitary Algebra
 
-**Definition.** The **special unitary algebra** is
+**Definition.** The **special $*$-unitary algebra** is
 
 $$
 \mathfrak{su}(6)=\{X\in M_6(\mathbb{C}):X^*=-X,\ \operatorname{tr}X=0\}.
@@ -272,7 +272,7 @@ $$
 
 **Proof.** The eigenvalues of $e^X$ are $e^{\lambda_i}$ with the algebraic multiplicities; the trace is the sum and the determinant the product.
 
-**Corollary (the real eigenvalues).** If $X$ is Hermitian, $e^X$ is Hermitian positive definite; if $X$ is skew-Hermitian, $e^X$ is unitary.
+**Corollary (the real eigenvalues).** If $X$ is Hermitian, $e^X$ is Hermitian positive definite; if $X$ is skew-Hermitian, $e^X$ is $*$-unitary.
 
 **Proof.** The spectral theorem; the exponential acts on the eigenvalues by $e^{\lambda}$.
 
@@ -378,10 +378,9 @@ and the eigenvalues of $e^X$ are $e^{\lambda_i}$.
 ## Further Reading
 
 - [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m6c.html), for the Jordan form.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the unitary and special unitary groups.
+- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the $*$-unitary and special $*$-unitary groups.
 - [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the Dunford calculus and the principal logarithm.
 - [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the exponential form $A=Ue^H$.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the Lie algebra and its derivations.
 - [The Topology of $M_6(\mathbb{C})$](the-topology-of-m6c.html), for the fundamental group and the center.
-- [The Exponential Map](the-exponential-map.html), for the general theory of the Lie group exponential.
-- [The Baker–Campbell–Hausdorff Formula](the-baker-campbell-hausdorff-formula.html), for the BCH series.
+- [Analysis on $M_6(\mathbb{C})$](analysis-on-m6c.html), for the exponential as a holomorphic map and its differential.

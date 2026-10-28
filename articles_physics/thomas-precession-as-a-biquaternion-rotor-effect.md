@@ -367,7 +367,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 
 - L. H. Thomas, "The motion of the spinning electron," *Nature* **117** (1926) 514, for the original resolution of the spin–orbit factor of two.
 - L. H. Thomas, "The kinematics of an electron with an axis," *Philosophical Magazine* **3** (1927) 1–22, for the kinematic derivation of the precession that bears his name.
-- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the composition of Lorentz transformations and the rotation that accompanies it.
+- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the composition of Lorentz transformations and the rotation that accompanies it.
 - V. Bargmann, L. Michel, and V. L. Telegdi, "Precession of the polarization of particles moving in a homogeneous electromagnetic field," *Physical Review Letters* **2** (1959) 435–436, for the covariant spin equation whose kinematic part is the Thomas precession.
 - L. D. Landau and E. M. Lifshitz, *The Classical Theory of Fields* (Pergamon, 1975), for the relativistic kinematics and the precession of a spinning particle.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for the composition of Lorentz transformations, the Thomas precession, and its role in the spin–orbit coupling.

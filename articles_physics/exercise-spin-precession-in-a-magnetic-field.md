@@ -169,7 +169,7 @@ The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expec
 
 **2. The evolution operator is a unit-norm biquaternion.** The exponential $\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde{H}$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a **rotor** in the sense of geometric algebra.
 
-**3. The state evolves by rotor conjugation.** The evolved state is $\tilde{Ϛ}(t') = \tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.
+**3. The state evolves by rotor conjugation.** The evolved state is $\tilde{Ϛ}(t') = \tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.
 
 **4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{Ϛ}(t') = \frac{1}{2}(e_t + i\vec r(t'))$ with
 
@@ -194,7 +194,7 @@ whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}(t')\tilde{S}_x)$, the same 
 | | Measuring Spin Along an Arbitrary Direction | Spin Precession in a Magnetic Field |
 |---|---|---|
 | Physical process | Measurement | Time evolution |
-| Structural object | Idempotent (state) + idempotent (projector) | Idempotent (state) + unitary (evolution) |
+| Structural object | Idempotent (state) + idempotent (projector) | Idempotent (state) + $*$-unitary (evolution) |
 | Rule used | Trace reading at normalisation (Born rule) | Trace formula (expectation value) |
 | Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t')$ |
 

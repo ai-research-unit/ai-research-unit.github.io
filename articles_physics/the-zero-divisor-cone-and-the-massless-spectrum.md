@@ -179,9 +179,9 @@ $$
 
 and the two projections of $\tilde Q_0$ are rank-one Hermitian idempotents, the pure states of the algebra. The positive factor is a scaled pure state, not a scalar.
 
-This is the sharpest statement the cone admits. The boundary value of the word depends on the path; the generalized pair does not. The pair is canonical, and it is the limit that keeps the two lines when the unitary factor loses rank. What the cone does not have is a four-factor word, a logarithm and a continuous unitary phase; what it has is the two-factor pairing with a partial isometry.
+This is the sharpest statement the cone admits. The boundary value of the word depends on the path; the generalized pair does not. The pair is canonical, and it is the limit that keeps the two lines when the $*$-unitary factor loses rank. What the cone does not have is a four-factor word, a logarithm and a continuous $*$-unitary phase; what it has is the two-factor pairing with a partial isometry.
 
-**The reading.** The positive factor is the state on the cone, and the second factor is the isometry between the initial and final lines. The unitary phase of the invertible case has collapsed to a transition between two pure states. The rank drop is the lost reversible part.
+**The reading.** The positive factor is the state on the cone, and the second factor is the isometry between the initial and final lines. The $*$-unitary phase of the invertible case has collapsed to a transition between two pure states. The rank drop is the lost reversible part.
 
 **The boundary.** The pair is canonical only with the two projection conditions and the range condition on $\tilde Q_H$. Without them the decomposition is not unique: $(\tilde\Pi,e_t)$ multiplies to $\tilde\Pi$ and is excluded because $e_t$ has the wrong projections. The generalized pairing is also not the four factors regrouped; the scale, the phase, the boost and the rotor do not exist on the cone.
 

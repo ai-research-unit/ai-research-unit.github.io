@@ -4,7 +4,7 @@
 
 Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ be the biquaternion algebra with the Hermitian conjugation ${}^{*}$, fixed space $\mathbb{M}_+$ and anti-fixed space $\mathbb{M}_-$. This article is the biquaternion instance of *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and the companion of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*: that article studies the operator $\tilde Q_1\mapsto \tilde Q_1\tilde Q_2\tilde Q_1^{*}$ on the algebra, this one studies the **forms** on which the congruence $H\mapsto S^{*}HS$ acts, that is, the objects the two-sided operators are made to transform.
 
-The results are the classical ones of a positive involution, made explicit in the matrix model: a Hermitian form on the algebra is a Hermitian matrix, congruence is the dagger congruence, **the invariant is the inertia** (Sylvester's law), every form is congruent to its normal form $\mathrm{diag}(1_{n},-1_{m},0_{r})$, the automorphism group of the unit form is the unitary slice $U=\mathrm{U}(2)$, and the forms modulo the hyperbolic ones form the **unitary Witt group** $W\cong\mathbb{Z}$, the invariant being the signature. Four facts of the algebra enter and none is special: the algebra is simple, the involution is positive, the centre is $\mathbb{C}$, and the rank-one module over the algebra is $\mathbb{C}^{2}$ in the matrix model.
+The results are the classical ones of a positive involution, made explicit in the matrix model: a Hermitian form on the algebra is a Hermitian matrix, congruence is the dagger congruence, **the invariant is the inertia** (Sylvester's law), every form is congruent to its normal form $\mathrm{diag}(1_{n},-1_{m},0_{r})$, the automorphism group of the unit form is the $*$-unitary slice $U=\mathrm{U}(2)$, and the forms modulo the hyperbolic ones form the **$*$-unitary Witt group** $W\cong\mathbb{Z}$, the invariant being the signature. Four facts of the algebra enter and none is special: the algebra is simple, the involution is positive, the centre is $\mathbb{C}$, and the rank-one module over the algebra is $\mathbb{C}^{2}$ in the matrix model.
 
 ## Hermitian Forms on the Algebra
 
@@ -46,9 +46,9 @@ $$
 \mathrm{U}(e_{t}) = \{\,S : S^{*}S=e_{t}\,\} = U ,
 $$
 
-the **unitary slice**, of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*).
+the **$*$-unitary slice**, of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*).
 
-**Proposition (the slice acts by automorphisms and by congruence-preserving maps).** For $S\in U$ the operator $\Theta_{S}$ is unitary, an algebra automorphism and, on the Hermitian elements, a congruence that preserves the unit form; more generally $\mathrm{U}(H)$ is a subgroup of $\mathbb{B}^{\times}$ conjugate to $\mathrm{U}(e_{t})$ by any $S$ with $S^{*}H S$ the normal form of $\langle\cdot,\cdot\rangle_{*}$.
+**Proposition (the slice acts by automorphisms and by congruence-preserving maps).** For $S\in U$ the operator $\Theta_{S}$ is $*$-unitary, an algebra automorphism and, on the Hermitian elements, a congruence that preserves the unit form; more generally $\mathrm{U}(H)$ is a subgroup of $\mathbb{B}^{\times}$ conjugate to $\mathrm{U}(e_{t})$ by any $S$ with $S^{*}H S$ the normal form of $\langle\cdot,\cdot\rangle_{*}$.
 
 *Proof.* The automorphism and unitarity statements are the theorems of the two-sided operators; for the last, if $T^{*}HT$ is the normal form of $\langle\cdot,\cdot\rangle_{*}$ then $\mathrm{U}(H)=T^{-1}\mathrm{U}(e_{t})T$ up to the null directions, since $S^{*}HS=H$ is equivalent to $(TST^{-1})^{*}(T^{*}HT)(TST^{-1})=T^{*}HT$.
 
@@ -68,7 +68,7 @@ $$
 H \sim \mathrm{diag}\bigl(1_{n},\,-1_{m},\,0_{r}\bigr),\qquad (n,m,r)=\mathrm{inertia}(H).
 $$
 
-*Proof.* In the matrix model, $\langle\cdot,\cdot\rangle_{*}$ is Hermitian, so there is a unitary $V$ with $V^{*}HV=\mathrm{diag}(\lambda_{1},\lambda_{2})$, $\lambda_{i}\in\mathbb{R}$; the scalings $1/\sqrt{|\lambda_{i}|}$ on the nonzero directions give the normal form, and $S^{*}HS$ is Hermitian with the same signature by the inertia theorem for Hermitian matrices. The statement was verified on random Hermitian pairs with random invertible $S$, and the normal form was constructed explicitly from the eigenbasis.
+*Proof.* In the matrix model, $\langle\cdot,\cdot\rangle_{*}$ is Hermitian, so there is a $*$-unitary $V$ with $V^{*}HV=\mathrm{diag}(\lambda_{1},\lambda_{2})$, $\lambda_{i}\in\mathbb{R}$; the scalings $1/\sqrt{|\lambda_{i}|}$ on the nonzero directions give the normal form, and $S^{*}HS$ is Hermitian with the same signature by the inertia theorem for Hermitian matrices. The statement was verified on random Hermitian pairs with random invertible $S$, and the normal form was constructed explicitly from the eigenbasis.
 
 **Corollary (additivity and the rank).** The signature $\sigma(H)=n-m$ and the rank $n+m$ are additive under the orthogonal sum,
 
@@ -78,7 +78,7 @@ $$
 
 and the inertia of the orthogonal sum is the sum of the inertias.
 
-## The Classification and the Unitary Witt Group
+## The Classification and the $*$-Unitary Witt Group
 
 **Theorem (the classification on the rank-one module).** The congruence classes of the Hermitian forms on the rank-one module over $\mathbb{B}$ are exactly the inertias with $n+m+r=2$:
 
@@ -94,7 +94,7 @@ $$
 
 is the **hyperbolic plane**; the forms of inertia $(p+k,q+k,r)$ that are orthogonal sums of a form with the hyperbolic plane are **hyperbolic**. A non-degenerate form with $n=m$ is hyperbolic.
 
-**Definition (the unitary Witt group).** On the non-degenerate Hermitian forms, call two forms **Witt equivalent** if they become congruent after adding hyperbolic planes to each. The classes form the **unitary Witt group** $W(\mathbb{B},{}^{*})$ under the orthogonal sum, the inverse of a class being given by the negation of the form.
+**Definition (the $*$-unitary Witt group).** On the non-degenerate Hermitian forms, call two forms **Witt equivalent** if they become congruent after adding hyperbolic planes to each. The classes form the **$*$-unitary Witt group** $W(\mathbb{B},{}^{*})$ under the orthogonal sum, the inverse of a class being given by the negation of the form.
 
 **Theorem (the Witt group of the biquaternion algebra is $\mathbb{Z}$).** The signature is a complete invariant of the Witt class, and
 
@@ -116,13 +116,13 @@ $$\boxed{\; W(\mathbb{B},{}^{*}) \;\cong\; \mathbb{Z},\qquad \text{generated by 
 
 **The congruence by a two-sided operator.** For $S=e_{t}+\vec e_x$, of determinant two and invertible, and $\langle\cdot,\cdot\rangle_{*}=\mathrm{diag}(1,-1)$, the congruent form $S^{*}HS$ has the same inertia $(1,1,0)$. For $S$ a null element, $\langle S,S\rangle_{\natural}=0$, $S$ is not invertible and the congruence is not an equivalence: the form $\mathrm{diag}(1,0)$ is reached, and the rank drops. This is the algebraic content of the collapse worked in *Two-Sided Operators on the General Plain Sesqualgebra*.
 
-**The automorphism group of the unit form.** $\mathrm{U}(e_{t})=\mathrm{U}(2)$: the maps $S$ with $S^{*}S=e_{t}$, exactly the unitary slice, of real dimension four. The automorphism group of the hyperbolic plane $\mathrm{diag}(1,-1)$ is $\mathrm{U}(1,1)$, indefinite, of real dimension four as well: the two forms have automorphism groups of the same dimension though the groups themselves differ, which is the group-level shadow of the difference of the signatures.
+**The automorphism group of the unit form.** $\mathrm{U}(e_{t})=\mathrm{U}(2)$: the maps $S$ with $S^{*}S=e_{t}$, exactly the $*$-unitary slice, of real dimension four. The automorphism group of the hyperbolic plane $\mathrm{diag}(1,-1)$ is $\mathrm{U}(1,1)$, indefinite, of real dimension four as well: the two forms have automorphism groups of the same dimension though the groups themselves differ, which is the group-level shadow of the difference of the signatures.
 
 **The Witt class of a sum.** $\mathrm{diag}(1,1)\oplus\mathrm{diag}(-1,-1)$ has signature zero, hence is hyperbolic, hence is the zero Witt class, even though each summand is non-degenerate: this is the collapse that the Witt group performs and the inertia does not.
 
 ## Summary
 
-A Hermitian form on the rank-one module over the biquaternion algebra is a Hermitian matrix $\langle\cdot,\cdot\rangle_{*}$, $h_{H}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}H\tilde Q_2$; congruence $H\mapsto S^{*}HS$ is the two-sided operator of the corpus applied to the form, and its equivalence classes are the **inertias** $(n,m,r)$ with $n+m+r=2$, by **Sylvester's law**, with normal form $\mathrm{diag}(1_{n},-1_{m},0_{r})$. The signature $\sigma=n-m$ and the rank are additive under the orthogonal sum. The automorphism group of the unit form $h_{e_{t}}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}\tilde Q_2$ is the unitary slice $U=\mathrm{U}(2)$, and the group of the quaternion norm is a different group, because the two forms are of different types. The hyperbolic plane $\mathrm{diag}(1,-1)$ is the null form of the Witt theory, and the non-degenerate forms modulo the hyperbolic ones form the **unitary Witt group $W(\mathbb{B},{}^{*})\cong\mathbb{Z}$**, generated by the unit form and computed by the signature. The $\varepsilon$-Hermitian case is the signed analogue, with the same inertia theory because the twist is an isomorphism of the Hermitian cone.
+A Hermitian form on the rank-one module over the biquaternion algebra is a Hermitian matrix $\langle\cdot,\cdot\rangle_{*}$, $h_{H}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}H\tilde Q_2$; congruence $H\mapsto S^{*}HS$ is the two-sided operator of the corpus applied to the form, and its equivalence classes are the **inertias** $(n,m,r)$ with $n+m+r=2$, by **Sylvester's law**, with normal form $\mathrm{diag}(1_{n},-1_{m},0_{r})$. The signature $\sigma=n-m$ and the rank are additive under the orthogonal sum. The automorphism group of the unit form $h_{e_{t}}(\tilde Q_1,\tilde Q_2)=\tilde Q_1^{*}\tilde Q_2$ is the $*$-unitary slice $U=\mathrm{U}(2)$, and the group of the quaternion norm is a different group, because the two forms are of different types. The hyperbolic plane $\mathrm{diag}(1,-1)$ is the null form of the Witt theory, and the non-degenerate forms modulo the hyperbolic ones form the **$*$-unitary Witt group $W(\mathbb{B},{}^{*})\cong\mathbb{Z}$**, generated by the unit form and computed by the signature. The $\varepsilon$-Hermitian case is the signed analogue, with the same inertia theory because the twist is an isomorphism of the Hermitian cone.
 
 ## Summary of Notation
 
@@ -137,7 +137,7 @@ A Hermitian form on the rank-one module over the biquaternion algebra is a Hermi
 | $\mathrm{Hyp}=\mathrm{diag}(1,-1)$ | The hyperbolic plane; signature $0$, Witt class $0$ |
 | $\mathrm{U}(H)=\{S:S^{*}HS=H\}$ | Automorphism group; $\mathrm{U}(e_{t})=\mathrm{U}(2)$ |
 | $\sigma=n-m$ | Signature; complete invariant of the Witt class |
-| $W(\mathbb{B},{}^{*})\cong\mathbb{Z}$ | The unitary Witt group, generated by the unit form |
+| $W(\mathbb{B},{}^{*})\cong\mathbb{Z}$ | The $*$-unitary Witt group, generated by the unit form |
 
 ## Further Reading
 

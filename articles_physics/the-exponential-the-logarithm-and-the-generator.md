@@ -183,7 +183,7 @@ The algebra therefore answers the question in one direction only. It supplies th
 
 ## Physical Readings
 
-- **The generator is the logarithm of the process.** A reversible evolution is a unit, and its generator is the element whose exponential it is. The reading is the Hamiltonian when the process is unitary and the boost or rotation exponent when it is a frame change.
+- **The generator is the logarithm of the process.** A reversible evolution is a unit, and its generator is the element whose exponential it is. The reading is the Hamiltonian when the process is $*$-unitary and the boost or rotation exponent when it is a frame change.
 - **The kernel is the gauge.** A global phase, a full rotation and a parity-matched half-shift produce the same process. The reading is that the generator is a coordinate, and the coordinate is not the process.
 - **The cone is the wall of reversibility.** A zero divisor cannot be exponentiated back to the identity. The reading is that a process on the cone has no continuous inverse inside the algebra.
 - **The parity lattice is the phase ambiguity, not a thermal spectrum.** The lattice $L$ is the kernel on the diagonal part, and it is not the Matsubara lattice. The reading is a gauge ambiguity, and the two must not be identified.

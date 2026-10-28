@@ -12,7 +12,7 @@ passes from one to the other. That dictionary was built in *Roots, Idempotents a
 
 Six interpretations are developed: contextuality, positive operator-valued measures, error-correcting code spaces, mutually unbiased bases, teleportation, and entanglement, which is a property of the tensor square rather than a new product. A seventh statement is a boundary rather than an interpretation: the defining module is the two-dimensional spin-$\tfrac12$ representation and is irreducible, so the carrier has no spin-zero ray.
 
-The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composites are tensor powers. The article owns no theorem. The classification of idempotents, the Peirce decomposition, the plain form and the unitary group are stated in the mathematics articles linked below, and the identities that the article uses are either standard or verified in two or three lines.
+The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composites are tensor powers. The article owns no theorem. The classification of idempotents, the Peirce decomposition, the plain form and the $*$-unitary group are stated in the mathematics articles linked below, and the identities that the article uses are either standard or verified in two or three lines.
 
 ## The Results It Uses
 
@@ -22,7 +22,7 @@ The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composit
 | Orthogonality, completeness, primitivity and the Peirce decomposition | [The Peirce Decomposition](../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html) |
 | The positive cone, the order interval and its extreme points | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
 | The plain form and the Hilbert–Schmidt pairing (the same on $\mathbb{M}_+$, with $\operatorname{Tr}=2\operatorname{Sc}$) | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
-| The unitary group and the matrix-unitary condition | [The Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html) |
+| The $*$-unitary group and the matrix-unitary condition | [The Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html) |
 | The tensor product and the isomorphism $M_m\otimes M_n\cong M_{mn}$ | [Tensor Products of Algebras](../articles_maths/tensor-products-of-algebras.html) |
 
 ## Contexts and the Kochen–Specker Obstruction
@@ -146,11 +146,11 @@ $$
 \qquad \epsilon_1\epsilon_2\epsilon_3=+1\;}.
 $$
 
-Each is Hermitian, idempotent and of trace one; the four are pairwise orthogonal and sum to $e_t\otimes e_t$; the partial trace of each is the maximally mixed state $\tfrac12 e_t$. The identities follow from $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$: distinct signs give a traceless product, the trace of each is $2^2/4=1$, and tracing the second factor leaves $\tfrac12e_t$. None is unitary, since $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\ne e_t\otimes e_t$.
+Each is Hermitian, idempotent and of trace one; the four are pairwise orthogonal and sum to $e_t\otimes e_t$; the partial trace of each is the maximally mixed state $\tfrac12 e_t$. The identities follow from $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$: distinct signs give a traceless product, the trace of each is $2^2/4=1$, and tracing the second factor leaves $\tfrac12e_t$. None is $*$-unitary, since $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\ne e_t\otimes e_t$.
 
-The protocol uses three qubits. Alice holds the unknown state, the pair is in the state $\tilde\Pi_{\Phi^+}$, she measures the Bell basis on her two qubits, and the four outcomes occur with probability $\tfrac14$. Each outcome leaves Bob's qubit in a unitary image of the unknown state, and the correction is one of the four Pauli gates $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, up to a phase. With the outcome record and the correction, the net map is the identity channel; without the record, Bob's state is $\tfrac12e_t$ and nothing is transferred. Alice's two qubits are left in a Bell state, so each of her qubits is maximally mixed and no copy of the unknown state survives.
+The protocol uses three qubits. Alice holds the unknown state, the pair is in the state $\tilde\Pi_{\Phi^+}$, she measures the Bell basis on her two qubits, and the four outcomes occur with probability $\tfrac14$. Each outcome leaves Bob's qubit in a $*$-unitary image of the unknown state, and the correction is one of the four Pauli gates $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, up to a phase. With the outcome record and the correction, the net map is the identity channel; without the record, Bob's state is $\tfrac12e_t$ and nothing is transferred. Alice's two qubits are left in a Bell state, so each of her qubits is maximally mixed and no copy of the unknown state survives.
 
-**Interpretation.** The resource and the measurement are idempotents; the corrections are unitaries. Teleportation is the clearest place where the two classes of acting element are forced apart: an idempotent is a definite outcome and is not reversible, a unitary is reversible and is not an outcome. The Bell idempotents are the canonical idempotent basis of the two-qubit algebra relative to the tensor structure, and the protocol is their operational interpretation.
+**Interpretation.** The resource and the measurement are idempotents; the corrections are unitaries. Teleportation is the clearest place where the two classes of acting element are forced apart: an idempotent is a definite outcome and is not reversible, a $*$-unitary is reversible and is not an outcome. The Bell idempotents are the canonical idempotent basis of the two-qubit algebra relative to the tensor structure, and the protocol is their operational interpretation.
 
 **Boundary.** The two classical bits are not an element of the algebra. The protocol is the algebra plus a classical channel, and the channel is where the non-algebraic step sits. The tensor-product arena is assumed, not derived.
 
@@ -174,7 +174,7 @@ The partial trace is not one of the four products. It uses the trace pairing on 
 
 ## Physical Interpretations
 
-The six interpretations share one theme: the idempotent is the native object of measurement and of the state, and the unitary is the native object of motion; entanglement adds no new object of that kind, only a property of the tensor square.
+The six interpretations share one theme: the idempotent is the native object of measurement and of the state, and the $*$-unitary is the native object of motion; entanglement adds no new object of that kind, only a property of the tensor square.
 
 - **Contextuality** reads a context as a maximal commutative subalgebra and its outcomes as idempotents; the obstruction is the failure of one value table to serve all contexts, and it appears only on a composite.
 - **POVMs** read a measurement as a resolution of the identity into effects; the sharp effects are the idempotents, and the soft ones are their convex combinations.
@@ -219,7 +219,7 @@ The nontrivial Hermitian idempotents are the pure states and the Hermitian roots
 - [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification, the halving map and the pair map.
 - [The Peirce Decomposition](../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for orthogonality, primitivity and the Peirce components.
 - [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html), for the order interval and its extreme points.
-- [The Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), for the unitary group and the matrix-unitary condition.
+- [The Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), for the $*$-unitary group and the matrix-unitary condition.
 - [Tensor Products of Algebras](../articles_maths/tensor-products-of-algebras.html), for $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$.
 - [Roots, Idempotents and Observables](roots-idempotents-and-observables.html), for the state-observable dictionary read at length.
 - [Contextuality and the Kochen–Specker Theorem in Biquaternionic Form](contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form.html), for the magic square and the value assignments.

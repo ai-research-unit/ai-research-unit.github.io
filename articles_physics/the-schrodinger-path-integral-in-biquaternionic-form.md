@@ -4,7 +4,7 @@
 
 The path integral is the third formulation of the same quantum dynamics, alongside the state-vector equation and the operator algebra. It represents the transition amplitude as a sum over histories weighted by the phase $\exp(iS/\hbar)$, and it makes the classical limit, the semiclassical expansion, and the fluctuation determinants visible in a way the operator formalism does not. This article derives the **Schrödinger path integral** from the biquaternion state-vector equation and evaluates the two kernels that can be computed exactly: the free particle and the harmonic oscillator.
 
-The division of labour with the companion article *The Path Integral in Biquaternionic Form* should be stated at once. That article analyses the **algebraic status of the phase**: it shows that the imaginary unit in $\exp(iS/\hbar)$ is the central scalar imaginary, that the phase exponent lies in the material sector $\mathbb{M}_-$, that the phase is a central unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis. It takes the centrality of the phase as established, and does the complementary work: it derives the kernel from the evolution operator, constructs the short-time kernel and the Trotter product, and evaluates the free and oscillator propagators exactly, showing at every step that the kernel is a central element and that the module factor is a spectator.
+The division of labour with the companion article *The Path Integral in Biquaternionic Form* should be stated at once. That article analyses the **algebraic status of the phase**: it shows that the imaginary unit in $\exp(iS/\hbar)$ is the central scalar imaginary, that the phase exponent lies in the material sector $\mathbb{M}_-$, that the phase is a central $*$-unitary element, and that a non-central root would produce a spin rotation rather than a global phase. This article does not repeat that analysis. It takes the centrality of the phase as established, and does the complementary work: it derives the kernel from the evolution operator, constructs the short-time kernel and the Trotter product, and evaluates the free and oscillator propagators exactly, showing at every step that the kernel is a central element and that the module factor is a spectator.
 
 The biquaternion content of the Schrödinger path integral is therefore a statement about the **kernel** rather than about the phase. The Hamiltonian is central, so the evolution operator is central, so the position kernel is a complex scalar times $e_t$, so the path integral acts on the state module as scalar multiplication. The entire path integral for a spin-0 particle is the scalar path integral tensored with the identity on $\mathbb{C}^2$. This article makes that precise and then computes with it.
 
@@ -24,7 +24,7 @@ $$
 \psi(t') = \tilde Q(t')\,\psi(0),
 $$
 
-and because $H$ is central, $\tilde Q(t')$ is a central unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde Q\tilde Q^{*}=e_t$. The evolution operator is a semigroup in time,
+and because $H$ is central, $\tilde Q(t')$ is a central $*$-unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde Q\tilde Q^{*}=e_t$. The evolution operator is a semigroup in time,
 
 $$
 \tilde Q(t'_1+t'_2) = \tilde Q(t'_2)\,\tilde Q(t'_1),
@@ -347,7 +347,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$ | Central Hamiltonian |
-| $\tilde Q(t')=\exp(-iHt'/\hbar)$ | Evolution operator; central unitary, semigroup |
+| $\tilde Q(t')=\exp(-iHt'/\hbar)$ | Evolution operator; central $*$-unitary, semigroup |
 | $K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)=Ke_t$ | Position kernel; central |
 | $K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(L\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |

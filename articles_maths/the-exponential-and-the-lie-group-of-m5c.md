@@ -218,9 +218,9 @@ because the two matrices commute. The logarithm series terminates because $\lamb
 
 **Theorem.** $U(5)$ is a compact real Lie group of dimension $25$, with Lie algebra $\mathfrak{u}(5)$; the exponential maps $\mathfrak{u}(5)$ onto $U(5)$. $SU(5)$ is compact of dimension $24$, with Lie algebra $\mathfrak{su}(5)$, and the exponential maps $\mathfrak{su}(5)$ onto $SU(5)$.
 
-**Proof.** The unitary group is the zero set of $U^*U=I$, closed and bounded, hence compact; the tangent space at $I$ is $\mathfrak{u}(5)$; the exponential of a skew-Hermitian matrix is unitary. The surjectivity is the unitary diagonalization: $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_k})$, and $U=e^{iH}$ with $H=VD_0V^*$, $D_0=\operatorname{diag}(\theta_k)$, skew-Hermitian. For $SU(5)$, choose the angles with sum zero modulo $2\pi$.
+**Proof.** The $*$-unitary group is the zero set of $U^*U=I$, closed and bounded, hence compact; the tangent space at $I$ is $\mathfrak{u}(5)$; the exponential of a skew-Hermitian matrix is $*$-unitary. The surjectivity is the $*$-unitary diagonalization: $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_k})$, and $U=e^{iH}$ with $H=VD_0V^*$, $D_0=\operatorname{diag}(\theta_k)$, skew-Hermitian. For $SU(5)$, choose the angles with sum zero modulo $2\pi$.
 
-**Corollary.** The exponential of a Hermitian matrix is positive definite; the exponential of a skew-Hermitian matrix is unitary; the exponential of a nilpotent matrix is unipotent.
+**Corollary.** The exponential of a Hermitian matrix is positive definite; the exponential of a skew-Hermitian matrix is $*$-unitary; the exponential of a nilpotent matrix is unipotent.
 
 **Proof.** If $H$ is Hermitian, $e^H$ is Hermitian with positive eigenvalues $e^{\lambda_k}$; if $X$ is skew-Hermitian, $(e^X)^*=e^{X^*}=e^{-X}=(e^X)^{-1}$; if $N$ is nilpotent, $e^N=I+N+\cdots+N^{k-1}/(k-1)!$ is unipotent.
 
@@ -339,7 +339,7 @@ The Lie algebra $\mathfrak{gl}_5$ has the commutator bracket; the one-parameter 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the exponential, the logarithm and the Jordan form.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for the exponential map, the Lie groups and the symmetric spaces.
 - [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m5c.html), for the determinant identity and the Jordan decomposition.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the unitary group and the compact real form.
+- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the $*$-unitary group and the compact real form.
 - [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the functional calculus and the exponential of a Hermitian matrix.
 - [The Polar Decomposition](the-polar-decomposition-of-m5c.html), for the polar decomposition and the positive cone.
 - [The Exponential-Polar Decomposition](the-exponential-polar-decomposition-of-m5c.html), for the combination of the exponential and the polar decomposition.

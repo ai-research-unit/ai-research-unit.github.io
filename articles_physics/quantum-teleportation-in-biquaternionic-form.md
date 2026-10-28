@@ -2,14 +2,14 @@
 
 ## Introduction
 
-**Quantum teleportation** is the transmission of an unknown quantum state from one party to another using a pre-shared entangled state and two bits of classical communication. Alice holds the unknown qubit; she and Bob share an entangled pair, one half each. Alice measures her unknown qubit jointly with her half of the pair, in the basis of the four maximally entangled two-qubit states. Each of the four outcomes leaves Bob's half of the pair in one of four *unitary images* of the unknown state. Alice announces the outcome — two classical bits — and Bob applies the matching unitary correction. He then holds the unknown state exactly, and no copy of it exists anywhere: Alice's measurement has destroyed the original.
+**Quantum teleportation** is the transmission of an unknown quantum state from one party to another using a pre-shared entangled state and two bits of classical communication. Alice holds the unknown qubit; she and Bob share an entangled pair, one half each. Alice measures her unknown qubit jointly with her half of the pair, in the basis of the four maximally entangled two-qubit states. Each of the four outcomes leaves Bob's half of the pair in one of four *$*$-unitary images* of the unknown state. Alice announces the outcome — two classical bits — and Bob applies the matching $*$-unitary correction. He then holds the unknown state exactly, and no copy of it exists anywhere: Alice's measurement has destroyed the original.
 
 This article writes that protocol in the biquaternion language of the companion articles. The protocol is worth writing out because it is the one place in the framework where four of its constructions meet at once, and where the difference between them is forced into the open:
 
 - the **state** is a positive element $\tilde{Ϛ}$ of the Hermitian subspace $\mathbb{M}_+\subset\mathbb{B}$, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image);
-- the **entangled resource** is a Bell idempotent $\tilde\Pi_{\epsilon}$ of the tensor square $\mathbb{B}\otimes\mathbb{B}$ — idempotent and Hermitian, but *not* unitary;
+- the **entangled resource** is a Bell idempotent $\tilde\Pi_{\epsilon}$ of the tensor square $\mathbb{B}\otimes\mathbb{B}$ — idempotent and Hermitian, but *not* $*$-unitary;
 - the **Bell measurement** is the four-outcome projective measurement whose projectors correspond to those same idempotents on the pair;
-- the **corrections** are unitary elements of $\mathbb{B}$ — gates, in the sense of the companion article on gates and circuits — and they are *not* idempotents.
+- the **corrections** are $*$-unitary elements of $\mathbb{B}$ — gates, in the sense of the companion article on gates and circuits — and they are *not* idempotents.
 
 The protocol is therefore a controlled collision between two kinds of object that the framework elsewhere keeps apart: the idempotents that resolve a measurement, and the unitaries that generate reversible motion. The distinction does real work in the correction table, where the same elements $\vec e_x,\vec e_y,\vec e_z$ enter the resource idempotent as $\vec e_k\otimes \vec e_k$ and the correction gates as $i\vec e_k$, and the two kinds of object behave quite differently.
 
@@ -54,10 +54,10 @@ It is worth stating explicitly which algebra each object belongs to, because the
 | $\tilde\Pi_{\Phi^+}$, $\tilde\Pi_\epsilon$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian idempotent of trace one; $\mathbb{M}_+\otimes\mathbb{M}_+$ |
 | $S_1,S_3$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian involutions; $\mathbb{M}_+\otimes\mathbb{M}_+$ |
 | $\tilde\Pi_\epsilon\otimes e_t$ | $\mathbb{B}^{\otimes3}$ | Hermitian idempotent on factors $(1,2)$ |
-| $\tilde Q_\epsilon$ | $\mathbb{B}$ | Unitary (Hermitian Pauli); a gate |
+| $\tilde Q_\epsilon$ | $\mathbb{B}$ | $*$-Unitary (Hermitian Pauli); a gate |
 | the classical record | — | two bits, not an element of any of the above |
 
-Two distinctions in the table do the work of the whole article. First, the resource $\tilde\Pi_{\Phi^+}$ and the idempotents of the measurement $\tilde\Pi_\epsilon\otimes e_t$ are **idempotent** and **not unitary**: $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\neq e_t\otimes e_t$ on the pair (and $\tilde\Pi_\epsilon^{(12)}\neq e_t\otimes e_t\otimes e_t$ on three factors). They are the objects that resolve a measurement, and they are trace-one, not unimodular. Second, the corrections $\tilde Q_\epsilon$ are **unitary** and **not idempotent** (except for the identity): they are gates, and their conjugation action is reversible. The tensor square $\mathbb{B}\otimes\mathbb{B}$ is a matrix algebra, not a division algebra; it contains idempotents and zero divisors, and an element of $\mathbb{B}\otimes\mathbb{B}$ is not a state of a single qubit. The protocol is written below so that each line says which of these types is being used.
+Two distinctions in the table do the work of the whole article. First, the resource $\tilde\Pi_{\Phi^+}$ and the idempotents of the measurement $\tilde\Pi_\epsilon\otimes e_t$ are **idempotent** and **not $*$-unitary**: $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\neq e_t\otimes e_t$ on the pair (and $\tilde\Pi_\epsilon^{(12)}\neq e_t\otimes e_t\otimes e_t$ on three factors). They are the objects that resolve a measurement, and they are trace-one, not unimodular. Second, the corrections $\tilde Q_\epsilon$ are **$*$-unitary** and **not idempotent** (except for the identity): they are gates, and their conjugation action is reversible. The tensor square $\mathbb{B}\otimes\mathbb{B}$ is a matrix algebra, not a division algebra; it contains idempotents and zero divisors, and an element of $\mathbb{B}\otimes\mathbb{B}$ is not a state of a single qubit. The protocol is written below so that each line says which of these types is being used.
 
 ## The Resource and the Bell Measurement
 
@@ -99,7 +99,7 @@ $$
 (s_1,s_3)=(-\epsilon_1,-\epsilon_3)\in\{\pm1\}^2 .
 $$
 
-Both labels are used below. Note again the type: $S_1,S_3$ are Hermitian **observables** (and involutions, hence also unitary), while the projectors onto their joint eigenspaces are Hermitian idempotent operators and not unitary. It is the projectors, not the observables, that enter the protocol's projection step.
+Both labels are used below. Note again the type: $S_1,S_3$ are Hermitian **observables** (and involutions, hence also $*$-unitary), while the projectors onto their joint eigenspaces are Hermitian idempotent operators and not $*$-unitary. It is the projectors, not the observables, that enter the protocol's projection step.
 
 ## The Teleportation Identity
 
@@ -148,7 +148,7 @@ X\leftrightarrow i\vec e_x,\qquad
 Z\leftrightarrow i\vec e_z,\qquad
 XZ\leftrightarrow \vec e_y\sim i\vec e_y.
 $$
-The last equivalence is a statement about **gates**, not about elements: $\vec e_y$ and $i\vec e_y$ differ by the central phase $-i$, which cancels in every conjugation, so they define the same unitary action. We use the Hermitian representative $i\vec e_y$ below.
+The last equivalence is a statement about **gates**, not about elements: $\vec e_y$ and $i\vec e_y$ differ by the central phase $-i$, which cancels in every conjugation, so they define the same $*$-unitary action. We use the Hermitian representative $i\vec e_y$ below.
 
 ### The projected identity
 
@@ -189,7 +189,7 @@ $$
 \frac{1}{p_\epsilon}\mathrm{Tr}_{12}(\cdots)=\tilde Q_\epsilon\,\tilde{Ϛ}_\psi\,\tilde Q_\epsilon^{*} .
 $$
 
-So each outcome leaves Bob's qubit in a unitary image of the unknown state, with the unitary determined by the outcome. The normalisation is the standard conditional-state normalisation; the unnormalised branch has trace $\tfrac14$, the probability of that outcome.
+So each outcome leaves Bob's qubit in a $*$-unitary image of the unknown state, with the $*$-unitary determined by the outcome. The normalisation is the standard conditional-state normalisation; the unnormalised branch has trace $\tfrac14$, the probability of that outcome.
 
 The four identities of the proposition are four distinct statements, one per outcome; each was recomputed directly in $\mathbb{B}^{\otimes3}$, on two pure and one mixed input state, not merely on the $\Phi^+$ outcome that organises the labelling.
 
@@ -220,7 +220,7 @@ that is, $i\vec e_z$ if the $S_1$ outcome is $-1$ and $i\vec e_x$ if the $S_3$ o
 
 Two remarks about the table. First, the fourth row is the one where the naive correspondence is easiest to get wrong: the standard decomposition produces $XZ$ for the outcome $|\Psi^-\rangle$, and $XZ=-i\sigma_y$ is *not* the element $\tilde Q_y=i\vec e_y$ but differs from it by the central phase $-i$. As a **gate** the two agree, and the row is written with the Hermitian representative; it was checked by conjugating a state by both, which gives the same result. Second, the table is not symmetric between $\Phi$ and $\Psi$ outcomes: the $\Phi^+$ row is the identity, and the others are the three non-identity Paulis, but the assignment of which Pauli goes with which outcome depends on the shared resource. It is a statement about the pair (resource, outcome), not about the outcome alone.
 
-**A general Bell resource.** The choice $\tilde\Pi_{\Phi^+}$ is a convention; any resource of the form $(e_t\otimes\tilde{V})\tilde\Pi_{\Phi^+}(e_t\otimes\tilde{V}^{*})$ with $\tilde{V}$ a single-qubit unitary on Bob's factor works, and Bob's uncorrected state becomes $\tilde{V}\tilde Q_\epsilon\tilde{Ϛ}_\psi\tilde Q_\epsilon^{*}\tilde{V}^{*}$, so that the correction is $\tilde Q_\epsilon^{*}\tilde{V}^{*}$. For $\tilde{V}=\tilde Q_x$ — which conjugates the resource to another Bell idempotent — this was verified outcome by outcome: the probabilities are still $\tfrac14$, Bob's state is the stated conjugation, and the stated correction restores $\tilde{Ϛ}_\psi$. The general statement is the standard local-unitary covariance of the protocol; it is recorded here as an inherited fact, with the one case checked.
+**A general Bell resource.** The choice $\tilde\Pi_{\Phi^+}$ is a convention; any resource of the form $(e_t\otimes\tilde{V})\tilde\Pi_{\Phi^+}(e_t\otimes\tilde{V}^{*})$ with $\tilde{V}$ a single-qubit $*$-unitary on Bob's factor works, and Bob's uncorrected state becomes $\tilde{V}\tilde Q_\epsilon\tilde{Ϛ}_\psi\tilde Q_\epsilon^{*}\tilde{V}^{*}$, so that the correction is $\tilde Q_\epsilon^{*}\tilde{V}^{*}$. For $\tilde{V}=\tilde Q_x$ — which conjugates the resource to another Bell idempotent — this was verified outcome by outcome: the probabilities are still $\tfrac14$, Bob's state is the stated conjugation, and the stated correction restores $\tilde{Ϛ}_\psi$. The general statement is the standard local-$*$-unitary covariance of the protocol; it is recorded here as an inherited fact, with the one case checked.
 
 ## No-Signalling, and Why There Is No Copy
 
@@ -274,7 +274,7 @@ $$
 \tilde{Ϛ}_\psi\ \longmapsto\ \tilde Q_\epsilon\,\tilde{Ϛ}_\psi\,\tilde Q_\epsilon^{*} ,
 $$
 
-a single conjugation by the unitary gate $\tilde Q_\epsilon$. Each branch is therefore a rank-one, purity-preserving, reversible map; the outcomes differ only by which Pauli conjugation is applied.
+a single conjugation by the $*$-unitary gate $\tilde Q_\epsilon$. Each branch is therefore a rank-one, purity-preserving, reversible map; the outcomes differ only by which Pauli conjugation is applied.
 
 **With the record and the correction: the identity channel.** Applying the correction $\tilde Q_\epsilon^{*}$ on each branch and summing the corrected branches with their probabilities,
 
@@ -282,7 +282,7 @@ $$
 \tilde{Ϛ}_\psi\ \longmapsto\ \tfrac14\sum_\epsilon \tilde Q_\epsilon^{*}\left(\tilde Q_\epsilon\,\tilde{Ϛ}_\psi\,\tilde Q_\epsilon^{*}\right)\tilde Q_\epsilon=\tilde{Ϛ}_\psi ,
 $$
 
-which is the identity channel. Written in Kraus form it has the four normalised operators $\tilde{K}_\epsilon=\tfrac12\tilde Q_\epsilon^{*}\tilde Q_\epsilon=\tfrac12 e_t$, with $\sum_\epsilon\tilde{K}_\epsilon^{*}\tilde{K}_\epsilon=4\cdot\tfrac14 e_t=e_t$; the four are proportional, so the Kraus rank is one and the channel is conjugation by the single unitary $\tilde{K}=e_t$. The net state map on the teleported qubit is therefore a **gate** in the sense of the companion article: a single conjugation, purity-preserving and invertible.
+which is the identity channel. Written in Kraus form it has the four normalised operators $\tilde{K}_\epsilon=\tfrac12\tilde Q_\epsilon^{*}\tilde Q_\epsilon=\tfrac12 e_t$, with $\sum_\epsilon\tilde{K}_\epsilon^{*}\tilde{K}_\epsilon=4\cdot\tfrac14 e_t=e_t$; the four are proportional, so the Kraus rank is one and the channel is conjugation by the single $*$-unitary $\tilde{K}=e_t$. The net state map on the teleported qubit is therefore a **gate** in the sense of the companion article: a single conjugation, purity-preserving and invertible.
 
 The three interpretations are not in conflict; they are the instrument, its branches, and its completed action. What they show is that teleportation is *not* a counterexample to the reversible/irreversible dichotomy but an illustration of it. The measurement is a rank-four irreversible step; the classical record is what permits the rank-four step to be undone by a conditional rank-one step; and the completed protocol is the identity gate. Teleportation transfers a state; it does not compute on it. The cost of the transfer is the shared Bell idempotent, which is consumed by the measurement, together with the two classical bits, which are not an algebraic object at all.
 
@@ -290,7 +290,7 @@ The three interpretations are not in conflict; they are the instrument, its bran
 
 **It does provide:**
 
-- A single algebraic home for every object of the protocol: the unknown state in $\mathbb{M}_+$, the resource as a Bell idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$, the measurement idempotents as $\tilde\Pi_\epsilon\otimes e_t$, and the corrections as unitary Pauli elements of $\mathbb{B}$.
+- A single algebraic home for every object of the protocol: the unknown state in $\mathbb{M}_+$, the resource as a Bell idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$, the measurement idempotents as $\tilde\Pi_\epsilon\otimes e_t$, and the corrections as $*$-unitary Pauli elements of $\mathbb{B}$.
 - The teleportation identity as an algebraic identity per outcome, $(\tilde\Pi_\epsilon\otimes e_t)\tilde{Ϛ}^{(0)}(\tilde\Pi_\epsilon\otimes e_t)=\tfrac14 \tilde\Pi_\epsilon\otimes(\tilde Q_\epsilon\tilde{Ϛ}_\psi\tilde Q_\epsilon^{*})$, with the four outcomes and the four Pauli corrections displayed in one table and the record expressed as stabiliser eigenvalues.
 - The uniform probability $\tfrac14$ for every outcome and the conditional state $\tilde Q_\epsilon\tilde{Ϛ}_\psi\tilde Q_\epsilon^{*}$ as direct traces and partial traces of that identity.
 - No-signalling and the absence of a copy as two partial-trace computations, and the channel interpretation of the protocol as the rank-four instrument, its rank-one branches, and its rank-one completion.
@@ -307,9 +307,9 @@ The three interpretations are not in conflict; they are the instrument, its bran
 
 **1. The classical record.** The two bits are the only element of the protocol that is not an element of the algebra. The outcome label is an eigenvalue pair of the commuting observables $S_1,S_3$, and the correction is the conditional gate selected by it; but the *selection* is not an algebraic operation on the algebra. Can the record be modelled inside the framework — as a decohered ancilla whose pointer basis is the stabiliser basis, as a controlled gate with the record as the control register, or as a conditional expectation — and does any of those interpretations say something the classical description does not?
 
-**2. The coherent interpretation.** If Alice keeps the four outcomes coherent in a fourth register, the correction is a controlled unitary and the whole protocol is a single unitary element of $\mathbb{B}^{\otimes4}$. That interpretation makes teleportation a gate, at the price of treating the record as a quantum register and changing the resource accounting. Is there an algebraic criterion that identifies when the record is retained coherently and when it is discarded, or is the distinction again outside the algebra, as in the controlled-gate/measurement contrast of the companion article on gates?
+**2. The coherent interpretation.** If Alice keeps the four outcomes coherent in a fourth register, the correction is a controlled $*$-unitary and the whole protocol is a single $*$-unitary element of $\mathbb{B}^{\otimes4}$. That interpretation makes teleportation a gate, at the price of treating the record as a quantum register and changing the resource accounting. Is there an algebraic criterion that identifies when the record is retained coherently and when it is discarded, or is the distinction again outside the algebra, as in the controlled-gate/measurement contrast of the companion article on gates?
 
-**3. General resources.** The protocol was verified for the Bell resource $\tilde\Pi_{\Phi^+}$ and for one local-unitary image of it. For a general maximally entangled resource, the corrections are $\tilde Q_\epsilon^{*}\tilde{V}^{*}$ with $\tilde{V}$ the local unitary relating the resource to $\tilde\Pi_{\Phi^+}$; is there a canonical statement of the outcome/correction correspondence in terms of the stabiliser group, and what happens when the resource is not maximally entangled at all?
+**3. General resources.** The protocol was verified for the Bell resource $\tilde\Pi_{\Phi^+}$ and for one local-$*$-unitary image of it. For a general maximally entangled resource, the corrections are $\tilde Q_\epsilon^{*}\tilde{V}^{*}$ with $\tilde{V}$ the local $*$-unitary relating the resource to $\tilde\Pi_{\Phi^+}$; is there a canonical statement of the outcome/correction correspondence in terms of the stabiliser group, and what happens when the resource is not maximally entangled at all?
 
 **4. The tensor product.** As in the companion articles on the Bell basis and on gates, whether the three-qubit arena $\mathbb{B}^{\otimes3}$ is canonical for the framework or requires additional structure is unresolved. The teleportation identity inherits the contingency: it is a theorem about $\mathbb{B}^{\otimes3}$ once that arena is granted.
 
@@ -317,7 +317,7 @@ The three interpretations are not in conflict; they are the instrument, its bran
 
 **6. Empirical content.** As everywhere in the framework, a rewriting of teleportation is not empirical content. What, if anything, distinguishes this formulation from standard quantum information is the central open question.
 
-A source in the literature (Obojska, *Journal of Physics Communications* **4** (2020) 055018) proposes the same two directions as future work: a special unitary operation acting on biquaternions that reproduces teleportation, and an understanding of how rotations in $\mathbb{C}^4$ influence entanglement. The second is the subject of the companion articles on frame-dependent entanglement and on the Bell basis; the first is what this article carries out, for the Bell resource.
+A source in the literature (Obojska, *Journal of Physics Communications* **4** (2020) 055018) proposes the same two directions as future work: a special $*$-unitary operation acting on biquaternions that reproduces teleportation, and an understanding of how rotations in $\mathbb{C}^4$ influence entanglement. The second is the subject of the companion articles on frame-dependent entanglement and on the Bell basis; the first is what this article carries out, for the Bell resource.
 
 ## Summary
 
@@ -366,9 +366,9 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of teleportation, the Bell basis, and the correction gates.
 - A. Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for the density-matrix and measurement formalism underlying the protocol.
 - D. Bouwmeester, J.-W. Pan, K. Mattle, M. Eibl, H. Weinfurter, and A. Zeilinger, "Experimental quantum teleportation," *Nature* **390** (1997) 575–579, for the first experimental realisation.
-- R. F. Werner, "All teleportation and dense coding schemes," *Journal of Physics A: Mathematical and General* **34** (2001) 7081–7094, for the classification of maximally entangled resources and the general local-unitary covariance of the corrections.
+- R. F. Werner, "All teleportation and dense coding schemes," *Journal of Physics A: Mathematical and General* **34** (2001) 7081–7094, for the classification of maximally entangled resources and the general local-$*$-unitary covariance of the corrections.
 - C. H. Bennett and S. J. Wiesner, "Communication via one- and two-particle operators on Einstein–Podolsky–Rosen states," *Physical Review Letters* **69** (1992) 2881–2884, for dense coding, the dual protocol not developed here.
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the instrument and Kraus-rank language used in the channel interpretation.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), and Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the rotor formulation of the corrections.
-- Lidia Obojska, "Patterns of maximally entangled states within the algebra of biquaternions," *Journal of Physics Communications* **4** (2020) 055018, for the proposal of a biquaternion unitary reproducing teleportation, noted in *Open Questions*.
+- Lidia Obojska, "Patterns of maximally entangled states within the algebra of biquaternions," *Journal of Physics Communications* **4** (2020) 055018, for the proposal of a biquaternion $*$-unitary reproducing teleportation, noted in *Open Questions*.
 - The companion articles of this series: [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html), [Spin-1/2 Quantum Physics in Biquaternionic Form](spin-1-2-quantum-physics-in-biquaternionic-form.html), [Entangled Subsystems in the Biquaternion Framework](entangled-subsystems-in-the-biquaternion-framework.html), *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, [Exercise: The Correlation Function of the Bell States](exercise-the-correlation-function-of-the-bell-states.html), [Exercise: The Reduced State of an Entangled Subsystem](exercise-the-reduced-state-of-an-entangled-subsystem.html), [Quantum Gates and Circuits in Biquaternionic Form](quantum-gates-and-circuits-in-biquaternionic-form.html), [Quantum Channels and the Reversible/Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), [The Measurement Problem in Algebraic Form](the-measurement-problem-in-algebraic-form.html), and [Decoherence as Idempotent Projection](decoherence-as-idempotent-projection.html).

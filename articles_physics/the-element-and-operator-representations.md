@@ -152,7 +152,7 @@ $$
 
 Off the cone, $M$ is invertible, the congruence is a bijection, it preserves the rank of every argument, and it scales the determinant by $|\det M|^2=|N|^2$. On the cone, $M$ has rank one and the congruence collapses: every image is a multiple of the Hermitian rank-one matrix $u u^{\dagger}$, the image is a single complex line, and the operator has rank one. The value of the trace $4|Q_t|^2$ decides whether the surviving operator is nilpotent ($Q_t=0$) or a scaled projection ($Q_t\neq0$).
 
-The congruence is a completely positive map with a single Kraus operator. It is trace-preserving exactly when $M$ is unitary, that is for the unitary elements; otherwise it rescales the trace. On the cone it is a destructive map: it projects every operand onto one line and erases the distinctions between them. The algebra supplies the shape of a quantum channel and of a measurement; it does not supply the probability rule for the outcomes.
+The congruence is a completely positive map with a single Kraus operator. It is trace-preserving exactly when $M$ is $*$-unitary, that is for the $*$-unitary elements; otherwise it rescales the trace. On the cone it is a destructive map: it projects every operand onto one line and erases the distinctions between them. The algebra supplies the shape of a quantum channel and of a measurement; it does not supply the probability rule for the outcomes.
 
 ### The $4\times4$ Operator
 
@@ -280,7 +280,7 @@ $$
 
 so the sandwich is self-adjoint iff $\tilde Q^{*}=\lambda\tilde Q$ with $|\lambda|=1$, equivalently iff a central-phase multiple of $\tilde Q$ lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. The criterion is algebraic; it does not by itself make the self-adjoint sandwiches observables. A Lorentz boost is a Hermitian parameter, hence gives a self-adjoint sandwich, and it is a transformation, not an observable.
 
-On the unitary slice $\tilde Q\tilde Q^{*}=e_t$, the sandwich is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the product, not only the sector. Off the slice it is a congruence that scales the interval. On the null cone it survives as a rank-one map; the nilpotent and the scaled projection are its two faces.
+On the $*$-unitary slice $\tilde Q\tilde Q^{*}=e_t$, the sandwich is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the product, not only the sector. Off the slice it is a congruence that scales the interval. On the null cone it survives as a rank-one map; the nilpotent and the scaled projection are its two faces.
 
 ### The Monoid of Acting Maps
 
@@ -375,7 +375,7 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 - The one-sided composition laws are $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$; the two families commute. The sandwich is multiplicative, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but not linear.
 - The adjoint for the plain form swaps the sides and leaves the parameter alone; self-adjoint one-sided operators are the central multiplications. The orientation is in the commutator, not in the form.
 - A two-sided operator is a pair defined up to a common central factor; it is invertible exactly when both parameters are units.
-- The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. On the unitary slice it is an inner automorphism.
+- The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{M}_+$ or $\mathbb{M}_-$. On the $*$-unitary slice it is an inner automorphism.
 - The acting maps form a monoid; the reversible maps are the units off the cone, the states are the idempotents, and the cone is the boundary between them.
 - The Peirce decomposition gives the four corners: populations on the diagonal, coherences off it.
 - No picture is more fundamental than another; each is a choice of what to make visible, and the correspondence table is the translation between them.

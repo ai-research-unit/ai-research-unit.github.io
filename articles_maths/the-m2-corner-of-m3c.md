@@ -103,13 +103,13 @@ The compression is invertible in the corner, with inverse the compressed inverse
 
 **The trace of the worked example.** $\operatorname{tr}(A)=1+5+9=15$, while $\operatorname{tr}_{P_{1}}(P_{1}AP_{1})=1+5=6$. The inherited trace forgets the third diagonal entry, which lies in the kernel direction; it is the trace of the compressed endomorphism, not the trace of $A$.
 
-**The characteristic polynomial of the compression.** The two eigenvalues of the $2\times2$ block are the eigenvalues of $X|_{\operatorname{im}P}$; the third eigenvalue of $A$ is not seen by the corner. The corner's characteristic polynomial is
+**The characteristic polynomial of the compression.** The two eigenvalues of the $2\times2$ block are the eigenvalues of $X|_{\operatorname{im}P}$; they are not eigenvalues of $A$ in general, because $\operatorname{im}P$ need not be invariant. The corner's characteristic polynomial is
 
 $$
 \lambda^{2}-\operatorname{tr}_{P}(X)\lambda+\det_{P}(X),
 $$
 
-and it divides the ambient characteristic polynomial of $X$ by the factor $\lambda$ corresponding to the kernel direction. For the example, $\lambda^{2}-6\lambda-3$.
+and it is not a factor of the ambient characteristic polynomial unless the compression is block triangular. For the example, $\lambda^{2}-6\lambda-3$, with roots $3\pm2\sqrt3$, while the ambient eigenvalues are $0$ and $(15\pm3\sqrt{33})/2$.
 
 ## The Unital Algebra and the Star
 

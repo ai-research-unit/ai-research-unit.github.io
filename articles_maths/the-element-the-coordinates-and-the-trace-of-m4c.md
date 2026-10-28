@@ -67,7 +67,7 @@ $$
 \bar A=X-iY,
 $$
 
-the entrywise complex conjugate. It is $\mathbb{C}$-antilinear and an algebra automorphism. The conjugate transpose is $A^*=\bar A^{\mathsf T}$, which is the composition of the conjugation and the transpose; it is the subject of *The Involution and the Hermitian Structure*.
+the entrywise complex conjugate. It is $\mathbb{C}$-antilinear and an automorphism of the real algebra. The conjugate transpose is $A^*=\bar A^{\mathsf T}$, which is the composition of the conjugation and the transpose; it is the subject of *The Involution and the Hermitian Structure*.
 
 ## The Scalar and Traceless Parts
 

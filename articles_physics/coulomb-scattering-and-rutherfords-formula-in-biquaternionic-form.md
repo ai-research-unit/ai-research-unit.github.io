@@ -247,7 +247,7 @@ The biquaternion framework has nothing to add to this argument except the observ
 
 The phase $\exp(-i\eta\ln\sin^2(\theta/2))$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\alpha/\hbar v$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.
 
-In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta/2))$ and $\exp(2i\sigma_0)$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's unitary-versus-rotor distinction applies: these are unitary central phases, not unit-norm rotors.
+In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta/2))$ and $\exp(2i\sigma_0)$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's $*$-unitary-versus-rotor distinction applies: these are $*$-unitary central phases, not unit-norm rotors.
 
 ### The scattering length and the infrared analogy
 
@@ -260,7 +260,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 **What the biquaternion notation provides.**
 
 - **Centrality of the whole problem.** The potential multiplies $e_t$, so the Hamiltonian is central, the partial-wave decomposition is a decomposition of the scalar envelope, and the amplitude and every phase are elements of $\mathbb{C}_{\mathbb{B}}$. No module index appears anywhere, which is the precise statement that the problem is spin-0.
-- **The phases as central unitary elements.** The Coulomb phase $\sigma_l$, the logarithmic phase $-i\eta\ln\sin^2(\theta/2)$, and $2\sigma_0$ are central phases of the same kind as the free and path-integral phases. The framework's unitary-versus-rotor distinction applies unchanged.
+- **The phases as central $*$-unitary elements.** The Coulomb phase $\sigma_l$, the logarithmic phase $-i\eta\ln\sin^2(\theta/2)$, and $2\sigma_0$ are central phases of the same kind as the free and path-integral phases. The framework's $*$-unitary-versus-rotor distinction applies unchanged.
 - **The momentum transfer as a real quaternion.** The Born amplitude is the Fourier transform of a central scalar at a momentum transfer that is a real quaternion, the difference of two real wave vectors; the Fourier integral produces a central scalar.
 - **Continuity with the bound problem.** The radial equation is the same central scalar equation as in the hydrogen article, at positive energy. The framework exhibits the bound and continuum problems as one central problem.
 
@@ -299,7 +299,7 @@ $$
 
 whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\hbar^2\lvert\vec k_2-\vec k\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.
 
-The biquaternion content is centrality: the potential couples only to the scalar slot, the amplitude is a central complex scalar, the Coulomb phase and the logarithmic phase are central unitary elements, and the momentum transfer is a real quaternion. The bound states of the same potential are the subject of the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*. The framework supplies the algebraic location of the amplitude and the phases and the continuity between the bound and continuum problems; it does not supply the Coulomb wave functions, the closed-form sum, or Rutherford's formula, and it adds no prediction distinguishing the reformulation from scalar Coulomb scattering.
+The biquaternion content is centrality: the potential couples only to the scalar slot, the amplitude is a central complex scalar, the Coulomb phase and the logarithmic phase are central $*$-unitary elements, and the momentum transfer is a real quaternion. The bound states of the same potential are the subject of the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*. The framework supplies the algebraic location of the amplitude and the phases and the continuity between the bound and continuum problems; it does not supply the Coulomb wave functions, the closed-form sum, or Rutherford's formula, and it adds no prediction distinguishing the reformulation from scalar Coulomb scattering.
 
 ## Summary of Notation
 

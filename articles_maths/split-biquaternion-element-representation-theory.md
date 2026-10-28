@@ -126,7 +126,7 @@ $$
 \rho_{(n_1,n_2)} = \mathrm{Sym}^{n_1}(\mathbb{C}^2) \boxtimes \mathrm{Sym}^{n_2}(\mathbb{C}^2) , \qquad \dim_{\mathbb{C}} = (n_1+1)(n_2+1) .
 $$
 
-The two positive rays are also the reason the unit group is non-compact and its representations need not be unitary; the whole classification is that of the Lie group $(\mathbb{R}_{>0} \times SU(2))^2$, whose compact part is $SU(2) \times SU(2)$.
+The two positive rays are also the reason the unit group is non-compact and its representations need not be $*$-unitary; the whole classification is that of the Lie group $(\mathbb{R}_{>0} \times SU(2))^2$, whose compact part is $SU(2) \times SU(2)$.
 
 ## The Defining Representation
 

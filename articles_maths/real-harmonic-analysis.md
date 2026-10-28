@@ -55,7 +55,7 @@ $$
 \sum_{n \in \mathbb{Z}} |(\mathcal F f)(n)|^2 = \int_0^1 |f(a)|^2 \, da,
 $$
 
-and $f \mapsto ((\mathcal F f)(n))$ is a unitary isomorphism $L^2(\mathbb{T}) \to \ell^2(\mathbb{Z})$. Consequently, for $f, g \in L^2(\mathbb{T})$,
+and $f \mapsto ((\mathcal F f)(n))$ is a $*$-unitary isomorphism $L^2(\mathbb{T}) \to \ell^2(\mathbb{Z})$. Consequently, for $f, g \in L^2(\mathbb{T})$,
 
 $$
 \sum_{n \in \mathbb{Z}} (\mathcal F f)(n) \overline{(\mathcal F g)(n)} = \int_0^1 f(a) \overline{g(a)} \, da.
@@ -108,7 +108,7 @@ for almost every $a$, and for every $a$ if $f$ is continuous.
 
 ### The Plancherel Theorem
 
-**Theorem (Plancherel).** The Fourier transform on $L^1(\mathbb{R}) \cap L^2(\mathbb{R})$ satisfies $\|\mathcal F f\|_2 = \|f\|_2$ and $\langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle$, and extends uniquely to a unitary operator
+**Theorem (Plancherel).** The Fourier transform on $L^1(\mathbb{R}) \cap L^2(\mathbb{R})$ satisfies $\|\mathcal F f\|_2 = \|f\|_2$ and $\langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle$, and extends uniquely to a $*$-unitary operator
 
 $$
 \mathcal{F} : L^2(\mathbb{R}) \to L^2(\mathbb{R}).
@@ -148,7 +148,7 @@ $$
 
 **Theorem (Inversion).** If $f \in L^1(\mathbb{R}^n)$ and $\mathcal F f \in L^1(\mathbb{R}^n)$, then $f(a) = \int_{\mathbb{R}^n} (\mathcal F f)(\xi) \exp(2\pi i \xi \cdot a) d\xi$ for almost every $a$, and everywhere if $f$ is continuous.
 
-**Theorem (Plancherel).** The Fourier transform extends uniquely to a unitary operator $\mathcal{F} : L^2(\mathbb{R}^n) \to L^2(\mathbb{R}^n)$, and for all $f, g \in L^2(\mathbb{R}^n)$,
+**Theorem (Plancherel).** The Fourier transform extends uniquely to a $*$-unitary operator $\mathcal{F} : L^2(\mathbb{R}^n) \to L^2(\mathbb{R}^n)$, and for all $f, g \in L^2(\mathbb{R}^n)$,
 
 $$
 \|\mathcal F f\|_2 = \|f\|_2, \qquad \langle \mathcal F f, \mathcal F g \rangle = \langle f, g \rangle.
@@ -385,7 +385,7 @@ $$
 \|f\|_{H^s}^2 = \int_{\mathbb{R}^n} (1 + |\xi|^2)^s \, |(\mathcal F f)(\xi)|^2 \, d\xi < \infty.
 $$
 
-**Theorem.** For every real $s$, $H^s(\mathbb{R}^n)$ is a Hilbert space under the inner product $\langle f, g \rangle_{H^s} = \int (1 + |\xi|^2)^s (\mathcal F f)(\xi) \overline{(\mathcal F g)(\xi)} d\xi$, and the Fourier transform is a unitary isomorphism onto $L^2(\mathbb{R}^n, (1 + |\xi|^2)^s d\xi)$. For $s = k$ a non-negative integer, $H^k(\mathbb{R}^n) = W^{k,2}(\mathbb{R}^n)$ with equivalent norms.
+**Theorem.** For every real $s$, $H^s(\mathbb{R}^n)$ is a Hilbert space under the inner product $\langle f, g \rangle_{H^s} = \int (1 + |\xi|^2)^s (\mathcal F f)(\xi) \overline{(\mathcal F g)(\xi)} d\xi$, and the Fourier transform is a $*$-unitary isomorphism onto $L^2(\mathbb{R}^n, (1 + |\xi|^2)^s d\xi)$. For $s = k$ a non-negative integer, $H^k(\mathbb{R}^n) = W^{k,2}(\mathbb{R}^n)$ with equivalent norms.
 
 The **homogeneous** Sobolev space $\mathring{H}^s$ uses the seminorm $\|f\|_{\mathring{H}^s}^2 = \int |\xi|^{2s} |(\mathcal F f)(\xi)|^2 d\xi$, and $\partial^\alpha : H^s \to H^{s - |\alpha|}$ is bounded for all real $s$.
 

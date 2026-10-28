@@ -29,7 +29,7 @@ $$
 
 with the transpose as an anti-automorphism and the transpose-inverse as the outer automorphism of the Lie algebra $\mathfrak{sl}_6$.
 
-The article assumes the Peirce decomposition of *The Peirce Decomposition* and the tensor product of *The Modules and the Minimal Left Ideals*. It uses no form and no topology. The adjoint action and the orbits are *The Adjoint Action, the Orbits and the Flag Variety*; the derivations of the biquaternion algebra are *Derivations of the Biquaternion Algebra*.
+The article assumes the Peirce decomposition of *The Peirce Decomposition* and the tensor product of *The Modules and the Minimal Left Ideals*. It uses no form and no topology. The adjoint action and the orbits are *The Adjoint Action, the Orbits and the Flag Variety*; the derivations of the biquaternion algebra are *Biquaternion Automorphisms and Derivations*.
 
 ## The Multiplication Operators
 
@@ -393,19 +393,28 @@ with $j=r$, $s=k$. In the rank-one case all four corners are one-dimensional, an
 
 ### The Sandwich Matrix
 
-**Theorem.** In the basis of matrix units $E_{ij}$,
+**Theorem.** In the basis of matrix units $E_{rs}$,
 
 $$
-T_{a,b}(E_{rs})=\delta_{jr}\delta_{sk}\,a_{ij}b_{kl}\,E_{il},
+T_{a,b}(E_{rs})=aE_{rs}b=\sum_{i,l}a_{ir}b_{sl}\,E_{il},
 $$
 
 so the matrix of $T_{a,b}$ has entries
 
 $$
-(T_{a,b})_{(il),(rs)}=a_{ij}b_{kl}\,\delta_{jr}\delta_{sk}.
+(T_{a,b})_{(il),(rs)}=a_{ir}b_{sl}.
 $$
 
-**Proof.** $aE_{rs}b=(\sum_{ij}a_{ij}E_{ij})E_{rs}(\sum_{kl}b_{kl}E_{kl})=a_{ir}b_{sl}E_{il}$? Let me compute: $E_{ij}E_{rs}E_{kl}=\delta_{jr}\delta_{sk}E_{il}$, so the coefficient is $a_{ij}b_{kl}$ with $j=r$, $s=k$. The index of $a$ is $(i,j)=(i,r)$ and of $b$ is $(k,l)=(s,l)$; so the entry is $a_{ir}b_{sl}$.
+**Proof.** Expand $a$ and $b$ in the matrix units:
+
+$$
+aE_{rs}b
+=\sum_{ijkl}a_{ij}b_{kl}E_{ij}E_{rs}E_{kl}
+=\sum_{ijkl}a_{ij}b_{kl}\delta_{jr}\delta_{sk}E_{il}
+=a_{ir}b_{sl}E_{il}.
+$$
+
+Hence the entry in the $(il),(rs)$ position is $a_{ir}b_{sl}$.
 
 **Corollary (the rank).** $\operatorname{rank}T_{a,b}=\operatorname{rank}(a)\operatorname{rank}(b)$.
 
@@ -464,7 +473,7 @@ The derivations are the inner ones $\operatorname{ad}_a$, with kernel the scalar
 | $L_a$ | $I_6\otimes a$ | $A_{rs}\to A_{is}$ if $a\in A_{ij}$, $j=r$ |
 | $R_b$ | $b^{\mathsf T}\otimes I_6$ | $A_{rs}\to A_{rl}$ if $b\in A_{kl}$, $s=k$ |
 | $T_{a,b}$ | $b^{\mathsf T}\otimes a$ | $A_{rs}\to A_{il}$ if $a\in A_{ij}$, $b\in A_{kl}$, $j=r$, $s=k$ |
-| $\operatorname{ad}_a$ | $I_6\otimes a-a^{\mathsf T}\otimes I_6$ | eigenvalue $\delta_{rs}-\delta_{rt}$ on $A_{st}$ |
+| $\operatorname{ad}_a$ | $I_6\otimes a-a^{\mathsf T}\otimes I_6$ | $\lambda_s-\lambda_t$ on $A_{st}$ for diagonal $a=\sum_k\lambda_kE_{kk}$ |
 
 ## Summary of Notation
 
@@ -485,7 +494,4 @@ The derivations are the inner ones $\operatorname{ad}_a$, with kernel the scalar
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the derivations and the automorphisms.
 - [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the inner automorphisms as a group action.
 - [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the left and right regular modules.
-- [The Enveloping Operator Algebra](the-enveloping-operator-algebra.html), for the sandwich monoid and its span.
-- [Derivations of the Biquaternion Algebra](derivations-of-the-biquaternion-algebra.html), for the rank-one case.
-- [The Outer Automorphism of $\mathfrak{sl}_6$](the-outer-automorphism-of-sl6.html), for the Dynkin diagram symmetry.
-- [Skolem–Noether Theorem](skolem-noether-theorem.html), for the innerness of the automorphisms.
+- [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the rank-one case.

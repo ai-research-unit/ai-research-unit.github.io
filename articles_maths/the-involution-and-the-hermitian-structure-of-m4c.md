@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution of $M_4(\mathbb{C})$, and the form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is a positive definite Hermitian form.** The form defines the Frobenius norm, the Hermitian and skew-Hermitian subspaces, the unitary group $U(4)$ and the compact real forms $\mathfrak{u}(4)$ and $\mathfrak{su}(4)$. It is definite: the only isotropic vector is $0$, and there is no null cone. This is the sharp contrast with the biquaternion algebra, whose norm is indefinite and whose zero divisors form a null cone.
+**The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution of $M_4(\mathbb{C})$, and the form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is a positive definite Hermitian form.** The form defines the Frobenius norm, the Hermitian and skew-Hermitian subspaces, the $*$-unitary group $U(4)$ and the compact real forms $\mathfrak{u}(4)$ and $\mathfrak{su}(4)$. It is definite: the only isotropic vector is $0$, and there is no null cone. This is the sharp contrast with the biquaternion algebra, whose norm is complex-valued and whose zero divisors form a null cone.
 
-The article defines the involution, proves its properties, constructs the positive definite trace form and the Frobenius norm, identifies the Hermitian and skew-Hermitian subspaces and the unitary groups, and contrasts the definite case with the null cone of $\mathbb{B}$.
+The article defines the involution, proves its properties, constructs the positive definite trace form and the Frobenius norm, identifies the Hermitian and skew-Hermitian subspaces and the $*$-unitary groups, and contrasts the definite case with the null cone of $\mathbb{B}$.
 
 The algebra is *The Matrix Algebra $M_4(\mathbb{C})$*; the element and the trace pairing $\operatorname{tr}(AB)$ are *The Element, the Coordinates and the Trace*; the polar decomposition is *The Polar Decomposition*; the forms and the singular set are *The Forms, the Norms and the Singular Set*.
 
@@ -31,11 +31,11 @@ It is not $\mathbb{C}$-linear and it is not an algebra automorphism.
 
 **The real structure.** The involution is the composition of the entrywise conjugation and the transpose. The fixed points of the conjugation are the real matrices $M_4(\mathbb{R})$, of real dimension $16$; the fixed points of the transpose are the symmetric matrices, of complex dimension $10$. The fixed points of the conjugate transpose are the Hermitian matrices, a real subspace of dimension $16$.
 
-**Hermitian, skew-Hermitian and unitary elements.** An element is
+**Hermitian, skew-Hermitian and $*$-unitary elements.** An element is
 
 - **Hermitian** if $A^*=A$;
 - **skew-Hermitian** if $A^*=-A$;
-- **unitary** if $A^*A=AA^*=I$.
+- **$*$-unitary** if $A^*A=AA^*=I$.
 
 The Hermitian and skew-Hermitian conditions are real-linear conditions, not complex-linear ones: if $A$ is Hermitian, then $iA$ is skew-Hermitian.
 
@@ -145,7 +145,7 @@ $$
 \lVert A+B\rVert_F\le\lVert A\rVert_F+\lVert B\rVert_F.
 $$
 
-It is invariant under unitary conjugation and under left and right multiplication by unitaries:
+It is invariant under $*$-unitary conjugation and under left and right multiplication by unitaries:
 
 $$
 \lVert UAV\rVert_F=\lVert A\rVert_F,\qquad U,V\in U(4).
@@ -224,7 +224,7 @@ $$
 
 The Jordan algebra is not associative; its associators measure the failure. The cone and the Jordan structure are the real form of the Hermitian structure.
 
-**The unitary group.** The **unitary group** is
+**The $*$-unitary group.** The **$*$-unitary group** is
 
 $$
 U(4)=\{U:U^*U=UU^*=I\}.
@@ -236,7 +236,7 @@ $$
 \mathfrak{u}(4)=\{K:K^*=-K\},
 $$
 
-with the commutator bracket. The **special unitary group** is
+with the commutator bracket. The **special $*$-unitary group** is
 
 $$
 SU(4)=U(4)\cap SL_4(\mathbb{C})=\{U\in U(4):\det U=1\},
@@ -262,7 +262,7 @@ $$
 
 The dimensions are $16$ and $15$ over $\mathbb{R}$, and $16$ and $15$ over $\mathbb{C}$ after complexification. The compact forms are the real forms on which the trace form $\operatorname{tr}(A^*B)$ is positive definite, as on the whole space; the Killing form, by contrast, is negative semidefinite on $\mathfrak{u}(4)$ and negative definite on $\mathfrak{su}(4)$. For $K\in\mathfrak{u}(4)$, write $K=iH$ with $H$ Hermitian; then $K^2=-H^2$ and $\operatorname{tr}(K^2)=-\operatorname{tr}(H^2)\le0$.
 
-**The action on the algebra.** The unitary group acts on $M_4$ by conjugation:
+**The action on the algebra.** The $*$-unitary group acts on $M_4$ by conjugation:
 
 $$
 A\longmapsto UAU^*.
@@ -277,7 +277,7 @@ $$
 =\operatorname{tr}(A^*B).
 $$
 
-It preserves the Hermitian, skew-Hermitian, positive semidefinite and unitary subsets, and it preserves the Frobenius norm.
+It preserves the Hermitian, skew-Hermitian, positive semidefinite and $*$-unitary subsets, and it preserves the Frobenius norm.
 
 ## The Definite Form and the Absence of a Null Cone
 
@@ -295,7 +295,7 @@ $$
 N(\tilde Q)=Q_t^2+B^2,
 $$
 
-which is complex-valued and indefinite on the real algebra; its zero set is the **null cone** of the zero divisors. The regular representation $M_4(\mathbb{C})_L$ inherits the determinant as the square of the norm, and its singular set is the null cone. The full algebra $M_4(\mathbb{C})$ is different: its determinant is not a norm, and its singular set is not the zero set of a definite form. The positive definite form $\operatorname{tr}(A^*B)$ exists on the full algebra, but its zero set is only the origin. The null cone of $\mathbb{B}$ and the singular set of $M_4$ are different objects.
+which is complex-valued and isotropic on a nonzero cone; its zero set is the **null cone** of the zero divisors. The regular representation $M_4(\mathbb{C})_L$ inherits the determinant as the square of the norm, and its singular set is the null cone. The full algebra $M_4(\mathbb{C})$ is different: its determinant is not a norm, and its singular set is not the zero set of a definite form. The positive definite form $\operatorname{tr}(A^*B)$ exists on the full algebra, but its zero set is only the origin. The null cone of $\mathbb{B}$ and the singular set of $M_4$ are different objects.
 
 **The two determinants.** The determinant of the full algebra is the usual $4\times4$ determinant; the determinant of the regular model is the square of the biquaternion norm. The full determinant vanishes on the singular matrices; the biquaternion norm vanishes on the null cone. The two singular sets have different dimensions and different geometry. The full algebra has no null cone; the regular model does.
 
@@ -303,7 +303,7 @@ which is complex-valued and indefinite on the real algebra; its zero set is the 
 
 ## Summary
 
-The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution and anti-automorphism of $M_4(\mathbb{C})$. Its fixed real subspace is the Hermitian matrices $\operatorname{Herm}_4$, of real dimension $16$; the skew-Hermitian matrices $\mathfrak{u}(4)$ form the other eigenspace, also of real dimension $16$; the real direct sum $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ has real dimension $32$. The trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, with Frobenius norm $\lVert A\rVert_F^2=\sum_{i,j}\lvert A_{ij}\rvert^2$; its only isotropic vector is $0$, and there is no null cone. The Hermitian matrices are a Jordan algebra with the positive semidefinite cone; the skew-Hermitian matrices are the Lie algebra $\mathfrak{u}(4)$ of the unitary group $U(4)$, and the traceless part is $\mathfrak{su}(4)$ of dimension $15$. The compact real forms complexify to $\mathfrak{gl}_4$ and $\mathfrak{sl}_4$. The singular set of the full algebra is the determinantal hypersurface $\{\det A=0\}$, of real codimension $2$, not the isotropic cone of the form; the null cone belongs to the biquaternion algebra and its regular model, not to the full matrix algebra.
+The conjugate transpose $A^*=\bar A^{\mathsf T}$ is a $\mathbb{C}$-antilinear involution and anti-automorphism of $M_4(\mathbb{C})$. Its fixed real subspace is the Hermitian matrices $\operatorname{Herm}_4$, of real dimension $16$; the skew-Hermitian matrices $\mathfrak{u}(4)$ form the other eigenspace, also of real dimension $16$; the real direct sum $M_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4)$ has real dimension $32$. The trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, with Frobenius norm $\lVert A\rVert_F^2=\sum_{i,j}\lvert A_{ij}\rvert^2$; its only isotropic vector is $0$, and there is no null cone. The Hermitian matrices are a Jordan algebra with the positive semidefinite cone; the skew-Hermitian matrices are the Lie algebra $\mathfrak{u}(4)$ of the $*$-unitary group $U(4)$, and the traceless part is $\mathfrak{su}(4)$ of dimension $15$. The compact real forms complexify to $\mathfrak{gl}_4$ and $\mathfrak{sl}_4$. The singular set of the full algebra is the determinantal hypersurface $\{\det A=0\}$, of real codimension $2$, not the isotropic cone of the form; the null cone belongs to the biquaternion algebra and its regular model, not to the full matrix algebra.
 
 $$
 \boxed{\ \langle A,B\rangle=\operatorname{tr}(A^*B)>0\ \text{for }A\ne0,\quad \dim_\mathbb{R}\operatorname{Herm}_4=16,\quad \dim_\mathbb{R}\mathfrak{u}(4)=16,\quad \dim_\mathbb{R}\mathfrak{su}(4)=15. }
@@ -331,16 +331,16 @@ $$
 | $\mathfrak{su}(4)$ | the traceless skew-Hermitian matrices |
 | $\langle A,B\rangle=\operatorname{tr}(A^*B)$ | the positive definite trace form |
 | $\lVert A\rVert_F$ | the Frobenius norm |
-| $U(4)$, $SU(4)$ | the unitary and special unitary groups |
+| $U(4)$, $SU(4)$ | the $*$-unitary and special $*$-unitary groups |
 | $H,K$ | the Hermitian and skew-Hermitian parts of $A$ |
 
 ## Further Reading
 
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the conjugate transpose, the spectral theorem, the Frobenius norm and the unitary group.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the conjugate transpose, the spectral theorem, the Frobenius norm and the $*$-unitary group.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the positive definite cone, the trace form and the operator norms.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $U(4)$, $\mathfrak{u}(4)$, $\mathfrak{su}(4)$ and the compact real forms.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra and the trace pairing.
 - [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m4c.html), for the trace pairing and the Jordan decomposition.
 - [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the singular set and the rank stratification.
-- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the unitary polar factor and the positive factor.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure.html), for the biquaternion case and the null cone.
+- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the $*$-unitary polar factor and the positive factor.
+- [Matrix Rings with an Involution](matrix-rings-with-an-involution.html), for the general theory of involutions and Hermitian forms.

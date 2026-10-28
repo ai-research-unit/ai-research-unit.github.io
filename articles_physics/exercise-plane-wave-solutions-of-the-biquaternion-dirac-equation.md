@@ -248,14 +248,14 @@ $$
 
 In both bases $\gamma_5^2=I_4$ and $\gamma_5$ anticommutes with every generator, $\{\gamma_5,\gamma^\mu\}=0$; the projectors $P_L=\tfrac12(1-\gamma_5)$, $P_R=\tfrac12(1+\gamma_5)$ select the chiralities, and in the chiral basis they are simply the two diagonal blocks.
 
-**Change of basis.** The parent states that the two bases are related by a fixed unitary transformation but does not exhibit it; we construct it here. Define
+**Change of basis.** The parent states that the two bases are related by a fixed $*$-unitary transformation but does not exhibit it; we construct it here. Define
 
 $$
 U=\frac{1}{\sqrt2}\begin{pmatrix}I_2&I_2\\-I_2&I_2\end{pmatrix},\qquad
 U^\dagger=\frac{1}{\sqrt2}\begin{pmatrix}I_2&-I_2\\I_2&I_2\end{pmatrix}.
 $$
 
-Then $U^\dagger U=I_4$, so $U$ is unitary, and a direct computation gives
+Then $U^\dagger U=I_4$, so $U$ is $*$-unitary, and a direct computation gives
 
 $$
 U\gamma^\mu_c\,U^\dagger=\gamma^\mu_d,\qquad U\gamma_5^c\,U^\dagger=\gamma_5^d .
@@ -323,7 +323,7 @@ The six problems test the parent article's plane-wave solutions and confirm them
 2. **Normalisation.** The covariant normalisations $\bar w^{(r)}w^{(s)}=2m\delta^{rs}$, $\bar v^{(r)}v^{(s)}=-2m\delta^{rs}$, and the orthogonality $\bar w^{(r)}v^{(s)}=0$ all follow from the single identity $(\boldsymbol\sigma\cdot\vec u_p)^2=I_2$; the Hermitian products are $2E\delta^{rs}$.
 3. **Spin sums.** The completeness relations $\sum_r w^{(r)}\bar w^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ follow from the two-spinor completeness relation, and satisfy $(\not p+m)(\not p-m)=0$ on shell.
 4. **Massless limit.** In the chiral basis each helicity eigenstate becomes a single Weyl spinor, with positive helicity locking to right-handedness and negative helicity to left-handedness; the mass term is the only term coupling the two chiralities.
-5. **Basis change.** The chiral and Dirac representations obey the same Clifford algebra with $g=\mathrm{diag}(+1,-1,-1,-1)$; the unitary $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ interpolates between them, and the Lorentz generators transform by conjugation, rotations acting chirality-even and boosts chirality-odd.
+5. **Basis change.** The chiral and Dirac representations obey the same Clifford algebra with $g=\mathrm{diag}(+1,-1,-1,-1)$; the $*$-unitary $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ interpolates between them, and the Lorentz generators transform by conjugation, rotations acting chirality-even and boosts chirality-odd.
 6. **Mass shell.** The biquaternionic condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the biquaternion-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.
 
 Two items needed in this exercise are not displayed in the parent article: the chiral negative-frequency spinors $v_\pm$ (constructed in Problem 4) and the explicit change-of-basis matrix $U$ (constructed in Problem 5). The parent states the existence of both but does not exhibit them; the constructions above are the ones that reproduce its stated results.
@@ -343,7 +343,7 @@ Two items needed in this exercise are not displayed in the parent article: the c
 | $w^{(r)}(\vec p),\,v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (Dirac basis) |
 | $w_\pm(\vec p),\,v_\pm(\vec p)$ | Helicity-indexed spinors (chiral basis) |
 | $\xi^{(r)},\eta^{(r)}$; $\chi_\pm$ | Two-spinors; helicity eigenspinors, $\boldsymbol\sigma\cdot\vec u_p\chi_\pm=\pm\chi_\pm$ |
-| $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ | Unitary change of basis, $\gamma^\mu_d=U\gamma^\mu_cU^\dagger$ |
+| $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ | $*$-Unitary change of basis, $\gamma^\mu_d=U\gamma^\mu_cU^\dagger$ |
 | $S^{\mu\nu}=\tfrac i4[\gamma^\mu,\gamma^\nu]$ | Lorentz generators of the spinor representation |
 | $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Wave biquaternion (four-wavevector) |
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternionic mass-shell condition |

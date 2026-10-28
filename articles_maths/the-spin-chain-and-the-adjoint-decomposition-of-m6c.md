@@ -361,7 +361,7 @@ Then $J_3$ preserves the two summands, while $J_+$ and $J_-$ exchange them. Neit
 
 **Proof.** The eigenvalues of $\Gamma$ are $+1$ on the odd-indexed vectors and $-1$ on the even-indexed ones. $J_3$ is diagonal, so it preserves each eigenspace. $J_+$ sends $v_{2r}$ to a multiple of $v_{2r-1}$ and $v_{2r+1}$ to a multiple of $v_{2r}$, so it exchanges the two; $J_-$ does the same in the other direction.
 
-**Remark (the dimension of the halves).** Each chiral half has dimension three. It is not a spin-$\tfrac12$ module: the spin-$\tfrac12$ of $\mathfrak{su}_2$ is two-dimensional. The correct statement is that each half is a three-dimensional space on which $J_3$ acts with three distinct weights and on which the *chiral* $\mathfrak{su}_2$, the copy acting on that half, acts as the spin-$1$ (adjoint) module, the symmetric square $\operatorname{Sym}^2(\mathbb{C}^2)$ of the spin-$\tfrac12$. The spin-$\tfrac12$ itself is the carrier of the biquaternion case $n=2$, §*The Comparison with $n=2$*.
+**Remark (the dimension of the halves).** Each chiral half has dimension three. It is not a spin-$\tfrac12$ module: the spin-$\tfrac12$ of $\mathfrak{su}_2$ is two-dimensional. The correct statement is this. The centraliser of $\Gamma$ is $M_3\oplus M_3$, and each half is the defining three-dimensional module of its $M_3$. Inside that $M_3$, the Peirce $\mathfrak{su}_2$ of a rank-one idempotent of the $M_3$ acts on the half as the spin-$1$ (adjoint) module, the symmetric square $\operatorname{Sym}^2(\mathbb{C}^2)$ of the spin-$\tfrac12$. The spin-$\tfrac12$ module itself is two-dimensional; it is the carrier of the biquaternion case $n=2$, §*The Comparison with $n=2$*.
 
 ## The Comparison with $n=2$
 
@@ -403,7 +403,7 @@ At $n=2$ this is $1+3$; at $n=6$ it is $1+3+5+7+9+11$. The number of summands is
 
 **Proof.** The character of the adjoint is $[n]_q[n]_{q^{-1}}$, and the $q$-integer identity gives $\sum_{j=0}^{n-1}[2j+1]_q$.
 
-**Remark (the contrast of the two chiralities).** For $n=2$ the chirality split is $1+1$, and each half is a line, the spin-$\tfrac12$ carrier itself. For $n=6$ the split is $3+3$, each half is three-dimensional, and the halves are not modules. The passage from $n=2$ to $n=6$ replaces the two lines by the two triples; the spin-$\tfrac12$ is the biquaternion block, and the spin-$\tfrac52$ is the full carrier.
+**Remark (the contrast of the two chiralities).** For $n=2$ the chirality split is $1+1$, and each half is a line; the pair of halves is the spin-$\tfrac12$ carrier. For $n=6$ the split is $3+3$, each half is three-dimensional, and the halves are modules for the block $M_3$ but not for the Peirce $\mathfrak{su}_2$ of the carrier. The passage from $n=2$ to $n=6$ replaces the two lines by the two triples; the spin-$\tfrac12$ is the $n=2$ carrier, and the spin-$\tfrac52$ is the $n=6$ carrier.
 
 ## Summary
 

@@ -95,7 +95,7 @@ On the remarkable subspaces the general quaternionic sesquilinear form coincides
 
 **Proof.** A real-linear automorphism of a non-degenerate real symmetric form of signature $(n,m)$ is an element of $O(n,m)$, of real dimension $n(n-1)/2$ with $n=p+q$, giving $1$, $15$ and $6$; the two definite rows give $O(2)$ and $O(6)\cong O(0,6)$, and the four Lorentzian rows give $O(1,3)$ four times.
 
-**Remark (the ambient Krein group).** The complex-linear automorphism group of the form on the algebra is the indefinite unitary group $\mathrm{U}(1,3)$ of real dimension $16$, of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the real-linear automorphism group of the realified form is the larger $O(2,6)$. The groups of the table are the largest groups preserving the restriction of the form to a subspace, and they are not induced by the ambient group: an automorphism of the ambient form need not preserve a given subspace.
+**Remark (the ambient Krein group).** The complex-linear automorphism group of the form on the algebra is the indefinite $*$-unitary group $\mathrm{U}(1,3)$ of real dimension $16$, of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the real-linear automorphism group of the realified form is the larger $O(2,6)$. The groups of the table are the largest groups preserving the restriction of the form to a subspace, and they are not induced by the ambient group: an automorphism of the ambient form need not preserve a given subspace.
 
 ## Worked Examples
 

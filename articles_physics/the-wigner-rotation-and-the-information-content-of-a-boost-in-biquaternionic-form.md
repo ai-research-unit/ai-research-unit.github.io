@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A boost is the elementary operation that changes the frame of a relativistic system, and in the biquaternion framework it is a single element of the algebra: a Hermitian unit-norm biquaternion. Its action on the material sector is a congruence and is completely transparent — a four-vector is carried to a four-vector by a linear map that preserves the biquaternion norm. Its action on the informational sector is not transparent, and it is not a pure rotation: the left action on the spinor is non-unitary, and the little-group part of it depends on the momentum. The residue of that momentum dependence is the **Wigner rotation**, and the purpose of this article is to reconstruct it from the algebra and to ask what information a boost carries.
+A boost is the elementary operation that changes the frame of a relativistic system, and in the biquaternion framework it is a single element of the algebra: a Hermitian unit-norm biquaternion. Its action on the material sector is a congruence and is completely transparent — a four-vector is carried to a four-vector by a linear map that preserves the biquaternion norm. Its action on the informational sector is not transparent, and it is not a pure rotation: the left action on the spinor is non-$*$-unitary, and the little-group part of it depends on the momentum. The residue of that momentum dependence is the **Wigner rotation**, and the purpose of this article is to reconstruct it from the algebra and to ask what information a boost carries.
 
 The question has three layers, and the article treats them in order. First, there is the algebraic layer: a product of two unit-norm rotors is again a unit-norm rotor, a product of two Hermitian ones is not Hermitian, and the mismatch is a rotation in the compact subgroup. The Wigner rotation is that mismatch, and it is a **one-cocycle** on the little-group bundle. Second, there is the operational layer: on a state with momentum superposition a boost acts as a **controlled rotation**, rotating the spin by an amount that depends on the momentum branch, and this is the precise sense in which a boost is an entangling gate between spin and momentum rather than a spin operation. Third, there is the information layer: what a boost carries is a rotation, its parameters are compressed from three to three but its action on a single spin is a two-parameter rotation, the information it can move from momentum to spin is bounded by the entropy of the induced channel, and a **closed loop** of boosts that returns the four-velocity to its starting value need not return the spin — it leaves a rotation whose angle is a curvature of the boost parameter space.
 
@@ -10,7 +10,7 @@ The findings are stated in advance.
 
 1. **The Wigner rotation is the compact part of a composed boost.** For unit-norm boost rotors $\tilde U_{\mathrm b,1},\tilde U_{\mathrm b,2}$ the product $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is again unit-norm, but it is Hermitian only when the two boost directions commute; in general it factors as $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde U_{\mathrm b}\tilde{W}$ with $\tilde{W}$ a unit real quaternion, i.e. a rotation.
 2. **It is a cocycle.** The Wigner rotation satisfies $\tilde{W}(\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1},\tilde{V}) = \tilde{W}(\tilde U_{\mathrm b,2},\tilde U_{\mathrm b,1}\tilde{V})\,\tilde{W}(\tilde U_{\mathrm b,1},\tilde{V})$, the cocycle condition of a little-group bundle; a boost is a connection on that bundle and the rotation is its parallel transport.
-3. **A boost is a controlled rotation.** On a momentum superposition the boost acts as $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde{W}_i$, a momentum-controlled unitary on the spin; it cannot be written as a momentum operation times a momentum-independent spin operation, and this is exactly why it can change spin entanglement while remaining globally unitary.
+3. **A boost is a controlled rotation.** On a momentum superposition the boost acts as $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde{W}_i$, a momentum-controlled $*$-unitary on the spin; it cannot be written as a momentum operation times a momentum-independent spin operation, and this is exactly why it can change spin entanglement while remaining globally $*$-unitary.
 4. **The information content is a rotation angle.** Everything a boost can do to a spin is summarised by the pair (angle, axis) of its Wigner rotation; the angle vanishes for collinear boosts and is maximal for transverse ones, and the entropy it can imprint on a transverse spin is $h((1+\cos\alpha)/2)$.
 5. **A closed loop of boosts leaves a rotation.** The product of boosts around a closed path in velocity space is a pure rotation about the normal to the path, with an angle that grows with the area; this is the Thomas–Wigner holonomy, the curvature of the boost connection, and the relativistic content of Thomas precession.
 
@@ -57,11 +57,11 @@ A boost acts on the two sectors differently. On the material sector it acts by c
 $$
 \tilde{Q}\ \longmapsto\ \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*} , \qquad \tilde{Q}\in\mathbb{M}_- ,
 $$
-which preserves the biquaternion norm because $\langle\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm b}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}\langle\tilde U_{\mathrm b}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}$: the interval, the mass shell, and the light cone are all invariant. On the informational sector it acts on the spinor by left multiplication, and that action is not unitary: $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b} = e_t$ fails for a boost, so the spinor norm is scaled,
+which preserves the biquaternion norm because $\langle\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm b}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}\langle\tilde U_{\mathrm b}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}$: the interval, the mass shell, and the light cone are all invariant. On the informational sector it acts on the spinor by left multiplication, and that action is not $*$-unitary: $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b} = e_t$ fails for a boost, so the spinor norm is scaled,
 $$
 \langle\tilde U_{\mathrm b}\xi|\tilde U_{\mathrm b}\xi\rangle = \langle\xi|\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}|\xi\rangle = \langle\xi|\xi\rangle + i\sinh\psi\,\langle\xi|\vec u_{\mathrm b}|\xi\rangle .
 $$
-A boost therefore has a norm-preserving action on four-vectors and a non-trivial, non-unitary action on spinors. The physically unitary spin operation is neither of these; it is the little-group part extracted below.
+A boost therefore has a norm-preserving action on four-vectors and a non-trivial, non-$*$-unitary action on spinors. The physically $*$-unitary spin operation is neither of these; it is the little-group part extracted below.
 
 ## The Wigner Rotation Reconstructed
 
@@ -90,7 +90,7 @@ $$
 \tilde{W} = 0.99366\,e_t + 0.11246\,\vec e_z ,
 \qquad \alpha = 12.9146^\circ , \qquad \vec u_{\mathrm r} = \vec u_z ,
 $$
-a rotation about the axis normal to the plane of the two boost directions, by an angle that grows with both rapidities. The rotation is compact, unitary, and has determinant one: it is the same kind of object as an ordinary spatial rotation, and it is the only part of the composed boost that acts on the spin as a quantum operation.
+a rotation about the axis normal to the plane of the two boost directions, by an angle that grows with both rapidities. The rotation is compact, $*$-unitary, and has determinant one: it is the same kind of object as an ordinary spatial rotation, and it is the only part of the composed boost that acts on the spin as a quantum operation.
 
 **The boundary.** The reconstruction is exact and kinematic. It says that a product of two boosts is a boost times a compact factor, and it identifies the factor. It does not say that the factor is a precession in time. Thomas precession is the time integral of that factor along an accelerated path, and it needs the acceleration and the dynamics (*Thomas Precession as a Biquaternion Rotor Effect*). The algebra supplies the decomposition and the angle at each step. The orbit supplies the rate.
 
@@ -135,7 +135,7 @@ $$
 \tilde W\in SU(2).
 $$
 
-The positive factor is the net boost and the unitary factor is the Wigner rotation. This is the Cartan pairing of the composed boost: the amplitude is the boost, the phase is the rotation, and the split is exact. The BCH defect is its infinitesimal form; the two agree to first order in the rapidities and not beyond.
+The positive factor is the net boost and the $*$-unitary factor is the Wigner rotation. This is the Cartan pairing of the composed boost: the amplitude is the boost, the phase is the rotation, and the split is exact. The BCH defect is its infinitesimal form; the two agree to first order in the rapidities and not beyond.
 
 **The reading.** The Wigner rotation is the compact part of the BCH defect of two boost exponents. The Hamilton angle of a product is not the sum of the Hamilton angles, and the correction is a rotation: the boosts do not form a subgroup of the Lorentz group, and the composition law is twisted by the little group. The defect is the algebraic origin of the cocycle of the next section, and the reason a boost is a controlled rotation rather than a spin-independent operation.
 
@@ -163,20 +163,20 @@ The cocycle is the source of the momentum dependence, and therefore of every fra
 
 ### The action on a superposition
 
-On a state with definite momentum, the boost acts on the spin by the single unitary $\tilde{W}$. On a superposition of momentum eigenstates it acts by a rotation on each branch,
+On a state with definite momentum, the boost acts on the spin by the single $*$-unitary $\tilde{W}$. On a superposition of momentum eigenstates it acts by a rotation on each branch,
 $$
 \boxed{\ |\Psi\rangle = \sum_i\sqrt{w_i}\,|p_i\rangle\otimes|\chi_i\rangle
 \ \longmapsto\
 \sum_i\sqrt{w_i}\,|p_{i,2}\rangle\otimes\bigl(\tilde{W}_i|\chi_i\rangle\bigr)\ },
 \qquad \tilde{W}_i = \tilde{W}(\tilde U_{\mathrm b},\tilde{V}_i),
 $$
-which is a **controlled unitary** in the standard sense of quantum information: the momentum plays the role of the control and the spin of the target, and the operation on the target is the branch-dependent Wigner rotation. When the branch momenta are orthogonal, the spin channel obtained by tracing the momentum is
+which is a **controlled $*$-unitary** in the standard sense of quantum information: the momentum plays the role of the control and the spin of the target, and the operation on the target is the branch-dependent Wigner rotation. When the branch momenta are orthogonal, the spin channel obtained by tracing the momentum is
 $$
 \tilde{Ϛ}\ \longmapsto\ \sum_i w_i\,\tilde{W}_i\,\tilde{Ϛ}\,\tilde{W}_i^{*} ,
 $$
-a mixed-unitary channel whose Kraus operators are the branch rotations.
+a mixed-$*$-unitary channel whose Kraus operators are the branch rotations.
 
-The controlled form is not an approximation or a convenience; it is forced. A boost is a unitary on the full Hilbert space of spin and momentum, and it moves the momentum. If it factored as a momentum operation times a spin operation,
+The controlled form is not an approximation or a convenience; it is forced. A boost is a $*$-unitary on the full Hilbert space of spin and momentum, and it moves the momentum. If it factored as a momentum operation times a spin operation,
 $$
 \tilde U_{\mathrm b} = \tilde{V}_{\mathrm{mom}}(\tilde U_{\mathrm b})\otimes\tilde u_{\mathrm r}(\tilde U_{\mathrm b}),
 $$
@@ -225,7 +225,7 @@ Four distinct notions of information content can be attached to a boost, and the
 
 ### The boost as an operation
 
-Two operational statements summarise the interpretation. First, a boost is a unitary operation, so it cannot increase the total information of a closed system; what it does is redistribute the information between the spin and momentum factors, and the reduced spin state loses purity exactly to the extent that correlation is created. Second, a boost is a **free operation** in the relativistic description, in the sense that an observer may change frames at will and the laws are frame-independent; but the spin state is not frame-independent, so the freedom has a price, and the price is the Wigner rotation. The information content of a boost is the information an observer must know about the boost in order to undo its effect on a spin: the pair (angle, axis), which is the same data as the rotation itself.
+Two operational statements summarise the interpretation. First, a boost is a $*$-unitary operation, so it cannot increase the total information of a closed system; what it does is redistribute the information between the spin and momentum factors, and the reduced spin state loses purity exactly to the extent that correlation is created. Second, a boost is a **free operation** in the relativistic description, in the sense that an observer may change frames at will and the laws are frame-independent; but the spin state is not frame-independent, so the freedom has a price, and the price is the Wigner rotation. The information content of a boost is the information an observer must know about the boost in order to undo its effect on a spin: the pair (angle, axis), which is the same data as the rotation itself.
 
 ## The Holonomy of a Boost Path
 
@@ -244,7 +244,7 @@ The four-velocity returns to its starting value by construction, so $\tilde{P}$ 
 | $1.0$ | $1.0$ | $24.10915^\circ$ | $\vec u_z$ |
 | $1.5$ | $1.0$ | $32.71532^\circ$ | $\vec u_z$ |
 
-with rotors $\tilde{P} = 0.99821\,e_t + 0.05988\,\vec e_z$, $0.99366\,e_t + 0.11246\,\vec e_z$, $0.97795\,e_t + 0.20884\,\vec e_z$, and $0.95952\,e_t + 0.28163\,\vec e_z$. Each is unitary, fixes the rest four-velocity, and is a rotation about the normal to the plane of the loop. The entry $(a,b)=(1,0.5)$ is the same rotation as the two-boost composition of the worked example, as it must be: the two constructions differ only in the way the second boost is closed.
+with rotors $\tilde{P} = 0.99821\,e_t + 0.05988\,\vec e_z$, $0.99366\,e_t + 0.11246\,\vec e_z$, $0.97795\,e_t + 0.20884\,\vec e_z$, and $0.95952\,e_t + 0.28163\,\vec e_z$. Each is $*$-unitary, fixes the rest four-velocity, and is a rotation about the normal to the plane of the loop. The entry $(a,b)=(1,0.5)$ is the same rotation as the two-boost composition of the worked example, as it must be: the two constructions differ only in the way the second boost is closed.
 
 **The angle is the area.** For small rapidities the holonomy angle is bilinear in the two loop parameters,
 $$
@@ -276,7 +276,7 @@ Three algebraic facts about a boost are therefore three faces of one statement. 
 
 ## Summary
 
-A boost is the Hermitian unit-norm biquaternion $\tilde U_{\mathrm b} = \cosh(\psi/2)e_t + i\sinh(\psi/2)\vec u_{\mathrm b}$. It acts on four-vectors by congruence, preserving the biquaternion norm, and on spinors by a non-unitary left multiplication. Its product with another boost is not a boost: the Cartan decomposition writes
+A boost is the Hermitian unit-norm biquaternion $\tilde U_{\mathrm b} = \cosh(\psi/2)e_t + i\sinh(\psi/2)\vec u_{\mathrm b}$. It acts on four-vectors by congruence, preserving the biquaternion norm, and on spinors by a non-$*$-unitary left multiplication. Its product with another boost is not a boost: the Cartan decomposition writes
 $$
 \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde U_{\mathrm b}\,\tilde{W}, \qquad \tilde{W}\in SU(2),
 $$
@@ -317,7 +317,7 @@ Because the boost parameter space is curved, a closed path of boosts that return
 
 ## Further Reading
 
-- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the original Wigner rotation.
+- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the original Wigner rotation.
 - [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the Hamilton angle, the two regimes and the BCH defect.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the Cartan amplitude and the word.
 - *The Root Pairing of the Polar Decomposition of Biquaternions*, for the Hamilton angle with a complex axis.
@@ -328,5 +328,5 @@ Because the boost parameter space is curved, a closed path of boosts that return
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the little-group construction and the transformation of one-particle states.
 - Asher Peres and Daniel R. Terno, "Quantum information and relativity theory," *Reviews of Modern Physics* **76** (2004) 93–123, for the Wigner rotation as an operation in relativistic quantum information.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor description of boosts and the composition of rotations.
-- Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for controlled unitary operations and the channel formalism.
+- Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for controlled $*$-unitary operations and the channel formalism.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the spinor description of the Lorentz group and its subgroups.

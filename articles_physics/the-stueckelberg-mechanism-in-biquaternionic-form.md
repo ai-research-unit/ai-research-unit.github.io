@@ -106,7 +106,7 @@ Taking the divergence of the vector equation gives $\partial/\partial Q_\nu\tild
 
 ## Gauge Fixing and the Degree-of-Freedom Count
 
-### The Stueckelberg (Unitary) Gauge
+### The Stueckelberg ($*$-Unitary) Gauge
 
 The gauge freedom is used to set $\chi=0$:
 $$
@@ -268,7 +268,7 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\mu$ | Stueckelberg mass (a parameter) |
 | $\partial/\partial Q_\mu F^{\mu\nu}-\mu^2A_{\mathrm u}^{\nu}=0$ | Vector equation of motion |
 | $\langle\tilde\nabla,\tilde A_{\mathrm u}\rangle_{\natural}=0$ | Scalar equation; the divergence of the vector equation |
-| $\chi=0$ | Unitary (Stueckelberg) gauge; reduces to Proca |
+| $\chi=0$ | $*$-Unitary (Stueckelberg) gauge; reduces to Proca |
 | $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi$ | $R_\xi$ gauge-fixing condition |
 | $\chi=\phi/\mu$ | Canonical normalization of the scalar |
 | $D_{\mu\nu}(p)=\dfrac{i}{p^2-\mu^2}\left(\eta_{\mu\nu}-\dfrac{(\xi-1)p_\mu p_\nu}{p^2-\xi\mu^2}\right)$ | Vector propagator in the $R_\xi$ gauge; Proca at $\xi\to\infty$ |

@@ -352,7 +352,7 @@ The traceless diagonal tori of the two chiral blocks act by left and right multi
 
 **Proof.** Conjugation by $\operatorname{diag}(tI_3,sI_3)$ sends the block $M$ to $tMs^{-1}=(t/s)M$; the traceless parts act inside $M_3(V_+)$ and $M_3(V_-)$, hence by left and right multiplication on $M$.
 
-**Corollary (the gauge invariant of the mass block).** The singular values of $M$ are all multiplied by $\lvert t/s\rvert$; their ratios are invariant under the relative scale, and the left and right unitary actions do not change them.
+**Corollary (the gauge invariant of the mass block).** The singular values of $M$ are all multiplied by $\lvert t/s\rvert$; their ratios are invariant under the relative scale, and the left and right $*$-unitary actions do not change them.
 
 **Proof.** The singular values of $(t/s)M$ are $\lvert t/s\rvert$ times those of $M$; left and right multiplication by unitaries preserves them.
 
@@ -427,7 +427,9 @@ and the mass block has dimension $m^2$.
 | $M_4$ | $2$ | $2+2$ | $4$ | $M_2\oplus M_2$ |
 | $M_6$ | $3$ | $3+3$ | $9$ | $M_3\oplus M_3$ |
 
-**Remark (the contrast).** In $M_2$ the chiral halves are lines and minimal left ideals; in $M_4$ they are planes and the chiral blocks are $M_2$; in $M_6$ they are three-spaces and the chiral blocks are $M_3$. The mass block grows as $m^2$, and the massless algebra grows as $2m^2$. **The biquaternion case is the case where the chiral half is one-dimensional; it is the exception, not the model.**
+**Proof.** Substitute $m=1,2,3$ in $m^2$ and $2m^2$.
+
+**Remark (the contrast).** In $M_2$ the chiral halves are lines and Peirce corners; in $M_4$ they are planes and the chiral blocks are $M_2$; in $M_6$ they are three-spaces and the chiral blocks are $M_3$. The mass block grows as $m^2$, and the massless algebra grows as $2m^2$. **The biquaternion case is the case where the chiral half is one-dimensional; it is the exception, not the model.**
 
 ## Summary
 
@@ -481,6 +483,4 @@ The $\mathbb{Z}/6$ grading has six pieces of dimension six; its $\mathbb{Z}/2$ q
 - [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
 - [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m6c.html), for the chain that mixes the two chiralities.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the $2+2$ split.
-- [The Two Chiralities of the Biquaternion Algebra](the-two-chiralities-of-the-biquaternion-algebra.html), for the $1+1$ split and the minimal left ideals.
 - [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the columns of $M_6$.
-- [Gradings and Filtrations](gradings-and-filtrations.html), for the general theory of group gradings and their quotients.

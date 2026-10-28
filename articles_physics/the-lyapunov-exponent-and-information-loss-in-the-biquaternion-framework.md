@@ -86,7 +86,7 @@ $$
 \delta\tilde{Ϛ}(t') = \tilde u(t')\,\delta\tilde{Ϛ}(0)\,\tilde u(t')^{*} .
 $$
 
-The biquaternion norm is invariant under this action, because the rotor is unitary and the biquaternion norm is multiplicative:
+The biquaternion norm is invariant under this action, because the rotor is $*$-unitary and the biquaternion norm is multiplicative:
 
 $$
 \langle\tilde u\,\tilde{Q}\,\tilde u^{*}\rangle_{\natural}
@@ -276,7 +276,7 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $\langle\delta\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2 e_t$ | Biquaternion norm of a tangent vector (negative definite) |
 | $\lambda(v) = \lim_t \tfrac{1}{2t'}\log|\langle\delta\tilde{Ϛ}(t')\rangle_{\natural}/\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}|$ | Lyapunov exponent in the biquaternion norm |
 | $\lambda_1\ge\lambda_2\ge\lambda_3$ | Lyapunov spectrum |
-| $\tilde u(t')$, $\tilde u\tilde u^{*} = e_t$ | Matrix-unitary rotor (reversible flow) |
+| $\tilde u(t')$, $\tilde u\tilde u^{*} = e_t$ | Matrix-$*$-unitary rotor (reversible flow) |
 | $\tilde{Ϛ}\mapsto\tilde u\tilde{Ϛ}\tilde u^{*}$ | Rotor conjugation; isometry, $\lambda_k=0$ |
 | $\Phi_{t'}$, $L(t')$, $\vec t(t')$ | Channel semigroup and its affine Bloch action |
 | $\vec r\mapsto L(t')\vec r+\vec t(t')$ | Affine Bloch action of a channel |

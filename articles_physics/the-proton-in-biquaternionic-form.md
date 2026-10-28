@@ -102,7 +102,7 @@ with spectra $\{+1\ (\text{multiplicity }4)\}$ and $\{0\ (\text{multiplicity }4)
 
 The charge operator must not be silently identified with a Lie-algebra generator without saying which; here the answer is definite, and it is itself a checkable structural result.
 
-The framework's abelian gauge group is the unitary part of the centre,
+The framework's abelian gauge group is the $*$-unitary part of the centre,
 
 $$
 \mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\},
@@ -276,7 +276,7 @@ What the framework does not supply is everything that makes the proton a proton.
 - [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html) — the sibling accounting, in which charge and mass are likewise parameters, and the statement that nothing in the algebra fixes $|ϙ_e|=|ϙ_p|$.
 - [The Spin–Statistics Theorem in Biquaternionic Form](the-spin-statistics-theorem-in-biquaternionic-form.html) — half-integer representations as native to the module, and the sense in which the spin–statistics theorem is transcribed rather than derived.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) — the module $\Delta=S\oplus\bar{S}$ and the Lorentz action that fixes the spin-$\tfrac12$ representation content.
-- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge group as the unitary part of the centre, on which the electric-charge identification rests.
+- [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge group as the $*$-unitary part of the centre, on which the electric-charge identification rests.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin operators $\tilde{S}_\mu=\tfrac\hbar2 i\vec e_\mu$ and the idempotent state structure used implicitly here.
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — the real structure and the Majorana-versus-Dirac interpretation that bears on charge conservation.
 

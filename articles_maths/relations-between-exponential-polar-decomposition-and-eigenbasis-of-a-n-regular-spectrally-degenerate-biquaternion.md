@@ -106,7 +106,7 @@ The polar factors do not preserve the flag in general.
 
 The eigenvalues of the factors are not degenerate. The positive factor has eigenvalues $e^{\psi/2}$ and $e^{-\psi/2}$, and the rotor has eigenvalues $e^{i\theta/2}$ and $e^{-i\theta/2}$. Their product has the double eigenvalue $\varepsilon$. The polar decomposition therefore splits a defective element into two diagonalizable factors whose product is defective. The defect is carried by the off-diagonal entries, not by the spectrum.
 
-This is the precise sense in which the Jordan reading and the polar reading are transverse. The Jordan basis triangularizes the element and the unit factor. The polar word diagonalizes neither the element nor the unit factor; it separates the element into a positive and a unitary factor, and only their product is unipotent.
+This is the precise sense in which the Jordan reading and the polar reading are transverse. The Jordan basis triangularizes the element and the unit factor. The polar word diagonalizes neither the element nor the unit factor; it separates the element into a positive and a $*$-unitary factor, and only their product is unipotent.
 
 ## The Dictionary
 
@@ -116,7 +116,7 @@ The spectral data and the polar data carry different real information.
 |---|---|---|
 | domain | $N\neq0$, $B^2=0$ | the same |
 | decomposition of | the element $\tilde Q$ | the unit factor $\tilde U$ |
-| factors | $Q_te_t+\vec\Upsilon$, a scalar and a nilpotent | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, positive times unitary |
+| factors | $Q_te_t+\vec\Upsilon$, a scalar and a nilpotent | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, positive times $*$-unitary |
 | eigenvalues | $Q_t$, double | $\varepsilon$, double for $\tilde U$; $e^{\pm\psi/2}$ and $e^{\pm i\theta/2}$ for the factors |
 | basis | a Jordan chain, not unique | an orthogonal frame $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$, up to degeneracies |
 | real data | $Q_t$ (2) and $\vec\Upsilon$ (4) | $r,\alpha$ (2), $\psi,\theta$ (2), frame (2), relation (1) |
@@ -221,7 +221,7 @@ $$
 \end{pmatrix},
 $$
 
-which is the unipotent block. The example shows the two readings side by side: the Jordan basis gives the element a triangular form, and the polar word gives it a positive and a unitary factor, neither of which is triangular in that basis.
+which is the unipotent block. The example shows the two readings side by side: the Jordan basis gives the element a triangular form, and the polar word gives it a positive and a $*$-unitary factor, neither of which is triangular in that basis.
 
 ## Summary
 

@@ -91,7 +91,7 @@ $$
 
 The commutator is the angular-momentum algebra of a spin-$\tfrac12$ system, and it is the matrix form of the Lie algebra of $\mathrm{SU}(2)$. The anticommutator is the Clifford relation of the same three directions.
 
-**Two roles of one direction.** The commutator is anti-Hermitian, so it lies in $\mathbb M_-$: the generators of the unitary group are the elements $\vec e_k$, whose images $-i\sigma_k$ are anti-Hermitian. The observables are the elements $i\vec e_k$, whose images $\sigma_k$ are Hermitian. The same three directions therefore appear twice, as generators and as observables, and the two appearances differ by the factor $i$. This is the precise content of the phrase that the Pauli matrices generate the rotations and measure the spin.
+**Two roles of one direction.** The commutator is anti-Hermitian, so it lies in $\mathbb M_-$: the generators of the $*$-unitary group are the elements $\vec e_k$, whose images $-i\sigma_k$ are anti-Hermitian. The observables are the elements $i\vec e_k$, whose images $\sigma_k$ are Hermitian. The same three directions therefore appear twice, as generators and as observables, and the two appearances differ by the factor $i$. This is the precise content of the phrase that the Pauli matrices generate the rotations and measure the spin.
 
 **The span.** The three spin operators span over $\mathbb R$ the traceless Hermitian subspace, $\mathbb M_+\cap\mathrm{Vect}(\mathbb B)$, of real dimension three. With the identity they span the whole of $\mathbb M_+$, of real dimension four. They do not span the algebra over $\mathbb R$: the products $\sigma_i\sigma_j$ leave the Hermitian subspace whenever $i\neq j$.
 

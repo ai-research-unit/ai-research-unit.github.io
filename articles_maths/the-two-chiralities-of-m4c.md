@@ -38,7 +38,7 @@ $$
 
 The matrix is diagonal with two $+1$'s and two $-1$'s. It is not the root: $\Gamma_0^2=I$, while $H_0^4=I$ and $H_0^2=\Gamma_0\ne I$.
 
-**The chirality is an involution, not a grading by the root.** The root $H$ has order four; $\Gamma$ has order two. The map $H\mapsto\Gamma$ is not injective. It forgets which line in each chirality carries $+1$ rather than $-1$, or $i$ rather than $-i$: on the $+1$ eigenspace of $\Gamma$ the root has eigenvalues $+1,-1$ on its two lines, and on the $-1$ eigenspace it has $i,-i$. The four choices are the four points of the fibre.
+**The chirality is an involution, not a grading by the root.** The root $H$ has order four; $\Gamma$ has order two. The map $H\mapsto\Gamma$ is not injective. It forgets the decomposition of each chiral plane into its two spectral lines: on the $+1$ eigenspace of $\Gamma$ the root restricts with eigenvalues $+1,-1$, and on the $-1$ eigenspace with $i,-i$. The fibre is the product of the two spaces of ordered decompositions, each an open subset of $\mathbb{P}^1\times\mathbb{P}^1$, of complex dimension four (real dimension eight); it is not a finite set. The image has dimension $8$, so the root set has dimension $12$.
 
 ## The Two Chiralities
 
@@ -246,7 +246,7 @@ is the decomposition into the eigenspaces of $\operatorname{Ad}_\Gamma$. They ar
 
 ## The Root and the Chirality
 
-**The map $H\mapsto\Gamma=H^2$ has four-dimensional fibres over its image.** Fix an involution $\Gamma$ with spectrum $(1,1,-1,-1)$. Its $+1$ eigenspace $\mathbb{C}^2_+$ and its $-1$ eigenspace $\mathbb{C}^2_-$ are determined. A root $H$ with $H^2=\Gamma$ must preserve each eigenspace, act on $\mathbb{C}^2_+$ with eigenvalues $+1,-1$ on two lines, and act on $\mathbb{C}^2_-$ with eigenvalues $i,-i$ on two lines. The data are:
+**The map $H\mapsto\Gamma=H^2$ has complex four-dimensional fibres over its image.** Fix an involution $\Gamma$ with spectrum $(1,1,-1,-1)$. Its $+1$ eigenspace $\mathbb{C}^2_+$ and its $-1$ eigenspace $\mathbb{C}^2_-$ are determined. A root $H$ with $H^2=\Gamma$ must preserve each eigenspace, act on $\mathbb{C}^2_+$ with eigenvalues $+1,-1$ on two lines, and act on $\mathbb{C}^2_-$ with eigenvalues $i,-i$ on two lines. The data are:
 
 - a decomposition of $\mathbb{C}^2_+$ into two ordered lines, a space of dimension $2$;
 - a decomposition of $\mathbb{C}^2_-$ into two ordered lines, a space of dimension $2$;
@@ -267,7 +267,7 @@ $$
 8+4=12,
 $$
 
-which is the count of *Roots of Unity and the Lagrange Idempotents*. The four discrete choices of eigenvalue assignment are the reason the fibre is described as "four roots over a fixed pair of line decompositions", not the whole fibre.
+which is the count of *Roots of Unity and the Lagrange Idempotents*. For a fixed unordered pair of line decompositions the four eigenvalue assignments are discrete labels; they do not add to the dimension of the fibre.
 
 **The chirality is not the root.** The root has order four and determines $\Gamma$; $\Gamma$ has order two and does not determine the root. The chirality is the invariant that survives the squaring, and the root is a square root of the chirality. The two chiralities are the eigenspaces of the surviving involution; the root is the finer data that splits each chirality into two lines with the eigenvalues $\pm1$ or $\pm i$.
 
@@ -302,11 +302,7 @@ and $e_2,e_4$ have chirality $-1$ while $e_1,e_3$ have chirality $+1$. The Peirc
 
 ## The Biquaternion Case
 
-**At $n=2$ the chirality is the root itself.** The biquaternion algebra is $M_2(\mathbb{C})$, the root $H$ has order two, and
-
-$$
-\Gamma=H^2=H .
-$$
+**At $n=2$ the chirality is the root itself.** The biquaternion algebra is $M_2(\mathbb{C})$, the root $H$ has order two, $H^2=I$, and the chirality is $\Gamma=H$. The general formula $\Gamma=H^2$ degenerates to the identity and is replaced by the root itself.
 
 The two chiralities are the two eigenspaces of $H$, which are lines. The chiral blocks are
 
@@ -319,7 +315,7 @@ $$
 
 each of dimension $1$, and the mass block is a line. The chiral algebra is the Cartan of $M_2$, of dimension $1$, not a product of two $\mathfrak{su}_2$'s. The product $\mathfrak{su}_2\times\mathfrak{su}_2$ is a feature of the four-dimensional carrier, where each chirality is a plane.
 
-**The degeneration.** At $n=2$ the two chiralities are minimal (lines), and the mass block is minimal (a line). At $n=4$ the two chiralities are planes and the mass block is four-dimensional. The passage from $n=2$ to $n=4$ replaces the two lines by two planes and the one mass line by a four-dimensional mass block. The chirality involution survives, but its eigenspaces grow.
+**The degeneration.** At $n=2$ the two chiralities are lines, and the mass block is a line. At $n=4$ the two chiralities are planes and the mass block is four-dimensional. The passage from $n=2$ to $n=4$ replaces the two lines by two planes and the one mass line by a four-dimensional mass block. The chirality involution survives, but its eigenspaces grow.
 
 ## Summary
 
@@ -374,4 +370,4 @@ $$
 - [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block and its polar decomposition.
 - [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the two chains.
 - [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the irreducible spin-$\tfrac32$ chain.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.

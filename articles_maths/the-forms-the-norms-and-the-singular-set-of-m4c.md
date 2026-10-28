@@ -106,13 +106,13 @@ $$
 
 The last is $\lVert A\rVert_F\le\sqrt{4}\sigma_1$, because there are four singular values each at most $\sigma_1$.
 
-**Unitary invariance.** All three norms are invariant under left and right multiplication by unitaries:
+**$*$-Unitary invariance.** All three norms are invariant under left and right multiplication by unitaries:
 
 $$
 \lVert UAV\rVert=\lVert A\rVert,\qquad U,V\in U(4),
 $$
 
-for each of the three norms. The invariance follows from the fact that the singular values are unchanged by unitary multiplication.
+for each of the three norms. The invariance follows from the fact that the singular values are unchanged by $*$-unitary multiplication.
 
 **Duality.** The operator and nuclear norms are dual:
 
@@ -252,7 +252,7 @@ $$
 
 which is complex-valued and has a nonzero zero set. Its zero set is the **null cone** of the zero divisors: the cone of nonzero elements whose norm vanishes. The regular model $M_4(\mathbb{C})_L$ has determinant equal to the square of the norm, and its singular set is that null cone. The full algebra $M_4(\mathbb{C})$ has the positive definite trace form and no null cone; its singular set is the determinantal hypersurface, which is a different object.
 
-**The comparison of the links.** The null cone of $\mathbb{B}$ is a complex cone of complex dimension $3$ and real dimension $6$; its link in the unit sphere $S^7$ is a real quadric of dimension $5$. The singular set $\Sigma$ of $M_4$ is a complex cone of complex dimension $15$ and real dimension $30$; its link in the unit sphere $S^{31}$ is a real hypersurface of dimension $29$. The first link is a quadric; the second is the determinantal hypersurface, stratified by rank. The two cones are not homeomorphic, and the definite form of $M_4$ does not produce a null cone.
+**The comparison of the links.** The null cone of $\mathbb{B}$ is a complex cone of complex dimension $3$ and real dimension $6$; its link in the unit sphere $S^7$ is a real algebraic variety of dimension $5$, a circle bundle over the quadric surface $\mathbb{P}^1\times\mathbb{P}^1$. The singular set $\Sigma$ of $M_4$ is a complex cone of complex dimension $15$ and real dimension $30$; its link in the unit sphere $S^{31}$ is a real algebraic hypersurface of dimension $29$, singular along the rank-at-most-two locus. The projectivised first link is the quadric surface; the link itself is a circle bundle over it. The second link is the link of the determinantal hypersurface, stratified by rank. The two cones are not homeomorphic, and the definite form of $M_4$ does not produce a null cone.
 
 **The regular model is not the full algebra.** The regular model's determinant is the square of the biquaternion norm, and its singular set is the null cone. The full algebra's determinant is the usual $4\times4$ determinant, and its singular set is the determinantal hypersurface. The positive definite form of the full algebra is not the quaternionic norm. The two singular sets have different dimensions and different links.
 
@@ -264,7 +264,7 @@ $$
 \lVert A\rVert_{\mathrm{op}}\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F\le4\lVert A\rVert_{\mathrm{op}}.
 $$
 
-The singular set $\Sigma=\{\det=0\}$ is an irreducible complex hypersurface of complex dimension $15$ and real dimension $30$, of real codimension $2$; its smooth part is the rank-$3$ stratum, and its singular locus is the rank-at-most-$2$ variety of complex dimension $12$. The rank strata have complex dimensions $0,7,12,15,16$ for ranks $0,1,2,3,4$. The singular set is a cone in the algebraic sense, but it is not the isotropic cone of the definite form; the only isotropic vector is $0$. The biquaternion algebra, by contrast, has an indefinite norm and a genuine null cone; its link is a quadric, while the link of the $M_4$ singular set is the determinantal hypersurface.
+The singular set $\Sigma=\{\det=0\}$ is an irreducible complex hypersurface of complex dimension $15$ and real dimension $30$, of real codimension $2$; its smooth part is the rank-$3$ stratum, and its singular locus is the rank-at-most-$2$ variety of complex dimension $12$. The rank strata have complex dimensions $0,7,12,15,16$ for ranks $0,1,2,3,4$. The singular set is a cone in the algebraic sense, but it is not the isotropic cone of the definite form; the only isotropic vector is $0$. The biquaternion algebra, by contrast, has a complex-valued norm and a genuine null cone; its projectivised null cone is a quadric surface and its link is a circle bundle over it, while the link of the $M_4$ singular set is the link of the determinantal hypersurface.
 
 $$
 \boxed{\ \lVert A\rVert_{\mathrm{op}}\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F,\quad \dim_\mathbb{C}\Sigma=15,\quad \dim_\mathbb{R}\Sigma=30,\quad \operatorname{codim}_\mathbb{R}\Sigma=2. }

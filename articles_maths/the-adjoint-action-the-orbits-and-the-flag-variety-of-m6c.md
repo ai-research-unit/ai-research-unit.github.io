@@ -162,6 +162,8 @@ the same group that rescales the simple nilpotents of *The Frame, the Simple Nil
 
 ### The Orbit–Stabilizer Count
 
+All dimensions in this section are complex dimensions.
+
 **Theorem.** For the cyclic element,
 
 $$
@@ -423,5 +425,5 @@ The flag variety $GL_6/B$ has dimension $15$; the Grassmannians have dimensions 
 - [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the gauge torus.
 - [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the Grassmannian of the idempotents.
 - [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the projective space of the minimal ideals.
-- [The Adjoint Action and the Orbits](the-adjoint-action-and-the-orbits.html), for the general theory of conjugacy classes.
-- [The Flag Variety](the-flag-variety.html), for the general theory of $GL_n/B$ and the Plücker embedding.
+- [The Adjoint Action of a Lie Algebra](the-adjoint-action-of-a-lie-algebra.html), for the general theory of conjugacy classes.
+- [Flag Manifolds](flag-manifolds.html), for the general theory of $GL_n/B$ and the Plücker embedding.

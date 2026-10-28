@@ -118,7 +118,7 @@ The definite norm of $\mathbb{H}$ is what keeps its two groups compact, and the 
 | $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\operatorname{Im}\mathbb{H}$ | Derivation algebra, dimension $3$ |
 | $D_k = \tfrac12\operatorname{ad}_{\vec e_k}$ | Basis with $[D_1,D_2] = D_3$ and cyclic |
 | $[\vec q,\vec p] = 2(\vec q\times\vec p)$ | Bracket on $\operatorname{Im}\mathbb{H}$ |
-| $\mathrm{SO}(3)\cong\mathrm{SU}(2)$ | Orthogonal and special unitary Lie algebras |
+| $\mathrm{SO}(3)\cong\mathrm{SU}(2)$ | Orthogonal and special $*$-unitary Lie algebras |
 
 ## Further Reading
 

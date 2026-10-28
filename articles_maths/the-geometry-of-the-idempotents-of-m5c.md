@@ -114,9 +114,9 @@ and the center acts trivially, so the same dimension holds for $PGL_5$.
 
 **Proof.** A complement $K$ is the graph of a linear map $\mathbb{C}^5/L\to L$; the graph is a $(5-p)$-plane transverse to $L$; every complement arises uniquely from such a map. The space of maps is a vector space, hence contractible.
 
-**Corollary.** The idempotents of rank $p$ are the sections of the affine bundle; the zero section would be a canonical complement, which does not exist without a choice of Hermitian metric.
+**Corollary.** The idempotents of rank $p$ are the **total space** of the affine bundle; a section would be a canonical choice of complement for each $p$-plane, which does not exist without a choice of Hermitian metric.
 
-**Proof.** A canonical complement would be the orthogonal complement, which requires a metric; without a metric, there is no zero section.
+**Proof.** A canonical complement would be the orthogonal complement, which requires a metric; without a metric, there is no preferred point in each fibre, hence no canonical section.
 
 **Remark.** **The idempotents are the transverse pairs, not the nested flags.** The image and the kernel are complementary, not nested; the nested partial flag $L\subset K$ is a different homogeneous space, of dimension $p(5-p)$ for the Grassmannian, not $2p(5-p)$. The affine bundle of complements is the geometric content of the idempotent.
 
@@ -142,9 +142,9 @@ and the center acts trivially, so the same dimension holds for $PGL_5$.
 
 **Proof.** Each orbit is a homogeneous space, hence smooth; the rank is locally constant, so the orbits are the connected components (each orbit is connected because $GL_5(\mathbb{C})$ is connected); the dimensions are $2p(5-p)$.
 
-**Corollary.** The closure of $\mathcal{I}_p$ in $M_5$ may contain non-idempotent matrices of rank at most $p$ (for $p\ge2$), but it contains no idempotent of a different rank. The idempotent variety itself has no closure inclusions between different ranks.
+**Corollary.** The closure of $\mathcal{I}_p$ in $M_5$ is $\mathcal{I}_p$ itself: each rank stratum is closed in $M_5$. There is no degeneration of a rank-$p$ idempotent to a different rank.
 
-**Proof.** A sequence $P_n\in\mathcal{I}_p$ has trace $p$, so its limit has trace $p$; the limit can be non-idempotent and of lower rank, but if it were idempotent its rank would be $\operatorname{tr}P=p$. The idempotent variety is closed, because $P^2=P$ is polynomial; hence no idempotent of a different rank lies in the closure.
+**Proof.** The idempotent variety is closed, because $P^2=P$ is polynomial; the rank is continuous and equals the trace on the variety; the preimage of $p$ is closed and open in the variety, hence closed in $M_5$.
 
 ### The Peirce Decomposition
 
@@ -183,7 +183,7 @@ The **full flag variety** $\mathcal{F}=GL_5/B$ is the set of full flags, where $
 
 **Corollary.** The flag variety is compact and projective; it is the quotient of $GL_5$ by the Borel.
 
-**Proof.** The flag variety is a closed subvariety of a product of Grassmannians, hence projective; it is compact because $GL_5/B$ is the image of the compact unitary group $U(5)$ (the Iwasawa decomposition).
+**Proof.** The flag variety is a closed subvariety of a product of Grassmannians, hence projective; it is compact because $GL_5/B$ is the image of the compact $*$-unitary group $U(5)$ (the Iwasawa decomposition).
 
 ### The Dimension
 
@@ -232,7 +232,7 @@ $$
 
 **Proof.** Evaluate the formula for the two types.
 
-**Corollary.** The nested partial flags are not the idempotents: the nested partial flag of type $(p,5-p)$ has dimension $p(5-p)$ for the $p$-plane alone, while the rank-$p$ idempotents have dimension $2p(5-p)$. The idempotent needs the transverse kernel as well.
+**Corollary.** The nested partial flags are not the idempotents: the nested partial flag of type $(p)$ (a single $p$-plane) has dimension $p(5-p)$, while the rank-$p$ idempotents have dimension $2p(5-p)$. The idempotent needs the transverse kernel as well.
 
 **Proof.** The formula gives $p(5-p)$ for the nested flag; the idempotent adds the complement, of dimension $p(5-p)$.
 
@@ -242,7 +242,7 @@ $$
 
 **Proof.** The pair determines the projection; the stabilizer is the block diagonal; the dimension is $2p(5-p)$.
 
-**Corollary.** The transverse pair is not a nested partial flag; the incidence "L\subset K" is a different variety, of dimension $p(5-p)$; the transverse incidence "L\oplus K=V" is open in $\operatorname{Gr}(p,5)\times\operatorname{Gr}(5-p,5)$.
+**Corollary.** The transverse pair is not a nested partial flag. For $p\le2$, the incidence $L\subset K$ is a partial flag of type $(p,5-p)$ and has dimension $p(10-3p)$ (equal to $7$ for $p=1$ and $8$ for $p=2$); for $p\ge3$ the dual incidence $K\subset L$ has dimension $(5-p)(10-3(5-p))$, which is $8$ for $p=3$ and $7$ for $p=4$. The transverse incidence $L\oplus K=V$ is open in $\operatorname{Gr}(p,5)\times\operatorname{Gr}(5-p,5)$, of dimension $2p(5-p)$.
 
 **Proof.** The nested incidence is the closed condition $L\subset K$; the transverse condition is the open condition $L\cap K=0$; the dimensions differ.
 

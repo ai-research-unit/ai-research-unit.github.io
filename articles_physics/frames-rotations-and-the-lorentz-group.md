@@ -16,7 +16,7 @@ The article reads the group that carries the motions, the sandwich that acts, th
 | The algebra automorphisms and the real automorphism group | [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html) |
 | The group of units and the norm-one slice | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The topology of the unit group and its maximal compact subgroup | [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html) |
-| The unitary group and the quotient $U(\mathbb{B})/U(1)\cong SO(3)$ | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
+| The $*$-unitary group and the quotient $U(\mathbb{B})/U(1)\cong SO(3)$ | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 
 ## The Group that Carries the Motions
 
@@ -60,7 +60,7 @@ $$
 $$
 the second component consisting of the conjugate-linear automorphisms.
 
-**The automorphism group is the same abstract group with a different action.** The Lorentz group appears twice: as the quotient of the norm-one group, acting on the material sector by the dagger sandwich, and as the automorphism group of the algebra, acting by inner automorphisms. The two actions agree on the unitary slice, where the inverse and the Hermitian conjugate coincide; they differ on a boost. Interpreted physically, the same group can be a change of frame and a symmetry of the algebraic structure, and the two interpretations are not the same map.
+**The automorphism group is the same abstract group with a different action.** The Lorentz group appears twice: as the quotient of the norm-one group, acting on the material sector by the dagger sandwich, and as the automorphism group of the algebra, acting by inner automorphisms. The two actions agree on the $*$-unitary slice, where the inverse and the Hermitian conjugate coincide; they differ on a boost. Interpreted physically, the same group can be a change of frame and a symmetry of the algebraic structure, and the two interpretations are not the same map.
 
 **The boundary of the interpretation.** The identification of $PGL_2(\mathbb{C})$ with $SO^{+}(1,3)$ is an isomorphism of real Lie groups, not of complex groups; the complex group is $SO(3,\mathbb{C})$. A physical Lorentz transformation is the action on $\mathbb{M}_{-}$, not the inner automorphism, and the article does not identify the two.
 
@@ -104,7 +104,7 @@ On the whole algebra its kernel is the central circle $\mathrm{U}(1)e_t$; on the
 
 **The central phase is not a frame.** The kernel of the sandwich on the whole algebra is the central circle, so an overall phase acts trivially. Interpreted physically, a global phase is a redundancy of the action, not a change of frame; two units that differ by a phase give the same transformation of the algebra.
 
-**The boundary of the interpretations.** The sandwich preserves $\mathbb{M}_{+}$, but a boost does not preserve its trace-one slice: the trace-one Bloch ball is not invariant under the full Lorentz group. The finite-dimensional Hermitian sector is the space of Hermitian forms, not the relativistic state space; making the state space itself relativistic is open work. The algebra supplies the covariant action on the forms, not a unitary representation of the Lorentz group on a finite-dimensional state space.
+**The boundary of the interpretations.** The sandwich preserves $\mathbb{M}_{+}$, but a boost does not preserve its trace-one slice: the trace-one Bloch ball is not invariant under the full Lorentz group. The finite-dimensional Hermitian sector is the space of Hermitian forms, not the relativistic state space; making the state space itself relativistic is open work. The algebra supplies the covariant action on the forms, not a $*$-unitary representation of the Lorentz group on a finite-dimensional state space.
 
 ## Rotations
 
@@ -125,7 +125,7 @@ Sp(1)\longrightarrow SO(3)
 $$
 is two-to-one.
 
-**A rotation is an algebra automorphism.** The rotor is unitary, so the inverse and the Hermitian conjugate coincide, and the sandwich preserves the product as well as the interval. Interpreted physically, a rotation is a symmetry of the algebra and not only of the form: it can be applied to any element, and it preserves the centre, the vector subspace, the quaternion halves and the two sectors. The rotation is the only kind of frame change with this property.
+**A rotation is an algebra automorphism.** The rotor is $*$-unitary, so the inverse and the Hermitian conjugate coincide, and the sandwich preserves the product as well as the interval. Interpreted physically, a rotation is a symmetry of the algebra and not only of the form: it can be applied to any element, and it preserves the centre, the vector subspace, the quaternion halves and the two sectors. The rotation is the only kind of frame change with this property.
 
 **The half-angle is the spinor.** The rotation acts once through the left factor and once through the right, so the angle in the rotor is half the angle of the motion. Interpreted physically, the halved angle is the spinor: a rotation by $2\pi$ is $-e_t$ on the rotor, and the sign is the double cover. The sign is invisible on a four-vector and visible on a spinor.
 
@@ -148,7 +148,7 @@ $$
 \qquad
 \tanh\psi=\frac{v}{c}.
 $$
-It is Hermitian, $\tilde U^{*}=\tilde U$, of norm one, and it is not unitary: $\tilde U^{*}\tilde U=\tilde U^{2}\neq e_t$ unless $\psi=0$. Its sandwich is
+It is Hermitian, $\tilde U^{*}=\tilde U$, of norm one, and it is not $*$-unitary: $\tilde U^{*}\tilde U=\tilde U^{2}\neq e_t$ unless $\psi=0$. Its sandwich is
 $$
 \mathrm{H}_{\tilde U}(\tilde Q_3)=\tilde U\,\tilde Q_3\,\tilde U,
 $$
@@ -226,7 +226,7 @@ There $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has determinant $-1
 
 **A reflection is an odd isometry.** The reflection reverses one direction and fixes the hyperplane orthogonal to it; it is an isometry of the form and an orientation-reversing map of the vector subspace. Interpreted physically, it is a mirror: a parity in one direction, not a rotation.
 
-**Parity is outside the connected group.** The unit group is connected, and a reflection is a sandwich by a unit but not an inner automorphism: with $v$ spacelike the sandwich equals minus the inner automorphism by $v$. The reflections generate the orthogonal group of the vector subspace, which is the image of the Pin group; the versors are the real unit vectors of that subspace, and they lie in $\mathbb{B}$ but not in its unitary subgroup. Interpreted physically, parity is a discrete symmetry not connected to the identity, and it is not a continuous motion. The Lorentz reflections are not of the shape $\rho_v$ and live in the Clifford layer, not in the algebra.
+**Parity is outside the connected group.** The unit group is connected, and a reflection is a sandwich by a unit but not an inner automorphism: with $v$ spacelike the sandwich equals minus the inner automorphism by $v$. The reflections generate the orthogonal group of the vector subspace, which is the image of the Pin group; the versors are the real unit vectors of that subspace, and they lie in $\mathbb{B}$ but not in its $*$-unitary subgroup. Interpreted physically, parity is a discrete symmetry not connected to the identity, and it is not a continuous motion. The Lorentz reflections are not of the shape $\rho_v$ and live in the Clifford layer, not in the algebra.
 
 **Chirality is not an element of the algebra.** The two half-integral representations of the Lorentz group are conjugate, and the connected unit group does not exchange them; the exchange is an outer symmetry of the representation theory. Interpreted physically, chirality is a property of the representation, not an element of the algebra; the algebra's reflections act on the vector subspace, not on the spinor chirality.
 
@@ -244,7 +244,7 @@ The article does not derive the Lorentz group from the algebra: it reads the gro
 
 The norm-one group $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group, and its compact part $Sp(1)\cong SU(2)$ is the double cover of the spatial rotations. The Lorentz group is the quotient by the central sign, not a subgroup of the quaternion layer; the algebra carries the spin frame. The dagger sandwich $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ is the change of frame: it preserves the two sectors, scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, has kernel $\mathrm{U}(1)e_t$ on the algebra and $\{\pm e_t\}$ on the norm-one slice, and acts as $SO^{+}(1,3)$ there. The interval is the frame-independent object, and the central phase is not a frame.
 
-A rotation is a unitary rotor, an algebra automorphism, with the angle halved in the element and the double cover $Sp(1)\to SO(3)$. A boost is a Hermitian norm-one rotor, not unitary, and not an automorphism: it preserves the interval and the sectors but not the product, the centre or the vector subspace. Two non-collinear boosts compose to a boost and a Wigner rotation. The orbits are the future and past mass shells and the future and past light cones; a null vector is a zero divisor and has no rest frame. The reflections $\rho_v$ are odd isometries of the vector subspace, images of the Pin group and not inner automorphisms: they are Hermitian sandwiches by the spacelike unit vectors, equal to minus the inner automorphisms; parity lies outside the connected Lorentz group, and chirality exchange is not an element of the group at all.
+A rotation is a $*$-unitary rotor, an algebra automorphism, with the angle halved in the element and the double cover $Sp(1)\to SO(3)$. A boost is a Hermitian norm-one rotor, not $*$-unitary, and not an automorphism: it preserves the interval and the sectors but not the product, the centre or the vector subspace. Two non-collinear boosts compose to a boost and a Wigner rotation. The orbits are the future and past mass shells and the future and past light cones; a null vector is a zero divisor and has no rest frame. The reflections $\rho_v$ are odd isometries of the vector subspace, images of the Pin group and not inner automorphisms: they are Hermitian sandwiches by the spacelike unit vectors, equal to minus the inner automorphisms; parity lies outside the connected Lorentz group, and chirality exchange is not an element of the group at all.
 
 ## Summary of Notation
 

@@ -162,7 +162,7 @@ $$
 \tilde u_{\mathrm r} = \tilde{H}^{-1}P = \tilde{H}^{\natural}P
 = \left(\cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\vec u_4\right)\left(a + \vec q + i\vec w\right)
 $$
-is the unitary factor of the polar decomposition of $P$ (equivalently $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}^{-1}\langle P\rangle_{\natural} = 1$ and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t$ with $\tilde u_{\mathrm r}$ a unit real quaternion). Its scalar part is
+is the $*$-unitary factor of the polar decomposition of $P$ (equivalently $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}^{-1}\langle P\rangle_{\natural} = 1$ and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t$ with $\tilde u_{\mathrm r}$ a unit real quaternion). Its scalar part is
 $$
 \mathrm{Sc}(\tilde u_{\mathrm r}) = a\cosh\frac{\Psi}{2} - \sinh\frac{\Psi}{2}\left(\vec u_4\cdot\vec w\right),
 $$

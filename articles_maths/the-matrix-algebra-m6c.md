@@ -172,7 +172,7 @@ The units $E_{ij}$ with $i\neq j$ and the differences $E_{ii}-E_{jj}$ (for $j=2,
 
 ### Hermitian and Skew-Hermitian Parts
 
-**Definition.** The **conjugate transpose** of $A$ is $A^*=\bar A^{\mathsf T}$, with entries $(A^*)_{ij}=\overline{A_{ji}}$. An element is **Hermitian** if $A^*=A$, **skew-Hermitian** if $A^*=-A$, and **unitary** if $A^*A=I_6$.
+**Definition.** The **conjugate transpose** of $A$ is $A^*=\bar A^{\mathsf T}$, with entries $(A^*)_{ij}=\overline{A_{ji}}$. An element is **Hermitian** if $A^*=A$, **skew-Hermitian** if $A^*=-A$, and **$*$-unitary** if $A^*A=I_6$.
 
 **Proposition.** Every $A\in M_6(\mathbb{C})$ splits uniquely as
 
@@ -200,7 +200,7 @@ $$
 
 **Proof.** If $A\in\mathfrak{u}(6)\cap\mathrm i\mathfrak{u}(6)$, then $A^*=-A$ and $A=\mathrm iB$ with $B^*=-B$, so $A^*=(\mathrm iB)^*=-\mathrm iB^*=\mathrm iB=A$, hence $A=0$. The dimensions add: $36+36=72$. The complex scalar multiplication on the right is the complexification.
 
-**Corollary (the unitary group).** $U(6)=\{A:A^*A=I_6\}$ is a compact real Lie group of dimension $36$, and $PU(6)=U(6)/U(1)$ has dimension $35$.
+**Corollary (the $*$-unitary group).** $U(6)=\{A:A^*A=I_6\}$ is a compact real Lie group of dimension $36$, and $PU(6)=U(6)/U(1)$ has dimension $35$.
 
 **Proof.** $U(6)$ is closed and bounded in $M_6(\mathbb{C})\cong\mathbb{R}^{72}$, hence compact; its Lie algebra is $\mathfrak{u}(6)$, of dimension $36$. The centre $U(1)$ acts freely, so the quotient has dimension $35$.
 
@@ -377,8 +377,7 @@ The real structure is $M_6=\mathfrak{u}(6)\oplus\mathrm i\mathfrak{u}(6)$, with 
 - [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the positive definite trace form and the real forms.
 - [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the column ideals and the simple modules.
 - [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for $PGL_6$ and its action.
-- [Simple Algebras](simple-algebras.html), for central simple algebras, Skolem–Noether and the inner derivations.
-- [Semisimple Algebras and the Artin–Wedderburn Theorem](semisimple-algebras-and-the-artin-wedderburn-theorem.html), for isotypic algebras and the length.
+- [Central Simple Algebras and the Brauer Group](central-simple-algebras-and-the-brauer-group.html), for the simplicity, Skolem–Noether and the inner derivations.
 - Israel Nathan Herstein, *Noncommutative Rings* (Carus Mathematical Monographs, 1968), for the centre, the ideals and the matrix units.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the trace, the derivations and the automorphisms.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for $\mathfrak{sl}_6$ and the Killing form.

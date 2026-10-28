@@ -8,7 +8,7 @@ $$
 \tilde Q=\tilde Q_H\,\tilde Q_0,
 $$
 
-with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. On the $\natural$-regular elements, those with $\langle\tilde Q\rangle_{\natural}\neq0$, the pair sharpens: $\tilde Q_H$ is positive definite and $\tilde Q_0$ is unitary. This article takes the pair apart.
+with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. On the $\natural$-regular elements, those with $\langle\tilde Q\rangle_{\natural}\neq0$, the pair sharpens: $\tilde Q_H$ is positive definite and $\tilde Q_0$ is $*$-unitary. This article takes the pair apart.
 
 The pair has two factors, and each factor splits again into two. The element is written first as a modulus times a unit factor,
 
@@ -48,7 +48,7 @@ $$
 \tilde Q_H=\bigl(\tilde Q\tilde Q^{*}\bigr)^{1/2},\qquad \tilde Q_0=\tilde Q_H^{-1}\tilde Q .
 $$
 
-**Proposition (the sharpened factors).** If $\langle\tilde Q\rangle_{\natural}\neq0$, then $\tilde Q_H$ is positive definite and $\tilde Q_0$ is unitary.
+**Proposition (the sharpened factors).** If $\langle\tilde Q\rangle_{\natural}\neq0$, then $\tilde Q_H$ is positive definite and $\tilde Q_0$ is $*$-unitary.
 
 *Proof.* The element $\tilde Q\tilde Q^{*}$ is Hermitian and positive definite, being the product of an invertible element and its Hermitian conjugate; its unique square root in the cone is positive definite, so $\tilde Q_H$ is positive definite and invertible. Then
 
@@ -186,7 +186,7 @@ $$
 \tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U .
 $$
 
-It is unitary, because
+It is $*$-unitary, because
 
 $$
 \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=\tilde U_{\mathrm b}^{-1}\tilde U\tilde U^{*}\tilde U_{\mathrm b}^{-1}=\tilde U_{\mathrm b}^{-1}\tilde U_{\mathrm b}^{2}\tilde U_{\mathrm b}^{-1}=e_t,
@@ -204,7 +204,7 @@ $$
 \tilde u_{\mathrm r}=\frac{(2s+1)e_t-\tilde U\tilde U^{*}}{\sqrt{2(1+s)}}\;\tilde U .
 $$
 
-Both conditions are needed in the reality argument: unitarity alone does not force the coefficients to be real, and the norm-one condition alone does not force the element to be unitary. Together they do.
+Both conditions are needed in the reality argument: unitarity alone does not force the coefficients to be real, and the norm-one condition alone does not force the element to be $*$-unitary. Together they do.
 
 ### The word
 
@@ -231,11 +231,11 @@ $$
 \boxed{\;\tilde Q_H=r\,\tilde U_{\mathrm b},\qquad \tilde Q_0=\zeta\,\tilde u_{\mathrm r},\qquad \Rho=r\zeta,\qquad \tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.\;}
 $$
 
-Indeed $\tilde Q\tilde Q^{*}=r^{2}\tilde U_{\mathrm b}^{2}$, since $\zeta$ and $\tilde u_{\mathrm r}$ are unitary, so the Hermitian square root is $r\tilde U_{\mathrm b}$; and $\tilde Q_H^{-1}\tilde Q=\zeta\tilde u_{\mathrm r}$. The Hermitian factor carries the scale and the boost, and the unitary factor the phase and the rotor. The first is Hermitian positive definite, the second unitary, and the two are the Cartan Hermitian pair of §*The Three Pairings*. The modulus–unit pair brackets the same word the other way, and the two bracketings are the two two-factor readings of the four factors.
+Indeed $\tilde Q\tilde Q^{*}=r^{2}\tilde U_{\mathrm b}^{2}$, since $\zeta$ and $\tilde u_{\mathrm r}$ are $*$-unitary, so the Hermitian square root is $r\tilde U_{\mathrm b}$; and $\tilde Q_H^{-1}\tilde Q=\zeta\tilde u_{\mathrm r}$. The Hermitian factor carries the scale and the boost, and the $*$-unitary factor the phase and the rotor. The first is Hermitian positive definite, the second $*$-unitary, and the two are the Cartan Hermitian pair of §*The Three Pairings*. The modulus–unit pair brackets the same word the other way, and the two bracketings are the two two-factor readings of the four factors.
 
 ### The branch cut
 
-The four separate factors are not continuous across the negative real axis of the norm, although the pair $(\tilde Q_H,\tilde Q_0)$ is. At a norm that crosses the cut, $\Rho$ jumps from $i\sqrt{\lvert N\rvert}$ to $-i\sqrt{\lvert N\rvert}$, so $\zeta$ and $\tilde u_{\mathrm r}$ both change sign while their product does not. The scale, the boost, the Hermitian factor and the unitary factor are continuous there; the phase and the rotor are not. The four-factor word is therefore a decomposition of the element into four continuous functions off the cut, and into four functions that jump together on it.
+The four separate factors are not continuous across the negative real axis of the norm, although the pair $(\tilde Q_H,\tilde Q_0)$ is. At a norm that crosses the cut, $\Rho$ jumps from $i\sqrt{\lvert N\rvert}$ to $-i\sqrt{\lvert N\rvert}$, so $\zeta$ and $\tilde u_{\mathrm r}$ both change sign while their product does not. The scale, the boost, the Hermitian factor and the $*$-unitary factor are continuous there; the phase and the rotor are not. The four-factor word is therefore a decomposition of the element into four continuous functions off the cut, and into four functions that jump together on it.
 
 ## The Group of Units
 
@@ -255,13 +255,13 @@ $$
 
 with $\varepsilon=-1$ exactly when the product $\Rho_1\Rho_2$ leaves the principal half-plane. The sign is central, so it can be absorbed by the phase or by the rotor. The factors multiply, but the parameters of the boost and of the rotor do not add: after the multiplication the middle product $\tilde u_{\mathrm r,1}\tilde U_{\mathrm b,2}$ has to be split again.
 
-**Proposition (the maximal compact subgroup).** The maximal compact subgroup of $\mathbb B^{\times}$ is the unitary group $U(2)$, the set of words with $r=1$ and $\tilde U_{\mathrm b}=e_t$,
+**Proposition (the maximal compact subgroup).** The maximal compact subgroup of $\mathbb B^{\times}$ is the $*$-unitary group $U(2)$, the set of words with $r=1$ and $\tilde U_{\mathrm b}=e_t$,
 
 $$
 U(2)=\{\zeta\,\tilde u_{\mathrm r}:\lvert\zeta\rvert=1,\ \tilde u_{\mathrm r}\in SU(2)\}.
 $$
 
-*Proof.* The compact part of the word is the phase times the rotor, and both are unitary, so their product is unitary; the scale and the boost are positive and non-compact. Conversely, if $V$ is unitary, then $\det V$ is a unit complex number; choose $\zeta$ in the branch with $\zeta^{2}=\det V$, and $K=\zeta^{-1}V$ is unitary of determinant one, hence a unit real quaternion. Any compact subgroup has a bounded scale, hence scale one, and a bounded boost; the boost is trivial on it, since the powers of an eigenvalue $\lambda\neq1$ are unbounded or tend to zero. Hence a compact subgroup lies in $U(2)$, which is compact and therefore maximal. $\square$
+*Proof.* The compact part of the word is the phase times the rotor, and both are $*$-unitary, so their product is $*$-unitary; the scale and the boost are positive and non-compact. Conversely, if $V$ is $*$-unitary, then $\det V$ is a unit complex number; choose $\zeta$ in the branch with $\zeta^{2}=\det V$, and $K=\zeta^{-1}V$ is $*$-unitary of determinant one, hence a unit real quaternion. Any compact subgroup has a bounded scale, hence scale one, and a bounded boost; the boost is trivial on it, since the powers of an eigenvalue $\lambda\neq1$ are unbounded or tend to zero. Hence a compact subgroup lies in $U(2)$, which is compact and therefore maximal. $\square$
 
 The group retracts onto $U(2)$ by shrinking the scale to one and pushing the boost to $e_t$ along the Hermitian positive elements of norm one. In particular $\mathbb B^{\times}$ is connected, and its fundamental group is that of $U(2)$, namely $\mathbb Z$, generated by the phase loop around the cone (*The Biquaternion Unit Group as a Topological Group*). The rotor contributes the simply connected factor $SU(2)=S^{3}$, so the fundamental group is carried by the phase alone.
 
@@ -289,7 +289,7 @@ $$
 \tilde U_{\mathrm b}=a\,e_t+i\vec w,\qquad a\in\mathbb R,\quad \vec w\in\mathbb R^{3},\qquad a^{2}-\lvert\vec w\rvert^{2}=1 .
 $$
 
-The boost is the only factor whose vector part lies in the second half, and it is the factor that carries the indefiniteness: its scalar part is at least one and its vector part is tied to it by the norm-one condition. The boost is trivial exactly when the unit factor is unitary, that is, on the elements $r\zeta\tilde u_{\mathrm r}$; in particular it is trivial on both halves.
+The boost is the only factor whose vector part lies in the second half, and it is the factor that carries the indefiniteness: its scalar part is at least one and its vector part is tied to it by the norm-one condition. The boost is trivial exactly when the unit factor is $*$-unitary, that is, on the elements $r\zeta\tilde u_{\mathrm r}$; in particular it is trivial on both halves.
 
 This is the precise sense in which the biquaternion case is the complexification of the quaternion one. The scale and the rotor are the quaternion polar decomposition; the complex scalar adds the phase, one compact direction, and the second half adds the boost, three non-compact ones.
 
@@ -325,7 +325,7 @@ $$
 \tilde Q=\bigl(r\tilde U_{\mathrm b}\bigr)\bigl(\zeta\tilde u_{\mathrm r}\bigr)=\tilde Q_H\,\tilde Q_0 .
 $$
 
-The first factor is Hermitian positive definite, the second unitary. The pairing solves $\tilde Q\tilde Q^{*}=\tilde H^{2}$, so both factors are functions of the element alone, and it is total on the $\natural$-regular set. It is the algebra form of the matrix polar decomposition.
+The first factor is Hermitian positive definite, the second $*$-unitary. The pairing solves $\tilde Q\tilde Q^{*}=\tilde H^{2}$, so both factors are functions of the element alone, and it is total on the $\natural$-regular set. It is the algebra form of the matrix polar decomposition.
 
 The three pairings are collected in the table.
 
@@ -365,7 +365,7 @@ $$
 M=P\,V,\qquad P=(MM^{\dagger})^{1/2}=r\,M_{\mathrm b},\qquad V=\zeta\,M_{\mathrm r}.
 $$
 
-The positive factor is the scale times the boost, of determinant $r^{2}$; the unitary factor is the phase times the rotor, of determinant $\zeta^{2}$. The matrix decomposition does not see the split of $P$ into scale and boost, nor that of $V$ into phase and rotor: those splits use the fact that $P$ is a positive real multiple of an element of the algebra of determinant one, and that $V$ is a unit complex multiple of a real quaternion.
+The positive factor is the scale times the boost, of determinant $r^{2}$; the $*$-unitary factor is the phase times the rotor, of determinant $\zeta^{2}$. The matrix decomposition does not see the split of $P$ into scale and boost, nor that of $V$ into phase and rotor: those splits use the fact that $P$ is a positive real multiple of an element of the algebra of determinant one, and that $V$ is a unit complex multiple of a real quaternion.
 
 | factor | matrix | determinant | action |
 |---|---|---|---|
@@ -414,7 +414,7 @@ $$
 
 The defining module of $GL_2(\mathbb{C})$ is $(\tfrac12,0)_{(1,0)}$: a spinor is multiplied by $A$, which is a square root of the determinant character, since $\det(AI)=A^{2}$.
 
-Reality and unitarity read off the character. Complex conjugation exchanges the two factors and conjugates the character, $\overline{(j,j')_{(a,b)}}=(j',j)_{(b,a)}$, so a module is self-conjugate exactly when $j=j'$ and $b=a$. And $\lvert\chi_{a,b}(A)\rvert=r^{\mathrm{Re}(a+b)}$, so the twist is unitary exactly when $\mathrm{Re}(a+b)=0$; even then the norm-one part contributes no nontrivial finite-dimensional unitary representation, which is the non-unitarity recorded for $SL_2(\mathbb{C})$ in the rotations article.
+Reality and unitarity read off the character. Complex conjugation exchanges the two factors and conjugates the character, $\overline{(j,j')_{(a,b)}}=(j',j)_{(b,a)}$, so a module is self-conjugate exactly when $j=j'$ and $b=a$. And $\lvert\chi_{a,b}(A)\rvert=r^{\mathrm{Re}(a+b)}$, so the twist is $*$-unitary exactly when $\mathrm{Re}(a+b)=0$; even then the norm-one part contributes no nontrivial finite-dimensional $*$-unitary representation, which is the non-unitarity recorded for $SL_2(\mathbb{C})$ in the rotations article.
 
 ### What the Algebra Carries
 
@@ -516,7 +516,7 @@ The four factors are collected in the table.
 | $\tilde U_{\mathrm b}$ | $(3e_t-i\vec e_x+i\vec e_y+i\vec e_z)/\sqrt6$ | $1$ |
 | $\tilde u_{\mathrm r}$ | $\sqrt{2/3}\,e_t+\vec e_x/\sqrt6+\vec e_y/\sqrt6$ | $1$ |
 
-The checks hold: $\tilde U_{\mathrm b}^{2}=\tilde U\tilde U^{*}$, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and $r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q$. The Hermitian factor is $\tilde Q_H=r\tilde U_{\mathrm b}$, of norm $r^{2}=2$, and the unitary factor is $\tilde Q_0=\zeta\tilde u_{\mathrm r}$, of norm $\zeta^{2}=i$; their product has norm $2i$, the norm of the element.
+The checks hold: $\tilde U_{\mathrm b}^{2}=\tilde U\tilde U^{*}$, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and $r\zeta\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q$. The Hermitian factor is $\tilde Q_H=r\tilde U_{\mathrm b}$, of norm $r^{2}=2$, and the $*$-unitary factor is $\tilde Q_0=\zeta\tilde u_{\mathrm r}$, of norm $\zeta^{2}=i$; their product has norm $2i$, the norm of the element.
 
 ## Summary
 
@@ -525,7 +525,7 @@ The polar decomposition of an $\natural$-regular biquaternion is the modulus–u
 | item | result |
 |---|---|
 | domain | $\langle\tilde Q\rangle_{\natural}\neq0$ |
-| Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_H$ positive definite, $\tilde Q_0$ unitary |
+| Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_H$ positive definite, $\tilde Q_0$ $*$-unitary |
 | modulus–unit | $\tilde Q=\Rho\tilde U$, $\Rho\in\mathcal H$, $\langle\tilde U\rangle_{\natural}=1$ |
 | modulus | $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$, $\Rho\in\mathcal H$ |
 | scale and phase | $r=\lvert\Rho\rvert$, $\zeta=\Rho/r$ |
@@ -540,7 +540,7 @@ The polar decomposition of an $\natural$-regular biquaternion is the modulus–u
 | pairings | quaternion, Hamilton root, Cartan Hermitian; the first two partial, the last total |
 | closed forms | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*}+e_t)/\sqrt{2(1+s)}$, $\tilde u_{\mathrm r}=\bigl((2s+1)e_t-\tilde U\tilde U^{*}\bigr)\tilde U/\sqrt{2(1+s)}$ |
 
-The four statements to carry away are these. On the $\natural$-regular set the general pair sharpens, the Hermitian factor becoming positive definite and the isometry factor unitary. The pair then splits twice, the modulus into a scale and a phase and the unit factor into a boost and a rotor, and the four factors fill the eight dimensions of the algebra. The regroupings of the four factors give the two-factor readings and the three pairings, of which the Cartan Hermitian pairing is the general polar decomposition itself. Read on the spinor module $S=\mathbb{C}^{2}$, left multiplication acts by the scalar $\Rho$ and the norm-one operator $\tilde U$; the scale and the phase enter through the character $\chi(\Rho)=\Rho$, and the irreducible modules are the $(j,j')_{(a,b)}$ with $a-b\equiv2j+2j'\pmod2$.
+The four statements to carry away are these. On the $\natural$-regular set the general pair sharpens, the Hermitian factor becoming positive definite and the isometry factor $*$-unitary. The pair then splits twice, the modulus into a scale and a phase and the unit factor into a boost and a rotor, and the four factors fill the eight dimensions of the algebra. The regroupings of the four factors give the two-factor readings and the three pairings, of which the Cartan Hermitian pairing is the general polar decomposition itself. Read on the spinor module $S=\mathbb{C}^{2}$, left multiplication acts by the scalar $\Rho$ and the norm-one operator $\tilde U$; the scale and the phase enter through the character $\chi(\Rho)=\Rho$, and the irreducible modules are the $(j,j')_{(a,b)}$ with $a-b\equiv2j+2j'\pmod2$.
 
 ## Summary of Notation
 
@@ -555,7 +555,7 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 | $\tilde U_{\mathrm b}$ | the boost, $(\tilde U\tilde U^{*})^{1/2}$ |
 | $\tilde u_{\mathrm r}$ | the rotor, $\tilde U_{\mathrm b}^{-1}\tilde U$ |
 | $\tilde Q_H$ | the Hermitian factor, $r\tilde U_{\mathrm b}$ |
-| $\tilde Q_0$ | the unitary factor, $\zeta\tilde u_{\mathrm r}$ |
+| $\tilde Q_0$ | the $*$-unitary factor, $\zeta\tilde u_{\mathrm r}$ |
 | $s$ | $\operatorname{Sc}(\tilde U\tilde U^{*})$ |
 | $B^{2}$ | $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
 | $H^{3}$ | the Hermitian positive elements of norm one |
@@ -567,7 +567,7 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 ## Further Reading
 
 - Roger Penrose, "A generalized inverse for matrices", *Proceedings of the Cambridge Philosophical Society* **51** (1955) 406–413. The four equations and the matrix polar decomposition.
-- Gene H. Golub and Charles F. Van Loan, *Matrix Computations*, 4th edition (Johns Hopkins University Press, 2013). The polar decomposition, its Hermitian and unitary factors, and the numerical algorithms.
+- Gene H. Golub and Charles F. Van Loan, *Matrix Computations*, 4th edition (Johns Hopkins University Press, 2013). The polar decomposition, its Hermitian and $*$-unitary factors, and the numerical algorithms.
 - Nicholas J. Higham, *Functions of Matrices: Theory and Computation* (SIAM, 2008). The matrix square root, the polar factor and their derivatives.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998). Algebras with involution and the Hermitian structures the factors carry.
 - *Exponential Polar Decomposition of Biquaternions*, for the same four factors read as exponentials, with the two logarithms and the boundary limits at the cone.

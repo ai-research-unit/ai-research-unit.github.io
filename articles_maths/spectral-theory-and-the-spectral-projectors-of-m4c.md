@@ -190,7 +190,7 @@ $$
 
 and the $N_\lambda$ commute with the projectors.
 
-**Proof.** The projector is the residue of the resolvent; the residue calculus gives $P_\lambda^2=P_\lambda$ and the orthogonality, because the contours are disjoint. The sum is the residue at infinity, which is $I$. The image is the generalized eigenspace by the Riesz decomposition theorem; the nilpotent part is $A-\lambda I$ on that space. The details are in Kato, *Perturbation Theory for Linear Operators*, and in Horn and Johnson, *Matrix Analysis*.
+**Proof.** The projector is the residue of the resolvent; the residue calculus gives $P_\lambda^2=P_\lambda$ and the orthogonality, because the contours are disjoint. The sum is $I$: at infinity $R(z)=z^{-1}I+O(z^{-2})$, so the residue at infinity is $-I$ and the sum of the finite residues is $I$. The image is the generalized eigenspace by the Riesz decomposition theorem; the nilpotent part is $A-\lambda I$ on that space. The details are in Kato, *Perturbation Theory for Linear Operators*, and in Horn and Johnson, *Matrix Analysis*.
 
 ## The Dunford Calculus
 
@@ -344,7 +344,7 @@ $$
 
 with equality for normal matrices. For a normal matrix, the operator norm is the largest modulus of an eigenvalue; for a non-normal matrix, the operator norm can be strictly larger.
 
-**The resolvent bound.** For $\lvert z\rvert>\rho(A)$, the resolvent series converges. The spectral radius is the radius of the largest disc on which the resolvent is holomorphic, and the Neumann series diverges outside it.
+**The resolvent bound.** For $\lvert z\rvert>\rho(A)$, the resolvent series converges. The spectral radius is the radius of convergence of the Neumann series at infinity: the series converges for $\lvert z\rvert>\rho(A)$ and diverges for $\lvert z\rvert<\rho(A)$ in general. The resolvent itself is holomorphic on the whole complement of the spectrum, which is larger than the exterior disc when the spectrum has eigenvalues of smaller modulus.
 
 **The stability.** The spectral radius governs the asymptotic behaviour of the powers:
 
@@ -356,7 +356,7 @@ If $\rho(A)<1$, the Neumann series $\sum_{n\ge0}A^n$ converges to $(I-A)^{-1}$; 
 
 ## Summary
 
-The characteristic polynomial of $A$ is a monic quartic with roots the eigenvalues, trace the sum and determinant the product; the minimal polynomial records the largest Jordan block for each eigenvalue, and $A$ is diagonalisable exactly when the minimal polynomial has distinct roots. The Jordan form classifies the conjugacy class. The resolvent $(zI-A)^{-1}$ is holomorphic off the spectrum and has poles at the eigenvalues; the residue at $\lambda$ is the Riesz projector $P_\lambda$, and the projectors are idempotent, orthogonal and complete, with $A=\sum(\lambda P_\lambda+N_\lambda)$ and $N_\lambda$ nilpotent. The holomorphic functional calculus is the Dunford calculus, with the spectral mapping theorem. At a simple spectrum the Riesz projectors are the Lagrange projectors $P_k=\prod_{l\ne k}(A-\lambda_lI)/(\lambda_k-\lambda_l)$, polynomials in $A$ of degree at most three. At a repeated root the individual Lagrange projectors need not converge, but their sums converge to the Riesz projectors, and the nilpotent part appears as the limit of the weighted differences; the limit depends on the path. The spectral radius is the largest eigenvalue modulus, the radius of convergence of the resolvent series and the stability margin.
+The characteristic polynomial of $A$ is a monic quartic with roots the eigenvalues, trace the sum and determinant the product; the minimal polynomial records the largest Jordan block for each eigenvalue, and $A$ is diagonalisable exactly when the minimal polynomial has distinct roots. The Jordan form classifies the conjugacy class. The resolvent $(zI-A)^{-1}$ is holomorphic off the spectrum and has poles at the eigenvalues; the residue at $\lambda$ is the Riesz projector $P_\lambda$, and the projectors are idempotent, orthogonal and complete, with $A=\sum(\lambda P_\lambda+N_\lambda)$ and $N_\lambda$ nilpotent. The holomorphic functional calculus is the Dunford calculus, with the spectral mapping theorem. At a simple spectrum the Riesz projectors are the Lagrange projectors $P_k=\prod_{l\ne k}(A-\lambda_lI)/(\lambda_k-\lambda_l)$, polynomials in $A$ of degree at most three. At a repeated root the individual Lagrange projectors need not converge, but their sums converge to the Riesz projectors, and the nilpotent part appears as the limit of the weighted differences. For a fixed limit matrix the Riesz projector and the nilpotent part are fixed; only the way the individual projectors diverge depends on the path. The spectral radius is the largest eigenvalue modulus, the radius of convergence of the resolvent series and the stability margin.
 
 $$
 \boxed{\ \chi_A(t)=t^4-(\operatorname{tr}A)t^3+c_2t^2-c_1t+\det A,\quad A=\sum_\lambda(\lambda P_\lambda+N_\lambda),\quad P_\lambda=\frac{1}{2\pi i}\oint_{\gamma_\lambda}(zI-A)^{-1}dz. }

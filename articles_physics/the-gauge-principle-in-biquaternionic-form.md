@@ -8,7 +8,7 @@ Two results of the read list are the point of departure. *Maxwell's Equations in
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit throughout.
 
-- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex line $\mathbb{C} e_t$; its unitary part is $\mathrm{U}(1)$. The global phase is a symmetry of the massless biquaternion field equation. Localizing it forces a connection $\tilde{A}$ with the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, and a covariant derivative $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ under which the field equation is gauge covariant. The object $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of covariant derivatives, $[D_\mu, D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$.
+- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex line $\mathbb{C} e_t$; its $*$-unitary part is $\mathrm{U}(1)$. The global phase is a symmetry of the massless biquaternion field equation. Localizing it forces a connection $\tilde{A}$ with the transformation law $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$, and a covariant derivative $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ under which the field equation is gauge covariant. The object $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of covariant derivatives, $[D_\mu, D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$.
 - **Interpretation.** Reading $\tilde{A}$ as a *connection* and $\tilde{F}$ as its *curvature* is a geometric interpretation of an algebraic construction. The algebra is consistent with the interpretation, and the commutator identity makes it precise, but the algebra does not by itself force the bundle-theoretic picture. This is labelled as interpretation, not derivation.
 - **Gap, left visible.** The extension to non-abelian gauge fields, and the question of whether the framework supplies a gauge-fixing principle, are not settled here. They are stated as gaps in the sections where they arise and collected in the open questions.
 
@@ -22,13 +22,13 @@ $$
 \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,\, ie_t\} = \{a\,e_t + b\,i\,e_t : a, b \in \mathbb{R}\},
 $$
 
-the two-real-dimensional line spanned by the identity. The centre is the largest set of elements that can multiply a biquaternion-valued field from either side without any ambiguity of order. Its **unitary** elements are
+the two-real-dimensional line spanned by the identity. The centre is the largest set of elements that can multiply a biquaternion-valued field from either side without any ambiguity of order. Its **$*$-unitary** elements are
 
 $$
 \lambda = \exp(i\theta), \qquad \theta \in \mathbb{R},
 $$
 
-since $|\exp(i\theta)| = 1$. They form the group $\mathrm{U}(1)$, the unitary part of the centre.
+since $|\exp(i\theta)| = 1$. They form the group $\mathrm{U}(1)$, the $*$-unitary part of the centre.
 
 Let $\tilde{\Psi}(\tilde{Q})$ be a biquaternion-valued field. Define the **global phase transformation**
 
@@ -55,7 +55,7 @@ is invariant: if $\tilde{\nabla}\tilde{\Psi} = 0$ then $\tilde{\nabla}(\exp(i\th
 - **The complex scalar biquaternion field.** Take $\tilde{\Phi} = \phi\,e_t$ with $\phi$ a complex scalar function, obeying the massive Klein–Gordon equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$. The mass term is *linear* in the field, so under $\tilde{\Phi} \mapsto \exp(i\theta)\tilde{\Phi}$ both sides acquire the same factor $\exp(i\theta)$ and the equation is invariant. Here the global $\mathrm{U}(1)$ survives the mass.
 - **The biquaternion Dirac field.** Take the massless equation $\tilde{\nabla}\tilde{\Psi} = 0$ of *The Dirac Equation in Biquaternionic Form*, whose plane-wave solutions are the two spin states of a massless fermion. The massive form of that equation is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Its mass term is *linear* in the field, so it too passes the central phase through unchanged and the global $\mathrm{U}(1)$ survives the mass. The mass term nonetheless plays a distinguished role: it is the chirality-off-diagonal coupling between the two chiral ideals of $\mathbb{B}$, and it is the **axial** symmetry, not the phase symmetry, that it breaks — a point taken up in the section that replaces the former obstruction discussion below.
 
-**Why the group is $\mathrm{U}(1)$ and not larger.** A phase that is to commute with the whole algebra must lie in the centre, and the centre is one complex dimension; its unitary part is one real parameter. The abelian gauge group is therefore *canonically attached* to the algebra: no choice is made in selecting it. A larger gauge group requires an action that does not commute with the algebra, that is, a choice of representation — which is exactly what the non-abelian extension will need.
+**Why the group is $\mathrm{U}(1)$ and not larger.** A phase that is to commute with the whole algebra must lie in the centre, and the centre is one complex dimension; its $*$-unitary part is one real parameter. The abelian gauge group is therefore *canonically attached* to the algebra: no choice is made in selecting it. A larger gauge group requires an action that does not commute with the algebra, that is, a choice of representation — which is exactly what the non-abelian extension will need.
 
 ## Making the Symmetry Local
 
@@ -144,7 +144,7 @@ which is the Leibniz rule of the gradient corrected by the connection. This is t
 
 **2. It is not a biquaternion.** $D$ is a first-order differential operator, not an element of $\mathbb{B}$. Only its components $D_\mu$ are scalar operators, and $D$ acts on fields, not on the algebra.
 
-**3. Its gauge group is the unitary part of the centre, so the theory is abelian.** The phase $\lambda = \exp(iϙ\Gamma/\hbar)$ is central, so left and right multiplication by it agree and there is no ordering ambiguity anywhere in the derivation above. This is what makes the construction abelian, and it is a consequence of selecting the gauge group from the centre.
+**3. Its gauge group is the $*$-unitary part of the centre, so the theory is abelian.** The phase $\lambda = \exp(iϙ\Gamma/\hbar)$ is central, so left and right multiplication by it agree and there is no ordering ambiguity anywhere in the derivation above. This is what makes the construction abelian, and it is a consequence of selecting the gauge group from the centre.
 
 **4. Gauge transformations preserve the material sector.** As shown in the preceding section, a real $\Gamma$ keeps $\tilde{A}$ in $\mathbb{M}_-$; the connection is a material-sector object.
 
@@ -220,7 +220,7 @@ It is worth separating the two, because they are easily conflated.
 
 **What the algebra supplies.**
 
-- *A canonical abelian gauge group.* The gauge group is the unitary part of the centre, and the centre is the only place a *central* phase can live. The $\mathrm{U}(1)$ of the abelian gauge principle is therefore attached to the algebra without a choice of representation. This is a genuine structural feature, not a relabelling: it is the reason the abelian case is the natural first case in this framework.
+- *A canonical abelian gauge group.* The gauge group is the $*$-unitary part of the centre, and the centre is the only place a *central* phase can live. The $\mathrm{U}(1)$ of the abelian gauge principle is therefore attached to the algebra without a choice of representation. This is a genuine structural feature, not a relabelling: it is the reason the abelian case is the natural first case in this framework.
 - *A bivector home for the curvature.* The field strength is a 2-form, and the biquaternion algebra is exactly the even Clifford algebra in which 2-forms are the vector part. The identification "field strength $=$ curvature" is thus structural rather than accidental.
 - *Preservation of the material sector.* Real gauge functions keep the connection in $\mathbb{M}_-$, so the gauge structure respects the sector decomposition that the framework is built on.
 - *The same scalar imaginary.* The phase $\exp(iϙ\Gamma/\hbar)$ and the complex time coordinate $ict'$ both use the single element $i$ of $\mathbb{B}$. In the standard formulation the $\mathrm{U}(1)$ of electromagnetism and the $i$ of the $ict'$ device are unrelated; here they are the same element. This is stated as an *observation*. Because the phase is central it commutes with everything, and it is not yet established that the shared generator carries content rather than being an artifact of writing both structures in one algebra. It is flagged as a gap, not claimed as a result.
@@ -307,7 +307,7 @@ What the external construction gives this article is therefore not a new result 
 
 ## Summary
 
-The gauge principle in biquaternionic form begins with the **centre** of the biquaternion algebra. Since $\mathbb{B} \cong M_2(\mathbb{C})$, its centre is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, whose unitary part is $\mathrm{U}(1)$. A constant central phase $\tilde{\Psi} \mapsto \exp(i\theta)\tilde{\Psi}$ is a symmetry of the biquaternion field equation, massive or massless, because a central constant passes through the gradient and through the linear mass term.
+The gauge principle in biquaternionic form begins with the **centre** of the biquaternion algebra. Since $\mathbb{B} \cong M_2(\mathbb{C})$, its centre is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, whose $*$-unitary part is $\mathrm{U}(1)$. A constant central phase $\tilde{\Psi} \mapsto \exp(i\theta)\tilde{\Psi}$ is a symmetry of the biquaternion field equation, massive or massless, because a central constant passes through the gradient and through the linear mass term.
 
 Making the phase local, $\lambda = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$, introduces the term $\frac{iϙ}{\hbar}(\tilde{\nabla}\Gamma)\tilde{\Psi}$, and cancelling it forces a connection $\tilde{A}$ with the transformation law
 

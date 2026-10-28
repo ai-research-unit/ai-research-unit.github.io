@@ -4,13 +4,13 @@
 
 The no-cloning theorem states that an unknown quantum state cannot be copied: there is no physical process that takes one copy of an arbitrary state and produces two, each identical to the original. The theorem is the reason quantum information is not merely classical information carried by quantum systems, and it is the origin of quantum key distribution, of the security of quantum money, and of the impossibility of amplifying a quantum signal by copying it.
 
-The theorem is usually proved by an inner-product argument: a cloning transformation that worked for all states would have to be unitary, unitarity preserves inner products, but the inner product of two cloned outputs is the square of the input inner product, and a number equals its own square only when it is zero or one. This article presents the theorem in the biquaternion framework and isolates the operational meaning of "inner product" there. In the algebra the inner product of two rays is carried by the **normalised Hermitian form of their idempotents**, read as the trace pairing,
+The theorem is usually proved by an inner-product argument: a cloning transformation that worked for all states would have to be $*$-unitary, unitarity preserves inner products, but the inner product of two cloned outputs is the square of the input inner product, and a number equals its own square only when it is zero or one. This article presents the theorem in the biquaternion framework and isolates the operational meaning of "inner product" there. In the algebra the inner product of two rays is carried by the **normalised Hermitian form of their idempotents**, read as the trace pairing,
 
 $$
 \bigl|\langle\psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) \in [0,1],
 $$
 
-whose endpoints are the orthogonal and coincident cases. A cloning transformation must preserve this pairing, because it is an overlap and overlaps are preserved by the unitary evolution of the algebra; and it must simultaneously replace the pairing by its square, because two independent copies have an overlap that is the product of the two single-copy overlaps. The obstruction is therefore
+whose endpoints are the orthogonal and coincident cases. A cloning transformation must preserve this pairing, because it is an overlap and overlaps are preserved by the $*$-unitary evolution of the algebra; and it must simultaneously replace the pairing by its square, because two independent copies have an overlap that is the product of the two single-copy overlaps. The obstruction is therefore
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\Bigr)^{2},
@@ -46,9 +46,9 @@ $$
 
 And the target map $\tilde{Ϛ}_x\mapsto\tilde{Ϛ}_x\otimes\tilde{Ϛ}_x$ is **quadratic**: doubling the deviation of $\tilde{Ϛ}_x$ from the maximally mixed state quadruples it in the tensor product, since the Bloch vector of the product is $\vec r\otimes\vec r$. The two requirements cannot both hold for a set of states that includes a non-orthogonal pair.
 
-### The unitary form of the requirement
+### The $*$-unitary form of the requirement
 
-The original statement of the theorem concerns a unitary evolution of a composite. A cloning unitary on the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$ would satisfy
+The original statement of the theorem concerns a $*$-unitary evolution of a composite. A cloning $*$-unitary on the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$ would satisfy
 
 $$
 \tilde{U}\bigl(|\psi\rangle\otimes|0\rangle\bigr) = |\psi\rangle\otimes|\psi\rangle
@@ -61,7 +61,7 @@ with $\tilde Q\tilde Q^{*} = \tilde Q^{*}\tilde Q = e_t\otimes e_t$. The blank $
 
 ### Overlaps are preserved
 
-Unitary evolution preserves inner products. For two inputs $|\psi\rangle,|\phi\rangle\in S$ and the blank $|0\rangle$,
+$*$-Unitary evolution preserves inner products. For two inputs $|\psi\rangle,|\phi\rangle\in S$ and the blank $|0\rangle$,
 
 $$
 \bigl\langle \psi\otimes 0 \,\big|\, \phi\otimes 0 \bigr\rangle
@@ -69,7 +69,7 @@ $$
 = \langle\psi|\phi\rangle ,
 $$
 
-and since $\tilde Q$ is unitary this equals $\langle \psi\otimes\psi\,|\,\phi\otimes\phi\rangle$, the overlap of the two outputs.
+and since $\tilde Q$ is $*$-unitary this equals $\langle \psi\otimes\psi\,|\,\phi\otimes\phi\rangle$, the overlap of the two outputs.
 
 ### Overlaps are squared
 
@@ -95,7 +95,7 @@ The pairing is $1$ only for $\psi=\phi$ up to phase, and $0$ only for orthogonal
 
 The conclusion is the no-cloning theorem in the framework's terms:
 
-> A deterministic, universal cloning process exists for a set of pure states if and only if the states are pairwise orthogonal. For any two non-orthogonal rays of the defining module, no unitary $\tilde Q$ on $\mathbb{B}\otimes\mathbb{B}$ maps $|\psi\rangle\otimes|0\rangle$ to $|\psi\rangle\otimes|\psi\rangle$ for both.
+> A deterministic, universal cloning process exists for a set of pure states if and only if the states are pairwise orthogonal. For any two non-orthogonal rays of the defining module, no $*$-unitary $\tilde Q$ on $\mathbb{B}\otimes\mathbb{B}$ maps $|\psi\rangle\otimes|0\rangle$ to $|\psi\rangle\otimes|\psi\rangle$ for both.
 
 The normalised Hermitian form, read through the trace, is the algebra's measure of distinguishability: it is $1$ for coincident rays, $0$ for orthogonal rays, and strictly between for all others. Cloning would require it to be idempotent under squaring, and on the interval $[0,1]$ only the endpoints satisfy $x=x^2$. The obstruction is thus a statement about the range of the normalised Hermitian form: **a state space whose distinguishability takes intermediate values cannot be cloned.** The maximally mixed state and the pure states are the endpoints of the pairing's range; it is precisely the interior of the range that forbids cloning.
 
@@ -110,15 +110,15 @@ $$
 \bigl|\langle\psi|\phi\rangle\bigr|^2 = \tfrac12 .
 $$
 
-The normalised Hermitian form, read through the trace, is $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}) = \tfrac12$, strictly inside $(0,1)$. A cloning unitary would have to send both $|\psi\rangle|0\rangle\mapsto|\psi\rangle|\psi\rangle$ and $|\phi\rangle|0\rangle\mapsto|\phi\rangle|\phi\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
+The normalised Hermitian form, read through the trace, is $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}) = \tfrac12$, strictly inside $(0,1)$. A cloning $*$-unitary would have to send both $|\psi\rangle|0\rangle\mapsto|\psi\rangle|\psi\rangle$ and $|\phi\rangle|0\rangle\mapsto|\phi\rangle|\phi\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no $*$-unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
 
 ### Cloning versus copying
 
-For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ — cloning is possible: the unitary that copies in that basis, $\tilde Q(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde Q(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
+For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ — cloning is possible: the $*$-unitary that copies in that basis, $\tilde Q(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde Q(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
 
 ## The Obstruction is Linearity
 
-The unitary argument applies to pure states and to a single input. There is a second form of the obstruction, which applies directly to channels and to mixed states, and which is the reason the theorem survives when the machine is allowed to be noisy.
+The $*$-unitary argument applies to pure states and to a single input. There is a second form of the obstruction, which applies directly to channels and to mixed states, and which is the reason the theorem survives when the machine is allowed to be noisy.
 
 A channel is affine on the state space. If a channel $\Phi$ cloned all pure states,
 
@@ -163,7 +163,7 @@ $$
 \end{aligned}
 $$
 
-The two images are orthonormal, so $\tilde Q$ extends to a unitary on the three-qubit space. For a general input $|\psi\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs,
+The two images are orthonormal, so $\tilde Q$ extends to a $*$-unitary on the three-qubit space. For a general input $|\psi\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs,
 
 $$
 |\psi(\theta,\varphi)\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + \exp(i\varphi)\sin\tfrac{\theta}{2}\,|1\rangle ,
@@ -193,7 +193,7 @@ There is a physical argument for the obstruction that complements the algebraic 
 
 The obstruction has companions, all of which are statements about the affine structure of the state space and the plain form.
 
-**No-deleting.** Given two copies of an unknown state there is no process that deletes one and leaves the other, unless the two are orthogonal. The proof is the mirror of the cloning proof: a deleting unitary would satisfy $\tilde Q(|\psi\rangle|\psi\rangle)=|\psi\rangle|0\rangle$ for all $|\psi\rangle$, and the overlap of two outputs is $\langle\psi|\phi\rangle$ while the overlap of two inputs is $\langle\psi|\phi\rangle^2$.
+**No-deleting.** Given two copies of an unknown state there is no process that deletes one and leaves the other, unless the two are orthogonal. The proof is the mirror of the cloning proof: a deleting $*$-unitary would satisfy $\tilde Q(|\psi\rangle|\psi\rangle)=|\psi\rangle|0\rangle$ for all $|\psi\rangle$, and the overlap of two outputs is $\langle\psi|\phi\rangle$ while the overlap of two inputs is $\langle\psi|\phi\rangle^2$.
 
 **No-broadcasting.** A mixed state cannot be broadcast: there is no process that takes one copy of a state to two copies for a set of states that do not commute. This is the mixed-state generalization, and it shows that the obstruction is not about purity but about the affine structure of the state space; the framework's state space is the cone slice, and the argument is the same affinity argument as above.
 
@@ -219,7 +219,7 @@ In the framework's terms, all three are the statement that the normalised Hermit
 
 ## Open Questions
 
-**1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the normalised Hermitian form. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $\langle\tilde{Q}_3\tilde{Q}_1\rangle_{\natural} = \langle\tilde{Q}_3\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural}$, play the role that the squared inner product plays in the unitary argument?
+**1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the normalised Hermitian form. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $\langle\tilde{Q}_3\tilde{Q}_1\rangle_{\natural} = \langle\tilde{Q}_3\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural}$, play the role that the squared inner product plays in the $*$-unitary argument?
 
 **2. Cloning and the two sectors.** The algebra splits into $\mathbb{M}_-$ and $\mathbb{M}_+$; the obstruction is stated entirely in $\mathbb{M}_+$. Does the material sector constrain the class of admissible cloning machines, or is it inert here?
 
@@ -237,7 +237,7 @@ $$
 \bigl|\langle\psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) \in [0,1],
 $$
 
-and a cloning unitary would have to preserve this pairing, because it is an overlap, while the pairing of two independent copies is its square. Equating the two requires
+and a cloning $*$-unitary would have to preserve this pairing, because it is an overlap, while the pairing of two independent copies is its square. Equating the two requires
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\Bigr)^{2},
@@ -258,7 +258,7 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
 | $\tilde\Pi(\psi)$ | Rank-one idempotent of a pure state |
 | $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}) = |\langle\psi|\phi\rangle|^2$ | Trace reading of the Hermitian form (distinguishability) |
-| $\tilde Q$ | Cloning unitary, $\tilde Q\tilde Q^{*} = e_t\otimes e_t$ |
+| $\tilde Q$ | Cloning $*$-unitary, $\tilde Q\tilde Q^{*} = e_t\otimes e_t$ |
 | $\Phi$ | Cloning channel, completely positive trace preserving |
 | $\Phi(\tilde{Ϛ}\otimes\tilde{Ϛ}_0) = \tilde{Ϛ}\otimes\tilde{Ϛ}$ | Cloning requirement |
 | $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}) = (\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}))^2$ | Algebraic obstruction |

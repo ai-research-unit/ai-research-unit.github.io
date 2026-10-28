@@ -67,7 +67,7 @@ $$
 
 The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, the $\sigma_k$ being the Pauli matrices. It is $\mathbb{C}$-linear and satisfies $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, and its determinant is the norm, $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.
 
-The sandwich is written $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ throughout. It uses the Hermitian conjugate in the right slot and never the inverse; the two coincide only where $\tilde Q$ is unitary. It is the member $L_{\tilde Q}R_{\tilde Q^{*}}$ of the general two-sided family of *Two-Sided Operators on the Biquaternion Algebra*, with the second parameter fixed at the Hermitian conjugate of the first; the general family allows the two parameters independently.
+The sandwich is written $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ throughout. It uses the Hermitian conjugate in the right slot and never the inverse; the two coincide only where $\tilde Q$ is $*$-unitary. It is the member $L_{\tilde Q}R_{\tilde Q^{*}}$ of the general two-sided family of *Two-Sided Operators on the Biquaternion Algebra*, with the second parameter fixed at the Hermitian conjugate of the first; the general family allows the two parameters independently.
 
 ## The Sandwich of the Word
 
@@ -162,7 +162,7 @@ $$
 
 ### The Factor
 
-The phase is $P=\exp(i\alpha)$, central and unitary,
+The phase is $P=\exp(i\alpha)$, central and $*$-unitary,
 
 $$
 P^{*}=P^{-1}=\exp(-i\alpha),\qquad \langle P\rangle_{\natural}=\exp(2i\alpha).
@@ -233,7 +233,7 @@ $$
 \tilde U_{\mathrm b}^{-1}=\exp\Bigl(-i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr).
 $$
 
-The boost is not unitary, because $\tilde U_{\mathrm b}^{-1}\neq\tilde U_{\mathrm b}$ unless $\psi=0$.
+The boost is not $*$-unitary, because $\tilde U_{\mathrm b}^{-1}\neq\tilde U_{\mathrm b}$ unless $\psi=0$.
 
 ### The Sandwich on the Two Sectors
 
@@ -304,13 +304,13 @@ $$
 \qquad \theta\in[0,2\pi],\qquad \lvert\vec u_{\mathrm r}\rvert=1 .
 $$
 
-It is a real quaternion, of norm one, and unitary,
+It is a real quaternion, of norm one, and $*$-unitary,
 
 $$
 \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
 $$
 
-Unlike the boost, the rotor is both norm-one and unitary, and its right slot is therefore the inverse.
+Unlike the boost, the rotor is both norm-one and $*$-unitary, and its right slot is therefore the inverse.
 
 ### The Sandwich
 
@@ -439,7 +439,7 @@ $$ L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8}, $$
 
 so the form is multiplied by $r^{4}$ and the volume by $r^{8}$; the causal type is preserved and the transformation is a similarity of ratio $r^{2}$.
 
-**Remark (what the image is not).** The image is not the unitary group and not $GL(2,\mathbb{C})$. The unitary group acts on the spinor module and sees the phase; the sandwich sees only the conformal Lorentz group. The two readings of the same word are the subject of *The Polar Decomposition of a N-Regular Biquaternion*, §*The Operator Reading: the Twist*, and of this article.
+**Remark (what the image is not).** The image is not the $*$-unitary group and not $GL(2,\mathbb{C})$. The $*$-unitary group acts on the spinor module and sees the phase; the sandwich sees only the conformal Lorentz group. The two readings of the same word are the subject of *The Polar Decomposition of a N-Regular Biquaternion*, §*The Operator Reading: the Twist*, and of this article.
 
 ## The Null Cone
 
@@ -476,7 +476,7 @@ $$
 \Theta_{\exp(i\alpha)}=\mathrm{id}.
 $$
 
-The scale dilates by $r^{2}$. The phase cancels: the whole $U(1)$-orbit of an element has one sandwich, because the phase is central and unitary. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$, and the rotor is an inner automorphism; on the norm-one slice they produce the rapidity $\psi$ and the rotation of angle $\theta$. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the sandwich is an isometry on the unit-norm slice.
+The scale dilates by $r^{2}$. The phase cancels: the whole $U(1)$-orbit of an element has one sandwich, because the phase is central and $*$-unitary. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$, and the rotor is an inner automorphism; on the norm-one slice they produce the rapidity $\psi$ and the rotation of angle $\theta$. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the sandwich is an isometry on the unit-norm slice.
 
 The spectral form of the pairing is the product formula. The left and right slots commute, and their eigenvalues are $\lambda_\pm$ and $\bar\lambda_\pm$. The spectrum of the sandwich is
 $$
@@ -530,7 +530,7 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.
-- [The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the Hermitian positive and unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
+- [The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the Hermitian positive and $*$-unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
 - [The Quaternion Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](the-quaternion-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html) and [The Hamilton Root Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](the-hamilton-root-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the two partial two-factor groupings.
 - [$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure](m4c-representation-the-matrix-product-and-the-algebra-structure.html), §*The Sandwich in the Regular Basis*, for the sandwich as a product of the two regular maps.
 - [Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint](completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html), for the sandwich as a completely positive map and its rank-one place among the completely positive maps.

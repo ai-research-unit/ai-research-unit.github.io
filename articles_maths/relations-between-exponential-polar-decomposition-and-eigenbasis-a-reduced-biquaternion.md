@@ -467,7 +467,7 @@ The first has eigenvalues $\rho e^{\pm\phi}=\rho_\pm$; the second has eigenvalue
 | $\mathsf M(u)$ | $e^{i(\alpha+\beta)},e^{i(\alpha-\beta)}$ | the two phases |
 | $S\,\mathsf M(\breve Q)\,S^{-1}$ | $\lambda_+,\lambda_-$ | the diagonal form |
 
-The matrix picture shows that the polar decomposition is the factorisation of the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ into a positive real diagonal factor $\operatorname{diag}(\rho e^\phi,\rho e^{-\phi})$ and a unitary diagonal factor $\operatorname{diag}(e^{i\theta_+},e^{i\theta_-})$. The boost is the logarithm of the ratio of the two positive scales; the phases are the arguments.
+The matrix picture shows that the polar decomposition is the factorisation of the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ into a positive real diagonal factor $\operatorname{diag}(\rho e^\phi,\rho e^{-\phi})$ and a $*$-unitary diagonal factor $\operatorname{diag}(e^{i\theta_+},e^{i\theta_-})$. The boost is the logarithm of the ratio of the two positive scales; the phases are the arguments.
 
 The full case-by-case computation is in *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*; the examples here isolate the dictionary.
 

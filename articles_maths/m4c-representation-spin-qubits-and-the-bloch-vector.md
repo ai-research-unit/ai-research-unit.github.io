@@ -85,7 +85,7 @@ $$
 $$
 The commutator is the angular-momentum algebra of a spin-$\tfrac12$ system, and the representation is two copies of the fundamental representation: the eigenvalues of each $\tilde S_k$ are $\pm\hbar/2$, each twice.
 
-**Two roles of one direction.** The commutator is anti-Hermitian, so it lies in $\mathbb{M}_-$: the generators of the unitary group are the elements $\vec e_k$, whose images $-i\Sigma_k$ are anti-Hermitian. The observables are the elements $i\vec e_k$, whose images $\Sigma_k$ are Hermitian. The same three directions appear twice, as generators and as observables, and the two appearances differ by the factor $i$.
+**Two roles of one direction.** The commutator is anti-Hermitian, so it lies in $\mathbb{M}_-$: the generators of the $*$-unitary group are the elements $\vec e_k$, whose images $-i\Sigma_k$ are anti-Hermitian. The observables are the elements $i\vec e_k$, whose images $\Sigma_k$ are Hermitian. The same three directions appear twice, as generators and as observables, and the two appearances differ by the factor $i$.
 
 **The span.** The three spin operators span over $\mathbb{R}$ the traceless Hermitian subspace of the image, of real dimension three. With the identity they span the whole of $\mathbb{M}_+$, of real dimension four. They do not span the algebra over $\mathbb{R}$: the products $\Sigma_i\Sigma_j$ leave the Hermitian subspace whenever $i\neq j$.
 

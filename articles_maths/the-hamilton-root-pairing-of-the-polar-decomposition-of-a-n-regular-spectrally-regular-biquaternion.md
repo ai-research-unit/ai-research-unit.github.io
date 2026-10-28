@@ -230,7 +230,7 @@ The four factors can be bracketed in exactly three ways, and each bracketing is 
 |---|---|---|---|---|
 | Hamilton | $\Rho=r\exp(i\alpha)$, complex scalar | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\Rho^{2}$ | $e_t$ |
 | quaternion | $\tilde q=r\tilde u_{\mathrm r}$, real quaternion | $\exp(i\tilde\Psi)=\exp(i\alpha)\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $r^{2}$ | $\exp(2i\alpha)$ |
-| Cartan | $\tilde H=r\tilde U_{\mathrm b}$, Hermitian positive | $\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$, unitary | $r^{2}$ | $\exp(2i\alpha)$ |
+| Cartan | $\tilde H=r\tilde U_{\mathrm b}$, Hermitian positive | $\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$, $*$-unitary | $r^{2}$ | $\exp(2i\alpha)$ |
 
 The three rows split the same norm $\Rho^{2}=r^{2}\exp(2i\alpha)$ in three ways. The Hamilton row is the only one that puts the whole norm in its first factor and leaves a unit second factor. The quaternion and Cartan rows put the scale in the first factor and the phase in the second; what distinguishes them is the kind of the first factor, a real quaternion in one and a Hermitian positive element in the other. The three moduli are therefore a complex scalar, a real quaternion and a Hermitian positive element, and the four-factor word is the reference in which the scale stands alone.
 

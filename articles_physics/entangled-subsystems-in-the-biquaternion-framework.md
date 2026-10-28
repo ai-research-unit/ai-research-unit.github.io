@@ -94,7 +94,7 @@ This is the biquaternion expression of EPR steering. The collapse of the joint s
 
 ### No-signaling as a partial-trace identity
 
-The last observation is the algebraic content of the no-communication theorem. If Alice applies a local unitary operation $\tilde Q\otimes e_t$ to the joint state, the reduced state of particle 2 is unchanged:
+The last observation is the algebraic content of the no-communication theorem. If Alice applies a local $*$-unitary operation $\tilde Q\otimes e_t$ to the joint state, the reduced state of particle 2 is unchanged:
 
 $$
 \mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}\,(\tilde{U}^{*}\otimes e_t)\right) = \mathrm{Tr}_1(\tilde{Ϛ}),
@@ -130,16 +130,16 @@ This is a clarification of where the quantum character sits, not a resolution of
 
 ### 3. The measurement problem
 
-The measurement problem is the fact that standard quantum physics has two kinds of time evolution — unitary and projective — and the formalism does not say when each applies. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum physics), but there is no consensus.
+The measurement problem is the fact that standard quantum physics has two kinds of time evolution — $*$-unitary and projective — and the formalism does not say when each applies. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum physics), but there is no consensus.
 
-The biquaternion framework has something structural to offer here. In standard quantum physics, unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of *acting elements* of the algebra:
+The biquaternion framework has something structural to offer here. In standard quantum physics, $*$-unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of *acting elements* of the algebra:
 
-- **Unitary elements** $\tilde Q$ satisfy $\tilde Q\tilde Q^{*} = e_t$ and generate reversible evolution by rotor conjugation.
+- **$*$-Unitary elements** $\tilde Q$ satisfy $\tilde Q\tilde Q^{*} = e_t$ and generate reversible evolution by rotor conjugation.
 - **Idempotent elements** $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the sandwich operation.
 
 The reversible/irreversible dichotomy is not an additional postulate; it is the algebraic dichotomy between two classes of elements of one algebra. This is a genuine reframing: the measurement problem is no longer "two incompatible dynamics glued together" but "one algebra with two classes of elements."
 
-But the reframing does not solve the problem. The framework does not say which idempotent is selected in a given measurement, or why the transition from unitary to idempotent action occurs. The selection problem persists. What the framework offers is a cleaner *statement* of the problem, not a solution.
+But the reframing does not solve the problem. The framework does not say which idempotent is selected in a given measurement, or why the transition from $*$-unitary to idempotent action occurs. The selection problem persists. What the framework offers is a cleaner *statement* of the problem, not a solution.
 
 ### 4. Instantaneous correlation versus no-communication
 
@@ -160,7 +160,7 @@ The framework has something to say here, and the development is extensive enough
 **Operationally**, the framework has a natural algebraic home for the criterion recently proposed by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024): the distinction between quantum and classical non-separability is the **number of idempotent operations** applied to the two partitions of the state.
 
 - **Quantum entanglement** requires **two idempotents** — two projective measurements, one on each partition — and produces **statistical correlations** between the outcomes.
-- **Classical non-separability** requires **one idempotent and one unitary** — one measurement and one filter, sorter, or basis choice — and produces **deterministic correlations** between the filter setting and the single measurement outcome.
+- **Classical non-separability** requires **one idempotent and one $*$-unitary** — one measurement and one filter, sorter, or basis choice — and produces **deterministic correlations** between the filter setting and the single measurement outcome.
 
 In the framework's language, this is the algebraic dichotomy between
 
@@ -186,7 +186,7 @@ Collecting the observations above, the biquaternion framework makes the followin
 
 **5. No-signaling is cyclicity of the trace.** The invariance of the reduced state under local unitaries is the cyclicity of the trace applied to the partial trace.
 
-**6. The reversible/irreversible dichotomy is algebraic.** Unitary and idempotent elements are two classes of elements of one algebra, not two separate postulates.
+**6. The reversible/irreversible dichotomy is algebraic.** $*$-Unitary and idempotent elements are two classes of elements of one algebra, not two separate postulates.
 
 **7. The quantum/classical divide has a candidate structural home.** The split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ suggests a structural criterion for where entanglement lives, and the reversible/irreversible dichotomy gives the operational criterion an algebraic home. The development of this criterion is treated in the companion article.
 
@@ -200,7 +200,7 @@ It does **not**:
 
 2. **Change any Bell-inequality prediction.** The framework reproduces the standard correlation function and the standard Tsirelson bound. Bell's theorem stands.
 
-3. **Solve the measurement problem.** The framework relocates the unitary/projective dichotomy into the algebra, but it does not say which idempotent is selected, or why the transition from unitary to idempotent action occurs. The selection problem persists.
+3. **Solve the measurement problem.** The framework relocates the $*$-unitary/projective dichotomy into the algebra, but it does not say which idempotent is selected, or why the transition from $*$-unitary to idempotent action occurs. The selection problem persists.
 
 4. **Provide a mechanism for the correlations, or a way to send signals.** There is no dynamical channel in the framework. The correlations are a pairing, and the pairing is invariant under local operations on one factor.
 
@@ -216,9 +216,9 @@ The questions raised by this article are open, and they constitute a research ag
 
 **2. The dynamics of the two sectors.** The framework describes the algebraic structure of $\mathbb{M}_-$ and $\mathbb{M}_+$, but it does not specify a dynamics that couples them beyond the standard Lorentz coupling via rotor conjugation. A genuinely new coupling would be where new physical content could reside.
 
-**3. The quantum/classical criterion.** Can the operational criterion of Korolkova, Sánchez-Soto, and Leuchs — two idempotents is quantum, one idempotent and one unitary is classical — be turned into a criterion with dynamical content, rather than a criterion about which operations are available? The companion article discusses this and the open questions it raises. The central open problem is whether the *number of available idempotents* can itself become a dynamical variable, and whether a state can transition from quantum to classical through the loss of an idempotent measurement channel.
+**3. The quantum/classical criterion.** Can the operational criterion of Korolkova, Sánchez-Soto, and Leuchs — two idempotents is quantum, one idempotent and one $*$-unitary is classical — be turned into a criterion with dynamical content, rather than a criterion about which operations are available? The companion article discusses this and the open questions it raises. The central open problem is whether the *number of available idempotents* can itself become a dynamical variable, and whether a state can transition from quantum to classical through the loss of an idempotent measurement channel.
 
-**4. The measurement problem in the framework.** Does the algebraic dichotomy between unitary and idempotent elements suggest a resolution of the selection problem, or does it merely restate it?
+**4. The measurement problem in the framework.** Does the algebraic dichotomy between $*$-unitary and idempotent elements suggest a resolution of the selection problem, or does it merely restate it?
 
 **5. The status of the informational sector.** Is $\mathbb{M}_+$ physically realised as a distinct sector, or is it only a mathematical structure that happens to describe the operator algebra of a qubit? This is the question on which the interpretive content of the framework depends.
 
@@ -236,7 +236,7 @@ It reformulates:
 - The reduced state's mixedness as the algebraic residue of the entanglement of the joint state.
 - Steering as a factorization of the joint idempotent under a local projector.
 - No-signaling as the cyclicity of the partial trace.
-- The reversible/irreversible dichotomy as the algebraic dichotomy between unitary and idempotent elements.
+- The reversible/irreversible dichotomy as the algebraic dichotomy between $*$-unitary and idempotent elements.
 - The quantum/classical divide as a candidate structural distinction between $\mathbb{M}_-$ and $\mathbb{M}_+$, and as a natural algebraic home for the operational criterion of Korolkova, Sánchez-Soto, and Leuchs, as developed in the companion article.
 
 It does not:
@@ -265,7 +265,7 @@ The honest position is this. The framework makes certain structural features of 
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\tilde{Ϛ}_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
 | $E(\vec u_a, \vec u_b) = \langle\tilde\Pi_{\mathrm{singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}/\langle\tilde\Pi_{\mathrm{singlet}},e_t\otimes e_t\rangle_{*} = \operatorname{Tr}(\cdots)$ | Correlation function (trace at normalisation) |
-| $\tilde Q\tilde Q^{*} = e_t$ | Unitary element (reversible evolution) |
+| $\tilde Q\tilde Q^{*} = e_t$ | $*$-Unitary element (reversible evolution) |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Tensor-product trace |
 | $2\sqrt{2}$ | Tsirelson bound for the CHSH combination |

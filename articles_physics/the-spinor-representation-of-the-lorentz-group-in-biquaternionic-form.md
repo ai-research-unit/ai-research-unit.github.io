@@ -33,13 +33,13 @@ Three properties of the representation are worth stating at once, because they d
 
 **It is faithful.** The kernel of the action is trivial: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde U_{\mathrm L}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ on $\mathbb{M}_-$, whose kernel is $\{\pm e_t\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does **not** descend to $SO^+(1,3)$.
 
-**It is not unitary.** A finite-dimensional unitary representation of a real Lie algebra $\mathrm{G}$ maps every generator to a skew-adjoint operator, because each one-parameter subgroup is unitary. Every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so the boost generator $K_k=i\vec e_k$ is represented by $\rho(K_k)=i\rho(\vec e_k)$. If $\rho(\vec e_k)$ is skew-adjoint then
+**It is not $*$-unitary.** A finite-dimensional $*$-unitary representation of a real Lie algebra $\mathrm{G}$ maps every generator to a skew-adjoint operator, because each one-parameter subgroup is $*$-unitary. Every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so the boost generator $K_k=i\vec e_k$ is represented by $\rho(K_k)=i\rho(\vec e_k)$. If $\rho(\vec e_k)$ is skew-adjoint then
 
 $$
 \rho(K_k)^{\dagger}=(-i)\rho(\vec e_k)^{\dagger}=(-i)\bigl(-\rho(\vec e_k)\bigr)=i\rho(\vec e_k)=\rho(K_k),
 $$
 
-so $\rho(K_k)$ is Hermitian; skew-adjointness then forces $\rho(K_k)=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-unitary.
+so $\rho(K_k)$ is Hermitian; skew-adjointness then forces $\rho(K_k)=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional $*$-unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-$*$-unitary.
 
 The obstruction is visible concretely on $S$. The standard Hermitian form $h(\psi,\phi)=\psi^{\dagger}\phi$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\mathrm b}=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$, because
 
@@ -156,7 +156,7 @@ So $(j,j_2)$ is self-conjugate if and only if $j=j_2$. For $j\neq j_2$ the repre
 
 **Descent to the Lorentz group.** Since $-e_t$ acts on $(j,j_2)$ by $(-1)^{2j+2j_2}$, the representation descends to $SO^+(1,3)$ when $j+j_2\in\mathbb{Z}$ and is a genuine spin representation of the double cover otherwise. The vector representation and the two-form representations descend; the two chiralities and the $(\tfrac32,0)$ do not.
 
-**Unitarity.** All of these finite-dimensional representations are non-unitary except the trivial one, by the argument of the second section: a finite-dimensional unitary representation would kill the boost generators and hence vanish. The finite-dimensional representation theory of the Lorentz group is thus a theory of *non-unitary* representations, and that is not a defect of the biquaternion realization but a property of the group.
+**Unitarity.** All of these finite-dimensional representations are non-$*$-unitary except the trivial one, by the argument of the second section: a finite-dimensional $*$-unitary representation would kill the boost generators and hence vanish. The finite-dimensional representation theory of the Lorentz group is thus a theory of *non-$*$-unitary* representations, and that is not a defect of the biquaternion realization but a property of the group.
 
 ## Where the Algebra Stops
 
@@ -203,7 +203,7 @@ Two things should be kept apart here, because the construction can be misread as
 
 ## Summary
 
-The spinor representation is the action of the unit-norm biquaternions on the two-dimensional complex module $S=\mathbb{C}^2$, $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$. It is irreducible (the unique simple module of the simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$), faithful ($-e_t$ acts as $-I_2$, so it does not descend to $SO^+(1,3)$), and non-unitary: the invariant Hermitian form is preserved only by $SU(2)$, and, for a boost $\tilde U_{\mathrm b}$, $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}=\tilde U_{\mathrm b}^2\neq e_t$.
+The spinor representation is the action of the unit-norm biquaternions on the two-dimensional complex module $S=\mathbb{C}^2$, $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$. It is irreducible (the unique simple module of the simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$), faithful ($-e_t$ acts as $-I_2$, so it does not descend to $SO^+(1,3)$), and non-$*$-unitary: the invariant Hermitian form is preserved only by $SU(2)$, and, for a boost $\tilde U_{\mathrm b}$, $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}=\tilde U_{\mathrm b}^2\neq e_t$.
 
 Its complex conjugate $\bar{S}$ is the right-handed chirality. The two chiralities $(\tfrac12,0)$ and $(0,\tfrac12)$ are the only two-dimensional irreducible representations, and they are inequivalent: the two chiral Casimirs take the values $(0,-3)$ and $(-3,0)$ on them. They are not the two minimal left ideals (both carry $S$), and the conjugate chirality is not obtained by right multiplication, since $S^{*}\cong S$; it requires the real structure.
 
@@ -241,7 +241,7 @@ The higher representations are $(j,j_2)=V_j\boxtimes V_{j_2}$, $\dim=(2j+1)(2j_2
 - Wu-Ki Tung, *Group Theory in Physics* (World Scientific, 1985), for the $(j,j_2)$ labelling, the two $\mathrm{SU}(2)$ halves, and the reality classification.
 - I. M. Gel'fand, R. A. Minlos, and Z. Ya. Shapiro, *Representations of the Rotation and Lorentz Groups and Their Applications* (Pergamon, 1963), for the classical treatment of the finite- and infinite-dimensional representations.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for symmetric powers, highest weights, and the Clebsch–Gordan rule.
-- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the real forms, complexification, and the classification of unitary representations.
+- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the real forms, complexification, and the classification of $*$-unitary representations.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the two-component spinor calculus, self-duality, and the chiral projectors.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the idempotent construction of spinors and the Clifford-algebra origin of chirality.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor picture of the Lorentz group and the spinor–four-vector correspondence.

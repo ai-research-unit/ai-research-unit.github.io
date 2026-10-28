@@ -44,7 +44,7 @@ The complex structure that makes $\mathcal{H}_1$ a complex vector space is the c
 
 ## The Little Group and One State per Momentum
 
-The one-particle space is fixed up to unitary equivalence by two inputs: the mass shell and the little-group representation. The on-shell momenta of mass $\mu$ form the orbit of a representative momentum under the orthochronous Lorentz group, and the stability group of that representative is the rotation group $SO(3)$, the little group of a massive particle. A particle of spin $s$ transforms in the $(2s+1)$-dimensional irreducible representation of the little group, and the one-particle space is the space of square-integrable functions on the mass shell with values in that representation. For the scalar field $s=0$, and the little-group representation is the **trivial** one,
+The one-particle space is fixed up to $*$-unitary equivalence by two inputs: the mass shell and the little-group representation. The on-shell momenta of mass $\mu$ form the orbit of a representative momentum under the orthochronous Lorentz group, and the stability group of that representative is the rotation group $SO(3)$, the little group of a massive particle. A particle of spin $s$ transforms in the $(2s+1)$-dimensional irreducible representation of the little group, and the one-particle space is the space of square-integrable functions on the mass shell with values in that representation. For the scalar field $s=0$, and the little-group representation is the **trivial** one,
 
 $$
 |\vec p\rangle={a^{\mathrm{fop}}_{\vec p}}^\dagger|0\rangle,
@@ -235,7 +235,7 @@ $$
 a^{\mathrm{fop}}|\alpha\rangle=\alpha|\alpha\rangle,
 $$
 
-and the **displacement** $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$ generates it from the vacuum. The central $\mathrm{U}(1)$ acts on the Fock space through $U^{\mathrm{fop}}_{\alpha_0}=\exp(i\alpha_0Ϙ^{\mathrm{fop}})$, the same generator as in the companion field article, and since $[Ϙ^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=+a^{\mathrm{fop}\dagger}$ the coherent state is carried to $|\alpha\rangle\mapsto|\exp(i\alpha_0)\alpha\rangle$; the coherent states are thus the orbit of the vacuum under the semidirect product of the displacement and phase groups, and the charge is the generator of the phase. The biquaternion content here is only that the phase is central: it multiplies the state by a central unitary and does not rotate any spinor index. There is no native displacement operator in $\mathbb{B}$, for the same trace reason, and the coherent-state construction is imported with the module.
+and the **displacement** $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$ generates it from the vacuum. The central $\mathrm{U}(1)$ acts on the Fock space through $U^{\mathrm{fop}}_{\alpha_0}=\exp(i\alpha_0Ϙ^{\mathrm{fop}})$, the same generator as in the companion field article, and since $[Ϙ^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=+a^{\mathrm{fop}\dagger}$ the coherent state is carried to $|\alpha\rangle\mapsto|\exp(i\alpha_0)\alpha\rangle$; the coherent states are thus the orbit of the vacuum under the semidirect product of the displacement and phase groups, and the charge is the generator of the phase. The biquaternion content here is only that the phase is central: it multiplies the state by a central $*$-unitary and does not rotate any spinor index. There is no native displacement operator in $\mathbb{B}$, for the same trace reason, and the coherent-state construction is imported with the module.
 
 ## What Is Standard and What Is Open
 

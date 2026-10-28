@@ -230,7 +230,7 @@ The dimensions are the orbit dimension $6$ of *Roots of Unity and the Lagrange I
 
 - **Frames.** $PGL_{3}$ has dimension $8$.
 - **Root plus gauge.** The root orbit $PGL_{3}/T$ has dimension $6$; the torus $T$ has dimension $2$; $6+2=8$.
-- **Basis plus gauge.** A basis of $\mathbb{C}^{3}$ has $9$ parameters; the common scalar of the frame removes $1$; the independent scalings of the gauge remove $2$; $9-1=8$, with the $2$ read as the gauge.
+- **Basis plus gauge.** A basis of $\mathbb{C}^{3}$ has $9$ parameters; the common scalar of the frame removes $1$, leaving the $8$ parameters of the frame. Of these, the $2$ independent scalings of the gauge are the fibre over the root, leaving the $6$ parameters of the root orbit.
 
 The gauge is not a redundancy of the root: it is the fibre of the frame over the root, and it is the freedom of the off-diagonal units at fixed idempotents.
 
@@ -254,7 +254,7 @@ $$
 E_{12}\longmapsto\mu E_{12},\qquad E_{21}\longmapsto\mu^{-1}E_{21},
 $$
 
-with one parameter $\mu\in\mathbb{C}^{\times}$. The torus is $(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}\cong\mathbb{C}^{\times}$, of dimension one. The $M_{3}$ case has two simple nilpotents and two parameters; the composite is forced. The pattern is $(\mathbb{C}^{\times})^{n-1}$ for $M_{n}(\mathbb{C})$: one parameter for the biquaternion algebra $M_{2}(\mathbb{C})$, two for $M_{3}(\mathbb{C})$, and $n-1$ in general.
+with one parameter $\mu\in\mathbb{C}^{\times}$. The torus is $(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}\cong\mathbb{C}^{\times}$, of dimension one. The $M_{3}$ case has two simple nilpotents and two parameters; the composite is forced. The extra datum that the older literature calls the second root of the two-dimensional frame is a point of this one-parameter gauge: it fixes the relative scale of $E_{12}$ and $E_{21}$, and it is not a second primitive idempotent. The pattern is $(\mathbb{C}^{\times})^{n-1}$ for $M_{n}(\mathbb{C})$: one parameter for the biquaternion algebra $M_{2}(\mathbb{C})$, two for $M_{3}(\mathbb{C})$, and $n-1$ in general.
 
 ## Summary
 

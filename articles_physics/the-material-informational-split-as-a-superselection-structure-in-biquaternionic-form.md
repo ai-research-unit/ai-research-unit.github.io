@@ -170,7 +170,7 @@ so
 $$
 \boxed{\;\tilde U\,\mathbb{M}_\pm\,\tilde U^{*} \subseteq \mathbb{M}_\pm\;}.
 $$
-The Lorentz transformations on four-vectors, the unitary evolution of states, and the reversible operations of the quantum formalism are all congruences of this type, and none of them moves an element from one sector to the other. This is the precise sense in which the grading is a symmetry of the *operations* of the theory.
+The Lorentz transformations on four-vectors, the $*$-unitary evolution of states, and the reversible operations of the quantum formalism are all congruences of this type, and none of them moves an element from one sector to the other. This is the precise sense in which the grading is a symmetry of the *operations* of the theory.
 
 **The module action does not preserve the sectors.** The contrast with left multiplication is what makes the statement non-trivial. Left multiplication is the action of the algebra on its defining module, and it mixes the sectors:
 $$

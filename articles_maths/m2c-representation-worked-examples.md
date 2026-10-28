@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article computes eight matrices, one after another, through the same checklist: the biquaternion coordinates, the trace and the determinant, the characteristic and minimal polynomials, the spectrum, the rank, the diagonalising matrix or the Jordan chain, the commutant, the spectral projectors, the polar factors and the normality flags. The eight are chosen so that each exhibits one structure: a scalar, a Jordan block, a matrix with distinct eigenvalues, a singular matrix, a rank-one matrix, a unitary matrix, a Hermitian matrix and a normal matrix that is neither Hermitian nor unitary.
+This article computes eight matrices, one after another, through the same checklist: the biquaternion coordinates, the trace and the determinant, the characteristic and minimal polynomials, the spectrum, the rank, the diagonalising matrix or the Jordan chain, the commutant, the spectral projectors, the polar factors and the normality flags. The eight are chosen so that each exhibits one structure: a scalar, a Jordan block, a matrix with distinct eigenvalues, a singular matrix, a rank-one matrix, a $*$-unitary matrix, a Hermitian matrix and a normal matrix that is neither Hermitian nor $*$-unitary.
 
 The article is the matrix counterpart of *Worked Examples of Eigenbasis of a Biquaternion* and *Worked Examples of Exponential Polar Decomposition of Biquaternions*: the same kind of computation, read in the model $\mathsf{M}_2$ rather than in the algebra.
 
@@ -65,9 +65,9 @@ and $X=\lambda_+\Pi_++\lambda_-\Pi_-$. The two matrices are idempotent and satis
 
 **The commutant.** For a non-scalar $X$ the commutant is $\mathbb{C}[X]=\operatorname{span}\{\mathrm I_2,X\}$, of complex dimension two; for a scalar it is the whole algebra $M_2(\mathbb{C})$. The double commutant returns $\mathbb{C}[X]$ in both cases.
 
-**The polar factors.** The positive factor is $P=(XX^{\dagger})^{1/2}$ and the unitary or partial-isometry factor is $V$ with $X=PV$. When $X$ is invertible, $V=P^{-1}X$ is unitary. When $X$ is singular, $V=P^{+}X$ is a partial isometry, with $P^{+}$ the Moore–Penrose inverse.
+**The polar factors.** The positive factor is $P=(XX^{\dagger})^{1/2}$ and the $*$-unitary or partial-isometry factor is $V$ with $X=PV$. When $X$ is invertible, $V=P^{-1}X$ is $*$-unitary. When $X$ is singular, $V=P^{+}X$ is a partial isometry, with $P^{+}$ the Moore–Penrose inverse.
 
-**The flags.** A matrix is Hermitian when $X=X^{\dagger}$, unitary when $X^{\dagger}X=\mathrm I_2$, and normal when $XX^{\dagger}=X^{\dagger}X$. Hermitian and unitary matrices are normal; the converse fails in both directions, and the last example exhibits a normal matrix that is neither.
+**The flags.** A matrix is Hermitian when $X=X^{\dagger}$, $*$-unitary when $X^{\dagger}X=\mathrm I_2$, and normal when $XX^{\dagger}=X^{\dagger}X$. Hermitian and $*$-unitary matrices are normal; the converse fails in both directions, and the last example exhibits a normal matrix that is neither.
 
 ## The Eight Matrices
 
@@ -80,7 +80,7 @@ The eight matrices, their coordinates and their basic invariants are collected h
 | Distinct | $\begin{pmatrix}1&2\\3&4\end{pmatrix}$ | $(\tfrac52,\tfrac{5i}{2},\tfrac12,-\tfrac{3i}{2})$ | $5$ | $-2$ | $\tfrac{5\pm\sqrt{33}}{2}$ |
 | Singular | $\begin{pmatrix}2&0\\0&0\end{pmatrix}$ | $(1,0,0,i)$ | $2$ | $0$ | $2,0$ |
 | Rank one | $\begin{pmatrix}1&2\\3&6\end{pmatrix}$ | $(\tfrac72,\tfrac{5i}{2},\tfrac12,-\tfrac{5i}{2})$ | $7$ | $0$ | $7,0$ |
-| Unitary | $\tfrac{1}{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$ | $(\tfrac{1}{\sqrt2},-\tfrac{1}{\sqrt2},0,0)$ | $\sqrt2$ | $1$ | $e^{\pm i\pi/4}$ |
+| $*$-Unitary | $\tfrac{1}{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$ | $(\tfrac{1}{\sqrt2},-\tfrac{1}{\sqrt2},0,0)$ | $\sqrt2$ | $1$ | $e^{\pm i\pi/4}$ |
 | Hermitian | $\begin{pmatrix}2&1-i\\1+i&-1\end{pmatrix}$ | $(\tfrac12,i,i,\tfrac{3i}{2})$ | $1$ | $-4$ | $\tfrac{1\pm\sqrt{17}}{2}$ |
 | Normal | $\begin{pmatrix}1&1\\-1&1\end{pmatrix}$ | $(1,0,-1,0)$ | $2$ | $2$ | $1\pm i$ |
 
@@ -94,9 +94,9 @@ The table is read with the inverse map of the introduction; the coordinates are 
 
 **The commutant.** $C(X)=M_2(\mathbb{C})$, of complex dimension four, and $C(C(X))=\mathbb{C}\mathrm I_2=\mathbb{C}[X]$. The scalar is the only matrix whose commutant is the whole algebra.
 
-**The flags.** The matrix is normal and Hermitian, because $2$ is real. It is not unitary, because $|2|\neq1$; the scalar $\tfrac12X=\mathrm I_2$ is unitary.
+**The flags.** The matrix is normal and Hermitian, because $2$ is real. It is not $*$-unitary, because $|2|\neq1$; the scalar $\tfrac12X=\mathrm I_2$ is $*$-unitary.
 
-**The polar factors.** $P=2\mathrm I_2$ and $V=\mathrm I_2$, so $X=PV$ with $P$ positive and $V$ unitary.
+**The polar factors.** $P=2\mathrm I_2$ and $V=\mathrm I_2$, so $X=PV$ with $P$ positive and $V$ $*$-unitary.
 
 **The reading.** The scalar is the degenerate spectral case: one eigenvalue, one spectral projector $\mathrm I_2$, and no eigenbasis to choose. In the algebra it is the central line $\mathbb{C}e_t$.
 
@@ -118,7 +118,7 @@ JJ^{\dagger}=\begin{pmatrix}2&1\\1&1\end{pmatrix},
 J^{\dagger}J=\begin{pmatrix}1&1\\1&2\end{pmatrix}.
 $$
 
-It is neither Hermitian nor unitary.
+It is neither Hermitian nor $*$-unitary.
 
 **The polar factors.** $JJ^{\dagger}=\begin{pmatrix}2&1\\1&1\end{pmatrix}$ has determinant $1$ and trace $3$, so
 
@@ -128,7 +128,7 @@ P=(JJ^{\dagger})^{1/2}=\frac{1}{\sqrt5}\begin{pmatrix}3&1\\1&2\end{pmatrix},
 V=P^{-1}J=\frac{1}{\sqrt5}\begin{pmatrix}2&1\\-1&2\end{pmatrix}.
 $$
 
-The factor $P$ is positive definite and $V$ is unitary; the product is $J$.
+The factor $P$ is positive definite and $V$ is $*$-unitary; the product is $J$.
 
 **The reading.** The Jordan block is the matrix form of a spectrally degenerate, N-regular element: $B=0$, $Q_t=1$, norm $1$. The missing eigenvector is the missing spectral idempotent; the commutant keeps the nilpotent direction. The exponential is $\exp J=e(\mathrm I_2+N)=eJ$.
 
@@ -173,7 +173,7 @@ Both are idempotent and $\Pi_+\Pi_-=0$. They are not Hermitian: the $(1,2)$ entr
 
 **The commutant.** $C(D)=\mathbb{C}[D]=\operatorname{span}\{\mathrm I_2,D\}$, of complex dimension two; the double commutant is the same plane.
 
-**The flags.** The matrix is diagonalisable but not normal, not Hermitian and not unitary. It is the standard example that diagonalisability does not imply normality.
+**The flags.** The matrix is diagonalisable but not normal, not Hermitian and not $*$-unitary. It is the standard example that diagonalisability does not imply normality.
 
 **The reading.** The element is spectrally regular with real eigenvalues, because $B$ is imaginary. The two spectral projectors are idempotent but not Hermitian; the eigenbasis is a pair of non-orthogonal lines. In the algebra, the spectrum is the two roots of the characteristic polynomial, and the coordinates of $D$ in its eigenbasis are the diagonal entries.
 
@@ -187,13 +187,13 @@ Both are idempotent and $\Pi_+\Pi_-=0$. They are not Hermitian: the $(1,2)$ entr
 
 **The spectral projectors.** $\Pi_+=\begin{pmatrix}1&0\\0&0\end{pmatrix}$ projects onto the image, and $\Pi_-=\begin{pmatrix}0&0\\0&1\end{pmatrix}$ projects onto the kernel. Both are Hermitian and orthogonal, because $S$ is normal.
 
-**The polar factors.** $S$ is positive semidefinite, so $P=S$ and $V=\Pi_+=\begin{pmatrix}1&0\\0&0\end{pmatrix}$. The factor $V$ is a partial isometry, not a unitary matrix; $S=PV$.
+**The polar factors.** $S$ is positive semidefinite, so $P=S$ and $V=\Pi_+=\begin{pmatrix}1&0\\0&0\end{pmatrix}$. The factor $V$ is a partial isometry, not a $*$-unitary matrix; $S=PV$.
 
 **The pseudo-inverse.** $S^{+}=\begin{pmatrix}\tfrac12&0\\0&0\end{pmatrix}$, and $SS^{+}=S^{+}S=\Pi_+$.
 
 **The algebra reading.** The two idempotents are the images of $\tfrac12(e_t+i\vec e_z)$ and $\tfrac12(e_t-i\vec e_z)$. The element is a non-pure zero divisor: it is $2$ times the Hermitian idempotent $\tfrac12(e_t+i\vec e_z)$. The right annihilator is the minimal right ideal $E_{22}M_2$, of complex dimension two, and the left annihilator is the minimal left ideal $M_2E_{22}$; the element $\tfrac12(e_t-i\vec e_z)$ is a nonzero annihilator on both sides, and the product is zero in both orders.
 
-**The flags.** The matrix is Hermitian and normal, not unitary. It is the normal singular case: the spectral projectors are orthogonal.
+**The flags.** The matrix is Hermitian and normal, not $*$-unitary. It is the normal singular case: the spectral projectors are orthogonal.
 
 ## The Rank-One Matrix
 
@@ -225,11 +225,11 @@ $$
 
 The factor $P$ is positive semidefinite of rank one and $V$ is a partial isometry; $PV=R$.
 
-**The flags.** The matrix is singular and rank one, but not normal, not Hermitian and not unitary. It is the rank-one case that is not a Hermitian projector.
+**The flags.** The matrix is singular and rank one, but not normal, not Hermitian and not $*$-unitary. It is the rank-one case that is not a Hermitian projector.
 
 **The reading.** The rank-one matrices are the nonzero points of the null cone; the determinantal variety is their closure, with the origin as apex. The element is a non-pure zero divisor, $7$ times the idempotent $E$. The contrast with the singular example is the contrast between a Hermitian rank-one projector and a non-Hermitian one.
 
-## The Unitary Matrix
+## The $*$-Unitary Matrix
 
 **The matrix.** $X=U=\tfrac{1}{\sqrt2}\begin{pmatrix}1&i\\i&1\end{pmatrix}$, with $\tilde Q=\tfrac{1}{\sqrt2}(e_t-\vec e_x)$. The element has norm $Q_t^2+B^2=\tfrac12+\tfrac12=1$, so it lies in the norm-one group.
 
@@ -243,7 +243,7 @@ $$
 
 The eigenvalues are distinct, so $m_X=p_X$; the rank is $2$.
 
-**The unitary and normal flags.** $U^{\dagger}U=\mathrm I_2$, so $U$ is unitary; unitary matrices are normal. It is not Hermitian, because the $(1,2)$ entry $i/\sqrt2$ is not the conjugate of the $(2,1)$ entry $i/\sqrt2$.
+**The $*$-unitary and normal flags.** $U^{\dagger}U=\mathrm I_2$, so $U$ is $*$-unitary; $*$-unitary matrices are normal. It is not Hermitian, because the $(1,2)$ entry $i/\sqrt2$ is not the conjugate of the $(2,1)$ entry $i/\sqrt2$.
 
 **The eigenbasis.** The eigenvectors are $(1,1)^{\mathsf T}$ for $\lambda_+$ and $(1,-1)^{\mathsf T}$ for $\lambda_-$. With
 
@@ -252,14 +252,14 @@ C=\begin{pmatrix}1&1\\1&-1\end{pmatrix},
 \qquad
 C^{-1}=\tfrac12C,
 \qquad
-C/\sqrt2 \text{ is unitary},
+C/\sqrt2 \text{ is }{}^{*}\text{-unitary},
 $$
 
 one has $U=C\operatorname{diag}(\lambda_+,\lambda_-)C^{-1}$.
 
 **The spectral projectors.** $\Pi_+=\tfrac12\begin{pmatrix}1&1\\1&1\end{pmatrix}$ and $\Pi_-=\tfrac12\begin{pmatrix}1&-1\\-1&1\end{pmatrix}$. Both are Hermitian and orthogonal, and $U=\lambda_+\Pi_++\lambda_-\Pi_-$.
 
-**The polar factors.** $P=\mathrm I_2$ and $V=U$: a unitary matrix is its own unitary polar factor.
+**The polar factors.** $P=\mathrm I_2$ and $V=U$: a $*$-unitary matrix is its own $*$-unitary polar factor.
 
 **The reading.** The element is a unit of norm one, hence an element of $SL_2(\mathbb{C})$. Its eigenvalues lie on the unit circle, and the determinant is $1$. The matrix is a rotation rotor: $U^2=i\sigma_1$ and $U^4=-\mathrm I_2$, so its eigenvalues are those of a rotor of angle $\pi/2$; the sign of the rotation axis is the sign convention of the rotor.
 
@@ -297,9 +297,9 @@ $$
 
 Both are Hermitian and orthogonal, as the spectral theorem requires.
 
-**The polar factors.** Because $H$ is Hermitian, $|H|$ is the matrix of $|\lambda_\pm|$ in the eigenbasis and $\operatorname{sign}(H)$ is the unitary matrix of the signs of the eigenvalues; $H=|H|\operatorname{sign}(H)$ is the polar decomposition, with both factors Hermitian.
+**The polar factors.** Because $H$ is Hermitian, $|H|$ is the matrix of $|\lambda_\pm|$ in the eigenbasis and $\operatorname{sign}(H)$ is the $*$-unitary matrix of the signs of the eigenvalues; $H=|H|\operatorname{sign}(H)$ is the polar decomposition, with both factors Hermitian.
 
-**The flags.** The matrix is Hermitian and normal, not unitary: the eigenvalues are real but not of modulus one.
+**The flags.** The matrix is Hermitian and normal, not $*$-unitary: the eigenvalues are real but not of modulus one.
 
 **The reading.** The element is Hermitian, so its spectral projectors are Hermitian and its eigenbasis is orthonormal. The two eigenvalues have opposite signs, so the Hermitian form has signature $(1,1)$ on the two spectral lines.
 
@@ -323,52 +323,52 @@ $$
 N^{\dagger}N=(\mathrm I_2-K)(\mathrm I_2+K)=2\mathrm I_2=NN^{\dagger},
 $$
 
-so $N$ is normal. It is not Hermitian, because $K$ is not Hermitian, and it is not unitary, because $N^{\dagger}N=2\mathrm I_2$.
+so $N$ is normal. It is not Hermitian, because $K$ is not Hermitian, and it is not $*$-unitary, because $N^{\dagger}N=2\mathrm I_2$.
 
 **The eigenbasis.** The eigenvectors are $(1,i)^{\mathsf T}$ for $1+i$ and $(1,-i)^{\mathsf T}$ for $1-i$. With
 
 $$
 C=\begin{pmatrix}1&1\\i&-i\end{pmatrix},
 \qquad
-C/\sqrt2 \text{ is unitary},
+C/\sqrt2 \text{ is }{}^{*}\text{-unitary},
 $$
 
 one has $N=C\operatorname{diag}(1+i,1-i)C^{-1}$.
 
 **The spectral projectors.** $\Pi_+=\tfrac12\begin{pmatrix}1&-i\\i&1\end{pmatrix}$ and $\Pi_-=\tfrac12\begin{pmatrix}1&i\\-i&1\end{pmatrix}$. Both are Hermitian and orthogonal.
 
-**The polar factors.** $|N|=\sqrt2\,\mathrm I_2$ and $V=N/\sqrt2$; the unitary factor has determinant $1$, so $N/\sqrt2\in SU(2)$.
+**The polar factors.** $|N|=\sqrt2\,\mathrm I_2$ and $V=N/\sqrt2$; the $*$-unitary factor has determinant $1$, so $N/\sqrt2\in SU(2)$.
 
-**The algebra reading.** $\tilde Q=e_t-\vec e_y$, $\vec Q=-\vec e_y$, $B=1$ and $\vec\Xi=i\vec e_y$. The spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_y)$, which are Hermitian. In a unitary eigenbasis the pair of nilpotents is exchanged by the star. This is the normal case of *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*, §*The Normal Case*.
+**The algebra reading.** $\tilde Q=e_t-\vec e_y$, $\vec Q=-\vec e_y$, $B=1$ and $\vec\Xi=i\vec e_y$. The spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_y)$, which are Hermitian. In a $*$-unitary eigenbasis the pair of nilpotents is exchanged by the star. This is the normal case of *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*, §*The Normal Case*.
 
-**The flags.** The matrix is normal, neither Hermitian nor unitary. It is the example that separates normality from the two special normal types.
+**The flags.** The matrix is normal, neither Hermitian nor $*$-unitary. It is the example that separates normality from the two special normal types.
 
 ## The Pattern
 
 The checks are collected in one table.
 
-| Case | $m_X(t)$ | Rank | Diagonalisable | Normal | Hermitian | Unitary |
+| Case | $m_X(t)$ | Rank | Diagonalisable | Normal | Hermitian | $*$-Unitary |
 |---|---|---|---|---|---|---|
 | Scalar | $t-2$ | $2$ | yes | yes | yes | no |
 | Jordan | $(t-1)^2$ | $2$ | no | no | no | no |
 | Distinct | $t^2-5t-2$ | $2$ | yes | no | no | no |
 | Singular | $t(t-2)$ | $1$ | yes | yes | yes | no |
 | Rank one | $t(t-7)$ | $1$ | yes | no | no | no |
-| Unitary | $t^2-\sqrt2\,t+1$ | $2$ | yes | yes | no | yes |
+| $*$-Unitary | $t^2-\sqrt2\,t+1$ | $2$ | yes | yes | no | yes |
 | Hermitian | $t^2-t-4$ | $2$ | yes | yes | yes | no |
 | Normal | $t^2-2t+2$ | $2$ | yes | yes | no | no |
 
-**The implications.** Hermitian implies normal, and unitary implies normal; the converse fails in both directions. A normal matrix with a repeated eigenvalue is scalar: the only normal matrix among the three Jordan types is the scalar. A non-scalar Jordan block is never normal.
+**The implications.** Hermitian implies normal, and $*$-unitary implies normal; the converse fails in both directions. A normal matrix with a repeated eigenvalue is scalar: the only normal matrix among the three Jordan types is the scalar. A non-scalar Jordan block is never normal.
 
 **The spectral reading.** For a normal matrix the spectral projectors are Hermitian and the eigenbasis is orthonormal; for a non-normal matrix with distinct eigenvalues the same Lagrange formula gives idempotents that are not Hermitian. The distinct-spectrum example and the rank-one example are the two non-normal diagonalisable cases; the Jordan block is the non-diagonalisable case.
 
 **The rank-one reading.** The singular example and the rank-one example both have rank one and determinant zero. The first is a Hermitian projector up to scale, the second is a non-Hermitian idempotent up to scale. The difference is exactly the normality flag: the first is normal, the second is not.
 
-**The group reading.** The unitary example lies in $SU(2)$; the normal example is $\sqrt2$ times an element of $SU(2)$; the Jordan block and the distinct-spectrum matrix both lie in $GL_2(\mathbb{C})$, with determinants $1$ and $-2$ respectively, so the first is in $SL_2(\mathbb{C})$ and the second is not. The scalar lies in the centre.
+**The group reading.** The $*$-unitary example lies in $SU(2)$; the normal example is $\sqrt2$ times an element of $SU(2)$; the Jordan block and the distinct-spectrum matrix both lie in $GL_2(\mathbb{C})$, with determinants $1$ and $-2$ respectively, so the first is in $SL_2(\mathbb{C})$ and the second is not. The scalar lies in the centre.
 
 ## Summary
 
-The eight matrices are read through one checklist: coordinates, trace and determinant, spectrum and minimal polynomial, rank, diagonalisability, commutant, spectral projectors and polar factors. The scalar is the degenerate normal case; the Jordan block is the non-diagonalisable case; the distinct-spectrum matrix is diagonalisable but not normal; the singular matrix is a Hermitian rank-one projector up to scale; the rank-one matrix is a non-Hermitian idempotent up to scale; the unitary and Hermitian matrices are the two special normal types; and the normal matrix is neither. The pattern table collects the flags, and the two non-normal diagonalisable examples show that diagonalisability does not imply normality.
+The eight matrices are read through one checklist: coordinates, trace and determinant, spectrum and minimal polynomial, rank, diagonalisability, commutant, spectral projectors and polar factors. The scalar is the degenerate normal case; the Jordan block is the non-diagonalisable case; the distinct-spectrum matrix is diagonalisable but not normal; the singular matrix is a Hermitian rank-one projector up to scale; the rank-one matrix is a non-Hermitian idempotent up to scale; the $*$-unitary and Hermitian matrices are the two special normal types; and the normal matrix is neither. The pattern table collects the flags, and the two non-normal diagonalisable examples show that diagonalisability does not imply normality.
 
 ## Summary of Notation
 
@@ -382,7 +382,7 @@ The eight matrices are read through one checklist: coordinates, trace and determ
 | $\Pi_\pm$ | the spectral projectors |
 | $C(X)$ | the commutant |
 | $P=(XX^{\dagger})^{1/2}$ | the positive polar factor |
-| $V$ | the unitary or partial-isometry polar factor |
+| $V$ | the $*$-unitary or partial-isometry polar factor |
 | $P^{+}$ | the Moore–Penrose inverse of $P$ |
 | $E=R/7$ | the idempotent carried by the rank-one example |
 

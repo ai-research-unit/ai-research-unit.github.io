@@ -170,13 +170,13 @@ $$
 M = \begin{pmatrix} 0 & A \\ B & 0 \end{pmatrix},
 $$
 
-a Hadamard-type unitary transformation turns it into a block-diagonal matrix whose two blocks differ by a sign. With
+a Hadamard-type $*$-unitary transformation turns it into a block-diagonal matrix whose two blocks differ by a sign. With
 
 $$
 \boxed{\;U_\alpha = \frac{1}{\sqrt2}\begin{pmatrix} I & I \\ \alpha I & -\alpha I \end{pmatrix}, \qquad |\alpha| = 1\;},
 $$
 
-one has $M_{\mathrm{rot}} = U_\alpha^{\dagger}MU_\alpha$ block diagonal exactly when $\alpha^{*}B = \alpha A$, and then the blocks are $\alpha A$ and $-\alpha A$. The relevant root is fixed by the relation between the two non-zero blocks: when they are opposite, $B = -A$, the condition holds for $\alpha = \pm i$, and when they are equal, $B = A$, for $\alpha = \pm 1$. Both occur in the source's symmetry classes, for a single active vector component: $\vec e_y$ alone gives $B = -A$ and $\vec e_x$ alone gives $B = A$, while $\vec e_z$ alone is already block diagonal and needs no rotation. When the two blocks are not simply related, the unitary matrix is completed by a complex matrix $G$ built from the singular value decomposition $A = U\Sigma V^{\dagger}$ of the upper block as $G = VU^{\dagger}$, which restores the condition $AG = (AG)^{*}$.
+one has $M_{\mathrm{rot}} = U_\alpha^{\dagger}MU_\alpha$ block diagonal exactly when $\alpha^{*}B = \alpha A$, and then the blocks are $\alpha A$ and $-\alpha A$. The relevant root is fixed by the relation between the two non-zero blocks: when they are opposite, $B = -A$, the condition holds for $\alpha = \pm i$, and when they are equal, $B = A$, for $\alpha = \pm 1$. Both occur in the source's symmetry classes, for a single active vector component: $\vec e_y$ alone gives $B = -A$ and $\vec e_x$ alone gives $B = A$, while $\vec e_z$ alone is already block diagonal and needs no rotation. When the two blocks are not simply related, the $*$-unitary matrix is completed by a complex matrix $G$ built from the singular value decomposition $A = U\Sigma V^{\dagger}$ of the upper block as $G = VU^{\dagger}$, which restores the condition $AG = (AG)^{*}$.
 
 It is a statement of linear algebra — a rotation of a two-block matrix into its eigenbasis — and the biquaternion content is only the guarantee that the blocks carry the stated structure, so that the reduction applies.
 
@@ -235,7 +235,7 @@ Multiplying two general biquaternions naively costs sixteen complex multiplicati
 
 The same scheme applies unchanged to matrix-valued biquaternions, because it is bilinear with scalar coefficients and never uses commutativity: a fully populated matrix-valued product costs twenty-four real matrix-matrix multiplications instead of sixty-four, and a real-quaternion one eight instead of sixteen. The memory of the array form equals that of its $2n\times2n$ complex image, and the array form reaches roughly twice the dimension before a 32-bit workspace limit binds.
 
-The image is the object the machine consumes, and its structure is the corpus's structure: a real-quaternion array is a complex matrix with the time-reversal symmetric block form, an antiquaternion array one with the time-reversal antisymmetric form, the image of the entrywise product is the product of the images, the trace of the image is the biquaternion trace $2\,\mathrm{Sc}$, and the image of the dagger is the conjugate transpose. A Hermitian biquaternion eigenvalue problem is mapped to the complex image and reduced, when the blocks are diagonal or anti-diagonal, to two problems of half the dimension by a Hadamard-type unitary rotation.
+The image is the object the machine consumes, and its structure is the corpus's structure: a real-quaternion array is a complex matrix with the time-reversal symmetric block form, an antiquaternion array one with the time-reversal antisymmetric form, the image of the entrywise product is the product of the images, the trace of the image is the biquaternion trace $2\,\mathrm{Sc}$, and the image of the dagger is the conjugate transpose. A Hermitian biquaternion eigenvalue problem is mapped to the complex image and reduced, when the blocks are diagonal or anti-diagonal, to two problems of half the dimension by a Hadamard-type $*$-unitary rotation.
 
 The split the arithmetic respects is $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, not the sector split $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; the two cuts cross, so a sector-restricted problem need not be the cheap one. The source's measurements on modern CPU and GPU systems show the count turning into speed, by factors from about $1.2$ to about $7.3$ on multiplication and by about $12$ and $61$ on diagonalisation, at dimensions in the tens of thousands. All of it is arithmetic about an algebra: it neither supports nor threatens the claim that the algebra is the world's.
 
@@ -261,7 +261,7 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus
 | $M^+=\begin{pmatrix}A&B\\-B^{*}&A^{*}\end{pmatrix}$ | Image block of a real-quaternion array |
 | $M^-=\begin{pmatrix}G&H\\H^{*}&-G^{*}\end{pmatrix}$ | Image block of an antiquaternion array |
 | $\mathrm{tr}(M)=2\,\mathrm{tr}(Q_t)$ | The image trace is the biquaternion trace $2\,\mathrm{Sc}$ on the diagonal |
-| $U_\alpha=\frac{1}{\sqrt2}\begin{pmatrix}I&I\\\alpha I&-\alpha I\end{pmatrix}$ | Hadamard-type unitary, $|\alpha|=1$, $M$ block anti-diagonal |
+| $U_\alpha=\frac{1}{\sqrt2}\begin{pmatrix}I&I\\\alpha I&-\alpha I\end{pmatrix}$ | Hadamard-type $*$-unitary, $|\alpha|=1$, $M$ block anti-diagonal |
 | $\alpha^{*}B=\alpha A$ | The condition for $U_\alpha^{\dagger}MU_\alpha$ to be block diagonal |
 | $G=VU^{\dagger}$ | The completing matrix from the SVD $A=U\Sigma V^{\dagger}$ |
 

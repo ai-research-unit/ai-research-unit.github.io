@@ -98,7 +98,7 @@ $$
 M=U\Sigma V^\dagger,\qquad \Sigma=\mathrm{diag}(s_1,s_2),\quad s_1\ge s_2\ge 0,
 $$
 
-with $U,V$ unitary. The $s_i$ are the **Schmidt coefficients** of $|\psi\rangle$, and normalisation reads $s_1^2+s_2^2=1$. Substituting into $|\psi\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$ gives the **Schmidt decomposition**
+with $U,V$ $*$-unitary. The $s_i$ are the **Schmidt coefficients** of $|\psi\rangle$, and normalisation reads $s_1^2+s_2^2=1$. Substituting into $|\psi\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$ gives the **Schmidt decomposition**
 
 $$
 |\psi\rangle=s_1\,|u_x\rangle|v_1\rangle+s_2\,|u_y\rangle|v_2\rangle,

@@ -30,7 +30,7 @@ $$
 
 which the gauge principle article identifies as the realization of the global symmetry that survives a mass: under the constant phase $\varphi\mapsto \exp(i\alpha)\varphi$ the massive Klein–Gordon equation is invariant, because its mass term is linear in the field. This is the scalar the Higgs mechanism uses. It is **complex**, and we say so explicitly: a real scalar would be neutral under the central phase and could not break a $\mathrm{U}(1)$ at all. The framework does supply a complex scalar, so no real-scalar assumption is forced here; the real case is mentioned only where it differs.
 
-**The symmetry.** The global symmetry is the unitary part of the centre, $\varphi\mapsto\lambda\varphi$ with $\lambda = \exp(i\alpha)$ central. Localizing it means $\lambda(\tilde{Q}) = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$ with $\Gamma$ a real scalar function, and it forces the connection,
+**The symmetry.** The global symmetry is the $*$-unitary part of the centre, $\varphi\mapsto\lambda\varphi$ with $\lambda = \exp(i\alpha)$ central. Localizing it means $\lambda(\tilde{Q}) = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$ with $\Gamma$ a real scalar function, and it forces the connection,
 
 $$
 \tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma, \qquad

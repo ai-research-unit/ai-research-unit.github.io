@@ -294,7 +294,7 @@ $$
 
 so the anti-Hermitian generators $-i\sigma_k$ and the Hermitian generators $\sigma_k$ both act on $S$ by matrix multiplication. On the spinor module the infinitesimal generators act as the Pauli matrices and their multiples, which is the familiar statement that the spin-$\frac{1}{2}$ representation is the fundamental representation of $\mathrm{SL}(2,\mathbb{C})$.
 
-The **compact subgroup** $SU(2)\subset SL(2,\mathbb{C})$ consists of the unit-norm biquaternions with real vector part (the unit quaternions), for which $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. Its action on $S$ is unitary with respect to the Hermitian inner product $\langle\psi,\phi\rangle = \psi^\dagger\phi$, and it is the double cover of the spatial rotation group $SO(3)$. The boosts, by contrast, are not unitary, and they do not preserve that inner product; this is the representation-theoretic expression of the non-compactness of the Lorentz group.
+The **compact subgroup** $SU(2)\subset SL(2,\mathbb{C})$ consists of the unit-norm biquaternions with real vector part (the unit quaternions), for which $\tilde u_{\mathrm r}^{*}\tilde u_{\mathrm r} = e_t$. Its action on $S$ is $*$-unitary with respect to the Hermitian inner product $\langle\psi,\phi\rangle = \psi^\dagger\phi$, and it is the double cover of the spatial rotation group $SO(3)$. The boosts, by contrast, are not $*$-unitary, and they do not preserve that inner product; this is the representation-theoretic expression of the non-compactness of the Lorentz group.
 
 ## Bilinear Pairings and the Vector Representation
 

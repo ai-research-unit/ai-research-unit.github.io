@@ -97,7 +97,7 @@ $$
 
 and the four corners are the four $2\times2$ blocks of a block matrix. Each block has four entries, so each corner has dimension four. The diagonal blocks are closed under multiplication and are full matrix algebras with units $\Pi$ and $Q$; the off-diagonal blocks are the spaces of linear maps between the two planes.
 
-**The compressed units.** The unit of $\mathcal{A}$ is $\Pi$, not $I$; the unit of $\mathcal{D}$ is $Q$. The trace of an element of $\mathcal{A}$ as a matrix algebra is the compression $\operatorname{tr}(\Pi X\Pi)$, not the trace of $X$ in $M_4$. The two diagonal corners are matrix algebras with compressed units, and the embedding $\mathcal{A}\oplus\mathcal{D}\subset M_4$ is not unital in the sense of the unit $I$: the unit of the subalgebra is $\Pi+Q=I$, but the units of the two summands are $\Pi$ and $Q$.
+**The compressed units.** The unit of $\mathcal{A}$ is $\Pi$, not $I$; the unit of $\mathcal{D}$ is $Q$. For an element $X$, the trace of its compression to $\mathcal{A}$ is $\operatorname{tr}(\Pi X\Pi)$, the trace of the $2\times2$ block, which differs from $\operatorname{tr}X$ in general; on $\mathcal{A}$ itself the two agree. The two diagonal corners are matrix algebras with their own units, and the embedding $\mathcal{A}\oplus\mathcal{D}\subset M_4$ is unital with unit $\Pi+Q=I$, while neither summand contains $I$.
 
 **The block form.** A general element is
 
@@ -191,7 +191,7 @@ where $\Pi_1=\Pi$ and $\Pi_2=Q$. Written as a table:
 
 | $\cdot$ | $\mathcal{A}$ | $\mathcal{B}$ | $\mathcal{C}$ | $\mathcal{D}$ |
 |---|---|---|---|---|
-| $\mathcal{A}$ | $\mathcal{A}$ | $\mathcal{B}$ | $0$ | $0$ |
+| $\mathcal{A}$ | $\mathcal{A}$ | $\mathcal{B}$ | $\mathcal{C}$ | $0$ |
 | $\mathcal{B}$ | $0$ | $0$ | $\mathcal{A}$ | $\mathcal{B}$ |
 | $\mathcal{C}$ | $\mathcal{C}$ | $\mathcal{D}$ | $0$ | $0$ |
 | $\mathcal{D}$ | $0$ | $0$ | $\mathcal{C}$ | $\mathcal{D}$ |
@@ -250,11 +250,13 @@ $$
 \operatorname{tr}A=\operatorname{tr}A_{++}+\operatorname{tr}A_{--},
 $$
 
-a sum of the traces of the two diagonal blocks. The determinant is the determinant of the full block matrix; on an invertible $A$,
+a sum of the traces of the two diagonal blocks. The determinant is the determinant of the full block matrix; when $A_{--}$ is invertible,
 
 $$
-\det A=\det(A_{++}-A_{+-}A_{--}^{-1}A_{-+})\det A_{--}.
+\det A=\det(A_{++}-A_{+-}A_{--}^{-1}A_{-+})\det A_{--},
 $$
+
+and the formula extends by continuity when $A_{--}$ is singular.
 
 The mass block enters through the Schur complement $A_{+-}A_{--}^{-1}A_{-+}$, which is a map on $\mathbb{C}^2_+$. The determinant is not the product $\det A_{++}\det A_{--}$ unless the mass block is zero.
 
@@ -341,4 +343,4 @@ $$
 - [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass operator and its polar decomposition.
 - [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the two $M_2$ factors and their Lie algebras.
 - [The Peirce Decomposition and the Corner Recursion](the-peirce-decomposition-and-the-corner-recursion-mnc.html), for the general recursion $M_n\supset M_p\oplus M_{n-p}$.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion split $1+1+1+1$.
+- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion split $1+1+1+1$.

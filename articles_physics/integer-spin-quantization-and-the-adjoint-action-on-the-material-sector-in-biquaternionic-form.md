@@ -21,7 +21,7 @@ The article is organized as follows. The rotation algebra is constructed as the 
 
 ### Rotations and Their Generators
 
-The rotation group acts on the algebra by inner automorphisms. A rotation quaternion is unitary, $QQ^{*}=e_t$, so its inner automorphism — the adjoint action — is the Hermitian sandwich
+The rotation group acts on the algebra by inner automorphisms. A rotation quaternion is $*$-unitary, $QQ^{*}=e_t$, so its inner automorphism — the adjoint action — is the Hermitian sandwich
 
 $$
 R_Q:\;\tilde{Q}\longmapsto Q\tilde{Q}Q^{*}.
@@ -39,7 +39,7 @@ $$
 \boxed{\;J_k = \tfrac12\,\mathrm{ad}_{i\vec e_k} = \tfrac{i}{2}\,\mathrm{ad}_{\vec e_k}\;}.
 $$
 
-The factor $i$ is the usual one that turns the anti-Hermitian generator $\vec e_k$ of the unitary rotation into a Hermitian observable. The three $J_k$ act on the material sector by bracketing, $\tilde{Q}\mapsto[J_k,\tilde{Q}]$, and they are derivations: the Leibniz rule holds, so the action on a product is the sum of the actions on the factors.
+The factor $i$ is the usual one that turns the anti-Hermitian generator $\vec e_k$ of the $*$-unitary rotation into a Hermitian observable. The three $J_k$ act on the material sector by bracketing, $\tilde{Q}\mapsto[J_k,\tilde{Q}]$, and they are derivations: the Leibniz rule holds, so the action on a product is the sum of the actions on the factors.
 
 ### The Adjoint Action Preserves the Material Sector
 
@@ -157,7 +157,7 @@ For the massless field the situation is different in a way the adjoint action ma
 
 ### The Massless Restriction of the Adjoint Action
 
-For a massless field the little group is the Euclidean group of the plane transverse to the momentum, and its finite-dimensional unitary representations that occur in nature are labelled by the helicity, the eigenvalue of $\lambda=\vec u_p\cdot\vec J$. In the adjoint action's basis this is transparent. Choosing $\vec u_p=\vec e_z$, the helicity is $J_3$, with eigenvalues $\pm1,0$: the two circular states $\varepsilon_\pm$ have $\lambda=\pm1$ and span the transverse plane, while $\varepsilon_0$ has $\lambda=0$ and is longitudinal. The massless field keeps the two states of $\lambda=\pm1$, and the restriction of the adjoint action to the transverse plane is the direct sum of the two one-dimensional helicity representations,
+For a massless field the little group is the Euclidean group of the plane transverse to the momentum, and its finite-dimensional $*$-unitary representations that occur in nature are labelled by the helicity, the eigenvalue of $\lambda=\vec u_p\cdot\vec J$. In the adjoint action's basis this is transparent. Choosing $\vec u_p=\vec e_z$, the helicity is $J_3$, with eigenvalues $\pm1,0$: the two circular states $\varepsilon_\pm$ have $\lambda=\pm1$ and span the transverse plane, while $\varepsilon_0$ has $\lambda=0$ and is longitudinal. The massless field keeps the two states of $\lambda=\pm1$, and the restriction of the adjoint action to the transverse plane is the direct sum of the two one-dimensional helicity representations,
 
 $$
 J_3\big|_{\mathrm{span}\{\varepsilon_+,\varepsilon_-\}} = \mathrm{diag}(+1,-1).

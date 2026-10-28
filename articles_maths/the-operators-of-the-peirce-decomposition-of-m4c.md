@@ -276,7 +276,7 @@ $$
 T_{a,a^{-1}}(X)=aXa^{-1}
 $$
 
-is the inner automorphism $\Phi_a$. On the corners, it sends $A_{rs}$ to a linear combination of the corners $A_{il}$ with coefficients $a_{ir}(a^{-1})_{sl}$. The inner automorphism preserves the trace and the determinant but not the individual corners; it permutes the spectral lines only when $a$ is diagonal in the frame.
+is the inner automorphism $\Phi_a$. On the corners, it sends $A_{rs}$ to a linear combination of the corners $A_{il}$ with coefficients $a_{ir}(a^{-1})_{sl}$. The inner automorphism preserves the trace and the determinant but not the individual corners in general: it preserves each corner line exactly when $a$ is diagonal in the frame, and a permutation matrix permutes the spectral lines.
 
 **The sandwich and the Peirce table.** The sandwich acts on the two-sided Peirce table of *The Rank-Two Split* by transforming the row index with $a$ and the column index with $b$. For the rank-two split with $\Pi=P_+$, the sandwich with block-diagonal $a,b$ preserves the four corners; the sandwich with off-diagonal $a$ or $b$ mixes the corners. The mass block $\mathcal{B}$ is carried to the corner determined by the row of $a$ and the column of $b$.
 

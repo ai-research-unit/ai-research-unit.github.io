@@ -575,7 +575,7 @@ $$
 \qquad \theta\in[0,2\pi],\qquad \lvert\vec u_{\mathrm r}\rvert=1 .
 $$
 
-It is a real quaternion, of norm one, and unitary. Write $c=\cos\tfrac{\theta}{2}$, $s=\sin\tfrac{\theta}{2}$, $\vec u=\vec u_{\mathrm r}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{M}_-$. Then
+It is a real quaternion, of norm one, and $*$-unitary. Write $c=\cos\tfrac{\theta}{2}$, $s=\sin\tfrac{\theta}{2}$, $\vec u=\vec u_{\mathrm r}$, and let $\tilde X=ia\,e_t+\vec b$ be an element of $\mathbb{M}_-$. Then
 
 $$
 \tilde u_{\mathrm r}\tilde X

@@ -19,9 +19,9 @@ P'=(AA^*)^{1/2}>0,\quad
 U'=P'^{-1}A,
 $$
 
-written in exponential form: $P'=e^H$ with $H=\log P'$, and $U'=e^{\mathrm iK}$ with $K$ a Hermitian logarithm of the unitary factor. The Hermitian factor $H$ is unique; the unitary factor is unique, and $K$ is unique modulo $2\pi$ on each eigenspace.
+written in exponential form: $P'=e^H$ with $H=\log P'$, and $U'=e^{\mathrm iK}$ with $K$ a Hermitian logarithm of the $*$-unitary factor. The Hermitian factor $H$ is unique; the $*$-unitary factor is unique, and $K$ is unique modulo $2\pi$ on each eigenspace.
 
-The decomposition is different from the right polar decomposition $A=UP=e^{\mathrm iK'}e^{H'}$: the two share the unitary factor, and their positive factors are conjugate by it. They coincide exactly when $A$ is normal, equivalently when $[H,K]=0$.
+The decomposition is different from the right polar decomposition $A=UP=e^{\mathrm iK'}e^{H'}$: the two share the $*$-unitary factor, and their positive factors are conjugate by it. They coincide exactly when $A$ is normal, equivalently when $[H,K]=0$.
 
 The exponential polar decomposition exists exactly on $GL_6$: both factors are invertible, so a singular matrix has no such factorisation. The polar decomposition with a partial isometry survives on the singular set, and the Hermitian factor diverges logarithmically at the boundary.
 
@@ -37,7 +37,7 @@ $$
 A=P'U',
 $$
 
-with $P'$ positive definite Hermitian and $U'$ unitary:
+with $P'$ positive definite Hermitian and $U'$ $*$-unitary:
 
 $$
 P'=(AA^*)^{1/2},\qquad
@@ -50,7 +50,7 @@ $$
 U'^*U'=A^*P'^{-2}A=A^*(AA^*)^{-1}A=I_6,
 $$
 
-so $U'$ is unitary. Uniqueness: $P'^2=AA^*$ forces $P'=(AA^*)^{1/2}$, and then $U'=P'^{-1}A$.
+so $U'$ is $*$-unitary. Uniqueness: $P'^2=AA^*$ forces $P'=(AA^*)^{1/2}$, and then $U'=P'^{-1}A$.
 
 **Corollary (the two polars).** The same $A$ has the right polar decomposition
 
@@ -61,7 +61,7 @@ P=(A^*A)^{1/2},\qquad
 U=AP^{-1}.
 $$
 
-The unitary factors agree, $U'=U$, and the positive factors are conjugate, $P'=UPU^*$.
+The $*$-unitary factors agree, $U'=U$, and the positive factors are conjugate, $P'=UPU^*$.
 
 **Proof.** From $A=UP$, $AA^*=UP^2U^*$, so $P'=UPU^*$ and $U'=P'^{-1}A=UP^{-1}U^*UP=U$.
 
@@ -75,7 +75,7 @@ P'=e^H,
 H=\log P'\in\operatorname{Herm}_6,
 $$
 
-and every unitary $U'$ has a Hermitian logarithm
+and every $*$-unitary $U'$ has a Hermitian logarithm
 
 $$
 U'=e^{\mathrm iK},
@@ -123,7 +123,7 @@ H'=e^{-\mathrm iK}He^{\mathrm iK},
 K'\equiv K\pmod{2\pi}.
 $$
 
-The unitary factors agree, $e^{\mathrm iK'}=e^{\mathrm iK}=U$, and the Hermitian factors are conjugate, $H'=U^*HU$.
+The $*$-unitary factors agree, $e^{\mathrm iK'}=e^{\mathrm iK}=U$, and the Hermitian factors are conjugate, $H'=U^*HU$.
 
 **Proof.** The right polar is $A=UP$ with $P=U^*P'U$; hence $H'=U^*HU$ and $K'=K$ (modulo $2\pi$). The left form is $A=e^He^{\mathrm iK}$; the right form is $A=e^{\mathrm iK}e^{H'}$.
 
@@ -131,7 +131,7 @@ The unitary factors agree, $e^{\mathrm iK'}=e^{\mathrm iK}=U$, and the Hermitian
 
 **Proof.** If $A$ is normal, $P'=P$ and $H'=H$, so the two forms are $e^He^{\mathrm iK}=e^{\mathrm iK}e^H$; the factors commute. Conversely, if they commute, $A=e^{H+\mathrm iK}$ is normal.
 
-**Corollary (the spectral form).** For a normal $A$, there is a unitary $V$ and real diagonal $h,\theta$ with
+**Corollary (the spectral form).** For a normal $A$, there is a $*$-unitary $V$ and real diagonal $h,\theta$ with
 
 $$
 A=Ve^{h}e^{\mathrm i\theta}V^*,
@@ -150,11 +150,11 @@ $$
 
 **Proof.** $P'=(AA^*)^{1/2}$ is unique, and the positive definite logarithm is unique.
 
-### The Unitary Factor
+### The $*$-Unitary Factor
 
-**Theorem.** The unitary factor $U'$ is unique. The Hermitian exponent $K$ is unique modulo $2\pi$: if $e^{\mathrm iK}=e^{\mathrm iK'}=U'$, then $K-K'$ has eigenvalues in $2\pi\mathbb{Z}$ on the eigenspaces of $U'$.
+**Theorem.** The $*$-unitary factor $U'$ is unique. The Hermitian exponent $K$ is unique modulo $2\pi$: if $e^{\mathrm iK}=e^{\mathrm iK'}=U'$, then $K-K'$ has eigenvalues in $2\pi\mathbb{Z}$ on the eigenspaces of $U'$.
 
-**Proof.** The unitary factor is $U'=P'^{-1}A$; the logarithm of a unitary is unique modulo $2\pi$ on each eigenspace.
+**Proof.** The $*$-unitary factor is $U'=P'^{-1}A$; the logarithm of a $*$-unitary is unique modulo $2\pi$ on each eigenspace.
 
 **Corollary (the principal exponent).** There is a unique $K$ with spectrum in $(-\pi,\pi]$; it is the principal Hermitian logarithm of $U'$.
 
@@ -184,7 +184,7 @@ $$
 
 **Proof.** A Hermitian matrix has $36$ real parameters; the two Hermitian factors give $72$, matching $GL_6$.
 
-**Remark (the global structure).** The map $(H,K)\mapsto e^He^{\mathrm iK}$ is surjective but not injective: the periodicity $K\mapsto K+2\pi Z$ gives the same unitary factor whenever $Z$ commutes with $K$.
+**Remark (the global structure).** The map $(H,K)\mapsto e^He^{\mathrm iK}$ is surjective but not injective: the periodicity $K\mapsto K+2\pi Z$ gives the same $*$-unitary factor whenever $Z$ commutes with $K$.
 
 ## The Reach on the Singular Elements
 
@@ -192,7 +192,7 @@ $$
 
 **Theorem.** The exponential polar decomposition exists exactly on $GL_6$.
 
-**Proof.** $e^H$ is positive definite, hence invertible; $e^{\mathrm iK}$ is unitary, hence invertible; their product is invertible. Conversely, every invertible matrix has the decomposition.
+**Proof.** $e^H$ is positive definite, hence invertible; $e^{\mathrm iK}$ is $*$-unitary, hence invertible; their product is invertible. Conversely, every invertible matrix has the decomposition.
 
 **Corollary (the singular elements).** A singular $A$ has no factorization $A=e^He^{\mathrm iK}$ with $H,K$ Hermitian.
 
@@ -200,9 +200,9 @@ $$
 
 ### The Limit
 
-**Theorem.** Let $A(t)$ be a smooth family of invertible matrices with $A(0)$ singular of rank $k<6$. Then the positive factor $P'(t)$ tends to the singular $P'(0)$, the Hermitian factor $H(t)=\log P'(t)$ diverges: its eigenvalues tend to $-\infty$ in the kernel directions. The unitary factor may have a limit, and when it does, the limit depends on the direction of approach.
+**Theorem.** Let $A(t)$ be a smooth family of invertible matrices with $A(0)$ singular of rank $k<6$. Then the positive factor $P'(t)$ tends to the singular $P'(0)$, the Hermitian factor $H(t)=\log P'(t)$ diverges: its eigenvalues tend to $-\infty$ in the kernel directions. The $*$-unitary factor may have a limit, and when it does, the limit depends on the direction of approach.
 
-**Proof.** The positive factor is continuous; the logarithm of a positive eigenvalue tending to zero tends to $-\infty$. The unitary factor is the partial isometry of the singular polar decomposition, and its extension on the kernel is the free choice.
+**Proof.** The positive factor is continuous; the logarithm of a positive eigenvalue tending to zero tends to $-\infty$. The $*$-unitary factor is the partial isometry of the singular polar decomposition, and its extension on the kernel is the free choice.
 
 **Corollary (the singular values).** The singular values of $A$ are $e^{h_j}$, where $h_j$ are the eigenvalues of $H$; at a zero singular value the logarithm diverges.
 
@@ -218,7 +218,7 @@ $$
 
 **Proof.** The first is the invertibility of the factors; the second is the existence theorem for the semidefinite polar decomposition.
 
-**Remark (the boundary).** The exponential polar decomposition degenerates at the singular set: the Hermitian factor escapes to infinity, and the unitary factor loses its uniqueness. **The singular set is the boundary of the exponential polar chart.**
+**Remark (the boundary).** The exponential polar decomposition degenerates at the singular set: the Hermitian factor escapes to infinity, and the $*$-unitary factor loses its uniqueness. **The singular set is the boundary of the exponential polar chart.**
 
 ## The Comparison with the Split Case
 
@@ -283,15 +283,15 @@ $$
 
 **Corollary (the two gauge groups).** The full exponential polar has the unitary gauge $U(6)$ of dimension $36$; the chiral decomposition has the gauge $U(3)\times U(3)$ of dimension $18$, the stabilizer of the chiral split.
 
-**Proof.** The polar unitary factor ranges over $U(6)$; the chiral SVD uses the two unitaries of the two chiral planes.
+**Proof.** The polar $*$-unitary factor ranges over $U(6)$; the chiral SVD uses the two unitaries of the two chiral planes.
 
-### The Rank-One Comparison
+### The Biquaternion Comparison
 
 **Theorem (the biquaternion case).** For $M_2(\mathbb{C})\cong\mathbb{B}$, the same theorem holds: every invertible $A$ has $A=e^He^{\mathrm iK}$ with $H,K\in\operatorname{Herm}_2$; the left polar is $A=P'U'$ with $P'=(AA^*)^{1/2}$; the reach is $GL_2$, and the singular elements are the zero divisors.
 
 **Proof.** The dimension is $2$ instead of $6$; the proof is identical.
 
-**Corollary (the family).** The exponential polar decomposition is the same theorem for every $n$; the $M_6$ case has the $3+3$ chiral split and the $3\times3$ mass block, the $M_4$ case the $2+2$ split and the $2\times2$ block, and the $M_2$ case the rank-one biquaternion.
+**Corollary (the family).** The exponential polar decomposition is the same theorem for every $n$; the $M_6$ case has the $3+3$ chiral split and the $3\times3$ mass block, the $M_4$ case the $2+2$ split and the $2\times2$ block, and the $M_2$ case the $1+1$ split of the biquaternion.
 
 **Proof.** The polar decomposition and the matrix logarithm are dimension-independent.
 
@@ -307,15 +307,15 @@ A=e^He^{\mathrm iK},
 H,K\in\operatorname{Herm}_6,
 $$
 
-with $H=\log P'$ unique and $K$ unique modulo $2\pi$. It is the left polar decomposition $A=P'U'$, $P'=(AA^*)^{1/2}$, $U'=P'^{-1}A$, in exponential form. The right polar decomposition $A=UP$ shares the unitary factor, and the positive factors are conjugate, $P'=UPU^*$. The two orderings coincide exactly when $A$ is normal.
+with $H=\log P'$ unique and $K$ unique modulo $2\pi$. It is the left polar decomposition $A=P'U'$, $P'=(AA^*)^{1/2}$, $U'=P'^{-1}A$, in exponential form. The right polar decomposition $A=UP$ shares the $*$-unitary factor, and the positive factors are conjugate, $P'=UPU^*$. The two orderings coincide exactly when $A$ is normal.
 
 $$
 \boxed{\ A=e^He^{\mathrm iK},\quad H=\log P',\quad U'=e^{\mathrm iK},\quad A\in GL_6 .\ }
 $$
 
-The decomposition exists exactly on $GL_6$; at the singular set the Hermitian factor diverges, the unitary factor loses its uniqueness, and the polar decomposition with a partial isometry survives.
+The decomposition exists exactly on $GL_6$; at the singular set the Hermitian factor diverges, the $*$-unitary factor loses its uniqueness, and the polar decomposition with a partial isometry survives.
 
-In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the SVD $M=U_L\Sigma U_R^*$ with $U_L,U_R\in U(3)$; this is the block decomposition, not the full exponential polar decomposition. The rank-one case is the biquaternion algebra $M_2(\mathbb{C})$.
+In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the SVD $M=U_L\Sigma U_R^*$ with $U_L,U_R\in U(3)$; this is the block decomposition, not the full exponential polar decomposition. The $n=2$ case is the biquaternion algebra $M_2(\mathbb{C})$.
 
 | Object | Data |
 |---|---|
@@ -333,7 +333,7 @@ In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the S
 | Symbol | Meaning |
 |---|---|
 | $P'=(AA^*)^{1/2}$ | the left positive factor |
-| $U'=P'^{-1}A$ | the left unitary factor |
+| $U'=P'^{-1}A$ | the left $*$-unitary factor |
 | $H=\log P'$ | the Hermitian exponent of the scale |
 | $K=\log U'$ | the Hermitian exponent of the phase |
 | $M=A_{+-}$ | the mass block in the $3+3$ split |
@@ -346,6 +346,5 @@ In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the S
 - [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the chiral decomposition of the $3\times3$ block.
 - [The Two Chiralities](the-two-chiralities-of-m6c.html), for the $3+3$ split and the chirality involution.
 - [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the $2+2$ split and the $2\times2$ mass block.
-- [The Exponential Polar Decomposition of the Biquaternion Algebra](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the rank-one case.
-- [The Cartan Decomposition](the-cartan-decomposition.html), for the symmetric space and the exponential polar form.
-- [The Matrix Logarithm](the-matrix-logarithm.html), for the branches of the logarithm.
+- [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the regular case.
+- [The Cartan Decomposition and the Cartan Involution](the-cartan-decomposition-and-the-cartan-involution.html), for the symmetric space and the exponential polar form.

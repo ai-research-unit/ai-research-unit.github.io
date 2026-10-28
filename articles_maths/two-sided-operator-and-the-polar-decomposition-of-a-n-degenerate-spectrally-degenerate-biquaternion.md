@@ -116,7 +116,7 @@ $$
 \tilde Q_0^{2}=0 .
 $$
 
-The polar pair is the rank-one singular value decomposition of the nilpotent. The "unitary" factor is a nilpotent partial isometry, not a unitary; the pair is still the general pair of *The Polar Decomposition of a N-Degenerate Biquaternion*, but it is as far as possible from the modulus–unit form.
+The polar pair is the rank-one singular value decomposition of the nilpotent. The "$*$-unitary" factor is a nilpotent partial isometry, not a $*$-unitary; the pair is still the general pair of *The Polar Decomposition of a N-Degenerate Biquaternion*, but it is as far as possible from the modulus–unit form.
 
 ### The matrix model
 

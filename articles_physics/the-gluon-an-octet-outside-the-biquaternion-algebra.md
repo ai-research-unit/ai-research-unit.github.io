@@ -197,7 +197,7 @@ The octet can always be embedded if the carrier is enlarged. The algebra of $2\t
 $$
 \boxed{\;M_2(\mathbb{B})\cong \mathsf{M}_2(M_2(\mathbb{C}))\cong M_4(\mathbb{C})\;},
 $$
-and the unitary group of $\mathbb{C}^4$ contains $\mathrm{U}(3)$ and hence $SU(3)$ as a block-diagonal subgroup,
+and the $*$-unitary group of $\mathbb{C}^4$ contains $\mathrm{U}(3)$ and hence $SU(3)$ as a block-diagonal subgroup,
 $$
 SU(3)\subset \mathrm{U}(3)\subset \mathrm{U}(4),
 \qquad
@@ -211,7 +211,7 @@ $$
 \mathcal{A}_\mu=g_s\,G^a_\mu\,\frac{\lambda_a}{2},
 $$
 
-a traceless anti-Hermitian $3\times3$ complex matrix, that is, an element of $\mathfrak{su}(3)\subset\mathfrak{u}(3)\subset\mathfrak{u}(4)$. This is the exact sense in which the octet is *outside* $\mathbb{B}$: $\mathcal{A}_\mu$ is not an element of the algebra, and not a linear function of one, while it **is** an element of the endomorphism algebra of the enlarged carrier, $M_4(\mathbb{C})\cong M_2(\mathbb{B})$, as a $3\times3$ block with the fourth direction inert. The eight components $G^a_\mu$ are the eight coordinates of that block, and the group elements of the embedded $\mathrm{SU}(3)$ have explicit closed forms in biquaternion parameters — an ordered product of three exponentials of the antisymmetric, diagonal and diagonal-less symmetric linear functions, with eight parameters, verified unitary with unit determinant — so the embedding is not merely an existence statement: the finite gauge transformation $\Omega(x)\in\mathrm{SU}(3)$ and the potential $\Omega^{-1}\partial/\partial Q_\mu\,\Omega$ can be written out in those parameters. That is what the price of the embedding *is*, item by item: the biquaternion parameters of the closed form are the colour data, and they are adjoined to the algebra rather than drawn from it. The algebra's own gauge sector is untouched and remains $\mathrm{U}(2)$.
+a traceless anti-Hermitian $3\times3$ complex matrix, that is, an element of $\mathfrak{su}(3)\subset\mathfrak{u}(3)\subset\mathfrak{u}(4)$. This is the exact sense in which the octet is *outside* $\mathbb{B}$: $\mathcal{A}_\mu$ is not an element of the algebra, and not a linear function of one, while it **is** an element of the endomorphism algebra of the enlarged carrier, $M_4(\mathbb{C})\cong M_2(\mathbb{B})$, as a $3\times3$ block with the fourth direction inert. The eight components $G^a_\mu$ are the eight coordinates of that block, and the group elements of the embedded $\mathrm{SU}(3)$ have explicit closed forms in biquaternion parameters — an ordered product of three exponentials of the antisymmetric, diagonal and diagonal-less symmetric linear functions, with eight parameters, verified $*$-unitary with unit determinant — so the embedding is not merely an existence statement: the finite gauge transformation $\Omega(x)\in\mathrm{SU}(3)$ and the potential $\Omega^{-1}\partial/\partial Q_\mu\,\Omega$ can be written out in those parameters. That is what the price of the embedding *is*, item by item: the biquaternion parameters of the closed form are the colour data, and they are adjoined to the algebra rather than drawn from it. The algebra's own gauge sector is untouched and remains $\mathrm{U}(2)$.
 
 ## The Boundary of the Category
 
