@@ -193,9 +193,9 @@ $$</p>
 <p>$$
 \vec p_1^* + \vec p_2^* = 0.
 $$</p>
-<p>Asterisks denote quantities in this frame. In the biquaternion formulation the condition is that the vector part of the total four-momentum vanishes, so that $\tilde{P}$ is a pure imaginary scalar:</p>
+<p>Asterisks on scalars denote quantities in this frame. Four-momenta carry the frame label instead, $\tilde P^{\rm CM}$, because the star is reserved for the Hermitian conjugation, under which a real four-momentum changes sign, $\tilde P^{*}=-\tilde P$. In the biquaternion formulation the condition is that the vector part of the total four-momentum vanishes, so that $\tilde{P}$ is a pure imaginary scalar:</p>
 <p>$$
-\tilde{P}^* = \tilde U_{\rm CM}\,\tilde{P}\,\tilde U_{\rm CM}^{*} = iMc\,e_t.
+\tilde{P}^{\rm CM} = \tilde U_{\rm CM}\,\tilde{P}\,\tilde U_{\rm CM}^{*} = iMc\,e_t.
 $$</p>
 <p>The sign is fixed by the physical branch $E^* = Mc^2 > 0$, possible because a future-timelike four-vector can always be rotated to the time axis by a boost. Writing $\tilde{P}/(Mc)$ for the unit four-velocity of the pair, the companion article's relation gives</p>
 <p>$$
@@ -204,15 +204,15 @@ $$</p>
 \qquad
 \tilde U_{\rm CM}\tilde U^{\natural}_{\rm CM} = e_t\;}.
 $$</p>
-<p>Its rapidity $\Psi$ satisfies $\cosh\Psi = E_{\rm tot}/(Mc^2)$ and $\sinh\Psi\,\vec u = \vec P_{\rm tot}/(Mc)$, so its velocity is $\vec V_{\rm CM} = \vec P_{\rm tot}c^2/E_{\rm tot}$; the branch with $\mathrm{Sc}(\tilde U_{\rm CM}) > 0$ is the physical one. The frame is unique up to spatial rotations, which leave $\tilde{P}^* = iMc\,e_t$ unchanged.</p>
+<p>Its rapidity $\Psi$ satisfies $\cosh\Psi = E_{\rm tot}/(Mc^2)$ and $\sinh\Psi\,\vec u = \vec P_{\rm tot}/(Mc)$, so its velocity is $\vec V_{\rm CM} = \vec P_{\rm tot}c^2/E_{\rm tot}$; the branch with $\mathrm{Sc}(\tilde U_{\rm CM}) > 0$ is the physical one. The frame is unique up to spatial rotations, which leave $\tilde{P}^{\rm CM} = iMc\,e_t$ unchanged.</p>
 <h3 id="constituent-energies-and-momentum">Constituent Energies and Momentum</h3>
 <p>In the COM frame the two four-momenta are</p>
 <p>$$
-\tilde{P}_1^* = i\frac{E_1^*}{c}\,e_t + \vec p^*,
+\tilde{P}_1^{\rm CM} = i\frac{E_1^*}{c}\,e_t + \vec p^*,
 \qquad
-\tilde{P}_2^* = i\frac{E_2^*}{c}\,e_t - \vec p^*,
+\tilde{P}_2^{\rm CM} = i\frac{E_2^*}{c}\,e_t - \vec p^*,
 $$</p>
-<p>with $\vec p^* = \vec p_1^* = -\vec p_2^*$. Summing and comparing with $\tilde{P}^* = iMc\,e_t$ gives</p>
+<p>with $\vec p^* = \vec p_1^* = -\vec p_2^*$. Summing and comparing with $\tilde{P}^{\rm CM} = iMc\,e_t$ gives</p>
 <p>$$
 E_1^* + E_2^* = Mc^2.
 $$</p>
@@ -300,13 +300,13 @@ $$</p>
 Q = (M - m_1 - m_2)c^2 = \left(E_1^* - m_1c^2\right) + \left(E_2^* - m_2c^2\right),
 $$</p>
 <p>which is the total kinetic energy of the daughters in the parent rest frame, split in the ratio $(E_1^*-m_1c^2)/(E_2^*-m_2c^2) = m_2/m_1$ in the non-relativistic limit derived below.</p>
-<p>If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the rotor conjugation $\tilde{P}_a = \tilde U_{\mathrm b}\tilde{P}_a^*\tilde U_{\mathrm b}^{*}$, where $\tilde U_{\mathrm b}$ is the <strong>inverse</strong> of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde U_{\rm CM}$ of the preceding section:</p>
+<p>If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the Hermitian sandwich $\tilde{P}_a = \tilde U_{\mathrm b}\tilde{P}_a^{\rm CM}\tilde U_{\mathrm b}^{*}$, where $\tilde U_{\mathrm b}$ is the <strong>inverse</strong> of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde U_{\rm CM}$ of the preceding section. The middle factor is the four-momentum in the parent rest frame; it carries no star, since the star on the right factor is the conjugation that makes the sandwich:</p>
 <p>$$
 \tilde U_{\mathrm b} = \tilde U^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\vec u_V,
 \qquad
 \tanh\Psi = \frac{V}{c},
 $$</p>
-<p>the sign of the vector part being opposite to that of the lab-to-rest rotor. The direction resides in that sign alone, and cannot be reversed by transposing the conjugation: a pure boost rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so $\tilde U_{\mathrm b}\tilde{P}_a^*\tilde U_{\mathrm b}^{*}$ and $\tilde U_{\mathrm b}^{*}\tilde{P}_a^*\tilde U_{\mathrm b}$ are the same expression. Note also that the quaternion conjugate is <em>not</em> the Hermitian conjugate here, since $\tilde U^{\natural}_{\rm CM} \neq \tilde U_{\rm CM}^{*}$ for a pure boost.</p>
+<p>the sign of the vector part being opposite to that of the lab-to-rest rotor. The direction resides in that sign alone, and cannot be reversed by transposing the conjugation: a pure boost rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so $\tilde U_{\mathrm b}\tilde{P}_a^{\rm CM}\tilde U_{\mathrm b}^{*}$ and $\tilde U_{\mathrm b}^{*}\tilde{P}_a^{\rm CM}\tilde U_{\mathrm b}$ are the same expression. Note also that the quaternion conjugate is <em>not</em> the Hermitian conjugate here, since $\tilde U^{\natural}_{\rm CM} \neq \tilde U_{\rm CM}^{*}$ for a pure boost.</p>
 <p>In components this is the standard Lorentz transformation of a four-momentum,</p>
 <p>$$
 E_a = \gamma\left(E_a^* + \vec V\cdot\vec p_a^*\right),

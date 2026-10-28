@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>An isolated body of finite size that is not perfectly spherical has a shape with angular structure, and that structure is a superposition of multipoles. When the body is set into motion — vibrating about its equilibrium shape, or rotating with a non-axisymmetric deformation — its multipole moments become functions of time, and it becomes a source of an oscillating multipole field. The <strong>vibrating ellipsoid</strong> is the canonical example. It is the simplest body whose shape can be expanded in the radial spherical harmonics, its normal modes are labelled by the same order $l$ that labels the multipole expansion, and its lowest non-trivial deformation — the $l = 2$ mode — is precisely a quadrupole.</p>
 <p>This article develops the mechanics of the vibrating and rotating ellipsoid in the biquaternion framework, and follows the multipole tower it generates. The treatment is <strong>non-relativistic</strong> and classical: the body is described by its shape and orientation, the mode amplitudes obey ordinary harmonic-oscillator equations, and the fields it produces are read in the long-wavelength limit. The relativistic quadrupole is a separate subject.</p>
-<p>The framework's role here is specific, and it is worth stating before the details. The <strong>shape</strong> of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t')$ enter the algebra as the central elements $a_{lm}e_t$. The <strong>orientation</strong> of the body is a rotor $\tilde U(t')\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde U\vec w\tilde U^{\natural}$. The <strong>velocity field</strong> of the medium is a vector, an element of the vector part. The multipole <strong>moments</strong> themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.</p>
+<p>The framework's role here is specific, and it is worth stating before the details. The <strong>shape</strong> of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t')$ enter the algebra as the central elements $a_{lm}e_t$. The <strong>orientation</strong> of the body is a rotor $\tilde U(t')\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde U\vec w\tilde U^{*}$. The <strong>velocity field</strong> of the medium is a vector, an element of the vector part. The multipole <strong>moments</strong> themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.</p>
 <p>The biquaternion conventions are those of the companion articles:
 - Companion article <em>Introduction to the Biquaternion Universe</em>, for the algebra and its two sectors.
 - Companion article <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em>, for the four-vectors and the vector part.
@@ -92,7 +92,7 @@ $$</p>
 $$</p>
 <p>Because $\tilde U$ is a real quaternion, its Hermitian conjugate is its quaternion conjugate, $\tilde U^{*} = \tilde U^{\natural}$. The rotor acts on a vector by conjugation,</p>
 <p>$$
-\vec w \;\longmapsto\; \vec w_2 = \tilde U\,\vec w\,\tilde U^{\natural} .
+\vec w \;\longmapsto\; \vec w_2 = \tilde U\,\vec w\,\tilde U^{*} .
 $$</p>
 <p>The composition law is</p>
 <p>$$
@@ -292,7 +292,7 @@ $$</p>
 <td>Rotation rotor, a real unit quaternion</td>
 </tr>
 <tr>
-<td>$\vec w_2 = \tilde U\vec w\tilde U^{\natural}$</td>
+<td>$\vec w_2 = \tilde U\vec w\tilde U^{*}$</td>
 <td>Rotor action on a vector</td>
 </tr>
 <tr>

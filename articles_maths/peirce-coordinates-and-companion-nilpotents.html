@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peirce Coordinates and Companion Nilpotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="peirce-coordinates-and-companion-nilpotents"><strong>Peirce Coordinates and Companion Nilpotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An idempotent $e$ of a unital algebra $A$ cuts the algebra into four corners. Two of them are algebras, the diagonal corners $eAe$ and $fAf$ with $f=1_A-e$; the other two are square-zero, and their elements are nilpotents. The corner $fAe$ is the <strong>companion corner</strong> of $e$: it is the part of the algebra that a left multiplication by $e$ kills and a right multiplication by $e$ preserves. Its elements are the <strong>companion nilpotents</strong>.</p>
+<p>The object a spinor is read from is not a corner by itself but the subspace</p>
+<p>$$
+C(e)=Ae=eAe\oplus fAe,
+$$</p>
+<p>the part of $A$ fixed on the right by $e$. It is the set of $x$ with $xe=x$, it is stable under left multiplication, and it is acted on by the corner algebra $D=eAe$. The companion corner supplies the extra coordinates; the diagonal corner supplies the coefficients. This is the coordinate description that the Peirce decomposition gives, and it uses no module theory and no matrix model.</p>
+<p>Three results organise the article. First, the four corners are the joint eigenspaces of the left and the right multiplication by $e$, and the two mixed corners are square-zero. Second, the carrier splits as $C(e)=D\oplus fAe$, and the number</p>
+<p>$$
+s=\text{least number of generators of }fAe\text{ over }D
+$$</p>
+<p>is the number of companion directions; the coordinate vector has $1+s$ entries over $D$. Third, the frame root $h=2e-1_A$ acts on the carrier by $+1$ on $D$ and $-1$ on the companion corner, so the Peirce decomposition supplies a canonical $\mathbb{Z}_2$ grading and nothing finer.</p>
+<p><strong>Setting.</strong> Throughout, $k$ is a field, $A$ is a finite-dimensional unital associative $k$-algebra with $1_A\neq0$, $e\in A$ is an idempotent, $f=1_A-e$, and $D=eAe$. The corners are</p>
+<p>$$
+A_{++}=eAe,\qquad A_{+-}=eAf,\qquad A_{-+}=fAe,\qquad A_{--}=fAf .
+$$</p>
+<p>The characteristic is not $2$ where the halving $e=(1_A+h)/2$ is used. The one-idempotent Peirce decomposition is <em>Unital Algebras</em>, §<em>Idempotents and the Peirce Decomposition</em>; the complete family is <em>Complementary Idempotents and the Peirce Decomposition</em>; the off-diagonal part is <em>Off-Diagonal Peirce Components and Noncentral Idempotents</em>; the primitive case is <em>Primitive Idempotents and Minimal Left Ideals</em>; and the operator reading of the corners is <em>Left and Right Multiplication on the Diagonal Peirce Part</em>.</p>
+<h2 id="the-four-corners">The Four Corners</h2>
+<p><strong>Definition.</strong> The <strong>Peirce corners</strong> of $e$ are the four subspaces $A_{st}=e_sAe_t$, with $e_+=e$ and $e_-=f$. The <strong>companion corner</strong> of $e$ is $A_{-+}=fAe$, and a <strong>companion nilpotent</strong> is a nonzero element of it.</p>
+<p><strong>Proposition (the corners are the joint eigenspaces).</strong> The operators $L_e(x)=ex$ and $R_e(x)=xe$ commute, are idempotent, and on the corners take the values</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corner</th>
+<th>$L_e$</th>
+<th>$R_e$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{++}$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$A_{+-}$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$A_{-+}$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$A_{--}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> For $x=e_sxe_t$, $ex=e(e_sxe_t)=\delta_{s+}x$ and $xe=(e_sxe_t)e=\delta_{t+}x$, because $e_+e_-=e_-e_+=0$ and $e_\pm^2=e_\pm$. The four sign pairs are distinct, so the corners are exactly the joint eigenspaces and $A$ is their direct sum.</p>
+<p><strong>Proposition (the multiplication table).</strong> $A_{st}A_{uv}\subseteq\delta_{tu}A_{sv}$.</p>
+<p><em>Proof.</em> $(e_sAe_t)(e_uAe_v)=e_sA(e_te_u)Ae_v$, and $e_te_u=\delta_{tu}e_t$.</p>
+<p><strong>Proposition (the mixed corners are square-zero).</strong> $A_{+-}^2=0$ and $A_{-+}^2=0$. Consequently every element of a mixed corner is nilpotent of index at most two.</p>
+<p><em>Proof.</em> $A_{+-}^2=eAf\,eAf=eA(fe)Af=0$, and $A_{-+}^2=fAe\,fAe=fA(ef)Ae=0$.</p>
+<p><strong>Remark.</strong> The converse fails: an off-diagonal element need not be square-zero. In $M_2(k)$ the element $E_{12}+E_{21}$ is off-diagonal for $e=E_{11}$ and satisfies $(E_{12}+E_{21})^2=1_A$. Square-zero is a property of the mixed <em>corner</em>, not of every element with zero diagonal coordinates.</p>
+<h2 id="the-companion-corner">The Companion Corner</h2>
+<p><strong>Definition.</strong> The <strong>companion count</strong> of $e$ is</p>
+<p>$$
+s=\min\{\,r:\ \exists\,\nu_1,\dots,\nu_r\in A_{-+},\ A_{-+}=\nu_1D+\dots+\nu_rD\,\},
+$$</p>
+<p>the least number of elements of $A_{-+}$ that generate it by right multiplication by $D=eAe$. A family $(\nu_1,\dots,\nu_s)$ attaining the minimum is a <strong>companion frame</strong>, and its elements are the <strong>companion nilpotents</strong> of the frame.</p>
+<p><strong>Proposition.</strong> Every $\nu\in A_{-+}$ satisfies $\nu^2=0$. The corner is annihilated on the left by $A_{++}$, mapped into itself by $A_{--}$, and mapped into $A_{++}$ by $A_{+-}$:</p>
+<p>$$
+A_{++}A_{-+}=0,\qquad A_{--}A_{-+}\subseteq A_{-+},\qquad A_{+-}A_{-+}\subseteq A_{++}.
+$$</p>
+<p><em>Proof.</em> The first claim is the square-zero proposition. The three inclusions are the multiplication table $A_{st}A_{uv}\subseteq\delta_{tu}A_{sv}$ with $u=-$, $v=+$ and $s=+,-,+$ respectively.</p>
+<p><strong>Remark (the corner need not be free).</strong> The number $s$ is a number of generators, not a dimension. When $D$ is a division ring, every right $D$-module is free and $s=\dim_D A_{-+}$. When $D$ is not a division ring, $A_{-+}$ can be cyclic and still have a relation: a single generator $\nu$ with a nonzero annihilator $\{d\in D:\nu d=0\}$ generates a module smaller than $D$. The coordinate description below distinguishes the two cases.</p>
+<p><strong>Examples.</strong> The count depends on the corner algebra, not on the dimension of $A$ alone.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>$e$</th>
+<th>$D=eAe$</th>
+<th>$\dim_k A_{-+}$</th>
+<th>$s$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=M_2(\mathbb{C})$</td>
+<td>$\tilde\Pi_+$</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$M_2(k)$</td>
+<td>$E_{11}$</td>
+<td>$k$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$M_3(k)$</td>
+<td>$E_{11}$</td>
+<td>$k$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$M_3(k)$</td>
+<td>$E_{11}+E_{22}$</td>
+<td>$M_2(k)$</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$M_4(k)$</td>
+<td>$E_{11}$</td>
+<td>$k$</td>
+<td>$3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$M_4(k)$</td>
+<td>$E_{11}+E_{22}$</td>
+<td>$M_2(k)$</td>
+<td>$4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$M_5(k)$</td>
+<td>$E_{11}+E_{22}$</td>
+<td>$M_2(k)$</td>
+<td>$6$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$1_A$</td>
+<td>$\mathbb{H}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_2(k)$</td>
+<td>$E_{22}$</td>
+<td>$k$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$k[\varepsilon]$</td>
+<td>$1_A$</td>
+<td>$k[\varepsilon]$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>commutative $A$</td>
+<td>any $e$</td>
+<td>$eAe$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the commutative case: $fAe=feA=0$, so there is no companion corner and no companion nilpotent. The dual numbers show that $s=0$ does not imply that the carrier is small: $C(1_A)=A$ is the whole algebra, and the nilpotent $\varepsilon$ lies in the diagonal corner $D$, not in a companion corner.</p>
+<h2 id="the-count-in-a-matrix-algebra">The Count in a Matrix Algebra</h2>
+<p><strong>Theorem.</strong> Let $A=M_N(k)$ and let $e$ be an idempotent of rank $r$, $1\le r\le N$. Then $D=eAe\cong M_r(k)$ and</p>
+<p>$$
+s=\left\lceil\frac{N-r}{r}\right\rceil=\left\lceil\frac Nr\right\rceil-1 .
+$$</p>
+<p>In particular, for a primitive idempotent, $r=1$ and $s=N-1$.</p>
+<p><em>Proof.</em> The corner $A_{-+}=fAe$ is the space of $(N-r)\times r$ matrices, a right $M_r(k)$-module. Write $S=k^r$ for the row space, the simple right $M_r$-module. Then $A_{-+}\cong S^{N-r}$: each of the $N-r$ rows is an element of $S$, and right multiplication acts on each row. The direct sum $S^r$ is the space of $r\times r$ matrices, which is $M_r(k)$ itself, free of rank one. Grouping the $N-r$ copies of $S$ into blocks of $r$ therefore gives $\lceil (N-r)/r\rceil$ free blocks, one generator per block. No fewer can suffice, because one generator spans a cyclic submodule of dimension at most $r^2$, that is at most $r$ copies of $S$.</p>
+<p><strong>Corollary.</strong> For a primitive idempotent of $M_N(k)$, $s=N-1$ and $1+s=N$. The number of companion directions is one exactly when $N=2$.</p>
+<p><strong>Remark.</strong> The theorem is a statement about generators, not about the dimension of the corner. For $r\ge2$ the corner $A_{-+}$ has $r(N-r)$ parameters but is generated by $\lceil (N-r)/r\rceil$ elements over $M_r(k)$. The two numbers agree only at $r=1$.</p>
+<h2 id="the-carrier-and-its-coordinates">The Carrier and Its Coordinates</h2>
+<p><strong>Definition.</strong> The <strong>Peirce carrier</strong> of $e$ is</p>
+<p>$$
+C(e)=Ae=\{\,x\in A:\ xe=x\,\}.
+$$</p>
+<p><strong>Proposition.</strong> $C(e)=A_{++}\oplus A_{-+}=D\oplus fAe$, and left multiplication by any $a\in A$ maps $C(e)$ into itself.</p>
+<p><em>Proof.</em> If $x=ae$ then $xe=ae^2=ae=x$; conversely $xe=x$ gives $x=xe\in Ae$. The Peirce decomposition of $x\in Ae$ has only the corners with right index $+$, that is $A_{++}$ and $A_{-+}$. If $x\in Ae$ then $(ax)e=a(xe)=ax$, so $ax\in Ae$.</p>
+<p><strong>Theorem (coordinates).</strong> Let $(\nu_1,\dots,\nu_s)$ generate $A_{-+}$ over $D$. Then every $\xi\in C(e)$ is of the form</p>
+<p>$$
+\xi=d_0+\nu_1d_1+\dots+\nu_sd_s,\qquad d_0,d_1,\dots,d_s\in D,
+$$</p>
+<p>and the expression is unique when $(\nu_1,\dots,\nu_s)$ is a $D$-basis of $A_{-+}$. In that case the <strong>coordinate vector</strong> of $\xi$ is</p>
+<p>$$
+(d_0;d_1,\dots,d_s)\in D^{1+s},
+$$</p>
+<p>and the $1+s$ entries are the coordinates, one on the idempotent and one on each companion nilpotent.</p>
+<p><em>Proof.</em> The sum $D+fAe$ is direct because $A_{++}\cap A_{-+}=0$. If the generators are a basis, the expansion of an element of $fAe$ is unique, and $D\cap fAe=0$ gives uniqueness of $d_0$.</p>
+<p><strong>Remark (when the coordinates are unique).</strong> The expansion is a basis exactly when $A_{-+}$ is free over $D$. This holds when $D$ is a division ring, in particular when $A$ is semisimple and $e$ is primitive. It fails in general. In $M_3(k)$ with $e=E_{11}+E_{22}$, $D=M_2(k)$, $s=1$, and $A_{-+}$ is the $1\times2$ row space, of $k$-dimension $2$ against $\dim_k D=4$: the single generator has a nonzero annihilator, and the expansion is a presentation, not a basis. The coordinate vector then has repeated descriptions.</p>
+<h2 id="the-peirce-matrix">The Peirce Matrix</h2>
+<p><strong>Proposition (the left action in coordinates).</strong> Let $x\in A$ and write</p>
+<p>$$
+x e=p_0+\sum_{j=1}^{s}\nu_jp_j,\qquad
+x\nu_i=q_{0i}+\sum_{j=1}^{s}\nu_jq_{ji},
+\qquad p_j,q_{ji}\in D .
+$$</p>
+<p>Then for $\xi=d_0+\sum_i\nu_id_i$,</p>
+<p>$$
+x\xi=\Bigl(p_0d_0+\sum_iq_{0i}d_i\Bigr)
++\sum_j\nu_j\Bigl(p_jd_0+\sum_iq_{ji}d_i\Bigr).
+$$</p>
+<p>The <strong>Peirce matrix</strong> of $x$ on $C(e)$ is therefore the $(1+s)\times(1+s)$ matrix over $D$</p>
+<p>$$
+P(x)=
+\begin{pmatrix}
+p_0 & q_{01} & \cdots & q_{0s}\\
+p_1 & q_{11} & \cdots & q_{1s}\\
+\vdots & \vdots & & \vdots\\
+p_s & q_{s1} & \cdots & q_{ss}
+\end{pmatrix},
+\qquad
+P(x)\,(d_0,d_1,\dots,d_s)^{\mathsf T}
+=(d_0',d_1',\dots,d_s')^{\mathsf T}.
+$$</p>
+<p><em>Proof.</em> Expand $x\xi=x(ed_0)+\sum_i x(\nu_id_i)=(xe)d_0+\sum_i(x\nu_i)d_i$ by associativity, substitute the two expansions, and collect the coefficients of $e$ and of the $\nu_j$.</p>
+<p><strong>Example (the biquaternion).</strong> Let $A=\mathbb{B}$, $e=\tilde\Pi_+$, $f=\tilde\Pi_-$, $\nu_1=\vec\Upsilon_y$. Then $D=\mathbb{C}\tilde\Pi_+\cong\mathbb{C}$ and</p>
+<p>$$
+C(\tilde\Pi_+)=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_y .
+$$</p>
+<p>For $x=a\tilde\Pi_+ + b\vec\Upsilon_x + c\vec\Upsilon_y + d\tilde\Pi_-$ one has $x\tilde\Pi_+=a\tilde\Pi_+ + c\vec\Upsilon_y$ and $x\vec\Upsilon_y=b\tilde\Pi_+ + d\vec\Upsilon_y$, so the Peirce matrix is</p>
+<p>$$
+P(x)=\begin{pmatrix}a&b\\ c&d\end{pmatrix}.
+$$</p>
+<p>The matrix model is recovered as the Peirce matrix in the frame, not assumed.</p>
+<p><strong>Example (the matrix algebra).</strong> For $A=M_N(k)$ and $e=E_{11}$, $D=k$, $s=N-1$, $\nu_i=E_{i+1,1}$, and $C(e)$ is the first column. The Peirce matrix of $x$ is $x$ itself, read on the first column with the first entry as $d_0$.</p>
+<h2 id="the-grading-element">The Grading Element</h2>
+<p><strong>Definition.</strong> The <strong>frame root</strong> of $e$ is</p>
+<p>$$
+h=2e-1_A=e-f .
+$$</p>
+<p><strong>Proposition.</strong> $h^2=1_A$. The left multiplication $L_h$ has eigenvalue $+1$ on $A_{++}$ and $A_{+-}$ and $-1$ on $A_{-+}$ and $A_{--}$; the right multiplication $R_h$ has eigenvalue $+1$ on $A_{++}$ and $A_{-+}$ and $-1$ on $A_{+-}$ and $A_{--}$. The inner derivation $\operatorname{ad}_h=L_h-R_h$ has eigenvalues $0$ on the diagonal corners and $+2$ on $A_{+-}$, $-2$ on $A_{-+}$.</p>
+<p><em>Proof.</em> On $A_{st}$, $L_h$ is $+1$ for $s=+$ and $-1$ for $s=-$, and $R_h$ is $+1$ for $t=+$ and $-1$ for $t=-$. The difference is $s-t$.</p>
+<p><strong>Corollary.</strong> On the carrier $C(e)$ the left multiplication by $h$ has eigenvalue $+1$ on $D$ and $-1$ on the companion corner. The Peirce decomposition therefore supplies a canonical $\mathbb{Z}_2$ grading of the carrier, with the companion coordinates in the odd part. It supplies no finer splitting: the odd part is a single eigenspace, of dimension $\dim_k fAe$ over $k$.</p>
+<p><strong>Remark.</strong> The grading element is canonical, but the grading is only $\mathbb{Z}_2$. A weight string of the form $\lambda,\lambda-2,\dots,-\lambda$ needs an $\mathfrak{sl}_2$ triple, not one idempotent. The triple and the spin number are the subject of <em>The Weight of a Frame Root and the Spin Quantum Number</em>; the definition of the spinor read from $C(e)$ is <em>Spinors as Peirce Coordinates</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>An idempotent gives four corners, the joint eigenspaces of $L_e$ and $R_e$, with the multiplication table $A_{st}A_{uv}\subseteq\delta_{tu}A_{sv}$. The mixed corners are square-zero, so every element of $fAe$ is a companion nilpotent. The carrier $C(e)=Ae=D\oplus fAe$ is the fixed space of $R_e$ and is stable under left multiplication. The companion count $s$ is the least number of generators of $fAe$ over $D=eAe$, and the coordinate vector has $1+s$ entries over $D$; it is a basis exactly when $fAe$ is free, which holds when $D$ is a division ring. In $M_N(k)$ with an idempotent of rank $r$, $s=\lceil N/r\rceil-1$, and for a primitive idempotent $s=N-1$, so the biquaternion case $N=2$ is the only one with a single companion. The frame root $h=2e-1_A$ gives the $\mathbb{Z}_2$ grading of the carrier, with $+1$ on $D$ and $-1$ on the companion corner.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>A field</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>A finite-dimensional unital associative $k$-algebra</td>
+</tr>
+<tr>
+<td>$1_A$</td>
+<td>The identity of $A$</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>An idempotent, $e^2=e$</td>
+</tr>
+<tr>
+<td>$f$</td>
+<td>The complement $1_A-e$</td>
+</tr>
+<tr>
+<td>$A_{st}=e_sAe_t$</td>
+<td>The Peirce corners, $e_+=e$, $e_-=f$</td>
+</tr>
+<tr>
+<td>$D=eAe$</td>
+<td>The diagonal corner algebra with identity $e$</td>
+</tr>
+<tr>
+<td>$fAe=A_{-+}$</td>
+<td>The companion corner, square-zero</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>The least number of generators of $fAe$ over $D$</td>
+</tr>
+<tr>
+<td>$C(e)=Ae$</td>
+<td>The Peirce carrier, the fixed space of $R_e$</td>
+</tr>
+<tr>
+<td>$h=2e-1_A$</td>
+<td>The frame root</td>
+</tr>
+<tr>
+<td>$L_h,R_h,\operatorname{ad}_h$</td>
+<td>Left, right and inner-derivation action of $h$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and the corners.</li>
+<li>Yurij A. Drozd and Vladimir V. Kirichenko, <em>Finite Dimensional Algebras</em> (Springer, 1994), for the refinement to primitive idempotents and the local corners.</li>
+<li>Frank W. Anderson and Kent R. Fuller, <em>Rings and Categories of Modules</em> (Springer, 2nd ed. 1992), for idempotents and the direct summands of the regular module.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the corner algebras and the lifting of idempotents.</li>
+<li>The corpus article <em>Complementary Idempotents and the Peirce Decomposition</em>, for the complete family, and <em>Off-Diagonal Peirce Components and Noncentral Idempotents</em>, for the commutator reading of the mixed corners.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -76,6 +76,7 @@ A=eAe\oplus eAf\oplus fAe\oplus fAf,
 $$</p>
 <p>is the case $r=2$ of a decomposition indexed by a complete orthogonal family $e_1,\dots,e_r$. The present article passes from the pair to the family, and uses the complement as the operation that refines and coarsens the decomposition.</p>
 <p>Three results organise the article. First, the complement $e\mapsto1_A-e$ is a fixed-point-free involution of the set of idempotents, it reverses the natural order, and inside a corner the relevant complement is the relative one $g-e$. Second, a complete orthogonal family gives the Peirce decomposition $A=\bigoplus_{i,j}A_{ij}$ with $A_{ij}=e_iAe_j$ and the multiplication table $A_{ij}A_{kl}\subseteq\delta_{jk}A_{il}$; the algebra is a generalised matrix algebra of corners. Third, splitting a member refines the decomposition, merging a block coarsens it, and a central family is exactly a product decomposition.</p>
+<p><strong>The one-idempotent carrier.</strong> The case $r=2$ is not only the smallest case. Its companion corner $fAe$ is square-zero, and the fixed space $Ae=eAe\oplus fAe$ is the carrier on which a spinor is read as a coordinate vector. The coordinates, the companion count and the frame root are <em>Peirce Coordinates and Companion Nilpotents</em>; the definition of a spinor on that carrier is <em>Spinors as Peirce Coordinates</em>. The present article supplies the family, the corners and the multiplication table that those articles use.</p>
 <p><strong>Terminology.</strong> In this article <em>complementary</em> refers to a pair $e,f=1_A-e$, with $ef=fe=0$ and $e+f=1_A$. The same word is used in <em>Idempotents and Involutions of an Algebra</em>, §<em>Complementary Idempotents</em>, for the involution-relative condition $e^*=1_A-e$. That condition says that the plain complement is also the image under an involution; it is a special case, and no involution is assumed here.</p>
 <p>Throughout, $k$ is a field, $A$ is a unital associative $k$-algebra with $1_A\neq0$, and $e_1,\dots,e_r$ is a finite complete orthogonal family of idempotents. The algebra is not assumed commutative, and it is finite-dimensional only where a statement says so. The complement of $e$ is $f=1_A-e$, and the Peirce corners of a family are $A_{ij}=e_iAe_j$. The one-idempotent case is <em>Unital Algebras</em> and <em>Off-Diagonal Peirce Components and Noncentral Idempotents</em>; the involution-relative theory is <em>Idempotents and Involutions of an Algebra</em>; the primitive case is <em>Primitive Idempotents and Minimal Left Ideals</em>; the diagonal part of an eigenvalue decomposition is <em>The Centraliser and the Diagonal Peirce Part</em>; and the operator reading is <em>The Sandwich Operators on the Peirce Components</em>.</p>
 <h2 id="the-complement-operation">The Complement Operation</h2>
@@ -233,7 +234,7 @@ $$</p>
 <p>where $n_i=\dim V_i$. The dimension formula reads $\sum_{i,j}n_in_j=(\sum_in_i)^2=n^2$. If all $n_i=1$, the corners are the matrix units $kE_{ij}$; if $r=2$ and $n_1=m$, the four corners have dimensions $m^2,m(n-m),(n-m)m,(n-m)^2$, which is the block decomposition of <em>Off-Diagonal Peirce Components and Noncentral Idempotents</em>. The family is not central for $r\ge2$, because $M_n(k)$ is simple.</p>
 <h3 id="the-biquaternion-algebra">The biquaternion algebra</h3>
 <p>Let $A=\mathbb{B}\cong M_2(\mathbb{C})$ and let $e$ be a rank-one idempotent, with $f=1_A-e$. The four corners are one-dimensional, and the Peirce decomposition is the matrix-unit decomposition in a basis adapted to $e$. The idempotent $e$ is not central, $A$ is simple, and $AeA=A$. The explicit Peirce table of the biquaternion algebra is <em>The Peirce Decomposition</em>, §<em>The Peirce Decompositions</em>; the comparison with the other number systems is <em>The Number Systems as Algebras with and without Nontrivial Idempotents</em>.</p>
-<h3 id="a-noncentral-idempotent-in-math440">A noncentral idempotent in $M_3(k)$</h3>
+<h3 id="a-noncentral-idempotent-in-math443">A noncentral idempotent in $M_3(k)$</h3>
 <p>Let $e_1=E_{11}$ and $e_2=E_{22}+E_{33}$ in $M_3(k)$. The family is complete and orthogonal, and the corners are</p>
 <p>$$
 A_{11}=kE_{11},\qquad A_{22}=M_2(k),\qquad A_{12}=\operatorname{span}\{E_{12},E_{13}\},\qquad A_{21}=\operatorname{span}\{E_{21},E_{31}\}.
@@ -261,6 +262,19 @@ $$</p>
 </tbody>
 </table></div>
 <p>with the entries read as the corresponding corner algebras and bimodules.</p>
+<h2 id="the-carrier-of-an-idempotent">The Carrier of an Idempotent</h2>
+<p>The four corners are a decomposition of the algebra. The carrier of a spinor is a smaller object: two of the four corners, taken on the side on which the idempotent acts as the identity.</p>
+<p><strong>Definition.</strong> Let $e$ be an idempotent and $f=1_A-e$. The <strong>Peirce carrier</strong> of $e$ is $C(e)=Ae$. The <strong>companion corner</strong> is $A_{-+}=fAe$, and a <strong>companion nilpotent</strong> is a nonzero element of it.</p>
+<p><strong>Proposition.</strong> $C(e)=\{\,x\in A:xe=x\,\}=A_{++}\oplus A_{-+}$, and left multiplication by any $a\in A$ maps $C(e)$ into itself. The companion corner is square-zero, $A_{-+}^2=0$.</p>
+<p><em>Proof.</em> $xe=x$ is equivalent to $x=xe$, which is $x\in Ae$. The Peirce expansion of an element of $Ae$ has only the corners with right index $+$, namely $A_{++}$ and $A_{-+}$. If $xe=x$ then $(ax)e=a(xe)=ax$. Finally $A_{-+}^2=fAe\,fAe=fA(ef)Ae=0$.</p>
+<p><strong>Proposition (the coordinates).</strong> Let $(\nu_1,\dots,\nu_s)$ generate $A_{-+}$ over $D=A_{++}$. Every element of $C(e)$ is</p>
+<p>$$
+\xi=d_0+\nu_1d_1+\dots+\nu_sd_s,\qquad d_i\in D,
+$$</p>
+<p>and the coordinate vector $(d_0;d_1,\dots,d_s)$ has $1+s$ entries. The number $s$ is the least number of generators of $A_{-+}$ over $D$. In $M_N(k)$ with an idempotent of rank $r$, $s=\lceil N/r\rceil-1$; for a primitive idempotent, $s=N-1$.</p>
+<p><em>Proof.</em> The sum $A_{++}+A_{-+}$ is direct, and the expansion of an element of $A_{-+}$ in the generators gives the companion coordinates. The count is <em>Peirce Coordinates and Companion Nilpotents</em>, §<em>The Count in a Matrix Algebra</em>.</p>
+<p><strong>Remark.</strong> The expansion is a basis exactly when $A_{-+}$ is free over $D$, which holds when $D$ is a division ring, in particular when $A$ is semisimple and $e$ is primitive. In general the same expression is a presentation: the generators exist, but the coefficients are not unique.</p>
+<p><strong>Remark (two corners, not four).</strong> The four-corner decomposition and the two-corner carrier are different objects. The first is two-sided and describes the whole algebra; the second is one-sided and describes the space on which a spinor lives. The relation between them is the product rule: the carrier is the sum of the corners with right index $+$, and left multiplication preserves it because $A_{st}A_{uv}$ vanishes unless $t=u$.</p>
 <h2 id="summary">Summary</h2>
 <p>The complement of an idempotent $e$ is the unique idempotent $f=1_A-e$ with $ef=fe=0$ and $e+f=1_A$. The map $e\mapsto1_A-e$ is a fixed-point-free involution of the set of idempotents, it reverses the order $e\le f\iff ef=fe=e$, and it preserves centrality but not primitivity: in $M_3(k)$ the idempotent $E_{11}$ is primitive while its complement is not. Inside a corner the complement is the relative one $g-e$, and the Peirce decomposition of the corner $gAg$ by $e$ is the part of the decomposition of $A$ by the family $\{e,g-e,1_A-g\}$ that carries the indices $e$ and $g-e$.</p>
 <p>A complete orthogonal family $e_1,\dots,e_r$ gives the Peirce decomposition $A=\bigoplus_{i,j}A_{ij}$ with $A_{ij}=e_iAe_j$, the multiplication table $A_{ij}A_{kl}\subseteq\delta_{jk}A_{il}$, the diagonal subalgebra $D=\bigoplus_iA_{ii}$ and the off-diagonal $D$-bimodule $N=\bigoplus_{i\neq j}A_{ij}$. The algebra is the generalised matrix algebra of its corners, $(ab)_{il}=\sum_ja_{ij}b_{jl}$. The one-idempotent case is $r=2$, and the off-diagonal analysis is <em>Off-Diagonal Peirce Components and Noncentral Idempotents</em>. The diagonal projection $\pi(a)=\sum_ie_iae_i$ is multiplicative exactly when $A_{ij}A_{ji}=0$ for all $i\neq j$.</p>
@@ -335,6 +349,14 @@ $$</p>
 <td>In $M_n(k)$, the dimension of the $i$-th summand of $V$; $\dim A_{ij}=n_in_j$</td>
 </tr>
 <tr>
+<td>$C(e)=Ae$</td>
+<td>The Peirce carrier of an idempotent, $A_{++}\oplus A_{-+}$</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>The least number of generators of $A_{-+}$ over $A_{++}$</td>
+</tr>
+<tr>
 <td>$\delta_{jk}$</td>
 <td>The Kronecker delta</td>
 </tr>
@@ -348,6 +370,7 @@ $$</p>
 <li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for the Boolean algebra of central idempotents and the product decompositions.</li>
 <li>Nicolas Bourbaki, <em>Algèbre</em>, Chapitre VII, for the Peirce decomposition and the matrix of corners.</li>
 <li>The corpus article <em>Unital Algebras</em>, §<em>Idempotents and the Peirce Decomposition</em>, for the one-idempotent case, and <em>Off-Diagonal Peirce Components and Noncentral Idempotents</em>, for the off-diagonal part and its commutator interpretation.</li>
+<li>The corpus articles <em>Peirce Coordinates and Companion Nilpotents</em>, for the carrier, the companion count and the coordinate vector, and <em>Spinors as Peirce Coordinates</em>, for the definition of a spinor on the carrier.</li>
 </ul>
       </div>
     </main>

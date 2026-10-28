@@ -110,9 +110,9 @@ Its Fourier transform is supported in the closed forward light cone, by the posi
 <li><strong>Local operations cannot prepare the vacuum exactly.</strong> By cyclicity, any vector can be approximated by $\tilde Q_3\Omega$ with $\tilde Q_3\in\mathcal A(O)$; by separating, the preparation cannot be exact for a proper region. There are states of arbitrarily large particle number in any bounded region that are not orthogonal to the vacuum.</li>
 <li><strong>The hypothesis of modular theory.</strong> A cyclic and separating vector is exactly what the Tomita–Takesaki theorem requires. The Reeh–Schlieder theorem therefore supplies the modular operator $\Delta$, the modular conjugation $J$, and the modular flow of a local algebra, and it is the entry point to the modular structure the companion articles treat. That the modular flow of a wedge is the boost is the Bisognano–Wichmann theorem, which is referred to here and not re-derived.</li>
 </ul>
-<h2 id="cyclicity-and-separating-in-the-gns-construction">Cyclicity and Separating in the GNS Construction</h2>
+<h2 id="cyclicity-and-separating-in-the-hermitian-gns-construction">Cyclicity and Separating in the Hermitian GNS Construction</h2>
 <h3 id="cyclicity-is-automatic">Cyclicity Is Automatic</h3>
-<p>The GNS construction of the companion article associates to every state $\tilde{Ϛ}\in\mathbb{M}_+$ a Hilbert space
+<p>The Hermitian GNS construction of the companion article associates to every state $\tilde{Ϛ}\in\mathbb{M}_+$ a Hilbert space
 $$
 \mathcal H_{\tilde{Ϛ}}=\mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}},
 \qquad
@@ -131,7 +131,7 @@ that is, if and only if the radical $\mathcal{N}_{\tilde{Ϛ}}$ is trivial. But $
 <blockquote>
 <p><strong>Proposition.</strong> For a state $\tilde{Ϛ}$ of $\mathbb{B}$, the GNS vector $\Omega_{\tilde{Ϛ}}$ is separating for $\pi_{\tilde{Ϛ}}(\mathbb{B})$ if and only if $\tilde{Ϛ}$ is faithful, that is, if and only if $\tilde{Ϛ}$ has full rank.</p>
 </blockquote>
-<p>The proof is the dimension count of the GNS companion article. Writing $\tilde{Ϛ}=\sum_i\lambda_i\tilde\Pi_i$ in its spectral projectors, the radical is
+<p>The proof is the dimension count of the Hermitian GNS companion article. Writing $\tilde{Ϛ}=\sum_i\lambda_i\tilde\Pi_i$ in its spectral projectors, the radical is
 $$
 \boxed{\;\mathcal{N}_{\tilde{Ϛ}}=\big\{\tilde Q_3:\tilde Q_3\,\tilde{Ϛ}=0\big\}
 =\big\{\tilde Q_3:\tilde Q_3\,\mathrm{range}(\tilde{Ϛ})=0\big\}\;},
@@ -173,13 +173,13 @@ $$
 $$
 and the cyclic vector $\Omega_{\tilde{Ϛ}}=[e_t]$ is separating as well. The Tomita–Takesaki theorem therefore applies in finite dimension, and the framework has an exact model of the Reeh–Schlieder hypothesis in which the distinguished vector is the GNS vector of a <strong>mixed</strong> state. The modular data are those of the modular-theory companion article, written for the state:
 $$
-\Delta\big(\tilde Q_3\big)=\tilde{Ϛ}\,\tilde Q_3\,\tilde{Ϛ}^{-1},
+\Delta\big(\tilde Q_3\big)=e^{-\tilde K_{\mathrm{mod}}}\,\tilde Q_3\,e^{\tilde K_{\mathrm{mod}}},
 \qquad
-J\big(\tilde Q_3\big)=\tilde{Ϛ}^{1/2}\tilde Q_3^{*}\tilde{Ϛ}^{-1/2},
+J\big(\tilde Q_3\big)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde Q_3^{*}e^{\tilde K_{\mathrm{mod}}/2},
 \qquad
 \Delta=S^*S,
 $$
-with $J\Delta J^{-1}=\Delta^{-1}$ and $\Delta>0$, and with the modular Hamiltonian
+with $J\Delta J\Delta=1$ and $\Delta>0$, and with the modular Hamiltonian
 $$
 \tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}
 =-\tfrac12\log\frac{1-|\vec r|^2}{4}\,e_t-i\,\mathrm{artanh}\big(|\vec r|\big)\vec u_r
@@ -357,10 +357,10 @@ This is the CAR algebra over the one-particle module. Its finite truncations are
 <li>O. Bratteli and D. W. Robinson, <em>Operator Algebras and Quantum Statistical Mechanics</em>, Vols. I–II (Springer, 1979, 1981), for cyclic and separating vectors, the GNS construction, and the modular theory.</li>
 <li>M. Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and Its Applications</em> (Springer, 1970), for the modular structure whose hypothesis the theorem supplies.</li>
 <li>J. J. Bisognano and E. H. Wichmann, "On the duality condition for a Hermitian scalar field," <em>Journal of Mathematical Physics</em> <strong>16</strong> (1975) 985–1007, for the wedge modular flow as the boost.</li>
-<li>Companion article <a href="the-gns-construction-in-the-biquaternion-framework.html">The GNS Construction in the Biquaternion Framework</a>, for the radical, the cyclic vector, and the dimension of the GNS space.</li>
+<li>Companion article <a href="the-hermitian-gns-construction-in-the-biquaternion-framework.html">The Hermitian GNS Construction in the Biquaternion Framework</a>, for the radical, the cyclic vector, and the dimension of the GNS space.</li>
 <li>Companion article <a href="the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a>, for the vacuum idempotent, the zero-divisor cone, and the single-mode ladder.</li>
 <li>Companion article <a href="fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a>, for the mode algebra and its capacity.</li>
-<li>Companion article <a href="the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html">The Modular Theory of Tomita–Takesaki under the Biquaternion Framework</a>, for the modular operator, conjugation, and flow.</li>
+<li>Companion article <a href="the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html">The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework</a>, for the modular operator, conjugation, and flow.</li>
 <li>Companion article <a href="the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html">The Bisognano–Wichmann Theorem under the Biquaternion Framework</a>, for the wedge modular flow as the boost.</li>
 <li>Companion article <a href="the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect in Biquaternionic Form</a>, for the thermal interpretation of the wedge modular flow.</li>
 </ul>

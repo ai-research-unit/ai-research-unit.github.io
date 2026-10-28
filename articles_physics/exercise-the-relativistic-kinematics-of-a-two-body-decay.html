@@ -77,11 +77,11 @@
 $$
 A \;\longrightarrow\; 1 + 2, \qquad \tilde{P}_A = \tilde{P}_1 + \tilde{P}_2 .
 $$
-In the rest frame of the parent the total four-momentum is $\tilde{P}_A = iMc\,e_t$, so the parent rest frame <strong>is</strong> the centre-of-momentum (COM) frame of the daughters. Starred quantities refer to that frame: $\vec p_1^* = -\vec p_2^* = \vec p^*$, $p^* = |\vec p^*|$, and $E_1^* + E_2^* = Mc^2$. Unstarred quantities refer to the laboratory frame. Because the two-body article already derived the kinematics, several intermediate steps below reproduce its equations; they are included so that the exercise is self-contained.</p>
+In the rest frame of the parent the total four-momentum is $\tilde{P}_A = iMc\,e_t$, so the parent rest frame <strong>is</strong> the centre-of-momentum (COM) frame of the daughters. Starred scalars refer to that frame: $\vec p_1^* = -\vec p_2^* = \vec p^*$, $p^* = |\vec p^*|$, and $E_1^* + E_2^* = Mc^2$. Four-momenta carry the frame label instead, $\tilde{P}_a^{\rm CM}$, so that the star is never read as the Hermitian conjugation, under which $\tilde{P}_a^{*}=-\tilde{P}_a$. Unstarred quantities refer to the laboratory frame. Because the two-body article already derived the kinematics, several intermediate steps below reproduce its equations; they are included so that the exercise is self-contained.</p>
 <p>This exercise also serves to test the parent. The direction of the boost biquaternion that carries the COM frame to the laboratory — a point that repays care — is worked out explicitly in Problem 2.</p>
 <h2 id="problem-1-daughter-energies-and-momentum-in-the-com-frame">Problem 1: Daughter Energies and Momentum in the COM Frame</h2>
 <p><strong>Statement.</strong> For $A \to 1+2$ with the parent at rest, derive the daughter energies $E_1^*, E_2^*$, the common momentum magnitude $p^*$, the speeds $v_a^*$, and the released energy $Q$. Show that the decay is allowed exactly when $M \ge m_1 + m_2$.</p>
-<p><strong>Solution.</strong> The conservation law is the single biquaternion equation $\tilde{P}_A = \tilde{P}_1 + \tilde{P}_2$. In the parent rest frame $\tilde{P}_A = iMc\,e_t$, and writing $\tilde{P}_a^* = iE_a^*/c\,e_t + \vec p_a^*$, the conservation law splits, under the real-linear projections onto the scalar and vector parts of $\mathbb{M}_-$, into
+<p><strong>Solution.</strong> The conservation law is the single biquaternion equation $\tilde{P}_A = \tilde{P}_1 + \tilde{P}_2$. In the parent rest frame $\tilde{P}_A = iMc\,e_t$, and writing $\tilde{P}_a^{\rm CM} = iE_a^*/c\,e_t + \vec p_a^*$, the conservation law splits, under the real-linear projections onto the scalar and vector parts of $\mathbb{M}_-$, into
 $$
 E_1^* + E_2^* = Mc^2, \qquad \vec p_1^* + \vec p_2^* = 0 .
 $$
@@ -181,10 +181,10 @@ $$
 $$
 which is the boost biquaternion of the same rapidity in the opposite direction. The COM daughter four-momenta are therefore carried to the laboratory by
 $$
-\tilde{P}_a = \tilde U^{\natural}_{\rm CM}\,\tilde{P}_a^*\,\tilde U^{\natural}_{\rm CM}{}^\dagger .
+\tilde{P}_a = \tilde U^{\natural}_{\rm CM}\,\tilde{P}_a^{\rm CM}\,\tilde U^{\natural}_{\rm CM}{}^{*} .
 $$</p>
 <blockquote>
-<p><strong>Remark on the parent's boost convention.</strong> The parent writes the star-to-lab rotation as $\tilde{P}_a = \tilde U_{\mathrm b}\tilde{P}_a^*\tilde U_{\mathrm b}^{*}$ with $\tilde U_{\mathrm b} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\vec u_V$, the quaternion conjugate of the rotor that carries the laboratory frame to the parent rest frame - the sign of the vector part being opposite to that of the lab-to-rest rotor, as the parent states. That rotor produces $E_a = \gamma(E_a^* + \vec V\cdot\vec p_a^*)$, in agreement with the component formula quoted immediately below it in the parent; the biquaternion and component forms therefore agree. We work with the physical convention, in which a forward-emitted daughter ($\vec V\cdot\vec p_a^* > 0$) gains energy, and which corresponds to the inverse rotor above.</p>
+<p><strong>Remark on the parent's boost convention.</strong> The parent writes the rest-to-lab rotation as $\tilde{P}_a = \tilde U_{\mathrm b}\tilde{P}_a^{\rm CM}\tilde U_{\mathrm b}^{*}$ with $\tilde U_{\mathrm b} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\vec u_V$, the quaternion conjugate of the rotor that carries the laboratory frame to the parent rest frame - the sign of the vector part being opposite to that of the lab-to-rest rotor, as the parent states. That rotor produces $E_a = \gamma(E_a^* + \vec V\cdot\vec p_a^*)$, in agreement with the component formula quoted immediately below it in the parent; the biquaternion and component forms therefore agree. We work with the physical convention, in which a forward-emitted daughter ($\vec V\cdot\vec p_a^* > 0$) gains energy, and which corresponds to the inverse rotor above.</p>
 </blockquote>
 <p><strong>Solution (c).</strong> Applying the component form of the rotation with the inverse rotor — equivalently, the standard Lorentz transformation with velocity $\vec V$ — gives
 $$
@@ -204,8 +204,8 @@ $$
 $$
 the upper end being forward emission and the lower end backward emission. The two lab four-momenta still sum to $\tilde{P}_A$, because the rotation is linear:
 $$
-\tilde U^{\natural}_{\rm CM}\left(\tilde{P}_1^* + \tilde{P}_2^*\right)\tilde U^{\natural}_{\rm CM}{}^\dagger
-= \tilde U^{\natural}_{\rm CM}\left(iMc\,e_t\right)\tilde U^{\natural}_{\rm CM}{}^\dagger
+\tilde U^{\natural}_{\rm CM}\left(\tilde{P}_1^{\rm CM} + \tilde{P}_2^{\rm CM}\right)\tilde U^{\natural}_{\rm CM}{}^{*}
+= \tilde U^{\natural}_{\rm CM}\left(iMc\,e_t\right)\tilde U^{\natural}_{\rm CM}{}^{*}
 = \tilde{P}_A .
 $$</p>
 <h2 id="problem-3-the-invariant-mass-of-each-pair-in-a-three-body-decay">Problem 3: The Invariant Mass of Each Pair in a Three-Body Decay</h2>
