@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinors as Peirce Coordinates in $M_6(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinors-as-peirce-coordinates-in-math0"><strong>Spinors as Peirce Coordinates in $M_6(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Peirce basis turns an element of $M_6(\mathbb{C})$ into a $6\times6$ array of coordinates. A <strong>column</strong> of that array is a tuple of $6$ scalars, and this tuple is the <strong>spinor</strong> of the family in the basis. The column is the coordinate form of an element of the left space $M_6P_l\cong\mathbb{C}^{6}$; left multiplication acts on it by the matrix of the element.</p>
+<p>The choice of column rather than row is fixed by the action. This article defines the spinor, computes the gauge action, gives the projective reading, the Hermitian norm and the chiral split, and states the weight of the chain. It assumes <em>The Peirce Decomposition of $M_6(\mathbb{C})$</em> and <em>The Peirce Basis of $M_6(\mathbb{C})$</em>.</p>
+<h2 id="the-column">The Column</h2>
+<p>Every element is</p>
+<p>$$
+X=\sum_{k,l=1}^{6}X_{kl}E_{kl},
+$$</p>
+<p>and for fixed $l$ the <strong>column</strong> is</p>
+<p>$$
+\psi^{(l)}=(X_{1l},\dots,X_{6 l}).
+$$</p>
+<p>A <strong>spinor</strong> is a column up to a common nonzero factor.</p>
+<p><strong>Why a column.</strong> Left multiplication by $A=\sum A_{rs}E_{rs}$ gives</p>
+<p>$$
+(AX)_{rl}=\sum_{s=1}^{6}A_{rs}X_{sl},
+$$</p>
+<p>so the column is multiplied by the matrix $A$. The column is the space on which the left action acts, that is, the coordinate form of $M_6P_l\cong\mathbb{C}^{6}$. Right multiplication acts on the rows instead. The corpus attaches the spinor to the left action, so the coordinate form is a column.</p>
+<p><strong>The spinor is not the whole element.</strong> The element is the full array, the sum of its $6$ columns. A column is the coordinate vector of the component of $X$ in the left space $M_6P_l$; that component is a matrix, but the column itself is not closed under multiplication.</p>
+<h2 id="the-gauge">The Gauge</h2>
+<p><strong>Proposition.</strong> Under $E'_{kl}=t_kt_l^{-1}E_{kl}$ the coordinates transform by $X'_{kl}=t_k^{-1}t_lX_{kl}$, so after multiplying the column by $t_l^{-1}$ the entries transform by</p>
+<p>$$
+\psi_k\longmapsto t_k^{-1}\psi_k .
+$$</p>
+<p><strong>Proof.</strong> The coordinate law is that of <em>The Peirce Basis of $M_6(\mathbb{C})$</em>. Multiplying the column by $t_l^{-1}$ removes the factor $t_l$ and leaves $t_k^{-1}$ on the $k$-th entry.</p>
+<p>The effective group is $(\mathbb{C}^{\times})^{6-1}$: the common rescaling of all entries is the overall factor of the column, which is not part of the spinor.</p>
+<h2 id="the-projective-reading">The Projective Reading</h2>
+<p>A spinor up to scale is a point of $\mathbb{P}^{6-1}$,</p>
+<p>$$
+[\psi]=[\psi_1:\cdots:\psi_6].
+$$</p>
+<p>On the open set where every entry is nonzero, the gauge acts transitively: given $[\psi]$ and $[\varphi]$, the scalars $t_k=\psi_k/\varphi_k$ send one to the other. So the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern.</p>
+<p><strong>Invariants need a cycle.</strong> A product of coordinates around a closed cycle is gauge invariant:</p>
+<p>$$
+X_{k_1k_2}X_{k_2k_3}\cdots X_{k_mk_1}\longmapsto\Bigl(\prod_r t_{k_r}^{-1}t_{k_{r+1}}\Bigr)X_{k_1k_2}\cdots X_{k_mk_1}=X_{k_1k_2}\cdots X_{k_mk_1}.
+$$</p>
+<p>A single column has no invariant of this kind unless it closes through a row of another element. The invariant content of the construction lies in the element, not in one column.</p>
+<h2 id="the-hermitian-norm">The Hermitian Norm</h2>
+<p>If the family and the basis are Hermitian, the gauge is $|t_k|=1$, and</p>
+<p>$$
+\sum_{k=1}^{6}|\psi_k|^{2}\longmapsto\sum_{k=1}^{6}|\psi_k|^{2}.
+$$</p>
+<p>The norm is gauge invariant, and the orbit is the set of spinors with the same moduli.</p>
+<h2 id="the-chiral-split">The Chiral Split</h2>
+<p>A grading is an algebra automorphism $\Gamma$ with $\Gamma^{2}=1$ that commutes with the family. It preserves each line and acts on $A_{kl}$ by $\varepsilon_k\varepsilon_l$ with $\varepsilon_k=\pm1$, so a column splits into the entries with $\varepsilon_k=+1$ and those with $\varepsilon_k=-1$.</p>
+<p>For $n=6$ the power $H^{3}$ is an involution: in the eigenbasis $H^{3}=\operatorname{diag}(1,-1,1,-1,1,-1)$. It is $\operatorname{Ad}_S$ with $S=\operatorname{diag}(1,-1,1,-1,1,-1)$, and the columns split $3+3$. The fixed algebra is $M_3(\mathbb{C})\oplus M_3(\mathbb{C})$, of complex dimension $18$, and the $-1$ eigenspace has dimension $18$.</p>
+<p>A balanced split of a column needs an even number of entries, and a sign function with $n/2$ signs of each type. For odd $n$ no balanced split exists; a split $p+q$ still exists if a sign function is chosen, but it is not canonical. The split is data on the lines, not a consequence of the cut.</p>
+<h2 id="the-spin-of-the-column">The Spin of the Column</h2>
+<p>The chain of the frame acts on the column by left multiplication. Its generator is</p>
+<p>$$
+J_3=\sum_{k=1}^{6}\Bigl(\frac{6+1}{2}-k\Bigr)E_{kk},
+$$</p>
+<p>and on the column the entries have the $6$ distinct weights $\frac{6-1}{2},\frac{6-3}{2},\dots,-\frac{6-1}{2}$. The column is therefore the irreducible space of spin</p>
+<p>$$
+j=\frac{6-1}{2}=\tfrac52 .
+$$</p>
+<p>This is the algebraic definition of the spin of the spinor: the highest weight of $J_3$ on the left space $M_6P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=6$ it gives $\tfrac52$ and the column has $2j+1=6$ components.</p>
+<p>The column has six entries. Under the chain, $J_3$ has weights $\tfrac52,\tfrac32,\tfrac12,-\tfrac12,-\tfrac32,-\tfrac52$, so the column is the spin-$\tfrac52$ space. The chirality $H^{3}$ splits it $3+3$. The number of components is $2j+1=6$, as it must be for the irreducible space of spin $j=\tfrac52$.</p>
+<h2 id="the-half-angle">The Half-Angle</h2>
+<p>The Peirce spinor carries no half-angle. A half-angle requires two further choices: a one-parameter path of families generated by rotations, and a lift of that path to a double cover of the rotation group. Neither is part of the Peirce data. The polar-operator articles make both choices; their half-angle is a statement about the path and the lift. At a fixed family there is no angle, and the spinor is a column of coordinates.</p>
+<h2 id="what-a-spinor-is-not">What a Spinor Is Not</h2>
+<p>A spinor is not an arbitrary element of $M_6(\mathbb{C})$; it is one column of the coordinates of an element. It is not a Peirce line; it is a tuple of coordinates on $6$ of them. It is not gauge invariant; only the element and its cycle invariants are. It is not the pair of all columns; that is the element.</p>
+<h2 id="summary">Summary</h2>
+<p>The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{6 l})$ up to scale. The gauge sends $\psi_k\mapsto t_k^{-1}\psi_k$, with effective group $(\mathbb{C}^{\times})^{6-1}$; projectively the orbit is fixed by the zero pattern; in the Hermitian gauge the norm is invariant. Under the chain the column is the spin-$\tfrac52$ space, so the number of components is $6=2j+1$. A balanced chiral split exists only for even $n$, and the half-angle is a path-and-lift parameter, not a Peirce object.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X_{kl}$</td>
+<td>The Peirce coordinate</td>
+</tr>
+<tr>
+<td>$\psi^{(l)}$</td>
+<td>The column of index $l$, a spinor</td>
+</tr>
+<tr>
+<td>$t_k$</td>
+<td>A gauge parameter</td>
+</tr>
+<tr>
+<td>$J_3$</td>
+<td>The chain generator</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>The spin, $(6-1)/2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition of $M_6(\mathbb{C})$</a>, for the lines.</li>
+<li><a href="the-peirce-basis-of-m6c.html">The Peirce Basis of $M_6(\mathbb{C})$</a>, for the units and the gauge.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m6c.html">The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$</a>, for the chain and its weights.</li>
+<li><a href="spinors-as-peirce-coordinates-in-n-dimensions.html">Spinors as Peirce Coordinates in $n$ Dimensions</a>, for the general statement.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Basis in $n$ Dimensions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-basis-in-math0-dimensions"><strong>The Peirce Basis in $n$ Dimensions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Peirce decomposition of $M_{n}(\mathbb{C})$ relative to a complete family of $n$ idempotents gives $n^{2}$ lines and no element inside the mixed ones. A <strong>Peirce basis</strong> is a choice of one nonzero element in each line, normalised so that the chosen elements multiply by the matrix-unit rule. The basis is not part of the decomposition: the decomposition is canonical given the family, while the basis is a choice, and the freedom of the choice is the <strong>Peirce gauge</strong>.</p>
+<p>The article proves that a Peirce basis exists, that it is unique up to the gauge, and that the gauge is a torus of dimension $n-1$. It gives the coordinates of an element in the basis, the dimension count of the families and of the frames, and the projective reading of the construction. It assumes <em>The Peirce Decomposition in $n$ Dimensions</em>.</p>
+<h2 id="the-definition">The Definition</h2>
+<p><strong>Definition.</strong> Let $A_{kl}=P_{k}M_{n}(\mathbb{C})P_{l}$ be the Peirce lines of a complete family $P_{1},\dots,P_{n}$. A <strong>Peirce basis</strong> is a family $E_{kl}\in A_{kl}$, one element for each pair $(k,l)$, such that</p>
+<p>$$
+E_{kl}E_{pq}=\delta_{lp}E_{kq},\qquad E_{kk}=P_{k}.
+$$</p>
+<p><strong>The diagonal is forced.</strong> Since $A_{kk}=\mathbb{C}P_{k}$, an element of the diagonal line is $E_{kk}=c_{k}P_{k}$. The product rule with $k=l=p=q=k$ gives $c_{k}^{2}=c_{k}$, and the element is nonzero, so $c_{k}=1$. The condition $E_{kk}=P_{k}$ is therefore a consequence of the product rule and of the choice of a nonzero element in each diagonal line, not an extra normalisation.</p>
+<p><strong>The basis is a set of elements, not a set of subspaces.</strong> The lines are the decomposition; the elements $E_{kl}$ are a selection inside them. The selection is what the word <em>basis</em> names.</p>
+<h2 id="existence">Existence</h2>
+<p><strong>Theorem.</strong> Every complete family of $n$ idempotents in $M_{n}(\mathbb{C})$ admits a Peirce basis.</p>
+<p><strong>Proof.</strong> Let $V_{k}=\operatorname{im}P_{k}$. Choose $v_{k}\in V_{k}$ nonzero, and let $\ell_{k}$ be the linear form with $\ell_{k}(v_{l})=\delta_{kl}$. Set</p>
+<p>$$
+E_{kl}=v_{k}\ell_{l}.
+$$</p>
+<p>Then $E_{kl}\in\mathbb{C}\,v_{k}\ell_{l}=A_{kl}$ and $E_{kk}=v_{k}\ell_{k}=P_{k}$. For the product,</p>
+<p>$$
+E_{kl}E_{pq}=v_{k}\ell_{l}(v_{p})\ell_{q}=\delta_{lp}\,v_{k}\ell_{q}=\delta_{lp}E_{kq}.
+$$</p>
+<p>So the $E_{kl}$ are a Peirce basis.</p>
+<p><strong>The basis is a pair of dual bases.</strong> The vectors $v_{1},\dots,v_{n}$ are a basis of $\mathbb{C}^{n}$, one vector in each line $V_{k}$, and the forms $\ell_{1},\dots,\ell_{n}$ are the dual basis. The Peirce basis $E_{kl}=v_{k}\ell_{l}$ is the same data written as matrices. Conversely, every Peirce basis arises this way: $E_{kl}$ has rank one, its image is $V_{k}$, and its kernel is $\bigoplus_{p\ne l}V_{p}$, so it is $v_{k}\ell_{l}$ for the vector $v_{k}=E_{kl}(\text{any vector of }V_{l})$ and the form $\ell_{l}$ with that kernel.</p>
+<h2 id="coordinates">Coordinates</h2>
+<p><strong>Definition.</strong> The <strong>Peirce coordinates</strong> of $X\in M_{n}(\mathbb{C})$ in the basis are the numbers $X_{kl}$ in</p>
+<p>$$
+X=\sum_{k,l=1}^{n}X_{kl}E_{kl}.
+$$</p>
+<p>They are unique, because the $E_{kl}$ are a basis of the algebra: the lines sum directly.</p>
+<p><strong>The product is the matrix product of the coordinates.</strong> If $X=\sum X_{kl}E_{kl}$ and $Y=\sum Y_{kl}E_{kl}$, then</p>
+<p>$$
+XY=\sum_{k,l,p,q}X_{kl}Y_{pq}E_{kl}E_{pq}
+=\sum_{k,q}\Big(\sum_{l}X_{kl}Y_{lq}\Big)E_{kq}.
+$$</p>
+<p>So the coordinate of $XY$ in position $(k,q)$ is $\sum_{l}X_{kl}Y_{lq}$. In a Peirce basis the algebra reads as the array of its coordinates with the matrix product. This is a statement about coordinates, not a new object: the array is the element written in the chosen basis.</p>
+<h2 id="the-gauge">The Gauge</h2>
+<p><strong>Theorem.</strong> Let $E$ and $E'$ be two Peirce bases of the same family. Then there are nonzero scalars $t_{1},\dots,t_{n}$ with</p>
+<p>$$
+E'_{kl}=t_{k}t_{l}^{-1}E_{kl}.
+$$</p>
+<p>Conversely, every such choice gives a Peirce basis of the same family.</p>
+<p><strong>Proof.</strong> Both $E'_{kl}$ and $E_{kl}$ span the same line $A_{kl}$, so $E'_{kl}=c_{kl}E_{kl}$ with $c_{kl}\ne0$. The product rule gives</p>
+<p>$$
+c_{kl}c_{lq}E_{kq}=E'_{kl}E'_{lq}=E'_{kq}=c_{kq}E_{kq},
+$$</p>
+<p>hence $c_{kl}c_{lq}=c_{kq}$. Since $E'_{11}=c_{11}P_{1}$ is idempotent and nonzero, $c_{11}=1$. Setting $t_{k}=c_{k1}$ gives $c_{kl}=c_{k1}c_{1l}=t_{k}c_{1l}$. From $c_{1l}c_{l1}=c_{11}=1$ and $c_{l1}=t_{l}$, we get $c_{1l}=t_{l}^{-1}$. So $c_{kl}=t_{k}t_{l}^{-1}$. The converse is a direct check of the product rule. </p>
+<p><strong>The gauge group.</strong> The scalars $t_{k}$ form $(\mathbb{C}^{\times})^{n}$, but a common scalar acts trivially, since $(\lambda t_{k})(\lambda t_{l})^{-1}=t_{k}t_{l}^{-1}$. The effective group is</p>
+<p>$$
+(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1},
+$$</p>
+<p>the <strong>Peirce gauge</strong>. It acts on the coordinates by</p>
+<p>$$
+X'_{kl}=t_{k}^{-1}t_{l}X_{kl},
+$$</p>
+<p>because $X'_{kl}E'_{kl}=X_{kl}E_{kl}$ and $E'_{kl}=t_{k}t_{l}^{-1}E_{kl}$.</p>
+<p><strong>The Hermitian case.</strong> If the family is Hermitian, $P_{k}^{*}=P_{k}$, a Hermitian Peirce basis has $E_{lk}=E_{kl}^{*}$. In the form $E_{kl}=v_{k}v_{l}^{*}$, with $v_{k}$ a unit vector, this is automatic, and the gauge is restricted to $|t_{k}|=1$. The gauge group is then $(S^{1})^{n-1}$.</p>
+<h2 id="dimensions-and-the-projective-count">Dimensions and the Projective Count</h2>
+<p><strong>The three spaces.</strong> Three sets are attached to the construction:</p>
+<ul>
+<li>the <strong>family space</strong>, the set of ordered $n$-tuples of lines $V_{1},\dots,V_{n}$ with $V_{1}\oplus\cdots\oplus V_{n}=\mathbb{C}^{n}$;</li>
+<li>the <strong>frame space</strong>, the set of Peirce bases;</li>
+<li>the <strong>gauge</strong>, the fibre of the map from frames to families over a fixed family.</li>
+</ul>
+<p><strong>The dimensions.</strong> The family space is an open subset of $(\mathbb{P}^{n-1})^{n}$, so</p>
+<p>$$
+\dim_{\mathbb{C}}(\text{families})=n(n-1)=n^{2}-n .
+$$</p>
+<p>The gauge is $(\mathbb{C}^{\times})^{n-1}$, of dimension $n-1$. The frame space is the total space, of dimension</p>
+<p>$$
+(n^{2}-n)+(n-1)=n^{2}-1 .
+$$</p>
+<p><strong>The orbit and the stabiliser.</strong> The group $PGL_{n}(\mathbb{C})$ acts on the family space, and it acts transitively: a family is a projective frame, and $PGL_{n}$ sends one projective frame to any other. The family is therefore the orbit, and its dimension is $n^{2}-n$. The stabiliser of a family is the diagonal torus modulo the scalars, of dimension $n-1$: an element of $PGL_{n}$ that fixes each line acts on the $n$ lines by $n$ scalars, and the common scalar is the identity of $PGL_{n}$. The gauge is this stabiliser. The count is the orbit–stabiliser count of the frame space:</p>
+<p>$$
+\dim PGL_{n}=n^{2}-1=(n^{2}-n)+(n-1).
+$$</p>
+<p>For $n=3$ it reads $8=6+2$: the frame space has dimension $8$, the family $6$, and the gauge $2$. The family is the orbit, and the gauge is the stabiliser.</p>
+<p><strong>The projective reading.</strong> A family is $n$ points of $\mathbb{P}^{n-1}$ in general position, that is, a projective frame. A Peirce basis is a lift of that projective frame to a basis of $\mathbb{C}^{n}$, and the gauge is the freedom of the lift: each point may be rescaled independently, with the common rescaling of all $n$ points acting trivially. The decomposition is the projective data; the basis is the lift.</p>
+<p><strong>The biquaternion layer.</strong> For $n=2$ the same count is $3=2+1$ in complex dimensions, that is, $6=4+2$ in real dimensions. The family has four real parameters and the gauge two. The second root used in the biquaternion articles is a point of the gauge, not an extra parameter.</p>
+<h2 id="what-the-basis-is-not">What the Basis Is Not</h2>
+<p>The basis is not canonical. Two bases of the same family differ by the gauge, and the gauge is nontrivial for $n\ge2$.</p>
+<p>The basis is not a second decomposition. The lines are the decomposition; the $E_{kl}$ are one element per line, and the choice does not change the lines.</p>
+<p>The basis exists only when the components are lines. A coarse family, with a component of dimension greater than one, has no Peirce basis: a component of dimension $d>1$ carries a whole space of elements, and no single element spans it.</p>
+<h2 id="summary">Summary</h2>
+<p>A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_{k}$. It exists for every complete family of $n$ idempotents of $M_{n}(\mathbb{C})$, and it is unique up to the gauge $E_{kl}\mapsto t_{k}t_{l}^{-1}E_{kl}$, a torus of dimension $n-1$. In the basis the coordinates multiply by the matrix product, and the coordinates change by $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$. The family space has dimension $n^{2}-n$, the gauge $n-1$, and the frame space $n^{2}-1$, which is the orbit–stabiliser count of $PGL_{n}$; for $n=3$ it is $8=6+2$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_{k}$</td>
+<td>A member of the complete orthogonal family</td>
+</tr>
+<tr>
+<td>$A_{kl}=P_{k}M_{n}P_{l}$</td>
+<td>The Peirce line</td>
+</tr>
+<tr>
+<td>$E_{kl}$</td>
+<td>The chosen element of $A_{kl}$</td>
+</tr>
+<tr>
+<td>$X_{kl}$</td>
+<td>The Peirce coordinate of $X$</td>
+</tr>
+<tr>
+<td>$t_{k}$</td>
+<td>A gauge parameter, $t_{k}\ne0$</td>
+</tr>
+<tr>
+<td>$V_{k}=\operatorname{im}P_{k}$</td>
+<td>The line of the $k$-th idempotent</td>
+</tr>
+<tr>
+<td>$PGL_{n}$</td>
+<td>The projective linear group, of dimension $n^{2}-1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Peirce decompositions and the units of a fine decomposition.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for matrix units and the matrix product of coordinates.</li>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the lines and their multiplication.</li>
+<li><a href="spinors-as-peirce-coordinates-in-n-dimensions.html">Spinors as Peirce Coordinates in $n$ Dimensions</a>, for the rows of the coordinate array.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>, for the frame and the nilpotents.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$</a>, for the orbit–stabiliser count at $n=3$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

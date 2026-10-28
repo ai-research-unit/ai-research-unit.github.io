@@ -73,7 +73,7 @@
 <p>A spectrally degenerate biquaternion has one eigenvalue. Off the scalar line its matrix has a single Jordan block, its eigenspace is two-dimensional while the algebra is four-dimensional, and the two missing vectors are supplied by a chain. The change from the fixed model to a Jordan basis is the Jordanising matrix. It cannot be $*$-unitary, because a non-scalar Jordan block is not normal. The definite Hermitian form nevertheless selects a canonical chain, and the Jordanising matrix becomes the singular-value frame of the nilpotent.</p>
 <p>This article develops the Jordan basis and its coordinate model, the canonical and general Jordanising matrices, their determinants and freedom, the trace pairing, the $*$-unitary form and the defect, and the transitions between elements. It is the matrix form of <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>, §<em>The Jordan Basis</em>, §<em>The Canonical Frame</em>, §<em>The Matrix Model</em> and §<em>Expansion of Every Biquaternion</em>, and the degenerate counterpart of <em>$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</em>.</p>
 <p><strong>Conventions.</strong> The algebra and the fixed model are those of <em>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. The element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$ and $\vec Q\neq0$. Put $B^2=\vec Q\cdot\vec Q=0$, $Q=\mathsf M_2(\vec Q)$, and $M=\mathsf M_2(\tilde Q)=Q_t\mathrm I_2+Q$. The nilpotent $Q$ is rank one. The Jordan block is $J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$. The corner order is $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; the chain order is $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$.</p>
-<p>The Hermitian form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of <em>Conventions in Mathematics</em>, §<em>The Form Convention, the Norm Convention and the $*$-Unitary Convention</em>, with norm $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$. The star is $\tilde Q^*=\bar Q_te_t-\overline{\vec Q}$, and $\mathsf M_2(\tilde Q^*)=M^{\dagger}$. The singular value of the nilpotent is</p>
+<p>The Hermitian form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of <em>Conventions in Mathematics</em>, §<em>The Form Convention, the Norm Convention and the Unitary Convention</em>, with norm $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$. The star is $\tilde Q^*=\bar Q_te_t-\overline{\vec Q}$, and $\mathsf M_2(\tilde Q^*)=M^{\dagger}$. The singular value of the nilpotent is</p>
 <p>$$
 s=\sqrt{2\langle\vec Q\rangle_*}=\sqrt{\operatorname{Tr}(Q^{\dagger}Q)}.
 $$</p>
@@ -255,7 +255,7 @@ $$</p>
 <p>The two idempotents are the support idempotents: the orthogonal projections onto the column space and the row space of $Q$, and the two generators are the two mixed matrix units scaled by $s$ and $s^{-1}$.</p>
 <p><strong>Uniqueness.</strong> The pair of Hermitian idempotents is unique. The generator $\vec\Upsilon_-=\vec Q$ is fixed by the element, and the product $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ fixes $\vec\Upsilon_+$ in the corner. The frame is therefore a function of the element, not of a choice. The only residual freedom of the matrix $\mathsf S_Q$ is a common phase, which leaves the frame fixed.</p>
 <p><strong>The boundary.</strong> At $\vec Q=0$ the formulas divide by zero. The element is scalar, every basis is an eigenbasis, the Jordan type of $M$ is two blocks $J_1(Q_t)$, and no adapted frame is distinguished. The scalar line is the boundary of the construction, not a chart of it.</p>
-<h2 id="the-math145-unitary-form-and-the-defect">The $*$-Unitary Form and the Defect</h2>
+<h2 id="the-math144-unitary-form-and-the-defect">The $*$-Unitary Form and the Defect</h2>
 <p><strong>No normal non-scalar.</strong> A matrix is normal when $MM^{\dagger}=M^{\dagger}M$. A non-scalar element of the sector is never normal.</p>
 <p><em>Proof.</em> Normality of $M$ is $[\vec Q,\overline{\vec Q}]=0$, which for a vector part means $\vec Q=\zeta\vec p$ with $\zeta\in\mathbb{C}$ and $\vec p\in\mathbb{R}^3$. Then $\vec Q^2=\zeta^2(\vec p\cdot\vec p)=0$, so $\zeta=0$ or $\vec p=0$; in both cases $\vec Q=0$. ∎</p>
 <p><strong>The $*$-unitary form.</strong> Put $U=(u\ v)$. Since $U$ is $*$-unitary and $U^{\dagger}QU=sE_{12}$,</p>
@@ -420,7 +420,7 @@ $$</p>
 <li><a href="m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the fixed matrix units</li>
 <li><a href="m2c-representation-the-centraliser-and-the-double-centraliser.html">$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</a>, for the dual numbers</li>
 <li><a href="m2c-representation-the-matrix-product-and-the-algebra-structure.html">$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</a>, for the fixed model</li>
-<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Biquaternion Algebra</a>, for the spectral criterion</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html">The Spectrum</a>, for the spectral criterion</li>
 <li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the Hermitian form and norm</li>
 </ul>
       </div>

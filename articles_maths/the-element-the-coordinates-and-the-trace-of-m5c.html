@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Element, the Coordinates and the Trace — Biquaternion Universe</title>
+  <title>The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-element-the-coordinates-and-the-trace"><strong>The Element, the Coordinates and the Trace</strong></h1>
+        <h1 id="the-element-the-coordinates-and-the-trace-of-math0"><strong>The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>An element of $M_5(\mathbb{C})$ is a matrix $A=(A_{ij})$, and the twenty-five entries are its coordinates in the basis of matrix units:</p>
 <p>$$
@@ -79,8 +79,8 @@ $$</p>
 \operatorname{tr}A=\sum_{i=1}^{5}A_{ii},
 $$</p>
 <p>the sum of the diagonal coordinates. It is the unique (up to scale) linear form invariant under conjugation, and it defines the trace pairing $\langle A,B\rangle=\operatorname{tr}(AB)$, a symmetric nondegenerate complex bilinear form.</p>
-<p>This article develops the element from the coordinate side: the matrix units and the coordinates, the real and complex readings, the trace as an invariant linear form, the trace pairing and its dual, the hyperplane $\mathfrak{sl}_5$ of traceless matrices, and the Jordan decomposition $A=S+N$ with its trace. The trace pairing is <strong>not</strong> the positive definite form of the Hilbert space; that form is $\operatorname{tr}(A^*B)$, defined with the conjugate transpose in <em>The Involution and the Hermitian Structure</em>. The present article uses the complex bilinear pairing of the algebra, the one that pairs $E_{ij}$ with $E_{ji}$.</p>
-<p>The article assumes the matrix algebra of <em>The Matrix Algebra $M_5(\mathbb{C})$</em> and the root of <em>Roots of Unity and the Lagrange Idempotents</em>. The Jordan decomposition is stated and proved in the finite-dimensional case; the spectral theorem for the Hermitian form, the polar decomposition and the exponential are later articles.</p>
+<p>This article develops the element from the coordinate side: the matrix units and the coordinates, the real and complex readings, the trace as an invariant linear form, the trace pairing and its dual, the hyperplane $\mathfrak{sl}_5$ of traceless matrices, and the Jordan decomposition $A=S+N$ with its trace. The trace pairing is <strong>not</strong> the positive definite form of the Hilbert space; that form is $\operatorname{tr}(A^*B)$, defined with the conjugate transpose in <em>The Involution and the Hermitian Structure of $M_5(\mathbb{C})$</em>. The present article uses the complex bilinear pairing of the algebra, the one that pairs $E_{ij}$ with $E_{ji}$.</p>
+<p>The article assumes the matrix algebra of <em>The Matrix Algebra $M_5(\mathbb{C})$</em> and the root of <em>Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$</em>. The Jordan decomposition is stated and proved in the finite-dimensional case; the spectral theorem for the Hermitian form, the polar decomposition and the exponential are later articles.</p>
 <h2 id="the-coordinates">The Coordinates</h2>
 <h3 id="the-matrix-units">The Matrix Units</h3>
 <p><strong>Definition.</strong> The <strong>coordinates</strong> of $A$ are the numbers $A_{ij}$ in the expansion</p>
@@ -157,7 +157,7 @@ $$</p>
 <p><strong>Proof.</strong> The first identity is the cyclic invariance of the trace: $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(gABg^{-1})=\operatorname{tr}(AB)$. For the second, $\langle [A,B],C\rangle=\operatorname{tr}(ABC-BAC)$ and $\langle B,[A,C]\rangle=\operatorname{tr}(BAC-BCA)$; the sum is $\operatorname{tr}(ABC-BCA)=0$ by cyclicity.</p>
 <p><strong>Corollary.</strong> The adjoint operator $\operatorname{ad}_A$ is skew for the trace pairing: $\langle\operatorname{ad}_A B,C\rangle=-\langle B,\operatorname{ad}_A C\rangle$. The trace form is the invariant bilinear form of the Lie algebra $\mathfrak{gl}_5$.</p>
 <p><strong>Proof.</strong> The second identity is exactly the skew-adjointness.</p>
-<p><strong>Remark.</strong> <strong>The trace pairing is indefinite.</strong> It is a complex bilinear form, not a Hermitian form; $\langle A,A\rangle=\operatorname{tr}(A^2)$ can be zero for a nonzero nilpotent $A$. The positive definite form is $\operatorname{tr}(A^*B)$, which uses the conjugate transpose and is treated in <em>The Involution and the Hermitian Structure</em>. The trace pairing is the algebraic pairing of the Frobenius algebra; the definite form is the metric of the Hilbert space.</p>
+<p><strong>Remark.</strong> <strong>The trace pairing is indefinite.</strong> It is a complex bilinear form, not a Hermitian form; $\langle A,A\rangle=\operatorname{tr}(A^2)$ can be zero for a nonzero nilpotent $A$. The positive definite form is $\operatorname{tr}(A^*B)$, which uses the conjugate transpose and is treated in <em>The Involution and the Hermitian Structure of $M_5(\mathbb{C})$</em>. The trace pairing is the algebraic pairing of the Frobenius algebra; the definite form is the metric of the Hilbert space.</p>
 <h2 id="the-jordan-decomposition">The Jordan Decomposition</h2>
 <h3 id="the-semisimple-and-nilpotent-parts">The Semisimple and Nilpotent Parts</h3>
 <p><strong>Definition.</strong> An element $S$ is <strong>semisimple</strong> if it is diagonalizable; an element $N$ is <strong>nilpotent</strong> if $N^k=0$ for some $k$.</p>
@@ -308,9 +308,9 @@ $$</p>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the trace form, the invariant linear forms and the Frobenius algebra structure.</li>
 <li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the Killing form, the trace form of $\mathfrak{gl}_5$ and the adjoint action.</li>
 <li><a href="the-matrix-algebra-m5c.html">The Matrix Algebra $M_5(\mathbb{C})$</a>, for the algebra, the matrix units and the trace.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the conjugate transpose and the positive definite form $\operatorname{tr}(A^*B)$.</li>
-<li><a href="the-forms-the-norms-and-the-singular-set-of-m5c.html">The Forms, the Norms and the Singular Set</a>, for the determinant, the norm and the singular set.</li>
-<li><a href="the-exponential-and-the-lie-group-of-m5c.html">The Exponential and the Lie Group</a>, for the exponential map and the identity $\det(e^A)=e^{\operatorname{tr}A}$.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure of $M_5(\mathbb{C})$</a>, for the conjugate transpose and the positive definite form $\operatorname{tr}(A^*B)$.</li>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m5c.html">The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$</a>, for the determinant, the norm and the singular set.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m5c.html">The Exponential and the Lie Group of $M_5(\mathbb{C})$</a>, for the exponential map and the identity $\det(e^A)=e^{\operatorname{tr}A}$.</li>
 </ul>
       </div>
     </main>

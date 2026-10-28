@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Exponential and the Lie Group — Biquaternion Universe</title>
+  <title>The Exponential and the Lie Group of $M_5(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-exponential-and-the-lie-group"><strong>The Exponential and the Lie Group</strong></h1>
+        <h1 id="the-exponential-and-the-lie-group-of-math0"><strong>The Exponential and the Lie Group of $M_5(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>matrix exponential</strong> is</p>
 <p>$$
@@ -158,7 +158,7 @@ $$</p>
 <p><strong>Corollary.</strong> The exponential is the map from the Lie algebra to the one-parameter subgroups; it is injective on a neighborhood of $0$ and a local diffeomorphism there.</p>
 <p><strong>Proof.</strong> The derivative at $0$ is the identity; the inverse function theorem gives a local inverse, the logarithm.</p>
 <h2 id="the-lie-group">The Lie Group</h2>
-<h3 id="math87-as-a-lie-group">$GL_5$ as a Lie Group</h3>
+<h3 id="math88-as-a-lie-group">$GL_5$ as a Lie Group</h3>
 <p><strong>Theorem.</strong> $GL_5(\mathbb{C})$ is a complex Lie group of complex dimension $25$; its Lie algebra is $\mathfrak{gl}_5$; the multiplication, the inverse and the exponential are smooth.</p>
 <p><strong>Proof.</strong> $GL_5$ is the open subset $\det\ne0$ of $M_5\cong\mathbb{C}^{25}$; the multiplication is polynomial, the inverse is rational with denominator $\det$, and the exponential is entire. The Lie algebra is the tangent space at $I$, with the bracket of left-invariant fields.</p>
 <p><strong>Corollary.</strong> The Lie algebra of $SL_5$ is $\mathfrak{sl}_5$, of dimension $24$; the Lie algebra of $U(5)$ is $\mathfrak{u}(5)$, of real dimension $25$; the Lie algebra of $SU(5)$ is $\mathfrak{su}(5)$, of real dimension $24$.</p>
@@ -189,12 +189,12 @@ $$</p>
 <p><strong>Proof.</strong> The first is the theorem. For $A\in SL_5$, put $A=gJg^{-1}$; the eigenvalues $\lambda_k$ of $J$ have product $1$. Choose logarithms $\mu_k$ with $\sum_km_k\mu_k=0$: since $\sum_km_k\log\lambda_k=2\pi i\,m$ for an integer $m$, shift one branch by $-2\pi i\,m$; this does not change its exponential and makes the weighted sum zero. The logarithm of the Jordan form built from these branches has trace $\sum_km_k\mu_k=0$, and $A=e^{gXg^{-1}}$ with $X$ traceless.</p>
 <p><strong>Remark.</strong> <strong>The exponential is surjective but not injective.</strong> $e^{2\pi iI}=I$, and more generally $e^{2\pi iD}=I$ for any diagonal matrix $D$ with integer entries. The fibres of the exponential are discrete unions of affine subspaces; the logarithm is multivalued. The local diffeomorphism is the correct statement; the global inverse does not exist.</p>
 <h2 id="the-standard-subgroups">The Standard Subgroups</h2>
-<h3 id="math162">$SL_5$</h3>
+<h3 id="math163">$SL_5$</h3>
 <p><strong>Theorem.</strong> $SL_5(\mathbb{C})=\{A:\det A=1\}$ is a closed complex Lie subgroup of $GL_5$, of dimension $24$, with Lie algebra $\mathfrak{sl}_5=\{X:\operatorname{tr}X=0\}$. The exponential maps $\mathfrak{sl}_5$ onto $SL_5$.</p>
 <p><strong>Proof.</strong> The determinant is a holomorphic homomorphism $GL_5\to\mathbb{C}^\times$; its kernel is closed; the dimension is $25-1=24$. The Lie algebra is the kernel of the derivative $\operatorname{tr}$ at $I$. The surjectivity is the corollary above.</p>
 <p><strong>Corollary.</strong> $\det(e^X)=e^{\operatorname{tr}X}$; the exponential of a traceless matrix has determinant $1$.</p>
 <p><strong>Proof.</strong> The identity $\det(e^X)=e^{\operatorname{tr}X}$ is the determinant-exponential identity; a traceless $X$ gives determinant $1$.</p>
-<h3 id="math178-and-math179">$U(5)$ and $SU(5)$</h3>
+<h3 id="math179-and-math180">$U(5)$ and $SU(5)$</h3>
 <p><strong>Theorem.</strong> $U(5)$ is a compact real Lie group of dimension $25$, with Lie algebra $\mathfrak{u}(5)$; the exponential maps $\mathfrak{u}(5)$ onto $U(5)$. $SU(5)$ is compact of dimension $24$, with Lie algebra $\mathfrak{su}(5)$, and the exponential maps $\mathfrak{su}(5)$ onto $SU(5)$.</p>
 <p><strong>Proof.</strong> The $*$-unitary group is the zero set of $U^*U=I$, closed and bounded, hence compact; the tangent space at $I$ is $\mathfrak{u}(5)$; the exponential of a skew-Hermitian matrix is $*$-unitary. The surjectivity is the $*$-unitary diagonalization: $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_k})$, and $U=e^{iH}$ with $H=VD_0V^*$, $D_0=\operatorname{diag}(\theta_k)$, skew-Hermitian. For $SU(5)$, choose the angles with sum zero modulo $2\pi$.</p>
 <p><strong>Corollary.</strong> The exponential of a Hermitian matrix is positive definite; the exponential of a skew-Hermitian matrix is $*$-unitary; the exponential of a nilpotent matrix is unipotent.</p>
@@ -342,11 +342,11 @@ $$</p>
 <li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for the matrix exponential, the Lie algebra, the one-parameter subgroups and the Lie group structure.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the exponential, the logarithm and the Jordan form.</li>
 <li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the exponential map, the Lie groups and the symmetric spaces.</li>
-<li><a href="the-element-the-coordinates-and-the-trace-of-m5c.html">The Element, the Coordinates and the Trace</a>, for the determinant identity and the Jordan decomposition.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the $*$-unitary group and the compact real form.</li>
-<li><a href="spectral-theory-and-the-spectral-projectors-of-m5c.html">Spectral Theory and the Spectral Projectors</a>, for the functional calculus and the exponential of a Hermitian matrix.</li>
-<li><a href="the-polar-decomposition-of-m5c.html">The Polar Decomposition</a>, for the polar decomposition and the positive cone.</li>
-<li><a href="the-exponential-polar-decomposition-of-m5c.html">The Exponential-Polar Decomposition</a>, for the combination of the exponential and the polar decomposition.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m5c.html">The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$</a>, for the determinant identity and the Jordan decomposition.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure of $M_5(\mathbb{C})$</a>, for the $*$-unitary group and the compact real form.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m5c.html">Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$</a>, for the functional calculus and the exponential of a Hermitian matrix.</li>
+<li><a href="the-polar-decomposition-of-m5c.html">The Polar Decomposition of $M_5(\mathbb{C})$</a>, for the polar decomposition and the positive cone.</li>
+<li><a href="the-exponential-polar-decomposition-of-m5c.html">The Exponential-Polar Decomposition of $M_5(\mathbb{C})$</a>, for the combination of the exponential and the polar decomposition.</li>
 </ul>
       </div>
     </main>

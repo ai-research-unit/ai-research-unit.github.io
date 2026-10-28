@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Frame, the Simple Nilpotents and the Gauge — Biquaternion Universe</title>
+  <title>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,13 +68,13 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-frame-the-simple-nilpotents-and-the-gauge"><strong>The Frame, the Simple Nilpotents and the Gauge</strong></h1>
+        <h1 id="the-frame-the-simple-nilpotents-and-the-gauge-of-math0"><strong>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A root gives six lines; a frame gives a vector in each line. The passage from the root to the frame is the passage from the projective basis to the basis, and its only freedom is a scale in each of the five simple directions. This article fixes the frame, the matrix units it carries, the five simple nilpotents, the composites they generate, and the five-parameter gauge that rescales them. The count is</p>
 <p>$$
 \underbrace{30}_{\text{root}}+\underbrace{5}_{\text{gauge}}=\underbrace{35}_{\text{frame}}=\dim PGL_6 .
 $$</p>
-<p>The article assumes the root and its six Lagrange projectors of <em>Roots of Unity and the Lagrange Idempotents</em>. It uses the algebra $M_6(\mathbb{C})$ of <em>The Matrix Algebra $M_6(\mathbb{C})$</em> and nothing else: no form, no norm, no topology. The Peirce decomposition by the frame is <em>The Peirce Decomposition</em>; the spin chain built on the frame is <em>The Spin Chain and the Adjoint Decomposition</em>; the geometry of the frames is <em>The Geometry of the Idempotents</em>.</p>
+<p>The article assumes the root and its six Lagrange projectors of <em>Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$</em>. It uses the algebra $M_6(\mathbb{C})$ of <em>The Matrix Algebra $M_6(\mathbb{C})$</em> and nothing else: no form, no norm, no topology. The Peirce decomposition by the frame is <em>The Peirce Decomposition of $M_6(\mathbb{C})$</em>; the spin chain built on the frame is <em>The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$</em>; the geometry of the frames is <em>The Geometry of the Idempotents of $M_6(\mathbb{C})$</em>.</p>
 <p><strong>The gauge is a gauge of the nilpotents.</strong> It rescales $E_{12},\dots,E_{56}$, one parameter for each, and it fixes every idempotent. There are five parameters, not six: the sixth is the overall scale, and the product rule removes it. The cocycle that removes it is §<em>The Cocycle</em>.</p>
 <h2 id="the-frame">The Frame</h2>
 <h3 id="definition">Definition</h3>
@@ -107,7 +107,7 @@ $$</p>
 H_F=\sum_{i=1}^{6}\zeta_iE_{ii},
 $$</p>
 <p>with $\zeta_i=\zeta^{i-1}$ the six sixth roots of unity.</p>
-<p><strong>Proposition.</strong> $H_F$ is a root in the sense of <em>Roots of Unity and the Lagrange Idempotents</em>: $H_F^6=I_6$, its eigenvalues are the six roots, each with multiplicity one, and its Lagrange projectors are the diagonal units $E_{ii}$.</p>
+<p><strong>Proposition.</strong> $H_F$ is a root in the sense of <em>Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$</em>: $H_F^6=I_6$, its eigenvalues are the six roots, each with multiplicity one, and its Lagrange projectors are the diagonal units $E_{ii}$.</p>
 <p><strong>Proof.</strong> In the frame, $H_F$ is the diagonal matrix $\operatorname{diag}(\zeta_1,\dots,\zeta_6)$. It has the six distinct sixth roots on the diagonal, so it is a root and its eigenspaces are the six frame lines. The Lagrange projector of $\zeta_i$ is the coordinate projector $E_{ii}$.</p>
 <p><strong>Corollary.</strong> The frame is a root together with one nonzero vector in each of its six lines. The root is the frame modulo the scales; the scales are the gauge.</p>
 <p><strong>Proof.</strong> The root determines the six lines $V_i=\mathbb{C}v_i$ but no vector inside them. A frame determines the lines and a vector in each. Two frames with the same root differ by $v_i\mapsto t_iv_i$, which is the gauge below.</p>
@@ -255,7 +255,7 @@ $$</p>
 <p>$$
 \dim PGL_6=35=30+5=\dim(PGL_6/T)+\dim T .
 $$</p>
-<p><strong>Proof.</strong> A frame is a point of $PGL_6$. The map to the root is the map to the decomposition into six lines, whose fibre is the torus of independent rescalings modulo the overall scale, of dimension five. The root set is $PGL_6/T$ by <em>Roots of Unity and the Lagrange Idempotents</em>, of dimension $30$. The dimensions add along the fibration.</p>
+<p><strong>Proof.</strong> A frame is a point of $PGL_6$. The map to the root is the map to the decomposition into six lines, whose fibre is the torus of independent rescalings modulo the overall scale, of dimension five. The root set is $PGL_6/T$ by <em>Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$</em>, of dimension $30$. The dimensions add along the fibration.</p>
 <h3 id="the-three-counts">The Three Counts</h3>
 <p>The same number is reached by three routes.</p>
 <div class="table-scroll"><table>
@@ -404,15 +404,16 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m6c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root and the six lines.</li>
-<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>, for the corners and the matrix units.</li>
-<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m6c.html">The Spin Chain and the Adjoint Decomposition</a>, for the principal $\mathfrak{su}_2$ generated by the simple nilpotents.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m6c.html">Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$</a>, for the root and the six lines.</li>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition of $M_6(\mathbb{C})$</a>, for the corners and the matrix units.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m6c.html">The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$</a>, for the principal $\mathfrak{su}_2$ generated by the simple nilpotents.</li>
 <li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the algebra, the trace, the determinant and $PGL_6$.</li>
-<li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the frame bundle over the variety of decompositions.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents of $M_6(\mathbb{C})$</a>, for the frame bundle over the variety of decompositions.</li>
 <li><a href="flag-manifolds.html">Flag Manifolds</a>, for the flag variety and its principal bundles.</li>
 <li><a href="primitive-idempotents-and-minimal-left-ideals.html">Primitive Idempotents and Minimal Left Ideals</a>, for the matrix units and the ideals they generate.</li>
 <li>James E. Humphreys, <em>Linear Algebraic Groups</em> (Springer, 1975), for the root systems, the simple roots and the maximal torus.</li>
 <li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the flag variety and the Borel subgroup.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>, for the general construction at order $n$.</li>
 </ul>
       </div>
     </main>

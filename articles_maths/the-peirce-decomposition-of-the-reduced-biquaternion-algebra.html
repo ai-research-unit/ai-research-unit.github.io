@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Decomposition of the Reduced Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-decomposition-of-the-reduced-biquaternion-algebra"><strong>The Peirce Decomposition of the Reduced Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The reduced biquaternion algebra $\mathbb{B}_{\mathrm r}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ is commutative, associative and unital, of complex dimension $2$, with basis $1,j$ and $j^{2}=+1$. Its two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$ are complete, orthogonal and central, and the Peirce decomposition relative to them is diagonal: the algebra is the sum of the two lines $\mathbb{C}\Pi_{+}$ and $\mathbb{C}\Pi_{-}$, and the two mixed components vanish.</p>
+<p>This is the degenerate case of the Peirce construction. The mixed components vanish because the idempotents are central, exactly as in the split-complex algebra. The article states the decomposition, the multiplication table and the root of $1$ that produces the family. The basis and the spinors are <em>The Peirce Basis of the Reduced Biquaternion Algebra</em> and <em>Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra</em>.</p>
+<h2 id="the-algebra-and-the-family">The Algebra and the Family</h2>
+<p><strong>The algebra.</strong> Over $\mathbb{C}$,</p>
+<p>$$
+\mathbb{B}_{\mathrm r}=\mathbb{C}[j]/(j^{2}-1),\qquad j^{2}=1,
+$$</p>
+<p>with basis $1,j$ and product determined by $j^{2}=1$. A general element is</p>
+<p>$$
+\breve Q=u+jv,\qquad u,v\in\mathbb{C}.
+$$</p>
+<p>The algebra is commutative, associative and unital, with unit $1$. Over $\mathbb{R}$ it has dimension $4$; over $\mathbb{C}$ it has dimension $2$. The scalar field of the Peirce decomposition is $\mathbb{C}$.</p>
+<p><strong>The family.</strong> Set</p>
+<p>$$
+\Pi_{+}=\frac{1+j}{2},\qquad \Pi_{-}=\frac{1-j}{2}.
+$$</p>
+<p>Then</p>
+<p>$$
+\Pi_{+}^{2}=\Pi_{+},\qquad \Pi_{-}^{2}=\Pi_{-},\qquad \Pi_{+}\Pi_{-}=0,\qquad \Pi_{+}+\Pi_{-}=1 .
+$$</p>
+<p>The family is complete, orthogonal and idempotent. It is central, because $j$ commutes with $i$ and with every element.</p>
+<p><strong>The coordinates in the family.</strong> Every element has the unique expansion</p>
+<p>$$
+\breve Q=\breve Q_{+}\Pi_{+}+\breve Q_{-}\Pi_{-},\qquad \breve Q_{\pm}=u\pm v .
+$$</p>
+<p>The map $\breve Q\mapsto(\breve Q_{+},\breve Q_{-})$ is an isomorphism of $\mathbb{C}$-algebras from $\mathbb{B}_{\mathrm r}$ to $\mathbb{C}\times\mathbb{C}$.</p>
+<h2 id="the-peirce-lines">The Peirce Lines</h2>
+<p><strong>Definition.</strong> For $\sigma,\tau\in\{+,-\}$ the Peirce line is</p>
+<p>$$
+\mathbb{B}_{\sigma\tau}=\Pi_{\sigma}\mathbb{B}_{\mathrm r}\Pi_{\tau}.
+$$</p>
+<p><strong>Proposition.</strong> The two diagonal lines are one-dimensional over $\mathbb{C}$, the two mixed lines are zero, and</p>
+<p>$$
+\mathbb{B}_{\mathrm r}=\mathbb{B}_{++}\oplus\mathbb{B}_{--}.
+$$</p>
+<p><strong>Proof.</strong> Since $\Pi_{\sigma}$ is central,</p>
+<p>$$
+\mathbb{B}_{\sigma\tau}=\Pi_{\sigma}\Pi_{\tau}\mathbb{B}_{\mathrm r}=\delta_{\sigma\tau}\,\Pi_{\sigma}\mathbb{B}_{\mathrm r}.
+$$</p>
+<p>So $\mathbb{B}_{+-}=\mathbb{B}_{-+}=0$, and</p>
+<p>$$
+\mathbb{B}_{++}=\mathbb{C}\Pi_{+},\qquad \mathbb{B}_{--}=\mathbb{C}\Pi_{-},
+$$</p>
+<p>each of complex dimension one. The two lines sum to the algebra because $\Pi_{+}+\Pi_{-}=1$, and their intersection is zero because $\Pi_{+}\Pi_{-}=0$.</p>
+<p><strong>The diagonal is canonical.</strong> Each diagonal line is spanned by its idempotent, and the idempotent is determined by the family. There is no off-diagonal line and no off-diagonal element to choose.</p>
+<h2 id="the-multiplication-rule">The Multiplication Rule</h2>
+<p>The general rule gives, for $\sigma,\tau,\mu,\nu\in\{+,-\}$,</p>
+<p>$$
+\mathbb{B}_{\sigma\tau}\mathbb{B}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{B}_{\sigma\nu}.
+$$</p>
+<p>In this algebra the only nonzero lines are the diagonal ones, so the table reduces to</p>
+<p>$$
+\mathbb{B}_{++}\mathbb{B}_{++}\subseteq\mathbb{B}_{++},\qquad
+\mathbb{B}_{--}\mathbb{B}_{--}\subseteq\mathbb{B}_{--},\qquad
+\mathbb{B}_{++}\mathbb{B}_{--}=0,\qquad
+\mathbb{B}_{--}\mathbb{B}_{++}=0.
+$$</p>
+<p>In coordinates the product is componentwise:</p>
+<p>$$
+(\breve Q_{+}\Pi_{+}+\breve Q_{-}\Pi_{-})(\breve R_{+}\Pi_{+}+\breve R_{-}\Pi_{-})=(\breve Q_{+}\breve R_{+})\Pi_{+}+(\breve Q_{-}\breve R_{-})\Pi_{-}.
+$$</p>
+<h2 id="the-root-of-math42">The Root of $1$</h2>
+<p><strong>Proposition.</strong> The roots of $x^{2}=1$ in $\mathbb{B}_{\mathrm r}$ are $1,-1,j,-j$.</p>
+<p><strong>Proof.</strong> Write $x=u+jv$ with $u,v\in\mathbb{C}$. Then $x^{2}=u^{2}+v^{2}+2uvj$, so $x^{2}=1$ is equivalent to</p>
+<p>$$
+u^{2}+v^{2}=1,\qquad 2uv=0.
+$$</p>
+<p>If $v=0$ then $u=\pm1$; if $u=0$ then $v=\pm1$. These are the four elements listed.</p>
+<p><strong>The family from the root.</strong> The nontrivial roots are $\pm j$, and</p>
+<p>$$
+\Pi_{\pm}=\frac{1\pm j}{2}.
+$$</p>
+<p>The root $j$ attaches $\Pi_{+}$ to $+1$ and $\Pi_{-}$ to $-1$; the root $-j$ exchanges the labels and gives the same unordered family. The family is the spectral family of $j$.</p>
+<p><strong>The root is not needed.</strong> The idempotents of $\mathbb{C}\times\mathbb{C}$ are $(0,0)$, $(1,0)$, $(0,1)$ and $(1,1)$, so the nontrivial complete orthogonal pairs are $(\Pi_{+},\Pi_{-})$ and $(\Pi_{-},\Pi_{+})$, the same unordered family. Every nontrivial root of $1$ produces it.</p>
+<h2 id="central-idempotents-and-the-product-decomposition">Central Idempotents and the Product Decomposition</h2>
+<p>Because $\Pi_{\pm}$ is central, the decomposition is a decomposition into two algebras, each with unit $\Pi_{\pm}$, and the algebra is the direct product</p>
+<p>$$
+\mathbb{B}_{\mathrm r}\cong\mathbb{C}\Pi_{+}\times\mathbb{C}\Pi_{-},\qquad \breve Q\longmapsto(\breve Q_{+},\breve Q_{-}).
+$$</p>
+<p>This is the structural reason for the vanishing of the mixed lines: for central $\Pi_{+}$,</p>
+<p>$$
+\Pi_{+}\mathbb{B}_{\mathrm r}\Pi_{-}=\Pi_{+}\Pi_{-}\mathbb{B}_{\mathrm r}=0.
+$$</p>
+<p>The generator $j$ is the difference of the two idempotents:</p>
+<p>$$
+j=\Pi_{+}-\Pi_{-},\qquad \Pi_{\pm}=\frac{1\pm j}{2}.
+$$</p>
+<h2 id="what-the-decomposition-does-not-give">What the Decomposition Does Not Give</h2>
+<p>The decomposition gives two lines, each spanned by its idempotent, and no mixed line. It gives no off-diagonal element to choose, no gauge, no coordinate mixing and no two-component spinor. The basis is canonical and the spinor is a single complex scalar; these are the degenerate forms of the two constructions, treated in the next two articles.</p>
+<h2 id="summary">Summary</h2>
+<p>The reduced biquaternion algebra $\mathbb{B}_{\mathrm r}=\mathbb{C}[j]/(j^{2}-1)$, of complex dimension $2$, has the complete orthogonal family $\Pi_{\pm}=\tfrac12(1\pm j)$. The idempotents are central, so the Peirce decomposition is diagonal, $\mathbb{B}_{\mathrm r}=\mathbb{C}\Pi_{+}\oplus\mathbb{C}\Pi_{-}$, with the mixed components zero. The multiplication is componentwise, the algebra is $\mathbb{C}\times\mathbb{C}$, and the nontrivial roots of $1$ are $\pm j$, both giving the same unordered family.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\mathrm r}=\mathbb{C}[j]/(j^{2}-1)$</td>
+<td>The reduced biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\breve Q=u+jv$</td>
+<td>A general element</td>
+</tr>
+<tr>
+<td>$\Pi_{\pm}=\tfrac12(1\pm j)$</td>
+<td>The two idempotents</td>
+</tr>
+<tr>
+<td>$\breve Q_{\pm}=u\pm v$</td>
+<td>The idempotent coordinates</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\sigma\tau}=\Pi_{\sigma}\mathbb{B}_{\mathrm r}\Pi_{\tau}$</td>
+<td>A Peirce component</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html">Introduction to the Algebra of the Reduced Biquaternions</a>, for the algebra and its product.</li>
+<li><a href="the-peirce-basis-of-the-reduced-biquaternion-algebra.html">The Peirce Basis of the Reduced Biquaternion Algebra</a>, for the canonical basis.</li>
+<li><a href="spinors-as-peirce-coordinates-in-the-reduced-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra</a>, for the degenerate spinor.</li>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the nondegenerate case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

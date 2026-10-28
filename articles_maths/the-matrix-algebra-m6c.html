@@ -71,8 +71,8 @@
         <h1 id="the-matrix-algebra-math0"><strong>The Matrix Algebra $M_6(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>$M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$. It has centre $\mathbb{C}I_6$, it is simple, its commutator subspace is the trace-zero hyperplane $\mathfrak{sl}_6$, and its unit group is $GL_6(\mathbb{C})$, of dimension $36$, with projective quotient $PGL_6(\mathbb{C})$, of dimension $35$.</p>
-<p>This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and skew-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of <em>The Frame, the Simple Nilpotents and the Gauge</em> and the coordinates of <em>The Element, the Coordinates and the Trace</em> are built.</p>
-<p>No form and no topology are used here. The positive definite trace form is <em>The Involution and the Hermitian Structure</em>; the exponential and the Lie group are <em>The Exponential and the Lie Group</em>; the modules are <em>The Modules and the Minimal Left Ideals</em>.</p>
+<p>This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and skew-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of <em>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</em> and the coordinates of <em>The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$</em> are built.</p>
+<p>No form and no topology are used here. The positive definite trace form is <em>The Involution and the Hermitian Structure of $M_6(\mathbb{C})$</em>; the exponential and the Lie group are <em>The Exponential and the Lie Group of $M_6(\mathbb{C})$</em>; the modules are <em>The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$</em>.</p>
 <h2 id="the-algebra">The Algebra</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> $M_6(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{C}^6)$ is the algebra of complex-linear endomorphisms of $\mathbb{C}^6$, with the product of composition and the unit $I_6$. Its elements are the complex $6\times6$ matrices.</p>
@@ -236,7 +236,7 @@ $$</p>
 <p><strong>Proof.</strong> Bilinearity and symmetry are immediate from the trace. Nondegeneracy: if $\langle A,B\rangle=0$ for all $B$, take $B=E_{ij}$; then $\operatorname{tr}(AE_{ij})=A_{ji}=0$ for all $i,j$, so $A=0$. Invariance: $\operatorname{tr}(ABC)=\operatorname{tr}(A\,BC)$ by associativity.</p>
 <p><strong>Corollary (the Killing form).</strong> On $\mathfrak{sl}_6(\mathbb{C})$ the Killing form is $12\operatorname{tr}(AB)$; on $M_6(\mathbb{C})$ it is $12\operatorname{tr}(AB)-2\operatorname{tr}(A)\operatorname{tr}(B)$.</p>
 <p><strong>Proof.</strong> For $\mathfrak{gl}_n$ the Killing form is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$; at $n=6$ this is $12\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$. On the traceless part the second term vanishes.</p>
-<p><strong>Remark.</strong> The trace pairing is not the Hermitian form of <em>The Involution and the Hermitian Structure</em>: it is complex bilinear, not conjugate-linear, and it is indefinite as a real bilinear form. The positive definite form is $\operatorname{tr}(A^*B)$, which uses the involution. On Hermitian matrices the two pairings agree and are real.</p>
+<p><strong>Remark.</strong> The trace pairing is not the Hermitian form of <em>The Involution and the Hermitian Structure of $M_6(\mathbb{C})$</em>: it is complex bilinear, not conjugate-linear, and it is indefinite as a real bilinear form. The positive definite form is $\operatorname{tr}(A^*B)$, which uses the involution. On Hermitian matrices the two pairings agree and are real.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <h3 id="the-nilpotent-jordan-block">The Nilpotent Jordan Block</h3>
 <p><strong>Example.</strong> Let</p>
@@ -265,7 +265,7 @@ $$</p>
 \chi_\rho(t)=t^6-1 .
 $$</p>
 <p><strong>Proof.</strong> $\rho$ is a permutation matrix with no fixed point, so its trace is zero and its determinant is the sign of the $6$-cycle, which is $(-1)^5=-1$. Its eigenvalues are the six sixth roots of unity, each once, so the characteristic polynomial is $\prod_k(t-\zeta_k)=t^6-1$.</p>
-<p><strong>Remark.</strong> The cyclic shift is a root in the sense of <em>Roots of Unity and the Lagrange Idempotents</em>: $\rho^6=I_6$ with simple spectrum. The nilpotent $N$ is the other extreme: $N^6=0$ with a single eigenvalue. The two examples are the two ends of the Jordan classification, and both have trace zero.</p>
+<p><strong>Remark.</strong> The cyclic shift is a root in the sense of <em>Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$</em>: $\rho^6=I_6$ with simple spectrum. The nilpotent $N$ is the other extreme: $N^6=0$ with a single eigenvalue. The two examples are the two ends of the Jordan classification, and both have trace zero.</p>
 <h3 id="a-projector">A Projector</h3>
 <p><strong>Example.</strong> $P=E_{11}$ satisfies $P^2=P$, $\operatorname{rank}P=1$, $\operatorname{tr}P=1$, $\det P=0$, and $\chi_P(t)=t^5(t-1)$.</p>
 <p><strong>Proof.</strong> $E_{11}^2=E_{11}$; the image is $\mathbb{C}e_1$ and the kernel is spanned by $e_2,\dots,e_6$. The trace is the single nonzero diagonal entry, and the determinant is zero because the rank is one. The characteristic polynomial has the eigenvalue $1$ once and $0$ five times.</p>
@@ -388,15 +388,16 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the frame, the matrix units and the gauge.</li>
-<li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>, for the coordinates and the scalar-traceless split.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the positive definite trace form and the real forms.</li>
-<li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals</a>, for the column ideals and the simple modules.</li>
-<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for $PGL_6$ and its action.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</a>, for the frame, the matrix units and the gauge.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$</a>, for the coordinates and the scalar-traceless split.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure of $M_6(\mathbb{C})$</a>, for the positive definite trace form and the real forms.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$</a>, for the column ideals and the simple modules.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$</a>, for $PGL_6$ and its action.</li>
 <li><a href="central-simple-algebras-and-the-brauer-group.html">Central Simple Algebras and the Brauer Group</a>, for the simplicity, Skolem–Noether and the inner derivations.</li>
 <li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Carus Mathematical Monographs, 1968), for the centre, the ideals and the matrix units.</li>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the trace, the derivations and the automorphisms.</li>
 <li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for $\mathfrak{sl}_6$ and the Killing form.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the general algebra at order $n$.</li>
 </ul>
       </div>
     </main>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Geometry of the Idempotents — Biquaternion Universe</title>
+  <title>The Geometry of the Idempotents of $M_5(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-geometry-of-the-idempotents"><strong>The Geometry of the Idempotents</strong></h1>
+        <h1 id="the-geometry-of-the-idempotents-of-math0"><strong>The Geometry of the Idempotents of $M_5(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>An <strong>idempotent</strong> is a matrix $P$ with $P^2=P$. The idempotents of $M_5(\mathbb{C})$ are the projections, and their geometry is the geometry of the subspaces of $\mathbb{C}^5$:</p>
 <ul>
@@ -84,9 +84,9 @@
 </ul>
 <p>The rank-one case is the model. A rank-one idempotent is $P=v\ell$ with $\ell(v)=1$; the image is the line $[v]\in\mathbb{P}^4$, and the fibre over $[v]$ is the affine space of linear functionals $\ell$ with $\ell(v)=1$, of dimension $4$. The total space has dimension $4+4=8$. The idempotent is determined by the pair (line, transverse hyperplane), not by a nested flag: the kernel is a complement of the image, not a hyperplane containing it.</p>
 <p>The rank-$p$ case is the same picture with a $p$-plane: the idempotent is the projection onto a $p$-plane $L$ along a complementary $(5-p)$-plane $K$. The base is the Grassmannian $\operatorname{Gr}(p,5)$ of $L$, of dimension $p(5-p)$; the fibre over $L$ is the affine space of complements $K$, also of dimension $p(5-p)$; the total is $2p(5-p)$.</p>
-<p>The article computes the dimensions, proves the bundle structure, describes the rank stratification and the Peirce decomposition, and relates the idempotents to the full and partial flag varieties. It assumes the rank-one idempotents, the Peirce decomposition and the orbits of <em>Roots of Unity and the Lagrange Idempotents</em>, <em>The Peirce Decomposition</em> and <em>The Adjoint Action, the Orbits and the Flag Variety</em>.</p>
+<p>The article computes the dimensions, proves the bundle structure, describes the rank stratification and the Peirce decomposition, and relates the idempotents to the full and partial flag varieties. It assumes the rank-one idempotents, the Peirce decomposition and the orbits of <em>Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$</em>, <em>The Peirce Decomposition of $M_5(\mathbb{C})$</em> and <em>The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$</em>.</p>
 <h2 id="the-idempotents-of-rank-one">The Idempotents of Rank One</h2>
-<h3 id="the-affine-bundle-over-math35">The Affine Bundle over $\mathbb{P}^4$</h3>
+<h3 id="the-affine-bundle-over-math39">The Affine Bundle over $\mathbb{P}^4$</h3>
 <p><strong>Theorem.</strong> The rank-one idempotents of $M_5(\mathbb{C})$ form an affine bundle of rank $4$ over $\mathbb{P}^4$, of total dimension $8$.</p>
 <p><strong>Proof.</strong> A rank-one idempotent is $P=v\ell$ with $v\ne0$, $\ell\ne0$ and $\ell(v)=1$. The map $\pi:P\mapsto[v]$ sends $P$ to its image line. The fibre over $[v]$ is $\{\ell\in(\mathbb{C}^5)^*:\ell(v)=1\}$, an affine space of dimension $4$ (the affine hyperplane in the dual cut out by $\ell(v)=1$). The structure group is the affine group of the fibre; the total dimension is $4+4=8$.</p>
 <p><strong>Corollary.</strong> The rank-one idempotents are the pairs (line, transverse hyperplane) with $\ell(v)=1$, modulo the scaling $v\mapsto tv$, $\ell\mapsto t^{-1}\ell$; the dimension is $5+5-1-1=8$.</p>
@@ -109,7 +109,7 @@ $$</p>
 <p><strong>Proof.</strong> The projection onto $L$ along $K$ is the identity on $L$ and zero on $K$; the block matrix is the display. Every rank-one idempotent has a one-dimensional image and a four-dimensional kernel, so it is conjugate to $E_{11}$.</p>
 <p><strong>Corollary.</strong> The rank-one idempotents are the matrices $v\ell$ with $\ell(v)=1$; the trace is $1$, the determinant is $0$, and the spectrum is $\{1,0,0,0,0\}$.</p>
 <p><strong>Proof.</strong> The trace of $v\ell$ is $\ell(v)=1$; the eigenvalues are $1$ and $0$ with multiplicities $1$ and $4$; the determinant is $0$.</p>
-<h2 id="the-idempotents-of-rank-math107">The Idempotents of Rank $p$</h2>
+<h2 id="the-idempotents-of-rank-math111">The Idempotents of Rank $p$</h2>
 <h3 id="the-homogeneous-space">The Homogeneous Space</h3>
 <p><strong>Theorem.</strong> The idempotents of rank $p$ form the homogeneous space</p>
 <p>$$
@@ -125,7 +125,7 @@ $$</p>
 <p><strong>Proof.</strong> Evaluate $2p(5-p)$ at the six values.</p>
 <p><strong>Corollary.</strong> The rank-$p$ idempotent is determined by the pair (image $p$-plane $L$, kernel $(5-p)$-plane $K$) with $V=L\oplus K$; the pair is transverse, not nested.</p>
 <p><strong>Proof.</strong> The projection onto $L$ along $K$ has image $L$ and kernel $K$; conversely the pair determines the projection. The direct sum condition is the transversality.</p>
-<h3 id="the-fibre-bundle-over-math137">The Fibre Bundle over $\operatorname{Gr}(p,5)$</h3>
+<h3 id="the-fibre-bundle-over-math141">The Fibre Bundle over $\operatorname{Gr}(p,5)$</h3>
 <p><strong>Theorem.</strong> The rank-$p$ idempotents form a fibre bundle over the Grassmannian $\operatorname{Gr}(p,5)$ with fibre the affine space of complements to $L$, of dimension $p(5-p)$.</p>
 <p><strong>Proof.</strong> The map $\pi:P\mapsto\operatorname{im}P$ sends the idempotent to its image $p$-plane. The fibre over $L$ is the set of $(5-p)$-planes $K$ with $V=L\oplus K$, which is an affine space of dimension $p(5-p)$: the space of linear maps $\operatorname{Hom}(\mathbb{C}^5/L,L)\cong\operatorname{Hom}(\mathbb{C}^{5-p},\mathbb{C}^p)$, dimension $p(5-p)$. The base has dimension $p(5-p)$; the total is $2p(5-p)$.</p>
 <p><strong>Corollary.</strong> The fibre is contractible; the bundle is affine, not vector; the total space has the homotopy type of the Grassmannian.</p>
@@ -193,8 +193,8 @@ $$</p>
 <p><strong>Definition.</strong> A <strong>partial flag of type</strong> $(d_1,\dots,d_s)$ is a chain $V_{d_1}\subset\cdots\subset V_{d_s}$ with $\dim V_{d_i}=d_i$. The <strong>parabolic</strong> $P$ stabilizing a partial flag is the group of block upper triangular matrices; the partial flag variety is $GL_5/P$.</p>
 <p><strong>Theorem.</strong> The dimension of the partial flag variety of type $(d_1,\dots,d_s)$ is</p>
 <p>$$
-\sum_{i=0}^{s}d_i(d_{i+1}-d_i),
-\qquad d_0=0,\quad d_{s+1}=5 .
+\sum_{i=1}^{s}d_i(d_{i+1}-d_i),
+\qquad d_{s+1}=5 .
 $$</p>
 <p><strong>Proof.</strong> The dimension is the sum of the dimensions of the Grassmannians of the successive quotients: $d_i(d_{i+1}-d_i)$ for each step. The sum telescopes to $\dim GL_5-\dim P$.</p>
 <p><strong>Corollary.</strong> The full flag has type $(1,2,3,4)$, dimension $1\cdot1+2\cdot1+3\cdot1+4\cdot1=10$. The Grassmannian $\operatorname{Gr}(p,5)$ has type $(p)$, dimension $p(5-p)$.</p>
@@ -325,10 +325,10 @@ $$</p>
 <li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the flag varieties, the Grassmannians and the incidence relations.</li>
 <li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the geometry of the Grassmannians and the flag varieties.</li>
 <li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the homogeneous spaces and the frame bundles.</li>
-<li><a href="the-peirce-decomposition-of-m5c.html">The Peirce Decomposition</a>, for the four corners and the multiplication table.</li>
-<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the orbits and the flag variety.</li>
-<li><a href="the-partial-flags-of-m5c.html">The Partial Flags</a>, for the nested partial flags and their dimensions.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the gauge and the frame.</li>
+<li><a href="the-peirce-decomposition-of-m5c.html">The Peirce Decomposition of $M_5(\mathbb{C})$</a>, for the four corners and the multiplication table.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$</a>, for the orbits and the flag variety.</li>
+<li><a href="the-partial-flags-of-m5c.html">The Partial Flags of $M_5(\mathbb{C})$</a>, for the nested partial flags and their dimensions.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$</a>, for the gauge and the frame.</li>
 </ul>
       </div>
     </main>

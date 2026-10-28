@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Spectral Theory and the Spectral Projectors — Biquaternion Universe</title>
+  <title>Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="spectral-theory-and-the-spectral-projectors"><strong>Spectral Theory and the Spectral Projectors</strong></h1>
+        <h1 id="spectral-theory-and-the-spectral-projectors-of-math0"><strong>Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The spectral theorem for Hermitian matrices states that a Hermitian matrix $A=A^*$ has an orthonormal basis of eigenvectors and real eigenvalues:</p>
 <p>$$
@@ -145,7 +145,7 @@ $$</p>
 <p>$$
 \mu_A(t)=\chi_A(t)=\prod_{k=1}^{5}(t-\lambda_k),
 $$</p>
-<p>and the Jordan form is diagonal. For a general matrix, the minimal polynomial is $\prod_\lambda(t-\lambda)^{m_\lambda}$, where $m_\lambda$ is the size of the largest Jordan block of $\lambda$; the Jordan decomposition is treated in <em>The Element, the Coordinates and the Trace</em>.</p>
+<p>and the Jordan form is diagonal. For a general matrix, the minimal polynomial is $\prod_\lambda(t-\lambda)^{m_\lambda}$, where $m_\lambda$ is the size of the largest Jordan block of $\lambda$; the Jordan decomposition is treated in <em>The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$</em>.</p>
 <p><strong>Proof.</strong> The characteristic polynomial has the five distinct roots $\lambda_k$, so it is squarefree; a squarefree annihilating polynomial of degree $5$ is the minimal polynomial, and the matrix is diagonalizable. The general formula is the standard Jordan description.</p>
 <p><strong>Corollary.</strong> The Lagrange projectors are the spectral projectors of the algebra for any simple spectrum. They are not necessarily self-adjoint: <strong>all</strong> of them are self-adjoint iff $A$ is normal for the standard form. An individual Lagrange projector can be self-adjoint for a non-normal $A$.</p>
 <p><strong>Proof.</strong> The projectors are determined by the spectral decomposition. All of them are self-adjoint iff every eigenspace is orthogonal to the sum of the others, i.e., iff the eigenvectors are mutually orthogonal, which is normality. A single projector requires only its own eigenvector to be orthogonal to the other eigenspaces.</p>
@@ -161,7 +161,7 @@ $$</p>
 <p><strong>Proof.</strong> The conjugation by $g$ is the gauge; it preserves the idempotent identities but not, in general, the self-adjointness. The standard point $H$ is the diagonal representative.</p>
 <p><strong>Remark.</strong> <strong>The Lagrange projectors and the orthogonal spectral projectors are the same only for normal matrices.</strong> The root $H$ is $*$-unitary, so at the standard point they coincide with $E_{kk}$; a general matrix with simple spectrum has Lagrange projectors that are not orthogonal. The spectral theorem is a theorem about normal matrices; the Lagrange decomposition is a theorem about any simple spectrum. The two must not be conflated.</p>
 <h2 id="the-normal-case">The Normal Case</h2>
-<h3 id="math119-unitary-diagonalization">$*$-Unitary Diagonalization</h3>
+<h3 id="math121-unitary-diagonalization">$*$-Unitary Diagonalization</h3>
 <p><strong>Theorem.</strong> A matrix $A$ is normal, $A^*A=AA^*$, if and only if it is unitarily diagonalizable: $A=UDU^*$ with $U$ $*$-unitary and $D$ diagonal.</p>
 <p><strong>Proof.</strong> If $A=UDU^*$, then $A^*A=UD^*DU^*=UDD^*U^*=AA^*$. Conversely, if $A$ is normal, write $A=B+iC$ with $B=(A+A^*)/2$ and $C=(A-A^*)/(2i)$ Hermitian. The normality is equivalent to $[B,C]=0$; commuting Hermitian matrices are simultaneously diagonalizable by a $*$-unitary matrix (apply the Hermitian spectral theorem on each eigenspace of $B$, where $C$ acts Hermitian). Then $A$ is diagonal in the common eigenbasis.</p>
 <p><strong>Corollary.</strong> The eigenvalues of a normal matrix are complex; the eigenvectors are orthogonal; the spectral projectors are orthogonal.</p>
@@ -364,10 +364,10 @@ $$</p>
 <li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for the spectral theorem for Hermitian and normal matrices and the $*$-unitary diagonalization.</li>
 <li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 1995), for the resolvent, the Dunford projectors and the degeneration at a repeated eigenvalue.</li>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the algebraic spectral decomposition and the Dunford calculus.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the Hermitian form and the $*$-unitary group.</li>
-<li><a href="the-polar-decomposition-of-m5c.html">The Polar Decomposition</a>, for the absolute value and the polar decomposition.</li>
-<li><a href="the-exponential-and-the-lie-group-of-m5c.html">The Exponential and the Lie Group</a>, for the exponential and the functional calculus.</li>
-<li><a href="the-quintic-and-the-spectral-strata-of-m5c.html">The Quintic and the Spectral Strata</a>, for the characteristic polynomial and the spectral strata.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure of $M_5(\mathbb{C})$</a>, for the Hermitian form and the $*$-unitary group.</li>
+<li><a href="the-polar-decomposition-of-m5c.html">The Polar Decomposition of $M_5(\mathbb{C})$</a>, for the absolute value and the polar decomposition.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m5c.html">The Exponential and the Lie Group of $M_5(\mathbb{C})$</a>, for the exponential and the functional calculus.</li>
+<li><a href="the-quintic-and-the-spectral-strata-of-m5c.html">The Quintic and the Spectral Strata of $M_5(\mathbb{C})$</a>, for the characteristic polynomial and the spectral strata.</li>
 </ul>
       </div>
     </main>

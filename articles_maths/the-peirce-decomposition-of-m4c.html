@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Peirce Decomposition — Biquaternion Universe</title>
+  <title>The Peirce Decomposition of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,328 +68,73 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-peirce-decomposition"><strong>The Peirce Decomposition</strong></h1>
+        <h1 id="the-peirce-decomposition-of-math0"><strong>The Peirce Decomposition of $M_4(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The four idempotents of a root cut the algebra into sixteen corner lines, and one idempotent alone cuts it into four corner blocks of dimensions $1+3+3+9$.</strong> The first cut is the Peirce decomposition of the full spectral flag; the second is the coarse split by a rank-one idempotent. The article states both, proves the multiplication rule between the corners, identifies the corner isomorphisms, and reads the recursion that refines the coarse split into the fine one.</p>
-<p>The idempotents come from <em>Roots of Unity and the Lagrange Idempotents</em>; the vectors inside the corner lines and the gauge that acts on them are <em>The Frame, the Simple Nilpotents and the Gauge</em>. The rank-two split, where the coarse idempotent has rank two and the corners are $4+4+4+4$, is <em>The Rank-Two Split</em>. The general construction for $M_n(\mathbb{C})$ is <em>The Peirce Decomposition and the Corner Recursion</em>.</p>
-<p>The Peirce decomposition is a direct-sum decomposition of the algebra into spaces of linear maps. It is not a list of spinors, and an element of a corner is not a spinor: the corner $\mathcal{A}_{kl}$ is a line of rank-one maps $V_l\to V_k$. The carrier of the spin chain is the four-dimensional space $\mathbb{C}^4$, which is not a corner; it is <em>The Spin Chain and the Adjoint Decomposition</em>.</p>
-<h2 id="the-spectral-flag">The Spectral Flag</h2>
-<p>Let $H$ be a root of order four with simple spectrum, with projectors $P_k$ and spectral lines $V_k=\operatorname{im}P_k$, $k=1,2,3,4$. The lines are independent and sum to $\mathbb{C}^4$, and the partial sums</p>
+<p>Four orthogonal rank-one idempotents cut $M_4(\mathbb{C})$ into $16$ lines, one for each ordered pair. This article states the cut for an arbitrary complete family, proves that the lines are one-dimensional and sum directly, and gives the multiplication rule. It then specialises to the family of a root $H$ with $H^{4}=I$ and simple spectrum.</p>
+<p>The article is the family-level part of the trilogy. <em>The Peirce Basis of $M_4(\mathbb{C})$</em> chooses one element in each line and computes the gauge; <em>Spinors as Peirce Coordinates in $M_4(\mathbb{C})$</em> reads the columns of the array. The root and its projectors are <em>Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</em>; the flag and the adjoint orbits are <em>The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-family">The Family</h2>
+<p><strong>Definition.</strong> A family $P_1,\dots,P_4$ in $M_4(\mathbb{C})$ is <strong>complete, orthogonal and idempotent</strong> when the members are nonzero and</p>
 <p>$$
-F_k=V_1\oplus\cdots\oplus V_k,\qquad k=1,2,3,4,
+P_k^{2}=P_k,\qquad P_kP_l=0\ (k\ne l),\qquad \sum_{k=1}^{4}P_k=I .
 $$</p>
-<p>form the complete flag</p>
+<p>The order of the labels is part of the data; the unordered set is not the family.</p>
+<p><strong>Lemma.</strong> Each member of a complete orthogonal family of 4 nonzero idempotents in $M_4(\mathbb{C})$ has rank one.</p>
+<p><strong>Proof.</strong> Let $V_k=\operatorname{im}P_k$. If $\sum_kv_k=0$ with $v_k\in V_k$, applying $P_l$ gives $v_l=0$, so the sum $V_1+\cdots+V_4$ is direct and</p>
 <p>$$
-0\subset F_1\subset F_2\subset F_3\subset F_4=\mathbb{C}^4,\qquad \dim F_k=k.
+4=\operatorname{rk}I=\sum_{k=1}^{4}\operatorname{rk}P_k .
 $$</p>
-<p>The flag is <strong>spectral</strong>: it is produced by $H$, not fixed in advance. The standard flag of <em>The Matrix Algebra $M_4(\mathbb{C})$</em> is the case $V_k=\mathbb{C}e_k$, that is, $H=H_0=\operatorname{diag}(1,i,-1,-i)$. A general root gives a flag in general position with respect to the standard one. The construction depends only on the flag and the lines, so it is invariant under a change of basis that preserves $H$.</p>
-<h2 id="the-peirce-lines">The Peirce Lines</h2>
-<p><strong>Definition.</strong> Relative to the complete orthogonal family $P_1,\dots,P_4$, the <strong>Peirce corners</strong> are</p>
+<p>Every term is at least $1$ because $P_k\ne0$, so every term is $1$.</p>
+<p><strong>The family is not canonical.</strong> The algebra carries no preferred family. Different families give different cuts of the same algebra.</p>
+<h2 id="the-lines">The Lines</h2>
+<p><strong>Definition.</strong> For $k,l\in\{1,\dots,4\}$ the <strong>Peirce line</strong> is</p>
 <p>$$
-\mathcal{A}_{kl}=P_kM_4(\mathbb{C})P_l=\bigl\{P_kXP_l:X\in M_4(\mathbb{C})\bigr\},\qquad k,l=1,2,3,4.
+A_{kl}=P_kM_4(\mathbb{C})P_l=\{P_kXP_l:X\in M_4(\mathbb{C})\}.
 $$</p>
-<p><strong>Theorem.</strong> Each corner is a complex line, the sixteen corners are independent and sum to the algebra,</p>
+<p><strong>Theorem.</strong> Each $A_{kl}$ is a complex line, and</p>
 <p>$$
-M_4(\mathbb{C})=\bigoplus_{k,l=1}^{4}\mathcal{A}_{kl},\qquad \dim_\mathbb{C}\mathcal{A}_{kl}=1,
+M_4(\mathbb{C})=\bigoplus_{k,l=1}^{4}A_{kl}.
 $$</p>
-<p>and the product obeys</p>
+<p><strong>Proof.</strong> Choose $u_k$ spanning $V_k$ and a form $\ell_k$ with $\ell_k(u_l)=\delta_{kl}$. Then $P_k=u_k\ell_k$, so for every $X$,</p>
 <p>$$
-\mathcal{A}_{kl}\mathcal{A}_{mn}\subseteq\delta_{lm}\mathcal{A}_{kn}.
+P_kXP_l=u_k\,\ell_k(Xu_l)\,\ell_l\in\mathbb{C}\,u_k\ell_l,
 $$</p>
-<p><strong>Proof.</strong> In the standard frame $P_k=E_{kk}$, so</p>
+<p>and the line is attained because $P_k(u_k\ell_l)P_l=u_k\ell_l$. The sum covers the algebra by inserting $I=\sum_kP_k$ on both sides of $X$, and it is direct because multiplying $\sum X_{kl}=0$ by $P_k$ on the left and $P_l$ on the right leaves $X_{kl}=0$. </p>
+<h2 id="the-multiplication-rule">The Multiplication Rule</h2>
+<p><strong>Theorem.</strong> For all indices,</p>
 <p>$$
-\mathcal{A}_{kl}=E_{kk}M_4(\mathbb{C})E_{ll}=\mathbb{C}E_{kl}.
+A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}.
 $$</p>
-<p>The sixteen matrix units $E_{kl}$ are a basis of $M_4(\mathbb{C})$, so the sum is direct and each corner is a line. For a general root, conjugate by $S$ with $H=SH_0S^{-1}$: conjugation is an algebra automorphism and carries $P_k$ to $SE_{kk}S^{-1}$, hence carries the standard corners to the corners of the general frame and preserves dimensions and the direct sum.</p>
-<p>For the product, let $X=P_kXP_l\in\mathcal{A}_{kl}$ and $Y=P_mYP_n\in\mathcal{A}_{mn}$. Then</p>
+<p><strong>Proof.</strong> $(P_kXP_l)(P_pYP_q)=P_kX(P_lP_p)YP_q=\delta_{lp}P_kXYP_q$.</p>
+<p>The right index of the first factor must equal the left index of the second. The off-diagonal lines are square-zero and contain no idempotent; the idempotents of the cut are the $P_k$ on the diagonal.</p>
+<h2 id="the-root">The Root</h2>
+<p>Let $H\in M_4(\mathbb{C})$ satisfy $H^{4}=I$ and have simple spectrum. Its eigenvalues are the Four roots of unity, and with $i$ they are $1,i,\dots,i^{3}$. The Lagrange projectors are</p>
 <p>$$
-XY=P_kXP_lP_mYP_n=\delta_{lm}P_kXP_lYP_n\in\delta_{lm}\mathcal{A}_{kn},
+P_k=\frac{1}{4}\sum_{j=0}^{4-1}i^{-(k-1)j}H^{j},\qquad k=1,\dots,4,
 $$</p>
-<p>because $P_lP_m=\delta_{lm}P_l$.</p>
-<p><strong>Corollary.</strong> The diagonal corners $\mathcal{A}_{kk}$ are the lines $\mathbb{C}P_k$. The off-diagonal corners are square-zero:</p>
+<p>and $H=\sum_ki^{k-1}P_k$. In the eigenbasis,</p>
 <p>$$
-\mathcal{A}_{kl}^2=0\qquad(k\ne l).
+H=\operatorname{diag}(1,i,\dots,i^{3}),\qquad P_k=E_{kk},
 $$</p>
-<p><strong>Proof.</strong> Let $X=P_kXP_l$ and $Y=P_kYP_l$ lie in $\mathcal{A}_{kl}$. Then</p>
+<p>so the Peirce lines are the matrix units $A_{kl}=\mathbb{C}E_{kl}$. In any other basis, with $v_k$ the eigenvector of $i^{k-1}$ and $\ell_l$ the dual form,</p>
 <p>$$
-XY=P_kXP_lP_kYP_l=P_kX(\delta_{lk}P_l)YP_l,
+E_{kl}=v_k\ell_l,\qquad v_k=\frac{1}{\sqrt{4}}\bigl(1,i^{k-1},i^{2(k-1)},\dots,i^{(4-1)(k-1)}\bigr)^{T}.
 $$</p>
-<p>which is $0$ when $k\ne l$. The diagonal corner $\mathcal{A}_{kk}=P_kM_4P_k$ is spanned by $P_k$ because $P_k$ has rank one and $P_kXP_k$ is a scalar multiple of $P_k$.</p>
-<p><strong>The corners are maps.</strong> Intrinsically, $P_k$ is the projector onto $V_k$ along the sum of the other lines, so $P_kXP_l$ is the map $V_l\to V_k$ followed by the inclusion and preceded by the projection; the space of such maps is $\operatorname{Hom}(V_l,V_k)$, of dimension $1$. The decomposition is the decomposition of $\operatorname{End}(\mathbb{C}^4)$ over the direct sum $\mathbb{C}^4=\bigoplus_kV_k$:</p>
+<p>The matrix $F=[v_1|\cdots|v_4]$ is the Fourier matrix, unitary, and $F^{*}HF$ is diagonal.</p>
+<p><strong>The root fixes the lines and no element inside a mixed one.</strong> The diagonal line has the canonical vector $P_k$. The mixed line $\mathbb{C}v_k\ell_l$ depends on the normalisation of $v_k$ and $\ell_l$; that choice is the subject of the next article.</p>
+<h2 id="dimensions-and-the-case">Dimensions and the Case</h2>
+<p>The cut has $16$ lines. The family space, the set of ordered $4$-tuples of lines summing to $\mathbb{C}^{4}$, has dimension $4^{2}-4=12$; the gauge has dimension $4-1=3$; the frame space has dimension $4^{2}-1=15$. These numbers are computed in <em>The Peirce Basis of $M_4(\mathbb{C})$</em>.</p>
+<p>For $n=4$ the power $H^{2}$ is an involution: in the eigenbasis $H^{2}=\operatorname{diag}(1,-1,1,-1)$. It is $\operatorname{Ad}_S$ with $S=\operatorname{diag}(1,-1,1,-1)$, and the columns split $2+2$. The fixed algebra is $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, of complex dimension $8$, and the $-1$ eigenspace is the off-diagonal block, also of dimension $8$.</p>
+<p><strong>The coarse split.</strong> A single rank-one idempotent and its complement split the algebra into four corners of dimensions $1+3+3+9$, and the diagonal corners are $\mathbb{C}$ and $M_3(\mathbb{C})$. The fine cut refines it: the corner $PMQ$ is the sum of the lines $A_{1l}$ with $l\ne1$, and the other two corners are the same sums on the other side. The rank-$p$ version is <em>The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</em>.</p>
+<p><strong>Example.</strong> For $u=(1,\dots,1)$ and $P=uu^{\mathsf T}/n$, the corner $PMQ$ consists of matrices whose rows are equal and sum to zero, and $QMP$ consists of matrices whose columns are equal and sum to zero, with $PAP=(\sigma(A)/n)P$ and $\sigma(A)=\sum_{i,j}A_{ij}$.</p>
+<p><strong>The adjoint.</strong> The chain of the frame acts on the traceless part, and</p>
 <p>$$
-\operatorname{End}\Bigl(\bigoplus_kV_k\Bigr)=\bigoplus_{k,l}\operatorname{Hom}(V_l,V_k).
+\mathfrak{sl}_4(\mathbb{C})=3\oplus5\oplus7
 $$</p>
-<p>This is the intrinsic content of the matrix-unit formula, and it is the reason the corners are lines for every root.</p>
-<h3 id="the-peirce-table">The Peirce Table</h3>
-<p>The multiplication of the sixteen lines is the matrix-unit table. The entry in row $\mathcal{A}_{kl}$ and column $\mathcal{A}_{mn}$ is the corner containing the products:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$\cdot$</th>
-<th>$\mathcal{A}_{mn}$</th>
-<th>condition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathcal{A}_{kl}$</td>
-<td>$\mathcal{A}_{kn}$</td>
-<td>if $l=m$</td>
-</tr>
-<tr>
-<td>$\mathcal{A}_{kl}$</td>
-<td>$0$</td>
-<td>if $l\ne m$</td>
-</tr>
-</tbody>
-</table></div>
-<p>In the standard frame the surviving product is $E_{kl}E_{lm}=E_{km}$, and the vanishing is $E_{kl}E_{mn}=0$ for $l\ne m$. The table is the rule $E_{kl}E_{mn}=\delta_{lm}E_{kn}$ read on the corners. It is the table of a matrix algebra, not a table of a Clifford algebra or a spin representation.</p>
-<h3 id="the-peirce-coordinates">The Peirce Coordinates</h3>
-<p>Every $X\in M_4(\mathbb{C})$ has a unique decomposition</p>
-<p>$$
-X=\sum_{k,l=1}^{4}X_{kl},\qquad X_{kl}=P_kXP_l\in\mathcal{A}_{kl}.
-$$</p>
-<p>Choose a frame $E_{kl}=v_k\ell_l$ in each corner, with $(v_k)$ a basis and $(\ell_k)$ the dual basis. Then</p>
-<p>$$
-X=\sum_{k,l=1}^{4}a_{kl}E_{kl},\qquad a_{kl}=\ell_k(Xv_l),
-$$</p>
-<p>and the multiplication is</p>
-<p>$$
-(XY)_{kl}=\sum_{m=1}^{4}a_{km}b_{ml}.
-$$</p>
-<p><strong>Proof.</strong> Apply $X=\sum a_{kl}v_k\ell_l$ to $v_m$: $Xv_m=\sum_k a_{km}v_k$, so the coefficient of $v_k$ is $a_{km}=\ell_k(Xv_m)$. The product formula is the matrix product of the coordinate arrays.</p>
-<p>The four numbers $a_{k1}$ are the coordinates of the image of $v_1$, the four $a_{k2}$ the coordinates of the image of $v_2$, and so on: the coordinate array is the matrix of the linear map $X$ in the frame. The trace is $\sum_k a_{kk}$, the determinant is the determinant of the array, and the rank is its rank. In the standard frame the array is the matrix of $X$ in the standard basis; in the spectral frame it is the matrix of $X$ in a basis of eigenvectors of $H$.</p>
-<p><strong>The coordinates are not eigenvalues.</strong> The diagonal coordinate $a_{kk}$ is the compression of $X$ to the line $V_k$, not an eigenvalue of $X$. Only for $X=H$ is the coordinate array diagonal, with $a_{kk}=\zeta_k$. The eigenvalues of a general $X$ are the eigenvalues of the array, which need not be diagonal.</p>
-<h2 id="the-coarse-split">The Coarse Split</h2>
-<p><strong>Definition.</strong> Let $\Pi$ be an idempotent of rank one and $Q=I-\Pi$ its complement. The <strong>coarse Peirce corners</strong> are</p>
-<p>$$
-\mathcal{A}=\Pi M_4\Pi,\qquad
-\mathcal{B}=\Pi M_4Q,\qquad
-\mathcal{C}=QM_4\Pi,\qquad
-\mathcal{D}=QM_4Q.
-$$</p>
-<p><strong>Theorem.</strong> The algebra is the direct sum</p>
-<p>$$
-M_4(\mathbb{C})=\mathcal{A}\oplus\mathcal{B}\oplus\mathcal{C}\oplus\mathcal{D},
-$$</p>
-<p>with</p>
-<p>$$
-\dim_\mathbb{C}\mathcal{A}=1,\qquad
-\dim_\mathbb{C}\mathcal{B}=3,\qquad
-\dim_\mathbb{C}\mathcal{C}=3,\qquad
-\dim_\mathbb{C}\mathcal{D}=9.
-$$</p>
-<p>The diagonal corners are algebras with units $\Pi$ and $Q$,</p>
-<p>$$
-\mathcal{A}\cong\mathbb{C},\qquad \mathcal{D}\cong M_3(\mathbb{C}),
-$$</p>
-<p>and the off-diagonal corners are the rectangular matrix spaces</p>
-<p>$$
-\mathcal{B}\cong\mathbb{C}^{1\times3},\qquad \mathcal{C}\cong\mathbb{C}^{3\times1}.
-$$</p>
-<p><strong>Proof.</strong> Choose a basis whose first vector spans $\operatorname{im}\Pi$ and whose remaining three vectors span $\operatorname{im}Q$. In that basis</p>
-<p>$$
-\Pi=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
-Q=\begin{pmatrix}0&0\\0&I_3\end{pmatrix},
-$$</p>
-<p>and the four corners are the four blocks of a block matrix:</p>
-<p>$$
-X=\begin{pmatrix}a&r\\c&B\end{pmatrix},
-\qquad a\in\mathbb{C},\quad r\in\mathbb{C}^{1\times3},\quad c\in\mathbb{C}^{3\times1},\quad B\in M_3(\mathbb{C}).
-$$</p>
-<p>The dimensions are $1$, $3$, $3$ and $9$, and they sum to $16$. The diagonal blocks are closed under multiplication and contain the units $\Pi$ and $Q$; the off-diagonal blocks are the spaces of maps between the image of $\Pi$ and the image of $Q$. Deleting the zero rows and columns gives $\mathcal{A}\cong\mathbb{C}$ and $\mathcal{D}\cong M_3(\mathbb{C})$.</p>
-<p><strong>Example.</strong> In the standard frame with $\Pi=P_1=E_{11}$ and $Q=E_{22}+E_{33}+E_{44}$,</p>
-<p>$$
-\mathcal{A}=\mathbb{C}E_{11},\qquad
-\mathcal{B}=\operatorname{span}\{E_{12},E_{13},E_{14}\},
-$$</p>
-<p>$$
-\mathcal{C}=\operatorname{span}\{E_{21},E_{31},E_{41}\},\qquad
-\mathcal{D}=\operatorname{span}\{E_{ij}:2\le i,j\le4\}.
-$$</p>
-<p>A general element is</p>
-<p>$$
-X=\begin{pmatrix}
-a_{11}&a_{12}&a_{13}&a_{14}\\
-a_{21}&a_{22}&a_{23}&a_{24}\\
-a_{31}&a_{32}&a_{33}&a_{34}\\
-a_{41}&a_{42}&a_{43}&a_{44}
-\end{pmatrix}
-=\begin{pmatrix}
-a&r\\c&B
-\end{pmatrix},
-$$</p>
-<p>with $a=a_{11}$, $r=(a_{12},a_{13},a_{14})$, $c=(a_{21},a_{31},a_{41})^{\mathsf T}$ and $B$ the lower-right $3\times3$ block. This is the coarse split of the coordinate matrix.</p>
-<h3 id="the-coarse-multiplication">The Coarse Multiplication</h3>
-<p>In block form the product is</p>
-<p>$$
-\begin{pmatrix}a&r\\c&B\end{pmatrix}
-\begin{pmatrix}a'&r'\\c'&B'\end{pmatrix}
-=
-\begin{pmatrix}
-aa'+rc'&ar'+rB'\\
-ca'+Bc'&cr'+BB'
-\end{pmatrix}.
-$$</p>
-<p><strong>Proof.</strong> Multiply the blocks and use the dimensions: $rc'$ is a $1\times3$ row times a $3\times1$ column, a scalar; $ar'$ and $rB'$ are rows; $ca'$ and $Bc'$ are columns; $cr'$ is a $3\times1$ column times a $1\times3$ row, a $3\times3$ matrix.</p>
-<p>The table of corners is</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$\cdot$</th>
-<th>$\mathcal{A}$</th>
-<th>$\mathcal{B}$</th>
-<th>$\mathcal{C}$</th>
-<th>$\mathcal{D}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathcal{A}$</td>
-<td>$\mathcal{A}$</td>
-<td>$\mathcal{B}$</td>
-<td>$\mathcal{C}$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$\mathcal{B}$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$\mathcal{A}$</td>
-<td>$\mathcal{B}$</td>
-</tr>
-<tr>
-<td>$\mathcal{C}$</td>
-<td>$\mathcal{C}$</td>
-<td>$\mathcal{D}$</td>
-<td>$0$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$\mathcal{D}$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$\mathcal{C}$</td>
-<td>$\mathcal{D}$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The products $\mathcal{B}\mathcal{C}\subseteq\mathcal{A}$ and $\mathcal{C}\mathcal{B}\subseteq\mathcal{D}$ are the cross terms $rc'$ and $cr'$. They are the reason the coarse split is not a direct sum of algebras: the off-diagonal blocks multiply back into the diagonal. The diagonal part $\mathcal{A}\oplus\mathcal{D}$ is a subalgebra with unit $I$, isomorphic to $\mathbb{C}\oplus M_3(\mathbb{C})$, but it is not an ideal: multiplying a diagonal element by a general element produces an off-diagonal part. The algebra $M_4(\mathbb{C})$ is simple, so it has no proper two-sided ideal at all.</p>
-<p><strong>The corner units.</strong> The unit of $\mathcal{A}$ is $\Pi$, not $I$; the unit of $\mathcal{D}$ is $Q$. For an element $X$, the trace of its compression to $\mathcal{A}$ is $\operatorname{tr}(\Pi X\Pi)$, which differs from $\operatorname{tr}X$ in general; on $\mathcal{A}$ itself the two agree, because $\Pi$ has rank one. On $\mathcal{D}$ the compressed trace $\operatorname{tr}(QXQ)$ is the trace of the $3\times3$ block. Each of $\mathcal{A}$ and $\mathcal{D}$ is a non-unital subalgebra of $M_4$, with unit $\Pi$ or $Q$; their sum $\mathcal{A}\oplus\mathcal{D}$ is unital, with unit $\Pi+Q=I$.</p>
-<h2 id="refining-the-coarse-split">Refining the Coarse Split</h2>
-<p><strong>The coarse split by one rank-one idempotent leaves a $9$-dimensional corner $\mathcal{D}\cong M_3(\mathbb{C})$, and the same construction inside that corner refines it.</strong> The complement of $\Pi=P_1$ in $M_4$ is $Q=P_2+P_3+P_4$, and $\mathcal{D}=QM_4Q$ is a copy of $M_3$. Inside it, the idempotent $P_2$ is rank one, and its complement in $\mathcal{D}$ is $Q-P_2=P_3+P_4$. The corners of $\mathcal{D}$ relative to $P_2$ have dimensions</p>
-<p>$$
-1+2+2+4,
-$$</p>
-<p>because the complement $P_3+P_4$ has rank two. The $4$-dimensional corner is a copy of $M_2$, and the same construction with $P_3$ refines it to</p>
-<p>$$
-1+1+1+1.
-$$</p>
-<p>The recursion is therefore</p>
-<p>$$
-n\longmapsto 1+(n-1)+(n-1)+(n-1)^2,
-$$</p>
-<p>and for $n=4$ it reads</p>
-<p>$$
-4\longmapsto 1+3+3+9,\qquad
-3\longmapsto 1+2+2+4,\qquad
-2\longmapsto 1+1+1+1.
-$$</p>
-<p>After the three refinements the dimensions sum to</p>
-<p>$$
-1+3+3+9=16,
-$$</p>
-<p>and the sixteen lines are the corners $\mathcal{A}_{kl}$ of §<em>The Peirce Lines</em>. The coarse split is the first step of the recursion, not the final decomposition.</p>
-<p><strong>The refined table.</strong> The four coarse corners split into the fine lines as follows:</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Coarse corner</th>
-<th>Dimension</th>
-<th>Fine lines</th>
-<th>Dimension</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathcal{A}=\Pi M\Pi$</td>
-<td>$1$</td>
-<td>$\mathcal{A}_{11}$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$\mathcal{B}=\Pi MQ$</td>
-<td>$3$</td>
-<td>$\mathcal{A}_{12},\mathcal{A}_{13},\mathcal{A}_{14}$</td>
-<td>$1+1+1$</td>
-</tr>
-<tr>
-<td>$\mathcal{C}=QM\Pi$</td>
-<td>$3$</td>
-<td>$\mathcal{A}_{21},\mathcal{A}_{31},\mathcal{A}_{41}$</td>
-<td>$1+1+1$</td>
-</tr>
-<tr>
-<td>$\mathcal{D}=QMQ$</td>
-<td>$9$</td>
-<td>$\mathcal{A}_{kl}$, $k,l\in\{2,3,4\}$</td>
-<td>$9$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The table is the block structure of the coordinate matrix: the row $1$, the column $1$, and the lower-right $3\times3$ block.</p>
-<h2 id="the-comparison-with-the-biquaternion-case">The Comparison with the Biquaternion Case</h2>
-<p>At $n=2$ the algebra is $M_2(\mathbb{C})$, the biquaternion algebra as a complex algebra. Its root of $+1$ gives two idempotents $P_+,P_-$, and the full Peirce decomposition has four corners,</p>
-<p>$$
-M_2(\mathbb{C})=\mathcal{A}_{++}\oplus\mathcal{A}_{+-}\oplus\mathcal{A}_{-+}\oplus\mathcal{A}_{--},
-$$</p>
-<p>each a line. A rank-one idempotent $\Pi=P_+$ has complement $Q=P_-$, of rank one, so the coarse split is</p>
-<p>$$
-1+1+1+1,
-$$</p>
-<p>the same four lines. <strong>The coarse and the fine decompositions coincide at $n=2$</strong>, and this is a feature of the dimension two, not a general fact: the complement of a line in $\mathbb{C}^2$ is a line, so there is nothing left to refine.</p>
-<p>At $n=4$ the complement of a line is a three-dimensional space, and the coarse split is $1+3+3+9$. The fine split has sixteen lines. The four diagonal lines $\mathcal{A}_{kk}$ are the four idempotents; the other twelve lines are the off-diagonal corners. The biquaternion's "four lines" are all four Peirce lines of $M_2$; the four diagonal lines of $M_4$ are only a quarter of its sixteen Peirce lines.</p>
-<p><strong>The gauge is not a second idempotent.</strong> In $M_2$ the mixed corner is a line, and the choice of its generator is one complex parameter; that is the gauge $\lambda$ of the biquaternion frame. In $M_4$ the off-diagonal corners are also lines, but there are twelve of them, and the gauge that rescales the frame vectors has three parameters, one per simple nilpotent, not one per corner. The idempotents are fixed by the root; the gauge rescales the nilpotents and leaves the idempotents unchanged. The details are <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
-<h2 id="what-the-decomposition-is-not">What the Decomposition Is Not</h2>
-<p><strong>The Peirce decomposition is a direct-sum decomposition of the algebra, not a list of spinors.</strong> The summands are spaces of linear maps between the lines of a flag. An element of $\mathcal{A}_{kl}$ is a map $V_l\to V_k$ of rank at most one, not a spinor. Calling every matrix unit a spinor would make every element of the sixteen-dimensional algebra a spinor, which is false.</p>
-<p><strong>The carrier is not a corner.</strong> The carrier of the spin chain is $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$, of dimension four. The corner $\mathcal{A}_{kl}$ has dimension one for every $k,l$. The carrier is not isomorphic to a corner, and the spin-$\tfrac32$ representation is not a Peirce line. The relation between the carrier and the corners is the subject of <em>The Spin Chain and the Adjoint Decomposition</em> and <em>The Modules and the Minimal Left Ideals</em>.</p>
-<p><strong>The decomposition is not a decomposition into ideals.</strong> The algebra $M_4(\mathbb{C})$ is simple. The four coarse corners are subspaces; the diagonal pair is a subalgebra; none of them is a two-sided ideal. The Peirce decomposition is a decomposition of the vector space together with a graded multiplication, and the multiplication rule is the content.</p>
+<p>as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots,7$. The column $\mathbb{C}^{4}$ has spin $\tfrac32$. Both statements are <em>The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$</em>; they are recorded here because the number of lines and the number of components must agree with them.</p>
+<h2 id="what-the-cut-does-not-give">What the Cut Does Not Give</h2>
+<p>The cut gives the lines and their product. It gives no element in a mixed line, no basis, no gauge and no coordinate. The diagonal is canonical; the mixed lines are not. The selection of one element per line and its freedom are <em>The Peirce Basis of $M_4(\mathbb{C})$</em>. The coordinate columns and their reading as spinors are <em>Spinors as Peirce Coordinates in $M_4(\mathbb{C})$</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>A root of order four with simple spectrum gives four idempotents $P_k$ and a complete spectral flag. The Peirce corners $\mathcal{A}_{kl}=P_kM_4P_l$ are sixteen lines summing to the algebra, with the multiplication rule $\mathcal{A}_{kl}\mathcal{A}_{mn}\subseteq\delta_{lm}\mathcal{A}_{kn}$; in a frame they are the matrix units, and the Peirce coordinates are the matrix entries. A rank-one idempotent $\Pi$ cuts the algebra into four coarse corners of dimensions $1+3+3+9$, with diagonal corners $\mathbb{C}$ and $M_3(\mathbb{C})$ and off-diagonal corners $\mathbb{C}^{1\times3}$ and $\mathbb{C}^{3\times1}$; the off-diagonal blocks multiply back into the diagonal, so the split is not a direct sum of algebras. Refining the $M_3$ corner by $P_2$ and then the $M_2$ corner by $P_3$ gives the recursion $1+(n-1)+(n-1)+(n-1)^2$ and the sixteen fine lines. At $n=2$ the coarse and fine splits coincide; at $n=4$ they do not. The decomposition is a direct sum of spaces of maps, not of ideals and not of spinors.</p>
-<p>$$
-\boxed{\ M_4(\mathbb{C})=\bigoplus_{k,l=1}^{4}\mathcal{A}_{kl},\qquad \mathcal{A}_{kl}\mathcal{A}_{mn}\subseteq\delta_{lm}\mathcal{A}_{kn},\qquad \dim_\mathbb{C}\mathcal{A}_{kl}=1.\ }
-$$</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Split</th>
-<th>Corners</th>
-<th>Dimensions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fine, by $P_1,P_2,P_3,P_4$</td>
-<td>$\mathcal{A}_{kl}=P_kM_4P_l$</td>
-<td>$16\times1$</td>
-</tr>
-<tr>
-<td>Coarse, by $P_1$</td>
-<td>$\mathcal{A},\mathcal{B},\mathcal{C},\mathcal{D}$</td>
-<td>$1+3+3+9$</td>
-</tr>
-<tr>
-<td>Coarse, rank two</td>
-<td>$\Pi M\Pi,\Pi MQ,QM\Pi,QMQ$</td>
-<td>$4+4+4+4$</td>
-</tr>
-<tr>
-<td>Biquaternion, $n=2$</td>
-<td>four corners</td>
-<td>$1+1+1+1$</td>
-</tr>
-</tbody>
-</table></div>
+<p>A complete family of $4$ nonzero idempotents in $M_4(\mathbb{C})$ has rank one at each member and cuts the algebra into the $16$ lines $A_{kl}=P_kM_4P_l$. The rule is $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$, so the off-diagonal lines are square-zero and the idempotents lie on the diagonal. A root $H^{4}=I$ with simple spectrum supplies the family through its Lagrange projectors, and then $A_{kl}=\mathbb{C}v_k\ell_l$. The cut is canonical given the family; the family is not canonical; no element of a mixed line is selected.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -401,48 +146,38 @@ $$</p>
 <tbody>
 <tr>
 <td>$P_k$</td>
-<td>the Lagrange projector of $\zeta_k$, rank one</td>
+<td>A member of the complete family</td>
 </tr>
 <tr>
 <td>$V_k=\operatorname{im}P_k$</td>
-<td>the $k$-th spectral line</td>
+<td>Its line in $\mathbb{C}^{4}$</td>
 </tr>
 <tr>
-<td>$F_k=V_1\oplus\cdots\oplus V_k$</td>
-<td>the spectral flag</td>
+<td>$A_{kl}=P_kM_4P_l$</td>
+<td>The Peirce line</td>
 </tr>
 <tr>
-<td>$\mathcal{A}_{kl}=P_kM_4P_l$</td>
-<td>the fine Peirce corner, a line</td>
+<td>$v_k,\ell_k$</td>
+<td>An eigenvector of $H$ and its dual form</td>
 </tr>
 <tr>
-<td>$\Pi$, $Q=I-\Pi$</td>
-<td>a coarse rank-one idempotent and its complement</td>
+<td>$H$</td>
+<td>A root, $H^{4}=I$ with simple spectrum</td>
 </tr>
 <tr>
-<td>$\mathcal{A},\mathcal{B},\mathcal{C},\mathcal{D}$</td>
-<td>the coarse corners $\Pi M\Pi$, $\Pi MQ$, $QM\Pi$, $QMQ$</td>
-</tr>
-<tr>
-<td>$a_{kl}=\ell_k(Xv_l)$</td>
-<td>the Peirce coordinates of $X$</td>
-</tr>
-<tr>
-<td>$E_{kl}=v_k\ell_l$</td>
-<td>the matrix unit of the frame</td>
+<td>$i$</td>
+<td>The root of unity, $i$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Peirce decompositions, corner algebras and the multiplication table.</li>
-<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for block matrices, ranks and the spectral decomposition.</li>
-<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents</a>, for the idempotents that produce the flag.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the vectors inside the corner lines and the gauge.</li>
-<li><a href="the-rank-two-split-of-m4c.html">The Rank-Two Split</a>, for the coarse split by an idempotent of rank two.</li>
-<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m4c.html">The Spin Chain and the Adjoint Decomposition</a>, for the carrier, which is not a corner.</li>
-<li><a href="the-peirce-decomposition-and-the-corner-recursion-mnc.html">The Peirce Decomposition and the Corner Recursion</a>, for the general construction at order $n$.</li>
-<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the biquaternion case $n=2$, where the coarse and fine splits coincide.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and its rule.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the algebra and its matrix units.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</a>, for the projectors of the root.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</a>, for the flag and the orbits.</li>
+<li><a href="the-peirce-basis-of-m4c.html">The Peirce Basis of $M_4(\mathbb{C})$</a>, for the selection of the units and the gauge.</li>
+<li><a href="spinors-as-peirce-coordinates-in-m4c.html">Spinors as Peirce Coordinates in $M_4(\mathbb{C})$</a>, for the columns of the array.</li>
 </ul>
       </div>
     </main>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Polar Decomposition — Biquaternion Universe</title>
+  <title>The Polar Decomposition of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,12 +68,12 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-polar-decomposition"><strong>The Polar Decomposition</strong></h1>
+        <h1 id="the-polar-decomposition-of-math0"><strong>The Polar Decomposition of $M_4(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Every $A\in M_4(\mathbb{C})$ factors as $A=UP$ with $U\in U(4)$ $*$-unitary and $P$ positive semidefinite; the factor $P$ is unique, and $U$ is unique when $A$ is invertible.</strong> The decomposition is the matrix form of the Cartan decomposition $GL_4=U(4)\cdot\exp(\operatorname{Herm}_4)$, and the positive factor is $P=\sqrt{A^*A}$. The singular value decomposition refines it, and the singular case has a freedom on the kernel.</p>
 <p>The article proves the polar decomposition, identifies the singular value decomposition, describes the singular case and the manifold $GL_4/U(4)$, states the exponential form and the Cartan decomposition, and identifies the $*$-unitary factor as the closest $*$-unitary to $A$.</p>
-<p>The positive definite form is <em>The Involution and the Hermitian Structure</em>; the singular values and the norms are <em>The Forms, the Norms and the Singular Set</em>; the exponential form is <em>The Exponential Polar Decomposition</em>; the mass-block version is <em>The Mass Block and the Chiral Polar Decomposition</em>.</p>
-<h2 id="the-polar-decomposition_1">The Polar Decomposition</h2>
+<p>The positive definite form is <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>; the singular values and the norms are <em>The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</em>; the exponential form is <em>The Exponential Polar Decomposition of $M_4(\mathbb{C})$</em>; the mass-block version is <em>The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
 <p><strong>Theorem (polar decomposition).</strong> Every $A\in M_4(\mathbb{C})$ can be written as</p>
 <p>$$
 A=UP,
@@ -157,7 +157,7 @@ A=\begin{pmatrix}3&0&0&0\\0&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
 $$</p>
 <p>the positive factor is $P=A$, and the $*$-unitary factor can be any $*$-unitary whose first column is $e_1$; the freedom is $U(3)$ on the kernel. The polar decomposition is not unique, but the positive factor is.</p>
 <p><strong>The polar of a projection.</strong> A projection $P$ (self-adjoint idempotent) is positive semidefinite, so its polar decomposition is $P=P\cdot I$; the $*$-unitary factor is $I$ on the range and arbitrary on the kernel. A partial isometry $U$ has polar decomposition $U=U P$ with $P=U^*U$ the projection onto its initial space; the positive factor is that projection.</p>
-<h2 id="the-manifold-math129">The Manifold $GL_4/U(4)$</h2>
+<h2 id="the-manifold-math134">The Manifold $GL_4/U(4)$</h2>
 <p><strong>The diffeomorphism.</strong> The polar decomposition gives a diffeomorphism</p>
 <p>$$
 GL_4(\mathbb{C})\longrightarrow U(4)\times P_+,\qquad
@@ -197,7 +197,7 @@ $$</p>
 $$</p>
 <p>The group decomposition is $GL_4=U(4)\exp(\operatorname{Herm}_4)$.</p>
 <p><strong>The symmetric space.</strong> The quotient $GL_4/U(4)\cong P_+$ is a symmetric space of noncompact type; the exponential map is a diffeomorphism, the geodesics are the curves $t\mapsto e^{H_0+tH}$, and the curvature is negative. The positive definite cone is the space of metrics on $\mathbb{C}^4$; the $*$-unitary group is the group of isometries of the standard metric.</p>
-<h2 id="the-closest-math156-unitary">The Closest $*$-Unitary</h2>
+<h2 id="the-closest-math161-unitary">The Closest $*$-Unitary</h2>
 <p><strong>Theorem.</strong> The $*$-unitary factor $W$ of $A=WP$ is the closest $*$-unitary to $A$ in the Frobenius norm:</p>
 <p>$$
 \lVert A-W\rVert_F=\min_{Q\in U(4)}\lVert A-Q\rVert_F .
@@ -229,7 +229,7 @@ $$</p>
 A=UP=e^{iK}e^H,
 $$</p>
 <p>with $K,H$ Hermitian. The factor $e^{iK}$ is $*$-unitary and $e^H$ is positive definite. The decomposition is the polar decomposition, written in exponential form.</p>
-<p><strong>The other order.</strong> The <strong>exponential polar decomposition</strong> of <em>The Exponential Polar Decomposition</em> writes an invertible $A$ as</p>
+<p><strong>The other order.</strong> The <strong>exponential polar decomposition</strong> of <em>The Exponential Polar Decomposition of $M_4(\mathbb{C})$</em> writes an invertible $A$ as</p>
 <p>$$
 A=e^{H'}e^{iK'},
 $$</p>
@@ -238,7 +238,7 @@ $$</p>
 <p>$$
 \log A=\log P+iK,
 $$</p>
-<p>with $P=|A|$ and $U=e^{iK}$; it is a holomorphic function of $A$ on the domain avoiding the negative real axis of the spectrum. The exponential and the logarithm are <em>The Exponential and the Lie Group</em>.</p>
+<p>with $P=|A|$ and $U=e^{iK}$; it is a holomorphic function of $A$ on the domain avoiding the negative real axis of the spectrum. The exponential and the logarithm are <em>The Exponential and the Lie Group of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-biquaternion-case">The Biquaternion Case</h2>
 <p><strong>At $n=2$ the polar decomposition is the same theorem.</strong> For $A\in M_2(\mathbb{C})$,</p>
 <p>$$
@@ -337,10 +337,10 @@ $$</p>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the polar decomposition, the singular value decomposition and the closest $*$-unitary problem.</li>
 <li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the positive definite cone, the operator and nuclear norms, and the geometry of matrices.</li>
 <li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the Cartan decomposition and the symmetric space $GL_4/U(4)$.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure</a>, for the positive definite form and the $*$-unitary group.</li>
-<li><a href="the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set</a>, for the singular values and the norms.</li>
-<li><a href="the-exponential-polar-decomposition-of-m4c.html">The Exponential Polar Decomposition</a>, for the other ordering $e^He^{iK}$.</li>
-<li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html">The Mass Block and the Chiral Polar Decomposition</a>, for the chiral version.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the positive definite form and the $*$-unitary group.</li>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</a>, for the singular values and the norms.</li>
+<li><a href="the-exponential-polar-decomposition-of-m4c.html">The Exponential Polar Decomposition of $M_4(\mathbb{C})$</a>, for the other ordering $e^He^{iK}$.</li>
+<li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html">The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</a>, for the chiral version.</li>
 </ul>
       </div>
     </main>

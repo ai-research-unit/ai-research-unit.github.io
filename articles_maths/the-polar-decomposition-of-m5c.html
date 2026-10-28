@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Polar Decomposition — Biquaternion Universe</title>
+  <title>The Polar Decomposition of $M_5(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-polar-decomposition"><strong>The Polar Decomposition</strong></h1>
+        <h1 id="the-polar-decomposition-of-math0"><strong>The Polar Decomposition of $M_5(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Every matrix $A\in M_5(\mathbb{C})$ has a <strong>polar decomposition</strong></p>
 <p>$$
@@ -86,8 +86,8 @@ $$</p>
 U(5)\times\mathcal{P}\longrightarrow GL_5,\qquad (U,P)\longmapsto UP,
 $$</p>
 <p>is a diffeomorphism, where $\mathcal{P}$ is the open convex cone of positive definite Hermitian matrices. The quotient $GL_5/U(5)\cong\mathcal{P}$ is a symmetric space of noncompact type; the geodesics and the distance are given by the logarithm and the Frobenius norm. The $*$-unitary group is the compact direction, the positive cone the noncompact direction.</p>
-<p>The article proves the polar decomposition, the uniqueness, the SVD, the norm and determinant formulas, and the geometry of $GL_5$. It assumes the Hermitian spectral theorem, the positive semidefinite order, the square root and the functional calculus of <em>Spectral Theory and the Spectral Projectors</em>. It uses no topology beyond the homotopy type of $GL_5$.</p>
-<h2 id="the-polar-decomposition_1">The Polar Decomposition</h2>
+<p>The article proves the polar decomposition, the uniqueness, the SVD, the norm and determinant formulas, and the geometry of $GL_5$. It assumes the Hermitian spectral theorem, the positive semidefinite order, the square root and the functional calculus of <em>Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$</em>. It uses no topology beyond the homotopy type of $GL_5$.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
 <h3 id="the-positive-part">The Positive Part</h3>
 <p><strong>Definition.</strong> For $A\in M_5(\mathbb{C})$, the <strong>positive part</strong> is</p>
 <p>$$
@@ -104,7 +104,7 @@ $$</p>
 <p><strong>Proof.</strong> The uniqueness of the positive semidefinite square root is the spectral theorem; the eigenvalues of $|A|$ are the square roots of the eigenvalues of $A^*A$, which are nonnegative.</p>
 <p><strong>Corollary.</strong> $|A|$ is invertible iff $A$ is invertible; in that case $|A|^{-1}$ is positive definite.</p>
 <p><strong>Proof.</strong> $\ker|A|=\ker A$; invertibility is the triviality of the kernel; the inverse of a positive definite matrix is positive definite.</p>
-<h3 id="the-math47-unitary-part">The $*$-Unitary Part</h3>
+<h3 id="the-math49-unitary-part">The $*$-Unitary Part</h3>
 <p><strong>Theorem (polar decomposition).</strong> Every $A\in M_5(\mathbb{C})$ can be written as</p>
 <p>$$
 A=U|A|,
@@ -148,7 +148,7 @@ $$</p>
 <p><strong>Proof.</strong> The ratio of the largest to the smallest singular value is at least $1$; equality means all singular values are equal, so $|A|$ is scalar and $A$ is a scalar multiple of a $*$-unitary.</p>
 <p><strong>Corollary.</strong> The determinant of $A$ is nonzero iff all singular values are nonzero; the singular set $\det=0$ is the set of matrices with at least one zero singular value.</p>
 <p><strong>Proof.</strong> The product of the singular values is $|\det A|$; it vanishes iff one factor vanishes.</p>
-<h2 id="the-geometry-of-math177">The Geometry of $GL_5$</h2>
+<h2 id="the-geometry-of-math179">The Geometry of $GL_5$</h2>
 <h3 id="the-diffeomorphism">The Diffeomorphism</h3>
 <p><strong>Theorem.</strong> The polar map</p>
 <p>$$
@@ -172,16 +172,16 @@ $$</p>
 <p><strong>Corollary.</strong> The polar decomposition is the global Cartan decomposition: every $g\in GL_5$ is $g=UP$ with $U\in U(5)$ and $P$ positive definite, the exponential of a Hermitian matrix.</p>
 <p><strong>Proof.</strong> The polar decomposition is the global form of the Lie algebra decomposition $\mathfrak{gl}_5=\mathfrak{u}(5)\oplus i\mathfrak{u}(5)$; the exponential of $i\mathfrak{u}(5)$ is $\mathcal{P}$.</p>
 <h3 id="the-geodesics-and-the-distance">The Geodesics and the Distance</h3>
-<p><strong>Theorem.</strong> The geodesic between $P_0,P_1\in\mathcal{P}$ is</p>
+<p><strong>Theorem.</strong> The geodesic between $P,Q\in\mathcal{P}$ is</p>
 <p>$$
-P(t)=P_0^{1/2}\left(P_0^{-1/2}P_1P_0^{-1/2}\right)^tP_0^{1/2},\qquad 0\le t\le1,
+\gamma(t)=P^{1/2}\left(P^{-1/2}QP^{-1/2}\right)^tP^{1/2},\qquad 0\le t\le1,
 $$</p>
 <p>and the distance is</p>
 <p>$$
-d(P_0,P_1)=\left\|\log\left(P_0^{-1/2}P_1P_0^{-1/2}\right)\right\|_F .
+d(P,Q)=\left\|\log\left(P^{-1/2}QP^{-1/2}\right)\right\|_F .
 $$</p>
-<p><strong>Proof.</strong> The geodesics of the symmetric space $\mathcal{P}$ are the images of the one-parameter subgroups $t\mapsto P_0^{1/2}e^{tS}P_0^{1/2}$ with $S$ Hermitian; the endpoint condition at $t=1$ determines $S=\log(P_0^{-1/2}P_1P_0^{-1/2})$. The distance is the length of the geodesic, which is the Frobenius norm of $S$ because the metric is the trace metric.</p>
-<p><strong>Corollary.</strong> The distance is invariant under $g\mapsto gPg^*$ and under inversion; it is complete, and the exponential map at $I$ is a diffeomorphism.</p>
+<p><strong>Proof.</strong> The geodesics of the symmetric space $\mathcal{P}$ are the images of the one-parameter subgroups $t\mapsto P^{1/2}e^{tS}P^{1/2}$ with $S$ Hermitian; the endpoint condition at $t=1$ determines $S=\log(P^{-1/2}QP^{-1/2})$. The distance is the length of the geodesic, which is the Frobenius norm of $S$ because the metric is the trace metric.</p>
+<p><strong>Corollary.</strong> The distance is invariant under the diagonal action $(P,Q)\mapsto(gPg^*,gQg^*)$ and under inversion $(P,Q)\mapsto(P^{-1},Q^{-1})$; it is complete, and the exponential map at $I$ is a diffeomorphism.</p>
 <p><strong>Proof.</strong> The metric is invariant under the group action; the exponential of Hermitian matrices is a diffeomorphism onto $\mathcal{P}$; completeness is the Hopf–Rinow theorem for the complete metric.</p>
 <p><strong>Remark.</strong> <strong>The geometry of $GL_5$ is the product of the compact $*$-unitary group and the noncompact positive cone.</strong> The polar decomposition splits the group into a compact direction $U(5)$ and a noncompact direction $\mathcal{P}$; the positive cone is a symmetric space of nonpositive curvature, and the geodesics are the matrix analogues of the straight lines in the logarithm. The determinant is the volume of the image of the unit ball, and the singular values are the lengths of the semi-axes of the ellipsoid $A(S^5)$.</p>
 <h2 id="the-degenerate-case">The Degenerate Case</h2>
@@ -210,7 +210,7 @@ $$</p>
 <p>$$
 \boxed{\ A=U|A|=V\Sigma W^*;\quad \|A\|_{\mathrm{op}}=\sigma_1;\quad |\det A|=\prod_k\sigma_k;\quad GL_5\cong U(5)\times\mathcal{P}.\ }
 $$</p>
-<p>The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient $GL_5/U(5)\cong\mathcal{P}$ is a symmetric space of noncompact type, with geodesics $P_0^{1/2}(P_0^{-1/2}P_1P_0^{-1/2})^tP_0^{1/2}$ and distance $\|\log(P_0^{-1/2}P_1P_0^{-1/2})\|_F$. For singular $A$, the positive part and the singular values are unique, and the partial isometry is unique only on the range.</p>
+<p>The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient $GL_5/U(5)\cong\mathcal{P}$ is a symmetric space of noncompact type, with geodesics $P^{1/2}(P^{-1/2}QP^{-1/2})^tP^{1/2}$ and distance $\|\log(P^{-1/2}QP^{-1/2})\|_F$. For singular $A$, the positive part and the singular values are unique, and the partial isometry is unique only on the range.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -301,10 +301,10 @@ $$</p>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the polar decomposition, the singular value decomposition and the condition number.</li>
 <li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the positive definite cone, the trace metric and the matrix geometric means.</li>
 <li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the symmetric space $GL_n(\mathbb{C})/U(n)$, the Cartan decomposition and the geodesics.</li>
-<li><a href="spectral-theory-and-the-spectral-projectors-of-m5c.html">Spectral Theory and the Spectral Projectors</a>, for the Hermitian spectral theorem, the square root and the functional calculus.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the Hermitian form and the $*$-unitary group.</li>
-<li><a href="the-exponential-and-the-lie-group-of-m5c.html">The Exponential and the Lie Group</a>, for the exponential map and the Lie group.</li>
-<li><a href="the-exponential-polar-decomposition-of-m5c.html">The Exponential-Polar Decomposition</a>, for the combination of the exponential and the polar decomposition.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m5c.html">Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$</a>, for the Hermitian spectral theorem, the square root and the functional calculus.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure of $M_5(\mathbb{C})$</a>, for the Hermitian form and the $*$-unitary group.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m5c.html">The Exponential and the Lie Group of $M_5(\mathbb{C})$</a>, for the exponential map and the Lie group.</li>
+<li><a href="the-exponential-polar-decomposition-of-m5c.html">The Exponential-Polar Decomposition of $M_5(\mathbb{C})$</a>, for the combination of the exponential and the polar decomposition.</li>
 </ul>
       </div>
     </main>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Decomposition in $n$ Dimensions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-decomposition-in-math0-dimensions"><strong>The Peirce Decomposition in $n$ Dimensions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A complete family of $n$ orthogonal idempotents cuts the algebra $M_{n}(\mathbb{C})$ into $n^{2}$ lines, one for each ordered pair of members of the family. Each line is the set of elements that one idempotent selects on the left and another on the right, and the product of two lines is either zero or a third line. This is the <strong>Peirce decomposition</strong> of the algebra relative to the family.</p>
+<p>The article states the decomposition for arbitrary $n$, proves that the components are lines and gives the multiplication rule. It then treats the case in which the family comes from a root of $1$, that is, from an element $H$ with $H^{n}=I$ and simple spectrum. It assumes the matrix algebra and its idempotents, and nothing else.</p>
+<p>The article stops at the decomposition. It chooses no basis, defines no coordinates and calls no element a spinor. The basis is <em>The Peirce Basis in $n$ Dimensions</em>, and the coordinates and spinors are <em>Spinors as Peirce Coordinates in $n$ Dimensions</em>. </p>
+<h2 id="the-family">The Family</h2>
+<p><strong>Definition.</strong> A family $P_{1},\dots,P_{n}$ of elements of $M_{n}(\mathbb{C})$ is <strong>complete, orthogonal and idempotent</strong> when</p>
+<p>$$
+P_{k}^{2}=P_{k},\qquad P_{k}P_{l}=0\ (k\ne l),\qquad \sum_{k=1}^{n}P_{k}=I .
+$$</p>
+<p>The order of the members is not part of the definition; the subscripts are labels.</p>
+<p><strong>Lemma.</strong> In $M_{n}(\mathbb{C})$ each member of a complete orthogonal family of $n$ idempotents has rank one.</p>
+<p><strong>Proof.</strong> Let $V_{k}=\operatorname{im}P_{k}$. If $\sum_{k}v_{k}=0$ with $v_{k}\in V_{k}$, applying $P_{l}$ gives $v_{l}=0$, so the sum $V_{1}+\cdots+V_{n}$ is direct. Hence</p>
+<p>$$
+n=\operatorname{rk}I=\sum_{k=1}^{n}\operatorname{rk}P_{k},
+$$</p>
+<p>and every term is at least $1$ because $P_{k}\ne0$. So every term is $1$.</p>
+<p><strong>The family is not canonical.</strong> The algebra alone carries no preferred family; a family is data. Different families give different decompositions of the same algebra.</p>
+<h2 id="the-peirce-lines">The Peirce Lines</h2>
+<p><strong>Definition.</strong> For $k,l\in\{1,\dots,n\}$ the <strong>Peirce line</strong> $A_{kl}$ is</p>
+<p>$$
+A_{kl}=P_{k}M_{n}(\mathbb{C})P_{l}=\{P_{k}XP_{l}:X\in M_{n}(\mathbb{C})\}.
+$$</p>
+<p><strong>Theorem.</strong> Each $A_{kl}$ is a one-dimensional complex subspace, and</p>
+<p>$$
+M_{n}(\mathbb{C})=\bigoplus_{k,l=1}^{n}A_{kl}.
+$$</p>
+<p><strong>Proof.</strong> Choose $u_{k}$ spanning $V_{k}$ and a linear form $\ell_{k}$ with $\ell_{k}(u_{l})=\delta_{kl}$. The projection $P_{k}$ has image $V_{k}$ and kernel $\bigoplus_{l\ne k}V_{l}$, so $P_{k}=u_{k}\ell_{k}$. For any $X$,</p>
+<p>$$
+P_{k}XP_{l}=u_{k}\ell_{k}Xu_{l}\ell_{l}=\ell_{k}(Xu_{l})\,u_{k}\ell_{l},
+$$</p>
+<p>which lies in the complex line spanned by $u_{k}\ell_{l}$. The line is attained, because</p>
+<p>$$
+P_{k}(u_{k}\ell_{l})P_{l}=u_{k}\ell_{l}.
+$$</p>
+<p>So $A_{kl}=\mathbb{C}\,u_{k}\ell_{l}$.</p>
+<p>Every $X$ satisfies</p>
+<p>$$
+X=\Big(\sum_{k}P_{k}\Big)X\Big(\sum_{l}P_{l}\Big)=\sum_{k,l}P_{k}XP_{l},
+$$</p>
+<p>so the lines span. If $\sum_{k,l}X_{kl}=0$ with $X_{kl}\in A_{kl}$, then multiplying on the left by $P_{k}$ and on the right by $P_{l}$ gives $X_{kl}=0$. The sum is direct.</p>
+<p><strong>The diagonal lines are canonical.</strong> $A_{kk}=\mathbb{C}P_{k}$, spanned by the idempotent itself. The off-diagonal lines have no distinguished element: the theorem exhibits one, $u_{k}\ell_{l}$, but the choice of $u_{k}$ and of $\ell_{l}$ was a choice.</p>
+<h2 id="the-multiplication-rule">The Multiplication Rule</h2>
+<p><strong>Theorem.</strong> For all $k,l,p,q$,</p>
+<p>$$
+A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}.
+$$</p>
+<p><strong>Proof.</strong> For $X,Y\in M_{n}(\mathbb{C})$,</p>
+<p>$$
+(P_{k}XP_{l})(P_{p}YP_{q})=P_{k}X(P_{l}P_{p})YP_{q}=\delta_{lp}\,P_{k}XY P_{q},
+$$</p>
+<p>which lies in $A_{kq}$ when $l=p$ and is zero otherwise.</p>
+<p>In words: the second index of the first factor must equal the first index of the second, and the product then runs from the first index of the first factor to the second index of the second.</p>
+<p><strong>Corollary.</strong> An off-diagonal line is square-zero, $A_{kl}^{2}=0$ for $k\ne l$. No element of an off-diagonal line is idempotent. The idempotents of the decomposition lie on the diagonal, and on the diagonal the only idempotents are $0$ and $P_{k}$.</p>
+<h2 id="the-peirce-table">The Peirce Table</h2>
+<p>The $n^{2}$ lines are collected in the <strong>Peirce table</strong>, the $n\times n$ array whose entry in row $k$ and column $l$ is $A_{kl}$. The diagonal entries are the canonical lines $\mathbb{C}P_{k}$. The off-diagonal entries are the mixed lines. The table is the multiplication table of the algebra read line by line.</p>
+<p>The array is not symmetric: $A_{kl}$ and $A_{lk}$ are different lines, exchanged by the transpose and, when the family is Hermitian, by the star. The diagonal is fixed by both.</p>
+<h2 id="the-family-from-a-root-of-math72">The Family from a Root of $1$</h2>
+<p><strong>The root.</strong> Let $H\in M_{n}(\mathbb{C})$ satisfy $H^{n}=I$ and have $n$ distinct eigenvalues. Since $x^{n}-1$ has the distinct roots $\zeta^{0},\dots,\zeta^{n-1}$, with $\zeta=e^{2\pi i/n}$, the eigenvalues of $H$ are those roots, each once. Write</p>
+<p>$$
+P_{k}=\frac{1}{n}\sum_{j=0}^{n-1}\zeta^{-(k-1)j}H^{j},\qquad k=1,\dots,n .
+$$</p>
+<p><strong>Proposition.</strong> The $P_{k}$ are idempotent, orthogonal and complete, each of rank one, and</p>
+<p>$$
+H=\sum_{k=1}^{n}\zeta^{k-1}P_{k}.
+$$</p>
+<p><strong>Proof.</strong> On the eigenvalue $\zeta^{m}$ the polynomial $\frac1n\sum_{j}\zeta^{-(k-1)j}x^{j}$ takes the value $\delta_{m,k-1}$, so $P_{k}$ is the spectral projector of the eigenvalue $\zeta^{k-1}$. Distinct eigenvalues give orthogonal projectors, and their sum is the identity. The spectrum is simple, so each rank is one. The reconstruction of $H$ is the spectral theorem.</p>
+<p>The family is then the spectral family of $H$. In a basis $v_{1},\dots,v_{n}$ with $Hv_{k}=\zeta^{k-1}v_{k}$ and $\ell_{l}(v_{k})=\delta_{kl}$,</p>
+<p>$$
+P_{k}=v_{k}\ell_{k},\qquad A_{kl}=\mathbb{C}\,v_{k}\ell_{l}.
+$$</p>
+<p>So the Peirce line $A_{kl}$ is the space of maps that send the $l$-th eigenline into the $k$-th and vanish on the other eigenlines, and the decomposition is the algebra's copy of the spectral decomposition of $H$.</p>
+<p><strong>Without simple spectrum.</strong> If $H^{n}=I$ but an eigenvalue is repeated, the same formula gives a complete orthogonal family, but $\operatorname{rk}P_{k}$ is the multiplicity of $\zeta^{k-1}$. The decomposition is then coarse: a component $A_{kl}$ has dimension $\operatorname{rk}P_{k}\operatorname{rk}P_{l}$, and is a line only when both multiplicities are one. The family is maximal, and the decomposition fine, exactly when the spectrum is simple.</p>
+<p><strong>The case $n=2$.</strong> A root of $1$ is an element $H$ with $H^{2}=I$. If $H\ne\pm I$, then</p>
+<p>$$
+P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2},
+$$</p>
+<p>and the algebra splits into the four lines $A_{++},A_{+-},A_{-+},A_{--}$.</p>
+<p><strong>The case $n=3$.</strong> With $H$ the cyclic shift satisfying $Hv_{k}=\omega^{k-1}v_{k}$ and $\omega=e^{2\pi i/3}$, the eigenvectors are $v_{1}=(1,1,1)/\sqrt3$, $v_{2}=(1,\omega,\omega^{2})/\sqrt3$ and $v_{3}=(1,\omega^{2},\omega)/\sqrt3$, and $A_{kl}=\mathbb{C}\,v_{k}v_{l}^{*}$.</p>
+<h2 id="the-root-does-not-give-the-basis">The Root Does Not Give the Basis</h2>
+<p>The root fixes the family, and therefore the decomposition. It fixes no vector in an off-diagonal line. The diagonal lines have canonical vectors, the idempotents $P_{k}$. The mixed lines do not: the element $v_{k}\ell_{l}$ depends on the normalisation of $v_{k}$ and of $\ell_{l}$, and the normalisation is a choice.</p>
+<p><strong>The eigenlines are not the Peirce lines.</strong> The eigenlines of $H$ are lines in $\mathbb{C}^{n}$. The Peirce lines are lines in $M_{n}(\mathbb{C})$. The line $A_{kl}$ is the space of maps from the $l$-th eigenline to the $k$-th, so it is attached to a pair of eigenlines and is not one of them. The spectral decomposition of the element and the Peirce decomposition of the algebra are two different decompositions, related by $A_{kl}=\mathbb{C}\,v_{k}\ell_{l}$.</p>
+<p><strong>A root is not needed.</strong> Any $n$ lines $L_{1},\dots,L_{n}$ in direct sum, with $L_{1}\oplus\cdots\oplus L_{n}=\mathbb{C}^{n}$, give the idempotents $P_{k}$ of projection onto $L_{k}$ along the other lines, hence a complete family and a Peirce decomposition. The root is a convenient source of such a family, and it adds an ordering by the eigenvalues; it is not part of the Peirce structure.</p>
+<h2 id="what-the-decomposition-does-not-give">What the Decomposition Does Not Give</h2>
+<p>The decomposition gives the lines and their multiplication. It gives no element in an off-diagonal line, no multiplication table with numerical entries, no coordinates and no spinor. The diagonal is canonical; the mixed lines are not. The choice of one element per line, its freedom and its dimension count are <em>The Peirce Basis in $n$ Dimensions</em>. The coordinates of an element and the rows of the coordinate array are <em>Spinors as Peirce Coordinates in $n$ Dimensions</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A complete family of $n$ idempotents in $M_{n}(\mathbb{C})$ has rank one at each member, and it decomposes the algebra into the $n^{2}$ lines $A_{kl}=P_{k}M_{n}P_{l}$. The product rule is $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$, so the off-diagonal lines are square-zero and the idempotents lie on the diagonal. The decomposition is canonical given the family, and the family is not canonical. A root $H$ with $H^{n}=I$ and simple spectrum supplies a family through its Lagrange projectors, and then $A_{kl}=\mathbb{C}\,v_{k}\ell_{l}$; the root fixes the lines and no element inside the mixed ones.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_{k}$</td>
+<td>A member of the complete orthogonal family</td>
+</tr>
+<tr>
+<td>$V_{k}=\operatorname{im}P_{k}$</td>
+<td>The line of the $k$-th idempotent</td>
+</tr>
+<tr>
+<td>$A_{kl}=P_{k}M_{n}P_{l}$</td>
+<td>The Peirce line, left index first</td>
+</tr>
+<tr>
+<td>$u_{k}$, $\ell_{k}$</td>
+<td>A vector spanning $V_{k}$ and its dual form</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>A root of $1$, $H^{n}=I$</td>
+</tr>
+<tr>
+<td>$\zeta=e^{2\pi i/n}$</td>
+<td>The primitive $n$-th root of unity</td>
+</tr>
+<tr>
+<td>$v_{k}$</td>
+<td>An eigenvector of $H$ with eigenvalue $\zeta^{k-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and its multiplication rule.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for idempotents, ranks and spectral projectors.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-mnc.html">Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$</a>, for the projectors used in §<em>The Family from a Root of $1$</em>.</li>
+<li><a href="the-peirce-decomposition-and-the-corner-recursion-mnc.html">The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</a>, for the coarse splits and the corner recursion.</li>
+<li><a href="the-peirce-basis-in-n-dimensions.html">The Peirce Basis in $n$ Dimensions</a>, for the choice of one element per line.</li>
+<li><a href="spinors-as-peirce-coordinates-in-n-dimensions.html">Spinors as Peirce Coordinates in $n$ Dimensions</a>, for the rows of the coordinate array.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

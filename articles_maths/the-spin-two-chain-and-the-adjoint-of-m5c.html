@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Spin-Two Chain and the Adjoint $1+3+5+7+9$ — Biquaternion Universe</title>
+  <title>The Spin-Two Chain and the Adjoint $1+3+5+7+9$ of $M_5(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,9 +68,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-spin-two-chain-and-the-adjoint-math0"><strong>The Spin-Two Chain and the Adjoint $1+3+5+7+9$</strong></h1>
+        <h1 id="the-spin-two-chain-and-the-adjoint-math0-of-math1"><strong>The Spin-Two Chain and the Adjoint $1+3+5+7+9$ of $M_5(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The adjoint decomposition of <em>The Spin Chain and the Adjoint Decomposition</em> is</p>
+<p>The adjoint decomposition of <em>The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$</em> is</p>
 <p>$$
 \mathfrak{gl}_5=V_0\oplus V_1\oplus V_2\oplus V_3\oplus V_4,
 \qquad 1+3+5+7+9=25,
@@ -86,7 +86,7 @@ $$</p>
 $$</p>
 <p>with the conventions $c_0=c_5=0$ and the terms omitted when an index leaves $\{1,\dots,5\}$. The formula is the <strong>ladder</strong>: it moves the row index down with coefficient $c_i$ and the column index left with coefficient $c_{j-1}$, and the two moves are the two ways a weight can drop by one.</p>
 <p>The chain is the spin-two chain of the carrier, read on the adjoint. The carrier itself is $V_2=\mathbb{C}^5$ with the weights $2,1,0,-1,-2$; the adjoint is $V_2\otimes V_2=V_0\oplus V_1\oplus V_2\oplus V_3\oplus V_4$. The five summands are the five <strong>highest-weight sectors</strong>: the scalar, the vector, the spin two, the spin three and the spin four. The article computes each sector, its highest weight vector and its weight content, and compares the chain with the biquaternion case $n=2$.</p>
-<p>The article assumes the carrier, the matrices $J_3,J_+,J_-$ and the Clebsch–Gordan decomposition of <em>The Spin Chain and the Adjoint Decomposition</em>. The modules and the minimal left ideals are <em>The Modules and the Minimal Left Ideals</em>; the explicit matrices of the carrier are repeated here for the computation of the chain.</p>
+<p>The article assumes the carrier, the matrices $J_3,J_+,J_-$ and the Clebsch–Gordan decomposition of <em>The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$</em>. The modules and the minimal left ideals are <em>The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$</em>; the explicit matrices of the carrier are repeated here for the computation of the chain.</p>
 <h2 id="the-lowering-formula">The Lowering Formula</h2>
 <h3 id="the-action-on-the-matrix-units">The Action on the Matrix Units</h3>
 <p><strong>Theorem.</strong> For $1\le i,j\le5$,</p>
@@ -143,13 +143,13 @@ $$</p>
 <p>For $X_1=J_+$: $\operatorname{ad}_{J_+}J_+=[J_+,J_+]=0$.</p>
 <p>For $X_2$: using the raising formula,</p>
 <p>$$
-\operatorname{ad}_{J_+}E_{13}=c_0E_{03}-c_3E_{14}=-\sqrt6E_{14},
+\operatorname{ad}_{J_+}E_{13}=-c_3E_{14}=-\sqrt6E_{14},
 $$</p>
 <p>$$
 \operatorname{ad}_{J_+}E_{24}=c_1E_{14}-c_4E_{25}=2E_{14}-2E_{25},
 $$</p>
 <p>$$
-\operatorname{ad}_{J_+}E_{35}=c_2E_{25}-c_5E_{36}=\sqrt6E_{25}.
+\operatorname{ad}_{J_+}E_{35}=c_2E_{25}=\sqrt6E_{25}.
 $$</p>
 <p>Hence</p>
 <p>$$
@@ -157,13 +157,13 @@ $$</p>
 $$</p>
 <p>For $X_3$:</p>
 <p>$$
-\operatorname{ad}_{J_+}E_{14}=c_0E_{04}-c_4E_{15}=-2E_{15},\qquad
-\operatorname{ad}_{J_+}E_{25}=c_1E_{15}-c_5E_{26}=2E_{15},
+\operatorname{ad}_{J_+}E_{14}=-c_4E_{15}=-2E_{15},\qquad
+\operatorname{ad}_{J_+}E_{25}=c_1E_{15}=2E_{15},
 $$</p>
 <p>so $\operatorname{ad}_{J_+}X_3=0$.</p>
 <p>For $X_4=E_{15}$:</p>
 <p>$$
-\operatorname{ad}_{J_+}E_{15}=c_0E_{05}-c_5E_{16}=0.
+\operatorname{ad}_{J_+}E_{15}=0.
 $$</p>
 <p><strong>Remark.</strong> The vector $X_2$ is the unique highest weight vector of weight $2$ up to scale in the span of $E_{13},E_{24},E_{35}$; the coefficients solve the two equations $2b=\sqrt6a$ and $\sqrt6c=2b$. The vector $X_3$ is the unique one of weight $3$ in the span of $E_{14},E_{25}$, with equal coefficients. The vectors $X_0,X_1,X_4$ are the obvious highest weight vectors of the scalar, the raising operator and the top corner.</p>
 <h3 id="the-cyclic-modules">The Cyclic Modules</h3>
@@ -294,7 +294,7 @@ $$</p>
 m_j=5-|j|-(5-|j+1|)=1,\qquad j=0,1,2,3,4.
 $$</p>
 <p><strong>Proof.</strong> In a sum of highest-weight modules, the multiplicity of the weight $r$ is $\sum_{j\ge|r|}m_j$; subtracting consecutive weights gives $m_j$. The values are $5-4=1$, $4-3=1$, $3-2=1$, $2-1=1$, $1-0=1$.</p>
-<h3 id="the-chain-from-math180">The Chain from $E_{15}$</h3>
+<h3 id="the-chain-from-math184">The Chain from $E_{15}$</h3>
 <p>The top vector $E_{15}$ has weight $4$. The first lowering is</p>
 <p>$$
 E_{15}\longmapsto 2E_{25}-2E_{14},
@@ -306,7 +306,7 @@ $$</p>
 $$</p>
 <p>of weight $2$. The chain continues through weights $1,0,-1,-2,-3,-4$, with one vector at each weight in the module $V_4$; the nine vectors span the nine-dimensional summand. The lower weights are reached by the two moves of the formula, down a row and left a column; the chain is the orbit of $E_{15}$ under $\operatorname{ad}_{J_-}$.</p>
 <p><strong>Remark.</strong> The chain from $E_{15}$ is <strong>not</strong> the simple list $E_{15},E_{25},E_{35},E_{45},E_{55}$: the lowering also moves the column index, and the orbit at weight $0$ is not $E_{55}$ alone. The correct orbit is the full nine-dimensional module; the five-vector list is only the "row" part of the chain, and it omits the "column" part. The formula displays both moves, and the weight diagram displays the result.</p>
-<h2 id="the-comparison-with-math195">The Comparison with $n=2$</h2>
+<h2 id="the-comparison-with-math199">The Comparison with $n=2$</h2>
 <h3 id="the-biquaternion-chain">The Biquaternion Chain</h3>
 <p>For $n=2$ the generators are</p>
 <p>$$
@@ -428,10 +428,10 @@ $$</p>
 <li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the highest-weight classification, the Clebsch–Gordan decomposition and the weight diagrams of $\mathfrak{sl}_2$.</li>
 <li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the highest weight vectors, the cyclic modules and the character argument.</li>
 <li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for the compact real form and the $*$-unitary generators.</li>
-<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m5c.html">The Spin Chain and the Adjoint Decomposition</a>, for the carrier, the generators and the Clebsch–Gordan proof of the decomposition.</li>
-<li><a href="the-peirce-decomposition-of-m5c.html">The Peirce Decomposition</a>, for the matrix units and the Peirce lines that carry the weights.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the gauge that rescales the simple nilpotents and the ladder coefficients.</li>
-<li><a href="the-modules-and-the-minimal-left-ideals-of-m5c.html">The Modules and the Minimal Left Ideals</a>, for the carrier as a module and the distinction between the carrier and the Peirce lines.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m5c.html">The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$</a>, for the carrier, the generators and the Clebsch–Gordan proof of the decomposition.</li>
+<li><a href="the-peirce-decomposition-of-m5c.html">The Peirce Decomposition of $M_5(\mathbb{C})$</a>, for the matrix units and the Peirce lines that carry the weights.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$</a>, for the gauge that rescales the simple nilpotents and the ladder coefficients.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m5c.html">The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$</a>, for the carrier as a module and the distinction between the carrier and the Peirce lines.</li>
 </ul>
       </div>
     </main>

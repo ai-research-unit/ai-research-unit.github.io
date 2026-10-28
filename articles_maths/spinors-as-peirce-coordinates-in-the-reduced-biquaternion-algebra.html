@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinors-as-peirce-coordinates-in-the-reduced-biquaternion-algebra"><strong>Spinors as Peirce Coordinates in the Reduced Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>In the reduced biquaternion algebra the Peirce coordinates are the two idempotent coordinates $\breve Q_{+}$ and $\breve Q_{-}$. A column of the coordinate array has one nonzero entry, because the mixed Peirce lines vanish. A spinor is therefore a single complex scalar, and it carries no gauge, no chirality and no half-angle.</p>
+<p>This article states the coordinates, the columns and the degenerate spinor. It assumes <em>The Peirce Decomposition of the Reduced Biquaternion Algebra</em> and <em>The Peirce Basis of the Reduced Biquaternion Algebra</em>.</p>
+<h2 id="the-coordinates-and-the-columns">The Coordinates and the Columns</h2>
+<p>Every element is</p>
+<p>$$
+\breve Q=\breve Q_{+}\Pi_{+}+\breve Q_{-}\Pi_{-},\qquad \breve Q_{\pm}=u\pm v .
+$$</p>
+<p>The coordinate array is diagonal, and the two columns are</p>
+<p>$$
+\psi^{(+)}=(\breve Q_{+},0),\qquad \psi^{(-)}=(0,\breve Q_{-}).
+$$</p>
+<p>Each column has one nonzero entry. The vanishing of the other entry is not a choice: it is the vanishing of the mixed Peirce component $\mathbb{B}_{+-}=0$.</p>
+<h2 id="the-spinor">The Spinor</h2>
+<p><strong>Definition.</strong> A <strong>spinor</strong> is the tuple of the two coordinates of one column. In this algebra it is</p>
+<p>$$
+(\breve Q_{+},0)\quad\text{or}\quad(0,\breve Q_{-}),
+$$</p>
+<p>equivalently the single nonzero scalar $\breve Q_{+}$ or $\breve Q_{-}$.</p>
+<p><strong>There is no gauge.</strong> The basis $\{\Pi_{+},\Pi_{-}\}$ is canonical, so the coordinates are determined by the element and no rescaling is available. The overall factor of a column is not a gauge parameter here; it is the value of the scalar. The spinor is the coordinate itself, not a projective class.</p>
+<p><strong>The two columns are the two factors.</strong> The column of index $+$ is the coordinate on $\mathbb{C}\Pi_{+}$, and the column of index $-$ is the coordinate on $\mathbb{C}\Pi_{-}$. The pair $(\breve Q_{+},\breve Q_{-})$ is the element $\breve Q$; a column is one of its two coordinates.</p>
+<h2 id="no-chirality">No Chirality</h2>
+<p>A chiral split of a column requires two columns of the same row, one for each sign of a grading. Here each row has only one nonzero entry, so there is nothing to split. The two rows belong to the two factors of $\mathbb{B}_{\mathrm r}\cong\mathbb{C}\times\mathbb{C}$; they are not two chiralities of one spinor.</p>
+<p><strong>The element is not a two-component spinor.</strong> The pair $(\breve Q_{+},\breve Q_{-})$ has two components, but it is the element of the algebra, not a column. Calling it a spinor would identify the element with one of its columns, which the decomposition does not do.</p>
+<h2 id="no-half-angle">No Half-Angle</h2>
+<p>The family is a single unordered pair, with no continuous parameter: the only nontrivial idempotents are $\Pi_{+}$ and $\Pi_{-}$, and the only symmetry is $j\mapsto-j$. There is no path of families, no torus of gauges and no lift to a double cover. A half-angle has no place in this layer.</p>
+<h2 id="what-a-spinor-is-not">What a Spinor Is Not</h2>
+<p>A spinor is not an element of $\mathbb{B}_{\mathrm r}$; the element is the pair of the two coordinates. It is not a two-component object; it is a single scalar attached to one diagonal line. It is not a projective class, because there is no gauge. It is a coordinate in the canonical Peirce basis.</p>
+<h2 id="summary">Summary</h2>
+<p>The Peirce coordinates of the reduced biquaternion algebra are $\breve Q_{\pm}=u\pm v$, and the two columns are $(\breve Q_{+},0)$ and $(0,\breve Q_{-})$. A spinor is one of these columns, equivalently the single complex scalar $\breve Q_{+}$ or $\breve Q_{-}$. The basis is canonical, the gauge is trivial, there is no chiral split and no half-angle. The pair $(\breve Q_{+},\breve Q_{-})$ is the element, not a spinor.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\breve Q_{\pm}=u\pm v$</td>
+<td>The Peirce coordinates</td>
+</tr>
+<tr>
+<td>$\psi^{(\pm)}$</td>
+<td>The column of index $\pm$</td>
+</tr>
+<tr>
+<td>$\Pi_{\pm}$</td>
+<td>The idempotents, the basis units</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-of-the-reduced-biquaternion-algebra.html">The Peirce Decomposition of the Reduced Biquaternion Algebra</a>, for the lines and the root of $1$.</li>
+<li><a href="the-peirce-basis-of-the-reduced-biquaternion-algebra.html">The Peirce Basis of the Reduced Biquaternion Algebra</a>, for the canonical basis.</li>
+<li><a href="spinors-as-peirce-coordinates-in-n-dimensions.html">Spinors as Peirce Coordinates in $n$ Dimensions</a>, for the nondegenerate case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

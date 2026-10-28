@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinors as Peirce Coordinates in $n$ Dimensions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinors-as-peirce-coordinates-in-math0-dimensions"><strong>Spinors as Peirce Coordinates in $n$ Dimensions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A Peirce basis turns an element of $M_{n}(\mathbb{C})$ into an $n\times n$ array of coordinates. A column of that array is an $n$-tuple of scalars, and this tuple is what the corpus calls a <strong>spinor</strong> of the family in the basis. The definition is a definition of coordinates: the spinor is not an element of the algebra, not a line of the decomposition and not an invariant object. It depends on the family, on the basis, and on the gauge.</p>
+<p>The article defines the Peirce coordinates and the spinor, computes the action of the gauge on a spinor, gives the projective reading, the Hermitian norm and the condition under which a column splits into two chiralities, and states where a half-angle can enter. It assumes the two preceding articles, <em>The Peirce Decomposition in $n$ Dimensions</em> and <em>The Peirce Basis in $n$ Dimensions</em>.</p>
+<h2 id="the-coordinates">The Coordinates</h2>
+<p>Let $P_{1},\dots,P_{n}$ be a complete family, $A_{kl}$ its Peirce lines, and $E_{kl}$ a Peirce basis. Every element has a unique expansion</p>
+<p>$$
+X=\sum_{k,l=1}^{n}X_{kl}E_{kl},\qquad X_{kl}\in\mathbb{C}.
+$$</p>
+<p>The numbers $X_{kl}$ are the <strong>Peirce coordinates</strong> of $X$. The first index is the row and the second the column. The coordinate $X_{kl}$ lies on the line $A_{kl}$: it is the coefficient of the chosen element of that line.</p>
+<h2 id="the-column-and-the-spinor">The Column and the Spinor</h2>
+<p><strong>Definition.</strong> For fixed $l$, the <strong>column</strong> of $X$ is the $n$-tuple</p>
+<p>$$
+\psi^{(l)}=(X_{1l},\dots,X_{nl}).
+$$</p>
+<p>A <strong>spinor</strong> of the family, in the basis, is a column of the coordinate array, taken up to a common nonzero factor.</p>
+<p>The common factor is not a physical parameter. Multiplying the whole column by $\lambda$ multiplies each coordinate by $\lambda$, and this is the same kind of redundancy as the overall scale of a vector: the column describes the component of $X$ on the lines $A_{1l},\dots,A_{nl}$, and only the ratios of its entries are meaningful once the basis is fixed.</p>
+<p><strong>Why a column and not a row.</strong> Left multiplication by $A$ acts on $X$ by</p>
+<p>$$
+(AX)_{rl}=\sum_{s=1}^{n}A_{rs}X_{sl},
+$$</p>
+<p>so the column $(X_{1l},\dots,X_{nl})$ is multiplied by the matrix $A$. The column is the space on which the left action acts, that is, the coordinate form of the space $M_{n}P_{l}\cong\mathbb{C}^{n}$. Right multiplication acts on the rows instead. The corpus attaches the spinor to the left action, so its coordinate form is a column.</p>
+<p><strong>The spinor is not an element of the algebra.</strong> The element is the full array $X$, which is the sum of $n$ columns. A column alone is not closed under multiplication: the product of two elements sums over the inner index, so a column of $X$ and a row of $Y$ meet in a single coordinate. The spinor is one column of the description, not a subalgebra and not a subspace of $M_{n}(\mathbb{C})$.</p>
+<p><strong>The column is attached to the right index.</strong> The index $l$ names the right idempotent $P_{l}$, that is, the line on the right of every entry of the column. The entries $X_{1l},\dots,X_{nl}$ lie on the lines $A_{1l},\dots,A_{nl}$, one per left idempotent.</p>
+<h2 id="the-gauge-action">The Gauge Action</h2>
+<p><strong>Proposition.</strong> Under the gauge $E'_{kl}=t_{k}t_{l}^{-1}E_{kl}$, the coordinates transform by</p>
+<p>$$
+X'_{kl}=t_{k}^{-1}t_{l}X_{kl},
+$$</p>
+<p>so, after multiplying the column by the common factor $t_{l}^{-1}$, the entries transform by</p>
+<p>$$
+\psi_{k}\longmapsto t_{k}^{-1}\psi_{k}.
+$$</p>
+<p><strong>Proof.</strong> The coordinate law was proved in <em>The Peirce Basis in $n$ Dimensions</em>: $X'_{kl}=t_{k}^{-1}t_{l}X_{kl}$. Multiplying the column by $t_{l}$ removes the factor $t_{l}$ and leaves the factor $t_{k}^{-1}$ on the $k$-th entry.</p>
+<p><strong>The effective gauge on a spinor is $(n-1)$-dimensional.</strong> The scalars $t_{1},\dots,t_{n}$ act on the entries by independent rescalings, and a common rescaling of all entries is the overall factor of the column, which is not part of the spinor. The effective group is therefore $(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}$.</p>
+<h2 id="the-projective-reading">The Projective Reading</h2>
+<p>Because the overall factor is removed, a spinor is a point of the projective space $\mathbb{P}^{n-1}$:</p>
+<p>$$
+[\psi]=[\psi_{1}:\cdots:\psi_{n}].
+$$</p>
+<p>The gauge acts on this point by the diagonal torus $(\mathbb{C}^{\times})^{n-1}$, and the action is not trivial. A single spinor therefore carries very little gauge-invariant information.</p>
+<p><strong>The orbit is determined by the zero entries.</strong> On the open set where every entry is nonzero, the torus acts transitively: given $[\psi]$ and $[\varphi]$ with all entries nonzero, the scalars $t_{k}=\psi_{k}/\varphi_{k}$ send one to the other. So the gauge orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is the set of indices $l$ for which $\psi_{l}=0$. In particular, no ratio $\psi_{j}/\psi_{l}$ is gauge invariant: it is multiplied by $t_{j}/t_{l}$.</p>
+<p><strong>Invariants need a cycle.</strong> A product of coordinates around a closed cycle is gauge invariant:</p>
+<p>$$
+X_{k_{1}k_{2}}X_{k_{2}k_{3}}\cdots X_{k_{m}k_{1}}
+\longmapsto
+\Big(\prod_{r}t_{k_{r}}^{-1}t_{k_{r+1}}\Big)X_{k_{1}k_{2}}\cdots X_{k_{m}k_{1}}
+=X_{k_{1}k_{2}}\cdots X_{k_{m}k_{1}}.
+$$</p>
+<p>A single coordinate is not invariant, and a column alone has no invariant product of this kind unless it closes through a row of another element. The invariant content of the construction lies in the element $X$, not in one of its rows.</p>
+<h2 id="the-hermitian-gauge-and-the-norm">The Hermitian Gauge and the Norm</h2>
+<p>If the family is Hermitian and the basis is Hermitian, the gauge is $|t_{k}|=1$. In that case</p>
+<p>$$
+\sum_{l=1}^{n}\lvert\psi_{l}\rvert^{2}
+\longmapsto
+\sum_{l=1}^{n}\lvert t_{l}\rvert^{2}\lvert\psi_{l}\rvert^{2}
+=\sum_{l=1}^{n}\lvert\psi_{l}\rvert^{2},
+$$</p>
+<p>so the Hermitian norm of a spinor is gauge invariant. The gauge orbit of a spinor is then the set of spinors with the same moduli $\lvert\psi_{1}\rvert,\dots,\lvert\psi_{n}\rvert$, and a spinor is described by its point of the sphere modulo the torus of phases.</p>
+<p>No other quadratic invariant exists: a quadratic form in the entries is invariant under $(\mathbb{C}^{\times})^{n-1}$ only when it is a sum of terms $\lvert\psi_{l}\rvert^{2}$ with equal coefficients, that is, a multiple of the norm.</p>
+<h2 id="chirality">Chirality</h2>
+<p>A column of length $n$ has no canonical split into two blocks. A split requires an extra grading: an algebra automorphism $\Gamma$ with $\Gamma^{2}=1$ that commutes with every $P_{k}$.</p>
+<p><strong>Proposition.</strong> Let $\Gamma$ be an algebra automorphism with $\Gamma^{2}=1$ and $\Gamma P_{k}=P_{k}\Gamma$ for every $k$. Then $\Gamma$ acts on each line $A_{kl}$ by a sign $\varepsilon_{k}\varepsilon_{l}$, with $\varepsilon_{k}=\pm1$, and it splits each column into the entries with $\varepsilon_{k}=+1$ and those with $\varepsilon_{k}=-1$.</p>
+<p><strong>Proof.</strong> Since $\Gamma$ commutes with $P_{k}$, it preserves the line $A_{kl}$, so it acts on it by a scalar. On the diagonal line $A_{kk}=\mathbb{C}P_{k}$ the scalar is $\varepsilon_{k}$, because $\Gamma(P_{k})$ is an idempotent in the same line and is nonzero. On $A_{kl}$ the scalar is $\varepsilon_{k}\varepsilon_{l}^{-1}=\varepsilon_{k}\varepsilon_{l}$, by the product rule and $\varepsilon_{l}^{2}=1$. The column of index $l$ then splits according to the sign $\varepsilon_{k}$ of each row.</p>
+<p>So a chirality is a choice of signs $\varepsilon_{1},\dots,\varepsilon_{n}$, one per line, and the split of a column is the partition of its entries into the two signs. A balanced split, with $n/2$ entries of each sign, exists only for even $n$. It is not canonical: the sign function is extra data. In $M_{4}(\mathbb{C})$ and $M_{6}(\mathbb{C})$ the root supplies it, and the columns split $2+2$ and $3+3$. In $M_{3}(\mathbb{C})$ and $M_{5}(\mathbb{C})$ no balanced split exists, and the column is not chiral in the balanced sense.</p>
+<h2 id="the-spin-of-the-column">The Spin of the Column</h2>
+<p>The chain of the family acts on the column by left multiplication. Its generator is</p>
+<p>$$
+J_3=\sum_{k=1}^{n}\Bigl(\frac{n+1}{2}-k\Bigr)E_{kk},
+$$</p>
+<p>and on the column the entries have the $n$ weights $\frac{n-1}{2},\frac{n-3}{2},\dots,-\frac{n-1}{2}$. The column is the irreducible space of spin</p>
+<p>$$
+j=\frac{n-1}{2},
+$$</p>
+<p>and its dimension is $n=2j+1$. For $n=2$ this is the two-component spinor of spin $\tfrac12$. The definition is the highest weight of $J_3$ on the left space $M_{n}P_{l}$; no form and no angle are used.</p>
+<h2 id="the-half-angle">The Half-Angle</h2>
+<p>The Peirce spinor carries no half-angle. A column of coordinates is a tuple of scalars in the defining space of the family, and the gauge acts on it by the torus. A half-angle requires two extra choices: a one-parameter path of families generated by a group of rotations, and a lift of that path to a double cover of the group. Neither choice is part of the Peirce data.</p>
+<p>The polar-operator articles make both choices. They start from a parametrised root of $+1$, follow the eigenlines as the parameter turns, and lift the path to the spin group; the half-angle is the parameter of the lift. That is a statement about the path and the lift, not about the Peirce decomposition. At a fixed family there is no angle, and the spinor is a tuple of coordinates.</p>
+<p>If a path is chosen and lifted, the coordinates transform by the lift of the path, and the transformation is a choice. Nothing in the decomposition selects the lift.</p>
+<h2 id="what-a-spinor-is-not">What a Spinor Is Not</h2>
+<p>A spinor is not the whole element of $M_{n}(\mathbb{C})$, not a Peirce line, and not an invariant of the algebra. It is the coordinate column of the component of $X$ in the left space $M_{n}P_{l}$, taken up to the overall factor of the column. Changing the basis changes it by the gauge; changing the family changes the decomposition and the tuple. The invariant object is the element $X$; the spinor is one row of its description.</p>
+<h2 id="summary">Summary</h2>
+<p>The Peirce coordinates of $X$ are the numbers $X_{kl}$ in $X=\sum X_{kl}E_{kl}$, and a spinor is a column $(X_{1l},\dots,X_{nl})$ up to a common factor. The gauge sends $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$, so a spinor transforms by $\psi_{k}\mapsto t_{k}^{-1}\psi_{k}$ up to the overall factor, with effective group $(\mathbb{C}^{\times})^{n-1}$. Projectively, the orbit of a spinor with no zero entry is the whole open set, and the only invariant of a single spinor is its zero pattern; invariant products are cycles of coordinates. In the Hermitian gauge the norm is invariant. A chiral split of a column requires an extra sign function on the lines, balanced only for even $n$. The half-angle belongs to a lift of a path to a double cover of the rotation group, not to the Peirce decomposition.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X_{kl}$</td>
+<td>The Peirce coordinate of $X$ in position $(k,l)$</td>
+</tr>
+<tr>
+<td>$\psi^{(l)}$</td>
+<td>The column of index $l$, a spinor</td>
+</tr>
+<tr>
+<td>$t_{k}$</td>
+<td>A gauge parameter, $t_{k}\ne0$</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>A grading, an automorphism with $\Gamma^{2}=1$ commuting with the family</td>
+</tr>
+<tr>
+<td>$\varepsilon_{k}=\pm1$</td>
+<td>The sign of $\Gamma$ on the line $V_{k}$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>A root of $1$ of order two, when the family is so parametrised</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the lines and the family.</li>
+<li><a href="the-peirce-basis-in-n-dimensions.html">The Peirce Basis in $n$ Dimensions</a>, for the choice of the units and the gauge.</li>
+<li><a href="peirce-coordinates-and-companion-nilpotents.html">The Peirce Coordinates</a>, for the coordinates in the one-idempotent case.</li>
+<li><a href="the-two-chiralities-of-m4c.html">The Two-Chiralities of $M_4(\mathbb{C})$</a>, for the chiral split at $n=4$.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-mnc.html">The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$</a>, for the adjoint action on the frame, which is a different construction.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -70,376 +70,71 @@
       <div class="article-body">
         <h1 id="the-peirce-decomposition-of-math0"><strong>The Peirce Decomposition of $M_3(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A complete family of three orthogonal idempotents cuts the algebra $M_{3}(\mathbb{C})$ into nine lines, one for each ordered pair of members. Each line is the set of elements that the two idempotents select on the left and on the right, the product of two lines is either zero or a third line, and the whole multiplication of the algebra is the table of those lines. This is the <strong>Peirce decomposition</strong> of the algebra relative to the family.</p>
-<p>The family is the one supplied by a root $H$ with $H^{3}=I$ and simple spectrum: the three Lagrange projectors $P_{1},P_{2},P_{3}$ of <em>Roots of Unity and the Lagrange Idempotents</em>. The decomposition is therefore root-first, like the frame itself. It uses the product and the idempotents alone.</p>
-<p>The Peirce decomposition is a <strong>direct-sum decomposition of the algebra</strong>. Its summands are subspaces of $M_{3}(\mathbb{C})$; their elements are matrices. They are not a list of spinors, and no Peirce line is a spinor. The module that carries the spin chain is the minimal left ideal $M_{3}P_{k}$, a three-dimensional space, treated in <em>The Modules and the Minimal Left Ideals</em>; for $n=3$ that module carries spin one, and only the case $n=2$ is spinorial. The distinction is stated once here and used throughout the category.</p>
-<p>The article assumes the algebra and its matrix units of <em>The Matrix Algebra $M_{3}(\mathbb{C})$</em>, and the idempotents of <em>Roots of Unity and the Lagrange Idempotents</em>. The coarse split by a single idempotent is §<em>The Coarse Split by a Rank-One Idempotent</em>; the corner $QM_{3}Q\cong M_{2}(\mathbb{C})$ is <em>The $M_{2}$ Corner of $M_{3}(\mathbb{C})$</em>; the two-parameter gauge of the off-diagonal lines is <em>The Frame, the Simple Nilpotents and the Gauge</em> and <em>The Two-Parameter Gauge</em>.</p>
-<h2 id="the-peirce-lines">The Peirce Lines</h2>
-<p><strong>Definition.</strong> Let $P_{1},P_{2},P_{3}$ be a complete orthogonal family of idempotents of $M_{3}(\mathbb{C})$. For $k,l\in\{1,2,3\}$ the <strong>Peirce line</strong> $A_{kl}$ is</p>
+<p>Three orthogonal rank-one idempotents cut $M_3(\mathbb{C})$ into $9$ lines, one for each ordered pair. This article states the cut for an arbitrary complete family, proves that the lines are one-dimensional and sum directly, and gives the multiplication rule. It then specialises to the family of a root $H$ with $H^{3}=I$ and simple spectrum.</p>
+<p>The article is the family-level part of the trilogy. <em>The Peirce Basis of $M_3(\mathbb{C})$</em> chooses one element in each line and computes the gauge; <em>Spinors as Peirce Coordinates in $M_3(\mathbb{C})$</em> reads the columns of the array. The root and its projectors are <em>Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$</em>; the flag and the adjoint orbits are <em>The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$</em>.</p>
+<h2 id="the-family">The Family</h2>
+<p><strong>Definition.</strong> A family $P_1,\dots,P_3$ in $M_3(\mathbb{C})$ is <strong>complete, orthogonal and idempotent</strong> when the members are nonzero and</p>
 <p>$$
-A_{kl}=P_{k}M_{3}(\mathbb{C})P_{l}=\{P_{k}AP_{l}:A\in M_{3}(\mathbb{C})\}.
+P_k^{2}=P_k,\qquad P_kP_l=0\ (k\ne l),\qquad \sum_{k=1}^{3}P_k=I .
 $$</p>
-<p>The <strong>Peirce decomposition</strong> of the algebra relative to the family is the sum of the nine lines.</p>
-<p><strong>Proposition.</strong> The nine Peirce lines are one-dimensional complex subspaces, and</p>
+<p>The order of the labels is part of the data; the unordered set is not the family.</p>
+<p><strong>Lemma.</strong> Each member of a complete orthogonal family of 3 nonzero idempotents in $M_3(\mathbb{C})$ has rank one.</p>
+<p><strong>Proof.</strong> Let $V_k=\operatorname{im}P_k$. If $\sum_kv_k=0$ with $v_k\in V_k$, applying $P_l$ gives $v_l=0$, so the sum $V_1+\cdots+V_3$ is direct and</p>
 <p>$$
-M_{3}(\mathbb{C})=\bigoplus_{k,l=1}^{3}A_{kl}.
+3=\operatorname{rk}I=\sum_{k=1}^{3}\operatorname{rk}P_k .
 $$</p>
-<p><strong>Proof.</strong> Conjugate the family to the standard one. The three idempotents of a complete orthogonal family are of rank one and sum to $I$; choosing a basis $v_{1},v_{2},v_{3}$ with $P_{k}v_{l}=\delta_{kl}v_{l}$ identifies $P_{k}$ with $E_{kk}$, and then</p>
+<p>Every term is at least $1$ because $P_k\ne0$, so every term is $1$.</p>
+<p><strong>The family is not canonical.</strong> The algebra carries no preferred family. Different families give different cuts of the same algebra.</p>
+<h2 id="the-lines">The Lines</h2>
+<p><strong>Definition.</strong> For $k,l\in\{1,\dots,3\}$ the <strong>Peirce line</strong> is</p>
 <p>$$
-P_{k}AP_{l}=E_{kk}AE_{ll}=a_{kl}E_{kl},
+A_{kl}=P_kM_3(\mathbb{C})P_l=\{P_kXP_l:X\in M_3(\mathbb{C})\}.
 $$</p>
-<p>so $A_{kl}=\mathbb{C}E_{kl}$ and has dimension one. The conjugation by the change of basis carries the lines of the standard frame to the lines of the given frame and preserves dimensions.</p>
-<p>For the directness, write the identity $I=\sum_{k}P_{k}$ and expand</p>
+<p><strong>Theorem.</strong> Each $A_{kl}$ is a complex line, and</p>
 <p>$$
-A=\Bigl(\sum_{k}P_{k}\Bigr)A\Bigl(\sum_{l}P_{l}\Bigr)=\sum_{k,l}P_{k}AP_{l},
+M_3(\mathbb{C})=\bigoplus_{k,l=1}^{3}A_{kl}.
 $$</p>
-<p>so the lines span. If $\sum_{k,l}A_{kl}=0$ with $A_{kl}\in A_{kl}$, multiply on the left by $P_{r}$ and on the right by $P_{s}$: every term with $k\neq r$ or $l\neq s$ vanishes, and the surviving term is $A_{rs}=0$. So the sum is direct.</p>
-<p><strong>The two readings of a Peirce line.</strong> The line $A_{kl}$ is at once the set of elements with left idempotent $P_{k}$ and right idempotent $P_{l}$:</p>
+<p><strong>Proof.</strong> Choose $u_k$ spanning $V_k$ and a form $\ell_k$ with $\ell_k(u_l)=\delta_{kl}$. Then $P_k=u_k\ell_k$, so for every $X$,</p>
 <p>$$
-A\in A_{kl}\iff P_{k}A=A\text{ and }AP_{l}=A .
+P_kXP_l=u_k\,\ell_k(Xu_l)\,\ell_l\in\mathbb{C}\,u_k\ell_l,
 $$</p>
-<p>Indeed $P_{k}(P_{k}AP_{l})=P_{k}AP_{l}$ and $(P_{k}AP_{l})P_{l}=P_{k}AP_{l}$; conversely $P_{k}A=A$ and $AP_{l}=A$ give $A=P_{k}AP_{l}$. The line is the simultaneous eigenspace of the two multiplication operators $L_{P_{k}}$ and $R_{P_{l}}$ with eigenvalue $1$, and the kernel of the other four combinations.</p>
-<p><strong>The diagonal lines are the idempotents.</strong> $A_{kk}=P_{k}M_{3}P_{k}=\mathbb{C}P_{k}$, because $P_{k}$ has rank one: for $A\in M_{3}$, $P_{k}AP_{k}$ is an endomorphism with image inside the line $\operatorname{im}P_{k}$ and kernel containing $\ker P_{k}$, hence a scalar multiple of $P_{k}$. The scalar is $\operatorname{tr}(P_{k}AP_{k})=\operatorname{tr}(P_{k}A)$.</p>
-<p><strong>The diagonal corners are fields.</strong> Each $A_{kk}$ is a one-dimensional algebra with unit $P_{k}$, hence isomorphic to $\mathbb{C}$; the isomorphism is $P_{k}AP_{k}\mapsto\operatorname{tr}(P_{k}A)$. The three diagonal lines together form the commutative subalgebra</p>
-<p>$$
-D=A_{11}\oplus A_{22}\oplus A_{33}=\mathbb{C}P_{1}\oplus\mathbb{C}P_{2}\oplus\mathbb{C}P_{3}\cong\mathbb{C}^{3},
-$$</p>
-<p>which is the algebra of diagonal matrices in the eigenbasis. Its unit is $I$.</p>
-<p><strong>The standard frame.</strong> For the standard root $H_{0}=\operatorname{diag}(1,\omega,\omega^{2})$ the Peirce lines are the coordinate lines</p>
-<p>$$
-A_{kl}=\mathbb{C}E_{kl},
-$$</p>
-<p>and the Peirce decomposition is the decomposition of a matrix into its nine entries:</p>
-<p>$$
-A=\sum_{k,l=1}^{3}a_{kl}E_{kl}
-=\begin{pmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{pmatrix}.
-$$</p>
-<p>The numbers $a_{kl}$ are the <strong>Peirce coordinates</strong> of $A$ in the standard frame. In a general frame they are the coefficients in a normalized system of matrix units adapted to the $P_{k}$, as in §<em>The Peirce Coordinates</em> below.</p>
+<p>and the line is attained because $P_k(u_k\ell_l)P_l=u_k\ell_l$. The sum covers the algebra by inserting $I=\sum_kP_k$ on both sides of $X$, and it is direct because multiplying $\sum X_{kl}=0$ by $P_k$ on the left and $P_l$ on the right leaves $X_{kl}=0$. </p>
 <h2 id="the-multiplication-rule">The Multiplication Rule</h2>
-<p><strong>Theorem (the Peirce multiplication).</strong> For all $k,l,m,n\in\{1,2,3\}$,</p>
+<p><strong>Theorem.</strong> For all indices,</p>
 <p>$$
-\boxed{\;A_{kl}A_{mn}\subseteq\delta_{lm}A_{kn}.\;}
+A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}.
 $$</p>
-<p><strong>Proof.</strong> An element of $A_{kl}$ is $P_{k}AP_{l}$ and an element of $A_{mn}$ is $P_{m}BP_{n}$. Their product is</p>
+<p><strong>Proof.</strong> $(P_kXP_l)(P_pYP_q)=P_kX(P_lP_p)YP_q=\delta_{lp}P_kXYP_q$.</p>
+<p>The right index of the first factor must equal the left index of the second. The off-diagonal lines are square-zero and contain no idempotent; the idempotents of the cut are the $P_k$ on the diagonal.</p>
+<h2 id="the-root">The Root</h2>
+<p>Let $H\in M_3(\mathbb{C})$ satisfy $H^{3}=I$ and have simple spectrum. Its eigenvalues are the Three roots of unity, and with $\omega=e^{2\pi i/3}$ they are $1,\omega,\dots,\omega^{2}$. The Lagrange projectors are</p>
 <p>$$
-P_{k}AP_{l}P_{m}BP_{n}=P_{k}A\,\delta_{lm}P_{l}\,BP_{n}=\delta_{lm}P_{k}(AP_{l}B)P_{n}\in\delta_{lm}A_{kn},
+P_k=\frac{1}{3}\sum_{j=0}^{3-1}\omega^{-(k-1)j}H^{j},\qquad k=1,\dots,3,
 $$</p>
-<p>because $P_{l}P_{m}=\delta_{lm}P_{l}$ and $P_{k}(AP_{l}B)P_{n}$ is of the required form.</p>
-<p><strong>The rule read three ways.</strong></p>
-<ul>
-<li><strong>Off-diagonal lines are square-zero.</strong> For $k\neq l$, $A_{kl}^{2}\subseteq A_{kl}A_{kl}\subseteq\delta_{lk}A_{kk}=0$. Every element of an off-diagonal line is nilpotent of index two, and the line is a square-zero subalgebra without a unit. It is a subspace of the algebra, not an algebra with a multiplication worth the name.</li>
-<li><strong>The diagonal lines multiply by scalars.</strong> $A_{kk}A_{kk}\subseteq A_{kk}$, and the product of two elements of the line is the product of their scalars, because $P_{k}^{2}=P_{k}$.</li>
-<li><strong>The off-diagonal lines are bimodules.</strong> $A_{kl}A_{ll}\subseteq A_{kl}$ and $A_{kk}A_{kl}\subseteq A_{kl}$; the line $A_{kl}$ is a left module over the field $A_{kk}$ and a right module over the field $A_{ll}$, and the two actions agree with the scalars of $\mathbb{C}$ because both fields are copies of $\mathbb{C}$.</li>
-</ul>
-<p><strong>The pairing of opposite lines.</strong> For $k\neq l$ the product map</p>
+<p>and $H=\sum_k\omega^{k-1}P_k$. In the eigenbasis,</p>
 <p>$$
-A_{kl}\times A_{lk}\longrightarrow A_{kk},\qquad (x,y)\longmapsto xy,
+H=\operatorname{diag}(1,\omega,\dots,\omega^{2}),\qquad P_k=E_{kk},
 $$</p>
-<p>is nonzero and therefore, the lines being one-dimensional, a perfect pairing: for every nonzero $x\in A_{kl}$ there is $y\in A_{lk}$ with $xy=P_{k}$. In the standard frame $x=\alpha E_{kl}$ and $y=\beta E_{lk}$ give $xy=\alpha\beta E_{kk}=\alpha\beta P_{k}$, which is nonzero as soon as $\alpha\beta\neq0$. The same computation gives $yx=\alpha\beta P_{l}$, so the two products are the two diagonal idempotents, each with the same scalar.</p>
-<p><strong>Corollary (the multiplication is the matrix-unit rule).</strong> After the choice of a nonzero $E_{kl}\in A_{kl}$ for each pair, normalized by $E_{kl}E_{lk}=P_{k}$, the nine elements satisfy</p>
+<p>so the Peirce lines are the matrix units $A_{kl}=\mathbb{C}E_{kl}$. In any other basis, with $v_k$ the eigenvector of $\omega^{k-1}$ and $\ell_l$ the dual form,</p>
 <p>$$
-E_{ij}E_{kl}=\delta_{jk}E_{il},\qquad E_{kk}=P_{k},\qquad \sum_{k}E_{kk}=I,
+E_{kl}=v_k\ell_l,\qquad v_k=\frac{1}{\sqrt{3}}\bigl(1,\omega^{k-1},\omega^{2(k-1)},\dots,\omega^{(3-1)(k-1)}\bigr)^{T}.
 $$</p>
-<p>which is the table of the matrix units of <em>Matrix Algebras</em>. The normalization is possible by the perfect pairing, and it is unique up to the gauge of <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
-<h2 id="the-peirce-table">The Peirce Table</h2>
-<p><strong>The table of the nine lines.</strong> The spaces, their bases in the standard frame, their left and right idempotents, and their dimensions are collected below.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Space</th>
-<th>Standard basis</th>
-<th>Left idempotent</th>
-<th>Right idempotent</th>
-<th>$\dim_{\mathbb{C}}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$A_{11}$</td>
-<td>$E_{11}$</td>
-<td>$P_{1}$</td>
-<td>$P_{1}$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$A_{12}$</td>
-<td>$E_{12}$</td>
-<td>$P_{1}$</td>
-<td>$P_{2}$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$A_{13}$</td>
-<td>$E_{13}$</td>
-<td>$P_{1}$</td>
-<td>$P_{3}$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$A_{21}$</td>
-<td>$E_{21}$</td>
-<td>$P_{2}$</td>
-<td>$P_{1}$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$A_{22}$</td>
-<td>$E_{22}$</td>
-<td>$P_{2}$</td>
-<td>$P_{2}$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$A_{23}$</td>
-<td>$E_{23}$</td>
-<td>$P_{2}$</td>
-<td>$P_{3}$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$A_{31}$</td>
-<td>$E_{31}$</td>
-<td>$P_{3}$</td>
-<td>$P_{1}$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$A_{32}$</td>
-<td>$E_{32}$</td>
-<td>$P_{3}$</td>
-<td>$P_{2}$</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>$A_{33}$</td>
-<td>$E_{33}$</td>
-<td>$P_{3}$</td>
-<td>$P_{3}$</td>
-<td>$1$</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>The multiplication table.</strong> The entry in row $A_{kl}$ and column $A_{mn}$ is the space containing the products; it is $A_{kn}$ when $l=m$ and $0$ otherwise.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$\cdot$</th>
-<th>$A_{m1}$</th>
-<th>$A_{m2}$</th>
-<th>$A_{m3}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$A_{1l}$</td>
-<td>$\delta_{lm}A_{11}$</td>
-<td>$\delta_{lm}A_{12}$</td>
-<td>$\delta_{lm}A_{13}$</td>
-</tr>
-<tr>
-<td>$A_{2l}$</td>
-<td>$\delta_{lm}A_{21}$</td>
-<td>$\delta_{lm}A_{22}$</td>
-<td>$\delta_{lm}A_{23}$</td>
-</tr>
-<tr>
-<td>$A_{3l}$</td>
-<td>$\delta_{lm}A_{31}$</td>
-<td>$\delta_{lm}A_{32}$</td>
-<td>$\delta_{lm}A_{33}$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The table is the matrix-unit table read in blocks: a product survives exactly when the right index of the first factor equals the left index of the second, and it lands in the line carrying the two outer indices. The nine entries that survive are the nine lines; the other seventy-two products vanish.</p>
-<p><strong>The grading by the index difference.</strong> The line $A_{kl}$ has degree $k-l$ in the $\mathbb{Z}/3$ grading of <em>Roots of Unity and the Lagrange Idempotents</em>. The three diagonal lines have degree $0$, the three lines $A_{21},A_{32},A_{13}$ have degree $1$, and the three lines $A_{12},A_{23},A_{31}$ have degree $2$. The multiplication rule refines the graded rule $M^{(r)}M^{(s)}\subseteq M^{(r+s)}$: it keeps the individual lines, not only their degree classes.</p>
-<h2 id="the-peirce-coordinates">The Peirce Coordinates</h2>
-<p><strong>A normalized frame gives coordinates.</strong> Choose $E_{kl}\in A_{kl}$ with $E_{kl}E_{lk}=P_{k}$ and $E_{kl}E_{lm}=E_{km}$ for all indices; such a system exists by §<em>The Multiplication Rule</em>, and it is the matrix-unit system of the frame. Every element is then</p>
+<p>The matrix $F=[v_1|\cdots|v_3]$ is the Fourier matrix, unitary, and $F^{*}HF$ is diagonal.</p>
+<p><strong>The root fixes the lines and no element inside a mixed one.</strong> The diagonal line has the canonical vector $P_k$. The mixed line $\mathbb{C}v_k\ell_l$ depends on the normalisation of $v_k$ and $\ell_l$; that choice is the subject of the next article.</p>
+<h2 id="dimensions-and-the-case">Dimensions and the Case</h2>
+<p>The cut has $9$ lines. The family space, the set of ordered $3$-tuples of lines summing to $\mathbb{C}^{3}$, has dimension $3^{2}-3=6$; the gauge has dimension $3-1=2$; the frame space has dimension $3^{2}-1=8$. These numbers are computed in <em>The Peirce Basis of $M_3(\mathbb{C})$</em>.</p>
+<p>For $n=3$ the order of $H$ is $3$, so no power of $H$ is an involution. A grading that commutes with the family is $\operatorname{Ad}_S$ with $S=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3)$ and $\sigma_k=\pm1$; its sign pattern has $p$ plus signs and $3-p$ minus signs. The balanced split does not exist. The possible splits are $1+2$, and each depends on the choice of $S$. The decomposition itself supplies no chirality.</p>
+<p><strong>The coarse split.</strong> A single rank-one idempotent and its complement split the algebra into four corners of dimensions $1+2+2+4$, and the diagonal corners are $\mathbb{C}$ and $M_2(\mathbb{C})$. The fine cut refines it: the corner $PMQ$ is the sum of the lines $A_{1l}$ with $l\ne1$, and the other two corners are the same sums on the other side. The rank-$p$ version is <em>The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</em>.</p>
+<p><strong>Example.</strong> For $u=(1,\dots,1)$ and $P=uu^{\mathsf T}/n$, the corner $PMQ$ consists of matrices whose rows are equal and sum to zero, and $QMP$ consists of matrices whose columns are equal and sum to zero, with $PAP=(\sigma(A)/n)P$ and $\sigma(A)=\sum_{i,j}A_{ij}$.</p>
+<p><strong>The adjoint.</strong> The chain of the frame acts on the traceless part, and</p>
 <p>$$
-A=\sum_{k,l=1}^{3}\alpha_{kl}E_{kl},
-\qquad \alpha_{kl}\in\mathbb{C},
+\mathfrak{sl}_3(\mathbb{C})=3\oplus5
 $$</p>
-<p>and the nine numbers $\alpha_{kl}$ are the <strong>Peirce coordinates</strong> of $A$ in that frame. In the standard frame they are the matrix entries $a_{kl}$ of §<em>The Peirce Lines</em>.</p>
-<p><strong>The coordinate rule.</strong> The product is</p>
-<p>$$
-AB=\sum_{k,l}\Bigl(\sum_{m}\alpha_{km}\beta_{ml}\Bigr)E_{kl},
-$$</p>
-<p>which is the matrix product in the coordinates. The trace and the determinant are the trace and the determinant of the $3\times3$ array,</p>
-<p>$$
-\operatorname{tr}A=\sum_{k}\alpha_{kk},\qquad
-\det A=\sum_{\sigma\in S_{3}}\operatorname{sgn}(\sigma)\prod_{k}\alpha_{k,\sigma(k)} .
-$$</p>
-<p>The diagonal coordinates $\alpha_{kk}$ are the values of the three idempotents: $P_{k}AP_{k}=\alpha_{kk}P_{k}$.</p>
-<p><strong>The coordinates are not unique.</strong> A change of the normalized frame $E_{kl}\mapsto(t_{k}/t_{l})E_{kl}$ with $t_{k}\in\mathbb{C}^{\times}$ preserves the matrix-unit table and the idempotents, and it changes the coordinates by</p>
-<p>$$
-\alpha_{kl}\longmapsto \frac{t_{l}}{t_{k}}\alpha_{kl}.
-$$</p>
-<p>The diagonal coordinates are invariant, and the off-diagonal ones are rescaled by the gauge. The two independent ratios $t_{1}/t_{2}$ and $t_{2}/t_{3}$ are the two parameters of <em>The Two-Parameter Gauge</em>; the third ratio is their product. This is the only freedom in the Peirce coordinates, and it is the subject of §<em>The Gauge</em> of the next article.</p>
-<p><strong>The characteristic polynomial in the coordinates.</strong> The characteristic polynomial of $A$ is</p>
-<p>$$
-\chi_{A}(\lambda)=\lambda^{3}-t\lambda^{2}+s\lambda-d,
-\qquad
-t=\operatorname{tr}A,\quad
-s=\tfrac12\bigl(t^{2}-\operatorname{tr}A^{2}\bigr),\quad
-d=\det A,
-$$</p>
-<p>and its coefficients are polynomial in the nine Peirce coordinates. The spectral theory of the cubic is <em>The Cubic, the Discriminant and the Spectral Strata</em>; the trace and determinant are invariant under the gauge, because the diagonal coordinates are invariant and the off-diagonal rescaling cancels in the determinant.</p>
-<h2 id="the-coarse-split-by-a-rank-one-idempotent">The Coarse Split by a Rank-One Idempotent</h2>
-<p><strong>A single rank-one idempotent already cuts the algebra into four corners, but the corners are no longer lines.</strong></p>
-<p>Let $P$ be a rank-one idempotent, not necessarily one of the $P_{k}$, and put $Q=I-P$. Define the four <strong>coarse Peirce corners</strong></p>
-<p>$$
-B_{11}=PMP,\qquad B_{12}=PMQ,\qquad B_{21}=QMP,\qquad B_{22}=QMQ.
-$$</p>
-<p><strong>Proposition.</strong> The corners have dimensions</p>
-<p>$$
-\dim B_{11}=1,\qquad \dim B_{12}=2,\qquad \dim B_{21}=2,\qquad \dim B_{22}=4,
-$$</p>
-<p>and they sum directly to the algebra.</p>
-<p><strong>Proof.</strong> Choose a basis of $\mathbb{C}^{3}$ whose first vector spans $\operatorname{im}P$ and whose other two span $\ker P$; such a basis exists because $P^{2}=P$ gives $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$ for a rank-one idempotent. In this basis</p>
-<p>$$
-P=\begin{pmatrix}1&0&0\\0&0&0\\0&0&0\end{pmatrix},\qquad
-Q=\begin{pmatrix}0&0&0\\0&1&0\\0&0&1\end{pmatrix}.
-$$</p>
-<p>A matrix $A$ written in the same basis as</p>
-<p>$$
-A=\begin{pmatrix}a&b^{\mathsf T}\\c&D\end{pmatrix},
-\qquad a\in\mathbb{C},\quad b,c\in\mathbb{C}^{2},\quad D\in M_{2}(\mathbb{C}),
-$$</p>
-<p>has its four blocks exactly in the four corners: $PAP=\begin{pmatrix}a&0\\0&0\end{pmatrix}=aP$, $PAQ=\begin{pmatrix}0&b^{\mathsf T}\\0&0\end{pmatrix}$, $QAP=\begin{pmatrix}0&0\\c&0\end{pmatrix}$, $QAQ=\begin{pmatrix}0&0\\0&D\end{pmatrix}$. The dimensions are $1,2,2,4$, and the block decomposition is direct.</p>
-<p><strong>The block multiplication.</strong> In the block form,</p>
-<p>$$
-\begin{pmatrix}a&b^{\mathsf T}\\c&D\end{pmatrix}
-\begin{pmatrix}a'&b'^{\mathsf T}\\c'&D'\end{pmatrix}
-=
-\begin{pmatrix}aa'+b^{\mathsf T}c'&ab'^{\mathsf T}+b^{\mathsf T}D'\\ca'+Dc'&cb'^{\mathsf T}+DD'\end{pmatrix},
-$$</p>
-<p>which is the ordinary product of block matrices. The corner $B_{11}$ is the field $\mathbb{C}$, with unit $P$; the corner $B_{22}$ is $M_{2}(\mathbb{C})$, with unit $Q$; the off-diagonal corners $B_{12}$ and $B_{21}$ are the column and the row of dimension two, carrying a left action of $\mathbb{C}$ and a right action of $M_{2}(\mathbb{C})$, and the reverse.</p>
-<p><strong>The corner isomorphisms.</strong> The map</p>
-<p>$$
-B_{11}\longrightarrow\mathbb{C},\qquad PAP\longmapsto \operatorname{tr}(PA),
-$$</p>
-<p>is an isomorphism of algebras with unit $P\mapsto1$. The map</p>
-<p>$$
-B_{22}\longrightarrow M_{2}(\mathbb{C}),\qquad QAQ\longmapsto \text{the matrix of }QAQ\text{ on }\operatorname{im}Q,
-$$</p>
-<p>is an isomorphism of algebras with unit $Q\mapsto I_{2}$. The two isomorphisms are the readings of the diagonal corners as the field and as the $2\times2$ matrix algebra; the second is the $M_{2}$ corner of <em>The $M_{2}$ Corner of $M_{3}(\mathbb{C})$</em>.</p>
-<p><strong>The coarse Peirce table.</strong> The products of the four corners are</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$\cdot$</th>
-<th>$B_{11}$</th>
-<th>$B_{12}$</th>
-<th>$B_{21}$</th>
-<th>$B_{22}$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$B_{11}$</td>
-<td>$B_{11}$</td>
-<td>$B_{12}$</td>
-<td>$0$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$B_{12}$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$B_{11}$</td>
-<td>$B_{12}$</td>
-</tr>
-<tr>
-<td>$B_{21}$</td>
-<td>$B_{21}$</td>
-<td>$B_{22}$</td>
-<td>$0$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$B_{22}$</td>
-<td>$0$</td>
-<td>$0$</td>
-<td>$B_{21}$</td>
-<td>$B_{22}$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The table is the rule $B_{ij}B_{kl}\subseteq\delta_{jk}B_{il}$ read on the four blocks, and it records the dimensions only implicitly: the entries are subspaces, not numbers. The four diagonal entries of the table are the four corners themselves because $P^{2}=P$ and $Q^{2}=Q$; the vanishing entries are the square-zero products $B_{12}^{2}=0$ and $B_{21}^{2}=0$, and the products $B_{12}B_{21}\subseteq B_{11}$, $B_{21}B_{12}\subseteq B_{22}$.</p>
-<p><strong>Worked example.</strong> Take the standard frame with $P=E_{11}$ and</p>
-<p>$$
-A=\begin{pmatrix}1&2&3\\4&5&6\\7&8&9\end{pmatrix}.
-$$</p>
-<p>Then</p>
-<p>$$
-PAP=\begin{pmatrix}1&0&0\\0&0&0\\0&0&0\end{pmatrix}=1\cdot P,\qquad
-PAQ=\begin{pmatrix}0&2&3\\0&0&0\\0&0&0\end{pmatrix},
-$$</p>
-<p>$$
-QAP=\begin{pmatrix}0&0&0\\4&0&0\\7&0&0\end{pmatrix},\qquad
-QAQ=\begin{pmatrix}0&0&0\\0&5&6\\0&8&9\end{pmatrix}.
-$$</p>
-<p>The four blocks have dimensions $1,2,2,4$, and the trace of $A$ is $1+5+9=15$, which is the sum of the traces of the two diagonal blocks, $1+(5+9)$.</p>
-<p><strong>The coarse split is not a direct sum of algebras.</strong> The algebra $M_{3}(\mathbb{C})$ is simple; if it were the direct sum of the two algebras $B_{11}$ and $B_{22}$, the off-diagonal corners $B_{12}$ and $B_{21}$ would vanish, because a direct sum of algebras has no cross terms. They do not vanish: $PAQ\neq0$ for a general $A$. The Peirce decomposition is a direct sum of <strong>vector spaces</strong>, and the diagonal part $B_{11}\oplus B_{22}$ is a subalgebra, but the off-diagonal corners are nonzero bimodules and the whole is not a product of algebras. This is the structural difference between the coarse split and the split of the biquaternion algebra into four lines.</p>
-<p><strong>The coarse split refines to the fine split.</strong> The rank-one idempotent $P$ is one of the three $P_{k}$ only in the standard frame; in general it is a fourth line. The coarse corner $B_{22}=QMQ$ has dimension four and is isomorphic to $M_{2}(\mathbb{C})$; inside it the two idempotents $P_{2}$ and $P_{3}$ of the root cut it into the four lines $A_{22},A_{23},A_{32},A_{33}$. The coarse split is therefore the first step of a two-step refinement: one idempotent gives $1+2+2+4$, and the full family of three gives $1+1+1+1+1+1+1+1+1$. The intermediate corner $M_{2}$ is the biquaternion algebra embedded in $M_{3}$.</p>
-<h2 id="the-comparison-with-the-biquaternion-four-lines">The Comparison with the Biquaternion Four Lines</h2>
-<p><strong>In $M_{2}(\mathbb{C})$ the coarse and the fine decompositions coincide, because every idempotent is of rank one or zero.</strong></p>
-<p>For $n=2$ the complete family is a pair $P_{+},P_{-}$ of rank-one idempotents, and the four corners are</p>
-<p>$$
-B_{++}=\mathbb{C}P_{+},\qquad B_{+-}=\mathbb{C}E_{12},\qquad B_{-+}=\mathbb{C}E_{21},\qquad B_{--}=\mathbb{C}P_{-},
-$$</p>
-<p>each of dimension one. The multiplication table is the $2\times2$ matrix-unit table, and the algebra is the direct sum of the four lines as a vector space. The coarse split by one idempotent is already the fine split, and the corner $QM_{2}Q$ is one-dimensional. This is the content of <em>The Peirce Decomposition</em> of the biquaternion category.</p>
-<p>For $n=3$ the fine split has nine lines, and the coarse split by one rank-one idempotent has a four-dimensional corner. The corner $QM_{3}Q$ is $M_{2}(\mathbb{C})$, which is the biquaternion algebra; the coarse split of $M_{3}$ therefore contains the whole $M_{2}$ Peirce decomposition of the biquaternion algebra as its lower-right block. The passage from $n=2$ to $n=3$ is the passage from four lines to nine, mediated by the $M_{2}$ corner.</p>
-<p><strong>The carrier is not a Peirce line.</strong> The minimal left ideal $M_{3}P_{k}$ is the set of matrices whose columns are combinations of the $k$-th column; it is a three-dimensional complex vector space, isomorphic to $\mathbb{C}^{3}$. It is not a Peirce line, which is one-dimensional and lies inside the algebra. The left ideal is the carrier of the defining representation, and under the principal $\mathfrak{su}_{2}$ of <em>The Spin Chain and the Adjoint Decomposition</em> it is the spin-one module $\operatorname{Sym}^{2}(\mathbb{C}^{2})$. The Peirce lines are the lines of the algebra; the carrier is a module over it. For $n=2$ the minimal left ideal is two-dimensional and is the spinorial module of the biquaternion algebra; for $n=3$ the carrier is spin one, and there are no spinors.</p>
+<p>as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots,5$. The column $\mathbb{C}^{3}$ has spin $1$. Both statements are <em>The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$</em>; they are recorded here because the number of lines and the number of components must agree with them.</p>
+<h2 id="what-the-cut-does-not-give">What the Cut Does Not Give</h2>
+<p>The cut gives the lines and their product. It gives no element in a mixed line, no basis, no gauge and no coordinate. The diagonal is canonical; the mixed lines are not. The selection of one element per line and its freedom are <em>The Peirce Basis of $M_3(\mathbb{C})$</em>. The coordinate columns and their reading as spinors are <em>Spinors as Peirce Coordinates in $M_3(\mathbb{C})$</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>A complete orthogonal family $P_{1},P_{2},P_{3}$ of three rank-one idempotents of $M_{3}(\mathbb{C})$ gives the Peirce decomposition</p>
-<p>$$
-\boxed{\;M_{3}(\mathbb{C})=\bigoplus_{k,l=1}^{3}A_{kl},\qquad A_{kl}=P_{k}M_{3}(\mathbb{C})P_{l},\qquad \dim_{\mathbb{C}}A_{kl}=1,\;}
-$$</p>
-<p>with the multiplication rule</p>
-<p>$$
-A_{kl}A_{mn}\subseteq\delta_{lm}A_{kn}.
-$$</p>
-<p>The diagonal lines are the idempotents and form a copy of $\mathbb{C}^{3}$; the off-diagonal lines are square-zero and are paired by the products $A_{kl}A_{lk}\subseteq A_{kk}$.</p>
-<p>A single rank-one idempotent $P$ gives the coarse split with corners</p>
-<p>$$
-PMP\oplus PMQ\oplus QMP\oplus QMQ
-$$</p>
-<p>of dimensions $1+2+2+4$, with $PMP\cong\mathbb{C}$ and $QMQ\cong M_{2}(\mathbb{C})$. The coarse split is a direct sum of vector spaces, not of algebras; the off-diagonal blocks are nonzero bimodules and the algebra is simple.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Quantity</th>
-<th>Value for $M_{3}(\mathbb{C})$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Peirce lines of a complete family</td>
-<td>$9$</td>
-</tr>
-<tr>
-<td>Dimension of each line</td>
-<td>$1$</td>
-</tr>
-<tr>
-<td>Coarse corners of a rank-one idempotent</td>
-<td>$1+2+2+4$</td>
-</tr>
-<tr>
-<td>Coarse corners of a rank-two idempotent</td>
-<td>$4+2+2+1$</td>
-</tr>
-<tr>
-<td>Diagonal corner</td>
-<td>$\mathbb{C}$</td>
-</tr>
-<tr>
-<td>Complement corner</td>
-<td>$M_{2}(\mathbb{C})$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The Peirce spaces are subspaces of the algebra, not spinors. The carrier of the spin chain is the minimal left ideal $M_{3}P_{k}\cong\mathbb{C}^{3}$, of spin one; only the biquaternion case $n=2$ has a spinorial carrier.</p>
+<p>A complete family of $3$ nonzero idempotents in $M_3(\mathbb{C})$ has rank one at each member and cuts the algebra into the $9$ lines $A_{kl}=P_kM_3P_l$. The rule is $A_{kl}A_{pq}\subseteq\delta_{lp}A_{kq}$, so the off-diagonal lines are square-zero and the idempotents lie on the diagonal. A root $H^{3}=I$ with simple spectrum supplies the family through its Lagrange projectors, and then $A_{kl}=\mathbb{C}v_k\ell_l$. The cut is canonical given the family; the family is not canonical; no element of a mixed line is selected.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -450,49 +145,39 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$P_{1},P_{2},P_{3}$</td>
-<td>the complete family of Lagrange idempotents of a root $H$</td>
+<td>$P_k$</td>
+<td>A member of the complete family</td>
 </tr>
 <tr>
-<td>$A_{kl}=P_{k}M_{3}P_{l}$</td>
-<td>the Peirce line of the pair $(k,l)$</td>
+<td>$V_k=\operatorname{im}P_k$</td>
+<td>Its line in $\mathbb{C}^{3}$</td>
 </tr>
 <tr>
-<td>$E_{kl}$</td>
-<td>a normalized matrix unit in $A_{kl}$, $E_{kl}E_{lm}=E_{km}$</td>
+<td>$A_{kl}=P_kM_3P_l$</td>
+<td>The Peirce line</td>
 </tr>
 <tr>
-<td>$\alpha_{kl}$</td>
-<td>the Peirce coordinates of $A$ in a normalized frame</td>
+<td>$v_k,\ell_k$</td>
+<td>An eigenvector of $H$ and its dual form</td>
 </tr>
 <tr>
-<td>$P,Q=I-P$</td>
-<td>a rank-one idempotent and its complement</td>
+<td>$H$</td>
+<td>A root, $H^{3}=I$ with simple spectrum</td>
 </tr>
 <tr>
-<td>$B_{11},B_{12},B_{21},B_{22}$</td>
-<td>the coarse Peirce corners</td>
-</tr>
-<tr>
-<td>$D$</td>
-<td>the diagonal subalgebra $A_{11}\oplus A_{22}\oplus A_{33}\cong\mathbb{C}^{3}$</td>
-</tr>
-<tr>
-<td>$M_{3}P_{k}$</td>
-<td>the minimal left ideal, the carrier $\cong\mathbb{C}^{3}$</td>
+<td>$\omega$</td>
+<td>The root of unity, $\omega=e^{2\pi i/3}$</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m3c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root $H$ and the three idempotents.</li>
-<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_{3}(\mathbb{C})$</a>, for the matrix units, the product and the simplicity.</li>
-<li><a href="the-m2-corner-of-m3c.html">The $M_{2}$ Corner of $M_{3}(\mathbb{C})$</a>, for the corner $QM_{3}Q$ as a unital algebra and as a $*$-algebra.</li>
-<li><a href="the-rank-two-split-of-m3c.html">The Rank-Two Split</a>, for the complementary coarse split $4+2+2+1$.</li>
-<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the normalized matrix units and the gauge.</li>
-<li><a href="the-modules-and-the-minimal-left-ideals-of-m3c.html">The Modules and the Minimal Left Ideals</a>, for the carrier $M_{3}P_{k}\cong\mathbb{C}^{3}$.</li>
-<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the order-two case and the four biquaternion lines.</li>
-<li><a href="matrix-algebras.html">Matrix Algebras</a>, for the matrix-unit table and the simplicity of $M_{n}$.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition and its rule.</li>
+<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>, for the algebra and its matrix units.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m3c.html">Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$</a>, for the projectors of the root.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$</a>, for the flag and the orbits.</li>
+<li><a href="the-peirce-basis-of-m3c.html">The Peirce Basis of $M_3(\mathbb{C})$</a>, for the selection of the units and the gauge.</li>
+<li><a href="spinors-as-peirce-coordinates-in-m3c.html">Spinors as Peirce Coordinates in $M_3(\mathbb{C})$</a>, for the columns of the array.</li>
 </ul>
       </div>
     </main>

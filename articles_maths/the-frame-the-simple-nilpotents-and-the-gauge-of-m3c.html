@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Frame, the Simple Nilpotents and the Gauge — Biquaternion Universe</title>
+  <title>The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,19 +68,19 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-frame-the-simple-nilpotents-and-the-gauge"><strong>The Frame, the Simple Nilpotents and the Gauge</strong></h1>
+        <h1 id="the-frame-the-simple-nilpotents-and-the-gauge-of-math0"><strong>The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A frame of $M_{3}(\mathbb{C})$ is a basis of the algebra by nine matrix units $E_{ij}$ with $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and $\sum_{i}E_{ii}=I$. The diagonal units are three idempotents; the off-diagonal units are six nilpotents, of which two are the <strong>simple</strong> ones and the remaining four are their products and the products of the opposite pair. The frame is the matrix-unit form of the Peirce decomposition, and it is the object on which the gauge acts.</p>
 <p>This article constructs the frame from a basis of $\mathbb{C}^{3}$, proves the multiplication table, isolates the two simple nilpotents $E_{12},E_{23}$ and the composite $E_{13}=E_{12}E_{23}$, and computes the gauge group. The gauge rescales the off-diagonal units by $E_{ij}\mapsto(t_{i}/t_{j})E_{ij}$; it fixes every idempotent, and its group is $(\mathbb{C}^{\times})^{2}$, the maximal torus of $PGL_{3}(\mathbb{C})$. The rescaling of the two simple nilpotents by $\lambda_{1}$ and $\lambda_{2}$ forces the composite to be rescaled by $\lambda_{1}\lambda_{2}$: there is no third independent scalar.</p>
 <p><strong>The idempotents do not depend on the gauge parameter.</strong> The symbols $\lambda_{1},\lambda_{2}$ below are gauge parameters of the nilpotents; they never multiply an idempotent. A statement that an idempotent depends on $\lambda$ is a confusion of the gauge with the frame.</p>
-<p>The article assumes the algebra and its matrix units of <em>The Matrix Algebra $M_{3}(\mathbb{C})$</em>, the Peirce decomposition of <em>The Peirce Decomposition of $M_{3}(\mathbb{C})$</em>, and the root of <em>Roots of Unity and the Lagrange Idempotents</em>. The two-parameter gauge is developed further in <em>The Two-Parameter Gauge</em>; the modules built on the idempotents are <em>The Modules and the Minimal Left Ideals</em>.</p>
+<p>The article assumes the algebra and its matrix units of <em>The Matrix Algebra $M_{3}(\mathbb{C})$</em>, the Peirce decomposition of <em>The Peirce Decomposition of $M_{3}(\mathbb{C})$</em>, and the root of <em>Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$</em>. The two-parameter gauge is developed further in <em>The Two-Parameter Gauge of $M_3(\mathbb{C})$</em>; the modules built on the idempotents are <em>The Modules and the Minimal Left Ideals of $M_3(\mathbb{C})$</em>.</p>
 <h2 id="the-frame-from-a-basis">The Frame from a Basis</h2>
 <p><strong>Definition.</strong> A <strong>frame</strong> of $M_{3}(\mathbb{C})$ is a family $(E_{ij})_{i,j=1}^{3}$ of elements with</p>
 <p>$$
 E_{ij}E_{kl}=\delta_{jk}E_{il},\qquad \sum_{i=1}^{3}E_{ii}=I,\qquad E_{ii}\neq0 .
 $$</p>
 <p>The frame is <strong>normalized</strong> by the second condition; the first alone gives $E_{ii}^{2}=E_{ii}$, $E_{ii}E_{jj}=0$ for $i\neq j$, and $E_{ij}^{2}=0$ for $i\neq j$.</p>
-<p><strong>Theorem (the frame from a basis).</strong> Let $(v_{0},v_{1},v_{2})$ be a basis of $\mathbb{C}^{3}$ and let $(v_{0}^{\vee},v_{1}^{\vee},v_{2}^{\vee})$ be the dual basis, $v_{j}^{\vee}(v_{k})=\delta_{jk}$. Put</p>
+<p><strong>Theorem (the frame from a basis).</strong> Let $(v_{1},v_{2},v_{3})$ be a basis of $\mathbb{C}^{3}$ and let $(v_{1}^{\vee},v_{2}^{\vee},v_{3}^{\vee})$ be the dual basis, $v_{j}^{\vee}(v_{k})=\delta_{jk}$. Put</p>
 <p>$$
 E_{ij}=v_{i}v_{j}^{\vee}.
 $$</p>
@@ -105,7 +105,7 @@ $$</p>
 <p>$$
 H=\sum_{i=1}^{3}\zeta_{i}E_{ii}
 $$</p>
-<p>is a root with simple spectrum, by <em>Roots of Unity and the Lagrange Idempotents</em>. Conversely, a root $H$ gives its three Lagrange idempotents $P_{i}$, and a frame with $E_{ii}=P_{i}$ is a choice of the six off-diagonal units. The root and the frame are therefore related by</p>
+<p>is a root with simple spectrum, by <em>Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$</em>. Conversely, a root $H$ gives its three Lagrange idempotents $P_{i}$, and a frame with $E_{ii}=P_{i}$ is a choice of the six off-diagonal units. The root and the frame are therefore related by</p>
 <p>$$
 \{\text{frames}\}\longrightarrow\{\text{roots}\},\qquad (E_{ij})\longmapsto\sum_{i}\zeta_{i}E_{ii},
 $$</p>
@@ -198,9 +198,9 @@ $$</p>
 \lambda_{ij}\lambda_{jk}=\lambda_{ik},\qquad \lambda_{ii}=1,\qquad \lambda_{ji}=\lambda_{ij}^{-1}.
 $$</p>
 <p><strong>Proposition.</strong> Every solution is of the form $\lambda_{ij}=t_{i}/t_{j}$ for some $t_{i}\in\mathbb{C}^{\times}$, and the solutions form a group isomorphic to $(\mathbb{C}^{\times})^{2}$.</p>
-<p><strong>Proof.</strong> Put $t_{i}=\lambda_{i0}$, with the index $0$ fixed. The cocycle gives $\lambda_{ij}=\lambda_{i0}\lambda_{0j}=t_{i}\lambda_{j0}^{-1}=t_{i}/t_{j}$, using $\lambda_{0j}=\lambda_{j0}^{-1}$. Conversely every assignment $t_{i}/t_{j}$ satisfies the three relations. Two assignments $t_{i}$ and $ct_{i}$ give the same $\lambda$, so the parameter space is $(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2}$.</p>
+<p><strong>Proof.</strong> Put $t_{i}=\lambda_{i1}$, with the index $1$ fixed. The cocycle gives $\lambda_{ij}=\lambda_{i1}\lambda_{1j}=t_{i}\lambda_{j1}^{-1}=t_{i}/t_{j}$, using $\lambda_{1j}=\lambda_{j1}^{-1}$. Conversely every assignment $t_{i}/t_{j}$ satisfies the three relations. Two assignments $t_{i}$ and $ct_{i}$ give the same $\lambda$, so the parameter space is $(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2}$.</p>
 <p><strong>Corollary.</strong> If $\lambda_{1}$ is put on $E_{12}$ and $\lambda_{2}$ on $E_{23}$, then the scalar on $E_{13}$ is forced to be $\lambda_{1}\lambda_{2}$. A third independent scalar $\lambda_{3}$ on $E_{13}$ is incompatible with the frame unless $\lambda_{3}=\lambda_{1}\lambda_{2}$. The only freedom is the two-parameter torus, and the composite carries the product of the two simple weights.</p>
-<h2 id="the-count-math176">The Count $8=6+2$</h2>
+<h2 id="the-count-math181">The Count $8=6+2$</h2>
 <p><strong>The frame has eight complex parameters, the root six, and the gauge two.</strong></p>
 <p><strong>Theorem.</strong> The map</p>
 <p>$$
@@ -213,7 +213,7 @@ $$</p>
 $$</p>
 <p><strong>Proof.</strong> The map is well defined by §<em>The Frame from a Basis</em>: the diagonal units of a frame are a complete orthogonal family, and the root built from them has simple spectrum. It is surjective because a root gives its three Lagrange idempotents $P_{i}$, and a frame with $E_{ii}=P_{i}$ exists: choose nonzero $E_{ij}\in A_{ij}$ normalized by $E_{ij}E_{ji}=P_{i}$; the Peirce pairing of <em>The Peirce Decomposition of $M_{3}(\mathbb{C})$</em> makes the choice possible, and the matrix-unit table makes it a frame.</p>
 <p>The fibre over $H$ consists of the frames with the same diagonal units. The Peirce lines $A_{ij}=P_{i}M_{3}P_{j}$ are one-dimensional, so a frame over $H$ is the choice of a nonzero $E_{ij}\in A_{ij}$ for each $i\neq j$, normalized by $E_{ij}E_{ji}=P_{i}$. The gauge $E_{ij}\mapsto(t_{i}/t_{j})E_{ij}$ acts on these choices, and it acts simply transitively: given two frames $E_{ij}$ and $E_{ij}'$ with the same diagonal, $E_{ij}'=\mu_{ij}E_{ij}$ with $\mu_{ij}\in\mathbb{C}^{\times}$; the matrix-unit table forces $\mu_{ij}\mu_{jk}=\mu_{ik}$ and $\mu_{ji}=\mu_{ij}^{-1}$, so by the cocycle proposition $\mu_{ij}=t_{i}/t_{j}$ for a unique class of $t$ modulo common scalar. The fibre is therefore a $(\mathbb{C}^{\times})^{2}$-torsor, of dimension two.</p>
-<p>The dimensions are the orbit dimension $6$ of <em>Roots of Unity and the Lagrange Idempotents</em> and the torus dimension $2$; the total is the frame dimension $8$ of §<em>The Frame from a Basis</em>. The two counts agree, and the agreement is the content of the theorem.</p>
+<p>The dimensions are the orbit dimension $6$ of <em>Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$</em> and the torus dimension $2$; the total is the frame dimension $8$ of §<em>The Frame from a Basis</em>. The two counts agree, and the agreement is the content of the theorem.</p>
 <p><strong>The three counts of the same eight.</strong></p>
 <ul>
 <li><strong>Frames.</strong> $PGL_{3}$ has dimension $8$.</li>
@@ -221,7 +221,7 @@ $$</p>
 <li><strong>Basis plus gauge.</strong> A basis of $\mathbb{C}^{3}$ has $9$ parameters; the common scalar of the frame removes $1$, leaving the $8$ parameters of the frame. Of these, the $2$ independent scalings of the gauge are the fibre over the root, leaving the $6$ parameters of the root orbit.</li>
 </ul>
 <p>The gauge is not a redundancy of the root: it is the fibre of the frame over the root, and it is the freedom of the off-diagonal units at fixed idempotents.</p>
-<h2 id="the-maximal-torus-of-math217">The Maximal Torus of $PGL_{3}$</h2>
+<h2 id="the-maximal-torus-of-math223">The Maximal Torus of $PGL_{3}$</h2>
 <p><strong>The gauge group is the maximal torus of the projective linear group.</strong></p>
 <p>The diagonal matrices of $GL_{3}$ form a maximal torus $T_{GL}\cong(\mathbb{C}^{\times})^{3}$. Its image in $PGL_{3}=GL_{3}/\mathbb{C}^{\times}I$ is</p>
 <p>$$
@@ -334,12 +334,13 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a>, for the nine lines and the coarse split.</li>
-<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m3c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root $H$ and its idempotents.</li>
-<li><a href="the-two-parameter-gauge-of-m3c.html">The Two-Parameter Gauge</a>, for the gauge read on the coherence entries and the comparison with the single $\lambda$ of $\mathbb{B}$.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m3c.html">Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$</a>, for the root $H$ and its idempotents.</li>
+<li><a href="the-two-parameter-gauge-of-m3c.html">The Two-Parameter Gauge of $M_3(\mathbb{C})$</a>, for the gauge read on the coherence entries and the comparison with the single $\lambda$ of $\mathbb{B}$.</li>
 <li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>, for the matrix units and the projective group.</li>
 <li><a href="matrix-algebras.html">Matrix Algebras</a>, for the matrix-unit table.</li>
-<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the two-dimensional frame and its single $\mu$.</li>
+<li><a href="the-peirce-decomposition-in-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the two-dimensional frame and its single $\mu$.</li>
 <li><a href="root-systems-and-classification.html">Root Systems and Classification</a>, for the root system $A_{2}$ and the maximal torus.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>, for the general construction at order $n$.</li>
 </ul>
       </div>
     </main>

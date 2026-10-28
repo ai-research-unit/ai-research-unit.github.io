@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Element, the Coordinates and the Trace — Biquaternion Universe</title>
+  <title>The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,10 +68,10 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-element-the-coordinates-and-the-trace"><strong>The Element, the Coordinates and the Trace</strong></h1>
+        <h1 id="the-element-the-coordinates-and-the-trace-of-math0"><strong>The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>An element of $M_4(\mathbb{C})$ is a linear map of $\mathbb{C}^4$, a matrix of sixteen complex coordinates, a bilinear form, and a pair of real matrices; the trace is the invariant linear functional that reads the scalar part.</strong> This article fixes the element and its coordinates, splits it into the scalar and traceless parts, states the Jordan decomposition, distinguishes the real and imaginary parts of the coordinates from the Hermitian decomposition, and describes the element as a linear map and as a bilinear form.</p>
-<p>The algebra is <em>The Matrix Algebra $M_4(\mathbb{C})$</em>; the involution and the positive definite form are <em>The Involution and the Hermitian Structure</em>; the spectral theory is <em>Spectral Theory and the Spectral Projectors</em>; the Peirce decomposition is <em>The Peirce Decomposition</em>.</p>
+<p>The algebra is <em>The Matrix Algebra $M_4(\mathbb{C})$</em>; the involution and the positive definite form are <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>; the spectral theory is <em>Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</em>; the Peirce decomposition is <em>The Peirce Decomposition of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-coordinates">The Coordinates</h2>
 <p><strong>The sixteen coordinates.</strong> In the basis of matrix units,</p>
 <p>$$
@@ -114,7 +114,7 @@ $$</p>
 <p>$$
 \bar A=X-iY,
 $$</p>
-<p>the entrywise complex conjugate. It is $\mathbb{C}$-antilinear and an automorphism of the real algebra. The conjugate transpose is $A^*=\bar A^{\mathsf T}$, which is the composition of the conjugation and the transpose; it is the subject of <em>The Involution and the Hermitian Structure</em>.</p>
+<p>the entrywise complex conjugate. It is $\mathbb{C}$-antilinear and an automorphism of the real algebra. The conjugate transpose is $A^*=\bar A^{\mathsf T}$, which is the composition of the conjugation and the transpose; it is the subject of <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-scalar-and-traceless-parts">The Scalar and Traceless Parts</h2>
 <p><strong>Definition.</strong> The <strong>scalar part</strong> of $A$ is</p>
 <p>$$
@@ -164,7 +164,7 @@ $$</p>
 <p>$$
 \langle A,B\rangle=\operatorname{tr}(A^*B),
 $$</p>
-<p>which is a different object; it is <em>The Involution and the Hermitian Structure</em>.</p>
+<p>which is a different object; it is <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>.</p>
 <p><strong>The restriction to $\mathfrak{sl}_4$.</strong> On the traceless subspace, the trace pairing is the Killing form up to a scalar. For $\mathfrak{gl}_4$, the Killing form is</p>
 <p>$$
 K(X,Y)=8\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y),
@@ -201,7 +201,7 @@ $$</p>
 <p>$$
 \dim\ker A+\operatorname{rank}A=4.
 $$</p>
-<p><strong>The rank.</strong> The rank is the dimension of the image and the number of nonzero singular values. It is invariant under left and right multiplication by invertible matrices, and it is the size of the largest nonzero minor. The rank stratification is <em>The Forms, the Norms and the Singular Set</em>.</p>
+<p><strong>The rank.</strong> The rank is the dimension of the image and the number of nonzero singular values. It is invariant under left and right multiplication by invertible matrices, and it is the size of the largest nonzero minor. The rank stratification is <em>The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</em>.</p>
 <p><strong>Invertibility.</strong> The following are equivalent:</p>
 <ul>
 <li>$A$ is invertible;</li>
@@ -291,7 +291,7 @@ $$</p>
 <p><strong>The Jordan decomposition is not the Peirce decomposition.</strong> The root $H$ is semisimple, and the simple nilpotents $E_{12},E_{23},E_{34}$ are nilpotent. But the sum $H+N$ with $[H,N]=N$ is not the Jordan decomposition of $H+N$: the Jordan parts must commute, and $H$ and $N$ do not. The Peirce decomposition is by the idempotents of $H$; the Jordan decomposition is by the minimal polynomial of the element. The two decompositions are different, and neither refines the other.</p>
 <p><strong>The trace of a nilpotent is zero.</strong> If $N$ is nilpotent, all its eigenvalues are zero, so $\operatorname{tr}N=0$. The trace of a commutator is zero, and the trace of a semisimple element is the sum of its eigenvalues. These facts are used throughout the spectral articles.</p>
 <h2 id="summary">Summary</h2>
-<p>An element $A\in M_4(\mathbb{C})$ has sixteen complex coordinates $A_{ij}$ in the matrix-unit basis, or thirty-two real coordinates through $A=X+iY$. It splits canonically as $A=\frac14(\operatorname{tr}A)I+A_0$ into a scalar part and a traceless part, of dimensions $1+15=16$, and the trace pairing $\beta(A,B)=\operatorname{tr}(AB)$ is symmetric, non-degenerate and indefinite, orthogonal for the split, and equal to the Killing form up to the factor $8$ on $\mathfrak{sl}_4$. The element is a linear map $\mathbb{C}^4\to\mathbb{C}^4$ with a kernel, an image, a rank, a determinant and a characteristic polynomial, and it is a complex-bilinear form $B_A(x,y)=x^{\mathsf T}Ay$. The Jordan decomposition $A=A_s+A_n$ into commuting semisimple and nilpotent parts exists and is unique, with both parts polynomials in $A$; it is not the Peirce decomposition. The real part $X$ of the coordinates is not the Hermitian part of $A$; the Hermitian part uses $A^*$ and is <em>The Involution and the Hermitian Structure</em>.</p>
+<p>An element $A\in M_4(\mathbb{C})$ has sixteen complex coordinates $A_{ij}$ in the matrix-unit basis, or thirty-two real coordinates through $A=X+iY$. It splits canonically as $A=\frac14(\operatorname{tr}A)I+A_0$ into a scalar part and a traceless part, of dimensions $1+15=16$, and the trace pairing $\beta(A,B)=\operatorname{tr}(AB)$ is symmetric, non-degenerate and indefinite, orthogonal for the split, and equal to the Killing form up to the factor $8$ on $\mathfrak{sl}_4$. The element is a linear map $\mathbb{C}^4\to\mathbb{C}^4$ with a kernel, an image, a rank, a determinant and a characteristic polynomial, and it is a complex-bilinear form $B_A(x,y)=x^{\mathsf T}Ay$. The Jordan decomposition $A=A_s+A_n$ into commuting semisimple and nilpotent parts exists and is unique, with both parts polynomials in $A$; it is not the Peirce decomposition. The real part $X$ of the coordinates is not the Hermitian part of $A$; the Hermitian part uses $A^*$ and is <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>.</p>
 <p>$$
 \boxed{\ A=\frac14(\operatorname{tr}A)I+A_0,\quad \dim\mathbb{C}I=1,\quad \dim\mathfrak{sl}_4=15,\quad A=A_s+A_n,\quad [A_s,A_n]=0,\quad A_n\text{ nilpotent}. }
 $$</p>
@@ -381,9 +381,9 @@ $$</p>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the Jordan form, the Jordan–Chevalley decomposition, the trace and the determinant.</li>
 <li>Sheldon Axler, <em>Linear Algebra Done Right</em> (Springer, 2015), for the structure of linear maps and the characteristic polynomial.</li>
 <li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the algebra, the trace and the determinant.</li>
-<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure</a>, for the positive definite trace form and the Hermitian decomposition.</li>
-<li><a href="spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors</a>, for the spectral projectors and the Dunford calculus.</li>
-<li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition</a>, for the idempotent decomposition, which is not the Jordan decomposition.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the positive definite trace form and the Hermitian decomposition.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</a>, for the spectral projectors and the Dunford calculus.</li>
+<li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition of $M_4(\mathbb{C})$</a>, for the idempotent decomposition, which is not the Jordan decomposition.</li>
 </ul>
       </div>
     </main>

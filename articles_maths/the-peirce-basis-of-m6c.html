@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Basis of $M_6(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-basis-of-math0"><strong>The Peirce Basis of $M_6(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Peirce cut of $M_6(\mathbb{C})$ gives $36$ lines and no element inside the mixed ones. A <strong>Peirce basis</strong> selects one nonzero element in each line, with the matrix-unit product rule. The diagonal elements are forced; the mixed elements are not, and their freedom is the <strong>gauge</strong>.</p>
+<p>This article proves that the basis exists, computes the gauge, gives the coordinates, and reads the count $35=30+5$ as an orbit–stabiliser count. It assumes <em>The Peirce Decomposition of $M_6(\mathbb{C})$</em>.</p>
+<h2 id="the-definition">The Definition</h2>
+<p><strong>Definition.</strong> A <strong>Peirce basis</strong> relative to the family $P_1,\dots,P_6$ is a family $E_{kl}\in A_{kl}$ with</p>
+<p>$$
+E_{kl}E_{pq}=\delta_{lp}E_{kq},\qquad E_{kk}=P_k .
+$$</p>
+<p><strong>The diagonal is forced.</strong> Since $A_{kk}=\mathbb{C}P_k$, a nonzero diagonal element is $cP_k$; idempotence gives $c^{2}=c$, hence $c=1$. So $E_{kk}=P_k$ is a consequence of the rule, not an extra normalisation.</p>
+<p><strong>The mixed elements are a choice.</strong> A nonzero $E_{kl}\in A_{kl}$ can be rescaled, and the rescalings are constrained by the rule.</p>
+<h2 id="existence">Existence</h2>
+<p><strong>Theorem.</strong> Every complete family of 6 nonzero idempotents of $M_6(\mathbb{C})$ admits a Peirce basis.</p>
+<p><strong>Proof.</strong> Choose $v_k$ spanning $V_k=\operatorname{im}P_k$ and $\ell_l$ with $\ell_l(v_k)=\delta_{kl}$, and set $E_{kl}=v_k\ell_l$. Then $E_{kl}\in A_{kl}$, $E_{kk}=v_k\ell_k=P_k$, and</p>
+<p>$$
+E_{kl}E_{pq}=v_k\ell_l(v_p)\ell_q=\delta_{lp}E_{kq}.
+$$</p>
+<p>So the $36$ elements are a basis.</p>
+<p><strong>The basis is a pair of dual bases.</strong> The vectors $v_1,\dots,v_6$ are a basis of $\mathbb{C}^{6}$ and the forms $\ell_1,\dots,\ell_6$ are the dual basis. The Peirce basis is that pair written as matrices.</p>
+<h2 id="coordinates">Coordinates</h2>
+<p>Every element has a unique expansion</p>
+<p>$$
+X=\sum_{k,l=1}^{6}X_{kl}E_{kl},
+$$</p>
+<p>and the numbers $X_{kl}$ are its <strong>Peirce coordinates</strong>. If $Y=\sum Y_{kl}E_{kl}$, then</p>
+<p>$$
+XY=\sum_{k,q}\Bigl(\sum_{l=1}^{6}X_{kl}Y_{lq}\Bigr)E_{kq},
+$$</p>
+<p>so in a Peirce basis the algebra reads as the array of coordinates with the matrix product. The array is the element, not a new object.</p>
+<h2 id="the-gauge">The Gauge</h2>
+<p><strong>Theorem.</strong> Two Peirce bases of the same family differ by</p>
+<p>$$
+E'_{kl}=t_kt_l^{-1}E_{kl},\qquad t_1,\dots,t_6\in\mathbb{C}^{\times}.
+$$</p>
+<p>Conversely, every such choice is a Peirce basis of the same family.</p>
+<p><strong>Proof.</strong> Each primed element is a nonzero multiple of the unprimed one, $E'_{kl}=c_{kl}E_{kl}$. The product rule gives $c_{kl}c_{lq}=c_{kq}$, so $c_{kl}=c_{k1}c_{1l}$. From $c_{1l}c_{l1}=c_{11}=1$ and $c_{11}=1$, set $t_k=c_{k1}$; then $c_{kl}=t_kt_l^{-1}$. The converse is a direct check.</p>
+<p><strong>The effective gauge.</strong> A common scalar acts trivially, since $(\lambda t_k)(\lambda t_l)^{-1}=t_kt_l^{-1}$. The effective group is</p>
+<p>$$
+(\mathbb{C}^{\times})^{6}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{6-1},
+$$</p>
+<p>of complex dimension $5$. The coordinates transform by</p>
+<p>$$
+X'_{kl}=t_k^{-1}t_lX_{kl}.
+$$</p>
+<p>In the Hermitian case the gauge is restricted to $|t_k|=1$, of real dimension $5$.</p>
+<p><strong>The second root is not extra data.</strong> In the biquaternion case $n=2$ a second root is sometimes used to name the mixed units. It is one way to fix the gauge, not a parameter beyond the basis: a different second root changes $E_{kl}$ by the allowed rescaling.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The spaces.</strong> The family space is the set of ordered $6$-tuples of lines summing to $\mathbb{C}^{6}$; the gauge is the fibre of the map from bases to families; the frame space is the set of Peirce bases modulo the common scale.</p>
+<p><strong>The dimensions.</strong></p>
+<p>$$
+\dim_{\mathbb{C}}(\text{families})=30,\qquad
+\dim_{\mathbb{C}}(\text{gauge})=5,\qquad
+\dim_{\mathbb{C}}(\text{frames})=35 .
+$$</p>
+<p><strong>The orbit–stabiliser reading.</strong> $PGL_6(\mathbb{C})$ acts transitively on the family space, and the stabiliser of a family is the diagonal torus modulo the scalars, of dimension $5$. Hence</p>
+<p>$$
+\dim PGL_6=35=30+5 .
+$$</p>
+<p>In real dimensions the count is $70=60+10$.</p>
+<p><strong>The projective reading.</strong> A family is an ordered $6$-tuple of points of $\mathbb{P}^{6-1}$ in general position. A Peirce basis is a lift of that tuple to a basis of $\mathbb{C}^{6}$, and the gauge is the freedom of the lift, one scale per point modulo the common scale. The family is the orbit; the gauge is the stabiliser; the basis is a point of the total space.</p>
+<h2 id="what-the-basis-is-not">What the Basis Is Not</h2>
+<p>The basis is not canonical: two bases of the same family differ by the gauge. It is not a second decomposition: the lines are the cut, and the $E_{kl}$ are one element per line. It is not a list of spinors: the units are elements of the algebra, while a spinor is a column of coordinates.</p>
+<h2 id="summary">Summary</h2>
+<p>A Peirce basis of $M_6(\mathbb{C})$ is a choice $E_{kl}\in A_{kl}$ with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_k$. It exists, and it is unique up to $E_{kl}\mapsto t_kt_l^{-1}E_{kl}$, a torus of dimension $5$. The coordinates multiply by the matrix product and transform by $X_{kl}\mapsto t_k^{-1}t_lX_{kl}$. The family has dimension $30$, the gauge $5$, the frame $35$, and the count is the orbit–stabiliser count of $PGL_6$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_k$</td>
+<td>A member of the family</td>
+</tr>
+<tr>
+<td>$A_{kl}$</td>
+<td>The Peirce line</td>
+</tr>
+<tr>
+<td>$E_{kl}$</td>
+<td>The chosen element of $A_{kl}$</td>
+</tr>
+<tr>
+<td>$X_{kl}$</td>
+<td>The Peirce coordinate</td>
+</tr>
+<tr>
+<td>$t_k$</td>
+<td>A gauge parameter</td>
+</tr>
+<tr>
+<td>$PGL_6(\mathbb{C})$</td>
+<td>The group of the family space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce units and the gauge.</li>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition of $M_6(\mathbb{C})$</a>, for the lines and the rule.</li>
+<li><a href="spinors-as-peirce-coordinates-in-m6c.html">Spinors as Peirce Coordinates in $M_6(\mathbb{C})$</a>, for the columns of the array.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</a>, for the simple nilpotents and the same torus.</li>
+<li><a href="the-peirce-basis-in-n-dimensions.html">The Peirce Basis in $n$ Dimensions</a>, for the general statement.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
