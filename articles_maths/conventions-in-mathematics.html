@@ -899,52 +899,148 @@ $$</p>
 <p>The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology; the plain and the Krein norms are the remaining two, complex and indefinite respectively. The signature column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. The split-biquaternion layer $\mathbb{H}_{\mathbb{D}}$ keeps the same four brackets, its coefficients being split-complex instead of complex, so the two bilinear norms take split-complex values and the two sesquilinear ones stay real.</p>
 <p><strong>The one-line rule.</strong> Write the bracket with the intrinsic conjugation of the layer: the star in $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$, where the natural sign is the identity; the natural sign in $\mathbb{H}$ and $\mathbb{H}_{\mathrm{s}}$, where the bar is the identity; the tessarine sign in $\mathbb{B}_{\mathrm{r}}$; and both marks, all four brackets, in $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$.</p>
 <h3 id="the-unitary-convention">The Unitary Convention</h3>
-<p>A unit element carries its own glyph, the <strong>$u$</strong> in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$: the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. <strong>The exponential is written $\exp(\cdot)$</strong>, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$. A unit element is an element of norm one, and the norm is the one in view: the glyph is the generic norm read at the central value $e_t$, so it names no set until the norm is named, and the four norms of the biquaternion layer give four level sets:</p>
+<p><strong>The convention is the unit-element convention, and the heading keeps its old name because the corpus cites it by that name.</strong> The glyphs $U$, $\tilde u$ and $\tilde U$, in the three cases of the case rule, mark an element of <strong>norm one</strong>. They do not mark a unitary element: the unitary condition is a different condition, stated at the end of the section.</p>
+<p>A unit element carries its own glyph, the <strong>$u$</strong> in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$: the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. <strong>The exponential is written $\exp(\cdot)$</strong>, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.</p>
+<p><strong>"Norm one" is fixed layer by layer.</strong> The glyphs name no set by themselves, and the layers do not share a norm. The table gives the norm of each layer and the set it cuts out at one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Glyph</th>
+<th>The norm</th>
+<th>The condition</th>
+<th>The norm-one elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>—</td>
+<td>$N(q)=q^{2}$</td>
+<td>$q=\pm1$</td>
+<td>$\{\pm1\}=O(1)$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$U$</td>
+<td>$\langle Q\rangle_{*}=Q\bar Q$</td>
+<td>$\lvert Q\rvert=1$</td>
+<td>$\mathrm{U}(1)=S^{1}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$, split-complex</td>
+<td>$U$</td>
+<td>$\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$</td>
+<td>$q^{2}-q'^{2}=1$</td>
+<td>the unit hyperbola, two branches</td>
+</tr>
+<tr>
+<td>$\mathbb{D}'$, dual</td>
+<td>$U$</td>
+<td>$\langle Q\rangle=q^{2}$</td>
+<td>$q=\pm1$, $q'$ free</td>
+<td>the two lines $\pm1+\mathrm{M}$; the identity component is the shear group</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}$, reduced biquaternion</td>
+<td>$U$</td>
+<td>$\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$</td>
+<td>$\langle\breve Q\rangle_{\mathrm{ts}}=1$</td>
+<td>the reduced-norm quadric</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, quaternion</td>
+<td>$\tilde u$</td>
+<td>$\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$</td>
+<td>$\langle\tilde q\rangle_{\natural}=1$</td>
+<td>$Sp(1)=S^{3}=\mathrm{SU}(2)$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$, split-quaternion</td>
+<td>$\tilde u$</td>
+<td>$\langle\tilde q\rangle_{\natural}$</td>
+<td>$\langle\tilde q\rangle_{\natural}=1$</td>
+<td>$\mathrm{SL}_{2}(\mathbb{R})$, non-compact</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, biquaternion</td>
+<td>$\tilde U$</td>
+<td>$\langle\tilde Q\rangle_{\natural}$ and no other</td>
+<td>$\langle\tilde Q\rangle_{\natural}=e_t$</td>
+<td>$\mathbb{B}^{\times}_{1}\cong\mathrm{SL}(2,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$, split-biquaternion</td>
+<td>$\tilde U$</td>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}=e_t$</td>
+<td>$S^{3}\times S^{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Where the norm is indefinite, the sign is not part of the glyph.</strong> In $\mathbb{D}$ the level set $\langle Q\rangle_{*}=1$ is the two-branched hyperbola; the polar decomposition of <em>Modulus–Unit Polar Decomposition of Split-Complex Numbers</em> takes its unit factor on $\lvert\langle u\rangle_{*}\rvert=1$, four branches, because the sign of the norm is a regime carried by that factor. In $\mathbb{B}_{\mathrm{r}}$ the reduced norm cuts the quadric of the table, while <em>Modulus–Unit Polar Decomposition of Reduced Biquaternions</em> puts its unit factor on the bar-unitary torus and states that the torus is not a norm-one set. The glyph follows the level set $\mathrm{Norm}=1$; a modulus-one factor of an indefinite layer is not a second meaning of the glyph.</p>
+<p><strong>The biquaternion layer uses $N$ and only $N$.</strong> The glyph $\tilde U$ is the $N$-norm-one element,</p>
+<p>$$
+\mathbb{B}^{\times}_{1}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=e_t\}\cong\mathrm{SL}(2,\mathbb{C}),
+$$</p>
+<p>and the other three norms of the layer are not unit-element conditions. Their level sets are named for completeness and carry no glyph:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Letter</th>
 <th>Norm</th>
-<th>the condition $\mathrm{Norm}(\tilde U)=e_t$</th>
-<th>the norm-one elements</th>
+<th>The level set</th>
+<th>What it is</th>
+<th>Defines $\tilde U$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$P$</td>
 <td>$\langle\tilde Q\rangle$</td>
-<td>$Q_t^2-Q_x^2-Q_y^2-Q_z^2=e_t$</td>
+<td>$Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}=e_t$</td>
 <td>the complex hyperboloid of the plain norm</td>
+<td>no</td>
 </tr>
 <tr>
 <td>$N$</td>
 <td>$\langle\tilde Q\rangle_{\natural}$</td>
-<td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2=e_t$</td>
-<td>$\mathbb{B}^{\times}_1$, the norm-one units</td>
+<td>$Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=e_t$</td>
+<td>$\mathbb{B}^{\times}_{1}$, the norm-one units</td>
+<td><strong>yes</strong></td>
 </tr>
 <tr>
 <td>$H$</td>
 <td>$\langle\tilde Q\rangle_{*}$</td>
-<td>$\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2=1$</td>
+<td>$\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}=1$</td>
 <td>the unit sphere of the Hermitian norm</td>
+<td>no</td>
 </tr>
 <tr>
 <td>$K$</td>
 <td>$\langle\tilde Q\rangle_{\natural*}$</td>
-<td>$\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2=1$</td>
+<td>$\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}=1$</td>
 <td>the indefinite level set of the Krein norm</td>
+<td>no</td>
 </tr>
 </tbody>
 </table></div>
-<p>The two bilinear norms are complex-valued, so their condition is $=e_t$; the two sesquilinear norms are real-valued, so theirs is $=1$. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and <strong>the rotors are these elements</strong>: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.</p>
-<p><strong>The group condition is narrower than the norm-one condition.</strong> Where the sesquilinear form is preserved, $\tilde U^{*}\tilde U=e_t$, the norm-one elements that do so form the <strong>unitary group</strong>, written without the tilde of an element,</p>
+<p><strong>Only $N$ decides invertibility</strong>, which is the reason it is the norm of the glyph: $\{N=0\}$ is the origin together with the zero divisors, while the other three degenerate sets contain units. The phrase "the norm in view" belongs to the polar decompositions, where the author names the norm in the text and takes its level set; it is not a licence to read one glyph under four norms.</p>
+<p><strong>Unitary is not norm one.</strong> The unitary group is</p>
 <p>$$
-\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}\cong \mathrm{U}(2)=S^{1}\cdot S^{3},\qquad S^{1}\cap S^{3}=\{\pm e_t\},
+\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong\mathrm{U}(2)=S^{1}\cdot S^{3},
 $$</p>
-<p>of real dimension $4$. The name <strong>unitary</strong> is the name of that group; the glyph $\tilde U$ is the wider norm-one element. The norm and the group condition exist only where their involution does: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, the bar, the tessarine sign and the star over $\mathbb{B}_{\mathrm{r}}$, and all four marks over $\mathbb{B}$ and the split-biquaternions.</p>
+<p>of real dimension four, written upright because it is a group. Its elements are <strong>unitary elements</strong>, not unit elements, and the two conditions are independent:</p>
+<ul>
+<li>neither set contains the other: $\mathrm{U}(2)\cap\mathrm{SL}(2,\mathbb{C})=\mathrm{SU}(2)=S^{3}$, the unit quaternions;</li>
+<li>the Hermitian level set $\{H=1\}$ contains $\mathrm{U}(2)$ strictly, since it is the unit sphere of $\mathbb{R}^{8}$ of dimension seven and $\mathrm{U}(2)$ has dimension four;</li>
+<li>the $N$-norm-one set $\mathbb{B}^{\times}_{1}$ does not contain $\mathrm{U}(2)$, because $\mathrm{U}(2)\not\subset\mathrm{SL}(2,\mathbb{C})$.</li>
+</ul>
+<p>A boost is a unit element and is not unitary. A unitary element whose determinant is not one is unitary and is not a unit element. The glyph asserts the first and never the second; an article that needs a unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.</p>
+<p><strong>The norm and the group condition exist only where their involution does</strong>: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, the bar, the tessarine sign and the star over $\mathbb{B}_{\mathrm{r}}$, and all four marks over $\mathbb{B}$ and the split-biquaternions.</p>
 <p><strong>The case rule splits the glyph</strong>, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.</p>
 <p><strong>The coordinates carry the letter of the unit element</strong>: in $\mathbb{B}$ it is $\tilde U = U_te_t + U_x\vec e_x + U_y\vec e_y + U_z\vec e_z$ with $U_\mu = u_\mu + iu'_\mu$ and vector part $\vec U = \vec u + i\vec u'$; in $\mathbb{H}$ it is $\tilde u = u_te_t + u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with real $u_\mu$. <strong>A coordinate carries the label of its direction</strong>, as the base does: the scalar coordinate is $U_t$ and the vector coordinates are $U_x, U_y, U_z$, and likewise $u_t, u_x, u_y, u_z$ for the quaternion-layer element $\tilde u$; a role label is written in the upright roman where the statement names a role. <strong>It is allowed to add subscripts when several unit elements are used</strong>, $\tilde U_1, \tilde U_2$.</p>
-<h3 id="the-letters-math837-and-math838-outside-the-layers">The Letters $U$ and $u$ Outside the Layers</h3>
+<h3 id="the-letters-math896-and-math897-outside-the-layers">The Letters $U$ and $u$ Outside the Layers</h3>
 <p>The reservation above is <strong>local to the layers of the biquaternion family</strong> — the complex, split-complex, dual and reduced biquaternion layers, the quaternion, split-quaternion, biquaternion and split-biquaternion layers, and the operator articles built on them. Inside them the glyphs $u$, $\tilde u$, $\vec u$, $U$, $\tilde U$ and $\vec U$ name unit elements and nothing else.</p>
 <p>Outside them the letter keeps a single shape for a single meaning, and the font carries the distinctions the layers do not need. The <strong>unitary group</strong> and the <strong>universal enveloping algebra</strong> are upright roman, $\mathrm{U}(n)$, $\mathrm{U}(H)$, $\mathrm{U}(\mathbb B)$, $\mathrm{U}(\mathfrak g)$; the <strong>group of units</strong> of a ring is the sans-serif $\mathsf{U}(R)$, which the corpus more usually writes $R^{\times}$; a <strong>family of sets</strong> — an open cover, a filter, a uniformity — is the script $\mathcal U$; and the <strong>up quark</strong> and the <strong>atomic mass unit</strong> are the upright roman $\mathrm u$. The italic letters $U$ and $u$ are reserved: outside the layers they never name an open set, a flow or evolution operator, a horocycle, a Jordan quadratic representation, a dual element, an internal energy or an unknown function.</p>
 <h2 id="the-operators">The Operators</h2>
@@ -995,7 +1091,7 @@ $$</p>
 <p><strong>An operator written as an array carries no tilde.</strong> The element rule above governs an operator that acts on the algebra by multiplication, because such an operator is the element. An operator written as a linear map on a coordinate column, or as a matrix in the $2\times2$ image, is an array: it carries no tilde, its elements keep theirs inside the argument, $\mathsf{M}_2(\tilde Q)$, and its adjoint is the dagger and not the star. A Kraus operator, where the physics corpus uses one, is written in the element reading, $\tilde K_l\in\mathbb{B}$, because it multiplies the state on both sides; its matrix image $\mathsf{M}_2(\tilde K_l)$ carries no tilde.</p>
 <p><strong>The Fock exception.</strong> A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in §<em>The Superscripts</em>.</p>
 <h2 id="conventions-for-derivation">Conventions for Derivation</h2>
-<p>In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm r}$; it never denotes a derivative. The derivative with respect to a coordinate is written $\partial/\partial Q_\mu$, and in a fixed direction $\partial/\partial Q_t$, $\partial/\partial Q_x$, $\partial/\partial Q_y$ or $\partial/\partial Q_z$; a coordinate is never left under the $\partial$, so none of the abbreviated spellings occurs, and the rule admits no exception, neither on a free index nor on any other. A derivative with respect to a variable that is not a coordinate is written the same way, its variable named in full: the Lagrangian derivative puts the function in the numerator, $\partial L/\partial w$, so that where a PDE text writes $L_u$ and $L_p$ the calculus-of-variations and partial-differential-equation articles write $\partial L/\partial w$ and $\partial L/\partial p$; the second derivative has the same shape, $\partial^2 L/\partial w^2$. The function is named in the numerator whenever it is a letter of its own, as for a Lagrangian, a Hamiltonian or a generating function; the slashed form $\partial/\partial u$ is kept where the symbol is an operator or where the operand is a compound expression rather than a single letter. The derivative $\partial/\partial Q_t$ is the derivative along the fourth coordinate: on the material sector, where $Q_t=iq'_t$, it equals $-i\,\partial/\partial q'_t$, and $q'_t$ is a real coefficient and not one of the coordinates, so the derivative with respect to it is written out as $\partial/\partial q'_t$.</p>
+<p>In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm b}$; it never denotes a derivative. The derivative with respect to a coordinate is written $\partial/\partial Q_\mu$, and in a fixed direction $\partial/\partial Q_t$, $\partial/\partial Q_x$, $\partial/\partial Q_y$ or $\partial/\partial Q_z$; a coordinate is never left under the $\partial$, so none of the abbreviated spellings occurs, and the rule admits no exception, neither on a free index nor on any other. A derivative with respect to a variable that is not a coordinate is written the same way, its variable named in full: the Lagrangian derivative puts the function in the numerator, $\partial L/\partial w$, so that where a PDE text writes $L_u$ and $L_p$ the calculus-of-variations and partial-differential-equation articles write $\partial L/\partial w$ and $\partial L/\partial p$; the second derivative has the same shape, $\partial^2 L/\partial w^2$. The function is named in the numerator whenever it is a letter of its own, as for a Lagrangian, a Hamiltonian or a generating function; the slashed form $\partial/\partial u$ is kept where the symbol is an operator or where the operand is a compound expression rather than a single letter. The derivative $\partial/\partial Q_t$ is the derivative along the fourth coordinate: on the material sector, where $Q_t=iq'_t$, it equals $-i\,\partial/\partial q'_t$, and $q'_t$ is a real coefficient and not one of the coordinates, so the derivative with respect to it is written out as $\partial/\partial q'_t$.</p>
 <p><strong>These studies do not use the covariant index conventions: subscripts are not coordinate indices or derivatives, partial derivatives are written with explicit operators, and structural information is carried by the algebra of the objects themselves.</strong></p>
 <h3 id="the-derivative-marks">The Derivative Marks</h3>
 <p><strong>No dot.</strong> No derivative is written with a dot. The total derivative with respect to a parameter is written with a fraction and the parameter named: $\frac{d}{dt}$ for the parameter $t$, $\frac{d}{d\tau}$ for the parameter $\tau$, $\frac{d}{dt_r}$ for the parameter $t_r$; inline, the same derivative is written $dq/dt$. The partial derivative is written $\frac{\partial}{\partial t}$ or, inline, $\partial/\partial t$. A higher derivative is written $\frac{d^2}{dt^2}$, $\frac{\partial^2}{\partial t^2}$. The derivative binds to its whole argument, so a power is written outside a bracket, $\left(\frac{dx}{dt}\right)^2$, never as $\frac{dx^2}{dt}$.</p>
@@ -1141,7 +1237,7 @@ $$</p>
 <p><strong>A subscript is never a partial derivative.</strong> The subscript marks a component or a label, a partial derivative is written with $\partial$, and the rule is fixed in §<em>Conventions for Derivation</em>.</p>
 <p><strong>A coefficient carries a letter index and an element a number.</strong> In the quaternionic layers a coefficient is indexed by the direction it multiplies, $Q_x$ and $q_x$, and an element that is counted carries a number on its tilde, $\tilde Q_1, \tilde Q_2$. In the commutative layers, which have no direction, both the element and its coefficients carry the number of the element, $Q_1 = q_1 + iq'_1$. The two indices are of different kinds, a letter against a number, so a coefficient index is never read as the number of an element, nor the reverse.</p>
 <p><strong>It is allowed to add subscripts when several elements of the same kind are used.</strong> The permission covers the units, the roots, the idempotents and the nilpotents as well as the general elements: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.</p>
-<p><strong>A subscript counts, or it names.</strong> A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a <strong>role label</strong>, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm r}$.</p>
+<p><strong>A subscript counts, or it names.</strong> A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a <strong>role label</strong>, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm b}$.</p>
 <p><strong>A role-labelled element carries its label in its coefficients.</strong> The generic element-valued field is $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and its components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$: the label $\mathrm f$ belongs to the element and is carried once into the component subscript, beside the direction, so that the components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$; it does not count a family. A numbered family is unaffected, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$.</p>
 <p><strong>A sign is a subscript where the statement needs one</strong>, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_+$ and $\tilde\Pi_-$. In the reduced biquaternion layer the sign belongs to the idempotent pair and to its coordinates, $\Pi_\pm$, $Q_{+}$ and $Q_{-}$, the two basis coordinates carrying the triangles, $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, and a numbered element putting its number first in either case, $Q_{1+}$ and $Q_{1\blacktriangle}$; the element they build is $\breve Q$. The sign is read with the glyph, and no identity is implied between the pairs: $\tilde Q_\pm$ names the two quaternionic components of a split-biquaternion, $\vec Q_\pm$ their vector parts, and $Q_\pm$ the idempotent coordinates of $\breve Q$.</p>
 <p>The forms a subscript takes are these.</p>
@@ -1171,7 +1267,7 @@ $$</p>
 </tr>
 <tr>
 <td>an upright word</td>
-<td>$\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm r}$</td>
+<td>$\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm b}$</td>
 </tr>
 <tr>
 <td>a grouped expression</td>
@@ -1284,8 +1380,8 @@ $$</p>
 <li>Tables are Markdown tables. A LaTeX array is never used for a table.</li>
 <li>Every heading that introduces a comparison or a classification is a real <code>###</code> heading, and the objects are defined before they are tabulated.</li>
 <li><strong>Bold marks the result.</strong> In a Remark that states a verdict, the clause carrying the outcome is
-  set in bold, <code>**...**</code>, the object of the sentence staying in plain roman: <em>the subspace <strong>is a
-  commutative Jordan algebra over $\mathbb{R}$ of degree two</strong></em>. A statement already displayed as a
+  set in bold, <code>**...**</code>, the object of the sentence staying in plain roman: <em>the subspace </em><em>is a
+  commutative Jordan algebra over $\mathbb{R}$ of degree two</em>**. A statement already displayed as a
   Theorem, a Proposition or a Proof is not bolded; the convention applies to the prose of a Remark and
   to the lead sentence of a section that states an outcome.</li>
 <li>The third derivative is written <code>d^3/dt^3</code>, and the macro <code>\slashed</code> is available. The characters <code>|</code>, <code>{</code>, <code>}</code>, <code>&lt;</code> and <code>&gt;</code> inside mathematics need no escaping.</li>
@@ -1512,7 +1608,7 @@ with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter
 </tr>
 <tr>
 <td>$\tilde U$, $\vec U$</td>
-<td>A unit element of the biquaternion or split-biquaternion layer, $\mathrm{Norm}(\tilde U)=e_t$, and its pure case, of norm one</td>
+<td>A unit element of the biquaternion or split-biquaternion layer, $\langle\tilde U\rangle_{\natural}=e_t$ (the $N$-norm), and its pure case, of norm one</td>
 </tr>
 <tr>
 <td>$U$</td>

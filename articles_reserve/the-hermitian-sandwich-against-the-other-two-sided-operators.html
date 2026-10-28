@@ -80,12 +80,13 @@ $$</p>
 <blockquote>
 <p>Replace only where the article uses the map as a transport of an object — a state, a field, a vector — and never where it uses the map as an automorphism.</p>
 </blockquote>
-<p>The transports that pass that test now carry the Hermitian sandwich. What remains is forty-three occurrences in thirteen articles: thirteen <strong>conceptually different</strong>, where the parameter is unitary, the two maps agree numerically, and the formula still states an automorphism; and thirty <strong>structurally impossible</strong>, where no parameter gives the map, or the claim ranges over a domain on which the two differ.</p>
+<p>The transports that pass that test now carry the Hermitian sandwich. What remains is nineteen occurrences in nine articles: nine <strong>conceptually different</strong>, where the parameter is unitary, the two maps agree numerically, and the formula still states an automorphism; and ten <strong>structurally impossible</strong>, where no parameter gives the map, or the claim ranges over a domain on which the two differ.</p>
 <p>The GNS construction is no longer in the count. It has been rewritten in Hermitian form in <a href="../articles_physics/the-hermitian-gns-construction-in-the-biquaternion-framework.html">The Hermitian GNS Construction in the Biquaternion Framework</a>: the state is the Hermitian pairing $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$, the modular Hamiltonian is $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and the modular operator is $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$. The issue is solved and the entry is removed.</p>
 <p>The Spectral Regularity article is also solved, by writing its central-element formula on the unitary slice. The claim in words stays "fixed by every inner automorphism", which for a central element holds for every unit. The displayed form, $\tilde U\tilde Q\tilde U^{*}=\tilde Q$ for every unitary $\tilde U$, is the Hermitian-adjoint form, and on that slice the adjoint is the inverse. The superselection reading is unchanged. It is removed from the count.</p>
 <p>The Lorentz article is purged as well, without changing what its formulas mean. The general norm automorphism is written $T_{A,B}\tilde Q=A\tilde QB^{*}$ with $\det A\,\overline{\det B}=1$, and the inner automorphisms are the subfamily $AB^{*}=I$. The right factor is still an independent parameter; it is constrained to be the adjoint-inverse of the left, so the map remains an automorphism of the algebra and is not replaced by a single-parameter congruence. The rotor action was already the Hermitian sandwich. Its three occurrences are removed from the count.</p>
-<p>The reflection formula in <em>Frames, Rotations and the Lorentz Group</em> is also free of the operator inverse, for a different reason. There the parameter is a unit <strong>vector</strong>, so the quaternion conjugate <strong>is</strong> the inverse, and $-v\,X\,v^{\natural}$ is the same map as the old $-v\,X\,v^{-1}$. The map is unchanged: it is minus the natural sandwich by $v$, and it stays structurally impossible for the Hermitian sandwich because of the minus sign. Only its class changes, from the inner conjugation to the natural sandwich; the two occurrences stay in the count.</p>
+<p>The reflection formula in <em>Frames, Rotations and the Lorentz Group</em> is purged as well. The parameter is a real unit vector $v$ of the spatial slice, so $v^{*}=v$ and $v^{2}=-e_t$. The reflection is the Hermitian sandwich $\rho_v(X)=vXv^{*}=\Theta_v(X)$; the spacelike normal makes it minus the inner automorphism by $v$. The two occurrences are removed from the count.</p>
 <p>The Pin action in <em>The Reflection and the Rotation in Biquaternionic Form</em> is purged as well. It is now written $\rho(u):x\mapsto-\epsilon(u)\,u\,x\,u$ with $u^{2}=\epsilon(u)I_4$ and $\epsilon(u)=\pm1$; a unit normal has inverse $\epsilon(u)u$, so the formula uses only the Clifford product and the sign of the normal. The article's one occurrence is removed from the count.</p>
+<p>The chiral articles are purged as well. <em>Custodial Symmetry</em>, <em>The Nonlinear Sigma Model</em> and <em>The Pion and the Chiral Lagrangian</em> now write $g_LXg_R^{*}$ and $X^{*}dX$ throughout. On the unit real quaternions, where $g^{*}=g^{-1}$, the formulas keep their meaning, and the two-parameter action is an adjoint sandwich on both sides, so it is not a non-Hermitian operator. The three articles are removed from the count; each carries a short note stating why the second parameter is needed for its physics.</p>
 <p>The gauge field strength is the archetype of the first class. On $SU(2)$, $\tilde U F_{\mu\nu}\tilde U^{-1}$ and $\tilde U F_{\mu\nu}\tilde U^{*}$ are the same number; the first is the adjoint law that makes the covariant derivative covariant and the Bianchi identity hold, and the second is a congruence that would rescale the field and break the bracket. Replacing it is not a notation change; it is a different gauge theory. It is treated in full in §<em>The Gauge Case in Detail</em>.</p>
 <h2 id="the-two-sided-operators">The Two-Sided Operators</h2>
 <p>The general two-sided operator with two independent parameters is</p>
@@ -128,9 +129,9 @@ $$</p>
 <td>inverse, with the parity twist on the left</td>
 </tr>
 <tr>
-<td>two-parameter product</td>
-<td>$g_L\,X\,g_R^{-1}$</td>
-<td>an independent right parameter</td>
+<td>two-parameter adjoint sandwich</td>
+<td>$g_L\,X\,g_R^{*}$</td>
+<td>an independent right parameter, itself an adjoint</td>
 </tr>
 </tbody>
 </table></div>
@@ -168,7 +169,7 @@ $$</p>
 <p>which differs from $-\mathrm{Ad}_{\tilde U}X$ whenever $\tilde U^{2}\neq e_t$. This is why the Bloch article cannot use conjugation: the Lorentz action on the material sector must preserve the sector, and only the sandwich does.</p>
 <p><strong>The three structural obstructions.</strong> Beyond the polar criterion there are three obstructions that no choice of parameter can remove.</p>
 <ul>
-<li><strong>Two parameters.</strong> $\Theta_Q=g_LXg_R^{-1}$ forces $g_R=\lambda g_L^{*-1}$ with $\lambda>0$, which is the diagonal $g_L=g_R$ when both are unitary. The off-diagonal chiral action is not a Hermitian sandwich at any parameter.</li>
+<li><strong>Two parameters.</strong> The chiral action is $g_LXg_R^{*}$ with independent parameters, and the Hermitian sandwich is its diagonal $g_R=g_L$. One parameter has three real dimensions and the pair has six, so no single parameter reproduces the off-diagonal action; the adjoint on the right does not supply the missing parameter. On the unit real quaternions the adjoint is the group inverse, and the formula is the usual chiral action with no operator inverse.</li>
 <li><strong>Conjugate-linearity.</strong> $aX^{*}b$ is conjugate-linear in $X$; the Hermitian sandwich is linear. They can never be equal as maps. When $b=a^{*}$, however, $aX^{*}a^{*}=\Theta_a(X^{*})$: the sesquilinear sandwich is the Hermitian sandwich composed with the involution.</li>
 <li><strong>Odd elements and signs.</strong> $\alpha$ is the identity on $\mathbb B$, because every biquaternion is even. The signed forms differ from the unsigned ones only on the odd part of $\mathrm{Cl}_{1,3}$. A minus sign cannot be produced either: $\mathrm{Sc}(QQ^{*})>0$ for every nonzero $Q$, so no Hermitian sandwich equals $-\Theta_Q$.</li>
 </ul>
@@ -198,7 +199,7 @@ $$</p>
 <td>0/25</td>
 </tr>
 <tr>
-<td>two-parameter product equals $\Theta$</td>
+<td>two-parameter adjoint equals $\Theta$</td>
 <td>48/100, exactly the diagonal draws</td>
 </tr>
 <tr>
@@ -252,35 +253,11 @@ $$</p>
 </tr>
 <tr>
 <td></td>
-<td>chiral two-parameter action</td>
-<td></td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial (2)</a><br><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">Pion (2)</a></td>
-</tr>
-<tr>
-<td></td>
 <td><strong>inner conjugation, total</strong></td>
 <td></td>
-<td style="text-align: right;"><strong>13</strong></td>
 <td style="text-align: right;"><strong>9</strong></td>
+<td style="text-align: right;"><strong>7</strong></td>
 <td></td>
-</tr>
-<tr>
-<td>natural sandwich</td>
-<td>reflections</td>
-<td>$Q\,X\,Q^{\natural}$</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td><a href="../articles_physics/frames-rotations-and-the-lorentz-group.html">Frames (2)</a></td>
-</tr>
-<tr>
-<td>two-parameter product</td>
-<td>chiral two-parameter action</td>
-<td>$g_L\,X\,g_R^{-1}$</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">3</td>
-<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial (9)</a><br><a href="../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html">Nonlinear Sigma (6)</a><br><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">Pion (3)</a></td>
 </tr>
 <tr>
 <td>signed Hermitian</td>
@@ -299,22 +276,22 @@ $$</p>
 <td><a href="../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form.html">Graded Signed Hermitian (2)</a><br><a href="../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-inner-conjugation-in-biquaternionic-form.html">Graded Signed Inner (3)</a></td>
 </tr>
 <tr>
-<td><strong>total non-Hermitian</strong></td>
+<td><strong>total outside the one-parameter sandwich</strong></td>
 <td></td>
 <td></td>
-<td style="text-align: right;"><strong>43</strong></td>
-<td style="text-align: right;"><strong>13</strong></td>
-<td>16 class assignments</td>
+<td style="text-align: right;"><strong>19</strong></td>
+<td style="text-align: right;"><strong>9</strong></td>
+<td>10 class assignments</td>
 </tr>
 </tbody>
 </table></div>
-<p>The reference form stands outside the table: the Hermitian sandwich $Q\,X\,Q^{*}$ itself occurs 309 times in 82 articles and is the form against which the other classes are measured.</p>
-<p>An article can carry two classes. The article column counts an article once in the row where its occurrences are listed, so the rows sum to 16 article assignments over 13 distinct articles: <em>Custodial Symmetry</em> and <em>The Pion and the Chiral Lagrangian</em> carry an inner conjugation and a two-parameter product, and <em>The Graded Algebra with Signed Hermitian Adjoint</em> carries a signed Hermitian and a signed inner conjugation. The sesquilinear form occurs nowhere as a map on the algebra. The natural sandwich has its own row: the reflection in <em>Frames, Rotations and the Lorentz Group</em> is minus the natural sandwich by a unit vector, $-v\,X\,v^{\natural}$, which the article originally spelled with the inverse of $v$; the two spellings are the same element on the norm-one slice, so the map is unchanged and the occurrences stay counted. The three formulas that once looked like occurrences, in <em>The Relativistic Two-Body Problem</em> and its exercise, carry the rest-frame label on a four-momentum, now written $\tilde P^{\rm CM}$; each is an ordinary Hermitian sandwich, $\Theta_{\tilde U_{\rm b}}(\tilde P_a^{\rm CM})$, not a conjugate-linear map. The Hermitian row counts the one-symbol spelling $Q\,X\,Q^{*}$, so they are not additional entries there.</p>
-<p>Of the 43, thirteen are conceptually different and thirty are structurally impossible. Each is entered below with its sentence, its parameter and its obstruction.</p>
+<p>The reference form stands outside the table: the Hermitian sandwich $Q\,X\,Q^{*}$ is the form against which the other classes are measured.</p>
+<p>An article can carry two classes. The article column counts an article once in the row where its occurrences are listed, so the rows sum to 10 article assignments over 9 distinct articles: <em>The Graded Algebra with Signed Hermitian Adjoint</em> carries a signed Hermitian and a signed inner conjugation. The sesquilinear form occurs nowhere as a map on the algebra. The natural sandwich has no remaining occurrences: the reflection in <em>Frames, Rotations and the Lorentz Group</em> is the Hermitian sandwich $v\,X\,v^{*}$ by a real spatial unit vector, because the conjugate $v^{*}$ equals $v$ there. The three formulas that once looked like occurrences, in <em>The Relativistic Two-Body Problem</em> and its exercise, carry the rest-frame label on a four-momentum, now written $\tilde P^{\rm CM}$; each is an ordinary Hermitian sandwich, $\Theta_{\tilde U_{\rm b}}(\tilde P_a^{\rm CM})$, not a conjugate-linear map. The Hermitian row counts the one-symbol spelling $Q\,X\,Q^{*}$, so they are not additional entries there.</p>
+<p>Of the 19, nine are conceptually different and ten are structurally impossible. Each is entered below with its sentence, its parameter and its obstruction.</p>
 <p>Three shapes are outside the count because the middle factor is not an element of the algebra: $\tilde R\,d\tilde R^{\natural}$ in <em>Noether's Theorem</em> and <em>The Relativistic Particle</em>, where the middle factor is the exterior derivative; $\lambda\,D\,\lambda^{-1}$ in <em>Gauge Redundancy and the Information in the Gauge Orbit</em>, where it is a covariant derivative; and $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where the inverse stands on the left. Three further products are not operators on $\mathbb B$: $C\,N\,C^{-1}$ in <em>The Time-Harmonic Maxwell Operator</em>, $U\,G\,U^{-1}$ in <em>Chiral Fermions</em>, and $T\,H\,T^{-1}$ in <em>Kramers Degeneracy</em>.</p>
 <h2 id="the-occurrences-that-remain">The Occurrences That Remain</h2>
-<p>The forty-three occurrences that remain, in thirteen articles, fail the conceptual test. Thirteen of them are <strong>conceptually different</strong>: the parameter is unitary, the two maps agree numerically, and the formula nevertheless states an automorphism. Thirty are <strong>structurally impossible</strong>: no parameter gives the map, or the claim ranges over a domain on which the two differ.</p>
-<p>The groups below follow the concept, not the syntax. The first is the gauge field strength, the archetype of the conceptual class and the one case where the replacement would require a new theory. The second is the chiral two-parameter action, conceptual on its diagonal and structural off it. Two more are structural: a minus sign and an odd element.</p>
+<p>The nineteen occurrences that remain, in nine articles, fail the conceptual test. Nine of them are <strong>conceptually different</strong>: the parameter is unitary, the two maps agree numerically, and the formula nevertheless states an automorphism. Ten are <strong>structurally impossible</strong>: no parameter gives the map, or the claim ranges over a domain on which the two differ.</p>
+<p>The groups below follow the concept, not the syntax. The first is the gauge field strength, the archetype of the conceptual class and the one case where the replacement would require a new theory. The second is the odd element, where the sign is the physics.</p>
 <h3 id="the-gauge-field-strength-the-adjoint-representation">The gauge field strength: the adjoint representation</h3>
 <p>Six of the seven articles use $F\mapsto UFU^{-1}$ as the adjoint law of a gauge group; the seventh averages the same action over the group. The inverse is not a notation for the sandwich, because the law is derived from the Lie algebra and not posited. The field strength is $F=dA+i\kappa\,A\wedge A$; under $A\mapsto UAU^{-1}+U\,dU^{-1}$ the commutator term transforms as $U[A,A]U^{-1}$ only because $U$ preserves the product. A congruence preserves the Hermitian form, not the bracket, and leaves the derivation without a leg to stand on. The rewrite that would license the replacement is a different theory — a gauge theory whose group acts by congruences of the Hermitian form — and no article in the corpus undertakes it. On $SU(2)$ the numbers are identical; that is precisely why the confusion is possible.</p>
 <h4 id="1-non-abelian-gauge-fields-in-biquaternionic-form">1. <a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a></h4>
@@ -345,33 +322,13 @@ $$</p>
 <p><strong>Use.</strong> The colour-singlet conditional expectation $E(\tilde Q)=\int_G dU\,U\tilde Q U^{-1}$ with the normalised Haar measure; it is the idempotent projection onto the colour-neutral subalgebra.</p>
 <p><strong>Why not the sandwich.</strong> The integral is an average of automorphisms, and its fixed-point algebra is the commutant of the group. On $SU(2)$ each integrand equals a sandwich, but replacing the integrand would turn a group average into an average of congruences, and the fixed-point set would no longer be the commutant.</p>
 <p><strong>Verdict.</strong> Conceptually different, 1/1.</p>
-<h3 id="the-chiral-two-parameter-action">The chiral two-parameter action</h3>
-<p>The two-parameter product $g_LXg_R^{-1}$ is the $SU(2)_L\times SU(2)_R$ action. A Hermitian sandwich has one parameter, so it can reproduce only the diagonal $SU(2)_V$. The diagonal occurrences are conceptually different; the off-diagonal ones are structurally impossible.</p>
-<h4 id="8-custodial-symmetry-and-the-math152-parameter-in-biquaternionic-form">8. <a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form</a></h4>
-<p><strong>Use.</strong> Eleven occurrences. Two are the diagonal action $g\tilde Qg^{-1}$ with $g\in SU(2)$, the custodial subgroup. Nine are the full left–right action $\tilde Q\mapsto g_L\tilde Q g_R^{-1}$ with $g_{L,R}\in\mathbb H^1_{\mathbb B}$, including the invariance of the norm and the summary table.</p>
-<p><strong>Why not the sandwich.</strong> The diagonal is the adjoint action of the unbroken isospin: an automorphism, hence conceptually different even though $g$ is unitary. The off-diagonal action has two independent parameters and is not a sandwich at any parameter; the article's central object is that action and its breaking to the diagonal.</p>
-<p><strong>Verdict.</strong> Conceptually different 2/11 (diagonal), structurally impossible 9/11 (off-diagonal).</p>
-<h4 id="9-the-nonlinear-sigma-model-in-biquaternionic-form">9. <a href="../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html">The Nonlinear Sigma Model in Biquaternionic Form</a></h4>
-<p><strong>Use.</strong> Six occurrences of the global chiral symmetry $\tilde U\mapsto g_L\tilde U g_R^{-1}$; the invariant metric is built from $\tilde U^{-1}d\tilde U$, and the invariance uses the cancellation of $g_R$ on the two sides.</p>
-<p><strong>Why not the sandwich.</strong> The invariance argument is a two-sided cancellation that a single sandwich cannot reproduce when $g_L\neq g_R$. The unbroken diagonal $SU(2)_V$ is a Hermitian sandwich, but it is not the symmetry the article is about.</p>
-<p><strong>Verdict.</strong> Structurally impossible, 0/6.</p>
-<h4 id="10-the-pion-and-the-chiral-lagrangian-in-biquaternionic-form">10. <a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></h4>
-<p><strong>Use.</strong> Five occurrences: two of the unbroken isospin $g_V\tilde U g_V^{-1}$ with $g_V\in SU(2)$, three of the chiral transformation $\tilde U\mapsto g_L\tilde U g_R^{-1}$.</p>
-<p><strong>Why not the sandwich.</strong> The isospin occurrences are the adjoint action of the unbroken subgroup, conceptually different. The chiral occurrences have two parameters and are structurally impossible.</p>
-<p><strong>Verdict.</strong> Conceptually different 2/5, structurally impossible 3/5.</p>
-<h3 id="reflections-the-minus-sign">Reflections: the minus sign</h3>
-<p>A reflection is not a Hermitian sandwich. The minus sign is not a normalisation: it is the difference between a rotation and a reflection, and the scalar part of a Hermitian sandwich is a sum of squares, hence positive.</p>
-<h4 id="11-frames-rotations-and-the-lorentz-group">11. <a href="../articles_physics/frames-rotations-and-the-lorentz-group.html">Frames, Rotations and the Lorentz Group</a></h4>
-<p><strong>Use.</strong> Two occurrences of the signed natural sandwich, $\rho_v(\tilde Q_3)=-v\tilde Q_3v^{\natural}$ with $v\,v^{\natural}=e_t$: the display and its summary table.</p>
-<p><strong>Why not the sandwich.</strong> The minus sign cannot be produced by any Hermitian sandwich parameter. On the central element $e_t$ a Hermitian sandwich gives $\Theta_W(e_t)=WW^{*}$, whose scalar part is $\sum_i\lvert w_i\rvert^{2}>0$, whereas the reflection gives $-e_t$. The reflection also reverses orientation on the vector subspace, where a Hermitian sandwich is a rotation. Writing the right factor as the quaternion conjugate changes no value on the norm-one slice, so the obstruction is the sign, not the notation.</p>
-<p><strong>Verdict.</strong> Structurally impossible, 0/2.</p>
 <h3 id="odd-elements-and-the-parity-twist">Odd elements and the parity twist</h3>
 <p>The signed forms are different operators only outside the biquaternion algebra. Every element of $\mathbb B$ is even, so $\alpha$ is the identity there and $\Theta^{\alpha}=\Theta$; the sign is visible only on the odd part of $\mathrm{Cl}_{1,3}$.</p>
-<h4 id="12-the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form">12. <a href="../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form.html">The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form</a></h4>
+<h4 id="8-the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form">8. <a href="../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form.html">The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form</a></h4>
 <p><strong>Use.</strong> Seven occurrences: five of $\Theta^{\alpha}_x(y)=\alpha(x)yx^{*}$ and two of $\alpha(x)yx^{-1}$, on $\mathrm{Cl}_{1,3}=\mathrm{Cl}^{0}\oplus\mathrm{Cl}^{1}$.</p>
 <p><strong>Why not the sandwich.</strong> The odd sector is the subject, and the sign is the physics. The article states the boundary itself: on $\mathbb B$ the signed and unsigned forms coincide, and every computation inside $\mathbb B$ is a computation with the Hermitian sandwich.</p>
 <p><strong>Verdict.</strong> Structurally impossible, 0/7.</p>
-<h4 id="13-the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-inner-conjugation-in-biquaternionic-form">13. <a href="../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-inner-conjugation-in-biquaternionic-form.html">The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form</a></h4>
+<h4 id="9-the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-inner-conjugation-in-biquaternionic-form">9. <a href="../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-inner-conjugation-in-biquaternionic-form.html">The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form</a></h4>
 <p><strong>Use.</strong> Three occurrences of $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}=(\Omega x\Omega^{-1})yx^{-1}$, the parity-carrying conjugation by the volume element.</p>
 <p><strong>Why not the sandwich.</strong> The twist is a conjugation by the pseudoscalar on the left and an inverse on the right; neither factor is available from a Hermitian sandwich.</p>
 <p><strong>Verdict.</strong> Structurally impossible, 0/3.</p>
@@ -388,9 +345,9 @@ $$</p>
 <li><strong>A congruence gauge theory.</strong> Take the congruence as the primitive action, let the gauge parameter be any unit, and define the field strength, the covariant derivative, the action and the trace so that they transform by congruence. This is a different theory: its gauge group is larger, its field strength scales, and its invariants are different. No article in the corpus does this.</li>
 <li><strong>An explicit restriction.</strong> Keep the adjoint law but state it only for the unitary slice, where the two forms agree, and add the remark that the congruence is the continuation off the slice. This is a clarification, not a replacement, and it is the honest form of the statement "the two coincide on $SU(2)$".</li>
 </ol>
-<p>Until one of these is done, the gauge occurrences stay in the adjoint form. The same reasoning applies, with less force, to the diagonal chiral actions of §<em>The chiral two-parameter action</em>: there too the formula names an automorphism, and the replacement would be a change of subject rather than a change of notation.</p>
+<p>Until one of these is done, the gauge occurrences stay in the adjoint form.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>43 occurrences in 13 articles: 13 conceptually different, 30 structurally impossible.</strong></p>
+<p><strong>19 occurrences in 9 articles: 9 conceptually different, 10 structurally impossible.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -453,41 +410,13 @@ $$</p>
 </tr>
 <tr>
 <td>8</td>
-<td><a href="../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form</a></td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">9</td>
-</tr>
-<tr>
-<td>9</td>
-<td><a href="../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html">The Nonlinear Sigma Model in Biquaternionic Form</a></td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr>
-<td>10</td>
-<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr>
-<td>11</td>
-<td><a href="../articles_physics/frames-rotations-and-the-lorentz-group.html">Frames, Rotations and the Lorentz Group</a></td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr>
-<td>12</td>
 <td><a href="../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form.html">The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form</a></td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">7</td>
 </tr>
 <tr>
-<td>13</td>
+<td>9</td>
 <td><a href="../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-inner-conjugation-in-biquaternionic-form.html">The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form</a></td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">0</td>
@@ -496,9 +425,9 @@ $$</p>
 <tr>
 <td></td>
 <td><strong>total</strong></td>
-<td style="text-align: right;"><strong>43</strong></td>
-<td style="text-align: right;"><strong>13</strong></td>
-<td style="text-align: right;"><strong>30</strong></td>
+<td style="text-align: right;"><strong>19</strong></td>
+<td style="text-align: right;"><strong>9</strong></td>
+<td style="text-align: right;"><strong>10</strong></td>
 </tr>
 </tbody>
 </table></div>
