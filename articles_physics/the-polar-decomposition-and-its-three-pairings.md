@@ -206,6 +206,32 @@ with $a$ the scalar coordinate and $b_\parallel$ the component of the vector par
 
 The phase at $\alpha=\pi/2$ is multiplication by $i$: it exchanges the two sectors and reverses the norm. The rotor at $\theta=2\pi$ is $-e_t$, the sign a spinor picks up after a full turn.
 
+### The Normalised Bloch Action
+
+On the informational sector the congruence acts on the states $\tilde{Ϛ}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec r$ of the Bloch ball, $|\vec r|\le1$.
+
+The rotor conjugates and fixes the scalar part, so it rotates the ball by $\theta$ about $\vec u_{\mathrm r}$ and preserves the trace and the radius. The phase is central and cancels. The scale multiplies $(a,\vec b)$ by $r^{2}$, hence the trace by $r^{2}$, and leaves the radius unchanged. The boost mixes the scalar and the parallel parts and leaves the transverse part alone:
+
+$$
+a_2=a\cosh\psi_w+b_\parallel\sinh\psi_w,
+\qquad
+b_{\parallel,2}=b_\parallel\cosh\psi_w+a\sinh\psi_w,
+\qquad
+\vec b_{\perp,2}=\vec b_\perp .
+$$
+
+It therefore changes the trace. Normalised by $a_2$, the state moves on the ball by velocity addition along the boost axis,
+
+$$
+r'_\parallel=\frac{r_\parallel+\tanh\psi_w}{1+r_\parallel\tanh\psi_w},
+\qquad
+\vec r'_\perp=\frac{\vec r_\perp}{\cosh\psi_w+r_\parallel\sinh\psi_w},
+$$
+
+with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$ and $\vec r=\vec b/a$. The poles $\pm\vec u_{\mathrm b}$ are fixed and the boundary sphere is preserved; every interior point moves toward $+\vec u_{\mathrm b}$. The boost is a flow of the ball into itself, with strength $\tanh\psi_w$, and not a rotation of it.
+
+The split is therefore clean on the state space. The rotor rotates, the boost translates hyperbolically, the scale dilates the trace, and the phase is invisible. The rotor is the only factor that acts nontrivially and keeps a state on the slice; the boost and the scale carry it off, and the phase does nothing.
+
 ## The Factor of Two
 
 The word's third factor has one slot and two jobs.
@@ -303,4 +329,5 @@ The pairings read the same data under different headings, and the readings are d
 - [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the state defined by an operator and the modular reading.
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass shell and the complex angle.
 - [The Polar Decomposition of a Jones Matrix: Diattenuation, Retardance and Polarizers](the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.html), for the Cartan pair as diattenuator and retarder, and the polarizer as its cone case.
+- [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the Cartan pair as strength and backaction and the effect spectrum $r^{2}e^{\pm\psi_w}$.
 - [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), §*The Polar Word and the Three Pairings*, for the frozen notation and the domains.

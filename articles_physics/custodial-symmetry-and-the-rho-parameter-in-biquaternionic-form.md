@@ -13,15 +13,15 @@ and its measured value is one to better than a part in a thousand. In the Standa
 This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contributes to custodial symmetry and to $\rho$. The algebra's multiplication carries exactly the structure that custodial symmetry uses: a scalar field valued in the real quaternions $\mathbb{H}_{\mathbb{B}}$ admits a **left and a right** action of $SU(2)$,
 
 $$
-\tilde Q \;\longmapsto\; g_L\,\tilde Q\,g_R^{-1},
+\tilde Q \;\longmapsto\; g_L\,\tilde Q\,g_R^{*},
 \qquad g_{L,R}\in\mathbb{H}^1_{\mathbb{B}} ,
 $$
 
-and a central vacuum expectation value $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ is invariant under the diagonal $g_L = g_R$. That is the custodial mechanism in the framework's own multiplication. The framework's actual scalar, however, is the central field $\tilde\Phi = \varphi\,e_t$, which is a singlet of every non-abelian group and cannot be the doublet that the construction requires. The algebra therefore supplies the custodial action, and the framework's scalar sector does not supply the field on which it would act.
+and a central vacuum expectation value $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ is invariant under the diagonal $g_L = g_R$. That is the custodial mechanism in the framework's own multiplication. The framework's actual scalar, however, is the central field $\tilde\Phi = \varphi\,e_t$, which is a singlet of every non-abelian group and cannot be the doublet that the construction requires. The algebra therefore supplies the custodial action, and the framework's scalar sector does not supply the field on which it would act. On the unit real quaternions the adjoint ${}^{*}$ is the group inverse, so the right factor $g_R^{*}$ is the usual right factor of the chiral action and no operator inverse is written.
 
 The findings are the following.
 
-- **Established, and recomputed below.** The quaternion-valued scalar $\tilde Q\in\mathbb{H}_{\mathbb{B}}$ carries the left–right action $\tilde Q\mapsto g_L\tilde Q g_R^{-1}$ of $SU(2)_L\times SU(2)_R$, and a central $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ is invariant under the diagonal $SU(2)_V = \{g_L = g_R\}$. With the hypercharge coupling set to zero the two gauge-boson mass matrices are proportional to the identity in the custodial basis, so $M_W = M_Z\cos\theta_W$ and $\rho = 1$ at tree level. The general multiplet formula
+- **Established, and recomputed below.** The quaternion-valued scalar $\tilde Q\in\mathbb{H}_{\mathbb{B}}$ carries the left–right action $\tilde Q\mapsto g_L\tilde Q g_R^{*}$ of $SU(2)_L\times SU(2)_R$, and a central $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ is invariant under the diagonal $SU(2)_V = \{g_L = g_R\}$. With the hypercharge coupling set to zero the two gauge-boson mass matrices are proportional to the identity in the custodial basis, so $M_W = M_Z\cos\theta_W$ and $\rho = 1$ at tree level. The general multiplet formula
 $$
 \rho = \frac{\sum_i v_i^2\left[T_i(T_i+1)-T_{3i}^2\right]}{\sum_i 2v_i^2\,T_{3i}^2}
 $$
@@ -63,7 +63,7 @@ $$
 = -\,\partial_\mu\phi^{0*}\partial_\mu\phi^0 - \partial_\mu\phi^{+*}\partial_\mu\phi^{+} ,
 $$
 
-canonical for the two complex components, and if the hypercharge coupling is ignored it is invariant under the full $SU(2)_L\times SU(2)_R$, acting as $H\mapsto g_LHg_R^{-1}$. This is the **custodial group**. The hypercharge interaction gauges the $T_3^R$ direction and therefore breaks $SU(2)_R$ explicitly, but only as a subgroup: $\mathrm{U}(1)_Y\subset SU(2)_R$, and the breaking is proportional to the hypercharge coupling $g_{\mathrm Y}$.
+canonical for the two complex components, and if the hypercharge coupling is ignored it is invariant under the full $SU(2)_L\times SU(2)_R$, acting as $H\mapsto g_LHg_R^{*}$. This is the **custodial group**. The hypercharge interaction gauges the $T_3^R$ direction and therefore breaks $SU(2)_R$ explicitly, but only as a subgroup: $\mathrm{U}(1)_Y\subset SU(2)_R$, and the breaking is proportional to the hypercharge coupling $g_{\mathrm Y}$.
 
 **The vacuum and the unbroken diagonal.** The electroweak vacuum has $\langle\phi^+\rangle = 0$ and $\langle\phi^0\rangle = v/\sqrt2$, so the matrix expectation is proportional to the identity,
 
@@ -73,7 +73,7 @@ $$
 \frac12\,\mathrm{Tr}\!\left(\langle H\rangle^\dagger\langle H\rangle\right) = \frac{v^2}{2} .
 $$
 
-This is the crucial fact: a matrix proportional to the identity is invariant under the **diagonal** action $H\mapsto g\,H\,g^{-1}$ for every $g\in SU(2)$, so the diagonal subgroup
+This is the crucial fact: a matrix proportional to the identity is invariant under the **diagonal** action $H\mapsto g\,H\,g^{*}$ for every $g\in SU(2)$, so the diagonal subgroup
 
 $$
 SU(2)_V = \left\{\,g_L = g_R = g\,\right\}
@@ -105,7 +105,7 @@ $$
 on which the unit real quaternions act on the left and on the right,
 
 $$
-\tilde Q \;\longmapsto\; g_L\,\tilde Q\,g_R^{-1} ,
+\tilde Q \;\longmapsto\; g_L\,\tilde Q\,g_R^{*} ,
 \qquad g_L, g_R\in\mathbb{H}^1_{\mathbb{B}} .
 $$
 
@@ -115,12 +115,12 @@ $$
 \tilde Q\tilde Q^{\natural} = \left(Q_t^2+Q_x^2+Q_y^2+Q_z^2\right)e_t ,
 $$
 
-or equivalently $\mathrm{Sc}(\tilde Q^{*}\tilde Q)$, which the two-sided action preserves because $\mathrm{Sc}(g_L\tilde Q g_R^{-1}\overline{g_L\tilde Q g_R^{-1}}) = \mathrm{Sc}(\tilde Q\tilde Q^{\natural}) = \langle\tilde Q,\tilde Q\rangle_{\natural}$: the scalar part of a product is invariant under a similarity, and the two outer factors cancel.
+or equivalently $\mathrm{Sc}(\tilde Q^{*}\tilde Q)$, which the two-sided action preserves because $\mathrm{Sc}(g_L\tilde Q g_R^{*}\overline{g_L\tilde Q g_R^{*}}) = \mathrm{Sc}(\tilde Q\tilde Q^{\natural}) = \langle\tilde Q,\tilde Q\rangle_{\natural}$: the scalar part of a product is invariant under a similarity, and the two outer factors cancel.
 
-**The left action and the sector structure.** The left multiplication by $g_L$ and the right multiplication by $g_R^{-1}$ act on the four components of $\tilde Q$ as a pair of independent rotations. The left action is the framework's non-abelian gauge action of the companion articles, and the right action is the one that the framework's four-component objects have always carried: it is the same two-sided multiplication that the rotor conjugation of the Lorentz and gauge articles uses. The **diagonal** $g_L = g_R = g$ is the conjugation
+**The left action and the sector structure.** The left multiplication by $g_L$ and the right multiplication by $g_R^{*}$ act on the four components of $\tilde Q$ as a pair of independent rotations. The left action is the framework's non-abelian gauge action of the companion articles, and the right action is the one that the framework's four-component objects have always carried: it is the same two-sided multiplication that the rotor conjugation of the Lorentz and gauge articles uses. The **diagonal** $g_L = g_R = g$ is the conjugation
 
 $$
-\tilde Q \;\longmapsto\; g\,\tilde Q\,g^{-1} ,
+\tilde Q \;\longmapsto\; g\,\tilde Q\,g^{*} ,
 $$
 
 which is the framework's similarity transformation, and it is the algebraic image of $SU(2)_V$.
@@ -134,10 +134,48 @@ $$
 is invariant under the diagonal because it commutes with every $g$, so
 
 $$
-g\,\frac{v}{\sqrt2}e_t\,g^{-1} = \frac{v}{\sqrt2}\,e_t ,
+g\,\frac{v}{\sqrt2}e_t\,g^{*} = \frac{v}{\sqrt2}\,e_t ,
 $$
 
-and the diagonal is unbroken. It is not invariant under a general left or right action, since $g_L\frac{v}{\sqrt2}e_tg_R^{-1} = \frac{v}{\sqrt2}g_Lg_R^{-1}$ equals the vacuum only when $g_L = g_R$; the axial directions are therefore broken, and their Goldstone bosons are the three would-be longitudinal gauge modes. The pivotal object is thus a central element, exactly as the Higgs mechanism's vacuum is central in the framework, and the difference is that the field carrying it is a general quaternion rather than a central scalar.
+and the diagonal is unbroken. It is not invariant under a general left or right action, since $g_L\frac{v}{\sqrt2}e_tg_R^{*} = \frac{v}{\sqrt2}g_Lg_R^{*}$ equals the vacuum only when $g_L = g_R$; the axial directions are therefore broken, and their Goldstone bosons are the three would-be longitudinal gauge modes. The pivotal object is thus a central element, exactly as the Higgs mechanism's vacuum is central in the framework, and the difference is that the field carrying it is a general quaternion rather than a central scalar.
+
+```text
+THE TWO-PARAMETER ADJOINT SANDWICH
+==================================
+
+    Theta[gL, gR](X) = gL X gR*
+
+One parameter W gives Theta[W, W](X) = W X W*, the Hermitian sandwich.
+The chiral action needs two independent parameters, gL and gR.
+
+WHY IT IS NEEDED
+----------------
+* One parameter has three real dimensions; SU(2)L x SU(2)R has six.
+  A single sandwich cannot carry two independent rotations, and
+  gL = gR leaves only the diagonal SU(2)V.
+* The second factor is the axial symmetry. Without it there is no axial
+  current, no Goldstone coset and no breaking pattern.
+* For unitary parameters, and in particular on the unit real
+  quaternions, the adjoint is the group inverse. The map gL X gR* is
+  therefore the usual left-right action, with both factors written by
+  one operation and no operator inverse.
+
+THE PHYSICS, IN THE THREE CASES
+-------------------------------
+* Custodial symmetry and rho. The vacuum <Q> = (v/sqrt2) e_t is fixed
+  by gL = gR, so the diagonal SU(2)V is unbroken and ties the W and Z
+  masses: rho = M_W^2/(M_Z^2 cos^2 theta_W) = 1 at tree level with
+  hypercharge off. With one factor there is no breaking pattern.
+* Nonlinear sigma model. U* dU transforms by gR alone, and dU U* by gL
+  alone. The two currents are vector and axial, and the target is
+  SU(2)L x SU(2)R / SU(2)V. With one factor only the adjoint O(3)
+  model remains.
+* Pion and chiral Lagrangian. The mass term couples gL and gR, and in
+  the isospin limit it is invariant under the diagonal. The axial
+  current gives f_pi, PCAC and the Gell-Mann-Oakes-Renner relation.
+  With one factor the axial current is absent and the relation has no
+  derivation.
+```
 
 ## The Mass Matrices and the Value of $\rho$
 
@@ -185,7 +223,7 @@ where the sum runs over the components that acquire vacuum expectation values, w
 
 ## Custodial Symmetry and the Chiral Lagrangian
 
-The custodial group and the chiral group of the pion sector are the same group, and the reason is structural. Both are the diagonal of an $SU(2)_L\times SU(2)_R$: in the scalar sector the two factors act on the doublet as left and right multiplication, and in the fermion sector they act on the two chiralities of the quarks. When the quark condensate forms, the chiral group breaks to the diagonal, and the pions are the Goldstone bosons of the broken directions; when the scalar acquires its vacuum expectation value, the same diagonal survives and protects $\rho$. The two statements are the two faces of one breaking, and the biquaternion framework exhibits the coincidence cleanly: the left–right action $\tilde U\mapsto g_L\tilde U g_R^{-1}$ on a unit real quaternion is the chiral transformation of the pion field, and the left–right action $\tilde Q\mapsto g_L\tilde Q g_R^{-1}$ on a real quaternion is the custodial transformation of the scalar. Both are the algebra's multiplication, and the diagonal is the conjugation in both cases.
+The custodial group and the chiral group of the pion sector are the same group, and the reason is structural. Both are the diagonal of an $SU(2)_L\times SU(2)_R$: in the scalar sector the two factors act on the doublet as left and right multiplication, and in the fermion sector they act on the two chiralities of the quarks. When the quark condensate forms, the chiral group breaks to the diagonal, and the pions are the Goldstone bosons of the broken directions; when the scalar acquires its vacuum expectation value, the same diagonal survives and protects $\rho$. The two statements are the two faces of one breaking, and the biquaternion framework exhibits the coincidence cleanly: the left–right action $\tilde U\mapsto g_L\tilde U g_R^{*}$ on a unit real quaternion is the chiral transformation of the pion field, and the left–right action $\tilde Q\mapsto g_L\tilde Q g_R^{*}$ on a real quaternion is the custodial transformation of the scalar. Both are the algebra's multiplication, and the diagonal is the conjugation in both cases.
 
 **What follows from the coincidence.** Because the unbroken diagonal is the isospin $SU(2)_V$ in both cases, the framework's statement about the pion triplet and its statement about the custodial triplet are statements about the same group and the same adjoint. The pion article's trace identity $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ is the normalisation that both use; the custodial mass matrices and the pion kinetic term are both built from it. The framework therefore does not need a second group for custodial symmetry — it needs only the recognition that the chiral group it already hosts for the pions has the custodial diagonal. This is an economy of the algebra's group structure, and it is exact.
 
@@ -195,7 +233,7 @@ The custodial group and the chiral group of the pion sector are the same group, 
 
 The construction above is the standard custodial mechanism written in the framework's multiplication. The framework's own scalar sector is smaller, and the difference should be stated without softening.
 
-**The framework's scalar is central.** The scalar of *The Higgs Mechanism in Biquaternionic Form* is $\tilde\Phi = \varphi\,e_t\in\mathbb{C}_{\mathbb{B}}$, a central field carrying only the abelian central phase. It commutes with every element of $\mathbb{B}$ and is therefore a **singlet** of the compact $SU(2)\subset\mathbb{M}_-$: the left and right actions both act trivially on it, $g\,\tilde\Phi\,g^{-1} = \tilde\Phi$. A singlet cannot break a non-abelian symmetry, so the framework's scalar cannot be the doublet whose vacuum expectation value gives the $W$ and $Z$ their masses. The quaternion-valued field $\tilde Q$ of the previous sections is a **different object** from the framework's scalar: it is the natural carrier of the custodial action, and it is not the field that the framework's scalar sector builds.
+**The framework's scalar is central.** The scalar of *The Higgs Mechanism in Biquaternionic Form* is $\tilde\Phi = \varphi\,e_t\in\mathbb{C}_{\mathbb{B}}$, a central field carrying only the abelian central phase. It commutes with every element of $\mathbb{B}$ and is therefore a **singlet** of the compact $SU(2)\subset\mathbb{M}_-$: the left and right actions both act trivially on it, $g\,\tilde\Phi\,g^{*} = \tilde\Phi$. A singlet cannot break a non-abelian symmetry, so the framework's scalar cannot be the doublet whose vacuum expectation value gives the $W$ and $Z$ their masses. The quaternion-valued field $\tilde Q$ of the previous sections is a **different object** from the framework's scalar: it is the natural carrier of the custodial action, and it is not the field that the framework's scalar sector builds.
 
 **The non-abelian action is vector-like.** Even granting a quaternion-valued scalar, the framework's non-abelian gauge action on matter is left multiplication, and on the framework's spinor module left multiplication acts on both chiral halves with the same representation. The companion agendas show that this action is vector-like and that the $SU(2)$ doublet is pseudoreal, so the framework's $\mathrm{SU}(2)$ is not the chiral $SU(2)_L$: it cannot give the left-handed and right-handed fermions inequivalent representations. The custodial symmetry of the electroweak sector is a symmetry of a chiral gauge theory, and the framework's non-abelian structure does not reach the chiral gauge theory in the first place.
 
@@ -234,7 +272,7 @@ which was recomputed: it gives $\rho = 1$ for one or several doublets, $\rho > 1
 In the biquaternion framework the custodial action is the algebra's own left–right multiplication on the real-quaternion space,
 
 $$
-\tilde Q \;\longmapsto\; g_L\,\tilde Q\,g_R^{-1} ,
+\tilde Q \;\longmapsto\; g_L\,\tilde Q\,g_R^{*} ,
 \qquad g_{L,R}\in\mathbb{H}^1_{\mathbb{B}} ,
 $$
 
@@ -252,7 +290,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the central vacuum |
 | $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ | Standard Hermitian generators of the compact group |
 | $\tilde Q = Q_te_t + Q_k\vec e_k\in\mathbb{H}_{\mathbb{B}}$ | Quaternion-valued scalar (carrier of the custodial action) |
-| $\tilde Q\mapsto g_L\tilde Q g_R^{-1}$ | Left–right $SU(2)_L\times SU(2)_R$ action |
+| $\tilde Q\mapsto g_L\tilde Q g_R^{*}$ | Left–right $SU(2)_L\times SU(2)_R$ action |
 | $SU(2)_V = \{g_L = g_R\}$ | Custodial (diagonal) subgroup |
 | $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ | Central vacuum; custodial invariant |
 | $\tilde\Phi = \varphi\,e_t\in\mathbb{C}_{\mathbb{B}}$ | Framework's actual scalar; a singlet |

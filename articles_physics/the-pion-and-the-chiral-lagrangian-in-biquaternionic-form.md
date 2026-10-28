@@ -79,7 +79,7 @@ $$
 shows that the span of the three $e_a$ closes on itself, and the adjoint action of the rotor $\tilde u = \exp(\vec\alpha/2)\in\mathbb{H}^1_{\mathbb{B}}$ rotates the triplet,
 
 $$
-\vec\pi \;\longmapsto\; \tilde u\,\vec\pi\,\tilde u^{-1} ,
+\vec\pi \;\longmapsto\; \tilde u\,\vec\pi\,\tilde u^{*} ,
 $$
 
 which is the isospin rotation of an isovector. The bilinear invariant is the norm,
@@ -138,7 +138,7 @@ $$
 |\pi| = \sqrt{\pi^a\pi^a} .
 $$
 
-Under the chiral group the field transforms as $\tilde U\mapsto g_L\tilde U g_R^{-1}$ with $g_{L,R}$ constant unit quaternions; the diagonal $g_L = g_R = g_V$ acts as $\tilde U\mapsto g_V\tilde U g_V^{-1}$, the adjoint action of the unbroken isospin, and the axial directions $g_L = g_R^{-1}$ are the broken ones. The pion field is recovered from the field by $\vec\pi = f_\pi\log\tilde U$.
+Under the chiral group the field transforms as $\tilde U\mapsto g_L\tilde U g_R^{*}$ with $g_{L,R}$ constant unit quaternions; the diagonal $g_L = g_R = g_V$ acts as $\tilde U\mapsto g_V\tilde U g_V^{*}$, the adjoint action of the unbroken isospin, and the axial directions $g_L = g_R^{*}$ are the broken ones. The pion field is recovered from the field by $\vec\pi = f_\pi\log\tilde U$. The right factor is the adjoint; on the unit real quaternions it is the group inverse, so this is the usual chiral action written without an operator inverse.
 
 **The two-derivative Lagrangian.** It is
 
@@ -162,6 +162,44 @@ $$
 $$
 
 the canonical kinetic term of three real pion fields, with coefficient exactly one and no free parameter. The higher terms are the interactions: every vertex carries derivatives, their coefficients are fixed by the algebra, and at four derivatives the terms include the Skyrme term of the companion article. This is the chiral Lagrangian at leading order, and it is the framework's principal chiral model with $f = f_\pi$.
+
+```text
+THE TWO-PARAMETER ADJOINT SANDWICH
+==================================
+
+    Theta[gL, gR](X) = gL X gR*
+
+One parameter W gives Theta[W, W](X) = W X W*, the Hermitian sandwich.
+The chiral action needs two independent parameters, gL and gR.
+
+WHY IT IS NEEDED
+----------------
+* One parameter has three real dimensions; SU(2)L x SU(2)R has six.
+  A single sandwich cannot carry two independent rotations, and
+  gL = gR leaves only the diagonal SU(2)V.
+* The second factor is the axial symmetry. Without it there is no axial
+  current, no Goldstone coset and no breaking pattern.
+* For unitary parameters, and in particular on the unit real
+  quaternions, the adjoint is the group inverse. The map gL X gR* is
+  therefore the usual left-right action, with both factors written by
+  one operation and no operator inverse.
+
+THE PHYSICS, IN THE THREE CASES
+-------------------------------
+* Custodial symmetry and rho. The vacuum <Q> = (v/sqrt2) e_t is fixed
+  by gL = gR, so the diagonal SU(2)V is unbroken and ties the W and Z
+  masses: rho = M_W^2/(M_Z^2 cos^2 theta_W) = 1 at tree level with
+  hypercharge off. With one factor there is no breaking pattern.
+* Nonlinear sigma model. U* dU transforms by gR alone, and dU U* by gL
+  alone. The two currents are vector and axial, and the target is
+  SU(2)L x SU(2)R / SU(2)V. With one factor only the adjoint O(3)
+  model remains.
+* Pion and chiral Lagrangian. The mass term couples gL and gR, and in
+  the isospin limit it is invariant under the diagonal. The axial
+  current gives f_pi, PCAC and the Gell-Mann-Oakes-Renner relation.
+  With one factor the axial current is absent and the relation has no
+  derivation.
+```
 
 ## Pion Mass and the Gell-Mann–Oakes–Renner Relation
 
@@ -205,7 +243,7 @@ the standard statement that the pion mass-squared is the product of the explicit
 
 The chiral Lagrangian's currents are what couple the pions to the rest of the Standard Model, and they are the place where the framework's reach and its boundary are both visible.
 
-**The vector current.** The unbroken isospin current is the Noether current of the diagonal $SU(2)_V$ acting as $\tilde U\mapsto g_V\tilde U g_V^{-1}$. It is built from the Maurer–Cartan form of the companion article, and at lowest order it is
+**The vector current.** The unbroken isospin current is the Noether current of the diagonal $SU(2)_V$ acting as $\tilde U\mapsto g_V\tilde U g_V^{*}$. It is built from the Maurer–Cartan form of the companion article, and at lowest order it is
 
 $$
 j_\mu^{a} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial Q_\mu\,\tilde U}\left[e_a,\tilde U\right]\right) + \cdots
@@ -246,7 +284,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 **The pion is a material-sector adjoint.** The framework's pion field is $\vec\pi = \pi^a e_a$, an element of the compact subalgebra $\mathfrak{su}(2)$ that lies in $\mathbb{M}_-$. The isovector assignment is not imposed: it is the adjoint of the framework's compact group, and the invariant $\mathrm{Sc}(\vec\pi^2) = -\pi^a\pi^a$ is the biquaternion norm. The pion shares the material sector with the conserved four-current and the gauge fields, and it is distinguished from the central scalar of the Higgs and Goldstone articles by being non-central: the pion rotates under isospin, the scalar does not.
 
-**The chiral field is a rotor.** The unit real quaternion $\tilde U = \exp(\vec\pi/f_\pi)$ is the framework's rotation element, and the chiral transformation $\tilde U\mapsto g_L\tilde U g_R^{-1}$ is the composition of a left and a right rotation. The unbroken isospin is the diagonal, i.e. the conjugation by a single rotor, and the pion field is the logarithm of the rotor. This is the same geometric identification that the nonlinear-sigma-model article makes, specialised to $SU(2)$ and to the pion triplet, and it is exact as a statement about the framework's group manifold.
+**The chiral field is a rotor.** The unit real quaternion $\tilde U = \exp(\vec\pi/f_\pi)$ is the framework's rotation element, and the chiral transformation $\tilde U\mapsto g_L\tilde U g_R^{*}$ is the composition of a left and a right rotation. The unbroken isospin is the diagonal, i.e. the conjugation by a single rotor, and the pion field is the logarithm of the rotor. This is the same geometric identification that the nonlinear-sigma-model article makes, specialised to $SU(2)$ and to the pion triplet, and it is exact as a statement about the framework's group manifold.
 
 **The trace fixes the normalisation.** The kinetic term's coefficient is fixed by $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, and the framework's plain form, read as the trace pairing, supplies it. The framework therefore contributes the normalisation in which $f_\pi$ appears, and hence the normalisation in which the GOR relation and the PCAC matrix element are written. This is the same role the trace plays in every bilinear of the series.
 
@@ -315,7 +353,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$, $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$ | Trace identities fixing the normalisation |
 | $\tilde U = \exp(\vec\pi/f_\pi)\in\mathbb{H}^1_{\mathbb{B}}$ | Chiral field (unit real quaternion) |
 | $\tilde u = \exp(\vec\alpha/2)\in\mathbb{H}^1_{\mathbb{B}}$ | Adjoint rotation element (isospin rotor) |
-| $\tilde U\mapsto g_L\tilde U g_R^{-1}$ | Chiral transformation; diagonal $SU(2)_V$ unbroken |
+| $\tilde U\mapsto g_L\tilde U g_R^{*}$ | Chiral transformation; diagonal $SU(2)_V$ unbroken |
 | $\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\mathrm{Tr}(\partial/\partial Q_\mu\,\tilde U\partial/\partial Q_\mu\,\tilde U^{*})$ | Leading chiral Lagrangian |
 | $f_\pi$ | Pion decay constant ($\approx 92.1$ MeV) |
 | $\mathcal{L}_\pi^{\text{mass}} = \frac{f_\pi^2B_0}{2}\mathrm{Tr}(M\tilde U+M^\dagger\tilde U^{*})$ | Explicit-breaking mass term |

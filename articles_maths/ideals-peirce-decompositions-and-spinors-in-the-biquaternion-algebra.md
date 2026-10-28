@@ -19,7 +19,7 @@ $$
 \tilde\Pi_-=\frac{e_t-\tilde\Xi}{2}.
 $$
 
-Both are idempotent, $(\tilde\Pi_\pm)^2=\tilde\Pi_\pm$; they are orthogonal, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$; they are complete, $\tilde\Pi_++\tilde\Pi_-=e_t$; and the root is their difference, $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$. Conversely a nontrivial idempotent $\tilde\Pi$ returns the root $2\tilde\Pi-e_t$ and the complement $e_t-\tilde\Pi$, so the root and the unordered pair carry the same information. The classification of the roots is *Idempotents*.
+Both are idempotent, $(\tilde\Pi_\pm)^2=\tilde\Pi_\pm$; they are orthogonal, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$; they are complete, $\tilde\Pi_++\tilde\Pi_-=e_t$; and the root is their difference, $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$. Conversely a nontrivial idempotent $\tilde\Pi$ returns the root $2\tilde\Pi-e_t$ and the complement $e_t-\tilde\Pi$, so the root and the ordered pair $(\tilde\Pi_+,\tilde\Pi_-)$ carry the same information; the unordered pair determines the root up to sign. The classification of the roots is *Idempotents*.
 
 **The four corners.** Put
 

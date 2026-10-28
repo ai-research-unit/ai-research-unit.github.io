@@ -124,6 +124,83 @@ This is the reversible case of *Quantum Channels and the Reversible/Irreversible
 
 Trace preservation of a one-Kraus channel is not the same as trace preservation of an instrument. An instrument satisfies $\sum_y\tilde K_y^{*}\tilde K_y=e_t$; a single term need not. A term with $\tilde H_{\mathrm{pos}}\neq e_t$ is a legitimate outcome, and its effect is not the identity. The one-Kraus statement applies only when there is one term and no other outcome. The dephasing channel of §*Channels and Kraus Rank* is the witness: one Kraus operator is a scalar multiple of the identity, with $\tilde U_{\mathrm{p}}=e_t$, and the channel is still irreversible because there is a second term.
 
+## The Four Factors of the Amplitude
+
+### The Word Off the Cone
+
+Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\mathrm b}=\exp\bigl(i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,
+
+$$
+\tilde K=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\qquad
+\tilde H_{\mathrm{pos}}=r\tilde U_{\mathrm b},
+\qquad
+\tilde U_{\mathrm{p}}=e^{i\alpha}\tilde u_{\mathrm r}.
+$$
+
+The grouping is the Cartan one: the scale sits with the boost and the phase with the rotor. The four factors are a change of coordinates on the invertible elements, not a further hypothesis, and they carry the eight real parameters of $\tilde K$.
+
+| factor | symbol | range | parameters | factor of the pair |
+| --- | --- | --- | --- | --- |
+| scale | $r$ | $r>0$ | $1$ | $\tilde H_{\mathrm{pos}}$ |
+| phase | $e^{i\alpha}$ | $\alpha\in[0,2\pi)$ | $1$ | $\tilde U_{\mathrm{p}}$ |
+| boost | $\tilde U_{\mathrm b}$ | $\psi_w\ge0$, unit $\vec u_{\mathrm b}$ | $3$ | $\tilde H_{\mathrm{pos}}$ |
+| rotor | $\tilde u_{\mathrm r}$ | $\theta\in[0,2\pi)$, unit $\vec u_{\mathrm r}$ | $3$ | $\tilde U_{\mathrm{p}}$ |
+
+### The Effect in the Word
+
+The effect is the square of the positive factor, carried to the initial frame by the backaction:
+
+$$
+\tilde E=\tilde K^{*}\tilde K
+=\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}^{2}\tilde U_{\mathrm{p}}
+=\tilde u_{\mathrm r}^{-1}\,r^{2}\tilde U_{\mathrm b}^{2}\,\tilde u_{\mathrm r}.
+$$
+
+The phase cancels because it is central. Since $\tilde U_{\mathrm b}^{2}=\exp(i\psi_w\vec u_{\mathrm b})$ has eigenvalues $e^{\pm\psi_w}$, the effect has eigenvalues
+
+$$
+r^{2}e^{+\psi_w}\quad\text{and}\quad r^{2}e^{-\psi_w}.
+$$
+
+Its eigenvector for the larger eigenvalue is $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$, the boost axis turned back by the rotor, for $\psi_w>0$. Generically, of the eight parameters the effect keeps four — the scale, the rapidity and the composite direction $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$ — and loses the phase, the rotation angle and the split between the two axes. This is the quantitative form of the statement that the probability sees the strength and not the backaction.
+
+### The Boost as a Bias
+
+The rotor and the boost are not the same kind of factor. On a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ the rotor acts by conjugation, which fixes the scalar part and rotates the Bloch vector by $\theta$ about $\vec u_{\mathrm r}$: the trace is one, the radius is unchanged, and the state stays on its sphere.
+
+The boost changes the trace, mixes the scalar and parallel parts, and leaves the transverse part alone. Writing $\tilde{Ϛ}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec r$,
+
+$$
+a_2=a\cosh\psi_w+b_\parallel\sinh\psi_w,
+\qquad
+b_{\parallel,2}=b_\parallel\cosh\psi_w+a\sinh\psi_w,
+\qquad
+\vec b_{\perp,2}=\vec b_\perp .
+$$
+
+Normalising by $a_2$ gives the action on the Bloch ball,
+
+$$
+r'_\parallel=\frac{r_\parallel+\tanh\psi_w}{1+r_\parallel\tanh\psi_w},
+\qquad
+\vec r'_\perp=\frac{\vec r_\perp}{\cosh\psi_w+r_\parallel\sinh\psi_w},
+$$
+
+with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. This is velocity addition along the boost axis, with strength $\tanh\psi_w$, and it is not a rotation of the ball.
+
+### The Contraction Bound
+
+An outcome is admissible when its effect lies below the identity. The eigenvalues above make this one inequality:
+
+$$
+\boxed{\;\tilde E\le e_t \iff r^{2}e^{\psi_w}\le1\;}
+$$
+
+for $\psi_w\ge0$, which forces $r\le1$. The scale and the rapidity trade against each other, and a strong boost needs a small scale.
+
+The worked example of §*A Worked Unsharp Outcome* saturates the bound. Its strength has eigenvalues $0.6$ and $1$, so $r=\sqrt{0.6}=0.7746$ and $\psi_w=\ln(1/0.6)=0.5108$; then $r^{2}e^{\psi_w}=0.6\times1.6667=1$ exactly, and the effect has eigenvalues $0.36$ and $1$. The complement of the effect is rank one, as that example notes, and that is the same statement.
+
 ## Effects as Squares
 
 ### The Effect Is the Conjugated Square
@@ -303,6 +380,8 @@ The channel-level statement is the correction that the polar programme makes to 
 | strength | the singular values $\sigma_i$, the eigenvalues of $\tilde H_{\mathrm{pos}}$ |
 | backaction | the partial isometry $\tilde U_{\mathrm{p}}$, unitary off the cone, rank one on it |
 | effect | $\tilde E=\tilde K^{*}\tilde K=\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}^{2}\tilde U_{\mathrm{p}}$, eigenvalues $\sigma_i^{2}$ |
+| four factors | $\tilde K=r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, $\tilde H_{\mathrm{pos}}=r\tilde U_{\mathrm b}$, $\tilde U_{\mathrm{p}}=e^{i\alpha}\tilde u_{\mathrm r}$ |
+| effect in the word | eigenvalues $r^{2}e^{\pm\psi_w}$; admissible iff $r^{2}e^{\psi_w}\le1$ |
 | one-Kraus channel | $\tilde K^{*}\tilde K=e_t$ iff $\tilde H_{\mathrm{pos}}=e_t$ and $\tilde U_{\mathrm{p}}=\tilde K$ unitary |
 | sharp outcome | $\tilde K=\tilde\Pi$: $\tilde H_{\mathrm{pos}}=\tilde U_{\mathrm{p}}=\tilde\Pi$, $\tilde E=\tilde\Pi$, on the null cone |
 | soft rank-one outcome | $\tilde K=\sigma\tilde\Pi$: $\tilde H_{\mathrm{pos}}=\sigma\tilde\Pi$, $\tilde U_{\mathrm{p}}=\tilde\Pi$, $\tilde E=\sigma^{2}\tilde\Pi$ |
@@ -322,6 +401,8 @@ The channel-level statement is the correction that the polar programme makes to 
 | $\tilde U_{\mathrm{p}}=\tilde H_{\mathrm{pos}}^{+}\tilde K$ | partial-isometry (backaction) factor |
 | $\tilde H_{\mathrm{pos}}^{+}$ | Moore–Penrose inverse |
 | $\tilde E=\tilde K^{*}\tilde K=\tilde U_{\mathrm{p}}^{*}\tilde H_{\mathrm{pos}}^{2}\tilde U_{\mathrm{p}}$ | effect of the outcome |
+| $r,\alpha,\psi_w,\theta$ | scale, central phase, word rapidity, rotor angle |
+| $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | positive Hermitian boost, unit real quaternion rotor |
 | $\tilde\Pi=\tfrac12(e_t+i\vec u)$ | rank-one Hermitian idempotent, $\vec u$ a real unit vector |
 | $\tilde\Pi_{\mathrm i}=\tilde U_{\mathrm{p}}^{*}\tilde U_{\mathrm{p}}$, $\tilde\Pi_{\mathrm f}=\tilde U_{\mathrm{p}}\tilde U_{\mathrm{p}}^{*}$ | initial and final projections of $\tilde U_{\mathrm{p}}$ |
 | $\sigma_i$ | singular values of $\tilde K$, eigenvalues of $\tilde H_{\mathrm{pos}}$ |
@@ -334,6 +415,7 @@ The channel-level statement is the correction that the polar programme makes to 
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the theorem, its uniqueness with the initial and final projections, and the rank-one case.
 - *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the pairing off the null cone and the unitary factor.
+- [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the four-factor word and the action of each factor on the two sectors.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone and the Hermitian square root.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the rank-one idempotents and the Bloch sphere.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone and its singular locus.

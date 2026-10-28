@@ -70,7 +70,7 @@ $$
 [\tfrac12\tilde\Xi,\vec\Upsilon_-]=\vec\Upsilon_-,\qquad [\tfrac12\tilde\Xi,\vec\Upsilon_+]=-\vec\Upsilon_+,\qquad [\vec\Upsilon_-,\vec\Upsilon_+]=\tilde\Xi .
 $$
 
-*Proof.* The corner signs give $\tilde\Xi\vec\Upsilon_-=\vec\Upsilon_-$ and $\vec\Upsilon_-\tilde\Xi=-\vec\Upsilon_-$, so $[\tilde\Xi,\vec\Upsilon_-]=2\vec\Upsilon_-$ and $[\tfrac12\tilde\Xi,\vec\Upsilon_-]=\vec\Upsilon_-$. The second relation is the same computation on $\mathbb B_{-+}$, $[\tilde\Xi,\vec\Upsilon_+]=-2\vec\Upsilon_+$. The third is the normalised Peirce product, $[E,F]=\vec\Upsilon_-\vec\Upsilon_+-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_+-\tilde\Pi_-=\tilde\Xi$.
+*Proof.* The corner signs give $\tilde\Xi\vec\Upsilon_-=\vec\Upsilon_-$ and $\vec\Upsilon_-\tilde\Xi=-\vec\Upsilon_-$, so $[\tilde\Xi,\vec\Upsilon_-]=2\vec\Upsilon_-$ and $[\tfrac12\tilde\Xi,\vec\Upsilon_-]=\vec\Upsilon_-$. The second relation is the same computation on $\mathbb B_{-+}$, $[\tilde\Xi,\vec\Upsilon_+]=-2\vec\Upsilon_+$. The third is the normalised Peirce product, $[\vec\Upsilon_-,\vec\Upsilon_+]=\vec\Upsilon_-\vec\Upsilon_+-\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_+-\tilde\Pi_-=\tilde\Xi$.
 
 **Remark (normalisation).** The triple is not unique. The reciprocal rescaling $\vec\Upsilon_-\mapsto\mu\vec\Upsilon_-$, $\vec\Upsilon_+\mapsto\mu^{-1}\vec\Upsilon_+$ preserves the two products and hence the three relations. What is canonical is $\tilde\Xi$ and the unordered pair of nilpotent lines.
 

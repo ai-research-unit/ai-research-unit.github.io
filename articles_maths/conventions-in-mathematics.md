@@ -557,24 +557,58 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 
 ### The Unitary Convention
 
-A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$: the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$. A unit element is an element of norm one, and the norm is the one in view: the glyph is the generic norm read at the central value $e_t$, so it names no set until the norm is named, and the four norms of the biquaternion layer give four level sets:
+**The convention is the unit-element convention, and the heading keeps its old name because the corpus cites it by that name.** The glyphs $U$, $\tilde u$ and $\tilde U$, in the three cases of the case rule, mark an element of **norm one**. They do not mark a unitary element: the unitary condition is a different condition, stated at the end of the section.
 
-| Letter | Norm | the condition $\mathrm{Norm}(\tilde U)=e_t$ | the norm-one elements |
-|---|---|---|---|
-| $P$ | $\langle\tilde Q\rangle$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2=e_t$ | the complex hyperboloid of the plain norm |
-| $N$ | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2=e_t$ | $\mathbb{B}^{\times}_1$, the norm-one units |
-| $H$ | $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2=1$ | the unit sphere of the Hermitian norm |
-| $K$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2=1$ | the indefinite level set of the Krein norm |
+A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$: the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.
 
-The two bilinear norms are complex-valued, so their condition is $=e_t$; the two sesquilinear norms are real-valued, so theirs is $=1$. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and **the rotors are these elements**: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.
+**"Norm one" is fixed layer by layer.** The glyphs name no set by themselves, and the layers do not share a norm. The table gives the norm of each layer and the set it cuts out at one.
 
-**The group condition is narrower than the norm-one condition.** Where the sesquilinear form is preserved, $\tilde U^{*}\tilde U=e_t$, the norm-one elements that do so form the **unitary group**, written without the tilde of an element,
+| Layer | Glyph | The norm | The condition | The norm-one elements |
+|---|---|---|---|---|
+| $\mathbb{R}$ | — | $N(q)=q^{2}$ | $q=\pm1$ | $\{\pm1\}=O(1)$ |
+| $\mathbb{C}$ | $U$ | $\langle Q\rangle_{*}=Q\bar Q$ | $\lvert Q\rvert=1$ | $\mathrm{U}(1)=S^{1}$ |
+| $\mathbb{D}$, split-complex | $U$ | $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$ | $q^{2}-q'^{2}=1$ | the unit hyperbola, two branches |
+| $\mathbb{D}'$, dual | $U$ | $\langle Q\rangle=q^{2}$ | $q=\pm1$, $q'$ free | the two lines $\pm1+\mathrm{M}$; the identity component is the shear group |
+| $\mathbb{B}_{\mathrm{r}}$, reduced biquaternion | $U$ | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | $\langle\breve Q\rangle_{\mathrm{ts}}=1$ | the reduced-norm quadric |
+| $\mathbb{H}$, quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $Sp(1)=S^{3}=\mathrm{SU}(2)$ |
+| $\mathbb{H}_{\mathrm{s}}$, split-quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $\mathrm{SL}_{2}(\mathbb{R})$, non-compact |
+| $\mathbb{B}$, biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ and no other | $\langle\tilde Q\rangle_{\natural}=e_t$ | $\mathbb{B}^{\times}_{1}\cong\mathrm{SL}(2,\mathbb{C})$ |
+| $\mathbb{H}_{\mathbb{D}}$, split-biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ | $\langle\tilde Q\rangle_{\natural}=e_t$ | $S^{3}\times S^{3}$ |
+
+**Where the norm is indefinite, the sign is not part of the glyph.** In $\mathbb{D}$ the level set $\langle Q\rangle_{*}=1$ is the two-branched hyperbola; the polar decomposition of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* takes its unit factor on $\lvert\langle u\rangle_{*}\rvert=1$, four branches, because the sign of the norm is a regime carried by that factor. In $\mathbb{B}_{\mathrm{r}}$ the reduced norm cuts the quadric of the table, while *Modulus–Unit Polar Decomposition of Reduced Biquaternions* puts its unit factor on the bar-unitary torus and states that the torus is not a norm-one set. The glyph follows the level set $\mathrm{Norm}=1$; a modulus-one factor of an indefinite layer is not a second meaning of the glyph.
+
+**The biquaternion layer uses $N$ and only $N$.** The glyph $\tilde U$ is the $N$-norm-one element,
 
 $$
-\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}\cong \mathrm{U}(2)=S^{1}\cdot S^{3},\qquad S^{1}\cap S^{3}=\{\pm e_t\},
+\mathbb{B}^{\times}_{1}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=e_t\}\cong\mathrm{SL}(2,\mathbb{C}),
 $$
 
-of real dimension $4$. The name **unitary** is the name of that group; the glyph $\tilde U$ is the wider norm-one element. The norm and the group condition exist only where their involution does: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, the bar, the tessarine sign and the star over $\mathbb{B}_{\mathrm{r}}$, and all four marks over $\mathbb{B}$ and the split-biquaternions.
+and the other three norms of the layer are not unit-element conditions. Their level sets are named for completeness and carry no glyph:
+
+| Letter | Norm | The level set | What it is | Defines $\tilde U$ |
+|---|---|---|---|---|
+| $P$ | $\langle\tilde Q\rangle$ | $Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}=e_t$ | the complex hyperboloid of the plain norm | no |
+| $N$ | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=e_t$ | $\mathbb{B}^{\times}_{1}$, the norm-one units | **yes** |
+| $H$ | $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}=1$ | the unit sphere of the Hermitian norm | no |
+| $K$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}=1$ | the indefinite level set of the Krein norm | no |
+
+**Only $N$ decides invertibility**, which is the reason it is the norm of the glyph: $\{N=0\}$ is the origin together with the zero divisors, while the other three degenerate sets contain units. The phrase "the norm in view" belongs to the polar decompositions, where the author names the norm in the text and takes its level set; it is not a licence to read one glyph under four norms.
+
+**Unitary is not norm one.** The unitary group is
+
+$$
+\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong\mathrm{U}(2)=S^{1}\cdot S^{3},
+$$
+
+of real dimension four, written upright because it is a group. Its elements are **unitary elements**, not unit elements, and the two conditions are independent:
+
+- neither set contains the other: $\mathrm{U}(2)\cap\mathrm{SL}(2,\mathbb{C})=\mathrm{SU}(2)=S^{3}$, the unit quaternions;
+- the Hermitian level set $\{H=1\}$ contains $\mathrm{U}(2)$ strictly, since it is the unit sphere of $\mathbb{R}^{8}$ of dimension seven and $\mathrm{U}(2)$ has dimension four;
+- the $N$-norm-one set $\mathbb{B}^{\times}_{1}$ does not contain $\mathrm{U}(2)$, because $\mathrm{U}(2)\not\subset\mathrm{SL}(2,\mathbb{C})$.
+
+A boost is a unit element and is not unitary. A unitary element whose determinant is not one is unitary and is not a unit element. The glyph asserts the first and never the second; an article that needs a unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.
+
+**The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, the bar, the tessarine sign and the star over $\mathbb{B}_{\mathrm{r}}$, and all four marks over $\mathbb{B}$ and the split-biquaternions.
 
 **The case rule splits the glyph**, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.
 
@@ -618,7 +652,7 @@ The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $
 
 ## Conventions for Derivation
 
-In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm r}$; it never denotes a derivative. The derivative with respect to a coordinate is written $\partial/\partial Q_\mu$, and in a fixed direction $\partial/\partial Q_t$, $\partial/\partial Q_x$, $\partial/\partial Q_y$ or $\partial/\partial Q_z$; a coordinate is never left under the $\partial$, so none of the abbreviated spellings occurs, and the rule admits no exception, neither on a free index nor on any other. A derivative with respect to a variable that is not a coordinate is written the same way, its variable named in full: the Lagrangian derivative puts the function in the numerator, $\partial L/\partial w$, so that where a PDE text writes $L_u$ and $L_p$ the calculus-of-variations and partial-differential-equation articles write $\partial L/\partial w$ and $\partial L/\partial p$; the second derivative has the same shape, $\partial^2 L/\partial w^2$. The function is named in the numerator whenever it is a letter of its own, as for a Lagrangian, a Hamiltonian or a generating function; the slashed form $\partial/\partial u$ is kept where the symbol is an operator or where the operand is a compound expression rather than a single letter. The derivative $\partial/\partial Q_t$ is the derivative along the fourth coordinate: on the material sector, where $Q_t=iq'_t$, it equals $-i\,\partial/\partial q'_t$, and $q'_t$ is a real coefficient and not one of the coordinates, so the derivative with respect to it is written out as $\partial/\partial q'_t$.
+In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm b}$; it never denotes a derivative. The derivative with respect to a coordinate is written $\partial/\partial Q_\mu$, and in a fixed direction $\partial/\partial Q_t$, $\partial/\partial Q_x$, $\partial/\partial Q_y$ or $\partial/\partial Q_z$; a coordinate is never left under the $\partial$, so none of the abbreviated spellings occurs, and the rule admits no exception, neither on a free index nor on any other. A derivative with respect to a variable that is not a coordinate is written the same way, its variable named in full: the Lagrangian derivative puts the function in the numerator, $\partial L/\partial w$, so that where a PDE text writes $L_u$ and $L_p$ the calculus-of-variations and partial-differential-equation articles write $\partial L/\partial w$ and $\partial L/\partial p$; the second derivative has the same shape, $\partial^2 L/\partial w^2$. The function is named in the numerator whenever it is a letter of its own, as for a Lagrangian, a Hamiltonian or a generating function; the slashed form $\partial/\partial u$ is kept where the symbol is an operator or where the operand is a compound expression rather than a single letter. The derivative $\partial/\partial Q_t$ is the derivative along the fourth coordinate: on the material sector, where $Q_t=iq'_t$, it equals $-i\,\partial/\partial q'_t$, and $q'_t$ is a real coefficient and not one of the coordinates, so the derivative with respect to it is written out as $\partial/\partial q'_t$.
 
 **These studies do not use the covariant index conventions: subscripts are not coordinate indices or derivatives, partial derivatives are written with explicit operators, and structural information is carried by the algebra of the objects themselves.**
 
@@ -853,7 +887,7 @@ A subscript is written with the underscore, `_`, inside the math delimiters, and
 
 **It is allowed to add subscripts when several elements of the same kind are used.** The permission covers the units, the roots, the idempotents and the nilpotents as well as the general elements: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.
 
-**A subscript counts, or it names.** A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a **role label**, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm r}$.
+**A subscript counts, or it names.** A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a **role label**, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm b}$.
 
 **A role-labelled element carries its label in its coefficients.** The generic element-valued field is $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and its components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$: the label $\mathrm f$ belongs to the element and is carried once into the component subscript, beside the direction, so that the components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$; it does not count a family. A numbered family is unaffected, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$.
 
@@ -867,7 +901,7 @@ The forms a subscript takes are these.
 | a letter | $Q_k$, $Q_\mu$ |
 | two indices | $Q_{ab}$ |
 | a sign | $\tilde\Pi_\pm$ |
-| an upright word | $\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm r}$ |
+| an upright word | $\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm b}$ |
 | a grouped expression | $Q_{n+1}$ |
 
 The decorations that may stand in the subscript slot are these: all 451 distinct glyphs of the KaTeX 0.16.9 symbol table, one entry per glyph, with a single command written where several commands draw the same glyph. An entry that takes an argument is shown on $n$, and an entry that is text is written inside \text.
@@ -1075,7 +1109,7 @@ The conventions below are those used throughout the corpus.
 | $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
 | $\vec\Xi$, $\vec\Upsilon$ | A pure root of $1$ and a pure nilpotent of the biquaternion or split-biquaternion layer; $\vec\xi$ and $\vec\nu$ in the quaternion and split-quaternion layers |
 | $\tilde u$, $\vec u$ | A unit element of the quaternion or split-quaternion layer, and its pure case, the axis of a rotation |
-| $\tilde U$, $\vec U$ | A unit element of the biquaternion or split-biquaternion layer, $\mathrm{Norm}(\tilde U)=e_t$, and its pure case, of norm one |
+| $\tilde U$, $\vec U$ | A unit element of the biquaternion or split-biquaternion layer, $\langle\tilde U\rangle_{\natural}=e_t$ (the $N$-norm), and its pure case, of norm one |
 | $U$ | A unit element of the complex, split-complex, dual or reduced biquaternion layer |
 | $F^{\mathrm{fn}}, G^{\mathrm{fn}}, H^{\mathrm{fn}}$ | A function from a domain into the algebra, $F^{\mathrm{fn}} : \Omega \to \mathbb{B}$; the tilde marks a value and is never put on a map, since a function is not an element |
 | $\tilde\nabla$ | The biquaternionic gradient, $\tilde\nabla = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu$; it keeps the tilde because its symbol is an algebra unit and not a letter |

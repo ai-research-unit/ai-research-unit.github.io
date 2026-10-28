@@ -214,19 +214,19 @@ The rank is always preserved: rank two is $N$-regular, hence a unit, rank one is
 
 ### The Reflection Formula
 
-For $v$ with $\langle v\rangle_{\natural}=1$, so that $v\,v^{\natural}=e_t$, the **reflection** in the hyperplane $v^{\perp}$ is
+For a real unit vector $v\in\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, so that $v^{2}=-e_t$ and $\langle v\rangle_{\natural}=1$, the **reflection** in the hyperplane $v^{\perp}$ is
 $$
-\boxed{\;\rho_v(\tilde Q_3)=-v\,\tilde Q_3\,v^{\natural}\;}.
+\boxed{\;\rho_v(\tilde Q_3)=v\,\tilde Q_3\,v^{*}\;}.
 $$
-The right factor is the quaternion conjugate, which is the inverse of $v$ on the norm-one slice; the reflection is therefore written with the algebra's own conjugation and needs no operator inverse. The minus sign is what makes it a reflection: without it the map is an inner automorphism. On the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
+The parameter is real, so the Hermitian conjugate $v^{*}$ equals $v$; the formula is the Hermitian sandwich $\Theta_v$. Since $v^{2}=-e_t$, the sandwich is minus the inner automorphism by $v$: a reflection is minus an inner automorphism. The sign is carried by the spacelike normal, not written separately, and no operator inverse is needed. On the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
 $$
 v\tilde Q_3+\tilde Q_3v=-2\langle v,\tilde Q_3\rangle e_t.
 $$
-There $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has determinant $-1$; it is an involution. On the quaternion and Hermitian subspaces a norm-one element acts by conjugation as a rotation rather than as a reflection, and on the whole algebra $\rho_v$ has determinant $+1$. The Cartan–Dieudonné theorem gives every isometry of the three-dimensional vector subspace as a product of at most three reflections $\rho_v$.
+There $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has determinant $-1$; it is an involution. On the quaternion and Hermitian subspaces the sandwich acts as a rotation rather than as a reflection, and on the whole algebra $\rho_v$ has determinant $+1$. The Cartan–Dieudonné theorem gives every isometry of the three-dimensional vector subspace as a product of at most three reflections $\rho_v$.
 
 **A reflection is an odd isometry.** The reflection reverses one direction and fixes the hyperplane orthogonal to it; it is an isometry of the form and an orientation-reversing map of the vector subspace. Interpreted physically, it is a mirror: a parity in one direction, not a rotation.
 
-**Parity is outside the connected group.** The unit group is connected, and a reflection is not a sandwich by a unit: the formula carries the minus sign. The reflections generate the orthogonal group of the vector subspace, which is the image of the Pin group; the versors themselves live in the Clifford algebra of that subspace, not in $\mathbb{B}^{\times}$. Interpreted physically, parity is a discrete symmetry not connected to the identity, and it is not a continuous motion. The Lorentz reflections are not of the shape $\rho_v$ and live in the Clifford layer, not in the algebra.
+**Parity is outside the connected group.** The unit group is connected, and a reflection is a sandwich by a unit but not an inner automorphism: with $v$ spacelike the sandwich equals minus the inner automorphism by $v$. The reflections generate the orthogonal group of the vector subspace, which is the image of the Pin group; the versors are the real unit vectors of that subspace, and they lie in $\mathbb{B}$ but not in its unitary subgroup. Interpreted physically, parity is a discrete symmetry not connected to the identity, and it is not a continuous motion. The Lorentz reflections are not of the shape $\rho_v$ and live in the Clifford layer, not in the algebra.
 
 **Chirality is not an element of the algebra.** The two half-integral representations of the Lorentz group are conjugate, and the connected unit group does not exchange them; the exchange is an outer symmetry of the representation theory. Interpreted physically, chirality is a property of the representation, not an element of the algebra; the algebra's reflections act on the vector subspace, not on the spinor chirality.
 
@@ -236,7 +236,7 @@ There $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has determinant $-1
 
 ## Limits
 
-The geometry of the algebra is the geometry of the norm and of its isometries. The unit group is eight-dimensional, the norm-one slice six-dimensional and the Lorentz group its six-dimensional quotient; the algebra carries the double cover, not the group. The sandwich is the action; the interval is the invariant; the product is preserved by a rotation and not by a boost. The orbits are the mass shells and the light cones; the reflections are odd and live outside the connected group.
+The geometry of the algebra is the geometry of the norm and of its isometries. The unit group is eight-dimensional, the norm-one slice six-dimensional and the Lorentz group its six-dimensional quotient; the algebra carries the double cover, not the group. The sandwich is the action; the interval is the invariant; the product is preserved by a rotation and not by a boost. The orbits are the mass shells and the light cones; the reflections are orientation-reversing and lie outside the connected component of the orthogonal group.
 
 The article does not derive the Lorentz group from the algebra: it reads the group that the norm already defines, and it reads the action that the dagger already supplies. It does not derive a dynamics, a field equation, a mass spectrum or a coupling. It does not supply a preferred frame; the frame is a choice, and the interval is what is left when the choice is made. It does not read acceleration, gravity or a local frame field. The finite-dimensional Hermitian sector is not the relativistic state space, and a boost carries the trace-one Bloch ball off its slice; that is a boundary of the interpretation, not a defect of the algebra.
 
@@ -244,7 +244,7 @@ The article does not derive the Lorentz group from the algebra: it reads the gro
 
 The norm-one group $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group, and its compact part $Sp(1)\cong SU(2)$ is the double cover of the spatial rotations. The Lorentz group is the quotient by the central sign, not a subgroup of the quaternion layer; the algebra carries the spin frame. The dagger sandwich $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ is the change of frame: it preserves the two sectors, scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, has kernel $\mathrm{U}(1)e_t$ on the algebra and $\{\pm e_t\}$ on the norm-one slice, and acts as $SO^{+}(1,3)$ there. The interval is the frame-independent object, and the central phase is not a frame.
 
-A rotation is a unitary rotor, an algebra automorphism, with the angle halved in the element and the double cover $Sp(1)\to SO(3)$. A boost is a Hermitian norm-one rotor, not unitary, and not an automorphism: it preserves the interval and the sectors but not the product, the centre or the vector subspace. Two non-collinear boosts compose to a boost and a Wigner rotation. The orbits are the future and past mass shells and the future and past light cones; a null vector is a zero divisor and has no rest frame. The reflections $\rho_v$ are odd isometries of the vector subspace, the images of the Pin group and not sandwiches by the unit group; parity lies outside the connected Lorentz group, and chirality exchange is not an element of the group at all.
+A rotation is a unitary rotor, an algebra automorphism, with the angle halved in the element and the double cover $Sp(1)\to SO(3)$. A boost is a Hermitian norm-one rotor, not unitary, and not an automorphism: it preserves the interval and the sectors but not the product, the centre or the vector subspace. Two non-collinear boosts compose to a boost and a Wigner rotation. The orbits are the future and past mass shells and the future and past light cones; a null vector is a zero divisor and has no rest frame. The reflections $\rho_v$ are odd isometries of the vector subspace, images of the Pin group and not inner automorphisms: they are Hermitian sandwiches by the spacelike unit vectors, equal to minus the inner automorphisms; parity lies outside the connected Lorentz group, and chirality exchange is not an element of the group at all.
 
 ## Summary of Notation
 
@@ -257,7 +257,7 @@ A rotation is a unitary rotor, an algebra automorphism, with the angle halved in
 | $\langle\tilde Q\rangle_{\natural}$ | biquaternion norm; the interval on $\mathbb{M}_{-}$ |
 | $\tilde u=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ | rotation rotor |
 | $\tilde U=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$ | boost rotor; Hermitian and norm-one |
-| $\rho_v(\tilde Q_3)=-v\tilde Q_3v^{\natural}$ | reflection in $v^{\perp}$ |
+| $\rho_v(\tilde Q_3)=v\tilde Q_3v^{*}$ | reflection in $v^{\perp}$; $v$ real spatial unit vector |
 | $imc\,e_t$ | rest four-velocity; $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ |
 | $SO^{+}(1,3)$ | proper orthochronous Lorentz group; the frame group |
 

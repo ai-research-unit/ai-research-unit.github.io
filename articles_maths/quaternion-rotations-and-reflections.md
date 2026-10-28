@@ -356,10 +356,12 @@ Left and right multiplication are the operators of the regular representation, t
 **Definition.** For a unit vector $v\in\operatorname{Im}\mathbb{H}$ define
 
 $$
-\rho_v : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \rho_v(\vec q) = -v\,\vec q\,v^{-1}.
+\rho_v : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \rho_v(\vec q) = v\,\vec q\,v.
 $$
 
-**Theorem.** For a unit vector $v$, $\rho_v(\vec q) = v\vec q v$, and on $\operatorname{Im}\mathbb{H}$
+Since $v^{2}=-1$, the same map is $-v\,\vec q\,v^{-1}$, the negative of the inner conjugation by $v$.
+
+**Theorem.** For a unit vector $v$ and $\vec q\in\operatorname{Im}\mathbb{H}$,
 
 $$
 \rho_v(\vec q) = \vec q - 2\langle \vec q, v\rangle v.
@@ -367,7 +369,7 @@ $$
 
 Hence $\rho_v$ is the **reflection in the plane** $v^{\perp}\subset\operatorname{Im}\mathbb{H}$: it fixes every vector perpendicular to $v$, sends $v$ to $-v$, is $\mathbb{R}$-linear, preserves the quaternion norm, is an involution, and has determinant $-1$ on $\operatorname{Im}\mathbb{H}$.
 
-**Proof.** Since $v^{-1} = v^{\natural} = -v$, we have $-v\vec q v^{-1} = -v\vec q(-v) = v\vec q v$. For pure imaginary $v, \vec q$ the product is $v\vec q = v\times \vec q - \langle v, \vec q\rangle$, so $\vec q v = -v\times \vec q - \langle v,\vec q\rangle$ and $v\vec q + \vec q v = -2\langle v,\vec q\rangle$. Therefore
+**Proof.** For pure imaginary $v, \vec q$ the product is $v\vec q = v\times \vec q - \langle v, \vec q\rangle$, so $\vec q v = -v\times \vec q - \langle v,\vec q\rangle$ and $v\vec q + \vec q v = -2\langle v,\vec q\rangle$. Therefore
 
 $$
 v\vec q v = (v\vec q)v = -\vec q v^2 - 2\langle v,\vec q\rangle v = \vec q - 2\langle v,\vec q\rangle v,
@@ -375,7 +377,7 @@ $$
 
 using $v^2 = -1$. The formula shows that $\rho_v$ is the identity on the hyperplane $\langle \vec q,v\rangle = 0$ and equals $-v$ on $\mathbb{R}v$; linearity and norm preservation are immediate, and $\rho_v^2 = \mathrm{id}$ because the eigenvalues are $+1$ on the plane and $-1$ on the line, so the determinant is $-1$.
 
-**Remark.** On the whole algebra $\mathbb{H}$, and not merely on $\operatorname{Im}\mathbb{H}$, the map $\rho_v$ is not the reflection in a hyperplane of $\mathbb{R}^4$: it also multiplies the scalar line by $-1$, so its fixed space is the two-dimensional plane $\operatorname{span}(e_t,v)^{\perp}$ and it acts as a rotation through $\pi$ in the plane $\operatorname{span}(e_t,v)$. The reflection statement above is the statement about the three-dimensional imaginary subspace, which is the space the rotation and reflection groups act on. This is the quaternionic instance of the signed inner conjugation action $\operatorname{Ad}^{\mathrm{si}}_v(\vec q) = \alpha(v)\vec q v^{-1}$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, in which the grade involution supplies the sign that distinguishes odd from even elements.
+**Remark.** On the whole algebra $\mathbb{H}$, and not merely on $\operatorname{Im}\mathbb{H}$, the map $\rho_v$ is not the reflection in a hyperplane of $\mathbb{R}^4$: it also multiplies the scalar line by $-1$, so its fixed space is the two-dimensional plane $\operatorname{span}(e_t,v)^{\perp}$ and it acts as a rotation through $\pi$ in the plane $\operatorname{span}(e_t,v)$. The reflection statement above is the statement about the three-dimensional imaginary subspace, which is the space the rotation and reflection groups act on. This is the quaternionic instance of the signed inner conjugation action $\operatorname{Ad}^{\mathrm{si}}_v(\vec q) = \alpha(v)\vec q v^{-1}$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, in which the grade involution supplies the sign that distinguishes odd from even elements; for odd $v$ the involution gives $\alpha(v)=-v$, and the signed inner conjugation is $v\vec q v$.
 
 ### Products of Two Reflections
 
@@ -385,11 +387,13 @@ $$ \boxed{\; \rho_{v_1}\circ\rho_{v_2} = \operatorname{Ad}_{v_1v_2} \;} .$$
 
 Consequently the composition of two reflections is a rotation, namely the rotation about the axis $v_1\times v_2$ through twice the angle between the planes $v_1^{\perp}$ and $v_2^{\perp}$.
 
-**Proof.** Using $\rho_{v}(\vec q) = -v\vec q v^{-1}$,
+**Proof.** Using $\rho_{v}(\vec q) = v\vec q v$,
 
 $$
-\rho_{v_1}(\rho_{v_2}(\vec q)) = -v_1\bigl(-v_2\vec q v_2^{-1}\bigr)v_1^{-1} = (v_1v_2)\,\vec q\,(v_1v_2)^{-1} = \operatorname{Ad}_{v_1v_2}(\vec q).
+\rho_{v_1}(\rho_{v_2}(\vec q)) = v_1\bigl(v_2\vec q v_2\bigr)v_1 = (v_1v_2)\,\vec q\,(v_2v_1).
 $$
+
+The product $v_1v_2$ is a unit quaternion, so $v_2v_1=(v_1v_2)^{\natural}=(v_1v_2)^{-1}$, and the composite is $\operatorname{Ad}_{v_1v_2}(\vec q)$.
 
 The product $v_1v_2$ is $v_1\times v_2 - \langle v_1,v_2\rangle$, whose vector part is $v_1\times v_2$; by the half-angle formula the rotation angle $\theta$ of $\operatorname{Ad}_{v_1v_2}$ satisfies $\cos\frac{\theta}{2} = -\langle v_1,v_2\rangle = -\cos\phi$, where $\phi$ is the angle between $v_1$ and $v_2$. Hence $\theta \equiv 2\phi \pmod{2\pi}$ in the appropriate orientation, and the axis is $v_1\times v_2$, the direction of the intersection of the two planes.
 
@@ -477,7 +481,7 @@ Conjugation by a unit, $\operatorname{Ad}_{\tilde q}(\vec q) = \tilde q \vec q\t
 
 The rotation about the unit axis $u$ through the angle $\theta$ is $\operatorname{Ad}_{\tilde q}$ with $\tilde q = \cos\frac{\theta}{2} + u\sin\frac{\theta}{2}$, the half-angle formula; composition of rotations is quaternion multiplication, $\operatorname{Ad}_{\tilde q_1}\circ\operatorname{Ad}_{\tilde q_2} = \operatorname{Ad}_{\tilde q_1\tilde q_2}$; and the parametrisation has period $4\pi$, since a rotation through $2\pi$ is represented by $-1$.
 
-The reflection in the plane $v^{\perp}$ with unit normal $v$ is $\rho_v(\vec q) = -v\vec q v^{-1} = \vec q - 2\langle \vec q,v\rangle v$, an orientation-reversing involution; the product of two reflections is the rotation $\operatorname{Ad}_{v_1v_2}$ about the intersection line, and by Cartan–Dieudonné every isometry of $\mathbb{R}^3$ is a product of at most three reflections. The reflections and rotations together are the image of the Pin group $\mathrm{Pin}(3)$, whose even part is $\mathrm{Spin}(3)\cong Sp(1)$, and $O(3)\cong SO(3)\rtimes\mathbb{Z}/2\mathbb{Z}$.
+The reflection in the plane $v^{\perp}$ with unit normal $v$ is $\rho_v(\vec q) = v\vec q v = \vec q - 2\langle \vec q,v\rangle v$, an orientation-reversing involution; the product of two reflections is the rotation $\operatorname{Ad}_{v_1v_2}$ about the intersection line, and by Cartan–Dieudonné every isometry of $\mathbb{R}^3$ is a product of at most three reflections. The reflections and rotations together are the image of the Pin group $\mathrm{Pin}(3)$, whose even part is $\mathrm{Spin}(3)\cong Sp(1)$, and $O(3)\cong SO(3)\rtimes\mathbb{Z}/2\mathbb{Z}$.
 
 Finally, the two-sided action $\Phi_{(\tilde q_1,\tilde q_2)}(\vec q) = \tilde q_1\vec q \tilde q_2^{-1}$ is a surjective homomorphism $Sp(1)\times Sp(1)\to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4)\cong \mathrm{Spin}(4)\cong (Sp(1)\times Sp(1))/\{\pm1\}$; the diagonal copy of $Sp(1)$ in it is the adjoint action that gives the rotations of the three-dimensional imaginary subspace.
 
@@ -508,7 +512,7 @@ The sandwich $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is the
 | $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)\cong\mathrm{SU}(2)$ | Lie algebra of $Sp(1)\cong SU(2)$ and of $SO(3)$ |
 | $SO(3)$ | Rotation group of $\mathbb{R}^3$, $\cong Sp(1)/\{\pm1\}$ |
 | $O(3)\cong SO(3)\rtimes\mathbb{Z}/2\mathbb{Z}$ | Orthogonal group of $\mathbb{R}^3$ |
-| $\rho_v(\vec q) = -v\vec q v^{-1}$ | Reflection in the plane $v^{\perp}$, $v$ a unit vector |
+| $\rho_v(\vec q) = v\vec q v$ | Reflection in the plane $v^{\perp}$, $v$ a unit vector |
 | $\mathrm{Pin}(3)$ | Pin group, generated by the unit vectors |
 | $\mathrm{Spin}(3) = \mathrm{Pin}(3)\cap\mathrm{Cl}^0_{3,0}\cong Sp(1)$ | Spin group; $\mathrm{Cl}_{3,0}$ is the Clifford algebra of the Euclidean form on $\mathbb{R}^3$ and $\mathrm{Cl}^0_{3,0}$ its even part |
 | $\Phi_{(\tilde q_1,\tilde q_2)}(\vec q) = \tilde q_1\vec q \tilde q_2^{-1}$ | Two-sided action of $Sp(1)\times Sp(1)$ |

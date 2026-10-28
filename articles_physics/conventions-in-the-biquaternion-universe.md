@@ -320,7 +320,7 @@ The tilde marks a quaternionic factor. A base glyph counts every numbered and su
 
 **Allowed tilde.** The role is fixed by this article, or by the case-and-mark rule it states, and checked against the corpus. Cite these entries as they stand. The tables are ordered by theme, as the objects are; the letters outside the U family are bound where they are introduced.
 
-The governing rule: **only the Q family is generic, and only an element carries the tilde.** $\tilde Q$ is the biquaternion or split-biquaternion element and $\tilde q$ the quaternion or split-quaternion element; numbered variants are allowed. A generic element that is unitary is written $\tilde U$. A letter outside the family names an object, or an element bound where it is introduced. A matrix — the image of an element, an array of biquaternions, or a colour matrix — takes no tilde; a tilde on one is a defect of scope, corrected where it occurs and not catalogued here. A tensor is not an element of the algebra: its components $T^\mu{}_\nu$ and $T^{\mu\nu}$, and the irreducible tensor operators $T^{(k)}_\mu$, carry no tilde, and a free element written $\tilde T$ is the same defect, corrected to the Q family.
+The governing rule: **only the Q family is generic, and only an element carries the tilde.** $\tilde Q$ is the biquaternion or split-biquaternion element and $\tilde q$ the quaternion or split-quaternion element; numbered variants are allowed. A generic element of norm one is written $\tilde U$. A letter outside the family names an object, or an element bound where it is introduced. A matrix — the image of an element, an array of biquaternions, or a colour matrix — takes no tilde; a tilde on one is a defect of scope, corrected where it occurs and not catalogued here. A tensor is not an element of the algebra: its components $T^\mu{}_\nu$ and $T^{\mu\nu}$, and the irreducible tensor operators $T^{(k)}_\mu$, carry no tilde, and a free element written $\tilde T$ is the same defect, corrected to the Q family.
 
 ### The Layer Glyphs
 
@@ -334,7 +334,7 @@ The governing rule: **only the Q family is generic, and only an element carries 
 | $\tilde\xi$ | Root of $1$ of the quaternion layer | $\xi_te_t+\vec\xi$, with $\tilde\xi^2=e_t$ | $\mathbb{H}_{\mathbb{B}}$; the split-quaternion layer writes the same glyph | The tilde-free layers write $\Xi$ |
 | $\tilde\nu$ | Nilpotent of the quaternion layer | $\nu_te_t+\vec\nu$, with $\tilde\nu^2=0$ | The null cone, in neither sector | The biquaternion layer writes $\tilde\Upsilon$ |
 | $\tilde\Upsilon$ | Nilpotent of the biquaternion layer | $\Upsilon_te_t+\vec\Upsilon$, with $\tilde\Upsilon^2=0$ | The null cone, in neither sector | The quaternion layer writes $\tilde\nu$ |
-| $\tilde U$ | Norm-one element | $U_te_t+\vec U$, with $\mathrm{Norm}(\tilde U)=e_t$; $\tilde U^{*}\tilde U=e_t$ in the unitary case | $\mathbb{B}$ | A unit element; a rotor when unitary. The unitary group is $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$. The conjugating element of an inner automorphism, normalised by the central square root of its norm, is this glyph |
+| $\tilde U$ | $N$-norm-one element | $U_te_t+\vec U$, with $\langle\tilde U\rangle_{\natural}=e_t$ | $\mathbb{B}$ | A unit element in the norm $N$ of the biquaternion layer, $\mathbb{B}^{\times}_1\cong\mathrm{SL}(2,\mathbb{C})$; not a unitary element, which is a different set. The conjugating element of an inner automorphism, normalised by the central square root of its norm, is this glyph |
 | $\tilde u$ | Unit quaternion | $\cos(\theta/2)e_t+\sin(\theta/2)\vec u$, $\vec u$ a unit real vector | $\mathbb{H}_{\mathbb{B}}$, norm one | The rotor of $\mathrm{Sp}(1)\cong\mathrm{SU}(2)$; a pure unit quaternion is $\vec u$ |
 | $\tilde U_{\mathrm b}$ | Hermitian positive boost, the frame rotor | $\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | $\mathbb{M}_+$, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$ | The Lorentz boost of rapidity $\psi$ and the boost factor of the polar word; the congruence by it is the boost, and a four-vector element carries its inverse square $\mathcal B=\tilde U_{\mathrm b}^{-2}$, §*The Polar Word and the Three Pairings*. It is not unitary under ${}^{*}$, $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}\neq e_t$. The label is $\mathrm b$; the longer spelling $\mathrm{boost}$ is not used. Its generator is the pure element $\tfrac12 i\vec u_{\mathrm b}$ |
 | $\mathcal B$ | Four-vector boost factor | $\tilde U_{\mathrm b}^{-2}=\cosh\psi\,e_t-i\sinh\psi\,\vec u_{\mathrm b}$ | $\mathbb{M}_+$, $\det=1$ | The factor a four-vector element carries; equal to $e^{\vec U\Theta}$ with $\Theta=-i\psi$. It is not the acting rotor: the word's factor is $\tilde U_{\mathrm b}$ for a transformation and $\mathcal B$ for a four-vector |
@@ -747,24 +747,53 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 
 ### The Unitary Convention
 
-A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$, as in the mathematical corpus (§*The Unitary Convention* of *Conventions in Mathematics*): the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$. A unit element is an element of norm one, and the norm is the one in view: the glyph is the generic norm read at the central value $e_t$, so it names no set until the norm is named, and the four norms of the biquaternion layer give four level sets:
+**The convention is the unit-element convention, and the heading keeps its old name because the corpus cites it by that name.** The glyphs $U$, $\tilde u$ and $\tilde U$, in the three cases of the case rule, mark an element of **norm one**; for the biquaternion algebra that norm is $N$ and only $N$. It does not mark a unitary element: the unitary condition is a different condition, stated at the end of the section.
 
-| Letter | Norm | the condition $\mathrm{Norm}(\tilde U)=e_t$ | the norm-one elements |
-|---|---|---|---|
-| $P$ | $\langle\tilde Q\rangle$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2=e_t$ | the complex hyperboloid of the plain norm |
-| $N$ | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2=e_t$ | $\mathbb{B}^{\times}_1$, the norm-one units |
-| $H$ | $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2=1$ | the unit sphere of the Hermitian norm |
-| $K$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2=1$ | the indefinite level set of the Krein norm |
+A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$, as in the mathematical corpus (§*The Unitary Convention* of *Conventions in Mathematics*): the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.
 
-The two bilinear norms are complex-valued, so their condition is $=e_t$; the two sesquilinear norms are real-valued, so theirs is $=1$. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and **the rotors are these elements**: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.
+**"Norm one" is fixed layer by layer.** The glyph names no set by itself. The layers used in the physics are these, and the norm of each is the one in the table:
 
-**The group condition is narrower than the norm-one condition.** Where the sesquilinear form is preserved, $\tilde U^{*}\tilde U=e_t$, the norm-one elements that do so form the **unitary group**, written without the tilde of an element,
+| Layer | Glyph | The norm | The condition | The norm-one elements |
+|---|---|---|---|---|
+| $\mathbb{C}$ | $U$ | $\langle Q\rangle_{*}=Q\bar Q$ | $\lvert Q\rvert=1$ | $\mathrm{U}(1)=S^{1}$ |
+| $\mathbb{H}$, quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $Sp(1)=S^{3}=\mathrm{SU}(2)$ |
+| $\mathbb{H}_{\mathrm{s}}$, split-quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $\mathrm{SL}_{2}(\mathbb{R})$ |
+| $\mathbb{B}$, biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ and no other | $\langle\tilde Q\rangle_{\natural}=e_t$ | $\mathbb{B}^{\times}_{1}\cong\mathrm{SL}(2,\mathbb{C})$ |
+
+The real, split-complex, dual, reduced-biquaternion and split-biquaternion layers are tabulated in *Conventions in Mathematics*, §*The Unitary Convention*. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and **the rotors are these elements**: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.
+
+**For the biquaternion layer the norm is $N$ and no other.** The glyph $\tilde U$ is the $N$-norm-one element,
 
 $$
-\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}\cong \mathrm{U}(2)=S^{1}\cdot S^{3},\qquad S^{1}\cap S^{3}=\{\pm e_t\},
+\mathbb{B}^{\times}_{1}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=e_t\}\cong\mathrm{SL}(2,\mathbb{C}),
 $$
 
-of real dimension $4$. The name **unitary** is the name of that group; the glyph $\tilde U$ is the wider norm-one element. The norm and the group condition exist only where their involution does: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, all four marks over $\mathbb{B}$ and the split-biquaternions.
+and the other three norms of the layer are not unit-element conditions. Their level sets are named for completeness and carry no glyph:
+
+| Letter | Norm | The level set | What it is | Defines $\tilde U$ |
+|---|---|---|---|---|
+| $P$ | $\langle\tilde Q\rangle$ | $Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}=e_t$ | the complex hyperboloid of the plain norm | no |
+| $N$ | $\langle\tilde Q\rangle_{\natural}$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=e_t$ | $\mathbb{B}^{\times}_{1}$, the norm-one units | **yes** |
+| $H$ | $\langle\tilde Q\rangle_{*}$ | $\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}=1$ | the unit sphere of the Hermitian norm | no |
+| $K$ | $\langle\tilde Q\rangle_{\natural*}$ | $\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}=1$ | the indefinite level set of the Krein norm | no |
+
+**Only $N$ decides invertibility**, which is the reason it is the norm of the glyph: $\{N=0\}$ is the origin together with the zero divisors, while the other three degenerate sets contain units. The phrase "the norm in view" belongs to the polar decompositions, where the author names the norm in the text and takes its level set; it is not a licence to read one glyph under four norms.
+
+**Unitary is not norm one.** The unitary group is
+
+$$
+\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong\mathrm{U}(2)=S^{1}\cdot S^{3},
+$$
+
+of real dimension four, written upright because it is a group. Its elements are **unitary elements**, not unit elements, and the two conditions are independent:
+
+- neither set contains the other: $\mathrm{U}(2)\cap\mathrm{SL}(2,\mathbb{C})=\mathrm{SU}(2)=S^{3}$, the unit quaternions;
+- the Hermitian level set $\{H=1\}$ contains $\mathrm{U}(2)$ strictly, since it is the unit sphere of $\mathbb{R}^{8}$ of dimension seven and $\mathrm{U}(2)$ has dimension four;
+- the $N$-norm-one set $\mathbb{B}^{\times}_{1}$ does not contain $\mathrm{U}(2)$, because $\mathrm{U}(2)\not\subset\mathrm{SL}(2,\mathbb{C})$.
+
+A boost is a unit element and is not unitary: $\tilde U_{\mathrm b}$ is $N$-norm one and $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}\neq e_t$. A unitary element whose determinant is not one is unitary and is not a unit element. The glyph asserts the first and never the second; an article that needs a unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.
+
+**The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, all four marks over $\mathbb{B}$ and the split-biquaternions.
 
 **The case rule splits the glyph**, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.
 

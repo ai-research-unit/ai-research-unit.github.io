@@ -199,7 +199,15 @@ and after normalizing, the centre of the Bloch ball is carried to the point
 $$
 \vec r = \tanh\psi\ \vec u_{\mathrm b},
 $$
-not to itself. A transformation that moves the maximally mixed state while scaling the trace is not a channel, and the reason is structural: the congruence by a non-unitary element is a map on the *algebra*, not an operation on the *state space*, and the companion quantum-mechanical article records the same fact from the group side — the trace pairing, on which the Born rule rests, is preserved exactly by the unitary group and by no larger one.
+not to itself. The centre is the case $\vec r=0$ of the general law. For a boost of rapidity $\psi$ about $\vec u_{\mathrm b}$, the normalised congruence acts on the ball by velocity addition,
+
+$$
+r'_\parallel=\frac{r_\parallel+\tanh\psi}{1+r_\parallel\tanh\psi},
+\qquad
+\vec r'_\perp=\frac{\vec r_\perp}{\cosh\psi+r_\parallel\sinh\psi},
+$$
+
+with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. The congruence is therefore a flow of the ball onto itself, not a symmetry of it: it preserves the ball but not the radius, while the compact subgroup preserves both. A transformation that moves the maximally mixed state while scaling the trace is not a channel, and the reason is structural: the congruence by a non-unitary element is a map on the *algebra*, not an operation on the *state space*, and the companion quantum-mechanical article records the same fact from the group side — the trace pairing, on which the Born rule rests, is preserved exactly by the unitary group and by no larger one.
 
 The congruence is nevertheless the correct action on the spinor ray and on the pure-state idempotents considered as elements of the algebra. The resolution of the apparent conflict is to distinguish two objects that the non-relativistic formalism identifies: the **spinor** of a particle and the **spin state** of a particle at definite momentum. They transform by different formulas, and the second is the physically observable one.
 
