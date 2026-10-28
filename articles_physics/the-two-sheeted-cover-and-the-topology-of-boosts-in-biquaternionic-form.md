@@ -407,5 +407,5 @@ with $\omega\approx\tfrac{\psi^2}{2}\sin\theta$ for small rapidity and $\omega\t
 - John Milnor, "The fundamental group of the Lorentz group," chapter in *Collected Papers* (Publish or Perish, 1994), for the topology of the Lorentz group and its coverings.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor description of rotations and boosts and the belt-trick interpretation.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the rotor double-valuedness and the spacetime-algebra treatment of boosts.
-- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the composition of Lorentz transformations and the origin of the Wigner rotation.
+- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the composition of Lorentz transformations and the origin of the Wigner rotation.
 - A. Ben-Menahem, "Wigner rotation and Thomas precession," *American Journal of Physics* **53** (1985) 62–68, for a direct derivation of the Wigner angle formula used here.

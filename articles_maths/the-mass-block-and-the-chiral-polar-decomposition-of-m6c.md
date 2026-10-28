@@ -1,4 +1,4 @@
-# __The Mass Block and the Chiral Polar Decomposition__
+# __The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -24,7 +24,7 @@ $$
 
 The mass block has a polar decomposition $M=U_L\Sigma U_R^{-1}$ with $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3)$. The full element $A\in GL_6(\mathbb{C})$ has its own polar decomposition $A=UP$ with $U\in U(6)$ and $P$ positive definite; the two polar decompositions are different, and the article keeps them apart.
 
-The article assumes the chiral split of *The Two Chiralities* and the rank-three corners of *The Rank-Two and Rank-Three Splits*. It uses no topology beyond the $*$-unitary groups. The polar decomposition of the full algebra is *The Polar Decomposition*; the exponential is *The Exponential and the Lie Group*; the comparison with $M_4$ is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
+The article assumes the chiral split of *The Two Chiralities of $M_6(\mathbb{C})$* and the rank-three corners of *The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$*. It uses no topology beyond the $*$-unitary groups. The polar decomposition of the full algebra is *The Polar Decomposition of $M_6(\mathbb{C})$*; the exponential is *The Exponential and the Lie Group of $M_6(\mathbb{C})$*; the comparison with $M_4$ is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
 
 ## The Mass Block
 
@@ -46,7 +46,7 @@ A=\begin{pmatrix}A_+&M\\N&A_-\end{pmatrix},
 A_\pm\in M_3(\mathbb{C}),\quad M,N\in M_3(\mathbb{C}).
 $$
 
-**Proof.** A $3\times3$ complex matrix has nine complex entries, hence $18$ real dimensions. The block form is the chiral decomposition of *The Two Chiralities*.
+**Proof.** A $3\times3$ complex matrix has nine complex entries, hence $18$ real dimensions. The block form is the chiral decomposition of *The Two Chiralities of $M_6(\mathbb{C})$*.
 
 ### The Chiral Transformation
 
@@ -301,10 +301,10 @@ The full element has the $U(6)$ polar decomposition $A=UP$, with $U\in U(6)$ and
 
 ## Further Reading
 
-- [The Two Chiralities](the-two-chiralities-of-m6c.html), for the $3+3$ split and the mass block.
-- [The Rank-Two and Rank-Three Splits](the-rank-two-and-rank-three-splits-of-m6c.html), for the mass block as the mixed corner.
-- [The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners](the-m3-m3-and-m2-m4-corners-of-m6c.html), for the massless algebra and the relative scale.
+- [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the $3+3$ split and the mass block.
+- [The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$](the-rank-two-and-rank-three-splits-of-m6c.html), for the mass block as the mixed corner.
+- [The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$](the-m3-m3-and-m2-m4-corners-of-m6c.html), for the massless algebra and the relative scale.
 - [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the $2\times2$ comparison.
-- [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the full $U(6)$ polar decomposition.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the $*$-unitary group $U(6)$.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the homogeneous spaces of the chiral unitaries.
+- [The Polar Decomposition of $M_6(\mathbb{C})$](the-polar-decomposition-of-m6c.html), for the full $U(6)$ polar decomposition.
+- [The Involution and the Hermitian Structure of $M_6(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m6c.html), for the $*$-unitary group $U(6)$.
+- [The Geometry of the Idempotents of $M_6(\mathbb{C})$](the-geometry-of-the-idempotents-of-m6c.html), for the homogeneous spaces of the chiral unitaries.

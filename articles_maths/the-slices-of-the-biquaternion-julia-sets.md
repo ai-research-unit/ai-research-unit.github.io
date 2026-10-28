@@ -195,4 +195,4 @@ The quadratic family is equivariant under the three conjugations ${}^{\natural},
 - [The Biquaternion Mandelbrot Set and the Connectedness Locus](the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html), for the commutative-plane theorem used at the idempotent slice.
 - [The Idempotent Decomposition and the Split Fractal](the-idempotent-decomposition-and-the-split-fractal.html), for the decomposition the exact slices carry.
 - [The Quaternion Quadratic Map and Its Julia Sets](the-quaternion-quadratic-map-and-its-julia-sets.html), for the three-dimensional picture read here as a slice.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces and their closedness properties.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces and their closedness properties.

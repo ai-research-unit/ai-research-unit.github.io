@@ -123,7 +123,7 @@ The remarkable subspaces read the antisymmetric quaternionic multiplication as f
 
 ## Further Reading
 
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces, their bases and their dimensions
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces, their bases and their dimensions
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the companion reading of the same remarkable subspaces under the parent product
 - [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the operation, its table and its image
 - [The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra](the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.html), for the failure read on the subspaces and for the vanishing of the alternating centre

@@ -1,4 +1,4 @@
-# __The Adjoint Action, the Orbits and the Flag Variety__
+# __The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -111,7 +111,7 @@ of dimension $20$; in $PGL_5$ it is $PGL_5/T$, also of dimension $20$. It is the
 **Proposition.** The stabilizer of the root is the diagonal torus
 
 $$
-T=\left\{\operatorname{diag}(t_0,\dots,t_4):t_k\in\mathbb{C}^\times\right\},
+T=\left\{\operatorname{diag}(t_1,\dots,t_5):t_k\in\mathbb{C}^\times\right\},
 $$
 
 of dimension $5$ in $GL_5$ and $4$ in $PGL_5$. The Lie algebra of the stabilizer is the Cartan subalgebra of diagonal matrices.
@@ -128,7 +128,7 @@ of dimension $5$ in $GL_5$ and $4$ in $PGL_5$. The Lie algebra of the stabilizer
 
 $$
 \operatorname{ad}_H(E_{kl})=(\zeta_k-\zeta_l)E_{kl},
-\qquad k,l=0,\dots,4 .
+\qquad k,l=1,\dots,5 .
 $$
 
 The Peirce lines $A_{kl}$ are the eigenspaces of $\operatorname{ad}_H$ with eigenvalue $\zeta_k-\zeta_l$; the zero eigenspace is the diagonal Cartan, of dimension $5$; the nonzero eigenspaces are the off-diagonal lines, of dimension $20$.
@@ -317,8 +317,8 @@ The root orbit is a $10$-dimensional bundle over the flag variety with fibre the
 - James E. Humphreys, *Conjugacy Classes in Semisimple Algebraic Groups* (American Mathematical Society, 1995), for the semisimple and nilpotent orbits, the centralizers and the closure order.
 - David Collingwood and William McGovern, *Nilpotent Orbits in Semisimple Lie Algebras* (Van Nostrand Reinhold, 1993), for the nilpotent orbit classification, the dimensions and the Springer resolution.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the flag variety, the Borel and parabolic subgroups and the Bruhat decomposition.
-- [The Root](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root, its stabilizer and the orbit.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the weight decomposition of the adjoint action.
-- [The Partial Flags](the-partial-flags-of-m5c.html), for the flag varieties and their dimensions.
-- [The Quintic and the Spectral Strata](the-quintic-and-the-spectral-strata-of-m5c.html), for the semisimple orbit dimensions and the discriminant.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the simple root vectors and the gauge.
+- [Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root, its stabilizer and the orbit.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the weight decomposition of the adjoint action.
+- [The Partial Flags of $M_5(\mathbb{C})$](the-partial-flags-of-m5c.html), for the flag varieties and their dimensions.
+- [The Quintic and the Spectral Strata of $M_5(\mathbb{C})$](the-quintic-and-the-spectral-strata-of-m5c.html), for the semisimple orbit dimensions and the discriminant.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the simple root vectors and the gauge.

@@ -140,7 +140,7 @@ Read against the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\su
 ## Further Reading
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form and its inertia.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces.
 - [Introduction to the Antisymmetric Quaternionic Sesqualgebra](introduction-to-the-antisymmetric-quaternionic-sesqualgebra.html), for the block.
 - [The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra](the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the diagonal and its cone.
 - *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*, for the reading of the block on the remarkable subspaces.

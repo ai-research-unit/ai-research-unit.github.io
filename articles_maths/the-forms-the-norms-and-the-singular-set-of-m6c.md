@@ -1,4 +1,4 @@
-# __The Forms, the Norms and the Singular Set__
+# __The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -20,7 +20,7 @@ a complex hypersurface of complex dimension $35$ and real codimension two. The s
 
 The Hermitian form is definite, so there is no null cone: the only isotropic vector is $0$. The singular set is a cone, but it is not the isotropic cone of the form. This is the contrast with the biquaternion algebra, whose trace form is indefinite, whose null cone is the zero-divisor cone, and whose link is a five-dimensional manifold.
 
-The article assumes the Hermitian form of *The Involution and the Hermitian Structure* and the rank strata of *The Rank-Two and Rank-Three Splits*. It uses no topology beyond the finite-dimensional metric. The singular values of a matrix are also used in *The Polar Decomposition*; the biquaternion comparison is *The Biquaternion Algebra and Its Vector Spaces*.
+The article assumes the Hermitian form of *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$* and the rank strata of *The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$*. It uses no topology beyond the finite-dimensional metric. The singular values of a matrix are also used in *The Polar Decomposition of $M_6(\mathbb{C})$*; the biquaternion comparison is *The Biquaternion Algebra and Its Vector Spaces*.
 
 ## The Forms
 
@@ -42,7 +42,7 @@ $$
 
 with equality if and only if $A=0$.
 
-**Proof.** This is *The Involution and the Hermitian Structure*.
+**Proof.** This is *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$*.
 
 **Corollary (the real and imaginary parts).** The real part is the Euclidean inner product of the $72$ real coordinates; the imaginary part is a symplectic form. The form is definite, so its isotropic set is $\{0\}$.
 
@@ -58,7 +58,7 @@ $$
 
 **Theorem.** The trace pairing is symmetric, nondegenerate and invariant, but it is indefinite: it has nonzero isotropic vectors.
 
-**Proof.** It is *The Element, the Coordinates and the Trace*. The matrix unit $E_{12}$ is isotropic: $\operatorname{tr}(E_{12}^2)=0$.
+**Proof.** It is *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$*. The matrix unit $E_{12}$ is isotropic: $\operatorname{tr}(E_{12}^2)=0$.
 
 **Remark (two forms, two roles).** The complex bilinear pairing is the algebra form; it identifies the algebra with its dual and gives the Killing form on $\mathfrak{sl}_6$. The Hermitian form is the metric; it gives the Frobenius norm and the Hilbert-space structure. **The complex bilinear trace pairing has a null cone; the Hermitian form does not.**
 
@@ -384,10 +384,10 @@ The Hermitian form has the single isotropic vector $0$. The biquaternion algebra
 
 ## Further Reading
 
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the positive definite form.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m6c.html), for the complex bilinear trace pairing.
-- [The Rank-Two and Rank-Three Splits](the-rank-two-and-rank-three-splits-of-m6c.html), for the rank strata of the mass block.
-- [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the singular values and the positive factor.
+- [The Involution and the Hermitian Structure of $M_6(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m6c.html), for the positive definite form.
+- [The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m6c.html), for the complex bilinear trace pairing.
+- [The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$](the-rank-two-and-rank-three-splits-of-m6c.html), for the rank strata of the mass block.
+- [The Polar Decomposition of $M_6(\mathbb{C})$](the-polar-decomposition-of-m6c.html), for the singular values and the positive factor.
 - [The Topology of $M_6(\mathbb{C})$](the-topology-of-m6c.html), for the complement of the singular set and the link.
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the biquaternion null cone.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the biquaternion null cone.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the matrix units and the rank.

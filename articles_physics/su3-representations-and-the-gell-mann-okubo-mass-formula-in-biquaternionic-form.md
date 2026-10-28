@@ -273,7 +273,7 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 
 - M. Gell-Mann, "Symmetries of baryons and mesons," *Physical Review* **125** (1962) 1067–1084, for the eightfold way and the mass formula.
 - Y. Ne'eman, "Derivation of strong interactions from a gauge invariance," *Nuclear Physics* **26** (1961) 222–229, for the independent proposal of the $\mathrm{SU}(3)$ classification.
-- S. Okubo, "Note on $*$-unitary symmetry in strong interactions," *Progress of Theoretical Physics* **27** (1962) 949–966, for the mass formula and the Okubo basis.
+- S. Okubo, "Note on unitary symmetry in strong interactions," *Progress of Theoretical Physics* **27** (1962) 949–966, for the mass formula and the Okubo basis.
 - S. Okubo, *Introduction to Octonion and Other Non-Associative Algebras in Physics*, and *Lecture Notes in Physics* **94**, for the Okubo operators and the Zeeman analogy.
 - M. Gell-Mann and Y. Ne'eman, *The Eightfold Way* (Benjamin, 1964), for the octets, the decuplet and the mass relations.
 - Particle Data Group, *Review of Particle Physics*, for the hadron masses used in the checks.

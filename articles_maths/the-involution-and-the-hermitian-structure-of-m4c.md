@@ -1,4 +1,4 @@
-# __The Involution and the Hermitian Structure__
+# __The Involution and the Hermitian Structure of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article defines the involution, proves its properties, constructs the positive definite trace form and the Frobenius norm, identifies the Hermitian and skew-Hermitian subspaces and the $*$-unitary groups, and contrasts the definite case with the null cone of $\mathbb{B}$.
 
-The algebra is *The Matrix Algebra $M_4(\mathbb{C})$*; the element and the trace pairing $\operatorname{tr}(AB)$ are *The Element, the Coordinates and the Trace*; the polar decomposition is *The Polar Decomposition*; the forms and the singular set are *The Forms, the Norms and the Singular Set*.
+The algebra is *The Matrix Algebra $M_4(\mathbb{C})$*; the element and the trace pairing $\operatorname{tr}(AB)$ are *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*; the polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the forms and the singular set are *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*.
 
 ## The Conjugate Transpose
 
@@ -165,7 +165,7 @@ $$
 \langle A,B\rangle=(A,B)_\mathbb{R}+i(A,JB)_\mathbb{R}.
 $$
 
-**The trace form versus the trace pairing.** The form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite. The pairing $\beta(A,B)=\operatorname{tr}(AB)$ of *The Element, the Coordinates and the Trace* is symmetric, complex-bilinear and indefinite. They agree on the real symmetric matrices and differ elsewhere; for example, $\beta(A,A)=\operatorname{tr}(A^2)$ can be zero for $A\ne0$, while $\langle A,A\rangle=0$ only for $A=0$.
+**The trace form versus the trace pairing.** The form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite. The pairing $\beta(A,B)=\operatorname{tr}(AB)$ of *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$* is symmetric, complex-bilinear and indefinite. They agree on the real symmetric matrices and differ elsewhere; for example, $\beta(A,A)=\operatorname{tr}(A^2)$ can be zero for $A\ne0$, while $\langle A,A\rangle=0$ only for $A=0$.
 
 **The orthogonality of the Hermitian decomposition.** The subspaces $\operatorname{Herm}_4$ and $\mathfrak{u}(4)$ are orthogonal for the real inner product:
 
@@ -208,7 +208,7 @@ H=U\operatorname{diag}(\lambda_1,\lambda_2,\lambda_3,\lambda_4)U^*,
 \lambda_k\in\mathbb{R},\quad U\in U(4).
 $$
 
-The eigenvalues are the critical values of the Rayleigh quotient, and the eigenvectors are orthogonal. The spectral theorem is the basis of *Spectral Theory and the Spectral Projectors* and *The Polar Decomposition*.
+The eigenvalues are the critical values of the Rayleigh quotient, and the eigenvectors are orthogonal. The spectral theorem is the basis of *Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$* and *The Polar Decomposition of $M_4(\mathbb{C})$*.
 
 **The positive semidefinite cone.** The Hermitian matrix $H$ is **positive semidefinite** if
 
@@ -340,7 +340,7 @@ $$
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the positive definite cone, the trace form and the operator norms.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $U(4)$, $\mathfrak{u}(4)$, $\mathfrak{su}(4)$ and the compact real forms.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra and the trace pairing.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m4c.html), for the trace pairing and the Jordan decomposition.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the singular set and the rank stratification.
-- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the $*$-unitary polar factor and the positive factor.
+- [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the trace pairing and the Jordan decomposition.
+- [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the singular set and the rank stratification.
+- [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the $*$-unitary polar factor and the positive factor.
 - [Matrix Rings with an Involution](matrix-rings-with-an-involution.html), for the general theory of involutions and Hermitian forms.

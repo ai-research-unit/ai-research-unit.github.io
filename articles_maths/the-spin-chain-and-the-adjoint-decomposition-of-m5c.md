@@ -1,4 +1,4 @@
-# __The Spin Chain and the Adjoint Decomposition__
+# __The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -23,9 +23,9 @@ $$
 
 and the traceless part $\mathfrak{sl}_5$ is $3+5+7+9=24$. This is the **adjoint decomposition** $1+3+5+7+9$.
 
-The chain is read on the Peirce frame of *The Peirce Decomposition*: the idempotents $P_k=E_{kk}$ project onto the weight vectors, the simple nilpotents $E_{k,k+1}$ are the elementary steps of the chain, and the weights are the labels $2,1,0,-1,-2$. The four gauge parameters of *The Frame, the Simple Nilpotents and the Gauge* rescale the simple nilpotents and hence the ladder coefficients; in the orthonormal spectral gauge the coefficients are the positive numbers $2,\sqrt6,\sqrt6,2$.
+The chain is read on the Peirce frame of *The Peirce Decomposition of $M_5(\mathbb{C})$*: the idempotents $P_k=E_{kk}$ project onto the weight vectors, the simple nilpotents $E_{k,k+1}$ are the elementary steps of the chain, and the weights are the labels $2,1,0,-1,-2$. The four gauge parameters of *The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$* rescale the simple nilpotents and hence the ladder coefficients; in the orthonormal spectral gauge the coefficients are the positive numbers $2,\sqrt6,\sqrt6,2$.
 
-The article assumes the matrix algebra, the root and the Peirce decomposition. It uses the trace form only to define the adjoint $J_+^{\dagger}$ and to identify the compact real form; the algebraic decomposition is independent of the form. The comparison with $n=2$ is the biquaternion case, where the carrier is the spinor; for $n=5$ there are no spinors, and the carrier is the symmetric power. The spin-two chain is developed explicitly in *The Spin-Two Chain and the Adjoint $1+3+5+7+9$*; the present article states the chain, the relations and the decomposition.
+The article assumes the matrix algebra, the root and the Peirce decomposition. It uses the trace form only to define the adjoint $J_+^{\dagger}$ and to identify the compact real form; the algebraic decomposition is independent of the form. The comparison with $n=2$ is the biquaternion case, where the carrier is the spinor; for $n=5$ there are no spinors, and the carrier is the symmetric power. The spin-two chain is developed explicitly in *The Spin-Two Chain and the Adjoint $1+3+5+7+9$ of $M_5(\mathbb{C})$*; the present article states the chain, the relations and the decomposition.
 
 ## The Carrier
 
@@ -57,7 +57,7 @@ $$
 c_1=2,\qquad c_2=\sqrt6,\qquad c_3=\sqrt6,\qquad c_4=2 .
 $$
 
-**Remark.** The choice of the square roots is the choice of a real positive normalization. A gauge transformation of *The Frame, the Simple Nilpotents and the Gauge* replaces $E_{k,k+1}$ by $\lambda_kE_{k,k+1}$ and hence $c_k$ by $\lambda_kc_k$; the four $\lambda_k$ are pure gauge. The normalized chain is the one in which the frame is orthonormal for the trace form and the coefficients are positive.
+**Remark.** The choice of the square roots is the choice of a real positive normalization. A gauge transformation of *The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$* replaces $E_{k,k+1}$ by $\lambda_kE_{k,k+1}$ and hence $c_k$ by $\lambda_kc_k$; the four $\lambda_k$ are pure gauge. The normalized chain is the one in which the frame is orthonormal for the trace form and the coefficients are positive.
 
 ### The Matrices
 
@@ -230,14 +230,14 @@ The clean invariant statement is the recurrence of §*The Coefficients Are Force
 
 ### The Two Diagonal Structures
 
-The root $H$ and the spin generator $J_3$ are both diagonal in the spectral frame. In this article the frame is indexed $1,\dots,5$, and the projector $P_k$ of *Roots of Unity and the Lagrange Idempotents* is attached to $\zeta_{k-1}$; with this relabelling,
+The root $H$ and the spin generator $J_3$ are both diagonal in the spectral frame. In this article the frame is indexed $1,\dots,5$, and the projector $P_k$ of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$* is attached to $\zeta_k$; in this frame,
 
 $$
-H=\sum_{k=1}^{5}\zeta_{k-1}P_k,\qquad J_3=\sum_{k=1}^{5}(3-k)E_{kk},
+H=\sum_{k=1}^{5}\zeta_kP_k,\qquad J_3=\sum_{k=1}^{5}(3-k)E_{kk},
 \qquad P_k=E_{kk}.
 $$
 
-They commute. They are different structures on the same carrier: $H$ has the five distinct eigenvalues $\zeta_{k-1}$, and $J_3$ has the five distinct integer weights $2,1,0,-1,-2$. The Peirce idempotents are the common eigenvectors, $P_ke_k=e_k$.
+They commute. They are different structures on the same carrier: $H$ has the five distinct eigenvalues $\zeta_k$, and $J_3$ has the five distinct integer weights $2,1,0,-1,-2$. The Peirce idempotents are the common eigenvectors, $P_ke_k=e_k$.
 
 **Proposition.** The simple nilpotent $E_{k,k+1}$ is homogeneous of $\mathbb{Z}/5$-grade $-1$ and of $J_3$-weight $+1$:
 
@@ -248,7 +248,7 @@ $$
 
 More generally, the Peirce line $A_{kl}=\mathbb{C}E_{kl}$ has grade $k-l$ and weight $l-k$; the grade and the weight are opposite integers.
 
-**Proof.** The grade is $P_kP_l$: $HE_{kl}H^{-1}=\zeta_{k-1}\zeta_{l-1}^{-1}E_{kl}=\zeta^{k-l}E_{kl}$. The weight is $[J_3,E_{kl}]=(m_k-m_l)E_{kl}=(l-k)E_{kl}$. The two exponents are opposite.
+**Proof.** The grade is $P_kP_l$: $HE_{kl}H^{-1}=\zeta_k\zeta_l^{-1}E_{kl}=\zeta^{k-l}E_{kl}$. The weight is $[J_3,E_{kl}]=(m_k-m_l)E_{kl}=(l-k)E_{kl}$. The two exponents are opposite.
 
 **Corollary.** The raising operator $J_+$ lies in the grade $-1$ component $M^{(4)}$, the lowering operator $J_-$ in the grade $+1$ component $M^{(1)}$, and $J_3$ in the grade zero. The spin chain is **not** a grading by the same group as the root: $J_+$ shifts the weight by $+1$ and the grade by $-1$.
 
@@ -403,7 +403,8 @@ The adjoint decomposition is multiplicity-free, one summand per highest weight $
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the Clebsch–Gordan decomposition, the highest-weight classification and the symmetric powers of $\mathbb{C}^2$.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the semisimplicity of finite-dimensional $\mathfrak{sl}_2$-modules, the Casimir element and the weight multiplicities.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form $\mathfrak{su}_2$ and the $*$-unitary generators $iJ_3,iJ_+,iJ_-$.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$, the weight spaces and the multiplication rule.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge that rescales the simple nilpotents and the ladder coefficients.
-- [The Spin-Two Chain and the Adjoint $1+3+5+7+9$](the-spin-two-chain-and-the-adjoint-of-m5c.html), for the explicit spin-two chain, the weights and the absence of chirality.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the carrier as the simple module of $M_5(\mathbb{C})$ and for the distinction between the carrier and the Peirce lines.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$, the weight spaces and the multiplication rule.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge that rescales the simple nilpotents and the ladder coefficients.
+- [The Spin-Two Chain and the Adjoint $1+3+5+7+9$ of $M_5(\mathbb{C})$](the-spin-two-chain-and-the-adjoint-of-m5c.html), for the explicit spin-two chain, the weights and the absence of chirality.
+- [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the carrier as the simple module of $M_5(\mathbb{C})$ and for the distinction between the carrier and the Peirce lines.
+- [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the general construction at order $n$.

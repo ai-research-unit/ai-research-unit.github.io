@@ -128,7 +128,7 @@ The reduced biquaternion algebra is a Clifford algebra in two senses. It is the 
 
 ## Further Reading
 
-- [Reduced Biquaternion Other Algebraic Element Representations](reduced-biquaternion-other-algebraic-element-representations.html), for the Clifford identification $Cl_{1,0}\otimes Cl_{0,1}$ and the other presentations.
+- [Reduced Biquaternion Versors and the Orthogonal Group](reduced-biquaternion-other-algebraic-element-representations.html), for the Clifford identification $Cl_{1,0}\otimes Cl_{0,1}$ and the other presentations.
 - [Reduced Biquaternion Versors and the Orthogonal Group](reduced-biquaternion-versors-and-the-orthogonal-group.html), for the even Clifford algebra of the hyperbolic plane and the versor group.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the definite and the indefinite norms.
 - [Reduced Biquaternion Analysis](reduced-biquaternion-analysis.html), for the reduction of the differential calculus to the two complex analyses.

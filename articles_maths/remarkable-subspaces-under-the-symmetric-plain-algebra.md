@@ -186,7 +186,7 @@ On the remarkable real subspaces the symmetric plain product is closed on the ce
 
 ## Further Reading
 
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html) and [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the remarkable subspaces, their bases and their relations.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html) and [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the remarkable subspaces, their bases and their relations.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the same remarkable subspaces under the general plain bilinear form, and for the readings of the four general products.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the generic norm, the units and the isotropic cone.
 - *Idempotents of the General Plain Algebra*, for the idempotents and the pure states.

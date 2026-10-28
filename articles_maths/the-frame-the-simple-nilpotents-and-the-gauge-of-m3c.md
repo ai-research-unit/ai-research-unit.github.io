@@ -1,4 +1,4 @@
-# __The Frame, the Simple Nilpotents and the Gauge__
+# __The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ This article constructs the frame from a basis of $\mathbb{C}^{3}$, proves the m
 
 **The idempotents do not depend on the gauge parameter.** The symbols $\lambda_{1},\lambda_{2}$ below are gauge parameters of the nilpotents; they never multiply an idempotent. A statement that an idempotent depends on $\lambda$ is a confusion of the gauge with the frame.
 
-The article assumes the algebra and its matrix units of *The Matrix Algebra $M_{3}(\mathbb{C})$*, the Peirce decomposition of *The Peirce Decomposition of $M_{3}(\mathbb{C})$*, and the root of *Roots of Unity and the Lagrange Idempotents*. The two-parameter gauge is developed further in *The Two-Parameter Gauge*; the modules built on the idempotents are *The Modules and the Minimal Left Ideals*.
+The article assumes the algebra and its matrix units of *The Matrix Algebra $M_{3}(\mathbb{C})$*, the Peirce decomposition of *The Peirce Decomposition of $M_{3}(\mathbb{C})$*, and the root of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*. The two-parameter gauge is developed further in *The Two-Parameter Gauge of $M_3(\mathbb{C})$*; the modules built on the idempotents are *The Modules and the Minimal Left Ideals of $M_3(\mathbb{C})$*.
 
 ## The Frame from a Basis
 
@@ -20,7 +20,7 @@ $$
 
 The frame is **normalized** by the second condition; the first alone gives $E_{ii}^{2}=E_{ii}$, $E_{ii}E_{jj}=0$ for $i\neq j$, and $E_{ij}^{2}=0$ for $i\neq j$.
 
-**Theorem (the frame from a basis).** Let $(v_{0},v_{1},v_{2})$ be a basis of $\mathbb{C}^{3}$ and let $(v_{0}^{\vee},v_{1}^{\vee},v_{2}^{\vee})$ be the dual basis, $v_{j}^{\vee}(v_{k})=\delta_{jk}$. Put
+**Theorem (the frame from a basis).** Let $(v_{1},v_{2},v_{3})$ be a basis of $\mathbb{C}^{3}$ and let $(v_{1}^{\vee},v_{2}^{\vee},v_{3}^{\vee})$ be the dual basis, $v_{j}^{\vee}(v_{k})=\delta_{jk}$. Put
 
 $$
 E_{ij}=v_{i}v_{j}^{\vee}.
@@ -60,7 +60,7 @@ $$
 H=\sum_{i=1}^{3}\zeta_{i}E_{ii}
 $$
 
-is a root with simple spectrum, by *Roots of Unity and the Lagrange Idempotents*. Conversely, a root $H$ gives its three Lagrange idempotents $P_{i}$, and a frame with $E_{ii}=P_{i}$ is a choice of the six off-diagonal units. The root and the frame are therefore related by
+is a root with simple spectrum, by *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*. Conversely, a root $H$ gives its three Lagrange idempotents $P_{i}$, and a frame with $E_{ii}=P_{i}$ is a choice of the six off-diagonal units. The root and the frame are therefore related by
 
 $$
 \{\text{frames}\}\longrightarrow\{\text{roots}\},\qquad (E_{ij})\longmapsto\sum_{i}\zeta_{i}E_{ii},
@@ -199,7 +199,7 @@ $$
 
 **Proposition.** Every solution is of the form $\lambda_{ij}=t_{i}/t_{j}$ for some $t_{i}\in\mathbb{C}^{\times}$, and the solutions form a group isomorphic to $(\mathbb{C}^{\times})^{2}$.
 
-**Proof.** Put $t_{i}=\lambda_{i0}$, with the index $0$ fixed. The cocycle gives $\lambda_{ij}=\lambda_{i0}\lambda_{0j}=t_{i}\lambda_{j0}^{-1}=t_{i}/t_{j}$, using $\lambda_{0j}=\lambda_{j0}^{-1}$. Conversely every assignment $t_{i}/t_{j}$ satisfies the three relations. Two assignments $t_{i}$ and $ct_{i}$ give the same $\lambda$, so the parameter space is $(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2}$.
+**Proof.** Put $t_{i}=\lambda_{i1}$, with the index $1$ fixed. The cocycle gives $\lambda_{ij}=\lambda_{i1}\lambda_{1j}=t_{i}\lambda_{j1}^{-1}=t_{i}/t_{j}$, using $\lambda_{1j}=\lambda_{j1}^{-1}$. Conversely every assignment $t_{i}/t_{j}$ satisfies the three relations. Two assignments $t_{i}$ and $ct_{i}$ give the same $\lambda$, so the parameter space is $(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2}$.
 
 **Corollary.** If $\lambda_{1}$ is put on $E_{12}$ and $\lambda_{2}$ on $E_{23}$, then the scalar on $E_{13}$ is forced to be $\lambda_{1}\lambda_{2}$. A third independent scalar $\lambda_{3}$ on $E_{13}$ is incompatible with the frame unless $\lambda_{3}=\lambda_{1}\lambda_{2}$. The only freedom is the two-parameter torus, and the composite carries the product of the two simple weights.
 
@@ -224,7 +224,7 @@ $$
 
 The fibre over $H$ consists of the frames with the same diagonal units. The Peirce lines $A_{ij}=P_{i}M_{3}P_{j}$ are one-dimensional, so a frame over $H$ is the choice of a nonzero $E_{ij}\in A_{ij}$ for each $i\neq j$, normalized by $E_{ij}E_{ji}=P_{i}$. The gauge $E_{ij}\mapsto(t_{i}/t_{j})E_{ij}$ acts on these choices, and it acts simply transitively: given two frames $E_{ij}$ and $E_{ij}'$ with the same diagonal, $E_{ij}'=\mu_{ij}E_{ij}$ with $\mu_{ij}\in\mathbb{C}^{\times}$; the matrix-unit table forces $\mu_{ij}\mu_{jk}=\mu_{ik}$ and $\mu_{ji}=\mu_{ij}^{-1}$, so by the cocycle proposition $\mu_{ij}=t_{i}/t_{j}$ for a unique class of $t$ modulo common scalar. The fibre is therefore a $(\mathbb{C}^{\times})^{2}$-torsor, of dimension two.
 
-The dimensions are the orbit dimension $6$ of *Roots of Unity and the Lagrange Idempotents* and the torus dimension $2$; the total is the frame dimension $8$ of §*The Frame from a Basis*. The two counts agree, and the agreement is the content of the theorem.
+The dimensions are the orbit dimension $6$ of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$* and the torus dimension $2$; the total is the frame dimension $8$ of §*The Frame from a Basis*. The two counts agree, and the agreement is the content of the theorem.
 
 **The three counts of the same eight.**
 
@@ -308,9 +308,10 @@ The count $8=6+2$ is the orbit-stabiliser count for the action of $PGL_{3}$ on t
 ## Further Reading
 
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the nine lines and the coarse split.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the root $H$ and its idempotents.
-- [The Two-Parameter Gauge](the-two-parameter-gauge-of-m3c.html), for the gauge read on the coherence entries and the comparison with the single $\lambda$ of $\mathbb{B}$.
+- [Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the root $H$ and its idempotents.
+- [The Two-Parameter Gauge of $M_3(\mathbb{C})$](the-two-parameter-gauge-of-m3c.html), for the gauge read on the coherence entries and the comparison with the single $\lambda$ of $\mathbb{B}$.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units and the projective group.
 - [Matrix Algebras](matrix-algebras.html), for the matrix-unit table.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the two-dimensional frame and its single $\mu$.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the two-dimensional frame and its single $\mu$.
 - [Root Systems and Classification](root-systems-and-classification.html), for the root system $A_{2}$ and the maximal torus.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the general construction at order $n$.

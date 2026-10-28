@@ -220,7 +220,7 @@ $$
 e\mathbb{D}e\oplus e\mathbb{D}(1-e)\oplus(1-e)\mathbb{D}e\oplus(1-e)\mathbb{D}(1-e).
 $$
 
-Write $\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau$ for $\sigma,\tau\in\{+,-\}$, in the notation of *Ideals and Peirce Decomposition of the Split-Complex Algebra*, §*The Peirce Decomposition*. Because $\mathbb{D}$ is commutative and $\Pi_+\Pi_-=0$, the off-diagonal Peirce components vanish:
+Write $\mathbb{D}_{\sigma\tau}=\Pi_\sigma\mathbb{D}\Pi_\tau$ for $\sigma,\tau\in\{+,-\}$, in the notation of *Ideals and Peirce Decomposition of the Split-Complex Algebra*, §*The Peirce Decomposition of the Biquaternion Algebra*. Because $\mathbb{D}$ is commutative and $\Pi_+\Pi_-=0$, the off-diagonal Peirce components vanish:
 
 $$
 \mathbb{D}_{+-}=\Pi_+\mathbb{D}\Pi_-=0,

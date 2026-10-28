@@ -1,4 +1,4 @@
-# __The Spin Chain and the Adjoint Decomposition__
+# __The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ $$
 
 The five ladder coefficients of the carrier are $\sqrt5,\sqrt8,3,\sqrt8,\sqrt5$. The chain is irreducible and it mixes chirality: the Cartan is diagonal in the chiral $3+3$ split, while the ladder exchanges the two halves.
 
-The article assumes the frame and the matrix units of *The Frame, the Simple Nilpotents and the Gauge*, and the chirality involution of *Roots of Unity and the Lagrange Idempotents*. It uses no form and no topology; the trace form is *The Involution and the Hermitian Structure*, and the Lie algebra of the group is *The Exponential and the Lie Group*. The modules over the algebra are *The Modules and the Minimal Left Ideals*; the decomposition of the algebra by the Peirce corners is *The Peirce Decomposition*.
+The article assumes the frame and the matrix units of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$*, and the chirality involution of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$*. It uses no form and no topology; the trace form is *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$*, and the Lie algebra of the group is *The Exponential and the Lie Group of $M_6(\mathbb{C})$*. The modules over the algebra are *The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$*; the decomposition of the algebra by the Peirce corners is *The Peirce Decomposition of $M_6(\mathbb{C})$*.
 
 ## The Generators
 
@@ -200,7 +200,7 @@ whose sum is $36$.
 
 ### The Weights on the Peirce Chain
 
-The Peirce line $A_{kl}$ of *The Peirce Decomposition* is the weight line of weight $l-k$. The position of the line in the chain is the pair $(k,l)$, and the weight is the difference of the positions. This is the precise sense in which **the weights are read on the Peirce chain**: the chain orders the six frame lines, and the weight of a matrix unit is the signed distance along the chain.
+The Peirce line $A_{kl}$ of *The Peirce Decomposition of $M_6(\mathbb{C})$* is the weight line of weight $l-k$. The position of the line in the chain is the pair $(k,l)$, and the weight is the difference of the positions. This is the precise sense in which **the weights are read on the Peirce chain**: the chain orders the six frame lines, and the weight of a matrix unit is the signed distance along the chain.
 
 The three gradings are compatible with the weight in the following sense. The weight is an integer in $\{-5,\dots,5\}$; the $\mathbb{Z}/6$ grading of the algebra is by $k-l$ modulo six, that is by $-w$ modulo six. Hence
 
@@ -448,11 +448,12 @@ The Peirce line $A_{kl}$ is the weight line $l-k$. The chirality $\Gamma$ commut
 
 ## Further Reading
 
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the frame, the matrix units and the simple nilpotents.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m6c.html), for the Peirce lines on which the weights are read.
-- [The Two Chiralities](the-two-chiralities-of-m6c.html), for the $3+3$ split and the mass block.
-- [The Rank-Two and Rank-Three Splits](the-rank-two-and-rank-three-splits-of-m6c.html), for the coarse splits and the two mass blocks.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the group action on the algebra.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the frame, the matrix units and the simple nilpotents.
+- [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the Peirce lines on which the weights are read.
+- [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the $3+3$ split and the mass block.
+- [The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$](the-rank-two-and-rank-three-splits-of-m6c.html), for the coarse splits and the two mass blocks.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the group action on the algebra.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the $\mathfrak{sl}_2$ representation theory, the highest weight construction and the Casimir eigenvalues.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the Clebsch–Gordan decomposition and the symmetric powers of $\mathbb{C}^2$.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the real forms $\mathfrak{su}_2\subset\mathfrak{sl}_2(\mathbb{C})$ and the ladder operators.
+- [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the general construction at order $n$.

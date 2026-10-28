@@ -317,7 +317,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 ## Further Reading
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the characteristic polynomial, the spectral-degenerate cone, the vertex and its complement, the spectral decomposition and the eigenbasis.
+- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the characteristic polynomial, the spectral-degenerate cone, the vertex and its complement, the spectral decomposition and the eigenbasis.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for $\Sigma_{11}$, the complement of the union of the two cones.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the scalar line and the Jordan part.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents and the spectrum $\{c,0\}$.

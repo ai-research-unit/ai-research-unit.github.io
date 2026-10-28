@@ -1,10 +1,10 @@
-# __The Modules and the Minimal Left Ideals__
+# __The Modules and the Minimal Left Ideals of $M_4(\mathbb{C})$__
 
 ## Introduction
 
 **The algebra $M_4(\mathbb{C})$ has a unique simple left module $S=\mathbb{C}^4$, the minimal left ideals are the four columns $M_4P_k\cong S$, and the algebra is the bimodule $S\otimes S^*$.** The left regular module is $S^{\oplus4}$, the right regular module is $(S^*)^{\oplus4}$, and the minimal left and right ideals are dual by the trace pairing. The Peirce carrier $C(P)=PMP\oplus PMQ$ of a rank-one idempotent has dimension $1+3=4$; it is the dual row, and the spin chain acts on the column dual to that carrier.
 
-The article describes the regular module, the minimal left and right ideals, the column and the row, the tensor-product decomposition $M_4\cong\mathbb{C}^4\otimes(\mathbb{C}^4)^*$, the non-canonical exchange of the minimal ideals, and the Peirce carrier. The Peirce decomposition is *The Peirce Decomposition*; the spin chain is *The Spin Chain and the Adjoint Decomposition*; the regular model is *The Regular Module*.
+The article describes the regular module, the minimal left and right ideals, the column and the row, the tensor-product decomposition $M_4\cong\mathbb{C}^4\otimes(\mathbb{C}^4)^*$, the non-canonical exchange of the minimal ideals, and the Peirce carrier. The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the spin chain is *The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$*; the regular model is *The Regular Module*.
 
 ## The Regular Module
 
@@ -241,7 +241,7 @@ $$
 
 and the diagonal corner $PMP$ pairs with itself. The column and the row are the two carriers, dual to each other.
 
-**The spin chain carrier.** The spin chain of *The Spin Chain and the Adjoint Decomposition* acts on the column
+**The spin chain carrier.** The spin chain of *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$* acts on the column
 
 $$
 S=M_4P_1\cong\mathbb{C}^4,
@@ -321,7 +321,7 @@ $$
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the regular module, minimal ideals and the Peirce decomposition.
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for semisimple rings, simple modules and the Artin–Wedderburn theorem.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the algebra and the matrix units.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m4c.html), for the corners $1+3+3+9$.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the spin-chain action on the carrier.
+- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the corners $1+3+3+9$.
+- [The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the spin-chain action on the carrier.
 - [The Regular Module](the-regular-module.html), for the biquaternion regular module.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion case.

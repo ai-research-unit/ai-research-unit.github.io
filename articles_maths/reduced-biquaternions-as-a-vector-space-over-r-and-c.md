@@ -188,5 +188,5 @@ A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in wh
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), below this article, for the four general products and the clause that decides which slot carries a conjugation.
 - [The Four-Vector Element Representation of the Reduced Biquaternions](the-four-vector-element-representation-of-the-reduced-biquaternions.html), for the real quadruple and the complex pair as element representations.
 - [Conventions in Mathematics](conventions-in-mathematics.html), §*The Elements and their Coefficients*, for the scalar part, the $j$-part and the two complex coordinates.
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.
 - [The Split-Complexoid as a Vector Space over $\mathbb{R}$](the-split-complexoid-as-a-vector-space-over-r.html), for the real companion $\mathbb{D}$ and its self-interpretation over the algebra.

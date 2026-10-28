@@ -133,7 +133,7 @@ The idempotent is neither $0$ nor $e_t$: $\tilde\Pi=0$ gives $\tilde Q=0$, and $
 
 **Corollary (the two dimensions).** The pure stratum has real dimension four and the non-pure stratum real dimension six; the pure stratum is of real codimension two in the punctured cone.
 
-**Remark (the idempotent surface).** The non-trivial idempotents form a complex surface of complex dimension two and real dimension four; they are exactly the rank-one idempotents. The map $\mathcal{N}_{\mathrm{np}}\to\{\tilde\Pi\}$ is a principal $\mathbb{C}^{\times}$-bundle, the fibre over $\tilde\Pi$ being the punctured complex line $\mathbb{C}^{\times}\tilde\Pi$. A non-trivial idempotent is determined by its image line and its kernel line, two distinct complex lines; the surface is therefore $\mathbb{P}^1\times\mathbb{P}^1$ minus the diagonal. Its structure is *The Peirce Decomposition*, §*Idempotents and Orthogonal Idempotents*.
+**Remark (the idempotent surface).** The non-trivial idempotents form a complex surface of complex dimension two and real dimension four; they are exactly the rank-one idempotents. The map $\mathcal{N}_{\mathrm{np}}\to\{\tilde\Pi\}$ is a principal $\mathbb{C}^{\times}$-bundle, the fibre over $\tilde\Pi$ being the punctured complex line $\mathbb{C}^{\times}\tilde\Pi$. A non-trivial idempotent is determined by its image line and its kernel line, two distinct complex lines; the surface is therefore $\mathbb{P}^1\times\mathbb{P}^1$ minus the diagonal. Its structure is *The Peirce Decomposition of the Biquaternion Algebra*, §*Idempotents and Orthogonal Idempotents*.
 
 **Remark (the standard idempotents).** The elements
 
@@ -236,7 +236,7 @@ $$
 \mathbb{B}_{ij}=\tilde\Pi_i\mathbb{B}\tilde\Pi_j,
 $$
 
-with $\tilde\Pi_1=\tilde\Pi$ and $\tilde\Pi_0=e_t-\tilde\Pi$. For a rank-one idempotent each corner is a complex line. The kernel of $L_{\tilde Q}$ is $\mathbb{B}_{01}\oplus\mathbb{B}_{00}$ and its image is $\mathbb{B}_{11}\oplus\mathbb{B}_{10}$; the kernel of $R_{\tilde Q}$ is $\mathbb{B}_{10}\oplus\mathbb{B}_{00}$ and its image is $\mathbb{B}_{11}\oplus\mathbb{B}_{01}$. The general Peirce theory is *The Peirce Decomposition*, §*The Peirce Decompositions*.
+with $\tilde\Pi_1=\tilde\Pi$ and $\tilde\Pi_0=e_t-\tilde\Pi$. For a rank-one idempotent each corner is a complex line. The kernel of $L_{\tilde Q}$ is $\mathbb{B}_{01}\oplus\mathbb{B}_{00}$ and its image is $\mathbb{B}_{11}\oplus\mathbb{B}_{10}$; the kernel of $R_{\tilde Q}$ is $\mathbb{B}_{10}\oplus\mathbb{B}_{00}$ and its image is $\mathbb{B}_{11}\oplus\mathbb{B}_{01}$. The general Peirce theory is *The Peirce Decomposition of the Biquaternion Algebra*, §*The Peirce Decompositions*.
 
 **Remark (the determinantal variety).** The cone is the determinantal variety of rank at most one,
 
@@ -417,8 +417,8 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the pure stratum as a cell
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link, the projectivisation and the singularity
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the idempotents and the Peirce corners
-- [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the pure stratum
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the idempotents and the Peirce corners
+- [Nilpotents](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the pure stratum
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the rank-one matrices and the determinant
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the complement of the cone
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401--416.

@@ -1,4 +1,4 @@
-# __The Adjoint Action, the Orbits and the Flag Variety__
+# __The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article describes the adjoint action, the orbit–stabiliser theorem, the Jordan classification, the root orbit and the gauge, the flag variety and the Grassmannians, and the nilpotent orbits.
 
-The root and the gauge are *The Frame, the Simple Nilpotents and the Gauge*; the Peirce decomposition is *The Peirce Decomposition*; the operators are *The Operators of the Peirce Decomposition*; the topology of the flag variety is *The Topology of $M_4(\mathbb{C})$*.
+The root and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the operators are *The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$*; the topology of the flag variety is *The Topology of $M_4(\mathbb{C})$*.
 
 ## The Adjoint Action
 
@@ -82,9 +82,9 @@ $$
 15-3=12.
 $$
 
-The twelve complex parameters are the root count of *Roots of Unity and the Lagrange Idempotents*.
+The twelve complex parameters are the root count of *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$*.
 
-**The gauge is the stabiliser.** The gauge torus of *The Frame, the Simple Nilpotents and the Gauge* is exactly the stabiliser $T$. The frame bundle
+**The gauge is the stabiliser.** The gauge torus of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$* is exactly the stabiliser $T$. The frame bundle
 
 $$
 PGL_4\longrightarrow PGL_4/T=\mathcal{O}_H
@@ -102,7 +102,7 @@ $$
 
 is the orbit–stabiliser count. The gauge is the fibre over the root, not a quotient of the algebra.
 
-**The three parameters.** The torus $T$ has three parameters, one per simple nilpotent $E_{12},E_{23},E_{34}$, as in *The Frame, the Simple Nilpotents and the Gauge*. The fourth ratio is the inverse of the product, and there is no fourth independent scalar. The gauge acts on the root orbit by moving the frame; it acts on the matrix units by $E_{ij}\mapsto(t_i/t_j)E_{ij}$.
+**The three parameters.** The torus $T$ has three parameters, one per simple nilpotent $E_{12},E_{23},E_{34}$, as in *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*. The fourth ratio is the inverse of the product, and there is no fourth independent scalar. The gauge acts on the root orbit by moving the frame; it acts on the matrix units by $E_{ij}\mapsto(t_i/t_j)E_{ij}$.
 
 **The spectral flag.** The root $H$ has four distinct eigenvalues, hence four spectral lines. The **spectral flag** is
 
@@ -123,7 +123,7 @@ $$
 12=6+6,
 $$
 
-the dimension of the root orbit equals the dimension of the flag variety plus the dimension of the unipotent fibre. The map is not a finite cover; the degree $4!=24$ of the Weyl group appears only over the unordered spectral decomposition, as in *Roots of Unity and the Lagrange Idempotents*.
+the dimension of the root orbit equals the dimension of the flag variety plus the dimension of the unipotent fibre. The map is not a finite cover; the degree $4!=24$ of the Weyl group appears only over the unordered spectral decomposition, as in *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$*.
 
 **The other semisimple orbits.** A semisimple element with eigenvalue multiplicities $m_1,\dots,m_r$ has centraliser
 
@@ -321,7 +321,7 @@ $$
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for Borel subgroups, parabolic subgroups and flag varieties.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the flag variety, the Grassmannians and the Weyl group.
 - David Collingwood and William McGovern, *Nilpotent Orbits in Semisimple Lie Algebras* (Van Nostrand Reinhold, 1993), for the partition classification and the closure order.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge torus.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root orbit and the spectral flag.
-- [The Operators of the Peirce Decomposition](the-operators-of-the-peirce-decomposition-of-m4c.html), for the adjoint action and the derivations.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m4c.html), for the idempotent varieties and the flag variety.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge torus.
+- [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root orbit and the spectral flag.
+- [The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$](the-operators-of-the-peirce-decomposition-of-m4c.html), for the adjoint action and the derivations.
+- [The Geometry of the Idempotents of $M_4(\mathbb{C})$](the-geometry-of-the-idempotents-of-m4c.html), for the idempotent varieties and the flag variety.

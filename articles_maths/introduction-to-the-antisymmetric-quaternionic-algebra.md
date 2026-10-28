@@ -215,4 +215,4 @@ The antisymmetric quaternionic multiplication is the antisymmetric part of the g
 - [The Specificities of the Antisymmetric Quaternionic Algebra](the-specificities-of-the-antisymmetric-quaternionic-algebra.html), for the criterion of the block, the projector class and the comparison of the twelve in one table
 - [The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra](the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.html), for the cyclic sum, its explicit formula and the associator criterion
 - [The Associator and the Ternary Product of the Quaternionic Product](the-associator-and-the-ternary-product-of-the-quaternionic-product.html), for the associator of the parent product, the defect of the block
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces read in the following articles of the block
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces read in the following articles of the block

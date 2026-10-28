@@ -1,4 +1,4 @@
-# __The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners__
+# __The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -23,7 +23,7 @@ $$
 
 the traceless torus of the first block, the traceless torus of the second block, and one relative scale.
 
-The article assumes the coarse Peirce decomposition of *The Peirce Decomposition* and the gauge of *The Frame, the Simple Nilpotents and the Gauge*. It uses no form and no topology. The mass block is developed in *The Mass Block and the Chiral Polar Decomposition*; the full flag and the parabolic are *The Adjoint Action, the Orbits and the Flag Variety*.
+The article assumes the coarse Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$* and the gauge of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$*. It uses no form and no topology. The mass block is developed in *The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$*; the full flag and the parabolic are *The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$*.
 
 ## The Three Coarse Splits
 
@@ -467,11 +467,11 @@ the two traceless corner tori and the relative scale. The relative scale is the 
 
 ## Further Reading
 
-- [The Peirce Decomposition](the-peirce-decomposition-of-m6c.html), for the four corners and the corner multiplication.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the five-dimensional gauge.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
-- [The Two Chiralities](the-two-chiralities-of-m6c.html), for the $3+3$ split of the carrier.
-- [The Rank-Two and Rank-Three Splits](the-rank-two-and-rank-three-splits-of-m6c.html), for the idempotent geometry of the two ranks.
+- [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the four corners and the corner multiplication.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the five-dimensional gauge.
+- [The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
+- [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the $3+3$ split of the carrier.
+- [The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$](the-rank-two-and-rank-three-splits-of-m6c.html), for the idempotent geometry of the two ranks.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the trace, the determinant and the block multiplication.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the $3\times3$ block.
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the $4\times4$ block.

@@ -1,4 +1,4 @@
-# __The Exponential Polar Decomposition__
+# __The Exponential Polar Decomposition of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -25,7 +25,7 @@ The decomposition is different from the right polar decomposition $A=UP=e^{\math
 
 The exponential polar decomposition exists exactly on $GL_6$: both factors are invertible, so a singular matrix has no such factorisation. The polar decomposition with a partial isometry survives on the singular set, and the Hermitian factor diverges logarithmically at the boundary.
 
-The article assumes the polar decomposition of *The Polar Decomposition*, the exponential of *The Exponential and the Lie Group*, and the chiral split of *The Two Chiralities*. The comparison with the rank-two case is *The Exponential Polar Decomposition of $M_4(\mathbb{C})$*; the mass block is *The Mass Block and the Chiral Polar Decomposition*.
+The article assumes the polar decomposition of *The Polar Decomposition of $M_6(\mathbb{C})$*, the exponential of *The Exponential and the Lie Group of $M_6(\mathbb{C})$*, and the chiral split of *The Two Chiralities of $M_6(\mathbb{C})$*. The comparison with the rank-two case is *The Exponential Polar Decomposition of $M_4(\mathbb{C})$*; the mass block is *The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$*.
 
 ## The Left Polar Decomposition
 
@@ -212,7 +212,7 @@ $$
 
 **Theorem.** Every singular $A$ has a polar decomposition $A=UP$ with $P\ge0$ and $U$ a partial isometry; the positive factor is unique, and the partial isometry is free on the kernel.
 
-**Proof.** This is *The Polar Decomposition*; the exponential form requires $P>0$, which fails at the singular set, but the positive semidefinite form and the partial isometry survive.
+**Proof.** This is *The Polar Decomposition of $M_6(\mathbb{C})$*; the exponential form requires $P>0$, which fails at the singular set, but the positive semidefinite form and the partial isometry survive.
 
 **Corollary (the two reaches).** The exponential polar decomposition reaches $GL_6$; the polar decomposition with a partial isometry reaches all of $M_6$.
 
@@ -341,10 +341,10 @@ In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the S
 
 ## Further Reading
 
-- [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the right polar decomposition and the singular case.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m6c.html), for the matrix logarithm and the one-parameter subgroups.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the chiral decomposition of the $3\times3$ block.
-- [The Two Chiralities](the-two-chiralities-of-m6c.html), for the $3+3$ split and the chirality involution.
+- [The Polar Decomposition of $M_6(\mathbb{C})$](the-polar-decomposition-of-m6c.html), for the right polar decomposition and the singular case.
+- [The Exponential and the Lie Group of $M_6(\mathbb{C})$](the-exponential-and-the-lie-group-of-m6c.html), for the matrix logarithm and the one-parameter subgroups.
+- [The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the chiral decomposition of the $3\times3$ block.
+- [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the $3+3$ split and the chirality involution.
 - [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the $2+2$ split and the $2\times2$ mass block.
 - [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the regular case.
 - [The Cartan Decomposition and the Cartan Involution](the-cartan-decomposition-and-the-cartan-involution.html), for the symmetric space and the exponential polar form.

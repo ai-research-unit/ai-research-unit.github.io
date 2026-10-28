@@ -200,6 +200,6 @@ The bracket of the antisymmetric plain algebra is the cross product of the vecto
 - [The Lie Algebra of the Antisymmetric Plain Algebra](the-lie-algebra-of-the-antisymmetric-plain-algebra.html), for the structural reading of the whole algebra, the centre and the real forms
 - [The Killing Form of the Antisymmetric Plain Algebra](the-killing-form-of-the-antisymmetric-plain-algebra.html), for the form restricted to the remarkable subspaces and its isotropic elements
 - [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.html), for the adjoints and the automorphisms of the bracket
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html) and [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the remarkable subspaces and their relations
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html) and [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the remarkable subspaces and their relations
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the pattern of the reading under the general plain product and the comparison of the readings of the remarkable subspaces under the four general products
 - [The Unitary Lie Algebra](the-unitary-lie-algebra.html), for the skew-Hermitian elements and their group

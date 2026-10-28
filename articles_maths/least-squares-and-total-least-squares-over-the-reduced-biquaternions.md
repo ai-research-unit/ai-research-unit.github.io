@@ -435,10 +435,10 @@ The three approximation problems over the reduced biquaternion algebra — least
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the decomposition along the two idempotents.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the form $\langle\cdot\rangle_{\mathrm{ts}*}$ and the topological norm.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the bar, the tessarine sign and the star.
-- [Reduced Biquaternion Other Algebraic Element Representations](reduced-biquaternion-other-algebraic-element-representations.html), for the array representation and the pair $(M^{+},M^{-})$.
+- [Reduced Biquaternion Versors and the Orthogonal Group](reduced-biquaternion-other-algebraic-element-representations.html), for the array representation and the pair $(M^{+},M^{-})$.
 - [Hermitian Solutions of the Pair Matrix Equation over the Reduced Biquaternions](hermitian-solutions-of-the-pair-matrix-equation-over-the-reduced-biquaternions.html), for the pair equation $(AXB,CXD)=(E,F)$ in the source's Hermitian set, the real representation and the signed selection used there, the half-vectorisation, and the least squares, consistency and uniqueness criteria.
-- [Reduced Biquaternion Objects and their Matrix Correspondences](reduced-biquaternion-objects-and-their-matrix-correspondences.html), for the objects of the algebra and their matrix invariants.
+- [Reduced Biquaternion Objects and Their Matrix Correspondences](reduced-biquaternion-objects-and-their-matrix-correspondences.html), for the objects of the algebra and their matrix invariants.
 - [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), for the spectrum and the singular values of the algebra.
 - [Compact Operators](compact-operators.html), for the singular values and the Schatten classes.
 - [Quaternion Augmented Statistics](quaternion-augmented-statistics.html), for the least squares problem in the non-commutative quaternion statistics.
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the non-commutative companion of the matrix dictionary.
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the non-commutative companion of the matrix dictionary.

@@ -206,6 +206,6 @@ The four involutions of the algebra become the adjugate, the $\epsilon$-dressed 
 - [The Group of Involutions](the-group-of-involutions.html), for the four involutions
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the operator-level adjoints
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the four forms
-- [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the model
-- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the material reading
+- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the model
+- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the material reading

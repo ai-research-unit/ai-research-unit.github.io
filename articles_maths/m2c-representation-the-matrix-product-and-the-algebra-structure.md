@@ -208,12 +208,12 @@ The assignment $\mathsf{M}_2$ sends $e_t$ to $\mathrm I_2$ and the three vector 
 
 ## Further Reading
 
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra and its two products
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra and its two products
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants
 - [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate model and the two columns
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the eight matrices computed in the model
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the four involutions
-- [Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the regular representation
+- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the regular representation
 - [Matrix Algebras](matrix-algebras.html), for the structure of $M_n(\mathbb{C})$
 - [The Realification of the General Quaternionic Algebra](the-realification-of-the-general-quaternionic-algebra.html), for the real reading of the complex model
 - F. R. Gantmacher, *The Theory of Matrices* (Chelsea, 1959).

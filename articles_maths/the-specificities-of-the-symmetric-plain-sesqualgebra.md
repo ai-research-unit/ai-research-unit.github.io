@@ -86,7 +86,7 @@ The symmetric plain sesqualgebra is the only one of the twelve structures that i
 
 ## Further Reading
 
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the criterion of the plain product, the model of the family.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the criterion of the plain product, the model of the family.
 - [The Specificities of the Symmetric Quaternionic Algebra](the-specificities-of-the-symmetric-quaternionic-algebra.html), for the sibling criterion $L_{\tilde Q_2}^{2} = Q_{2t}L_{\tilde Q_2}$ and the hyperplane of rank-one projectors onto the centre.
 - [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the product, its class and its placement among the twelve.
 - [The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra](the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.html), for the clause C1, its two reading involutions and its comparison with the siblings.

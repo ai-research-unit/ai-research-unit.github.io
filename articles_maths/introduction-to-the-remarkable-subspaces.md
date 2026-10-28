@@ -145,18 +145,18 @@ Exactly two of the remarkable subspaces are closed under the product, the centre
 
 ## Further Reading
 
-- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the coordinate blocks, the intersections, the sums and the action of the conjugations on the remarkable subspaces
-- [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces.html), for the three eigenspace decompositions the conjugations cut out, one pair of subspaces to each
+- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the coordinate blocks, the intersections, the sums and the action of the conjugations on the remarkable subspaces
+- [The Three Eigenspace Decompositions](decompositions-along-the-remarkable-subspaces.html), for the three eigenspace decompositions the conjugations cut out, one pair of subspaces to each
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four general products brought to the remarkable subspaces together, the product of two elements of the remarkable subspaces, and the Jordan and the Lie algebra each subspace carries and with which product
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms on the remarkable subspaces side by side, the only orthogonal pair and the comparison of the two readings
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restrictions themselves, subspace by subspace and form by form, and for the isotropic lines and the minimal ideals the remarkable subspaces determine
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the inverse formula and the unit group of the whole algebra
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the zero divisors of the whole algebra, the pure and the non-pure family and the bivector form of the pure ones
-- [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the three classifications in the whole algebra
+- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the three classifications in the whole algebra
 - [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the idempotents of the whole algebra, the bijection with the roots of minus one and the projection reading
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce decomposition in the whole algebra; simplicity and the length are *The Regular Module*, and the minimal ideals are *The Minimal Left Ideals*
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the Peirce decomposition in the whole algebra; simplicity and the length are *The Regular Module*, and the minimal ideals are *The Minimal Left Ideals*
 - [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the simple module $S$, the minimal left ideals and the Morita equivalence
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the product and its scalar–vector form
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the two parts into which the product splits
 - [The Group of Involutions](the-group-of-involutions.html), for the group the four conjugations generate
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, its basis, its conjugations and its coordinate systems
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, its basis, its conjugations and its coordinate systems

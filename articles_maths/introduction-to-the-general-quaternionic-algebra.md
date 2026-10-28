@@ -209,7 +209,7 @@ The three classical weakenings of associativity are settled by the witnesses alr
 
 **Proof.** The product is a $\mathbb{C}$-bilinear binary operation on the $\mathbb{C}$-vector space $\mathbb{B}$ by the propositions of §*The Multiplication as a Binary Operation*, which is the definition of an algebra over the commutative ring $\mathbb{C}$ in the broad sense; the dimension is four on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ (*The Biquaternion Algebra*); and the remaining clauses are the propositions above.
 
-**Remark.** What the algebra is not is as informative as what it is. It is not associative, so the associative theory — the two-sided ideals of *The Peirce Decomposition*, the modules of *The Category of Modules*, the opposite algebra — does not apply to it; it is not two-sidedly unital, so there is no group of units of its own; and it is not commutative, so no centre carries its scalars. What survives is the bilinear structure, the square, and the reading of the product as an isotope of the plain one.
+**Remark.** What the algebra is not is as informative as what it is. It is not associative, so the associative theory — the two-sided ideals of *The Peirce Decomposition of the Biquaternion Algebra*, the modules of *The Category of Modules*, the opposite algebra — does not apply to it; it is not two-sidedly unital, so there is no group of units of its own; and it is not commutative, so no centre carries its scalars. What survives is the bilinear structure, the square, and the reading of the product as an isotope of the plain one.
 
 ## The Square and the Elements It Distinguishes
 
@@ -357,8 +357,8 @@ Its table has $e_t$ on the diagonal, the identity row and the negated column, an
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the product, its coordinate rule and its scalar–vector form.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the identities that link the four general products, among them $\tilde Q_1^{\natural}\tilde Q_2=2Q_{1t}\tilde Q_2-\tilde Q_1\tilde Q_2$.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the property table, the witnesses and the position of the product among the four.
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the associative unital reading of the plain product, its centre and its presentation.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the units and the invertibility criterion.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the associative unital reading of the plain product, its centre and its presentation.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the units and the invertibility criterion.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the zero divisor cone, the two families of zero divisors and the idempotents that lie in it.
-- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents $\tfrac12(e_t+\xi i)$ of the algebra, which are not idempotent for the multiplication of this article.
+- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents $\tfrac12(e_t+\xi i)$ of the algebra, which are not idempotent for the multiplication of this article.
 - [Non-Associative Algebras and the Property Ladder](non-associative-algebras-and-the-property-ladder.html), for the alternative, flexible and degree-three identities and the place of this multiplication on the ladder.

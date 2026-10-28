@@ -173,10 +173,10 @@ The trace is twice the scalar part and the determinant is the quaternionic norm.
 ## Further Reading
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four norms
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the characteristic polynomial and the criterion
+- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the characteristic polynomial and the criterion
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the singular matrices
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the modulus
-- [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the determinants on the subspaces
+- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the determinants on the subspaces
 - [$M_2(\mathbb{C})$ Representation : The Killing Form](m2c-representation-the-killing-form.html), for the trace form on the Lie algebra
 - [The N-Regular Sector](the-n-regular-sector.html), for the norm on the units
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the null cone

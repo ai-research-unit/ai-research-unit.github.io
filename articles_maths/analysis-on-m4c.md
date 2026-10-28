@@ -6,7 +6,7 @@
 
 The article describes the Hilbert space, the holomorphic and real-analytic functions, the Wirtinger derivatives and the Cauchy–Riemann equations, the Laplacian and harmonic functions, the functional calculus, the Gaussian measure and the heat kernel, and the differential calculus of the determinant and the trace.
 
-The involution and the trace form are *The Involution and the Hermitian Structure*; the spectral theory is *Spectral Theory and the Spectral Projectors*; the exponential is *The Exponential and the Lie Group*; the geometry of the idempotents is *The Geometry of the Idempotents*.
+The involution and the trace form are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*; the spectral theory is *Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$*; the exponential is *The Exponential and the Lie Group of $M_4(\mathbb{C})$*; the geometry of the idempotents is *The Geometry of the Idempotents of $M_4(\mathbb{C})$*.
 
 ## The Hilbert Space
 
@@ -231,7 +231,7 @@ $$
 \sigma(f(A))=f(\sigma(A)).
 $$
 
-This is the Dunford calculus of *Spectral Theory and the Spectral Projectors*.
+This is the Dunford calculus of *Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$*.
 
 **The normal case.** If $A$ is normal, $A=U\Lambda U^*$ with $\Lambda$ diagonal, and for every continuous (or bounded Borel) function $f$ on the spectrum,
 
@@ -384,7 +384,7 @@ d(\exp)_X(Y)=e^X\sum_{n=0}^{\infty}\frac{(-1)^n}{(n+1)!}\operatorname{ad}_X^n(Y)
 =e^X\frac{1-e^{-\operatorname{ad}_X}}{\operatorname{ad}_X}(Y),
 $$
 
-the formula of *The Exponential and the Lie Group*.
+the formula of *The Exponential and the Lie Group of $M_4(\mathbb{C})$*.
 
 **The Hessian.** The Hessian is the second derivative; at a critical point it determines the local behaviour. For the squared norm, the Hessian is the identity (times $2$); for the determinant, the Hessian at $I$ is
 
@@ -396,7 +396,7 @@ the second coefficient of the characteristic polynomial.
 
 **The critical points of the determinant.** The gradient $\operatorname{adj}(A)^*$ of $\operatorname{Re}\det$ vanishes exactly when $\operatorname{adj}(A)=0$, that is, when $\operatorname{rank}A\le2$. The critical set of the determinant is therefore the variety of rank at most two, of complex dimension $12$; it is the singular locus of the hypersurface $\det=0$.
 
-**The $*$-unitary group.** The modulus $\lvert\det\rvert$ is identically $1$ on $U(4)$, so it has no distinguished critical point there; the closest-$*$-unitary problem of *The Polar Decomposition* is the variational problem for the Frobenius distance to $U(4)$.
+**The $*$-unitary group.** The modulus $\lvert\det\rvert$ is identically $1$ on $U(4)$, so it has no distinguished critical point there; the closest-$*$-unitary problem of *The Polar Decomposition of $M_4(\mathbb{C})$* is the variational problem for the Frobenius distance to $U(4)$.
 
 **The inverse and implicit function theorems.** The inverse function theorem applies to the holomorphic maps with invertible differential: the exponential near $0$, the inverse on $GL_4$, the resolvent off the spectrum. The implicit function theorem gives the local manifold structure of the level sets $\{\det=c\}$ and of the spectral strata.
 
@@ -464,7 +464,7 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the functional calculus, the derivative of the determinant and the matrix exponential.
 - Gerald B. Folland, *Real Analysis* (Wiley, 1999), for the Fourier transform, the Gaussian measure, the heat kernel and the Laplacian.
 - Rudolf Fueter and the quaternionic analysis tradition, for the Cauchy–Fueter operator; see the biquaternion corpus for the regular model.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m4c.html), for the Frobenius form.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the Dunford calculus.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m4c.html), for the matrix exponential.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m4c.html), for the critical sets and the spectral strata.
+- [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the Frobenius form.
+- [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the Dunford calculus.
+- [The Exponential and the Lie Group of $M_4(\mathbb{C})$](the-exponential-and-the-lie-group-of-m4c.html), for the matrix exponential.
+- [The Geometry of the Idempotents of $M_4(\mathbb{C})$](the-geometry-of-the-idempotents-of-m4c.html), for the critical sets and the spectral strata.

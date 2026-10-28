@@ -288,10 +288,10 @@ The algebra is central simple of dimension four. The element, its three coordina
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the presentation of an algebra by generators and relations and for central simplicity.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the scalar–vector form of the multiplication, the four general products and their comparison.
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their Cayley table and their orbits.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces the conjugations single out.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces the conjugations single out.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the invertibility criterion and the zero-divisor cone.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the idempotents, the Peirce decomposition and the matrix model $M_2(\mathbb{C})$.
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the matrix model in full.
-- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the simple modules, the classification, Schur's lemma, the intertwiners and the Morita equivalence.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the idempotents, the Peirce decomposition and the matrix model $M_2(\mathbb{C})$.
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the matrix model in full.
+- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the simple modules, the classification, Schur's lemma, the intertwiners and the Morita equivalence.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.

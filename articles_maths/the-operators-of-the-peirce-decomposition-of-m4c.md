@@ -1,10 +1,10 @@
-# __The Operators of the Peirce Decomposition__
+# __The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$__
 
 ## Introduction
 
 **The Peirce decomposition is acted on by four families of linear operators: left multiplication $L_a$, right multiplication $R_a$, the sandwich $T_{a,b}$, and the derivation $\operatorname{ad}_a$.** On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $T_{a,b}$ moves both, and $\operatorname{ad}_a$ is the difference of the two. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$.
 
-The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the sandwich as a map of corners. The Peirce decomposition is *The Peirce Decomposition*; the adjoint action is *The Adjoint Action, the Orbits and the Flag Variety*; the frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge*.
+The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the sandwich as a map of corners. The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the adjoint action is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*; the frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*.
 
 ## The Four Operators
 
@@ -202,7 +202,7 @@ $$
 [\operatorname{ad}_a,\operatorname{ad}_b]=\operatorname{ad}_{[a,b]},
 $$
 
-so the map $\mathfrak{sl}_4\to\operatorname{Der}(M_4)$ is an isomorphism of Lie algebras. The derivations act on $M_4$ by the adjoint action, and the decomposition of $M_4$ under $\mathfrak{sl}_4$ is the adjoint decomposition $1+3+5+7$ of *The Spin Chain and the Adjoint Decomposition*.
+so the map $\mathfrak{sl}_4\to\operatorname{Der}(M_4)$ is an isomorphism of Lie algebras. The derivations act on $M_4$ by the adjoint action, and the decomposition of $M_4$ under $\mathfrak{sl}_4$ is the adjoint decomposition $1+3+5+7$ of *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$*.
 
 **The biquaternion case.** For $M_2(\mathbb{C})$, the same theorem gives
 
@@ -250,7 +250,7 @@ is an automorphism for every $S\in GL_4$. It preserves the trace, the determinan
 
 These are real-linear or conjugate-linear maps, not elements of $\operatorname{Aut}_\mathbb{C}(M_4)$. The real algebra $M_4(\mathbb{C})$ has the conjugation as an automorphism of the real algebra, and the transpose as an anti-automorphism; they are "outer" only in the real sense.
 
-**The Lie algebra.** The automorphism group $PGL_4$ has Lie algebra $\mathfrak{sl}_4$, and the adjoint action of the group on $M_4$ is the exponentiation of the adjoint action of the Lie algebra. The orbit of an element is its conjugacy class; the orbit classification is *The Adjoint Action, the Orbits and the Flag Variety*.
+**The Lie algebra.** The automorphism group $PGL_4$ has Lie algebra $\mathfrak{sl}_4$, and the adjoint action of the group on $M_4$ is the exponentiation of the adjoint action of the Lie algebra. The orbit of an element is its conjugacy class; the orbit classification is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*.
 
 ## The Sandwich as a Map of Corners
 
@@ -278,7 +278,7 @@ $$
 
 is the inner automorphism $\Phi_a$. On the corners, it sends $A_{rs}$ to a linear combination of the corners $A_{il}$ with coefficients $a_{ir}(a^{-1})_{sl}$. The inner automorphism preserves the trace and the determinant but not the individual corners in general: it preserves each corner line exactly when $a$ is diagonal in the frame, and a permutation matrix permutes the spectral lines.
 
-**The sandwich and the Peirce table.** The sandwich acts on the two-sided Peirce table of *The Rank-Two Split* by transforming the row index with $a$ and the column index with $b$. For the rank-two split with $\Pi=P_+$, the sandwich with block-diagonal $a,b$ preserves the four corners; the sandwich with off-diagonal $a$ or $b$ mixes the corners. The mass block $\mathcal{B}$ is carried to the corner determined by the row of $a$ and the column of $b$.
+**The sandwich and the Peirce table.** The sandwich acts on the two-sided Peirce table of *The Rank-Two Split of $M_4(\mathbb{C})$* by transforming the row index with $a$ and the column index with $b$. For the rank-two split with $\Pi=P_+$, the sandwich with block-diagonal $a,b$ preserves the four corners; the sandwich with off-diagonal $a$ or $b$ mixes the corners. The mass block $\mathcal{B}$ is carried to the corner determined by the row of $a$ and the column of $b$.
 
 ## Summary
 
@@ -313,7 +313,7 @@ $$
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for derivations, automorphisms and the Skolem–Noether theorem.
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for central simple algebras and their automorphisms.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Kronecker product and the vectorisation of matrix equations.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m4c.html), for the corners and the multiplication rule.
-- [The Rank-Two Split](the-rank-two-split-of-m4c.html), for the two-sided Peirce table.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the conjugation action and its orbits.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the adjoint decomposition under $\mathfrak{sl}_4$.
+- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the corners and the multiplication rule.
+- [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the two-sided Peirce table.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the conjugation action and its orbits.
+- [The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the adjoint decomposition under $\mathfrak{sl}_4$.

@@ -211,7 +211,7 @@ The nilpotent class is empty: there is no nilpotent cone, the set of square-zero
 - [Square Roots of a General Element in the Quaternion Algebra](square-roots-of-a-general-element-in-the-quaternion-algebra.html), for the roots of the general quadratic $\tilde\xi^2=\tilde q$, of which the roots of $0$ here are the degenerate case.
 - [Zero Divisors of the Quaternion Algebra](zero-divisors-of-the-quaternion-algebra.html), for the empty zero-divisor set and the two families of the complexified block.
 - [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html), for the folding of the empty classes.
-- [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), the complexified counterpart, for the pure isotropic cone, its real dimension four and the index-two theorem.
+- [Nilpotents](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), the complexified counterpart, for the pure isotropic cone, its real dimension four and the index-two theorem.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for nilpotents and their place in the structure of a finite-dimensional algebra.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for nilpotents, units and the division property.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the square of a quaternion and the behaviour of its vector part.

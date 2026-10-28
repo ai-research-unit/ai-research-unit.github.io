@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The algebra $M_6(\mathbb{C})$ is a complex vector space of dimension $36$, hence a real manifold of dimension $72$. It carries the smooth structure of $\mathbb{C}^{36}$, the complex structure of multiplication by $\mathrm i$, the Lebesgue measure of $\mathbb{R}^{72}$, and the norms of *The Forms, the Norms and the Singular Set*. The analysis on $M_6$ is the ordinary analysis of a finite-dimensional complex vector space, enriched by the algebra structure: the product, the inverse, the determinant and the exponential are smooth, indeed holomorphic, maps, and their derivatives are the standard formulas.
+The algebra $M_6(\mathbb{C})$ is a complex vector space of dimension $36$, hence a real manifold of dimension $72$. It carries the smooth structure of $\mathbb{C}^{36}$, the complex structure of multiplication by $\mathrm i$, the Lebesgue measure of $\mathbb{R}^{72}$, and the norms of *The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$*. The analysis on $M_6$ is the ordinary analysis of a finite-dimensional complex vector space, enriched by the algebra structure: the product, the inverse, the determinant and the exponential are smooth, indeed holomorphic, maps, and their derivatives are the standard formulas.
 
 The **Wirtinger calculus** gives the complex derivatives $\partial/\partial z_{ij}$ and $\partial/\partial\bar z_{ij}$. The holomorphic functions are those with $\partial f/\partial\bar z_{ij}=0$; the determinant is a holomorphic polynomial of degree six, the inverse is holomorphic on $GL_6$, and the exponential is entire. The **holomorphic functional calculus** evaluates a holomorphic function on a matrix through the resolvent and a contour integral,
 
@@ -355,7 +355,7 @@ $$
 
 a complex hypersurface of real codimension two. The invertible elements are exactly the matrices with nonzero determinant.
 
-**Proof.** This is *The Forms, the Norms and the Singular Set*.
+**Proof.** This is *The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$*.
 
 **Remark (what is absent).** **The absence of zero divisors is a property of the field, not of the algebra.** The scalar field $\mathbb{C}$ is an integral domain, and this is what makes the ordinary linear algebra and the holomorphic functional calculus work. The algebra $M_6(\mathbb{C})$ has zero divisors; the nilpotents are the simplest, and they are the source of the Jordan decomposition and the non-semisimple spectral theory. There is no null cone of an indefinite form: the trace form is definite, and its only isotropic vector is $0$.
 
@@ -436,11 +436,11 @@ The field $\mathbb{C}$ has no zero divisors; the algebra $M_6$ has the nilpotent
 
 ## Further Reading
 
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m6c.html), for the determinant, the singular set and the norms.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the resolvent and the Dunford calculus.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m6c.html), for the exponential and the logarithm.
-- [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the positive cone and the singular values.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the Hermitian form and the $*$-unitary group.
+- [The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m6c.html), for the determinant, the singular set and the norms.
+- [Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the resolvent and the Dunford calculus.
+- [The Exponential and the Lie Group of $M_6(\mathbb{C})$](the-exponential-and-the-lie-group-of-m6c.html), for the exponential and the logarithm.
+- [The Polar Decomposition of $M_6(\mathbb{C})$](the-polar-decomposition-of-m6c.html), for the positive cone and the singular values.
+- [The Involution and the Hermitian Structure of $M_6(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m6c.html), for the Hermitian form and the $*$-unitary group.
 - [Analysis on $M_5(\mathbb{C})$](analysis-on-m5c.html), for the same analysis in the neighbouring dimension.
 - [Holomorphic Functional Calculus](holomorphic-functional-calculus.html), for the Dunford calculus in a Banach algebra.
 - [Fueter Theory](fueter-theory.html), for the quaternionic analysis and its Cauchy–Fueter operator.

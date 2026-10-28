@@ -1,4 +1,4 @@
-# __The $M_2\oplus M_3$ Corner__
+# __The $M_2\oplus M_3$ Corner of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -18,7 +18,7 @@ $$
 
 one parameter for the $M_2$ corner, two for the $M_3$ corner, and one for the **relative scale** between the two corners. The relative scale is the direction that acts on the two summands with opposite weights, $\operatorname{diag}(\mu I_2,I_3)$ modulo scalars; it is the part of the gauge that is invisible to each corner separately. The four parameters are the same torus as the gauge of the frame, read through the block structure $2+3$.
 
-The article assumes the matrix algebra of *The Matrix Algebra $M_5(\mathbb{C})$*, the Peirce decomposition of *The Peirce Decomposition*, and the gauge of *The Frame, the Simple Nilpotents and the Gauge*. The corner dimensions and the two-sided Peirce table are developed in *The Rank-Two Split*; the present article is the **recursion and the group**: the block embedding, the subalgebra $M_2\oplus M_3$, the two corner tori and the relative scale.
+The article assumes the matrix algebra of *The Matrix Algebra $M_5(\mathbb{C})$*, the Peirce decomposition of *The Peirce Decomposition of $M_5(\mathbb{C})$*, and the gauge of *The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$*. The corner dimensions and the two-sided Peirce table are developed in *The Rank-Two Split of $M_5(\mathbb{C})$*; the present article is the **recursion and the group**: the block embedding, the subalgebra $M_2\oplus M_3$, the two corner tori and the relative scale.
 
 ## The Rank-Two Projection
 
@@ -201,7 +201,7 @@ It fixes both diagonal corners and rescales the two off-diagonal blocks reciproc
 
 **Proof.** Conjugate the block matrix by the block-diagonal matrix; the diagonal blocks commute with the scalars, and the off-diagonal blocks acquire $\mu$ or $\mu^{-1}$.
 
-**Remark.** **The relative scale is the part of the gauge that the two corners do not see.** The corner tori act inside $PM_5P$ and $QM_5Q$; the relative scale acts only on the off-diagonal blocks. In the frame of *The Frame, the Simple Nilpotents and the Gauge*, with the spectral indices $1,\dots,5$ split as $\{1,2\}|\{3,4,5\}$, the four parameters $\lambda_k=t_k/t_{k+1}$ are regrouped as
+**Remark.** **The relative scale is the part of the gauge that the two corners do not see.** The corner tori act inside $PM_5P$ and $QM_5Q$; the relative scale acts only on the off-diagonal blocks. In the frame of *The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$*, with the spectral indices $1,\dots,5$ split as $\{1,2\}|\{3,4,5\}$, the four parameters $\lambda_k=t_k/t_{k+1}$ are regrouped as
 
 $$
 \underbrace{\lambda_1}_{T(PGL_2)}\qquad
@@ -213,11 +213,11 @@ The parameters $\lambda_1$ and $\lambda_3,\lambda_4$ act inside the two corners;
 
 ### The Gauge and the Root
 
-**Proposition.** If $P=P_0+P_1$ is the sum of two spectral projectors of a root $H$, then the four-dimensional gauge torus of the root is the maximal torus of $P(GL_2\times GL_3)$. The gauge $1+2+1=4$ is the root gauge read through the block structure $2+3$.
+**Proposition.** If $P=P_1+P_2$ is the sum of two spectral projectors of a root $H$, then the four-dimensional gauge torus of the root is the maximal torus of $P(GL_2\times GL_3)$. The gauge $1+2+1=4$ is the root gauge read through the block structure $2+3$.
 
-**Proof.** The spectral frame diagonalises $H$; the diagonal torus $T$ of the frame consists of the matrices $\operatorname{diag}(t_0,t_1,t_2,t_3,t_4)$ modulo scalars. It preserves the decomposition $\operatorname{span}(e_0,e_1)\oplus\operatorname{span}(e_2,e_3,e_4)$ because it preserves each line; hence $T\subseteq P(GL_2\times GL_3)$. Both tori have dimension $4$, so they are equal.
+**Proof.** The spectral frame diagonalises $H$; the diagonal torus $T$ of the frame consists of the matrices $\operatorname{diag}(t_1,t_2,t_3,t_4,t_5)$ modulo scalars. It preserves the decomposition $\operatorname{span}(e_1,e_2)\oplus\operatorname{span}(e_3,e_4,e_5)$ because it preserves each line; hence $T\subseteq P(GL_2\times GL_3)$. Both tori have dimension $4$, so they are equal.
 
-**Corollary.** The rank-two projection $P=P_0+P_1$ has a larger stabiliser than the root: $P(GL_2\times GL_3)$ has dimension $12$, while the root's stabiliser $T$ has dimension $4$. The quotient has dimension $8$; it consists of the non-toral directions of the two corner groups, which move the vectors inside the two blocks without moving the root.
+**Corollary.** The rank-two projection $P=P_1+P_2$ has a larger stabiliser than the root: $P(GL_2\times GL_3)$ has dimension $12$, while the root's stabiliser $T$ has dimension $4$. The quotient has dimension $8$; it consists of the non-toral directions of the two corner groups, which move the vectors inside the two blocks without moving the root.
 
 **Proof.** The stabiliser of $P$ is the block-diagonal group of dimension $12$; the stabiliser of $H$ is its maximal torus of dimension $4$. The quotient has dimension $8$, and the torus directions are exactly the four coordinates of $T$; the remaining directions are the unipotent and traceless-diagonal directions of the two corner groups.
 
@@ -232,7 +232,7 @@ M_{p+q}(\mathbb{C})\supset M_p(\mathbb{C})\oplus M_q(\mathbb{C}),
 \qquad p+q=5,
 $$
 
-for every rank-$p$ projection $P$. For $p=2$, $q=3$, the corner is $M_2\oplus M_3$; for $p=1$, $q=4$, it is $\mathbb{C}\oplus M_4$, the case of *The Peirce Decomposition*; for $p=3$, $q=2$, it is $M_3\oplus M_2$, the same decomposition with the factors exchanged. The recursion can be iterated, $5=2+3=2+(1+2)=\cdots$, and it terminates in the scalar corners.
+for every rank-$p$ projection $P$. For $p=2$, $q=3$, the corner is $M_2\oplus M_3$; for $p=1$, $q=4$, it is $\mathbb{C}\oplus M_4$, the case of *The Peirce Decomposition of $M_5(\mathbb{C})$*; for $p=3$, $q=2$, it is $M_3\oplus M_2$, the same decomposition with the factors exchanged. The recursion can be iterated, $5=2+3=2+(1+2)=\cdots$, and it terminates in the scalar corners.
 
 **Proposition.** For every $p$, the diagonal corners of a rank-$p$ projection are $PMP\cong M_p$ and $QMQ\cong M_{5-p}$; the off-diagonal blocks are $\mathbb{C}^{p\times(5-p)}$ and $\mathbb{C}^{(5-p)\times p}$; the dimensions are
 
@@ -250,11 +250,11 @@ The corner $PM_5P\cong M_2(\mathbb{C})$ is the algebra of the biquaternion model
 
 **Proof.** The compression is multiplicative on the block, and the trace of $\operatorname{diag}(A,0)$ is the trace of $A$.
 
-**Remark.** **The corner is the biquaternion algebra, but the word spinor is not transferred to $M_5$.** The $M_2$ corner has a two-dimensional module, the spinor of the biquaternion model; the whole algebra $M_5$ has the five-dimensional carrier, of spin $2$. The corner is a subalgebra, and its module is not a module of $M_5$ unless it is induced. The distinction is the subject of *The Modules and the Minimal Left Ideals*.
+**Remark.** **The corner is the biquaternion algebra, but the word spinor is not transferred to $M_5$.** The $M_2$ corner has a two-dimensional module, the spinor of the biquaternion model; the whole algebra $M_5$ has the five-dimensional carrier, of spin $2$. The corner is a subalgebra, and its module is not a module of $M_5$ unless it is induced. The distinction is the subject of *The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$*.
 
 ### The $M_3$ Corner
 
-The corner $QM_5Q\cong M_3(\mathbb{C})$ is the algebra of the three-dimensional space; its own root, idempotents and Peirce decomposition are the $n=3$ analogues of the present category. The block embedding carries the $M_3$ structures into the last three spectral lines when $P=P_0+P_1$. The relative scale couples the $M_2$ and $M_3$ corners through the off-diagonal blocks.
+The corner $QM_5Q\cong M_3(\mathbb{C})$ is the algebra of the three-dimensional space; its own root, idempotents and Peirce decomposition are the $n=3$ analogues of the present category. The block embedding carries the $M_3$ structures into the last three spectral lines when $P=P_1+P_2$. The relative scale couples the $M_2$ and $M_3$ corners through the off-diagonal blocks.
 
 **Proposition.** The two corners commute, and their tensor product is not the whole algebra: $M_2\oplus M_3$ has dimension $13$, while $M_5$ has dimension $25$; the missing $12$ dimensions are the two off-diagonal blocks of dimension $6$ each.
 
@@ -311,8 +311,8 @@ $$
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the corner decomposition of an algebra with involution and the behaviour of the summands.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the block multiplication and the rank of a projection.
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra and its unit group.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the coarse split $1+4+4+16$ and the corner isomorphisms.
-- [The Rank-Two Split](the-rank-two-split-of-m5c.html), for the corners $4+6+6+9$ and the two-sided Peirce table.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the four-parameter gauge and the simple nilpotents.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the modules of the corner and of the whole algebra.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion model $M_2(\mathbb{C})$ inside the corner.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the coarse split $1+4+4+16$ and the corner isomorphisms.
+- [The Rank-Two Split of $M_5(\mathbb{C})$](the-rank-two-split-of-m5c.html), for the corners $4+6+6+9$ and the two-sided Peirce table.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the four-parameter gauge and the simple nilpotents.
+- [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the modules of the corner and of the whole algebra.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion model $M_2(\mathbb{C})$ inside the corner.

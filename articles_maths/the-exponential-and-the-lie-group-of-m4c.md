@@ -1,4 +1,4 @@
-# __The Exponential and the Lie Group__
+# __The Exponential and the Lie Group of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article defines the exponential, proves its elementary properties and the determinant formula, describes the differential and the Baker–Campbell–Hausdorff formula, identifies the Lie algebras of the classical subgroups, and describes the global structure of $GL_4$.
 
-The polar decomposition is *The Polar Decomposition*; the exponential polar decomposition is *The Exponential Polar Decomposition*; the topology is *The Topology of $M_4(\mathbb{C})$*; the one-parameter subgroups of the compact group are in *The Exponential and the Lie Group* of the biquaternion corpus.
+The polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the exponential polar decomposition is *The Exponential Polar Decomposition of $M_4(\mathbb{C})$*; the topology is *The Topology of $M_4(\mathbb{C})$*; the one-parameter subgroups of the compact group are in *The Exponential and the Lie Group of $M_4(\mathbb{C})$* of the biquaternion corpus.
 
 ## The Exponential Map
 
@@ -267,7 +267,7 @@ $$
 \operatorname{diag}(e^{i\theta_1},e^{i\theta_2},e^{i\theta_3},e^{i\theta_4})
 $$
 
-form the maximal torus $T^4$ of $U(4)$, of real dimension $4$. The quotient by the diagonal $U(1)$ is the maximal torus of $PU(4)$, of dimension $3$, the compact form of the gauge torus of *The Frame, the Simple Nilpotents and the Gauge*.
+form the maximal torus $T^4$ of $U(4)$, of real dimension $4$. The quotient by the diagonal $U(1)$ is the maximal torus of $PU(4)$, of dimension $3$, the compact form of the gauge torus of *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*.
 
 **The nilpotent exponential.** For the simple nilpotents,
 
@@ -331,7 +331,7 @@ $$
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the exponential map, the BCH formula, the closed subgroup theorem and the classical groups.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the Cartan decomposition and the global structure of $GL_4$.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the matrix exponential, the logarithm and the Jordan form.
-- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the diffeomorphism $GL_4\cong U(4)\times P_+$.
-- [The Exponential Polar Decomposition](the-exponential-polar-decomposition-of-m4c.html), for the ordering $e^He^{iK}$.
+- [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the diffeomorphism $GL_4\cong U(4)\times P_+$.
+- [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the ordering $e^He^{iK}$.
 - [The Topology of $M_4(\mathbb{C})$](the-topology-of-m4c.html), for the fundamental group and the homotopy type.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge torus and the nilpotents.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge torus and the nilpotents.

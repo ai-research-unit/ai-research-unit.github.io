@@ -1,4 +1,4 @@
-# __The Modules and the Minimal Left Ideals__
+# __The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -30,7 +30,7 @@ $$
 
 has dimension $1+5=6$; it is the row $PM$, the dual of the column. The minimal left ideal is the carrier of the spin chain: the Peirce $\mathfrak{su}_2$ of the rank-one idempotent acts irreducibly on it, with spin $5/2$.
 
-The article assumes the Peirce decomposition of *The Peirce Decomposition* and the spin chain of *The Spin Chain and the Adjoint Decomposition*. It uses no form and no topology. The modules over the biquaternion algebra are *Modules over the Biquaternion Algebra*; the Morita equivalence is *Morita Equivalence*.
+The article assumes the Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$* and the spin chain of *The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$*. It uses no form and no topology. The modules over the biquaternion algebra are *Modules over the Biquaternion Algebra*; the Morita equivalence is *Morita Equivalence*.
 
 ## The Minimal Left Ideal
 
@@ -262,7 +262,7 @@ $$
 
 of dimension $1+5=6$, the column; the Peirce carrier is the row $PM=PMP\oplus PMQ$, the dual. The trace pairing pairs them perfectly; the transpose reverses the multiplication, so it is not an intertwiner of the two actions.
 
-**Proof.** The Peirce decomposition of *The Peirce Decomposition* gives $MP=PMP\oplus QMP$ and $PM=PMP\oplus PMQ$. The trace pairing $\operatorname{tr}(XY)$ pairs the column with the row.
+**Proof.** The Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$* gives $MP=PMP\oplus QMP$ and $PM=PMP\oplus PMQ$. The trace pairing $\operatorname{tr}(XY)$ pairs the column with the row.
 
 ### The Spin Chain
 
@@ -274,7 +274,7 @@ MP\cong V_{5/2},
 \dim V_{5/2}=6 .
 $$
 
-**Proof.** The spin chain of *The Spin Chain and the Adjoint Decomposition* has ladder operators $J_\pm$ and $J_3$ acting on the column $MP$ by left multiplication; the highest weight vector is the top Peirce line, and the ladder has six steps, from $-5/2$ to $5/2$. The module is irreducible because the ladder generates the whole space.
+**Proof.** The spin chain of *The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$* has ladder operators $J_\pm$ and $J_3$ acting on the column $MP$ by left multiplication; the highest weight vector is the top Peirce line, and the ladder has six steps, from $-5/2$ to $5/2$. The module is irreducible because the ladder generates the whole space.
 
 **Corollary (the dual row).** The Peirce carrier $C(P)=PM$ is the dual of the carrier $MP$. The contragredient action has the opposite weights, and the two representations are isomorphic because the spin-$5/2$ representation of $\mathfrak{su}_2$ is self-dual; the isomorphism is the duality pairing, not the transpose.
 
@@ -347,11 +347,11 @@ has dimension $1+5=6$; it is the row, the dual of the column. The minimal left i
 
 ## Further Reading
 
-- [The Peirce Decomposition](the-peirce-decomposition-of-m6c.html), for the corners and the Peirce carrier.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m6c.html), for the action of the Peirce $\mathfrak{su}_2$ on the carrier.
-- [The Two Chiralities](the-two-chiralities-of-m6c.html), for the chiral halves, which are not minimal ideals.
+- [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the corners and the Peirce carrier.
+- [The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m6c.html), for the action of the Peirce $\mathfrak{su}_2$ on the carrier.
+- [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the chiral halves, which are not minimal ideals.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the rank-one matrices and the tensor product.
-- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the rank-one case.
+- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the rank-one case.
 - [Morita Equivalence](morita-equivalence.html), for the equivalence of the module category with vector spaces.
 - [Noetherian and Artinian Rings](noetherian-and-artinian-rings.html), for the classification of the modules.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the projective space of the minimal ideals.
+- [The Geometry of the Idempotents of $M_6(\mathbb{C})$](the-geometry-of-the-idempotents-of-m6c.html), for the projective space of the minimal ideals.

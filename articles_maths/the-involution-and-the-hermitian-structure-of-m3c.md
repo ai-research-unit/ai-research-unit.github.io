@@ -10,9 +10,9 @@ is a real-linear involution of $M_{3}(\mathbb{C})$. It is not complex-linear: $(
 $$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B)
 $$
-is a positive definite Hermitian inner product. This is the form that is used throughout the category; it is not the complex bilinear trace pairing $\operatorname{tr}(AB)$ of *The Element, the Coordinates and the Trace*, which is indefinite.
+is a positive definite Hermitian inner product. This is the form that is used throughout the category; it is not the complex bilinear trace pairing $\operatorname{tr}(AB)$ of *The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$*, which is indefinite.
 
-The article defines the involution and its three distinguished sets, proves the decomposition into Hermitian and skew-Hermitian parts, establishes the positive definiteness of the trace form and the Frobenius norm, identifies the real forms $\mathfrak{u}(3)$ and $\mathfrak{su}(3)$, and compares the definite form with the null cone of the biquaternion algebra. The comparison is the reason for the article: the biquaternion algebra has a quadratic form with nonzero isotropic vectors, while $M_{3}(\mathbb{C})$ with the Hermitian trace form has none. The singular set $\det A=0$ is not a null cone; it is a complex hypersurface of real codimension two, treated in *The Forms, the Norms and the Singular Set*.
+The article defines the involution and its three distinguished sets, proves the decomposition into Hermitian and skew-Hermitian parts, establishes the positive definiteness of the trace form and the Frobenius norm, identifies the real forms $\mathfrak{u}(3)$ and $\mathfrak{su}(3)$, and compares the definite form with the null cone of the biquaternion algebra. The comparison is the reason for the article: the biquaternion algebra has a quadratic form with nonzero isotropic vectors, while $M_{3}(\mathbb{C})$ with the Hermitian trace form has none. The singular set $\det A=0$ is not a null cone; it is a complex hypersurface of real codimension two, treated in *The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$*.
 
 The construction is root-first. The matrix units $E_{ij}$ are those of *The Matrix Algebra $M_{3}(\mathbb{C})$*; the involution acts on them by $E_{ij}^{*}=E_{ji}$, and the standard root $H_{0}=\operatorname{diag}(1,\omega,\omega^{2})$ is $*$-unitary, because its eigenvalues have modulus one. The Hermitian structure is compatible with the frame but does not depend on it.
 
@@ -76,7 +76,7 @@ is a real-linear involution of $M_{3}(\mathbb{C})$. Its $+1$ eigenspace is $\mat
 $$
 M_{3}(\mathbb{C})=\mathfrak{u}(3)\oplus\operatorname{Herm}_{3}
 $$
-is the Cartan decomposition of the real algebra. The group $GL_{3}(\mathbb{C})$ with the involution $g\mapsto(g^{*})^{-1}$ has the fixed subgroup $U(3)$, and the symmetric space $GL_{3}(\mathbb{C})/U(3)$ is the space of positive definite Hermitian matrices; this is the polar decomposition of *The Polar Decomposition* and *The Exponential Polar Decomposition*.
+is the Cartan decomposition of the real algebra. The group $GL_{3}(\mathbb{C})$ with the involution $g\mapsto(g^{*})^{-1}$ has the fixed subgroup $U(3)$, and the symmetric space $GL_{3}(\mathbb{C})/U(3)$ is the space of positive definite Hermitian matrices; this is the polar decomposition of *The Polar Decomposition of $M_3(\mathbb{C})$* and *The Exponential Polar Decomposition of $M_3(\mathbb{C})$*.
 
 ## The Hermitian Trace Form
 
@@ -125,13 +125,13 @@ The real part is positive definite; the imaginary part is alternating. The pair 
 $$
 |\langle A,B\rangle|^{2}\leq\langle A,A\rangle\langle B,B\rangle,
 $$
-with equality exactly when $A$ and $B$ are linearly dependent. The inequality is the Cauchy–Schwarz inequality for the positive definite form; it is the source of the operator norm estimates of *The Forms, the Norms and the Singular Set*.
+with equality exactly when $A$ and $B$ are linearly dependent. The inequality is the Cauchy–Schwarz inequality for the positive definite form; it is the source of the operator norm estimates of *The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$*.
 
 **The trace form and the star.** The Hermitian form is related to the complex bilinear trace pairing by
 $$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B)=\overline{\operatorname{tr}(A^{\mathsf T}\bar B)},
 $$
-and the two agree on real symmetric matrices, where $A^{*}=A^{\mathsf T}=A$; on general complex matrices they differ: $\operatorname{tr}(AB)$ is complex bilinear and indefinite, $\operatorname{tr}(A^{*}B)$ is Hermitian and definite. The first is the trace pairing of *The Element, the Coordinates and the Trace*; the second is the form of this article.
+and the two agree on real symmetric matrices, where $A^{*}=A^{\mathsf T}=A$; on general complex matrices they differ: $\operatorname{tr}(AB)$ is complex bilinear and indefinite, $\operatorname{tr}(A^{*}B)$ is Hermitian and definite. The first is the trace pairing of *The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$*; the second is the form of this article.
 
 ## The Hermitian Spectral Theorem
 
@@ -252,11 +252,11 @@ The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diag
 
 ## Further Reading
 
-- [The Matrix Algebra $M_{3}(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units and the trace.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m3c.html), for the complex bilinear trace pairing.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m3c.html), for the determinant, the norms and the singular set.
-- [The Polar Decomposition](the-polar-decomposition-of-m3c.html), for the symmetric space $GL_{3}/U(3)$.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m3c.html), for $U(3)$ and $SU(3)$.
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the null cone of the biquaternion form.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the comparison with the biquaternion zero divisors.
+- [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units and the trace.
+- [The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m3c.html), for the complex bilinear trace pairing.
+- [The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m3c.html), for the determinant, the norms and the singular set.
+- [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for the symmetric space $GL_{3}/U(3)$.
+- [The Exponential and the Lie Group of $M_3(\mathbb{C})$](the-exponential-and-the-lie-group-of-m3c.html), for $U(3)$ and $SU(3)$.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the null cone of the biquaternion form.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the comparison with the biquaternion zero divisors.
 - [Hermitian Adjoints on a Hermitian Algebra](hermitian-adjoints-on-a-hermitian-algebra.html), for the general theory of the star and the adjoint.

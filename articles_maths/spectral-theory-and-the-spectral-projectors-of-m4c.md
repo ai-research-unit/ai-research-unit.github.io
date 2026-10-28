@@ -1,4 +1,4 @@
-# __Spectral Theory and the Spectral Projectors__
+# __Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article states the characteristic and minimal polynomials, the Jordan form, the Dunford calculus and the Riesz projectors, the resolvent and the spectral radius, the simple-spectrum Lagrange formula and its degeneration at a repeated root.
 
-The element and the trace are *The Element, the Coordinates and the Trace*; the Jordan decomposition is there as well; the polar decomposition is *The Polar Decomposition*; the geometry of the spectral strata is *The Geometry of the Idempotents*.
+The element and the trace are *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*; the Jordan decomposition is there as well; the polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the geometry of the spectral strata is *The Geometry of the Idempotents of $M_4(\mathbb{C})$*.
 
 ## The Characteristic Polynomial
 
@@ -106,7 +106,7 @@ J_n(\lambda)=\begin{pmatrix}
 \end{pmatrix}.
 $$
 
-The **semisimple part** is the diagonal of $J$, and the **nilpotent part** is the off-diagonal shift; the two commute. This is the Jordan decomposition of *The Element, the Coordinates and the Trace*.
+The **semisimple part** is the diagonal of $J$, and the **nilpotent part** is the off-diagonal shift; the two commute. This is the Jordan decomposition of *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*.
 
 **The spectral strata.** The eigenvalue multiplicity pattern stratifies the algebra:
 
@@ -237,7 +237,7 @@ A_s=\sum_{\lambda}\lambda P_\lambda,\qquad
 A_n=\sum_{\lambda}N_\lambda .
 $$
 
-The semisimple part $A_s$ is diagonalisable, the nilpotent part $A_n$ is nilpotent, and they commute. This is the Jordan–Chevalley decomposition of *The Element, the Coordinates and the Trace*, recovered from the resolvent.
+The semisimple part $A_s$ is diagonalisable, the nilpotent part $A_n$ is nilpotent, and they commute. This is the Jordan–Chevalley decomposition of *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*, recovered from the resolvent.
 
 **The spectral resolution.** For a function $f$ holomorphic on the spectrum,
 
@@ -245,7 +245,7 @@ $$
 f(A)=\sum_{\lambda}\sum_{k=1}^{m_\lambda}\frac{f^{(k-1)}(\lambda)}{(k-1)!}N_\lambda^{k-1}P_\lambda .
 $$
 
-For a polynomial $f$, this is the Lagrange–Sylvester interpolation formula. For the exponential, it gives the closed form of *The Exponential and the Lie Group*.
+For a polynomial $f$, this is the Lagrange–Sylvester interpolation formula. For the exponential, it gives the closed form of *The Exponential and the Lie Group of $M_4(\mathbb{C})$*.
 
 ## The Simple Spectrum and the Lagrange Projectors
 
@@ -388,7 +388,7 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the characteristic polynomial, the Jordan form, the minimal polynomial and the spectral projectors.
 - Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 1995), for the Riesz projectors, the resolvent and the perturbation of eigenvalues.
 - Nelson Dunford and Jacob T. Schwartz, *Linear Operators, Part I* (Interscience, 1958), for the holomorphic functional calculus and the spectral mapping theorem.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m4c.html), for the Jordan decomposition.
-- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the spectral theorem for normal matrices.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the simple-spectrum Lagrange projectors.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m4c.html), for the spectral strata and their geometry.
+- [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the Jordan decomposition.
+- [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the spectral theorem for normal matrices.
+- [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the simple-spectrum Lagrange projectors.
+- [The Geometry of the Idempotents of $M_4(\mathbb{C})$](the-geometry-of-the-idempotents-of-m4c.html), for the spectral strata and their geometry.

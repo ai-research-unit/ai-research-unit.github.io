@@ -1,4 +1,4 @@
-# __The Frame, the Simple Nilpotents and the Gauge__
+# __The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -18,7 +18,7 @@ which is conjugation by the diagonal matrix $D_t=\sum_it_iE_{ii}$. The scalars a
 
 The gauge leaves every idempotent of the frame untouched, $D_tE_{ii}D_t^{-1}=E_{ii}$, and in particular it leaves the Lagrange projectors $P_k$ untouched. **It rescales the nilpotents, not the idempotents.** This is the precise sense in which the frame is a choice of coordinates inside a fixed root, and why the count of the frame is the count of the root plus the count of the gauge: $20+4=24=\dim PGL_5$.
 
-The article assumes the root, the idempotents $P_k$ and the Peirce lines $A_{kl}$ of *Roots of Unity and the Lagrange Idempotents* and *The Peirce Decomposition*. It uses no form, no involution and no topology. The rank-two split and the partial flags are later articles; the adjoint action, where the gauge appears as a stabiliser, is *The Adjoint Action, the Orbits and the Flag Variety*.
+The article assumes the root, the idempotents $P_k$ and the Peirce lines $A_{kl}$ of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$* and *The Peirce Decomposition of $M_5(\mathbb{C})$*. It uses no form, no involution and no topology. The rank-two split and the partial flags are later articles; the adjoint action, where the gauge appears as a stabiliser, is *The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$*.
 
 ## The Frame
 
@@ -56,21 +56,21 @@ because $v_j^{\vee}(v_k)=\delta_{jk}$. The sum $\sum_iE_{ii}$ acts on $v_j$ as $
 
 **Proof.** $E_{ii}^2=E_{ii}$ by the product rule, $E_{ii}E_{jj}=0$ for $i\ne j$, and the sum is $I$. The image of $E_{ii}$ is the line $\mathbb{C}v_i$, and its kernel contains every $v_j$ with $j\ne i$.
 
-**Remark.** The frame is a **complete system of matrix units**, and the five diagonal units are a complete family of orthogonal rank-one idempotents. A root supplies such a family, the Lagrange projectors $P_k$; a frame supplies the vectors inside the lines. The two data are related by $E_{k+1,k+1}=P_k$ for $k=0,\dots,4$ when the frame is **spectral**, that is, when $v_{k+1}$ spans $\operatorname{im}P_k$ and the dual functional is the left eigenfunctional. A general frame need not be spectral; the matrix units and the gauge are defined for every frame, and the specialization to the spectral frame is made where the root is used.
+**Remark.** The frame is a **complete system of matrix units**, and the five diagonal units are a complete family of orthogonal rank-one idempotents. A root supplies such a family, the Lagrange projectors $P_k$; a frame supplies the vectors inside the lines. The two data are related by $E_{kk}=P_k$ for $k=1,\dots,5$ when the frame is **spectral**, that is, when $v_k$ spans $\operatorname{im}P_k$ and the dual functional is the left eigenfunctional. A general frame need not be spectral; the matrix units and the gauge are defined for every frame, and the specialization to the spectral frame is made where the root is used.
 
 ### The Frame and the Root
 
-Let $H$ be a root with spectral lines $L_k=\ker(H-\zeta_kI)$ for $k=0,\dots,4$, and let $v_{k+1}\in L_k$ be nonzero. The frame $(v_1,\dots,v_5)$ is **spectral** for $H$. In this frame
+Let $H$ be a root with spectral lines $L_k=\ker(H-\zeta_kI)$ for $k=1,\dots,5$, and let $v_k\in L_k$ be nonzero. The frame $(v_1,\dots,v_5)$ is **spectral** for $H$. In this frame
 
 $$
-H=\sum_{k=0}^{4}\zeta_kE_{k+1,k+1},\qquad E_{k+1,k+1}=P_k,
+H=\sum_{k=1}^{5}\zeta_kE_{kk},\qquad E_{kk}=P_k,
 $$
 
-and the matrix of $H$ is $\operatorname{diag}(\zeta_0,\dots,\zeta_4)$. The root determines the lines $L_k$, hence the diagonal units $E_{k+1,k+1}=P_k$; it does **not** determine the vectors $v_{k+1}$, hence not the off-diagonal units $E_{ij}$ with $i\ne j$. The off-diagonal units are exactly what the gauge moves.
+and the matrix of $H$ is $\operatorname{diag}(\zeta_1,\dots,\zeta_5)$. The root determines the lines $L_k$, hence the diagonal units $E_{kk}=P_k$; it does **not** determine the vectors $v_k$, hence not the off-diagonal units $E_{ij}$ with $i\ne j$. The off-diagonal units are exactly what the gauge moves.
 
 **Proposition.** Let $H$ be a root and let $\mathcal{V}$ be a spectral frame. A matrix $g\in GL_5(\mathbb{C})$ preserves $H$ by conjugation, $gHg^{-1}=H$, if and only if $g$ is diagonal in the frame, $g=\sum_it_iE_{ii}$ with $t_i\ne0$. The stabiliser of $H$ in $PGL_5$ is therefore the torus $T$ of the diagonal matrices modulo scalars, of dimension $4$.
 
-**Proof.** In the spectral frame $H=\operatorname{diag}(\zeta_0,\dots,\zeta_4)$ with distinct entries. The equation $gH=Hg$ reads $g_{ij}\zeta_{j-1}=\zeta_{i-1}g_{ij}$ for $i,j=1,\dots,5$; for $i\ne j$ this forces $g_{ij}=0$. Hence $g$ is diagonal and invertible, so all $t_i=g_{ii}$ are nonzero. The scalars are the intersection with the centre, and the quotient has dimension $5-1=4$.
+**Proof.** In the spectral frame $H=\operatorname{diag}(\zeta_1,\dots,\zeta_5)$ with distinct entries. The equation $gH=Hg$ reads $g_{ij}\zeta_j=\zeta_i g_{ij}$ for $i,j=1,\dots,5$; for $i\ne j$ this forces $g_{ij}=0$. Hence $g$ is diagonal and invertible, so all $t_i=g_{ii}$ are nonzero. The scalars are the intersection with the centre, and the quotient has dimension $5-1=4$.
 
 **Corollary.** The gauge group of the spectral frame is the stabiliser of the root. The frame is a point of $PGL_5$; the root is its image in $PGL_5/T$; the gauge is the fibre $T$. The count is
 
@@ -78,7 +78,7 @@ $$
 \dim PGL_5=\dim(PGL_5/T)+\dim T=20+4=24 .
 $$
 
-**Proof.** The map $g\mapsto gHg^{-1}$ from $PGL_5$ to the root set has fibre the stabiliser $T$; the orbit–stabiliser theorem gives the dimension count, and the root set is $PGL_5/T$ by *Roots of Unity and the Lagrange Idempotents*.
+**Proof.** The map $g\mapsto gHg^{-1}$ from $PGL_5$ to the root set has fibre the stabiliser $T$; the orbit–stabiliser theorem gives the dimension count, and the root set is $PGL_5/T$ by *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$*.
 
 ## The Simple Nilpotents and the Composites
 
@@ -184,7 +184,7 @@ and it fixes every diagonal unit: $D_tE_{ii}D_t^{-1}=E_{ii}$.
 
 **Proof.** $D_tE_{ij}=t_iE_{ij}$ and $E_{ij}D_t^{-1}=t_j^{-1}E_{ij}$, because $E_{ij}$ is an eigenvector of the left multiplication by $D_t$ with eigenvalue $t_i$ and of the right multiplication with eigenvalue $t_j$. For $i=j$ the two eigenvalues are equal.
 
-**Corollary.** The gauge fixes every idempotent of the form $P_S=\sum_{i\in S}E_{ii}$ for $S\subseteq\{1,\dots,5\}$, and in particular it fixes the five spectral projectors $P_k=E_{k+1,k+1}$ if the frame is spectral. **The gauge rescales the off-diagonal units and leaves the diagonal idempotents unchanged.**
+**Corollary.** The gauge fixes every idempotent of the form $P_S=\sum_{i\in S}E_{ii}$ for $S\subseteq\{1,\dots,5\}$, and in particular it fixes the five spectral projectors $P_k=E_{kk}$ if the frame is spectral. **The gauge rescales the off-diagonal units and leaves the diagonal idempotents unchanged.**
 
 **Proof.** The diagonal idempotents are sums of diagonal units, and each diagonal unit is fixed.
 
@@ -262,7 +262,7 @@ $$
 \underbrace{20}_{\text{root}}+\underbrace{4}_{\text{gauge}}=\underbrace{24}_{\text{frame}} .
 $$
 
-**Proof.** A frame modulo a common scalar is an element of $PGL_5$; the root is the image under $g\mapsto gH_0g^{-1}$; the fibre is the stabiliser $T$, which is the gauge. The dimensions are those of *Roots of Unity and the Lagrange Idempotents*: $24-4=20$ for the root and $4$ for the torus. The sum is $24$.
+**Proof.** A frame modulo a common scalar is an element of $PGL_5$; the root is the image under $g\mapsto gH_0g^{-1}$; the fibre is the stabiliser $T$, which is the gauge. The dimensions are those of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$*: $24-4=20$ for the root and $4$ for the torus. The sum is $24$.
 
 **Corollary.** The four gauge parameters are the four coordinates of the fibre of the frame bundle $PGL_5\to PGL_5/T$. They are not additional degrees of freedom of the algebra, the root or the idempotents: they are the redundancy of the choice of a vector in each spectral line.
 
@@ -270,7 +270,7 @@ $$
 
 ### The Real Gauge
 
-The trace form of *The Involution and the Hermitian Structure* is positive definite, and in an **orthonormal** spectral frame the gauge parameters of the $*$-unitary structure satisfy $|t_k|=1$. The compact gauge is then the real torus $U(1)^4$, of real dimension $4$. The complex gauge $(\mathbb{C}^\times)^4$ is the algebraic gauge; the real torus is the subgroup that preserves the Hermitian structure. The four complex parameters have eight real dimensions, the four phases four, and the four moduli of the $t_k$ (the radial parts) are the non-$*$-unitary part of the algebraic gauge. The distinction is used in *The Polar Decomposition* and *The Exponential and the Lie Group*.
+The trace form of *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$* is positive definite, and in an **orthonormal** spectral frame the gauge parameters of the $*$-unitary structure satisfy $|t_k|=1$. The compact gauge is then the real torus $U(1)^4$, of real dimension $4$. The complex gauge $(\mathbb{C}^\times)^4$ is the algebraic gauge; the real torus is the subgroup that preserves the Hermitian structure. The four complex parameters have eight real dimensions, the four phases four, and the four moduli of the $t_k$ (the radial parts) are the non-$*$-unitary part of the algebraic gauge. The distinction is used in *The Polar Decomposition of $M_5(\mathbb{C})$* and *The Exponential and the Lie Group of $M_5(\mathbb{C})$*.
 
 **Proof.** A diagonal matrix $D_t$ is $*$-unitary exactly when $|t_k|=1$ for every $k$; the quotient by the common scalar has real dimension $4$. The complex torus $(\mathbb{C}^\times)^4$ has real dimension $8$, and the modulus map $(\mathbb{C}^\times)^4\to(\mathbb{R}_{>0})^4$ is the four-dimensional non-$*$-unitary part.
 
@@ -370,9 +370,10 @@ The frame is the root plus the gauge: $20+4=24=\dim PGL_5$. The root is the base
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for systems of matrix units, the Peirce decomposition and the inner automorphisms of a full matrix algebra.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the elementary matrices, the matrix units and the diagonal similarity $E_{ij}\mapsto(t_i/t_j)E_{ij}$.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the systems of matrix units adapted to an algebra with involution and the unitary gauge.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root, its spectral lines and the idempotents fixed by the gauge.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$ whose generators are moved by the gauge.
-- [The Rank-Two Split](the-rank-two-split-of-m5c.html), for the corners $4+6+6+9$ and the two-sided Peirce table.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the gauge as the stabiliser of the root and the frame bundle $PGL_5\to PGL_5/T$.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the unitary gauge $U(1)^4$ and the positive definite trace form.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the action of the matrix units on the carrier.
+- [Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root, its spectral lines and the idempotents fixed by the gauge.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$ whose generators are moved by the gauge.
+- [The Rank-Two Split of $M_5(\mathbb{C})$](the-rank-two-split-of-m5c.html), for the corners $4+6+6+9$ and the two-sided Peirce table.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the gauge as the stabiliser of the root and the frame bundle $PGL_5\to PGL_5/T$.
+- [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the unitary gauge $U(1)^4$ and the positive definite trace form.
+- [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the action of the matrix units on the carrier.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the general construction at order $n$.

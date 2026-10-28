@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The two spinor spaces of *The Spinor Spaces* are the two Peirce carriers of the algebra, and in this algebra they are the two minimal left ideals. This article states that they are ideals, that they are minimal, that every minimal left ideal is one of their conjugates, and that the algebra is their direct sum as a left module.
+The two spinor spaces of *Spinors as Peirce Coordinates in the Biquaternion Algebra* are the two Peirce carriers of the algebra, and in this algebra they are the two minimal left ideals. This article states that they are ideals, that they are minimal, that every minimal left ideal is one of their conjugates, and that the algebra is their direct sum as a left module.
 
-The article assumes the Peirce frame and the two spinor spaces, and the regular module. The spaces themselves, their couples and the left and right actions on them are *The Spinor Spaces*; the ideals and the general theory of the regular module are *The Regular Module*. What is added here is the minimality and the classification.
+The article assumes the Peirce frame and the two spinor spaces, and the regular module. The spaces themselves, their weight bases and the left and right actions on them are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the ideals and the general theory of the regular module are *The Regular Module*. What is added here is the minimality and the classification.
 
 The word spinor is the name of an element of one of these carriers, which here is a minimal left ideal. Nothing here is a physical statement.
 
@@ -14,7 +14,7 @@ The word spinor is the name of an element of one of these carriers, which here i
 
 A **minimal left ideal** is a nonzero left ideal containing no nonzero proper left ideal.
 
-The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ are left ideals, because $\mathbb{B}S_\pm=\mathbb{B}\mathbb{B}\tilde\Pi_\pm=\mathbb{B}\tilde\Pi_\pm=S_\pm$. Their sum is direct by §*The Two Spinor Spaces* of *The Spinor Spaces*, so
+The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ are left ideals, because $\mathbb{B}S_\pm=\mathbb{B}\mathbb{B}\tilde\Pi_\pm=\mathbb{B}\tilde\Pi_\pm=S_\pm$. Their sum is direct by §*The Two Spinor Spaces* of *Spinors as Peirce Coordinates in the Biquaternion Algebra*, so
 
 $$
 \mathbb{B}=S_+\oplus S_-=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-
@@ -34,7 +34,7 @@ Over $\mathbb{C}$ the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is semisimple (*
 
 Every minimal left ideal is of the form $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$ (*Primitive Idempotents and Minimal Left Ideals*). The examples are $S_+$ and $S_-$ above.
 
-All minimal left ideals are isomorphic as left $\mathbb{B}$-modules. A general one is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent, and $\tilde\Pi$ is the image of $\tilde\Pi_+$ under an inner automorphism of $\mathbb{B}$ (*The Peirce Decomposition*, §*Systems of Matrix Units*), which carries $\mathbb{B}\tilde\Pi_+$ to $\mathbb{B}\tilde\Pi$. There is therefore one isomorphism class of simple left modules and, dually, one of simple right modules.
+All minimal left ideals are isomorphic as left $\mathbb{B}$-modules. A general one is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent, and $\tilde\Pi$ is the image of $\tilde\Pi_+$ under an inner automorphism of $\mathbb{B}$ (*The Peirce Decomposition of the Biquaternion Algebra*, §*Systems of Matrix Units*), which carries $\mathbb{B}\tilde\Pi_+$ to $\mathbb{B}\tilde\Pi$. There is therefore one isomorphism class of simple left modules and, dually, one of simple right modules.
 
 Being nonzero proper one-sided ideals, none is two-sided; this is the abundance of one-sided ideals that the simplicity of *The Regular Module*, §*The Two-Sided Ideals* permits.
 
@@ -58,7 +58,7 @@ By Schur's lemma the endomorphisms of the simple module are the scalars, $\opera
 - $\mathbb{B}=S_+\oplus S_-$ as a left module.
 - Every left ideal is a direct sum of minimal left ideals, and every minimal left ideal is $\mathbb{B}\tilde\Pi$ for a primitive idempotent.
 - All minimal left ideals are isomorphic; the simple module is $\mathbb{C}^2$ with $i$ acting as the scalar $i$.
-- The spaces themselves and the action on their couples are *The Spinor Spaces*; the classification of all modules is *The Category of Modules*.
+- The spaces themselves and the action on their weight bases are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the classification of all modules is *The Category of Modules*.
 
 ## Summary of Notation
 
@@ -70,7 +70,7 @@ By Schur's lemma the endomorphisms of the simple module are the scalars, $\opera
 
 ## Further Reading
 
-- [The Spinor Spaces](the-spinor-spaces.html), for the spaces, their couples and the two actions.
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the spaces, their weight bases and the two actions.
 - [The Regular Module](the-regular-module.html), for the ideals as submodules and the simplicity of the algebra.
 - [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the classification of all modules.
 - [Primitive Idempotents and Minimal Left Ideals](primitive-idempotents-and-minimal-left-ideals.html), for the general criterion.

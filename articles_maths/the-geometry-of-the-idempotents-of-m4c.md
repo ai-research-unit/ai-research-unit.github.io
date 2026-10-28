@@ -1,4 +1,4 @@
-# __The Geometry of the Idempotents__
+# __The Geometry of the Idempotents of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article describes the rank-one idempotents and their affine bundle, the general rank-$p$ homogeneous space, the tangent space and the rank stratification, the relation to the flag variety and the Grassmannians, and the gauge.
 
-The Peirce decomposition is *The Peirce Decomposition*; the rank-two split is *The Rank-Two Split*; the root and the gauge are *The Frame, the Simple Nilpotents and the Gauge*; the adjoint action and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety*; the topology is *The Topology of $M_4(\mathbb{C})$*.
+The Peirce decomposition is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the rank-two split is *The Rank-Two Split of $M_4(\mathbb{C})$*; the root and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the adjoint action and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*; the topology is *The Topology of $M_4(\mathbb{C})$*.
 
 ## Rank-One Idempotents
 
@@ -241,7 +241,7 @@ $$
 
 The variety is the disjoint union of the five connected components $\mathcal{I}_0,\dots,\mathcal{I}_4$. The zero idempotent and the identity are isolated points; the rank-one and rank-three strata are six-dimensional; the rank-two stratum is eight-dimensional. There is no closure order between different ranks: a limit of rank-$p$ idempotents has rank $p$.
 
-**The rank-two case.** The rank-two idempotents have dimension $8$; the orthogonal ones form $\operatorname{Gr}(2,4)$ of dimension $4$. In the standard frame the two chiral idempotents $P_+$ and $P_-$ of *The Two Chiralities* are two particular orthogonal rank-two idempotents, points of the Grassmannian, not components. For a general root they are non-Hermitian projections and correspond to transverse pairs of planes, not to points of $\operatorname{Gr}(2,4)$. The general rank-two idempotent has a nonzero mass block; the Peirce table is *The Rank-Two Split*.
+**The rank-two case.** The rank-two idempotents have dimension $8$; the orthogonal ones form $\operatorname{Gr}(2,4)$ of dimension $4$. In the standard frame the two chiral idempotents $P_+$ and $P_-$ of *The Two Chiralities of $M_4(\mathbb{C})$* are two particular orthogonal rank-two idempotents, points of the Grassmannian, not components. For a general root they are non-Hermitian projections and correspond to transverse pairs of planes, not to points of $\operatorname{Gr}(2,4)$. The general rank-two idempotent has a nonzero mass block; the Peirce table is *The Rank-Two Split of $M_4(\mathbb{C})$*.
 
 **The decomposition.** The rank-$p$ idempotent gives the Peirce corners
 
@@ -418,7 +418,7 @@ $$
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the Grassmannians, the flag variety and the incidence relations.
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for homogeneous spaces, parabolic subgroups and flag varieties.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for idempotents and Peirce decompositions.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m4c.html), for the corners of an idempotent.
-- [The Rank-Two Split](the-rank-two-split-of-m4c.html), for the rank-two Peirce table.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the orbits and the flag variety.
+- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the corners of an idempotent.
+- [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the rank-two Peirce table.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the orbits and the flag variety.
 - [The Topology of $M_4(\mathbb{C})$](the-topology-of-m4c.html), for the homotopy equivalence $\mathcal{I}_p\simeq\operatorname{Gr}(p,4)$.

@@ -495,10 +495,10 @@ The square roots in the image are the images of the biquaternion roots: four for
 
 - [Holomorphic Functional Calculus](holomorphic-functional-calculus.html), for the general calculus and its convergence
 - [$M_2(\mathbb{C})$ Representation : The Functional Calculus](m2c-representation-the-functional-calculus.html), for the $2\times2$ version
-- [$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the nilpotents and the rank-two projectors
-- [$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), for the relative commutant
+- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the nilpotents and the rank-two projectors
+- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), for the relative commutant
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the biquaternion logarithm
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Lie correspondence
-- [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the algebra classification
-- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots of one
+- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the algebra classification
+- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots of one
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the spectral basis

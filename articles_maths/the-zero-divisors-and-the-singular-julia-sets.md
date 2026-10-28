@@ -116,8 +116,8 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_t\tilde 
 ## Further Reading
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the classification of the zero divisors and their rank-one form.
-- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents, the bijection with the roots of $-1$ and the standard idempotents.
+- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents, the bijection with the roots of $-1$ and the standard idempotents.
 - [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the critical set and the corollary on the parameter zero.
-- [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the four roots of a generic element and the cone of roots of zero.
+- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the four roots of a generic element and the cone of roots of zero.
 - [The Escape Radius and the Green's Function for the Biquaternions](the-escape-radius-and-the-greens-function-for-the-biquaternions.html), for the failure of the escape radius, the conditional Green's function and the conditional equilibrium measure.
 - [The Hausdorff Dimension of the Biquaternion Julia Sets](the-hausdorff-dimension-of-the-biquaternion-julia-sets.html), for the dimension of the singular part.

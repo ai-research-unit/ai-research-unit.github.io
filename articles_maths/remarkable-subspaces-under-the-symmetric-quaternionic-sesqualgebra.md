@@ -194,6 +194,6 @@ The product of the block is read on the remarkable subspaces by the single rule 
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the product and its scalar–vector form.
 - [The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra](the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html), for the diagonal, the idempotents and the square-zero elements on the closed subspaces.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form $K$ and its Gram matrices.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the definition and the comparison of the remarkable subspaces.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the definition and the comparison of the remarkable subspaces.
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the same remarkable subspaces under the general product.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the comparison of the closure patterns of the twelve operations.

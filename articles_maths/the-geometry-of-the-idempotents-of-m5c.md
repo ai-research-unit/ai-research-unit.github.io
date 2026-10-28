@@ -1,4 +1,4 @@
-# __The Geometry of the Idempotents__
+# __The Geometry of the Idempotents of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -18,7 +18,7 @@ The rank-one case is the model. A rank-one idempotent is $P=v\ell$ with $\ell(v)
 
 The rank-$p$ case is the same picture with a $p$-plane: the idempotent is the projection onto a $p$-plane $L$ along a complementary $(5-p)$-plane $K$. The base is the Grassmannian $\operatorname{Gr}(p,5)$ of $L$, of dimension $p(5-p)$; the fibre over $L$ is the affine space of complements $K$, also of dimension $p(5-p)$; the total is $2p(5-p)$.
 
-The article computes the dimensions, proves the bundle structure, describes the rank stratification and the Peirce decomposition, and relates the idempotents to the full and partial flag varieties. It assumes the rank-one idempotents, the Peirce decomposition and the orbits of *Roots of Unity and the Lagrange Idempotents*, *The Peirce Decomposition* and *The Adjoint Action, the Orbits and the Flag Variety*.
+The article computes the dimensions, proves the bundle structure, describes the rank stratification and the Peirce decomposition, and relates the idempotents to the full and partial flag varieties. It assumes the rank-one idempotents, the Peirce decomposition and the orbits of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$*, *The Peirce Decomposition of $M_5(\mathbb{C})$* and *The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$*.
 
 ## The Idempotents of Rank One
 
@@ -222,8 +222,8 @@ $$
 **Theorem.** The dimension of the partial flag variety of type $(d_1,\dots,d_s)$ is
 
 $$
-\sum_{i=0}^{s}d_i(d_{i+1}-d_i),
-\qquad d_0=0,\quad d_{s+1}=5 .
+\sum_{i=1}^{s}d_i(d_{i+1}-d_i),
+\qquad d_{s+1}=5 .
 $$
 
 **Proof.** The dimension is the sum of the dimensions of the Grassmannians of the successive quotients: $d_i(d_{i+1}-d_i)$ for each step. The sum telescopes to $\dim GL_5-\dim P$.
@@ -336,7 +336,7 @@ The full flag variety $GL_5/B$ has dimension $10$; the nested partial flags have
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the flag varieties, the Grassmannians and the incidence relations.
 - Phillip Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the geometry of the Grassmannians and the flag varieties.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for the homogeneous spaces and the frame bundles.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the four corners and the multiplication table.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the orbits and the flag variety.
-- [The Partial Flags](the-partial-flags-of-m5c.html), for the nested partial flags and their dimensions.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge and the frame.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the four corners and the multiplication table.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the orbits and the flag variety.
+- [The Partial Flags of $M_5(\mathbb{C})$](the-partial-flags-of-m5c.html), for the nested partial flags and their dimensions.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge and the frame.

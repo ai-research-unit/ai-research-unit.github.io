@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The algebra $M_5(\mathbb{C})$ is a complex vector space of dimension $25$, hence a real manifold of dimension $50$. It carries the smooth structure of $\mathbb{C}^{25}$, the complex structure of multiplication by $i$, the Lebesgue measure of $\mathbb{R}^{50}$, and the norms of *The Forms, the Norms and the Singular Set*. The analysis on $M_5$ is the ordinary analysis of a finite-dimensional complex vector space, enriched by the algebra structure: the product, the inverse, the determinant and the exponential are smooth (indeed holomorphic) maps, and their derivatives are the standard formulas.
+The algebra $M_5(\mathbb{C})$ is a complex vector space of dimension $25$, hence a real manifold of dimension $50$. It carries the smooth structure of $\mathbb{C}^{25}$, the complex structure of multiplication by $i$, the Lebesgue measure of $\mathbb{R}^{50}$, and the norms of *The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$*. The analysis on $M_5$ is the ordinary analysis of a finite-dimensional complex vector space, enriched by the algebra structure: the product, the inverse, the determinant and the exponential are smooth (indeed holomorphic) maps, and their derivatives are the standard formulas.
 
 The **Wirtinger calculus** gives the complex derivatives $\partial/\partial z_{ij}$ and $\partial/\partial\bar z_{ij}$. The holomorphic functions are those with $\partial f/\partial\bar z_{ij}=0$; the determinant is a holomorphic polynomial, the inverse is holomorphic on $GL_5$, and the exponential is entire. The **holomorphic functional calculus** evaluates a holomorphic function on a matrix through the resolvent and a contour integral,
 
@@ -431,8 +431,8 @@ The Wirtinger calculus gives the holomorphic functions; the holomorphic function
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the derivatives of the inverse, the determinant and the exponential.
 - Rolf Nevanlinna and Veikko Paatero, *Introduction to Complex Analysis* (Addison-Wesley, 1969), for the Wirtinger calculus and the Cauchy integral.
 - Rudolf Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u=0$ und $\Delta\Delta u=0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* 7 (1934), 307–330, for the Fueter operator and the quaternionic analysis.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m5c.html), for the trace, the determinant and the Jordan decomposition.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form, the norms and the real codimension $2$.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the spectral theorem and the projectors.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m5c.html), for the exponential and the logarithm.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion side and the boundary against Fueter theory.
+- [The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m5c.html), for the trace, the determinant and the Jordan decomposition.
+- [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form, the norms and the real codimension $2$.
+- [Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the spectral theorem and the projectors.
+- [The Exponential and the Lie Group of $M_5(\mathbb{C})$](the-exponential-and-the-lie-group-of-m5c.html), for the exponential and the logarithm.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion side and the boundary against Fueter theory.

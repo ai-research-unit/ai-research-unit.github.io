@@ -176,9 +176,9 @@ The left and the right multiplications $L_{\tilde Q_3}(\tilde{Q}_1)=\tilde Q_3\t
 
 ## Further Reading
 
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations and the remarkable subspaces.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations and the remarkable subspaces.
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), the companion article, with the composition and the type theorems for the product of the two one-sided families.
-- [$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the left and the right regular representations in matrix form.
+- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the left and the right regular representations in matrix form.
 - [One-Sided Operators on a Hermitian Algebra with Hermitian Adjoint](one-sided-operators-on-a-hermitian-algebra-with-hermitian-adjoint.html), for the general one-sided theory, the double centraliser and the images as ideals.
 - [Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint](hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.html), for the module axiom $(\tilde Q_3\cdot s,t)=(s,\tilde Q_3^{*}\cdot t)$ used in the last section.
 - [The Adjoint of the One-Sided Action with Hermitian Adjoint](the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.html), for the $*$-structure on the operator algebra and the reason a Dirac operator is formally self-adjoint.

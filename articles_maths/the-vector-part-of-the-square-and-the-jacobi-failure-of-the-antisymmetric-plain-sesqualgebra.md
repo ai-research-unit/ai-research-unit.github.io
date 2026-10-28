@@ -182,6 +182,6 @@ The diagonal of the block is the vector part of the square, $\tilde Q\diamond\ti
 - [Lie Algebras of Sesqualgebras](lie-algebras-of-sesqualgebras.html), for the obstruction that forbids the antisymmetrisation of a genuine sesquilinear product
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the row table, the three failures, the real witnesses and the ten operations of the real part
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form $\langle\cdot,\cdot\rangle_{*}$, the square and the zero divisors
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces and the Hermitian and anti-Hermitian halves
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces and the Hermitian and anti-Hermitian halves
 - [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the diagonal and the square-zero elements in the realization
 - [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the diagonal and the square-zero elements in the regular model

@@ -1,4 +1,4 @@
-# __The Geometry of the Idempotents__
+# __The Geometry of the Idempotents of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -28,7 +28,7 @@ $$
 
 a fibre bundle over $\operatorname{Gr}(p,6)$ with the contractible fibre of complements. The full flag variety $GL_6/B$ has dimension $15$; the partial flags and their incidence relations organise the idempotents, and the gauge is the fibre of the frame bundle.
 
-The article assumes the Grassmannians and the orbit–stabilizer count of *The Adjoint Action, the Orbits and the Flag Variety* and the Peirce decomposition of *The Peirce Decomposition*. It uses the elementary geometry of homogeneous spaces. The idempotents of the biquaternion algebra are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the spectral geometry is *The Sextic and the Spectral Strata*.
+The article assumes the Grassmannians and the orbit–stabilizer count of *The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$* and the Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$*. It uses the elementary geometry of homogeneous spaces. The idempotents of the biquaternion algebra are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the spectral geometry is *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*.
 
 ## The Idempotents
 
@@ -354,11 +354,11 @@ The full flag variety $GL_6/B$ has dimension $15$, with the iterated bundle $5+4
 
 ## Further Reading
 
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the orbit–stabilizer count and the Grassmannians.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m6c.html), for the corners of an idempotent.
-- [The Rank-Two and Rank-Three Splits](the-rank-two-and-rank-three-splits-of-m6c.html), for the rank-two and rank-three idempotents.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the projective space of the minimal ideals.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the gauge torus.
-- [The Grassmannian](grassmannians-and-stiefel-manifolds.html), for the general theory of $\operatorname{Gr}(p,n)$.
-- [The Flag Variety](flag-manifolds.html), for the general theory of $GL_n/B$ and the incidence.
-- [The Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the rank-one case.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the orbit–stabilizer count and the Grassmannians.
+- [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the corners of an idempotent.
+- [The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$](the-rank-two-and-rank-three-splits-of-m6c.html), for the rank-two and rank-three idempotents.
+- [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the projective space of the minimal ideals.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the gauge torus.
+- [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for the general theory of $\operatorname{Gr}(p,n)$.
+- [Flag Manifolds](flag-manifolds.html), for the general theory of $GL_n/B$ and the incidence.
+- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the rank-one case.

@@ -1,4 +1,4 @@
-# __The Exponential and the Lie Group__
+# __The Exponential and the Lie Group of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -338,8 +338,8 @@ The Lie algebra $\mathfrak{gl}_5$ has the commutator bracket; the one-parameter 
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the matrix exponential, the Lie algebra, the one-parameter subgroups and the Lie group structure.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the exponential, the logarithm and the Jordan form.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for the exponential map, the Lie groups and the symmetric spaces.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m5c.html), for the determinant identity and the Jordan decomposition.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the $*$-unitary group and the compact real form.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the functional calculus and the exponential of a Hermitian matrix.
-- [The Polar Decomposition](the-polar-decomposition-of-m5c.html), for the polar decomposition and the positive cone.
-- [The Exponential-Polar Decomposition](the-exponential-polar-decomposition-of-m5c.html), for the combination of the exponential and the polar decomposition.
+- [The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m5c.html), for the determinant identity and the Jordan decomposition.
+- [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the $*$-unitary group and the compact real form.
+- [Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the functional calculus and the exponential of a Hermitian matrix.
+- [The Polar Decomposition of $M_5(\mathbb{C})$](the-polar-decomposition-of-m5c.html), for the polar decomposition and the positive cone.
+- [The Exponential-Polar Decomposition of $M_5(\mathbb{C})$](the-exponential-polar-decomposition-of-m5c.html), for the combination of the exponential and the polar decomposition.

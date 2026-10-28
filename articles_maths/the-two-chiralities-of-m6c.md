@@ -1,4 +1,4 @@
-# __The Two Chiralities__
+# __The Two Chiralities of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -21,7 +21,7 @@ This is the **$3+3$ chiral split**. The chiral blocks of the algebra are the two
 
 The involution is one of the three quotient gradings of the $\mathbb{Z}/6$ grading: $\Gamma$ is the $\mathbb{Z}/2$ quotient, the square $H^2$ gives the $\mathbb{Z}/3$ quotient, and $H$ itself gives the full $\mathbb{Z}/6$. The article develops the split, the three gradings, the mass block, and the contrast with the $2+2$ split of $M_4$ and the $1+1$ split of the biquaternion algebra.
 
-It assumes the root and its Lagrange projectors of *Roots of Unity and the Lagrange Idempotents*. It uses no form and no topology. The mass block's polar decomposition is *The Mass Block and the Chiral Polar Decomposition*; the block corners are *The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners*; the spin chain is *The Spin Chain and the Adjoint Decomposition*.
+It assumes the root and its Lagrange projectors of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$*. It uses no form and no topology. The mass block's polar decomposition is *The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$*; the block corners are *The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$*; the spin chain is *The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$*.
 
 ## The Chirality Involution
 
@@ -93,6 +93,8 @@ and $\mathbb{C}^6=V_+\oplus V_-$, with $\dim V_\pm=3$.
 
 **Remark (the halves are not ideals).** Each chiral half is a three-dimensional subspace of the carrier. It is not a left ideal of $M_6$, not a minimal left ideal, and not a corner of the algebra. The minimal left ideals of $M_6$ are the six-dimensional columns. **The chiral halves live in the carrier; the chiral blocks live in the algebra.**
 
+**Remark (the name chirality).** The involution is a $\mathbb{Z}/2$ grading, and the word records that. It does not by itself produce chiral spinors. At $n=6$ each half is a three-dimensional module of the chiral algebra, of spin $1$; it is not the two-dimensional spin-$\tfrac12$ module that the word spinor requires. The genuine chiral spinors occur at $n=4$, where the halves are two-dimensional of spin $\tfrac12$, and at $n=2$, where each of the two columns carries a two-component spinor of definite chirality. The $3+3$ split of $M_6$ is a chiral block decomposition of the algebra, not a decomposition into Weyl spinors.
+
 ### The Chiral Blocks
 
 **Theorem (the block decomposition).** Relative to $\mathbb{C}^6=V_+\oplus V_-$, every $A\in M_6(\mathbb{C})$ has a unique block form
@@ -127,7 +129,7 @@ $$
 \Pi_-M_6\Pi_+=\operatorname{Hom}(V_+,V_-).
 $$
 
-**Proof.** These are the four corners of the idempotent $\Pi_+$, by *The Peirce Decomposition*, with the rank $p=3$.
+**Proof.** These are the four corners of the idempotent $\Pi_+$, by *The Peirce Decomposition of $M_6(\mathbb{C})$*, with the rank $p=3$.
 
 **Definition.** The block $A_{+-}=\Pi_+A\Pi_-$ is the **mass block**. It maps the negative chiral half into the positive one, and it is a $3\times3$ matrix. Its partner $A_{-+}$ is the conjugate mass block, mapping $V_+$ to $V_-$.
 
@@ -330,7 +332,7 @@ $$
 
 when $A_{--}$ is invertible.
 
-**Proof.** The trace is the sum of the traces of the diagonal blocks. The determinant is the Schur complement formula of *The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners*.
+**Proof.** The trace is the sum of the traces of the diagonal blocks. The determinant is the Schur complement formula of *The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$*.
 
 ### The Gauge on the Mass Block
 
@@ -477,10 +479,10 @@ The $\mathbb{Z}/6$ grading has six pieces of dimension six; its $\mathbb{Z}/2$ q
 
 ## Further Reading
 
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m6c.html), for the root and the chirality involution.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m6c.html), for the four corners of an idempotent.
-- [The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners](the-m3-m3-and-m2-m4-corners-of-m6c.html), for the block form and the mass block in the corners.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m6c.html), for the chain that mixes the two chiralities.
+- [Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m6c.html), for the root and the chirality involution.
+- [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the four corners of an idempotent.
+- [The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$](the-m3-m3-and-m2-m4-corners-of-m6c.html), for the block form and the mass block in the corners.
+- [The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
+- [The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m6c.html), for the chain that mixes the two chiralities.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the $2+2$ split.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the columns of $M_6$.
+- [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the columns of $M_6$.

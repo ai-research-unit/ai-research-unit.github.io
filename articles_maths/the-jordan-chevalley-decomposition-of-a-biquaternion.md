@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Every element of the biquaternion algebra is the sum of a semisimple element and a nilpotent element that commute, and the sum is unique. The split is the finest decomposition that the product alone determines: it uses no norm, no form, no pairing and no matrix. This article proves the split for $\mathbb{B}$, states it in the frame supplied by *The Centraliser* and *The Peirce Decomposition*, and shows that the eigenvalue decomposition and the Jordan basis are its two frames.
+Every element of the biquaternion algebra is the sum of a semisimple element and a nilpotent element that commute, and the sum is unique. The split is the finest decomposition that the product alone determines: it uses no norm, no form, no pairing and no matrix. This article proves the split for $\mathbb{B}$, states it in the frame supplied by *The Centraliser* and *The Peirce Decomposition of the Biquaternion Algebra*, and shows that the eigenvalue decomposition and the Jordan basis are its two frames.
 
 The algebra has degree two, so the theorem is short. An element $\tilde Q=Q_te_t+\vec Q$ has characteristic polynomial $(X-Q_t)^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$. The cases are read in two steps, first by the discriminant and then by centrality. First $B^2\neq0$: the two roots are distinct and the element is already semisimple. Then $B^2=0$, where the roots coalesce. This second case has two halves: the central half $\vec Q=0$, where the element is scalar; and the non-central half $\vec Q\neq0$, where the element is a scalar part plus a non-zero square-zero vector. The non-central half splits once more by the scalar part, into the Jordan type when $Q_t\neq0$ and the nilpotent type when $Q_t=0$. There are therefore four minimal-polynomial types, and the semisimple outcome of the split has three Peirce sub-cases: scalar, unit and zero divisor.
 
-The article is the biquaternion case of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, where the general theorem, its uniqueness and its multiplicative form are proved. What is added here is the explicit frame, the corner pattern and the exact list of types. The two frame articles are *The Eigenbasis of a Spectrally Regular Biquaternion* and *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the Peirce decomposition is *The Peirce Decomposition*, and the centraliser is *The Centraliser*.
+The article is the biquaternion case of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, where the general theorem, its uniqueness and its multiplicative form are proved. What is added here is the explicit frame, the corner pattern and the exact list of types. The two frame articles are *The Eigenbasis of a Spectrally Regular Biquaternion* and *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*, and the centraliser is *The Centraliser*.
 
 **Notation.** An element is $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and its natural conjugation is $\tilde Q^{\natural}=Q_te_t-\vec Q$. The product is the plain product, associative with unit $e_t$. The scalar part is $\operatorname{Sc}(\tilde Q)=Q_t$, and
 
@@ -24,7 +24,7 @@ and the minimal polynomial is written $m_{\tilde Q}$. An element is **semisimple
 
 ## The Frame
 
-The split is read in the Peirce frame of *The Peirce Decomposition*, and its uniqueness is read in the centraliser of *The Centraliser*. The two facts are these.
+The split is read in the Peirce frame of *The Peirce Decomposition of the Biquaternion Algebra*, and its uniqueness is read in the centraliser of *The Centraliser*. The two facts are these.
 
 - A non-central element has $C(\tilde Q)=\mathbb{C}[\tilde Q]$, of complex dimension two: $\mathbb{C}\times\mathbb{C}$ when $B^2\neq0$, the dual numbers when $B^2=0$ and $\vec Q\neq0$. At the centre, $B^2=0$ with $\vec Q=0$, the centraliser is all of $\mathbb{B}$.
 - A complete orthogonal pair $\{\tilde\Pi,\tilde\Pi'\}$ cuts the algebra into four corners $\mathbb{B}_{\sigma\tau}$, each a complex line, with the corner rule $\mathbb{B}_{\sigma\tau}\mathbb{B}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{B}_{\sigma\nu}$.
@@ -285,7 +285,7 @@ For a unit, the additive split gives the multiplicative form $\tilde Q=\tilde Q_
 - [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the characteristic polynomial, the spectral criterion and the two cases.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the spectral frame, the root and the eigenbasis.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the defective sector, the support idempotents and the Jordan basis.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce decomposition, the corners and the mixed generators.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the Peirce decomposition, the corners and the mixed generators.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the units, the zero divisors and their two strata.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the general theorem, its uniqueness and the multiplicative form.
 - [The Eigenvalue Decomposition in a Jordan Algebra](the-eigenvalue-decomposition-in-a-jordan-algebra.html), for the spectral idempotents read as Peirce idempotents.

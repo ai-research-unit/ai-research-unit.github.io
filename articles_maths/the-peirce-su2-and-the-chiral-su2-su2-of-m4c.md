@@ -1,4 +1,4 @@
-# __The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$__
+# __The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article states both structures, proves their commutation or anticommutation with $\Gamma$, computes their commutants and associative envelopes, gives the branching of the algebra under each, and compares the two decompositions. It also records the degeneration at $n=2$, where the block-diagonal traceless chiral algebra vanishes and the centraliser of $\Gamma$ is the Cartan contained in the Peirce algebra.
 
-The spin chain is *The Spin Chain and the Adjoint Decomposition*; the chirality is *The Two Chiralities*; the rank-two split is *The Rank-Two Split*; the mass block is *The Mass Block and the Chiral Polar Decomposition*.
+The spin chain is *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*; the rank-two split is *The Rank-Two Split of $M_4(\mathbb{C})$*; the mass block is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
 
 ## The Peirce $\mathfrak{su}_2$
 
@@ -42,7 +42,7 @@ $$
 [J_1,J_2]=iJ_3,\qquad [J_2,J_3]=iJ_1,\qquad [J_3,J_1]=iJ_2 .
 $$
 
-**Proof.** The first three relations are proved in *The Spin Chain and the Adjoint Decomposition* by the weight computation on the matrix units. The last three follow by taking real and imaginary parts of $J_\pm=J_1\pm iJ_2$.
+**Proof.** The first three relations are proved in *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$* by the weight computation on the matrix units. The last three follow by taking real and imaginary parts of $J_\pm=J_1\pm iJ_2$.
 
 **The representation is irreducible.** The carrier $\mathbb{C}^4$ is the spin-$\tfrac32$ module: the weights of $J_3$ are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, each once, and the ladder coefficients are $\sqrt3,2,\sqrt3$. A nonzero invariant subspace contains a highest weight vector, which is a multiple of $e_1$, and the lowering chain reaches $e_2,e_3,e_4$; hence the only invariant subspaces are $0$ and $\mathbb{C}^4$.
 
@@ -237,7 +237,7 @@ M_4(\mathbb{C})=\mathcal{V}_0\oplus\mathcal{V}_1\oplus\mathcal{V}_2\oplus\mathca
 1+3+5+7=16,
 $$
 
-with highest weight vectors $I$, $J_+$, $E_{13}+E_{24}$, $E_{14}$. This is *The Spin Chain and the Adjoint Decomposition*.
+with highest weight vectors $I$, $J_+$, $E_{13}+E_{24}$, $E_{14}$. This is *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$*.
 
 **Under the chiral algebra.** The carrier decomposes as
 
@@ -343,8 +343,8 @@ $$
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $\mathfrak{su}_2$, its representations and Schur's lemma.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the branching rules and the symmetric powers.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the double commutant theorem and the envelope of a matrix algebra.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the Peirce spin-$\tfrac32$ chain.
-- [The Two Chiralities](the-two-chiralities-of-m4c.html), for the chirality involution and the chiral blocks.
-- [The Rank-Two Split](the-rank-two-split-of-m4c.html), for the two diagonal $M_2$ factors and the mass block.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block as a bifundamental.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.
+- [The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the Peirce spin-$\tfrac32$ chain.
+- [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chirality involution and the chiral blocks.
+- [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the two diagonal $M_2$ factors and the mass block.
+- [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block as a bifundamental.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.

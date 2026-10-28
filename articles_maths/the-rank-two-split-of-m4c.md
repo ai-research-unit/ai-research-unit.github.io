@@ -1,12 +1,12 @@
-# __The Rank-Two Split__
+# __The Rank-Two Split of $M_4(\mathbb{C})$__
 
 ## Introduction
 
-**The rank-two idempotent $\Pi=P_+$ cuts $M_4(\mathbb{C})$ into four corners of dimension four each, and the diagonal corners are two copies of $M_2(\mathbb{C})$.** The split is the balanced split $M_4\supset M_2\oplus M_2$; the off-diagonal corners are the two mass blocks, and the block-diagonal subalgebra is not an ideal. The split is the chiral block decomposition of *The Two Chiralities*, read as a Peirce decomposition.
+**The rank-two idempotent $\Pi=P_+$ cuts $M_4(\mathbb{C})$ into four corners of dimension four each, and the diagonal corners are two copies of $M_2(\mathbb{C})$.** The split is the balanced split $M_4\supset M_2\oplus M_2$; the off-diagonal corners are the two mass blocks, and the block-diagonal subalgebra is not an ideal. The split is the chiral block decomposition of *The Two Chiralities of $M_4(\mathbb{C})$*, read as a Peirce decomposition.
 
 The article states the rank-two idempotent, proves the corner dimensions $4+4+4+4$, identifies the two diagonal corners with $M_2(\mathbb{C})$, describes the two carrier modules and the mass block, gives the two-sided Peirce table and the multiplication table, and explains why the split is a vector-space decomposition and a subalgebra inclusion, not a direct sum of algebras.
 
-The rank-one split is *The Peirce Decomposition*; the chirality is *The Two Chiralities*; the mass block and its polar decomposition are *The Mass Block and the Chiral Polar Decomposition*; the two $\mathfrak{su}_2$'s are *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$*. The general recursion is *The Peirce Decomposition and the Corner Recursion*.
+The rank-one split is *The Peirce Decomposition of $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*; the mass block and its polar decomposition are *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*; the two $\mathfrak{su}_2$'s are *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$*. The general recursion is *The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$*.
 
 ## The Rank-Two Idempotent
 
@@ -146,7 +146,7 @@ $$
 
 **Proof.** A matrix in $L_+$ has zero second block-column; its first block-column has a top part in $\mathcal{A}=\Pi M\Pi$ and a bottom part in $\mathcal{C}=QM\Pi$. The left action of $\mathcal{A}\oplus\mathcal{D}$ preserves the row decomposition and acts on the two parts by $\mathcal{A}$ and $\mathcal{D}$ respectively. The same argument with the second block-column gives $L_-\cong\mathcal{B}\oplus\mathcal{D}$.
 
-**The two carrier spaces of the spin chain.** The spin chain of *The Spin Chain and the Adjoint Decomposition* has one carrier, $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$. The rank-two split has two carrier spaces, $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$, one per chirality. They are the modules of the two $M_2$ factors:
+**The two carrier spaces of the spin chain.** The spin chain of *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$* has one carrier, $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$. The rank-two split has two carrier spaces, $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$, one per chirality. They are the modules of the two $M_2$ factors:
 
 $$
 \mathcal{A}\ \text{acts on}\ \mathbb{C}^2_+,
@@ -168,7 +168,7 @@ $$
 M:\mathbb{C}^2_-\longrightarrow\mathbb{C}^2_+,
 $$
 
-the mass operator of the split. The opposite corner $\mathcal{C}$ is the conjugate mass block, and the two together form the odd part of the algebra under $\operatorname{Ad}_\Gamma$. The polar decomposition of $M$ is *The Mass Block and the Chiral Polar Decomposition*.
+the mass operator of the split. The opposite corner $\mathcal{C}$ is the conjugate mass block, and the two together form the odd part of the algebra under $\operatorname{Ad}_\Gamma$. The polar decomposition of $M$ is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
 
 ## The Two-Sided Peirce Table
 
@@ -214,7 +214,7 @@ $$
 \mathcal{D}=\mathcal{A}_{22}\oplus\mathcal{A}_{24}\oplus\mathcal{A}_{42}\oplus\mathcal{A}_{44}.
 $$
 
-Each line is one-dimensional, and the sixteen lines are the full Peirce decomposition of *The Peirce Decomposition*. The rank-two split groups the sixteen lines into four groups of four. It is a different grouping from the rank-one split, whose corners have dimensions $1,3,3,9$; neither grouping refines the other.
+Each line is one-dimensional, and the sixteen lines are the full Peirce decomposition of *The Peirce Decomposition of $M_4(\mathbb{C})$*. The rank-two split groups the sixteen lines into four groups of four. It is a different grouping from the rank-one split, whose corners have dimensions $1,3,3,9$; neither grouping refines the other.
 
 ## The Failure of the Algebra Direct Sum
 
@@ -338,9 +338,9 @@ $$
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce decompositions relative to a pair of orthogonal idempotents and for corner algebras.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for block matrices, Schur complements and the determinant.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m4c.html), for the rank-one split and the sixteen fine lines.
-- [The Two Chiralities](the-two-chiralities-of-m4c.html), for the involution $\Gamma$ and the chiral blocks.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass operator and its polar decomposition.
-- [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the two $M_2$ factors and their Lie algebras.
-- [The Peirce Decomposition and the Corner Recursion](the-peirce-decomposition-and-the-corner-recursion-mnc.html), for the general recursion $M_n\supset M_p\oplus M_{n-p}$.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion split $1+1+1+1$.
+- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the rank-one split and the sixteen fine lines.
+- [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the involution $\Gamma$ and the chiral blocks.
+- [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass operator and its polar decomposition.
+- [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the two $M_2$ factors and their Lie algebras.
+- [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-mnc.html), for the general recursion $M_n\supset M_p\oplus M_{n-p}$.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion split $1+1+1+1$.

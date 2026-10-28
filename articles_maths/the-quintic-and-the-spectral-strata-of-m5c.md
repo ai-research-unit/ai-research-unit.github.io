@@ -14,13 +14,13 @@ $$
 1+1+1+1+1,\quad 2+1+1+1,\quad 2+2+1,\quad 3+1+1,\quad 3+2,\quad 4+1,\quad 5 .
 $$
 
-The first is the **regular semisimple** stratum, the open stratum of matrices with five distinct eigenvalues; the last is the scalar stratum, the unique closed stratum. The root orbit of *Roots of Unity and the Lagrange Idempotents* is the conjugacy class of a fixed root, of dimension $20$, inside the regular semisimple locus.
+The first is the **regular semisimple** stratum, the open stratum of matrices with five distinct eigenvalues; the last is the scalar stratum, the unique closed stratum. The root orbit of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$* is the conjugacy class of a fixed root, of dimension $20$, inside the regular semisimple locus.
 
 The **discriminant** $\Delta$ is the polynomial in the coefficients whose vanishing is the condition of a repeated root. Its zero locus is the **singular set** of the characteristic polynomial map, a hypersurface of codimension $1$; its complement is the regular semisimple locus. The orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions $5,7,9,11,13,17,25$ in $M_5$; the discriminant locus is the union of all the strata with a repeated root, including the non-semisimple matrices, and it has dimension $24$.
 
 The **quintic** enters because the eigenvalues of a $5\times5$ matrix are the roots of a quintic. A general quintic has no solution in radicals: the Galois group of the general quintic is $S_5$, which is not solvable (Abel–Ruffini, Galois). The eigenvalues exist by the fundamental theorem of algebra, and the Lagrange projectors exist at a simple spectrum, but neither fact produces a radical formula for the roots. The projectors are algebraic functions of the coefficients, not generally radical functions.
 
-The article assumes the matrix algebra and the root. It uses no form and no topology. The determinant and the discriminant are treated as polynomials; the singular set $\det=0$ of *The Forms, the Norms and the Singular Set* is a different locus, and it is not the discriminant.
+The article assumes the matrix algebra and the root. It uses no form and no topology. The determinant and the discriminant are treated as polynomials; the singular set $\det=0$ of *The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$* is a different locus, and it is not the discriminant.
 
 ## The Characteristic Polynomial
 
@@ -122,7 +122,7 @@ the matrices with five distinct eigenvalues. Its complement is the **discriminan
 
 **Proof.** A nonempty Zariski open subset of an irreducible variety is dense; the discriminant vanishes on every matrix with a repeated eigenvalue by definition.
 
-**Remark.** **The regular semisimple locus is not the root orbit.** The locus is the union of all conjugacy classes of matrices with distinct eigenvalues, of dimension $25$; the root orbit of a fixed root $H$ is one conjugacy class inside it, of dimension $20$. The root set $PGL_5/T$ of the earlier articles is the orbit of the fixed root, not the whole open locus. The distinction is the difference between "some five distinct eigenvalues" and "the five eigenvalues $\zeta_0,\dots,\zeta_4$".
+**Remark.** **The regular semisimple locus is not the root orbit.** The locus is the union of all conjugacy classes of matrices with distinct eigenvalues, of dimension $25$; the root orbit of a fixed root $H$ is one conjugacy class inside it, of dimension $20$. The root set $PGL_5/T$ of the earlier articles is the orbit of the fixed root, not the whole open locus. The distinction is the difference between "some five distinct eigenvalues" and "the five eigenvalues $\zeta_1,\dots,\zeta_5$".
 
 ## The Spectral Strata
 
@@ -198,10 +198,10 @@ has no solution in radicals. Its Galois group over the field of rational functio
 
 ### The Lagrange Projectors
 
-**Theorem.** Let $H$ be a matrix with simple spectrum $\zeta_0,\dots,\zeta_4$. The Lagrange projectors
+**Theorem.** Let $H$ be a matrix with simple spectrum $\zeta_1,\dots,\zeta_5$. The Lagrange projectors
 
 $$
-P_k=\prod_{l\ne k}\frac{H-\zeta_lI}{\zeta_k-\zeta_l},\qquad k=0,\dots,4,
+P_k=\prod_{l\ne k}\frac{H-\zeta_lI}{\zeta_k-\zeta_l},\qquad k=1,\dots,5,
 $$
 
 are well defined, idempotent, orthogonal and complete:
@@ -305,7 +305,7 @@ A general quintic has no radical solution: its Galois group is $S_5$, not solvab
 - Jean-Pierre Serre, *Topics in Galois Theory* (Jones and Bartlett, 1992), for the inverse Galois problem, the group $S_5$ and the general quintic.
 - Ian Stewart, *Galois Theory* (Chapman and Hall, fourth edition, 2015), for the Abel–Ruffini theorem and the solvability of the quintic.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the characteristic polynomial, the principal minors, the companion matrix and the discriminant.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root, its simple spectrum and the projectors.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m5c.html), for the characteristic polynomial, the trace and the Jordan decomposition.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m5c.html), for the singular set $\det=0$ and its difference from the discriminant.
+- [Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root, its simple spectrum and the projectors.
+- [The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m5c.html), for the characteristic polynomial, the trace and the Jordan decomposition.
+- [The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m5c.html), for the singular set $\det=0$ and its difference from the discriminant.
 - [The Topology of $M_5(\mathbb{C})$](the-topology-of-m5c.html), for the topology of the discriminant complement and the strata.

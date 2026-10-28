@@ -96,9 +96,9 @@ The two actions are not interchangeable. Left multiplication is associative and 
 
 **The plane $S_+=\mathbb B\tilde\Pi_+$ is a spin-$\tfrac12$ carrier, and so is $S_-$.**
 
-On $S_+$ the operator $L_{	ilde\Xi/2}$ has the two weights $+\tfrac12$ on $\tilde\Pi_+$ and $-\tfrac12$ on $\vec\Upsilon_+$. The highest weight is $\tfrac12$, so $j=\tfrac12$, and the dimension is $2j+1=2$. The two weight lines are one-dimensional, and the ladder of §*The Spin Triple of the Frame* joins them, so the carrier is irreducible. The same computation on $S_-$ gives the weights $+\tfrac12$ on $\vec\Upsilon_-$ and $-\tfrac12$ on $\tilde\Pi_-$.
+On $S_+$ the operator $L_{\tilde\Xi/2}$ has the two weights $+\tfrac12$ on $\tilde\Pi_+$ and $-\tfrac12$ on $\vec\Upsilon_+$. The highest weight is $\tfrac12$, so $j=\tfrac12$, and the dimension is $2j+1=2$. The two weight lines are one-dimensional, and the ladder of §*The Spin Triple of the Frame* joins them, so the carrier is irreducible. The same computation on $S_-$ gives the weights $+\tfrac12$ on $\vec\Upsilon_-$ and $-\tfrac12$ on $\tilde\Pi_-$.
 
-**Remark (the two planes are isomorphic).** The two planes are distinct subspaces, but they are isomorphic as left modules: the exchange of §*The Right Action* of *The Spinor Spaces* is a bijection and commutes with the left action. The left regular module therefore decomposes as
+**Remark (the two planes are isomorphic).** The two planes are distinct subspaces, but they are isomorphic as left modules: the exchange of §*Right Multiplication* of *Spinors as Peirce Coordinates in the Biquaternion Algebra* is a bijection and commutes with the left action. The left regular module therefore decomposes as
 
 $$
 \mathbb B=S_+\oplus S_-=2\cdot\tfrac12 .
@@ -120,12 +120,12 @@ Every inner derivation annihilates the centre, so $\mathrm{ad}_{\tilde\Xi/2}=0$ 
 
 ### The Table
 
-| carrier | action | complex dimension | weights of $	frac12	ilde\Xi$ | $j$ | Casimir |
+| carrier | action | complex dimension | weights of $\frac12\tilde\Xi$ | $j$ | Casimir |
 |---|---|---|---|---|---|
-| $S_+$ | $L_{	ilde\Xi/2}$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | $\tfrac34$ |
-| $S_-$ | $L_{	ilde\Xi/2}$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | $\tfrac34$ |
-| $V$ | $\mathrm{ad}_{	ilde\Xi/2}$ | $3$ | $+1,0,-1$ | $1$ | $2$ |
-| $\mathbb C_{\mathbb B}$ | $\mathrm{ad}_{	ilde\Xi/2}$ | $1$ | $0$ | $0$ | $0$ |
+| $S_+$ | $L_{\tilde\Xi/2}$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | $\tfrac34$ |
+| $S_-$ | $L_{\tilde\Xi/2}$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | $\tfrac34$ |
+| $V$ | $\mathrm{ad}_{\tilde\Xi/2}$ | $3$ | $+1,0,-1$ | $1$ | $2$ |
+| $\mathbb C_{\mathbb B}$ | $\mathrm{ad}_{\tilde\Xi/2}$ | $1$ | $0$ | $0$ | $0$ |
 
 **Remark (the factor two between the two readings).** On the spinor the root $\tilde\Xi$ has weights $\pm1$ and the operator $\tfrac12\tilde\Xi$ has weights $\pm\tfrac12$; on the traceless part $\mathrm{ad}_{\tilde\Xi}$ has weights $\pm2$ and $\mathrm{ad}_{\tilde\Xi/2}$ has weights $\pm1$. The half-integer spin is the left module, the integer spin the adjoint module, and the factor two is the shift $L_{\tilde\Xi}=\mathrm{ad}_{\tilde\Xi}+R_{\tilde\Xi}$ of *The Weight of a Frame Root and the Spin Quantum Number*: on the mixed corners the right weight is the negative of the left weight, so the commutator weight is twice the left weight; on the diagonal corners both vanish.
 
@@ -157,7 +157,7 @@ The sum is a central element, and it acts by the scalar $\tfrac34$ on every carr
 
 **Theorem.** On $S_+(\vec u)=\mathbb B\tilde\Pi_+(\vec u)$, the operators $L_{\tilde\Pi_+(\vec u)}$ and $L_{\tilde\Pi_-(\vec u)}$ are the spectral projectors of $L_{\tilde S_{\vec u}}$ for the eigenvalues $+\tfrac12$ and $-\tfrac12$.
 
-*Proof.* The operator $L_{\tilde S_{\vec u}}=\tfrac12(L_{\tilde\Pi_+}-L_{\tilde\Pi_-})$ and the sum $L_{\tilde\Pi_+}+L_{\tilde\Pi_-}=L_{e_t}$ is the identity. Each $L_{\tilde\Pi_\pm}$ is idempotent, because $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, and the two images are the lines $\mathbb C\tilde\Pi_+$ and $\mathbb C\vec\Upsilon_+$, which are the weight spaces of $L_{	ilde\Xi/2}$. A pair of complementary idempotents with these two images is the spectral pair.
+*Proof.* The operator $L_{\tilde S_{\vec u}}=\tfrac12(L_{\tilde\Pi_+}-L_{\tilde\Pi_-})$ and the sum $L_{\tilde\Pi_+}+L_{\tilde\Pi_-}=L_{e_t}$ is the identity. Each $L_{\tilde\Pi_\pm}$ is idempotent, because $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, and the two images are the lines $\mathbb C\tilde\Pi_+$ and $\mathbb C\vec\Upsilon_+$, which are the weight spaces of $L_{\tilde\Xi/2}$. A pair of complementary idempotents with these two images is the spectral pair.
 
 **The standard frame.** In the couple $(\tilde\Pi_+,\vec\Upsilon_+)$ the two projectors are $\operatorname{diag}(1,0)$ and $\operatorname{diag}(0,1)$.
 
@@ -186,7 +186,7 @@ $$
 
 On $S_+$ the eigenvalues of $L_{\tilde S_{\vec u}}$ are $\pm\tfrac12$, so those of $L_{\tilde u(\theta)}$ are $e^{\mp i\theta/2}$. On $V$ the eigenvalues of $\mathrm{ad}_{\tilde S_{\vec u}}$ are $+1,0,-1$, so those of $\mathrm{Ad}_{\tilde u(\theta)}$ are $e^{\mp i\theta},1$.
 
-**The half-angle is the weight.** The exponent in $L_{\tilde u}$ is $\theta/2$ because the weight of $L_{\tilde S}$ is $\tfrac12$; on the vector the weight is $1$ and the exponent is $\theta$. The same rotor has two exponents on two carriers. The half-angle is not a property of the rotor alone; it is the weight of the spin on the carrier, exactly as in *The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*, where the one-sided operator produces the half-angle and the sandwich produces the full angle.
+**The half-angle is the exponential of the weight, not the spin.** The exponent in $L_{\tilde u}$ is $\theta/2$ because the weight of $L_{\tilde S}$ is $\tfrac12$; on the vector the weight is $1$ and the exponent is $\theta$. The same rotor has two exponents on two carriers. The half-angle is not a property of the rotor alone and it is not the spin quantum number; it is the exponential coordinate of the weight on the carrier.
 
 **The double cover.** At $\theta=2\pi$ the rotor is $-e_t$; it acts on the spinor by $L_{\tilde u(2\pi)}=-\mathrm{id}$ and on the vector by $\mathrm{Ad}_{\tilde u(2\pi)}=\mathrm{id}$. The sign is the central sign of the double cover, visible on the spinor and invisible on the vector. The two periods separate the half-integer from the integer carriers; the spin-statistics theorem is not a consequence of the algebra and is treated with the physics.
 
@@ -194,7 +194,7 @@ On $S_+$ the eigenvalues of $L_{\tilde S_{\vec u}}$ are $\pm\tfrac12$, so those 
 
 **Tensor products of the elementary carriers give the higher spins; the algebra itself carries only $0,\tfrac12,1$.**
 
-The tensor products are taken for the Lie triple, with $X\cdot(\xi\otimes\eta)=X\xi\otimes\eta+\xi\otimes X\eta$; they are not modules over the associative algebra, which has no coproduct. The weights of $	frac12	ilde\Xi$ add, and the weight string of the product is the sum of the strings of the factors.
+The tensor products are taken for the Lie triple, with $X\cdot(\xi\otimes\eta)=X\xi\otimes\eta+\xi\otimes X\eta$; they are not modules over the associative algebra, which has no coproduct. The weights of $\frac12\tilde\Xi$ add, and the weight string of the product is the sum of the strings of the factors.
 
 | product | complex dimension | decomposition | spins |
 |---|---|---|---|
@@ -234,7 +234,7 @@ which is the string of a spin-$2$, a spin-$1$ and a spin-$0$. For $S_+\otimes S_
 
 **The half-angle and the integer are the same root on two carriers.** The polar-word articles read the exponent $\theta/2$ of the one-sided operator; *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form* reads the adjoint action on the material sector. The first is the weight of $L_{\tilde S}$ on $S_\pm$, the second the weight of $\mathrm{ad}_{\tilde S}$ on $V\oplus\mathbb C_{\mathbb B}$; the two differ by the chirality, $L_{\tilde\Xi}=\mathrm{ad}_{\tilde\Xi}+R_{\tilde\Xi}$, and the factor two is the difference of the two corner signs. Neither reading is more fundamental: the same element has both, and the carrier selects.
 
-**The carrier is prior to the word.** The minimal-left-ideal article and the Peirce-carrier article describe the same two planes; the spinor is the coordinate on a plane, the operator is the element whose action gives the weight, and the group is the exponentiated rotor. The six readings agree because each lands on the same number, the highest weight of $	frac12	ilde\Xi$ on a carrier. That number is the definition.
+**The carrier is prior to the word.** The minimal-left-ideal article and the Peirce-carrier article describe the same two planes; the spinor is the coordinate on a plane, the operator is the element whose action gives the weight, and the group is the exponentiated rotor. The six readings agree because each lands on the same number, the highest weight of $\frac12\tilde\Xi$ on a carrier. That number is the definition.
 
 ## What the Word Spin Names
 
@@ -279,8 +279,8 @@ which is the string of a spin-$2$, a spin-$1$ and a spin-$0$. For $S_+\otimes S_
 ## Further Reading
 
 - [The Weight of a Frame Root and the Spin Quantum Number](the-weight-of-a-frame-root-and-the-spin-quantum-number.html), for the general definition of carrier, weight and spin.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the frame, the corners and the weight table.
-- [The Spinor Spaces](the-spinor-spaces.html), for the two spin-$\tfrac12$ planes and the couples.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the frame, the corners and the weight table.
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two spin-$\tfrac12$ planes and their weight bases.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the irreducibility of the two planes.
 - [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the associative modules over $\mathbb B$.
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the half-angle theorem.

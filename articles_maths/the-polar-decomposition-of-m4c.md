@@ -1,4 +1,4 @@
-# __The Polar Decomposition__
+# __The Polar Decomposition of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article proves the polar decomposition, identifies the singular value decomposition, describes the singular case and the manifold $GL_4/U(4)$, states the exponential form and the Cartan decomposition, and identifies the $*$-unitary factor as the closest $*$-unitary to $A$.
 
-The positive definite form is *The Involution and the Hermitian Structure*; the singular values and the norms are *The Forms, the Norms and the Singular Set*; the exponential form is *The Exponential Polar Decomposition*; the mass-block version is *The Mass Block and the Chiral Polar Decomposition*.
+The positive definite form is *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*; the singular values and the norms are *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*; the exponential form is *The Exponential Polar Decomposition of $M_4(\mathbb{C})$*; the mass-block version is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
 
 ## The Polar Decomposition
 
@@ -250,7 +250,7 @@ $$
 
 with $K,H$ Hermitian. The factor $e^{iK}$ is $*$-unitary and $e^H$ is positive definite. The decomposition is the polar decomposition, written in exponential form.
 
-**The other order.** The **exponential polar decomposition** of *The Exponential Polar Decomposition* writes an invertible $A$ as
+**The other order.** The **exponential polar decomposition** of *The Exponential Polar Decomposition of $M_4(\mathbb{C})$* writes an invertible $A$ as
 
 $$
 A=e^{H'}e^{iK'},
@@ -264,7 +264,7 @@ $$
 \log A=\log P+iK,
 $$
 
-with $P=|A|$ and $U=e^{iK}$; it is a holomorphic function of $A$ on the domain avoiding the negative real axis of the spectrum. The exponential and the logarithm are *The Exponential and the Lie Group*.
+with $P=|A|$ and $U=e^{iK}$; it is a holomorphic function of $A$ on the domain avoiding the negative real axis of the spectrum. The exponential and the logarithm are *The Exponential and the Lie Group of $M_4(\mathbb{C})$*.
 
 ## The Biquaternion Case
 
@@ -319,7 +319,7 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the polar decomposition, the singular value decomposition and the closest $*$-unitary problem.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the positive definite cone, the operator and nuclear norms, and the geometry of matrices.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the Cartan decomposition and the symmetric space $GL_4/U(4)$.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m4c.html), for the positive definite form and the $*$-unitary group.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the singular values and the norms.
-- [The Exponential Polar Decomposition](the-exponential-polar-decomposition-of-m4c.html), for the other ordering $e^He^{iK}$.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the chiral version.
+- [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the positive definite form and the $*$-unitary group.
+- [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the singular values and the norms.
+- [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the other ordering $e^He^{iK}$.
+- [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the chiral version.

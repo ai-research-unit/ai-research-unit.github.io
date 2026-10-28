@@ -142,8 +142,8 @@ The matrix model conjugates the biquaternion quadratic family to the polynomial 
 
 ## Further Reading
 
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html) and [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the isomorphism, the trace and the determinant in matrix form.
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html) and [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the isomorphism, the trace and the determinant in matrix form.
 - [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the family, the eigenvalue reduction and the critical set.
-- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the regular representation and the doubling of the spectrum.
+- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the regular representation and the doubling of the spectrum.
 - [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the cone that the leading part of the matrix family is not proper over.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm $\langle\cdot\rangle_{\natural}$ and the Euclidean norm compared here.

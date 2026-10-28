@@ -10,7 +10,7 @@ $$
 
 and the common scalar of the three $t_{i}$ acts trivially, so the effective group is $(\mathbb{C}^{\times})^{2}$. Its two parameters are $\lambda_{1}=t_{1}/t_{2}$ and $\lambda_{2}=t_{2}/t_{3}$; the third ratio is the product $\lambda_{1}\lambda_{2}$, and there is no third independent scalar. The idempotents do not depend on $\lambda_{1},\lambda_{2}$.
 
-This article reads the gauge on the Peirce coordinates, identifies the gauge-invariant combinations of the off-diagonal entries, proves that the Peirce table is unchanged, compares the two-parameter gauge with the single $\lambda$ of the biquaternion algebra, and separates the gauge from the global phase of a quantum state. The frame and the simple nilpotents are *The Frame, the Simple Nilpotents and the Gauge*; the Peirce decomposition is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*; the corner is *The $M_{2}$ Corner of $M_{3}(\mathbb{C})$*.
+This article reads the gauge on the Peirce coordinates, identifies the gauge-invariant combinations of the off-diagonal entries, proves that the Peirce table is unchanged, compares the two-parameter gauge with the single $\lambda$ of the biquaternion algebra, and separates the gauge from the global phase of a quantum state. The frame and the simple nilpotents are *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*; the Peirce decomposition is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*; the corner is *The $M_{2}$ Corner of $M_{3}(\mathbb{C})$*.
 
 ## The Gauge on the Peirce Coordinates
 
@@ -20,7 +20,7 @@ $$
 E_{ij}'=\frac{t_{i}}{t_{j}}E_{ij}.
 $$
 
-Then $E_{ij}'E_{kl}'=\delta_{jk}E_{il}'$ and $E_{ii}'=E_{ii}$, so the $E_{ij}'$ are again a normalized frame with the same diagonal idempotents. The map $E_{ij}\mapsto E_{ij}'$ is the gauge transformation of *The Frame, the Simple Nilpotents and the Gauge*, with $E_{ij}'=D E_{ij}D^{-1}$ for $D=\operatorname{diag}(t_{1},t_{2},t_{3})$.
+Then $E_{ij}'E_{kl}'=\delta_{jk}E_{il}'$ and $E_{ii}'=E_{ii}$, so the $E_{ij}'$ are again a normalized frame with the same diagonal idempotents. The map $E_{ij}\mapsto E_{ij}'$ is the gauge transformation of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*, with $E_{ij}'=D E_{ij}D^{-1}$ for $D=\operatorname{diag}(t_{1},t_{2},t_{3})$.
 
 **The coordinates.** Write an element as
 
@@ -204,11 +204,11 @@ $$
 8=6+2.
 $$
 
-The frame is a point of $PGL_{3}$, the root is a point of $PGL_{3}/T$, and the gauge is the torus $T\cong(\mathbb{C}^{\times})^{2}$. The count is the orbit-stabiliser count of *The Frame, the Simple Nilpotents and the Gauge*.
+The frame is a point of $PGL_{3}$, the root is a point of $PGL_{3}/T$, and the gauge is the torus $T\cong(\mathbb{C}^{\times})^{2}$. The count is the orbit-stabiliser count of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
 
 **The composite is forced.** The simple nilpotents $E_{12},E_{23}$ carry $\lambda_{1},\lambda_{2}$; the composite $E_{13}=E_{12}E_{23}$ carries $\lambda_{1}\lambda_{2}$. There is no independent scalar $\lambda_{3}$ on $E_{13}$: the cocycle would fail unless $\lambda_{3}=\lambda_{1}\lambda_{2}$. The same holds for the opposite composite $E_{31}=E_{32}E_{21}$, which carries $\lambda_{1}^{-1}\lambda_{2}^{-1}$.
 
-**The two parameters are the simple roots.** In the character lattice of the torus, the weights of $E_{12}$ and $E_{23}$ are the two simple roots $\alpha_{1},\alpha_{2}$ of $A_{2}$, and the weight of $E_{13}$ is the highest root $\alpha_{1}+\alpha_{2}$. The gauge parameters $\lambda_{1},\lambda_{2}$ are the values of the two simple roots; the composite value is their product. The gauge is the maximal torus of $PGL_{3}$, and the root system is the $A_{2}$ of *The Frame, the Simple Nilpotents and the Gauge*.
+**The two parameters are the simple roots.** In the character lattice of the torus, the weights of $E_{12}$ and $E_{23}$ are the two simple roots $\alpha_{1},\alpha_{2}$ of $A_{2}$, and the weight of $E_{13}$ is the highest root $\alpha_{1}+\alpha_{2}$. The gauge parameters $\lambda_{1},\lambda_{2}$ are the values of the two simple roots; the composite value is their product. The gauge is the maximal torus of $PGL_{3}$, and the root system is the $A_{2}$ of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
 
 ## The Comparison with the Biquaternion Single $\lambda$
 
@@ -285,9 +285,9 @@ The single $\lambda$ of the biquaternion algebra is the $n=2$ case of the patter
 
 ## Further Reading
 
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the frame, the nilpotents and the cocycle.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the frame, the nilpotents and the cocycle.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the Peirce coordinates and the table.
 - [The $M_2$ Corner of $M_3(\mathbb{C})$](the-m2-corner-of-m3c.html), for the biquaternion corner and its single parameter.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the root and the idempotents that the gauge fixes.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the single $\mu$ of the biquaternion frame.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m3c.html), for the compact real form and the global phase.
+- [Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the root and the idempotents that the gauge fixes.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the single $\mu$ of the biquaternion frame.
+- [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the compact real form and the global phase.

@@ -1,4 +1,4 @@
-# __The Exponential Polar Decomposition__
+# __The Exponential Polar Decomposition of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article proves the exponential polar decomposition, relates it to the right polar decomposition, characterises the normal case, describes the Cartan decomposition and the singular case, and compares it with the chiral decomposition of the mass block.
 
-The right polar decomposition is *The Polar Decomposition*; the exponential is *The Exponential and the Lie Group*; the chiral mass block is *The Mass Block and the Chiral Polar Decomposition*; the spectral theory is *Spectral Theory and the Spectral Projectors*.
+The right polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the exponential is *The Exponential and the Lie Group of $M_4(\mathbb{C})$*; the chiral mass block is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*; the spectral theory is *Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$*.
 
 ## The Left Polar Decomposition
 
@@ -273,7 +273,7 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the left and right polar decompositions and the normal case.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the Cartan decomposition and the symmetric space.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the exponential and the Cartan decomposition of $GL_4$.
-- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the right polar decomposition and the singular value decomposition.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m4c.html), for the matrix exponential and the Lie group structure.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the chiral decomposition of the mass block.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the normal case and the spectral theorem.
+- [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the right polar decomposition and the singular value decomposition.
+- [The Exponential and the Lie Group of $M_4(\mathbb{C})$](the-exponential-and-the-lie-group-of-m4c.html), for the matrix exponential and the Lie group structure.
+- [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the chiral decomposition of the mass block.
+- [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the normal case and the spectral theorem.

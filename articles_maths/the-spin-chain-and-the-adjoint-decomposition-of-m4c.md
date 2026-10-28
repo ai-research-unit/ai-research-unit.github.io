@@ -1,12 +1,12 @@
-# __The Spin Chain and the Adjoint Decomposition__
+# __The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$__
 
 ## Introduction
 
 **The carrier of the category $M_4(\mathbb{C})$ is $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$, the spin-$\tfrac32$ module of $\mathfrak{sl}_2(\mathbb{C})$, and the adjoint representation of that $\mathfrak{sl}_2$ on the algebra decomposes as $1+3+5+7$.** The chain of simple nilpotents $E_{12},E_{23},E_{34}$ is the weight chain of the carrier, and the coefficients of the ladder operators are $\sqrt3,2,\sqrt3$. The decomposition is the Clebsch–Gordan decomposition of $\mathbb{C}^4\otimes(\mathbb{C}^4)^*$.
 
-The article defines the three generators $J_3,J_+,J_-$, proves the commutation relations and the ladder coefficients, identifies the carrier with the symmetric cube, computes the weights of the sixteen matrix units, and decomposes the adjoint representation into four irreducible modules with highest weight vectors $E_{14}$, $E_{13}+E_{24}$, $J_+$ and $I$. It also states precisely how the Peirce chain mixes the two chiralities, and how it differs from the chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$*.
+The article defines the three generators $J_3,J_+,J_-$, proves the commutation relations and the ladder coefficients, identifies the carrier with the symmetric cube, computes the weights of the sixteen matrix units, and decomposes the adjoint representation into four irreducible modules with highest weight vectors $E_{14}$, $E_{13}+E_{24}$, $J_+$ and $I$. It also states precisely how the Peirce chain mixes the two chiralities, and how it differs from the chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$*.
 
-The root and the idempotents are *Roots of Unity and the Lagrange Idempotents*; the Peirce lines are *The Peirce Decomposition*; the frame and the simple nilpotents are *The Frame, the Simple Nilpotents and the Gauge*; the chirality is *The Two Chiralities*. The representation theory of $\mathfrak{sl}_2$ is *Representations of Lie Algebras*.
+The root and the idempotents are *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$*; the Peirce lines are *The Peirce Decomposition of $M_4(\mathbb{C})$*; the frame and the simple nilpotents are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*. The representation theory of $\mathfrak{sl}_2$ is *Representations of Lie Algebras*.
 
 ## The Carrier and the Generators
 
@@ -108,7 +108,7 @@ $$
 \sqrt{(j-m)(j+m+1)}=\sqrt{k(4-k)}.
 $$
 
-The three values are $\sqrt3,2,\sqrt3$. They are not all equal: the chain is not the unweighted shift of the simple nilpotents. The simple nilpotents $E_{12},E_{23},E_{34}$ are the steps of the chain with coefficient $1$; the ladder operators of the spin structure are the weighted sums with coefficients $\sqrt3,2,\sqrt3$. The two structures are different: the nilpotents are the Peirce chain, the ladder is the spin chain. The article *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$* develops the comparison.
+The three values are $\sqrt3,2,\sqrt3$. They are not all equal: the chain is not the unweighted shift of the simple nilpotents. The simple nilpotents $E_{12},E_{23},E_{34}$ are the steps of the chain with coefficient $1$; the ladder operators of the spin structure are the weighted sums with coefficients $\sqrt3,2,\sqrt3$. The two structures are different: the nilpotents are the Peirce chain, the ladder is the spin chain. The article *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$* develops the comparison.
 
 ### Irreducibility
 
@@ -277,7 +277,7 @@ $$
 
 and $e_2,e_4$ have chirality $-1$ while $e_1,e_3$ have chirality $+1$. The operator $J_+$ changes the chirality; $J_-$ changes it back. The carrier is irreducible under the Peirce $\mathfrak{sl}_2$, so there is no proper invariant subspace that is one chirality. The chain is a spin-$\tfrac32$ chain that runs through both chiralities, not a pair of independent spin-$\tfrac12$ chains.
 
-**The chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ is different.** The traceless block-diagonal subalgebra that commutes with $\Gamma$ is $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ acting on the two planes $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$. It is six-dimensional, and each chirality is a spin-$\tfrac12$ module for one of its two factors. The full centraliser of $\Gamma$ in $\mathfrak{sl}_4$ is spanned by this algebra and $\Gamma$, of dimension $7$; the chiral algebra is the six-dimensional traceless part. The Peirce $\mathfrak{sl}_2$ is three-dimensional and irreducible; it is not contained in the chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, because its raising and lowering operators are odd with respect to $\Gamma$. The two chains are different structures on the same carrier. The precise comparison, with the branching rules, is *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$*.
+**The chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ is different.** The traceless block-diagonal subalgebra that commutes with $\Gamma$ is $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ acting on the two planes $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$. It is six-dimensional, and each chirality is a spin-$\tfrac12$ module for one of its two factors. The full centraliser of $\Gamma$ in $\mathfrak{sl}_4$ is spanned by this algebra and $\Gamma$, of dimension $7$; the chiral algebra is the six-dimensional traceless part. The Peirce $\mathfrak{sl}_2$ is three-dimensional and irreducible; it is not contained in the chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, because its raising and lowering operators are odd with respect to $\Gamma$. The two chains are different structures on the same carrier. The precise comparison, with the branching rules, is *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$*.
 
 **The $n=2$ case.** For the biquaternion algebra $M_2(\mathbb{C})$ the carrier is $\mathbb{C}^2=\operatorname{Sym}^1(\mathbb{C}^2)$, the spin-$\tfrac12$ module. The generators are
 
@@ -348,9 +348,9 @@ $$
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the representation theory of $\mathfrak{sl}_2$ and the Clebsch–Gordan decomposition.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the symmetric powers $\operatorname{Sym}^{n-1}(\mathbb{C}^2)$ and their weights.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the matrix units and the commutator.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root and the chirality involution.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m4c.html), for the corners that the matrix units span.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the chain of simple nilpotents.
-- [The Two Chiralities](the-two-chiralities-of-m4c.html), for the $2+2$ split.
-- [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the comparison of the two chains.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.
+- [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root and the chirality involution.
+- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the corners that the matrix units span.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the chain of simple nilpotents.
+- [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the $2+2$ split.
+- [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the comparison of the two chains.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.

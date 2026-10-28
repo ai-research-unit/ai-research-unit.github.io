@@ -24,7 +24,7 @@ $$
 
 which exhibits the **mass block** $uv\in PMP$: the coupling of the two mixed corners can make $A$ invertible when the compression $M$ is singular, and the compression can be singular while $A$ is invertible. The trace is $\operatorname{tr}M+c$.
 
-This article states the block decomposition, the corner dimensions, the multiplication table, the determinant formula and its consequences, and the comparison with the rank-one split $1+2+2+4$. The corner $PMP\cong M_{2}(\mathbb{C})$ as a unital algebra and as a $*$-algebra is *The $M_{2}$ Corner of $M_{3}(\mathbb{C})$*; the coarse split by a rank-one idempotent is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*; the determinant and the singular set are *The Forms, the Norms and the Singular Set*.
+This article states the block decomposition, the corner dimensions, the multiplication table, the determinant formula and its consequences, and the comparison with the rank-one split $1+2+2+4$. The corner $PMP\cong M_{2}(\mathbb{C})$ as a unital algebra and as a $*$-algebra is *The $M_{2}$ Corner of $M_{3}(\mathbb{C})$*; the coarse split by a rank-one idempotent is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*; the determinant and the singular set are *The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$*.
 
 ## The Block Decomposition
 
@@ -168,7 +168,7 @@ M^{-1}+M^{-1}u s^{-1}vM^{-1} & -M^{-1}u s^{-1}\\
 \end{pmatrix}.
 $$
 
-The formula is the $2+1$ block version of the Schur complement; it is used in *The Polar Decomposition* and in the analysis of the singular set.
+The formula is the $2+1$ block version of the Schur complement; it is used in *The Polar Decomposition of $M_3(\mathbb{C})$* and in the analysis of the singular set.
 
 **The mass block.** The product of the two mixed corners is
 
@@ -307,6 +307,6 @@ The **mass block** $uv$ is the product of the two mixed corners; it can make $A$
 - [The $M_2$ Corner of $M_3(\mathbb{C})$](the-m2-corner-of-m3c.html), for the corner as a unital algebra and as a $*$-algebra.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the coarse split and the fine nine lines.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the trace and the determinant.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m3c.html), for the singular set and its geometry.
-- [The Polar Decomposition](the-polar-decomposition-of-m3c.html), for the Schur complement in the polar decomposition.
-- [The Two-Parameter Gauge](the-two-parameter-gauge-of-m3c.html), for the gauge of the mixed entries.
+- [The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m3c.html), for the singular set and its geometry.
+- [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for the Schur complement in the polar decomposition.
+- [The Two-Parameter Gauge of $M_3(\mathbb{C})$](the-two-parameter-gauge-of-m3c.html), for the gauge of the mixed entries.

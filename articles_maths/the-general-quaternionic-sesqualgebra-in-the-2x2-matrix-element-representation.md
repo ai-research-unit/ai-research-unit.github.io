@@ -236,8 +236,8 @@ The $2\times2$ realization keeps the two conjugations apart, the natural conjuga
 - Nicolas Bourbaki, *Algebra I, Chapters 1–3* (Springer, 1998), for the structure of $M_2(\mathbb{C})$ and its involutions.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the classification of the involutions of a matrix algebra and the orthosymplectic forms.
 - Barry Simon, *Representations of Finite and Compact Groups* (American Mathematical Society, 1996), for the conjugacy classes of $\mathrm{U}(2)$ and the orbits of the $*$-unitary group.
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the realization and its first properties
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the further reading of the isomorphism
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the realization and its first properties
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the further reading of the isomorphism
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra and its Gram matrix
 - [The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](the-general-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.html), for the companion reading of the group
 - [Remarkable Subspaces under the General Quaternionic Sesqualgebra](remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html), for the restriction theory of the form

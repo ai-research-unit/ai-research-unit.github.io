@@ -137,7 +137,7 @@ The closures overlap: $\overline{\Sigma_{11}}=\mathbb{D}$ meets every sector, wh
 
 *Proof.* The first two sectors have $b\neq0$ and the last two $b=0$; apply the theorem.
 
-Unlike *[the biquaternion algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html)*, whose degenerate cone carries nilpotent and unipotent defective strata, $\mathbb{D}$ is reduced: its degenerate locus is the real axis, with no defective stratum. "Degenerate" records the vanishing of a condition, not a defect of the operator.
+Unlike *[The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html)*, whose degenerate cone carries nilpotent and unipotent defective strata, $\mathbb{D}$ is reduced: its degenerate locus is the real axis, with no defective stratum. "Degenerate" records the vanishing of a condition, not a defect of the operator.
 
 ## The Sectors at a Glance
 

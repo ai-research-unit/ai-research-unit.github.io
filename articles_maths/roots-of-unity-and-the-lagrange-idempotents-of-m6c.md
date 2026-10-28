@@ -1,10 +1,10 @@
-# __Roots of Unity and the Lagrange Idempotents__
+# __Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$__
 
 ## Introduction
 
 A single matrix carries the whole frame of $M_6(\mathbb{C})$: a root of unity $H$ with $H^6=I$ and six distinct eigenvalues. Its six eigenspaces are six lines, and the six Lagrange projectors onto them are idempotent, orthogonal and complete. The root is read as the sum $H=\sum_k\zeta_kP_k$ of its idempotents with the sixth roots of unity as coefficients; the coefficients grade the algebra by $\mathbb{Z}/6$; and the cube $H^3$ is the chirality involution. **No second object is primitive.** The idempotents are functions of $H$ alone, and the root is the only input.
 
-The article fixes the root, the Lagrange formula, the grading and the root set, in that order. It assumes the algebra $M_6(\mathbb{C})$ — the basis $E_{ij}$, the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant — which is *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form, no norm and no topology. The Peirce decomposition that the six lines induce is *The Peirce Decomposition*; the frame and its gauge are *The Frame, the Simple Nilpotents and the Gauge*; the two chiralities are *The Two Chiralities*; the spectral theory of an element with repeated eigenvalues, where the Lagrange formula degenerates, is *Spectral Theory and the Spectral Projectors*.
+The article fixes the root, the Lagrange formula, the grading and the root set, in that order. It assumes the algebra $M_6(\mathbb{C})$ — the basis $E_{ij}$, the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant — which is *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form, no norm and no topology. The Peirce decomposition that the six lines induce is *The Peirce Decomposition of $M_6(\mathbb{C})$*; the frame and its gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$*; the two chiralities are *The Two Chiralities of $M_6(\mathbb{C})$*; the spectral theory of an element with repeated eigenvalues, where the Lagrange formula degenerates, is *Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$*.
 
 The construction is root-first. The biquaternion articles build the frame from two anticommuting roots of $+1$; here one root of order six supplies all six idempotents, and the order-two case is a specialisation, not a second ingredient. That contrast is stated in §*The Order-Two Case*.
 
@@ -289,7 +289,7 @@ $$
 \mathbb{C}^6=V_1\oplus V_3\oplus V_5\oplus V_2\oplus V_4\oplus V_6
 $$
 
-into the **even** and **odd** halves. The odd part consists of the entries that exchange the two halves. This is the $3+3$ split of *The Two Chiralities*.
+into the **even** and **odd** halves. The odd part consists of the entries that exchange the two halves. This is the $3+3$ split of *The Two Chiralities of $M_6(\mathbb{C})$*.
 
 **The $\mathbb{Z}/3$ quotient.** Put
 
@@ -389,7 +389,7 @@ $$
 30+5=35=\dim PGL_6 .
 $$
 
-The gauge is the subject of *The Frame, the Simple Nilpotents and the Gauge*. The two counts meet because the frame is $PGL_6$ itself: a root is a point of $PGL_6/T$ and a gauge is a point of $T$.
+The gauge is the subject of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$*. The two counts meet because the frame is $PGL_6$ itself: a root is a point of $PGL_6/T$ and a gauge is a point of $T$.
 
 ## The Order-Two Case
 
@@ -453,9 +453,9 @@ The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; 
 ## Further Reading
 
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the product, the trace, the determinant and the group $PGL_6$.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m6c.html), for the decomposition of $M_6$ by the six projectors and the coarse split by one of them.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the nilpotents $E_{12},\dots,E_{56}$ and the five-parameter gauge.
-- [The Two Chiralities](the-two-chiralities-of-m6c.html), for the $3+3$ split and the mass block.
+- [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the decomposition of $M_6$ by the six projectors and the coarse split by one of them.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the nilpotents $E_{12},\dots,E_{56}$ and the five-parameter gauge.
+- [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the $3+3$ split and the mass block.
 - [Primitive Idempotents and Minimal Left Ideals](primitive-idempotents-and-minimal-left-ideals.html), for the general theory of the idempotents and the modules they generate.
 - [Idempotents and Involutions of an Algebra](idempotents-and-involutions-of-an-algebra.html), for the correspondence between idempotents and involutions in the general case.
 - [Complementary Idempotents and the Peirce Decomposition](complementary-idempotents-and-the-peirce-decomposition.html), for the Peirce decomposition relative to a complete orthogonal family.
@@ -463,3 +463,4 @@ The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; 
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for the partial flags and the Grassmannians used in the coarse splits.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the representation of $\mathbb{Z}/6$ and the discrete Fourier decomposition of a cyclic group.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the spectral theorem, the Lagrange interpolation formula and the trace of a projection.
+- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the general construction at order $n$.

@@ -184,7 +184,7 @@ $$
 \tilde Q=2Q_t\,uw,\qquad u^2=w^2=0.
 $$
 
-The idempotents, their classification and their Peirce systems are *The Peirce Decomposition*; the factorisation is recorded here because it places the non-pure zero divisors in the same Peirce framework as the pure ones.
+The idempotents, their classification and their Peirce systems are *The Peirce Decomposition of the Biquaternion Algebra*; the factorisation is recorded here because it places the non-pure zero divisors in the same Peirce framework as the pure ones.
 
 **Theorem (the zero-divisor set).** The set
 
@@ -259,7 +259,7 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 
 ## Further Reading
 
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quadratic condition $B^2$, the spectral-degenerate cone and the behaviour on it.
+- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the quadratic condition $B^2$, the spectral-degenerate cone and the behaviour on it.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the norm with the spectral condition, the four sectors and the information each invariant carries.
 - [The N-Regular Sector](the-n-regular-sector.html), for the unit group as a sector, its matrix model, its topology and its two spectral cells.
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the null cone, its three strata, its link and its degenerate polar decomposition.
@@ -268,8 +268,8 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the complex-valued norm of the biquaternion algebra.
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the norm and its axioms.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the definition of an algebraic norm and the separation of the four.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce factorisation of the strata.
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the isomorphism $\mathsf M_2$, the determinant, the trace, the rank-one elements and the contraction of their factors.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the Peirce factorisation of the strata.
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the isomorphism $\mathsf M_2$, the determinant, the trace, the rank-one elements and the contraction of their factors.
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the topology of $\mathbb{B}^{\times}$, its maximal compact subgroup and its homotopy.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the zero-divisor set and its criterion for the general quaternionic product.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the comparison of the zero-divisor sets of the twelve products.

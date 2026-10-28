@@ -1,4 +1,4 @@
-# __The Element, the Coordinates and the Trace__
+# __The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -16,9 +16,9 @@ $$
 
 the sum of the diagonal coordinates. It is the unique (up to scale) linear form invariant under conjugation, and it defines the trace pairing $\langle A,B\rangle=\operatorname{tr}(AB)$, a symmetric nondegenerate complex bilinear form.
 
-This article develops the element from the coordinate side: the matrix units and the coordinates, the real and complex readings, the trace as an invariant linear form, the trace pairing and its dual, the hyperplane $\mathfrak{sl}_5$ of traceless matrices, and the Jordan decomposition $A=S+N$ with its trace. The trace pairing is **not** the positive definite form of the Hilbert space; that form is $\operatorname{tr}(A^*B)$, defined with the conjugate transpose in *The Involution and the Hermitian Structure*. The present article uses the complex bilinear pairing of the algebra, the one that pairs $E_{ij}$ with $E_{ji}$.
+This article develops the element from the coordinate side: the matrix units and the coordinates, the real and complex readings, the trace as an invariant linear form, the trace pairing and its dual, the hyperplane $\mathfrak{sl}_5$ of traceless matrices, and the Jordan decomposition $A=S+N$ with its trace. The trace pairing is **not** the positive definite form of the Hilbert space; that form is $\operatorname{tr}(A^*B)$, defined with the conjugate transpose in *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*. The present article uses the complex bilinear pairing of the algebra, the one that pairs $E_{ij}$ with $E_{ji}$.
 
-The article assumes the matrix algebra of *The Matrix Algebra $M_5(\mathbb{C})$* and the root of *Roots of Unity and the Lagrange Idempotents*. The Jordan decomposition is stated and proved in the finite-dimensional case; the spectral theorem for the Hermitian form, the polar decomposition and the exponential are later articles.
+The article assumes the matrix algebra of *The Matrix Algebra $M_5(\mathbb{C})$* and the root of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$*. The Jordan decomposition is stated and proved in the finite-dimensional case; the spectral theorem for the Hermitian form, the polar decomposition and the exponential are later articles.
 
 ## The Coordinates
 
@@ -150,7 +150,7 @@ $$
 
 **Proof.** The second identity is exactly the skew-adjointness.
 
-**Remark.** **The trace pairing is indefinite.** It is a complex bilinear form, not a Hermitian form; $\langle A,A\rangle=\operatorname{tr}(A^2)$ can be zero for a nonzero nilpotent $A$. The positive definite form is $\operatorname{tr}(A^*B)$, which uses the conjugate transpose and is treated in *The Involution and the Hermitian Structure*. The trace pairing is the algebraic pairing of the Frobenius algebra; the definite form is the metric of the Hilbert space.
+**Remark.** **The trace pairing is indefinite.** It is a complex bilinear form, not a Hermitian form; $\langle A,A\rangle=\operatorname{tr}(A^2)$ can be zero for a nonzero nilpotent $A$. The positive definite form is $\operatorname{tr}(A^*B)$, which uses the conjugate transpose and is treated in *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*. The trace pairing is the algebraic pairing of the Frobenius algebra; the definite form is the metric of the Hilbert space.
 
 ## The Jordan Decomposition
 
@@ -273,6 +273,6 @@ The algebra splits as $\mathbb{C}I\oplus\mathfrak{sl}_5$, of dimensions $1+24$. 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the trace form, the invariant linear forms and the Frobenius algebra structure.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the Killing form, the trace form of $\mathfrak{gl}_5$ and the adjoint action.
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra, the matrix units and the trace.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the conjugate transpose and the positive definite form $\operatorname{tr}(A^*B)$.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m5c.html), for the determinant, the norm and the singular set.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m5c.html), for the exponential map and the identity $\det(e^A)=e^{\operatorname{tr}A}$.
+- [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the conjugate transpose and the positive definite form $\operatorname{tr}(A^*B)$.
+- [The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m5c.html), for the determinant, the norm and the singular set.
+- [The Exponential and the Lie Group of $M_5(\mathbb{C})$](the-exponential-and-the-lie-group-of-m5c.html), for the exponential map and the identity $\det(e^A)=e^{\operatorname{tr}A}$.

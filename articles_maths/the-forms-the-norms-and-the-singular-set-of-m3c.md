@@ -19,9 +19,9 @@ $$
 $$
 The article defines the three norms, proves the inequalities and the singular-value description, describes the singular set and its rank strata, and compares the definite trace form with the null cone of the biquaternion algebra.
 
-The comparison is the point of the article. The trace form $\operatorname{tr}(A^{*}B)$ of *The Involution and the Hermitian Structure* is positive definite, so its only isotropic vector is $0$ and it has no null cone. The biquaternion algebra has a quadratic form with nonzero isotropic vectors, a genuine null cone, and a link. The determinant zero set of $M_{3}$ is a cone, because the determinant is homogeneous, but it is not the null cone of the trace form: it is a cubic hypersurface, not a quadratic cone, and the form that defines it is not the positive definite one.
+The comparison is the point of the article. The trace form $\operatorname{tr}(A^{*}B)$ of *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$* is positive definite, so its only isotropic vector is $0$ and it has no null cone. The biquaternion algebra has a quadratic form with nonzero isotropic vectors, a genuine null cone, and a link. The determinant zero set of $M_{3}$ is a cone, because the determinant is homogeneous, but it is not the null cone of the trace form: it is a cubic hypersurface, not a quadratic cone, and the form that defines it is not the positive definite one.
 
-The article assumes the trace form and the Frobenius norm of *The Involution and the Hermitian Structure*, the determinant of *The Matrix Algebra $M_{3}(\mathbb{C})$*, and the rank of *The Element, the Coordinates and the Trace*.
+The article assumes the trace form and the Frobenius norm of *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*, the determinant of *The Matrix Algebra $M_{3}(\mathbb{C})$*, and the rank of *The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$*.
 
 ## The Trace Form and the Frobenius Norm
 
@@ -295,11 +295,11 @@ The trace form is positive definite, with isotropic set $\{0\}$; there is no nul
 
 ## Further Reading
 
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m3c.html), for the positive definite trace form and the Frobenius norm.
-- [The Matrix Algebra $M_{3}(\mathbb{C})$](the-matrix-algebra-m3c.html), for the determinant and the rank.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m3c.html), for the trace pairing and the rank.
-- [The Cubic, the Discriminant and the Spectral Strata](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the determinant and the spectral strata.
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the null cone of $\mathbb{B}$.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the zero divisors of $\mathbb{B}$.
+- [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the positive definite trace form and the Frobenius norm.
+- [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the determinant and the rank.
+- [The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m3c.html), for the trace pairing and the rank.
+- [The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the determinant and the spectral strata.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the null cone of $\mathbb{B}$.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the zero divisors of $\mathbb{B}$.
 - [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for the singular values as the eigenvalues of the positive factor.
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant and its geometry.

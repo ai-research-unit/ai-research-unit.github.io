@@ -129,8 +129,8 @@ The left regular representation carries the natural conjugation as the transposi
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the representation and its first properties
-- [$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the further reading of the regular representation
+- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the representation and its first properties
+- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the further reading of the regular representation
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the operators of the form
 - [$M_2(\mathbb{C})$ Representation : The General Quaternionic Sesqualgebra of Biquaternions](the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the companion reading of the group

@@ -1,4 +1,4 @@
-# __The Involution and the Hermitian Structure__
+# __The Involution and the Hermitian Structure of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -34,7 +34,7 @@ $$
 \|A\|_F^2=\operatorname{tr}(A^*A)=\sum_{i,j}|A_{ij}|^2 .
 $$
 
-This is the Hilbert space structure on $M_5(\mathbb{C})\cong\mathbb{C}^{25}\cong\mathbb{R}^{50}$; it is positive definite, and it has **no null cone**. The complex bilinear trace pairing $\operatorname{tr}(AB)$ of *The Element, the Coordinates and the Trace* is a different object; it is indefinite, and its isotropic cone is not the metric.
+This is the Hilbert space structure on $M_5(\mathbb{C})\cong\mathbb{C}^{25}\cong\mathbb{R}^{50}$; it is positive definite, and it has **no null cone**. The complex bilinear trace pairing $\operatorname{tr}(AB)$ of *The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$* is a different object; it is indefinite, and its isotropic cone is not the metric.
 
 The **singular set** of the algebra is the zero locus of the determinant,
 
@@ -209,7 +209,7 @@ $$
 
 **Proof.** A finite-dimensional inner product space is complete, hence a Hilbert space. The left and right actions preserve the form by the proposition; the adjoint action $A\mapsto UAU^{-1}$ is the composition of the left and right actions with $U^{-1}=U^*$, hence $*$-unitary.
 
-**Corollary.** The Hilbert space structure is the one used in *The Polar Decomposition* and *Analysis on $M_5(\mathbb{C})$*: the norm, the inner product and the orthogonal projection onto a subspace are those of the Frobenius form.
+**Corollary.** The Hilbert space structure is the one used in *The Polar Decomposition of $M_5(\mathbb{C})$* and *Analysis on $M_5(\mathbb{C})$*: the norm, the inner product and the orthogonal projection onto a subspace are those of the Frobenius form.
 
 **Proof.** The form is positive definite; the orthogonal projection is defined by the inner product.
 
@@ -291,7 +291,7 @@ $$
 
 **Proof.** The nilpotent matrices satisfy $\operatorname{tr}(A^2)=0$; the trace pairing is indefinite. The Frobenius form is positive definite, so it has no isotropic vectors.
 
-**Remark.** **The singular set is $\det=0$, of real codimension $2$, and it is not a null cone.** The phrase "null cone" belongs to an indefinite bilinear form; the Frobenius form is positive definite and has none. The complex hypersurface $\det=0$ is a codimension-two real obstacle, and the complement $GL_5$ is connected. This is the metric picture of *The Forms, the Norms and the Singular Set*, where the determinant and the norm are treated algebraically.
+**Remark.** **The singular set is $\det=0$, of real codimension $2$, and it is not a null cone.** The phrase "null cone" belongs to an indefinite bilinear form; the Frobenius form is positive definite and has none. The complex hypersurface $\det=0$ is a codimension-two real obstacle, and the complement $GL_5$ is connected. This is the metric picture of *The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$*, where the determinant and the norm are treated algebraically.
 
 ## Summary
 
@@ -342,7 +342,7 @@ The Frobenius form is the Hilbert space structure on $M_5\cong\mathbb{C}^{25}\co
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the involutions of a central simple algebra and the $*$-unitary groups.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form $\mathfrak{u}(5)$, the exponential of a skew-Hermitian matrix and the $*$-unitary group.
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra, the conjugate transpose and the real form.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m5c.html), for the trace, the trace pairing and the Jordan decomposition.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m5c.html), for the determinant and the singular set.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the spectral theorem for Hermitian matrices.
-- [The Polar Decomposition](the-polar-decomposition-of-m5c.html), for the polar decomposition with respect to the Frobenius form.
+- [The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m5c.html), for the trace, the trace pairing and the Jordan decomposition.
+- [The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m5c.html), for the determinant and the singular set.
+- [Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the spectral theorem for Hermitian matrices.
+- [The Polar Decomposition of $M_5(\mathbb{C})$](the-polar-decomposition-of-m5c.html), for the polar decomposition with respect to the Frobenius form.

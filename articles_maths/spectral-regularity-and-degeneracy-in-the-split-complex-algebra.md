@@ -211,7 +211,7 @@ The comparison isolates the plane: in $\mathbb{C}$ the eigenvalues leave $\mathb
 
 ## Further Reading
 
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the cone and its strata.
+- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the cone and its strata.
 - [Split-Quaternion Spectral Theory](split-quaternion-spectral-theory.html), for the cone and its defects.
 - [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the eigenprojections and the regimes.
 - [Eigenbasis of a Split-Complex Number in Matrix Elements Representations](eigenbasis-of-a-split-complex-number-in-matrix-elements-representations.html), for the matrix models.

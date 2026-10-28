@@ -1,4 +1,4 @@
-# __The Forms, the Norms and the Singular Set__
+# __The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -38,7 +38,7 @@ $$
 1,3,5,7,9
 $$
 
-are the dimensions of the adjoint summands of *The Spin Chain and the Adjoint Decomposition*.
+are the dimensions of the adjoint summands of *The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$*.
 
 The Hermitian trace form $\operatorname{tr}(A^*B)$, the Frobenius form, is positive definite and has **no null cone**; the singular set is not a null cone of the metric. The complex bilinear pairing $\operatorname{tr}(AB)$ is indefinite, and its isotropic cone is a different set. The article assumes the matrix algebra, the trace and the involution; it uses the spectral theorem only through the definition of the operator norm, and it proves the basic inequalities directly.
 
@@ -140,7 +140,7 @@ $$
 
 **Proof.** The determinant is the product of the norms of the columns times the volume of the parallelepiped, which is at most $1$; more directly, Hadamard's inequality gives $|\det A|\le\prod_i\|a_i\|_2\le\|A\|_{\mathrm{op}}^5$, because each column has norm at most the operator norm.
 
-**Remark.** **The operator norm is not polynomial.** It is the spectral norm, equal to the square root of the largest eigenvalue of $A^*A$; the spectral theorem for $A^*A$ is *Spectral Theory and the Spectral Projectors*. The inequality with the Frobenius norm is proved here without the spectral theorem, and it is the only comparison needed in this article.
+**Remark.** **The operator norm is not polynomial.** It is the spectral norm, equal to the square root of the largest eigenvalue of $A^*A$; the spectral theorem for $A^*A$ is *Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$*. The inequality with the Frobenius norm is proved here without the spectral theorem, and it is the only comparison needed in this article.
 
 ## The Singular Set
 
@@ -195,7 +195,7 @@ and complex codimension $(5-r)^2$. The exact rank-$r$ stratum $M_5^{(r)}\setminu
 
 **Proof.** The derivative of the determinant vanishes exactly where the adjugate vanishes, i.e., at rank at most $3$; the rank-$4$ points are smooth. The singular locus of $M_5^{(3)}$ is $M_5^{(2)}$, and so on.
 
-**Remark.** **The successive codimensions of the rank strata are the odd numbers $1,3,5,7,9$.** The codimensions are the squares $1,4,9,16,25$; their differences are $3,5,7,9$ and the first is $1$. These are the dimensions of the adjoint summands $V_0,\dots,V_4$ of *The Spin Chain and the Adjoint Decomposition*. The coincidence is a numerical pattern of the two stratifications; the rank strata and the adjoint summands are different objects.
+**Remark.** **The successive codimensions of the rank strata are the odd numbers $1,3,5,7,9$.** The codimensions are the squares $1,4,9,16,25$; their differences are $3,5,7,9$ and the first is $1$. These are the dimensions of the adjoint summands $V_0,\dots,V_4$ of *The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$*. The coincidence is a numerical pattern of the two stratifications; the rank strata and the adjoint summands are different objects.
 
 ### The Singular Locus
 
@@ -225,7 +225,7 @@ and complex codimension $(5-r)^2$. The exact rank-$r$ stratum $M_5^{(r)}\setminu
 
 **Proof.** $\det A=0$ iff $A\in\Sigma$; the analytic norms vanish only at the zero matrix.
 
-**Corollary.** The determinant norm is a **multiplicative form with zeros**, not a norm; the singular set is its zero locus. The two analytic norms are positive definite and have no zeros except $0$; they define the Hilbert space structure of *The Involution and the Hermitian Structure*.
+**Corollary.** The determinant norm is a **multiplicative form with zeros**, not a norm; the singular set is its zero locus. The two analytic norms are positive definite and have no zeros except $0$; they define the Hilbert space structure of *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*.
 
 **Proof.** The multiplicativity and the zeros are the determinant properties; the positivity of the analytic norms is the sum of squares.
 
@@ -271,7 +271,7 @@ The singular set is the determinantal hypersurface of rank at most $4$, of compl
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the determinant, the operator norm, Hadamard's inequality and the singular values.
 - Israel M. Gelfand, Mikhail M. Kapranov and Andrei V. Zelevinsky, *Discriminants, Resultants, and Multidimensional Determinants* (Birkhäuser, 1994), for the determinant as a form, the discriminants and the determinantal varieties.
 - Joe Harris, *Algebraic Geometry: A First Course* (Springer, 1992), for the determinantal varieties, their dimensions and their singular loci.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the positive definite Frobenius form and the real codimension $2$.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m5c.html), for the trace pairing and the determinant.
-- [The Quintic and the Spectral Strata](the-quintic-and-the-spectral-strata-of-m5c.html), for the determinant, the discriminant and the spectral strata.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the spectral theorem and the operator norm as the largest singular value.
+- [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the positive definite Frobenius form and the real codimension $2$.
+- [The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m5c.html), for the trace pairing and the determinant.
+- [The Quintic and the Spectral Strata of $M_5(\mathbb{C})$](the-quintic-and-the-spectral-strata-of-m5c.html), for the determinant, the discriminant and the spectral strata.
+- [Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the spectral theorem and the operator norm as the largest singular value.

@@ -18,9 +18,9 @@ $$
 $$
 It vanishes exactly when two roots coincide, so it is the polynomial that detects the collision of the spectrum. The article computes $\Delta$ in the coefficients and in the entries, describes the three spectral strata by the root multiplicities and their dimensions, proves the centraliser statement for a cyclic element, and treats the spectral projectors at a repeated root, where the Lagrange formula degenerates.
 
-The construction is root-first. For a root $H$ with $H^{3}=I$ and simple spectrum the three eigenvalues are the cube roots of unity, and the Lagrange projectors $P_{1},P_{2},P_{3}$ are the idempotents of *Roots of Unity and the Lagrange Idempotents*. The general element of this article need not be a root: its eigenvalues are arbitrary complex numbers, and the cubic is the general cubic. The root case is the special case $t=0$, $s=0$, $d=1$ up to the ordering of the roots, since $\lambda^{3}-1=0$.
+The construction is root-first. For a root $H$ with $H^{3}=I$ and simple spectrum the three eigenvalues are the cube roots of unity, and the Lagrange projectors $P_{1},P_{2},P_{3}$ are the idempotents of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*. The general element of this article need not be a root: its eigenvalues are arbitrary complex numbers, and the cubic is the general cubic. The root case is the special case $t=0$, $s=0$, $d=1$ up to the ordering of the roots, since $\lambda^{3}-1=0$.
 
-The article uses the trace and the determinant of *The Matrix Algebra $M_{3}(\mathbb{C})$*, the Peirce coordinates of *The Peirce Decomposition of $M_{3}(\mathbb{C})$*, and the Jordan decomposition of *The Element, the Coordinates and the Trace*. The spectral theorem for a single matrix is the content here; the Hermitian spectral theorem is *The Involution and the Hermitian Structure*.
+The article uses the trace and the determinant of *The Matrix Algebra $M_{3}(\mathbb{C})$*, the Peirce coordinates of *The Peirce Decomposition of $M_{3}(\mathbb{C})$*, and the Jordan decomposition of *The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$*. The spectral theorem for a single matrix is the content here; the Hermitian spectral theorem is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*.
 
 ## The Characteristic Cubic
 
@@ -49,7 +49,7 @@ The trace identity $s=\tfrac12(t^{2}-\operatorname{tr}A^{2})$ follows by expandi
 $$
 \chi_{H}(\lambda)=\lambda^{3}-1,
 $$
-with $t=0$, $s=0$, $d=1$. The three Lagrange projectors of *Roots of Unity and the Lagrange Idempotents* are the spectral projectors of this cubic. The general cubic of this article is the deformation of $\lambda^{3}-1$ in which the three roots move independently.
+with $t=0$, $s=0$, $d=1$. The three Lagrange projectors of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$* are the spectral projectors of this cubic. The general cubic of this article is the deformation of $\lambda^{3}-1$ in which the three roots move independently.
 
 **The trace and the determinant of the roots.** By Vieta,
 $$
@@ -187,7 +187,7 @@ The centraliser of a generic element is three-dimensional in all three cases; th
 $$
 P_{k}=\prod_{l\neq k}\frac{A-\lambda_{l}I}{\lambda_{k}-\lambda_{l}},\qquad k=1,2,3,
 $$
-with $P_{k}^{2}=P_{k}$, $P_{k}P_{l}=0$ for $k\neq l$, $\sum_{k}P_{k}=I$, and $AP_{k}=\lambda_{k}P_{k}$. They are the spectral projectors of *Roots of Unity and the Lagrange Idempotents*, with the cube roots replaced by the three eigenvalues.
+with $P_{k}^{2}=P_{k}$, $P_{k}P_{l}=0$ for $k\neq l$, $\sum_{k}P_{k}=I$, and $AP_{k}=\lambda_{k}P_{k}$. They are the spectral projectors of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*, with the cube roots replaced by the three eigenvalues.
 
 **The double root.** Suppose the spectrum is $\{a,a,b\}$ with $a\neq b$. The Lagrange formula on the **distinct** eigenvalues gives
 $$
@@ -270,10 +270,10 @@ At a simple spectrum the Lagrange projectors are the spectral projectors. At a d
 
 ## Further Reading
 
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the root case and the Lagrange projectors.
-- [The Matrix Algebra $M_{3}(\mathbb{C})$](the-matrix-algebra-m3c.html), for the trace, the determinant and Cayley–Hamilton.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m3c.html), for the Jordan decomposition.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m3c.html), for the Dunford calculus.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m3c.html), for the Hermitian spectral theorem.
+- [Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the root case and the Lagrange projectors.
+- [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the trace, the determinant and Cayley–Hamilton.
+- [The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m3c.html), for the Jordan decomposition.
+- [Spectral Theory and the Spectral Projectors of $M_3(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m3c.html), for the Dunford calculus.
+- [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the Hermitian spectral theorem.
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the general spectral theory.
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant and its properties.

@@ -163,8 +163,8 @@ The four involutions become the transpose, the entrywise conjugation, the conjug
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Representation : The Six Subspaces as Matrix Conditions](m4c-representation-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
-- [$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the relation with the right matrix
+- [$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions](m4c-representation-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
+- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the relation with the right matrix
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the $2\times2$ dictionary
 - [The Group of Involutions](the-group-of-involutions.html), for the abstract involutions
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the operator-level adjoints

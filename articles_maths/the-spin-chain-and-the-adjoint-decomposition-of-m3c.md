@@ -1,4 +1,4 @@
-# __The Spin Chain and the Adjoint Decomposition__
+# __The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ by exhibiting one highest-weight vector for each summand and checking that their
 
 **The carrier is not a Peirce line.** The Peirce lines of *The Peirce Decomposition of $M_{3}(\mathbb{C})$* are one-dimensional subspaces of the algebra. The carrier is the three-dimensional minimal left ideal $M_{3}P_{k}\cong\mathbb{C}^{3}$, a module over the algebra. The spin chain runs through the carrier, not through a list of Peirce elements. For $n=3$ the carrier has spin one; only the biquaternion case $n=2$ has a spinorial carrier.
 
-The article assumes the matrix units and the trace of *The Matrix Algebra $M_{3}(\mathbb{C})$*, and the frame of *The Frame, the Simple Nilpotents and the Gauge*. The triplet is developed on its own in *The Triplet: Spin One and the Adjoint $1+3+5$*.
+The article assumes the matrix units and the trace of *The Matrix Algebra $M_{3}(\mathbb{C})$*, and the frame of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*. The triplet is developed on its own in *The Triplet: Spin One and the Adjoint $1+3+5$ of $M_3(\mathbb{C})$*.
 
 ## The Copy of $\mathfrak{su}_{2}$
 
@@ -359,10 +359,11 @@ The $1$ is the trace line, the $3$ is the spin-one summand isomorphic to the car
 
 ## Further Reading
 
-- [The Triplet: Spin One and the Adjoint $1+3+5$](the-triplet-spin-one-and-the-adjoint-of-m3c.html), for the triplet read on its own.
+- [The Triplet: Spin One and the Adjoint $1+3+5$ of $M_3(\mathbb{C})$](the-triplet-spin-one-and-the-adjoint-of-m3c.html), for the triplet read on its own.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the Peirce lines and the carrier.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the matrix units.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the matrix units.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the trace and the matrix units.
 - [Representations of Lie Algebras](representations-of-lie-algebras.html), for the highest-weight classification used in the proof.
 - [The Spin of a Biquaternion](the-spin-of-a-biquaternion.html), for the spinorial case $n=2$.
 - [Root Systems and Classification](root-systems-and-classification.html), for the root system $A_{2}$.
+- [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the general construction at order $n$.

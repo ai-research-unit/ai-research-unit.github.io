@@ -1,4 +1,4 @@
-# __The Peirce Decomposition and the Corner Recursion__
+# __The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,25 +6,25 @@
 
 The article states both cuts and the multiplication rule between the corners, proves the corner isomorphisms, and reads the recursion that orders the categories $M_3$, $M_4$, $M_5$, $M_6$. It also states what the decomposition is not: a direct-sum decomposition of the algebra into subspaces, not a list of spinors.
 
-The idempotents come from *Roots of Unity and the Lagrange Idempotents*; the vectors inside the corner lines and the gauge that acts on them are *The Frame, the Simple Nilpotents and the Gauge*.
+The idempotents come from *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$*; the vectors inside the corner lines and the gauge that acts on them are *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*.
 
 ## The Spectral Flag
 
-**A root with simple spectrum produces a complete flag, and the flag is what the Peirce decomposition depends on.** Let $H^{n}=I$ have simple spectrum, with projectors $P_k$ and eigenvalues $\zeta_k$, $k=0,\dots,n-1$. Put $V_k=\operatorname{im}P_k$, a line. The $V_k$ are independent and sum to $\mathbb{C}^{n}$, and the partial sums
+**A root with simple spectrum produces a complete flag, and the flag is what the Peirce decomposition depends on.** Let $H^{n}=I$ have simple spectrum, with projectors $P_k$ and eigenvalues $\zeta_k$, $k=1,\dots,n$. Put $V_k=\operatorname{im}P_k$, a line. The $V_k$ are independent and sum to $\mathbb{C}^{n}$, and the partial sums
 
 $$
-F_k=V_0\oplus V_1\oplus\cdots\oplus V_k,\qquad k=0,\dots,n-1,
+F_k=V_1\oplus V_2\oplus\cdots\oplus V_k,\qquad k=1,\dots,n,
 $$
 
 form the complete flag
 
 $$
-0\subset F_0\subset F_1\subset\cdots\subset F_{n-1}=\mathbb{C}^{n},\qquad \dim F_k=k+1.
+0\subset F_1\subset F_2\subset\cdots\subset F_n=\mathbb{C}^{n},\qquad \dim F_k=k.
 $$
 
-**The flag is spectral, not standard.** The standard flag of *The Matrix Algebra $M_n(\mathbb{C})$* is the case $V_k=\mathbb{C}e_k$, that is, $H=\operatorname{diag}(\zeta_0,\dots,\zeta_{n-1})$. Every other root gives a flag in general position with respect to the standard one. The construction depends only on the flag, so it is invariant under a change of basis that keeps $H$.
+**The flag is spectral, not standard.** The standard flag of *The Matrix Algebra $M_n(\mathbb{C})$* is the case $V_k=\mathbb{C}e_k$, that is, $H=\operatorname{diag}(\zeta_1,\dots,\zeta_n)$. Every other root gives a flag in general position with respect to the standard one. The construction depends only on the flag, so it is invariant under a change of basis that keeps $H$.
 
-**Different roots, different flags.** The map $H\mapsto F$ is the projection $PGL_n(\mathbb{C})/T\to PGL_n(\mathbb{C})/B$ from the root set to the flag variety. Its fibre is the gauge of *The Frame, the Simple Nilpotents and the Gauge*: the root fixes the flag, and the gauge fixes the vectors inside the lines.
+**Different roots, different flags.** The map $H\mapsto F$ is the projection $PGL_n(\mathbb{C})/T\to PGL_n(\mathbb{C})/B$ from the root set to the flag variety. Its fibre is the gauge of *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*: the root fixes the flag, and the gauge fixes the vectors inside the lines.
 
 ## The Peirce Lines
 
@@ -37,7 +37,7 @@ $$
 **Proposition.** Each $A_{kl}$ is a complex line, the lines are independent and sum to the algebra,
 
 $$
-M_n(\mathbb{C})=\bigoplus_{k,l=0}^{n-1}A_{kl},\qquad \dim_{\mathbb{C}}A_{kl}=1,
+M_n(\mathbb{C})=\bigoplus_{k,l=1}^{n}A_{kl},\qquad \dim_{\mathbb{C}}A_{kl}=1,
 $$
 
 and the product obeys
@@ -167,7 +167,7 @@ The rank-one row is the full Peirce decomposition seen from one line: $1$ for th
 
 **The Peirce decomposition is a direct-sum decomposition of the algebra, not a list of spinors.** The summands $A_{kl}$ are spaces of linear maps between the lines of a flag. An element of $A_{kl}$ is a map $V_l\to V_k$, not a spinor. The decomposition is a statement about the algebra as a module over itself, not about a representation of a spin group.
 
-**Not every Peirce element is a spinor.** The corner $A_{kl}$ is one-dimensional, and every nonzero element of it is a map of rank one between two lines. Calling such an element a spinor would make every matrix unit a spinor, which is false. A spinor, where the word applies, is a vector of the carrier module of the spin chain, introduced in *The Spin Chain and the Adjoint Decomposition*; it is not an element of a Peirce corner.
+**Not every Peirce element is a spinor.** The corner $A_{kl}$ is one-dimensional, and every nonzero element of it is a map of rank one between two lines. Calling such an element a spinor would make every matrix unit a spinor, which is false. A spinor, where the word applies, is a vector of the carrier module of the spin chain, introduced in *The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$*; it is not an element of a Peirce corner.
 
 **The carrier is not a corner.** For $n=2$ the carrier is $\mathbb{C}^{2}$, isomorphic to a minimal left ideal; for $n\ge3$ the carrier is $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$, of dimension $n$, and it is not isomorphic to any Peirce corner. The corner $A_{kl}$ has dimension $1$ for every $n$; the carrier has dimension $n$. They never coincide in dimension for $n\ge2$.
 
@@ -181,7 +181,7 @@ A root with simple spectrum gives a complete flag, and the Peirce corners $A_{kl
 |---|---|
 | $P_k$ | the Lagrange projector of $\zeta_k$, of rank $1$ |
 | $V_k=\operatorname{im}P_k$ | the $k$-th spectral line |
-| $F_k$ | the partial sum $V_0\oplus\cdots\oplus V_k$ |
+| $F_k$ | the partial sum $V_1\oplus\cdots\oplus V_k$ |
 | $A_{kl}=P_kM_nP_l$ | the Peirce corner, a line |
 | $\Pi$, $Q=I-\Pi$ | a coarse idempotent of rank $p$ and its complement |
 | $A,B,C,D$ | the four coarse corners $\Pi M\Pi$, $\Pi MQ$, $QM\Pi$, $QMQ$ |
@@ -191,7 +191,11 @@ A root with simple spectrum gives a complete flag, and the Peirce corners $A_{kl
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce decompositions, corner algebras and the multiplication table.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for block matrices, ranks and the spectral decomposition.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the idempotents that produce the flag.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the vectors inside the corner lines.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the carrier, which is not a corner.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$, where the coarse and the fine splits coincide.
+- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the idempotents that produce the flag.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the vectors inside the corner lines.
+- [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the carrier, which is not a corner.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$, where the coarse and the fine splits coincide.
+- [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), the case $n=3$.
+- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), the case $n=4$.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), the case $n=5$.
+- [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), the case $n=6$.

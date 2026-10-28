@@ -135,7 +135,7 @@ On the remarkable real subspaces the general quaternionic sesquilinear form carr
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form, its coefficient Gram matrix and its inertia.
 - [The K-Degenerate Sector](the-krein-norm-degenerate-sector.html), for the null set, the doubly null lines and the Witt index.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces and their bases
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces and their bases
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the definite companion reading of the same six
 - [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the norm reading of the same six
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms on the remarkable subspaces side by side

@@ -280,7 +280,7 @@ For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s
 
 ## Further Reading
 
-- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little groups and the Casimir classification.
+- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little groups and the Casimir classification.
 - Eugene P. Wigner, "Relativistic invariance and quantum phenomena," *Reviews of Modern Physics* **29** (1957) 255–268, for the physical interpretation of the little group and its representations.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the one-particle representations, the Pauli–Lubanski vector, and the little-group construction.
 - Asher Peres, Petra F. Scudo, and Daniel R. Terno, "Quantum entropy and special relativity," *Physical Review Letters* **88** (2002) 230402, for the frame dependence of the reduced spin entropy.

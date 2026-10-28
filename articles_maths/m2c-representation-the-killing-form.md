@@ -269,6 +269,6 @@ The Killing form of $\mathfrak{gl}_2(\mathbb{C})$ read over $\mathbb{R}$ is $\ka
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Killing form of the algebra and its signature
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the plain form and its signature
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the trace pairing
-- [$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser](m2c-representation-the-centraliser-and-the-double-centraliser.html), for the commutant and the centre
+- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-representation-the-centraliser-and-the-double-centraliser.html), for the commutant and the centre
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the automorphism group and its action
 - [Structure of Lie Algebras](structure-of-lie-algebras.html), for the general theory of the Killing form and semisimplicity

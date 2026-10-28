@@ -415,7 +415,7 @@ The degeneracy case is the spectral-degenerate cone $B^2=0$, of complex dimensio
 
 ## Further Reading
 
-- [The Jordan–Chevalley Decomposition of a Biquaternion](the-jordan-chevalley-decomposition-of-a-biquaternion.html), for the four types as the semisimple and nilpotent split, the Peirce corner pattern and the multiplicative form.
+- [The Semisimple–Nilpotent Split](the-jordan-chevalley-decomposition-of-a-biquaternion.html), for the four types as the semisimple and nilpotent split, the Peirce corner pattern and the multiplicative form.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction, the normalisation, the expansion of every biquaternion and the spinor reading.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the null cone and the spectral-degenerate cone, the four sectors, the two decompositions and the two operator loci.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unipotent stratum inside the unit group.

@@ -4,7 +4,7 @@
 
 The **matrix algebra** $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices under the product. It is the ambient algebra of this category: the root, the idempotents, the Peirce corners, the frame, the spin chain and the chiralities are all structures on it. This article fixes the algebra itself: the matrix units, the trace, the determinant, the centre, the simplicity, the real dimension, the unit group $GL_4(\mathbb{C})$ and the projective group $PGL_4(\mathbb{C})$.
 
-Throughout, $M_4=M_4(\mathbb{C})=\operatorname{End}(\mathbb{C}^4)$, $I$ is the identity, and $A^*=\bar A^{\mathsf T}$ is the conjugate transpose. No positive definite form, no norm and no topology are used; the positive definite trace form and the topology are *The Involution and the Hermitian Structure* and *The Topology of $M_4(\mathbb{C})$*. The element, its coordinates and the trace are *The Element, the Coordinates and the Trace*.
+Throughout, $M_4=M_4(\mathbb{C})=\operatorname{End}(\mathbb{C}^4)$, $I$ is the identity, and $A^*=\bar A^{\mathsf T}$ is the conjugate transpose. No positive definite form, no norm and no topology are used; the positive definite trace form and the topology are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$* and *The Topology of $M_4(\mathbb{C})$*. The element, its coordinates and the trace are *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*.
 
 The algebra is **central simple** of complex dimension $16$ and real dimension $32$. It has centre $\mathbb{C}I$, no proper two-sided ideal, and many zero divisors. Its unit group is $GL_4(\mathbb{C})$, of complex dimension $16$; its projective group is $PGL_4(\mathbb{C})$, of complex dimension $15$. The group $PGL_4$ is the group of frames modulo overall scale, and it is the group that acts on the root and on the gauge in the articles that follow.
 
@@ -59,7 +59,7 @@ AB=\sum_{i,j,k,l}A_{ij}B_{kl}E_{ij}E_{kl}
 =\sum_{i,l}\Bigl(\sum_{j=1}^{4}A_{ij}B_{jl}\Bigr)E_{il}.
 $$
 
-This is the matrix product. It is the formula that the Peirce coordinates generalize to an arbitrary frame in *The Peirce Decomposition*.
+This is the matrix product. It is the formula that the Peirce coordinates generalize to an arbitrary frame in *The Peirce Decomposition of $M_4(\mathbb{C})$*.
 
 **The opposite algebra.** The map $A\mapsto A^{\mathsf T}$ is an anti-automorphism, $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$, and it is an isomorphism $M_4\to M_4^{\mathrm{op}}$. The algebra is isomorphic to its opposite, as every matrix algebra is.
 
@@ -142,7 +142,7 @@ $$
 (A,B)\longmapsto\operatorname{tr}(AB)
 $$
 
-is symmetric and non-degenerate, because $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$ and the matrix of the pairing in the unit basis is a permutation matrix. It is not positive definite: $\operatorname{tr}(A^2)$ can be negative for real $A$, and it can be zero for $A\ne0$. The positive definite form is $\operatorname{tr}(A^*B)$, and it is a different object; it belongs to *The Involution and the Hermitian Structure*.
+is symmetric and non-degenerate, because $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$ and the matrix of the pairing in the unit basis is a permutation matrix. It is not positive definite: $\operatorname{tr}(A^2)$ can be negative for real $A$, and it can be zero for $A\ne0$. The positive definite form is $\operatorname{tr}(A^*B)$, and it is a different object; it belongs to *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*.
 
 ## The Centre and the Simplicity
 
@@ -188,7 +188,7 @@ $$
 \Sigma=\{A:\det A=0\}
 $$
 
-is the zero locus of the determinant, a complex hypersurface of complex dimension $15$, hence of real codimension $2$. Its complement is the open dense group $GL_4(\mathbb{C})$. The stratification by rank and the singular set are *The Forms, the Norms and the Singular Set*.
+is the zero locus of the determinant, a complex hypersurface of complex dimension $15$, hence of real codimension $2$. Its complement is the open dense group $GL_4(\mathbb{C})$. The stratification by rank and the singular set are *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*.
 
 ## The Groups
 
@@ -250,7 +250,7 @@ $$
 16-10=6.
 $$
 
-The spectral flag of a root is a point of this variety; the geometry of all flags is *The Geometry of the Idempotents* and *The Adjoint Action, the Orbits and the Flag Variety*.
+The spectral flag of a root is a point of this variety; the geometry of all flags is *The Geometry of the Idempotents of $M_4(\mathbb{C})$* and *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*.
 
 ## The Real Structure
 
@@ -301,7 +301,7 @@ $$
 U(4)=\{U:U^*U=I\},
 $$
 
-of real dimension $16$, and the **special $*$-unitary group** is $SU(4)=U(4)\cap SL_4(\mathbb{C})$, of real dimension $15$. The projective $*$-unitary group $PU(4)=U(4)/U(1)$ is a maximal compact subgroup of $PGL_4(\mathbb{C})$. These groups are used in *The Polar Decomposition* and *The Exponential and the Lie Group*; the present article only records the real structure.
+of real dimension $16$, and the **special $*$-unitary group** is $SU(4)=U(4)\cap SL_4(\mathbb{C})$, of real dimension $15$. The projective $*$-unitary group $PU(4)=U(4)/U(1)$ is a maximal compact subgroup of $PGL_4(\mathbb{C})$. These groups are used in *The Polar Decomposition of $M_4(\mathbb{C})$* and *The Exponential and the Lie Group of $M_4(\mathbb{C})$*; the present article only records the real structure.
 
 **No positive definite form is used.** The Hermitian involution defines the positive definite trace form $\operatorname{tr}(A^*B)$ on the real space, but this article does not use it. The algebraic statements above — centre, simplicity, trace, determinant, groups — are independent of any form. The one form that does appear, the bilinear pairing $\operatorname{tr}(AB)$, is indefinite and is not the Hermitian form.
 
@@ -373,7 +373,7 @@ $$
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $GL_4$, $SL_4$, $U(4)$ and their Lie algebras.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the general algebra at order $n$.
 - [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the four-dimensional regular model and its different trace and determinant.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root that produces the idempotents.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m4c.html), for the sixteen corners of the full algebra.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m4c.html), for the element and its trace.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m4c.html), for the positive definite trace form.
+- [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root that produces the idempotents.
+- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the sixteen corners of the full algebra.
+- [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the element and its trace.
+- [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the positive definite trace form.

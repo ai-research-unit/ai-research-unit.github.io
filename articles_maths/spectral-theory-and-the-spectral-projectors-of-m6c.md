@@ -1,4 +1,4 @@
-# __Spectral Theory and the Spectral Projectors__
+# __Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -22,7 +22,7 @@ $$
 
 They are idempotent, orthogonal, sum to the identity, and their images are the generalized eigenspaces. At a simple spectrum they are the Lagrange projectors; at a repeated root the individual Lagrange projectors have poles, while the cluster projectors and the Dunford calculus survive.
 
-The article assumes the characteristic polynomial and the strata of *The Sextic and the Spectral Strata* and the Jordan decomposition of *The Element, the Coordinates and the Trace*. It uses the holomorphic functional calculus; the contour integrals are those of *The Sextic and the Spectral Strata*, but the emphasis here is the resolvent and the spectral radius. The Hermitian spectral theorem is *The Involution and the Hermitian Structure*; the exponential is *The Exponential and the Lie Group*.
+The article assumes the characteristic polynomial and the strata of *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$* and the Jordan decomposition of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$*. It uses the holomorphic functional calculus; the contour integrals are those of *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*, but the emphasis here is the resolvent and the spectral radius. The Hermitian spectral theorem is *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$*; the exponential is *The Exponential and the Lie Group of $M_6(\mathbb{C})$*.
 
 ## The Spectrum and the Resolvent
 
@@ -135,7 +135,7 @@ $$
 r(A)\le\lVert A\rVert_\infty\le\lVert A\rVert_2\le\lVert A\rVert_1 .
 $$
 
-**Proof.** Every eigenvalue satisfies $\lvert\lambda\rvert\le\lVert A\rVert$ for an induced norm: if $Ax=\lambda x$ with $\lVert x\rVert=1$, then $\lvert\lambda\rvert=\lVert Ax\rVert\le\lVert A\rVert$. The norm inequalities are those of *The Forms, the Norms and the Singular Set*.
+**Proof.** Every eigenvalue satisfies $\lvert\lambda\rvert\le\lVert A\rVert$ for an induced norm: if $Ax=\lambda x$ with $\lVert x\rVert=1$, then $\lvert\lambda\rvert=\lVert Ax\rVert\le\lVert A\rVert$. The norm inequalities are those of *The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$*.
 
 **Theorem (the Neumann criterion).** The following are equivalent:
 
@@ -440,11 +440,11 @@ At a simple spectrum the projectors are the Lagrange projectors $P_i=\prod_{j\ne
 
 ## Further Reading
 
-- [The Sextic and the Spectral Strata](the-sextic-and-the-spectral-strata-of-m6c.html), for the characteristic polynomial, the strata and the degeneration.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m6c.html), for the Jordan decomposition.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the Hermitian spectral theorem.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m6c.html), for the exponential as a Dunford calculus.
-- [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the spectral theory of $A^*A$.
+- [The Sextic and the Spectral Strata of $M_6(\mathbb{C})$](the-sextic-and-the-spectral-strata-of-m6c.html), for the characteristic polynomial, the strata and the degeneration.
+- [The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m6c.html), for the Jordan decomposition.
+- [The Involution and the Hermitian Structure of $M_6(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m6c.html), for the Hermitian spectral theorem.
+- [The Exponential and the Lie Group of $M_6(\mathbb{C})$](the-exponential-and-the-lie-group-of-m6c.html), for the exponential as a Dunford calculus.
+- [The Polar Decomposition of $M_6(\mathbb{C})$](the-polar-decomposition-of-m6c.html), for the spectral theory of $A^*A$.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the characteristic polynomial and Cayley–Hamilton.
 - [Holomorphic Functional Calculus](holomorphic-functional-calculus.html), for the Dunford calculus in a Banach algebra.
 - Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 1995), for the resolvent and the spectral projectors at a coalescence.

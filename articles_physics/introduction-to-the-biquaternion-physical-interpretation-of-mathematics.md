@@ -105,8 +105,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [Nilpotents](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html)
 - [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html)
-- [The Peirce Decomposition](../articles_maths/ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html)
-- [The Spinor Spaces](../articles_maths/the-spinor-spaces.html)
+- [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-in-the-biquaternion-algebra.html)
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
 - [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
 - [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
 

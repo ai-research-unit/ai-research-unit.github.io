@@ -1,4 +1,4 @@
-# __The Operators of the Peirce Decomposition__
+# __The Operators of the Peirce Decomposition of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -29,7 +29,7 @@ $$
 
 with the transpose as an anti-automorphism and the transpose-inverse as the outer automorphism of the Lie algebra $\mathfrak{sl}_6$.
 
-The article assumes the Peirce decomposition of *The Peirce Decomposition* and the tensor product of *The Modules and the Minimal Left Ideals*. It uses no form and no topology. The adjoint action and the orbits are *The Adjoint Action, the Orbits and the Flag Variety*; the derivations of the biquaternion algebra are *Biquaternion Automorphisms and Derivations*.
+The article assumes the Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$* and the tensor product of *The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$*. It uses no form and no topology. The adjoint action and the orbits are *The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$*; the derivations of the biquaternion algebra are *Biquaternion Automorphisms and Derivations*.
 
 ## The Multiplication Operators
 
@@ -490,8 +490,8 @@ The derivations are the inner ones $\operatorname{ad}_a$, with kernel the scalar
 
 ## Further Reading
 
-- [The Peirce Decomposition](the-peirce-decomposition-of-m6c.html), for the corners and the multiplication rule.
+- [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the corners and the multiplication rule.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the derivations and the automorphisms.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the inner automorphisms as a group action.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the left and right regular modules.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the inner automorphisms as a group action.
+- [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the left and right regular modules.
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the rank-one case.

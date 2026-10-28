@@ -4,7 +4,7 @@
 
 The algebra $M_5(\mathbb{C})$ is the algebra of complex $5\times5$ matrices with the ordinary product. It is the model on which every structure of this category is read: the root $H$, the Lagrange idempotents, the Peirce lines, the frame, the spin chain and the adjoint action are all structures on this one algebra. This article fixes the algebra itself: the matrix units and their product rule, the trace and the determinant, the centre, the simplicity, the real dimension $50$, the unit group $GL_5(\mathbb{C})$, the projective group $PGL_5(\mathbb{C})$ of complex dimension $24$, and the reading of the algebra as the complexification of the real Lie algebra $\mathfrak{u}(5)$.
 
-The article uses **no form and no topology**. The conjugate transpose appears only to exhibit the real form $\mathfrak{u}(5)$ and the Hermitian and skew-Hermitian parts; the positive definite trace form, the Frobenius norm and the $*$-unitary group as a metric object are *The Involution and the Hermitian Structure*. The determinant is used as a polynomial and as the criterion of invertibility, not as a volume. The root and the idempotents are later articles; the algebra is their common ground.
+The article uses **no form and no topology**. The conjugate transpose appears only to exhibit the real form $\mathfrak{u}(5)$ and the Hermitian and skew-Hermitian parts; the positive definite trace form, the Frobenius norm and the $*$-unitary group as a metric object are *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*. The determinant is used as a polynomial and as the criterion of invertibility, not as a volume. The root and the idempotents are later articles; the algebra is their common ground.
 
 The article assumes the general theory of associative algebras of *Associative Algebras* and *Matrix Algebras*: the matrix units, the trace, the determinant, the centre and the two-sided ideals. It proves the facts in the case $n=5$ so that the rest of the category can cite them without returning to the general theory.
 
@@ -103,7 +103,7 @@ $$
 
 **Proof.** It is symmetric because $\operatorname{tr}(AB)=\operatorname{tr}(BA)$. If $\operatorname{tr}(AB)=0$ for every $B$, choose $B=E_{ji}$; then $\operatorname{tr}(AE_{ji})=A_{ij}$, so every entry of $A$ is zero. The same argument with $A$ and $B$ exchanged gives nondegeneracy in the second slot.
 
-**Remark.** The pairing is **not** positive definite, and it is not a Hermitian form: it is complex bilinear, and $\operatorname{tr}(A^2)$ can vanish for a nonzero $A$. The positive definite form $\operatorname{tr}(A^*B)$ is a different object, defined with the conjugate transpose in *The Involution and the Hermitian Structure*. The trace pairing is the algebraic pairing of the Frobenius algebra $M_5(\mathbb{C})$; the definite form is the metric of the Hilbert space.
+**Remark.** The pairing is **not** positive definite, and it is not a Hermitian form: it is complex bilinear, and $\operatorname{tr}(A^2)$ can vanish for a nonzero $A$. The positive definite form $\operatorname{tr}(A^*B)$ is a different object, defined with the conjugate transpose in *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*. The trace pairing is the algebraic pairing of the Frobenius algebra $M_5(\mathbb{C})$; the definite form is the metric of the Hilbert space.
 
 ### The Determinant
 
@@ -155,7 +155,7 @@ Hence $J$ contains every matrix unit, and therefore $J=M_5(\mathbb{C})$.
 
 **Corollary.** The algebra is **central simple** over $\mathbb{C}$: simple with centre $\mathbb{C}I$. It is therefore a full matrix algebra over a division ring, and the division ring is $\mathbb{C}$ itself, by the finite-dimensional version of the Wedderburn theorem; conversely every central simple algebra of degree $5$ over $\mathbb{C}$ is isomorphic to $M_5(\mathbb{C})$. The general theory is *Central Simple Algebras and the Brauer Group*.
 
-**Remark.** **The simplicity is a two-sided statement.** The algebra has many one-sided ideals: the minimal left ideals are the spaces $M_5P$ for rank-one idempotents $P$, of dimension $5$, and the minimal right ideals are the spaces $PM_5$. The two-sided ideals are only $0$ and the whole algebra. The one-sided ideals are the modules of *The Modules and the Minimal Left Ideals*.
+**Remark.** **The simplicity is a two-sided statement.** The algebra has many one-sided ideals: the minimal left ideals are the spaces $M_5P$ for rank-one idempotents $P$, of dimension $5$, and the minimal right ideals are the spaces $PM_5$. The two-sided ideals are only $0$ and the whole algebra. The one-sided ideals are the modules of *The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$*.
 
 ## The Unit Group and the Projective Group
 
@@ -201,7 +201,7 @@ where $\mathbb{C}^\times I$ is the group of nonzero scalar matrices, the centre 
 
 **Proof.** The centre of $GL_5$ is $\mathbb{C}^\times I$, of complex dimension $1$; the quotient has dimension $25-1=24$. The map $SL_5\to PGL_5$ is surjective: every class $[A]$ has a representative with determinant $1$, namely $A/(\det A)^{1/5}$ for any chosen fifth root, and two such representatives differ by a fifth root of unity. The kernel is $\mu_5$.
 
-**Remark.** **The dimension $24$ is the complex dimension.** The real dimension of $PGL_5(\mathbb{C})$ is $48$, not $24$. The root set of *Roots of Unity and the Lagrange Idempotents* is $PGL_5/T$, of complex dimension $20$; the gauge torus $T$ is complex dimension $4$; the sum is $24$. The real dimensions are $40$, $8$ and $48$.
+**Remark.** **The dimension $24$ is the complex dimension.** The real dimension of $PGL_5(\mathbb{C})$ is $48$, not $24$. The root set of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$* is $PGL_5/T$, of complex dimension $20$; the gauge torus $T$ is complex dimension $4$; the sum is $24$. The real dimensions are $40$, $8$ and $48$.
 
 ### The Counting Table
 
@@ -232,7 +232,7 @@ $$
 
 **Proof.** The entries are conjugated and transposed; the reversal of the order in the product is the rule $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$ together with the conjugation of the entries.
 
-**Remark.** The star is an involution of the **real** algebra, not of the complex algebra: it is conjugate-linear, $(\lambda A)^*=\bar\lambda A^*$. The complex-linear anti-automorphism is the transpose $A^{\mathsf T}$, which is not involutive on the complex algebra in the same Hermitian sense. The star is the involution of *The Involution and the Hermitian Structure*.
+**Remark.** The star is an involution of the **real** algebra, not of the complex algebra: it is conjugate-linear, $(\lambda A)^*=\bar\lambda A^*$. The complex-linear anti-automorphism is the transpose $A^{\mathsf T}$, which is not involutive on the complex algebra in the same Hermitian sense. The star is the involution of *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*.
 
 ### The Two Real Subspaces
 
@@ -289,7 +289,7 @@ Similarly, $\mathbb{C}\otimes_{\mathbb{R}}\mathfrak{su}(5)\cong\mathfrak{sl}_5(\
 The algebra $M_5(\mathbb{C})$ is defined by its product alone. The trace, the determinant and the centre are polynomial functions of the entries, and they belong to the algebra; the conjugate transpose is an extra involution, used here only to exhibit the real form. **No positive definite form and no topology are used in this article.** In particular:
 
 - The trace pairing $\operatorname{tr}(AB)$ is a complex bilinear pairing, nondegenerate but indefinite; it is not the metric of a Hilbert space.
-- The determinant is a polynomial and a multiplicative character; the locus $\det=0$ is the singular set of *The Forms, the Norms and the Singular Set*, and its topology is not used here.
+- The determinant is a polynomial and a multiplicative character; the locus $\det=0$ is the singular set of *The Forms, the Norms and the Singular Set of $M_5(\mathbb{C})$*, and its topology is not used here.
 - The group $GL_5(\mathbb{C})$ is treated as an algebraic group, not as a topological group; its connected components and its homotopy type are *The Topology of $M_5(\mathbb{C})$*.
 - The exponential, the polar decomposition and the analysis on the algebra are later articles; the Lie algebra structure used here is only the commutator.
 
@@ -340,7 +340,8 @@ The trace is linear, cyclic and nondegenerate as a complex bilinear pairing; the
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for $GL_5$, $SL_5$, $PGL_5$, the $*$-unitary algebra $\mathfrak{u}(5)$ and the complexification of a real Lie algebra.
 - [Matrix Algebras](matrix-algebras.html), for the general theory of $M_n(R)$.
 - [Central Simple Algebras and the Brauer Group](central-simple-algebras-and-the-brauer-group.html), for the classification and the triviality of the Brauer group of $\mathbb{C}$.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m5c.html), for the coordinates, the trace pairing and the Jordan decomposition.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the conjugate transpose, the positive definite trace form and the $*$-unitary group.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the first structure built on the algebra.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the matrix units and the diagonal gauge.
+- [The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m5c.html), for the coordinates, the trace pairing and the Jordan decomposition.
+- [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the conjugate transpose, the positive definite trace form and the $*$-unitary group.
+- [Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the first structure built on the algebra.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the matrix units and the diagonal gauge.
+- [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the general algebra at order $n$.

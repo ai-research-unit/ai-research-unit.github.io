@@ -112,7 +112,7 @@ $$
 P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2}
 $$
 
-are the two idempotents of the biquaternion frame. The general construction of *Roots of Unity and the Lagrange Idempotents* is the same formula with $n$ roots in place of the two.
+are the two idempotents of the biquaternion frame. The general construction of *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$* is the same formula with $n$ roots in place of the two.
 
 ## Summary
 
@@ -140,5 +140,9 @@ The algebra $M_n(\mathbb{C})$ is central simple of real dimension $2n^{2}$, with
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for the simplicity of $M_n(\mathbb{C})$ and the structure of matrix rings.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the trace, the determinant, the singular values and the polar decomposition.
 - [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the real algebra $\mathbb{B}$ and its four forms.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the root that replaces the standard flag by a spectral one.
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the explicit isomorphism $\mathbb{B}\to M_2(\mathbb{C})$.
+- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the root that replaces the standard flag by a spectral one.
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the explicit isomorphism $\mathbb{B}\to M_2(\mathbb{C})$.
+- [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), the case $n=3$.
+- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), the case $n=4$.
+- [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), the case $n=5$.
+- [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), the case $n=6$.

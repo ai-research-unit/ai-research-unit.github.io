@@ -639,7 +639,7 @@ with positive definite $M_{\breve r}$ with eigenvalues $\rho_+,\rho_+,\rho_-,\rh
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the reduced norm and the unit criterion.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two zero-divisor lines.
 - [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the structure of $\mathbb{B}_{\mathrm{r}}^{\times}$.
-- [The Two Involutions and the Group of Involutions of the Reduced Biquaternions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the bar and its fixed planes.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the bar and its fixed planes.
 - [Square Roots of a General Element in the Algebra of the Reduced Biquaternions](square-roots-of-a-general-element-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the four square roots.
 - [Modulus–Unit Polar Decomposition of Complex Numbers](modulus-unit-polar-decomposition-of-complex-numbers.html), for the complex member of the family.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the hyperbolic companion.

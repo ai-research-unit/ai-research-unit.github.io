@@ -187,6 +187,6 @@ The general plain sesquilinear form $\langle\tilde S,\tilde Q_1\rangle_{*}=\math
 - [The Pin and Spin Groups of the General Quaternionic Algebra](the-pin-and-spin-groups-of-the-general-quaternionic-algebra.html), the bilinear twin whose isometry condition is the norm level set $\langle\cdot\rangle_{\natural}=\pm1$.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), §*The Isometry Group and the Absence of a Pin Group*, the bilinear twin whose isometry condition is vacuous and whose level set is not a group.
 - [The Pin and Spin Groups with Signed Hermitian Adjoint](the-pin-and-spin-groups-with-signed-hermitian-adjoint.html), for the general theory of the pin and spin groups with a Hermitian adjoint, of which this is the biquaternion instance.
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations and the scalar form.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations and the scalar form.
 - [The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint](the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.html), for the same operator in coordinates, the forms, positivity and the slice.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms of the algebra side by side.

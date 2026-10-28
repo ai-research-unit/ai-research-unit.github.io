@@ -6,7 +6,7 @@
 
 The article computes the homotopy type of the algebra and its group of units, the homotopy groups, the topology of the idempotents and the Grassmannians, the cohomology of the flag variety, and the determinant bundles and their first Chern classes.
 
-The geometry of the idempotents is *The Geometry of the Idempotents*; the polar decomposition is *The Polar Decomposition*; the exponential and the Lie group are *The Exponential and the Lie Group*; the adjoint action and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety*.
+The geometry of the idempotents is *The Geometry of the Idempotents of $M_4(\mathbb{C})$*; the polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the exponential and the Lie group are *The Exponential and the Lie Group of $M_4(\mathbb{C})$*; the adjoint action and the flag variety are *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*.
 
 ## The Contractible Algebra
 
@@ -407,7 +407,7 @@ $$
 - Raoul Bott and Loring Tu, *Differential Forms in Algebraic Topology* (Springer, 1982), for characteristic classes and the first Chern class.
 - Phillip Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the cohomology of Grassmannians and flag varieties and the Schubert calculus.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the vanishing of $\pi_2$ of a Lie group and the topology of homogeneous spaces.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m4c.html), for the affine bundles and the homotopy equivalence.
-- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the deformation retraction onto $U(4)$.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m4c.html), for the homotopy groups and the universal cover.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the flag variety and the Grassmannians.
+- [The Geometry of the Idempotents of $M_4(\mathbb{C})$](the-geometry-of-the-idempotents-of-m4c.html), for the affine bundles and the homotopy equivalence.
+- [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the deformation retraction onto $U(4)$.
+- [The Exponential and the Lie Group of $M_4(\mathbb{C})$](the-exponential-and-the-lie-group-of-m4c.html), for the homotopy groups and the universal cover.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the flag variety and the Grassmannians.

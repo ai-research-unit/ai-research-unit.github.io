@@ -14,7 +14,7 @@ M_{3}(\mathbb{C})=\mathbb{C}I\oplus\mathfrak{sl}_{3}(\mathbb{C}),\qquad 9=1+8,
 $$
 where $\mathfrak{sl}_{3}(\mathbb{C})$ is the traceless part. The split is the first step of the structure theory; the second step is the Jordan decomposition $A=S+N$ into a semisimple and a nilpotent part.
 
-The article assumes the matrix units and the product of *The Matrix Algebra $M_{3}(\mathbb{C})$*, the Peirce coordinates of *The Peirce Decomposition of $M_{3}(\mathbb{C})$*, and the characteristic cubic of *The Cubic, the Discriminant and the Spectral Strata*. The positive definite Hermitian form $\operatorname{tr}(A^{*}B)$ is *The Involution and the Hermitian Structure*; the trace pairing $\operatorname{tr}(AB)$ of this article is complex bilinear and is not positive definite.
+The article assumes the matrix units and the product of *The Matrix Algebra $M_{3}(\mathbb{C})$*, the Peirce coordinates of *The Peirce Decomposition of $M_{3}(\mathbb{C})$*, and the characteristic cubic of *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*. The positive definite Hermitian form $\operatorname{tr}(A^{*}B)$ is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*; the trace pairing $\operatorname{tr}(AB)$ of this article is complex bilinear and is not positive definite.
 
 ## The Coordinates
 
@@ -52,7 +52,7 @@ t=\operatorname{tr}A,\quad
 s=\tfrac12(t^{2}-\operatorname{tr}A^{2}),\quad
 d=\det A,
 $$
-as in *The Cubic, the Discriminant and the Spectral Strata*.
+as in *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*.
 
 **The coordinates of a linear map.** If $A$ is read as the linear map $v\mapsto Av$ on $\mathbb{C}^{3}$ with the standard basis, the $j$-th column of the array is the image of the $j$-th basis vector:
 $$
@@ -68,13 +68,13 @@ which is $\mathbb{C}$-bilinear but not Hermitian. The form is symmetric when $A=
 $$
 A=\tfrac12(A+A^{\mathsf T})+\tfrac12(A-A^{\mathsf T}),
 $$
-the symmetric and the skew-symmetric parts. The trace of $B_{A}$ with respect to an orthonormal basis is $\operatorname{tr}A$, and the determinant is the volume form of the form. The Hermitian form is a different object: it uses the conjugate transpose $A^{*}$, not the transpose, and it is treated in *The Involution and the Hermitian Structure*.
+the symmetric and the skew-symmetric parts. The trace of $B_{A}$ with respect to an orthonormal basis is $\operatorname{tr}A$, and the determinant is the volume form of the form. The Hermitian form is a different object: it uses the conjugate transpose $A^{*}$, not the transpose, and it is treated in *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*.
 
 **The gauge of the coordinates.** A change of normalized frame $E_{ij}\mapsto(t_{i}/t_{j})E_{ij}$ changes the coordinates by
 $$
 \alpha_{ij}\longmapsto\frac{t_{j}}{t_{i}}\alpha_{ij},
 $$
-as in *The Two-Parameter Gauge*. The trace, the determinant and the characteristic polynomial are invariant; the individual off-diagonal coordinates are not. The nine coordinates are a coordinate system on the algebra, not a canonical list of nine numbers attached to $A$.
+as in *The Two-Parameter Gauge of $M_3(\mathbb{C})$*. The trace, the determinant and the characteristic polynomial are invariant; the individual off-diagonal coordinates are not. The nine coordinates are a coordinate system on the algebra, not a canonical list of nine numbers attached to $A$.
 
 ## The Scalar and Traceless Parts
 
@@ -114,7 +114,7 @@ $$
 \operatorname{tr}(A^{2})=3\lambda^{2}+\operatorname{tr}(B^{2})
 =\frac{(\operatorname{tr}A)^{2}}{3}+\operatorname{tr}(A_{0}^{2}).
 $$
-The two terms are the scalar and traceless contributions. The trace form is not positive definite over $\mathbb{C}$: $\operatorname{tr}(E_{12}^{2})=0$ with $E_{12}\neq0$. The positive definite form is the Hermitian form of *The Involution and the Hermitian Structure*, not the complex bilinear trace form.
+The two terms are the scalar and traceless contributions. The trace form is not positive definite over $\mathbb{C}$: $\operatorname{tr}(E_{12}^{2})=0$ with $E_{12}\neq0$. The positive definite form is the Hermitian form of *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*, not the complex bilinear trace form.
 
 **Worked example.** For
 $$
@@ -152,7 +152,7 @@ Let $S$ be the image of $x$ under the projection to $\prod_{i}\mathbb{C}[x]/(x-\
 $$
 J_{m}(\lambda)=\lambda I_{m}+N_{m},\qquad N_{m}=\begin{pmatrix}0&1&&\\&\ddots&\ddots&\\&&\ddots&1\\&&&0\end{pmatrix}.
 $$
-For $M_{3}$ the possible nilpotent blocks are $0$, $N_{2}$, $N_{3}$, and the direct sums $N_{2}\oplus0$; the possible Jordan forms are the diagonal form, the forms with one block of size two, the form with one block of size three, and the scalar forms. The spectral strata of *The Cubic, the Discriminant and the Spectral Strata* are the sets of matrices with a fixed multiplicity pattern of the eigenvalues; the Jordan decomposition refines each stratum by the sizes of the nilpotent blocks.
+For $M_{3}$ the possible nilpotent blocks are $0$, $N_{2}$, $N_{3}$, and the direct sums $N_{2}\oplus0$; the possible Jordan forms are the diagonal form, the forms with one block of size two, the form with one block of size three, and the scalar forms. The spectral strata of *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$* are the sets of matrices with a fixed multiplicity pattern of the eigenvalues; the Jordan decomposition refines each stratum by the sizes of the nilpotent blocks.
 
 **The nilpotent part and the spectrum.** The eigenvalues of $A$ are the diagonal entries of $S$; the nilpotent part $N$ has no eigenvalues other than zero. The characteristic polynomial of $A$ is the characteristic polynomial of $S$, and the minimal polynomial is $\prod_{i}(x-\lambda_{i})^{m_{i}}$ where $m_{i}$ is the size of the largest nilpotent block at $\lambda_{i}$. The element is semisimple exactly when $N=0$, equivalently when the minimal polynomial has distinct roots.
 
@@ -191,7 +191,7 @@ $$
 $$
 The first identity is the sum of the traces of the two diagonal blocks; the second is the determinant of the block matrix, which is $\det(X+iY)\det(X-iY)=|\det A|^{2}$.
 
-**The real and imaginary parts are not the Hermitian decomposition.** The decomposition $A=X+iY$ separates the entries into their real and imaginary parts. The Hermitian decomposition separates $A$ into $\tfrac12(A+A^{*})$ and $\tfrac12(A-A^{*})$, which are Hermitian and skew-Hermitian; it is a different real decomposition, of $M_{3}(\mathbb{C})$ into two nine-dimensional real spaces. The two decompositions agree only on the real matrices, where $Y=0$ and $A=A^{*}$ if $A$ is symmetric. The Hermitian one is *The Involution and the Hermitian Structure*.
+**The real and imaginary parts are not the Hermitian decomposition.** The decomposition $A=X+iY$ separates the entries into their real and imaginary parts. The Hermitian decomposition separates $A$ into $\tfrac12(A+A^{*})$ and $\tfrac12(A-A^{*})$, which are Hermitian and skew-Hermitian; it is a different real decomposition, of $M_{3}(\mathbb{C})$ into two nine-dimensional real spaces. The two decompositions agree only on the real matrices, where $Y=0$ and $A=A^{*}$ if $A$ is symmetric. The Hermitian one is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*.
 
 **The complex structure and the real form.** The real algebra $M_{3}(\mathbb{C})$ is the complexification of the real algebra $M_{3}(\mathbb{R})$: every element is $X+iY$ with $X,Y$ real, and the product is the complex bilinear extension of the real product. The complex conjugation $A\mapsto\bar A$ is the real structure; its fixed points are $M_{3}(\mathbb{R})$, of real dimension $9$. The $*$-unitary real form is different: it is the skew-Hermitian part for the star, of real dimension $9$, and it is not the real matrices.
 
@@ -229,7 +229,7 @@ K(A,B)=6\operatorname{tr}(AB)-2\operatorname{tr}A\operatorname{tr}B,
 $$
 and on the traceless algebra $\mathfrak{sl}_{3}(\mathbb{C})$ it is $6\operatorname{tr}(AB)$. The trace form and the Killing form differ by the rank-one term $2\operatorname{tr}A\operatorname{tr}B$, which is supported on the scalar line. The trace form is the simpler pairing; the Killing form is the invariant form of the Lie algebra.
 
-**The dual and the transpose.** The trace pairing identifies $M_{3}$ with its dual: the linear functional $B\mapsto\operatorname{tr}(AB)$ is represented by $A$. Under this identification the transpose $A^{\mathsf T}$ represents the functional $B\mapsto\operatorname{tr}(A^{\mathsf T}B)=\sum a_{ij}b_{ij}$, which is the Euclidean pairing of the entries. The Hermitian adjoint $A^{*}$ represents the functional $B\mapsto\operatorname{tr}(A^{*}B)$, which is the positive definite Hermitian pairing of *The Involution and the Hermitian Structure*. The three pairings — trace, Euclidean, Hermitian — are different; only the last is positive definite.
+**The dual and the transpose.** The trace pairing identifies $M_{3}$ with its dual: the linear functional $B\mapsto\operatorname{tr}(AB)$ is represented by $A$. Under this identification the transpose $A^{\mathsf T}$ represents the functional $B\mapsto\operatorname{tr}(A^{\mathsf T}B)=\sum a_{ij}b_{ij}$, which is the Euclidean pairing of the entries. The Hermitian adjoint $A^{*}$ represents the functional $B\mapsto\operatorname{tr}(A^{*}B)$, which is the positive definite Hermitian pairing of *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*. The three pairings — trace, Euclidean, Hermitian — are different; only the last is positive definite.
 
 **The element as a bilinear form and the trace pairing.** The element $A$ defines the bilinear form $B_{A}(u,v)=u^{\mathsf T}Av$; the trace pairing pairs two elements, not two vectors. The two are related by the identity
 $$
@@ -299,10 +299,10 @@ The trace pairing is symmetric, nondegenerate and invariant, with Gram matrix $\
 
 ## Further Reading
 
-- [The Matrix Algebra $M_{3}(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units, the product, the trace and the determinant.
+- [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units, the product, the trace and the determinant.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the coordinates in a general frame.
-- [The Cubic, the Discriminant and the Spectral Strata](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the characteristic polynomial.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m3c.html), for the positive definite Hermitian form.
-- [The Two-Parameter Gauge](the-two-parameter-gauge-of-m3c.html), for the gauge of the coordinates.
+- [The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the characteristic polynomial.
+- [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the positive definite Hermitian form.
+- [The Two-Parameter Gauge of $M_3(\mathbb{C})$](the-two-parameter-gauge-of-m3c.html), for the gauge of the coordinates.
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the Jordan form.
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant as an alternating form.

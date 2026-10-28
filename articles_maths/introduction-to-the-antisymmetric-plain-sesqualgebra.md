@@ -200,4 +200,4 @@ The antisymmetric part of the general plain sesquilinear product is $\tilde Q_1\
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the row table, the three Jacobi failures and the ten operations of the real part
 - [Lie Algebras of Sesqualgebras](lie-algebras-of-sesqualgebras.html), for the obstruction that forbids the antisymmetrisation of a genuine sesquilinear product
 - [The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion](the-sesquilinear-commutator-and-the-symmetrised-product-on-the-biquaternion.html), for the other, bare, antisymmetrisation of the same product
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces and their bases
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces and their bases

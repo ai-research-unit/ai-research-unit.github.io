@@ -1,4 +1,4 @@
-# __Spectral Theory and the Spectral Projectors__
+# __Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -128,7 +128,7 @@ $$
 \mu_A(t)=\chi_A(t)=\prod_{k=1}^{5}(t-\lambda_k),
 $$
 
-and the Jordan form is diagonal. For a general matrix, the minimal polynomial is $\prod_\lambda(t-\lambda)^{m_\lambda}$, where $m_\lambda$ is the size of the largest Jordan block of $\lambda$; the Jordan decomposition is treated in *The Element, the Coordinates and the Trace*.
+and the Jordan form is diagonal. For a general matrix, the minimal polynomial is $\prod_\lambda(t-\lambda)^{m_\lambda}$, where $m_\lambda$ is the size of the largest Jordan block of $\lambda$; the Jordan decomposition is treated in *The Element, the Coordinates and the Trace of $M_5(\mathbb{C})$*.
 
 **Proof.** The characteristic polynomial has the five distinct roots $\lambda_k$, so it is squarefree; a squarefree annihilating polynomial of degree $5$ is the minimal polynomial, and the matrix is diagonalizable. The general formula is the standard Jordan description.
 
@@ -379,7 +379,7 @@ The normal matrices are exactly the unitarily diagonalizable matrices; the root 
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the spectral theorem for Hermitian and normal matrices and the $*$-unitary diagonalization.
 - Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 1995), for the resolvent, the Dunford projectors and the degeneration at a repeated eigenvalue.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the algebraic spectral decomposition and the Dunford calculus.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form and the $*$-unitary group.
-- [The Polar Decomposition](the-polar-decomposition-of-m5c.html), for the absolute value and the polar decomposition.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m5c.html), for the exponential and the functional calculus.
-- [The Quintic and the Spectral Strata](the-quintic-and-the-spectral-strata-of-m5c.html), for the characteristic polynomial and the spectral strata.
+- [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form and the $*$-unitary group.
+- [The Polar Decomposition of $M_5(\mathbb{C})$](the-polar-decomposition-of-m5c.html), for the absolute value and the polar decomposition.
+- [The Exponential and the Lie Group of $M_5(\mathbb{C})$](the-exponential-and-the-lie-group-of-m5c.html), for the exponential and the functional calculus.
+- [The Quintic and the Spectral Strata of $M_5(\mathbb{C})$](the-quintic-and-the-spectral-strata-of-m5c.html), for the characteristic polynomial and the spectral strata.

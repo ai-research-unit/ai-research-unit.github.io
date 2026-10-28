@@ -1,4 +1,4 @@
-# __The Rank-Two Split__
+# __The Rank-Two Split of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -10,9 +10,9 @@ $$
 
 the algebra $PM_5P\cong M_2(\mathbb{C})$ of the two-dimensional image, the algebra $QM_5Q\cong M_3(\mathbb{C})$ of the three-dimensional kernel, and the two rectangular blocks $PM_5Q\cong\mathbb{C}^{2\times3}$ and $QM_5P\cong\mathbb{C}^{3\times2}$, of dimension $6$ each. The block $PM_5Q$ is the **mass block**; its dual $QM_5P$ is the conjugate mass block. The two together are the off-diagonal bimodule that couples the two corners.
 
-This article develops the **split**: the corner dimensions, the corner isomorphisms, the mass block and its pairings, and the two-sided Peirce table. The group side of the same decomposition — the block stabiliser $P(GL_2\times GL_3)$, the two corner tori and the relative scale $1+2+1=4$ — is *The $M_2\oplus M_3$ Corner*. The two articles describe the same projection from the two sides, the algebra and the group; the present one is the algebra.
+This article develops the **split**: the corner dimensions, the corner isomorphisms, the mass block and its pairings, and the two-sided Peirce table. The group side of the same decomposition — the block stabiliser $P(GL_2\times GL_3)$, the two corner tori and the relative scale $1+2+1=4$ — is *The $M_2\oplus M_3$ Corner of $M_5(\mathbb{C})$*. The two articles describe the same projection from the two sides, the algebra and the group; the present one is the algebra.
 
-The article assumes the matrix algebra, the Peirce decomposition and the gauge. The corners are the $p=2$ case of the general rank-$p$ split; the $p=1$ case is the coarse split $1+4+4+16$ of *The Peirce Decomposition*, and the rank-two split is the next case of the recursion $M_{p+q}\supset M_p\oplus M_q$. The two diagonal corners are the previous categories: $M_2(\mathbb{C})$ is the biquaternion matrix model, and $M_3(\mathbb{C})$ is the three-dimensional matrix algebra.
+The article assumes the matrix algebra, the Peirce decomposition and the gauge. The corners are the $p=2$ case of the general rank-$p$ split; the $p=1$ case is the coarse split $1+4+4+16$ of *The Peirce Decomposition of $M_5(\mathbb{C})$*, and the rank-two split is the next case of the recursion $M_{p+q}\supset M_p\oplus M_q$. The two diagonal corners are the previous categories: $M_2(\mathbb{C})$ is the biquaternion matrix model, and $M_3(\mathbb{C})$ is the three-dimensional matrix algebra.
 
 ## The Projection and the Block Form
 
@@ -163,7 +163,7 @@ span the diagonal corners: the linear span of the products $XY$ is $M_2$, and th
 
 **Proof.** The block formula of §*The Projection and the Block Form*: the nonvanishing products are those with no factor $PQ$ or $QP$ in the middle. The four diagonal products are the subalgebra products; the four products $PMP\cdot PMQ$, $PMQ\cdot QMQ$, $QMQ\cdot QMP$, $QMP\cdot PMP$ are the bimodule actions; the two products $PMQ\cdot QMP$ and $QMP\cdot PMQ$ are the pairings into the diagonal corners. All other products vanish.
 
-**Corollary.** The table has the same pattern as the rank-one table of *The Peirce Decomposition*, with the scalar corner replaced by $M_2$ and the $M_4$ corner replaced by $M_3$. The pattern depends only on the **two block indices**, not on the sizes; the sizes enter only in the dimensions.
+**Corollary.** The table has the same pattern as the rank-one table of *The Peirce Decomposition of $M_5(\mathbb{C})$*, with the scalar corner replaced by $M_2$ and the $M_4$ corner replaced by $M_3$. The pattern depends only on the **two block indices**, not on the sizes; the sizes enter only in the dimensions.
 
 **Proof.** The pattern is the block-index multiplication: $(i,j)(j,k)\subseteq(i,k)$ and zero otherwise, for $i,j,k\in\{1,2\}$. The sizes are the dimensions of the blocks.
 
@@ -235,10 +235,10 @@ The off-diagonal bimodule is the **mass** sector of the split. Its two blocks ar
 
 ### The Spectral Partition
 
-Let $H$ be a root with spectral projectors $P_0,\dots,P_4$, and let
+Let $H$ be a root with spectral projectors $P_1,\dots,P_5$, and let
 
 $$
-P=P_0+P_1,\qquad Q=P_2+P_3+P_4 .
+P=P_1+P_2,\qquad Q=P_3+P_4+P_5 .
 $$
 
 Then $P$ is a rank-two projection, $Q$ its complement, and the block split is the partition of the five spectral lines into the first two and the last three.
@@ -246,13 +246,13 @@ Then $P$ is a rank-two projection, $Q$ its complement, and the block split is th
 **Proposition.** The corners are the sums of the Peirce lines with indices in the two blocks:
 
 $$
-PMP=\bigoplus_{k,l\in\{0,1\}}A_{kl},\qquad
-PMQ=\bigoplus_{k\in\{0,1\},\,l\in\{2,3,4\}}A_{kl},
+PMP=\bigoplus_{k,l\in\{1,2\}}A_{kl},\qquad
+PMQ=\bigoplus_{k\in\{1,2\},\,l\in\{3,4,5\}}A_{kl},
 $$
 
 $$
-QMP=\bigoplus_{k\in\{2,3,4\},\,l\in\{0,1\}}A_{kl},\qquad
-QMQ=\bigoplus_{k,l\in\{2,3,4\}}A_{kl}.
+QMP=\bigoplus_{k\in\{3,4,5\},\,l\in\{1,2\}}A_{kl},\qquad
+QMQ=\bigoplus_{k,l\in\{3,4,5\}}A_{kl}.
 $$
 
 The dimensions are $4$, $6$, $6$ and $9$, the numbers of pairs in the four index sets.
@@ -265,9 +265,9 @@ The dimensions are $4$, $6$, $6$ and $9$, the numbers of pairs in the four index
 
 ### The Refinement of the Split
 
-The rank-one split of *The Peirce Decomposition* is the partition $\{0\},\{1,2,3,4\}$; the rank-two split is the partition $\{0,1\},\{2,3,4\}$; the rank-three split is $\{0,1,2\},\{3,4\}$; the rank-four split is $\{0,1,2,3\},\{4\}$. Each is a coarsening of the fine Peirce decomposition by a partition of the index set. The dimensions of the corners are the products of the sizes of the two parts.
+The rank-one split of *The Peirce Decomposition of $M_5(\mathbb{C})$* is the partition $\{1\},\{2,3,4,5\}$; the rank-two split is the partition $\{1,2\},\{3,4,5\}$; the rank-three split is $\{1,2,3\},\{4,5\}$; the rank-four split is $\{1,2,3,4\},\{5\}$. Each is a coarsening of the fine Peirce decomposition by a partition of the index set. The dimensions of the corners are the products of the sizes of the two parts.
 
-**Proposition.** For a partition $S\sqcup T=\{0,\dots,4\}$ with $|S|=p$, the corner dimensions are
+**Proposition.** For a partition $S\sqcup T=\{1,\dots,5\}$ with $|S|=p$, the corner dimensions are
 
 $$
 p^2,\quad p(5-p),\quad (5-p)p,\quad (5-p)^2 .
@@ -275,7 +275,7 @@ $$
 
 **Proof.** The corner $PMP$ is the sum of the lines with both indices in $S$, of which there are $p^2$; the mixed corners have $p(5-p)$ each; the corner $QMQ$ has $(5-p)^2$.
 
-**Remark.** **The rank-two split is the case $p=2$ of the partition, and the mass block is the mixed corner of size $2\cdot3=6$.** The split is not a new algebra; it is the same algebra read through a partition of the spectral indices. The group side, with the relative scale, is *The $M_2\oplus M_3$ Corner*.
+**Remark.** **The rank-two split is the case $p=2$ of the partition, and the mass block is the mixed corner of size $2\cdot3=6$.** The split is not a new algebra; it is the same algebra read through a partition of the spectral indices. The group side, with the relative scale, is *The $M_2\oplus M_3$ Corner of $M_5(\mathbb{C})$*.
 
 ## Summary
 
@@ -297,7 +297,7 @@ $$
 \boxed{\ M_5\supset M_2\oplus M_3,\qquad 4+6+6+9=25,\qquad \text{mass block }6,\text{ dual }6.\ }
 $$
 
-The two-sided Peirce table has the block pattern $(i,j)(j,k)\subseteq(i,k)$, with the sizes $2$ and $3$. The two diagonal corners are the previous categories: $M_2$ is the biquaternion matrix model and $M_3$ is the three-dimensional matrix algebra. The split from the root is the partition $\{0,1\},\{2,3,4\}$ of the spectral lines; the corner dimensions are the products of the block sizes.
+The two-sided Peirce table has the block pattern $(i,j)(j,k)\subseteq(i,k)$, with the sizes $2$ and $3$. The two diagonal corners are the previous categories: $M_2$ is the biquaternion matrix model and $M_3$ is the three-dimensional matrix algebra. The split from the root is the partition $\{1,2\},\{3,4,5\}$ of the spectral lines; the corner dimensions are the products of the block sizes.
 
 | Corner | Isomorphism | Dimension |
 |---|---|---|
@@ -326,8 +326,8 @@ The two-sided Peirce table has the block pattern $(i,j)(j,k)\subseteq(i,k)$, wit
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the block multiplication, the rectangular blocks and the rank of a product.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the corner decomposition in an algebra with involution and the behaviour of the mass block.
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra and its dimensions.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the coarse split $1+4+4+16$ and the fine Peirce lines.
-- [The $M_2\oplus M_3$ Corner](the-m2-m3-corner-of-m5c.html), for the block stabiliser, the two corner tori and the relative scale $1+2+1=4$.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge parameters regrouped by the block structure.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the modules of the corners and the bimodule.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion algebra in the $M_2$ corner.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the coarse split $1+4+4+16$ and the fine Peirce lines.
+- [The $M_2\oplus M_3$ Corner of $M_5(\mathbb{C})$](the-m2-m3-corner-of-m5c.html), for the block stabiliser, the two corner tori and the relative scale $1+2+1=4$.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge parameters regrouped by the block structure.
+- [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the modules of the corners and the bimodule.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion algebra in the $M_2$ corner.

@@ -1,8 +1,8 @@
-# __The Exponential-Polar Decomposition__
+# __The Exponential-Polar Decomposition of $M_5(\mathbb{C})$__
 
 ## Introduction
 
-The polar decomposition $A=UP$ of *The Polar Decomposition* has an exponential form:
+The polar decomposition $A=UP$ of *The Polar Decomposition of $M_5(\mathbb{C})$* has an exponential form:
 
 $$
 A=e^{iH}e^{S},\qquad H=H^*,\quad S=S^*,
@@ -321,7 +321,7 @@ The exponential-polar coordinates are the polar coordinates of the group: the po
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for the Cartan, $KAK$ and Iwasawa decompositions and the symmetric spaces.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the Cartan decomposition and the exponential map.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the polar decomposition, the SVD and the QR decomposition.
-- [The Polar Decomposition](the-polar-decomposition-of-m5c.html), for the polar decomposition and the positive cone.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m5c.html), for the exponential, the logarithm and the Lie group.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the symmetric space and the group action.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m5c.html), for the geometry of the idempotent varieties.
+- [The Polar Decomposition of $M_5(\mathbb{C})$](the-polar-decomposition-of-m5c.html), for the polar decomposition and the positive cone.
+- [The Exponential and the Lie Group of $M_5(\mathbb{C})$](the-exponential-and-the-lie-group-of-m5c.html), for the exponential, the logarithm and the Lie group.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the symmetric space and the group action.
+- [The Geometry of the Idempotents of $M_5(\mathbb{C})$](the-geometry-of-the-idempotents-of-m5c.html), for the geometry of the idempotent varieties.

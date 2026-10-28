@@ -190,4 +190,4 @@ The dimensions are $8$, $6$ and $4$. $\Sigma_{11}$ is open and dense; $\Sigma_{1
 - [Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html), for the two ideals $Z_+$ and $Z_-$.
 - [Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html), for the union spectrum and the repeated-root criterion.
 - [The Reduced Norm and Spectral Degeneracy in the Split-Biquaternion Algebra](relations-between-the-split-biquaternion-reduced-norm-and-spectral-regularity-and-degeneracy.html), for the empty mixed cell and the chain of invariants.
-- [Spectral Regularity and Degeneracy in the Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the defective Jordan part and the nilpotents.
+- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the defective Jordan part and the nilpotents.

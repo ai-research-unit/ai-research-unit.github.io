@@ -186,10 +186,10 @@ The six remarkable subspaces are the scalar matrices, the traceless matrices, th
 
 ## Further Reading
 
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the six subspaces and their definitions
-- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the three splits and the intersections
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the six subspaces and their definitions
+- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the three splits and the intersections
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the forms restricted to the subspaces
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the subspaces
 - [The Sandwich in the $M_2(\mathbb{C})$ Model](the-sandwich-in-the-m2c-model.html), for the matrix action on the two Hermitian subspaces
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
-- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the comparison of the two Hermitian subspaces
+- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the comparison of the two Hermitian subspaces

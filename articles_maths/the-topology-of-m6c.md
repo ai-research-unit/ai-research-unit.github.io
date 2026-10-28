@@ -32,7 +32,7 @@ $$
 
 because the fibre of the image map is the contractible affine space of complements. The full flag variety $GL_6/B$ is simply connected, and the determinant line bundle over the Grassmannian has first Chern class the generator of $H^2\cong\mathbb{Z}$.
 
-The article assumes the polar decomposition of *The Polar Decomposition*, the idempotent geometry of *The Geometry of the Idempotents*, and the Grassmannians of *The Adjoint Action, the Orbits and the Flag Variety*. It uses the standard homotopy theory of Lie groups and bundles. The complex analysis is *Analysis on $M_6(\mathbb{C})$*; the group structure is *The Exponential and the Lie Group*.
+The article assumes the polar decomposition of *The Polar Decomposition of $M_6(\mathbb{C})$*, the idempotent geometry of *The Geometry of the Idempotents of $M_6(\mathbb{C})$*, and the Grassmannians of *The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$*. It uses the standard homotopy theory of Lie groups and bundles. The complex analysis is *Analysis on $M_6(\mathbb{C})$*; the group structure is *The Exponential and the Lie Group of $M_6(\mathbb{C})$*.
 
 ## The Contractibility of $M_6(\mathbb{C})$
 
@@ -380,10 +380,10 @@ The determinant bundle $\operatorname{Det}=\Lambda^pS$ over the Grassmannian has
 
 ## Further Reading
 
-- [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the deformation retraction onto $U(6)$.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m6c.html), for $\pi_1(SU(6))=\mathbb{Z}/6$ and the center.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the affine bundle over the Grassmannian.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the Grassmannians and the flag variety.
+- [The Polar Decomposition of $M_6(\mathbb{C})$](the-polar-decomposition-of-m6c.html), for the deformation retraction onto $U(6)$.
+- [The Exponential and the Lie Group of $M_6(\mathbb{C})$](the-exponential-and-the-lie-group-of-m6c.html), for $\pi_1(SU(6))=\mathbb{Z}/6$ and the center.
+- [The Geometry of the Idempotents of $M_6(\mathbb{C})$](the-geometry-of-the-idempotents-of-m6c.html), for the affine bundle over the Grassmannian.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the Grassmannians and the flag variety.
 - [Analysis on $M_6(\mathbb{C})$](analysis-on-m6c.html), for the smooth and complex structure.
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for the Schubert cells and the cohomology of $\operatorname{Gr}(p,n)$.
 - [Flag Manifolds](flag-manifolds.html), for the Bruhat decomposition and the cohomology of $GL_n/B$.

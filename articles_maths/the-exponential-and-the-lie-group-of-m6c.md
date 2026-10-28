@@ -1,4 +1,4 @@
-# __The Exponential and the Lie Group__
+# __The Exponential and the Lie Group of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -24,7 +24,7 @@ $$
 
 and the eigenvalues of $e^X$ are $e^{\lambda_1},\dots,e^{\lambda_6}$.
 
-The article assumes the Jordan form of *The Element, the Coordinates and the Trace* and the $*$-unitary group of *The Involution and the Hermitian Structure*. It uses the holomorphic functional calculus of *Spectral Theory and the Spectral Projectors*. The polar decomposition is *The Polar Decomposition*; the topology of the group is *The Topology of $M_6(\mathbb{C})$*.
+The article assumes the Jordan form of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$* and the $*$-unitary group of *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$*. It uses the holomorphic functional calculus of *Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$*. The polar decomposition is *The Polar Decomposition of $M_6(\mathbb{C})$*; the topology of the group is *The Topology of $M_6(\mathbb{C})$*.
 
 ## The Exponential
 
@@ -377,10 +377,10 @@ and the eigenvalues of $e^X$ are $e^{\lambda_i}$.
 
 ## Further Reading
 
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m6c.html), for the Jordan form.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the $*$-unitary and special $*$-unitary groups.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the Dunford calculus and the principal logarithm.
-- [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the exponential form $A=Ue^H$.
+- [The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m6c.html), for the Jordan form.
+- [The Involution and the Hermitian Structure of $M_6(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m6c.html), for the $*$-unitary and special $*$-unitary groups.
+- [Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the Dunford calculus and the principal logarithm.
+- [The Polar Decomposition of $M_6(\mathbb{C})$](the-polar-decomposition-of-m6c.html), for the exponential form $A=Ue^H$.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the Lie algebra and its derivations.
 - [The Topology of $M_6(\mathbb{C})$](the-topology-of-m6c.html), for the fundamental group and the center.
 - [Analysis on $M_6(\mathbb{C})$](analysis-on-m6c.html), for the exponential as a holomorphic map and its differential.

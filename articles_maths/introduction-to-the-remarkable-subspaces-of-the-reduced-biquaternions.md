@@ -184,7 +184,7 @@ The remarkable subspaces of the reduced biquaternion algebra are eight planes of
 
 ## Further Reading
 
-- [The Two Involutions and the Group of Involutions of the Reduced Biquaternions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the involutions and their fixed spaces.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the involutions and their fixed spaces.
 - [Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$](reduced-biquaternions-as-a-vector-space-over-r-and-c.html), for the bases and the two scalar systems.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotents and the two lines.
 - [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the decompositions the spaces carry.

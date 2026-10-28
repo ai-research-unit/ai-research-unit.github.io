@@ -144,7 +144,7 @@ A Hermitian form on the rank-one module over the biquaternion algebra is a Hermi
 - [Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint](hermitian-forms-over-an-involution-ring-and-the-unitary-witt-group-with-hermitian-adjoint.html), the general theory of which this is the biquaternion instance.
 - [Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint](hermitian-forms-on-a-hermitian-algebra-with-hermitian-adjoint.html), for the forms of an anti-involution and the canonical Hermitian form.
 - [The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint](the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.html), for the same objects in coordinates: the forms, positivity, the cone and the slice.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the Hermitian elements and the real form.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the Hermitian elements and the real form.
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the congruence as an operator, its invariants and its degenerate cases.
 - [Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.html), for the positive cone in which the signature lives.
 - [The Unitary Slice and the Compact Real Form with Hermitian Adjoint](the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.html), for the automorphism group of the unit form.

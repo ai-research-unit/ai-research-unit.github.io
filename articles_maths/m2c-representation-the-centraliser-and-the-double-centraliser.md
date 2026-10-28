@@ -153,8 +153,8 @@ The commutant of a non-scalar $2\times2$ matrix is the plane $\mathbb{C}[X]=\ope
 
 ## Further Reading
 
-- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the commutant of an element and the double centraliser theorem
-- [$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis and its construction
-- [$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents](m2c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors and the Jordan types
+- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the commutant of an element and the double centraliser theorem
+- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis and its construction
+- [$M_2(\mathbb{C})$ Model : The Spectral Projectors](m2c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors and the Jordan types
 - [$M_2(\mathbb{C})$ Representation : The Functional Calculus](m2c-representation-the-functional-calculus.html), for the use of the commutant in both reductions
-- [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the spectral projectors in the algebra
+- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the spectral projectors in the algebra

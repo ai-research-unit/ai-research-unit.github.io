@@ -4,9 +4,9 @@
 
 The algebra $M_{3}(\mathbb{C})$ is the algebra of $3\times3$ complex matrices under the ordinary product. It is the model of a central simple algebra, the algebra of endomorphisms of $\mathbb{C}^{3}$, and the ambient algebra of the whole $M_{3}(\mathbb{C})$ category. This article fixes it: the basis of matrix units and the product rule, the trace and the determinant, the centre and the simplicity, the real dimension, the unit group and the projective group, and the reading of the algebra over the real numbers as the complexification of the skew-Hermitian matrices.
 
-No quadratic form is used in the proofs here. The trace form $\operatorname{tr}(AB)$ is mentioned only to record that it is symmetric and nondegenerate; the positive definite Hermitian form $\operatorname{tr}(A^{*}B)$ and the norm it defines are *The Involution and the Hermitian Structure*. The dimensions are algebraic dimensions, not homotopy invariants; the topology of the algebra and of its unit group is *The Topology of $M_{3}(\mathbb{C})$*.
+No quadratic form is used in the proofs here. The trace form $\operatorname{tr}(AB)$ is mentioned only to record that it is symmetric and nondegenerate; the positive definite Hermitian form $\operatorname{tr}(A^{*}B)$ and the norm it defines are *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*. The dimensions are algebraic dimensions, not homotopy invariants; the topology of the algebra and of its unit group is *The Topology of $M_{3}(\mathbb{C})$*.
 
-The article is the first of the category. The element and its coordinates are *The Element, the Coordinates and the Trace*; the root and its idempotents are *Roots of Unity and the Lagrange Idempotents*; the Peirce decomposition is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*.
+The article is the first of the category. The element and its coordinates are *The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$*; the root and its idempotents are *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the Peirce decomposition is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*.
 
 ## The Algebra
 
@@ -125,7 +125,7 @@ s=\tfrac12\bigl(t^{2}-\operatorname{tr}A^{2}\bigr),\qquad
 d=\det A,
 $$
 
-and $\chi_{A}(A)=0$. The identity is the Cayley–Hamilton theorem for $3\times3$ matrices; it is used in *The Element, the Coordinates and the Trace* and in *The Cubic, the Discriminant and the Spectral Strata*. The coefficients are the elementary symmetric functions of the eigenvalues, counted with multiplicity.
+and $\chi_{A}(A)=0$. The identity is the Cayley–Hamilton theorem for $3\times3$ matrices; it is used in *The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$* and in *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*. The coefficients are the elementary symmetric functions of the eigenvalues, counted with multiplicity.
 
 **Worked example.** Take
 
@@ -154,7 +154,7 @@ $$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B),
 $$
 
-with $A^{*}=\bar A^{\mathsf T}$, and it is the subject of *The Involution and the Hermitian Structure*. The two forms agree on Hermitian matrices, where $A^{*}=A$, and differ by a sign on skew-Hermitian matrices, where $A^{*}=-A$; the trace form of this article is the complex bilinear one.
+with $A^{*}=\bar A^{\mathsf T}$, and it is the subject of *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*. The two forms agree on Hermitian matrices, where $A^{*}=A$, and differ by a sign on skew-Hermitian matrices, where $A^{*}=-A$; the trace form of this article is the complex bilinear one.
 
 **No null cone.** The form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ is positive definite, so its only isotropic vector is $0$. The singular set $\{\det A=0\}$ is a complex hypersurface of real codimension two, not the null cone of a quadratic form. At $n=2$ the algebra is the biquaternion algebra $\mathbb{B}\cong M_{2}(\mathbb{C})$, where the determinant is the N-norm, an indefinite quadratic form with a genuine null cone; that cone is a feature of the two-dimensional case and is not imported here.
 
@@ -190,7 +190,7 @@ $$
 
 lies in $I$, because $I$ is a two-sided ideal. The matrix units span, so $I=M_{3}(\mathbb{C})$.
 
-**Corollary.** $M_{3}(\mathbb{C})$ is a **central simple** $\mathbb{C}$-algebra: simple, with centre $\mathbb{C}$. Its only finite-dimensional modules are the multiples of the defining module $\mathbb{C}^{3}$, by the structure theory of simple algebras; the modules are *The Modules and the Minimal Left Ideals*.
+**Corollary.** $M_{3}(\mathbb{C})$ is a **central simple** $\mathbb{C}$-algebra: simple, with centre $\mathbb{C}$. Its only finite-dimensional modules are the multiples of the defining module $\mathbb{C}^{3}$, by the structure theory of simple algebras; the modules are *The Modules and the Minimal Left Ideals of $M_3(\mathbb{C})$*.
 
 **The algebra is not a division algebra.** It has zero divisors: $E_{12}E_{21}=E_{11}\neq0$ but $E_{12}E_{12}=0$, and more simply $E_{12}\neq0$ with $E_{12}^{2}=0$. Every off-diagonal matrix unit is nilpotent. The algebra is therefore not a division ring, and the singular matrices are exactly the non-units.
 
@@ -235,7 +235,7 @@ $$
 
 **Proof.** Every class $[A]\in PGL_{3}$ has a representative of determinant $1$: multiply $A$ by a scalar $\lambda$ with $\lambda^{3}=(\det A)^{-1}$. Two such representatives differ by a scalar $\mu$ with $\mu^{3}=1$, so the quotient is $SL_{3}/\mu_{3}$. The dimension is $\dim SL_{3}=8$. The quotient by the finite group $\mu_{3}$ does not change the dimension.
 
-**The action on the algebra.** $PGL_{3}$ acts on $M_{3}(\mathbb{C})$ by conjugation, $[g]\cdot A=gAg^{-1}$; the scalar matrices act trivially, so the action is well defined. The orbits are the conjugacy classes, and their classification by Jordan type is *The Adjoint Action, the Orbits and the Flag Variety*. The stabiliser of a root with simple spectrum is the maximal torus $(\mathbb{C}^{\times})^{2}$, of dimension two; this is the gauge of *The Frame, the Simple Nilpotents and the Gauge*.
+**The action on the algebra.** $PGL_{3}$ acts on $M_{3}(\mathbb{C})$ by conjugation, $[g]\cdot A=gAg^{-1}$; the scalar matrices act trivially, so the action is well defined. The orbits are the conjugacy classes, and their classification by Jordan type is *The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$*. The stabiliser of a root with simple spectrum is the maximal torus $(\mathbb{C}^{\times})^{2}$, of dimension two; this is the gauge of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
 
 ## The Reading over the Real Numbers
 
@@ -312,7 +312,7 @@ Its centre is $\mathbb{C}I$, and it is simple and central simple. Its trace is t
 | Projective group | $PGL_{3}(\mathbb{C})$, $\dim_{\mathbb{C}}=8$ |
 | Real form | $\mathfrak{u}(3)\oplus i\mathfrak{u}(3)$, $\dim_{\mathbb{R}}\mathfrak{u}(3)=9$, $\dim_{\mathbb{R}}\mathfrak{su}(3)=8$ |
 
-The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ of skew-Hermitian matrices, and the Hermitian and skew-Hermitian parts are the real and imaginary readings of one element. No quadratic form is used in the proofs of this article; the positive definite form is *The Involution and the Hermitian Structure*, and the homotopy of the unit group is *The Topology of $M_{3}(\mathbb{C})$*.
+The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ of skew-Hermitian matrices, and the Hermitian and skew-Hermitian parts are the real and imaginary readings of one element. No quadratic form is used in the proofs of this article; the positive definite form is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*, and the homotopy of the unit group is *The Topology of $M_{3}(\mathbb{C})$*.
 
 ## Summary of Notation
 
@@ -333,10 +333,11 @@ The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ o
 ## Further Reading
 
 - [Matrix Algebras](matrix-algebras.html), for the general theory of $M_{n}(R)$ and the matrix-unit table.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m3c.html), for the element, its scalar and traceless parts, and the trace pairing.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m3c.html), for the star, the positive definite form and the real forms.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the root and its idempotents.
+- [The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m3c.html), for the element, its scalar and traceless parts, and the trace pairing.
+- [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the star, the positive definite form and the real forms.
+- [Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the root and its idempotents.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the decomposition by the idempotents.
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant and its multiplicativity.
 - [Central Simple Algebras and the Brauer Group](central-simple-algebras-and-the-brauer-group.html), for the structure theory of simple algebras.
 - [The Adjoint Action of a Lie Algebra](the-adjoint-action-of-a-lie-algebra.html), for the commutator bracket.
+- [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the general algebra at order $n$.

@@ -17,7 +17,7 @@ $$
 
 A **partial flag** is a chain with some of the dimensions omitted, for example a single two-plane (a point of the Grassmannian $\mathrm{Gr}(2,5)$, of dimension $6$) or a line inside a three-plane (a flag of type $(1,3)$, of dimension $8$). The partial flags are the quotients of the full flag variety by the parabolic subgroups of $GL_5$; the full flag is the case of the Borel.
 
-The root set of *Roots of Unity and the Lagrange Idempotents* is $PGL_5/T$, of dimension $20$. It is **not** the full flag variety: a root determines an ordered splitting $V=L_0\oplus\cdots\oplus L_4$ into five lines, and the flag is only the chain of partial sums $V_k=L_0\oplus\cdots\oplus L_{k-1}$. The map "forget the splitting" is a fibration
+The root set of *Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$* is $PGL_5/T$, of dimension $20$. It is **not** the full flag variety: a root determines an ordered splitting $V=L_1\oplus\cdots\oplus L_5$ into five lines, and the flag is only the chain of partial sums $V_k=L_1\oplus\cdots\oplus L_k$. The map "forget the splitting" is a fibration
 
 $$
 PGL_5/T\longrightarrow PGL_5/B\cong\mathcal{F}
@@ -31,7 +31,7 @@ $$
 
 the root set is a ten-dimensional bundle over the ten-dimensional full flag variety. The root set is not the flag variety, and the difference is exactly the splitting data that the root remembers and the flag forgets.
 
-This article develops the flags, the partial flags, the incidence and the dimension counts, and then compares them with the root set. It assumes the root and the gauge of the preceding articles; it uses no form and no topology. The full flag variety is the model for the **ordered** structures of the root; the partial flag of the rank-two projection is the Grassmannian $\mathrm{Gr}(2,5)$ of *The Rank-Two Split*, read geometrically.
+This article develops the flags, the partial flags, the incidence and the dimension counts, and then compares them with the root set. It assumes the root and the gauge of the preceding articles; it uses no form and no topology. The full flag variety is the model for the **ordered** structures of the root; the partial flag of the rank-two projection is the Grassmannian $\mathrm{Gr}(2,5)$ of *The Rank-Two Split of $M_5(\mathbb{C})$*, read geometrically.
 
 ## Flags and Partial Flags
 
@@ -153,13 +153,13 @@ For $(1,2)$ it has dimension $1\cdot1+2\cdot3=7$; the projection to the line $\m
 **Definition.** The **splitting map** sends an ordered direct-sum decomposition
 
 $$
-V=L_0\oplus L_1\oplus\cdots\oplus L_4,\qquad \dim L_k=1,
+V=L_1\oplus L_2\oplus\cdots\oplus L_5,\qquad \dim L_k=1,
 $$
 
 to the full flag
 
 $$
-V_k=L_0\oplus\cdots\oplus L_{k-1},\qquad k=1,\dots,5 .
+V_k=L_1\oplus\cdots\oplus L_k,\qquad k=1,\dots,5 .
 $$
 
 **Proposition.** The splittings are the points of $PGL_5/T$, of dimension $20$; the full flags are the points of $PGL_5/B$, of dimension $10$; the splitting map is a fibration with fibre $B/T\cong U$, of dimension $10$.
@@ -204,7 +204,7 @@ and the fibres have dimensions $14$ (for the rank-two parabolic), $10$ (for the 
 
 **Proof.** The dimension formula for $(2)$ gives $2(5-2)=6$. The stabiliser of the standard two-plane is the parabolic with blocks $2$ and $3$; the quotient is the Grassmannian.
 
-**Corollary.** The rank-two projection $P$ of *The Rank-Two Split* determines a point of $\mathrm{Gr}(2,5)$, its image $\operatorname{im}P$; the map $P\mapsto\operatorname{im}P$ from rank-two projections to the Grassmannian is surjective, with fibre the set of complements, of dimension $6$.
+**Corollary.** The rank-two projection $P$ of *The Rank-Two Split of $M_5(\mathbb{C})$* determines a point of $\mathrm{Gr}(2,5)$, its image $\operatorname{im}P$; the map $P\mapsto\operatorname{im}P$ from rank-two projections to the Grassmannian is surjective, with fibre the set of complements, of dimension $6$.
 
 **Proof.** Every two-plane is the image of a rank-two projection; the complements of a fixed two-plane are the graphs of linear maps from the two-plane to a complement, of dimension $2\cdot3=6$.
 
@@ -264,7 +264,7 @@ The root set $PGL_5/T$ is the space of ordered splittings into five lines; it is
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the flag varieties, the Borel and parabolic subgroups and the dimension formula.
 - Michel Demazure and Pierre Gabriel, *Groupes algébriques, Tome I* (North-Holland, 1970), for the flag varieties, the parabolic subgroups and the incidence correspondences.
 - Phillip Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the Grassmannians, the incidence varieties and their dimensions.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root set and its dimension $20$.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the frame bundle and the four-parameter gauge.
-- [The Rank-Two Split](the-rank-two-split-of-m5c.html), for the rank-two projection and the Grassmannian of its image.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the conjugacy class of the root and the flag-variety picture.
+- [Roots of Unity and the Lagrange Idempotents of $M_5(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m5c.html), for the root set and its dimension $20$.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the frame bundle and the four-parameter gauge.
+- [The Rank-Two Split of $M_5(\mathbb{C})$](the-rank-two-split-of-m5c.html), for the rank-two projection and the Grassmannian of its image.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the conjugacy class of the root and the flag-variety picture.

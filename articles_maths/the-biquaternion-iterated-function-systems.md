@@ -110,6 +110,6 @@ The affine maps of the biquaternion algebra are of three kinds, left-affine, rig
 
 - [Fractal Geometry](fractal-geometry.html) and [Iterated Function Systems in the Complex Plane](iterated-function-systems-in-the-complex-plane.html), for the attractor theorem, the open set condition and the similarity dimension used here.
 - [The Matrix Element Representation and the Biquaternion Dynamics](the-matrix-element-representation-and-the-biquaternion-dynamics.html), for the norm comparison that gives the Lipschitz bound.
-- [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the square root and its branches.
+- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the square root and its branches.
 - [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the cone on which the branches collapse.
 - [The Hausdorff Dimension of the Biquaternion Julia Sets](the-hausdorff-dimension-of-the-biquaternion-julia-sets.html), for the dimension of the quadratic fractal as against the systems.

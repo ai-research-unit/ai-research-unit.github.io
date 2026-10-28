@@ -1,4 +1,4 @@
-# __The Sextic and the Spectral Strata__
+# __The Sextic and the Spectral Strata of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -12,7 +12,7 @@ The six roots, counted with multiplicity, are the eigenvalues. Their multiplicit
 
 On the simple stratum the six spectral projectors are the Lagrange projectors of the sextic. They are polynomials in $A$, idempotent, of rank one, and they sum to the identity. At a repeated root they degenerate: the individual projectors have poles along the discriminant, the cluster projector onto a generalized eigenspace extends, and the nilpotent part is the residue.
 
-The article assumes the root and its Lagrange projectors of *Roots of Unity and the Lagrange Idempotents* and the algebra of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form and no topology. The spectral theorem for the Hermitian case is *Spectral Theory and the Spectral Projectors*; the exponential is *The Exponential and the Lie Group*.
+The article assumes the root and its Lagrange projectors of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$* and the algebra of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form and no topology. The spectral theorem for the Hermitian case is *Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$*; the exponential is *The Exponential and the Lie Group of $M_6(\mathbb{C})$*.
 
 ## The Characteristic Sextic
 
@@ -107,7 +107,7 @@ is open and dense in $M_6(\mathbb{C})$, of dimension $36$.
 
 **Proof.** $\Delta$ is not identically zero: the diagonal matrix $\operatorname{diag}(1,2,3,4,5,6)$ has $\Delta=\prod_{i<j}(i-j)^2\neq0$. The complement of a nonzero polynomial is open and dense, and a nonempty open subset of $\mathbb{C}^{36}$ has dimension $36$.
 
-**Remark.** The root set of *Roots of Unity and the Lagrange Idempotents* is not $U$: it is the subset of $U$ on which the spectrum is exactly the six sixth roots. It has dimension $30$, not $36$; the difference of six is the freedom of the six eigenvalues, which the root fixes.
+**Remark.** The root set of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$* is not $U$: it is the subset of $U$ on which the spectrum is exactly the six sixth roots. It has dimension $30$, not $36$; the difference of six is the freedom of the six eigenvalues, which the root fixes.
 
 ## The Strata
 
@@ -214,7 +214,7 @@ The first is the algebra $\mathbb{C}^6$; the second is its unit group, the torus
 
 **Proof.** If the spectrum is simple, $A$ is diagonalizable and $\mathbb{C}[A]$ is the algebra of diagonal matrices in the eigenbasis, isomorphic to $\mathbb{C}^6$. Its units are the diagonal matrices with nonzero entries, $(\mathbb{C}^\times)^6$. The projective quotient removes the overall scalar, leaving $(\mathbb{C}^\times)^5$.
 
-**Corollary (the root).** For the root $H$ of *Roots of Unity and the Lagrange Idempotents*, the centralizer in $GL_6$ is the maximal torus $(\mathbb{C}^\times)^6$, of dimension six, and the gauge is its projective quotient, of dimension five.
+**Corollary (the root).** For the root $H$ of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$*, the centralizer in $GL_6$ is the maximal torus $(\mathbb{C}^\times)^6$, of dimension six, and the gauge is its projective quotient, of dimension five.
 
 **Proof.** $H$ has simple spectrum and $\chi_H=t^6-1$, so it is cyclic. Its centralizer is the diagonal torus in the eigenbasis.
 
@@ -400,10 +400,10 @@ On the simple stratum the spectral projectors are the Lagrange projectors $P_i=\
 
 ## Further Reading
 
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m6c.html), for the root and its simple spectrum.
+- [Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m6c.html), for the root and its simple spectrum.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the trace, the determinant and the characteristic polynomial.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m6c.html), for the scalar-traceless decomposition.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the Hermitian spectral theorem.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the projectors as points of a homogeneous space.
+- [The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m6c.html), for the scalar-traceless decomposition.
+- [Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the Hermitian spectral theorem.
+- [The Geometry of the Idempotents of $M_6(\mathbb{C})$](the-geometry-of-the-idempotents-of-m6c.html), for the projectors as points of a homogeneous space.
 - Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 1995), for the contour integral projectors and their limits at a coalescence.
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for the cyclic elements and the maximal torus.

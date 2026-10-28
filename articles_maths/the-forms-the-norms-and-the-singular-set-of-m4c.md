@@ -1,4 +1,4 @@
-# __The Forms, the Norms and the Singular Set__
+# __The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article defines the trace form and the three norms, proves the norm inequalities, describes the determinant and the singular set, stratifies the singular set by rank with the dimension of each stratum, and compares the definite case with the null cone of the biquaternion algebra and its link.
 
-The involution and the positive definite form are *The Involution and the Hermitian Structure*; the polar decomposition is *The Polar Decomposition*; the rank-one determinantal variety is *Rank-One Matrices and the Determinantal Variety*; the biquaternion null cone is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*.
+The involution and the positive definite form are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*; the polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the rank-one determinantal variety is *Rank-One Matrices and the Determinantal Variety*; the biquaternion null cone is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*.
 
 ## The Forms
 
@@ -22,7 +22,7 @@ $$
 \langle A,A\rangle=\sum_{i,j=1}^{4}\lvert A_{ij}\rvert^2,
 $$
 
-with equality only for $A=0$. It is the form of *The Involution and the Hermitian Structure*, and it is the only positive definite form used in this article.
+with equality only for $A=0$. It is the form of *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*, and it is the only positive definite form used in this article.
 
 **The trace pairing.** The **bilinear trace pairing** is
 
@@ -30,7 +30,7 @@ $$
 \beta(A,B)=\operatorname{tr}(AB).
 $$
 
-It is symmetric, complex-bilinear and indefinite. It is not the Hermitian form; it agrees with it on the real symmetric matrices but not elsewhere. It is the pairing of *The Element, the Coordinates and the Trace*.
+It is symmetric, complex-bilinear and indefinite. It is not the Hermitian form; it agrees with it on the real symmetric matrices but not elsewhere. It is the pairing of *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*.
 
 **The Killing form.** On the traceless subalgebra,
 
@@ -158,7 +158,7 @@ $$
 \rho(A)\le\lVert A\rVert_{\mathrm{op}},
 $$
 
-with equality for normal matrices. The spectral radius is the subject of *Spectral Theory and the Spectral Projectors*.
+with equality for normal matrices. The spectral radius is the subject of *Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$*.
 
 ## The Determinant and the Singular Set
 
@@ -299,8 +299,8 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the singular values, the unitarily invariant norms, the determinant and the rank stratification.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Schatten norms, the duality of the operator and nuclear norms and the spectral radius.
 - Joe Harris, *Algebraic Geometry: A First Course* (Springer, 1992), for determinantal varieties and their dimensions.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m4c.html), for the positive definite trace form.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m4c.html), for the trace pairing.
-- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the singular value decomposition.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the spectral radius and the eigenvalues.
+- [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the positive definite trace form.
+- [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the trace pairing.
+- [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the singular value decomposition.
+- [Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m4c.html), for the spectral radius and the eigenvalues.
 - [$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the null cone of the regular model.

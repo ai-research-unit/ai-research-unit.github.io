@@ -189,7 +189,7 @@ The framework's relation to this is a relation of one factor. The spin factor is
 
 ## Further Reading
 
-- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the definition of an elementary particle and the $*$-unitary/antiunitary dichotomy.
+- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the definition of an elementary particle and the $*$-unitary/antiunitary dichotomy.
 - J. von Neumann, *Mathematical Foundations of Quantum Mechanics* (Springer, 1932), for the abstract Hilbert space and the convergence conditions.
 - W. Pauli, "Zur Quantenmechanik des magnetischen Elektrons," *Zeitschrift für Physik* **43** (1927) 601–623, for the spin doubling of the wave function.
 - W. Heisenberg, "Über den Bau der Atomkerne I," *Zeitschrift für Physik* **77** (1932) 1–11, for the proton–neutron charge doublet.

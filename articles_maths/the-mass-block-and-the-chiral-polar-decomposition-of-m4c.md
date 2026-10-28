@@ -1,4 +1,4 @@
-# __The Mass Block and the Chiral Polar Decomposition__
+# __The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -16,7 +16,7 @@ $$
 
 The chiral gauge acts by $M\mapsto U_LMU_R^{-1}$ with $U_L,U_R\in U(2)$. The singular values $\sigma_1,\sigma_2$ are the two invariants of the orbit; the determinant is a phase times their product; the rank counts the massless modes.
 
-The article defines the mass block, proves the singular value and polar decompositions, identifies the invariants and the orbits, explains the determinant phase and the rank, and states why the off-diagonal block is the only coupling of the chiralities. The rank-two split is *The Rank-Two Split*; the chirality is *The Two Chiralities*; the three-parameter gauge is *The Three-Parameter Gauge and the Chiral Polar Decomposition*; the full polar decomposition is *The Polar Decomposition*.
+The article defines the mass block, proves the singular value and polar decompositions, identifies the invariants and the orbits, explains the determinant phase and the rank, and states why the off-diagonal block is the only coupling of the chiralities. The rank-two split is *The Rank-Two Split of $M_4(\mathbb{C})$*; the chirality is *The Two Chiralities of $M_4(\mathbb{C})$*; the three-parameter gauge is *The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*; the full polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*.
 
 ## The Mass Block
 
@@ -266,7 +266,7 @@ $$
 z=e^{i\theta}\lvert z\rvert .
 $$
 
-There is one singular value $\lvert z\rvert$, one phase $e^{i\theta}$, and the rank is $1$ for $z\ne0$ and $0$ for $z=0$. The two singular values of the four-dimensional mass block degenerate to one modulus; the chiral phase is the only phase. The comparison with the three-parameter gauge of the $M_4$ frame is *The Three-Parameter Gauge and the Chiral Polar Decomposition*.
+There is one singular value $\lvert z\rvert$, one phase $e^{i\theta}$, and the rank is $1$ for $z\ne0$ and $0$ for $z=0$. The two singular values of the four-dimensional mass block degenerate to one modulus; the chiral phase is the only phase. The comparison with the three-parameter gauge of the $M_4$ frame is *The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
 
 **The general pattern.** For $M_{2m}(\mathbb{C})$ with the chirality split into two $m$-dimensional planes, the mass block is $M_m(\mathbb{C})$, and its chiral polar decomposition has $m$ singular values. For $m=1$ there is one modulus; for $m=2$ there are two; for $m=3$ there are three. The two singular values of the $M_4$ mass block are the first nontrivial case.
 
@@ -305,8 +305,8 @@ $$
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the singular value decomposition, the polar decomposition and the determinant.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the variational characterization of singular values and the operator norms.
-- [The Rank-Two Split](the-rank-two-split-of-m4c.html), for the corners and the mass block.
-- [The Two Chiralities](the-two-chiralities-of-m4c.html), for the chirality decomposition and the chiral blocks.
-- [The Three-Parameter Gauge and the Chiral Polar Decomposition](the-three-parameter-gauge-and-the-chiral-polar-decomposition-of-m4c.html), for the gauge and the scalar case.
-- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the full $U(4)$ polar decomposition.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the norm and the determinant.
+- [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the corners and the mass block.
+- [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the chirality decomposition and the chiral blocks.
+- [The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-three-parameter-gauge-and-the-chiral-polar-decomposition-of-m4c.html), for the gauge and the scalar case.
+- [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the full $U(4)$ polar decomposition.
+- [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the norm and the determinant.

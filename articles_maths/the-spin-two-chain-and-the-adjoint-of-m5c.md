@@ -1,8 +1,8 @@
-# __The Spin-Two Chain and the Adjoint $1+3+5+7+9$__
+# __The Spin-Two Chain and the Adjoint $1+3+5+7+9$ of $M_5(\mathbb{C})$__
 
 ## Introduction
 
-The adjoint decomposition of *The Spin Chain and the Adjoint Decomposition* is
+The adjoint decomposition of *The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$* is
 
 $$
 \mathfrak{gl}_5=V_0\oplus V_1\oplus V_2\oplus V_3\oplus V_4,
@@ -26,7 +26,7 @@ with the conventions $c_0=c_5=0$ and the terms omitted when an index leaves $\{1
 
 The chain is the spin-two chain of the carrier, read on the adjoint. The carrier itself is $V_2=\mathbb{C}^5$ with the weights $2,1,0,-1,-2$; the adjoint is $V_2\otimes V_2=V_0\oplus V_1\oplus V_2\oplus V_3\oplus V_4$. The five summands are the five **highest-weight sectors**: the scalar, the vector, the spin two, the spin three and the spin four. The article computes each sector, its highest weight vector and its weight content, and compares the chain with the biquaternion case $n=2$.
 
-The article assumes the carrier, the matrices $J_3,J_+,J_-$ and the Clebsch–Gordan decomposition of *The Spin Chain and the Adjoint Decomposition*. The modules and the minimal left ideals are *The Modules and the Minimal Left Ideals*; the explicit matrices of the carrier are repeated here for the computation of the chain.
+The article assumes the carrier, the matrices $J_3,J_+,J_-$ and the Clebsch–Gordan decomposition of *The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$*. The modules and the minimal left ideals are *The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$*; the explicit matrices of the carrier are repeated here for the computation of the chain.
 
 ## The Lowering Formula
 
@@ -113,7 +113,7 @@ For $X_1=J_+$: $\operatorname{ad}_{J_+}J_+=[J_+,J_+]=0$.
 For $X_2$: using the raising formula,
 
 $$
-\operatorname{ad}_{J_+}E_{13}=c_0E_{03}-c_3E_{14}=-\sqrt6E_{14},
+\operatorname{ad}_{J_+}E_{13}=-c_3E_{14}=-\sqrt6E_{14},
 $$
 
 $$
@@ -121,7 +121,7 @@ $$
 $$
 
 $$
-\operatorname{ad}_{J_+}E_{35}=c_2E_{25}-c_5E_{36}=\sqrt6E_{25}.
+\operatorname{ad}_{J_+}E_{35}=c_2E_{25}=\sqrt6E_{25}.
 $$
 
 Hence
@@ -133,8 +133,8 @@ $$
 For $X_3$:
 
 $$
-\operatorname{ad}_{J_+}E_{14}=c_0E_{04}-c_4E_{15}=-2E_{15},\qquad
-\operatorname{ad}_{J_+}E_{25}=c_1E_{15}-c_5E_{26}=2E_{15},
+\operatorname{ad}_{J_+}E_{14}=-c_4E_{15}=-2E_{15},\qquad
+\operatorname{ad}_{J_+}E_{25}=c_1E_{15}=2E_{15},
 $$
 
 so $\operatorname{ad}_{J_+}X_3=0$.
@@ -142,7 +142,7 @@ so $\operatorname{ad}_{J_+}X_3=0$.
 For $X_4=E_{15}$:
 
 $$
-\operatorname{ad}_{J_+}E_{15}=c_0E_{05}-c_5E_{16}=0.
+\operatorname{ad}_{J_+}E_{15}=0.
 $$
 
 **Remark.** The vector $X_2$ is the unique highest weight vector of weight $2$ up to scale in the span of $E_{13},E_{24},E_{35}$; the coefficients solve the two equations $2b=\sqrt6a$ and $\sqrt6c=2b$. The vector $X_3$ is the unique one of weight $3$ in the span of $E_{14},E_{25}$, with equal coefficients. The vectors $X_0,X_1,X_4$ are the obvious highest weight vectors of the scalar, the raising operator and the top corner.
@@ -357,7 +357,7 @@ with $c_0=c_5=0$. The weight multiplicities are $1,2,3,4,5,4,3,2,1$; the chain f
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the highest-weight classification, the Clebsch–Gordan decomposition and the weight diagrams of $\mathfrak{sl}_2$.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the highest weight vectors, the cyclic modules and the character argument.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, second edition, 2015), for the compact real form and the $*$-unitary generators.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m5c.html), for the carrier, the generators and the Clebsch–Gordan proof of the decomposition.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the matrix units and the Peirce lines that carry the weights.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge that rescales the simple nilpotents and the ladder coefficients.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the carrier as a module and the distinction between the carrier and the Peirce lines.
+- [The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m5c.html), for the carrier, the generators and the Clebsch–Gordan proof of the decomposition.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the matrix units and the Peirce lines that carry the weights.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge that rescales the simple nilpotents and the ladder coefficients.
+- [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the carrier as a module and the distinction between the carrier and the Peirce lines.

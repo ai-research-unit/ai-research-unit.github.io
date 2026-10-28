@@ -140,7 +140,7 @@ The general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^
 
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the isotopes of a multiplication and the left and right multiplications of a non-associative algebra.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the idempotents, the Peirce decomposition and the left ideals of the associative model $M_2(\mathbb{C})$ to which the operators of the product reduce.
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the criterion that selects the plain product and the table of the twelve structures.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the criterion that selects the plain product and the table of the twelve structures.
 - [Square Roots of One and the Idempotents of the General Quaternionic Algebra](square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.html), for the idempotents $0$ and $e_t$ and the displacement of the plain idempotents into the projectors of this article.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the cone, the two families and the annihilators.
 - [Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra](square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.html), for the nilpotent cone and the index two.

@@ -234,12 +234,12 @@ Every element has a **polar decomposition** $\tilde{Q}_1=\tilde Q_0\lvert\tilde{
 
 ## Further Reading
 
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra and the four conjugations
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra and the four conjugations
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the general quaternionic bilinear form
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the scalar form
-- [The Group of Involutions](the-group-of-involutions.html), for the four involutions, and [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html) for their fixed spaces.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for $\mathbb{M}_+$, its norm and its isotropic cone, and [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for its Jordan structure.
-- [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, the Hermitian matrices, the determinant and the absolute determinant.
+- [The Group of Involutions](the-group-of-involutions.html), for the four involutions, and [The Six Subspaces](introduction-to-the-remarkable-subspaces.html) for their fixed spaces.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for $\mathbb{M}_+$, its norm and its isotropic cone, and [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for its Jordan structure.
+- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, the Hermitian matrices, the determinant and the absolute determinant.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $\langle\cdot\rangle$, the polar form, the invertibility criterion, the real forms, the general plain sesquilinear form and the inner product.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the signature $(1,3)$ of $\mathbb{M}_+$ and the identification of the dagger with the Euclidean reversion.
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the cone as the image of the identity under the sandwich.

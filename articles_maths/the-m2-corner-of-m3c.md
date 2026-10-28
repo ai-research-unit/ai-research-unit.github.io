@@ -10,7 +10,7 @@ $$
 
 It is closed under multiplication, its unit is $P$, and it is isomorphic to $M_{2}(\mathbb{C})$. The isomorphism is not an equality: the corner lives inside $M_{3}$ with the unit $P$ rather than $I$, its trace is the ambient trace restricted to it, and its determinant is the determinant of the compressed endomorphism, not the restriction of $\det A$. The corner is a unital $*$-algebra exactly when $P$ is Hermitian; for a non-Hermitian idempotent the ambient star carries the corner to a different corner.
 
-This article states the compression, the isomorphism $P M_{3}P\cong M_{2}(\mathbb{C})$, the inherited trace and determinant, the $*$-condition, the embedding $M_{2}\to M_{3}$, the one-dimensional complement, and the failure of the involution for a non-Hermitian idempotent. The rank-two split of the whole algebra, with corners $4+2+2+1$, is *The Rank-Two Split*. The Peirce decomposition by three idempotents is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*.
+This article states the compression, the isomorphism $P M_{3}P\cong M_{2}(\mathbb{C})$, the inherited trace and determinant, the $*$-condition, the embedding $M_{2}\to M_{3}$, the one-dimensional complement, and the failure of the involution for a non-Hermitian idempotent. The rank-two split of the whole algebra, with corners $4+2+2+1$, is *The Rank-Two Split of $M_3(\mathbb{C})$*. The Peirce decomposition by three idempotents is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*.
 
 ## The Compression
 
@@ -51,7 +51,7 @@ $$
 **The standard case.** For $P_{1}=\operatorname{diag}(1,1,0)$ the corner is the set of matrices
 
 $$
-\begin{pmatrix}b_{00}&b_{01}&0\\b_{10}&b_{11}&0\\0&0&0\end{pmatrix},
+\begin{pmatrix}b_{11}&b_{12}&0\\b_{21}&b_{22}&0\\0&0&0\end{pmatrix},
 $$
 
 which is $M_{2}(\mathbb{C})$ in the upper-left block. The unit is $P_{1}=\operatorname{diag}(1,1,0)$, not $I$.
@@ -115,7 +115,7 @@ and it is not a factor of the ambient characteristic polynomial unless the compr
 
 **The corner is always a unital algebra, but it is a unital $*$-algebra only when $P$ is Hermitian.**
 
-Let $A^{*}=\bar A^{\mathsf T}$ be the conjugate transpose, as in *The Involution and the Hermitian Structure*. A **unital $*$-algebra** is an algebra with a unit and an involution that fixes the unit.
+Let $A^{*}=\bar A^{\mathsf T}$ be the conjugate transpose, as in *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*. A **unital $*$-algebra** is an algebra with a unit and an involution that fixes the unit.
 
 **Theorem.** Let $P$ be a rank-two idempotent and $B=P M_{3}P$.
 
@@ -164,7 +164,7 @@ $$
 M_{3}=PMP\oplus PMQ\oplus QMP\oplus QMQ,
 $$
 
-of dimensions $4+2+2+1$. The corner $PMP$ is the $M_{2}$ corner; the corner $QMQ$ is the field $\mathbb{C}$; the mixed corners $PMQ$ and $QMP$ are two-dimensional and carry the bimodule structure of *The Rank-Two Split*.
+of dimensions $4+2+2+1$. The corner $PMP$ is the $M_{2}$ corner; the corner $QMQ$ is the field $\mathbb{C}$; the mixed corners $PMQ$ and $QMP$ are two-dimensional and carry the bimodule structure of *The Rank-Two Split of $M_3(\mathbb{C})$*.
 
 **The direct sum is not an algebra direct sum.** The complement $\mathbb{C}Q$ is a subalgebra, and $PMP$ is a subalgebra, but their sum is not the whole algebra and the cross terms $PMQ,QMP$ are nonzero. If $M_{3}$ were the direct sum of the two corner algebras, the mixed corners would vanish, contradicting the simplicity of $M_{3}$. The Peirce decomposition is a vector-space decomposition with a multiplication rule, not a product of algebras.
 
@@ -273,8 +273,8 @@ The corner is a unital $*$-algebra exactly when $P=P^{*}$. For a non-Hermitian i
 ## Further Reading
 
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the coarse split and the Peirce lines.
-- [The Rank-Two Split](the-rank-two-split-of-m3c.html), for the four corners $4+2+2+1$ and the mass block.
+- [The Rank-Two Split of $M_3(\mathbb{C})$](the-rank-two-split-of-m3c.html), for the four corners $4+2+2+1$ and the mass block.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the trace, the determinant and the unit group.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m3c.html), for the star and the positive definite form.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion algebra as $M_{2}(\mathbb{C})$.
+- [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the star and the positive definite form.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion algebra as $M_{2}(\mathbb{C})$.
 - [Matrix Algebras](matrix-algebras.html), for the algebra $M_{2}(\mathbb{C})$ and its matrix units.

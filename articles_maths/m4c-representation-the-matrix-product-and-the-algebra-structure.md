@@ -259,10 +259,10 @@ The assignment $\mathsf{M}_4$ sends $e_t$ to $\mathrm I_4$ and the three vector 
 
 ## Further Reading
 
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra and its two products
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra and its two products
 - [$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants
 - [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate model and the two blocks
 - [$M_4(\mathbb{C})_L$ Representation : Worked Examples](m4c-representation-worked-examples.html), for the matrices computed in the model
-- [$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the commutant
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the $2\times2$ model
+- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the commutant
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the $2\times2$ model
 - [Matrix Algebras](matrix-algebras.html), for the structure of $M_n(\mathbb{C})$

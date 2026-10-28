@@ -1,4 +1,4 @@
-# __The Adjoint Action, the Orbits and the Flag Variety__
+# __The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -31,7 +31,7 @@ $$
 
 The gauge is the fibre of the conjugation map over the root: the set of frames diagonalising $H$ is a torsor under the stabilizer $(\mathbb{C}^\times)^5$.
 
-The article assumes the roots of *Roots of Unity and the Lagrange Idempotents* and the projective linear group of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses the language of algebraic groups but no topology beyond the dimension counts. The Jordan decomposition is *The Element, the Coordinates and the Trace*; the spectral strata are *The Sextic and the Spectral Strata*; the Grassmannian geometry is *The Geometry of the Idempotents*.
+The article assumes the roots of *Roots of Unity and the Lagrange Idempotents of $M_6(\mathbb{C})$* and the projective linear group of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses the language of algebraic groups but no topology beyond the dimension counts. The Jordan decomposition is *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$*; the spectral strata are *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*; the Grassmannian geometry is *The Geometry of the Idempotents of $M_6(\mathbb{C})$*.
 
 ## The Adjoint Action
 
@@ -156,7 +156,7 @@ $$
 (\mathbb{C}^\times)^5,
 $$
 
-the same group that rescales the simple nilpotents of *The Frame, the Simple Nilpotents and the Gauge*.
+the same group that rescales the simple nilpotents of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$*.
 
 **Proof.** $H$ has simple spectrum, so its centralizer is the diagonal torus modulo the center; the gauge is the same torus.
 
@@ -297,7 +297,7 @@ of dimension $2k(6-k)$. The image map to $\operatorname{Gr}(k,6)$ is a fibration
 
 **Corollary (the minimal ideals).** The minimal left ideals are parameterized by the hyperplanes of $\mathbb{C}^6$, that is by $\mathbb{P}^5$ of the dual; the minimal right ideals by the lines of $\mathbb{C}^6$, that is by $\mathbb{P}^5$.
 
-**Proof.** This is *The Modules and the Minimal Left Ideals*: the left ideal depends on the kernel hyperplane, the right ideal on the image line.
+**Proof.** This is *The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$*: the left ideal depends on the kernel hyperplane, the right ideal on the image line.
 
 ### The Incidence
 
@@ -420,10 +420,10 @@ The flag variety $GL_6/B$ has dimension $15$; the Grassmannians have dimensions 
 ## Further Reading
 
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for $PGL_6$, the derivations and the automorphisms.
-- [The Element, the Coordinates and the Trace](the-element-the-coordinates-and-the-trace-of-m6c.html), for the Jordan decomposition and the Jordan type.
-- [The Sextic and the Spectral Strata](the-sextic-and-the-spectral-strata-of-m6c.html), for the spectral strata and the centralizer.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the gauge torus.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the Grassmannian of the idempotents.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the projective space of the minimal ideals.
+- [The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m6c.html), for the Jordan decomposition and the Jordan type.
+- [The Sextic and the Spectral Strata of $M_6(\mathbb{C})$](the-sextic-and-the-spectral-strata-of-m6c.html), for the spectral strata and the centralizer.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the gauge torus.
+- [The Geometry of the Idempotents of $M_6(\mathbb{C})$](the-geometry-of-the-idempotents-of-m6c.html), for the Grassmannian of the idempotents.
+- [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the projective space of the minimal ideals.
 - [The Adjoint Action of a Lie Algebra](the-adjoint-action-of-a-lie-algebra.html), for the general theory of conjugacy classes.
 - [Flag Manifolds](flag-manifolds.html), for the general theory of $GL_n/B$ and the Plücker embedding.

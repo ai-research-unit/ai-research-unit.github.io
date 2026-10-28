@@ -2,9 +2,9 @@
 
 ## Introduction
 
-A Peirce decomposition with two primitive idempotents writes every biquaternion in four corners. Read as a matrix, the four corner coordinates are the four entries, and the four corner basis elements are the four matrix units. The same four entries carry a second grouping: the two columns. Each column is one of the two Peirce planes $\mathbb{B}\tilde\Pi_\pm$, the spinor planes of *The Spinor Spaces*, and the matrix shows the two groupings at once.
+A Peirce decomposition with two primitive idempotents writes every biquaternion in four corners. Read as a matrix, the four corner coordinates are the four entries, and the four corner basis elements are the four matrix units. The same four entries carry a second grouping: the two columns. Each column is one of the two Peirce planes $\mathbb{B}\tilde\Pi_\pm$, the spinor planes of *Spinors as Peirce Coordinates in the Biquaternion Algebra*, and the matrix shows the two groupings at once.
 
-This article develops the Peirce table, the coordinate isomorphism, the systems of matrix units, the two planes and the left and right actions on them. It is the matrix form of *The Peirce Decomposition* and *The Spinor Spaces*. It uses no form, no norm and no module.
+This article develops the Peirce table, the coordinate isomorphism, the systems of matrix units, the two planes and the left and right actions on them. It is the matrix form of *The Peirce Decomposition of the Biquaternion Algebra* and *Spinors as Peirce Coordinates in the Biquaternion Algebra*. It uses no form, no norm and no module.
 
 **Conventions.** The algebra and the fixed model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The standard idempotent pair is
 
@@ -20,9 +20,9 @@ $$
 \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y).
 $$
 
-In the generic Peirce labelling of *The Spinor Spaces*, $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$. The labels $x,y$ are the labels of the standard pair; a general element uses the labelling $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$, treated in *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
+In the generic Peirce labelling of *Spinors as Peirce Coordinates in the Biquaternion Algebra*, $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$. The labels $x,y$ are the labels of the standard pair; a general element uses the labelling $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$, treated in *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
 
-**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition*; the two planes, their couples and the exchange are *The Spinor Spaces*; the nilpotent cone is *Nilpotents*; the inner automorphisms are *Biquaternion Automorphisms and Derivations*. The module reading of the two planes is *The Minimal Left Ideals* and is not used here.
+**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes, their weight bases and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the nilpotent cone is *Nilpotents*; the inner automorphisms are *Biquaternion Automorphisms and Derivations*. The module reading of the two planes is *The Minimal Left Ideals* and is not used here.
 
 ## The Peirce Table
 
@@ -181,7 +181,7 @@ S_+\longmapsto\mathbb{C}E_{11}\oplus\mathbb{C}E_{21},
 S_-\longmapsto\mathbb{C}E_{12}\oplus\mathbb{C}E_{22}.
 $$
 
-The basis $(\tilde\Pi_+,\vec\Upsilon_y)$ of $S_+$ and the basis $(\vec\Upsilon_x,\tilde\Pi_-)$ of $S_-$ are the two couples $\mathcal{C}_+$ and $\mathcal{C}_-$ of *The Spinor Spaces*, written with the standard labels.
+The basis $(\tilde\Pi_+,\vec\Upsilon_y)$ of $S_+$ and the basis $(\vec\Upsilon_x,\tilde\Pi_-)$ of $S_-$ are the two weight bases of *Spinors as Peirce Coordinates in the Biquaternion Algebra*, written with the standard labels.
 
 **The direct sum.** Every element satisfies $\tilde X=\tilde X\tilde\Pi_++\tilde X\tilde\Pi_-$, so the two planes span. Their intersection is zero: if $\tilde Y=\tilde Y\tilde\Pi_+=\tilde Y\tilde\Pi_-$, then $\tilde Y=\tilde Y\tilde\Pi_+=\tilde Y\tilde\Pi_-\tilde\Pi_+=0$. Hence
 
@@ -289,10 +289,10 @@ The Peirce coordinates of the standard pair are the matrix entries, and the four
 
 ## Further Reading
 
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the corners, the Peirce table and the systems of matrix units
-- [The Spinor Spaces](the-spinor-spaces.html), for the two planes, the couples and the exchange
-- [$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the fixed model
-- [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the corners, the Peirce table and the systems of matrix units
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two planes, their weight bases and the exchange
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the fixed model
+- [Nilpotents](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone
 - [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis labelling
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the inner automorphisms
 - [Matrix Algebras](matrix-algebras.html), for systems of matrix units

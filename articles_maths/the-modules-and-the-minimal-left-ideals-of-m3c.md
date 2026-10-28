@@ -16,9 +16,9 @@ C(P)=PMP\oplus PMQ
 $$
 of a rank-one idempotent $P$, and identifies the module that carries the spin chain.
 
-The article is the module-theoretic companion of *The Peirce Decomposition of $M_{3}(\mathbb{C})$* and *The Triplet: Spin One and the Adjoint $1+3+5$*. The Peirce decomposition is a decomposition of the algebra into lines; the present article is about the modules over the algebra, which are different objects. In particular, a minimal left ideal is a three-dimensional module, not a one-dimensional Peirce line, and it is not a spinor. For $n=3$ the carrier is the spin-one module $\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2})$; only the case $n=2$ has a two-dimensional spinorial module. The distinction is stated once here and used throughout the category.
+The article is the module-theoretic companion of *The Peirce Decomposition of $M_{3}(\mathbb{C})$* and *The Triplet: Spin One and the Adjoint $1+3+5$ of $M_3(\mathbb{C})$*. The Peirce decomposition is a decomposition of the algebra into lines; the present article is about the modules over the algebra, which are different objects. In particular, a minimal left ideal is a three-dimensional module, not a one-dimensional Peirce line, and it is not a spinor. For $n=3$ the carrier is the spin-one module $\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2})$; only the case $n=2$ has a two-dimensional spinorial module. The distinction is stated once here and used throughout the category.
 
-The construction is root-first. The idempotents $P_{1},P_{2},P_{3}$ are those of *Roots of Unity and the Lagrange Idempotents*; the frame $E_{ij}$ and the gauge are those of *The Frame, the Simple Nilpotents and the Gauge* and *The Two-Parameter Gauge*.
+The construction is root-first. The idempotents $P_{1},P_{2},P_{3}$ are those of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the frame $E_{ij}$ and the gauge are those of *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$* and *The Two-Parameter Gauge of $M_3(\mathbb{C})$*.
 
 ## The Minimal Left Ideal
 
@@ -152,7 +152,7 @@ $$
 $$
 E_{kl}\longmapsto \frac{t_{k}}{t_{l}}E_{kl},
 $$
-as in *The Two-Parameter Gauge*. The isomorphism is multiplied by the scalar $t_{k}/t_{l}$, so the set of isomorphisms $M_{3}P_{k}\to M_{3}P_{l}$ is a torsor under $\mathbb{C}^{\times}$. The choice of an isomorphism is a choice of normalized frame, not a canonical structure of the algebra. The three minimal left ideals are isomorphic, but not canonically isomorphic.
+as in *The Two-Parameter Gauge of $M_3(\mathbb{C})$*. The isomorphism is multiplied by the scalar $t_{k}/t_{l}$, so the set of isomorphisms $M_{3}P_{k}\to M_{3}P_{l}$ is a torsor under $\mathbb{C}^{\times}$. The choice of an isomorphism is a choice of normalized frame, not a canonical structure of the algebra. The three minimal left ideals are isomorphic, but not canonically isomorphic.
 
 **The general minimal left ideal.** Every minimal left ideal of $M_{3}$ is of the form $M_{3}Q$ for a rank-one idempotent $Q$. Every rank-one idempotent is conjugate to $P_{1}$: if $Q$ has image the line $\mathbb{C}v$ and kernel a plane, choose $g\in GL_{3}$ with $g e_{1}=v$ and $g$ mapping the standard plane to the kernel; then $Q=gP_{1}g^{-1}$. The map
 $$
@@ -183,7 +183,7 @@ is nondegenerate, so the right carrier is the dual of the left carrier.
 
 ## The Module as the Carrier of the Spin Chain
 
-**The module.** The left module $M_{3}P_{1}\cong\mathbb{C}^{3}$ is the carrier of the defining representation. The principal $\mathfrak{sl}_{2}$ of *The Spin Chain and the Adjoint Decomposition* acts on it by left multiplication:
+**The module.** The left module $M_{3}P_{1}\cong\mathbb{C}^{3}$ is the carrier of the defining representation. The principal $\mathfrak{sl}_{2}$ of *The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$* acts on it by left multiplication:
 $$
 A\cdot v=Av,\qquad A\in\mathfrak{sl}_{2},\quad v\in\mathbb{C}^{3}.
 $$
@@ -265,10 +265,10 @@ The carrier of the spin chain is $M_{3}P_{1}\cong\mathbb{C}^{3}$, with weights $
 ## Further Reading
 
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the nine lines and the coarse corners.
-- [The Triplet: Spin One and the Adjoint $1+3+5$](the-triplet-spin-one-and-the-adjoint-of-m3c.html), for the spin-one summand and the nilpotent triplet.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m3c.html), for the weights and the ladder.
-- [The Matrix Algebra $M_{3}(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units and the tensor product.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the normalized frame and the exchange.
-- [The Two-Parameter Gauge](the-two-parameter-gauge-of-m3c.html), for the $\mathbb{C}^{\times}$-torsor of the exchange.
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the $n=2$ case and the spinorial module.
+- [The Triplet: Spin One and the Adjoint $1+3+5$ of $M_3(\mathbb{C})$](the-triplet-spin-one-and-the-adjoint-of-m3c.html), for the spin-one summand and the nilpotent triplet.
+- [The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m3c.html), for the weights and the ladder.
+- [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units and the tensor product.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the normalized frame and the exchange.
+- [The Two-Parameter Gauge of $M_3(\mathbb{C})$](the-two-parameter-gauge-of-m3c.html), for the $\mathbb{C}^{\times}$-torsor of the exchange.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the $n=2$ case and the spinorial module.
 - [Modules over an Algebra](modules-over-an-algebra.html), for the general theory of modules and simple modules.

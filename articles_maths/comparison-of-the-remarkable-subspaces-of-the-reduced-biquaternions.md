@@ -110,7 +110,7 @@ The eight remarkable subspaces of the reduced biquaternion algebra are the six c
 
 - [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the defining equations, bases and norms.
 - [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the block decomposition, the halvings and the idempotent decomposition.
-- [The Two Involutions and the Group of Involutions of the Reduced Biquaternions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the fixed and anti-fixed spaces.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the fixed and anti-fixed spaces.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two minimal ideals and the Peirce decomposition.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotents and the two lines.
-- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the non-commutative companion.
+- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the non-commutative companion.

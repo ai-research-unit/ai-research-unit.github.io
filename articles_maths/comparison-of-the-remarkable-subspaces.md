@@ -206,8 +206,8 @@ The remarkable subspaces of $\mathbb{B}$ are organized by the four coordinate bl
 
 ## Further Reading
 
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces themselves, one to a section
-- [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces.html), for the three decompositions and the projection formulas
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, its basis, its conjugations and its coordinate systems
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces themselves, one to a section
+- [The Three Eigenspace Decompositions](decompositions-along-the-remarkable-subspaces.html), for the three decompositions and the projection formulas
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, its basis, its conjugations and its coordinate systems
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations as an abstract group and the two spaces each defines
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for what the remarkable subspaces give when the product is brought in, which is not part of this article

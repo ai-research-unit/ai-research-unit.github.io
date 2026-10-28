@@ -1,4 +1,4 @@
-# __The Element, the Coordinates and the Trace__
+# __The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -14,7 +14,7 @@ $$
 
 the trace pairing $\langle A,B\rangle=\operatorname{tr}(AB)$, the real and imaginary parts, and the Jordan decomposition $A=S+N$ into commuting semisimple and nilpotent parts. The split is orthogonal for the trace pairing, and the trace pairing is the nondegenerate invariant form that identifies the algebra with its dual.
 
-The article assumes only the definition of the matrix algebra of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form and no topology. The Hermitian form $\operatorname{tr}(A^*B)$ is *The Involution and the Hermitian Structure*; the spectral strata are *The Sextic and the Spectral Strata*; the Killing form is *The Matrix Algebra $M_6(\mathbb{C})$*.
+The article assumes only the definition of the matrix algebra of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form and no topology. The Hermitian form $\operatorname{tr}(A^*B)$ is *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$*; the spectral strata are *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*; the Killing form is *The Matrix Algebra $M_6(\mathbb{C})$*.
 
 ## The Coordinates
 
@@ -194,7 +194,7 @@ $$
 
 **Proof.** The whole form is nondegenerate, and the two summands are orthogonal; the restriction to each is therefore nondegenerate.
 
-**Remark (the trace form is not definite).** Over $\mathbb{C}$ the trace pairing is a complex bilinear form; it has isotropic vectors. For example, $E_{12}$ is isotropic: $\operatorname{tr}(E_{12}^2)=\operatorname{tr}(0)=0$. The positive definite form is the Hermitian form $\operatorname{tr}(A^*B)$ of *The Involution and the Hermitian Structure*, not the complex bilinear trace pairing.
+**Remark (the trace form is not definite).** Over $\mathbb{C}$ the trace pairing is a complex bilinear form; it has isotropic vectors. For example, $E_{12}$ is isotropic: $\operatorname{tr}(E_{12}^2)=\operatorname{tr}(0)=0$. The positive definite form is the Hermitian form $\operatorname{tr}(A^*B)$ of *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$*, not the complex bilinear trace pairing.
 
 ## The Element as a Linear Map
 
@@ -230,7 +230,7 @@ A^*:\mathbb{C}^6\longrightarrow\mathbb{C}^6,\qquad
 y\longmapsto y^{\mathsf T}A,
 $$
 
-and the two actions are the two regular modules of *The Modules and the Minimal Left Ideals*.
+and the two actions are the two regular modules of *The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$*.
 
 **Proof.** The column action is the defining action; the row action is the transpose action on the dual.
 
@@ -441,7 +441,7 @@ is the Jordan decomposition of $f(A)$.
 
 ### The Jordan Decomposition and the Spectral Projectors
 
-**Theorem.** Let $P_i$ be the spectral projector onto the generalized eigenspace of $\lambda_i$, given by the contour integral of *The Sextic and the Spectral Strata*. Then
+**Theorem.** Let $P_i$ be the spectral projector onto the generalized eigenspace of $\lambda_i$, given by the contour integral of *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*. Then
 
 $$
 S=\sum_{i=1}^{r}\lambda_iP_i,
@@ -457,7 +457,7 @@ For a simple spectrum, the $P_i$ are the Lagrange projectors and $N=0$.
 
 **Corollary (the limit).** The Jordan decomposition is the limit of the spectral decomposition as the eigenvalues coalesce: the semisimple part is the limit of $\sum_i\lambda_iP_i$, and the nilpotent part is the limit of the weighted differences.
 
-**Proof.** The spectral projectors and the spectral sum are continuous in the contour-integral sense; the cluster projectors extend, and the weighted differences converge to the nilpotent part, as in the example of *The Sextic and the Spectral Strata*.
+**Proof.** The spectral projectors and the spectral sum are continuous in the contour-integral sense; the cluster projectors extend, and the weighted differences converge to the nilpotent part, as in the example of *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*.
 
 ## Summary
 
@@ -524,8 +524,8 @@ The Jordan decomposition is $A=S+N$ with $S$ semisimple, $N$ nilpotent, $SN=NS$,
 ## Further Reading
 
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the definition, the determinant and the Lie algebra.
-- [The Sextic and the Spectral Strata](the-sextic-and-the-spectral-strata-of-m6c.html), for the characteristic polynomial and the spectral projectors.
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the positive definite form $\operatorname{tr}(A^*B)$.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the left and right regular modules.
-- [The Polar Decomposition](the-polar-decomposition-of-m6c.html), for the multiplicative analogue of the Jordan decomposition.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m6c.html), for the Frobenius norm and the definite form.
+- [The Sextic and the Spectral Strata of $M_6(\mathbb{C})$](the-sextic-and-the-spectral-strata-of-m6c.html), for the characteristic polynomial and the spectral projectors.
+- [The Involution and the Hermitian Structure of $M_6(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m6c.html), for the positive definite form $\operatorname{tr}(A^*B)$.
+- [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the left and right regular modules.
+- [The Polar Decomposition of $M_6(\mathbb{C})$](the-polar-decomposition-of-m6c.html), for the multiplicative analogue of the Jordan decomposition.
+- [The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m6c.html), for the Frobenius norm and the definite form.

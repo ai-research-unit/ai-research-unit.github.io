@@ -337,7 +337,7 @@ The idempotents of rank $p$ are an affine bundle over $\operatorname{Gr}(p,5)$ w
 - Raoul Bott and Loring W. Tu, *Differential Forms in Algebraic Topology* (Springer, 1982), for the first Chern class, the determinant bundle and the Chern–Weil theory.
 - Phillip Griffiths and Joseph Harris, *Principles of Algebraic Geometry* (Wiley, 1978), for the Grassmannians, the flag varieties and the Schubert calculus.
 - William Fulton, *Young Tableaux* (Cambridge University Press, 1997), for the Schubert classes and the cohomology of the Grassmannians.
-- [The Polar Decomposition](the-polar-decomposition-of-m5c.html), for the deformation retraction and the positive cone.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m5c.html), for the affine bundle over the Grassmannian.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the flag variety and the orbit dimensions.
-- [The Partial Flags](the-partial-flags-of-m5c.html), for the partial flag varieties and their dimensions.
+- [The Polar Decomposition of $M_5(\mathbb{C})$](the-polar-decomposition-of-m5c.html), for the deformation retraction and the positive cone.
+- [The Geometry of the Idempotents of $M_5(\mathbb{C})$](the-geometry-of-the-idempotents-of-m5c.html), for the affine bundle over the Grassmannian.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_5(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html), for the flag variety and the orbit dimensions.
+- [The Partial Flags of $M_5(\mathbb{C})$](the-partial-flags-of-m5c.html), for the partial flag varieties and their dimensions.

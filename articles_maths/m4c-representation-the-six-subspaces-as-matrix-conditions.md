@@ -148,8 +148,8 @@ The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian a
 
 ## Further Reading
 
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the definitions
-- [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces.html), for the intersections
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the definitions
+- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the intersections
 - [$M_4(\mathbb{C})_L$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the matrix involutions
 - [$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
-- [$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the $2\times2$ version
+- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the $2\times2$ version

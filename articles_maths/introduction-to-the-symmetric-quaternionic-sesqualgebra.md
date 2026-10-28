@@ -275,4 +275,4 @@ The symmetric quaternionic sesquilinear product is $\tilde Q_1\star\tilde Q_2=\t
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four general products and the place of the general quaternionic sesquilinear product among them.
 - [K-Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null set, the isotropic structure and the cone.
 - [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html), for the operators of the product that is split.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces named in the articles of the block.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable real subspaces named in the articles of the block.

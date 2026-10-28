@@ -1,4 +1,4 @@
-# __The Three-Parameter Gauge and the Chiral Polar Decomposition__
+# __The Three-Parameter Gauge and the Chiral Polar Decomposition of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article recalls the three-parameter gauge and its action on the mass block, proves the blockwise polar decomposition of a block-diagonal element and the antidiagonal case, states the general $U(4)$ polar factor, and compares the chiral polar decomposition with the single $\lambda$ of the biquaternion algebra.
 
-The frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge*; the mass block is *The Mass Block and the Chiral Polar Decomposition*; the full polar decomposition is *The Polar Decomposition*; the exponential form is *The Exponential Polar Decomposition*.
+The frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the mass block is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*; the full polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the exponential form is *The Exponential Polar Decomposition of $M_4(\mathbb{C})$*.
 
 ## The Three-Parameter Gauge
 
@@ -84,7 +84,7 @@ $$
 12+3=15=\dim_\mathbb{C}PGL_4.
 $$
 
-The gauge is the fibre of the frame bundle over the root; the three parameters are the rescalings of the frame that leave the root's spectral data unchanged. The count is the orbit–stabiliser count of *The Adjoint Action, the Orbits and the Flag Variety*.
+The gauge is the fibre of the frame bundle over the root; the three parameters are the rescalings of the frame that leave the root's spectral data unchanged. The count is the orbit–stabiliser count of *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*.
 
 ## The Gauge on the Mass Block
 
@@ -356,8 +356,8 @@ $$
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the polar decomposition, the singular value decomposition and the $*$-unitary group.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $U(4)$, $U(2)\times U(2)$ and the exponential.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the torus and the cocycle.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block and its polar decomposition.
-- [The Polar Decomposition](the-polar-decomposition-of-m4c.html), for the full $U(4)$ decomposition.
-- [The Exponential Polar Decomposition](the-exponential-polar-decomposition-of-m4c.html), for the exponential form.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge and its comparison with the biquaternion case.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the torus and the cocycle.
+- [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block and its polar decomposition.
+- [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the full $U(4)$ decomposition.
+- [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the exponential form.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge and its comparison with the biquaternion case.

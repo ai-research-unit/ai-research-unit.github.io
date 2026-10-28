@@ -1,4 +1,4 @@
-# __Roots of Unity and the Lagrange Idempotents__
+# __Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ A single matrix $H$ with $H^{3}=I$ and three distinct eigenvalues carries the wh
 
 The construction is **root-first**. One matrix $H$ is the primitive datum. The Lagrange formula is a polynomial in $H$, so every idempotent is a polynomial in $H$; no second root, no transverse element and no pair of roots enters. The case $n=2$ is the order-two case of the same formula: there the roots are $\pm1$ and the two idempotents are $(I\pm H)/2$, which is the biquaternion frame. The case $n=3$ needs the three cube roots and one $H$.
 
-The article assumes the algebra $M_{3}(\mathbb{C})$, its basis $E_{ij}$ and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$ of *The Matrix Algebra $M_{3}(\mathbb{C})$*. The Peirce decomposition built on the idempotents is *The Peirce Decomposition*; the gauge of the off-diagonal units is *The Frame, the Simple Nilpotents and the Gauge*; the spectral theory at a repeated root is *The Cubic, the Discriminant and the Spectral Strata*.
+The article assumes the algebra $M_{3}(\mathbb{C})$, its basis $E_{ij}$ and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$ of *The Matrix Algebra $M_{3}(\mathbb{C})$*. The Peirce decomposition built on the idempotents is *The Peirce Decomposition of $M_3(\mathbb{C})$*; the gauge of the off-diagonal units is *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*; the spectral theory at a repeated root is *The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$*.
 
 ## The Cube Roots of Unity
 
@@ -96,7 +96,7 @@ The polynomial $L_{k}$ has degree two and satisfies $L_{k}(\zeta_{l})=\delta_{kl
 5. $\operatorname{rank}P_{k}=1$ and $\operatorname{tr}P_{k}=1$;
 6. $P_{k}$ is the projection onto $\ker(H-\zeta_{k}I)$ along the direct sum of the other two eigenspaces.
 
-**Proof.** Let $v_{0},v_{1},v_{2}$ be eigenvectors of $H$ with eigenvalues $\zeta_{1},\zeta_{2},\zeta_{3}$. They form a basis because the spectrum is simple. By the spectral mapping theorem for a diagonalisable matrix, for every polynomial $f$ the operator $f(H)$ acts on $v_{l}$ by the scalar $f(\zeta_{l})$:
+**Proof.** Let $v_{1},v_{2},v_{3}$ be eigenvectors of $H$ with eigenvalues $\zeta_{1},\zeta_{2},\zeta_{3}$. They form a basis because the spectrum is simple. By the spectral mapping theorem for a diagonalisable matrix, for every polynomial $f$ the operator $f(H)$ acts on $v_{l}$ by the scalar $f(\zeta_{l})$:
 
 $$
 f(H)v_{l}=f(\zeta_{l})v_{l}.
@@ -309,7 +309,7 @@ $$
 
 They are idempotent, orthogonal and complete, $H=P_{+}-P_{-}$, and each has rank one. The algebra $M_{2}(\mathbb{C})$ is the biquaternion algebra $\mathbb{B}$, and this is its frame of two idempotents; the construction is the order-two case of the formula of §*The Lagrange Projectors*, with the two roots of $x^{2}-1$.
 
-**The contrast with $n=3$.** For $n=3$ the single root $H$ produces three idempotents, because the polynomial $x^{3}-1$ has three roots. No second root is needed, and none is introduced here. The biquaternion frame of *The Peirce Decomposition* uses a second root only to fix the relative scale of its two mixed units; that is a feature of the two-dimensional carrier, not a primitive datum of the $n=3$ construction. In $M_{3}(\mathbb{C})$ the three idempotents are already complete, and the only remaining freedom is the gauge of the off-diagonal units, treated in *The Frame, the Simple Nilpotents and the Gauge*.
+**The contrast with $n=3$.** For $n=3$ the single root $H$ produces three idempotents, because the polynomial $x^{3}-1$ has three roots. No second root is needed, and none is introduced here. The biquaternion frame of *The Peirce Decomposition of the Biquaternion Algebra* uses a second root only to fix the relative scale of its two mixed units; that is a feature of the two-dimensional carrier, not a primitive datum of the $n=3$ construction. In $M_{3}(\mathbb{C})$ the three idempotents are already complete, and the only remaining freedom is the gauge of the off-diagonal units, treated in *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*.
 
 ## Summary
 
@@ -350,7 +350,7 @@ The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the 
 | Symbol | Meaning |
 |---|---|
 | $\omega$ | $e^{2\pi i/3}$, a primitive cube root of unity |
-| $\zeta_{k}$ | $\omega^{k}$, $k=1,2,3$, the three cube roots |
+| $\zeta_{k}$ | $\omega^{k-1}$, $k=1,2,3$, the three cube roots |
 | $H$ | a root of unity of order three, $H^{3}=I$ with simple spectrum |
 | $P_{k}=L_{k}(H)$ | the Lagrange projector at $\zeta_{k}$ |
 | $L_{k}(x)$ | $\prod_{l\neq k}(x-\zeta_{l})/(\zeta_{k}-\zeta_{l})$ |
@@ -362,10 +362,11 @@ The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the 
 
 ## Further Reading
 
-- [The Matrix Algebra $M_{3}(\mathbb{C})$](the-matrix-algebra-m3c.html), for the algebra, its matrix units, its trace and its determinant.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m3c.html), for the decomposition of the algebra by the three Lagrange idempotents.
-- [The Cubic, the Discriminant and the Spectral Strata](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the characteristic cubic, the discriminant and the degeneration of the projectors at a repeated root.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the order-two case and the biquaternion frame.
+- [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the algebra, its matrix units, its trace and its determinant.
+- [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the decomposition of the algebra by the three Lagrange idempotents.
+- [The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the characteristic cubic, the discriminant and the degeneration of the projectors at a repeated root.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the order-two case and the biquaternion frame.
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the spectral theorem for diagonalisable matrices.
 - [Interpolation Theory](interpolation-theory.html), for the Lagrange interpolation formula in one variable.
 - [Flag Manifolds](flag-manifolds.html), for the flag variety, its dimension and its homogeneous description.
+- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the general construction at order $n$.

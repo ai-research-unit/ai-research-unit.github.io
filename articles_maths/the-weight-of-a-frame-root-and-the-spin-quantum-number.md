@@ -127,7 +127,7 @@ $$
 =\exp\!\left(-i\theta J_3\right)
 $$
 
-acts by left multiplication on the carrier and by the commutator on the traceless part. In the standard matrix model it is $\operatorname{diag}(e^{-i\theta/2},e^{i\theta/2})$ on the carrier, and it has eigenvalues $1,e^{-i\theta},e^{i\theta}$ on $V$. The exponent is $\theta/2$ in the first case and $\theta$ in the second. The half-angle is the weight of the carrier under $J_3$; the full angle is the weight of the traceless part. They are one root and two actions, not two definitions.
+acts by left multiplication on the carrier and by the commutator on the traceless part. In the standard matrix model it is $\operatorname{diag}(e^{-i\theta/2},e^{i\theta/2})$ on the carrier, and it has eigenvalues $1,e^{-i\theta},e^{i\theta}$ on $V$. The exponent is $\theta/2$ in the first case and $\theta$ in the second. The half-angle is the exponential coordinate of the weight under $J_3$; the full angle is the exponential coordinate of the weight on the traceless part. They are one root and two actions, not two definitions.
 
 **Table of the two carriers.**
 

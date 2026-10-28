@@ -165,5 +165,5 @@ The general plain algebra carries four distinguished forms, the scalar parts of 
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the norm of the multiplication.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the vanishing sets of the norms.
 - [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the adjoint rule and the bi-module structure.
-- [The Two Involutions and the Group of Involutions of the Reduced Biquaternions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the tessarine sign, the star and the bar.
+- [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the tessarine sign, the star and the bar.
 - [The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form](the-form-on-the-biquaternion-algebra-as-a-general-plain-sesquilinear-form.html), for the non-commutative companion of the layer's selection.

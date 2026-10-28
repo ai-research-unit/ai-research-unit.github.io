@@ -342,7 +342,7 @@ No spectral split is available. The quaternionic plane works because the norm an
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the comparison of the four forms and of the four norms.
 - [The Realification of the General Quaternionic Sesqualgebra](the-realification-of-the-general-quaternionic-sesqualgebra.html), for the real matrix of the form and the signature $(2,6)$.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the zero-divisor set and its criterion.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the Peirce idempotents and the minimal left ideals behind the doubly null lines.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the Peirce idempotents and the minimal left ideals behind the doubly null lines.
 - [Indefinite Inner Product Spaces](indefinite-inner-product-spaces.html), for the classification of subspaces and the isotropic structure of an indefinite form.
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for the fundamental decomposition and the theory of Krein spaces.
 - Thomas Ya. Azizov and Iosif S. Iokhvidov, *Linear Operators in Spaces with an Indefinite Metric* (Wiley, 1989), for the Pontryagin space and the indefinite metric.

@@ -10,11 +10,11 @@ The second is the **spin-one summand** $V_{1}$ of the adjoint decomposition
 $$
 M_{3}(\mathbb{C})=V_{2}\oplus V_{1}\oplus\mathbb{C}I,\qquad 5+3+1=9,
 $$
-of *The Spin Chain and the Adjoint Decomposition*. It is an irreducible $\mathfrak{sl}_{2}$-module of highest weight $1$, with weights $1,0,-1$. It is not a subalgebra. The adjoint of $PGL_{3}$ is the traceless part $V_{2}\oplus V_{1}$, of dimension $8$.
+of *The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$*. It is an irreducible $\mathfrak{sl}_{2}$-module of highest weight $1$, with weights $1,0,-1$. It is not a subalgebra. The adjoint of $PGL_{3}$ is the traceless part $V_{2}\oplus V_{1}$, of dimension $8$.
 
 The two triplets share their highest-weight line: $\mathfrak{n}_{+}\cap V_{1}=\mathbb{C}(E_{12}+E_{23})$. They differ in the other two directions. The nilpotent triplet completes the highest-weight line by the positive composite root $E_{13}$; the spin-one triplet completes it by the Cartan $E_{33}-E_{11}$ and the negative root $E_{21}+E_{32}$. The first completion is a nilpotent algebra, the second is an irreducible module. The article proves the product table, the weight chain, the Borel description, the non-invariance under the lowering operator, and the splitting of the nilpotent triplet by the adjoint decomposition.
 
-The construction is root-first. The idempotents $P_{1},P_{2},P_{3}$ and the matrix units $E_{ij}$ are those of *Roots of Unity and the Lagrange Idempotents* and *The Frame, the Simple Nilpotents and the Gauge*. The root $H=\zeta_{1}P_{1}+\zeta_{2}P_{2}+\zeta_{3}P_{3}$ has order three and spectrum $\{1,\omega,\omega^{2}\}$; the spin Cartan $J_{3}$ has spectrum $\{1,0,-1\}$. They are different operators. The weights $1,1,2$ below are weights under $J_{3}$, not degrees under $H$. The carrier is $\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2})$, the spin-one module; only the case $n=2$ has spinors, and no spinor is defined in this article.
+The construction is root-first. The idempotents $P_{1},P_{2},P_{3}$ and the matrix units $E_{ij}$ are those of *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$* and *The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$*. The root $H=\zeta_{1}P_{1}+\zeta_{2}P_{2}+\zeta_{3}P_{3}$ has order three and spectrum $\{1,\omega,\omega^{2}\}$; the spin Cartan $J_{3}$ has spectrum $\{1,0,-1\}$. They are different operators. The weights $1,1,2$ below are weights under $J_{3}$, not degrees under $H$. The carrier is $\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2})$, the spin-one module; only the case $n=2$ has spinors, and no spinor is defined in this article.
 
 ## The Nilpotent Triplet
 
@@ -53,7 +53,7 @@ $$
 $$
 while $N_{2}N_{1}=0$ and $N_{1}^{2}=N_{2}^{2}=0$.
 
-**The weight chain.** Let $J_{3}=\operatorname{diag}(1,0,-1)$ and $J_{+}=\sqrt2(E_{12}+E_{23})$, $J_{-}=\sqrt2(E_{21}+E_{32})$, as in *The Spin Chain and the Adjoint Decomposition*. The adjoint action gives
+**The weight chain.** Let $J_{3}=\operatorname{diag}(1,0,-1)$ and $J_{+}=\sqrt2(E_{12}+E_{23})$, $J_{-}=\sqrt2(E_{21}+E_{32})$, as in *The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$*. The adjoint action gives
 $$
 [J_{3},N_{1}]=N_{1},\qquad [J_{3},N_{2}]=N_{2},\qquad [J_{3},N_{3}]=2N_{3},
 $$
@@ -81,7 +81,7 @@ of the diagonal algebra and the strictly upper triangular algebra. The subspace 
 $$
 0\subset\langle e_{1}\rangle\subset\langle e_{1},e_{2}\rangle\subset\mathbb{C}^{3},
 $$
-as in *The Adjoint Action, the Orbits and the Flag Variety*; the triplet is the nilpotent part of that stabiliser.
+as in *The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$*; the triplet is the nilpotent part of that stabiliser.
 
 **The triplet is not an ideal of $M_{3}$.** The algebra $M_{3}(\mathbb{C})$ is simple, so its only two-sided ideals are $0$ and the whole algebra; $\mathfrak{n}_{+}$ is neither. Directly, $E_{21}\in M_{3}$ and $E_{12}\in\mathfrak{n}_{+}$ give
 $$
@@ -109,7 +109,7 @@ where $\mathfrak{h}_{0}$ is the traceless diagonal. The triplet is one nilpotent
 $$
 M_{3}(\mathbb{C})=V_{2}\oplus V_{1}\oplus\mathbb{C}I,\qquad \dim V_{2}=5,\quad \dim V_{1}=3,\quad \dim\mathbb{C}I=1,
 $$
-with highest weights $2,1,0$. The summand $V_{1}$ is the **spin-one triplet**, isomorphic to the carrier $\mathbb{C}^{3}$ of the defining representation; $V_{2}$ is the spin-two module $\operatorname{Sym}^{4}(\mathbb{C}^{2})$; the line $\mathbb{C}I$ is the trivial module. The decomposition is proved in *The Spin Chain and the Adjoint Decomposition* by the character computation and by exhibiting the highest-weight vectors.
+with highest weights $2,1,0$. The summand $V_{1}$ is the **spin-one triplet**, isomorphic to the carrier $\mathbb{C}^{3}$ of the defining representation; $V_{2}$ is the spin-two module $\operatorname{Sym}^{4}(\mathbb{C}^{2})$; the line $\mathbb{C}I$ is the trivial module. The decomposition is proved in *The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$* by the character computation and by exhibiting the highest-weight vectors.
 
 **The explicit basis of $V_{1}$.** In the standard frame,
 $$
@@ -163,7 +163,7 @@ u_{0}=\frac{E_{11}-2E_{22}+E_{33}}{\sqrt6},\qquad
 u_{-1}=\frac{E_{21}-E_{32}}{\sqrt2},\qquad
 u_{-2}=E_{31},
 $$
-with weights $2,1,0,-1,-2$; the full chain and its ladder are in *The Spin Chain and the Adjoint Decomposition*. The trace line is spanned by $I/\sqrt3$, of weight $0$. The dimensions are $5+3+1=9$, and the traceless part is $5+3=8$, the adjoint of $PGL_{3}$.
+with weights $2,1,0,-1,-2$; the full chain and its ladder are in *The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$*. The trace line is spanned by $I/\sqrt3$, of weight $0$. The dimensions are $5+3+1=9$, and the traceless part is $5+3=8$, the adjoint of $PGL_{3}$.
 
 **The triplet meets the $5$ in a plane.** The vectors $E_{13}$ and $u_{1}$ are strictly upper triangular, because $E_{12}$ and $E_{23}$ are. The other three vectors of the $5$ are not: $u_{0}$ is diagonal, and $u_{-1},u_{-2}$ are strictly lower triangular. Hence
 $$
@@ -261,15 +261,15 @@ and its weight chain $1,1,2$ is the union of the weights of the two pieces.
 | $V_{2}$ | the spin-two summand |
 | $w_{1},w_{0},w_{-1}$ | the basis of $V_{1}$ |
 | $u_{2},u_{1},u_{0},u_{-1},u_{-2}$ | the basis of $V_{2}$ |
-| $J_{3},J_{\pm}$ | the principal $\mathfrak{sl}_{2}$ of *The Spin Chain* |
+| $J_{3},J_{\pm}$ | the principal $\mathfrak{sl}_{2}$ of *The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$* |
 
 ## Further Reading
 
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m3c.html), for the decomposition $1+3+5$ and the explicit bases.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the simple nilpotents and the composite.
+- [The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m3c.html), for the decomposition $1+3+5$ and the explicit bases.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the simple nilpotents and the composite.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the nine lines and the coarse corners.
-- [The Matrix Algebra $M_{3}(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units and the product.
-- [The Two-Parameter Gauge](the-two-parameter-gauge-of-m3c.html), for the gauge on the simple nilpotents.
-- [The Adjoint Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), for the Borel and the full flag.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m3c.html), for the carrier and the distinction between modules and ideals.
+- [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units and the product.
+- [The Two-Parameter Gauge of $M_3(\mathbb{C})$](the-two-parameter-gauge-of-m3c.html), for the gauge on the simple nilpotents.
+- [The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), for the Borel and the full flag.
+- [The Modules and the Minimal Left Ideals of $M_3(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m3c.html), for the carrier and the distinction between modules and ideals.
 - [Representations of Lie Algebras](representations-of-lie-algebras.html), for the highest-weight classification.

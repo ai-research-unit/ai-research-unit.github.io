@@ -1,4 +1,4 @@
-# __The Two Chiralities__
+# __The Two Chiralities of $M_4(\mathbb{C})$__
 
 ## Introduction
 
@@ -6,7 +6,7 @@
 
 The article defines $\Gamma$, proves that it is an involution with the $2+2$ spectrum, identifies the two chiralities, states the block decomposition of the algebra, distinguishes the chirality split of the carrier from the even/odd split of the algebra, and explains why the chiralities are not minimal left ideals. It also compares the Peirce $\mathfrak{sl}_2$, which mixes the chiralities, with the chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, which preserves them.
 
-The root is *Roots of Unity and the Lagrange Idempotents*; the Peirce corners are *The Peirce Decomposition*; the rank-two split is *The Rank-Two Split*; the mass block and the polar decomposition are *The Mass Block and the Chiral Polar Decomposition*; the two $\mathfrak{su}_2$'s are *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$*.
+The root is *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$*; the Peirce corners are *The Peirce Decomposition of $M_4(\mathbb{C})$*; the rank-two split is *The Rank-Two Split of $M_4(\mathbb{C})$*; the mass block and the polar decomposition are *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*; the two $\mathfrak{su}_2$'s are *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$*.
 
 ## The Chirality Involution
 
@@ -144,7 +144,7 @@ CA'+DC'&CB'+DD'
 \end{pmatrix}.
 $$
 
-The products $BC'\subseteq\mathcal{A}$ and $CB'\subseteq\mathcal{D}$ return to the diagonal. The off-diagonal blocks are **bimodules**: $\mathcal{B}$ is a left $\mathcal{A}$-module and a right $\mathcal{D}$-module, and $\mathcal{C}$ is a left $\mathcal{D}$-module and a right $\mathcal{A}$-module. The algebra is not the direct sum of $\mathcal{A}$ and $\mathcal{D}$ as algebras; the blocks $\mathcal{B}$ and $\mathcal{C}$ are nonzero and multiply back into the diagonal. This is the rank-two Peirce split of *The Rank-Two Split*.
+The products $BC'\subseteq\mathcal{A}$ and $CB'\subseteq\mathcal{D}$ return to the diagonal. The off-diagonal blocks are **bimodules**: $\mathcal{B}$ is a left $\mathcal{A}$-module and a right $\mathcal{D}$-module, and $\mathcal{C}$ is a left $\mathcal{D}$-module and a right $\mathcal{A}$-module. The algebra is not the direct sum of $\mathcal{A}$ and $\mathcal{D}$ as algebras; the blocks $\mathcal{B}$ and $\mathcal{C}$ are nonzero and multiply back into the diagonal. This is the rank-two Peirce split of *The Rank-Two Split of $M_4(\mathbb{C})$*.
 
 **The mass block.** The corner
 
@@ -152,7 +152,7 @@ $$
 \mathcal{B}=P_+M_4P_-=\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)
 $$
 
-is the **mass block**. It is four-dimensional, and its elements are the maps from the right chirality to the left chirality. The opposite corner $\mathcal{C}$ is the conjugate mass block. The two together are the off-diagonal part of the algebra, of dimension $8$. The mass block is the subject of *The Mass Block and the Chiral Polar Decomposition*.
+is the **mass block**. It is four-dimensional, and its elements are the maps from the right chirality to the left chirality. The opposite corner $\mathcal{C}$ is the conjugate mass block. The two together are the off-diagonal part of the algebra, of dimension $8$. The mass block is the subject of *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
 
 **The traces.** The trace of $A$ is the sum of the traces of the diagonal blocks:
 
@@ -267,7 +267,7 @@ $$
 8+4=12,
 $$
 
-which is the count of *Roots of Unity and the Lagrange Idempotents*. For a fixed unordered pair of line decompositions the four eigenvalue assignments are discrete labels; they do not add to the dimension of the fibre.
+which is the count of *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$*. For a fixed unordered pair of line decompositions the four eigenvalue assignments are discrete labels; they do not add to the dimension of the fibre.
 
 **The chirality is not the root.** The root has order four and determines $\Gamma$; $\Gamma$ has order two and does not determine the root. The chirality is the invariant that survives the squaring, and the root is a square root of the chirality. The two chiralities are the eigenspaces of the surviving involution; the root is the finer data that splits each chirality into two lines with the eigenvalues $\pm1$ or $\pm i$.
 
@@ -282,7 +282,7 @@ $$
 
 act on $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$ separately. They commute with $\Gamma$, they have dimension $3+3=6$, and each chirality is a spin-$\tfrac12$ module for one of the two factors. The compact real form is $\mathfrak{su}_2\oplus\mathfrak{su}_2$.
 
-**The Peirce algebra mixes the chiralities.** The spin-$\tfrac32$ generators of *The Spin Chain and the Adjoint Decomposition* are
+**The Peirce algebra mixes the chiralities.** The spin-$\tfrac32$ generators of *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$* are
 
 $$
 J_3=\operatorname{diag}\left(\frac32,\frac12,-\frac12,-\frac32\right),
@@ -298,7 +298,7 @@ $$
 
 and $e_2,e_4$ have chirality $-1$ while $e_1,e_3$ have chirality $+1$. The Peirce $\mathfrak{sl}_2$ is irreducible on $\mathbb{C}^4$, so it has no invariant subspace that is one chirality. It is not contained in the chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, and the chiral algebra is not contained in it: they are different three- and six-dimensional subalgebras of $\mathfrak{sl}_4$.
 
-**The two chains.** The Peirce chain is the weight chain of the spin-$\tfrac32$ module; it runs through both chiralities. The chiral chain is the pair of spin-$\tfrac12$ chains, one in each chirality; it preserves $\Gamma$ and does not mix. The first is the chain of the flag; the second is the chain of the two planes. The comparison, with the branching rules, is *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$*.
+**The two chains.** The Peirce chain is the weight chain of the spin-$\tfrac32$ module; it runs through both chiralities. The chiral chain is the pair of spin-$\tfrac12$ chains, one in each chirality; it preserves $\Gamma$ and does not mix. The first is the chain of the flag; the second is the chain of the two planes. The comparison, with the branching rules, is *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$*.
 
 ## The Biquaternion Case
 
@@ -364,10 +364,10 @@ $$
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for idempotents, Peirce decompositions and the centraliser of an involution.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for block matrices, Schur complements and the determinant.
-- [Roots of Unity and the Lagrange Idempotents](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root and the involution $\Gamma=H^2$.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m4c.html), for the sixteen corners of the root.
-- [The Rank-Two Split](the-rank-two-split-of-m4c.html), for the corners of the rank-two idempotent $P_+$.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block and its polar decomposition.
-- [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the two chains.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the irreducible spin-$\tfrac32$ chain.
-- [Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.
+- [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root and the involution $\Gamma=H^2$.
+- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the sixteen corners of the root.
+- [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the corners of the rank-two idempotent $P_+$.
+- [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block and its polar decomposition.
+- [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the two chains.
+- [The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the irreducible spin-$\tfrac32$ chain.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.

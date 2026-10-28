@@ -226,7 +226,7 @@ $$
 [\operatorname{ad}_a,\operatorname{ad}_b]=\operatorname{ad}_{[a,b]},
 $$
 
-so $\mathfrak{sl}_3\to\operatorname{Der}(M_3)$ is an isomorphism of Lie algebras. The derivations act on $M_3$ by the adjoint action, and the decomposition of $M_3$ under $\mathfrak{sl}_3$ is the adjoint decomposition $1+3+5$ of *The Triplet: Spin One and the Adjoint $1+3+5$*.
+so $\mathfrak{sl}_3\to\operatorname{Der}(M_3)$ is an isomorphism of Lie algebras. The derivations act on $M_3$ by the adjoint action, and the decomposition of $M_3$ under $\mathfrak{sl}_3$ is the adjoint decomposition $1+3+5$ of *The Triplet: Spin One and the Adjoint $1+3+5$ of $M_3(\mathbb{C})$*.
 
 **Worked example.** For $a=\operatorname{diag}(1,2,4)$ the adjoint has rank $6$ and kernel the diagonal matrices, of dimension $3$. The image is the six-dimensional space of matrices with zero diagonal, the span of the six off-diagonal units. The element $a$ is regular semisimple: its centraliser is the diagonal torus, and the derivation reaches every off-diagonal direction. For $a=I$ the adjoint is zero and the kernel is the whole algebra.
 
@@ -324,4 +324,4 @@ $$
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the corners and the multiplication rule.
 - [The Rank-Two Split of $M_3(\mathbb{C})$](the-rank-two-split-of-m3c.html), for the two-sided Peirce table.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), for the conjugation action and its orbits.
-- [The Triplet: Spin One and the Adjoint $1+3+5$](the-triplet-spin-one-and-the-adjoint-of-m3c.html), for the adjoint decomposition under $\mathfrak{sl}_3$.
+- [The Triplet: Spin One and the Adjoint $1+3+5$ of $M_3(\mathbb{C})$](the-triplet-spin-one-and-the-adjoint-of-m3c.html), for the adjoint decomposition under $\mathfrak{sl}_3$.

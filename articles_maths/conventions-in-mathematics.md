@@ -291,7 +291,7 @@ $$
 
 **It is allowed to add subscripts when several nilpotents are used.** **The subscript of a nilpotent is numeric when it counts and a role label when it names**, as for the idempotents apart from their complete sign pair: where more than one occurs a pair is $\tilde\nu_1, \tilde\nu_2$, a second pair in the same statement takes the next numbers, and where a nilpotent plays a named role it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
-The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Nilpotents of the General Quaternionic Algebra*, *Idempotents of the General Plain Algebra* and *The Peirce Decomposition*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\vec\Upsilon_1$ and $\vec\Upsilon_2$, exchanged by the star.
+The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of *Nilpotents of the General Quaternionic Algebra*, *Idempotents of the General Plain Algebra* and *The Peirce Decomposition of the Biquaternion Algebra*. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\vec\Upsilon_1$ and $\vec\Upsilon_2$, exchanged by the star.
 
 The nilpotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
@@ -299,10 +299,172 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 |---|---|
 | $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
 | $\tilde\nu$ | A nilpotent of the quaternion or split-quaternion layer |
-| $\tilde\Upsilon$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates |
+| $\tilde\Upsilon$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates; where it spans a mixed Peirce component it is written $\tilde\Upsilon_{ij}$ (§*The Peirce Convention*) |
 | $\vec\Upsilon$, $\vec\nu$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of §*The Centre and the Vector Subspace* |
 
 **The standard pair carries the arrow, not the tilde.** The two off-diagonal Peirce units are pure, $\vec\Upsilon_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec\Upsilon_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by §*The Centre and the Vector Subspace* the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec\Upsilon_1, \vec\Upsilon_2$ and never $\tilde\Upsilon_1, \tilde\Upsilon_2$. The tilde is kept for the general nilpotent $\tilde\Upsilon$, which may carry a scalar part and is not pure.
+
+## The Peirce Convention
+
+### The General Peirce Convention
+
+**Introduction.** A Peirce decomposition writes an algebra as a direct sum of Peirce components, one for each ordered pair of members of a complete family of orthogonal idempotents. This convention fixes the words and the glyphs for those components; the articles state the properties.
+
+**Scope.** $A$ is an associative algebra with unit $1$ over a field. Indices are 1-based. Every Peirce article uses the four levels below and no others.
+
+**The family.** A family $\Pi_1,\dots,\Pi_n$ is **complete, orthogonal and idempotent** when
+
+$$
+\Pi_i^2=\Pi_i,\qquad \Pi_i\Pi_j=0\ (i\ne j),\qquad \sum_{i=1}^{n}\Pi_i=1 .
+$$
+
+The subscripts are numeric, 1-based, and the family is unordered. A family that does not sum to $1$ is not a Peirce family; adjoining the complement is a construction of the articles, not part of this convention. The sign pair $\Pi_+,\Pi_-$ belongs to §*The Idempotent Convention* and is not repeated here.
+
+**The decomposition.** The Peirce decomposition relative to the family is
+
+$$
+A=\bigoplus_{i,j=1}^{n}A_{ij},\qquad A_{ij}=\Pi_iA\Pi_j .
+$$
+
+The left index is written first. The summands are **Peirce components**, and the array of them is the **Peirce table**. The components multiply by the rule: the second index of the first factor must equal the first index of the second, otherwise the product is zero. So $A_{ij}A_{jq}\subseteq A_{iq}$, and $A_{ij}A_{pq}=0$ when $j\ne p$.
+
+The decomposition is **canonical**: it depends on the family and on nothing else. A component is called a **line** when it is one-dimensional. The word **fine** is used only for a maximal family, when every component is a line. The word **complete** refers only to $\sum_i\Pi_i=1$. The word **full** is not used.
+
+**The basis and the gauge.** A **Peirce basis** is a choice of one nonzero element in each line, with
+
+$$
+E_{ij}E_{jq}=E_{iq},\qquad E_{ii}=\Pi_i .
+$$
+
+It exists only when the components are lines, it is not canonical, and every statement using it says so: "in a Peirce basis", "in the basis adapted to the family".
+
+The **Peirce gauge** is the replacement
+
+$$
+E_{ij}\longmapsto t_it_j^{-1}E_{ij},\qquad t_i\ne0,
+$$
+
+which leaves the family, the components and the products fixed. With a star, $\lvert t_i\rvert=1$ and the gauge is a torus of phases.
+
+A **Peirce frame** is a Peirce basis together with the data that selects it.
+
+**Coordinates and spinors.** The **Peirce coordinates** of an element $Q\in A$ are the numbers $Q_{ij}$ in $Q=\sum_{i,j}Q_{ij}E_{ij}$. The coordinates carry the glyph of the element, by the case rule of the layer: $q_{ij}$ for a real element, $Q_{ij}$ for a complex one, $\tilde q_{ij}$ or $\tilde Q_{ij}$ for a quaternion, split-quaternion, biquaternion or split-biquaternion one. No separate letter is used for a coordinate.
+
+A **spinor** is the tuple of $n$ coordinates of one row of the table, at fixed left index,
+
+$$
+\psi=(\psi_1,\dots,\psi_n),\qquad \psi_j=Q_{ij}\ \text{for fixed } i .
+$$
+
+When a spinor is treated as an object of its own, its entries are written $\psi_j$; they are the coordinates $Q_{ij}$ of one row. The gauge acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$, which is its overall phase. The word **spinor** belongs to this level only: it is never used for an element of $A$ at the two levels above.
+
+**Glyphs of the units.**
+
+| Unit | Glyph |
+|---|---|
+| Diagonal unit | The idempotent, $\Pi_i$ |
+| Off-diagonal unit, abstract algebra | The nilpotent glyph, $\Upsilon_{ij}$, with tilde or arrow by the case rule |
+| Off-diagonal unit, in $M_n$ | The matrix unit, $E_{ij}$, 1-based |
+| Several units in one component | Counting subscript, $\Upsilon_{ij,1},\dots,\Upsilon_{ij,m}$ |
+
+$E_{ij}$ is written only when the objects are matrices. In an abstract algebra the generic letter $E$ is not used.
+
+**What is not a Peirce notion.** A root of unity, an eigenvalue, a grading, a weight, a Cartan subalgebra. A root may produce a family, through its Lagrange idempotents; the family is then a Peirce family like any other, and the root adds nothing to the Peirce vocabulary. Neither is an ordered or nested reading of the family: an order on the indices, a sequence of cuts, a cumulative sum of the members. When an article reads the family step by step, it says so there, and the reading is called there what it is.
+
+**Excluded vocabulary.** Left ideal, right ideal, minimal left ideal, carrier, module and representation are not used at the levels of the family and of the decomposition, and are not used to define a spinor. A sum $\bigoplus_jA_{ij}$ or $\bigoplus_iA_{ij}$ is a **row** or a **column** of the Peirce table, never a component and never a carrier. If another article needs an ideal, it names it there, under its own name, with an explicit pointer.
+
+**Symbols.**
+
+| Symbol | Meaning |
+|---|---|
+| $\Pi_i$ | A member of the complete orthogonal family |
+| $A_{ij}$ | A Peirce component, left index first |
+| $\Upsilon_{ij}$ | An off-diagonal Peirce unit, a nilpotent |
+| $E_{ij}$ | A matrix unit, only in $M_n$ |
+| $Q_{ij}$, $\psi_j$ | A Peirce coordinate, and the entry of a spinor |
+| $\Xi$ | A root of unity, by the case rule |
+
+**The summary sentence.** The family gives the components, the decomposition is canonical, the basis is chosen, the gauge is its freedom, and the spinor is a tuple of coordinates in that basis.
+
+### The Biquaternion Peirce Convention
+
+**Introduction.** The general Peirce convention read in the biquaternion algebra $\mathbb{B}$. It adds nothing to the family and fixes nothing about it; it fixes only the glyphs and the case rule of the layer.
+
+**Scope.** $A=\mathbb{B}$, with unit $e_t$. The upper-case tilde is written in this layer, and a pure element carries the arrow and no tilde. Indices are numeric, 1-based. The four levels of §*The General Peirce Convention* are used, and no others.
+
+**The family.** A complete, orthogonal and idempotent family $\tilde\Pi_1,\tilde\Pi_2$ in $\mathbb{B}$. The family is arbitrary: this convention fixes no pair, and no pair is preferred. The glyph is governed by §*The Idempotent Convention*.
+
+**The decomposition.**
+
+$$
+\mathbb{B}=A_{11}\oplus A_{12}\oplus A_{21}\oplus A_{22},\qquad A_{ij}=\tilde\Pi_i\mathbb{B}\tilde\Pi_j .
+$$
+
+The left index is written first. The summands are Peirce components and the array is the Peirce table. The components multiply by the rule: the second index of the first factor must equal the first index of the second, otherwise the product is zero. So $A_{ij}A_{jq}\subseteq A_{iq}$, and $A_{ij}A_{pq}=0$ when $j\ne p$. The decomposition is canonical: it depends on the family and on nothing else.
+
+**The basis and the gauge.** The diagonal units are the idempotents themselves,
+
+$$
+\tilde\Pi_1\in A_{11},\qquad \tilde\Pi_2\in A_{22},
+$$
+
+and the mixed units carry the nilpotent glyph, with the arrow where the element is pure,
+
+$$
+\tilde\Upsilon_{12}\in A_{12},\qquad \tilde\Upsilon_{21}\in A_{21}.
+$$
+
+A Peirce basis is a choice of these two units, and every statement using it says so. The gauge is
+
+$$
+\tilde\Upsilon_{ij}\longmapsto t_it_j^{-1}\tilde\Upsilon_{ij},\qquad t_1,t_2\ne0,
+$$
+
+which leaves the family, the components and the products fixed. With a star, $\lvert t_i\rvert=1$ and the gauge is a torus of phases.
+
+**Coordinates and spinors.** An element is
+
+$$
+\tilde Q=\tilde Q_{11}\tilde\Pi_1+\tilde Q_{12}\tilde\Upsilon_{12}+\tilde Q_{21}\tilde\Upsilon_{21}+\tilde Q_{22}\tilde\Pi_2,
+$$
+
+and the four complex numbers $\tilde Q_{ij}$ are its Peirce coordinates, carrying the glyph of the element, indexed by the left index first. A spinor is a pair of coordinates in one row:
+
+$$
+\psi_1=(\tilde Q_{11},\tilde Q_{12}),\qquad \psi_2=(\tilde Q_{21},\tilde Q_{22}).
+$$
+
+The gauge acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$ of the row, which is its overall phase. The word spinor belongs to this level only.
+
+**Glyphs of the units.**
+
+| Unit | Glyph |
+|---|---|
+| Diagonal, $A_{11}$, $A_{22}$ | $\tilde\Pi_1$, $\tilde\Pi_2$ |
+| Mixed, $A_{12}$, $A_{21}$ | $\tilde\Upsilon_{12}$, $\tilde\Upsilon_{21}$, with the arrow where pure |
+| Several units in one line | Counting subscript, $\tilde\Upsilon_{12,1},\dots$ |
+| Quaternion or split-quaternion layer | $\tilde\pi_1,\tilde\pi_2$ and $\tilde\nu_{12},\tilde\nu_{21}$ |
+| Complex, split-complex or dual layer | $\Pi_1,\Pi_2$ and $\Upsilon_{12},\Upsilon_{21}$ |
+| Matrix model of $\mathbb{B}$ | $E_{ij}$, 1-based, only there |
+
+No generic $E$ is written outside the matrix model, and no tilde on a pure element.
+
+**What is not a Peirce notion.** A root of unity, an eigenvalue, a grading, a weight, a Cartan subalgebra. Neither is an ordered or nested reading of the family: an order on the indices, a sequence of cuts, a cumulative sum of the members.
+
+**Excluded vocabulary.** Left ideal, right ideal, minimal left ideal, carrier, module, representation and spinor plane. The sums $A_{11}\oplus A_{12}$ and $A_{11}\oplus A_{21}$ are a row and a column of the Peirce table, never a component.
+
+**Symbols.**
+
+| Symbol | Meaning |
+|---|---|
+| $\tilde\Pi_1$, $\tilde\Pi_2$ | The complete orthogonal pair |
+| $A_{ij}$ | A Peirce component, left index first |
+| $\tilde\Upsilon_{12}$, $\tilde\Upsilon_{21}$ | The mixed Peirce units, nilpotents |
+| $E_{ij}$ | A matrix unit, only in the matrix model |
+| $\tilde Q_{ij}$, $\psi_j$ | A Peirce coordinate, and the entry of a spinor |
+| $t_1$, $t_2$ | The gauge parameters |
+
+**The summary sentence.** The family gives the four components, the decomposition is canonical, the two mixed units are chosen, the gauge is their freedom, and the spinor is a pair of coordinates in one row.
 
 ## The Twelve Products and Their Names
 

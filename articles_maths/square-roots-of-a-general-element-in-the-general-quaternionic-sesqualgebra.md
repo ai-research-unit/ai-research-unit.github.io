@@ -120,7 +120,7 @@ The element $\tilde Q_1$ is a square if and only if $Q_{1t}$ is real, $\vec R$ i
 
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), for the square root of an element and the root of a central value.
 - [Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra](square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.html), for the central case, the family $c(\vec u_{\mathrm n}+it)$ and the reduction identity used here.
-- [Square Roots of a General Element in the Biquaternion Algebra](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the plain problem and its quadratic, against which this criterion is set.
+- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the plain problem and its quadratic, against which this criterion is set.
 - [Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra](square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.html), for the square-zero family and the element $e_t+i\vec e_x$.
 - [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html), for the identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$ and the Krein form.
 - [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the four-way comparison of the root sets.

@@ -1,4 +1,4 @@
-# __The Modules and the Minimal Left Ideals__
+# __The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$__
 
 ## Introduction
 
@@ -18,7 +18,7 @@ The Peirce lines $A_{kl}=P_kM_5P_l$ are **one-dimensional subspaces**, not modul
 
 The double centralizer is the algebra itself: the commutant of $M_5$ in $\operatorname{End}_\mathbb{C}(V)$ is $\mathbb{C}I$, and the bicommutant is $M_5$. The algebra is semisimple, and every left module is a direct sum of copies of $V$; the right modules are the dual picture, with $V^*$ in place of $V$.
 
-The article assumes the matrix algebra, the frame and the Peirce decomposition. It uses no form and no topology. The carrier is the spin-two module of *The Spin Chain and the Adjoint Decomposition*; **there are no spinors at $n=5$**, and the word *spinor* is not used for the carrier or for a minimal left ideal. The biquaternion case $n=2$ is the comparison: there the minimal left ideal is two-dimensional and is the spinor.
+The article assumes the matrix algebra, the frame and the Peirce decomposition. It uses no form and no topology. The carrier is the spin-two module of *The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$*; **there are no spinors at $n=5$**, and the word *spinor* is not used for the carrier or for a minimal left ideal. The biquaternion case $n=2$ is the comparison: there the minimal left ideal is two-dimensional and is the spinor.
 
 ## Modules over the Algebra
 
@@ -247,7 +247,7 @@ For $n=2$, the algebra $M_2(\mathbb{C})\cong\mathbb{B}$ has a two-dimensional si
 
 **Theorem.** The simple module of $M_5$ is the carrier $V=\mathbb{C}^5$, of spin $2$. There is no spinor module at $n=5$: the carrier is the symmetric fourth power $\operatorname{Sym}^4(\mathbb{C}^2)$, and its weights are the integers $2,1,0,-1,-2$.
 
-**Proof.** The identification of the carrier with the symmetric power is *The Spin Chain and the Adjoint Decomposition*; the weights are integers, so no half-integer weight occurs. The simple module is unique up to isomorphism and is $V$.
+**Proof.** The identification of the carrier with the symmetric power is *The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$*; the weights are integers, so no half-integer weight occurs. The simple module is unique up to isomorphism and is $V$.
 
 **Corollary.** The minimal left ideal of $M_5$ is five-dimensional and is isomorphic to the carrier; it is not a spinor, not a column of a matrix in the sense of an element, and not a Peirce line. The word *spinor* is reserved for the two-dimensional module of $M_2$.
 
@@ -298,7 +298,7 @@ The commutant of $M_5$ is $\mathbb{C}I$, the bicommutant is $M_5$, and the algeb
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, second edition, 2001), for the Artin–Wedderburn theorem, the semisimple rings and the simple modules.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the modules of a central simple algebra and the double centralizer.
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra and its simplicity.
-- [The Peirce Decomposition](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$ and the distinction from the ideals.
-- [The Frame, the Simple Nilpotents and the Gauge](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the column and row ideals of the frame.
-- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m5c.html), for the carrier as the spin-two module.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion minimal left ideals and the spinor.
+- [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$ and the distinction from the ideals.
+- [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the column and row ideals of the frame.
+- [The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m5c.html), for the carrier as the spin-two module.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion minimal left ideals and the spinor.

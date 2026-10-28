@@ -261,5 +261,5 @@ The composition of two boosts is the trigonometry of geodesic triangles. The rap
 - John Stillwell, *Sources of Hyperbolic Geometry* (American Mathematical Society and London Mathematical Society, 1996), for the original papers of Beltrami and Klein and the Cayley–Klein construction.
 - John G. Ratcliffe, *Foundations of Hyperbolic Manifolds*, 2nd ed. (Springer, 2006), for the hyperboloid model, the Weierstrass coordinates and Gauss–Bonnet in hyperbolic space.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor calculus of boosts and the composition of rotations.
-- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group", *Annals of Mathematics* **40** (1939) 149–204, for the little group and the original Wigner rotation.
+- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group", *Annals of Mathematics* **40** (1939) 149–204, for the little group and the original Wigner rotation.
 - L. H. Thomas, "The kinematics of an electron with an axis", *Philosophical Magazine* **3** (1927) 1–22, for the precession of an accelerated spin and its rate form.

@@ -286,5 +286,5 @@ The invariant behind the computation is the spinor symplectic concurrence $\math
 - William K. Wootters, "Entanglement of formation of an arbitrary state of two qubits," *Physical Review Letters* **80** (1998) 2245–2248, for the concurrence and its mixed-state form.
 - Scott Hill and William K. Wootters, "Entanglement of a pair of quantum bits," *Physical Review Letters* **78** (1997) 5022–5025, for the entanglement of formation of two qubits.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Schmidt decomposition, the partial trace, and the entanglement measures.
-- E. P. Wigner, "On $*$-unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the Wigner rotation.
+- E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the Wigner rotation.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the $*$-unitary action of the Lorentz group on one-particle states.

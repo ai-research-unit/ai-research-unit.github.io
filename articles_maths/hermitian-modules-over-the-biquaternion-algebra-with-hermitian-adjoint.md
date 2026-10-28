@@ -15,7 +15,7 @@ The computation is that the form of the algebra itself, $\langle\tilde Q,\tilde 
 
 The article closes with the **Dirac element**. On a Hermitian module the Clifford action supplies an operator $D=\sum_\mu\rho(\vec e_\mu)\partial/\partial x_\mu$ whose two factors are skew-adjoint and whose formal adjoint is therefore itself (*Dirac Operators with Hermitian Adjoint*); in the finite-dimensional model, with no derivation, it is $D_{\mathrm{alg}}=\sum_k L_{\vec e_k}$, it is skew-adjoint, its square is $-3\,\mathrm{id}$, and its Hermitian square $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}}=3\,\mathrm{id}$ is positive. The model has no harmonic spinors, and the gap $3$ is the content of the module.
 
-The module theory, the idempotents and the Peirce decomposition are *The Category of Modules* and *The Peirce Decomposition*; the scalar form, the adjoint of the one-sided action and the characterisation of the algebra itself as a module are *One-Sided Operators on the General Plain Sesqualgebra* and *Two-Sided Operators on the General Plain Sesqualgebra*; the positivity of the involution and the cone are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; the spinor reading of the module is *The Category of Modules* and *Real Spinors and Reality Conditions with Inner Conjugation*; and the general statements are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*, *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *Dirac Operators with Hermitian Adjoint*.
+The module theory, the idempotents and the Peirce decomposition are *The Category of Modules* and *The Peirce Decomposition of the Biquaternion Algebra*; the scalar form, the adjoint of the one-sided action and the characterisation of the algebra itself as a module are *One-Sided Operators on the General Plain Sesqualgebra* and *Two-Sided Operators on the General Plain Sesqualgebra*; the positivity of the involution and the cone are *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*; the spinor reading of the module is *The Category of Modules* and *Real Spinors and Reality Conditions with Inner Conjugation*; and the general statements are *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*, *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *Dirac Operators with Hermitian Adjoint*.
 
 ## Hermitian Forms and the Adjointness Axiom
 
@@ -89,7 +89,7 @@ $$
 \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
-be the idempotents and the off-diagonal elements of *The Peirce Decomposition*. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. They satisfy $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$, the multiplication table
+be the idempotents and the off-diagonal elements of *The Peirce Decomposition of the Biquaternion Algebra*. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. They satisfy $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$, the multiplication table
 
 $$
 \tilde\Pi_+\vec\Upsilon_x=\vec\Upsilon_x=\vec\Upsilon_x\tilde\Pi_-,\qquad
@@ -207,13 +207,13 @@ The **$*$-unitary slice** $U=\mathrm{U}(2)$ acts on every Hermitian module by $*
 
 ## Further Reading
 
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
-- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
-- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), for the classification of the modules, the simple module, the projective-not-free dichotomy and the endomorphism algebra.
+- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
+- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the classification of the modules, the simple module, the projective-not-free dichotomy and the endomorphism algebra.
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for $L_{\tilde Q_1}^{*}=L_{\tilde{Q}_1^{*}}$, the uniqueness of the invariant form and the module picture of the regular module.
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the sandwich, the cone and the definite slice viewed as a group of operators.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positivity of the involution that makes every restriction positive definite.
-- [Modules over the Biquaternion Algebra](modules-over-the-biquaternion-algebra.html), [Spin Representations and Clifford Modules with Inner Conjugation](spin-representations-and-clifford-modules-with-inner-conjugation.html) and [Dirac Operators with Hermitian Adjoint](dirac-operators-with-hermitian-adjoint.html), for the spinor module, the chirality, the volume element and the Dirac operator.
+- [The Category of Modules](modules-over-the-biquaternion-algebra.html), [Spin Representations and Clifford Modules with Inner Conjugation](spin-representations-and-clifford-modules-with-inner-conjugation.html) and [Dirac Operators with Hermitian Adjoint](dirac-operators-with-hermitian-adjoint.html), for the spinor module, the chirality, the volume element and the Dirac operator.
 - [Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint](hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.html), for the general module axiom, Schur uniqueness and the isotropic ideal.
 - [The Adjoint of the One-Sided Action with Hermitian Adjoint](the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.html), for the $*$-structure on the operator algebra.
 - [Dirac Operators with Hermitian Adjoint](dirac-operators-with-hermitian-adjoint.html), for the formal self-adjointness, the positivity of the square and the finite-dimensional model.

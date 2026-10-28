@@ -1,4 +1,4 @@
-# __The Polar Decomposition__
+# __The Polar Decomposition of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -29,7 +29,7 @@ $$
 
 The exponential form is $A=Ue^H$ with $H$ Hermitian; the logarithm of the positive factor is the Hermitian exponent.
 
-The article assumes the $*$-unitary group and the Hermitian form of *The Involution and the Hermitian Structure* and the singular values of *The Forms, the Norms and the Singular Set*. It uses the exponential of Hermitian matrices, whose general theory is *The Exponential and the Lie Group*. The mass block's polar decomposition is *The Mass Block and the Chiral Polar Decomposition*; the biquaternion case is *The Polar Decomposition of a Biquaternion*.
+The article assumes the $*$-unitary group and the Hermitian form of *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$* and the singular values of *The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$*. It uses the exponential of Hermitian matrices, whose general theory is *The Exponential and the Lie Group of $M_6(\mathbb{C})$*. The mass block's polar decomposition is *The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$*; the biquaternion case is *The Polar Decomposition of a Biquaternion*.
 
 ## The Polar Decomposition
 
@@ -323,10 +323,10 @@ The polar decomposition is the diffeomorphism $GL_6\cong U(6)\times\operatorname
 
 ## Further Reading
 
-- [The Involution and the Hermitian Structure](the-involution-and-the-hermitian-structure-of-m6c.html), for the $*$-unitary group and the positive definite form.
-- [The Forms, the Norms and the Singular Set](the-forms-the-norms-and-the-singular-set-of-m6c.html), for the singular values.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
-- [The Exponential and the Lie Group](the-exponential-and-the-lie-group-of-m6c.html), for the exponential of Hermitian matrices.
-- [Spectral Theory and the Spectral Projectors](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the spectral theorem behind the square root.
+- [The Involution and the Hermitian Structure of $M_6(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m6c.html), for the $*$-unitary group and the positive definite form.
+- [The Forms, the Norms and the Singular Set of $M_6(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m6c.html), for the singular values.
+- [The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
+- [The Exponential and the Lie Group of $M_6(\mathbb{C})$](the-exponential-and-the-lie-group-of-m6c.html), for the exponential of Hermitian matrices.
+- [Spectral Theory and the Spectral Projectors of $M_6(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m6c.html), for the spectral theorem behind the square root.
 - [Comparison of the Polar Decomposition](comparison-of-the-polar-decomposition.html), for the eight-algebra comparison.
 - [Symmetric Spaces](symmetric-spaces.html), for the Cartan decomposition and the positive cone.

@@ -1,4 +1,4 @@
-# __The Rank-Two and Rank-Three Splits__
+# __The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$__
 
 ## Introduction
 
@@ -16,9 +16,9 @@ $$
 
 The corner algebras are $P M_6P\cong M_2$, $Q M_6Q\cong M_4$ in the first case and $P M_6P\cong M_3$, $Q M_6Q\cong M_3$ in the second. The mixed corners are the mass blocks: of dimension $8=2\cdot4$ in the rank-two split, and of dimension $9=3\cdot3$ in the rank-three split.
 
-This article states the two splits, proves the corner isomorphisms, and writes the two-sided Peirce tables. It is the detailed companion of *The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners*, which treats the gauge decomposition and the block embeddings; the gauge is not repeated here.
+This article states the two splits, proves the corner isomorphisms, and writes the two-sided Peirce tables. It is the detailed companion of *The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$*, which treats the gauge decomposition and the block embeddings; the gauge is not repeated here.
 
-It assumes the coarse Peirce decomposition of *The Peirce Decomposition* and the algebra $M_6(\mathbb{C})$ of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form and no topology. The mass block's polar decomposition is *The Mass Block and the Chiral Polar Decomposition*; the chiral split is *The Two Chiralities*.
+It assumes the coarse Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$* and the algebra $M_6(\mathbb{C})$ of *The Matrix Algebra $M_6(\mathbb{C})$*. It uses no form and no topology. The mass block's polar decomposition is *The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$*; the chiral split is *The Two Chiralities of $M_6(\mathbb{C})$*.
 
 ## The Rank-Two Projection
 
@@ -311,7 +311,7 @@ fine lines respectively. At $p=2$ this is $4,8,8,16$; at $p=3$ it is $9,9,9,9$.
 
 **Proof.** There are $p^2$ ordered pairs $(k,l)$ with both indices in $I$, $p(6-p)$ with the first in $I$ and the second outside, and so on.
 
-**Remark (coarse and fine).** The rank-three split by the special idempotent $\Pi_+=P_1+P_3+P_5$ is the chiral split of *The Two Chiralities*: its corners are the $3\times3$ chiral blocks and the mass block of dimension $9$. A general rank-three idempotent gives a conjugate split, with the same corner dimensions; the chiral split is the representative adapted to the root. **The corner dimensions see only the rank; the root sees which lines are grouped.**
+**Remark (coarse and fine).** The rank-three split by the special idempotent $\Pi_+=P_1+P_3+P_5$ is the chiral split of *The Two Chiralities of $M_6(\mathbb{C})$*: its corners are the $3\times3$ chiral blocks and the mass block of dimension $9$. A general rank-three idempotent gives a conjugate split, with the same corner dimensions; the chiral split is the representative adapted to the root. **The corner dimensions see only the rank; the root sees which lines are grouped.**
 
 ## Summary
 
@@ -368,10 +368,10 @@ and both corner products are surjective in the rank-three split, while in the ra
 
 ## Further Reading
 
-- [The Peirce Decomposition](the-peirce-decomposition-of-m6c.html), for the general corner multiplication and the rank-one split.
-- [The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners](the-m3-m3-and-m2-m4-corners-of-m6c.html), for the gauge decomposition and the block embeddings.
-- [The Two Chiralities](the-two-chiralities-of-m6c.html), for the rank-three split by $\Pi_+$.
-- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
-- [The Modules and the Minimal Left Ideals](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the corner modules.
+- [The Peirce Decomposition of $M_6(\mathbb{C})$](the-peirce-decomposition-of-m6c.html), for the general corner multiplication and the rank-one split.
+- [The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners of $M_6(\mathbb{C})$](the-m3-m3-and-m2-m4-corners-of-m6c.html), for the gauge decomposition and the block embeddings.
+- [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the rank-three split by $\Pi_+$.
+- [The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the polar decomposition of the mass block.
+- [The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m6c.html), for the corner modules.
 - [Idempotents and Involutions of an Algebra](idempotents-and-involutions-of-an-algebra.html), for the conjugacy of idempotents of a fixed rank.
-- [The Geometry of the Idempotents](the-geometry-of-the-idempotents-of-m6c.html), for the homogeneous space of the rank-$p$ idempotents.
+- [The Geometry of the Idempotents of $M_6(\mathbb{C})$](the-geometry-of-the-idempotents-of-m6c.html), for the homogeneous space of the rank-$p$ idempotents.
