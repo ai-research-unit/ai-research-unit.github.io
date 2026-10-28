@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Geometry of the Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-geometry-of-the-idempotents"><strong>The Geometry of the Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An <strong>idempotent</strong> is a matrix $P$ with $P^2=P$. The idempotents of $M_5(\mathbb{C})$ are the projections, and their geometry is the geometry of the subspaces of $\mathbb{C}^5$:</p>
+<ul>
+<li>the rank-one idempotents form an <strong>affine bundle of rank $4$ over $\mathbb{P}^4$</strong>, of dimension $8$;</li>
+<li>the rank-$p$ idempotents form the homogeneous space
+  $$
+  PGL_5/P(GL_p\times GL_{5-p}),
+  $$
+  of dimension $2p(5-p)$, a fibre bundle over the Grassmannian $\operatorname{Gr}(p,5)$ whose fibre is the contractible affine space of complements;</li>
+<li>the full flag variety $GL_5/B$ has dimension $10$;</li>
+<li>the partial flags and their incidence relations organize the nested subspaces;</li>
+<li>the gauge torus is the diagonal fibre of the frame bundle $GL_5\to GL_5/B$.</li>
+</ul>
+<p>The rank-one case is the model. A rank-one idempotent is $P=v\ell$ with $\ell(v)=1$; the image is the line $[v]\in\mathbb{P}^4$, and the fibre over $[v]$ is the affine space of linear functionals $\ell$ with $\ell(v)=1$, of dimension $4$. The total space has dimension $4+4=8$. The idempotent is determined by the pair (line, transverse hyperplane), not by a nested flag: the kernel is a complement of the image, not a hyperplane containing it.</p>
+<p>The rank-$p$ case is the same picture with a $p$-plane: the idempotent is the projection onto a $p$-plane $L$ along a complementary $(5-p)$-plane $K$. The base is the Grassmannian $\operatorname{Gr}(p,5)$ of $L$, of dimension $p(5-p)$; the fibre over $L$ is the affine space of complements $K$, also of dimension $p(5-p)$; the total is $2p(5-p)$.</p>
+<p>The article computes the dimensions, proves the bundle structure, describes the rank stratification and the Peirce decomposition, and relates the idempotents to the full and partial flag varieties. It assumes the rank-one idempotents, the Peirce decomposition and the orbits of <em>Roots of Unity and the Lagrange Idempotents</em>, <em>The Peirce Decomposition</em> and <em>The Adjoint Action, the Orbits and the Flag Variety</em>.</p>
+<h2 id="the-idempotents-of-rank-one">The Idempotents of Rank One</h2>
+<h3 id="the-affine-bundle-over-math35">The Affine Bundle over $\mathbb{P}^4$</h3>
+<p><strong>Theorem.</strong> The rank-one idempotents of $M_5(\mathbb{C})$ form an affine bundle of rank $4$ over $\mathbb{P}^4$, of total dimension $8$.</p>
+<p><strong>Proof.</strong> A rank-one idempotent is $P=v\ell$ with $v\ne0$, $\ell\ne0$ and $\ell(v)=1$. The map $\pi:P\mapsto[v]$ sends $P$ to its image line. The fibre over $[v]$ is $\{\ell\in(\mathbb{C}^5)^*:\ell(v)=1\}$, an affine space of dimension $4$ (the affine hyperplane in the dual cut out by $\ell(v)=1$). The structure group is the affine group of the fibre; the total dimension is $4+4=8$.</p>
+<p><strong>Corollary.</strong> The rank-one idempotents are the pairs (line, transverse hyperplane) with $\ell(v)=1$, modulo the scaling $v\mapsto tv$, $\ell\mapsto t^{-1}\ell$; the dimension is $5+5-1-1=8$.</p>
+<p><strong>Proof.</strong> The pair $(v,\ell)$ has $5+5=10$ parameters; the scaling has one parameter; the normalization $\ell(v)=1$ removes one; total $8$. The kernel of $P$ is $\ker\ell$, a hyperplane transverse to the line.</p>
+<p><strong>Corollary.</strong> The rank-one idempotent with image $[e_1]$ and kernel $\{x_1=0\}$ is $E_{11}$; a general rank-one idempotent over $[v]$ is $v\ell$ with $\ell(v)=1$.</p>
+<p><strong>Proof.</strong> $E_{11}=e_1e_1^*$; the general formula is the outer product.</p>
+<h3 id="the-dimension">The Dimension</h3>
+<p><strong>Proposition.</strong> The affine bundle of rank-one idempotents has base $\mathbb{P}^4$ of dimension $4$ and fibre of dimension $4$; the total dimension is $8$. The projection is a submersion; the fibres are affine spaces, hence contractible.</p>
+<p><strong>Proof.</strong> The map $\pi$ is surjective; in a local trivialization over the affine chart $v_1\ne0$, the fibre is the affine hyperplane $\ell(v)=1$, which is an affine space. The rank of the differential is $4$; the fibre dimension is $4$.</p>
+<p><strong>Corollary.</strong> The rank-one idempotents are an affine bundle, not a vector bundle: there is no zero section, because the zero matrix has rank $0$.</p>
+<p><strong>Proof.</strong> The zero matrix is the unique idempotent of rank $0$; it is not in the rank-one stratum. The fibres are affine spaces without a distinguished origin.</p>
+<p><strong>Corollary.</strong> The rank-one idempotents are the orbit of $E_{11}$ under $GL_5$, of dimension $8$; the stabilizer is the block diagonal $GL_1\times GL_4$ of dimension $17$.</p>
+<p><strong>Proof.</strong> The orbit-stabilizer theorem: $25-17=8$. The stabilizer preserves the image line and the kernel hyperplane.</p>
+<h3 id="the-explicit-projections">The Explicit Projections</h3>
+<p><strong>Proposition.</strong> In a basis adapted to the decomposition $\mathbb{C}^5=L\oplus K$, a rank-one idempotent with image $L$ and kernel $K$ is</p>
+<p>$$
+P=\begin{pmatrix}1&0\\0&0\end{pmatrix},
+$$</p>
+<p>in the block form $1+4$. The general rank-one idempotent is conjugate to this matrix.</p>
+<p><strong>Proof.</strong> The projection onto $L$ along $K$ is the identity on $L$ and zero on $K$; the block matrix is the display. Every rank-one idempotent has a one-dimensional image and a four-dimensional kernel, so it is conjugate to $E_{11}$.</p>
+<p><strong>Corollary.</strong> The rank-one idempotents are the matrices $v\ell$ with $\ell(v)=1$; the trace is $1$, the determinant is $0$, and the spectrum is $\{1,0,0,0,0\}$.</p>
+<p><strong>Proof.</strong> The trace of $v\ell$ is $\ell(v)=1$; the eigenvalues are $1$ and $0$ with multiplicities $1$ and $4$; the determinant is $0$.</p>
+<h2 id="the-idempotents-of-rank-math107">The Idempotents of Rank $p$</h2>
+<h3 id="the-homogeneous-space">The Homogeneous Space</h3>
+<p><strong>Theorem.</strong> The idempotents of rank $p$ form the homogeneous space</p>
+<p>$$
+PGL_5/P(GL_p\times GL_{5-p}),
+$$</p>
+<p>of dimension $2p(5-p)$, where $P(GL_p\times GL_{5-p})$ is the image in $PGL_5$ of the block diagonal subgroup $GL_p\times GL_{5-p}$.</p>
+<p><strong>Proof.</strong> The group $GL_5$ acts transitively on the rank-$p$ idempotents by conjugation; the stabilizer of $P=\operatorname{diag}(I_p,0)$ is the block diagonal $GL_p\times GL_{5-p}$. The dimension is</p>
+<p>$$
+25-\left(p^2+(5-p)^2\right)=2p(5-p),
+$$</p>
+<p>and the center acts trivially, so the same dimension holds for $PGL_5$.</p>
+<p><strong>Corollary.</strong> The dimensions are $p=0,1,2,3,4,5$: $0,8,12,12,8,0$. The top rank is $p=2$ or $3$, of dimension $12$; the rank-one and rank-four strata have dimension $8$; the zero and identity are points.</p>
+<p><strong>Proof.</strong> Evaluate $2p(5-p)$ at the six values.</p>
+<p><strong>Corollary.</strong> The rank-$p$ idempotent is determined by the pair (image $p$-plane $L$, kernel $(5-p)$-plane $K$) with $V=L\oplus K$; the pair is transverse, not nested.</p>
+<p><strong>Proof.</strong> The projection onto $L$ along $K$ has image $L$ and kernel $K$; conversely the pair determines the projection. The direct sum condition is the transversality.</p>
+<h3 id="the-fibre-bundle-over-math137">The Fibre Bundle over $\operatorname{Gr}(p,5)$</h3>
+<p><strong>Theorem.</strong> The rank-$p$ idempotents form a fibre bundle over the Grassmannian $\operatorname{Gr}(p,5)$ with fibre the affine space of complements to $L$, of dimension $p(5-p)$.</p>
+<p><strong>Proof.</strong> The map $\pi:P\mapsto\operatorname{im}P$ sends the idempotent to its image $p$-plane. The fibre over $L$ is the set of $(5-p)$-planes $K$ with $V=L\oplus K$, which is an affine space of dimension $p(5-p)$: the space of linear maps $\operatorname{Hom}(\mathbb{C}^5/L,L)\cong\operatorname{Hom}(\mathbb{C}^{5-p},\mathbb{C}^p)$, dimension $p(5-p)$. The base has dimension $p(5-p)$; the total is $2p(5-p)$.</p>
+<p><strong>Corollary.</strong> The fibre is contractible; the bundle is affine, not vector; the total space has the homotopy type of the Grassmannian.</p>
+<p><strong>Proof.</strong> An affine space is contractible; the bundle is a fibre bundle with contractible fibre, so the total space deformation retracts onto the base.</p>
+<p><strong>Corollary.</strong> For $p=1$, the base is $\mathbb{P}^4$ and the fibre is the affine space of hyperplane complements, dimension $4$; the total is $8$. For $p=2$, the base is $\operatorname{Gr}(2,5)$, dimension $6$, and the fibre has dimension $6$; the total is $12$.</p>
+<p><strong>Proof.</strong> The dimensions $p(5-p)$: $4$ for $p=1$, $6$ for $p=2$; the totals are $8$ and $12$.</p>
+<h3 id="the-contractible-fibre">The Contractible Fibre</h3>
+<p><strong>Proposition.</strong> The complement of a $p$-plane $L$ in $\mathbb{C}^5$ is the affine space $\operatorname{Hom}(\mathbb{C}^5/L,L)$, which is contractible; the bundle of complements is the affine bundle associated with the tautological quotient and subbundles.</p>
+<p><strong>Proof.</strong> A complement $K$ is the graph of a linear map $\mathbb{C}^5/L\to L$; the graph is a $(5-p)$-plane transverse to $L$; every complement arises uniquely from such a map. The space of maps is a vector space, hence contractible.</p>
+<p><strong>Corollary.</strong> The idempotents of rank $p$ are the sections of the affine bundle; the zero section would be a canonical complement, which does not exist without a choice of Hermitian metric.</p>
+<p><strong>Proof.</strong> A canonical complement would be the orthogonal complement, which requires a metric; without a metric, there is no zero section.</p>
+<p><strong>Remark.</strong> <strong>The idempotents are the transverse pairs, not the nested flags.</strong> The image and the kernel are complementary, not nested; the nested partial flag $L\subset K$ is a different homogeneous space, of dimension $p(5-p)$ for the Grassmannian, not $2p(5-p)$. The affine bundle of complements is the geometric content of the idempotent.</p>
+<h2 id="the-rank-stratification">The Rank Stratification</h2>
+<h3 id="the-orbits">The Orbits</h3>
+<p><strong>Theorem.</strong> The idempotent variety is the disjoint union of the $GL_5$-orbits $\mathcal{I}_p$ of rank $p$, for $p=0,\dots,5$. Each orbit is smooth of dimension $2p(5-p)$.</p>
+<p><strong>Proof.</strong> The rank is invariant under conjugation; the orbit of $\operatorname{diag}(I_p,0)$ is the set of rank-$p$ idempotents; the homogeneous space is smooth; the dimension is the orbit-stabilizer computation.</p>
+<p><strong>Corollary.</strong> The top-dimensional orbits are $p=2$ and $p=3$, of dimension $12$; the rank-one and rank-four orbits have dimension $8$; the zero and identity are the fixed points.</p>
+<p><strong>Proof.</strong> The dimensions $2p(5-p)$; the maximum at $p=2,3$; the endpoints.</p>
+<h3 id="the-rank-is-locally-constant">The Rank Is Locally Constant</h3>
+<p><strong>Proposition.</strong> On the idempotent variety, the rank equals the trace: $\operatorname{rank}P=\operatorname{tr}P$ for $P^2=P$. The trace is continuous, so the rank is locally constant; each orbit $\mathcal{I}_p$ is open and closed in the idempotent variety.</p>
+<p><strong>Proof.</strong> The eigenvalues of an idempotent are $0$ and $1$; the trace is the number of $1$s, which is the rank. The trace is a continuous function, and an integer-valued continuous function is locally constant. The preimage of the value $p$ is open and closed.</p>
+<p><strong>Corollary.</strong> The idempotent variety is the disjoint union of the six smooth orbits $\mathcal{I}_0,\dots,\mathcal{I}_5$, of dimensions $0,8,12,12,8,0$; it is smooth but disconnected, and it is not irreducible.</p>
+<p><strong>Proof.</strong> Each orbit is a homogeneous space, hence smooth; the rank is locally constant, so the orbits are the connected components (each orbit is connected because $GL_5(\mathbb{C})$ is connected); the dimensions are $2p(5-p)$.</p>
+<p><strong>Corollary.</strong> The closure of $\mathcal{I}_p$ in $M_5$ contains matrices of lower rank, but no idempotent of lower rank: the idempotent variety itself has no closure inclusions between different ranks. The lower-rank limits are non-idempotent.</p>
+<p><strong>Proof.</strong> A sequence $P_n\in\mathcal{I}_p$ can converge to a rank-$q$ matrix $P$ with $q<p$; if the limit were idempotent, its rank would be $\operatorname{tr}P=\lim\operatorname{tr}P_n=p$, a contradiction. So the lower-rank limit is not idempotent. The idempotent variety is closed, because $P^2=P$ is polynomial; hence no idempotent of lower rank lies in the closure.</p>
+<h3 id="the-peirce-decomposition">The Peirce Decomposition</h3>
+<p><strong>Theorem.</strong> Relative to an idempotent $P$ of rank $p$, the algebra decomposes as</p>
+<p>$$
+M_5=P M_5 P\oplus P M_5(1-P)\oplus(1-P)M_5P\oplus(1-P)M_5(1-P),
+$$</p>
+<p>of dimensions $p^2$, $p(5-p)$, $p(5-p)$, $(5-p)^2$. The off-diagonal summands form the tangent space to the orbit of $P$, of dimension $2p(5-p)$; the diagonal summands form the stabilizer, of dimension $p^2+(5-p)^2$.</p>
+<p><strong>Proof.</strong> The four corners are the Peirce spaces; the multiplication table is the block multiplication. The tangent space to the conjugation orbit is $\{[X,P]:X\in\mathfrak{gl}_5\}$, which is the off-diagonal part; the stabilizer is the block diagonal part.</p>
+<p><strong>Corollary.</strong> The Peirce decomposition is the infinitesimal form of the affine bundle: the off-diagonal corners are the directions of the image and kernel, the diagonal corners the gauge directions.</p>
+<p><strong>Proof.</strong> The tangent directions change the image or the kernel; the stabilizer directions preserve the decomposition.</p>
+<p><strong>Remark.</strong> <strong>The geometry of the idempotents is the geometry of the Peirce decomposition.</strong> The idempotent is the projection onto the $1$-eigenspace along the $0$-eigenspace; the four corners are the four Peirce spaces; the orbit is the off-diagonal part; the stabilizer is the diagonal part. The rank stratification is the stratification by the dimension of the $1$-eigenspace.</p>
+<h2 id="the-full-flag-variety">The Full Flag Variety</h2>
+<h3 id="the-flags">The Flags</h3>
+<p><strong>Definition.</strong> A <strong>full flag</strong> in $\mathbb{C}^5$ is a chain</p>
+<p>$$
+0\subset V_1\subset V_2\subset V_3\subset V_4\subset\mathbb{C}^5,
+\qquad \dim V_k=k .
+$$</p>
+<p>The <strong>full flag variety</strong> $\mathcal{F}=GL_5/B$ is the set of full flags, where $B$ is the Borel subgroup of upper triangular matrices.</p>
+<p><strong>Proposition.</strong> $GL_5$ acts transitively on the full flags; the stabilizer of the standard flag is $B$; the flag variety is the homogeneous space $GL_5/B$.</p>
+<p><strong>Proof.</strong> A flag is the span of a basis $v_1,\dots,v_5$ with $V_k=\langle v_1,\dots,v_k\rangle$; $GL_5$ acts transitively on the bases and hence on the flags; the stabilizer of the standard flag is the group of upper triangular matrices.</p>
+<p><strong>Corollary.</strong> The flag variety is compact and projective; it is the quotient of $GL_5$ by the Borel.</p>
+<p><strong>Proof.</strong> The flag variety is a closed subvariety of a product of Grassmannians, hence projective; it is compact because $GL_5/B$ is the image of the compact unitary group $U(5)$ (the Iwasawa decomposition).</p>
+<h3 id="the-dimension_1">The Dimension</h3>
+<p><strong>Theorem.</strong> The full flag variety has dimension $10$:</p>
+<p>$$
+\dim GL_5/B=25-15=10 .
+$$</p>
+<p><strong>Proof.</strong> The Borel $B$ has dimension $15$ (five diagonal plus ten upper-triangular entries); the quotient has dimension $25-15=10$.</p>
+<p><strong>Corollary.</strong> The dimension is also $\binom{5}{2}=10$, the number of positive roots; the flag variety is the model for the root system $A_4$.</p>
+<p><strong>Proof.</strong> $\binom{5}{2}=10$; the positive roots of $A_4$ are the ten pairs $i<j$.</p>
+<p><strong>Corollary.</strong> The full flag variety is the bundle over $\mathbb{P}^4$ with fibre $\mathbb{P}^3$, then over $\mathbb{P}^2$, and so on; the dimensions add $4+3+2+1=10$.</p>
+<p><strong>Proof.</strong> The projection to $V_1$ has fibre the flags of $\mathbb{C}^5/V_1\cong\mathbb{C}^4$; inductively the dimensions add $4+3+2+1$.</p>
+<h3 id="the-borel">The Borel</h3>
+<p><strong>Theorem.</strong> The Borel $B=T\ltimes U$ is the stabilizer of the standard flag; the torus $T$ is the diagonal, the unipotent $U$ the upper triangular with unit diagonal. The dimensions are $5$, $10$ and $15$.</p>
+<p><strong>Proof.</strong> The upper triangular matrices preserve the standard flag; the diagonal and the unipotent parts are the semidirect product.</p>
+<p><strong>Corollary.</strong> The flag variety is the quotient of $GL_5$ by the Borel; the fibre of the frame bundle over the flag variety is $B$.</p>
+<p><strong>Proof.</strong> The frame bundle $GL_5\to GL_5/B$ has fibre $B$; the frame is a basis adapted to the flag.</p>
+<h2 id="the-partial-flags-and-the-incidence">The Partial Flags and the Incidence</h2>
+<h3 id="the-nested-partial-flags">The Nested Partial Flags</h3>
+<p><strong>Definition.</strong> A <strong>partial flag of type</strong> $(d_1,\dots,d_s)$ is a chain $V_{d_1}\subset\cdots\subset V_{d_s}$ with $\dim V_{d_i}=d_i$. The <strong>parabolic</strong> $P$ stabilizing a partial flag is the group of block upper triangular matrices; the partial flag variety is $GL_5/P$.</p>
+<p><strong>Theorem.</strong> The dimension of the partial flag variety of type $(d_1,\dots,d_s)$ is</p>
+<p>$$
+\sum_{i=0}^{s}d_i(d_{i+1}-d_i),
+\qquad d_0=0,\quad d_{s+1}=5 .
+$$</p>
+<p><strong>Proof.</strong> The dimension is the sum of the dimensions of the Grassmannians of the successive quotients: $d_i(d_{i+1}-d_i)$ for each step. The sum telescopes to $\dim GL_5-\dim P$.</p>
+<p><strong>Corollary.</strong> The full flag has type $(1,2,3,4)$, dimension $1\cdot1+2\cdot1+3\cdot1+4\cdot1=10$. The Grassmannian $\operatorname{Gr}(p,5)$ has type $(p)$, dimension $p(5-p)$.</p>
+<p><strong>Proof.</strong> Evaluate the formula for the two types.</p>
+<p><strong>Corollary.</strong> The nested partial flags are not the idempotents: the nested partial flag of type $(p,5-p)$ has dimension $p(5-p)$ for the $p$-plane alone, while the rank-$p$ idempotents have dimension $2p(5-p)$. The idempotent needs the transverse kernel as well.</p>
+<p><strong>Proof.</strong> The formula gives $p(5-p)$ for the nested flag; the idempotent adds the complement, of dimension $p(5-p)$.</p>
+<h3 id="the-transverse-pairs">The Transverse Pairs</h3>
+<p><strong>Theorem.</strong> The rank-$p$ idempotents are the transverse pairs $(L,K)$ with $\dim L=p$, $\dim K=5-p$, $L\oplus K=\mathbb{C}^5$; they form the homogeneous space $GL_5/(GL_p\times GL_{5-p})$ of dimension $2p(5-p)$.</p>
+<p><strong>Proof.</strong> The pair determines the projection; the stabilizer is the block diagonal; the dimension is $2p(5-p)$.</p>
+<p><strong>Corollary.</strong> The transverse pair is not a nested partial flag; the incidence "L\subset K" is a different variety, of dimension $p(5-p)$; the transverse incidence "L\oplus K=V" is open in $\operatorname{Gr}(p,5)\times\operatorname{Gr}(5-p,5)$.</p>
+<p><strong>Proof.</strong> The nested incidence is the closed condition $L\subset K$; the transverse condition is the open condition $L\cap K=0$; the dimensions differ.</p>
+<p><strong>Corollary.</strong> The idempotent variety maps to the product of Grassmannians by $P\mapsto(\operatorname{im}P,\ker P)$; the image is the open set of transverse pairs; the map is an isomorphism onto its image.</p>
+<p><strong>Proof.</strong> The projection is determined by the transverse pair; the map is bijective onto the open set of transverse pairs.</p>
+<h3 id="the-incidence-relations">The Incidence Relations</h3>
+<p><strong>Proposition.</strong> The incidence relations between the image and the kernel of the idempotents are the transverse incidence; the nested incidence appears in the flag variety, not in the idempotent variety.</p>
+<p><strong>Proof.</strong> The image and kernel of a projection are complementary; a nested flag has $V_p\subset V_{p+1}$, which is not the idempotent condition.</p>
+<p><strong>Corollary.</strong> The idempotents of rank $p$ are the open subset of $\operatorname{Gr}(p,5)\times\operatorname{Gr}(5-p,5)$ where the two subspaces are transverse; the closure contains the incident pairs.</p>
+<p><strong>Proof.</strong> The transverse condition is open; the boundary is the incident locus, where the subspaces meet nontrivially.</p>
+<p><strong>Remark.</strong> <strong>The geometry of the idempotents is the geometry of the transverse pairs, and the geometry of the flags is the geometry of the nested chains.</strong> The two are related by the incidence but are not the same. The idempotent of rank $p$ is the projection onto the first subspace along the second; the nested flag is the chain of subspaces. The affine bundle of complements is the difference.</p>
+<h2 id="the-gauge-and-the-frame-bundle">The Gauge and the Frame Bundle</h2>
+<h3 id="the-frame-bundle">The Frame Bundle</h3>
+<p><strong>Definition.</strong> A <strong>frame</strong> of $\mathbb{C}^5$ is a basis $(v_1,\dots,v_5)$; the <strong>frame bundle</strong> is $\mathcal{F}=GL_5$, with the projection to the flag variety sending a basis to the flag it spans.</p>
+<p><strong>Theorem.</strong> The frame bundle $GL_5\to GL_5/B$ has fibre the Borel $B=T\ltimes U$; the structure group is $B$; the frame bundle is a principal $B$-bundle.</p>
+<p><strong>Proof.</strong> The fibre over the standard flag is the set of bases adapted to the flag, which is the Borel: the diagonal rescalings and the upper triangular changes.</p>
+<p><strong>Corollary.</strong> The diagonal torus $T$ is the gauge group of the frame; the unipotent $U$ is the group of triangular changes of the frame.</p>
+<p><strong>Proof.</strong> The diagonal changes rescale the basis vectors; the unipotent changes add higher vectors to lower ones; the semidirect product is the Borel.</p>
+<h3 id="the-gauge-fibre">The Gauge Fibre</h3>
+<p><strong>Theorem.</strong> The gauge torus $T\cong(\mathbb{C}^\times)^5$ acts on the frames by rescaling the basis vectors. The centre $\mathbb{C}^\times$ acts trivially on the flag and on the projection; the effective gauge group is $T/\mathbb{C}^\times\cong(\mathbb{C}^\times)^4$, of dimension $4$.</p>
+<p><strong>Proof.</strong> The rescaling $v_k\mapsto t_kv_k$ changes the frame but not the flag if the $t_k$ are nonzero; the common scaling of all $v_k$ changes nothing in the flag or the projection. The four ratios $t_k/t_{k+1}$ are the gauge parameters.</p>
+<p><strong>Corollary.</strong> The four gauge parameters are the simple-root directions of the torus; the composites are the products; there is no fifth independent scalar.</p>
+<p><strong>Proof.</strong> The torus has dimension $5$; the centre has dimension $1$; the quotient has dimension $4$. The simple roots are the four ratios.</p>
+<p><strong>Corollary.</strong> The gauge is the fibre of the frame bundle modulo the centre; the frame bundle is the $T$-bundle over the flag variety with the four-parameter gauge fibre.</p>
+<p><strong>Proof.</strong> The frame bundle has fibre $B$; the diagonal part is $T$; the centre acts trivially on the flag; the effective gauge is $T/\mathbb{C}^\times$.</p>
+<p><strong>Remark.</strong> <strong>The gauge is the diagonal fibre of the frame bundle.</strong> The frame bundle $GL_5\to GL_5/B$ has the Borel as fibre; the diagonal torus is the gauge, the unipotent is the triangular change. The four parameters are the ratios of the diagonal scalings; they rescale the simple nilpotents and fix the root. The geometry of the idempotents and the flags is the geometry of the frames modulo the gauge.</p>
+<h2 id="summary">Summary</h2>
+<p>The idempotents of rank one form an affine bundle of rank $4$ over $\mathbb{P}^4$, of dimension $8$. The idempotents of rank $p$ form the homogeneous space</p>
+<p>$$
+PGL_5/P(GL_p\times GL_{5-p}),
+$$</p>
+<p>of dimension $2p(5-p)$; they are the transverse pairs $(L,K)$ with $L\oplus K=\mathbb{C}^5$, and they fibre over $\operatorname{Gr}(p,5)$ with the contractible affine fibre of complements.</p>
+<p>$$
+\boxed{\ \dim\mathcal{I}_p=2p(5-p);\quad \dim GL_5/B=10;\quad \dim\operatorname{Gr}(p,5)=p(5-p);\quad \text{gauge}=(\mathbb{C}^\times)^4.\ }
+$$</p>
+<p>The full flag variety $GL_5/B$ has dimension $10$; the nested partial flags have dimension $\sum d_i(d_{i+1}-d_i)$; the idempotents are the transverse pairs, not the nested flags. The Peirce decomposition splits the algebra into the four corners; the off-diagonal corners are the tangent space to the orbit, the diagonal corners the stabilizer. The gauge torus is the diagonal fibre of the frame bundle, of dimension $4$ modulo the centre.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rank-one idempotents</td>
+<td>$8$ (affine bundle over $\mathbb{P}^4$)</td>
+</tr>
+<tr>
+<td>Rank-$p$ idempotents</td>
+<td>$2p(5-p)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(p,5)$</td>
+<td>$p(5-p)$</td>
+</tr>
+<tr>
+<td>Full flag variety</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>Partial flag $(d_1,\dots,d_s)$</td>
+<td>$\sum d_i(d_{i+1}-d_i)$</td>
+</tr>
+<tr>
+<td>Gauge torus</td>
+<td>$4$ (effective)</td>
+</tr>
+<tr>
+<td>Borel $B$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>Unipotent $U$</td>
+<td>$10$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{I}_p$</td>
+<td>The rank-$p$ idempotents</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(p,5)$</td>
+<td>The Grassmannian of $p$-planes</td>
+</tr>
+<tr>
+<td>$GL_5/B$</td>
+<td>The full flag variety</td>
+</tr>
+<tr>
+<td>$P(GL_p\times GL_{5-p})$</td>
+<td>The block diagonal stabilizer</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>The diagonal torus</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>The unipotent group</td>
+</tr>
+<tr>
+<td>$B=T\ltimes U$</td>
+<td>The Borel</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the flag varieties, the Grassmannians and the incidence relations.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the geometry of the Grassmannians and the flag varieties.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the homogeneous spaces and the frame bundles.</li>
+<li><a href="the-peirce-decomposition-of-m5c.html">The Peirce Decomposition</a>, for the four corners and the multiplication table.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the orbits and the flag variety.</li>
+<li><a href="the-partial-flags-of-m5c.html">The Partial Flags</a>, for the nested partial flags and their dimensions.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the gauge and the frame.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

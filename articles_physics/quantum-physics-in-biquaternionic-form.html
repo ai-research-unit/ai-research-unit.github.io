@@ -292,55 +292,55 @@ $$</p>
 <h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
 <p><strong>Time evolution of a pure state.</strong> A pure state is an idempotent $\tilde\Pi = \tfrac{1}{2}(e_t + i\vec u)$. It evolves in time by conjugation with a one-parameter group of unitary elements:</p>
 <p>$$
-\tilde\Pi(t') = \tilde{U}(t')\,\tilde\Pi(0)\,\tilde{U}(t')^{*},
+\tilde\Pi(t') = \tilde Q(t')\,\tilde\Pi(0)\,\tilde Q(t')^{*},
 $$</p>
-<p>where $\tilde{U}(t')$ is a <strong>unitary biquaternion</strong>, $\tilde{U}\tilde{U}^{*} = e_t$, satisfying the <strong>Schrödinger equation</strong></p>
+<p>where $\tilde Q(t')$ is a <strong>unitary biquaternion</strong>, $\tilde Q\tilde Q^{*} = e_t$, satisfying the <strong>Schrödinger equation</strong></p>
 <p>$$
-i\hbar\, \frac{d}{dt'}\tilde{U}(t') = \tilde{H}\,\tilde{U}(t'), \qquad \tilde{U}(0) = e_t,
+i\hbar\, \frac{d}{dt'}\tilde Q(t') = \tilde{H}\,\tilde Q(t'), \qquad \tilde Q(0) = e_t,
 $$</p>
 <p>with $\tilde{H} = h_t e_t + i\vec h \in \mathbb{M}_+$ a Hermitian element (the Hamiltonian).</p>
 <p><strong>The solution.</strong> We have $-i\tilde{H} = -ih_t e_t + \vec h$. The scalar part and the vector part commute, so</p>
 <p>$$
-\boxed{\;\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar) = \exp(-ih_t t'/\hbar)\left(\cos(|\vec h|t'/\hbar)\,e_t + \sin(|\vec h|t'/\hbar)\,\vec u_h\right)\;},
+\boxed{\;\tilde Q(t') = \exp(-i\tilde{H}t'/\hbar) = \exp(-ih_t t'/\hbar)\left(\cos(|\vec h|t'/\hbar)\,e_t + \sin(|\vec h|t'/\hbar)\,\vec u_h\right)\;},
 $$</p>
 <p>where $\vec u_h = \vec h/|\vec h|$ (for $\vec h \neq 0$). The exponential of the vector part uses $\vec u_h^2 = -e_t$, which gives the trigonometric form.</p>
-<p>The element $\tilde{U}(t')$ is <strong>unitary</strong>: $\tilde{U}(t')\tilde{U}(t')^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec h|t'/\hbar$, $\tilde{U}(t')$ is Hermitian exactly when $\tilde{U}(t')^2 = e_t$, which requires either $\sin\theta = 0$ together with $h_tt'/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $h_tt'/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $h_t = 0$ only the first case survives, at the isolated times $t' = n\pi\hbar/|\vec h|$. For $h_t \neq 0$ and $\vec h \neq 0$, apart from $t'=0$, the first case gives Hermitian times exactly when $h_t/|\vec h|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the unitary group $\mathrm{U}(2) \subset \mathbb{B}$.</p>
+<p>The element $\tilde Q(t')$ is <strong>unitary</strong>: $\tilde Q(t')\tilde Q(t')^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec h|t'/\hbar$, $\tilde Q(t')$ is Hermitian exactly when $\tilde Q(t')^2 = e_t$, which requires either $\sin\theta = 0$ together with $h_tt'/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $h_tt'/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $h_t = 0$ only the first case survives, at the isolated times $t' = n\pi\hbar/|\vec h|$. For $h_t \neq 0$ and $\vec h \neq 0$, apart from $t'=0$, the first case gives Hermitian times exactly when $h_t/|\vec h|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the unitary group $\mathrm{U}(2) \subset \mathbb{B}$.</p>
 <p><strong>The trace part of the Hamiltonian does not affect the state.</strong> Since $\exp(-ih_t t'/\hbar)$ is a central complex scalar, and since the conjugation</p>
 <p>$$
-\tilde{U}(t')\,\tilde\Pi\,\tilde{U}(t')^{*} = \exp(-ih_t t'/\hbar)\tilde u\,\tilde\Pi\,\exp(+ih_t t'/\hbar)\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
+\tilde Q(t')\,\tilde\Pi\,\tilde Q(t')^{*} = \exp(-ih_t t'/\hbar)\tilde u\,\tilde\Pi\,\exp(+ih_t t'/\hbar)\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
 $$</p>
 <p>(with $\tilde u = \cos(|\vec h|t'/\hbar)e_t + \sin(|\vec h|t'/\hbar)\vec u_h$ a unit real quaternion), the phase $\exp(-ih_t t'/\hbar)$ cancels out. So only the traceless part $\vec h$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.</p>
 <p><strong>Time evolution of a mixed state.</strong> A general state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ evolves by the same conjugation:</p>
 <p>$$
-\tilde{Ϛ}(t') = \tilde{U}(t')\,\tilde{Ϛ}(0)\,\tilde{U}(t')^{*}.
+\tilde{Ϛ}(t') = \tilde Q(t')\,\tilde{Ϛ}(0)\,\tilde Q(t')^{*}.
 $$</p>
 <p>This is the <strong>von Neumann equation</strong>, expressed as a rotor conjugation. In differential form, it is</p>
 <p>$$
 i\hbar\, \frac{d}{dt'}\tilde{Ϛ}(t') = [\tilde{H}, \tilde{Ϛ}(t')],
 $$</p>
 <p>with the commutator defined in the biquaternion algebra.</p>
-<p><strong>Interpretation.</strong> The unitary $\tilde{U}(t')$ is an inner automorphism of the algebra: conjugation by a unitary biquaternion preserves multiplication. Its action on $\mathbb{M}_+$ keeps the scalar part fixed and rotates the imaginary vector part, giving the standard precession of a spin-1/2 in a magnetic field, expressed as the biquaternion rotation.</p>
+<p><strong>Interpretation.</strong> The unitary $\tilde Q(t')$ is an inner automorphism of the algebra: conjugation by a unitary biquaternion preserves multiplication. Its action on $\mathbb{M}_+$ keeps the scalar part fixed and rotates the imaginary vector part, giving the standard precession of a spin-1/2 in a magnetic field, expressed as the biquaternion rotation.</p>
 <h3 id="the-heisenberg-picture">The Heisenberg Picture</h3>
 <p>In the <strong>Heisenberg picture</strong>, the state is fixed and the observables evolve:</p>
 <p>$$
-\tilde{H}_{\mathrm{H}}(t') = \tilde{U}(t')^{*}\,\tilde{H}\,\tilde{U}(t').
+\tilde{H}_{\mathrm{H}}(t') = \tilde Q(t')^{*}\,\tilde{H}\,\tilde Q(t').
 $$</p>
 <p>The evolution equation is the <strong>Heisenberg equation</strong></p>
 <p>$$
 i\hbar\, \frac{d}{dt'}\tilde{H}_{\mathrm{H}}(t') = [\tilde{H}_{\mathrm{H}}(t'), \tilde{H}_0],
 $$</p>
 <p>where $\tilde{H}_0$ is the Hamiltonian.</p>
-<p><strong>Derivation.</strong> We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t') = \tilde{U}^{*}\tilde{H}\tilde{U}$, using the Schrödinger equation $i\hbar\,d\tilde{U}/dt' = \tilde{H}_0\tilde{U}$ and its adjoint $-i\hbar\,\left(d\tilde{U}/dt'\right)^{*} = \tilde{U}^{*}\tilde{H}_0$:</p>
+<p><strong>Derivation.</strong> We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t') = \tilde Q^{*}\tilde{H}\tilde Q$, using the Schrödinger equation $i\hbar\,d\tilde Q/dt' = \tilde{H}_0\tilde Q$ and its adjoint $-i\hbar\,\left(d\tilde Q/dt'\right)^{*} = \tilde Q^{*}\tilde{H}_0$:</p>
 <p>$$
-i\hbar\, \frac{d}{dt'}\tilde{H}_{\mathrm{H}} = i\hbar\left(\left(d\tilde{U}/dt'\right)^{*}\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}d\tilde{U}/dt'\right) = -\tilde{U}^{*}\tilde{H}_0\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\tilde{H}_0\tilde{U} = \tilde{U}^{*}[\tilde{H}, \tilde{H}_0]\tilde{U}.
+i\hbar\, \frac{d}{dt'}\tilde{H}_{\mathrm{H}} = i\hbar\left(\left(d\tilde Q/dt'\right)^{*}\tilde{H}\tilde Q + \tilde Q^{*}\tilde{H}d\tilde Q/dt'\right) = -\tilde Q^{*}\tilde{H}_0\tilde{H}\tilde Q + \tilde Q^{*}\tilde{H}\tilde{H}_0\tilde Q = \tilde Q^{*}[\tilde{H}, \tilde{H}_0]\tilde Q.
 $$</p>
-<p>Since $\tilde{U}(t') = \exp(-i\tilde{H}_0 t'/\hbar)$ is a function of $\tilde{H}_0$, it <strong>commutes with $\tilde{H}_0$</strong>. This is what makes the last expression equal to $[\tilde{H}_{\mathrm{H}}, \tilde{U}^{*}\tilde{H}_0\tilde{U}] = [\tilde{H}_{\mathrm{H}}, \tilde{H}_0]$. So</p>
+<p>Since $\tilde Q(t') = \exp(-i\tilde{H}_0 t'/\hbar)$ is a function of $\tilde{H}_0$, it <strong>commutes with $\tilde{H}_0$</strong>. This is what makes the last expression equal to $[\tilde{H}_{\mathrm{H}}, \tilde Q^{*}\tilde{H}_0\tilde Q] = [\tilde{H}_{\mathrm{H}}, \tilde{H}_0]$. So</p>
 <p>$$
 i\hbar\, \frac{d}{dt'}\tilde{H}_{\mathrm{H}}(t') = [\tilde{H}_{\mathrm{H}}(t'), \tilde{H}_0].
 $$</p>
 <p>The two pictures are related by a unitary transformation and give the same physical predictions.</p>
 <h3 id="reversibility">Reversibility</h3>
-<p>The evolution generated by a Hermitian Hamiltonian is <strong>unitary</strong>: the element $\tilde{U}(t')$ satisfies $\tilde{U}(t')\tilde{U}(t')^{*} = e_t$. The evolution is therefore <strong>reversible</strong>: the state at any later time can be recovered from an earlier time by applying $\tilde{U}(t')^{*}$.</p>
+<p>The evolution generated by a Hermitian Hamiltonian is <strong>unitary</strong>: the element $\tilde Q(t')$ satisfies $\tilde Q(t')\tilde Q(t')^{*} = e_t$. The evolution is therefore <strong>reversible</strong>: the state at any later time can be recovered from an earlier time by applying $\tilde Q(t')^{*}$.</p>
 <p>Reversibility is one of the structural features of the biquaternion formulation. The unitary elements form the group $\mathrm{U}(2) \subset \mathbb{B}$, and their conjugation action on $\mathbb{M}_+$ preserves the Hermitian form and the biquaternion norm.</p>
 <h2 id="measurement-as-an-algebraic-operation">Measurement as an Algebraic Operation</h2>
 <p>In the standard framework, the measurement postulate is stated separately from the unitary evolution. In the biquaternion framework, both are consequences of the same structure, the Hermitian form on $\mathbb{B}$, which restricts to the plain form on $\mathbb{M}_+$.</p>
@@ -354,7 +354,7 @@ $$</p>
 \tilde{Ϛ} \;\longmapsto\; \sum_i \tilde{K}_i\,\tilde{Ϛ}\,\tilde{K}_i^{*},
 $$</p>
 <p>and the probability of outcome $i$ is $p_i=\mathrm{Sc}(\tilde{K}_i^{*}\tilde{K}_i\tilde{Ϛ})/\mathrm{Sc}(\tilde{Ϛ})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{K}_i^{*} \tilde{K}_i \tilde{Ϛ})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.</p>
-<p><strong>A structural point.</strong> The <strong>reversible–irreversible distinction</strong> is algebraic in the biquaternion framework. Unitary elements $\tilde{U}$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\langle\tilde\Pi\rangle_{\natural} = \tilde\Pi\tilde\Pi^{\natural} = 0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.</p>
+<p><strong>A structural point.</strong> The <strong>reversible–irreversible distinction</strong> is algebraic in the biquaternion framework. Unitary elements $\tilde Q$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\langle\tilde\Pi\rangle_{\natural} = \tilde\Pi\tilde\Pi^{\natural} = 0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.</p>
 <h2 id="purity-entropy-and-fidelity">Purity, Entropy, and Fidelity</h2>
 <h3 id="purity">Purity</h3>
 <p>The <strong>purity</strong> of a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ is</p>
@@ -389,7 +389,7 @@ $$</p>
 <h3 id="the-unitary-group">The Unitary Group</h3>
 <p>The <strong>unitary group</strong> $\mathrm{U}(2)$ acts on $\mathbb{M}_+$ by conjugation:</p>
 <p>$$
-\tilde{Ϛ} \;\longmapsto\; \tilde{U}\,\tilde{Ϛ}\,\tilde{U}^{*}, \qquad \tilde{U} \in \mathrm{U}(2).
+\tilde{Ϛ} \;\longmapsto\; \tilde Q\,\tilde{Ϛ}\,\tilde Q^{*}, \qquad \tilde Q \in \mathrm{U}(2).
 $$</p>
 <p>This action preserves the Hermitian property and the trace, so it maps states to states and observables to observables.</p>
 <h3 id="unit-quaternions-and-spin-rotations">Unit Quaternions and Spin Rotations</h3>
@@ -417,30 +417,30 @@ $$</p>
 <p>Item 8 of the checklist states the compatibility with relativity as a requirement to be met. It deserves a section of its own, because the compatibility is stronger than the coexistence of the two theories on one biquaternion space: the relativistic and the quantum objects are made from the same elements, and their transformation groups are two subgroups of the same invertible elements, acting by one and the same conjugation formula.</p>
 <p><strong>One conjugation action, two groups.</strong> The symmetry transformations of this article and of its relativistic companions all act by <strong>conjugation</strong>,</p>
 <p>$$
-\tilde{Q} \;\longmapsto\; \tilde U\,\tilde{Q}\,\tilde U^{*},
-\qquad \tilde U \in \mathbb{B} \ \ \text{invertible},
+\tilde Q_1 \;\longmapsto\; \tilde Q\,\tilde Q_1\,\tilde Q^{*},
+\qquad \tilde Q \in \mathbb{B} \ \ \text{invertible},
 $$</p>
-<p>and the two theories differ only in the subgroup of the invertible elements over which the conjugating element ranges. The <strong>quantum operations</strong> of the Schrödinger picture are the <strong>unitary</strong> case, $\tilde U\tilde U^{*} = e_t$; these elements form the group $\mathrm{U}(2)$. The <strong>proper orthochronous Lorentz transformations</strong> of $\mathbb{M}_-$ are the case of <strong>unit norm</strong>, written $\tilde U_{\mathrm L}$, with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same biquaternion space, and their intersection is the rotation group:</p>
+<p>and the two theories differ only in the subgroup of the invertible elements over which the conjugating element ranges. The <strong>quantum operations</strong> of the Schrödinger picture are the <strong>unitary</strong> case, $\tilde Q\tilde Q^{*} = e_t$; these elements form the group $\mathrm{U}(2)$. The <strong>proper orthochronous Lorentz transformations</strong> of $\mathbb{M}_-$ are the case of <strong>unit norm</strong>, written $\tilde U_{\mathrm L}$, with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same biquaternion space, and their intersection is the rotation group:</p>
 <p>$$
 SU(2) \subset \mathrm{U}(2), \qquad SU(2) \subset SL(2,\mathbb{C}), \qquad \mathrm{U}(2) \cap SL(2,\mathbb{C}) = SU(2).
 $$</p>
 <p>The intersection is the set of unit real quaternions. Its conjugation action rotates the Bloch vector of a state in $\mathbb{M}_+$ and the spatial three-vector of a four-vector in $\mathbb{M}_-$ by the same $SO(3)$ rotation, with the same rotor. The spin rotation of the qubit and the spatial rotation of the material sector are therefore one algebraic operation, not two that happen to agree. This is the double cover $SU(2) \to SO(3)$ of the companion articles, read inside the single biquaternion space $\mathbb{B}$.</p>
 <p><strong>What distinguishes the two groups.</strong> The two groups are subgroups of the same invertible elements, acting by the same formula, and what separates them is the algebraic character of the transformation. For a unitary rotor the conjugation is multiplicative,</p>
 <p>$$
-\tilde{U}\left(\tilde{Q}_1\tilde{Q}_2\right)\tilde{U}^{*} = \left(\tilde{U}\tilde{Q}_1\tilde{U}^{*}\right)\left(\tilde{U}\tilde{Q}_2\tilde{U}^{*}\right), \qquad \tilde{U} \in \mathrm{U}(2),
+\tilde Q\left(\tilde{Q}_1\tilde{Q}_2\right)\tilde Q^{*} = \left(\tilde Q\tilde{Q}_1\tilde Q^{*}\right)\left(\tilde Q\tilde{Q}_2\tilde Q^{*}\right), \qquad \tilde Q \in \mathrm{U}(2),
 $$</p>
-<p>so it is an <strong>automorphism</strong> of $\mathbb{B}$; the map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ for a non-unitary element has no such property, and is only a <strong>congruence</strong>. The difference is visible in the quadratic forms each conjugation leaves invariant.</p>
+<p>so it is an <strong>automorphism</strong> of $\mathbb{B}$; the map $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{*}$ for a non-unitary element has no such property, and is only a <strong>congruence</strong>. The difference is visible in the quadratic forms each conjugation leaves invariant.</p>
 <p>The <strong>Hermitian form</strong> $\langle\tilde{H}_1,\tilde{H}_2\rangle_{*}$, equivalently $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2^{*})=2\langle\tilde{H}_1,\tilde{H}_2\rangle_{*}$ in the $2\times2$ image, is the Euclidean Hilbert–Schmidt form on $\mathbb{M}_+$ on which the Born rule rests; it is preserved by <strong>exactly</strong> the unitary group:</p>
 <p>$$
-\mathrm{Tr}\!\left(\tilde U\tilde{H}_1\tilde U^{*}\,\tilde U\tilde{H}_2\tilde U^{*}\right) = \mathrm{Tr}(\tilde{H}_1\tilde{H}_2) \ \ \text{for all Hermitian } \tilde{H}_1,\tilde{H}_2
-\quad \Longleftrightarrow \quad \tilde U \in \mathrm{U}(2),
+\mathrm{Tr}\!\left(\tilde Q\tilde{H}_1\tilde Q^{*}\,\tilde Q\tilde{H}_2\tilde Q^{*}\right) = \mathrm{Tr}(\tilde{H}_1\tilde{H}_2) \ \ \text{for all Hermitian } \tilde{H}_1,\tilde{H}_2
+\quad \Longleftrightarrow \quad \tilde Q \in \mathrm{U}(2),
 $$</p>
-<p>since the left-hand side is $\mathrm{Tr}\big((\tilde U^{*}\tilde U)\tilde{H}_2(\tilde U^{*}\tilde U)\tilde{H}_1\big)$; setting $S=\tilde U^{*}\tilde U$ and taking $\tilde{H}_2=e_t$ gives $S^2=e_t$, and $S$ positive then forces $S=e_t$, which is the unitarity condition. A boost fails it.</p>
+<p>since the left-hand side is $\mathrm{Tr}\big((\tilde Q^{*}\tilde Q)\tilde{H}_2(\tilde Q^{*}\tilde Q)\tilde{H}_1\big)$; setting $S=\tilde Q^{*}\tilde Q$ and taking $\tilde{H}_2=e_t$ gives $S^2=e_t$, and $S$ positive then forces $S=e_t$, which is the unitarity condition. A boost fails it.</p>
 <p>The <strong>biquaternion norm</strong> $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \overline{\langle\tilde U_{\mathrm L}\rangle_{\natural}} = 1$:</p>
 <p>$$
 \langle\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}, \qquad \tilde U_{\mathrm L} \in SL(2,\mathbb{C}).
 $$</p>
-<p>This form does <strong>not</strong>, however, separate the two groups, and the point is worth stating: since $|\langle\tilde{U}\rangle_{\natural}| = |\det\tilde{U}| = 1$ for a unitary element, the unitary group preserves the biquaternion norm as well. In general $\langle\tilde Q\rangle_{\natural}$ is invariant under conjugation by every element $\tilde U$ with $|\langle\tilde U\rangle_{\natural}| = 1$, of which the unitary elements and the unit-norm rotors are the two cases that occur here. The Lorentzian form is thus common to the quantum and the relativistic transformations. What separates the two full groups is the <strong>Euclidean</strong> plain form: $\mathrm{U}(2)$ preserves it, while a non-unitary Lorentz element does not. The automorphism property points the same way: it holds for the unitary elements and fails for the non-unitary Lorentz elements. Neither group contains the other, and their common subgroup is the rotation group $SU(2)$.</p>
+<p>This form does <strong>not</strong>, however, separate the two groups, and the point is worth stating: since $|\langle\tilde Q\rangle_{\natural}| = |\det\tilde Q| = 1$ for a unitary element, the unitary group preserves the biquaternion norm as well. In general $\langle\tilde Q\rangle_{\natural}$ is invariant under conjugation by every element $\tilde Q$ with $|\langle\tilde Q\rangle_{\natural}| = 1$, of which the unitary elements and the unit-norm rotors are the two cases that occur here. The Lorentzian form is thus common to the quantum and the relativistic transformations. What separates the two full groups is the <strong>Euclidean</strong> plain form: $\mathrm{U}(2)$ preserves it, while a non-unitary Lorentz element does not. The automorphism property points the same way: it holds for the unitary elements and fails for the non-unitary Lorentz elements. Neither group contains the other, and their common subgroup is the rotation group $SU(2)$.</p>
 <p><strong>One space, several structures.</strong> The two forms that define the groups are the forms of two different structures of the twelve, read over the one space (<em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>). The indefinite form is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, the form of the structure $\mathrm{GQA}$, an algebra over $\mathbb{C}$, whose diagonal is the interval. The positive form is the general plain sesquilinear form (the Hermitian form), the form of the structure $\mathrm{GPS}$, a sesqualgebra over $(\mathbb{C},\bar{\cdot})$, the pairing on which the Born rule rests. The Lorentz group is defined by the bilinear structure and the unitary group by the sesquilinear one. That one space carries both is the whole of the compatibility, and it is why the two theories can be written side by side without being one theory. On $\mathbb{M}_+$ the four forms collapse pairwise — the Hermitian form coincides with the general plain bilinear form, and $\langle\cdot,\cdot\rangle_{\natural}$ with $\langle\cdot,\cdot\rangle_{\natural*}$ (§<em>The Forms on $\mathbb{M}_+$</em>, above) — so the distinction is a statement about the full space, not about the Hermitian sector.</p>
 <p><strong>A boost is not a quantum operation.</strong> A pure boost has a Hermitian rotor, and therefore lies in $\mathbb{M}_+$ itself, the subspace that carries the states and observables:</p>
 <p>$$
@@ -456,7 +456,7 @@ $$</p>
 \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde{W}\,\tilde U_{\mathrm b}, \qquad \tilde{W} \in SU(2),
 $$</p>
 <p>separates a unitary factor $\tilde{W}$ — the <strong>Thomas–Wigner rotation</strong> — from a positive-definite Hermitian boost factor $\tilde U_{\mathrm b}$, both of unit norm. The composition of two relativistic transformations therefore produces a genuine quantum operation, a spin rotation: the relativistic group generates an element of the quantum group. This is where the two structures meet, and it is the algebraic origin of the non-commutativity of the boosts, treated in the companion article on the Lorentz group.</p>
-<p><strong>The shared imaginary unit.</strong> The $i$ of the Schrödinger equation $i\hbar\,d\tilde{U}/dt' = \tilde{H}\tilde{U}$, the $i$ of the phase $\exp(-i\tilde{H}t'/\hbar)$, and the $i$ of the material coordinate $ict'$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{M}_-$.</p>
+<p><strong>The shared imaginary unit.</strong> The $i$ of the Schrödinger equation $i\hbar\,d\tilde Q/dt' = \tilde{H}\tilde Q$, the $i$ of the phase $\exp(-i\tilde{H}t'/\hbar)$, and the $i$ of the material coordinate $ict'$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{M}_-$.</p>
 <p><strong>What the compatibility does and does not provide.</strong> The framework supplies a common biquaternion space: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.</p>
 <h2 id="what-is-structural-and-what-is-new">What Is Structural and What Is New</h2>
 <p><strong>What is standard QM, reformulated.</strong></p>
@@ -573,16 +573,16 @@ $$</p>
 <td>Projective measurement</td>
 </tr>
 <tr>
-<td>$\tilde{U}(t') = \exp(-ih_tt'/\hbar)(\cos(|\vec h|t'/\hbar)e_t + \sin(|\vec h|t'/\hbar)\vec u_h)$</td>
+<td>$\tilde Q(t') = \exp(-ih_tt'/\hbar)(\cos(|\vec h|t'/\hbar)e_t + \sin(|\vec h|t'/\hbar)\vec u_h)$</td>
 <td>Unitary evolution</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}(t') = \tilde{U}(t')\tilde{Ϛ}\tilde{U}(t')^{*}$</td>
+<td>$\tilde{Ϛ}(t') = \tilde Q(t')\tilde{Ϛ}\tilde Q(t')^{*}$</td>
 <td>Von Neumann evolution</td>
 </tr>
 <tr>
-<td>$\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, $\tilde U$ invertible</td>
-<td>Conjugation; quantum if $\tilde U\tilde U^{*} = e_t$ (group $\mathrm{U}(2)$), Lorentz if $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ (group $SL(2,\mathbb{C})$)</td>
+<td>$\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{*}$, $\tilde Q$ invertible</td>
+<td>Conjugation; quantum if $\tilde Q\tilde Q^{*} = e_t$ (group $\mathrm{U}(2)$), Lorentz if $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ (group $SL(2,\mathbb{C})$)</td>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1+|\vec r|^2)$</td>

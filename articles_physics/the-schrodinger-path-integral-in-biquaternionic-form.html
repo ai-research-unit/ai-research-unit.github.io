@@ -79,20 +79,20 @@
 <h3 id="the-evolution-operator-and-the-position-kernel">The evolution operator and the position kernel</h3>
 <p>The biquaternion Schrödinger equation $i\hbar\partial/\partial t'\psi=H\psi$ is solved formally by</p>
 <p>$$
-\tilde U(t') = \exp(-iH t'/\hbar),
+\tilde Q(t') = \exp(-iH t'/\hbar),
 \qquad
-\psi(t') = \tilde U(t')\,\psi(0),
+\psi(t') = \tilde Q(t')\,\psi(0),
 $$</p>
-<p>and because $H$ is central, $\tilde U(t')$ is a central unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde U\tilde U^{*}=e_t$. The evolution operator is a semigroup in time,</p>
+<p>and because $H$ is central, $\tilde Q(t')$ is a central unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde Q\tilde Q^{*}=e_t$. The evolution operator is a semigroup in time,</p>
 <p>$$
-\tilde U(t'_1+t'_2) = \tilde U(t'_2)\,\tilde U(t'_1),
+\tilde Q(t'_1+t'_2) = \tilde Q(t'_2)\,\tilde Q(t'_1),
 $$</p>
 <p>which is the algebraic statement that evolution is reversible and composable.</p>
 <p>In the position representation the kernel is the matrix element</p>
 <p>$$
-K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i) = \langle x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z|\,\tilde U(t'_f-t'_i)\,|x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z\rangle ,
+K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i) = \langle x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z|\,\tilde Q(t'_f-t'_i)\,|x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z\rangle ,
 $$</p>
-<p>a field on pairs of points taking values in the state module's endomorphism algebra; since $\tilde U$ is central, the kernel is a complex scalar times $e_t$, $K\,e_t$, with</p>
+<p>a field on pairs of points taking values in the state module's endomorphism algebra; since $\tilde Q$ is central, the kernel is a complex scalar times $e_t$, $K\,e_t$, with</p>
 <p>$$
 K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)\in\mathbb{C},
 $$</p>
@@ -135,7 +135,7 @@ $$</p>
 <h3 id="the-trotter-product-and-the-measure">The Trotter product and the measure</h3>
 <p>Composing the short-time kernel $N$ times and using the semigroup property gives the Trotter formula</p>
 <p>$$
-\tilde U(t')=\lim_{N\to\infty}\left(\tilde U(t'/N)\right)^N
+\tilde Q(t')=\lim_{N\to\infty}\left(\tilde Q(t'/N)\right)^N
 =\lim_{N\to\infty}\left(\exp(-iHt'/N\hbar)\right)^N ,
 $$</p>
 <p>and inserting a resolution of the identity between each pair of factors turns the matrix element into an integral over the intermediate positions:</p>
@@ -285,7 +285,7 @@ $$</p>
 <p><strong>3. What is the status of the oscillator kernel in the algebra?</strong> The kernel is a central function of the endpoints and the time, with an infinite spectral expansion. Whether the framework assigns it a place in a module of functions over $\mathbb{B}$ is not known.</p>
 <p><strong>4. Empirical content.</strong> Nothing in the Schrödinger path-integral reformulation distinguishes it from scalar quantum physics.</p>
 <h2 id="summary">Summary</h2>
-<p>The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde U(t')=\exp(-iHt'/\hbar)$ with $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is</p>
+<p>The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(t')=\exp(-iHt'/\hbar)$ with $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is</p>
 <p>$$
 K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 =\left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{3/2}
@@ -337,7 +337,7 @@ $$</p>
 <td>Central Hamiltonian</td>
 </tr>
 <tr>
-<td>$\tilde U(t')=\exp(-iHt'/\hbar)$</td>
+<td>$\tilde Q(t')=\exp(-iHt'/\hbar)$</td>
 <td>Evolution operator; central unitary, semigroup</td>
 </tr>
 <tr>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Element, the Coordinates and the Trace — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-element-the-coordinates-and-the-trace"><strong>The Element, the Coordinates and the Trace</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>An element of $M_4(\mathbb{C})$ is a linear map of $\mathbb{C}^4$, a matrix of sixteen complex coordinates, a bilinear form, and a pair of real matrices; the trace is the invariant linear functional that reads the scalar part.</strong> This article fixes the element and its coordinates, splits it into the scalar and traceless parts, states the Jordan decomposition, distinguishes the real and imaginary parts of the coordinates from the Hermitian decomposition, and describes the element as a linear map and as a bilinear form.</p>
+<p>The algebra is <em>The Matrix Algebra $M_4(\mathbb{C})$</em>; the involution and the positive definite form are <em>The Involution and the Hermitian Structure</em>; the spectral theory is <em>Spectral Theory and the Spectral Projectors</em>; the Peirce decomposition is <em>The Peirce Decomposition</em>.</p>
+<h2 id="the-coordinates">The Coordinates</h2>
+<p><strong>The sixteen coordinates.</strong> In the basis of matrix units,</p>
+<p>$$
+A=\sum_{i,j=1}^{4}A_{ij}E_{ij}
+=\begin{pmatrix}
+A_{11}&A_{12}&A_{13}&A_{14}\\
+A_{21}&A_{22}&A_{23}&A_{24}\\
+A_{31}&A_{32}&A_{33}&A_{34}\\
+A_{41}&A_{42}&A_{43}&A_{44}
+\end{pmatrix}.
+$$</p>
+<p>The entries $A_{ij}$ are the <strong>coordinates</strong> of $A$. There are sixteen complex coordinates, hence thirty-two real coordinates.</p>
+<p><strong>The product rule.</strong> The product is</p>
+<p>$$
+(AB)_{il}=\sum_{j=1}^{4}A_{ij}B_{jl}.
+$$</p>
+<p>In coordinates, the product is the matrix product; the coordinate of the product is a sum of four products of coordinates. The trace is</p>
+<p>$$
+\operatorname{tr}(AB)=\sum_{i=1}^{4}(AB)_{ii}=\sum_{i,j=1}^{4}A_{ij}B_{ji}.
+$$</p>
+<p><strong>The real and imaginary parts.</strong> Write</p>
+<p>$$
+A=X+iY,\qquad X,Y\in M_4(\mathbb{R}),
+$$</p>
+<p>with</p>
+<p>$$
+X=\frac{A+\bar A}{2},\qquad Y=\frac{A-\bar A}{2i}.
+$$</p>
+<p>The matrices $X,Y$ are real, and the map $A\mapsto(X,Y)$ is an $\mathbb{R}$-linear isomorphism</p>
+<p>$$
+M_4(\mathbb{C})\longrightarrow M_4(\mathbb{R})\oplus M_4(\mathbb{R}),
+\qquad 32=16+16.
+$$</p>
+<p>The <strong>real part</strong> is $X$, and the <strong>imaginary part</strong> is $Y$. The real part of the coordinates is not the Hermitian part of the element: the Hermitian part is</p>
+<p>$$
+\frac{A+A^*}{2}=\frac{X+X^{\mathsf T}}{2}+i\frac{Y-Y^{\mathsf T}}{2},
+$$</p>
+<p>which involves the transposes of $X$ and $Y$. For example, for $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ (in the upper-left block), $X=A$ is not Hermitian; the Hermitian part is $\begin{pmatrix}0&\frac12\\\frac12&0\end{pmatrix}$.</p>
+<p><strong>The conjugation.</strong> The coordinate conjugation is</p>
+<p>$$
+\bar A=X-iY,
+$$</p>
+<p>the entrywise complex conjugate. It is $\mathbb{C}$-antilinear and an algebra automorphism. The conjugate transpose is $A^*=\bar A^{\mathsf T}$, which is the composition of the conjugation and the transpose; it is the subject of <em>The Involution and the Hermitian Structure</em>.</p>
+<h2 id="the-scalar-and-traceless-parts">The Scalar and Traceless Parts</h2>
+<p><strong>Definition.</strong> The <strong>scalar part</strong> of $A$ is</p>
+<p>$$
+A_{\mathrm{sc}}=\frac14(\operatorname{tr}A)I,
+$$</p>
+<p>and the <strong>traceless part</strong> is</p>
+<p>$$
+A_0=A-\frac14(\operatorname{tr}A)I.
+$$</p>
+<p><strong>Proposition.</strong> The decomposition</p>
+<p>$$
+M_4(\mathbb{C})=\mathbb{C}I\oplus\mathfrak{sl}_4(\mathbb{C}),
+\qquad
+A=A_{\mathrm{sc}}+A_0,
+$$</p>
+<p>is direct and canonical. The scalar part is invariant under conjugation, the traceless part is traceless, and the dimensions are</p>
+<p>$$
+1+15=16.
+$$</p>
+<p><strong>Proof.</strong> The trace of $A_{\mathrm{sc}}$ is $\operatorname{tr}A$, and the trace of $A_0$ is $\operatorname{tr}A-\operatorname{tr}A=0$. The intersection $\mathbb{C}I\cap\mathfrak{sl}_4$ is zero because a scalar $\lambda I$ has trace $4\lambda$, which vanishes only if $\lambda=0$. The dimensions add because $\mathfrak{sl}_4$ is the kernel of the trace, of dimension $16-1=15$.</p>
+<p><strong>The trace pairing is orthogonal for the split.</strong> The pairing</p>
+<p>$$
+\beta(A,B)=\operatorname{tr}(AB)
+$$</p>
+<p>satisfies</p>
+<p>$$
+\beta(I,A_0)=\operatorname{tr}(A_0)=0,
+$$</p>
+<p>so the scalar line is orthogonal to the traceless subspace. The pairing is non-degenerate on each summand: on $\mathbb{C}I$, $\beta(I,I)=4\ne0$; on $\mathfrak{sl}_4$, the restriction is the trace form, which is non-degenerate because the dual of a traceless matrix under $\beta$ is again traceless.</p>
+<p><strong>The trace is the unique invariant linear functional.</strong> If $\varphi:M_4\to\mathbb{C}$ is linear and $\varphi(AB)=\varphi(BA)$ for all $A,B$, then $\varphi=c\operatorname{tr}$. The proof is in <em>The Matrix Algebra $M_4(\mathbb{C})$</em>: the commutators span $\mathfrak{sl}_4$, so $\varphi$ vanishes there and is determined by its value on $I$.</p>
+<h2 id="the-trace-pairing">The Trace Pairing</h2>
+<p><strong>Definition.</strong> The <strong>trace pairing</strong> is the complex-bilinear form</p>
+<p>$$
+\beta(A,B)=\operatorname{tr}(AB).
+$$</p>
+<p><strong>Proposition.</strong> The pairing is symmetric and non-degenerate:</p>
+<p>$$
+\beta(A,B)=\beta(B,A),\qquad
+\beta(E_{ij},E_{kl})=\delta_{jk}\delta_{il}.
+$$</p>
+<p>The dual basis of the matrix units is</p>
+<p>$$
+E_{ij}^{\vee}=E_{ji}.
+$$</p>
+<p><strong>Proof.</strong> The symmetry is $\operatorname{tr}(AB)=\operatorname{tr}(BA)$. The value on the units is the product rule: $\operatorname{tr}(E_{ij}E_{kl})=\operatorname{tr}(\delta_{jk}E_{il})=\delta_{jk}\delta_{il}$. The matrix of the pairing in the unit basis is a permutation matrix, hence invertible; the dual of $E_{ij}$ is $E_{ji}$ because $\beta(E_{ij},E_{kl})=\delta_{jk}\delta_{il}$ is $1$ exactly when $(k,l)=(j,i)$.</p>
+<p><strong>The pairing is indefinite.</strong> The trace pairing is not positive definite. For $A=\operatorname{diag}(1,i)$, $\beta(A,A)=\operatorname{tr}(A^2)=1-1=0$ with $A\ne0$. The positive definite form is</p>
+<p>$$
+\langle A,B\rangle=\operatorname{tr}(A^*B),
+$$</p>
+<p>which is a different object; it is <em>The Involution and the Hermitian Structure</em>.</p>
+<p><strong>The restriction to $\mathfrak{sl}_4$.</strong> On the traceless subspace, the trace pairing is the Killing form up to a scalar. For $\mathfrak{gl}_4$, the Killing form is</p>
+<p>$$
+K(X,Y)=8\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y),
+$$</p>
+<p>and on $\mathfrak{sl}_4$ the second term vanishes, so</p>
+<p>$$
+K(X,Y)=8\operatorname{tr}(XY).
+$$</p>
+<p>The trace pairing is therefore invariant and non-degenerate on $\mathfrak{sl}_4$, and it is the algebraic form behind the Killing form of <em>The Killing Form</em>.</p>
+<p><strong>The symmetric and antisymmetric parts.</strong> Every matrix splits as</p>
+<p>$$
+A=\frac{A+A^{\mathsf T}}{2}+\frac{A-A^{\mathsf T}}{2},
+$$</p>
+<p>into a symmetric and an antisymmetric part. The symmetric matrices have dimension $10$, the antisymmetric matrices dimension $6$, and</p>
+<p>$$
+10+6=16.
+$$</p>
+<p>The trace pairing is orthogonal for this split:</p>
+<p>$$
+\operatorname{tr}(SK)=0
+$$</p>
+<p>for $S$ symmetric and $K$ antisymmetric, because $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)$.</p>
+<h2 id="the-element-as-a-linear-map">The Element as a Linear Map</h2>
+<p><strong>The map.</strong> An element $A\in M_4(\mathbb{C})$ is a linear map</p>
+<p>$$
+A:\mathbb{C}^4\longrightarrow\mathbb{C}^4,\qquad v\longmapsto Av.
+$$</p>
+<p>Its <strong>kernel</strong> and <strong>image</strong> are</p>
+<p>$$
+\ker A=\{v:Av=0\},\qquad
+\operatorname{im}A=\{Av:v\in\mathbb{C}^4\},
+$$</p>
+<p>and the rank–nullity theorem gives</p>
+<p>$$
+\dim\ker A+\operatorname{rank}A=4.
+$$</p>
+<p><strong>The rank.</strong> The rank is the dimension of the image and the number of nonzero singular values. It is invariant under left and right multiplication by invertible matrices, and it is the size of the largest nonzero minor. The rank stratification is <em>The Forms, the Norms and the Singular Set</em>.</p>
+<p><strong>Invertibility.</strong> The following are equivalent:</p>
+<ul>
+<li>$A$ is invertible;</li>
+<li>$\ker A=0$;</li>
+<li>$\operatorname{rank}A=4$;</li>
+<li>$\det A\ne0$;</li>
+<li>$0$ is not an eigenvalue of $A$.</li>
+</ul>
+<p>The inverse is the adjugate divided by the determinant, and the determinant is the product of the eigenvalues.</p>
+<p><strong>The trace and the determinant are invariants of the map.</strong> The matrix of $A$ depends on the basis, but the trace and the determinant do not:</p>
+<p>$$
+\operatorname{tr}(SAS^{-1})=\operatorname{tr}A,\qquad
+\det(SAS^{-1})=\det A.
+$$</p>
+<p>The trace is the sum of the eigenvalues with algebraic multiplicity, and the determinant is their product. The characteristic polynomial is</p>
+<p>$$
+\chi_A(t)=\det(tI-A)=t^4-(\operatorname{tr}A)t^3+c_2t^2-c_1t+\det A.
+$$</p>
+<p><strong>The element as a bilinear form.</strong> The same matrix defines a complex-bilinear form</p>
+<p>$$
+B_A:\mathbb{C}^4\times\mathbb{C}^4\longrightarrow\mathbb{C},\qquad
+B_A(x,y)=x^{\mathsf T}Ay.
+$$</p>
+<p>The map $A\mapsto B_A$ is an isomorphism from $M_4$ to the space of bilinear forms. The symmetric part $A^{\mathsf T}=A$ gives a symmetric form, the antisymmetric part $A^{\mathsf T}=-A$ gives an alternating form, and the trace pairing is the contraction</p>
+<p>$$
+\beta(A,B)=\operatorname{tr}(AB)=\sum_{i,j}A_{ij}B_{ji}.
+$$</p>
+<p>The bilinear form is not the Hermitian form: $B_A(y,x)=y^{\mathsf T}Ax$ is not $\overline{B_A(x,y)}$ in general. The Hermitian form uses $A^*$, not $A^{\mathsf T}$.</p>
+<h2 id="the-jordan-decomposition">The Jordan Decomposition</h2>
+<p><strong>Theorem (Jordan–Chevalley).</strong> Every $A\in M_4(\mathbb{C})$ has a unique decomposition</p>
+<p>$$
+A=A_s+A_n,
+$$</p>
+<p>where $A_s$ is semisimple (diagonalisable over $\mathbb{C}$), $A_n$ is nilpotent, and</p>
+<p>$$
+A_sA_n=A_nA_s.
+$$</p>
+<p>Both $A_s$ and $A_n$ are polynomials in $A$ with complex coefficients.</p>
+<p><strong>Proof sketch.</strong> Let</p>
+<p>$$
+m_A(t)=\prod_{k=1}^{r}(t-\lambda_k)^{m_k}
+$$</p>
+<p>be the minimal polynomial, with distinct eigenvalues $\lambda_1,\dots,\lambda_r$. The Chinese remainder theorem gives polynomials $p_k(t)$ with</p>
+<p>$$
+p_k\equiv1\pmod{(t-\lambda_k)^{m_k}},\qquad
+p_k\equiv0\pmod{(t-\lambda_l)^{m_l}}\quad(l\ne k).
+$$</p>
+<p>The projectors $P_k=p_k(A)$ are the spectral projectors onto the generalized eigenspaces, and</p>
+<p>$$
+A_s=\sum_{k=1}^{r}\lambda_kP_k,\qquad
+A_n=A-A_s .
+$$</p>
+<p>The $P_k$ are polynomials in $A$ and commute with $A$; $A_s$ is diagonalisable with eigenvalues $\lambda_k$; $A_n$ is nilpotent on each generalized eigenspace because $(A-\lambda_kI)^{m_k}=0$ there. Uniqueness follows from the uniqueness of the spectral projectors. The details are in Horn and Johnson, <em>Matrix Analysis</em>.</p>
+<p><strong>The Jordan form.</strong> In a suitable basis,</p>
+<p>$$
+A=\operatorname{diag}(J_{m_1}(\lambda_1),\dots,J_{m_r}(\lambda_r)),
+\qquad
+J_m(\lambda)=\lambda I_m+N_m,
+$$</p>
+<p>with $N_m$ the nilpotent shift. The semisimple part is the diagonal $\operatorname{diag}(\lambda_1I_{m_1},\dots,\lambda_rI_{m_r})$, and the nilpotent part is the off-diagonal shift. The trace is</p>
+<p>$$
+\operatorname{tr}A=\sum_{k=1}^{r}m_k\lambda_k,
+$$</p>
+<p>and the determinant is</p>
+<p>$$
+\det A=\prod_{k=1}^{r}\lambda_k^{m_k}.
+$$</p>
+<p><strong>Example.</strong> For</p>
+<p>$$
+A=\begin{pmatrix}
+2&1&0&0\\
+0&2&0&0\\
+0&0&3&0\\
+0&0&0&-1
+\end{pmatrix}
+=\operatorname{diag}(J_2(2),J_1(3),J_1(-1)),
+$$</p>
+<p>the semisimple part is</p>
+<p>$$
+A_s=\operatorname{diag}(2,2,3,-1),
+$$</p>
+<p>and the nilpotent part is</p>
+<p>$$
+A_n=E_{12}.
+$$</p>
+<p>The two commute, $A_n^2=0$, and $A=A_s+A_n$. The trace is $2+2+3-1=6$, and the determinant is $2\cdot2\cdot3\cdot(-1)=-12$.</p>
+<p><strong>The Jordan decomposition is not the Peirce decomposition.</strong> The root $H$ is semisimple, and the simple nilpotents $E_{12},E_{23},E_{34}$ are nilpotent. But the sum $H+N$ with $[H,N]=N$ is not the Jordan decomposition of $H+N$: the Jordan parts must commute, and $H$ and $N$ do not. The Peirce decomposition is by the idempotents of $H$; the Jordan decomposition is by the minimal polynomial of the element. The two decompositions are different, and neither refines the other.</p>
+<p><strong>The trace of a nilpotent is zero.</strong> If $N$ is nilpotent, all its eigenvalues are zero, so $\operatorname{tr}N=0$. The trace of a commutator is zero, and the trace of a semisimple element is the sum of its eigenvalues. These facts are used throughout the spectral articles.</p>
+<h2 id="summary">Summary</h2>
+<p>An element $A\in M_4(\mathbb{C})$ has sixteen complex coordinates $A_{ij}$ in the matrix-unit basis, or thirty-two real coordinates through $A=X+iY$. It splits canonically as $A=\frac14(\operatorname{tr}A)I+A_0$ into a scalar part and a traceless part, of dimensions $1+15=16$, and the trace pairing $\beta(A,B)=\operatorname{tr}(AB)$ is symmetric, non-degenerate and indefinite, orthogonal for the split, and equal to the Killing form up to the factor $8$ on $\mathfrak{sl}_4$. The element is a linear map $\mathbb{C}^4\to\mathbb{C}^4$ with a kernel, an image, a rank, a determinant and a characteristic polynomial, and it is a complex-bilinear form $B_A(x,y)=x^{\mathsf T}Ay$. The Jordan decomposition $A=A_s+A_n$ into commuting semisimple and nilpotent parts exists and is unique, with both parts polynomials in $A$; it is not the Peirce decomposition. The real part $X$ of the coordinates is not the Hermitian part of $A$; the Hermitian part uses $A^*$ and is <em>The Involution and the Hermitian Structure</em>.</p>
+<p>$$
+\boxed{\ A=\frac14(\operatorname{tr}A)I+A_0,\quad \dim\mathbb{C}I=1,\quad \dim\mathfrak{sl}_4=15,\quad A=A_s+A_n,\quad [A_s,A_n]=0,\quad A_n\text{ nilpotent}. }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension or value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complex coordinates</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>Real coordinates</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>Scalar part</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>Traceless part</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>Symmetric matrices</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>Antisymmetric matrices</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Trace pairing</td>
+<td>symmetric, non-degenerate, indefinite</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{ij}$</td>
+<td>the sixteen complex coordinates</td>
+</tr>
+<tr>
+<td>$X,Y$</td>
+<td>the real and imaginary parts, $A=X+iY$</td>
+</tr>
+<tr>
+<td>$A_{\mathrm{sc}}=\frac14(\operatorname{tr}A)I$</td>
+<td>the scalar part</td>
+</tr>
+<tr>
+<td>$A_0$</td>
+<td>the traceless part</td>
+</tr>
+<tr>
+<td>$\beta(A,B)=\operatorname{tr}(AB)$</td>
+<td>the trace pairing</td>
+</tr>
+<tr>
+<td>$B_A(x,y)=x^{\mathsf T}Ay$</td>
+<td>the bilinear form of $A$</td>
+</tr>
+<tr>
+<td>$A_s,A_n$</td>
+<td>the semisimple and nilpotent Jordan parts</td>
+</tr>
+<tr>
+<td>$\chi_A(t)$</td>
+<td>the characteristic polynomial</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the Jordan form, the Jordan–Chevalley decomposition, the trace and the determinant.</li>
+<li>Sheldon Axler, <em>Linear Algebra Done Right</em> (Springer, 2015), for the structure of linear maps and the characteristic polynomial.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the algebra, the trace and the determinant.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure</a>, for the positive definite trace form and the Hermitian decomposition.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors</a>, for the spectral projectors and the Dunford calculus.</li>
+<li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition</a>, for the idempotent decomposition, which is not the Jordan decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

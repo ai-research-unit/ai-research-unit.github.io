@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Topology of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-topology-of-math0"><strong>The Topology of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The algebra $M_4(\mathbb{C})$ is homeomorphic to $\mathbb{R}^{32}$ and contractible; its group of units $GL_4(\mathbb{C})$ is homotopy equivalent to $U(4)$, with $\pi_1=\mathbb{Z}$ and $\pi_2=0$.</strong> The idempotents of rank $p$ are homotopy equivalent to the Grassmannian $\operatorname{Gr}(p,4)$; the full flag variety $GL_4/B$ is simply connected; the determinant bundle has first Chern class the generator of $H^2$, and the determinant bundles over the Grassmannians have first Chern class the hyperplane class.</p>
+<p>The article computes the homotopy type of the algebra and its group of units, the homotopy groups, the topology of the idempotents and the Grassmannians, the cohomology of the flag variety, and the determinant bundles and their first Chern classes.</p>
+<p>The geometry of the idempotents is <em>The Geometry of the Idempotents</em>; the polar decomposition is <em>The Polar Decomposition</em>; the exponential and the Lie group are <em>The Exponential and the Lie Group</em>; the adjoint action and the flag variety are <em>The Adjoint Action, the Orbits and the Flag Variety</em>.</p>
+<h2 id="the-contractible-algebra">The Contractible Algebra</h2>
+<p><strong>Theorem.</strong> The algebra $M_4(\mathbb{C})$ is homeomorphic to $\mathbb{R}^{32}$ and is contractible. Its cohomology is</p>
+<p>$$
+H^0(M_4;\mathbb{Z})=\mathbb{Z},\qquad
+H^k(M_4;\mathbb{Z})=0\quad(k>0),
+$$</p>
+<p>and all homotopy groups vanish.</p>
+<p><strong>Proof.</strong> The sixteen complex entries give a linear isomorphism $M_4\cong\mathbb{C}^{16}\cong\mathbb{R}^{32}$. A vector space is contractible by the straight-line homotopy $H_t(A)=(1-t)A$ to $0$. A contractible space has the cohomology and homotopy groups of a point.</p>
+<p><strong>The singular set.</strong> The singular set</p>
+<p>$$
+\Sigma=\{A:\det A=0\}
+$$</p>
+<p>is a real cone with apex $0$: if $A\in\Sigma$ and $\lambda\in\mathbb{C}$, then $\lambda A\in\Sigma$. A cone is contractible by the homotopy $H_t(A)=(1-t)A$ to the apex, so</p>
+<p>$$
+\Sigma\simeq\text{point}.
+$$</p>
+<p>Its link</p>
+<p>$$
+L=\Sigma\cap S^{31}
+$$</p>
+<p>is a real hypersurface of dimension $29$ in the unit sphere $S^{31}\subset\mathbb{R}^{32}$; it is the interesting part of the singular set.</p>
+<p><strong>The complement.</strong> The complement of the singular set is the general linear group:</p>
+<p>$$
+M_4\smallsetminus\Sigma=GL_4(\mathbb{C}),
+$$</p>
+<p>an open subset of real dimension $32$. It is not contractible; its homotopy type is that of $U(4)$.</p>
+<h2 id="the-homotopy-type-of-math30">The Homotopy Type of $GL_4$</h2>
+<p><strong>Theorem.</strong> The inclusion $U(4)\hookrightarrow GL_4(\mathbb{C})$ is a homotopy equivalence:</p>
+<p>$$
+GL_4(\mathbb{C})\simeq U(4).
+$$</p>
+<p><strong>Proof.</strong> The polar decomposition $A=UP$ gives a deformation retraction</p>
+<p>$$
+H_t(A)=U P^{1-t},\qquad t\in[0,1],
+$$</p>
+<p>from $GL_4$ to $U(4)$: at $t=0$, $H_0(A)=UP=A$; at $t=1$, $H_1(A)=U$. The path stays in $GL_4$ because $P^{1-t}$ is positive definite. The map $r(A)=U$ is continuous and satisfies $r\circ i=\operatorname{id}_{U(4)}$ and $i\circ r\simeq\operatorname{id}_{GL_4}$.</p>
+<p><strong>The quotient.</strong> The homogeneous space</p>
+<p>$$
+GL_4(\mathbb{C})/U(4)\cong P_+
+$$</p>
+<p>is the contractible cone of positive definite Hermitian matrices. The fibration</p>
+<p>$$
+U(4)\longrightarrow GL_4\longrightarrow P_+
+$$</p>
+<p>has contractible base, which again gives the homotopy equivalence.</p>
+<p><strong>The maximal compact.</strong> The unitary group $U(4)$ is a maximal compact subgroup of $GL_4(\mathbb{C})$. Every compact subgroup is conjugate into $U(4)$; the polar decomposition shows that $U(4)$ meets every component of $GL_4$ and is a deformation retract.</p>
+<p><strong>The dimensions.</strong> The real dimensions are</p>
+<p>$$
+\dim_\mathbb{R}GL_4=32,\qquad
+\dim_\mathbb{R}U(4)=16,\qquad
+\dim_\mathbb{R}P_+=16.
+$$</p>
+<p>The homotopy equivalence forgets the sixteen contractible directions of the positive factor.</p>
+<h2 id="the-homotopy-groups">The Homotopy Groups</h2>
+<p><strong>The fundamental group.</strong> Because $GL_4\simeq U(4)$,</p>
+<p>$$
+\pi_1(GL_4(\mathbb{C}))\cong\pi_1(U(4))\cong\mathbb{Z}.
+$$</p>
+<p>The generator is the loop</p>
+<p>$$
+\gamma(t)=\operatorname{diag}(e^{2\pi i t},1,1,1),\qquad t\in[0,1].
+$$</p>
+<p>The scalar loop $e^{2\pi i t}I$ is four times the generator; its determinant is $e^{8\pi i t}$, of winding four.</p>
+<p><strong>The determinant map.</strong> The determinant</p>
+<p>$$
+\det:U(4)\longrightarrow U(1)
+$$</p>
+<p>induces an isomorphism on $\pi_1$. The section $z\mapsto\operatorname{diag}(z,1,1,1)$ shows that $\det_*$ is surjective; the kernel $SU(4)$ is simply connected, so $\det_*$ is injective. Hence</p>
+<p>$$
+\pi_1(U(4))\cong\pi_1(U(1))=\mathbb{Z},
+$$</p>
+<p>and the determinant bundle is the pullback of the generator.</p>
+<p><strong>The second homotopy group.</strong> Every Lie group has</p>
+<p>$$
+\pi_2(G)=0,
+$$</p>
+<p>because the universal cover of a Lie group is a Lie group and the fibre of a covering has no $\pi_2$. Hence</p>
+<p>$$
+\pi_2(GL_4)=0,\qquad \pi_2(U(4))=0.
+$$</p>
+<p><strong>The higher groups.</strong> The higher homotopy groups of $GL_4$ are those of $U(4)$. In low degrees,</p>
+<p>$$
+\pi_3(U(4))=\mathbb{Z},
+$$</p>
+<p>generated by the inclusion $SU(2)\hookrightarrow U(4)$ in a $2\times2$ block. The low-degree values $\pi_1=\mathbb{Z}$, $\pi_2=0$, $\pi_3=\mathbb{Z}$ are the stable values of $U$; the unstable groups do not enter this article.</p>
+<p><strong>The universal cover.</strong> The universal cover of $U(4)$ is</p>
+<p>$$
+\widetilde{U(4)}\cong SU(4)\times\mathbb{R},
+$$</p>
+<p>because $U(4)\cong(SU(4)\times U(1))/\mathbb{Z}_4$ and $SU(4)$ is simply connected. The universal cover of $GL_4$ is a complex Lie group with the same homotopy type; the extra directions are the contractible positive factor.</p>
+<h2 id="the-idempotents-and-the-grassmannians">The Idempotents and the Grassmannians</h2>
+<p><strong>The homotopy equivalence.</strong> For $0\le p\le4$, the idempotents of rank $p$ form the affine bundle</p>
+<p>$$
+\mathcal{I}_p\longrightarrow\operatorname{Gr}(p,4)
+$$</p>
+<p>with contractible fibre the affine space of complements. Hence</p>
+<p>$$
+\mathcal{I}_p\simeq\operatorname{Gr}(p,4).
+$$</p>
+<p>The orthogonal projection onto the image $p$-plane is a section, the zero section of the affine bundle, so the inclusion $\operatorname{Gr}(p,4)\hookrightarrow\mathcal{I}_p$ is a homotopy equivalence.</p>
+<p><strong>The Grassmannian topology.</strong> The Grassmannian $\operatorname{Gr}(p,4)$ is a compact complex manifold of dimension $p(4-p)$, simply connected, with a Schubert cell decomposition indexed by the partitions in a $p\times(4-p)$ box. Its Poincaré polynomial is the Gaussian binomial</p>
+<p>$$
+P_{\operatorname{Gr}(p,4)}(q)=\binom{4}{p}_q,
+$$</p>
+<p>and its Euler characteristic is</p>
+<p>$$
+\chi(\operatorname{Gr}(p,4))=\binom{4}{p}.
+$$</p>
+<p>Explicitly:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$p$</th>
+<th>$\operatorname{Gr}(p,4)$</th>
+<th>Dimension</th>
+<th>Poincaré polynomial</th>
+<th>$\chi$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>point</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\mathbb{P}^3$</td>
+<td>$3$</td>
+<td>$1+q+q^2+q^3$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\operatorname{Gr}(2,4)$</td>
+<td>$4$</td>
+<td>$1+q+2q^2+q^3+q^4$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\mathbb{P}^3$</td>
+<td>$3$</td>
+<td>$1+q+q^2+q^3$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>point</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The idempotent topology.</strong> Because $\mathcal{I}_p$ is homotopy equivalent to $\operatorname{Gr}(p,4)$,</p>
+<p>$$
+\pi_1(\mathcal{I}_p)=0,\qquad
+H^*(\mathcal{I}_p;\mathbb{Z})\cong H^*(\operatorname{Gr}(p,4);\mathbb{Z}),
+\qquad
+\chi(\mathcal{I}_p)=\binom{4}{p}.
+$$</p>
+<p>The rank-one idempotents are homotopy equivalent to $\mathbb{P}^3$; the rank-two idempotents are homotopy equivalent to $\operatorname{Gr}(2,4)$; the rank-three idempotents are homotopy equivalent to $\mathbb{P}^3$. The idempotents themselves are noncompact affine bundles, but their homotopy type is compact.</p>
+<p><strong>The rank stratification.</strong> The closures of the strata are</p>
+<p>$$
+\overline{\mathcal{I}_p}=\bigsqcup_{q=0}^{p}\mathcal{I}_q,
+$$</p>
+<p>so the space of all idempotents is a stratified space with the Grassmannian homotopy types on the strata. The zero and identity strata are points; the rank-one and rank-three strata are $\mathbb{P}^3$ up to homotopy; the rank-two stratum is $\operatorname{Gr}(2,4)$ up to homotopy.</p>
+<h2 id="the-flag-variety">The Flag Variety</h2>
+<p><strong>The full flag variety.</strong> The full flag variety</p>
+<p>$$
+\mathcal{F}=GL_4/B
+$$</p>
+<p>is a compact complex manifold of dimension $6$, simply connected, with the Bruhat cell decomposition</p>
+<p>$$
+\mathcal{F}=\bigsqcup_{w\in S_4}BwB/B.
+$$</p>
+<p>The cells are indexed by the permutations of four elements, and the Poincaré polynomial is</p>
+<p>$$
+P_{\mathcal{F}}(q)=[4]_q!
+=(1+q)(1+q+q^2)(1+q+q^2+q^3)
+=1+3q+5q^2+6q^3+5q^4+3q^5+q^6.
+$$</p>
+<p>The Euler characteristic is</p>
+<p>$$
+\chi(\mathcal{F})=4!=24.
+$$</p>
+<p><strong>The Betti numbers.</strong> They are</p>
+<p>$$
+1,\ 3,\ 5,\ 6,\ 5,\ 3,\ 1
+$$</p>
+<p>in degrees $0,\dots,6$. The middle Betti number is $6$, the number of positive roots of $\mathfrak{sl}_4$.</p>
+<p><strong>Simple connectivity.</strong> The Bruhat decomposition has a unique open cell of dimension $6$ and a unique closed cell of dimension $0$; the $2$-skeleton is connected and simply connected, and the higher cells do not change $\pi_1$. Hence</p>
+<p>$$
+\pi_1(\mathcal{F})=0.
+$$</p>
+<p>The same conclusion follows from the quotient $\mathcal{F}\cong SU(4)/T'$: $SU(4)$ is simply connected, and the torus $T'$ is connected, so the quotient is simply connected.</p>
+<p><strong>The line bundles.</strong> The line bundles on $\mathcal{F}$ are the homogeneous bundles $L_\lambda$ associated to the characters $\lambda$ of the Borel $B$. The first Chern class is</p>
+<p>$$
+c_1(L_\lambda)=\lambda\in H^2(\mathcal{F};\mathbb{Z}).
+$$</p>
+<p>The canonical bundle is</p>
+<p>$$
+K_{\mathcal{F}}=L_{-2\rho},
+\qquad
+c_1(K_{\mathcal{F}})=-2\rho,
+$$</p>
+<p>and the determinant of the tangent bundle is</p>
+<p>$$
+\det T_{\mathcal{F}}=K_{\mathcal{F}}^{-1}=L_{2\rho},
+\qquad
+c_1(\det T_{\mathcal{F}})=2\rho.
+$$</p>
+<p>For $GL_4$, the weight $2\rho$ is</p>
+<p>$$
+2\rho=(3,1,-1,-3)
+$$</p>
+<p>in the diagonal basis, the sum of the positive roots $e_i-e_j$, $i<j$.</p>
+<h2 id="the-determinant-bundle-and-the-first-chern-class">The Determinant Bundle and the First Chern Class</h2>
+<p><strong>The determinant character.</strong> The determinant is a homomorphism</p>
+<p>$$
+\det:GL_4\longrightarrow\mathbb{C}^\times.
+$$</p>
+<p>The associated line bundle</p>
+<p>$$
+\mathcal{D}=\det{}^*\mathcal{O}(1)
+$$</p>
+<p>is the <strong>determinant bundle</strong>. Its first Chern class is the generator of</p>
+<p>$$
+H^2(GL_4;\mathbb{Z})\cong H^2(U(4);\mathbb{Z})\cong\mathbb{Z}.
+$$</p>
+<p>Under the homotopy equivalence $GL_4\simeq U(4)$, the determinant bundle restricts to the determinant line bundle of $U(4)$, whose first Chern class is $1$.</p>
+<p><strong>The determinant bundle over the Grassmannian.</strong> Let</p>
+<p>$$
+0\longrightarrow S\longrightarrow\mathbb{C}^4\longrightarrow Q\longrightarrow0
+$$</p>
+<p>be the tautological sequence on $\operatorname{Gr}(p,4)$, with $S$ the rank-$p$ subbundle and $Q$ the rank-$(4-p)$ quotient. The determinant line bundles satisfy</p>
+<p>$$
+\det S\otimes\det Q\cong\det\mathbb{C}^4\cong\mathcal{O},
+$$</p>
+<p>so</p>
+<p>$$
+c_1(\det S)+c_1(\det Q)=0.
+$$</p>
+<p>Let $H$ be the positive generator of $H^2(\operatorname{Gr}(p,4);\mathbb{Z})$, the Plücker hyperplane class, with $H=c_1(\det Q)$. Then</p>
+<p>$$
+c_1(\det S)=-H,\qquad
+c_1(\det Q)=H.
+$$</p>
+<p>For $p=1$, $S=\mathcal{O}(-1)$ and $\det S=\mathcal{O}(-1)$, so $c_1(\det S)=-1$; the dual $\mathcal{O}(1)$ has $c_1=1$. For $p=2$, the Plücker line bundle $\det Q$ has $c_1=H$, and the determinant of the tautological bundle has $c_1=-H$.</p>
+<p><strong>The determinant bundle over the idempotents.</strong> The affine bundle $\mathcal{I}_p\to\operatorname{Gr}(p,4)$ is homotopy equivalent to its zero section, so every characteristic class of $\mathcal{I}_p$ is the pullback of the corresponding class on the Grassmannian. The determinant bundle of the tautological $p$-plane over $\mathcal{I}_p$ has first Chern class $-H$; the Plücker bundle has $c_1=H$.</p>
+<p><strong>The determinant bundle over the flag variety.</strong> On the full flag variety, the tautological line bundles $L_1,\dots,L_4$ have first Chern classes $e_1,\dots,e_4$ with $\sum e_i=0$ in $H^2(\mathcal{F};\mathbb{Z})$, because their direct sum is the trivial standard representation bundle and its determinant is trivial; the weights are taken modulo the determinant character. The determinant of the tangent bundle is the nontrivial line bundle</p>
+<p>$$
+\det T_{\mathcal{F}}=L_{2\rho},
+\qquad
+c_1=2\rho=(3,1,-1,-3).
+$$</p>
+<p>The canonical bundle $K_{\mathcal{F}}=L_{-2\rho}$ is the bundle of holomorphic $6$-forms; its first Chern class $-2\rho$ is the obstruction to a nowhere-vanishing holomorphic $6$-form on the flag variety. The determinant bundle of the tangent has the opposite first Chern class $2\rho$.</p>
+<p><strong>The integral.</strong> The first Chern class of the determinant bundle integrates over the appropriate cycle to an integer. For $\mathbb{P}^3=\operatorname{Gr}(1,4)$, the determinant bundle $\mathcal{O}(-1)$ has</p>
+<p>$$
+\int_{\mathbb{P}^1}c_1(\mathcal{O}(-1))=-1,
+$$</p>
+<p>on a line $\mathbb{P}^1\subset\mathbb{P}^3$; the dual $\mathcal{O}(1)$ has integral $1$. The sign depends on the choice of the tautological or the quotient bundle; the Plücker normalization is positive.</p>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p><strong>At $n=2$ the topology is the same pattern.</strong> The biquaternion algebra is $M_2(\mathbb{C})\cong\mathbb{R}^8$, contractible; $GL_2(\mathbb{C})\simeq U(2)$; and</p>
+<p>$$
+\pi_1(GL_2)=\mathbb{Z},\qquad
+\pi_2(GL_2)=0.
+$$</p>
+<p>The rank-one idempotents form an affine bundle of rank $1$ over $\mathbb{P}^1$, homotopy equivalent to $\mathbb{P}^1$; the rank-two idempotent is the identity, a point. The full flag variety of $\mathbb{C}^2$ is $\mathbb{P}^1$, simply connected, with Euler characteristic $2$.</p>
+<p><strong>The determinant bundle.</strong> The determinant line bundle over $U(2)$ has first Chern class $1$; over $\mathbb{P}^1$ the tautological bundle $\mathcal{O}(-1)$ has $c_1=-1$ and the dual $\mathcal{O}(1)$ has $c_1=1$. The pattern is the $n=2$ case of the $n=4$ formulas.</p>
+<p><strong>The comparison with the regular model.</strong> The full algebra $M_4(\mathbb{C})$ has the singular set $\{\det=0\}$, a contractible cone; the biquaternion algebra has the null cone of its quaternionic norm, also a contractible cone. The complements have the homotopy type of $U(4)$ and $U(2)$ respectively; the determinant bundles have first Chern class $1$ in both cases. The topology of the regular model $M_4(\mathbb{C})_L$ is the topology of the full algebra with the null cone distinguished; the full algebra's singular set is the determinantal hypersurface.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra $M_4(\mathbb{C})\cong\mathbb{R}^{32}$ is contractible, with the cohomology of a point and vanishing homotopy groups. Its complement $GL_4(\mathbb{C})$ is homotopy equivalent to $U(4)$ by the polar decomposition $A=UP\mapsto U$; hence</p>
+<p>$$
+\pi_1(GL_4)=\mathbb{Z},\qquad
+\pi_2(GL_4)=0,\qquad
+\pi_3(GL_4)=\mathbb{Z},
+$$</p>
+<p>and the universal cover of $U(4)$ is $SU(4)\times\mathbb{R}$. The idempotents of rank $p$ are affine bundles over $\operatorname{Gr}(p,4)$ with contractible fibres, so $\mathcal{I}_p\simeq\operatorname{Gr}(p,4)$; the Grassmannian has Poincaré polynomial $\binom{4}{p}_q$ and Euler characteristic $\binom{4}{p}$, giving $1,4,6,4,1$ for $p=0,1,2,3,4$. The full flag variety $GL_4/B$ is simply connected, of dimension $6$, with Poincaré polynomial $[4]_q!=1+3q+5q^2+6q^3+5q^4+3q^5+q^6$ and Euler characteristic $24$. The determinant bundle over $GL_4$ has first Chern class the generator of $H^2=\mathbb{Z}$; over $\operatorname{Gr}(p,4)$ the determinant of the tautological bundle has $c_1=-H$ and the Plücker bundle has $c_1=H$; over the flag variety the determinant of the tangent bundle is $L_{2\rho}$ with $c_1=2\rho=(3,1,-1,-3)$, and the canonical bundle is $L_{-2\rho}$. The singular set is a contractible cone whose link is a real hypersurface of dimension $29$.</p>
+<p>$$
+\boxed{\ M_4\simeq*,\quad GL_4\simeq U(4),\quad \pi_1(GL_4)=\mathbb{Z},\quad \pi_2(GL_4)=0,\quad \mathcal{I}_p\simeq\operatorname{Gr}(p,4),\quad \pi_1(\mathcal{F})=0. }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>Homotopy type</th>
+<th>$\pi_1$</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_4(\mathbb{C})$</td>
+<td>point</td>
+<td>$0$</td>
+<td>$32$ real</td>
+</tr>
+<tr>
+<td>$GL_4(\mathbb{C})$</td>
+<td>$U(4)$</td>
+<td>$\mathbb{Z}$</td>
+<td>$32$ real</td>
+</tr>
+<tr>
+<td>$U(4)$</td>
+<td>$U(4)$</td>
+<td>$\mathbb{Z}$</td>
+<td>$16$ real</td>
+</tr>
+<tr>
+<td>$\mathcal{I}_p$</td>
+<td>$\operatorname{Gr}(p,4)$</td>
+<td>$0$</td>
+<td>$2p(4-p)$ complex</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(p,4)$</td>
+<td>itself</td>
+<td>$0$</td>
+<td>$p(4-p)$ complex</td>
+</tr>
+<tr>
+<td>$\mathcal{F}$</td>
+<td>$GL_4/B$</td>
+<td>$0$</td>
+<td>$6$ complex</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma=\{\det=0\}$</td>
+<td>the singular set, a contractible cone</td>
+</tr>
+<tr>
+<td>$L=\Sigma\cap S^{31}$</td>
+<td>the link of the singular set</td>
+</tr>
+<tr>
+<td>$\mathcal{I}_p$</td>
+<td>the idempotents of rank $p$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(p,4)$</td>
+<td>the Grassmannian of $p$-planes</td>
+</tr>
+<tr>
+<td>$\mathcal{F}=GL_4/B$</td>
+<td>the full flag variety</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>the Plücker hyperplane class</td>
+</tr>
+<tr>
+<td>$\mathcal{D}$</td>
+<td>the determinant bundle</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Allen Hatcher, <em>Algebraic Topology</em> (Cambridge, 2002), for homotopy groups, fibrations and the cohomology of homogeneous spaces.</li>
+<li>Raoul Bott and Loring Tu, <em>Differential Forms in Algebraic Topology</em> (Springer, 1982), for characteristic classes and the first Chern class.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the cohomology of Grassmannians and flag varieties and the Schubert calculus.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m4c.html">The Geometry of the Idempotents</a>, for the affine bundles and the homotopy equivalence.</li>
+<li><a href="the-polar-decomposition-of-m4c.html">The Polar Decomposition</a>, for the deformation retraction onto $U(4)$.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m4c.html">The Exponential and the Lie Group</a>, for the homotopy groups and the universal cover.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the flag variety and the Grassmannians.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

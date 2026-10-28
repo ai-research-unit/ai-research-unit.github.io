@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution and the Hermitian Structure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-and-the-hermitian-structure"><strong>The Involution and the Hermitian Structure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The conjugate transpose</p>
+<p>$$
+A^*=\bar A^{\mathsf T},\qquad (A^*)_{ij}=\overline{A_{ji}},
+$$</p>
+<p>is an involutive, conjugate-linear anti-automorphism of $M_5(\mathbb{C})$:</p>
+<p>$$
+(A^*)^*=A,\qquad (AB)^*=B^*A^*,\qquad (\lambda A)^*=\bar\lambda A^* .
+$$</p>
+<p>It is an involution of the <strong>real</strong> algebra, not of the complex algebra. Its fixed points are the Hermitian matrices, its anti-fixed points the skew-Hermitian matrices, and the two real subspaces</p>
+<p>$$
+\mathfrak{u}(5)=\{X:X^*=-X\},\qquad i\mathfrak{u}(5)=\{H:H^*=H\}
+$$</p>
+<p>give the real decomposition $M_5=\mathfrak{u}(5)\oplus i\mathfrak{u}(5)$, of real dimensions $25+25=50$. The skew-Hermitian part is the compact real form $\mathfrak{u}(5)$, of real dimension $25$, and its traceless part $\mathfrak{su}(5)$ has dimension $24$.</p>
+<p>The involution defines the <strong>positive definite</strong> Hermitian form on the algebra,</p>
+<p>$$
+\langle A,B\rangle_F=\operatorname{tr}(A^*B),
+$$</p>
+<p>the Frobenius form, with norm</p>
+<p>$$
+\|A\|_F^2=\operatorname{tr}(A^*A)=\sum_{i,j}|A_{ij}|^2 .
+$$</p>
+<p>This is the Hilbert space structure on $M_5(\mathbb{C})\cong\mathbb{C}^{25}\cong\mathbb{R}^{50}$; it is positive definite, and it has <strong>no null cone</strong>. The complex bilinear trace pairing $\operatorname{tr}(AB)$ of <em>The Element, the Coordinates and the Trace</em> is a different object; it is indefinite, and its isotropic cone is not the metric.</p>
+<p>The <strong>singular set</strong> of the algebra is the zero locus of the determinant,</p>
+<p>$$
+\Sigma=\{A:\det A=0\},
+$$</p>
+<p>a complex hypersurface of <strong>real codimension $2$</strong> in $M_5(\mathbb{C})\cong\mathbb{R}^{50}$: the determinant is a complex polynomial, and its vanishing imposes one complex equation, equivalently two real equations. The complement $GL_5(\mathbb{C})$ is connected and dense. The singular set is not a null cone of the positive definite form, and there are no nonzero null vectors.</p>
+<p>The article assumes the matrix algebra and the trace. The spectral theorem for Hermitian matrices, the polar decomposition and the exponential are later articles; the present one fixes the involution, the form and the real form on which they rest.</p>
+<h2 id="the-conjugate-transpose">The Conjugate Transpose</h2>
+<h3 id="the-involution">The Involution</h3>
+<p><strong>Definition.</strong> The <strong>conjugate transpose</strong> of $A$ is $A^*=\bar A^{\mathsf T}$.</p>
+<p><strong>Proposition.</strong> The map $A\mapsto A^*$ is conjugate-linear and involutive, and it reverses products:</p>
+<p>$$
+(A+B)^*=A^*+B^*,\qquad (\lambda A)^*=\bar\lambda A^*,\qquad (A^*)^*=A,\qquad (AB)^*=B^*A^* .
+$$</p>
+<p><strong>Proof.</strong> The entries of $(AB)^*$ are $\overline{(AB)_{ji}}=\sum_k\overline{A_{jk}B_{ki}}=\sum_k\bar B_{ki}\bar A_{jk}=(B^*A^*)_{ji}$. The other identities are entrywise.</p>
+<p><strong>Corollary.</strong> The conjugate transpose is an involution of the real algebra $M_5(\mathbb{C})$, and the transpose $A^{\mathsf T}$ is a complex-linear anti-automorphism but not the Hermitian involution. The two coincide on real matrices.</p>
+<p><strong>Proof.</strong> The star is conjugate-linear by $(\lambda A)^*=\bar\lambda A^*$; the transpose is complex-linear and satisfies $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$. On real matrices the conjugation is trivial.</p>
+<p><strong>Remark.</strong> <strong>An involution of a complex algebra is by definition conjugate-linear; a complex-linear anti-automorphism is a different notion.</strong> The star is the involution that makes $M_5(\mathbb{C})$ a complex algebra with involution in the sense of <em>The Book of Involutions</em>; the transpose is the transpose. The distinction matters: the Hermitian matrices are the fixed points of the star, not of the transpose.</p>
+<h3 id="hermitian-and-skew-hermitian">Hermitian and Skew-Hermitian</h3>
+<p><strong>Definition.</strong> $A$ is <strong>Hermitian</strong> if $A^*=A$ and <strong>skew-Hermitian</strong> if $A^*=-A$.</p>
+<p><strong>Proposition.</strong> The Hermitian and skew-Hermitian matrices form real subspaces of dimension $25$ each, and</p>
+<p>$$
+M_5(\mathbb{C})=\mathfrak{u}(5)\oplus i\mathfrak{u}(5),
+\qquad
+A=\underbrace{\tfrac12(A-A^*)}_{\text{skew-Hermitian}}+\underbrace{\tfrac12(A+A^*)}_{\text{Hermitian}} .
+$$</p>
+<p><strong>Proof.</strong> The two projections are real-linear, idempotent and sum to the identity; the first is skew-Hermitian and the second Hermitian; their intersection is zero because a matrix both Hermitian and skew-Hermitian satisfies $A=-A$. A skew-Hermitian matrix has purely imaginary diagonal entries (five real parameters) and arbitrary complex entries above the diagonal (ten complex $=20$ real), total $25$; the Hermitian matrices have real diagonal entries and arbitrary complex entries above the diagonal, also $25$.</p>
+<p><strong>Corollary.</strong> The real dimension of $\mathfrak{u}(5)$ is $25$, and the real dimension of the traceless subspace $\mathfrak{su}(5)$ is $24$.</p>
+<p><strong>Proof.</strong> The trace of a skew-Hermitian matrix is purely imaginary; the condition $\operatorname{tr}X=0$ is one real linear equation on the $25$-dimensional space.</p>
+<h3 id="the-real-form">The Real Form</h3>
+<p><strong>Theorem.</strong> The complexification of the real Lie algebra $\mathfrak{u}(5)$ is $\mathfrak{gl}_5(\mathbb{C})$:</p>
+<p>$$
+\mathbb{C}\otimes_{\mathbb{R}}\mathfrak{u}(5)\cong\mathfrak{gl}_5(\mathbb{C}),\qquad X\otimes(a+ib)\longmapsto aX+b\,iX .
+$$</p>
+<p>The complexification of $\mathfrak{su}(5)$ is $\mathfrak{sl}_5(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> Every $A$ is $X+iY$ with $X=\frac12(A-A^*)\in\mathfrak{u}(5)$ and $Y=\frac12(A+A^*)\in i\mathfrak{u}(5)$; writing $Y=iH$ with $H=-iY\in\mathfrak{u}(5)$ gives $A=X+iH$. The complex dimensions are $25$ and $25$, so the surjection is an isomorphism. The traceless case is the same with the trace condition.</p>
+<p><strong>Corollary.</strong> $\mathfrak{u}(5)$ is the <strong>compact real form</strong> of $\mathfrak{gl}_5(\mathbb{C})$, and $\mathfrak{su}(5)$ is the compact real form of $\mathfrak{sl}_5(\mathbb{C})$. The Hermitian matrices $i\mathfrak{u}(5)$ are the other real half of the complexification.</p>
+<p><strong>Proof.</strong> The real form $\mathfrak{u}(5)$ is the fixed-point set of the Cartan involution $\theta(A)=-A^*$; the fixed points of $\theta$ are the skew-Hermitian matrices, and the $-1$ eigenspace is the Hermitian matrices. The form is compact because the Killing form is negative definite on $\mathfrak{u}(5)$.</p>
+<h2 id="the-hermitian-form-on-the-carrier">The Hermitian Form on the Carrier</h2>
+<h3 id="the-standard-form">The Standard Form</h3>
+<p><strong>Definition.</strong> The <strong>standard Hermitian form</strong> on $V=\mathbb{C}^5$ is</p>
+<p>$$
+\langle x,y\rangle=\sum_{i=1}^{5}\bar x_iy_i,\qquad x,y\in\mathbb{C}^5 .
+$$</p>
+<p><strong>Proposition.</strong> The form is Hermitian, positive definite and nondegenerate:</p>
+<p>$$
+\langle x,y\rangle=\overline{\langle y,x\rangle},\qquad
+\langle x,x\rangle=\sum_i|x_i|^2>0\quad(x\ne0).
+$$</p>
+<p><strong>Proof.</strong> The conjugate symmetry is the conjugation of the sum; the positivity is the sum of the squares of the absolute values, which is positive for a nonzero vector.</p>
+<p><strong>Corollary.</strong> The standard basis $e_1,\dots,e_5$ is orthonormal, $\langle e_i,e_j\rangle=\delta_{ij}$. The form identifies $V$ with its conjugate dual.</p>
+<p><strong>Proof.</strong> The inner product of two standard basis vectors is the Kronecker delta; the identification is $y\mapsto\langle\cdot,y\rangle$.</p>
+<h3 id="the-unitary-group">The Unitary Group</h3>
+<p><strong>Definition.</strong> The <strong>unitary group</strong> is</p>
+<p>$$
+U(5)=\{U\in GL_5(\mathbb{C}):U^*U=I\},
+$$</p>
+<p>and the <strong>special unitary group</strong> is $SU(5)=U(5)\cap SL_5(\mathbb{C})$.</p>
+<p><strong>Proposition.</strong> $U(5)$ is the group of linear isometries of the standard Hermitian form; it is a compact real Lie group of real dimension $25$. Its Lie algebra is $\mathfrak{u}(5)$, and the Lie algebra of $SU(5)$ is $\mathfrak{su}(5)$, of real dimension $24$.</p>
+<p><strong>Proof.</strong> A linear map preserves the form iff $U^*U=I$. The group is the zero set of the polynomial equations $U^*U=I$, hence closed and bounded in $M_5\cong\mathbb{R}^{50}$ (the columns are orthonormal), hence compact. The tangent space at $I$ is $\{X:X^*=-X\}=\mathfrak{u}(5)$; the traceless condition gives $\mathfrak{su}(5)$.</p>
+<p><strong>Corollary.</strong> For $X\in\mathfrak{u}(5)$ and $t\in\mathbb{R}$, the exponential $e^{tX}$ is unitary; the map $t\mapsto e^{tX}$ is a one-parameter subgroup of $U(5)$.</p>
+<p><strong>Proof.</strong> $(e^{tX})^*=e^{tX^*}=e^{-tX}=(e^{tX})^{-1}$.</p>
+<h3 id="the-orthonormal-basis">The Orthonormal Basis</h3>
+<p><strong>Proposition.</strong> The basis</p>
+<p>$$
+iE_{ii},\quad \frac{i(E_{ij}+E_{ji})}{\sqrt2},\quad \frac{E_{ij}-E_{ji}}{\sqrt2}
+\qquad(i<j)
+$$</p>
+<p>is an orthonormal basis of $\mathfrak{u}(5)$ for the positive definite form $\operatorname{tr}(X^*Y)=-\operatorname{tr}(XY)$; its cardinality is $5+10+10=25$.</p>
+<p><strong>Proof.</strong> The matrices $iE_{ii}$ are skew-Hermitian, the matrices $i(E_{ij}+E_{ji})$ are skew-Hermitian, and the matrices $E_{ij}-E_{ji}$ are real skew-symmetric, hence skew-Hermitian. The trace pairings give $\operatorname{tr}(X^*X)=1$ for each normalized basis element and $0$ for distinct ones: for the diagonal, $\operatorname{tr}((iE_{ii})^*(iE_{ii}))=\operatorname{tr}(E_{ii})=1$; for the off-diagonal, the two entries of the symmetric or antisymmetric combination give trace $2$, divided by $2$. The count is $5$ diagonal $+10$ symmetric $+10$ antisymmetric $=25$.</p>
+<p><strong>Corollary.</strong> The form $-\operatorname{tr}(XY)$ is positive definite on $\mathfrak{u}(5)$; it is the restriction of the Frobenius form to the skew-Hermitian half.</p>
+<p><strong>Proof.</strong> For $X\in\mathfrak{u}(5)$, $-\operatorname{tr}(X^2)=\operatorname{tr}(X^*X)=\|X\|_F^2>0$ for $X\ne0$.</p>
+<h2 id="the-trace-form-on-the-algebra">The Trace Form on the Algebra</h2>
+<h3 id="the-positive-definite-form">The Positive Definite Form</h3>
+<p><strong>Definition.</strong> The <strong>Frobenius form</strong> on $M_5(\mathbb{C})$ is</p>
+<p>$$
+\langle A,B\rangle_F=\operatorname{tr}(A^*B).
+$$</p>
+<p><strong>Theorem.</strong> The Frobenius form is a positive definite Hermitian inner product:</p>
+<p>$$
+\langle A,B\rangle_F=\overline{\langle B,A\rangle}_F,\qquad
+\langle A,A\rangle_F=\|A\|_F^2=\sum_{i,j}|A_{ij}|^2>0\quad(A\ne0).
+$$</p>
+<p><strong>Proof.</strong> The conjugate symmetry: $\overline{\operatorname{tr}(A^*B)}=\operatorname{tr}(B^*A)$. The positivity: $(A^*A)_{ii}=\sum_k\bar A_{ki}A_{ki}=\sum_k|A_{ki}|^2$, so the trace is the sum of the absolute squares of all entries, positive for $A\ne0$.</p>
+<p><strong>Corollary.</strong> The form is nondegenerate, and the map $A\mapsto\langle A,\cdot\rangle_F$ identifies $M_5$ with its conjugate dual. The Hilbert space dimension is $25$ complex, $50$ real.</p>
+<p><strong>Proof.</strong> Positive definiteness implies nondegeneracy; the real dimension is twice the complex dimension.</p>
+<p><strong>Remark.</strong> <strong>The Frobenius form and the trace pairing are different.</strong> The trace pairing $\operatorname{tr}(AB)$ is complex bilinear and indefinite; the Frobenius form $\operatorname{tr}(A^*B)$ is Hermitian and positive definite. The first pairs $E_{ij}$ with $E_{ji}$; the second pairs $E_{ij}$ with $E_{ij}$:
+$$
+\langle E_{ij},E_{kl}\rangle_F=\delta_{ik}\delta_{jl}.
+$$
+The Frobenius form is the Hilbert space metric; the trace pairing is the algebraic form of the Frobenius algebra.</p>
+<h3 id="the-frobenius-norm">The Frobenius Norm</h3>
+<p><strong>Definition.</strong> The <strong>Frobenius norm</strong> is $\|A\|_F=\sqrt{\operatorname{tr}(A^*A)}$.</p>
+<p><strong>Proposition.</strong> The Frobenius norm is a norm, and it is unitarily invariant:</p>
+<p>$$
+\|UAV\|_F=\|A\|_F\qquad(U,V\in U(5)).
+$$</p>
+<p><strong>Proof.</strong> The norm is the Euclidean norm of the $25$ complex coordinates; the triangle inequality and homogeneity are those of the Euclidean norm. For unitary $U,V$, $(UAV)^*(UAV)=V^*A^*U^*UAV=V^*A^*AV$, which has the same trace as $A^*A$ by cyclicity.</p>
+<p><strong>Corollary.</strong> The unitary group acts on $M_5$ by isometries of the Frobenius form, on the left and on the right.</p>
+<p><strong>Proof.</strong> $\langle U A,V B\rangle_F=\operatorname{tr}(A^*U^*VB)$; for $U=V$ unitary this is $\operatorname{tr}(A^*B)$; the left action is unitary. The right action is the same with $A\mapsto AU$.</p>
+<h3 id="the-hilbert-space">The Hilbert Space</h3>
+<p><strong>Theorem.</strong> $M_5(\mathbb{C})$ with the Frobenius form is a complex Hilbert space of dimension $25$ (real dimension $50$). The left and right regular representations of $U(5)$ are unitary, and the adjoint representation of $U(5)$ is unitary.</p>
+<p><strong>Proof.</strong> A finite-dimensional inner product space is complete, hence a Hilbert space. The left and right actions preserve the form by the proposition; the adjoint action $A\mapsto UAU^{-1}$ is the composition of the left and right actions with $U^{-1}=U^*$, hence unitary.</p>
+<p><strong>Corollary.</strong> The Hilbert space structure is the one used in <em>The Polar Decomposition</em> and <em>Analysis on $M_5(\mathbb{C})$</em>: the norm, the inner product and the orthogonal projection onto a subspace are those of the Frobenius form.</p>
+<p><strong>Proof.</strong> The form is positive definite; the orthogonal projection is defined by the inner product.</p>
+<h2 id="the-unitary-action">The Unitary Action</h2>
+<h3 id="the-left-and-right-actions">The Left and Right Actions</h3>
+<p><strong>Definition.</strong> The <strong>left</strong> and <strong>right regular actions</strong> of $U(5)$ on $M_5$ are</p>
+<p>$$
+L_U(A)=UA,\qquad R_U(A)=AU .
+$$</p>
+<p><strong>Proposition.</strong> Both actions are unitary for the Frobenius form, and they commute. The map $(U,V)\mapsto L_UR_V$ is an action of $U(5)\times U(5)$.</p>
+<p><strong>Proof.</strong> $\langle UA,UB\rangle_F=\operatorname{tr}(A^*U^*UB)=\operatorname{tr}(A^*B)$; $\langle AU,BU\rangle_F=\operatorname{tr}(U^*A^*BU)=\operatorname{tr}(A^*B)$; the actions commute because $UAV$ is associative.</p>
+<p><strong>Corollary.</strong> The algebra $M_5$ decomposes under $U(5)\times U(5)$ as $V\otimes V^*$, the tensor product of the defining representation and its dual; the decomposition is the Peter–Weyl decomposition of the regular representation.</p>
+<p><strong>Proof.</strong> The left action is on the first factor and the right action on the second; the identification $M_5\cong V\otimes V^*$ sends $v\otimes\ell$ to $v\ell$. The decomposition is the standard tensor product.</p>
+<h3 id="the-adjoint-action">The Adjoint Action</h3>
+<p><strong>Definition.</strong> The <strong>adjoint action</strong> of $U(5)$ is</p>
+<p>$$
+\operatorname{Ad}_U(A)=UAU^{-1}=UAU^*.
+$$</p>
+<p><strong>Proposition.</strong> The adjoint action is unitary, and it preserves the Hermitian and skew-Hermitian subspaces; it preserves the trace and the determinant.</p>
+<p><strong>Proof.</strong> It is the composition of the left and right unitary actions; $(UAU^*)^*=UA^*U^*$, so Hermitian and skew-Hermitian elements are preserved; the trace and determinant are conjugation-invariant.</p>
+<p><strong>Corollary.</strong> The adjoint orbit of $A$ is contained in the set of matrices with the same characteristic polynomial; the orbit is a submanifold of the Frobenius sphere of radius $\|A\|_F$.</p>
+<p><strong>Proof.</strong> The characteristic polynomial is conjugation-invariant; the Frobenius norm is invariant, so the orbit lies in the sphere of that radius.</p>
+<h3 id="the-compact-real-form">The Compact Real Form</h3>
+<p><strong>Theorem.</strong> The Lie algebra $\mathfrak{u}(5)$ is the compact real form of $\mathfrak{gl}_5(\mathbb{C})$, and the exponential map $\mathfrak{u}(5)\to U(5)$ is surjective.</p>
+<p><strong>Proof.</strong> The compactness is the closed boundedness of $U(5)$; the real form is the skew-Hermitian subspace. The surjectivity of the exponential is the standard theorem for compact connected Lie groups: every unitary matrix is diagonalizable by a unitary matrix, $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_1},\dots,e^{i\theta_5})$, and $U=e^{iH}$ with $H=V\operatorname{diag}(\theta_1,\dots,\theta_5)V^*\in\mathfrak{u}(5)$.</p>
+<p><strong>Corollary.</strong> Every unitary matrix is the exponential of a skew-Hermitian matrix, and every special unitary matrix is the exponential of a traceless skew-Hermitian matrix.</p>
+<p><strong>Proof.</strong> The diagonal angles can be chosen with sum zero for determinant one; the traceless condition is the sum of the angles.</p>
+<h2 id="the-singular-set">The Singular Set</h2>
+<h3 id="the-determinant">The Determinant</h3>
+<p><strong>Definition.</strong> The <strong>singular set</strong> is $\Sigma=\{A:\det A=0\}$; its complement is $GL_5(\mathbb{C})$.</p>
+<p><strong>Proposition.</strong> $\Sigma$ is a complex algebraic hypersurface, of complex dimension $24$ and real dimension $48$.</p>
+<p><strong>Proof.</strong> The determinant is a nonconstant polynomial on $M_5\cong\mathbb{C}^{25}$; its zero locus is a hypersurface, of complex dimension $24$. The real dimension is twice the complex dimension, $48$.</p>
+<p><strong>Corollary.</strong> $\Sigma$ is the set of matrices of rank at most $4$; it is the union of the determinantal varieties of rank $k$, $k=0,\dots,4$, with the rank-$4$ locus dense in $\Sigma$.</p>
+<p><strong>Proof.</strong> A matrix is singular iff its rank is at most $4$; the rank-$4$ matrices are the smooth points of $\Sigma$, and the lower-rank loci are the singular strata.</p>
+<h3 id="real-codimension-2">Real Codimension 2</h3>
+<p><strong>Theorem.</strong> The singular set $\Sigma$ has <strong>real codimension $2$</strong> in $M_5(\mathbb{C})\cong\mathbb{R}^{50}$: at a smooth point, the determinant is a complex-valued function with nonzero complex derivative, so its zero set is locally the zero set of one complex equation, equivalently two independent real equations.</p>
+<p><strong>Proof.</strong> At a point $A$ of rank $4$, the derivative of $\det$ is the linear form $H\mapsto\operatorname{tr}(\operatorname{adj}(A)H)$, which is nonzero. A nonzero complex-linear functional from $\mathbb{C}^{25}$ to $\mathbb{C}$ has real and imaginary parts that are independent real linear functionals; its kernel has real codimension $2$. The zero set is a complex hypersurface, of real codimension $2$.</p>
+<p><strong>Corollary.</strong> The complement $GL_5(\mathbb{C})$ is connected and dense. A path between two invertible matrices can be chosen to avoid $\Sigma$, because the obstacle has real codimension $2$, not $1$.</p>
+<p><strong>Proof.</strong> The complement of a complex hypersurface in $\mathbb{C}^{25}$ is path-connected; the real codimension $2$ allows a small generic perturbation of a path to avoid the zeros. The density is the density of a nonempty Zariski open set.</p>
+<h3 id="no-null-cone">No Null Cone</h3>
+<p><strong>Theorem.</strong> The Frobenius form is positive definite, so it has <strong>no null cone</strong>: the only vector $A$ with $\langle A,A\rangle_F=0$ is $A=0$. The singular set $\Sigma$ is not the null cone of the form.</p>
+<p><strong>Proof.</strong> $\langle A,A\rangle_F=\sum_{i,j}|A_{ij}|^2=0$ iff every entry is zero. The set $\Sigma$ is the zero locus of the determinant, a complex hypersurface; it contains nonzero matrices, so it is not the null set of the positive definite form.</p>
+<p><strong>Corollary.</strong> The complex bilinear trace pairing $\operatorname{tr}(AB)$ has an isotropic cone $\{A:\operatorname{tr}(A^2)=0\}$, but that cone is not the metric and is not the singular set. The positive definite form and the indefinite pairing must not be confused.</p>
+<p><strong>Proof.</strong> The nilpotent matrices satisfy $\operatorname{tr}(A^2)=0$; the trace pairing is indefinite. The Frobenius form is positive definite, so it has no isotropic vectors.</p>
+<p><strong>Remark.</strong> <strong>The singular set is $\det=0$, of real codimension $2$, and it is not a null cone.</strong> The phrase "null cone" belongs to an indefinite bilinear form; the Frobenius form is positive definite and has none. The complex hypersurface $\det=0$ is a codimension-two real obstacle, and the complement $GL_5$ is connected. This is the metric picture of <em>The Forms, the Norms and the Singular Set</em>, where the determinant and the norm are treated algebraically.</p>
+<h2 id="summary">Summary</h2>
+<p>The conjugate transpose $A^*=\bar A^{\mathsf T}$ is the involution of the real algebra $M_5(\mathbb{C})$; its fixed points are the Hermitian matrices and its anti-fixed points the skew-Hermitian matrices. The real decomposition is</p>
+<p>$$
+M_5(\mathbb{C})=\mathfrak{u}(5)\oplus i\mathfrak{u}(5),
+\qquad 25+25=50,
+$$</p>
+<p>with $\mathfrak{u}(5)$ the compact real form of real dimension $25$ and $\mathfrak{su}(5)$ its traceless part of real dimension $24$.</p>
+<p>$$
+\boxed{\ \langle A,B\rangle_F=\operatorname{tr}(A^*B)\text{ is positive definite};\quad \Sigma=\{\det=0\}\text{ has real codimension }2;\quad \text{no null cone.}\ }
+$$</p>
+<p>The Frobenius form is the Hilbert space structure on $M_5\cong\mathbb{C}^{25}\cong\mathbb{R}^{50}$; the unitary group $U(5)$ acts by isometries on the left, on the right and by conjugation. The singular set is the complex hypersurface of singular matrices, of real codimension $2$; its complement $GL_5$ is connected and dense. There is no null cone: the only null vector of the positive definite form is zero.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Involution</td>
+<td>$A^*=\bar A^{\mathsf T}$, conjugate-linear</td>
+</tr>
+<tr>
+<td>Hermitian matrices</td>
+<td>$A^*=A$, real dimension $25$</td>
+</tr>
+<tr>
+<td>Skew-Hermitian matrices</td>
+<td>$A^*=-A$, real dimension $25$</td>
+</tr>
+<tr>
+<td>Compact real form</td>
+<td>$\mathfrak{u}(5)$, real dimension $25$</td>
+</tr>
+<tr>
+<td>Special unitary</td>
+<td>$\mathfrak{su}(5)$, real dimension $24$</td>
+</tr>
+<tr>
+<td>Frobenius form</td>
+<td>$\operatorname{tr}(A^*B)$, positive definite</td>
+</tr>
+<tr>
+<td>Frobenius norm</td>
+<td>$\sum_{ij}|A_{ij}|^2$</td>
+</tr>
+<tr>
+<td>Singular set</td>
+<td>$\det=0$, real codimension $2$</td>
+</tr>
+<tr>
+<td>Null cone</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$GL_5(\mathbb{C})$</td>
+<td>connected and dense</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^*=\bar A^{\mathsf T}$</td>
+<td>The conjugate transpose</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(5)$</td>
+<td>The skew-Hermitian matrices, the compact real form</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(5)$</td>
+<td>The traceless skew-Hermitian matrices</td>
+</tr>
+<tr>
+<td>$\langle x,y\rangle=\sum\bar x_iy_i$</td>
+<td>The standard Hermitian form on $\mathbb{C}^5$</td>
+</tr>
+<tr>
+<td>$U(5)$, $SU(5)$</td>
+<td>The unitary and special unitary groups</td>
+</tr>
+<tr>
+<td>$\langle A,B\rangle_F=\operatorname{tr}(A^*B)$</td>
+<td>The Frobenius form</td>
+</tr>
+<tr>
+<td>$\|A\|_F$</td>
+<td>The Frobenius norm</td>
+</tr>
+<tr>
+<td>$\Sigma=\{\det=0\}$</td>
+<td>The singular set, real codimension $2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the conjugate transpose, the Hermitian matrices and the unitary group.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the involutions of a central simple algebra and the unitary groups.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for the compact real form $\mathfrak{u}(5)$, the exponential of a skew-Hermitian matrix and the unitary group.</li>
+<li><a href="the-matrix-algebra-m5c.html">The Matrix Algebra $M_5(\mathbb{C})$</a>, for the algebra, the conjugate transpose and the real form.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m5c.html">The Element, the Coordinates and the Trace</a>, for the trace, the trace pairing and the Jordan decomposition.</li>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m5c.html">The Forms, the Norms and the Singular Set</a>, for the determinant and the singular set.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m5c.html">Spectral Theory and the Spectral Projectors</a>, for the spectral theorem for Hermitian matrices.</li>
+<li><a href="the-polar-decomposition-of-m5c.html">The Polar Decomposition</a>, for the polar decomposition with respect to the Frobenius form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

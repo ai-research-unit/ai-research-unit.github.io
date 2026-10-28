@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-forms-the-norms-and-the-singular-set-of-math0"><strong>The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra $M_{3}(\mathbb{C})$ carries three natural norms and one determinant. The <strong>Frobenius norm</strong> is the Euclidean norm of the nine complex entries, the <strong>operator norm</strong> is the norm of the linear map $\mathbb{C}^{3}\to\mathbb{C}^{3}$, and the <strong>nuclear norm</strong> is the sum of the singular values. The three are unitarily invariant and satisfy
+$$
+\|A\|_{\mathrm{op}}\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}}.
+$$
+The determinant is not a norm: it is homogeneous of degree three, complex-valued, and vanishes on the singular matrices. The <strong>singular set</strong>
+$$
+\Sigma=\{A:\det A=0\}
+$$
+is a complex hypersurface of real codimension two. It is stratified by the rank, with the dimensions
+$$
+\dim_{\mathbb{C}}(\operatorname{rank}3)=9,\quad
+\dim_{\mathbb{C}}(\operatorname{rank}2)=8,\quad
+\dim_{\mathbb{C}}(\operatorname{rank}1)=5,\quad
+\dim_{\mathbb{C}}(\operatorname{rank}0)=0.
+$$
+The article defines the three norms, proves the inequalities and the singular-value description, describes the singular set and its rank strata, and compares the definite trace form with the null cone of the biquaternion algebra.</p>
+<p>The comparison is the point of the article. The trace form $\operatorname{tr}(A^{*}B)$ of <em>The Involution and the Hermitian Structure</em> is positive definite, so its only isotropic vector is $0$ and it has no null cone. The biquaternion algebra has a quadratic form with nonzero isotropic vectors, a genuine null cone, and a link. The determinant zero set of $M_{3}$ is a cone, because the determinant is homogeneous, but it is not the null cone of the trace form: it is a cubic hypersurface, not a quadratic cone, and the form that defines it is not the positive definite one.</p>
+<p>The article assumes the trace form and the Frobenius norm of <em>The Involution and the Hermitian Structure</em>, the determinant of <em>The Matrix Algebra $M_{3}(\mathbb{C})$</em>, and the rank of <em>The Element, the Coordinates and the Trace</em>.</p>
+<h2 id="the-trace-form-and-the-frobenius-norm">The Trace Form and the Frobenius Norm</h2>
+<p><strong>Definition.</strong> The <strong>Frobenius norm</strong> is
+$$
+\|A\|_{\mathrm{F}}=\sqrt{\operatorname{tr}(A^{*}A)}=\Bigl(\sum_{i,j=1}^{3}|a_{ij}|^{2}\Bigr)^{1/2}.
+$$</p>
+<p><strong>Proposition.</strong> The Frobenius norm is a norm on the complex vector space $M_{3}(\mathbb{C})$, and it is the Euclidean norm of the nine complex coordinates. It is unitarily invariant:
+$$
+\|UAV\|_{\mathrm{F}}=\|A\|_{\mathrm{F}}\qquad(U,V\in U(3)).
+$$
+Its square is the trace form $\langle A,A\rangle=\operatorname{tr}(A^{*}A)$, and the polarisation
+$$
+\langle A,B\rangle=\tfrac14\bigl(\|A+B\|_{\mathrm{F}}^{2}-\|A-B\|_{\mathrm{F}}^{2}\bigr)
++\tfrac{i}{4}\bigl(\|A+iB\|_{\mathrm{F}}^{2}-\|A-iB\|_{\mathrm{F}}^{2}\bigr)
+$$
+recovers the Hermitian form.</p>
+<p><strong>Proof.</strong> The norm is the square root of a positive definite Hermitian form, hence a norm. The invariance is
+$$
+\operatorname{tr}((UAV)^{*}(UAV))=\operatorname{tr}(V^{*}A^{*}U^{*}UAV)=\operatorname{tr}(V^{*}A^{*}AV)=\operatorname{tr}(A^{*}A),
+$$
+using $U^{*}U=I$ and the cyclic property of the trace. The polarisation is the standard one for a Hermitian form.</p>
+<p><strong>The trace form.</strong> The form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ is positive definite, with only isotropic vector $0$. The Frobenius norm is the norm it defines. The complex bilinear trace pairing $\operatorname{tr}(AB)$ is a different form: it is indefinite, and its isotropic vectors are the nonzero matrices with $\operatorname{tr}(A^{2})=0$, such as $E_{12}$. The two forms agree on real matrices but not on complex ones.</p>
+<p><strong>The unit sphere.</strong> The set $\{A:\|A\|_{\mathrm{F}}=1\}$ is the unit sphere $S^{17}\subset\mathbb{R}^{18}$, compact and smooth. The Frobenius distance between two matrices is the Euclidean distance of their coordinate vectors; the algebra is a Euclidean space of real dimension $18$ with this norm.</p>
+<p><strong>The Frobenius distance to the singular set.</strong> The distance from $A$ to $\Sigma$ in the Frobenius norm is the smallest singular value,
+$$
+\operatorname{dist}_{\mathrm{F}}(A,\Sigma)=\sigma_{\min}(A),
+$$
+with the convention $\sigma_{\min}=0$ for a singular matrix. The nearest singular matrix is obtained by truncating the smallest singular value to zero in the singular value decomposition.</p>
+<p><strong>Proof.</strong> By the Eckart–Young theorem, the nearest matrix of rank at most two is the truncation of the singular value decomposition that keeps the two largest singular values; the distance is the third singular value $\sigma_{3}=\sigma_{\min}$. The singular set is the union of the rank-at-most-two matrices, so the distance to it is the distance to that union, which is $\sigma_{3}$.</p>
+<h2 id="the-operator-and-nuclear-norms">The Operator and Nuclear Norms</h2>
+<p><strong>Definition.</strong> The <strong>operator norm</strong> is
+$$
+\|A\|_{\mathrm{op}}=\sup_{\|v\|=1}\|Av\|,
+$$
+where the norm on $\mathbb{C}^{3}$ is the Euclidean norm. The <strong>nuclear norm</strong> is
+$$
+\|A\|_{*}=\sum_{i=1}^{3}\sigma_{i}(A),
+$$
+where $\sigma_{1}\geq\sigma_{2}\geq\sigma_{3}\geq0$ are the singular values of $A$, the square roots of the eigenvalues of $A^{*}A$.</p>
+<p><strong>The singular value decomposition.</strong> There are unitaries $U,V\in U(3)$ and a real diagonal $\Sigma=\operatorname{diag}(\sigma_{1},\sigma_{2},\sigma_{3})$ with
+$$
+A=U\Sigma V^{*}.
+$$
+The columns of $V$ are an orthonormal basis of eigenvectors of $A^{*}A$; the columns of $U$ are the corresponding directions of $Av$; the singular values are the lengths of the images. The decomposition is the Hermitian spectral theorem applied to $A^{*}A$.</p>
+<p><strong>Proposition.</strong> The three norms are
+$$
+\|A\|_{\mathrm{op}}=\sigma_{1},\qquad
+\|A\|_{\mathrm{F}}=\Bigl(\sum_{i}\sigma_{i}^{2}\Bigr)^{1/2},\qquad
+\|A\|_{*}=\sum_{i}\sigma_{i}.
+$$
+They are unitarily invariant, and they satisfy
+$$
+\|A\|_{\mathrm{op}}\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}},\qquad
+\|A\|_{*}\leq3\|A\|_{\mathrm{op}}.
+$$</p>
+<p><strong>Proof.</strong> The operator norm is the largest singular value: $\|Av\|^{2}=\sum_{i}\sigma_{i}^{2}|\langle v,v_{i}\rangle|^{2}\leq\sigma_{1}^{2}\|v\|^{2}$, with equality on the first right singular vector. The Frobenius norm is $\operatorname{tr}(A^{*}A)=\sum_{i}\sigma_{i}^{2}$. The nuclear norm is the sum of the singular values by definition. The inequalities are the comparisons of the $\ell^{1}$, $\ell^{2}$ and $\ell^{\infty}$ norms on the three singular values: $\max\sigma_{i}\leq(\sum\sigma_{i}^{2})^{1/2}\leq\sum\sigma_{i}\leq\sqrt3(\sum\sigma_{i}^{2})^{1/2}$, and $\sum\sigma_{i}\leq3\max\sigma_{i}$.</p>
+<p><strong>The Schatten norms.</strong> For $1\leq p<\infty$ the Schatten $p$-norm is
+$$
+\|A\|_{p}=\Bigl(\sum_{i}\sigma_{i}^{p}\Bigr)^{1/p}.
+$$
+The operator norm is the limit $p\to\infty$, the Frobenius norm is $p=2$, and the nuclear norm is $p=1$. The three norms of the article are the extremes and the middle of the family.</p>
+<p><strong>The determinant and the singular values.</strong> The determinant is the product of the singular values up to a phase:
+$$
+|\det A|=\prod_{i=1}^{3}\sigma_{i}.
+$$
+The singular set is exactly the set where $\sigma_{3}=0$. The <strong>condition number</strong> of an invertible matrix is
+$$
+\kappa(A)=\frac{\sigma_{1}}{\sigma_{3}}=\|A\|_{\mathrm{op}}\|A^{-1}\|_{\mathrm{op}},
+$$
+and it blows up as $A$ approaches the singular set.</p>
+<p><strong>Proof.</strong> $|\det A|^{2}=\det(A^{*}A)=\prod_{i}\sigma_{i}^{2}$, so $|\det A|=\prod_{i}\sigma_{i}$. The determinant vanishes exactly when one singular value vanishes, which is exactly when the rank is less than three. The condition number identity is $\|A^{-1}\|_{\mathrm{op}}=1/\sigma_{3}$.</p>
+<p><strong>Hadamard and the determinant.</strong> For every $A$,
+$$
+|\det A|\leq\prod_{j=1}^{3}\Bigl(\sum_{i=1}^{3}|a_{ij}|^{2}\Bigr)^{1/2}\leq\|A\|_{\mathrm{F}}^{3},
+$$
+and by the arithmetic–geometric mean inequality,
+$$
+|\det A|=\prod_{i}\sigma_{i}\leq\Bigl(\frac{\sum_{i}\sigma_{i}^{2}}{3}\Bigr)^{3/2}
+=\frac{\|A\|_{\mathrm{F}}^{3}}{3\sqrt3}.
+$$
+The determinant is bounded by the norms but is not a norm: it is homogeneous of degree three and changes sign under a transposition of two columns.</p>
+<p><strong>Worked example.</strong> For $A=\operatorname{diag}(1,2,3)$, the singular values are $1,2,3$, so
+$$
+\|A\|_{\mathrm{op}}=3,\qquad \|A\|_{\mathrm{F}}=\sqrt{14},\qquad \|A\|_{*}=6,\qquad \det A=6.
+$$
+The condition number is $3/1=3$. For $B=\operatorname{diag}(2,1,0)$, the singular values are $2,1,0$, so
+$$
+\|B\|_{\mathrm{op}}=2,\qquad \|B\|_{\mathrm{F}}=\sqrt5,\qquad \|B\|_{*}=3,\qquad \det B=0.
+$$
+The matrix $B$ is singular of rank two; its distance to the rank-at-most-one matrices is $\sigma_{2}=1$ in the operator and Frobenius norms, and its distance to zero is $\sigma_{1}=2$.</p>
+<h2 id="the-determinant-and-the-singular-set">The Determinant and the Singular Set</h2>
+<p><strong>Definition.</strong> The <strong>singular set</strong> is
+$$
+\Sigma=\{A\in M_{3}(\mathbb{C}):\det A=0\}.
+$$
+Its complement is the general linear group $GL_{3}(\mathbb{C})$.</p>
+<p><strong>Proposition.</strong> $\Sigma$ is a complex algebraic hypersurface of complex dimension $8$ and real dimension $16$. It is the zero set of the complex polynomial $\det$, equivalently of the two real polynomials $\operatorname{Re}\det$ and $\operatorname{Im}\det$; the two equations are independent at a matrix of rank two, so $\Sigma$ has real codimension two at its smooth points.</p>
+<p><strong>Proof.</strong> The determinant is a nonzero polynomial of degree three, so its zero set is a hypersurface of complex dimension $9-1=8$, real dimension $16$. At a matrix of rank two, the derivative of the determinant is nonzero: the cofactor matrix is nonzero, and the differential is $H\mapsto\operatorname{tr}(\operatorname{adj}(A)H)$, which is a nonzero linear functional. The real and imaginary parts of this complex linear functional are independent real linear functionals, so the two real equations have independent differentials and the real codimension is two.</p>
+<p><strong>The singular locus.</strong> The hypersurface $\Sigma$ is not smooth everywhere: its singular locus is the set of matrices of rank at most one,
+$$
+\Sigma_{\mathrm{sing}}=\{A:\operatorname{rank}A\leq1\},
+$$
+of complex dimension $5$. At a rank-one matrix all $2\times2$ minors vanish, and the cofactor matrix is zero, so the derivative of the determinant vanishes. The rank-two matrices form the smooth part of $\Sigma$.</p>
+<p><strong>Proof.</strong> The cofactor matrix of $A$ is nonzero exactly when the rank is at least two; at rank one all cofactors vanish. The rank-one locus is the image of $\mathbb{C}^{3}\times\mathbb{C}^{3}\to M_{3}$, $(u,v)\mapsto uv^{\mathsf T}$; the fibre over a nonzero rank-one matrix is the one-parameter family $(tu,t^{-1}v)$, so the dimension is $3+3-1=5$. The rank-two matrices are the complement of this locus in $\Sigma$, and they are smooth because the derivative is nonzero.</p>
+<p><strong>The determinant is not a norm.</strong> The determinant is homogeneous of degree three, $\det(\lambda A)=\lambda^{3}\det A$, and it is complex-valued; it vanishes on the singular set and is negative on some invertible matrices (for example, a permutation matrix with an odd permutation). The Frobenius norm is homogeneous of degree one, nonnegative, and vanishes only at zero. The two functions have different geometries: the unit ball of the norm is bounded, while the set $|\det A|\leq1$ is unbounded.</p>
+<p><strong>The determinant cone.</strong> The singular set is a cone: if $\det A=0$, then $\det(\lambda A)=\lambda^{3}\det A=0$ for every $\lambda\in\mathbb{C}$. It is the affine cone over the projective hypersurface of singular matrices in $\mathbb{P}^{8}$. The cone is cubic, not quadratic; it is not the null cone of a quadratic form. The trace form is positive definite and has no nonzero isotropic vectors, so the null cone of the form is the single point $0$, not the hypersurface $\Sigma$.</p>
+<h2 id="the-rank-stratification">The Rank Stratification</h2>
+<p><strong>The rank strata.</strong> The algebra is the disjoint union
+$$
+M_{3}(\mathbb{C})=\bigsqcup_{r=0}^{3}\{A:\operatorname{rank}A=r\}.
+$$
+The ranks and their dimensions are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Description</th>
+<th>Complex dimension</th>
+<th>Real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3$</td>
+<td>invertible matrices, $GL_{3}(\mathbb{C})$</td>
+<td>$9$</td>
+<td>$18$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>singular but not rank one</td>
+<td>$8$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$uv^{\mathsf T}$ with $u,v\neq0$</td>
+<td>$5$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>the zero matrix</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rank-three stratum is open and dense; the rank-two stratum is the smooth part of the determinant hypersurface; the rank-one stratum is the singular locus of the hypersurface; the rank-zero stratum is a point.</p>
+<p><strong>Proof of the dimensions.</strong> The rank-three stratum is the complement of the determinant hypersurface, of dimension $9$. The rank-at-most-two stratum is the determinant hypersurface, of dimension $8$; removing the rank-at-most-one stratum, of dimension $5$, does not change the dimension, so the rank-two stratum has dimension $8$. The rank-one stratum is the image of the map $(u,v)\mapsto uv^{\mathsf T}$ from $\mathbb{C}^{3}\times\mathbb{C}^{3}$ minus the axes; the fibre over a nonzero rank-one matrix is $(tu,t^{-1}v)$ for $t\in\mathbb{C}^{\times}$, of dimension one, so the image has dimension $3+3-1=5$. The rank-zero stratum is the single zero matrix.</p>
+<p><strong>The determinantal varieties.</strong> The closure of the rank-at-most-$r$ stratum is the determinantal variety
+$$
+M_{\leq r}=\{A:\operatorname{rank}A\leq r\},
+$$
+defined by the vanishing of all $(r+1)\times(r+1)$ minors. For $r=2$ it is $\Sigma$, of dimension $8$; for $r=1$ it is the rank-one determinantal variety, of dimension $5$; for $r=0$ it is $\{0\}$. The singular locus of $M_{\leq r}$ is $M_{\leq r-1}$; in particular, the singular locus of $\Sigma$ is the rank-one variety.</p>
+<p><strong>The distance to the rank strata.</strong> By the Eckart–Young theorem, the distance from $A$ to $M_{\leq r}$ in the operator norm (and in the Frobenius norm) is $\sigma_{r+1}$, with the convention $\sigma_{4}=0$:
+$$
+\operatorname{dist}_{\mathrm{op}}(A,M_{\leq r})=\sigma_{r+1}(A),\qquad
+\operatorname{dist}_{\mathrm{F}}(A,M_{\leq r})=\Bigl(\sum_{i>r}\sigma_{i}^{2}\Bigr)^{1/2}.
+$$
+So the distance to the singular set is $\sigma_{3}$, the distance to the rank-one variety is $\sigma_{2}$, and the distance to zero is $\sigma_{1}$. The singular values are the coordinates that measure the distance to each rank stratum.</p>
+<p><strong>Proof.</strong> The truncated singular value decomposition $A_{r}=U\operatorname{diag}(\sigma_{1},\ldots,\sigma_{r},0,\ldots,0)V^{*}$ has rank at most $r$ and satisfies
+$$
+\|A-A_{r}\|_{\mathrm{op}}=\sigma_{r+1},\qquad
+\|A-A_{r}\|_{\mathrm{F}}=\Bigl(\sum_{i>r}\sigma_{i}^{2}\Bigr)^{1/2}.
+$$
+The Eckart–Young theorem states that no matrix of rank at most $r$ is closer in either norm. The distance formula follows.</p>
+<p><strong>Worked example of the strata.</strong> The matrix $\operatorname{diag}(2,1,0)$ has rank two, is singular, and lies in the smooth part of $\Sigma$; its distance to the rank-one variety is $1$ and to zero is $2$. The matrix
+$$
+uv^{\mathsf T}=\begin{pmatrix}1\\0\\0\end{pmatrix}(1,2,3)
+=\begin{pmatrix}1&2&3\\0&0&0\\0&0&0\end{pmatrix}
+$$
+has rank one, lies in the singular locus of $\Sigma$, and has singular values $\sqrt{14},0,0$. Its Frobenius, operator and nuclear norms are all $\sqrt{14}$, because it has only one nonzero singular value.</p>
+<h2 id="the-absence-of-a-null-cone">The Absence of a Null Cone</h2>
+<p><strong>The definite form.</strong> The trace form $\langle A,A\rangle=\operatorname{tr}(A^{*}A)$ is positive definite. Its isotropic set is
+$$
+\{A:\langle A,A\rangle=0\}=\{0\}.
+$$
+There is no nonzero null vector, no null cone, and no link.</p>
+<p><strong>The determinant cone is not the null cone.</strong> The determinant zero set $\Sigma$ is a cone, because the determinant is homogeneous, but it is the zero set of a cubic polynomial, not of the quadratic form $\operatorname{tr}(A^{*}A)$. The two cones are different:
+$$
+\Sigma=\{A:\det A=0\},\qquad
+\{A:\operatorname{tr}(A^{*}A)=0\}=\{0\}.
+$$
+The determinant vanishes on a hypersurface of real codimension two; the trace form vanishes only at the origin. The singular set is not the set of isotropic vectors of the form.</p>
+<p><strong>The biquaternion null cone.</strong> The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has a quadratic form with nonzero isotropic vectors. In the basis $e_{t},e_{x},e_{y},e_{z}$,
+$$
+Q(z)=z_{t}^{2}+z_{x}^{2}+z_{y}^{2}+z_{z}^{2},
+\qquad
+Q(e_{t}+ie_{x})=1-1=0.
+$$
+The null cone
+$$
+\mathcal{N}=\{z\in\mathbb{B}:Q(z)=0\}
+$$
+is a genuine cone of complex dimension three, with a link: its intersection with a sphere is a real five-dimensional manifold. The zero divisors of $\mathbb{B}$ are exactly the nonzero points of $\mathcal{N}$, because the quadratic form is the determinant in the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$.</p>
+<p><strong>The comparison.</strong> The two algebras have different geometries:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>$M_{3}(\mathbb{C})$</th>
+<th>$\mathbb{B}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Defining form</td>
+<td>$\operatorname{tr}(A^{*}B)$, positive definite</td>
+<td>$Q$, indefinite</td>
+</tr>
+<tr>
+<td>Isotropic vectors</td>
+<td>$0$ only</td>
+<td>nonzero null vectors</td>
+</tr>
+<tr>
+<td>Null cone</td>
+<td>$\{0\}$</td>
+<td>genuine cone</td>
+</tr>
+<tr>
+<td>Link</td>
+<td>empty</td>
+<td>real dimension five</td>
+</tr>
+<tr>
+<td>Singular set</td>
+<td>$\det=0$, real codimension two</td>
+<td>$Q=0$, the null cone</td>
+</tr>
+<tr>
+<td>Zero divisors</td>
+<td>singular matrices</td>
+<td>nonzero null vectors</td>
+</tr>
+</tbody>
+</table></div>
+<p>The singular set of $M_{3}$ is a cubic hypersurface; the null cone of $\mathbb{B}$ is a quadratic cone. The trace form of $M_{3}$ is definite, so the only isotropic vector is zero; the biquaternion form is indefinite, so its null cone has a link. The determinant zero set is not the null cone of the trace form; it is a different cone, of a different degree and a different dimension.</p>
+<p><strong>Why the difference is structural.</strong> The biquaternion algebra is not a division algebra: it is isomorphic to $M_{2}(\mathbb{C})$, and its quadratic form is the determinant, which is indefinite on the complexification and has nonzero zero divisors. The algebra $M_{3}(\mathbb{C})$ is simple, and the trace form $\operatorname{tr}(A^{*}B)$ is the positive definite form of the complex vector space; the determinant is a separate invariant of degree three. The definite form is the Euclidean geometry of the nine coordinates; the determinant is the algebraic condition of invertibility. The two are not the same, and the category keeps them separate.</p>
+<h2 id="summary">Summary</h2>
+<p>The three norms are
+$$
+\boxed{\;\|A\|_{\mathrm{F}}^{2}=\operatorname{tr}(A^{*}A),\qquad
+\|A\|_{\mathrm{op}}=\sigma_{1},\qquad
+\|A\|_{*}=\sum_{i}\sigma_{i},\;}
+$$
+with
+$$
+\|A\|_{\mathrm{op}}\leq\|A\|_{\mathrm{F}}\leq\|A\|_{*}\leq\sqrt3\,\|A\|_{\mathrm{F}}.
+$$
+The singular values are the square roots of the eigenvalues of $A^{*}A$, and $|\det A|=\prod_{i}\sigma_{i}$.</p>
+<p>The singular set is
+$$
+\boxed{\;\Sigma=\{A:\det A=0\},\qquad \dim_{\mathbb{C}}\Sigma=8,\quad \dim_{\mathbb{R}}\Sigma=16,\;}
+$$
+a complex hypersurface of real codimension two, smooth at the rank-two matrices and singular at the rank-one matrices. The rank strata have dimensions
+$$
+9,\ 8,\ 5,\ 0
+$$
+in the complex reading, and $18,16,10,0$ in the real reading.</p>
+<p>The trace form is positive definite, with isotropic set $\{0\}$; there is no null cone. The determinant zero set is a cubic cone, not the null cone of the trace form. The biquaternion algebra has an indefinite quadratic form, a genuine null cone and a nonzero link; the comparison is the structural difference between the definite Euclidean geometry of $M_{3}$ and the indefinite geometry of $\mathbb{B}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_{3}(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frobenius norm</td>
+<td>$\sqrt{\operatorname{tr}(A^{*}A)}$</td>
+</tr>
+<tr>
+<td>Operator norm</td>
+<td>largest singular value</td>
+</tr>
+<tr>
+<td>Nuclear norm</td>
+<td>sum of singular values</td>
+</tr>
+<tr>
+<td>Determinant</td>
+<td>product of singular values up to phase</td>
+</tr>
+<tr>
+<td>Singular set</td>
+<td>$\det=0$, complex dimension $8$, real codimension $2$</td>
+</tr>
+<tr>
+<td>Rank strata</td>
+<td>$9,8,5,0$ complex</td>
+</tr>
+<tr>
+<td>Isotropic vectors</td>
+<td>$0$ only</td>
+</tr>
+<tr>
+<td>Null cone</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Biquaternion null cone</td>
+<td>genuine, with a link</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\|A\|_{\mathrm{F}}$</td>
+<td>the Frobenius norm $\sqrt{\operatorname{tr}(A^{*}A)}$</td>
+</tr>
+<tr>
+<td>$\|A\|_{\mathrm{op}}$</td>
+<td>the operator norm, the largest singular value</td>
+</tr>
+<tr>
+<td>$\|A\|_{*}$</td>
+<td>the nuclear norm, the sum of the singular values</td>
+</tr>
+<tr>
+<td>$\sigma_{i}$</td>
+<td>the singular values, $\sigma_{1}\geq\sigma_{2}\geq\sigma_{3}\geq0$</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>the singular set $\{\det A=0\}$</td>
+</tr>
+<tr>
+<td>$M_{\leq r}$</td>
+<td>the determinantal variety of rank at most $r$</td>
+</tr>
+<tr>
+<td>$\kappa(A)$</td>
+<td>the condition number $\sigma_{1}/\sigma_{3}$</td>
+</tr>
+<tr>
+<td>$\mathcal{N}$</td>
+<td>the biquaternion null cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-involution-and-the-hermitian-structure-of-m3c.html">The Involution and the Hermitian Structure</a>, for the positive definite trace form and the Frobenius norm.</li>
+<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_{3}(\mathbb{C})$</a>, for the determinant and the rank.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m3c.html">The Element, the Coordinates and the Trace</a>, for the trace pairing and the rank.</li>
+<li><a href="the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html">The Cubic, the Discriminant and the Spectral Strata</a>, for the determinant and the spectral strata.</li>
+<li><a href="the-biquaternion-algebra-and-its-vector-spaces.html">The Biquaternion Algebra and Its Vector Spaces</a>, for the null cone of $\mathbb{B}$.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the zero divisors of $\mathbb{B}$.</li>
+<li><a href="the-singular-value-decomposition.html">The Singular Value Decomposition</a>, for the general theory of the singular values.</li>
+<li><a href="the-determinant-of-a-linear-map.html">The Determinant of a Linear Map</a>, for the determinant and its geometry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

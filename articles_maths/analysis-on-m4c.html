@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis on $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analysis-on-math0"><strong>Analysis on $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>$M_4(\mathbb{C})$ is a complex Hilbert space of dimension sixteen, and analysis on it is the analysis of entire functions of sixteen complex variables, together with the functional calculus of the algebra.</strong> The Hilbert space structure is the Frobenius form $\langle A,B\rangle=\operatorname{tr}(A^*B)$; holomorphic functions are the complex-differentiable functions, equivalently the functions with $\partial f/\partial\bar A_{ij}=0$ for all $i,j$; the Laplacian is $\Delta=4\sum_{i,j}\partial^2/\partial A_{ij}\partial\bar A_{ij}$, and the holomorphic functions are harmonic.</p>
+<p>The article describes the Hilbert space, the holomorphic and real-analytic functions, the Wirtinger derivatives and the Cauchy–Riemann equations, the Laplacian and harmonic functions, the functional calculus, the Gaussian measure and the heat kernel, and the differential calculus of the determinant and the trace.</p>
+<p>The involution and the trace form are <em>The Involution and the Hermitian Structure</em>; the spectral theory is <em>Spectral Theory and the Spectral Projectors</em>; the exponential is <em>The Exponential and the Lie Group</em>; the geometry of the idempotents is <em>The Geometry of the Idempotents</em>.</p>
+<h2 id="the-hilbert-space">The Hilbert Space</h2>
+<p><strong>The complex Hilbert space.</strong> The algebra is a complex vector space of dimension $16$, with the inner product</p>
+<p>$$
+\langle A,B\rangle=\operatorname{tr}(A^*B)
+$$</p>
+<p>and the norm</p>
+<p>$$
+\lVert A\rVert=\sqrt{\langle A,A\rangle}
+=\Bigl(\sum_{i,j=1}^{4}\lvert A_{ij}\rvert^2\Bigr)^{1/2}.
+$$</p>
+<p>The matrix units $E_{ij}$ form an orthonormal basis:</p>
+<p>$$
+\langle E_{ij},E_{kl}\rangle=\delta_{ik}\delta_{jl}.
+$$</p>
+<p><strong>The identification with $\mathbb{C}^{16}$.</strong> The map $A\mapsto(A_{11},A_{12},\dots,A_{44})$ is a unitary isomorphism</p>
+<p>$$
+M_4(\mathbb{C})\cong\mathbb{C}^{16}.
+$$</p>
+<p>The real space is $\mathbb{R}^{32}$ with the Euclidean inner product</p>
+<p>$$
+(A,B)_{\mathbb{R}}=\operatorname{Re}\operatorname{tr}(A^*B).
+$$</p>
+<p><strong>The topology.</strong> All norms on a finite-dimensional space are equivalent, so the Frobenius norm, the operator norm and the nuclear norm define the same topology. The space is complete, locally compact, and separable. The group $GL_4$ is an open subset, hence a manifold of real dimension $32$.</p>
+<p><strong>The measure.</strong> The Lebesgue measure $dA$ is the product of the Lebesgue measures of the real and imaginary parts of the sixteen entries:</p>
+<p>$$
+dA=\prod_{i,j=1}^{4}dx_{ij}\,dy_{ij},\qquad A_{ij}=x_{ij}+iy_{ij}.
+$$</p>
+<p>It is invariant under translations and under the orthogonal group, and it is the Haar measure of the additive group.</p>
+<p><strong>The algebra operations.</strong> The product $(A,B)\mapsto AB$ is a complex-bilinear map, hence holomorphic; the trace and the determinant are holomorphic polynomials; the inverse $A\mapsto A^{-1}$ is holomorphic on $GL_4$; the exponential is holomorphic. These are the basic holomorphic maps of the algebra.</p>
+<h2 id="holomorphic-and-real-analytic-functions">Holomorphic and Real-Analytic Functions</h2>
+<p><strong>Holomorphic functions.</strong> A function $f:M_4\to\mathbb{C}$ is <strong>holomorphic</strong> if it is complex differentiable at every point: for every $A$ there is a complex-linear map $Df(A)$ with</p>
+<p>$$
+f(A+H)=f(A)+Df(A)(H)+o(\lVert H\rVert).
+$$</p>
+<p>Equivalently, $f$ is holomorphic in the sixteen complex coordinates $A_{ij}$, with</p>
+<p>$$
+\frac{\partial f}{\partial\bar A_{ij}}=0,\qquad i,j=1,\dots,4.
+$$</p>
+<p>The holomorphic functions on the whole space are the <strong>entire functions</strong> of sixteen complex variables.</p>
+<p><strong>The power series.</strong> Every holomorphic function has a convergent power series</p>
+<p>$$
+f(A)=\sum_{\alpha}c_\alpha A^\alpha
+$$</p>
+<p>in a polydisc around the origin, with multi-indices $\alpha=(\alpha_{11},\dots,\alpha_{44})$. The radius of convergence is the radius of the largest polydisc on which the series converges. The polynomials are the entire functions with finite expansion.</p>
+<p><strong>Real-analytic functions.</strong> A function $f:M_4\to\mathbb{C}$ is <strong>real-analytic</strong> if it has a convergent Taylor series in the thirty-two real coordinates. Every holomorphic function is real-analytic; the converse is false. The squared norm $\lVert A\rVert^2$ is a real-analytic polynomial but not holomorphic; the function $\bar A_{11}$ is real-analytic but not holomorphic.</p>
+<p><strong>The identity theorem.</strong> If two holomorphic functions agree on a nonempty open subset of a connected domain, they agree everywhere on the domain. The algebra $M_4$ is connected, so the identity theorem applies globally.</p>
+<p><strong>The maximum principle.</strong> If $f$ is holomorphic on a bounded domain and continuous on its closure, then $\lvert f\rvert$ attains its maximum on the boundary. If $f$ is entire and bounded, then $f$ is constant (Liouville's theorem).</p>
+<p><strong>The algebra maps.</strong> The determinant, the trace and the entries are holomorphic polynomials. The inverse is holomorphic on $GL_4$; the resolvent $(zI-A)^{-1}$ is holomorphic in $(z,A)$ on the domain $z\notin\sigma(A)$. The exponential is entire. The spectral projectors are holomorphic in $A$ on the simple-spectrum locus, and the Riesz projectors are holomorphic for a fixed contour.</p>
+<h2 id="the-wirtinger-derivatives-and-the-cauchyriemann-equations">The Wirtinger Derivatives and the Cauchy–Riemann Equations</h2>
+<p><strong>The Wirtinger derivatives.</strong> For a real-differentiable function $f(A,\bar A)$, define</p>
+<p>$$
+\frac{\partial f}{\partial A_{ij}}
+=\frac12\Bigl(\frac{\partial f}{\partial x_{ij}}-i\frac{\partial f}{\partial y_{ij}}\Bigr),
+\qquad
+\frac{\partial f}{\partial\bar A_{ij}}
+=\frac12\Bigl(\frac{\partial f}{\partial x_{ij}}+i\frac{\partial f}{\partial y_{ij}}\Bigr).
+$$</p>
+<p>The complex differential is</p>
+<p>$$
+df=\sum_{i,j}\frac{\partial f}{\partial A_{ij}}dA_{ij}
++\sum_{i,j}\frac{\partial f}{\partial\bar A_{ij}}d\bar A_{ij}.
+$$</p>
+<p><strong>The Cauchy–Riemann equations.</strong> The function $f$ is holomorphic exactly when</p>
+<p>$$
+\frac{\partial f}{\partial\bar A_{ij}}=0,\qquad i,j=1,\dots,4.
+$$</p>
+<p>These are thirty-two real equations (sixteen complex equations) on the real and imaginary parts of $f$.</p>
+<p><strong>The derivative of the determinant.</strong> The determinant is a holomorphic polynomial, and</p>
+<p>$$
+\frac{\partial\det}{\partial A_{ij}}=(\operatorname{adj}A)_{ji},
+$$</p>
+<p>the cofactor of the $(i,j)$ entry. In matrix form, the matrix of partial derivatives is $(\operatorname{adj}A)^{\mathsf T}$, and the gradient under the trace pairing is $\operatorname{adj}A$:</p>
+<p>$$
+d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B).
+$$</p>
+<p><strong>The derivative of the trace.</strong> The trace is linear:</p>
+<p>$$
+\frac{\partial\operatorname{tr}}{\partial A_{ij}}=\delta_{ij},
+\qquad
+d(\operatorname{tr})_A(B)=\operatorname{tr}B.
+$$</p>
+<p><strong>The derivative of the inverse.</strong> On $GL_4$,</p>
+<p>$$
+d(A^{-1})_A(B)=-A^{-1}BA^{-1}.
+$$</p>
+<p><strong>The derivative of the squared norm.</strong> For the real function $\lVert A\rVert^2=\operatorname{tr}(A^*A)$,</p>
+<p>$$
+\frac{\partial\lVert A\rVert^2}{\partial\bar A_{ij}}=A_{ij},
+\qquad
+\frac{\partial\lVert A\rVert^2}{\partial A_{ij}}=\bar A_{ij}.
+$$</p>
+<p>The gradient in the real sense is $2A$.</p>
+<h2 id="the-laplacian-and-harmonic-functions">The Laplacian and Harmonic Functions</h2>
+<p><strong>The Laplacian.</strong> The Euclidean Laplacian on $\mathbb{R}^{32}$ is</p>
+<p>$$
+\Delta=\sum_{i,j=1}^{4}\Bigl(\frac{\partial^2}{\partial x_{ij}^2}+\frac{\partial^2}{\partial y_{ij}^2}\Bigr)
+=4\sum_{i,j=1}^{4}\frac{\partial^2}{\partial A_{ij}\partial\bar A_{ij}}.
+$$</p>
+<p><strong>Harmonic functions.</strong> A $C^2$ function is <strong>harmonic</strong> if</p>
+<p>$$
+\Delta f=0.
+$$</p>
+<p><strong>Theorem.</strong> Every holomorphic function is harmonic:</p>
+<p>$$
+\Delta f=4\sum_{i,j}\frac{\partial}{\partial A_{ij}}\frac{\partial f}{\partial\bar A_{ij}}=0,
+$$</p>
+<p>because $\partial f/\partial\bar A_{ij}=0$. The real and imaginary parts of a holomorphic function are harmonic.</p>
+<p><strong>The mean value property.</strong> A harmonic function satisfies</p>
+<p>$$
+f(A)=\frac{1}{\lvert S^{31}\rvert}\int_{S^{31}}f(A+r u)\,du
+=\frac{1}{\lvert B^{32}\rvert}\int_{B^{32}}f(A+r u)\,du
+$$</p>
+<p>for every ball of radius $r$ contained in its domain. The average over the sphere and over the ball are equal.</p>
+<p><strong>The maximum principle.</strong> A non-constant harmonic function on a bounded domain has no interior maximum or minimum. A harmonic function on a compact domain attains its extrema on the boundary.</p>
+<p><strong>The Dirichlet problem.</strong> On a ball, the Dirichlet problem for the Laplacian has a unique solution given by the Poisson integral. The Poisson kernel for the ball $B_R(0)\subset\mathbb{R}^{32}$ is</p>
+<p>$$
+P_R(A,u)=\frac{R^2-\lVert A\rVert^2}{\lvert S^{31}\rvert R\lVert A-u\rVert^{32}},
+\qquad u\in S^{31},
+$$</p>
+<p>and the solution with boundary data $\varphi$ is</p>
+<p>$$
+f(A)=\int_{S^{31}}P_R(A,u)\varphi(Ru)\,du.
+$$</p>
+<p><strong>Pluriharmonic functions.</strong> A function is <strong>pluriharmonic</strong> if its restriction to every complex line is harmonic. Holomorphic functions are pluriharmonic; pluriharmonic functions are harmonic. The real part of a holomorphic function is pluriharmonic, and every pluriharmonic function is locally the real part of a holomorphic function.</p>
+<p><strong>The Laplacian of the norm.</strong> For $A\ne0$,</p>
+<p>$$
+\Delta\lVert A\rVert=\frac{31}{\lVert A\rVert},
+$$</p>
+<p>the Euclidean formula in dimension $32$. The squared norm satisfies</p>
+<p>$$
+\Delta\lVert A\rVert^2=64.
+$$</p>
+<h2 id="the-functional-calculus">The Functional Calculus</h2>
+<p><strong>The polynomial calculus.</strong> For a polynomial $p(t)\in\mathbb{C}[t]$, the matrix $p(A)$ is defined by substitution. The map</p>
+<p>$$
+\mathbb{C}[t]\longrightarrow M_4,\qquad p\longmapsto p(A),
+$$</p>
+<p>is an algebra homomorphism, with kernel the ideal generated by the minimal polynomial $m_A$ and image the commutative algebra generated by $A$.</p>
+<p><strong>The holomorphic calculus.</strong> For $f$ holomorphic on an open set containing the spectrum of $A$,</p>
+<p>$$
+f(A)=\frac{1}{2\pi i}\oint_\gamma f(z)(zI-A)^{-1}\,dz,
+$$</p>
+<p>with $\gamma$ a contour enclosing the spectrum. The map is an algebra homomorphism and satisfies the spectral mapping theorem</p>
+<p>$$
+\sigma(f(A))=f(\sigma(A)).
+$$</p>
+<p>This is the Dunford calculus of <em>Spectral Theory and the Spectral Projectors</em>.</p>
+<p><strong>The normal case.</strong> If $A$ is normal, $A=U\Lambda U^*$ with $\Lambda$ diagonal, and for every continuous (or bounded Borel) function $f$ on the spectrum,</p>
+<p>$$
+f(A)=U\operatorname{diag}(f(\lambda_1),\dots,f(\lambda_4))U^*.
+$$</p>
+<p>The map $f\mapsto f(A)$ is a $*$-homomorphism from the algebra of continuous functions on the spectrum to the $C^*$-algebra generated by $A$. The spectral measures $E_k$ are the projectors onto the eigenspaces, and</p>
+<p>$$
+A=\sum_{k=1}^{4}\lambda_kE_k .
+$$</p>
+<p><strong>The exponential and the logarithm.</strong> The entire function $e^z$ gives the matrix exponential; the holomorphic logarithm on a domain avoiding the negative real axis gives the matrix logarithm. The resolvent, the spectral projectors, the fractional powers $A^s$ on the positive definite cone and the unitary group $e^{iK}$ are all instances of the functional calculus.</p>
+<p><strong>The approximation.</strong> By Runge's theorem and the density of polynomials, every holomorphic function on a neighbourhood of the spectrum is uniformly approximated by polynomials on the spectrum; hence the holomorphic calculus is the closure of the polynomial calculus. The finite dimension makes the calculus algebraic: $f(A)$ depends only on $f$ and its derivatives at the eigenvalues, through the Lagrange–Sylvester interpolation formula.</p>
+<h2 id="the-gaussian-measure-and-the-heat-kernel">The Gaussian Measure and the Heat Kernel</h2>
+<p><strong>The Gaussian measure.</strong> The <strong>Gaussian measure</strong> on $M_4$ is</p>
+<p>$$
+d\mu(A)=\pi^{-16}e^{-\lVert A\rVert^2}\,dA.
+$$</p>
+<p>It is a probability measure, because</p>
+<p>$$
+\int_{M_4}e^{-\lVert A\rVert^2}\,dA=\pi^{16}.
+$$</p>
+<p><strong>The moments.</strong> The entries are independent complex Gaussians with</p>
+<p>$$
+\mathbb{E}[A_{ij}]=0,\qquad
+\mathbb{E}[A_{ij}\bar A_{kl}]=\delta_{ik}\delta_{jl},\qquad
+\mathbb{E}[A_{ij}A_{kl}]=0.
+$$</p>
+<p>The <strong>Wick formula</strong> gives the expectation of a polynomial as the sum over pairings of the entries and their conjugates:</p>
+<p>$$
+\mathbb{E}\Bigl[\prod_{r=1}^{m}A_{i_rj_r}\prod_{s=1}^{n}\bar A_{k_sl_s}\Bigr]
+=\sum_{\text{pairings}}\prod_{\text{pairs}}\delta_{i k}\delta_{j l},
+$$</p>
+<p>with the sum over the perfect pairings of the $m$ entries with the $n$ conjugates.</p>
+<p><strong>The heat kernel.</strong> The heat kernel of the Euclidean Laplacian on $\mathbb{R}^{32}$ is</p>
+<p>$$
+K_t(A,B)=(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)},\qquad t>0.
+$$</p>
+<p>It satisfies the heat equation</p>
+<p>$$
+\frac{\partial K_t}{\partial t}=\Delta K_t,
+\qquad
+\lim_{t\to0^+}K_t(A,B)=\delta(A-B).
+$$</p>
+<p>The solution of the initial value problem $u(0,A)=u_0(A)$ is</p>
+<p>$$
+u(t,A)=\int_{M_4}K_t(A,B)u_0(B)\,dB.
+$$</p>
+<p>The Gaussian measure is the heat kernel at $t=\tfrac14$ from the origin:</p>
+<p>$$
+\pi^{-16}e^{-\lVert A\rVert^2}=K_{1/4}(A,0).
+$$</p>
+<h2 id="the-fourier-transform">The Fourier Transform</h2>
+<p><strong>Definition.</strong> For $f\in L^1(M_4)$, the <strong>Fourier transform</strong> is</p>
+<p>$$
+\hat f(\xi)=\int_{M_4}f(A)e^{-2\pi i\operatorname{Re}\operatorname{tr}(\xi^*A)}\,dA,
+\qquad \xi\in M_4.
+$$</p>
+<p>The exponent is the Euclidean pairing of the real $32$-dimensional spaces; the transform is the ordinary Fourier transform on $\mathbb{R}^{32}$, written in matrix coordinates.</p>
+<p><strong>Inversion and Plancherel.</strong> For $f$ in the Schwartz class,</p>
+<p>$$
+f(A)=\int_{M_4}\hat f(\xi)e^{2\pi i\operatorname{Re}\operatorname{tr}(\xi^*A)}\,d\xi,
+\qquad
+\int_{M_4}\lvert f(A)\rvert^2\,dA=\int_{M_4}\lvert\hat f(\xi)\rvert^2\,d\xi .
+$$</p>
+<p><strong>Derivatives.</strong> With the Wirtinger derivatives,</p>
+<p>$$
+\widehat{\frac{\partial f}{\partial A_{ij}}}(\xi)
+=\pi i\,\overline{\xi_{ij}}\,\hat f(\xi),
+\qquad
+\widehat{\frac{\partial f}{\partial\bar A_{ij}}}(\xi)
+=\pi i\,\xi_{ij}\,\hat f(\xi).
+$$</p>
+<p>The Laplacian is the multiplier $-4\pi^2\lVert\xi\rVert^2$:</p>
+<p>$$
+\widehat{\Delta f}(\xi)=-4\pi^2\lVert\xi\rVert^2\hat f(\xi).
+$$</p>
+<p><strong>The heat kernel.</strong> The Fourier transform of the heat kernel is</p>
+<p>$$
+\widehat{K_t}(\xi)=e^{-4\pi^2t\lVert\xi\rVert^2},
+$$</p>
+<p>and the Gaussian $e^{-\pi\lVert A\rVert^2}$ is self-dual:</p>
+<p>$$
+\widehat{e^{-\pi\lVert A\rVert^2}}=e^{-\pi\lVert\xi\rVert^2}.
+$$</p>
+<p><strong>The convolution.</strong> The convolution</p>
+<p>$$
+(f*g)(A)=\int_{M_4}f(A-B)g(B)\,dB
+$$</p>
+<p>satisfies $\widehat{f*g}=\hat f\hat g$. The algebra product is not translation-invariant, so the Fourier transform does not diagonalise the multiplication of matrices; the spectral theory, not the Fourier transform, is the diagonalisation of the algebra. The Fourier transform is the tool for the translation-invariant analysis: the Laplacian, the heat kernel and the Gaussian measure.</p>
+<h2 id="the-differential-calculus">The Differential Calculus</h2>
+<p><strong>The gradient.</strong> For a real $C^1$ function $f$ on $M_4$, the gradient $\nabla f(A)$ is defined by</p>
+<p>$$
+d f_A(B)=\operatorname{Re}\operatorname{tr}(\nabla f(A)^*B).
+$$</p>
+<p>For the determinant, $\nabla\det(A)=\operatorname{adj}(A)$; for the trace, $\nabla\operatorname{tr}(A)=I$; for the squared norm, $\nabla\lVert A\rVert^2=2A$.</p>
+<p><strong>The product.</strong> The product map $(A,B)\mapsto AB$ is bilinear, and</p>
+<p>$$
+d(AB)_{(A,B)}(X,Y)=XB+AY.
+$$</p>
+<p><strong>The exponential.</strong> The derivative of the exponential is</p>
+<p>$$
+d(\exp)_X(Y)=e^X\sum_{n=0}^{\infty}\frac{(-1)^n}{(n+1)!}\operatorname{ad}_X^n(Y)
+=e^X\frac{1-e^{-\operatorname{ad}_X}}{\operatorname{ad}_X}(Y),
+$$</p>
+<p>the formula of <em>The Exponential and the Lie Group</em>.</p>
+<p><strong>The Hessian.</strong> The Hessian is the second derivative; at a critical point it determines the local behaviour. For the squared norm, the Hessian is the identity (times $2$); for the determinant, the Hessian at $I$ is</p>
+<p>$$
+\frac{d^2}{dt^2}\Big|_{t=0}\det(I+tB)=\operatorname{tr}(B)^2-\operatorname{tr}(B^2),
+$$</p>
+<p>the second coefficient of the characteristic polynomial.</p>
+<p><strong>The critical points of the determinant.</strong> The gradient $\operatorname{adj}(A)$ vanishes exactly when $\operatorname{rank}A\le2$. The critical set of the determinant is therefore the variety of rank at most two, of complex dimension $12$; it is the singular locus of the hypersurface $\det=0$.</p>
+<p><strong>The unitary group.</strong> The modulus $\lvert\det\rvert$ is identically $1$ on $U(4)$, so it has no distinguished critical point there; the closest-unitary problem of <em>The Polar Decomposition</em> is the variational problem for the Frobenius distance to $U(4)$.</p>
+<p><strong>The inverse and implicit function theorems.</strong> The inverse function theorem applies to the holomorphic maps with invertible differential: the exponential near $0$, the inverse on $GL_4$, the resolvent off the spectrum. The implicit function theorem gives the local manifold structure of the level sets $\{\det=c\}$ and of the spectral strata.</p>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p><strong>At $n=2$ the analysis is the same in four complex variables.</strong> The biquaternion algebra is $M_2(\mathbb{C})\cong\mathbb{C}^4$; the Hilbert space has complex dimension $4$ and real dimension $8$; the Gaussian measure is</p>
+<p>$$
+d\mu(A)=\pi^{-4}e^{-\lVert A\rVert^2}\,dA,
+$$</p>
+<p>and the heat kernel is $(4\pi t)^{-4}e^{-\lVert A-B\rVert^2/(4t)}$. The holomorphic functions are the entire functions of four complex variables, and the functional calculus is the same.</p>
+<p><strong>The comparison.</strong> The full algebra has sixteen complex variables; the biquaternion algebra has four. The positive definite Frobenius form is the same in both cases. The biquaternion norm $N(\tilde Q)=Q_t^2+B^2$ is a different, complex-valued object; the analysis of its null cone is not the analysis of the positive definite Hilbert space.</p>
+<h2 id="zero-divisors-and-the-boundary-against-fueter-theory">Zero Divisors and the Boundary against Fueter Theory</h2>
+<p><strong>The zero divisors.</strong> The full matrix algebra is not a division algebra. An element $A$ is a zero divisor exactly when it is singular: if $A$ is singular, choose a nonzero $B$ with $\operatorname{im}B\subseteq\ker A$, and then $AB=0$. The zero divisors are the singular set</p>
+<p>$$
+\{A:\det A=0\},
+$$</p>
+<p>a complex hypersurface of real codimension two. What is absent is not the zero divisors but the <strong>null cone</strong> of an indefinite norm: the trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite, so its only isotropic vector is $0$. The singular set is the determinantal hypersurface, not the isotropic cone of a form.</p>
+<p><strong>The ordinary matrix analysis.</strong> Because the algebra is a full matrix algebra, the analysis of its elements is the ordinary matrix analysis: rank, determinant, characteristic polynomial, Jordan form, spectral projectors, singular values, polar decomposition and the Schatten norms. The Frobenius form is definite; the operator and nuclear norms are the Schatten norms; the exponential and the logarithm are the matrix functions. There is no division-algebra norm and no null cone to divide by.</p>
+<p><strong>The boundary against Fueter theory.</strong> Fueter's quaternionic analysis uses the Cauchy–Fueter operator and the quaternionic multiplication; it requires a quaternionic structure on the space. The full algebra $M_4(\mathbb{C})$ has the complex structure of $\mathbb{C}^{16}$ and the ordinary Cauchy–Riemann equations; it does not carry a quaternionic structure as a complex algebra. The biquaternion algebra $\mathbb{B}$ carries the quaternionic structure, and its regular model $M_4(\mathbb{C})_L$ carries the Fueter theory; the full algebra's analysis is the ordinary several-complex-variable analysis. The two analyses meet through the biquaternion subalgebra and the regular representation. The positive definite Frobenius form does not produce a Cauchy–Fueter operator; the Fueter operator needs the quaternionic units, not the complex structure. This is the boundary between the ordinary matrix analysis of the full algebra and the quaternionic analysis of the biquaternion algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra $M_4(\mathbb{C})$ is a complex Hilbert space of dimension $16$ with the Frobenius form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ and the Lebesgue measure on $\mathbb{R}^{32}$. The holomorphic functions are the entire functions of the sixteen complex coordinates, characterised by the Cauchy–Riemann equations $\partial f/\partial\bar A_{ij}=0$; the real-analytic functions are the convergent series in the thirty-two real coordinates. The Wirtinger derivatives give the complex differential, the derivative of the determinant $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$ and the derivative of the inverse $d(A^{-1})_A(B)=-A^{-1}BA^{-1}$. The Laplacian is $\Delta=4\sum\partial^2/\partial A_{ij}\partial\bar A_{ij}$; the holomorphic functions are harmonic, with the mean value property, the maximum principle and the Poisson integral. The functional calculus is the polynomial, holomorphic and normal $C^*$-calculus; the Gaussian measure $\pi^{-16}e^{-\lVert A\rVert^2}dA$ has the Wick moments, and the heat kernel is $(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$. The Fourier transform on $\mathbb{C}^{16}$ converts the Wirtinger derivatives into multiplication by $\pi i\bar\xi_{ij}$ and the Laplacian into $-4\pi^2\lVert\xi\rVert^2$; it diagonalises the translation-invariant analysis but not the algebra product. The full algebra has the ordinary zero divisors of the singular set, not a null cone; its analysis is the ordinary matrix analysis, and the boundary against Fueter theory is the quaternionic structure carried by the biquaternion algebra and its regular model. The critical set of the determinant is the rank-at-most-two variety, and the critical points of the norm on the unitary group give the polar decomposition.</p>
+<p>$$
+\boxed{\ \dim_\mathbb{C}M_4=16,\quad \langle A,B\rangle=\operatorname{tr}(A^*B),\quad \Delta=4\sum_{i,j}\partial_{A_{ij}}\partial_{\bar A_{ij}},\quad d\mu=\pi^{-16}e^{-\lVert A\rVert^2}dA. }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hilbert norm</td>
+<td>$\lVert A\rVert^2=\sum_{i,j}\lvert A_{ij}\rvert^2$</td>
+</tr>
+<tr>
+<td>Wirtinger derivative</td>
+<td>$\partial_{\bar A_{ij}}=\frac12(\partial_{x_{ij}}+i\partial_{y_{ij}})$</td>
+</tr>
+<tr>
+<td>Laplacian</td>
+<td>$\Delta=4\sum\partial_{A_{ij}}\partial_{\bar A_{ij}}$</td>
+</tr>
+<tr>
+<td>Gaussian measure</td>
+<td>$\pi^{-16}e^{-\lVert A\rVert^2}dA$</td>
+</tr>
+<tr>
+<td>Heat kernel</td>
+<td>$(4\pi t)^{-16}e^{-\lVert A-B\rVert^2/(4t)}$</td>
+</tr>
+<tr>
+<td>Gradient of $\det$</td>
+<td>$\operatorname{adj}(A)$</td>
+</tr>
+<tr>
+<td>Gradient of $\operatorname{tr}$</td>
+<td>$I$</td>
+</tr>
+<tr>
+<td>Fourier transform</td>
+<td>$\hat f(\xi)=\int f(A)e^{-2\pi i\operatorname{Re}\operatorname{tr}(\xi^*A)}dA$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle A,B\rangle=\operatorname{tr}(A^*B)$</td>
+<td>the Frobenius inner product</td>
+</tr>
+<tr>
+<td>$\partial_{A_{ij}},\partial_{\bar A_{ij}}$</td>
+<td>the Wirtinger derivatives</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>the Euclidean Laplacian on $\mathbb{R}^{32}$</td>
+</tr>
+<tr>
+<td>$d\mu$</td>
+<td>the Gaussian probability measure</td>
+</tr>
+<tr>
+<td>$K_t(A,B)$</td>
+<td>the heat kernel</td>
+</tr>
+<tr>
+<td>$f(A)$</td>
+<td>the functional calculus</td>
+</tr>
+<tr>
+<td>$\operatorname{adj}(A)$</td>
+<td>the adjugate, the gradient of the determinant</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Walter Rudin, <em>Function Theory in the Unit Ball of $\mathbb{C}^n$</em> (Springer, 1980), for holomorphic functions, the Cauchy–Riemann equations, harmonic functions and the Poisson integral in several variables.</li>
+<li>Lars Hörmander, <em>An Introduction to Complex Analysis in Several Variables</em> (North-Holland, 1990), for the several-variable Cauchy–Riemann theory.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the functional calculus, the derivative of the determinant and the matrix exponential.</li>
+<li>Gerald B. Folland, <em>Real Analysis</em> (Wiley, 1999), for the Fourier transform, the Gaussian measure, the heat kernel and the Laplacian.</li>
+<li>Rudolf Fueter and the quaternionic analysis tradition, for the Cauchy–Fueter operator; see the biquaternion corpus for the regular model.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure</a>, for the Frobenius form.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors</a>, for the Dunford calculus.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m4c.html">The Exponential and the Lie Group</a>, for the matrix exponential.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m4c.html">The Geometry of the Idempotents</a>, for the critical sets and the spectral strata.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exponential and the Lie Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exponential-and-the-lie-group"><strong>The Exponential and the Lie Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The exponential map $\exp:\mathfrak{gl}_4(\mathbb{C})\to GL_4(\mathbb{C})$ is the bridge between the Lie algebra and the Lie group.</strong> It is defined by the convergent power series, it is a local diffeomorphism at the origin, it is surjective over $\mathbb{C}$, and it is not injective. The Lie algebra $\mathfrak{gl}_4$ is the tangent space at the identity with the commutator bracket; the group $GL_4$ is a connected complex Lie group of real dimension $32$, with maximal compact subgroup $U(4)$.</p>
+<p>The article defines the exponential, proves its elementary properties and the determinant formula, describes the differential and the Baker–Campbell–Hausdorff formula, identifies the Lie algebras of the classical subgroups, and describes the global structure of $GL_4$.</p>
+<p>The polar decomposition is <em>The Polar Decomposition</em>; the exponential polar decomposition is <em>The Exponential Polar Decomposition</em>; the topology is <em>The Topology of $M_4(\mathbb{C})$</em>; the one-parameter subgroups of the compact group are in <em>The Exponential and the Lie Group</em> of the biquaternion corpus.</p>
+<h2 id="the-exponential-map">The Exponential Map</h2>
+<p><strong>Definition.</strong> For $X\in M_4(\mathbb{C})$, the <strong>exponential</strong> is</p>
+<p>$$
+e^X=\exp(X)=\sum_{n=0}^{\infty}\frac{X^n}{n!}=I+X+\frac{X^2}{2!}+\frac{X^3}{3!}+\cdots.
+$$</p>
+<p>The series converges absolutely and uniformly on compact subsets of $M_4$, because $\lVert X^n/n!\rVert\le\lVert X\rVert^n/n!$.</p>
+<p><strong>Proposition.</strong> The exponential satisfies</p>
+<p>$$
+e^0=I,\qquad
+e^{-X}=(e^X)^{-1},\qquad
+e^{SXS^{-1}}=Se^XS^{-1},
+$$</p>
+<p>and, if $[X,Y]=0$,</p>
+<p>$$
+e^{X+Y}=e^Xe^Y.
+$$</p>
+<p>In general $e^{X+Y}\ne e^Xe^Y$; the correction is the Baker–Campbell–Hausdorff series.</p>
+<p><strong>Proof.</strong> The identities follow from the series and the absolute convergence. For commuting $X,Y$, the binomial theorem gives $(X+Y)^n=\sum_k\binom{n}{k}X^kY^{n-k}$, and the series factors. The inverse is $e^{-X}$ because $X$ and $-X$ commute. The conjugation formula is termwise.</p>
+<p><strong>The determinant.</strong> For every $X$,</p>
+<p>$$
+\det e^X=e^{\operatorname{tr}X}.
+$$</p>
+<p><strong>Proof.</strong> The determinant is the product of the eigenvalues; if $\lambda_1,\dots,\lambda_4$ are the eigenvalues of $X$, then $e^{\lambda_1},\dots,e^{\lambda_4}$ are the eigenvalues of $e^X$, and</p>
+<p>$$
+\det e^X=\prod_{k=1}^{4}e^{\lambda_k}=e^{\sum\lambda_k}=e^{\operatorname{tr}X}.
+$$</p>
+<p>The identity also follows from the Jacobi formula $\frac{d}{dt}\det e^{tX}=\operatorname{tr}(X)\det e^{tX}$ and the value $1$ at $t=0$.</p>
+<p><strong>The eigenvalues.</strong> If $X=SJS^{-1}$ is the Jordan form, then</p>
+<p>$$
+e^X=Se^JS^{-1}.
+$$</p>
+<p>For a Jordan block $J_n(\lambda)=\lambda I+N$,</p>
+<p>$$
+e^{J_n(\lambda)}=e^\lambda e^N
+=e^\lambda\Bigl(I+N+\frac{N^2}{2!}+\cdots+\frac{N^{n-1}}{(n-1)!}\Bigr),
+$$</p>
+<p>because $N^n=0$. The exponential of a nilpotent is unipotent; the exponential of a semisimple is semisimple with exponentiated eigenvalues.</p>
+<p><strong>Example.</strong> For the root</p>
+<p>$$
+H=\operatorname{diag}(1,i,-1,-i),
+$$</p>
+<p>the exponential is</p>
+<p>$$
+e^{tH}=\operatorname{diag}(e^t,e^{it},e^{-t},e^{-it}),
+$$</p>
+<p>a one-parameter subgroup of $GL_4$ whose compact part is a circle and whose noncompact part is a line. For the nilpotent $N=E_{12}$,</p>
+<p>$$
+e^{tN}=I+tN,
+$$</p>
+<p>a unipotent one-parameter subgroup.</p>
+<h2 id="the-differential-and-the-local-structure">The Differential and the Local Structure</h2>
+<p><strong>The derivative at the origin.</strong> The differential of the exponential at $0$ is the identity:</p>
+<p>$$
+d(\exp)_0(Y)=\frac{d}{dt}\Big|_{t=0}e^{tY}=Y.
+$$</p>
+<p>Hence the exponential is a local diffeomorphism near $0$: there are neighbourhoods $U$ of $0$ in $\mathfrak{gl}_4$ and $V$ of $I$ in $GL_4$ such that $\exp:U\to V$ is a diffeomorphism.</p>
+<p><strong>The differential at $X$.</strong> For general $X$,</p>
+<p>$$
+d(\exp)_X(Y)=e^X\sum_{n=0}^{\infty}\frac{(-1)^n}{(n+1)!}\operatorname{ad}_X^n(Y)
+=e^X\frac{1-e^{-\operatorname{ad}_X}}{\operatorname{ad}_X}(Y).
+$$</p>
+<p>The operator $\operatorname{ad}_X$ is $Y\mapsto[X,Y]$.</p>
+<p><strong>The critical points.</strong> The differential $d(\exp)_X$ is singular exactly when $\operatorname{ad}_X$ has an eigenvalue in $2\pi i\mathbb{Z}\setminus\{0\}$, equivalently when two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. At such a point the exponential is not a local diffeomorphism; the image can have a singularity.</p>
+<p><strong>The Baker–Campbell–Hausdorff formula.</strong> Near $0$,</p>
+<p>$$
+\log(e^Xe^Y)=X+Y+\frac12[X,Y]+\frac1{12}[X,[X,Y]]-\frac1{12}[Y,[X,Y]]+\cdots.
+$$</p>
+<p>The series involves only iterated commutators. It shows that the Lie algebra structure determines the group structure locally: the product near the identity is reconstructed from the bracket.</p>
+<p><strong>The inverse.</strong> The inverse of the exponential near $0$ is the <strong>logarithm</strong>, defined by the series</p>
+<p>$$
+\log(I+Z)=\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}Z^n
+$$</p>
+<p>for $\lVert Z\rVert<1$, and extended by the Jordan form and a branch of the logarithm to every invertible matrix.</p>
+<h2 id="the-lie-algebra-and-the-lie-group">The Lie Algebra and the Lie Group</h2>
+<p><strong>The Lie algebra.</strong> The Lie algebra of $GL_4(\mathbb{C})$ is</p>
+<p>$$
+\mathfrak{gl}_4(\mathbb{C})=M_4(\mathbb{C}),
+$$</p>
+<p>with the commutator bracket</p>
+<p>$$
+[X,Y]=XY-YX.
+$$</p>
+<p>The Lie algebra is the tangent space at the identity, and the exponential is the flow of the left-invariant vector fields. Its complex dimension is $16$ and its real dimension is $32$.</p>
+<p><strong>The Lie group.</strong> The group $GL_4(\mathbb{C})$ is a complex Lie group: it is an open subset of $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the multiplication and inversion are holomorphic. Its real dimension is $32$; it is connected but not compact.</p>
+<p><strong>The Lie correspondence.</strong> The exponential is the map from the Lie algebra to the Lie group. The one-parameter subgroups are exactly the maps</p>
+<p>$$
+\gamma_X:\mathbb{R}\longrightarrow GL_4,\qquad
+\gamma_X(t)=e^{tX},
+$$</p>
+<p>for $X\in\mathfrak{gl}_4$. Every continuous group homomorphism $\mathbb{R}\to GL_4$ is of this form. The Lie algebra is the set of these generators.</p>
+<p><strong>The closed subgroup theorem.</strong> A closed subgroup of $GL_4$ is a Lie subgroup, and its Lie algebra is the set of $X$ with $e^{tX}$ in the subgroup for all $t$. The classical subgroups are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Lie algebra</th>
+<th>Real dimension</th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL_4(\mathbb{C})$</td>
+<td>$\mathfrak{gl}_4(\mathbb{C})$</td>
+<td>$32$</td>
+<td>invertible</td>
+</tr>
+<tr>
+<td>$SL_4(\mathbb{C})$</td>
+<td>$\mathfrak{sl}_4(\mathbb{C})$</td>
+<td>$30$</td>
+<td>$\det=1$, $\operatorname{tr}X=0$</td>
+</tr>
+<tr>
+<td>$U(4)$</td>
+<td>$\mathfrak{u}(4)$</td>
+<td>$16$</td>
+<td>$U^*U=I$, $X^*=-X$</td>
+</tr>
+<tr>
+<td>$SU(4)$</td>
+<td>$\mathfrak{su}(4)$</td>
+<td>$15$</td>
+<td>$\det=1$, $X^*=-X$, $\operatorname{tr}X=0$</td>
+</tr>
+<tr>
+<td>$T=(\mathbb{C}^\times)^4$</td>
+<td>diagonal matrices</td>
+<td>$8$ real</td>
+<td>diagonal</td>
+</tr>
+<tr>
+<td>$B$ upper triangular</td>
+<td>upper triangular</td>
+<td>$20$ real</td>
+<td>triangular</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The exponential and the subgroups.</strong> The exponential maps</p>
+<p>$$
+\mathfrak{sl}_4\longrightarrow SL_4,\qquad
+\mathfrak{u}(4)\longrightarrow U(4),\qquad
+\mathfrak{su}(4)\longrightarrow SU(4),
+$$</p>
+<p>because $\det e^X=e^{\operatorname{tr}X}$ and $(e^X)^*=e^{X^*}$. The exponential of a traceless matrix has determinant one; the exponential of a skew-Hermitian matrix is unitary; the exponential of a Hermitian matrix is positive definite.</p>
+<p><strong>The polar decomposition.</strong> Every invertible $A$ is</p>
+<p>$$
+A=UP=e^{iK}e^H,
+$$</p>
+<p>with $K,H$ Hermitian. The unitary factor is the exponential of a skew-Hermitian matrix $iK$, and the positive factor is the exponential of the Hermitian matrix $H$. The polar decomposition is the global Cartan decomposition of the group.</p>
+<h2 id="surjectivity-and-non-injectivity">Surjectivity and Non-Injectivity</h2>
+<p><strong>Theorem (surjectivity over $\mathbb{C}$).</strong> Every invertible complex matrix has a logarithm:</p>
+<p>$$
+\exp:\mathfrak{gl}_4(\mathbb{C})\longrightarrow GL_4(\mathbb{C})
+$$</p>
+<p>is surjective.</p>
+<p><strong>Proof.</strong> By the Jordan form, it suffices to define the logarithm on a Jordan block $J_n(\lambda)$ with $\lambda\ne0$. Write $J_n(\lambda)=\lambda(I+N/\lambda)$ with $N$ nilpotent. Choose a logarithm $\mu$ of $\lambda$ and set</p>
+<p>$$
+\log J_n(\lambda)=\mu I+\log(I+N/\lambda)
+=\mu I+\sum_{k=1}^{n-1}\frac{(-1)^{k+1}}{k}\Bigl(\frac{N}{\lambda}\Bigr)^k.
+$$</p>
+<p>The series is finite because $N^n=0$, and its exponential is $J_n(\lambda)$. Summing over the Jordan blocks and conjugating gives a logarithm of $A$.</p>
+<p><strong>Non-injectivity.</strong> The exponential is not injective. For example,</p>
+<p>$$
+e^{2\pi i I}=I,
+$$</p>
+<p>and more generally every matrix $X$ that is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$ satisfies $e^X=I$. The fibre over $I$ is the union of the conjugacy classes of</p>
+<p>$$
+\operatorname{diag}(2\pi i k_1,\dots,2\pi i k_4),\qquad k_j\in\mathbb{Z}.
+$$</p>
+<p>The fibre is not a subgroup of the additive group, because the exponential is not a homomorphism on non-commuting matrices.</p>
+<p><strong>The principal logarithm.</strong> On the domain of matrices with no eigenvalues on the closed negative real axis, the <strong>principal logarithm</strong> is holomorphic and satisfies $e^{\log A}=A$. It is the inverse of the exponential on a neighbourhood of $I$, extended by the spectral calculus.</p>
+<p><strong>The image of the exponential.</strong> The image is all of $GL_4(\mathbb{C})$; the exponential is a surjective local diffeomorphism. It is not a covering map, because the fibre over $I$ is not discrete (it contains the continuous family of diagonalisable matrices with eigenvalues $2\pi i k$? The set of eigenvalues is discrete, but the conjugating matrix varies continuously; the fibre is a union of conjugacy classes of dimension up to $12$, not discrete). The exponential is not a covering.</p>
+<h2 id="the-global-structure-of-math136">The Global Structure of $GL_4$</h2>
+<p><strong>Connectedness.</strong> The Lie algebra $\mathfrak{gl}_4$ is connected, and the exponential is continuous and surjective, so $GL_4(\mathbb{C})$ is connected.</p>
+<p><strong>The maximal compact subgroup.</strong> The unitary group $U(4)$ is a maximal compact subgroup of $GL_4(\mathbb{C})$. The polar decomposition gives the diffeomorphism</p>
+<p>$$
+GL_4(\mathbb{C})\cong U(4)\times P_+,
+$$</p>
+<p>and $P_+$ is contractible. Hence $GL_4$ deformation retracts onto $U(4)$.</p>
+<p><strong>The fundamental group.</strong> Because $GL_4$ deformation retracts onto $U(4)$,</p>
+<p>$$
+\pi_1(GL_4(\mathbb{C}))\cong\pi_1(U(4))\cong\mathbb{Z}.
+$$</p>
+<p>The generator is the loop $t\mapsto\operatorname{diag}(e^{2\pi i t},1,1,1)$; the scalar loop $e^{2\pi i t}I$ is four times the generator, and its determinant has winding four. The universal cover is a complex Lie group; the details are in <em>The Topology of $M_4(\mathbb{C})$</em>.</p>
+<p><strong>The centre.</strong> The centre of $GL_4$ is $\mathbb{C}^\times I$, and the centre of $U(4)$ is $U(1)I$. The projective group is</p>
+<p>$$
+PGL_4=GL_4/\mathbb{C}^\times I,
+$$</p>
+<p>of dimension $15$; the projective unitary group is $PU(4)=U(4)/U(1)I$, of dimension $15$.</p>
+<p><strong>The Lie algebra centre.</strong> The centre of $\mathfrak{gl}_4$ is $\mathbb{C}I$, of dimension $1$; the traceless algebra $\mathfrak{sl}_4$ has dimension $15$ and is the Lie algebra of $SL_4$ and of $PGL_4$.</p>
+<h2 id="the-exponential-of-the-root-and-the-torus">The Exponential of the Root and the Torus</h2>
+<p><strong>The root generates a torus.</strong> The root</p>
+<p>$$
+H=\operatorname{diag}(1,i,-1,-i)
+$$</p>
+<p>has exponential</p>
+<p>$$
+e^{tH}=\operatorname{diag}(e^t,e^{it},e^{-t},e^{-it}).
+$$</p>
+<p>The compact part $e^{it}$ and $e^{-it}$ lies in $U(1)$, and the real part $e^t,e^{-t}$ lies in $\mathbb{R}_{>0}$. The one-parameter subgroup is not contained in a compact group, because of the real eigenvalues $\pm1$; the compact part is the circle generated by $i$ and $-i$.</p>
+<p><strong>The compact torus.</strong> The diagonal matrices</p>
+<p>$$
+\operatorname{diag}(e^{i\theta_1},e^{i\theta_2},e^{i\theta_3},e^{i\theta_4})
+$$</p>
+<p>form the maximal torus $T^4$ of $U(4)$, of real dimension $4$. The quotient by the diagonal $U(1)$ is the maximal torus of $PU(4)$, of dimension $3$, the gauge torus of <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<p><strong>The nilpotent exponential.</strong> For the simple nilpotents,</p>
+<p>$$
+e^{tE_{12}}=I+tE_{12},\qquad
+e^{tE_{23}}=I+tE_{23},\qquad
+e^{tE_{34}}=I+tE_{34},
+$$</p>
+<p>unipotent one-parameter subgroups. The products $e^{t_1E_{12}}e^{t_2E_{23}}e^{t_3E_{34}}$ form the maximal unipotent subgroup of the upper triangular Borel.</p>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p><strong>At $n=2$ the same theorem.</strong> For $M_2(\mathbb{C})$,</p>
+<p>$$
+\exp:\mathfrak{gl}_2(\mathbb{C})\longrightarrow GL_2(\mathbb{C})
+$$</p>
+<p>is surjective and not injective; the Lie group $GL_2$ has real dimension $8$, the maximal compact $U(2)$ has dimension $4$, and</p>
+<p>$$
+\pi_1(GL_2)=\mathbb{Z}.
+$$</p>
+<p>The biquaternion algebra's exponential is the same exponential on $2\times2$ matrices; the regular model embeds it in $M_4$.</p>
+<p><strong>The comparison.</strong> The exponential of the full algebra is the $4\times4$ exponential; the biquaternion exponential is the $2\times2$ exponential. The Lie algebra dimensions are $32$ and $8$; the Lie groups are $GL_4$ and $GL_2$. The exponential is surjective in both cases over $\mathbb{C}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The exponential $e^X=\sum X^n/n!$ maps the Lie algebra $\mathfrak{gl}_4$ to the Lie group $GL_4$. It satisfies $e^{X+Y}=e^Xe^Y$ for commuting $X,Y$, $e^{-X}=(e^X)^{-1}$, $\det e^X=e^{\operatorname{tr}X}$, and $e^{SXS^{-1}}=Se^XS^{-1}$. Its differential at $0$ is the identity, so it is a local diffeomorphism near $0$; at $X$ the differential is $e^X(1-e^{-\operatorname{ad}_X})/\operatorname{ad}_X$, singular exactly when two eigenvalues of $X$ differ by a nonzero multiple of $2\pi i$. The Baker–Campbell–Hausdorff series reconstructs the local group from the bracket. Over $\mathbb{C}$ the exponential is surjective onto $GL_4$ and not injective; the fibre over $I$ contains the conjugates of the diagonal matrices with eigenvalues in $2\pi i\mathbb{Z}$. The group $GL_4$ is connected, of real dimension $32$, with maximal compact $U(4)$, polar decomposition $GL_4\cong U(4)\times P_+$, and fundamental group $\mathbb{Z}$; it deformation retracts onto $U(4)$. The Lie algebras of $SL_4,U(4),SU(4)$ are $\mathfrak{sl}_4,\mathfrak{u}(4),\mathfrak{su}(4)$, of real dimensions $30,16,15$. The root generates the one-parameter subgroup $\operatorname{diag}(e^t,e^{it},e^{-t},e^{-it})$, the nilpotents generate unipotent subgroups, and the compact diagonal torus is the gauge torus of the frame.</p>
+<p>$$
+\boxed{\ \exp:\mathfrak{gl}_4\to GL_4\ \text{surjective},\quad \det e^X=e^{\operatorname{tr}X},\quad d(\exp)_0=I,\quad GL_4\simeq U(4),\quad \pi_1(GL_4)=\mathbb{Z}. }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Lie algebra</th>
+<th>Real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL_4(\mathbb{C})$</td>
+<td>$\mathfrak{gl}_4$</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>$SL_4(\mathbb{C})$</td>
+<td>$\mathfrak{sl}_4$</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>$U(4)$</td>
+<td>$\mathfrak{u}(4)$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$SU(4)$</td>
+<td>$\mathfrak{su}(4)$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>$PGL_4$</td>
+<td>$\mathfrak{sl}_4$</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>$PU(4)$</td>
+<td>$\mathfrak{su}(4)$</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e^X=\exp(X)$</td>
+<td>the matrix exponential</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}_4$</td>
+<td>the Lie algebra of $GL_4$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X(Y)=[X,Y]$</td>
+<td>the adjoint operator</td>
+</tr>
+<tr>
+<td>$d(\exp)_X$</td>
+<td>the differential of the exponential</td>
+</tr>
+<tr>
+<td>$\operatorname{BCH}$</td>
+<td>the Baker–Campbell–Hausdorff series</td>
+</tr>
+<tr>
+<td>$P_+$</td>
+<td>the positive definite cone</td>
+</tr>
+<tr>
+<td>$T^4$</td>
+<td>the maximal torus of $U(4)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2015), for the exponential map, the BCH formula, the closed subgroup theorem and the classical groups.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the Cartan decomposition and the global structure of $GL_4$.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the matrix exponential, the logarithm and the Jordan form.</li>
+<li><a href="the-polar-decomposition-of-m4c.html">The Polar Decomposition</a>, for the diffeomorphism $GL_4\cong U(4)\times P_+$.</li>
+<li><a href="the-exponential-polar-decomposition-of-m4c.html">The Exponential Polar Decomposition</a>, for the ordering $e^He^{iK}$.</li>
+<li><a href="the-topology-of-m4c.html">The Topology of $M_4(\mathbb{C})$</a>, for the fundamental group and the homotopy type.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the gauge torus and the nilpotents.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

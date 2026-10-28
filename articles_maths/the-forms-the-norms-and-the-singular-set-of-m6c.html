@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Forms, the Norms and the Singular Set — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-forms-the-norms-and-the-singular-set"><strong>The Forms, the Norms and the Singular Set</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra $M_6(\mathbb{C})$ carries three kinds of quantitative structure. The <strong>trace form</strong> $\operatorname{tr}(A^*B)$ is a positive definite Hermitian form; the <strong>determinant</strong> is a homogeneous polynomial of degree six; and the <strong>norms</strong> are the Schatten norms of the singular values,</p>
+<p>$$
+\lVert A\rVert_p=\left(\sum_{i=1}^{6}\sigma_i(A)^p\right)^{1/p},
+\qquad
+p=1,2,\infty,
+$$</p>
+<p>the nuclear, Frobenius and operator norms. The determinant vanishes on the <strong>singular set</strong></p>
+<p>$$
+\Sigma=\{A:\det A=0\},
+$$</p>
+<p>a complex hypersurface of complex dimension $35$ and real codimension two. The set is stratified by the rank; the rank-$k$ stratum has complex dimension $k(12-k)$.</p>
+<p>The Hermitian form is definite, so there is no null cone: the only isotropic vector is $0$. The singular set is a cone, but it is not the isotropic cone of the form. This is the contrast with the biquaternion algebra, whose trace form is indefinite, whose null cone is the zero-divisor cone, and whose link is a five-dimensional manifold.</p>
+<p>The article assumes the Hermitian form of <em>The Involution and the Hermitian Structure</em> and the rank strata of <em>The Rank-Two and Rank-Three Splits</em>. It uses no topology beyond the finite-dimensional metric. The singular values of a matrix are also used in <em>The Polar Decomposition</em>; the biquaternion comparison is <em>The Biquaternion Algebra and Its Vector Spaces</em>.</p>
+<h2 id="the-forms">The Forms</h2>
+<h3 id="the-hermitian-trace-form">The Hermitian Trace Form</h3>
+<p><strong>Definition.</strong> The <strong>trace form</strong> is</p>
+<p>$$
+\langle A,B\rangle=\operatorname{tr}(A^*B).
+$$</p>
+<p><strong>Theorem.</strong> The form is Hermitian and positive definite:</p>
+<p>$$
+\langle A,B\rangle=\overline{\langle B,A\rangle},
+\qquad
+\langle A,A\rangle=\sum_{i,j}\lvert a_{ij}\rvert^2\ge0,
+$$</p>
+<p>with equality if and only if $A=0$.</p>
+<p><strong>Proof.</strong> This is <em>The Involution and the Hermitian Structure</em>.</p>
+<p><strong>Corollary (the real and imaginary parts).</strong> The real part is the Euclidean inner product of the $72$ real coordinates; the imaginary part is a symplectic form. The form is definite, so its isotropic cone is $\{0\}$.</p>
+<p><strong>Proof.</strong> Expand in the real and imaginary coordinates; the sum of squares is positive definite, and the imaginary part is alternating.</p>
+<h3 id="the-complex-bilinear-trace-pairing">The Complex Bilinear Trace Pairing</h3>
+<p><strong>Definition.</strong> The <strong>trace pairing</strong> is</p>
+<p>$$
+(A,B)\longmapsto\operatorname{tr}(AB).
+$$</p>
+<p><strong>Theorem.</strong> The trace pairing is symmetric, nondegenerate and invariant, but it is indefinite: it has nonzero isotropic vectors.</p>
+<p><strong>Proof.</strong> It is <em>The Element, the Coordinates and the Trace</em>. The matrix unit $E_{12}$ is isotropic: $\operatorname{tr}(E_{12}^2)=0$.</p>
+<p><strong>Remark (two forms, two roles).</strong> The complex bilinear pairing is the algebra form; it identifies the algebra with its dual and gives the Killing form on $\mathfrak{sl}_6$. The Hermitian form is the metric; it gives the Frobenius norm and the Hilbert-space structure. <strong>The trace pairing has a null cone; the Hermitian form does not.</strong></p>
+<h3 id="the-determinant">The Determinant</h3>
+<p><strong>Definition.</strong> The <strong>determinant</strong> is the polynomial</p>
+<p>$$
+\det:M_6(\mathbb{C})\longrightarrow\mathbb{C}
+$$</p>
+<p>of degree six, multiplicative and invariant under conjugation.</p>
+<p><strong>Theorem (the derivative).</strong> For invertible $A$,</p>
+<p>$$
+d(\det)_A(B)=\det(A)\operatorname{tr}(A^{-1}B).
+$$</p>
+<p>For singular $A$ of rank five, the derivative is the cofactor pairing, and it is nonzero.</p>
+<p><strong>Proof.</strong> $\det(A+tB)=\det(A)\det(I+tA^{-1}B)=\det(A)(1+t\operatorname{tr}(A^{-1}B)+O(t^2))$. At rank five, the adjugate is nonzero and $d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B)$.</p>
+<p><strong>Corollary (the singular set is smooth at rank five).</strong> The gradient of $\det$ is nonzero exactly at the matrices of rank five.</p>
+<p><strong>Proof.</strong> The adjugate of a rank-five matrix is nonzero (it is the product of the nonzero cofactors), and it vanishes at rank at most four.</p>
+<h2 id="the-norms">The Norms</h2>
+<h3 id="the-singular-values">The Singular Values</h3>
+<p><strong>Definition.</strong> The <strong>singular values</strong> of $A$ are the nonnegative square roots of the eigenvalues of $A^*A$:</p>
+<p>$$
+\sigma_i(A)=\sqrt{\lambda_i(A^*A)},\qquad
+\sigma_1\ge\sigma_2\ge\cdots\ge\sigma_6\ge0 .
+$$</p>
+<p><strong>Theorem.</strong> The singular values are the eigenvalues of $\lvert A\rvert=(A^*A)^{1/2}$, and</p>
+<p>$$
+\operatorname{tr}(A^*A)=\sum_i\sigma_i^2,
+\qquad
+\lvert\det A\rvert=\prod_i\sigma_i .
+$$</p>
+<p><strong>Proof.</strong> The spectral theorem for the positive semidefinite $A^*A$; the trace is the sum of the eigenvalues, the determinant is the product.</p>
+<p><strong>Corollary (the unitary invariance).</strong> The singular values are invariant under $A\mapsto UAV$ for $U,V\in U(6)$.</p>
+<p><strong>Proof.</strong> $(UAV)^*(UAV)=V^*A^*AV$, unitarily conjugate to $A^*A$.</p>
+<h3 id="the-schatten-norms">The Schatten Norms</h3>
+<p><strong>Definition.</strong> For $1\le p<\infty$,</p>
+<p>$$
+\lVert A\rVert_p=\left(\sum_{i=1}^{6}\sigma_i(A)^p\right)^{1/p},
+\qquad
+\lVert A\rVert_\infty=\sigma_1(A).
+$$</p>
+<p>The cases are the <strong>nuclear norm</strong> $p=1$, the <strong>Frobenius norm</strong> $p=2$, and the <strong>operator norm</strong> $p=\infty$.</p>
+<p><strong>Theorem.</strong> Each $\lVert\cdot\rVert_p$ is a norm, unitarily invariant, and</p>
+<p>$$
+\lVert A\rVert_\infty\le\lVert A\rVert_p\le\lVert A\rVert_1
+\qquad
+(1\le p\le\infty),
+$$</p>
+<p>with</p>
+<p>$$
+\lVert A\rVert_\infty\le\lVert A\rVert_2\le\sqrt6\,\lVert A\rVert_\infty,
+\qquad
+\lVert A\rVert_2\le\lVert A\rVert_1\le\sqrt6\,\lVert A\rVert_2,
+\qquad
+\lVert A\rVert_\infty\le\lVert A\rVert_1\le6\lVert A\rVert_\infty .
+$$</p>
+<p><strong>Proof.</strong> The Schatten norms are the $\ell^p$ norms of the singular value vector; the inequalities are the standard $\ell^p$ inequalities in dimension six, with the factor $\sqrt6$ from the Cauchy–Schwarz inequality and $6$ from the comparison of $\ell^1$ and $\ell^\infty$.</p>
+<p><strong>Theorem (the operator norm).</strong> The operator norm is</p>
+<p>$$
+\lVert A\rVert_\infty=\sup_{\lVert x\rVert=1}\lVert Ax\rVert=\sigma_1(A),
+$$</p>
+<p>and it is a $C^*$-norm:</p>
+<p>$$
+\lVert A^*A\rVert_\infty=\lVert A\rVert_\infty^2 .
+$$</p>
+<p><strong>Proof.</strong> The supremum of $\lVert Ax\rVert$ over the unit sphere is the square root of the largest eigenvalue of $A^*A$, that is $\sigma_1$. The $C^*$-identity follows from $\lVert A^*A\rVert=\sigma_1^2=\lVert A\rVert^2$.</p>
+<p><strong>Theorem (the nuclear norm).</strong> The nuclear norm is</p>
+<p>$$
+\lVert A\rVert_1=\operatorname{tr}\lvert A\rvert=\sum_i\sigma_i(A),
+$$</p>
+<p>and it is the dual of the operator norm:</p>
+<p>$$
+\lVert A\rVert_1=\sup_{\lVert B\rVert_\infty\le1}\lvert\operatorname{tr}(A^*B)\rvert,
+\qquad
+\lVert A\rVert_\infty=\sup_{\lVert B\rVert_1\le1}\lvert\operatorname{tr}(A^*B)\rvert .
+$$</p>
+<p><strong>Proof.</strong> The von Neumann trace inequality $\lvert\operatorname{tr}(A^*B)\rvert\le\sum_i\sigma_i(A)\sigma_i(B)$, with equality for suitable unitaries; the two suprema follow.</p>
+<h3 id="the-determinant-bounds">The Determinant Bounds</h3>
+<p><strong>Theorem.</strong> For every $A$,</p>
+<p>$$
+\lvert\det A\rvert\le\left(\frac{\lVert A\rVert_2}{\sqrt6}\right)^6
+\le\lVert A\rVert_\infty^6,
+\qquad
+\lvert\det A\rvert\le\left(\frac{\lVert A\rVert_1}{6}\right)^6 .
+$$</p>
+<p><strong>Proof.</strong> The determinant modulus is $\prod_i\sigma_i$. The arithmetic–geometric mean inequality gives</p>
+<p>$$
+\left(\prod_i\sigma_i\right)^{1/6}
+\le\left(\frac{1}{6}\sum_i\sigma_i^2\right)^{1/2}
+=\frac{\lVert A\rVert_2}{\sqrt6},
+$$</p>
+<p>and the same with $\sum_i\sigma_i/6$. The bound $\prod_i\sigma_i\le\sigma_1^6$ is immediate.</p>
+<p><strong>Corollary (the trace bound).</strong> For every $A$,</p>
+<p>$$
+\lvert\operatorname{tr}A\rvert\le\lVert A\rVert_1,
+\qquad
+\lvert\operatorname{tr}A\rvert\le\sqrt6\,\lVert A\rVert_2 .
+$$</p>
+<p><strong>Proof.</strong> The first is the von Neumann inequality with $B=I_6$; the second is the Cauchy–Schwarz inequality for the Frobenius form.</p>
+<p><strong>Remark (the operator norm is the algebra norm).</strong> The operator norm is submultiplicative,</p>
+<p>$$
+\lVert AB\rVert_\infty\le\lVert A\rVert_\infty\lVert B\rVert_\infty,
+$$</p>
+<p>and it is the $C^*$-norm. The Frobenius norm is also submultiplicative, $\lVert AB\rVert_2\le\lVert A\rVert_2\lVert B\rVert_2$ (Cauchy–Schwarz), but it is not the $C^*$-norm. The nuclear norm satisfies $\lVert AB\rVert_1\le\lVert A\rVert_2\lVert B\rVert_2\le\lVert A\rVert_1\lVert B\rVert_1$.</p>
+<h2 id="the-singular-set">The Singular Set</h2>
+<h3 id="definition-and-codimension">Definition and Codimension</h3>
+<p><strong>Definition.</strong> The <strong>singular set</strong> is</p>
+<p>$$
+\Sigma=\{A\in M_6(\mathbb{C}):\det A=0\}.
+$$</p>
+<p><strong>Theorem.</strong> $\Sigma$ is a complex algebraic hypersurface of complex dimension $35$, real dimension $70$, and real codimension $2$. Its complement is $GL_6(\mathbb{C})$, an open dense subset of real dimension $72$.</p>
+<p><strong>Proof.</strong> The determinant is a nonzero polynomial of degree six; its zero set is a hypersurface. The differential is nonzero at the matrices of rank five, so the hypersurface is smooth there; the dimension is $36-1=35$ complex, $70$ real.</p>
+<p><strong>Corollary (the singular set is a cone).</strong> $\Sigma$ is homogeneous: if $A\in\Sigma$ and $\lambda\in\mathbb{C}$, then $\lambda A\in\Sigma$.</p>
+<p><strong>Proof.</strong> $\det(\lambda A)=\lambda^6\det A$.</p>
+<p><strong>Remark (a cone, but not a null cone).</strong> The singular set is a cone over the projective determinantal variety, but it is not the isotropic cone of the Hermitian form: the form is definite, and its only isotropic vector is $0$. <strong>The word "cone" in "null cone" refers to the isotropic cone of an indefinite form; the determinant cone is a different object.</strong></p>
+<h3 id="the-rank-stratification">The Rank Stratification</h3>
+<p><strong>Definition.</strong> For $k=0,\dots,6$, the <strong>rank-$k$ stratum</strong> is</p>
+<p>$$
+M_k=\{A:\operatorname{rank}A=k\}.
+$$</p>
+<p><strong>Theorem.</strong> $M_k$ is a smooth locally closed submanifold of complex dimension</p>
+<p>$$
+\dim_{\mathbb{C}}M_k=k(12-k),
+$$</p>
+<p>and real dimension $2k(12-k)$. The closure of $M_k$ is</p>
+<p>$$
+\overline{M_k}=\{A:\operatorname{rank}A\le k\},
+$$</p>
+<p>of complex codimension $(6-k)^2$.</p>
+<p><strong>Proof.</strong> A rank-$k$ matrix factors as $A=UV$ with $U\in\mathbb{C}^{6\times k}$ and $V\in\mathbb{C}^{k\times6}$ of rank $k$. The pair $(U,V)$ has $12k$ complex parameters; the stabilizer of the factorization is $GL_k$, of dimension $k^2$, acting by $U\mapsto UG$, $V\mapsto G^{-1}V$. The quotient has dimension $12k-k^2=k(12-k)$. The closure is the determinantal variety of rank at most $k$, of codimension $(6-k)^2$ in $M_6$.</p>
+<p><strong>Corollary (the table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k$</th>
+<th>$\dim_{\mathbb{C}}M_k$</th>
+<th>$\dim_{\mathbb{R}}M_k$</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$6$</td>
+<td>$36$</td>
+<td>$72$</td>
+<td>open dense, $GL_6$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$35$</td>
+<td>$70$</td>
+<td>smooth part of $\Sigma$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$32$</td>
+<td>$64$</td>
+<td>singular locus of $\Sigma$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$27$</td>
+<td>$54$</td>
+<td></td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$20$</td>
+<td>$40$</td>
+<td></td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$11$</td>
+<td>$22$</td>
+<td></td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>the zero matrix</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Substitute $k$ in $k(12-k)$ and double for the real dimension.</p>
+<p><strong>Corollary (the singular locus).</strong> The singular locus of $\Sigma$ is</p>
+<p>$$
+\Sigma_{\mathrm{sing}}=\{A:\operatorname{rank}A\le4\},
+$$</p>
+<p>of complex dimension $32$ and complex codimension $3$ in $\Sigma$. The smooth locus is $M_5$, of complex dimension $35$.</p>
+<p><strong>Proof.</strong> The gradient of the determinant vanishes exactly at rank at most four; the rank-five stratum is the smooth part of the hypersurface.</p>
+<p><strong>Corollary (the link).</strong> The link of the determinantal cone,</p>
+<p>$$
+\mathrm{Lk}(\Sigma)=\Sigma\cap S^{71},
+$$</p>
+<p>has real dimension $69$.</p>
+<p><strong>Proof.</strong> $\Sigma$ has real dimension $70$ and is a cone; intersecting with the unit sphere removes the radial direction, leaving dimension $69$.</p>
+<p><strong>Remark (the rank stratification is the canonical one).</strong> The strata $M_k$ are the orbits of the action of $GL_6\times GL_6$ by $A\mapsto UAV^{-1}$; they are smooth, and the closure order is the order of the ranks. The determinant's singular set is the union of the strata of rank at most five.</p>
+<h2 id="the-absence-of-a-null-cone">The Absence of a Null Cone</h2>
+<h3 id="the-definite-form">The Definite Form</h3>
+<p><strong>Theorem.</strong> The Hermitian trace form has no nonzero isotropic vector:</p>
+<p>$$
+\langle A,A\rangle=0\quad\Longleftrightarrow\quad A=0 .
+$$</p>
+<p><strong>Corollary.</strong> There is no null cone, no isotropic cone of positive dimension, and no link of a null cone. The only "isotropic" element is the zero matrix.</p>
+<p><strong>Proof.</strong> The form is a sum of squares.</p>
+<h3 id="the-comparison-with-the-biquaternion-cone">The Comparison with the Biquaternion Cone</h3>
+<p><strong>Theorem (the biquaternion cone).</strong> In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, the conjugation is $\mathbb{C}$-linear and the trace form is indefinite. Its null cone is the zero-divisor cone</p>
+<p>$$
+\mathcal N=\{A\in\mathbb{B}:A\neq0,\ \det A=0\},
+$$</p>
+<p>of real dimension $6$. The link</p>
+<p>$$
+\mathrm{Lk}(\mathcal N)=\{A\in\mathcal N:\lVert A\rVert_F=1\}
+$$</p>
+<p>has real dimension $5$; it is a circle bundle over $\mathbb{P}^1\times\mathbb{P}^1=S^2\times S^2$.</p>
+<p><strong>Proof.</strong> The biquaternion norm is $N(A)=\det A$, and $\operatorname{tr}(A^*A)=2N(A)$; the isotropic vectors are the singular matrices. The rank-one matrices of unit Frobenius norm are $u\otimes v$ with $\lVert u\rVert=\lVert v\rVert=1$, modulo the common phase; the pair of lines gives $S^2\times S^2$, and the relative phase is the circle. The dimension is $2+2+1=5$.</p>
+<p><strong>Corollary (the contrast).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Form</th>
+<th>Isotropic cone</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_6(\mathbb{C})$</td>
+<td>definite</td>
+<td>$\{0\}$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>indefinite</td>
+<td>zero divisors, real dimension $6$</td>
+<td>real dimension $5$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The definite form has the single isotropic vector; the indefinite biquaternion form has the zero-divisor cone.</p>
+<p><strong>Remark (the singular set is not the null cone).</strong> The singular set $\Sigma$ of $M_6$ has real codimension two and a link of real dimension $69$; it is a determinantal cone, not an isotropic cone. The biquaternion null cone has real dimension six and a link of real dimension five. <strong>The determinant can vanish on a large cone without the form being indefinite; the two notions of "cone" must not be conflated.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$ is positive definite; the complex bilinear pairing $\operatorname{tr}(AB)$ is indefinite. The determinant is a degree-six polynomial; its zero set is the singular set</p>
+<p>$$
+\Sigma=\{\det A=0\},
+$$</p>
+<p>of complex dimension $35$, real dimension $70$, and real codimension $2$. The rank-$k$ stratum has complex dimension $k(12-k)$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k$</th>
+<th>$0$</th>
+<th>$1$</th>
+<th>$2$</th>
+<th>$3$</th>
+<th>$4$</th>
+<th>$5$</th>
+<th>$6$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim_{\mathbb{C}}M_k$</td>
+<td>$0$</td>
+<td>$11$</td>
+<td>$20$</td>
+<td>$27$</td>
+<td>$32$</td>
+<td>$35$</td>
+<td>$36$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The norms are the Schatten norms of the six singular values:</p>
+<p>$$
+\lVert A\rVert_1=\sum_i\sigma_i,
+\qquad
+\lVert A\rVert_2=\left(\sum_i\sigma_i^2\right)^{1/2},
+\qquad
+\lVert A\rVert_\infty=\sigma_1,
+$$</p>
+<p>the nuclear, Frobenius and operator norms; the operator norm is the $C^*$-norm, and the nuclear norm is its dual.</p>
+<p>$$
+\boxed{\ \Sigma=\{\det=0\},\quad \operatorname{codim}_{\mathbb{R}}\Sigma=2,\quad \dim_{\mathbb{C}}M_k=k(12-k),\quad \text{no null cone} .\ }
+$$</p>
+<p>The Hermitian form has the single isotropic vector $0$. The biquaternion algebra has the zero-divisor null cone of real dimension $6$ and link of real dimension $5$. The determinant cone of $M_6$ is not the isotropic cone of a form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle A,B\rangle$</td>
+<td>the Hermitian trace form $\operatorname{tr}(A^*B)$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(AB)$</td>
+<td>the complex bilinear trace pairing</td>
+</tr>
+<tr>
+<td>$\sigma_1,\dots,\sigma_6$</td>
+<td>the singular values</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert_p$</td>
+<td>the Schatten $p$-norm</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert_1$</td>
+<td>the nuclear norm</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert_2$</td>
+<td>the Frobenius norm</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert_\infty$</td>
+<td>the operator norm</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>the singular set $\{\det=0\}$</td>
+</tr>
+<tr>
+<td>$M_k$</td>
+<td>the rank-$k$ stratum</td>
+</tr>
+<tr>
+<td>$\mathcal N$</td>
+<td>the biquaternion null cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the positive definite form.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>, for the complex bilinear trace pairing.</li>
+<li><a href="the-rank-two-and-rank-three-splits-of-m6c.html">The Rank-Two and Rank-Three Splits</a>, for the rank strata of the mass block.</li>
+<li><a href="the-polar-decomposition-of-m6c.html">The Polar Decomposition</a>, for the singular values and the positive factor.</li>
+<li><a href="the-topology-of-m6c.html">The Topology of $M_6(\mathbb{C})$</a>, for the complement of the singular set and the link.</li>
+<li><a href="the-biquaternion-algebra-and-its-vector-spaces.html">The Biquaternion Algebra and Its Vector Spaces</a>, for the biquaternion null cone.</li>
+<li><a href="schatten-norms.html">Schatten Norms</a>, for the general theory of the singular value norms.</li>
+<li><a href="the-determinantal-variety.html">The Determinantal Variety</a>, for the rank stratification of a matrix space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectral Theory and the Spectral Projectors — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spectral-theory-and-the-spectral-projectors"><strong>Spectral Theory and the Spectral Projectors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The spectral theorem for Hermitian matrices states that a Hermitian matrix $A=A^*$ has an orthonormal basis of eigenvectors and real eigenvalues:</p>
+<p>$$
+A=\sum_{k=1}^{5}\lambda_kP_k,\qquad \lambda_k\in\mathbb{R},
+$$</p>
+<p>where the $P_k$ are the <strong>orthogonal spectral projectors</strong>:</p>
+<p>$$
+P_k^2=P_k,\qquad P_kP_l=\delta_{kl}P_k,\qquad \sum_kP_k=I,\qquad P_k^*=P_k .
+$$</p>
+<p>The projectors are polynomials in $A$ (the Lagrange interpolation at the spectrum), and they give the <strong>functional calculus</strong> $f(A)=\sum_kf(\lambda_k)P_k$ for every continuous function $f$ on the spectrum. The <strong>operator norm</strong> of a Hermitian matrix is its spectral radius,</p>
+<p>$$
+\|A\|_{\mathrm{op}}=\max_k|\lambda_k|,
+$$</p>
+<p>and the <strong>positive semidefinite order</strong> is read on the eigenvalues: $A\ge0$ iff all $\lambda_k\ge0$. The square root $A^{1/2}=\sum_k\sqrt{\lambda_k}P_k$ and the absolute value $|A|=(A^*A)^{1/2}$ follow.</p>
+<p>The article proves the Hermitian spectral theorem by the eigenvector induction, constructs the spectral projectors, and develops the operator norm, the positive semidefinite order and the functional calculus. It then treats the <strong>normal</strong> case (the unitary matrices, including the root $H=\sum_k\zeta_kE_{kk}$) and the <strong>general</strong> case: a matrix with simple spectrum has Lagrange projectors, but they are not orthogonal unless the matrix is normal for the standard form. The distinction is the difference between the algebraic spectral decomposition of the root and the Hilbert-space spectral theorem.</p>
+<p>The article assumes the Hermitian form, the Frobenius form and the trace. It uses the determinant and the characteristic polynomial; it does not use the Jordan form beyond the existence of eigenvalues. The polar decomposition and the singular value decomposition are the next article.</p>
+<h2 id="the-spectral-theorem-for-hermitian-matrices">The Spectral Theorem for Hermitian Matrices</h2>
+<h3 id="eigenvalues-and-eigenvectors">Eigenvalues and Eigenvectors</h3>
+<p><strong>Theorem.</strong> Let $A\in M_5(\mathbb{C})$ be Hermitian, $A^*=A$. Then every eigenvalue of $A$ is real.</p>
+<p><strong>Proof.</strong> Let $Ax=\lambda x$ with $x\ne0$. Then</p>
+<p>$$
+\lambda\|x\|^2=\langle x,Ax\rangle=\langle Ax,x\rangle=\bar\lambda\|x\|^2,
+$$</p>
+<p>because $A$ is Hermitian and the form is conjugate-symmetric. Since $\|x\|^2>0$, $\lambda=\bar\lambda$, so $\lambda\in\mathbb{R}$.</p>
+<p><strong>Corollary.</strong> The characteristic polynomial of a Hermitian matrix has real coefficients and real roots. The trace and the determinant are real.</p>
+<p><strong>Proof.</strong> The eigenvalues are real; the coefficients are the elementary symmetric functions of the eigenvalues, hence real; the trace is the sum and the determinant the product.</p>
+<p><strong>Theorem.</strong> Eigenvectors of a Hermitian matrix for distinct eigenvalues are orthogonal.</p>
+<p><strong>Proof.</strong> Let $Ax=\lambda x$, $Ay=\mu y$ with $\lambda\ne\mu$. Then</p>
+<p>$$
+\lambda\langle x,y\rangle=\langle Ax,y\rangle=\langle x,Ay\rangle=\mu\langle x,y\rangle,
+$$</p>
+<p>so $(\lambda-\mu)\langle x,y\rangle=0$, and $\langle x,y\rangle=0$.</p>
+<h3 id="the-eigenvector-induction">The Eigenvector Induction</h3>
+<p><strong>Theorem (spectral theorem, Hermitian case).</strong> A Hermitian matrix $A\in M_5(\mathbb{C})$ has an orthonormal basis of eigenvectors, and real eigenvalues.</p>
+<p><strong>Proof.</strong> The characteristic polynomial has a complex root $\lambda$, hence an eigenvector $x\ne0$; by the first theorem $\lambda$ is real. Normalize $x$. The orthogonal complement $x^\perp$ is invariant under $A$: if $\langle w,x\rangle=0$, then</p>
+<p>$$
+\langle Aw,x\rangle=\langle w,Ax\rangle=\lambda\langle w,x\rangle=0 .
+$$</p>
+<p>The restriction of $A$ to $x^\perp\cong\mathbb{C}^4$ is Hermitian, so by induction it has an orthonormal basis of eigenvectors. Together with $x$, this gives an orthonormal basis of $\mathbb{C}^5$.</p>
+<p><strong>Corollary.</strong> $A$ is unitarily diagonalizable: $A=UDU^*$ with $U$ unitary and $D=\operatorname{diag}(\lambda_1,\dots,\lambda_5)$ real.</p>
+<p><strong>Proof.</strong> The orthonormal eigenbasis is the columns of $U$; the diagonal entries are the eigenvalues.</p>
+<p><strong>Corollary.</strong> The eigenspaces of $A$ are mutually orthogonal and span $\mathbb{C}^5$; the orthogonal projection onto an eigenspace is a polynomial in $A$.</p>
+<p><strong>Proof.</strong> The eigenspaces are the spans of the orthonormal eigenvectors; the projection is the Lagrange polynomial evaluated at $A$.</p>
+<h3 id="the-spectral-decomposition">The Spectral Decomposition</h3>
+<p><strong>Theorem.</strong> A Hermitian matrix $A$ has the spectral decomposition</p>
+<p>$$
+A=\sum_{k=1}^{r}\lambda_kP_k,
+$$</p>
+<p>where $\lambda_1,\dots,\lambda_r$ are the distinct eigenvalues, $P_k$ is the orthogonal projection onto the $\lambda_k$-eigenspace, and</p>
+<p>$$
+P_kP_l=\delta_{kl}P_k,\qquad \sum_kP_k=I,\qquad P_k^*=P_k,\qquad AP_k=\lambda_kP_k .
+$$</p>
+<p><strong>Proof.</strong> The spectral theorem gives the orthonormal eigenbasis; group the eigenvectors by eigenvalue; $P_k$ is the sum of the rank-one projections onto the basis vectors of the $\lambda_k$-eigenspace. The identities follow from the orthonormality; $P_k^*=P_k$ is the orthogonality of the projection.</p>
+<p><strong>Corollary.</strong> The rank of $P_k$ is the multiplicity $m_k$ of $\lambda_k$; the trace of $P_k$ is $m_k$; the trace of $A$ is $\sum_km_k\lambda_k$.</p>
+<p><strong>Proof.</strong> The trace of an orthogonal projection is its rank, the dimension of the eigenspace; the trace of $A$ is the sum of the eigenvalues with multiplicity.</p>
+<p><strong>Corollary.</strong> If the spectrum is simple, the projectors are rank one and are the Lagrange projectors</p>
+<p>$$
+P_k=\prod_{l\ne k}\frac{A-\lambda_lI}{\lambda_k-\lambda_l}.
+$$</p>
+<p><strong>Proof.</strong> The Lagrange polynomial is $1$ at $\lambda_k$ and $0$ at the other eigenvalues; evaluated at $A$, it is the spectral projector.</p>
+<h2 id="the-spectral-projectors">The Spectral Projectors</h2>
+<h3 id="the-lagrange-projectors">The Lagrange Projectors</h3>
+<p><strong>Definition.</strong> For a matrix $A$ with simple spectrum $\lambda_1,\dots,\lambda_5$, the <strong>Lagrange projectors</strong> are</p>
+<p>$$
+P_k=\prod_{l\ne k}\frac{A-\lambda_lI}{\lambda_k-\lambda_l}.
+$$</p>
+<p><strong>Theorem.</strong> The Lagrange projectors are idempotent, orthogonal and complete:</p>
+<p>$$
+P_k^2=P_k,\qquad P_kP_l=\delta_{kl}P_k,\qquad \sum_kP_k=I,\qquad A=\sum_k\lambda_kP_k .
+$$</p>
+<p>They are polynomial in $A$ of degree $4$, with coefficients rational in the eigenvalues.</p>
+<p><strong>Proof.</strong> The Lagrange polynomial $L_k(t)=\prod_{l\ne k}(t-\lambda_l)/(\lambda_k-\lambda_l)$ satisfies $L_k(\lambda_j)=\delta_{kj}$; the polynomial identities at the five distinct eigenvalues give the projector identities after evaluating at $A$. The degree is $4$; the coefficients are rational in the $\lambda_k$.</p>
+<p><strong>Corollary.</strong> The Lagrange projectors are the spectral projectors of the algebra for any simple spectrum. They are not necessarily self-adjoint: $P_k^*=P_k$ iff $A$ is normal for the standard form.</p>
+<p><strong>Proof.</strong> The projectors are determined by the spectral decomposition; the self-adjointness is the orthogonality of the spectral projections, which holds exactly when the eigenvectors are orthogonal, i.e., when $A$ is normal.</p>
+<h3 id="the-orthogonal-projectors">The Orthogonal Projectors</h3>
+<p><strong>Proposition.</strong> For a Hermitian $A$, the Lagrange projectors are self-adjoint and are the orthogonal projections onto the eigenspaces.</p>
+<p><strong>Proof.</strong> The eigenvectors of a Hermitian matrix are orthogonal; the Lagrange projector is the projection onto the eigenspace along the sum of the other eigenspaces, which is the orthogonal projection because the eigenspaces are orthogonal.</p>
+<p><strong>Corollary.</strong> The spectral projectors of a Hermitian matrix are the orthogonal projections of the Hilbert space; they satisfy $P_k^*=P_k$ and $\|P_k\|_{\mathrm{op}}=1$ for a nonzero eigenspace.</p>
+<p><strong>Proof.</strong> An orthogonal projection has norm $1$ unless it is zero; the eigenspaces are nonzero by definition.</p>
+<h3 id="the-root-versus-the-hermitian-case">The Root Versus the Hermitian Case</h3>
+<p><strong>Proposition.</strong> The standard root $H=\sum_k\zeta_kE_{kk}$ is unitary, hence normal; its spectral projectors are $E_{kk}$, and they are orthogonal for the standard Hermitian form. A general conjugate $gHg^{-1}$ has spectral projectors $gE_{kk}g^{-1}$, which are idempotent but not self-adjoint unless the columns of $g$ are mutually orthogonal.</p>
+<p><strong>Proof.</strong> $H$ is diagonal with entries of modulus $1$, so $H^*H=I$; it is normal. The spectral projectors of a diagonal matrix are the diagonal units $E_{kk}$, which are orthogonal. Conjugation sends the projectors to $gE_{kk}g^{-1}$; this is self-adjoint iff $gE_{kk}g^{-1}=g^{-*}E_{kk}g^*$ for all $k$, which holds iff $g^*g$ is diagonal, i.e., the columns of $g$ are mutually orthogonal.</p>
+<p><strong>Corollary.</strong> The root orbit has a distinguished point $H$ at which the spectral projectors are orthogonal; at a general point, the projectors are the conjugate idempotents and need not be orthogonal for the standard form. The algebraic spectral decomposition is gauge-covariant; the Hilbert-space orthogonality is not.</p>
+<p><strong>Proof.</strong> The conjugation by $g$ is the gauge; it preserves the idempotent identities but not, in general, the self-adjointness. The standard point $H$ is the diagonal representative.</p>
+<p><strong>Remark.</strong> <strong>The Lagrange projectors and the orthogonal spectral projectors are the same only for normal matrices.</strong> The root $H$ is unitary, so at the standard point they coincide with $E_{kk}$; a general matrix with simple spectrum has Lagrange projectors that are not orthogonal. The spectral theorem is a theorem about normal matrices; the Lagrange decomposition is a theorem about any simple spectrum. The two must not be conflated.</p>
+<h2 id="the-normal-case">The Normal Case</h2>
+<h3 id="unitary-diagonalization">Unitary Diagonalization</h3>
+<p><strong>Theorem.</strong> A matrix $A$ is normal, $A^*A=AA^*$, if and only if it is unitarily diagonalizable: $A=UDU^*$ with $U$ unitary and $D$ diagonal.</p>
+<p><strong>Proof.</strong> If $A=UDU^*$, then $A^*A=UD^*DU^*=UDD^*U^*=AA^*$. Conversely, if $A$ is normal, write $A=B+iC$ with $B=(A+A^*)/2$ and $C=(A-A^*)/(2i)$ Hermitian. The normality is equivalent to $[B,C]=0$; commuting Hermitian matrices are simultaneously diagonalizable by a unitary matrix (apply the Hermitian spectral theorem on each eigenspace of $B$, where $C$ acts Hermitian). Then $A$ is diagonal in the common eigenbasis.</p>
+<p><strong>Corollary.</strong> The eigenvalues of a normal matrix are complex; the eigenvectors are orthogonal; the spectral projectors are orthogonal.</p>
+<p><strong>Proof.</strong> The unitary diagonalization gives an orthonormal eigenbasis; the eigenspaces are orthogonal; the projections are self-adjoint.</p>
+<p><strong>Corollary.</strong> The root $H$ is normal (unitary), and the spectral theorem applies to it at the standard point. The general element of the root orbit is diagonalizable but need not be normal for the standard form.</p>
+<p><strong>Proof.</strong> $H$ is unitary; a general conjugate $gHg^{-1}$ is diagonalizable. It is normal for the standard form when the eigenbasis is orthonormal, i.e., when the columns of $g$ are mutually orthogonal; this fails for a general $g$.</p>
+<h3 id="the-spectral-measure">The Spectral Measure</h3>
+<p><strong>Definition.</strong> For a normal $A$, the <strong>spectral measure</strong> is the projection-valued measure on the finite spectrum,</p>
+<p>$$
+E(\Omega)=\sum_{\lambda_k\in\Omega}P_k,
+$$</p>
+<p>for a subset $\Omega$ of the spectrum.</p>
+<p><strong>Proposition.</strong> $E$ is multiplicative, $E(\Omega\cap\Omega')=E(\Omega)E(\Omega')$, and $A=\sum_k\lambda_kE(\{\lambda_k\})$. The functional calculus is</p>
+<p>$$
+f(A)=\sum_kf(\lambda_k)P_k=\int f(\lambda)\,dE(\lambda).
+$$</p>
+<p><strong>Proof.</strong> The projectors are orthogonal; the sum over the eigenvalues in $\Omega$ is the projection onto the sum of the corresponding eigenspaces; the identities are the finite-dimensional spectral integral.</p>
+<p><strong>Corollary.</strong> The spectral measure gives the spectral decomposition of every normal matrix and the functional calculus for continuous functions.</p>
+<p><strong>Proof.</strong> The finite sum is the spectral integral; the multiplicativity is the orthogonality of the projectors.</p>
+<h2 id="the-operator-norm">The Operator Norm</h2>
+<h3 id="the-spectral-radius">The Spectral Radius</h3>
+<p><strong>Definition.</strong> The <strong>spectral radius</strong> of $A$ is $\rho(A)=\max_k|\lambda_k|$, the maximum of the moduli of the eigenvalues.</p>
+<p><strong>Theorem.</strong> For a Hermitian matrix $A$, the operator norm equals the spectral radius:</p>
+<p>$$
+\|A\|_{\mathrm{op}}=\rho(A)=\max_k|\lambda_k| .
+$$</p>
+<p><strong>Proof.</strong> By the spectral decomposition, $\|Ax\|^2=\sum_k|\lambda_k|^2\|P_kx\|^2\le\rho(A)^2\|x\|^2$, so $\|A\|_{\mathrm{op}}\le\rho(A)$. For an eigenvector of the eigenvalue of maximum modulus, equality holds.</p>
+<p><strong>Corollary.</strong> For a normal matrix, the same formula holds. For a general matrix, the operator norm is the square root of the spectral radius of $A^*A$:</p>
+<p>$$
+\|A\|_{\mathrm{op}}^2=\|A^*A\|_{\mathrm{op}}=\rho(A^*A).
+$$</p>
+<p><strong>Proof.</strong> $\|Ax\|^2=\langle A^*Ax,x\rangle$; the supremum over unit $x$ is the largest eigenvalue of the Hermitian matrix $A^*A$, which is $\rho(A^*A)$.</p>
+<h3 id="the-norm-formula">The Norm Formula</h3>
+<p><strong>Proposition.</strong> The operator norm is a norm, and for Hermitian $A$ it is the maximum modulus of the eigenvalues. The Frobenius norm is $\|A\|_F=\sqrt{\sum_k\lambda_k^2}$ for Hermitian $A$.</p>
+<p><strong>Proof.</strong> The operator norm is the sup norm on the unit sphere; the Hermitian spectral decomposition gives the maximum eigenvalue modulus; the Frobenius norm is the square root of the trace of $A^2$, which is the sum of the squares of the eigenvalues.</p>
+<p><strong>Corollary.</strong> For Hermitian $A$, $\|A\|_{\mathrm{op}}\le\|A\|_F\le\sqrt5\|A\|_{\mathrm{op}}$, with equality in the second inequality iff all eigenvalues have the same modulus.</p>
+<p><strong>Proof.</strong> The first inequality is the general comparison; the second is the comparison of the max and the Euclidean norm of the five eigenvalues.</p>
+<h2 id="the-positive-semidefinite-order">The Positive Semidefinite Order</h2>
+<h3 id="the-order">The Order</h3>
+<p><strong>Definition.</strong> A Hermitian matrix $A$ is <strong>positive semidefinite</strong>, $A\ge0$, if $\langle x,Ax\rangle\ge0$ for all $x\in\mathbb{C}^5$; it is <strong>positive definite</strong> if the inequality is strict for $x\ne0$. The <strong>Loewner order</strong> is $A\ge B$ iff $A-B\ge0$.</p>
+<p><strong>Theorem.</strong> A Hermitian matrix is positive semidefinite iff all its eigenvalues are nonnegative; it is positive definite iff all its eigenvalues are positive.</p>
+<p><strong>Proof.</strong> By the spectral decomposition, $\langle x,Ax\rangle=\sum_k\lambda_k\|P_kx\|^2$. If all $\lambda_k\ge0$, the sum is nonnegative; if some $\lambda_k<0$, an eigenvector of $\lambda_k$ gives a negative value. The strict case is the same with $x\ne0$.</p>
+<p><strong>Corollary.</strong> The positive semidefinite matrices form a convex cone, closed under addition and under conjugation by invertible matrices; the positive definite matrices are its interior.</p>
+<p><strong>Proof.</strong> The conditions on the eigenvalues are convex and conjugation-invariant; the strict inequalities define the interior.</p>
+<h3 id="the-square-root">The Square Root</h3>
+<p><strong>Theorem.</strong> Every positive semidefinite $A$ has a unique positive semidefinite square root</p>
+<p>$$
+A^{1/2}=\sum_k\sqrt{\lambda_k}P_k .
+$$</p>
+<p><strong>Proof.</strong> The spectral decomposition defines $A^{1/2}$; its square is $A$; it is positive semidefinite because the square roots are nonnegative. For uniqueness, if $B^2=A$ with $B\ge0$, then $B$ commutes with $A$ and preserves its eigenspaces; on the $\lambda_k$-eigenspace, $B$ has square $\lambda_k$ and is nonnegative, so $B=\sqrt{\lambda_k}$ there.</p>
+<p><strong>Corollary.</strong> The square root is continuous in the entries and is the unique positive semidefinite solution of $X^2=A$.</p>
+<p><strong>Proof.</strong> The eigenvalues and projectors depend continuously on $A$ (for a Hermitian matrix); the square root is the spectral function.</p>
+<h3 id="the-absolute-value">The Absolute Value</h3>
+<p><strong>Definition.</strong> The <strong>absolute value</strong> of $A$ is $|A|=(A^*A)^{1/2}$.</p>
+<p><strong>Theorem.</strong> $|A|$ is positive semidefinite, and $A=U|A|$ for a partial isometry $U$; this is the polar decomposition.</p>
+<p><strong>Proof.</strong> $A^*A$ is positive semidefinite; its square root $|A|$ is positive semidefinite. Define $U$ on the range of $|A|$ by $U(|A|x)=Ax$; this is well defined and isometric because $\||A|x\|=\|Ax\|$; extend by zero on the orthogonal complement. Then $A=U|A|$ and $U$ is a partial isometry.</p>
+<p><strong>Corollary.</strong> The polar decomposition is the matrix analogue of the polar form of a complex number; the positive part is $|A|$ and the unitary part is $U$.</p>
+<p><strong>Proof.</strong> The construction is the polar decomposition; the details are in the next article.</p>
+<h2 id="the-functional-calculus">The Functional Calculus</h2>
+<h3 id="polynomials">Polynomials</h3>
+<p><strong>Proposition.</strong> For a polynomial $f(t)=\sum_{m=0}^{d}c_mt^m$ and a matrix $A$, $f(A)=\sum_{m=0}^{d}c_mA^m$. For a Hermitian $A$ with spectral decomposition, $f(A)=\sum_kf(\lambda_k)P_k$.</p>
+<p><strong>Proof.</strong> The polynomial evaluation is the algebra homomorphism; the spectral decomposition gives $A^m=\sum_k\lambda_k^mP_k$, and the sum over $m$ gives the formula.</p>
+<p><strong>Corollary.</strong> The map $f\mapsto f(A)$ is an algebra homomorphism from the polynomials to the matrices commuting with $A$.</p>
+<p><strong>Proof.</strong> $(fg)(A)=f(A)g(A)$ because the powers of $A$ commute.</p>
+<h3 id="continuous-functions">Continuous Functions</h3>
+<p><strong>Theorem.</strong> For a Hermitian $A$ and a continuous function $f$ on the spectrum, the formula</p>
+<p>$$
+f(A)=\sum_kf(\lambda_k)P_k
+$$</p>
+<p>defines a continuous functional calculus: it is an algebra homomorphism, it satisfies $\|f(A)\|_{\mathrm{op}}\le\sup_k|f(\lambda_k)|$, and it extends the polynomial calculus.</p>
+<p><strong>Proof.</strong> The formula is linear and multiplicative on the finite spectrum; the norm inequality is the spectral norm formula; a continuous function on the finite spectrum is the limit of polynomials (Weierstrass interpolation), and the map is continuous in the operator norm.</p>
+<p><strong>Corollary.</strong> The functional calculus gives the exponential $e^{tA}=\sum_ke^{t\lambda_k}P_k$, the resolvent $(A-zI)^{-1}=\sum_k(\lambda_k-z)^{-1}P_k$ for $z$ not in the spectrum, and the absolute value.</p>
+<p><strong>Proof.</strong> The functions $e^{tz}$, $(z-\lambda)^{-1}$ and $\sqrt{\lambda}$ are continuous on the spectrum; apply the calculus.</p>
+<h3 id="the-spectral-mapping">The Spectral Mapping</h3>
+<p><strong>Theorem.</strong> For a Hermitian $A$ and a continuous $f$ on the spectrum,</p>
+<p>$$
+\sigma(f(A))=f(\sigma(A)),
+$$</p>
+<p>where $\sigma$ denotes the spectrum.</p>
+<p><strong>Proof.</strong> $f(A)$ is diagonal in the eigenbasis of $A$ with diagonal entries $f(\lambda_k)$; its eigenvalues are exactly the values $f(\lambda_k)$.</p>
+<p><strong>Corollary.</strong> The spectrum of a Hermitian matrix is the set of its eigenvalues; the spectral radius is the maximum modulus; the operator norm is the maximum modulus.</p>
+<p><strong>Proof.</strong> The spectral mapping with $f(t)=t$; the norm formula.</p>
+<h2 id="summary">Summary</h2>
+<p>A Hermitian matrix $A$ has an orthonormal eigenbasis, real eigenvalues and the spectral decomposition</p>
+<p>$$
+A=\sum_k\lambda_kP_k,\qquad P_k^*=P_k,\quad P_kP_l=\delta_{kl}P_k,\quad \sum_kP_k=I .
+$$</p>
+<p>$$
+\boxed{\ \|A\|_{\mathrm{op}}=\max_k|\lambda_k|;\quad A\ge0\iff\lambda_k\ge0;\quad f(A)=\sum_kf(\lambda_k)P_k.\ }
+$$</p>
+<p>The spectral projectors are the orthogonal projections onto the eigenspaces; at a simple spectrum they are the Lagrange projectors. The operator norm of a Hermitian matrix is its spectral radius; for a general matrix it is the square root of the spectral radius of $A^*A$. The positive semidefinite order is the eigenvalue order; the square root, the absolute value and the polar decomposition follow from the functional calculus.</p>
+<p>The normal matrices are exactly the unitarily diagonalizable matrices; the root $H$ is unitary and normal at the standard point, and its projectors are orthogonal there. A general conjugate $gHg^{-1}$ has idempotent projectors $gE_{kk}g^{-1}$ that are not self-adjoint unless $g$ is unitary. The algebraic Lagrange decomposition holds for every simple spectrum; the Hilbert-space orthogonality holds only for normal matrices.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hermitian eigenvalues</td>
+<td>Real</td>
+</tr>
+<tr>
+<td>Spectral projectors</td>
+<td>Orthogonal, $P_k^*=P_k$</td>
+</tr>
+<tr>
+<td>Operator norm (Hermitian)</td>
+<td>$\max_k|\lambda_k|$</td>
+</tr>
+<tr>
+<td>Operator norm (general)</td>
+<td>$\sqrt{\rho(A^*A)}$</td>
+</tr>
+<tr>
+<td>Positive semidefinite</td>
+<td>All eigenvalues $\ge0$</td>
+</tr>
+<tr>
+<td>Square root</td>
+<td>$A^{1/2}=\sum_k\sqrt{\lambda_k}P_k$</td>
+</tr>
+<tr>
+<td>Functional calculus</td>
+<td>$f(A)=\sum_kf(\lambda_k)P_k$</td>
+</tr>
+<tr>
+<td>Normal matrices</td>
+<td>Unitarily diagonalizable</td>
+</tr>
+<tr>
+<td>Root $H$</td>
+<td>Unitary, normal, projectors $E_{kk}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^*$</td>
+<td>The conjugate transpose</td>
+</tr>
+<tr>
+<td>$P_k$</td>
+<td>The spectral projector of the eigenvalue $\lambda_k$</td>
+</tr>
+<tr>
+<td>$\rho(A)$</td>
+<td>The spectral radius</td>
+</tr>
+<tr>
+<td>$\|A\|_{\mathrm{op}}$</td>
+<td>The operator norm</td>
+</tr>
+<tr>
+<td>$A\ge0$</td>
+<td>Positive semidefinite</td>
+</tr>
+<tr>
+<td>$A^{1/2}$</td>
+<td>The positive semidefinite square root</td>
+</tr>
+<tr>
+<td>$|A|=(A^*A)^{1/2}$</td>
+<td>The absolute value</td>
+</tr>
+<tr>
+<td>$\sigma(A)$</td>
+<td>The spectrum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the spectral theorem, the spectral projectors, the operator norm and the positive semidefinite order.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the functional calculus, the Loewner order and the matrix square root.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for the spectral theorem for Hermitian and normal matrices and the unitary diagonalization.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the Hermitian form and the unitary group.</li>
+<li><a href="the-polar-decomposition-of-m5c.html">The Polar Decomposition</a>, for the absolute value and the polar decomposition.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m5c.html">The Exponential and the Lie Group</a>, for the exponential and the functional calculus.</li>
+<li><a href="the-quintic-and-the-spectral-strata-of-m5c.html">The Quintic and the Spectral Strata</a>, for the characteristic polynomial and the spectral strata.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

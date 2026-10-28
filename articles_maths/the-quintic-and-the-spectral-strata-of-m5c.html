@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quintic and the Spectral Strata of $M_5(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quintic-and-the-spectral-strata-of-math0"><strong>The Quintic and the Spectral Strata of $M_5(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The characteristic polynomial of $A\in M_5(\mathbb{C})$ is</p>
+<p>$$
+\chi_A(t)=\det(tI-A)=t^5-c_1t^4+c_2t^3-c_3t^2+c_4t-c_5,
+$$</p>
+<p>with $c_1=\operatorname{tr}A$, $c_5=\det A$, and $c_k$ the sum of the principal $k\times k$ minors. Its roots are the eigenvalues, and their multiplicity pattern is the <strong>spectral type</strong> of $A$. The <strong>spectral strata</strong> are the locally closed subsets of matrices with a fixed multiplicity pattern:</p>
+<p>$$
+1+1+1+1+1,\quad 2+1+1+1,\quad 2+2+1,\quad 3+1+1,\quad 3+2,\quad 4+1,\quad 5 .
+$$</p>
+<p>The first is the <strong>regular semisimple</strong> stratum, the open stratum of matrices with five distinct eigenvalues; the last is the scalar stratum, the unique closed stratum. The root orbit of <em>Roots of Unity and the Lagrange Idempotents</em> is the conjugacy class of a fixed root, of dimension $20$, inside the regular semisimple locus.</p>
+<p>The <strong>discriminant</strong> $\Delta$ is the polynomial in the coefficients whose vanishing is the condition of a repeated root. Its zero locus is the <strong>singular set</strong> of the characteristic polynomial map, a hypersurface of codimension $1$; its complement is the regular semisimple locus. The orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions $0,2,4,6,8,12,20$; the discriminant locus is the union of all the strata with a repeated root, including the non-semisimple matrices, and it has dimension $24$.</p>
+<p>The <strong>quintic</strong> enters because the eigenvalues of a $5\times5$ matrix are the roots of a quintic. A general quintic has no solution in radicals: the Galois group of the general quintic is $S_5$, which is not solvable (Abel–Ruffini, Galois). The eigenvalues exist by the fundamental theorem of algebra, and the Lagrange projectors exist at a simple spectrum, but neither fact produces a radical formula for the roots. The projectors are algebraic functions of the coefficients, not generally radical functions.</p>
+<p>The article assumes the matrix algebra and the root. It uses no form and no topology. The determinant and the discriminant are treated as polynomials; the singular set $\det=0$ of <em>The Forms, the Norms and the Singular Set</em> is a different locus, and it is not the discriminant.</p>
+<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
+<h3 id="the-coefficients">The Coefficients</h3>
+<p><strong>Definition.</strong> The <strong>characteristic polynomial</strong> of $A$ is $\chi_A(t)=\det(tI-A)$. Its coefficients are the elementary symmetric functions of the eigenvalues:</p>
+<p>$$
+\chi_A(t)=\prod_{k=1}^{5}(t-\lambda_k)
+=t^5-e_1t^4+e_2t^3-e_3t^2+e_4t-e_5,
+$$</p>
+<p>where $e_k$ is the $k$-th elementary symmetric function of the eigenvalues $\lambda_1,\dots,\lambda_5$.</p>
+<p><strong>Proposition (Vieta).</strong> The coefficients are</p>
+<p>$$
+e_1=\sum_k\lambda_k=\operatorname{tr}A,\qquad
+e_5=\prod_k\lambda_k=\det A,
+$$</p>
+<p>and $e_k$ is the sum of the principal $k\times k$ minors of $A$.</p>
+<p><strong>Proof.</strong> The coefficient of $t^{5-k}$ in $\det(tI-A)$ is $(-1)^k$ times the sum of the principal $k\times k$ minors, by the Laplace expansion; the eigenvalues are the roots, and the elementary symmetric functions are the coefficients by Vieta. The trace is the sum of the eigenvalues and the determinant their product.</p>
+<p><strong>Corollary.</strong> The characteristic polynomial is a polynomial map</p>
+<p>$$
+\chi:M_5(\mathbb{C})\longrightarrow\mathbb{C}^5,\qquad A\longmapsto(c_1,\dots,c_5),
+$$</p>
+<p>whose fibres are the sets of matrices with a fixed characteristic polynomial. The map is surjective: every monic quintic is the characteristic polynomial of its companion matrix.</p>
+<p><strong>Proof.</strong> The companion matrix of $t^5-c_1t^4+c_2t^3-c_3t^2+c_4t-c_5$ has the displayed polynomial as its characteristic polynomial, by the standard computation of the companion matrix.</p>
+<h3 id="the-companion-matrix">The Companion Matrix</h3>
+<p><strong>Definition.</strong> The <strong>companion matrix</strong> of the monic quintic</p>
+<p>$$
+t^5+a_4t^4+a_3t^3+a_2t^2+a_1t+a_0
+$$</p>
+<p>is</p>
+<p>$$
+C=\begin{pmatrix}
+0&0&0&0&-a_0\\
+1&0&0&0&-a_1\\
+0&1&0&0&-a_2\\
+0&0&1&0&-a_3\\
+0&0&0&1&-a_4
+\end{pmatrix}.
+$$</p>
+<p><strong>Proposition.</strong> $\chi_C(t)=t^5+a_4t^4+a_3t^3+a_2t^2+a_1t+a_0$.</p>
+<p><strong>Proof.</strong> Expand $\det(tI-C)$ along the first column, or use the standard companion-matrix identity. The matrix has the cyclic vector $e_1$, and its minimal polynomial is the displayed quintic.</p>
+<p><strong>Corollary.</strong> Every monic quintic arises as the characteristic polynomial of a $5\times5$ matrix, and the eigenvalues of $C$ are the roots of the quintic. The spectral theory of $M_5$ is therefore the spectral theory of quintics.</p>
+<p><strong>Proof.</strong> The characteristic polynomial of $C$ is the quintic; the eigenvalues are its roots.</p>
+<h2 id="the-discriminant">The Discriminant</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> The <strong>discriminant</strong> of the monic quintic is</p>
+<p>$$
+\Delta=\prod_{1\le i<j\le5}(\lambda_i-\lambda_j)^2,
+$$</p>
+<p>a symmetric polynomial in the roots, hence a polynomial in the coefficients $c_1,\dots,c_5$.</p>
+<p><strong>Proposition.</strong> $\Delta=0$ if and only if the quintic has a repeated root. The discriminant is a polynomial in the coefficients of total degree $2\cdot5-2=8$ (it is isobaric of weight $20$ when the coefficient of $t^{5-k}$ is given weight $k$).</p>
+<p><strong>Proof.</strong> The product vanishes exactly when two roots coincide. The degree statement is the standard isobaric degree of the discriminant: in the roots it is homogeneous of degree $5\cdot4=20$; in the coefficients $c_k$ of weight $k$ it has weight $20$, and its total degree is at most $2\cdot5-2=8$. The formula is classical; see the references.</p>
+<p><strong>Corollary.</strong> The discriminant is the <strong>singular set</strong> of the characteristic polynomial map: over $\Delta\ne0$ the five roots are distinct and the fibre is the conjugacy class of the companion matrix; over $\Delta=0$ two roots merge and the fibre degenerates.</p>
+<p><strong>Proof.</strong> The roots are distinct exactly when $\Delta\ne0$; the fibre over a polynomial with distinct roots is the set of matrices similar to the companion matrix, a single conjugacy class.</p>
+<h3 id="the-regular-semisimple-locus">The Regular Semisimple Locus</h3>
+<p><strong>Definition.</strong> The <strong>regular semisimple locus</strong> of $M_5$ is the open set</p>
+<p>$$
+M_5^{\mathrm{rs}}=\{A:\Delta(\chi_A)\ne0\},
+$$</p>
+<p>the matrices with five distinct eigenvalues. Its complement is the <strong>discriminant locus</strong> $\{A:\Delta(\chi_A)=0\}$.</p>
+<p><strong>Proposition.</strong> $M_5^{\mathrm{rs}}$ is a nonempty Zariski open subset of $M_5$, of dimension $25$. The discriminant locus is a hypersurface, of dimension $24$.</p>
+<p><strong>Proof.</strong> The discriminant is a nonzero polynomial on $M_5$ (the diagonal matrix with distinct eigenvalues has $\Delta\ne0$), so its nonvanishing locus is a nonempty Zariski open set; a nonzero polynomial vanishes on a hypersurface, of codimension $1$. The dimension of $M_5$ is $25$.</p>
+<p><strong>Corollary.</strong> The regular semisimple locus is dense in $M_5$; every matrix is a limit of matrices with distinct eigenvalues. The discriminant locus is the complement, and it contains every matrix with a repeated eigenvalue, semisimple or not.</p>
+<p><strong>Proof.</strong> A nonempty Zariski open subset of an irreducible variety is dense; the discriminant vanishes on every matrix with a repeated eigenvalue by definition.</p>
+<p><strong>Remark.</strong> <strong>The regular semisimple locus is not the root orbit.</strong> The locus is the union of all conjugacy classes of matrices with distinct eigenvalues, of dimension $25$; the root orbit of a fixed root $H$ is one conjugacy class inside it, of dimension $20$. The root set $PGL_5/T$ of the earlier articles is the orbit of the fixed root, not the whole open locus. The distinction is the difference between "some five distinct eigenvalues" and "the five eigenvalues $\zeta_0,\dots,\zeta_4$".</p>
+<h2 id="the-spectral-strata">The Spectral Strata</h2>
+<h3 id="the-multiplicity-partitions">The Multiplicity Partitions</h3>
+<p><strong>Definition.</strong> The <strong>spectral type</strong> of $A$ is the partition of $5$ given by the multiplicities of its distinct eigenvalues. The <strong>semisimple spectral stratum</strong> of a partition $\lambda=(m_1,\dots,m_r)$ is the conjugacy class of a diagonal matrix with distinct eigenvalues of multiplicities $m_1,\dots,m_r$.</p>
+<p><strong>Proposition.</strong> The semisimple spectral strata are the partitions</p>
+<p>$$
+(1,1,1,1,1),\quad(2,1,1,1),\quad(2,2,1),\quad(3,1,1),\quad(3,2),\quad(4,1),\quad(5),
+$$</p>
+<p>and every semisimple matrix lies in exactly one of them.</p>
+<p><strong>Proof.</strong> The multiplicities of the distinct eigenvalues sum to $5$; the partitions of $5$ are the listed seven. A semisimple matrix is diagonalizable, and its conjugacy class is determined by the eigenvalues and their multiplicities.</p>
+<h3 id="dimensions-and-codimensions">Dimensions and Codimensions</h3>
+<p><strong>Theorem.</strong> The semisimple spectral stratum of the partition $(m_1,\dots,m_r)$ has dimension</p>
+<p>$$
+\dim=25-\sum_{i=1}^{r}m_i^2,
+$$</p>
+<p>in $M_5$ and in $PGL_5$. Its codimension is $\sum_i m_i^2-5$.</p>
+<p><strong>Proof.</strong> The centraliser of a diagonal matrix with distinct eigenvalues on blocks of sizes $m_i$ is $\prod_iGL_{m_i}$, of dimension $\sum_i m_i^2$. The conjugacy class has dimension $\dim GL_5-\sum_i m_i^2=25-\sum_i m_i^2$. In $PGL_5$ the centraliser is the image of the product modulo scalars, of dimension $\sum_i m_i^2-1$, and the orbit has dimension $24-(\sum_i m_i^2-1)=25-\sum_i m_i^2$; the two dimensions agree.</p>
+<p><strong>Corollary.</strong> The dimensions and codimensions are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Partition</th>
+<th>Dimension</th>
+<th>Codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(1,1,1,1,1)$</td>
+<td>$20$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(2,1,1,1)$</td>
+<td>$18$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$(2,2,1)$</td>
+<td>$16$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$(3,1,1)$</td>
+<td>$14$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$(3,2)$</td>
+<td>$12$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$(4,1)$</td>
+<td>$8$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>$(5)$</td>
+<td>$0$</td>
+<td>$20$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Evaluate $25-\sum m_i^2$: for $1^5$, $25-5=20$; for $2,1,1,1$, $25-7=18$; for $2,2,1$, $25-9=16$; for $3,1,1$, $25-11=14$; for $3,2$, $25-13=12$; for $4,1$, $25-17=8$; for $5$, $25-25=0$. The codimension is $\sum m_i^2-5$.</p>
+<h3 id="the-closure-order">The Closure Order</h3>
+<p><strong>Proposition.</strong> The closure of the stratum of $\lambda$ contains the stratum of $\mu$ if and only if $\lambda$ is a coarsening of $\mu$ (equivalently, $\mu$ refines $\lambda$). In particular the regular stratum $(1,1,1,1,1)$ is open and dense, and the scalar stratum $(5)$ is the unique closed stratum.</p>
+<p><strong>Proof.</strong> A diagonal matrix with eigenvalue multiplicities $\mu$ can be deformed to one with multiplicities $\lambda$ by letting groups of eigenvalues coalesce; the multiplicities can only merge under a limit, never split. The regular stratum is open because the discriminant is nonzero; the scalar stratum is a single point, hence closed.</p>
+<p><strong>Corollary.</strong> The semisimple spectral strata form a stratification of the semisimple locus, with the refinement order. The root orbit $(1^5)$ is the open stratum; the strata $(2,1,1,1)$ and the others lie in its closure.</p>
+<p><strong>Proof.</strong> The closure order is the refinement order of partitions; the open stratum is the finest partition, and every other partition is a coarsening of it.</p>
+<p><strong>Remark.</strong> <strong>The discriminant locus is larger than the union of the non-regular semisimple orbits.</strong> The largest semisimple non-regular orbit has dimension $18$ (the orbit $(2,1,1,1)$), and the union of the semisimple strata with a repeated eigenvalue has dimension $22$ (the orbit plus the four eigenvalue parameters); the discriminant locus also contains the non-semisimple matrices, and it is the hypersurface of dimension $24$. The semisimple strata are the smooth pieces of the <strong>semisimple</strong> part; the full discriminant is their closure plus the non-semisimple orbits.</p>
+<h2 id="the-quintic">The Quintic</h2>
+<h3 id="the-general-quintic">The General Quintic</h3>
+<p><strong>Theorem (Abel–Ruffini, Galois).</strong> A general quintic</p>
+<p>$$
+t^5+a_4t^4+a_3t^3+a_2t^2+a_1t+a_0=0
+$$</p>
+<p>has no solution in radicals. Its Galois group over the field of rational functions of the coefficients is $S_5$, which is not solvable.</p>
+<p><strong>Proof.</strong> The Galois group of the general quintic is $S_5$; a solvable Galois group is necessary for solvability by radicals; $S_5$ has the non-abelian simple subgroup $A_5$, so it is not solvable. The theorem is the Abel–Ruffini theorem; the Galois-theoretic form is due to Galois.</p>
+<p><strong>Corollary.</strong> The eigenvalues of a general $5\times5$ matrix are not radical functions of the matrix entries: no expression built from the entries by $+,-,\times,\div$ and $k$-th roots gives the eigenvalues for all matrices.</p>
+<p><strong>Proof.</strong> The eigenvalues of the companion matrix are the roots of the quintic; a radical formula for the eigenvalues of all matrices would give a radical solution of the general quintic.</p>
+<h3 id="the-lagrange-projectors">The Lagrange Projectors</h3>
+<p><strong>Theorem.</strong> Let $H$ be a matrix with simple spectrum $\zeta_0,\dots,\zeta_4$. The Lagrange projectors</p>
+<p>$$
+P_k=\prod_{l\ne k}\frac{H-\zeta_lI}{\zeta_k-\zeta_l},\qquad k=0,\dots,4,
+$$</p>
+<p>are well defined, idempotent, orthogonal and complete:</p>
+<p>$$
+P_k^2=P_k,\qquad P_kP_l=\delta_{kl}P_k,\qquad \sum_kP_k=I,\qquad H=\sum_k\zeta_kP_k .
+$$</p>
+<p><strong>Proof.</strong> The polynomial $\prod_{l\ne k}(t-\zeta_l)/(\zeta_k-\zeta_l)$ is the Lagrange interpolating polynomial for the function that is $1$ at $\zeta_k$ and $0$ at the other $\zeta_l$. Evaluated at $H$, it gives the spectral projector onto the $\zeta_k$-eigenspace; the identities follow from the polynomial identities at the five distinct points.</p>
+<p><strong>Corollary.</strong> The projectors exist for every simple spectrum, independently of the solvability of the quintic. They are polynomial in $H$ of degree $4$, with coefficients that are rational functions of the eigenvalues; their entries are algebraic functions of the entries of $H$, not generally radical functions.</p>
+<p><strong>Proof.</strong> The Lagrange polynomial has degree $4$ and coefficients rational in the $\zeta_k$; substituting $H$ gives a polynomial of degree $4$ in $H$. The eigenvalues are algebraic functions of the entries (the roots of the characteristic polynomial), and the projectors are rational functions of $H$ and the eigenvalues; the composition is algebraic, not generally radical.</p>
+<p><strong>Remark.</strong> <strong>The existence of the projectors is not a radical solution of the quintic.</strong> The projectors are the spectral decomposition of a matrix whose eigenvalues are given; they presuppose the roots. The theorem that they exist at a simple spectrum is a theorem of linear algebra, valid for every matrix with distinct eigenvalues, and it says nothing about expressing the roots in radicals. The Galois obstruction is to the radical expression of the eigenvalues, not to the spectral decomposition.</p>
+<h3 id="the-galois-action">The Galois Action</h3>
+<p><strong>Proposition.</strong> The Galois group of the characteristic polynomial acts on the five eigenvalues, hence on the five Lagrange projectors, by permutation. For a general quintic the action is the full symmetric group $S_5$.</p>
+<p><strong>Proof.</strong> An automorphism of the splitting field permutes the roots and hence the projectors $P_k$, which are labelled by the roots. For a general quintic the Galois group is $S_5$.</p>
+<p><strong>Corollary.</strong> The projectors are permuted transitively by the Galois group of a general quintic; no single projector is defined over the field of coefficients. The <strong>set</strong> of five projectors is Galois-invariant, but the individual projector is not.</p>
+<p><strong>Proof.</strong> $S_5$ acts transitively on the five roots; the projectors are labelled by the roots; a projector fixed by the whole group would correspond to a root fixed by the whole group, which does not exist for a general quintic.</p>
+<h2 id="the-spectral-strata-of-math180">The Spectral Strata of $M_5$</h2>
+<h3 id="the-characteristic-map">The Characteristic Map</h3>
+<p><strong>Proposition.</strong> The characteristic map $\chi:M_5\to\mathbb{C}^5$ is surjective, and its fibre over a polynomial with distinct roots is the conjugacy class of the companion matrix, of dimension $20$. The fibre over a polynomial with a repeated root is larger, and the discriminant locus is the preimage of the discriminant hypersurface in $\mathbb{C}^5$.</p>
+<p><strong>Proof.</strong> Surjectivity is the companion matrix. Over a polynomial with distinct roots, every matrix with that characteristic polynomial is diagonalizable with the five distinct eigenvalues, hence conjugate to the diagonal matrix, hence to the companion matrix; the conjugacy class has dimension $20$. Over a repeated root, the fibre contains matrices with different Jordan types and has larger dimension.</p>
+<p><strong>Corollary.</strong> The regular semisimple locus is the preimage of the complement of the discriminant; its dimension is $25$, and the discriminant locus has dimension $24$.</p>
+<p><strong>Proof.</strong> The complement of the discriminant is open in $\mathbb{C}^5$, and its preimage is open in $M_5$; the discriminant hypersurface has codimension $1$, and its preimage has codimension $1$ because the characteristic map is dominant.</p>
+<h3 id="the-strata-in-the-algebra">The Strata in the Algebra</h3>
+<p><strong>Proposition.</strong> The semisimple spectral stratum of the partition $(m_1,\dots,m_r)$ is the union of the conjugacy classes of diagonal matrices with those multiplicities; its dimension is $25-\sum m_i^2$. The <strong>spectral stratum</strong> of the characteristic polynomial with the same multiplicity pattern is the preimage of the corresponding coefficient stratum, of dimension $25-(5-r)=20+r$.</p>
+<p><strong>Proof.</strong> The orbit dimension is the centraliser computation. The coefficient stratum of a polynomial with $r$ distinct roots has codimension $5-r$ in $\mathbb{C}^5$ (each merging of two roots imposes one condition); its preimage under the dominant characteristic map has the same codimension, hence dimension $25-(5-r)=20+r$.</p>
+<p><strong>Corollary.</strong> The two stratifications are different:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Partition</th>
+<th>Orbit dimension</th>
+<th>Characteristic-stratum dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(1,1,1,1,1)$</td>
+<td>$20$</td>
+<td>$25$</td>
+</tr>
+<tr>
+<td>$(2,1,1,1)$</td>
+<td>$18$</td>
+<td>$24$</td>
+</tr>
+<tr>
+<td>$(2,2,1)$</td>
+<td>$16$</td>
+<td>$23$</td>
+</tr>
+<tr>
+<td>$(3,1,1)$</td>
+<td>$14$</td>
+<td>$23$</td>
+</tr>
+<tr>
+<td>$(3,2)$</td>
+<td>$12$</td>
+<td>$22$</td>
+</tr>
+<tr>
+<td>$(4,1)$</td>
+<td>$8$</td>
+<td>$22$</td>
+</tr>
+<tr>
+<td>$(5)$</td>
+<td>$0$</td>
+<td>$21$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The orbit dimensions are $25-\sum m_i^2$; the characteristic-stratum dimensions are $20+r$, with $r$ the number of parts. Evaluate for the seven partitions.</p>
+<p><strong>Remark.</strong> <strong>The root orbit is the orbit stratum $(1^5)$, of dimension $20$; the regular semisimple locus is the characteristic stratum $(1^5)$, of dimension $25$.</strong> The first is the conjugacy class of the fixed root; the second is the open set of all matrices with distinct eigenvalues. The article uses the orbit strata for the spectral types and the characteristic strata for the discriminant; the two tables are not the same, and the difference is the dimension of the eigenvalue parameters.</p>
+<h2 id="summary">Summary</h2>
+<p>The characteristic polynomial of $A\in M_5(\mathbb{C})$ is a monic quintic, with the coefficients $c_1=\operatorname{tr}A$, $c_5=\det A$ and $c_k$ the principal minors. The discriminant $\Delta=\prod_{i<j}(\lambda_i-\lambda_j)^2$ vanishes exactly on the matrices with a repeated eigenvalue; its zero locus is the discriminant hypersurface of dimension $24$, and its complement is the regular semisimple locus of dimension $25$.</p>
+<p>$$
+\boxed{\ \text{The spectral types are }1^5,\,2\,1^3,\,2^2\,1,\,3\,1^2,\,3\,2,\,4\,1,\,5;\quad \text{the root orbit }1^5\text{ has dimension }20.\ }
+$$</p>
+<p>The semisimple orbit strata have dimensions $20,18,16,14,12,8,0$ and codimensions $0,2,4,6,8,12,20$; the characteristic strata have dimensions $25,24,23,23,22,22,21$. The root orbit is the orbit of the fixed root; the regular semisimple locus is the open characteristic stratum.</p>
+<p>A general quintic has no radical solution: its Galois group is $S_5$, not solvable. The eigenvalues exist by the fundamental theorem of algebra; the Lagrange projectors exist at a simple spectrum and are polynomial in $H$; neither fact gives a radical formula for the roots. The Galois group permutes the five projectors, and for a general quintic the action is transitive.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Characteristic polynomial</td>
+<td>Monic quintic, $\chi_A(t)=\det(tI-A)$</td>
+</tr>
+<tr>
+<td>Trace</td>
+<td>$c_1=\sum\lambda_k$</td>
+</tr>
+<tr>
+<td>Determinant</td>
+<td>$c_5=\prod\lambda_k$</td>
+</tr>
+<tr>
+<td>Discriminant</td>
+<td>$\Delta=\prod_{i<j}(\lambda_i-\lambda_j)^2$</td>
+</tr>
+<tr>
+<td>Regular semisimple locus</td>
+<td>$\Delta\ne0$, dimension $25$</td>
+</tr>
+<tr>
+<td>Discriminant locus</td>
+<td>$\Delta=0$, dimension $24$</td>
+</tr>
+<tr>
+<td>Root orbit</td>
+<td>$1^5$, dimension $20$</td>
+</tr>
+<tr>
+<td>General quintic</td>
+<td>No radical solution, Galois group $S_5$</td>
+</tr>
+<tr>
+<td>Lagrange projectors</td>
+<td>Exist at a simple spectrum, polynomial in $H$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi_A(t)$</td>
+<td>The characteristic polynomial</td>
+</tr>
+<tr>
+<td>$c_k$</td>
+<td>The coefficient of $t^{5-k}$, up to sign</td>
+</tr>
+<tr>
+<td>$\lambda_1,\dots,\lambda_5$</td>
+<td>The eigenvalues</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>The discriminant</td>
+</tr>
+<tr>
+<td>$M_5^{\mathrm{rs}}$</td>
+<td>The regular semisimple locus, $\Delta\ne0$</td>
+</tr>
+<tr>
+<td>$(m_1,\dots,m_r)$</td>
+<td>A spectral type, a partition of $5$</td>
+</tr>
+<tr>
+<td>$P_k$</td>
+<td>The Lagrange projector of the eigenvalue $\zeta_k$</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>The companion matrix of a quintic</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Israel M. Gelfand, Mikhail M. Kapranov and Andrei V. Zelevinsky, <em>Discriminants, Resultants, and Multidimensional Determinants</em> (Birkhäuser, 1994), for the discriminant, its degree and the stratification of the polynomial space.</li>
+<li>Jean-Pierre Serre, <em>Topics in Galois Theory</em> (Jones and Bartlett, 1992), for the inverse Galois problem, the group $S_5$ and the general quintic.</li>
+<li>Ian Stewart, <em>Galois Theory</em> (Chapman and Hall, fourth edition, 2015), for the Abel–Ruffini theorem and the solvability of the quintic.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the characteristic polynomial, the principal minors, the companion matrix and the discriminant.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m5c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root, its simple spectrum and the projectors.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m5c.html">The Element, the Coordinates and the Trace</a>, for the characteristic polynomial, the trace and the Jordan decomposition.</li>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m5c.html">The Forms, the Norms and the Singular Set</a>, for the singular set $\det=0$ and its difference from the discriminant.</li>
+<li><a href="the-topology-of-m5c.html">The Topology of $M_5(\mathbb{C})$</a>, for the topology of the discriminant complement and the strata.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

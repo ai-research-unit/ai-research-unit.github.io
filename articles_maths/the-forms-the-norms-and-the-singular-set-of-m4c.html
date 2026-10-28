@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Forms, the Norms and the Singular Set — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-forms-the-norms-and-the-singular-set"><strong>The Forms, the Norms and the Singular Set</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The full matrix algebra carries a positive definite trace form, three unitarily invariant norms, and the determinantal singular set $\{\det=0\}$ of real codimension two; it has no null cone.</strong> The trace form is $\langle A,B\rangle=\operatorname{tr}(A^*B)$; the norms are the Frobenius, operator and nuclear norms, read from the singular values; the singular set is a complex hypersurface of complex dimension $15$ and real dimension $30$. The zero divisors are the singular matrices, not the isotropic vectors of a form.</p>
+<p>The article defines the trace form and the three norms, proves the norm inequalities, describes the determinant and the singular set, stratifies the singular set by rank with the dimension of each stratum, and compares the definite case with the null cone of the biquaternion algebra and its link.</p>
+<p>The involution and the positive definite form are <em>The Involution and the Hermitian Structure</em>; the polar decomposition is <em>The Polar Decomposition</em>; the rank-one determinantal variety is <em>Rank-One Matrices and the Determinantal Variety</em>; the biquaternion null cone is <em>$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety</em>.</p>
+<h2 id="the-forms">The Forms</h2>
+<p><strong>The trace form.</strong> The <strong>Hermitian trace form</strong> is</p>
+<p>$$
+\langle A,B\rangle=\operatorname{tr}(A^*B).
+$$</p>
+<p>It is positive definite:</p>
+<p>$$
+\langle A,A\rangle=\sum_{i,j=1}^{4}\lvert A_{ij}\rvert^2,
+$$</p>
+<p>with equality only for $A=0$. It is the form of <em>The Involution and the Hermitian Structure</em>, and it is the only positive definite form used in this article.</p>
+<p><strong>The trace pairing.</strong> The <strong>bilinear trace pairing</strong> is</p>
+<p>$$
+\beta(A,B)=\operatorname{tr}(AB).
+$$</p>
+<p>It is symmetric, complex-bilinear and indefinite. It is not the Hermitian form; it agrees with it on the real symmetric matrices but not elsewhere. It is the pairing of <em>The Element, the Coordinates and the Trace</em>.</p>
+<p><strong>The Killing form.</strong> On the traceless subalgebra,</p>
+<p>$$
+K(X,Y)=8\operatorname{tr}(XY)=8\beta(X,Y),
+$$</p>
+<p>which is the Killing form of $\mathfrak{sl}_4(\mathbb{C})$. It is invariant and non-degenerate on $\mathfrak{sl}_4$, and it is negative definite on the compact real form $\mathfrak{su}(4)$.</p>
+<p><strong>The determinant.</strong> The determinant is not a form and not a norm. It is a multiplicative polynomial of degree four:</p>
+<p>$$
+\det(AB)=\det A\det B,\qquad
+\det(\lambda A)=\lambda^4\det A.
+$$</p>
+<p>Its modulus is the product of the singular values, and it vanishes exactly on the singular set.</p>
+<h2 id="the-three-norms">The Three Norms</h2>
+<p><strong>The singular values.</strong> For $A\in M_4(\mathbb{C})$, let</p>
+<p>$$
+\sigma_1\ge\sigma_2\ge\sigma_3\ge\sigma_4\ge0
+$$</p>
+<p>be the singular values, the non-negative square roots of the eigenvalues of $A^*A$.</p>
+<p><strong>The Frobenius norm.</strong></p>
+<p>$$
+\lVert A\rVert_F=\sqrt{\operatorname{tr}(A^*A)}
+=\Bigl(\sum_{k=1}^{4}\sigma_k^2\Bigr)^{1/2}
+=\Bigl(\sum_{i,j=1}^{4}\lvert A_{ij}\rvert^2\Bigr)^{1/2}.
+$$</p>
+<p>It is the Euclidean norm of the sixteen coordinates.</p>
+<p><strong>The operator norm.</strong></p>
+<p>$$
+\lVert A\rVert_{\mathrm{op}}
+=\sup_{\lVert x\rVert=1}\lVert Ax\rVert
+=\sigma_1.
+$$</p>
+<p>It is the largest singular value, the operator norm of the linear map for the Euclidean norm on $\mathbb{C}^4$.</p>
+<p><strong>The nuclear norm.</strong></p>
+<p>$$
+\lVert A\rVert_{*}=\operatorname{tr}\lvert A\rvert
+=\sum_{k=1}^{4}\sigma_k,
+\qquad
+\lvert A\rvert=\sqrt{A^*A}.
+$$</p>
+<p>It is the sum of the singular values, also called the trace norm or the Schatten $1$-norm.</p>
+<p><strong>Proposition (the norm inequalities).</strong> For every $A\in M_4(\mathbb{C})$,</p>
+<p>$$
+\lVert A\rVert_{\mathrm{op}}\le\lVert A\rVert_F\le\lVert A\rVert_{*}
+\le\sqrt{4}\,\lVert A\rVert_F
+\le4\,\lVert A\rVert_{\mathrm{op}}.
+$$</p>
+<p><strong>Proof.</strong> The first inequality is $\sigma_1\le(\sum\sigma_k^2)^{1/2}$. The second is $\sum\sigma_k^2\le(\sum\sigma_k)^2$ for non-negative numbers with cross terms. The third is the Cauchy–Schwarz inequality</p>
+<p>$$
+\sum_{k=1}^{4}\sigma_k\le\sqrt{4}\Bigl(\sum_{k=1}^{4}\sigma_k^2\Bigr)^{1/2}.
+$$</p>
+<p>The last is $\lVert A\rVert_F\le\sqrt{4}\sigma_1$, because there are four singular values each at most $\sigma_1$.</p>
+<p><strong>Unitary invariance.</strong> All three norms are invariant under left and right multiplication by unitaries:</p>
+<p>$$
+\lVert UAV\rVert=\lVert A\rVert,\qquad U,V\in U(4),
+$$</p>
+<p>for each of the three norms. The invariance follows from the fact that the singular values are unchanged by unitary multiplication.</p>
+<p><strong>Duality.</strong> The operator and nuclear norms are dual:</p>
+<p>$$
+\lVert A\rVert_{\mathrm{op}}=\sup_{\lVert B\rVert_{*}\le1}\lvert\operatorname{tr}(A^*B)\rvert,
+\qquad
+\lVert A\rVert_{*}=\sup_{\lVert B\rVert_{\mathrm{op}}\le1}\lvert\operatorname{tr}(A^*B)\rvert.
+$$</p>
+<p>The Frobenius norm is self-dual:</p>
+<p>$$
+\lVert A\rVert_F=\sup_{\lVert B\rVert_F\le1}\lvert\operatorname{tr}(A^*B)\rvert.
+$$</p>
+<p><strong>The determinant bound.</strong> The modulus of the determinant is the product of the singular values:</p>
+<p>$$
+\lvert\det A\rvert=\prod_{k=1}^{4}\sigma_k.
+$$</p>
+<p>The arithmetic–geometric mean inequality gives</p>
+<p>$$
+\lvert\det A\rvert\le\Bigl(\frac{\lVert A\rVert_{*}}{4}\Bigr)^4,
+\qquad
+\lvert\det A\rvert\le\lVert A\rVert_{\mathrm{op}}^4,
+\qquad
+\lvert\det A\rvert\le\frac{\lVert A\rVert_F^4}{16}.
+$$</p>
+<p>The determinant is not a norm: it vanishes on nonzero singular matrices, and it is not subadditive.</p>
+<p><strong>The spectral radius.</strong> The <strong>spectral radius</strong> is</p>
+<p>$$
+\rho(A)=\max_{k}\lvert\lambda_k(A)\rvert,
+$$</p>
+<p>the maximum modulus of the eigenvalues. It is not a norm: it can vanish for a nonzero nilpotent. It satisfies</p>
+<p>$$
+\rho(A)\le\lVert A\rVert_{\mathrm{op}},
+$$</p>
+<p>with equality for normal matrices. The spectral radius is the subject of <em>Spectral Theory and the Spectral Projectors</em>.</p>
+<h2 id="the-determinant-and-the-singular-set">The Determinant and the Singular Set</h2>
+<p><strong>Definition.</strong> The <strong>singular set</strong> is</p>
+<p>$$
+\Sigma=\{A\in M_4(\mathbb{C}):\det A=0\}.
+$$</p>
+<p>Its complement is the general linear group $GL_4(\mathbb{C})$.</p>
+<p><strong>Theorem.</strong> The singular set is a complex hypersurface of complex dimension $15$ and real dimension $30$, hence of real codimension $2$ in $M_4(\mathbb{C})\cong\mathbb{R}^{32}$. It is irreducible, and it is the zero locus of the irreducible polynomial $\det$.</p>
+<p><strong>Proof.</strong> The determinant is a nonzero polynomial of degree four in the sixteen entries; its zero locus is a hypersurface of complex dimension $16-1=15$. The polynomial is irreducible: it is linear in the first row and irreducible by induction, or it is the determinant of the generic matrix, which is irreducible over $\mathbb{C}$ (the determinant of a generic matrix is irreducible). The real dimension is twice the complex dimension, $30$, and the real codimension is $32-30=2$.</p>
+<p><strong>The differential.</strong> The derivative of the determinant is</p>
+<p>$$
+d(\det)_A(B)=\operatorname{tr}(\operatorname{adj}(A)B),
+$$</p>
+<p>where $\operatorname{adj}(A)$ is the adjugate matrix. The gradient of the determinant at $A$ is the adjugate, and the adjugate vanishes exactly when $\operatorname{rank}A\le2$. Hence the singular locus of the hypersurface $\Sigma$ is the set of matrices of rank at most $2$.</p>
+<p><strong>The singular locus.</strong> The determinant hypersurface is smooth at the matrices of rank $3$: there the adjugate has rank $1$ and is nonzero, so the gradient does not vanish. At rank $4$ the determinant is nonzero and the hypersurface is not present. The singular locus of $\Sigma$ is</p>
+<p>$$
+\Sigma_{\mathrm{sing}}=\{A:\operatorname{rank}A\le2\},
+$$</p>
+<p>of complex dimension $12$ and real dimension $24$.</p>
+<p><strong>The rank stratification.</strong> The rank strata are</p>
+<p>$$
+M_4^{(r)}=\{A:\operatorname{rank}A=r\},\qquad r=0,1,2,3,4.
+$$</p>
+<p>The variety of matrices of rank at most $r$ has complex dimension</p>
+<p>$$
+\dim\{A:\operatorname{rank}A\le r\}=r(2\cdot4-r)=r(8-r),
+$$</p>
+<p>and the rank-exactly-$r$ stratum has the same dimension, because the lower-rank locus has smaller dimension for $r\ge1$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rank $r$</th>
+<th>Complex dimension $r(8-r)$</th>
+<th>Real dimension</th>
+<th>Position in $\Sigma$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>the zero matrix</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$7$</td>
+<td>$14$</td>
+<td>singular locus</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$12$</td>
+<td>$24$</td>
+<td>singular locus</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$15$</td>
+<td>$30$</td>
+<td>smooth part of $\Sigma$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$16$</td>
+<td>$32$</td>
+<td>complement $GL_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof of the dimension formula.</strong> A rank-$r$ matrix is the product $UV$ with $U$ a $4\times r$ matrix of rank $r$ and $V$ an $r\times4$ matrix of rank $r$. The pair $(U,V)$ has $4r+r4=8r$ parameters, and the ambiguity is the action of $GL_r$ by $U\mapsto UG$, $V\mapsto G^{-1}V$, of dimension $r^2$. Hence the dimension is $8r-r^2=r(8-r)$. The rank-exactly-$r$ stratum is open in the rank-at-most-$r$ variety, so it has the same dimension.</p>
+<p><strong>The closure order.</strong> The closure of $M_4^{(r)}$ is the union of the strata of rank at most $r$:</p>
+<p>$$
+\overline{M_4^{(r)}}=\bigcup_{s\le r}M_4^{(s)}.
+$$</p>
+<p>The stratification is the rank stratification; it is the algebraic stratification behind the singular set and the determinantal varieties.</p>
+<p><strong>The cone structure.</strong> The singular set is a cone: if $A\in\Sigma$, then $\lambda A\in\Sigma$ for every $\lambda\in\mathbb{C}$. It is not the isotropic cone of the positive definite form; every nonzero matrix has positive Frobenius norm. The cone is the determinantal cone, not a null cone.</p>
+<h2 id="the-absence-of-a-null-cone">The Absence of a Null Cone</h2>
+<p><strong>The isotropic set.</strong> The trace form is positive definite, so</p>
+<p>$$
+\{A:\langle A,A\rangle=0\}=\{0\}.
+$$</p>
+<p>There is no nonzero isotropic vector and no null cone. The singular set $\Sigma$ is a cone in the algebraic sense, but it is not the zero set of the form: it is the zero set of the determinant.</p>
+<p><strong>The zero divisors.</strong> The zero divisors of $M_4$ are exactly the singular matrices:</p>
+<p>$$
+AB=0\quad\text{with }A,B\ne0
+\iff
+\operatorname{im}B\subseteq\ker A,
+$$</p>
+<p>which requires $\operatorname{rank}A+\operatorname{rank}B\le4$. The zero divisors form the singular set, a hypersurface, not the isotropic cone of a form.</p>
+<p><strong>The contrast with $\mathbb{B}$.</strong> The biquaternion algebra $\mathbb{B}=M_2(\mathbb{C})$ carries the quaternionic norm</p>
+<p>$$
+N(\tilde Q)=Q_t^2+B^2,
+$$</p>
+<p>which is complex-valued and has a nonzero zero set. Its zero set is the <strong>null cone</strong> of the zero divisors: the cone of nonzero elements whose norm vanishes. The regular model $M_4(\mathbb{C})_L$ has determinant equal to the square of the norm, and its singular set is that null cone. The full algebra $M_4(\mathbb{C})$ has the positive definite trace form and no null cone; its singular set is the determinantal hypersurface, which is a different object.</p>
+<p><strong>The comparison of the links.</strong> The null cone of $\mathbb{B}$ is a complex cone of complex dimension $3$ and real dimension $6$; its link in the unit sphere $S^7$ is a real quadric of dimension $5$. The singular set $\Sigma$ of $M_4$ is a complex cone of complex dimension $15$ and real dimension $30$; its link in the unit sphere $S^{31}$ is a real hypersurface of dimension $29$. The first link is a quadric; the second is the determinantal hypersurface, stratified by rank. The two cones are not homeomorphic, and the definite form of $M_4$ does not produce a null cone.</p>
+<p><strong>The regular model is not the full algebra.</strong> The regular model's determinant is the square of the biquaternion norm, and its singular set is the null cone. The full algebra's determinant is the usual $4\times4$ determinant, and its singular set is the determinantal hypersurface. The positive definite form of the full algebra is not the quaternionic norm. The two singular sets have different dimensions and different links.</p>
+<h2 id="summary">Summary</h2>
+<p>The full matrix algebra carries the positive definite trace form $\langle A,B\rangle=\operatorname{tr}(A^*B)$, the bilinear trace pairing $\beta(A,B)=\operatorname{tr}(AB)$ and the Killing form $8\beta$ on $\mathfrak{sl}_4$. The three unitarily invariant norms are the Frobenius norm $\lVert A\rVert_F=(\sum\sigma_k^2)^{1/2}$, the operator norm $\lVert A\rVert_{\mathrm{op}}=\sigma_1$ and the nuclear norm $\lVert A\rVert_*=\sum\sigma_k$, with</p>
+<p>$$
+\lVert A\rVert_{\mathrm{op}}\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F\le4\lVert A\rVert_{\mathrm{op}}.
+$$</p>
+<p>The singular set $\Sigma=\{\det=0\}$ is an irreducible complex hypersurface of complex dimension $15$ and real dimension $30$, of real codimension $2$; its smooth part is the rank-$3$ stratum, and its singular locus is the rank-at-most-$2$ variety of complex dimension $12$. The rank strata have complex dimensions $0,7,12,15,16$ for ranks $0,1,2,3,4$. The singular set is a cone in the algebraic sense, but it is not the isotropic cone of the definite form; the only isotropic vector is $0$. The biquaternion algebra, by contrast, has an indefinite norm and a genuine null cone; its link is a quadric, while the link of the $M_4$ singular set is the determinantal hypersurface.</p>
+<p>$$
+\boxed{\ \lVert A\rVert_{\mathrm{op}}\le\lVert A\rVert_F\le\lVert A\rVert_*\le2\lVert A\rVert_F,\quad \dim_\mathbb{C}\Sigma=15,\quad \dim_\mathbb{R}\Sigma=30,\quad \operatorname{codim}_\mathbb{R}\Sigma=2. }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Stratum</th>
+<th>Complex dimension</th>
+<th>Real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rank $0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Rank $1$</td>
+<td>$7$</td>
+<td>$14$</td>
+</tr>
+<tr>
+<td>Rank $2$</td>
+<td>$12$</td>
+<td>$24$</td>
+</tr>
+<tr>
+<td>Rank $3$</td>
+<td>$15$</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>Rank $4$</td>
+<td>$16$</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>Singular locus of $\Sigma$</td>
+<td>$12$</td>
+<td>$24$</td>
+</tr>
+<tr>
+<td>Smooth part of $\Sigma$</td>
+<td>$15$</td>
+<td>$30$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle A,B\rangle=\operatorname{tr}(A^*B)$</td>
+<td>the positive definite trace form</td>
+</tr>
+<tr>
+<td>$\beta(A,B)=\operatorname{tr}(AB)$</td>
+<td>the bilinear trace pairing</td>
+</tr>
+<tr>
+<td>$\sigma_1\ge\cdots\ge\sigma_4$</td>
+<td>the singular values</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert_F$</td>
+<td>the Frobenius norm</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert_{\mathrm{op}}$</td>
+<td>the operator norm</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert_*$</td>
+<td>the nuclear norm</td>
+</tr>
+<tr>
+<td>$\Sigma=\{\det=0\}$</td>
+<td>the singular set</td>
+</tr>
+<tr>
+<td>$M_4^{(r)}$</td>
+<td>the rank-$r$ stratum</td>
+</tr>
+<tr>
+<td>$\rho(A)$</td>
+<td>the spectral radius</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the singular values, the unitarily invariant norms, the determinant and the rank stratification.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the Schatten norms, the duality of the operator and nuclear norms and the spectral radius.</li>
+<li>Joe Harris, <em>Algebraic Geometry: A First Course</em> (Springer, 1992), for determinantal varieties and their dimensions.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure</a>, for the positive definite trace form.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m4c.html">The Element, the Coordinates and the Trace</a>, for the trace pairing.</li>
+<li><a href="the-polar-decomposition-of-m4c.html">The Polar Decomposition</a>, for the singular value decomposition.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors</a>, for the spectral radius and the eigenvalues.</li>
+<li><a href="m4c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety</a>, for the null cone of the regular model.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

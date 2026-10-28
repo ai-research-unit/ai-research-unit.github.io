@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Operators of the Peirce Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-operators-of-the-peirce-decomposition"><strong>The Operators of the Peirce Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The Peirce decomposition is acted on by four families of linear operators: left multiplication $L_a$, right multiplication $R_a$, the sandwich $T_{a,b}$, and the derivation $\operatorname{ad}_a$.</strong> On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $T_{a,b}$ moves both, and $\operatorname{ad}_a$ is the difference of the two. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$.</p>
+<p>The article defines the four operators, computes their matrices and their action on the Peirce corners, proves the derivation and automorphism theorems, and explains the sandwich as a map of corners. The Peirce decomposition is <em>The Peirce Decomposition</em>; the adjoint action is <em>The Adjoint Action, the Orbits and the Flag Variety</em>; the frame and the gauge are <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<h2 id="the-four-operators">The Four Operators</h2>
+<p><strong>Definitions.</strong> For $a,b\in M_4(\mathbb{C})$, define</p>
+<p>$$
+L_a:M_4\to M_4,\qquad L_a(X)=aX,
+$$</p>
+<p>$$
+R_a:M_4\to M_4,\qquad R_a(X)=Xa,
+$$</p>
+<p>$$
+T_{a,b}:M_4\to M_4,\qquad T_{a,b}(X)=aXb,
+$$</p>
+<p>$$
+\operatorname{ad}_a:M_4\to M_4,\qquad \operatorname{ad}_a(X)=[a,X]=aX-Xa.
+$$</p>
+<p>The operator $T_{a,b}$ is the <strong>sandwich</strong>; $\operatorname{ad}_a$ is the <strong>adjoint</strong> or <strong>inner derivation</strong>.</p>
+<p><strong>Proposition.</strong> The operators satisfy</p>
+<p>$$
+T_{a,b}=L_aR_b=R_bL_a,\qquad
+\operatorname{ad}_a=L_a-R_a,
+$$</p>
+<p>and</p>
+<p>$$
+L_aL_b=L_{ab},\qquad
+R_aR_b=R_{ba},\qquad
+L_aR_b=R_bL_a .
+$$</p>
+<p><strong>Proof.</strong> The identities are the associativity of the product: $a(Xb)=(aX)b$ and $(ab)X=a(bX)$, while $X(ba)=(Xb)a$. The adjoint is the difference of the left and right multiplications.</p>
+<p><strong>The matrices.</strong> Vectorise $M_4$ by columns, so that $X$ is a column of $16$ entries. Then</p>
+<p>$$
+L_a=a\otimes I_4,\qquad
+R_b=I_4\otimes b^{\mathsf T},\qquad
+T_{a,b}=a\otimes b^{\mathsf T},
+$$</p>
+<p>$$
+\operatorname{ad}_a=a\otimes I_4-I_4\otimes a^{\mathsf T}.
+$$</p>
+<p><strong>Proof.</strong> The column-vectorisation of $aX$ is $(a\otimes I)\operatorname{vec}X$, and the vectorisation of $Xb$ is $(I\otimes b^{\mathsf T})\operatorname{vec}X$. The sandwich is the composition. The adjoint is the difference.</p>
+<p><strong>The eigenvalues and the trace.</strong> The eigenvalues of $L_a$ are the eigenvalues $\lambda_1,\dots,\lambda_4$ of $a$, each with multiplicity $4$. The eigenvalues of $R_b$ are the eigenvalues $\mu_1,\dots,\mu_4$ of $b$, each with multiplicity $4$. The eigenvalues of $\operatorname{ad}_a$ are the differences $\lambda_i-\lambda_j$, $i,j=1,\dots,4$. Hence</p>
+<p>$$
+\operatorname{tr}L_a=4\operatorname{tr}a,\qquad
+\operatorname{tr}R_b=4\operatorname{tr}b,\qquad
+\operatorname{tr}\operatorname{ad}_a=0,
+$$</p>
+<p>$$
+\det L_a=(\det a)^4,\qquad
+\det R_b=(\det b)^4,\qquad
+\det T_{a,b}=(\det a\det b)^4.
+$$</p>
+<p><strong>The rank of the adjoint.</strong> The kernel of $\operatorname{ad}_a$ is the centraliser</p>
+<p>$$
+Z(a)=\{X:aX=Xa\},
+$$</p>
+<p>of dimension $\sum_i m_i^2$, where $m_i$ are the multiplicities of the distinct eigenvalues of $a$. Hence</p>
+<p>$$
+\operatorname{rank}\operatorname{ad}_a=16-\sum_i m_i^2.
+$$</p>
+<p>For a generic $a$ with four distinct eigenvalues, the centraliser is the algebra of polynomials in $a$, of dimension $4$, and the rank is $12$.</p>
+<p><strong>The rank of the sandwich.</strong> The sandwich $T_{a,b}=a\otimes b^{\mathsf T}$ has rank</p>
+<p>$$
+\operatorname{rank}T_{a,b}=\operatorname{rank}a\cdot\operatorname{rank}b.
+$$</p>
+<p>Its kernel is the set of $X$ with $aXb=0$, and its image is the set of matrices whose columns lie in $\operatorname{im}a$ and whose rows lie in $\operatorname{im}b^{\mathsf T}$.</p>
+<h2 id="the-action-on-the-matrix-units">The Action on the Matrix Units</h2>
+<p><strong>The left multiplication.</strong> On the matrix units,</p>
+<p>$$
+L_a(E_{ij})=aE_{ij}=\sum_{k=1}^{4}a_{ki}E_{kj}.
+$$</p>
+<p>The column index $j$ is fixed, and the row index is transformed by $a$. The left multiplication acts on the <strong>row index</strong> of the unit.</p>
+<p><strong>The right multiplication.</strong> On the matrix units,</p>
+<p>$$
+R_b(E_{ij})=E_{ij}b=\sum_{l=1}^{4}b_{jl}E_{il}.
+$$</p>
+<p>The row index $i$ is fixed, and the column index is transformed by $b$. The right multiplication acts on the <strong>column index</strong> of the unit.</p>
+<p><strong>The sandwich.</strong> On the matrix units,</p>
+<p>$$
+T_{a,b}(E_{ij})=aE_{ij}b=\sum_{k,l=1}^{4}a_{ki}b_{jl}E_{kl}.
+$$</p>
+<p>The coefficient of $E_{kl}$ is $a_{ki}b_{jl}$: the row index is transformed by $a$ and the column index by $b$, independently. This is the <strong>corner map</strong>: the unit $E_{ij}$ is sent to a linear combination of the units $E_{kl}$, and the coefficient factorises into a row factor and a column factor.</p>
+<p><strong>The elementary sandwich.</strong> For $a=E_{ir}$ and $b=E_{sl}$,</p>
+<p>$$
+T_{a,b}(E_{rs})=E_{ir}E_{rs}E_{sl}=E_{il}.
+$$</p>
+<p>The sandwich with two elementary matrices carries the corner $A_{rs}$ to the corner $A_{il}$:</p>
+<p>$$
+E_{ir}E_{rs}E_{sl}=E_{il}.
+$$</p>
+<p>The general sandwich is a linear combination of these elementary corner maps, with coefficients $a_{ir}b_{sl}$.</p>
+<p><strong>The corner matrix.</strong> The four-by-four grid of Peirce corners $A_{ij}=\mathbb{C}E_{ij}$ is acted on by the sandwich as</p>
+<p>$$
+A_{rs}\longmapsto\sum_{i,l}a_{ir}b_{sl}A_{il}.
+$$</p>
+<p>The row index of the corner is transformed by $a$, the column index by $b$. The sandwich is the tensor product of the two actions, and its matrix on the $16$-dimensional space of corners is $a\otimes b^{\mathsf T}$.</p>
+<p><strong>The adjoint on the units.</strong> The adjoint is</p>
+<p>$$
+\operatorname{ad}_a(E_{ij})=aE_{ij}-E_{ij}a
+=\sum_{k}a_{ki}E_{kj}-\sum_{l}a_{jl}E_{il}.
+$$</p>
+<p>The first term changes the row index, the second changes the column index; the difference is the commutator. On the diagonal units, $\operatorname{ad}_a(E_{ii})=aE_{ii}-E_{ii}a$ has zero diagonal; its off-diagonal entries are $a_{ki}$ in row $k$ and $-a_{ik}$ in column $k$.</p>
+<h2 id="the-derivations">The Derivations</h2>
+<p><strong>Definition.</strong> A <strong>derivation</strong> of $M_4$ is a linear map $D:M_4\to M_4$ with</p>
+<p>$$
+D(XY)=D(X)Y+XD(Y).
+$$</p>
+<p>The derivations form a Lie algebra $\operatorname{Der}(M_4)$ under the commutator.</p>
+<p><strong>Proposition.</strong> Every inner derivation $\operatorname{ad}_a$ is a derivation:</p>
+<p>$$
+\operatorname{ad}_a(XY)=aXY-XYa
+=(aX-Xa)Y+X(aY-Ya)
+=\operatorname{ad}_a(X)Y+X\operatorname{ad}_a(Y).
+$$</p>
+<p>The map $a\mapsto\operatorname{ad}_a$ is linear, with kernel the centre $\mathbb{C}I$, so the inner derivations form a Lie algebra isomorphic to</p>
+<p>$$
+M_4/\mathbb{C}I\cong\mathfrak{sl}_4(\mathbb{C}),
+$$</p>
+<p>of dimension $15$.</p>
+<p><strong>Theorem (inner derivations).</strong> Every derivation of $M_4(\mathbb{C})$ is inner:</p>
+<p>$$
+\operatorname{Der}(M_4)=\operatorname{ad}_{M_4}\cong\mathfrak{sl}_4(\mathbb{C}),
+\qquad
+\dim_\mathbb{C}\operatorname{Der}(M_4)=15.
+$$</p>
+<p><strong>Proof.</strong> A derivation is determined by its values on the matrix units. The inner derivations act transitively on the possible values compatible with the Leibniz rule: for any derivation $D$, the element</p>
+<p>$$
+a=\frac14\sum_{i,j=1}^{4}D(E_{ij})E_{ji}
+$$</p>
+<p>satisfies $D=\operatorname{ad}_a$. The computation is the standard proof for central simple algebras (Pierce, <em>Associative Algebras</em>, §<em>Derivations</em>). The kernel of $a\mapsto\operatorname{ad}_a$ is the centre $\mathbb{C}I$, so the image has dimension $16-1=15$, which is $\dim\mathfrak{sl}_4$.</p>
+<p><strong>There are no outer derivations.</strong> The theorem says that the outer derivation space is zero. The derivation algebra is exactly the inner one, and its dimension is $15$.</p>
+<p><strong>The Lie algebra structure.</strong> The bracket of inner derivations is</p>
+<p>$$
+[\operatorname{ad}_a,\operatorname{ad}_b]=\operatorname{ad}_{[a,b]},
+$$</p>
+<p>so the map $\mathfrak{sl}_4\to\operatorname{Der}(M_4)$ is an isomorphism of Lie algebras. The derivations act on $M_4$ by the adjoint action, and the decomposition of $M_4$ under $\mathfrak{sl}_4$ is the adjoint decomposition $1+3+5+7$ of <em>The Spin Chain and the Adjoint Decomposition</em>.</p>
+<p><strong>The biquaternion case.</strong> For $M_2(\mathbb{C})$, the same theorem gives</p>
+<p>$$
+\operatorname{Der}(M_2)\cong\mathfrak{sl}_2(\mathbb{C}),
+\qquad
+\dim=3.
+$$</p>
+<p>The inner derivations are the adjoint action of $\mathfrak{sl}_2$ on $M_2$; the kernel is the centre $\mathbb{C}I$, and the image is $\mathfrak{sl}_2$. There are no outer derivations.</p>
+<h2 id="the-automorphisms">The Automorphisms</h2>
+<p><strong>Definition.</strong> An <strong>automorphism</strong> of $M_4$ is an invertible linear map $\Phi$ with</p>
+<p>$$
+\Phi(XY)=\Phi(X)\Phi(Y).
+$$</p>
+<p>The automorphisms form the group $\operatorname{Aut}(M_4)$.</p>
+<p><strong>Theorem (Skolem–Noether).</strong> Every automorphism of $M_4(\mathbb{C})$ is inner:</p>
+<p>$$
+\operatorname{Aut}(M_4)\cong PGL_4(\mathbb{C})=GL_4(\mathbb{C})/\mathbb{C}^\times I,
+\qquad
+\dim_\mathbb{C}=15.
+$$</p>
+<p><strong>Proof.</strong> The automorphism sends the matrix units to a set of matrix units of the same type: a complete system of $4\times4$ matrix units. By the Skolem–Noether theorem for central simple algebras, any two complete systems of matrix units are conjugate by an invertible matrix. Hence $\Phi(X)=SXS^{-1}$ for some $S\in GL_4$, and the matrix $S$ is determined up to a scalar by the centre theorem. The group is $PGL_4$, of dimension $16-1=15$.</p>
+<p><strong>The inner automorphisms.</strong> The conjugation</p>
+<p>$$
+\Phi_S(X)=SXS^{-1}
+$$</p>
+<p>is an automorphism for every $S\in GL_4$. It preserves the trace, the determinant, the characteristic polynomial, the rank and the Jordan type. The kernel of $S\mapsto\Phi_S$ is the centre $\mathbb{C}^\times I$, so the automorphism group is $PGL_4$.</p>
+<p><strong>There are no outer automorphisms.</strong> For the complex algebra $M_4(\mathbb{C})$, the outer automorphism group is trivial. The "outer" operations that appear in the theory are not complex-linear automorphisms:</p>
+<ul>
+<li>the <strong>transpose</strong> $X\mapsto X^{\mathsf T}$ is an anti-automorphism, $\Phi(XY)=\Phi(Y)\Phi(X)$;</li>
+<li>the <strong>conjugate transpose</strong> $X\mapsto X^*$ is a conjugate-linear anti-automorphism;</li>
+<li>the <strong>entrywise conjugation</strong> $X\mapsto\bar X$ is a conjugate-linear automorphism.</li>
+</ul>
+<p>These are real-linear or conjugate-linear maps, not elements of $\operatorname{Aut}_\mathbb{C}(M_4)$. The real algebra $M_4(\mathbb{C})$ has the conjugation as an automorphism of the real algebra, and the transpose as an anti-automorphism; they are "outer" only in the real sense.</p>
+<p><strong>The Lie algebra.</strong> The automorphism group $PGL_4$ has Lie algebra $\mathfrak{sl}_4$, and the adjoint action of the group on $M_4$ is the exponentiation of the adjoint action of the Lie algebra. The orbit of an element is its conjugacy class; the orbit classification is <em>The Adjoint Action, the Orbits and the Flag Variety</em>.</p>
+<h2 id="the-sandwich-as-a-map-of-corners">The Sandwich as a Map of Corners</h2>
+<p><strong>The corner map.</strong> The sandwich $T_{a,b}$ is the most general linear map built from one left multiplication and one right multiplication. On the corners,</p>
+<p>$$
+T_{a,b}(A_{rs})=\sum_{i,l}a_{ir}b_{sl}A_{il}.
+$$</p>
+<p>The coefficient of $A_{il}$ is the product of the $(i,r)$ entry of $a$ and the $(s,l)$ entry of $b$. The map is the tensor product of the row action and the column action; it sends the corner $(r,s)$ to a linear combination of the corners $(i,l)$.</p>
+<p><strong>The elementary corner maps.</strong> The elementary sandwich $T_{E_{ir},E_{sl}}$ sends the corner $A_{rs}$ to the corner $A_{il}$:</p>
+<p>$$
+T_{E_{ir},E_{sl}}(A_{rs})=A_{il}.
+$$</p>
+<p>The elementary corner maps are the matrix units of the space of corner maps; the general sandwich is a linear combination with coefficients $a_{ir}b_{sl}$.</p>
+<p><strong>The inner automorphism.</strong> For $b=a^{-1}$,</p>
+<p>$$
+T_{a,a^{-1}}(X)=aXa^{-1}
+$$</p>
+<p>is the inner automorphism $\Phi_a$. On the corners, it sends $A_{rs}$ to a linear combination of the corners $A_{il}$ with coefficients $a_{ir}(a^{-1})_{sl}$. The inner automorphism preserves the trace and the determinant but not the individual corners; it permutes the spectral lines only when $a$ is diagonal in the frame.</p>
+<p><strong>The sandwich and the Peirce table.</strong> The sandwich acts on the two-sided Peirce table of <em>The Rank-Two Split</em> by transforming the row index with $a$ and the column index with $b$. For the rank-two split with $\Pi=P_+$, the sandwich with block-diagonal $a,b$ preserves the four corners; the sandwich with off-diagonal $a$ or $b$ mixes the corners. The mass block $\mathcal{B}$ is carried to the corner determined by the row of $a$ and the column of $b$.</p>
+<h2 id="summary">Summary</h2>
+<p>The four operators on $M_4$ are the left multiplication $L_a(X)=aX$, the right multiplication $R_a(X)=Xa$, the sandwich $T_{a,b}(X)=aXb$ and the adjoint $\operatorname{ad}_a(X)=[a,X]$. They satisfy $T_{a,b}=L_aR_b=R_bL_a$ and $\operatorname{ad}_a=L_a-R_a$. On the matrix units, $L_a$ moves the row index, $R_a$ moves the column index, $T_{a,b}$ moves both, and $\operatorname{ad}_a$ is the difference. The matrices are $L_a=a\otimes I$, $R_b=I\otimes b^{\mathsf T}$, $T_{a,b}=a\otimes b^{\mathsf T}$ and $\operatorname{ad}_a=a\otimes I-I\otimes a^{\mathsf T}$; the eigenvalues are the eigenvalues of $a$, of $b$, and the differences $\lambda_i-\lambda_j$. The derivations of $M_4$ are exactly the inner derivations, $\operatorname{Der}(M_4)\cong\mathfrak{sl}_4$, of dimension $15$; the automorphisms are exactly the inner automorphisms, $\operatorname{Aut}(M_4)\cong PGL_4$, of dimension $15$. There are no outer derivations and no complex-linear outer automorphisms; the transpose and the conjugations are anti-automorphisms or conjugate-linear maps. The sandwich is the corner map $A_{rs}\mapsto\sum a_{ir}b_{sl}A_{il}$; the elementary sandwich $T_{E_{ir},E_{sl}}$ carries the corner $A_{rs}$ to the corner $A_{il}$.</p>
+<p>$$
+\boxed{\ \operatorname{Der}(M_4)\cong\mathfrak{sl}_4,\ \dim=15;\qquad \operatorname{Aut}(M_4)\cong PGL_4,\ \dim=15;\qquad \operatorname{rank}\operatorname{ad}_a=16-\sum_i m_i^2. }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Matrix</th>
+<th>Action on $E_{ij}$</th>
+<th>Trace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a$</td>
+<td>$a\otimes I$</td>
+<td>row index by $a$</td>
+<td>$4\operatorname{tr}a$</td>
+</tr>
+<tr>
+<td>$R_b$</td>
+<td>$I\otimes b^{\mathsf T}$</td>
+<td>column index by $b$</td>
+<td>$4\operatorname{tr}b$</td>
+</tr>
+<tr>
+<td>$T_{a,b}$</td>
+<td>$a\otimes b^{\mathsf T}$</td>
+<td>both indices</td>
+<td>$\operatorname{tr}a\operatorname{tr}b$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_a$</td>
+<td>$a\otimes I-I\otimes a^{\mathsf T}$</td>
+<td>commutator</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a$</td>
+<td>left multiplication $X\mapsto aX$</td>
+</tr>
+<tr>
+<td>$R_a$</td>
+<td>right multiplication $X\mapsto Xa$</td>
+</tr>
+<tr>
+<td>$T_{a,b}$</td>
+<td>sandwich $X\mapsto aXb$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_a$</td>
+<td>adjoint $X\mapsto[a,X]$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(M_4)$</td>
+<td>the derivation algebra, $\cong\mathfrak{sl}_4$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(M_4)$</td>
+<td>the automorphism group, $\cong PGL_4$</td>
+</tr>
+<tr>
+<td>$A_{ij}=\mathbb{C}E_{ij}$</td>
+<td>the Peirce corner $(i,j)$</td>
+</tr>
+<tr>
+<td>$Z(a)$</td>
+<td>the centraliser of $a$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for derivations, automorphisms and the Skolem–Noether theorem.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for central simple algebras and their automorphisms.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the Kronecker product and the vectorisation of matrix equations.</li>
+<li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition</a>, for the corners and the multiplication rule.</li>
+<li><a href="the-rank-two-split-of-m4c.html">The Rank-Two Split</a>, for the two-sided Peirce table.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the conjugation action and its orbits.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m4c.html">The Spin Chain and the Adjoint Decomposition</a>, for the adjoint decomposition under $\mathfrak{sl}_4$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -80,18 +80,18 @@
 <p>$$
 \tilde H = h_t\,e_t + i\,\vec h, \qquad h_t\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$</p>
-<p>and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t')=\exp(-i\tilde Ht'/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t')=\tilde U(t')\tilde{Ϛ}(0)\tilde U(t')^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.</p>
+<p>and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(t')=\exp(-i\tilde Ht'/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t')=\tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$; the evolution is unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.</p>
 <p>The convention for the resolvent follows <em>The Resolvent Operator</em>, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.</p>
 <h2 id="the-unstable-state-and-the-survival-amplitude">The Unstable State and the Survival Amplitude</h2>
 <h3 id="the-survival-amplitude-and-the-survival-probability">The survival amplitude and the survival probability</h3>
-<p>Let $\tilde\Pi_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t'=0$, and let $\tilde{Ϛ}(t')=\tilde U(t')\tilde\Pi_0\tilde U(t')^{*}$ be its evolution. The probability that the system is found in the initial state at time $t'$ is the pairing of the evolved state with the initial idempotent,</p>
+<p>Let $\tilde\Pi_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t'=0$, and let $\tilde{Ϛ}(t')=\tilde Q(t')\tilde\Pi_0\tilde Q(t')^{*}$ be its evolution. The probability that the system is found in the initial state at time $t'$ is the pairing of the evolved state with the initial idempotent,</p>
 <p>$$
 P(t') = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde{Ϛ}(t')\bigr)
-= \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t')\,\tilde\Pi_0\,\tilde U(t')^{*}\bigr).
+= \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(t')\,\tilde\Pi_0\,\tilde Q(t')^{*}\bigr).
 $$</p>
-<p>Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde U\tilde\Pi_0 = A(t')\,\tilde\Pi_0$ with</p>
+<p>Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde Q\tilde\Pi_0 = A(t')\,\tilde\Pi_0$ with</p>
 <p>$$
-A(t') = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t')\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i\tilde Ht'/\hbar)\bigr),
+A(t') = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(t')\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i\tilde Ht'/\hbar)\bigr),
 $$</p>
 <p>and the survival probability is the squared modulus of the <strong>survival amplitude</strong>,</p>
 <p>$$
@@ -207,8 +207,8 @@ $$</p>
 </tr>
 <tr>
 <td>Cartan</td>
-<td>$\tilde A\tilde U$</td>
-<td>$\tilde A=e^{-\Gamma t'/2\hbar}e_t$, $\tilde U=e^{-iE_Rt'/\hbar}e_t$</td>
+<td>$\tilde A\tilde Q$</td>
+<td>$\tilde A=e^{-\Gamma t'/2\hbar}e_t$, $\tilde Q=e^{-iE_Rt'/\hbar}e_t$</td>
 <td>the amplitude and the phase</td>
 </tr>
 <tr>
@@ -327,7 +327,7 @@ $$</p>
 <p><strong>3. Does the second sheet have a module meaning?</strong> The second sheet was reached here by the continuation of a scalar integral. Whether the sheet structure can be read from the module's own analytic geometry, as the corpus's function theory reads the polar and spinor representations, is open.</p>
 <p><strong>4. Empirical content.</strong> The framework's exponential agrees with the standard one wherever the standard one applies, and it supplies no discriminator. Whether any of the non-exponential departures could carry a signature is open and unexplored.</p>
 <h2 id="summary">Summary</h2>
-<p>The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde U(t'))$, and its survival probability is $P(t')=\lvert A(t')\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(t')=1-(\Delta\tilde H)^{2}{t'}^{2}/\hbar^{2}+O({t'}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.</p>
+<p>The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde Q(t'))$, and its survival probability is $P(t')=\lvert A(t')\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(t')=1-(\Delta\tilde H)^{2}{t'}^{2}/\hbar^{2}+O({t'}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.</p>
 <p>The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\Delta(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\Delta$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.</p>
 <p>The pole is a <strong>complex number of the centre</strong>. Hermiticity gives $G(\bar z)=G(z)^{\dagger}$ and its scalar reduction $G_{00}(\bar z)=\overline{G_{00}(z)}$, so a complex pole cannot sit on the first sheet; the decaying number at $E_0+\Delta-\tfrac{i}{2}\Gamma$ and its mirror at $E_0+\Delta+\tfrac{i}{2}\Gamma$ are the two second sheets, and the retarded boundary condition keeps the decaying one — the Krein-space pairing of <em>Spectral Theory on Krein Spaces</em>, split here across the sheets of the energy plane. The self-energy is a scalar function of the central variable, and the level shift, the width, the pole and the lifetime $\tau=\hbar/\Gamma$ are all central, whatever non-central part the Hamiltonian carries. This is the theorem behind the fifth limit — the norm-preserving unit is central — read at the level of a displaced pole.</p>
 <p>A coupling between the two slots of the module is eliminated by the block identity of <em>The Resolvent Operator</em>: relative to an orthogonal splitting $S=S_1\oplus S_2$ the Green's function of the first slot is $(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}})^{-1}$ with $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$. When the eliminated slot is discrete the addition is a real level shift; when it carries a continuum the addition is complex and the effective central potential is absorptive. This is the framework's form of the optical potential, and it explains why an effective potential must be allowed to be complex.</p>
@@ -359,11 +359,11 @@ $$</p>
 <td>Idempotent of the initial state, rank one, $\mathrm{Tr}=1$</td>
 </tr>
 <tr>
-<td>$\tilde U(t')=\exp(-i\tilde Ht'/\hbar)$</td>
-<td>Unitary evolution, $\tilde U\tilde U^{*}=e_t$</td>
+<td>$\tilde Q(t')=\exp(-i\tilde Ht'/\hbar)$</td>
+<td>Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$</td>
 </tr>
 <tr>
-<td>$A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde U(t'))$</td>
+<td>$A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde Q(t'))$</td>
 <td>Survival amplitude; $P(t')=\lvert A(t')\rvert^{2}$</td>
 </tr>
 <tr>

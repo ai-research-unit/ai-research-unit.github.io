@@ -76,9 +76,9 @@
 <h2 id="the-algebra">The Algebra</h2>
 <p><strong>Definition.</strong> $M_{3}(\mathbb{C})$ is the set of $3\times3$ arrays of complex numbers with the entrywise sum and the product</p>
 <p>$$
-(AB)_{ij}=\sum_{k=0}^{2}a_{ik}b_{kj}.
+(AB)_{ij}=\sum_{k=1}^{3}a_{ik}b_{kj}.
 $$</p>
-<p>The <strong>matrix units</strong> $E_{ij}$ are the arrays with a $1$ in position $(i,j)$ and $0$ elsewhere, for $i,j\in\{0,1,2\}$.</p>
+<p>The <strong>matrix units</strong> $E_{ij}$ are the arrays with a $1$ in position $(i,j)$ and $0$ elsewhere, for $i,j\in\{1,2,3\}$.</p>
 <p><strong>Proposition (the matrix-unit table).</strong> The nine matrix units form a $\mathbb{C}$-basis of $M_{3}(\mathbb{C})$, and</p>
 <p>$$
 \boxed{\;E_{ij}E_{kl}=\delta_{jk}E_{il}.\;}
@@ -90,7 +90,7 @@ $$</p>
 $$</p>
 <p>which is the $(p,q)$-entry of $\delta_{jk}E_{il}$. The nine units are linearly independent because the entry $(i,j)$ of a linear combination is its coefficient, and they span because every matrix is the sum of its entries times the corresponding units.</p>
 <p><strong>Theorem.</strong> With this product, $M_{3}(\mathbb{C})$ is an associative unital non-commutative $\mathbb{C}$-algebra of complex dimension $9$ and real dimension $18$.</p>
-<p><strong>Proof.</strong> The product is $\mathbb{C}$-bilinear by the definition of the entries. It is associative because the product of matrices is the composition of the linear maps they represent, and composition is associative; equivalently, both $(AB)C$ and $A(BC)$ have $(i,l)$-entry $\sum_{j,k}a_{ij}b_{jk}c_{kl}$. The unit is the identity matrix $I$, with entries $\delta_{ij}$: $IE_{kl}=E_{kl}=E_{kl}I$. The algebra is not commutative, since $E_{01}E_{10}=E_{00}$ while $E_{10}E_{01}=E_{11}$, and $E_{00}\neq E_{11}$. The nine matrix units are a complex basis, so the complex dimension is nine and the real dimension is eighteen.</p>
+<p><strong>Proof.</strong> The product is $\mathbb{C}$-bilinear by the definition of the entries. It is associative because the product of matrices is the composition of the linear maps they represent, and composition is associative; equivalently, both $(AB)C$ and $A(BC)$ have $(i,l)$-entry $\sum_{j,k}a_{ij}b_{jk}c_{kl}$. The unit is the identity matrix $I$, with entries $\delta_{ij}$: $IE_{kl}=E_{kl}=E_{kl}I$. The algebra is not commutative, since $E_{12}E_{21}=E_{11}$ while $E_{21}E_{12}=E_{22}$, and $E_{11}\neq E_{22}$. The nine matrix units are a complex basis, so the complex dimension is nine and the real dimension is eighteen.</p>
 <p><strong>The product is the composition of endomorphisms.</strong> Let $\mathbb{C}^{3}$ be the space of column vectors and let $A$ act by $x\mapsto Ax$. The map</p>
 <p>$$
 M_{3}(\mathbb{C})\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{C}^{3}),\qquad A\longmapsto(x\mapsto Ax),
@@ -98,18 +98,18 @@ $$</p>
 <p>is an isomorphism of $\mathbb{C}$-algebras: it is linear, it is injective because $Ae_{j}$ is the $j$-th column of $A$, and it is surjective because a linear map is determined by the images of the standard basis, which are the columns of its matrix. This is the reading of $M_{3}$ as the endomorphism algebra of the defining space.</p>
 <p><strong>The coordinate rule.</strong> For $A=(a_{ij})$ and $B=(b_{ij})$ the entries of the product are</p>
 <p>$$
-(AB)_{ij}=\sum_{k=0}^{2}a_{ik}b_{kj},
+(AB)_{ij}=\sum_{k=1}^{3}a_{ik}b_{kj},
 $$</p>
 <p>and the diagonal entries are $(AB)_{ii}=\sum_{k}a_{ik}b_{ki}$. The rule is the only multiplication used in the category; the matrix units are the case in which one entry is $1$ and the others are $0$.</p>
 <p><strong>The opposite algebra.</strong> The opposite algebra $M_{3}^{\mathrm{opp}}$ has the product $A\cdot^{\mathrm{opp}}B=BA$. The transpose $A\mapsto A^{\mathsf T}$ is an isomorphism $M_{3}\to M_{3}^{\mathrm{opp}}$, because $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$. The algebra is therefore isomorphic to its opposite, as every matrix algebra is; this is the first sign that it is a full matrix algebra and not a division algebra.</p>
 <h2 id="trace-and-determinant">Trace and Determinant</h2>
 <p><strong>Definition.</strong> The <strong>trace</strong> of $A$ is</p>
 <p>$$
-\operatorname{tr}A=\sum_{i=0}^{2}a_{ii},
+\operatorname{tr}A=\sum_{i=1}^{3}a_{ii},
 $$</p>
 <p>and the <strong>determinant</strong> is</p>
 <p>$$
-\det A=\sum_{\sigma\in S_{3}}\operatorname{sgn}(\sigma)\,a_{0,\sigma(0)}a_{1,\sigma(1)}a_{2,\sigma(2)}.
+\det A=\sum_{\sigma\in S_{3}}\operatorname{sgn}(\sigma)\,a_{1,\sigma(1)}a_{2,\sigma(2)}a_{3,\sigma(3)}.
 $$</p>
 <p><strong>Proposition (the trace).</strong> The trace is linear, it satisfies</p>
 <p>$$
@@ -129,15 +129,15 @@ $$</p>
 <p><strong>Proof.</strong> The multiplicativity is the multiplicativity of the determinant of a linear map, $\det(AB)=\det A\det B$; it can also be checked from the Leibniz formula, where the sums over the two permutations compose. The characterisation is the standard one of the determinant as the alternating multilinear form in the columns normalised at the identity; the details are <em>Determinants and the Leibniz Formula</em> and <em>The Determinant of a Linear Map</em>.</p>
 <p><strong>The explicit formulas for $3\times3$.</strong> For</p>
 <p>$$
-A=\begin{pmatrix}a_{00}&a_{01}&a_{02}\\a_{10}&a_{11}&a_{12}\\a_{20}&a_{21}&a_{22}\end{pmatrix}
+A=\begin{pmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{pmatrix}
 $$</p>
 <p>the determinant is</p>
 <p>$$
-\det A=a_{00}(a_{11}a_{22}-a_{12}a_{21})
--a_{01}(a_{10}a_{22}-a_{12}a_{20})
-+a_{02}(a_{10}a_{21}-a_{11}a_{20}),
+\det A=a_{11}(a_{22}a_{33}-a_{23}a_{32})
+-a_{12}(a_{21}a_{33}-a_{23}a_{31})
++a_{13}(a_{21}a_{32}-a_{22}a_{31}),
 $$</p>
-<p>the Laplace expansion along the first row. The trace is $a_{00}+a_{11}+a_{22}$.</p>
+<p>the Laplace expansion along the first row. The trace is $a_{11}+a_{22}+a_{33}$.</p>
 <p><strong>Cayley–Hamilton.</strong> The characteristic polynomial is</p>
 <p>$$
 \chi_{A}(\lambda)=\det(\lambda I-A)=\lambda^{3}-t\lambda^{2}+s\lambda-d,
@@ -163,7 +163,7 @@ $$</p>
 <p>$$
 \langle A,B\rangle_{\mathrm{tr}}=\operatorname{tr}(AB)
 $$</p>
-<p>is symmetric, $\mathbb{C}$-bilinear and nondegenerate: if $\operatorname{tr}(AB)=0$ for every $B$, then taking $B=E_{ij}$ gives $a_{ji}=0$ for all $i,j$, so $A=0$. It is not positive definite over $\mathbb{C}$, because $\operatorname{tr}(E_{01}^{2})=0$ with $E_{01}\neq0$. The positive definite Hermitian form is</p>
+<p>is symmetric, $\mathbb{C}$-bilinear and nondegenerate: if $\operatorname{tr}(AB)=0$ for every $B$, then taking $B=E_{ij}$ gives $a_{ji}=0$ for all $i,j$, so $A=0$. It is not positive definite over $\mathbb{C}$, because $\operatorname{tr}(E_{12}^{2})=0$ with $E_{12}\neq0$. The positive definite Hermitian form is</p>
 <p>$$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B),
 $$</p>
@@ -189,7 +189,7 @@ E_{ki}E_{ij}E_{jl}=E_{kl}
 $$</p>
 <p>lies in $I$, because $I$ is a two-sided ideal. The matrix units span, so $I=M_{3}(\mathbb{C})$.</p>
 <p><strong>Corollary.</strong> $M_{3}(\mathbb{C})$ is a <strong>central simple</strong> $\mathbb{C}$-algebra: simple, with centre $\mathbb{C}$. Its only finite-dimensional modules are the multiples of the defining module $\mathbb{C}^{3}$, by the structure theory of simple algebras; the modules are <em>The Modules and the Minimal Left Ideals</em>.</p>
-<p><strong>The algebra is not a division algebra.</strong> It has zero divisors: $E_{01}E_{10}=E_{00}\neq0$ but $E_{01}E_{01}=0$, and more simply $E_{01}\neq0$ with $E_{01}^{2}=0$. Every off-diagonal matrix unit is nilpotent. The algebra is therefore not a division ring, and the singular matrices are exactly the non-units.</p>
+<p><strong>The algebra is not a division algebra.</strong> It has zero divisors: $E_{12}E_{21}=E_{11}\neq0$ but $E_{12}E_{12}=0$, and more simply $E_{12}\neq0$ with $E_{12}^{2}=0$. Every off-diagonal matrix unit is nilpotent. The algebra is therefore not a division ring, and the singular matrices are exactly the non-units.</p>
 <h2 id="the-unit-group-and-the-projective-group">The Unit Group and the Projective Group</h2>
 <p><strong>Definition.</strong> The <strong>unit group</strong> is</p>
 <p>$$
@@ -283,7 +283,7 @@ $$</p>
 </tr>
 <tr>
 <td>Division algebra</td>
-<td>no; $E_{01}^{2}=0$</td>
+<td>no; $E_{12}^{2}=0$</td>
 </tr>
 <tr>
 <td>Unit group</td>

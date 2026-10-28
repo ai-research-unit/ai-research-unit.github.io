@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Polar Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-polar-decomposition"><strong>The Polar Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every $A\in M_4(\mathbb{C})$ factors as $A=UP$ with $U\in U(4)$ unitary and $P$ positive semidefinite; the factor $P$ is unique, and $U$ is unique when $A$ is invertible.</strong> The decomposition is the matrix form of the Cartan decomposition $GL_4=U(4)\cdot\exp(\operatorname{Herm}_4)$, and the positive factor is $P=\sqrt{A^*A}$. The singular value decomposition refines it, and the singular case has a freedom on the kernel.</p>
+<p>The article proves the polar decomposition, identifies the singular value decomposition, describes the singular case and the manifold $GL_4/U(4)$, states the exponential form and the Cartan decomposition, and identifies the unitary factor as the closest unitary to $A$.</p>
+<p>The positive definite form is <em>The Involution and the Hermitian Structure</em>; the singular values and the norms are <em>The Forms, the Norms and the Singular Set</em>; the exponential form is <em>The Exponential Polar Decomposition</em>; the mass-block version is <em>The Mass Block and the Chiral Polar Decomposition</em>.</p>
+<h2 id="the-polar-decomposition_1">The Polar Decomposition</h2>
+<p><strong>Theorem (polar decomposition).</strong> Every $A\in M_4(\mathbb{C})$ can be written as</p>
+<p>$$
+A=UP,
+$$</p>
+<p>with $U\in U(4)$ and $P$ positive semidefinite. The factor $P$ is unique:</p>
+<p>$$
+P=(A^*A)^{1/2}=\lvert A\rvert .
+$$</p>
+<p>If $A$ is invertible, $U$ is unique and</p>
+<p>$$
+U=A(A^*A)^{-1/2}.
+$$</p>
+<p>If $A$ is singular, $U$ is unique on the range of $P$ and arbitrary on its kernel.</p>
+<p><strong>Proof.</strong> The matrix $A^*A$ is positive semidefinite, so it has a unique positive semidefinite square root $P$. On the range of $P$, define $U(Pv)=Av$. This is well defined: if $Pv=0$, then $A^*Av=P^2v=0$, so $Av=0$. It is isometric:</p>
+<p>$$
+\lVert Av\rVert^2=\langle v,A^*Av\rangle=\langle v,P^2v\rangle=\lVert Pv\rVert^2.
+$$</p>
+<p>Extend $U$ isometrically from the range of $P$ to its orthogonal complement, the kernel of $P$, with values in the kernel of $A^*$; the dimensions agree because $\operatorname{rank}P=\operatorname{rank}A$. Then $U$ is unitary and $A=UP$. If $A$ is invertible, $P$ is invertible and $U=AP^{-1}=A(A^*A)^{-1/2}$ is forced.</p>
+<p><strong>The two factors.</strong> The factor $P$ is the <strong>positive factor</strong> or <strong>modulus</strong>; the factor $U$ is the <strong>unitary factor</strong> or <strong>phase</strong>. The decomposition is also written</p>
+<p>$$
+A=U\lvert A\rvert,\qquad
+\lvert A\rvert=\sqrt{A^*A}.
+$$</p>
+<p><strong>The polar of the adjoint.</strong> Applying the theorem to $A^*$,</p>
+<p>$$
+A^*=VP,
+$$</p>
+<p>with the same $P$ and $V=U^*$ when $A$ is invertible. The two decompositions are related by</p>
+<p>$$
+A=UP,\qquad A^*=PU^*.
+$$</p>
+<p><strong>The unitary invariance.</strong> If $A=UP$ and $Q,R\in U(4)$, then</p>
+<p>$$
+QAR=(QU R)(R^*PR)
+$$</p>
+<p>is the polar decomposition of $QAR$: the unitary factor is $QUR$ and the positive factor is $R^*PR$. The singular values are unchanged.</p>
+<h2 id="the-singular-value-decomposition">The Singular Value Decomposition</h2>
+<p><strong>Theorem (SVD).</strong> Every $A\in M_4(\mathbb{C})$ has a decomposition</p>
+<p>$$
+A=U\Sigma V^*,
+$$</p>
+<p>with $U,V\in U(4)$ and</p>
+<p>$$
+\Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3,\sigma_4),\qquad
+\sigma_1\ge\sigma_2\ge\sigma_3\ge\sigma_4\ge0.
+$$</p>
+<p>The numbers $\sigma_k$ are the singular values, the square roots of the eigenvalues of $A^*A$.</p>
+<p><strong>The relation to the polar decomposition.</strong> The SVD gives the polar decomposition by</p>
+<p>$$
+A=U\Sigma V^*=(UV^*)(V\Sigma V^*),
+$$</p>
+<p>so the unitary factor is $W=UV^*$ and the positive factor is $P=V\Sigma V^*$. Conversely, diagonalising $P$ by $V$ and setting $U=WV$ recovers the SVD.</p>
+<p><strong>The proof.</strong> The spectral theorem for the positive semidefinite matrix $A^*A$ gives an orthonormal eigenbasis $v_1,\dots,v_4$ with eigenvalues $\sigma_1^2,\dots,\sigma_4^2$. For $\sigma_k>0$, set $u_k=Av_k/\sigma_k$; the $u_k$ are orthonormal. Extend them to a unitary $U$; then $A=U\Sigma V^*$.</p>
+<p><strong>The non-uniqueness.</strong> The singular values are unique. The unitaries $U,V$ are not unique when some singular values coincide, and they are not unique on the kernel when $A$ is singular. The polar factor $W=UV^*$ is unique on the range of $P$ and arbitrary on the kernel; the positive factor $P$ is always unique.</p>
+<p><strong>Example.</strong> For</p>
+<p>$$
+A=\begin{pmatrix}3&0&0&0\\0&2&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+$$</p>
+<p>the singular values are $3,2,0,0$, the positive factor is $P=A$, and the unitary factor is $U=I$. For</p>
+<p>$$
+A=\begin{pmatrix}0&3&0&0\\2&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+$$</p>
+<p>the singular values are $3,2,0,0$, and</p>
+<p>$$
+A=
+\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}
+\begin{pmatrix}3&0&0&0\\0&2&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix}
+\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
+$$</p>
+<h2 id="the-singular-case">The Singular Case</h2>
+<p><strong>The freedom on the kernel.</strong> If $A$ has rank $k<4$, then $P$ has rank $k$ and kernel of dimension $4-k$. The unitary factor $U$ is determined on the range of $P$ and arbitrary on the kernel of $P$. The freedom is a unitary $U(4-k)$ acting on the kernel, with values in the kernel of $A^*$.</p>
+<p><strong>The partial isometry.</strong> The factor $U$ is a <strong>partial isometry</strong>:</p>
+<p>$$
+U^*U=P_{\operatorname{ran}P},\qquad
+UU^*=P_{\operatorname{ran}A},
+$$</p>
+<p>the orthogonal projections onto the range of $P$ and the range of $A$. It is unitary exactly when $A$ is invertible.</p>
+<p><strong>Example.</strong> For</p>
+<p>$$
+A=\begin{pmatrix}3&0&0&0\\0&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+$$</p>
+<p>the positive factor is $P=A$, and the unitary factor can be any unitary whose first column is $e_1$; the freedom is $U(3)$ on the kernel. The polar decomposition is not unique, but the positive factor is.</p>
+<p><strong>The polar of a projection.</strong> A projection $P$ (self-adjoint idempotent) is positive semidefinite, so its polar decomposition is $P=P\cdot I$; the unitary factor is $I$ on the range and arbitrary on the kernel. A partial isometry $U$ has polar decomposition $U=U P$ with $P=U^*U$ the projection onto its initial space; the positive factor is that projection.</p>
+<h2 id="the-manifold-math113">The Manifold $GL_4/U(4)$</h2>
+<p><strong>The diffeomorphism.</strong> The polar decomposition gives a diffeomorphism</p>
+<p>$$
+GL_4(\mathbb{C})\longrightarrow U(4)\times P_+,\qquad
+A\longmapsto(U,P),
+$$</p>
+<p>where $P_+$ is the open cone of positive definite Hermitian matrices. The inverse is $(U,P)\mapsto UP$. Hence</p>
+<p>$$
+GL_4(\mathbb{C})/U(4)\cong P_+,
+$$</p>
+<p>the <strong>symmetric space</strong> of positive definite Hermitian matrices.</p>
+<p><strong>The dimension.</strong> The real dimensions are</p>
+<p>$$
+\dim_\mathbb{R}GL_4=32,\qquad
+\dim_\mathbb{R}U(4)=16,\qquad
+\dim_\mathbb{R}P_+=16,
+$$</p>
+<p>and $32=16+16$.</p>
+<p><strong>The contractibility.</strong> The exponential map</p>
+<p>$$
+\operatorname{Herm}_4\longrightarrow P_+,\qquad
+H\longmapsto e^H,
+$$</p>
+<p>is a diffeomorphism, with inverse the Hermitian logarithm. The space $\operatorname{Herm}_4$ is a real vector space of dimension $16$, so $P_+$ is contractible and $GL_4/U(4)$ is contractible. The unitary group $U(4)$ is a maximal compact subgroup of $GL_4(\mathbb{C})$.</p>
+<p><strong>The Cartan decomposition.</strong> The polar decomposition is the global form of the Cartan decomposition of the Lie algebra</p>
+<p>$$
+\mathfrak{gl}_4(\mathbb{C})=\mathfrak{u}(4)\oplus\operatorname{Herm}_4,
+$$</p>
+<p>with the Cartan involution</p>
+<p>$$
+\theta(X)=-X^*.
+$$</p>
+<p>The $+1$ eigenspace is $\mathfrak{u}(4)$, the $-1$ eigenspace is $\operatorname{Herm}_4$, and the brackets satisfy</p>
+<p>$$
+[\mathfrak{u},\mathfrak{u}]\subseteq\mathfrak{u},\qquad
+[\mathfrak{u},\operatorname{Herm}]\subseteq\operatorname{Herm},\qquad
+[\operatorname{Herm},\operatorname{Herm}]\subseteq\mathfrak{u}.
+$$</p>
+<p>The group decomposition is $GL_4=U(4)\exp(\operatorname{Herm}_4)$.</p>
+<p><strong>The symmetric space.</strong> The quotient $GL_4/U(4)\cong P_+$ is a symmetric space of noncompact type; the exponential map is a diffeomorphism, the geodesics are the curves $t\mapsto e^{H_0+tH}$, and the curvature is negative. The positive definite cone is the space of metrics on $\mathbb{C}^4$; the unitary group is the group of isometries of the standard metric.</p>
+<h2 id="the-closest-unitary">The Closest Unitary</h2>
+<p><strong>Theorem.</strong> The unitary factor $U$ of $A=UP$ is the closest unitary to $A$ in the Frobenius norm:</p>
+<p>$$
+\lVert A-U\rVert_F=\min_{Q\in U(4)}\lVert A-Q\rVert_F .
+$$</p>
+<p>The minimum value is</p>
+<p>$$
+\lVert A-U\rVert_F^2=\lVert A\rVert_F^2+4-2\lVert A\rVert_*,
+$$</p>
+<p>where $\lVert A\rVert_*=\sum_k\sigma_k$ is the nuclear norm.</p>
+<p><strong>Proof.</strong> For $Q\in U(4)$,</p>
+<p>$$
+\lVert A-Q\rVert_F^2=\lVert A\rVert_F^2+4-2\operatorname{Re}\operatorname{tr}(Q^*A).
+$$</p>
+<p>The maximum of $\operatorname{Re}\operatorname{tr}(Q^*A)$ over unitary $Q$ is the nuclear norm $\lVert A\rVert_*$, attained at $Q=UV^*$ where $A=U\Sigma V^*$. This is the duality of the operator and nuclear norms. The polar factor is $W=UV^*$.</p>
+<p><strong>The geometric meaning.</strong> The polar decomposition is the orthogonal projection of $A$ onto the unitary group in the Frobenius metric: the unitary factor is the point of $U(4)$ closest to $A$. The positive factor is the radial part of $A$ relative to $U(4)$; its norm measures the distance from $A$ to the group.</p>
+<h2 id="the-exponential-form">The Exponential Form</h2>
+<p><strong>The unitary factor.</strong> Every unitary $U\in U(4)$ has a Hermitian logarithm:</p>
+<p>$$
+U=e^{iK},\qquad K=K^*,
+$$</p>
+<p>defined modulo the eigenvalues of $K$ shifted by $2\pi$. The principal logarithm chooses the eigenvalues of $K$ in $(-\pi,\pi]$.</p>
+<p><strong>The positive factor.</strong> Every positive definite $P$ has a unique Hermitian logarithm:</p>
+<p>$$
+P=e^H,\qquad H=H^*,
+$$</p>
+<p>with $H=\log P$.</p>
+<p><strong>The exponential form of the polar decomposition.</strong> For invertible $A$,</p>
+<p>$$
+A=UP=e^{iK}e^H,
+$$</p>
+<p>with $K,H$ Hermitian. The factor $e^{iK}$ is unitary and $e^H$ is positive definite. The decomposition is the polar decomposition, written in exponential form.</p>
+<p><strong>The other order.</strong> The <strong>exponential polar decomposition</strong> of <em>The Exponential Polar Decomposition</em> writes an invertible $A$ as</p>
+<p>$$
+A=e^{H'}e^{iK'},
+$$</p>
+<p>with $H',K'$ Hermitian. The two orderings are different; the factors are related by the polar decomposition and the conjugation. The existence of both is the statement that the exponential map from the Hermitian matrices is surjective onto the positive definite cone and onto the unitary group.</p>
+<p><strong>The logarithm.</strong> For invertible $A$, the principal logarithm is</p>
+<p>$$
+\log A=\log P+iK,
+$$</p>
+<p>with $P=|A|$ and $U=e^{iK}$; it is a holomorphic function of $A$ on the domain avoiding the negative real axis of the spectrum. The exponential and the logarithm are <em>The Exponential and the Lie Group</em>.</p>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p><strong>At $n=2$ the polar decomposition is the same theorem.</strong> For $A\in M_2(\mathbb{C})$,</p>
+<p>$$
+A=UP,\qquad U\in U(2),\quad P\ge0,
+$$</p>
+<p>and</p>
+<p>$$
+GL_2(\mathbb{C})/U(2)\cong P_+,
+$$</p>
+<p>the positive definite $2\times2$ Hermitian cone, of real dimension $4$. The exponential map $\operatorname{Herm}_2\to P_+$ is a diffeomorphism. The biquaternion polar decomposition of the regular model is the same decomposition applied to the $4\times4$ regular matrices; the full algebra's polar decomposition is the $U(4)$ version.</p>
+<p><strong>The comparison.</strong> The positive definite cone $P_+$ is the same object in both cases; the unitary group is $U(2)$ for the biquaternion algebra and $U(4)$ for the full matrix algebra. The full algebra's polar decomposition has a larger unitary factor and a larger positive factor, and its singular values are four rather than two.</p>
+<h2 id="summary">Summary</h2>
+<p>Every $A\in M_4(\mathbb{C})$ has a polar decomposition $A=UP$ with $U\in U(4)$ and $P$ positive semidefinite; $P=(A^*A)^{1/2}$ is unique, and $U$ is unique when $A$ is invertible. The singular value decomposition $A=U\Sigma V^*$ refines it, with $P=V\Sigma V^*$ and $W=UV^*$. When $A$ is singular, $U$ is a partial isometry, unique on the range of $P$ and arbitrary on the kernel, with freedom $U(4-k)$ for rank $k$. The polar decomposition is the diffeomorphism $GL_4\cong U(4)\times P_+$, hence $GL_4/U(4)\cong P_+$, the contractible symmetric space of positive definite Hermitian matrices; it is the global Cartan decomposition of $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$ with Cartan involution $\theta(X)=-X^*$. The unitary factor is the closest unitary to $A$ in the Frobenius norm, with distance squared $\lVert A\rVert_F^2+4-2\lVert A\rVert_*$. In exponential form $A=e^{iK}e^H$ with $K,H$ Hermitian; the other ordering $e^{H'}e^{iK'}$ is the exponential polar decomposition.</p>
+<p>$$
+\boxed{\ A=UP,\quad P=(A^*A)^{1/2},\quad U\in U(4),\quad P\ge0,\quad GL_4/U(4)\cong P_+,\quad \dim_\mathbb{R}P_+=16. }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension or property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL_4(\mathbb{C})$</td>
+<td>$32$ real</td>
+</tr>
+<tr>
+<td>$U(4)$</td>
+<td>$16$ real, compact</td>
+</tr>
+<tr>
+<td>$P_+$</td>
+<td>$16$ real, contractible</td>
+</tr>
+<tr>
+<td>$GL_4/U(4)$</td>
+<td>$16$ real</td>
+</tr>
+<tr>
+<td>Positive factor $P$</td>
+<td>unique</td>
+</tr>
+<tr>
+<td>Unitary factor $U$</td>
+<td>unique if $A$ invertible</td>
+</tr>
+<tr>
+<td>Singular values</td>
+<td>four, non-negative</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A=UP$</td>
+<td>the polar decomposition</td>
+</tr>
+<tr>
+<td>$P=\lvert A\rvert=\sqrt{A^*A}$</td>
+<td>the positive factor</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>the unitary factor</td>
+</tr>
+<tr>
+<td>$A=U\Sigma V^*$</td>
+<td>the singular value decomposition</td>
+</tr>
+<tr>
+<td>$P_+$</td>
+<td>the positive definite Hermitian cone</td>
+</tr>
+<tr>
+<td>$\theta(X)=-X^*$</td>
+<td>the Cartan involution</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert_*$</td>
+<td>the nuclear norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the polar decomposition, the singular value decomposition and the closest unitary problem.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the positive definite cone, the operator and nuclear norms, and the geometry of matrices.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the Cartan decomposition and the symmetric space $GL_4/U(4)$.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure</a>, for the positive definite form and the unitary group.</li>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set</a>, for the singular values and the norms.</li>
+<li><a href="the-exponential-polar-decomposition-of-m4c.html">The Exponential Polar Decomposition</a>, for the other ordering $e^He^{iK}$.</li>
+<li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html">The Mass Block and the Chiral Polar Decomposition</a>, for the chiral version.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

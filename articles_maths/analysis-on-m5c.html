@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis on $M_5(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analysis-on-math0"><strong>Analysis on $M_5(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra $M_5(\mathbb{C})$ is a complex vector space of dimension $25$, hence a real manifold of dimension $50$. It carries the smooth structure of $\mathbb{C}^{25}$, the complex structure of multiplication by $i$, the Lebesgue measure of $\mathbb{R}^{50}$, and the norms of <em>The Forms, the Norms and the Singular Set</em>. The analysis on $M_5$ is the ordinary analysis of a finite-dimensional complex vector space, enriched by the algebra structure: the product, the inverse, the determinant and the exponential are smooth (indeed holomorphic) maps, and their derivatives are the standard formulas.</p>
+<p>The <strong>Wirtinger calculus</strong> gives the complex derivatives $\partial/\partial z_{ij}$ and $\partial/\partial\bar z_{ij}$. The holomorphic functions are those with $\partial f/\partial\bar z_{ij}=0$; the determinant is a holomorphic polynomial, the inverse is holomorphic on $GL_5$, and the exponential is entire. The <strong>holomorphic functional calculus</strong> evaluates a holomorphic function on a matrix through the resolvent and a contour integral,</p>
+<p>$$
+f(A)=\frac{1}{2\pi i}\oint_\Gamma f(z)(zI-A)^{-1}\,dz,
+$$</p>
+<p>and the <strong>Riesz projector</strong></p>
+<p>$$
+P=\frac{1}{2\pi i}\oint_\Gamma(zI-A)^{-1}\,dz
+$$</p>
+<p>is the spectral projector onto the part of the spectrum inside $\Gamma$. The <strong>Fourier transform</strong> on $\mathbb{C}^{25}$ is the Euclidean Fourier transform of the $50$ real coordinates; the Schwartz space, the inversion theorem, the Plancherel theorem and the Gaussian are the standard ones.</p>
+<p>The article also fixes the boundary against <strong>Fueter theory</strong>. The field $\mathbb{C}$ has no zero divisors; the algebra $M_5(\mathbb{C})$ does: the nilpotents satisfy $E_{12}^2=0$. The ordinary matrix analysis is the analysis over the field, with the spectrum, the resolvent and the functional calculus. Fueter theory is the quaternionic (or Clifford) analysis of the Cauchy–Fueter operator; it needs a different structure, a real division algebra or a Clifford module with a Dirac operator, which $M_5(\mathbb{C})$ does not carry. The holomorphic functional calculus is not Fueter theory.</p>
+<p>The article assumes the trace, the determinant, the norms, the Hermitian structure and the spectral theorem. It proves the derivative formulas, the Wirtinger rules, the resolvent and Riesz formulas, and it states the Fourier theorems with their standard proofs.</p>
+<h2 id="the-smooth-structure">The Smooth Structure</h2>
+<h3 id="the-real-and-complex-manifolds">The Real and Complex Manifolds</h3>
+<p><strong>Proposition.</strong> $M_5(\mathbb{C})$ is a complex manifold of complex dimension $25$ and a real manifold of real dimension $50$. The complex structure is the linear map $J(A)=iA$, with $J^2=-I$; the real tangent space at every point is $M_5$, and the complex tangent space is the complexification.</p>
+<p><strong>Proof.</strong> The identification $M_5\cong\mathbb{C}^{25}$ by the coordinates $A_{ij}$ is a complex-linear isomorphism; the real coordinates are the real and imaginary parts, $50$ in number. The multiplication by $i$ is a real-linear map with $J^2=-I$, which is the complex structure. The tangent space of a vector space is the vector space itself.</p>
+<p><strong>Corollary.</strong> The manifold is parallelizable: the coordinate vector fields $\partial/\partial x_{ij}$ and $\partial/\partial y_{ij}$ are a global frame. The complex vector fields $\partial/\partial z_{ij}$ and $\partial/\partial\bar z_{ij}$ are a global frame of the complexified tangent bundle.</p>
+<p><strong>Proof.</strong> The vector space has a global basis of constant vector fields; the Wirtinger derivatives are the complex basis.</p>
+<p><strong>Corollary.</strong> The manifold is oriented, and the Lebesgue measure</p>
+<p>$$
+dA=\prod_{i,j}dx_{ij}\,dy_{ij}
+$$</p>
+<p>is a translation-invariant volume form. The total volume of a measurable set is its $50$-dimensional Lebesgue measure.</p>
+<p><strong>Proof.</strong> The real coordinates give the standard orientation and the standard Lebesgue measure; translations are isometries of $\mathbb{R}^{50}$.</p>
+<h3 id="the-tangent-space">The Tangent Space</h3>
+<p><strong>Definition.</strong> The <strong>tangent space</strong> $T_AM_5$ is $M_5$, with the derivative of a curve $A(t)$ at $t=0$ being $A'(0)$. The <strong>differential</strong> of a smooth map $F:M_5\to W$ at $A$ is the linear map $DF_A:M_5\to W$ given by $DF_A(H)=\frac{d}{dt}|_{0}F(A+tH)$.</p>
+<p><strong>Proposition.</strong> The tangent space is $M_5$ at every point; the differential of a linear map is the map itself; the differential of the product is</p>
+<p>$$
+D(AB)_{(A,B)}(H,K)=HB+AK .
+$$</p>
+<p><strong>Proof.</strong> The tangent space of a vector space is the vector space; the derivative of a linear map is itself; the product is bilinear, so the derivative is the sum of the two partial derivatives.</p>
+<p><strong>Corollary.</strong> The left multiplication $L_A(B)=AB$ has differential $DL_A(B)(K)=AK$; the right multiplication $R_B(A)=AB$ has differential $DR_B(A)(H)=HB$.</p>
+<p><strong>Proof.</strong> The product is linear in each factor; the partial derivatives are the displayed maps.</p>
+<h3 id="the-lebesgue-measure">The Lebesgue Measure</h3>
+<p><strong>Definition.</strong> The <strong>Lebesgue measure</strong> on $M_5$ is the translation-invariant measure $dA$ of $\mathbb{R}^{50}$.</p>
+<p><strong>Proposition.</strong> The measure is invariant under translations and under the unitary group: $d(UA)=dA$ and $d(AU)=dA$ for $U\in U(5)$. It is not invariant under general linear changes of coordinates; the Jacobian is $|\det g|^{10}$ for $A\mapsto gA$ (or $A\mapsto Ag$).</p>
+<p><strong>Proof.</strong> The translation invariance is the Lebesgue measure on $\mathbb{R}^{50}$; the unitary invariance is the orthogonality of the real linear map $A\mapsto UA$ (the Frobenius norm is preserved). For a general $g$, the left multiplication $L_g$ on $M_5$ has complex determinant $(\det g)^5$ (five column blocks, each with determinant $\det g$), so its real Jacobian is $|(\det g)^5|^2=|\det g|^{10}$.</p>
+<p><strong>Corollary.</strong> The Gaussian integral converges:</p>
+<p>$$
+\int_{M_5}e^{-\operatorname{tr}(A^*A)}\,dA=\pi^{25}.
+$$</p>
+<p><strong>Proof.</strong> The integrand is $\prod_{ij}e^{-|A_{ij}|^2}$; the integral over each complex coordinate is $\pi$; the product over the $25$ coordinates is $\pi^{25}$.</p>
+<h2 id="the-derivatives">The Derivatives</h2>
+<h3 id="the-product">The Product</h3>
+<p><strong>Proposition.</strong> The product map $m(A,B)=AB$ is smooth (polynomial) and its differential is</p>
+<p>$$
+Dm_{(A,B)}(H,K)=HB+AK .
+$$</p>
+<p><strong>Proof.</strong> The entries of $AB$ are polynomials of degree $2$; the derivative is the bilinear part, which is $HB+AK$.</p>
+<p><strong>Corollary.</strong> The product is holomorphic in each variable separately; the algebra is a complex Lie algebra with the commutator.</p>
+<p><strong>Proof.</strong> The entries are polynomials in the entries of $A$ and $B$, hence holomorphic; the commutator is bilinear.</p>
+<h3 id="the-inverse">The Inverse</h3>
+<p><strong>Theorem.</strong> The inversion map $\operatorname{inv}:GL_5\to GL_5$, $A\mapsto A^{-1}$, is smooth (holomorphic), and its differential is</p>
+<p>$$
+D(\operatorname{inv})_A(H)=-A^{-1}HA^{-1}.
+$$</p>
+<p><strong>Proof.</strong> For small $t$,</p>
+<p>$$
+(A+tH)^{-1}=A^{-1}-tA^{-1}HA^{-1}+O(t^2),
+$$</p>
+<p>by the Neumann series $(I+tA^{-1}H)^{-1}=I-tA^{-1}H+O(t^2)$. The derivative is the linear term.</p>
+<p><strong>Corollary.</strong> The inverse is a local diffeomorphism at every invertible $A$; its differential is invertible with inverse $-A(\cdot)A$.</p>
+<p><strong>Proof.</strong> The differential $H\mapsto-A^{-1}HA^{-1}$ is invertible, with inverse $K\mapsto-AKA$; the inverse function theorem applies.</p>
+<h3 id="the-determinant">The Determinant</h3>
+<p><strong>Theorem.</strong> The determinant is a holomorphic polynomial of degree $5$, and</p>
+<p>$$
+D\det_A(H)=\operatorname{tr}(\operatorname{adj}(A)H).
+$$</p>
+<p>At $A=I$, $D\det_I(H)=\operatorname{tr}H$.</p>
+<p><strong>Proof.</strong> Expand $\det(A+tH)$ in powers of $t$; the linear term is the sum over the positions of $H$ with the cofactor of $A$, which is the trace of the adjugate times $H$. At $A=I$, the adjugate is $I$.</p>
+<p><strong>Corollary.</strong> The determinant is a submersion at every point of rank $4$; the singular set $\det=0$ is a complex hypersurface of real codimension $2$, smooth at the rank-$4$ points.</p>
+<p><strong>Proof.</strong> The derivative is nonzero exactly when the adjugate is nonzero, i.e., at rank $4$; the nonzero complex-linear functional has kernel of real codimension $2$; the implicit function theorem gives the smooth hypersurface.</p>
+<h3 id="the-exponential">The Exponential</h3>
+<p><strong>Theorem.</strong> The exponential is entire, and its differential is</p>
+<p>$$
+D\exp_A(H)=e^A\sum_{m=0}^{\infty}\frac{(-1)^m}{(m+1)!}\operatorname{ad}_A^m(H).
+$$</p>
+<p>At $A=0$, $D\exp_0(H)=H$; for a scalar $A=\lambda I$, $D\exp_{\lambda I}(H)=e^\lambda H$.</p>
+<p><strong>Proof.</strong> Differentiate $e^{A+tH}$ at $t=0$. The derivative satisfies the differential equation $\frac{d}{dt}e^{A+tH}=e^{A+tH}H$ with the initial value $e^A$; the solution is $e^A$ times the series $\sum_m(-1)^m\operatorname{ad}_A^m(H)/(m+1)!$, which is the standard formula for the derivative of the exponential. At $A=0$ only the $m=0$ term survives; for a scalar, $\operatorname{ad}_A=0$.</p>
+<p><strong>Corollary.</strong> The differential at $0$ is the identity, so the exponential is a local diffeomorphism at $0$; the inverse branch is the logarithm.</p>
+<p><strong>Proof.</strong> $D\exp_0=I$ is invertible; the inverse function theorem gives the local inverse.</p>
+<p><strong>Remark.</strong> <strong>The derivative of the exponential is not $e^A H$ unless $A$ is scalar or $H$ commutes with $A$.</strong> The series with the adjoint corrects for the noncommutativity; the first correction is $\frac12[A,H]$. The formula is the analytic form of the Baker–Campbell–Hausdorff expansion.</p>
+<h2 id="the-wirtinger-calculus">The Wirtinger Calculus</h2>
+<h3 id="the-complex-derivatives">The Complex Derivatives</h3>
+<p><strong>Definition.</strong> For a smooth function $f:M_5\to\mathbb{C}$, the <strong>Wirtinger derivatives</strong> are</p>
+<p>$$
+\frac{\partial f}{\partial z_{ij}}=\frac12\left(\frac{\partial f}{\partial x_{ij}}-i\frac{\partial f}{\partial y_{ij}}\right),\qquad
+\frac{\partial f}{\partial\bar z_{ij}}=\frac12\left(\frac{\partial f}{\partial x_{ij}}+i\frac{\partial f}{\partial y_{ij}}\right).
+$$</p>
+<p><strong>Proposition.</strong> The differential is</p>
+<p>$$
+df=\sum_{ij}\frac{\partial f}{\partial z_{ij}}dz_{ij}+\sum_{ij}\frac{\partial f}{\partial\bar z_{ij}}d\bar z_{ij},
+$$</p>
+<p>and the Wirtinger derivatives satisfy $\overline{\partial f/\partial z_{ij}}=\partial\bar f/\partial\bar z_{ij}$.</p>
+<p><strong>Proof.</strong> The real differential is $\sum(\partial f/\partial x)dx+(\partial f/\partial y)dy$; substituting $dz=dx+i\,dy$ and $d\bar z=dx-i\,dy$ gives the formula; the conjugation identity is the definition.</p>
+<p><strong>Corollary.</strong> The function $f$ is holomorphic iff $\partial f/\partial\bar z_{ij}=0$ for all $i,j$; equivalently, the Cauchy–Riemann equations hold.</p>
+<p><strong>Proof.</strong> A function is holomorphic iff its differential is complex-linear, i.e., the $d\bar z$ terms vanish; this is the Cauchy–Riemann condition.</p>
+<h3 id="holomorphic-functions">Holomorphic Functions</h3>
+<p><strong>Theorem.</strong> The determinant, the product, the inverse on $GL_5$, and the exponential are holomorphic.</p>
+<p><strong>Proof.</strong> The determinant and the product are polynomials in the entries, hence holomorphic. The inverse is rational with denominator $\det A$, hence holomorphic on $GL_5$. The exponential is a uniformly convergent series of polynomials, hence holomorphic.</p>
+<p><strong>Corollary.</strong> The logarithm is holomorphic on a neighborhood of $I$, and the square root is holomorphic on a neighborhood of $I$ in the positive definite cone.</p>
+<p><strong>Proof.</strong> The logarithm series $\log(I+N)=\sum(-1)^{m+1}N^m/m$ converges for $\|N\|<1$ and is holomorphic; the square root is the exponential of half the logarithm, or the binomial series $(I+N)^{1/2}$.</p>
+<p><strong>Corollary.</strong> A holomorphic function of a matrix, defined by a power series with positive radius, is holomorphic in the entries on the domain of convergence.</p>
+<p><strong>Proof.</strong> The power series converges uniformly on compact sets; each term is a polynomial; the sum is holomorphic.</p>
+<h3 id="the-matrix-functions">The Matrix Functions</h3>
+<p><strong>Proposition.</strong> The functional calculus for polynomials and entire functions is holomorphic in $A$: if $f$ is entire, then $A\mapsto f(A)$ is entire.</p>
+<p><strong>Proof.</strong> $f(A)=\sum c_mA^m$; each $A^m$ is a polynomial in the entries; the series converges uniformly on compact sets.</p>
+<p><strong>Corollary.</strong> The exponential, the sine and the cosine, and every entire function of $A$ are entire matrix functions.</p>
+<p><strong>Proof.</strong> The exponential series, the sine and cosine series, and any entire series converge uniformly on compact sets.</p>
+<h2 id="the-holomorphic-functional-calculus">The Holomorphic Functional Calculus</h2>
+<h3 id="the-resolvent">The Resolvent</h3>
+<p><strong>Definition.</strong> The <strong>resolvent set</strong> of $A$ is $\rho(A)=\{z\in\mathbb{C}:zI-A\text{ is invertible}\}$; the <strong>spectrum</strong> is $\sigma(A)=\mathbb{C}\setminus\rho(A)$; the <strong>resolvent</strong> is</p>
+<p>$$
+R(z)=(zI-A)^{-1}.
+$$</p>
+<p><strong>Proposition.</strong> The spectrum is the set of eigenvalues, a finite subset of at most $5$ points. The resolvent is holomorphic on $\rho(A)$, and it satisfies the <strong>resolvent identity</strong></p>
+<p>$$
+R(z)-R(w)=(w-z)R(z)R(w).
+$$</p>
+<p><strong>Proof.</strong> $zI-A$ is invertible iff $z$ is not an eigenvalue; the characteristic polynomial has degree $5$, so there are at most $5$ eigenvalues. The resolvent identity follows from</p>
+<p>$$
+(zI-A)^{-1}-(wI-A)^{-1}=(zI-A)^{-1}[(wI-A)-(zI-A)](wI-A)^{-1}.
+$$</p>
+<p>The analyticity is the holomorphic dependence of the inverse on $z$.</p>
+<p><strong>Corollary.</strong> The resolvent has the Neumann series at infinity,</p>
+<p>$$
+R(z)=z^{-1}I+z^{-2}A+z^{-3}A^2+\cdots,
+$$</p>
+<p>for $|z|>\|A\|$; and at a point $z_0\notin\sigma(A)$,</p>
+<p>$$
+R(z)=\sum_{m\ge0}(z_0-z)^mR(z_0)^{m+1}
+$$</p>
+<p>for $|z-z_0|$ small. The spectral radius is $\rho(A)=\lim_m\|A^m\|^{1/m}$.</p>
+<p><strong>Proof.</strong> The Neumann series is the geometric series for $(zI-A)^{-1}=z^{-1}(I-z^{-1}A)^{-1}$; the second is the geometric series for $(zI-A)^{-1}=(z_0I-A+(z-z_0)I)^{-1}$; the spectral radius formula is the standard Gelfand formula.</p>
+<h3 id="the-contour-integral">The Contour Integral</h3>
+<p><strong>Theorem.</strong> Let $f$ be holomorphic on an open set containing the spectrum $\sigma(A)$, and let $\Gamma$ be a finite union of positively oriented Jordan curves in the domain, enclosing the spectrum and no point of $\mathbb{C}\setminus\Omega$. Then</p>
+<p>$$
+f(A)=\frac{1}{2\pi i}\oint_\Gamma f(z)(zI-A)^{-1}\,dz
+$$</p>
+<p>is well defined, independent of the contour, and defines an algebra homomorphism $f\mapsto f(A)$ extending the polynomial calculus.</p>
+<p><strong>Proof.</strong> The resolvent is holomorphic on a neighborhood of $\Gamma$; the integral converges. The independence of the contour is the Cauchy theorem applied to the resolvent, which is holomorphic in the region between two contours. The homomorphism property follows from the resolvent identity and the Cauchy integral formula; the polynomial case is the Cauchy integral formula for the polynomial $f$.</p>
+<p><strong>Corollary.</strong> The spectral mapping theorem holds:</p>
+<p>$$
+\sigma(f(A))=f(\sigma(A)).
+$$</p>
+<p><strong>Proof.</strong> For $w\notin f(\sigma(A))$, the function $1/(f(z)-w)$ is holomorphic on a neighborhood of the spectrum; the functional calculus gives $(f(A)-wI)^{-1}$, so $w\notin\sigma(f(A))$. Conversely, if $w=f(\lambda)$ for an eigenvalue $\lambda$, then $f(A)-wI$ has the eigenvector of $\lambda$ in its kernel, so $w\in\sigma(f(A))$.</p>
+<h3 id="the-riesz-projector">The Riesz Projector</h3>
+<p><strong>Definition.</strong> For a contour $\Gamma$ enclosing a spectral set $\sigma_1\subset\sigma(A)$ and no other point of the spectrum, the <strong>Riesz projector</strong> is</p>
+<p>$$
+P=\frac{1}{2\pi i}\oint_\Gamma(zI-A)^{-1}\,dz .
+$$</p>
+<p><strong>Theorem.</strong> $P$ is a projection, $P^2=P$, it commutes with $A$, and its image is the direct sum of the generalized eigenspaces of the eigenvalues inside $\Gamma$. The complementary projection $I-P$ is the Riesz projector of the complementary spectral set.</p>
+<p><strong>Proof.</strong> The idempotence follows from the resolvent identity and the Cauchy theorem:</p>
+<p>$$
+P^2=\frac{1}{(2\pi i)^2}\oint_\Gamma\oint_\Gamma R(z)R(w)\,dz\,dw
+=\frac{1}{2\pi i}\oint_\Gamma R(z)\,dz=P,
+$$</p>
+<p>because $R(z)R(w)=(R(z)-R(w))/(w-z)$ and the inner integral picks the residue at $w=z$. The commutation with $A$ is the commutation of $A$ with the resolvent. The image is the generalized eigenspace by the contour integral of the resolvent, which is the spectral projection.</p>
+<p><strong>Corollary.</strong> For a simple spectrum, the Riesz projector of a single eigenvalue $\lambda_k$ is the Lagrange projector</p>
+<p>$$
+P_k=\frac{1}{2\pi i}\oint_{\Gamma_k}(zI-A)^{-1}\,dz
+=\prod_{l\ne k}\frac{A-\lambda_lI}{\lambda_k-\lambda_l}.
+$$</p>
+<p><strong>Proof.</strong> The contour around $\lambda_k$ alone picks the residue of the resolvent at $\lambda_k$, which is the spectral projector; the Lagrange formula is the polynomial expression of the same projector.</p>
+<p><strong>Remark.</strong> <strong>The Riesz projector is the analytic form of the spectral projector.</strong> It is the contour integral of the resolvent; the Lagrange polynomial is the algebraic form. The two agree at a simple spectrum, and the contour form extends to the repeated spectrum, where it projects onto the generalized eigenspace.</p>
+<h2 id="the-fourier-transform">The Fourier Transform</h2>
+<h3 id="the-schwartz-space">The Schwartz Space</h3>
+<p><strong>Definition.</strong> The <strong>Schwartz space</strong> $\mathcal{S}(\mathbb{C}^{25})$ is the space of smooth functions $f$ on $\mathbb{R}^{50}$ such that every derivative multiplied by every polynomial is bounded.</p>
+<p><strong>Proposition.</strong> $\mathcal{S}$ is a Fréchet space, stable under differentiation and under multiplication by polynomials, and the Fourier transform</p>
+<p>$$
+\hat f(\xi)=\int_{\mathbb{R}^{50}}f(x)e^{-2\pi i\langle\xi,x\rangle}\,dx
+$$</p>
+<p>maps $\mathcal{S}$ into itself.</p>
+<p><strong>Proof.</strong> The derivatives of $\hat f$ multiply by powers of $\xi$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.</p>
+<p><strong>Corollary.</strong> The Fourier transform extends to a unitary operator on $L^2(\mathbb{R}^{50})$ (Plancherel), and the inversion formula holds:</p>
+<p>$$
+f(x)=\int_{\mathbb{R}^{50}}\hat f(\xi)e^{2\pi i\langle\xi,x\rangle}\,d\xi .
+$$</p>
+<p><strong>Proof.</strong> The inversion and Plancherel theorems for the Euclidean Fourier transform; the Gaussian is the standard test function.</p>
+<h3 id="the-inversion-and-plancherel">The Inversion and Plancherel</h3>
+<p><strong>Theorem.</strong> The Fourier transform is an isomorphism of $\mathcal{S}$ with itself, and it extends to a unitary isomorphism of $L^2$; the Plancherel identity is</p>
+<p>$$
+\|f\|_2=\|\hat f\|_2 .
+$$</p>
+<p><strong>Proof.</strong> The inversion formula on the Schwartz space; the density of $\mathcal{S}$ in $L^2$; the unitarity follows from the inversion and the $L^2$ pairing.</p>
+<p><strong>Corollary.</strong> The Fourier transform converts differentiation into multiplication: $\widehat{\partial_jf}(\xi)=2\pi i\xi_j\hat f(\xi)$, and convolution into product.</p>
+<p><strong>Proof.</strong> Integration by parts; the convolution theorem is the standard one.</p>
+<h3 id="the-gaussian-and-the-heat-kernel">The Gaussian and the Heat Kernel</h3>
+<p><strong>Proposition.</strong> The Gaussian Fourier transform is</p>
+<p>$$
+\int_{\mathbb{R}^{50}}e^{-\pi|x|^2}e^{-2\pi i\langle\xi,x\rangle}\,dx=e^{-\pi|\xi|^2}.
+$$</p>
+<p><strong>Proof.</strong> The integral factors over the $50$ coordinates; the one-dimensional formula $\int_{\mathbb{R}}e^{-\pi x^2}e^{-2\pi i\xi x}dx=e^{-\pi\xi^2}$ is the standard Gaussian integral.</p>
+<p><strong>Corollary.</strong> The heat kernel on $\mathbb{R}^{50}$ is</p>
+<p>$$
+p_t(x)=\frac{1}{(4\pi t)^{25}}e^{-|x|^2/(4t)},
+$$</p>
+<p>and it satisfies $\partial_tp_t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.</p>
+<p><strong>Proof.</strong> The Fourier transform of $p_t$ is $e^{-4\pi^2t|\xi|^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.</p>
+<p><strong>Remark.</strong> <strong>The Fourier transform is the Euclidean analysis of the vector space, not the group Fourier transform of $GL_5$.</strong> It uses the additive structure of $\mathbb{C}^{25}$; the multiplicative structure enters through the algebra of matrix functions, not through the Fourier transform. The group Fourier transform of $U(5)$ is a different object, defined by the irreducible representations; it is not needed here.</p>
+<h2 id="zero-divisors-and-ordinary-matrix-analysis">Zero Divisors and Ordinary Matrix Analysis</h2>
+<h3 id="the-field-and-the-algebra">The Field and the Algebra</h3>
+<p><strong>Proposition.</strong> The field $\mathbb{C}$ has no zero divisors: if $zw=0$, then $z=0$ or $w=0$. The algebra $M_5(\mathbb{C})$ has zero divisors: $E_{12}\ne0$ and $E_{12}^2=0$; more generally, every nilpotent is a zero divisor.</p>
+<p><strong>Proof.</strong> The field is an integral domain; the matrix unit $E_{12}$ squares to zero, and $E_{12}E_{21}=E_{11}\ne0$ while $E_{12}E_{34}=0$; the nilpotents are nonzero with zero powers.</p>
+<p><strong>Corollary.</strong> The algebra is not a division algebra; it is a full matrix algebra, and its invertible elements are exactly the matrices with nonzero determinant. The ordinary matrix analysis is the analysis over the field $\mathbb{C}$, with the spectrum, the resolvent and the functional calculus; the zero divisors are the singular directions.</p>
+<p><strong>Proof.</strong> A matrix is invertible iff $\det\ne0$; the nilpotents are singular; the analysis is the complex analysis of the entries.</p>
+<p><strong>Remark.</strong> <strong>The absence of zero divisors is a property of the field, not of the algebra.</strong> The scalar field $\mathbb{C}$ has no zero divisors, and this is what makes the ordinary linear algebra and the holomorphic functional calculus work. The algebra $M_5(\mathbb{C})$ has zero divisors; the nilpotents are the simplest, and they are the source of the Jordan decomposition and the non-semisimple spectral theory. The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ also has zero divisors; the quaternion division algebra $\mathbb{H}$ has none, and that is a different story.</p>
+<h3 id="the-boundary-against-fueter-theory">The Boundary Against Fueter Theory</h3>
+<p><strong>Definition.</strong> <strong>Fueter theory</strong> is the quaternionic analysis of the Cauchy–Fueter operator</p>
+<p>$$
+\bar\partial=\partial_{q_0}+i\partial_{q_1}+j\partial_{q_2}+k\partial_{q_3},
+$$</p>
+<p>acting on functions of a quaternion variable $q=q_0+q_1i+q_2j+q_3k$; the Fueter-regular functions are the solutions of $\bar\partial f=0$.</p>
+<p><strong>Theorem.</strong> The holomorphic functional calculus on $M_5(\mathbb{C})$ is not Fueter theory. Fueter theory needs the quaternion (or Clifford) algebra and its Dirac operator; $M_5(\mathbb{C})$ is a complex matrix algebra, not a Clifford algebra, and its analysis is the ordinary complex analysis of $\mathbb{C}^{25}$.</p>
+<p><strong>Proof.</strong> The Fueter operator uses the multiplication and the conjugates of the quaternion algebra; the regularity is a first-order system with four real variables. The holomorphic functional calculus uses the resolvent of a matrix and the Cauchy integral in the complex plane; it is the analysis of the spectrum, not of a Dirac operator. The algebra $M_5(\mathbb{C})$ has no quaternionic or Clifford structure of the required kind; its zero divisors and its complex dimension $25$ are the boundary.</p>
+<p><strong>Corollary.</strong> The biquaternion article's spinor analysis is the $M_2$ case; the $M_5$ analysis is the ordinary matrix analysis, and the two are separated by the dimension and the algebra. The Fueter theory belongs to the quaternionic side, not to the $M_5$ side.</p>
+<p><strong>Proof.</strong> The biquaternion algebra is $M_2(\mathbb{C})$; its spinors are two-dimensional; the $M_5$ carrier is five-dimensional; the Fueter operator is defined on the quaternions, not on $M_5$.</p>
+<p><strong>Remark.</strong> <strong>The boundary is structural, not a matter of notation.</strong> The Wirtinger calculus, the resolvent and the Fourier transform are the tools of the complex analysis of $M_5$; the Cauchy–Fueter operator and the Clifford modules are the tools of the quaternionic analysis. The two theories share the idea of a first-order operator and a Cauchy integral, but they act on different structures. The article stops at the boundary; the quaternionic side is the biquaternion corpus.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_5(\mathbb{C})$ is a complex manifold of dimension $25$ and a real manifold of dimension $50$, with the Lebesgue measure and the Gaussian integral $\int e^{-\operatorname{tr}(A^*A)}dA=\pi^{25}$. The product, the inverse, the determinant and the exponential are holomorphic, with derivatives</p>
+<p>$$
+D(AB)=HB+AK,\qquad D(\operatorname{inv})_A(H)=-A^{-1}HA^{-1},\qquad D\det_A(H)=\operatorname{tr}(\operatorname{adj}(A)H),
+$$</p>
+<p>and</p>
+<p>$$
+D\exp_A(H)=e^A\sum_{m\ge0}\frac{(-1)^m}{(m+1)!}\operatorname{ad}_A^m(H).
+$$</p>
+<p>$$
+\boxed{\ f(A)=\frac{1}{2\pi i}\oint_\Gamma f(z)(zI-A)^{-1}dz;\qquad P=\frac{1}{2\pi i}\oint_\Gamma(zI-A)^{-1}dz;\qquad \widehat f(\xi)=\int f(x)e^{-2\pi i\langle\xi,x\rangle}dx.\ }
+$$</p>
+<p>The Wirtinger calculus gives the holomorphic functions; the holomorphic functional calculus gives the spectral projectors and the spectral mapping theorem; the Fourier transform on $\mathbb{C}^{25}$ gives the Schwartz space, the inversion, the Plancherel theorem, the Gaussian and the heat kernel. The field $\mathbb{C}$ has no zero divisors; the algebra $M_5$ has the nilpotent zero divisors; the ordinary matrix analysis is the analysis over the field, and the boundary against Fueter theory is the quaternionic/Clifford structure that $M_5$ does not carry.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complex dimension</td>
+<td>$25$</td>
+</tr>
+<tr>
+<td>Real dimension</td>
+<td>$50$</td>
+</tr>
+<tr>
+<td>Lebesgue measure</td>
+<td>$\prod_{ij}dx_{ij}dy_{ij}$</td>
+</tr>
+<tr>
+<td>Gaussian integral</td>
+<td>$\pi^{25}$</td>
+</tr>
+<tr>
+<td>Derivative of inverse</td>
+<td>$-A^{-1}HA^{-1}$</td>
+</tr>
+<tr>
+<td>Derivative of determinant</td>
+<td>$\operatorname{tr}(\operatorname{adj}(A)H)$</td>
+</tr>
+<tr>
+<td>Derivative of exponential</td>
+<td>$e^A\sum(-1)^m\operatorname{ad}_A^m(H)/(m+1)!$</td>
+</tr>
+<tr>
+<td>Resolvent</td>
+<td>$(zI-A)^{-1}$</td>
+</tr>
+<tr>
+<td>Riesz projector</td>
+<td>$\frac{1}{2\pi i}\oint_\Gamma(zI-A)^{-1}dz$</td>
+</tr>
+<tr>
+<td>Fourier transform</td>
+<td>$\int f(x)e^{-2\pi i\langle\xi,x\rangle}dx$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$z_{ij}=x_{ij}+iy_{ij}$</td>
+<td>The complex coordinates</td>
+</tr>
+<tr>
+<td>$\partial/\partial z_{ij}$, $\partial/\partial\bar z_{ij}$</td>
+<td>The Wirtinger derivatives</td>
+</tr>
+<tr>
+<td>$R(z)=(zI-A)^{-1}$</td>
+<td>The resolvent</td>
+</tr>
+<tr>
+<td>$\sigma(A)$, $\rho(A)$</td>
+<td>The spectrum and the resolvent set</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>The Riesz projector</td>
+</tr>
+<tr>
+<td>$\mathcal{S}(\mathbb{C}^{25})$</td>
+<td>The Schwartz space</td>
+</tr>
+<tr>
+<td>$\hat f$</td>
+<td>The Fourier transform</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Walter Rudin, <em>Functional Analysis</em> (McGraw-Hill, second edition, 1991), for the holomorphic functional calculus, the resolvent and the spectral mapping theorem.</li>
+<li>Elias M. Stein and Rami Shakarchi, <em>Fourier Analysis: An Introduction</em> (Princeton University Press, 2003), for the Schwartz space, the Fourier inversion, the Plancherel theorem and the Gaussian.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the derivatives of the inverse, the determinant and the exponential.</li>
+<li>Rolf Nevanlinna and Veikko Paatero, <em>Introduction to Complex Analysis</em> (Addison-Wesley, 1969), for the Wirtinger calculus and the Cauchy integral.</li>
+<li>Rudolf Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u=0$ und $\Delta\Delta u=0$ mit vier reellen Variablen", <em>Commentarii Mathematici Helvetici</em> 7 (1934), 307–330, for the Fueter operator and the quaternionic analysis.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m5c.html">The Element, the Coordinates and the Trace</a>, for the trace, the determinant and the Jordan decomposition.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the Hermitian form, the norms and the real codimension $2$.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m5c.html">Spectral Theory and the Spectral Projectors</a>, for the spectral theorem and the projectors.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m5c.html">The Exponential and the Lie Group</a>, for the exponential and the logarithm.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">Ideals, Peirce Decompositions and Spinors in the Biquaternion Algebra</a>, for the biquaternion side and the boundary against Fueter theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

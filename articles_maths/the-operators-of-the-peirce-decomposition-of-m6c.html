@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Operators of the Peirce Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-operators-of-the-peirce-decomposition"><strong>The Operators of the Peirce Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Peirce decomposition of $M_6(\mathbb{C})$ is described by four families of linear operators on the algebra:</p>
+<p>$$
+L_a(X)=aX,\qquad
+R_a(X)=Xa,\qquad
+T_{a,b}(X)=aXb,\qquad
+\operatorname{ad}_a(X)=aX-Xa .
+$$</p>
+<p>They are the left and right multiplications, the sandwich, and the inner derivation. Each is a $36\times36$ matrix in the basis of matrix units, and each acts on the Peirce corners $A_{rs}$ by carrying them to corners determined by the Peirce labels of $a$ and $b$. The sandwich $T_{a,b}$ carries $A_{rs}$ to $A_{il}$ when $a\in A_{ij}$ and $b\in A_{kl}$ with $j=r$ and $s=k$.</p>
+<p>The derivations of the algebra are the inner ones,</p>
+<p>$$
+\operatorname{Der}(M_6)=\mathfrak{sl}_6(\mathbb{C}),
+\qquad
+\dim=35,
+$$</p>
+<p>and the automorphisms are the inner ones,</p>
+<p>$$
+\operatorname{Aut}(M_6)=PGL_6(\mathbb{C}),
+$$</p>
+<p>with the transpose as an anti-automorphism and the transpose-inverse as the outer automorphism of the Lie algebra $\mathfrak{sl}_6$.</p>
+<p>The article assumes the Peirce decomposition of <em>The Peirce Decomposition</em> and the tensor product of <em>The Modules and the Minimal Left Ideals</em>. It uses no form and no topology. The adjoint action and the orbits are <em>The Adjoint Action, the Orbits and the Flag Variety</em>; the derivations of the biquaternion algebra are <em>Derivations of the Biquaternion Algebra</em>.</p>
+<h2 id="the-multiplication-operators">The Multiplication Operators</h2>
+<h3 id="left-and-right-multiplication">Left and Right Multiplication</h3>
+<p><strong>Definition.</strong> For $a\in M_6(\mathbb{C})$,</p>
+<p>$$
+L_a:M_6\longrightarrow M_6,\quad X\longmapsto aX,
+\qquad
+R_a:M_6\longrightarrow M_6,\quad X\longmapsto Xa .
+$$</p>
+<p><strong>Theorem.</strong> The maps $L_a$ and $R_a$ are linear, and</p>
+<p>$$
+L_aL_b=L_{ab},\qquad
+R_aR_b=R_{ba},\qquad
+L_aR_b=R_bL_a .
+$$</p>
+<p><strong>Proof.</strong> $L_aL_b(X)=a(bX)=(ab)X$; $R_aR_b(X)=(Xb)a=X(ba)$; the left and right multiplications commute because $(aX)b=a(Xb)$.</p>
+<p><strong>Corollary (the regular representation).</strong> The map</p>
+<p>$$
+a\longmapsto L_a
+$$</p>
+<p>is an injective algebra homomorphism $M_6\to\operatorname{End}(M_6)\cong M_{36}$, and</p>
+<p>$$
+a\longmapsto R_a
+$$</p>
+<p>is an injective anti-homomorphism.</p>
+<p><strong>Proof.</strong> $L_a=0$ implies $a=L_a(I_6)=0$; the product rule is $L_aL_b=L_{ab}$. For $R$, the product rule is reversed.</p>
+<p><strong>Theorem (the matrices).</strong> With $\operatorname{vec}$ stacking the columns,</p>
+<p>$$
+L_a=I_6\otimes a,\qquad
+R_a=a^{\mathsf T}\otimes I_6 .
+$$</p>
+<p><strong>Proof.</strong> $\operatorname{vec}(aX)=(I_6\otimes a)\operatorname{vec}X$ and $\operatorname{vec}(Xa)=(a^{\mathsf T}\otimes I_6)\operatorname{vec}X$.</p>
+<h3 id="the-sandwich">The Sandwich</h3>
+<p><strong>Definition.</strong> The <strong>sandwich</strong> is</p>
+<p>$$
+T_{a,b}=L_aR_b:M_6\longrightarrow M_6,\quad
+X\longmapsto aXb .
+$$</p>
+<p><strong>Theorem.</strong> The sandwiches compose by</p>
+<p>$$
+T_{a,b}T_{c,d}=T_{ac,db},
+$$</p>
+<p>and in the vectorised form</p>
+<p>$$
+T_{a,b}=b^{\mathsf T}\otimes a .
+$$</p>
+<p><strong>Proof.</strong> $a(cXd)b=(ac)X(db)$; $\operatorname{vec}(aXb)=(b^{\mathsf T}\otimes a)\operatorname{vec}X$.</p>
+<p><strong>Corollary (the sandwich monoid).</strong> The set of sandwiches is a monoid under composition, with identity $T_{I_6,I_6}$; its group of units is</p>
+<p>$$
+(GL_6\times GL_6)/\mathbb{C}^\times,
+$$</p>
+<p>where the scalar acts diagonally.</p>
+<p><strong>Proof.</strong> $T_{a,b}$ is invertible iff $a$ and $b$ are invertible, with inverse $T_{a^{-1},b^{-1}}$. The pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same sandwich, and this is the only ambiguity.</p>
+<h3 id="the-inner-derivation">The Inner Derivation</h3>
+<p><strong>Definition.</strong> The <strong>inner derivation</strong> is</p>
+<p>$$
+\operatorname{ad}_a=L_a-R_a:M_6\longrightarrow M_6,\quad
+X\longmapsto aX-Xa .
+$$</p>
+<p><strong>Theorem.</strong> $\operatorname{ad}_a$ is a derivation:</p>
+<p>$$
+\operatorname{ad}_a(XY)=\operatorname{ad}_a(X)Y+X\operatorname{ad}_a(Y),
+$$</p>
+<p>and in the vectorised form</p>
+<p>$$
+\operatorname{ad}_a=I_6\otimes a-a^{\mathsf T}\otimes I_6 .
+$$</p>
+<p><strong>Proof.</strong> $aXY-XYa=(aX-Xa)Y+X(aY-Ya)$. The matrix form is the difference of the matrices of $L_a$ and $R_a$.</p>
+<p><strong>Corollary (the invariants).</strong> The operators have</p>
+<p>$$
+\operatorname{tr}L_a=\operatorname{tr}R_a=6\operatorname{tr}a,
+\qquad
+\operatorname{tr}T_{a,b}=\operatorname{tr}(a)\operatorname{tr}(b),
+\qquad
+\operatorname{tr}\operatorname{ad}_a=0,
+$$</p>
+<p>and</p>
+<p>$$
+\det L_a=\det R_a=(\det a)^6,
+\qquad
+\det T_{a,b}=(\det a\det b)^6,
+$$</p>
+<p>and</p>
+<p>$$
+\operatorname{rank}L_a=6\operatorname{rank}a,
+\qquad
+\operatorname{rank}T_{a,b}=\operatorname{rank}(a)\operatorname{rank}(b),
+\qquad
+\operatorname{rank}\operatorname{ad}_a=36-\dim Z(a),
+$$</p>
+<p>where $Z(a)$ is the centralizer of $a$. The eigenvalues of $\operatorname{ad}_a$ are the differences $\lambda_i-\lambda_j$ of the eigenvalues of $a$.</p>
+<p><strong>Proof.</strong> The trace and determinant of a Kronecker product; the rank of $L_a$ is $6$ times the rank of $a$ because $X\mapsto aX$ has kernel of dimension $6\dim\ker a$; the kernel of $\operatorname{ad}_a$ is the centralizer. On the eigenbasis of $a$, $\operatorname{ad}_a(E_{ij})=(\lambda_i-\lambda_j)E_{ij}$.</p>
+<p><strong>Corollary (the kernel).</strong> $\operatorname{ad}_a=0$ if and only if $a$ is scalar.</p>
+<p><strong>Proof.</strong> $a$ commutes with every $X$ if and only if $a\in\mathbb{C}I_6$.</p>
+<h2 id="the-action-on-the-peirce-corners">The Action on the Peirce Corners</h2>
+<h3 id="the-corner-labels">The Corner Labels</h3>
+<p>Let $P_1,\dots,P_6$ be the Lagrange projectors and $A_{rs}=P_rM_6P_s$ the fine Peirce lines.</p>
+<p><strong>Theorem.</strong> For $a\in A_{ij}$ and $X\in A_{rs}$,</p>
+<p>$$
+aX\in A_{is}\ \text{if }j=r,\qquad
+aX=0\ \text{otherwise}.
+$$</p>
+<p>For $b\in A_{kl}$ and $X\in A_{rs}$,</p>
+<p>$$
+Xb\in A_{rl}\ \text{if }s=k,\qquad
+Xb=0\ \text{otherwise}.
+$$</p>
+<p>For the sandwich with $a\in A_{ij}$ and $b\in A_{kl}$,</p>
+<p>$$
+T_{a,b}(A_{rs})\subseteq A_{il}
+\ \text{if }j=r\text{ and }s=k,\qquad
+T_{a,b}(A_{rs})=0\ \text{otherwise}.
+$$</p>
+<p><strong>Proof.</strong> The product $A_{ij}A_{rs}$ is contained in $\delta_{jr}A_{is}$ by the Peirce multiplication rule; the right multiplication is the same on the other side; the sandwich is the composition.</p>
+<p><strong>Corollary (the corner matrix).</strong> In the Peirce basis, $T_{a,b}$ has a single nonzero block, from the corner $A_{rs}$ to the corner $A_{il}$, whenever $a\in A_{ij}$, $b\in A_{kl}$ with $j=r$, $s=k$. All other blocks vanish.</p>
+<p><strong>Proof.</strong> The theorem gives the only nonzero corner map; the matrix is the corresponding block.</p>
+<h3 id="the-peirce-operators">The Peirce Operators</h3>
+<p><strong>Definition.</strong> The <strong>Peirce operators</strong> are</p>
+<p>$$
+E_{rs}=L_{P_r}R_{P_s},
+\qquad
+E_{rs}(X)=P_rXP_s .
+$$</p>
+<p><strong>Theorem.</strong> The Peirce operators are the corner projectors:</p>
+<p>$$
+E_{rs}^2=E_{rs},\qquad
+E_{rs}E_{tu}=\delta_{st}E_{ru},\qquad
+\sum_{r,s=1}^{6}E_{rs}=I_{36},
+$$</p>
+<p>and</p>
+<p>$$
+E_{rs}(M_6)=A_{rs},\qquad
+\dim A_{rs}=1 .
+$$</p>
+<p><strong>Proof.</strong> $P_r^2=P_r$, $P_rP_s=\delta_{rs}P_r$; the composition of the corner projections is the corner projection when the intermediate labels agree. The sum over all corners is the identity because the Peirce decomposition is direct and complete.</p>
+<p><strong>Corollary (the left and right Peirce operators).</strong> The operators $L_{P_r}$ and $R_{P_s}$ are the sums of the corner projectors in their row and column:</p>
+<p>$$
+L_{P_r}=\sum_{s=1}^{6}E_{rs},
+\qquad
+R_{P_s}=\sum_{r=1}^{6}E_{rs}.
+$$</p>
+<p><strong>Proof.</strong> $P_rX=\sum_sP_rXP_s$ because $\sum_sP_s=I_6$; the same on the right.</p>
+<p><strong>Corollary (the grading derivation).</strong> The derivation $\operatorname{ad}_{P_r}$ acts on the corner $A_{st}$ by</p>
+<p>$$
+\operatorname{ad}_{P_r}(A_{st})=(\delta_{rs}-\delta_{rt})A_{st}.
+$$</p>
+<p><strong>Proof.</strong> $P_rP_sP_t-P_sP_tP_r=(\delta_{rs}-\delta_{rt})P_sP_t$.</p>
+<p><strong>Remark (the corner algebra).</strong> The Peirce operators generate the commutative algebra of diagonal operators in the Peirce basis, of dimension $36$; the left and right multiplications generate the full endomorphism algebra $\operatorname{End}(M_6)\cong M_{36}$.</p>
+<h2 id="the-derivations">The Derivations</h2>
+<h3 id="the-inner-derivations">The Inner Derivations</h3>
+<p><strong>Theorem.</strong> Every derivation of $M_6(\mathbb{C})$ is inner:</p>
+<p>$$
+\operatorname{Der}(M_6)=\{\operatorname{ad}_a:a\in M_6\}.
+$$</p>
+<p><strong>Proof.</strong> This is the standard theorem that every derivation of a central simple algebra over a field is inner; $M_6(\mathbb{C})$ is central simple over $\mathbb{C}$. The inner derivations form the subspace $\{\operatorname{ad}_a\}$, isomorphic to $\mathfrak{gl}_6/\mathbb{C}I_6\cong\mathfrak{sl}_6$, of dimension $35$; the theorem says that this subspace is all of $\operatorname{Der}(M_6)$.</p>
+<p><strong>Theorem.</strong> The map</p>
+<p>$$
+\mathfrak{sl}_6(\mathbb{C})\longrightarrow\operatorname{Der}(M_6),
+\qquad
+a\longmapsto\operatorname{ad}_a,
+$$</p>
+<p>is an isomorphism of Lie algebras, and</p>
+<p>$$
+\dim\operatorname{Der}(M_6)=35 .
+$$</p>
+<p><strong>Proof.</strong> $\operatorname{ad}_{[a,b]}=[\operatorname{ad}_a,\operatorname{ad}_b]$; the kernel is the scalars, which are exactly the traceless condition after removing the center: $\operatorname{ad}_a=0$ iff $a\in\mathbb{C}I_6$, and the traceless part is the complement. The dimension is $36-1=35$.</p>
+<p><strong>Corollary (the exact sequence).</strong></p>
+<p>$$
+0\longrightarrow\mathbb{C}I_6\longrightarrow\mathfrak{gl}_6
+\overset{\operatorname{ad}}{\longrightarrow}\operatorname{Der}(M_6)\longrightarrow0
+$$</p>
+<p>is exact, and $\operatorname{Der}(M_6)\cong\mathfrak{sl}_6$.</p>
+<p><strong>Proof.</strong> The kernel of ad is the center $\mathbb{C}I_6$; the image is all derivations; the quotient $\mathfrak{gl}_6/\mathbb{C}I_6\cong\mathfrak{sl}_6$.</p>
+<h3 id="the-derivations-of-the-peirce-algebra">The Derivations of the Peirce Algebra</h3>
+<p><strong>Theorem.</strong> The derivation $\operatorname{ad}_{P_r}$ has eigenvalues $0,\pm1$ on the Peirce corners, and the derivations $\operatorname{ad}_{P_1},\dots,\operatorname{ad}_{P_5}$ span the Cartan subalgebra of the diagonal torus of $\mathfrak{sl}_6$.</p>
+<p><strong>Proof.</strong> The corner $A_{st}$ is an eigenline with eigenvalue $\delta_{rs}-\delta_{rt}$; the five independent differences span the diagonal traceless matrices.</p>
+<p><strong>Corollary (the Peirce grading).</strong> The $\mathbb{Z}^6$-grading by the labels is the joint eigenspace decomposition of the commuting derivations $\operatorname{ad}_{P_1},\dots,\operatorname{ad}_{P_6}$; the corner $A_{st}$ has weight $e_s-e_t$.</p>
+<p><strong>Proof.</strong> The derivations commute because the $P_r$ commute; the eigenvalues are the differences of the basis vectors.</p>
+<h2 id="the-automorphisms">The Automorphisms</h2>
+<h3 id="the-inner-automorphisms">The Inner Automorphisms</h3>
+<p><strong>Theorem (Skolem–Noether).</strong> Every automorphism of $M_6(\mathbb{C})$ is inner:</p>
+<p>$$
+\operatorname{Aut}(M_6)\cong PGL_6(\mathbb{C}),
+\qquad
+\Phi_a(X)=aXa^{-1}.
+$$</p>
+<p><strong>Proof.</strong> The algebra is a central simple algebra; an automorphism sends the minimal left ideal $M_6P$ to another minimal left ideal, and the induced map is implemented by an invertible matrix, unique up to the center. The center acts trivially, giving the projective quotient.</p>
+<p><strong>Corollary (the dimension).</strong> $\dim PGL_6=35$, and the inner automorphism group is the adjoint group of $\mathfrak{sl}_6$.</p>
+<p><strong>Proof.</strong> $GL_6$ has dimension $36$; the center is one-dimensional; the quotient has dimension $35$. The Lie algebra of $PGL_6$ is $\mathfrak{sl}_6$.</p>
+<h3 id="the-outer-automorphisms">The Outer Automorphisms</h3>
+<p><strong>Theorem.</strong> The transpose</p>
+<p>$$
+X\longmapsto X^{\mathsf T}
+$$</p>
+<p>is an anti-automorphism of $M_6(\mathbb{C})$, not an automorphism; it is not inner.</p>
+<p><strong>Proof.</strong> $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$, so the order is reversed. An inner automorphism $\Phi_a$ preserves products, $\Phi_a(XY)=\Phi_a(X)\Phi_a(Y)$; the transpose reverses them, so it is not an automorphism and hence not inner. It is an anti-automorphism.</p>
+<p><strong>Theorem (the automorphisms of the Lie algebra).</strong> For $n=6$,</p>
+<p>$$
+\operatorname{Aut}(\mathfrak{sl}_6)=PGL_6\rtimes\mathbb{Z}/2,
+$$</p>
+<p>where the nontrivial coset is represented by the <strong>outer automorphism</strong></p>
+<p>$$
+X\longmapsto-X^{\mathsf T}.
+$$</p>
+<p><strong>Proof.</strong> The automorphism group of the Dynkin diagram $A_5$ is $\mathbb{Z}/2$; the corresponding outer automorphism is the negative transpose. It preserves the bracket:</p>
+<p>$$
+[-X^{\mathsf T},-Y^{\mathsf T}]
+=X^{\mathsf T}Y^{\mathsf T}-Y^{\mathsf T}X^{\mathsf T}
+=(YX-XY)^{\mathsf T}
+=-[X,Y]^{\mathsf T},
+$$</p>
+<p>so $X\mapsto-X^{\mathsf T}$ is a Lie algebra automorphism. It is not inner for $n\ge3$.</p>
+<p><strong>Corollary (the two kinds).</strong> The inner automorphisms are the conjugations $\Phi_a$; the outer one is the negative transpose. The associative algebra has only the inner automorphisms; the Lie algebra has the extra outer involution.</p>
+<p><strong>Proof.</strong> The first statement is Skolem–Noether; the second is the Dynkin diagram symmetry.</p>
+<h2 id="the-sandwich-as-a-map-of-corners">The Sandwich as a Map of Corners</h2>
+<h3 id="the-corner-map">The Corner Map</h3>
+<p><strong>Theorem.</strong> The sandwich $T_{a,b}$ restricts to a linear map</p>
+<p>$$
+T_{a,b}:A_{rs}\longrightarrow A_{il},
+\qquad
+a\in A_{ij},\quad b\in A_{kl},\quad j=r,\quad s=k,
+$$</p>
+<p>and to zero on all other corners. In the Peirce basis it is the single block</p>
+<p>$$
+A_{rs}\longrightarrow A_{il},
+\qquad
+X\longmapsto aXb .
+$$</p>
+<p><strong>Proof.</strong> This is the corner action of the theorem above.</p>
+<p><strong>Corollary (the corner multiplication).</strong> The sandwich gives the multiplication map</p>
+<p>$$
+A_{ij}\times A_{kl}\longrightarrow\operatorname{Hom}(A_{rs},A_{il}),
+\qquad
+(a,b)\longmapsto T_{a,b},
+$$</p>
+<p>with $j=r$, $s=k$. In the rank-one case all four corners are one-dimensional, and the sandwich is a scalar.</p>
+<p><strong>Proof.</strong> The domain of $T_{a,b}$ is $A_{rs}$; the target is $A_{il}$; the map is bilinear in $(a,b)$.</p>
+<h3 id="the-sandwich-matrix">The Sandwich Matrix</h3>
+<p><strong>Theorem.</strong> In the basis of matrix units $E_{ij}$,</p>
+<p>$$
+T_{a,b}(E_{rs})=\delta_{jr}\delta_{sk}\,a_{ij}b_{kl}\,E_{il},
+$$</p>
+<p>so the matrix of $T_{a,b}$ has entries</p>
+<p>$$
+(T_{a,b})_{(il),(rs)}=a_{ij}b_{kl}\,\delta_{jr}\delta_{sk}.
+$$</p>
+<p><strong>Proof.</strong> $aE_{rs}b=(\sum_{ij}a_{ij}E_{ij})E_{rs}(\sum_{kl}b_{kl}E_{kl})=a_{ir}b_{sl}E_{il}$? Let me compute: $E_{ij}E_{rs}E_{kl}=\delta_{jr}\delta_{sk}E_{il}$, so the coefficient is $a_{ij}b_{kl}$ with $j=r$, $s=k$. The index of $a$ is $(i,j)=(i,r)$ and of $b$ is $(k,l)=(s,l)$; so the entry is $a_{ir}b_{sl}$.</p>
+<p><strong>Corollary (the rank).</strong> $\operatorname{rank}T_{a,b}=\operatorname{rank}(a)\operatorname{rank}(b)$.</p>
+<p><strong>Proof.</strong> $T_{a,b}=b^{\mathsf T}\otimes a$; the rank of a Kronecker product is the product of the ranks.</p>
+<p><strong>Corollary (the invertible sandwiches).</strong> $T_{a,b}$ is invertible iff $a$ and $b$ are invertible; the group of invertible sandwiches is $(GL_6\times GL_6)/\mathbb{C}^\times$.</p>
+<p><strong>Proof.</strong> The Kronecker product is invertible iff both factors are; the scalar ambiguity is the diagonal.</p>
+<h3 id="the-sandwich-monoid">The Sandwich Monoid</h3>
+<p><strong>Theorem.</strong> The map</p>
+<p>$$
+M_6\times M_6\longrightarrow\operatorname{End}(M_6),
+\qquad
+(a,b)\longmapsto T_{a,b},
+$$</p>
+<p>is a monoid homomorphism with kernel the diagonal scalars, and its image is the proper submonoid of the decomposable operators.</p>
+<p><strong>Proof.</strong> The composition law $T_{a,b}T_{c,d}=T_{ac,db}$; the pairs $(a,b)$ and $(\lambda a,\lambda^{-1}b)$ give the same sandwich. The image is not all of $\operatorname{End}(M_6)$: the sum of two decomposable operators need not be decomposable.</p>
+<p><strong>Remark (the corner reading).</strong> The sandwich is the only operator that sees two Peirce labels at once: $L_a$ sees the left label, $R_b$ the right label, and $T_{a,b}$ the pair. <strong>The sandwich is the corner map of the Peirce decomposition.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The four operator families are</p>
+<p>$$
+L_a(X)=aX,\qquad
+R_a(X)=Xa,\qquad
+T_{a,b}(X)=aXb,\qquad
+\operatorname{ad}_a(X)=aX-Xa,
+$$</p>
+<p>with matrices</p>
+<p>$$
+L_a=I_6\otimes a,\qquad
+R_a=a^{\mathsf T}\otimes I_6,\qquad
+T_{a,b}=b^{\mathsf T}\otimes a,\qquad
+\operatorname{ad}_a=I_6\otimes a-a^{\mathsf T}\otimes I_6 .
+$$</p>
+<p>On the Peirce corners, $L_a$ carries $A_{rs}$ to $A_{is}$ when $a\in A_{ij}$ with $j=r$; $R_b$ carries $A_{rs}$ to $A_{rl}$ when $b\in A_{kl}$ with $s=k$; and $T_{a,b}$ carries $A_{rs}$ to $A_{il}$ when $a\in A_{ij}$, $b\in A_{kl}$ with $j=r$, $s=k$.</p>
+<p>$$
+\boxed{\ T_{a,b}:A_{rs}\to A_{il},\qquad \operatorname{Der}(M_6)=\mathfrak{sl}_6,\qquad \operatorname{Aut}(M_6)=PGL_6 .\ }
+$$</p>
+<p>The derivations are the inner ones $\operatorname{ad}_a$, with kernel the scalars and image $\mathfrak{sl}_6$, of dimension $35$. The automorphisms are the inner conjugations $PGL_6$; the transpose is an anti-automorphism, and the negative transpose is the outer automorphism of the Lie algebra $\mathfrak{sl}_6$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Matrix</th>
+<th>Corner action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a$</td>
+<td>$I_6\otimes a$</td>
+<td>$A_{rs}\to A_{is}$ if $a\in A_{ij}$, $j=r$</td>
+</tr>
+<tr>
+<td>$R_b$</td>
+<td>$b^{\mathsf T}\otimes I_6$</td>
+<td>$A_{rs}\to A_{rl}$ if $b\in A_{kl}$, $s=k$</td>
+</tr>
+<tr>
+<td>$T_{a,b}$</td>
+<td>$b^{\mathsf T}\otimes a$</td>
+<td>$A_{rs}\to A_{il}$ if $a\in A_{ij}$, $b\in A_{kl}$, $j=r$, $s=k$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_a$</td>
+<td>$I_6\otimes a-a^{\mathsf T}\otimes I_6$</td>
+<td>eigenvalue $\delta_{rs}-\delta_{rt}$ on $A_{st}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a$</td>
+<td>left multiplication $X\mapsto aX$</td>
+</tr>
+<tr>
+<td>$R_a$</td>
+<td>right multiplication $X\mapsto Xa$</td>
+</tr>
+<tr>
+<td>$T_{a,b}$</td>
+<td>sandwich $X\mapsto aXb$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_a$</td>
+<td>inner derivation $X\mapsto aX-Xa$</td>
+</tr>
+<tr>
+<td>$E_{rs}=L_{P_r}R_{P_s}$</td>
+<td>Peirce corner projector</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(M_6)$</td>
+<td>the derivations, isomorphic to $\mathfrak{sl}_6$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(M_6)$</td>
+<td>the automorphisms, isomorphic to $PGL_6$</td>
+</tr>
+<tr>
+<td>$\Phi_a$</td>
+<td>the inner automorphism $X\mapsto aXa^{-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>, for the corners and the multiplication rule.</li>
+<li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the derivations and the automorphisms.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the inner automorphisms as a group action.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals</a>, for the left and right regular modules.</li>
+<li><a href="the-enveloping-operator-algebra.html">The Enveloping Operator Algebra</a>, for the sandwich monoid and its span.</li>
+<li><a href="derivations-of-the-biquaternion-algebra.html">Derivations of the Biquaternion Algebra</a>, for the rank-one case.</li>
+<li><a href="the-outer-automorphism-of-sl6.html">The Outer Automorphism of $\mathfrak{sl}_6$</a>, for the Dynkin diagram symmetry.</li>
+<li><a href="skolem-noether-theorem.html">Skolem–Noether Theorem</a>, for the innerness of the automorphisms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

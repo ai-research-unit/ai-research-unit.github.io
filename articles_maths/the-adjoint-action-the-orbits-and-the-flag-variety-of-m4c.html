@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Action, the Orbits and the Flag Variety — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-action-the-orbits-and-the-flag-variety"><strong>The Adjoint Action, the Orbits and the Flag Variety</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The projective group $PGL_4(\mathbb{C})$ acts on $M_4(\mathbb{C})$ by conjugation, and the orbits are the Jordan types.</strong> The orbit of the root is the regular semisimple orbit $PGL_4/T$, of dimension $12$; its stabiliser is the gauge torus $T\cong(\mathbb{C}^\times)^3$; the orbit–stabiliser count is $15=12+3$. The full flag variety $GL_4/B$ has dimension $6$, the Grassmannians are $\operatorname{Gr}(1,4)=\mathbb{P}^3$ of dimension $3$ and $\operatorname{Gr}(2,4)$ of dimension $4$, and the gauge is the fibre of the frame bundle over the root orbit.</p>
+<p>The article describes the adjoint action, the orbit–stabiliser theorem, the Jordan classification, the root orbit and the gauge, the flag variety and the Grassmannians, and the nilpotent orbits.</p>
+<p>The root and the gauge are <em>The Frame, the Simple Nilpotents and the Gauge</em>; the Peirce decomposition is <em>The Peirce Decomposition</em>; the operators are <em>The Operators of the Peirce Decomposition</em>; the topology of the flag variety is <em>The Topology of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-adjoint-action">The Adjoint Action</h2>
+<p><strong>The group action.</strong> The group $PGL_4(\mathbb{C})$ acts on $M_4(\mathbb{C})$ by conjugation:</p>
+<p>$$
+PGL_4\times M_4\longrightarrow M_4,\qquad
+(S,A)\longmapsto SAS^{-1}.
+$$</p>
+<p>The action is well defined because the scalar in $S$ cancels. The kernel of the action is trivial: if $SAS^{-1}=A$ for all $A$, then $S$ commutes with all matrices, hence $S\in\mathbb{C}^\times I$ by the centre theorem, which is the identity in $PGL_4$.</p>
+<p><strong>The Lie algebra action.</strong> The Lie algebra $\mathfrak{sl}_4$ acts by the adjoint:</p>
+<p>$$
+\mathfrak{sl}_4\times M_4\longrightarrow M_4,\qquad
+(X,A)\longmapsto[X,A]=XA-AX.
+$$</p>
+<p>The group action is the exponential of the Lie algebra action: for $X\in\mathfrak{sl}_4$,</p>
+<p>$$
+e^{tX}Ae^{-tX}=A+t[X,A]+\frac{t^2}{2}[X,[X,A]]+\cdots.
+$$</p>
+<p><strong>The invariants.</strong> The conjugation action preserves the trace, the determinant, the characteristic polynomial, the minimal polynomial, the rank and the Jordan type. It does not preserve the singular values or the Frobenius norm unless the conjugating matrix is unitary. The polynomial invariants of the action are generated by the coefficients of the characteristic polynomial,</p>
+<p>$$
+\operatorname{tr}A,\quad \operatorname{tr}(A^2),\quad \operatorname{tr}(A^3),\quad \operatorname{tr}(A^4),
+$$</p>
+<p>equivalently by the elementary symmetric functions of the eigenvalues.</p>
+<p><strong>The orbits are the conjugacy classes.</strong> Two matrices are in the same orbit exactly when they are conjugate, and the conjugacy classes over $\mathbb{C}$ are the <strong>Jordan types</strong>: the unordered eigenvalues together with the Jordan block structure for each eigenvalue. The orbit of $A$ is</p>
+<p>$$
+\mathcal{O}_A=\{SAS^{-1}:S\in GL_4\}.
+$$</p>
+<p><strong>The orbit–stabiliser theorem.</strong> For $A\in M_4$,</p>
+<p>$$
+\dim\mathcal{O}_A=\dim PGL_4-\dim\operatorname{Stab}_{PGL_4}(A)=15-\dim Z_{PGL_4}(A),
+$$</p>
+<p>where the stabiliser is the centraliser modulo scalars. In terms of the centraliser in $GL_4$,</p>
+<p>$$
+\dim\mathcal{O}_A=16-\dim Z_{GL_4}(A),
+$$</p>
+<p>because the scalar centraliser is divided out on both sides.</p>
+<p><strong>The centraliser.</strong> The centraliser of $A$ in $GL_4$ is the group of invertible matrices commuting with $A$. For a semisimple element with eigenvalue multiplicities $m_1,\dots,m_r$ it is $\prod_k GL_{m_k}$, of dimension $\sum_k m_k^2$. For a semisimple element with distinct eigenvalues it is the torus $(\mathbb{C}^\times)^4$, of dimension $4$; modulo scalars, the stabiliser in $PGL_4$ is $(\mathbb{C}^\times)^3$, of dimension $3$. For a general element, the dimension is computed from the Jordan type of $A$.</p>
+<h2 id="the-root-orbit-and-the-gauge">The Root Orbit and the Gauge</h2>
+<p><strong>The root.</strong> Let $H$ be a root with four distinct eigenvalues $1,i,-1,-i$. Its stabiliser in $PGL_4$ is the maximal torus</p>
+<p>$$
+T=(\mathbb{C}^\times)^4/\mathbb{C}^\times\cong(\mathbb{C}^\times)^3,
+$$</p>
+<p>the diagonal matrices in the eigenbasis modulo scalars. The orbit is the regular semisimple orbit</p>
+<p>$$
+\mathcal{O}_H=PGL_4/T,
+$$</p>
+<p>of dimension</p>
+<p>$$
+15-3=12.
+$$</p>
+<p>The twelve complex parameters are the root count of <em>Roots of Unity and the Lagrange Idempotents</em>.</p>
+<p><strong>The gauge is the stabiliser.</strong> The gauge torus of <em>The Frame, the Simple Nilpotents and the Gauge</em> is exactly the stabiliser $T$. The frame bundle</p>
+<p>$$
+PGL_4\longrightarrow PGL_4/T=\mathcal{O}_H
+$$</p>
+<p>has fibre $T$, and the gauge is that fibre. The count</p>
+<p>$$
+\underbrace{15}_{\text{frame group}}
+=
+\underbrace{12}_{\text{orbit}}
++
+\underbrace{3}_{\text{gauge}}
+$$</p>
+<p>is the orbit–stabiliser count. The gauge is the fibre over the root, not a quotient of the algebra.</p>
+<p><strong>The three parameters.</strong> The torus $T$ has three parameters, one per simple nilpotent $E_{12},E_{23},E_{34}$, as in <em>The Frame, the Simple Nilpotents and the Gauge</em>. The fourth ratio is the inverse of the product, and there is no fourth independent scalar. The gauge acts on the root orbit by moving the frame; it acts on the matrix units by $E_{ij}\mapsto(t_i/t_j)E_{ij}$.</p>
+<p><strong>The spectral flag.</strong> The root $H$ has four distinct eigenvalues, hence four spectral lines. The <strong>spectral flag</strong> is</p>
+<p>$$
+0\subset V_1\subset V_1\oplus V_2\subset V_1\oplus V_2\oplus V_3\subset\mathbb{C}^4,
+$$</p>
+<p>the full flag of the ordered spectral lines. The map</p>
+<p>$$
+\mathcal{O}_H=PGL_4/T\longrightarrow PGL_4/B=\mathcal{F},\qquad
+gT\longmapsto gB,
+$$</p>
+<p>sends the root to its spectral flag. The fibre is the unipotent radical $U$ of the Borel, of dimension $6$; in $GL_4$ terms, $B/T\cong U$. Hence</p>
+<p>$$
+12=6+6,
+$$</p>
+<p>the dimension of the root orbit equals the dimension of the flag variety plus the dimension of the unipotent fibre. The map is not a finite cover; the degree $4!=24$ of the Weyl group appears only over the unordered spectral decomposition, as in <em>Roots of Unity and the Lagrange Idempotents</em>.</p>
+<p><strong>The other semisimple orbits.</strong> A semisimple element with eigenvalue multiplicities $m_1,\dots,m_r$ has centraliser</p>
+<p>$$
+GL_{m_1}\times\cdots\times GL_{m_r},
+$$</p>
+<p>of dimension $\sum m_k^2$, and orbit dimension</p>
+<p>$$
+16-\sum_k m_k^2.
+$$</p>
+<p>For four distinct eigenvalues, the dimension is $16-4=12$; for a double eigenvalue and two singles, $16-6=10$; for two double eigenvalues, $16-8=8$; for a triple and a single, $16-10=6$; for a quadruple, $16-16=0$. These are the dimensions of the semisimple orbits; the regular one is the root orbit.</p>
+<h2 id="the-flag-variety-and-the-grassmannians">The Flag Variety and the Grassmannians</h2>
+<p><strong>The full flag variety.</strong> A <strong>full flag</strong> of $\mathbb{C}^4$ is a chain of subspaces</p>
+<p>$$
+0=F_0\subset F_1\subset F_2\subset F_3\subset F_4=\mathbb{C}^4,
+\qquad
+\dim F_k=k.
+$$</p>
+<p>The <strong>flag variety</strong> is</p>
+<p>$$
+\mathcal{F}=\{F_\bullet\}=\operatorname{GL}_4(\mathbb{C})/B,
+$$</p>
+<p>where $B$ is the Borel subgroup of upper triangular matrices, the stabiliser of the standard flag. Its dimension is</p>
+<p>$$
+\dim\mathcal{F}=\dim GL_4-\dim B=16-10=6.
+$$</p>
+<p>The Borel has dimension $10$: four diagonal entries and six strictly upper entries.</p>
+<p><strong>The Grassmannians.</strong> The <strong>Grassmannian</strong> $\operatorname{Gr}(k,4)$ is the set of $k$-dimensional subspaces of $\mathbb{C}^4$. Its dimension is</p>
+<p>$$
+\dim\operatorname{Gr}(k,4)=k(4-k).
+$$</p>
+<p>In particular,</p>
+<p>$$
+\operatorname{Gr}(1,4)=\mathbb{P}^3,\quad \dim=3;
+\qquad
+\operatorname{Gr}(2,4),\quad \dim=4;
+\qquad
+\operatorname{Gr}(3,4)=\mathbb{P}^3,\quad \dim=3.
+$$</p>
+<p>The Grassmannian is the quotient of the flag variety by the parabolic subgroup stabilising a $k$-plane. The projection</p>
+<p>$$
+\mathcal{F}\longrightarrow\operatorname{Gr}(k,4)
+$$</p>
+<p>is surjective, with fibre the flag variety of the $k$-plane times the flag variety of the quotient:</p>
+<p>$$
+\dim\text{fibre}=k(k-1)/2+(4-k)(3-k)/2.
+$$</p>
+<p>For $k=1$: $0+3=3$, and $6=3+3$. For $k=2$: $1+1=2$, and $6=4+2$. For $k=3$: $3+0=3$, and $6=3+3$.</p>
+<p><strong>The incidence relations.</strong> The flag variety is the space of full flags; the Grassmannians are the spaces of partial flags. The incidence correspondence</p>
+<p>$$
+\{(F_1,F_2):F_1\subset F_2\}\subset\mathbb{P}^3\times\operatorname{Gr}(2,4)
+$$</p>
+<p>is the partial flag variety of type $(1,2)$, of dimension $5$. The full flag variety maps to it with fibre the flag variety of the two successive quotients, of dimension $1$, so $5+1=6$.</p>
+<p><strong>The Borel and the parabolic.</strong> The Borel $B$ is the stabiliser of the full flag; the parabolic $P_k$ is the stabiliser of a partial flag with one subspace of dimension $k$. The quotients are</p>
+<p>$$
+\mathcal{F}=GL_4/B,\qquad
+\operatorname{Gr}(k,4)=GL_4/P_k.
+$$</p>
+<p>The dimensions are</p>
+<p>$$
+\dim P_k=16-k(4-k),
+$$</p>
+<p>so the parabolic has dimension $13$ for $k=1$, $12$ for $k=2$, and $13$ for $k=3$.</p>
+<h2 id="the-nilpotent-orbits">The Nilpotent Orbits</h2>
+<p><strong>The nilpotent cone.</strong> The <strong>nilpotent cone</strong> is</p>
+<p>$$
+\mathcal{N}=\{A:A^4=0\}.
+$$</p>
+<p>It is the zero fibre of the characteristic polynomial map, of complex dimension $12$ in $M_4$ (and in $\mathfrak{sl}_4$). Its irreducible components are the closures of the nilpotent orbits.</p>
+<p><strong>The Jordan types.</strong> The nilpotent orbits are classified by the partitions of $4$:</p>
+<p>$$
+[4],\qquad [3,1],\qquad [2,2],\qquad [2,1,1],\qquad [1,1,1,1].
+$$</p>
+<p>The orbit of a nilpotent matrix is determined by the sizes of its Jordan blocks for the eigenvalue $0$.</p>
+<p><strong>The dimensions.</strong> For a partition $\lambda$ of $4$ with conjugate partition $\lambda'$, the dimension of the nilpotent orbit is</p>
+<p>$$
+\dim\mathcal{O}_\lambda=16-\sum_i(\lambda_i')^2.
+$$</p>
+<p>The values are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Partition $\lambda$</th>
+<th>Conjugate $\lambda'$</th>
+<th>$\sum(\lambda_i')^2$</th>
+<th>$\dim\mathcal{O}_\lambda$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[4]$</td>
+<td>$[1,1,1,1]$</td>
+<td>$4$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>$[3,1]$</td>
+<td>$[2,1,1]$</td>
+<td>$6$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$[2,2]$</td>
+<td>$[2,2]$</td>
+<td>$8$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$[2,1,1]$</td>
+<td>$[3,1]$</td>
+<td>$10$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$[1,1,1,1]$</td>
+<td>$[4]$</td>
+<td>$16$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The regular nilpotent orbit $[4]$ is dense in the nilpotent cone, of dimension $12$; the zero orbit is the closed orbit; the other orbits interpolate.</p>
+<p><strong>The closure order.</strong> The closure of the orbit $\mathcal{O}_\lambda$ is the union of the orbits $\mathcal{O}_\mu$ with $\mu$ dominated by $\lambda$:</p>
+<p>$$
+\overline{\mathcal{O}_\lambda}=\bigcup_{\mu\unlhd\lambda}\mathcal{O}_\mu.
+$$</p>
+<p>The dominance order on the partitions of $4$ is</p>
+<p>$$
+[4]\rhd[3,1]\rhd[2,2]\rhd[2,1,1]\rhd[1,1,1,1].
+$$</p>
+<p>The closure order is the order of the nilpotent orbits; the zero orbit is the unique closed orbit, and the regular orbit is the unique open dense orbit.</p>
+<p><strong>The semisimple and the nilpotent.</strong> Every element has a Jordan decomposition $A=A_s+A_n$ with commuting semisimple and nilpotent parts. The orbit of $A$ is determined by the orbit of $A_s$ and the nilpotent orbit of $A_n$ in the centraliser of $A_s$. The full classification of the orbits is the Jordan classification; the semisimple orbits are the eigenvalue configurations, and the nilpotent orbits are the partitions.</p>
+<h2 id="summary">Summary</h2>
+<p>The projective group $PGL_4(\mathbb{C})$ acts on $M_4(\mathbb{C})$ by conjugation, with kernel the scalars and Lie algebra $\mathfrak{sl}_4$. The orbits are the Jordan types, and the orbit–stabiliser theorem gives $\dim\mathcal{O}_A=15-\dim Z_{PGL_4}(A)$. The root $H$ with four distinct eigenvalues is the regular semisimple element; its stabiliser is the gauge torus $T\cong(\mathbb{C}^\times)^3$, its orbit is $PGL_4/T$ of dimension $12$, and the count is</p>
+<p>$$
+15=12+3.
+$$</p>
+<p>The root orbit is a fibre bundle over the full flag variety $\mathcal{F}=GL_4/B$ of dimension $6$, with fibre the unipotent radical $B/T$ of dimension $6$; the map is not a finite cover. The Grassmannians are</p>
+<p>$$
+\operatorname{Gr}(1,4)=\mathbb{P}^3,\quad \dim3;\qquad
+\operatorname{Gr}(2,4),\quad \dim4;\qquad
+\operatorname{Gr}(3,4)=\mathbb{P}^3,\quad \dim3.
+$$</p>
+<p>The nilpotent orbits are classified by the partitions of $4$, with dimensions $12,10,8,6,0$ for $[4],[3,1],[2,2],[2,1,1],[1,1,1,1]$, and the closure order is the dominance order. The gauge is the stabiliser of the root, the fibre of the frame bundle over the root orbit.</p>
+<p>$$
+\boxed{\ \dim PGL_4=15,\quad \dim\mathcal{O}_H=12,\quad \dim T=3,\quad 15=12+3,\quad \dim\mathcal{F}=6,\quad \dim\operatorname{Gr}(2,4)=4. }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Complex dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$PGL_4$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>Root orbit $PGL_4/T$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>Gauge torus $T$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Full flag variety $\mathcal{F}$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Unipotent fibre $B/T$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(1,4)=\mathbb{P}^3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(2,4)$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(3,4)=\mathbb{P}^3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Nilpotent cone</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>Regular nilpotent orbit</td>
+<td>$12$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$PGL_4$</td>
+<td>the projective general linear group</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_A$</td>
+<td>the conjugacy class of $A$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>the maximal torus, the gauge</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Borel subgroup of upper triangular matrices</td>
+</tr>
+<tr>
+<td>$\mathcal{F}=GL_4/B$</td>
+<td>the full flag variety</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(k,4)$</td>
+<td>the Grassmannian of $k$-planes</td>
+</tr>
+<tr>
+<td>$\mathcal{N}$</td>
+<td>the nilpotent cone</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_\lambda$</td>
+<td>the nilpotent orbit of partition $\lambda$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Linear Algebraic Groups</em> (Springer, 1975), for Borel subgroups, parabolic subgroups and flag varieties.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the flag variety, the Grassmannians and the Weyl group.</li>
+<li>David Collingwood and William McGovern, <em>Nilpotent Orbits in Semisimple Lie Algebras</em> (Van Nostrand Reinhold, 1993), for the partition classification and the closure order.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the gauge torus.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root orbit and the spectral flag.</li>
+<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition</a>, for the adjoint action and the derivations.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m4c.html">The Geometry of the Idempotents</a>, for the idempotent varieties and the flag variety.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

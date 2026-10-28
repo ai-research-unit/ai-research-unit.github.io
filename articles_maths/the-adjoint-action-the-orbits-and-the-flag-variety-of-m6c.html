@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Action, the Orbits and the Flag Variety — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-action-the-orbits-and-the-flag-variety"><strong>The Adjoint Action, the Orbits and the Flag Variety</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The projective linear group $PGL_6(\mathbb{C})$ acts on $M_6(\mathbb{C})$ by conjugation,</p>
+<p>$$
+\Phi_g(A)=gAg^{-1},
+\qquad
+g\in GL_6(\mathbb{C}),
+$$</p>
+<p>and the action factors through the center. The orbits are the conjugacy classes, classified by the Jordan type. For a cyclic element with simple spectrum the orbit has dimension $30$ and the stabilizer is the torus</p>
+<p>$$
+(\mathbb{C}^\times)^5,
+$$</p>
+<p>so the orbit–stabilizer count is</p>
+<p>$$
+35=30+5 .
+$$</p>
+<p>The flag variety $GL_6/B$ of complete flags has dimension $15$; the Grassmannians are</p>
+<p>$$
+\operatorname{Gr}(1,6)=\mathbb{P}^5,\qquad
+\dim\operatorname{Gr}(2,6)=2\cdot4=8 .
+$$</p>
+<p>The gauge is the fibre of the conjugation map over the root: the set of frames diagonalising $H$ is a torsor under the stabilizer $(\mathbb{C}^\times)^5$.</p>
+<p>The article assumes the roots of <em>Roots of Unity and the Lagrange Idempotents</em> and the projective linear group of <em>The Matrix Algebra $M_6(\mathbb{C})$</em>. It uses the language of algebraic groups but no topology beyond the dimension counts. The Jordan decomposition is <em>The Element, the Coordinates and the Trace</em>; the spectral strata are <em>The Sextic and the Spectral Strata</em>; the Grassmannian geometry is <em>The Geometry of the Idempotents</em>.</p>
+<h2 id="the-adjoint-action">The Adjoint Action</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The <strong>adjoint action</strong> of $PGL_6(\mathbb{C})$ on $M_6(\mathbb{C})$ is</p>
+<p>$$
+\Phi_{\bar g}(A)=gAg^{-1},
+$$</p>
+<p>where $\bar g$ is the class of $g\in GL_6$ modulo the scalars. On the Lie algebra $\mathfrak{sl}_6$ it is the adjoint representation</p>
+<p>$$
+\operatorname{Ad}_g(X)=gXg^{-1}.
+$$</p>
+<p><strong>Theorem.</strong> The action is well defined, faithful, and preserves the trace, the determinant, the characteristic polynomial and the Jordan type.</p>
+<p><strong>Proof.</strong> If $g$ is replaced by $\lambda g$, the conjugation is unchanged. The kernel of the action is the center $\mathbb{C}^\times I_6$, so the action of $PGL_6$ is faithful. Conjugation preserves the characteristic polynomial, hence the trace, the determinant and the eigenvalues; it preserves the Jordan form.</p>
+<p><strong>Corollary (the infinitesimal action).</strong> The Lie algebra action is</p>
+<p>$$
+\mathfrak{sl}_6\longrightarrow\operatorname{End}(M_6),
+\qquad
+X\longmapsto\operatorname{ad}_X,
+\qquad
+\operatorname{ad}_X(A)=[X,A].
+$$</p>
+<p><strong>Proof.</strong> Differentiate $e^{tX}Ae^{-tX}$ at $t=0$.</p>
+<h3 id="the-orbits">The Orbits</h3>
+<p><strong>Theorem.</strong> Two matrices are in the same $PGL_6$ orbit if and only if they have the same Jordan type: the same eigenvalues with the same multiplicities and the same Jordan block sizes.</p>
+<p><strong>Proof.</strong> The Jordan normal form is a complete invariant of conjugacy; two matrices with the same Jordan type are conjugate, and conjugation preserves the type.</p>
+<p><strong>Corollary (the orbit types).</strong></p>
+<ul>
+<li>The <strong>semisimple orbits</strong> are the conjugacy classes of diagonalizable matrices; they are parameterized by the eigenvalue multiset, an element of $\operatorname{Sym}^6(\mathbb{C})$.</li>
+<li>The <strong>nilpotent orbits</strong> are the conjugacy classes of nilpotent matrices; they are parameterized by the partitions of $6$.</li>
+<li>A general orbit is the product of a semisimple orbit and a nilpotent orbit in each generalized eigenspace.</li>
+</ul>
+<p><strong>Proof.</strong> The Jordan decomposition $A=S+N$ with $SN=NS$; the semisimple part gives the eigenvalue multiset, the nilpotent part gives a partition in each generalized eigenspace.</p>
+<p><strong>Theorem (the dimension).</strong> For any $A$,</p>
+<p>$$
+\dim(PGL_6\cdot A)=35-\dim Z_{PGL_6}(A)
+=36-\dim Z_{GL_6}(A),
+$$</p>
+<p>where $Z$ is the centralizer.</p>
+<p><strong>Proof.</strong> The orbit–stabilizer theorem for the $35$-dimensional group $PGL_6$; the centralizer in $PGL_6$ is the image of the centralizer in $GL_6$, and the two dimensions differ by the one-dimensional center.</p>
+<p><strong>Corollary (the cyclic orbit).</strong> If $A$ is cyclic with simple spectrum, then</p>
+<p>$$
+Z_{GL_6}(A)\cong(\mathbb{C}^\times)^6,
+\qquad
+Z_{PGL_6}(A)\cong(\mathbb{C}^\times)^5,
+\qquad
+\dim(PGL_6\cdot A)=30 .
+$$</p>
+<p><strong>Proof.</strong> The centralizer of a cyclic element is $\mathbb{C}[A]^\times$; for a simple spectrum this is the diagonal torus in the eigenbasis, of dimension $6$ in $GL_6$ and $5$ in $PGL_6$.</p>
+<p><strong>Corollary (the root orbit).</strong> The orbit of the root $H$ is the set of matrices with characteristic polynomial $t^6-1$ and simple spectrum; it has dimension $30$.</p>
+<p><strong>Proof.</strong> All such matrices are conjugate to $H$; the orbit is the fibre of the characteristic map over $t^6-1$, of dimension $30$.</p>
+<h3 id="the-nilpotent-orbits">The Nilpotent Orbits</h3>
+<p><strong>Theorem.</strong> The nilpotent orbits of $M_6(\mathbb{C})$ are the partitions of $6$. For a partition $\lambda$ with conjugate partition $\lambda'$,</p>
+<p>$$
+\dim\mathcal O_\lambda=36-\sum_i(\lambda_i')^2 .
+$$</p>
+<p><strong>Proof.</strong> The centralizer of a nilpotent of Jordan type $\lambda$ has dimension $\sum_i(\lambda_i')^2$ (the standard dimension formula for the centralizer of a nilpotent matrix); the orbit dimension is $36$ minus that.</p>
+<p><strong>Corollary (the table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Partition $\lambda$</th>
+<th>$\lambda'$</th>
+<th>$\sum(\lambda_i')^2$</th>
+<th>$\dim\mathcal O_\lambda$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(6)$</td>
+<td>$(1^6)$</td>
+<td>$6$</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>$(5,1)$</td>
+<td>$(2,1^4)$</td>
+<td>$8$</td>
+<td>$28$</td>
+</tr>
+<tr>
+<td>$(4,2)$</td>
+<td>$(2,2,1,1)$</td>
+<td>$10$</td>
+<td>$26$</td>
+</tr>
+<tr>
+<td>$(4,1,1)$</td>
+<td>$(3,1,1,1)$</td>
+<td>$12$</td>
+<td>$24$</td>
+</tr>
+<tr>
+<td>$(3,3)$</td>
+<td>$(2,2,2)$</td>
+<td>$12$</td>
+<td>$24$</td>
+</tr>
+<tr>
+<td>$(3,2,1)$</td>
+<td>$(3,2,1)$</td>
+<td>$14$</td>
+<td>$22$</td>
+</tr>
+<tr>
+<td>$(3,1,1,1)$</td>
+<td>$(4,1,1)$</td>
+<td>$18$</td>
+<td>$18$</td>
+</tr>
+<tr>
+<td>$(2,2,2)$</td>
+<td>$(3,3)$</td>
+<td>$18$</td>
+<td>$18$</td>
+</tr>
+<tr>
+<td>$(2,2,1,1)$</td>
+<td>$(4,2)$</td>
+<td>$20$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$(2,1,1,1,1)$</td>
+<td>$(5,1)$</td>
+<td>$26$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$(1^6)$</td>
+<td>$(6)$</td>
+<td>$36$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Compute the conjugate partition and the sum of squares; subtract from $36$.</p>
+<p><strong>Remark (the regular nilpotent).</strong> The principal nilpotent orbit $(6)$ has dimension $30$, the same as the regular semisimple orbit. The zero orbit $(1^6)$ has dimension $0$. The nilpotent cone is the union of the eleven orbits.</p>
+<h2 id="the-stabilizer-and-the-count">The Stabilizer and the Count</h2>
+<h3 id="the-cyclic-stabilizer">The Cyclic Stabilizer</h3>
+<p><strong>Theorem.</strong> The stabilizer in $PGL_6$ of a cyclic element with simple spectrum is the maximal torus</p>
+<p>$$
+(\mathbb{C}^\times)^5,
+$$</p>
+<p>of dimension $5$.</p>
+<p><strong>Proof.</strong> The centralizer in $GL_6$ is the diagonal torus $(\mathbb{C}^\times)^6$; the center $\mathbb{C}^\times I_6$ is the diagonal scalar, and the quotient is $(\mathbb{C}^\times)^5$.</p>
+<p><strong>Corollary (the stabilizer of the root).</strong> The stabilizer of the root $H$ is the gauge torus</p>
+<p>$$
+(\mathbb{C}^\times)^5,
+$$</p>
+<p>the same group that rescales the simple nilpotents of <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<p><strong>Proof.</strong> $H$ has simple spectrum, so its centralizer is the diagonal torus modulo the center; the gauge is the same torus.</p>
+<h3 id="the-orbitstabilizer-count">The Orbit–Stabilizer Count</h3>
+<p><strong>Theorem.</strong> For the cyclic element,</p>
+<p>$$
+\dim PGL_6=35=\dim(PGL_6\cdot A)+\dim Z_{PGL_6}(A)=30+5 .
+$$</p>
+<p>For the same element in $GL_6$,</p>
+<p>$$
+36=30+6 .
+$$</p>
+<p><strong>Proof.</strong> The orbit–stabilizer theorem; the dimensions above.</p>
+<p><strong>Corollary (the flag count).</strong> The dimensions are</p>
+<p>$$
+\dim GL_6=36,\qquad
+\dim B=21,\qquad
+\dim GL_6/B=15,
+$$</p>
+<p>and</p>
+<p>$$
+\dim\operatorname{Gr}(1,6)=5,\qquad
+\dim\operatorname{Gr}(2,6)=8 .
+$$</p>
+<p><strong>Proof.</strong> The Borel subgroup of upper triangular matrices has $6$ diagonal and $15$ off-diagonal parameters, of dimension $21$; the quotient has dimension $36-21=15$. The Grassmannian $\operatorname{Gr}(k,6)$ has dimension $k(6-k)$: $1\cdot5=5$ and $2\cdot4=8$.</p>
+<h3 id="the-gauge-as-the-fibre">The Gauge as the Fibre</h3>
+<p><strong>Theorem.</strong> The conjugation map</p>
+<p>$$
+PGL_6\longrightarrow\mathcal O_H,
+\qquad
+\bar g\longmapsto gHg^{-1},
+$$</p>
+<p>is a principal bundle with fibre the stabilizer $(\mathbb{C}^\times)^5$. The gauge group is the fibre over the root $H$.</p>
+<p><strong>Proof.</strong> The fibre over $H$ is the set of $\bar g$ with $gHg^{-1}=H$, that is the stabilizer. The map is surjective onto the orbit by definition, and the stabilizer acts freely on the fibres.</p>
+<p><strong>Corollary (the frame picture).</strong> The set of ordered bases in which $H$ is diagonal is a torsor under $(\mathbb{C}^\times)^6$; modulo the overall scalar, the set of projective frames is a torsor under the gauge $(\mathbb{C}^\times)^5$. Choosing a projective frame is choosing a gauge.</p>
+<p><strong>Proof.</strong> If $g_0$ diagonalizes $H$, every other diagonalizing basis is $g_0t$ with $t$ in the centralizer $(\mathbb{C}^\times)^6$; the centralizer modulo the center is the gauge.</p>
+<h2 id="the-flag-variety">The Flag Variety</h2>
+<h3 id="the-full-flag-variety">The Full Flag Variety</h3>
+<p><strong>Definition.</strong> A <strong>complete flag</strong> of $\mathbb{C}^6$ is a chain</p>
+<p>$$
+0\subset V_1\subset V_2\subset\cdots\subset V_5\subset\mathbb{C}^6,
+\qquad
+\dim V_i=i .
+$$</p>
+<p>The <strong>flag variety</strong> is</p>
+<p>$$
+\mathcal F=GL_6/B,
+$$</p>
+<p>where $B$ is the Borel subgroup of upper triangular matrices, the stabilizer of the standard flag.</p>
+<p><strong>Theorem.</strong> $\mathcal F$ is a smooth projective variety of dimension</p>
+<p>$$
+\dim\mathcal F=36-21=15=\frac{6\cdot5}{2}.
+$$</p>
+<p><strong>Proof.</strong> $GL_6$ acts transitively on the complete flags (any flag is carried to the standard one by a basis adapted to the flag); the stabilizer is the Borel $B$, of dimension $21$; the quotient has dimension $15$.</p>
+<p><strong>Corollary (the iterated bundle and the Plücker embedding).</strong> The flag variety embeds in the product of the Grassmannians,</p>
+<p>$$
+\mathcal F\hookrightarrow\operatorname{Gr}(1,6)\times\operatorname{Gr}(2,6)\times\cdots\times\operatorname{Gr}(5,6),
+$$</p>
+<p>and it is an iterated projective bundle with fibres</p>
+<p>$$
+\mathbb{P}^5,\quad\mathbb{P}^4,\quad\mathbb{P}^3,\quad\mathbb{P}^2,\quad\mathbb{P}^1,
+$$</p>
+<p>so that</p>
+<p>$$
+\dim\mathcal F=5+4+3+2+1=15 .
+$$</p>
+<p><strong>Proof.</strong> Choose $V_1\in\mathbb{P}^5$ (dimension $5$); then $V_2/V_1$ is a line in $\mathbb{C}^6/V_1\cong\mathbb{C}^5$, so $V_2$ varies in a $\mathbb{P}^4$ (dimension $4$); then $V_3/V_2$ varies in a $\mathbb{P}^3$ (dimension $3$); then $V_4/V_3$ in a $\mathbb{P}^2$ (dimension $2$); then $V_5/V_4$ in a $\mathbb{P}^1$ (dimension $1$). The total is $15$.</p>
+<p><strong>Corollary (the eigenbasis).</strong> An ordered eigenbasis of a cyclic element with simple spectrum determines a complete flag: the first $k$ eigenvectors span $V_k$. The flag is independent of the scaling of the eigenvectors; the scalings are the gauge.</p>
+<p><strong>Proof.</strong> The flag is the chain of spans; rescaling a vector does not change its span.</p>
+<h3 id="the-grassmannians">The Grassmannians</h3>
+<p><strong>Definition.</strong> The <strong>Grassmannian</strong> $\operatorname{Gr}(k,6)$ is the set of $k$-dimensional subspaces of $\mathbb{C}^6$.</p>
+<p><strong>Theorem.</strong></p>
+<p>$$
+\dim\operatorname{Gr}(k,6)=k(6-k),
+$$</p>
+<p>and</p>
+<p>$$
+\operatorname{Gr}(1,6)=\mathbb{P}^5,\qquad
+\dim\operatorname{Gr}(2,6)=8,\qquad
+\dim\operatorname{Gr}(3,6)=9 .
+$$</p>
+<p><strong>Proof.</strong> A $k$-plane is the image of a full-rank $6\times k$ matrix; the space of such matrices has dimension $6k$, the stabilizer $GL_k$ has dimension $k^2$, and the quotient has dimension $6k-k^2=k(6-k)$.</p>
+<p><strong>Corollary (the idempotents).</strong> The rank-$k$ idempotents form the homogeneous space</p>
+<p>$$
+GL_6/(GL_k\times GL_{6-k}),
+$$</p>
+<p>of dimension $2k(6-k)$. The image map to $\operatorname{Gr}(k,6)$ is a fibration with fibre the affine space of complements, of dimension $k(6-k)$.</p>
+<p><strong>Proof.</strong> An idempotent of rank $k$ is determined by its image $V$ and its kernel $W$, a complementary $k$-plane and $(6-k)$-plane. The image is a point of $\operatorname{Gr}(k,6)$; the kernel is a point of the affine space of complements to $V$ in $\mathbb{C}^6$, of dimension $k(6-k)$. The total dimension is $k(6-k)+k(6-k)=2k(6-k)$. For $k=1,2,3$ these are $10,16,18$.</p>
+<p><strong>Corollary (the minimal ideals).</strong> The minimal left ideals are parameterized by the hyperplanes of $\mathbb{C}^6$, that is by $\mathbb{P}^5$ of the dual; the minimal right ideals by the lines of $\mathbb{C}^6$, that is by $\mathbb{P}^5$.</p>
+<p><strong>Proof.</strong> This is <em>The Modules and the Minimal Left Ideals</em>: the left ideal depends on the kernel hyperplane, the right ideal on the image line.</p>
+<h3 id="the-incidence">The Incidence</h3>
+<p><strong>Theorem.</strong> The full flag variety fibres over each Grassmannian:</p>
+<p>$$
+\pi_k:\mathcal F\longrightarrow\operatorname{Gr}(k,6),
+\qquad
+(V_1,\dots,V_5)\longmapsto V_k,
+$$</p>
+<p>with fibre the product of the flag varieties of $V_k$ and $\mathbb{C}^6/V_k$.</p>
+<p><strong>Proof.</strong> The fibre over $V_k$ consists of the flags of $V_k$ and the flags of the quotient; the dimensions add.</p>
+<p><strong>Corollary (the dimensions).</strong> For $k=1$ the fibre has dimension $10$; for $k=2$ it has dimension $7$; for $k=3$ it has dimension $6$.</p>
+<p><strong>Proof.</strong> $\dim\mathcal F-\dim\operatorname{Gr}(k,6)$: $15-5=10$, $15-8=7$, $15-9=6$.</p>
+<p><strong>Remark (the Peirce reading).</strong> The image of a rank-$k$ idempotent is a point of $\operatorname{Gr}(k,6)$; the idempotent is a point of the total space of the complement bundle over the Grassmannian. The corners are the blocks relative to the plane and its complement; the stabilizer of the idempotent is the Levi $GL(V)\times GL(W)$, while the parabolic is the stabilizer of the image plane alone. <strong>The Grassmannian is the base of the Peirce fibration, not the whole space of idempotents.</strong></p>
+<h2 id="the-gauge-as-the-fibre-over-the-root">The Gauge as the Fibre over the Root</h2>
+<h3 id="the-bundle">The Bundle</h3>
+<p><strong>Theorem.</strong> The map</p>
+<p>$$
+\pi:PGL_6\longrightarrow\mathcal O_H,
+\qquad
+\pi(\bar g)=gHg^{-1},
+$$</p>
+<p>is a principal $(\mathbb{C}^\times)^5$-bundle. The gauge group is the fibre $\pi^{-1}(H)$.</p>
+<p><strong>Proof.</strong> The fibre is the stabilizer; the action of the stabilizer on the fibre is free and transitive.</p>
+<p><strong>Corollary (the dimensions).</strong></p>
+<p>$$
+\dim PGL_6=35=\dim\mathcal O_H+\dim(\mathbb{C}^\times)^5=30+5 .
+$$</p>
+<p><strong>Proof.</strong> The dimension of a principal bundle is the sum of the base and the fibre.</p>
+<h3 id="the-root">The Root</h3>
+<p><strong>Theorem.</strong> The orbit $\mathcal O_H$ is the set of roots: the matrices with characteristic polynomial $t^6-1$ and simple spectrum. The fibre over $H$ is the gauge torus; the total space is the set of pairs (root, frame).</p>
+<p><strong>Proof.</strong> The roots are conjugate to $H$; the fibre is the centralizer.</p>
+<p><strong>Corollary (the frame bundle).</strong> The total space of the bundle is the set of pairs $(H',g)$ with $H'=gHg^{-1}$; the projection forgets $g$. The gauge is the choice of the frame at the root.</p>
+<p><strong>Proof.</strong> The pair is determined by $g$ modulo the stabilizer; the total space is $PGL_6$.</p>
+<h3 id="the-count">The Count</h3>
+<p><strong>Theorem.</strong> The three counts are</p>
+<p>$$
+35=30+5,
+\qquad
+36=30+6,
+\qquad
+15=5+4+3+2+1 .
+$$</p>
+<p><strong>Proof.</strong> The first is the $PGL_6$ orbit–stabilizer count; the second the $GL_6$ count; the third the iterated bundle of the flag variety.</p>
+<p><strong>Remark (the root and the flag).</strong> The root fixes the spectrum; the orbit is the set of matrices with that spectrum; the gauge is the ambiguity of the eigenbasis; the flag is the chain of spans of the eigenbasis. <strong>The root, the orbit, the gauge and the flag are four readings of the same eigenbasis.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint action of $PGL_6$ on $M_6(\mathbb{C})$ has the Jordan types as orbits. For the cyclic element with simple spectrum,</p>
+<p>$$
+\dim(PGL_6\cdot A)=30,
+\qquad
+Z_{PGL_6}(A)\cong(\mathbb{C}^\times)^5,
+$$</p>
+<p>and the orbit–stabilizer count is</p>
+<p>$$
+35=30+5 .
+$$</p>
+<p>The nilpotent orbits are the partitions of $6$, with dimensions $36-\sum_i(\lambda_i')^2$; the principal orbit has dimension $30$, the zero orbit $0$.</p>
+<p>$$
+\boxed{\ 35=30+5,\qquad \dim GL_6/B=15,\qquad \operatorname{Gr}(1,6)=\mathbb{P}^5,\quad \dim\operatorname{Gr}(2,6)=8 .\ }
+$$</p>
+<p>The flag variety $GL_6/B$ has dimension $15$; the Grassmannians have dimensions $k(6-k)$; the full flag fibres over each Grassmannian. The conjugation map $PGL_6\to\mathcal O_H$ is a principal bundle with fibre the gauge torus $(\mathbb{C}^\times)^5$; the gauge is the fibre over the root.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$PGL_6$</td>
+<td>$35$</td>
+</tr>
+<tr>
+<td>Cyclic orbit</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>Gauge stabilizer</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$GL_6$</td>
+<td>$36$</td>
+</tr>
+<tr>
+<td>Flag variety</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(1,6)=\mathbb{P}^5$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(2,6)$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(3,6)$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>Principal nilpotent orbit</td>
+<td>$30$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi_g$</td>
+<td>the conjugation $A\mapsto gAg^{-1}$</td>
+</tr>
+<tr>
+<td>$\mathcal O_H$</td>
+<td>the orbit of the root $H$</td>
+</tr>
+<tr>
+<td>$Z_{PGL_6}(A)$</td>
+<td>the stabilizer of $A$</td>
+</tr>
+<tr>
+<td>$\mathcal F=GL_6/B$</td>
+<td>the full flag variety</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(k,6)$</td>
+<td>the Grassmannian of $k$-planes</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Borel subgroup of upper triangular matrices</td>
+</tr>
+<tr>
+<td>$\lambda'$</td>
+<td>the conjugate partition of a nilpotent Jordan type</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for $PGL_6$, the derivations and the automorphisms.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>, for the Jordan decomposition and the Jordan type.</li>
+<li><a href="the-sextic-and-the-spectral-strata-of-m6c.html">The Sextic and the Spectral Strata</a>, for the spectral strata and the centralizer.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the gauge torus.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the Grassmannian of the idempotents.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals</a>, for the projective space of the minimal ideals.</li>
+<li><a href="the-adjoint-action-and-the-orbits.html">The Adjoint Action and the Orbits</a>, for the general theory of conjugacy classes.</li>
+<li><a href="the-flag-variety.html">The Flag Variety</a>, for the general theory of $GL_n/B$ and the Plücker embedding.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

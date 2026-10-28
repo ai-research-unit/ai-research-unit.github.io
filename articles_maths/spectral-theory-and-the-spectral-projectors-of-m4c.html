@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectral Theory and the Spectral Projectors — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spectral-theory-and-the-spectral-projectors"><strong>Spectral Theory and the Spectral Projectors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The characteristic polynomial of $A\in M_4(\mathbb{C})$ has degree four and four roots, the Jordan form classifies the element up to conjugacy, and the spectral projectors are the Riesz projectors of the resolvent.</strong> At a simple spectrum the spectral projectors are the Lagrange projectors, polynomials in $A$ of degree at most three. At a repeated root the Lagrange formula is not defined; the Riesz projectors are still defined by the contour integral, and they are the limits of sums of Lagrange projectors, with a nilpotent part appearing in the limit.</p>
+<p>The article states the characteristic and minimal polynomials, the Jordan form, the Dunford calculus and the Riesz projectors, the resolvent and the spectral radius, the simple-spectrum Lagrange formula and its degeneration at a repeated root.</p>
+<p>The element and the trace are <em>The Element, the Coordinates and the Trace</em>; the Jordan decomposition is there as well; the polar decomposition is <em>The Polar Decomposition</em>; the geometry of the spectral strata is <em>The Geometry of the Idempotents</em>.</p>
+<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
+<p><strong>Definition.</strong> The <strong>characteristic polynomial</strong> of $A$ is</p>
+<p>$$
+\chi_A(t)=\det(tI-A).
+$$</p>
+<p>It is a monic polynomial of degree four:</p>
+<p>$$
+\chi_A(t)=t^4-(\operatorname{tr}A)t^3+c_2t^2-c_1t+\det A,
+$$</p>
+<p>with</p>
+<p>$$
+c_2=\frac12\bigl((\operatorname{tr}A)^2-\operatorname{tr}(A^2)\bigr),
+$$</p>
+<p>$$
+c_1=\frac16\bigl((\operatorname{tr}A)^3-3\operatorname{tr}A\operatorname{tr}(A^2)+2\operatorname{tr}(A^3)\bigr).
+$$</p>
+<p><strong>The roots.</strong> The <strong>eigenvalues</strong> are the roots</p>
+<p>$$
+\lambda_1,\lambda_2,\lambda_3,\lambda_4
+$$</p>
+<p>of $\chi_A$, counted with algebraic multiplicity. By the fundamental theorem of algebra there are four roots, and</p>
+<p>$$
+\operatorname{tr}A=\sum_{k=1}^{4}\lambda_k,\qquad
+\det A=\prod_{k=1}^{4}\lambda_k .
+$$</p>
+<p>The <strong>spectrum</strong> is the set of eigenvalues, denoted $\sigma(A)$.</p>
+<p><strong>The discriminant.</strong> The <strong>discriminant</strong> is</p>
+<p>$$
+\Delta(A)=\prod_{i<j}(\lambda_i-\lambda_j)^2.
+$$</p>
+<p>It is a polynomial in the coefficients, hence in the entries of $A$. The spectrum is <strong>simple</strong> exactly when $\Delta(A)\ne0$; the four eigenvalues are then distinct.</p>
+<p><strong>Invariance.</strong> The characteristic polynomial is invariant under conjugation:</p>
+<p>$$
+\chi_{SAS^{-1}}(t)=\det(tI-SAS^{-1})=\det(S(tI-A)S^{-1})=\chi_A(t).
+$$</p>
+<p>The trace, the determinant and the coefficients $c_1,c_2$ are therefore conjugacy invariants.</p>
+<p><strong>Cayley–Hamilton.</strong> The matrix satisfies its own characteristic polynomial:</p>
+<p>$$
+\chi_A(A)=0.
+$$</p>
+<p><strong>Proof.</strong> The characteristic polynomial is the determinant of $tI-A$; the Cayley–Hamilton theorem is the standard identity for matrices over a commutative ring. The proof uses the adjugate identity $\operatorname{adj}(tI-A)(tI-A)=\chi_A(t)I$ and the fact that the entries of the adjugate are polynomials in $t$; substituting $A$ for $t$ gives $\chi_A(A)=0$.</p>
+<h2 id="the-minimal-polynomial-and-the-jordan-form">The Minimal Polynomial and the Jordan Form</h2>
+<p><strong>The minimal polynomial.</strong> The <strong>minimal polynomial</strong> $m_A(t)$ is the monic polynomial of least degree with $m_A(A)=0$. It divides the characteristic polynomial, and it has the same roots:</p>
+<p>$$
+m_A(t)=\prod_{k=1}^{r}(t-\lambda_k)^{m_k},
+$$</p>
+<p>where $\lambda_1,\dots,\lambda_r$ are the distinct eigenvalues and $m_k$ is the size of the largest Jordan block for $\lambda_k$.</p>
+<p><strong>Diagonalisability.</strong> The matrix $A$ is diagonalisable if and only if its minimal polynomial has distinct roots, equivalently if and only if all $m_k=1$. In that case</p>
+<p>$$
+A=S\operatorname{diag}(\lambda_1,\dots,\lambda_4)S^{-1}.
+$$</p>
+<p><strong>The Jordan form.</strong> In general,</p>
+<p>$$
+A=SJS^{-1},\qquad
+J=\operatorname{diag}\bigl(J_{n_1}(\lambda_1),\dots,J_{n_r}(\lambda_r)\bigr),
+$$</p>
+<p>with Jordan blocks</p>
+<p>$$
+J_n(\lambda)=\begin{pmatrix}
+\lambda&1&0&\cdots&0\\
+0&\lambda&1&\cdots&0\\
+\vdots&&\ddots&\ddots&\vdots\\
+0&&&\lambda&1\\
+0&&\cdots&0&\lambda
+\end{pmatrix}.
+$$</p>
+<p>The <strong>semisimple part</strong> is the diagonal of $J$, and the <strong>nilpotent part</strong> is the off-diagonal shift; the two commute. This is the Jordan decomposition of <em>The Element, the Coordinates and the Trace</em>.</p>
+<p><strong>The spectral strata.</strong> The eigenvalue multiplicity pattern stratifies the algebra:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Multiplicity pattern</th>
+<th>Semisimple orbit dimension</th>
+<th>Jordan refinement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1+1+1+1$</td>
+<td>$12$</td>
+<td>simple spectrum, diagonalisable</td>
+</tr>
+<tr>
+<td>$2+1+1$</td>
+<td>$10$</td>
+<td>the double eigenvalue has a $2$-block or two $1$-blocks</td>
+</tr>
+<tr>
+<td>$2+2$</td>
+<td>$8$</td>
+<td>each double eigenvalue has a $2$-block or two $1$-blocks</td>
+</tr>
+<tr>
+<td>$3+1$</td>
+<td>$6$</td>
+<td>the triple eigenvalue has a $3$-block, a $2+1$, or three $1$-blocks</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$0$</td>
+<td>the scalar; the nilpotent refinements are all partitions of $4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The dimensions are the semisimple orbit dimensions $16-\sum m_k^2$; the Jordan refinements within each pattern are the nilpotent orbits of the centraliser.</p>
+<h2 id="the-resolvent">The Resolvent</h2>
+<p><strong>Definition.</strong> The <strong>resolvent</strong> of $A$ is</p>
+<p>$$
+R(z)=(zI-A)^{-1},
+$$</p>
+<p>defined for $z\notin\sigma(A)$.</p>
+<p><strong>Proposition.</strong> The resolvent is a holomorphic matrix-valued function on the complement of the spectrum, and</p>
+<p>$$
+R(z)=\frac{1}{z}\Bigl(I+\frac{A}{z}+\frac{A^2}{z^2}+\cdots\Bigr)
+$$</p>
+<p>for $\lvert z\rvert>\rho(A)$, where</p>
+<p>$$
+\rho(A)=\max_{k}\lvert\lambda_k\rvert
+$$</p>
+<p>is the <strong>spectral radius</strong>. The series converges absolutely and uniformly on compact subsets of $\lvert z\rvert>\rho(A)$.</p>
+<p><strong>Proof.</strong> The identity $(zI-A)^{-1}=z^{-1}(I-A/z)^{-1}$ and the geometric series for $\lVert A/z\rVert<1$ give the expansion. The radius of convergence is the spectral radius by the root test and the Gelfand formula.</p>
+<p><strong>The poles.</strong> The resolvent has poles at the eigenvalues. If $\lambda$ is an eigenvalue with Jordan blocks of sizes $n_1,\dots,n_s$, the Laurent expansion at $\lambda$ has the form</p>
+<p>$$
+R(z)=\sum_{k=1}^{N}\frac{N_k}{(z-\lambda)^k}+\text{holomorphic},
+$$</p>
+<p>where $N_k$ are nilpotent matrices supported on the generalized eigenspace. The residue at $\lambda$ is the spectral projector:</p>
+<p>$$
+P_\lambda=\frac{1}{2\pi i}\oint_{\gamma_\lambda}R(z)\,dz,
+$$</p>
+<p>with $\gamma_\lambda$ a small positively oriented circle around $\lambda$ separating it from the other eigenvalues.</p>
+<p><strong>The Riesz projectors.</strong> The <strong>spectral projector</strong> of $\lambda$ is</p>
+<p>$$
+P_\lambda=\frac{1}{2\pi i}\oint_{\gamma_\lambda}(zI-A)^{-1}\,dz.
+$$</p>
+<p><strong>Theorem.</strong> The projectors satisfy</p>
+<p>$$
+P_\lambda^2=P_\lambda,\qquad
+P_\lambda P_\mu=0\quad(\lambda\ne\mu),\qquad
+\sum_{\lambda\in\sigma(A)}P_\lambda=I.
+$$</p>
+<p>The image of $P_\lambda$ is the generalized eigenspace</p>
+<p>$$
+\ker(A-\lambda I)^{m_\lambda},
+$$</p>
+<p>and $A$ preserves it. The restriction of $A$ to the image is $\lambda I+N_\lambda$ with $N_\lambda$ nilpotent. Hence</p>
+<p>$$
+A=\sum_{\lambda}\bigl(\lambda P_\lambda+N_\lambda\bigr),
+\qquad
+N_\lambda=(A-\lambda I)P_\lambda,
+$$</p>
+<p>and the $N_\lambda$ commute with the projectors.</p>
+<p><strong>Proof.</strong> The projector is the residue of the resolvent; the residue calculus gives $P_\lambda^2=P_\lambda$ and the orthogonality, because the contours are disjoint. The sum is the residue at infinity, which is $I$. The image is the generalized eigenspace by the Riesz decomposition theorem; the nilpotent part is $A-\lambda I$ on that space. The details are in Kato, <em>Perturbation Theory for Linear Operators</em>, and in Horn and Johnson, <em>Matrix Analysis</em>.</p>
+<h2 id="the-dunford-calculus">The Dunford Calculus</h2>
+<p><strong>The holomorphic functional calculus.</strong> Let $f$ be holomorphic on an open set containing the spectrum of $A$. Define</p>
+<p>$$
+f(A)=\frac{1}{2\pi i}\oint_{\gamma}f(z)(zI-A)^{-1}\,dz,
+$$</p>
+<p>where $\gamma$ is a positively oriented contour enclosing the spectrum. The integral is independent of the contour by Cauchy's theorem.</p>
+<p><strong>Theorem.</strong> The map $f\mapsto f(A)$ is an algebra homomorphism:</p>
+<p>$$
+(f+g)(A)=f(A)+g(A),\qquad
+(fg)(A)=f(A)g(A),\qquad
+1(A)=I,
+$$</p>
+<p>and it satisfies the <strong>spectral mapping theorem</strong>:</p>
+<p>$$
+\sigma(f(A))=f(\sigma(A)).
+$$</p>
+<p><strong>Proof.</strong> The homomorphism property follows from the resolvent identity</p>
+<p>$$
+(zI-A)^{-1}(wI-A)^{-1}=\frac{(zI-A)^{-1}-(wI-A)^{-1}}{w-z},
+$$</p>
+<p>and the Cauchy integral. The spectral mapping theorem is the standard consequence for the holomorphic functional calculus. The details are in Dunford and Schwartz, <em>Linear Operators</em>, Part I.</p>
+<p><strong>The Dunford decomposition.</strong> The spectral projectors give the <strong>Dunford decomposition</strong></p>
+<p>$$
+A=\sum_{\lambda}(\lambda P_\lambda+N_\lambda)=A_s+A_n,
+$$</p>
+<p>with</p>
+<p>$$
+A_s=\sum_{\lambda}\lambda P_\lambda,\qquad
+A_n=\sum_{\lambda}N_\lambda .
+$$</p>
+<p>The semisimple part $A_s$ is diagonalisable, the nilpotent part $A_n$ is nilpotent, and they commute. This is the Jordan–Chevalley decomposition of <em>The Element, the Coordinates and the Trace</em>, recovered from the resolvent.</p>
+<p><strong>The spectral resolution.</strong> For a function $f$ holomorphic on the spectrum,</p>
+<p>$$
+f(A)=\sum_{\lambda}\sum_{k=1}^{m_\lambda}\frac{f^{(k-1)}(\lambda)}{(k-1)!}N_\lambda^{k-1}P_\lambda .
+$$</p>
+<p>For a polynomial $f$, this is the Lagrange–Sylvester interpolation formula. For the exponential, it gives the closed form of <em>The Exponential and the Lie Group</em>.</p>
+<h2 id="the-simple-spectrum-and-the-lagrange-projectors">The Simple Spectrum and the Lagrange Projectors</h2>
+<p><strong>The Lagrange formula.</strong> Suppose the spectrum is simple: $\lambda_1,\lambda_2,\lambda_3,\lambda_4$ are distinct. Then the spectral projectors are the <strong>Lagrange projectors</strong></p>
+<p>$$
+P_k=\prod_{l\ne k}\frac{A-\lambda_lI}{\lambda_k-\lambda_l},
+\qquad k=1,2,3,4.
+$$</p>
+<p><strong>Theorem.</strong> The Lagrange projectors are idempotent, orthogonal and complete:</p>
+<p>$$
+P_k^2=P_k,\qquad
+P_kP_l=0\quad(k\ne l),\qquad
+\sum_{k=1}^{4}P_k=I,
+$$</p>
+<p>and</p>
+<p>$$
+A=\sum_{k=1}^{4}\lambda_kP_k .
+$$</p>
+<p>They are the Riesz projectors of the simple eigenvalues, and they are polynomials in $A$ of degree at most three.</p>
+<p><strong>Proof.</strong> On the eigenvector $v_l$, the product $\prod_{l\ne k}(A-\lambda_lI)/(\lambda_k-\lambda_l)$ acts by $\delta_{kl}$: all factors except the $k$-th vanish, and the $k$-th factor is $1$. Hence $P_k$ is the projector onto the $k$-th eigenline along the sum of the other three, and the identities follow. The spectral resolution follows by applying both sides to a basis of eigenvectors.</p>
+<p><strong>The interpolation form.</strong> The projectors are the images of the indicator polynomials</p>
+<p>$$
+p_k(t)=\prod_{l\ne k}\frac{t-\lambda_l}{\lambda_k-\lambda_l},
+\qquad
+p_k(\lambda_l)=\delta_{kl}.
+$$</p>
+<p>For every polynomial $f$ of degree at most three,</p>
+<p>$$
+f(A)=\sum_{k=1}^{4}f(\lambda_k)P_k .
+$$</p>
+<p>This is the Lagrange interpolation formula in the algebra $M_4$.</p>
+<h2 id="the-limit-at-a-repeated-root">The Limit at a Repeated Root</h2>
+<p><strong>The failure of the Lagrange formula.</strong> If two eigenvalues coalesce, $\lambda_1\to\lambda_2$, the denominators $\lambda_1-\lambda_2$ tend to zero, and the individual Lagrange projectors need not have a limit. The sum $P_1+P_2$ does have a limit: it is the Riesz projector onto the generalized eigenspace of the double eigenvalue. The weighted sum $\lambda_1P_1+\lambda_2P_2$ tends to $\lambda(P_1+P_2)+N$, where $N$ is a nilpotent matrix; the nilpotent part is the limit of the difference.</p>
+<p><strong>The theorem.</strong> Let $A(t)$ be a holomorphic family of matrices, and suppose that two simple eigenvalues $\lambda_1(t),\lambda_2(t)$ coalesce at $t=0$ to $\lambda$. Then, for a fixed contour $\gamma$ around $\lambda$,</p>
+<p>$$
+P(t)=P_1(t)+P_2(t)=\frac{1}{2\pi i}\oint_\gamma(zI-A(t))^{-1}\,dz
+\longrightarrow
+P(0),
+$$</p>
+<p>the Riesz projector onto the generalized eigenspace of $\lambda$. The individual Lagrange projectors $P_1(t),P_2(t)$ may diverge like $1/t$; their sum remains bounded. The limit of $A(t)$ is</p>
+<p>$$
+A(0)=\lambda P(0)+N,
+$$</p>
+<p>with $N$ nilpotent and $N=P(0)N P(0)$.</p>
+<p><strong>The path dependence.</strong> The nilpotent $N$ is determined by the limit matrix $A(0)$: once $A(0)$ is fixed, its Jordan form and its nilpotent part are fixed. What depends on the path is the way the individual Lagrange projectors diverge and the way $N$ is approximated by the weighted differences. Different paths with different limit matrices give different nilpotent parts; for a fixed limit $A(0)$, the Riesz projector and $N$ are fixed. The individual Lagrange projectors do not have a canonical limit, while the Riesz projector is canonical and continuous.</p>
+<p><strong>The simple-spectrum limit.</strong> When the spectrum stays simple, the Riesz projectors and the Lagrange projectors coincide, and they depend holomorphically on $A$. At the discriminant locus $\Delta(A)=0$, the Lagrange formula degenerates and the Riesz projectors continue across the stratum.</p>
+<h2 id="the-spectral-radius-and-the-norms">The Spectral Radius and the Norms</h2>
+<p><strong>The spectral radius.</strong> The spectral radius is</p>
+<p>$$
+\rho(A)=\max_{\lambda\in\sigma(A)}\lvert\lambda\rvert .
+$$</p>
+<p>It satisfies the <strong>Gelfand formula</strong></p>
+<p>$$
+\rho(A)=\lim_{n\to\infty}\lVert A^n\rVert^{1/n},
+$$</p>
+<p>for every matrix norm. It is not a norm: $\rho(A)=0$ for a nonzero nilpotent, and it does not satisfy the triangle inequality in general.</p>
+<p><strong>The comparison with the operator norm.</strong> For every matrix norm,</p>
+<p>$$
+\rho(A)\le\lVert A\rVert,
+$$</p>
+<p>and for the operator norm,</p>
+<p>$$
+\rho(A)\le\lVert A\rVert_{\mathrm{op}},
+$$</p>
+<p>with equality for normal matrices. For a normal matrix, the operator norm is the largest modulus of an eigenvalue; for a non-normal matrix, the operator norm can be strictly larger.</p>
+<p><strong>The resolvent bound.</strong> For $\lvert z\rvert>\rho(A)$, the resolvent series converges. The spectral radius is the radius of the largest disc on which the resolvent is holomorphic, and the Neumann series diverges outside it.</p>
+<p><strong>The stability.</strong> The spectral radius governs the asymptotic behaviour of the powers:</p>
+<p>$$
+A^n\to0\quad\iff\quad\rho(A)<1.
+$$</p>
+<p>If $\rho(A)<1$, the Neumann series $\sum_{n\ge0}A^n$ converges to $(I-A)^{-1}$; if $\rho(A)\ge1$, the series diverges in general. The spectral radius is the stability margin of the discrete dynamical system $x_{n+1}=Ax_n$.</p>
+<h2 id="summary">Summary</h2>
+<p>The characteristic polynomial of $A$ is a monic quartic with roots the eigenvalues, trace the sum and determinant the product; the minimal polynomial records the largest Jordan block for each eigenvalue, and $A$ is diagonalisable exactly when the minimal polynomial has distinct roots. The Jordan form classifies the conjugacy class. The resolvent $(zI-A)^{-1}$ is holomorphic off the spectrum and has poles at the eigenvalues; the residue at $\lambda$ is the Riesz projector $P_\lambda$, and the projectors are idempotent, orthogonal and complete, with $A=\sum(\lambda P_\lambda+N_\lambda)$ and $N_\lambda$ nilpotent. The holomorphic functional calculus is the Dunford calculus, with the spectral mapping theorem. At a simple spectrum the Riesz projectors are the Lagrange projectors $P_k=\prod_{l\ne k}(A-\lambda_lI)/(\lambda_k-\lambda_l)$, polynomials in $A$ of degree at most three. At a repeated root the individual Lagrange projectors need not converge, but their sums converge to the Riesz projectors, and the nilpotent part appears as the limit of the weighted differences; the limit depends on the path. The spectral radius is the largest eigenvalue modulus, the radius of convergence of the resolvent series and the stability margin.</p>
+<p>$$
+\boxed{\ \chi_A(t)=t^4-(\operatorname{tr}A)t^3+c_2t^2-c_1t+\det A,\quad A=\sum_\lambda(\lambda P_\lambda+N_\lambda),\quad P_\lambda=\frac{1}{2\pi i}\oint_{\gamma_\lambda}(zI-A)^{-1}dz. }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi_A$</td>
+<td>characteristic polynomial, degree $4$</td>
+</tr>
+<tr>
+<td>$m_A$</td>
+<td>minimal polynomial</td>
+</tr>
+<tr>
+<td>$\sigma(A)$</td>
+<td>spectrum, four eigenvalues with multiplicity</td>
+</tr>
+<tr>
+<td>$P_\lambda$</td>
+<td>Riesz spectral projector</td>
+</tr>
+<tr>
+<td>$N_\lambda$</td>
+<td>nilpotent part on the generalized eigenspace</td>
+</tr>
+<tr>
+<td>$\rho(A)$</td>
+<td>spectral radius</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lambda_k$</td>
+<td>the eigenvalues</td>
+</tr>
+<tr>
+<td>$\Delta(A)$</td>
+<td>the discriminant</td>
+</tr>
+<tr>
+<td>$R(z)=(zI-A)^{-1}$</td>
+<td>the resolvent</td>
+</tr>
+<tr>
+<td>$P_\lambda$</td>
+<td>the spectral projector</td>
+</tr>
+<tr>
+<td>$N_\lambda$</td>
+<td>the nilpotent part</td>
+</tr>
+<tr>
+<td>$P_k$</td>
+<td>the Lagrange projector at a simple spectrum</td>
+</tr>
+<tr>
+<td>$\rho(A)$</td>
+<td>the spectral radius</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the characteristic polynomial, the Jordan form, the minimal polynomial and the spectral projectors.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 1995), for the Riesz projectors, the resolvent and the perturbation of eigenvalues.</li>
+<li>Nelson Dunford and Jacob T. Schwartz, <em>Linear Operators, Part I</em> (Interscience, 1958), for the holomorphic functional calculus and the spectral mapping theorem.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m4c.html">The Element, the Coordinates and the Trace</a>, for the Jordan decomposition.</li>
+<li><a href="the-polar-decomposition-of-m4c.html">The Polar Decomposition</a>, for the spectral theorem for normal matrices.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents</a>, for the simple-spectrum Lagrange projectors.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m4c.html">The Geometry of the Idempotents</a>, for the spectral strata and their geometry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exponential and the Lie Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exponential-and-the-lie-group"><strong>The Exponential and the Lie Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The exponential of a matrix is the power series</p>
+<p>$$
+e^X=\sum_{n=0}^{\infty}\frac{X^n}{n!},
+$$</p>
+<p>which converges for every $X\in M_6(\mathbb{C})$ and defines a holomorphic map</p>
+<p>$$
+\exp:M_6(\mathbb{C})\longrightarrow GL_6(\mathbb{C}).
+$$</p>
+<p>The map is surjective: every invertible matrix has a logarithm. The one-parameter subgroups are the curves $t\mapsto e^{tX}$, and the Lie algebra $\mathfrak{gl}_6=M_6(\mathbb{C})$ has real dimension $72$; the compact real form $\mathfrak{su}(6)$ has dimension $35$. The closed form of the exponential is the Jordan form</p>
+<p>$$
+e^{PJP^{-1}}=Pe^JP^{-1},
+\qquad
+e^{\lambda I+N}=e^\lambda\sum_{k=0}^{m-1}\frac{N^k}{k!},
+$$</p>
+<p>and the eigenvalues of $e^X$ are $e^{\lambda_1},\dots,e^{\lambda_6}$.</p>
+<p>The article assumes the Jordan form of <em>The Element, the Coordinates and the Trace</em> and the unitary group of <em>The Involution and the Hermitian Structure</em>. It uses the holomorphic functional calculus of <em>Spectral Theory and the Spectral Projectors</em>. The polar decomposition is <em>The Polar Decomposition</em>; the topology of the group is <em>The Topology of $M_6(\mathbb{C})$</em>.</p>
+<h2 id="the-exponential">The Exponential</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> For $X\in M_6(\mathbb{C})$,</p>
+<p>$$
+e^X=\sum_{n=0}^{\infty}\frac{X^n}{n!}.
+$$</p>
+<p><strong>Theorem.</strong> The series converges absolutely and uniformly on compact subsets of $M_6(\mathbb{C})$; the map $\exp$ is holomorphic; and</p>
+<p>$$
+e^0=I_6,\qquad
+e^{X+Y}=e^Xe^Y\ \text{if }XY=YX,\qquad
+(e^X)^{-1}=e^{-X}.
+$$</p>
+<p><strong>Proof.</strong> $\lVert X^n\rVert\le\lVert X\rVert^n$, so the series is dominated by $e^{\lVert X\rVert}$; the product formula follows from the binomial theorem when $X$ and $Y$ commute; the inverse is $e^{-X}$.</p>
+<p><strong>Theorem (the determinant and the eigenvalues).</strong> For every $X$,</p>
+<p>$$
+\det e^X=e^{\operatorname{tr}X},
+\qquad
+\sigma(e^X)=e^{\sigma(X)}=\{e^{\lambda_1},\dots,e^{\lambda_6}\}.
+$$</p>
+<p><strong>Proof.</strong> In the Jordan form, $X=PJP^{-1}$ and $e^X=Pe^JP^{-1}$; the eigenvalues of $e^J$ are $e^{\lambda_i}$ with the same multiplicities; the determinant is the product, $e^{\sum\lambda_i}=e^{\operatorname{tr}X}$.</p>
+<p><strong>Corollary (the image).</strong> The image of $\exp$ is contained in $GL_6(\mathbb{C})$, and it is contained in the open set of matrices with nonzero determinant.</p>
+<p><strong>Proof.</strong> $e^X$ has inverse $e^{-X}$; the determinant is $e^{\operatorname{tr}X}\neq0$.</p>
+<h3 id="the-derivative">The Derivative</h3>
+<p><strong>Theorem.</strong> The derivative of $\exp$ at $X$ is</p>
+<p>$$
+d(\exp)_X(Y)=\int_0^1e^{sX}Ye^{(1-s)X}\,ds
+=\sum_{n=0}^{\infty}\frac{1}{(n+1)!}\sum_{j=0}^{n}X^jYX^{n-j}.
+$$</p>
+<p><strong>Proof.</strong> Differentiate the power series term by term:</p>
+<p>$$
+\frac{d}{dt}e^{X+tY}\Big|_{t=0}
+=\sum_{n=1}^{\infty}\frac{1}{n!}\sum_{j=0}^{n-1}X^jYX^{n-1-j}
+=\int_0^1e^{sX}Ye^{(1-s)X}ds .
+$$</p>
+<p><strong>Corollary (the local diffeomorphism).</strong> $d(\exp)_0=I_6$, so $\exp$ is a local diffeomorphism from a neighborhood of $0$ onto a neighborhood of $I_6$.</p>
+<p><strong>Proof.</strong> The derivative at $0$ is $Y\mapsto\int_0^1Yds=Y$; the inverse function theorem.</p>
+<p><strong>Remark (the derivative formula).</strong> The derivative can be written</p>
+<p>$$
+d(\exp)_X=\frac{1-e^{-\operatorname{ad}_X}}{\operatorname{ad}_X}e^X
+=e^X\frac{1-e^{-\operatorname{ad}_X}}{\operatorname{ad}_X},
+$$</p>
+<p>where the fraction is the power series $\sum_{k\ge0}(-\operatorname{ad}_X)^k/(k+1)!$. The formula is the closed form of the derivative; it is singular exactly when $\operatorname{ad}_X$ has an eigenvalue in $2\pi\mathrm i\mathbb{Z}\setminus\{0\}$.</p>
+<p><strong>Proof.</strong> Expand the integral and use $\operatorname{ad}_X^k(Y)$; the series is the standard formula for the derivative of the exponential.</p>
+<h3 id="the-logarithm">The Logarithm</h3>
+<p><strong>Theorem (the logarithm near the identity).</strong> For $\lVert N\rVert<1$,</p>
+<p>$$
+\log(I_6+N)=\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}N^n,
+$$</p>
+<p>and</p>
+<p>$$
+e^{\log(I_6+N)}=I_6+N .
+$$</p>
+<p><strong>Proof.</strong> The series converges for $\lVert N\rVert<1$; the identity $e^{\log(1+z)}=1+z$ for $|z|<1$ extends to commuting matrices, and $N$ commutes with its powers.</p>
+<p><strong>Theorem (the principal logarithm).</strong> If $A\in GL_6(\mathbb{C})$ has no eigenvalue on the negative real axis, then there is a unique logarithm $X$ with spectrum in the strip $\lvert\operatorname{Im}z\rvert<\pi$; it is</p>
+<p>$$
+X=\log A,
+$$</p>
+<p>defined by the Dunford calculus with the principal branch of the logarithm.</p>
+<p><strong>Proof.</strong> The principal logarithm is holomorphic on $\mathbb{C}\setminus(-\infty,0]$; the Dunford calculus applies; the spectral mapping gives $e^{\log A}=A$; the spectrum condition fixes the branch.</p>
+<p><strong>Corollary (the branch ambiguity).</strong> The logarithm is not unique. For a diagonalizable $A$ with eigenvalues $\lambda_i$, the logarithms are</p>
+<p>$$
+X_0+2\pi\mathrm i\,\operatorname{diag}(k_1,\dots,k_6)
+$$</p>
+<p>in an eigenbasis, with $k_i\in\mathbb{Z}$. For a general $A$, the choices of the branches of $\log\lambda_i$ in the Jordan construction give different logarithms.</p>
+<p><strong>Proof.</strong> In an eigenbasis, $e^X=A$ forces $X$ to preserve each eigenspace and to have eigenvalues $\log\lambda_i+2\pi\mathrm i k_i$. The Jordan construction gives one logarithm for each choice of branch.</p>
+<h2 id="the-surjectivity">The Surjectivity</h2>
+<p><strong>Theorem.</strong> The exponential map</p>
+<p>$$
+\exp:M_6(\mathbb{C})\longrightarrow GL_6(\mathbb{C})
+$$</p>
+<p>is surjective.</p>
+<p><strong>Proof.</strong> Let $A\in GL_6(\mathbb{C})$ and let $A=PJP^{-1}$ be its Jordan form, with blocks $J_m(\lambda)=\lambda I+N$, $\lambda\neq0$. For each block,</p>
+<p>$$
+J_m(\lambda)=\lambda\left(I+\frac{N}{\lambda}\right),
+\qquad
+\log J_m(\lambda)=(\log\lambda)I+\log\left(I+\frac{N}{\lambda}\right),
+$$</p>
+<p>where the logarithm of $I+N/\lambda$ is the finite polynomial $\sum_{k=1}^{m-1}(-1)^{k+1}(N/\lambda)^k/k$ because $N$ is nilpotent. Then</p>
+<p>$$
+X=P\left(\bigoplus\log J_m(\lambda)\right)P^{-1}
+$$</p>
+<p>satisfies $e^X=A$. The choice of $\log\lambda$ is arbitrary; different choices give different logarithms.</p>
+<p><strong>Corollary (the real case).</strong> The real exponential $\exp:M_6(\mathbb{R})\to GL_6(\mathbb{R})$ is not surjective: every image has positive determinant, so a real matrix with negative determinant is not in the image.</p>
+<p><strong>Proof.</strong> $\det e^X=e^{\operatorname{tr}X}>0$ for real $X$.</p>
+<p><strong>Corollary (the fibres).</strong> The fibre of $\exp$ over $A$ is the set of logarithms of $A$; it is nonempty, and it is a union of components indexed by the choices of the logarithms of the eigenvalues.</p>
+<p><strong>Proof.</strong> The Jordan-form construction gives one logarithm for each choice of $\log\lambda_i$; the branch ambiguity gives the rest.</p>
+<h2 id="the-one-parameter-subgroups">The One-Parameter Subgroups</h2>
+<p><strong>Definition.</strong> A <strong>one-parameter subgroup</strong> of $GL_6(\mathbb{C})$ is a continuous homomorphism</p>
+<p>$$
+\gamma:\mathbb{R}\longrightarrow GL_6(\mathbb{C}),
+\qquad
+\gamma(s+t)=\gamma(s)\gamma(t).
+$$</p>
+<p><strong>Theorem.</strong> Every one-parameter subgroup is of the form</p>
+<p>$$
+\gamma(t)=e^{tX}
+$$</p>
+<p>for a unique $X\in M_6(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> The standard theorem for Lie groups: a continuous one-parameter subgroup is smooth, and its derivative at $0$ is $X=\gamma'(0)$; the function $t\mapsto\gamma(t)$ and $t\mapsto e^{tX}$ satisfy the same differential equation $\gamma'=\gamma X$ with the same initial condition, hence they agree. Uniqueness: $X=\gamma'(0)$.</p>
+<p><strong>Corollary (the Lie algebra).</strong> The tangent space at the identity is $M_6(\mathbb{C})$, with the bracket</p>
+<p>$$
+[X,Y]=XY-YX,
+$$</p>
+<p>and the exponential is the Lie group exponential.</p>
+<p><strong>Proof.</strong> The tangent space of $GL_6$ at $I_6$ is $M_6(\mathbb{C})$; the bracket is the derivative of the commutator of the conjugation; the one-parameter subgroups are the exponentials.</p>
+<p><strong>Corollary (the functoriality).</strong> For a homomorphism $\Phi:GL_6\to GL_6$, the derivative at the identity is a Lie algebra homomorphism, and</p>
+<p>$$
+\Phi(e^X)=e^{d\Phi(X)}.
+$$</p>
+<p><strong>Proof.</strong> $\Phi$ sends one-parameter subgroups to one-parameter subgroups; differentiate.</p>
+<h2 id="the-lie-algebras">The Lie Algebras</h2>
+<h3 id="the-general-linear-algebra">The General Linear Algebra</h3>
+<p><strong>Theorem.</strong> $\mathfrak{gl}_6(\mathbb{C})=M_6(\mathbb{C})$ is a Lie algebra of complex dimension $36$ and real dimension $72$, with center $\mathbb{C}I_6$ and derived algebra $\mathfrak{sl}_6$.</p>
+<p><strong>Proof.</strong> The bracket is bilinear, antisymmetric and satisfies the Jacobi identity; the center is the scalars; the derived algebra is the traceless matrices because $[E_{ij},E_{ji}]=E_{ii}-E_{jj}$ and the commutators span the traceless part.</p>
+<p><strong>Corollary (the real form).</strong> The real Lie algebra $\mathfrak{gl}_6(\mathbb{R})$ has dimension $36$; the complex algebra, viewed as a real algebra, has dimension $72$.</p>
+<p><strong>Proof.</strong> A complex $n\times n$ matrix has $2n^2$ real parameters; a real one has $n^2$.</p>
+<h3 id="the-special-unitary-algebra">The Special Unitary Algebra</h3>
+<p><strong>Definition.</strong> The <strong>special unitary algebra</strong> is</p>
+<p>$$
+\mathfrak{su}(6)=\{X\in M_6(\mathbb{C}):X^*=-X,\ \operatorname{tr}X=0\}.
+$$</p>
+<p><strong>Theorem.</strong> $\mathfrak{su}(6)$ is a real Lie algebra of dimension</p>
+<p>$$
+36-1=35,
+$$</p>
+<p>a compact real form of $\mathfrak{sl}_6(\mathbb{C})$, and the Lie algebra of $SU(6)$.</p>
+<p><strong>Proof.</strong> The skew-Hermitian matrices have real dimension $36$ (the diagonal is purely imaginary, the upper triangle is free complex, the lower is determined); the traceless condition removes one real dimension. The complexification is $\mathfrak{sl}_6(\mathbb{C})$; the Killing form is negative definite on $\mathfrak{su}(6)$, so the form is compact.</p>
+<p><strong>Theorem (the exponential).</strong> The exponential maps $\mathfrak{su}(6)$ onto $SU(6)$, and the eigenvalues of $e^X$ for $X\in\mathfrak{su}(6)$ lie on the unit circle.</p>
+<p><strong>Proof.</strong> $SU(6)$ is compact and connected, so the exponential of its Lie algebra is surjective. If $X$ is skew-Hermitian, it is unitarily diagonalizable with purely imaginary eigenvalues $\mathrm i\theta_j$; then $e^X$ has eigenvalues $e^{\mathrm i\theta_j}$ on the unit circle, and $\det e^X=e^{\operatorname{tr}X}=1$.</p>
+<p><strong>Corollary (the dimensions).</strong></p>
+<p>$$
+\dim_{\mathbb{R}}U(6)=36,\qquad
+\dim_{\mathbb{R}}SU(6)=35,\qquad
+\dim_{\mathbb{R}}\mathfrak{gl}_6=72 .
+$$</p>
+<p><strong>Proof.</strong> $U(6)$ is the skew-Hermitian matrices (dimension $36$); $SU(6)$ is the traceless part (dimension $35$); $\mathfrak{gl}_6$ is all matrices (complex dimension $36$, real dimension $72$).</p>
+<p><strong>Remark (the center and the quotient).</strong> The center of $SU(6)$ is $\mathbb{Z}/6$, and the adjoint group is $PSU(6)=SU(6)/(\mathbb{Z}/6)$, of dimension $35$, with Lie algebra $\mathfrak{su}(6)$.</p>
+<h2 id="the-closed-form">The Closed Form</h2>
+<h3 id="the-jordan-form">The Jordan Form</h3>
+<p><strong>Theorem (the closed form).</strong> Let $X=PJP^{-1}$ with $J=\bigoplus J_{m_{ij}}(\lambda_i)$. Then</p>
+<p>$$
+e^X=P\left(\bigoplus e^{J_{m_{ij}}(\lambda_i)}\right)P^{-1},
+\qquad
+e^{J_m(\lambda)}=e^\lambda\sum_{k=0}^{m-1}\frac{N^k}{k!},
+$$</p>
+<p>where $N=J_m(\lambda)-\lambda I$ is the nilpotent shift.</p>
+<p><strong>Proof.</strong> $e^{PJP^{-1}}=Pe^JP^{-1}$; for a Jordan block, $e^{\lambda I+N}=e^\lambda e^N$ because $\lambda I$ commutes with $N$; the series $e^N$ terminates at $k=m-1$.</p>
+<p><strong>Corollary (the trace and the determinant).</strong></p>
+<p>$$
+\operatorname{tr}e^X=\sum_{i=1}^{6}e^{\lambda_i},
+\qquad
+\det e^X=\prod_{i=1}^{6}e^{\lambda_i}=e^{\operatorname{tr}X}.
+$$</p>
+<p><strong>Proof.</strong> The eigenvalues of $e^X$ are $e^{\lambda_i}$ with the algebraic multiplicities; the trace is the sum and the determinant the product.</p>
+<p><strong>Corollary (the real eigenvalues).</strong> If $X$ is Hermitian, $e^X$ is Hermitian positive definite; if $X$ is skew-Hermitian, $e^X$ is unitary.</p>
+<p><strong>Proof.</strong> The spectral theorem; the exponential acts on the eigenvalues by $e^{\lambda}$.</p>
+<h3 id="the-exponential-of-a-sum">The Exponential of a Sum</h3>
+<p><strong>Theorem (the Baker–Campbell–Hausdorff formula).</strong> For $X,Y$ near $0$,</p>
+<p>$$
+e^Xe^Y=e^{X+Y+\frac12[X,Y]+\frac{1}{12}[X,[X,Y]]-\frac{1}{12}[Y,[X,Y]]+\cdots}.
+$$</p>
+<p><strong>Proof.</strong> The standard BCH formula; the series converges in a neighborhood of $0$.</p>
+<p><strong>Corollary (the Lie correspondence).</strong> The Lie algebra bracket is the deviation from commutativity of the exponential:</p>
+<p>$$
+e^{tX}e^{tY}e^{-tX}e^{-tY}=e^{t^2[X,Y]+O(t^3)}.
+$$</p>
+<p><strong>Proof.</strong> Expand the BCH formula to second order.</p>
+<p><strong>Remark (the exponential is not a homomorphism).</strong> In general $e^{X+Y}\neq e^Xe^Y$; the defect is measured by the BCH series. The exponential is a local diffeomorphism, not a group homomorphism.</p>
+<h2 id="the-lie-group">The Lie Group</h2>
+<h3 id="the-group-structure">The Group Structure</h3>
+<p><strong>Theorem.</strong> $GL_6(\mathbb{C})$ is a complex Lie group of complex dimension $36$ and real dimension $72$; its Lie algebra is $\mathfrak{gl}_6(\mathbb{C})$; its exponential is the matrix exponential.</p>
+<p><strong>Proof.</strong> $GL_6$ is the open subset $\det\neq0$ of $M_6(\mathbb{C})$; the group operations are rational and smooth; the tangent space at the identity is $M_6$; the exponential is the matrix exponential.</p>
+<p><strong>Corollary (the closed subgroups).</strong> Every closed subgroup of $GL_6(\mathbb{C})$ is a Lie subgroup (Cartan's theorem), and its Lie algebra is a subalgebra of $\mathfrak{gl}_6$.</p>
+<p><strong>Proof.</strong> Cartan's theorem on closed subgroups of Lie groups.</p>
+<h3 id="the-compact-real-form">The Compact Real Form</h3>
+<p><strong>Theorem.</strong> $SU(6)$ is a compact connected Lie group of dimension $35$, with Lie algebra $\mathfrak{su}(6)$; its exponential is surjective.</p>
+<p><strong>Proof.</strong> $SU(6)$ is closed and bounded in $M_6(\mathbb{C})$, hence compact; it is connected; the dimension is the dimension of the Lie algebra; the exponential is surjective on a compact connected Lie group.</p>
+<p><strong>Corollary (the eigenvalues and the determinant).</strong> For $X\in\mathfrak{su}(6)$, the eigenvalues of $X$ are purely imaginary and sum to zero; the eigenvalues of $e^X$ are on the unit circle and their product is $1$.</p>
+<p><strong>Proof.</strong> Skew-Hermitian trace-zero; the exponential maps $\mathrm i\theta_j$ to $e^{\mathrm i\theta_j}$; the sum is zero, so the product is $1$.</p>
+<p><strong>Remark (the topology).</strong> $\pi_1(SU(6))=\mathbb{Z}/6$ and the center is $\mathbb{Z}/6$; the adjoint group $PSU(6)$ is $SU(6)/(\mathbb{Z}/6)$. The details are <em>The Topology of $M_6(\mathbb{C})$</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The exponential is</p>
+<p>$$
+e^X=\sum_{n=0}^{\infty}\frac{X^n}{n!},
+$$</p>
+<p>entire on $M_6(\mathbb{C})$, with</p>
+<p>$$
+e^{X+Y}=e^Xe^Y\ (XY=YX),\qquad
+\det e^X=e^{\operatorname{tr}X},\qquad
+\sigma(e^X)=e^{\sigma(X)} .
+$$</p>
+<p>It is surjective onto $GL_6(\mathbb{C})$; every invertible matrix has a logarithm, constructed from the Jordan form. The one-parameter subgroups are $e^{tX}$, and the Lie algebra is $\mathfrak{gl}_6$ with the commutator.</p>
+<p>$$
+\boxed{\ \exp:M_6(\mathbb{C})\twoheadrightarrow GL_6(\mathbb{C}),\qquad \dim_{\mathbb{R}}\mathfrak{gl}_6=72,\qquad \dim_{\mathbb{R}}\mathfrak{su}(6)=35 .\ }
+$$</p>
+<p>The closed form is the Jordan formula</p>
+<p>$$
+e^{PJP^{-1}}=Pe^JP^{-1},
+\qquad
+e^{J_m(\lambda)}=e^\lambda\sum_{k=0}^{m-1}\frac{N^k}{k!},
+$$</p>
+<p>and the eigenvalues of $e^X$ are $e^{\lambda_i}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exponential</td>
+<td>entire, surjective onto $GL_6(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>Logarithm</td>
+<td>exists for every invertible matrix</td>
+</tr>
+<tr>
+<td>One-parameter subgroups</td>
+<td>$e^{tX}$, $X\in\mathfrak{gl}_6$</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{R}}\mathfrak{gl}_6$</td>
+<td>$72$</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{R}}\mathfrak{u}(6)$</td>
+<td>$36$</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{R}}\mathfrak{su}(6)$</td>
+<td>$35$</td>
+</tr>
+<tr>
+<td>Determinant</td>
+<td>$\det e^X=e^{\operatorname{tr}X}$</td>
+</tr>
+<tr>
+<td>Eigenvalues</td>
+<td>$e^{\lambda_1},\dots,e^{\lambda_6}$</td>
+</tr>
+<tr>
+<td>Closed form</td>
+<td>Jordan blocks, finite exponential series</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e^X=\exp X$</td>
+<td>the matrix exponential</td>
+</tr>
+<tr>
+<td>$\log A$</td>
+<td>a logarithm of $A$</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}_6$</td>
+<td>the Lie algebra $M_6(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(6)$</td>
+<td>the skew-Hermitian traceless algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X$</td>
+<td>the commutator map $Y\mapsto[X,Y]$</td>
+</tr>
+<tr>
+<td>$J_m(\lambda)$</td>
+<td>the Jordan block</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>, for the Jordan form.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the unitary and special unitary groups.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m6c.html">Spectral Theory and the Spectral Projectors</a>, for the Dunford calculus and the principal logarithm.</li>
+<li><a href="the-polar-decomposition-of-m6c.html">The Polar Decomposition</a>, for the exponential form $A=Ue^H$.</li>
+<li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the Lie algebra and its derivations.</li>
+<li><a href="the-topology-of-m6c.html">The Topology of $M_6(\mathbb{C})$</a>, for the fundamental group and the center.</li>
+<li><a href="the-exponential-map.html">The Exponential Map</a>, for the general theory of the Lie group exponential.</li>
+<li><a href="the-baker-campbell-hausdorff-formula.html">The Baker–Campbell–Hausdorff Formula</a>, for the BCH series.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

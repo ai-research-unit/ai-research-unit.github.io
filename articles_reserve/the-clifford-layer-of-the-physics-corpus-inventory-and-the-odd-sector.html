@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Clifford Layer of the Physics Corpus: Where It Is, and the Odd Sector It Needs — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-clifford-layer-of-the-physics-corpus-where-it-is-and-the-odd-sector-it-needs"><strong>The Clifford Layer of the Physics Corpus: Where It Is, and the Odd Sector It Needs</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The corpus states its foundational isomorphism in one line: the biquaternion algebra is the even part of the Clifford algebra of Minkowski space,</p>
+<p>$$
+\mathbb{B}\;\cong\;\mathrm{Cl}^{+}_{1,3}(\mathbb{R}).
+$$</p>
+<p>The line is a theorem. It is also a boundary. The Clifford algebra has sixteen real dimensions; the even part has eight. The other eight — the odd part, spanned by the four vectors $\gamma^\mu$ and the four trivectors — are <strong>not</strong> in $\mathbb{B}$. No product of even elements is odd, so no operation inside $\mathbb{B}$ can produce an odd element. The odd part is a module over $\mathbb{B}$, not a subalgebra of it.</p>
+<p>The physics needs that module. Parity is $\gamma^0$. Charge conjugation is $i\gamma^2$. Time reversal is $\gamma^1\gamma^3$. The Dirac adjoint is $\psi^\dagger\gamma^0$. A reflection with normal $u$ is $x\mapsto-\epsilon(u)\,u\,x\,u$. Every one of these is odd. Every one is outside $\mathbb{B}$.</p>
+<p>This article records how far the borrowing goes.</p>
+<p><strong>The counts.</strong> A scan of the 394 physics articles finds <strong>109</strong> that carry a Clifford marker: an indexed $\gamma$, an explicit gamma-matrix representation, a Clifford symbol $\mathrm{Cl}_{p,q}$, or the dictionary map $\mathsf{M}_4$. Of these, <strong>50</strong> are structural (an explicit matrix block, at least ten indexed gamma occurrences, or at least five Clifford symbols), <strong>46</strong> use the layer in passing, and <strong>13</strong> name it only. <strong>17</strong> write an explicit gamma-matrix representation. <strong>52</strong> contain $\gamma^5$ or $\gamma_5$. The borrowing reaches <strong>9 of the 12</strong> categories of <code>physics.md</code>.</p>
+<p><strong>The sharp case.</strong> <em>The Reflection and the Rotation in Biquaternionic Form</em> is the purest instance. Its subject is the part of the Clifford algebra that $\mathbb{B}$ does not contain, and it says so: "The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative." The article is titled in biquaternionic form and its central objects are explicitly not biquaternions.</p>
+<p>This article is an inventory. It does not propose a replacement.</p>
+<h2 id="what-the-layer-is">What the Layer Is</h2>
+<p>Six imports make up the layer.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>import</th>
+<th>object</th>
+<th>dimension</th>
+<th>in $\mathbb{B}$?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the ambient algebra</td>
+<td>$\mathrm{Cl}_{1,3}$</td>
+<td>16 real</td>
+<td>even part only</td>
+</tr>
+<tr>
+<td>the generators</td>
+<td>$\gamma^\mu$</td>
+<td>4 odd</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the pseudoscalar</td>
+<td>$\omega=\gamma^0\gamma^1\gamma^2\gamma^3$</td>
+<td>grade 4, even</td>
+<td>even, not odd</td>
+</tr>
+<tr>
+<td>the chirality element</td>
+<td>$\gamma^5=i\omega$</td>
+<td>grade 4, even</td>
+<td>even, not odd</td>
+</tr>
+<tr>
+<td>the reflection group</td>
+<td>$\mathrm{Pin}(1,3)$</td>
+<td>odd coset of $\mathrm{Spin}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the dictionary map</td>
+<td>$\mathsf{M}_4:\mathbb{B}\to\mathrm{Cl}^{+}_{1,3}$</td>
+<td>8 real</td>
+<td>isomorphism</td>
+</tr>
+</tbody>
+</table></div>
+<p>The even part is not the problem. $\omega$ and $\gamma^5$ are even, and the chirality projectors $\tfrac12(1\pm\gamma^5)$ are even. The problem is the first, second and fifth rows: the generators, the odd part they span, and the reflection group built from them.</p>
+<p>The layer also imports a metric and a sign. The Clifford metric is $g=\mathrm{diag}(+1,-1,-1,-1)$ on the generators, and the Pin action carries the sign $\epsilon(u)=\pm1$ fixed by $u^2=\epsilon(u)I$. Neither is an element of $\mathbb{B}$; both are data of the Clifford algebra.</p>
+<h2 id="the-odd-sector-theorem">The Odd-Sector Theorem</h2>
+<p>The obstruction is elementary and exact.</p>
+<p><strong>Proposition.</strong> Let $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$. Every element of $\mathbb{B}$ is even. The product of two even elements is even. Hence no odd element is a product of elements of $\mathbb{B}$, and no algebraic operation of $\mathbb{B}$ produces one.</p>
+<p><em>Proof.</em> The grading is $\mathrm{Cl}=\mathrm{Cl}^{0}\oplus\mathrm{Cl}^{1}$ with $\mathrm{Cl}^{i}\mathrm{Cl}^{j}\subseteq\mathrm{Cl}^{i+j}$. The even part is a subalgebra; the odd part is a two-sided module over it. $\mathbb{B}=\mathrm{Cl}^{0}$. $\square$</p>
+<p>Three consequences follow, and together they are the content of this article.</p>
+<ul>
+<li><strong>The odd elements are not recoverable.</strong> They are not hidden in $\mathbb{B}$ under another name. They are the other half of a larger algebra, and the isomorphism $\mathbb{B}\cong\mathrm{Cl}^{+}$ is precisely the statement that the other half is absent.</li>
+<li><strong>The operations that need them are not inner.</strong> Parity, time reversal, charge conjugation, reflection and the Dirac adjoint are module maps. They act on the spinor module, not on $\mathbb{B}$ by left multiplication. They cannot be written as $X\mapsto UXU^{-1}$ or $X\mapsto UXU^{*}$ with $U\in\mathbb{B}$.</li>
+<li><strong>The absence is structural, not notational.</strong> A change of basis inside $\mathbb{B}$ cannot supply an odd element. Only an enlargement of the algebra can.</li>
+</ul>
+<p>The last point separates this layer from the gauge layer. The gauge articles write an external index $\mu$; the Clifford articles write an external grading. Both are outside $\mathbb{B}$, and both are removed only by changing the algebra, not by changing the notation.</p>
+<h2 id="the-worked-example-the-reflection-and-the-rotation">The Worked Example: <em>The Reflection and the Rotation</em></h2>
+<p>The article is organised around the grading, and the grading is exactly the odd sector. Its imports can be listed one by one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>import</th>
+<th>where it occurs</th>
+<th>what it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Cl}_{1,3}=\mathrm{Cl}^{+}\oplus\mathrm{Cl}^{-}$</td>
+<td>boxed, §<em>The Grading by Reflection Count</em></td>
+<td>defines the even/odd split</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$</td>
+<td>same section</td>
+<td>identifies the algebra with the even half</td>
+</tr>
+<tr>
+<td>$\gamma^0$ as frame</td>
+<td>§<em>The Frame $\gamma^0$ and the Hermitian Sector</em></td>
+<td>reaches the odd part from the even part</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4(\mathbb{M}_+)=\mathrm{span}\{I,\gamma^0\gamma^1,\gamma^0\gamma^2,\gamma^0\gamma^3\}$</td>
+<td>same section</td>
+<td>identifies the Hermitian sector with the timelike bivectors</td>
+</tr>
+<tr>
+<td>$N=\mathrm{diag}(+1,-1,-1,-1)=g$</td>
+<td>same section</td>
+<td>derives the Clifford metric from the biquaternion norm</td>
+</tr>
+<tr>
+<td>$\gamma^0\mathsf{M}_4(\tilde Q)\gamma^0=\mathsf{M}_4(\tilde Q^{*})$</td>
+<td>§<em>Conjugation by $\gamma^0$ Is Complex Conjugation</em></td>
+<td>makes the frame the complex conjugation</td>
+</tr>
+<tr>
+<td>$\mathrm{rev}(\mathsf{M}_4(\tilde Q))=\mathsf{M}_4(\tilde Q^{\natural})$</td>
+<td>same section</td>
+<td>makes Clifford reversal the quaternion conjugation</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}(1,3)=\mathrm{Spin}(1,3)\cdot\{\text{unit vectors}\}$</td>
+<td>§<em>The Spaces of Rotations and of Reflections</em></td>
+<td>names the reflection group</td>
+</tr>
+<tr>
+<td>$\rho(u):x\mapsto-\epsilon(u)\,u\,x\,u$</td>
+<td>§<em>One Algebra, Read Twice</em></td>
+<td>the reflection law</td>
+</tr>
+<tr>
+<td>determinant table: odd $\to-1$, "in $\mathbb{B}$? no"</td>
+<td>§<em>The Grading by Reflection Count</em></td>
+<td>states the obstruction in a table</td>
+</tr>
+</tbody>
+</table></div>
+<p>The decisive sentence is in §<em>One Algebra, Read Twice</em>:</p>
+<blockquote>
+<p>The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative. They lie in the odd part of $\mathrm{Cl}_{1,3}$ and act on vectors by the two-sided map of the Pin group.</p>
+</blockquote>
+<p>The article then builds the reflection group, the determinant table, the Pin action and the anti-linear case on that outside. The construction is correct. The title is not: an article in biquaternionic form whose subject is the odd part cannot be a construction inside the biquaternions.</p>
+<p>This is the clearest single case in the corpus because the subject and the obstruction coincide. In the other articles the odd element is a tool; here it is the topic.</p>
+<h2 id="the-root-the-dictionary">The Root: The Dictionary</h2>
+<p><em>The Dirac Algebra and Biquaternions — A Dictionary</em> is where the boundary is drawn, and it draws it correctly. It states that the gamma matrices generate $\mathrm{Cl}_{1,3}$, that the biquaternions form the even subalgebra, and that the generators themselves are not biquaternions: they are obtained from the algebra by the frame $\gamma^0$.</p>
+<p>As a dictionary, the article is exact. As a source, it is the root of the layer: once $\mathsf{M}_4$ is fixed, the odd part is available, and the downstream articles use it. The dictionary carries 41 Clifford symbols, 88 occurrences of $\mathsf{M}_4$ and four explicit matrix blocks. The Dirac equation article, which imports the same structure, is cited by 30 physics articles.</p>
+<p>The distinction matters for the count. A dictionary is a bridge; the problem is that the bridge became the road.</p>
+<h2 id="the-odd-part-in-use">The Odd Part in Use</h2>
+<p>The articles below use odd elements as working objects. Each entry names the object and the operation it performs.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>odd object</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation</a></td>
+<td>$\gamma^0$, $\gamma^\mu$, $\mathrm{Pin}$</td>
+<td>reflections, parity, time reversal</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem</a></td>
+<td>$\gamma^0$, $i\gamma^2$, $\gamma^1\gamma^3$</td>
+<td>$P$, $C$, $T$ on the spinor module</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html">Charge Conjugation and the Division Ring</a></td>
+<td>$\Pi A^{*}\Pi^{-1}$</td>
+<td>pseudoautomorphism of $\mathrm{Cl}_{n,m}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass</a></td>
+<td>$\Pi$</td>
+<td>charge-conjugation pseudoautomorphism</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-grading-and-fermion-parity-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors</a></td>
+<td>$\mathrm{Cl}^{1}$</td>
+<td>parity grading</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension</a></td>
+<td>$\mathrm{Cl}^{1}$</td>
+<td>graded commutator, odd extension</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung</a></td>
+<td>$\gamma^0$</td>
+<td>the odd element with no representative</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model</a></td>
+<td>$\gamma^0$</td>
+<td>Dirac adjoint, spinor bilinears</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment</a></td>
+<td>$\gamma^\mu$ ($\sigma^{\mu\nu}$ is even)</td>
+<td>the generator and its commutator</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation</a></td>
+<td>$\gamma^\mu$ (STA)</td>
+<td>spacetime-algebra vectors</td>
+</tr>
+</tbody>
+</table></div>
+<p>Four of the admissions are explicit. The CPT article writes that the internal matrices of $C$ and $P$ "are odd Clifford elements, outside $\mathbb{B}$". Zitterbewegung writes that $\gamma^0$ "is an <strong>odd</strong> element of the Clifford algebra" and that "an odd element has no representation" in $\mathbb{B}$. The nonlinear Dirac article writes that the Dirac adjoint carries the odd $\gamma^0$ and the axial current carries $\gamma_5$, and that "neither is in the even subalgebra". The reflection article writes the sentence quoted above.</p>
+<p>The corpus knows the boundary. The counts measure how often it is crossed.</p>
+<h3 id="the-math96-users">The $\gamma^5$ Users</h3>
+<p>The chirality element needs a separate note, because it is <strong>even</strong>: $\gamma^5=i\omega=i\gamma^0\gamma^1\gamma^2\gamma^3$ is the scalar imaginary times the product of four generators, hence grade 4 and even. It is not an odd element, and its use is not an import of the odd part. It is the use of the matrix representation and of the trace.</p>
+<p>Fifty-two articles contain the symbol. The heaviest are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th style="text-align: right;">$\gamma^5$ occurrences</th>
+<th>what is computed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment</a></td>
+<td style="text-align: right;">54</td>
+<td>the $CP$-odd bilinear and its form factor</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method</a></td>
+<td style="text-align: right;">50</td>
+<td>the regulated Jacobian, $\operatorname{tr}\gamma_5\mathcal O$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions</a></td>
+<td style="text-align: right;">38</td>
+<td>the chiral projectors and the chiral connection</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate</a></td>
+<td style="text-align: right;">30</td>
+<td>the condensate and its breaking pattern</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation</a></td>
+<td style="text-align: right;">25</td>
+<td>the axial anomaly</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model</a></td>
+<td style="text-align: right;">24</td>
+<td>the axial current</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem</a></td>
+<td style="text-align: right;">24</td>
+<td>the discrete operations</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization</a></td>
+<td style="text-align: right;">20</td>
+<td>the chiral current algebra</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pattern is consistent: $\gamma^5$ enters where a trace over the Dirac module is taken. The trace is a property of the representation, not of $\mathbb{B}$, and it is the representation that carries the odd generators.</p>
+<h2 id="the-categories">The Categories</h2>
+<p>Nine of the twelve categories use the layer. Three are clean: Non Relativistic Non Quantum Theory, Relativistic Non Quantum Theory, and Thermodynamics and Statistical Mechanics.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>category</th>
+<th style="text-align: right;"><code>physics.md</code></th>
+<th style="text-align: right;">articles</th>
+<th style="text-align: right;">band 1</th>
+<th style="text-align: right;">band 2</th>
+<th style="text-align: right;">band 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biquaternion Universe</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Biquaternion Physical Interpretation of Mathematics</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Biquaternion Non Relativistic Quantum Theory</td>
+<td style="text-align: right;">187</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Biquaternion Non Relativistic Non Quantum Theory</td>
+<td style="text-align: right;">424</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Biquaternion Electromagnetism</td>
+<td style="text-align: right;">511</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Biquaternion Relativity</td>
+<td style="text-align: right;">588</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>Biquaternion Relativistic Quantum Theory</td>
+<td style="text-align: right;">650</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Biquaternion Relativistic Non Quantum Theory</td>
+<td style="text-align: right;">812</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Biquaternion Quantum Fields</td>
+<td style="text-align: right;">871</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>Biquaternion Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">1087</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Biquaternion Gravity and Cosmology</td>
+<td style="text-align: right;">1256</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Biquaternion Thermodynamics and Statistical Mechanics</td>
+<td style="text-align: right;">1291</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-articles-by-category">The Articles by Category</h2>
+<p><strong>Band 1</strong> is structural: an explicit gamma-matrix block, at least ten indexed gamma occurrences, or at least five Clifford symbols. <strong>Band 2</strong> uses the layer in passing: three to nine indexed gammas, or one to four Clifford symbols. <strong>Band 3</strong> names it once or twice.</p>
+<h3 id="band-1-structural">Band 1 — structural</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>category</th>
+<th>subsection</th>
+<th style="text-align: right;">$\gamma^0$</th>
+<th style="text-align: right;">$\gamma^\mu$</th>
+<th style="text-align: right;">$\gamma^5$</th>
+<th style="text-align: right;">matrices</th>
+<th style="text-align: right;">$\mathrm{Cl}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html">The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge</a></td>
+<td>Physical Interpretation of Mathematics</td>
+<td>Algebra</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/subluminal-and-superluminal-electromagnetic-waves-and-the-lepton-mass-spectrum.html">Subluminal and Superluminal Electromagnetic Waves in Biquaternionic Form</a></td>
+<td>Electromagnetism</td>
+<td>—</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-and-self-quantized-charge.html">The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</a></td>
+<td>Electromagnetism</td>
+<td>—</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-conformal-group-in-biquaternionic-form.html">The Conformal Group in Biquaternionic Form</a></td>
+<td>Relativity</td>
+<td>—</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/paravectors-and-the-geometry-of-spacetime.html">Paravectors and the Geometry of Spacetime</a></td>
+<td>Relativity</td>
+<td>—</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html">The Dirac Algebra and Biquaternions — A Dictionary</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">41</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html">The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html">The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1 and above</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-nonlinear-dirac-equation-and-the-thirring-model-in-biquaternionic-form.html">The Nonlinear Dirac Equation and the Thirring Model in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html">Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.html">The Foldy–Wouthuysen Transformation in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html">The Dirac Path Integral in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-daviau-map-and-the-space-clifford-formulation-of-the-dirac-equation.html">The Daviau Map and the Space Clifford Formulation of the Dirac Equation</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gordon-decomposition-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/supersymmetric-quantum-physics-in-the-biquaternion-framework.html">Supersymmetric Quantum Physics in the Biquaternion Framework</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a></td>
+<td>Relativistic Quantum Theory</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-grading-and-fermion-parity-in-biquaternionic-form.html">The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bosonization-in-biquaternionic-form.html">Bosonization in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">19</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></td>
+<td>Quantum Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html">The Quantized Dirac Field in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a></td>
+<td>Quantum Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html">Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">76</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Generalities</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-particle-roster-of-the-complex-octonionic-chain-algebra.html">The Particle Roster of the Complex Octonionic Chain Algebra</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td>Particles of spin 1/2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/matter-makes-space-an-external-construction-from-quaternionic-spinors.html">Matter Makes Space — An External Construction from Quaternionic Spinors</a></td>
+<td>Gravity and Cosmology</td>
+<td>—</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a></td>
+<td>Gravity and Cosmology</td>
+<td>—</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="band-2-in-passing">Band 2 — in passing</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>category</th>
+<th style="text-align: right;">$\gamma$</th>
+<th style="text-align: right;">$\gamma^5$</th>
+<th style="text-align: right;">$\mathrm{Cl}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a></td>
+<td>Universe</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html">The Roots of a General Element: Mass, Frames and the Mass Shell</a></td>
+<td>Physical Interpretation of Mathematics</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html">The Bloch Ball as the Normalised Slice of the Future Light Cone</a></td>
+<td>Non Relativistic Quantum Theory</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-born-rule-as-a-trace-formula-derivation-and-comparison.html">The Born Rule from the Hermitian Form — Derivation and Comparison</a></td>
+<td>Non Relativistic Quantum Theory</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a></td>
+<td>Non Relativistic Quantum Theory</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/squeezing-beyond-the-biquaternion-algebra.html">Squeezing Beyond the Biquaternion Algebra</a></td>
+<td>Non Relativistic Quantum Theory</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-field-strength-biquaternion-and-its-invariants.html">The Field-Strength Biquaternion and Its Invariants</a></td>
+<td>Electromagnetism</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-force-in-biquaternion-form.html">The Lorentz Force in Biquaternion Form</a></td>
+<td>Electromagnetism</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a></td>
+<td>Relativity</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a></td>
+<td>Relativity</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a></td>
+<td>Relativity</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html">The Relativistic Particle in an External Field, in Biquaternionic Form</a></td>
+<td>Relativity</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html">The Dirac Oscillator in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-vector-representation-of-the-dirac-spinor-in-biquaternionic-form.html">The s-Vector Representation of the Dirac Spinor in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-electron-in-biquaternionic-form.html">The Electron in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html">The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html">The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/moller-scattering-in-biquaternionic-form.html">Møller Scattering in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/parras-four-options-of-the-dirac-equation-and-the-discrete-symmetries.html">Parra's Four Options of the Dirac Equation and the Discrete Symmetries</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/triality-and-the-ding-construction-for-the-dirac-spinor-in-biquaternionic-form.html">Triality and the Ding Construction for the Dirac Spinor in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.html">The Hydrogen Atom in Biquaternionic Form — The Relativistic Case</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html">Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin Zero and One-Half</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html">The Material-Informational Split as a Superselection Structure in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.html">Fermion Doubling and the Nielsen–Ninomiya Theorem in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-schwinger-dyson-equations-and-the-ward-takahashi-identities-in-biquaternionic-form.html">The Schwinger–Dyson Equations and the Ward–Takahashi Identities in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-path-integral-in-biquaternionic-form.html">The Fermionic Path Integral in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/dirac-matter-graphene-dirac-cones-and-topological-insulators-in-biquaternionic-form.html">Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-jordan-wigner-transformation-in-biquaternionic-form.html">The Jordan–Wigner Transformation in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-scalar-fock-space-in-biquaternionic-form.html">The Scalar Fock Space in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html">The Fermionic Fock Space in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-mass-formula-and-the-particle-spectrum-in-biquaternionic-form.html">The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html">The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html">Torsion, Contorsion and the Spin Connection in Biquaternionic Form</a></td>
+<td>Gravity and Cosmology</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td>Gravity and Cosmology</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a></td>
+<td>Gravity and Cosmology</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="band-3-named-only">Band 3 — named only</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>category</th>
+<th style="text-align: right;">$\gamma$</th>
+<th style="text-align: right;">$\mathrm{Cl}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a></td>
+<td>Universe</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-element-and-operator-representations.html">Element and Operator Representations: The Three Actions</a></td>
+<td>Physical Interpretation of Mathematics</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a></td>
+<td>Relativity</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/biquaternion-representation-of-spin-one-half-and-the-relativistic-one-electron-atom.html">Biquaternion Representation of Spin One Half and the Relativistic One-Electron Atom</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a></td>
+<td>Relativistic Quantum Theory</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></td>
+<td>Quantum Fields</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html">Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form</a></td>
+<td>Particle Physics and Gauge Fields</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-the-counts-do-not-say">What the Counts Do Not Say</h2>
+<ul>
+<li><strong>They do not report a mathematical error.</strong> The isomorphism $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is a theorem, the dictionary is exact, and the gamma-matrix computations are correct. Nothing in the corpus is numerically wrong because of this layer.</li>
+<li><strong>They do not count every mention as a use.</strong> Band 3 contains articles that name Clifford once, often in a comparison or a further-reading line. The working set is band 1: 50 articles.</li>
+<li><strong>They do not single out the Dirac articles.</strong> The layer is heaviest in Relativistic Quantum Theory (33 articles, 17 in band 1), Particle Physics and Gauge Fields (28, 14) and Quantum Fields (23, 12). It is not a defect of one series.</li>
+<li><strong>They do not prescribe a replacement.</strong> The odd part cannot be removed by notation. An article that needs parity, charge conjugation or reflection needs the odd sector, and the odd sector is not in $\mathbb{B}$.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>The corpus is built on two layers that are not in the algebra it names.</p>
+<p>The first is the tensor layer: an index $\mu$, a derivative $\partial_\mu$, four components for the connection and six for the curvature. The second is the Clifford layer: a grading, four odd generators, a Pin group and a sign. The first supplies the gauge sector with an external index; the second supplies the fermion sector with an external grading. Both are outside $\mathbb{B}$, and both are used as if they were inside it.</p>
+<p>The sharpest trace is the odd sector. $\mathbb{B}$ is the even half of $\mathrm{Cl}_{1,3}$; the physics of parity, charge conjugation and reflection lives in the other half. The articles say so, in the CPT theorem, in Zitterbewegung, and above all in <em>The Reflection and the Rotation</em>, whose subject is precisely the part that the biquaternion algebra does not contain.</p>
+<p><strong>109 articles carry the layer, 50 are structural, 17 write the matrices, 52 carry $\gamma^5$, and one article is about the odd part in substance.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

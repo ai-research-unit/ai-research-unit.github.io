@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mass Block and the Chiral Polar Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-mass-block-and-the-chiral-polar-decomposition"><strong>The Mass Block and the Chiral Polar Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>In the $3+3$ chiral split the only coupling between the two halves is the off-diagonal block</p>
+<p>$$
+M=A_{+-}\in\operatorname{Hom}(V_-,V_+)\cong M_3(\mathbb{C}),
+$$</p>
+<p>the <strong>mass block</strong>. The chiral unitaries act on it by</p>
+<p>$$
+M\longmapsto U_LMU_R^{-1},
+\qquad
+U_L,U_R\in U(3),
+$$</p>
+<p>and the orbits are classified by the three singular values</p>
+<p>$$
+\sigma_1\ge\sigma_2\ge\sigma_3\ge0 .
+$$</p>
+<p>The mass block has a polar decomposition $M=U_L\Sigma U_R^{-1}$ with $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3)$. The full element $A\in GL_6(\mathbb{C})$ has its own polar decomposition $A=UP$ with $U\in U(6)$ and $P$ positive definite; the two polar decompositions are different, and the article keeps them apart.</p>
+<p>The article assumes the chiral split of <em>The Two Chiralities</em> and the rank-three corners of <em>The Rank-Two and Rank-Three Splits</em>. It uses no topology beyond the unitary groups. The polar decomposition of the full algebra is <em>The Polar Decomposition</em>; the exponential is <em>The Exponential and the Lie Group</em>; the comparison with $M_4$ is <em>The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-mass-block">The Mass Block</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> In the chiral split $\mathbb{C}^6=V_+\oplus V_-$, the <strong>mass block</strong> is</p>
+<p>$$
+M=A_{+-}=\Pi_+A\Pi_-:V_-\longrightarrow V_+,
+$$</p>
+<p>a $3\times3$ complex matrix. Its partner is $N=A_{-+}:V_+\to V_-$.</p>
+<p><strong>Proposition.</strong> The mass block has $18$ real dimensions, and the element has the block form</p>
+<p>$$
+A=\begin{pmatrix}A_+&M\\N&A_-\end{pmatrix},
+\qquad
+A_\pm\in M_3(\mathbb{C}),\quad M,N\in M_3(\mathbb{C}).
+$$</p>
+<p><strong>Proof.</strong> A $3\times3$ complex matrix has nine complex entries, hence $18$ real dimensions. The block form is the chiral decomposition of <em>The Two Chiralities</em>.</p>
+<h3 id="the-chiral-transformation">The Chiral Transformation</h3>
+<p><strong>Definition.</strong> The <strong>chiral gauge group</strong> of the mass block is</p>
+<p>$$
+U(3)_L\times U(3)_R,
+$$</p>
+<p>acting by</p>
+<p>$$
+(U_L,U_R)\cdot M=U_LMU_R^{-1}.
+$$</p>
+<p><strong>Proposition.</strong> The action is well defined, and the singular values of $M$ are invariant:</p>
+<p>$$
+\sigma_i(U_LMU_R^{-1})=\sigma_i(M),\qquad i=1,2,3 .
+$$</p>
+<p><strong>Proof.</strong> $(U_LMU_R^{-1})^*=U_RM^*U_L^{-1}$, so</p>
+<p>$$
+(U_LMU_R^{-1})^*(U_LMU_R^{-1})=U_RM^*MU_R^{-1},
+$$</p>
+<p>which is unitarily conjugate to $M^*M$; the eigenvalues of $M^*M$ are the squares of the singular values.</p>
+<p><strong>Theorem (the orbit classification).</strong> Two mass blocks lie in the same $U(3)\times U(3)$ orbit if and only if they have the same singular values. For a full-rank $M$ with distinct singular values the orbit has dimension $15$, and the stabilizer is the diagonal torus $U(1)^3$.</p>
+<p><strong>Proof.</strong> The singular value decomposition $M=U\Sigma V^*$ exhibits every $M$ as the orbit of the diagonal $\Sigma$; the singular values are the orbit invariants. The stabilizer of $\Sigma$ consists of the pairs $(U_L,U_R)$ with $U_L\Sigma U_R^{-1}=\Sigma$; in the basis of $\Sigma$ this forces $U_L$ and $U_R$ to have the same diagonal phases, a torus of dimension three. The orbit dimension is $9+9-3=15$.</p>
+<p><strong>Corollary (the rank stratification).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Orbit dimension</th>
+<th>Locus dimension</th>
+<th>Locus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3$</td>
+<td>$15$</td>
+<td>$18$</td>
+<td>open dense</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$14$</td>
+<td>$16$</td>
+<td>$\det M=0$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$9$</td>
+<td>$10$</td>
+<td>all $2\times2$ minors zero</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$M=0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The orbit dimensions are $18-\dim(\text{stabilizer})$. For rank $2$ the stabilizer is $U(1)^2$ on the nonzero part times $U(1)\times U(1)$ on the one-dimensional kernel, of dimension four, so the orbit is $14$; the determinantal locus $\det M=0$ has real codimension two, dimension $16$. For rank $1$ the stabilizer is $U(1)$ on the nonzero part times $U(2)\times U(2)$ on the kernel, of dimension $1+4+4=9$, so the orbit is $9$; the rank-one locus is the image of $\mathbb{C}^3\times\mathbb{C}^3\to M_3$, $(u,v)\mapsto uv^{\mathsf T}$, of dimension $3+3-1=5$ complex $=10$ real. Rank $0$ is the single point $M=0$.</p>
+<h3 id="the-determinant-and-the-phase">The Determinant and the Phase</h3>
+<p><strong>Theorem.</strong> For $M=U\Sigma V^*$,</p>
+<p>$$
+\det M=\det U\,\det V^*\,\sigma_1\sigma_2\sigma_3,
+\qquad
+\lvert\det M\rvert=\sigma_1\sigma_2\sigma_3 .
+$$</p>
+<p>The phase of $\det M$ is the phase of the unitary polar factor $UV^*$; under the chiral gauge it transforms by $\det U_L/\det U_R$ and can be gauged to $1$.</p>
+<p><strong>Proof.</strong> The determinant is multiplicative, $\det\Sigma=\sigma_1\sigma_2\sigma_3$, and $\lvert\det U\rvert=\lvert\det V\rvert=1$. Under $M\mapsto U_LMU_R^{-1}$ the determinant is multiplied by $\det U_L/\det U_R$, a phase that can be any unit complex number.</p>
+<p><strong>Corollary (the invariants of the orbit).</strong> The orbit invariants are the three singular values; the phase of the determinant is not an invariant.</p>
+<p><strong>Proof.</strong> The singular values classify the orbit by the theorem above; the phase can be changed arbitrarily by $U_L$.</p>
+<h3 id="the-rank-and-masslessness">The Rank and Masslessness</h3>
+<p><strong>Definition.</strong> The <strong>mass channels</strong> are the singular values $\sigma_1,\sigma_2,\sigma_3$. The mass block is <strong>massless</strong> if $M=0$; it has <strong>rank</strong> $k$ if exactly $k$ singular values are nonzero.</p>
+<p><strong>Proposition.</strong> The mass block is massless if and only if $A$ is block diagonal, that is, if and only if $A\in M_3(V_+)\oplus M_3(V_-)$.</p>
+<p><strong>Proof.</strong> $M=A_{+-}=0$ means the element has no component in the mixed corner; the block form is diagonal.</p>
+<p><strong>Corollary (the massless algebra).</strong> The massless elements form the subalgebra $M_3\oplus M_3$, of complex dimension $18$ and real dimension $36$; the mass block and its partner add the remaining $36$ real dimensions.</p>
+<p><strong>Proof.</strong> $M_3\oplus M_3$ has complex dimension $9+9=18$ and real dimension $36$. The mass block and its partner each have complex dimension $9$ and real dimension $18$; together they add $36$ real dimensions, for a total of $72$.</p>
+<h2 id="the-chiral-polar-decomposition">The Chiral Polar Decomposition</h2>
+<h3 id="the-mass-block_1">The Mass Block</h3>
+<p><strong>Theorem (the chiral polar decomposition).</strong> Every $M\in M_3(\mathbb{C})$ has a decomposition</p>
+<p>$$
+M=U_L\Sigma U_R^{-1},
+\qquad
+U_L,U_R\in U(3),\quad
+\Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3)\ge0 .
+$$</p>
+<p>If $M$ is invertible and the singular values are distinct, the decomposition is unique up to the diagonal torus $U(1)^3$ acting on both sides.</p>
+<p><strong>Proof.</strong> This is the singular value decomposition $M=U\Sigma V^*$ with $U_L=U$ and $U_R=V$. Uniqueness: if $U_L\Sigma U_R^{-1}=U_L'\Sigma U_R'^{-1}$, then $U_L'^{-1}U_L$ commutes with $\Sigma$; for distinct positive $\sigma_i$ it is diagonal with phases, and the same for $U_R'^{-1}U_R$, with the phases equal.</p>
+<p><strong>Definition.</strong> The <strong>positive mass factor</strong> is $\Sigma$, and the <strong>chiral unitaries</strong> are $U_L,U_R$. The <strong>chiral phase</strong> is the phase of $\det(U_LU_R^{-1})$.</p>
+<p><strong>Remark (the singular case).</strong> If $M$ has rank $k<3$, the positive factor $\Sigma$ is still unique, but the unitaries are not: on the kernel of $M$ they can be chosen arbitrarily. The polar decomposition exists but is not unique.</p>
+<h3 id="the-full-element">The Full Element</h3>
+<p><strong>Theorem (the $U(6)$ polar decomposition).</strong> Every $A\in GL_6(\mathbb{C})$ has a unique decomposition</p>
+<p>$$
+A=UP,
+\qquad
+U\in U(6),\quad
+P=(A^*A)^{1/2}>0 .
+$$</p>
+<p>For a singular $A$, the positive factor $P$ is unique, and $U$ is unique on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.</p>
+<p><strong>Proof.</strong> $A^*A$ is positive semidefinite, so it has a unique positive semidefinite square root $P$. If $A$ is invertible, $P>0$ and $U=AP^{-1}$ is unitary: $U^*U=P^{-1}A^*AP^{-1}=I$. Uniqueness follows by applying the same computation to any decomposition. For singular $A$, $P$ is still unique; $U$ is determined on the image of $P=(\ker A)^\perp$ and arbitrary on $\ker A$.</p>
+<p><strong>Definition.</strong> The <strong>$U(6)$ polar factor</strong> of $A$ is $U=A(A^*A)^{-1/2}$; the <strong>positive factor</strong> is $P=(A^*A)^{1/2}$.</p>
+<p><strong>Theorem (the chiral block form).</strong> Write</p>
+<p>$$
+U=\begin{pmatrix}U_{++}&U_{+-}\\U_{-+}&U_{--}\end{pmatrix},
+\qquad
+P=\begin{pmatrix}P_{++}&P_{+-}\\P_{-+}&P_{--}\end{pmatrix}
+$$</p>
+<p>in the chiral split. Then</p>
+<p>$$
+M=A_{+-}=U_{++}P_{+-}+U_{+-}P_{--}.
+$$</p>
+<p><strong>Proof.</strong> Multiply the block matrices $A=UP$ and read the upper-right block.</p>
+<p><strong>Corollary (the two extreme cases).</strong></p>
+<ul>
+<li>If $A$ is unitary, $P=I_6$ and $M=U_{+-}$: the mass block is the off-diagonal block of the $U(6)$ polar factor.</li>
+<li>If $A$ is positive definite, $U=I_6$ and $M=P_{+-}$: the mass block is the off-diagonal block of the positive factor.</li>
+</ul>
+<p><strong>Proof.</strong> In the first case $A=U$, in the second $A=P$.</p>
+<p><strong>Remark (the two polar decompositions are different).</strong> The mass block's polar decomposition uses $U(3)\times U(3)$ and produces the three singular values of $M$. The $U(6)$ polar decomposition uses the whole unitary group and produces the six singular values of $A$. The off-diagonal block $U_{+-}$ of the $U(6)$ polar factor is not the unitary factor $U_L$ of $M$; the mass block of $A$ is the sum of two products of blocks of $U$ and $P$. <strong>The chiral polar decomposition of $M$ and the $U(6)$ polar decomposition of $A$ are different decompositions of different objects.</strong></p>
+<h3 id="the-positive-factor-and-the-mass">The Positive Factor and the Mass</h3>
+<p><strong>Proposition.</strong> The positive factor $P$ is block positive: the matrix $P$ is positive definite, but its off-diagonal block $P_{+-}$ need not be small or zero. The mass block of $A$ is not the positive factor of $M$.</p>
+<p><strong>Proof.</strong> A positive definite $6\times6$ matrix can have nonzero off-diagonal blocks; for example $P=I_6+t(E_{14}+E_{41})$ is positive for small $t$, and its off-diagonal block is nonzero.</p>
+<p><strong>Corollary (the massless case).</strong> If $A$ is block diagonal and invertible, then $U$ and $P$ are block diagonal, and the mass block vanishes.</p>
+<p><strong>Proof.</strong> The polar decomposition of a block-diagonal matrix is block diagonal, because $A^*A$ is block diagonal and its square root is block diagonal.</p>
+<h2 id="the-invariants">The Invariants</h2>
+<h3 id="the-three-mass-scales">The Three Mass Scales</h3>
+<p><strong>Theorem.</strong> The orbit of $M$ under $U(3)\times U(3)$ is determined by the three singular values, and the orbit space is the closed positive cone</p>
+<p>$$
+\sigma_1\ge\sigma_2\ge\sigma_3\ge0 .
+$$</p>
+<p><strong>Proof.</strong> The singular value decomposition gives a representative $\Sigma$ for every orbit, and two diagonal matrices with the same ordered singular values are equal. The ordering removes the permutation.</p>
+<p><strong>Corollary (the mass spectrum).</strong> The mass spectrum has three channels; the number of nonzero channels is the rank of $M$; the product of the channels is $\lvert\det M\rvert$.</p>
+<p><strong>Proof.</strong> The rank is the number of nonzero singular values, and the determinant modulus is their product.</p>
+<h3 id="the-math190-invariants">The $U(6)$ Invariants</h3>
+<p><strong>Proposition.</strong> The $U(6)$ orbit of $A$ is determined by the six singular values of $A$; the polar factor $U$ distinguishes the orbits inside a fixed singular-value type.</p>
+<p><strong>Proof.</strong> The singular value decomposition $A=U\Sigma V^*$ with $U,V\in U(6)$; the singular values classify the $U(6)\times U(6)$ orbit, and the polar factor is the unitary part.</p>
+<p><strong>Remark (the two invariant lists).</strong> The mass block contributes three numbers (the mass scales); the full element contributes six (the singular values of $A$) plus the unitary polar factor. The mass scales are not the singular values of $A$; they are the singular values of the off-diagonal block, which depends on the chiral split.</p>
+<h2 id="the-comparison-with-math200">The Comparison with $M_4$</h2>
+<h3 id="the-math201-mass-block">The $2\times2$ Mass Block</h3>
+<p>For $M_4(\mathbb{C})$ the chiral split is $2+2$, the mass block is a $2\times2$ matrix, and the chiral gauge is $U(2)\times U(2)$. The singular values are two,</p>
+<p>$$
+\sigma_1\ge\sigma_2\ge0,
+$$</p>
+<p>the orbit dimensions are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Orbit dimension</th>
+<th>Locus dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$6$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$5$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and the determinant is a phase times $\sigma_1\sigma_2$.</p>
+<p><strong>Proof.</strong> The mass block has real dimension $8$; the full-rank stabilizer is $U(1)^2$, of dimension two, so the orbit is $6$; the rank-one stabilizer is $U(1)\times U(1)^2$, of dimension three, so the orbit is $5$.</p>
+<h3 id="the-pattern">The Pattern</h3>
+<p><strong>Theorem.</strong> For the chiral split $m+m$ of $M_{2m}(\mathbb{C})$, the mass block is $m\times m$, the chiral gauge is $U(m)\times U(m)$, and the number of mass channels is $m$. The full-rank orbit has dimension</p>
+<p>$$
+2m^2-m,
+$$</p>
+<p>and the orbit space is the cone $\sigma_1\ge\cdots\ge\sigma_m\ge0$.</p>
+<p><strong>Proof.</strong> The mass block has $2m^2$ real dimensions; the stabilizer of a full-rank diagonal with distinct singular values is the diagonal torus $U(1)^m$, of dimension $m$; the orbit dimension is $2m^2-m$.</p>
+<p><strong>Corollary.</strong> The three cases are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>$m$</th>
+<th>Mass block</th>
+<th>Channels</th>
+<th>Full-rank orbit</th>
+<th>Rank-$(m-1)$ orbit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_2$</td>
+<td>$1$</td>
+<td>$1\times1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$M_4$</td>
+<td>$2$</td>
+<td>$2\times2$</td>
+<td>$2$</td>
+<td>$6$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$M_6$</td>
+<td>$3$</td>
+<td>$3\times3$</td>
+<td>$3$</td>
+<td>$15$</td>
+<td>$14$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Substitute $m=1,2,3$ in $2m^2-m$ and $2m^2-m-1$.</p>
+<p><strong>Remark (the growth).</strong> The number of mass channels grows linearly in $m$; the number of real mass parameters grows quadratically. <strong>The $3\times3$ mass block of $M_6$ has three channels and eighteen real parameters; the $2\times2$ block of $M_4$ has two channels and eight; the $1\times1$ block of $M_2$ has one channel and one.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The mass block of the $3+3$ chiral split is a $3\times3$ complex matrix $M=A_{+-}$, of $18$ real dimensions. The chiral gauge $U(3)\times U(3)$ acts by $M\mapsto U_LMU_R^{-1}$, and the orbits are classified by the three singular values $\sigma_1\ge\sigma_2\ge\sigma_3\ge0$.</p>
+<p>$$
+\boxed{\ M=U_L\Sigma U_R^{-1},\qquad \Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3),\qquad \lvert\det M\rvert=\sigma_1\sigma_2\sigma_3 .\ }
+$$</p>
+<p>The determinant phase is gauge-dependent; the modulus is the product of the channels; the rank is the number of nonzero channels. The massless block is $M=0$, and the massless algebra is $M_3\oplus M_3$.</p>
+<p>The full element has the $U(6)$ polar decomposition $A=UP$, with $U\in U(6)$ and $P>0$; the mass block of $A$ is $U_{++}P_{+-}+U_{+-}P_{--}$, a sum of two products of chiral blocks. The $U(6)$ polar factor and the $U(3)\times U(3)$ polar factors of $M$ are different objects.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mass block</td>
+<td>$M=A_{+-}$, $3\times3$, $18$ real</td>
+</tr>
+<tr>
+<td>Chiral gauge</td>
+<td>$U(3)\times U(3)$, dimension $18$</td>
+</tr>
+<tr>
+<td>Invariants</td>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+</tr>
+<tr>
+<td>Determinant</td>
+<td>phase $\times\sigma_1\sigma_2\sigma_3$</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>number of nonzero channels</td>
+</tr>
+<tr>
+<td>Massless algebra</td>
+<td>$M_3\oplus M_3$, real dimension $36$</td>
+</tr>
+<tr>
+<td>$U(6)$ polar</td>
+<td>$A=UP$, $U\in U(6)$, $P>0$</td>
+</tr>
+<tr>
+<td>$M_4$ comparison</td>
+<td>$2\times2$, two channels, orbit $6$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M=A_{+-}$</td>
+<td>the mass block $V_-\to V_+$</td>
+</tr>
+<tr>
+<td>$N=A_{-+}$</td>
+<td>the partner $V_+\to V_-$</td>
+</tr>
+<tr>
+<td>$U_L,U_R$</td>
+<td>the chiral unitaries in $U(3)$</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>the positive diagonal factor of $M$</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the three singular values (mass channels)</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>the $U(6)$ polar factor of $A$</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>the positive factor $(A^*A)^{1/2}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-two-chiralities-of-m6c.html">The Two Chiralities</a>, for the $3+3$ split and the mass block.</li>
+<li><a href="the-rank-two-and-rank-three-splits-of-m6c.html">The Rank-Two and Rank-Three Splits</a>, for the mass block as the mixed corner.</li>
+<li><a href="the-m3-m3-and-m2-m4-corners-of-m6c.html">The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners</a>, for the massless algebra and the relative scale.</li>
+<li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html">The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</a>, for the $2\times2$ comparison.</li>
+<li><a href="the-polar-decomposition-of-m6c.html">The Polar Decomposition</a>, for the full $U(6)$ polar decomposition.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the unitary group $U(6)$.</li>
+<li><a href="singular-value-decomposition.html">Singular Value Decomposition</a>, for the general theory of the SVD.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the homogeneous spaces of the chiral unitaries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

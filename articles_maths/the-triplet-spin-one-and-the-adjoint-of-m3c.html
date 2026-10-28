@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Triplet: Spin One and the Adjoint $1+3+5$ of $M_3(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-triplet-spin-one-and-the-adjoint-math0-of-math1"><strong>The Triplet: Spin One and the Adjoint $1+3+5$ of $M_3(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two three-dimensional subspaces of $M_{3}(\mathbb{C})$ carry the word <strong>triplet</strong>, and they are not the same subspace.</p>
+<p>The first is the <strong>nilpotent triplet</strong> $\mathfrak{n}_{+}=\operatorname{span}\{E_{12},E_{23},E_{13}\}$. It is a subalgebra: the product of the two simple nilpotents is the composite, $E_{12}E_{23}=E_{13}$, and every other product vanishes. Its elements are strictly upper triangular matrices, its square is the line $\mathbb{C}E_{13}$, and its cube is zero. Under the spin Cartan $J_{3}=\operatorname{diag}(1,0,-1)$ its weights are $1,1,2$.</p>
+<p>The second is the <strong>spin-one summand</strong> $V_{1}$ of the adjoint decomposition
+$$
+M_{3}(\mathbb{C})=V_{2}\oplus V_{1}\oplus\mathbb{C}I,\qquad 5+3+1=9,
+$$
+of <em>The Spin Chain and the Adjoint Decomposition</em>. It is an irreducible $\mathfrak{sl}_{2}$-module of highest weight $1$, with weights $1,0,-1$. It is not a subalgebra. The adjoint of $PGL_{3}$ is the traceless part $V_{2}\oplus V_{1}$, of dimension $8$.</p>
+<p>The two triplets share their highest-weight line: $\mathfrak{n}_{+}\cap V_{1}=\mathbb{C}(E_{12}+E_{23})$. They differ in the other two directions. The nilpotent triplet completes the highest-weight line by the positive composite root $E_{13}$; the spin-one triplet completes it by the Cartan $E_{33}-E_{11}$ and the negative root $E_{21}+E_{32}$. The first completion is a nilpotent algebra, the second is an irreducible module. The article proves the product table, the weight chain, the Borel description, the non-invariance under the lowering operator, and the splitting of the nilpotent triplet by the adjoint decomposition.</p>
+<p>The construction is root-first. The idempotents $P_{1},P_{2},P_{3}$ and the matrix units $E_{ij}$ are those of <em>Roots of Unity and the Lagrange Idempotents</em> and <em>The Frame, the Simple Nilpotents and the Gauge</em>. The root $H=\zeta_{1}P_{1}+\zeta_{2}P_{2}+\zeta_{3}P_{3}$ has order three and spectrum $\{1,\omega,\omega^{2}\}$; the spin Cartan $J_{3}$ has spectrum $\{1,0,-1\}$. They are different operators. The weights $1,1,2$ below are weights under $J_{3}$, not degrees under $H$. The carrier is $\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2})$, the spin-one module; only the case $n=2$ has spinors, and no spinor is defined in this article.</p>
+<h2 id="the-nilpotent-triplet">The Nilpotent Triplet</h2>
+<p><strong>Definition.</strong> Let
+$$
+N_{1}=E_{12},\qquad N_{2}=E_{23},\qquad N_{3}=E_{13}=N_{1}N_{2},
+$$
+and let $\mathfrak{n}_{+}=\operatorname{span}\{N_{1},N_{2},N_{3}\}$.</p>
+<p><strong>Proposition (the product table).</strong> The products of the three generators are
+$$
+N_{1}N_{2}=N_{3},\qquad N_{2}N_{1}=N_{1}N_{3}=N_{3}N_{1}=N_{2}N_{3}=N_{3}N_{2}=0,
+$$
+and
+$$
+N_{1}^{2}=N_{2}^{2}=N_{3}^{2}=0.
+$$
+Hence $\mathfrak{n}_{+}^{2}=\mathbb{C}N_{3}$ and $\mathfrak{n}_{+}^{3}=0$.</p>
+<p><strong>Proof.</strong> The product of matrix units is $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The product $E_{12}E_{23}=E_{13}$ survives because the inner indices are both $2$. Every other product has inner indices $3\neq1$, $2\neq1$, $3\neq1$, $3\neq2$, or $1\neq2$, and vanishes; the squares vanish because the two indices of each unit differ. The square of the span is the span of the products of the generators, which is $\mathbb{C}E_{13}$, and the cube is $\mathfrak{n}_{+}\cdot\mathbb{C}E_{13}=0$ because $E_{12}E_{13}=E_{23}E_{13}=E_{13}^{2}=0$.</p>
+<p><strong>Corollary.</strong> $\mathfrak{n}_{+}$ is a three-dimensional nilpotent associative algebra, generated by $N_{1}$ and $N_{2}$, with the composite $N_{3}$ forced by the product. It has no unit: a unit would have to be $E_{11}+E_{22}+E_{33}$, which is not strictly upper triangular.</p>
+<p><strong>The explicit matrices.</strong> In the standard frame,
+$$
+N_{1}=E_{12}=\begin{pmatrix}0&1&0\\0&0&0\\0&0&0\end{pmatrix},\qquad
+N_{2}=E_{23}=\begin{pmatrix}0&0&0\\0&0&1\\0&0&0\end{pmatrix},\qquad
+N_{3}=E_{13}=\begin{pmatrix}0&0&1\\0&0&0\\0&0&0\end{pmatrix}.
+$$
+The product is checked by the matrices:
+$$
+\begin{pmatrix}0&1&0\\0&0&0\\0&0&0\end{pmatrix}
+\begin{pmatrix}0&0&0\\0&0&1\\0&0&0\end{pmatrix}
+=
+\begin{pmatrix}0&0&1\\0&0&0\\0&0&0\end{pmatrix},
+$$
+while $N_{2}N_{1}=0$ and $N_{1}^{2}=N_{2}^{2}=0$.</p>
+<p><strong>The weight chain.</strong> Let $J_{3}=\operatorname{diag}(1,0,-1)$ and $J_{+}=\sqrt2(E_{12}+E_{23})$, $J_{-}=\sqrt2(E_{21}+E_{32})$, as in <em>The Spin Chain and the Adjoint Decomposition</em>. The adjoint action gives
+$$
+[J_{3},N_{1}]=N_{1},\qquad [J_{3},N_{2}]=N_{2},\qquad [J_{3},N_{3}]=2N_{3},
+$$
+so the weights are $1,1,2$. The raising operator preserves the triplet and sends both weight-one lines onto the highest-weight line:
+$$
+[J_{+},N_{1}]=-\sqrt2\,N_{3},\qquad [J_{+},N_{2}]=\sqrt2\,N_{3},\qquad [J_{+},N_{3}]=0.
+$$
+The first two are nonzero because the weight $2$ occurs in the triplet; the last vanishes because the weight $3$ does not occur in $M_{3}$. The lowering operator sends the highest vector to a combination of the two weight-one vectors,
+$$
+[J_{-},N_{3}]=\sqrt2\,(N_{2}-N_{1}),
+$$
+but it sends the simple nilpotents out of the triplet:
+$$
+[J_{-},N_{1}]=\sqrt2\,(E_{22}-E_{11})\notin\mathfrak{n}_{+},\qquad
+[J_{-},N_{2}]=\sqrt2\,(E_{33}-E_{22})\notin\mathfrak{n}_{+}.
+$$
+So $\mathfrak{n}_{+}$ is stable under $J_{3}$ and $J_{+}$ and is not stable under $J_{-}$. It is a $J_{+}$-stable subspace of weights at most $2$, containing the highest-weight line $\mathbb{C}N_{3}$; it is not an $\mathfrak{sl}_{2}$-submodule, because a submodule would also contain the lowering of $N_{3}$.</p>
+<p><strong>The triplet is the nilpotent radical of a Borel.</strong> Let $\mathfrak{b}_{+}$ be the algebra of upper triangular matrices, of dimension $6$. It is the direct sum
+$$
+\mathfrak{b}_{+}=\mathfrak{h}\oplus\mathfrak{n}_{+},\qquad
+\mathfrak{h}=\mathbb{C}E_{11}\oplus\mathbb{C}E_{22}\oplus\mathbb{C}E_{33}\cong\mathbb{C}^{3},
+$$
+of the diagonal algebra and the strictly upper triangular algebra. The subspace $\mathfrak{n}_{+}$ is a two-sided ideal of $\mathfrak{b}_{+}$: the product of an upper triangular matrix and a strictly upper triangular matrix is strictly upper triangular, on either side. It is nilpotent, and the quotient $\mathfrak{b}_{+}/\mathfrak{n}_{+}\cong\mathfrak{h}$ is commutative, so $\mathfrak{n}_{+}$ is the nilpotent radical of $\mathfrak{b}_{+}$. The Borel $\mathfrak{b}_{+}$ is the stabiliser of the full flag
+$$
+0\subset\langle e_{1}\rangle\subset\langle e_{1},e_{2}\rangle\subset\mathbb{C}^{3},
+$$
+as in <em>The Adjoint Action, the Orbits and the Flag Variety</em>; the triplet is the nilpotent part of that stabiliser.</p>
+<p><strong>The triplet is not an ideal of $M_{3}$.</strong> The algebra $M_{3}(\mathbb{C})$ is simple, so its only two-sided ideals are $0$ and the whole algebra; $\mathfrak{n}_{+}$ is neither. Directly, $E_{21}\in M_{3}$ and $E_{12}\in\mathfrak{n}_{+}$ give
+$$
+E_{21}E_{12}=E_{22}\notin\mathfrak{n}_{+},
+$$
+so $\mathfrak{n}_{+}$ is not a left ideal. It is an ideal of the Borel, not of the algebra.</p>
+<p><strong>The opposite triplet.</strong> The opposite Borel $\mathfrak{b}_{-}$ of lower triangular matrices has the nilpotent radical
+$$
+\mathfrak{n}_{-}=\operatorname{span}\{E_{21},E_{32},E_{31}\},
+$$
+with $E_{21}E_{32}=E_{31}$ and all other products zero. The two nilpotent triplets are conjugate by the transpose. The algebra has the triangular decomposition
+$$
+M_{3}(\mathbb{C})=\mathfrak{n}_{-}\oplus\mathfrak{h}\oplus\mathfrak{n}_{+},\qquad 3+3+3=9,
+$$
+and the traceless part has
+$$
+\mathfrak{sl}_{3}(\mathbb{C})=\mathfrak{n}_{-}\oplus\mathfrak{h}_{0}\oplus\mathfrak{n}_{+},\qquad 3+2+3=8,
+$$
+where $\mathfrak{h}_{0}$ is the traceless diagonal. The triplet is one nilpotent half of this decomposition.</p>
+<h2 id="the-spin-one-triplet">The Spin-One Triplet</h2>
+<p><strong>The adjoint decomposition.</strong> Under the principal $\mathfrak{sl}_{2}$ generated by $J_{3},J_{\pm}$, the algebra decomposes as
+$$
+M_{3}(\mathbb{C})=V_{2}\oplus V_{1}\oplus\mathbb{C}I,\qquad \dim V_{2}=5,\quad \dim V_{1}=3,\quad \dim\mathbb{C}I=1,
+$$
+with highest weights $2,1,0$. The summand $V_{1}$ is the <strong>spin-one triplet</strong>, the carrier $\mathbb{C}^{3}$ of the defining representation; $V_{2}$ is the spin-two module $\operatorname{Sym}^{4}(\mathbb{C}^{2})$; the line $\mathbb{C}I$ is the trivial module. The decomposition is proved in <em>The Spin Chain and the Adjoint Decomposition</em> by the character computation and by exhibiting the highest-weight vectors.</p>
+<p><strong>The explicit basis of $V_{1}$.</strong> In the standard frame,
+$$
+w_{1}=\frac{E_{12}+E_{23}}{\sqrt2},\qquad
+w_{0}=\frac{E_{33}-E_{11}}{\sqrt2},\qquad
+w_{-1}=-\frac{E_{21}+E_{32}}{\sqrt2},
+$$
+with
+$$
+J_{3}w_{1}=w_{1},\qquad J_{3}w_{0}=0,\qquad J_{3}w_{-1}=-w_{-1}.
+$$
+The highest-weight line is $\mathbb{C}w_{1}=\mathbb{C}(E_{12}+E_{23})$. The matrices are
+$$
+w_{1}=\frac{1}{\sqrt2}\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix},\qquad
+w_{0}=\frac{1}{\sqrt2}\begin{pmatrix}-1&0&0\\0&0&0\\0&0&1\end{pmatrix},\qquad
+w_{-1}=-\frac{1}{\sqrt2}\begin{pmatrix}0&0&0\\1&0&0\\0&1&0\end{pmatrix}.
+$$
+The three are linearly independent, of weights $1,0,-1$, and they span an irreducible module of dimension three.</p>
+<p><strong>$V_{1}$ is not a subalgebra.</strong> The square of the highest-weight vector is
+$$
+w_{1}^{2}=\frac{1}{2}(E_{12}+E_{23})^{2}=\frac{1}{2}E_{12}E_{23}=\frac{1}{2}E_{13},
+$$
+because $E_{23}E_{12}=0$. The element $E_{13}$ is not in $V_{1}$: a vector of $V_{1}$ is a combination of $E_{12}+E_{23}$, $E_{33}-E_{11}$ and $E_{21}+E_{32}$, and none of these has an $E_{13}$ entry. So $w_{1}^{2}\notin V_{1}$, and $V_{1}$ is not closed under multiplication. It is a module, not an algebra.</p>
+<p><strong>The highest-weight line is in the nilpotent triplet.</strong> Since $E_{12}$ and $E_{23}$ are in $\mathfrak{n}_{+}$, the vector $w_{1}$ is in $\mathfrak{n}_{+}$. The other two vectors are not: $w_{0}$ is diagonal and $w_{-1}$ is strictly lower triangular. Hence
+$$
+\mathfrak{n}_{+}\cap V_{1}=\mathbb{C}w_{1}.
+$$</p>
+<p><strong>Proof.</strong> A vector of $V_{1}$ has the form
+$$
+\alpha(E_{12}+E_{23})+\beta(E_{33}-E_{11})+\gamma(E_{21}+E_{32}).
+$$
+If it is strictly upper triangular, the coefficients of $E_{21}$, $E_{32}$, $E_{11}$ and $E_{33}$ vanish: $\gamma=0$ and $\beta=0$. The surviving vector is $\alpha(E_{12}+E_{23})$, which is in $\mathfrak{n}_{+}$ for every $\alpha$. So the intersection is the highest-weight line.</p>
+<p><strong>The spin-one triplet is not the nilpotent triplet.</strong> The two spaces have the same dimension and share the line $\mathbb{C}w_{1}$, but
+$$
+E_{13}\in\mathfrak{n}_{+},\qquad E_{13}\notin V_{1},\qquad
+w_{0}\in V_{1},\qquad w_{0}\notin\mathfrak{n}_{+}.
+$$
+They are different completions of the same highest-weight line. The nilpotent triplet completes it by the positive composite root; the spin-one triplet completes it by the Cartan and the negative root.</p>
+<h2 id="the-adjoint-math149-and-the-splitting-of-the-triplet">The Adjoint $1+3+5$ and the Splitting of the Triplet</h2>
+<p><strong>The five-dimensional summand.</strong> The highest-weight vector of $V_{2}$ is $E_{13}$, of weight $2$. The lowering chain begins
+$$
+u_{2}=E_{13},\qquad
+u_{1}=\frac{E_{23}-E_{12}}{\sqrt2},\qquad
+u_{0}=\frac{E_{11}-2E_{22}+E_{33}}{\sqrt6},\qquad
+u_{-1}=\frac{E_{21}-E_{32}}{\sqrt2},\qquad
+u_{-2}=E_{31},
+$$
+with weights $2,1,0,-1,-2$; the full chain and its ladder are in <em>The Spin Chain and the Adjoint Decomposition</em>. The trace line is spanned by $I/\sqrt3$, of weight $0$. The dimensions are $5+3+1=9$, and the traceless part is $5+3=8$, the adjoint of $PGL_{3}$.</p>
+<p><strong>The triplet meets the $5$ in a plane.</strong> The vectors $E_{13}$ and $u_{1}$ are strictly upper triangular, because $E_{12}$ and $E_{23}$ are. The other three vectors of the $5$ are not: $u_{0}$ is diagonal, and $u_{-1},u_{-2}$ are strictly lower triangular. Hence
+$$
+\mathfrak{n}_{+}\cap V_{2}=\operatorname{span}\{E_{13},u_{1}\}.
+$$</p>
+<p><strong>Proof.</strong> A vector of $V_{2}$ is a combination of the five displayed vectors. If it is strictly upper triangular, the coefficients of the diagonal $u_{0}$ and of the lower-triangular $u_{-1},u_{-2}$ vanish. The surviving combination is $\alpha E_{13}+\beta u_{1}$, which is strictly upper triangular for all $\alpha,\beta$. So the intersection is the plane spanned by $E_{13}$ and $u_{1}$.</p>
+<p><strong>The splitting of the triplet.</strong> The two weight-one vectors $u_{1}$ and $w_{1}$ are independent, and
+$$
+E_{12}=\frac{w_{1}-u_{1}}{\sqrt2},\qquad
+E_{23}=\frac{w_{1}+u_{1}}{\sqrt2}.
+$$
+Therefore
+$$
+\mathfrak{n}_{+}=\operatorname{span}\{E_{13},u_{1}\}\oplus\mathbb{C}w_{1}
+=\bigl(\mathfrak{n}_{+}\cap V_{2}\bigr)\oplus\bigl(\mathfrak{n}_{+}\cap V_{1}\bigr),
+$$
+and the intersection with the trivial line is zero. The dimensions are $2+1+0=3$. The weight chain $1,1,2$ of the triplet is the union of the weights of the two pieces:
+$$
+\underbrace{2,1}_{\text{from }V_{2}},\qquad \underbrace{1}_{\text{from }V_{1}}.
+$$
+The triplet is not an $\mathfrak{sl}_{2}$-module, but the adjoint decomposition cuts it into a two-dimensional piece of the $5$ and a one-dimensional piece of the $3$.</p>
+<p><strong>Why the triplet is not a module.</strong> The lowering operator sends the highest vector of the $5$ into the triplet,
+$$
+[J_{-},E_{13}]=\sqrt2\,(E_{23}-E_{12})=2u_{1},
+$$
+but the next step leaves it:
+$$
+[J_{-},u_{1}]=\sqrt6\,u_{0},
+$$
+and $u_{0}$ is diagonal, not strictly upper triangular. The same happens in the $3$: $[J_{-},w_{1}]=\sqrt2\,w_{0}$, and $w_{0}$ is diagonal. A module stable under $J_{-}$ would have to contain $u_{0}$ and $w_{0}$; the triplet does not. This is the precise sense in which the weight chain $1,1,2$ stops: it has no negative weights.</p>
+<p><strong>The comparison.</strong> The three objects are collected below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension</th>
+<th>$J_{3}$-weights</th>
+<th>Subalgebra?</th>
+<th>$\mathfrak{sl}_{2}$-module?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{n}_{+}$</td>
+<td>$3$</td>
+<td>$1,1,2$</td>
+<td>yes, nilpotent</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$V_{1}$</td>
+<td>$3$</td>
+<td>$1,0,-1$</td>
+<td>no</td>
+<td>yes, spin $1$</td>
+</tr>
+<tr>
+<td>$V_{2}$</td>
+<td>$5$</td>
+<td>$2,1,0,-1,-2$</td>
+<td>no</td>
+<td>yes, spin $2$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}I$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>ideal</td>
+<td>yes, trivial</td>
+</tr>
+</tbody>
+</table></div>
+<p>The nilpotent triplet and the spin-one triplet have the same dimension and the same highest-weight line, but they are different objects: one is a subalgebra with weights $1,1,2$, the other is an irreducible module with weights $1,0,-1$. The word <strong>triplet</strong> alone is ambiguous; this article calls $\mathfrak{n}_{+}$ the nilpotent triplet and $V_{1}$ the spin-one triplet. The nilpotent triplet is not a spin-one module, and no element of it is a spinor.</p>
+<h2 id="summary">Summary</h2>
+<p>The nilpotent triplet is
+$$
+\boxed{\;\mathfrak{n}_{+}=\operatorname{span}\{E_{12},E_{23},E_{13}\},\qquad
+E_{12}E_{23}=E_{13},\qquad \mathfrak{n}_{+}^{2}=\mathbb{C}E_{13},\qquad \mathfrak{n}_{+}^{3}=0.\;}
+$$
+It is a three-dimensional nilpotent subalgebra, the nilpotent radical of the upper triangular Borel, with $J_{3}$-weights $1,1,2$. It is stable under $J_{3}$ and $J_{+}$ and not under $J_{-}$.</p>
+<p>The spin-one triplet is the summand $V_{1}$ of
+$$
+M_{3}(\mathbb{C})=V_{2}\oplus V_{1}\oplus\mathbb{C}I,\qquad 5+3+1=9,
+$$
+with highest weight $1$ and weights $1,0,-1$. It is an irreducible module, not a subalgebra. The adjoint of $PGL_{3}$ is $V_{2}\oplus V_{1}$, of dimension $8$.</p>
+<p>The two triplets intersect in the highest-weight line:
+$$
+\mathfrak{n}_{+}\cap V_{1}=\mathbb{C}(E_{12}+E_{23}),\qquad
+\mathfrak{n}_{+}\cap V_{2}=\operatorname{span}\{E_{13},E_{23}-E_{12}\}.
+$$
+The triplet splits as
+$$
+\mathfrak{n}_{+}=\bigl(\mathfrak{n}_{+}\cap V_{2}\bigr)\oplus\bigl(\mathfrak{n}_{+}\cap V_{1}\bigr),\qquad 3=2+1,
+$$
+and its weight chain $1,1,2$ is the union of the weights of the two pieces.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_{3}(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nilpotent triplet dimension</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Nilpotent triplet weights</td>
+<td>$1,1,2$</td>
+</tr>
+<tr>
+<td>Nilpotent triplet square</td>
+<td>$\mathbb{C}E_{13}$</td>
+</tr>
+<tr>
+<td>Spin-one summand dimension</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Spin-one weights</td>
+<td>$1,0,-1$</td>
+</tr>
+<tr>
+<td>Adjoint decomposition</td>
+<td>$1+3+5$</td>
+</tr>
+<tr>
+<td>Adjoint of $PGL_{3}$</td>
+<td>$3+5=8$</td>
+</tr>
+<tr>
+<td>Intersection of the two triplets</td>
+<td>$\mathbb{C}(E_{12}+E_{23})$</td>
+</tr>
+<tr>
+<td>Splitting of the nilpotent triplet</td>
+<td>$2+1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{n}_{+}$</td>
+<td>the nilpotent triplet $\operatorname{span}\{E_{12},E_{23},E_{13}\}$</td>
+</tr>
+<tr>
+<td>$N_{1},N_{2},N_{3}$</td>
+<td>$E_{12},E_{23},E_{13}$, with $N_{1}N_{2}=N_{3}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{b}_{+}$</td>
+<td>the upper triangular Borel, $\mathfrak{h}\oplus\mathfrak{n}_{+}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{h}$</td>
+<td>the diagonal algebra $\mathbb{C}E_{11}\oplus\mathbb{C}E_{22}\oplus\mathbb{C}E_{33}$</td>
+</tr>
+<tr>
+<td>$V_{1}$</td>
+<td>the spin-one summand, the triplet of the adjoint</td>
+</tr>
+<tr>
+<td>$V_{2}$</td>
+<td>the spin-two summand</td>
+</tr>
+<tr>
+<td>$w_{1},w_{0},w_{-1}$</td>
+<td>the basis of $V_{1}$</td>
+</tr>
+<tr>
+<td>$u_{2},u_{1},u_{0},u_{-1},u_{-2}$</td>
+<td>the basis of $V_{2}$</td>
+</tr>
+<tr>
+<td>$J_{3},J_{\pm}$</td>
+<td>the principal $\mathfrak{sl}_{2}$ of <em>The Spin Chain</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m3c.html">The Spin Chain and the Adjoint Decomposition</a>, for the decomposition $1+3+5$ and the explicit bases.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the simple nilpotents and the composite.</li>
+<li><a href="the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a>, for the nine lines and the coarse corners.</li>
+<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_{3}(\mathbb{C})$</a>, for the matrix units and the product.</li>
+<li><a href="the-two-parameter-gauge-of-m3c.html">The Two-Parameter Gauge</a>, for the gauge on the simple nilpotents.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the Borel and the full flag.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m3c.html">The Modules and the Minimal Left Ideals</a>, for the carrier and the distinction between modules and ideals.</li>
+<li><a href="representations-of-lie-algebras.html">Representations of Lie Algebras</a>, for the highest-weight classification.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

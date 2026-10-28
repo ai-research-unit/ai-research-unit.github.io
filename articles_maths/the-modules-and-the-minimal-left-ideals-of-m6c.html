@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Modules and the Minimal Left Ideals — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-modules-and-the-minimal-left-ideals"><strong>The Modules and the Minimal Left Ideals</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A rank-one idempotent $P$ of $M_6(\mathbb{C})$ gives a minimal left ideal</p>
+<p>$$
+L=M_6P\cong\mathbb{C}^6,
+$$</p>
+<p>the column of $P$, and a minimal right ideal</p>
+<p>$$
+R=PM_6\cong(\mathbb{C}^6)^*,
+$$</p>
+<p>the row of $P$. The two are dual by the trace pairing. The algebra itself is the tensor product</p>
+<p>$$
+M_6(\mathbb{C})\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^*,
+$$</p>
+<p>and the minimal left ideals are the columns $M_6P_\varphi$ for the lines $\mathbb{C}\varphi$ of $\mathbb{C}^6$. They are all isomorphic as left modules, but the isomorphism is not canonical: the exchange of two columns is a choice, defined only up to a nonzero scalar.</p>
+<p>The Peirce carrier</p>
+<p>$$
+C(P)=PMP\oplus PMQ
+$$</p>
+<p>has dimension $1+5=6$; it is the row $PM$, the dual of the column. The minimal left ideal is the carrier of the spin chain: the Peirce $\mathfrak{su}_2$ of the rank-one idempotent acts irreducibly on it, with spin $5/2$.</p>
+<p>The article assumes the Peirce decomposition of <em>The Peirce Decomposition</em> and the spin chain of <em>The Spin Chain and the Adjoint Decomposition</em>. It uses no form and no topology. The modules over the biquaternion algebra are <em>The Modules over the Biquaternion Algebra</em>; the Morita equivalence is <em>Morita Equivalence</em>.</p>
+<h2 id="the-minimal-left-ideal">The Minimal Left Ideal</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> Let $P\in M_6(\mathbb{C})$ be an idempotent of rank one. The <strong>minimal left ideal</strong> of $P$ is</p>
+<p>$$
+L=M_6P=\{AP:A\in M_6(\mathbb{C})\}.
+$$</p>
+<p><strong>Theorem.</strong> $L$ is a left ideal of $M_6(\mathbb{C})$, and it is minimal: its only left submodules are $0$ and $L$.</p>
+<p><strong>Proof.</strong> For $B\in M_6$ and $AP\in L$, $B(AP)=(BA)P\in L$; so $L$ is a left ideal. If $0\neq X=AP\in L$, then $A$ has rank at least one, and the left ideal generated by $X$ contains $M_6X=M_6AP$; since $P$ has rank one, $M_6P$ is the whole $L$ (the rank-one projector is a single matrix unit in some basis). So every nonzero element generates $L$.</p>
+<p><strong>Theorem (the column).</strong> In a basis with $P=E_{11}$,</p>
+<p>$$
+L=M_6E_{11}=\left\{\begin{pmatrix}a_{11}&0&\cdots&0\\ \vdots& & &\\ a_{61}&0&\cdots&0\end{pmatrix}\right\},
+$$</p>
+<p>the first column, and $L\cong\mathbb{C}^6$ as a left $M_6$-module.</p>
+<p><strong>Proof.</strong> $AE_{11}$ has only the first column nonzero, equal to the first column of $A$; the map $A\mapsto Ae_1$ identifies it with $\mathbb{C}^6$. The left action is $B\cdot(Ae_1)=(BA)e_1$, the defining action.</p>
+<h3 id="the-minimal-right-ideal">The Minimal Right Ideal</h3>
+<p><strong>Definition.</strong> The <strong>minimal right ideal</strong> of $P$ is</p>
+<p>$$
+R=PM_6=\{PA:A\in M_6(\mathbb{C})\}.
+$$</p>
+<p><strong>Theorem.</strong> $R$ is a minimal right ideal, and in the basis with $P=E_{11}$ it is the first row:</p>
+<p>$$
+R=E_{11}M_6=\left\{\begin{pmatrix}a_{11}&a_{12}&\cdots&a_{16}\\0&0&\cdots&0\\ \vdots& &\vdots&\\0&0&\cdots&0\end{pmatrix}\right\},
+$$</p>
+<p>with $R\cong(\mathbb{C}^6)^*$ as a right $M_6$-module.</p>
+<p><strong>Proof.</strong> The same argument on the other side; the row is the dual of the column.</p>
+<h3 id="the-column-and-the-row">The Column and the Row</h3>
+<p><strong>Theorem.</strong> The trace pairing</p>
+<p>$$
+L\times R\longrightarrow\mathbb{C},
+\qquad
+(X,Y)\longmapsto\operatorname{tr}(XY)
+$$</p>
+<p>is well defined and nondegenerate, and it identifies $R$ with the dual $L^*$ of $L$.</p>
+<p><strong>Proof.</strong> For $X=BE_{11}$ and $Y=E_{11}C$, $XY=BE_{11}C$ has entries $B_{i1}C_{1j}$ and trace $\sum_iB_{i1}C_{1i}$, the standard pairing of the column vector $(B_{i1})$ with the row vector $(C_{1i})$. It is nondegenerate: if $X\neq0$, some $B_{i1}\neq0$, and choosing $C$ with $C_{1i}\neq0$ gives a nonzero pairing.</p>
+<p><strong>Corollary (the two dualities).</strong> The left module structure on $L$ dualizes to a right module structure on $L^*=R$, and conversely. The column is the left ideal; the row is the right ideal; the transpose exchanges them.</p>
+<p><strong>Proof.</strong> The dual of a left module is a right module by $(\varphi\cdot A)(x)=\varphi(Ax)$; under the trace pairing this is right multiplication by $A$.</p>
+<p><strong>Remark (the column is not a right ideal).</strong> The column $L$ is not stable under right multiplication by a general matrix: $E_{11}E_{12}=E_{12}\notin L$. The row is not a left ideal. <strong>The column and the row are the two one-sided minimal ideals, and they are different subspaces of the algebra.</strong></p>
+<h2 id="the-endomorphisms">The Endomorphisms</h2>
+<p><strong>Theorem.</strong> The endomorphism ring of the left module $L$ is</p>
+<p>$$
+\operatorname{End}_{M_6}(L)\cong\mathbb{C}.
+$$</p>
+<p><strong>Proof.</strong> An endomorphism $T$ of $L$ is $M_6$-linear; since $L$ is simple, $T$ is either zero or injective; a nonzero injective endomorphism of the six-dimensional space is invertible, so the endomorphism ring is a division algebra over $\mathbb{C}$. The only finite-dimensional division algebra over $\mathbb{C}$ is $\mathbb{C}$. Explicitly, $T$ is right multiplication by an element of $PMP\cong\mathbb{C}$.</p>
+<p><strong>Corollary (Schur's lemma).</strong> Every nonzero $M_6$-linear map between minimal left ideals is an isomorphism, and it is unique up to a nonzero scalar.</p>
+<p><strong>Proof.</strong> The minimal left ideals are simple modules; a nonzero map between them is injective, hence an isomorphism; the endomorphism ring of the target is $\mathbb{C}$, so the map is unique up to a scalar.</p>
+<p><strong>Theorem (the module category).</strong> Every left $M_6$-module is a direct sum of copies of $L$:</p>
+<p>$$
+M\cong L^{\oplus k},
+\qquad
+k=\dim_{\mathbb{C}}M/6 .
+$$</p>
+<p>In particular the left regular module is</p>
+<p>$$
+{}_A A\cong L^{\oplus6}.
+$$</p>
+<p><strong>Proof.</strong> $M_6(\mathbb{C})$ is a simple Artinian ring; its left modules are semisimple, and the simple module is unique up to isomorphism, namely $L$. The regular module has dimension $36$, hence six copies of the six-dimensional simple module.</p>
+<p><strong>Corollary (the double centralizer).</strong> The algebra is the endomorphism ring of its simple module over the opposite algebra, and</p>
+<p>$$
+\operatorname{End}_{\mathbb{C}}(L)\cong M_6(\mathbb{C}).
+$$</p>
+<p><strong>Proof.</strong> The action of $M_6$ on $L\cong\mathbb{C}^6$ is faithful and spans $\operatorname{End}_{\mathbb{C}}(L)$; the double centralizer theorem gives the identity.</p>
+<h2 id="the-tensor-product">The Tensor Product</h2>
+<h3 id="the-rank-one-matrices">The Rank-One Matrices</h3>
+<p><strong>Theorem.</strong> The map</p>
+<p>$$
+\mathbb{C}^6\otimes(\mathbb{C}^6)^*\longrightarrow M_6(\mathbb{C}),
+\qquad
+u\otimes\varphi\longmapsto u\varphi,
+\qquad
+(u\varphi)(v)=\varphi(v)u,
+$$</p>
+<p>is an isomorphism of vector spaces, and</p>
+<p>$$
+(u\otimes\varphi)(v\otimes\psi)=\varphi(v)\,u\otimes\psi .
+$$</p>
+<p><strong>Proof.</strong> The matrix units are $E_{ij}=e_i\otimes e_j^*$, where $e_j^*(e_k)=\delta_{jk}$; they form a basis of both sides. The product formula is the composition of rank-one maps.</p>
+<p><strong>Corollary (the identity and the trace).</strong></p>
+<p>$$
+I_6=\sum_{i=1}^{6}e_i\otimes e_i^*,
+\qquad
+\operatorname{tr}(u\otimes\varphi)=\varphi(u).
+$$</p>
+<p><strong>Proof.</strong> The identity is the sum of the coordinate rank-one projectors; the trace of $u\varphi$ is $\varphi(u)$.</p>
+<h3 id="the-left-and-right-actions">The Left and Right Actions</h3>
+<p><strong>Theorem.</strong> Under the isomorphism $M_6\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^*$, the left action of $M_6$ on $\mathbb{C}^6$ is on the first factor, and the right action on $(\mathbb{C}^6)^*$ is on the second:</p>
+<p>$$
+A(u\otimes\varphi)=(Au)\otimes\varphi,
+\qquad
+(u\otimes\varphi)A=u\otimes(\varphi A).
+$$</p>
+<p><strong>Proof.</strong> $A(u\varphi)=(Au)\varphi$ and $(u\varphi)A=u(\varphi A)$.</p>
+<p><strong>Corollary (the minimal ideals).</strong> The minimal left ideal $L_\varphi$ is</p>
+<p>$$
+L_\varphi=\mathbb{C}^6\otimes\mathbb{C}\varphi,
+$$</p>
+<p>and the minimal right ideal $R_u$ is</p>
+<p>$$
+R_u=\mathbb{C}u\otimes(\mathbb{C}^6)^*.
+$$</p>
+<p><strong>Proof.</strong> The left ideal of the projector with kernel $\ker\varphi$ is the set of all $u\otimes\varphi$; the right ideal of the projector with image $\mathbb{C}u$ is the set of all $u\otimes\psi$.</p>
+<h2 id="the-minimal-left-ideals-and-the-exchange">The Minimal Left Ideals and the Exchange</h2>
+<h3 id="the-family">The Family</h3>
+<p><strong>Theorem.</strong> The minimal left ideals of $M_6(\mathbb{C})$ are exactly</p>
+<p>$$
+L_\varphi=M_6P_\varphi,
+\qquad
+P_\varphi=v\otimes\varphi,\quad \varphi(v)=1,
+$$</p>
+<p>for the nonzero linear forms $\varphi\in(\mathbb{C}^6)^*$, and $L_\varphi=L_\psi$ if and only if $\mathbb{C}\varphi=\mathbb{C}\psi$. The family is the projective space</p>
+<p>$$
+\mathbb{P}^5=\{(\mathbb{C}^6)^*\text{ modulo scalars}\},
+$$</p>
+<p>of complex dimension $5$.</p>
+<p><strong>Proof.</strong> A minimal left ideal is the set of matrices vanishing on a fixed hyperplane $H$, namely $H=\ker\varphi$; it is $L_\varphi=\mathbb{C}^6\otimes\mathbb{C}\varphi$, and it depends only on the hyperplane, equivalently on the line $\mathbb{C}\varphi$ in the dual. The projector $P_\varphi=v\otimes\varphi$ with $\varphi(v)=1$ has kernel $H$ and image $\mathbb{C}v$; the left ideal $M_6P_\varphi$ is independent of the choice of $v$. The set of lines in the six-dimensional dual is $\mathbb{P}^5$.</p>
+<p><strong>Corollary (the parabolic stabilizer).</strong> The stabilizer in $GL_6$ of a minimal left ideal is the parabolic subgroup of the hyperplane $H=\ker\varphi$, of dimension</p>
+<p>$$
+25+5+1=31,
+$$</p>
+<p>with Levi $GL_5\times GL_1$ and unipotent radical of dimension $5$.</p>
+<p><strong>Proof.</strong> Preserving $L_\varphi$ is preserving the hyperplane $H$. In a basis with $H=\{x_6=0\}$ the block form is</p>
+<p>$$
+\begin{pmatrix}A&B\\0&\lambda\end{pmatrix}
+$$</p>
+<p>with $A\in GL_5$ (dimension $25$), $B\in\mathbb{C}^{5\times1}$ (dimension $5$) and $\lambda\in\mathbb{C}^\times$ (dimension $1$); the lower-left block is zero. The total is $25+5+1=31$.</p>
+<h3 id="the-exchange">The Exchange</h3>
+<p><strong>Theorem.</strong> Any two minimal left ideals $L_\varphi$ and $L_\psi$ are isomorphic as left modules. Every isomorphism is the restriction of a matrix $A\in GL_6$ with $AL_\varphi=L_\psi$, and it is unique up to a nonzero scalar.</p>
+<p><strong>Proof.</strong> Schur's lemma gives the uniqueness up to a scalar. The existence: choose $A\in GL_6$ with $A(\ker\varphi)=\ker\psi$; then $A$ maps $L_\varphi$ to $L_\psi$, and its restriction is an isomorphism.</p>
+<p><strong>Corollary (the non-canonical exchange).</strong> There is no canonical isomorphism $L_\varphi\cong L_\psi$ for $\varphi\neq\psi$. The set of isomorphisms is a torsor under $\mathbb{C}^\times$, and the choice of an exchange is the choice of a matrix $A$ carrying one hyperplane to the other.</p>
+<p><strong>Proof.</strong> A canonical isomorphism would be a natural section of the $GL_6$-equivariant bundle of isomorphisms; the stabilizer of a line acts nontrivially on the fiber (by the scalar endomorphisms), so no such section exists. The set of isomorphisms is a coset of the stabilizer modulo the scalars.</p>
+<p><strong>Remark (the choice of a column).</strong> The algebra has six coordinate columns, but no one of them is distinguished by the algebra alone. The root $H$ distinguishes the eigenlines, and the Lagrange projectors distinguish the six coordinate columns of the eigenbasis. <strong>The minimal left ideals are all isomorphic; the root chooses a basis of them.</strong></p>
+<h2 id="the-peirce-carrier">The Peirce Carrier</h2>
+<h3 id="definition_1">Definition</h3>
+<p><strong>Definition.</strong> Let $P$ be a rank-one idempotent and $Q=I_6-P$. The <strong>Peirce carrier</strong> of $P$ is</p>
+<p>$$
+C(P)=PMP\oplus PMQ .
+$$</p>
+<p><strong>Theorem.</strong> $\dim C(P)=1+5=6$, and $C(P)=PM$, the minimal right ideal of $P$.</p>
+<p><strong>Proof.</strong> $PMP\cong\mathbb{C}$ (the scalar multiples of $P$), and $PMQ$ is the space of maps from the image of $Q$ to the image of $P$, of dimension $1\cdot5=5$. Their sum is $PM$.</p>
+<p><strong>Corollary (the two carriers).</strong> The minimal left ideal is</p>
+<p>$$
+MP=PMP\oplus QMP,
+$$</p>
+<p>of dimension $1+5=6$, the column; the Peirce carrier is the row $PM=PMP\oplus PMQ$, the dual. The two are exchanged by the transpose.</p>
+<p><strong>Proof.</strong> The Peirce decomposition of <em>The Peirce Decomposition</em> gives $MP=PMP\oplus QMP$ and $PM=PMP\oplus PMQ$.</p>
+<h3 id="the-spin-chain">The Spin Chain</h3>
+<p><strong>Theorem.</strong> The Peirce $\mathfrak{su}_2$ of the rank-one idempotent acts irreducibly on the six-dimensional carrier, with highest weight $5/2$:</p>
+<p>$$
+C(P)\cong V_{5/2},
+\qquad
+\dim V_{5/2}=6 .
+$$</p>
+<p><strong>Proof.</strong> The spin chain of <em>The Spin Chain and the Adjoint Decomposition</em> has ladder operators $J_\pm$ and $J_3$ acting on the carrier; the highest weight vector is the top Peirce line, and the ladder has six steps, from $-5/2$ to $5/2$. The module is irreducible because the ladder generates the whole space.</p>
+<p><strong>Corollary (the module is the spin module).</strong> The minimal left ideal $L=MP$ and the Peirce carrier $C(P)=PM$ are both six-dimensional carriers of the spin-$5/2$ module; the left module is the column, the carrier is the dual row.</p>
+<p><strong>Proof.</strong> The two spaces are dual by the trace pairing, and the spin chain is self-dual (the spin-$5/2$ representation of $\mathfrak{su}_2$ is self-dual).</p>
+<p><strong>Remark (the module as the carrier).</strong> The minimal left ideal is not a spinor, not a column of spin coefficients, and not a Peirce space. It is the six-dimensional carrier of the defining representation, on which the Peirce chain acts irreducibly. <strong>The module is the carrier; the spin chain is the action.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>A rank-one idempotent $P$ of $M_6(\mathbb{C})$ gives the minimal left ideal</p>
+<p>$$
+L=M_6P\cong\mathbb{C}^6,
+$$</p>
+<p>the column, and the minimal right ideal</p>
+<p>$$
+R=PM_6\cong(\mathbb{C}^6)^*,
+$$</p>
+<p>the row. The trace pairing identifies $R$ with $L^*$. The algebra is</p>
+<p>$$
+M_6(\mathbb{C})\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^*,
+\qquad
+E_{ij}=e_i\otimes e_j^*,
+\qquad
+I_6=\sum_i e_i\otimes e_i^* .
+$$</p>
+<p>$$
+\boxed{\ L=M_6P\cong\mathbb{C}^6,\qquad R=PM_6\cong L^*,\qquad M_6\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^* .\ }
+$$</p>
+<p>The minimal left ideals are the columns $L_\varphi$ for the lines $\varphi$ of the dual; they form $\mathbb{P}^5$; they are all isomorphic, and the exchange is non-canonical, unique only up to $\mathbb{C}^\times$. The stabilizer of one column is the parabolic of dimension $31$.</p>
+<p>The Peirce carrier</p>
+<p>$$
+C(P)=PMP\oplus PMQ
+$$</p>
+<p>has dimension $1+5=6$; it is the row, the dual of the column. The minimal left ideal is the carrier of the spin chain, the irreducible spin-$5/2$ module of the Peirce $\mathfrak{su}_2$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimal left ideal</td>
+<td>$L=M_6P\cong\mathbb{C}^6$, the column</td>
+</tr>
+<tr>
+<td>Minimal right ideal</td>
+<td>$R=PM_6\cong(\mathbb{C}^6)^*$, the row</td>
+</tr>
+<tr>
+<td>Duality</td>
+<td>$\operatorname{tr}(XY)$ on $L\times R$</td>
+</tr>
+<tr>
+<td>Endomorphisms</td>
+<td>$\operatorname{End}_{M_6}(L)\cong\mathbb{C}$</td>
+</tr>
+<tr>
+<td>Tensor product</td>
+<td>$M_6\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^*$</td>
+</tr>
+<tr>
+<td>Family of columns</td>
+<td>$\mathbb{P}^5$</td>
+</tr>
+<tr>
+<td>Stabilizer</td>
+<td>parabolic, dimension $31$</td>
+</tr>
+<tr>
+<td>Peirce carrier</td>
+<td>$PMP\oplus PMQ$, dimension $6$</td>
+</tr>
+<tr>
+<td>Spin</td>
+<td>$5/2$, carrier dimension $6$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>a rank-one idempotent</td>
+</tr>
+<tr>
+<td>$Q=I_6-P$</td>
+<td>the complementary idempotent</td>
+</tr>
+<tr>
+<td>$L=M_6P$</td>
+<td>the minimal left ideal, the column</td>
+</tr>
+<tr>
+<td>$R=PM_6$</td>
+<td>the minimal right ideal, the row</td>
+</tr>
+<tr>
+<td>$P_\varphi$</td>
+<td>the rank-one projector onto the line $\mathbb{C}\varphi$</td>
+</tr>
+<tr>
+<td>$L_\varphi$</td>
+<td>the minimal left ideal of $P_\varphi$</td>
+</tr>
+<tr>
+<td>$C(P)$</td>
+<td>the Peirce carrier $PMP\oplus PMQ$</td>
+</tr>
+<tr>
+<td>$V_{5/2}$</td>
+<td>the six-dimensional spin-$5/2$ module</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>, for the corners and the Peirce carrier.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m6c.html">The Spin Chain and the Adjoint Decomposition</a>, for the action of the Peirce $\mathfrak{su}_2$ on the carrier.</li>
+<li><a href="the-two-chiralities-of-m6c.html">The Two Chiralities</a>, for the chiral halves, which are not minimal ideals.</li>
+<li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the rank-one matrices and the tensor product.</li>
+<li><a href="the-modules-over-the-biquaternion-algebra.html">The Modules over the Biquaternion Algebra</a>, for the rank-one case.</li>
+<li><a href="morita-equivalence.html">Morita Equivalence</a>, for the equivalence of the module category with vector spaces.</li>
+<li><a href="simple-artinian-rings.html">Simple Artinian Rings</a>, for the classification of the modules.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the projective space of the minimal ideals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Exponential and the Lie Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-exponential-and-the-lie-group"><strong>The Exponential and the Lie Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>matrix exponential</strong> is</p>
+<p>$$
+e^A=\sum_{m=0}^{\infty}\frac{A^m}{m!},\qquad A\in M_5(\mathbb{C}).
+$$</p>
+<p>The series converges absolutely and uniformly on compact sets, and it defines a smooth map</p>
+<p>$$
+\exp:\mathfrak{gl}_5=M_5(\mathbb{C})\longrightarrow GL_5(\mathbb{C}).
+$$</p>
+<p>The group $GL_5(\mathbb{C})$ is a complex Lie group of complex dimension $25$, with Lie algebra $\mathfrak{gl}_5$ and Lie bracket $[X,Y]=XY-YX$. The exponential is the bridge between the two: it sends the Lie algebra to the group, its derivative at $0$ is the identity, and it is a local diffeomorphism. For $GL_5(\mathbb{C})$ the exponential is <strong>surjective</strong> but not injective: every invertible matrix is an exponential, and $e^{2\pi iI}=I$ shows the ambiguity.</p>
+<p>The standard subgroups are the images of the standard subalgebras:</p>
+<p>$$
+SL_5=\exp(\mathfrak{sl}_5),\qquad
+U(5)=\exp(\mathfrak{u}(5)),\qquad
+SU(5)=\exp(\mathfrak{su}(5)),
+$$</p>
+<p>and the Borel $B=T\ltimes U$ is the product of the torus and the unipotent group $U=\exp(\mathfrak{n})$, where $\mathfrak{n}$ is the nilpotent upper triangular algebra. The exponential of the root is</p>
+<p>$$
+e^{tH}=\sum_k e^{t\zeta_k}P_k,
+$$</p>
+<p>and the exponential of a simple nilpotent is polynomial,</p>
+<p>$$
+e^{tE_{k,k+1}}=I+tE_{k,k+1},
+$$</p>
+<p>because $E_{k,k+1}^2=0$. The gauge torus acts by conjugation and rescales the nilpotents.</p>
+<p>The article develops the exponential, its convergence, the group law for commuting matrices, the Lie algebra and the Lie bracket, the local diffeomorphism and the surjectivity, the standard subgroups and the exponential of the root and the nilpotents. It assumes the trace, the determinant, the Hermitian structure and the spectral theorem. The polar decomposition and the exponential-polar decomposition are the next articles.</p>
+<h2 id="the-exponential-map">The Exponential Map</h2>
+<h3 id="the-series">The Series</h3>
+<p><strong>Definition.</strong> The <strong>exponential</strong> of $A$ is the sum of the series</p>
+<p>$$
+e^A=\sum_{m=0}^{\infty}\frac{A^m}{m!}.
+$$</p>
+<p><strong>Theorem.</strong> The series converges absolutely for every $A$; the convergence is uniform on every bounded subset of $M_5$. The exponential is a smooth map $M_5\to M_5$.</p>
+<p><strong>Proof.</strong> Choose a submultiplicative norm $\|\cdot\|$ (for example the operator norm or the Frobenius norm). Then $\|A^m/m!\|\le\|A\|^m/m!$, and the scalar series $\sum\|A\|^m/m!=e^{\|A\|}$ converges. On the ball $\|A\|\le R$ the convergence is uniform by the Weierstrass test; each term is polynomial, so the sum is smooth.</p>
+<p><strong>Corollary.</strong> The exponential is entire (complex analytic) in the entries of $A$, and it commutes with conjugation:</p>
+<p>$$
+e^{gAg^{-1}}=ge^Ag^{-1}.
+$$</p>
+<p><strong>Proof.</strong> The series is a uniform limit of polynomials, hence analytic; the conjugation identity follows term by term.</p>
+<h3 id="convergence">Convergence</h3>
+<p><strong>Proposition.</strong> The exponential satisfies</p>
+<p>$$
+e^0=I,\qquad (e^A)^*=e^{A^*},\qquad e^Ae^{-A}=I .
+$$</p>
+<p>In particular $e^A$ is invertible, with inverse $e^{-A}$.</p>
+<p><strong>Proof.</strong> The first identity is the constant term; the adjoint is termwise because $(A^m)^*=(A^*)^m$; the product $e^Ae^{-A}=e^{A-A}=I$ uses the group law for the commuting matrices $A$ and $-A$.</p>
+<p><strong>Corollary.</strong> The image of the exponential is contained in $GL_5$; the exponential is a map $\mathfrak{gl}_5\to GL_5$.</p>
+<p><strong>Proof.</strong> $e^A$ has the inverse $e^{-A}$.</p>
+<h3 id="the-group-law">The Group Law</h3>
+<p><strong>Theorem.</strong> If $[A,B]=0$, then</p>
+<p>$$
+e^{A+B}=e^Ae^B .
+$$</p>
+<p><strong>Proof.</strong> When $A$ and $B$ commute, the binomial theorem applies to $(A+B)^m$:</p>
+<p>$$
+(A+B)^m=\sum_{k=0}^{m}\binom{m}{k}A^kB^{m-k},
+$$</p>
+<p>and the exponential series factors into the product of the two exponential series.</p>
+<p><strong>Corollary.</strong> The one-parameter subgroups $t\mapsto e^{tA}$ are group homomorphisms $\mathbb{R}\to GL_5$; they satisfy $e^{sA}e^{tA}=e^{(s+t)A}$.</p>
+<p><strong>Proof.</strong> The matrices $sA$ and $tA$ commute; apply the group law.</p>
+<p><strong>Remark.</strong> <strong>The group law fails for noncommuting matrices.</strong> The correct formula is the Baker–Campbell–Hausdorff formula,</p>
+<p>$$
+e^Xe^Y=e^{X+Y+\frac12[X,Y]+\frac1{12}[X,[X,Y]]-\frac1{12}[Y,[X,Y]]+\cdots},
+$$</p>
+<p>whose first correction is the commutator. The exponential is not a group homomorphism from the additive group of the Lie algebra to $GL_5$; it is a local diffeomorphism whose derivative is the identity.</p>
+<h2 id="the-lie-algebra">The Lie Algebra</h2>
+<h3 id="left-invariant-vector-fields">Left-Invariant Vector Fields</h3>
+<p><strong>Definition.</strong> The <strong>Lie algebra</strong> of $GL_5$ is the tangent space at the identity, $\mathfrak{gl}_5=M_5(\mathbb{C})$, with the bracket $[X,Y]=XY-YX$.</p>
+<p><strong>Proposition.</strong> The tangent space at $I$ is $M_5$; a left-invariant vector field is determined by its value $X$ at $I$, and its value at $g$ is $gX$. The bracket of two left-invariant fields is left-invariant, with value $[X,Y]$ at $I$.</p>
+<p><strong>Proof.</strong> $GL_5$ is open in $M_5$, so the tangent space at $I$ is $M_5$. The left translation $L_g(h)=gh$ has derivative $X\mapsto gX$; the left-invariant field is $g\mapsto gX$. The bracket of the fields $gX$ and $gY$ is $g(XY-YX)$, which is left-invariant with value $[X,Y]$.</p>
+<p><strong>Corollary.</strong> The Lie bracket is bilinear, antisymmetric and satisfies the Jacobi identity:</p>
+<p>$$
+[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0 .
+$$</p>
+<p><strong>Proof.</strong> The associativity of the matrix product gives the Jacobi identity by expansion.</p>
+<h3 id="the-bracket">The Bracket</h3>
+<p><strong>Proposition.</strong> The bracket is the derivative of the conjugation:</p>
+<p>$$
+[X,Y]=\left.\frac{d}{dt}\right|_{t=0}e^{tX}Ye^{-tX}.
+$$</p>
+<p><strong>Proof.</strong> Differentiate $e^{tX}Ye^{-tX}=Y+t(XY-YX)+O(t^2)$.</p>
+<p><strong>Corollary.</strong> The adjoint representation $\operatorname{ad}_X(Y)=[X,Y]$ is the derivative at the identity of the adjoint action $\operatorname{Ad}_{e^{tX}}(Y)=e^{tX}Ye^{-tX}$.</p>
+<p><strong>Proof.</strong> The derivative is the bracket by the proposition.</p>
+<h3 id="the-one-parameter-subgroups">The One-Parameter Subgroups</h3>
+<p><strong>Theorem.</strong> Every one-parameter subgroup $\gamma:\mathbb{R}\to GL_5$ is of the form $\gamma(t)=e^{tX}$ for a unique $X\in\mathfrak{gl}_5$.</p>
+<p><strong>Proof.</strong> The one-parameter subgroups of a Lie group are the integral curves of the left-invariant vector fields through the identity; the integral curve of the field $gX$ is $g e^{tX}$. The uniqueness is the uniqueness of the solution of the ordinary differential equation $\gamma'(t)=\gamma(t)X$ with $\gamma(0)=I$.</p>
+<p><strong>Corollary.</strong> The exponential is the map from the Lie algebra to the one-parameter subgroups; it is injective on a neighborhood of $0$ and a local diffeomorphism there.</p>
+<p><strong>Proof.</strong> The derivative at $0$ is the identity; the inverse function theorem gives a local inverse, the logarithm.</p>
+<h2 id="the-lie-group">The Lie Group</h2>
+<h3 id="math87-as-a-lie-group">$GL_5$ as a Lie Group</h3>
+<p><strong>Theorem.</strong> $GL_5(\mathbb{C})$ is a complex Lie group of complex dimension $25$; its Lie algebra is $\mathfrak{gl}_5$; the multiplication, the inverse and the exponential are smooth.</p>
+<p><strong>Proof.</strong> $GL_5$ is the open subset $\det\ne0$ of $M_5\cong\mathbb{C}^{25}$; the multiplication is polynomial, the inverse is rational with denominator $\det$, and the exponential is entire. The Lie algebra is the tangent space at $I$, with the bracket of left-invariant fields.</p>
+<p><strong>Corollary.</strong> The Lie algebra of $SL_5$ is $\mathfrak{sl}_5$, of dimension $24$; the Lie algebra of $U(5)$ is $\mathfrak{u}(5)$, of real dimension $25$; the Lie algebra of $SU(5)$ is $\mathfrak{su}(5)$, of real dimension $24$.</p>
+<p><strong>Proof.</strong> The subgroups are the zero sets of the determinant, of $U^*U=I$, and of both; their tangent spaces are the traceless, skew-Hermitian, and traceless skew-Hermitian matrices.</p>
+<h3 id="the-exponential-is-a-local-diffeomorphism">The Exponential Is a Local Diffeomorphism</h3>
+<p><strong>Theorem.</strong> The derivative of the exponential at $0$ is the identity:</p>
+<p>$$
+d\exp_0(X)=X .
+$$</p>
+<p>Hence the exponential is a local diffeomorphism at $0$: there is a neighborhood $U$ of $0$ in $\mathfrak{gl}_5$ and a neighborhood $V$ of $I$ in $GL_5$ such that $\exp:U\to V$ is a diffeomorphism.</p>
+<p><strong>Proof.</strong> $e^{tX}=I+tX+O(t^2)$, so the derivative at $0$ in the direction $X$ is $X$. The derivative is invertible; the inverse function theorem gives the local diffeomorphism.</p>
+<p><strong>Corollary.</strong> The inverse of the exponential near $I$ is the <strong>logarithm</strong></p>
+<p>$$
+\log(I+N)=\sum_{m=1}^{\infty}\frac{(-1)^{m+1}}{m}N^m,
+$$</p>
+<p>which converges for $\|N\|<1$ and satisfies $e^{\log(I+N)}=I+N$.</p>
+<p><strong>Proof.</strong> The scalar series for $\log(1+z)$ converges for $|z|<1$; the matrix series converges for $\|N\|<1$; the identity $e^{\log(1+z)}=1+z$ is formal and holds for the matrix series.</p>
+<h3 id="surjectivity">Surjectivity</h3>
+<p><strong>Theorem.</strong> Every invertible matrix $A\in GL_5(\mathbb{C})$ is an exponential: there exists $X\in\mathfrak{gl}_5$ with $e^X=A$.</p>
+<p><strong>Proof.</strong> Put $A$ in Jordan form $A=gJg^{-1}$, with $J$ a direct sum of Jordan blocks $J_m(\lambda)=\lambda I+N$, $\lambda\ne0$, $N$ nilpotent. Choose $\mu\in\mathbb{C}$ with $e^\mu=\lambda$. Then</p>
+<p>$$
+J_m(\lambda)=\lambda\left(I+\lambda^{-1}N\right)
+=e^\mu e^{\log(I+\lambda^{-1}N)}
+=e^{\mu I+\log(I+\lambda^{-1}N)},
+$$</p>
+<p>because the two matrices commute. The logarithm series terminates because $\lambda^{-1}N$ is nilpotent. Summing over the blocks gives $J=e^X$; then $A=e^{gXg^{-1}}$.</p>
+<p><strong>Corollary.</strong> The exponential is surjective onto $GL_5(\mathbb{C})$, and onto $SL_5(\mathbb{C})$ when restricted to $\mathfrak{sl}_5$.</p>
+<p><strong>Proof.</strong> The first is the theorem. For $A\in SL_5$, put $A=gJg^{-1}$; the eigenvalues $\lambda_k$ of $J$ have product $1$. Choose logarithms $\mu_k$ with $\sum_km_k\mu_k=0$: since $\sum_km_k\log\lambda_k=2\pi i\,m$ for an integer $m$, shift one branch by $-2\pi i\,m$; this does not change its exponential and makes the weighted sum zero. The logarithm of the Jordan form built from these branches has trace $\sum_km_k\mu_k=0$, and $A=e^{gXg^{-1}}$ with $X$ traceless.</p>
+<p><strong>Remark.</strong> <strong>The exponential is surjective but not injective.</strong> $e^{2\pi iI}=I$, and more generally $e^{2\pi iD}=I$ for any diagonal matrix $D$ with integer entries. The fibres of the exponential are discrete unions of affine subspaces; the logarithm is multivalued. The local diffeomorphism is the correct statement; the global inverse does not exist.</p>
+<h2 id="the-standard-subgroups">The Standard Subgroups</h2>
+<h3 id="math162">$SL_5$</h3>
+<p><strong>Theorem.</strong> $SL_5(\mathbb{C})=\{A:\det A=1\}$ is a closed complex Lie subgroup of $GL_5$, of dimension $24$, with Lie algebra $\mathfrak{sl}_5=\{X:\operatorname{tr}X=0\}$. The exponential maps $\mathfrak{sl}_5$ onto $SL_5$.</p>
+<p><strong>Proof.</strong> The determinant is a holomorphic homomorphism $GL_5\to\mathbb{C}^\times$; its kernel is closed; the dimension is $25-1=24$. The Lie algebra is the kernel of the derivative $\operatorname{tr}$ at $I$. The surjectivity is the corollary above.</p>
+<p><strong>Corollary.</strong> $\det(e^X)=e^{\operatorname{tr}X}$; the exponential of a traceless matrix has determinant $1$.</p>
+<p><strong>Proof.</strong> The identity $\det(e^X)=e^{\operatorname{tr}X}$ is the determinant-exponential identity; a traceless $X$ gives determinant $1$.</p>
+<h3 id="math178-and-math179">$U(5)$ and $SU(5)$</h3>
+<p><strong>Theorem.</strong> $U(5)$ is a compact real Lie group of dimension $25$, with Lie algebra $\mathfrak{u}(5)$; the exponential maps $\mathfrak{u}(5)$ onto $U(5)$. $SU(5)$ is compact of dimension $24$, with Lie algebra $\mathfrak{su}(5)$, and the exponential maps $\mathfrak{su}(5)$ onto $SU(5)$.</p>
+<p><strong>Proof.</strong> The unitary group is the zero set of $U^*U=I$, closed and bounded, hence compact; the tangent space at $I$ is $\mathfrak{u}(5)$; the exponential of a skew-Hermitian matrix is unitary. The surjectivity is the unitary diagonalization: $U=VDV^*$ with $D=\operatorname{diag}(e^{i\theta_k})$, and $U=e^{iH}$ with $H=VD_0V^*$, $D_0=\operatorname{diag}(\theta_k)$, skew-Hermitian. For $SU(5)$, choose the angles with sum zero modulo $2\pi$.</p>
+<p><strong>Corollary.</strong> The exponential of a Hermitian matrix is positive definite; the exponential of a skew-Hermitian matrix is unitary; the exponential of a nilpotent matrix is unipotent.</p>
+<p><strong>Proof.</strong> If $H$ is Hermitian, $e^H$ is Hermitian with positive eigenvalues $e^{\lambda_k}$; if $X$ is skew-Hermitian, $(e^X)^*=e^{X^*}=e^{-X}=(e^X)^{-1}$; if $N$ is nilpotent, $e^N=I+N+\cdots+N^{k-1}/(k-1)!$ is unipotent.</p>
+<h3 id="the-borel-and-the-unipotent-group">The Borel and the Unipotent Group</h3>
+<p><strong>Definition.</strong> The <strong>Borel subgroup</strong> $B$ is the group of upper triangular matrices; the <strong>unipotent group</strong> $U$ is the group of upper triangular matrices with diagonal entries $1$; the <strong>torus</strong> $T$ is the group of diagonal matrices.</p>
+<p><strong>Theorem.</strong> $B=T\ltimes U$, $\dim B=15$, $\dim U=10$, $\dim T=5$. The Lie algebra of $U$ is the nilpotent strictly upper triangular algebra $\mathfrak{n}$, and the exponential maps $\mathfrak{n}$ bijectively onto $U$.</p>
+<p><strong>Proof.</strong> Every upper triangular matrix is the product of its diagonal and a unipotent matrix; the multiplication is the semidirect product. The dimensions are the number of diagonal entries, off-diagonal upper entries, and diagonal entries. The exponential of a strictly upper triangular matrix is unipotent, and the logarithm is its inverse; both series terminate.</p>
+<p><strong>Corollary.</strong> The exponential of the nilpotent algebra $\mathfrak{n}$ is polynomial of degree at most $4$; the group $U$ is unipotent, and its elements are $I+N$ with $N$ nilpotent.</p>
+<p><strong>Proof.</strong> A strictly upper triangular $5\times5$ matrix satisfies $N^5=0$; the exponential series terminates at $N^4/4!$; the logarithm terminates at $N^4/4$.</p>
+<h2 id="the-exponential-of-the-root-and-the-nilpotents">The Exponential of the Root and the Nilpotents</h2>
+<h3 id="the-root">The Root</h3>
+<p><strong>Proposition.</strong> For the root $H=\sum_k\zeta_kE_{kk}$,</p>
+<p>$$
+e^{tH}=\sum_k e^{t\zeta_k}E_{kk}=\sum_k e^{t\zeta_k}P_k .
+$$</p>
+<p>The one-parameter subgroup $t\mapsto e^{tH}$ is periodic if the $\zeta_k$ are integer multiples of a common frequency; in particular $H$ itself is $e^L$ with $L=\operatorname{diag}(2\pi ik/5)$ (up to the choice of the logarithm branches).</p>
+<p><strong>Proof.</strong> The exponential of a diagonal matrix is the diagonal of the exponentials; the spectral projectors are $E_{kk}$. The root has eigenvalues $\zeta_k=e^{2\pi ik/5}$, so $H=e^L$ with $L=\operatorname{diag}(2\pi ik/5)$.</p>
+<p><strong>Corollary.</strong> The root is in $SL_5$, because $\det H=\prod_k\zeta_k=1$; the logarithm $L$ can be chosen traceless.</p>
+<p><strong>Proof.</strong> The product of all fifth roots of unity is $(-1)^{5-1}=1$; the determinant is $1$. The naive logarithm $L_0=\operatorname{diag}(2\pi ik/5)$ has trace $2\pi i(0+1+2+3+4)/5=4\pi i$; replacing the $k=0$ entry $0$ by $-4\pi i$ does not change $e^{L_0}$ and makes the trace zero. Hence $H=e^L$ with $L\in\mathfrak{sl}_5$.</p>
+<h3 id="the-simple-nilpotents">The Simple Nilpotents</h3>
+<p><strong>Proposition.</strong> For a simple nilpotent $E_{k,k+1}$, $E_{k,k+1}^2=0$, and</p>
+<p>$$
+e^{tE_{k,k+1}}=I+tE_{k,k+1}.
+$$</p>
+<p>The exponential of the sum $N=\sum_k c_kE_{k,k+1}$ is the finite polynomial</p>
+<p>$$
+e^N=I+N+\frac{N^2}{2}+\frac{N^3}{6}+\frac{N^4}{24},
+$$</p>
+<p>a unipotent matrix.</p>
+<p><strong>Proof.</strong> The square of a simple nilpotent is zero; the exponential series terminates at the linear term. The sum $N$ is strictly upper triangular, hence $N^5=0$; the exponential is the displayed polynomial.</p>
+<p><strong>Corollary.</strong> The unipotent group $U$ is the image of the nilpotent algebra $\mathfrak{n}$ under the exponential; the simple nilpotents exponentiate to the elementary unipotents $I+tE_{k,k+1}$.</p>
+<p><strong>Proof.</strong> The exponential of $\mathfrak{n}$ is contained in $U$; the logarithm is its inverse; the simple nilpotents give the elementary generators.</p>
+<h3 id="the-gauge">The Gauge</h3>
+<p><strong>Proposition.</strong> The gauge torus $T$ acts on the group by conjugation, $g\mapsto tgt^{-1}$; on the simple nilpotents,</p>
+<p>$$
+tE_{k,k+1}t^{-1}=\frac{t_k}{t_{k+1}}E_{k,k+1},
+$$</p>
+<p>and on the exponential,</p>
+<p>$$
+e^{tE_{k,k+1}}\longmapsto I+\frac{t_k}{t_{k+1}}E_{k,k+1}.
+$$</p>
+<p>The four parameters $\lambda_k=t_k/t_{k+1}$ rescale the four simple nilpotents; the composites rescale by the products; there is no fifth independent scalar.</p>
+<p><strong>Proof.</strong> The conjugation of a matrix unit by a diagonal matrix multiplies it by the ratio of the diagonal entries; the exponential is equivariant. The four ratios are the gauge parameters; the product around a cycle is $1$.</p>
+<p><strong>Corollary.</strong> The gauge is an inner automorphism of $GL_5$; it preserves the group and the exponential, and it rescales the nilpotent directions. The exponential of the gauge-fixed root is the same root, because the root is fixed by the torus.</p>
+<p><strong>Proof.</strong> Conjugation by $t\in T$ is inner; the root is diagonal and commutes with $T$; the nilpotents are the weight vectors.</p>
+<p><strong>Remark.</strong> <strong>The exponential is the group-level expression of the Lie algebra data.</strong> The root $H$ gives the one-parameter subgroup $e^{tH}$; the simple nilpotents give the elementary unipotents $I+tE_{k,k+1}$; the gauge rescales the nilpotent directions. The composites are the products of the elementary unipotents, and the cocycle fixes them. The exponential of the upper triangular algebra is the Borel group, and the exponential of the nilpotent algebra is the unipotent radical.</p>
+<h2 id="summary">Summary</h2>
+<p>The exponential $e^A=\sum_mA^m/m!$ converges everywhere and defines a smooth surjective map $\mathfrak{gl}_5\to GL_5$. Its derivative at $0$ is the identity, so it is a local diffeomorphism; it is not injective, because $e^{2\pi iI}=I$. The group law $e^{A+B}=e^Ae^B$ holds for commuting matrices; the Baker–Campbell–Hausdorff formula gives the general correction.</p>
+<p>$$
+\boxed{\ \exp:\mathfrak{gl}_5\to GL_5\text{ is surjective, locally invertible};\quad \det(e^A)=e^{\operatorname{tr}A};\quad e^{tE_{k,k+1}}=I+tE_{k,k+1}.\ }
+$$</p>
+<p>The Lie algebra $\mathfrak{gl}_5$ has the commutator bracket; the one-parameter subgroups are $e^{tX}$; the standard subalgebras $\mathfrak{sl}_5,\mathfrak{u}(5),\mathfrak{su}(5),\mathfrak{n},\mathfrak{t}$ exponentiate to $SL_5,U(5),SU(5),U,T$. The root gives $e^{tH}=\sum_ke^{t\zeta_k}P_k$; the simple nilpotents give the elementary unipotents; the gauge rescales the four nilpotent directions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Lie algebra</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL_5$</td>
+<td>$\mathfrak{gl}_5$, dimension $25$</td>
+<td>$GL_5$, dimension $25$</td>
+</tr>
+<tr>
+<td>$SL_5$</td>
+<td>$\mathfrak{sl}_5$, dimension $24$</td>
+<td>$SL_5$, dimension $24$</td>
+</tr>
+<tr>
+<td>$U(5)$</td>
+<td>$\mathfrak{u}(5)$, real dimension $25$</td>
+<td>$U(5)$, compact</td>
+</tr>
+<tr>
+<td>$SU(5)$</td>
+<td>$\mathfrak{su}(5)$, real dimension $24$</td>
+<td>$SU(5)$, compact</td>
+</tr>
+<tr>
+<td>Borel $B$</td>
+<td>$\mathfrak{b}$, dimension $15$</td>
+<td>$B=T\ltimes U$</td>
+</tr>
+<tr>
+<td>Unipotent $U$</td>
+<td>$\mathfrak{n}$, dimension $10$</td>
+<td>$U$, unipotent</td>
+</tr>
+<tr>
+<td>Torus $T$</td>
+<td>$\mathfrak{t}$, dimension $5$</td>
+<td>$T$, diagonal</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e^A$</td>
+<td>The matrix exponential</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}_5$</td>
+<td>The Lie algebra $M_5$ with the commutator</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_5$</td>
+<td>The traceless matrices</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(5)$</td>
+<td>The skew-Hermitian matrices</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(5)$</td>
+<td>The traceless skew-Hermitian matrices</td>
+</tr>
+<tr>
+<td>$\mathfrak{n}$</td>
+<td>The strictly upper triangular matrices</td>
+</tr>
+<tr>
+<td>$\mathfrak{t}$</td>
+<td>The diagonal matrices</td>
+</tr>
+<tr>
+<td>$B=T\ltimes U$</td>
+<td>The Borel group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for the matrix exponential, the Lie algebra, the one-parameter subgroups and the Lie group structure.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the exponential, the logarithm and the Jordan form.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (American Mathematical Society, 2001), for the exponential map, the Lie groups and the symmetric spaces.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m5c.html">The Element, the Coordinates and the Trace</a>, for the determinant identity and the Jordan decomposition.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the unitary group and the compact real form.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m5c.html">Spectral Theory and the Spectral Projectors</a>, for the functional calculus and the exponential of a Hermitian matrix.</li>
+<li><a href="the-polar-decomposition-of-m5c.html">The Polar Decomposition</a>, for the polar decomposition and the positive cone.</li>
+<li><a href="the-exponential-polar-decomposition-of-m5c.html">The Exponential-Polar Decomposition</a>, for the combination of the exponential and the polar decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Involution and the Hermitian Structure — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-involution-and-the-hermitian-structure"><strong>The Involution and the Hermitian Structure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The conjugate transpose</p>
+<p>$$
+A\longmapsto A^*=\overline{A}^{\mathsf T}
+$$</p>
+<p>is a conjugate-linear involution of $M_6(\mathbb{C})$. Its fixed points are the Hermitian matrices, its antiefixed points the skew-Hermitian ones, and its isometries the unitary matrices. The Hermitian form</p>
+<p>$$
+\langle A,B\rangle=\operatorname{tr}(A^*B)
+$$</p>
+<p>is positive definite, and it defines the Frobenius norm</p>
+<p>$$
+\lVert A\rVert_F^2=\operatorname{tr}(A^*A)=\sum_{i,j}\lvert a_{ij}\rvert^2 .
+$$</p>
+<p>The skew-Hermitian matrices form the real Lie algebra $\mathfrak{u}(6)$ of dimension $36$; the traceless skew-Hermitian matrices form $\mathfrak{su}(6)$ of dimension $35$. The form is definite, so its only isotropic vector is $0$. This is the sharp contrast with the biquaternion algebra, whose conjugation is $\mathbb{C}$-linear and whose trace form has a nonzero null cone.</p>
+<p>The article assumes the coordinates and the trace pairing of <em>The Element, the Coordinates and the Trace</em>. It uses no topology beyond the finite-dimensional metric. The polar decomposition is <em>The Polar Decomposition</em>; the unitary group is <em>The Exponential and the Lie Group</em>; the real forms of the biquaternion algebra are <em>The Biquaternion Algebra and Its Vector Spaces</em>.</p>
+<h2 id="the-conjugate-transpose">The Conjugate Transpose</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> The <strong>conjugate transpose</strong> of $A$ is</p>
+<p>$$
+(A^*)_{ij}=\overline{a_{ji}} .
+$$</p>
+<p><strong>Theorem.</strong> The map $A\mapsto A^*$ is conjugate-linear and involutive:</p>
+<p>$$
+(A+B)^*=A^*+B^*,\qquad
+(\lambda A)^*=\overline{\lambda}A^*,\qquad
+(A^*)^*=A,
+$$</p>
+<p>and it reverses products:</p>
+<p>$$
+(AB)^*=B^*A^* .
+$$</p>
+<p><strong>Proof.</strong> The entries of $(AB)^*$ are $\overline{(AB)_{ji}}=\sum_k\overline{a_{jk}b_{ki}}=\sum_k\overline{b_{ki}}\,\overline{a_{jk}}=(B^*A^*)_{ij}$.</p>
+<p><strong>Corollary (the *-algebra).</strong> $M_6(\mathbb{C})$ is a complex *-algebra with the identity $I_6^*=I_6$.</p>
+<p><strong>Proof.</strong> The four identities above are the axioms of a *-algebra.</p>
+<h3 id="hermitian-skew-hermitian-and-unitary-elements">Hermitian, Skew-Hermitian and Unitary Elements</h3>
+<p><strong>Definition.</strong> An element $A$ is</p>
+<ul>
+<li><strong>Hermitian</strong> if $A^*=A$;</li>
+<li><strong>skew-Hermitian</strong> if $A^*=-A$;</li>
+<li><strong>unitary</strong> if $A^*A=AA^*=I_6$;</li>
+<li><strong>normal</strong> if $A^*A=AA^*$.</li>
+</ul>
+<p><strong>Theorem (the Cartesian decomposition).</strong> Every $A$ has a unique decomposition</p>
+<p>$$
+A=H+\mathrm iK,
+\qquad
+H=\frac{A+A^*}{2},\quad
+K=\frac{A-A^*}{2\mathrm i},
+$$</p>
+<p>with $H,K$ Hermitian. The real vector space of Hermitian matrices has dimension $36$, and</p>
+<p>$$
+M_6(\mathbb{C})=\operatorname{Herm}_6\oplus\mathrm i\operatorname{Herm}_6
+$$</p>
+<p>as real vector spaces, of real dimension $72$.</p>
+<p><strong>Proof.</strong> $H$ and $K$ are Hermitian by construction, and $A=H+\mathrm iK$. The Hermitian matrices are the fixed points of the conjugate-linear involution $*$; a conjugate-linear involution on a complex vector space of dimension $36$ has a real fixed space of dimension $36$. The imaginary multiples fill the other half.</p>
+<p><strong>Corollary (the Hermitian coordinates).</strong> A Hermitian matrix has $6$ real diagonal entries and $15$ complex off-diagonal entries, hence $6+2\cdot15=36$ real dimensions. A skew-Hermitian matrix has $6$ purely imaginary diagonal entries and $15$ complex off-diagonal entries, also $36$ real dimensions.</p>
+<p><strong>Proof.</strong> The diagonal of a Hermitian matrix is real; the off-diagonal entries are paired by $a_{ji}=\overline{a_{ij}}$. For skew-Hermitian, the diagonal is purely imaginary and $a_{ji}=-\overline{a_{ij}}$.</p>
+<p><strong>Theorem (the unitary group).</strong> The unitary elements form the group</p>
+<p>$$
+U(6)=\{U\in GL_6(\mathbb{C}):U^*U=I_6\},
+$$</p>
+<p>of real dimension $36$; the special unitary elements</p>
+<p>$$
+SU(6)=\{U\in U(6):\det U=1\}
+$$</p>
+<p>form a subgroup of real dimension $35$.</p>
+<p><strong>Proof.</strong> $U(6)$ is the zero set of the $36$ real equations $U^*U=I_6$ in the $72$ real coordinates, and the differential is surjective (the Lie algebra computation below); so the dimension is $72-36=36$. The determinant is a homomorphism onto $U(1)$ with derivative the trace, so its kernel has dimension $35$.</p>
+<p><strong>Corollary (the center).</strong> The center of $U(6)$ is $U(1)I_6$, and</p>
+<p>$$
+PU(6)=U(6)/U(1)I_6
+$$</p>
+<p>has dimension $35$.</p>
+<p><strong>Proof.</strong> A unitary matrix commuting with all unitaries is scalar; the scalar unitaries are $U(1)I_6$. The quotient by a one-dimensional center has dimension $36-1=35$.</p>
+<h3 id="the-lie-algebra">The Lie Algebra</h3>
+<p><strong>Definition.</strong> The <strong>unitary Lie algebra</strong> is</p>
+<p>$$
+\mathfrak{u}(6)=\{X\in M_6(\mathbb{C}):X^*=-X\},
+$$</p>
+<p>and the <strong>special unitary Lie algebra</strong> is</p>
+<p>$$
+\mathfrak{su}(6)=\{X\in\mathfrak{u}(6):\operatorname{tr}X=0\}.
+$$</p>
+<p><strong>Theorem.</strong> $\mathfrak{u}(6)$ is a real Lie algebra of dimension $36$, $\mathfrak{su}(6)$ is a real Lie algebra of dimension $35$, and</p>
+<p>$$
+\mathfrak{u}(6)=\mathfrak{u}(1)\oplus\mathfrak{su}(6),
+\qquad
+\mathfrak{u}(1)=\mathrm i\mathbb{R}I_6 .
+$$</p>
+<p><strong>Proof.</strong> If $X,Y$ are skew-Hermitian, then $[X,Y]^*=[Y^*,X^*]=[-Y,-X]=-[X,Y]$; the commutator is skew-Hermitian. The trace is linear, so the traceless subspace is an ideal. The scalar skew-Hermitian matrices are $\mathrm i\mathbb{R}I_6$, of dimension one; the traceless skew-Hermitian matrices have dimension $36-1=35$, and every skew-Hermitian matrix is the sum of its scalar trace part and its traceless part.</p>
+<p><strong>Theorem (the exponential).</strong> The Lie algebra $\mathfrak{u}(6)$ is the tangent space of $U(6)$ at the identity, and the exponential map</p>
+<p>$$
+\exp:\mathfrak{u}(6)\longrightarrow U(6)
+$$</p>
+<p>is surjective.</p>
+<p><strong>Proof.</strong> The curve $t\mapsto e^{tX}$ is unitary for $X$ skew-Hermitian, and its derivative at zero is $X$; the tangent space is exactly $\mathfrak{u}(6)$. Every unitary matrix is diagonalizable with eigenvalues on the unit circle, so it is the exponential of a skew-Hermitian matrix (the diagonal logarithm).</p>
+<h2 id="the-positive-definite-trace-form">The Positive Definite Trace Form</h2>
+<h3 id="definition_1">Definition</h3>
+<p><strong>Definition.</strong> The <strong>Hermitian trace form</strong> is</p>
+<p>$$
+\langle A,B\rangle=\operatorname{tr}(A^*B).
+$$</p>
+<p><strong>Theorem.</strong> The form is Hermitian, positive definite:</p>
+<p>$$
+\langle A,B\rangle=\overline{\langle B,A\rangle},
+\qquad
+\langle A,A\rangle=\operatorname{tr}(A^*A)=\sum_{i,j}\lvert a_{ij}\rvert^2\ge0,
+$$</p>
+<p>with equality if and only if $A=0$.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(A^*B)=\sum_{i,j}\overline{a_{ij}}b_{ij}$, the Euclidean inner product of the entries; the conjugate symmetry is immediate, and the sum of squares vanishes only when every entry vanishes.</p>
+<p><strong>Corollary (the Frobenius norm).</strong> The form defines the <strong>Frobenius norm</strong></p>
+<p>$$
+\lVert A\rVert_F=\sqrt{\langle A,A\rangle}
+=\left(\sum_{i,j}\lvert a_{ij}\rvert^2\right)^{1/2},
+$$</p>
+<p>and the Cauchy–Schwarz and triangle inequalities hold.</p>
+<p><strong>Proof.</strong> The norm is the Euclidean norm on $\mathbb{C}^{36}\cong\mathbb{R}^{72}$; the inequalities are those of a positive definite inner product.</p>
+<p><strong>Corollary (the real and imaginary parts).</strong> For $A=X+\mathrm iY$,</p>
+<p>$$
+\operatorname{Re}\langle A,B\rangle
+=\sum_{i,j}(x_{ij}u_{ij}+y_{ij}v_{ij}),
+\qquad
+\operatorname{Im}\langle A,B\rangle
+=\sum_{i,j}(x_{ij}v_{ij}-y_{ij}u_{ij}).
+$$</p>
+<p>The real part is the Euclidean inner product of the $72$ real coordinates; the imaginary part is a symplectic form.</p>
+<p><strong>Proof.</strong> Expand $\operatorname{tr}(A^*B)=\sum_{ij}(x_{ij}-\mathrm iy_{ij})(u_{ij}+\mathrm iv_{ij})$ and take real and imaginary parts.</p>
+<h3 id="the-adjoint-properties">The Adjoint Properties</h3>
+<p><strong>Theorem.</strong> The form satisfies</p>
+<p>$$
+\langle AB,C\rangle=\langle B,A^*C\rangle,
+\qquad
+\langle A,BC\rangle=\langle AC^*,B\rangle .
+$$</p>
+<p><strong>Proof.</strong> $\operatorname{tr}((AB)^*C)=\operatorname{tr}(B^*A^*C)=\langle B,A^*C\rangle$; the second is the same with the roles of the factors exchanged.</p>
+<p><strong>Corollary (the adjoint).</strong> The adjoint of left multiplication by $A$ with respect to the Hermitian form is left multiplication by $A^*$; the adjoint of right multiplication by $B$ is right multiplication by $B^*$.</p>
+<p><strong>Proof.</strong> Read the two identities as the definition of the adjoint.</p>
+<p><strong>Remark (the contrast with the complex bilinear form).</strong> The complex bilinear trace pairing $\operatorname{tr}(AB)$ of <em>The Element, the Coordinates and the Trace</em> is indefinite; the Hermitian form $\operatorname{tr}(A^*B)$ is positive definite. They agree on the real subspace of symmetric real matrices, where $A^*=A^{\mathsf T}$ and the entries are real, but not in general.</p>
+<h3 id="the-unit-sphere">The Unit Sphere</h3>
+<p><strong>Definition.</strong> The <strong>unit sphere</strong> of $M_6(\mathbb{C})$ is</p>
+<p>$$
+S^{71}=\{A:\lVert A\rVert_F=1\}.
+$$</p>
+<p><strong>Proposition.</strong> $S^{71}$ is a compact real manifold of dimension $71$; the unit ball is the set $\lVert A\rVert_F\le1$.</p>
+<p><strong>Proof.</strong> It is the Euclidean unit sphere in $\mathbb{R}^{72}$.</p>
+<p><strong>Remark (the topology is the finite-dimensional one).</strong> The Frobenius norm is equivalent to the operator norm and to every other norm on the finite-dimensional space; the metric topology is the standard one. The topological consequences are in <em>The Topology of $M_6(\mathbb{C})$</em>.</p>
+<h2 id="the-real-forms">The Real Forms</h2>
+<h3 id="the-unitary-form">The Unitary Form</h3>
+<p><strong>Theorem.</strong> $\mathfrak{u}(6)$ is a real form of the complex Lie algebra $\mathfrak{gl}_6(\mathbb{C})$:</p>
+<p>$$
+\mathfrak{u}(6)\otimes_{\mathbb{R}}\mathbb{C}\cong\mathfrak{gl}_6(\mathbb{C}),
+\qquad
+X+\mathrm iY\longmapsto X+\mathrm iY .
+$$</p>
+<p><strong>Proof.</strong> Every complex matrix is $X+\mathrm iY$ with $X,Y$ skew-Hermitian: given $A$, set $X=(A-A^*)/2$ and $Y=(A+A^*)/(2\mathrm i)$; both are skew-Hermitian, and $X+\mathrm iY=A$. The real dimension $36+36=72$ matches.</p>
+<p><strong>Corollary (the Cartan decomposition).</strong> The Cartan involution</p>
+<p>$$
+\theta(A)=-A^*
+$$</p>
+<p>is an involution of the real Lie algebra $\mathfrak{gl}_6(\mathbb{C})$, with fixed set $\mathfrak{u}(6)$ and $-1$ eigenspace $\mathrm i\mathfrak{u}(6)$, the Hermitian matrices. Hence</p>
+<p>$$
+\mathfrak{gl}_6(\mathbb{C})=\mathfrak{u}(6)\oplus\mathrm i\mathfrak{u}(6)
+$$</p>
+<p>as real vector spaces, and the symmetric space $GL_6(\mathbb{C})/U(6)$ is the space of positive definite Hermitian matrices.</p>
+<p><strong>Proof.</strong> $\theta$ is an involution because $(A^*)^*=A$; $\theta(X)=X$ iff $X^*=-X$; $\theta(X)=-X$ iff $X^*=X$. The quotient is the symmetric space of the Cartan involution, identified with the positive definite Hermitian matrices by the polar decomposition.</p>
+<h3 id="the-special-unitary-form">The Special Unitary Form</h3>
+<p><strong>Theorem.</strong> $\mathfrak{su}(6)$ is a simple real Lie algebra of dimension $35$, and its complexification is $\mathfrak{sl}_6(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> The complexification of the traceless skew-Hermitian matrices is the traceless complex matrices, because the trace is complex-linear and the decomposition $A=X+\mathrm iY$ preserves tracelessness. Simplicity is the standard simplicity of $\mathfrak{su}(n)$ for $n\ge2$.</p>
+<p><strong>Theorem (the Killing form).</strong> On $\mathfrak{sl}_6(\mathbb{C})$ the Killing form is $12\operatorname{tr}(XY)$; on $\mathfrak{su}(6)$ it is negative definite.</p>
+<p><strong>Proof.</strong> The Killing form of $\mathfrak{gl}_6$ is $12\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, and the second term vanishes on the traceless subalgebra. For $X\in\mathfrak{su}(6)$, $\operatorname{tr}(X^2)=-\operatorname{tr}(X^*X)=-\sum_{ij}\lvert x_{ij}\rvert^2<0$ for $X\neq0$.</p>
+<p><strong>Corollary (the trace form versus the Killing form).</strong> The Hermitian trace form $\operatorname{tr}(X^*Y)$ is positive definite on $\mathfrak{u}(6)$; the Killing form is negative definite on $\mathfrak{su}(6)$. The two differ by the sign and by the scalar $12$.</p>
+<p><strong>Proof.</strong> For skew-Hermitian $X$, $\operatorname{tr}(X^*X)=-\operatorname{tr}(X^2)$; the first is positive definite, the second is the Killing form up to $12$ and is negative definite.</p>
+<h2 id="the-definite-form-and-the-null-cone">The Definite Form and the Null Cone</h2>
+<h3 id="the-isotropic-vectors">The Isotropic Vectors</h3>
+<p><strong>Theorem.</strong> The only isotropic vector of the Hermitian trace form is zero:</p>
+<p>$$
+\langle A,A\rangle=0
+\quad\Longleftrightarrow\quad
+A=0 .
+$$</p>
+<p><strong>Proof.</strong> $\langle A,A\rangle=\sum_{ij}\lvert a_{ij}\rvert^2$; a sum of nonnegative terms vanishes only if every term vanishes.</p>
+<p><strong>Corollary (the null cone).</strong> The null cone of the Hermitian form is the single point $\{0\}$. There is no nonzero isotropic vector, no null cone of positive dimension, and no zero divisor in the metric sense.</p>
+<p><strong>Proof.</strong> The null cone is the zero set of the quadratic form $\langle A,A\rangle$; by the theorem it is $\{0\}$.</p>
+<h3 id="the-contrast-with-the-biquaternion-algebra">The Contrast with the Biquaternion Algebra</h3>
+<p><strong>Theorem (the biquaternion null cone).</strong> In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, the conjugation is $\mathbb{C}$-linear, and the trace form</p>
+<p>$$
+\langle A,B\rangle_{\mathbb{B}}=\operatorname{tr}(A^*B)
+$$</p>
+<p>is indefinite. Its isotropic cone is the zero-divisor cone</p>
+<p>$$
+\{A\in\mathbb{B}:A\neq0,\ \det A=0\},
+$$</p>
+<p>which has real dimension $6$ in the eight-dimensional algebra.</p>
+<p><strong>Proof.</strong> The biquaternion conjugation fixes the complex scalars and negates the quaternionic vector part; it is $\mathbb{C}$-linear, not conjugate-linear. The norm $N(A)=\det A$ is the quadratic form of the conjugation, $A^*A=N(A)I_2$, so $\operatorname{tr}(A^*A)=2N(A)$; the isotropic vectors are the zero divisors. The zero-divisor cone is the determinantal variety $\det=0$ in $M_2(\mathbb{C})$, of complex dimension $3$ and real dimension $6$.</p>
+<p><strong>Corollary (the difference).</strong> The standard involution of $M_6(\mathbb{C})$ is conjugate-linear and its trace form is positive definite; the biquaternion conjugation is $\mathbb{C}$-linear and its trace form is indefinite. <strong>The definite form has the single isotropic vector $0$; the biquaternion form has a genuine null cone.</strong></p>
+<p><strong>Proof.</strong> The conjugate-linear involution gives $\operatorname{tr}(A^*A)=\sum\lvert a_{ij}\rvert^2$; the $\mathbb{C}$-linear one gives $\operatorname{tr}(A^*A)=2\det A$, which changes sign and vanishes on the zero divisors.</p>
+<p><strong>Remark (the two real forms).</strong> The real Lie algebra $\mathfrak{u}(6)$ is a real form of $\mathfrak{gl}_6(\mathbb{C})$; the real associative algebra $M_6(\mathbb{R})$ is a real form of $M_6(\mathbb{C})$ under the conjugation $A\mapsto\overline A$, not under $*$. The Hermitian structure uses $*$; the real structure uses the bar. The two involutions commute, and their composition is the transpose.</p>
+<p><strong>Proof.</strong> $\overline{\overline A}=A$ and $A\mapsto\overline A$ is $\mathbb{C}$-antilinear; its fixed space is $M_6(\mathbb{R})$, of real dimension $36$. The composition $A\mapsto\overline{A}^{\mathsf T}=A^*$ is the conjugate transpose.</p>
+<h2 id="summary">Summary</h2>
+<p>The conjugate transpose is a conjugate-linear involution. Its Hermitian fixed points have real dimension $36$; its skew-Hermitian antiefixed points form the Lie algebra $\mathfrak{u}(6)$ of dimension $36$, with the traceless ideal $\mathfrak{su}(6)$ of dimension $35$.</p>
+<p>$$
+\boxed{\ \langle A,B\rangle=\operatorname{tr}(A^*B),\qquad \langle A,A\rangle=\sum_{ij}\lvert a_{ij}\rvert^2,\qquad \langle A,A\rangle=0\iff A=0 .\ }
+$$</p>
+<p>The form is positive definite and defines the Frobenius norm $\lVert A\rVert_F^2=\sum_{ij}\lvert a_{ij}\rvert^2$; the unit sphere is $S^{71}$. The real part of the form is the Euclidean inner product of the $72$ real coordinates; the imaginary part is symplectic.</p>
+<p>The real forms are</p>
+<p>$$
+\mathfrak{u}(6)=\{X:X^*=-X\},\qquad
+\mathfrak{su}(6)=\{X:X^*=-X,\ \operatorname{tr}X=0\},
+$$</p>
+<p>of dimensions $36$ and $35$; $\mathfrak{u}(6)\otimes\mathbb{C}=\mathfrak{gl}_6(\mathbb{C})$, and $\mathfrak{su}(6)\otimes\mathbb{C}=\mathfrak{sl}_6(\mathbb{C})$. The Cartan decomposition is $\mathfrak{gl}_6=\mathfrak{u}(6)\oplus\mathrm i\mathfrak{u}(6)$.</p>
+<p>The definite form has no nonzero isotropic vector. The biquaternion algebra, whose conjugation is $\mathbb{C}$-linear, has the zero-divisor null cone of real dimension $6$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conjugate transpose</td>
+<td>$A^*=\overline{A}^{\mathsf T}$, conjugate-linear involution</td>
+</tr>
+<tr>
+<td>Hermitian matrices</td>
+<td>real dimension $36$</td>
+</tr>
+<tr>
+<td>Skew-Hermitian matrices</td>
+<td>real dimension $36$</td>
+</tr>
+<tr>
+<td>Unitary group</td>
+<td>$U(6)$, dimension $36$</td>
+</tr>
+<tr>
+<td>Special unitary group</td>
+<td>$SU(6)$, dimension $35$</td>
+</tr>
+<tr>
+<td>Trace form</td>
+<td>$\operatorname{tr}(A^*B)$, positive definite</td>
+</tr>
+<tr>
+<td>Frobenius norm</td>
+<td>$\lVert A\rVert_F^2=\sum\lvert a_{ij}\rvert^2$</td>
+</tr>
+<tr>
+<td>Isotropic vectors</td>
+<td>only $0$</td>
+</tr>
+<tr>
+<td>Biquaternion null cone</td>
+<td>zero divisors, real dimension $6$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^*$</td>
+<td>the conjugate transpose $\overline{A}^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Herm}_6$</td>
+<td>the Hermitian matrices, real dimension $36$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(6)$</td>
+<td>the skew-Hermitian Lie algebra, dimension $36$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(6)$</td>
+<td>the traceless skew-Hermitian Lie algebra, dimension $35$</td>
+</tr>
+<tr>
+<td>$\langle A,B\rangle$</td>
+<td>the Hermitian trace form $\operatorname{tr}(A^*B)$</td>
+</tr>
+<tr>
+<td>$\lVert A\rVert_F$</td>
+<td>the Frobenius norm</td>
+</tr>
+<tr>
+<td>$\theta(A)=-A^*$</td>
+<td>the Cartan involution</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>, for the coordinates and the complex bilinear trace pairing.</li>
+<li><a href="the-polar-decomposition-of-m6c.html">The Polar Decomposition</a>, for the Cartan decomposition and the positive Hermitian matrices.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m6c.html">The Exponential and the Lie Group</a>, for the exponential $\mathfrak{u}(6)\to U(6)$.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the adjoint action of $U(6)$ and $PU(6)$.</li>
+<li><a href="the-topology-of-m6c.html">The Topology of $M_6(\mathbb{C})$</a>, for the unit sphere and the Frobenius metric.</li>
+<li><a href="the-biquaternion-algebra-and-its-vector-spaces.html">The Biquaternion Algebra and Its Vector Spaces</a>, for the biquaternion conjugation and its null cone.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-the-biquaternion-algebra.html">The Involution and the Hermitian Structure of the Biquaternion Algebra</a>, for the comparison.</li>
+<li><a href="hermitian-forms-and-the-unitary-group.html">Hermitian Forms and the Unitary Group</a>, for the general theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

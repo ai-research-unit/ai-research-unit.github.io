@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sextic and the Spectral Strata — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-sextic-and-the-spectral-strata"><strong>The Sextic and the Spectral Strata</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every $A\in M_6(\mathbb{C})$ has a characteristic polynomial of degree six,</p>
+<p>$$
+\chi_A(t)=\det(tI_6-A)=t^6-s_1t^5+s_2t^4-s_3t^3+s_4t^2-s_5t+s_6 .
+$$</p>
+<p>The six roots, counted with multiplicity, are the eigenvalues. Their multiplicity pattern is a partition of $6$, and the partitions stratify the algebra. The stratum of simple spectrum is open and dense, of dimension $36$; the discriminant is the codimension-one stratum of a repeated root; the smallest stratum is the single-eigenvalue locus, of dimension $31$.</p>
+<p>On the simple stratum the six spectral projectors are the Lagrange projectors of the sextic. They are polynomials in $A$, idempotent, of rank one, and they sum to the identity. At a repeated root they degenerate: the individual projectors have poles along the discriminant, the cluster projector onto a generalized eigenspace extends, and the nilpotent part is the residue.</p>
+<p>The article assumes the root and its Lagrange projectors of <em>Roots of Unity and the Lagrange Idempotents</em> and the algebra of <em>The Matrix Algebra $M_6(\mathbb{C})$</em>. It uses no form and no topology. The spectral theorem for the Hermitian case is <em>Spectral Theory and the Spectral Projectors</em>; the exponential is <em>The Exponential and the Lie Group</em>.</p>
+<h2 id="the-characteristic-sextic">The Characteristic Sextic</h2>
+<h3 id="the-polynomial">The Polynomial</h3>
+<p><strong>Definition.</strong> The <strong>characteristic polynomial</strong> of $A$ is</p>
+<p>$$
+\chi_A(t)=\det(tI_6-A).
+$$</p>
+<p><strong>Proposition.</strong> $\chi_A$ is monic of degree six, and</p>
+<p>$$
+\chi_A(t)=t^6-\operatorname{tr}(A)t^5+\cdots+(-1)^6\det A .
+$$</p>
+<p><strong>Proof.</strong> The determinant is multilinear in the six columns of $tI_6-A$; the term of degree six is $t^6$, the term of degree five is $-t^5\operatorname{tr}A$ (one diagonal entry $-A_{ii}$ and five factors $t$), and the constant term is $\det(-A)=(-1)^6\det A$.</p>
+<h3 id="the-coefficients">The Coefficients</h3>
+<p><strong>Definition.</strong> The <strong>elementary symmetric functions</strong> of $A$ are the coefficients</p>
+<p>$$
+\chi_A(t)=t^6-s_1t^5+s_2t^4-s_3t^3+s_4t^2-s_5t+s_6 .
+$$</p>
+<p><strong>Theorem (Newton's identities).</strong> Let $p_k=\operatorname{tr}(A^k)$. Then</p>
+<p>$$
+s_1=p_1,\qquad
+s_2=\frac{p_1^2-p_2}{2},\qquad
+s_3=\frac{p_1^3-3p_1p_2+2p_3}{6},
+$$</p>
+<p>and in general $ks_k=\sum_{i=1}^{k}(-1)^{i-1}s_{k-i}p_i$, with $s_0=1$.</p>
+<p><strong>Proof.</strong> The eigenvalues $\lambda_1,\dots,\lambda_6$ satisfy $p_k=\sum_i\lambda_i^k$, and the elementary symmetric functions $s_k$ of the eigenvalues are the coefficients of $\prod_i(t-\lambda_i)$. Newton's identities are the standard relations between the power sums and the elementary symmetric functions; they follow by differentiating $\log\prod_i(1-\lambda_it)$.</p>
+<p><strong>Corollary.</strong> $s_6=\det A$, and $s_5=\operatorname{tr}(\operatorname{adj}A)$, the sum of the six principal $5\times5$ minors.</p>
+<p><strong>Proof.</strong> The constant term is $\prod_i\lambda_i=\det A$. The coefficient of $t$ is $(-1)^5$ times the sum of the principal $5\times5$ minors, which is $\operatorname{tr}(\operatorname{adj}A)$.</p>
+<p><strong>Theorem (Cayley–Hamilton).</strong> $\chi_A(A)=0$.</p>
+<p><strong>Proof.</strong> The adjugate identity $(tI-A)\operatorname{adj}(tI-A)=\chi_A(t)I$ is an identity of polynomials with matrix coefficients; evaluating at $t=A$ gives $0=\chi_A(A)$.</p>
+<h3 id="the-spectrum">The Spectrum</h3>
+<p><strong>Theorem.</strong> Over $\mathbb{C}$,</p>
+<p>$$
+\chi_A(t)=\prod_{i=1}^{6}(t-\lambda_i),
+$$</p>
+<p>where $\lambda_1,\dots,\lambda_6$ are the eigenvalues counted with algebraic multiplicity. Moreover</p>
+<p>$$
+\operatorname{tr}A=\sum_i\lambda_i,\qquad
+\det A=\prod_i\lambda_i .
+$$</p>
+<p><strong>Proof.</strong> The fundamental theorem of algebra splits the sextic; the trace and determinant are the coefficients $s_1$ and $s_6$.</p>
+<p><strong>Definition.</strong> The <strong>spectrum</strong> of $A$ is the multiset $\{\lambda_1,\dots,\lambda_6\}$. Its <strong>multiplicity pattern</strong> is the partition $\lambda$ of $6$ whose parts are the multiplicities of the distinct eigenvalues, written in decreasing order.</p>
+<h3 id="the-discriminant">The Discriminant</h3>
+<p><strong>Definition.</strong> The <strong>discriminant</strong> of $A$ is</p>
+<p>$$
+\Delta(A)=\prod_{1\le i<j\le6}(\lambda_i-\lambda_j)^2 .
+$$</p>
+<p><strong>Theorem.</strong> $\Delta$ is a polynomial in the entries of $A$ (equivalently, in the coefficients $s_1,\dots,s_6$), and</p>
+<p>$$
+\Delta(A)=0
+\quad\Longleftrightarrow\quad
+\chi_A\text{ has a repeated root}.
+$$</p>
+<p><strong>Proof.</strong> The discriminant of a monic polynomial is a polynomial in its coefficients; expressing the coefficients as functions of the entries gives a polynomial in the entries. It vanishes exactly when two roots coincide.</p>
+<p><strong>Corollary (the simple stratum).</strong> The set</p>
+<p>$$
+U=\{\Delta(A)\neq0\}
+$$</p>
+<p>is open and dense in $M_6(\mathbb{C})$, of dimension $36$.</p>
+<p><strong>Proof.</strong> $\Delta$ is not identically zero: the diagonal matrix $\operatorname{diag}(1,2,3,4,5,6)$ has $\Delta=\prod_{i<j}(i-j)^2\neq0$. The complement of a nonzero polynomial is open and dense, and a nonempty open subset of $\mathbb{C}^{36}$ has dimension $36$.</p>
+<p><strong>Remark.</strong> The root set of <em>Roots of Unity and the Lagrange Idempotents</em> is not $U$: it is the subset of $U$ on which the spectrum is exactly the six sixth roots. It has dimension $30$, not $36$; the difference of six is the freedom of the six eigenvalues, which the root fixes.</p>
+<h2 id="the-strata">The Strata</h2>
+<h3 id="the-partitions-of-six">The Partitions of Six</h3>
+<p>The multiplicity patterns are the eleven partitions of $6$:</p>
+<p>$$
+\begin{array}{llll}
+(1,1,1,1,1,1), & (2,1,1,1,1), & (2,2,1,1), & (2,2,2),\\
+(3,1,1,1), & (3,2,1), & (3,3), & (4,1,1),\\
+(4,2), & (5,1), & (6). &
+\end{array}
+$$</p>
+<p><strong>Definition.</strong> For a partition $\lambda=(m_1,\dots,m_r)$ of $6$ with $m_1\ge\cdots\ge m_r\ge1$, the <strong>stratum</strong> $S_\lambda$ is the set of matrices whose distinct eigenvalues have multiplicities $m_1,\dots,m_r$.</p>
+<p><strong>Example.</strong> $S_{(1,1,1,1,1,1)}=U$ is the simple stratum. $S_{(2,1,1,1,1)}$ is the discriminant locus minus the strata with a higher multiplicity. $S_{(6)}$ is the set of matrices with a single eigenvalue.</p>
+<h3 id="the-dimension-of-a-stratum">The Dimension of a Stratum</h3>
+<p><strong>Theorem.</strong> For a partition $\lambda$ of $6$ with $r$ parts,</p>
+<p>$$
+\dim S_\lambda=30+r=36-(6-r).
+$$</p>
+<p><strong>Proof.</strong> The characteristic map $\chi:M_6\to\mathbb{C}^6$, $A\mapsto(s_1,\dots,s_6)$, has image of dimension $r$ on $S_\lambda$: the coefficients are the elementary symmetric functions of the $r$ distinct eigenvalues, which are $r$ free parameters. The fibre over a fixed polynomial with the root multiplicities $\lambda$ is the set of matrices with that characteristic polynomial. The fibre contains the conjugacy class of a matrix with one Jordan block for each distinct eigenvalue (the regular element); that orbit has dimension $36-6=30$, because the centralizer of a cyclic element is the six-dimensional algebra of polynomials in the element. The regular orbit is open in the fibre, so the fibre has dimension $30$, and the family of fibres is locally trivial over the space of polynomials with the fixed multiplicity pattern. The total dimension is $30+r$.</p>
+<p><strong>Corollary (the table).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Partition</th>
+<th>$r$</th>
+<th>$\dim S_\lambda$</th>
+<th>Codimension</th>
+<th>Representative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(1,1,1,1,1,1)$</td>
+<td>$6$</td>
+<td>$36$</td>
+<td>$0$</td>
+<td>$\operatorname{diag}(1,2,3,4,5,6)$</td>
+</tr>
+<tr>
+<td>$(2,1,1,1,1)$</td>
+<td>$5$</td>
+<td>$35$</td>
+<td>$1$</td>
+<td>$\operatorname{diag}(1,1,2,3,4,5)$</td>
+</tr>
+<tr>
+<td>$(2,2,1,1)$</td>
+<td>$4$</td>
+<td>$34$</td>
+<td>$2$</td>
+<td>$\operatorname{diag}(1,1,2,2,3,4)$</td>
+</tr>
+<tr>
+<td>$(2,2,2)$</td>
+<td>$3$</td>
+<td>$33$</td>
+<td>$3$</td>
+<td>$\operatorname{diag}(1,1,2,2,3,3)$</td>
+</tr>
+<tr>
+<td>$(3,1,1,1)$</td>
+<td>$4$</td>
+<td>$34$</td>
+<td>$2$</td>
+<td>$\operatorname{diag}(1,1,1,2,3,4)$</td>
+</tr>
+<tr>
+<td>$(3,2,1)$</td>
+<td>$3$</td>
+<td>$33$</td>
+<td>$3$</td>
+<td>$\operatorname{diag}(1,1,1,2,2,3)$</td>
+</tr>
+<tr>
+<td>$(3,3)$</td>
+<td>$2$</td>
+<td>$32$</td>
+<td>$4$</td>
+<td>$\operatorname{diag}(1,1,1,2,2,2)$</td>
+</tr>
+<tr>
+<td>$(4,1,1)$</td>
+<td>$3$</td>
+<td>$33$</td>
+<td>$3$</td>
+<td>$\operatorname{diag}(1,1,1,1,2,3)$</td>
+</tr>
+<tr>
+<td>$(4,2)$</td>
+<td>$2$</td>
+<td>$32$</td>
+<td>$4$</td>
+<td>$\operatorname{diag}(1,1,1,1,2,2)$</td>
+</tr>
+<tr>
+<td>$(5,1)$</td>
+<td>$2$</td>
+<td>$32$</td>
+<td>$4$</td>
+<td>$\operatorname{diag}(1,1,1,1,1,2)$</td>
+</tr>
+<tr>
+<td>$(6)$</td>
+<td>$1$</td>
+<td>$31$</td>
+<td>$5$</td>
+<td>$\operatorname{diag}(1,1,1,1,1,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Substitute $r$ in $30+r$; the codimension is $36-(30+r)=6-r$. The representatives have the required eigenvalue multiplicities.</p>
+<h3 id="the-closure-order">The Closure Order</h3>
+<p><strong>Theorem.</strong> $S_\mu$ meets the closure of $S_\lambda$ if and only if $\mu$ is coarser than $\lambda$, that is, if and only if $\lambda$ refines $\mu$. In particular the simple stratum is open and dense, and the closure of the discriminant is the union of all strata with a repeated eigenvalue.</p>
+<p><strong>Proof.</strong> Coalescing eigenvalues is a specialization: a matrix in $S_\lambda$ can be deformed to a matrix in $S_\mu$ exactly when each part of $\mu$ is a sum of parts of $\lambda$. The closure is the union of the strata obtained by such coalescences. The simple partition refines every partition, so its closure is the whole algebra.</p>
+<p><strong>Corollary (the discriminant).</strong> The discriminant is the closure of the stratum $S_{(2,1,1,1,1)}$, and that stratum is its open dense part, of dimension $35$.</p>
+<p><strong>Proof.</strong> A repeated root means some multiplicity is at least two; the generic repeated-root matrix has exactly one double root and four simple roots, which is the partition $(2,1,1,1,1)$.</p>
+<h3 id="the-root-set-inside-the-strata">The Root Set Inside the Strata</h3>
+<p><strong>Proposition.</strong> The root set is the fibre of the characteristic map over the polynomial $t^6-1$:</p>
+<p>$$
+\{H:H^6=I_6,\ \text{six distinct eigenvalues}\}
+=\chi^{-1}(t^6-1)\cap U .
+$$</p>
+<p>It has dimension $30$, and it lies in the simple stratum.</p>
+<p><strong>Proof.</strong> $H^6=I$ with simple spectrum means the eigenvalues are the six distinct sixth roots, so $\chi_H=t^6-1$. Conversely, a matrix with characteristic polynomial $t^6-1$ and simple spectrum has eigenvalues the six sixth roots, hence satisfies $H^6=I$ (it is diagonalizable with those eigenvalues). The fibre over $t^6-1$ is the conjugacy class of $\operatorname{diag}(\zeta_1,\dots,\zeta_6)$, of dimension $30$.</p>
+<p><strong>Remark (the six parameters).</strong> The simple stratum has dimension $36$; the root set has dimension $30$. The difference is the six eigenvalues: on $U$ the characteristic map is a submersion onto the six-dimensional space of monic sextics with simple roots, and the root set is the fibre over one point. <strong>The root fixes the spectrum; the stratum forgets it.</strong></p>
+<h2 id="the-cyclic-element-and-the-torus">The Cyclic Element and the Torus</h2>
+<h3 id="cyclic-elements">Cyclic Elements</h3>
+<p><strong>Definition.</strong> An element $A\in M_6(\mathbb{C})$ is <strong>cyclic</strong> if there is a vector $v\in\mathbb{C}^6$ such that</p>
+<p>$$
+v,\ Av,\ A^2v,\ \dots,\ A^5v
+$$</p>
+<p>is a basis of $\mathbb{C}^6$. Equivalently, the minimal polynomial of $A$ has degree six.</p>
+<p><strong>Proposition.</strong> $A$ is cyclic if and only if the centralizer of $A$ in $M_6$ is the algebra $\mathbb{C}[A]$ of polynomials in $A$, of dimension six:</p>
+<p>$$
+Z(A)=\{B:AB=BA\}=\mathbb{C}[A]\cong\mathbb{C}[t]/(m_A(t)).
+$$</p>
+<p><strong>Proof.</strong> If $A$ is cyclic, the basis $v,Av,\dots,A^5v$ identifies $\mathbb{C}^6$ with $\mathbb{C}[t]/(m_A)$ as a module over $\mathbb{C}[t]$, and the commuting endomorphisms are the multiplications by polynomials, that is $\mathbb{C}[A]$. Conversely, if the centralizer is six-dimensional, the double centralizer theorem gives that $\mathbb{C}[A]$ is its own centralizer, which forces the minimal polynomial to have degree six.</p>
+<p><strong>Corollary (the cyclic centralizer).</strong> For a cyclic element with simple spectrum,</p>
+<p>$$
+Z(A)\cong\mathbb{C}^6,
+\qquad
+Z(A)\cap GL_6\cong(\mathbb{C}^\times)^6,
+\qquad
+Z(A)\cap PGL_6\cong(\mathbb{C}^\times)^5 .
+$$</p>
+<p>The first is the torus of dimension six, the second its unit group, the third the gauge torus of dimension five.</p>
+<p><strong>Proof.</strong> If the spectrum is simple, $A$ is diagonalizable and $\mathbb{C}[A]$ is the algebra of diagonal matrices in the eigenbasis, isomorphic to $\mathbb{C}^6$. Its units are the diagonal matrices with nonzero entries, $(\mathbb{C}^\times)^6$. The projective quotient removes the overall scalar, leaving $(\mathbb{C}^\times)^5$.</p>
+<p><strong>Corollary (the root).</strong> For the root $H$ of <em>Roots of Unity and the Lagrange Idempotents</em>, the centralizer in $GL_6$ is the maximal torus $(\mathbb{C}^\times)^6$, of dimension six, and the gauge is its projective quotient, of dimension five.</p>
+<p><strong>Proof.</strong> $H$ has simple spectrum and $\chi_H=t^6-1$, so it is cyclic. Its centralizer is the diagonal torus in the eigenbasis.</p>
+<h3 id="the-orbit">The Orbit</h3>
+<p><strong>Theorem.</strong> The conjugacy class of a cyclic element has dimension $30$:</p>
+<p>$$
+\dim(GL_6\cdot A)=36-6=30 .
+$$</p>
+<p><strong>Proof.</strong> The orbit–stabilizer theorem: the stabilizer is the centralizer, of dimension six.</p>
+<p><strong>Corollary.</strong> The simple stratum is the union of the orbits of the cyclic elements, each of dimension $30$; the eigenvalues are the six parameters of the orbit.</p>
+<p><strong>Proof.</strong> A matrix with simple spectrum is cyclic, and its orbit is the set of matrices with the same spectrum, of dimension $30$. The simple stratum is the union over the six-dimensional space of spectra.</p>
+<p><strong>Remark (the non-cyclic centralizer).</strong> A non-cyclic element has a centralizer of dimension greater than six. The extreme case is the scalar matrix $\lambda I_6$, whose centralizer is all of $M_6$, of dimension $36$. The dimension of the centralizer measures the degeneracy of the spectrum: it is six exactly on the cyclic elements, and it grows as the Jordan structure coarsens.</p>
+<h2 id="the-spectral-projectors">The Spectral Projectors</h2>
+<h3 id="the-lagrange-formula">The Lagrange Formula</h3>
+<p><strong>Theorem.</strong> Let $A$ have simple spectrum $\lambda_1,\dots,\lambda_6$. Then the six matrices</p>
+<p>$$
+P_i=\prod_{j\neq i}\frac{A-\lambda_jI_6}{\lambda_i-\lambda_j},
+\qquad i=1,\dots,6,
+$$</p>
+<p>satisfy</p>
+<p>$$
+P_i^2=P_i,\qquad
+P_iP_j=\delta_{ij}P_i,\qquad
+\sum_{i=1}^{6}P_i=I_6,\qquad
+A=\sum_{i=1}^{6}\lambda_iP_i,
+$$</p>
+<p>and $\operatorname{rank}P_i=1$, $\operatorname{tr}P_i=1$.</p>
+<p><strong>Proof.</strong> The polynomial $L_i(t)=\prod_{j\neq i}(t-\lambda_j)/(\lambda_i-\lambda_j)$ is the Lagrange interpolation polynomial with $L_i(\lambda_j)=\delta_{ij}$. On the eigenline of $\lambda_j$, $L_i(A)$ acts by $L_i(\lambda_j)=\delta_{ij}$; so $P_i$ is the projection onto the $i$-th eigenline along the sum of the others. The spectral identity $A=\sum_i\lambda_iP_i$ holds on each eigenvector.</p>
+<p><strong>Corollary (the projectors are polynomials).</strong> The $P_i$ are polynomials in $A$ of degree at most five, with coefficients that are symmetric functions of the eigenvalues.</p>
+<p><strong>Proof.</strong> The Lagrange polynomial has degree five in $t$; substituting $A$ gives a polynomial in $A$ of degree at most five.</p>
+<h3 id="the-residue-formula">The Residue Formula</h3>
+<p><strong>Theorem.</strong> Let $\gamma_i$ be a small positively oriented circle around $\lambda_i$, separating it from the other eigenvalues. Then</p>
+<p>$$
+P_i=\frac{1}{2\pi\mathrm i}\oint_{\gamma_i}(zI_6-A)^{-1}\,dz .
+$$</p>
+<p><strong>Proof.</strong> In the eigenbasis, the resolvent is $\operatorname{diag}(1/(z-\lambda_1),\dots,1/(z-\lambda_6))$; the residue at $z=\lambda_i$ is the coordinate projector $P_i$. The contour integral picks the residue.</p>
+<p><strong>Corollary (the cluster projector).</strong> For any $A$, not necessarily with simple spectrum, and for a contour $\gamma$ enclosing a cluster of eigenvalues and no others,</p>
+<p>$$
+\Pi_\gamma=\frac{1}{2\pi\mathrm i}\oint_\gamma(zI_6-A)^{-1}\,dz
+$$</p>
+<p>is an idempotent, the spectral projector onto the generalized eigenspace of the cluster. For a simple spectrum and a contour around one eigenvalue, $\Pi_\gamma=P_i$.</p>
+<p><strong>Proof.</strong> The resolvent is holomorphic off the spectrum; the contour integral of a resolvent is idempotent (the residue calculus gives $\Pi_\gamma^2=\Pi_\gamma$), it commutes with $A$, and its image is the sum of the generalized eigenspaces of the eigenvalues inside $\gamma$.</p>
+<p><strong>Corollary (the sum of the projectors).</strong> If $\gamma$ encloses all six eigenvalues, $\Pi_\gamma=I_6$.</p>
+<p><strong>Proof.</strong> The resolvent at infinity is $z^{-1}I+O(z^{-2})$, so the residue at infinity is $I$; the sum of all residues is zero, hence the integral over a large circle is $I$.</p>
+<h3 id="the-limits-at-a-repeated-root">The Limits at a Repeated Root</h3>
+<p><strong>Theorem (the degeneration).</strong> Let $A(\varepsilon)$ be a holomorphic family of matrices, and suppose that at $\varepsilon=0$ two eigenvalues coalesce. Then:</p>
+<ul>
+<li>the individual Lagrange projectors $P_i(\varepsilon)$ may have poles of order one at $\varepsilon=0$;</li>
+<li>the sum of the projectors over the coalescing cluster has a holomorphic limit, the spectral projector onto the generalized eigenspace;</li>
+<li>the weighted sum $\sum_i\lambda_i(\varepsilon)P_i(\varepsilon)=A(\varepsilon)$ has the limit $A(0)$, and the nilpotent part of $A(0)$ is the limit of the weighted differences.</li>
+</ul>
+<p><strong>Proof.</strong> The projectors are rational functions of $A$ with denominators $\lambda_i-\lambda_j$; when two eigenvalues coalesce, the denominators vanish. The cluster sum is the contour integral around the cluster, which is holomorphic as long as the cluster stays separated from the other eigenvalues. The spectral identity is an identity for every $\varepsilon$, so its limit is $A(0)$.</p>
+<p><strong>Example (the Jordan block).</strong> Consider the $2\times2$ family</p>
+<p>$$
+A(\varepsilon)=\begin{pmatrix}\lambda+\varepsilon&1\\0&\lambda\end{pmatrix},
+\qquad
+\chi_{A(\varepsilon)}(t)=(t-\lambda-\varepsilon)(t-\lambda).
+$$</p>
+<p>The eigenvalues are $\lambda+\varepsilon$ and $\lambda$; the eigenvectors are $e_1$ and $(1,-\varepsilon)$. The Lagrange projectors are</p>
+<p>$$
+P_+(\varepsilon)=\begin{pmatrix}1&1/\varepsilon\\0&0\end{pmatrix},
+\qquad
+P_-(\varepsilon)=\begin{pmatrix}0&-1/\varepsilon\\0&1\end{pmatrix}.
+$$</p>
+<p>Both have a pole at $\varepsilon=0$; their sum is $I_2$ for every $\varepsilon$, and the weighted sum is</p>
+<p>$$
+(\lambda+\varepsilon)P_+(\varepsilon)+\lambda P_-(\varepsilon)
+=\begin{pmatrix}\lambda+\varepsilon&1\\0&\lambda\end{pmatrix}=A(\varepsilon),
+$$</p>
+<p>which tends to $A(0)=\lambda I_2+E_{12}$. The cluster projector $P_++P_-=I_2$ is the spectral projector of $A(0)$ onto its generalized eigenspace, which is the whole space. The nilpotent part $E_{12}$ is the limit of $\varepsilon P_+(\varepsilon)$.</p>
+<p><strong>Corollary (no continuous eigenbasis).</strong> In the example, the eigenvectors $e_1$ and $(1,-\varepsilon)$ can be chosen continuously, but they become linearly dependent at $\varepsilon=0$; the normalized eigenvectors both tend to $e_1$. There is no continuous basis of eigenvectors through the repeated root.</p>
+<p><strong>Remark (the monodromy).</strong> The eigenvalues are algebraic functions of $A$, not rational; a loop around the discriminant permutes them. The unordered set of spectral projectors is single-valued, while a projector labeled by "the eigenvalue that started at $\lambda_i$" is not. On the simple stratum each $P_i$ is a polynomial in $A$ once the eigenvalue $\lambda_i$ is named; the monodromy acts on the naming, not on the unordered set of projectors.</p>
+<h2 id="the-degeneration-of-the-root">The Degeneration of the Root</h2>
+<p><strong>Proposition.</strong> The root set is the simple-spectrum part of the hypersurface $H^6=I_6$. At a matrix with a repeated sixth root, the Lagrange projectors are not defined; the spectral projectors of the distinct eigenvalues are the cluster projectors, and the rank-one projectors of the repeated eigenvalue do not exist.</p>
+<p><strong>Proof.</strong> The Lagrange formula requires the six eigenvalues to be distinct. If two are equal, the denominators vanish. The contour integral around the repeated eigenvalue gives the projector onto its generalized eigenspace, of rank equal to the multiplicity; the individual rank-one projectors would require a splitting of that eigenspace, which is not canonical.</p>
+<p><strong>Corollary (the centralizer grows).</strong> At a repeated root, the centralizer of $H$ in $GL_6$ is strictly larger than the maximal torus, and the orbit of $H$ has dimension strictly less than $30$.</p>
+<p><strong>Proof.</strong> A repeated eigenvalue gives a nontrivial generalized eigenspace, and there are additional commuting endomorphisms mixing the repeated eigenlines; the centralizer contains the torus and more. The orbit dimension is $36$ minus the centralizer dimension.</p>
+<p><strong>Example.</strong> $H=\operatorname{diag}(1,1,\zeta,\zeta^2,\zeta^3,\zeta^4)$ satisfies $H^6=I_6$ but has a repeated eigenvalue $1$. Its centralizer contains $GL_2$ on the first two coordinates, of dimension four, in addition to the torus on the other four; the orbit is smaller than $30$. The two Lagrange projectors of the eigenvalue $1$ do not exist; the spectral projector onto the $1$-eigenspace is the rank-two projector onto the first two coordinates.</p>
+<p><strong>Remark (the root set is not closed).</strong> The root set is open in $H^6=I_6$ but not closed in $M_6$: a limit of roots can have a repeated eigenvalue. The boundary is the discriminant intersected with the hypersurface. <strong>The root is a simple-spectrum object; the repeated-root matrices are its degeneration.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The characteristic sextic of $A\in M_6(\mathbb{C})$ is</p>
+<p>$$
+\chi_A(t)=t^6-s_1t^5+s_2t^4-s_3t^3+s_4t^2-s_5t+s_6,
+\qquad
+s_1=\operatorname{tr}A,\quad s_6=\det A .
+$$</p>
+<p>Its multiplicity pattern is a partition of $6$. The stratum of a partition with $r$ parts has dimension $30+r$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Partition</th>
+<th>$r$</th>
+<th>Dimension</th>
+<th>Codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(1^6)$</td>
+<td>$6$</td>
+<td>$36$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(2,1^4)$</td>
+<td>$5$</td>
+<td>$35$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$(2,2,1,1)$</td>
+<td>$4$</td>
+<td>$34$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$(3,1,1,1)$</td>
+<td>$4$</td>
+<td>$34$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$(2,2,2)$</td>
+<td>$3$</td>
+<td>$33$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$(3,2,1)$</td>
+<td>$3$</td>
+<td>$33$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$(4,1,1)$</td>
+<td>$3$</td>
+<td>$33$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$(3,3)$</td>
+<td>$2$</td>
+<td>$32$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$(4,2)$</td>
+<td>$2$</td>
+<td>$32$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$(5,1)$</td>
+<td>$2$</td>
+<td>$32$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$(6)$</td>
+<td>$1$</td>
+<td>$31$</td>
+<td>$5$</td>
+</tr>
+</tbody>
+</table></div>
+<p>$$
+\boxed{\ \dim S_\lambda=30+r,\qquad \text{simple spectrum }36,\qquad \text{one root }31 .\ }
+$$</p>
+<p>A cyclic element has centralizer $\mathbb{C}[A]\cong\mathbb{C}^6$, the maximal torus; its orbit has dimension $30$. The root $H$ is cyclic, and its gauge is the projective centralizer of dimension $5$.</p>
+<p>On the simple stratum the spectral projectors are the Lagrange projectors $P_i=\prod_{j\neq i}(A-\lambda_j)/(\lambda_i-\lambda_j)$; at a repeated root the individual projectors have poles, the cluster projectors extend, and the nilpotent part is the residue.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Characteristic sextic</td>
+<td>$\chi_A$, degree $6$</td>
+</tr>
+<tr>
+<td>Strata</td>
+<td>$11$ partitions of $6$</td>
+</tr>
+<tr>
+<td>Simple stratum</td>
+<td>open dense, dimension $36$</td>
+</tr>
+<tr>
+<td>Discriminant</td>
+<td>codimension $1$, $S_{(2,1^4)}$</td>
+</tr>
+<tr>
+<td>Cyclic centralizer</td>
+<td>$\mathbb{C}^6$, dimension $6$</td>
+</tr>
+<tr>
+<td>Cyclic orbit</td>
+<td>dimension $30$</td>
+</tr>
+<tr>
+<td>Root set</td>
+<td>fibre over $t^6-1$, dimension $30$</td>
+</tr>
+<tr>
+<td>Projectors</td>
+<td>Lagrange on $U$, cluster at the discriminant</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi_A(t)$</td>
+<td>the characteristic sextic $\det(tI_6-A)$</td>
+</tr>
+<tr>
+<td>$s_1,\dots,s_6$</td>
+<td>the coefficients, elementary symmetric functions of the eigenvalues</td>
+</tr>
+<tr>
+<td>$\lambda_1,\dots,\lambda_6$</td>
+<td>the eigenvalues with multiplicity</td>
+</tr>
+<tr>
+<td>$\Delta(A)$</td>
+<td>the discriminant $\prod_{i<j}(\lambda_i-\lambda_j)^2$</td>
+</tr>
+<tr>
+<td>$S_\lambda$</td>
+<td>the stratum of multiplicity pattern $\lambda$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>the number of distinct eigenvalues (parts of $\lambda$)</td>
+</tr>
+<tr>
+<td>$Z(A)$</td>
+<td>the centralizer of $A$ in $M_6$</td>
+</tr>
+<tr>
+<td>$P_i$</td>
+<td>the Lagrange spectral projector of $\lambda_i$</td>
+</tr>
+<tr>
+<td>$\Pi_\gamma$</td>
+<td>the cluster projector of a contour $\gamma$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m6c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root and its simple spectrum.</li>
+<li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the trace, the determinant and the characteristic polynomial.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>, for the scalar-traceless decomposition.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m6c.html">Spectral Theory and the Spectral Projectors</a>, for the Hermitian spectral theorem.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the projectors as points of a homogeneous space.</li>
+<li><a href="spectral-theory.html">Spectral Theory</a>, for the general theory of the characteristic polynomial and the spectral projectors.</li>
+<li><a href="the-discriminant-and-the-resultant.html">The Discriminant and the Resultant</a>, for the discriminant of a polynomial.</li>
+<li>Tosio Kato, <em>Perturbation Theory for Linear Operators</em> (Springer, 1995), for the contour integral projectors and their limits at a coalescence.</li>
+<li>James E. Humphreys, <em>Linear Algebraic Groups</em> (Springer, 1975), for the cyclic elements and the maximal torus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analysis on $M_6(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="analysis-on-math0"><strong>Analysis on $M_6(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra $M_6(\mathbb{C})$ is a complex vector space of dimension $36$, hence a real manifold of dimension $72$. It carries the smooth structure of $\mathbb{C}^{36}$, the complex structure of multiplication by $\mathrm i$, the Lebesgue measure of $\mathbb{R}^{72}$, and the norms of <em>The Forms, the Norms and the Singular Set</em>. The analysis on $M_6$ is the ordinary analysis of a finite-dimensional complex vector space, enriched by the algebra structure: the product, the inverse, the determinant and the exponential are smooth, indeed holomorphic, maps, and their derivatives are the standard formulas.</p>
+<p>The <strong>Wirtinger calculus</strong> gives the complex derivatives $\partial/\partial z_{ij}$ and $\partial/\partial\bar z_{ij}$. The holomorphic functions are those with $\partial f/\partial\bar z_{ij}=0$; the determinant is a holomorphic polynomial of degree six, the inverse is holomorphic on $GL_6$, and the exponential is entire. The <strong>holomorphic functional calculus</strong> evaluates a holomorphic function on a matrix through the resolvent and a contour integral,</p>
+<p>$$
+f(A)=\frac{1}{2\pi\mathrm i}\oint_\Gamma f(z)(zI_6-A)^{-1}\,dz,
+$$</p>
+<p>and the <strong>Riesz projector</strong></p>
+<p>$$
+P=\frac{1}{2\pi\mathrm i}\oint_\Gamma(zI_6-A)^{-1}\,dz
+$$</p>
+<p>is the spectral projector onto the part of the spectrum inside $\Gamma$. The <strong>Fourier transform</strong> on $\mathbb{C}^{36}$ is the Euclidean Fourier transform of the $72$ real coordinates; the Schwartz space, the inversion theorem, the Plancherel theorem and the Gaussian are the standard ones.</p>
+<p>The article also fixes the boundary against <strong>Fueter theory</strong>. The field $\mathbb{C}$ has no zero divisors; the algebra $M_6(\mathbb{C})$ does: the nilpotents satisfy $E_{12}^2=0$. The ordinary matrix analysis is the analysis over the field, with the spectrum, the resolvent and the functional calculus. Fueter theory is the quaternionic or Clifford analysis of the Cauchy–Fueter operator; it needs a different structure, a real division algebra or a Clifford module with a Dirac operator, which $M_6(\mathbb{C})$ does not carry. The holomorphic functional calculus is not Fueter theory.</p>
+<p>The article assumes the trace, the determinant, the norms, the Hermitian structure and the spectral theorem. It proves the derivative formulas, the Wirtinger rules, the resolvent and Riesz formulas, and it states the Fourier theorems with their standard proofs.</p>
+<h2 id="the-smooth-structure">The Smooth Structure</h2>
+<h3 id="the-real-and-complex-manifolds">The Real and Complex Manifolds</h3>
+<p><strong>Proposition.</strong> $M_6(\mathbb{C})$ is a complex manifold of complex dimension $36$ and a real manifold of real dimension $72$. The complex structure is the linear map $J(A)=\mathrm iA$, with $J^2=-I$; the real tangent space at every point is $M_6$, and the complex tangent space is its complexification.</p>
+<p><strong>Proof.</strong> The identification $M_6\cong\mathbb{C}^{36}$ by the coordinates $A_{ij}$ is a complex-linear isomorphism; the real coordinates are the real and imaginary parts, $72$ in number. Multiplication by $\mathrm i$ is a real-linear map with $J^2=-I$. The tangent space of a vector space is the vector space itself.</p>
+<p><strong>Corollary (the frame).</strong> The manifold is parallelizable: the coordinate vector fields $\partial/\partial x_{ij}$ and $\partial/\partial y_{ij}$ are a global frame; the Wirtinger fields $\partial/\partial z_{ij}$ and $\partial/\partial\bar z_{ij}$ are a global frame of the complexified tangent bundle.</p>
+<p><strong>Proof.</strong> A vector space has a global basis of constant vector fields; the Wirtinger derivatives are the complex basis.</p>
+<p><strong>Corollary (the measure).</strong> The manifold is oriented, and</p>
+<p>$$
+dA=\prod_{i,j}dx_{ij}\,dy_{ij}
+$$</p>
+<p>is a translation-invariant volume form, the Lebesgue measure of $\mathbb{R}^{72}$.</p>
+<p><strong>Proof.</strong> The real coordinates give the standard orientation and the standard Lebesgue measure; translations are isometries.</p>
+<h3 id="the-tangent-space">The Tangent Space</h3>
+<p><strong>Definition.</strong> The <strong>tangent space</strong> $T_AM_6$ is $M_6$, with the derivative of a curve $A(t)$ at $t=0$ being $A'(0)$. The <strong>differential</strong> of a smooth map $F:M_6\to W$ at $A$ is the linear map $DF_A:M_6\to W$,</p>
+<p>$$
+DF_A(H)=\frac{d}{dt}\Big|_{0}F(A+tH).
+$$</p>
+<p><strong>Proposition.</strong> The tangent space is $M_6$ at every point; the differential of a linear map is the map itself; the differential of the product is</p>
+<p>$$
+D(AB)_{(A,B)}(H,K)=HB+AK .
+$$</p>
+<p><strong>Proof.</strong> The tangent space of a vector space is the vector space; the derivative of a linear map is itself; the product is bilinear, so the derivative is the sum of the two partial derivatives.</p>
+<p><strong>Corollary (the multiplications).</strong> The left multiplication $L_A(B)=AB$ has differential $DL_A(B)(K)=AK$; the right multiplication $R_B(A)=AB$ has differential $DR_B(A)(H)=HB$.</p>
+<p><strong>Proof.</strong> The product is linear in each factor.</p>
+<h3 id="the-lebesgue-measure">The Lebesgue Measure</h3>
+<p><strong>Definition.</strong> The <strong>Lebesgue measure</strong> on $M_6$ is the translation-invariant measure $dA$ of $\mathbb{R}^{72}$.</p>
+<p><strong>Proposition.</strong> The measure is invariant under translations and under the unitary group: $d(UA)=dA$ and $d(AU)=dA$ for $U\in U(6)$. It is not invariant under general linear changes of coordinates; the Jacobian of $A\mapsto gA$ is $\lvert\det g\rvert^{12}$.</p>
+<p><strong>Proof.</strong> Translation invariance is the Lebesgue measure on $\mathbb{R}^{72}$; unitary invariance follows because $A\mapsto UA$ preserves the Frobenius norm. For a general $g$, left multiplication on $M_6$ has complex determinant $(\det g)^6$ (six column blocks, each with determinant $\det g$), so the real Jacobian is $\lvert(\det g)^6\rvert^2=\lvert\det g\rvert^{12}$.</p>
+<p><strong>Corollary (the Gaussian).</strong> The Gaussian integral converges:</p>
+<p>$$
+\int_{M_6}e^{-\operatorname{tr}(A^*A)}\,dA=\pi^{36}.
+$$</p>
+<p><strong>Proof.</strong> The integrand is $\prod_{ij}e^{-\lvert A_{ij}\rvert^2}$; the integral over each complex coordinate is $\pi$; the product over the $36$ coordinates is $\pi^{36}$.</p>
+<h2 id="the-derivatives">The Derivatives</h2>
+<h3 id="the-product">The Product</h3>
+<p><strong>Proposition.</strong> The product map $m(A,B)=AB$ is smooth (polynomial), and its differential is</p>
+<p>$$
+Dm_{(A,B)}(H,K)=HB+AK .
+$$</p>
+<p><strong>Proof.</strong> The entries of $AB$ are polynomials of degree two; the derivative is the bilinear part $HB+AK$.</p>
+<p><strong>Corollary.</strong> The product is holomorphic in each variable separately; the algebra is a complex Lie algebra with the commutator.</p>
+<p><strong>Proof.</strong> The entries are polynomials in the entries of $A$ and $B$, hence holomorphic; the commutator is bilinear.</p>
+<h3 id="the-inverse">The Inverse</h3>
+<p><strong>Theorem.</strong> The inversion map $\operatorname{inv}:GL_6\to GL_6$, $A\mapsto A^{-1}$, is holomorphic, and its differential is</p>
+<p>$$
+D(\operatorname{inv})_A(H)=-A^{-1}HA^{-1}.
+$$</p>
+<p><strong>Proof.</strong> For small $t$,</p>
+<p>$$
+(A+tH)^{-1}=A^{-1}-tA^{-1}HA^{-1}+O(t^2),
+$$</p>
+<p>by the Neumann series $(I+tA^{-1}H)^{-1}=I-tA^{-1}H+O(t^2)$; the derivative is the linear term.</p>
+<p><strong>Corollary.</strong> The inverse is a local diffeomorphism at every invertible $A$; its differential is invertible with inverse $K\mapsto-AKA$.</p>
+<p><strong>Proof.</strong> The differential $H\mapsto-A^{-1}HA^{-1}$ is invertible; the inverse function theorem applies.</p>
+<h3 id="the-determinant">The Determinant</h3>
+<p><strong>Theorem.</strong> The determinant is a holomorphic polynomial of degree six, and</p>
+<p>$$
+D\det_A(H)=\operatorname{tr}(\operatorname{adj}(A)H).
+$$</p>
+<p>At $A=I_6$, $D\det_{I_6}(H)=\operatorname{tr}H$.</p>
+<p><strong>Proof.</strong> Expand $\det(A+tH)$ in powers of $t$; the linear term is the sum over the positions of $H$ with the cofactor of $A$, which is the trace of the adjugate times $H$. At $A=I_6$, the adjugate is $I_6$.</p>
+<p><strong>Corollary (the submersion).</strong> The determinant is a submersion at every point of rank five; the singular set $\det=0$ is a complex hypersurface of real codimension two, smooth at the rank-five points.</p>
+<p><strong>Proof.</strong> The derivative is nonzero exactly when the adjugate is nonzero, that is at rank five; a nonzero complex-linear functional has kernel of real codimension two; the implicit function theorem gives the smooth hypersurface.</p>
+<h3 id="the-exponential">The Exponential</h3>
+<p><strong>Theorem.</strong> The exponential is entire, and its differential is</p>
+<p>$$
+D\exp_A(H)=e^A\sum_{m=0}^{\infty}\frac{(-1)^m}{(m+1)!}\operatorname{ad}_A^m(H).
+$$</p>
+<p>At $A=0$, $D\exp_0(H)=H$; for a scalar $A=\lambda I_6$, $D\exp_{\lambda I_6}(H)=e^\lambda H$.</p>
+<p><strong>Proof.</strong> Differentiate $e^{A+tH}$ at $t=0$. The derivative satisfies the differential equation $\frac{d}{dt}e^{A+tH}=e^{A+tH}H$ with the initial value $e^A$; the solution is $e^A$ times the series $\sum_m(-1)^m\operatorname{ad}_A^m(H)/(m+1)!$. At $A=0$ only the $m=0$ term survives; for a scalar, $\operatorname{ad}_A=0$.</p>
+<p><strong>Corollary (the local inverse).</strong> The differential at $0$ is the identity, so the exponential is a local diffeomorphism at $0$; the inverse branch is the logarithm.</p>
+<p><strong>Proof.</strong> $D\exp_0=I$ is invertible; the inverse function theorem gives the local inverse.</p>
+<p><strong>Remark (the noncommutativity).</strong> <strong>The derivative of the exponential is not $e^AH$ unless $A$ is scalar or $H$ commutes with $A$.</strong> The series with the adjoint corrects for the noncommutativity; the first correction is $\frac12[A,H]$. The formula is the analytic form of the Baker–Campbell–Hausdorff expansion.</p>
+<h2 id="the-wirtinger-calculus">The Wirtinger Calculus</h2>
+<h3 id="the-complex-derivatives">The Complex Derivatives</h3>
+<p><strong>Definition.</strong> For a smooth function $f:M_6\to\mathbb{C}$, the <strong>Wirtinger derivatives</strong> are</p>
+<p>$$
+\frac{\partial f}{\partial z_{ij}}=\frac12\left(\frac{\partial f}{\partial x_{ij}}-\mathrm i\frac{\partial f}{\partial y_{ij}}\right),
+\qquad
+\frac{\partial f}{\partial\bar z_{ij}}=\frac12\left(\frac{\partial f}{\partial x_{ij}}+\mathrm i\frac{\partial f}{\partial y_{ij}}\right).
+$$</p>
+<p><strong>Proposition.</strong> The differential is</p>
+<p>$$
+df=\sum_{ij}\frac{\partial f}{\partial z_{ij}}dz_{ij}+\sum_{ij}\frac{\partial f}{\partial\bar z_{ij}}d\bar z_{ij},
+$$</p>
+<p>and the Wirtinger derivatives satisfy</p>
+<p>$$
+\overline{\frac{\partial f}{\partial z_{ij}}}=\frac{\partial\bar f}{\partial\bar z_{ij}}.
+$$</p>
+<p><strong>Proof.</strong> The real differential is $\sum(\partial f/\partial x)dx+(\partial f/\partial y)dy$; substituting $dz=dx+\mathrm i\,dy$ and $d\bar z=dx-\mathrm i\,dy$ gives the formula; the conjugation identity is the definition.</p>
+<p><strong>Corollary (the Cauchy–Riemann equations).</strong> The function $f$ is holomorphic iff $\partial f/\partial\bar z_{ij}=0$ for all $i,j$.</p>
+<p><strong>Proof.</strong> A function is holomorphic iff its differential is complex-linear, that is iff the $d\bar z$ terms vanish.</p>
+<h3 id="holomorphic-functions">Holomorphic Functions</h3>
+<p><strong>Theorem.</strong> The determinant, the product, the inverse on $GL_6$, and the exponential are holomorphic.</p>
+<p><strong>Proof.</strong> The determinant and the product are polynomials in the entries; the inverse is rational with denominator $\det A$, hence holomorphic on $GL_6$; the exponential is a uniformly convergent series of polynomials, hence holomorphic.</p>
+<p><strong>Corollary (the logarithm and the square root).</strong> The logarithm is holomorphic on a neighborhood of $I_6$, and the square root is holomorphic on a neighborhood of $I_6$ in the positive definite cone.</p>
+<p><strong>Proof.</strong> The logarithm series $\log(I+N)=\sum(-1)^{m+1}N^m/m$ converges for $\lVert N\rVert<1$ and is holomorphic; the square root is the exponential of half the logarithm, or the binomial series.</p>
+<p><strong>Corollary (the matrix functions).</strong> A holomorphic function of a matrix, defined by a power series with positive radius, is holomorphic in the entries on the domain of convergence.</p>
+<p><strong>Proof.</strong> The power series converges uniformly on compact sets; each term is a polynomial; the sum is holomorphic.</p>
+<h3 id="the-matrix-functions">The Matrix Functions</h3>
+<p><strong>Proposition.</strong> The functional calculus for polynomials and entire functions is holomorphic in $A$: if $f$ is entire, then $A\mapsto f(A)$ is entire.</p>
+<p><strong>Proof.</strong> $f(A)=\sum c_mA^m$; each $A^m$ is a polynomial in the entries; the series converges uniformly on compact sets.</p>
+<p><strong>Corollary.</strong> The exponential, the sine and the cosine, and every entire function of $A$ are entire matrix functions.</p>
+<p><strong>Proof.</strong> Their series converge uniformly on compact sets.</p>
+<h2 id="the-holomorphic-functional-calculus">The Holomorphic Functional Calculus</h2>
+<h3 id="the-resolvent">The Resolvent</h3>
+<p><strong>Definition.</strong> The <strong>resolvent</strong> of $A$ is</p>
+<p>$$
+R(z)=(zI_6-A)^{-1},
+\qquad
+z\in\rho(A)=\mathbb{C}\setminus\sigma(A).
+$$</p>
+<p><strong>Theorem (the resolvent identity).</strong></p>
+<p>$$
+R(z)-R(w)=(w-z)R(z)R(w).
+$$</p>
+<p><strong>Proof.</strong> Multiply by $(zI_6-A)(wI_6-A)$; the difference of the two factors is $(w-z)I_6$.</p>
+<p><strong>Corollary (the analyticity).</strong> $R(z)$ is holomorphic on the open set $\rho(A)$, and its poles are the eigenvalues of $A$, with pole order the largest Jordan block.</p>
+<p><strong>Proof.</strong> The inverse is holomorphic on the invertible locus; the Laurent expansion at an eigenvalue is finite with order the largest block.</p>
+<h3 id="the-contour-integral">The Contour Integral</h3>
+<p><strong>Theorem (the Dunford calculus).</strong> Let $f$ be holomorphic on a neighborhood of $\sigma(A)$, and let $\Gamma$ be a finite union of positively oriented Jordan curves enclosing $\sigma(A)$ inside the domain of $f$. Then</p>
+<p>$$
+f(A)=\frac{1}{2\pi\mathrm i}\oint_\Gamma f(z)R(z)\,dz
+$$</p>
+<p>defines an algebra homomorphism $f\mapsto f(A)$ that agrees with the polynomial calculus.</p>
+<p><strong>Proof.</strong> The integral converges because $R(z)$ is continuous on $\Gamma$; the homomorphism property follows from the resolvent identity and the Cauchy theorem; on polynomials, the integral reproduces $A^n$ by the expansion at infinity.</p>
+<p><strong>Corollary (the spectral mapping).</strong></p>
+<p>$$
+\sigma(f(A))=f(\sigma(A)).
+$$</p>
+<p><strong>Proof.</strong> In the Jordan basis, $f(A)$ has the eigenvalues $f(\lambda_i)$ with the same block structure.</p>
+<h3 id="the-riesz-projector">The Riesz Projector</h3>
+<p><strong>Definition.</strong> The <strong>Riesz projector</strong> of a contour $\Gamma$ is</p>
+<p>$$
+P_\Gamma=\frac{1}{2\pi\mathrm i}\oint_\Gamma R(z)\,dz.
+$$</p>
+<p><strong>Theorem.</strong> $P_\Gamma$ is an idempotent that commutes with $A$, its image is the sum of the generalized eigenspaces of the eigenvalues inside $\Gamma$, and its rank is the sum of the algebraic multiplicities of those eigenvalues.</p>
+<p><strong>Proof.</strong> The residue of the resolvent at an eigenvalue is the projector onto its generalized eigenspace; the contour integral sums the residues inside $\Gamma$. The idempotence follows from the resolvent identity; the rank is the trace, which is the sum of the multiplicities.</p>
+<p><strong>Corollary (the spectral decomposition).</strong> For contours $\Gamma_i$ around the distinct eigenvalues,</p>
+<p>$$
+P_iP_j=\delta_{ij}P_i,\qquad
+\sum_iP_i=I_6,\qquad
+A=\sum_i(\lambda_iP_i+N_i),
+$$</p>
+<p>with $N_i=(A-\lambda_iI_6)P_i$ nilpotent.</p>
+<p><strong>Proof.</strong> The projectors are the residues; the decomposition is the Jordan decomposition in the spectral form.</p>
+<h2 id="the-fourier-transform">The Fourier Transform</h2>
+<h3 id="the-schwartz-space">The Schwartz Space</h3>
+<p><strong>Definition.</strong> The <strong>Schwartz space</strong> $\mathcal{S}(\mathbb{C}^{36})$ is the space of smooth functions $f$ on $\mathbb{R}^{72}$ such that every derivative multiplied by every polynomial is bounded.</p>
+<p><strong>Proposition.</strong> $\mathcal{S}$ is a Fréchet space, stable under differentiation and multiplication by polynomials, and the Fourier transform</p>
+<p>$$
+\hat f(\xi)=\int_{\mathbb{R}^{72}}f(x)e^{-2\pi\mathrm i\langle\xi,x\rangle}\,dx
+$$</p>
+<p>maps $\mathcal{S}$ into itself.</p>
+<p><strong>Proof.</strong> The derivatives of $\hat f$ multiply by powers of $\xi$; the decay at infinity follows from integration by parts; the standard Schwartz estimates give the stability.</p>
+<p><strong>Corollary (Plancherel and inversion).</strong> The Fourier transform extends to a unitary operator on $L^2(\mathbb{R}^{72})$, and</p>
+<p>$$
+f(x)=\int_{\mathbb{R}^{72}}\hat f(\xi)e^{2\pi\mathrm i\langle\xi,x\rangle}\,d\xi .
+$$</p>
+<p><strong>Proof.</strong> The inversion and Plancherel theorems for the Euclidean Fourier transform; the Gaussian is the standard test function.</p>
+<h3 id="the-inversion-and-plancherel">The Inversion and Plancherel</h3>
+<p><strong>Theorem.</strong> The Fourier transform is an isomorphism of $\mathcal{S}$ with itself, and it extends to a unitary isomorphism of $L^2$; the Plancherel identity is</p>
+<p>$$
+\lVert f\rVert_2=\lVert\hat f\rVert_2 .
+$$</p>
+<p><strong>Proof.</strong> The inversion formula on the Schwartz space; the density of $\mathcal{S}$ in $L^2$; unitarity follows from the inversion and the $L^2$ pairing.</p>
+<p><strong>Corollary (differentiation and convolution).</strong> The Fourier transform converts differentiation into multiplication,</p>
+<p>$$
+\widehat{\partial_jf}(\xi)=2\pi\mathrm i\xi_j\hat f(\xi),
+$$</p>
+<p>and convolution into product.</p>
+<p><strong>Proof.</strong> Integration by parts; the convolution theorem.</p>
+<h3 id="the-gaussian-and-the-heat-kernel">The Gaussian and the Heat Kernel</h3>
+<p><strong>Proposition.</strong> The Gaussian Fourier transform is</p>
+<p>$$
+\int_{\mathbb{R}^{72}}e^{-\pi\lvert x\rvert^2}e^{-2\pi\mathrm i\langle\xi,x\rangle}\,dx
+=e^{-\pi\lvert\xi\rvert^2}.
+$$</p>
+<p><strong>Proof.</strong> The integral factors over the $72$ coordinates; the one-dimensional formula is the standard Gaussian integral.</p>
+<p><strong>Corollary (the heat kernel).</strong> The heat kernel on $\mathbb{R}^{72}$ is</p>
+<p>$$
+p_t(x)=\frac{1}{(4\pi t)^{36}}e^{-\lvert x\rvert^2/(4t)},
+$$</p>
+<p>and it satisfies $\partial_tp_t=\Delta p_t$, with $p_t\to\delta_0$ as $t\to0$.</p>
+<p><strong>Proof.</strong> The Fourier transform of $p_t$ is $e^{-4\pi^2t\lvert\xi\rvert^2}$, which solves the Fourier-transformed heat equation; the inversion gives the displayed kernel.</p>
+<p><strong>Remark (the Euclidean transform).</strong> <strong>The Fourier transform is the Euclidean analysis of the vector space, not the group Fourier transform of $GL_6$.</strong> It uses the additive structure of $\mathbb{C}^{36}$; the multiplicative structure enters through the algebra of matrix functions, not through the Fourier transform. The group Fourier transform of $U(6)$ is a different object, defined by the irreducible representations; it is not needed here.</p>
+<h2 id="zero-divisors-and-ordinary-matrix-analysis">Zero Divisors and Ordinary Matrix Analysis</h2>
+<h3 id="the-field-and-the-algebra">The Field and the Algebra</h3>
+<p><strong>Proposition.</strong> The field $\mathbb{C}$ has no zero divisors: if $zw=0$, then $z=0$ or $w=0$. The algebra $M_6(\mathbb{C})$ has zero divisors: $E_{12}\neq0$ and $E_{12}^2=0$; more generally, every nilpotent is a zero divisor, and every singular matrix is a zero divisor.</p>
+<p><strong>Proof.</strong> The field is an integral domain. In $M_6$, $E_{12}E_{12}=0$; if $A$ is singular, choose a nonzero $B$ with $\operatorname{im}B\subseteq\ker A$, and then $AB=0$.</p>
+<p><strong>Corollary (the singular set).</strong> The zero divisors are the singular set</p>
+<p>$$
+\Sigma=\{A:\det A=0\},
+$$</p>
+<p>a complex hypersurface of real codimension two. The invertible elements are exactly the matrices with nonzero determinant.</p>
+<p><strong>Proof.</strong> This is <em>The Forms, the Norms and the Singular Set</em>.</p>
+<p><strong>Remark (what is absent).</strong> <strong>The absence of zero divisors is a property of the field, not of the algebra.</strong> The scalar field $\mathbb{C}$ is an integral domain, and this is what makes the ordinary linear algebra and the holomorphic functional calculus work. The algebra $M_6(\mathbb{C})$ has zero divisors; the nilpotents are the simplest, and they are the source of the Jordan decomposition and the non-semisimple spectral theory. There is no null cone of an indefinite form: the trace form is definite, and its only isotropic vector is $0$.</p>
+<h3 id="the-ordinary-matrix-analysis">The Ordinary Matrix Analysis</h3>
+<p><strong>Theorem (the analysis over the field).</strong> The ordinary matrix analysis of $M_6(\mathbb{C})$ consists of the spectrum, the resolvent, the Dunford calculus, the Jordan form, the singular value decomposition and the determinant. All of it is the analysis of the field $\mathbb{C}$ applied to the finite-dimensional algebra.</p>
+<p><strong>Proof.</strong> The spectrum is the zero set of the characteristic polynomial over $\mathbb{C}$; the resolvent is the inverse in $M_6(\mathbb{C})$; the functional calculus is the Cauchy integral over $\mathbb{C}$; the Jordan form and the SVD are the canonical forms over $\mathbb{C}$.</p>
+<p><strong>Corollary (the boundary).</strong> The analysis does not need a division algebra structure on $M_6$; it needs the field $\mathbb{C}$ and the finite dimension. The singular set is handled by the determinant, not by a null cone.</p>
+<p><strong>Proof.</strong> The determinant detects invertibility; the resolvent is defined off the spectrum; the singular directions are the kernel directions, and the polar decomposition and the SVD organise them.</p>
+<h3 id="the-boundary-against-fueter-theory">The Boundary Against Fueter Theory</h3>
+<p><strong>Theorem (the Fueter boundary).</strong> Fueter theory is the quaternionic or Clifford analysis of the Cauchy–Fueter operator</p>
+<p>$$
+Df=\sum_{\mu=0}^{3}e_\mu\frac{\partial f}{\partial x_\mu},
+$$</p>
+<p>acting on functions with values in a quaternion or Clifford algebra. It requires a real division algebra or a Clifford module with a Dirac operator. The algebra $M_6(\mathbb{C})$ carries no such structure of the required kind.</p>
+<p><strong>Proof.</strong> The Fueter operator uses the multiplication and the conjugates of the quaternion algebra; its regularity is a first-order system in four real variables. $M_6(\mathbb{C})$ is a complex matrix algebra of complex dimension $36$; its only conjugation is the Hermitian transpose, and its product is the matrix product. The holomorphic functional calculus uses the resolvent and the Cauchy integral in the complex plane, not a Dirac operator.</p>
+<p><strong>Corollary (the two analyses).</strong> The holomorphic functional calculus and the Fueter calculus are different theories: the first is the analysis of the spectrum of a matrix over $\mathbb{C}$, the second is the analysis of a Dirac operator over a quaternionic or Clifford module.</p>
+<p><strong>Proof.</strong> The first is commutative in the scalar variable and uses the Cauchy kernel $1/(z-A)$; the second is a first-order operator with a noncommutative coefficient algebra.</p>
+<p><strong>Remark (where the quaternionic structure lives).</strong> The quaternionic structure lives in the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, which is the rank-one case of the present family, not in $M_6(\mathbb{C})$. <strong>The boundary is the dimension and the algebra: $M_6$ has the ordinary complex analysis, and Fueter theory needs another structure.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The algebra $M_6(\mathbb{C})$ is a complex manifold of dimension $36$ and a real manifold of dimension $72$, with the Lebesgue measure of $\mathbb{R}^{72}$ and the Gaussian normalisation $\pi^{36}$. The product, the inverse, the determinant and the exponential are holomorphic, with derivatives</p>
+<p>$$
+D(AB)=HB+AK,\qquad
+D(A^{-1})=-A^{-1}HA^{-1},\qquad
+D\det_A(H)=\operatorname{tr}(\operatorname{adj}(A)H),
+$$</p>
+<p>and</p>
+<p>$$
+D\exp_A(H)=e^A\sum_{m=0}^{\infty}\frac{(-1)^m}{(m+1)!}\operatorname{ad}_A^m(H).
+$$</p>
+<p>$$
+\boxed{\ \dim_{\mathbb{C}}M_6=36,\quad \dim_{\mathbb{R}}=72,\quad \int e^{-\operatorname{tr}(A^*A)}dA=\pi^{36},\quad f(A)=\frac{1}{2\pi\mathrm i}\oint fR\,dz .\ }
+$$</p>
+<p>The Wirtinger calculus gives the holomorphic functions; the Dunford calculus gives the spectral projectors and the spectral mapping theorem; the Fourier transform on $\mathbb{C}^{36}$ gives the Schwartz space, the inversion, the Plancherel theorem, the Gaussian and the heat kernel $(4\pi t)^{-36}e^{-\lvert x\rvert^2/(4t)}$.</p>
+<p>The field $\mathbb{C}$ has no zero divisors; the algebra $M_6$ has the nilpotent zero divisors and the singular set of real codimension two. The ordinary matrix analysis is the analysis over the field; the boundary against Fueter theory is the quaternionic or Clifford structure that $M_6$ does not carry.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complex dimension</td>
+<td>$36$</td>
+</tr>
+<tr>
+<td>Real dimension</td>
+<td>$72$</td>
+</tr>
+<tr>
+<td>Gaussian integral</td>
+<td>$\pi^{36}$</td>
+</tr>
+<tr>
+<td>Determinant derivative</td>
+<td>$\operatorname{tr}(\operatorname{adj}(A)H)$</td>
+</tr>
+<tr>
+<td>Exponential derivative</td>
+<td>$e^A\sum(-1)^m\operatorname{ad}_A^m/(m+1)!$</td>
+</tr>
+<tr>
+<td>Fourier space</td>
+<td>$\mathbb{R}^{72}$</td>
+</tr>
+<tr>
+<td>Heat kernel</td>
+<td>$(4\pi t)^{-36}e^{-\lvert x\rvert^2/(4t)}$</td>
+</tr>
+<tr>
+<td>Zero divisors</td>
+<td>the singular set, real codimension $2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$z_{ij}=x_{ij}+\mathrm i y_{ij}$</td>
+<td>the complex coordinates</td>
+</tr>
+<tr>
+<td>$\partial/\partial z_{ij}$, $\partial/\partial\bar z_{ij}$</td>
+<td>the Wirtinger derivatives</td>
+</tr>
+<tr>
+<td>$R(z)=(zI_6-A)^{-1}$</td>
+<td>the resolvent</td>
+</tr>
+<tr>
+<td>$P_\Gamma$</td>
+<td>the Riesz projector</td>
+</tr>
+<tr>
+<td>$\mathcal{S}(\mathbb{C}^{36})$</td>
+<td>the Schwartz space</td>
+</tr>
+<tr>
+<td>$\hat f$</td>
+<td>the Fourier transform</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>the Laplacian on $\mathbb{R}^{72}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m6c.html">The Forms, the Norms and the Singular Set</a>, for the determinant, the singular set and the norms.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m6c.html">Spectral Theory and the Spectral Projectors</a>, for the resolvent and the Dunford calculus.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m6c.html">The Exponential and the Lie Group</a>, for the exponential and the logarithm.</li>
+<li><a href="the-polar-decomposition-of-m6c.html">The Polar Decomposition</a>, for the positive cone and the singular values.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the Hermitian form and the unitary group.</li>
+<li><a href="analysis-on-m5c.html">Analysis on $M_5(\mathbb{C})$</a>, for the same analysis in the neighbouring dimension.</li>
+<li><a href="the-holomorphic-functional-calculus.html">The Holomorphic Functional Calculus</a>, for the Dunford calculus in a Banach algebra.</li>
+<li><a href="fueter-theory.html">Fueter Theory</a>, for the quaternionic analysis and its Cauchy–Fueter operator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
