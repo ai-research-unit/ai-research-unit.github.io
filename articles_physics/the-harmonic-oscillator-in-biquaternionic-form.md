@@ -168,7 +168,7 @@ $$
 
 so the phase rotates the $\mathbb{M}_+$ quadrature $\tilde{Q}_1$ into the $\mathbb{M}_-$ content of the amplitude and back. The oscillator's phase is literally the rotation that mixes the two sectors. This is a genuine addition of the framework: the "complex structure" that gives the oscillator its complex amplitude is identified with the operation that exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, and the oscillator's phase is the one-parameter group it generates.
 
-The connection to the dynamics is direct. The parent article's evolution $\tilde U(t')=\exp(-ih_tt'/\hbar)(\cos(|\vec h|t'/\hbar)e_t+\sin(|\vec h|t'/\hbar)\vec u_h)$ carries the trace part $h_t$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is $\hbar\omega$, twice the zero-point energy $\tfrac12\hbar\omega$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.
+The connection to the dynamics is direct. The parent article's evolution $\tilde Q(t')=\exp(-ih_tt'/\hbar)(\cos(|\vec h|t'/\hbar)e_t+\sin(|\vec h|t'/\hbar)\vec u_h)$ carries the trace part $h_t$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is $\hbar\omega$, twice the zero-point energy $\tfrac12\hbar\omega$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.
 
 ## Squeezing Is a Boost
 

@@ -231,7 +231,7 @@ One state of $\mathbb{B}$ is distinguished by the algebra rather than by a dynam
 $$
 \tau(\tilde Q_3) \;=\; \tfrac12 \mathrm{Tr}(\tilde Q_3) \;=\; \mathrm{Sc}(\tilde Q_3).
 $$
-It is the unique tracial state — the unique state with $\tau(\tilde Q_3\tilde Q_1)=\tau(\tilde Q_1\tilde Q_3)$ for all $\tilde Q_3,\tilde Q_1$ — and it is invariant under every inner automorphism; for a unitary $\tilde U$ the invariance reads
+It is the unique tracial state — the unique state with $\tau(\tilde Q_3\tilde Q_1)=\tau(\tilde Q_1\tilde Q_3)$ for all $\tilde Q_3,\tilde Q_1$ — and it is invariant under every inner automorphism; for a unitary $\tilde Q$ the invariance reads
 $$
 \tau(\tilde U\tilde Q_3\tilde U^{*})=\tau(\tilde Q_3).
 $$

@@ -185,7 +185,7 @@ $$
 \boxed{\;S(\tilde{Ϛ}_{\tilde{A}_2}\,\|\,\tilde{Ϛ}_{\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\tilde{A}}\,\|\,\tilde{Ϛ}_{\tilde{Q}_1})\;}.
 $$
 
-This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde U\rho \tilde U^\dagger\|\tilde U\sigma \tilde U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
+This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde Q\rho \tilde Q^\dagger\|\tilde Q\sigma \tilde Q^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
 
 Three consequences of the invariance spell out the redundancy.
 
@@ -277,7 +277,7 @@ The boundary is drawn as in the companion articles.
 
 1. **A gauge-fixing principle.** The orbit is a torsor, so no member is preferred. Is there an algebraic principle that selects a representative — a condition natural to $\mathbb{B}$ rather than imported — or is the choice irreducibly extrinsic, as the canonical-quantization article suggests?
 
-2. **The non-abelian orbit.** For a non-central gauge group the orbit is the adjoint orbit of the connection, $A_\mu\mapsto \tilde U A_\mu \tilde U^{-1} + (i/\kappa)(\partial/\partial Q_\mu \tilde U)\tilde U^{-1}$, and it is no longer a torsor of an abelian group but a coadjoint-type space. Does the orbit still have a clean fibre interpretation, and does the relative-entropy invariance survive with the appropriate unitary?
+2. **The non-abelian orbit.** For a non-central gauge group the orbit is the adjoint orbit of the connection, $A_\mu\mapsto \tilde Q A_\mu \tilde Q^{-1} + (i/\kappa)(\partial/\partial Q_\mu \tilde Q)\tilde Q^{-1}$, and it is no longer a torsor of an abelian group but a coadjoint-type space. Does the orbit still have a clean fibre interpretation, and does the relative-entropy invariance survive with the appropriate unitary?
 
 3. **The orbit and the local complex structure.** The framework makes the complex structure local through the speed of light $c = 1/\sqrt{\epsilon\mu}$. Is the gauge orbit — a local shift by a gradient — related to that local complex structure, or are the two local structures independent? No relation is established here.
 

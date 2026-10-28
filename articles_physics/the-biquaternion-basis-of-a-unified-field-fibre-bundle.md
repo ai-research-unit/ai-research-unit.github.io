@@ -109,7 +109,7 @@ $$
 \tilde U = \tilde U^{-1} = \frac{1}{\sqrt2}\begin{pmatrix} \sigma_0 & \sigma_2 \\ \sigma_2 & -\sigma_0 \end{pmatrix} ,
 $$
 
-attributed by the source to Majorana. It was verified to be unitary and involutive, $\tilde U^\dagger \tilde U = \tilde U^2 = I_4$, with a worst deviation of $2.2\times10^{-16}$.
+attributed by the source to Majorana. It was verified to be unitary and involutive, $\tilde Q^\dagger \tilde Q = \tilde Q^2 = I_4$, with a worst deviation of $2.2\times10^{-16}$.
 
 The source's own generators are printed in its Eq. (28) as $\gamma_0 = \sigma_0\oplus\sigma_0$ with $\gamma_k = \begin{pmatrix} 0 & -\sigma_k \\ \sigma_k & 0\end{pmatrix}$. As printed they are **not** a Clifford set: $\{\gamma_0,\gamma_k\} = 2\gamma_k$, which does not vanish, so the displayed $\gamma_0$ has lost a sign and must be $\sigma_0\oplus(-\sigma_0)$. With that single correction the four generators satisfy the whole algebra for the metric $\mathrm{diag}(+1,-1,-1,-1)$ — every square and every anticommutator verified exactly. The correction does not touch $G$ itself, because the source writes $G = a_0I_4 + \boldsymbol\gamma\!\cdot\!\vec a$ with the identity, not $\gamma_0$, in the timelike slot.
 
@@ -220,7 +220,7 @@ One claim does not reproduce, and the paper's own equations are what defeat it: 
 | $G_2 = \tilde UG\tilde U^{-1}$ | The Majorana-transformed structural group; real and symmetric |
 | $\gamma_\mu$ | The source's generators, Eq. (28); the printed $\gamma_0 = \sigma_0\oplus\sigma_0$ has lost a sign and must be $\sigma_0\oplus(-\sigma_0)$ |
 | $J$, $g$, $\sigma_{\lambda\mu}$ | The source's three $G$-invariant tensors: almost complex structure, Lorentzian metric, third fundamental tensor |
-| $\tilde U = \frac{1}{\sqrt2}\begin{pmatrix}\sigma_0 & \sigma_2 \\ \sigma_2 & -\sigma_0\end{pmatrix}$ | The source's Majorana transformation; unitary and involutive; the transformed generators are purely imaginary and $G_2 = \tilde UG\tilde U^{-1}$ is real symmetric |
+| $\tilde Q = \frac{1}{\sqrt2}\begin{pmatrix}\sigma_0 & \sigma_2 \\ \sigma_2 & -\sigma_0\end{pmatrix}$ | The source's Majorana transformation; unitary and involutive; the transformed generators are purely imaginary and $G_2 = \tilde UG\tilde Q^{-1}$ is real symmetric |
 | $\sigma_\alpha, \sigma_\beta, \sigma_\gamma$ | The source's $\mathrm{SL}(2,\mathbb{R})$ triple, the split real form of the Pauli triple |
 | $(2{+}2)$ signature | The source's second signature: $\sigma_\beta^2 = -1$ flips one sign in the coefficient sum, $a_0^2+a_1^2-a_2^2+a_3^2 = 1$, i.e. $p_0^2-p_1^2+p_2^2-p_3^2 = m^2$ |
 | $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, $M_2(\mathbb{H})\otimes_\mathbb{R}\mathbb{C}\cong M_4(\mathbb{C})$ | The corpus's interpretation of the source's "$\mathbb{H}_2$, whose complexification is the Dirac algebra" |

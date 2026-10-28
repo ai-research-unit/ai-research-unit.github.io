@@ -19,15 +19,15 @@ The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otim
 The biquaternion Schrödinger equation $i\hbar\partial/\partial t'\psi=H\psi$ is solved formally by
 
 $$
-\tilde U(t') = \exp(-iH t'/\hbar),
+\tilde Q(t') = \exp(-iH t'/\hbar),
 \qquad
-\psi(t') = \tilde U(t')\,\psi(0),
+\psi(t') = \tilde Q(t')\,\psi(0),
 $$
 
-and because $H$ is central, $\tilde U(t')$ is a central unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde U\tilde U^{*}=e_t$. The evolution operator is a semigroup in time,
+and because $H$ is central, $\tilde Q(t')$ is a central unitary element of $\mathbb{B}$: it commutes with every biquaternion and satisfies $\tilde Q\tilde Q^{*}=e_t$. The evolution operator is a semigroup in time,
 
 $$
-\tilde U(t'_1+t'_2) = \tilde U(t'_2)\,\tilde U(t'_1),
+\tilde Q(t'_1+t'_2) = \tilde Q(t'_2)\,\tilde Q(t'_1),
 $$
 
 which is the algebraic statement that evolution is reversible and composable.
@@ -35,10 +35,10 @@ which is the algebraic statement that evolution is reversible and composable.
 In the position representation the kernel is the matrix element
 
 $$
-K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i) = \langle x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z|\,\tilde U(t'_f-t'_i)\,|x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z\rangle ,
+K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i) = \langle x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z|\,\tilde Q(t'_f-t'_i)\,|x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z\rangle ,
 $$
 
-a field on pairs of points taking values in the state module's endomorphism algebra; since $\tilde U$ is central, the kernel is a complex scalar times $e_t$, $K\,e_t$, with
+a field on pairs of points taking values in the state module's endomorphism algebra; since $\tilde Q$ is central, the kernel is a complex scalar times $e_t$, $K\,e_t$, with
 
 $$
 K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)\in\mathbb{C},
@@ -98,7 +98,7 @@ The short-time kernel is central. Its phase is $(i/\hbar)$ times the short-time 
 Composing the short-time kernel $N$ times and using the semigroup property gives the Trotter formula
 
 $$
-\tilde U(t')=\lim_{N\to\infty}\left(\tilde U(t'/N)\right)^N
+\tilde Q(t')=\lim_{N\to\infty}\left(\tilde Q(t'/N)\right)^N
 =\lim_{N\to\infty}\left(\exp(-iHt'/N\hbar)\right)^N ,
 $$
 
@@ -315,7 +315,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 ## Summary
 
-The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde U(t')=\exp(-iHt'/\hbar)$ with $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
+The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde Q(t')=\exp(-iHt'/\hbar)$ with $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
 K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
@@ -347,7 +347,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$ | Central Hamiltonian |
-| $\tilde U(t')=\exp(-iHt'/\hbar)$ | Evolution operator; central unitary, semigroup |
+| $\tilde Q(t')=\exp(-iHt'/\hbar)$ | Evolution operator; central unitary, semigroup |
 | $K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t'_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t'_i)=Ke_t$ | Position kernel; central |
 | $K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(L\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |

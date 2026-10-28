@@ -10,7 +10,7 @@ $$
 
 and for a density matrix $\rho$ the same dynamics reads $i\hbar\,\partial/\partial t'\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
 
-The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the unitary biquaternion $\tilde{U}(t')$ obeying $i\hbar\,d\tilde{U}/dt' = \tilde{H}\tilde{U}$ and the state equation $i\hbar\,d\tilde{Ϛ}/dt' = [\tilde{H},\tilde{Ϛ}]$ for $\tilde{Ϛ} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
+The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the unitary biquaternion $\tilde Q(t')$ obeying $i\hbar\,d\tilde Q/dt' = \tilde{H}\tilde Q$ and the state equation $i\hbar\,d\tilde{Ϛ}/dt' = [\tilde{H},\tilde{Ϛ}]$ for $\tilde{Ϛ} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
 
 The question is not decorative. In and around the algebra $\mathbb{B}$ there are three distinct things commonly written with a symbol that squares to $-1$ or plays the role of $i$:
 
@@ -142,23 +142,23 @@ where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{
 **Solution.** Since $-i\tilde{H} = -ih_te_t + \vec h$ and the scalar and vector parts commute,
 
 $$
-\boxed{\;\tilde{U}(t') = \exp\!\left(-i\tilde{H}t'/\hbar\right)
+\boxed{\;\tilde Q(t') = \exp\!\left(-i\tilde{H}t'/\hbar\right)
 = \exp(-ih_tt'/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_h\right),
 \qquad
 \theta = \frac{|\vec h|t'}{\hbar}\;},
 $$
 
-and $\psi(t') = \tilde{U}(t')\psi(0)$. The element $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_h$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t') = \tilde{U}\psi(0)$,
+and $\psi(t') = \tilde Q(t')\psi(0)$. The element $\tilde Q$ is unitary, $\tilde Q\tilde Q^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_h$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t') = \tilde Q\psi(0)$,
 
 $$
 \mathrm{Tr}\!\left(\psi(t')^\dagger\psi(t')\right)
-= \mathrm{Tr}\!\left(\psi(0)^\dagger \tilde{U}^{*}\tilde{U}\,\psi(0)\right)
+= \mathrm{Tr}\!\left(\psi(0)^\dagger \tilde Q^{*}\tilde Q\,\psi(0)\right)
 = \mathrm{Tr}\!\left(\psi(0)^\dagger\psi(0)\right).
 $$
 
 Differentiating the solution gives $i\hbar\,\partial/\partial t'\psi = i\hbar(-i\tilde{H}/\hbar)\psi = \tilde{H}\psi$, so it is the required solution.
 
-**Case checked.** For $\tilde{H} = i\,\vec e_x$ one has $h_t = 0$, $\vec h = \vec e_x$, and $\tilde{U}(t') = \cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x$. Then $\tilde{U}(t')$ is unitary, and $\tilde{H}\tilde{U} = i \vec e_x(\cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x) = i\cos(t'/\hbar)\vec e_x - i\sin(t'/\hbar)e_t$ equals $i\hbar\,d\tilde{U}/dt' = i(-\sin(t'/\hbar)e_t + \cos(t'/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
+**Case checked.** For $\tilde{H} = i\,\vec e_x$ one has $h_t = 0$, $\vec h = \vec e_x$, and $\tilde Q(t') = \cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x$. Then $\tilde Q(t')$ is unitary, and $\tilde{H}\tilde Q = i \vec e_x(\cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x) = i\cos(t'/\hbar)\vec e_x - i\sin(t'/\hbar)e_t$ equals $i\hbar\,d\tilde Q/dt' = i(-\sin(t'/\hbar)e_t + \cos(t'/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
 
 **Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \psi\psi^\dagger$ and using $\partial/\partial t'\psi = -i\tilde{H}\psi/\hbar$, $\partial/\partial t'\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives
 
@@ -207,7 +207,7 @@ $$
 using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\hbar^{-1}J\tilde{H} = -\hbar^{-1}i\,\vec e_y$ is Hermitian, not anti-Hermitian, and $\exp(-\hbar^{-1}t'J\tilde{H})$ is not unitary. Explicitly, at $t' = \pi\hbar/2$,
 
 $$
-\tilde{U}^{*}\tilde{U} = \exp\!\left(-i\pi \vec e_y\right)
+\tilde Q^{*}\tilde Q = \exp\!\left(-i\pi \vec e_y\right)
 = \cosh(\pi)\,e_t - i\sinh(\pi)\,\vec e_y \neq e_t,
 $$
 
@@ -244,7 +244,7 @@ A structural caution belongs here. The wave function $\psi$ itself is an element
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 
-**The relabelling.** Under $\mathbb{B} \cong M_2(\mathbb{C})$ with $\vec e_\mu \mapsto -i\sigma_\mu$, a spinor in $\mathbb{B}\tilde\Pi$ is a column vector in $\mathbb{C}^2$, the scalar imaginary is the standard imaginary unit, $\tilde{U}(t')$ is a standard element of $\mathrm{U}(2)$, and the equation is literally the two-component Schrödinger equation. Nothing is added for a single qubit beyond vocabulary: the biquaternion equation predicts exactly what the standard one predicts.
+**The relabelling.** Under $\mathbb{B} \cong M_2(\mathbb{C})$ with $\vec e_\mu \mapsto -i\sigma_\mu$, a spinor in $\mathbb{B}\tilde\Pi$ is a column vector in $\mathbb{C}^2$, the scalar imaginary is the standard imaginary unit, $\tilde Q(t')$ is a standard element of $\mathrm{U}(2)$, and the equation is literally the two-component Schrödinger equation. Nothing is added for a single qubit beyond vocabulary: the biquaternion equation predicts exactly what the standard one predicts.
 
 **What is structural.** Three features are genuinely rearranged rather than merely renamed.
 
@@ -299,7 +299,7 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Idempotent (pure state); $\vec u$ the state axis |
 | $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\psi$ |
 | $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | Density matrix associated to a spinor |
-| $\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar)$ | Unitary evolution, $\psi(t') = \tilde{U}(t')\psi(0)$ |
+| $\tilde Q(t') = \exp(-i\tilde{H}t'/\hbar)$ | Unitary evolution, $\psi(t') = \tilde Q(t')\psi(0)$ |
 | $2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{H}^{*}) = h_t + \vec u\cdot\vec h = \operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde{H}^{*})$ | Trace reading last / Born rule |
 | $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

@@ -44,7 +44,7 @@ $$
 
 which is a strictly positive real number for $\tilde Q\neq0$; being a central scalar it is therefore a positive real multiple $\omega e_{t}$, $\omega>0$, of the identity, so the modulus-one condition $\omega=1$ reads $\tilde Q^{*}\tilde Q=e_{t}$. Conversely, if $\tilde Q^{*}\tilde Q=e_{t}$ then $(\Theta_{\tilde Q})^{*}\Theta_{\tilde Q}=\Theta_{\tilde Q^{*}\tilde Q}=\Theta_{e_{t}}$ is the identity, and $\Theta_{\tilde Q}$ is an isometry by the adjoint theorem of the sibling article.
 
-**Remark (the failure is a positive similitude, never a sign).** The parameter rule reads $\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$ for central $A$, so for $\tilde Q=c\tilde U$ with $c\in\mathbb{C}$ and $\tilde U\in U$ the operator is $\lvert c\rvert^{2}\mathrm{Ad}_{\tilde U}$. Hence
+**Remark (the failure is a positive similitude, never a sign).** The parameter rule reads $\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$ for central $A$, so for $\tilde Q=c\tilde Q$ with $c\in\mathbb{C}$ and $\tilde Q\in U$ the operator is $\lvert c\rvert^{2}\mathrm{Ad}_{\tilde Q}$. Hence
 
 $$
 \langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde Q_1\rangle_{*}=\lvert c\rvert^{4}\,\langle\tilde S,\tilde Q_1\rangle_{*},
@@ -137,7 +137,7 @@ The pattern is the following. The plain bilinear form has no level set that is a
 
 ## Worked Examples
 
-**A unitary parameter.** Let $\tilde U\in \mathrm{U}(2)$, so $\tilde U^{*}\tilde U=e_{t}$. Then $\Theta_{\tilde U}$ is an isometry by the theorem, and it is the inner automorphism $\mathrm{Ad}_{\tilde U}$ since $\tilde U^{*}=\tilde U^{-1}$.
+**A unitary parameter.** Let $\tilde Q\in \mathrm{U}(2)$, so $\tilde Q^{*}\tilde Q=e_{t}$. Then $\Theta_{\tilde Q}$ is an isometry by the theorem, and it is the inner automorphism $\mathrm{Ad}_{\tilde Q}$ since $\tilde Q^{*}=\tilde Q^{-1}$.
 
 **A non-central unitary in the basis.** Take $\tilde Q=i\vec e_x$. Then $\tilde Q^{*}=i\vec e_x$ and
 
@@ -147,7 +147,7 @@ $$
 
 so $i\vec e_x$ lies in the pin group and $\Theta_{i\vec e_x}$ is an isometry; its determinant is the determinant of the matrix $\mathsf{M}_2(i\vec e_x)$, so it lies in the spin group exactly when that determinant is one.
 
-**A scaled unitary fails.** Take $\tilde Q=\sqrt2\,\tilde U$ with $\tilde U\in U$. Then $\tilde Q$ is not in the slice, and the operator is the similitude of multiplier $4$: on random pairs $\langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde Q_1\rangle_{*}=4\langle\tilde S,\tilde Q_1\rangle_{*}$ and the operator is not an isometry of the form.
+**A scaled unitary fails.** Take $\tilde Q=\sqrt2\,\tilde Q_1$ with $\tilde Q_1\in U$. Then $\tilde Q$ is not in the slice, and the operator is the similitude of multiplier $4$: on random pairs $\langle\Theta_{\tilde Q}\tilde S,\Theta_{\tilde Q}\tilde Q_1\rangle_{*}=4\langle\tilde S,\tilde Q_1\rangle_{*}$ and the operator is not an isometry of the form.
 
 **The central phase is invisible.** Take $\tilde Q=\omega e_{t}$ with $\lvert\omega\rvert=1$, a central unitary. Then $\tilde Q^{*}\tilde Q=e_{t}$, so $\omega e_{t}$ lies in the pin group, and $\Theta_{\omega e_{t}}=\Theta_{e_{t}}$ is the identity: the whole central circle is the kernel of the assignment and produces one and the same operator.
 

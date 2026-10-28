@@ -339,7 +339,7 @@ $$
 \boxed{\;\tilde S = S \otimes I_2\;},
 $$
 
-a two-by-two matrix in the channel space (left- and right-moving amplitudes) tensored with the identity on the state module. Equivalently, in the algebra, it commutes with the module's unitary group: for every $\tilde U$ with $\tilde U\tilde U^{*} = e_t$ that acts on the module,
+a two-by-two matrix in the channel space (left- and right-moving amplitudes) tensored with the identity on the state module. Equivalently, in the algebra, it commutes with the module's unitary group: for every $\tilde Q$ with $\tilde Q\tilde Q^{*} = e_t$ that acts on the module,
 
 $$
 [\tilde S,\tilde U] = 0,

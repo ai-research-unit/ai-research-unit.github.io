@@ -272,7 +272,7 @@ $$
 
 It is well defined for every unit and depends only on $\tilde U$; the two-sided placement of the Hermitian conjugate is what distinguishes it from left and right multiplication. It is invertible, with inverse $\operatorname{H}_{\tilde U^{-1}}$, since $(\tilde U^{*})^{-1} = (\tilde U^{-1})^{\dagger}$.
 
-**Theorem (multiplicative exactly on the unitary subgroup).** Let $\tilde U$ be a unit. Then $\operatorname{H}_{\tilde U}(\tilde Q_1\tilde Q_2) = \operatorname{H}_{\tilde U}(\tilde Q_1)\operatorname{H}_{\tilde U}(\tilde Q_2)$ for all $\tilde Q_1,\tilde Q_2$ if and only if $\tilde U^{*}\tilde U = e_t$, that is, if and only if $\tilde U$ is unitary.
+**Theorem (multiplicative exactly on the unitary subgroup).** Let $\tilde Q$ be a unit. Then $\operatorname{H}_{\tilde Q}(\tilde Q_1\tilde Q_2) = \operatorname{H}_{\tilde Q}(\tilde Q_1)\operatorname{H}_{\tilde Q}(\tilde Q_2)$ for all $\tilde Q_1,\tilde Q_2$ if and only if $\tilde Q^{*}\tilde Q = e_t$, that is, if and only if $\tilde Q$ is unitary.
 
 **Proof.** The two sides are $\tilde U\tilde Q_1\tilde Q_2\tilde U^{*}$ and $\tilde U\tilde Q_1\tilde U^{*}\tilde U\tilde Q_2\tilde U^{*}$; they agree for all $\tilde Q_1,\tilde Q_2$ exactly when the factor $\tilde U^{*}\tilde U$ inserted between $\tilde Q_1$ and $\tilde Q_2$ is $e_t$, that is when $\tilde U^{*} = \tilde U^{-1}$ and $\tilde U$ is unitary. In that case the sandwich is the inner automorphism $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$.
 
@@ -314,7 +314,7 @@ The sandwich acts on the four distinguished subspaces as follows.
 | $\mathbb{M}_+$ | yes | $\mathbb{M}_+$ |
 | $\mathbb{M}_-$ | yes | $\mathbb{M}_-$ |
 
-The centre is not preserved: on $e_t$ the sandwich gives $\tilde U\tilde U^{*}$, which is Hermitian but not central for a general unit, although on the unitary subgroup, where the sandwich is an automorphism, it preserves the centre because an automorphism carries the centre to itself. The two sectors are the only subspaces of the four that survive, and they survive as a pair: the sandwich preserves each separately and cannot move one into the other, because Hermitian character is exactly what the map preserves. This is the operator-theoretic reason that the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+\oplus\mathbb{M}_-$ is the natural one for the action.
+The centre is not preserved: on $e_t$ the sandwich gives $\tilde Q\tilde Q^{*}$, which is Hermitian but not central for a general unit, although on the unitary subgroup, where the sandwich is an automorphism, it preserves the centre because an automorphism carries the centre to itself. The two sectors are the only subspaces of the four that survive, and they survive as a pair: the sandwich preserves each separately and cannot move one into the other, because Hermitian character is exactly what the map preserves. This is the operator-theoretic reason that the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+\oplus\mathbb{M}_-$ is the natural one for the action.
 
 ### The Polar Dictionary
 

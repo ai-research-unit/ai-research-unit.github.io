@@ -70,7 +70,7 @@ This gives the ontology a second layer. If the operator is taken as primitive, t
 
 Two consequences follow.
 
-- **The amplitude is not unique as an operator factor.** The state determines $\tilde Q_{\mathrm n}$, because the positive square root is unique, but it does not determine the operator: neither the scale of $\tilde Q_H$ nor the unitary factor $\tilde U$ in $\tilde Q=\tilde Q_H\tilde U$ is fixed by the state. The fibre is a positive scale times the unitary group.
+- **The amplitude is not unique as an operator factor.** The state determines $\tilde Q_{\mathrm n}$, because the positive square root is unique, but it does not determine the operator: neither the scale of $\tilde Q_H$ nor the unitary factor $\tilde Q_0$ in $\tilde Q=\tilde Q_H\tilde Q_0$ is fixed by the state. The fibre is a positive scale times the unitary group.
 - **The square is not a product of two states.** $\tilde{Ϛ}_Q=\tilde Q_{\mathrm n}^{2}$ is the square of a positive element, not the product of two copies of the state; the two coincide only when the state is pure.
 
 **The boundary.** The reading "the state is the square of an amplitude" is an algebraic identity, not an ontology. It says that a state can always be presented as a squared positive element, and that an operator presents it that way canonically. It does not say that the amplitude is more real than the state, and it does not supply a dynamics for either. The operator-to-state map is developed in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*.

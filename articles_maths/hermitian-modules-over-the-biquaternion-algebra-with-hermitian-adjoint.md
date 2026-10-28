@@ -140,7 +140,7 @@ since $\exp(\dagger)\tilde\Pi$ is a nonzero positive semidefinite matrix and its
 
 ## The Unitary Slice
 
-**Theorem (the slice acts by unitaries).** Let $U=\{\tilde U\in\mathbb{B}:\tilde{U}^{*}\tilde U=e_t\}=\mathrm{U}(2)$ be the unitary slice. Then left multiplication by $\tilde U$ is a unitary operator on every Hermitian Clifford module, and in particular on $S$:
+**Theorem (the slice acts by unitaries).** Let $U=\{\tilde Q\in\mathbb{B}:\tilde Q^{*}\tilde Q=e_t\}=\mathrm{U}(2)$ be the unitary slice. Then left multiplication by $\tilde Q$ is a unitary operator on every Hermitian Clifford module, and in particular on $S$:
 
 $$
 \boxed{\;\langle\tilde U\cdot t,\tilde U\cdot s\rangle_{*}=\langle t,s\rangle_{*}\qquad\text{for all }s,t\in S\;}.
@@ -199,7 +199,7 @@ The **unitary slice** $U=\mathrm{U}(2)$ acts on every Hermitian module by unitar
 | $\langle\tilde Q,\tilde Q_3\rangle_{*}=\mathrm{Sc}(\tilde Q_3^{*}\tilde Q)=\sum_\mu Q_{3\bar{\mu}}Q_\mu$ | Form of the regular module; positive definite |
 | $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$ | The idempotents are self-adjoint; hence no isotropic ideal |
 | Gram $=\tfrac12 I_2$ in $\{\tilde\Pi_+,\vec\Upsilon_y\}$ | Positive definite restriction to $S$ |
-| $U=\mathrm{U}(2)=\{\tilde{U}^{*}\tilde U=e_t\}$ | Unitary slice, acting by unitaries; Lie algebra $\mathbb{M}_-$ |
+| $U=\mathrm{U}(2)=\{\tilde Q^{*}\tilde Q=e_t\}$ | Unitary slice, acting by unitaries; Lie algebra $\mathbb{M}_-$ |
 | $SL(2,\mathbb{C})$ | Norm-one slice; not unitary on $S$ except on $SU(2)$ |
 | $D_{\mathrm{alg}}=\sum_kL_{\vec e_k}$, $D_S=-i(\sigma_1+\sigma_2+\sigma_3)$ | Dirac element and its restriction |
 | $D_S^{2}=-3\,\mathrm{id}$, $D_S^{*}D_S=3\,\mathrm{id}$ | Clifford square and positive Hermitian square; gap $3$ |

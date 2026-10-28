@@ -55,7 +55,7 @@ $$
 \qquad \text{for every normalized } |\psi\rangle\in S ,
 $$
 
-with $\tilde{U}\tilde{U}^{*} = \tilde{U}^{*}\tilde{U} = e_t\otimes e_t$. The blank $|0\rangle$ is a fixed unit vector of the second factor, and the requirement is that the same $\tilde{U}$ clones every input. This is the form in which the obstruction is transparent.
+with $\tilde Q\tilde Q^{*} = \tilde Q^{*}\tilde Q = e_t\otimes e_t$. The blank $|0\rangle$ is a fixed unit vector of the second factor, and the requirement is that the same $\tilde Q$ clones every input. This is the form in which the obstruction is transparent.
 
 ## The Algebraic Obstruction
 
@@ -69,7 +69,7 @@ $$
 = \langle\psi|\phi\rangle ,
 $$
 
-and since $\tilde{U}$ is unitary this equals $\langle \psi\otimes\psi\,|\,\phi\otimes\phi\rangle$, the overlap of the two outputs.
+and since $\tilde Q$ is unitary this equals $\langle \psi\otimes\psi\,|\,\phi\otimes\phi\rangle$, the overlap of the two outputs.
 
 ### Overlaps are squared
 
@@ -95,7 +95,7 @@ The pairing is $1$ only for $\psi=\phi$ up to phase, and $0$ only for orthogonal
 
 The conclusion is the no-cloning theorem in the framework's terms:
 
-> A deterministic, universal cloning process exists for a set of pure states if and only if the states are pairwise orthogonal. For any two non-orthogonal rays of the defining module, no unitary $\tilde{U}$ on $\mathbb{B}\otimes\mathbb{B}$ maps $|\psi\rangle\otimes|0\rangle$ to $|\psi\rangle\otimes|\psi\rangle$ for both.
+> A deterministic, universal cloning process exists for a set of pure states if and only if the states are pairwise orthogonal. For any two non-orthogonal rays of the defining module, no unitary $\tilde Q$ on $\mathbb{B}\otimes\mathbb{B}$ maps $|\psi\rangle\otimes|0\rangle$ to $|\psi\rangle\otimes|\psi\rangle$ for both.
 
 The normalised Hermitian form, read through the trace, is the algebra's measure of distinguishability: it is $1$ for coincident rays, $0$ for orthogonal rays, and strictly between for all others. Cloning would require it to be idempotent under squaring, and on the interval $[0,1]$ only the endpoints satisfy $x=x^2$. The obstruction is thus a statement about the range of the normalised Hermitian form: **a state space whose distinguishability takes intermediate values cannot be cloned.** The maximally mixed state and the pure states are the endpoints of the pairing's range; it is precisely the interior of the range that forbids cloning.
 
@@ -114,7 +114,7 @@ The normalised Hermitian form, read through the trace, is $\mathrm{Tr}(\tilde\Pi
 
 ### Cloning versus copying
 
-For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ — cloning is possible: the unitary that copies in that basis, $\tilde{U}(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde{U}(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
+For an orthogonal family — for instance the two states of any idempotent basis $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ — cloning is possible: the unitary that copies in that basis, $\tilde Q(|0\rangle\otimes|0\rangle)=|0\rangle\otimes|0\rangle$, $\tilde Q(|1\rangle\otimes|0\rangle)=|1\rangle\otimes|1\rangle$, does the job. This is not quantum cloning but classical copying in a known basis, and it uses no information about the state beyond the bit that distinguishes the two orthogonal alternatives. The theorem's content is that the ability to copy in one basis confers no ability to copy in any other.
 
 ## The Obstruction is Linearity
 
@@ -163,7 +163,7 @@ $$
 \end{aligned}
 $$
 
-The two images are orthonormal, so $\tilde{U}$ extends to a unitary on the three-qubit space. For a general input $|\psi\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs,
+The two images are orthonormal, so $\tilde Q$ extends to a unitary on the three-qubit space. For a general input $|\psi\rangle = a|0\rangle+b|1\rangle$ the linear extension gives the output state; tracing out the ancilla $C$ yields the two-qubit state of the clones, and the two single-clone states are equal by the symmetry of the construction. Direct computation of the fidelity over a family of superposition inputs,
 
 $$
 |\psi(\theta,\varphi)\rangle = \cos\tfrac{\theta}{2}\,|0\rangle + \exp(i\varphi)\sin\tfrac{\theta}{2}\,|1\rangle ,
@@ -193,7 +193,7 @@ There is a physical argument for the obstruction that complements the algebraic 
 
 The obstruction has companions, all of which are statements about the affine structure of the state space and the plain form.
 
-**No-deleting.** Given two copies of an unknown state there is no process that deletes one and leaves the other, unless the two are orthogonal. The proof is the mirror of the cloning proof: a deleting unitary would satisfy $\tilde{U}(|\psi\rangle|\psi\rangle)=|\psi\rangle|0\rangle$ for all $|\psi\rangle$, and the overlap of two outputs is $\langle\psi|\phi\rangle$ while the overlap of two inputs is $\langle\psi|\phi\rangle^2$.
+**No-deleting.** Given two copies of an unknown state there is no process that deletes one and leaves the other, unless the two are orthogonal. The proof is the mirror of the cloning proof: a deleting unitary would satisfy $\tilde Q(|\psi\rangle|\psi\rangle)=|\psi\rangle|0\rangle$ for all $|\psi\rangle$, and the overlap of two outputs is $\langle\psi|\phi\rangle$ while the overlap of two inputs is $\langle\psi|\phi\rangle^2$.
 
 **No-broadcasting.** A mixed state cannot be broadcast: there is no process that takes one copy of a state to two copies for a set of states that do not commute. This is the mixed-state generalization, and it shows that the obstruction is not about purity but about the affine structure of the state space; the framework's state space is the cone slice, and the argument is the same affinity argument as above.
 
@@ -258,7 +258,7 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
 | $\tilde\Pi(\psi)$ | Rank-one idempotent of a pure state |
 | $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}) = |\langle\psi|\phi\rangle|^2$ | Trace reading of the Hermitian form (distinguishability) |
-| $\tilde{U}$ | Cloning unitary, $\tilde{U}\tilde{U}^{*} = e_t\otimes e_t$ |
+| $\tilde Q$ | Cloning unitary, $\tilde Q\tilde Q^{*} = e_t\otimes e_t$ |
 | $\Phi$ | Cloning channel, completely positive trace preserving |
 | $\Phi(\tilde{Ϛ}\otimes\tilde{Ϛ}_0) = \tilde{Ϛ}\otimes\tilde{Ϛ}$ | Cloning requirement |
 | $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}) = (\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}))^2$ | Algebraic obstruction |

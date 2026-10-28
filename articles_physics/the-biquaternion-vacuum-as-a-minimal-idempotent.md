@@ -182,7 +182,7 @@ a two-complex-dimensional space, because the map $\tilde Q\mapsto\tilde Q \tilde
 
 > the one-mode vacuum idempotent determines the one-particle (spinor) module as the Peirce carrier it generates, a minimal left ideal here.
 
-This is the mechanism by which the vacuum situates the field in the framework: the algebra alone has no distinguished module, and the choice of vacuum idempotent selects one. Conversely the module fixes the idempotent only up to the equivalence $\tilde\Pi\mapsto \tilde U\tilde\Pi\tilde U^{*}$ by unitary units of the algebra, which is the statement that the module is unique while the vacuum is not.
+This is the mechanism by which the vacuum situates the field in the framework: the algebra alone has no distinguished module, and the choice of vacuum idempotent selects one. Conversely the module fixes the idempotent only up to the equivalence $\tilde\Pi\mapsto \tilde Q\tilde\Pi\tilde Q^{*}$ by unitary units of the algebra, which is the statement that the module is unique while the vacuum is not.
 
 The same construction, run in the reverse direction, is the Hermitian GNS reconstruction. The state $\omega_{\tilde\Pi}(\tilde Q_3) = \mathrm{Tr}(\tilde\Pi\tilde Q_3)$ has a GNS Hilbert space obtained from $\mathbb{B}$ by quotienting out the elements of zero $\omega_{\tilde\Pi}$-norm; for a **pure** state that quotient is exactly the minimal left ideal, of complex dimension two, and the GNS representation is irreducible. For a mixed state the quotient is larger and the representation is reducible. The vacuum's minimality is thus the algebraic reason its GNS representation is irreducible, and the GNS construction itself is the subject of the companion article *The Hermitian GNS Construction in the Biquaternion Framework*.
 

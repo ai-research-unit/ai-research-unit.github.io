@@ -8,19 +8,19 @@ $$
 E_{ij}\longmapsto\frac{t_{i}}{t_{j}}E_{ij},\qquad t_{i}\in\mathbb{C}^{\times},
 $$
 
-and the common scalar of the three $t_{i}$ acts trivially, so the effective group is $(\mathbb{C}^{\times})^{2}$. Its two parameters are $\lambda_{1}=t_{0}/t_{1}$ and $\lambda_{2}=t_{1}/t_{2}$; the third ratio is the product $\lambda_{1}\lambda_{2}$, and there is no third independent scalar. The idempotents do not depend on $\lambda_{1},\lambda_{2}$.
+and the common scalar of the three $t_{i}$ acts trivially, so the effective group is $(\mathbb{C}^{\times})^{2}$. Its two parameters are $\lambda_{1}=t_{1}/t_{2}$ and $\lambda_{2}=t_{2}/t_{3}$; the third ratio is the product $\lambda_{1}\lambda_{2}$, and there is no third independent scalar. The idempotents do not depend on $\lambda_{1},\lambda_{2}$.
 
 This article reads the gauge on the Peirce coordinates, identifies the gauge-invariant combinations of the off-diagonal entries, proves that the Peirce table is unchanged, compares the two-parameter gauge with the single $\lambda$ of the biquaternion algebra, and separates the gauge from the global phase of a quantum state. The frame and the simple nilpotents are *The Frame, the Simple Nilpotents and the Gauge*; the Peirce decomposition is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*; the corner is *The $M_{2}$ Corner of $M_{3}(\mathbb{C})$*.
 
 ## The Gauge on the Peirce Coordinates
 
-**The frame change.** Let $E_{ij}$ be a normalized frame, $E_{ij}E_{kl}=\delta_{jk}E_{il}$, $E_{ii}=P_{i}$. For $t_{0},t_{1},t_{2}\in\mathbb{C}^{\times}$ put
+**The frame change.** Let $E_{ij}$ be a normalized frame, $E_{ij}E_{kl}=\delta_{jk}E_{il}$, $E_{ii}=P_{i}$. For $t_{1},t_{2},t_{3}\in\mathbb{C}^{\times}$ put
 
 $$
 E_{ij}'=\frac{t_{i}}{t_{j}}E_{ij}.
 $$
 
-Then $E_{ij}'E_{kl}'=\delta_{jk}E_{il}'$ and $E_{ii}'=E_{ii}$, so the $E_{ij}'$ are again a normalized frame with the same diagonal idempotents. The map $E_{ij}\mapsto E_{ij}'$ is the gauge transformation of *The Frame, the Simple Nilpotents and the Gauge*, with $E_{ij}'=D E_{ij}D^{-1}$ for $D=\operatorname{diag}(t_{0},t_{1},t_{2})$.
+Then $E_{ij}'E_{kl}'=\delta_{jk}E_{il}'$ and $E_{ii}'=E_{ii}$, so the $E_{ij}'$ are again a normalized frame with the same diagonal idempotents. The map $E_{ij}\mapsto E_{ij}'$ is the gauge transformation of *The Frame, the Simple Nilpotents and the Gauge*, with $E_{ij}'=D E_{ij}D^{-1}$ for $D=\operatorname{diag}(t_{1},t_{2},t_{3})$.
 
 **The coordinates.** Write an element as
 
@@ -37,24 +37,24 @@ $$
 The diagonal coordinates are invariant,
 
 $$
-\alpha_{00}'=\alpha_{00},\qquad \alpha_{11}'=\alpha_{11},\qquad \alpha_{22}'=\alpha_{22},
+\alpha_{11}'=\alpha_{11},\qquad \alpha_{22}'=\alpha_{22},\qquad \alpha_{33}'=\alpha_{33},
 $$
 
 and the off-diagonal ones transform by the six weights
 
 $$
-\alpha_{01}'=\lambda_{1}^{-1}\alpha_{01},\quad
-\alpha_{12}'=\lambda_{2}^{-1}\alpha_{12},\quad
-\alpha_{02}'=(\lambda_{1}\lambda_{2})^{-1}\alpha_{02},
+\alpha_{12}'=\lambda_{1}^{-1}\alpha_{12},\quad
+\alpha_{23}'=\lambda_{2}^{-1}\alpha_{23},\quad
+\alpha_{13}'=(\lambda_{1}\lambda_{2})^{-1}\alpha_{13},
 $$
 
 $$
-\alpha_{10}'=\lambda_{1}\alpha_{10},\quad
-\alpha_{21}'=\lambda_{2}\alpha_{21},\quad
-\alpha_{20}'=\lambda_{1}\lambda_{2}\alpha_{20},
+\alpha_{21}'=\lambda_{1}\alpha_{21},\quad
+\alpha_{32}'=\lambda_{2}\alpha_{32},\quad
+\alpha_{31}'=\lambda_{1}\lambda_{2}\alpha_{31},
 $$
 
-where $\lambda_{1}=t_{0}/t_{1}$ and $\lambda_{2}=t_{1}/t_{2}$. The pattern is the root system $A_{2}$: the entries $01,12,02$ carry the positive weights $1,1,2$ and the entries $10,21,20$ carry the negative weights $-1,-1,-2$, with the composite $02$ carrying the sum $1+1=2$.
+where $\lambda_{1}=t_{1}/t_{2}$ and $\lambda_{2}=t_{2}/t_{3}$. The pattern is the root system $A_{2}$: the units $E_{12},E_{23},E_{13}$ carry the positive weights $1,1,2$ and the units $E_{21},E_{32},E_{31}$ carry the negative weights $-1,-1,-2$, with the composite $E_{13}$ carrying the sum $1+1=2$. The coordinates transform by the inverse weights, as the formulas above show.
 
 **Worked example.** Take
 
@@ -65,15 +65,15 @@ $$
 in the standard frame, and $\lambda_{1}=2$, $\lambda_{2}=3$, so $D=\operatorname{diag}(6,3,1)$. The coordinates become
 
 $$
-\alpha_{01}'=\frac{2}{2}=1,\quad
-\alpha_{12}'=\frac{6}{3}=2,\quad
-\alpha_{02}'=\frac{3}{6}=\frac12,
+\alpha_{12}'=\frac{2}{2}=1,\quad
+\alpha_{23}'=\frac{6}{3}=2,\quad
+\alpha_{13}'=\frac{3}{6}=\frac12,
 $$
 
 $$
-\alpha_{10}'=4\cdot2=8,\quad
-\alpha_{21}'=8\cdot3=24,\quad
-\alpha_{20}'=7\cdot6=42,
+\alpha_{21}'=4\cdot2=8,\quad
+\alpha_{32}'=8\cdot3=24,\quad
+\alpha_{31}'=7\cdot6=42,
 $$
 
 while the diagonal $1,5,9$ is unchanged. The gauge is not a symmetry of the array of numbers; it is a change of the frame in which the array is read. The element $A$ itself is fixed.
@@ -88,24 +88,24 @@ which is the inverse of the transformation of the coordinates. The two readings 
 
 ## The Gauge-Invariant Combinations
 
-**The diagonal is invariant.** The three numbers $\alpha_{00},\alpha_{11},\alpha_{22}$ are unchanged. They are the values of the three idempotents on $A$:
+**The diagonal is invariant.** The three numbers $\alpha_{11},\alpha_{22},\alpha_{33}$ are unchanged. They are the values of the three idempotents on $A$:
 
 $$
 P_{i}AP_{i}=\alpha_{ii}P_{i}.
 $$
 
-The trace is $\alpha_{00}+\alpha_{11}+\alpha_{22}$, so it is invariant; the determinant is the determinant of the coordinate array, so it is invariant as well.
+The trace is $\alpha_{11}+\alpha_{22}+\alpha_{33}$, so it is invariant; the determinant is the determinant of the coordinate array, so it is invariant as well.
 
 **The opposite-pair products are invariant.** The three products
 
 $$
-\alpha_{01}\alpha_{10},\qquad \alpha_{12}\alpha_{21},\qquad \alpha_{02}\alpha_{20}
+\alpha_{12}\alpha_{21},\qquad \alpha_{23}\alpha_{32},\qquad \alpha_{13}\alpha_{31}
 $$
 
 are unchanged by the gauge:
 
 $$
-\alpha_{01}'\alpha_{10}'=\frac{\alpha_{01}}{\lambda_{1}}\cdot\lambda_{1}\alpha_{10}=\alpha_{01}\alpha_{10},
+\alpha_{12}'\alpha_{21}'=\frac{\alpha_{12}}{\lambda_{1}}\cdot\lambda_{1}\alpha_{21}=\alpha_{12}\alpha_{21},
 $$
 
 and similarly for the other two pairs. These are the **coherence entries** of the Peirce coordinates: for each pair of opposite lines, the product of the two coordinates is a gauge-invariant number. The product is the coefficient of $P_{i}$ in the square of the off-diagonal part, and it is the natural pairing of the line with its dual.
@@ -113,31 +113,31 @@ and similarly for the other two pairs. These are the **coherence entries** of th
 **The oriented three-cycles are invariant.** The products
 
 $$
-\alpha_{01}\alpha_{12}\alpha_{20},\qquad \alpha_{10}\alpha_{21}\alpha_{02}
+\alpha_{12}\alpha_{23}\alpha_{31},\qquad \alpha_{21}\alpha_{32}\alpha_{13}
 $$
 
 are also invariant:
 
 $$
-\alpha_{01}'\alpha_{12}'\alpha_{20}'=\frac{\alpha_{01}}{\lambda_{1}}\cdot\frac{\alpha_{12}}{\lambda_{2}}\cdot\lambda_{1}\lambda_{2}\alpha_{20}=\alpha_{01}\alpha_{12}\alpha_{20},
+\alpha_{12}'\alpha_{23}'\alpha_{31}'=\frac{\alpha_{12}}{\lambda_{1}}\cdot\frac{\alpha_{23}}{\lambda_{2}}\cdot\lambda_{1}\lambda_{2}\alpha_{31}=\alpha_{12}\alpha_{23}\alpha_{31},
 $$
 
-and the other cycle is its opposite. The two cycles are the two orientations of the triangle $0\to1\to2\to0$; their product is the product of the three opposite-pair invariants.
+and the other cycle is its opposite. The two cycles are the two orientations of the triangle $1\to2\to3\to1$; their product is the product of the three opposite-pair invariants.
 
 **The invariant ring.** The gauge group $(\mathbb{C}^{\times})^{2}$ acts on the six off-diagonal coordinates with the six weights $\pm1,\pm1,\pm2$. The four invariant combinations
 
 $$
-\alpha_{01}\alpha_{10},\quad
 \alpha_{12}\alpha_{21},\quad
-\alpha_{02}\alpha_{20},\quad
-\alpha_{01}\alpha_{12}\alpha_{20}
+\alpha_{23}\alpha_{32},\quad
+\alpha_{13}\alpha_{31},\quad
+\alpha_{12}\alpha_{23}\alpha_{31}
 $$
 
 generate the invariant ring; the second three-cycle is
 
 $$
-\alpha_{10}\alpha_{21}\alpha_{02}
-=\frac{(\alpha_{01}\alpha_{10})(\alpha_{12}\alpha_{21})(\alpha_{02}\alpha_{20})}{\alpha_{01}\alpha_{12}\alpha_{20}}.
+\alpha_{21}\alpha_{32}\alpha_{13}
+=\frac{(\alpha_{12}\alpha_{21})(\alpha_{23}\alpha_{32})(\alpha_{13}\alpha_{31})}{\alpha_{12}\alpha_{23}\alpha_{31}}.
 $$
 
 The diagonal coordinates are additional invariants, independent of the gauge. The count of the off-diagonal invariants is $6-2=4$, matching the four generators; the ring has relations among them, but the four numbers are the gauge-invariant content of the six off-diagonal entries.
@@ -170,13 +170,13 @@ AB=\sum_{i,j}\Bigl(\sum_{m}\alpha_{im}\beta_{mj}\Bigr)E_{ij}
 =\sum_{i,j}\Bigl(\sum_{m}\alpha_{im}'\beta_{mj}'\Bigr)E_{ij}',
 $$
 
-because the coordinate arrays multiply by the same matrix product in either frame. The gauge is a change of basis of the coordinate space that preserves the matrix multiplication; it is a conjugation of the coordinate array by the diagonal matrix $\operatorname{diag}(t_{0},t_{1},t_{2})^{-1}$? Let us check: $\alpha'_{ij}=(t_{j}/t_{i})\alpha_{ij}$, so the array $\alpha'$ is $T^{-1}\alpha T$ with $T=\operatorname{diag}(t_{0},t_{1},t_{2})$. Indeed $(T^{-1}\alpha T)_{ij}=(t_{j}/t_{i})\alpha_{ij}$. The product is preserved because conjugation by $T$ is an algebra automorphism of the array algebra. This is the coordinate form of the frame change.
+because the coordinate arrays multiply by the same matrix product in either frame. The gauge is a change of basis of the coordinate space that preserves the matrix multiplication; it is the conjugation $\alpha'=T^{-1}\alpha T$ with $T=\operatorname{diag}(t_{1},t_{2},t_{3})$. Indeed $\alpha'_{ij}=(t_{j}/t_{i})\alpha_{ij}$. The product is preserved because conjugation by $T$ is an algebra automorphism of the array algebra. This is the coordinate form of the frame change.
 
 **The gauge is an automorphism of the coordinate algebra.** The map $\alpha\mapsto T^{-1}\alpha T$ is an automorphism of $M_{3}(\mathbb{C})$; it is inner, given by the diagonal matrix $T$. The gauge group is the image of the diagonal torus in $PGL_{3}$, and its action on the coordinates is the adjoint action. The frame change and the coordinate conjugation are the same inner automorphism read in two ways.
 
 ## The Count and the Cocycle
 
-**The gauge group.** The parameters $t_{0},t_{1},t_{2}$ and $ct_{0},ct_{1},ct_{2}$ give the same rescaling, so the effective group is
+**The gauge group.** The parameters $t_{1},t_{2},t_{3}$ and $ct_{1},ct_{2},ct_{3}$ give the same rescaling, so the effective group is
 
 $$
 (\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},
@@ -185,9 +185,9 @@ $$
 of complex dimension two. The two parameters are
 
 $$
-\lambda_{1}=\frac{t_{0}}{t_{1}},\qquad \lambda_{2}=\frac{t_{1}}{t_{2}},
+\lambda_{1}=\frac{t_{1}}{t_{2}},\qquad \lambda_{2}=\frac{t_{2}}{t_{3}},
 \qquad
-\frac{t_{0}}{t_{2}}=\lambda_{1}\lambda_{2}.
+\frac{t_{1}}{t_{3}}=\lambda_{1}\lambda_{2}.
 $$
 
 The third ratio is not independent. If a rescaling $E_{ij}\mapsto\lambda_{ij}E_{ij}$ preserves the frame, the cocycle
@@ -246,16 +246,16 @@ The gauge of the $M_{3}$ frame is
 
 $$
 \boxed{\;E_{ij}\longmapsto\frac{t_{i}}{t_{j}}E_{ij},\qquad
-(t_{0},t_{1},t_{2})\in(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},\;}
+(t_{1},t_{2},t_{3})\in(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},\;}
 $$
 
 with the two parameters
 
 $$
-\lambda_{1}=\frac{t_{0}}{t_{1}},\qquad \lambda_{2}=\frac{t_{1}}{t_{2}},\qquad \lambda_{3}=\lambda_{1}\lambda_{2}.
+\lambda_{1}=\frac{t_{1}}{t_{2}},\qquad \lambda_{2}=\frac{t_{2}}{t_{3}},\qquad \lambda_{3}=\lambda_{1}\lambda_{2}.
 $$
 
-It fixes the idempotents, the root, the trace, the determinant and the spectrum. On the Peirce coordinates it acts by $\alpha_{ij}\mapsto(t_{j}/t_{i})\alpha_{ij}$; the diagonal entries and the products $\alpha_{01}\alpha_{10}$, $\alpha_{12}\alpha_{21}$, $\alpha_{02}\alpha_{20}$ and the three-cycles are invariant. The Peirce table and the multiplication rule are unchanged: the gauge is the freedom of the normalized frame, not a change of the algebra.
+It fixes the idempotents, the root, the trace, the determinant and the spectrum. On the Peirce coordinates it acts by $\alpha_{ij}\mapsto(t_{j}/t_{i})\alpha_{ij}$; the diagonal entries and the products $\alpha_{12}\alpha_{21}$, $\alpha_{23}\alpha_{32}$, $\alpha_{13}\alpha_{31}$ and the three-cycles are invariant. The Peirce table and the multiplication rule are unchanged: the gauge is the freedom of the normalized frame, not a change of the algebra.
 
 | Quantity | Value for $M_{3}(\mathbb{C})$ |
 |---|---|
@@ -276,8 +276,8 @@ The single $\lambda$ of the biquaternion algebra is the $n=2$ case of the patter
 | Symbol | Meaning |
 |---|---|
 | $t_{i}$ | the three gauge parameters, modulo a common scalar |
-| $\lambda_{1}=t_{0}/t_{1}$ | the gauge parameter on $E_{12}$ |
-| $\lambda_{2}=t_{1}/t_{2}$ | the gauge parameter on $E_{23}$ |
+| $\lambda_{1}=t_{1}/t_{2}$ | the gauge parameter on $E_{12}$ |
+| $\lambda_{2}=t_{2}/t_{3}$ | the gauge parameter on $E_{23}$ |
 | $\lambda_{3}=\lambda_{1}\lambda_{2}$ | the forced parameter on $E_{13}$ |
 | $\alpha_{ij}$ | the Peirce coordinates |
 | $\alpha_{ij}'$ | the coordinates after the gauge |

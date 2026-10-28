@@ -199,7 +199,7 @@ j^R_\mu = \tilde U^{*}\partial/\partial Q_{1,\mu}\,\tilde U ,
 j^L_\mu = \partial/\partial Q_{1,\mu}\,\tilde U\,\tilde U^{*} .
 $$
 
-Each is a one-form valued in the Lie algebra $\mathrm{SU}(2)$, because differentiating $\tilde U^{*}\tilde U = e_t$ gives $\overline{\partial/\partial Q_{1,\mu}\,\tilde U}\,\tilde U + \tilde U^{*}\partial/\partial Q_{1,\mu}\,\tilde U=0$, so $j^R_\mu$ is anti-Hermitian and traceless. The Lagrangian is built from $j^R_\mu$,
+Each is a one-form valued in the Lie algebra $\mathrm{SU}(2)$, because differentiating $\tilde Q^{*}\tilde Q = e_t$ gives $\overline{\partial/\partial Q_{1,\mu}\,\tilde Q}\,\tilde Q + \tilde Q^{*}\partial/\partial Q_{1,\mu}\,\tilde Q=0$, so $j^R_\mu$ is anti-Hermitian and traceless. The Lagrangian is built from $j^R_\mu$,
 
 $$
 \mathcal{L}_2 = -\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{j^R_\mu}\,j^R_\mu\right),

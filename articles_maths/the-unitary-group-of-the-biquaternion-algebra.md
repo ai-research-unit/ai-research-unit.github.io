@@ -74,7 +74,7 @@ Hence $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})$, and $\pi_n(\mathbb{B}^
 
 ## The Retraction of the Norm-One Group onto $S^{3}$
 
-**Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{\langle\tilde Q_1\rangle_{\natural}=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_3\cong\mathbb{Z}$ and vanishing $\pi_1,\pi_2$.
+**Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{\langle\tilde U\rangle_{\natural}=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_3\cong\mathbb{Z}$ and vanishing $\pi_1,\pi_2$.
 
 **Proof.** Let $\tilde{Q}_3\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{Q}_3=\tilde Q\tilde{Q}_2$. Then $1=\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$, with $|\langle\tilde Q,\tilde Q\rangle_{\natural}|=1$ and $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$ a positive real, so $\langle\tilde Q,\tilde Q\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=1$ and $\tilde Q\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element
 

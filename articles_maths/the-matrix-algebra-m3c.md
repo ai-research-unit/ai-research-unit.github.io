@@ -13,10 +13,10 @@ The article is the first of the category. The element and its coordinates are *T
 **Definition.** $M_{3}(\mathbb{C})$ is the set of $3\times3$ arrays of complex numbers with the entrywise sum and the product
 
 $$
-(AB)_{ij}=\sum_{k=0}^{2}a_{ik}b_{kj}.
+(AB)_{ij}=\sum_{k=1}^{3}a_{ik}b_{kj}.
 $$
 
-The **matrix units** $E_{ij}$ are the arrays with a $1$ in position $(i,j)$ and $0$ elsewhere, for $i,j\in\{0,1,2\}$.
+The **matrix units** $E_{ij}$ are the arrays with a $1$ in position $(i,j)$ and $0$ elsewhere, for $i,j\in\{1,2,3\}$.
 
 **Proposition (the matrix-unit table).** The nine matrix units form a $\mathbb{C}$-basis of $M_{3}(\mathbb{C})$, and
 
@@ -35,7 +35,7 @@ which is the $(p,q)$-entry of $\delta_{jk}E_{il}$. The nine units are linearly i
 
 **Theorem.** With this product, $M_{3}(\mathbb{C})$ is an associative unital non-commutative $\mathbb{C}$-algebra of complex dimension $9$ and real dimension $18$.
 
-**Proof.** The product is $\mathbb{C}$-bilinear by the definition of the entries. It is associative because the product of matrices is the composition of the linear maps they represent, and composition is associative; equivalently, both $(AB)C$ and $A(BC)$ have $(i,l)$-entry $\sum_{j,k}a_{ij}b_{jk}c_{kl}$. The unit is the identity matrix $I$, with entries $\delta_{ij}$: $IE_{kl}=E_{kl}=E_{kl}I$. The algebra is not commutative, since $E_{01}E_{10}=E_{00}$ while $E_{10}E_{01}=E_{11}$, and $E_{00}\neq E_{11}$. The nine matrix units are a complex basis, so the complex dimension is nine and the real dimension is eighteen.
+**Proof.** The product is $\mathbb{C}$-bilinear by the definition of the entries. It is associative because the product of matrices is the composition of the linear maps they represent, and composition is associative; equivalently, both $(AB)C$ and $A(BC)$ have $(i,l)$-entry $\sum_{j,k}a_{ij}b_{jk}c_{kl}$. The unit is the identity matrix $I$, with entries $\delta_{ij}$: $IE_{kl}=E_{kl}=E_{kl}I$. The algebra is not commutative, since $E_{12}E_{21}=E_{11}$ while $E_{21}E_{12}=E_{22}$, and $E_{11}\neq E_{22}$. The nine matrix units are a complex basis, so the complex dimension is nine and the real dimension is eighteen.
 
 **The product is the composition of endomorphisms.** Let $\mathbb{C}^{3}$ be the space of column vectors and let $A$ act by $x\mapsto Ax$. The map
 
@@ -48,7 +48,7 @@ is an isomorphism of $\mathbb{C}$-algebras: it is linear, it is injective becaus
 **The coordinate rule.** For $A=(a_{ij})$ and $B=(b_{ij})$ the entries of the product are
 
 $$
-(AB)_{ij}=\sum_{k=0}^{2}a_{ik}b_{kj},
+(AB)_{ij}=\sum_{k=1}^{3}a_{ik}b_{kj},
 $$
 
 and the diagonal entries are $(AB)_{ii}=\sum_{k}a_{ik}b_{ki}$. The rule is the only multiplication used in the category; the matrix units are the case in which one entry is $1$ and the others are $0$.
@@ -60,13 +60,13 @@ and the diagonal entries are $(AB)_{ii}=\sum_{k}a_{ik}b_{ki}$. The rule is the o
 **Definition.** The **trace** of $A$ is
 
 $$
-\operatorname{tr}A=\sum_{i=0}^{2}a_{ii},
+\operatorname{tr}A=\sum_{i=1}^{3}a_{ii},
 $$
 
 and the **determinant** is
 
 $$
-\det A=\sum_{\sigma\in S_{3}}\operatorname{sgn}(\sigma)\,a_{0,\sigma(0)}a_{1,\sigma(1)}a_{2,\sigma(2)}.
+\det A=\sum_{\sigma\in S_{3}}\operatorname{sgn}(\sigma)\,a_{1,\sigma(1)}a_{2,\sigma(2)}a_{3,\sigma(3)}.
 $$
 
 **Proposition (the trace).** The trace is linear, it satisfies
@@ -98,18 +98,18 @@ and it is the unique multiplicative polynomial of degree three in the entries th
 **The explicit formulas for $3\times3$.** For
 
 $$
-A=\begin{pmatrix}a_{00}&a_{01}&a_{02}\\a_{10}&a_{11}&a_{12}\\a_{20}&a_{21}&a_{22}\end{pmatrix}
+A=\begin{pmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{22}&a_{23}\\a_{31}&a_{32}&a_{33}\end{pmatrix}
 $$
 
 the determinant is
 
 $$
-\det A=a_{00}(a_{11}a_{22}-a_{12}a_{21})
--a_{01}(a_{10}a_{22}-a_{12}a_{20})
-+a_{02}(a_{10}a_{21}-a_{11}a_{20}),
+\det A=a_{11}(a_{22}a_{33}-a_{23}a_{32})
+-a_{12}(a_{21}a_{33}-a_{23}a_{31})
++a_{13}(a_{21}a_{32}-a_{22}a_{31}),
 $$
 
-the Laplace expansion along the first row. The trace is $a_{00}+a_{11}+a_{22}$.
+the Laplace expansion along the first row. The trace is $a_{11}+a_{22}+a_{33}$.
 
 **Cayley–Hamilton.** The characteristic polynomial is
 
@@ -148,7 +148,7 @@ $$
 \langle A,B\rangle_{\mathrm{tr}}=\operatorname{tr}(AB)
 $$
 
-is symmetric, $\mathbb{C}$-bilinear and nondegenerate: if $\operatorname{tr}(AB)=0$ for every $B$, then taking $B=E_{ij}$ gives $a_{ji}=0$ for all $i,j$, so $A=0$. It is not positive definite over $\mathbb{C}$, because $\operatorname{tr}(E_{01}^{2})=0$ with $E_{01}\neq0$. The positive definite Hermitian form is
+is symmetric, $\mathbb{C}$-bilinear and nondegenerate: if $\operatorname{tr}(AB)=0$ for every $B$, then taking $B=E_{ij}$ gives $a_{ji}=0$ for all $i,j$, so $A=0$. It is not positive definite over $\mathbb{C}$, because $\operatorname{tr}(E_{12}^{2})=0$ with $E_{12}\neq0$. The positive definite Hermitian form is
 
 $$
 \langle A,B\rangle=\operatorname{tr}(A^{*}B),
@@ -190,7 +190,7 @@ lies in $I$, because $I$ is a two-sided ideal. The matrix units span, so $I=M_{3
 
 **Corollary.** $M_{3}(\mathbb{C})$ is a **central simple** $\mathbb{C}$-algebra: simple, with centre $\mathbb{C}$. Its only finite-dimensional modules are the multiples of the defining module $\mathbb{C}^{3}$, by the structure theory of simple algebras; the modules are *The Modules and the Minimal Left Ideals*.
 
-**The algebra is not a division algebra.** It has zero divisors: $E_{01}E_{10}=E_{00}\neq0$ but $E_{01}E_{01}=0$, and more simply $E_{01}\neq0$ with $E_{01}^{2}=0$. Every off-diagonal matrix unit is nilpotent. The algebra is therefore not a division ring, and the singular matrices are exactly the non-units.
+**The algebra is not a division algebra.** It has zero divisors: $E_{12}E_{21}=E_{11}\neq0$ but $E_{12}E_{12}=0$, and more simply $E_{12}\neq0$ with $E_{12}^{2}=0$. Every off-diagonal matrix unit is nilpotent. The algebra is therefore not a division ring, and the singular matrices are exactly the non-units.
 
 ## The Unit Group and the Projective Group
 
@@ -305,7 +305,7 @@ Its centre is $\mathbb{C}I$, and it is simple and central simple. Its trace is t
 | Real dimension | $18$ |
 | Centre | $\mathbb{C}I$ |
 | Simple | yes |
-| Division algebra | no; $E_{01}^{2}=0$ |
+| Division algebra | no; $E_{12}^{2}=0$ |
 | Unit group | $GL_{3}(\mathbb{C})$, $\dim_{\mathbb{C}}=9$ |
 | Projective group | $PGL_{3}(\mathbb{C})$, $\dim_{\mathbb{C}}=8$ |
 | Real form | $\mathfrak{u}(3)\oplus i\mathfrak{u}(3)$, $\dim_{\mathbb{R}}\mathfrak{u}(3)=9$, $\dim_{\mathbb{R}}\mathfrak{su}(3)=8$ |

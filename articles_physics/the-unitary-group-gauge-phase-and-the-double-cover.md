@@ -5,7 +5,7 @@
 The unitary group of the biquaternion algebra is
 
 $$
-U(\mathbb{B})=\{\tilde U\in\mathbb{B}:\tilde U^{*}\tilde U=e_t\}\cong U(2),
+U(\mathbb{B})=\{\tilde Q\in\mathbb{B}:\tilde Q^{*}\tilde Q=e_t\}\cong U(2),
 $$
 
 not $U(4)$. It is the group of the algebra's unitary elements, and it acts on spinors by left multiplication and on states by conjugation. Its centre is the global phase $U(1)$; its quotient by the centre is $SO(3)$; its norm-one slice is $SU(2)\cong S^3$, the double cover of $SO(3)$.
@@ -171,7 +171,7 @@ $$
 \qquad
 \tilde A=\lvert\tilde Q\rvert\text{ positive},
 \qquad
-\tilde U\text{ unitary},
+\tilde Q\text{ unitary},
 $$
 
 and the unitary group is a strong deformation retract of the unit group. The reading is the **amplitude–frame split**: every invertible operator is a positive amplitude times a unitary frame. The amplitude is the state (the positive factor); the frame is the basis (the unitary factor).
@@ -265,7 +265,7 @@ No dynamics is supplied. The group is the group of reversible changes of basis; 
 
 ## Summary
 
-- $U(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}\cong U(2)$, with structure $S^1\times S^3$, maximal torus $T^2$, flag variety $S^2$ and universal cover $\mathbb{R}\times S^3$.
+- $U(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong U(2)$, with structure $S^1\times S^3$, maximal torus $T^2$, flag variety $S^2$ and universal cover $\mathbb{R}\times S^3$.
 - The left action preserves the Hermitian form on spinors; the conjugation preserves the state space. The global phase is the kernel of both; the quotient $U(2)/U(1)\cong SO(3)$ is the effective rotation group, and the Bloch sphere of rays is the orbit $U(2)/T^2\cong S^2$.
 - The quotient $U(2)/T^2\cong S^2$ is the Bloch sphere, read as the pure states and as the measurement bases.
 - The polar decomposition splits every invertible operator into a positive amplitude and a unitary frame; the amplitude is the state, the frame is the gauge.
@@ -278,7 +278,7 @@ No dynamics is supplied. The group is the group of reversible changes of basis; 
 
 | symbol | meaning |
 | --- | --- |
-| $U(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$ | the unitary group, $\cong U(2)$ |
+| $U(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ | the unitary group, $\cong U(2)$ |
 | $S^1\cdot S^3$ | the phase times the rotor |
 | $T^2$ | a maximal torus |
 | $U(\mathbb{B})/T^2\cong S^2$ | the flag variety (measurement bases) and the pure-state orbit (Bloch sphere) |

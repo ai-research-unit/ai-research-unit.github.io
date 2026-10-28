@@ -8,7 +8,7 @@ A recent paper by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024) 
 
 This article asks a specific question: does the biquaternion framework developed in the companion articles have a natural home for the operational criterion, and if so, does it add anything to it?
 
-The answer to the first part is yes. The framework already distinguishes between two kinds of operation: unitary elements $\tilde{U}$ (with $\tilde{U}\tilde{U}^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
+The answer to the first part is yes. The framework already distinguishes between two kinds of operation: unitary elements $\tilde Q$ (with $\tilde Q\tilde Q^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
 
 The answer to the second part is a qualified **not yet**. The framework expresses the criterion cleanly, and it suggests a structural reason for *why* the criterion works — the material/informational split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$. But it does not yet predict anything the operational criterion does not already predict, and it does not yet specify the dynamics of the cross-sector coupling that would be needed to make the structural reason a dynamical reason. The framework sharpens the criterion; it does not extend it.
 
@@ -55,7 +55,7 @@ The paper's key move is to treat the "excitation" as the decisive feature. A mod
 
 The biquaternion framework has a structural feature that maps directly onto this operational criterion. Two kinds of acting element are distinguished in the algebra:
 
-- **Unitary elements** $\tilde{U} \in \mathbb{B}$ satisfy $\tilde{U}\tilde{U}^{*} = e_t$ and act on states by **rotor conjugation**:
+- **Unitary elements** $\tilde Q \in \mathbb{B}$ satisfy $\tilde Q\tilde Q^{*} = e_t$ and act on states by **rotor conjugation**:
 $$
 \tilde{Ϛ} \;\longmapsto\; \tilde{U}\,\tilde{Ϛ}\,\tilde{U}^{*}.
 $$
@@ -80,10 +80,10 @@ where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents correspond
 **Classical non-separability: one idempotent, one unitary.** A bipartite state $\tilde{Ϛ}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
 
 $$
-p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_t\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde{U}_A^{(k)}\otimes e_t\bigr)\circ \tilde{Ϛ}\circ\bigl(\tilde{U}_A^{(k){}^{*}}\otimes e_t\bigr)\right),
+p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_t\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde Q_A^{(k)}\otimes e_t\bigr)\circ \tilde{Ϛ}\circ\bigl(\tilde Q_A^{(k){}^{*}}\otimes e_t\bigr)\right),
 $$
 
-using the cyclicity of the trace. This is a **single trace formula**, preceded by a unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde{U}_A^{(k)}$ acts only on $A$ and the trace is cyclic:
+using the cyclicity of the trace. This is a **single trace formula**, preceded by a unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde Q_A^{(k)}$ acts only on $A$ and the trace is cyclic:
 
 $$
 p(j\mid k) = \mathrm{Tr}_{\mathbb{B}}\!\left(\tilde\Pi_B^{(j)}\,\tilde{Ϛ}_B\right), \qquad \tilde{Ϛ}_B = \mathrm{Tr}_A \tilde{Ϛ}.
@@ -94,7 +94,7 @@ The conditional probability is therefore **independent of the filter setting** $
 The distinction in the framework's notation is therefore:
 
 $$
-\boxed{\;\text{Quantum: } \tilde\Pi_A \otimes \tilde\Pi_B \qquad\qquad \text{Classical: } \tilde{U}_A \otimes \tilde\Pi_B\;}.
+\boxed{\;\text{Quantum: } \tilde\Pi_A \otimes \tilde\Pi_B \qquad\qquad \text{Classical: } \tilde Q_A \otimes \tilde\Pi_B\;}.
 $$
 
 Two idempotents, or one idempotent and one unitary. The framework's reversible/irreversible dichotomy is the operational criterion, stated in the framework's native vocabulary.
@@ -139,7 +139,7 @@ The case is a vector light beam with a non-separable structure between its trans
 
 In the framework, the mode functions are **not** states of $\mathbb{M}_+$. A mode function is a frame, a basis vector, a degree of freedom; it is not an excitation, and it does not have a canonical sector assignment. A complex field configuration decomposes into a real part (in $\mathbb{M}_-$) and an imaginary part (in $\mathbb{M}_+$), but the mode function per se is a structural feature of the field, not a state of either sector.
 
-This means only one partition supports an idempotent. The polarization mode carries the excitation, and a projective measurement on polarization is possible: an idempotent $\tilde\Pi_B^{(H)}$ or $\tilde\Pi_B^{(V)}$. The spatial mode does not carry an excitation, and no idempotent acts on it. The operation on the spatial mode is a unitary filter — a mode sorter, a spatial light modulator, a basis choice — which corresponds to a unitary element $\tilde{U}_A$.
+This means only one partition supports an idempotent. The polarization mode carries the excitation, and a projective measurement on polarization is possible: an idempotent $\tilde\Pi_B^{(H)}$ or $\tilde\Pi_B^{(V)}$. The spatial mode does not carry an excitation, and no idempotent acts on it. The operation on the spatial mode is a unitary filter — a mode sorter, a spatial light modulator, a basis choice — which corresponds to a unitary element $\tilde Q_A$.
 
 The framework reads this case as classical: one idempotent, one unitary.
 
@@ -209,11 +209,11 @@ The paper and the framework are complementary. The paper tells us what to look f
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde\Pi_A^{(i)}, \tilde\Pi_B^{(j)}$ | Idempotents on partitions $A,B$ (measurements) |
-| $\tilde{U}_A^{(k)}$ | Unitary on partition $A$ (filter, sorter, basis choice) |
+| $\tilde Q_A^{(k)}$ | Unitary on partition $A$ (filter, sorter, basis choice) |
 | $p(i,j) = \operatorname{Tr}((\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)})\circ \tilde{Ϛ})$ | Joint probability, quantum case (trace reading at normalisation) |
-| $p(j\mid k) = \mathrm{Tr}((e_t\otimes \tilde\Pi_B^{(j)})\circ(\tilde{U}_A^{(k)}\otimes e_t)\circ \tilde{Ϛ}\circ(\tilde{U}_A^{(k){}^{*}}\otimes e_t))$ | Conditional probability, classical case |
+| $p(j\mid k) = \mathrm{Tr}((e_t\otimes \tilde\Pi_B^{(j)})\circ(\tilde Q_A^{(k)}\otimes e_t)\circ \tilde{Ϛ}\circ(\tilde Q_A^{(k){}^{*}}\otimes e_t))$ | Conditional probability, classical case |
 | $\tilde\Pi_A \otimes \tilde\Pi_B$ | Quantum: two idempotents, statistical correlation |
-| $\tilde{U}_A \otimes \tilde\Pi_B$ | Classical: one idempotent, one unitary |
+| $\tilde Q_A \otimes \tilde\Pi_B$ | Classical: one idempotent, one unitary |
 | $W_{ij} = \langle E_i^* E_j\rangle$ | Coherence matrix (derived element) |
 | Fundamental element | Joint state of $\mathbb{M}_+^{\otimes n}$ (quantum) |
 | Derived element | Coherence matrix from a classical field configuration (classical) |

@@ -24,7 +24,7 @@ $$
 
 **Proof.** For $X=PAP$ and $Y=PBP$, the product is $XY=PAP\,PBP=P(APB)P\in B$, because $P^{2}=P$. The element $P=PIP$ lies in $B$, and $PX=P(PAP)=PAP=X$ and $XP=(PAP)P=X$, so $P$ is the unit. For the dimension, choose a basis of $\mathbb{C}^{3}$ adapted to the decomposition $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$, with the first two vectors in $\operatorname{im}P$ and the third in $\ker P$; in this basis $P=\operatorname{diag}(1,1,0)$, and $PAP$ is the matrix with the upper-left $2\times2$ block of $A$ and all other entries zero. The upper-left block is an arbitrary $2\times2$ matrix, so $B$ is four-dimensional.
 
-**The corner is not an ideal.** $B$ is a subalgebra with its own unit, but it is not a two-sided ideal of $M_{3}$: $E_{02}\in M_{3}$ and $P E_{02}\notin B$ when $P$ has the standard form, for instance. The algebra $M_{3}$ is simple, so it has no nontrivial two-sided ideals at all. The corner is a subalgebra, not a quotient and not an ideal.
+**The corner is not an ideal.** $B$ is a subalgebra with its own unit, but it is not a two-sided ideal of $M_{3}$: $E_{13}\in M_{3}$ and $P E_{13}\notin B$ when $P$ has the standard form, for instance. The algebra $M_{3}$ is simple, so it has no nontrivial two-sided ideals at all. The corner is a subalgebra, not a quotient and not an ideal.
 
 **The corner is a compression, not a restriction.** An element of $B$ is a matrix in $M_{3}$ that happens to lie in the corner. The map $A\mapsto PAP$ is not injective on $M_{3}$; its image is $B$, and the kernel is the set of matrices whose upper-left block vanishes, of dimension $5$. The compression keeps the part of $A$ that acts on $\operatorname{im}P$ and discards the rest.
 
@@ -48,13 +48,13 @@ $$
 
 **The isomorphism is not canonical.** It depends on the choice of a basis of $\operatorname{im}P$; a change of basis conjugates the $2\times2$ matrices by the change-of-basis matrix. The corner $B$ itself is canonical, being defined by $P$; the identification with the standard $M_{2}(\mathbb{C})$ is canonical only up to conjugation.
 
-**The standard case.** For $P_{0}=\operatorname{diag}(1,1,0)$ the corner is the set of matrices
+**The standard case.** For $P_{1}=\operatorname{diag}(1,1,0)$ the corner is the set of matrices
 
 $$
 \begin{pmatrix}b_{00}&b_{01}&0\\b_{10}&b_{11}&0\\0&0&0\end{pmatrix},
 $$
 
-which is $M_{2}(\mathbb{C})$ in the upper-left block. The unit is $P_{0}=\operatorname{diag}(1,1,0)$, not $I$.
+which is $M_{2}(\mathbb{C})$ in the upper-left block. The unit is $P_{1}=\operatorname{diag}(1,1,0)$, not $I$.
 
 ## The Inherited Trace and Determinant
 
@@ -91,17 +91,17 @@ A=\begin{pmatrix}1&2&3\\4&5&6\\7&8&9\end{pmatrix},
 \qquad \det A=0,
 $$
 
-and $P_{0}=\operatorname{diag}(1,1,0)$. Then
+and $P_{1}=\operatorname{diag}(1,1,0)$. Then
 
 $$
-P_{0}AP_{0}=\begin{pmatrix}1&2&0\\4&5&0\\0&0&0\end{pmatrix},
+P_{1}AP_{1}=\begin{pmatrix}1&2&0\\4&5&0\\0&0&0\end{pmatrix},
 \qquad
-\det_{P_{0}}(P_{0}AP_{0})=\det\begin{pmatrix}1&2\\4&5\end{pmatrix}=5-8=-3\neq0=\det A.
+\det_{P_{1}}(P_{1}AP_{1})=\det\begin{pmatrix}1&2\\4&5\end{pmatrix}=5-8=-3\neq0=\det A.
 $$
 
 The compression is invertible in the corner, with inverse the compressed inverse of the $2\times2$ block, even though $A$ is singular in $M_{3}$. The two determinants answer different questions: $\det A$ asks whether $A$ is invertible on $\mathbb{C}^{3}$, and $\det_{P}$ asks whether $A$ is invertible on $\operatorname{im}P$ modulo $\ker P$.
 
-**The trace of the worked example.** $\operatorname{tr}(A)=1+5+9=15$, while $\operatorname{tr}_{P_{0}}(P_{0}AP_{0})=1+5=6$. The inherited trace forgets the third diagonal entry, which lies in the kernel direction; it is the trace of the compressed endomorphism, not the trace of $A$.
+**The trace of the worked example.** $\operatorname{tr}(A)=1+5+9=15$, while $\operatorname{tr}_{P_{1}}(P_{1}AP_{1})=1+5=6$. The inherited trace forgets the third diagonal entry, which lies in the kernel direction; it is the trace of the compressed endomorphism, not the trace of $A$.
 
 **The characteristic polynomial of the compression.** The two eigenvalues of the $2\times2$ block are the eigenvalues of $X|_{\operatorname{im}P}$; the third eigenvalue of $A$ is not seen by the corner. The corner's characteristic polynomial is
 
@@ -146,7 +146,7 @@ $$
 
 The corner $B=P M_{3}P$ consists of the matrices with third row zero and third column equal to the negative of the first column, as in §*The Compression*. The matrix $P^{*}$ has third row $(-1,0,0)$, which is not zero, so $P^{*}\notin B$. Taking $X=P\in B$ gives $X^{*}=P^{*}\notin B$. The star does not preserve the corner.
 
-**The Hermitian case in coordinates.** For $P_{0}=\operatorname{diag}(1,1,0)$, the corner is the upper-left block and the star is the conjugate transpose of the block; the corner is the unital $*$-algebra $M_{2}(\mathbb{C})$ with unit $P_{0}$. The unit is $P_{0}$, not $I$, and the involution fixes it.
+**The Hermitian case in coordinates.** For $P_{1}=\operatorname{diag}(1,1,0)$, the corner is the upper-left block and the star is the conjugate transpose of the block; the corner is the unital $*$-algebra $M_{2}(\mathbb{C})$ with unit $P_{1}$. The unit is $P_{1}$, not $I$, and the involution fixes it.
 
 **The involution of the biquaternion algebra.** The biquaternion algebra is $\mathbb{B}\cong M_{2}(\mathbb{C})$, and its star is the conjugate transpose in its matrix model. The corner $B$ with a Hermitian $P$ is a copy of that $*$-algebra inside $M_{3}$, with unit $P$. For a non-Hermitian $P$ the copy is only an algebra: the ambient star carries it to the corner of $P^{*}$, and the involution of $\mathbb{B}$ does not descend to the corner. This is the precise sense in which the involution fails to descend; it is not a failure of the algebra structure, which is always $M_{2}(\mathbb{C})$.
 
@@ -179,7 +179,7 @@ is an injective algebra homomorphism with image $PMP$, and it is unital onto the
 
 **The complement as a quotient direction.** The projection $Q$ is the unit of the complement; the mixed corners are the off-diagonal blocks that connect the two units. The element $Q$ is the image of the identity under the other corner embedding $\mathbb{C}\to M_{3}$, $1\mapsto Q$. The two corner embeddings are the two diagonal blocks of the coarse Peirce decomposition.
 
-**Worked example of the four blocks.** With $P=P_{0}=\operatorname{diag}(1,1,0)$ and $A$ as in §*The Inherited Trace and Determinant*,
+**Worked example of the four blocks.** With $P=P_{1}=\operatorname{diag}(1,1,0)$ and $A$ as in §*The Inherited Trace and Determinant*,
 
 $$
 PAP=\begin{pmatrix}1&2&0\\4&5&0\\0&0&0\end{pmatrix},\qquad
@@ -205,7 +205,7 @@ P=\begin{pmatrix}1&0&-1\\0&1&0\\0&0&0\end{pmatrix},
 P^{2}=P,\qquad \operatorname{rank}P=2,\qquad P^{*}\neq P.
 $$
 
-Its image is $\operatorname{span}\{e_{0},e_{1}\}$ and its kernel is $\operatorname{span}\{e_{0}+e_{2}\}$, so $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$. In the adapted basis $(e_{0},e_{1},e_{0}+e_{2})$ the idempotent is $\operatorname{diag}(1,1,0)$, and the corner is again a copy of $M_{2}(\mathbb{C})$.
+Its image is $\operatorname{span}\{e_{1},e_{2}\}$ and its kernel is $\operatorname{span}\{e_{1}+e_{3}\}$, so $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$. In the adapted basis $(e_{1},e_{2},e_{1}+e_{3})$ the idempotent is $\operatorname{diag}(1,1,0)$, and the corner is again a copy of $M_{2}(\mathbb{C})$.
 
 **The compression of the example.** With $A$ as above,
 
@@ -213,7 +213,7 @@ $$
 PAP=\begin{pmatrix}-6&-6&6\\4&5&-4\\0&0&0\end{pmatrix}.
 $$
 
-In the basis $(e_{0},e_{1})$ of $\operatorname{im}P$ the compressed matrix is
+In the basis $(e_{1},e_{2})$ of $\operatorname{im}P$ the compressed matrix is
 
 $$
 \begin{pmatrix}-6&-6\\4&5\end{pmatrix},
@@ -233,7 +233,7 @@ $$
 
 which has a nonzero third row and therefore does not lie in $PMP$. The corner of $P$ and the corner of $P^{*}$ are two different four-dimensional subspaces of $M_{3}$; the star exchanges them. The algebra structure is unchanged, but the $*$-structure is not defined on the corner of $P$.
 
-**The Hermitian idempotent next to it.** The Hermitian idempotent with the same image is the orthogonal projection onto $\operatorname{span}\{e_{0},e_{1}\}$, namely $P_{0}=\operatorname{diag}(1,1,0)$. The corner of $P_{0}$ is the upper-left block; the corner of $P$ is a different subspace, but the two corners are isomorphic as algebras and the isomorphism is the change of basis from the adapted basis of $P$ to the standard one. The Hermitian corner is the one that carries the star.
+**The Hermitian idempotent next to it.** The Hermitian idempotent with the same image is the orthogonal projection onto $\operatorname{span}\{e_{1},e_{2}\}$, namely $P_{1}=\operatorname{diag}(1,1,0)$. The corner of $P_{1}$ is the upper-left block; the corner of $P$ is a different subspace, but the two corners are isomorphic as algebras and the isomorphism is the change of basis from the adapted basis of $P$ to the standard one. The Hermitian corner is the one that carries the star.
 
 ## Summary
 

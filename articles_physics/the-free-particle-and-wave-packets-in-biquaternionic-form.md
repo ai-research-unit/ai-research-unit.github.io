@@ -360,7 +360,7 @@ in which the kernel acts on the body of the field and multiplies the module fact
 The evolution operator is the exponential of the generator,
 
 $$
-\tilde U(t') = \exp(-iH t'/\hbar) = \exp(-i p^{\mathrm{op}2} t'/2m\hbar)\,e_t \in \mathbb{C}_{\mathbb{B}},
+\tilde Q(t') = \exp(-iH t'/\hbar) = \exp(-i p^{\mathrm{op}2} t'/2m\hbar)\,e_t \in \mathbb{C}_{\mathbb{B}},
 $$
 
 a central unitary element in the framework's sense,
@@ -461,7 +461,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $s_0$, $s(t') = s_0\sqrt{1+(\hbar t'/2ms_0^2)^2}$ | Initial and time-dependent density width |
 | $\tau = 2ms_0^2/\hbar$ | Spreading time |
 | $K_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = (m/2\pi i\hbar t')^{3/2}\exp(im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2\hbar t')$ | Free propagator; central |
-| $\tilde U(t') = \exp(-iHt'/\hbar)$ | Free evolution; central unitary |
+| $\tilde Q(t') = \exp(-iHt'/\hbar)$ | Free evolution; central unitary |
 | $\mathrm{Tr}(\tilde H) = 2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

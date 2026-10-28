@@ -380,7 +380,7 @@ The element is a purely temporal displacement: a worldline with no spatial part.
 
 **Boundary.** The observable interpretation and the state interpretation are two identifications of the same central element, not one derivation of the other. The spectrum alone says *central*; it does not say *observable* or *state*. The state interpretation belongs to *The Informational Sector: States, Observables and Probability*.
 
-**Interpretation 4: superselection and no preferred basis.** A central element is fixed by every inner automorphism. On the unitary slice, where the frame changes live, this reads $\tilde U\tilde Q\tilde U^{*}=\tilde Q$ for every unitary $\tilde U$. No frame is selected, every basis is an eigenbasis, and the choice of basis carries no information about the element. The physical interpretation is a **superselection charge**: a conserved central quantity with respect to which every basis is equivalent.
+**Interpretation 4: superselection and no preferred basis.** A central element is fixed by every inner automorphism. On the unitary slice, where the frame changes live, this reads $\tilde Q\tilde Q\tilde Q^{*}=\tilde Q$ for every unitary $\tilde Q$. No frame is selected, every basis is an eigenbasis, and the choice of basis carries no information about the element. The physical interpretation is a **superselection charge**: a conserved central quantity with respect to which every basis is equivalent.
 
 **Boundary.** *No preferred basis* does not mean *no basis*. A basis can be chosen, and in it the element is $Q_tI$; the point is that the choice is a gauge, not a property of the element.
 

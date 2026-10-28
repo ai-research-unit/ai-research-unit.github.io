@@ -124,12 +124,12 @@ $$
 \lambda_2^{-1}c&\lambda_3d
 \end{pmatrix}
 =
-\begin{pmatrix}\lambda_1&0\\0&\lambda_3\end{pmatrix}
+\begin{pmatrix}\lambda_1&0\\0&\lambda_2^{-1}\end{pmatrix}
 \begin{pmatrix}a&b\\c&d\end{pmatrix}
-\begin{pmatrix}\lambda_2^{-1}&0\\0&\lambda_3^{-1}\end{pmatrix}^{-1}
+\begin{pmatrix}1&0\\0&\lambda_2\lambda_3\end{pmatrix}.
 $$
 
-with the diagonal matrices $D_+=\operatorname{diag}(\lambda_1,\lambda_3)$ on the target and $D_-=\operatorname{diag}(\lambda_2,\lambda_3)$ on the source.
+The action is $M\mapsto D_+MD_-^{-1}$ with $D_+=\operatorname{diag}(\lambda_1,\lambda_2^{-1})$ and $D_-=\operatorname{diag}(1,(\lambda_2\lambda_3)^{-1})$; the determinant product $\det D_+\det D_-^{-1}$ is $\lambda_1\lambda_3$.
 
 **Proof.** The weights are the ratios $t_i/t_j$ for $i\in\{1,3\}$ and $j\in\{2,4\}$, expressed through $\lambda_1=t_1/t_2$, $\lambda_2=t_2/t_3$, $\lambda_3=t_3/t_4$. The matrix form is the entrywise computation.
 
@@ -148,7 +148,7 @@ $$
 
 The weight of the determinant is $\lambda_1\lambda_3$, not the product $\lambda_1\lambda_2\lambda_3$ of all three. The middle parameter $\lambda_2$ cancels between the two terms. This is the mass-block form of the cocycle.
 
-**The gauge is complex, not unitary.** The parameters $\lambda_k$ are nonzero complex numbers. The gauge changes the singular values of $M$: if $\lambda_1=2$ and $\lambda_3=3$, the singular values are multiplied by at least $2$ and $3$ in the diagonal case. The compact subgroup
+**The gauge is complex, not unitary.** The parameters $\lambda_k$ are nonzero complex numbers. The gauge changes the singular values of $M$: for a diagonal mass matrix the two singular values are multiplied by $\lvert\lambda_1\rvert$ and $\lvert\lambda_3\rvert$. The compact subgroup
 
 $$
 U(1)^3=\{(\lambda_1,\lambda_2,\lambda_3):\lvert\lambda_k\rvert=1\}
@@ -244,10 +244,10 @@ If $A$ is singular, $P$ is unique and $U$ is unique on the range of $P$ and arbi
 **Proof.** The operator $A^*A$ is positive semidefinite, so it has a unique positive semidefinite square root $P$. On the range of $P$, define $U(Pv)=Av$; this is well defined and isometric because
 
 $$
-\lVert APv\rVert^2=\langle Pv,A^*APv\rangle=\langle Pv,P^2Pv\rangle=\lVert P^2v\rVert^2=\lVert Pv\rVert^2.
+\lVert Av\rVert^2=\langle Av,Av\rangle=\langle v,A^*Av\rangle=\langle v,P^2v\rangle=\lVert Pv\rVert^2.
 $$
 
-Extend $U$ isometrically to the orthogonal complement of the range of $P$, which is the kernel of $P$. Then $A=UP$ and $U$ is unitary. Uniqueness on the invertible elements follows because $P$ is determined by $A^*A$ and $U=AP^{-1}$.
+Extend $U$ isometrically from the range of $P$ to its orthogonal complement, which is the kernel of $P$, with values in the kernel of $A^*$. The dimensions agree, because $\operatorname{rank}P=\operatorname{rank}A$, so the extension exists and $U$ is unitary. Then $A=UP$. Uniqueness on the invertible elements follows because $P$ is determined by $A^*A$ and $U=AP^{-1}$.
 
 **The chiral polar decomposition is different.** The decomposition $M=U\Sigma V^*$ of the mass block uses two unitaries, one on each chirality, and a diagonal map between them. It is the polar decomposition of a map between two different Hilbert spaces, not of an endomorphism of one space. The full $U(4)$ polar factor of the block matrix is an endomorphism of $\mathbb{C}^4$; it mixes the chiralities in general, and it is not the pair $(U_L,U_R)$ of the mass block.
 
@@ -274,9 +274,9 @@ $$
 
 The factor $W$ is the unitary phase, and $P$ is the mass modulus. The two singular values $\sigma_1,\sigma_2$ are the invariants of the compact chiral gauge; the phase of $\det M$ is the remaining invariant under the special unitary gauge.
 
-**The gauge weights of the polar data.** Under the three-parameter gauge, the mass block transforms by $M\mapsto D_+MD_-^{-1}$ with $D_+=\operatorname{diag}(\lambda_1,\lambda_3)$ and $D_-=\operatorname{diag}(\lambda_2,\lambda_3)$. The singular values are not invariant unless $\lvert\lambda_1\rvert=\lvert\lambda_3\rvert=1$. The determinant transforms by $\lambda_1\lambda_3$. The chiral phase transforms by the phase of $\lambda_1\lambda_3$. The two singular values and the phase are therefore **not** the three gauge parameters: the gauge is complex, and it changes the moduli.
+**The gauge weights of the polar data.** Under the three-parameter gauge, the mass block transforms by $M\mapsto D_+MD_-^{-1}$ with $D_+=\operatorname{diag}(\lambda_1,\lambda_2^{-1})$ and $D_-=\operatorname{diag}(1,(\lambda_2\lambda_3)^{-1})$. The singular values are invariant exactly when the gauge lies in the compact subgroup $U(1)^3$, that is, when $\lvert\lambda_1\rvert=\lvert\lambda_2\rvert=\lvert\lambda_3\rvert=1$; a complex rescaling changes the moduli. The determinant transforms by $\lambda_1\lambda_3$. The chiral phase transforms by the phase of $\lambda_1\lambda_3$. The two singular values and the phase are therefore **not** the three gauge parameters: the gauge is complex, and it changes the moduli.
 
-**The invariant count.** The mass block has complex dimension $4$, hence real dimension $8$. The three-parameter gauge has complex dimension $3$, hence real dimension $6$. The quotient has real dimension $2$. On the generic rank-two locus, the quotient is parametrised by one complex invariant, the cross ratio of the four entries, or equivalently by two real invariants. The two singular values are two real invariants of the compact gauge, but they are not invariant under the complex gauge; the quotient invariants are the combinations that survive the complex rescalings. The phase is not a quotient invariant.
+**The invariant count.** The mass block has complex dimension $4$, hence real dimension $8$. The three-parameter gauge has complex dimension $3$, hence real dimension $6$. The quotient has real dimension $2$. On the generic rank-two locus the quotient is parametrised by one complex invariant, the cross ratio $ad/(bc)$ of the four entries; as two real invariants, it is the modulus and the argument of the cross ratio. The two singular values are two real invariants of the **compact** gauge, but they are not invariant under the complex gauge; the quotient invariants are the combinations that survive the complex rescalings. The phase of $\det M$ is not a quotient invariant.
 
 ## The Single $\lambda$ of $\mathbb{B}$
 
@@ -344,8 +344,8 @@ $$
 |---|---|
 | $\lambda_1,\lambda_2,\lambda_3$ | the gauge parameters of the simple nilpotents |
 | $T=(\mathbb{C}^\times)^3$ | the gauge torus |
-| $D_+=\operatorname{diag}(\lambda_1,\lambda_3)$ | the gauge matrix on the target chirality |
-| $D_-=\operatorname{diag}(\lambda_2,\lambda_3)$ | the gauge matrix on the source chirality |
+| $D_+=\operatorname{diag}(\lambda_1,\lambda_2^{-1})$ | the left gauge matrix on the mass block |
+| $D_-=\operatorname{diag}(1,(\lambda_2\lambda_3)^{-1})$ | the right gauge matrix, entering as $D_-^{-1}$ |
 | $M=U\Sigma V^*$ | the chiral singular value decomposition |
 | $W=UV^*$ | the chiral phase |
 | $P=V\Sigma V^*$ | the mass modulus |

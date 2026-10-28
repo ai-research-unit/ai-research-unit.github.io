@@ -15,7 +15,7 @@ Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_t
 $$
 of real dimension one. So the classical sector of the algebra is one-dimensional in the operator sense: the only Hermitian central element is a real multiple of the identity. Three consequences follow, and together they are the content of the article.
 
-First, **the centre is exactly the set of observables invariant under every symmetry.** The adjoint action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ of the unitary group generates all conjugations, and an element is fixed by all of them precisely when it is central. Since conjugation by unitaries implements the rotations of the Bloch sphere, the only rotation-invariant Hermitian observable is the identity. The centre is the framework's answer to the question "which observables are classical?" — and, as stated, that answer is minimal.
+First, **the centre is exactly the set of observables invariant under every symmetry.** The adjoint action $\tilde{Q}\mapsto\tilde Q\tilde{Q}\tilde Q^{*}$ of the unitary group generates all conjugations, and an element is fixed by all of them precisely when it is central. Since conjugation by unitaries implements the rotations of the Bloch sphere, the only rotation-invariant Hermitian observable is the identity. The centre is the framework's answer to the question "which observables are classical?" — and, as stated, that answer is minimal.
 
 Second, **the centre is the classical sector in the literal sense of $c$-numbers.** Central elements are the ones that multiply every element on the same side, so they are the scalars with respect to which all algebraic operations are linear. The framework's external parameters — $\hbar$, the speed $c$, a mass $m$, a coupling constant — enter the equations as real multiples of $e_t$, hence as central elements, and the chirality-off-diagonal mass of the linear extension enters as the central coefficient $m e_t$. The centre is where the theory's classical data live.
 
@@ -81,9 +81,9 @@ The centre can be described from five directions, and the equivalence of the des
 
 **1. The commuting part.** This is the definition: $\tilde{Q}\in Z(\mathbb{B})$ if and only if $\tilde{Q}$ commutes with every element. In the language of observables, the central Hermitian elements are exactly the observables compatible with every observable; they form the maximally commutative and symmetry-blind part of the algebra.
 
-**2. The fixed points of the adjoint action.** Let $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$; for $\tilde{U}$ unitary this is the conjugation action on the Hermitian sector, and it implements the inner automorphisms of $\mathbb{B}$. An element is fixed by every inner automorphism if and only if it commutes with every element,
+**2. The fixed points of the adjoint action.** Let $\mathrm{Ad}_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$; for $\tilde Q$ unitary this is the conjugation action on the Hermitian sector, and it implements the inner automorphisms of $\mathbb{B}$. An element is fixed by every inner automorphism if and only if it commutes with every element,
 $$
-\bigl\{\tilde{Q}:\ \mathrm{Ad}_{\tilde{U}}\tilde{Q}=\tilde{Q}\ \ \forall\tilde{U}\in \mathrm{U}(2)\bigr\}=Z(\mathbb{B}).
+\bigl\{\tilde{Q}:\ \mathrm{Ad}_{\tilde Q}\tilde{Q}=\tilde{Q}\ \ \forall\tilde Q\in \mathrm{U}(2)\bigr\}=Z(\mathbb{B}).
 $$
 This is the operational characterization of the classical sector: it is the set of algebraic objects that no symmetry of the framework can move. Since the adjoint action descends to the rotations of the Bloch sphere, the rotation-invariant Hermitian observables are the real multiples of the identity, and they form a one-parameter family.
 
@@ -303,7 +303,7 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_t$ | Hermitian central elements |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$ |
-| $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Adjoint (inner) action |
+| $\mathrm{Ad}_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$ | Adjoint (inner) action |
 | $\mathrm{ad}_{\tilde{Q}}(\tilde{Q}_1)=[\tilde{Q},\tilde{Q}_1]$ | Inner derivation |
 | $\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\vec u),e_t-\tilde\Pi(\vec u)\}$ | Maximal commutative subalgebra (MASA) |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure-state idempotent, $|\vec u|=1$ |

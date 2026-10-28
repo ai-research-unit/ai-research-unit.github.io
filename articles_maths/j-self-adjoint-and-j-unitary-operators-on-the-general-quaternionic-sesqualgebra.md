@@ -107,7 +107,7 @@ of $U_{J}(\mathbb{B})$, of real dimension $4$ — far smaller than the whole gro
 
 ## Notes on the Indefinite Polar Decomposition
 
-The general indefinite polar decomposition replaces the positive definite root of the Hermitian case by a $J$-positive root and holds only under a spectrum condition that the algebra's operators need not meet; the general statement is *J-Self-Adjoint and J-Unitary Operators*, §*The J-Positive Cone*, and *Krein Spaces*. The algebra always carries the Hermitian polar data, $\tilde{Q}_4=\tilde{U}\tilde Q_5$ of *The Unitary Group of the Biquaternion Algebra*, and its $J$-conjugate; the indefinite spectral consequences are in §*The Indefinite Spectral Data*. No new polar decomposition is claimed here.
+The general indefinite polar decomposition replaces the positive definite root of the Hermitian case by a $J$-positive root and holds only under a spectrum condition that the algebra's operators need not meet; the general statement is *J-Self-Adjoint and J-Unitary Operators*, §*The J-Positive Cone*, and *Krein Spaces*. The algebra always carries the Hermitian polar data, $\tilde{Q}_4=\tilde Q_0\tilde Q_5$ of *The Unitary Group of the Biquaternion Algebra*, and its $J$-conjugate; the indefinite spectral consequences are in §*The Indefinite Spectral Data*. No new polar decomposition is claimed here.
 
 ## The Indefinite Spectral Data
 

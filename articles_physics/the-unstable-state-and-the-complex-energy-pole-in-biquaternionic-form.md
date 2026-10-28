@@ -15,7 +15,7 @@ $$
 \tilde H = h_t\,e_t + i\,\vec h, \qquad h_t\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t')=\exp(-i\tilde Ht'/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t')=\tilde U(t')\tilde{Ϛ}(0)\tilde U(t')^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(t')=\exp(-i\tilde Ht'/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t')=\tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$; the evolution is unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -23,17 +23,17 @@ The convention for the resolvent follows *The Resolvent Operator*, which writes 
 
 ### The survival amplitude and the survival probability
 
-Let $\tilde\Pi_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t'=0$, and let $\tilde{Ϛ}(t')=\tilde U(t')\tilde\Pi_0\tilde U(t')^{*}$ be its evolution. The probability that the system is found in the initial state at time $t'$ is the pairing of the evolved state with the initial idempotent,
+Let $\tilde\Pi_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t'=0$, and let $\tilde{Ϛ}(t')=\tilde Q(t')\tilde\Pi_0\tilde Q(t')^{*}$ be its evolution. The probability that the system is found in the initial state at time $t'$ is the pairing of the evolved state with the initial idempotent,
 
 $$
 P(t') = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde{Ϛ}(t')\bigr)
-= \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t')\,\tilde\Pi_0\,\tilde U(t')^{*}\bigr).
+= \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(t')\,\tilde\Pi_0\,\tilde Q(t')^{*}\bigr).
 $$
 
-Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde U\tilde\Pi_0 = A(t')\,\tilde\Pi_0$ with
+Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde Q\tilde\Pi_0 = A(t')\,\tilde\Pi_0$ with
 
 $$
-A(t') = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t')\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i\tilde Ht'/\hbar)\bigr),
+A(t') = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(t')\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i\tilde Ht'/\hbar)\bigr),
 $$
 
 and the survival probability is the squared modulus of the **survival amplitude**,
@@ -178,7 +178,7 @@ The same element carries five descriptions, and they are worth setting side by s
 | --- | --- | --- | --- |
 | word | $r\,e^{i\alpha}$ | $r=e^{-\Gamma t'/2\hbar}$, $\alpha=-E_Rt'/\hbar$ | the scale is the survival amplitude, the phase the oscillation |
 | central exponent | $e^{\Theta}$ | $\Theta=-iz_\star t'/\hbar$ | the complex angle |
-| Cartan | $\tilde A\tilde U$ | $\tilde A=e^{-\Gamma t'/2\hbar}e_t$, $\tilde U=e^{-iE_Rt'/\hbar}e_t$ | the amplitude and the phase |
+| Cartan | $\tilde A\tilde Q$ | $\tilde A=e^{-\Gamma t'/2\hbar}e_t$, $\tilde Q=e^{-iE_Rt'/\hbar}e_t$ | the amplitude and the phase |
 | generator | $-iz_\star$ | $-\tfrac{\Gamma}{2}e_t-iE_Re_t$ | Hermitian damping plus anti-Hermitian energy |
 | mass-unit angle | $\theta_\star=z_\star/(mc^2)$ | $\epsilon_\star-i\gamma_\star$, $\epsilon_\star=E_R/(mc^2)$, $\gamma_\star=\Gamma/(2mc^2)$ | the half-width is $\gamma_\star$ |
 
@@ -333,7 +333,7 @@ The article therefore states an approximation with its window, not a law. It mak
 
 ## Summary
 
-The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde U(t'))$, and its survival probability is $P(t')=\lvert A(t')\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(t')=1-(\Delta\tilde H)^{2}{t'}^{2}/\hbar^{2}+O({t'}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
+The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde Q(t'))$, and its survival probability is $P(t')=\lvert A(t')\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(t')=1-(\Delta\tilde H)^{2}{t'}^{2}/\hbar^{2}+O({t'}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
 
 The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\Delta(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\Delta$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.
 
@@ -353,8 +353,8 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde H=h_te_t+i\vec h$ | Hamiltonian, Hermitian, $h_t\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$ |
 | $\tilde\Pi_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
-| $\tilde U(t')=\exp(-i\tilde Ht'/\hbar)$ | Unitary evolution, $\tilde U\tilde U^{*}=e_t$ |
-| $A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde U(t'))$ | Survival amplitude; $P(t')=\lvert A(t')\rvert^{2}$ |
+| $\tilde Q(t')=\exp(-i\tilde Ht'/\hbar)$ | Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$ |
+| $A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde Q(t'))$ | Survival amplitude; $P(t')=\lvert A(t')\rvert^{2}$ |
 | $(\Delta\tilde H)^{2}$ | Variance of $\tilde H$ in the initial state |
 | $G(z)=(z-\tilde H)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |
 | $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$ | Reduced resolvent of the distinguished state |

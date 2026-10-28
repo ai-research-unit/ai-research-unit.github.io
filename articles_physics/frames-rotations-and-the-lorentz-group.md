@@ -167,7 +167,7 @@ $$
 \mathrm{H}_{\tilde U}(\tilde Q_1\tilde Q_2)\neq
 \mathrm{H}_{\tilde U}(\tilde Q_1)\mathrm{H}_{\tilde U}(\tilde Q_2)
 $$
-for $\psi\neq0$, because the missing factor is $\tilde U^{*}\tilde U=\tilde U^{2}$. The defect is first order in the rapidity, while the time dilation is second order.
+for $\psi\neq0$, because the missing factor is $\tilde Q^{*}\tilde Q=\tilde Q^{2}$. The defect is first order in the rapidity, while the time dilation is second order.
 
 **A boost is a change to a moving frame.** The rotor stores half the rapidity, and the sandwich carries the four-position of a world line to its rest frame; the rapidity is additive for collinear boosts. Interpreted physically, the boost is the change of inertial frame, and the rotor is the element that performs it.
 

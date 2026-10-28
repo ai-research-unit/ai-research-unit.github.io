@@ -322,7 +322,7 @@ Imposing $\tilde\Pi^2=\tilde\Pi$ and $\mathrm{Tr}(\tilde\Pi)=1$ determines the c
 
 ### The Bell idempotents inside the continuum of maximally entangled states
 
-The diagonal-form condition is genuinely restrictive. The maximally entangled pure states of two qubits form a continuum: for any unitary element $\tilde U$ of $\mathbb{B}$ with $\tilde U\tilde U^{*}=e_t$, acting on the first factor,
+The diagonal-form condition is genuinely restrictive. The maximally entangled pure states of two qubits form a continuum: for any unitary element $\tilde Q$ of $\mathbb{B}$ with $\tilde Q\tilde Q^{*}=e_t$, acting on the first factor,
 
 $$
 \tilde\Pi\;=\;(\tilde U\otimes e_t)\,\tilde\Pi_{\Phi^+}\,(\tilde U^{*}\otimes e_t)

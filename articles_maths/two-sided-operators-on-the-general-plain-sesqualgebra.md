@@ -156,7 +156,7 @@ $$
 \boxed{\; \Theta_{\tilde Q_1}\ \text{unitary} \iff \tilde Q_1^{*}\tilde Q_1\in \mathrm{U}(1)\,e_t \;}.
 $$
 
-In particular every $\tilde Q_1\in U$, and every $\tilde Q_1$ of the form $\omega \tilde U$ with $\lvert\omega\rvert=1$ and $\tilde U\in U$, gives a unitary operator.
+In particular every $\tilde Q_1\in U$, and every $\tilde Q_1$ of the form $\omega \tilde Q$ with $\lvert\omega\rvert=1$ and $\tilde Q\in U$, gives a unitary operator.
 
 *Proof.* By the composition law and the adjoint theorem, $(\Theta_{\tilde Q_1})^{*}\Theta_{\tilde Q_1}=\Theta_{\tilde Q_1^{*}}\Theta_{\tilde Q_1}=\Theta_{\tilde Q_1^{*}\tilde Q_1}$. The operator $\Theta_{\tilde Q_1}$ is unitary if and only if this is the identity, that is $\Theta_{\tilde Q_1^{*}\tilde Q_1}=\Theta_{e_t}$. Since $\tilde Q_1^{*}\tilde Q_1$ is Hermitian, and since $\Theta_{\tilde Q_4}=\Theta_{e_t}$ implies $\tilde Q_4\tilde{Q}_4^{*}=e_t$, this forces $\tilde Q_1^{*}\tilde Q_1\in U$; and an element that is both unitary and central is a central scalar of modulus one, because $\Theta_{\tilde Q_4}=\Theta_{e_t}$ acts as the identity, whence $\tilde Q_4$ is central. The converse is the parameter rule $\Theta_{\omega \tilde Q_1}=\Theta_{\tilde Q_1}$.
 

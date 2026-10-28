@@ -336,7 +336,7 @@ The distinction between the two values of the functional is now exact, and it is
 **Reversible flow preserves the fine-grained entropy.** A reversible evolution of the sector is a matrix-unitary rotor conjugation,
 
 $$
-\tilde{Ϛ}(t') = \tilde{U}(t')\,\tilde{Ϛ}(0)\,\tilde{U}(t')^{*}, \qquad \tilde{U}(t')\tilde{U}(t')^{*} = e_t .
+\tilde{Ϛ}(t') = \tilde Q(t')\,\tilde{Ϛ}(0)\,\tilde Q(t')^{*}, \qquad \tilde Q(t')\tilde Q(t')^{*} = e_t .
 $$
 
 Such a map is an automorphism of the algebra; it rotates the Bloch vector without changing its length, $|\vec r(t')| = |\vec r(0)|$. Consequently
@@ -347,7 +347,7 @@ $$
 
 and the biquaternion norm is likewise invariant. This is the biquaternion form of **Liouville's theorem**: the fine-grained description carries a constant amount of information, and the reversible flow merely permutes it. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the generator-level correspondence between the rotor and the Hamiltonian flow; the conservation of the biquaternion norm is the invariant that the correspondence preserves.
 
-**Coarse-graining produces the increase.** If a fixed coarse-graining $\Phi$ is applied to the state of a reversible flow $\tilde{Ϛ}(t') = \tilde{U}(t')\tilde{Ϛ}(0)\tilde{U}(t')^{*}$, the entropy of the coarse description,
+**Coarse-graining produces the increase.** If a fixed coarse-graining $\Phi$ is applied to the state of a reversible flow $\tilde{Ϛ}(t') = \tilde Q(t')\tilde{Ϛ}(0)\tilde Q(t')^{*}$, the entropy of the coarse description,
 
 $$
 \mathcal{S}_{\rm cg}(t') = \mathcal{S}\!\left(\Phi(\tilde{Ϛ}(t'))\right) \ge \mathcal{S}\!\left(\tilde{Ϛ}(t')\right) = \mathcal{S}\!\left(\tilde{Ϛ}(0)\right),
@@ -445,7 +445,7 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $r_\parallel = \vec u\cdot\vec r$, $r_\perp(t') = \exp(-\Gamma t')r_\perp(0)$, $r(t')^2 = r_\parallel^2 + r_\perp(t')^2$ | Axial and instantaneous transverse components of the dephasing flow |
 | $\vec r\mapsto(1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ | Dephasing at strength $p\in[0,1]$ |
 | $d\mathcal{S}/dt' = \Gamma (r_\perp(t')^2/r(t'))\,\mathrm{artanh}\,r(t')$ | Entropy production rate of continuous dephasing (instantaneous $r_\perp$) |
-| $\tilde{U}(t')$, $\tilde{U}\tilde{U}^{*} = e_t$ | Matrix-unitary rotor (reversible flow) |
+| $\tilde Q(t')$, $\tilde Q\tilde Q^{*} = e_t$ | Matrix-unitary rotor (reversible flow) |
 | $H(w) = -\sum_a w_a\log w_a$ | Preparation entropy |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

@@ -94,7 +94,7 @@ This is the biquaternion expression of EPR steering. The collapse of the joint s
 
 ### No-signaling as a partial-trace identity
 
-The last observation is the algebraic content of the no-communication theorem. If Alice applies a local unitary operation $\tilde{U}\otimes e_t$ to the joint state, the reduced state of particle 2 is unchanged:
+The last observation is the algebraic content of the no-communication theorem. If Alice applies a local unitary operation $\tilde Q\otimes e_t$ to the joint state, the reduced state of particle 2 is unchanged:
 
 $$
 \mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{Ϛ}\,(\tilde{U}^{*}\otimes e_t)\right) = \mathrm{Tr}_1(\tilde{Ϛ}),
@@ -134,7 +134,7 @@ The measurement problem is the fact that standard quantum physics has two kinds 
 
 The biquaternion framework has something structural to offer here. In standard quantum physics, unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of *acting elements* of the algebra:
 
-- **Unitary elements** $\tilde{U}$ satisfy $\tilde{U}\tilde{U}^{*} = e_t$ and generate reversible evolution by rotor conjugation.
+- **Unitary elements** $\tilde Q$ satisfy $\tilde Q\tilde Q^{*} = e_t$ and generate reversible evolution by rotor conjugation.
 - **Idempotent elements** $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the sandwich operation.
 
 The reversible/irreversible dichotomy is not an additional postulate; it is the algebraic dichotomy between two classes of elements of one algebra. This is a genuine reframing: the measurement problem is no longer "two incompatible dynamics glued together" but "one algebra with two classes of elements."
@@ -165,7 +165,7 @@ The framework has something to say here, and the development is extensive enough
 In the framework's language, this is the algebraic dichotomy between
 
 $$
-\tilde\Pi_A \otimes \tilde\Pi_B \quad (\text{quantum}) \qquad \text{and} \qquad \tilde{U}_A \otimes \tilde\Pi_B \quad (\text{classical}),
+\tilde\Pi_A \otimes \tilde\Pi_B \quad (\text{quantum}) \qquad \text{and} \qquad \tilde Q_A \otimes \tilde\Pi_B \quad (\text{classical}),
 $$
 
 which is the same reversible/irreversible dichotomy that the framework already uses to distinguish evolution from measurement (see Section 3 of this list).
@@ -265,7 +265,7 @@ The honest position is this. The framework makes certain structural features of 
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\tilde{Ϛ}_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
 | $E(\vec u_a, \vec u_b) = \langle\tilde\Pi_{\mathrm{singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}/\langle\tilde\Pi_{\mathrm{singlet}},e_t\otimes e_t\rangle_{*} = \operatorname{Tr}(\cdots)$ | Correlation function (trace at normalisation) |
-| $\tilde{U}\tilde{U}^{*} = e_t$ | Unitary element (reversible evolution) |
+| $\tilde Q\tilde Q^{*} = e_t$ | Unitary element (reversible evolution) |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Tensor-product trace |
 | $2\sqrt{2}$ | Tsirelson bound for the CHSH combination |

@@ -178,7 +178,7 @@ The reduced state $\tilde{Ϛ}_1 = \frac{1}{2} e_t$ has three notable properties.
 
 **1. It is a mixed state.** In the biquaternion framework, a general state of $\mathbb{M}_+$ has the form $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$. The pure states are the ones with $|\vec r| = 1$ (the idempotents), and the maximally mixed state is the one with $\vec r = 0$. The reduced state $\tilde{Ϛ}_1 = \frac{1}{2} e_t$ corresponds to $\vec r = 0$, i.e., the centre of the Bloch ball. It is a mixed state, at the maximal distance from the pure states.
 
-**2. It is invariant under all unitary transformations.** Under a rotor conjugation $\tilde{Ϛ}_1 \mapsto \tilde{U}\tilde{Ϛ}_1\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_t$, the reduced state is unchanged:
+**2. It is invariant under all unitary transformations.** Under a rotor conjugation $\tilde{Ϛ}_1 \mapsto \tilde Q\tilde{Ϛ}_1\tilde Q^{*}$ with $\tilde Q\tilde Q^{*} = e_t$, the reduced state is unchanged:
 
 $$
 \tilde{U}\left(\tfrac{1}{2}e_t\right)\tilde{U}^{*} = \tfrac{1}{2}\tilde{U}\tilde{U}^{*} = \tfrac{1}{2}e_t.

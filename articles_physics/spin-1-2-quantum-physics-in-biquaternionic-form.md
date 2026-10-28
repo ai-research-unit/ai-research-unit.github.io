@@ -270,7 +270,7 @@ The unitary biquaternions generate the spin rotation group, and the Hermitian bi
 
 ### Unitary Biquaternions
 
-A biquaternion $\tilde{U}$ is **unitary** if $\tilde{U}\tilde{U}^{*} = e_t$. In the matrix representation, $\tilde{U}$ maps to a unitary matrix. The group of unitary biquaternions is $\mathrm{U}(2)$.
+A biquaternion $\tilde Q$ is **unitary** if $\tilde Q\tilde Q^{*} = e_t$. In the matrix representation, $\tilde Q$ maps to a unitary matrix. The group of unitary biquaternions is $\mathrm{U}(2)$.
 
 The subgroup of $\mathrm{U}(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the **spin rotation group**. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{M}_-$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.
 

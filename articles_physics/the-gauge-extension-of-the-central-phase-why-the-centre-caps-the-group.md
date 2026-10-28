@@ -43,7 +43,7 @@ non-trivially, and the framework's matter lives in modules on which a central ph
 ## Why the Centre Caps the Group
 
 With the obstruction stated, the reason the gauge group stays at $\mathrm{U}(2)$ follows. The intrinsic gauge group of the
-algebra is the unitary slice $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$, the central product
+algebra is the unitary slice $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$, the central product
 $(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, and the **abelian factor is exactly the central phase**. The structure of
 the group is the structure of the centre:
 
@@ -143,7 +143,7 @@ does not contain.
 |---|---|
 | $\exp(i\theta)e_t$ | the central phase, the group $\mathrm{U}(1)$ of central unitaries |
 | $ie_t$ | the generator of the central phase, central and of one real dimension |
-| $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$ | the unitary slice, the algebra's intrinsic gauge group |
+| $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$ | the unitary slice, the algebra's intrinsic gauge group |
 | $(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$ | the structure of the slice, with the abelian factor the central phase |
 | $\mathfrak{u}(2)$ | the anti-Hermitian sector of the algebra, the Lie algebra of the slice |
 

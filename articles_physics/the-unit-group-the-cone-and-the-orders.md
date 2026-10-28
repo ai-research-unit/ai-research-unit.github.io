@@ -136,7 +136,7 @@ $$
 \qquad
 \mathbb{B}^{\times}_{1}\longrightarrow S^{3},
 $$
-where $\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$ and $S^{3}=Sp(1)$ is the unit quaternion sphere. Consequently
+where $\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ and $S^{3}=Sp(1)$ is the unit quaternion sphere. Consequently
 $$
 \boxed{\;\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3},
 \qquad
@@ -294,7 +294,7 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 | $\mathcal{N}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | the zero-divisor cone; the wall of reversibility |
 | $\langle\tilde Q\rangle_{\natural}$ | the general quaternionic algebraic norm; the invertibility criterion |
 | $\mathbb{B}^{\times}_{1}=\{\langle\tilde Q\rangle_{\natural}=1\}$ | the norm-one group; the spin frame slice |
-| $\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$ | the unitary group; maximal compact subgroup, $\cong U(2)$ |
+| $\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ | the unitary group; maximal compact subgroup, $\cong U(2)$ |
 | $L=\mathcal{N}\cap S^{7}_{E}$ | the link of the cone; $L\cong S^{2}\times S^{3}$, an $S^{1}$-bundle over $S^{2}\times S^{2}$ |
 | $\mathcal{L}$, $\mathcal{L}_{\mathrm{H}}$ | the Lipschitz and Hurwitz orders |
 | $Q_8$, $2T$ | the unit groups of $\mathcal{L}$ and $\mathcal{L}_{\mathrm{H}}$ |

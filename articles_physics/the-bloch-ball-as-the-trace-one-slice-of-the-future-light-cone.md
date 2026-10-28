@@ -388,7 +388,7 @@ Three checks are immediate. When both states are pure, $|\vec r| = |\vec s| = 1$
 
 ## Symmetries of the Slice
 
-The structure just described is preserved by the unitary action. If $\tilde{U}$ is a unitary biquaternion, $\tilde{U}\tilde{U}^{*} = e_t$, then the conjugation
+The structure just described is preserved by the unitary action. If $\tilde Q$ is a unitary biquaternion, $\tilde Q\tilde Q^{*} = e_t$, then the conjugation
 
 $$
 \tilde{Ϛ} \;\longmapsto\; \tilde{U}\tilde{Ϛ}\tilde{U}^{*}

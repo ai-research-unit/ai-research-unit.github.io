@@ -339,7 +339,7 @@ The mathematics of the sector and its action on the material sector is structura
 | Density matrix $\rho$ (Hermitian, positive, trace one) | element $\tilde{Ϛ}\in\mathbb{M}_+$ (Hermitian, positive, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$; trace one in the image) |
 | Pure state $\lvert\psi\rangle_{*}\langle\psi\rvert$ | idempotent $\tfrac12(e_t+i\vec u)$ |
 | Observable (Hermitian operator) | Hermitian element $\tilde H\in\mathbb{M}_+$ |
-| Unitary gate $U$ | matrix-unitary $\tilde U$, $\tilde U\tilde U^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball |
+| Unitary gate $U$ | matrix-unitary $\tilde Q$, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball |
 | Expectation value $\operatorname{Tr}(\rho H)$ | $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $2\operatorname{Sc}(\tilde{Ϛ}\tilde H^{*})$; the trace enters only at normalisation |
 | Reversible evolution $U\rho U^{\dagger}$ | rotor conjugation $\tilde U\tilde{Ϛ}\tilde U^{*}$ |
 | Projective measurement $\rho\mapsto P\rho P$ | Hermitian idempotent projection $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ |
@@ -469,7 +469,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 | $\langle\tilde Q\rangle_{\natural}=q_t^2-\lvert\vec q'\rvert^2$ | the quaternionic norm, of signature $(1,3)$ |
 | $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})=2\langle\tilde Q_1,\tilde Q_2\rangle_{*}=2\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$, $\operatorname{Tr}(\tilde Q)=2\operatorname{Sc}(\tilde Q)$ | the trace, the $2\times2$ reading of the Hermitian form |
 | $\Gamma_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich |
-| $\tilde U\tilde U^{*}=e_t$ | the matrix-unitary condition, $U(2)$ |
+| $\tilde Q\tilde Q^{*}=e_t$ | the matrix-unitary condition, $U(2)$ |
 | $\langle\tilde U\rangle_{\natural}=1$ | the unit-norm condition, $SL(2,\mathbb{C})$ |
 | $p_\pm=\langle\tilde\Pi_{1,2}(\vec u),\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12(1\pm\vec u\cdot\vec r)$ | the Born probability |
 
