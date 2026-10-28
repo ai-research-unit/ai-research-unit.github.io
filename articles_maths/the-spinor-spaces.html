@@ -70,8 +70,8 @@
       <div class="article-body">
         <h1 id="the-spinor-spaces"><strong>The Spinor Spaces</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The Peirce frame cuts the algebra into four lines. Two pairings of these lines give two planes, and each plane is a spinor space. This article defines the two planes, gives the couples of Peirce vectors that span them, computes the left action on each couple, and states how right multiplication exchanges them.</p>
-<p>The article assumes <em>The Peirce Decomposition</em> and nothing else: the product, the complete orthogonal pair of idempotents, the Peirce table and the two mixed units. It uses no form, no norm and no module.</p>
+<p>The Peirce frame cuts the algebra into four lines. Two pairings of these lines give two planes, and each plane is a spinor space. This article defines the two planes, gives the couples of Peirce vectors that span them, computes the left action on each couple, states how right multiplication exchanges them, and reads the weights of the frame root, which are $\pm\tfrac12$: each plane is a spin-$\tfrac12$ carrier.</p>
+<p>The article assumes <em>The Peirce Decomposition</em> and nothing else: the product, the complete orthogonal pair of idempotents, the Peirce table and the two mixed units. It uses no form, no norm and no module. The spin weights are read from the left action alone.</p>
 <p>The module reading of the same two planes — that they are the minimal left ideals, that they are isomorphic, that they are the simple module — is <em>The Minimal Left Ideals</em>. There the two planes acquire a second job; here they have only their Peirce job.</p>
 <h2 id="the-two-spinor-spaces">The Two Spinor Spaces</h2>
 <p><strong>The two planes $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are the spinor spaces of the frame; each is spanned by one idempotent and one nilpotent, and the algebra is their direct sum as a vector space.</strong></p>
@@ -81,7 +81,7 @@ S_+=\mathbb{B}\tilde\Pi_+=\mathbb{B}_{++}\oplus\mathbb{B}_{-+}=\mathbb{C}\tilde\
 \qquad
 S_-=\mathbb{B}\tilde\Pi_-=\mathbb{B}_{+-}\oplus\mathbb{B}_{--}=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_- .
 $$</p>
-<p>A <strong>spinor of first chirality</strong> is an element of $S_+$, and a <strong>spinor of second chirality</strong> an element of $S_-$. Each space has complex dimension two and real dimension four.</p>
+<p>A <strong>spinor of first chirality</strong> is a coordinate $(\alpha,\beta)$ on $S_+$, written in the couple as the representative $\alpha\tilde\Pi_++\beta\vec\Upsilon_+$; a <strong>spinor of second chirality</strong> is a coordinate $(\gamma,\delta)$ on $S_-$, written $\gamma\vec\Upsilon_-+\delta\tilde\Pi_-$. Each space has complex dimension two and real dimension four.</p>
 <p><strong>The direct sum.</strong> Every $\tilde X\in\mathbb{B}$ satisfies $\tilde X=\tilde X(\tilde\Pi_++\tilde\Pi_-)=\tilde X\tilde\Pi_++\tilde X\tilde\Pi_-$, so the two spaces span. Their intersection is zero: if $\tilde Y=\tilde Y\tilde\Pi_+=\tilde Y\tilde\Pi_-$, then $\tilde Y=\tilde Y\tilde\Pi_+=\tilde Y\tilde\Pi_-\tilde\Pi_+=0$. Hence</p>
 <p>$$
 \mathbb{B}=S_+\oplus S_- .
@@ -103,7 +103,7 @@ $$</p>
 \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,
 $$</p>
 <p>which is the multiplication table of §<em>The Biquaternion Case</em> of <em>The Peirce Decomposition</em>.</p>
-<p><strong>Every element is a pair of spinors.</strong> The splitting of the algebra gives</p>
+<p><strong>Every element is a pair of spinor coordinates.</strong> The splitting of the algebra gives</p>
 <p>$$
 \tilde X=\tilde X\tilde\Pi_++\tilde X\tilde\Pi_-,
 \qquad
@@ -138,7 +138,31 @@ $$</p>
 $$</p>
 <p>In each couple the first basis vector has the column $(p_{11},p_{21})$ and the second the column $(p_{12},p_{22})$, which are the two columns of $\mathsf M(\tilde P)$.</p>
 <p>The two spaces are closed on the left, $\mathbb{B}S_\pm\subseteq S_\pm$, because $S_\pm=\mathbb{B}\tilde\Pi_\pm$ and the multiplication is associative. Left multiplication therefore never mixes the two chiralities.</p>
-<p><strong>Remark (chirality is not a scalar of left multiplication).</strong> Inside a couple, left multiplication mixes the idempotent and the nilpotent whenever $p_{12}$ or $p_{21}$ is nonzero. A basis spinor is carried to a multiple of itself exactly when the coefficient that couples it to the other member of its couple vanishes; both are carried to multiples exactly when $\mathsf M(\tilde P)$ is diagonal.</p>
+<p><strong>Remark (chirality is not a scalar of left multiplication).</strong> Inside a couple, left multiplication mixes the idempotent and the nilpotent whenever $p_{12}$ or $p_{21}$ is nonzero. A basis vector is carried to a multiple of itself exactly when the coefficient that couples it to the other member of its couple vanishes; both are carried to multiples exactly when $\mathsf M(\tilde P)$ is diagonal.</p>
+<h2 id="the-root-on-a-couple">The Root on a Couple</h2>
+<p><strong>The frame root acts on both couples by the same diagonal matrix $\operatorname{diag}(1,-1)$; the half-root has weights $\pm\tfrac12$, so each plane is a spin-$\tfrac12$ carrier, while the right root is the chirality scalar $+1$ on $S_+$ and $-1$ on $S_-$.</strong></p>
+<p><strong>The weights.</strong> The root is $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$. The corner signs of <em>The Peirce Decomposition</em> give, in the couple $\mathcal{C}_+$,</p>
+<p>$$
+L_{\tilde\Xi}\tilde\Pi_+=\tilde\Pi_+,\qquad L_{\tilde\Xi}\vec\Upsilon_+=-\vec\Upsilon_+,
+$$</p>
+<p>and in the couple $\mathcal{C}_-$,</p>
+<p>$$
+L_{\tilde\Xi}\vec\Upsilon_-=\vec\Upsilon_-,\qquad L_{\tilde\Xi}\tilde\Pi_-=-\tilde\Pi_- .
+$$</p>
+<p>In each couple the matrix is $\operatorname{diag}(1,-1)$. The <strong>half-root</strong> $\tfrac12\tilde\Xi$ therefore has the weights $+\tfrac12,-\tfrac12$ on each plane, and the highest weight is $\tfrac12$: each spinor space is a spin-$\tfrac12$ carrier.</p>
+<p><strong>Chirality versus spin weight.</strong> The right action of the same root is scalar on each plane: $R_{\tilde\Xi}=+1$ on $S_+$ and $R_{\tilde\Xi}=-1$ on $S_-$, because $\tilde\Pi_+\tilde\Xi=\tilde\Pi_+$ and $\vec\Upsilon_+\tilde\Xi=\vec\Upsilon_+$, while $\vec\Upsilon_-\tilde\Xi=-\vec\Upsilon_-$ and $\tilde\Pi_-\tilde\Xi=-\tilde\Pi_-$. The eigenvalue of $R_{\tilde\Xi}$ is the <strong>chirality</strong>, the eigenvalue of $L_{\tilde\Xi}$ is the <strong>spin weight</strong>. The two planes have the same spin weights and opposite chirality; the two words are independent, and the identity $L_{\tilde\Xi}=\operatorname{ad}_{\tilde\Xi}+R_{\tilde\Xi}$ reads the spin weight as the sum of the commutator weight and the chirality.</p>
+<p><strong>The ladder.</strong> The two nilpotents act by left multiplication as the ladder of the plane. In each couple,</p>
+<p>$$
+L_{\vec\Upsilon_-}=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+\qquad
+L_{\vec\Upsilon_+}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
+$$</p>
+<p>because the left action is the Peirce matrix $\mathsf M(\tilde P)$ in both couples. The operator $\vec\Upsilon_-$ raises the weight by one and $\vec\Upsilon_+$ lowers it by one; in $\mathcal{C}_-$ the two basis vectors exchange their roles, and the two matrices are unchanged.</p>
+<p><strong>The triple.</strong> The three elements $\tfrac12\tilde\Xi$, $E=\vec\Upsilon_-$ and $F=\vec\Upsilon_+$ satisfy</p>
+<p>$$
+[H,E]=E,\qquad [H,F]=-F,\qquad [E,F]=2H .
+$$</p>
+<p>The spin-$\tfrac12$ of each plane is the Peirce frame read as an $\mathfrak{sl}_2$ triple. The proof, the vector carrier, the projectors and the half-angle are in <em>The Spin of a Biquaternion</em>.</p>
 <h2 id="the-right-action">The Right Action</h2>
 <p><strong>Right multiplication is the operation that relates the two spinor spaces: it preserves one of them only under a condition on the Peirce matrix, and it exchanges them through the mixed units.</strong></p>
 <p>Right multiplication by $\tilde P$ sends</p>
@@ -174,7 +198,7 @@ $$</p>
 <p>$$
 S_+^{*}=(\mathbb{B}\tilde\Pi_+)^{*}=\tilde\Pi_+^{*}\mathbb{B}.
 $$</p>
-<p>For the Hermitian pair $\tilde\Pi_+^{*}=\tilde\Pi_+$, so $S_+^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$, the right Peirce row of the same idempotent. It is not $S_-$ and it is not a spinor space: the two spinor spaces are planes closed on the left, while $S_+^{*}$ is a plane closed on the right. The image is the transpose of a spinor space, a different subspace of the algebra. The spinor adjoints and the reality conditions are treated in <em>Spinors as Minimal Left Ideals with Inner Conjugation</em> and <em>Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
+<p>For the Hermitian pair $\tilde\Pi_+^{*}=\tilde\Pi_+$, so $S_+^{*}=\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$, the right Peirce row of the same idempotent. It is not $S_-$ and it is not a spinor space: the two spinor spaces are planes closed on the left, while $S_+^{*}$ is a plane closed on the right. The image is the transpose of a spinor space, a different subspace of the algebra. The spinor adjoints and the reality conditions are treated in <em>Peirce Carriers and Inner Conjugation</em> and <em>Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
 <p><strong>In the $M_2(\mathbb{C})$ Peirce model the two spinor spaces are the two columns, left multiplication multiplies a column, and right multiplication multiplies the matrix and mixes the columns.</strong></p>
 <p>Under the coordinate isomorphism of §<em>The Peirce Coordinates and the Matrix Model</em> of <em>The Peirce Decomposition</em>, the basis $\mathcal{C}_+$ becomes the first column and $\mathcal{C}_-$ the second:</p>
@@ -183,12 +207,15 @@ S_+\longmapsto\mathbb{C}E_{11}\oplus\mathbb{C}E_{21},
 \qquad
 S_-\longmapsto\mathbb{C}E_{12}\oplus\mathbb{C}E_{22}.
 $$</p>
-<p>A spinor of first chirality is a column vector, and the left action of $\tilde P$ is multiplication of that column by $\mathsf M(\tilde P)$. The right action multiplies the whole matrix on the right and therefore mixes the two columns. The matrix form is <em>$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>.</p>
+<p>The representative of a spinor of first chirality is a column vector, and the left action of $\tilde P$ is multiplication of that column by $\mathsf M(\tilde P)$. The right action multiplies the whole matrix on the right and therefore mixes the two columns. The matrix form is <em>$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>.</p>
 <h2 id="summary">Summary</h2>
 <ul>
 <li>The Peirce frame carries two planes $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, the spinor spaces, with $\mathbb{B}=S_+\oplus S_-$ as a vector space.</li>
 <li>Each plane is spanned by a couple $\mathcal{C}_\pm$ made of one idempotent and one nilpotent.</li>
 <li>Left multiplication preserves each plane and acts on both by the same Peirce matrix $\mathsf M(\tilde P)$.</li>
+<li>The root $\tilde\Xi$ has left weights $+1,-1$ in each couple; the half-root $\tfrac12\tilde\Xi$ has weights $\pm\tfrac12$, so each plane is a spin-$\tfrac12$ carrier.</li>
+<li>The right root is the chirality scalar, $+1$ on $S_+$ and $-1$ on $S_-$; chirality and spin weight are independent.</li>
+<li>The nilpotents $\vec\Upsilon_-,\vec\Upsilon_+$ are the raising and lowering operators in both couples, and $\tfrac12\tilde\Xi,\vec\Upsilon_-,\vec\Upsilon_+$ form an $\mathfrak{sl}_2$ triple.</li>
 <li>Right multiplication exchanges the two planes through the mixed units; the exchange is a pair of inverse bijections, canonical only up to the rescaling of the mixed basis.</li>
 <li>The star carries $S_+$ to the right Peirce row $\tilde\Pi_+\mathbb{B}$, not to $S_-$.</li>
 <li>Nothing in the article uses a form, a norm or a module.</li>
@@ -215,6 +242,14 @@ $$</p>
 <td>the mixed Peirce units</td>
 </tr>
 <tr>
+<td>$\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$</td>
+<td>the frame root</td>
+</tr>
+<tr>
+<td>$\tfrac12\tilde\Xi$</td>
+<td>the half-root, the spin operator when $\tilde\Xi$ is Hermitian</td>
+</tr>
+<tr>
 <td>$\mathsf M(\tilde P)$</td>
 <td>the Peirce matrix of $\tilde P$</td>
 </tr>
@@ -222,10 +257,11 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the corners, the Peirce table and the mixed units.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the corners, the Peirce table, the mixed units and the weight table.</li>
+<li><a href="the-spin-of-a-biquaternion.html">The Spin of a Biquaternion</a>, for the triple, the vector carrier, the projectors and the half-angle.</li>
 <li><a href="the-minimal-left-ideals.html">The Minimal Left Ideals</a>, for the module reading of the two spaces.</li>
 <li><a href="m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the matrix picture.</li>
-<li><a href="spinors-as-minimal-left-ideals-with-inner-conjugation.html">Spinors as Minimal Left Ideals with Inner Conjugation</a>, for the adjoints and the reality conditions.</li>
+<li><a href="peirce-carriers-and-inner-conjugation.html">Peirce Carriers and Inner Conjugation</a>, for the adjoints and the reality conditions.</li>
 </ul>
       </div>
     </main>

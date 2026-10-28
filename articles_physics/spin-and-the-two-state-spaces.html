@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="spin-and-the-two-state-spaces"><strong>Spin and the Two State Spaces</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The spinor space of the biquaternion framework is the minimal left ideal</p>
+<p>The spinor space of the biquaternion framework is the Peirce carrier of $\tilde\Pi_+$, which in this algebra is the minimal left ideal</p>
 <p>$$
 S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},
 \qquad
@@ -142,12 +142,12 @@ $$</p>
 \tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\vec\Upsilon_y,\quad
 \tilde\Pi_-\mathbb{B}\tilde\Pi_-=\mathbb{C}\tilde\Pi_-.
 $$</p>
-<p>The spinor space is one column, the sum of a diagonal corner and an off-diagonal one:</p>
+<p>The spinor space is the Peirce direct sum of a diagonal corner and an off-diagonal one:</p>
 <p>$$
 S=\tilde\Pi_+\mathbb{B}\tilde\Pi_+\oplus\tilde\Pi_-\mathbb{B}\tilde\Pi_+
 =\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_y .
 $$</p>
-<p>The basis is therefore not a choice. A minimal left ideal is one column of the matrix model, and a column of a rank-two matrix algebra is one diagonal corner plus one off-diagonal corner. The diagonal corner contributes the idempotent $\tilde\Pi_+$; the off-diagonal corner contributes a nilpotent, $\vec\Upsilon_y$. Every element of an off-diagonal corner is square-zero, because $(fae)(fae)=fa(ef)ae=0$ for orthogonal idempotents $e,f$. In rank $n$ the same count gives one idempotent and $n-1$ nilpotents; the spinor space is the case $n=2$.</p>
+<p>The basis is therefore not a choice. The carrier is one column of the matrix model, and in that model it is the minimal left ideal; a column of a rank-two matrix algebra is one diagonal corner plus one off-diagonal corner. The diagonal corner contributes the idempotent $\tilde\Pi_+$; the off-diagonal corner contributes a nilpotent, $\vec\Upsilon_y$. Every element of an off-diagonal corner is square-zero, because $(fae)(fae)=fa(ef)ae=0$ for orthogonal idempotents $e,f$. In rank $n$ the same count gives one idempotent and $n-1$ nilpotents; the spinor space is the case $n=2$.</p>
 <blockquote>
 <p><strong>The basis of the spinor space is one idempotent and one nilpotent, and the nilpotency is structural.</strong> It is not a property of the particular column, and it is not a choice of coordinates.</p>
 </blockquote>
@@ -410,7 +410,7 @@ $$</p>
 <li><strong>No dynamics.</strong> Nothing here says how a state moves between the copies in time, or why the mass has the value it has.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ is a minimal left ideal of the plain algebra, with a forced basis of one idempotent and one nilpotent. As a module it is the unique simple module, with $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$; the left action is the defining representation of the double cover, and $-e_t$ acts as $-\mathrm{id}$, which is where spin-$\tfrac12$ lives.</p>
+<p>The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ is the Peirce carrier of the plain algebra, and it is a minimal left ideal, with a forced basis of one idempotent and one nilpotent. As a module it is the unique simple module, with $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$; the left action is the defining representation of the double cover, and $-e_t$ acts as $-\mathrm{id}$, which is where spin-$\tfrac12$ lives.</p>
 <p>The same carrier carries a second structure from the plain sesquilinear product: a positive definite Hermitian form of Gram matrix $\tfrac12 I_2$, the Born pairing and the normalisation. The two structures do not coincide: the algebra's own bilinear form is degenerate on the carrier, $\operatorname{diag}(\tfrac12,0)$, with radical the nilpotent line. The module is composition and the Hilbert space is probability; the spin is a module datum and the ray a Hilbert datum; the vacuum is a module choice and the normalisation a metric condition.</p>
 <p>The algebra also splits into two minimal left ideals, the second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, module-isomorphic to $S$ through right multiplication by $\vec\Upsilon_x$ and Hilbert-orthogonal to it. The mass coupling is the pair of right multiplications by the two nilpotents, off-diagonal and column-flipping; the natural generators are null, the induced maps are isometries, and the nilpotence is a choice of generator and not an invariant. The complement is not the dual, not a second representation and not a sector. Three complements must be kept apart: the module and Hilbert complements coincide, the algebra's-own-form complement $S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ is a third subspace, and the coincidence of the first two is conditional on the Hermiticity of the vacuum idempotent.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -432,7 +432,7 @@ $$</p>
 </tr>
 <tr>
 <td>$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$</td>
-<td>the spinor space, first column</td>
+<td>the spinor space, the Peirce carrier, first column</td>
 </tr>
 <tr>
 <td>$S^{\mathrm{c}}$</td>

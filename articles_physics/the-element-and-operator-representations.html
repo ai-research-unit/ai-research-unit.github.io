@@ -71,7 +71,7 @@
         <h1 id="element-and-operator-representations-the-three-actions"><strong>Element and Operator Representations: The Three Actions</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>One biquaternion can be written in five standard matrix-shaped ways, and the five divide into two kinds. The <strong>element representations</strong> answer what the element is: the four-vector of complex coefficients, the $2\times2$ complex matrix $\mathsf{M}_2(\tilde Q)$, and the $4\times4$ left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$. The <strong>operator representations</strong> answer what the element does: the $2\times2$ congruence $X\mapsto \mathsf{M}_2(\tilde Q)X\mathsf{M}_2(\tilde Q)^{\dagger}$ and the $4\times4$ sandwich. The first kind is linear in the element; the second is quadratic. That difference is the whole content of the article.</p>
-<p>The physical stake is a distinction that is easy to lose. A state is carried by an element representation, a transformation by an operator representation. A spinor is a two-component column on which the $2\times2$ matrix acts; a four-vector is an element of the material sector on which the sandwich acts. Reading the determinant of the regular matrix as the norm, or the sandwich as a linear map of its parameter, or the doubled regular picture as two particles, are the three standard errors that the distinction prevents.</p>
+<p>The physical stake is a distinction that is easy to lose. A state is carried by an element representation, a transformation by an operator representation. A spinor is a coordinate on a Peirce carrier, which in the $2\times2$ matrix model is a two-component column on which the $2\times2$ matrix acts; a four-vector is an element of the material sector on which the sandwich acts. Reading the determinant of the regular matrix as the norm, or the sandwich as a linear map of its parameter, or the doubled regular picture as two particles, are the three standard errors that the distinction prevents.</p>
 <p>The article is a reader and owns no new theorem. Each result is stated in a sentence, the mathematics article that proves it is linked, and the physical reading is given with its boundary. It is the entry of the <em>Element and Operator Representations</em> group that fixes the vocabulary the other representation articles use.</p>
 <p>The operator side is stated once, here. An element acts in three ways: left multiplication and right multiplication, which carry an element with one side fixed, and the sandwich, which acts on both sides and carries a frame. The composition laws, the adjoint for the plain form, the two-sided pair and the Peirce decomposition are the grammar the rest of the category uses. The matrix pictures of the three actions are the subject of the operator sections; the operator calculus itself is not repeated in a separate article.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
@@ -239,7 +239,7 @@ N=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2,
 $$</p>
 <p>multiplicative and indefinite; the element is a unit exactly when $N\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/N$.</p>
 <p>The four-vector is a coordinate list of an element of the algebra. It is <strong>not</strong> a Dirac spinor and <strong>not</strong> a column of the regular representation: it is the element written in its own basis, and the number four is the dimension of the algebra, not the dimension of the spin module. The spinor is two-dimensional and appears in the next picture.</p>
-<h3 id="the-math56-element">The $2\times2$ Element</h3>
+<h3 id="the-math57-element">The $2\times2$ Element</h3>
 <p>The isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is written on the Pauli matrices,</p>
 <p>$$
 \boxed{\;\mathsf{M}_2(\tilde Q)=Q_t\mathrm{I}_2-i\bigl(Q_x\sigma_x+Q_y\sigma_y+Q_z\sigma_z\bigr)
@@ -251,7 +251,7 @@ $$</p>
 $$</p>
 <p>In the $2\times2$ image the trace is twice the scalar part, the determinant is the norm, and the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$. The Hermitian conjugation ${}^{*}$ becomes the conjugate transpose, so $\mathbb{M}_+$ and $\mathbb{M}_-$ become the Hermitian and anti-Hermitian matrices. The determinant is the interval on the material sector; on the informational sector its sign is the causal type, and a Hermitian matrix is a state exactly when it is positive, which requires both a positive trace and a non-negative determinant.</p>
 <p>The matrix acts on a two-component column. That column is the <strong>spinor</strong>, and the action is the left multiplication of the algebra on its simple module. The two columns of the matrix algebra are the two minimal left ideals, which the corpus calls the two chiralities; this article writes <strong>column chirality</strong> for that column-index convention. The spinor picture is the smallest picture that carries the state; it does not carry the four-vector.</p>
-<h3 id="the-math65-left-regular-element">The $4\times4$ Left Regular Element</h3>
+<h3 id="the-math66-left-regular-element">The $4\times4$ Left Regular Element</h3>
 <p>The left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$. Its invariants are the doubled invariants:</p>
 <p>$$
 \det\mathsf{M}_4^{L}(\tilde Q)=N^2, \qquad \operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t.
@@ -275,14 +275,14 @@ $$</p>
 \boxed{\;\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\,\mathsf{M}_4^{R}(\tilde Q^{*})\;}.
 $$</p>
 <p>The sandwich is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but it is not linear, and on the unit group it is not faithful: $\operatorname{H}_{\lambda\tilde Q}=|\lambda|^2\operatorname{H}_{\tilde Q}$, so every central phase of modulus one gives the same operator. It is a quadratic map that descends to a faithful representation of the unit group modulo its central phase circle, not a linear one.</p>
-<h3 id="the-math90-congruence">The $2\times2$ Congruence</h3>
+<h3 id="the-math91-congruence">The $2\times2$ Congruence</h3>
 <p>On matrices the operator is</p>
 <p>$$
 X\longmapsto M X M^{\dagger}, \qquad M=\mathsf{M}_2(\tilde Q).
 $$</p>
 <p>Off the cone, $M$ is invertible, the congruence is a bijection, it preserves the rank of every argument, and it scales the determinant by $|\det M|^2=|N|^2$. On the cone, $M$ has rank one and the congruence collapses: every image is a multiple of the Hermitian rank-one matrix $u u^{\dagger}$, the image is a single complex line, and the operator has rank one. The value of the trace $4|Q_t|^2$ decides whether the surviving operator is nilpotent ($Q_t=0$) or a scaled projection ($Q_t\neq0$).</p>
 <p>The congruence is a completely positive map with a single Kraus operator. It is trace-preserving exactly when $M$ is unitary, that is for the unitary elements; otherwise it rescales the trace. On the cone it is a destructive map: it projects every operand onto one line and erases the distinctions between them. The algebra supplies the shape of a quantum channel and of a measurement; it does not supply the probability rule for the outcomes.</p>
-<h3 id="the-math100-operator">The $4\times4$ Operator</h3>
+<h3 id="the-math101-operator">The $4\times4$ Operator</h3>
 <p>On the algebra the same sandwich is the matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$. If $\mathsf{M}_2(\tilde Q)$ has eigenvalues $\lambda_1,\lambda_2$, the operator has the four eigenvalues</p>
 <p>$$
 \lambda_1\bar\lambda_1,\quad \lambda_1\bar\lambda_2,\quad \lambda_2\bar\lambda_1,\quad \lambda_2\bar\lambda_2,
