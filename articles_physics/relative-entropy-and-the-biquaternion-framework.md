@@ -10,7 +10,7 @@ and every information-theoretic inequality of consequence — monotonicity, the 
 
 The answer has three parts, and they should be separated at the outset.
 
-1. **The quantity is standard.** The states of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ are, by the GNS companion article, the elements $\tilde{Ϛ}\in\mathbb{M}_+$ that are Hermitian, positive and of trace one, parametrized by the Bloch ball. Relative entropy on these states is Umegaki's. The framework does not modify it, and no new inequality is claimed for it.
+1. **The quantity is standard.** The states of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ are, by the Hermitian GNS companion article, the elements $\tilde{Ϛ}\in\mathbb{M}_+$ that are Hermitian, positive and of trace one, parametrized by the Bloch ball. Relative entropy on these states is Umegaki's. The framework does not modify it, and no new inequality is claimed for it.
 
 2. **The quantity is exactly computable.** Because $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, both the state and its logarithm are elements of the algebra, and the trace is the scalar pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The relative entropy of two biquaternion states therefore collapses to a closed expression in their Bloch vectors, which is derived and verified below.
 
@@ -59,7 +59,7 @@ The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\
 
 ### Density Matrices in $\mathbb{M}_+$
 
-By the GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_2^{*})$ with $\tilde{Ϛ}\in\mathbb{M}_+$ positive and of trace one. Writing
+By the Hermitian GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_2)$ with $\tilde{Ϛ}\in\mathbb{M}_+$ positive and of trace one. Writing
 $$
 \tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
 \vec r\in\mathbb{R}^3,\qquad \mathbf e=(\vec e_x,\vec e_y,\vec e_z),
@@ -189,13 +189,13 @@ where $\sigma^{(\varphi,\omega)}$ is the **Connes cocycle** flow relating the mo
 Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$, the relative Tomita operator is $\tilde Q_2\Omega_\varphi\mapsto\tilde Q_2^{*}\Omega_\omega$ and its polar decomposition gives
 $$
 \Delta_{\omega,\varphi}\big(\tilde Q_2\big)
-=\tilde{Ϛ}_\omega\,\tilde Q_2\,\tilde{Ϛ}_\varphi^{-1},
+=e^{-\tilde K_{\mathrm{mod},\omega}}\,\tilde Q_2\,e^{\tilde K_{\mathrm{mod},\varphi}},
 \qquad
 \log\Delta_{\omega,\varphi}\big(\tilde Q_2\big)
 =\log\tilde{Ϛ}_\omega\,\tilde Q_2-\tilde Q_2\,\log\tilde{Ϛ}_\varphi
 =\tilde Q_2\,\tilde{K}_{\mathrm{mod},\varphi}-\tilde{K}_{\mathrm{mod},\omega}\,\tilde Q_2,
 \qquad
-\tilde{K}_{\mathrm{mod},\omega}=-\log\tilde{Ϛ}_\omega\in\mathbb{M}_+ .
+\tilde{K}_{\mathrm{mod},\omega}=-\log\tilde{Ϛ}_\omega\in\mathbb{M}_+,\qquad \tilde{K}_{\mathrm{mod},\varphi}=-\log\tilde{Ϛ}_\varphi\in\mathbb{M}_+ .
 $$
 Araki's formula evaluated on $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$ then returns
 $$
@@ -284,7 +284,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 - R. Haag, *Local Quantum Physics: Fields, Particles, Algebras* (Springer, 1996), for the algebraic setting and the type III character of local algebras.
 - H. Araki, "Relative entropy of states of von Neumann algebras," and E. Witten, "Notes on some entanglement properties of quantum field theory," *Reviews of Modern Physics* **90** (2018) 045003, for the finiteness of the relative entropy of a local excitation of the vacuum.
 - M. Takesaki, *Theory of Operator Algebras II* (Springer, 2003), for the Connes cocycle and the relative modular condition.
-- Companion article [The GNS Construction in the Biquaternion Framework](the-gns-construction-in-the-biquaternion-framework.html), for the states of $\mathbb{B}$, the Bloch ball, and the modular Hamiltonian.
-- Companion article [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the modular operator $\Delta$ and the modular flow.
+- Companion article [The Hermitian GNS Construction in the Biquaternion Framework](the-hermitian-gns-construction-in-the-biquaternion-framework.html), for the states of $\mathbb{B}$, the Bloch ball, and the modular Hamiltonian.
+- Companion article [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html), for the modular operator $\Delta$ and the modular flow.
 - Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space, the trace formula, and the pure-state idempotents.
 - Companion article [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the material sector and its zero-divisor cone.

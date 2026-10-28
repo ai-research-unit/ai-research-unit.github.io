@@ -81,7 +81,7 @@ The centre can be described from five directions, and the equivalence of the des
 
 **1. The commuting part.** This is the definition: $\tilde{Q}\in Z(\mathbb{B})$ if and only if $\tilde{Q}$ commutes with every element. In the language of observables, the central Hermitian elements are exactly the observables compatible with every observable; they form the maximally commutative and symmetry-blind part of the algebra.
 
-**2. The fixed points of the adjoint action.** Let $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{-1}$; for $\tilde{U}$ unitary this is the conjugation action on the Hermitian sector, and it implements the inner automorphisms of $\mathbb{B}$. An element is fixed by every inner automorphism if and only if it commutes with every element,
+**2. The fixed points of the adjoint action.** Let $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$; for $\tilde{U}$ unitary this is the conjugation action on the Hermitian sector, and it implements the inner automorphisms of $\mathbb{B}$. An element is fixed by every inner automorphism if and only if it commutes with every element,
 $$
 \bigl\{\tilde{Q}:\ \mathrm{Ad}_{\tilde{U}}\tilde{Q}=\tilde{Q}\ \ \forall\tilde{U}\in \mathrm{U}(2)\bigr\}=Z(\mathbb{B}).
 $$
@@ -303,7 +303,7 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $Z(\mathbb{B})\cap\mathbb{M}_+=\mathbb{R}e_t$ | Hermitian central elements |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$ |
-| $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{-1}$ | Adjoint (inner) action |
+| $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Adjoint (inner) action |
 | $\mathrm{ad}_{\tilde{Q}}(\tilde{Q}_1)=[\tilde{Q},\tilde{Q}_1]$ | Inner derivation |
 | $\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\vec u),e_t-\tilde\Pi(\vec u)\}$ | Maximal commutative subalgebra (MASA) |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure-state idempotent, $|\vec u|=1$ |

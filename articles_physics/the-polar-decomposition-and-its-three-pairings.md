@@ -22,10 +22,10 @@ Two distinctions organise the article and are worth naming at the start. A **pai
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The four factors, their ranges, their dimensions, the theorem and the uniqueness | [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
-| The exponential word, the logarithm, the kernel and the boundary limits | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
-| The quaternion pairing, its construction and its domain | [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html) |
-| The Hamilton pairing, the complex modulus and the complex angle | [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html) |
-| The Cartan pairing and the matrix polar decomposition | [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html) |
+| The exponential word, the logarithm, the kernel and the boundary limits | *Exponential Polar Decomposition of Biquaternions* |
+| The quaternion pairing, its construction and its domain | *The Quaternion Pairing of the Polar Decomposition of Biquaternions* |
+| The Hamilton pairing, the complex modulus and the complex angle | *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions* |
+| The Cartan pairing and the matrix polar decomposition | *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions* |
 | The generalized pairing on the null cone | [The Polar Decomposition of a N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 | The action of the four factors on the sectors and the six remarkable subspaces | [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html) |
 
@@ -36,7 +36,7 @@ Two distinctions organise the article and are worth naming at the start. A **pai
 | 1 | $r$ | scale | — | — | $r>0$ | $1$ | dilation by $r^2$ |
 | 2 | $\exp(i\alpha)$ | central phase | $i\alpha$ | $i$ | $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | $1$ | multiplication by the scalar |
 | 3 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi_w}{2}\vec u_{\mathrm b})$ | boost | $i\tfrac{\psi_w}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\psi_w\ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | congruence $X\mapsto \tilde U_{\mathrm b}X\tilde U_{\mathrm b}^{*}$ |
-| 4 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ | conjugation $X\mapsto \tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{-1}$ |
+| 4 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ | conjugation $X\mapsto \tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$ |
 
 The axis sphere $\mathcal{A}$ is the set of unit real pure quaternions, the roots of $-e_t$. The phase is the only factor whose action is not a sandwich; its action is scalar multiplication.
 
@@ -295,10 +295,10 @@ The pairings read the same data under different headings, and the readings are d
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the general H-norm two-factor decomposition and the partial isometry on the cone.
 - [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the theorem and the uniqueness.
-- [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the exponential word, the logarithm, the kernel and the boundary limits.
-- [The Quaternion Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-biquaternions.html), for the real quaternion modulus and the angle.
-- [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the complex axis-angle.
-- [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the amplitude–phase split.
+- *Exponential Polar Decomposition of Biquaternions*, for the exponential word, the logarithm, the kernel and the boundary limits.
+- *The Quaternion Pairing of the Polar Decomposition of Biquaternions*, for the real quaternion modulus and the angle.
+- *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, for the complex axis-angle.
+- *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the amplitude–phase split.
 - [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html), for the sector action, the cross-term signs and the preservation table.
 - [The General Polar Decomposition, the Amplitude and the Operator-to-State Map](the-general-polar-decomposition-amplitude-and-the-operator-to-state-map.html), for the state defined by an operator and the modular reading.
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass shell and the complex angle.

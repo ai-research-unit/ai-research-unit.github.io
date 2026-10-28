@@ -276,4 +276,4 @@ The Hermitian basis of the regular image is $\mathrm I_4$ and the three Pauli ma
 - [$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors
 - [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m2c-representation-spin-qubits-and-the-bloch-vector.html), for the $2\times2$ version
 - [Spin and the Two State Spaces](../articles_physics/spin-and-the-two-state-spaces.html), for the spinor
-- [The Pauli Correspondence and the Matrix Image](../articles_physics/the-m2c-representation-and-the-pauli-correspondence.html), for the physical reading
+- [The Pauli Correspondence and the Matrix Image](../articles_physics/the-pauli-correspondence-and-the-matrix-image.html), for the physical reading

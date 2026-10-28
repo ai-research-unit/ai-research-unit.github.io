@@ -211,7 +211,7 @@ $$
 \mathcal{B}\cong SL(2,\mathbb{C})/SU(2)\cong\mathbb{H}^3,
 $$
 
-hyperbolic three-space: the coset of the covering group by its maximal compact subgroup. The rotation group acts on it by conjugation, $\tilde U_{\mathrm b}\mapsto\tilde u_{\mathrm r}\tilde U_{\mathrm b}\tilde u_{\mathrm r}^{-1}$, and this action is transitive on directions. The same conjugation carries $B_{\mathrm{right}}$ to $\tilde U_{\mathrm b}$. Hyperbolic three-space is simply connected and contractible; the boost manifold inherits both properties.
+hyperbolic three-space: the coset of the covering group by its maximal compact subgroup. The rotation group acts on it by conjugation, $\tilde U_{\mathrm b}\mapsto\tilde u_{\mathrm r}\tilde U_{\mathrm b}\tilde u_{\mathrm r}^{*}$, and this action is transitive on directions. The same conjugation carries $B_{\mathrm{right}}$ to $\tilde U_{\mathrm b}$. Hyperbolic three-space is simply connected and contractible; the boost manifold inherits both properties.
 
 **The topology lives in the rotations.** The polar decomposition and the coset description combine into the fiber bundle
 

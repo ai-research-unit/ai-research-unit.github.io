@@ -1,16 +1,18 @@
-# __The GNS Construction in the Biquaternion Framework__
+# __The Hermitian GNS Construction in the Biquaternion Framework__
 
 ## Introduction
 
-A **state** on an algebra of observables is a linear functional that assigns to each observable its expectation value. The Gelfand–Naimark–Segal (GNS) construction is the theorem that turns that functional back into a Hilbert space and a representation: from a state $\omega$ on a $C^*$-algebra $\mathcal{A}$ it builds a Hilbert space $\mathcal{H}_\omega$, a $*$-representation $\pi_\omega$ of $\mathcal{A}$ on it, and a cyclic vector $\Omega_\omega$ such that
+A **state** on an algebra of observables is a linear functional that assigns to each observable its expectation value. The Gelfand–Naimark–Segal (GNS) construction turns that functional back into a Hilbert space and a representation: from a state $\omega$ on a $C^*$-algebra $\mathcal{A}$ it builds a Hilbert space $\mathcal{H}_\omega$, a $*$-representation $\pi_\omega$ of $\mathcal{A}$ on it, and a cyclic vector $\Omega_\omega$ such that
 $$
 \omega(\tilde Q_3) \;=\; \big\langle \Omega_\omega \,\big|\, \pi_\omega(\tilde Q_3)\,\big|\, \Omega_\omega \big\rangle .
 $$
-The reconstruction is the precise sense in which a state and a representation are two views of one object. This article carries it out for the biquaternion algebra $\mathbb{B}$.
+The reconstruction is the precise sense in which a state and a representation are two views of one object.
 
-The finite dimensionality of $\mathbb{B}$ removes every technical obstruction and makes the construction explicit. States are density matrices, the Hilbert space is the algebra itself with a trace-twisted inner product, the representation is left multiplication, and the cyclic vector is the class of the identity. The GNS data can therefore be computed rather than merely asserted, and the results have a definite algebraic shape.
+This article carries the construction out for the biquaternion algebra $\mathbb{B}$ in the **Hermitian form** used throughout the corpus. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$ with $\tilde{Ϛ}$ Hermitian; the modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element; and every parameter of the modular flow is unitary, so its inverse *is* its Hermitian adjoint. The modular operator is built from the Hermitian exponentials $e^{-K}$ and $e^{K}$. No inverse of a general element is written anywhere in the construction.
 
-- **Established, and recomputed below.** For a state given by a density matrix $\tilde{Ϛ}\in\mathbb{M}_+$, $\mathrm{Tr}(\tilde{Ϛ})=1$, the GNS Hilbert space is
+The finite dimensionality of $\mathbb{B}$ removes every technical obstruction and makes the construction explicit. States are density matrices, the Hilbert space is the algebra itself with the Hermitian inner product, the representation is left multiplication, and the cyclic vector is the class of the identity.
+
+- **Established, and recomputed below.** For a state given by a density matrix $\tilde{Ϛ}\in\mathbb{M}_+$, $\mathrm{Tr}(\tilde{Ϛ})=1$, the Hermitian GNS Hilbert space is
 $$
 \mathcal{H}_{\tilde{Ϛ}} \;=\; \mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}},
 \qquad
@@ -24,11 +26,11 @@ $$
 = \begin{cases} 2 & \tilde{Ϛ} \text{ a minimal idempotent (pure)}, \\[2pt] 4 & \tilde{Ϛ} \text{ of full rank (all mixed states, including the trace state)}.\end{cases}
 $$
 For the **vacuum** state $\tilde{Ϛ} = \tilde\Pi_+$ the GNS space is the minimal left ideal, of complex dimension two — the one-particle spinor module — and the representation is irreducible. For the **trace** state it is the whole four-complex-dimensional algebra and the representation is reducible.
-- **Established, and the finite-dimensional form of Tomita–Takesaki.** The modular operator of the state is $\Delta_{\tilde{Ϛ}}(\tilde Q_3) = \tilde{Ϛ}\,\tilde Q_3\,\tilde{Ϛ}^{-1}$ and the modular conjugation is $J(\tilde Q_3)=\tilde Q_3^{*}$; they satisfy $J\Delta J^{-1}=\Delta^{-1}$ and $\Delta>0$. The modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element, hence lies in $\mathbb{M}_+$, which is the algebraic fact that the companion articles on KMS and modular theory use.
+- **Established, and the finite-dimensional Hermitian Tomita–Takesaki structure.** The modular Hamiltonian of a full-rank state is $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, the modular flow is the Hermitian sandwich $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ with $U_t=e^{-itK_{\tilde{Ϛ}}}$, and the modular operator is $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$, positive and self-adjoint for the GNS inner product. The modular conjugation $J_{\tilde{Ϛ}}$, defined by $S_{\tilde{Ϛ}}=J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}^{1/2}$ with $S_{\tilde{Ϛ}}(\tilde Q_3)=\tilde Q_3^{*}$, is anti-unitary with $J_{\tilde{Ϛ}}^2=1$ and $J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}=1$.
 - **Established, and classical.** A state of a translation-invariant theory can be given by a measure rather than by an element of an algebra: a continuous normalised positive-definite function on an abelian group is the Fourier transform of a unique probability measure, the same function is the state functional on the convolution algebra, and its GNS reconstruction is $L^2$ of the measure with Fourier inversion as the reconstruction. The framework's own harmonic analysis reaches this route only after the algebra's indefinite norm has been replaced by the Hermitian pairing used below, because the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$.
 - **Gap, left visible.** The GNS construction is a theorem about a state on an algebra; it does not by itself produce the algebra, the state, or the dynamics. For a field, the state lives on the infinite-dimensional CAR or CCR algebra generated by the modes, and the algebra $\mathbb{B}$ enters only through the one-mode truncation. The GNS space of the field vacuum is therefore a module built *from* the algebra, not the algebra itself.
 
-The article proceeds as follows. The next section recalls the GNS theorem. The section after that fixes the states of $\mathbb{B}$ as density matrices. Two sections then construct the GNS data explicitly and compute the dimension in the pure, mixed, and trace cases. A section states the modular structure. A section examines the trace state and the algebra's canonical state. A section records the second description of a state, as the Fourier transform of a measure, and locates the point at which the biquaternion algebra's norm fails to supply it. A section separates what is established from what is interpretation, and the article closes with open questions.
+The article proceeds as follows. The next section recalls the GNS theorem. The section after that fixes the states of $\mathbb{B}$ as density matrices. Two sections then construct the GNS data explicitly and compute the dimension in the pure, mixed, and trace cases. A section states the modular structure in Hermitian form. A section examines the trace state and the algebra's canonical state. A section records the second description of a state, as the Fourier transform of a measure. A section separates what is established from what is interpretation, and the article closes with open questions.
 
 ## The GNS Theorem
 
@@ -64,6 +66,8 @@ Because $\mathbb{B}$ is finite-dimensional, every positive normalized functional
 > $$
 > the value being the real number $2\,\mathrm{Sc}(\tilde{Ϛ}\,\tilde Q_3)$ whenever $\tilde Q_3$ is Hermitian.
 
+The state is a **Hermitian pairing**: the density matrix is Hermitian, the observable is Hermitian, and the trace of their product is real. This is the pairing the whole construction uses; the indefinite algebra norm plays no part in it.
+
 The positivity of $\tilde{Ϛ}$ as an element of the $C^*$-algebra means positivity of the matrix $\mathsf{M}_2(\tilde{Ϛ})$. A state is thus an element of the algebra — a fact that has no analogue for the field algebras, whose states are functionals on an infinite-dimensional algebra and not elements of it.
 
 The state space of $\mathbb{B}$ is parametrized by the Bloch ball. Writing
@@ -83,7 +87,7 @@ Three cases are the ones that matter below.
 
 ## The GNS Data of a State of $\mathbb{B}$
 
-Specialize the general construction. With $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3^{*})$ the inner product is
+Specialize the general construction. With $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$ the inner product is
 $$
 \langle \tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}} \;=\; \omega\big(\tilde Q_3^{*}\tilde Q_1\big) \;=\; \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde Q_3^{*} \tilde Q_1\big),
 $$
@@ -151,24 +155,11 @@ $$
 $$
 so the reconstructed vacuum vector is annihilated by the ladder operator, as it must be. The element $\vec\Upsilon_x$ is *not zero in $\mathbb{B}$*; it is a nonzero element whose class is the zero vector of $\mathcal{H}_{\tilde{Ϛ}}$. The distinction is exactly the quotient by the radical, and it is why the GNS construction, not the algebra alone, is the right language for "the vacuum is annihilated".
 
-The check that $\omega(\tilde Q_3)=\langle\Omega|\pi(\tilde Q_3)|\Omega\rangle$ is the cyclic-vector property, $\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3^{*})=\mathrm{Tr}(\tilde{Ϛ}\, e_t^{*} \tilde Q_3 e_t)$; it holds identically because $e_t$ is the unit and the inner product places $\tilde{Ϛ}$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ and $\vec\Upsilon_x$ of the chosen spanning set. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_{\tilde\Pi_+}(e_t)=1$ and $\omega_{\tilde\Pi_+}(i\vec e_k)=r_k$ with $\vec r=(0,0,1)$, so the vacuum is unpolarized in the $\vec e_x$ and $\vec e_y$ directions and fully polarized along $\vec e_z$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_{\tilde\Pi_+}(\vec e_z)=-i$ and $\omega_{\tilde\Pi_+}(ie_t)=i$, together with $\omega_{\tilde\Pi_+}(\vec e_x)=\omega_{\tilde\Pi_+}(\vec e_y)=\omega_{\tilde\Pi_+}(\vec\Upsilon_x)=0$. The polarization $\omega_{\tilde\Pi_+}(i\vec e_k)=r_k$ is the Bloch vector of the state, $\vec r=\vec u$, and it is the same information the deterministic statement $\tilde{Ϛ}\tilde{Ϛ}=\tilde{Ϛ}$ carries.
+The check that $\omega(\tilde Q_3)=\langle\Omega|\pi(\tilde Q_3)|\Omega\rangle$ is the cyclic-vector property, $\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\, e_t^{*} \tilde Q_3 e_t)$; it holds identically because $e_t$ is the unit and the inner product places $\tilde{Ϛ}$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ and $\vec\Upsilon_x$ of the chosen spanning set. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_{\tilde\Pi_+}(e_t)=1$ and $\omega_{\tilde\Pi_+}(i\vec e_k)=r_k$ with $\vec r=(0,0,1)$, so the vacuum is unpolarized in the $\vec e_x$ and $\vec e_y$ directions and fully polarized along $\vec e_z$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_{\tilde\Pi_+}(\vec e_z)=-i$ and $\omega_{\tilde\Pi_+}(ie_t)=i$, together with $\omega_{\tilde\Pi_+}(\vec e_x)=\omega_{\tilde\Pi_+}(\vec e_y)=\omega_{\tilde\Pi_+}(\vec\Upsilon_x)=0$. The polarization $\omega_{\tilde\Pi_+}(i\vec e_k)=r_k$ is the Bloch vector of the state, $\vec r=\vec u$, and it is the same information the deterministic statement $\tilde{Ϛ}\tilde{Ϛ}=\tilde{Ϛ}$ carries.
 
-## Modular Structure
+## The Modular Structure in Hermitian Form
 
-The GNS construction carries a second structure that the thermal articles use: the **modular operator**. For a state $\tilde{Ϛ}$ invertible as a matrix (equivalently $\det\mathsf{M}_2(\tilde{Ϛ})\ne0$, a full-rank state), define on the GNS space the operators
-$$
-\Delta_{\tilde{Ϛ}}(\tilde Q_3) \;=\; \tilde{Ϛ}\,\tilde Q_3\,\tilde{Ϛ}^{-1},
-\qquad
-S(\tilde Q_3) \;=\; \tilde Q_3^{*},
-$$
-where $S$ is the Tomita operator and $\Delta_{\tilde{Ϛ}}=S^*S$. Two facts are standard and were verified explicitly:
-
-1. **Positivity and spectrum.** $\Delta_{\tilde{Ϛ}}>0$, and its spectrum in the operator basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is the set of ratios $\lambda_i/\lambda_j$ of the eigenvalues of $\tilde{Ϛ}$, so $\det\Delta_{\tilde{Ϛ}}=1$.
-2. **The modular conjugation.** With $J(\tilde Q_3)=\tilde Q_3^{*}$ one has $J^2=\mathrm{id}$, $J\Delta_{\tilde{Ϛ}} J^{-1}=\Delta_{\tilde{Ϛ}}^{-1}$, and $J$ is antiunitary for the GNS inner product.
-
-Numerically, for a full-rank Hermitian $\tilde{Ϛ}$ with eigenvalues $(0.17984,0.82016)$ the operator $\Delta_{\tilde{Ϛ}}$ defined by $\Delta_{\tilde{Ϛ}}(\tilde Q_3)=\tilde{Ϛ} \tilde Q_3\tilde{Ϛ}^{-1}$ was verified positive on the four basis elements, and $J\Delta_{\tilde{Ϛ}}J^{-1}-\Delta_{\tilde{Ϛ}}^{-1}=0$ on each basis element to machine precision.
-
-The **modular Hamiltonian** is
+The GNS construction carries a second structure that the thermal articles use: the **modular structure**. In this corpus it is written entirely with Hermitian data. For a state $\tilde{Ϛ}$ invertible as a matrix (equivalently $\det\mathsf{M}_2(\tilde{Ϛ})\ne0$, a full-rank state), define the **modular Hamiltonian**
 $$
 K_{\tilde{Ϛ}} \;=\; -\log\tilde{Ϛ} .
 $$
@@ -176,13 +167,63 @@ Since $\tilde{Ϛ}$ is a positive Hermitian element of the algebra, $K_{\tilde{Ϛ
 $$
 \boxed{\;K_{\tilde{Ϛ}}\in\mathbb{M}_+\;}
 $$
-This is the algebraic fact recorded by the companion articles on the KMS condition and on modular theory: the generator of the modular flow is an element of the informational sector, while it acts on fields whose coordinates are read in the material sector. For the Gibbs state of a Hamiltonian $\tilde H\in\mathbb{M}_+$ one has $\tilde{Ϛ} = \exp(-\beta\tilde H)/Z$ with $Z=\mathrm{Tr}\exp(-\beta\tilde H)$ and therefore
+The **modular flow** is the inner automorphism
+$$
+\sigma_t(\tilde Q_3) \;=\; U_t\,\tilde Q_3\,U_t^{*},
+\qquad
+U_t \;=\; e^{-itK_{\tilde{Ϛ}}},
+$$
+a Hermitian sandwich whose parameter $U_t$ is unitary: $U_tU_t^{*}=e_t$ and $U_t^{*}=U_{-t}$. Its generator is
+$$
+\frac{d}{dt}\sigma_t(\tilde Q_3)\Big|_{t=0} \;=\; -i\,[K_{\tilde{Ϛ}},\tilde Q_3].
+$$
+
+The **modular operator** is the positive self-adjoint operator on $\mathcal{H}_{\tilde{Ϛ}}$
+$$
+\Delta_{\tilde{Ϛ}} \;=\; L_{e^{-K_{\tilde{Ϛ}}}}\,R_{e^{K_{\tilde{Ϛ}}}},
+$$
+left multiplication by $e^{-K_{\tilde{Ϛ}}}$ and right multiplication by $e^{K_{\tilde{Ϛ}}}$, with powers
+$$
+\Delta_{\tilde{Ϛ}}^{it}[\tilde Q_3] \;=\; [\sigma_t(\tilde Q_3)],
+\qquad
+\Delta_{\tilde{Ϛ}}^{1/2} \;=\; L_{e^{-K_{\tilde{Ϛ}}/2}}\,R_{e^{K_{\tilde{Ϛ}}/2}} .
+$$
+Every factor in these displays is a Hermitian function of $K_{\tilde{Ϛ}}$; the two exponentials are mutually inverse, and both are Hermitian.
+
+The **Tomita operator**
+$$
+S_{\tilde{Ϛ}}(\tilde Q_3) \;=\; \tilde Q_3^{*}
+$$
+is anti-linear with $S_{\tilde{Ϛ}}^2=1$. Its polar decomposition
+$$
+S_{\tilde{Ϛ}} \;=\; J_{\tilde{Ϛ}}\,\Delta_{\tilde{Ϛ}}^{1/2}
+$$
+defines the **modular conjugation** $J_{\tilde{Ϛ}}$, anti-unitary with $J_{\tilde{Ϛ}}^2=1$. On the algebra it reads
+$$
+J_{\tilde{Ϛ}}(\tilde Q_3) \;=\; e^{-K_{\tilde{Ϛ}}/2}\,\tilde Q_3^{*}\,e^{K_{\tilde{Ϛ}}/2},
+$$
+again built from Hermitian factors. The conjugation reverses the modular operator,
+$$
+J_{\tilde{Ϛ}}\,\Delta_{\tilde{Ϛ}}\,J_{\tilde{Ϛ}}\,\Delta_{\tilde{Ϛ}} \;=\; 1,
+$$
+and conjugates the scalar imaginary, $J_{\tilde{Ϛ}}\,i\,J_{\tilde{Ϛ}}=-i$.
+
+Two facts are standard and were verified explicitly:
+
+1. **Positivity and spectrum.** $\Delta_{\tilde{Ϛ}}>0$, and its spectrum in the operator basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is the set of ratios $\lambda_i/\lambda_j$ of the eigenvalues of $\tilde{Ϛ}$, so $\det\Delta_{\tilde{Ϛ}}=1$.
+2. **The modular conjugation.** $J_{\tilde{Ϛ}}^2=1$, $J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}=1$, $J_{\tilde{Ϛ}}iJ_{\tilde{Ϛ}}=-i$, and $J_{\tilde{Ϛ}}$ is anti-unitary for the GNS inner product.
+
+Numerically, for a full-rank Hermitian $\tilde{Ϛ}$ with eigenvalues $(0.17984,0.82016)$ the operator $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$ was verified self-adjoint and positive on the four basis elements and on a generic element, and $J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}-1=0$ to machine precision.
+
+This is the Hermitian form of the finite-dimensional Tomita–Takesaki structure. The ordinary statements are recovered without change of value: the flow $\sigma_t$ is the modular automorphism group, $\Delta_{\tilde{Ϛ}}$ is its positive generator, and $J_{\tilde{Ϛ}}$ is the modular conjugation. What changes is the writing: the state enters only through the Hermitian modular Hamiltonian $K_{\tilde{Ϛ}}$, and the two factors $e^{-K}$ and $e^{K}$ are Hermitian functions of $K_{\tilde{Ϛ}}$, so no non-Hermitian element is used at any point.
+
+The **modular Hamiltonian** carries the thermal interpretation. For the Gibbs state of a Hamiltonian $\tilde H\in\mathbb{M}_+$ one has $\tilde{Ϛ} = \exp(-\beta\tilde H)/Z$ with $Z=\mathrm{Tr}\exp(-\beta\tilde H)$ and therefore
 $$
 K_{\tilde{Ϛ}} = \beta\tilde H + (\log Z)\,e_t,
 $$
 a Hermitian element whose scalar part carries the free energy, exactly as *The Partition Function in Biquaternionic Form* records. The GNS construction is silent about $\beta$ and $\tilde H$; it supplies the modular operator and the modular Hamiltonian for whatever state it is handed, and the thermal articles supply the state.
 
-Two limits deserve a line. For the **pure vacuum** state $\tilde{Ϛ}=\tilde\Pi_+$, the state is not invertible — it is a zero divisor — so $\Delta_{\tilde{Ϛ}}$ does not exist on $\mathbb{B}/\mathcal{N}$ in the naive way; the modular operator of a pure state is a formal object and the modular Hamiltonian is unbounded from below. The finite-dimensional statement is that the modular structure belongs to the *interior* of the Bloch ball, where $\tilde{Ϛ}$ has full rank, and degenerates on the boundary. This is the algebraic form of the fact that a pure state has no modular Hamiltonian generating a nontrivial automorphism of the algebra (its modular group is trivial, since the commutant is trivial for an irreducible representation).
+Two limits deserve a line. For the **pure vacuum** state $\tilde{Ϛ}=\tilde\Pi_+$ the state is not invertible — it is a zero divisor — so $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}$ has no finite value: it diverges on the kernel of $\tilde{Ϛ}$. The GNS vector is cyclic but not separating, because the radical is nontrivial, so the Tomita–Takesaki theorem does not apply and there is no modular flow to speak of. The finite-dimensional statement is that the modular structure belongs to the *interior* of the Bloch ball, where $\tilde{Ϛ}$ has full rank and the GNS vector is separating, and it degenerates on the boundary.
 
 ## The Trace State and the Canonical State of the Algebra
 
@@ -190,19 +231,23 @@ One state of $\mathbb{B}$ is distinguished by the algebra rather than by a dynam
 $$
 \tau(\tilde Q_3) \;=\; \tfrac12 \mathrm{Tr}(\tilde Q_3) \;=\; \mathrm{Sc}(\tilde Q_3).
 $$
-It is the unique tracial state — the unique state with $\tau(\tilde Q_3\tilde Q_1)=\tau(\tilde Q_1\tilde Q_3)$ for all $\tilde Q_3,\tilde Q_1$ — and it is invariant under every inner automorphism, $\tau(\tilde U\tilde Q_3\tilde U^{-1})=\tau(\tilde Q_3)$ for every unitary $\tilde U$. Its GNS space is the whole algebra with the Hilbert–Schmidt inner product, and its representation is the regular representation,
+It is the unique tracial state — the unique state with $\tau(\tilde Q_3\tilde Q_1)=\tau(\tilde Q_1\tilde Q_3)$ for all $\tilde Q_3,\tilde Q_1$ — and it is invariant under every inner automorphism; for a unitary $\tilde U$ the invariance reads
+$$
+\tau(\tilde U\tilde Q_3\tilde U^{*})=\tau(\tilde Q_3).
+$$
+Its GNS space is the whole algebra with the Hilbert–Schmidt inner product, and its representation is the regular representation,
 $$
 \pi_\tau(\tilde Q_3)\tilde Q_1 = \tilde Q_3\tilde Q_1 ,
 $$
-so every element of the algebra appears as a "state" in the reconstruction. The trace state is maximally mixed, and its modular operator is the identity; its modular Hamiltonian is the zero element.
+so every element of the algebra appears as a "state" in the reconstruction. The trace state is maximally mixed, and its modular Hamiltonian is the central element $K_\tau=(\log 2)e_t$: the implementing unitary is a central phase, so the flow is trivial, $\sigma_t=\mathrm{id}$, with $\Delta_\tau=1$, and $J_\tau$ is the involution $[\tilde Q_3]\mapsto[\tilde Q_3^{*}]$.
 
-The trace state plays for $\mathbb{B}$ the role that the vacuum plays for a field algebra: it is the reference state relative to which the algebra's own structure is displayed. Its two differences from the vacuum are worth naming. It is **mixed**, so its representation is reducible, and it is **not null**, so its modular operator exists. The two reference states are thus at opposite corners of the state space:
+The trace state plays for $\mathbb{B}$ the role that the vacuum plays for a field algebra: it is the reference state relative to which the algebra's own structure is displayed. Its two differences from the vacuum are worth naming. It is **mixed**, so its representation is reducible, and it is **not null**, so its modular structure exists. The two reference states are thus at opposite ends of the state space:
 $$
 \tilde{Ϛ}_{\text{vac}} = \tilde\Pi(\vec u) \ \ (\text{pure, null, irreducible GNS}),
 \qquad
 \tilde{Ϛ}_{\text{tr}} = \tfrac12 e_t \ \ (\text{mixed, invertible, regular GNS}).
 $$
-Every other state lies between them in the Bloch ball, and the GNS dimension grows monotonically from the pure value to the trace value.
+Every other state lies between them in the Bloch ball; the GNS dimension is two on the pure boundary and four in the interior, so it jumps at the boundary and is constant inside.
 
 ## A State from a Measure, and the Fourier Route
 
@@ -226,7 +271,7 @@ $$
 \omega_\varphi(f) = \int_G f(g) \, \varphi(g) \, dg
 $$
 
-is linear, positive, and normalised on the convolution algebra of $G$, and the GNS construction applied to it returns $L^2(G,\mu)$, with the regular representation and the constant function as cyclic vector. Fourier inversion *is* the reconstruction, so "a normalised positive functional is a state" and "a normalised positive-definite function is the Fourier transform of a measure" are two interpretations of one theorem. The positivity that this article assumes of a state and the positive definiteness that the classical theorem assumes of a characteristic function are therefore one condition, and a state of a translation-invariant theory need not be exhibited as an element of an algebra at all: the measure is the state, and the density matrix is its transform.
+is linear, positive, and normalised on the convolution algebra of $G$, and the GNS construction applied to it returns $L^2(G^{\vee},\mu)$, with the convolution algebra acting by multiplication by the Fourier transform and the constant function as cyclic vector. Fourier inversion *is* the reconstruction, so "a normalised positive functional is a state" and "a normalised positive-definite function is the Fourier transform of a measure" are two interpretations of one theorem. The positivity that this article assumes of a state and the positive definiteness that the classical theorem assumes of a characteristic function are therefore one condition, and a state of a translation-invariant theory need not be exhibited as an element of an algebra at all: the measure is the state, and the density matrix is its transform.
 
 **Where the framework departs from it.** A state is $\mathbb{C}$-valued, and the framework's own harmonic analysis does not deliver one directly. The transform of a measure in the biquaternion algebra is $\mathbb{B}$-valued, and the algebra's norm is not positive definite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — so a biquaternion-valued transform of a measure is not a positive-definite function and the classical theorem has no source there. That object *is* positive definite under a definite Hermitian pairing, and the pairing is the one this article already uses, $\langle \tilde Q_3,\tilde Q_1\rangle_\omega = \mathrm{Tr}(\tilde{Ϛ}\,\tilde Q_3^{*}\tilde Q_1)$. The measure route and the GNS route therefore meet on the Hermitian pairing, and the biquaternion norm is used by neither. The computation is in *Biquaternion Continuous Harmonic Analysis*, in the section on the transform of a measure; the quaternion statement, where the norm is definite and the classical positivity does hold, is in *Quaternion Harmonic Analysis*.
 
@@ -235,7 +280,7 @@ is linear, positive, and normalised on the convolution algebra of $G$, and the G
 **Established (theorem).**
 - The GNS theorem: a state determines a Hilbert space, an irreducible-or-reducible representation, and a cyclic vector, uniquely up to unitary equivalence; purity is irreducibility.
 - For an abelian group, Bochner's theorem: a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, and it is a state on the convolution algebra whose GNS reconstruction is $L^2$ of that measure.
-- The finite-dimensional specializations used here: the modular operator $\Delta_{\tilde{Ϛ}}(\tilde Q_3)=\tilde{Ϛ}\tilde Q_3\tilde{Ϛ}^{-1}$, the modular conjugation $J(\tilde Q_3)=\tilde Q_3^{*}$, and $J\Delta_{\tilde{Ϛ}}J^{-1}=\Delta_{\tilde{Ϛ}}^{-1}$.
+- The finite-dimensional Hermitian Tomita–Takesaki structure: $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ with $U_t=e^{-itK}$, $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$, $S_{\tilde{Ϛ}}(\tilde Q_3)=\tilde Q_3^{*}$, $S_{\tilde{Ϛ}}=J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}^{1/2}$, and $J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}=1$.
 
 **Established (algebra).**
 - The states of $\mathbb{B}$ are the density matrices; the state space is the Bloch ball, with the pure states on the Bloch sphere and the trace state at the centre.
@@ -255,7 +300,7 @@ is linear, positive, and normalised on the convolution algebra of $G$, and the G
 
 ## Summary
 
-For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the GNS construction is fully explicit. A state is a density matrix $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$; its GNS Hilbert space is
+For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the Hermitian GNS construction is fully explicit. A state is a density matrix $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$; its GNS Hilbert space is
 $$
 \mathcal{H}_{\tilde{Ϛ}} = \mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}},
 \qquad
@@ -268,11 +313,11 @@ $$
 of complex dimension $2\,\mathrm{rank}\,\tilde{Ϛ}$.
 For the **vacuum** $\tilde{Ϛ}=\tilde\Pi_+$ the dimension is two, the space is the minimal left ideal — the one-particle spinor module — and the representation is irreducible; the annihilation operator lies in the radical, so the reconstructed vacuum vector is annihilated by the ladder, which is the GNS form of the mode condition. For the **trace state** $\tilde{Ϛ}=\tfrac12e_t$ the dimension is four, the space is the whole algebra with the Hilbert–Schmidt inner product, and the representation is the regular one. Pure states are the Bloch sphere, mixed states the interior, and the trace state the unique tracial state at the centre.
 
-The construction carries the finite-dimensional Tomita–Takesaki structure: the modular operator is $\Delta_{\tilde{Ϛ}}(\tilde Q_3)=\tilde{Ϛ}\tilde Q_3\tilde{Ϛ}^{-1}$, the modular conjugation is $J(\tilde Q_3)=\tilde Q_3^{*}$ with $J\Delta_{\tilde{Ϛ}}J^{-1}=\Delta_{\tilde{Ϛ}}^{-1}$, and the modular Hamiltonian $K=-\log\tilde{Ϛ}$ is Hermitian, hence an element of $\mathbb{M}_+$. For a Gibbs state it reads $K=\beta\tilde H+(\log Z)e_t$. The modular structure exists on the interior of the Bloch ball where the state is invertible and degenerates on the pure boundary, where the state is a zero divisor.
+The construction carries the finite-dimensional Hermitian Tomita–Takesaki structure: the modular Hamiltonian is $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, the modular flow is $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ with $U_t=e^{-itK_{\tilde{Ϛ}}}$, the modular operator is $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$, and the modular conjugation satisfies $J_{\tilde{Ϛ}}^2=1$ and $J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}J_{\tilde{Ϛ}}\Delta_{\tilde{Ϛ}}=1$. The parameters are Hermitian ($K_{\tilde{Ϛ}}$) or unitary ($U_t=e^{-itK_{\tilde{Ϛ}}}$ and $\Delta_{\tilde{Ϛ}}^{it}$), so their inverses are their adjoints; the two exponentials $e^{-K}$ and $e^{K}$ are both Hermitian functions of $K_{\tilde{Ϛ}}$. For a Gibbs state $K_{\tilde{Ϛ}}=\beta\tilde H+(\log Z)e_t$. The modular structure exists on the interior of the Bloch ball where the state is invertible and degenerates on the pure boundary, where the state is a zero divisor.
 
-A state has a second description, from harmonic analysis. For an abelian group a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, the same function is the state functional on the convolution algebra, and its GNS reconstruction is $L^2$ of the measure, with Fourier inversion as the reconstruction. The biquaternion-valued transform of a measure is not such a function, because the algebra's norm is indefinite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — and the definite object is the Hermitian pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3^{*}\tilde Q_1)$, which is the inner product this article uses.
+A state has a second description, from harmonic analysis. For an abelian group a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, the same function is the state functional on the convolution algebra, and its GNS reconstruction is $L^2(G^{\vee},\mu)$, with Fourier inversion as the reconstruction. The biquaternion-valued transform of a measure is not such a function, because the algebra's norm is indefinite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — and the definite object is the Hermitian pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3^{*}\tilde Q_1)$, which is the inner product this article uses.
 
-The GNS construction supplies the bridge from the vacuum state of *The Biquaternion Vacuum as a Minimal Idempotent* to the operator-algebraic tools of the articles that follow: the reconstructed module carries the mode algebra, the cyclic vector carries the contraction, and the modular operator carries the thermal structure.
+The Hermitian GNS construction supplies the bridge from the vacuum state of *The Biquaternion Vacuum as a Minimal Idempotent* to the operator-algebraic tools of the articles that follow: the reconstructed module carries the mode algebra, the cyclic vector carries the contraction, and the modular Hamiltonian carries the thermal structure.
 
 ## Summary of Notation
 
@@ -282,8 +327,8 @@ The GNS construction supplies the bridge from the vacuum state of *The Biquatern
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
-| $\omega(\tilde Q_3)$ | State: positive normalized linear functional |
-| $\varphi$, $\mu$ | Continuous normalised positive-definite function on an abelian group, and the probability measure of Bochner's theorem with $\varphi=\int\chi\,d\mu$; the state $\omega_\varphi(f)=\int f\varphi$ on the convolution algebra has GNS space $L^2(\mu)$ |
+| $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$ | State: Hermitian pairing with a density matrix |
+| $\varphi$, $\mu$ | Continuous normalised positive-definite function on an abelian group, and the probability measure of Bochner's theorem with $\varphi=\int\chi\,d\mu$; the state $\omega_\varphi(f)=\int f\varphi$ on the convolution algebra has GNS space $L^2(G^{\vee},\mu)$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | Density matrix of a state; $|\vec r|\le1$ |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state (minimal idempotent, Bloch sphere) |
 | $\tau(\tilde Q_3)=\tfrac12\mathrm{Tr}(\tilde Q_3)$ | Trace state; unique tracial state; Bloch centre |
@@ -293,9 +338,12 @@ The GNS construction supplies the bridge from the vacuum state of *The Biquatern
 | $\pi_\omega(\tilde Q_3)[\tilde Q_1]=[\tilde Q_3\tilde Q_1]$ | GNS (left-regular) representation |
 | $\Omega_\omega=[e_t]$ | Cyclic (vacuum) vector |
 | $\dim_\mathbb{C}\mathcal{H}_{\tilde{Ϛ}}=2\,\mathrm{rank}\,\tilde{Ϛ}$ | GNS dimension ($2$ pure, $4$ full-rank/mixed) |
-| $\Delta_{\tilde{Ϛ}}(\tilde Q_3)=\tilde{Ϛ}\tilde Q_3\tilde{Ϛ}^{-1}$ | Modular operator |
-| $J(\tilde Q_3)=\tilde Q_3^{*}$ | Modular conjugation, $J\Delta J^{-1}=\Delta^{-1}$ |
-| $K=-\log\tilde{Ϛ}\in\mathbb{M}_+$ | Modular Hamiltonian |
+| $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$ | Modular Hamiltonian (Hermitian) |
+| $U_t=e^{-itK_{\tilde{Ϛ}}}$ | Unitary parameter of the modular flow, $U_t^{*}=U_{-t}$ |
+| $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ | Modular flow (Hermitian sandwich) |
+| $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$ | Modular operator (positive, self-adjoint) |
+| $S_{\tilde{Ϛ}}(\tilde Q_3)=\tilde Q_3^{*}$ | Tomita operator |
+| $J_{\tilde{Ϛ}}(\tilde Q_3)=e^{-K/2}\tilde Q_3^{*}e^{K/2}$ | Modular conjugation, $J^2=1$, $J\Delta J\Delta=1$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Single-mode annihilation operator (in the radical of the vacuum state) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
@@ -314,4 +362,4 @@ The GNS construction supplies the bridge from the vacuum state of *The Biquatern
 - S. Georgiev, J. Morais, K. I. Kou, and W. Sprößig, "Bochner–Minlos theorem and quaternion Fourier transform," in *Quaternion and Clifford–Fourier Transforms and Wavelets*, Trends in Mathematics (Springer, 2013), 105–120, for the quaternion form of the Fourier route to a state, and for the transform of a measure that *Biquaternion Continuous Harmonic Analysis* shows is not positive definite in the biquaternion algebra — the reason the states here are built on the Hermitian pairing.
 - R. V. Kadison and J. R. Ringrose, *Fundamentals of the Theory of Operator Algebras*, Vol. I (Academic Press, 1983), for positivity, radicals, and the classification of states by their support projectors.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the matrix structure of $\mathbb{B}$ underlying the explicit computations.
-- Companion articles: [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), for the pure state whose GNS reconstruction is irreducible; [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the mode algebra and the one-mode truncation; [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the modular Hamiltonian in $\mathbb{M}_+$ and the thermal interpretation; [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the density-matrix calculus and the Bloch ball; [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the explicit Gibbs-state form of the modular Hamiltonian; [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html), for the transform of a measure and the failure of the norm positivity that makes the Hermitian pairing the state pairing here; [Quaternion Harmonic Analysis](../articles_maths/quaternion-harmonic-analysis.html), for the quaternion transform whose norm is definite and whose transform of a measure is positive definite.
+- Companion articles: [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), for the pure state whose GNS reconstruction is irreducible; [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the mode algebra and the one-mode truncation; [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the modular Hamiltonian in $\mathbb{M}_+$ and the thermal interpretation; [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the density-matrix calculus and the Bloch ball; [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the explicit Gibbs-state form of the modular Hamiltonian; [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html), for the operator theory behind the modular flow; [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html), for the transform of a measure and the failure of the norm positivity that makes the Hermitian pairing the state pairing here; [Quaternion Harmonic Analysis](../articles_maths/quaternion-harmonic-analysis.html), for the quaternion transform whose norm is definite and whose transform of a measure is positive definite.

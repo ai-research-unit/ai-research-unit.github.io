@@ -28,11 +28,11 @@ $$
 \sigma_{t'}\big(\tilde Q_2\big)=\Delta^{it'}\tilde Q_2\,\Delta^{-it'},
 \qquad t'\in\mathbb{R}.
 $$
-Tomita's theorem states that $\sigma_{t'}$ maps $M$ to itself for every $t'$, that the modular conjugation $J$ implements $\sigma_{t'}$ on the commutant, $J\Delta J^{-1}=\Delta^{-1}$, and that the flow depends only on the state $\omega(\tilde Q_2)=\langle\Omega|\tilde Q_2|\Omega\rangle$, not on the choice of cyclic and separating vector. The **modular Hamiltonian** is
+Tomita's theorem states that $\sigma_{t'}$ maps $M$ to itself for every $t'$, that the modular conjugation $J$ implements $\sigma_{t'}$ on the commutant, $J\Delta J\Delta=1$, and that the flow depends only on the state $\omega(\tilde Q_2)=\langle\Omega|\tilde Q_2|\Omega\rangle$, not on the choice of cyclic and separating vector. The **modular Hamiltonian** is the Hermitian generator of the flow,
 $$
-\tilde{K}_{\mathrm{mod}}=-\log\Delta,
+\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\ \in\mathbb{M}_+,
 $$
-so that formally $\sigma_{t'}(\tilde Q_2)=\exp(-it'\tilde{K}_{\mathrm{mod}})\tilde Q_2\,\exp(it'\tilde{K}_{\mathrm{mod}})$; on a finite-dimensional algebra, and for a state given by a density matrix, $\Delta$ acts as $\tilde{Ϛ}\,\cdot\,\tilde{Ϛ}^{-1}$ and $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}$.
+so that $\sigma_{t'}(\tilde Q_2)=\exp(-it'\tilde{K}_{\mathrm{mod}})\tilde Q_2\,\exp(it'\tilde{K}_{\mathrm{mod}})$ and the modular operator acts as $\Delta(\tilde Q_2)=e^{-\tilde K_{\mathrm{mod}}}\tilde Q_2\,e^{\tilde K_{\mathrm{mod}}}$.
 
 Three properties of the flow are used below.
 
@@ -260,7 +260,7 @@ The framework thus realizes thermal time in its inner, trivial case exactly, wit
 - J. J. Bisognano and E. H. Wichmann, "On the duality condition for a Hermitian scalar field," *Journal of Mathematical Physics* **16** (1975) 985–1007, for the wedge modular flow as the boost.
 - W. G. Unruh, "Notes on black-hole evaporation," *Physical Review D* **14** (1976) 870–892, for the thermal interpretation of the wedge flow.
 - R. M. Wald, *Quantum Field Theory in Curved Spacetime and Black Hole Thermodynamics* (Chicago, 1994), for the modular Hamiltonian and the thermal interpretation in curved backgrounds.
-- Companion article [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the modular operator, conjugation, and flow.
+- Companion article [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html), for the modular operator, conjugation, and flow.
 - Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS condition and the thermal correlation functions.
 - Companion article [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), for the wedge modular flow as the boost.
 - Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the thermal interpretation of the boost.

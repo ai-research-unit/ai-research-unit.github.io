@@ -302,7 +302,7 @@ The Hermitian units of the algebra map to the Pauli matrices, $\mathsf M_2(i\vec
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the null cone and its two strata
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant as the norm
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the trace pairing
-- [The Pauli Correspondence and the Matrix Image](../articles_physics/the-m2c-representation-and-the-pauli-correspondence.html), for the physical interpretation of these identities
+- [The Pauli Correspondence and the Matrix Image](../articles_physics/the-pauli-correspondence-and-the-matrix-image.html), for the physical interpretation of these identities
 - [Spin and the Two State Spaces](../articles_physics/spin-and-the-two-state-spaces.html), for the Hilbert structure of the module
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](../articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the state geometry
 - G. B. Folland, *Quantum Field Theory: A Tourist Guide for Mathematicians* (AMS, 2008), for the Pauli and Bloch conventions.

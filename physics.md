@@ -890,8 +890,8 @@
 <a href="articles_physics/the-superalgebra-reading-and-the-odd-extension-with-signed-hermitian-adjoint-in-biquaternionic-form.html">The Superalgebra Reading and the Odd Extension with Signed Hermitian Adjoint in Biquaternionic Form</a>
 <!--the Hermitian reading of the superalgebra: the graded bracket and the parity table unchanged; the dagger as an even anti-involution of the superalgebra, $(ab)^{\dagger}=b^{\dagger}a^{\dagger}$ with the parity preserved; the adjoint of the graded bracket up to the parity sign, so it reverses a commutator and preserves an anticommutator, against the Koszul-signed super-* convention which would remove the sign and is not the dagger of the corpus; the supercharge paired with its adjoint, $\{Q,Q^{\dagger}\}=2H$, Hermitian and even, in place of the inverse pairing; the supercharge in the module $\mathrm{Cl}^1=\mathbb{B}\gamma$, $Q=s\gamma$, $Q^{\dagger}=-\gamma s^{\dagger}$, $QQ^{\dagger}=-q(\gamma)ss^{\dagger}$; the odd slot with the induced Hermitian form $\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$; one graded algebra and one odd generator, not two; the Grassmann envelope and the one fermionic mode. -->
 
-<a href="articles_physics/the-gns-construction-in-the-biquaternion-framework.html">The GNS Construction in the Biquaternion Framework</a>
-<!-- the GNS theorem; the states of the biquaternion algebra; the GNS data of a state of $\mathbb{B}$; modular structure; the trace state and the canonical state of the algebra; a state from a measure and the Fourier route, with the failure of the biquaternion norm positivity and the Hermitian pairing that replaces it. -->
+<a href="articles_physics/the-hermitian-gns-construction-in-the-biquaternion-framework.html">The Hermitian GNS Construction in the Biquaternion Framework</a>
+<!-- the GNS theorem; the states of the biquaternion algebra; the GNS data of a state of $\mathbb{B}$; the Hermitian modular structure; the trace state and the canonical state of the algebra; a state from a measure and the Fourier route, with the failure of the biquaternion norm positivity and the Hermitian pairing that replaces it. -->
 
 <a href="articles_physics/the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a>
 <!-- the Wick theorem in the standard theory; normal ordering and contraction; the one-mode subalgebra; the one-mode Wick identity; the contraction is the propagator; the fermionic sign and the grading. -->
@@ -1067,9 +1067,9 @@
 <!-- the inequality; the biquaternion tensor product; strong subadditivity from monotonicity of relative entropy; three tripartite states; the equality condition; strong subadditivity in quantum field theory. -->
 
 <a href="articles_physics/the-reh-schlieder-theorem-under-the-biquaternion-framework.html">The Reeh–Schlieder Theorem under the Biquaternion Framework</a>
-<!-- the Reeh–Schlieder theorem; cyclicity and separating in the GNS construction; the biquaternion vacuum; a finite model of the hypothesis; the Reeh–Schlieder lemma; from the single mode to the field algebra. -->
+<!-- the Reeh–Schlieder theorem; cyclicity and separating in the Hermitian GNS construction; the biquaternion vacuum; a finite model of the hypothesis; the Reeh–Schlieder lemma; from the single mode to the field algebra. -->
 
-<a href="articles_physics/the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html">The Modular Theory of Tomita–Takesaki under the Biquaternion Framework</a>
+<a href="articles_physics/the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html">The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework</a>
 <!-- the Tomita–Takesaki construction; why the hypotheses are load-bearing; the modular flow as the KMS flow; the finite-dimensional realisation in the biquaternion algebra; the biquaternion candidate for $S$; the type of the algebra and inner versus outer modular flow. -->
 
 <a href="articles_physics/the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a>

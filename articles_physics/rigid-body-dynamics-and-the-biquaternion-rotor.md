@@ -7,7 +7,7 @@ The rotation group of three-dimensional space is the group $SO(3)$ of orientatio
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains the real quaternions as a subalgebra, so the rotor description of rotations is available inside the framework, and the algebra's additional structure — the two sectors and the complex structure — supplies the language for the angular velocity and the angular momentum. This article develops the rigid-body dynamics in that language. The main results are these.
 
 1. **Orientation is a rotor.** A rotation is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting on a vector by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body axes are $\tilde u \vec e_k\tilde u^{*}$.
-2. **Angular velocity is the logarithmic derivative of the rotor.** The body-frame angular velocity is $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt'$ and the space-frame angular velocity is $\vec\omega_s=+2d\tilde u/dt'\tilde u^{\natural}$; both are real pure quaternions, and $\vec\omega_s=\tilde u\vec\omega_b\tilde u^{\natural}$.
+2. **Angular velocity is the logarithmic derivative of the rotor.** The body-frame angular velocity is $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt'$ and the space-frame angular velocity is $\vec\omega_s=+2d\tilde u/dt'\tilde u^{\natural}$; both are real pure quaternions, and $\vec\omega_s=\tilde u\vec\omega_b\tilde u^{*}$.
 3. **The kinetic energy is the inertia form of the angular velocity; for the free isotropic top it is the biquaternion norm.** For a spherical top, $T=\frac{\lambda}{2}\langle\vec\omega_b\rangle_{\natural}$; for a general top, $T=\frac12\vec\omega_b\cdot I\vec\omega_b$, with the inertia tensor a symmetric positive-definite operator on the real vector part.
 4. **Euler's equations are one quaternion equation.** In the body frame, $d\vec L/dt'=\frac12[\vec L,\vec\omega_b]+\vec\tau$; the commutator is the cross product.
 5. **The free symmetric top is integrable in closed form**, and its rotor is a product of two one-parameter subgroups; the general free top is Euler's classical problem.
@@ -70,14 +70,14 @@ Two integrals are immediate for a torque-free body: the energy $T$ and the squar
 A unit real quaternion $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=\tilde u\tilde u^{\natural}=e_t$, defines a rotation by conjugation,
 
 $$
-\tilde{Q}\longmapsto\tilde u\,\tilde{Q}\,\tilde u^{*}=\tilde u\,\tilde{Q}\,\tilde u^{\natural},
+\tilde{Q}\longmapsto\tilde u\,\tilde{Q}\,\tilde u^{*},
 \qquad \tilde{Q}\in\mathbb{H}_{\mathbb{B}} .
 $$
 
-For a pure vector $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the image is again a pure vector, and the map preserves the biquaternion norm and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde u\mapsto(\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{\natural})$ is two-to-one, since $\tilde u$ and $-\tilde u$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are
+For a pure vector $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the image is again a pure vector, and the map preserves the biquaternion norm and the cross product, so it is an orientation-preserving orthogonal transformation: a rotation. The map $\tilde u\mapsto(\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*})$ is two-to-one, since $\tilde u$ and $-\tilde u$ give the same rotation; the group of unit quaternions is $SU(2)$, the double cover of $SO(3)$. The body axes are
 
 $$
-\vec e_k^{b}=\tilde u\,\vec e_k\,\tilde u^{\natural},
+\vec e_k^{b}=\tilde u\,\vec e_k\,\tilde u^{*},
 $$
 
 obtained by rotating the space axes by the rotor. The rotor for a rotation by angle $\alpha$ about $\vec u$ is $\tilde u=\cos\frac\alpha2+\sin\frac\alpha2\vec u$, and at $\alpha=2\pi$ it is $\tilde u=-e_t$: the orientation has returned but the rotor has not. This sign is the spinor sign, and it is a genuine feature of the description, not an artefact; it is what distinguishes a rotor from an orientation matrix. The body axes rotate by $+\alpha$, in the sense of the standard definition $d\vec e_k/dt'=\vec\omega\times \vec e_k$; the logarithmic derivatives of the following section use that sign.
@@ -114,7 +114,7 @@ the real vector part, exactly the space in which ordinary three-vectors live in 
 The two velocities are related by the rotor itself. From $\vec\omega_s=+2d\tilde u/dt'\tilde u^{\natural}$ and $d\tilde u/dt'=\tilde u\left(\tilde u^{\natural}d\tilde u/dt'\right)$,
 
 $$
-\vec\omega_s=+2\,\tilde u\left(\tilde u^{\natural}d\tilde u/dt'\right)\tilde u^{\natural}=\tilde u\,\vec\omega_b\,\tilde u^{\natural},
+\vec\omega_s=+2\,\tilde u\left(\tilde u^{\natural}d\tilde u/dt'\right)\tilde u^{\natural}=\tilde u\,\vec\omega_b\,\tilde u^{*},
 $$
 
 so the space-frame angular velocity is the body-frame angular velocity carried to the space frame by the rotor. This is the biquaternion form of the statement that the two angular velocities differ by a rotation.
@@ -130,7 +130,7 @@ $$
 \vec\omega_s=\omega\vec u .
 $$
 
-Both angular velocities equal the physical angular velocity vector, as they must for rotation about a fixed axis: the body axes $\tilde u\vec e_k\tilde u^{\natural}$ turn about $\vec u$ at the rate $\omega$ in the sense of $d\vec e_k/dt'=\vec\omega\times \vec e_k$.
+Both angular velocities equal the physical angular velocity vector, as they must for rotation about a fixed axis: the body axes $\tilde u\vec e_k\tilde u^{*}$ turn about $\vec u$ at the rate $\omega$ in the sense of $d\vec e_k/dt'=\vec\omega\times \vec e_k$.
 
 ### The Rotor Equation
 
@@ -209,7 +209,7 @@ $$
 I\!\left(d\vec\omega_{b}/dt'\right)+\tfrac12\left[\vec\omega_b,I(\vec\omega_b)\right]=\vec\tau ,
 $$
 
-which is Euler's equation in the principal frame. In the space frame the torque-free statement is simply $d\vec L_{s}/dt'=0$, with $\vec L_s=\tilde u\vec L_b\tilde u^{\natural}$.
+which is Euler's equation in the principal frame. In the space frame the torque-free statement is simply $d\vec L_{s}/dt'=0$, with $\vec L_s=\tilde u\vec L_b\tilde u^{*}$.
 
 ## The Free Symmetric Top
 
@@ -329,8 +329,8 @@ The construction shows the two canonical quadratic forms of the algebra at work 
 
 The rigid body is described in the biquaternion algebra as follows.
 
-- The orientation is a unit real quaternion (rotor) $\tilde u$, $\langle\tilde u\rangle_{\natural}=e_t$, acting by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{\natural}$; the body axes are $\tilde u\vec e_k\tilde u^{\natural}$. Unit quaternions form $SU(2)$, the double cover of $SO(3)$.
-- The body- and space-frame angular velocities are $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt'$ and $\vec\omega_s=+2d\tilde u/dt'\tilde u^{\natural}$, both real pure quaternions, related by $\vec\omega_s=\tilde u\vec\omega_b\tilde u^{\natural}$. The rotor equation is $d\tilde u/dt'=+\frac12\tilde u\vec\omega_b$.
+- The orientation is a unit real quaternion (rotor) $\tilde u$, $\langle\tilde u\rangle_{\natural}=e_t$, acting by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body axes are $\tilde u\vec e_k\tilde u^{*}$. Unit quaternions form $SU(2)$, the double cover of $SO(3)$.
+- The body- and space-frame angular velocities are $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt'$ and $\vec\omega_s=+2d\tilde u/dt'\tilde u^{\natural}$, both real pure quaternions, related by $\vec\omega_s=\tilde u\vec\omega_b\tilde u^{*}$. The rotor equation is $d\tilde u/dt'=+\frac12\tilde u\vec\omega_b$.
 - The kinetic energy and angular momentum are $T=-\frac12\mathrm{Sc}(\vec\omega_b\vec L_b)=\frac12\vec\omega_b\cdot I\vec\omega_b$ and $\vec L_b=I(\vec\omega_b)$; for a spherical top $T=\frac{\lambda}{2}\langle\vec\omega_b\rangle_{\natural}$.
 - The body-frame Euler equation is $d\vec L_{b}/dt'=\frac12[\vec L_b,\vec\omega_b]+\vec\tau$, equivalently $I(d\vec\omega_{b}/dt')+\frac12[\vec\omega_b,I(\vec\omega_b)]=\vec\tau$.
 - The free symmetric top has $\omega_3$ constant, transverse angular velocity rotating at $\Omega=(I_3-I_\perp)\omega_3/I_\perp$, and regular precession in Euler angles; the general free top is Euler's elliptic problem.
@@ -343,10 +343,10 @@ The rigid body is described in the biquaternion algebra as follows.
 | Symbol | Meaning |
 |---|---|
 | $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Orientation rotor (unit real quaternion) |
-| $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{\natural}$ | Rotation by rotor conjugation |
-| $\vec e_k^{b}=\tilde u\vec e_k\tilde u^{\natural}$ | Body axes |
+| $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$ | Rotation by rotor conjugation |
+| $\vec e_k^{b}=\tilde u\vec e_k\tilde u^{*}$ | Body axes |
 | $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt'$ | Body-frame angular velocity |
-| $\vec\omega_s=+2d\tilde u/dt'\tilde u^{\natural}=\tilde u\vec\omega_b\tilde u^{\natural}$ | Space-frame angular velocity |
+| $\vec\omega_s=+2d\tilde u/dt'\tilde u^{\natural}=\tilde u\vec\omega_b\tilde u^{*}$ | Space-frame angular velocity |
 | $I(\vec\omega_b)=\sum_kI_k\omega_k\vec e_k$ | Inertia operator (principal frame) |
 | $\vec L_b=I(\vec\omega_b)$ | Body-frame angular momentum |
 | $T=-\frac12\mathrm{Sc}(\vec\omega_b\vec L_b)$ | Rotational kinetic energy |

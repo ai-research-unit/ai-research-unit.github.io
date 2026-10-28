@@ -23,9 +23,9 @@ with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\ve
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The four factors, their ranges and the uniqueness of the word | [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
-| The exponential word, the defect and the single logarithm | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
-| The kernel, the fibre and the section of the word map | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
-| The two strata of the zero-divisor cone | [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html) |
+| The exponential word, the defect and the single logarithm | *Exponential Polar Decomposition of Biquaternions* |
+| The kernel, the fibre and the section of the word map | *Exponential Polar Decomposition of Biquaternions* |
+| The two strata of the zero-divisor cone | *Exponential Polar Decomposition of Biquaternions* |
 | The minimal idempotents and the pure roots of $+1$ | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | The exponential closed forms and the kernel | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 
@@ -269,7 +269,7 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 ## Further Reading
 
 - [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, their ranges and the uniqueness.
-- [Exponential Polar Decomposition of Biquaternions](../articles_maths/exponential-polar-decomposition-of-biquaternions.html), for the defect, the boundary limits and the two strata.
+- *Exponential Polar Decomposition of Biquaternions*, for the defect, the boundary limits and the two strata.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the kernel.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the minimal idempotents.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the physical reading of the four factors in the interior.

@@ -6,7 +6,7 @@ An isolated body of finite size that is not perfectly spherical has a shape with
 
 This article develops the mechanics of the vibrating and rotating ellipsoid in the biquaternion framework, and follows the multipole tower it generates. The treatment is **non-relativistic** and classical: the body is described by its shape and orientation, the mode amplitudes obey ordinary harmonic-oscillator equations, and the fields it produces are read in the long-wavelength limit. The relativistic quadrupole is a separate subject.
 
-The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t')$ enter the algebra as the central elements $a_{lm}e_t$. The **orientation** of the body is a rotor $\tilde U(t')\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde U\vec w\tilde U^{\natural}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
+The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t')$ enter the algebra as the central elements $a_{lm}e_t$. The **orientation** of the body is a rotor $\tilde U(t')\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde U\vec w\tilde U^{*}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
 
 The biquaternion conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
@@ -37,7 +37,7 @@ $$
 Because $\tilde U$ is a real quaternion, its Hermitian conjugate is its quaternion conjugate, $\tilde U^{*} = \tilde U^{\natural}$. The rotor acts on a vector by conjugation,
 
 $$
-\vec w \;\longmapsto\; \vec w_2 = \tilde U\,\vec w\,\tilde U^{\natural} .
+\vec w \;\longmapsto\; \vec w_2 = \tilde U\,\vec w\,\tilde U^{*} .
 $$
 
 The composition law is
@@ -307,7 +307,7 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |
 | $\tilde U = \cos(\theta/2) + \sin(\theta/2)\vec u$ | Rotation rotor, a real unit quaternion |
-| $\vec w_2 = \tilde U\vec w\tilde U^{\natural}$ | Rotor action on a vector |
+| $\vec w_2 = \tilde U\vec w\tilde U^{*}$ | Rotor action on a vector |
 | $R(\theta,\vec u)$ | Rotation matrix in $SO(3)$, the image of $\tilde U$ (distinct from the radius $R_0$) |
 | $\vec\omega = d\theta/dt'\,\vec u$ | Angular velocity (body-frame vector) |
 | $d\tilde U/dt' = \tfrac12\tilde U\vec\omega$ | Rotor kinematic identity |

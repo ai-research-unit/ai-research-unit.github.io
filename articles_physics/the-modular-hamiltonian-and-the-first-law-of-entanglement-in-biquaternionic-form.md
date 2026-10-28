@@ -30,7 +30,7 @@ Let $\sigma$ be a faithful state of a von Neumann algebra $M$, with modular oper
 $$
 K_\sigma=-\log\Delta_\sigma,
 $$
-a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_{t'}(\tilde Q_1)=\exp(-it'K_\sigma)\tilde Q_1 \exp(it'K_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $\sigma\,\cdot\,\sigma^{-1}$ and $\sigma$ a density matrix,
+a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_{t'}(\tilde Q_1)=\exp(-it'K_\sigma)\tilde Q_1 \exp(it'K_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $e^{-\tilde K_\sigma}\,\cdot\,e^{\tilde K_\sigma}$ and $\sigma$ a density matrix,
 $$
 K_\sigma=-\log\sigma,
 $$
@@ -133,12 +133,12 @@ The scaling was checked further at a step of $10^{-4}$, where $\delta S-\delta\l
 The deficit in the exact identity has its own operator, and it is the one introduced in the relative-entropy companion article. On the algebra the relative modular operator of two states is
 $$
 \Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde Q_1\big)
-=\tilde{Ϛ}\,\tilde Q_1\,\tilde{Ϛ}_0^{-1},
+=e^{-\tilde K_{\mathrm{mod}}}\,\tilde Q_1\,e^{\tilde K_{\mathrm{mod},0}},
 \qquad
 \log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde Q_1\big)
 =\log\tilde{Ϛ}\,\tilde Q_1-\tilde Q_1\log\tilde{Ϛ}_0,
 $$
-with relative modular Hamiltonian $K_{\tilde{Ϛ},\tilde{Ϛ}_0}=-\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}$. Evaluated on the GNS vector $\Omega_{\tilde{Ϛ}}=\tilde{Ϛ}^{1/2}$, the logarithm of the relative modular operator has expectation the relative entropy,
+with $\tilde K_{\mathrm{mod}}=-\log\tilde{Ϛ}$ and $\tilde K_{\mathrm{mod},0}=-\log\tilde{Ϛ}_0$ the two modular Hamiltonians, and with relative modular Hamiltonian $K_{\tilde{Ϛ},\tilde{Ϛ}_0}=-\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}$. Evaluated on the GNS vector $\Omega_{\tilde{Ϛ}}=\tilde{Ϛ}^{1/2}$, the logarithm of the relative modular operator has expectation the relative entropy,
 $$
 S(\tilde{Ϛ}\|\tilde{Ϛ}_0)
 =\big\langle\Omega_{\tilde{Ϛ}},\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\Omega_{\tilde{Ϛ}}\big\rangle,
@@ -270,6 +270,6 @@ The mechanism is that the modular energy is linear in the state while the relati
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the Kubo–Mori–Bogoliubov metric and the second-order expansion of relative entropy.
 - Companion article [Relative Entropy and the Biquaternion Framework](relative-entropy-and-the-biquaternion-framework.html), for the closed-form relative entropy and its second-order term.
 - Companion article [Thermal Time and the Modular Flow in the Biquaternion Framework](thermal-time-and-the-modular-flow-in-the-biquaternion-framework.html), for the modular Hamiltonian as the generator of the flow.
-- Companion article [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the modular operator and conjugation.
+- Companion article [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html), for the modular operator and conjugation.
 - Companion article [Strong Subadditivity in the Biquaternion Framework](strong-subadditivity-in-the-biquaternion-framework.html), for the reduced states and partial traces of the tensor powers.
 - Companion article [The Bisognano–Wichmann Theorem under the Biquaternion Framework](the-bisognano-wichmann-theorem-under-the-biquaternion-framework.html), for the geometric modular Hamiltonian of a wedge.

@@ -137,4 +137,4 @@ The realification reads the one-dimensional complex space as the two-dimensional
 - [The Two Forms and the Two Algebraic Norms of the Complexoid Space](the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.html), above this article in this category, for the two forms whose realified signatures are derived here.
 - *The Matrix Element Representations of the Complex Numbers*, above this article in this category, for the two matrices at $n=1$ read as element representations and for the identification of their determinant and trace with the algebraic norms.
 - [Remarkable Subspaces of the Complexoid and the Two Forms](remarkable-subspaces-of-the-complexoid-and-the-two-forms.html), above this article in this category, for the coincidence of the two products on the real subspace.
-- [Complexoid Subspaces](complexoid-subspaces.html) and [Complex Algebra](complex-algebra.html), for the two subspaces and the field of the algebra.
+- *Complexoid Subspaces* and [Complex Algebra](complex-algebra.html), for the two subspaces and the field of the algebra.

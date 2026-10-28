@@ -320,7 +320,7 @@ Because the boost parameter space is curved, a closed path of boosts that return
 - E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the original Wigner rotation.
 - [The Exponential Word and Its Boundary](the-exponential-word-and-its-boundary.html), for the Hamilton angle, the two regimes and the BCH defect.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the Cartan amplitude and the word.
-- [The Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the Hamilton angle with a complex axis.
+- *The Root Pairing of the Polar Decomposition of Biquaternions*, for the Hamilton angle with a complex axis.
 - L. H. Thomas, "The motion of the spinning electron," *Nature* **117** (1926) 514, for the precession of the spin of an accelerated electron.
 - L. H. Thomas, "The kinematics of an electron with an axis," *Philosophical Magazine* **3** (1927) 1–22, for the detailed kinematical derivation.
 - F. R. Halpern, *Special Relativity and Quantum Mechanics* (Prentice-Hall, 1968), for the Wigner rotation and its composition properties.

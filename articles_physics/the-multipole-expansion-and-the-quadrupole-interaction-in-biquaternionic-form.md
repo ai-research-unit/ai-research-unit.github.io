@@ -115,7 +115,7 @@ $$
 \mathbb{H}_{\mathbb{B}}^1 = \{\tilde{U}\in\mathbb{H}_{\mathbb{B}} : \tilde{U}\tilde{U}^{\natural} = e_t\},
 $$
 
-acting on a vector by $\vec v\mapsto\tilde{U}\vec v\tilde{U}^{\natural}$. The multipole moment of order $l$ is a tensor in $D^{(l)}$: the monopole is $D^{(0)}$, the dipole is $D^{(1)}$, the quadrupole is $D^{(2)}$, and so on.
+acting on a vector by $\vec v\mapsto\tilde{U}\vec v\tilde{U}^{*}$. The multipole moment of order $l$ is a tensor in $D^{(l)}$: the monopole is $D^{(0)}$, the dipole is $D^{(1)}$, the quadrupole is $D^{(2)}$, and so on.
 
 ### Why the Order Is an Angular Momentum
 
@@ -361,7 +361,7 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\tilde{U}\in\mathbb{H}_{\mathbb{B}}^1$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting on a vector by $\vec v\mapsto\tilde{U}\vec v\tilde{U}^{\natural}$ |
+| $\tilde{U}\in\mathbb{H}_{\mathbb{B}}^1$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting on a vector by $\vec v\mapsto\tilde{U}\vec v\tilde{U}^{*}$ |
 | $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec\nabla$ | Biquaternionic gradient |
 | $\vec\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ | Spatial vector gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian (series convention) |

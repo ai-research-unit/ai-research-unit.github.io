@@ -511,7 +511,7 @@ On the cone there is no root and no frequency. The exponential is the truncated 
 - [Dual Numbers Harmonic Analysis](dual-numbers-harmonic-analysis.html), for the non-oscillating characters of the truncated regime.
 - [Harmonic Analysis over Hypercomplex Systems](harmonic-analysis-over-hypercomplex-systems.html), for the place of the transform among the eight systems.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two conditions.
-- [Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-biquaternion.html), for the companion dictionary between the exponential and the spectrum.
+- *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the companion dictionary between the exponential and the spectrum.
 - [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the physical interpretation of the two cases.
 - [Derivatives, Fields and Transforms](../articles_physics/derivatives-fields-and-transforms.html), for the root as the clock and the frequency as its rate.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation and the conjugations.

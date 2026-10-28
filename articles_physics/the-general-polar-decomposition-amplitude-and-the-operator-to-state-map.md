@@ -19,7 +19,7 @@ The conventions are those of *Conventions in the Biquaternion Universe*. The alg
 | result | established in | used here for |
 |---|---|---|
 | the general two-factor decomposition, the Moore–Penrose inverse and the partial isometry | [*The Polar Decomposition of a Biquaternion*](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), §*The Moore–Penrose Inverse of the Hermitian Factor*, §*The Isometry Factor* | $\tilde Q=\tilde H\tilde U$ for every nonzero element, and the cone case |
-| the Cartan pairing on the N-regular set, its theorem and its domain | [*The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), §*The Statement*, §*The Domain* | the unitary second factor off the cone |
+| the Cartan pairing on the N-regular set, its theorem and its domain | **The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions**, §*The Statement*, §*The Domain* | the unitary second factor off the cone |
 | the positive cone and the Hermitian square root | [*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), §*The Polar Decomposition* | existence and uniqueness of $\tilde H\ge0$ |
 | the rank-one case and the partial isometry on the null cone | [*The Polar Decomposition of a Biquaternion*](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), §*The Isometry Factor*, §*Examples* | the cone case of the same general pair |
 | the state space, the Bloch ball and the Born rule | [*Quantum Physics in Biquaternionic Form*](quantum-physics-in-biquaternionic-form.html), §*States* | the normalisation and the trace-one condition |
@@ -230,7 +230,7 @@ Read as a whole, the table is a dictionary between the algebra's rank stratigrap
 ## Further Reading
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the general two-factor decomposition, the Moore–Penrose inverse and the partial isometry on the cone.
-- [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the N-regular sharpening, the uniqueness and the domain.
+- *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the N-regular sharpening, the uniqueness and the domain.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone and the square root.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the comparison of the three first factors.
 - [The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary](the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html), for the measurement reading of the three strata.

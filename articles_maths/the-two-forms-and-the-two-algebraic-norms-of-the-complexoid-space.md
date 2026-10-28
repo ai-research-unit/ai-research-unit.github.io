@@ -76,6 +76,6 @@ The two products of the complex space carry two forms, $\langle Q_1,Q_2\rangle=Q
 ## Further Reading
 
 - [The Two Products of the Complexoid Space](the-two-products-of-the-complexoid-space.html), for the two products whose scalar parts the two forms are.
-- [Relations and Comparison Between the Two Products](relations-and-comparison-between-the-two-products.html), for the two products set against each other.
+- *Relations and Comparison Between the Two Products*, for the two products set against each other.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), below this article in this category, for the topological norm $|\cdot|=\sqrt{\langle\cdot\rangle_{*}}$, its multiplicativity, the invertibility criterion and the group of units.
 - [The Realification and the Effect of the Change of Scalars](the-realification-and-the-effect-of-the-change-of-scalars-on-the-complexoid.html), below this article in this category, for the two rules that give the realified signatures $(1,1)$ and $(2,0)$.

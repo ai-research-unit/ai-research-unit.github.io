@@ -195,7 +195,7 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 - [Complex Algebra](complex-algebra.html), for the algebra, its basis and its one nontrivial involution.
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, its multiplicativity, its triangle inequality and the group of units.
 - [Rotations and Reflections in the Complex Plane](rotations-and-reflections-in-the-complex-plane.html), for the identification of the form-preserving multiplications with $\mathrm{SO}(2)$, the reflections and the group $O(2)$.
-- [Complexoid Subspaces](complexoid-subspaces.html), for the real and imaginary subspaces on which the split metric is definite of opposite signs.
+- *Complexoid Subspaces*, for the real and imaginary subspaces on which the split metric is definite of opposite signs.
 - [Remarkable Subspaces of the Complexoid and the Two Forms](remarkable-subspaces-of-the-complexoid-and-the-two-forms.html), for the restrictions of the two forms to the two subspaces.
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for Gram matrices, inertia and the groups preserving a symmetric or Hermitian form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the definite and indefinite forms of the plane and their groups.

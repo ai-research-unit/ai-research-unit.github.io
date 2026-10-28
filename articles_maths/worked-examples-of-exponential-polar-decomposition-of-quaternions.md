@@ -743,7 +743,7 @@ The quaternion case is the definite compact companion of the biquaternion case: 
 - [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html), for the decomposition, the logarithm, the principal branch, the kernel and the matrix picture.
 - [Quaternion Special Functions](quaternion-special-functions.html), for the exponential and the logarithm.
 - [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html), for the modulus and the unit factor.
-- [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the noncommutative four-dimensional companion with two axes.
+- *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the noncommutative four-dimensional companion with two axes.
 - [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional companion.
 - [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the two-dimensional indefinite companion.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the notation.

@@ -1,4 +1,4 @@
-# __The Modular Theory of Tomita–Takesaki under the Biquaternion Framework__
+# __The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework__
 
 ## Introduction
 
@@ -12,9 +12,11 @@ S = J\,\Delta^{1/2},
 $$
 with $\Delta=S^*S\geq 0$ self-adjoint and $J$ anti-unitary. The theory then delivers the structural facts
 $$
-J M J = M_{\mathrm c}, \qquad \Delta^{it'}M\Delta^{-it'}=M, \qquad \sigma_{t'}(A):=\Delta^{it'}A\Delta^{-it'},
+J M J = M_{\mathrm c}, \qquad \Delta^{it'}M\Delta^{it'*}=M, \qquad \sigma_{t'}(A):=\Delta^{it'}A\Delta^{it'*},
 $$
 so that $J$ identifies $M$ with its commutant and $t'\mapsto\sigma_{t'}$ is a one-parameter group of automorphisms of $M$, the **modular automorphism group** of the pair $(M,\Omega)$.
+
+The article writes the construction in its **Hermitian form**, the form used by the companion articles. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$; the modular Hamiltonian $K=-\log\tilde{Ϛ}$ is a Hermitian element of $\mathbb{M}_+$; the modular flow is the inner automorphism by the unitary $e^{-it'K}$; and the modular operator is built from the Hermitian exponentials $e^{-K}$ and $e^{K}$. The parameters are Hermitian ($K$) or unitary ($U_{t'}=e^{-it'K}$ and $\Delta^{it'}$), so their inverses are their adjoints; the two exponentials $e^{-K}$ and $e^{K}$ are both Hermitian functions of $K$.
 
 This article is the companion of *The KMS Condition and the Biquaternion Framework*. That article stated the KMS condition and located the modular Hamiltonian $K=-\log\rho$ in the informational sector $\mathbb{M}_+$. It used, but did not construct, the operator $S$ whose polar decomposition produces the modular flow. The present article constructs $S$ explicitly in the finite-dimensional biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, takes its polar decomposition in closed form, and verifies the resulting identities by recomputation. The KMS condition is the parent's subject and is not restated here; the one thing imported from it is the result that the modular flow is the flow for which the thermal state satisfies the KMS boundary relation.
 
@@ -61,11 +63,11 @@ S = J\,\Delta^{1/2}, \qquad \Delta := S^*S \geq 0 .
 $$
 Here $\Delta$ is the **modular operator** and $J$ the **modular conjugation**. The structural identities are
 $$
-S^2 = 1, \qquad J^2 = 1, \qquad J\Delta J = \Delta^{-1}, \qquad \Delta^{it'}M\Delta^{-it'}=M \quad (t'\in\mathbb{R}).
+S^2 = 1, \qquad J^2 = 1, \qquad J\Delta J\Delta=1, \qquad \Delta^{it'}M\Delta^{it'*}=M \quad (t'\in\mathbb{R}).
 $$
 The last of these is Tomita's theorem. Define
 $$
-\sigma_{t'}(A) := \Delta^{it'}A\Delta^{-it'}, \qquad t'\in\mathbb{R}.
+\sigma_{t'}(A) := \Delta^{it'}A\Delta^{it'*}, \qquad t'\in\mathbb{R}.
 $$
 Then $\sigma_{t'}$ is an automorphism of $M$, and
 $$
@@ -139,7 +141,7 @@ $$
 $$
 This is the GNS construction of the state
 $$
-\omega(\tilde{Q}_3) = \langle\Omega,\pi(\tilde{Q}_3)\Omega\rangle_{\tilde{Ϛ}} = \mathrm{Tr}(\tilde{Ϛ}\,\tilde{Q}_3^{*}).
+\omega(\tilde{Q}_3) = \langle\Omega,\pi(\tilde{Q}_3)\Omega\rangle_{\tilde{Ϛ}} = \mathrm{Tr}(\tilde{Ϛ}\,\tilde{Q}_3).
 $$
 Because $\tilde{Ϛ}$ is positive definite the form is nondegenerate and the state is faithful, and $\Omega=e_t$ is cyclic and separating: cyclic because $\pi(\tilde{Q}_3)e_t=\tilde{Q}_3$ runs over all of $\mathbb{B}$, and separating because $\tilde{Q}_3e_t=\tilde{Q}_3=0$ forces $\tilde{Q}_3=0$. The hypothesis of the Tomita construction is thus, in this model, exactly the positivity of the density.
 
@@ -157,20 +159,20 @@ $$
 $$
 is
 $$
-S_0^*(\tilde Q_1) = \tilde{Ϛ}\,\tilde Q_1^{*}\tilde{Ϛ}^{-1},
+S_0^*(\tilde Q_1) = e^{-\tilde K_{\mathrm{mod}}}\,\tilde Q_1^{*}\,e^{\tilde K_{\mathrm{mod}}},
 $$
 whence
 $$
-\boxed{\;\Delta(\tilde{Q}_3) = S_0^*S_0(\tilde{Q}_3) = \tilde{Ϛ}\,\tilde{Q}_3\,\tilde{Ϛ}^{-1}, \qquad
-\Delta^{1/2}(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3\tilde{Ϛ}^{-1/2}\;}.
+\boxed{\;\Delta(\tilde{Q}_3) = S_0^*S_0(\tilde{Q}_3) = e^{-\tilde K_{\mathrm{mod}}}\,\tilde{Q}_3\,e^{\tilde K_{\mathrm{mod}}}, \qquad
+\Delta^{1/2}(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3e^{\tilde K_{\mathrm{mod}}/2}\;}.
 $$
 The polar decomposition $S_0=J\Delta^{1/2}$ then gives
 $$
-J(\tilde{Q}_3) = \tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2}.
+J(\tilde{Q}_3) = e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3^{*}e^{\tilde K_{\mathrm{mod}}/2}.
 $$
 The **modular flow** is
 $$
-\boxed{\;\sigma_{t'}(\tilde{Q}_3) = \Delta^{it'}\tilde{Q}_3\Delta^{-it'} = \tilde{Ϛ}^{it'}\tilde{Q}_3\tilde{Ϛ}^{-it'}\;},
+\boxed{\;\sigma_{t'}(\tilde{Q}_3) = \Delta^{it'}\tilde{Q}_3\Delta^{it'*} = e^{-it'\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{it'\tilde K_{\mathrm{mod}}}\;},
 $$
 which is an **inner** automorphism of $\mathbb{B}$, implemented by the unitary $\tilde{Ϛ}^{it'}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_{t'}(\tilde{Q}_3^{*})=\sigma_{t'}(\tilde{Q}_3)^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
 $$
@@ -183,7 +185,7 @@ $$
 
 ### The Identities, Verified
 
-The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_{t'}\circ\sigma_s=\sigma_{t'+s}$, the generator relation, and $JMJ=M_{\mathrm c}$ — with $M_{\mathrm c}$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
+The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J\Delta=1$, $J\,i\,J=-i$, the group law $\sigma_{t'}\circ\sigma_s=\sigma_{t'+s}$, the generator relation, and $JMJ=M_{\mathrm c}$ — with $M_{\mathrm c}$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
 
 ### An Explicit Case
 
@@ -229,7 +231,7 @@ the modular flow is trivial. A nontrivial modular flow requires a nontracial sta
 
 The finite-dimensional algebra is a factor of **type I$_2$**: a finite factor is I$_n$ exactly when it is $M_n(\mathbb{C})$, and $\mathbb{B}\cong M_2(\mathbb{C})$, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the unitary $\tilde{Ϛ}^{it'}$ inside $\mathbb{B}$,
 $$
-\sigma_{t'}(\tilde{Q}_3)=\tilde{Ϛ}^{it'}\tilde{Q}_3\tilde{Ϛ}^{-it'},\qquad \tilde{Ϛ}^{it'}\in\mathbb{B}.
+\sigma_{t'}(\tilde{Q}_3)=e^{-it'\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{it'\tilde K_{\mathrm{mod}}},\qquad \tilde{Ϛ}^{it'}\in\mathbb{B}.
 $$
 No object outside the algebra is needed to implement it. This is the generic behavior of a semifinite factor: **for a semifinite factor the modular flow of any faithful normal state is inner for every $t'$.**
 
@@ -254,7 +256,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 **Established (theorem).**
 
-- The Tomita–Takesaki construction: $S$, $\Delta$, $J$, the identities $S^2=1$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $JMJ=M_{\mathrm c}$, and the modular group $\sigma_{t'}$.
+- The Tomita–Takesaki construction: $S$, $\Delta$, $J$, the identities $S^2=1$, $J^2=1$, $J\Delta J\Delta=1$, $JMJ=M_{\mathrm c}$, and the modular group $\sigma_{t'}$.
 - The equivalence, in a GNS representation, of "cyclic and separating" with "faithful".
 - The Takesaki–Winnink theorem: the modular flow is the KMS flow, normalized to $\beta=1$, which is the link to the parent article.
 - Connes' classification of factors by the kernel of $\delta$, and the inner/outer behavior of the modular flow.
@@ -262,8 +264,8 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 **Established (recomputed here).**
 
 - $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
-- $\Delta(\tilde{Q}_3)=\tilde{Ϛ}\tilde{Q}_3\tilde{Ϛ}^{-1}$, $\Delta^{1/2}(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3\tilde{Ϛ}^{-1/2}$, $J(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2}$, $\sigma_{t'}(\tilde{Q}_3)=\tilde{Ϛ}^{it'}\tilde{Q}_3\tilde{Ϛ}^{-it'}$.
-- $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_{t'}\circ\sigma_s=\sigma_{t'+s}$, $d\sigma_{t'}/dt'|_{t'=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3]$, and $JMJ=M_{\mathrm c}$.
+- $\Delta(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}}\tilde{Q}_3e^{\tilde K_{\mathrm{mod}}}$, $\Delta^{1/2}(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3e^{\tilde K_{\mathrm{mod}}/2}$, $J(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3^{*}e^{\tilde K_{\mathrm{mod}}/2}$, $\sigma_{t'}(\tilde{Q}_3)=e^{-it'\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{it'\tilde K_{\mathrm{mod}}}$.
+- $J^2=1$, $J\Delta J\Delta=1$, $J\,i\,J=-i$, $\sigma_{t'}\circ\sigma_s=\sigma_{t'+s}$, $d\sigma_{t'}/dt'|_{t'=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3]$, and $JMJ=M_{\mathrm c}$.
 - $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}_{\mathrm{mod}}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.
 - $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde{Ϛ}^{it'}\in\mathbb{B}$.
 
@@ -280,7 +282,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 ## Summary
 
-The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M_{\mathrm c}$, and a modular automorphism group $\sigma_{t'}(A)=\Delta^{it'}A\Delta^{-it'}$.
+The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M_{\mathrm c}$, and a modular automorphism group $\sigma_{t'}(A)=\Delta^{it'}A\Delta^{it'*}$.
 
 In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
 $$
@@ -288,11 +290,11 @@ S_0:\tilde{Q}_3\mapsto\tilde{Q}_3^{*},
 $$
 and the polar decomposition is
 $$
-\boxed{\;\Delta(\tilde{Q}_3)=\tilde{Ϛ}\tilde{Q}_3\tilde{Ϛ}^{-1},\qquad
-J(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2},\qquad
-\sigma_{t'}(\tilde{Q}_3)=\tilde{Ϛ}^{it'}\tilde{Q}_3\tilde{Ϛ}^{-it'}\;}.
+\boxed{\;\Delta(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}}\tilde{Q}_3e^{\tilde K_{\mathrm{mod}}},\qquad
+J(\tilde{Q}_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde{Q}_3^{*}e^{\tilde K_{\mathrm{mod}}/2},\qquad
+\sigma_{t'}(\tilde{Q}_3)=e^{-it'\tilde K_{\mathrm{mod}}}\tilde{Q}_3\,e^{it'\tilde K_{\mathrm{mod}}}\;}.
 $$
-The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
+The identities $J^2=1$, $J\Delta J\Delta=1$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
 
 The modular flow is the KMS flow: normalized to $\beta=1$, a faithful normal state satisfies the KMS boundary relation with respect to $\sigma_{-t'}$, and the parent article's modular Hamiltonian $K=-\log\tilde{Ϛ}\in\mathbb{M}_+$ generates it, $d\sigma_{t'}/dt'|_{t'=0}=-i[K,A]$. The parent stated the condition; this article has constructed the operator whose polar decomposition produces the flow for which it holds.
 
@@ -312,7 +314,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | $S_0,S$ | Tomita operator $A\Omega\mapsto A^*\Omega$ and its closure |
 | $\Delta=S^*S$ | Modular operator |
 | $J$ | Modular conjugation, anti-unitary, $J^2=1$ |
-| $\sigma_{t'}(A)=\Delta^{it'}A\Delta^{-it'}$ | Modular automorphism group |
+| $\sigma_{t'}(A)=\Delta^{it'}A\Delta^{it'*}$ | Modular automorphism group |
 | $\tilde{Ϛ}\in\mathbb{M}_+$ | Faithful state (positive definite, trace one) |
 | $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ | GNS inner product on $\mathbb{B}$ |
 | $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}$ | Modular Hamiltonian, in $\mathbb{M}_+$ |

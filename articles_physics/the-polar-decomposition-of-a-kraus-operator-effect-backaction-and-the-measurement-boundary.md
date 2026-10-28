@@ -17,7 +17,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 | result | established in | used here for |
 |---|---|---|
 | the generalized Cartan pairing on all of $\mathbb{B}$ | [*The Polar Decomposition of a Biquaternion*](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), §*The Isometry Factor* | $\tilde K=\tilde H_{\mathrm{pos}}\tilde U_{\mathrm{p}}$, $\tilde H_{\mathrm{pos}}=\sqrt{\tilde K\tilde K^{*}}$, $\tilde U_{\mathrm{p}}=\tilde H_{\mathrm{pos}}^{+}\tilde K$ |
-| the Cartan pairing off the null cone | [*The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), §*The Statement* | the invertible case, where $\tilde U_{\mathrm{p}}$ is unitary |
+| the Cartan pairing off the null cone | **The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions**, §*The Statement* | the invertible case, where $\tilde U_{\mathrm{p}}$ is unitary |
 | the positive cone and the Hermitian square root | [*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), §*The Polar Decomposition* | positivity of $\tilde H_{\mathrm{pos}}$ and of the effect |
 | the rank-one Hermitian idempotents | [*Square Roots of One and the Idempotents of the Biquaternion Algebra*](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), §*The Classification of the Idempotents* | the sharp outcome $\tilde K=\tilde\Pi$ and the Bloch form of its projections |
 | the zero-divisor cone | [*N-Regularity and N-Degeneracy in the Biquaternion Algebra*](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), §*The Zero Divisor Set* | the boundary where the amplitude loses rank |
@@ -333,7 +333,7 @@ The channel-level statement is the correction that the polar programme makes to 
 ## Further Reading
 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the theorem, its uniqueness with the initial and final projections, and the rank-one case.
-- [The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-biquaternions.html), for the pairing off the null cone and the unitary factor.
+- *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the pairing off the null cone and the unitary factor.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positive cone and the Hermitian square root.
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the rank-one idempotents and the Bloch sphere.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone and its singular locus.

@@ -6,7 +6,7 @@ The Tomita–Takesaki theory attaches to a cyclic and separating vector $\Omega$
 $$
 \sigma_{t'}(A)=\Delta^{it'}A\Delta^{-it'},
 $$
-built from the modular operator $\Delta=S^*S$ of the Tomita involution $S$. The companion article *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework* constructs $S$, $\Delta$ and $J$ in the biquaternion algebra $\mathbb{B}$ and verifies the resulting flow identities by recomputation. It records, but does not develop, the **operator that generates the flow**. The present article is about that operator, the **modular Hamiltonian** $\tilde{K}_{\mathrm{mod}}$.
+built from the modular operator $\Delta=S^*S$ of the Tomita involution $S$. The companion article *The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework* constructs $S$, $\Delta$ and $J$ in the biquaternion algebra $\mathbb{B}$ and verifies the resulting flow identities by recomputation. It records, but does not develop, the **operator that generates the flow**. The present article is about that operator, the **modular Hamiltonian** $\tilde{K}_{\mathrm{mod}}$.
 
 Writing $\Delta=\exp(-\tilde{K}_{\mathrm{mod}})$ — equivalently $\tilde{K}_{\mathrm{mod}}=-\log\Delta$ — the modular flow is Hamiltonian evolution under $\tilde{K}_{\mathrm{mod}}$,
 $$
@@ -106,13 +106,13 @@ $$
 $$
 The vector $\Omega=e_t$ is cyclic and separating exactly because $\tilde{Ϛ}>0$; the state is faithful for the same reason. The modular-theory parent computes the polar decomposition of $S_0(\tilde Q_3)=\tilde Q_3^{*}$ in closed form:
 $$
-\Delta(\tilde Q_3)=\tilde{Ϛ}\,\tilde Q_3\,\tilde{Ϛ}^{-1},
+\Delta(\tilde Q_3)=e^{-\tilde K_{\mathrm{mod}}}\,\tilde Q_3\,e^{\tilde K_{\mathrm{mod}}},
 \qquad
-\Delta^{1/2}(\tilde Q_3)=\tilde{Ϛ}^{1/2}\tilde Q_3\,\tilde{Ϛ}^{-1/2},
+\Delta^{1/2}(\tilde Q_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde Q_3\,e^{\tilde K_{\mathrm{mod}}/2},
 \qquad
-J(\tilde Q_3)=\tilde{Ϛ}^{1/2}\tilde Q_3^{*}\tilde{Ϛ}^{-1/2},
+J(\tilde Q_3)=e^{-\tilde K_{\mathrm{mod}}/2}\tilde Q_3^{*}e^{\tilde K_{\mathrm{mod}}/2},
 \qquad
-\sigma_{t'}(\tilde Q_3)=\tilde{Ϛ}^{it'}\tilde Q_3\,\tilde{Ϛ}^{-it'}.
+\sigma_{t'}(\tilde Q_3)=e^{-it'\tilde K_{\mathrm{mod}}}\tilde Q_3\,e^{it'\tilde K_{\mathrm{mod}}}.
 $$
 Since $\tilde{Ϛ}>0$, its logarithm is defined and
 $$
@@ -197,7 +197,7 @@ all strictly positive because $\lambda_\pm>0$. This is the concrete form of $\De
 
 The two displays are equal, not merely analogous. From $\tilde{Ϛ}=\exp(-\tilde{K}_{\mathrm{mod}})$,
 $$
-\Delta^{it'}(\tilde Q_3)=\tilde{Ϛ}^{it'}\tilde Q_3\,\tilde{Ϛ}^{-it'}
+\Delta^{it'}(\tilde Q_3)=e^{-it'\tilde K_{\mathrm{mod}}}\tilde Q_3\,e^{it'\tilde K_{\mathrm{mod}}}
 =\big(\exp(-\tilde{K}_{\mathrm{mod}})\big)^{it'}\tilde Q_3\big(\exp(-\tilde{K}_{\mathrm{mod}})\big)^{-it'}
 =\exp(-i\tilde{K}_{\mathrm{mod}}t')\tilde Q_3\,\exp(i\tilde{K}_{\mathrm{mod}}t'),
 $$
@@ -244,7 +244,7 @@ Z=2\exp(-\beta h_t)\cosh(\beta|\vec h|)=1.547753
 $$
 and $\tilde{K}_{\mathrm{mod}}-(\beta\tilde H+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
 
-**The failure when positivity is dropped.** If $\tilde{Ϛ}$ is not positive definite — say $\tilde{Ϛ}=\mathrm{diag}(1,0)$ — then $\Omega=e_t$ is not separating: there is a nonzero $\tilde Q_3$ with $\langle\tilde Q_3,\tilde Q_3\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3^{*}\tilde Q_3)=0$, hence $\tilde Q_3\Omega=0$, and the Tomita rule $\tilde Q_3\Omega\mapsto\tilde Q_3^{*}\Omega$ is not single-valued. Equivalently, $\Delta=S^*S$ has a kernel and is not invertible, so $-\log\Delta$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\Delta(\tilde Q_3)=\tilde{Ϛ}\tilde Q_3\tilde{Ϛ}^{-1}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=\vec e_x$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde{K}_{\mathrm{mod}}$ is exactly the hypothesis carried by $\Delta$.
+**The failure when positivity is dropped.** If $\tilde{Ϛ}$ is not positive definite — say $\tilde{Ϛ}=\mathrm{diag}(1,0)$ — then $\Omega=e_t$ is not separating: there is a nonzero $\tilde Q_3$ with $\langle\tilde Q_3,\tilde Q_3\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3^{*}\tilde Q_3)=0$, hence $\tilde Q_3\Omega=0$, and the Tomita rule $\tilde Q_3\Omega\mapsto\tilde Q_3^{*}\Omega$ is not single-valued. Equivalently, $\Delta=S^*S$ has a kernel and is not invertible, so $-\log\Delta$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\Delta(\tilde Q_3)=e^{-\tilde K_{\mathrm{mod}}}\tilde Q_3\,e^{\tilde K_{\mathrm{mod}}}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=\vec e_x$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde{K}_{\mathrm{mod}}$ is exactly the hypothesis carried by $\Delta$.
 
 The verification was run on the state that was chosen for its genericity and on a second, thermal state; no displayed identity was checked only on the case that suggested it.
 
@@ -448,7 +448,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 
 ## Further Reading
 
-- Companion article [The Modular Theory of Tomita–Takesaki under the Biquaternion Framework](the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html), for the construction of $S$, $\Delta$ and $J$, the modular flow, and the type classification.
+- Companion article [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html), for the construction of $S$, $\Delta$ and $J$, the modular flow, and the type classification.
 - Companion article [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), for the KMS boundary relation, the imaginary-time strip, and the thermal interpretation of $\tilde{K}_{\mathrm{mod}}$.
 - Companion article [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the Gibbs state, the thermal operator, and $\tilde{K}_{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$.
 - Companion article [The Unruh Effect in Biquaternionic Form](the-unruh-effect-in-biquaternionic-form.html), for the wedge, the Bisognano–Wichmann identification, and the temperature derived from the two-point function.

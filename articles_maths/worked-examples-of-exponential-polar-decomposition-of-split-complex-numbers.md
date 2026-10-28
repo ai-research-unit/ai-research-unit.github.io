@@ -570,6 +570,6 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 - [Split-Complex Elementary Functions](split-complex-elementary-functions.html), for the exponential, the logarithm and the future cone.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the algebraic modulus–unit form.
 - [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional companion.
-- [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the noncommutative companion.
+- *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the noncommutative companion.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the hyperbolic functions and the split-complex exponential.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map and the four components of the unit group.

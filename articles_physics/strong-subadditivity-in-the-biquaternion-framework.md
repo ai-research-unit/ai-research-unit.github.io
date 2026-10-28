@@ -98,7 +98,7 @@ $$
 \tilde{Ϛ}_n\ge0,\qquad
 \mathrm{Tr}(\tilde{Ϛ}_n)=1 .
 $$
-For $n=1$ this is the Bloch ball of the GNS companion article; for $n\ge2$ it is the set of $2^n\times2^n$ density matrices, and the entropy functional is
+For $n=1$ this is the Bloch ball of the Hermitian GNS companion article; for $n\ge2$ it is the set of $2^n\times2^n$ density matrices, and the entropy functional is
 $$
 S(\tilde{Ϛ}_n)=-\mathrm{Tr}\big(\tilde{Ϛ}_n\log\tilde{Ϛ}_n\big),
 $$
@@ -114,7 +114,7 @@ $$
 $$
 and it is completely positive and trace preserving. Its image is a state of the remaining factor: if $M\ge0$ and $\mathrm{Tr}M=1$ then $\mathrm{Tr}_B M\ge0$ with trace one. Applied twice it gives the single-subsystem marginals. The biquaternion content of the operation is only the trace that enters it: on a factor, for elements $\tilde Q_1$ and $\tilde Q_2$ of the two factors, $\mathrm{Tr}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\,\mathrm{Tr}(\tilde Q_2)=\tilde Q_1\cdot2\,\mathrm{Sc}(\tilde Q_2)$, so the biquaternion trace $2\,\mathrm{Sc}$ is exactly the normalization that makes the discarded factor contribute its expectation.
 
-Two structural facts are worth recording at this point, both consequences of the GNS companion article's trace. First, on a product the partial trace is the identity on the rest, $\mathrm{Tr}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\,\mathrm{Tr}(\tilde Q_2)=\tilde Q_1$ for every normalized $\tilde Q_2$, so discarding a factor that is in a state of its own produces no entanglement across the cut. Second, the discarded factor's entropy is nevertheless part of the entropy of the whole, $S(\tilde Q_1\otimes\tilde Q_2)=S(\tilde Q_1)+S(\tilde Q_2)$, and its two extreme values are $0$ on the **pure** boundary and $\log2$ at the **trace state** $\tfrac12 e_t$. The pure boundary and the trace state are therefore the two ends of the Bloch ball that agree in what they contribute to the reduced state of the rest and differ in what they contribute to the entropy of the whole, and they are the two ends that appear in the examples below.
+Two structural facts are worth recording at this point, both consequences of the Hermitian GNS companion article's trace. First, on a product the partial trace is the identity on the rest, $\mathrm{Tr}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\,\mathrm{Tr}(\tilde Q_2)=\tilde Q_1$ for every normalized $\tilde Q_2$, so discarding a factor that is in a state of its own produces no entanglement across the cut. Second, the discarded factor's entropy is nevertheless part of the entropy of the whole, $S(\tilde Q_1\otimes\tilde Q_2)=S(\tilde Q_1)+S(\tilde Q_2)$, and its two extreme values are $0$ on the **pure** boundary and $\log2$ at the **trace state** $\tfrac12 e_t$. The pure boundary and the trace state are therefore the two ends of the Bloch ball that agree in what they contribute to the reduced state of the rest and differ in what they contribute to the entropy of the whole, and they are the two ends that appear in the examples below.
 
 ## Strong Subadditivity from Monotonicity of Relative Entropy
 
@@ -280,7 +280,7 @@ The framework's contribution to this is exactly its contribution to the finite-d
 
 **1. A biquaternion witness for the deficit.** The deficit is the conditional mutual information. Is there a biquaternion observable whose expectation is this quantity, in the way that the modular Hamiltonian's expectation is the relative entropy? The trace formula gives the expectation of any Hermitian element, so the question is whether $I(A:C|B)$ can be written as $2\,\mathrm{Sc}$ of a single algebra element of $\mathbb{B}^{\otimes3}$.
 
-**2. The Markov decomposition in the algebra.** The equality condition is an algebraic decomposition of $\mathcal H_B$. Does the decomposition have an interpretation in terms of the idempotent structure of $\mathbb{B}^{\otimes3}$, the minimal idempotents of the GNS companion article, and the partial traces between them?
+**2. The Markov decomposition in the algebra.** The equality condition is an algebraic decomposition of $\mathcal H_B$. Does the decomposition have an interpretation in terms of the idempotent structure of $\mathbb{B}^{\otimes3}$, the minimal idempotents of the Hermitian GNS companion article, and the partial traces between them?
 
 **3. The continuum limit.** The region statement is a relative-entropy statement. Does the framework's closed-form relative entropy, applied to a regulated lattice and continued to the continuum, reproduce the standard monotonicity of entanglement entropy under region inclusion?
 
@@ -329,7 +329,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 - R. Haag, *Local Quantum Physics: Fields, Particles, Algebras* (Springer, 1996), for the algebraic setting of the region statement.
 - H. Casini and M. Huerta, "A finite entanglement entropy and the c-theorem," *Physics Letters B* **600** (2004) 142–150, for the entropic monotonicity in two dimensions.
 - Companion article [Relative Entropy and the Biquaternion Framework](relative-entropy-and-the-biquaternion-framework.html), for the relative entropy, Klein's inequality, and the closed form.
-- Companion article [The GNS Construction in the Biquaternion Framework](the-gns-construction-in-the-biquaternion-framework.html), for the states of $\mathbb{B}$, the Bloch ball, and the trace state.
+- Companion article [The Hermitian GNS Construction in the Biquaternion Framework](the-hermitian-gns-construction-in-the-biquaternion-framework.html), for the states of $\mathbb{B}$, the Bloch ball, and the trace state.
 - Companion article [Fock Space and Creation/Annihilation Operators in Biquaternionic Form](fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html), for the capacity statement: one fermionic mode and no more.
 - Companion article [The Biquaternion Vacuum as a Minimal Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), for the minimal idempotents and the pure boundary.
 - Companion article [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the Hermitian subspace and the plain form.

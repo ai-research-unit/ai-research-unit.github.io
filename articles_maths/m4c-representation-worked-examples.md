@@ -301,4 +301,4 @@ The eight examples exhibit the scalar, the Jordan block, the distinct case, the 
 - [$M_4(\mathbb{C})_L$ Representation : The Eigenbasis and the Diagonalising Matrix](m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the basis
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the $2\times2$ version
 - [Worked Examples of Eigenbasis of a Biquaternion](worked-examples-of-eigenbasis-of-a-biquaternion.html), for the algebra
-- [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the algebra
+- *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the algebra

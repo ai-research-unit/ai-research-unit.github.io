@@ -565,5 +565,5 @@ As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger sc
 - [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential, the logarithm and the kernel.
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the algebraic modulus–unit form.
 - [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the two-dimensional companion.
-- [Worked Examples of Exponential Polar Decomposition of Biquaternions](worked-examples-of-exponential-polar-decomposition-of-biquaternions.html), for the noncommutative companion.
+- *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the noncommutative companion.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map and the torus.

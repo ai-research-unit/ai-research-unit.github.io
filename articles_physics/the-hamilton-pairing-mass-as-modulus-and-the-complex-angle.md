@@ -24,7 +24,7 @@ The conventions are those of *Conventions in the Biquaternion Universe*, §*The 
 
 | result | established in | used here for |
 |---|---|---|
-| the Hamilton pairing, its theorem and its domain | [*The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), §*The Statement*, §*The Domain* | $\tilde Q=\Rho e^{\vec U\Theta}$, the axis and the angle |
+| the Hamilton pairing, its theorem and its domain | **The Hamilton Root Pairing of the Polar Decomposition of Biquaternions**, §*The Statement*, §*The Domain* | $\tilde Q=\Rho e^{\vec U\Theta}$, the axis and the angle |
 | the eigenvalues $\lambda_\pm=Q_t\pm iB$ and the norm identity | [*The Biquaternion Eigenvalue Decomposition*](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* | $\lambda_\pm=\Rho e^{\pm i\Theta}$ and $\lambda_+\lambda_-=\langle\tilde Q\rangle_{\natural}$ |
 | the four factors and the branch of the modulus | [*The Polar Decomposition of a N-Regular Biquaternion*](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), §*The Four Factors* | $\Rho=r e^{i\alpha}$ with $\alpha\in(-\pi/2,\pi/2]$ |
 | the four-momentum and the mass shell | [*The Spectral Reading of a Four-Vector*](the-spectral-reading-of-a-four-vector.html), §*The Frame Dependence* | $\Rho=i mc$, $\Theta=-i\psi$, $\vec U=\hat p$ |
@@ -246,7 +246,7 @@ The reading that changes the theory most is the identification of the modulus wi
 
 ## Further Reading
 
-- [The Hamilton Root Pairing of the Polar Decomposition of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-biquaternions.html), for the theorem, the domain and the roots of one.
+- *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions*, for the theorem, the domain and the roots of one.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, the eigenprojections and the multiplicativity of the norm.
 - [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and the branch of the modulus.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the comparison with the quaternion and Cartan first factors.

@@ -72,7 +72,7 @@ Before the decomposition can be read correctly, it is necessary to separate thre
 
 ### As a Rotation Module: $\mathbb{B} = D^{(0)}\oplus D^{(1)}$
 
-The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{\natural}$ with $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the centre $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\}$ transforms as a vector:
+The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ with $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the centre $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\}$ transforms as a vector:
 
 $$
 \boxed{\;\mathbb{B} = D^{(0)}\oplus D^{(1)} \qquad\text{(as a complex rotation module)},
@@ -269,7 +269,7 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Tr}(\cdot)$ | Matrix trace, $\mathrm{Tr}(e_t) = 2$ (the conventions article) |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{\natural}$ |
+| $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ |
 | $D^{(l)}$ | Irreducible rotation representation, $\dim_{\mathbb{C}} D^{(l)} = 2l+1$ (Wigner's $D$) |
 | $L^2(S^2) = \bigoplus_l D^{(l)}$ | Angular function space (infinite-dimensional) |
 | $\operatorname{Sym}^l_0(D^{(1)})\cong D^{(l)}$ | Symmetric traceless $l$-th power of the vector part |

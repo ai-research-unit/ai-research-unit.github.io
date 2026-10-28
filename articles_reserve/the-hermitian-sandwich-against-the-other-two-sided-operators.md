@@ -1,0 +1,381 @@
+# __The Hermitian Sandwich Against the Other Two-Sided Operators__
+
+## Introduction
+
+The physics corpus calls one operator *the* sandwich, the Hermitian sandwich $\Theta_Q(X)=Q\,X\,Q^{*}$, and it writes a family of other forms that resemble it. This article identifies each form and states, for the occurrences that remain, why the Hermitian sandwich cannot stand in its place.
+
+The arithmetic of the question is settled. Write an element in its polar word $\tilde Q=r\,e^{i\alpha}B\tilde u$, with $B$ the Hermitian positive boost factor and $\tilde u$ the unit real rotor. Then
+
+$$
+\tilde Q\tilde Q^{*}=r^{2}B^{2},
+$$
+
+so $\tilde Q\tilde Q^{*}$ is a positive scalar exactly when $B=e_t$. Inner conjugation and the Hermitian sandwich therefore agree **exactly on the boost-free class** $\mathbb R_{>0}\cdot U(2)$, and differ everywhere else.
+
+The arithmetic is necessary but not sufficient. A formula also names an object: a gauge transformation is used as an automorphism of the algebra, a rotation of a vector as a congruence of its Hermitian form, and the same number can be the value of two maps of different type. Replacing an automorphism by a congruence is a change of subject, even when the two agree on the parameter at hand. The rule of this article is therefore:
+
+> Replace only where the article uses the map as a transport of an object — a state, a field, a vector — and never where it uses the map as an automorphism.
+
+The transports that pass that test now carry the Hermitian sandwich. What remains is fifty-one occurrences in eighteen articles: sixteen **conceptually different**, where the parameter is unitary, the two maps agree numerically, and the formula still states an automorphism; and thirty-five **structurally impossible**, where no parameter gives the map, or the claim ranges over a domain on which the two differ.
+
+The GNS construction is no longer in the count. It has been rewritten in Hermitian form in [The Hermitian GNS Construction in the Biquaternion Framework](../articles_physics/the-hermitian-gns-construction-in-the-biquaternion-framework.html): the state is the Hermitian pairing $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_3)$, the modular Hamiltonian is $K_{\tilde{Ϛ}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and the modular operator is $\Delta_{\tilde{Ϛ}}=L_{e^{-K}}R_{e^{K}}$. The issue is solved and the entry is removed.
+
+The gauge field strength is the archetype of the first class. On $SU(2)$, $\tilde U F_{\mu\nu}\tilde U^{-1}$ and $\tilde U F_{\mu\nu}\tilde U^{*}$ are the same number; the first is the adjoint law that makes the covariant derivative covariant and the Bianchi identity hold, and the second is a congruence that would rescale the field and break the bracket. Replacing it is not a notation change; it is a different gauge theory. It is treated in full in §*The Gauge Case in Detail*.
+
+## The Two-Sided Operators
+
+The general two-sided operator with two independent parameters is
+
+$$
+T_{a,b}(X)=a\,X\,b=L_a\circ R_b .
+$$
+
+The theory writes six distinguished members.
+
+| name | form | right factor |
+|---|---|---|
+| Hermitian sandwich | $\Theta_Q(X)=Q\,X\,Q^{*}$ | the adjoint of the left factor |
+| inner conjugation | $\mathrm{Ad}_Q(X)=Q\,X\,Q^{-1}$ | the inverse |
+| natural sandwich | $Q\,X\,Q^{\natural}$ | the quaternion conjugate |
+| signed Hermitian sandwich | $\Theta^{\alpha}_Q(X)=\alpha(Q)\,X\,Q^{*}$ | adjoint, with the parity twist on the left |
+| signed inner conjugation | $\mathrm{Ad}^{\alpha}_Q(X)=\alpha(Q)\,X\,Q^{-1}$ | inverse, with the parity twist on the left |
+| two-parameter product | $g_L\,X\,g_R^{-1}$ | an independent right parameter |
+
+The star on the argument gives a seventh object, the sesquilinear sandwich $S_{a,b}(X)=a\,X^{*}\,b=T_{a,b}\circ{}^{*}$. It is conjugate-linear in $X$ and is not a member of the family above.
+
+The naming is fixed by *The Element and Operator Representations*: there the sandwich is defined as the two-sided operator whose right parameter is the Hermitian conjugate of the left, and the general two-sided operator is introduced in the same section. The general theory is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*, its biquaternion instance *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*, its indefinite counterpart *The Hermitian Sandwich on a Krein Space*, and the two-parameter family *The Sesquilinear Sandwich Operator*.
+
+## The Algebraic Criterion
+
+**Proposition.** Let $Q,R$ be units of $\mathbb B$. Then $\Theta_R=\mathrm{Ad}_Q$ if and only if there is $\lambda\in\mathbb C^{\times}$ with
+
+$$
+R=\lambda\,Q,\qquad Q\,Q^{*}=\lvert\lambda\rvert^{-2}e_t\in\mathbb R_{>0}\,e_t .
+$$
+
+*Proof.* The two-sided operators obey $T_{a,b}=T_{c,d}$ if and only if there is a central unit $p$ with $c=ap$ and $d=p^{-1}b$; this is the kernel of the two-parameter family. Apply it to $(a,b)=(Q,Q^{-1})$ and $(c,d)=(R,R^{*})$: $R=Qp$ and $R^{*}=p^{-1}Q^{-1}$. Multiplying gives $RR^{*}=e_t$, so $R$ is of norm one, and $R=\lambda Q$ with $\lambda=p$. The norm condition reads $\lvert\lambda\rvert^{2}QQ^{*}=e_t$, that is $QQ^{*}=\lvert\lambda\rvert^{-2}e_t$. Conversely, if $R=\lambda Q$ and $QQ^{*}=\lvert\lambda\rvert^{-2}e_t$, then $Q^{*}=\lvert\lambda\rvert^{-2}Q^{-1}$ and $R^{*}=\bar\lambda Q^{*}=\lambda^{-1}Q^{-1}$, so $\Theta_R=\mathrm{Ad}_Q$. $\square$
+
+**Corollary (the polar reading).** With $\tilde Q=r\,e^{i\alpha}B\tilde u$ and $B$ of biquaternion norm one,
+
+$$
+\tilde Q\tilde Q^{*}=r^{2}B^{2},
+$$
+
+which is a positive scalar exactly when $B=e_t$. The class on which the two agree is therefore
+
+$$
+\mathcal U=\mathbb R_{>0}\cdot U(2)=\{\tilde Q:\tilde Q\tilde Q^{*}\in\mathbb R_{>0}e_t\},
+$$
+
+of real dimension $1+1+3=5$. An inner conjugation can be written as a Hermitian sandwich exactly when its parameter has a trivial polar boost factor.
+
+**Why the two operators differ.** Take a boost rotor $\tilde U=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u$ and the identity $e_t$. Then
+
+$$
+\mathrm{Ad}_{\tilde U}(e_t)=e_t,
+\qquad
+\Theta_{\tilde U}(e_t)=\tilde U^{2}=\cosh\psi\,e_t+i\sinh\psi\,\vec u .
+$$
+
+The adjoint action fixes the identity; the Hermitian sandwich does not. The difference is not confined to the centre. For every $X$ with $X^{*}=-X$,
+
+$$
+(\Theta_{\tilde U}X)^{*}=\tilde U X^{*}\tilde U^{*}=-\Theta_{\tilde U}X,
+$$
+
+so the Hermitian sandwich preserves the Hermiticity type of every element, with no condition on $\tilde U$. The adjoint action preserves it only on the unitary slice: for a Hermitian boost,
+
+$$
+(\mathrm{Ad}_{\tilde U}X)^{*}=(\tilde U^{-1})^{*}X^{*}\tilde U=-\mathrm{Ad}_{\tilde U^{-1}}X,
+$$
+
+which differs from $-\mathrm{Ad}_{\tilde U}X$ whenever $\tilde U^{2}\neq e_t$. This is why the Bloch article cannot use conjugation: the Lorentz action on the material sector must preserve the sector, and only the sandwich does.
+
+**The three structural obstructions.** Beyond the polar criterion there are three obstructions that no choice of parameter can remove.
+
+- **Two parameters.** $\Theta_Q=g_LXg_R^{-1}$ forces $g_R=\lambda g_L^{*-1}$ with $\lambda>0$, which is the diagonal $g_L=g_R$ when both are unitary. The off-diagonal chiral action is not a Hermitian sandwich at any parameter.
+- **Conjugate-linearity.** $aX^{*}b$ is conjugate-linear in $X$; the Hermitian sandwich is linear. They can never be equal as maps. When $b=a^{*}$, however, $aX^{*}a^{*}=\Theta_a(X^{*})$: the sesquilinear sandwich is the Hermitian sandwich composed with the involution.
+- **Odd elements and signs.** $\alpha$ is the identity on $\mathbb B$, because every biquaternion is even. The signed forms differ from the unsigned ones only on the odd part of $\mathrm{Cl}_{1,3}$. A minus sign cannot be produced either: $\mathrm{Sc}(QQ^{*})>0$ for every nonzero $Q$, so no Hermitian sandwich equals $-\Theta_Q$.
+
+**Numerical check.** The algebraic criterion was recomputed on at most 100 elements per row.
+
+| test | result |
+|---|---|
+| $\mathrm{Ad}_Q=\Theta_{Q/\rho}$ for $Q\in U(2)$ | 25/25 |
+| for $Q\in SU(2)$ | 25/25 |
+| for $Q=\rho U$, $\rho>0$ real, $U\in SU(2)$ | 25/25 |
+| for a boost $Q\in SL(2,\mathbb C)$ | 0/25 |
+| two-parameter product equals $\Theta$ | 48/100, exactly the diagonal draws |
+| sesquilinear $aX^{*}a^{*}$ equals $\Theta$ | 0/100 |
+| $\mathrm{Ad}_{\tilde U}$ preserves the sector, boost | 0/100 |
+| $\Theta_{\tilde U}$ preserves the sector, boost | 100/100 |
+
+## The Conceptual Criterion
+
+Agreement of values is checked by the proposition. Agreement of meaning is checked by three questions, asked of the sentence in which the formula occurs.
+
+1. **Does the claim use that the map preserves the product?** If the sentence is about an algebra automorphism, a group law, a derivation, an adjoint representation, or the covariance of a commutator, then the inverse is the object and the Hermitian sandwich is a different object. This is the gauge case, and it is the most common one in the corpus.
+2. **Does the claim quantify over a group larger than the unitary slice?** If the parameter ranges over all units, or over a general linear group, then even the numerical equality fails on part of the domain, and the replacement is not merely conceptual but false.
+3. **Is the map applied to an object as a transport — a state, a field, a vector — with only the norm, the sector and positivity used?** If so, the Hermitian sandwich is the natural operator and the inverse is its special case.
+
+The rule is one line: **replace only when the answers are no, no, yes.** The occurrences that remain are those for which at least one answer is wrong. There are two verdicts.
+
+- **Conceptually different.** The map is an automorphism, the parameter is unitary, and the values agree; the replacement would not change any number but would change what the formula says. It becomes legitimate only if the article, or the theory it belongs to, is rewritten so that the congruence is the primitive object.
+- **Structurally impossible.** No parameter gives the map, or the claim quantifies over a domain on which the two differ.
+
+A formula in a definition is not only a value. It fixes the type of the object, and the type is what later proofs may use. A reader who meets $\Theta$ expects a congruence: the norm may scale, the sector is preserved, the product is not. A reader who meets $\mathrm{Ad}$ expects an automorphism: the product, the bracket and the centre are preserved. Writing one where the other is meant is a type error even when the number is right, because it invites the wrong lemma at the next step.
+
+## The Census
+
+The count is a regular-expression scan of the 400 markdown files of `articles_physics`. A formula is counted when it is a product of three factors whose first and third are the same symbol, classified by the exponent on the third. A formula restated in a summary table is counted again. The rows are grouped by the section of this article that treats the occurrences, so that the seven gauge articles appear as one block.
+
+| class | group | form | occurrences | articles | articles involved |
+|---|---|---|---:|---:|---|
+| inner conjugation | gauge field strength | $Q\,X\,Q^{-1}$ | 9 | 7 | [Non-Abelian (3)](../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html)<br>[Yang–Mills (1)](../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html)<br>[Gauge Curvature (1)](../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html)<br>[QCD (1)](../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html)<br>[Standard Model (1)](../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html)<br>[Wilson (1)](../articles_physics/wilson-loops-in-biquaternionic-form.html)<br>[Confinement (1)](../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) |
+|  | adjoint action as subject |  | 2 | 1 | [Integer Spin (2)](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html) |
+|  | full automorphism group |  | 4 | 2 | [Lorentz Norm (3)](../articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.html)<br>[Spectral (1)](../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+|  | chiral two-parameter action |  | 4 | 2 | [Custodial (2)](../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html)<br>[Pion (2)](../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html) |
+|  | reflections |  | 3 | 2 | [Frames (2)](../articles_physics/frames-rotations-and-the-lorentz-group.html)<br>[Reflection (1)](../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html) |
+|  | dictionary |  | 1 | 1 | [Spinor Module (1)](../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) |
+| | **inner conjugation, total** | | **23** | **15** | |
+| two-parameter product | chiral two-parameter action | $g_L\,X\,g_R^{-1}$ | 18 | 3 | [Custodial (9)](../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html)<br>[Nonlinear Sigma (6)](../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html)<br>[Pion (3)](../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html) |
+| signed Hermitian | odd elements | $\alpha(Q)\,X\,Q^{*}$ | 5 | 1 | [Graded Signed Hermitian (5)](../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form.html) |
+| signed inner conjugation | odd elements | $\alpha(Q)\,X\,Q^{-1}$ | 5 | 2 | [Graded Signed Hermitian (2)](../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form.html)<br>[Graded Signed Inner (3)](../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-inner-conjugation-in-biquaternionic-form.html) |
+| **total non-Hermitian** | | | **51** | **18** | 21 class assignments |
+
+The reference form stands outside the table: the Hermitian sandwich $Q\,X\,Q^{*}$ itself occurs 309 times in 82 articles and is the form against which the other classes are measured.
+
+An article can carry two classes. The article column counts an article once in the row where its occurrences are listed, so the rows sum to 21 article assignments over 18 distinct articles: *Custodial Symmetry* and *The Pion and the Chiral Lagrangian* carry an inner conjugation and a two-parameter product, and *The Graded Algebra with Signed Hermitian Adjoint* carries a signed Hermitian and a signed inner conjugation. Two forms of the table have no row. The natural sandwich occurs once, in *Frames, Rotations and the Lorentz Group*, only as a second spelling of an inner conjugation, since $v^{-1}=v^{\natural}$ for a unit vector. The sesquilinear form occurs nowhere as a map on the algebra. The three formulas that once looked like occurrences, in *The Relativistic Two-Body Problem* and its exercise, carry the rest-frame label on a four-momentum, now written $\tilde P^{\rm CM}$; each is an ordinary Hermitian sandwich, $\Theta_{\tilde U_{\rm b}}(\tilde P_a^{\rm CM})$, not a conjugate-linear map. The Hermitian row counts the one-symbol spelling $Q\,X\,Q^{*}$, so they are not additional entries there.
+
+Of the 51, sixteen are conceptually different and thirty-five are structurally impossible. Each is entered below with its sentence, its parameter and its obstruction.
+
+Three shapes are outside the count because the middle factor is not an element of the algebra: $\tilde R\,d\tilde R^{\natural}$ in *Noether's Theorem* and *The Relativistic Particle*, where the middle factor is the exterior derivative; $\lambda\,D\,\lambda^{-1}$ in *Gauge Redundancy and the Information in the Gauge Orbit*, where it is a covariant derivative; and $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where the inverse stands on the left. Three further products are not operators on $\mathbb B$: $C\,N\,C^{-1}$ in *The Time-Harmonic Maxwell Operator*, $U\,G\,U^{-1}$ in *Chiral Fermions*, and $T\,H\,T^{-1}$ in *Kramers Degeneracy*.
+
+## The Occurrences That Remain
+
+The fifty-two occurrences that remain, in nineteen articles, fail the conceptual test. Seventeen of them are **conceptually different**: the parameter is unitary, the two maps agree numerically, and the formula nevertheless states an automorphism. Thirty-five are **structurally impossible**: no parameter gives the map, or the claim ranges over a domain on which the two differ.
+
+The groups below follow the concept, not the syntax. The first is the gauge field strength, the archetype of the conceptual class and the one case where the replacement would require a new theory. The second is the adjoint action used as the subject of an article. The third is the full automorphism group, where the general parameter leaves the algebra. The fourth is the chiral two-parameter action, conceptual on its diagonal and structural off it. Two more are structural: a minus sign and an odd element. The last is a dictionary entry that is conceptual, not structural.
+
+### The gauge field strength: the adjoint representation
+
+Six of the seven articles use $F\mapsto UFU^{-1}$ as the adjoint law of a gauge group; the seventh averages the same action over the group. The inverse is not a notation for the sandwich, because the law is derived from the Lie algebra and not posited. The field strength is $F=dA+i\kappa\,A\wedge A$; under $A\mapsto UAU^{-1}+U\,dU^{-1}$ the commutator term transforms as $U[A,A]U^{-1}$ only because $U$ preserves the product. A congruence preserves the Hermitian form, not the bracket, and leaves the derivation without a leg to stand on. The rewrite that would license the replacement is a different theory — a gauge theory whose group acts by congruences of the Hermitian form — and no article in the corpus undertakes it. On $SU(2)$ the numbers are identical; that is precisely why the confusion is possible.
+
+#### 1. [Non-Abelian Gauge Fields in Biquaternionic Form](../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html)
+
+**Use.** The field strength transforms in the adjoint representation, $F_{\mathrm g,\mu\nu}=\tilde U F_{\mu\nu}\tilde U^{-1}$ with $\tilde U=\tilde U(\tilde Q)\in SU(2)$; stated at the definition, again in the body, and once in the summary.
+
+**Why not the sandwich.** The article derives the law from the requirement that $D_\mu$ be covariant. The derivation uses $U(ab)U^{-1}=(UaU^{-1})(UbU^{-1})$ at every step.
+
+**Verdict.** Conceptually different, 3/3. Numerically equal on $SU(2)$; interchangeable in substance only after a rewrite in which the gauge group acts by congruences.
+
+#### 2. [The Yang–Mills Equation in Biquaternionic Form](../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html)
+
+**Use.** The componentwise adjoint law $F_{2,\mu\nu}=\tilde U F_{\mu\nu}\tilde U^{-1}$ with $\tilde U\in SU(2)$. The article also proves that the packaged object $\mathcal F_2$ is *not* $\tilde U\mathcal F\tilde U^{-1}$, because the inverse does not pass through the basis product $\bar e_\mu e_\nu$.
+
+**Why not the sandwich.** The negative result is itself a statement about the adjoint action: it compares two orderings of the same automorphism. Replacing the written law by a congruence would leave the comparison without its terms.
+
+**Verdict.** Conceptually different, 1/1.
+
+#### 3. [Gauge Curvature and the Bianchi Identity in Biquaternionic Form](../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html)
+
+**Use.** The transformation law of $F_{\mu\nu}$ under a local $\tilde U(\tilde Q)\in SU(2)$, used to prove the covariance of the Bianchi identity and to show that only gauge-invariant polynomials are observables.
+
+**Why not the sandwich.** Covariance of $D_\lambda F_{\mu\nu}$ is covariance of a commutator, and the Bianchi identity is the Jacobi identity of that commutator. Both are properties of the automorphism, not of the congruence.
+
+**Verdict.** Conceptually different, 1/1.
+
+#### 4. [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html)
+
+**Use.** The adjoint law $F_{2,\mu\nu}=\tilde U F_{\mu\nu}\tilde U^{-1}$, with the matrix trace on the $\mathrm{SU}(2)$ factor. The article's point is that the available factor is $SU(2)$ and not colour.
+
+**Why not the sandwich.** The article is an inventory of what a gauge theory requires. One item of that inventory is an adjoint action; writing a congruence would remove the item from the list.
+
+**Verdict.** Conceptually different, 1/1.
+
+#### 5. [The Standard Model under the Biquaternion Framework — A Research Agenda](../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html)
+
+**Use.** The same adjoint law, in the same construction, with the trace on the $\mathrm{SU}(2)$ factor; the surrounding paragraph is about the reality class of the connection.
+
+**Why not the sandwich.** The paragraph asks whether the connection can be placed in a fixed Hermitian eigenspace. That question is about the action of the gauge group on the reality type, which is the action of an automorphism mixing the two sectors.
+
+**Verdict.** Conceptually different, 1/1.
+
+#### 6. [Wilson Loops in Biquaternionic Form](../articles_physics/wilson-loops-in-biquaternionic-form.html)
+
+**Use.** In the non-abelian theory the field strength transforms by conjugation, $\tilde F\mapsto Q\tilde F Q^{-1}$; the gauge group is realised inside $\mathbb M_+$ as unit quaternions.
+
+**Why not the sandwich.** The loop is the trace of a holonomy, and its gauge invariance is the invariance of the trace under the adjoint action. The proof uses the cyclicity of the trace, which is a property of the automorphism.
+
+**Verdict.** Conceptually different, 1/1.
+
+#### 7. [Confinement and the Loss of Partonic Information in Biquaternionic Form](../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html)
+
+**Use.** The colour-singlet conditional expectation $E(\tilde Q)=\int_G dU\,U\tilde Q U^{-1}$ with the normalised Haar measure; it is the idempotent projection onto the colour-neutral subalgebra.
+
+**Why not the sandwich.** The integral is an average of automorphisms, and its fixed-point algebra is the commutant of the group. On $SU(2)$ each integrand equals a sandwich, but replacing the integrand would turn a group average into an average of congruences, and the fixed-point set would no longer be the commutant.
+
+**Verdict.** Conceptually different, 1/1.
+
+### The adjoint action as the subject
+
+In these three articles the map is not a tool inside a larger argument; it is the object the article defines, names and computes with. Replacing it would change the title of the section.
+
+#### 8. [Integer Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html)
+
+**Use.** The rotation $R_Q(\tilde Q)=Q\tilde Q Q^{-1}$ for $Q\bar Q=e_t$, presented as an algebra automorphism fixing the centre and preserving the split into $\mathbb M_\pm$; its infinitesimal generator is the inner derivation $\mathrm{ad}_{\tilde Q}$.
+
+**Why not the sandwich.** The article's content is that $R_Q$ is an automorphism and that its generator is a derivation. Both statements use the product, and both would have to be reproved — and would be false — for a congruence with a boost.
+
+**Verdict.** Conceptually different, 2/2.
+
+### The full automorphism group and the general unit
+
+Here the parameter leaves the algebra or leaves the unitary slice, and the numerical equality fails on part of the domain. The obstruction is structural.
+
+#### 9. [The Lorentz Group as Biquaternion Norm Automorphisms](../articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.html)
+
+**Use.** Three occurrences of $\tilde Q\mapsto M\tilde Q M^{-1}$ with $M\in GL(2,\mathbb C)$: the algebra automorphisms $\mathrm{Aut}_{\mathbb C}(\mathbb B)\cong PGL(2,\mathbb C)$, the action on the traceless part $\tilde V\mapsto M\tilde V M^{-1}$, and the summary.
+
+**Why not the sandwich.** $M$ is a general complex matrix, and the sandwich depends on the representative: $M$ and $\lambda M$ give the same automorphism but sandwiches that differ by $\lvert\lambda\rvert^{2}$. It is therefore not a function on $\mathrm{Aut}_{\mathbb C}(\mathbb B)=PGL(2,\mathbb C)$, while the adjoint action is. The article is about that group, of which the unitary slice sees only the compact part.
+
+**Verdict.** Structurally impossible, 0/3.
+
+#### 10. [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
+
+**Use.** The central element is fixed by every inner automorphism, $\tilde U\tilde Q\tilde U^{-1}=\tilde Q$ for every unit $\tilde U$; the surrounding argument is superselection and the absence of a preferred basis.
+
+**Why not the sandwich.** The quantifier is "every unit", and it includes boosts. Replacing the conjugation by the sandwich makes the statement false: $\Theta_{\tilde U}(\lambda e_t)=\lambda\tilde U^{2}$ is not central for a boost. The article's point is exactly that the adjoint action fixes the centre pointwise, which the four-vector action does not.
+
+**Verdict.** Structurally impossible, 0/1.
+
+### The chiral two-parameter action
+
+The two-parameter product $g_LXg_R^{-1}$ is the $SU(2)_L\times SU(2)_R$ action. A Hermitian sandwich has one parameter, so it can reproduce only the diagonal $SU(2)_V$. The diagonal occurrences are conceptually different; the off-diagonal ones are structurally impossible.
+
+#### 11. [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html)
+
+**Use.** Eleven occurrences. Two are the diagonal action $g\tilde Qg^{-1}$ with $g\in SU(2)$, the custodial subgroup. Nine are the full left–right action $\tilde Q\mapsto g_L\tilde Q g_R^{-1}$ with $g_{L,R}\in\mathbb H^1_{\mathbb B}$, including the invariance of the norm and the summary table.
+
+**Why not the sandwich.** The diagonal is the adjoint action of the unbroken isospin: an automorphism, hence conceptually different even though $g$ is unitary. The off-diagonal action has two independent parameters and is not a sandwich at any parameter; the article's central object is that action and its breaking to the diagonal.
+
+**Verdict.** Conceptually different 2/11 (diagonal), structurally impossible 9/11 (off-diagonal).
+
+#### 12. [The Nonlinear Sigma Model in Biquaternionic Form](../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html)
+
+**Use.** Six occurrences of the global chiral symmetry $\tilde U\mapsto g_L\tilde U g_R^{-1}$; the invariant metric is built from $\tilde U^{-1}d\tilde U$, and the invariance uses the cancellation of $g_R$ on the two sides.
+
+**Why not the sandwich.** The invariance argument is a two-sided cancellation that a single sandwich cannot reproduce when $g_L\neq g_R$. The unbroken diagonal $SU(2)_V$ is a Hermitian sandwich, but it is not the symmetry the article is about.
+
+**Verdict.** Structurally impossible, 0/6.
+
+#### 13. [The Pion and the Chiral Lagrangian in Biquaternionic Form](../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html)
+
+**Use.** Five occurrences: two of the unbroken isospin $g_V\tilde U g_V^{-1}$ with $g_V\in SU(2)$, three of the chiral transformation $\tilde U\mapsto g_L\tilde U g_R^{-1}$.
+
+**Why not the sandwich.** The isospin occurrences are the adjoint action of the unbroken subgroup, conceptually different. The chiral occurrences have two parameters and are structurally impossible.
+
+**Verdict.** Conceptually different 2/5, structurally impossible 3/5.
+
+### Reflections and the Pin action: the minus sign
+
+A reflection is not a sandwich. The minus sign is not a normalisation: it is the difference between a rotation and a reflection, and the scalar part of a Hermitian sandwich is a sum of squares, hence positive.
+
+#### 14. [Frames, Rotations and the Lorentz Group](../articles_physics/frames-rotations-and-the-lorentz-group.html)
+
+**Use.** Two occurrences: the reflection $\rho_v(\tilde Q_3)=-v\tilde Q_3v^{-1}$ and its summary table. The display also spells the same map once more as $-v\tilde Q_3v^{\natural}$; for a unit vector $v^{-1}=v^{\natural}$, so that spelling is the same formula and is not counted again.
+
+**Why not the sandwich.** The minus sign cannot be produced by any parameter, since $\mathrm{Sc}(QQ^{*})>0$.
+
+**Verdict.** Structurally impossible, 0/2.
+
+#### 15. [The Reflection and the Rotation in Biquaternionic Form](../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html)
+
+**Use.** The Pin action $\rho(u):x\mapsto-u\,x\,u^{-1}$ for odd $u$ with $u^{2}=\pm I_4$.
+
+**Why not the sandwich.** The parameter is outside the biquaternion algebra and the sign is explicit.
+
+**Verdict.** Structurally impossible, 0/1.
+
+### Odd elements and the parity twist
+
+The signed forms are different operators only outside the biquaternion algebra. Every element of $\mathbb B$ is even, so $\alpha$ is the identity there and $\Theta^{\alpha}=\Theta$; the sign is visible only on the odd part of $\mathrm{Cl}_{1,3}$.
+
+#### 16. [The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form](../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form.html)
+
+**Use.** Seven occurrences: five of $\Theta^{\alpha}_x(y)=\alpha(x)yx^{*}$ and two of $\alpha(x)yx^{-1}$, on $\mathrm{Cl}_{1,3}=\mathrm{Cl}^{0}\oplus\mathrm{Cl}^{1}$.
+
+**Why not the sandwich.** The odd sector is the subject, and the sign is the physics. The article states the boundary itself: on $\mathbb B$ the signed and unsigned forms coincide, and every computation inside $\mathbb B$ is a computation with the Hermitian sandwich.
+
+**Verdict.** Structurally impossible, 0/7.
+
+#### 17. [The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form](../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-inner-conjugation-in-biquaternionic-form.html)
+
+**Use.** Three occurrences of $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}=(\Omega x\Omega^{-1})yx^{-1}$, the parity-carrying conjugation by the volume element.
+
+**Why not the sandwich.** The twist is a conjugation by the pseudoscalar on the left and an inverse on the right; neither factor is available from a Hermitian sandwich.
+
+**Verdict.** Structurally impossible, 0/3.
+
+### A dictionary between conventions
+
+#### 18. [The Spinor Module in Biquaternionic Form and Its Lorentz Action](../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html)
+
+**Use.** One occurrence: $v\mapsto\tilde U_{\mathrm L}v\tilde U_{\mathrm L}^{-1}$ on the odd part of $\mathrm{Cl}_{1,3}$, given as the Clifford spelling of the read-list form $\tilde Q\mapsto\tilde U_{\mathrm L}\tilde Q\tilde U_{\mathrm L}^{*}$.
+
+**Why it stays.** The sentence is a dictionary between two conventions. Writing the star would make the two spellings identical and delete the statement that they agree. The map is a transport, but the occurrence names the Clifford adjoint, so the inverse is the subject.
+
+**Verdict.** Conceptually different, 1/1.
+
+## The Gauge Case in Detail
+
+The seven gauge articles deserve a separate statement, because they are the case where the replacement is most tempting and most consequential.
+
+The adjoint law is forced by three requirements, and each of them is a property of an automorphism.
+
+- **Covariance.** $D_\mu=\partial_\mu+i\kappa A_\mu$ must transform as $D_\mu\mapsto U D_\mu U^{-1}$ if the equation $D_\mu\psi=0$ is to be frame-independent. This uses $U(\xi\eta)U^{-1}=(U\xi U^{-1})(U\eta U^{-1})$ on products of fields.
+- **The commutator.** $F_{\mu\nu}=[D_\mu,D_\nu]/(i\kappa)$ transforms as $UF_{\mu\nu}U^{-1}$ precisely because $U$ preserves the bracket. A congruence does not: $\Theta_U([F,G])=[\Theta_U F,\Theta_U G]$ holds only when $U$ is unitary, which is the case at hand, but it is a theorem about the unitary slice and not about the map. The derivation would have to be re-run with the restricted parameter at every step.
+- **The invariants.** $\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ is invariant under the adjoint action for every unit. Under the congruence with a general unit $Q=\lambda V$ it scales by $\lvert\lambda\rvert^{4}$, so the Lagrangian would have to be rescaled or the parameter restricted.
+
+None of this changes a number on $SU(2)$. It changes what the formula is a formula *for*. The replacement becomes available in one of two ways, and both are rewrites rather than edits.
+
+1. **A congruence gauge theory.** Take the congruence as the primitive action, let the gauge parameter be any unit, and define the field strength, the covariant derivative, the action and the trace so that they transform by congruence. This is a different theory: its gauge group is larger, its field strength scales, and its invariants are different. No article in the corpus does this.
+2. **An explicit restriction.** Keep the adjoint law but state it only for the unitary slice, where the two forms agree, and add the remark that the congruence is the continuation off the slice. This is a clarification, not a replacement, and it is the honest form of the statement "the two coincide on $SU(2)$".
+
+Until one of these is done, the gauge occurrences stay in the adjoint form. The same reasoning applies, with less force, to the adjoint actions of §*The adjoint action as the subject*: there too the formula names an automorphism, and the replacement would be a change of subject rather than a change of notation.
+
+## Summary
+
+**51 occurrences in 18 articles: 16 conceptually different, 35 structurally impossible.**
+
+| # | article | occurrences | conceptual | structural |
+|---|---|---:|---:|---:|
+| 1 | [Non-Abelian Gauge Fields in Biquaternionic Form](../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html) | 3 | 3 | 0 |
+| 2 | [The Yang–Mills Equation in Biquaternionic Form](../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html) | 1 | 1 | 0 |
+| 3 | [Gauge Curvature and the Bianchi Identity in Biquaternionic Form](../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html) | 1 | 1 | 0 |
+| 4 | [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) | 1 | 1 | 0 |
+| 5 | [The Standard Model under the Biquaternion Framework — A Research Agenda](../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html) | 1 | 1 | 0 |
+| 6 | [Wilson Loops in Biquaternionic Form](../articles_physics/wilson-loops-in-biquaternionic-form.html) | 1 | 1 | 0 |
+| 7 | [Confinement and the Loss of Partonic Information in Biquaternionic Form](../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) | 1 | 1 | 0 |
+| 8 | [Integer Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html) | 2 | 2 | 0 |
+| 9 | [The Lorentz Group as Biquaternion Norm Automorphisms](../articles_physics/the-lorentz-group-as-biquaternion-norm-automorphisms.html) | 3 | 0 | 3 |
+| 10 | [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](../articles_physics/physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) | 1 | 0 | 1 |
+| 11 | [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](../articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html) | 11 | 2 | 9 |
+| 12 | [The Nonlinear Sigma Model in Biquaternionic Form](../articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html) | 6 | 0 | 6 |
+| 13 | [The Pion and the Chiral Lagrangian in Biquaternionic Form](../articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html) | 5 | 2 | 3 |
+| 14 | [Frames, Rotations and the Lorentz Group](../articles_physics/frames-rotations-and-the-lorentz-group.html) | 2 | 0 | 2 |
+| 15 | [The Reflection and the Rotation in Biquaternionic Form](../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html) | 1 | 0 | 1 |
+| 16 | [The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form](../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-hermitian-adjoint-in-biquaternionic-form.html) | 7 | 0 | 7 |
+| 17 | [The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form](../articles_physics/the-graded-algebra-fermion-parity-and-the-two-sectors-with-signed-inner-conjugation-in-biquaternionic-form.html) | 3 | 0 | 3 |
+| 18 | [The Spinor Module in Biquaternionic Form and Its Lorentz Action](../articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) | 1 | 1 | 0 |
+| | **total** | **51** | **16** | **35** |
+
+## Further Reading
+
+- [The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint](../articles_maths/the-hermitian-sandwich-on-a-hermitian-algebra-with-hermitian-adjoint.html), for the general operator, its domain, its multiplicativity and the correction of the Clifford-group identity.
+- [The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.html), for the biquaternion instance and its identification with the dagger sandwich of the corpus.
+- [The Hermitian Sandwich on a Krein Space](../articles_maths/the-hermitian-sandwich-on-a-krein-space.html), for the indefinite adjoint and the loss of the spectral transport.
+- [The Sesquilinear Sandwich Operator](../articles_maths/the-sesquilinear-sandwich-operator.html), for the conjugate-linear family and the composition law of its parameters.
+- [The Inner Conjugation on the Two-Sided Operators](../articles_maths/the-inner-conjugation-on-the-two-sided-operators.html), for the two-parameter family and the statement that the inner conjugation is the only member of it that is an algebra automorphism.
+- [Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint](../articles_maths/two-sided-operators-on-a-hermitian-algebra-with-signed-hermitian-adjoint.html), for the signed family and its parity.
+- [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the four factors and the boost-free criterion in the algebra's own terms.
