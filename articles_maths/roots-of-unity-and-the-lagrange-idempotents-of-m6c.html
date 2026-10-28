@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roots of Unity and the Lagrange Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="roots-of-unity-and-the-lagrange-idempotents"><strong>Roots of Unity and the Lagrange Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A single matrix carries the whole frame of $M_6(\mathbb{C})$: a root of unity $H$ with $H^6=I$ and six distinct eigenvalues. Its six eigenspaces are six lines, and the six Lagrange projectors onto them are idempotent, orthogonal and complete. The root is read as the sum $H=\sum_k\zeta_kP_k$ of its idempotents with the sixth roots of unity as coefficients; the coefficients grade the algebra by $\mathbb{Z}/6$; and the cube $H^3$ is the chirality involution. <strong>No second object is primitive.</strong> The idempotents are functions of $H$ alone, and the root is the only input.</p>
+<p>The article fixes the root, the Lagrange formula, the grading and the root set, in that order. It assumes the algebra $M_6(\mathbb{C})$ — the basis $E_{ij}$, the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant — which is <em>The Matrix Algebra $M_6(\mathbb{C})$</em>. It uses no form, no norm and no topology. The Peirce decomposition that the six lines induce is <em>The Peirce Decomposition</em>; the frame and its gauge are <em>The Frame, the Simple Nilpotents and the Gauge</em>; the two chiralities are <em>The Two Chiralities</em>; the spectral theory of an element with repeated eigenvalues, where the Lagrange formula degenerates, is <em>Spectral Theory and the Spectral Projectors</em>.</p>
+<p>The construction is root-first. The biquaternion articles build the frame from two anticommuting roots of $+1$; here one root of order six supplies all six idempotents, and the order-two case is a specialisation, not a second ingredient. That contrast is stated in §<em>The Order-Two Case</em>.</p>
+<h2 id="the-sixth-roots-of-unity">The Sixth Roots of Unity</h2>
+<h3 id="the-roots">The Roots</h3>
+<p><strong>Definition.</strong> Let</p>
+<p>$$
+\zeta=e^{2\pi i/6}=\tfrac12+\tfrac{\sqrt3}{2}i ,
+$$</p>
+<p>a primitive sixth root of unity, and put $\zeta_k=\zeta^{k-1}$ for $k=1,\dots,6$. The six roots are</p>
+<p>$$
+\zeta_1=1,\qquad
+\zeta_2=\zeta=\tfrac12+\tfrac{\sqrt3}{2}i,\qquad
+\zeta_3=\zeta^2=-\tfrac12+\tfrac{\sqrt3}{2}i,\qquad
+\zeta_4=-1,\qquad
+\zeta_5=-\zeta,\qquad
+\zeta_6=\bar\zeta .
+$$</p>
+<p>They are the elements of the cyclic group $\mu_6=\{z\in\mathbb{C}^\times:z^6=1\}\cong\mathbb{Z}/6$.</p>
+<p><strong>Proposition.</strong> The roots have the following orders and elementary symmetric functions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Root</th>
+<th>$\zeta_1$</th>
+<th>$\zeta_2$</th>
+<th>$\zeta_3$</th>
+<th>$\zeta_4$</th>
+<th>$\zeta_5$</th>
+<th>$\zeta_6$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>$1$</td>
+<td>$\tfrac12+\tfrac{\sqrt3}{2}i$</td>
+<td>$-\tfrac12+\tfrac{\sqrt3}{2}i$</td>
+<td>$-1$</td>
+<td>$-\tfrac12-\tfrac{\sqrt3}{2}i$</td>
+<td>$\tfrac12-\tfrac{\sqrt3}{2}i$</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>$1$</td>
+<td>$6$</td>
+<td>$3$</td>
+<td>$2$</td>
+<td>$3$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Conjugate</td>
+<td>$\zeta_1$</td>
+<td>$\zeta_6$</td>
+<td>$\zeta_5$</td>
+<td>$\zeta_4$</td>
+<td>$\zeta_3$</td>
+<td>$\zeta_2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The primitive roots are $\zeta_2$ and $\zeta_6$; the real roots are $\zeta_1=1$ and $\zeta_4=-1$; and</p>
+<p>$$
+\sum_{k=1}^{6}\zeta_k=0,\qquad \prod_{k=1}^{6}\zeta_k=-1 .
+$$</p>
+<p><strong>Proof.</strong> The order of $\zeta_k=\zeta^{k-1}$ is $6/\gcd(6,k-1)$, which gives the row of orders. Complex conjugation sends $\zeta$ to $\zeta^{-1}=\zeta^5$, hence $\zeta_k=\zeta^{k-1}$ to $\zeta^{6-(k-1)}=\zeta_{8-k}$, which is the row of conjugates. The sum vanishes because the six roots are the roots of $x^6-1$, whose coefficient of $x^5$ is zero. The product is the constant term up to the sign $(-1)^6$: $x^6-1=\prod_k(x-\zeta_k)$ gives $-1=\prod_k(-\zeta_k)=\prod_k\zeta_k$, since $6$ is even.</p>
+<h3 id="the-cyclotomic-factorisation">The Cyclotomic Factorisation</h3>
+<p><strong>Proposition.</strong> Over $\mathbb{Q}$,</p>
+<p>$$
+x^6-1=(x-1)(x+1)(x^2+x+1)(x^2-x+1),
+$$</p>
+<p>the four factors being the cyclotomic polynomials $\Phi_1,\Phi_2,\Phi_3,\Phi_6$. The minimal polynomial of $\zeta$ over $\mathbb{Q}$ is $\Phi_6(x)=x^2-x+1$, of degree two.</p>
+<p><strong>Proof.</strong> The identity $x^6-1=(x^3-1)(x^3+1)$ and the factorisations $x^3-1=(x-1)(x^2+x+1)$, $x^3+1=(x+1)(x^2-x+1)$ give the product. The roots of $\Phi_6$ are the primitive sixth roots $\zeta,\zeta^5$, whose sum is $1$ and whose product is $1$; the polynomial $x^2-x+1$ has exactly those roots.</p>
+<p>The factorisation matters for the arithmetic of the root, not for the algebra over $\mathbb{C}$: over $\mathbb{C}$ the polynomial splits into six linear factors, and the idempotents below are the six factors evaluated at $H$.</p>
+<h3 id="the-discriminant">The Discriminant</h3>
+<p><strong>Proposition.</strong> The discriminant of $x^6-1$ is</p>
+<p>$$
+\operatorname{disc}(x^6-1)=\prod_{j<l}(\zeta_l-\zeta_j)^2=6^6=46656 .
+$$</p>
+<p><strong>Proof.</strong> For $f(x)=x^n-a$ the discriminant is $(-1)^{(n-1)(n-2)/2}n^na^{n-1}$; at $n=6$, $a=1$ the sign is $(-1)^{10}=+1$ and the value is $6^6$. The product formula is the definition of the discriminant of a monic polynomial with simple roots.</p>
+<p>The discriminant is nonzero, which is the statement that the six roots are distinct. This is the arithmetic shadow of the hypothesis that $H$ has a simple spectrum.</p>
+<h2 id="the-root">The Root</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>root</strong> of $M_6(\mathbb{C})$ is an element $H\in M_6(\mathbb{C})$ such that</p>
+<p>$$
+H^6=I_6
+$$</p>
+<p>and the characteristic polynomial of $H$ has six distinct roots.</p>
+<p>The word <em>root</em> is used in the sense of the corpus: an element whose power is a central value, here the unit, and the qualification <em>simple spectrum</em> is part of the definition of the root of this article.</p>
+<p><strong>Proposition.</strong> Let $H$ be a root. Then:</p>
+<ul>
+<li>$H$ is diagonalisable over $\mathbb{C}$;</li>
+<li>its eigenvalues are the six sixth roots of unity, each with multiplicity one;</li>
+<li>its characteristic and minimal polynomials are both $x^6-1$;</li>
+<li>$\operatorname{tr}H=0$ and $\det H=-1$.</li>
+</ul>
+<p><strong>Proof.</strong> The polynomial $x^6-1$ has the six distinct roots $\zeta_k$ and annihilates $H$. A matrix annihilated by a polynomial with distinct roots is diagonalisable, and its eigenvalues are among those roots. Six distinct eigenvalues in dimension six exhaust the spectrum, so each root occurs once, the characteristic polynomial is $\prod_k(x-\zeta_k)=x^6-1$, and the minimal polynomial, which has the same roots and divides $x^6-1$, is also $x^6-1$. The trace is the sum of the eigenvalues, which vanishes; the determinant is their product, which is $-1$.</p>
+<p><strong>Corollary.</strong> Every root is semisimple, hence is a semisimple element of $GL_6(\mathbb{C})$, and $H$ generates a cyclic subgroup of order six.</p>
+<p><strong>Proof.</strong> A diagonalisable matrix with eigenvalues of order dividing six satisfies $H^6=I$ and has $H^r\neq I$ for $0<r<6$, because $\zeta^r\neq1$. So $\langle H\rangle\cong\mathbb{Z}/6$.</p>
+<h3 id="the-eigenlines">The Eigenlines</h3>
+<p><strong>Definition.</strong> For a root $H$ and $k\in\{1,\dots,6\}$ put</p>
+<p>$$
+V_k=\ker(H-\zeta_kI_6).
+$$</p>
+<p><strong>Proposition.</strong> The $V_k$ are six lines and</p>
+<p>$$
+\mathbb{C}^6=V_1\oplus V_2\oplus V_3\oplus V_4\oplus V_5\oplus V_6 .
+$$</p>
+<p><strong>Proof.</strong> Each $V_k$ is the eigenspace of the eigenvalue $\zeta_k$, of dimension one because the spectrum is simple. Distinct eigenspaces of a diagonalisable matrix are independent, and their dimensions sum to six.</p>
+<p>The decomposition is canonical: it is determined by $H$, and it is the finest decomposition of $\mathbb{C}^6$ on which $H$ acts by scalars. <strong>The root is the decomposition.</strong> Everything below is a rewriting of this sentence.</p>
+<h2 id="the-lagrange-projectors">The Lagrange Projectors</h2>
+<h3 id="the-formula">The Formula</h3>
+<p><strong>Definition.</strong> For a root $H$ and $k\in\{1,\dots,6\}$ the <strong>Lagrange projector</strong> $P_k$ is</p>
+<p>$$
+P_k=\prod_{l\neq k}\frac{H-\zeta_lI_6}{\zeta_k-\zeta_l}.
+$$</p>
+<p>The denominator is a nonzero complex number, by the distinctness of the roots, so the product is a well-defined polynomial in $H$ of degree five.</p>
+<p><strong>Theorem.</strong> For every root $H$ the six Lagrange projectors satisfy</p>
+<p>$$
+P_k^2=P_k,\qquad P_kP_l=\delta_{kl}P_k,\qquad \sum_{k=1}^{6}P_k=I_6,\qquad H=\sum_{k=1}^{6}\zeta_kP_k .
+$$</p>
+<p>Moreover $\operatorname{im}P_k=V_k$, $\ker P_k=\bigoplus_{l\neq k}V_l$, $\operatorname{rank}P_k=1$ and $\operatorname{tr}P_k=1$.</p>
+<p><strong>Proof.</strong> Let $L_k(x)=\prod_{l\neq k}(x-\zeta_l)/(\zeta_k-\zeta_l)$, the Lagrange interpolation polynomial of the six nodes $\zeta_1,\dots,\zeta_6$. It satisfies $L_k(\zeta_j)=\delta_{kj}$. On the eigenline $V_j$ the matrix $H$ acts as $\zeta_jI$, so $L_k(H)$ acts as $L_k(\zeta_j)I=\delta_{kj}I$. Therefore $L_k(H)$ is the identity on $V_k$ and zero on every other $V_l$; this is the projection onto $V_k$ along the sum of the other lines. The four displayed identities follow at once, and so do the statements about image, kernel and rank. The trace of a projection is its rank, so $\operatorname{tr}P_k=1$.</p>
+<p><strong>Corollary (the idempotents determine the root).</strong> $H=\sum_k\zeta_kP_k$, and the $P_k$ are polynomials in $H$. The map $H\mapsto(P_1,\dots,P_6)$ is injective, and its image is the set of complete orthogonal families of six rank-one idempotents.</p>
+<p><strong>Proof.</strong> The formula for $H$ is the spectral theorem read at the six eigenvalues: on $V_j$ both sides equal $\zeta_jI$. If two roots give the same family, the formula returns the same $H$. Conversely, a complete orthogonal family of six rank-one idempotents decomposes $\mathbb{C}^6$ into six lines, and $H=\sum\zeta_kP_k$ has the required spectrum and sixth power.</p>
+<h3 id="the-fourier-form">The Fourier Form</h3>
+<p><strong>Theorem.</strong> For every root $H$ and every $k$,</p>
+<p>$$
+P_k=\frac16\sum_{r=0}^{5}\zeta_k^{-r}H^r
+=\frac16\left(I_6+\zeta_k^{-1}H+\zeta_k^{-2}H^2+\cdots+\zeta_k^{-5}H^5\right).
+$$</p>
+<p><strong>Proof.</strong> On $V_j$ the right-hand side acts as $\frac16\sum_r\zeta_k^{-r}\zeta_j^rI=\frac16\sum_r(\zeta_j/\zeta_k)^rI$. The ratio $\zeta_j/\zeta_k$ is a sixth root of unity, equal to $1$ exactly when $j=k$; the geometric sum is $6$ in that case and $0$ otherwise. So the right-hand side is the projection onto $V_k$ along the other lines, which is $P_k$.</p>
+<p><strong>Corollary (the inverse relations).</strong> For every $r$,</p>
+<p>$$
+H^r=\sum_{k=1}^{6}\zeta_k^rP_k .
+$$</p>
+<p><strong>Proof.</strong> Both sides act as $\zeta_j^rI$ on $V_j$.</p>
+<p>The Fourier form exhibits the projectors as the <strong>discrete Fourier transform of the powers of $H$</strong>. It also gives the trace without a spectral argument:</p>
+<p>$$
+\operatorname{tr}P_k=\frac16\sum_{r=0}^{5}\zeta_k^{-r}\operatorname{tr}(H^r)=\frac16\operatorname{tr}(I_6)=1,
+$$</p>
+<p>because $\operatorname{tr}(H^r)=\sum_j\zeta_j^r=0$ for $1\le r\le5$, the sum of the $r$-th powers of the roots of $x^6-1$ being zero unless $6$ divides $r$.</p>
+<h3 id="the-explicit-matrices">The Explicit Matrices</h3>
+<p><strong>Example (diagonal root).</strong> Let</p>
+<p>$$
+H=\operatorname{diag}(\zeta_1,\zeta_2,\zeta_3,\zeta_4,\zeta_5,\zeta_6).
+$$</p>
+<p>Then $V_k=\mathbb{C}e_k$ and</p>
+<p>$$
+P_k=E_{kk},\qquad k=1,\dots,6 .
+$$</p>
+<p>The Lagrange formula returns the coordinate idempotents, and the Fourier form returns $\frac16\sum_r\zeta_k^{-r}\operatorname{diag}(\zeta_1^r,\dots,\zeta_6^r)=E_{kk}$.</p>
+<p><strong>Example (the cyclic shift).</strong> Let $\rho$ be the permutation matrix of the cycle $1\mapsto2\mapsto3\mapsto4\mapsto5\mapsto6\mapsto1$, acting on the standard column $e_j$ by $\rho e_j=e_{j-1}$ with indices modulo six. Then $\rho^6=I_6$, and the eigenvalues of $\rho$ are the six sixth roots, each once: the vector</p>
+<p>$$
+v_k=\sum_{j=1}^{6}\zeta_k^{j-1}e_j
+$$</p>
+<p>satisfies $\rho v_k=\zeta_kv_k$. So $\rho$ is a root, and the Fourier form gives</p>
+<p>$$
+P_k=\frac16\sum_{r=0}^{5}\zeta_k^{-r}\rho^r,
+\qquad
+(P_k)_{ij}=\frac16\zeta_k^{i-j},
+$$</p>
+<p>the second identity because $(\rho^r)_{ij}=\delta_{i,j-r}$. The matrix $P_2$, the projector of the eigenvalue $\zeta_2=\zeta$, is therefore</p>
+<p>$$
+P_2=\frac16
+\begin{pmatrix}
+1&\zeta^{-1}&\zeta^{-2}&\zeta^{-3}&\zeta^{-4}&\zeta^{-5}\\
+\zeta&1&\zeta^{-1}&\zeta^{-2}&\zeta^{-3}&\zeta^{-4}\\
+\zeta^2&\zeta&1&\zeta^{-1}&\zeta^{-2}&\zeta^{-3}\\
+\zeta^3&\zeta^2&\zeta&1&\zeta^{-1}&\zeta^{-2}\\
+\zeta^4&\zeta^3&\zeta^2&\zeta&1&\zeta^{-1}\\
+\zeta^5&\zeta^4&\zeta^3&\zeta^2&\zeta&1
+\end{pmatrix}.
+$$</p>
+<p>Each row is the previous row multiplied by $\zeta$; the matrix is circulant, its columns sum to $0$ because $k\neq1$, and $P_2^2=P_2$ is the identity $\frac1{36}\sum_{r,s}\zeta^{-r-s}\rho^{r+s}=\frac16\sum_t6\delta_{t,0}\zeta^{-t}\rho^t=P_2$. The projector $P_1$ of the eigenvalue $1$ is the all-ones matrix $\frac16J$.</p>
+<p><strong>Remark.</strong> The two examples are conjugate: $\rho$ is the regular representation of $\mathbb{Z}/6$ and $H$ is its decomposition into characters. Every root is conjugate to the diagonal one, by §<em>The Root Set</em>, so the two examples exhaust the isomorphism types of the pair $(H,\{P_k\})$.</p>
+<h2 id="the-math206-grading">The $\mathbb{Z}/6$ Grading</h2>
+<h3 id="the-peirce-lines">The Peirce Lines</h3>
+<p>The projectors cut the algebra into the thirty-six lines</p>
+<p>$$
+A_{kl}=P_kM_6(\mathbb{C})P_l=\{P_kAP_l:A\in M_6(\mathbb{C})\}=\mathbb{C}E_{kl},
+$$</p>
+<p>the last equality in the frame of the diagonal root, where $P_k=E_{kk}$. The product rule is the matrix-unit rule.</p>
+<p><strong>Proposition.</strong> $A_{kl}A_{mn}\subseteq\delta_{lm}A_{kn}$.</p>
+<p><strong>Proof.</strong> An element of $A_{kl}$ is $P_kAP_l$ and an element of $A_{mn}$ is $P_mBP_n$. The product is $P_kA(P_lP_m)BP_n=\delta_{lm}P_k(AB)P_n\in\delta_{lm}A_{kn}$.</p>
+<p><strong>Corollary.</strong> $M_6(\mathbb{C})=\bigoplus_{k,l}A_{kl}$, a direct sum of thirty-six lines.</p>
+<p><strong>Proof.</strong> The $P_k$ are complete and orthogonal, so $A=\sum_{k,l}P_kAP_l$ for every $A$, and the sum is direct because the $P_kAP_l$ are the entries of $A$ in the decomposition $\mathbb{C}^6=\bigoplus V_k$.</p>
+<h3 id="the-grading">The Grading</h3>
+<p><strong>Definition.</strong> For $r\in\mathbb{Z}/6\mathbb{Z}$ put</p>
+<p>$$
+A_r=\bigoplus_{k-l\equiv r}A_{kl}.
+$$</p>
+<p><strong>Theorem.</strong> The subspaces $A_r$ satisfy</p>
+<p>$$
+M_6(\mathbb{C})=\bigoplus_{r\in\mathbb{Z}/6\mathbb{Z}}A_r,
+\qquad
+A_rA_s\subseteq A_{r+s},
+\qquad
+\dim_{\mathbb{C}}A_r=6\ \text{for every }r .
+$$</p>
+<p><strong>Proof.</strong> The first statement is the direct sum over the thirty-six pairs regrouped by $k-l$. For the second, $A_{kl}\subseteq A_r$ and $A_{mn}\subseteq A_s$ have $k-l\equiv r$ and $m-n\equiv s$; their product is either zero or $A_{kn}$, and $k-n=(k-l)+(l-n)\equiv r+s$ when $l=m$. For the dimension, fix $r$; for each of the six values of $k$ there is exactly one $l$ with $k-l\equiv r$, namely $l=k-r$, so $A_r$ is the sum of six lines.</p>
+<p><strong>Proposition (the grading operators).</strong> $H\in A_0$, and $H$ acts by the scalar $\zeta_k$ on $V_k$. The grading is read from the two commuting families of multiplications $L_{P_k}$ and $R_{P_k}$: on $A_{kl}$ the left multiplications have joint weight $k$ and the right multiplications have joint weight $l$, so</p>
+<p>$$
+A_r=\bigoplus_{k-l\equiv r}A_{kl}
+=\{A\in M_6(\mathbb{C}):L(A)-R(A)\equiv rA \pmod 6\},
+$$</p>
+<p>where $L=\sum_k k\,L_{P_k}$ and $R=\sum_l l\,R_{P_l}$.</p>
+<p><strong>Proof.</strong> $H=\sum_j\zeta_jP_j$ is a linear combination of the $P_j$, hence lies in $A_0=\bigoplus_jA_{jj}$, and it acts by $\zeta_k$ on the line $V_k$. For $A\in A_{kl}$ one has $P_mA=\delta_{mk}A$ and $AP_m=\delta_{ml}A$, so $L(A)=kA$ and $R(A)=lA$; the difference is $(k-l)A$, whose class modulo six is $r$.</p>
+<p><strong>Remark.</strong> The grading is not the eigenspace decomposition of $\operatorname{ad}_H$. On $A_{kl}$ the commutator is $\operatorname{ad}_H(A)=(\zeta_k-\zeta_l)A$, and the differences $\zeta_k-\zeta_l$ are not sixth roots of unity; they depend on the pair, not on the class of $k-l$. The grading <strong>is</strong> the eigenspace decomposition of the automorphism $\operatorname{Ad}_H(A)=HAH^{-1}$: on $A_{kl}$ it acts by $\zeta_k/\zeta_l=\zeta^{k-l}$. The grading is by the difference of the Peirce labels, which is the <strong>diagonal distance</strong> of a matrix entry. It is a grading of the algebra, and $H$ is one of its degree-zero elements.</p>
+<h3 id="the-two-coarser-gradings">The Two Coarser Gradings</h3>
+<p>The group $\mathbb{Z}/6$ has exactly four subgroups, $0$, $2\mathbb{Z}/6\cong\mathbb{Z}/3$, $3\mathbb{Z}/6\cong\mathbb{Z}/2$ and $\mathbb{Z}/6$, so the grading has exactly two proper coarsenings.</p>
+<p><strong>The $\mathbb{Z}/2$ quotient.</strong> Put</p>
+<p>$$
+A_{\text{even}}=A_0\oplus A_2\oplus A_4,\qquad
+A_{\text{odd}}=A_1\oplus A_3\oplus A_5 .
+$$</p>
+<p>Both have dimension $18$, and $A_{\text{even}}$ is a subalgebra while $A_{\text{odd}}$ is a bimodule over it. In the frame, $A_{\text{even}}$ consists of the entries with $k-l$ even, that is $k$ and $l$ of the same parity: the matrices that preserve the decomposition</p>
+<p>$$
+\mathbb{C}^6=V_1\oplus V_3\oplus V_5\oplus V_2\oplus V_4\oplus V_6
+$$</p>
+<p>into the <strong>even</strong> and <strong>odd</strong> halves. The odd part consists of the entries that exchange the two halves. This is the $3+3$ split of <em>The Two Chiralities</em>.</p>
+<p><strong>The $\mathbb{Z}/3$ quotient.</strong> Put</p>
+<p>$$
+B_0=A_0\oplus A_3,\qquad B_1=A_1\oplus A_4,\qquad B_2=A_2\oplus A_5 .
+$$</p>
+<p>Each has dimension $12$, and $B_rB_s\subseteq B_{r+s}$ with indices modulo three. $B_0$ is the diagonal subalgebra $\mathbb{C}^6$; $B_1$ and $B_2$ are the entries two and four steps above the diagonal, together with their wraparound.</p>
+<p><strong>Proposition.</strong> The two quotients are the only proper coarsenings of the $\mathbb{Z}/6$ grading, and they are independent: neither is a coarsening of the other.</p>
+<p><strong>Proof.</strong> A coarsening of a $\mathbb{Z}/6$ grading is a grading by a quotient of $\mathbb{Z}/6$; the quotients are $\mathbb{Z}/2$ and $\mathbb{Z}/3$. The $\mathbb{Z}/2$ classes of $0$ and $3$ differ, while the $\mathbb{Z}/3$ classes of $0$ and $2$ differ, so neither grading refines the other.</p>
+<h3 id="the-chirality-involution">The Chirality Involution</h3>
+<p><strong>Definition.</strong> The <strong>chirality involution</strong> of the root is</p>
+<p>$$
+\Gamma=H^3 .
+$$</p>
+<p><strong>Proposition.</strong> $\Gamma^2=I_6$, $\Gamma\neq\pm I_6$, $\operatorname{tr}\Gamma=0$, and</p>
+<p>$$
+\Gamma=\sum_{k=1}^{6}(-1)^{k-1}P_k
+=P_1-P_2+P_3-P_4+P_5-P_6 .
+$$</p>
+<p>The eigenvalues of $\Gamma$ are $+1$ with multiplicity three, on $V_1\oplus V_3\oplus V_5$, and $-1$ with multiplicity three, on $V_2\oplus V_4\oplus V_6$.</p>
+<p><strong>Proof.</strong> $(\zeta_k)^3=(-1)^{k-1}$; the spectral formula for a function of $H$ gives $\Gamma=\sum_k\zeta_k^3P_k$. The trace is the sum of three plus ones and three minus ones.</p>
+<p><strong>Theorem (the $\mathbb{Z}/2$ grading is the chirality).</strong> Conjugation by $\Gamma$ acts as $+1$ on $A_{\text{even}}$ and as $-1$ on $A_{\text{odd}}$, and $A_{\text{even}}$ is the fixed subalgebra of the involution $\operatorname{Ad}_\Gamma$.</p>
+<p><strong>Proof.</strong> $\Gamma=\sum_k(-1)^{k-1}P_k$ is a linear combination of the Peirce idempotents, hence $\Gamma P_k=P_k\Gamma=(-1)^{k-1}P_k$. For $A\in A_{kl}$, $\Gamma A\Gamma=(-1)^{k+l-2}A=(-1)^{k+l}A$, which is $+1$ exactly when $k$ and $l$ have the same parity, that is on $A_{\text{even}}$.</p>
+<p><strong>Corollary (the coarse idempotents).</strong> The two idempotents of the involution are</p>
+<p>$$
+\Pi_+=\frac{I_6+\Gamma}{2}=P_1+P_3+P_5,
+\qquad
+\Pi_-=\frac{I_6-\Gamma}{2}=P_2+P_4+P_6 .
+$$</p>
+<p>They are orthogonal, complete, of ranks $3$ and $3$, and each is a sum of three <strong>primitive</strong> Lagrange idempotents. They are therefore not primitive: the involution $\Gamma$ is a coarsening of the root, not a replacement for it.</p>
+<p>This is the precise sense in which the order-two case is contained in the order-six case. The involution $\Gamma$ has a repeated eigenvalue, its projectors are sums of Lagrange projectors, and the primitive decomposition is still the six-root one.</p>
+<h2 id="the-root-set">The Root Set</h2>
+<h3 id="the-conjugacy-class">The Conjugacy Class</h3>
+<p>The group $PGL_6(\mathbb{C})=GL_6(\mathbb{C})/\mathbb{C}^\times$ acts on $M_6(\mathbb{C})$ by conjugation, and the property of being a root is invariant under the action.</p>
+<p><strong>Theorem.</strong> The root set is a single orbit of $PGL_6(\mathbb{C})$, namely</p>
+<p>$$
+\{H\in M_6(\mathbb{C}):H^6=I_6,\ \text{six distinct eigenvalues}\}
+=PGL_6(\mathbb{C})/T,
+$$</p>
+<p>where $T$ is the image in $PGL_6$ of the diagonal torus in the eigenbasis. Its complex dimension is</p>
+<p>$$
+\dim PGL_6-\dim T=35-5=30 .
+$$</p>
+<p><strong>Proof.</strong> Every root is diagonalisable with the eigenvalues $\zeta_1,\dots,\zeta_6$, each once, so it is conjugate to the diagonal root $D=\operatorname{diag}(\zeta_1,\dots,\zeta_6)$. The roots are therefore one orbit. The stabiliser of $D$ in $GL_6$ is the group of invertible matrices commuting with $D$; since the eigenvalues are distinct, that is the diagonal torus $\mathbb{C}^{\times6}$, of dimension six, and its image in $PGL_6$ is the torus $T$ of dimension five. The orbit–stabiliser theorem and $\dim PGL_6=36-1=35$ give the dimension.</p>
+<p><strong>Corollary (all roots are conjugate).</strong> Any two roots are conjugate by an element of $PGL_6(\mathbb{C})$, and the conjugation carries the Lagrange family of one to the Lagrange family of the other.</p>
+<p><strong>Proof.</strong> Conjugation carries $H$ to $gHg^{-1}$ and the polynomial $P_k(H)$ to $gP_k(H)g^{-1}=P_k(gHg^{-1})$.</p>
+<h3 id="the-flag-and-the-labelling">The Flag and the Labelling</h3>
+<p>Forget the splitting of $\mathbb{C}^6$ into lines and keep the flag. A root determines the ordered flag</p>
+<p>$$
+0\subset V_1\subset V_1\oplus V_2\subset\cdots\subset V_1\oplus\cdots\oplus V_6=\mathbb{C}^6 .
+$$</p>
+<p><strong>Proposition.</strong> The map from roots to full flags is surjective, and its fibre over a flag is the set of splittings of the flag, an affine space of dimension $15$.</p>
+<p><strong>Proof.</strong> Given a full flag, choosing a line $V_k$ in each successive quotient splits the flag; the choices are independent, of dimensions $5,4,3,2,1,0$, whose sum is $15$. The root is recovered from the splitting and the assignment of $\zeta_k$ to $V_k$.</p>
+<p><strong>Proposition (the $6!$ of the labelling).</strong> The six eigenvalues are exactly the six roots, so a root is an ordered decomposition into six lines. The symmetric group $S_6$, of order $6!=720$, acts freely by permuting the lines and hence the roots; the quotient is the space of unordered decompositions. Over that quotient the root set is a cover of degree $6!$.</p>
+<p><strong>Proof.</strong> The eigenvalue attached to a line is determined by the line, so a permutation of the lines permutes the eigenvalues and produces another root. The action is free because the six lines are distinct. The fibre of the quotient map is the set of bijections between the six abstract roots and the six lines, of cardinality $6!$.</p>
+<p><strong>Remark.</strong> The two numbers $30$ and $15$ are not in conflict. The root set has dimension $30$; the flag variety has dimension $15$; the fibre of the forgetful map is the $15$-dimensional space of splittings. The $6!$ is a discrete relabelling, not a continuous parameter. This is the precise form of the statement that the root set is a $6!$-fold cover of the unordered decomposition space over the flag variety.</p>
+<h3 id="the-root-and-the-gauge">The Root and the Gauge</h3>
+<p>The orbit count is the first half of the count of the frame. The frame of $M_6(\mathbb{C})$ is an ordered basis up to an overall scalar; the root fixes the six lines, and the gauge fixes one scale in each line. The root contributes $30$ parameters, the gauge $5$, and</p>
+<p>$$
+30+5=35=\dim PGL_6 .
+$$</p>
+<p>The gauge is the subject of <em>The Frame, the Simple Nilpotents and the Gauge</em>. The two counts meet because the frame is $PGL_6$ itself: a root is a point of $PGL_6/T$ and a gauge is a point of $T$.</p>
+<h2 id="the-order-two-case">The Order-Two Case</h2>
+<p><strong>The root of $+1$ is the order-two case of the same construction.</strong> Let $E\in M_2(\mathbb{C})$ satisfy $E^2=I_2$ with distinct eigenvalues $+1,-1$. The two Lagrange projectors are</p>
+<p>$$
+P_+=\frac{I_2+E}{2},\qquad P_-=\frac{I_2-E}{2},
+$$</p>
+<p>idempotent, orthogonal, complete, and $E=P_+-P_-$. This is the frame of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, whose Peirce decomposition has four one-dimensional corners. <strong>No second root is needed.</strong> The six-root construction of this article reduces to it at $n=2$: two roots of unity, two projectors, one grading by $\mathbb{Z}/2$.</p>
+<p>For $n=6$ the same reduction is available for the involution $\Gamma=H^3$: its two projectors are $\Pi_\pm=(I\pm\Gamma)/2$, of ranks three. They are the coarse idempotents of §<em>The Chirality Involution</em>, not primitive idempotents, and the primitive ones remain the six $P_k$. The order-two case is thus a <strong>quotient</strong> of the order-six case, obtained by grouping the six lines into the even and the odd three.</p>
+<p><strong>Remark (why one root suffices).</strong> In the biquaternion articles a frame is built from a root of $+1$ together with a second root anticommuting with it, because $M_2$ has only two eigenvalues and the two mixed units need a relative scale. In $M_6$ the root has six eigenvalues; the six lines are already distinct and the mixed units between them are indexed by pairs. The relative scales are the gauge, not a second root. <strong>The root is the only primitive object; the gauge is a choice of frame inside it.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>A root of $M_6(\mathbb{C})$ is a matrix $H$ with $H^6=I_6$ and six distinct eigenvalues. Its six eigenspaces are six lines, and the Lagrange projectors</p>
+<p>$$
+P_k=\prod_{l\neq k}\frac{H-\zeta_lI_6}{\zeta_k-\zeta_l}
+=\frac16\sum_{r=0}^{5}\zeta_k^{-r}H^r
+$$</p>
+<p>are primitive idempotents, orthogonal and complete, with $H=\sum_k\zeta_kP_k$.</p>
+<p>$$
+\boxed{\ \text{One root of order six gives the six primitive idempotents; no second object is primitive.}\ }
+$$</p>
+<p>The projectors grade the algebra by $\mathbb{Z}/6$, with six graded pieces $A_r$ of dimension six each, and the two quotients $\mathbb{Z}/2$ and $\mathbb{Z}/3$ are the only coarser gradings. The cube $\Gamma=H^3$ is the chirality involution: it has eigenvalues $+1$ and $-1$, each of multiplicity three, and its projectors are the sums $P_1+P_3+P_5$ and $P_2+P_4+P_6$.</p>
+<p>The root set is one conjugacy class of $PGL_6$, of complex dimension $30=35-5$; the stabiliser is the five-dimensional torus, which is the gauge. The $6!$ relabellings of the six lines are discrete, and the flag variety is the $15$-dimensional image of the forgetful map.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root</td>
+<td>$H^6=I_6$, six distinct eigenvalues</td>
+</tr>
+<tr>
+<td>Idempotents</td>
+<td>$P_k$, $k=1,\dots,6$, primitive, rank one</td>
+</tr>
+<tr>
+<td>Spectral formula</td>
+<td>$H=\sum_k\zeta_kP_k$</td>
+</tr>
+<tr>
+<td>Grading</td>
+<td>$M_6=\bigoplus_{r\in\mathbb{Z}/6}A_r$, $\dim A_r=6$</td>
+</tr>
+<tr>
+<td>Chirality</td>
+<td>$\Gamma=H^3$, $3+3$ split</td>
+</tr>
+<tr>
+<td>Root set</td>
+<td>$PGL_6/T$, complex dimension $30$</td>
+</tr>
+<tr>
+<td>Gauge</td>
+<td>$T\cong(\mathbb{C}^\times)^5$, dimension $5$</td>
+</tr>
+<tr>
+<td>Total frame</td>
+<td>$30+5=35=\dim PGL_6$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\zeta=e^{2\pi i/6}$</td>
+<td>the primitive sixth root</td>
+</tr>
+<tr>
+<td>$\zeta_k=\zeta^{k-1}$</td>
+<td>the six sixth roots, $k=1,\dots,6$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>the root, $H^6=I_6$ with simple spectrum</td>
+</tr>
+<tr>
+<td>$V_k=\ker(H-\zeta_kI_6)$</td>
+<td>the six eigenlines</td>
+</tr>
+<tr>
+<td>$P_k$</td>
+<td>the Lagrange projector onto $V_k$</td>
+</tr>
+<tr>
+<td>$A_{kl}=P_kM_6P_l$</td>
+<td>the thirty-six Peirce lines</td>
+</tr>
+<tr>
+<td>$A_r=\bigoplus_{k-l\equiv r}A_{kl}$</td>
+<td>the $\mathbb{Z}/6$ graded pieces, $\dim A_r=6$</td>
+</tr>
+<tr>
+<td>$\Gamma=H^3$</td>
+<td>the chirality involution</td>
+</tr>
+<tr>
+<td>$\Pi_\pm=(I_6\pm\Gamma)/2$</td>
+<td>the coarse idempotents of ranks $3,3$</td>
+</tr>
+<tr>
+<td>$PGL_6/T$</td>
+<td>the root set, complex dimension $30$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the product, the trace, the determinant and the group $PGL_6$.</li>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>, for the decomposition of $M_6$ by the six projectors and the coarse split by one of them.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the nilpotents $E_{12},\dots,E_{56}$ and the five-parameter gauge.</li>
+<li><a href="the-two-chiralities-of-m6c.html">The Two Chiralities</a>, for the $3+3$ split and the mass block.</li>
+<li><a href="primitive-idempotents-and-minimal-left-ideals.html">Primitive Idempotents and Minimal Left Ideals</a>, for the general theory of the idempotents and the modules they generate.</li>
+<li><a href="idempotents-and-involutions-of-an-algebra.html">Idempotents and Involutions of an Algebra</a>, for the correspondence between idempotents and involutions in the general case.</li>
+<li><a href="complementary-idempotents-and-the-peirce-decomposition.html">Complementary Idempotents and the Peirce Decomposition</a>, for the Peirce decomposition relative to a complete orthogonal family.</li>
+<li><a href="flag-manifolds.html">Flag Manifolds</a>, for the full flag variety and its dimension.</li>
+<li><a href="grassmannians-and-stiefel-manifolds.html">Grassmannians and Stiefel Manifolds</a>, for the partial flags and the Grassmannians used in the coarse splits.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the representation of $\mathbb{Z}/6$ and the discrete Fourier decomposition of a cyclic group.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the spectral theorem, the Lagrange interpolation formula and the trace of a projection.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

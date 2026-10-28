@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mass Block and the Chiral Polar Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-mass-block-and-the-chiral-polar-decomposition"><strong>The Mass Block and the Chiral Polar Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The mass block is the four-dimensional space of maps from the right chirality to the left chirality, and its chiral polar decomposition separates a unitary mixing from two singular values.</strong> The block is</p>
+<p>$$
+\mathcal{B}=P_+M_4P_-=\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C}),
+$$</p>
+<p>and an element $M\in\mathcal{B}$ is a <strong>mass operator</strong></p>
+<p>$$
+M:\mathbb{C}^2_-\longrightarrow\mathbb{C}^2_+ .
+$$</p>
+<p>The chiral gauge acts by $M\mapsto U_LMU_R^{-1}$ with $U_L,U_R\in U(2)$. The singular values $\sigma_1,\sigma_2$ are the two invariants of the orbit; the determinant is a phase times their product; the rank counts the massless modes.</p>
+<p>The article defines the mass block, proves the singular value and polar decompositions, identifies the invariants and the orbits, explains the determinant phase and the rank, and states why the off-diagonal block is the only coupling of the chiralities. The rank-two split is <em>The Rank-Two Split</em>; the chirality is <em>The Two Chiralities</em>; the three-parameter gauge is <em>The Three-Parameter Gauge and the Chiral Polar Decomposition</em>; the full polar decomposition is <em>The Polar Decomposition</em>.</p>
+<h2 id="the-mass-block">The Mass Block</h2>
+<p><strong>Definition.</strong> The <strong>mass block</strong> is the corner</p>
+<p>$$
+\mathcal{B}=P_+M_4P_-=\{P_+XP_-:X\in M_4\}.
+$$</p>
+<p>In the block form of the chirality decomposition,</p>
+<p>$$
+X=\begin{pmatrix}X_{++}&X_{+-}\\X_{-+}&X_{--}\end{pmatrix},
+\qquad
+X_{+-}\in\mathcal{B},\quad X_{-+}\in\mathcal{C},
+$$</p>
+<p>the mass block is the upper-right block. The opposite block $\mathcal{C}=P_-M_4P_+$ is the <strong>conjugate mass block</strong>.</p>
+<p><strong>Proposition.</strong> The mass block is four-dimensional, and it is isomorphic to $\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)$ and to $M_2(\mathbb{C})$ as a vector space. It is a bimodule: $\mathcal{A}=P_+M_4P_+$ acts on the left and $\mathcal{D}=P_-M_4P_-$ acts on the right:</p>
+<p>$$
+\mathcal{A}\times\mathcal{B}\longrightarrow\mathcal{B},\qquad
+(A,M)\longmapsto AM,
+$$</p>
+<p>$$
+\mathcal{B}\times\mathcal{D}\longrightarrow\mathcal{B},\qquad
+(M,D)\longmapsto MD.
+$$</p>
+<p><strong>Proof.</strong> In a basis adapted to the chirality decomposition, $\mathcal{B}$ is the upper-right $2\times2$ block. It has four entries. The left action of the upper-left block and the right action of the lower-right block are the ordinary matrix products of $2\times2$ matrices.</p>
+<p><strong>The mass operator.</strong> An element $M\in\mathcal{B}$ is a linear map from the right chirality to the left chirality. It is not an endomorphism of a single space, and it is not an algebra element with a product of its own. It is a block of an algebra element, and its product with the opposite block is an endomorphism of one chirality:</p>
+<p>$$
+\mathcal{B}\times\mathcal{C}\longrightarrow\mathcal{A},\qquad
+(M,N)\longmapsto MN,
+$$</p>
+<p>$$
+\mathcal{C}\times\mathcal{B}\longrightarrow\mathcal{D},\qquad
+(N,M)\longmapsto NM.
+$$</p>
+<p>The products $MN$ and $NM$ are the only places where the two chiralities interact in the multiplication.</p>
+<h2 id="the-chiral-gauge">The Chiral Gauge</h2>
+<p><strong>Definition.</strong> The <strong>chiral gauge group</strong> is</p>
+<p>$$
+G_{\mathrm{ch}}=U(2)_L\times U(2)_R,
+$$</p>
+<p>acting on the mass block by</p>
+<p>$$
+M\longmapsto U_LMU_R^{-1}=U_LMU_R^{*}.
+$$</p>
+<p>The first factor acts on the target chirality, the second on the source.</p>
+<p><strong>Proposition.</strong> The action is well defined and preserves the block. The determinant transforms by</p>
+<p>$$
+\det(U_LMU_R^{*})=\det U_L\det M\det U_R^{-1},
+$$</p>
+<p>and the adjoint $M^*$ transforms by</p>
+<p>$$
+(U_LMU_R^{*})^*=U_RM^*U_L^{*}.
+$$</p>
+<p><strong>Proof.</strong> The determinant is multiplicative, and $\det U_R^{-1}=(\det U_R)^{-1}$. The adjoint reverses the order: $(U_LMU_R^*)^*=U_RM^*U_L^*$.</p>
+<p><strong>The compact gauge and the complex gauge.</strong> The group $G_{\mathrm{ch}}$ is compact. Its complexification is $GL(2)_L\times GL(2)_R$, acting by $M\mapsto SM T^{-1}$ with $S,T\in GL(2,\mathbb{C})$. The compact orbits are the singular value orbits; the complex orbits are the rank orbits. The two classifications are different, and the article uses both.</p>
+<h2 id="the-singular-value-decomposition">The Singular Value Decomposition</h2>
+<p><strong>Theorem (SVD).</strong> Every $M\in\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)$ has a decomposition</p>
+<p>$$
+M=U\Sigma V^*,
+$$</p>
+<p>where</p>
+<p>$$
+U\in U(\mathbb{C}^2_+),\qquad V\in U(\mathbb{C}^2_-),\qquad
+\Sigma=\operatorname{diag}(\sigma_1,\sigma_2):\mathbb{C}^2_-\to\mathbb{C}^2_+,
+$$</p>
+<p>with</p>
+<p>$$
+\sigma_1\ge\sigma_2\ge0.
+$$</p>
+<p>The numbers $\sigma_1,\sigma_2$ are the <strong>singular values</strong> of $M$. They are uniquely determined by $M$, and they are the non-negative square roots of the eigenvalues of $M^*M$.</p>
+<p><strong>Proof.</strong> The operator $M^*M$ is positive semidefinite on $\mathbb{C}^2_-$. By the spectral theorem it has an orthonormal eigenbasis $v_1,v_2$ with eigenvalues $\sigma_1^2\ge\sigma_2^2\ge0$. Set $V=(v_1,v_2)$ and $\Sigma=\operatorname{diag}(\sigma_1,\sigma_2)$. For $\sigma_k>0$, set $u_k=Mv_k/\sigma_k$; the vectors $u_k$ are orthonormal because</p>
+<p>$$
+\langle u_j,u_k\rangle=\frac{\langle Mv_j,Mv_k\rangle}{\sigma_j\sigma_k}
+=\frac{\langle v_j,M^*Mv_k\rangle}{\sigma_j\sigma_k}
+=\delta_{jk}.
+$$</p>
+<p>Extend the $u_k$ with $\sigma_k>0$ to an orthonormal basis of $\mathbb{C}^2_+$, and let $U$ be the corresponding unitary. Then $Mv_k=\sigma_ku_k$ for every $k$, so $M=U\Sigma V^*$. The uniqueness of the singular values is the uniqueness of the eigenvalues of $M^*M$.</p>
+<p><strong>The polar decomposition.</strong> The SVD gives the <strong>chiral polar decomposition</strong></p>
+<p>$$
+M=WP,\qquad
+W=UV^*:\mathbb{C}^2_-\to\mathbb{C}^2_+,\qquad
+P=V\Sigma V^*:\mathbb{C}^2_-\to\mathbb{C}^2_- .
+$$</p>
+<p>The factor $W$ is unitary (an isometry between the two chiral planes), and $P$ is positive semidefinite. Equivalently,</p>
+<p>$$
+M=U\Sigma V^*=(UV^*)(V\Sigma V^*).
+$$</p>
+<p>The factor $P=|M|=\sqrt{M^*M}$ is the <strong>mass modulus</strong>, and $W$ is the <strong>chiral phase</strong>. The decomposition is unique when $M$ is invertible; when $M$ is singular, $W$ is not unique on the kernel of $M$, and $P$ is unique.</p>
+<p><strong>The matrices.</strong> For</p>
+<p>$$
+M=\begin{pmatrix}3&0\\0&2\end{pmatrix},
+$$</p>
+<p>the singular values are $3,2$, and $M=WP$ with $W=I$, $P=\operatorname{diag}(3,2)$. For</p>
+<p>$$
+M=\begin{pmatrix}0&3\\2&0\end{pmatrix},
+$$</p>
+<p>the singular values are $3,2$ and</p>
+<p>$$
+M=\begin{pmatrix}1&0\\0&1\end{pmatrix}
+\begin{pmatrix}3&0\\0&2\end{pmatrix}
+\begin{pmatrix}0&1\\1&0\end{pmatrix},
+$$</p>
+<p>so $U=I$, $\Sigma=\operatorname{diag}(3,2)$, $V=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, and $W=UV^*=\begin{pmatrix}0&1\\1&0\end{pmatrix}$. For</p>
+<p>$$
+M=\begin{pmatrix}1&1\\0&1\end{pmatrix},
+$$</p>
+<p>the singular values are</p>
+<p>$$
+\sigma_1=\frac{1+\sqrt5}{2}=\varphi,\qquad
+\sigma_2=\frac{\sqrt5-1}{2}=\frac1\varphi,
+$$</p>
+<p>the golden ratio and its inverse. The singular values are the positive square roots of the eigenvalues $(3\pm\sqrt5)/2$ of $M^*M$.</p>
+<h2 id="the-determinant-the-phase-and-the-rank">The Determinant, the Phase and the Rank</h2>
+<p><strong>The determinant.</strong> For $M=U\Sigma V^*$,</p>
+<p>$$
+\det M=\det U\det\Sigma\det V^*
+=e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2,
+$$</p>
+<p>where $e^{i\theta_U}=\det U$ and $e^{i\theta_V}=\det V$. The modulus of the determinant is the product of the singular values:</p>
+<p>$$
+\lvert\det M\rvert=\sigma_1\sigma_2 .
+$$</p>
+<p>The argument is the <strong>chiral phase</strong> $\theta_U-\theta_V$. Under the chiral gauge,</p>
+<p>$$
+\det(U_LMU_R^*)=e^{i(\theta_L-\theta_R)}e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2,
+$$</p>
+<p>so the phase shifts by the determinant phases of the gauge; the modulus $\sigma_1\sigma_2$ is invariant.</p>
+<p><strong>The special unitary gauge.</strong> Under $SU(2)_L\times SU(2)_R$, the determinant phases of the gauge are $1$, so the determinant of $M$ is invariant and equals $\sigma_1\sigma_2\ge0$. The chiral phase is then an invariant of $M$ itself, not a gauge artefact. Under the full $U(2)_L\times U(2)_R$, only the modulus is invariant; the phase can be removed by the two determinant factors.</p>
+<p><strong>The rank and the masslessness.</strong> The rank of $M$ is the number of nonzero singular values:</p>
+<p>$$
+\operatorname{rank}M=
+\begin{cases}
+2,& \sigma_2>0,\\
+1,& \sigma_1>0=\sigma_2,\\
+0,& M=0.
+\end{cases}
+$$</p>
+<p>The rank is <strong>the masslessness</strong>: rank $2$ is the generic massive case, rank $1$ has one massless mode, and rank $0$ is fully massless. The rank is invariant under the complex gauge and under the compact gauge. The set</p>
+<p>$$
+\{M:\det M=0\}=\{M:\operatorname{rank}M\le1\}
+$$</p>
+<p>is the <strong>massless locus</strong>, a complex hypersurface of complex dimension $3$ in the four-dimensional mass block, with real codimension $2$. Its complement, the rank-two locus, is open and dense.</p>
+<p><strong>The orbits.</strong> The compact gauge orbits are classified by the unordered pair $\{\sigma_1,\sigma_2\}$ of singular values. The complex gauge orbits are classified by the rank. The two classifications fit together: the complex orbit of rank $r$ contains the compact orbits with exactly $r$ positive singular values.</p>
+<h2 id="the-only-coupling-of-the-chiralities">The Only Coupling of the Chiralities</h2>
+<p><strong>The block-diagonal part preserves the chiralities.</strong> An element of $\mathcal{A}\oplus\mathcal{D}$ is block-diagonal. It maps each chirality to itself:</p>
+<p>$$
+\begin{pmatrix}A&0\\0&D\end{pmatrix}
+\begin{pmatrix}v_+\\v_-\end{pmatrix}
+=
+\begin{pmatrix}Av_+\\Dv_-\end{pmatrix}.
+$$</p>
+<p>The two chiralities do not mix.</p>
+<p><strong>The off-diagonal part is the coupling.</strong> The only entries that map one chirality to the other are the mass blocks $\mathcal{B}$ and $\mathcal{C}$:</p>
+<p>$$
+\begin{pmatrix}0&M\\N&0\end{pmatrix}
+\begin{pmatrix}v_+\\v_-\end{pmatrix}
+=
+\begin{pmatrix}Mv_-\\Nv_+\end{pmatrix}.
+$$</p>
+<p>Without $\mathcal{B}$ and $\mathcal{C}$, the algebra would be the direct sum $\mathcal{A}\oplus\mathcal{D}$ and the chiralities would be independent. The off-diagonal blocks are the only coupling of the chiralities in the multiplication of the algebra, and the mass operator $M$ is the coupling from right to left. The product $MN\in\mathcal{A}$ and $NM\in\mathcal{D}$ are the two ways the coupling returns to the diagonal.</p>
+<p><strong>The mass block is not an ideal.</strong> The mass block is a bimodule, not a two-sided ideal. The products $\mathcal{B}\mathcal{C}$ and $\mathcal{C}\mathcal{B}$ land in the diagonal, and the algebra generated by $\mathcal{B}$ and $\mathcal{C}$ together with the diagonal is the whole algebra. The block is a corner, not a summand.</p>
+<h2 id="the-biquaternion-case-and-the-comparison">The Biquaternion Case and the Comparison</h2>
+<p><strong>At $n=2$ the mass block is a line.</strong> For $M_2(\mathbb{C})$, the chirality is the root $H=\operatorname{diag}(1,-1)$, and the mass block is</p>
+<p>$$
+\mathcal{B}=P_+M_2P_-=\mathbb{C}E_{12},
+$$</p>
+<p>of dimension $1$. A mass operator is a complex scalar $z$, and its polar decomposition is</p>
+<p>$$
+z=e^{i\theta}\lvert z\rvert .
+$$</p>
+<p>There is one singular value $\lvert z\rvert$, one phase $e^{i\theta}$, and the rank is $1$ for $z\ne0$ and $0$ for $z=0$. The two singular values of the four-dimensional mass block degenerate to one modulus; the chiral phase is the only phase. The comparison with the three-parameter gauge of the $M_4$ frame is <em>The Three-Parameter Gauge and the Chiral Polar Decomposition</em>.</p>
+<p><strong>The general pattern.</strong> For $M_{2m}(\mathbb{C})$ with the chirality split into two $m$-dimensional planes, the mass block is $M_m(\mathbb{C})$, and its chiral polar decomposition has $m$ singular values. For $m=1$ there is one modulus; for $m=2$ there are two; for $m=3$ there are three. The two singular values of the $M_4$ mass block are the first nontrivial case.</p>
+<h2 id="summary">Summary</h2>
+<p>The mass block $\mathcal{B}=P_+M_4P_-\cong\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C})$ is the four-dimensional space of maps from the right chirality to the left. The chiral gauge $U(2)_L\times U(2)_R$ acts by $M\mapsto U_LMU_R^*$. Every $M$ has a singular value decomposition $M=U\Sigma V^*$ with two singular values $\sigma_1\ge\sigma_2\ge0$, and a chiral polar decomposition $M=WP$ with $W=UV^*$ unitary and $P=V\Sigma V^*$ positive semidefinite. The determinant is $e^{i(\theta_U-\theta_V)}\sigma_1\sigma_2$; its modulus is the product of the singular values, and its phase is the chiral phase. The rank counts the massless modes: rank $2$ is massive, rank $1$ has one massless mode, rank $0$ is fully massless. The massless locus is a complex hypersurface of dimension $3$ and real codimension $2$. The off-diagonal block is the only coupling of the chiralities; the diagonal part preserves them. At $n=2$ the mass block is a line and the polar decomposition is the polar form of a complex scalar.</p>
+<p>$$
+\boxed{\ M=U\Sigma V^*,\quad \sigma_1\ge\sigma_2\ge0,\quad \lvert\det M\rvert=\sigma_1\sigma_2,\quad \operatorname{rank}M\in\{0,1,2\},\quad \dim_\mathbb{C}\mathcal{B}=4.\ }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension or value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mass block $\mathcal{B}$</td>
+<td>$4$ complex</td>
+</tr>
+<tr>
+<td>Mass operator $M$</td>
+<td>$2\times2$</td>
+</tr>
+<tr>
+<td>Singular values</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Chiral gauge $U(2)\times U(2)$</td>
+<td>$4+4=8$ real</td>
+</tr>
+<tr>
+<td>Massive locus (rank $2$)</td>
+<td>open dense</td>
+</tr>
+<tr>
+<td>Massless locus (rank $\le1$)</td>
+<td>$3$ complex</td>
+</tr>
+<tr>
+<td>Fully massless (rank $0$)</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{B}=P_+M_4P_-$</td>
+<td>the mass block</td>
+</tr>
+<tr>
+<td>$\mathcal{C}=P_-M_4P_+$</td>
+<td>the conjugate mass block</td>
+</tr>
+<tr>
+<td>$M:\mathbb{C}^2_-\to\mathbb{C}^2_+$</td>
+<td>a mass operator</td>
+</tr>
+<tr>
+<td>$U_L,U_R$</td>
+<td>the chiral gauge unitaries</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2$</td>
+<td>the singular values</td>
+</tr>
+<tr>
+<td>$W=UV^*$</td>
+<td>the chiral phase, a unitary between the planes</td>
+</tr>
+<tr>
+<td>$P=V\Sigma V^*$</td>
+<td>the mass modulus, positive on $\mathbb{C}^2_-$</td>
+</tr>
+<tr>
+<td>$\theta_U,\theta_V$</td>
+<td>the determinant phases of $U,V$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the singular value decomposition, the polar decomposition and the determinant.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the variational characterization of singular values and the operator norms.</li>
+<li><a href="the-rank-two-split-of-m4c.html">The Rank-Two Split</a>, for the corners and the mass block.</li>
+<li><a href="the-two-chiralities-of-m4c.html">The Two Chiralities</a>, for the chirality decomposition and the chiral blocks.</li>
+<li><a href="the-three-parameter-gauge-and-the-chiral-polar-decomposition-of-m4c.html">The Three-Parameter Gauge and the Chiral Polar Decomposition</a>, for the gauge and the scalar case.</li>
+<li><a href="the-polar-decomposition-of-m4c.html">The Polar Decomposition</a>, for the full $U(4)$ polar decomposition.</li>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set</a>, for the norm and the determinant.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

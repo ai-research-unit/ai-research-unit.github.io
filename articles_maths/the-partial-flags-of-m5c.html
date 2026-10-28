@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Partial Flags of $M_5(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-partial-flags-of-math0"><strong>The Partial Flags of $M_5(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>flag</strong> in $V=\mathbb{C}^5$ is a chain of subspaces</p>
+<p>$$
+0\subset V_1\subset V_2\subset\cdots\subset V_4\subset V_5=V,
+\qquad \dim V_k=k .
+$$</p>
+<p>The full flag variety $\mathcal{F}$ is the set of such chains; it has dimension</p>
+<p>$$
+0+1+2+3+4=10 .
+$$</p>
+<p>A <strong>partial flag</strong> is a chain with some of the dimensions omitted, for example a single two-plane (a point of the Grassmannian $\mathrm{Gr}(2,5)$, of dimension $6$) or a line inside a three-plane (a flag of type $(1,3)$, of dimension $8$). The partial flags are the quotients of the full flag variety by the parabolic subgroups of $GL_5$; the full flag is the case of the Borel.</p>
+<p>The root set of <em>Roots of Unity and the Lagrange Idempotents</em> is $PGL_5/T$, of dimension $20$. It is <strong>not</strong> the full flag variety: a root determines an ordered splitting $V=L_0\oplus\cdots\oplus L_4$ into five lines, and the flag is only the chain of partial sums $V_k=L_0\oplus\cdots\oplus L_{k-1}$. The map "forget the splitting" is a fibration</p>
+<p>$$
+PGL_5/T\longrightarrow PGL_5/B\cong\mathcal{F}
+$$</p>
+<p>with fibre the unipotent radical $B/T$, of dimension $10$. The count is</p>
+<p>$$
+20=10+10:
+$$</p>
+<p>the root set is a ten-dimensional bundle over the ten-dimensional full flag variety. The root set is not the flag variety, and the difference is exactly the splitting data that the root remembers and the flag forgets.</p>
+<p>This article develops the flags, the partial flags, the incidence and the dimension counts, and then compares them with the root set. It assumes the root and the gauge of the preceding articles; it uses no form and no topology. The full flag variety is the model for the <strong>ordered</strong> structures of the root; the partial flag of the rank-two projection is the Grassmannian $\mathrm{Gr}(2,5)$ of <em>The Rank-Two Split</em>, read geometrically.</p>
+<h2 id="flags-and-partial-flags">Flags and Partial Flags</h2>
+<h3 id="the-full-flag">The Full Flag</h3>
+<p><strong>Definition.</strong> A <strong>full flag</strong> of $V=\mathbb{C}^5$ is a chain</p>
+<p>$$
+F:\quad 0\subset V_1\subset V_2\subset V_3\subset V_4\subset V_5=V,
+\qquad \dim V_k=k .
+$$</p>
+<p>The <strong>standard flag</strong> $F_0$ is the chain $V_k=\operatorname{span}(e_1,\dots,e_k)$ of the standard basis.</p>
+<p><strong>Proposition.</strong> A full flag is equivalently an ordered basis $(v_1,\dots,v_5)$ considered up to the following equivalence: two bases give the same flag if they differ by an upper triangular matrix with nonzero diagonal. The flag is the chain of partial spans, not the basis.</p>
+<p><strong>Proof.</strong> Given a basis, the partial spans $V_k=\operatorname{span}(v_1,\dots,v_k)$ form a flag. Conversely, given a flag, choose $v_k\in V_k\setminus V_{k-1}$; the resulting basis has the flag as its partial spans. A change of basis preserving every $V_k$ is upper triangular in the flag basis, and its diagonal entries are nonzero because it preserves the successive quotients $V_k/V_{k-1}$.</p>
+<p><strong>Corollary.</strong> A full flag is a point of the quotient $GL_5/B$, where $B$ is the Borel subgroup of upper triangular matrices.</p>
+<p><strong>Proof.</strong> The standard flag has stabiliser $B$: a matrix preserves every $V_k$ exactly when it is upper triangular. The set of flags is the orbit of the standard flag, $GL_5/B$.</p>
+<h3 id="the-partial-flags">The Partial Flags</h3>
+<p><strong>Definition.</strong> A <strong>partial flag of type</strong> $(d_1,\dots,d_s)$ with $1\le d_1<\cdots<d_s\le4$ is a chain</p>
+<p>$$
+0\subset V_{d_1}\subset\cdots\subset V_{d_s}\subset V,
+\qquad \dim V_{d_i}=d_i .
+$$</p>
+<p>The full flag is the type $(1,2,3,4)$; a single subspace of dimension $d$ is the type $(d)$; the type $(1,3)$ is a line inside a three-plane.</p>
+<p><strong>Proposition.</strong> A partial flag of type $(d_1,\dots,d_s)$ is a point of the quotient $GL_5/P$, where $P$ is the parabolic subgroup of block upper triangular matrices with diagonal blocks of sizes $d_1,d_2-d_1,\dots,5-d_s$.</p>
+<p><strong>Proof.</strong> The standard partial flag with $V_{d_i}=\operatorname{span}(e_1,\dots,e_{d_i})$ has stabiliser the block upper triangular matrices with the stated diagonal blocks: a matrix preserves each $V_{d_i}$ exactly when its entries below the diagonal blocks vanish. The set of partial flags is the orbit, $GL_5/P$.</p>
+<h3 id="the-dimension-formula">The Dimension Formula</h3>
+<p><strong>Theorem.</strong> The dimension of the partial flag variety of type $(d_1,\dots,d_s)$ is</p>
+<p>$$
+\dim= \sum_{i=1}^{s}d_i(d_{i+1}-d_i),
+\qquad d_{s+1}=5 .
+$$</p>
+<p>For the full flag $(1,2,3,4)$ this is</p>
+<p>$$
+1\cdot1+2\cdot1+3\cdot1+4\cdot1=10 .
+$$</p>
+<p>For a single subspace $(d)$ it is $d(5-d)$, the dimension of the Grassmannian $\mathrm{Gr}(d,5)$.</p>
+<p><strong>Proof.</strong> The parabolic $P$ is block upper triangular with diagonal blocks of sizes $d_1,d_2-d_1,\dots,5-d_s$. The number of free entries is the sum of the squares of the block sizes plus the entries above the diagonal blocks; equivalently, the dimension of $P$ is</p>
+<p>$$
+\dim P=25-\sum_{i=1}^{s}d_i(d_{i+1}-d_i),
+$$</p>
+<p>by counting the entries below the diagonal blocks, which are the only forced zeros. The flag variety $GL_5/P$ has dimension $25-\dim P$, which is the stated sum.</p>
+<p><strong>Corollary.</strong> The dimensions of the partial flags of $V=\mathbb{C}^5$ include</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(4)$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$(1)$ or $(3)$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$(2)$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$(1,2)$ or $(3,4)$</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>$(1,3)$ or $(2,4)$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$(1,2,3)$ or $(2,3,4)$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$(1,2,3,4)$</td>
+<td>$10$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Evaluate the formula: $(1,2)$ gives $1\cdot1+2\cdot3=7$; $(1,3)$ gives $1\cdot2+3\cdot2=8$; $(1,2,3)$ gives $1+2+3\cdot2=9$; the full flag gives $10$. The single subspace $(1)$ or $(4)$ gives $1\cdot4=4$; $(2)$ gives $2\cdot3=6$; $(3)$ gives $3\cdot2=6$.</p>
+<p><strong>Remark.</strong> <strong>The full flag has dimension $10$, and it is the largest of the flag varieties of $V$.</strong> Every partial flag is a quotient of the full flag by forgetting some of the subspaces; the dimensions decrease as the type is coarsened. The full flag is the finest, and the single subspace is the coarsest.</p>
+<h2 id="the-full-flag-variety">The Full Flag Variety</h2>
+<h3 id="the-borel-and-the-unipotent-radical">The Borel and the Unipotent Radical</h3>
+<p><strong>Definition.</strong> The <strong>Borel subgroup</strong> $B\subset GL_5$ is the group of upper triangular matrices; its <strong>unipotent radical</strong> $U$ is the group of upper triangular matrices with all diagonal entries $1$.</p>
+<p><strong>Proposition.</strong> $\dim B=15$, $\dim U=10$, $\dim T=5$, and $B=U\rtimes T$, where $T$ is the diagonal torus. The full flag variety has dimension</p>
+<p>$$
+\dim GL_5-\dim B=25-15=10=\dim U .
+$$</p>
+<p><strong>Proof.</strong> An upper triangular $5\times5$ matrix has $15$ entries on and above the diagonal, so $\dim B=15$; the unipotent radical has the $10$ off-diagonal entries, so $\dim U=10$; the diagonal torus has dimension $5$. The quotient $GL_5/B$ has dimension $25-15=10$.</p>
+<p><strong>Corollary.</strong> The tangent space of the full flag variety at the standard flag is the space of strictly lower triangular matrices, of dimension $10$.</p>
+<p><strong>Proof.</strong> The quotient $GL_5/B$ has tangent space $\mathfrak{gl}_5/\mathfrak{b}$, where $\mathfrak{b}$ is the Borel; the quotient is isomorphic to the strictly lower triangular matrices, of dimension $10$.</p>
+<h3 id="the-incidence">The Incidence</h3>
+<p><strong>Definition.</strong> The <strong>incidence variety</strong> of a partial flag of type $(d,e)$ with $d<e$ is the set of pairs $(V_d,V_e)$ with $V_d\subset V_e\subset V$, $\dim V_d=d$, $\dim V_e=e$.</p>
+<p><strong>Proposition.</strong> The incidence variety of type $(d,e)$ is the partial flag variety of type $(d,e)$, of dimension</p>
+<p>$$
+d(e-d)+e(5-e).
+$$</p>
+<p>For $(1,2)$ it has dimension $1\cdot1+2\cdot3=7$; the projection to the line $\mathbb{P}^4$ has fibre $\mathbb{P}^3$, so $4+3=7$.</p>
+<p><strong>Proof.</strong> The type $(d,e)$ is the partial flag with the two subspaces; the dimension formula gives the number. For $(1,2)$, a line in $\mathbb{C}^5$ is a point of $\mathbb{P}^4$ (dimension $4$), and the two-planes containing it form the projective space of lines in the quotient $\mathbb{C}^5/L$, of dimension $3$; the total is $4+3=7$.</p>
+<p><strong>Corollary.</strong> The incidence correspondence is a bundle over the Grassmannian $\mathrm{Gr}(d,5)$ with fibre the Grassmannian $\mathrm{Gr}(e-d,5-d)$, of dimension $(e-d)(5-e)$; the total dimension is $d(5-d)+(e-d)(5-e)$, which equals $d(e-d)+e(5-e)$.</p>
+<p><strong>Proof.</strong> Fix $V_d$; the subspaces $V_e$ containing it correspond to the $(e-d)$-dimensional subspaces of $V/V_d\cong\mathbb{C}^{5-d}$, a Grassmannian of dimension $(e-d)((5-d)-(e-d))=(e-d)(5-e)$. Add the dimension $d(5-d)$ of the base.</p>
+<h2 id="the-root-set-and-the-flag-variety">The Root Set and the Flag Variety</h2>
+<h3 id="the-map">The Map</h3>
+<p><strong>Definition.</strong> The <strong>splitting map</strong> sends an ordered direct-sum decomposition</p>
+<p>$$
+V=L_0\oplus L_1\oplus\cdots\oplus L_4,\qquad \dim L_k=1,
+$$</p>
+<p>to the full flag</p>
+<p>$$
+V_k=L_0\oplus\cdots\oplus L_{k-1},\qquad k=1,\dots,5 .
+$$</p>
+<p><strong>Proposition.</strong> The splittings are the points of $PGL_5/T$, of dimension $20$; the full flags are the points of $PGL_5/B$, of dimension $10$; the splitting map is a fibration with fibre $B/T\cong U$, of dimension $10$.</p>
+<p><strong>Proof.</strong> An ordered splitting is an ordered basis modulo the diagonal torus, hence a point of $GL_5/T$ modulo scalars, $PGL_5/T$. The flag is the chain of partial sums, a point of $PGL_5/B$. The fibre over the standard flag is the set of bases whose partial spans are the standard flag, i.e., the upper triangular matrices modulo the diagonal, which is $U$. The dimensions are $20$, $10$ and $10$; the bundle is locally trivial.</p>
+<p><strong>Corollary.</strong> The root set $PGL_5/T$ is a $10$-dimensional bundle over the full flag variety $PGL_5/B$:</p>
+<p>$$
+20=10+10 .
+$$</p>
+<p>The root set is <strong>not</strong> the flag variety; it is the total space of the splitting bundle.</p>
+<p><strong>Proof.</strong> The root set is exactly the set of splittings, by the spectral decomposition of a root: a root $H$ determines the five lines $L_k=\ker(H-\zeta_kI)$, and conversely an ordered splitting with distinct scalars $\zeta_k$ determines the root $H=\sum_k\zeta_kP_k$. The splitting map forgets the labels and the lines, keeping only the chain.</p>
+<h3 id="why-they-differ">Why They Differ</h3>
+<p><strong>Theorem.</strong> The root set and the full flag variety are different spaces: they have different dimensions ($20$ and $10$), and the root set carries the data of the five lines, while the flag carries only the chain of partial sums. The fibre of the splitting map is the unipotent radical $U$, of dimension $10$.</p>
+<p><strong>Proof.</strong> The dimensions are computed above. The fibre is nontrivial: over the standard flag, the bases $(v_1,\dots,v_5)$ with $v_k\in V_k\setminus V_{k-1}$ form the upper triangular matrices modulo the diagonal, which is $U$, of dimension $10$. A point of $U$ changes the splitting without changing the flag.</p>
+<p><strong>Corollary.</strong> The root set is not a partial flag variety either. The maps to the partial flags are the compositions</p>
+<p>$$
+PGL_5/T\longrightarrow PGL_5/P\longrightarrow PGL_5/B,
+$$</p>
+<p>and the fibres have dimensions $14$ (for the rank-two parabolic), $10$ (for the Borel), and so on.</p>
+<p><strong>Proof.</strong> The dimension of $PGL_5/P$ for the rank-two parabolic is $6$, and $20-6=14$; for the Borel it is $10$, and $20-10=10$. The fibres are $P/T$, of the stated dimensions.</p>
+<p><strong>Remark.</strong> <strong>The flag variety is the space of chains; the root set is the space of ordered splittings.</strong> The root remembers the five lines and their order; the flag remembers only the chain of their partial sums. This is the geometric content of the difference between the root and the flag, and it is the reason the root set has dimension $20$ rather than $10$.</p>
+<h2 id="the-rank-two-partial-flag">The Rank-Two Partial Flag</h2>
+<h3 id="the-grassmannian">The Grassmannian</h3>
+<p><strong>Definition.</strong> The <strong>Grassmannian</strong> $\mathrm{Gr}(2,5)$ is the set of two-dimensional subspaces of $\mathbb{C}^5$.</p>
+<p><strong>Proposition.</strong> $\mathrm{Gr}(2,5)$ is the partial flag variety of type $(2)$, of dimension $2\cdot3=6$. It is the quotient $GL_5/P$ for the parabolic $P$ of block upper triangular matrices with diagonal blocks $2$ and $3$.</p>
+<p><strong>Proof.</strong> The dimension formula for $(2)$ gives $2(5-2)=6$. The stabiliser of the standard two-plane is the parabolic with blocks $2$ and $3$; the quotient is the Grassmannian.</p>
+<p><strong>Corollary.</strong> The rank-two projection $P$ of <em>The Rank-Two Split</em> determines a point of $\mathrm{Gr}(2,5)$, its image $\operatorname{im}P$; the map $P\mapsto\operatorname{im}P$ from rank-two projections to the Grassmannian is surjective, with fibre the set of complements, of dimension $6$.</p>
+<p><strong>Proof.</strong> Every two-plane is the image of a rank-two projection; the complements of a fixed two-plane are the graphs of linear maps from the two-plane to a complement, of dimension $2\cdot3=6$.</p>
+<h3 id="the-fibre-of-the-root-set">The Fibre of the Root Set</h3>
+<p><strong>Proposition.</strong> The map from the root set to the Grassmannian,</p>
+<p>$$
+PGL_5/T\longrightarrow PGL_5/P\cong\mathrm{Gr}(2,5),
+$$</p>
+<p>has fibre dimension $14$; the total is $6+14=20$.</p>
+<p><strong>Proof.</strong> The parabolic $P$ of the rank-two block has dimension $18$ in $PGL_5$; the torus $T$ has dimension $4$; the fibre $P/T$ has dimension $14$. The base has dimension $6$; the sum is $20$.</p>
+<p><strong>Corollary.</strong> The rank-two split is the <strong>partial</strong> flag of the two-plane, not the full flag: it remembers the two-plane and forgets the splitting of the two-plane and of its complement. The full flag remembers the chain of all dimensions; the root set remembers all five lines.</p>
+<p><strong>Proof.</strong> The partial flag of type $(2)$ is the single subspace; the root set maps to it by forgetting the lines inside the two-plane and inside the complement. The full flag maps to the same Grassmannian by remembering the chain inside the two-plane and inside the complement.</p>
+<h2 id="summary">Summary</h2>
+<p>A full flag of $\mathbb{C}^5$ has dimension $10$; a partial flag of type $(d_1,\dots,d_s)$ has dimension $\sum_i d_i(d_{i+1}-d_i)$ with $d_{s+1}=5$. The Grassmannian $\mathrm{Gr}(2,5)$ has dimension $6$; the incidence of a line in a two-plane has dimension $7$; the full flag is the finest, of dimension $10$.</p>
+<p>$$
+\boxed{\ \dim\mathcal{F}=10,\qquad \dim\mathrm{Gr}(2,5)=6,\qquad \dim(PGL_5/T)=20=10+10.\ }
+$$</p>
+<p>The root set $PGL_5/T$ is the space of ordered splittings into five lines; it is a $10$-dimensional bundle over the full flag variety $PGL_5/B$, with fibre the unipotent radical $U$ of dimension $10$. The root set is <strong>not</strong> the flag variety: the flag forgets the splitting, and the root remembers it. The rank-two split is the partial flag of the two-plane, of dimension $6$; the root set maps to it with fibre dimension $14$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full flag $\mathcal{F}=PGL_5/B$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>Partial flag $(1,2)$</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>Partial flag $(1,3)$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>Partial flag $(1,2,3)$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>Grassmannian $\mathrm{Gr}(2,5)$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Root set $PGL_5/T$</td>
+<td>$20$</td>
+</tr>
+<tr>
+<td>Fibre of the splitting map</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>Fibre over $\mathrm{Gr}(2,5)$</td>
+<td>$14$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V=\mathbb{C}^5$</td>
+<td>The five-dimensional space</td>
+</tr>
+<tr>
+<td>$\mathcal{F}$</td>
+<td>The full flag variety</td>
+</tr>
+<tr>
+<td>$V_k$</td>
+<td>The $k$-dimensional subspace of a flag</td>
+</tr>
+<tr>
+<td>$(d_1,\dots,d_s)$</td>
+<td>The type of a partial flag</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>The Borel subgroup of upper triangular matrices</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>The unipotent radical of $B$, dimension $10$</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>A parabolic subgroup</td>
+</tr>
+<tr>
+<td>$\mathrm{Gr}(d,5)$</td>
+<td>The Grassmannian of $d$-planes, dimension $d(5-d)$</td>
+</tr>
+<tr>
+<td>$PGL_5/T$</td>
+<td>The root set, the space of ordered splittings, dimension $20$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the flag varieties, the Borel and parabolic subgroups and the dimension formula.</li>
+<li>Michel Demazure and Pierre Gabriel, <em>Groupes algébriques, Tome I</em> (North-Holland, 1970), for the flag varieties, the parabolic subgroups and the incidence correspondences.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the Grassmannians, the incidence varieties and their dimensions.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m5c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root set and its dimension $20$.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the frame bundle and the four-parameter gauge.</li>
+<li><a href="the-rank-two-split-of-m5c.html">The Rank-Two Split</a>, for the rank-two projection and the Grassmannian of its image.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the conjugacy class of the root and the flag-variety picture.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

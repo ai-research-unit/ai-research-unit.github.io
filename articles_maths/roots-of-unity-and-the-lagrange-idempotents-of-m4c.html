@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roots of Unity and the Lagrange Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="roots-of-unity-and-the-lagrange-idempotents"><strong>Roots of Unity and the Lagrange Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>One element of order four with simple spectrum produces the four idempotents of the frame.</strong> The element is a matrix $H\in M_4(\mathbb{C})$ with $H^4=I$ and four distinct eigenvalues; the idempotents are the Lagrange projectors of its spectrum. They are polynomials in $H$, they are orthogonal and complete, and no second element is needed to produce them. This is the root-first construction of the category $M_4(\mathbb{C})$.</p>
+<p>The article states the spectral resolution $H=\sum_k\zeta_kP_k$, proves the interpolation formula, gives the four explicit polynomials, reads the $\mathbb{Z}/4$ grading that conjugation by $H$ defines, identifies the chirality involution $\Gamma=H^2$, and counts the root set. It specializes the general construction of <em>Roots of Unity and the Lagrange Idempotents</em> to $n=4$.</p>
+<p>The Peirce decomposition that the idempotents produce is <em>The Peirce Decomposition</em>; the vectors inside the resulting lines and the gauge that acts on them are <em>The Frame, the Simple Nilpotents and the Gauge</em>; the two chiralities are <em>The Two Chiralities</em>; the orbit of the root and the flag variety are <em>The Adjoint Action, the Orbits and the Flag Variety</em>. The algebra itself is <em>The Matrix Algebra $M_4(\mathbb{C})$</em>. No form, no norm and no topology are used.</p>
+<h2 id="the-fourth-roots-of-unity">The Fourth Roots of Unity</h2>
+<p>The four roots of $x^4-1$ are</p>
+<p>$$
+1,\quad i,\quad -1,\quad -i .
+$$</p>
+<p>Write</p>
+<p>$$
+\zeta_k=i^{k-1},\qquad k=1,2,3,4,
+$$</p>
+<p>so that $\zeta_1=1$, $\zeta_2=i$, $\zeta_3=-1$ and $\zeta_4=-i$. The roots are distinct, and they satisfy</p>
+<p>$$
+\zeta_{k+2}=-\zeta_k,\qquad \zeta_{k+1}=i\zeta_k,\qquad \sum_{k=1}^{4}\zeta_k=0,\qquad \prod_{k=1}^{4}\zeta_k=-1 .
+$$</p>
+<p>The polynomial factors as</p>
+<p>$$
+x^4-1=(x-1)(x+1)(x-i)(x+i)=(x^2-1)(x^2+1).
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Root</th>
+<th>$\zeta_k$</th>
+<th>Real part</th>
+<th>Imaginary part</th>
+<th>$\zeta_k^2$</th>
+<th>$\zeta_k^3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\zeta_1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\zeta_2$</td>
+<td>$i$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>$-i$</td>
+</tr>
+<tr>
+<td>$\zeta_3$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\zeta_4$</td>
+<td>$-i$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$i$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The squaring map $\zeta\mapsto\zeta^2$ sends the four roots onto $\{1,-1\}$, each value twice: $\zeta_1^2=\zeta_3^2=1$ and $\zeta_2^2=\zeta_4^2=-1$. This is the quotient $\mathbb{Z}/4\to\mathbb{Z}/2$ that becomes the chirality in §<em>The Chirality Involution</em>. The conjugation $\zeta\mapsto\bar\zeta$ is the inversion $\zeta\mapsto\zeta^{-1}$, and it exchanges $\zeta_1\leftrightarrow\zeta_3$ and $\zeta_2\leftrightarrow\zeta_4$.</p>
+<h2 id="the-root">The Root</h2>
+<p><strong>Definition.</strong> A <strong>root of unity of order four</strong> in $M_4(\mathbb{C})$ is an element $H$ with</p>
+<p>$$
+H^4=I
+$$</p>
+<p>and four distinct eigenvalues. Equivalently, the minimal polynomial of $H$ is $x^4-1$.</p>
+<p><strong>Proposition.</strong> If $H^4=I$ then $H$ is diagonalizable and its eigenvalues lie among the fourth roots of unity. It has simple spectrum if and only if each of the four roots occurs exactly once, if and only if its minimal polynomial is $x^4-1$.</p>
+<p><strong>Proof.</strong> The polynomial $x^4-1$ has the four distinct roots $\zeta_k$ and no repeated factor, so it is square-free. The minimal polynomial of $H$ divides $x^4-1$, hence is square-free. A matrix whose minimal polynomial is square-free is diagonalizable (<em>The Jordan–Chevalley Decomposition of a Matrix</em>). Its eigenvalues are roots of $x^4-1$. There are four eigenvalues counted with multiplicity and four roots in all, so simple spectrum is the statement that each root occurs once. The minimal polynomial then has the four distinct roots, hence is $x^4-1$.</p>
+<p><strong>Corollary.</strong> A root of order four is invertible, with $H^{-1}=H^3$, and it is not a scalar. Its four eigenspaces</p>
+<p>$$
+V_k=\ker(H-\zeta_kI)=\operatorname{im}P_k
+$$</p>
+<p>are lines, and</p>
+<p>$$
+\mathbb{C}^4=V_1\oplus V_2\oplus V_3\oplus V_4 .
+$$</p>
+<p><strong>Standing hypothesis.</strong> For the rest of the article $H$ is a root of order four with simple spectrum, and $P_k$ is the projector onto $V_k$.</p>
+<h2 id="the-lagrange-projectors">The Lagrange Projectors</h2>
+<p><strong>Definition.</strong> The <strong>Lagrange projector</strong> of $\zeta_k$ is</p>
+<p>$$
+P_k=\prod_{l\ne k}\frac{H-\zeta_lI}{\zeta_k-\zeta_l},\qquad k=1,2,3,4 .
+$$</p>
+<p>Each factor is a polynomial in $H$, so $P_k$ is a polynomial in $H$ of degree at most three.</p>
+<p><strong>Theorem.</strong> The four elements $P_k$ are idempotent, orthogonal and complete:</p>
+<p>$$
+P_k^2=P_k,\qquad P_kP_l=0\quad(k\ne l),\qquad \sum_{k=1}^{4}P_k=I,
+$$</p>
+<p>and they satisfy</p>
+<p>$$
+HP_k=P_kH=\zeta_kP_k .
+$$</p>
+<p>They are the spectral projectors of $H$. Conversely, a complete orthogonal family $Q_1,\dots,Q_4$ with $H=\sum_k\zeta_kQ_k$ is this family.</p>
+<p><strong>Proof.</strong> Let $v\in V_m$. Every factor acts on $v$ by a scalar,</p>
+<p>$$
+\frac{H-\zeta_lI}{\zeta_k-\zeta_l}v=\frac{\zeta_m-\zeta_l}{\zeta_k-\zeta_l}v ,
+$$</p>
+<p>so</p>
+<p>$$
+P_kv=\prod_{l\ne k}\frac{\zeta_m-\zeta_l}{\zeta_k-\zeta_l}v .
+$$</p>
+<p>If $m=k$ every factor is $1$, and if $m\ne k$ the factor with $l=m$ has numerator $0$. Hence $P_kv=\delta_{km}v$. Therefore $P_k$ is the identity on $V_k$ and $0$ on the other three lines. The three properties follow, and $HP_kv=\zeta_kP_kv$ for every $v$.</p>
+<p>For the converse, let $v\in\operatorname{im}Q_m$. Then $Hv=\sum_k\zeta_kQ_kQ_mv=\zeta_mv$, so $\operatorname{im}Q_m\subseteq V_m$. The images of the $Q_m$ are independent and sum to $\mathbb{C}^4$, and the $V_m$ are four lines summing to $\mathbb{C}^4$; hence $\operatorname{im}Q_m=V_m$, and $Q_m$ is the projector onto $V_m$ along the sum of the other lines, which is $P_m$.</p>
+<p><strong>Corollary (interpolation).</strong> For every polynomial $f$ of degree at most three,</p>
+<p>$$
+f(H)=\sum_{k=1}^{4}f(\zeta_k)P_k .
+$$</p>
+<p>In particular,</p>
+<p>$$
+I=\sum_kP_k,\qquad H=\sum_k\zeta_kP_k,\qquad H^2=\sum_k\zeta_k^2P_k,\qquad H^3=\sum_k\zeta_k^3P_k .
+$$</p>
+<p><strong>Proof.</strong> Both sides are polynomials in $H$ of degree at most three. On $V_m$ the right-hand side is $f(\zeta_m)$, and the left-hand side is $f(H)v=f(\zeta_m)v$. Two polynomials in $H$ that agree on the four lines agree on their sum $\mathbb{C}^4$.</p>
+<p><strong>Corollary (a basis of $\mathbb{C}[H]$).</strong> The projectors $P_1,\dots,P_4$ are a basis of the commutative algebra $\mathbb{C}[H]$, which is isomorphic to $\mathbb{C}^4$. The map</p>
+<p>$$
+f\longmapsto\bigl(f(1),f(i),f(-1),f(-i)\bigr)
+$$</p>
+<p>is an isomorphism $\mathbb{C}[x]/(x^4-1)\to\mathbb{C}^4$, and the matrix of the roots is the Vandermonde matrix of $1,i,-1,-i$, which is invertible.</p>
+<p><strong>Proof.</strong> The four evaluation maps are linearly independent: a polynomial of degree at most three vanishing at the four roots is zero. Both spaces have dimension four, so the map is an isomorphism. The projectors are the images of the four indicator polynomials, hence a basis.</p>
+<h3 id="the-explicit-polynomials">The Explicit Polynomials</h3>
+<p>The Lagrange formula is the discrete Fourier transform of the powers of $H$. Because the four roots are the fourth roots of unity,</p>
+<p>$$
+P_k=\frac14\sum_{m=0}^{3}\zeta_k^{-m}H^m,\qquad k=1,2,3,4 .
+$$</p>
+<p><strong>Proof.</strong> On $V_l$, the right-hand side acts by</p>
+<p>$$
+\frac14\sum_{m=0}^{3}\left(\frac{\zeta_l}{\zeta_k}\right)^m .
+$$</p>
+<p>The ratio $\zeta_l/\zeta_k$ is a fourth root of unity. It is $1$ exactly when $l=k$, and then the sum is $4/4=1$; otherwise it is a non-trivial fourth root, and the four terms sum to $0$. So the right-hand side is $\delta_{kl}$ on $V_l$, which is $P_k$.</p>
+<p>Written in $H$ alone, with $H^0=I$,</p>
+<p>$$
+P_1=\frac14\bigl(I+H+H^2+H^3\bigr),
+$$</p>
+<p>$$
+P_2=\frac14\bigl(I-iH-H^2+iH^3\bigr),
+$$</p>
+<p>$$
+P_3=\frac14\bigl(I-H+H^2-H^3\bigr),
+$$</p>
+<p>$$
+P_4=\frac14\bigl(I+iH-H^2-iH^3\bigr).
+$$</p>
+<p>The coefficients are the columns of the discrete Fourier matrix of order four. The four polynomials sum to $I$ because the coefficients of $H^m$ for $m\ge1$ sum to $0$, and the coefficient of $I$ sums to $1$.</p>
+<h3 id="rank-trace-and-canonicality">Rank, Trace and Canonicality</h3>
+<p><strong>Proposition.</strong> Each $P_k$ has rank $1$ and trace $1$. The projectors depend only on $H$: they are fixed by the polynomial formula, with no choice of basis, no choice of gauge and no second element.</p>
+<p><strong>Proof.</strong> The image of $P_k$ is the line $V_k$, so the rank is $1$. The trace of a projector is its rank, because in a basis adapted to the decomposition $\mathbb{C}^4=\bigoplus_mV_m$ the matrix of $P_k$ is the coordinate matrix $E_{kk}$. The formula involves $H$ and the constants $\zeta_k$ alone.</p>
+<p><strong>Corollary.</strong> The four projectors are the primitive idempotents of the frame. They are not nilpotents: $P_k^2=P_k\ne0$. The nilpotents $E_{12},E_{23},E_{34}$ of <em>The Frame, the Simple Nilpotents and the Gauge</em> are different elements; they square to $0$, they are not polynomials in $H$, and they carry the gauge.</p>
+<h2 id="the-standard-model">The Standard Model</h2>
+<p>The <strong>standard root</strong> is</p>
+<p>$$
+H_0=\operatorname{diag}(1,i,-1,-i).
+$$</p>
+<p>It satisfies $H_0^4=I$ and has the four roots on the diagonal in the order $\zeta_1,\zeta_2,\zeta_3,\zeta_4$. The Lagrange formula returns the coordinate matrix units,</p>
+<p>$$
+P_k=E_{kk},\qquad k=1,2,3,4,
+$$</p>
+<p>so in the standard frame the four idempotents are the four diagonal matrix units. The spectral resolution is the identity</p>
+<p>$$
+\operatorname{diag}(1,i,-1,-i)=1\,E_{11}+i\,E_{22}-1\,E_{33}-i\,E_{44}.
+$$</p>
+<p>The chirality involution is</p>
+<p>$$
+\Gamma_0=H_0^2=\operatorname{diag}(1,-1,1,-1)=E_{11}-E_{22}+E_{33}-E_{44}.
+$$</p>
+<p><strong>A general root is a conjugate of the standard one.</strong> Every root $H$ is diagonalizable with the four roots as eigenvalues, so there is $S\in GL_4(\mathbb{C})$ with</p>
+<p>$$
+H=SH_0S^{-1}.
+$$</p>
+<p>The Lagrange formula is conjugation-equivariant, so</p>
+<p>$$
+P_k=SE_{kk}S^{-1}.
+$$</p>
+<p>Write $v_k$ for the $k$-th column of $S$ and $\ell_k$ for the $k$-th row of $S^{-1}$. Then</p>
+<p>$$
+P_k=v_k\ell_k,
+$$</p>
+<p>the rank-one matrix sending $\ell_k$ to $v_k$ and killing the other dual basis vectors. The vectors $v_1,\dots,v_4$ are a basis of $\mathbb{C}^4$, the functionals $\ell_1,\dots,\ell_4$ are the dual basis, and</p>
+<p>$$
+P_kv_m=\delta_{km}v_k,\qquad \ell_k(v_m)=\delta_{km}.
+$$</p>
+<p>The frame $(v_1,\dots,v_4)$ is the subject of <em>The Frame, the Simple Nilpotents and the Gauge</em>. The root fixes the four lines; the frame fixes a vector in each line.</p>
+<h3 id="a-non-diagonal-root">A Non-Diagonal Root</h3>
+<p>The root need not be diagonal, and its projectors need not be Hermitian. Take the upper triangular unipotent matrix</p>
+<p>$$
+S=\begin{pmatrix}1&1&0&0\\0&1&1&0\\0&0&1&1\\0&0&0&1\end{pmatrix},
+\qquad
+S^{-1}=\begin{pmatrix}1&-1&1&-1\\0&1&-1&1\\0&0&1&-1\\0&0&0&1\end{pmatrix}.
+$$</p>
+<p>Then</p>
+<p>$$
+H=SH_0S^{-1}
+=\begin{pmatrix}
+1&-1+i&1-i&-1+i\\
+0&i&-1-i&1+i\\
+0&0&-1&1-i\\
+0&0&0&-i
+\end{pmatrix}.
+$$</p>
+<p>The matrix is upper triangular, so its eigenvalues are its diagonal entries $1,i,-1,-i$; it has simple spectrum. The four vectors are the columns of $S$,</p>
+<p>$$
+v_1=\begin{pmatrix}1\\0\\0\\0\end{pmatrix},\quad
+v_2=\begin{pmatrix}1\\1\\0\\0\end{pmatrix},\quad
+v_3=\begin{pmatrix}0\\1\\1\\0\end{pmatrix},\quad
+v_4=\begin{pmatrix}0\\0\\1\\1\end{pmatrix},
+$$</p>
+<p>and the dual functionals are the rows of $S^{-1}$,</p>
+<p>$$
+\ell_1=(1,-1,1,-1),\quad
+\ell_2=(0,1,-1,1),\quad
+\ell_3=(0,0,1,-1),\quad
+\ell_4=(0,0,0,1).
+$$</p>
+<p>The first projector is</p>
+<p>$$
+P_1=v_1\ell_1=
+\begin{pmatrix}
+1&-1&1&-1\\
+0&0&0&0\\
+0&0&0&0\\
+0&0&0&0
+\end{pmatrix}.
+$$</p>
+<p>It is idempotent, of rank one and trace one, and it is not Hermitian: $P_1^*\ne P_1$. The other projectors are the analogous outer products,</p>
+<p>$$
+P_2=\begin{pmatrix}0&1&-1&1\\0&1&-1&1\\0&0&0&0\\0&0&0&0\end{pmatrix},
+\quad
+P_3=\begin{pmatrix}0&0&0&0\\0&0&1&-1\\0&0&1&-1\\0&0&0&0\end{pmatrix},
+\quad
+P_4=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&0&1\\0&0&0&1\end{pmatrix},
+$$</p>
+<p>and their sum is $I$. The example shows that the construction depends on $H$ and not on a choice of orthonormal basis.</p>
+<h2 id="the-spectral-resolution-and-the-math204-grading">The Spectral Resolution and the $\mathbb{Z}/4$ Grading</h2>
+<h3 id="the-resolution">The Resolution</h3>
+<p><strong>Theorem.</strong> The root is the weighted sum of its projectors:</p>
+<p>$$
+H=\sum_{k=1}^{4}\zeta_kP_k=P_1+iP_2-P_3-iP_4,
+$$</p>
+<p>and for every integer $m\ge1$,</p>
+<p>$$
+H^m=\sum_{k=1}^{4}\zeta_k^mP_k .
+$$</p>
+<p>In particular,</p>
+<p>$$
+I=P_1+P_2+P_3+P_4,\qquad
+H^2=P_1-P_2+P_3-P_4,\qquad
+H^3=P_1-iP_2-P_3+iP_4 .
+$$</p>
+<p><strong>Proof.</strong> The first identity is the interpolation corollary applied to the polynomial $x$; the second is the same corollary applied to $x^m$. The four displayed cases are $m=0,1,2,3$.</p>
+<p><strong>Corollary.</strong> The four elements $I,H,H^2,H^3$ are a basis of $\mathbb{C}[H]$, and the four $P_k$ are the dual basis under the interpolation pairing. The matrix of the change of basis is the Vandermonde matrix of the fourth roots.</p>
+<h3 id="the-grading">The Grading</h3>
+<p><strong>Definition.</strong> Conjugation by $H$ is the automorphism</p>
+<p>$$
+\operatorname{Ad}_H:M_4(\mathbb{C})\longrightarrow M_4(\mathbb{C}),\qquad
+\operatorname{Ad}_H(X)=HXH^{-1}.
+$$</p>
+<p>Because $H^4=I$, the fourth power of $\operatorname{Ad}_H$ is the identity.</p>
+<p><strong>Proposition.</strong> For $X\in\mathcal{A}_{kl}=P_kM_4P_l$,</p>
+<p>$$
+\operatorname{Ad}_H(X)=\zeta_k\zeta_l^{-1}X=\zeta_{k-l}X .
+$$</p>
+<p>Hence $\operatorname{Ad}_H$ is diagonalizable with eigenvalues among the fourth roots of unity, and</p>
+<p>$$
+M_4(\mathbb{C})=\bigoplus_{r\in\mathbb{Z}/4\mathbb{Z}}\mathcal{M}^{(r)},\qquad
+\mathcal{M}^{(r)}=\bigoplus_{k-l\equiv r\ (\mathrm{mod}\ 4)}\mathcal{A}_{kl},
+$$</p>
+<p>with</p>
+<p>$$
+\mathcal{M}^{(r)}\mathcal{M}^{(s)}\subseteq\mathcal{M}^{(r+s)} .
+$$</p>
+<p><strong>Proof.</strong> On $\mathcal{A}_{kl}$, $HXH^{-1}=\zeta_kX\zeta_l^{-1}=\zeta_k\zeta_l^{-1}X$. The sum over the pairs $k-l\equiv r$ is direct because the corners $\mathcal{A}_{kl}$ are independent. If $X\in\mathcal{M}^{(r)}$ and $Y\in\mathcal{M}^{(s)}$, then $\operatorname{Ad}_H(XY)=\operatorname{Ad}_H(X)\operatorname{Ad}_H(Y)=\zeta^{r+s}XY$.</p>
+<p><strong>The graded pieces.</strong> The four pieces have equal dimension. The pairs $(k,l)$ with $k-l\equiv r$ are, for each $r$, the four pairs obtained by translating both indices:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$r$</th>
+<th>pairs $(k,l)$</th>
+<th>$\dim_\mathbb{C}\mathcal{M}^{(r)}$</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$(1,1),(2,2),(3,3),(4,4)$</td>
+<td>$4$</td>
+<td>the centraliser $\mathbb{C}[H]$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$(2,1),(3,2),(4,3),(1,4)$</td>
+<td>$4$</td>
+<td>the cyclic lower block</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$(3,1),(4,2),(1,3),(2,4)$</td>
+<td>$4$</td>
+<td>the chiral off-diagonal block</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$(4,1),(1,2),(2,3),(3,4)$</td>
+<td>$4$</td>
+<td>the cyclic upper block</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each row has four pairs, so each graded piece is four-dimensional. The even part</p>
+<p>$$
+\mathcal{M}^{(0)}\oplus\mathcal{M}^{(2)}
+$$</p>
+<p>is the fixed space of $\operatorname{Ad}_\Gamma$, where $\Gamma=H^2$, and the odd part</p>
+<p>$$
+\mathcal{M}^{(1)}\oplus\mathcal{M}^{(3)}
+$$</p>
+<p>is the $-1$ eigenspace of $\operatorname{Ad}_\Gamma$. The even part is the centraliser of $\Gamma$, of dimension $8$; the odd part is the mass block, of dimension $8$. The grading is coarser than the Peirce decomposition: the latter has sixteen lines, the former four pieces of dimension four.</p>
+<p><strong>Corollary.</strong> The centraliser of $H$ in $M_4(\mathbb{C})$ is $\mathbb{C}[H]$, of dimension $4$. It consists of the matrices that preserve each spectral line.</p>
+<p><strong>Proof.</strong> A matrix commuting with $H$ preserves each eigenspace of $H$, because the eigenvalues are distinct; such a matrix is diagonal in the frame, so it is a combination of the $P_k$, hence lies in $\mathbb{C}[H]$. Conversely every polynomial in $H$ commutes with $H$. The dimension is four.</p>
+<h2 id="the-chirality-involution">The Chirality Involution</h2>
+<p><strong>Definition.</strong> The <strong>chirality involution</strong> of the root is</p>
+<p>$$
+\Gamma=H^2 .
+$$</p>
+<p><strong>Proposition.</strong> $\Gamma$ is an involution, $\Gamma^2=I$, with eigenvalues $+1$ on $V_1\oplus V_3$ and $-1$ on $V_2\oplus V_4$. It has trace $0$, its $+1$ eigenspace and its $-1$ eigenspace both have dimension $2$, and</p>
+<p>$$
+\Gamma=P_1-P_2+P_3-P_4 .
+$$</p>
+<p><strong>Proof.</strong> $\Gamma^2=H^4=I$. On $V_k$, $\Gamma$ acts by $\zeta_k^2$, which is $+1$ for $k=1,3$ and $-1$ for $k=2,4$. The trace is $1-1+1-1=0$, and each eigenspace is the sum of two spectral lines, hence has dimension $2$. The displayed formula is the case $m=2$ of the spectral resolution.</p>
+<p>The two eigenspaces</p>
+<p>$$
+\mathbb{C}^2_+=\operatorname{im}P_+,\qquad P_+=\frac12(I+\Gamma)=P_1+P_3,
+$$</p>
+<p>$$
+\mathbb{C}^2_-=\operatorname{im}P_-,\qquad P_-=\frac12(I-\Gamma)=P_2+P_4,
+$$</p>
+<p>are the <strong>two chiralities</strong> of the root. Each is a plane. The involution $\Gamma$ is the $\mathbb{Z}/2$ quotient of the $\mathbb{Z}/4$ grading: on $\mathcal{M}^{(r)}$ it acts by $(-1)^r$ under $\operatorname{Ad}_\Gamma$. The two chiralities, the block decomposition and the mass block are <em>The Two Chiralities</em> and <em>The Rank-Two Split</em>.</p>
+<p><strong>The root and the chirality.</strong> The map $H\mapsto\Gamma=H^2$ forgets the choice of which line in each chirality carries $+1$ rather than $-1$, or $i$ rather than $-i$: on $\mathbb{C}^2_+$ the root restricts with eigenvalues $+1,-1$ on the two lines, and on $\mathbb{C}^2_-$ with eigenvalues $i,-i$. The fibre of the map has four points, the two orderings in each plane. The image is the conjugacy class of involutions with spectrum $(1,1,-1,-1)$, of complex dimension $8$; the fibre has dimension $4$; the root set has dimension $12$, as §<em>The Root Set</em> confirms.</p>
+<h2 id="the-root-of-math313-as-the-order-two-case">The Root of $+1$ as the Order-Two Case</h2>
+<p><strong>At $n=2$ the same construction is the biquaternion algebra $M_2(\mathbb{C})$.</strong> The roots of $x^2-1$ are $+1$ and $-1$, and the Lagrange projectors are</p>
+<p>$$
+P_+=\frac{I+H}{2},\qquad P_-=\frac{I-H}{2},\qquad H=P_+-P_- .
+$$</p>
+<p>These are the idempotents $\tilde\Pi_\pm=(e_t\pm\tilde\Xi)/2$ of <em>The Peirce Decomposition</em>, with $H=\tilde\Xi$ and $I=e_t$. The order-two root is the biquaternion root of $+1$; it is the case $n=2$ of the order-four construction, not a separate principle.</p>
+<p><strong>The old "second root" is the gauge.</strong> In the biquaternion article the frame was presented as a root of $+1$ together with a second root anticommuting with it. The second element does not produce new idempotents: the two idempotents are already produced by the first root. What it supplies is a vector in each mixed Peirce line, equivalently the normalisation of the two nilpotents. That is the gauge parameter $\lambda$ of <em>The Frame, the Simple Nilpotents and the Gauge</em>, and at $n=2$ it is one complex number. There is no primitive root pair. For $n=4$ the gauge has three parameters, one per simple nilpotent, and no single second root plays the role of $\lambda$.</p>
+<p><strong>The count in the two cases.</strong> For $n=2$ the root set is $PGL_2/T$, of complex dimension $2$, and the gauge is one complex dimension; the frame modulo scale has dimension $3$, which is six real dimensions. For $n=4$ the root set is $PGL_4/T$, of complex dimension $12$, and the gauge is three complex dimensions; the frame modulo scale has dimension $15$.</p>
+<h2 id="the-root-set">The Root Set</h2>
+<p><strong>Definition.</strong> Let</p>
+<p>$$
+\mathcal{R}_4=\bigl\{H\in M_4(\mathbb{C}):H^4=I,\ \text{the eigenvalues of }H\text{ are distinct}\bigr\}.
+$$</p>
+<p><strong>Theorem.</strong> The set $\mathcal{R}_4$ is a single orbit of $PGL_4(\mathbb{C})$ under conjugation. It is isomorphic to $PGL_4(\mathbb{C})/T$, where $T$ is the diagonal torus, and</p>
+<p>$$
+\dim_\mathbb{C}\mathcal{R}_4=15-3=12,\qquad \dim_\mathbb{R}\mathcal{R}_4=24 .
+$$</p>
+<p><strong>Proof.</strong> Every $H\in\mathcal{R}_4$ is diagonalizable with the four roots as eigenvalues, so it is conjugate to $H_0=\operatorname{diag}(1,i,-1,-i)$; the action is transitive. The stabiliser of $H_0$ in $GL_4(\mathbb{C})$ is the set of invertible matrices commuting with $H_0$. A matrix commuting with a matrix with distinct eigenvalues preserves each eigenspace, hence is diagonal in the standard basis. The stabiliser is the diagonal torus $\tilde T\cong(\mathbb{C}^\times)^4$, and in $PGL_4$ its image is $T=\tilde T/\mathbb{C}^\times I$, of dimension $3$. The orbit has dimension $\dim PGL_4-\dim T=15-3=12$. The real dimension is twice the complex dimension.</p>
+<p><strong>Corollary.</strong> The root set is connected and of complex dimension $12$. It is not the flag variety: the flag variety $GL_4/B$ has complex dimension $6$.</p>
+<h3 id="the-weyl-group-and-the-flag">The Weyl Group and the Flag</h3>
+<p>The normaliser of $T$ in $PGL_4$ is $T\rtimes S_4$, so the Weyl group $S_4$ acts on $\mathcal{R}_4$ by permuting the four eigenlines. The action is free, because a root has four distinct eigenvalues and a permutation fixing the root fixes each line. The quotient $\mathcal{R}_4/S_4$ is the space of unordered spectral decompositions into four lines, of the same dimension $12$, and the quotient map is a covering of degree</p>
+<p>$$
+4!=24 .
+$$</p>
+<p>The <strong>full flag variety</strong> $GL_4/B$ is the space of chains</p>
+<p>$$
+0\subset F_1\subset F_2\subset F_3\subset\mathbb{C}^4,\qquad \dim F_k=k,
+$$</p>
+<p>of complex dimension $6$. The map $\mathcal{R}_4\to GL_4/B$ that records the flag</p>
+<p>$$
+F_k=V_1\oplus\cdots\oplus V_k
+$$</p>
+<p>is a fibre bundle with fibre $B/T\cong U$, the unipotent radical, of dimension $6$. It is not a finite cover. The degree $4!$ is the degree over the unordered decomposition, and the six dimensions of the unipotent fibre separate that quotient from the flag variety. The stable count is</p>
+<p>$$
+\underbrace{12}_{\text{root}}+\underbrace{3}_{\text{gauge}}=\underbrace{15}_{\text{frame}/\mathbb{C}^\times},
+$$</p>
+<p>the decomposition of <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A root $H$ of order four with simple spectrum is diagonalizable with the four roots of unity $1,i,-1,-i$ as eigenvalues, and the Lagrange polynomials in $H$ produce four primitive orthogonal idempotents $P_k$, complete and summing to $I$, with</p>
+<p>$$
+H=\sum_{k=1}^{4}\zeta_kP_k,\qquad \zeta_k=i^{k-1}.
+$$</p>
+<p>The projectors are the spectral projectors onto the four spectral lines; they are polynomials in $H$ of degree at most three, with the explicit Fourier form</p>
+<p>$$
+P_k=\frac14\sum_{m=0}^{3}\zeta_k^{-m}H^m .
+$$</p>
+<p>Conjugation by $H$ grades the algebra by $\mathbb{Z}/4$, with four graded pieces of dimension four; the even part is the centraliser of $\Gamma=H^2$, of dimension eight, and the odd part is the mass block. The involution $\Gamma=H^2$ is the chirality, with the $2+2$ split of the carrier. The root set is $PGL_4/T$, of complex dimension $12$; the gauge contributes three, and the frame modulo scale has dimension $15$. At $n=2$ the construction is the biquaternion root of $+1$, and the old second root is a point of the gauge, not a second primitive.</p>
+<p>$$
+\boxed{\ \text{One root } H \text{ of order four with simple spectrum produces all four idempotents, and } H=\sum_k\zeta_kP_k. \ }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_4(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roots of $x^4-1$</td>
+<td>$1,i,-1,-i$</td>
+</tr>
+<tr>
+<td>Idempotents</td>
+<td>$P_1,P_2,P_3,P_4$, rank $1$, trace $1$</td>
+</tr>
+<tr>
+<td>Spectral resolution</td>
+<td>$H=P_1+iP_2-P_3-iP_4$</td>
+</tr>
+<tr>
+<td>Chirality</td>
+<td>$\Gamma=H^2=P_1-P_2+P_3-P_4$</td>
+</tr>
+<tr>
+<td>Graded pieces</td>
+<td>$\dim_\mathbb{C}\mathcal{M}^{(r)}=4$, $r=0,1,2,3$</td>
+</tr>
+<tr>
+<td>Root set</td>
+<td>$PGL_4/T$, $\dim_\mathbb{C}=12$</td>
+</tr>
+<tr>
+<td>Gauge</td>
+<td>$(\mathbb{C}^\times)^3$, $\dim_\mathbb{C}=3$</td>
+</tr>
+<tr>
+<td>Frame modulo scale</td>
+<td>$PGL_4$, $\dim_\mathbb{C}=15$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\zeta_k=i^{k-1}$</td>
+<td>the four fourth roots of unity, $k=1,2,3,4$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>a root of order four with simple spectrum</td>
+</tr>
+<tr>
+<td>$H_0=\operatorname{diag}(1,i,-1,-i)$</td>
+<td>the standard root</td>
+</tr>
+<tr>
+<td>$V_k=\ker(H-\zeta_kI)$</td>
+<td>the spectral line of $\zeta_k$</td>
+</tr>
+<tr>
+<td>$P_k$</td>
+<td>the Lagrange projector of $\zeta_k$, $\operatorname{rank}1$, $\operatorname{tr}1$</td>
+</tr>
+<tr>
+<td>$\Gamma=H^2$</td>
+<td>the chirality involution</td>
+</tr>
+<tr>
+<td>$\mathcal{A}_{kl}=P_kM_4P_l$</td>
+<td>the Peirce corner, a line</td>
+</tr>
+<tr>
+<td>$\mathcal{M}^{(r)}$</td>
+<td>the graded piece of degree $r\in\mathbb{Z}/4$</td>
+</tr>
+<tr>
+<td>$\mathcal{R}_4$</td>
+<td>the set of roots of order four with simple spectrum</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>the diagonal torus in $PGL_4$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>a matrix diagonalising $H$, $H=SH_0S^{-1}$</td>
+</tr>
+<tr>
+<td>$v_k,\ell_k$</td>
+<td>the frame vectors and the dual functionals, $P_k=v_k\ell_k$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the spectral decomposition, the Lagrange interpolation formula and the minimal polynomial.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for idempotents, orthogonal families and Peirce decompositions.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the ambient algebra and its groups.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-mnc.html">Roots of Unity and the Lagrange Idempotents</a>, for the general construction at order $n$.</li>
+<li><a href="the-peirce-decomposition-and-the-corner-recursion-mnc.html">The Peirce Decomposition and the Corner Recursion</a>, for the lines that the idempotents produce.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-mnc.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the vectors inside the lines and the gauge.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the biquaternion case $n=2$ and the parameter $\lambda$.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the algebra of this category.</li>
+<li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition</a>, for the sixteen corners of the frame.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the frame of $M_4(\mathbb{C})$ and its three gauge parameters.</li>
+<li><a href="the-two-chiralities-of-m4c.html">The Two Chiralities</a>, for the involution $\Gamma$ and the $2+2$ split.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

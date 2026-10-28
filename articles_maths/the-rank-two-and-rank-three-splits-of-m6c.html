@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rank-Two and Rank-Three Splits — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-rank-two-and-rank-three-splits"><strong>The Rank-Two and Rank-Three Splits</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A single idempotent of rank two cuts $M_6(\mathbb{C})$ into corners of dimensions</p>
+<p>$$
+4+8+8+16=36,
+$$</p>
+<p>and one of rank three cuts it into</p>
+<p>$$
+9+9+9+9=36 .
+$$</p>
+<p>The corner algebras are $P M_6P\cong M_2$, $Q M_6Q\cong M_4$ in the first case and $P M_6P\cong M_3$, $Q M_6Q\cong M_3$ in the second. The mixed corners are the mass blocks: of dimension $8=2\cdot4$ in the rank-two split, and of dimension $9=3\cdot3$ in the rank-three split.</p>
+<p>This article states the two splits, proves the corner isomorphisms, and writes the two-sided Peirce tables. It is the detailed companion of <em>The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners</em>, which treats the gauge decomposition and the block embeddings; the gauge is not repeated here.</p>
+<p>It assumes the coarse Peirce decomposition of <em>The Peirce Decomposition</em> and the algebra $M_6(\mathbb{C})$ of <em>The Matrix Algebra $M_6(\mathbb{C})$</em>. It uses no form and no topology. The mass block's polar decomposition is <em>The Mass Block and the Chiral Polar Decomposition</em>; the chiral split is <em>The Two Chiralities</em>.</p>
+<h2 id="the-rank-two-projection">The Rank-Two Projection</h2>
+<h3 id="the-corners">The Corners</h3>
+<p><strong>Theorem.</strong> Let $E\in M_6(\mathbb{C})$ be an idempotent of rank two and $F=I_6-E$. Then</p>
+<p>$$
+M_6(\mathbb{C})=EME\oplus EMF\oplus FME\oplus FMF,
+$$</p>
+<p>with</p>
+<p>$$
+\dim EME=4,\qquad
+\dim EMF=8,\qquad
+\dim FME=8,\qquad
+\dim FMF=16 .
+$$</p>
+<p><strong>Proof.</strong> In coordinates with $E=\operatorname{diag}(I_2,0_4)$ and $F=\operatorname{diag}(0_2,I_4)$, the four corners are the blocks of sizes $2\times2$, $2\times4$, $4\times2$ and $4\times4$. Their dimensions are $4,8,8,16$.</p>
+<h3 id="the-corner-isomorphisms">The Corner Isomorphisms</h3>
+<p><strong>Theorem.</strong> With $E$ of rank two and $F=I_6-E$,</p>
+<p>$$
+EME\cong M_2(\mathbb{C}),\qquad
+FMF\cong M_4(\mathbb{C}),
+$$</p>
+<p>and</p>
+<p>$$
+EMF\cong\operatorname{Hom}(\operatorname{im}F,\operatorname{im}E)\cong\mathbb{C}^{2\times4},
+\qquad
+FME\cong\operatorname{Hom}(\operatorname{im}E,\operatorname{im}F)\cong\mathbb{C}^{4\times2}.
+$$</p>
+<p><strong>Proof.</strong> The corner $EME$ acts faithfully on the image of $E$, a two-dimensional space, and every endomorphism of that space is of the form $EAE$; so $EME\cong\operatorname{End}(\operatorname{im}E)\cong M_2$. The same argument with $F$ gives $M_4$. An element $EAF$ is a linear map from $\operatorname{im}F$ to $\operatorname{im}E$; the map $EAF\mapsto(EAF)|_{\operatorname{im}F}$ is an isomorphism onto $\operatorname{Hom}(\operatorname{im}F,\operatorname{im}E)$, of dimension $2\cdot4=8$. The corner $FME$ is the same with the roles exchanged.</p>
+<p><strong>Corollary (the block form).</strong> Every element is</p>
+<p>$$
+A=\begin{pmatrix}A_2&M\\N&B_4\end{pmatrix},
+\qquad
+A_2\in M_2,\quad M\in\mathbb{C}^{2\times4},\quad N\in\mathbb{C}^{4\times2},\quad B_4\in M_4,
+$$</p>
+<p>with $M$ the mass block of dimension $8$ and $N$ its partner.</p>
+<p><strong>Remark (the split is unique up to conjugacy).</strong> All rank-two idempotents of $M_6$ are conjugate under $GL_6$: two idempotents of the same rank have images of the same dimension, and a linear isomorphism carrying one image to the other conjugates the idempotents. So the rank-two split has one isomorphism type, and the block form above is a normal form. The same holds for rank three.</p>
+<p><strong>Proof.</strong> If $E,F$ have rank two, choose an isomorphism $g$ with $g(\operatorname{im}E)=\operatorname{im}F$. Then $gEg^{-1}$ has image $\operatorname{im}F$ and is the identity there, hence equals $F$; so $F=gEg^{-1}$.</p>
+<h3 id="the-two-sided-peirce-table">The Two-Sided Peirce Table</h3>
+<p><strong>Theorem.</strong> The corners multiply according to</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$EME$</th>
+<th>$EMF$</th>
+<th>$FME$</th>
+<th>$FMF$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$EME$</td>
+<td>$EME$</td>
+<td>$EMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$EMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$EME$</td>
+<td>$EMF$</td>
+</tr>
+<tr>
+<td>$FME$</td>
+<td>$FME$</td>
+<td>$FMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$FMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$FME$</td>
+<td>$FMF$</td>
+</tr>
+</tbody>
+</table></div>
+<p>with dimensions</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$4$</th>
+<th>$8$</th>
+<th>$8$</th>
+<th>$16$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$4$</td>
+<td>$4$</td>
+<td>$8$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$4$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$8$</td>
+<td>$16$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$16$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$8$</td>
+<td>$16$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The general Peirce rule is $A_{ij}A_{kl}\subseteq\delta_{jk}A_{il}$ with $i,j,k,l\in\{E,F\}$. The nonvanishing products are the eight composable triples $E\to E\to E$, $E\to E\to F$, $E\to F\to E$, $E\to F\to F$, $F\to E\to E$, $F\to E\to F$, $F\to F\to E$ and $F\to F\to F$, which give the eight nonzero entries of the table. The dimensions are those of the target corners, not of the products: the table records containment, and the product of two corners can be a proper subset.</p>
+<p><strong>Remark (the products are not all surjective).</strong> The corner product $FME\cdot EMF$ is contained in $FMF$ but is not all of $FMF$: it is the set of products $NM$ of a $4\times2$ matrix with a $2\times4$ matrix, which is exactly the set of $4\times4$ matrices of rank at most two, not the whole $4\times4$ space. The table is a table of containments; the equality of a product with its target holds only for some pairs. For instance $EMF\cdot FME=EME$, because every $2\times2$ matrix is $MN$ with $M=[A,0]$ and $N=[I_2;0]$.</p>
+<p><strong>Corollary (the two-sided structure).</strong> The corner $EME$ acts on $EMF$ on the left and on $FME$ on the right; $FMF$ acts on $EMF$ on the right and on $FME$ on the left. The table above is the two-sided multiplication table of the quartet.</p>
+<h2 id="the-rank-three-projection">The Rank-Three Projection</h2>
+<h3 id="the-corners_1">The Corners</h3>
+<p><strong>Theorem.</strong> Let $E\in M_6(\mathbb{C})$ be an idempotent of rank three and $F=I_6-E$. Then</p>
+<p>$$
+M_6(\mathbb{C})=EME\oplus EMF\oplus FME\oplus FMF,
+$$</p>
+<p>with</p>
+<p>$$
+\dim EME=\dim EMF=\dim FME=\dim FMF=9,
+$$</p>
+<p>and</p>
+<p>$$
+9+9+9+9=36 .
+$$</p>
+<p><strong>Proof.</strong> In coordinates with $E=\operatorname{diag}(I_3,0_3)$ and $F=\operatorname{diag}(0_3,I_3)$, the four corners are the four $3\times3$ blocks.</p>
+<h3 id="the-corner-isomorphisms_1">The Corner Isomorphisms</h3>
+<p><strong>Theorem.</strong> With $E$ of rank three and $F=I_6-E$,</p>
+<p>$$
+EME\cong M_3(\mathbb{C}),\qquad
+FMF\cong M_3(\mathbb{C}),
+\qquad
+EMF\cong FME\cong M_3(\mathbb{C})
+$$</p>
+<p>as vector spaces, and</p>
+<p>$$
+EMF\cong\operatorname{Hom}(\operatorname{im}F,\operatorname{im}E),
+\qquad
+FME\cong\operatorname{Hom}(\operatorname{im}E,\operatorname{im}F).
+$$</p>
+<p><strong>Proof.</strong> The same argument as for rank two, with $2$ replaced by $3$. The mixed corners are $3\times3$ matrix spaces, of dimension $9$.</p>
+<p><strong>Corollary (the block form).</strong> Every element is</p>
+<p>$$
+A=\begin{pmatrix}A_+&M\\N&A_-\end{pmatrix},
+\qquad
+A_+,A_-,M,N\in M_3(\mathbb{C}),
+$$</p>
+<p>with $M$ the mass block of dimension $9$ and $N$ its partner.</p>
+<p><strong>Remark (the square mass block).</strong> The rank-three split is the only one of the three coarse splits in which the mass block is square and has the same size as the diagonal blocks. This is why the algebra is a tensor product in this case, $M_6\cong M_3\otimes M_2$, and not in the rank-two case.</p>
+<h3 id="the-two-sided-peirce-table_1">The Two-Sided Peirce Table</h3>
+<p><strong>Theorem.</strong> The corners multiply according to</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$EME$</th>
+<th>$EMF$</th>
+<th>$FME$</th>
+<th>$FMF$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$EME$</td>
+<td>$EME$</td>
+<td>$EMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$EMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$EME$</td>
+<td>$EMF$</td>
+</tr>
+<tr>
+<td>$FME$</td>
+<td>$FME$</td>
+<td>$FMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$FMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$FME$</td>
+<td>$FMF$</td>
+</tr>
+</tbody>
+</table></div>
+<p>with dimensions</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$9$</th>
+<th>$9$</th>
+<th>$9$</th>
+<th>$9$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$9$</td>
+<td>$9$</td>
+<td>$9$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$9$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$9$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$9$</td>
+<td>$9$</td>
+<td>$9$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$9$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$9$</td>
+<td>$9$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The same eight composable pairs as in the rank-two table; every corner has dimension nine.</p>
+<p><strong>Remark (the products are surjective here).</strong> In the rank-three split the products $EMF\cdot FME=EME$ and $FME\cdot EMF=FMF$ are surjective, because every $3\times3$ matrix is a product of a $3\times3$ and a $3\times3$ (take the first factor to be the identity). This is the algebraic difference between the two splits: the rank-three mass block is a square matrix that may be invertible, while the rank-two mass block is rectangular and has no inverse.</p>
+<h2 id="the-two-mass-blocks">The Two Mass Blocks</h2>
+<h3 id="dimensions-and-ranks">Dimensions and Ranks</h3>
+<p><strong>Theorem.</strong> The mass block of the rank-$p$ split is the mixed corner $EMF$, of dimension</p>
+<p>$$
+p(6-p).
+$$</p>
+<p>For $p=1,2,3$ the dimensions are</p>
+<p>$$
+5,\qquad 8,\qquad 9 .
+$$</p>
+<p>The generic rank of the mass block is $\min(p,6-p)$, so the numbers of mass channels are</p>
+<p>$$
+1,\qquad 2,\qquad 3 .
+$$</p>
+<p><strong>Proof.</strong> The mass block is a $p\times(6-p)$ matrix; its dimension is the product, and its rank is at most the smaller of the two sizes, attained on the open dense set of full-rank matrices.</p>
+<p><strong>Corollary (the two mass blocks of the title).</strong> The rank-two split has the mass block of dimension $8$, a $2\times4$ matrix with two mass channels. The rank-three split has the mass block of dimension $9$, a $3\times3$ matrix with three mass channels.</p>
+<h3 id="the-mass-block-as-a-bimodule">The Mass Block as a Bimodule</h3>
+<p><strong>Theorem.</strong> The mixed corner $EMF$ is a left module over $EME\cong M_p$ and a right module over $FMF\cong M_{6-p}$, and</p>
+<p>$$
+EMF\cong\mathbb{C}^p\otimes(\mathbb{C}^{6-p})^*
+$$</p>
+<p>as a bimodule. The corner $FME$ is the dual bimodule.</p>
+<p><strong>Proof.</strong> The left action is $A\cdot M=A_{11}M$ and the right action is $M\cdot B=MB_{22}$; the map $u\otimes\varphi\mapsto u\varphi$ intertwines them. The dimensions are $p(6-p)$ on both sides.</p>
+<p><strong>Corollary (the mass-squared operator).</strong> The product $MN\in EME$ is the <strong>mass-squared operator</strong> of the mass block, and $NM\in FMF$ is its partner. For the rank-two split it is a $2\times2$ matrix; for the rank-three split it is a $3\times3$ matrix.</p>
+<p><strong>Proof.</strong> $M\in\mathbb{C}^{p\times(6-p)}$ and $N\in\mathbb{C}^{(6-p)\times p}$, so $MN$ is $p\times p$ and $NM$ is $(6-p)\times(6-p)$.</p>
+<p><strong>Proposition (the singular values).</strong> The number of nonzero singular values of $M$ is its rank, at most $\min(p,6-p)$. When the partner is the Hermitian adjoint, $N=M^*$, the nonzero eigenvalues of $MN=MM^*$ are the squares of the nonzero singular values of $M$, and the same holds for $NM=M^*M$.</p>
+<p><strong>Proof.</strong> If $M=U\Sigma V^*$ is the singular value decomposition, then $MM^*=U\Sigma^2U^*$ and $M^*M=V\Sigma^2V^*$; the eigenvalues are the squares of the singular values. For a general independent partner $N$, the spectrum of $MN$ is not determined by the singular values of $M$.</p>
+<h3 id="the-massless-locus">The Massless Locus</h3>
+<p><strong>Theorem.</strong> The mass block vanishes exactly on the diagonal corner algebra</p>
+<p>$$
+\left\{\begin{pmatrix}A_p&0\\0&A_{6-p}\end{pmatrix}\right\}
+\cong M_p\oplus M_{6-p},
+$$</p>
+<p>of dimension $p^2+(6-p)^2$. For $p=2$ this is $M_2\oplus M_4$, of dimension $20$; for $p=3$ it is $M_3\oplus M_3$, of dimension $18$.</p>
+<p><strong>Proof.</strong> The mass block is the $EMF$ corner; it vanishes if and only if the element has no $EMF$ component, that is if and only if it is block diagonal. The dimension is $p^2+(6-p)^2$.</p>
+<p><strong>Corollary (the mass adds the mixed dimensions).</strong> The full algebra has dimension</p>
+<p>$$
+p^2+(6-p)^2+2p(6-p)=36,
+$$</p>
+<p>so the two mixed corners add $2p(6-p)$ dimensions: $16$ at $p=2$ and $18$ at $p=3$.</p>
+<p><strong>Proof.</strong> $2\cdot2\cdot4=16$ and $2\cdot3\cdot3=18$.</p>
+<h2 id="the-two-sided-peirce-tables-compared">The Two-Sided Peirce Tables Compared</h2>
+<h3 id="the-general-table">The General Table</h3>
+<p>For any rank $p$, the two-sided Peirce table is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$EME$</th>
+<th>$EMF$</th>
+<th>$FME$</th>
+<th>$FMF$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$EME$</td>
+<td>$EME$</td>
+<td>$EMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$EMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$EME$</td>
+<td>$EMF$</td>
+</tr>
+<tr>
+<td>$FME$</td>
+<td>$FME$</td>
+<td>$FMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$FMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$FME$</td>
+<td>$FMF$</td>
+</tr>
+</tbody>
+</table></div>
+<p>with the dimensions</p>
+<p>$$
+p^2,\quad p(6-p),\quad p(6-p),\quad (6-p)^2
+$$</p>
+<p>on the diagonal and the corresponding target dimensions in the nonzero entries.</p>
+<p><strong>Proof.</strong> The table depends only on the composability of the arrows $E\to E$, $E\to F$, $F\to E$, $F\to F$; the dimension of each entry is the dimension of the target corner.</p>
+<h3 id="the-three-tables">The Three Tables</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$p$</th>
+<th>$EME$</th>
+<th>$EMF$</th>
+<th>$FME$</th>
+<th>$FMF$</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+<td>$5$</td>
+<td>$5$</td>
+<td>$25$</td>
+<td>$36$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$4$</td>
+<td>$8$</td>
+<td>$8$</td>
+<td>$16$</td>
+<td>$36$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$9$</td>
+<td>$9$</td>
+<td>$9$</td>
+<td>$9$</td>
+<td>$36$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> Substitute $p=1,2,3$ in $p^2,p(6-p),p(6-p),(6-p)^2$.</p>
+<h3 id="the-refinement-by-the-fine-peirce-lines">The Refinement by the Fine Peirce Lines</h3>
+<p><strong>Theorem.</strong> For an idempotent $E=\sum_{k\in I}P_k$ that is a sum of $p$ Lagrange projectors (equivalently, after conjugating $E$ into the frame), the coarse corners of the rank-$p$ split are unions of the fine Peirce lines $A_{kl}=P_kM_6P_l$:</p>
+<p>$$
+EME=\bigoplus_{k,l\in I}A_{kl},
+\qquad
+EMF=\bigoplus_{k\in I,\,l\notin I}A_{kl},
+\qquad
+FME=\bigoplus_{k\notin I,\,l\in I}A_{kl},
+\qquad
+FMF=\bigoplus_{k,l\notin I}A_{kl},
+$$</p>
+<p>where $I$ is a set of $p$ indices (the lines in the image of $E$) and $E=\sum_{k\in I}P_k$.</p>
+<p><strong>Proof.</strong> $E$ is the sum of the $p$ Lagrange projectors indexed by $I$, and $F$ is the sum of the other $6-p$. The corner $EME$ is the sum of the lines $P_kM P_l$ with $k,l\in I$, and similarly for the other three.</p>
+<p><strong>Corollary.</strong> The coarse splits have</p>
+<p>$$
+p^2,\quad p(6-p),\quad p(6-p),\quad (6-p)^2
+$$</p>
+<p>fine lines respectively. At $p=2$ this is $4,8,8,16$; at $p=3$ it is $9,9,9,9$.</p>
+<p><strong>Proof.</strong> There are $p^2$ ordered pairs $(k,l)$ with both indices in $I$, $p(6-p)$ with the first in $I$ and the second outside, and so on.</p>
+<p><strong>Remark (coarse and fine).</strong> The rank-three split by the special idempotent $\Pi_+=P_1+P_3+P_5$ is the chiral split of <em>The Two Chiralities</em>: its corners are the $3\times3$ chiral blocks and the mass block of dimension $9$. A general rank-three idempotent gives a conjugate split, with the same corner dimensions; the chiral split is the representative adapted to the root. <strong>The corner dimensions see only the rank; the root sees which lines are grouped.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The rank-two idempotent splits the algebra into corners of dimensions</p>
+<p>$$
+4+8+8+16=36,
+\qquad
+EME\cong M_2,\quad FMF\cong M_4,
+$$</p>
+<p>with the mass block $EMF\cong\mathbb{C}^{2\times4}$ of dimension $8$ and two mass channels. The rank-three idempotent splits it into</p>
+<p>$$
+9+9+9+9=36,
+\qquad
+EME\cong M_3,\quad FMF\cong M_3,
+$$</p>
+<p>with the square mass block $EMF\cong M_3$ of dimension $9$ and three mass channels.</p>
+<p>$$
+\boxed{\ \text{rank }2:\ 4+8+8+16,\quad \text{rank }3:\ 9+9+9+9 .\ }
+$$</p>
+<p>The two-sided Peirce table is the same in both cases,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$EME$</th>
+<th>$EMF$</th>
+<th>$FME$</th>
+<th>$FMF$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$EME$</td>
+<td>$EME$</td>
+<td>$EMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$EMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$EME$</td>
+<td>$EMF$</td>
+</tr>
+<tr>
+<td>$FME$</td>
+<td>$FME$</td>
+<td>$FMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$FMF$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$FME$</td>
+<td>$FMF$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and the rank-three products are surjective where the rank-two products are not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Split</th>
+<th>$EME$</th>
+<th>$EMF$</th>
+<th>$FME$</th>
+<th>$FMF$</th>
+<th>Mass block</th>
+<th>Channels</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p=1$</td>
+<td>$1$</td>
+<td>$5$</td>
+<td>$5$</td>
+<td>$25$</td>
+<td>$1\times5$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$p=2$</td>
+<td>$4$</td>
+<td>$8$</td>
+<td>$8$</td>
+<td>$16$</td>
+<td>$2\times4$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$p=3$</td>
+<td>$9$</td>
+<td>$9$</td>
+<td>$9$</td>
+<td>$9$</td>
+<td>$3\times3$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E,F=I_6-E$</td>
+<td>idempotents of ranks $p$ and $6-p$</td>
+</tr>
+<tr>
+<td>$EME,EMF,FME,FMF$</td>
+<td>the four corners</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>the mass block $EMF$, of dimension $p(6-p)$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the partner $FME$</td>
+</tr>
+<tr>
+<td>$MN$</td>
+<td>the mass-squared operator in $EME$</td>
+</tr>
+<tr>
+<td>$I$</td>
+<td>the set of $p$ indices in the image of $E$</td>
+</tr>
+<tr>
+<td>$A_{kl}$</td>
+<td>the fine Peirce lines refining the corners</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>, for the general corner multiplication and the rank-one split.</li>
+<li><a href="the-m3-m3-and-m2-m4-corners-of-m6c.html">The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners</a>, for the gauge decomposition and the block embeddings.</li>
+<li><a href="the-two-chiralities-of-m6c.html">The Two Chiralities</a>, for the rank-three split by $\Pi_+$.</li>
+<li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html">The Mass Block and the Chiral Polar Decomposition</a>, for the polar decomposition of the mass block.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals</a>, for the corner modules.</li>
+<li><a href="idempotents-and-projections.html">Idempotents and Projections</a>, for the conjugacy of idempotents of a fixed rank.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the homogeneous space of the rank-$p$ idempotents.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

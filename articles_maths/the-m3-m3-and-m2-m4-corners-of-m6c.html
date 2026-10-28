@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-and-math1-corners"><strong>The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A rank-$p$ idempotent $E$ cuts $M_6(\mathbb{C})$ into four corners. The diagonal corners are the matrix algebras $M_p$ and $M_{6-p}$, and their direct sum $M_p\oplus M_{6-p}$ is a subalgebra of $M_6$. Three values of $p$ give the three coarse splits of the algebra:</p>
+<p>$$
+\begin{array}{c|c|c}
+p & \text{corners} & \text{diagonal algebra}\\ \hline
+1 & 1+5+5+25 & \mathbb{C}\oplus M_5\\
+2 & 4+8+8+16 & M_2\oplus M_4\\
+3 & 9+9+9+9 & M_3\oplus M_3
+\end{array}
+$$</p>
+<p>The case $p=3$ is the tensor-product recursion $M_6\cong M_3\otimes M_2$, with diagonal corner $M_3\oplus M_3=M_3\otimes\mathbb{C}^2$. The case $p=2$ is the Levi recursion $M_2\oplus M_4$, the diagonal part of the parabolic preserving a $2$-plane. Both live in the same algebra, and both carry a mass block: a square $3\times3$ block in the first case, a rectangular $2\times4$ block in the second.</p>
+<p>The gauge of either corner is five-dimensional, split as</p>
+<p>$$
+\underbrace{2+2+1}_{p=3}=\underbrace{3+1+1}_{p=2}=5:
+$$</p>
+<p>the traceless torus of the first block, the traceless torus of the second block, and one relative scale.</p>
+<p>The article assumes the coarse Peirce decomposition of <em>The Peirce Decomposition</em> and the gauge of <em>The Frame, the Simple Nilpotents and the Gauge</em>. It uses no form and no topology. The mass block is developed in <em>The Mass Block and the Chiral Polar Decomposition</em>; the full flag and the parabolic are <em>The Adjoint Action, the Orbits and the Flag Variety</em>.</p>
+<h2 id="the-three-coarse-splits">The Three Coarse Splits</h2>
+<h3 id="the-corner-dimensions">The Corner Dimensions</h3>
+<p><strong>Theorem.</strong> Let $E\in M_6(\mathbb{C})$ be an idempotent of rank $p$, and $F=I_6-E$ its complement. Then</p>
+<p>$$
+M_6(\mathbb{C})=EME\oplus EMF\oplus FME\oplus FMF,
+$$</p>
+<p>with</p>
+<p>$$
+\dim EME=p^2,\quad
+\dim EMF=p(6-p),\quad
+\dim FME=(6-p)p,\quad
+\dim FMF=(6-p)^2 .
+$$</p>
+<p><strong>Proof.</strong> Choose coordinates in which $E=\operatorname{diag}(I_p,0)$ and $F=\operatorname{diag}(0,I_{6-p})$. The four corners are the four blocks of the block matrix, of sizes $p\times p$, $p\times(6-p)$, $(6-p)\times p$ and $(6-p)\times(6-p)$.</p>
+<p><strong>Corollary.</strong> The three ranks give</p>
+<p>$$
+p=1:\ 1+5+5+25=36,\qquad
+p=2:\ 4+8+8+16=36,\qquad
+p=3:\ 9+9+9+9=36 .
+$$</p>
+<p><strong>Proof.</strong> Substitute $p=1,2,3$ in the formula.</p>
+<h3 id="the-diagonal-corner-algebra">The Diagonal Corner Algebra</h3>
+<p><strong>Theorem.</strong> The diagonal part</p>
+<p>$$
+D_E=EME\oplus FMF
+$$</p>
+<p>is a subalgebra of $M_6(\mathbb{C})$, isomorphic to $M_p(\mathbb{C})\oplus M_{6-p}(\mathbb{C})$, of dimension</p>
+<p>$$
+p^2+(6-p)^2 .
+$$</p>
+<p><strong>Proof.</strong> A product of two block-diagonal matrices is block diagonal, and the blocks multiply separately. The corner $EME$ is the full endomorphism algebra of the image of $E$, a $p$-dimensional space, hence is $M_p$; the corner $FMF$ is the endomorphism algebra of the image of $F$, of dimension $6-p$, hence is $M_{6-p}$.</p>
+<p><strong>Remark (the whole algebra is not the direct sum).</strong> The four corners are a direct sum of vector spaces, but only the diagonal part is a subalgebra: the mixed corners $EMF$ and $FME$ are not closed under multiplication. The algebra $M_6$ is an extension of the diagonal algebra by the mixed blocks, not a direct product.</p>
+<h3 id="the-block-matrices">The Block Matrices</h3>
+<p>In the coordinates of the theorem, an element is</p>
+<p>$$
+A=\begin{pmatrix}A_{11}&M\\N&A_{22}\end{pmatrix},
+\qquad
+A_{11}\in M_p,\quad M\in\mathbb{C}^{p\times(6-p)},\quad N\in\mathbb{C}^{(6-p)\times p},\quad A_{22}\in M_{6-p},
+$$</p>
+<p>and the product is</p>
+<p>$$
+\begin{pmatrix}A_{11}&M\\N&A_{22}\end{pmatrix}
+\begin{pmatrix}A_{11}'&M'\\N'&A_{22}'\end{pmatrix}
+=
+\begin{pmatrix}
+A_{11}A_{11}'+MN' & A_{11}M'+MA_{22}'\\
+NA_{11}'+A_{22}N' & NM'+A_{22}A_{22}'
+\end{pmatrix}.
+$$</p>
+<p><strong>Definition.</strong> The off-diagonal block $M$ is the <strong>mass block</strong> of the split, and $N$ is its partner. The block $M$ maps the complement into the corner, and $N$ maps the corner into the complement.</p>
+<p><strong>Proposition (the trace and the determinant).</strong> For the block matrix above,</p>
+<p>$$
+\operatorname{tr}A=\operatorname{tr}A_{11}+\operatorname{tr}A_{22},
+\qquad
+\det A=\det A_{11}\det A_{22}
+$$</p>
+<p>when $M=N=0$, and in general</p>
+<p>$$
+\det A=\det A_{22}\det\left(A_{11}-MA_{22}^{-1}N\right)
+$$</p>
+<p>when $A_{22}$ is invertible.</p>
+<p><strong>Proof.</strong> The trace is the sum of the diagonal entries of the two diagonal blocks. For the determinant, factor</p>
+<p>$$
+\begin{pmatrix}A_{11}&M\\N&A_{22}\end{pmatrix}
+=
+\begin{pmatrix}I_p&M\\0&A_{22}\end{pmatrix}
+\begin{pmatrix}A_{11}-MA_{22}^{-1}N&0\\A_{22}^{-1}N&I_{6-p}\end{pmatrix},
+$$</p>
+<p>and take determinants; the two triangular factors have determinant $\det A_{22}$ and $1$.</p>
+<p>The Schur complement $A_{11}-MA_{22}^{-1}N$ is the effective block seen after eliminating the second corner; the mass block enters quadratically.</p>
+<h2 id="the-rank-two-split-math62">The Rank-Two Split: $M_2\oplus M_4$</h2>
+<h3 id="the-corners">The Corners</h3>
+<p>Take $p=2$, $E=\operatorname{diag}(I_2,0_4)$, $F=\operatorname{diag}(0_2,I_4)$. The corners are</p>
+<p>$$
+EME\cong M_2,\qquad
+FMF\cong M_4,\qquad
+EMF\cong\mathbb{C}^{2\times4},\qquad
+FME\cong\mathbb{C}^{4\times2},
+$$</p>
+<p>of dimensions $4,16,8,8$. The block matrix is</p>
+<p>$$
+A=\begin{pmatrix}A_2&M\\N&B_4\end{pmatrix},
+\qquad
+A_2\in M_2,\quad M\in\mathbb{C}^{2\times4},\quad N\in\mathbb{C}^{4\times2},\quad B_4\in M_4,
+$$</p>
+<p>and the mass block $M$ is <strong>rectangular</strong>, of size $2\times4$.</p>
+<p><strong>Proposition.</strong> The diagonal corner algebra is $M_2\oplus M_4$, of dimension $20$. The block upper triangular subalgebra</p>
+<p>$$
+\mathfrak{p}=\left\{\begin{pmatrix}A_2&M\\0&B_4\end{pmatrix}\right\}
+$$</p>
+<p>has dimension $4+8+16=28$ and is the parabolic subalgebra of $\mathfrak{gl}_6$ preserving the flag $0\subset\mathbb{C}^2\subset\mathbb{C}^6$. Its Levi factor is $M_2\oplus M_4$, and its nilpotent radical is the mass block $\mathbb{C}^{2\times4}$.</p>
+<p><strong>Proof.</strong> The dimensions are $4+8+16=28$ and $4+16=20$. The parabolic is the stabiliser of the $2$-plane $\mathbb{C}^2\oplus0$; the Levi factor is the block-diagonal part, and the radical is the strictly upper-right block.</p>
+<h3 id="the-mass-block">The Mass Block</h3>
+<p><strong>Proposition.</strong> A $2\times4$ mass block has rank at most two. Its singular values are two nonnegative numbers $\sigma_1\ge\sigma_2\ge0$, and its polar decomposition is</p>
+<p>$$
+M=U\Sigma V^*,
+\qquad
+U\in U(2),\quad V\in U(4),\quad
+\Sigma=\begin{pmatrix}\sigma_1&0&0&0\\0&\sigma_2&0&0\end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> The rank of a $2\times4$ matrix is at most $2$, so its singular value decomposition has at most two nonzero singular values; the unitary groups act on the two sides.</p>
+<p><strong>Corollary (the mass has two channels).</strong> The rank-two split has two mass channels, the two singular values of $M$. The rank-three split has three, and the rank-one split has one.</p>
+<p><strong>Proof.</strong> The number of singular values is $\min(p,6-p)$, which is $1,2,3$ for $p=1,2,3$.</p>
+<h3 id="the-gauge-of-the-rank-two-corner">The Gauge of the Rank-Two Corner</h3>
+<p><strong>Proposition.</strong> The gauge of the corner is</p>
+<p>$$
+T_{2,4}=\left(\mathbb{C}^\times\right)^2\times\left(\mathbb{C}^\times\right)^4/\mathbb{C}^\times
+\cong\left(\mathbb{C}^\times\right)^5,
+$$</p>
+<p>and it splits as the traceless torus of $M_2$ (dimension $1$), the traceless torus of $M_4$ (dimension $3$), and the relative scale (dimension $1$):</p>
+<p>$$
+1+3+1=5 .
+$$</p>
+<p><strong>Proof.</strong> Write a diagonal gauge as $\operatorname{diag}(t_1,t_2,s_1,s_2,s_3,s_4)$. The overall scalar $(t,t,t,t,t,t)$ is quotiented out. The traceless part of the first block is the single ratio $t_1/t_2$; the traceless part of the second is the three ratios $s_1/s_2,s_2/s_3,s_3/s_4$; the remaining parameter is the relative scale $t/s$, where $t$ is the common scale of the first block and $s$ of the second. The dimensions add to $1+3+1=5$.</p>
+<p><strong>Corollary (the action on the mass block).</strong> Under the scalar part of the gauge, the mass block is multiplied by the relative scale:</p>
+<p>$$
+M\longmapsto\frac{t}{s}M .
+$$</p>
+<p><strong>Proof.</strong> The gauge matrix is $\operatorname{diag}(tI_2,sI_4)$; conjugation sends the block $M$ to $tMs^{-1}=(t/s)M$.</p>
+<h2 id="the-rank-three-split-math111">The Rank-Three Split: $M_3\oplus M_3$</h2>
+<h3 id="the-corners_1">The Corners</h3>
+<p>Take $p=3$, $E=\operatorname{diag}(I_3,0_3)$, $F=\operatorname{diag}(0_3,I_3)$. The four corners are</p>
+<p>$$
+EME\cong M_3,\qquad
+FMF\cong M_3,\qquad
+EMF\cong M_3,\qquad
+FME\cong M_3,
+$$</p>
+<p>all of dimension $9$. The block matrix is</p>
+<p>$$
+A=\begin{pmatrix}A_+&M\\N&A_-\end{pmatrix},
+\qquad
+A_+,A_-,M,N\in M_3,
+$$</p>
+<p>and the mass block $M$ is <strong>square</strong>, of size $3\times3$.</p>
+<p><strong>Theorem (the tensor-product recursion).</strong></p>
+<p>$$
+M_6(\mathbb{C})\cong M_3(\mathbb{C})\otimes M_2(\mathbb{C})
+\cong M_2(M_3(\mathbb{C})),
+$$</p>
+<p>and under this isomorphism the block form is the $2\times2$ matrix of $3\times3$ blocks. The diagonal corner is</p>
+<p>$$
+M_3\oplus M_3\cong M_3\otimes\mathbb{C}^2,
+$$</p>
+<p>where $\mathbb{C}^2$ is the algebra of diagonal $2\times2$ matrices.</p>
+<p><strong>Proof.</strong> The algebra $M_2(M_3)$ of $2\times2$ matrices with entries in $M_3$ is $M_2\otimes M_3$ by $E_{ab}\otimes A\mapsto$ the matrix with $A$ in block $(a,b)$. The identification $M_2(M_3)\cong M_6$ is the block form: a $2\times2$ matrix of $3\times3$ blocks has $36$ entries. The block-diagonal matrices are the elements with the off-diagonal blocks zero, and they form $M_3\oplus M_3$.</p>
+<p><strong>Corollary (the two commuting factors).</strong> The subalgebras</p>
+<p>$$
+M_3\otimes I_2=\left\{\begin{pmatrix}A&0\\0&A\end{pmatrix}:A\in M_3\right\},
+\qquad
+I_3\otimes M_2=\left\{\begin{pmatrix}\lambda I_3&\mu I_3\\\nu I_3&\rho I_3\end{pmatrix}\right\}
+$$</p>
+<p>commute, and together they generate $M_6$.</p>
+<p><strong>Proof.</strong> $(A\otimes I_2)(I_3\otimes B)=A\otimes B=(I_3\otimes B)(A\otimes I_2)$. The tensor product is generated by the two factors.</p>
+<p><strong>Remark (the recursion is a tensor product only for equal blocks).</strong> The rank-two split is not a tensor product: $M_2(M_4)$ would be $M_8$, not $M_6$. The rank-three split is special because $p=6-p=3$, so the mixed blocks are square and of the same size as the diagonal ones. <strong>The $M_3\oplus M_3$ recursion is the tensor product $M_3\otimes M_2$; the $M_2\oplus M_4$ recursion is a Levi factor, not a tensor product.</strong></p>
+<h3 id="the-mass-block_1">The Mass Block</h3>
+<p><strong>Proposition.</strong> A $3\times3$ mass block has three singular values $\sigma_1\ge\sigma_2\ge\sigma_3\ge0$, and its polar decomposition is</p>
+<p>$$
+M=U\Sigma V^*,
+\qquad
+U,V\in U(3),\quad
+\Sigma=\operatorname{diag}(\sigma_1,\sigma_2,\sigma_3).
+$$</p>
+<p><strong>Proof.</strong> The singular value decomposition of a square matrix.</p>
+<p><strong>Corollary (the mass has three channels).</strong> The rank-three split has three mass channels, and the relative scale of the gauge multiplies all three singular values by the same factor.</p>
+<p><strong>Proof.</strong> The singular values of $(t/s)M$ are $\lvert t/s\rvert\sigma_i$.</p>
+<h3 id="the-gauge-of-the-rank-three-corner">The Gauge of the Rank-Three Corner</h3>
+<p><strong>Proposition.</strong> The gauge of the corner splits as</p>
+<p>$$
+2+2+1=5:
+$$</p>
+<p>the traceless torus of the first $M_3$ (dimension $2$), the traceless torus of the second $M_3$ (dimension $2$), and the relative scale (dimension $1$).</p>
+<p><strong>Proof.</strong> A diagonal gauge is $\operatorname{diag}(t_1,t_2,t_3,s_1,s_2,s_3)$; the overall scalar is quotiented out; the traceless ratios are $t_1/t_2,t_2/t_3$ and $s_1/s_2,s_2/s_3$; the relative scale is $t/s$.</p>
+<h2 id="the-gauge-of-the-two-corners">The Gauge of the Two Corners</h2>
+<h3 id="the-three-terms">The Three Terms</h3>
+<p><strong>Theorem.</strong> For every rank $p$, the gauge of the corner algebra $M_p\oplus M_{6-p}$ decomposes as</p>
+<p>$$
+\underbrace{(p-1)}_{\text{first corner}}
++\underbrace{(5-p)}_{\text{second corner}}
++\underbrace{1}_{\text{relative scale}}
+=5 .
+$$</p>
+<p><strong>Proof.</strong> The diagonal torus of $M_p$ has dimension $p$, and its traceless part has dimension $p-1$; the torus of $M_{6-p}$ has dimension $6-p$, and its traceless part has dimension $5-p$. The two common scales are one overall scale, quotiented out, and one relative scale. The sum is $(p-1)+(5-p)+1=5$.</p>
+<p><strong>Corollary.</strong> The three splits give</p>
+<p>$$
+p=1:\ 0+4+1=5,\qquad
+p=2:\ 1+3+1=5,\qquad
+p=3:\ 2+2+1=5 .
+$$</p>
+<h3 id="the-corner-tori-and-the-relative-scale">The Corner Tori and the Relative Scale</h3>
+<p><strong>Definition.</strong> The <strong>corner tori</strong> of the split are the traceless diagonal tori</p>
+<p>$$
+T_p=\left\{\operatorname{diag}(t_1,\dots,t_p):\prod t_i=1\right\},
+\qquad
+T_{6-p}=\left\{\operatorname{diag}(s_1,\dots,s_{6-p}):\prod s_j=1\right\},
+$$</p>
+<p>of dimensions $p-1$ and $5-p$. The <strong>relative scale</strong> is the class of</p>
+<p>$$
+\operatorname{diag}(tI_p,sI_{6-p}),\qquad t,s\in\mathbb{C}^\times,
+$$</p>
+<p>modulo the overall scalar; it is parameterised by $t/s\in\mathbb{C}^\times$ and is one-dimensional.</p>
+<p><strong>Proposition.</strong> The gauge torus is the direct product</p>
+<p>$$
+T\cong T_p\times T_{6-p}\times\mathbb{C}^\times_{\text{rel}},
+$$</p>
+<p>of dimension $(p-1)+(5-p)+1=5$.</p>
+<p><strong>Proof.</strong> A diagonal gauge has $p+(6-p)=6$ parameters. Divide by the overall scalar, which is the diagonal $(t,\dots,t)$, and split the remaining five into the traceless parts of the two blocks and the ratio of their common scales.</p>
+<p><strong>Remark (why the relative scale is not in either corner).</strong> The traceless tori act inside one block and fix the other. The relative scale acts on both blocks at once, with opposite signs in the logarithms, and it is the only gauge direction that multiplies the mass block. <strong>The relative scale is the gauge direction of the mass block.</strong></p>
+<h2 id="the-block-embeddings">The Block Embeddings</h2>
+<h3 id="the-smaller-algebras-inside-math183">The Smaller Algebras Inside $M_6$</h3>
+<p><strong>Definition.</strong> For $k=1,\dots,5$ let $E_k=\operatorname{diag}(I_k,0_{6-k})$. The <strong>corner embedding</strong> of $M_k$ is</p>
+<p>$$
+\iota_k:M_k(\mathbb{C})\longrightarrow M_6(\mathbb{C}),
+\qquad
+\iota_k(A)=\begin{pmatrix}A&0\\0&0\end{pmatrix}=E_kAE_k .
+$$</p>
+<p>The <strong>unital embedding</strong> is</p>
+<p>$$
+\widehat\iota_k(A)=\begin{pmatrix}A&0\\0&I_{6-k}\end{pmatrix}.
+$$</p>
+<p><strong>Proposition.</strong> $\iota_k$ is an injective algebra homomorphism with unit $E_k$; $\widehat\iota_k$ is an injective unital algebra homomorphism with unit $I_6$. On the images,</p>
+<p>$$
+\operatorname{tr}_{M_6}\iota_k(A)=\operatorname{tr}_{M_k}A,
+\qquad
+\det\widehat\iota_k(A)=\det_{M_k}A,
+\qquad
+\det\iota_k(A)=0\ \text{for }k<6 .
+$$</p>
+<p><strong>Proof.</strong> The block products are the products of the blocks. The trace of $\iota_k(A)$ is the trace of $A$ plus $6-k$ zeros. The determinant of the unital embedding is the product of $\det A$ and $\det I_{6-k}=1$; the corner embedding has a zero block, so its determinant vanishes.</p>
+<p><strong>Corollary (the chain of categories).</strong> The unital embeddings give a chain</p>
+<p>$$
+M_1\subset M_2\subset M_3\subset M_4\subset M_5\subset M_6,
+$$</p>
+<p>and the corner embeddings give, for each $k$, the algebra $M_k$ as the corner $E_kM_6E_k$.</p>
+<p><strong>Remark (the previous categories).</strong> The algebra $M_2$ is the biquaternion algebra of the previous category; $M_3,M_4,M_5$ are the algebras of their categories. Each is read inside $M_6$ in two ways: as a corner $E_kM_6E_k$ (nonunital, trace-preserving on its own trace) and as a unital block (determinant-preserving). <strong>The corner reading keeps the trace; the unital reading keeps the determinant.</strong></p>
+<h3 id="the-mixed-blocks-as-bimodules">The Mixed Blocks as Bimodules</h3>
+<p><strong>Proposition.</strong> The mixed corner $EMF$ is a left module over $EME\cong M_p$ and a right module over $FMF\cong M_{6-p}$, and it is isomorphic to the bimodule $\mathbb{C}^{p}\otimes(\mathbb{C}^{6-p})^*$ of $p\times(6-p)$ matrices. The corner $FME$ is the dual bimodule.</p>
+<p><strong>Proof.</strong> $A_{11}MN'$ and $M B_{22}$ are the left and right actions; the dimensions match, and the isomorphism is $u\otimes\varphi\mapsto u\varphi$.</p>
+<p><strong>Corollary (the mass block is a bimodule element).</strong> The mass block $M$ is not an element of either corner algebra; it is an element of the mixed bimodule. The gauge acts on it by the relative scale, and the corner unitaries act on it by left and right multiplication.</p>
+<h3 id="the-two-recursions">The Two Recursions</h3>
+<p><strong>Theorem (the two recursions in one algebra).</strong> The same algebra $M_6(\mathbb{C})$ contains the two diagonal corner algebras</p>
+<p>$$
+M_3\oplus M_3\cong M_3\otimes\mathbb{C}^2,
+\qquad
+M_2\oplus M_4,
+$$</p>
+<p>of dimensions $18$ and $20$. The first is a tensor-product factor of $M_6\cong M_3\otimes M_2$; the second is the Levi factor of the parabolic preserving a $2$-plane.</p>
+<p><strong>Proof.</strong> The first is the block-diagonal part of the $3+3$ split, and $M_6\cong M_2(M_3)\cong M_2\otimes M_3$. The second is the block-diagonal part of the $2+4$ split, and the block upper triangular matrices form the parabolic of the flag $0\subset\mathbb{C}^2\subset\mathbb{C}^6$.</p>
+<p><strong>Corollary (the two mass blocks).</strong> The $3+3$ split has the square mass block $M\in M_3$ with three singular values; the $2+4$ split has the rectangular mass block $M\in\mathbb{C}^{2\times4}$ with two singular values.</p>
+<p><strong>Proof.</strong> The number of singular values is $\min(p,6-p)$, which is $3$ at $p=3$ and $2$ at $p=2$.</p>
+<p><strong>Remark (the massless limits).</strong> If the mass block vanishes in the $3+3$ split, the algebra element is block diagonal and lies in $M_3\oplus M_3$. If it vanishes in the $2+4$ split, the element lies in $M_2\oplus M_4$. In both cases the massless elements form the diagonal corner algebra, of dimension $18$ or $20$; the mass block adds the remaining $18$ or $16$ dimensions.</p>
+<h2 id="summary">Summary</h2>
+<p>The three coarse splits of $M_6(\mathbb{C})$ by an idempotent of rank $p=1,2,3$ have corners</p>
+<p>$$
+1+5+5+25,\qquad
+4+8+8+16,\qquad
+9+9+9+9 .
+$$</p>
+<p>The diagonal corners are the algebras</p>
+<p>$$
+\mathbb{C}\oplus M_5,\qquad
+M_2\oplus M_4,\qquad
+M_3\oplus M_3,
+$$</p>
+<p>of dimensions $26,20,18$. The mixed corner $EMF$ is the mass block: a $1\times5$, a rectangular $2\times4$, or a square $3\times3$ matrix, with one, two or three singular values.</p>
+<p>$$
+\boxed{\ M_6\cong M_3\otimes M_2\ \text{contains}\ M_3\oplus M_3;\quad
+M_6\ \text{contains the Levi factor}\ M_2\oplus M_4 .\ }
+$$</p>
+<p>The gauge of every corner splits as</p>
+<p>$$
+(p-1)+(5-p)+1=5,
+$$</p>
+<p>the two traceless corner tori and the relative scale. The relative scale is the gauge direction of the mass block.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Split</th>
+<th>Corners</th>
+<th>Diagonal algebra</th>
+<th>Dimension</th>
+<th>Mass block</th>
+<th>Singular values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p=1$</td>
+<td>$1+5+5+25$</td>
+<td>$\mathbb{C}\oplus M_5$</td>
+<td>$26$</td>
+<td>$1\times5$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$p=2$</td>
+<td>$4+8+8+16$</td>
+<td>$M_2\oplus M_4$</td>
+<td>$20$</td>
+<td>$2\times4$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$p=3$</td>
+<td>$9+9+9+9$</td>
+<td>$M_3\oplus M_3$</td>
+<td>$18$</td>
+<td>$3\times3$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Gauge split</th>
+<th>$p=1$</th>
+<th>$p=2$</th>
+<th>$p=3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first corner</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>second corner</td>
+<td>$4$</td>
+<td>$3$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>relative scale</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$5$</td>
+<td>$5$</td>
+<td>$5$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E,F=I_6-E$</td>
+<td>an idempotent of rank $p$ and its complement</td>
+</tr>
+<tr>
+<td>$EME,EMF,FME,FMF$</td>
+<td>the four corners</td>
+</tr>
+<tr>
+<td>$D_E=EME\oplus FMF$</td>
+<td>the diagonal corner algebra</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>the mass block $EMF$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the transpose mass block $FME$</td>
+</tr>
+<tr>
+<td>$T_p,T_{6-p}$</td>
+<td>the traceless corner tori, of dimensions $p-1$ and $5-p$</td>
+</tr>
+<tr>
+<td>$t/s$</td>
+<td>the relative scale</td>
+</tr>
+<tr>
+<td>$\iota_k,\widehat\iota_k$</td>
+<td>the corner and unital embeddings of $M_k$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>, for the four corners and the corner multiplication.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the five-dimensional gauge.</li>
+<li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html">The Mass Block and the Chiral Polar Decomposition</a>, for the polar decomposition of the mass block.</li>
+<li><a href="the-two-chiralities-of-m6c.html">The Two Chiralities</a>, for the $3+3$ split of the carrier.</li>
+<li><a href="the-rank-two-and-rank-three-splits-of-m6c.html">The Rank-Two and Rank-Three Splits</a>, for the idempotent geometry of the two ranks.</li>
+<li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the trace, the determinant and the block multiplication.</li>
+<li><a href="the-matrix-algebra-m2c.html">The Matrix Algebra $M_2(\mathbb{C})$</a>, for the biquaternion block.</li>
+<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>, for the $3\times3$ block.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the $4\times4$ block.</li>
+<li><a href="parabolic-subgroups-and-flag-varieties.html">Parabolic Subgroups and Flag Varieties</a>, for the Levi factors and the radicals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

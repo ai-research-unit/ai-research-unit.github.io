@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roots of Unity and the Lagrange Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="roots-of-unity-and-the-lagrange-idempotents"><strong>Roots of Unity and the Lagrange Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>One element of order $n$ with simple spectrum produces all $n$ idempotents of the frame.</strong> This is the first step of the construction that the four matrix categories instantiate. No second element is needed, and no idempotent is chosen in advance: the root produces them by polynomial interpolation.</p>
+<p>The article states the interpolation, proves that the projectors are polynomials in the root, reads the $\mathbb{Z}/n$ grading that the root defines, counts the root set, and records the case $n=2$, which is the biquaternion root of $+1$. The Peirce decomposition that the idempotents produce is <em>The Peirce Decomposition and the Corner Recursion</em>; the choice of vectors inside the resulting lines, and the gauge that acts on them, is <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<h2 id="the-root-and-its-spectrum">The Root and Its Spectrum</h2>
+<p><strong>A root of unity of order $n$ is an element $H\in M_n(\mathbb{C})$ with $H^{n}=I$.</strong> Let $\zeta=e^{2\pi i/n}$ and $\zeta_k=\zeta^{k}$, $k=0,\dots,n-1$, the $n$ distinct roots of $x^{n}-1$. The polynomial $x^{n}-1$ has the $n$ distinct roots $\zeta_k$ and no repeated factor, so it is square-free.</p>
+<p><strong>The minimal polynomial of $H$ divides a square-free polynomial, hence $H$ is diagonalisable.</strong> If $H^{n}=I$ then $H$ satisfies $x^{n}-1$, whose roots are simple; the minimal polynomial therefore has simple roots, and a matrix whose minimal polynomial has simple roots is diagonalisable. Its eigenvalues lie in $\{\zeta_0,\dots,\zeta_{n-1}\}$.</p>
+<p><strong>Simple spectrum means $n$ distinct eigenvalues.</strong> Since there are exactly $n$ roots and $n$ eigenvalues counted with multiplicity, simple spectrum is equivalent to $H$ having all $n$ roots of unity as eigenvalues, each once. Equivalently, the minimal polynomial of $H$ is exactly $x^{n}-1$.</p>
+<p><strong>Standing hypothesis.</strong> For the rest of the article $H^{n}=I$ and $H$ has simple spectrum. Write</p>
+<p>$$
+H=\sum_{k=0}^{n-1}\zeta_k P_k
+$$</p>
+<p>for the spectral decomposition, with $P_k$ the projection onto the eigenspace of $\zeta_k$.</p>
+<h2 id="the-lagrange-projectors">The Lagrange Projectors</h2>
+<p><strong>The projector of an eigenvalue is the Lagrange polynomial in $H$ that is $1$ at that eigenvalue and $0$ at the others.</strong> Define</p>
+<p>$$
+P_k=\prod_{l\ne k}\frac{H-\zeta_l I}{\zeta_k-\zeta_l},\qquad k=0,\dots,n-1.
+$$</p>
+<p>Each factor is a polynomial in $H$, so $P_k$ is a polynomial in $H$; the product is the Lagrange interpolation polynomial of the indicator of $\zeta_k$ on the set $\{\zeta_0,\dots,\zeta_{n-1}\}$.</p>
+<p><strong>Proposition.</strong> The elements $P_k$ are idempotent, orthogonal and complete:</p>
+<p>$$
+P_k^{2}=P_k,\qquad P_kP_l=0\ (k\ne l),\qquad \sum_{k=0}^{n-1}P_k=I,
+$$</p>
+<p>and $HP_k=\zeta_kP_k$. Conversely, if a family with these properties is given, then $H=\sum_k\zeta_kP_k$ and the $P_k$ are recovered from $H$ by the formula above.</p>
+<p><em>Proof.</em> On the eigenspace of $\zeta_m$, every factor $(H-\zeta_lI)/(\zeta_k-\zeta_l)$ with $l\ne k$ acts as $(\zeta_m-\zeta_l)/(\zeta_k-\zeta_l)$; the product is $1$ when $m=k$ and $0$ otherwise, because one factor has numerator $0$ when $m=l\ne k$. Hence $P_k$ acts as the identity on the eigenspace of $\zeta_k$ and as $0$ on the others. The three properties and $HP_k=\zeta_kP_k$ follow. For the converse, $\sum_k\zeta_kP_k$ acts as $\zeta_m$ on the eigenspace of $P_m$, hence equals $H$, and the interpolation formula applied to that $H$ returns $P_k$. $\square$</p>
+<p><strong>The projectors are canonical.</strong> They are polynomials in $H$ with coefficients depending only on $n$, so they are fixed by $H$ alone. In particular they do not depend on any choice of basis, on any gauge, or on any second element.</p>
+<p><strong>Idempotents, not nilpotents.</strong> Each $P_k$ satisfies $P_k^{2}=P_k$ and $P_k\ne0$; the rank of $P_k$ is $1$ because the eigenvalue $\zeta_k$ is simple. The $P_k$ are the primitive idempotents of the frame. The nilpotents $E_{k,k+1}$ of <em>The Frame, the Simple Nilpotents and the Gauge</em> are different objects: they square to $0$, they are not polynomials in $H$, and they carry the gauge.</p>
+<h2 id="the-math82-grading">The $\mathbb{Z}/n$ Grading</h2>
+<p><strong>Conjugation by $H$ grades the algebra by the $n$-th roots of unity.</strong> For $X\in M_n(\mathbb{C})$ put</p>
+<p>$$
+\operatorname{Ad}_H(X)=HXH^{-1}.
+$$</p>
+<p>Since $H$ is invertible and $H^{-1}=\sum_k\zeta_k^{-1}P_k$, the operator $\operatorname{Ad}_H$ is diagonalisable with eigenvalues in $\{\zeta^{r}: r=0,\dots,n-1\}$. Define</p>
+<p>$$
+M^{(r)}=\{X:\operatorname{Ad}_H(X)=\zeta^{r}X\},\qquad r\in\mathbb{Z}/n\mathbb{Z}.
+$$</p>
+<p><strong>Proposition.</strong> The algebra is the direct sum $M_n(\mathbb{C})=\bigoplus_{r\in\mathbb{Z}/n\mathbb{Z}}M^{(r)}$, and the product respects the grading,</p>
+<p>$$
+M^{(r)}M^{(s)}\subseteq M^{(r+s)}.
+$$</p>
+<p><em>Proof.</em> The operator $\operatorname{Ad}_H$ is diagonalisable, so the eigenspaces span and intersect only at $0$. If $X\in M^{(r)}$ and $Y\in M^{(s)}$ then $\operatorname{Ad}_H(XY)=\operatorname{Ad}_H(X)\operatorname{Ad}_H(Y)=\zeta^{r+s}XY$. $\square$</p>
+<p><strong>The graded pieces in Peirce form.</strong> Since $H P_k=\zeta_kP_k$ and $P_kH=\zeta_kP_k$, an element $X\in P_kM_nP_l$ satisfies</p>
+<p>$$
+\operatorname{Ad}_H(X)=HXH^{-1}=\zeta_k\zeta_l^{-1}X=\zeta^{k-l}X.
+$$</p>
+<p>Hence</p>
+<p>$$
+M^{(r)}=\bigoplus_{k-l\equiv r\ (\mathrm{mod}\ n)}P_kM_nP_l.
+$$</p>
+<p>In particular $M^{(0)}$ is the centraliser of $H$, of dimension $n$: it consists of the matrices that preserve every eigenspace, and it is the algebra of polynomials in $H$. The grading is coarser than the Peirce decomposition; the latter has $n^{2}$ lines, the former $n$ pieces.</p>
+<p><strong>The case $n=2$.</strong> The grading is by $\pm1$: $M^{(0)}$ is the centraliser of $H$, of dimension $2$, and $M^{(1)}$ is the off-diagonal part, of dimension $2$. The four Peirce lines of the biquaternion frame are the two lines inside $M^{(0)}$ and the two inside $M^{(1)}$.</p>
+<h2 id="the-root-set-and-its-dimension">The Root Set and Its Dimension</h2>
+<p><strong>The roots of order $n$ with simple spectrum form one orbit of $PGL_n(\mathbb{C})$.</strong> Let</p>
+<p>$$
+\mathcal{R}_n=\{H\in M_n(\mathbb{C}): H^{n}=I,\ \text{the eigenvalues of $H$ are distinct}\}.
+$$</p>
+<p>$PGL_n(\mathbb{C})$ acts on $\mathcal{R}_n$ by conjugation, $H\mapsto SHS^{-1}$. Every $H\in\mathcal{R}_n$ is diagonalisable to $H_0=\operatorname{diag}(1,\zeta,\zeta^{2},\dots,\zeta^{n-1})$, so the action is transitive. The stabiliser of $H_0$ in $PGL_n(\mathbb{C})$ is the image of the diagonal torus: if $S$ commutes with $H_0$ and $H_0$ has distinct eigenvalues, then $S$ preserves each eigenspace, hence is diagonal. That image has dimension $n-1$. Therefore</p>
+<p>$$
+\mathcal{R}_n\cong PGL_n(\mathbb{C})/T,\qquad \dim_{\mathbb{C}}\mathcal{R}_n=n^{2}-1-(n-1)=n(n-1).
+$$</p>
+<p>The real dimension is $2n(n-1)$.</p>
+<p><strong>The count in the two cases that matter.</strong> For $n=2$,</p>
+<p>$$
+\dim_{\mathbb{R}}\mathcal{R}_2=2\cdot2\cdot1=4,
+$$</p>
+<p>which is the four real parameters of the biquaternion root $\tilde\Xi$ with $\tilde\Xi^{2}=e_t$. For $n=3$, $\dim_{\mathbb{R}}\mathcal{R}_3=12$; for $n=4$, $24$; for $n=5$, $40$; for $n=6$, $60$. These are the dimensions of the root in the five-article count of each category.</p>
+<p><strong>The root is not a frame.</strong> A frame modulo overall scale has complex dimension $n^{2}-1$, and $\mathcal{R}_n$ has dimension $n(n-1)$. The difference,</p>
+<p>$$
+(n^{2}-1)-n(n-1)=n-1,
+$$</p>
+<p>is the gauge of <em>The Frame, the Simple Nilpotents and the Gauge</em>: one complex parameter per simple nilpotent. For $n=2$ the root contributes $4$ real dimensions and the gauge $2$, which is the six-dimensional basis of the biquaternion frame.</p>
+<h2 id="the-root-of-math156-and-the-biquaternion-case">The Root of $+1$ and the Biquaternion Case</h2>
+<p><strong>At $n=2$ the construction is the biquaternion frame.</strong> The roots are $+1$ and $-1$, and</p>
+<p>$$
+P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2},\qquad H=P_{+}-P_{-}.
+$$</p>
+<p>These are exactly the idempotents $\tilde\Pi_\pm=(e_t\pm\tilde\Xi)/2$ of the biquaternion article, with $H=\tilde\Xi$ and $I=e_t$. The root of $+1$ is therefore not a separate principle: it is the order-two case of one root of order $n$.</p>
+<p><strong>The older "second root" is the gauge, not a second primitive.</strong> The biquaternion frame was sometimes presented as a root of $+1$ together with a second root anticommuting with it. That presentation is correct as a description of a normalised frame but wrong as a description of the primitive data. The second element does not produce new idempotents: the two idempotents are already produced by the first root. What the second element supplies is a vector in each mixed Peirce line, that is, a normalisation of the nilpotents, and that data is the gauge parameter $\lambda$ of <em>The Frame, the Simple Nilpotents and the Gauge</em>. The construction is root-first: one root, then the gauge. There is no primitive root pair.</p>
+<p><strong>What changes for $n>2$.</strong> For $n\ge3$ there is no second root at all. One root of order $n$ produces $n$ idempotents and $n$ Peirce lines directly. The analogue of the missing normalisation is the $(n-1)$-parameter gauge, not a pair of roots.</p>
+<h2 id="an-explicit-example-the-cyclic-shift">An Explicit Example: the Cyclic Shift</h2>
+<p><strong>The cyclic shift has the $n$-th roots of unity as eigenvalues, and its Lagrange projectors are the Fourier projectors.</strong> Let $C$ act on $\mathbb{C}^{n}$ with basis $e_0,\dots,e_{n-1}$ by</p>
+<p>$$
+Ce_j=e_{j-1},\qquad j\in\mathbb{Z}/n\mathbb{Z}.
+$$</p>
+<p>Then $C^{n}=I$. The vector</p>
+<p>$$
+v_k=\sum_{j=0}^{n-1}\zeta^{kj}e_j
+$$</p>
+<p>satisfies</p>
+<p>$$
+Cv_k=\sum_j\zeta^{kj}e_{j-1}=\sum_j\zeta^{k(j+1)}e_j=\zeta^{k}v_k,
+$$</p>
+<p>so $v_k$ is an eigenvector of eigenvalue $\zeta_k=\zeta^{k}$, and the $n$ vectors $v_k$ are independent (they form the discrete Fourier basis). The spectrum is simple, and</p>
+<p>$$
+P_k=\frac{1}{n}v_kv_k^{*}=\frac{1}{n}\sum_{j=0}^{n-1}\zeta^{-kj}C^{j}.
+$$</p>
+<p>The second expression is the Lagrange formula evaluated on $C$: the characters of $\mathbb{Z}/n\mathbb{Z}$ are orthogonal, and $\frac1n\sum_j\zeta^{(l-k)j}=\delta_{kl}$.</p>
+<p>For $n=2$ this is $C=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $P_\pm=\tfrac12(I\pm C)$, the biquaternion case again. For $n=3$ the three projectors are the rank-one matrices $\tfrac13 v_kv_k^{*}$ with $v_k=(1,\zeta^{k},\zeta^{2k})^{\mathsf T}$, and $C=P_0+\zeta P_1+\zeta^{2}P_2$.</p>
+<p><strong>The example shows that the root need not be diagonal.</strong> The shift is not diagonal, its projectors are not the coordinate matrices $E_{kk}$, and the frame they define is the Fourier frame. The construction depends on the root, not on a choice of basis.</p>
+<h2 id="summary">Summary</h2>
+<p>A root $H$ of order $n$ with simple spectrum is diagonalisable with the $n$ roots of unity as eigenvalues, and the Lagrange polynomials in $H$ produce $n$ primitive orthogonal idempotents $P_k$, complete and summing to $I$, with $H=\sum_k\zeta_kP_k$. The root grades the algebra by $\mathbb{Z}/n$, with $M^{(r)}=\bigoplus_{k-l\equiv r}P_kM_nP_l$ and $M^{(r)}M^{(s)}\subseteq M^{(r+s)}$. The root set is $PGL_n(\mathbb{C})/T$ of complex dimension $n(n-1)$; the remaining $n-1$ complex dimensions of a frame are the gauge. At $n=2$ the root is the biquaternion root of $+1$, and the older "second root" is the gauge, not a second primitive.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\zeta=e^{2\pi i/n}$</td>
+<td>the primitive $n$-th root of unity</td>
+</tr>
+<tr>
+<td>$\zeta_k=\zeta^{k}$</td>
+<td>the $n$ roots of $x^{n}-1$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>a root, $H^{n}=I$ with simple spectrum</td>
+</tr>
+<tr>
+<td>$P_k$</td>
+<td>the Lagrange projector of $\zeta_k$, a polynomial in $H$</td>
+</tr>
+<tr>
+<td>$M^{(r)}$</td>
+<td>the graded piece on which $\operatorname{Ad}_H$ acts by $\zeta^{r}$</td>
+</tr>
+<tr>
+<td>$\mathcal{R}_n$</td>
+<td>the set of roots of order $n$ with simple spectrum</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>the diagonal torus, the stabiliser of $\operatorname{diag}(1,\zeta,\dots,\zeta^{n-1})$</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>the cyclic shift, the example with Fourier projectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the spectral decomposition and the Lagrange interpolation formula for matrices.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for idempotents, orthogonal families and Peirce decompositions.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the ambient algebra and its groups.</li>
+<li><a href="the-peirce-decomposition-and-the-corner-recursion-mnc.html">The Peirce Decomposition and the Corner Recursion</a>, for the lines that the idempotents produce.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-mnc.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the vectors and the gauge that complete the root to a frame.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the biquaternion case at $n=2$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two-Parameter Gauge of $M_3(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-parameter-gauge-of-math0"><strong>The Two-Parameter Gauge of $M_3(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A frame of $M_{3}(\mathbb{C})$ has three diagonal idempotents and six off-diagonal units. The idempotents are fixed by the root; the off-diagonal units are fixed only up to rescalings that preserve the matrix-unit table. The rescalings are</p>
+<p>$$
+E_{ij}\longmapsto\frac{t_{i}}{t_{j}}E_{ij},\qquad t_{i}\in\mathbb{C}^{\times},
+$$</p>
+<p>and the common scalar of the three $t_{i}$ acts trivially, so the effective group is $(\mathbb{C}^{\times})^{2}$. Its two parameters are $\lambda_{1}=t_{0}/t_{1}$ and $\lambda_{2}=t_{1}/t_{2}$; the third ratio is the product $\lambda_{1}\lambda_{2}$, and there is no third independent scalar. The idempotents do not depend on $\lambda_{1},\lambda_{2}$.</p>
+<p>This article reads the gauge on the Peirce coordinates, identifies the gauge-invariant combinations of the off-diagonal entries, proves that the Peirce table is unchanged, compares the two-parameter gauge with the single $\lambda$ of the biquaternion algebra, and separates the gauge from the global phase of a quantum state. The frame and the simple nilpotents are <em>The Frame, the Simple Nilpotents and the Gauge</em>; the Peirce decomposition is <em>The Peirce Decomposition of $M_{3}(\mathbb{C})$</em>; the corner is <em>The $M_{2}$ Corner of $M_{3}(\mathbb{C})$</em>.</p>
+<h2 id="the-gauge-on-the-peirce-coordinates">The Gauge on the Peirce Coordinates</h2>
+<p><strong>The frame change.</strong> Let $E_{ij}$ be a normalized frame, $E_{ij}E_{kl}=\delta_{jk}E_{il}$, $E_{ii}=P_{i}$. For $t_{0},t_{1},t_{2}\in\mathbb{C}^{\times}$ put</p>
+<p>$$
+E_{ij}'=\frac{t_{i}}{t_{j}}E_{ij}.
+$$</p>
+<p>Then $E_{ij}'E_{kl}'=\delta_{jk}E_{il}'$ and $E_{ii}'=E_{ii}$, so the $E_{ij}'$ are again a normalized frame with the same diagonal idempotents. The map $E_{ij}\mapsto E_{ij}'$ is the gauge transformation of <em>The Frame, the Simple Nilpotents and the Gauge</em>, with $E_{ij}'=D E_{ij}D^{-1}$ for $D=\operatorname{diag}(t_{0},t_{1},t_{2})$.</p>
+<p><strong>The coordinates.</strong> Write an element as</p>
+<p>$$
+A=\sum_{i,j}\alpha_{ij}E_{ij}=\sum_{i,j}\alpha_{ij}'E_{ij}'.
+$$</p>
+<p>Since $E_{ij}'=(t_{i}/t_{j})E_{ij}$, the two coordinate arrays are related by</p>
+<p>$$
+\alpha_{ij}'=\frac{t_{j}}{t_{i}}\alpha_{ij}.
+$$</p>
+<p>The diagonal coordinates are invariant,</p>
+<p>$$
+\alpha_{00}'=\alpha_{00},\qquad \alpha_{11}'=\alpha_{11},\qquad \alpha_{22}'=\alpha_{22},
+$$</p>
+<p>and the off-diagonal ones transform by the six weights</p>
+<p>$$
+\alpha_{01}'=\lambda_{1}^{-1}\alpha_{01},\quad
+\alpha_{12}'=\lambda_{2}^{-1}\alpha_{12},\quad
+\alpha_{02}'=(\lambda_{1}\lambda_{2})^{-1}\alpha_{02},
+$$</p>
+<p>$$
+\alpha_{10}'=\lambda_{1}\alpha_{10},\quad
+\alpha_{21}'=\lambda_{2}\alpha_{21},\quad
+\alpha_{20}'=\lambda_{1}\lambda_{2}\alpha_{20},
+$$</p>
+<p>where $\lambda_{1}=t_{0}/t_{1}$ and $\lambda_{2}=t_{1}/t_{2}$. The pattern is the root system $A_{2}$: the entries $01,12,02$ carry the positive weights $1,1,2$ and the entries $10,21,20$ carry the negative weights $-1,-1,-2$, with the composite $02$ carrying the sum $1+1=2$.</p>
+<p><strong>Worked example.</strong> Take</p>
+<p>$$
+A=\begin{pmatrix}1&2&3\\4&5&6\\7&8&9\end{pmatrix}
+$$</p>
+<p>in the standard frame, and $\lambda_{1}=2$, $\lambda_{2}=3$, so $D=\operatorname{diag}(6,3,1)$. The coordinates become</p>
+<p>$$
+\alpha_{01}'=\frac{2}{2}=1,\quad
+\alpha_{12}'=\frac{6}{3}=2,\quad
+\alpha_{02}'=\frac{3}{6}=\frac12,
+$$</p>
+<p>$$
+\alpha_{10}'=4\cdot2=8,\quad
+\alpha_{21}'=8\cdot3=24,\quad
+\alpha_{20}'=7\cdot6=42,
+$$</p>
+<p>while the diagonal $1,5,9$ is unchanged. The gauge is not a symmetry of the array of numbers; it is a change of the frame in which the array is read. The element $A$ itself is fixed.</p>
+<p><strong>The inverse reading.</strong> If instead one keeps the standard frame and conjugates the element, $A\mapsto DAD^{-1}$, the entries become</p>
+<p>$$
+(DAD^{-1})_{ij}=\frac{t_{i}}{t_{j}}a_{ij}=\lambda_{ij}a_{ij},
+$$</p>
+<p>which is the inverse of the transformation of the coordinates. The two readings are the two sides of the same change of frame: the frame is rescaled, or the element is conjugated. The gauge-invariant statements below are the same in either reading.</p>
+<h2 id="the-gauge-invariant-combinations">The Gauge-Invariant Combinations</h2>
+<p><strong>The diagonal is invariant.</strong> The three numbers $\alpha_{00},\alpha_{11},\alpha_{22}$ are unchanged. They are the values of the three idempotents on $A$:</p>
+<p>$$
+P_{i}AP_{i}=\alpha_{ii}P_{i}.
+$$</p>
+<p>The trace is $\alpha_{00}+\alpha_{11}+\alpha_{22}$, so it is invariant; the determinant is the determinant of the coordinate array, so it is invariant as well.</p>
+<p><strong>The opposite-pair products are invariant.</strong> The three products</p>
+<p>$$
+\alpha_{01}\alpha_{10},\qquad \alpha_{12}\alpha_{21},\qquad \alpha_{02}\alpha_{20}
+$$</p>
+<p>are unchanged by the gauge:</p>
+<p>$$
+\alpha_{01}'\alpha_{10}'=\frac{\alpha_{01}}{\lambda_{1}}\cdot\lambda_{1}\alpha_{10}=\alpha_{01}\alpha_{10},
+$$</p>
+<p>and similarly for the other two pairs. These are the <strong>coherence entries</strong> of the Peirce coordinates: for each pair of opposite lines, the product of the two coordinates is a gauge-invariant number. The product is the coefficient of $P_{i}$ in the square of the off-diagonal part, and it is the natural pairing of the line with its dual.</p>
+<p><strong>The oriented three-cycles are invariant.</strong> The products</p>
+<p>$$
+\alpha_{01}\alpha_{12}\alpha_{20},\qquad \alpha_{10}\alpha_{21}\alpha_{02}
+$$</p>
+<p>are also invariant:</p>
+<p>$$
+\alpha_{01}'\alpha_{12}'\alpha_{20}'=\frac{\alpha_{01}}{\lambda_{1}}\cdot\frac{\alpha_{12}}{\lambda_{2}}\cdot\lambda_{1}\lambda_{2}\alpha_{20}=\alpha_{01}\alpha_{12}\alpha_{20},
+$$</p>
+<p>and the other cycle is its opposite. The two cycles are the two orientations of the triangle $0\to1\to2\to0$; their product is the product of the three opposite-pair invariants.</p>
+<p><strong>The invariant ring.</strong> The gauge group $(\mathbb{C}^{\times})^{2}$ acts on the six off-diagonal coordinates with the six weights $\pm1,\pm1,\pm2$. The four invariant combinations</p>
+<p>$$
+\alpha_{01}\alpha_{10},\quad
+\alpha_{12}\alpha_{21},\quad
+\alpha_{02}\alpha_{20},\quad
+\alpha_{01}\alpha_{12}\alpha_{20}
+$$</p>
+<p>generate the invariant ring; the second three-cycle is</p>
+<p>$$
+\alpha_{10}\alpha_{21}\alpha_{02}
+=\frac{(\alpha_{01}\alpha_{10})(\alpha_{12}\alpha_{21})(\alpha_{02}\alpha_{20})}{\alpha_{01}\alpha_{12}\alpha_{20}}.
+$$</p>
+<p>The diagonal coordinates are additional invariants, independent of the gauge. The count of the off-diagonal invariants is $6-2=4$, matching the four generators; the ring has relations among them, but the four numbers are the gauge-invariant content of the six off-diagonal entries.</p>
+<p><strong>The invariants are the data of the element.</strong> Two coordinate arrays related by the gauge describe the same element $A$ in two frames. The invariants are the functions of $A$ that do not depend on the frame: the diagonal values, the three opposite-pair products and the two three-cycles. The off-diagonal entries themselves are not invariant, and no individual off-diagonal entry has a gauge-independent meaning.</p>
+<h2 id="the-peirce-table-is-unchanged">The Peirce Table Is Unchanged</h2>
+<p><strong>Theorem.</strong> The gauge transformation preserves the Peirce lines, the Peirce table, the multiplication rule and the idempotents. It changes only the choice of the normalized matrix units inside the lines.</p>
+<p><strong>Proof.</strong> The lines are $A_{ij}=P_{i}M_{3}P_{j}$, defined by the idempotents, and the idempotents are fixed. The matrix units $E_{ij}$ and $E_{ij}'$ both lie in $A_{ij}$ and are both nonzero, so they differ by a scalar, which is $t_{i}/t_{j}$. The multiplication rule</p>
+<p>$$
+E_{ij}E_{kl}=\delta_{jk}E_{il}
+$$</p>
+<p>is preserved by the rescaling:</p>
+<p>$$
+E_{ij}'E_{kl}'=\frac{t_{i}}{t_{j}}\frac{t_{k}}{t_{l}}E_{ij}E_{kl}
+=\delta_{jk}\frac{t_{i}}{t_{l}}E_{il}=\delta_{jk}E_{il}'.
+$$</p>
+<p>The structure constants of the algebra in the frame are the numbers $1$ and $0$ of this table, and they are unchanged. The gauge is exactly the freedom of choosing the normalized frame; it is not a change of the multiplication.</p>
+<p><strong>The table in coordinates.</strong> The product of two elements is</p>
+<p>$$
+AB=\sum_{i,j}\Bigl(\sum_{m}\alpha_{im}\beta_{mj}\Bigr)E_{ij}
+=\sum_{i,j}\Bigl(\sum_{m}\alpha_{im}'\beta_{mj}'\Bigr)E_{ij}',
+$$</p>
+<p>because the coordinate arrays multiply by the same matrix product in either frame. The gauge is a change of basis of the coordinate space that preserves the matrix multiplication; it is a conjugation of the coordinate array by the diagonal matrix $\operatorname{diag}(t_{0},t_{1},t_{2})^{-1}$? Let us check: $\alpha'_{ij}=(t_{j}/t_{i})\alpha_{ij}$, so the array $\alpha'$ is $T^{-1}\alpha T$ with $T=\operatorname{diag}(t_{0},t_{1},t_{2})$. Indeed $(T^{-1}\alpha T)_{ij}=(t_{j}/t_{i})\alpha_{ij}$. The product is preserved because conjugation by $T$ is an algebra automorphism of the array algebra. This is the coordinate form of the frame change.</p>
+<p><strong>The gauge is an automorphism of the coordinate algebra.</strong> The map $\alpha\mapsto T^{-1}\alpha T$ is an automorphism of $M_{3}(\mathbb{C})$; it is inner, given by the diagonal matrix $T$. The gauge group is the image of the diagonal torus in $PGL_{3}$, and its action on the coordinates is the adjoint action. The frame change and the coordinate conjugation are the same inner automorphism read in two ways.</p>
+<h2 id="the-count-and-the-cocycle">The Count and the Cocycle</h2>
+<p><strong>The gauge group.</strong> The parameters $t_{0},t_{1},t_{2}$ and $ct_{0},ct_{1},ct_{2}$ give the same rescaling, so the effective group is</p>
+<p>$$
+(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},
+$$</p>
+<p>of complex dimension two. The two parameters are</p>
+<p>$$
+\lambda_{1}=\frac{t_{0}}{t_{1}},\qquad \lambda_{2}=\frac{t_{1}}{t_{2}},
+\qquad
+\frac{t_{0}}{t_{2}}=\lambda_{1}\lambda_{2}.
+$$</p>
+<p>The third ratio is not independent. If a rescaling $E_{ij}\mapsto\lambda_{ij}E_{ij}$ preserves the frame, the cocycle</p>
+<p>$$
+\lambda_{ij}\lambda_{jk}=\lambda_{ik},\qquad \lambda_{ii}=1,\qquad \lambda_{ji}=\lambda_{ij}^{-1}
+$$</p>
+<p>forces $\lambda_{ij}=t_{i}/t_{j}$ for $t_{i}=\lambda_{i0}$, so the solution space is exactly the two-parameter torus. In particular $\lambda_{13}=\lambda_{12}\lambda_{23}$: the composite carries the product.</p>
+<p><strong>The count of the frame.</strong> The frame has dimension $8$, the root orbit dimension $6$, and the gauge dimension $2$:</p>
+<p>$$
+8=6+2.
+$$</p>
+<p>The frame is a point of $PGL_{3}$, the root is a point of $PGL_{3}/T$, and the gauge is the torus $T\cong(\mathbb{C}^{\times})^{2}$. The count is the orbit-stabiliser count of <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<p><strong>The composite is forced.</strong> The simple nilpotents $E_{12},E_{23}$ carry $\lambda_{1},\lambda_{2}$; the composite $E_{13}=E_{12}E_{23}$ carries $\lambda_{1}\lambda_{2}$. There is no independent scalar $\lambda_{3}$ on $E_{13}$: the cocycle would fail unless $\lambda_{3}=\lambda_{1}\lambda_{2}$. The same holds for the opposite composite $E_{31}=E_{32}E_{21}$, which carries $\lambda_{1}^{-1}\lambda_{2}^{-1}$.</p>
+<p><strong>The two parameters are the simple roots.</strong> In the character lattice of the torus, the weights of $E_{12}$ and $E_{23}$ are the two simple roots $\alpha_{1},\alpha_{2}$ of $A_{2}$, and the weight of $E_{13}$ is the highest root $\alpha_{1}+\alpha_{2}$. The gauge parameters $\lambda_{1},\lambda_{2}$ are the values of the two simple roots; the composite value is their product. The gauge is the maximal torus of $PGL_{3}$, and the root system is the $A_{2}$ of <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<h2 id="the-comparison-with-the-biquaternion-single-math121">The Comparison with the Biquaternion Single $\lambda$</h2>
+<p><strong>In $M_{2}(\mathbb{C})$ the frame has one gauge parameter, not two.</strong></p>
+<p>For the biquaternion algebra $\mathbb{B}\cong M_{2}(\mathbb{C})$, the frame is $E_{11},E_{22},E_{12},E_{21}$, and the gauge is</p>
+<p>$$
+E_{12}\longmapsto\mu E_{12},\qquad E_{21}\longmapsto\mu^{-1}E_{21},\qquad \mu\in\mathbb{C}^{\times}.
+$$</p>
+<p>The effective group is $(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}\cong\mathbb{C}^{\times}$, of dimension one. The single parameter $\mu$ is the analogue of the product $\lambda_{1}\lambda_{2}$ of the $M_{3}$ gauge, but in $M_{2}$ there is no simple-root decomposition into two steps: the root system is $A_{1}$, with one node, and the one off-diagonal pair carries the one weight $\mu$.</p>
+<p><strong>The comparison.</strong></p>
+<ul>
+<li><strong>$M_{2}$:</strong> one idempotent pair, one off-diagonal pair, one gauge parameter $\mu$, one invariant $\alpha_{12}\alpha_{21}$.</li>
+<li><strong>$M_{3}$:</strong> three idempotents, three off-diagonal pairs, two gauge parameters $\lambda_{1},\lambda_{2}$, and the composite pair carries $\lambda_{1}\lambda_{2}$.</li>
+<li><strong>The pattern:</strong> for $M_{n}(\mathbb{C})$ the gauge is $(\mathbb{C}^{\times})^{n-1}$; the count is the number of simple roots of $A_{n-1}$, which is $n-1$. The biquaternion case is $n=2$, one parameter; the $M_{3}$ case is $n=3$, two parameters.</li>
+</ul>
+<p><strong>The single $\lambda$ of $\mathbb{B}$ is not a third parameter of $M_{3}$.</strong> The biquaternion $\mu$ and the $M_{3}$ pair $(\lambda_{1},\lambda_{2})$ are the gauge groups of two different frames. In $M_{3}$ the composite carries the product; in $M_{2}$ there is no composite. The two-parameter gauge of $M_{3}$ reduces to the one-parameter gauge of $M_{2}$ only after a degeneration in which one of the two simple nilpotents is set to zero; the remaining parameter is then the single $\lambda$ of the biquaternion corner. This degeneration is the subject of <em>The $M_{2}$ Corner of $M_{3}(\mathbb{C})$</em>.</p>
+<h2 id="the-gauge-is-not-a-physical-phase">The Gauge Is Not a Physical Phase</h2>
+<p><strong>The gauge is an algebraic redundancy of the frame; the global phase is a redundancy of a vector.</strong></p>
+<p>The gauge group $(\mathbb{C}^{\times})^{2}$ acts on the frame by $E_{ij}\mapsto(t_{i}/t_{j})E_{ij}$. It fixes the idempotents, the root, the spectrum, the trace, the determinant and the characteristic polynomial. It is a change of the matrix units, not a change of the element. A physical global phase $e^{i\theta}$ acts on a vector $\psi\in\mathbb{C}^{3}$ by $\psi\mapsto e^{i\theta}\psi$; it is a one-parameter group $U(1)$, and it does not act on the frame in the same way. The two groups act on different spaces and have different dimensions.</p>
+<p><strong>The gauge is complex.</strong> The parameters $t_{i}$ are nonzero complex numbers, not phases. The gauge rescales the off-diagonal entries by complex numbers, including their moduli. The compact real form of the gauge is $U(1)^{2}$, the group of relative phases of the three lines; the diagonal factor $U(1)$ of $U(1)^{3}$ acts trivially on the frame ratios $t_{i}/t_{j}$ and is divided out. This diagonal factor is the algebraic analogue of the global phase of a vector, but it is not the same action: the global phase multiplies a vector of $\mathbb{C}^{3}$, while the diagonal frame rescaling multiplies the matrix units. The two are distinct one-parameter groups acting on different spaces, and the article does not identify them.</p>
+<p><strong>The gauge does not change the state.</strong> A density matrix $\rho$ written in the frame has off-diagonal entries that rescale under the gauge; the diagonal entries and the products of opposite coherences are invariant. The physical state is the element $\rho$, not its coordinate array; the gauge is the freedom of the frame in which the array is written. The global phase of a pure state is the freedom of the vector, not of the frame. The two freedoms are distinct, and the article keeps them distinct.</p>
+<h2 id="summary">Summary</h2>
+<p>The gauge of the $M_{3}$ frame is</p>
+<p>$$
+\boxed{\;E_{ij}\longmapsto\frac{t_{i}}{t_{j}}E_{ij},\qquad
+(t_{0},t_{1},t_{2})\in(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},\;}
+$$</p>
+<p>with the two parameters</p>
+<p>$$
+\lambda_{1}=\frac{t_{0}}{t_{1}},\qquad \lambda_{2}=\frac{t_{1}}{t_{2}},\qquad \lambda_{3}=\lambda_{1}\lambda_{2}.
+$$</p>
+<p>It fixes the idempotents, the root, the trace, the determinant and the spectrum. On the Peirce coordinates it acts by $\alpha_{ij}\mapsto(t_{j}/t_{i})\alpha_{ij}$; the diagonal entries and the products $\alpha_{01}\alpha_{10}$, $\alpha_{12}\alpha_{21}$, $\alpha_{02}\alpha_{20}$ and the three-cycles are invariant. The Peirce table and the multiplication rule are unchanged: the gauge is the freedom of the normalized frame, not a change of the algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_{3}(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gauge group</td>
+<td>$(\mathbb{C}^{\times})^{2}$</td>
+</tr>
+<tr>
+<td>Parameters</td>
+<td>$\lambda_{1},\lambda_{2}$</td>
+</tr>
+<tr>
+<td>Composite rescaling</td>
+<td>$\lambda_{1}\lambda_{2}$</td>
+</tr>
+<tr>
+<td>Third independent scalar</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Idempotents depending on the gauge</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Frame dimension</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>Root orbit dimension</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Gauge dimension</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Biquaternion gauge</td>
+<td>one parameter $\mu$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The single $\lambda$ of the biquaternion algebra is the $n=2$ case of the pattern $(\mathbb{C}^{\times})^{n-1}$; the $M_{3}$ case has two parameters because the root system $A_{2}$ has two simple roots. The gauge is not the global phase of a quantum state: it is a complex two-parameter redundancy of the frame, whose compact form is $U(1)^{2}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t_{i}$</td>
+<td>the three gauge parameters, modulo a common scalar</td>
+</tr>
+<tr>
+<td>$\lambda_{1}=t_{0}/t_{1}$</td>
+<td>the gauge parameter on $E_{12}$</td>
+</tr>
+<tr>
+<td>$\lambda_{2}=t_{1}/t_{2}$</td>
+<td>the gauge parameter on $E_{23}$</td>
+</tr>
+<tr>
+<td>$\lambda_{3}=\lambda_{1}\lambda_{2}$</td>
+<td>the forced parameter on $E_{13}$</td>
+</tr>
+<tr>
+<td>$\alpha_{ij}$</td>
+<td>the Peirce coordinates</td>
+</tr>
+<tr>
+<td>$\alpha_{ij}'$</td>
+<td>the coordinates after the gauge</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>the single gauge parameter of the biquaternion frame</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the frame, the nilpotents and the cocycle.</li>
+<li><a href="the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a>, for the Peirce coordinates and the table.</li>
+<li><a href="the-m2-corner-of-m3c.html">The $M_2$ Corner of $M_3(\mathbb{C})$</a>, for the biquaternion corner and its single parameter.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m3c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root and the idempotents that the gauge fixes.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the single $\mu$ of the biquaternion frame.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m3c.html">The Involution and the Hermitian Structure</a>, for the compact real form and the global phase.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

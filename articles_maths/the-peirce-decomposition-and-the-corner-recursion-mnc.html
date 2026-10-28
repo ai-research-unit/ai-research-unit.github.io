@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Peirce Decomposition and the Corner Recursion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-peirce-decomposition-and-the-corner-recursion"><strong>The Peirce Decomposition and the Corner Recursion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The idempotents of a root of unity cut the algebra into corner lines, and a coarser idempotent cuts it into four corner blocks whose dimensions are $p^{2}$, $p(n-p)$, $(n-p)p$ and $(n-p)^{2}$.</strong> The first cut is the Peirce decomposition of the full flag; the second is the recursion that embeds one matrix algebra in another.</p>
+<p>The article states both cuts and the multiplication rule between the corners, proves the corner isomorphisms, and reads the recursion that orders the categories $M_3$, $M_4$, $M_5$, $M_6$. It also states what the decomposition is not: a direct-sum decomposition of the algebra into subspaces, not a list of spinors.</p>
+<p>The idempotents come from <em>Roots of Unity and the Lagrange Idempotents</em>; the vectors inside the corner lines and the gauge that acts on them are <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<h2 id="the-spectral-flag">The Spectral Flag</h2>
+<p><strong>A root with simple spectrum produces a complete flag, and the flag is what the Peirce decomposition depends on.</strong> Let $H^{n}=I$ have simple spectrum, with projectors $P_k$ and eigenvalues $\zeta_k$, $k=0,\dots,n-1$. Put $V_k=\operatorname{im}P_k$, a line. The $V_k$ are independent and sum to $\mathbb{C}^{n}$, and the partial sums</p>
+<p>$$
+F_k=V_0\oplus V_1\oplus\cdots\oplus V_k,\qquad k=0,\dots,n-1,
+$$</p>
+<p>form the complete flag</p>
+<p>$$
+0\subset F_0\subset F_1\subset\cdots\subset F_{n-1}=\mathbb{C}^{n},\qquad \dim F_k=k+1.
+$$</p>
+<p><strong>The flag is spectral, not standard.</strong> The standard flag of <em>The Matrix Algebra $M_n(\mathbb{C})$</em> is the case $V_k=\mathbb{C}e_k$, that is, $H=\operatorname{diag}(\zeta_0,\dots,\zeta_{n-1})$. Every other root gives a flag in general position with respect to the standard one. The construction depends only on the flag, so it is invariant under a change of basis that keeps $H$.</p>
+<p><strong>Different roots, different flags.</strong> The map $H\mapsto F$ is the projection $PGL_n(\mathbb{C})/T\to PGL_n(\mathbb{C})/B$ from the root set to the flag variety. Its fibre is the gauge of <em>The Frame, the Simple Nilpotents and the Gauge</em>: the root fixes the flag, and the gauge fixes the vectors inside the lines.</p>
+<h2 id="the-peirce-lines">The Peirce Lines</h2>
+<p><strong>The Peirce corner $A_{kl}$ is the space of maps from the $l$-th line to the $k$-th line.</strong> Put</p>
+<p>$$
+A_{kl}=P_kM_n(\mathbb{C})P_l=\{P_kXP_l: X\in M_n(\mathbb{C})\}.
+$$</p>
+<p><strong>Proposition.</strong> Each $A_{kl}$ is a complex line, the lines are independent and sum to the algebra,</p>
+<p>$$
+M_n(\mathbb{C})=\bigoplus_{k,l=0}^{n-1}A_{kl},\qquad \dim_{\mathbb{C}}A_{kl}=1,
+$$</p>
+<p>and the product obeys</p>
+<p>$$
+A_{kl}A_{mn}\subseteq\delta_{lm}A_{kn}.
+$$</p>
+<p><em>Proof.</em> The rank-one projector $P_k$ has image the line $V_k$, so $P_kXP_l$ is a linear map $V_l\to V_k$ followed by the inclusions; the space of such maps is $\operatorname{Hom}(V_l,V_k)$, of dimension $1$. The direct sum is the decomposition of $\operatorname{End}(\mathbb{C}^{n})=\bigoplus_{k,l}\operatorname{Hom}(V_l,V_k)$ over the direct-sum decomposition $\mathbb{C}^{n}=\bigoplus_kV_k$. For the product, $P_kXP_l\,P_mYP_n=\delta_{lm}P_kXP_lYP_n\in A_{kn}$. $\square$</p>
+<p><strong>The multiplication table is the table of matrix units.</strong> Choosing a nonzero $E_{kl}\in A_{kl}$ gives $E_{kl}E_{mn}=\delta_{lm}c_{kmn}E_{kn}$ with a scalar $c_{kmn}$ depending on the choices; the frame article chooses the vectors so that $c=1$. The Peirce lines are therefore an intrinsic version of the matrix units, defined without a choice of basis inside the lines.</p>
+<p><strong>The Peirce coordinates.</strong> Every $X\in M_n(\mathbb{C})$ has a unique decomposition</p>
+<p>$$
+X=\sum_{k,l}X_{kl},\qquad X_{kl}=P_kXP_l\in A_{kl},
+$$</p>
+<p>and the product is read in the coordinates as</p>
+<p>$$
+(XY)_{kl}=\sum_{m}X_{km}Y_{ml}.
+$$</p>
+<p>This is the matrix product written in the spectral basis. The diagonal corners $A_{kk}$ are the lines of the identity on $V_k$; the off-diagonal corners are the maps between distinct lines.</p>
+<h2 id="the-coarse-split">The Coarse Split</h2>
+<p><strong>A single idempotent of rank $p$ cuts the algebra into four blocks.</strong> Let $\Pi\in M_n(\mathbb{C})$ be an idempotent of rank $p$, $1\le p\le n-1$, and put $Q=I-\Pi$. The Peirce decomposition relative to $\Pi$ is</p>
+<p>$$
+M_n(\mathbb{C})=\Pi M\Pi\oplus\Pi MQ\oplus QM\Pi\oplus QMQ.
+$$</p>
+<p>Write the four corners as $A=\Pi M\Pi$, $B=\Pi MQ$, $C=QM\Pi$, $D=QMQ$. Their complex dimensions are</p>
+<p>$$
+\dim A=p^{2},\qquad \dim B=p(n-p),\qquad \dim C=(n-p)p,\qquad \dim D=(n-p)^{2},
+$$</p>
+<p>and they sum to $p^{2}+2p(n-p)+(n-p)^{2}=n^{2}$.</p>
+<p><strong>The multiplication table of the coarse split.</strong> In block form, with an element written $\begin{pmatrix}A&B\\C&D\end{pmatrix}$,</p>
+<p>$$
+\begin{pmatrix}A&B\\C&D\end{pmatrix}
+\begin{pmatrix}A'&B'\\C'&D'\end{pmatrix}
+=
+\begin{pmatrix}AA'+BC'&AB'+BD'\\CA'+DC'&CB'+DD'\end{pmatrix}.
+$$</p>
+<p>The diagonal blocks are subalgebras with units $\Pi$ and $Q$; the off-diagonal blocks are bimodules. The table shows that the cross terms can return to the diagonal: $BC'\subseteq A$ and $CB'\subseteq D$. This is why the split is not a direct sum of algebras.</p>
+<p><strong>The split is not a decomposition into ideals.</strong> The algebra $M_n(\mathbb{C})$ is simple, so its only two-sided ideals are $0$ and the algebra. The four corners are subspaces, and the block-diagonal part $A\oplus D$ is a subalgebra, not an ideal. The decomposition is a decomposition of the vector space together with a graded multiplication; it is not a decomposition of the algebra as a direct sum of ideals. When the categories say that $M_5$ "contains" $M_2\oplus M_3$, the word means the block-diagonal subalgebra, not an ideal.</p>
+<h2 id="the-corner-isomorphisms">The Corner Isomorphisms</h2>
+<p><strong>Each diagonal corner is a full matrix algebra.</strong> Choose a basis $u_1,\dots,u_p$ of $\operatorname{im}\Pi$ and a basis $w_1,\dots,w_{n-p}$ of $\operatorname{im}Q$. In the basis $(u,w)$ of $\mathbb{C}^{n}$,</p>
+<p>$$
+\Pi=\begin{pmatrix}I_p&0\\0&0\end{pmatrix},\qquad
+Q=\begin{pmatrix}0&0\\0&I_{n-p}\end{pmatrix},
+$$</p>
+<p>and the four corners are the four blocks of the block matrix. The map that deletes the zero rows and columns gives isomorphisms of algebras</p>
+<p>$$
+\Pi M_n\Pi\cong M_p(\mathbb{C}),\qquad QM_nQ\cong M_{n-p}(\mathbb{C}),
+$$</p>
+<p>unital for the units $\Pi$ and $Q$ respectively. The off-diagonal corners are</p>
+<p>$$
+\Pi M_nQ\cong\operatorname{Hom}(\operatorname{im}Q,\operatorname{im}\Pi)\cong M_{p,n-p}(\mathbb{C}),
+$$</p>
+<p>and $QM_n\Pi\cong M_{n-p,p}(\mathbb{C})$. The isomorphisms depend on the choice of bases, but the dimensions do not.</p>
+<p><strong>The diagonal corner is a matrix algebra with a compressed unit.</strong> The unit of $A=\Pi M\Pi$ is $\Pi$, not $I$; the trace of $A$ as a matrix algebra is the compression $\operatorname{tr}(\Pi X\Pi)$, not $\operatorname{tr}X$. The complement $\mathbb{C}(I-\Pi)$ is not part of $A$. This is the precise sense in which $A$ is a matrix algebra and not a unital subalgebra of $M_n$ with the unit $I$.</p>
+<p><strong>The corner is a $*$-algebra only for a projection.</strong> If $\Pi^{*}=\Pi$ then the compression $X\mapsto\Pi X^{*}\Pi$ is an involution of $A$, and $A$ is a $*$-subalgebra of $M_n$. If $\Pi$ is merely idempotent and not Hermitian, the compression of the involution does not land in $A$ in general, and $A$ is only an algebra. The distinction matters in the biquaternion case, where the natural idempotents need not be Hermitian for the coefficient conjugation.</p>
+<h2 id="the-corner-recursion">The Corner Recursion</h2>
+<p><strong>A rank-$p$ idempotent exhibits $M_n$ as a block matrix algebra over $M_p$ and $M_{n-p}$.</strong> With the basis above,</p>
+<p>$$
+M_n(\mathbb{C})\supset
+\left\{\begin{pmatrix}A&0\\0&D\end{pmatrix}:A\in M_p,\ D\in M_{n-p}\right\}
+\cong M_p(\mathbb{C})\oplus M_{n-p}(\mathbb{C}),
+$$</p>
+<p>a block-diagonal subalgebra, and the off-diagonal blocks $B$ and $C$ complete it to the whole algebra. The inclusion is the recursion: <strong>$M_n$ contains $M_p\oplus M_{n-p}$ whenever $1\le p\le n-1$.</strong></p>
+<p><strong>The cases that order the categories.</strong> Taking the rank $p$ and its complement:</p>
+<p>$$
+M_3\supset M_2\oplus M_1,\qquad
+M_4\supset M_2\oplus M_2\ \text{and}\ M_3\oplus M_1,
+$$</p>
+<p>$$
+M_5\supset M_2\oplus M_3\ \text{and}\ M_4\oplus M_1,\qquad
+M_6\supset M_3\oplus M_3,\ M_2\oplus M_4\ \text{and}\ M_5\oplus M_1.
+$$</p>
+<p>The two balanced cases are the ones the categories single out: $M_4\supset M_2\oplus M_2$, $M_6\supset M_3\oplus M_3$; the unbalanced ones are $M_5\supset M_2\oplus M_3$ and $M_6\supset M_2\oplus M_4$. This is why the categories are ordered $M_3,M_4,M_5,M_6$: each contains the previous ones as corners, and the articles of a later category can cite the earlier ones.</p>
+<p><strong>The Peirce dimensions in a table.</strong> For a rank-one idempotent and for the balanced split:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>rank-one corners</th>
+<th>rank-$p$ corners</th>
+<th>balanced split</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3$</td>
+<td>$1+2+2+4$</td>
+<td>$p=2$: $4+2+2+1$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$1+3+3+9$</td>
+<td>$p=2$: $4+4+4+4$</td>
+<td>$M_2\oplus M_2$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$1+4+4+16$</td>
+<td>$p=2$: $4+6+6+9$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$1+5+5+25$</td>
+<td>$p=2$: $4+8+8+16$; $p=3$: $9+9+9+9$</td>
+<td>$M_3\oplus M_3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rank-one row is the full Peirce decomposition seen from one line: $1$ for the line, $n-1$ for the maps out of it, $n-1$ for the maps into it, and $(n-1)^{2}$ for the complement. The remaining $n-1$ lines of the full flag are the Peirce lines of the complement, refined further.</p>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p><strong>At $n=2$ the full Peirce decomposition has four lines, and the coarse split of a rank-one idempotent is the same four lines.</strong> The rank-one corners are $1+1+1+1$, and for $p=1$ the coarse split and the full split coincide: there is only one line to separate. This is a feature of $n=2$ and does not persist.</p>
+<p><strong>The diagonal lines carry canonical vectors and the mixed lines do not.</strong> In the algebra $M_2(\mathbb{C})$, the corner $P_kM_2P_k$ is spanned by $P_k$ itself, which is canonical. The mixed corner $P_kM_2P_l$ is spanned by a matrix unit $E_{kl}$ defined only up to a scalar. The biquaternion frame article read that scalar freedom as a second root; the correct reading is the gauge parameter $\lambda$, one complex number for the two mixed lines, acting as $E_{kl}\mapsto\lambda E_{kl}$ and $E_{lk}\mapsto\lambda^{-1}E_{lk}$. The idempotents $P_k$ do not depend on $\lambda$.</p>
+<h2 id="what-the-decomposition-is-not">What the Decomposition Is Not</h2>
+<p><strong>The Peirce decomposition is a direct-sum decomposition of the algebra, not a list of spinors.</strong> The summands $A_{kl}$ are spaces of linear maps between the lines of a flag. An element of $A_{kl}$ is a map $V_l\to V_k$, not a spinor. The decomposition is a statement about the algebra as a module over itself, not about a representation of a spin group.</p>
+<p><strong>Not every Peirce element is a spinor.</strong> The corner $A_{kl}$ is one-dimensional, and every nonzero element of it is a map of rank one between two lines. Calling such an element a spinor would make every matrix unit a spinor, which is false. A spinor, where the word applies, is a vector of the carrier module of the spin chain, introduced in <em>The Spin Chain and the Adjoint Decomposition</em>; it is not an element of a Peirce corner.</p>
+<p><strong>The carrier is not a corner.</strong> For $n=2$ the carrier is $\mathbb{C}^{2}$, isomorphic to a minimal left ideal; for $n\ge3$ the carrier is $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$, of dimension $n$, and it is not isomorphic to any Peirce corner. The corner $A_{kl}$ has dimension $1$ for every $n$; the carrier has dimension $n$. They never coincide in dimension for $n\ge2$.</p>
+<h2 id="summary">Summary</h2>
+<p>A root with simple spectrum gives a complete flag, and the Peirce corners $A_{kl}=\operatorname{Hom}(V_l,V_k)$ are lines that sum to the algebra with the multiplication rule $A_{kl}A_{mn}\subseteq\delta_{lm}A_{kn}$. A rank-$p$ idempotent gives four corners of dimensions $p^{2}$, $p(n-p)$, $(n-p)p$ and $(n-p)^{2}$, with diagonal corners isomorphic to $M_p$ and $M_{n-p}$ and off-diagonal corners isomorphic to rectangular matrix spaces. The block-diagonal subalgebra is $M_p\oplus M_{n-p}$, which is the recursion $M_n\supset M_p\oplus M_{n-p}$ and the reason the categories are ordered $M_3,\dots,M_6$. The decomposition is a direct sum of subspaces, not of ideals, and its elements are maps, not spinors.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_k$</td>
+<td>the Lagrange projector of $\zeta_k$, of rank $1$</td>
+</tr>
+<tr>
+<td>$V_k=\operatorname{im}P_k$</td>
+<td>the $k$-th spectral line</td>
+</tr>
+<tr>
+<td>$F_k$</td>
+<td>the partial sum $V_0\oplus\cdots\oplus V_k$</td>
+</tr>
+<tr>
+<td>$A_{kl}=P_kM_nP_l$</td>
+<td>the Peirce corner, a line</td>
+</tr>
+<tr>
+<td>$\Pi$, $Q=I-\Pi$</td>
+<td>a coarse idempotent of rank $p$ and its complement</td>
+</tr>
+<tr>
+<td>$A,B,C,D$</td>
+<td>the four coarse corners $\Pi M\Pi$, $\Pi MQ$, $QM\Pi$, $QMQ$</td>
+</tr>
+<tr>
+<td>$M_{p,n-p}$</td>
+<td>the space of $p\times(n-p)$ matrices</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Peirce decompositions, corner algebras and the multiplication table.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for block matrices, ranks and the spectral decomposition.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-mnc.html">Roots of Unity and the Lagrange Idempotents</a>, for the idempotents that produce the flag.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-mnc.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the vectors inside the corner lines.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-mnc.html">The Spin Chain and the Adjoint Decomposition</a>, for the carrier, which is not a corner.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the biquaternion case $n=2$, where the coarse and the fine splits coincide.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

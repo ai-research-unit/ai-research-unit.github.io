@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Two Chain and the Adjoint $1+3+5+7+9$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-two-chain-and-the-adjoint-math0"><strong>The Spin-Two Chain and the Adjoint $1+3+5+7+9$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The adjoint decomposition of <em>The Spin Chain and the Adjoint Decomposition</em> is</p>
+<p>$$
+\mathfrak{gl}_5=V_0\oplus V_1\oplus V_2\oplus V_3\oplus V_4,
+\qquad 1+3+5+7+9=25,
+$$</p>
+<p>with $V_j$ the irreducible module of highest weight $j$. This article exhibits the <strong>chain</strong>: an explicit highest weight vector $X_j\in V_j$ for each $j$, the lowering formula for the adjoint action of $J_-$, and the weight diagram of the whole algebra. The highest weight vectors are</p>
+<p>$$
+X_0=I,\qquad X_1=J_+,\qquad X_2=2E_{13}+\sqrt6E_{24}+2E_{35},\qquad X_3=E_{14}+E_{25},\qquad X_4=E_{15},
+$$</p>
+<p>of weights $0,1,2,3,4$. The lowering operator acts on the matrix units by</p>
+<p>$$
+(\operatorname{ad}_{J_-})E_{ij}=c_iE_{i+1,j}-c_{j-1}E_{i,j-1},
+\qquad c_k=\sqrt{k(5-k)},
+$$</p>
+<p>with the conventions $c_0=c_5=0$ and the terms omitted when an index leaves $\{1,\dots,5\}$. The formula is the <strong>ladder</strong>: it moves the row index down with coefficient $c_i$ and the column index left with coefficient $c_{j-1}$, and the two moves are the two ways a weight can drop by one.</p>
+<p>The chain is the spin-two chain of the carrier, read on the adjoint. The carrier itself is $V_2=\mathbb{C}^5$ with the weights $2,1,0,-1,-2$; the adjoint is $V_2\otimes V_2=V_0\oplus V_1\oplus V_2\oplus V_3\oplus V_4$. The five summands are the five <strong>highest-weight sectors</strong>: the scalar, the vector, the spin two, the spin three and the spin four. The article computes each sector, its highest weight vector and its weight content, and compares the chain with the biquaternion case $n=2$.</p>
+<p>The article assumes the carrier, the matrices $J_3,J_+,J_-$ and the Clebsch–Gordan decomposition of <em>The Spin Chain and the Adjoint Decomposition</em>. The modules and the minimal left ideals are <em>The Modules and the Minimal Left Ideals</em>; the explicit matrices of the carrier are repeated here for the computation of the chain.</p>
+<h2 id="the-lowering-formula">The Lowering Formula</h2>
+<h3 id="the-action-on-the-matrix-units">The Action on the Matrix Units</h3>
+<p><strong>Theorem.</strong> For $1\le i,j\le5$,</p>
+<p>$$
+(\operatorname{ad}_{J_3})E_{ij}=(j-i)E_{ij},\qquad
+(\operatorname{ad}_{J_-})E_{ij}=c_iE_{i+1,j}-c_{j-1}E_{i,j-1},
+$$</p>
+<p>$$
+(\operatorname{ad}_{J_+})E_{ij}=c_{i-1}E_{i-1,j}-c_jE_{i,j+1},
+$$</p>
+<p>with $c_k=\sqrt{k(5-k)}$ and $c_0=c_5=0$; a term is omitted when its row or column index is outside $\{1,\dots,5\}$.</p>
+<p><strong>Proof.</strong> The weight is $[J_3,E_{ij}]=(m_i-m_j)E_{ij}=(3-i-(3-j))E_{ij}=(j-i)E_{ij}$, where $m_k=3-k$. For the lowering operator, $J_-=\sum_{k=1}^4c_kE_{k+1,k}$. Then</p>
+<p>$$
+J_-E_{ij}=\sum_{k=1}^{4}c_kE_{k+1,k}E_{ij}=c_iE_{i+1,j}
+$$</p>
+<p>because $E_{k+1,k}E_{ij}=\delta_{k,i}E_{k+1,j}$, and</p>
+<p>$$
+E_{ij}J_-=\sum_{k=1}^{4}c_kE_{ij}E_{k+1,k}=c_{j-1}E_{i,j-1}
+$$</p>
+<p>because $E_{ij}E_{k+1,k}=\delta_{j,k+1}E_{i,k}$. Subtract. The formula for $J_+$ is the transpose, or the same computation with the roles of the rows and columns exchanged.</p>
+<p><strong>Corollary.</strong> The lowering formula preserves the weight minus one:</p>
+<p>$$
+\operatorname{ad}_{J_3}\bigl((\operatorname{ad}_{J_-})E_{ij}\bigr)=(j-i-1)(\operatorname{ad}_{J_-})E_{ij},
+$$</p>
+<p>and the raising formula preserves the weight plus one. The two terms of the lowering formula are the two moves of a weight: down one row, or left one column.</p>
+<p><strong>Proof.</strong> Each term has weight $j-i-1$: $E_{i+1,j}$ has weight $j-(i+1)=j-i-1$, and $E_{i,j-1}$ has weight $(j-1)-i=j-i-1$. The raising case is the transpose.</p>
+<h3 id="the-explicit-matrices">The Explicit Matrices</h3>
+<p>The generators are</p>
+<p>$$
+J_3=\operatorname{diag}(2,1,0,-1,-2),\qquad
+J_+=\begin{pmatrix}
+0&2&0&0&0\\
+0&0&\sqrt6&0&0\\
+0&0&0&\sqrt6&0\\
+0&0&0&0&2\\
+0&0&0&0&0
+\end{pmatrix},
+\qquad
+J_-=J_+^{\mathsf T}.
+$$</p>
+<p>The lowering formula can be read from the two nonzero entries of each row and column of $J_-$: the entry $c_i$ in row $i+1$ moves the row index, and the entry $c_{j-1}$ in column $j-1$ moves the column index.</p>
+<h2 id="the-highest-weight-vectors">The Highest Weight Vectors</h2>
+<h3 id="the-five-vectors">The Five Vectors</h3>
+<p><strong>Definition.</strong> The <strong>chain vectors</strong> are</p>
+<p>$$
+X_0=I,\qquad X_1=J_+,\qquad X_2=2E_{13}+\sqrt6E_{24}+2E_{35},\qquad X_3=E_{14}+E_{25},\qquad X_4=E_{15}.
+$$</p>
+<p><strong>Theorem.</strong> For each $j=0,\dots,4$, the vector $X_j$ is a highest weight vector of weight $j$:</p>
+<p>$$
+\operatorname{ad}_{J_3}X_j=jX_j,\qquad \operatorname{ad}_{J_+}X_j=0.
+$$</p>
+<p><strong>Proof.</strong> The weights are read on the matrix units: $I$ has weight $0$; $J_+=\sum_kc_kE_{k,k+1}$ is a sum of units of weight $+1$; $X_2$ is a sum of units $E_{13},E_{24},E_{35}$ of weight $2$; $X_3$ is a sum of units $E_{14},E_{25}$ of weight $3$; $X_4=E_{15}$ has weight $4$. The annihilation by $\operatorname{ad}_{J_+}$ is checked term by term.</p>
+<p>For $X_0=I$: $\operatorname{ad}_{J_+}I=J_+I-IJ_+=0$.</p>
+<p>For $X_1=J_+$: $\operatorname{ad}_{J_+}J_+=[J_+,J_+]=0$.</p>
+<p>For $X_2$: using the raising formula,</p>
+<p>$$
+\operatorname{ad}_{J_+}E_{13}=c_0E_{03}-c_3E_{14}=-\sqrt6E_{14},
+$$</p>
+<p>$$
+\operatorname{ad}_{J_+}E_{24}=c_1E_{14}-c_4E_{25}=2E_{14}-2E_{25},
+$$</p>
+<p>$$
+\operatorname{ad}_{J_+}E_{35}=c_2E_{25}-c_5E_{36}=\sqrt6E_{25}.
+$$</p>
+<p>Hence</p>
+<p>$$
+\operatorname{ad}_{J_+}X_2=2(-\sqrt6E_{14})+\sqrt6(2E_{14}-2E_{25})+2(\sqrt6E_{25})=0.
+$$</p>
+<p>For $X_3$:</p>
+<p>$$
+\operatorname{ad}_{J_+}E_{14}=c_0E_{04}-c_4E_{15}=-2E_{15},\qquad
+\operatorname{ad}_{J_+}E_{25}=c_1E_{15}-c_5E_{26}=2E_{15},
+$$</p>
+<p>so $\operatorname{ad}_{J_+}X_3=0$.</p>
+<p>For $X_4=E_{15}$:</p>
+<p>$$
+\operatorname{ad}_{J_+}E_{15}=c_0E_{05}-c_5E_{16}=0.
+$$</p>
+<p><strong>Remark.</strong> The vector $X_2$ is the unique highest weight vector of weight $2$ up to scale in the span of $E_{13},E_{24},E_{35}$; the coefficients solve the two equations $2b=\sqrt6a$ and $\sqrt6c=2b$. The vector $X_3$ is the unique one of weight $3$ in the span of $E_{14},E_{25}$, with equal coefficients. The vectors $X_0,X_1,X_4$ are the obvious highest weight vectors of the scalar, the raising operator and the top corner.</p>
+<h3 id="the-cyclic-modules">The Cyclic Modules</h3>
+<p><strong>Theorem.</strong> The cyclic module $V(j)=\mathbb{C}[J_-,J_3]X_j$ is irreducible of highest weight $j$, of dimension $2j+1$. The five modules $V(0),\dots,V(4)$ are the summands of the adjoint decomposition.</p>
+<p><strong>Proof.</strong> Each $X_j$ is a highest weight vector, so the module it generates is irreducible of highest weight $j$ by the standard highest-weight theory of $\mathfrak{sl}_2$; the dimension is $2j+1$. The five modules have dimensions $1,3,5,7,9$, whose sum is $25=\dim\mathfrak{gl}_5$. Their characters are $\sum_{m=-j}^{j}t^m$, whose sum is</p>
+<p>$$
+\sum_{j=0}^{4}\sum_{m=-j}^{j}t^m=\sum_{r=-4}^{4}(5-|r|)t^r,
+$$</p>
+<p>which is the character of $\mathfrak{gl}_5$ under $\operatorname{ad}_{J_3}$. Since both modules are semisimple and have the same character, the sum of the five cyclic modules is the whole algebra and the decomposition is direct. The summand $V(j)$ is the $V_j$ of the Clebsch–Gordan decomposition.</p>
+<p><strong>Corollary.</strong> The highest weights $0,1,2,3,4$ occur once each, and the chain vectors are a set of highest weight vectors, one per summand. The adjoint module is multiplicity-free.</p>
+<p><strong>Proof.</strong> The five cyclic modules are irreducible, their highest weights are distinct and their dimensions sum to $25$; a multiplicity would make the sum exceed $25$ or the character differ.</p>
+<h2 id="the-ladder">The Ladder</h2>
+<h3 id="the-lowering-of-the-chain-vectors">The Lowering of the Chain Vectors</h3>
+<p><strong>Proposition.</strong> The lowering operator acts on the chain vectors by</p>
+<p>$$
+\operatorname{ad}_{J_-}X_0=0,\qquad
+\operatorname{ad}_{J_-}X_1=-2J_3,\qquad
+\operatorname{ad}_{J_-}X_4=2E_{25}-2E_{14},
+$$</p>
+<p>$$
+\operatorname{ad}_{J_-}X_3=\sqrt6(E_{35}-E_{13}),
+$$</p>
+<p>$$
+\operatorname{ad}_{J_-}X_2=-2\sqrt6E_{12}-2E_{23}+2E_{34}+2\sqrt6E_{45}.
+$$</p>
+<p><strong>Proof.</strong> Apply the lowering formula term by term.</p>
+<p>For $X_1=J_+=\sum_kc_kE_{k,k+1}$, the lowering of each simple unit is</p>
+<p>$$
+\operatorname{ad}_{J_-}E_{k,k+1}=c_kE_{k+1,k+1}-c_kE_{k,k},
+$$</p>
+<p>so</p>
+<p>$$
+\operatorname{ad}_{J_-}J_+=\sum_{k=1}^{4}c_k^2(E_{k+1,k+1}-E_{kk})=-2J_3,
+$$</p>
+<p>because $c_k^2=k(5-k)$ and the telescoping sum gives the diagonal entries $2(3-k)=2m_k$.</p>
+<p>For $X_4=E_{15}$: $\operatorname{ad}_{J_-}E_{15}=c_1E_{25}-c_4E_{14}=2E_{25}-2E_{14}$.</p>
+<p>For $X_3=E_{14}+E_{25}$:</p>
+<p>$$
+\operatorname{ad}_{J_-}E_{14}=c_1E_{24}-c_3E_{13}=2E_{24}-\sqrt6E_{13},
+$$</p>
+<p>$$
+\operatorname{ad}_{J_-}E_{25}=c_2E_{35}-c_4E_{24}=\sqrt6E_{35}-2E_{24},
+$$</p>
+<p>and the sum is $\sqrt6(E_{35}-E_{13})$.</p>
+<p>For $X_2=2E_{13}+\sqrt6E_{24}+2E_{35}$:</p>
+<p>$$
+2\operatorname{ad}_{J_-}E_{13}=4E_{23}-2\sqrt6E_{12},
+$$</p>
+<p>$$
+\sqrt6\operatorname{ad}_{J_-}E_{24}=6E_{34}-6E_{23},
+$$</p>
+<p>$$
+2\operatorname{ad}_{J_-}E_{35}=2\sqrt6E_{45}-4E_{34},
+$$</p>
+<p>and the sum is $-2\sqrt6E_{12}-2E_{23}+2E_{34}+2\sqrt6E_{45}$.</p>
+<h3 id="the-weight-diagram">The Weight Diagram</h3>
+<p>The weights of $\mathfrak{gl}_5$ under $\operatorname{ad}_{J_3}$ and their multiplicities are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>weight $r$</th>
+<th>$-4$</th>
+<th>$-3$</th>
+<th>$-2$</th>
+<th>$-1$</th>
+<th>$0$</th>
+<th>$1$</th>
+<th>$2$</th>
+<th>$3$</th>
+<th>$4$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>multiplicity</td>
+<td>$1$</td>
+<td>$2$</td>
+<td>$3$</td>
+<td>$4$</td>
+<td>$5$</td>
+<td>$4$</td>
+<td>$3$</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The five summands contribute the following weights:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>module</th>
+<th>dimension</th>
+<th>weights</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_0$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$V_1$</td>
+<td>$3$</td>
+<td>$-1,0,1$</td>
+</tr>
+<tr>
+<td>$V_2$</td>
+<td>$5$</td>
+<td>$-2,-1,0,1,2$</td>
+</tr>
+<tr>
+<td>$V_3$</td>
+<td>$7$</td>
+<td>$-3,-2,-1,0,1,2,3$</td>
+</tr>
+<tr>
+<td>$V_4$</td>
+<td>$9$</td>
+<td>$-4,-3,-2,-1,0,1,2,3,4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The sum of the multiplicities in each weight is the multiplicity in the table: at weight $0$, all five modules contribute, $1+1+1+1+1=5$; at weight $1$, the modules $V_1,V_2,V_3,V_4$ contribute, $4$; at weight $4$, only $V_4$ contributes, $1$.</p>
+<p><strong>Proposition.</strong> The weight multiplicities determine the chain: the multiplicity of $V_j$ is the difference of the multiplicities of the weights $j$ and $j+1$,</p>
+<p>$$
+m_j=5-|j|-(5-|j+1|)=1,\qquad j=0,1,2,3,4.
+$$</p>
+<p><strong>Proof.</strong> In a sum of highest-weight modules, the multiplicity of the weight $r$ is $\sum_{j\ge|r|}m_j$; subtracting consecutive weights gives $m_j$. The values are $5-4=1$, $4-3=1$, $3-2=1$, $2-1=1$, $1-0=1$.</p>
+<h3 id="the-chain-from-math180">The Chain from $E_{15}$</h3>
+<p>The top vector $E_{15}$ has weight $4$. The first lowering is</p>
+<p>$$
+E_{15}\longmapsto 2E_{25}-2E_{14},
+$$</p>
+<p>of weight $3$, and the next is</p>
+<p>$$
+2E_{25}-2E_{14}\longmapsto 2(\sqrt6E_{35}-2E_{24})-2(2E_{24}-\sqrt6E_{13})
+=2\sqrt6E_{13}-8E_{24}+2\sqrt6E_{35},
+$$</p>
+<p>of weight $2$. The chain continues through weights $1,0,-1,-2,-3,-4$, with one vector at each weight in the module $V_4$; the nine vectors span the nine-dimensional summand. The lower weights are reached by the two moves of the formula, down a row and left a column; the chain is the orbit of $E_{15}$ under $\operatorname{ad}_{J_-}$.</p>
+<p><strong>Remark.</strong> The chain from $E_{15}$ is <strong>not</strong> the simple list $E_{15},E_{25},E_{35},E_{45},E_{55}$: the lowering also moves the column index, and the orbit at weight $0$ is not $E_{55}$ alone. The correct orbit is the full nine-dimensional module; the five-vector list is only the "row" part of the chain, and it omits the "column" part. The formula displays both moves, and the weight diagram displays the result.</p>
+<h2 id="the-comparison-with-math195">The Comparison with $n=2$</h2>
+<h3 id="the-biquaternion-chain">The Biquaternion Chain</h3>
+<p>For $n=2$ the generators are</p>
+<p>$$
+J_3=\frac12\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+J_+=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+J_-=\begin{pmatrix}0&0\\1&0\end{pmatrix}.
+$$</p>
+<p>The carrier is $\mathbb{C}^2=V_{1/2}$, of weights $\pm\tfrac12$, and the adjoint is</p>
+<p>$$
+\mathfrak{gl}_2=V_0\oplus V_1,\qquad 1+3=4 .
+$$</p>
+<p>The chain vectors are $X_0=I$ and $X_1=J_+$; the lowering is $\operatorname{ad}_{J_-}J_+=-2J_3$, $\operatorname{ad}_{J_-}J_3=J_-$, $\operatorname{ad}_{J_-}J_-=0$. The chain is $J_+\to-2J_3\to J_-$, of weights $1,0,-1$.</p>
+<p><strong>Proof.</strong> The matrices satisfy the $\mathfrak{sl}_2$ relations with $c_1=1$; the formulas are the $n=2$ case of the lowering formula. The adjoint dimensions are $1+3=4=\dim\mathfrak{gl}_2$.</p>
+<h3 id="the-absence-of-chirality">The Absence of Chirality</h3>
+<p><strong>Theorem.</strong> For $n=5$ the carrier $V_2=\mathbb{C}^5$ is self-conjugate and has no chirality: its weights are symmetric under $m\mapsto-m$, and the adjoint decomposition $1+3+5+7+9$ is multiplicity-free. There is no pair of inequivalent half-spin modules.</p>
+<p><strong>Proof.</strong> The weights of $V_2$ are $2,1,0,-1,-2$, symmetric under $m\mapsto-m$. The dual of $V_2$ is isomorphic to $V_2$ by the invariant apolar pairing. The five summands of the adjoint have highest weights $0,1,2,3,4$, each once; there is no half-integer highest weight and no pair of modules exchanged by conjugation. The half-integer weights occur only at $n=2$, where the carrier is the spinor $V_{1/2}$ and the two components of opposite weight have opposite chirality.</p>
+<p><strong>Corollary.</strong> The spin-two chain is a single self-conjugate chain of integer weights. The word <em>chirality</em> does not apply to $M_5(\mathbb{C})$; the carrier is a real (self-conjugate) module, and the adjoint is its symmetric square, decomposed without chirality.</p>
+<p><strong>Proof.</strong> A chirality would require two inequivalent modules of the same highest weight, exchanged by the conjugation; the decomposition is multiplicity-free, so no such pair exists.</p>
+<p><strong>Remark.</strong> <strong>The comparison is a comparison of the carrier, not of the algebra.</strong> At $n=2$ the carrier is the spinor and the algebra is the biquaternion model; at $n=5$ the carrier is the spin-two module and the algebra is $M_5$. The adjoint chain $1+3$ at $n=2$ and $1+3+5+7+9$ at $n=5$ are the same construction applied to the two carriers; the difference of the weights, half-integer versus integer, is the difference of the two spin chains.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint decomposition of $\mathfrak{gl}_5$ is exhibited by the five highest weight vectors</p>
+<p>$$
+X_0=I,\quad X_1=J_+,\quad X_2=2E_{13}+\sqrt6E_{24}+2E_{35},\quad X_3=E_{14}+E_{25},\quad X_4=E_{15},
+$$</p>
+<p>of weights $0,1,2,3,4$. The cyclic modules have dimensions $1,3,5,7,9$, and their sum is $25$:</p>
+<p>$$
+\boxed{\ \mathfrak{gl}_5=V_0\oplus V_1\oplus V_2\oplus V_3\oplus V_4,\qquad 1+3+5+7+9=25.\ }
+$$</p>
+<p>The lowering formula is</p>
+<p>$$
+(\operatorname{ad}_{J_-})E_{ij}=c_iE_{i+1,j}-c_{j-1}E_{i,j-1},\qquad c_k=\sqrt{k(5-k)},
+$$</p>
+<p>with $c_0=c_5=0$. The weight multiplicities are $1,2,3,4,5,4,3,2,1$; the chain from $E_{15}$ is the nine-dimensional module $V_4$; the lower summands are generated by $X_3,X_2,X_1,X_0$. The chain is multiplicity-free, and the carrier is self-conjugate: there is no chirality at $n=5$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Highest weight vector</th>
+<th>Highest weight</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_0$</td>
+<td>$I$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$V_1$</td>
+<td>$J_+$</td>
+<td>$1$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$V_2$</td>
+<td>$2E_{13}+\sqrt6E_{24}+2E_{35}$</td>
+<td>$2$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$V_3$</td>
+<td>$E_{14}+E_{25}$</td>
+<td>$3$</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>$V_4$</td>
+<td>$E_{15}$</td>
+<td>$4$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>Total</td>
+<td></td>
+<td></td>
+<td>$25$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J_3,J_+,J_-$</td>
+<td>The spin-two generators, with $J_-=J_+^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$c_k=\sqrt{k(5-k)}$</td>
+<td>The ladder coefficients $2,\sqrt6,\sqrt6,2$</td>
+</tr>
+<tr>
+<td>$X_j$</td>
+<td>The highest weight vector of the summand $V_j$</td>
+</tr>
+<tr>
+<td>$V_j$</td>
+<td>The irreducible module of highest weight $j$, dimension $2j+1$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_{J_-}$</td>
+<td>The lowering operator of the adjoint representation</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>The matrix unit, of weight $j-i$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the highest-weight classification, the Clebsch–Gordan decomposition and the weight diagrams of $\mathfrak{sl}_2$.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the highest weight vectors, the cyclic modules and the character argument.</li>
+<li>Brian C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, second edition, 2015), for the compact real form and the unitary generators.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m5c.html">The Spin Chain and the Adjoint Decomposition</a>, for the carrier, the generators and the Clebsch–Gordan proof of the decomposition.</li>
+<li><a href="the-peirce-decomposition-of-m5c.html">The Peirce Decomposition</a>, for the matrix units and the Peirce lines that carry the weights.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the gauge that rescales the simple nilpotents and the ladder coefficients.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m5c.html">The Modules and the Minimal Left Ideals</a>, for the carrier as a module and the distinction between the carrier and the Peirce lines.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

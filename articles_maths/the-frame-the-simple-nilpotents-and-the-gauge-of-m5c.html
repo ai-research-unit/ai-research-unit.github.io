@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Frame, the Simple Nilpotents and the Gauge — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-frame-the-simple-nilpotents-and-the-gauge"><strong>The Frame, the Simple Nilpotents and the Gauge</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A root $H$ fixes five spectral lines, not five vectors. The choice of a vector in each line is a <strong>frame</strong>, and a frame turns the algebra into an array of matrix units</p>
+<p>$$
+E_{ij}=v_iv_j^{\vee},\qquad E_{ij}E_{kl}=\delta_{jk}E_{il}.
+$$</p>
+<p>The units $E_{12},E_{23},E_{34},E_{45}$ are the <strong>simple nilpotents</strong>: each squares to zero, and every other unit is a product of consecutive simple ones. The frame is not canonical. Rescaling the vectors by $t_1,\dots,t_5\in\mathbb{C}^\times$ sends</p>
+<p>$$
+E_{ij}\longmapsto\frac{t_i}{t_j}E_{ij},
+$$</p>
+<p>which is conjugation by the diagonal matrix $D_t=\sum_it_iE_{ii}$. The scalars act trivially, so the effective group is the torus $(\mathbb{C}^\times)^4$. Writing $\lambda_k=t_k/t_{k+1}$ for the four simple nilpotents, the composite $E_{ij}$ is rescaled by the product $\lambda_i\lambda_{i+1}\cdots\lambda_{j-1}$. The product around the closed chain is one, and there is <strong>no fifth independent scalar</strong>: the four $\lambda_k$ are the whole gauge, one per simple nilpotent, and the composites are fixed by the cocycle.</p>
+<p>The gauge leaves every idempotent of the frame untouched, $D_tE_{ii}D_t^{-1}=E_{ii}$, and in particular it leaves the Lagrange projectors $P_k$ untouched. <strong>It rescales the nilpotents, not the idempotents.</strong> This is the precise sense in which the frame is a choice of coordinates inside a fixed root, and why the count of the frame is the count of the root plus the count of the gauge: $20+4=24=\dim PGL_5$.</p>
+<p>The article assumes the root, the idempotents $P_k$ and the Peirce lines $A_{kl}$ of <em>Roots of Unity and the Lagrange Idempotents</em> and <em>The Peirce Decomposition</em>. It uses no form, no involution and no topology. The rank-two split and the partial flags are later articles; the adjoint action, where the gauge appears as a stabiliser, is <em>The Adjoint Action, the Orbits and the Flag Variety</em>.</p>
+<h2 id="the-frame">The Frame</h2>
+<h3 id="the-definition">The Definition</h3>
+<p><strong>Definition.</strong> A <strong>frame</strong> of $V=\mathbb{C}^5$ is an ordered basis $\mathcal{V}=(v_1,\dots,v_5)$. Its <strong>dual frame</strong> is the basis $(v_1^{\vee},\dots,v_5^{\vee})$ of the dual space defined by $v_j^{\vee}(v_i)=\delta_{ij}$.</p>
+<p>In the identification $V\cong\mathbb{C}^5$ by the frame, the vector $v_i$ is the $i$-th standard basis vector and $v_j^{\vee}$ is the $j$-th coordinate functional. The frame is a matrix $V=(v_1|\cdots|v_5)\in GL_5(\mathbb{C})$, and the dual frame is the matrix $V^{-1}$ read by rows.</p>
+<p><strong>Definition.</strong> The <strong>matrix units</strong> of the frame are</p>
+<p>$$
+E_{ij}=v_iv_j^{\vee}\in M_5(\mathbb{C}),\qquad 1\le i,j\le5 .
+$$</p>
+<p>In the frame, $E_{ij}$ is the matrix with a $1$ in position $(i,j)$ and zeros elsewhere.</p>
+<p><strong>Proposition.</strong> The matrix units satisfy</p>
+<p>$$
+E_{ij}E_{kl}=\delta_{jk}E_{il},\qquad \sum_{i=1}^{5}E_{ii}=I,\qquad E_{ii}E_{jj}=\delta_{ij}E_{ii},
+$$</p>
+<p>and they form a basis of $M_5(\mathbb{C})$: every $A$ has the unique expansion $A=\sum_{i,j}a_{ij}E_{ij}$ with $a_{ij}=v_i^{\vee}Av_j$.</p>
+<p><strong>Proof.</strong> The product is</p>
+<p>$$
+E_{ij}E_{kl}=v_iv_j^{\vee}v_kv_l^{\vee}=v_i\,\delta_{jk}\,v_l^{\vee}=\delta_{jk}E_{il},
+$$</p>
+<p>because $v_j^{\vee}(v_k)=\delta_{jk}$. The sum $\sum_iE_{ii}$ acts on $v_j$ as $v_j$, so it is the identity. The twenty-five units are linearly independent because their matrices in the frame are the standard matrix units, and they span because every matrix is a linear combination of them.</p>
+<p><strong>Corollary.</strong> The diagonal units $E_{11},\dots,E_{55}$ are mutually orthogonal rank-one idempotents summing to $I$. They are the projectors onto the lines $\mathbb{C}v_i$ along the sum of the other four lines.</p>
+<p><strong>Proof.</strong> $E_{ii}^2=E_{ii}$ by the product rule, $E_{ii}E_{jj}=0$ for $i\ne j$, and the sum is $I$. The image of $E_{ii}$ is the line $\mathbb{C}v_i$, and its kernel contains every $v_j$ with $j\ne i$.</p>
+<p><strong>Remark.</strong> The frame is a <strong>complete system of matrix units</strong>, and the five diagonal units are a complete family of orthogonal rank-one idempotents. A root supplies such a family, the Lagrange projectors $P_k$; a frame supplies the vectors inside the lines. The two data are related by $E_{kk}=P_k$ when the frame is <strong>spectral</strong>, that is, when $v_k$ spans $\operatorname{im}P_k$ and the dual functional is the left eigenfunctional. A general frame need not be spectral; the matrix units and the gauge are defined for every frame, and the specialization to the spectral frame is made where the root is used.</p>
+<h3 id="the-frame-and-the-root">The Frame and the Root</h3>
+<p>Let $H$ be a root with spectral lines $L_k=\ker(H-\zeta_kI)$, and let $v_k\in L_k$ be nonzero. The frame $(v_1,\dots,v_5)$ is <strong>spectral</strong> for $H$. In this frame</p>
+<p>$$
+H=\sum_{k=0}^{4}\zeta_kE_{kk},\qquad E_{kk}=P_k,
+$$</p>
+<p>and the matrix of $H$ is diagonal. The root determines the lines $L_k$, hence the diagonal units $E_{kk}=P_k$; it does <strong>not</strong> determine the vectors $v_k$, hence not the off-diagonal units $E_{ij}$ with $i\ne j$. The off-diagonal units are exactly what the gauge moves.</p>
+<p><strong>Proposition.</strong> Let $H$ be a root and let $\mathcal{V}$ be a spectral frame. A matrix $g\in GL_5(\mathbb{C})$ preserves $H$ by conjugation, $gHg^{-1}=H$, if and only if $g$ is diagonal in the frame, $g=\sum_it_iE_{ii}$ with $t_i\ne0$. The stabiliser of $H$ in $PGL_5$ is therefore the torus $T$ of the diagonal matrices modulo scalars, of dimension $4$.</p>
+<p><strong>Proof.</strong> In the spectral frame $H=\operatorname{diag}(\zeta_0,\dots,\zeta_4)$ with distinct entries. The equation $gH=Hg$ reads $g_{ij}\zeta_j=\zeta_ig_{ij}$; for $i\ne j$ this forces $g_{ij}=0$. Hence $g$ is diagonal and invertible, so all $t_i=g_{ii}$ are nonzero. The scalars are the intersection with the centre, and the quotient has dimension $5-1=4$.</p>
+<p><strong>Corollary.</strong> The gauge group of the spectral frame is the stabiliser of the root. The frame is a point of $PGL_5$; the root is its image in $PGL_5/T$; the gauge is the fibre $T$. The count is</p>
+<p>$$
+\dim PGL_5=\dim(PGL_5/T)+\dim T=20+4=24 .
+$$</p>
+<p><strong>Proof.</strong> The map $g\mapsto gHg^{-1}$ from $PGL_5$ to the root set has fibre the stabiliser $T$; the orbit–stabiliser theorem gives the dimension count, and the root set is $PGL_5/T$ by <em>Roots of Unity and the Lagrange Idempotents</em>.</p>
+<h2 id="the-simple-nilpotents-and-the-composites">The Simple Nilpotents and the Composites</h2>
+<h3 id="the-simple-nilpotents">The Simple Nilpotents</h3>
+<p><strong>Definition.</strong> The <strong>simple nilpotents</strong> of the frame are</p>
+<p>$$
+N_k=E_{k,k+1},\qquad k=1,2,3,4,
+$$</p>
+<p>and the <strong>lower simple nilpotents</strong> are $N_k^{-}=E_{k+1,k}$ for $k=1,2,3,4$.</p>
+<p><strong>Proposition.</strong> Each simple nilpotent is square-zero, and the products of two simple nilpotents are</p>
+<p>$$
+N_k^2=0,\qquad N_jN_k=\delta_{k,j+1}E_{j,k+1}.
+$$</p>
+<p>In particular $N_kN_{k+1}=E_{k,k+2}$, and all other products of two simple nilpotents vanish. The same formulas hold for the lower simple nilpotents, with the order of the indices reversed.</p>
+<p><strong>Proof.</strong> $N_k^2=E_{k,k+1}E_{k,k+1}=0$ because the inner indices $k+1$ and $k$ differ. For the product, $E_{j,j+1}E_{k,k+1}=\delta_{j+1,k}E_{j,k+1}$; the Kronecker delta is $\delta_{k,j+1}$.</p>
+<p><strong>Corollary.</strong> The simple nilpotents are homogeneous of degree one for the <strong>flag grading</strong> by the difference of the indices: $N_k$ carries the pair $(k,k+1)$, and the product $N_jN_k$ is nonzero exactly when the pairs are consecutive, carrying the pair $(j,k+1)$.</p>
+<p><strong>Proof.</strong> The product rule of the matrix units is the rule for the composition of the elementary steps of the flag.</p>
+<h3 id="the-composites">The Composites</h3>
+<p><strong>Theorem.</strong> For $i<j$,</p>
+<p>$$
+E_{ij}=N_iN_{i+1}\cdots N_{j-1},
+$$</p>
+<p>and for $i>j$,</p>
+<p>$$
+E_{ij}=N_{i-1}^{-}N_{i-2}^{-}\cdots N_j^{-},
+$$</p>
+<p>with the lower simple nilpotents $N_k^{-}=E_{k+1,k}$. Every matrix unit is a product of consecutive simple nilpotents, and the product is determined by the endpoints.</p>
+<p><strong>Proof.</strong> By induction on $j-i$. For $j=i+1$ the formula is the definition. If $E_{ij}=N_i\cdots N_{j-1}$, then</p>
+<p>$$
+E_{ij}N_j=N_i\cdots N_{j-1}N_j=E_{i,j+1}
+$$</p>
+<p>by the product rule, since the inner indices match. The lower case is the same induction with the reversed order, or the transpose of the upper case.</p>
+<p><strong>Remark.</strong> The four simple nilpotents, together with the five diagonal idempotents, generate the algebra: the composites give all off-diagonal units, and the diagonal units are part of the frame. The simple nilpotents alone generate the <strong>strictly upper triangular</strong> subalgebra, and the lower ones the strictly lower triangular subalgebra; the two together, with the diagonal, generate $M_5$.</p>
+<h3 id="the-flag">The Flag</h3>
+<p>The frame carries the <strong>complete flag</strong></p>
+<p>$$
+0\subset V_1\subset V_2\subset\cdots\subset V_5=V,\qquad V_k=\operatorname{span}(v_1,\dots,v_k).
+$$</p>
+<p>The simple nilpotent $N_k$ moves one step down the flag,</p>
+<p>$$
+N_kv_{k+1}=v_k,\qquad N_kv_j=0\quad(j\ne k+1),
+$$</p>
+<p>and the composite $E_{ij}$ moves from $v_j$ to $v_i$. In the dual flag, $N_k$ moves the functional $v_k^{\vee}$ to $v_{k+1}^{\vee}$.</p>
+<p><strong>Proposition.</strong> The simple nilpotents are exactly the nonzero maps of the frame that lower the flag by one step and vanish on the other lines:</p>
+<p>$$
+N_k(V_{k+1})\subseteq V_k,\qquad N_k(V_k)=0,\qquad N_k(v_j)=0\ (j\ne k+1).
+$$</p>
+<p><strong>Proof.</strong> $N_kv_{k+1}=E_{k,k+1}v_{k+1}=v_k$, and $N_kv_j=v_k\delta_{k+1,j}$, which vanishes for $j\ne k+1$. The image lies in $V_k$.</p>
+<p><strong>Remark.</strong> <strong>The flag and the frame are not the same data.</strong> The flag is the chain of subspaces; the frame is a splitting of the flag into lines, and the simple nilpotents depend on the splitting, not only on the flag. This is the same distinction as the one between the root set $PGL_5/T$ and the flag variety $GL_5/B$: the fibre of splittings has dimension $10$. The simple nilpotents are the elementary maps of a splitting; a different splitting changes them by the gauge and by the unipotent part.</p>
+<h2 id="the-gauge">The Gauge</h2>
+<h3 id="the-diagonal-gauge">The Diagonal Gauge</h3>
+<p><strong>Definition.</strong> For $t=(t_1,\dots,t_5)\in(\mathbb{C}^\times)^5$, let</p>
+<p>$$
+D_t=\sum_{i=1}^{5}t_iE_{ii}\in GL_5(\mathbb{C}).
+$$</p>
+<p>The <strong>gauge transformation</strong> of parameter $t$ is the conjugation</p>
+<p>$$
+A\longmapsto D_tAD_t^{-1}.
+$$</p>
+<p><strong>Proposition.</strong> The gauge acts on the matrix units by</p>
+<p>$$
+D_tE_{ij}D_t^{-1}=\frac{t_i}{t_j}E_{ij},
+$$</p>
+<p>and it fixes every diagonal unit: $D_tE_{ii}D_t^{-1}=E_{ii}$.</p>
+<p><strong>Proof.</strong> $D_tE_{ij}=t_iE_{ij}$ and $E_{ij}D_t^{-1}=t_j^{-1}E_{ij}$, because $E_{ij}$ is an eigenvector of the left multiplication by $D_t$ with eigenvalue $t_i$ and of the right multiplication with eigenvalue $t_j$. For $i=j$ the two eigenvalues are equal.</p>
+<p><strong>Corollary.</strong> The gauge fixes every idempotent of the form $P_S=\sum_{i\in S}E_{ii}$ for $S\subseteq\{1,\dots,5\}$, and in particular it fixes the five spectral projectors $P_k$ if the frame is spectral. <strong>The gauge rescales the off-diagonal units and leaves the diagonal idempotents unchanged.</strong></p>
+<p><strong>Proof.</strong> The diagonal idempotents are sums of diagonal units, and each diagonal unit is fixed.</p>
+<h3 id="the-effective-torus">The Effective Torus</h3>
+<p><strong>Proposition.</strong> The kernel of the map $t\mapsto D_t$ into $GL_5$ is the diagonal of the scalars, $\{(\lambda,\dots,\lambda):\lambda\in\mathbb{C}^\times\}\cong\mathbb{C}^\times$. The effective gauge group is therefore</p>
+<p>$$
+(\mathbb{C}^\times)^5/\mathbb{C}^\times\cong(\mathbb{C}^\times)^4,
+$$</p>
+<p>a complex torus of dimension $4$.</p>
+<p><strong>Proof.</strong> $D_t$ is the scalar matrix $\lambda I$ exactly when all $t_i=\lambda$. The quotient of the five-dimensional torus by the one-dimensional diagonal has dimension $4$.</p>
+<p><strong>Corollary.</strong> The gauge has four complex parameters, not five. The failure of the fifth parameter to be independent is the statement that the overall scale of the frame is immaterial: rescaling every $v_i$ by the same $\lambda$ rescales every $E_{ij}$ by $\lambda/\lambda=1$.</p>
+<h3 id="the-four-parameters">The Four Parameters</h3>
+<p><strong>Definition.</strong> For $k=1,2,3,4$, the <strong>gauge parameter of the simple nilpotent</strong> $N_k=E_{k,k+1}$ is</p>
+<p>$$
+\lambda_k=\frac{t_k}{t_{k+1}}\in\mathbb{C}^\times .
+$$</p>
+<p><strong>Theorem.</strong> The map $t\mapsto(\lambda_1,\lambda_2,\lambda_3,\lambda_4)$ identifies the effective gauge group with $(\mathbb{C}^\times)^4$, and the action on the simple nilpotents is</p>
+<p>$$
+N_k\longmapsto\lambda_kN_k .
+$$</p>
+<p>The action on a composite is</p>
+<p>$$
+E_{ij}\longmapsto\Bigl(\prod_{k=i}^{j-1}\lambda_k\Bigr)E_{ij}\quad(i<j),
+\qquad
+E_{ij}\longmapsto\Bigl(\prod_{k=j}^{i-1}\lambda_k\Bigr)^{-1}E_{ij}\quad(i>j).
+$$</p>
+<p><strong>Proof.</strong> The four equations $t_k/t_{k+1}=\lambda_k$ determine $t$ from $t_1$ by $t_{k+1}=t_k/\lambda_k$; the common scale $t_1$ is immaterial, so the map is an isomorphism onto $(\mathbb{C}^\times)^4$. The action on $E_{k,k+1}$ is the definition of $\lambda_k$ and the proposition on the matrix units. The composite is the product of the simple ones, and the scaling is multiplicative.</p>
+<p><strong>Corollary (the cocycle).</strong> The scalings of the composites are fixed by the four $\lambda_k$ and satisfy</p>
+<p>$$
+\lambda_{ij}\lambda_{jk}=\lambda_{ik},\qquad \lambda_{ij}\lambda_{ji}=1,\qquad \lambda_{ii}=1,
+$$</p>
+<p>where $\lambda_{ij}=t_i/t_j$. The product around the closed chain is</p>
+<p>$$
+\prod_{k=1}^{5}\frac{t_k}{t_{k+1}}=1 .
+$$</p>
+<p>Hence the four simple parameters are independent and the fifth ratio is their inverse product; there is no fifth independent scalar.</p>
+<p><strong>Proof.</strong> The identities are the multiplicativity of the ratios. The product around the cycle telescopes. If one tries to add a fifth parameter $\mu$ rescaling all $E_{ij}$ by $\mu$, it would have to equal $t_i/t_j$ for all pairs, which forces $t_i=\mu t_j$ for all $i,j$, hence all $t_i$ equal after a common rescaling, hence $\mu=1$. The fifth direction is the scalar, which acts trivially.</p>
+<p><strong>Remark.</strong> <strong>The gauge parameters are attached to the four simple nilpotents, one per edge of the chain, never to the five idempotents.</strong> The idempotents are fixed by the gauge; the four $\lambda_k$ move the four elementary steps. The composites $E_{13},E_{14},E_{15}$ and the lower units are not independent: their scalings are the products along the chain. This is the content of the cocycle.</p>
+<h2 id="the-count-of-the-frame">The Count of the Frame</h2>
+<h3 id="the-root-plus-the-gauge">The Root Plus the Gauge</h3>
+<p><strong>Theorem.</strong> The frame is the pair of a root and a gauge:</p>
+<p>$$
+\{\text{frames}\}/\mathbb{C}^\times\cong PGL_5,\qquad
+\{\text{roots}\}\cong PGL_5/T,\qquad
+\{\text{gauges}\}\cong T .
+$$</p>
+<p>The dimensions are</p>
+<p>$$
+\underbrace{20}_{\text{root}}+\underbrace{4}_{\text{gauge}}=\underbrace{24}_{\text{frame}} .
+$$</p>
+<p><strong>Proof.</strong> A frame modulo a common scalar is an element of $PGL_5$; the root is the image under $g\mapsto gH_0g^{-1}$; the fibre is the stabiliser $T$, which is the gauge. The dimensions are those of <em>Roots of Unity and the Lagrange Idempotents</em>: $24-4=20$ for the root and $4$ for the torus. The sum is $24$.</p>
+<p><strong>Corollary.</strong> The four gauge parameters are the four coordinates of the fibre of the frame bundle $PGL_5\to PGL_5/T$. They are not additional degrees of freedom of the algebra, the root or the idempotents: they are the redundancy of the choice of a vector in each spectral line.</p>
+<p><strong>Remark.</strong> <strong>The count $20+4=24$ is the whole count of the frame, and it is not $20+5$.</strong> The naive count of five vector rescalings overcounts by the common scalar, which acts trivially. The correct count is four, the dimension of $T$. The four $\lambda_k$ are a convenient set of coordinates on $T$; the five $t_i$ are redundant by the common scale.</p>
+<h3 id="the-real-gauge">The Real Gauge</h3>
+<p>The trace form of <em>The Involution and the Hermitian Structure</em> is positive definite, and in an <strong>orthonormal</strong> spectral frame the gauge parameters of the unitary structure satisfy $|t_k|=1$. The compact gauge is then the real torus $U(1)^4$, of real dimension $4$. The complex gauge $(\mathbb{C}^\times)^4$ is the algebraic gauge; the real torus is the subgroup that preserves the Hermitian structure. The four complex parameters have eight real dimensions, the four phases four, and the four moduli of the $t_k$ (the radial parts) are the non-unitary part of the algebraic gauge. The distinction is used in <em>The Polar Decomposition</em> and <em>The Exponential and the Lie Group</em>.</p>
+<p><strong>Proof.</strong> A diagonal matrix $D_t$ is unitary exactly when $|t_k|=1$ for every $k$; the quotient by the common scalar has real dimension $4$. The complex torus $(\mathbb{C}^\times)^4$ has real dimension $8$, and the modulus map $(\mathbb{C}^\times)^4\to(\mathbb{R}_{>0})^4$ is the four-dimensional non-unitary part.</p>
+<h2 id="worked-example">Worked Example</h2>
+<h3 id="the-standard-frame">The Standard Frame</h3>
+<p>Take $v_i=e_i$, the standard basis, so $E_{ij}$ is the standard matrix unit. The four simple nilpotents are</p>
+<p>$$
+N_1=E_{12}=\begin{pmatrix}0&1&0&0&0\\0&0&0&0&0\\0&0&0&0&0\\0&0&0&0&0\\0&0&0&0&0\end{pmatrix},
+\qquad
+N_4=E_{45}=\begin{pmatrix}0&0&0&0&0\\0&0&0&0&0\\0&0&0&0&0\\0&0&0&0&0\\0&0&0&1&0\end{pmatrix},
+$$</p>
+<p>and $N_2=E_{23}$, $N_3=E_{34}$ are the two intermediate units. The composites are</p>
+<p>$$
+E_{13}=N_1N_2,\qquad E_{14}=N_1N_2N_3,\qquad E_{15}=N_1N_2N_3N_4 .
+$$</p>
+<h3 id="a-numerical-gauge">A Numerical Gauge</h3>
+<p>Take $\lambda_1=2$, $\lambda_2=3$, $\lambda_3=5$, $\lambda_4=7$. The frame parameters are $t_1=1$, $t_2=\lambda_1^{-1}=1/2$, $t_3=(\lambda_1\lambda_2)^{-1}=1/6$, $t_4=1/30$, $t_5=1/210$, so</p>
+<p>$$
+D_t=\operatorname{diag}\Bigl(1,\frac12,\frac16,\frac1{30},\frac1{210}\Bigr).
+$$</p>
+<p>Then</p>
+<p>$$
+D_tN_1D_t^{-1}=2N_1,\quad D_tN_2D_t^{-1}=3N_2,\quad D_tN_3D_t^{-1}=5N_3,\quad D_tN_4D_t^{-1}=7N_4,
+$$</p>
+<p>and the composite $E_{15}$ is rescaled by</p>
+<p>$$
+\frac{t_1}{t_5}=210=2\cdot3\cdot5\cdot7=\lambda_1\lambda_2\lambda_3\lambda_4 .
+$$</p>
+<p>The diagonal units are unchanged: $D_tE_{kk}D_t^{-1}=E_{kk}$ for every $k$. The product around the cycle is</p>
+<p>$$
+\frac{t_1}{t_2}\frac{t_2}{t_3}\frac{t_3}{t_4}\frac{t_4}{t_5}\frac{t_5}{t_1}=1,
+$$</p>
+<p>and the fifth ratio $t_5/t_1=1/210$ is the inverse product, not an independent parameter.</p>
+<p><strong>Remark.</strong> The uniform choice $\lambda_1=\lambda_2=\lambda_3=\lambda_4=\lambda$ is the one-parameter subgroup $t_k=\lambda^{-(k-1)}$; it rescales $E_{ij}$ by $\lambda^{j-i}$. It is a single direction inside the four-dimensional gauge, not a fifth parameter. The general gauge is the four-dimensional torus, and the uniform direction is its diagonal.</p>
+<h2 id="summary">Summary</h2>
+<p>A frame is an ordered basis, and it produces the matrix units $E_{ij}=v_iv_j^{\vee}$ with the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The simple nilpotents $N_k=E_{k,k+1}$, $k=1,2,3,4$, are square-zero, and every composite is a product of consecutive simple ones, $E_{ij}=N_iN_{i+1}\cdots N_{j-1}$ for $i<j$.</p>
+<p>The gauge is the conjugation by $D_t=\sum_it_iE_{ii}$; it acts by $E_{ij}\mapsto(t_i/t_j)E_{ij}$, fixes every diagonal idempotent, and has effective group $(\mathbb{C}^\times)^4$. The four parameters are</p>
+<p>$$
+\lambda_k=\frac{t_k}{t_{k+1}},\qquad k=1,2,3,4,
+$$</p>
+<p>one per simple nilpotent. The composites are rescaled by the products, the cycle product is one, and there is no fifth independent scalar.</p>
+<p>$$
+\boxed{\ \text{The gauge is }(\mathbb{C}^\times)^4\text{, with one parameter per simple nilpotent }E_{k,k+1};\text{ it fixes the idempotents and the composites are fixed by the cocycle.}\ }
+$$</p>
+<p>The frame is the root plus the gauge: $20+4=24=\dim PGL_5$. The root is the base $PGL_5/T$, the gauge is the fibre $T$, and the frame modulo scalars is $PGL_5$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Count or dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frame modulo scalars</td>
+<td>$\dim PGL_5=24$</td>
+</tr>
+<tr>
+<td>Root</td>
+<td>$\dim PGL_5/T=20$</td>
+</tr>
+<tr>
+<td>Gauge torus $T$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Simple nilpotents</td>
+<td>$4$, $E_{12},E_{23},E_{34},E_{45}$</td>
+</tr>
+<tr>
+<td>Gauge parameters $\lambda_k$</td>
+<td>$4$, one per simple nilpotent</td>
+</tr>
+<tr>
+<td>Independent scalar parameters</td>
+<td>$4$, not $5$</td>
+</tr>
+<tr>
+<td>Composite $E_{ij}$ scaling</td>
+<td>$\prod_{k=i}^{j-1}\lambda_k$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{V}=(v_1,\dots,v_5)$</td>
+<td>A frame, an ordered basis of $\mathbb{C}^5$</td>
+</tr>
+<tr>
+<td>$v_j^{\vee}$</td>
+<td>The dual functional, $v_j^{\vee}(v_i)=\delta_{ij}$</td>
+</tr>
+<tr>
+<td>$E_{ij}=v_iv_j^{\vee}$</td>
+<td>The matrix units of the frame</td>
+</tr>
+<tr>
+<td>$N_k=E_{k,k+1}$</td>
+<td>The simple nilpotent of the step $k\to k+1$, $k=1,\dots,4$</td>
+</tr>
+<tr>
+<td>$D_t=\sum_it_iE_{ii}$</td>
+<td>The diagonal gauge matrix</td>
+</tr>
+<tr>
+<td>$t=(t_1,\dots,t_5)$</td>
+<td>The frame rescaling, defined modulo a common scalar</td>
+</tr>
+<tr>
+<td>$\lambda_k=t_k/t_{k+1}$</td>
+<td>The gauge parameter of the simple nilpotent $N_k$</td>
+</tr>
+<tr>
+<td>$\lambda_{ij}=t_i/t_j$</td>
+<td>The scaling of the unit $E_{ij}$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>The diagonal torus modulo scalars, the gauge group</td>
+</tr>
+<tr>
+<td>$PGL_5/T$</td>
+<td>The root set, the base of the frame bundle</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for systems of matrix units, the Peirce decomposition and the inner automorphisms of a full matrix algebra.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the elementary matrices, the matrix units and the diagonal similarity $E_{ij}\mapsto(t_i/t_j)E_{ij}$.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the systems of matrix units adapted to an algebra with involution and the unitary gauge.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m5c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root, its spectral lines and the idempotents fixed by the gauge.</li>
+<li><a href="the-peirce-decomposition-of-m5c.html">The Peirce Decomposition</a>, for the lines $A_{kl}$ whose generators are moved by the gauge.</li>
+<li><a href="the-rank-two-split-of-m5c.html">The Rank-Two Split</a>, for the corners $4+6+6+9$ and the two-sided Peirce table.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the gauge as the stabiliser of the root and the frame bundle $PGL_5\to PGL_5/T$.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>, for the unitary gauge $U(1)^4$ and the positive definite trace form.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m5c.html">The Modules and the Minimal Left Ideals</a>, for the action of the matrix units on the carrier.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

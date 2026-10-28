@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Frame, the Simple Nilpotents and the Gauge — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-frame-the-simple-nilpotents-and-the-gauge"><strong>The Frame, the Simple Nilpotents and the Gauge</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A frame of $M_{3}(\mathbb{C})$ is a basis of the algebra by nine matrix units $E_{ij}$ with $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and $\sum_{i}E_{ii}=I$. The diagonal units are three idempotents; the off-diagonal units are six nilpotents, of which two are the <strong>simple</strong> ones and the remaining four are their products and the products of the opposite pair. The frame is the matrix-unit form of the Peirce decomposition, and it is the object on which the gauge acts.</p>
+<p>This article constructs the frame from a basis of $\mathbb{C}^{3}$, proves the multiplication table, isolates the two simple nilpotents $E_{12},E_{23}$ and the composite $E_{13}=E_{12}E_{23}$, and computes the gauge group. The gauge rescales the off-diagonal units by $E_{ij}\mapsto(t_{i}/t_{j})E_{ij}$; it fixes every idempotent, and its group is $(\mathbb{C}^{\times})^{2}$, the maximal torus of $PGL_{3}(\mathbb{C})$. The rescaling of the two simple nilpotents by $\lambda_{1}$ and $\lambda_{2}$ forces the composite to be rescaled by $\lambda_{1}\lambda_{2}$: there is no third independent scalar.</p>
+<p><strong>The idempotents do not depend on the gauge parameter.</strong> The symbols $\lambda_{1},\lambda_{2}$ below are gauge parameters of the nilpotents; they never multiply an idempotent. A statement that an idempotent depends on $\lambda$ is a confusion of the gauge with the frame.</p>
+<p>The article assumes the algebra and its matrix units of <em>The Matrix Algebra $M_{3}(\mathbb{C})$</em>, the Peirce decomposition of <em>The Peirce Decomposition of $M_{3}(\mathbb{C})$</em>, and the root of <em>Roots of Unity and the Lagrange Idempotents</em>. The two-parameter gauge is developed further in <em>The Two-Parameter Gauge</em>; the modules built on the idempotents are <em>The Modules and the Minimal Left Ideals</em>.</p>
+<h2 id="the-frame-from-a-basis">The Frame from a Basis</h2>
+<p><strong>Definition.</strong> A <strong>frame</strong> of $M_{3}(\mathbb{C})$ is a family $(E_{ij})_{i,j=1}^{3}$ of elements with</p>
+<p>$$
+E_{ij}E_{kl}=\delta_{jk}E_{il},\qquad \sum_{i=1}^{3}E_{ii}=I,\qquad E_{ii}\neq0 .
+$$</p>
+<p>The frame is <strong>normalized</strong> by the second condition; the first alone gives $E_{ii}^{2}=E_{ii}$, $E_{ii}E_{jj}=0$ for $i\neq j$, and $E_{ij}^{2}=0$ for $i\neq j$.</p>
+<p><strong>Theorem (the frame from a basis).</strong> Let $(v_{0},v_{1},v_{2})$ be a basis of $\mathbb{C}^{3}$ and let $(v_{0}^{\vee},v_{1}^{\vee},v_{2}^{\vee})$ be the dual basis, $v_{j}^{\vee}(v_{k})=\delta_{jk}$. Put</p>
+<p>$$
+E_{ij}=v_{i}v_{j}^{\vee}.
+$$</p>
+<p>Then $(E_{ij})$ is a frame. Conversely every frame is of this form for a basis unique up to a common scalar.</p>
+<p><strong>Proof.</strong> The product is</p>
+<p>$$
+(v_{i}v_{j}^{\vee})(v_{k}v_{l}^{\vee})=v_{i}\,v_{j}^{\vee}(v_{k})\,v_{l}^{\vee}=\delta_{jk}\,v_{i}v_{l}^{\vee}=\delta_{jk}E_{il},
+$$</p>
+<p>which is the matrix-unit rule. The diagonal elements are idempotent, $E_{ii}^{2}=v_{i}v_{i}^{\vee}v_{i}v_{i}^{\vee}=v_{i}v_{i}^{\vee}=E_{ii}$, and pairwise orthogonal, $E_{ii}E_{jj}=v_{i}\delta_{ij}v_{j}^{\vee}=\delta_{ij}E_{ii}$. The sum is the resolution of the identity,</p>
+<p>$$
+\sum_{i}v_{i}v_{i}^{\vee}=I,
+$$</p>
+<p>because both sides act as the identity on each basis vector $v_{k}$.</p>
+<p>Conversely, let $(E_{ij})$ be a frame. The diagonal $E_{ii}$ is a rank-one idempotent, so its image is a line $L_{i}$; the three lines are independent because $\sum E_{ii}=I$, and they are the coordinate lines of a basis. Choose $v_{i}\in L_{i}$ with $E_{ii}v_{i}=v_{i}$. The off-diagonal $E_{ij}$ maps $L_{j}$ to $L_{i}$ and is nonzero; write $E_{ij}=v_{i}\varphi_{j}$ with $\varphi_{j}$ a linear functional. The relation $E_{ij}E_{jk}=E_{ik}$ gives $v_{i}\varphi_{j}(v_{j})\varphi_{k}=v_{i}\varphi_{k}$, hence $\varphi_{j}(v_{j})=1$, and $E_{ij}E_{kj}=0$ for $i\neq k$ gives $\varphi_{j}(v_{k})=0$ for $k\neq j$. So $\varphi_{j}=v_{j}^{\vee}$ and $E_{ij}=v_{i}v_{j}^{\vee}$. A second basis $v_{i}'$ giving the same frame satisfies $v_{i}'v_{j}'^{\vee}=v_{i}v_{j}^{\vee}$ for all $i,j$; taking $i=j$ gives $v_{i}'=s_{i}v_{i}$, and taking $i\neq j$ gives $s_{i}s_{j}^{-1}=1$, so all $s_{i}$ are equal. The basis is unique up to a common scalar.</p>
+<p><strong>Corollary.</strong> The frames of $M_{3}(\mathbb{C})$ form the homogeneous space</p>
+<p>$$
+\{\text{frames}\}\cong GL_{3}(\mathbb{C})/\mathbb{C}^{\times}I\cong PGL_{3}(\mathbb{C}),
+$$</p>
+<p>of complex dimension $9-1=8$.</p>
+<p><strong>Proof.</strong> A basis is a point of $GL_{3}$; the frame depends on the basis only through its class modulo a common scalar, by the theorem. The action is free, so the quotient has dimension $9-1=8$.</p>
+<p><strong>The diagonal frame and the root.</strong> Given a frame, the three diagonal idempotents $P_{i}=E_{ii}$ are a complete orthogonal family, and</p>
+<p>$$
+H=\sum_{i=1}^{3}\zeta_{i}E_{ii}
+$$</p>
+<p>is a root with simple spectrum, by <em>Roots of Unity and the Lagrange Idempotents</em>. Conversely, a root $H$ gives its three Lagrange idempotents $P_{i}$, and a frame with $E_{ii}=P_{i}$ is a choice of the six off-diagonal units. The root and the frame are therefore related by</p>
+<p>$$
+\{\text{frames}\}\longrightarrow\{\text{roots}\},\qquad (E_{ij})\longmapsto\sum_{i}\zeta_{i}E_{ii},
+$$</p>
+<p>and the fibre is the gauge of §<em>The Gauge</em> below.</p>
+<p><strong>The standard frame.</strong> For the standard basis $v_{i}=e_{i}$ the frame is the standard matrix-unit frame $E_{ij}$, with $E_{ii}=\operatorname{diag}(0,\dots,1,\dots,0)$. Its root is $H_{0}=\operatorname{diag}(1,\omega,\omega^{2})$.</p>
+<h2 id="the-simple-nilpotents-and-the-composite">The Simple Nilpotents and the Composite</h2>
+<p><strong>Definition.</strong> In a frame, the <strong>simple nilpotents</strong> are the two adjacent off-diagonal units</p>
+<p>$$
+N_{1}=E_{12},\qquad N_{2}=E_{23}.
+$$</p>
+<p>They are square-zero,</p>
+<p>$$
+N_{1}^{2}=E_{12}E_{12}=0,\qquad N_{2}^{2}=E_{23}E_{23}=0,
+$$</p>
+<p>and their only nonzero product is the <strong>composite</strong></p>
+<p>$$
+N_{1}N_{2}=E_{12}E_{23}=E_{13}.
+$$</p>
+<p>The opposite pair $E_{21},E_{32}$ has the composite $E_{31}=E_{32}E_{21}$.</p>
+<p><strong>Proposition.</strong> The algebra generated by $N_{1}$ and $N_{2}$ is the three-dimensional nilpotent algebra</p>
+<p>$$
+\mathfrak{n}_{+}=\operatorname{span}\{E_{12},E_{23},E_{13}\},
+\qquad
+\mathfrak{n}_{+}^{2}=\mathbb{C}E_{13},\qquad
+\mathfrak{n}_{+}^{3}=0,
+$$</p>
+<p>and $E_{13}$ is not an independent generator: it is the product $N_{1}N_{2}$.</p>
+<p><strong>Proof.</strong> The products of the two generators are $N_{1}^{2}=0$, $N_{2}^{2}=0$, $N_{1}N_{2}=E_{13}$ and $N_{2}N_{1}=E_{23}E_{12}=0$, because $E_{23}E_{12}=\delta_{31}E_{22}=0$. Every word in $N_{1},N_{2}$ of length at least two is therefore either $E_{13}$ or zero, and the span of $N_{1},N_{2},E_{13}$ is closed under multiplication. The product $E_{13}E_{13}=0$ and $E_{13}N_{1}=E_{13}E_{12}=0$, $N_{2}E_{13}=E_{23}E_{13}=0$, so the square of the span is $\mathbb{C}E_{13}$ and its cube is zero.</p>
+<p><strong>The composite is forced.</strong> The relation $E_{13}=E_{12}E_{23}$ is a consequence of the frame, not a choice. If the two simple nilpotents are rescaled by $\lambda_{1}$ and $\lambda_{2}$,</p>
+<p>$$
+E_{12}'=\lambda_{1}E_{12},\qquad E_{23}'=\lambda_{2}E_{23},
+$$</p>
+<p>then the composite is rescaled by the product,</p>
+<p>$$
+E_{13}'=E_{12}'E_{23}'=\lambda_{1}\lambda_{2}E_{13}.
+$$</p>
+<p>There is no independent scalar on $E_{13}$: the third scalar is the product of the first two. This is the cocycle of §<em>The Gauge</em>.</p>
+<p><strong>The two simple nilpotents are the simple root vectors.</strong> In the basis of the root, $E_{12}$ and $E_{23}$ are the root vectors of the two simple roots of $\mathfrak{sl}_{3}$, and $E_{13}$ is the root vector of the highest root, whose weight is the sum of the two simple weights. The composite is therefore the highest-root vector, and its gauge weight is the product $\lambda_{1}\lambda_{2}$ of the two simple weights. The lower triangular pair $E_{21},E_{32}$ carries the negative roots, with the composite $E_{31}=E_{32}E_{21}$.</p>
+<p><strong>Explicit matrices.</strong> The standard simple nilpotents and their composite are</p>
+<p>$$
+N_{1}=\begin{pmatrix}0&1&0\\0&0&0\\0&0&0\end{pmatrix},\qquad
+N_{2}=\begin{pmatrix}0&0&0\\0&0&1\\0&0&0\end{pmatrix},\qquad
+N_{1}N_{2}=\begin{pmatrix}0&0&1\\0&0&0\\0&0&0\end{pmatrix}=E_{13}.
+$$</p>
+<p>The products are checked directly: $N_{1}^{2}=N_{2}^{2}=0$, $N_{1}N_{2}=E_{13}$, $N_{2}N_{1}=0$. The algebra $\mathfrak{n}_{+}$ is the strictly upper triangular algebra, of dimension three; its cube is zero.</p>
+<h2 id="the-gauge">The Gauge</h2>
+<p><strong>Definition.</strong> Let $t_{1},t_{2},t_{3}\in\mathbb{C}^{\times}$ and let $D=\operatorname{diag}(t_{1},t_{2},t_{3})$. The <strong>gauge transformation</strong> of the frame is</p>
+<p>$$
+E_{ij}\longmapsto E_{ij}'=D E_{ij}D^{-1}=\frac{t_{i}}{t_{j}}E_{ij}.
+$$</p>
+<p>The diagonal units are fixed, $E_{ii}'=E_{ii}$; the off-diagonal units are rescaled by the ratios $t_{i}/t_{j}$.</p>
+<p><strong>Proposition.</strong> The gauge transformation preserves the frame. It fixes every idempotent $E_{ii}$, the root $H=\sum_{i}\zeta_{i}E_{ii}$, the spectrum, the trace, the determinant and the characteristic polynomial of every element. It acts on the Peirce coordinates by</p>
+<p>$$
+\alpha_{ij}\longmapsto\frac{t_{j}}{t_{i}}\alpha_{ij}.
+$$</p>
+<p><strong>Proof.</strong> For the frame, $(D E_{ij}D^{-1})(D E_{kl}D^{-1})=D E_{ij}E_{kl}D^{-1}=\delta_{jk}D E_{il}D^{-1}$; the sum of the diagonal units is $D I D^{-1}=I$. The diagonal units are fixed because $D E_{ii}D^{-1}=(t_{i}/t_{i})E_{ii}=E_{ii}$. The root is a linear combination of the diagonal units, so it is fixed, and so are its spectrum and the polynomial invariants of every element, since conjugation by $D$ preserves the trace and the determinant. If $A=\sum\alpha_{ij}E_{ij}=\sum\alpha_{ij}'E_{ij}'$, then $\alpha_{ij}'E_{ij}'=\alpha_{ij}E_{ij}$ gives $\alpha_{ij}'=\alpha_{ij}(t_{j}/t_{i})$.</p>
+<p><strong>The gauge group is $(\mathbb{C}^{\times})^{2}$.</strong> The parameters $t_{1},t_{2},t_{3}$ and $ct_{1},ct_{2},ct_{3}$ give the same ratios, so the common scalar acts trivially and the effective group is</p>
+<p>$$
+(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},
+$$</p>
+<p>of complex dimension two. Its two coordinates are the ratios</p>
+<p>$$
+\lambda_{1}=\frac{t_{1}}{t_{2}},\qquad \lambda_{2}=\frac{t_{2}}{t_{3}},
+\qquad
+\frac{t_{1}}{t_{3}}=\lambda_{1}\lambda_{2}.
+$$</p>
+<p>In particular the simple nilpotents transform by</p>
+<p>$$
+E_{12}\longmapsto\lambda_{1}E_{12},\qquad
+E_{23}\longmapsto\lambda_{2}E_{23},\qquad
+E_{13}\longmapsto\lambda_{1}\lambda_{2}E_{13}.
+$$</p>
+<p><strong>Worked example.</strong> Take $\lambda_{1}=2$ and $\lambda_{2}=3$. The gauge parameters can be chosen as $t_{1}=6$, $t_{2}=3$, $t_{3}=1$, since $6/3=2$ and $3/1=3$. Then</p>
+<p>$$
+D=\begin{pmatrix}6&0&0\\0&3&0\\0&0&1\end{pmatrix},
+\qquad
+D E_{12}D^{-1}=2E_{12},\quad
+D E_{23}D^{-1}=3E_{23},\quad
+D E_{13}D^{-1}=6E_{13}.
+$$</p>
+<p>The diagonal idempotents are unchanged:</p>
+<p>$$
+D E_{11}D^{-1}=E_{11},\qquad
+D E_{22}D^{-1}=E_{22},\qquad
+D E_{33}D^{-1}=E_{33},
+$$</p>
+<p>and the root $H_{0}=\operatorname{diag}(1,\omega,\omega^{2})$ is unchanged. The composite is rescaled by $2\cdot3=6$, not by an independent number.</p>
+<p><strong>The cocycle that forbids a third scalar.</strong> Suppose that a rescaling $E_{ij}\mapsto\lambda_{ij}E_{ij}$ with $\lambda_{ij}\in\mathbb{C}^{\times}$ preserves the frame. Then for all $i,j,k$,</p>
+<p>$$
+\lambda_{ij}\lambda_{jk}=\lambda_{ik},\qquad \lambda_{ii}=1,\qquad \lambda_{ji}=\lambda_{ij}^{-1}.
+$$</p>
+<p><strong>Proposition.</strong> Every solution is of the form $\lambda_{ij}=t_{i}/t_{j}$ for some $t_{i}\in\mathbb{C}^{\times}$, and the solutions form a group isomorphic to $(\mathbb{C}^{\times})^{2}$.</p>
+<p><strong>Proof.</strong> Put $t_{i}=\lambda_{i0}$, with the index $0$ fixed. The cocycle gives $\lambda_{ij}=\lambda_{i0}\lambda_{0j}=t_{i}\lambda_{j0}^{-1}=t_{i}/t_{j}$, using $\lambda_{0j}=\lambda_{j0}^{-1}$. Conversely every assignment $t_{i}/t_{j}$ satisfies the three relations. Two assignments $t_{i}$ and $ct_{i}$ give the same $\lambda$, so the parameter space is $(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2}$.</p>
+<p><strong>Corollary.</strong> If $\lambda_{1}$ is put on $E_{12}$ and $\lambda_{2}$ on $E_{23}$, then the scalar on $E_{13}$ is forced to be $\lambda_{1}\lambda_{2}$. A third independent scalar $\lambda_{3}$ on $E_{13}$ is incompatible with the frame unless $\lambda_{3}=\lambda_{1}\lambda_{2}$. The only freedom is the two-parameter torus, and the composite carries the product of the two simple weights.</p>
+<h2 id="the-count-math176">The Count $8=6+2$</h2>
+<p><strong>The frame has eight complex parameters, the root six, and the gauge two.</strong></p>
+<p><strong>Theorem.</strong> The map</p>
+<p>$$
+\pi:\{\text{frames}\}\longrightarrow\{\text{roots with simple spectrum}\},\qquad
+(E_{ij})\longmapsto H=\sum_{i}\zeta_{i}E_{ii},
+$$</p>
+<p>is surjective, and its fibre over every root is a torsor under the gauge group $(\mathbb{C}^{\times})^{2}$. Consequently</p>
+<p>$$
+\dim_{\mathbb{C}}\{\text{frames}\}=8=6+2=\dim_{\mathbb{C}}\{\text{roots}\}+\dim_{\mathbb{C}}(\mathbb{C}^{\times})^{2}.
+$$</p>
+<p><strong>Proof.</strong> The map is well defined by §<em>The Frame from a Basis</em>: the diagonal units of a frame are a complete orthogonal family, and the root built from them has simple spectrum. It is surjective because a root gives its three Lagrange idempotents $P_{i}$, and a frame with $E_{ii}=P_{i}$ exists: choose nonzero $E_{ij}\in A_{ij}$ normalized by $E_{ij}E_{ji}=P_{i}$; the Peirce pairing of <em>The Peirce Decomposition of $M_{3}(\mathbb{C})$</em> makes the choice possible, and the matrix-unit table makes it a frame.</p>
+<p>The fibre over $H$ consists of the frames with the same diagonal units. The Peirce lines $A_{ij}=P_{i}M_{3}P_{j}$ are one-dimensional, so a frame over $H$ is the choice of a nonzero $E_{ij}\in A_{ij}$ for each $i\neq j$, normalized by $E_{ij}E_{ji}=P_{i}$. The gauge $E_{ij}\mapsto(t_{i}/t_{j})E_{ij}$ acts on these choices, and it acts simply transitively: given two frames $E_{ij}$ and $E_{ij}'$ with the same diagonal, $E_{ij}'=\mu_{ij}E_{ij}$ with $\mu_{ij}\in\mathbb{C}^{\times}$; the matrix-unit table forces $\mu_{ij}\mu_{jk}=\mu_{ik}$ and $\mu_{ji}=\mu_{ij}^{-1}$, so by the cocycle proposition $\mu_{ij}=t_{i}/t_{j}$ for a unique class of $t$ modulo common scalar. The fibre is therefore a $(\mathbb{C}^{\times})^{2}$-torsor, of dimension two.</p>
+<p>The dimensions are the orbit dimension $6$ of <em>Roots of Unity and the Lagrange Idempotents</em> and the torus dimension $2$; the total is the frame dimension $8$ of §<em>The Frame from a Basis</em>. The two counts agree, and the agreement is the content of the theorem.</p>
+<p><strong>The three counts of the same eight.</strong></p>
+<ul>
+<li><strong>Frames.</strong> $PGL_{3}$ has dimension $8$.</li>
+<li><strong>Root plus gauge.</strong> The root orbit $PGL_{3}/T$ has dimension $6$; the torus $T$ has dimension $2$; $6+2=8$.</li>
+<li><strong>Basis plus gauge.</strong> A basis of $\mathbb{C}^{3}$ has $9$ parameters; the common scalar of the frame removes $1$; the independent scalings of the gauge remove $2$; $9-1=8$, with the $2$ read as the gauge.</li>
+</ul>
+<p>The gauge is not a redundancy of the root: it is the fibre of the frame over the root, and it is the freedom of the off-diagonal units at fixed idempotents.</p>
+<h2 id="the-maximal-torus-of-math217">The Maximal Torus of $PGL_{3}$</h2>
+<p><strong>The gauge group is the maximal torus of the projective linear group.</strong></p>
+<p>The diagonal matrices of $GL_{3}$ form a maximal torus $T_{GL}\cong(\mathbb{C}^{\times})^{3}$. Its image in $PGL_{3}=GL_{3}/\mathbb{C}^{\times}I$ is</p>
+<p>$$
+T=T_{GL}/(T_{GL}\cap\mathbb{C}^{\times}I)\cong(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2},
+$$</p>
+<p>which is a maximal torus of $PGL_{3}$, of dimension two. The gauge of §<em>The Gauge</em> is exactly this torus acting by conjugation on the frame; the root vectors $E_{ij}$ are the weight vectors, of weights $t_{i}/t_{j}$, and the simple nilpotents $E_{12},E_{23}$ carry the two simple roots. The composite $E_{13}$ carries the highest root, the sum of the two simple roots in the character lattice.</p>
+<p><strong>The root system.</strong> The weights $t_{i}/t_{j}$ for $i\neq j$ are the six roots of $A_{2}$, and the two simple ones are $\alpha_{1}=t_{1}/t_{2}$ and $\alpha_{2}=t_{2}/t_{3}$; the highest root is $\alpha_{1}\alpha_{2}=t_{1}/t_{3}$. The gauge parameters $\lambda_{1},\lambda_{2}$ are the values of the two simple roots, and the composite weight is their product. The root system is the classical $A_{2}$ of $PGL_{3}$; the frame is a point of the group, and the gauge is the torus that fixes the root.</p>
+<p><strong>The comparison with the biquaternion case.</strong> For $n=2$ the frame has two diagonal idempotents and two off-diagonal units $E_{12},E_{21}$; the gauge is</p>
+<p>$$
+E_{12}\longmapsto\mu E_{12},\qquad E_{21}\longmapsto\mu^{-1}E_{21},
+$$</p>
+<p>with one parameter $\mu\in\mathbb{C}^{\times}$. The torus is $(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}\cong\mathbb{C}^{\times}$, of dimension one. The $M_{3}$ case has two simple nilpotents and two parameters; the composite is forced. The pattern is $(\mathbb{C}^{\times})^{n-1}$ for $M_{n}(\mathbb{C})$: one parameter for the biquaternion algebra $M_{2}(\mathbb{C})$, two for $M_{3}(\mathbb{C})$, and $n-1$ in general.</p>
+<h2 id="summary">Summary</h2>
+<p>A frame is a basis of $M_{3}(\mathbb{C})$ by matrix units. It is the same data as a basis of $\mathbb{C}^{3}$ up to a common scalar, so the frames form $PGL_{3}(\mathbb{C})$, of complex dimension $8$:</p>
+<p>$$
+\boxed{\;\{\text{frames}\}\cong PGL_{3}(\mathbb{C}),\qquad \dim_{\mathbb{C}}=8.\;}
+$$</p>
+<p>The diagonal units are three idempotents; the simple nilpotents are</p>
+<p>$$
+N_{1}=E_{12},\qquad N_{2}=E_{23},\qquad N_{1}^{2}=N_{2}^{2}=0,\qquad N_{1}N_{2}=E_{13}.
+$$</p>
+<p>The composite $E_{13}$ is the product of the two simple nilpotents, not an independent generator.</p>
+<p>The gauge is</p>
+<p>$$
+E_{ij}\longmapsto\frac{t_{i}}{t_{j}}E_{ij},\qquad t_{i}\in\mathbb{C}^{\times},
+$$</p>
+<p>with group $(\mathbb{C}^{\times})^{3}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{2}$. It fixes every idempotent, the root, the spectrum and the polynomial invariants. The two simple rescalings $\lambda_{1},\lambda_{2}$ force the composite rescaling $\lambda_{1}\lambda_{2}$; the cocycle $\lambda_{ij}\lambda_{jk}=\lambda_{ik}$ has only the solutions $\lambda_{ij}=t_{i}/t_{j}$, and there is no third independent scalar.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_{3}(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frame dimension</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>Root orbit dimension</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Gauge torus dimension</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Simple nilpotents</td>
+<td>$E_{12},E_{23}$</td>
+</tr>
+<tr>
+<td>Composite</td>
+<td>$E_{13}=E_{12}E_{23}$</td>
+</tr>
+<tr>
+<td>Gauge parameters</td>
+<td>$\lambda_{1},\lambda_{2}$ with $\lambda_{3}=\lambda_{1}\lambda_{2}$</td>
+</tr>
+<tr>
+<td>$\dim$ of the maximal torus of $PGL_{3}$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The count $8=6+2$ is the orbit-stabiliser count for the action of $PGL_{3}$ on the root: the root is the orbit, the gauge is the stabiliser.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix units of a frame</td>
+</tr>
+<tr>
+<td>$v_{i}^{\vee}$</td>
+<td>the dual basis functional, $v_{j}^{\vee}(v_{k})=\delta_{jk}$</td>
+</tr>
+<tr>
+<td>$N_{1}=E_{12}$, $N_{2}=E_{23}$</td>
+<td>the simple nilpotents</td>
+</tr>
+<tr>
+<td>$\mathfrak{n}_{+}$</td>
+<td>the nilpotent algebra $\operatorname{span}\{E_{12},E_{23},E_{13}\}$</td>
+</tr>
+<tr>
+<td>$t_{i}$</td>
+<td>gauge parameters, $t_{i}\in\mathbb{C}^{\times}$</td>
+</tr>
+<tr>
+<td>$\lambda_{1}=t_{1}/t_{2}$, $\lambda_{2}=t_{2}/t_{3}$</td>
+<td>the two gauge parameters on the simple nilpotents</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>the maximal torus $(\mathbb{C}^{\times})^{2}$ of $PGL_{3}$</td>
+</tr>
+<tr>
+<td>$\alpha_{1}=t_{1}/t_{2}$, $\alpha_{2}=t_{2}/t_{3}$</td>
+<td>the simple roots of $A_{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a>, for the nine lines and the coarse split.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m3c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root $H$ and its idempotents.</li>
+<li><a href="the-two-parameter-gauge-of-m3c.html">The Two-Parameter Gauge</a>, for the gauge read on the coherence entries and the comparison with the single $\lambda$ of $\mathbb{B}$.</li>
+<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>, for the matrix units and the projective group.</li>
+<li><a href="matrix-algebras.html">Matrix Algebras</a>, for the matrix-unit table.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the two-dimensional frame and its single $\mu$.</li>
+<li><a href="root-systems-and-classification.html">Root Systems and Classification</a>, for the root system $A_{2}$ and the maximal torus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

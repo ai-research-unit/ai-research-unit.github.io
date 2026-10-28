@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Matrix Algebra $M_6(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-matrix-algebra-math0"><strong>The Matrix Algebra $M_6(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>$M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$. It has centre $\mathbb{C}I_6$, it is simple, its commutator subspace is the trace-zero hyperplane $\mathfrak{sl}_6$, and its unit group is $GL_6(\mathbb{C})$, of dimension $36$, with projective quotient $PGL_6(\mathbb{C})$, of dimension $35$.</p>
+<p>This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and skew-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of <em>The Frame, the Simple Nilpotents and the Gauge</em> and the coordinates of <em>The Element, the Coordinates and the Trace</em> are built.</p>
+<p>No form and no topology are used here. The positive definite trace form is <em>The Involution and the Hermitian Structure</em>; the exponential and the Lie group are <em>The Exponential and the Lie Group</em>; the modules are <em>The Modules and the Minimal Left Ideals</em>.</p>
+<h2 id="the-algebra">The Algebra</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> $M_6(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{C}^6)$ is the algebra of complex-linear endomorphisms of $\mathbb{C}^6$, with the product of composition and the unit $I_6$. Its elements are the complex $6\times6$ matrices.</p>
+<p><strong>Proposition.</strong> $\dim_{\mathbb{C}}M_6(\mathbb{C})=36$ and $\dim_{\mathbb{R}}M_6(\mathbb{C})=72$.</p>
+<p><strong>Proof.</strong> A matrix has $36$ independent complex entries; a complex basis of $36$ elements is a real basis of $72$ elements when multiplied by $1$ and $\mathrm i$.</p>
+<h3 id="the-matrix-units">The Matrix Units</h3>
+<p>Let $e_1,\dots,e_6$ be the standard basis of $\mathbb{C}^6$ and $e_j^{\vee}$ the dual basis. Put</p>
+<p>$$
+E_{ij}=e_ie_j^{\vee}.
+$$</p>
+<p><strong>Theorem (the matrix-unit rule).</strong> The $E_{ij}$ are a basis of $M_6(\mathbb{C})$, and</p>
+<p>$$
+E_{ij}E_{kl}=\delta_{jk}E_{il}.
+$$</p>
+<p><strong>Proof.</strong> The rule is $e_ie_j^{\vee}e_ke_l^{\vee}=e_i\delta_{jk}e_l^{\vee}$. The units are linearly independent: applying $\sum a_{ij}E_{ij}$ to $e_k$ gives the column $k$, so the sum is zero only if every $a_{ij}=0$. They span: for $A\in M_6(\mathbb{C})$, $A=\sum_{i,j}A_{ij}E_{ij}$, since both sides send $e_j$ to $\sum_iA_{ij}e_i$.</p>
+<p><strong>Corollary.</strong> The coordinates of $A$ are its entries, and the product is</p>
+<p>$$
+(AB)_{ij}=\sum_{k=1}^{6}A_{ik}B_{kj}.
+$$</p>
+<p><strong>Proof.</strong> Multiply the two sums and apply the rule; the only surviving terms have matching inner indices.</p>
+<h3 id="the-unit-group">The Unit Group</h3>
+<p><strong>Definition.</strong> $GL_6(\mathbb{C})=\{A\in M_6(\mathbb{C}):\det A\neq0\}$ is the unit group, and $PGL_6(\mathbb{C})=GL_6(\mathbb{C})/\mathbb{C}^\times I_6$ is the projective linear group.</p>
+<p><strong>Proposition.</strong> $GL_6(\mathbb{C})$ is a complex Lie group of dimension $36$, and $PGL_6(\mathbb{C})$ is a complex Lie group of dimension $35$.</p>
+<p><strong>Proof.</strong> $GL_6$ is the open set $\det\neq0$ in the affine space $M_6\cong\mathbb{C}^{36}$, so it has dimension $36$. The centre $\mathbb{C}^\times I_6$ is a closed subgroup of dimension one acting freely, so the quotient has dimension $35$.</p>
+<p><strong>Proposition (the conjugation action).</strong> $GL_6$ acts on $M_6$ by $A\mapsto gAg^{-1}$. The scalars act trivially, so the action factors through $PGL_6$, and the kernel of the action is exactly $\mathbb{C}^\times I_6$.</p>
+<p><strong>Proof.</strong> $(gh)A(gh)^{-1}=g(hAh^{-1})g^{-1}$. A scalar $tI$ gives $tAt^{-1}=A$. If $gAg^{-1}=A$ for all $A$, then $g$ commutes with every matrix, hence $g\in\mathbb{C}I_6$ by §<em>The Centre</em>.</p>
+<h3 id="trace-and-determinant">Trace and Determinant</h3>
+<p><strong>Definition.</strong> The <strong>trace</strong> is the linear functional</p>
+<p>$$
+\operatorname{tr}A=\sum_{i=1}^{6}A_{ii},
+$$</p>
+<p>and the <strong>determinant</strong> is the alternating multilinear function of the columns normalised by $\det I_6=1$.</p>
+<p><strong>Theorem (the elementary properties).</strong></p>
+<ul>
+<li>$\operatorname{tr}(AB)=\operatorname{tr}(BA)$ for all $A,B$;</li>
+<li>$\operatorname{tr}([A,B])=0$;</li>
+<li>$\det(AB)=\det A\det B$;</li>
+<li>$\det A\neq0$ if and only if $A$ is invertible;</li>
+<li>$\det(tI_6-A)=t^6-\operatorname{tr}(A)t^5+\cdots+(-1)^6\det A$ is the characteristic polynomial.</li>
+</ul>
+<p><strong>Proof.</strong> The trace identity is $\sum_{i,j}A_{ij}B_{ji}=\sum_{i,j}B_{ji}A_{ij}$. The commutator statement follows. The determinant is multiplicative by the column expansion; it is nonzero exactly on a basis, that is on invertible matrices. The characteristic polynomial expands by the Leibniz formula, and the coefficients of $t^5$ and $t^0$ are the trace and the determinant.</p>
+<p><strong>Corollary (Cayley–Hamilton).</strong> $\chi_A(A)=0$.</p>
+<p><strong>Proof.</strong> This is the Cayley–Hamilton theorem for $6\times6$ matrices; it follows from the adjugate identity $(tI-A)\operatorname{adj}(tI-A)=\chi_A(t)I$ evaluated at $t=A$, or from the triangular form over $\mathbb{C}$.</p>
+<p><strong>Corollary (the trace is the only invariant linear functional).</strong> If $\varphi:M_6(\mathbb{C})\to\mathbb{C}$ is linear and $\varphi(AB)=\varphi(BA)$ for all $A,B$, then $\varphi=c\operatorname{tr}$ for some $c\in\mathbb{C}$.</p>
+<p><strong>Proof.</strong> The condition gives $\varphi([A,B])=0$, so $\varphi$ vanishes on $\mathfrak{sl}_6$. Since $M_6=\mathbb{C}I_6\oplus\mathfrak{sl}_6$ (§<em>The Commutator Subalgebra</em>), $\varphi$ is determined by its value on $I_6$, and $\operatorname{tr}$ is nonzero there.</p>
+<h2 id="the-centre-and-the-simplicity">The Centre and the Simplicity</h2>
+<h3 id="the-centre">The Centre</h3>
+<p><strong>Theorem.</strong> The centre of $M_6(\mathbb{C})$ is $\mathbb{C}I_6$.</p>
+<p><strong>Proof.</strong> Let $A$ commute with every $E_{ij}$. From $AE_{ij}=E_{ij}A$, compare the $(k,j)$ entries: $A_{ki}=A_{jj}\delta_{ki}$. For fixed $i,j$ this says that the $i$-th column of $A$ vanishes off the diagonal and has diagonal entry $A_{jj}$. Hence $A$ is diagonal, and $A_{ii}=A_{jj}$ for all $i,j$. So $A=\lambda I_6$.</p>
+<p><strong>Corollary.</strong> $\dim_{\mathbb{C}}\mathbb{C}I_6=1$, and the quotient $M_6/\mathbb{C}I_6$ has dimension $35$.</p>
+<h3 id="simplicity">Simplicity</h3>
+<p><strong>Definition.</strong> A <strong>two-sided ideal</strong> of $M_6(\mathbb{C})$ is a linear subspace $J$ with $M_6J\subseteq J$ and $JM_6\subseteq J$.</p>
+<p><strong>Theorem.</strong> $M_6(\mathbb{C})$ is simple: its only two-sided ideals are $0$ and $M_6(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> Let $J\neq0$. Choose $0\neq A\in J$ with $A_{ij}\neq0$. For all $k,l$,</p>
+<p>$$
+E_{ki}AE_{jl}=A_{ij}E_{kl}\in J,
+$$</p>
+<p>because $J$ is a two-sided ideal. Since $A_{ij}\neq0$, every matrix unit $E_{kl}$ lies in $J$, and the units span $M_6$. So $J=M_6$.</p>
+<p><strong>Corollary (the left ideals).</strong> The six spaces</p>
+<p>$$
+L_j=M_6E_{jj}=\left\{\sum_i a_{ij}E_{ij}:a_{ij}\in\mathbb{C}\right\}
+$$</p>
+<p>are minimal left ideals, each of dimension six, and</p>
+<p>$$
+M_6(\mathbb{C})=L_1\oplus\cdots\oplus L_6
+$$</p>
+<p>as left modules. Every simple left $M_6$-module is isomorphic to $L_j\cong\mathbb{C}^6$.</p>
+<p><strong>Proof.</strong> $L_j$ is the $j$-th column. It is a left ideal because $M_6L_j\subseteq L_j$; it is minimal because a nonzero element of $L_j$ has a nonzero entry in row $i$, and then $E_{ij}$ times it is $E_{ij}$, so the ideal generated is all of $L_j$. The sum is direct because the columns are independent. A simple module is a quotient of the regular module $M_6$, and the regular module is the direct sum of the six copies $L_j$; so the simple quotient is one of them.</p>
+<p><strong>Corollary (isotypic of length one).</strong> As a left module, $M_6(\mathbb{C})\cong(\mathbb{C}^6)^{\oplus6}$; as a right module, $M_6(\mathbb{C})\cong((\mathbb{C}^6)^*)^{\oplus6}$; the algebra is isotypic of length one, and all its simple modules have dimension six.</p>
+<p><strong>Proof.</strong> The left statement is the column decomposition. The right statement is the row decomposition, the rows being the dual spaces. The algebra has one isomorphism class of simple modules, so it is isotypic of length one (the length is the number of distinct simple summands, which is one).</p>
+<p><strong>Corollary (the bimodule).</strong> As an $M_6$-bimodule,</p>
+<p>$$
+M_6(\mathbb{C})\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^*,
+\qquad
+E_{ij}\leftrightarrow e_i\otimes e_j^{\vee}.
+$$</p>
+<p><strong>Proof.</strong> The map $e_i\otimes e_j^{\vee}\mapsto E_{ij}$ is a bimodule isomorphism: $A(e_i\otimes e_j^{\vee})B=AE_{ij}B$.</p>
+<h3 id="the-commutator-subalgebra">The Commutator Subalgebra</h3>
+<p><strong>Theorem.</strong> $[M_6(\mathbb{C}),M_6(\mathbb{C})]=\mathfrak{sl}_6(\mathbb{C})=\{A:\operatorname{tr}A=0\}$, and</p>
+<p>$$
+M_6(\mathbb{C})=\mathbb{C}I_6\oplus\mathfrak{sl}_6(\mathbb{C}),
+\qquad
+36=1+35 .
+$$</p>
+<p><strong>Proof.</strong> Every commutator has trace zero, so $[M_6,M_6]\subseteq\mathfrak{sl}_6$. Conversely, for $i\neq j$,</p>
+<p>$$
+E_{ij}=[E_{ii},E_{ij}],
+\qquad
+E_{ii}-E_{jj}=[E_{ij},E_{ji}].
+$$</p>
+<p>The units $E_{ij}$ with $i\neq j$ and the differences $E_{ii}-E_{jj}$ (for $j=2,\dots,6$) are a basis of the trace-zero hyperplane, of dimension $35$. So the commutator subspace is $\mathfrak{sl}_6$. The decomposition is the decomposition of a matrix into its scalar part $\tfrac16(\operatorname{tr}A)I_6$ and its traceless part.</p>
+<p><strong>Corollary (perfectness).</strong> $\mathfrak{sl}_6(\mathbb{C})=[\mathfrak{sl}_6(\mathbb{C}),\mathfrak{sl}_6(\mathbb{C})]$.</p>
+<p><strong>Proof.</strong> The displayed identities express every basis element of $\mathfrak{sl}_6$ as a commutator of two traceless matrices: $E_{ij}=[E_{ii}-\tfrac16I_6,E_{ij}]$ and $E_{ii}-E_{jj}=[E_{ij},E_{ji}]$, and both arguments are traceless.</p>
+<p><strong>Remark (single commutators).</strong> Every traceless matrix is not only a sum of commutators but a single commutator: for $n\ge2$ and every $A$ with $\operatorname{tr}A=0$ there are $B,C$ with $A=[B,C]$. This is Shoda's theorem over an algebraically closed field of characteristic zero; it is stronger than perfectness and is not needed below. <strong>The identity is not a commutator</strong>, because its trace is $6\neq0$.</p>
+<h2 id="the-real-structure">The Real Structure</h2>
+<h3 id="complex-and-real-dimensions">Complex and Real Dimensions</h3>
+<p><strong>Proposition.</strong> $M_6(\mathbb{C})$ has complex dimension $36$ and real dimension $72$. The real basis is $E_{ij}$ and $\mathrm iE_{ij}$, $1\le i,j\le6$.</p>
+<p><strong>Proof.</strong> The $36$ complex units are a complex basis; multiplying by $1$ and $\mathrm i$ gives $72$ real basis vectors.</p>
+<h3 id="hermitian-and-skew-hermitian-parts">Hermitian and Skew-Hermitian Parts</h3>
+<p><strong>Definition.</strong> The <strong>conjugate transpose</strong> of $A$ is $A^*=\bar A^{\mathsf T}$, with entries $(A^*)_{ij}=\overline{A_{ji}}$. An element is <strong>Hermitian</strong> if $A^*=A$, <strong>skew-Hermitian</strong> if $A^*=-A$, and <strong>unitary</strong> if $A^*A=I_6$.</p>
+<p><strong>Proposition.</strong> Every $A\in M_6(\mathbb{C})$ splits uniquely as</p>
+<p>$$
+A=\frac{A+A^*}{2}+\frac{A-A^*}{2},
+$$</p>
+<p>a Hermitian part plus a skew-Hermitian part. The real vector spaces</p>
+<p>$$
+\mathfrak{u}(6)=\{A:A^*=-A\},\qquad
+\mathfrak{su}(6)=\{A\in\mathfrak{u}(6):\operatorname{tr}A=0\}
+$$</p>
+<p>have real dimensions $36$ and $35$.</p>
+<p><strong>Proof.</strong> The two parts are Hermitian and skew-Hermitian, and the sum is $A$; uniqueness follows by applying the conjugate transpose. A skew-Hermitian matrix has purely imaginary diagonal entries ($6$ real parameters) and arbitrary complex entries above the diagonal ($15$ complex $=30$ real parameters), so $\dim_{\mathbb{R}}\mathfrak{u}(6)=36$. The trace is a nonzero real-linear functional on $\mathfrak{u}(6)$ (with values in $\mathrm i\mathbb{R}$), so its kernel has real dimension $35$.</p>
+<p><strong>Theorem (the complexification).</strong> As real vector spaces,</p>
+<p>$$
+M_6(\mathbb{C})=\mathfrak{u}(6)\oplus\mathrm i\,\mathfrak{u}(6)
+\cong\mathfrak{u}(6)\otimes_{\mathbb{R}}\mathbb{C}.
+$$</p>
+<p><strong>Proof.</strong> If $A\in\mathfrak{u}(6)\cap\mathrm i\mathfrak{u}(6)$, then $A^*=-A$ and $A=\mathrm iB$ with $B^*=-B$, so $A^*=(\mathrm iB)^*=-\mathrm iB^*=\mathrm iB=A$, hence $A=0$. The dimensions add: $36+36=72$. The complex scalar multiplication on the right is the complexification.</p>
+<p><strong>Corollary (the unitary group).</strong> $U(6)=\{A:A^*A=I_6\}$ is a compact real Lie group of dimension $36$, and $PU(6)=U(6)/U(1)$ has dimension $35$.</p>
+<p><strong>Proof.</strong> $U(6)$ is closed and bounded in $M_6(\mathbb{C})\cong\mathbb{R}^{72}$, hence compact; its Lie algebra is $\mathfrak{u}(6)$, of dimension $36$. The centre $U(1)$ acts freely, so the quotient has dimension $35$.</p>
+<p><strong>Remark (the two real forms).</strong> $GL_6(\mathbb{C})$ has complex dimension $36$; its compact real form $U(6)$ has real dimension $36$; $PGL_6(\mathbb{C})$ and $PU(6)$ both have dimension $35$. The equality of the two $35$'s is the equality of the complex and compact real dimensions of the same projective group.</p>
+<h2 id="the-algebra-as-an-algebra-of-operators">The Algebra as an Algebra of Operators</h2>
+<h3 id="the-left-and-right-representations">The Left and Right Representations</h3>
+<p><strong>Definition.</strong> For $A\in M_6(\mathbb{C})$ let</p>
+<p>$$
+L_A(B)=AB,\qquad R_A(B)=BA
+$$</p>
+<p>be the left and right multiplications on $M_6$.</p>
+<p><strong>Proposition.</strong> $L$ and $R$ are faithful algebra homomorphisms, $L_A R_B=R_B L_A$ for all $A,B$, and the map</p>
+<p>$$
+M_6\otimes M_6^{\mathrm{op}}\longrightarrow\operatorname{End}(M_6),
+\qquad
+A\otimes B\longmapsto L_A R_B
+$$</p>
+<p>is an isomorphism of algebras.</p>
+<p><strong>Proof.</strong> $L_{AB}=L_AL_B$ and $R_{AB}=R_BR_A$ (the order reverses for the right representation, which is the opposite algebra). Faithfulness: $L_A=0$ implies $A=L_A(I)=0$. The commutation is associativity. The map is injective because $L_A R_B(I)=AB$, and both sides have dimension $36\cdot36=1296$.</p>
+<h3 id="derivations-and-automorphisms">Derivations and Automorphisms</h3>
+<p><strong>Definition.</strong> A <strong>derivation</strong> of $M_6$ is a linear map $D$ with $D(AB)=D(A)B+AD(B)$. An <strong>inner derivation</strong> is $\operatorname{ad}_A(B)=[A,B]$.</p>
+<p><strong>Theorem.</strong> Every derivation of $M_6(\mathbb{C})$ is inner, and</p>
+<p>$$
+\operatorname{Der}(M_6)\cong\mathfrak{sl}_6(\mathbb{C}),
+\qquad
+\dim\operatorname{Der}(M_6)=35 .
+$$</p>
+<p><strong>Proof.</strong> The algebra $M_6$ is central simple (§<em>The Centre</em> and §<em>Simplicity</em>), so the Skolem–Noether theorem applies: every derivation is inner. The map $A\mapsto\operatorname{ad}_A$ has kernel the centre $\mathbb{C}I_6$ and image the inner derivations, so the derivations are $\mathfrak{sl}_6$; the dimension is $36-1=35$.</p>
+<p><strong>Theorem (the automorphisms).</strong> Every automorphism of $M_6(\mathbb{C})$ is inner, and</p>
+<p>$$
+\operatorname{Aut}(M_6)\cong PGL_6(\mathbb{C}),
+\qquad
+\dim\operatorname{Aut}(M_6)=35 .
+$$</p>
+<p><strong>Proof.</strong> Skolem–Noether: every automorphism is $A\mapsto gAg^{-1}$ for some $g\in GL_6$, and $g$ is unique up to a scalar. The inner automorphism group is $GL_6/\mathbb{C}^\times I_6=PGL_6$, of dimension $35$.</p>
+<h3 id="the-trace-pairing">The Trace Pairing</h3>
+<p><strong>Definition.</strong> The <strong>trace pairing</strong> is</p>
+<p>$$
+\langle A,B\rangle=\operatorname{tr}(AB).
+$$</p>
+<p><strong>Theorem.</strong> The trace pairing is a nondegenerate symmetric bilinear form on $M_6(\mathbb{C})$, invariant under the left and right multiplications:</p>
+<p>$$
+\langle AB,C\rangle=\langle A,BC\rangle .
+$$</p>
+<p><strong>Proof.</strong> Bilinearity and symmetry are immediate from the trace. Nondegeneracy: if $\langle A,B\rangle=0$ for all $B$, take $B=E_{ij}$; then $\operatorname{tr}(AE_{ij})=A_{ji}=0$ for all $i,j$, so $A=0$. Invariance: $\operatorname{tr}(ABC)=\operatorname{tr}(A\,BC)$ by associativity.</p>
+<p><strong>Corollary (the Killing form).</strong> On $\mathfrak{sl}_6(\mathbb{C})$ the Killing form is $12\operatorname{tr}(AB)$; on $M_6(\mathbb{C})$ it is $12\operatorname{tr}(AB)-2\operatorname{tr}(A)\operatorname{tr}(B)$.</p>
+<p><strong>Proof.</strong> For $\mathfrak{gl}_n$ the Killing form is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$; at $n=6$ this is $12\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$. On the traceless part the second term vanishes.</p>
+<p><strong>Remark.</strong> The trace pairing is not the Hermitian form of <em>The Involution and the Hermitian Structure</em>: it is complex bilinear, not conjugate-linear, and it is indefinite as a real bilinear form. The positive definite form is $\operatorname{tr}(A^*B)$, which uses the involution. On Hermitian matrices the two pairings agree and are real.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="the-nilpotent-jordan-block">The Nilpotent Jordan Block</h3>
+<p><strong>Example.</strong> Let</p>
+<p>$$
+N=\sum_{i=1}^{5}E_{i,i+1}=
+\begin{pmatrix}
+0&1&0&0&0&0\\
+0&0&1&0&0&0\\
+0&0&0&1&0&0\\
+0&0&0&0&1&0\\
+0&0&0&0&0&1\\
+0&0&0&0&0&0
+\end{pmatrix}.
+$$</p>
+<p>Then</p>
+<p>$$
+N^r=\sum_{i=1}^{6-r}E_{i,i+r}\quad(1\le r\le5),
+\qquad
+N^6=0,
+$$</p>
+<p>$\operatorname{rank}N=5$, $\operatorname{tr}N=0$, $\det N=0$, and the characteristic polynomial is $t^6$.</p>
+<p><strong>Proof.</strong> The product rule telescopes: $E_{i,i+1}E_{i+1,i+2}=E_{i,i+2}$, and so on. The $r$-th power has ones on the $r$-th superdiagonal. The rank is five because the image is spanned by $e_1,\dots,e_5$ and the kernel is $\mathbb{C}e_6$. The trace is the sum of the diagonal entries, all zero; the determinant is zero because $N$ is not invertible; the characteristic polynomial is $t^6$ because $N$ is nilpotent of index six.</p>
+<h3 id="the-cyclic-shift">The Cyclic Shift</h3>
+<p><strong>Example.</strong> Let $\rho$ be the permutation matrix of the cycle $1\mapsto2\mapsto\cdots\mapsto6\mapsto1$. Then $\rho^6=I_6$, $\operatorname{tr}\rho=0$, $\det\rho=-1$, and</p>
+<p>$$
+\chi_\rho(t)=t^6-1 .
+$$</p>
+<p><strong>Proof.</strong> $\rho$ is a permutation matrix with no fixed point, so its trace is zero and its determinant is the sign of the $6$-cycle, which is $(-1)^5=-1$. Its eigenvalues are the six sixth roots of unity, each once, so the characteristic polynomial is $\prod_k(t-\zeta_k)=t^6-1$.</p>
+<p><strong>Remark.</strong> The cyclic shift is a root in the sense of <em>Roots of Unity and the Lagrange Idempotents</em>: $\rho^6=I_6$ with simple spectrum. The nilpotent $N$ is the other extreme: $N^6=0$ with a single eigenvalue. The two examples are the two ends of the Jordan classification, and both have trace zero.</p>
+<h3 id="a-projector">A Projector</h3>
+<p><strong>Example.</strong> $P=E_{11}$ satisfies $P^2=P$, $\operatorname{rank}P=1$, $\operatorname{tr}P=1$, $\det P=0$, and $\chi_P(t)=t^5(t-1)$.</p>
+<p><strong>Proof.</strong> $E_{11}^2=E_{11}$; the image is $\mathbb{C}e_1$ and the kernel is spanned by $e_2,\dots,e_6$. The trace is the single nonzero diagonal entry, and the determinant is zero because the rank is one. The characteristic polynomial has the eigenvalue $1$ once and $0$ five times.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$, with basis $E_{ij}$ and product $E_{ij}E_{kl}=\delta_{jk}E_{il}$.</p>
+<p>Its centre is $\mathbb{C}I_6$, it is simple, and it is isotypic of length one: as a left module it is six copies of $\mathbb{C}^6$, and every simple module is $\mathbb{C}^6$. Its commutator subspace is the trace-zero hyperplane,</p>
+<p>$$
+[M_6,M_6]=\mathfrak{sl}_6(\mathbb{C}),
+\qquad
+M_6=\mathbb{C}I_6\oplus\mathfrak{sl}_6,
+\qquad
+36=1+35 .
+$$</p>
+<p>$$
+\boxed{\ M_6(\mathbb{C})\text{ is central simple, } \operatorname{Der}(M_6)\cong\mathfrak{sl}_6,\ \operatorname{Aut}(M_6)\cong PGL_6,\ \dim=35 .\ }
+$$</p>
+<p>The real structure is $M_6=\mathfrak{u}(6)\oplus\mathrm i\mathfrak{u}(6)$, with $\dim_{\mathbb{R}}\mathfrak{u}(6)=36$ and $\dim_{\mathbb{R}}\mathfrak{su}(6)=35$. The trace pairing $\langle A,B\rangle=\operatorname{tr}(AB)$ is nondegenerate, symmetric and invariant; the Killing form on $\mathfrak{sl}_6$ is $12\operatorname{tr}(AB)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_6(\mathbb{C})$</td>
+<td>$36$ complex, $72$ real</td>
+<td>$E_{ij}$, product rule</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>$1$</td>
+<td>$\mathbb{C}I_6$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_6(\mathbb{C})$</td>
+<td>$35$</td>
+<td>trace-zero matrices</td>
+</tr>
+<tr>
+<td>$GL_6(\mathbb{C})$</td>
+<td>$36$</td>
+<td>invertible matrices</td>
+</tr>
+<tr>
+<td>$PGL_6(\mathbb{C})$</td>
+<td>$35$</td>
+<td>$GL_6/\mathbb{C}^\times$</td>
+</tr>
+<tr>
+<td>$U(6)$</td>
+<td>$36$ real</td>
+<td>$A^*A=I_6$</td>
+</tr>
+<tr>
+<td>$PU(6)$</td>
+<td>$35$ real</td>
+<td>$U(6)/U(1)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(M_6)$</td>
+<td>$35$</td>
+<td>inner derivations</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(M_6)$</td>
+<td>$35$</td>
+<td>$PGL_6$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix unit $e_ie_j^{\vee}$, with $E_{ij}E_{kl}=\delta_{jk}E_{il}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}$</td>
+<td>the trace, $\sum_iA_{ii}$</td>
+</tr>
+<tr>
+<td>$\det$</td>
+<td>the determinant</td>
+</tr>
+<tr>
+<td>$\chi_A(t)$</td>
+<td>the characteristic polynomial $\det(tI_6-A)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_6$</td>
+<td>the trace-zero matrices, $[M_6,M_6]$</td>
+</tr>
+<tr>
+<td>$A^*$</td>
+<td>the conjugate transpose</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(6),\mathfrak{su}(6)$</td>
+<td>skew-Hermitian and trace-zero skew-Hermitian matrices</td>
+</tr>
+<tr>
+<td>$\langle A,B\rangle=\operatorname{tr}(AB)$</td>
+<td>the trace pairing</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_A(B)=[A,B]$</td>
+<td>the inner derivation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the frame, the matrix units and the gauge.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>, for the coordinates and the scalar-traceless split.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>, for the positive definite trace form and the real forms.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals</a>, for the column ideals and the simple modules.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for $PGL_6$ and its action.</li>
+<li><a href="simple-algebras.html">Simple Algebras</a>, for central simple algebras, Skolem–Noether and the inner derivations.</li>
+<li><a href="semisimple-algebras-and-the-artin-wedderburn-theorem.html">Semisimple Algebras and the Artin–Wedderburn Theorem</a>, for isotypic algebras and the length.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Carus Mathematical Monographs, 1968), for the centre, the ideals and the matrix units.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the trace, the derivations and the automorphisms.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for $\mathfrak{sl}_6$ and the Killing form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Frame, the Simple Nilpotents and the Gauge — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-frame-the-simple-nilpotents-and-the-gauge"><strong>The Frame, the Simple Nilpotents and the Gauge</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A root gives six lines; a frame gives a vector in each line. The passage from the root to the frame is the passage from the projective basis to the basis, and its only freedom is a scale in each of the five simple directions. This article fixes the frame, the matrix units it carries, the five simple nilpotents, the composites they generate, and the five-parameter gauge that rescales them. The count is</p>
+<p>$$
+\underbrace{30}_{\text{root}}+\underbrace{5}_{\text{gauge}}=\underbrace{35}_{\text{frame}}=\dim PGL_6 .
+$$</p>
+<p>The article assumes the root and its six Lagrange projectors of <em>Roots of Unity and the Lagrange Idempotents</em>. It uses the algebra $M_6(\mathbb{C})$ of <em>The Matrix Algebra $M_6(\mathbb{C})$</em> and nothing else: no form, no norm, no topology. The Peirce decomposition by the frame is <em>The Peirce Decomposition</em>; the spin chain built on the frame is <em>The Spin Chain and the Adjoint Decomposition</em>; the geometry of the frames is <em>The Geometry of the Idempotents</em>.</p>
+<p><strong>The gauge is a gauge of the nilpotents.</strong> It rescales $E_{12},\dots,E_{56}$, one parameter for each, and it fixes every idempotent. There are five parameters, not six: the sixth is the overall scale, and the product rule removes it. The cocycle that removes it is §<em>The Cocycle</em>.</p>
+<h2 id="the-frame">The Frame</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Definition.</strong> A <strong>frame</strong> of $\mathbb{C}^6$ is an ordered basis $(v_1,\dots,v_6)$, read up to a single overall nonzero scalar:</p>
+<p>$$
+(v_1,\dots,v_6)\sim(tv_1,\dots,tv_6),\qquad t\in\mathbb{C}^\times .
+$$</p>
+<p>The frame is written $F=(v_1,\dots,v_6)$, and the class of $F$ in the projective space of bases is the object.</p>
+<p><strong>Proposition.</strong> The set of frames is $PGL_6(\mathbb{C})$, of complex dimension $35$.</p>
+<p><strong>Proof.</strong> A basis is an invertible matrix $B$ whose columns are the $v_i$; the equivalence is $B\sim tB$, so the set of frames is $GL_6(\mathbb{C})/\mathbb{C}^\times=PGL_6(\mathbb{C})$. The dimension is $36-1=35$.</p>
+<p><strong>Definition.</strong> The <strong>dual frame</strong> is the basis $v_1^{\vee},\dots,v_6^{\vee}$ of the dual space defined by $v_j^{\vee}(v_k)=\delta_{jk}$. The <strong>matrix units</strong> of the frame are</p>
+<p>$$
+E_{ij}=v_iv_j^{\vee},\qquad i,j=1,\dots,6 .
+$$</p>
+<p>As linear maps, $E_{ij}$ sends $v_j$ to $v_i$ and every other $v_k$ to zero.</p>
+<p><strong>Proposition (the matrix-unit rule).</strong> For all $i,j,k,l$,</p>
+<p>$$
+E_{ij}E_{kl}=\delta_{jk}E_{il}.
+$$</p>
+<p><strong>Proof.</strong> $E_{ij}E_{kl}=v_iv_j^{\vee}v_kv_l^{\vee}=v_i\delta_{jk}v_l^{\vee}=\delta_{jk}E_{il}$.</p>
+<p><strong>Corollary.</strong> The thirty-six matrix units are a basis of $M_6(\mathbb{C})$, the diagonal units $E_{ii}$ are idempotents, the off-diagonal units $E_{ij}$ ($i\neq j$) are square-zero, and</p>
+<p>$$
+\sum_{i=1}^{6}E_{ii}=I_6,\qquad
+E_{ii}E_{jj}=\delta_{ij}E_{ii}.
+$$</p>
+<p><strong>Proof.</strong> The rule gives $E_{ii}^2=E_{ii}$ and $E_{ij}^2=\delta_{ji}E_{ij}=0$ for $i\neq j$. The sum $\sum_iE_{ii}$ fixes every $v_j$, hence is the identity. The units are linearly independent because their values on the six vectors are the six matrix units of the standard basis after the identification $v_i\mapsto e_i$.</p>
+<h3 id="the-root-of-a-frame">The Root of a Frame</h3>
+<p><strong>Definition.</strong> The <strong>root of the frame</strong> is</p>
+<p>$$
+H_F=\sum_{i=1}^{6}\zeta_iE_{ii},
+$$</p>
+<p>with $\zeta_i=\zeta^{i-1}$ the six sixth roots of unity.</p>
+<p><strong>Proposition.</strong> $H_F$ is a root in the sense of <em>Roots of Unity and the Lagrange Idempotents</em>: $H_F^6=I_6$, its eigenvalues are the six roots, each with multiplicity one, and its Lagrange projectors are the diagonal units $E_{ii}$.</p>
+<p><strong>Proof.</strong> In the frame, $H_F$ is the diagonal matrix $\operatorname{diag}(\zeta_1,\dots,\zeta_6)$. It has the six distinct sixth roots on the diagonal, so it is a root and its eigenspaces are the six frame lines. The Lagrange projector of $\zeta_i$ is the coordinate projector $E_{ii}$.</p>
+<p><strong>Corollary.</strong> The frame is a root together with one nonzero vector in each of its six lines. The root is the frame modulo the scales; the scales are the gauge.</p>
+<p><strong>Proof.</strong> The root determines the six lines $V_i=\mathbb{C}v_i$ but no vector inside them. A frame determines the lines and a vector in each. Two frames with the same root differ by $v_i\mapsto t_iv_i$, which is the gauge below.</p>
+<h3 id="the-coordinates">The Coordinates</h3>
+<p><strong>Definition.</strong> The <strong>coordinates</strong> of $A\in M_6(\mathbb{C})$ in the frame are the thirty-six numbers $a_{ij}$ defined by</p>
+<p>$$
+A=\sum_{i,j=1}^{6}a_{ij}E_{ij}.
+$$</p>
+<p>The matrix $(a_{ij})$ is the matrix of $A$ in the basis $(v_1,\dots,v_6)$: the $j$-th column gives the coordinates of $Av_j$.</p>
+<p><strong>Proposition (the coordinate rule for the product).</strong></p>
+<p>$$
+(AB)_{ij}=\sum_{k=1}^{6}a_{ik}b_{kj}.
+$$</p>
+<p><strong>Proof.</strong> Multiply the two sums and use $E_{ik}E_{kj}=E_{ij}$ and $E_{ik}E_{lj}=0$ for $l\neq k$.</p>
+<p>The frame is therefore exactly a choice of coordinates in which the product is the ordinary matrix product, and the root is the diagonal matrix of the sixth roots. <strong>The frame is not an extra structure on the algebra; it is a basis of the algebra adapted to the root.</strong></p>
+<h2 id="the-simple-nilpotents">The Simple Nilpotents</h2>
+<h3 id="definition_1">Definition</h3>
+<p><strong>Definition.</strong> The <strong>simple nilpotents</strong> of the frame are the five matrix units</p>
+<p>$$
+E_{12},\ E_{23},\ E_{34},\ E_{45},\ E_{56}.
+$$</p>
+<p>The name is that of the simple roots of the root system $A_5$: $E_{i,i+1}$ is the root vector of the simple root $\alpha_i$, and the five of them are the simple directions of the flag. It is not a classification of nilpotents: every nonzero nilpotent of $M_6(\mathbb{C})$ is conjugate to $E_{12}$.</p>
+<p><strong>Proposition.</strong> Each simple nilpotent is square-zero and of rank one:</p>
+<p>$$
+E_{i,i+1}^2=0,\qquad \operatorname{rank}E_{i,i+1}=1,\qquad E_{i,i+1}\neq0 .
+$$</p>
+<p><strong>Proof.</strong> The square is $\delta_{i+1,i}E_{i,i+1}=0$. The rank is one because the image is the line $\mathbb{C}v_i$ and the kernel is the hyperplane spanned by the other five vectors. The unit is nonzero because it sends $v_{i+1}$ to $v_i\neq0$.</p>
+<h3 id="the-composites">The Composites</h3>
+<p><strong>Theorem.</strong> For $i<j$,</p>
+<p>$$
+E_{ij}=E_{i,i+1}E_{i+1,i+2}\cdots E_{j-1,j}.
+$$</p>
+<p>For $i>j$ the same formula with the reversed chain gives $E_{ij}$; for $i=j$ the empty product is $E_{ii}$.</p>
+<p><strong>Proof.</strong> Apply the matrix-unit rule successively:</p>
+<p>$$
+E_{i,i+1}E_{i+1,i+2}=E_{i,i+2},\qquad
+E_{i,i+2}E_{i+2,i+3}=E_{i,i+3},
+$$</p>
+<p>and so on. Each intermediate product is a matrix unit because the inner indices match, and the chain telescopes to $E_{ij}$.</p>
+<p><strong>Corollary.</strong> The five simple nilpotents generate, as an algebra without unit, the fifteen-dimensional algebra of strictly upper triangular matrices; with the six diagonal units they generate the twenty-one-dimensional upper triangular subalgebra; and adding the five negative simple units $E_{21},\dots,E_{65}$ generates all of $M_6(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> The composites $E_{ij}$ with $i<j$ are the fifteen positive-root vectors and are obtained from the simple ones by the theorem; their span is the strictly upper triangular algebra. Adding the $E_{ii}$ gives the diagonal, hence the upper triangular subalgebra. The lower triangular units are the products of the negative simple units, obtained by the same telescoping with the indices reversed, and the upper, lower and diagonal units together span all thirty-six coordinates.</p>
+<h3 id="the-positive-and-the-negative-units">The Positive and the Negative Units</h3>
+<p><strong>Proposition.</strong> The off-diagonal units split into the fifteen positive ones $E_{ij}$ with $i<j$ and the fifteen negative ones with $i>j$. Each is nilpotent of index two, and the two sets are exchanged by the transpose in the frame.</p>
+<p><strong>Proof.</strong> $E_{ij}^2=\delta_{ji}E_{ij}=0$ whenever $i\neq j$. The transpose of $v_iv_j^{\vee}$ is $v_jv_i^{\vee}=E_{ji}$.</p>
+<p><strong>Remark.</strong> The words <em>simple</em> and <em>composite</em> refer to the length of the chain from $i$ to $j$: the simple ones have length one, the composites have length $j-i\ge2$. The algebra has five simple nilpotents and ten composite ones in the positive set, and the same numbers in the negative set.</p>
+<h2 id="the-gauge">The Gauge</h2>
+<h3 id="the-action-on-the-frame">The Action on the Frame</h3>
+<p><strong>Definition.</strong> A <strong>gauge</strong> is a tuple</p>
+<p>$$
+\lambda=(\lambda_1,\dots,\lambda_5)\in(\mathbb{C}^\times)^5 .
+$$</p>
+<p>It acts on the frame by independent rescalings</p>
+<p>$$
+v_i\longmapsto t_iv_i,
+\qquad
+\lambda_i=\frac{t_i}{t_{i+1}},
+$$</p>
+<p>where $(t_1,\dots,t_6)\in(\mathbb{C}^\times)^6$ is any lift of $\lambda$; the lift is unique up to a common factor, which acts trivially on the projective frame.</p>
+<p><strong>Proposition (the action on the units).</strong> Under the gauge,</p>
+<p>$$
+E_{ij}\longmapsto\frac{t_i}{t_j}E_{ij},
+\qquad
+E_{i,i+1}\longmapsto\lambda_iE_{i,i+1},
+\qquad
+E_{ii}\longmapsto E_{ii}.
+$$</p>
+<p><strong>Proof.</strong> $(t_iv_i)(t_jv_j)^{\vee}=t_iv_i\,t_j^{-1}v_j^{\vee}=(t_i/t_j)E_{ij}$. For $j=i+1$ the ratio is $\lambda_i$; for $j=i$ it is $1$.</p>
+<p><strong>Corollary (the gauge rescales the nilpotents and fixes the idempotents).</strong> The five parameters $\lambda_1,\dots,\lambda_5$ act one on each simple nilpotent, and the idempotents $E_{11},\dots,E_{66}$ are fixed. There is no parameter attached to an idempotent.</p>
+<p><strong>Corollary (the action on the composites).</strong> The composite $E_{ij}$ with $i<j$ is rescaled by the product of the simple parameters along the chain:</p>
+<p>$$
+E_{ij}\longmapsto\lambda_i\lambda_{i+1}\cdots\lambda_{j-1}E_{ij}.
+$$</p>
+<p><strong>Proof.</strong> Apply the proposition to each factor of the theorem and multiply the ratios; the product telescopes to $t_i/t_j$.</p>
+<h3 id="the-gauge-as-conjugation">The Gauge as Conjugation</h3>
+<p><strong>Proposition.</strong> The gauge is the conjugation by the diagonal matrix $G=\operatorname{diag}(t_1,\dots,t_6)$:</p>
+<p>$$
+E_{ij}\longmapsto GE_{ij}G^{-1}=\frac{t_i}{t_j}E_{ij}.
+$$</p>
+<p><strong>Proof.</strong> $G(v_iv_j^{\vee})G^{-1}=(t_iv_i)(t_j^{-1}v_j^{\vee})=(t_i/t_j)E_{ij}$.</p>
+<p><strong>Corollary.</strong> The gauge is an inner automorphism of $M_6(\mathbb{C})$. It fixes the root $H_F$, fixes every idempotent $E_{ii}$, and acts freely on the frame and on the tuple of simple nilpotents.</p>
+<p><strong>Proof.</strong> Conjugation by an invertible matrix is an algebra automorphism. The root $H_F=\sum_i\zeta_iE_{ii}$ is a linear combination of the fixed idempotents, hence fixed. The tuple $(E_{12},\dots,E_{56})$ is rescaled by $(\lambda_1,\dots,\lambda_5)$, so no nonidentity gauge fixes the whole tuple; the frame is rescaled by the $t_i$, so no nonidentity gauge fixes it either.</p>
+<p><strong>Remark.</strong> The gauge is therefore not a change of the algebra and not a change of the root. It is a change of the frame inside the root, and its effect on the matrix of an element is the conjugation</p>
+<p>$$
+A=\sum a_{ij}E_{ij}\longmapsto GAG^{-1}=\sum\frac{t_i}{t_j}a_{ij}E_{ij}.
+$$</p>
+<p>The eigenvalues of $A$ are unchanged, the idempotents are unchanged, and only the off-diagonal coordinates move. <strong>This is why the parameter of the gauge belongs to the nilpotent and not to the idempotent.</strong></p>
+<h3 id="the-cocycle">The Cocycle</h3>
+<p><strong>Theorem (the cocycle).</strong> Let $c_{ij}\in\mathbb{C}^\times$ be scalars attached to the matrix units $E_{ij}$, and suppose that the rescaled units $c_{ij}E_{ij}$ satisfy the same multiplication rule,</p>
+<p>$$
+(c_{ij}E_{ij})(c_{jk}E_{jk})=c_{ik}E_{ik}
+\qquad\text{for all }i,j,k .
+$$</p>
+<p>Then there are $t_1,\dots,t_6\in\mathbb{C}^\times$ with</p>
+<p>$$
+c_{ij}=\frac{t_i}{t_j}
+\qquad\text{for all }i,j .
+$$</p>
+<p>The assignment is unique up to a common factor of the $t_i$, so the group of such rescalings is $(\mathbb{C}^\times)^6/\mathbb{C}^\times\cong(\mathbb{C}^\times)^5$.</p>
+<p><strong>Proof.</strong> The condition is $c_{ij}c_{jk}=c_{ik}$. Setting $j=i$ gives $c_{ii}c_{ik}=c_{ik}$, hence $c_{ii}=1$, since $c_{ik}\neq0$; similarly $c_{jj}=1$. Setting $k=j$ gives $c_{ij}c_{jj}=c_{ij}$, which is consistent. Now fix the index $1$ and put $t_i=c_{i1}$. Then</p>
+<p>$$
+c_{ij}=c_{i1}c_{1j}=\frac{c_{i1}}{c_{j1}}=\frac{t_i}{t_j},
+$$</p>
+<p>using $c_{j1}c_{1j}=c_{jj}=1$. The common factor is the only freedom: $t_i\mapsto st_i$ leaves every ratio unchanged.</p>
+<p><strong>Corollary (no sixth parameter, and none on the idempotents).</strong> The gauge has exactly five parameters. A parameter attached to the sixth direction is the overall scale and acts trivially; a parameter attached to an idempotent $E_{ii}$ is forced to $1$ by $c_{ii}=c_{ij}c_{ji}=1$.</p>
+<p><strong>Proof.</strong> The diagonal units are fixed by the cocycle, and the six scales $t_i$ enter only through the five ratios $t_i/t_{i+1}$; the common scale is the kernel of the map $(t_i)\mapsto(t_i/t_{i+1})$.</p>
+<p><strong>Remark (why the composites are not independent).</strong> The ten composite positive units have no gauge parameters of their own: once the five simple ones are fixed, the composite $E_{ij}$ is rescaled by the product along the chain. This is the content of §<em>The Action on the Composites</em>, and it is the reason the gauge is five-dimensional rather than fifteen- or thirty-six-dimensional. The cocycle is the algebraic statement that the gauge is a <strong>one-cocycle of the flag</strong>, a coboundary of the chain $1\to2\to\cdots\to6$.</p>
+<h3 id="a-worked-gauge">A Worked Gauge</h3>
+<p><strong>Example.</strong> Take the standard frame $v_i=e_i$ and the gauge</p>
+<p>$$
+\lambda=(2,3,5,7,11).
+$$</p>
+<p>Choose the lift $t_1=1$, so that</p>
+<p>$$
+t_2=\tfrac12,\qquad
+t_3=\tfrac16,\qquad
+t_4=\tfrac1{30},\qquad
+t_5=\tfrac1{210},\qquad
+t_6=\tfrac1{2310}.
+$$</p>
+<p>Then</p>
+<p>$$
+E_{12}\mapsto2E_{12},\quad
+E_{23}\mapsto3E_{23},\quad
+E_{34}\mapsto5E_{34},\quad
+E_{45}\mapsto7E_{45},\quad
+E_{56}\mapsto11E_{56},
+$$</p>
+<p>and the composite $E_{16}$ is rescaled by</p>
+<p>$$
+\frac{t_1}{t_6}=2310=2\cdot3\cdot5\cdot7\cdot11 .
+$$</p>
+<p>The diagonal units are unchanged, and the matrix of the gauge is</p>
+<p>$$
+G=\operatorname{diag}\!\left(1,\tfrac12,\tfrac16,\tfrac1{30},\tfrac1{210},\tfrac1{2310}\right).
+$$</p>
+<p>For the element $A=\sum_{i,j}a_{ij}E_{ij}$, the gauge sends $a_{ij}$ to $(t_i/t_j)a_{ij}$: the entry $a_{16}$ is multiplied by $2310$, the entry $a_{61}$ by $1/2310$, and the diagonal entries are fixed.</p>
+<p><strong>Remark.</strong> The example exhibits the whole content of the gauge in one line: five independent rescalings of the simple nilpotents, the composites determined by the product, the idempotents fixed.</p>
+<h2 id="the-count">The Count</h2>
+<h3 id="the-root-and-the-gauge">The Root and the Gauge</h3>
+<p><strong>Theorem.</strong> The frame set is the total space of a principal bundle</p>
+<p>$$
+T\longrightarrow PGL_6\longrightarrow PGL_6/T,
+$$</p>
+<p>where $T\cong(\mathbb{C}^\times)^5$ is the gauge torus and $PGL_6/T$ is the root set. In particular</p>
+<p>$$
+\dim PGL_6=35=30+5=\dim(PGL_6/T)+\dim T .
+$$</p>
+<p><strong>Proof.</strong> A frame is a point of $PGL_6$. The map to the root is the map to the decomposition into six lines, whose fibre is the torus of independent rescalings modulo the overall scale, of dimension five. The root set is $PGL_6/T$ by <em>Roots of Unity and the Lagrange Idempotents</em>, of dimension $30$. The dimensions add along the fibration.</p>
+<h3 id="the-three-counts">The Three Counts</h3>
+<p>The same number is reached by three routes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Route</th>
+<th>First datum</th>
+<th>Dimension</th>
+<th>Second datum</th>
+<th>Dimension</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>root and gauge</td>
+<td>root, $PGL_6/T$</td>
+<td>$30$</td>
+<td>gauge, $T$</td>
+<td>$5$</td>
+<td>$35$</td>
+</tr>
+<tr>
+<td>frame</td>
+<td>ordered projective basis</td>
+<td>$35$</td>
+<td>—</td>
+<td>—</td>
+<td>$35$</td>
+</tr>
+<tr>
+<td>group</td>
+<td>$PGL_6$</td>
+<td>$35$</td>
+<td>—</td>
+<td>—</td>
+<td>$35$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The three rows count the same set: a frame is a root together with a gauge, an ordered projective basis, and a point of $PGL_6$. The first row is the fibration; the second is the definition; the third is the identification of the frame set with $PGL_6$.</p>
+<p><strong>Remark (the count of the nilpotents).</strong> The five simple nilpotents carry the five gauge parameters. The ten composites carry the ten products, and the fifteen negative units carry the reciprocals. The total number of off-diagonal units is thirty, but only the five simple ones are independent under the gauge. <strong>The gauge is the Cartan torus of the flag, and its dimension is the rank of $A_5$, which is five.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>A frame of $\mathbb{C}^6$ is an ordered projective basis, that is a point of $PGL_6$ of dimension $35$. It carries thirty-six matrix units $E_{ij}=v_iv_j^{\vee}$ with $E_{ij}E_{kl}=\delta_{jk}E_{il}$, six idempotents $E_{ii}$ and thirty nilpotents $E_{ij}$, $i\neq j$.</p>
+<p>The five simple nilpotents $E_{12},\dots,E_{56}$ generate the fifteen positive units by the composites</p>
+<p>$$
+E_{ij}=E_{i,i+1}E_{i+1,i+2}\cdots E_{j-1,j},
+\qquad i<j.
+$$</p>
+<p>The gauge is the torus $(\mathbb{C}^\times)^5$ acting by $E_{ij}\mapsto(t_i/t_j)E_{ij}$; it rescales the simple nilpotents by $\lambda_i=t_i/t_{i+1}$, the composites by the products, and fixes every idempotent.</p>
+<p>$$
+\boxed{\ \text{The frame is the root plus the gauge: }35=30+5.\ }
+$$</p>
+<p>The cocycle $c_{ij}c_{jk}=c_{ik}$ forces $c_{ij}=t_i/t_j$ and $c_{ii}=1$: no sixth parameter, no parameter on an idempotent.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Count</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frame</td>
+<td>$35$</td>
+<td>ordered projective basis, $PGL_6$</td>
+</tr>
+<tr>
+<td>Root</td>
+<td>$30$</td>
+<td>six lines, $PGL_6/T$</td>
+</tr>
+<tr>
+<td>Gauge</td>
+<td>$5$</td>
+<td>$\lambda_1,\dots,\lambda_5$, the torus $T$</td>
+</tr>
+<tr>
+<td>Simple nilpotents</td>
+<td>$5$</td>
+<td>$E_{12},\dots,E_{56}$</td>
+</tr>
+<tr>
+<td>Composites</td>
+<td>$10$</td>
+<td>$E_{ij}$, $i<j$, $j-i\ge2$</td>
+</tr>
+<tr>
+<td>Idempotents</td>
+<td>$6$</td>
+<td>$E_{ii}$, fixed by the gauge</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F=(v_1,\dots,v_6)$</td>
+<td>a frame, an ordered basis up to overall scale</td>
+</tr>
+<tr>
+<td>$v_j^{\vee}$</td>
+<td>the dual basis, $v_j^{\vee}(v_k)=\delta_{jk}$</td>
+</tr>
+<tr>
+<td>$E_{ij}=v_iv_j^{\vee}$</td>
+<td>the matrix units, $E_{ij}E_{kl}=\delta_{jk}E_{il}$</td>
+</tr>
+<tr>
+<td>$H_F=\sum_i\zeta_iE_{ii}$</td>
+<td>the root of the frame</td>
+</tr>
+<tr>
+<td>$a_{ij}$</td>
+<td>the coordinates of $A$ in the frame</td>
+</tr>
+<tr>
+<td>$E_{i,i+1}$</td>
+<td>the five simple nilpotents</td>
+</tr>
+<tr>
+<td>$\lambda_i=t_i/t_{i+1}$</td>
+<td>the gauge parameters, $i=1,\dots,5$</td>
+</tr>
+<tr>
+<td>$G=\operatorname{diag}(t_1,\dots,t_6)$</td>
+<td>the gauge transformation</td>
+</tr>
+<tr>
+<td>$T\cong(\mathbb{C}^\times)^5$</td>
+<td>the gauge torus</td>
+</tr>
+<tr>
+<td>$c_{ij}$</td>
+<td>a scalar attached to $E_{ij}$, with $c_{ij}c_{jk}=c_{ik}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m6c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root and the six lines.</li>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>, for the corners and the matrix units.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m6c.html">The Spin Chain and the Adjoint Decomposition</a>, for the principal $\mathfrak{su}_2$ generated by the simple nilpotents.</li>
+<li><a href="the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>, for the algebra, the trace, the determinant and $PGL_6$.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>, for the frame bundle over the variety of decompositions.</li>
+<li><a href="flag-manifolds.html">Flag Manifolds</a>, for the flag variety and its principal bundles.</li>
+<li><a href="primitive-idempotents-and-minimal-left-ideals.html">Primitive Idempotents and Minimal Left Ideals</a>, for the matrix units and the ideals they generate.</li>
+<li>James E. Humphreys, <em>Linear Algebraic Groups</em> (Springer, 1975), for the root systems, the simple roots and the maximal torus.</li>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the flag variety and the Borel subgroup.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

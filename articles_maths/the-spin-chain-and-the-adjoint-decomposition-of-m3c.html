@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin Chain and the Adjoint Decomposition — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-chain-and-the-adjoint-decomposition"><strong>The Spin Chain and the Adjoint Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra $M_{3}(\mathbb{C})$ carries a copy of $\mathfrak{su}_{2}$ inside $\mathfrak{gl}_{3}$, and the defining space $\mathbb{C}^{3}$ is, under this copy, the spin-one module $\operatorname{Sym}^{2}(\mathbb{C}^{2})$. The three standard basis vectors are the three weights $1,0,-1$, the raising operator moves along the chain with the coefficients $\sqrt2,\sqrt2$, and the algebra itself, read as a module for the same $\mathfrak{su}_{2}$, splits into three irreducible summands of dimensions $1,3,5$.</p>
+<p>This article states the $\mathfrak{su}_{2}$, proves the commutation relations, identifies the carrier, computes the ladder, and proves the decomposition</p>
+<p>$$
+M_{3}(\mathbb{C})\cong V_{0}\oplus V_{1}\oplus V_{2}=1+3+5
+$$</p>
+<p>by exhibiting one highest-weight vector for each summand and checking that their submodules fill the algebra. The trace line is the $1$; the $3$ is isomorphic to the carrier; the $5$ is the spin-two summand. The decomposition of the traceless part, the adjoint of $PGL_{3}$, is $3+5$; the extra $1$ is the trace, which is the centre of $\mathfrak{gl}_{3}$.</p>
+<p><strong>The carrier is not a Peirce line.</strong> The Peirce lines of <em>The Peirce Decomposition of $M_{3}(\mathbb{C})$</em> are one-dimensional subspaces of the algebra. The carrier is the three-dimensional minimal left ideal $M_{3}P_{k}\cong\mathbb{C}^{3}$, a module over the algebra. The spin chain runs through the carrier, not through a list of Peirce elements. For $n=3$ the carrier has spin one; only the biquaternion case $n=2$ has a spinorial carrier.</p>
+<p>The article assumes the matrix units and the trace of <em>The Matrix Algebra $M_{3}(\mathbb{C})$</em>, and the frame of <em>The Frame, the Simple Nilpotents and the Gauge</em>. The triplet is developed on its own in <em>The Triplet: Spin One and the Adjoint $1+3+5$</em>.</p>
+<h2 id="the-copy-of-math24">The Copy of $\mathfrak{su}_{2}$</h2>
+<p><strong>Definition.</strong> Let</p>
+<p>$$
+J_{3}=\begin{pmatrix}1&0&0\\0&0&0\\0&0&-1\end{pmatrix},
+\qquad
+J_{+}=\sqrt2\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix}=\sqrt2(E_{12}+E_{23}),
+$$</p>
+<p>$$
+J_{-}=\sqrt2\begin{pmatrix}0&0&0\\1&0&0\\0&1&0\end{pmatrix}=\sqrt2(E_{21}+E_{32}).
+$$</p>
+<p>The indices are $1,2,3$, and the matrix units are those of the standard frame.</p>
+<p><strong>Theorem.</strong> The three matrices satisfy</p>
+<p>$$
+[J_{3},J_{+}]=J_{+},\qquad [J_{3},J_{-}]=-J_{-},\qquad [J_{+},J_{-}]=2J_{3},
+$$</p>
+<p>and they span a three-dimensional Lie algebra isomorphic to $\mathfrak{su}_{2}$ over $\mathbb{C}$, equivalently to $\mathfrak{sl}_{2}(\mathbb{C})$.</p>
+<p><strong>Proof.</strong> The first two brackets are read on the matrix units: $[J_{3},E_{12}]=(1-0)E_{12}=E_{12}$ and $[J_{3},E_{23}]=(0-(-1))E_{23}=E_{23}$, so $[J_{3},J_{+}]=J_{+}$; similarly $[J_{3},E_{21}]=-E_{21}$ and $[J_{3},E_{32}]=-E_{32}$, so $[J_{3},J_{-}]=-J_{-}$. For the third,</p>
+<p>$$
+[J_{+},J_{-}]=2\bigl([E_{12},E_{21}]+[E_{12},E_{32}]+[E_{23},E_{21}]+[E_{23},E_{32}]\bigr).
+$$</p>
+<p>The four brackets are $E_{11}-E_{22}$, $0$, $0$, $E_{22}-E_{33}$, so the sum is $2(E_{11}-E_{33})=2J_{3}$. The three elements are linearly independent and close under the bracket, and the relations are the standard presentation of $\mathfrak{sl}_{2}$; the real form with $J_{3}$ Hermitian and $J_{+}^{*}=J_{-}$ is $\mathfrak{su}_{2}$.</p>
+<p><strong>The matrices are Hermitian and skew-Hermitian in the right combination.</strong> $J_{3}$ is Hermitian, $J_{+}^{*}=J_{-}$, and $J_{\pm}$ are neither Hermitian nor skew-Hermitian; the real combinations $J_{1}=\tfrac12(J_{+}+J_{-})$ and $J_{2}=\tfrac{1}{2i}(J_{+}-J_{-})$ are Hermitian, and $iJ_{1},iJ_{2},iJ_{3}$ are the skew-Hermitian generators of $\mathfrak{su}_{2}$. The complex span is $\mathfrak{sl}_{2}(\mathbb{C})$.</p>
+<p><strong>The compact form.</strong> The three matrices</p>
+<p>$$
+iJ_{3},\qquad \tfrac{i}{2}(J_{+}+J_{-}),\qquad \tfrac{1}{2}(J_{+}-J_{-})
+$$</p>
+<p>are skew-Hermitian, and their brackets are the brackets of $\mathfrak{su}_{2}$ with the conventional normalisation. The article uses the complexified generators $J_{3},J_{\pm}$ because the weights are then integers and the matrices are real.</p>
+<h2 id="the-carrier-and-the-spin-chain">The Carrier and the Spin Chain</h2>
+<p><strong>The carrier is $\mathbb{C}^{3}$ with the standard basis.</strong> Write $e_{1},e_{2},e_{3}$ for the standard basis, with indices chosen so that</p>
+<p>$$
+J_{3}e_{1}=e_{1},\qquad J_{3}e_{2}=0,\qquad J_{3}e_{3}=-e_{3}.
+$$</p>
+<p><strong>Proposition (the ladder).</strong> The raising and lowering operators act by</p>
+<p>$$
+J_{+}e_{1}=0,\qquad J_{+}e_{2}=\sqrt2\,e_{1},\qquad J_{+}e_{3}=\sqrt2\,e_{2},
+$$</p>
+<p>$$
+J_{-}e_{1}=\sqrt2\,e_{2},\qquad J_{-}e_{2}=\sqrt2\,e_{3},\qquad J_{-}e_{3}=0.
+$$</p>
+<p><strong>Proof.</strong> The matrix $J_{+}=\sqrt2(E_{12}+E_{23})$ sends $e_{2}$ to $\sqrt2e_{1}$ and $e_{3}$ to $\sqrt2e_{2}$, and kills $e_{1}$; the matrix $J_{-}=\sqrt2(E_{21}+E_{32})$ sends $e_{1}$ to $\sqrt2e_{2}$ and $e_{2}$ to $\sqrt2e_{3}$, and kills $e_{3}$.</p>
+<p><strong>The chain.</strong> The vectors are the weights of a spin-one module:</p>
+<p>$$
+e_{1}=|1,1\rangle,\qquad e_{2}=|1,0\rangle,\qquad e_{3}=|1,-1\rangle,
+$$</p>
+<p>and the ladder coefficients are</p>
+<p>$$
+J_{+}|1,0\rangle=\sqrt2\,|1,1\rangle,\qquad
+J_{+}|1,-1\rangle=\sqrt2\,|1,0\rangle,
+$$</p>
+<p>$$
+J_{-}|1,1\rangle=\sqrt2\,|1,0\rangle,\qquad
+J_{-}|1,0\rangle=\sqrt2\,|1,-1\rangle.
+$$</p>
+<p>The two coefficients are the same, $\sqrt2$, because the spin is one; the general coefficient is $\sqrt{j(j+1)-m(m\pm1)}$, which at $j=1$ takes the values $\sqrt2$ at both steps. The chain has length three and ends at the highest weight $e_{1}$ and the lowest weight $e_{3}$.</p>
+<p><strong>The identification with $\operatorname{Sym}^{2}(\mathbb{C}^{2})$.</strong> Let $x,y$ be a basis of $\mathbb{C}^{2}$ and put</p>
+<p>$$
+e_{1}=x^{2},\qquad e_{2}=\sqrt2\,xy,\qquad e_{3}=y^{2}.
+$$</p>
+<p>Then the operators</p>
+<p>$$
+J_{3}=\tfrac12(x\partial_{x}-y\partial_{y}),\qquad J_{+}=x\partial_{y},\qquad J_{-}=y\partial_{x}
+$$</p>
+<p>act by</p>
+<p>$$
+J_{3}x^{2}=x^{2},\quad J_{3}(\sqrt2xy)=0,\quad J_{3}y^{2}=-y^{2},
+$$</p>
+<p>$$
+J_{+}x^{2}=0,\quad J_{+}(\sqrt2xy)=\sqrt2x^{2},\quad J_{+}y^{2}=2xy=\sqrt2(\sqrt2xy),
+$$</p>
+<p>$$
+J_{-}x^{2}=2xy=\sqrt2(\sqrt2xy),\quad J_{-}(\sqrt2xy)=\sqrt2y^{2},\quad J_{-}y^{2}=0.
+$$</p>
+<p>So the identification is an isomorphism of $\mathfrak{sl}_{2}$-modules,</p>
+<p>$$
+\mathbb{C}^{3}\cong\operatorname{Sym}^{2}(\mathbb{C}^{2}),
+$$</p>
+<p>and the carrier is the <strong>spin-one</strong> module. The factor $\sqrt2$ in $e_{2}$ is exactly what makes the ladder coefficients $\sqrt2$ in both directions; without it the identification would carry the coefficients $2$ and $1$ instead.</p>
+<p><strong>The Peirce chain.</strong> In the standard frame the three Peirce idempotents are $E_{11},E_{22},E_{33}$, and their images are the three lines $\mathbb{C}e_{1},\mathbb{C}e_{2},\mathbb{C}e_{3}$. The weights of the three lines are $1,0,-1$, the same as the weights of the carrier basis. The <strong>spin chain</strong> is the chain of these three lines, read with the raising operator: $E_{11}\leftarrow E_{22}\leftarrow E_{33}$ under $J_{+}$, with the coefficients $\sqrt2,\sqrt2$. The Peirce chain and the weight chain are the same chain in the standard frame; in a general frame the three lines are the eigenspaces of $H$, and the raising operator is the same $J_{+}$ transported by the frame.</p>
+<h2 id="the-adjoint-decomposition">The Adjoint Decomposition</h2>
+<p><strong>Theorem (the decomposition $1+3+5$).</strong> As a module for the $\mathfrak{su}_{2}$ of §<em>The Copy of $\mathfrak{su}_{2}$</em>, the algebra splits as</p>
+<p>$$
+\boxed{\;M_{3}(\mathbb{C})\cong V_{0}\oplus V_{1}\oplus V_{2},\qquad
+\dim V_{0}=1,\quad\dim V_{1}=3,\quad\dim V_{2}=5.\;}
+$$</p>
+<p>The summand $V_{0}$ is the trace line $\mathbb{C}I$; $V_{1}$ is isomorphic to the carrier $\mathbb{C}^{3}$; $V_{2}$ is the spin-two summand. The traceless part is</p>
+<p>$$
+\mathfrak{sl}_{3}(\mathbb{C})\cong V_{1}\oplus V_{2}=3+5,
+$$</p>
+<p>the adjoint of $PGL_{3}(\mathbb{C})$.</p>
+<p><strong>Proof by weight multiplicities.</strong> The operator $\operatorname{ad}_{J_{3}}$ acts on the matrix unit $E_{ij}$ by the difference of the weights:</p>
+<p>$$
+\operatorname{ad}_{J_{3}}(E_{ij})=(J_{3})_{ii}E_{ij}-E_{ij}(J_{3})_{jj}=(\delta_{i1}-\delta_{i3}-\delta_{j1}+\delta_{j3})E_{ij}.
+$$</p>
+<p>The weights and their multiplicities are therefore</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Weight $m$</th>
+<th>Matrix units</th>
+<th>Multiplicity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$E_{13}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$E_{12},E_{23}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$E_{11},E_{22},E_{33}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$-1$</td>
+<td>$E_{21},E_{32}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$-2$</td>
+<td>$E_{31}$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The character of $M_{3}$ is</p>
+<p>$$
+t^{2}+2t+3+2t^{-1}+t^{-2}.
+$$</p>
+<p>The irreducible characters of $\mathfrak{sl}_{2}$ of dimensions $5,3,1$ are</p>
+<p>$$
+\chi_{2}=t^{2}+t+1+t^{-1}+t^{-2},\qquad
+\chi_{1}=t+1+t^{-1},\qquad
+\chi_{0}=1,
+$$</p>
+<p>and their sum is exactly the character of $M_{3}$. A finite-dimensional $\mathfrak{sl}_{2}$-module is determined up to isomorphism by its character, so the decomposition, if it exists, is the one displayed, with one summand for each highest weight $0,1,2$.</p>
+<p><strong>Proof by highest-weight vectors.</strong> Existence is exhibited. The three vectors</p>
+<p>$$
+v_{2}=E_{13},\qquad v_{1}=E_{12}+E_{23},\qquad v_{0}=I
+$$</p>
+<p>are annihilated by $J_{+}$:</p>
+<p>$$
+[J_{+},E_{13}]=0,\qquad [J_{+},E_{12}+E_{23}]=0,\qquad [J_{+},I]=0.
+$$</p>
+<p>The first is the highest-root vector: $E_{13}$ has weight $2$, and the raising operator would give weight $3$, which does not occur. The second has weight $1$; the computation $[J_{+},E_{12}]=0$ and $[J_{+},E_{23}]=0$ is direct. The third is central.</p>
+<p>The submodule generated by $v_{2}$ has the five vectors</p>
+<p>$$
+u_{2}=E_{13},\qquad
+u_{1}=\frac{E_{23}-E_{12}}{\sqrt2},\qquad
+u_{0}=\frac{E_{11}-2E_{22}+E_{33}}{\sqrt6},\qquad
+u_{-1}=\frac{E_{21}-E_{32}}{\sqrt2},\qquad
+u_{-2}=E_{31},
+$$</p>
+<p>with</p>
+<p>$$
+J_{-}u_{2}=2u_{1},\quad
+J_{-}u_{1}=\sqrt6\,u_{0},\quad
+J_{-}u_{0}=\sqrt6\,u_{-1},\quad
+J_{-}u_{-1}=2u_{-2},\quad
+J_{-}u_{-2}=0,
+$$</p>
+<p>and the reverse coefficients for $J_{+}$. The vectors are orthonormal for the trace form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$, and they span a five-dimensional irreducible module of highest weight $2$.</p>
+<p>The submodule generated by $v_{1}$ has the three vectors</p>
+<p>$$
+w_{1}=\frac{E_{12}+E_{23}}{\sqrt2},\qquad
+w_{0}=\frac{E_{33}-E_{11}}{\sqrt2},\qquad
+w_{-1}=-\frac{E_{21}+E_{32}}{\sqrt2},
+$$</p>
+<p>with</p>
+<p>$$
+J_{-}w_{1}=\sqrt2\,w_{0},\qquad J_{-}w_{0}=\sqrt2\,w_{-1},\qquad J_{-}w_{-1}=0,
+$$</p>
+<p>and the reverse coefficients for $J_{+}$. They are orthonormal for the trace form and span a three-dimensional irreducible module of highest weight $1$.</p>
+<p>The trace line is spanned by $I/\sqrt3$, of weight $0$, and is one-dimensional. The three submodules are pairwise orthogonal for the trace form and have dimensions $5+3+1=9$, so their sum is the whole algebra. The decomposition is complete.</p>
+<p><strong>The explicit matrices of the $5$.</strong> In the standard matrix units the five vectors are</p>
+<p>$$
+u_{2}=\begin{pmatrix}0&0&1\\0&0&0\\0&0&0\end{pmatrix},\qquad
+u_{1}=\frac{1}{\sqrt2}\begin{pmatrix}0&-1&0\\0&0&1\\0&0&0\end{pmatrix},\qquad
+u_{0}=\frac{1}{\sqrt6}\begin{pmatrix}1&0&0\\0&-2&0\\0&0&1\end{pmatrix},
+$$</p>
+<p>$$
+u_{-1}=\frac{1}{\sqrt2}\begin{pmatrix}0&0&0\\1&0&0\\0&-1&0\end{pmatrix},\qquad
+u_{-2}=\begin{pmatrix}0&0&0\\0&0&0\\1&0&0\end{pmatrix}.
+$$</p>
+<p>The five matrices are traceless; the Cartan element $u_{0}$ is Hermitian, and $u_{-1}=-u_{1}^{*}$, while $u_{2}$ and $u_{-2}$ are adjoint to each other. They are the spin-two multiplet. The three matrices of the $3$ are</p>
+<p>$$
+w_{1}=\frac{1}{\sqrt2}\begin{pmatrix}0&1&0\\0&0&1\\0&0&0\end{pmatrix},\qquad
+w_{0}=\frac{1}{\sqrt2}\begin{pmatrix}-1&0&0\\0&0&0\\0&0&1\end{pmatrix},\qquad
+w_{-1}=-\frac{1}{\sqrt2}\begin{pmatrix}0&0&0\\1&0&0\\0&1&0\end{pmatrix}.
+$$</p>
+<p>The trace line is $I/\sqrt3$. The nine matrices</p>
+<p>$$
+u_{2},u_{1},u_{0},u_{-1},u_{-2},w_{1},w_{0},w_{-1},I/\sqrt3
+$$</p>
+<p>are an orthonormal basis of $M_{3}(\mathbb{C})$ for the trace form. This is the explicit form of the decomposition $1+3+5$.</p>
+<p><strong>The $3$ is the carrier.</strong> The map</p>
+<p>$$
+\mathbb{C}^{3}\longrightarrow V_{1},\qquad
+e_{1}\longmapsto w_{1},\quad e_{2}\longmapsto w_{0},\quad e_{3}\longmapsto w_{-1},
+$$</p>
+<p>is an isomorphism of $\mathfrak{sl}_{2}$-modules: it sends the ladder $J_{+}e_{2}=\sqrt2e_{1}$ to $J_{+}w_{0}=\sqrt2w_{1}$, and the other steps likewise. The $3$ of the adjoint is the carrier of the spin chain, and the $5$ is the spin-two module $\operatorname{Sym}^{4}(\mathbb{C}^{2})$. The $1$ is the trace, which the adjoint of $PGL_{3}$ removes.</p>
+<p><strong>The weights on the Peirce chain.</strong> Value the index $1$ as weight $1$, the index $2$ as weight $0$ and the index $3$ as weight $-1$. The standard Peirce line $A_{ij}=\mathbb{C}E_{ij}$ then has weight $w_{i}-w_{j}$, and the nine lines carry the weights</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$j=1$ $(1)$</th>
+<th>$j=2$ $(0)$</th>
+<th>$j=3$ $(-1)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$i=1$ $(1)$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$i=2$ $(0)$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$i=3$ $(-1)$</td>
+<td>$-2$</td>
+<td>$-1$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The highest weight is $2$, on $A_{13}$; the weight $1$ occurs twice, on $A_{12}$ and $A_{23}$; the weight $0$ three times, on the diagonal; the weights $-1$ and $-2$ are the opposites. The diagonal chain $A_{11},A_{22},A_{33}$ carries the weights $1,0,-1$, the same as the carrier, and the two lines $A_{12},A_{23}$ of weight $1$ are the highest-weight line of the $3$.</p>
+<h2 id="the-comparison-with-the-spinorial-case">The Comparison with the Spinorial Case</h2>
+<p><strong>For $n=2$ the carrier is two-dimensional and spinorial; for $n=3$ it is three-dimensional and spin one.</strong></p>
+<p>In $M_{2}(\mathbb{C})$, with</p>
+<p>$$
+J_{3}=\tfrac12\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad
+J_{+}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+J_{-}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
+$$</p>
+<p>the defining space $\mathbb{C}^{2}$ is the spin-$\tfrac12$ module, with weights $\pm\tfrac12$ and ladder coefficient $1$. The algebra itself is</p>
+<p>$$
+M_{2}(\mathbb{C})\cong V_{0}\oplus V_{1}=1+3,
+$$</p>
+<p>the trace line and the adjoint $\mathfrak{sl}_{2}$. The biquaternion algebra is $M_{2}(\mathbb{C})$, and its spinor is the two-dimensional carrier; the adjoint is the three-dimensional vector.</p>
+<p>In $M_{3}(\mathbb{C})$ the carrier is $\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2})$, the weights are $1,0,-1$, and the ladder coefficients are $\sqrt2,\sqrt2$. The adjoint is $1+3+5$. <strong>There is no half-integer weight in the $M_{3}$ decomposition</strong>: every weight of $\operatorname{ad}_{J_{3}}$ is an integer, and every irreducible summand has odd dimension. The half-integer weights occur only in the two-dimensional carrier of the biquaternion case; this is the precise sense in which the biquaternion algebra is the spinorial case and $M_{3}(\mathbb{C})$ is not.</p>
+<p><strong>The spin is the weight of the Peirce chain.</strong> The highest weight of the carrier is $1$, so the spin is $1$. The highest weight of the $5$ is $2$, so its spin is $2$; the highest weight of the $3$ is $1$, so its spin is $1$; the trace has spin $0$. The three spins $0,1,2$ are the three summands $1,3,5$, and the dimensions are $2j+1$.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra $M_{3}(\mathbb{C})$ contains the copy of $\mathfrak{su}_{2}$ generated by</p>
+<p>$$
+J_{3}=\operatorname{diag}(1,0,-1),\qquad
+J_{+}=\sqrt2(E_{12}+E_{23}),\qquad
+J_{-}=\sqrt2(E_{21}+E_{32}),
+$$</p>
+<p>with $[J_{3},J_{\pm}]=\pm J_{\pm}$ and $[J_{+},J_{-}]=2J_{3}$. The carrier is</p>
+<p>$$
+\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2}),\qquad
+e_{1}=x^{2},\quad e_{2}=\sqrt2xy,\quad e_{3}=y^{2},
+$$</p>
+<p>of spin one, with ladder coefficients $\sqrt2,\sqrt2$. The adjoint decomposition is</p>
+<p>$$
+\boxed{\;M_{3}(\mathbb{C})=V_{0}\oplus V_{1}\oplus V_{2}=1+3+5,\qquad
+\mathfrak{sl}_{3}(\mathbb{C})=3+5.\;}
+$$</p>
+<p>The $1$ is the trace line, the $3$ is the carrier, and the $5$ is the spin-two summand. The weights of the algebra are $2,1,0,-1,-2$ with multiplicities $1,2,3,2,1$; there is no half-integer weight. The spinorial case is the biquaternion algebra $M_{2}(\mathbb{C})$, where the carrier is $\mathbb{C}^{2}$ of spin $\tfrac12$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_{3}(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carrier</td>
+<td>$\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2})$</td>
+</tr>
+<tr>
+<td>Spin</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>Ladder coefficients</td>
+<td>$\sqrt2,\sqrt2$</td>
+</tr>
+<tr>
+<td>Adjoint of $\mathfrak{gl}_{3}$</td>
+<td>$1+3+5$</td>
+</tr>
+<tr>
+<td>Adjoint of $\mathfrak{sl}_{3}$</td>
+<td>$3+5$</td>
+</tr>
+<tr>
+<td>Weight multiplicities</td>
+<td>$1,2,3,2,1$</td>
+</tr>
+<tr>
+<td>Half-integer weights</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J_{3}$</td>
+<td>$\operatorname{diag}(1,0,-1)$, the Cartan generator</td>
+</tr>
+<tr>
+<td>$J_{+},J_{-}$</td>
+<td>the raising and lowering operators, $\sqrt2(E_{12}+E_{23})$, $\sqrt2(E_{21}+E_{32})$</td>
+</tr>
+<tr>
+<td>$e_{1},e_{2},e_{3}$</td>
+<td>the carrier basis, weights $1,0,-1$</td>
+</tr>
+<tr>
+<td>$V_{j}$</td>
+<td>the irreducible module of spin $j$ and dimension $2j+1$</td>
+</tr>
+<tr>
+<td>$u_{m}$</td>
+<td>the orthonormal basis of $V_{2}$, weight $m$</td>
+</tr>
+<tr>
+<td>$w_{m}$</td>
+<td>the orthonormal basis of $V_{1}$, weight $m$</td>
+</tr>
+<tr>
+<td>$\chi_{j}$</td>
+<td>the character of $V_{j}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-triplet-spin-one-and-the-adjoint-of-m3c.html">The Triplet: Spin One and the Adjoint $1+3+5$</a>, for the triplet read on its own.</li>
+<li><a href="the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a>, for the Peirce lines and the carrier.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the matrix units.</li>
+<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>, for the trace and the matrix units.</li>
+<li><a href="representations-of-lie-algebras.html">Representations of Lie Algebras</a>, for the highest-weight classification used in the proof.</li>
+<li><a href="the-spin-of-a-biquaternion.html">The Spin of a Biquaternion</a>, for the spinorial case $n=2$.</li>
+<li><a href="root-systems-and-classification.html">Root Systems and Classification</a>, for the root system $A_{2}$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rank-Two Split — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-rank-two-split"><strong>The Rank-Two Split</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The rank-two idempotent $\Pi=P_+$ cuts $M_4(\mathbb{C})$ into four corners of dimension four each, and the diagonal corners are two copies of $M_2(\mathbb{C})$.</strong> The split is the balanced split $M_4\supset M_2\oplus M_2$; the off-diagonal corners are the two mass blocks, and the block-diagonal subalgebra is not an ideal. The split is the chiral block decomposition of <em>The Two Chiralities</em>, read as a Peirce decomposition.</p>
+<p>The article states the rank-two idempotent, proves the corner dimensions $4+4+4+4$, identifies the two diagonal corners with $M_2(\mathbb{C})$, describes the two carrier modules and the mass block, gives the two-sided Peirce table and the multiplication table, and explains why the split is a vector-space decomposition and a subalgebra inclusion, not a direct sum of algebras.</p>
+<p>The rank-one split is <em>The Peirce Decomposition</em>; the chirality is <em>The Two Chiralities</em>; the mass block and its polar decomposition are <em>The Mass Block and the Chiral Polar Decomposition</em>; the two $\mathfrak{su}_2$'s are <em>The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$</em>. The general recursion is <em>The Peirce Decomposition and the Corner Recursion</em>.</p>
+<h2 id="the-rank-two-idempotent">The Rank-Two Idempotent</h2>
+<p><strong>Definition.</strong> The <strong>rank-two idempotent</strong> of the root is</p>
+<p>$$
+\Pi=P_+=\frac12(I+\Gamma)=P_1+P_3,
+$$</p>
+<p>and its complement is</p>
+<p>$$
+Q=P_-=\frac12(I-\Gamma)=P_2+P_4 .
+$$</p>
+<p><strong>Proposition.</strong> The elements $\Pi,Q$ are idempotent, orthogonal and complete:</p>
+<p>$$
+\Pi^2=\Pi,\qquad Q^2=Q,\qquad \Pi Q=Q\Pi=0,\qquad \Pi+Q=I.
+$$</p>
+<p>Each has rank $2$ and trace $2$. Their images are the two chiralities:</p>
+<p>$$
+\operatorname{im}\Pi=\mathbb{C}^2_+,\qquad \operatorname{im}Q=\mathbb{C}^2_- .
+$$</p>
+<p><strong>Proof.</strong> $\Pi$ and $Q$ are the spectral projectors of the involution $\Gamma$ for the eigenvalues $+1$ and $-1$. The algebraic identities follow from $\Gamma^2=I$; the ranks are the dimensions of the eigenspaces; the traces are the ranks.</p>
+<p><strong>The standard model.</strong> For $\Gamma_0=\operatorname{diag}(1,-1,1,-1)$,</p>
+<p>$$
+\Pi_0=\operatorname{diag}(1,0,1,0)=E_{11}+E_{33},
+\qquad
+Q_0=\operatorname{diag}(0,1,0,1)=E_{22}+E_{44}.
+$$</p>
+<p>In this frame the two chiralities are the coordinate planes $\operatorname{span}\{e_1,e_3\}$ and $\operatorname{span}\{e_2,e_4\}$.</p>
+<h2 id="the-four-corners">The Four Corners</h2>
+<p><strong>Definition.</strong> The <strong>rank-two Peirce corners</strong> are</p>
+<p>$$
+\mathcal{A}=\Pi M_4\Pi,\qquad
+\mathcal{B}=\Pi M_4Q,\qquad
+\mathcal{C}=QM_4\Pi,\qquad
+\mathcal{D}=QM_4Q .
+$$</p>
+<p><strong>Theorem.</strong> The algebra is the direct sum</p>
+<p>$$
+M_4(\mathbb{C})=\mathcal{A}\oplus\mathcal{B}\oplus\mathcal{C}\oplus\mathcal{D},
+$$</p>
+<p>with</p>
+<p>$$
+\dim_\mathbb{C}\mathcal{A}=4,\qquad
+\dim_\mathbb{C}\mathcal{B}=4,\qquad
+\dim_\mathbb{C}\mathcal{C}=4,\qquad
+\dim_\mathbb{C}\mathcal{D}=4.
+$$</p>
+<p>The diagonal corners are full matrix algebras,</p>
+<p>$$
+\mathcal{A}\cong M_2(\mathbb{C}),\qquad
+\mathcal{D}\cong M_2(\mathbb{C}),
+$$</p>
+<p>and the off-diagonal corners are the spaces of maps between the two chiralities,</p>
+<p>$$
+\mathcal{B}\cong\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)\cong M_2(\mathbb{C}),
+\qquad
+\mathcal{C}\cong\operatorname{Hom}(\mathbb{C}^2_+,\mathbb{C}^2_-)\cong M_2(\mathbb{C}).
+$$</p>
+<p><strong>Proof.</strong> Choose a basis adapted to $\mathbb{C}^4=\mathbb{C}^2_+\oplus\mathbb{C}^2_-$, with the first two vectors in $\mathbb{C}^2_+$ and the last two in $\mathbb{C}^2_-$. In that basis</p>
+<p>$$
+\Pi=\begin{pmatrix}I_2&0\\0&0\end{pmatrix},
+\qquad
+Q=\begin{pmatrix}0&0\\0&I_2\end{pmatrix},
+$$</p>
+<p>and the four corners are the four $2\times2$ blocks of a block matrix. Each block has four entries, so each corner has dimension four. The diagonal blocks are closed under multiplication and are full matrix algebras with units $\Pi$ and $Q$; the off-diagonal blocks are the spaces of linear maps between the two planes.</p>
+<p><strong>The compressed units.</strong> The unit of $\mathcal{A}$ is $\Pi$, not $I$; the unit of $\mathcal{D}$ is $Q$. The trace of an element of $\mathcal{A}$ as a matrix algebra is the compression $\operatorname{tr}(\Pi X\Pi)$, not the trace of $X$ in $M_4$. The two diagonal corners are matrix algebras with compressed units, and the embedding $\mathcal{A}\oplus\mathcal{D}\subset M_4$ is not unital in the sense of the unit $I$: the unit of the subalgebra is $\Pi+Q=I$, but the units of the two summands are $\Pi$ and $Q$.</p>
+<p><strong>The block form.</strong> A general element is</p>
+<p>$$
+A=\begin{pmatrix}A_{++}&A_{+-}\\A_{-+}&A_{--}\end{pmatrix},
+\qquad
+A_{++}\in\mathcal{A},\quad A_{+-}\in\mathcal{B},\quad A_{-+}\in\mathcal{C},\quad A_{--}\in\mathcal{D}.
+$$</p>
+<p>The product is</p>
+<p>$$
+\begin{pmatrix}A&B\\C&D\end{pmatrix}
+\begin{pmatrix}A'&B'\\C'&D'\end{pmatrix}
+=
+\begin{pmatrix}
+AA'+BC'&AB'+BD'\\
+CA'+DC'&CB'+DD'
+\end{pmatrix}.
+$$</p>
+<p>The products $BC'\subseteq\mathcal{A}$ and $CB'\subseteq\mathcal{D}$ are the cross terms; they are the reason the split is not an algebra direct sum.</p>
+<h2 id="the-two-carrier-modules">The Two Carrier Modules</h2>
+<p><strong>The two carrier spaces.</strong> The idempotent $\Pi$ defines the left module</p>
+<p>$$
+L_+=M_4\Pi=\{X\Pi:X\in M_4\},
+$$</p>
+<p>of complex dimension $8$, and $Q$ defines</p>
+<p>$$
+L_-=M_4Q=\{XQ:X\in M_4\},
+$$</p>
+<p>also of dimension $8$. These are the <strong>two algebraic carrier modules</strong> of the split. The first is the set of matrices that kill the second chirality, equivalently the space of maps $\mathbb{C}^2_+\to\mathbb{C}^4$; the second is the set that kills the first chirality, equivalently the space of maps $\mathbb{C}^2_-\to\mathbb{C}^4$.</p>
+<p><strong>Proposition.</strong> As a left module over the block-diagonal algebra $\mathcal{A}\oplus\mathcal{D}$,</p>
+<p>$$
+L_+\cong\mathcal{A}\oplus\mathcal{C},\qquad
+L_-\cong\mathcal{B}\oplus\mathcal{D}.
+$$</p>
+<p><strong>Proof.</strong> A matrix in $L_+$ has zero second block-column; its first block-column has a top part in $\mathcal{A}=\Pi M\Pi$ and a bottom part in $\mathcal{C}=QM\Pi$. The left action of $\mathcal{A}\oplus\mathcal{D}$ preserves the row decomposition and acts on the two parts by $\mathcal{A}$ and $\mathcal{D}$ respectively. The same argument with the second block-column gives $L_-\cong\mathcal{B}\oplus\mathcal{D}$.</p>
+<p><strong>The two carrier spaces of the spin chain.</strong> The spin chain of <em>The Spin Chain and the Adjoint Decomposition</em> has one carrier, $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$. The rank-two split has two carrier spaces, $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$, one per chirality. They are the modules of the two $M_2$ factors:</p>
+<p>$$
+\mathcal{A}\ \text{acts on}\ \mathbb{C}^2_+,
+\qquad
+\mathcal{D}\ \text{acts on}\ \mathbb{C}^2_- .
+$$</p>
+<p>The maps in $\mathcal{B}$ go from $\mathbb{C}^2_-$ to $\mathbb{C}^2_+$; the maps in $\mathcal{C}$ go from $\mathbb{C}^2_+$ to $\mathbb{C}^2_-$. The two carrier spaces are two-dimensional; the spin chain carrier is four-dimensional. They are different objects with similar names.</p>
+<p><strong>The mass block.</strong> The corner</p>
+<p>$$
+\mathcal{B}=\Pi M_4Q=\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)
+$$</p>
+<p>is the <strong>mass block</strong>. It is four-dimensional, and it is a bimodule: $\mathcal{A}$ acts on the left and $\mathcal{D}$ acts on the right. An element $M\in\mathcal{B}$ is a linear map</p>
+<p>$$
+M:\mathbb{C}^2_-\longrightarrow\mathbb{C}^2_+,
+$$</p>
+<p>the mass operator of the split. The opposite corner $\mathcal{C}$ is the conjugate mass block, and the two together form the odd part of the algebra under $\operatorname{Ad}_\Gamma$. The polar decomposition of $M$ is <em>The Mass Block and the Chiral Polar Decomposition</em>.</p>
+<h2 id="the-two-sided-peirce-table">The Two-Sided Peirce Table</h2>
+<p>The four corners form a $2\times2$ table:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\Pi$</th>
+<th>$Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi$</td>
+<td>$\mathcal{A}\cong M_2(\mathbb{C})$</td>
+<td>$\mathcal{B}\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>$\mathcal{C}\cong M_2(\mathbb{C})$</td>
+<td>$\mathcal{D}\cong M_2(\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The entry in row $\Pi$ and column $\Pi$ is the corner $\Pi M\Pi$; the entry in row $\Pi$ and column $Q$ is $\Pi MQ$; and so on. The table is the <strong>two-sided Peirce table</strong> of the pair $(\Pi,Q)$.</p>
+<p><strong>The multiplication table.</strong> The product of the corner in row $i$ and column $j$ with the corner in row $k$ and column $l$ is contained in the corner in row $i$ and column $l$ when $j=k$, and is zero otherwise:</p>
+<p>$$
+(\Pi_iM\Pi_j)(\Pi_kM\Pi_l)\subseteq\delta_{jk}\Pi_iM\Pi_l,
+$$</p>
+<p>where $\Pi_1=\Pi$ and $\Pi_2=Q$. Written as a table:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\cdot$</th>
+<th>$\mathcal{A}$</th>
+<th>$\mathcal{B}$</th>
+<th>$\mathcal{C}$</th>
+<th>$\mathcal{D}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{A}$</td>
+<td>$\mathcal{A}$</td>
+<td>$\mathcal{B}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathcal{B}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\mathcal{A}$</td>
+<td>$\mathcal{B}$</td>
+</tr>
+<tr>
+<td>$\mathcal{C}$</td>
+<td>$\mathcal{C}$</td>
+<td>$\mathcal{D}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathcal{D}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\mathcal{C}$</td>
+<td>$\mathcal{D}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The refinement into lines.</strong> Each four-dimensional corner is the sum of four fine Peirce lines:</p>
+<p>$$
+\mathcal{A}=\mathcal{A}_{11}\oplus\mathcal{A}_{13}\oplus\mathcal{A}_{31}\oplus\mathcal{A}_{33},
+$$</p>
+<p>$$
+\mathcal{B}=\mathcal{A}_{12}\oplus\mathcal{A}_{14}\oplus\mathcal{A}_{32}\oplus\mathcal{A}_{34},
+$$</p>
+<p>$$
+\mathcal{C}=\mathcal{A}_{21}\oplus\mathcal{A}_{23}\oplus\mathcal{A}_{41}\oplus\mathcal{A}_{43},
+$$</p>
+<p>$$
+\mathcal{D}=\mathcal{A}_{22}\oplus\mathcal{A}_{24}\oplus\mathcal{A}_{42}\oplus\mathcal{A}_{44}.
+$$</p>
+<p>Each line is one-dimensional, and the sixteen lines are the full Peirce decomposition of <em>The Peirce Decomposition</em>. The rank-two split groups the sixteen lines into four groups of four. It is a different grouping from the rank-one split, whose corners have dimensions $1,3,3,9$; neither grouping refines the other.</p>
+<h2 id="the-failure-of-the-algebra-direct-sum">The Failure of the Algebra Direct Sum</h2>
+<p><strong>The vector-space direct sum is not an algebra direct sum.</strong> The algebra is the direct sum of the four corners as vector spaces, but it is not the direct sum of $\mathcal{A}$ and $\mathcal{D}$ as algebras. The off-diagonal blocks $\mathcal{B}$ and $\mathcal{C}$ are nonzero, and the cross terms</p>
+<p>$$
+\mathcal{B}\mathcal{C}\subseteq\mathcal{A},\qquad
+\mathcal{C}\mathcal{B}\subseteq\mathcal{D}
+$$</p>
+<p>return to the diagonal. If the off-diagonal blocks were zero, the algebra would be $\mathcal{A}\oplus\mathcal{D}$; they are not, and the algebra is larger.</p>
+<p><strong>The block-diagonal part is a subalgebra, not an ideal.</strong> The subspace</p>
+<p>$$
+\mathcal{A}\oplus\mathcal{D}=\left\{\begin{pmatrix}A&0\\0&D\end{pmatrix}\right\}
+$$</p>
+<p>is closed under multiplication and contains the unit $I$. It is isomorphic to $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the balanced subalgebra $M_2\oplus M_2$ of the recursion. It is not a two-sided ideal: multiplying a block-diagonal element by a general element produces an off-diagonal part. Indeed, $M_4(\mathbb{C})$ is simple, so it has no proper two-sided ideal at all.</p>
+<p><strong>The meaning of "contains".</strong> When the category says that $M_4$ contains $M_2\oplus M_2$, the word means the block-diagonal subalgebra, not an ideal and not a quotient. The inclusion is</p>
+<p>$$
+M_2(\mathbb{C})\oplus M_2(\mathbb{C})\longrightarrow M_4(\mathbb{C}),\qquad
+(A,D)\longmapsto\begin{pmatrix}A&0\\0&D\end{pmatrix},
+$$</p>
+<p>and the off-diagonal blocks complete the image to the whole algebra. The same convention applies to the other categories: $M_6$ contains $M_3\oplus M_3$ and $M_5$ contains $M_2\oplus M_3$ as block-diagonal subalgebras.</p>
+<p><strong>The trace and the determinant.</strong> The trace splits as</p>
+<p>$$
+\operatorname{tr}A=\operatorname{tr}A_{++}+\operatorname{tr}A_{--},
+$$</p>
+<p>a sum of the traces of the two diagonal blocks. The determinant is the determinant of the full block matrix; on an invertible $A$,</p>
+<p>$$
+\det A=\det(A_{++}-A_{+-}A_{--}^{-1}A_{-+})\det A_{--}.
+$$</p>
+<p>The mass block enters through the Schur complement $A_{+-}A_{--}^{-1}A_{-+}$, which is a map on $\mathbb{C}^2_+$. The determinant is not the product $\det A_{++}\det A_{--}$ unless the mass block is zero.</p>
+<h2 id="comparison-with-the-rank-one-split-and-with-math172">Comparison with the Rank-One Split and with $M_2$</h2>
+<p><strong>The rank-one split.</strong> For the rank-one idempotent $\Pi=P_1$, the corners are</p>
+<p>$$
+1+3+3+9,
+$$</p>
+<p>with $\mathcal{A}\cong\mathbb{C}$, $\mathcal{D}\cong M_3$, $\mathcal{B}\cong\mathbb{C}^{1\times3}$ and $\mathcal{C}\cong\mathbb{C}^{3\times1}$. The rank-two split replaces the line and the three-space by two planes:</p>
+<p>$$
+1+3+3+9\ \longrightarrow\ 4+4+4+4.
+$$</p>
+<p>The rank-two split is the balanced split $M_2\oplus M_2$; the rank-one split is the unbalanced split $\mathbb{C}\oplus M_3$. The balanced split is the one adapted to the two chiralities, because both chiralities have the same dimension.</p>
+<p><strong>The biquaternion case.</strong> For $M_2(\mathbb{C})$, a rank-one idempotent $\Pi$ has complement $Q$ of rank one, and the split is</p>
+<p>$$
+1+1+1+1.
+$$</p>
+<p>There is no rank-two idempotent other than $I$, whose complement is $0$, so the balanced split $M_1\oplus M_1=\mathbb{C}\oplus\mathbb{C}$ is the only balanced split, and it is degenerate. The rank-two split $M_2\oplus M_2$ is a feature of $M_4$: it is the first case in which both chiralities are planes and both diagonal corners are non-scalar matrix algebras.</p>
+<p><strong>The recursion.</strong> The rank-two split is the case $p=2$ of the corner recursion</p>
+<p>$$
+M_n\supset M_p\oplus M_{n-p},
+$$</p>
+<p>and for $n=4$, $p=2$ gives $M_4\supset M_2\oplus M_2$. The rank-one split is the case $p=1$, $M_4\supset M_1\oplus M_3$. The two are the two nontrivial balanced-or-not splits of $M_4$; the third, $p=3$, is the complement of $p=1$ and gives the same dimensions in the opposite order.</p>
+<h2 id="summary">Summary</h2>
+<p>The rank-two idempotent $\Pi=P_+$ and its complement $Q=P_-$ cut the algebra into four corners of dimension four each:</p>
+<p>$$
+M_4(\mathbb{C})=\mathcal{A}\oplus\mathcal{B}\oplus\mathcal{C}\oplus\mathcal{D},
+\qquad 4+4+4+4=16,
+$$</p>
+<p>with $\mathcal{A}\cong M_2(\mathbb{C})$, $\mathcal{D}\cong M_2(\mathbb{C})$, and $\mathcal{B},\mathcal{C}$ the mass blocks, each isomorphic to $M_2(\mathbb{C})$ as a vector space and to $\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)$ or its opposite as a bimodule. The diagonal part $\mathcal{A}\oplus\mathcal{D}$ is the block-diagonal subalgebra $M_2\oplus M_2$; it is not an ideal, and the cross terms $\mathcal{B}\mathcal{C}\subseteq\mathcal{A}$ and $\mathcal{C}\mathcal{B}\subseteq\mathcal{D}$ show that the split is not an algebra direct sum. The two algebraic carrier modules are $L_+=M_4\Pi\cong\mathcal{A}\oplus\mathcal{C}$ and $L_-=M_4Q\cong\mathcal{B}\oplus\mathcal{D}$, each of dimension eight; the mass block is the four-dimensional corner $\mathcal{B}$. The rank-two split is the balanced refinement of the rank-one split $1+3+3+9$ and the four-dimensional analogue of the biquaternion split $1+1+1+1$.</p>
+<p>$$
+\boxed{\ M_4=\mathcal{A}\oplus\mathcal{B}\oplus\mathcal{C}\oplus\mathcal{D},\qquad 4+4+4+4=16,\qquad \mathcal{A}\cong\mathcal{D}\cong M_2(\mathbb{C}),\qquad \mathcal{B}\cong\mathcal{C}\cong M_2(\mathbb{C}).\ }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension</th>
+<th>Algebra or module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi=P_+$</td>
+<td>rank $2$</td>
+<td>idempotent</td>
+</tr>
+<tr>
+<td>$Q=P_-$</td>
+<td>rank $2$</td>
+<td>complement</td>
+</tr>
+<tr>
+<td>$\mathcal{A}=\Pi M\Pi$</td>
+<td>$4$</td>
+<td>$M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathcal{D}=QMQ$</td>
+<td>$4$</td>
+<td>$M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathcal{B}=\Pi MQ$</td>
+<td>$4$</td>
+<td>mass block, $\operatorname{Hom}(\mathbb{C}^2_-,\mathbb{C}^2_+)$</td>
+</tr>
+<tr>
+<td>$\mathcal{C}=Q M\Pi$</td>
+<td>$4$</td>
+<td>conjugate mass block</td>
+</tr>
+<tr>
+<td>$\mathcal{A}\oplus\mathcal{D}$</td>
+<td>$8$</td>
+<td>block-diagonal $M_2\oplus M_2$</td>
+</tr>
+<tr>
+<td>$\mathcal{B}\oplus\mathcal{C}$</td>
+<td>$8$</td>
+<td>odd part</td>
+</tr>
+<tr>
+<td>$L_+=M_4\Pi$</td>
+<td>$8$</td>
+<td>$\mathcal{A}\oplus\mathcal{C}$</td>
+</tr>
+<tr>
+<td>$L_-=M_4Q$</td>
+<td>$8$</td>
+<td>$\mathcal{B}\oplus\mathcal{D}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi=P_+$</td>
+<td>the rank-two idempotent, $\frac12(I+\Gamma)$</td>
+</tr>
+<tr>
+<td>$Q=P_-$</td>
+<td>the complement, $\frac12(I-\Gamma)$</td>
+</tr>
+<tr>
+<td>$\mathcal{A}=\Pi M_4\Pi$</td>
+<td>the left chiral corner, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathcal{D}=QM_4Q$</td>
+<td>the right chiral corner, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathcal{B}=\Pi M_4Q$</td>
+<td>the mass block</td>
+</tr>
+<tr>
+<td>$\mathcal{C}=QM_4\Pi$</td>
+<td>the conjugate mass block</td>
+</tr>
+<tr>
+<td>$L_+=M_4\Pi$, $L_-=M_4Q$</td>
+<td>the two algebraic carrier modules</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^2_\pm$</td>
+<td>the two carrier spaces</td>
+</tr>
+<tr>
+<td>$\mathcal{A}_{kl}$</td>
+<td>the fine Peirce lines inside the corners</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Peirce decompositions relative to a pair of orthogonal idempotents and for corner algebras.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for block matrices, Schur complements and the determinant.</li>
+<li><a href="the-peirce-decomposition-of-m4c.html">The Peirce Decomposition</a>, for the rank-one split and the sixteen fine lines.</li>
+<li><a href="the-two-chiralities-of-m4c.html">The Two Chiralities</a>, for the involution $\Gamma$ and the chiral blocks.</li>
+<li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html">The Mass Block and the Chiral Polar Decomposition</a>, for the mass operator and its polar decomposition.</li>
+<li><a href="the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html">The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$</a>, for the two $M_2$ factors and their Lie algebras.</li>
+<li><a href="the-peirce-decomposition-and-the-corner-recursion-mnc.html">The Peirce Decomposition and the Corner Recursion</a>, for the general recursion $M_n\supset M_p\oplus M_{n-p}$.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the biquaternion split $1+1+1+1$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

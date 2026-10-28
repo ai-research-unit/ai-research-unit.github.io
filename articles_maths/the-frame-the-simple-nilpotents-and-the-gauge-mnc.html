@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Frame, the Simple Nilpotents and the Gauge — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-frame-the-simple-nilpotents-and-the-gauge"><strong>The Frame, the Simple Nilpotents and the Gauge</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A root fixes the flag, and a frame fixes one vector in each line of the flag; the freedom in that choice is a torus, one parameter per simple nilpotent.</strong> The root therefore gives the idempotents and the lines, and the gauge gives the vectors and the units. The two together are the frame.</p>
+<p>The article constructs the frame from a basis adapted to the spectral flag, states the matrix-unit rule, isolates the simple nilpotents $E_{k,k+1}$, computes the gauge action and its cocycle, and counts the parameters: $n(n-1)$ complex from the root and $n-1$ complex from the gauge. At $n=2$ the count is four real and two real, the six real dimensions of the biquaternion frame. The article also identifies the older "second root" with a point of the gauge, which is the precise correction of the biquaternion presentation.</p>
+<h2 id="the-adapted-frame">The Adapted Frame</h2>
+<p><strong>A frame adapted to the flag is a basis with one vector in each spectral line.</strong> Let $H^{n}=I$ have simple spectrum, with projectors $P_k$ and lines $V_k=\operatorname{im}P_k$. Choose $v_k\in V_k$, $v_k\ne0$, for $k=0,\dots,n-1$. Then $(v_0,\dots,v_{n-1})$ is a basis of $\mathbb{C}^{n}$, and</p>
+<p>$$
+P_kv_m=\delta_{km}v_k,\qquad Hv_k=\zeta_kv_k.
+$$</p>
+<p>Let $\ell_k$ be the dual basis of the dual space, $\ell_k(v_m)=\delta_{km}$, and put</p>
+<p>$$
+E_{kl}=v_k\ell_l.
+$$</p>
+<p><strong>Proposition.</strong> The $n^{2}$ elements $E_{kl}$ are a basis of $M_n(\mathbb{C})$, they satisfy</p>
+<p>$$
+E_{kl}E_{mn}=\delta_{lm}E_{kn},\qquad E_{kk}=P_k,\qquad H=\sum_{k=0}^{n-1}\zeta_kE_{kk},
+$$</p>
+<p>and $\operatorname{tr}E_{kl}=\delta_{kl}$.</p>
+<p><em>Proof.</em> $E_{kl}E_{mn}=v_k\ell_l(v_m)\ell_n=\delta_{lm}v_k\ell_n=\delta_{lm}E_{kn}$. On $v_m$, $E_{kk}$ acts as $\delta_{km}v_k$, so $E_{kk}=P_k$. The sum $\sum_k\zeta_kE_{kk}$ acts on $v_m$ as $\zeta_mv_m=Hv_m$. The trace is $\ell_l(v_k)=\delta_{kl}$. $\square$</p>
+<p><strong>The frame is the choice of the $v_k$.</strong> The root fixes the lines; the frame fixes the vectors. Different frames of the same flag give different matrices $E_{kl}$ and the same idempotents $E_{kk}=P_k$.</p>
+<h2 id="the-simple-nilpotents">The Simple Nilpotents</h2>
+<p><strong>The superdiagonal units are nilpotent of index two, and every unit is a product of consecutive ones.</strong> Put</p>
+<p>$$
+N_k=E_{k,k+1},\qquad k=0,\dots,n-2.
+$$</p>
+<p>Then</p>
+<p>$$
+N_k^{2}=E_{k,k+1}E_{k,k+1}=0,
+$$</p>
+<p>and for $k<l$,</p>
+<p>$$
+E_{kl}=N_kN_{k+1}\cdots N_{l-1}.
+$$</p>
+<p>The nilpotents $N_k$ are the <strong>simple nilpotents</strong> of the frame. There are $n-1$ of them, one for each gap between consecutive lines of the flag.</p>
+<p><strong>The simple nilpotents generate the frame.</strong> The algebra generated by $N_0,\dots,N_{n-2}$ and their transposes $N_k^{\mathsf T}$ is the whole of $M_n(\mathbb{C})$: the products of consecutive $N$'s give all $E_{kl}$ with $k<l$, the transposes give $k>l$, and the diagonal is recovered as $E_{kk}=N_kN_k^{\mathsf T}$ for $k<n-1$ and $E_{n-1,n-1}=N_{n-2}^{\mathsf T}N_{n-2}$. The frame is therefore determined by the chain of simple nilpotents, and the chain is determined by the flag.</p>
+<p><strong>The chain is the Peirce chain.</strong> The nilpotent $N_k$ maps the line $V_{k+1}$ to the line $V_k$ and kills the other lines. In the Peirce notation of <em>The Peirce Decomposition and the Corner Recursion</em>, $N_k$ is a nonzero element of $A_{k,k+1}$. The chain $N_0,\dots,N_{n-2}$ is the sequence of maps that steps down the flag.</p>
+<h2 id="the-gauge-action">The Gauge Action</h2>
+<p><strong>A rescaling of the frame vectors rescales the matrix units by the ratio of the two scales.</strong> Replace $v_k$ by $t_kv_k$ with $t_k\in\mathbb{C}^{\times}$. The dual basis is replaced by $t_k^{-1}\ell_k$, so</p>
+<p>$$
+E_{kl}=v_k\ell_l\longmapsto t_kt_l^{-1}E_{kl}.
+$$</p>
+<p>The idempotents are fixed,</p>
+<p>$$
+E_{kk}\longmapsto E_{kk},
+$$</p>
+<p>and so is the root $H=\sum_k\zeta_kE_{kk}$. The group acting is the torus</p>
+<p>$$
+T=\{t=(t_0,\dots,t_{n-1})\in(\mathbb{C}^{\times})^{n}\},
+$$</p>
+<p>and the diagonal $t_0=\cdots=t_{n-1}$ acts trivially, so the effective group is</p>
+<p>$$
+T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}.
+$$</p>
+<p>This is the <strong>gauge group</strong> of the frame.</p>
+<p><strong>One parameter per simple nilpotent.</strong> Put</p>
+<p>$$
+\lambda_k=t_kt_{k+1}^{-1},\qquad k=0,\dots,n-2.
+$$</p>
+<p>Then</p>
+<p>$$
+N_k\longmapsto\lambda_kN_k,
+$$</p>
+<p>and every other unit is fixed by the $\lambda$'s through the cocycle</p>
+<p>$$
+E_{kl}\longmapsto\lambda_k\lambda_{k+1}\cdots\lambda_{l-1}\,E_{kl},\qquad k<l,
+$$</p>
+<p>and the inverse product for $k>l$. The composite $E_{kl}$ has no independent scale: its scale is the product of the consecutive ones. This is the <strong>cocycle</strong> of the gauge, and it is the reason the gauge has $n-1$ parameters rather than one per corner.</p>
+<p><strong>The cocycle forbids an extra parameter.</strong> Suppose that in addition to the $t_k$ one tries to rescale a single composite $E_{kl}$, $k<l$, by an independent $\mu$. The product rule forces</p>
+<p>$$
+E_{kl}=E_{k,k+1}\cdots E_{l-1,l},
+$$</p>
+<p>so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the gauge action on the units is the coboundary of the $0$-cochain $t$, and a coboundary has no freedom beyond the cochain modulo constants.</p>
+<p><strong>The idempotents do not depend on the gauge.</strong> The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units, never on the diagonal. In particular the projectors $P_k$ and the spectral decomposition $H=\sum_k\zeta_kP_k$ are gauge invariant. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.</p>
+<h2 id="the-count-of-the-frame">The Count of the Frame</h2>
+<p><strong>A frame modulo overall scale has $n^{2}-1$ complex dimensions.</strong> The set of bases of $\mathbb{C}^{n}$ is $GL_n(\mathbb{C})$, of complex dimension $n^{2}$; two bases that differ by an overall scalar give the same matrix units, so the frame is a point of $PGL_n(\mathbb{C})$, of complex dimension $n^{2}-1$.</p>
+<p><strong>The root and the gauge split this count.</strong> The map from frames to roots, $(v_k)\mapsto H=\sum_k\zeta_kE_{kk}$, has fibre the torus $T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1}$: the frames that give the same root are exactly the rescalings of the $v_k$. Hence</p>
+<p>$$
+\underbrace{n^{2}-1}_{\text{frame}/\,\mathbb{C}^{\times}}
+=
+\underbrace{n(n-1)}_{\text{root}}
++
+\underbrace{n-1}_{\text{gauge}} .
+$$</p>
+<p><strong>The case $n=2$ gives the six real dimensions.</strong> For $n=2$,</p>
+<p>$$
+n^{2}-1=3,\qquad n(n-1)=2,\qquad n-1=1,
+$$</p>
+<p>all complex. In real dimensions the frame modulo scale has $6$, the root has $4$ and the gauge has $2$: the four real parameters of the biquaternion root and the two real parameters of the complex number $\lambda$. This is the six-dimensional basis of the biquaternion frame.</p>
+<p><strong>The general case.</strong> For $n=3,4,5,6$ the complex counts are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>frame $/\,\mathbb{C}^{\times}$</th>
+<th>root</th>
+<th>gauge</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3$</td>
+<td>$8$</td>
+<td>$6$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$15$</td>
+<td>$12$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$24$</td>
+<td>$20$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$35$</td>
+<td>$30$</td>
+<td>$5$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The root column is the dimension of $\mathcal{R}_n$ in <em>Roots of Unity and the Lagrange Idempotents</em>; the gauge column is $n-1$, one per simple nilpotent.</p>
+<h2 id="the-second-root-is-a-gauge-choice">The "Second Root" Is a Gauge Choice</h2>
+<p><strong>At $n=2$ the element that the older biquaternion frame called a second root is exactly a point of the gauge.</strong> In the frame $(v_0,v_1)$ with $H=\operatorname{diag}(1,-1)$, let $R$ satisfy</p>
+<p>$$
+R^{2}=I,\qquad RH=-HR.
+$$</p>
+<p>The anticommutation forces $R$ to be off-diagonal, $R=aE_{01}+bE_{10}$, and $R^{2}=abI=I$ forces $b=a^{-1}$. Hence</p>
+<p>$$
+R=aE_{01}+a^{-1}E_{10},\qquad a\in\mathbb{C}^{\times}.
+$$</p>
+<p>Under the gauge $E_{01}\mapsto\lambda E_{01}$, $E_{10}\mapsto\lambda^{-1}E_{10}$, the element $R$ is carried to $a\lambda E_{01}+a^{-1}\lambda^{-1}E_{10}$, which is the same family with $a$ replaced by $a\lambda$. The gauge orbit of $R$ is the whole family, and the parameter $a$ is gauge, not root.</p>
+<p><strong>What the second root did and did not do.</strong> It supplied a vector in each mixed Peirce line: $R$ has nonzero entries exactly in $A_{01}$ and $A_{10}$, and it normalises them relative to each other. It did not supply the idempotents: those are $P_\pm=(I\pm H)/2$, produced by $H$ alone. The presentation of the frame as a root pair therefore overstated the role of $R$. The correct primitive data is the root; the correct additional data is the gauge point, and at $n=2$ the gauge point is a complex number, equivalently a second root of $+1$ anticommuting with the first, defined only up to the gauge action.</p>
+<p><strong>For $n>2$ there is no second root.</strong> The gauge has $n-1$ complex parameters, and the analogue of $R$ is the full torus of rescalings of the $v_k$. No single element plays the role that $R$ plays at $n=2$, because the flag has more than two lines.</p>
+<h2 id="an-explicit-frame-for-math156">An Explicit Frame for $n=3$</h2>
+<p><strong>The Fourier frame.</strong> Take $v_k=(1,\omega^{k},\omega^{2k})^{\mathsf T}$ with $\omega=e^{2\pi i/3}$, the eigenvectors of the cyclic shift of <em>Roots of Unity and the Lagrange Idempotents</em>. Then</p>
+<p>$$
+E_{kl}=\frac{1}{3}v_kv_l^{*}
+$$</p>
+<p>because the $v_k$ are orthogonal with $\|v_k\|^{2}=3$, and the dual functional is $\ell_l=\tfrac13v_l^{*}$. The three simple nilpotents are</p>
+<p>$$
+N_0=\frac13v_0v_1^{*},\qquad N_1=\frac13v_1v_2^{*},
+$$</p>
+<p>and</p>
+<p>$$
+N_0N_1=\frac19v_0\,(v_1^{*}v_1)\,v_2^{*}=\frac13v_0v_2^{*}=E_{02},
+$$</p>
+<p>which is the cocycle at work: the scale of $E_{02}$ is the product of the scales of $N_0$ and $N_1$.</p>
+<p><strong>A gauge transformation.</strong> Rescale $v_0\mapsto t_0v_0$ and $v_1\mapsto t_1v_1$, $v_2\mapsto t_2v_2$. Then</p>
+<p>$$
+N_0\longmapsto\frac{t_0}{t_1}N_0=\lambda_0N_0,\qquad
+N_1\longmapsto\frac{t_1}{t_2}N_1=\lambda_1N_1,
+$$</p>
+<p>and</p>
+<p>$$
+E_{02}\longmapsto\frac{t_0}{t_2}E_{02}=\lambda_0\lambda_1E_{02}.
+$$</p>
+<p>The two parameters $\lambda_0,\lambda_1$ are independent; the third scale $\lambda_0\lambda_1$ is not.</p>
+<h2 id="summary">Summary</h2>
+<p>An adapted frame $(v_0,\dots,v_{n-1})$ gives the matrix units $E_{kl}=v_k\ell_l$, with $E_{kl}E_{mn}=\delta_{lm}E_{kn}$, $E_{kk}=P_k$ and $H=\sum_k\zeta_kE_{kk}$. The simple nilpotents $N_k=E_{k,k+1}$, $n-1$ of them, square to zero and generate the frame; every composite is their product. The gauge $v_k\mapsto t_kv_k$ acts by $E_{kl}\mapsto(t_k/t_l)E_{kl}$, an effective torus $(\mathbb{C}^{\times})^{n-1}$ with one parameter per simple nilpotent, subject to the cocycle that fixes the composites. The frame modulo scale has $n^{2}-1$ complex dimensions, split as $n(n-1)$ for the root and $n-1$ for the gauge; at $n=2$ this is $6=4+2$ real, the biquaternion count. The older "second root" of the biquaternion frame is a point of this gauge, not a second primitive.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$v_k$</td>
+<td>a nonzero vector in the spectral line $V_k$</td>
+</tr>
+<tr>
+<td>$\ell_k$</td>
+<td>the dual functional, $\ell_k(v_m)=\delta_{km}$</td>
+</tr>
+<tr>
+<td>$E_{kl}=v_k\ell_l$</td>
+<td>the matrix unit of the frame</td>
+</tr>
+<tr>
+<td>$N_k=E_{k,k+1}$</td>
+<td>the simple nilpotent, $N_k^{2}=0$</td>
+</tr>
+<tr>
+<td>$t_k$</td>
+<td>the gauge scale of $v_k$</td>
+</tr>
+<tr>
+<td>$\lambda_k=t_kt_{k+1}^{-1}$</td>
+<td>the gauge parameter on $N_k$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>the torus of rescalings, effective $(\mathbb{C}^{\times})^{n-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for matrix units, Peirce corners and the coordinate algebra of a frame.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for bases, dual bases and the matrix of a linear map.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-mnc.html">Roots of Unity and the Lagrange Idempotents</a>, for the root that fixes the flag.</li>
+<li><a href="the-peirce-decomposition-and-the-corner-recursion-mnc.html">The Peirce Decomposition and the Corner Recursion</a>, for the corners that the units span.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-mnc.html">The Spin Chain and the Adjoint Decomposition</a>, for the chain of nilpotents as a ladder.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the biquaternion frame and the parameter $\lambda$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

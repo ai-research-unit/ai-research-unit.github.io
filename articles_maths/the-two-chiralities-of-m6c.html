@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Chiralities — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-chiralities"><strong>The Two Chiralities</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The cube of a root of order six is an involution:</p>
+<p>$$
+\Gamma=H^3,\qquad \Gamma^2=I_6,\qquad \operatorname{tr}\Gamma=0 .
+$$</p>
+<p>Its eigenvalues $+1$ and $-1$ have multiplicity three each, so the carrier splits as</p>
+<p>$$
+\mathbb{C}^6=V_+\oplus V_-,
+\qquad
+V_+=V_1\oplus V_3\oplus V_5,\quad
+V_-=V_2\oplus V_4\oplus V_6 .
+$$</p>
+<p>This is the <strong>$3+3$ chiral split</strong>. The chiral blocks of the algebra are the two $M_3$ corners, and the off-diagonal block between them is the <strong>mass block</strong>, of dimension $3\cdot3=9$.</p>
+<p>The involution is one of the three quotient gradings of the $\mathbb{Z}/6$ grading: $\Gamma$ is the $\mathbb{Z}/2$ quotient, the square $H^2$ gives the $\mathbb{Z}/3$ quotient, and $H$ itself gives the full $\mathbb{Z}/6$. The article develops the split, the three gradings, the mass block, and the contrast with the $2+2$ split of $M_4$ and the $1+1$ split of the biquaternion algebra.</p>
+<p>It assumes the root and its Lagrange projectors of <em>Roots of Unity and the Lagrange Idempotents</em>. It uses no form and no topology. The mass block's polar decomposition is <em>The Mass Block and the Chiral Polar Decomposition</em>; the block corners are <em>The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners</em>; the spin chain is <em>The Spin Chain and the Adjoint Decomposition</em>.</p>
+<h2 id="the-chirality-involution">The Chirality Involution</h2>
+<h3 id="definition-and-spectrum">Definition and Spectrum</h3>
+<p><strong>Definition.</strong> Let $H$ be a root of order six. The <strong>chirality involution</strong> is</p>
+<p>$$
+\Gamma=H^3 .
+$$</p>
+<p><strong>Theorem.</strong> $\Gamma$ is an involution with eigenvalues $+1$ and $-1$, each of multiplicity three:</p>
+<p>$$
+\Gamma^2=I_6,\qquad
+\Gamma\neq\pm I_6,\qquad
+\operatorname{tr}\Gamma=0 .
+$$</p>
+<p>In the Lagrange projectors,</p>
+<p>$$
+\Gamma=\sum_{k=1}^{6}(-1)^{k-1}P_k
+=P_1-P_2+P_3-P_4+P_5-P_6 .
+$$</p>
+<p><strong>Proof.</strong> For each eigenvalue $\zeta_k=\zeta^{k-1}$ of $H$, $\zeta_k^3=(-1)^{k-1}$. The spectral formula gives $\Gamma=\sum_k\zeta_k^3P_k=\sum_k(-1)^{k-1}P_k$; the three odd-indexed projectors contribute $+1$ and the three even-indexed ones $-1$. The square is $\sum_kP_k=I_6$, and the trace is $3-3=0$.</p>
+<p><strong>Corollary (the chiral projectors).</strong></p>
+<p>$$
+\Pi_+=\frac{I_6+\Gamma}{2}=P_1+P_3+P_5,
+\qquad
+\Pi_-=\frac{I_6-\Gamma}{2}=P_2+P_4+P_6,
+$$</p>
+<p>with</p>
+<p>$$
+\Pi_\pm^2=\Pi_\pm,\qquad
+\Pi_+\Pi_-=0,\qquad
+\Pi_++\Pi_-=I_6,\qquad
+\operatorname{rank}\Pi_\pm=3 .
+$$</p>
+<p><strong>Proof.</strong> A polynomial in $\Gamma$ with $L(\pm1)=1$ and $L(\mp1)=0$ is the projector onto the corresponding eigenspace. The trace of a rank-three projector is three.</p>
+<h3 id="the-chiral-eigenspaces">The Chiral Eigenspaces</h3>
+<p><strong>Definition.</strong> The <strong>chiral halves</strong> of the carrier are</p>
+<p>$$
+V_+=\operatorname{im}\Pi_+=\ker(\Gamma-I_6),
+\qquad
+V_-=\operatorname{im}\Pi_-=\ker(\Gamma+I_6).
+$$</p>
+<p><strong>Proposition.</strong></p>
+<p>$$
+V_+=\bigoplus_{j=0}^{2}V_{2j+1}=\mathbb{C}v_1\oplus\mathbb{C}v_3\oplus\mathbb{C}v_5,
+\qquad
+V_-=\bigoplus_{j=0}^{2}V_{2j+2}=\mathbb{C}v_2\oplus\mathbb{C}v_4\oplus\mathbb{C}v_6,
+$$</p>
+<p>and $\mathbb{C}^6=V_+\oplus V_-$, with $\dim V_\pm=3$.</p>
+<p><strong>Proof.</strong> $\Gamma$ acts on $V_k$ by $(-1)^{k-1}$; so $V_k\subseteq V_+$ for $k$ odd and $V_k\subseteq V_-$ for $k$ even. The six lines are independent and their dimensions sum to six.</p>
+<p><strong>Remark (the halves are not ideals).</strong> Each chiral half is a three-dimensional subspace of the carrier. It is not a left ideal of $M_6$, not a minimal left ideal, and not a corner of the algebra. The minimal left ideals of $M_6$ are the six-dimensional columns. <strong>The chiral halves live in the carrier; the chiral blocks live in the algebra.</strong></p>
+<h3 id="the-chiral-blocks">The Chiral Blocks</h3>
+<p><strong>Theorem (the block decomposition).</strong> Relative to $\mathbb{C}^6=V_+\oplus V_-$, every $A\in M_6(\mathbb{C})$ has a unique block form</p>
+<p>$$
+A=\begin{pmatrix}A_{++}&A_{+-}\\A_{-+}&A_{--}\end{pmatrix},
+$$</p>
+<p>with</p>
+<p>$$
+A_{++}\in\operatorname{End}(V_+)\cong M_3,\quad
+A_{--}\in\operatorname{End}(V_-)\cong M_3,\quad
+A_{+-}\in\operatorname{Hom}(V_-,V_+)\cong\mathbb{C}^{3\times3},\quad
+A_{-+}\in\operatorname{Hom}(V_+,V_-)\cong\mathbb{C}^{3\times3}.
+$$</p>
+<p>The four blocks have dimension $9$ each, and</p>
+<p>$$
+36=9+9+9+9 .
+$$</p>
+<p><strong>Proof.</strong> A linear map from a direct sum to a direct sum is a $2\times2$ matrix of maps between the summands. The dimension of $\operatorname{Hom}(V_\pm,V_\pm)$ is $3\cdot3=9$, and of $\operatorname{Hom}(V_\mp,V_\pm)$ is also $9$.</p>
+<p><strong>Corollary (the corner identifications).</strong></p>
+<p>$$
+\Pi_+M_6\Pi_+=M_3(V_+),\qquad
+\Pi_-M_6\Pi_-=M_3(V_-),\qquad
+\Pi_+M_6\Pi_-=\operatorname{Hom}(V_-,V_+),\qquad
+\Pi_-M_6\Pi_+=\operatorname{Hom}(V_+,V_-).
+$$</p>
+<p><strong>Proof.</strong> These are the four corners of the idempotent $\Pi_+$, by <em>The Peirce Decomposition</em>, with the rank $p=3$.</p>
+<p><strong>Definition.</strong> The block $A_{+-}=\Pi_+A\Pi_-$ is the <strong>mass block</strong>. It maps the negative chiral half into the positive one, and it is a $3\times3$ matrix. Its partner $A_{-+}$ is the conjugate mass block, mapping $V_+$ to $V_-$.</p>
+<p><strong>Remark (the mass block has dimension 9).</strong> The number is the product of the two chiral dimensions, $3\cdot3=9$. For $M_4$ it is $2\cdot2=4$; for the biquaternion algebra $M_2$ it is $1\cdot1=1$. <strong>The mass block is the off-diagonal square of the chiral split.</strong></p>
+<h2 id="the-three-gradings">The Three Gradings</h2>
+<h3 id="the-math76-grading">The $\mathbb{Z}/6$ Grading</h3>
+<p>Let $P_1,\dots,P_6$ be the Lagrange projectors and $A_{kl}=P_kM_6P_l$ the Peirce lines.</p>
+<p><strong>Theorem.</strong> The algebra decomposes as</p>
+<p>$$
+M_6(\mathbb{C})=\bigoplus_{r=0}^{5}A_r,
+\qquad
+A_r=\bigoplus_{k-l\equiv r\pmod6}A_{kl},
+\qquad
+\dim A_r=6,
+$$</p>
+<p>and $A_rA_s\subseteq A_{r+s}$.</p>
+<p><strong>Proof.</strong> The Peirce line $A_{kl}$ has degree $k-l$; a product $A_{kl}A_{mn}$ is either zero or $A_{kn}$, of degree $(k-l)+(m-n)$, and the degree is additive modulo six. For fixed $r$ and each $k$ there is exactly one $l=k-r$, so $A_r$ is the sum of six lines.</p>
+<p><strong>Theorem (the grading automorphism).</strong> Conjugation by $H$ preserves the decomposition and acts on $A_r$ by the scalar $\zeta^r$:</p>
+<p>$$
+HAH^{-1}=\zeta^rA
+\qquad
+(A\in A_r).
+$$</p>
+<p><strong>Proof.</strong> On the line $A_{kl}=\mathbb{C}E_{kl}$, $HE_{kl}H^{-1}=(\zeta_k/\zeta_l)E_{kl}=\zeta^{k-l}E_{kl}=\zeta^rE_{kl}$.</p>
+<p><strong>Remark (the automorphism, not the derivation).</strong> The grading is the eigenspace decomposition of the automorphism $\operatorname{Ad}_H(A)=HAH^{-1}$, not of the derivation $\operatorname{ad}_H(A)=HA-AH$. On $A_{kl}$ the derivation acts by $\zeta_k-\zeta_l$, which is not a sixth root of unity; the automorphism acts by the root $\zeta^{k-l}$. <strong>The grading is a symmetry of the algebra, and it is inner.</strong></p>
+<h3 id="the-math101-quotient">The $\mathbb{Z}/2$ Quotient</h3>
+<p><strong>Theorem.</strong> The map $\mathbb{Z}/6\to\mathbb{Z}/2$, $r\mapsto r\bmod2$, gives the decomposition</p>
+<p>$$
+M_6(\mathbb{C})=A_{\text{even}}\oplus A_{\text{odd}},
+\qquad
+A_{\text{even}}=\bigoplus_{r\text{ even}}A_r,
+\qquad
+A_{\text{odd}}=\bigoplus_{r\text{ odd}}A_r,
+$$</p>
+<p>with</p>
+<p>$$
+\dim A_{\text{even}}=\dim A_{\text{odd}}=18,
+\qquad
+A_{\text{even}}A_{\text{even}}\subseteq A_{\text{even}},\quad
+A_{\text{even}}A_{\text{odd}}\subseteq A_{\text{odd}},\quad
+A_{\text{odd}}A_{\text{odd}}\subseteq A_{\text{even}}.
+$$</p>
+<p><strong>Proof.</strong> The parity of $r+s$ is the sum of the parities. The dimensions are $3\cdot6=18$ each.</p>
+<p><strong>Theorem (the $\mathbb{Z}/2$ grading is the chirality).</strong> Conjugation by $\Gamma$ acts as $+1$ on $A_{\text{even}}$ and as $-1$ on $A_{\text{odd}}$:</p>
+<p>$$
+\Gamma A\Gamma=(-1)^rA
+\qquad
+(A\in A_r).
+$$</p>
+<p><strong>Proof.</strong> $\Gamma=H^3$, so $\Gamma A\Gamma=H^3AH^{-3}=\zeta^{3r}A=(-1)^rA$.</p>
+<p><strong>Corollary.</strong> The fixed subalgebra of $\operatorname{Ad}_\Gamma$ is $A_{\text{even}}$, and it is exactly the block-diagonal subalgebra of the chiral split:</p>
+<p>$$
+A_{\text{even}}=M_3(V_+)\oplus M_3(V_-),
+\qquad
+A_{\text{odd}}=\operatorname{Hom}(V_-,V_+)\oplus\operatorname{Hom}(V_+,V_-).
+$$</p>
+<p><strong>Proof.</strong> $A_{\text{even}}$ consists of the lines $A_{kl}$ with $k-l$ even, that is with $k$ and $l$ of the same parity, that is with both indices in $\{1,3,5\}$ or both in $\{2,4,6\}$. These are the two diagonal chiral blocks. The odd part is the two off-diagonal blocks.</p>
+<p><strong>Corollary (the massless subalgebra).</strong> The massless elements $A_{+-}=A_{-+}=0$ form the subalgebra $A_{\text{even}}\cong M_3\oplus M_3$, of dimension $18$. The mass block and its partner add the remaining $9+9=18$ dimensions.</p>
+<h3 id="the-math131-quotient">The $\mathbb{Z}/3$ Quotient</h3>
+<p><strong>Theorem.</strong> The map $\mathbb{Z}/6\to\mathbb{Z}/3$, $r\mapsto r\bmod3$, gives the decomposition</p>
+<p>$$
+M_6(\mathbb{C})=B_0\oplus B_1\oplus B_2,
+\qquad
+B_s=\bigoplus_{r\equiv s\pmod3}A_r,
+$$</p>
+<p>with</p>
+<p>$$
+\dim B_0=\dim B_1=\dim B_2=12,
+\qquad
+B_sB_t\subseteq B_{s+t\bmod3}.
+$$</p>
+<p><strong>Proof.</strong> Each $B_s$ is the sum of two graded pieces $A_r$, each of dimension six. The product rule is the product rule of the quotient group $\mathbb{Z}/3$.</p>
+<p><strong>Theorem (the $\mathbb{Z}/3$ grading automorphism).</strong> Conjugation by $H^2$ acts on $B_s$ by $\omega^s$, where $\omega=\zeta^2$ is a primitive cube root of unity:</p>
+<p>$$
+H^2AH^{-2}=\omega^sA
+\qquad
+(A\in B_s).
+$$</p>
+<p><strong>Proof.</strong> $H^2AH^{-2}=\zeta^{2r}A=\omega^rA$ for $A\in A_r$.</p>
+<p><strong>Theorem (the fixed algebra of the $\mathbb{Z}/3$ quotient).</strong> The fixed subalgebra $B_0$ is isomorphic to $M_2(\mathbb{C})\oplus M_2(\mathbb{C})\oplus M_2(\mathbb{C})$:</p>
+<p>$$
+B_0=A_0\oplus A_3
+=\left\langle E_{11},E_{44},E_{14},E_{41}\right\rangle
+\oplus\left\langle E_{22},E_{55},E_{25},E_{52}\right\rangle
+\oplus\left\langle E_{33},E_{66},E_{36},E_{63}\right\rangle,
+$$</p>
+<p>the three $2\times2$ blocks on the pairs of opposite lines $(1,4),(2,5),(3,6)$. In particular $\dim B_0=12$.</p>
+<p><strong>Proof.</strong> $A_0$ is the diagonal, spanned by the six $E_{ii}$; $A_3$ is spanned by $E_{14},E_{25},E_{36}$ and their transposes. On the pair $(1,4)$ the four units $E_{11},E_{44},E_{14},E_{41}$ span a full $M_2$; the three pairs are independent, and the units of different pairs multiply to zero. So $B_0$ is the direct sum of the three $M_2$'s, of dimension $3\cdot4=12$.</p>
+<p><strong>Corollary (the three opposite pairs).</strong> The $\mathbb{Z}/3$ quotient is the <strong>opposite-pair grading</strong>: the six lines are grouped into the three opposite pairs</p>
+<p>$$
+\{1,4\},\qquad\{2,5\},\qquad\{3,6\},
+$$</p>
+<p>each pair spans a two-dimensional subspace, and $B_0$ is the algebra of the three pairs with no mixing. The pieces $B_1$ and $B_2$ are the mixing blocks between the pairs.</p>
+<p><strong>Proof.</strong> The pairs are the orbits of $k\mapsto k+3$; $A_0$ and $A_3$ are exactly the lines that stay inside a pair, so $B_0$ has no mixing. A line $A_{kl}$ with $k-l\equiv1$ or $2$ connects two different pairs, so $B_1,B_2$ are the mixing blocks.</p>
+<h3 id="the-three-gradings-together">The Three Gradings Together</h3>
+<p><strong>Theorem.</strong> The $\mathbb{Z}/6$ grading is the common refinement of the $\mathbb{Z}/2$ and $\mathbb{Z}/3$ gradings. For each $r$,</p>
+<p>$$
+A_r=A_{\text{even/odd}}\cap B_{r\bmod3},
+$$</p>
+<p>according to the parity of $r$. The Chinese remainder theorem $\mathbb{Z}/6\cong\mathbb{Z}/2\times\mathbb{Z}/3$ makes the two quotient gradings independent.</p>
+<p><strong>Proof.</strong> The class of $r$ modulo six is determined by its classes modulo two and modulo three. The intersection of the parity class and the mod-three class is the class modulo six.</p>
+<p><strong>Corollary (the three operators).</strong> The three gradings are the eigenspace decompositions of the three commuting automorphisms</p>
+<p>$$
+\operatorname{Ad}_H,\qquad
+\operatorname{Ad}_{H^2}=\operatorname{Ad}_H^2,\qquad
+\operatorname{Ad}_{H^3}=\operatorname{Ad}_H^3,
+$$</p>
+<p>of orders $6,3,2$. The eigenvalues are the sixth roots, the cube roots and the signs.</p>
+<p><strong>Proof.</strong> These are the powers of $\operatorname{Ad}_H$, which has order six.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Grading</th>
+<th>Group</th>
+<th>Pieces</th>
+<th>Dimensions</th>
+<th>Operator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>full</td>
+<td>$\mathbb{Z}/6$</td>
+<td>$A_0,\dots,A_5$</td>
+<td>$6,6,6,6,6,6$</td>
+<td>$\operatorname{Ad}_H$</td>
+</tr>
+<tr>
+<td>chirality</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$A_{\text{even}},A_{\text{odd}}$</td>
+<td>$18,18$</td>
+<td>$\operatorname{Ad}_{H^3}=\operatorname{Ad}_\Gamma$</td>
+</tr>
+<tr>
+<td>opposite pairs</td>
+<td>$\mathbb{Z}/3$</td>
+<td>$B_0,B_1,B_2$</td>
+<td>$12,12,12$</td>
+<td>$\operatorname{Ad}_{H^2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (what each quotient sees).</strong> The $\mathbb{Z}/2$ quotient sees the parity of the line, that is the chirality. The $\mathbb{Z}/3$ quotient sees the line modulo three, that is the opposite pair. The full $\mathbb{Z}/6$ sees both at once. <strong>The chirality and the opposite-pair structure are independent: their product is the root.</strong></p>
+<h2 id="the-mass-block">The Mass Block</h2>
+<h3 id="the-block-matrix">The Block Matrix</h3>
+<p>In the chiral split,</p>
+<p>$$
+A=\begin{pmatrix}A_{++}&M\\N&A_{--}\end{pmatrix},
+\qquad
+A_{++},A_{--},M,N\in M_3(\mathbb{C}),
+$$</p>
+<p>with $M=A_{+-}$ the mass block and $N=A_{-+}$ its partner. The product is the block product</p>
+<p>$$
+\begin{pmatrix}A_{++}&M\\N&A_{--}\end{pmatrix}
+\begin{pmatrix}A_{++}'&M'\\N'&A_{--}'\end{pmatrix}
+=
+\begin{pmatrix}
+A_{++}A_{++}'+MN' & A_{++}M'+MA_{--}'\\
+NA_{++}'+A_{--}N' & NM'+A_{--}A_{--}'
+\end{pmatrix}.
+$$</p>
+<p><strong>Proposition (the trace and the determinant).</strong></p>
+<p>$$
+\operatorname{tr}A=\operatorname{tr}A_{++}+\operatorname{tr}A_{--},
+\qquad
+\det A=\det A_{--}\det\left(A_{++}-MA_{--}^{-1}N\right)
+$$</p>
+<p>when $A_{--}$ is invertible.</p>
+<p><strong>Proof.</strong> The trace is the sum of the traces of the diagonal blocks. The determinant is the Schur complement formula of <em>The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners</em>.</p>
+<h3 id="the-gauge-on-the-mass-block">The Gauge on the Mass Block</h3>
+<p><strong>Definition.</strong> The <strong>relative chiral scale</strong> is the class of</p>
+<p>$$
+\operatorname{diag}(tI_3,sI_3),\qquad t,s\in\mathbb{C}^\times,
+$$</p>
+<p>modulo the overall scalar; it is parameterised by $t/s$.</p>
+<p><strong>Proposition.</strong> Under the relative chiral scale, the mass block is multiplied by $t/s$:</p>
+<p>$$
+M\longmapsto\frac{t}{s}M .
+$$</p>
+<p>The traceless diagonal tori of the two chiral blocks act by left and right multiplication.</p>
+<p><strong>Proof.</strong> Conjugation by $\operatorname{diag}(tI_3,sI_3)$ sends the block $M$ to $tMs^{-1}=(t/s)M$; the traceless parts act inside $M_3(V_+)$ and $M_3(V_-)$, hence by left and right multiplication on $M$.</p>
+<p><strong>Corollary (the gauge invariant of the mass block).</strong> The singular values of $M$ are all multiplied by $\lvert t/s\rvert$; their ratios are invariant under the relative scale, and the left and right unitary actions do not change them.</p>
+<p><strong>Proof.</strong> The singular values of $(t/s)M$ are $\lvert t/s\rvert$ times those of $M$; left and right multiplication by unitaries preserves them.</p>
+<h3 id="the-massless-algebra">The Massless Algebra</h3>
+<p><strong>Theorem.</strong> The set of elements with vanishing mass block is the subalgebra</p>
+<p>$$
+\left\{\begin{pmatrix}A_{++}&0\\0&A_{--}\end{pmatrix}\right\}
+\cong M_3(\mathbb{C})\oplus M_3(\mathbb{C}),
+$$</p>
+<p>of dimension $18$. The full algebra is obtained by adding the mass block $M$ (dimension $9$) and its partner $N$ (dimension $9$).</p>
+<p><strong>Proof.</strong> The block-diagonal matrices are closed under multiplication; the two off-diagonal blocks are independent $3\times3$ spaces.</p>
+<p><strong>Remark (the mass is not an ideal).</strong> The mass block $M$ alone is not an ideal: the product of a mass block with a partner can return a diagonal block, and the diagonal blocks act on the mass block from both sides. <strong>The mass block is a bimodule over the massless algebra, and the mass term is the extension that makes $M_6$ simple.</strong></p>
+<h2 id="the-contrast-with-math235">The Contrast with $M_4$</h2>
+<h3 id="the-math236-split">The $2+2$ Split</h3>
+<p>Let $H_4$ be a root of order four and $\Gamma_4=H_4^2$. Then $\Gamma_4$ is an involution with eigenvalues $\pm1$, each of multiplicity two, and the chiral split is $2+2$:</p>
+<p>$$
+\mathbb{C}^4=V_+\oplus V_-,
+\qquad
+\dim V_\pm=2,
+\qquad
+M_4(\mathbb{C})=M_2(V_+)\oplus\operatorname{Hom}(V_-,V_+)\oplus\operatorname{Hom}(V_+,V_-)\oplus M_2(V_-),
+$$</p>
+<p>with corner dimensions</p>
+<p>$$
+4+4+4+4=16
+$$</p>
+<p>and mass block of dimension $2\cdot2=4$.</p>
+<p><strong>Proof.</strong> The same block computation with $3$ replaced by $2$: the corners are $2^2,2\cdot2,2\cdot2,2^2$.</p>
+<h3 id="the-math248-split-of-the-biquaternion-algebra">The $1+1$ Split of the Biquaternion Algebra</h3>
+<p>For $M_2(\mathbb{C})$ with a root $H_2$ of order two, $\Gamma_2=H_2$ itself, the split is $1+1$, and the corner dimensions are</p>
+<p>$$
+1+1+1+1=4,
+$$</p>
+<p>with mass block of dimension $1$. The two chiralities are the two coordinate lines. The two minimal left ideals of $M_2$ are the two columns, each of dimension two, and each column contains one of the lines.</p>
+<p><strong>Proof.</strong> The two eigenspaces are the two coordinate lines; the columns of $M_2$ are the two minimal left ideals, each of dimension two, and each contains one of the lines. In the $1+1$ split the two lines are the two chiral halves.</p>
+<h3 id="the-pattern">The Pattern</h3>
+<p><strong>Theorem (the chiral split of $M_{2m}$).</strong> For $M_{2m}(\mathbb{C})$ with a root of order $2m$ and $\Gamma=H^m$, the chiral split is $m+m$, the four corners have dimensions</p>
+<p>$$
+m^2+m^2+m^2+m^2=4m^2=(2m)^2,
+$$</p>
+<p>and the mass block has dimension $m^2$.</p>
+<p><strong>Proof.</strong> The same computation with $3$ replaced by $m$.</p>
+<p><strong>Corollary.</strong> The three cases are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>$m$</th>
+<th>Split</th>
+<th>Mass block</th>
+<th>Massless algebra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_2$</td>
+<td>$1$</td>
+<td>$1+1$</td>
+<td>$1$</td>
+<td>$\mathbb{C}\oplus\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$M_4$</td>
+<td>$2$</td>
+<td>$2+2$</td>
+<td>$4$</td>
+<td>$M_2\oplus M_2$</td>
+</tr>
+<tr>
+<td>$M_6$</td>
+<td>$3$</td>
+<td>$3+3$</td>
+<td>$9$</td>
+<td>$M_3\oplus M_3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the contrast).</strong> In $M_2$ the chiral halves are lines and minimal left ideals; in $M_4$ they are planes and the chiral blocks are $M_2$; in $M_6$ they are three-spaces and the chiral blocks are $M_3$. The mass block grows as $m^2$, and the massless algebra grows as $2m^2$. <strong>The biquaternion case is the case where the chiral half is one-dimensional; it is the exception, not the model.</strong></p>
+<h2 id="summary">Summary</h2>
+<p>The chirality involution of a root of order six is $\Gamma=H^3$, with eigenvalues $\pm1$ of multiplicity three each. The carrier splits as $3+3$,</p>
+<p>$$
+\mathbb{C}^6=V_+\oplus V_-,
+\qquad
+V_+=V_1\oplus V_3\oplus V_5,\quad
+V_-=V_2\oplus V_4\oplus V_6,
+$$</p>
+<p>and the algebra splits into four $3\times3$ blocks, of dimensions $9+9+9+9=36$. The off-diagonal block $M=A_{+-}$ is the mass block, of dimension $9$.</p>
+<p>$$
+\boxed{\ \Gamma=H^3,\quad 3+3,\quad \text{mass block }3\times3\text{ of dimension }9 .\ }
+$$</p>
+<p>The $\mathbb{Z}/6$ grading has six pieces of dimension six; its $\mathbb{Z}/2$ quotient is the chirality, with pieces $A_{\text{even}}\cong M_3\oplus M_3$ and $A_{\text{odd}}$, of dimensions $18+18$; its $\mathbb{Z}/3$ quotient is the opposite-pair grading, with pieces $B_0\cong M_2\oplus M_2\oplus M_2$, $B_1$, $B_2$, of dimensions $12+12+12$. The two quotients are independent and their common refinement is the full grading.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Gamma$</td>
+<td>$H^3$, involution, trace $0$</td>
+</tr>
+<tr>
+<td>Chiral split</td>
+<td>$3+3$</td>
+</tr>
+<tr>
+<td>Chiral blocks</td>
+<td>$M_3\oplus M_3$, dimension $18$</td>
+</tr>
+<tr>
+<td>Mass block</td>
+<td>$3\times3$, dimension $9$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/6$ pieces</td>
+<td>$6\times6$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/2$ pieces</td>
+<td>$18+18$</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/3$ pieces</td>
+<td>$12+12+12$</td>
+</tr>
+<tr>
+<td>$M_4$ contrast</td>
+<td>$2+2$, mass block $4$</td>
+</tr>
+<tr>
+<td>$M_2$ contrast</td>
+<td>$1+1$, mass block $1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Gamma=H^3$</td>
+<td>the chirality involution</td>
+</tr>
+<tr>
+<td>$\Pi_\pm=(I_6\pm\Gamma)/2$</td>
+<td>the chiral projectors, of rank $3$</td>
+</tr>
+<tr>
+<td>$V_\pm$</td>
+<td>the chiral halves of the carrier</td>
+</tr>
+<tr>
+<td>$A_{++},A_{--}$</td>
+<td>the two chiral blocks, both $M_3$</td>
+</tr>
+<tr>
+<td>$M=A_{+-}$</td>
+<td>the mass block, a $3\times3$ matrix</td>
+</tr>
+<tr>
+<td>$A_r$</td>
+<td>the $\mathbb{Z}/6$ graded pieces, $\dim A_r=6$</td>
+</tr>
+<tr>
+<td>$A_{\text{even}},A_{\text{odd}}$</td>
+<td>the $\mathbb{Z}/2$ pieces, $\dim=18$</td>
+</tr>
+<tr>
+<td>$B_0,B_1,B_2$</td>
+<td>the $\mathbb{Z}/3$ pieces, $\dim=12$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m6c.html">Roots of Unity and the Lagrange Idempotents</a>, for the root and the chirality involution.</li>
+<li><a href="the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>, for the four corners of an idempotent.</li>
+<li><a href="the-m3-m3-and-m2-m4-corners-of-m6c.html">The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners</a>, for the block form and the mass block in the corners.</li>
+<li><a href="the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html">The Mass Block and the Chiral Polar Decomposition</a>, for the polar decomposition of the mass block.</li>
+<li><a href="the-spin-chain-and-the-adjoint-decomposition-of-m6c.html">The Spin Chain and the Adjoint Decomposition</a>, for the chain that mixes the two chiralities.</li>
+<li><a href="the-two-chiralities-of-m4c.html">The Two Chiralities of $M_4(\mathbb{C})$</a>, for the $2+2$ split.</li>
+<li><a href="the-two-chiralities-of-the-biquaternion-algebra.html">The Two Chiralities of the Biquaternion Algebra</a>, for the $1+1$ split and the minimal left ideals.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals</a>, for the columns of $M_6$.</li>
+<li><a href="gradings-and-filtrations.html">Gradings and Filtrations</a>, for the general theory of group gradings and their quotients.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

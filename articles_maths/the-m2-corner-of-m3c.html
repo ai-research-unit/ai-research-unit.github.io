@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $M_2$ Corner of $M_3(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-corner-of-math1"><strong>The $M_2$ Corner of $M_3(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Let $P$ be a rank-two idempotent of $M_{3}(\mathbb{C})$ and $Q=I-P$ its complement. The <strong>compression</strong> of the algebra to $P$ is the set</p>
+<p>$$
+P M_{3}(\mathbb{C})P=\{PAP:A\in M_{3}(\mathbb{C})\}.
+$$</p>
+<p>It is closed under multiplication, its unit is $P$, and it is isomorphic to $M_{2}(\mathbb{C})$. The isomorphism is not an equality: the corner lives inside $M_{3}$ with the unit $P$ rather than $I$, its trace is the ambient trace restricted to it, and its determinant is the determinant of the compressed endomorphism, not the restriction of $\det A$. The corner is a unital $*$-algebra exactly when $P$ is Hermitian; for a non-Hermitian idempotent the ambient star carries the corner to a different corner.</p>
+<p>This article states the compression, the isomorphism $P M_{3}P\cong M_{2}(\mathbb{C})$, the inherited trace and determinant, the $*$-condition, the embedding $M_{2}\to M_{3}$, the one-dimensional complement, and the failure of the involution for a non-Hermitian idempotent. The rank-two split of the whole algebra, with corners $4+2+2+1$, is <em>The Rank-Two Split</em>. The Peirce decomposition by three idempotents is <em>The Peirce Decomposition of $M_{3}(\mathbb{C})$</em>.</p>
+<h2 id="the-compression">The Compression</h2>
+<p><strong>Definition.</strong> Let $P\in M_{3}(\mathbb{C})$ satisfy $P^{2}=P$ and $\operatorname{rank}P=2$, and put $Q=I-P$. The <strong>compression</strong> of $M_{3}$ to $P$ is</p>
+<p>$$
+B=P M_{3}P=\{PAP:A\in M_{3}(\mathbb{C})\}.
+$$</p>
+<p><strong>Proposition.</strong> $B$ is a subalgebra of $M_{3}(\mathbb{C})$ with unit $P$. It is closed under the product, $P$ is its two-sided identity, and $B$ has complex dimension $4$.</p>
+<p><strong>Proof.</strong> For $X=PAP$ and $Y=PBP$, the product is $XY=PAP\,PBP=P(APB)P\in B$, because $P^{2}=P$. The element $P=PIP$ lies in $B$, and $PX=P(PAP)=PAP=X$ and $XP=(PAP)P=X$, so $P$ is the unit. For the dimension, choose a basis of $\mathbb{C}^{3}$ adapted to the decomposition $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$, with the first two vectors in $\operatorname{im}P$ and the third in $\ker P$; in this basis $P=\operatorname{diag}(1,1,0)$, and $PAP$ is the matrix with the upper-left $2\times2$ block of $A$ and all other entries zero. The upper-left block is an arbitrary $2\times2$ matrix, so $B$ is four-dimensional.</p>
+<p><strong>The corner is not an ideal.</strong> $B$ is a subalgebra with its own unit, but it is not a two-sided ideal of $M_{3}$: $E_{02}\in M_{3}$ and $P E_{02}\notin B$ when $P$ has the standard form, for instance. The algebra $M_{3}$ is simple, so it has no nontrivial two-sided ideals at all. The corner is a subalgebra, not a quotient and not an ideal.</p>
+<p><strong>The corner is a compression, not a restriction.</strong> An element of $B$ is a matrix in $M_{3}$ that happens to lie in the corner. The map $A\mapsto PAP$ is not injective on $M_{3}$; its image is $B$, and the kernel is the set of matrices whose upper-left block vanishes, of dimension $5$. The compression keeps the part of $A$ that acts on $\operatorname{im}P$ and discards the rest.</p>
+<h2 id="the-corner-is-math66">The Corner Is $M_2(\mathbb{C})$</h2>
+<p><strong>Theorem.</strong> Let $P$ be a rank-two idempotent and $B=P M_{3}P$. The map</p>
+<p>$$
+\Phi:B\longrightarrow\operatorname{End}_{\mathbb{C}}(\operatorname{im}P),\qquad X\longmapsto X|_{\operatorname{im}P},
+$$</p>
+<p>is an isomorphism of $\mathbb{C}$-algebras with unit $P\mapsto\mathrm{id}_{\operatorname{im}P}$. Consequently</p>
+<p>$$
+B\cong M_{2}(\mathbb{C}).
+$$</p>
+<p><strong>Proof.</strong> The map is well defined: for $X=PAP$ and $v\in\operatorname{im}P$, $Xv=PAPv\in\operatorname{im}P$, so $X$ preserves $\operatorname{im}P$. It is a homomorphism because the restriction of a product is the product of the restrictions. It is injective: if $X|_{\operatorname{im}P}=0$, then $XP=0$; but $X=XP$ for $X=PAP$, so $X=0$. It is surjective: given $T\in\operatorname{End}(\operatorname{im}P)$, extend $T$ to $V$ by $T(\ker P)=0$ and put $X=TP$; then $X=PXP\in B$ and $X|_{\operatorname{im}P}=T$. The unit $P$ restricts to the identity of $\operatorname{im}P$. The endomorphism algebra of a two-dimensional space is $M_{2}(\mathbb{C})$.</p>
+<p><strong>A basis-free form.</strong> If $P=u_{1}v_{1}^{\vee}+u_{2}v_{2}^{\vee}$ with $(u_{1},u_{2})$ a basis of $\operatorname{im}P$ and $(v_{1}^{\vee},v_{2}^{\vee})$ the dual functionals on $\operatorname{im}P$, then the matrix of $X\in B$ in the basis $(u_{1},u_{2})$ is the $2\times2$ array of the numbers $v_{i}^{\vee}(Xu_{j})$. The corner is the algebra of those arrays.</p>
+<p><strong>The isomorphism is not canonical.</strong> It depends on the choice of a basis of $\operatorname{im}P$; a change of basis conjugates the $2\times2$ matrices by the change-of-basis matrix. The corner $B$ itself is canonical, being defined by $P$; the identification with the standard $M_{2}(\mathbb{C})$ is canonical only up to conjugation.</p>
+<p><strong>The standard case.</strong> For $P_{0}=\operatorname{diag}(1,1,0)$ the corner is the set of matrices</p>
+<p>$$
+\begin{pmatrix}b_{00}&b_{01}&0\\b_{10}&b_{11}&0\\0&0&0\end{pmatrix},
+$$</p>
+<p>which is $M_{2}(\mathbb{C})$ in the upper-left block. The unit is $P_{0}=\operatorname{diag}(1,1,0)$, not $I$.</p>
+<h2 id="the-inherited-trace-and-determinant">The Inherited Trace and Determinant</h2>
+<p><strong>The trace.</strong> The <strong>inherited trace</strong> of the corner is the restriction of the ambient trace:</p>
+<p>$$
+\operatorname{tr}_{P}(X)=\operatorname{tr}(X),\qquad X\in B.
+$$</p>
+<p>It is a linear functional on $B$, and it is the trace of the $2\times2$ matrix of $X$ in any basis of $\operatorname{im}P$.</p>
+<p><strong>Proposition.</strong> For $X=PAP\in B$,</p>
+<p>$$
+\operatorname{tr}_{P}(X)=\operatorname{tr}(PAP)=\operatorname{tr}(PA)=\operatorname{tr}(AP),
+$$</p>
+<p>and this number is the trace of the compressed endomorphism $X|_{\operatorname{im}P}$.</p>
+<p><strong>Proof.</strong> The trace is cyclic, so $\operatorname{tr}(PAP)=\operatorname{tr}(APP)=\operatorname{tr}(AP)$; the same argument gives $\operatorname{tr}(PA)$. The compressed endomorphism acts on $\operatorname{im}P$ and annihilates $\ker P$ (because $X=XP$ and $P$ annihilates $\ker P$), so the ambient trace, which is the sum over a basis adapted to $\operatorname{im}P\oplus\ker P$, is the trace on $\operatorname{im}P$ plus the zero trace on $\ker P$.</p>
+<p><strong>The determinant.</strong> The <strong>determinant of the compression</strong> is the determinant of the endomorphism $X|_{\operatorname{im}P}$:</p>
+<p>$$
+\det_{P}(X)=\det\bigl(X|_{\operatorname{im}P}\bigr).
+$$</p>
+<p>It is multiplicative on $B$, because the restriction map is an algebra isomorphism and the determinant is multiplicative on $M_{2}(\mathbb{C})$. It is <strong>not</strong> the restriction of the ambient determinant: the ambient determinant of $X$ is zero, since $X$ has the one-dimensional kernel $\ker P$ in its kernel, whereas the compression can be invertible.</p>
+<p><strong>Worked example (the two determinants differ).</strong> Let</p>
+<p>$$
+A=\begin{pmatrix}1&2&3\\4&5&6\\7&8&9\end{pmatrix},
+\qquad \det A=0,
+$$</p>
+<p>and $P_{0}=\operatorname{diag}(1,1,0)$. Then</p>
+<p>$$
+P_{0}AP_{0}=\begin{pmatrix}1&2&0\\4&5&0\\0&0&0\end{pmatrix},
+\qquad
+\det_{P_{0}}(P_{0}AP_{0})=\det\begin{pmatrix}1&2\\4&5\end{pmatrix}=5-8=-3\neq0=\det A.
+$$</p>
+<p>The compression is invertible in the corner, with inverse the compressed inverse of the $2\times2$ block, even though $A$ is singular in $M_{3}$. The two determinants answer different questions: $\det A$ asks whether $A$ is invertible on $\mathbb{C}^{3}$, and $\det_{P}$ asks whether $A$ is invertible on $\operatorname{im}P$ modulo $\ker P$.</p>
+<p><strong>The trace of the worked example.</strong> $\operatorname{tr}(A)=1+5+9=15$, while $\operatorname{tr}_{P_{0}}(P_{0}AP_{0})=1+5=6$. The inherited trace forgets the third diagonal entry, which lies in the kernel direction; it is the trace of the compressed endomorphism, not the trace of $A$.</p>
+<p><strong>The characteristic polynomial of the compression.</strong> The two eigenvalues of the $2\times2$ block are the eigenvalues of $X|_{\operatorname{im}P}$; the third eigenvalue of $A$ is not seen by the corner. The corner's characteristic polynomial is</p>
+<p>$$
+\lambda^{2}-\operatorname{tr}_{P}(X)\lambda+\det_{P}(X),
+$$</p>
+<p>and it divides the ambient characteristic polynomial of $X$ by the factor $\lambda$ corresponding to the kernel direction. For the example, $\lambda^{2}-6\lambda-3$.</p>
+<h2 id="the-unital-algebra-and-the-star">The Unital Algebra and the Star</h2>
+<p><strong>The corner is always a unital algebra, but it is a unital $*$-algebra only when $P$ is Hermitian.</strong></p>
+<p>Let $A^{*}=\bar A^{\mathsf T}$ be the conjugate transpose, as in <em>The Involution and the Hermitian Structure</em>. A <strong>unital $*$-algebra</strong> is an algebra with a unit and an involution that fixes the unit.</p>
+<p><strong>Theorem.</strong> Let $P$ be a rank-two idempotent and $B=P M_{3}P$.</p>
+<ol>
+<li>If $P=P^{*}$, then $B$ is a unital $*$-algebra with unit $P$ and involution the restriction of the star.</li>
+<li>If $P\neq P^{*}$, then $B$ is not closed under the star: for some $X\in B$, $X^{*}\notin B$.</li>
+</ol>
+<p><strong>Proof.</strong> (1) Let $P=P^{*}$. For $X=PAP\in B$, $X^{*}=P^{*}A^{*}P^{*}=PA^{*}P\in B$; the star is involutive, conjugate-linear and multiplicative on $B$, and it fixes $P$. So $B$ is a $*$-algebra.</p>
+<p>(2) Suppose that $B$ is closed under the star. Since $P\in B$, $P^{*}\in B$, so $P^{*}=PBP$ for some $B$, and therefore $P^{*}P=P^{*}$ and $PP^{*}=P^{*}$. Then $E=P-P^{*}$ satisfies</p>
+<p>$$
+E^{2}=P^{2}-PP^{*}-P^{*}P+(P^{*})^{2}=P-P^{*}-P^{*}+P^{*}=P-P^{*}=E,
+$$</p>
+<p>so $E$ is an idempotent. Its trace is $\operatorname{tr}P-\operatorname{tr}P^{*}=2-2=0$, because $P$ has rank two and the trace of $P^{*}$ is the conjugate of the trace of $P$. An idempotent of trace zero has rank zero, hence is zero; so $P=P^{*}$, contrary to the hypothesis. Therefore $B$ is not closed under the star when $P\neq P^{*}$.</p>
+<p><strong>The explicit failure.</strong> Let</p>
+<p>$$
+P=\begin{pmatrix}1&0&-1\\0&1&0\\0&0&0\end{pmatrix}.
+$$</p>
+<p>Then $P^{2}=P$, $\operatorname{rank}P=2$, and</p>
+<p>$$
+P^{*}=\begin{pmatrix}1&0&0\\0&1&0\\-1&0&0\end{pmatrix}\neq P.
+$$</p>
+<p>The corner $B=P M_{3}P$ consists of the matrices with third row zero and third column equal to the negative of the first column, as in §<em>The Compression</em>. The matrix $P^{*}$ has third row $(-1,0,0)$, which is not zero, so $P^{*}\notin B$. Taking $X=P\in B$ gives $X^{*}=P^{*}\notin B$. The star does not preserve the corner.</p>
+<p><strong>The Hermitian case in coordinates.</strong> For $P_{0}=\operatorname{diag}(1,1,0)$, the corner is the upper-left block and the star is the conjugate transpose of the block; the corner is the unital $*$-algebra $M_{2}(\mathbb{C})$ with unit $P_{0}$. The unit is $P_{0}$, not $I$, and the involution fixes it.</p>
+<p><strong>The involution of the biquaternion algebra.</strong> The biquaternion algebra is $\mathbb{B}\cong M_{2}(\mathbb{C})$, and its star is the conjugate transpose in its matrix model. The corner $B$ with a Hermitian $P$ is a copy of that $*$-algebra inside $M_{3}$, with unit $P$. For a non-Hermitian $P$ the copy is only an algebra: the ambient star carries it to the corner of $P^{*}$, and the involution of $\mathbb{B}$ does not descend to the corner. This is the precise sense in which the involution fails to descend; it is not a failure of the algebra structure, which is always $M_{2}(\mathbb{C})$.</p>
+<h2 id="the-complement-and-the-embedding">The Complement and the Embedding</h2>
+<p><strong>The complement.</strong> The idempotent $Q=I-P$ has rank one, and its corner is</p>
+<p>$$
+Q M_{3}Q=\mathbb{C}Q,
+$$</p>
+<p>a one-dimensional algebra with unit $Q$. The algebra splits as a vector space into the four coarse Peirce corners</p>
+<p>$$
+M_{3}=PMP\oplus PMQ\oplus QMP\oplus QMQ,
+$$</p>
+<p>of dimensions $4+2+2+1$. The corner $PMP$ is the $M_{2}$ corner; the corner $QMQ$ is the field $\mathbb{C}$; the mixed corners $PMQ$ and $QMP$ are two-dimensional and carry the bimodule structure of <em>The Rank-Two Split</em>.</p>
+<p><strong>The direct sum is not an algebra direct sum.</strong> The complement $\mathbb{C}Q$ is a subalgebra, and $PMP$ is a subalgebra, but their sum is not the whole algebra and the cross terms $PMQ,QMP$ are nonzero. If $M_{3}$ were the direct sum of the two corner algebras, the mixed corners would vanish, contradicting the simplicity of $M_{3}$. The Peirce decomposition is a vector-space decomposition with a multiplication rule, not a product of algebras.</p>
+<p><strong>The embedding.</strong> Choose a basis of $\mathbb{C}^{3}$ adapted to $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$. In this basis the map</p>
+<p>$$
+\iota:M_{2}(\mathbb{C})\longrightarrow M_{3}(\mathbb{C}),\qquad
+B\longmapsto\begin{pmatrix}B&0\\0&0\end{pmatrix},
+$$</p>
+<p>is an injective algebra homomorphism with image $PMP$, and it is unital onto the corner: $\iota(I_{2})=P$. It is not unital into $M_{3}$, because $\iota(I_{2})=P\neq I$. The unit of the ambient algebra is not the unit of the corner.</p>
+<p><strong>The complement as a quotient direction.</strong> The projection $Q$ is the unit of the complement; the mixed corners are the off-diagonal blocks that connect the two units. The element $Q$ is the image of the identity under the other corner embedding $\mathbb{C}\to M_{3}$, $1\mapsto Q$. The two corner embeddings are the two diagonal blocks of the coarse Peirce decomposition.</p>
+<p><strong>Worked example of the four blocks.</strong> With $P=P_{0}=\operatorname{diag}(1,1,0)$ and $A$ as in §<em>The Inherited Trace and Determinant</em>,</p>
+<p>$$
+PAP=\begin{pmatrix}1&2&0\\4&5&0\\0&0&0\end{pmatrix},\qquad
+PAQ=\begin{pmatrix}0&0&3\\0&0&6\\0&0&0\end{pmatrix},
+$$</p>
+<p>$$
+QAP=\begin{pmatrix}0&0&0\\0&0&0\\7&8&0\end{pmatrix},\qquad
+QAQ=\begin{pmatrix}0&0&0\\0&0&0\\0&0&9\end{pmatrix}=9Q.
+$$</p>
+<p>The four blocks have dimensions $4,2,2,1$; the corner $PMP$ is the $M_{2}$ corner, and the corner $QMQ$ is the line $\mathbb{C}Q$. The element $A$ is the sum of the four blocks.</p>
+<h2 id="the-non-hermitian-idempotent">The Non-Hermitian Idempotent</h2>
+<p><strong>A non-Hermitian idempotent gives the same algebra with a different unit and a different star.</strong></p>
+<p>Take</p>
+<p>$$
+P=\begin{pmatrix}1&0&-1\\0&1&0\\0&0&0\end{pmatrix},
+\qquad
+P^{2}=P,\qquad \operatorname{rank}P=2,\qquad P^{*}\neq P.
+$$</p>
+<p>Its image is $\operatorname{span}\{e_{0},e_{1}\}$ and its kernel is $\operatorname{span}\{e_{0}+e_{2}\}$, so $\mathbb{C}^{3}=\operatorname{im}P\oplus\ker P$. In the adapted basis $(e_{0},e_{1},e_{0}+e_{2})$ the idempotent is $\operatorname{diag}(1,1,0)$, and the corner is again a copy of $M_{2}(\mathbb{C})$.</p>
+<p><strong>The compression of the example.</strong> With $A$ as above,</p>
+<p>$$
+PAP=\begin{pmatrix}-6&-6&6\\4&5&-4\\0&0&0\end{pmatrix}.
+$$</p>
+<p>In the basis $(e_{0},e_{1})$ of $\operatorname{im}P$ the compressed matrix is</p>
+<p>$$
+\begin{pmatrix}-6&-6\\4&5\end{pmatrix},
+\qquad
+\det_{P}(PAP)=-30+24=-6,
+\qquad
+\operatorname{tr}_{P}(PAP)=-1.
+$$</p>
+<p>The ambient trace of $PAP$ is also $-1$, and the ambient determinant of $PAP$ is $0$ because the third row vanishes. The compressed determinant is $-6$, nonzero: the compression is invertible in the corner.</p>
+<p><strong>The star does not preserve the corner.</strong> The star of $P$ is</p>
+<p>$$
+P^{*}=\begin{pmatrix}1&0&0\\0&1&0\\-1&0&0\end{pmatrix},
+$$</p>
+<p>which has a nonzero third row and therefore does not lie in $PMP$. The corner of $P$ and the corner of $P^{*}$ are two different four-dimensional subspaces of $M_{3}$; the star exchanges them. The algebra structure is unchanged, but the $*$-structure is not defined on the corner of $P$.</p>
+<p><strong>The Hermitian idempotent next to it.</strong> The Hermitian idempotent with the same image is the orthogonal projection onto $\operatorname{span}\{e_{0},e_{1}\}$, namely $P_{0}=\operatorname{diag}(1,1,0)$. The corner of $P_{0}$ is the upper-left block; the corner of $P$ is a different subspace, but the two corners are isomorphic as algebras and the isomorphism is the change of basis from the adapted basis of $P$ to the standard one. The Hermitian corner is the one that carries the star.</p>
+<h2 id="summary">Summary</h2>
+<p>For a rank-two idempotent $P$ of $M_{3}(\mathbb{C})$, the compression</p>
+<p>$$
+\boxed{\;P M_{3}(\mathbb{C})P\cong M_{2}(\mathbb{C}),\qquad \text{unit }P,\qquad \dim_{\mathbb{C}}=4\;}
+$$</p>
+<p>is a unital algebra, with inherited trace $\operatorname{tr}_{P}(PAP)=\operatorname{tr}(PA)$ and determinant $\det_{P}(PAP)=\det(PAP|_{\operatorname{im}P})$. The determinant of the compression is not the restriction of the ambient determinant: the example $A$ of determinant $0$ has a compression of determinant $-3$ (or $-6$ for the non-Hermitian idempotent).</p>
+<p>The corner is a unital $*$-algebra exactly when $P=P^{*}$. For a non-Hermitian idempotent the star carries $PMP$ to $P^{*}MP^{*}$, and the involution does not descend to the corner. The complement is $\mathbb{C}(I-P)$, of dimension one, and the four coarse corners have dimensions $4+2+2+1$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for the rank-two corner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algebra</td>
+<td>$M_{2}(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>Unit</td>
+<td>$P$</td>
+</tr>
+<tr>
+<td>Complex dimension</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Inherited trace</td>
+<td>$\operatorname{tr}(PAP)=\operatorname{tr}(PA)$</td>
+</tr>
+<tr>
+<td>Inherited determinant</td>
+<td>$\det(PAP|_{\operatorname{im}P})$</td>
+</tr>
+<tr>
+<td>Unital $*$-algebra</td>
+<td>iff $P=P^{*}$</td>
+</tr>
+<tr>
+<td>Complement</td>
+<td>$\mathbb{C}(I-P)$, dimension $1$</td>
+</tr>
+<tr>
+<td>Coarse corners</td>
+<td>$4+2+2+1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>a rank-two idempotent</td>
+</tr>
+<tr>
+<td>$Q=I-P$</td>
+<td>the complementary rank-one idempotent</td>
+</tr>
+<tr>
+<td>$PMP$</td>
+<td>the compression, the $M_{2}$ corner</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}_{P}$</td>
+<td>the inherited trace, the restriction of the ambient trace</td>
+</tr>
+<tr>
+<td>$\det_{P}$</td>
+<td>the determinant of the compressed endomorphism</td>
+</tr>
+<tr>
+<td>$P^{*}$</td>
+<td>the conjugate transpose of $P$</td>
+</tr>
+<tr>
+<td>$\iota:M_{2}\to M_{3}$</td>
+<td>the block embedding with image $PMP$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-of-m3c.html">The Peirce Decomposition of $M_3(\mathbb{C})$</a>, for the coarse split and the Peirce lines.</li>
+<li><a href="the-rank-two-split-of-m3c.html">The Rank-Two Split</a>, for the four corners $4+2+2+1$ and the mass block.</li>
+<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>, for the trace, the determinant and the unit group.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m3c.html">The Involution and the Hermitian Structure</a>, for the star and the positive definite form.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the biquaternion algebra as $M_{2}(\mathbb{C})$.</li>
+<li><a href="matrix-algebras.html">Matrix Algebras</a>, for the algebra $M_{2}(\mathbb{C})$ and its matrix units.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

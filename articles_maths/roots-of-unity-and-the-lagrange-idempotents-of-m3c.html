@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roots of Unity and the Lagrange Idempotents — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="roots-of-unity-and-the-lagrange-idempotents"><strong>Roots of Unity and the Lagrange Idempotents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A single matrix $H$ with $H^{3}=I$ and three distinct eigenvalues carries the whole frame of $M_{3}(\mathbb{C})$: its spectral projectors are three idempotents, its eigenvalues are the three cube roots of unity, and the identity $H=\sum_{k}\zeta_{k}P_{k}$ is the spectral theorem read in the algebra. This article states that construction, proves that the projectors are idempotent, orthogonal, complete and of rank one, reads the $\mathbb{Z}/3$ grading that $H$ defines, and counts the roots.</p>
+<p>The construction is <strong>root-first</strong>. One matrix $H$ is the primitive datum. The Lagrange formula is a polynomial in $H$, so every idempotent is a polynomial in $H$; no second root, no transverse element and no pair of roots enters. The case $n=2$ is the order-two case of the same formula: there the roots are $\pm1$ and the two idempotents are $(I\pm H)/2$, which is the biquaternion frame. The case $n=3$ needs the three cube roots and one $H$.</p>
+<p>The article assumes the algebra $M_{3}(\mathbb{C})$, its basis $E_{ij}$ and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$ of <em>The Matrix Algebra $M_{3}(\mathbb{C})$</em>. The Peirce decomposition built on the idempotents is <em>The Peirce Decomposition</em>; the gauge of the off-diagonal units is <em>The Frame, the Simple Nilpotents and the Gauge</em>; the spectral theory at a repeated root is <em>The Cubic, the Discriminant and the Spectral Strata</em>.</p>
+<h2 id="the-cube-roots-of-unity">The Cube Roots of Unity</h2>
+<p><strong>The three cube roots of unity are $1,\omega,\omega^{2}$, and they sum to zero.</strong></p>
+<p>Let</p>
+<p>$$
+\omega=e^{2\pi i/3}=-\frac{1}{2}+\frac{\sqrt3}{2}i .
+$$</p>
+<p>Then $\omega^{3}=1$, $\omega\neq1$, $\omega^{2}=\bar\omega$, and the three roots of $x^{3}-1$ are $1,\omega,\omega^{2}$. The factorisation</p>
+<p>$$
+x^{3}-1=(x-1)(x^{2}+x+1)
+$$</p>
+<p>gives $1+\omega+\omega^{2}=0$ and $\omega^{2}=-1-\omega$. The roots form the cyclic group $\mu_{3}\cong\mathbb{Z}/3$ under multiplication, generated by $\omega$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Root</th>
+<th>Value</th>
+<th>Real and imaginary parts</th>
+<th>Minimal polynomial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\zeta_{1}$</td>
+<td>$1$</td>
+<td>$1$, $0$</td>
+<td>$x-1$</td>
+</tr>
+<tr>
+<td>$\zeta_{2}$</td>
+<td>$\omega$</td>
+<td>$-\tfrac12$, $\tfrac{\sqrt3}{2}$</td>
+<td>$x^{2}+x+1$</td>
+</tr>
+<tr>
+<td>$\zeta_{3}$</td>
+<td>$\omega^{2}$</td>
+<td>$-\tfrac12$, $-\tfrac{\sqrt3}{2}$</td>
+<td>$x^{2}+x+1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The index is read modulo three, $\zeta_{k+3}=\zeta_{k}$. The notation $\zeta_{k}=\omega^{k-1}$ is used throughout the $M_{3}(\mathbb{C})$ category, and the three roots are ordered by the argument in $[0,2\pi)$.</p>
+<p><strong>The roots are the values of the character of $\mathbb{Z}/3$.</strong> For $r\in\mathbb{Z}/3$, the character is $\chi_{r}(k)=\omega^{rk}$. The orthogonality relations</p>
+<p>$$
+\frac{1}{3}\sum_{k=1}^{3}\omega^{rk}=\delta_{r0},\qquad
+\frac{1}{3}\sum_{r=0}^{2}\omega^{rk}=\delta_{k0}
+$$</p>
+<p>are the discrete Fourier transform on the group, and they are the scalar form of the Lagrange formula below.</p>
+<h2 id="the-root-and-its-spectrum">The Root and Its Spectrum</h2>
+<p><strong>Definition.</strong> A <strong>root of unity of order three</strong> in $M_{3}(\mathbb{C})$ is a matrix $H$ with</p>
+<p>$$
+H^{3}=I
+$$</p>
+<p>and with three distinct eigenvalues. The second condition is the <strong>simple spectrum</strong> condition.</p>
+<p><strong>Proposition.</strong> Let $H^{3}=I$. Then $H$ is diagonalisable, its eigenvalues lie in $\{1,\omega,\omega^{2}\}$, and the following are equivalent:</p>
+<ul>
+<li>$H$ has three distinct eigenvalues;</li>
+<li>the characteristic polynomial of $H$ is $x^{3}-1$;</li>
+<li>the minimal polynomial of $H$ is $x^{3}-1$;</li>
+<li>$\operatorname{tr}H=0$ and $\operatorname{tr}H^{2}=0$ and $\det H=1$.</li>
+</ul>
+<p><strong>Proof.</strong> The polynomial $x^{3}-1$ has the three distinct roots $1,\omega,\omega^{2}$, so it annihilates $H$ and has no repeated factor. The minimal polynomial divides $x^{3}-1$, hence is a product of distinct linear factors, and $H$ is diagonalisable with spectrum contained in the three roots. If the spectrum is the full set, the characteristic polynomial is $(x-1)(x-\omega)(x-\omega^{2})=x^{3}-1$, and the minimal polynomial is the same, since no proper factor vanishes on all three eigenvalues. Conversely $x^{3}-1$ as characteristic polynomial gives three distinct roots. The trace of $H$ is the sum of the roots, $1+\omega+\omega^{2}=0$; the trace of $H^{2}$ is the sum of their squares, $1+\omega^{2}+\omega^{4}=1+\omega^{2}+\omega=0$; the determinant is the product, $1$. Conversely, if the spectrum has a repeated value, the three numbers $\operatorname{tr}H$, $\operatorname{tr}H^{2}$, $\det H$ are the elementary symmetric functions of a multiset of size three drawn from three values with a repetition, and the triple $(0,0,1)$ forces the full set: the sum of the eigenvalues is $0$, so the multiset is either $\{1,\omega,\omega^{2}\}$ or a triple of one value; the latter has $\operatorname{tr}H^{2}=3\zeta^{2}\neq0$. So the three conditions are equivalent.</p>
+<p><strong>Corollary.</strong> For a root with simple spectrum,</p>
+<p>$$
+H^{2}+H+I=3P_{1},
+$$</p>
+<p>where $P_{1}$ is the projector onto the eigenvalue $1$.</p>
+<p><strong>Proof.</strong> On the eigenvector with eigenvalue $1$ the left side is $3$; on the eigenvectors with eigenvalues $\omega$ and $\omega^{2}$ it is $\omega^{2}+\omega+1=0$ and $\omega^{4}+\omega^{2}+1=0$. The right side has the same values on the three eigenvectors, and the eigenvectors form a basis.</p>
+<p><strong>The spectral decomposition is a polynomial identity.</strong> The three values $1,\omega,\omega^{2}$ are distinct, so a polynomial of degree at most two is determined by its values on them. This is the only fact the Lagrange formula uses.</p>
+<h2 id="the-lagrange-projectors">The Lagrange Projectors</h2>
+<p><strong>Definition.</strong> Let $H$ be a root with simple spectrum. For $k=1,2,3$ put</p>
+<p>$$
+L_{k}(x)=\prod_{l\neq k}\frac{x-\zeta_{l}}{\zeta_{k}-\zeta_{l}}
+\in\mathbb{C}[x],
+\qquad
+P_{k}=L_{k}(H).
+$$</p>
+<p>The polynomial $L_{k}$ has degree two and satisfies $L_{k}(\zeta_{l})=\delta_{kl}$. The matrix $P_{k}$ is the <strong>Lagrange projector</strong> of $H$ at $\zeta_{k}$.</p>
+<p><strong>Theorem (the Lagrange idempotents).</strong> Let $H$ be a root with simple spectrum and let $P_{1},P_{2},P_{3}$ be its Lagrange projectors. Then:</p>
+<ol>
+<li>$P_{k}^{2}=P_{k}$ and $P_{k}P_{l}=0$ for $k\neq l$;</li>
+<li>$P_{1}+P_{2}+P_{3}=I$;</li>
+<li>$HP_{k}=P_{k}H=\zeta_{k}P_{k}$;</li>
+<li>$H=\sum_{k=1}^{3}\zeta_{k}P_{k}$;</li>
+<li>$\operatorname{rank}P_{k}=1$ and $\operatorname{tr}P_{k}=1$;</li>
+<li>$P_{k}$ is the projection onto $\ker(H-\zeta_{k}I)$ along the direct sum of the other two eigenspaces.</li>
+</ol>
+<p><strong>Proof.</strong> Let $v_{0},v_{1},v_{2}$ be eigenvectors of $H$ with eigenvalues $\zeta_{1},\zeta_{2},\zeta_{3}$. They form a basis because the spectrum is simple. By the spectral mapping theorem for a diagonalisable matrix, for every polynomial $f$ the operator $f(H)$ acts on $v_{l}$ by the scalar $f(\zeta_{l})$:</p>
+<p>$$
+f(H)v_{l}=f(\zeta_{l})v_{l}.
+$$</p>
+<p>This is proved by writing $H=U\operatorname{diag}(\zeta_{1},\zeta_{2},\zeta_{3})U^{-1}$ and applying $f$ to the diagonal matrix entry by entry. Applying it to $f=L_{k}$ gives $P_{k}v_{l}=\delta_{kl}v_{l}$, which is statement 6.</p>
+<p>For statement 1, $P_{k}P_{l}$ acts on $v_{m}$ by $L_{k}(\zeta_{m})L_{l}(\zeta_{m})=\delta_{km}\delta_{lm}$, which is the action of $\delta_{kl}P_{k}$; two operators that agree on a basis are equal. For statement 2, $\sum_{k}L_{k}(\zeta_{m})=1$ for each $m$, so $\sum_{k}P_{k}$ acts as the identity on a basis. For statement 3, $L_{k}(x)x\equiv\zeta_{k}L_{k}(x)$ on the three values of $x$: both sides vanish at the other two roots and equal $\zeta_{k}$ at $\zeta_{k}$; hence $HP_{k}=\zeta_{k}P_{k}$, and $P_{k}H=\zeta_{k}P_{k}$ because $P_{k}$ is a polynomial in $H$. Statement 4 follows by summing statement 3 over $k$ and using statement 2. Statement 5: $P_{k}$ is the projector onto a one-dimensional eigenspace, so its rank is one; the trace of a rank-one idempotent is one, or directly from the eigenvalues $1,0,0$ of $P_{k}$.</p>
+<p><strong>Corollary (completeness of the construction).</strong> The map $H\mapsto(P_{1},P_{2},P_{3})$ is a bijection, up to the order of the eigenvalues, between roots with simple spectrum and complete orthogonal families of three primitive idempotents of $M_{3}(\mathbb{C})$ whose sum is $I$. The inverse is $H=\sum_{k}\zeta_{k}P_{k}$.</p>
+<p><strong>Proof.</strong> The direct map is the theorem. If $P_{1},P_{2},P_{3}$ are complete, orthogonal and primitive, put $H=\sum_{k}\zeta_{k}P_{k}$; then $H^{3}=\sum_{k}\zeta_{k}^{3}P_{k}=\sum_{k}P_{k}=I$, and $HP_{k}=\zeta_{k}P_{k}$, so the $P_{k}$ are the spectral projectors of $H$ and the spectrum is the three distinct roots. The two constructions are inverse because the Lagrange projectors of $H$ are characterised by $P_{k}v_{l}=\delta_{kl}v_{l}$ on the eigenspaces. The order of the eigenvalues is the order of the three idempotents; a permutation of the three labels gives the same unordered family and the same $H$ only after the corresponding permutation of the roots, which is the identity on the matrix.</p>
+<p><strong>No other object is primitive.</strong> The idempotents are polynomials in $H$ of degree two. The whole frame is therefore carried by one matrix, and the phrase <em>the root</em> has a definite referent in this category. The Peirce decomposition of the next article is the decomposition of the algebra by the three $P_{k}$; it uses no further datum.</p>
+<p><strong>The explicit polynomials.</strong> The three Lagrange polynomials are</p>
+<p>$$
+L_{1}(x)=\frac{(x-\omega)(x-\omega^{2})}{(1-\omega)(1-\omega^{2})}=\frac{x^{2}+x+1}{3},
+$$</p>
+<p>because $(1-\omega)(1-\omega^{2})=1-(\omega+\omega^{2})+\omega^{3}=3$, and</p>
+<p>$$
+L_{2}(x)=\frac{(x-1)(x-\omega^{2})}{(\omega-1)(\omega-\omega^{2})},
+\qquad
+L_{3}(x)=\frac{(x-1)(x-\omega)}{(\omega^{2}-1)(\omega^{2}-\omega)} .
+$$</p>
+<p>The two denominators are the values $3\omega$ and $3\omega^{2}$ up to sign, and the resulting projectors are the ones computed explicitly in §<em>The Standard Root and the Cyclic Shift</em>.</p>
+<h2 id="the-standard-root-and-the-cyclic-shift">The Standard Root and the Cyclic Shift</h2>
+<p><strong>The standard root is diagonal.</strong> Take</p>
+<p>$$
+H_{0}=\operatorname{diag}(1,\omega,\omega^{2})=
+\begin{pmatrix}1&0&0\\0&\omega&0\\0&0&\omega^{2}\end{pmatrix}.
+$$</p>
+<p>Its Lagrange projectors are the coordinate idempotents</p>
+<p>$$
+P_{1}=E_{11},\qquad P_{2}=E_{22},\qquad P_{3}=E_{33},
+$$</p>
+<p>because $E_{kk}$ acts as $\delta_{kl}$ on the standard basis and the standard basis is the eigenbasis. The spectral identity is the tautology $H_{0}=1\cdot E_{11}+\omega E_{22}+\omega^{2}E_{33}$. This root is the one in which the Peirce decomposition is the ordinary block decomposition of a matrix.</p>
+<p><strong>A non-diagonal root: the cyclic shift.</strong> Take</p>
+<p>$$
+S=\begin{pmatrix}0&0&1\\1&0&0\\0&1&0\end{pmatrix}.
+$$</p>
+<p>It acts by $Se_{1}=e_{2}$, $Se_{2}=e_{3}$, $Se_{3}=e_{1}$. Direct multiplication gives</p>
+<p>$$
+S^{2}=\begin{pmatrix}0&1&0\\0&0&1\\1&0&0\end{pmatrix},
+\qquad
+S^{3}=I,
+\qquad
+S^{2}+S+I=\begin{pmatrix}1&1&1\\1&1&1\\1&1&1\end{pmatrix}.
+$$</p>
+<p>The trace of $S$ is $0$, the trace of $S^{2}$ is $0$, and the determinant of $S$ is $1$, so the characteristic polynomial is $x^{3}-1$ and the spectrum is simple. The Lagrange projectors are</p>
+<p>$$
+P_{1}=\frac{1}{3}(I+S+S^{2})=\frac{1}{3}\begin{pmatrix}1&1&1\\1&1&1\\1&1&1\end{pmatrix},
+$$</p>
+<p>$$
+P_{2}=\frac{1}{3}(I+\omega^{2}S+\omega S^{2})
+=\frac{1}{3}\begin{pmatrix}1&\omega&\omega^{2}\\\omega^{2}&1&\omega\\\omega&\omega^{2}&1\end{pmatrix},
+$$</p>
+<p>$$
+P_{3}=\frac{1}{3}(I+\omega S+\omega^{2}S^{2})
+=\frac{1}{3}\begin{pmatrix}1&\omega^{2}&\omega\\\omega&1&\omega^{2}\\\omega^{2}&\omega&1\end{pmatrix}.
+$$</p>
+<p>The three matrices are idempotent, pairwise orthogonal and sum to $I$; each has trace $1$ and rank $1$; each is Hermitian, because $S$ is unitary and the projectors are polynomials in $S$. The spectral identity is checked on the first row:</p>
+<p>$$
+P_{1}+\omega P_{2}+\omega^{2}P_{3}
+=\frac{1}{3}\begin{pmatrix}3&1+\omega^{2}+\omega&1+\omega+\omega^{2}\\ \dots&\dots&\dots\\ \dots&\dots&\dots\end{pmatrix}
+=S,
+$$</p>
+<p>the off-diagonal entries vanishing by $1+\omega+\omega^{2}=0$ and the diagonal entries giving $1$ in the first position; the other rows follow by the cyclic symmetry of $S$ and of the formulas. This is the worked example of the article: the idempotents of a non-diagonal root are not the coordinate idempotents, but they are explicit $3\times3$ matrices with the numbers $\tfrac13$ and $\tfrac{\sqrt3}{6}$.</p>
+<p><strong>The two roots are conjugate.</strong> $S$ is diagonalisable with the same simple spectrum as $H_{0}$, so there is $g\in GL_{3}(\mathbb{C})$ with $S=gH_{0}g^{-1}$; then the projectors of $S$ are $gE_{kk}g^{-1}$. The explicit matrices above are this conjugation written in the standard basis. The root set is a single conjugacy class, a fact proved in §<em>The Variety of Roots</em>.</p>
+<h2 id="the-math205-grading">The $\mathbb{Z}/3$ Grading</h2>
+<p><strong>The root grades the algebra by the difference of its eigenvalues.</strong></p>
+<p><strong>Definition.</strong> For $A\in M_{3}(\mathbb{C})$ and $r\in\mathbb{Z}/3$, say that $A$ has <strong>degree $r$</strong> when</p>
+<p>$$
+HAH^{-1}=\omega^{r}A .
+$$</p>
+<p>Write $M_{3}^{(r)}$ for the set of elements of degree $r$.</p>
+<p><strong>Proposition.</strong> The sets $M_{3}^{(r)}$ are linear subspaces, the algebra is their direct sum,</p>
+<p>$$
+M_{3}(\mathbb{C})=\bigoplus_{r\in\mathbb{Z}/3}M_{3}^{(r)},
+$$</p>
+<p>and the product respects the degree:</p>
+<p>$$
+M_{3}^{(r)}M_{3}^{(s)}\subseteq M_{3}^{(r+s)} .
+$$</p>
+<p><strong>Proof.</strong> The map $\operatorname{ad}_{H}(A)=[H,A]=HA-AH$ is linear. The identity $HAH^{-1}=\omega^{r}A$ is equivalent to $HA=\omega^{r}AH$, that is $\operatorname{ad}_{H}(A)=(\omega^{r}-1)AH$; more usefully, in the eigenbasis of $H$ the operator $\operatorname{ad}_{H}$ is diagonal. Indeed, for $E_{kl}$,</p>
+<p>$$
+\operatorname{ad}_{H}(E_{kl})=(\zeta_{k}-\zeta_{l})E_{kl},
+$$</p>
+<p>and $\zeta_{k}-\zeta_{l}\in\{0,\pm(1-\omega),\pm(1-\omega^{2}),\pm(\omega-\omega^{2})\}$. Since $\zeta_{k}/\zeta_{l}=\omega^{k-l}$ and</p>
+<p>$$
+\zeta_{k}-\zeta_{l}=\zeta_{l}(\omega^{k-l}-1),
+$$</p>
+<p>the eigenvalue is zero exactly when $k=l$ and is a nonzero multiple of $\omega^{r}-1$ otherwise. The eigenspace for the factor $\omega^{r}$ is therefore the span of the $E_{kl}$ with $k-l\equiv r\pmod 3$. The nine matrix units split into the three classes</p>
+<p>$$
+M_{3}^{(0)}=\operatorname{span}\{E_{11},E_{22},E_{33}\},\qquad
+M_{3}^{(1)}=\operatorname{span}\{E_{21},E_{32},E_{13}\},\qquad
+M_{3}^{(2)}=\operatorname{span}\{E_{12},E_{23},E_{31}\},
+$$</p>
+<p>each of dimension three, and they sum directly to the nine-dimensional algebra. The product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$ gives $E_{ij}E_{jl}=E_{il}$, whose degree is $(i-j)+(j-l)=i-l$, so the product of a degree-$r$ and a degree-$s$ element has degree $r+s$; the general statement follows by bilinearity.</p>
+<p><strong>Corollary.</strong> $M_{3}^{(0)}$ is the diagonal subalgebra $\mathbb{C}^{3}$, of dimension three. The degree-one and degree-two parts are three-dimensional nilpotent subspaces: every element of $M_{3}^{(1)}$ or $M_{3}^{(2)}$ is nilpotent of index at most three.</p>
+<p><strong>Proof.</strong> The diagonal matrices are exactly the elements commuting with $H$, which is the degree-zero condition. An element of degree $r\neq0$ is a strictly upper or lower triangular matrix in the eigenbasis, with zero diagonal; its third power vanishes because it is strictly triangular in a three-dimensional space. The dimension is the number of matrix units in the class, three.</p>
+<p><strong>The grading is not a $\mathbb{Z}$-grading.</strong> The exponents are read modulo three, and $M_{3}^{(1)}M_{3}^{(2)}\subseteq M_{3}^{(0)}$ while $M_{3}^{(2)}M_{3}^{(1)}\subseteq M_{3}^{(0)}$; the two products are not the same in general, and the algebra is not graded-commutative. The grading is the algebraic shadow of the cyclic order of the three eigenvalues; it is the $\mathbb{Z}/3$ of the root, not a second structure.</p>
+<p><strong>The trace is homogeneous of degree zero.</strong> $\operatorname{tr}(M_{3}^{(r)})=0$ for $r\neq0$, because the elements of those pieces are strictly triangular; $\operatorname{tr}$ is nonzero on $M_{3}^{(0)}$ and identifies it with $\mathbb{C}$ up to the scalar $\tfrac13$. The graded pieces are the eigenspaces of $\operatorname{ad}_{H}$; their dimensions $3,3,3$ are the multiplicities of the three characters of $\mathbb{Z}/3$ in the adjoint representation of the diagonal torus.</p>
+<h2 id="the-variety-of-roots">The Variety of Roots</h2>
+<p><strong>The roots with simple spectrum form one conjugacy class of complex dimension six.</strong></p>
+<p><strong>Theorem.</strong> Let</p>
+<p>$$
+X=\{H\in M_{3}(\mathbb{C}):H^{3}=I,\ \text{the spectrum is simple}\}.
+$$</p>
+<p>Then $X$ is a single orbit of $GL_{3}(\mathbb{C})$ under conjugation, $X\cong GL_{3}(\mathbb{C})/T$ where $T$ is the diagonal torus, and</p>
+<p>$$
+\dim_{\mathbb{C}}X=9-3=6 .
+$$</p>
+<p>In the projective group, $X\cong PGL_{3}(\mathbb{C})/T$ and</p>
+<p>$$
+\dim_{\mathbb{C}}X=8-2=6 .
+$$</p>
+<p><strong>Proof.</strong> Two diagonalisable matrices with the same spectrum are conjugate: choose bases of eigenvectors and match the eigenvalues. Every root in $X$ has spectrum $\{1,\omega,\omega^{2}\}$, so $X$ is the orbit of $H_{0}=\operatorname{diag}(1,\omega,\omega^{2})$. The stabiliser of $H_{0}$ is the set of invertible matrices commuting with $H_{0}$; because the three eigenvalues are distinct, a commuting matrix is diagonal, so the stabiliser is the torus $T$ of invertible diagonal matrices, of dimension three. The orbit dimension is $\dim GL_{3}-\dim T=9-3=6$. In $PGL_{3}=GL_{3}/\mathbb{C}^{\times}I$, the stabiliser is the image of $T$, of dimension $3-1=2$, and the orbit dimension is $8-2=6$. The orbit is a smooth quasi-affine variety because it is a homogeneous space of an algebraic group.</p>
+<p><strong>The root set and the flag variety.</strong> The root $H$ determines its three eigenspaces $\ell_{1},\ell_{2},\ell_{3}$, and the unordered triple $\{\ell_{1},\ell_{2},\ell_{3}\}$ is a <strong>decomposition</strong> of $\mathbb{C}^{3}$ into three lines. The map</p>
+<p>$$
+X\longrightarrow U,\qquad H\longmapsto\{\ell_{1},\ell_{2},\ell_{3}\},
+$$</p>
+<p>is surjective onto the set $U$ of such decompositions. Its fibre is the set of assignments of the three distinct eigenvalues to the three lines, a torsor under the symmetric group $S_{3}$, of cardinality $3!=6$. So $X\to U$ is a $6$-fold covering and $\dim U=6$ as well. The space $U$ is $PGL_{3}/N(T)$, where $N(T)$ is the normaliser of the torus, of dimension $8-2=6$.</p>
+<p><strong>The flag variety is a further quotient.</strong> A decomposition into three ordered lines determines the flag</p>
+<p>$$
+0\subset\ell_{1}\subset\ell_{1}\oplus\ell_{2}\subset\mathbb{C}^{3},
+$$</p>
+<p>so there is a map $U\to PGL_{3}/B$, where $B$ is the Borel subgroup of upper triangular matrices. The flag variety has dimension</p>
+<p>$$
+\dim PGL_{3}/B=8-5=3,
+$$</p>
+<p>and the fibre of $U\to PGL_{3}/B$ is $B/N(T)$, of dimension $5-2=3$. The factor $3!$ is the fibre of $X\to U$, the ordering of the three eigenlines; it is not a finite cover of the flag variety. A finite cover of a three-dimensional variety is three-dimensional, whereas $X$ is six-dimensional. The two counts $6=3+3$ and $6=3!$ are different readings of the same six: three dimensions for the flag and three for the choice of the three lines inside the flag, against six orderings of the three labels.</p>
+<p><strong>The root set is not the flag variety.</strong> The root carries the three lines and their labels; the flag carries the first line and the first two lines, and forgets the splitting of the plane into two lines and the position of the third line inside the quotient. The Peirce decomposition of the next article is the decomposition by the three lines; the flag is its quotient, not its replacement.</p>
+<h2 id="the-order-two-case">The Order-Two Case</h2>
+<p><strong>The same Lagrange formula with the two roots $\pm1$ gives the biquaternion frame.</strong></p>
+<p>Take $n=2$ and a matrix $H\in M_{2}(\mathbb{C})$ with $H^{2}=I$ and simple spectrum $\{1,-1\}$. The Lagrange polynomials are</p>
+<p>$$
+L_{+}(x)=\frac{x+1}{2},\qquad L_{-}(x)=\frac{x-1}{-2},
+$$</p>
+<p>and the projectors are</p>
+<p>$$
+P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2}.
+$$</p>
+<p>They are idempotent, orthogonal and complete, $H=P_{+}-P_{-}$, and each has rank one. The algebra $M_{2}(\mathbb{C})$ is the biquaternion algebra $\mathbb{B}$, and this is its frame of two idempotents; the construction is the order-two case of the formula of §<em>The Lagrange Projectors</em>, with the two roots of $x^{2}-1$.</p>
+<p><strong>The contrast with $n=3$.</strong> For $n=3$ the single root $H$ produces three idempotents, because the polynomial $x^{3}-1$ has three roots. No second root is needed, and none is introduced here. The biquaternion frame of <em>The Peirce Decomposition</em> uses a second root only to fix the relative scale of its two mixed units; that is a feature of the two-dimensional carrier, not a primitive datum of the $n=3$ construction. In $M_{3}(\mathbb{C})$ the three idempotents are already complete, and the only remaining freedom is the gauge of the off-diagonal units, treated in <em>The Frame, the Simple Nilpotents and the Gauge</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>A root $H$ with $H^{3}=I$ and simple spectrum determines three Lagrange projectors</p>
+<p>$$
+P_{k}=\prod_{l\neq k}\frac{H-\zeta_{l}I}{\zeta_{k}-\zeta_{l}},\qquad k=1,2,3,
+$$</p>
+<p>which are idempotent, pairwise orthogonal, complete, of rank one, and satisfy $HP_{k}=\zeta_{k}P_{k}$ and</p>
+<p>$$
+\boxed{\;H=\sum_{k=1}^{3}\zeta_{k}P_{k},\qquad P_{k}P_{l}=\delta_{kl}P_{k},\qquad \sum_{k=1}^{3}P_{k}=I.\;}
+$$</p>
+<p>The construction is root-first: every $P_{k}$ is a polynomial in $H$, and no second object is primitive. The algebra splits into the three eigenspaces of $\operatorname{ad}_{H}$,</p>
+<p>$$
+M_{3}(\mathbb{C})=M_{3}^{(0)}\oplus M_{3}^{(1)}\oplus M_{3}^{(2)},\qquad
+M_{3}^{(r)}M_{3}^{(s)}\subseteq M_{3}^{(r+s)},
+$$</p>
+<p>with each graded piece of dimension three; in the eigenbasis, $E_{kl}$ has degree $k-l$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_{3}(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of idempotents from one root</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Rank of each</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>Spectrum of $H$</td>
+<td>$\{1,\omega,\omega^{2}\}$</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{C}}$ of the root orbit</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{C}}$ of the gauge torus</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\dim_{\mathbb{C}}$ of the full flag variety</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the space of unordered eigenline decompositions, and the flag variety is a further quotient with three-dimensional fibres. The order-two case is the biquaternion frame, with two idempotents $(I\pm H)/2$; the order-three case is the frame of this category.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\omega$</td>
+<td>$e^{2\pi i/3}$, a primitive cube root of unity</td>
+</tr>
+<tr>
+<td>$\zeta_{k}$</td>
+<td>$\omega^{k}$, $k=1,2,3$, the three cube roots</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>a root of unity of order three, $H^{3}=I$ with simple spectrum</td>
+</tr>
+<tr>
+<td>$P_{k}=L_{k}(H)$</td>
+<td>the Lagrange projector at $\zeta_{k}$</td>
+</tr>
+<tr>
+<td>$L_{k}(x)$</td>
+<td>$\prod_{l\neq k}(x-\zeta_{l})/(\zeta_{k}-\zeta_{l})$</td>
+</tr>
+<tr>
+<td>$M_{3}^{(r)}$</td>
+<td>the degree-$r$ part of the $\mathbb{Z}/3$ grading, $HAH^{-1}=\omega^{r}A$</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>the diagonal torus of $GL_{3}(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Borel subgroup of upper triangular matrices</td>
+</tr>
+<tr>
+<td>$X$</td>
+<td>the set of roots with simple spectrum</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>the set of unordered decompositions of $\mathbb{C}^{3}$ into three lines</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-matrix-algebra-m3c.html">The Matrix Algebra $M_{3}(\mathbb{C})$</a>, for the algebra, its matrix units, its trace and its determinant.</li>
+<li><a href="the-peirce-decomposition-of-m3c.html">The Peirce Decomposition</a>, for the decomposition of the algebra by the three Lagrange idempotents.</li>
+<li><a href="the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html">The Cubic, the Discriminant and the Spectral Strata</a>, for the characteristic cubic, the discriminant and the degeneration of the projectors at a repeated root.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the order-two case and the biquaternion frame.</li>
+<li><a href="eigenvalues-and-diagonalisation.html">Eigenvalues and Diagonalisation</a>, for the spectral theorem for diagonalisable matrices.</li>
+<li><a href="interpolation-theory.html">Interpolation Theory</a>, for the Lagrange interpolation formula in one variable.</li>
+<li><a href="flag-manifolds.html">Flag Manifolds</a>, for the flag variety, its dimension and its homogeneous description.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

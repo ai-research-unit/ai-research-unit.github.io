@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $M_2\oplus M_3$ Corner — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-corner"><strong>The $M_2\oplus M_3$ Corner</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A rank-two idempotent $P$ and its complement $Q=I-P$ cut $M_5(\mathbb{C})$ into four corners, and the two diagonal corners are full matrix algebras:</p>
+<p>$$
+M_5(\mathbb{C})\supset PM_5P\oplus QM_5Q\cong M_2(\mathbb{C})\oplus M_3(\mathbb{C}).
+$$</p>
+<p>The inclusion is the <strong>recursion</strong> $5=2+3$: the algebra of the five-dimensional space contains the algebra of a two-dimensional space and the algebra of a three-dimensional space, acting on the two summands of a direct-sum decomposition. The off-diagonal corners $PM_5Q$ and $QM_5P$ are the bimodules that couple the two summands; together with the diagonal corners they rebuild the whole algebra.</p>
+<p>The subgroup of $PGL_5$ that preserves the decomposition is $P(GL_2\times GL_3)$, and its maximal torus has dimension</p>
+<p>$$
+1+2+1=4:
+$$</p>
+<p>one parameter for the $M_2$ corner, two for the $M_3$ corner, and one for the <strong>relative scale</strong> between the two corners. The relative scale is the direction that acts on the two summands with opposite weights, $\operatorname{diag}(\mu I_2,I_3)$ modulo scalars; it is the part of the gauge that is invisible to each corner separately. The four parameters are the same torus as the gauge of the frame, read through the block structure $2+3$.</p>
+<p>The article assumes the matrix algebra of <em>The Matrix Algebra $M_5(\mathbb{C})$</em>, the Peirce decomposition of <em>The Peirce Decomposition</em>, and the gauge of <em>The Frame, the Simple Nilpotents and the Gauge</em>. The corner dimensions and the two-sided Peirce table are developed in <em>The Rank-Two Split</em>; the present article is the <strong>recursion and the group</strong>: the block embedding, the subalgebra $M_2\oplus M_3$, the two corner tori and the relative scale.</p>
+<h2 id="the-rank-two-projection">The Rank-Two Projection</h2>
+<h3 id="the-idempotent">The Idempotent</h3>
+<p><strong>Definition.</strong> A <strong>rank-two projection</strong> is an idempotent $P\in M_5(\mathbb{C})$ with $\operatorname{rank}P=2$. Its <strong>complement</strong> is $Q=I-P$, of rank $3$.</p>
+<p><strong>Proposition.</strong> The ranks add: $\operatorname{rank}P+\operatorname{rank}Q=5$. The images and kernels are in direct sum,</p>
+<p>$$
+V=\operatorname{im}P\oplus\ker P=\operatorname{im}P\oplus\operatorname{im}Q,
+\qquad
+\ker P=\operatorname{im}Q,\quad \ker Q=\operatorname{im}P,
+$$</p>
+<p>and $P$ is the projection onto $\operatorname{im}P$ along $\operatorname{im}Q$.</p>
+<p><strong>Proof.</strong> An idempotent satisfies $V=\operatorname{im}P\oplus\ker P$: every $v$ is $Pv+(v-Pv)$, the first term in the image and the second in the kernel, and the intersection is zero because $Pv=0$ and $v=Pw$ imply $v=P^2w=Pw=0$. Since $Q=I-P$, $\operatorname{im}Q=\ker P$ and $\ker Q=\operatorname{im}P$. The rank is the dimension of the image.</p>
+<p><strong>Corollary.</strong> There is a basis of $V$ in which</p>
+<p>$$
+P=\operatorname{diag}(1,1,0,0,0),\qquad Q=\operatorname{diag}(0,0,1,1,1).
+$$</p>
+<p><strong>Proof.</strong> Choose a basis of $\operatorname{im}P$ followed by a basis of $\operatorname{im}Q$; in this basis $P$ acts as the identity on the first two vectors and as zero on the last three.</p>
+<h3 id="the-block-form">The Block Form</h3>
+<p>In the basis of the corollary, every $A$ has the block form</p>
+<p>$$
+A=\begin{pmatrix}A_{11}&A_{12}\\ A_{21}&A_{22}\end{pmatrix},
+\qquad
+A_{11}\in M_2(\mathbb{C}),\quad A_{12}\in\mathbb{C}^{2\times3},\quad A_{21}\in\mathbb{C}^{3\times2},\quad A_{22}\in M_3(\mathbb{C}).
+$$</p>
+<p>The four blocks are exactly the four coarse Peirce corners:</p>
+<p>$$
+PAP=\begin{pmatrix}A_{11}&0\\0&0\end{pmatrix},\quad
+PAQ=\begin{pmatrix}0&A_{12}\\0&0\end{pmatrix},\quad
+QAP=\begin{pmatrix}0&0\\A_{21}&0\end{pmatrix},\quad
+QAQ=\begin{pmatrix}0&0\\0&A_{22}\end{pmatrix}.
+$$</p>
+<p><strong>Proposition.</strong> The block multiplication is</p>
+<p>$$
+\begin{pmatrix}A_{11}&A_{12}\\ A_{21}&A_{22}\end{pmatrix}
+\begin{pmatrix}B_{11}&B_{12}\\ B_{21}&B_{22}\end{pmatrix}
+=
+\begin{pmatrix}
+A_{11}B_{11}+A_{12}B_{21}&A_{11}B_{12}+A_{12}B_{22}\\
+A_{21}B_{11}+A_{22}B_{21}&A_{21}B_{12}+A_{22}B_{22}
+\end{pmatrix}.
+$$</p>
+<p><strong>Proof.</strong> The ordinary matrix product, written block by block; the sizes are $2+3$, so every product is defined.</p>
+<p><strong>Corollary.</strong> The diagonal blocks form the subalgebra</p>
+<p>$$
+PM_5P\oplus QM_5Q\cong M_2(\mathbb{C})\oplus M_3(\mathbb{C}),
+$$</p>
+<p>with unit $P+Q=I$. The off-diagonal blocks are not a subalgebra: their products land in the diagonal blocks.</p>
+<p><strong>Proof.</strong> The product of two block-diagonal matrices is block diagonal with the blocks multiplied; the unit is $\operatorname{diag}(I_2,I_3)=I$. The product of two off-diagonal matrices is block diagonal, as the block formula shows.</p>
+<h2 id="the-subalgebra-math48">The Subalgebra $M_2\oplus M_3$</h2>
+<h3 id="the-embedding">The Embedding</h3>
+<p><strong>Definition.</strong> The <strong>block embedding</strong> of $M_2(\mathbb{C})\oplus M_3(\mathbb{C})$ into $M_5(\mathbb{C})$ is</p>
+<p>$$
+\iota(A,B)=\begin{pmatrix}A&0\\0&B\end{pmatrix}.
+$$</p>
+<p><strong>Proposition.</strong> The map $\iota$ is an injective unital algebra homomorphism, and its image is $PM_5P\oplus QM_5Q$. The projections onto the two factors are the compressions</p>
+<p>$$
+\iota^{-1}\bigl(\iota(A,B)\bigr)=(PAP,QBQ).
+$$</p>
+<p><strong>Proof.</strong> The block product of two diagonal block matrices is the diagonal block matrix of the products, and the unit is $I$. The image is exactly the set of block-diagonal matrices, which is $PM_5P\oplus QM_5Q$. The compression of $\iota(A,B)$ to the first block is $A$ and to the second is $B$.</p>
+<p><strong>Remark.</strong> The embedding is unital in $M_5$, but the <strong>corner</strong> $PM_5P$ is not unital in $M_5$: its unit is $P$, not $I$. The map $A\mapsto\iota(A,0)$ is an algebra homomorphism onto the corner with unit $P$, and it is unital as a map into the corner. The distinction matters when the corner is used as an algebra in its own right, as in the biquaternion model.</p>
+<h3 id="the-two-corners">The Two Corners</h3>
+<p><strong>Proposition.</strong> The first corner $PM_5P$ is isomorphic to $M_2(\mathbb{C})$ and the second $QM_5Q$ to $M_3(\mathbb{C})$. The isomorphisms are the compressions $A\mapsto PAP$ and $A\mapsto QAQ$, read in the block basis; they are not canonical, because they depend on the choice of bases inside $\operatorname{im}P$ and $\operatorname{im}Q$.</p>
+<p><strong>Proof.</strong> In the block basis, $PAP=\operatorname{diag}(A_{11},0)$ and $QAQ=\operatorname{diag}(0,A_{22})$; the maps $A_{11}\mapsto\operatorname{diag}(A_{11},0)$ and $A_{22}\mapsto\operatorname{diag}(0,A_{22})$ are algebra isomorphisms onto the corners. A change of basis inside the image changes $A_{11}$ by conjugation.</p>
+<p><strong>Corollary.</strong> The algebra $M_5(\mathbb{C})$ contains a copy of $M_2(\mathbb{C})$ and a copy of $M_3(\mathbb{C})$, with commuting images, and the two copies together generate $M_2\oplus M_3$ but not $M_5$. The off-diagonal blocks are needed to generate the whole algebra.</p>
+<p><strong>Proof.</strong> The images commute because the blocks are diagonal; their sum is $M_2\oplus M_3$. A matrix with a nonzero off-diagonal block is not in the sum, so the sum is proper; the off-diagonal blocks together with the diagonal generate $M_5$ because every block matrix is a sum of its four blocks.</p>
+<h3 id="the-off-diagonal-bimodule">The Off-Diagonal Bimodule</h3>
+<p><strong>Definition.</strong> The <strong>off-diagonal block</strong> is</p>
+<p>$$
+\mathcal{M}=PM_5Q\oplus QM_5P,
+$$</p>
+<p>the sum of the row block $PM_5Q\cong\mathbb{C}^{2\times3}$ and the column block $QM_5P\cong\mathbb{C}^{3\times2}$.</p>
+<p><strong>Proposition.</strong> The off-diagonal block is a bimodule over $M_2\oplus M_3$: the left and right actions</p>
+<p>$$
+(A,B)\cdot(X,Y)=(AX,YB),\qquad (X,Y)\cdot(A,B)=(XA,BY)
+$$</p>
+<p>are defined for $X\in\mathbb{C}^{2\times3}$, $Y\in\mathbb{C}^{3\times2}$, and they commute. The algebra $M_5$ is the <strong>$\mathbb{Z}/2$-graded algebra</strong> with even part $M_2\oplus M_3$ and odd part $\mathcal{M}$:</p>
+<p>$$
+M_5=(M_2\oplus M_3)\oplus\mathcal{M},
+\qquad
+(A,B)(A',B')=(AA',BB'),\qquad
+(A,B)(X,Y)=(AX,YB),
+$$</p>
+<p>with $\mathcal{M}^2\subseteq M_2\oplus M_3$. The odd part is a bimodule, not an ideal with square zero: the product of two odd elements is a nonzero even element.</p>
+<p><strong>Proof.</strong> The block multiplication gives the actions; the product of two off-diagonal blocks is diagonal, $XY\in M_2$ and $YX\in M_3$. The associativity is the associativity of the block product.</p>
+<p><strong>Corollary.</strong> The algebra is <strong>graded by $\mathbb{Z}/2$</strong> with even part $M_2\oplus M_3$ and odd part $\mathcal{M}$. The even part is a subalgebra; the odd part is a bimodule; the product of two odd elements lands in the even part. The algebra is not the direct product $M_2\times M_3$: the mixed blocks are nonzero.</p>
+<p><strong>Proof.</strong> The block parity is the parity of the number of off-diagonal blocks; the product rule preserves it. The mixed blocks $PMQ$ and $QMP$ are nonzero, so the algebra is larger than the direct product.</p>
+<h2 id="the-gauge-math108">The Gauge $1+2+1=4$</h2>
+<h3 id="the-stabiliser-of-the-decomposition">The Stabiliser of the Decomposition</h3>
+<p><strong>Definition.</strong> The <strong>block-diagonal subgroup</strong> of $GL_5(\mathbb{C})$ preserving the decomposition $V=\operatorname{im}P\oplus\operatorname{im}Q$ is</p>
+<p>$$
+GL_2(\mathbb{C})\times GL_3(\mathbb{C})=\left\{\begin{pmatrix}g_2&0\\0&g_3\end{pmatrix}:g_2\in GL_2,\ g_3\in GL_3\right\}.
+$$</p>
+<p>Its image in $PGL_5$ is $P(GL_2\times GL_3)$.</p>
+<p><strong>Proposition.</strong> The stabiliser of $P$ in $PGL_5$ is $P(GL_2\times GL_3)$, of complex dimension $4+9-1=12$. Its maximal torus has dimension $2+3-1=4$.</p>
+<p><strong>Proof.</strong> $gPg^{-1}=P$ if and only if $g$ preserves $\operatorname{im}P$ and $\ker P$, which is the block-diagonal condition. The dimensions are $\dim GL_2=4$, $\dim GL_3=9$, minus the scalars $1$; the maximal torus is the diagonal torus of $GL_2\times GL_3$, of dimension $2+3=5$, minus the scalars, $4$.</p>
+<h3 id="the-three-directions">The Three Directions</h3>
+<p><strong>Theorem.</strong> The maximal torus of $P(GL_2\times GL_3)$ decomposes as</p>
+<p>$$
+T(PGL_2)\oplus T(PGL_3)\oplus\mathbb{C}^\times_{\mathrm{rel}},
+\qquad
+1+2+1=4 .
+$$</p>
+<p>The first factor is the diagonal torus of the $M_2$ corner, of dimension $1$; the second is the diagonal torus of the $M_3$ corner, of dimension $2$; the third is the <strong>relative scale</strong></p>
+<p>$$
+\mu\longmapsto \operatorname{diag}(\mu I_2,I_3)\ \bmod\ \mathbb{C}^\times I,
+\qquad \mu\in\mathbb{C}^\times,
+$$</p>
+<p>of dimension $1$.</p>
+<p><strong>Proof.</strong> A diagonal element of $GL_2\times GL_3$ is $\operatorname{diag}(t_1,t_2,s_1,s_2,s_3)$; modulo the common scalar, the independent ratios are $t_1/t_2$ (one), $s_1/s_3$ and $s_2/s_3$ (two), and the relative ratio $t_1/s_1$ (one). The first three are the corner tori, and the last is the relative scale. The four ratios are independent, and their product is not constrained (they are four coordinates on a four-dimensional torus).</p>
+<p><strong>Corollary.</strong> The relative scale acts on the blocks by</p>
+<p>$$
+\operatorname{diag}(\mu I_2,I_3)\begin{pmatrix}A_{11}&A_{12}\\ A_{21}&A_{22}\end{pmatrix}\operatorname{diag}(\mu^{-1}I_2,I_3)
+=
+\begin{pmatrix}A_{11}&\mu A_{12}\\ \mu^{-1}A_{21}&A_{22}\end{pmatrix}.
+$$</p>
+<p>It fixes both diagonal corners and rescales the two off-diagonal blocks reciprocally.</p>
+<p><strong>Proof.</strong> Conjugate the block matrix by the block-diagonal matrix; the diagonal blocks commute with the scalars, and the off-diagonal blocks acquire $\mu$ or $\mu^{-1}$.</p>
+<p><strong>Remark.</strong> <strong>The relative scale is the part of the gauge that the two corners do not see.</strong> The corner tori act inside $PM_5P$ and $QM_5Q$; the relative scale acts only on the off-diagonal blocks. In the frame of <em>The Frame, the Simple Nilpotents and the Gauge</em>, with the spectral indices $1,\dots,5$ split as $\{1,2\}|\{3,4,5\}$, the four parameters $\lambda_k=t_k/t_{k+1}$ are regrouped as</p>
+<p>$$
+\underbrace{\lambda_1}_{T(PGL_2)}\qquad
+\underbrace{\lambda_2}_{\text{relative scale}}\qquad
+\underbrace{\lambda_3,\lambda_4}_{T(PGL_3)} .
+$$</p>
+<p>The parameters $\lambda_1$ and $\lambda_3,\lambda_4$ act inside the two corners; $\lambda_2=t_2/t_3$ is the relative scale between them. The count $1+2+1=4$ is the invariant statement; the assignment of the four $\lambda_k$ depends on where the cut between the blocks is placed.</p>
+<h3 id="the-gauge-and-the-root">The Gauge and the Root</h3>
+<p><strong>Proposition.</strong> If $P=P_0+P_1$ is the sum of two spectral projectors of a root $H$, then the four-dimensional gauge torus of the root is the maximal torus of $P(GL_2\times GL_3)$. The gauge $1+2+1=4$ is the root gauge read through the block structure $2+3$.</p>
+<p><strong>Proof.</strong> The spectral frame diagonalises $H$; the diagonal torus $T$ of the frame consists of the matrices $\operatorname{diag}(t_0,t_1,t_2,t_3,t_4)$ modulo scalars. It preserves the decomposition $\operatorname{span}(e_0,e_1)\oplus\operatorname{span}(e_2,e_3,e_4)$ because it preserves each line; hence $T\subseteq P(GL_2\times GL_3)$. Both tori have dimension $4$, so they are equal.</p>
+<p><strong>Corollary.</strong> The rank-two projection $P=P_0+P_1$ has a larger stabiliser than the root: $P(GL_2\times GL_3)$ has dimension $12$, while the root's stabiliser $T$ has dimension $4$. The quotient has dimension $8$; it consists of the non-toral directions of the two corner groups, which move the vectors inside the two blocks without moving the root.</p>
+<p><strong>Proof.</strong> The stabiliser of $P$ is the block-diagonal group of dimension $12$; the stabiliser of $H$ is its maximal torus of dimension $4$. The quotient has dimension $8$, and the torus directions are exactly the four coordinates of $T$; the remaining directions are the unipotent and traceless-diagonal directions of the two corner groups.</p>
+<h2 id="the-recursion-and-the-previous-categories">The Recursion and the Previous Categories</h2>
+<h3 id="the-recursion-math180">The Recursion $5=2+3$</h3>
+<p>The decomposition is the first step of the recursion</p>
+<p>$$
+M_{p+q}(\mathbb{C})\supset M_p(\mathbb{C})\oplus M_q(\mathbb{C}),
+\qquad p+q=5,
+$$</p>
+<p>for every rank-$p$ projection $P$. For $p=2$, $q=3$, the corner is $M_2\oplus M_3$; for $p=1$, $q=4$, it is $\mathbb{C}\oplus M_4$, the case of <em>The Peirce Decomposition</em>; for $p=3$, $q=2$, it is $M_3\oplus M_2$, the same decomposition with the factors exchanged. The recursion can be iterated, $5=2+3=2+(1+2)=\cdots$, and it terminates in the scalar corners.</p>
+<p><strong>Proposition.</strong> For every $p$, the diagonal corners of a rank-$p$ projection are $PMP\cong M_p$ and $QMQ\cong M_{5-p}$; the off-diagonal blocks are $\mathbb{C}^{p\times(5-p)}$ and $\mathbb{C}^{(5-p)\times p}$; the dimensions are</p>
+<p>$$
+p^2+p(5-p)+p(5-p)+(5-p)^2=25 .
+$$</p>
+<p><strong>Proof.</strong> Choose bases of the image and the kernel; the compressions are the full matrix algebras of the two summands, and the off-diagonal blocks are the rectangular matrices.</p>
+<h3 id="the-math201-corner">The $M_2$ Corner</h3>
+<p>The corner $PM_5P\cong M_2(\mathbb{C})$ is the algebra of the biquaternion model: $\mathbb{B}\cong M_2(\mathbb{C})$. The idempotents, the Peirce decomposition and the spinor of $\mathbb{B}$ are read inside this corner, with the unit $P$ and the trace rescaled by $P$. The embedding $A\mapsto\operatorname{diag}(A,0)$ carries the biquaternion matrices into $M_5$; the corner is not unital in $M_5$, and the unit of the corner is $P$.</p>
+<p><strong>Proposition.</strong> The compression $A\mapsto PAP$ is a unital algebra homomorphism from $M_2(\mathbb{C})$ onto the corner, and the trace of the corner is $\operatorname{tr}_{PM_5P}(PAP)=\operatorname{tr}(PAP)=\operatorname{tr}(A)$ for $A\in M_2$ embedded in the first block.</p>
+<p><strong>Proof.</strong> The compression is multiplicative on the block, and the trace of $\operatorname{diag}(A,0)$ is the trace of $A$.</p>
+<p><strong>Remark.</strong> <strong>The corner is the biquaternion algebra, but the word spinor is not transferred to $M_5$.</strong> The $M_2$ corner has a two-dimensional module, the spinor of the biquaternion model; the whole algebra $M_5$ has the five-dimensional carrier, of spin $2$. The corner is a subalgebra, and its module is not a module of $M_5$ unless it is induced. The distinction is the subject of <em>The Modules and the Minimal Left Ideals</em>.</p>
+<h3 id="the-math222-corner">The $M_3$ Corner</h3>
+<p>The corner $QM_5Q\cong M_3(\mathbb{C})$ is the algebra of the three-dimensional space; its own root, idempotents and Peirce decomposition are the $n=3$ analogues of the present category. The block embedding carries the $M_3$ structures into the last three spectral lines when $P=P_0+P_1$. The relative scale couples the $M_2$ and $M_3$ corners through the off-diagonal blocks.</p>
+<p><strong>Proposition.</strong> The two corners commute, and their tensor product is not the whole algebra: $M_2\oplus M_3$ has dimension $13$, while $M_5$ has dimension $25$; the missing $12$ dimensions are the two off-diagonal blocks of dimension $6$ each.</p>
+<p><strong>Proof.</strong> $\dim M_2=4$, $\dim M_3=9$, sum $13$; $\dim M_5=25$; the difference is $12=6+6$, the dimensions of $\mathbb{C}^{2\times3}$ and $\mathbb{C}^{3\times2}$.</p>
+<h2 id="summary">Summary</h2>
+<p>A rank-two projection $P$ and its complement $Q=I-P$ give the recursion</p>
+<p>$$
+M_5(\mathbb{C})\supset PM_5P\oplus QM_5Q\cong M_2(\mathbb{C})\oplus M_3(\mathbb{C}),
+$$</p>
+<p>with the off-diagonal bimodule $\mathcal{M}=PM_5Q\oplus QM_5P$ of dimension $12$. The algebra is $\mathbb{Z}/2$-graded with even part $M_2\oplus M_3$ and odd part $\mathcal{M}$.</p>
+<p>The stabiliser of the decomposition in $PGL_5$ is $P(GL_2\times GL_3)$, of dimension $12$; its maximal torus has dimension</p>
+<p>$$
+1+2+1=4,
+$$</p>
+<p>the $M_2$ corner torus, the $M_3$ corner torus and the relative scale $\operatorname{diag}(\mu I_2,I_3)$. The relative scale fixes both diagonal corners and rescales the off-diagonal blocks reciprocally. The four parameters are the gauge torus of the frame, read through the block structure $2+3$.</p>
+<p>$$
+\boxed{\ M_5\supset M_2\oplus M_3,\qquad \text{gauge }1+2+1=4,\qquad \text{off-diagonal }6+6=12.\ }
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$PM_5P\cong M_2$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$QM_5Q\cong M_3$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$PM_5Q\cong\mathbb{C}^{2\times3}$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$QM_5P\cong\mathbb{C}^{3\times2}$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>$25$</td>
+</tr>
+<tr>
+<td>$P(GL_2\times GL_3)$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>Maximal torus $1+2+1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Relative scale</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>A rank-two projection, $P^2=P$, $\operatorname{rank}P=2$</td>
+</tr>
+<tr>
+<td>$Q=I-P$</td>
+<td>The complementary projection, of rank $3$</td>
+</tr>
+<tr>
+<td>$A_{11},A_{12},A_{21},A_{22}$</td>
+<td>The four blocks of $A$ in the $2+3$ decomposition</td>
+</tr>
+<tr>
+<td>$\mathcal{M}=PM_5Q\oplus QM_5P$</td>
+<td>The off-diagonal bimodule, dimension $12$</td>
+</tr>
+<tr>
+<td>$P(GL_2\times GL_3)$</td>
+<td>The block-diagonal stabiliser in $PGL_5$</td>
+</tr>
+<tr>
+<td>$T(PGL_2),T(PGL_3)$</td>
+<td>The corner tori, dimensions $1$ and $2$</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>The relative scale, $\operatorname{diag}(\mu I_2,I_3)$ modulo scalars</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the Peirce decomposition by an idempotent, the corner isomorphisms and the graded algebra of a block decomposition.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the corner decomposition of an algebra with involution and the behaviour of the summands.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, second edition, 2013), for the block multiplication and the rank of a projection.</li>
+<li><a href="the-matrix-algebra-m5c.html">The Matrix Algebra $M_5(\mathbb{C})$</a>, for the algebra and its unit group.</li>
+<li><a href="the-peirce-decomposition-of-m5c.html">The Peirce Decomposition</a>, for the coarse split $1+4+4+16$ and the corner isomorphisms.</li>
+<li><a href="the-rank-two-split-of-m5c.html">The Rank-Two Split</a>, for the corners $4+6+6+9$ and the two-sided Peirce table.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge</a>, for the four-parameter gauge and the simple nilpotents.</li>
+<li><a href="the-modules-and-the-minimal-left-ideals-of-m5c.html">The Modules and the Minimal Left Ideals</a>, for the modules of the corner and of the whole algebra.</li>
+<li><a href="ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html">The Peirce Decomposition</a>, for the biquaternion model $M_2(\mathbb{C})$ inside the corner.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

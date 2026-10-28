@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Matrix Algebra $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-matrix-algebra-math0"><strong>The Matrix Algebra $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>matrix algebra</strong> $M_n(\mathbb{C})$ is the algebra of $n\times n$ complex matrices under the product. It is the ambient algebra of the four categories $M_3(\mathbb{C})$, $M_4(\mathbb{C})$, $M_5(\mathbb{C})$, $M_6(\mathbb{C})$, and each of those categories reads the same construction at its own $n$. This article fixes the algebra itself: the matrix units, the trace, the determinant, the centre, the simplicity, the real structure and the involution. Nothing here depends on a root of unity.</p>
+<p>Throughout, $n\ge 2$. The case $n=2$ is the biquaternion algebra $\mathbb{B}$ read as a complex algebra, and the last section records exactly how far that identification goes.</p>
+<h2 id="the-algebra-and-the-matrix-units">The Algebra and the Matrix Units</h2>
+<p><strong>The algebra is the complex vector space of $n\times n$ arrays with the matrix product.</strong> Write $E_{ij}$ for the array with $1$ in the entry $(i,j)$ and $0$ elsewhere. The $n^2$ arrays $E_{ij}$ are a basis, and the product is</p>
+<p>$$
+E_{ij}E_{kl}=\delta_{jk}E_{il}.
+$$</p>
+<p>The product is associative and distributive, and $I=\sum_{k=1}^{n}E_{kk}$ is the unit. The algebra is non-commutative for $n\ge2$: $E_{12}E_{21}=E_{11}$ while $E_{21}E_{12}=E_{22}$.</p>
+<p><strong>The trace and the determinant.</strong> The trace is the linear functional</p>
+<p>$$
+\operatorname{tr}A=\sum_{k=1}^{n}A_{kk},\qquad \operatorname{tr}(AB)=\operatorname{tr}(BA),
+$$</p>
+<p>and the determinant is the multiplicative polynomial $\det A$ of degree $n$. Both are invariant under conjugation, $\operatorname{tr}(SAS^{-1})=\operatorname{tr}A$ and $\det(SAS^{-1})=\det A$. The trace is the only linear functional, up to scale, that vanishes on every commutator; the determinant is the multiplicative polynomial of degree $n$ normalised at $I$, and every multiplicative polynomial normalised at $I$ is a power of it. The pair gives</p>
+<p>$$
+\det(e^{A})=e^{\operatorname{tr}A},\qquad \operatorname{tr}\log A=\log\det A
+$$</p>
+<p>on the domain of the logarithm.</p>
+<p><strong>The dimension over $\mathbb{R}$ is $2n^2$.</strong> Each of the $n^2$ entries is a complex number, hence two real numbers. The real dimension is the number that appears in the topology of the algebra and in the count of the frame.</p>
+<p><strong>The centre is $\mathbb{C}I$.</strong> If $A$ commutes with every $E_{ij}$ then $AE_{ij}=E_{ij}A$ for all $i,j$. Comparing entries gives $A_{ii}=A_{jj}$ for all $i,j$ and $A_{ij}=0$ for $i\ne j$; hence $A=\lambda I$. The algebra is <strong>central simple</strong> over $\mathbb{C}$: its only two-sided ideals are $0$ and the algebra itself. Indeed, a nonzero two-sided ideal contains a nonzero $A$; some entry $A_{kl}\ne0$, and then $E_{ik}AE_{lj}=A_{kl}E_{ij}$ lies in the ideal for every $i,j$, so the ideal is everything.</p>
+<p><strong>A central simple algebra is simple, hence has no proper two-sided ideal, hence is not a direct sum of ideals.</strong> This matters later: when the algebra is written as a sum of corner subalgebras, that sum is a decomposition of the vector space and a block-diagonal subalgebra, never a decomposition into two-sided ideals.</p>
+<h2 id="the-real-structure-the-involution-and-the-form">The Real Structure, the Involution and the Form</h2>
+<p><strong>Every element splits into a Hermitian and a skew-Hermitian part.</strong> Let $A^{*}=\bar A^{\mathsf T}$ be the conjugate transpose. Then $A=\tfrac12(A+A^{*})+\tfrac12(A-A^{*})$, and the two summands satisfy $H^{*}=H$ and $K^{*}=-K$. The real subspace of skew-Hermitian elements is the Lie algebra</p>
+<p>$$
+\mathfrak{u}(n)=\{K: K^{*}=-K\},\qquad \dim_{\mathbb{R}}\mathfrak{u}(n)=n^{2},
+$$</p>
+<p>and its traceless part is $\mathfrak{su}(n)$ of real dimension $n^{2}-1$. The unitary group is $U(n)=\{U: U^{*}U=I\}$; the projective unitary group $PU(n)=U(n)/U(1)$ is the maximal compact subgroup of $PGL_n(\mathbb{C})$.</p>
+<p><strong>The trace form is positive definite.</strong> Define</p>
+<p>$$
+\langle A,B\rangle=\operatorname{tr}(A^{*}B)=\sum_{i,j}\overline{A_{ij}}B_{ij}.
+$$</p>
+<p>This is a Hermitian inner product on the $n^2$ complex dimensions, and its real part is the Euclidean form of $\mathbb{R}^{2n^{2}}$. The associated norm is the <strong>Frobenius norm</strong></p>
+<p>$$
+\|A\|_{\mathrm{F}}=\sqrt{\operatorname{tr}(A^{*}A)}=\Big(\sum_{i,j}|A_{ij}|^{2}\Big)^{1/2}.
+$$</p>
+<p>The form is definite: $\langle A,A\rangle=0$ only for $A=0$. There is no isotropic vector other than $0$, and no null cone. This is the sharp difference from the biquaternion algebra, whose <em>natural</em> form is indefinite; see the last section.</p>
+<p><strong>The algebra is not a division algebra.</strong> Zero divisors exist: $E_{11}E_{22}=0$ although both factors are nonzero. In general $AB=0$ with $A,B\ne0$ exactly when $\operatorname{im}B\subseteq\ker A$; Sylvester's inequality then forces $\operatorname{rank}A+\operatorname{rank}B\le n$, which is necessary but not sufficient. The two-sided ideal generated by any nonzero element is the whole algebra, so the zero divisors do not form an ideal. The <strong>singular set</strong> is</p>
+<p>$$
+\Sigma=\{A:\det A=0\},
+$$</p>
+<p>a complex hypersurface of complex dimension $n^{2}-1$, hence of real codimension $2$. Its complement is the open dense group $GL_n(\mathbb{C})$.</p>
+<p><strong>The determinant cut.</strong> The function $\det:M_n(\mathbb{C})\to\mathbb{C}$ is polynomial, and $\Sigma$ is its zero set. The stratification by rank,</p>
+<p>$$
+\Sigma=\bigcup_{r=0}^{n-1}\Sigma_r,\qquad \Sigma_r=\{A:\operatorname{rank}A=r\},
+$$</p>
+<p>has $\Sigma_r$ of complex dimension $r(2n-r)$; the open stratum $\Sigma_{n-1}$ is dense in $\Sigma$ and smooth. The codimension of $\Sigma_0=\{0\}$ is $2n^{2}$, and that of $\Sigma_{n-1}$ is $2$.</p>
+<h2 id="the-groups">The Groups</h2>
+<p><strong>The unit group is $GL_n(\mathbb{C})$, of complex dimension $n^{2}$ and real dimension $2n^{2}$.</strong> It is connected, and $\det:GL_n(\mathbb{C})\to\mathbb{C}^{\times}$ is a surjective homomorphism whose kernel is $SL_n(\mathbb{C})$, of complex dimension $n^{2}-1$.</p>
+<p><strong>The projective group is $PGL_n(\mathbb{C})=GL_n(\mathbb{C})/\mathbb{C}^{\times}I$, of complex dimension $n^{2}-1$.</strong> It acts on $M_n(\mathbb{C})$ by conjugation, $A\mapsto SAS^{-1}$, and the kernel of the action is exactly the scalars. The conjugation action preserves the trace, the determinant, the characteristic polynomial and the rank, and its orbits are the Jordan types.</p>
+<p><strong>The projective group is the group of the frame.</strong> A frame is an ordered basis $(v_1,\dots,v_n)$ of $\mathbb{C}^{n}$, and $GL_n(\mathbb{C})$ acts simply transitively on frames; two frames that differ by an overall scalar give the same matrix units $E_{ij}=v_iv_j^{\vee}$. The group of frames modulo the overall scalar is therefore $PGL_n(\mathbb{C})$, and this is the group that will act on the root and on the gauge in the articles that follow.</p>
+<h2 id="the-standard-flag">The Standard Flag</h2>
+<p><strong>The standard flag is the chain of coordinate subspaces</strong></p>
+<p>$$
+0\subset \mathbb{C}e_1\subset \mathbb{C}e_1\oplus\mathbb{C}e_2\subset\cdots\subset\mathbb{C}^{n}.
+$$</p>
+<p>Its stabiliser in $GL_n(\mathbb{C})$ is the Borel subgroup $B$ of upper triangular matrices, and the flag variety $GL_n(\mathbb{C})/B$ has complex dimension $\binom{n}{2}$. The standard flag is one point of it. The construction of the following articles replaces the fixed flag by the flag produced by a root of unity; the geometry of all flags is <em>The Geometry of the Idempotents</em>.</p>
+<h2 id="the-case-math108-and-the-biquaternion-algebra">The Case $n=2$ and the Biquaternion Algebra</h2>
+<p><strong>As a complex algebra, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is $M_2(\mathbb{C})$.</strong> The complexification of the quaternion algebra is the split central simple algebra of degree $2$ over $\mathbb{C}$, and all such algebras are isomorphic to $M_2(\mathbb{C})$. The isomorphism sends $e_t\mapsto I$ and the three quaternion units to $i$ times the Pauli matrices, up to a choice of basis.</p>
+<p><strong>The identification is an isomorphism of complex algebras, not of real algebras with their forms.</strong> Three structures must be kept apart.</p>
+<ul>
+<li>The <strong>Hermitian involution</strong> $A^{*}=\bar A^{\mathsf T}$ is $\mathbb{C}$-antilinear. Under the identification it is the biquaternion conjugation $*=\bar{\cdot}\circ{}^{\natural}$, and its trace form $\operatorname{tr}(A^{*}B)$ is positive definite. This is the form used in this article.</li>
+<li>The <strong>natural conjugation</strong> ${}^{\natural}$ of $\mathbb{B}$ is $\mathbb{C}$-linear, fixes $i$, conjugates the quaternion units and satisfies ${}^{\natural 2}=\mathrm{id}$. It is an anti-automorphism, not an automorphism. Under the identification it is the symplectic involution $X\mapsto JX^{\mathsf T}J^{-1}$, whose fixed subalgebra is a copy of $\mathbb{H}$.</li>
+<li>The <strong>N-norm</strong> of $\mathbb{B}$ is the quadratic form of ${}^{\natural}$, of signature $(4,4)$, and it is indefinite. Its zero cone is the null cone of the biquaternion article, and it has no analogue in the definite trace form of $M_n(\mathbb{C})$.</li>
+</ul>
+<p>The two forms coincide only in the definite case of the Hermitian involution. The statements of the matrix categories use the definite form; a statement about the null cone is a statement about the N-norm and does not transfer.</p>
+<p><strong>The root of $+1$ is the case $n=2$.</strong> The biquaternion article builds its frame from one element $\tilde\Xi$ with $\tilde\Xi^{2}=e_t$. In the matrix picture this is a matrix $H$ with $H^{2}=I$ and simple spectrum, hence $H=\operatorname{diag}(1,-1)$ in a suitable basis. The two Lagrange projectors</p>
+<p>$$
+P_{+}=\frac{I+H}{2},\qquad P_{-}=\frac{I-H}{2}
+$$</p>
+<p>are the two idempotents of the biquaternion frame. The general construction of <em>Roots of Unity and the Lagrange Idempotents</em> is the same formula with $n$ roots in place of the two.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra $M_n(\mathbb{C})$ is central simple of real dimension $2n^{2}$, with centre $\mathbb{C}I$, unit group $GL_n(\mathbb{C})$, projective group $PGL_n(\mathbb{C})$ of dimension $n^{2}-1$, and involution $A^{*}=\bar A^{\mathsf T}$ whose trace form is positive definite. Its singular set is $\{\det=0\}$, of real codimension $2$, and it has no null cone. For $n=2$ it is the biquaternion algebra as a complex algebra; the biquaternion N-norm is a second, indefinite form and is not the trace form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n(\mathbb{C})$</td>
+<td>the algebra of $n\times n$ complex matrices</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix unit, $1$ in the entry $(i,j)$</td>
+</tr>
+<tr>
+<td>$I$</td>
+<td>the unit, $\sum_k E_{kk}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}$, $\det$</td>
+<td>the trace and the determinant</td>
+</tr>
+<tr>
+<td>$A^{*}=\bar A^{\mathsf T}$</td>
+<td>the conjugate transpose</td>
+</tr>
+<tr>
+<td>$\langle A,B\rangle=\operatorname{tr}(A^{*}B)$</td>
+<td>the positive definite trace form</td>
+</tr>
+<tr>
+<td>$\|A\|_{\mathrm{F}}$</td>
+<td>the Frobenius norm</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(n)$, $\mathfrak{su}(n)$</td>
+<td>the skew-Hermitian and traceless skew-Hermitian algebras, of dimensions $n^{2}$ and $n^{2}-1$</td>
+</tr>
+<tr>
+<td>$GL_n(\mathbb{C})$, $SL_n(\mathbb{C})$, $PGL_n(\mathbb{C})$</td>
+<td>the unit group, its determinant-one subgroup and the projective group</td>
+</tr>
+<tr>
+<td>$\Sigma=\{\det=0\}$</td>
+<td>the singular set, of real codimension $2$</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Borel subgroup of upper triangular matrices</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for central simple algebras, the matrix algebra and its two-sided ideals.</li>
+<li>Tsit-Yuen Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2001), for the simplicity of $M_n(\mathbb{C})$ and the structure of matrix rings.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the trace, the determinant, the singular values and the polar decomposition.</li>
+<li><a href="the-biquaternion-algebra-and-its-vector-spaces.html">The Biquaternion Algebra</a>, for the real algebra $\mathbb{B}$ and its four forms.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-mnc.html">Roots of Unity and the Lagrange Idempotents</a>, for the root that replaces the standard flag by a spectral one.</li>
+<li><a href="m2c-representation-the-matrix-product-and-the-algebra-structure.html">$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure</a>, for the explicit isomorphism $\mathbb{B}\to M_2(\mathbb{C})$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
