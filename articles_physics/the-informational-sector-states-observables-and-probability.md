@@ -92,15 +92,17 @@ $$
 \boxed{\;\lambda_\pm=h_t\pm\lvert\vec h\rvert\;}.
 $$
 
-The Hermitian form against the unit, the trace and the biquaternion norm read
+The Hermitian form against the unit and the biquaternion norm read
 
 $$
-\langle\tilde H,e_t\rangle_{*}=h_t,\qquad \operatorname{Tr}(\tilde H)=2h_t=\lambda_++\lambda_-,\qquad \langle\tilde H\rangle_{\natural}=h_t^2-\lvert\vec h\rvert^2=\lambda_+\lambda_-.
+\langle\tilde H,e_t\rangle_{*}=h_t,\qquad 2\langle\tilde H,e_t\rangle_{*}=2h_t=\lambda_++\lambda_-,\qquad \langle\tilde H\rangle_{\natural}=h_t^2-\lvert\vec h\rvert^2=\lambda_+\lambda_-,
 $$
+
+whose middle entry is the trace in the $2\times2$ image, $\operatorname{Tr}(\tilde H)=2h_t$.
 
 The element is **positive** exactly when $h_t\geq\lvert\vec h\rvert$, that is, exactly when both eigenvalues are non-negative. Positivity is a statement about the eigenvalues, not about the biquaternion norm: the norm is negative exactly when the two eigenvalues have opposite signs.
 
-The **state slice**, which the trace reads as the trace-one slice, is the family
+The **state slice**, which the $2\times2$ reading calls the trace-one slice, is the family
 
 $$
 \tilde{Ϛ}=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad \langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*},
@@ -246,13 +248,13 @@ $$
 
 with $\tilde\Pi_1+\tilde\Pi_2=e_t$ and $\tilde\Pi_1\tilde\Pi_2=0$. The two coefficients are the eigenvalues, the two idempotents are the eigen-idempotents, and the pair is a resolution of the identity. The decomposition degenerates to $h_t e_t$ exactly when $\vec h=0$.
 
-The trace and the biquaternion norm read
+The scalar part and the biquaternion norm read
 
 $$
-\operatorname{Tr}(\tilde H)=\lambda_++\lambda_-,\qquad \langle\tilde H\rangle_{\natural}=\lambda_+\lambda_-.
+2\,\mathrm{Sc}(\tilde H)=\lambda_++\lambda_-,\qquad \langle\tilde H\rangle_{\natural}=\lambda_+\lambda_-,
 $$
 
-The trace is the sum of the eigenvalues and the biquaternion norm is their product, so that norm is indefinite: it is negative exactly when the two eigenvalues have opposite signs. This is the difference from the ordinary Hermitian matrix case, where the analogue of the norm is a sum of squares. **Positivity is a statement about the eigenvalues, not about the norm**, and the spectral decomposition is what makes the statement visible.
+the first of which is the trace in the $2\times2$ image. The trace is the sum of the eigenvalues and the biquaternion norm is their product, so that norm is indefinite: it is negative exactly when the two eigenvalues have opposite signs. This is the difference from the ordinary Hermitian matrix case, where the analogue of the norm is a sum of squares. **Positivity is a statement about the eigenvalues, not about the norm**, and the spectral decomposition is what makes the statement visible.
 
 Read physically, the two eigenvalues are the two possible readings of the observable and the two idempotents are the two outcomes. The spectral decomposition is the algebraic form of a readout with two outcomes. The spectrum does not by itself give the frequencies of those outcomes; that is the role of the state and of the Born pairing.
 
@@ -414,24 +416,24 @@ The open questions are concrete.
 
 ## Examples
 
-**The boost biquaternion.** $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec u_{\mathrm b}$ is Hermitian, has unit norm, and lies in $\mathbb{M}_+$. It acts on $\mathbb{M}_-$ by rotor conjugation and implements a Lorentz boost. It is not matrix-unitary, and it does not preserve the trace of a state; it is an operator on four-vectors, not an evolution of states.
+**The boost biquaternion.** $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec u_{\mathrm b}$ is Hermitian, has unit norm, and lies in $\mathbb{M}_+$. It acts on $\mathbb{M}_-$ by rotor conjugation and implements a Lorentz boost. It is not matrix-unitary, and it does not preserve the normalisation $\mathrm{Sc}(\tilde\varrho)=\tfrac12$ (the trace of a state); it is an operator on four-vectors, not an evolution of states.
 
-**A pure state.** $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is Hermitian, idempotent, of trace one, and a zero divisor. It is the pure state along $+z$, the Bloch vector $\vec r=\vec e_z$, and the north pole of the Bloch sphere. The orthogonal idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is the south pole.
+**A pure state.** $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ is Hermitian, idempotent, with $2\,\mathrm{Sc}(\tilde\Pi_+)=1$ (trace one), and a zero divisor. It is the pure state along $+z$, the Bloch vector $\vec r=\vec e_z$, and the north pole of the Bloch sphere. The orthogonal idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is the south pole.
 
 **A mixed state.** $\tilde{Ϛ}=\tfrac12(e_t+\tfrac12 i\vec e_z)$ has $\lvert\vec r\rvert=\tfrac12$, so it is positive and mixed, with $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac{3}{16}>0$. It is not a zero divisor. At $\vec r=0$ the state is $\tfrac12e_t$, the maximally mixed state.
 
 **An observable.** $\tilde H=h_te_t+i\vec h$ has eigenvalues $h_t\pm\lvert\vec h\rvert$ and spectral decomposition $\tilde H=\lambda_+\tilde\Pi_1(\vec u_h)+\lambda_-\tilde\Pi_2(\vec u_h)$. For $h_t=1$ and $\lvert\vec h\rvert=\tfrac12$ the readings are $\tfrac32$ and $\tfrac12$; for $\lvert\vec h\rvert=2$ they are $3$ and $-1$, and the element is not positive.
 
-**The identity.** $e_t$ is Hermitian, of trace two, and idempotent. It is the identity operator, not a state: its trace is two, and a state must have trace one.
+**The identity.** $e_t$ is Hermitian, idempotent, and has scalar part one, which the $2\times2$ reading calls trace two. It is the identity operator, not a state: its scalar part is one, and a state has scalar part $\tfrac12$ (trace one).
 
 **The Hermitian form.** For any $\tilde Q\in\mathbb{B}$, the product $\tilde Q\tilde Q^{*}$ is Hermitian and lies in $\mathbb{M}_+$. Its scalar part is the Euclidean norm squared $\sum_\mu\lvert Q_\mu\rvert^2$, which is non-negative; it is the natural weight of the element.
 
 | Object | Structure | Role |
 | --- | --- | --- |
-| $e_t$ | real scalar, trace two | identity operator |
+| $e_t$ | real scalar, $\mathrm{Sc}(e_t)=1$ (trace two) | identity operator |
 | $\tilde U_{\mathrm b}$ | Hermitian, unit norm | Lorentz boost rotor |
-| $\tilde\Pi_{1,2}(\vec u)$ | Hermitian, idempotent, trace one | pure state |
-| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\leq1$ | Hermitian, positive, trace one | mixed state |
+| $\tilde\Pi_{1,2}(\vec u)$ | Hermitian, idempotent, $\mathrm{Sc}=\tfrac12$ (trace one) | pure state |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\leq1$ | Hermitian, positive, $\mathrm{Sc}=\tfrac12$ (trace one) | mixed state |
 | $\tilde H=h_te_t+i\vec h$ | Hermitian, eigenvalues $h_t\pm\lvert\vec h\rvert$ | observable |
 | $\tilde Q\tilde Q^{*}$ | Hermitian, positive scalar part | weight of an element |
 
@@ -444,7 +446,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde Q_{\mathrm H}=c t\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$.
 - Its biquaternion norm is indefinite of signature $(1,3)$; positivity is a condition on the eigenvalues, not on the biquaternion norm.
 - The Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$ are the pure states; they are the halvings of the roots of $+1$ and are zero divisors.
-- The state slice (trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
+- The state slice (normalised by $\langle\tilde\varrho,e_t\rangle_*=\tfrac12$; trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
 - The Bloch ball is the state slice of the future light cone of the biquaternion norm; probability and causality share their boundary.
 - The spectral decomposition writes every observable as two eigenvalues times two orthogonal idempotents.
 - Evolution and measurement are one sandwich, with the parameter unit-norm, matrix-unitary or idempotent.

@@ -56,7 +56,7 @@ $$
 so the Hermitian form is the positive definite Euclidean form of signature $(4,0)$ in the coefficients. The **dual cone** is
 
 $$
-C_+^{*} = \bigl\{\tilde{H} : \mathrm{Tr}(\tilde{H}\tilde{E}^{*})\geq0 \ \text{ for all } \tilde{E}\in C_+\bigr\},
+C_+^{*} = \bigl\{\tilde{H} : \langle\tilde{H},\tilde{E}\rangle_{*}=\mathrm{Sc}(\tilde{H}\tilde{E}^{*})\geq0 \ \text{ for all } \tilde{E}\in C_+\bigr\},
 $$
 
 and it coincides with $C_+$. To see this, if $h_t\geq|\vec h|$ then $h_ta_t+\vec h\cdot\vec a\geq h_ta_t-|\vec h|\,|\vec a|\geq0$ for every $a_t\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $h_t<|\vec h|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\vec u_h$ and $a_t = \lambda$; then $h_ta_t+\vec h\cdot\vec a = \lambda(h_t-|\vec h|)<0$ for $\lambda>0$, so $\tilde{H}\notin C_+^{*}$. Hence $C_+^{*}=C_+$: **the positive cone is self-dual with respect to the Hermitian form.**
@@ -134,8 +134,9 @@ $$
 Given a state $\tilde{Ϛ}$, the outcome probabilities are $p_y=\langle\tilde{Ϛ},\tilde E_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde E_y^{*})/\mathrm{Sc}(\tilde{Ϛ})$; on $\mathbb{M}_+$ this is the plain scalar $\mathrm{Sc}(\tilde{Ϛ}\tilde E_y)/\mathrm{Sc}(\tilde{Ϛ})$, and the trace is the final reading at normalisation, $p_y=\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$. They are non-negative and sum to one:
 
 $$
-\sum_y p_y = \mathrm{Sc}\!\left(\tilde{Ϛ}\sum_y\tilde{E}_y\right)\Big/\mathrm{Sc}(\tilde{Ϛ}) = \operatorname{Tr}\!\left(\tilde{Ϛ}\sum_y\tilde{E}_y\right) = \operatorname{Tr}(\tilde{Ϛ}) = 1 .
+\sum_y p_y = \mathrm{Sc}\!\left(\tilde{Ϛ}\sum_y\tilde{E}_y\right)\Big/\mathrm{Sc}(\tilde{Ϛ}) = \frac{\mathrm{Sc}(\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = 1 ,
 $$
+since $\sum_y\tilde{E}_y=e_t$ and $\mathrm{Sc}(e_t)=1$, whose $2\times2$ reading is $\mathrm{Tr}(e_t)=2$.
 
 A **projection-valued measure** is the special case in which every $\tilde{E}_y$ is idempotent; then the effects are orthogonal, $\tilde{E}_y\tilde{E}_{y_2} = \delta_{yy_2}\tilde{E}_y$, and the POVM is a projective measurement. Every PVM is a POVM; the converse fails.
 
@@ -150,10 +151,10 @@ $$
 then the unnormalized post-measurement state is $\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$ and the normalized state is
 
 $$
-\tilde{Ϛ}_y = \frac{\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}}{\mathrm{Tr}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})} .
+\tilde{Ϛ}_y = \frac{\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}}{2\,\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})},
 $$
 
-The outcome probability is $p_y=\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})/\mathrm{Sc}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}) = \operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$, with the trace taken at normalisation, and the resolution of the identity is $\sum_y\tilde{K}_y^{*}\tilde{K}_y = e_t$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $\Phi(\tilde{Ϛ}) = \sum_y\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$.
+The outcome probability is $p_y=\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*})/\mathrm{Sc}(\tilde{Ϛ})=2\,\mathrm{Sc}(\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}_y)$, whose $2\times2$ reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the resolution of the identity is $\sum_y\tilde{K}_y^{*}\tilde{K}_y = e_t$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $\Phi(\tilde{Ϛ}) = \sum_y\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$.
 
 ### The Polar Form of an Effect
 
@@ -205,12 +206,12 @@ $$
 The trine POVM has three outcomes, which no projective measurement of a qubit can have. For the three equally likely states $\tilde{Ϛ}_k = \tilde\Pi_1(\vec u_k)$, the probability of correctly identifying the state is
 
 $$
-P_{\mathrm{succ}} = \frac{1}{3}\sum_{k=1}^{3}\mathrm{Tr}(\tilde{Ϛ}_k\tilde{E}_k^{*})
-= \frac{1}{3}\sum_{k=1}^{3}\mathrm{Tr}\!\left(\tilde{Ϛ}_k\,\tfrac23\tilde{Ϛ}_k\right)
+P_{\mathrm{succ}} = \frac{1}{3}\sum_{k=1}^{3}2\,\mathrm{Sc}(\tilde{Ϛ}_k\tilde{E}_k^{*})
+= \frac{1}{3}\sum_{k=1}^{3}2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_k\,\tfrac23\tilde{Ϛ}_k\right)
 = \frac{1}{3}\sum_{k=1}^{3}\frac{2}{3} = \frac{2}{3},
 $$
 
-since $\tilde{Ϛ}_k^2 = \tilde{Ϛ}_k$ and $\mathrm{Tr}(\tilde{Ϛ}_k) = 1$. A projective measurement of a qubit has only two outcomes and cannot separate three symmetric states as well; the trine POVM is the standard example of a genuinely non-projective measurement, and it is expressed here purely in terms of the idempotents and the plain form of the algebra.
+since $\tilde{Ϛ}_k^2 = \tilde{Ϛ}_k$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_k) = 1$. A projective measurement of a qubit has only two outcomes and cannot separate three symmetric states as well; the trine POVM is the standard example of a genuinely non-projective measurement, and it is expressed here purely in terms of the idempotents and the plain form of the algebra.
 
 ### Unambiguous discrimination
 
@@ -225,7 +226,7 @@ $$
 where $\tilde\Pi(\psi^\perp)$ is the idempotent orthogonal to $|\psi\rangle$. The effect $\tilde{E}_0$ annihilates $|\psi_1\rangle$, so the outcome $0$ certifies $|\psi_0\rangle$; symmetrically for outcome $1$; and outcome $?$ is inconclusive. The resolution holds because the largest eigenvalue of $\tilde{E}_0+\tilde{E}_1$ is $1$ at this normalization, and the success probability for equal priors is
 
 $$
-P_{\mathrm{succ}} = \tfrac12\mathrm{Tr}(\tilde{Ϛ}_0\tilde{E}_0^{*}) + \tfrac12\mathrm{Tr}(\tilde{Ϛ}_1\tilde{E}_1^{*})
+P_{\mathrm{succ}} = \mathrm{Sc}(\tilde{Ϛ}_0\tilde{E}_0^{*}) + \mathrm{Sc}(\tilde{Ϛ}_1\tilde{E}_1^{*})
 = \tfrac12(1-c)+\tfrac12(1-c) = 1-c ,
 $$
 
@@ -235,7 +236,7 @@ which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination
 
 Collecting the structure, a measurement in the framework is a resolution of the identity into positive elements of $\mathbb{M}_+$:
 
-- **States** are the trace-one elements of the cone $C_+$; the cone is the future light cone of the biquaternion norm.
+- **States** are the elements of the cone $C_+$ normalised by $\langle\tilde\varrho,e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image); the cone is the future light cone of the biquaternion norm.
 - **Effects** are the elements of the operator interval $[0,e_t]$, i.e. the cone intersected with its reflection through $\tfrac12 e_t$; in coefficients, $|\vec a|\leq\min(a_t,1-a_t)$.
 - **POVMs** are resolutions of the identity by effects; **PVMs** are the resolutions by idempotents, i.e. by extreme effects.
 - **Probabilities** are the normalised Hermitian form $p_y=\langle\tilde{Ϛ},\tilde E_y\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, whose final reading at normalisation is the trace $p_y = \operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$; the pairing is the one under which the cone is self-dual.
@@ -297,7 +298,7 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H,
 | $\lvert\vec a\rvert\le\min(a_t,1-a_t)$ | Effect condition in coefficients |
 | $\mathrm{ext}[0,e_t] = \{\text{idempotents}\}$ | Extreme effects |
 | $\{\tilde{E}_y\}$, $\tilde{E}_y\ge0$, $\sum_y\tilde{E}_y = e_t$ | POVM |
-| $p_y = \operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$ | Born rule for a POVM, trace reading at normalisation |
+| $p_y = 2\langle\tilde{Ϛ},\tilde{E}_y\rangle_{*}$ | Born rule for a POVM; $2\times2$ reading $\operatorname{Tr}(\tilde{Ϛ}\tilde{E}_y^{*})$ |
 | $\tilde{E}_y = \tilde{K}_y^{*}\tilde{K}_y$ | Kraus form of an effect |
 | $\tilde K_y=\tilde H_{\mathrm{pos},y}\tilde U_{\mathrm{p},y}$, $\tilde H_{\mathrm{pos},y}=\sqrt{\tilde K_y\tilde K_y^{*}}$ | Polar form of the Kraus operator; $\tilde H_{\mathrm{pos},y}\ge0$, $\tilde U_{\mathrm{p},y}$ a partial isometry |
 | $\tilde E_y=\tilde U_{\mathrm{p},y}^{*}\tilde H_{\mathrm{pos},y}^{2}\tilde U_{\mathrm{p},y}$ | Effect as the backaction-conjugated squared strength |

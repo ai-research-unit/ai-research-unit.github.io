@@ -130,7 +130,7 @@ It is worth separating the two uses of the word "state" that this structure prod
 For $|u\rangle_{*}\in S$ with $\langle u|u\rangle = 1$, the rank-one idempotent $|u\rangle\langle u|$ is an element of $\mathbb{M}_+$ and satisfies
 
 $$
-\bigl(|u\rangle\langle u|\bigr)^2 = |u\rangle\langle u|, \qquad \mathrm{Tr}\bigl(|u\rangle\langle u|\bigr) = 1 .
+\bigl(|u\rangle\langle u|\bigr)^2 = |u\rangle\langle u|, \qquad 2\bigl\langle |u\rangle\langle u|,e_t\bigr\rangle_{*} = 1, \qquad \mathrm{Tr}\bigl(|u\rangle\langle u|\bigr) = 1 .
 $$
 
 Conversely, every positive normalised idempotent of $\mathbb{B}$ (trace one in the image) has rank one and is the projector onto a ray of $S$. Since two unit vectors define the same projector exactly when they differ by a phase, the map
@@ -169,7 +169,7 @@ $$
 \boxed{\;\frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = \langle u|H|u\rangle\;},
 $$
 
-where $H$ is the matrix image of $\tilde{H}$. On $\mathbb{M}_+$ the star is inert, so the same number is $\mathrm{Sc}(\tilde\Pi\tilde H)/\mathrm{Sc}(\tilde\Pi)$, the plain scalar. The trace appears only to normalise the pure state, $\operatorname{Tr}(\tilde\Pi)=1$, and then $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = \langle u|H|u\rangle$ in the $2\times2$ image. This identity is the bridge between the two descriptions: the Born rule of the algebra is the normalised Hermitian form, read on the module as the ordinary expectation value. Its derivation from the Hermitian form was given in *The Born Rule from the Hermitian Form — Derivation and Comparison*, and it requires nothing beyond the fact that the form is the scalar part of the product.
+where $H$ is the matrix image of $\tilde{H}$. On $\mathbb{M}_+$ the star is inert, so the same number is $\mathrm{Sc}(\tilde\Pi\tilde H)/\mathrm{Sc}(\tilde\Pi)$, the plain scalar. The normalisation is $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$; the trace appears only as its $2\times2$ reading, $\operatorname{Tr}(\tilde\Pi)=1$, and then $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = \langle u|H|u\rangle$. This identity is the bridge between the two descriptions: the Born rule of the algebra is the normalised Hermitian form, read on the module as the ordinary expectation value. Its derivation from the Hermitian form was given in *The Born Rule from the Hermitian Form — Derivation and Comparison*, and it requires nothing beyond the fact that the form is the scalar part of the product.
 
 ### Mixed states and the density-operator correspondence
 
@@ -227,7 +227,7 @@ the three pairs of outcome probabilities determine $\vec r$ and hence the state;
 **What it supplies.**
 
 - **The carrier is forced, not chosen.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple left module $S=\mathbb{C}^2$, so the elementary informational unit is two-dimensional over $\mathbb{C}$ and is read off the algebra.
-- **The inner product is native.** The Hilbert-space inner product on $S$ is the Hermitian form of the algebra, read through the trace, $\langle u|v\rangle = \mathrm{Tr}(|v\rangle\langle u|)$; it is not an independent axiom.
+- **The inner product is native.** The Hilbert-space inner product on $S$ is the Hermitian form of the algebra, whose $2\times2$ reading is the trace, $\langle u|v\rangle = 2\,\mathrm{Sc}(|v\rangle\langle u|)=\mathrm{Tr}(|v\rangle\langle u|)$; it is not an independent axiom.
 - **The pure states are the module's rays.** The rank-one idempotents of $\mathbb{M}_+$ correspond bijectively to the rays of $S$, and their matrix images are the rank-one Hermitian projectors.
 - **The Born rule is a module pairing.** The normalised Hermitian form and the module expectation value are the same operation; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = \langle u|H|u\rangle$, with the trace used only to normalise the state.
 - **The state geometry is the biquaternion norm's cone slice.** The Bloch ball is the normalised positive slice of $\mathbb{M}_+$ (trace one in the image), its boundary is the zero-divisor cone of the biquaternion norm, and the rays are its extreme points.
@@ -270,13 +270,13 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators of reversible evolution) |
 | $S = \mathbb{C}^2$ | Defining (spinor) module of $\mathbb{B}$ |
 | $\rho_S$ | The defining representation of $\mathbb{B}$ on $S$ |
-| $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
+| $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, the $2\times2$ reading |
 | $\tilde{Q}^{*}$ | Hermitian conjugate (anti-linear involution) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents (pure states) |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\langle\tilde\Pi,\tilde H\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = \langle u|H|u\rangle_{*}$ | Trace reading of the Hermitian form; the $2\times2$ reading of the Born rule |
-| $r_k = \mathrm{Tr}(\tilde{Ϛ}\,(i\vec e_k)^{*})$ | Bloch components (tomography) |
+| $r_k = 2\langle\tilde{Ϛ},i\vec e_k\rangle_{*} = \mathrm{Tr}(\tilde{Ϛ}\,(i\vec e_k)^{*})$ | Bloch components (tomography) |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 
 ## Further Reading
