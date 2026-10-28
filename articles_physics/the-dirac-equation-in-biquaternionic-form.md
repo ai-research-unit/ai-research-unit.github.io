@@ -152,7 +152,7 @@ So the biquaternion formulation of the Dirac equation is expressed in terms of t
 
 ### An Explicit Dictionary with Conjugation in the Mass Term
 
-The route to the algebra used so far is the framework's own: the biquaternion field is a pair of Weyl spinors, the two chiral components are the two minimal left ideals, and the mass couples them. There is a second route, due to V. V. Kravchenko (1995), which is a **dictionary** rather than a decomposition. It is an explicit real-linear bijection $A$ from the four-component bispinors onto the biquaternion-valued functions under which the Dirac equation becomes one biquaternionic equation; its interest for this article is that it is $\mathbb{R}$-linear rather than $\mathbb{C}$-linear, and that its mass term carries complex conjugation.
+The route to the algebra used so far is the framework's own: the biquaternion field is a pair of Weyl spinors, the two chiral components are the two Peirce carriers, the minimal left ideals here, and the mass couples them. There is a second route, due to V. V. Kravchenko (1995), which is a **dictionary** rather than a decomposition. It is an explicit real-linear bijection $A$ from the four-component bispinors onto the biquaternion-valued functions under which the Dirac equation becomes one biquaternionic equation; its interest for this article is that it is $\mathbb{R}$-linear rather than $\mathbb{C}$-linear, and that its mass term carries complex conjugation.
 
 **The dictionary.** On the field side the dictionary pairs the four Dirac generators with the four operators the algebra offers: the spatial generators act by left multiplication by the imaginary units, the timelike generator by complex conjugation, and the central imaginary acts on the right,
 
@@ -448,7 +448,7 @@ $$
 
 The mass term is **linear** in the field and **off-diagonal** between the two chiralities: it is the biquaternion transcription of the mass term $m\psi$ of the matrix Dirac equation, and it is what couples the left- and right-handed Weyl spinors.
 
-The coupling has to be off-diagonal. Left multiplication by an element of $\mathbb{B}$ *preserves* each chiral component — the minimal left ideals of $\mathbb{B} \cong M_2(\mathbb{C})$ are the two chiralities, and left multiplication maps each into itself — so no combination of the form $a\tilde{\Psi}_L + b\tilde{\Psi}_R$ relates them. A mass term that couples the chiralities therefore has to act as a *right* multiplication, which is what the pair above does; equivalently, on the strict spinor module (a single minimal left ideal) the mass is simply linear. This is the structural reason why the spinor module, and not the whole algebra, is the natural carrier of the Dirac field.
+The coupling has to be off-diagonal. Left multiplication by an element of $\mathbb{B}$ *preserves* each chiral component — the minimal left ideals of $\mathbb{B} \cong M_2(\mathbb{C})$ are the two chiralities, and left multiplication maps each into itself — so no combination of the form $a\tilde{\Psi}_L + b\tilde{\Psi}_R$ relates them. A mass term that couples the chiralities therefore has to act as a *right* multiplication, which is what the pair above does; equivalently, on the strict spinor module (a single Peirce carrier, a minimal left ideal here) the mass is simply linear. This is the structural reason why the spinor module, and not the whole algebra, is the natural carrier of the Dirac field.
 
 **A remark on the anti-Hermitian conjugation $\flat$.** The algebra carries, besides the quaternion conjugate and the Hermitian conjugation ${}^{*}$, a further antilinear involution:
 
@@ -673,7 +673,7 @@ $$
 
 comparing it with the biquaternion Maxwell equation $\tilde{\nabla}\tilde{F} = -4\pi\tilde{J}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde Q_2$ acts back on the object that generates it, with the strength $m$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde{\nabla}$, a square root of $\Box$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
 
-The corpus's chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ is the same equation written in the other useful way: it displays the spinor split — the two minimal left ideals — but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by the idempotent superposition
+The corpus's chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ is the same equation written in the other useful way: it displays the spinor split — the two Peirce carriers, the minimal left ideals here — but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by the idempotent superposition
 
 $$
 D = \tilde Q_1\tilde\Pi + \tilde Q_2^{*}\bar{\tilde\Pi},
@@ -731,7 +731,7 @@ The biquaternion formulation adds three things:
 
 **1. A unified algebraic framework for Maxwell and Dirac.** The two equations have the same form in different representations of the same algebra. This is the algebraic content of the statement that the photon and the electron are both described by the Clifford algebra $\mathrm{Cl}_{1,3}$.
 
-**2. A compact notation for the spinor structure.** The two-component structure of the Weyl spinor is naturally encoded in the biquaternion algebra, without the need for explicit spinor indices. The left- and right-handed spinors are the two chiral components of the field — the two minimal left ideals of $\mathbb{B}$ — and the mass term is the linear coupling between them.
+**2. A compact notation for the spinor structure.** The two-component structure of the Weyl spinor is naturally encoded in the biquaternion algebra, without the need for explicit spinor indices. The left- and right-handed spinors are the two chiral components of the field — the two Peirce carriers of $\mathbb{B}$, the minimal left ideals here — and the mass term is the linear coupling between them.
 
 **3. A natural language for relativistic kinematics.** The four-velocity $\tilde{V}$, the four-momentum $\tilde{P}$, and the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ are all natural objects in the biquaternion algebra. The Dirac equation is naturally stated in terms of these objects, and the plane-wave solutions are naturally written in terms of the wave biquaternion $\tilde{P}/\hbar$ and the four-position $\tilde{R}$.
 

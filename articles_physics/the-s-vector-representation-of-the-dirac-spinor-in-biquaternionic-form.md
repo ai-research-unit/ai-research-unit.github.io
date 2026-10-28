@@ -355,7 +355,7 @@ leaves the quadratic form $m\bar\Psi\Psi = m(N_\nu N^\nu - B_\nu B^\nu)$, the cu
 
 1. **The preferred frame.** Is the neutral vector $k^\mu$ a genuine extra structure, or is it fixed by the algebra as the source claims? The corpus's *Conventions in the Biquaternion Universe* already distinguishes the algebra from the spacetime it is applied to; the question is whether $k$ is a fact about the algebra or a fact about the embedding.
 
-2. **The relation to the corpus's spinor module.** The corpus's Dirac field lives in a minimal left ideal of $\mathbb{B}$; here it is a complex four-vector. Is the dictionary a change of basis inside the same module, or a genuinely different module? Both are four-complex-dimensional linear representations of the same group; the neutral elements are the intertwiner.
+2. **The relation to the corpus's spinor module.** The corpus's Dirac field lives in a Peirce carrier of $\mathbb{B}$, which is a minimal left ideal here; here it is a complex four-vector. Is the dictionary a change of basis inside the same module, or a genuinely different module? Both are four-complex-dimensional linear representations of the same group; the neutral elements are the intertwiner.
 
 3. **The lattice consequence.** The source suggests, as "further speculation", that because the dualized Dirac equation is second order, and second-order Lagrangians have no fermion-doubling problem, the vector representation offers a route around the Nielsen–Ninomiya obstruction. The corpus's *Fermion Doubling and the Nielsen–Ninomiya Theorem* treats that obstruction as a lattice statement; whether the s-vector representation evades its hypotheses, or merely restates them in a different field variable, is open.
 

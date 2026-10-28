@@ -311,7 +311,7 @@ $$
 
 On $S_+$ the eigenbasis is $(\tilde\Pi_+,\vec\Upsilon_+)$, with eigenvalues $\lambda_+$ and $\lambda_-$; on $S_-$ it is $(\vec\Upsilon_-,\tilde\Pi_-)$, with eigenvalues $\lambda_+$ and $\lambda_-$. Each is an eigenbasis with distinct eigenvalues, because $B\neq0$.
 
-The spaces $S_\pm$ are the spinor spaces, the minimal left ideals. They are not the eigenspaces of $L_{\tilde Q}$: the $\lambda_+$-eigenspace is the right ideal $\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-$. The spaces $S_\pm$ are the eigenspaces of right multiplication $R_{\tilde Q}$. This basis is an eigenbasis of $L_{\tilde Q}$; on each $S_\pm$, $L_{\tilde Q}$ carries both eigenvalues, while $R_{\tilde Q}$ is scalar. The side of the multiplication is the whole difference. The labels first and second are fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing $B$ by $-B$ exchanges them.
+The spaces $S_\pm$ are the spinor spaces, the Peirce carriers and here the minimal left ideals. They are not the eigenspaces of $L_{\tilde Q}$: the $\lambda_+$-eigenspace is the right ideal $\tilde\Pi_+\mathbb{B}=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_-$, and the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}=\mathbb{C}\vec\Upsilon_+\oplus\mathbb{C}\tilde\Pi_-$. The spaces $S_\pm$ are the eigenspaces of right multiplication $R_{\tilde Q}$. This basis is an eigenbasis of $L_{\tilde Q}$; on each $S_\pm$, $L_{\tilde Q}$ carries both eigenvalues, while $R_{\tilde Q}$ is scalar. The side of the multiplication is the whole difference. The labels first and second are fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing $B$ by $-B$ exchanges them.
 
 ### Spinors and the $2\times2$ Model
 
@@ -473,7 +473,7 @@ Every nonzero vector is an eigenvector, every basis is an eigenbasis, and the ei
 $$
 \mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
 $$
-the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first minimal left ideal and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
+the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first Peirce carrier and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
 \mathsf M_2(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
@@ -1117,7 +1117,7 @@ $$
 $$
 \mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
 $$
-the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first minimal left ideal and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
+the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first Peirce carrier and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
 \mathsf M_2(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
@@ -1416,7 +1416,7 @@ $$
 $$
 \mathsf M_2(\tilde Q_2)=\begin{pmatrix}Q_{2,11}&Q_{2,12}\\Q_{2,21}&Q_{2,22}\end{pmatrix},
 $$
-the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first minimal left ideal and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
+the first column $(Q_{2,11},Q_{2,21})$ is the spinor in the first Peirce carrier and the second column $(Q_{2,12},Q_{2,22})$ is the spinor in the second. Their matrices are
 $$
 \mathsf M_2(\xi_+)=\begin{pmatrix}Q_{2,11}&0\\Q_{2,21}&0\end{pmatrix},
 \qquad
@@ -1528,7 +1528,7 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 | $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the Peirce corners |
 | $\vec\Upsilon_\pm$ | the nilpotents of the mixed Peirce corners, normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ |
 | $\mathcal{B}(\tilde Q)$ | the Peirce eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two minimal left ideals, the spinor spaces |
+| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two Peirce carriers, the minimal left ideals, the spinor spaces |
 | $\mathsf M_2$ | the fixed $2\times2$ matrix model |
 | $\mathsf M_2^Q$ | the eigenbasis matrix model |
 | $\rho_\pm=\mathsf M_2(\tilde\Pi_\pm)$ | the spectral projectors |

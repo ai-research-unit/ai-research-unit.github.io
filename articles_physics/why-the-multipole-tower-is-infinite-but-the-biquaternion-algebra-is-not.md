@@ -277,7 +277,7 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ | Clebsch–Gordan decomposition |
 | $\vec\nabla\vec\nabla = -\Delta\,e_t$ | The truncated second gradient |
 | $U(\mathrm{SU}(2))$ | Universal enveloping algebra (infinite-dimensional) |
-| $S = \mathbb{B}\tilde\Pi$ | Minimal left ideal: the two-dimensional spinor module, $\tilde\Pi$ a nonzero idempotent |
+| $S = \mathbb{B}\tilde\Pi$ | Peirce carrier: the two-dimensional spinor module, a minimal left ideal here; $\tilde\Pi$ a nonzero idempotent |
 | $\mathcal{Q}_{lm}$ | Multipole moment (a functional of the source) |
 | $\chi_l(\theta)$ | Character of $D^{(l)}$; $\chi_0+\chi_1 = 2+2\cos\theta$ |
 

@@ -347,7 +347,7 @@ whose universal cover is $\mathbb{C}^2$, an infinite cover, not a double cover. 
 
 ### The Spinor Reading
 
-The minimal left ideals $S_\pm=\mathbb{C}\Pi_\pm$ are one-dimensional over $\mathbb{C}$. A spinor is a single complex coordinate on one ideal:
+The Peirce carriers $S_\pm=\mathbb{C}\Pi_\pm$ are one-dimensional over $\mathbb{C}$; in this algebra they are the minimal left ideals. A spinor is a single complex coordinate on one carrier:
 
 $$
 \xi_+=\alpha\Pi_+,\qquad \xi_-=\beta\Pi_-,
@@ -360,7 +360,7 @@ $$
 M_{\breve Q}\xi_+=Q_+\xi_+,\qquad M_{\breve Q}\xi_-=Q_-\xi_-,
 $$
 
-and never mixes the two ideals. The word spinor is algebraic: an element of a minimal left ideal. The weights of $S_\pm$ are the full exponents $\pm\phi+i(\alpha\pm\beta)$; there is no half-angle. The two ideals are the two Peirce components, not the two Lorentz chiralities.
+and never mixes the two ideals. The word spinor is algebraic: an element of a Peirce carrier, which here is a minimal left ideal. The weights of $S_\pm$ are the full exponents $\pm\phi+i(\alpha\pm\beta)$; there is no half-angle. The two ideals are the two Peirce components, not the two Lorentz chiralities.
 
 ### The Matrix Picture
 

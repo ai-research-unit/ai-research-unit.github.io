@@ -38,7 +38,7 @@ and on the imaginary part this is the rotation of $\mathbb{R}^3$ through the ang
 
 ## The Dagger Sandwich
 
-The rotor of the previous section conjugates by a real quaternion and an inverse. The action the corpus uses for the Lorentz transformation of the whole algebra replaces the inverse by the Hermitian conjugate and admits any unit:
+The rotor of the previous section conjugates by a real quaternion, $\tilde Q\mapsto\tilde u\tilde Q\tilde u^{-1}$, with $\tilde u^{-1}=\tilde u^{\natural}$ on the unit sphere. The Lorentz action on the whole algebra uses the Hermitian adjoint instead, $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, and admits any unit $\tilde U$. The two operators agree only on the unitary slice, where $\tilde U^{*}=\tilde U^{-1}$:
 
 $$
 \mathrm{H}_{\tilde{Q}}:\ \mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{H}_{\tilde{Q}}(\tilde Q_3)=\tilde{Q}\,\tilde Q_3\,\tilde{Q}^{*},

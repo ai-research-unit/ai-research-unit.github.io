@@ -27,15 +27,15 @@ $$
 \tilde{Q} \mapsto \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}
 $$
 
-implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and the action reduces to $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the conjugation $x\mapsto\Lambda x\Lambda^{-1}$ by $\mathsf{M}_4(\tilde U_{\mathrm L})$, which is legitimate because in that representation a unit element satisfies $\mathsf{M}_4(\tilde U_{\mathrm L})^\dagger = \mathsf{M}_4(\tilde U_{\mathrm L})^{-1}$.
+implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and the action reduces to $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of *The Lorentz Transformation as a Biquaternionic Rotation*. In the Clifford representation the same action is the sandwich $x\mapsto\Lambda x\Lambda^{\mathrm{Cl}}$ by $\Lambda=\mathsf{M}_4(\tilde U_{\mathrm L})$, where $\Lambda^{\mathrm{Cl}}=\mathsf{M}_4(\tilde U_{\mathrm L}^{*})$ is the Clifford image of the Hermitian conjugate. It is the conjugation by $\Lambda$ only on the unitary slice, where that conjugate is the inverse.
 
 The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative. They lie in the odd part of $\mathrm{Cl}_{1,3}$ and act on vectors by the two-sided map of the Pin group,
 
 $$
-\rho(u): x \mapsto -\,u\,x\,u^{-1}, \qquad u\ \text{odd},\ u^2 = \pm I_4 ,
+\rho(u): x \mapsto -\,\epsilon(u)\,u\,x\,u, \qquad u\ \text{odd},\ u^2 = \epsilon(u)\,I_4,\ \epsilon(u)=\pm1 ,
 $$
 
-which is the signed inner conjugation. The sign in front is the only difference from the even formula, and it is what makes the odd elements reflections rather than rotations.
+which is the signed inner conjugation. A unit vector is its own inverse up to sign: $u^{2}=\epsilon(u)I_4$ makes the inverse $\epsilon(u)u$, so the formula uses only the Clifford product and the sign of the normal; no operator inverse is needed. The sign is what makes the odd elements reflections rather than rotations, and $\epsilon(u)$ records whether the normal is timelike or spacelike.
 
 ## The Grading by Reflection Count
 
@@ -117,7 +117,7 @@ with no relative sign between the Clifford square and the biquaternion norm. The
 
 ## Conjugation by $\gamma^0$ Is Complex Conjugation
 
-The frame $\gamma^0$ is not merely a bookkeeping element. It has a definite action on the algebra, and it is the action that defines the two sectors.
+The frame $\gamma^0$ is not merely a bookkeeping element. It has a definite action on the algebra, and it is the action that defines the split $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$.
 
 For every $\tilde{Q}\in\mathbb{B}$,
 
@@ -125,7 +125,7 @@ $$
 \boxed{\;\gamma^0\,\mathsf{M}_4(\tilde{Q})\,\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)\;},
 $$
 
-where $\tilde{Q}^*$ is the complex conjugate, $i\mapsto -i$ with the quaternion units fixed. Since complex conjugation is exactly the map that fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, this says that **conjugation by $\gamma^0$ is the sector-exchanging conjugation**: it is the spacetime-side avatar of the operation that separates the material and informational sectors.
+where $\tilde{Q}^*$ is the complex conjugate, $i\mapsto -i$ with the quaternion units fixed. Since complex conjugation is exactly the map that fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, this says that **conjugation by $\gamma^0$ is complex conjugation**: it is the spacetime-side avatar of the split $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, the rotation sector and its imaginary multiple. It preserves each of $\mathbb{M}_{\pm}$, because it commutes with the Hermitian conjugation whose eigenspaces they are; the sector exchange is multiplication by $i$, not a conjugation.
 
 Among the four generators, $\gamma^0$ is unique in this. The spatial generators reflect instead: $\gamma^k$ fixes $\vec e_k$ and negates the two units $\vec e_j$ with $j\neq k$, and it acts dually on the imaginary units, negating $i\vec e_k$ and fixing the other two. They are linear involutions on the quaternion units, not conjugations. Only the time direction conjugates.
 
@@ -143,7 +143,7 @@ $$
 
 So the two elementary conjugations of the algebra have separate Clifford interpretations — reversal for the quaternion conjugation, the frame for the complex one — and ${}^{*}$ is their composite.
 
-There is a consequence worth recording, because it bears on the mass term. The algebra's real structure is the anti-Hermitian conjugation $\flat = -{}^{*}$, and the identity above shows that $\gamma^0$ is *inside* it: the frame, with its sector-exchanging and reflection properties, is one of the two ingredients of $\flat$. A formulation of the mass built on $\flat$ therefore carries the frame, but in the guise of a reality condition rather than of a generator; the linear and chirality-off-diagonal mass term of *The Dirac Equation in Biquaternionic Form* displays it openly instead. This is an observation about how the frame is packaged, not a derivation; it is stated here because it is the reason the frame is easy to overlook.
+There is a consequence worth recording, because it bears on the mass term. The algebra's real structure is the anti-Hermitian conjugation $\flat = -{}^{*}$, and the identity above shows that $\gamma^0$ is *inside* it: the frame, with its complex-conjugation and reflection properties, is one of the two ingredients of $\flat$. A formulation of the mass built on $\flat$ therefore carries the frame, but in the guise of a reality condition rather than of a generator; the linear and chirality-off-diagonal mass term of *The Dirac Equation in Biquaternionic Form* displays it openly instead. This is an observation about how the frame is packaged, not a derivation; it is stated here because it is the reason the frame is easy to overlook.
 
 ## The Spaces of Rotations and of Reflections
 
@@ -182,13 +182,13 @@ $$
 
 whose even part is $\mathrm{Spin}(1,3) = SL(2,\mathbb{C})$ and whose algebra-level image is $\mathrm{Cl}_{1,3} = \mathrm{Cl}_{1,3}^{+}\oplus\mathrm{Cl}_{1,3}^{-}$. The relation between the two spaces is generation: the rotations are the products of an even number of reflections, and the bivectors that generate the Lorentz algebra are the products of two.
 
-The reflections account for the four components of the full Lorentz group. Under the Pin action $\rho(u) : x\mapsto -uxu^{-1}$, the frame acts by a sign on the time direction alone or on the three spatial directions alone, according to the sign convention:
+The reflections account for the four components of the full Lorentz group. Under the Pin action $\rho(u) : x\mapsto -\epsilon(u)\,u x u$, the frame acts by a sign on the time direction alone or on the three spatial directions alone, according to the sign convention:
 
 $$
-x \mapsto \gamma^0 x\,(\gamma^0)^{-1} : \mathrm{diag}(+1,-1,-1,-1) \quad\text{(parity)},
+x \mapsto \gamma^0 x\,\gamma^0 : \mathrm{diag}(+1,-1,-1,-1) \quad\text{(parity)},
 $$
 $$
-x \mapsto -\gamma^0 x\,(\gamma^0)^{-1} : \mathrm{diag}(-1,+1,+1,+1) \quad\text{(time reversal)} .
+x \mapsto -\gamma^0 x\,\gamma^0 : \mathrm{diag}(-1,+1,+1,+1) \quad\text{(time reversal)} .
 $$
 
 Both are reflections, with determinant $-1$; the sign selects which of the two is realised. The identity component is the even part, and the discrete symmetries are the reflections.
@@ -324,7 +324,7 @@ The claims of this article, in order.
 
 3. **The frame and the metric.** Every vector is $\gamma^0\mathsf{M}_4(w)$ with $w\in\mathbb{M}_+$, and $\mathsf{M}_4(\mathbb{M}_+)$ is the identity together with the timelike bivectors — the boost sector. The biquaternion norm on the Hermitian basis is $g = \mathrm{diag}(+1,-1,-1,-1)$, and on the material basis $\eta = -g$. The Clifford metric is the biquaternion norm of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.
 
-4. **Conjugation by $\gamma^0$ is complex conjugation.** $\gamma^0\mathsf{M}_4(\tilde{Q})\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)$, the sector-exchanging conjugation. Together with reversal, which is quaternion conjugation, it composes into ${}^{*}$. The real structure $\flat = -{}^{*}$ therefore carries the frame within it.
+4. **Conjugation by $\gamma^0$ is complex conjugation.** $\gamma^0\mathsf{M}_4(\tilde{Q})\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)$: it fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, hence preserves each of $\mathbb{M}_{\pm}$. Together with reversal, which is quaternion conjugation, it composes into ${}^{*}$. The real structure $\flat = -{}^{*}$ therefore carries the frame within it.
 
 5. **Rotations and reflections have different spaces.** The rotations are the unit-norm biquaternions, a group of dimension $6$ with the bivectors as Lie algebra. The reflections are the odd unit elements, a single coset of dimension $3$ organised by their $\mathbb{M}_+$ normals, not a group. Together they are $\mathrm{Pin}(1,3)$. **Anti-linear maps shift the correspondence by one:** their determinant carries an extra $-1$, so an even internal matrix acts as a reflection and an odd one as a proper transformation — which is how $T$ (even) is a reflection while $C$ (odd) is not.
 
@@ -347,7 +347,7 @@ The claims of this article, in order.
 | $\gamma_5 = i_{\mathrm{Cl}}\omega$ | Chirality operator, $\gamma_5^2 = I_4$ |
 | $\tilde\Pi_{L,R} = \tfrac12(1\pm\gamma_5)$ | Chirality projectors, rank $2$ |
 | $\gamma^0$ | The frame; the reflection whose normal is $e_t$ |
-| $\rho(u) : x\mapsto -uxu^{-1}$ | Pin action of an odd unit element |
+| $\rho(u) : x\mapsto -\epsilon(u)\,u x u$ | Pin action of an odd unit element; $u^2=\epsilon(u)I_4$ |
 | $\mathrm{rev}(\mathsf{M}_4(\tilde{Q})) = \mathsf{M}_4(\tilde{Q}^{\natural})$ | Clifford reversal is quaternion conjugation |
 | $\mathsf{M}_4(\tilde{Q}^{*}) = \gamma^0\mathrm{rev}(\mathsf{M}_4(\tilde{Q}))\gamma^0$ | Hermitian conjugation |
 | $\gamma^0\mathsf{M}_4(\tilde{Q})\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)$ | Conjugation by the frame is complex conjugation |

@@ -65,7 +65,7 @@ The physical electron additionally carries its genuine spin, so the full low-ene
 
 ### The framework's ideals
 
-The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, whose minimal left ideals are the two columns. The parent's Dirac field is a pair of Weyl spinors, one per ideal, and that pair is what the framework calls **chirality**: the left and right components that the mass term mixes. The framework therefore has, natively, exactly one two-fold internal structure — the chirality pair — and its mass is the term that couples the two ideals.
+The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, whose Peirce carriers are the two columns, the minimal left ideals here. The parent's Dirac field is a pair of Weyl spinors, one per ideal, and that pair is what the framework calls **chirality**: the left and right components that the mass term mixes. The framework therefore has, natively, exactly one two-fold internal structure — the chirality pair — and its mass is the term that couples the two ideals.
 
 ### Counting versus identification
 

@@ -179,7 +179,7 @@ with a cyclically permuted gradient, the star conjugation $\varphi^{*}=\sigma_2\
 
 ## Open Questions
 
-1. **Which ideal?** The framework's two minimal left ideals are its left and right Weyl spinors. In STA a minimal ideal is selected by an idempotent built from a fixed null or timelike vector, and the Dirac–Hestenes equation uses $\gamma_0$ explicitly. Does the framework's choice of ideal correspond to the standard choice of $\gamma_0$, or to a different fixed vector?
+1. **Which ideal?** The framework's two Peirce carriers, minimal left ideals here, are its left and right Weyl spinors. In STA a minimal ideal is selected by an idempotent built from a fixed null or timelike vector, and the Dirac–Hestenes equation uses $\gamma_0$ explicitly. Does the framework's choice of ideal correspond to the standard choice of $\gamma_0$, or to a different fixed vector?
 
 2. **The right action.** If the physical Dirac field is the STA spinor, then the framework's equation must be rewritten to act on the right for the mass and phase terms. What, algebraically, distinguishes the left from the right action here, and does the framework's sector split select one?
 

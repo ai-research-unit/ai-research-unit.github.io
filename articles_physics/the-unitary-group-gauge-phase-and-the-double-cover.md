@@ -114,7 +114,7 @@ $$
 
 It is an isometry of the Hilbert space. It does not preserve Hermiticity: $(\tilde U\tilde X)^{*}=\tilde X^{*}\tilde U^{*}\neq\tilde U\tilde X$ in general. The left action is therefore the action on the spinor space, not on the state space; the state space carries the conjugation instead.
 
-The reading is the **gauge of the spinor**. A spinor is an element of a minimal left ideal; a unitary left multiplication is a change of the basis of the spinor. The Hermitian form on the spinor space is invariant, and the global phase is the kernel of the action on rays.
+The reading is the **gauge of the spinor**. A spinor is an element of a Peirce carrier, which is a minimal left ideal in this algebra; a unitary left multiplication is a change of the basis of the spinor. The Hermitian form on the spinor space is invariant, and the global phase is the kernel of the action on rays.
 
 The state space is not the spinor space. A state is a positive trace-one element, and it transforms by conjugation:
 
@@ -196,7 +196,7 @@ $$
 
 is the double cover. A rotation by $2\pi$ is the identity in $SO(3)$ and $-e_t$ in $SU(2)$; a rotation by $4\pi$ is the identity in both. The norm-one slice $SU(2)$ is the spin group, and its two-valued representation is the spinor.
 
-The physical reading is the **spinor**. A state that transforms under $SU(2)$ rather than $SO(3)$ changes sign under a full turn; the sign is unobservable in a single state but observable in an interference experiment. The algebra's minimal left ideals are the spinor spaces, and the unitary group acts on them by left multiplication. The double cover is the algebraic form of half-integer spin.
+The physical reading is the **spinor**. A state that transforms under $SU(2)$ rather than $SO(3)$ changes sign under a full turn; the sign is unobservable in a single state but observable in an interference experiment. The algebra's Peirce carriers are the spinor spaces, and here they are the minimal left ideals; the unitary group acts on them by left multiplication. The double cover is the algebraic form of half-integer spin.
 
 The reading is not a derivation of the spin-statistics theorem. It is the statement that the algebra's norm-one unitary group $SU(2)$ is the double cover of the rotation group, and that the spinor representation is the fundamental representation. The statistics is an extra input.
 

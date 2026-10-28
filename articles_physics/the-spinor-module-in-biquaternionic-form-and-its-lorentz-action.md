@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has been read, in the companion articles, in two ways. The article *The Material Sector: Four-Vectors, Interval and Lorentz Action* identifies the anti-Hermitian subspace $\mathbb{M}_-$ with Minkowski space: the four-vectors of relativistic physics live in $\mathbb{M}_-$, and the Lorentz group acts on them by the **rotor conjugation** with $\tilde U_{\mathrm L}$, the unit-norm biquaternion that implements the Lorentz transformation,
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has been read, in the companion articles, in two ways. The article *The Material Sector: Four-Vectors, Interval and Lorentz Action* identifies the anti-Hermitian subspace $\mathbb{M}_-$ with Minkowski space: the four-vectors of relativistic physics live in $\mathbb{M}_-$, and the Lorentz group acts on them by the **Hermitian sandwich** with $\tilde U_{\mathrm L}$, the unit-norm biquaternion that implements the Lorentz transformation,
 
 $$
 \tilde{Q} \;\longmapsto\; \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*}.
@@ -10,7 +10,7 @@ $$
 
 The article *The Informational Sector: States, Observables and Probability* identifies the Hermitian subspace $\mathbb{M}_+$ with the observables of a two-state system, whose products generate its operator algebra. Both accounts rest on a more primitive representation-theoretic fact: $\mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, so it has a two-dimensional complex module, and the Lorentz group acts on that module by **multiplication**. This module is the **spinor module**. It is the subject of the present article.
 
-The two actions are different in kind. The four-vector action is two-sided — it is a conjugation — while the spinor action is one-sided. The difference is not an accident of notation. It is the algebraic origin of the double cover: the element $-e_t$ of $SL(2,\mathbb{C})$ acts trivially by conjugation on $\mathbb{M}_-$, but it acts as $-\mathrm{id}$ on the spinor module. Consequently the four-vector representation descends to the Lorentz group, while the spinor representation does not: the spinor is a genuine representation of the double cover.
+The two actions are different in kind. The four-vector action is two-sided — it is a Hermitian sandwich — while the spinor action is one-sided. The difference is not an accident of notation. It is the algebraic origin of the double cover: the element $-e_t$ of $SL(2,\mathbb{C})$ acts trivially by the Hermitian sandwich on $\mathbb{M}_-$, but it acts as $-\mathrm{id}$ on the spinor module. Consequently the four-vector representation descends to the Lorentz group, while the spinor representation does not: the spinor is a genuine representation of the double cover.
 
 This article develops three things explicitly: the identification of the spinor module inside the biquaternion algebra, the two chiral halves (the left- and right-handed Weyl spinors), and the action of $SL(2,\mathbb{C})$ on the module together with its bilinear pairings. It is written as the foundation for the exercise on chirality and the Weyl spinors: the notation, the module, the two chiral halves, and the action are all defined here, so that the exercise can apply them.
 
@@ -146,7 +146,7 @@ $$
 
 For example $\vec e_z \tilde\Pi_+ = -i \tilde\Pi_+$ and $\vec e_z \vec\Upsilon_y = i \vec\Upsilon_y$, matching $\mathsf{M}_2(\vec e_z) = \operatorname{diag}(-i,i)$; and $\vec e_x \tilde\Pi_+ = -i \vec\Upsilon_y$, matching the first column of $\mathsf{M}_2(\vec e_x)=-i\sigma_1$. The two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$; the algebra is simple, so all its simple modules are isomorphic.
 
-This ideal model is the precise sense in which "the spinor module lies inside $\mathbb{B}$": a spinor is an element of the algebra that lies in the minimal left ideal $\mathbb{B}\tilde\Pi_+$, and the algebra acts on it by left multiplication. It is not an arbitrary biquaternion.
+This carrier model is the precise sense in which "the spinor module lies inside $\mathbb{B}$": a spinor is an element of the algebra that lies in the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, and the algebra acts on it by left multiplication. It is not an arbitrary biquaternion.
 
 ## The Two Chiral Halves
 
@@ -214,7 +214,7 @@ The subgroups relevant to the series sit inside it as follows:
 
 Pure boosts satisfy $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$; they do not form a subgroup (the product of two non-collinear boosts is a boost plus a rotation). Pure rotations form the subgroup $SU(2) = SL(2,\mathbb{C})\cap \mathrm{U}(2)$.
 
-The action on the four-vector space is the conjugation map
+The action on the four-vector space is the Hermitian sandwich
 
 $$
 \pi:\; SL(2,\mathbb{C}) \longrightarrow SO^{+}(1,3), \qquad
@@ -260,7 +260,7 @@ $$
 \tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\psi) = (\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\psi.
 $$
 
-No conjugation appears. This is the defining feature of the spinor representation.
+No two-sided action appears. This is the defining feature of the spinor representation.
 
 ### Boosts and Rotations Explicitly
 
@@ -367,7 +367,7 @@ $$
 \tilde{Q} = u\,v^{\dagger} \;\longmapsto\; (gu)(gv)^{*} = g\,\tilde{Q}\,g^{*}.
 $$
 
-This is exactly the transformation law of the **rotor conjugation** on the material sector. It must be read as a statement about the equivariance of the whole algebra $M_2(\mathbb{C})$, however, and not as the vector representation itself; two cautions are in order. First, the real span of the outer products $u v^{\dagger}$ as $u$ and $v$ range over $S$ is all of $M_2(\mathbb{C})$, of real dimension $8$, not the Hermitian subspace of real dimension $4$: the matrices $E_{12}$ and $iE_{12}$ are each a single outer product, realized by $u = \vec e_x$, $v = \vec e_y$ and by $u = \vec e_x$, $v = -i\vec e_y$ respectively, and they are independent over the reals. Second, $u v^{\dagger}$ is Hermitian **only** when the two spinors are proportional by a real factor, $v = \lambda u$ with $\lambda \in \mathbb{R}$; for a generic pair $i\,uv^{\dagger}$ does not lie in $\mathbb{M}_-$ at all, and is therefore not a four-vector.
+This is exactly the transformation law of the **Hermitian sandwich** on the material sector. It must be read as a statement about the equivariance of the whole algebra $M_2(\mathbb{C})$, however, and not as the vector representation itself; two cautions are in order. First, the real span of the outer products $u v^{\dagger}$ as $u$ and $v$ range over $S$ is all of $M_2(\mathbb{C})$, of real dimension $8$, not the Hermitian subspace of real dimension $4$: the matrices $E_{12}$ and $iE_{12}$ are each a single outer product, realized by $u = \vec e_x$, $v = \vec e_y$ and by $u = \vec e_x$, $v = -i\vec e_y$ respectively, and they are independent over the reals. Second, $u v^{\dagger}$ is Hermitian **only** when the two spinors are proportional by a real factor, $v = \lambda u$ with $\lambda \in \mathbb{R}$; for a generic pair $i\,uv^{\dagger}$ does not lie in $\mathbb{M}_-$ at all, and is therefore not a four-vector.
 
 The Hermitian subspace $\mathbb{M}_+$ is the **real** span of the self-pair products $u\,u^{\dagger}$, of real dimension $4$. For a general pair the object that transforms as a four-vector is the symmetrised product
 
@@ -427,7 +427,7 @@ $$
 $$
 where the overall sign is the conventional one for $\omega$. This was recomputed here on generic elements: the brackets of the three bilinears reproduce the structure constants, so the map $z\mapsto v(z)$ is a moment-map-like realisation of the Lie algebra on the spinor space, not merely an equivariant map to the vectors. Its use in the spinfoam programme — the area-constrained symplectomorphism to $T^*SU(1,1)$ — is recorded in *Quantum Gravity under the Biquaternion Framework — A Research Agenda*.
 
-## Spinor Action Versus Rotor Conjugation
+## Spinor Action Versus the Hermitian Sandwich
 
 It is worth stating the contrast in one place, since it is the conceptual centre of the article.
 
@@ -472,12 +472,12 @@ $$
 \operatorname{Spin}(1,3) \;\cong\; SL(2,\mathbb{C}) \;\subset\; \mathbb{B} \;\subset\; \mathrm{Cl}_{1,3}.
 $$
 
-Two distinct actions are then visible in the Clifford picture. The spin group acts on the spinor module by left multiplication — one-sided, because a Clifford module is a module and the action is linear. The same group acts on the vector space $W\subset\mathrm{Cl}_{1,3}$ (spanned by the odd generators) by a **two-sided conjugation** — the signed inner conjugation, $v\mapsto\tilde U_{\mathrm L}v\tilde U_{\mathrm L}^{-1}$, written in the read-list conventions as the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ — which is two-sided because a vector is being conjugated inside the algebra. The vector representation is the tensor product of the spinor representation with its conjugate in the sense of the preceding section; the even subalgebra is exactly the algebra generated by the bivectors, and the bivectors are the Lie algebra of the spin group.
+Two distinct actions are then visible in the Clifford picture. The spin group acts on the spinor module by left multiplication — one-sided, because a Clifford module is a module and the action is linear. The same group acts on the vector space $W\subset\mathrm{Cl}_{1,3}$ (spanned by the odd generators) by a **two-sided action** — multiplied on the left by $\tilde U_{\mathrm L}$ and on the right by its Clifford adjoint, because a vector is an element of the algebra and not a module element. In the read-list conventions the Clifford adjoint is the biquaternion dagger, so the action is the Hermitian sandwich $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$. The vector representation is the tensor product of the spinor representation with its conjugate in the sense of the preceding section; the even subalgebra is exactly the algebra generated by the bivectors, and the bivectors are the Lie algebra of the spin group.
 
 This correspondence between the biquaternion algebra and the even Clifford subalgebra is the algebraic origin of the whole structure. It explains at once:
 
 1. why a spinor transforms one-sidedly (it is an element of a Clifford module, and modules are acted on linearly);
-2. why a four-vector transforms two-sidedly (it is an element of the odd part, acted on by signed inner conjugation);
+2. why a four-vector transforms two-sidedly (it is an element of the odd part, acted on by the Hermitian sandwich);
 3. why $-e_t$ acts as $-\mathrm{id}$ on spinors but trivially on four-vectors (a single factor of the central unit versus two);
 4. why the two chiralities are not visible to the complex algebra $\mathbb{B}$ but appear on complexification: the chirality operator $\gamma_5 = i_{\mathbb{C}}\omega$ (the scalar imaginary of the complexified Clifford algebra times the volume element $\omega$) is not an element of the even subalgebra, and it anticommutes with the generators; the odd part therefore exchanges the two half-spin modules, while the even part $\mathbb{B}$ preserves them. The complexified even algebra splits accordingly,
 $$
@@ -500,7 +500,7 @@ A natural candidate is the module action defined here; its compatibility with th
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, the two-dimensional complex **spinor module** $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts by matrix multiplication. Inside the algebra, $S$ is realized as the minimal left ideal $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+ = \tfrac{1}{2}(e_t+i\vec e_z)$, whose elements are the spinors; the algebra acts by left multiplication, and the action is one-sided.
+The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, the two-dimensional complex **spinor module** $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts by matrix multiplication. Inside the algebra, $S$ is realized as the Peirce carrier $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+ = \tfrac{1}{2}(e_t+i\vec e_z)$, which is the minimal left ideal here; its elements are the spinors, and the algebra acts by left multiplication, and the action is one-sided.
 
 The **left-handed Weyl spinor** is the defining module $(\tfrac12,0)$; the **right-handed Weyl spinor** is its complex conjugate $(0,\tfrac12)$. These are the two **chiral halves**; their direct sum is the four-component Dirac spinor module. The two halves are not isomorphic as complex representations of $SL(2,\mathbb{C})$ (they are conjugate to one another), and the chirality distinction is a real-structure distinction that appears on complexification, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$.
 
@@ -552,7 +552,7 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 ## Further Reading
 
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the standard two-component spinor calculus, the invariant $\epsilon$-form, and the Weyl spinors.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford-algebra construction of spinors as minimal left ideals and the double cover of the Lorentz group.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford-algebra construction of spinors from idempotents and the double cover of the Lorentz group.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of the Lorentz group and the relation between spinors and four-vectors.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original formulation of spinors and Lorentz transformations in the even subalgebra.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original spinor representation of the electron.

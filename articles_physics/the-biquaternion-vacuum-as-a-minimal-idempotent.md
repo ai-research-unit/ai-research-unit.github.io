@@ -180,7 +180,7 @@ $$
 $$
 a two-complex-dimensional space, because the map $\tilde Q\mapsto\tilde Q \tilde\Pi_+$ annihilates the rank-one complement and its image is the column space of $\mathsf{M}_2(\tilde\Pi_+)$. With $\mathsf{M}_2(\tilde\Pi_+) = \mathrm{diag}(1,0)$ the image is the space of column vectors with second entry zero, that is, the **fundamental module** of the algebra — the two-component spinor space on which the field's spinors live. So
 
-> the one-mode vacuum idempotent determines the one-particle (spinor) module as the minimal left ideal it generates.
+> the one-mode vacuum idempotent determines the one-particle (spinor) module as the Peirce carrier it generates, a minimal left ideal here.
 
 This is the mechanism by which the vacuum situates the field in the framework: the algebra alone has no distinguished module, and the choice of vacuum idempotent selects one. Conversely the module fixes the idempotent only up to the equivalence $\tilde\Pi\mapsto \tilde U\tilde\Pi\tilde U^{*}$ by unitary units of the algebra, which is the statement that the module is unique while the vacuum is not.
 
@@ -228,7 +228,7 @@ The minimal-idempotent interpretation is not a diminution of the field vacuum. I
 - The idempotents of $\mathbb{B}$ are classified by rank; the rank-one (minimal) Hermitian idempotents of $\mathbb{M}_+$ are exactly $\tilde\Pi(\vec u) = \tfrac12(e_t+i\vec u)$ with $|\vec u|=1$.
 - $\tilde\Pi(\vec u)$ is Hermitian, idempotent, of unit trace, and minimal; $\tilde\Pi_- = e_t-\tilde\Pi_+$ is its orthogonal complement, and the two resolve the identity.
 - $\langle\tilde\Pi(\pm\vec u)\rangle_{\natural} = 0$ and $\det\mathsf{M}_2(\tilde\Pi(\pm\vec u))=0$: the vacuum is a zero divisor on the light cone.
-- $\mathbb{B}\tilde\Pi(\vec u)$ is a minimal left ideal, isomorphic to $\mathbb{C}^2$, the fundamental (spinor) module.
+- $\mathbb{B}\tilde\Pi(\vec u)$ is a Peirce carrier, a minimal left ideal here, isomorphic to $\mathbb{C}^2$, the fundamental (spinor) module.
 - The vacuum manifold is $S^2$, on which the unit real quaternions act transitively.
 
 **Established (physics).**
@@ -237,7 +237,7 @@ The minimal-idempotent interpretation is not a diminution of the field vacuum. I
 
 **Interpretation.**
 - Reading the vacuum as a minimal idempotent, and reading the vacuum manifold as the order-parameter space of a spontaneously chosen state, are interpretations of algebraic facts. They are precise; they are not derivations of the field-theoretic vacuum.
-- The identification of the minimal left ideal with the one-particle module is standard representation theory applied to $\mathbb{B}$; its **physical interpretation** as "the vacuum determines the one-particle space" is the interpretive step.
+- The identification of the Peirce carrier with the one-particle module, which here is a minimal left ideal, is standard representation theory applied to $\mathbb{B}$; its **physical interpretation** as "the vacuum determines the one-particle space" is the interpretive step.
 
 **Open.**
 - Whether a dynamics inside the framework selects a particular minimal idempotent, and by what mechanism, is not addressed by the algebra.

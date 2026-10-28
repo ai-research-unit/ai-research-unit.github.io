@@ -130,7 +130,7 @@ In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ the 
 
 ### The Spinors
 
-The two minimal left ideals
+The two Peirce carriers, the minimal left ideals here,
 
 $$
 S_+=\mathbb{B}\tilde\Pi_+,

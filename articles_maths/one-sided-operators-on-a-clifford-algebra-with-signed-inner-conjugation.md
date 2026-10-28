@@ -133,7 +133,7 @@ the half-turn of the plane $\mathrm{span}(e_1,e_2)$. Here the plain and the sign
 
 ### The Sign Cannot Be Seen on the Ideal Alone
 
-In the same algebra let $\pi=\tfrac12(1+e_3)$ be the primitive idempotent of *Spinors as Minimal Left Ideals with Inner Conjugation*, and let $I=\mathrm{Cl}\,\pi$. Left multiplication by $e_1$ maps $I$ onto $e_1I$, and left multiplication by $\alpha(e_1)=-e_1$ maps it onto $-I$; the two images coincide as subspaces, since $I$ is a linear subspace and $e_1I=(-e_1)I$. So on the ideal the two one-sided operators have the same image and the same kernel, and no one-sided computation on $I$ separates them. What separates them is the parity of the representative and the pairing with the inverse right multiplication, which is the content of the two next articles of the category.
+In the same algebra let $\pi=\tfrac12(1+e_3)$ be the primitive idempotent of *Peirce Carriers and Inner Conjugation*, and let $I=\mathrm{Cl}\,\pi$. Left multiplication by $e_1$ maps $I$ onto $e_1I$, and left multiplication by $\alpha(e_1)=-e_1$ maps it onto $-I$; the two images coincide as subspaces, since $I$ is a linear subspace and $e_1I=(-e_1)I$. So on the ideal the two one-sided operators have the same image and the same kernel, and no one-sided computation on $I$ separates them. What separates them is the parity of the representative and the pairing with the inverse right multiplication, which is the content of the two next articles of the category.
 
 ## Summary
 

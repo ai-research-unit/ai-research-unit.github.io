@@ -88,7 +88,7 @@ The two halves therefore have sharply different finite-dimensional characters: c
 
 ### The Vacuum Module Is Cyclically Generated
 
-Take the vacuum state $\tilde{Ϛ}=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. Its GNS space is the minimal left ideal,
+Take the vacuum state $\tilde{Ϛ}=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. Its GNS space is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, the minimal left ideal here,
 $$
 \mathcal H_{\tilde\Pi_+}\cong\mathbb{B}\,\tilde\Pi_+\cong\mathbb{C}^2,
 $$

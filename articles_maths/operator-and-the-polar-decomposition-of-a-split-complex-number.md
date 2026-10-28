@@ -269,7 +269,7 @@ Its identity component is $\mathbb{R}^2$, simply connected; the exponential is a
 
 ### The Spinor Reading
 
-The minimal left ideals $S_\pm=\mathbb{R}\Pi_\pm$ are one-dimensional. A spinor is a single real coordinate on one ideal:
+The Peirce carriers $S_\pm=\mathbb{R}\Pi_\pm$ are one-dimensional; in this algebra they are the minimal left ideals. A spinor is a single real coordinate on one carrier:
 
 $$
 \xi_+=\alpha\Pi_+,\qquad \xi_-=\beta\Pi_-,
@@ -282,7 +282,7 @@ $$
 M_Q\xi_+=\lambda_+\xi_+,\qquad M_Q\xi_-=\lambda_-\xi_-,
 $$
 
-and never mixes the two ideals. The two spinor spaces are the two null lines of the split form. The word spinor is algebraic: an element of a minimal left ideal. The weight of $S_\pm$ under the boost is $\pm\phi$, not $\pm\phi/2$. The Lorentz spinor of $SO^{+}(1,1)$, of weight $\pm\phi/2$, is a different module; it is not an element of $\mathbb{D}$.
+and never mixes the two ideals. The two spinor spaces are the two null lines of the split form. The word spinor is algebraic: an element of a Peirce carrier, which here is a minimal left ideal. The weight of $S_\pm$ under the boost is $\pm\phi$, not $\pm\phi/2$. The Lorentz spinor of $SO^{+}(1,1)$, of weight $\pm\phi/2$, is a different module; it is not an element of $\mathbb{D}$.
 
 The two ideals are also the two Peirce components. They are not the two Lorentz chiralities; the algebra is two-dimensional, and its two invariant lines are the null lines of the vector representation. The distinction is the same as in the biquaternion, where the Peirce chiralities are not the Lorentz chiralities.
 

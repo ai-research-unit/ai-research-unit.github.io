@@ -39,7 +39,7 @@ which enters the spectrum as a parameter.
 
 ### The module transcription
 
-The framework's states are spinors in the minimal left ideal $\mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$, and a position-space treatment extends this to a spinor field $\psi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \in \mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$ whose argument carries the position dependence. In this transcription the Dirac–Coulomb problem is the standard one,
+The framework's states are spinors in the Peirce carrier $\mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$, a minimal left ideal here, and a position-space treatment extends this to a spinor field $\psi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \in \mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$ whose argument carries the position dependence. In this transcription the Dirac–Coulomb problem is the standard one,
 
 $$
 i\hbar\,\partial/\partial t'\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot p + \beta mc^2 + V(r)\,\Bigr]\psi,

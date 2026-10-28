@@ -84,7 +84,7 @@ and it lies along the time-like direction $ie_t$ of the material sector, as the 
 
 ## The State Module and the Spinor Wave Function
 
-The framework's states are spinors in a minimal left ideal $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$. A position-space treatment requires a spinor **field**,
+The framework's states are spinors in the Peirce carrier $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, a minimal left ideal here. A position-space treatment requires a spinor **field**,
 
 $$
 \psi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{B}\tilde\Pi \cong \mathbb{C}^2,

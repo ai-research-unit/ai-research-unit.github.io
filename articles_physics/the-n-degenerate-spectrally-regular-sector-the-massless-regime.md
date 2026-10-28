@@ -259,8 +259,8 @@ The cell is not a particle count. One zero eigenvalue is one frozen mode, not an
 | $\kappa=2Q_t$ | the non-zero eigenvalue, the complex scale |
 | $\lambda_+=\kappa,\ \lambda_-=0$ | the spectrum |
 | $e_+=\tilde\Pi,\ e_-=e_t-\tilde\Pi$ | the spectral idempotents |
-| $S_+=\mathbb{B}\tilde\Pi$ | the first spinor space, a minimal left ideal |
-| $S_-=\mathbb{B}e_-$ | the second spinor space, a minimal left ideal, and the right annihilator |
+| $S_+=\mathbb{B}\tilde\Pi$ | the first spinor space, the Peirce carrier (a minimal left ideal here) |
+| $S_-=\mathbb{B}e_-$ | the second spinor space, the Peirce carrier (a minimal left ideal here), and the right annihilator |
 | $\vec\Upsilon_\pm$ | the normalised nilpotents, $\vec\Upsilon_+\vec\Upsilon_-=e_-$, $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi$ |
 | $\tilde\Pi\mathbb{B}$ | the image of $L_{\tilde Q}$, a minimal right ideal |
 | $\ker L_{\tilde Q}$ | the left annihilator, spanned by $\vec\Upsilon_+$ and $e_-$ |

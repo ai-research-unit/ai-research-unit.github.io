@@ -21,13 +21,13 @@ The article is organized as follows. The rotation algebra is constructed as the 
 
 ### Rotations and Their Generators
 
-The rotation group acts on the algebra by inner automorphisms. For a unit quaternion $Q$ with $Q\bar{Q}=e_t$, the map
+The rotation group acts on the algebra by inner automorphisms. A rotation quaternion is unitary, $QQ^{*}=e_t$, so its inner automorphism — the adjoint action — is the Hermitian sandwich
 
 $$
-R_Q:\;\tilde{Q}\longmapsto Q\tilde{Q}Q^{-1}=\bar{Q}\tilde{Q}Q
+R_Q:\;\tilde{Q}\longmapsto Q\tilde{Q}Q^{*}.
 $$
 
-is an algebra automorphism that fixes the centre, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{M}_-$ and $\mathbb{M}_+$: conjugation preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=\exp(\theta\,\vec e_k/2)$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
+It is an algebra automorphism that fixes the centre, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{M}_-$ and $\mathbb{M}_+$: the Hermitian sandwich preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=\exp(\theta\,\vec e_k/2)$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
 
 $$
 \delta_k\tilde{Q} = \tfrac{\theta}{2}\,[\vec e_k,\tilde{Q}] = \tfrac{\theta}{2}\,\mathrm{ad}_{\vec e_k}\tilde{Q} .
@@ -289,7 +289,7 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ | Informational sector (Hermitian) |
 | $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Vector part of the material sector; spin-one carrier |
 | $\mathrm{ad}_{\tilde{Q}}\tilde{Q}_3=[\tilde{Q},\tilde{Q}_3]$ | Inner derivation (adjoint action) |
-| $R_Q(\tilde{Q})=Q\tilde{Q}Q^{-1}$ | Inner automorphism; rotation for $Q=\exp(\theta \vec e_k/2)$ |
+| $R_Q(\tilde{Q})=Q\tilde{Q}Q^{*}$ | Inner automorphism; rotation for $Q=\exp(\theta \vec e_k/2)$ |
 | $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ | Hermitian angular-momentum (spin) generator |
 | $\vec L=\vec x\times\vec p$, $\vec S_k=J_k$ | Orbital and internal parts; $\vec J=\vec L+\vec S$ |
 | $[J_i,J_j]=i\varepsilon_{ijk}J_k$ | Rotation algebra (verified, residual zero) |

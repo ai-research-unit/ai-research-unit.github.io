@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The two spinor spaces of *The Spinor Spaces* are the two minimal left ideals of the algebra. This article states that they are ideals, that they are minimal, that every minimal left ideal is one of their conjugates, and that the algebra is their direct sum as a left module.
+The two spinor spaces of *The Spinor Spaces* are the two Peirce carriers of the algebra, and in this algebra they are the two minimal left ideals. This article states that they are ideals, that they are minimal, that every minimal left ideal is one of their conjugates, and that the algebra is their direct sum as a left module.
 
 The article assumes the Peirce frame and the two spinor spaces, and the regular module. The spaces themselves, their couples and the left and right actions on them are *The Spinor Spaces*; the ideals and the general theory of the regular module are *The Regular Module*. What is added here is the minimality and the classification.
 
-The word spinor is the name of an element of one of these ideals. Nothing here is a physical statement.
+The word spinor is the name of an element of one of these carriers, which here is a minimal left ideal. Nothing here is a physical statement.
 
 ## The Two Minimal Left Ideals
 
@@ -54,7 +54,7 @@ By Schur's lemma the endomorphisms of the simple module are the scalars, $\opera
 
 ## Summary
 
-- The two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two minimal left ideals, of complex dimension two.
+- The two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two Peirce carriers, which here are the two minimal left ideals, of complex dimension two.
 - $\mathbb{B}=S_+\oplus S_-$ as a left module.
 - Every left ideal is a direct sum of minimal left ideals, and every minimal left ideal is $\mathbb{B}\tilde\Pi$ for a primitive idempotent.
 - All minimal left ideals are isomorphic; the simple module is $\mathbb{C}^2$ with $i$ acting as the scalar $i$.
@@ -65,7 +65,7 @@ By Schur's lemma the endomorphisms of the simple module are the scalars, $\opera
 | symbol | meaning |
 |---|---|
 | $\mathbb{B}\tilde\Pi$ | the minimal left ideal of the primitive idempotent $\tilde\Pi$ |
-| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two minimal left ideals, the spinor spaces |
+| $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two Peirce carriers, the minimal left ideals, the spinor spaces |
 | $\mathcal{C}_\pm$ | the couple of Peirce vectors spanning $S_\pm$ |
 
 ## Further Reading

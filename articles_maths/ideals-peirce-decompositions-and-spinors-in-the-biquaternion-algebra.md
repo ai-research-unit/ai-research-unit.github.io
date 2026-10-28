@@ -2,13 +2,153 @@
 
 ## Introduction
 
-An idempotent cuts the algebra into four corners. This article states the cut, the multiplication rule between the corners, the coordinates it gives, and the real structure that the cut respects. It is the frame in which the element is read in *Spectral Algebra*.
+A root of $+1$ cuts the algebra into four corners, and a second root, anticommuting with the first, chooses a vector in each. This article states the cut, the multiplication rule between the corners, the coordinates it gives, and the real structure that the cut respects. It is the frame in which the element is read in *Spectral Algebra*.
 
 The article assumes the classification of the idempotents of *Idempotents*: the trivial pair $0,e_t$, the non-trivial idempotents $\tfrac12(e_t+\tilde\Xi)$ over the roots of $+1$, the complete orthogonal pairs, primitivity and the Hermitian subfamily. It assumes the product and the conjugations, and nothing else.
 
-The frame is one object read four ways: the decomposition of the algebra, the coordinates of an element, the matrix model of the four corners, and the real structure. The spinor spaces built on the frame are *The Spinor Spaces*; the modules built on it are *The Regular Module* and *The Minimal Left Ideals*. No form is used. The frame itself is built in §*Three Constructions of the Peirce Frame* from roots, from idempotents and from nilpotents.
+The frame is one object read four ways: the decomposition of the algebra, the coordinates of an element, the matrix model of the four corners, and the real structure. The spinor spaces built on the frame are *The Spinor Spaces*; the modules built on it are *The Regular Module* and *The Minimal Left Ideals*. No form is used. The frame is built first from a root of $+1$ in §*The Frame from a Root of One*; the two other constructions, from idempotents and from nilpotents, are §*The Other Constructions of the Frame*.
+
+## The Frame from a Root of One
+
+**A Peirce frame is built from a root of $+1$ together with one more complex number: a second root, anticommuting with the first. The root supplies the four corner lines; the second root supplies the relative scale of the two mixed units, and without that scale the four lines are not a basis.**
+
+**The root and its pair.** An **idempotent** is an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$. Let $\tilde\Xi\in\mathbb{B}$ satisfy $\tilde\Xi^2=e_t$. Its **pair** is
+
+$$
+\tilde\Pi_+=\frac{e_t+\tilde\Xi}{2},\qquad
+\tilde\Pi_-=\frac{e_t-\tilde\Xi}{2}.
+$$
+
+Both are idempotent, $(\tilde\Pi_\pm)^2=\tilde\Pi_\pm$; they are orthogonal, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$; they are complete, $\tilde\Pi_++\tilde\Pi_-=e_t$; and the root is their difference, $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$. Conversely a nontrivial idempotent $\tilde\Pi$ returns the root $2\tilde\Pi-e_t$ and the complement $e_t-\tilde\Pi$, so the root and the unordered pair carry the same information. The classification of the roots is *Idempotents*.
+
+**The four corners.** Put
+
+$$
+\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t,\qquad s,t=\pm .
+$$
+
+The four corners are the simultaneous eigenspaces of the two multiplications by the root: for $x\in\mathbb{B}_{st}$,
+
+$$
+\tilde\Xi x=sx,\qquad x\tilde\Xi=tx .
+$$
+
+Each is a complex line, and they sum to the algebra,
+
+$$
+\mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--}.
+$$
+
+The root therefore fixes the four lines. It fixes no vector inside them.
+
+**Four real parameters.** A nontrivial root of $\mathbb{B}$ is pure: write $\tilde\Xi=i\vec u$ with $\vec u$ a complex vector and $\vec u\cdot\vec u=-e_t$. That is three complex coordinates cut by one complex equation, hence four real parameters. Equivalently, the pair is an ordered pair of distinct lines of $\mathbb{P}^1(\mathbb{C})$, of four real parameters.
+
+**What the root does not give.** A basis needs one vector in each of the four lines. The diagonal lines have canonical vectors, $\tilde\Pi_+$ and $\tilde\Pi_-$. The mixed lines have none. Choose nonzero $v\in\mathbb{B}_{+-}$ and $w\in\mathbb{B}_{-+}$; the replacement
+
+$$
+v\longmapsto\mu v,\qquad w\longmapsto\mu^{-1}w,\qquad \mu\in\mathbb{C}^{\times},
+$$
+
+leaves the corners and the root unchanged. In the coordinates
+
+$$
+\tilde X=a\,\tilde\Pi_++b\,v+c\,w+d\,\tilde\Pi_-,
+$$
+
+the replacement acts as $(a,b,c,d)\mapsto(a,\mu b,\mu^{-1}c,d)$. The root fixes the diagonal coordinates and the product $bc$; it fixes neither $b$ nor $c$. Four of the six real parameters of a normalised frame are fixed, and two are missing: one complex number.
+
+**A second root of $+1$, anticommuting with the first, fixes the two mixed units; the two roots together are the frame.**
+
+Take a second root $\tilde\Xi'$ of $+1$ that anticommutes with the first,
+
+$$
+\tilde\Xi\tilde\Xi'=-\tilde\Xi'\tilde\Xi.
+$$
+
+Then $\tilde\Xi\tilde\Xi'$ is a root of $-1$,
+
+$$
+(\tilde\Xi\tilde\Xi')^2=\tilde\Xi\tilde\Xi'\tilde\Xi\tilde\Xi'=-\tilde\Xi^2(\tilde\Xi')^2=-e_t,
+$$
+
+and the two elements
+
+$$
+\vec\Upsilon_x=\frac{\tilde\Xi'+\tilde\Xi\tilde\Xi'}{2},\qquad
+\vec\Upsilon_y=\frac{\tilde\Xi'-\tilde\Xi\tilde\Xi'}{2}
+$$
+
+are nilpotent. The two summands have squares $e_t$ and $-e_t$ and anticommute, so the cross terms of the square cancel and
+
+$$
+\vec\Upsilon_x^2=\vec\Upsilon_y^2=0.
+$$
+
+Direct multiplication, using the same two facts, gives
+
+$$
+\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+,\qquad
+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-,
+$$
+
+and the Peirce action
+
+$$
+\tilde\Pi_+\vec\Upsilon_x=\vec\Upsilon_x=\vec\Upsilon_x\tilde\Pi_-,
+\qquad
+\tilde\Pi_-\vec\Upsilon_y=\vec\Upsilon_y=\vec\Upsilon_y\tilde\Pi_+,
+$$
+
+with the four remaining products zero. The four elements are a system of matrix units.
+
+For the standard roots $\tilde\Xi=i\vec e_z$ and $\tilde\Xi'=i\vec e_x$, one has $\tilde\Xi\tilde\Xi'=-\vec e_y$, and the formulas return
+
+$$
+\tilde\Pi_\pm=\frac{e_t\pm i\vec e_z}{2},\qquad
+\vec\Upsilon_x=\frac{i\vec e_x-\vec e_y}{2},\qquad
+\vec\Upsilon_y=\frac{i\vec e_x+\vec e_y}{2}.
+$$
+
+This is the frame of §*The Biquaternion Case*.
+
+No information is lost in passing to the two roots: the transverse root is recovered from the frame as
+
+$$
+\tilde\Xi'=\vec\Upsilon_x+\vec\Upsilon_y,
+$$
+
+so the frame and the ordered pair $(\tilde\Xi,\tilde\Xi')$ of anticommuting roots of $+1$ are the same data. Another transverse root gives another frame over the same pair, and the two mixed units are rescaled reciprocally. That rescaling is the freedom $\mu$; when both roots are Hermitian, the frame is star-compatible and $\lvert\mu\rvert=1$.
+
+**The count.** The first root is four real parameters: its idempotent is a projection onto a line along another line, and a primitive idempotent is an ordered pair of distinct lines of $\mathbb{P}^1(\mathbb{C})$, of two real parameters each. The second root contributes two. Conjugation carries any pair to the standard one, and it preserves dimensions, so it is enough to count in the matrix model of the standard pair. There, with $\tilde\Xi=\operatorname{diag}(1,-1)$, a root anticommuting with it is off-diagonal,
+
+$$
+\tilde\Xi'=\begin{pmatrix}0&a\\ b&0\end{pmatrix},
+\qquad
+(\tilde\Xi')^2=ab\,I,
+$$
+
+so the root condition is $ab=1$, that is $b=a^{-1}$, and one complex number, two real parameters, remains. The total is
+
+$$
+4+2=6.
+$$
+
+The second root is the choice of $\mu=a$; the first root alone stops at four.
+
+**The missing parameter is the second root.** In the standard frame the second root is
+
+$$
+\tilde\Xi'=\mu\,\vec\Upsilon_x+\mu^{-1}\vec\Upsilon_y
+=\begin{pmatrix}0&\mu\\ \mu^{-1}&0\end{pmatrix},
+$$
+
+so its one complex parameter is exactly the $\mu$ of the rescaling above. The root supplies the four lines, the second root the scale inside them, and together they are the six real parameters of the frame.
+
+**This is the main construction.** The rest of the article states the same frame in the idempotent language, computes the coordinates and the Peirce table, and records the two other routes. The root route is first because it is the shortest: one root, one complex number, six parameters.
 
 ## Idempotents and Orthogonal Idempotents
+
+**This section states in general the objects used in §*The Frame from a Root of One* and classifies them.**
 
 **The idempotents of $\mathbb{B}$ are $0$, $e_t$ and the nontrivial idempotents; every nontrivial idempotent is primitive, and each root of $+1$ carries a complete orthogonal pair.**
 
@@ -277,6 +417,31 @@ $$
 
 The Peirce decomposition therefore supplies the matrix element representation directly: the four spaces are the four matrix units, and the coordinate functions are the entries. §*The Peirce Coordinates and the Matrix Model* below develops that reading.
 
+### The Weights of the Frame Root
+
+**The root $\tilde\Xi=2\tilde\Pi_+-e_t$ acts on each corner by a sign on the left and a sign on the right; the half-root has weights $\pm\tfrac12$ on each Peirce plane and $+1,0,-1$ on the traceless part, and those weights are the spin.**
+
+The corner rule of §*The Biquaternion Case* reads $\tilde\Xi x=sx$ and $x\tilde\Xi=tx$ for $x\in\mathbb{B}_{st}$, with $s,t=\pm1$. The four corners are therefore the simultaneous eigenspaces of $L_{\tilde\Xi}$ and $R_{\tilde\Xi}$, and the commutator has the difference of the two signs:
+
+| corner | $L_{\tilde\Xi}$ | $R_{\tilde\Xi}$ | $\mathrm{ad}_{\tilde\Xi}$ | $\mathrm{ad}_{\tilde\Xi/2}$ |
+|---|---|---|---|---|
+| $\mathbb{B}_{++}$ | $+1$ | $+1$ | $0$ | $0$ |
+| $\mathbb{B}_{+-}$ | $+1$ | $-1$ | $+2$ | $+1$ |
+| $\mathbb{B}_{-+}$ | $-1$ | $+1$ | $-2$ | $-1$ |
+| $\mathbb{B}_{--}$ | $-1$ | $-1$ | $0$ | $0$ |
+
+In the basis $(\tilde\Pi_+,\vec\Upsilon_x,\vec\Upsilon_y,\tilde\Pi_-)$ the two diagonal readings are the two sign matrices
+
+$$
+L_{\tilde\Xi}=\operatorname{diag}(1,1,-1,-1),
+\qquad
+R_{\tilde\Xi}=\operatorname{diag}(1,-1,1,-1).
+$$
+
+**The two Peirce carriers.** The left ideals $S_+=\mathbb{B}_{++}\oplus\mathbb{B}_{-+}$ and $S_-=\mathbb{B}_{+-}\oplus\mathbb{B}_{--}$ each contain both signs of $L_{\tilde\Xi}$, one on the diagonal corner and one on the mixed corner: $L_{\tilde\Xi}$ has weights $+1$ on $\tilde\Pi_+$ and $-1$ on $\vec\Upsilon_y$ in $S_+$, and $+1$ on $\vec\Upsilon_x$ and $-1$ on $\tilde\Pi_-$ in $S_-$. The half-root $\tfrac12\tilde\Xi$ therefore has weights $\pm\tfrac12$ on both planes. The highest weight is $\tfrac12$, so each plane is a spin-$\tfrac12$ carrier. The right multiplication behaves differently: $R_{\tilde\Xi}$ is the scalar $+1$ on $S_+$ and $-1$ on $S_-$. The eigenvalue of $R_{\tilde\Xi}$ is the **chirality**, the eigenvalue of $L_{\tilde\Xi}$ is the **spin weight**, and the identity $L_{\tilde\Xi}=\mathrm{ad}_{\tilde\Xi}+R_{\tilde\Xi}$ is why the second is shifted by the first.
+
+**The traceless carrier.** The traceless part is not a corner but the sum $V=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Xi\oplus\mathbb{B}_{-+}$, of complex dimension three. On it $\mathrm{ad}_{\tilde\Xi}$ has weights $+2,0,-2$ and $\mathrm{ad}_{\tilde\Xi/2}$ has weights $+1,0,-1$. The half-integer spin is the left action, the integer spin the commutator; the two readings and the tensor products are the subject of *The Spin of a Biquaternion*.
+
 ### The Decomposition as a Grading
 
 **The Peirce decomposition is a $\mathbb{Z}_2$-grading whose even part is the diagonal subalgebra and whose odd part is the sum of the mixed spaces.**
@@ -376,100 +541,11 @@ $$
 
 which is exactly the reciprocal $\mathbb{C}^\times$ scaling of the construction of §*Systems of Matrix Units*. The Peirce decompositions are therefore the points of the idempotent manifold — uncountably many — each carrying its $\mathbb{C}^\times$ of normalised mixed bases, and the inner automorphisms act transitively on the whole family.
 
-## Three Constructions of the Peirce Frame
+## The Other Constructions of the Frame
 
-**A Peirce frame can be built from a pair of anticommuting roots of $+1$, from a complete orthogonal pair of idempotents together with a normalised choice of the two mixed units, or from a pair of nilpotents with $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$; the three are three encodings of one frame. The idempotent pair forgets the transverse root, and the forgotten coordinate is the reciprocal rescaling $\mu$ of §*Systems of Matrix Units*.**
+**The frame of §*The Frame from a Root of One* can be built from two other data: a complete orthogonal pair of idempotents together with a normalised choice of the two mixed units, or a pair of nilpotents with $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$. The three routes are three encodings of one frame.**
 
-The three subsections build the same four elements independently. The first two start from the diagonal data and must choose the mixed units; the third starts from the mixed units and reads the diagonal data off. The comparison at the end of the section states what each route fixes and where $\mu$ enters.
-
-### From Roots of One
-
-**One root of $+1$ is not enough: it fixes the diagonal pair only. A second root of $+1$, anticommuting with the first, fixes the two mixed units, and the two roots together are the frame.**
-
-Let $\tilde\Xi$ be a root of $+1$, $\tilde\Xi^2=e_t$. Its pair is
-
-$$
-\tilde\Pi_+=\frac{e_t+\tilde\Xi}{2},\qquad
-\tilde\Pi_-=\frac{e_t-\tilde\Xi}{2},
-$$
-
-and the root is their difference, $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$. The root alone stops at the pair. It fixes the two diagonal corners and the two mixed corners as lines, and it singles out no element in either mixed line: any nonzero multiple of a mixed element spans the same corner.
-
-Take a second root $\tilde\Xi'$ of $+1$ that anticommutes with the first,
-
-$$
-\tilde\Xi\tilde\Xi'=-\tilde\Xi'\tilde\Xi.
-$$
-
-Then $\tilde\Xi\tilde\Xi'$ is a root of $-1$,
-
-$$
-(\tilde\Xi\tilde\Xi')^2=\tilde\Xi\tilde\Xi'\tilde\Xi\tilde\Xi'=-\tilde\Xi^2(\tilde\Xi')^2=-e_t,
-$$
-
-and the two elements
-
-$$
-\vec\Upsilon_x=\frac{\tilde\Xi'+\tilde\Xi\tilde\Xi'}{2},\qquad
-\vec\Upsilon_y=\frac{\tilde\Xi'-\tilde\Xi\tilde\Xi'}{2}
-$$
-
-are nilpotent. The two summands have squares $e_t$ and $-e_t$ and anticommute, so the cross terms of the square cancel and
-
-$$
-\vec\Upsilon_x^2=\vec\Upsilon_y^2=0.
-$$
-
-Direct multiplication, using the same two facts, gives
-
-$$
-\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+,\qquad
-\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-,
-$$
-
-and the Peirce action
-
-$$
-\tilde\Pi_+\vec\Upsilon_x=\vec\Upsilon_x=\vec\Upsilon_x\tilde\Pi_-,
-\qquad
-\tilde\Pi_-\vec\Upsilon_y=\vec\Upsilon_y=\vec\Upsilon_y\tilde\Pi_+,
-$$
-
-with the four remaining products zero. The four elements are a system of matrix units.
-
-For the standard roots $\tilde\Xi=i\vec e_z$ and $\tilde\Xi'=i\vec e_x$, one has $\tilde\Xi\tilde\Xi'=-\vec e_y$, and the formulas return
-
-$$
-\tilde\Pi_\pm=\frac{e_t\pm i\vec e_z}{2},\qquad
-\vec\Upsilon_x=\frac{i\vec e_x-\vec e_y}{2},\qquad
-\vec\Upsilon_y=\frac{i\vec e_x+\vec e_y}{2}.
-$$
-
-This is the frame of §*The Biquaternion Case*.
-
-No information is lost in passing to the two roots: the transverse root is recovered from the frame as
-
-$$
-\tilde\Xi'=\vec\Upsilon_x+\vec\Upsilon_y,
-$$
-
-so the frame and the ordered pair $(\tilde\Xi,\tilde\Xi')$ of anticommuting roots of $+1$ are the same data. Another transverse root gives another frame over the same pair, and the two mixed units are rescaled reciprocally. That rescaling is the freedom $\mu$; when both roots are Hermitian, the frame is star-compatible and $\lvert\mu\rvert=1$.
-
-**The count.** The first root is four real parameters: it is the idempotent $e=(e_t+\tilde\Xi)/2$, a projection onto a line along another line, and each line is a point of $\mathbb{P}^1(\mathbb{C})$, of two real parameters. The second root contributes two. Conjugation carries any pair to the standard one, and it preserves dimensions, so it is enough to count in the matrix model of the standard pair. There, with $\tilde\Xi=\operatorname{diag}(1,-1)$, a root anticommuting with it is off-diagonal,
-
-$$
-\tilde\Xi'=\begin{pmatrix}0&a\\ b&0\end{pmatrix},
-\qquad
-(\tilde\Xi')^2=ab\,I,
-$$
-
-so the root condition is $ab=1$, that is $b=a^{-1}$, and one complex number, two real parameters, remains. The total is
-
-$$
-4+2=6.
-$$
-
-The second root is the choice of $\mu=a$; the first root alone stops at four.
+The two subsections build the same four elements independently. The idempotent route starts from the diagonal data and must choose the mixed units; the nilpotent route starts from the mixed units and reads the diagonal data off. The comparison at the end states what each route fixes and where $\mu$ enters; the root route is §*The Frame from a Root of One*.
 
 ### From Two Idempotents
 
@@ -602,7 +678,7 @@ The second nilpotent is the choice of the corner element, and the idempotents ar
 
 **A frame has six real parameters. The algebra has eight, but a frame is not a general element: the idempotent pair contributes four and the normalised mixed unit contributes two.**
 
-The count is a count of configurations, not of coordinates. The four elements of a frame have $4\times 8=32$ real coordinates between them, and the matrix-unit table is what cuts the set down. The reduction is not read equation by equation, because the relations are not independent. Two stratifications give the number directly, and the three routes of this section agree with both.
+The count is a count of configurations, not of coordinates. The four elements of a frame have $4\times 8=32$ real coordinates between them, and the matrix-unit table is what cuts the set down. The reduction is not read equation by equation, because the relations are not independent. Two stratifications give the number directly, and the three routes agree with both.
 
 **Over the idempotents.** The map that forgets the two mixed units,
 
@@ -624,11 +700,11 @@ $$
 
 of real dimension $8-2=6$.
 
-**The three routes, counted.** The three constructions above reach the same six by the same pattern, four for the first datum and two for the second, and each subsection makes its own count.
+**The three routes, counted.** The root construction of §*The Frame from a Root of One* and the two constructions below reach the same six by the same pattern, four for the first datum and two for the second, and each section makes its own count.
 
 | route | first datum | real dimension | second datum | real dimension |
 |---|---|---|---|---|
-| two roots | $\tilde\Xi$ | $4$ | transverse root $\tilde\Xi'=\mu E_{12}+\mu^{-1}E_{21}$ | $2$ |
+| root and second root | $\tilde\Xi$ | $4$ | transverse root $\tilde\Xi'=\mu E_{12}+\mu^{-1}E_{21}$ | $2$ |
 | idempotents | $(\tilde\Pi_+,\tilde\Pi_-)$ | $4$ | normalised mixed unit, $\mu\in\mathbb{C}^\times$ | $2$ |
 | two nilpotents | $\vec\Upsilon_x$ | $4$ | $\vec\Upsilon_y$ | $2$ |
 
@@ -710,8 +786,9 @@ with $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, which are exchanged by the star and 
 - The two diagonal corners are spanned by the idempotents; the two mixed corners are square-zero and are exchanged by the reversal.
 - The Peirce coordinates of an element are its four corner components; in the standard frame they are the entries of the $2\times2$ matrix model.
 - The coefficient conjugation exchanges the two diagonal corners and the two mixed corners; the star fixes the idempotents and exchanges the two mixed corners.
-- The Peirce decomposition needs the product and the idempotents alone; the frame needs in addition a normalised choice of the two mixed units. No form is used.
-- The frame has three constructions: a pair of anticommuting roots of $+1$, a complete orthogonal pair with a normalised choice of the two mixed units, and a pair of nilpotents with $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$. The idempotent pair forgets the transverse root, and the forgotten datum is the reciprocal rescaling $\mu$; $\mu=1$ is the standard frame.
+- The Peirce decomposition needs the product and the idempotents alone; the frame needs in addition a normalised choice of the two mixed units, equivalently a second root anticommuting with the first. No form is used.
+- The frame root $\tilde\Xi$ has left weight $s$, right weight $t$ and commutator weight $s-t$ on the corner $\mathbb{B}_{st}$; the half-root has weights $\pm\tfrac12$ on each Peirce plane and $+1,0,-1$ on the traceless part, and its right weight is the chirality.
+- The frame has three constructions: a root with a second anticommuting root (§*The Frame from a Root of One*), a complete orthogonal pair with a normalised choice of the two mixed units, and a pair of nilpotents with $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$. The idempotent pair forgets the transverse root, and the forgotten datum is the reciprocal rescaling $\mu$; $\mu=1$ is the standard frame.
 - A frame has six real parameters, against the eight of one element: four for the idempotent pair and two for the normalised mixed unit.
 
 ## Summary of Notation
@@ -719,6 +796,7 @@ with $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, which are exchanged by the star and 
 | symbol | meaning |
 |---|---|
 | $\tilde\Pi,\tilde\Pi'=e_t-\tilde\Pi$ | a complete orthogonal pair |
+| $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$ | the frame root of the pair |
 | $\mathbb{B}_{\sigma\tau}=\tilde\Pi_\sigma\mathbb{B}\tilde\Pi_\tau$ | the four Peirce corners |
 | $\mathsf M_{\tilde\Pi}(\tilde Q)$ | the Peirce matrix of $\tilde Q$ |
 | $\mu$ | the reciprocal rescaling $\vec\Upsilon_x\mapsto\mu\vec\Upsilon_x$, $\vec\Upsilon_y\mapsto\mu^{-1}\vec\Upsilon_y$ of the two mixed units |
@@ -727,5 +805,6 @@ with $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, which are exchanged by the star and 
 
 - [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the pair.
 - [The Regular Module](the-regular-module.html), for the modules over the algebra and the submodules of the regular object.
+- [The Spin of a Biquaternion](the-spin-of-a-biquaternion.html), for the weights as the spin, the triple of the frame and the tensor products.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the spinor spaces.
 - [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix form.

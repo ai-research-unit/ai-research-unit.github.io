@@ -79,7 +79,7 @@ When $q$ is non-degenerate the two are equal for $\dim V$ even, and the inclusio
 
 **Proof.** The submodule conditions are the ideal conditions; the statement about a minimal left ideal $I=\mathrm{Cl}\pi$ with $\pi$ a primitive idempotent is that $I\pi=I$ and $I$ is closed under right multiplication by $\pi$, so it is a bimodule over the subalgebra $\pi\mathrm{Cl}\pi=F\pi$, which is the unitised field. The construction and the module theory are *Left Multiplication and the Clifford Module Structure*.
 
-**Remark (the spin representation).** The irreducible spinor module of even dimension is the left action of the algebra on a minimal left ideal, and the right action of the commutant $A^{\mathrm{opp}}$ on the same ideal is the opposite representation. The pair $(L,R)$ therefore provides the module and its commutant in one construction, and the geometry of the spinor bundle of *Spin Geometry* is the bundle of these ideals, with the left action the Clifford multiplication and the right action the reduction to the structure group.
+**Remark (the spin representation).** The irreducible spinor module of even dimension is the left action of the algebra on a Peirce carrier, which in even dimension is a minimal left ideal, and the right action of the commutant $A^{\mathrm{opp}}$ on the same ideal is the opposite representation. The pair $(L,R)$ therefore provides the module and its commutant in one construction, and the geometry of the spinor bundle of *Spin Geometry* is the bundle of these ideals, with the left action the Clifford multiplication and the right action the reduction to the structure group.
 
 ## The Form and the Operators
 
@@ -117,7 +117,7 @@ The **left multiplication** $L_a(x)=ax$ and the **right multiplication** $R_a(x)
 | $\{L_a\}'$ | Commutant of the left family; contains $R$ |
 | central simple (even $\dim V$) | Case in which $\{L_a\}'=\{R_b\}$ |
 | $\omega$, $\frac12(1\pm\omega)$ | Volume element and central idempotents of the odd case |
-| $I=\mathrm{Cl}\pi$ | Minimal left ideal, the spinor module as a bimodule |
+| $I=\mathrm{Cl}\pi$ | Peirce carrier (minimal left ideal here), the spinor module as a bimodule |
 
 ## Further Reading
 

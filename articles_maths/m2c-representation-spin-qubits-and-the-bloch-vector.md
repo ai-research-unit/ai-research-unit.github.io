@@ -257,7 +257,7 @@ $$
 r_k=\xi^{\dagger}\sigma_k\xi .
 $$
 
-The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the minimal left ideal $\mathbb B\tilde\Pi_+$, and the module structure that makes it a Hilbert space is the second structure of *Spin and the Two State Spaces*.
+The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the Peirce carrier $\mathbb B\tilde\Pi_+$, which is the minimal left ideal here, and the module structure that makes it a Hilbert space is the second structure of *Spin and the Two State Spaces*.
 
 **The mixed case.** A general state is a convex combination of pure ones,
 

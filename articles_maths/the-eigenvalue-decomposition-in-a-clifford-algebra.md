@@ -10,7 +10,7 @@ $$
 
 therefore depends on a choice of **coefficient field** $K$. The eigenvalues $\lambda_{i}$ lie in $K$; the eigenprojectors $e_{i}$ are idempotents of the Clifford algebra, or of its scalar extension; and the grade decomposition records the grades of both. The article develops the existence theorem in this setting, identifies the role of the centre and the volume element, and separates the two kinds of non-scalar eigenvalue: the **internal** ones, which are central multivectors of the algebra, and the **external** ones, which are scalars of a field extension. The internal case is the characteristic phenomenon of odd dimension; the external case is the characteristic phenomenon of even dimension and of the division algebras.
 
-The base is a field $F$ of characteristic not two, $V$ is a finite-dimensional $F$-space, $Q$ is a non-degenerate quadratic form on $V$, and $\mathrm{Cl}=\mathrm{Cl}(V,Q)$ is the Clifford algebra with $v^{2}=Q(v)1$. The grade decomposition, the volume element $\omega$, the reversion and the grade involution are from *The Geometric Product and the Grade Decomposition* and *Clifford Algebras in Finite Dimensions*; the centre is from *Clifford Algebras in Finite Dimensions*, §*16. The Centre*; the volume element and the Hodge star are from *The Volume Element, Duality and the Hodge Star*, §*Multiplication by the Volume Element*; the idempotents and the minimal left ideals are from *Spinors as Minimal Left Ideals with Inner Conjugation*; the matrix classification is from *The Low-Dimensional Classification* and *The Number Systems as Clifford Algebras*; the associative original is *The Eigenvalue Decomposition of an Element*; and the application to the biquaternion algebra is *The Biquaternion Eigenvalue Decomposition*.
+The base is a field $F$ of characteristic not two, $V$ is a finite-dimensional $F$-space, $Q$ is a non-degenerate quadratic form on $V$, and $\mathrm{Cl}=\mathrm{Cl}(V,Q)$ is the Clifford algebra with $v^{2}=Q(v)1$. The grade decomposition, the volume element $\omega$, the reversion and the grade involution are from *The Geometric Product and the Grade Decomposition* and *Clifford Algebras in Finite Dimensions*; the centre is from *Clifford Algebras in Finite Dimensions*, §*16. The Centre*; the volume element and the Hodge star are from *The Volume Element, Duality and the Hodge Star*, §*Multiplication by the Volume Element*; the idempotents and the minimal left ideals are from *Peirce Carriers and Inner Conjugation*; the matrix classification is from *The Low-Dimensional Classification* and *The Number Systems as Clifford Algebras*; the associative original is *The Eigenvalue Decomposition of an Element*; and the application to the biquaternion algebra is *The Biquaternion Eigenvalue Decomposition*.
 
 ## Coefficient Fields and the Existence Theorem
 
@@ -135,7 +135,7 @@ $$
 a=u_{1}u_{2}=\omega u_{3}=\omega e_{+}-\omega e_{-}.
 $$
 
-The eigenvalues are $\pm\omega$, of grade $3$; the projectors have grades $0$ and $1$. The element $a$ has grade $2$, and the grade-$1$ parts of the projectors cancel in the sum $e_{+}+e_{-}=1$. The resolution is the Peirce decomposition of the algebra relative to the idempotent $e_{+}$ (equivalently, to $e_{-}$), and the left ideals $\mathrm{Cl}e_{\pm}$ are the two minimal left ideals, the spinor spaces of *Spinors as Minimal Left Ideals with Inner Conjugation*, §*Three Dimensions*.
+The eigenvalues are $\pm\omega$, of grade $3$; the projectors have grades $0$ and $1$. The element $a$ has grade $2$, and the grade-$1$ parts of the projectors cancel in the sum $e_{+}+e_{-}=1$. The resolution is the Peirce decomposition of the algebra relative to the idempotent $e_{+}$ (equivalently, to $e_{-}$), and the left ideals $\mathrm{Cl}e_{\pm}$ are the two minimal left ideals, the spinor spaces of *Peirce Carriers and Inner Conjugation*, §*Three Dimensions*.
 
 **Remark.** The same element over $F=\mathbb{R}$ has minimal polynomial $t^{2}+1$, which is irreducible; it has no scalar eigenvalue and no decomposition over $\mathbb{R}$. The internal eigenvalue exists only because the centre is larger than $\mathbb{R}$. In this sense the volume element of an odd-dimensional algebra is a built-in complex structure, and the internal non-scalar eigenvalues are the eigenvalues that it makes available.
 
@@ -179,7 +179,7 @@ The idempotents that occur in the spectral resolutions above are the standard on
     \pi_{\pm}=\tfrac12(1\pm\omega)
     $$
     is a central idempotent of grades $0$ and $n$. The two split the algebra, $\mathrm{Cl}=\mathrm{Cl}\pi_{+}\oplus\mathrm{Cl}\pi_{-}$, and each factor is an ideal.
-3. **The Witt idempotent.** For an orthogonal basis of isotropic vectors $a_{1},a_{1}^{\dagger},\dots,a_{m},a_{m}^{\dagger}$ with the Witt normalisation of *Spinors as Minimal Left Ideals with Inner Conjugation*, §*The Witt Basis*, the product
+3. **The Witt idempotent.** For an orthogonal basis of isotropic vectors $a_{1},a_{1}^{\dagger},\dots,a_{m},a_{m}^{\dagger}$ with the Witt normalisation of *Peirce Carriers and Inner Conjugation*, §*The Witt Basis*, the product
     $$
     \pi=a_{1}a_{1}^{\dagger}\cdots a_{m}a_{m}^{\dagger}
     $$

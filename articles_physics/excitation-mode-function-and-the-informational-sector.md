@@ -26,7 +26,7 @@ $$
 \mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace is normalized by $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so that $\mathrm{Tr}(e_t)=2$. The **spinor module** is the minimal left ideal $\mathbb{B}\tilde\Pi_+$, with
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace is normalized by $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so that $\mathrm{Tr}(e_t)=2$. The **spinor module** is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with
 
 $$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad \tilde\Pi_-=\tfrac12(e_t-i\vec e_z),\qquad
@@ -183,7 +183,7 @@ The mismatch is a real finding and is stated as one. It does not contradict the 
 
 The counting is only half the structural statement; the other half is the exact location of the definite solution, and it is not $\mathbb{M}_+$.
 
-The spinor module is realized inside the algebra as the minimal left ideal $\mathbb{B}\tilde\Pi_+$, with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$. A general spinor is therefore $\psi=\psi_1\tilde\Pi_++\psi_2\vec\Upsilon_y$ with $\psi_1,\psi_2\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\psi^{*}=\overline{\psi_1}\,\tilde\Pi_++\overline{\psi_2}\,\vec\Upsilon_x$, using $\vec\Upsilon_y^{*}=\vec\Upsilon_x$ and $\tilde\Pi_+^\dagger=\tilde\Pi_+$. The condition $\psi^{*}=\psi$ forces, comparing coefficients in the independent directions $\tilde\Pi_+,\vec\Upsilon_x,\vec\Upsilon_y$,
+The spinor module is realized inside the algebra as the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$. A general spinor is therefore $\psi=\psi_1\tilde\Pi_++\psi_2\vec\Upsilon_y$ with $\psi_1,\psi_2\in\mathbb{C}$, a four-real-dimensional space. Its Hermitian conjugate is $\psi^{*}=\overline{\psi_1}\,\tilde\Pi_++\overline{\psi_2}\,\vec\Upsilon_x$, using $\vec\Upsilon_y^{*}=\vec\Upsilon_x$ and $\tilde\Pi_+^\dagger=\tilde\Pi_+$. The condition $\psi^{*}=\psi$ forces, comparing coefficients in the independent directions $\tilde\Pi_+,\vec\Upsilon_x,\vec\Upsilon_y$,
 
 $$
 \psi_2=0\qquad\text{and}\qquad \psi_1=\overline{\psi_1}\ \ (\psi_1\in\mathbb{R}).
@@ -239,7 +239,7 @@ $\mathbb{M}_+$ is a four-dimensional real Hilbert space under the trace pairing 
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html), for the identification of the polarization directions with the material sector and the helicity observable in $\mathbb{M}_+$.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the idempotents, the trace formula, and the operator-algebra interpretation of the sector.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vectors, including the four-wavevector that labels a mode function.
-- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the realization of the module as the minimal left ideal $\mathbb{B}\tilde\Pi_+$ and the matrix units $\vec\Upsilon_x,\vec\Upsilon_y$.
+- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the realization of the module as the Peirce carrier $\mathbb{B}\tilde\Pi_+$ (a minimal left ideal here) and the matrix units $\vec\Upsilon_x,\vec\Upsilon_y$.
 - [The Ontology of the Quantum State under the Biquaternion Framework](the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html), for the state as an element of $\mathbb{M}_+$ and the limits of that interpretation.
 - [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html), for the thermal state as an element of $\mathbb{M}_+$ and the coherence that the trace discards.
 - [The Harmonic Oscillator in Biquaternionic Form](the-harmonic-oscillator-in-biquaternionic-form.html), for the two-level truncation and the failure of the bosonic canonical relation.

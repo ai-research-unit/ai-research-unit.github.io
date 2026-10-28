@@ -293,7 +293,7 @@ What the algebra does supply is the location of the two terms: the convection te
 
 1. **A biquaternion-natural current.** Is there a $\mathbb{B}$-valued current whose symmetric/antisymmetric split reproduces the Gordon split without the Clifford-odd $\gamma^0$? This is the same question the minimal-coupling article leaves open for the current itself, and a positive answer here would be a positive answer there.
 
-2. **The massless spinor-helicity form.** In the massless case the spin term is a curl and the transport term is an energy-weighted derivative. Does the biquaternion algebra, whose two minimal left ideals are the two chiralities, write the massless decomposition more naturally than the four-component spinor does, and does the helix of a Weyl particle appear as an idempotent of $\mathbb{M}_+$?
+2. **The massless spinor-helicity form.** In the massless case the spin term is a curl and the transport term is an energy-weighted derivative. Does the biquaternion algebra, whose two Peirce carriers, minimal left ideals here, are the two chiralities, write the massless decomposition more naturally than the four-component spinor does, and does the helix of a Weyl particle appear as an idempotent of $\mathbb{M}_+$?
 
 3. **The factor of two.** The $g = 2$ asymmetry between the current and the momentum density is, in the framework's terms, a mismatch between an $\mathbb{M}_-$ current and an $\mathbb{M}_-$ momentum. Is there an algebraic statement that fixes the factor of two, or is it one more coefficient the algebra transcribes?
 

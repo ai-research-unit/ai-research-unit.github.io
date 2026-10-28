@@ -20,7 +20,7 @@ The question is not decorative. In and around the algebra $\mathbb{B}$ there are
 
 The first two are different elements of the algebra; no conjugation relates them, and they play unrelated roles. The third is not an element of the algebra at all but a structure that the state space carries. Conflating them is the characteristic error, and it produces equations that look like the Schrödinger equation but do not preserve probability. Separating them is the substance of this article.
 
-The article is organized as follows. The three objects are distinguished; the scalar imaginary is shown to exchange the sectors $\mathbb{M}_\pm$; the wave function is identified as a spinor in a minimal left ideal, not as a generic element of $\mathbb{M}_+$; the equation and its solution are written and checked; the non-central alternatives are tested and one is shown to fail; the $\mathbb{M}_-$/$\mathbb{M}_+$ interpretation is given. It closes with an honest account of what the form adds and what it merely relabels.
+The article is organized as follows. The three objects are distinguished; the scalar imaginary is shown to exchange the sectors $\mathbb{M}_\pm$; the wave function is identified as a spinor in a Peirce carrier, a minimal left ideal here, not as a generic element of $\mathbb{M}_+$; the equation and its solution are written and checked; the non-central alternatives are tested and one is shown to fail; the $\mathbb{M}_-$/$\mathbb{M}_+$ interpretation is given. It closes with an honest account of what the form adds and what it merely relabels.
 
 ## Three Objects That Square to Minus One
 
@@ -276,7 +276,7 @@ $$
 \boxed{\;i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi\;},
 $$
 
-with $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
+with $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in the Peirce carrier $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, a minimal left ideal here, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
 The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]$.
 

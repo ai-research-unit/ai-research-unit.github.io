@@ -742,7 +742,7 @@ $$
 S_+^*=(\mathbb{B}\tilde\Pi_+)^*=\tilde\Pi_+^*\mathbb{B}.
 $$
 
-It therefore does not act inside the chiral decomposition: the two chiralities are left ideals, and their images are right ideals. A minimal left ideal of $M_2(\mathbb{C})$ is not a right ideal, so the image is not one of the two chiralities. Chirality belongs to the left-ideal decomposition, not to the matrix adjoint. The spinor adjoints and the reality conditions are treated in *Spinors as Minimal Left Ideals with Inner Conjugation* and in the companion articles on the signed adjoints.
+It therefore does not act inside the chiral decomposition: the two chiralities are left ideals, and their images are right ideals. A minimal left ideal of $M_2(\mathbb{C})$ is not a right ideal, so the image is not one of the two chiralities. Chirality belongs to the left-ideal decomposition, not to the matrix adjoint. The spinor adjoints and the reality conditions are treated in *Peirce Carriers and Inner Conjugation* and in the companion articles on the signed adjoints.
 
 ### Physical Interpretation
 
@@ -767,7 +767,7 @@ In the language of physics, the pair of columns is the algebraic image of a Dira
 | coordinates | algebra isomorphism onto $M_2(\mathbb{C})$, $\det=N$, $\operatorname{tr}=2Q_{2,t}$ |
 | diagonal subalgebra | $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-=\operatorname{span}\{e_t,\tilde Q\}$ |
 | dependence | on $[\vec Q]\in\mathbb{P}^2$ only; the spectrum is affine on the fibre |
-| spinors | $S_\pm=\mathbb{B}\tilde\Pi_\pm$, minimal left ideals, complex dimension two |
+| spinors | $S_\pm=\mathbb{B}\tilde\Pi_\pm$, Peirce carriers (minimal left ideals here), complex dimension two |
 | left action on spinors | $\operatorname{diag}(\lambda_+,\lambda_-)$ on each chirality |
 | chirality | the right index, the eigenvalue of $R_{\tilde Q}$; independent of the left spectrum |
 | boundary | $\mathcal S$ has three strata: the scalar one with no attached basis, the nilpotent and unipotent ones with a flag and a two-parameter gauge, and no eigenbasis |
@@ -808,7 +808,7 @@ The construction fails exactly on the spectral-degenerate cone, and the failure 
 - [The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations](m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
 - [Worked Examples of Eigenbasis of a Biquaternion](worked-examples-of-eigenbasis-of-a-biquaternion.html), for computed eigenbases of the standard elements.
 - [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.
-- [Spinors as Minimal Left Ideals with Inner Conjugation](spinors-as-minimal-left-ideals-with-inner-conjugation.html), for the identification of the minimal left ideals with the spinor spaces and the chiral halves.
+- [Peirce Carriers and Inner Conjugation](peirce-carriers-and-inner-conjugation.html), for the identification of the minimal left ideals with the spinor spaces and the chiral halves.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the spectral decomposition in the wider theory.

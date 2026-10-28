@@ -180,7 +180,7 @@ The zero coefficient is the only trace of the norm degeneracy in the Peirce data
 
 ## Spinors and Chirality
 
-**Each spinor space is a minimal left ideal, a complex plane with a basis made of one idempotent and one nilpotent. In this sector one eigenvalue is zero, so left multiplication acts on each chirality as $\operatorname{diag}(c,0)$, and the second chirality is the right annihilator.**
+**Each spinor space is a Peirce carrier, a complex plane with a basis made of one idempotent and one nilpotent; in this sector it is also a minimal left ideal. In this sector one eigenvalue is zero, so left multiplication acts on each chirality as $\operatorname{diag}(c,0)$, and the second chirality is the right annihilator.**
 
 The two spinor spaces are
 $$
@@ -443,7 +443,7 @@ $$
 | geometry | Zariski-open and dense in $\mathcal{N}$; complex cone of complex dimension $3$ and real dimension $6$; smooth, connected; apex removed |
 | elements | semisimple zero divisors; minimal polynomial $X(X-c)$ |
 | Peirce decomposition | exists, unique, diagonal on $(e_+,e_-)$ |
-| eigenbasis | normalised Peirce basis; unique with the normalisation fixed |\n| spinors | $S_\pm=\mathbb{B}e_\pm$, minimal left ideals; $L_{\tilde Q}=\operatorname{diag}(c,0)$ on each, $R_{\tilde Q}=c$ on $S_+$ and $0$ on $S_-$ |
+| eigenbasis | normalised Peirce basis; unique with the normalisation fixed |\n| spinors | $S_\pm=\mathbb{B}e_\pm$, Peirce carriers (minimal left ideals here); $L_{\tilde Q}=\operatorname{diag}(c,0)$ on each, $R_{\tilde Q}=c$ on $S_+$ and $0$ on $S_-$ |
 | centraliser | $\mathbb{C}[\tilde\Pi]\cong\mathbb{C}\oplus\mathbb{C}$, with the four idempotents $0,e_t,\tilde\Pi,\tilde\Pi'$ |
 | annihilators | two distinct planes meeting in $\mathbb{C}\tilde\Pi'$, the kernel projector; $\tilde Q$ lies in neither |
 | multiplication | $\Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal{N}$, with $\Sigma_{01}$, $0$ and $\Sigma_{00}\setminus\{0\}$ all attained |

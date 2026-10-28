@@ -214,12 +214,11 @@ The rank is always preserved: rank two is $N$-regular, hence a unit, rank one is
 
 ### The Reflection Formula
 
-For $v$ with $\langle v\rangle_{\natural}=1$, the **reflection** in the hyperplane $v^{\perp}$ is
+For $v$ with $\langle v\rangle_{\natural}=1$, so that $v\,v^{\natural}=e_t$, the **reflection** in the hyperplane $v^{\perp}$ is
 $$
-\boxed{\;\rho_v(\tilde Q_3)=-v\,\tilde Q_3\,v^{-1}
-=-v\,\tilde Q_3\,v^{\natural}\;}.
+\boxed{\;\rho_v(\tilde Q_3)=-v\,\tilde Q_3\,v^{\natural}\;}.
 $$
-On the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
+The right factor is the quaternion conjugate, which is the inverse of $v$ on the norm-one slice; the reflection is therefore written with the algebra's own conjugation and needs no operator inverse. The minus sign is what makes it a reflection: without it the map is an inner automorphism. On the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
 $$
 v\tilde Q_3+\tilde Q_3v=-2\langle v,\tilde Q_3\rangle e_t.
 $$
@@ -258,7 +257,7 @@ A rotation is a unitary rotor, an algebra automorphism, with the angle halved in
 | $\langle\tilde Q\rangle_{\natural}$ | biquaternion norm; the interval on $\mathbb{M}_{-}$ |
 | $\tilde u=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ | rotation rotor |
 | $\tilde U=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$ | boost rotor; Hermitian and norm-one |
-| $\rho_v(\tilde Q_3)=-v\tilde Q_3v^{-1}$ | reflection in $v^{\perp}$ |
+| $\rho_v(\tilde Q_3)=-v\tilde Q_3v^{\natural}$ | reflection in $v^{\perp}$ |
 | $imc\,e_t$ | rest four-velocity; $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ |
 | $SO^{+}(1,3)$ | proper orthochronous Lorentz group; the frame group |
 

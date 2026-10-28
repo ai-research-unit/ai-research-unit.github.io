@@ -562,7 +562,7 @@ A general inner automorphism need not preserve the chosen frame, and the image o
 
 The general statement is in *The Spinor Spaces*, §*The Two Couples*: the four Peirce vectors split into the couples, and left multiplication acts on each couple by the same Peirce matrix. Here that matrix is $J_2(Q_t)$, so each couple is a single Jordan chain. The eigenline in $\mathcal{C}_+$ is $\mathbb{C}\tilde\Pi_+$ and the eigenline in $\mathcal{C}_-$ is $\mathbb{C}\vec\Upsilon_-=\mathbb{C}\vec Q$; the two lines span the two-dimensional eigenspace.
 
-**Definition (the spinor spaces).** Put $S_\pm=\mathbb{B}\tilde\Pi_\pm$, the two minimal left ideals.
+**Definition (the spinor spaces).** Put $S_\pm=\mathbb{B}\tilde\Pi_\pm$, the two Peirce carriers, here the two minimal left ideals.
 
 **Proposition (the splitting).** $S_+=\operatorname{span}\{\tilde\Pi_+,\vec\Upsilon_+\}$ and $S_-=\operatorname{span}\{\vec\Upsilon_-,\tilde\Pi_-\}$, and $\mathbb{B}=S_+\oplus S_-$.
 

@@ -216,7 +216,7 @@ When $B=0$ the construction is unavailable: there is no eigenbasis singled out b
 
 ### The Two Chiral Spinor Spaces
 
-The two **spinor spaces** are the minimal left ideals
+The two **spinor spaces** are the Peirce carriers, which here are the minimal left ideals,
 $$
 S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
 \qquad
@@ -727,7 +727,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and skew-symmetrized multiplication blocks |
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $L_{\tilde Q}$ |
 | $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the eigenprojections and the normalised nilpotents of the eigenbasis |
-| $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two spinor spaces (Peirce chirality), the minimal left ideals |
+| $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two spinor spaces (Peirce chirality), the Peirce carriers (minimal left ideals here) |
 | $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$ | the common spinor matrix on $S_+$ and $S_-$ |
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, with $\mathbb{B}\cong S\otimes S^{*}$ |
 | $\rho,\bar\rho$ | the defining representation on $S$ and its conjugate |

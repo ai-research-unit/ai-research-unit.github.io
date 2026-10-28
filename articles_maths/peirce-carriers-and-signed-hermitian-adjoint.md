@@ -1,12 +1,12 @@
-# __Spinors as Minimal Left Ideals with Signed Hermitian Adjoint__
+# __Peirce Carriers and Signed Hermitian Adjoint__
 
 ## Introduction
 
-A spinor can be taken to be an element of a minimal left ideal $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ of the Clifford algebra, the algebra acting on it by left multiplication; this is *Spinors as Minimal Left Ideals with Inner Conjugation*, and it is the description that makes the whole pin group, and not only its even part, act on spinors. The present article reads the same ideal with the signed Hermitian sandwich as the operator, and the Hermitian form as the structure on the ideal.
+A spinor is an element of the Peirce carrier $C(\pi)=\mathrm{Cl}(V,\mathfrak{Q})\pi=\pi\mathrm{Cl}\pi\oplus(1-\pi)\mathrm{Cl}\pi$ of the Clifford algebra, on which the algebra acts by left multiplication. In this article the carrier is a minimal left ideal, and that is what makes the whole pin group, and not only its even part, act on spinors. The general definition of the carrier is *Spinors as Peirce Coordinates*; the Clifford case is *Peirce Carriers and Inner Conjugation*. The present article reads the same carrier with the signed Hermitian sandwich as the operator, and the Hermitian form as the structure on it.
 
-The ideal is a left ideal, so left multiplication by **every** element of the algebra carries it into itself, and the pin action on it is defined for all of $\mathrm{Pin}(V,\mathfrak{Q})$. The ideal is not homogeneous, $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, and an odd element interchanges the two summands while an even element preserves them, so a spinor of the ideal has a parity decomposition and the odd part of the group swaps the components.
+The carrier is a left ideal, so left multiplication by **every** element of the algebra carries it into itself, and the pin action on it is defined for all of $\mathrm{Pin}(V,\mathfrak{Q})$. The carrier is not homogeneous, $C(\pi)=C(\pi)^0\oplus C(\pi)^1$ with $C(\pi)^i=\mathrm{Cl}^i\pi$, and an odd element interchanges the two summands while an even element preserves them, so a spinor of the carrier has a parity decomposition and the odd part of the group swaps the components.
 
-The signed Hermitian sandwich is realised on the ideal by a conjugation of the Clifford multiplication with **two left multiplications**,
+The signed Hermitian sandwich is realised on the carrier by a conjugation of the Clifford multiplication with **two left multiplications**,
 
 $$
 \Theta^{\alpha}_x(v)\,\psi=\alpha(x)\,v\,x^{\dagger}\,\psi
@@ -15,9 +15,9 @@ $$
 \qquad v\in V,\ \psi\in I,
 $$
 
-where the last equality is the adjoint identity $\rho(x)^{*}=\rho(x^{\dagger})$ of *Pin Representations and Hermitian Modules with Signed Hermitian Adjoint*, valid for the Hermitian form of the ideal. So the left factor of the two-sided operator appears as the signed left multiplication $\Lambda^{\alpha}_x$, and the right factor appears as the **adjoint** of the left multiplication by $x$, not as its inverse. This is the Hermitian specificity of the ideal picture: on the slice the adjoint is the inverse and the two factors are $\rho(\alpha(x))$ and $\rho(x)^{-1}$, which is exactly the inverse formulation; off the slice the second factor is the adjoint, and the defect $\rho(x)\rho(x)^{*}=\rho(xx^{\dagger})$ measures the failure of the ideal to be a unitary module under the action of $x$.
+where the last equality is the adjoint identity $\rho(x)^{*}=\rho(x^{\dagger})$ of *Pin Representations and Hermitian Modules with Signed Hermitian Adjoint*, valid for the Hermitian form of the ideal. So the left factor of the two-sided operator appears as the signed left multiplication $\Lambda^{\alpha}_x$, and the right factor appears as the **adjoint** of the left multiplication by $x$, not as its inverse. This is the Hermitian specificity of the carrier picture: on the slice the adjoint is the inverse and the two factors are $\rho(\alpha(x))$ and $\rho(x)^{-1}$, which is exactly the inverse formulation; off the slice the second factor is the adjoint, and the defect $\rho(x)\rho(x)^{*}=\rho(xx^{\dagger})$ measures the failure of the carrier to be a unitary module under the action of $x$.
 
-The Clifford algebra, its parity grading and the intrinsic involutions are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the idempotents, the minimal left ideals, the bridge to the Chevalley module, the even-multivector picture and the two actions on the ideal are *Spinors as Minimal Left Ideals with Inner Conjugation*, and nothing of that theory is re-derived; the Hermitian form on the ideal and the adjoint of the left action are *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the Clifford modules and the pin representation are *Pin Representations and Hermitian Modules with Signed Hermitian Adjoint*; the groups are *The Pin and Spin Groups with Signed Hermitian Adjoint*; and the two-sided operator with its one-sided factors is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* and *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*. The base is a commutative ring $A$ with involution $\sigma$, $F$ the field of scalars of characteristic not two, $q$ non-degenerate on $V$, $B$ its polar form.
+The Clifford algebra, its parity grading and the intrinsic involutions are *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the idempotents, the Peirce carriers, the bridge to the Chevalley module, the even-multivector picture and the two actions on the ideal are *Peirce Carriers and Inner Conjugation*, and nothing of that theory is re-derived; the Hermitian form on the ideal and the adjoint of the left action are *The Adjoint of the One-Sided Action with Hermitian Adjoint* and *Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint*; the Clifford modules and the pin representation are *Pin Representations and Hermitian Modules with Signed Hermitian Adjoint*; the groups are *The Pin and Spin Groups with Signed Hermitian Adjoint*; and the two-sided operator with its one-sided factors is *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* and *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*. The base is a commutative ring $A$ with involution $\sigma$, $F$ the field of scalars of characteristic not two, $q$ non-degenerate on $V$, $B$ its polar form.
 
 ## The Ideal as a Pin Module
 
@@ -120,7 +120,7 @@ For $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ the same construction g
 
 ## Summary
 
-A **minimal left ideal** $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ is a left ideal and hence a Clifford module on which left multiplication by every element of the algebra is defined; the whole **pin group** acts on it by left multiplication, spinors are the elements of $I$, and on a simple algebra the action is faithful, with kernel $\mathrm{Pin}\cap(\{1\}\times A')$ over a product. The ideal is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, the even elements preserve the two summands and the odd elements interchange them, and the Hermitian form of the ideal pairs only equal parities, so the two chiral halves are Hermitian-orthogonal. The signed Hermitian sandwich is realised on the ideal by conjugating the Clifford multiplication with two left multiplications,
+A **Peirce carrier** $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ is a left ideal and hence a Clifford module on which left multiplication by every element of the algebra is defined; when $\pi$ is primitive it is a minimal left ideal. The whole **pin group** acts on it by left multiplication, spinors are the elements of $I$, and on a simple algebra the action is faithful, with kernel $\mathrm{Pin}\cap(\{1\}\times A')$ over a product. The ideal is not homogeneous: it splits as $I=I^0\oplus I^1$ with $I^i=\mathrm{Cl}^i\pi$, the even elements preserve the two summands and the odd elements interchange them, and the Hermitian form of the ideal pairs only equal parities, so the two chiral halves are Hermitian-orthogonal. The signed Hermitian sandwich is realised on the carrier by conjugating the Clifford multiplication with two left multiplications,
 
 $$
 \Theta^{\alpha}_x(v)\psi=\rho(\alpha(x))\,\rho(v)\,\rho(x)^{*}\psi
@@ -133,7 +133,7 @@ the left factor being the **signed left multiplication** $\Lambda^{\alpha}_x$ an
 
 | Symbol | Meaning |
 |---|---|
-| $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ | Minimal left ideal, the spinor module |
+| $I=\mathrm{Cl}(V,\mathfrak{Q})\pi$ | Peirce carrier (minimal left ideal here), the spinor module |
 | $\mathrm{Pin}$ acts by $\rho(x)\psi=x\psi$ | Pin action, one-sided, defined for all of $\mathrm{Pin}$ |
 | $I=I^0\oplus I^1$, $I^i=\mathrm{Cl}^i\pi$ | Parity splitting; odd elements exchange the summands |
 | $\langle I^0,I^1\rangle=0$ | Hermitian orthogonality of the chiral halves |

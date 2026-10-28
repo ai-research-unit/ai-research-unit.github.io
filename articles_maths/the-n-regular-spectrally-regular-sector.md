@@ -847,7 +847,7 @@ $$
 \qquad\text{that is,}\qquad
 (Q_{2,12},Q_{2,22})\longmapsto(\lambda_+Q_{2,12},\;\lambda_-Q_{2,22}).
 $$
-The two spinor spaces are the two minimal left ideals; under left multiplication each is a complex plane carrying the two eigenvalues $\lambda_+,\lambda_-$.
+The two spinor spaces are the two Peirce carriers, which here are the two minimal left ideals; under left multiplication each is a complex plane carrying the two eigenvalues $\lambda_+,\lambda_-$.
 
 **Matrices.**
 With

@@ -211,7 +211,7 @@ $$
 I_{\pm}=\mathbb{B}\tilde\Pi_{\pm}
 $$
 
-are the two minimal left ideals of the algebra, and they are the spinor spaces of *Spinors as Minimal Left Ideals with Inner Conjugation*, §*Three Dimensions*, transported to the biquaternion notation. The even part of $\mathrm{Cl}_{3,0}$ is $\mathrm{Cl}^{0}\cong M_{2}(\mathbb{R})$, and the two ideals are the two columns of the matrix model; in the biquaternion algebra they are the two two-dimensional complex spaces on which the diagonal part acts by the two eigenvalues.
+are the two Peirce carriers of the algebra, the two minimal left ideals, and they are the spinor spaces of *Peirce Carriers and Inner Conjugation*, §*Three Dimensions*, transported to the biquaternion notation. The even part of $\mathrm{Cl}_{3,0}$ is $\mathrm{Cl}^{0}\cong M_{2}(\mathbb{R})$, and the two ideals are the two columns of the matrix model; in the biquaternion algebra they are the two two-dimensional complex spaces on which the diagonal part acts by the two eigenvalues.
 
 **Remark.** The Peirce and spinor structures are the same structure read twice: the Peirce corners are the matrix units of the $2\times2$ matrix model, and the left ideals are its columns. The Clifford reading adds the grades: the idempotents are of grades $0$ and $1$, and the mixed corners are spanned by products of an idempotent with an off-diagonal element, with the grades determined by the grade theorem. The grade table of §*The Grades of the Biquaternion Components* is the bookkeeping of the Peirce table.
 
@@ -281,7 +281,7 @@ $$
 
 with $\vec\Xi=-i\vec Q/B$ a unit vector and $B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$. The eigenvalues are central elements of grades $0$ and $3$; the projectors are standard vector idempotents of grades $0$ and $1$. The decomposition is the internal non-scalar case of the Clifford spectral theory: the imaginary unit is the volume element, not an external scalar.
 
-The Peirce corners of the pair are the four one-dimensional complex spaces of the matrix model; the diagonal part is $\mathbb{C}[\tilde Q]$, and the mixed part is the commutator with $\tilde\Pi_{+}$. The left ideals $\mathbb{B}\tilde\Pi_{\pm}$ are the two minimal left ideals, the spinor spaces. In the nilpotent regime $B=0$, $\vec Q\neq0$, there is no eigenvalue decomposition; in the scalar regime $\vec Q=0$, the one-term decomposition is unique but the two-projector refinement is not. In the Hermitian case the projectors are Hermitian, the root is purely imaginary, of the form $\vec\Xi=-i\vec u$ for a real unit vector $\vec u$, and the resolution is the spectral theorem of the biquaternion algebra.
+The Peirce corners of the pair are the four one-dimensional complex spaces of the matrix model; the diagonal part is $\mathbb{C}[\tilde Q]$, and the mixed part is the commutator with $\tilde\Pi_{+}$. The left ideals $\mathbb{B}\tilde\Pi_{\pm}$ are the two Peirce carriers, and the two minimal left ideals, the spinor spaces. In the nilpotent regime $B=0$, $\vec Q\neq0$, there is no eigenvalue decomposition; in the scalar regime $\vec Q=0$, the one-term decomposition is unique but the two-projector refinement is not. In the Hermitian case the projectors are Hermitian, the root is purely imaginary, of the form $\vec\Xi=-i\vec u$ for a real unit vector $\vec u$, and the resolution is the spectral theorem of the biquaternion algebra.
 
 The spectrum and the similarity classification are *The Spectrum*, §*The Spectral Criterion* and §*The Similarity Classification*; the coordinate formulas and the projectors are §*The Eigenprojectors* above; the roots and idempotents are *Idempotents*; the Peirce decomposition is *The Peirce Decomposition*; the Clifford dictionary is *The Number Systems as Clifford Algebras*; and the general theory is *The Eigenvalue Decomposition in a Clifford Algebra*.
 
@@ -301,7 +301,7 @@ The spectrum and the similarity classification are *The Spectrum*, §*The Spectr
 | $\lambda_{\pm}=Q_{t}\pm iB$ | the eigenvalues, central of grades $0$ and $3$ |
 | $\tilde\Pi_{\pm}=\tfrac12(1\pm\vec\Xi)$ | the eigenprojectors, grades $0$ and $1$ |
 | $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$ | the Peirce corners |
-| $I_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$ | the minimal left ideals, the spinor spaces |
+| $I_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$ | the Peirce carriers, the minimal left ideals, the spinor spaces |
 
 ## Further Reading
 
