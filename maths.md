@@ -7549,6 +7549,397 @@
 <a href="articles_maths/the-split-biquaternion-iterated-function-systems.html">The Split-Biquaternion Iterated Function Systems</a>
 <!-- the contractions of the split-biquaternion algebra in the indefinite metric and the self-similar sets they produce; the systems compatible with the Clifford splitting, whose attractors are the union of two Clifford attractors; the failure of the open set condition at the null cone and the self-similar sets that meet it; the comparison with the biquaternion and the split-quaternion systems. -->
 
+
+
+## The Matrix Algebras $M_n(\mathbb{C})$
+
+<!-- the five articles of this section state the construction once, for arbitrary $n$: one root of unity with simple spectrum produces all the idempotents; the idempotents produce the Peirce decomposition; the Peirce corners give the recursion $M_n\supset M_p\oplus M_{n-p}$; the simple nilpotents carry the gauge $(\mathbb{C}^{\times})^{n-1}$; the chain of nilpotents is the ladder of an $\mathfrak{sl}_2$ and the carrier is the spin-$(n-1)/2$ module. These articles own the general statements; the four categories that follow instantiate them and do not repeat the proofs. -->
+
+### The Construction
+
++&nbsp;<a href="articles_maths/the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>
+<!-- the algebra $M_n(\mathbb{C})$, the matrix units and the product rule, the trace, the determinant and the rank; the centre and the simplicity; the real dimension $2n^{2}$; the involution and the positive definite trace form, with no null cone; the unit group and the projective group; the singular set $\{\det=0\}$ of real codimension two; the case $n=2$ as the biquaternion algebra, where the N-norm is a second and indefinite form. -->
+
++&nbsp;<a href="articles_maths/roots-of-unity-and-the-lagrange-idempotents-mnc.html">Roots of Unity and the Lagrange Idempotents</a>
+<!-- one root $H$ with $H^{n}=I$ and simple spectrum; the Lagrange projectors $P_k=\prod_{l\ne k}(H-\zeta_l)/(\zeta_k-\zeta_l)$, idempotent, orthogonal and complete, and polynomial in $H$; $H=\sum_k\zeta_kP_k$; the $\mathbb{Z}/n$ grading $M^{(r)}$ with $M^{(r)}M^{(s)}\subseteq M^{(r+s)}$; the root set $PGL_n/T$ of complex dimension $n(n-1)$; the root of $+1$ as the case $n=2$; the cyclic shift as the explicit example, with Fourier projectors; no root pair. -->
+
++&nbsp;<a href="articles_maths/the-peirce-decomposition-and-the-corner-recursion-mnc.html">The Peirce Decomposition and the Corner Recursion</a>
+<!-- the spectral flag; the Peirce lines $A_{kl}=\operatorname{Hom}(V_l,V_k)$, of dimension one, with $A_{kl}A_{mn}\subseteq\delta_{lm}A_{kn}$; the coarse split by a rank-$p$ idempotent with corners $p^{2},p(n-p),(n-p)p,(n-p)^{2}$; the corner isomorphisms $\Pi M\Pi\cong M_p$ and $QMQ\cong M_{n-p}$; the recursion $M_n\supset M_p\oplus M_{n-p}$ and the cases $M_4\supset M_2\oplus M_2$, $M_5\supset M_2\oplus M_3$, $M_6\supset M_3\oplus M_3$ and $M_2\oplus M_4$; the statement that the sum is a block-diagonal subalgebra and not a sum of ideals; the warning that the corners are maps, not spinors. -->
+
++&nbsp;<a href="articles_maths/the-frame-the-simple-nilpotents-and-the-gauge-mnc.html">The Frame, the Simple Nilpotents and the Gauge</a>
+<!-- the adapted frame $v_k\in V_k$ and the units $E_{kl}=v_k\ell_l$; the rule $E_{kl}E_{mn}=\delta_{lm}E_{kn}$; the simple nilpotents $N_k=E_{k,k+1}$, $n-1$ of them, and the composites as their products; the gauge $E_{kl}\mapsto(t_k/t_l)E_{kl}$ and the effective torus $(\mathbb{C}^{\times})^{n-1}$, one parameter per simple nilpotent; the cocycle that forbids an extra scale on a composite; the count $n^{2}-1=n(n-1)+(n-1)$; at $n=2$ the six real dimensions $4+2$; the older "second root" identified with a point of the gauge, not a second primitive. -->
+
++&nbsp;<a href="articles_maths/the-spin-chain-and-the-adjoint-decomposition-mnc.html">The Spin Chain and the Adjoint Decomposition</a>
+<!-- the $\mathfrak{sl}_2$ of the frame with $J_3=\sum_k(\tfrac{n-1}{2}-k)E_{kk}$ and $J_\pm=\sum_k\sqrt{(k+1)(n-1-k)}E_{k,k\pm1}$, and $[J_+,J_-]=2J_3$; the carrier $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$ of spin $(n-1)/2$, irreducible, with ladder coefficients $\sqrt{k(n-k)}$; the adjoint decomposition $1+3+\cdots+(2n-1)$ by weight multiplicities; the chirality $\Gamma=H^{n/2}$ at even $n$, the $m+m$ split and the chiral algebra; the warning that the carrier is a spinor module only at $n=2$ and at the chiral halves of $n=4$. -->
+
+### The Four Categories
+
+<!-- the four categories that follow instantiate the construction at $n=3,4,5,6$. Each repeats the spine of fourteen articles with the data of its $n$, and adds five articles on the phenomenon specific to that $n$. The general statements and their proofs are in the five articles above and are cited, not repeated. -->
+
+## $M_3(\mathbb{C})$
+
+### Algebra
+
+#### The Algebra
+
++&nbsp;<a href="articles_maths/the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>
+<!-- the algebra $M_3(\mathbb{C})$, the basis $E_{ij}$ and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant; the centre $\mathbb{C}I$ and the simplicity; the real dimension $18$; the unit group $GL_3(\mathbb{C})$ and the projective group of dimension $8$; the reading of the algebra as the complexification of $\mathfrak{u}(3)$, with the Hermitian and skew-Hermitian parts; no form and no topology are used. -->
+
++&nbsp;<a href="articles_maths/the-element-the-coordinates-and-the-trace-of-m3c.html">The Element, the Coordinates and the Trace</a>
+<!-- the $9$ complex coordinates and the split into the scalar part $\tfrac13\operatorname{tr}$ and the traceless part; the coordinate rule for the product; the Jordan decomposition into commuting semisimple and nilpotent parts; the real and imaginary parts of the coordinates; the element as a linear map and as a bilinear form; the trace pairing. -->
+
++&nbsp;<a href="articles_maths/the-involution-and-the-hermitian-structure-of-m3c.html">The Involution and the Hermitian Structure</a>
+<!-- the conjugate transpose, the Hermitian, skew-Hermitian and unitary elements; the positive definite trace form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ and the Frobenius norm it defines; the real forms $\mathfrak{u}(3)$ and $\mathfrak{su}(3)$ of dimensions $9$ and $8$; the definite form and its single isotropic vector $0$, against the null cone of the biquaternion algebra. -->
+
++&nbsp;<a href="articles_maths/the-m2-corner-of-m3c.html">The $M_2$ Corner of $M_3(\mathbb{C})$</a>
+<!-- the compression $PM_3(\mathbb{C})P$ for a rank-two projection $P$, isomorphic to $M_2(\mathbb{C})$ with unit $P$; the corner as a unital $*$-algebra exactly when $P=P^{*}=P^2$, and the failure for a non-Hermitian idempotent; the inherited trace, the determinant of the compression, and the embedding $M_2\to M_3$; the complement $\mathbb{C}(I-P)$; the involution of $\mathbb{B}$ not descending to the corner. -->
+
+#### The Frame
+
++&nbsp;<a href="articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-m3c.html">Roots of Unity and the Lagrange Idempotents</a>
+<!-- the solutions of $H^{3}=I$ with distinct eigenvalues, the $3$ roots of unity $\zeta_k$; the Lagrange projectors $P_k=\prod_{l\neq k}(H-\zeta_l)/(\zeta_k-\zeta_l)$, idempotent, orthogonal and complete; $H=\sum_k\zeta_kP_k$ and the $\mathbb{Z}/3$ grading; the root set as $PGL_3/T$, of dimension $6$, a cover of degree $3!$ over the flag variety; the root of $+1$ as the order-two case, which gives two idempotents and is the biquaternion; no second object is needed. -->
+
++&nbsp;<a href="articles_maths/the-peirce-decomposition-of-m3c.html">The Peirce Decomposition</a>
+<!-- the $3$ Peirce lines $P_kM_3P_l$ of the full flag; the coarse split by a rank-one idempotent with corners $1+2+2+4$, the diagonal blocks being $1$ and $4$; the multiplication rule $A_{kl}A_{lm}\subseteq A_{km}$ and the vanishing otherwise; the corner isomorphisms $P_kM_3P_k\cong\mathbb{C}$ and $QM_3Q\cong M_2$ for a rank-one $P$ and $Q=I-P$; the comparison with the four lines of $\mathbb{B}$, where the coarse and the fine decomposition coincide. -->
+
++&nbsp;<a href="articles_maths/the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html">The Frame, the Simple Nilpotents and the Gauge</a>
+<!-- $E_{ij}=v_iv_j^{\vee}$ for a basis $(v_1,\dots,v_3)$; the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$; the simple nilpotents $E_{12},\dots,E_{23}$ and the composites $E_{ij}=E_{i,i+1}\cdots E_{j-1,j}$; the gauge $E_{ij}\mapsto(t_i/t_j)E_{ij}$ and the torus $(\mathbb{C}^{\times})^{2}$; the count $6$ complex from the root and $2$ from the gauge, $8$ in all; the cocycle that forbids a further independent scalar. -->
+
++&nbsp;<a href="articles_maths/the-rank-two-split-of-m3c.html">The Rank-Two Split</a>
+<!-- the rank-two idempotent and the corners $4+2+2+1$; $PM_3P\cong M_2$ and $QM_3Q\cong\mathbb{C}$; the mass block $PM_3Q$ of dimension $2$; the two-sided Peirce table; the failure of the split to be a direct sum of algebras. -->
+
++&nbsp;<a href="articles_maths/the-two-parameter-gauge-of-m3c.html">The Two-Parameter Gauge</a>
+<!-- $\lambda_1$ on $E_{12}$ and $\lambda_2$ on $E_{23}$; the product forcing $E_{13}=\lambda_1\lambda_2E_{13}$ and forbidding a third independent scalar; the gauge group $(\mathbb{C}^{\times})^2$ as the maximal torus of $PGL_3(\mathbb{C})$; the comparison with the single $\lambda$ of $\mathbb{B}$; the effect on the coherence entries of a state. -->
+
+#### The Modules
+
++&nbsp;<a href="articles_maths/the-modules-and-the-minimal-left-ideals-of-m3c.html">The Modules and the Minimal Left Ideals</a>
+<!-- the minimal left ideal $M_3P_1\cong\mathbb{C}^3$, the minimal right ideal and the dual; the column and the row; $M_3\cong\mathbb{C}^3\otimes(\mathbb{C}^3)^{*}$; the isomorphism of all minimal left ideals and the non-canonical exchange; the Peirce carrier $C(P)=PM_3P\oplus PM_3Q$ of dimension $1+2$; the module as the carrier of the spin chain. -->
+
++&nbsp;<a href="articles_maths/the-spin-chain-and-the-adjoint-decomposition-of-m3c.html">The Spin Chain and the Adjoint Decomposition</a>
+<!-- the $\mathfrak{su}_2$ generated by $J_3=\operatorname{diag}(1,\dots,-1)$ and $J_+=\sum_k\sqrt{k(3-k)}E_{k,k+1}$; the carrier $\mathbb{C}^3=\operatorname{Sym}^{2}(\mathbb{C}^2)$, of spin $1$; the ladder coefficients $\sqrt2,\sqrt2$; the adjoint decomposition $1+3+5$, one irreducible summand per weight; the weights read on the Peirce chain; the comparison with the spinorial case $n=2$. -->
+
++&nbsp;<a href="articles_maths/the-triplet-spin-one-and-the-adjoint-of-m3c.html">The Triplet: Spin One and the Adjoint $1+3+5$</a>
+<!-- $\mathbb{C}^3=\operatorname{Sym}^2(\mathbb{C}^2)$ and spin one; $J_3=\operatorname{diag}(1,0,-1)$; $J_+=\sqrt2(E_{12}+E_{23})$; the adjoint $1+3+5$ with the $3$ identified with the carrier; the absence of a half-integer weight; the contrast with the spinorial $2$ of $\mathbb{B}$. -->
+
+#### The Forms and the Norms
+
++&nbsp;<a href="articles_maths/the-forms-the-norms-and-the-singular-set-of-m3c.html">The Forms, the Norms and the Singular Set</a>
+<!-- the trace form and the Frobenius, operator and nuclear norms; the determinant and the singular set $\{\det=0\}$ of real codimension two; the rank stratification and the dimension of each stratum; the absence of a null cone, the form being definite; the comparison with the cone of $\mathbb{B}$ and with its link. -->
+
+#### The Operators
+
++&nbsp;<a href="articles_maths/the-operators-of-the-peirce-decomposition-of-m3c.html">The Operators of the Peirce Decomposition</a>
+<!-- $L_a$, $R_a$, $T_{a,b}$ and $\operatorname{ad}_a$ and their matrices; the action on the Peirce corners, $T_{a,b}$ carrying $A_{rs}$ to $A_{il}$; the derivations $\operatorname{Der}(M_3)=\mathfrak{sl}_3$ of dimension $8$; the inner automorphisms $PGL_3$ and the outer ones; the sandwich as a map of corners. -->
+
++&nbsp;<a href="articles_maths/the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html">The Adjoint Action, the Orbits and the Flag Variety</a>
+<!-- the orbits of $PGL_3$ as the Jordan types; the stabiliser of a cyclic element the torus $(\mathbb{C}^{\times})^{2}$; the flag variety $GL_3/B$ of dimension $3$; the Grassmannians $\operatorname{Gr}(1,3)=\mathbb{P}^{2}$ and $\operatorname{Gr}(2,3)$ of dimension $2$; the orbit–stabiliser count $8=6+2$; the gauge as the fibre over the root. -->
+
+#### Spectral Theory and the Polar Decomposition
+
++&nbsp;<a href="articles_maths/spectral-theory-and-the-spectral-projectors-of-m3c.html">Spectral Theory and the Spectral Projectors</a>
+<!-- the characteristic polynomial of degree $3$ and its roots; the Jordan form; the minimal polynomial; the spectral projectors by the Dunford calculus; the resolvent and the spectral radius; the relation to the Lagrange projectors at a simple spectrum and their limits at a repeated root. -->
+
++&nbsp;<a href="articles_maths/the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html">The Cubic, the Discriminant and the Spectral Strata</a>
+<!-- the discriminant of the characteristic cubic as a polynomial in the nine entries; the strata by the root multiplicities, three distinct roots, a double root and a triple root, with their dimensions; the centraliser of a cyclic element the torus of dimension $3$; the spectral projectors and their limits at a repeated root; the degeneration of the Lagrange projectors. -->
+
++&nbsp;<a href="articles_maths/the-polar-decomposition-of-m3c.html">The Polar Decomposition</a>
+<!-- $A=UP$ with $U\in U(3)$ and $P$ positive semidefinite; existence for every element and uniqueness on the invertible ones; the singular value decomposition; the polar of a singular element and the freedom on the kernel; the manifold $GL_3/U(3)$; the exponential form. -->
+
++&nbsp;<a href="articles_maths/the-exponential-and-the-lie-group-of-m3c.html">The Exponential and the Lie Group</a>
+<!-- the exponential and the logarithm on $M_3(\mathbb{C})$; the surjectivity of $\exp$ onto $GL_3(\mathbb{C})$; the one-parameter subgroups $e^{tX}$; the Lie algebra $\mathfrak{gl}_3$ of real dimension $18$; $\mathfrak{su}(3)$ of dimension $8$; the closed form of the exponential and the eigenvalues. -->
+
+### Analysis
+
++&nbsp;<a href="articles_maths/analysis-on-m3c.html">Analysis on $M_3(\mathbb{C})$</a>
+<!-- the smooth structure of $\mathbb{C}^{9}$; the derivatives of the product, the inverse, the determinant and the exponential; the Wirtinger calculus; the holomorphic functional calculus; the Fourier transform on $\mathbb{C}^{9}$; the absence of zero divisors and the ordinary matrix analysis it gives; the boundary against Fueter theory, which needs another structure. -->
+
++&nbsp;<a href="articles_maths/the-exponential-polar-decomposition-of-m3c.html">The Exponential Polar Decomposition</a>
+<!-- every invertible $A=e^{H}e^{iK}$ with $H,K$ Hermitian; the relation to the polar decomposition $A=UP$; the uniqueness and the reach of the exponential on the singular elements; the comparison with the split case. -->
+
+### Geometry
+
++&nbsp;<a href="articles_maths/the-geometry-of-the-idempotents-of-m3c.html">The Geometry of the Idempotents</a>
+<!-- the idempotents of rank one as an affine bundle of rank $2$ over $\mathbb{P}^{2}$, of dimension $4$; the idempotents of rank $p$ as the homogeneous space $PGL_3/P(GL_p\times GL_{3-p})$ of dimension $2p(3-p)$, a fibre bundle over $\operatorname{Gr}(p,3)$ with the contractible fibre of complements; the full flag variety $GL_3/B$ of dimension $3$; the partial flags and the incidence relations; the gauge as the fibre of the frame bundle. -->
+
+### Topology
+
++&nbsp;<a href="articles_maths/the-topology-of-m3c.html">The Topology of $M_3(\mathbb{C})$</a>
+<!-- $M_3(\mathbb{C})\cong\mathbb{R}^{18}$ contractible; $GL_3(\mathbb{C})\simeq U(3)$; $\pi_1=\mathbb{Z}$ and $\pi_2=0$; the space of idempotents of rank $p$ homotopy equivalent to $\operatorname{Gr}(p,3)$; the flag variety simply connected; the determinant bundle and its first Chern class. -->
+
+## $M_4(\mathbb{C})$
+
+### Algebra
+
+#### The Algebra
+
++&nbsp;<a href="articles_maths/the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>
+<!-- the algebra $M_4(\mathbb{C})$, the basis $E_{ij}$ and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant; the centre $\mathbb{C}I$ and the simplicity; the real dimension $32$; the unit group $GL_4(\mathbb{C})$ and the projective group of dimension $15$; the reading of the algebra as the complexification of $\mathfrak{u}(4)$, with the Hermitian and skew-Hermitian parts; no form and no topology are used. -->
+
++&nbsp;<a href="articles_maths/the-element-the-coordinates-and-the-trace-of-m4c.html">The Element, the Coordinates and the Trace</a>
+<!-- the $16$ complex coordinates and the split into the scalar part $\tfrac14\operatorname{tr}$ and the traceless part; the coordinate rule for the product; the Jordan decomposition into commuting semisimple and nilpotent parts; the real and imaginary parts of the coordinates; the element as a linear map and as a bilinear form; the trace pairing. -->
+
++&nbsp;<a href="articles_maths/the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure</a>
+<!-- the conjugate transpose, the Hermitian, skew-Hermitian and unitary elements; the positive definite trace form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ and the Frobenius norm it defines; the real forms $\mathfrak{u}(4)$ and $\mathfrak{su}(4)$ of dimensions $16$ and $15$; the definite form and its single isotropic vector $0$, against the null cone of the biquaternion algebra. -->
+
+#### The Frame
+
++&nbsp;<a href="articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents</a>
+<!-- the solutions of $H^{4}=I$ with distinct eigenvalues, the $4$ roots of unity $\zeta_k$; the Lagrange projectors $P_k=\prod_{l\neq k}(H-\zeta_l)/(\zeta_k-\zeta_l)$, idempotent, orthogonal and complete; $H=\sum_k\zeta_kP_k$ and the $\mathbb{Z}/4$ grading; the root set as $PGL_4/T$, of dimension $12$, a cover of degree $4!$ over the flag variety; the root of $+1$ as the order-two case, which gives two idempotents and is the biquaternion; no second object is needed. -->
+
++&nbsp;<a href="articles_maths/the-peirce-decomposition-of-m4c.html">The Peirce Decomposition</a>
+<!-- the $4$ Peirce lines $P_kM_4P_l$ of the full flag; the coarse split by a rank-one idempotent with corners $1+3+3+9$, the diagonal blocks being $1$ and $9$; the multiplication rule $A_{kl}A_{lm}\subseteq A_{km}$ and the vanishing otherwise; the corner isomorphisms $P_kM_4P_k\cong\mathbb{C}$ and $QM_4Q\cong M_3$ for a rank-one $P$ and $Q=I-P$; the comparison with the four lines of $\mathbb{B}$, where the coarse and the fine decomposition coincide. -->
+
++&nbsp;<a href="articles_maths/the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html">The Frame, the Simple Nilpotents and the Gauge</a>
+<!-- $E_{ij}=v_iv_j^{\vee}$ for a basis $(v_1,\dots,v_4)$; the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$; the simple nilpotents $E_{12},\dots,E_{34}$ and the composites $E_{ij}=E_{i,i+1}\cdots E_{j-1,j}$; the gauge $E_{ij}\mapsto(t_i/t_j)E_{ij}$ and the torus $(\mathbb{C}^{\times})^{3}$; the count $12$ complex from the root and $3$ from the gauge, $15$ in all; the cocycle that forbids a further independent scalar. -->
+
++&nbsp;<a href="articles_maths/the-two-chiralities-of-m4c.html">The Two Chiralities</a>
+<!-- $\Gamma=H^2$ for a root $H$ of order four, the involution $\operatorname{diag}(1,-1,1,-1)$; the $2+2$ split into the two chiral blocks; the mass block off-diagonal; the $\mathbb{Z}/4$ grading and the $\mathbb{Z}/2$ quotient that is $\Gamma$; the contrast with $\mathbb{B}$, where $\Gamma=H$ and the two chiralities are the two minimal left ideals. -->
+
++&nbsp;<a href="articles_maths/the-rank-two-split-of-m4c.html">The Rank-Two Split</a>
+<!-- the rank-two idempotent and the corners $4+4+4+4$; $PM_4P\cong M_2$ and $QM_4Q\cong M_2$; the two carrier modules; the mass block $PM_4Q$ of dimension $4$; the two-sided Peirce table; the failure of the split to be a direct sum of algebras. -->
+
+#### The Modules
+
++&nbsp;<a href="articles_maths/the-modules-and-the-minimal-left-ideals-of-m4c.html">The Modules and the Minimal Left Ideals</a>
+<!-- the minimal left ideal $M_4P_1\cong\mathbb{C}^4$, the minimal right ideal and the dual; the column and the row; $M_4\cong\mathbb{C}^4\otimes(\mathbb{C}^4)^{*}$; the isomorphism of all minimal left ideals and the non-canonical exchange; the Peirce carrier $C(P)=PM_4P\oplus PM_4Q$ of dimension $1+3$; the module as the carrier of the spin chain. -->
+
++&nbsp;<a href="articles_maths/the-spin-chain-and-the-adjoint-decomposition-of-m4c.html">The Spin Chain and the Adjoint Decomposition</a>
+<!-- the $\mathfrak{su}_2$ generated by $J_3=\operatorname{diag}(\tfrac32,\dots,-\tfrac32)$ and $J_+=\sum_k\sqrt{k(4-k)}E_{k,k+1}$; the carrier $\mathbb{C}^4=\operatorname{Sym}^{3}(\mathbb{C}^2)$, of spin $\tfrac32$; the ladder coefficients $\sqrt3,2,\sqrt3$; the adjoint decomposition $1+3+5+7$, one irreducible summand per weight; the weights read on the Peirce chain; the comparison with the spinorial case $n=2$. -->
+
++&nbsp;<a href="articles_maths/the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html">The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$</a>
+<!-- the $\mathfrak{su}_2$ of the frame chain with spin $\tfrac32$ on $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$, irreducible and mixing the two chiralities; the chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ preserving $\Gamma$ and acting on $\mathbb{C}^4=(\tfrac12,0)\oplus(0,\tfrac12)$; the mass block as the intertwiner between the two; the two commutants and the branching. -->
+
++&nbsp;<a href="articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html">The Mass Block and the Chiral Polar Decomposition</a>
+<!-- $M:\mathbb{C}^2_R\to\mathbb{C}^2_L$; the transformation $M\mapsto U_LMU_R^{-1}$ and the singular values as the two invariants; the polar decomposition $M=U\Sigma V^{*}$; the determinant as the phase and the rank as the masslessness; the off-diagonal block as the only coupling of the chiralities. -->
+
+#### The Forms and the Norms
+
++&nbsp;<a href="articles_maths/the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set</a>
+<!-- the trace form and the Frobenius, operator and nuclear norms; the determinant and the singular set $\{\det=0\}$ of real codimension two; the rank stratification and the dimension of each stratum; the absence of a null cone, the form being definite; the comparison with the cone of $\mathbb{B}$ and with its link. -->
+
+#### The Operators
+
++&nbsp;<a href="articles_maths/the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition</a>
+<!-- $L_a$, $R_a$, $T_{a,b}$ and $\operatorname{ad}_a$ and their matrices; the action on the Peirce corners, $T_{a,b}$ carrying $A_{rs}$ to $A_{il}$; the derivations $\operatorname{Der}(M_4)=\mathfrak{sl}_4$ of dimension $15$; the inner automorphisms $PGL_4$ and the outer ones; the sandwich as a map of corners. -->
+
++&nbsp;<a href="articles_maths/the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety</a>
+<!-- the orbits of $PGL_4$ as the Jordan types; the stabiliser of a cyclic element the torus $(\mathbb{C}^{\times})^{3}$; the flag variety $GL_4/B$ of dimension $6$; the Grassmannians $\operatorname{Gr}(1,4)=\mathbb{P}^{3}$ and $\operatorname{Gr}(2,4)$ of dimension $4$; the orbit–stabiliser count $15=12+3$; the gauge as the fibre over the root. -->
+
+#### Spectral Theory and the Polar Decomposition
+
++&nbsp;<a href="articles_maths/spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors</a>
+<!-- the characteristic polynomial of degree $4$ and its roots; the Jordan form; the minimal polynomial; the spectral projectors by the Dunford calculus; the resolvent and the spectral radius; the relation to the Lagrange projectors at a simple spectrum and their limits at a repeated root. -->
+
++&nbsp;<a href="articles_maths/the-polar-decomposition-of-m4c.html">The Polar Decomposition</a>
+<!-- $A=UP$ with $U\in U(4)$ and $P$ positive semidefinite; existence for every element and uniqueness on the invertible ones; the singular value decomposition; the polar of a singular element and the freedom on the kernel; the manifold $GL_4/U(4)$; the exponential form. -->
+
++&nbsp;<a href="articles_maths/the-three-parameter-gauge-and-the-chiral-polar-decomposition-of-m4c.html">The Three-Parameter Gauge and the Chiral Polar Decomposition</a>
+<!-- the torus $(\mathbb{C}^{\times})^3$ of the frame, one parameter per simple nilpotent; the blockwise $U(2)\times U(2)$ polar decomposition of a block-diagonal element; the general element and its $U(4)$ polar factor; the chiral polar decomposition and the mass block; the comparison with the single $\lambda$ of $\mathbb{B}$. -->
+
++&nbsp;<a href="articles_maths/the-exponential-and-the-lie-group-of-m4c.html">The Exponential and the Lie Group</a>
+<!-- the exponential and the logarithm on $M_4(\mathbb{C})$; the surjectivity of $\exp$ onto $GL_4(\mathbb{C})$; the one-parameter subgroups $e^{tX}$; the Lie algebra $\mathfrak{gl}_4$ of real dimension $32$; $\mathfrak{su}(4)$ of dimension $15$; the closed form of the exponential and the eigenvalues. -->
+
+### Analysis
+
++&nbsp;<a href="articles_maths/analysis-on-m4c.html">Analysis on $M_4(\mathbb{C})$</a>
+<!-- the smooth structure of $\mathbb{C}^{16}$; the derivatives of the product, the inverse, the determinant and the exponential; the Wirtinger calculus; the holomorphic functional calculus; the Fourier transform on $\mathbb{C}^{16}$; the absence of zero divisors and the ordinary matrix analysis it gives; the boundary against Fueter theory, which needs another structure. -->
+
++&nbsp;<a href="articles_maths/the-exponential-polar-decomposition-of-m4c.html">The Exponential Polar Decomposition</a>
+<!-- every invertible $A=e^{H}e^{iK}$ with $H,K$ Hermitian; the relation to the polar decomposition $A=UP$; the uniqueness and the reach of the exponential on the singular elements; the comparison with the split case. -->
+
+### Geometry
+
++&nbsp;<a href="articles_maths/the-geometry-of-the-idempotents-of-m4c.html">The Geometry of the Idempotents</a>
+<!-- the idempotents of rank one as an affine bundle of rank $3$ over $\mathbb{P}^{3}$, of dimension $6$; the idempotents of rank $p$ as the homogeneous space $PGL_4/P(GL_p\times GL_{4-p})$ of dimension $2p(4-p)$, a fibre bundle over $\operatorname{Gr}(p,4)$ with the contractible fibre of complements; the full flag variety $GL_4/B$ of dimension $6$; the partial flags and the incidence relations; the gauge as the fibre of the frame bundle. -->
+
+### Topology
+
++&nbsp;<a href="articles_maths/the-topology-of-m4c.html">The Topology of $M_4(\mathbb{C})$</a>
+<!-- $M_4(\mathbb{C})\cong\mathbb{R}^{32}$ contractible; $GL_4(\mathbb{C})\simeq U(4)$; $\pi_1=\mathbb{Z}$ and $\pi_2=0$; the space of idempotents of rank $p$ homotopy equivalent to $\operatorname{Gr}(p,4)$; the flag variety simply connected; the determinant bundle and its first Chern class. -->
+
+## $M_5(\mathbb{C})$
+
+### Algebra
+
+#### The Algebra
+
++&nbsp;<a href="articles_maths/the-matrix-algebra-m5c.html">The Matrix Algebra $M_5(\mathbb{C})$</a>
+<!-- the algebra $M_5(\mathbb{C})$, the basis $E_{ij}$ and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant; the centre $\mathbb{C}I$ and the simplicity; the real dimension $50$; the unit group $GL_5(\mathbb{C})$ and the projective group of dimension $24$; the reading of the algebra as the complexification of $\mathfrak{u}(5)$, with the Hermitian and skew-Hermitian parts; no form and no topology are used. -->
+
++&nbsp;<a href="articles_maths/the-element-the-coordinates-and-the-trace-of-m5c.html">The Element, the Coordinates and the Trace</a>
+<!-- the $25$ complex coordinates and the split into the scalar part $\tfrac15\operatorname{tr}$ and the traceless part; the coordinate rule for the product; the Jordan decomposition into commuting semisimple and nilpotent parts; the real and imaginary parts of the coordinates; the element as a linear map and as a bilinear form; the trace pairing. -->
+
++&nbsp;<a href="articles_maths/the-involution-and-the-hermitian-structure-of-m5c.html">The Involution and the Hermitian Structure</a>
+<!-- the conjugate transpose, the Hermitian, skew-Hermitian and unitary elements; the positive definite trace form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ and the Frobenius norm it defines; the real forms $\mathfrak{u}(5)$ and $\mathfrak{su}(5)$ of dimensions $25$ and $24$; the definite form and its single isotropic vector $0$, against the null cone of the biquaternion algebra. -->
+
++&nbsp;<a href="articles_maths/the-m2-m3-corner-of-m5c.html">The $M_2\oplus M_3$ Corner</a>
+<!-- the recursion $M_5(\mathbb{C})\supset M_2(\mathbb{C})\oplus M_3(\mathbb{C})$ from a rank-two projection; the gauge $1+2+1=4$, the two corner tori and the relative scale; the block embedding and the off-diagonal block; the reading of the $M_2$ and $M_3$ articles inside the algebra. -->
+
+#### The Frame
+
++&nbsp;<a href="articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-m5c.html">Roots of Unity and the Lagrange Idempotents</a>
+<!-- the solutions of $H^{5}=I$ with distinct eigenvalues, the $5$ roots of unity $\zeta_k$; the Lagrange projectors $P_k=\prod_{l\neq k}(H-\zeta_l)/(\zeta_k-\zeta_l)$, idempotent, orthogonal and complete; $H=\sum_k\zeta_kP_k$ and the $\mathbb{Z}/5$ grading; the root set as $PGL_5/T$, of dimension $20$, a cover of degree $5!$ over the flag variety; the root of $+1$ as the order-two case, which gives two idempotents and is the biquaternion; no second object is needed. -->
+
++&nbsp;<a href="articles_maths/the-peirce-decomposition-of-m5c.html">The Peirce Decomposition</a>
+<!-- the $5$ Peirce lines $P_kM_5P_l$ of the full flag; the coarse split by a rank-one idempotent with corners $1+4+4+16$, the diagonal blocks being $1$ and $16$; the multiplication rule $A_{kl}A_{lm}\subseteq A_{km}$ and the vanishing otherwise; the corner isomorphisms $P_kM_5P_k\cong\mathbb{C}$ and $QM_5Q\cong M_4$ for a rank-one $P$ and $Q=I-P$; the comparison with the four lines of $\mathbb{B}$, where the coarse and the fine decomposition coincide. -->
+
++&nbsp;<a href="articles_maths/the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html">The Frame, the Simple Nilpotents and the Gauge</a>
+<!-- $E_{ij}=v_iv_j^{\vee}$ for a basis $(v_1,\dots,v_5)$; the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$; the simple nilpotents $E_{12},\dots,E_{45}$ and the composites $E_{ij}=E_{i,i+1}\cdots E_{j-1,j}$; the gauge $E_{ij}\mapsto(t_i/t_j)E_{ij}$ and the torus $(\mathbb{C}^{\times})^{4}$; the count $20$ complex from the root and $4$ from the gauge, $24$ in all; the cocycle that forbids a further independent scalar. -->
+
++&nbsp;<a href="articles_maths/the-rank-two-split-of-m5c.html">The Rank-Two Split</a>
+<!-- the corners $4+6+6+9$; $PM_5P\cong M_2$ and $QM_5Q\cong M_3$; the mass block of dimension $6$; the two-sided Peirce table; the two corners as the previous categories. -->
+
+#### The Modules
+
++&nbsp;<a href="articles_maths/the-modules-and-the-minimal-left-ideals-of-m5c.html">The Modules and the Minimal Left Ideals</a>
+<!-- the minimal left ideal $M_5P_1\cong\mathbb{C}^5$, the minimal right ideal and the dual; the column and the row; $M_5\cong\mathbb{C}^5\otimes(\mathbb{C}^5)^{*}$; the isomorphism of all minimal left ideals and the non-canonical exchange; the Peirce carrier $C(P)=PM_5P\oplus PM_5Q$ of dimension $1+4$; the module as the carrier of the spin chain. -->
+
++&nbsp;<a href="articles_maths/the-spin-chain-and-the-adjoint-decomposition-of-m5c.html">The Spin Chain and the Adjoint Decomposition</a>
+<!-- the $\mathfrak{su}_2$ generated by $J_3=\operatorname{diag}(2,\dots,-2)$ and $J_+=\sum_k\sqrt{k(5-k)}E_{k,k+1}$; the carrier $\mathbb{C}^5=\operatorname{Sym}^{4}(\mathbb{C}^2)$, of spin $2$; the ladder coefficients $2,\sqrt6,\sqrt6,2$; the adjoint decomposition $1+3+5+7+9$, one irreducible summand per weight; the weights read on the Peirce chain; the comparison with the spinorial case $n=2$. -->
+
++&nbsp;<a href="articles_maths/the-spin-two-chain-and-the-adjoint-of-m5c.html">The Spin-Two Chain and the Adjoint $1+3+5+7+9$</a>
+<!-- $\mathbb{C}^5=\operatorname{Sym}^4(\mathbb{C}^2)$ and spin two; $J_3=\operatorname{diag}(2,1,0,-1,-2)$; the ladder coefficients $2,\sqrt6,\sqrt6,2$; the adjoint $1+3+5+7+9$; the absence of chirality, $n$ odd. -->
+
+#### The Forms and the Norms
+
++&nbsp;<a href="articles_maths/the-forms-the-norms-and-the-singular-set-of-m5c.html">The Forms, the Norms and the Singular Set</a>
+<!-- the trace form and the Frobenius, operator and nuclear norms; the determinant and the singular set $\{\det=0\}$ of real codimension two; the rank stratification and the dimension of each stratum; the absence of a null cone, the form being definite; the comparison with the cone of $\mathbb{B}$ and with its link. -->
+
+#### The Operators
+
++&nbsp;<a href="articles_maths/the-operators-of-the-peirce-decomposition-of-m5c.html">The Operators of the Peirce Decomposition</a>
+<!-- $L_a$, $R_a$, $T_{a,b}$ and $\operatorname{ad}_a$ and their matrices; the action on the Peirce corners, $T_{a,b}$ carrying $A_{rs}$ to $A_{il}$; the derivations $\operatorname{Der}(M_5)=\mathfrak{sl}_5$ of dimension $24$; the inner automorphisms $PGL_5$ and the outer ones; the sandwich as a map of corners. -->
+
++&nbsp;<a href="articles_maths/the-adjoint-action-the-orbits-and-the-flag-variety-of-m5c.html">The Adjoint Action, the Orbits and the Flag Variety</a>
+<!-- the orbits of $PGL_5$ as the Jordan types; the stabiliser of a cyclic element the torus $(\mathbb{C}^{\times})^{4}$; the flag variety $GL_5/B$ of dimension $10$; the Grassmannians $\operatorname{Gr}(1,5)=\mathbb{P}^{4}$ and $\operatorname{Gr}(2,5)$ of dimension $6$; the orbit–stabiliser count $24=20+4$; the gauge as the fibre over the root. -->
+
++&nbsp;<a href="articles_maths/the-partial-flags-of-m5c.html">The Partial Flags</a>
+<!-- $\operatorname{Gr}(1,5)$, $\operatorname{Gr}(2,5)$ and $\operatorname{Gr}(3,5)$ of dimensions $4,6,6$; the two-step flags $V_1\subset V_2$ of dimension $4+6=10$; the incidence relations; the gauge as the fibre of the frame bundle; the orbits of the adjoint action that correspond. -->
+
+#### Spectral Theory and the Polar Decomposition
+
++&nbsp;<a href="articles_maths/spectral-theory-and-the-spectral-projectors-of-m5c.html">Spectral Theory and the Spectral Projectors</a>
+<!-- the characteristic polynomial of degree $5$ and its roots; the Jordan form; the minimal polynomial; the spectral projectors by the Dunford calculus; the resolvent and the spectral radius; the relation to the Lagrange projectors at a simple spectrum and their limits at a repeated root. -->
+
++&nbsp;<a href="articles_maths/the-quintic-and-the-spectral-strata-of-m5c.html">The Quintic and the Spectral Strata</a>
+<!-- the characteristic quintic and the absence of a radical solution in general; the strata by the partitions of $5$, with their dimensions; the centraliser of a cyclic element the torus of dimension $5$; the spectral projectors by the Lagrange formula at a simple spectrum; the degeneration at a repeated root. -->
+
++&nbsp;<a href="articles_maths/the-polar-decomposition-of-m5c.html">The Polar Decomposition</a>
+<!-- $A=UP$ with $U\in U(5)$ and $P$ positive semidefinite; existence for every element and uniqueness on the invertible ones; the singular value decomposition; the polar of a singular element and the freedom on the kernel; the manifold $GL_5/U(5)$; the exponential form. -->
+
++&nbsp;<a href="articles_maths/the-exponential-and-the-lie-group-of-m5c.html">The Exponential and the Lie Group</a>
+<!-- the exponential and the logarithm on $M_5(\mathbb{C})$; the surjectivity of $\exp$ onto $GL_5(\mathbb{C})$; the one-parameter subgroups $e^{tX}$; the Lie algebra $\mathfrak{gl}_5$ of real dimension $50$; $\mathfrak{su}(5)$ of dimension $24$; the closed form of the exponential and the eigenvalues. -->
+
+### Analysis
+
++&nbsp;<a href="articles_maths/analysis-on-m5c.html">Analysis on $M_5(\mathbb{C})$</a>
+<!-- the smooth structure of $\mathbb{C}^{25}$; the derivatives of the product, the inverse, the determinant and the exponential; the Wirtinger calculus; the holomorphic functional calculus; the Fourier transform on $\mathbb{C}^{25}$; the absence of zero divisors and the ordinary matrix analysis it gives; the boundary against Fueter theory, which needs another structure. -->
+
++&nbsp;<a href="articles_maths/the-exponential-polar-decomposition-of-m5c.html">The Exponential Polar Decomposition</a>
+<!-- every invertible $A=e^{H}e^{iK}$ with $H,K$ Hermitian; the relation to the polar decomposition $A=UP$; the uniqueness and the reach of the exponential on the singular elements; the comparison with the split case. -->
+
+### Geometry
+
++&nbsp;<a href="articles_maths/the-geometry-of-the-idempotents-of-m5c.html">The Geometry of the Idempotents</a>
+<!-- the idempotents of rank one as an affine bundle of rank $4$ over $\mathbb{P}^{4}$, of dimension $8$; the idempotents of rank $p$ as the homogeneous space $PGL_5/P(GL_p\times GL_{5-p})$ of dimension $2p(5-p)$, a fibre bundle over $\operatorname{Gr}(p,5)$ with the contractible fibre of complements; the full flag variety $GL_5/B$ of dimension $10$; the partial flags and the incidence relations; the gauge as the fibre of the frame bundle. -->
+
+### Topology
+
++&nbsp;<a href="articles_maths/the-topology-of-m5c.html">The Topology of $M_5(\mathbb{C})$</a>
+<!-- $M_5(\mathbb{C})\cong\mathbb{R}^{50}$ contractible; $GL_5(\mathbb{C})\simeq U(5)$; $\pi_1=\mathbb{Z}$ and $\pi_2=0$; the space of idempotents of rank $p$ homotopy equivalent to $\operatorname{Gr}(p,5)$; the flag variety simply connected; the determinant bundle and its first Chern class. -->
+
+## $M_6(\mathbb{C})$
+
+### Algebra
+
+#### The Algebra
+
++&nbsp;<a href="articles_maths/the-matrix-algebra-m6c.html">The Matrix Algebra $M_6(\mathbb{C})$</a>
+<!-- the algebra $M_6(\mathbb{C})$, the basis $E_{ij}$ and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace and the determinant; the centre $\mathbb{C}I$ and the simplicity; the real dimension $72$; the unit group $GL_6(\mathbb{C})$ and the projective group of dimension $35$; the reading of the algebra as the complexification of $\mathfrak{u}(6)$, with the Hermitian and skew-Hermitian parts; no form and no topology are used. -->
+
++&nbsp;<a href="articles_maths/the-element-the-coordinates-and-the-trace-of-m6c.html">The Element, the Coordinates and the Trace</a>
+<!-- the $36$ complex coordinates and the split into the scalar part $\tfrac16\operatorname{tr}$ and the traceless part; the coordinate rule for the product; the Jordan decomposition into commuting semisimple and nilpotent parts; the real and imaginary parts of the coordinates; the element as a linear map and as a bilinear form; the trace pairing. -->
+
++&nbsp;<a href="articles_maths/the-involution-and-the-hermitian-structure-of-m6c.html">The Involution and the Hermitian Structure</a>
+<!-- the conjugate transpose, the Hermitian, skew-Hermitian and unitary elements; the positive definite trace form $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ and the Frobenius norm it defines; the real forms $\mathfrak{u}(6)$ and $\mathfrak{su}(6)$ of dimensions $36$ and $35$; the definite form and its single isotropic vector $0$, against the null cone of the biquaternion algebra. -->
+
++&nbsp;<a href="articles_maths/the-m3-m3-and-m2-m4-corners-of-m6c.html">The $M_3\oplus M_3$ and $M_2\oplus M_4$ Corners</a>
+<!-- the two recursions in one algebra, $M_3\oplus M_3$ and $M_2\oplus M_4$; the gauge $2+2+1=3+1+1=5$, the two corner tori and the relative scale; the block embeddings; the reading of the previous categories inside $M_6$. -->
+
+#### The Frame
+
++&nbsp;<a href="articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-m6c.html">Roots of Unity and the Lagrange Idempotents</a>
+<!-- the solutions of $H^{6}=I$ with distinct eigenvalues, the $6$ roots of unity $\zeta_k$; the Lagrange projectors $P_k=\prod_{l\neq k}(H-\zeta_l)/(\zeta_k-\zeta_l)$, idempotent, orthogonal and complete; $H=\sum_k\zeta_kP_k$ and the $\mathbb{Z}/6$ grading; the root set as $PGL_6/T$, of dimension $30$, a cover of degree $6!$ over the flag variety; the root of $+1$ as the order-two case, which gives two idempotents and is the biquaternion; no second object is needed. -->
+
++&nbsp;<a href="articles_maths/the-peirce-decomposition-of-m6c.html">The Peirce Decomposition</a>
+<!-- the $6$ Peirce lines $P_kM_6P_l$ of the full flag; the coarse split by a rank-one idempotent with corners $1+5+5+25$, the diagonal blocks being $1$ and $25$; the multiplication rule $A_{kl}A_{lm}\subseteq A_{km}$ and the vanishing otherwise; the corner isomorphisms $P_kM_6P_k\cong\mathbb{C}$ and $QM_6Q\cong M_5$ for a rank-one $P$ and $Q=I-P$; the comparison with the four lines of $\mathbb{B}$, where the coarse and the fine decomposition coincide. -->
+
++&nbsp;<a href="articles_maths/the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html">The Frame, the Simple Nilpotents and the Gauge</a>
+<!-- $E_{ij}=v_iv_j^{\vee}$ for a basis $(v_1,\dots,v_6)$; the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$; the simple nilpotents $E_{12},\dots,E_{56}$ and the composites $E_{ij}=E_{i,i+1}\cdots E_{j-1,j}$; the gauge $E_{ij}\mapsto(t_i/t_j)E_{ij}$ and the torus $(\mathbb{C}^{\times})^{5}$; the count $30$ complex from the root and $5$ from the gauge, $35$ in all; the cocycle that forbids a further independent scalar. -->
+
++&nbsp;<a href="articles_maths/the-two-chiralities-of-m6c.html">The Two Chiralities</a>
+<!-- $\Gamma=H^3$ for a root $H$ of order six, the involution with a $3+3$ split; the $\mathbb{Z}/6$ grading and its $\mathbb{Z}/2$ and $\mathbb{Z}/3$ quotients; the two chiral blocks; the mass block of dimension $9$; the contrast with the $2+2$ of $M_4$. -->
+
++&nbsp;<a href="articles_maths/the-rank-two-and-rank-three-splits-of-m6c.html">The Rank-Two and Rank-Three Splits</a>
+<!-- the corners $4+8+8+16$ of a rank-two projection and $9+9+9+9$ of a rank-three one; $PM_6P\cong M_2$, $QM_6Q\cong M_4$ and $PM_6P\cong M_3$, $QM_6Q\cong M_3$; the two mass blocks of dimensions $8$ and $9$; the two-sided Peirce tables. -->
+
+#### The Modules
+
++&nbsp;<a href="articles_maths/the-modules-and-the-minimal-left-ideals-of-m6c.html">The Modules and the Minimal Left Ideals</a>
+<!-- the minimal left ideal $M_6P_1\cong\mathbb{C}^6$, the minimal right ideal and the dual; the column and the row; $M_6\cong\mathbb{C}^6\otimes(\mathbb{C}^6)^{*}$; the isomorphism of all minimal left ideals and the non-canonical exchange; the Peirce carrier $C(P)=PM_6P\oplus PM_6Q$ of dimension $1+5$; the module as the carrier of the spin chain. -->
+
++&nbsp;<a href="articles_maths/the-spin-chain-and-the-adjoint-decomposition-of-m6c.html">The Spin Chain and the Adjoint Decomposition</a>
+<!-- the $\mathfrak{su}_2$ generated by $J_3=\operatorname{diag}(\tfrac52,\dots,-\tfrac52)$ and $J_+=\sum_k\sqrt{k(6-k)}E_{k,k+1}$; the carrier $\mathbb{C}^6=\operatorname{Sym}^{5}(\mathbb{C}^2)$, of spin $\tfrac52$; the ladder coefficients $\sqrt5,\sqrt8,3,\sqrt8,\sqrt5$; the adjoint decomposition $1+3+5+7+9+11$, one irreducible summand per weight; the weights read on the Peirce chain; the comparison with the spinorial case $n=2$. -->
+
+#### The Forms and the Norms
+
++&nbsp;<a href="articles_maths/the-forms-the-norms-and-the-singular-set-of-m6c.html">The Forms, the Norms and the Singular Set</a>
+<!-- the trace form and the Frobenius, operator and nuclear norms; the determinant and the singular set $\{\det=0\}$ of real codimension two; the rank stratification and the dimension of each stratum; the absence of a null cone, the form being definite; the comparison with the cone of $\mathbb{B}$ and with its link. -->
+
+#### The Operators
+
++&nbsp;<a href="articles_maths/the-operators-of-the-peirce-decomposition-of-m6c.html">The Operators of the Peirce Decomposition</a>
+<!-- $L_a$, $R_a$, $T_{a,b}$ and $\operatorname{ad}_a$ and their matrices; the action on the Peirce corners, $T_{a,b}$ carrying $A_{rs}$ to $A_{il}$; the derivations $\operatorname{Der}(M_6)=\mathfrak{sl}_6$ of dimension $35$; the inner automorphisms $PGL_6$ and the outer ones; the sandwich as a map of corners. -->
+
++&nbsp;<a href="articles_maths/the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html">The Adjoint Action, the Orbits and the Flag Variety</a>
+<!-- the orbits of $PGL_6$ as the Jordan types; the stabiliser of a cyclic element the torus $(\mathbb{C}^{\times})^{5}$; the flag variety $GL_6/B$ of dimension $15$; the Grassmannians $\operatorname{Gr}(1,6)=\mathbb{P}^{5}$ and $\operatorname{Gr}(2,6)$ of dimension $8$; the orbit–stabiliser count $35=30+5$; the gauge as the fibre over the root. -->
+
+#### Spectral Theory and the Polar Decomposition
+
++&nbsp;<a href="articles_maths/spectral-theory-and-the-spectral-projectors-of-m6c.html">Spectral Theory and the Spectral Projectors</a>
+<!-- the characteristic polynomial of degree $6$ and its roots; the Jordan form; the minimal polynomial; the spectral projectors by the Dunford calculus; the resolvent and the spectral radius; the relation to the Lagrange projectors at a simple spectrum and their limits at a repeated root. -->
+
++&nbsp;<a href="articles_maths/the-sextic-and-the-spectral-strata-of-m6c.html">The Sextic and the Spectral Strata</a>
+<!-- the characteristic sextic; the strata by the partitions of $6$; the centraliser of a cyclic element the torus of dimension $6$; the spectral projectors and their limits; the degeneration at a repeated root. -->
+
++&nbsp;<a href="articles_maths/the-polar-decomposition-of-m6c.html">The Polar Decomposition</a>
+<!-- $A=UP$ with $U\in U(6)$ and $P$ positive semidefinite; existence for every element and uniqueness on the invertible ones; the singular value decomposition; the polar of a singular element and the freedom on the kernel; the manifold $GL_6/U(6)$; the exponential form. -->
+
++&nbsp;<a href="articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html">The Mass Block and the Chiral Polar Decomposition</a>
+<!-- the $3\times3$ mass block and the transformation $M\mapsto U_LMU_R^{-1}$ with $U_L,U_R\in U(3)$; the three singular values; the chiral polar decomposition and the $U(6)$ polar factor; the comparison with $M_4$. -->
+
++&nbsp;<a href="articles_maths/the-exponential-and-the-lie-group-of-m6c.html">The Exponential and the Lie Group</a>
+<!-- the exponential and the logarithm on $M_6(\mathbb{C})$; the surjectivity of $\exp$ onto $GL_6(\mathbb{C})$; the one-parameter subgroups $e^{tX}$; the Lie algebra $\mathfrak{gl}_6$ of real dimension $72$; $\mathfrak{su}(6)$ of dimension $35$; the closed form of the exponential and the eigenvalues. -->
+
+### Analysis
+
++&nbsp;<a href="articles_maths/analysis-on-m6c.html">Analysis on $M_6(\mathbb{C})$</a>
+<!-- the smooth structure of $\mathbb{C}^{36}$; the derivatives of the product, the inverse, the determinant and the exponential; the Wirtinger calculus; the holomorphic functional calculus; the Fourier transform on $\mathbb{C}^{36}$; the absence of zero divisors and the ordinary matrix analysis it gives; the boundary against Fueter theory, which needs another structure. -->
+
++&nbsp;<a href="articles_maths/the-exponential-polar-decomposition-of-m6c.html">The Exponential Polar Decomposition</a>
+<!-- every invertible $A=e^{H}e^{iK}$ with $H,K$ Hermitian; the relation to the polar decomposition $A=UP$; the uniqueness and the reach of the exponential on the singular elements; the comparison with the split case. -->
+
+### Geometry
+
++&nbsp;<a href="articles_maths/the-geometry-of-the-idempotents-of-m6c.html">The Geometry of the Idempotents</a>
+<!-- the idempotents of rank one as an affine bundle of rank $5$ over $\mathbb{P}^{5}$, of dimension $10$; the idempotents of rank $p$ as the homogeneous space $PGL_6/P(GL_p\times GL_{6-p})$ of dimension $2p(6-p)$, a fibre bundle over $\operatorname{Gr}(p,6)$ with the contractible fibre of complements; the full flag variety $GL_6/B$ of dimension $15$; the partial flags and the incidence relations; the gauge as the fibre of the frame bundle. -->
+
+### Topology
+
++&nbsp;<a href="articles_maths/the-topology-of-m6c.html">The Topology of $M_6(\mathbb{C})$</a>
+<!-- $M_6(\mathbb{C})\cong\mathbb{R}^{72}$ contractible; $GL_6(\mathbb{C})\simeq U(6)$; $\pi_1=\mathbb{Z}$ and $\pi_2=0$; the space of idempotents of rank $p$ homotopy equivalent to $\operatorname{Gr}(p,6)$; the flag variety simply connected; the determinant bundle and its first Chern class. -->
+
 ## Structural Comparison around Biquaternions
 
 ### Overview

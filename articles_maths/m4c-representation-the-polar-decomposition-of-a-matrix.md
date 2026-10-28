@@ -29,9 +29,9 @@ so $V$ is unitary. For uniqueness, $MM^{\dagger}=P^2=P'^2$ and the uniqueness of
 
 **The factors stay in the image.** Since $M=\mathsf{M}_4(\tilde Q)$, the product $MM^{\dagger}=\mathsf{M}_4(\tilde Q\tilde Q^{*})$ is the image of a Hermitian positive element. Its positive square root is a function of $\tilde Q\tilde Q^{*}$, hence lies in the image; the unitary factor is the product of two images. Therefore
 $$
-P=\mathsf{M}_4(\tilde H),\qquad V=\mathsf{M}_4(\tilde U),
+P=\mathsf{M}_4(\tilde Q_H),\qquad V=\mathsf{M}_4(\tilde Q_0),
 $$
-with $\tilde H=\tilde H^{*}\ge0$ and $\tilde U^{*}\tilde U=e_t$.
+with $\tilde Q_H=\tilde Q_H^{*}\ge0$ and $\tilde Q_0^{*}\tilde Q_0=e_t$.
 
 **The diffeomorphism.** The map
 $$

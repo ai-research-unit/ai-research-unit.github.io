@@ -158,32 +158,32 @@ The index is two for the nilpotents: $\tilde\Upsilon^3=0$ exactly when $\tilde\U
 The four-factor word stops at the cone; the two-factor Cartan pairing does not. For every element there is a unique pair
 
 $$
-\boxed{\;\tilde Q=\tilde H\tilde U,
+\boxed{\;\tilde Q=\tilde Q_H\tilde Q_0,
 \qquad
-\tilde H=\sqrt{\tilde Q\tilde Q^{*}}\ \text{Hermitian positive semidefinite},
+\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}\ \text{Hermitian positive semidefinite},
 \qquad
-\tilde U=\tilde H^{+}\tilde Q\;},
+\tilde Q_0=\tilde Q_H^{+}\tilde Q\;},
 $$
 
-with $\tilde U$ a partial isometry satisfying $\tilde U^{*}\tilde U=\tilde\Pi_{\mathrm i}$ and $\tilde U\tilde U^{*}=\tilde\Pi_{\mathrm f}$, the projections onto the initial and final subspaces of $\tilde Q$, and $\operatorname{ran}\tilde H=\operatorname{ran}\tilde Q$. Off the cone this is the Cartan pairing. On the cone it degenerates in a definite way: a nonzero null element is a positive scalar times a partial isometry,
+with $\tilde Q_0$ a partial isometry satisfying $\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_{\mathrm i}$ and $\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_{\mathrm f}$, the projections onto the initial and final subspaces of $\tilde Q$, and $\operatorname{ran}\tilde Q_H=\operatorname{ran}\tilde Q$. Off the cone this is the Cartan pairing. On the cone it degenerates in a definite way: a nonzero null element is a positive scalar times a partial isometry,
 
 $$
-\tilde Q=\sigma\tilde U,
+\tilde Q=\sigma\tilde Q_0,
 \qquad
 \sigma=\lVert\tilde Q\rVert_{\mathrm F}>0,
 \qquad
-\tilde H=\sigma\tilde\Pi_{\mathrm f},
+\tilde Q_H=\sigma\tilde\Pi_{\mathrm f},
 \qquad
-\tilde\Pi_{\mathrm f}=\tilde U\tilde U^{*},
+\tilde\Pi_{\mathrm f}=\tilde Q_0\tilde Q_0^{*},
 $$
 
-and the two projections of $\tilde U$ are rank-one Hermitian idempotents, the pure states of the algebra. The positive factor is a scaled pure state, not a scalar.
+and the two projections of $\tilde Q_0$ are rank-one Hermitian idempotents, the pure states of the algebra. The positive factor is a scaled pure state, not a scalar.
 
 This is the sharpest statement the cone admits. The boundary value of the word depends on the path; the generalized pair does not. The pair is canonical, and it is the limit that keeps the two lines when the unitary factor loses rank. What the cone does not have is a four-factor word, a logarithm and a continuous unitary phase; what it has is the two-factor pairing with a partial isometry.
 
 **The reading.** The positive factor is the state on the cone, and the second factor is the isometry between the initial and final lines. The unitary phase of the invertible case has collapsed to a transition between two pure states. The rank drop is the lost reversible part.
 
-**The boundary.** The pair is canonical only with the two projection conditions and the range condition on $\tilde H$. Without them the decomposition is not unique: $(\tilde\Pi,e_t)$ multiplies to $\tilde\Pi$ and is excluded because $e_t$ has the wrong projections. The generalized pairing is also not the four factors regrouped; the scale, the phase, the boost and the rotor do not exist on the cone.
+**The boundary.** The pair is canonical only with the two projection conditions and the range condition on $\tilde Q_H$. Without them the decomposition is not unique: $(\tilde\Pi,e_t)$ multiplies to $\tilde\Pi$ and is excluded because $e_t$ has the wrong projections. The generalized pairing is also not the four factors regrouped; the scale, the phase, the boost and the rotor do not exist on the cone.
 
 ## The Null Field
 
@@ -204,13 +204,13 @@ The field is null exactly when $I_1=I_2=0$, that is when $\vec E\perp\vec B$ and
 The generalized pair reads the null field as
 
 $$
-\tilde F=\sigma\tilde U,
+\tilde F=\sigma\tilde Q_0,
 \qquad
 \sigma=\lVert\tilde F\rVert_{\mathrm F},
 \qquad
-\tilde H=\sigma\tilde\Pi_{\mathrm f},
+\tilde Q_H=\sigma\tilde\Pi_{\mathrm f},
 \qquad
-\tilde\Pi_{\mathrm f}=\tilde U\tilde U^{*},
+\tilde\Pi_{\mathrm f}=\tilde Q_0\tilde Q_0^{*},
 $$
 
 and the state $\tilde F\tilde F^{*}/2\langle\tilde F,\tilde F\rangle_{*}=\tilde\Pi_{\mathrm f}$ is pure. The field's amplitude is a pure state of weight $\sigma$, and its phase is a partial isometry between two lines.
@@ -275,7 +275,7 @@ The norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ has three nested z
 
 Cut by the material sector, the cone is the Minkowski null cone, and the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$ of the four-momentum norm is the mass shell. Only the massless shell is a cone, because the norm is homogeneous. The **massless spectrum** is the cone plus a helicity: the cone fixes the shell, the rank and the direction, and it does not fix the spin. The photon, the graviton, the Rarita–Schwinger field and the chiral fermion all sit on the same cone; rank is a mass label and not a spin label. A null momentum is an imaginary multiple of a Hermitian idempotent, while a nilpotent is a pure lightlike displacement; the two are on the same cone and are not the same object. The polar word has no value on the cone but has boundary values there: a diverging boost with a collapsing scale reaches an idempotent multiple when the rotor has a component in the plane of $e_t$ and the boost axis, and a nilpotent when the rotor is orthogonal to both.
 
-The cone also has a canonical two-factor decomposition, which the four-factor word cannot supply. Every element is $\tilde Q=\tilde H\tilde U$ with $\tilde H$ positive semidefinite and $\tilde U$ a partial isometry; on the cone $\tilde Q=\sigma\tilde U$ and $\tilde H=\sigma\tilde\Pi_{\mathrm f}$, a scaled pure state. The boundary value depends on the path; the generalized pair does not. The massless momentum and the null field sit on different strata of the same cone: the momentum is an imaginary multiple of an idempotent, the field is a pure nilpotent.
+The cone also has a canonical two-factor decomposition, which the four-factor word cannot supply. Every element is $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H$ positive semidefinite and $\tilde Q_0$ a partial isometry; on the cone $\tilde Q=\sigma\tilde Q_0$ and $\tilde Q_H=\sigma\tilde\Pi_{\mathrm f}$, a scaled pure state. The boundary value depends on the path; the generalized pair does not. The massless momentum and the null field sit on different strata of the same cone: the momentum is an imaginary multiple of an idempotent, the field is a pure nilpotent.
 
 ## Summary of Notation
 

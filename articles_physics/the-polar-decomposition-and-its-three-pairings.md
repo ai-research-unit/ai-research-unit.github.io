@@ -9,7 +9,7 @@ $$
 =r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}.
 $$
 
-The word is the **N-norm** refinement. The general **H-norm** decomposition is the two-factor pair $\tilde Q=\tilde H\tilde U$, with $\tilde H=(\tilde Q\tilde Q^{*})^{1/2}\ge0$ and $\tilde U=\tilde H^{+}\tilde Q$ a partial isometry on the cone; it is defined for every nonzero element and is read in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*. The four-factor word below exists only where $\langle\tilde Q\rangle_{\natural}\neq0$.
+The word is the **N-norm** refinement. The general **H-norm** decomposition is the two-factor pair $\tilde Q=\tilde Q_H\tilde Q_0$, with $\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}\ge0$ and $\tilde Q_0=\tilde Q_H^{+}\tilde Q$ a partial isometry on the cone; it is defined for every nonzero element and is read in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*. The four-factor word below exists only where $\langle\tilde Q\rangle_{\natural}\neq0$.
 
 The four factors carry $1+1+3+3=8$ real parameters, the real dimension of the algebra. The word is a change of coordinates on the complement of the zero-divisor cone, not a dynamical decomposition: it says what an element is at one instant and not how it evolves.
 
@@ -81,7 +81,7 @@ The four-factor word is the reference. The three pairings are its three bracketi
 | --- | --- | --- | --- |
 | Quaternion | $\tilde q=r\tilde u_{\mathrm r}$ | $\exp(i\tilde\Psi)$ | scale and rotor / phase and boost |
 | Hamilton | $\Rho=r\exp(i\alpha)$ | $\exp(\vec U\Theta)$ | scale and phase / boost and rotor |
-| Cartan | $\tilde H=r\tilde U_{\mathrm b}$ | $\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$ | scale and boost / phase and rotor |
+| Cartan | $\tilde Q_H=r\tilde U_{\mathrm b}$ | $\tilde Q_0=\exp(i\alpha)\tilde u_{\mathrm r}$ | scale and boost / phase and rotor |
 
 ### The Quaternion Pairing
 
@@ -113,9 +113,9 @@ The modulus is the only central scalar of the three pairings. The axis and the a
 The Cartan pairing writes the element as a **Hermitian positive factor** times a **unitary factor**:
 
 $$
-\boxed{\;\tilde Q=\tilde H\tilde U, \qquad
-\tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde U_{\mathrm b}, \qquad
-\tilde U=\tilde H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}\;}.
+\boxed{\;\tilde Q=\tilde Q_H\tilde Q_0, \qquad
+\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde U_{\mathrm b}, \qquad
+\tilde Q_0=\tilde Q_H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}\;}.
 $$
 
 The first factor is the amplitude, the part that changes norms and not phases; the second is the phase, the part that preserves the inner product. The state reading is developed in *The General Polar Decomposition, the Amplitude and the Operator-to-State Map*.
@@ -130,7 +130,7 @@ The three pairings have three first factors, and the comparison is the synthesis
 | --- | --- | --- | --- | --- |
 | quaternion | $\tilde q=r\tilde u_{\mathrm r}$ | real quaternion, norm $r^{2}$ | $4$ | what is the spatial frame? |
 | Hamilton | $\Rho=r e^{i\alpha}$ | central complex scalar | $2$ | what is the invariant? |
-| Cartan | $\tilde H=r\tilde U_{\mathrm b}$ | Hermitian positive, $\det=r^{2}$ | $4$ | what is the state amplitude? |
+| Cartan | $\tilde Q_H=r\tilde U_{\mathrm b}$ | Hermitian positive, $\det=r^{2}$ | $4$ | what is the state amplitude? |
 
 The three factors have three different types. Two of them are not scalars. Only $\Rho$ is central. The real dimensions add to $10$, not to $8$:
 
@@ -144,17 +144,17 @@ The redundancy is exactly the scale $r$, which appears in all three factors. Eac
 | --- | --- | --- |
 | $\tilde q=r\tilde u_{\mathrm r}$ | $r$, the rotation angle and axis | the phase $\alpha$, the rapidity $\psi_w$, the boost axis |
 | $\Rho=r e^{i\alpha}$ | $r$, the phase | the rotation, the boost, both axes |
-| $\tilde H=r\tilde U_{\mathrm b}$ | $r$, the rapidity, the boost axis | the phase, the rotation angle and axis |
+| $\tilde Q_H=r\tilde U_{\mathrm b}$ | $r$, the rapidity, the boost axis | the phase, the rotation angle and axis |
 
 The factors are three **products**, not three terms:
 
 $$
 \tilde Q=\tilde q\,e^{i\tilde\Psi}
-=\Rho\,e^{\tilde U\Theta}
-=\tilde H\,\tilde U.
+=\Rho\,e^{\tilde Q_0\Theta}
+=\tilde Q_H\,\tilde Q_0.
 $$
 
-There is no sense in which $\tilde Q=\tilde q+\Rho+\tilde H$. Each identity is the whole element, written three times. No conservation law attaches to a factor, no factor is a field, and no factor evolves on its own: the polar factors of $\tilde Q(t)$ depend on $t$ through $\tilde Q(t)$.
+There is no sense in which $\tilde Q=\tilde q+\Rho+\tilde Q_H$. Each identity is the whole element, written three times. No conservation law attaches to a factor, no factor is a field, and no factor evolves on its own: the polar factors of $\tilde Q(t)$ depend on $t$ through $\tilde Q(t)$.
 
 The three questions and their readings are:
 
@@ -162,7 +162,7 @@ The three questions and their readings are:
 | --- | --- | --- | --- |
 | what frame? | $\tilde q=r\tilde u_{\mathrm r}$ | the spatial orientation and the scale of the frame | a rotation, a rigid body, a polarization frame |
 | what invariant? | $\Rho=r e^{i\alpha}$ | the mass of a four-momentum, or the invariant amplitude | a particle, a scattering element |
-| what state? | $\tilde H=r\tilde U_{\mathrm b}$ | the positive amplitude whose normalised square is the state | a Kraus operator, a Jones matrix, a state preparation |
+| what state? | $\tilde Q_H=r\tilde U_{\mathrm b}$ | the positive amplitude whose normalised square is the state | a Kraus operator, a Jones matrix, a state preparation |
 
 The readings are compatible because they read one element. A scattering element has a Cartan factor that gives the state it prepares, a Hamilton modulus that gives its invariant size, and a quaternion factor that gives the frame in which its spin is described. The three descriptions are not three measurements and do not compete.
 
@@ -180,7 +180,7 @@ The quaternion construction uses the **first** split. The physical sectors are t
 
 The three splits and the three pairings are different structures with the same number. A split asks what the algebra is made of; a pairing asks how the product is grouped. The word's four factors are grouped by the pairings and typed by the splits, and neither classification implies the other.
 
-The **Cartan exponents** are the one place where a split and a pairing meet. The logarithms lie in the two sectors, $\ln\tilde H=\ln r\,e_t+i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$ and $\ln\tilde U=i\alpha\,e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$, but the **factors** do not split one per sector: $\tilde H$ is Hermitian positive, while $\tilde U$ is unitary and not an element of the linear subspace $\mathbb{M}_-$. Only the logarithms split cleanly. The direct sum is a statement about the Lie algebra of generators, not about the product. The Cartan pairing is $\tilde H\tilde U$, not $\mathbb{M}_+\times\mathbb{M}_-$.
+The **Cartan exponents** are the one place where a split and a pairing meet. The logarithms lie in the two sectors, $\ln\tilde Q_H=\ln r\,e_t+i\tfrac{\psi_w}{2}\vec u_{\mathrm b}\in\mathbb{M}_+$ and $\ln\tilde Q_0=i\alpha\,e_t+\tfrac{\theta}{2}\vec u_{\mathrm r}\in\mathbb{M}_-$, but the **factors** do not split one per sector: $\tilde Q_H$ is Hermitian positive, while $\tilde Q_0$ is unitary and not an element of the linear subspace $\mathbb{M}_-$. Only the logarithms split cleanly. The direct sum is a statement about the Lie algebra of generators, not about the product. The Cartan pairing is $\tilde Q_H\tilde Q_0$, not $\mathbb{M}_+\times\mathbb{M}_-$.
 
 ## The Action on the Sectors and the Subspaces
 
@@ -261,9 +261,9 @@ The four objects called a boost are separated in *Conventions in the Biquaternio
 
 ## A Four-Vector Is Bilinear, a Spinor Is Linear
 
-The unit factor acts on a four-vector and on a spinor by two different laws: a four-vector transforms by the congruence $X\mapsto\tilde U X\tilde U^{*}$, which is bilinear in the spinor when $X=\psi\psi^{*}$, and a spinor transforms by the left multiplication $\psi\mapsto\tilde U\psi$. The first law is quadratic in the spinor, the second linear. The sandwich is the four-vector column of the representation theory and the left multiplication is the spinor column. The polar action on the two sectors is the four-vector action; the action on the spinor module is the left multiplication, and it is the one that carries the double cover and the sign of the spinor.
+The unit factor acts on a four-vector and on a spinor by two different laws: a four-vector transforms by the congruence $X\mapsto\tilde Q_0 X\tilde Q_0^{*}$, which is bilinear in the spinor when $X=\psi\psi^{*}$, and a spinor transforms by the left multiplication $\psi\mapsto\tilde Q_0\psi$. The first law is quadratic in the spinor, the second linear. The sandwich is the four-vector column of the representation theory and the left multiplication is the spinor column. The polar action on the two sectors is the four-vector action; the action on the spinor module is the left multiplication, and it is the one that carries the double cover and the sign of the spinor.
 
-A rotation through $2\pi$ gives $-\tilde U$ on the spinor and $+\mathrm{id}$ on the four-vector, because the congruence by $-\tilde U$ is the congruence by $\tilde U$. The sign is visible only in the linear action.
+A rotation through $2\pi$ gives $-\tilde Q_0$ on the spinor and $+\mathrm{id}$ on the four-vector, because the congruence by $-\tilde Q_0$ is the congruence by $\tilde Q_0$. The sign is visible only in the linear action.
 
 ## Physical Readings
 
@@ -288,14 +288,14 @@ The pairings read the same data under different headings, and the readings are d
 - Every biquaternion off the null cone is $r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.
 - The scale is the modulus of the norm, the phase is half its argument, the boost is the Hermitian positive factor and the rotor is the real quaternion factor.
 - The word exists exactly off the zero-divisor cone; on the cone a lightlike four-vector has no rest frame and no boost split.
-- The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$; the Hamilton pairing is $\tilde Q=\Rho(\cos\Theta+\vec\Xi\sin\Theta)$; the Cartan pairing is $\tilde Q=\tilde H\tilde U$.
+- The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$; the Hamilton pairing is $\tilde Q=\Rho(\cos\Theta+\vec\Xi\sin\Theta)$; the Cartan pairing is $\tilde Q=\tilde Q_H\tilde Q_0$.
 - The three pairings are the three bracketings of the four-factor word; none adds information to it.
 - The three first factors have three types — a real quaternion, a central complex scalar, a Hermitian positive element — and only the Hamilton factor is a scalar.
 - The three factors carry $4+2+4=10$ real numbers for an eight-dimensional element; the redundancy is the scale, which all three contain.
 - The factors are three products of the same element, not three terms; none is conserved, none is a field, and none evolves on its own.
 - The domains are not nested: $i\vec e_x+i\vec e_y$ has no quaternion construction, $e_t+\vec e_x+i\vec e_y$ has no Hamilton pairing, and $e_t+i\vec e_x$ needs the generalized Cartan form.
 - The algebra has three splits — real/imaginary, Hermitian/anti-Hermitian, scalar/vector — and they are not the three pairings.
-- The Cartan factors do not split one per sector: $\tilde H$ is Hermitian and lies in $\mathbb{M}_+$, $\tilde U$ is unitary and not in $\mathbb{M}_-$, and $\ln\tilde H$ and $\ln\tilde U$ lie in the two sectors.
+- The Cartan factors do not split one per sector: $\tilde Q_H$ is Hermitian and lies in $\mathbb{M}_+$, $\tilde Q_0$ is unitary and not in $\mathbb{M}_-$, and $\ln\tilde Q_H$ and $\ln\tilde Q_0$ lie in the two sectors.
 - The scale and the rotor preserve all six remarkable subspaces, the phase preserves the centre and the vector space, and the boost preserves the two sectors and moves the centre.
 - A four-vector transforms by the congruence and a spinor by the left multiplication; the first is bilinear in the spinor, the second linear.
 
@@ -314,7 +314,7 @@ The pairings read the same data under different headings, and the readings are d
 | $\tilde\Psi=\alpha+\tfrac{\psi_w}{2}\vec u_{\mathrm b,2}$ | the real quaternion angle of the quaternion pairing |
 | $\Rho=\sqrt N$, $\vec\Xi$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
 | $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the vector-part root, not the four-vector factor $\mathcal B$ |
-| $\tilde H=r\tilde U_{\mathrm b}$, $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and unitary factors of the Cartan pairing |
+| $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and unitary factors of the Cartan pairing |
 | $\mathbb{M}_\pm$ | the Hermitian and anti-Hermitian sectors |
 
 ## Further Reading

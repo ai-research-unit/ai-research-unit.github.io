@@ -351,6 +351,8 @@ B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}}=\tilde u_
 $$
 The two words are the left and the right polar decompositions of the same rotor. They share the rotation factor $\tilde u_{\mathrm r}$ and the Wigner angle; they differ in the boost, which has the same rapidity magnitude and the axis $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. Only the rotation factor and the Wigner angle are independent of the word, so a statement about "the boost factor" must name the word. The symbols $\tilde U_{\mathrm b}$ and $B_{\mathrm{right}}$ are not interchangeable when the rotation axis is not parallel to the boost axis.
 
+**No hat accents on algebra elements.** The series writes no hatted glyph for an element of the algebra. A hat is not available for a new object, and an existing hatted symbol is rewritten without it: the positive polar factor is $\tilde Q_H$, the unitary polar factor is $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$, and the normalised amplitude is $\tilde Q_{\mathrm n}=\tilde Q_H/\sqrt{2\langle\tilde Q_H,\tilde Q_H\rangle_{*}}$. The mathematical articles write Tate cohomology and profinite completions as $H^n_{\mathrm{Tate}}(G,M)$ and $G^{\mathrm{pf}}$. The hat on a unit vector, $\hat p$ and $\hat x$, is the direction notation of §*The Four-Momentum* and is unaffected.
+
 ### The Gradient and the Operators
 
 | Symbol | Name | Formula | Space | Meaning |
@@ -903,7 +905,7 @@ The three pairings are three bracketings of the same word, and their domains dif
 | word | $r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | any element of the cone |
 | quaternion | $\tilde q\,e^{i\tilde\Psi}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | $\tilde q_r\neq0$ (on this domain) | $i\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=-2$ but $\tilde q_r=0$ |
 | Hamilton | $\Rho\,e^{\vec U\Theta}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | same | $e_t+\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=1$ but $\langle\vec Q,\vec Q\rangle_{\natural}=0$ |
-| Cartan | $\tilde H\tilde U$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | $e_t+i\vec e_x$: on the cone; the generalized form gives a partial isometry |
+| Cartan | $\tilde Q_H\tilde Q_0$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | $e_t+i\vec e_x$: on the cone; the generalized form gives a partial isometry |
 
 **The domains are not nested.** The quaternion construction fails at $\tilde q_r=0$; the Hamilton pairing fails when the vector part is null; the Cartan pairing is the widest and is total off the cone. The generalized polar decomposition extends the Cartan pairing to the cone with a partial isometry, and it is *The Polar Decomposition of a Biquaternion*.
 

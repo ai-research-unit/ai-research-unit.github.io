@@ -1,20 +1,20 @@
-# __The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form__
+# __The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form__
 
 ## Introduction
 
 The biquaternion algebra is the even part of the Clifford algebra of Minkowski space, $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, and that identification is the whole source of the geometric content of the series. It has a second consequence that is used throughout the physics but stated nowhere in one place: the ambient algebra is **$\mathbb{Z}/2$-graded**, and the grading is the fermion parity of the theory. The even slot is the bosonic sector, and it is the biquaternion algebra; the odd slot is the fermionic sector, and it is the slot that carries the Dirac generators and the anticommuting mode operators.
 
-This article is the **Hermitian interpretation** of that grading. In *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Inner Conjugation in Biquaternionic Form* the operator that carries the parity is the signed inner conjugation $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}$, whose right factor is the inverse: the factor that belongs to the group of units, to the isometries and to the Lorentz group. Here the right factor is the **Hermitian adjoint** $x^{*}$, the adjoint of the spinor form of the framework, and the operator is the **signed Hermitian sandwich**
+This article states the grading once, in the Hermitian form that the rest of the corpus uses. The operator is the **Hermitian sandwich**
 
 $$
-\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{*}.
+\Theta_x(y)=x\,y\,x^{*},
 $$
 
-The two right factors are different maps. The dagger is the inverse exactly on the unit slice of the real quaternions and differs from it elsewhere by the coefficient-conjugated norm, $x^{*}=\sigma(\langle x\rangle_{\natural})\,\sigma(x)^{-1}$, so the inverse reading belongs to the isometries and the adjoint reading to the unitarity. The physics of the two is therefore not the same, and the difference is a norm, that is a scalar, in every case in which the corpus computes.
+with the Hermitian adjoint on the right and no second factor. The parity enters as the **sign character** $\varepsilon_x=(-1)^{\lvert x\rvert}$ of a homogeneous element, a scalar, and not as a factor of the operator. Two consequences follow at once and are used below. Every element of $\mathbb{B}$ is even, so $\varepsilon_x=+1$ on the algebra and every computation of the series is a computation with the unsigned sandwich. The signed operators of the maths corpus are maps on the full $\mathrm{Cl}_{1,3}$; on the even slot they reduce to $\Theta_x$, which is why the physics never needs them.
 
-Three facts organise the Hermitian interpretation. The first is that the dagger is **even**: it preserves the parity, so the grading is a symmetry of the Hermitian structure, and the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the corpus are its fixed and anti-fixed loci. The second is the sharpest statement of the article: the sign that separates the signed Hermitian sandwich from the unsigned one is the parity itself, $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$, and it is **invisible on the algebra**, because every element of $\mathbb{B}$ is even. On the algebra the signed and the unsigned Hermitian sandwich are the same operator, $\Theta^{\alpha}_x=\Theta_x$ for $x\in\mathbb{B}$; the *signed* of the title is therefore exactly the **fermionic** sector, and the entire physics of the series, computed in $\mathbb{B}$, is the physics of the unsigned member. The third is that the twist is again a conjugation, by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$; this interpretation is unchanged from the inverse article, because the twist sits in the **left** factor and the adjoint in the right one: parity on the left and adjointness on the right are independent structures, and the article keeps them apart.
+Three facts organise the article. The first is that the dagger is **even**: it preserves the parity, so the grading is a symmetry of the Hermitian structure, and the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ of the corpus are its fixed and anti-fixed loci. The second is that the parity is a **scalar sign**, $\alpha(x)=\varepsilon_x x$, and that it is invisible on the algebra, because every element of $\mathbb{B}$ is even. The third is that the twist is a conjugation, by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$; it sits on the element and never on the operator, so the sandwich is the only operator the physics uses.
 
-The ambient graded algebra, the two slots, the dictionary $\vec e_x\mapsto\gamma^2\gamma^3$, $i\mapsto-\Omega$ and the chirality operator $\gamma^5=i\Omega$ are *Biquaternion Versors and the Orthogonal Group*; the Hermitian dagger, the sectors $\mathbb{M}_\pm$, the reflection and the determinants of the versors are *Biquaternion Versors and the Orthogonal Group*; the fermionic mode and $(-1)^F=i\vec e_z$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the parity of the state space, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$, is *The Fermionic Fock Space in Biquaternionic Form*. The inverse-conjugation interpretation is cited and never reused; the graded bracket built on this parity is *The Superalgebra Reading and the Odd Extension with Signed Hermitian Adjoint in Biquaternionic Form*; the abstract algebra of the operator is the maths pair *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*.
+The ambient graded algebra, the two slots, the dictionary $\vec e_x\mapsto\gamma^2\gamma^3$, $i\mapsto-\Omega$ and the chirality operator $\gamma^5=i\Omega$ are *Biquaternion Versors and the Orthogonal Group*; the Hermitian dagger, the sectors $\mathbb{M}_\pm$, the reflection and the determinants of the versors are *Biquaternion Versors and the Orthogonal Group*; the fermionic mode and $(-1)^F=i\vec e_z$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; the parity of the state space, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$, is *The Fermionic Fock Space in Biquaternionic Form*. The graded bracket built on this parity is *The Superalgebra Reading and the Odd Extension in Biquaternionic Form*; the abstract algebra of the signed forms is the maths pair *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, cited for the ambient theory and not used as operators here.
 
 ## The Grading of the Ambient Algebra
 
@@ -72,11 +72,11 @@ $$
 \boxed{\;\langle x\,y\,x^{*}\rangle_{\natural}=\lvert \langle x\rangle_{\natural}\rvert^{2}\,\langle y\rangle_{\natural}\;}
 $$
 
-so the operator is a similarity of the spinor form of ratio $\lvert \langle x\rangle_{\natural}\rvert^{2}$ and an isometry exactly on the unit slice $\lvert\langle x\rangle_{\natural}\rvert=1$. The signed **inner** conjugation of the companion article, $\alpha(x)\,y\,x^{-1}$, preserves the norm exactly, its ratio being $1$; the two interpretations therefore differ on the norm by the scalar $\lvert \langle x\rangle_{\natural}\rvert^{2}$, and they differ only by a phase of the parameter on the unit slice. That scalar is the whole difference between the two interpretations of the parity below.
+so the operator is a similarity of the spinor form of ratio $\lvert \langle x\rangle_{\natural}\rvert^{2}$ and an isometry exactly on the unit slice $\lvert\langle x\rangle_{\natural}\rvert=1$. The inner conjugation $x\,y\,x^{-1}$ preserves the norm exactly, with ratio $1$; the two maps therefore differ on the norm by the scalar $\lvert \langle x\rangle_{\natural}\rvert^{2}$, and on the unit slice they differ by a phase of the parameter.
 
-## The Twist Is the Conjugation by the Pseudoscalar
+## The Parity Sign Is the Conjugation by the Pseudoscalar
 
-The twist $\alpha$ of the signed Hermitian sandwich is usually introduced as the abstract map, the grade involution, equal to $+1$ on the even slot and $-1$ on the odd slot. In the ambient algebra it is an ordinary conjugation, and the statement is the one of the inverse article, because it concerns the left factor.
+The sign $\varepsilon_x=(-1)^{\lvert x\rvert}$ is usually introduced as the abstract grade involution, equal to $+1$ on the even slot and $-1$ on the odd slot. In the ambient algebra it is an ordinary conjugation.
 
 **Theorem (the grade involution is a conjugation).** Let $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$ be the volume element of $\mathrm{Cl}_{1,3}$. Then $\Omega^2=-1$, $\Omega$ commutes with the even slot and anticommutes with every generator, and for every homogeneous $x$
 
@@ -88,50 +88,37 @@ With the dictionary $i\mapsto-\Omega$, the same statement reads: the grade invol
 
 **Proof.** The volume element of an even-dimensional Clifford algebra anticommutes with every generator, since moving $\gamma^{j}$ past the monomial $\Omega$ costs the sign $(-1)^{3}$; a monomial $x=\gamma^{\mu_1}\cdots\gamma^{\mu_k}$ therefore satisfies $\Omega x=(-1)^{k}x\Omega$, and $\Omega^{-1}$ exists because $\Omega^2=-1\neq0$. On the even slot $\lvert x\rvert$ is even and the conjugation is the identity.
 
-**Remark (the left factor and the right factor are different structures).** The twist is a statement about the left factor of $\Theta^{\alpha}$: it is the parity of the parameter. The dagger is a statement about the right factor: it is the unitarity of the parameter. Nothing forces the two to be related, and the corpus's physics uses them independently — the twist in the reflection count and in the parity of the graded bracket, the dagger in the spinor form and in the probability. A reader who reads $\Theta^{\alpha}$ as "one conjugation with a correction" loses this: it is a parity on the left times an adjointness on the right.
+**Remark (the sign is a scalar, not a factor of the operator).** The grade involution acts on the element, $\alpha(x)=\varepsilon_x x$, and $\varepsilon_x=\pm1$. It therefore never multiplies a sandwich: multiplying the parameter by $\varepsilon_x$ multiplies the sandwich by the same scalar, and on the algebra $\varepsilon_x=+1$ identically. The parity is a property of the parameter, which the operator may report as a sign, and not a second operator.
 
 ## The Parity Sign and the Composition
 
-**Proposition (the parity sign).** For homogeneous $x$ the twist is the sign character on the left factor, so
+**Proposition (the parity sign).** For homogeneous $x$ the grade involution is the scalar sign character,
 
 $$
-\Theta^{\alpha}_x=\varepsilon_x\,\Theta_x,\qquad \varepsilon_x=(-1)^{\lvert x\rvert}.
+\alpha(x)=\varepsilon_x\,x,\qquad \varepsilon_x=(-1)^{\lvert x\rvert}.
 $$
 
-**Corollary (the sign is invisible on the algebra).** Every element of $\mathbb{B}$ is even, so $\alpha$ is the identity on it and
+**Corollary (the sign is invisible on the algebra).** Every element of $\mathbb{B}$ is even, so $\varepsilon_x=+1$ on it and
 
 $$
-\Theta^{\alpha}_x=\Theta_x\qquad\text{for every }x\in\mathbb{B}.
+\Theta_x(y)=x\,y\,x^{*}\qquad\text{for every }x\in\mathbb{B}.
 $$
 
-The signed and the unsigned Hermitian sandwich are the same operator on the bosonic sector. The sign of the title is not a second operator on the algebra; it is the fermionic sector, and it is visible only on odd elements, that is only outside $\mathbb{B}$.
+There is no signed Hermitian sandwich on the bosonic sector: the sign multiplies the parameter and not the operator.
 
 **Proposition (the composition).** For all $x,z$,
 
 $$
-\boxed{\;\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\varepsilon_x\varepsilon_z\,\Theta_{xz}\;}
+\boxed{\;\Theta_x\circ\Theta_z=\Theta_{xz}\;}
 $$
 
-so for homogeneous parameters the composite is the **ordinary** Hermitian sandwich exactly when the parities agree, and in particular it is ordinary whenever both factors are odd.
+with no correction factor.
 
-*Proof.* The dagger is an anti-automorphism and the twist an automorphism: $\Theta^{\alpha}_{xz}(y)=\alpha(x)\alpha(z)\,y\,z^{*}x^{*}=\Theta^{\alpha}_x(\Theta^{\alpha}_z(y))$. Substituting the parity-sign identity for the three parameters and using $\varepsilon_x\varepsilon_z=\varepsilon_{xz}$ gives the second form.
+*Proof.* $\Theta_{xz}(y)=x z\,y\,z^{*}x^{*}=\Theta_x(\Theta_z(y))$, the dagger being an anti-automorphism.
 
-| $x$ | $z$ | $xz$ | composite |
-|---|---|---|---|
-| even | even | even | ordinary Hermitian sandwich, $\Theta_{xz}$ |
-| even | odd | odd | signed, $-\,\Theta_{xz}$ |
-| odd | even | odd | signed, $-\,\Theta_{xz}$ |
-| odd | odd | even | ordinary Hermitian sandwich, $\Theta_{xz}$ |
+**Corollary (two odd steps give an even one).** If $x$ and $z$ are both odd then $xz$ is even and the composite is the sandwich by a bosonic parameter. The parity of the parameter is the sum of the parities; the operator itself carries no parity, and the composition needs no sign because the sign was never in the operator.
 
-**Corollary (two odd steps give an ordinary step).** If $x$ and $z$ are both odd then $xz$ is even and
-
-$$
-\Theta^{\alpha}_x\circ\Theta^{\alpha}_z=\Theta_{xz},
-$$
-
-an ordinary Hermitian sandwich. Physically: two fermionic steps compose to a bosonic one, and the composite operator is the unsigned one, because the two parity signs have cancelled.
-
-**Remark (what the corpus can and cannot see).** The parity table has a row and a column outside the algebra: to exhibit a signed Hermitian sandwich one needs an odd element, and the algebra has none. Two statements follow, and both matter for the physics. First, every computation of the series performed inside $\mathbb{B}$ — and that is all of them — is a computation with the unsigned Hermitian sandwich, so the difference between the two interpretations of this article cannot be detected by any observable of the framework. Second, the difference is nevertheless physically meaningful on the odd sector, which is where the fermions are: it is the sign of the fermionic reflection, and the remainder of this article reads it there.
+**Remark (what the corpus can and cannot see).** The parity table has a row and a column outside the algebra: to speak of an odd parameter one needs an odd element, and the algebra has none. Every computation of the series is therefore a computation with the unsigned sandwich, and no observable of the framework distinguishes it from the signed variant, which is the same map up to the scalar $\varepsilon_x$. The parity remains physical on the odd sector, where the fermions are, and the next two sections read it there: as the sign of the reflection and as the parity word of an isometry.
 
 ## The Odd Slot Is a Coset, Not a Second Algebra
 
@@ -148,25 +135,25 @@ $$
 
 verified for all four generators and on even samples: the form on the fermionic sector is the form on the algebra up to the scalar $-q(\gamma)$, with $q$ the quadratic form of the Clifford algebra, and the two slots are orthogonal for the form, as the parity preservation of the dagger requires. One warning belongs here, because it is easy to get wrong: the corresponding *elementwise* identity $(s\gamma)^{*}(t\gamma)=-q(\gamma)s^{*}t$ is **false** in general — a generator need not commute with an even element of the algebra, and the contraction terms spoil it — so the odd slot carries a Hermitian form and not a copy of the algebra's product. The fermionic sector is not a second algebra but a single module generator with the algebra's own Hermitian form.
 
-**Remark (why the two copies are not independent).** The two slots are isomorphic as modules over the even part but are not two subalgebras, and the multiplication between them is the graded multiplication. Two independent copies would have no rule for the product of two odd elements; the rule odd $\times$ odd $=$ even is exactly what is lost, and with it the reflection, the parity and the twist.
+**Remark (why the two copies are not independent).** The two slots are isomorphic as modules over the even part but are not two subalgebras, and the multiplication between them is the graded multiplication. Two independent copies would have no rule for the product of two odd elements; the rule odd $\times$ odd $=$ even is exactly what is lost, and with it the reflection and the parity.
 
 ## The Reflection Read in the Hermitian Pairing
 
-The odd slot is where the parity sign is visible, and the simplest odd elements are the generators, which are the vectors of Minkowski space. The Hermitian interpretation of the reflection count is therefore a statement about the action of the signed Hermitian sandwich on them.
+The odd slot is where the parity sign is visible, and the simplest odd elements are the generators, which are the vectors of Minkowski space. The Hermitian interpretation of the reflection count is therefore a statement about the action of the Hermitian sandwich on them.
 
 **Definition (the dagger on the envelope).** On the ambient algebra the dagger is the map of the same formula as in the algebra, $x^{*}=\sigma(\alpha(x^{r}))$, the coefficient conjugation of the composite of the reversion and the grade involution. It restricts to the algebra's Hermitian conjugation on $\mathbb{B}$ and satisfies $\gamma^{\mu{}^{*}}=-\gamma^{\mu}$, so that the odd slot is where it differs from the reversion: on the vectors the two differ by the sign, and the corpus's relation $\mathrm{rev}={}^{*}\circ\sigma$ is exactly this statement.
 
 **Proposition (the vector identity).** Let $a,v$ be vectors of the Minkowski space of the envelope, with $q$ the quadratic form, $B$ its polar form, $a^2=q(a)$ and $av+va=2B(a,v)$, and let $\rho_a(v)=v-2B(a,v)a/q(a)$ be the reflection. Then
 
 $$
-\boxed{\;\Theta^{\alpha}_a(v)=-q(a)\,\rho_a(v)\;}.
+\boxed{\;\Theta_a(v)=q(a)\,\rho_a(v)\;}.
 $$
 
-*Proof.* The derivation is the one of the maths article: $\Theta^{\alpha}_a(v)=\alpha(a)\,v\,a^{*}=(-a)\,v\,(-a)=a\,v\,a=2B(a,v)\,a-a^{2}v=2B(a,v)a-q(a)v=-q(a)\rho_a(v)$, using $\alpha(a)=-a$ on the odd slot, $a^{*}=-a$ on the vectors, and $a^{2}=q(a)$.
+*Proof.* $\Theta_a(v)=a\,v\,a^{*}=a\,v\,(-a)=-a\,v\,a=-2B(a,v)\,a+a^{2}v=q(a)\,v-2B(a,v)\,a=q(a)\,\rho_a(v)$, using $a^{*}=-a$ on the vectors and $a^{2}=q(a)$.
 
-**Corollary (which reflection each member realises).** The generators of square $-1$ — the spatial ones, $(\gamma^{k})^{2}=-1$ — satisfy $\Theta^{\alpha}_{\gamma^{k}}=\rho_{\gamma^{k}}$ exactly, while the timelike generator satisfies $\Theta^{\alpha}_{\gamma^{0}}=-\rho_{\gamma^{0}}$. The **unsigned** member does the opposite: $\Theta_{\gamma^{0}}=\rho_{\gamma^{0}}$ and $\Theta_{\gamma^{k}}=-\rho_{\gamma^{k}}$. So the reflection in a spatial hyperplane is carried by the signed Hermitian sandwich and the time reflection by the unsigned one, and the parity sign exchanges the two; this is the Hermitian form of the parity word of the next article, where two odd steps compose to a rotation.
+**Corollary (which reflection carries which sign).** The timelike generator has $q(\gamma^{0})=+1$ and satisfies $\Theta_{\gamma^{0}}=\rho_{\gamma^{0}}$ exactly, while the spatial generators, $(\gamma^{k})^{2}=-1$, satisfy $\Theta_{\gamma^{k}}=-\rho_{\gamma^{k}}$. The sign is the signature of the vector, $q(a)=\pm1$, and it sits in front of the reflection; it is not a parity factor of the operator. This is the Hermitian form of the parity word of the next section, where two odd steps compose to a rotation.
 
-**Remark (the same statement on the algebra).** The algebra has a Euclidean Clifford structure of its own, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, with vectors the Hermitian elements $i\vec e_k$ of the informational sector; there the vector identity reads $\Theta_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the sandwich by a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign of $\Theta^{\alpha}$ and the signature sign of the reflection — are the two signs a reader must not conflate, and this is where they part.
+**Remark (the same statement on the algebra).** The algebra has a Euclidean Clifford structure of its own, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, with vectors the Hermitian elements $i\vec e_k$ of the informational sector; there the vector identity reads $\Theta_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the sandwich by a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign $\varepsilon_x$ of the parameter and the signature sign $q(a)$ of the vector — are the two signs a reader must not conflate, and this is where they part.
 
 ## What the Grading Does and Does Not Explain
 
@@ -206,23 +193,23 @@ Let $x=i\vec e_x$, a boost, with $\langle x\rangle_{\natural}=-1$ and $x^{*}=x$.
 
 ### Two Fermionic Steps Compose to a Bosonic One
 
-The generators $\gamma^1$ and $\gamma^2$ are both odd. Their signed Hermitian sandwiches are the reflections of the previous section, $\Theta^{\alpha}_{\gamma^1}=\rho_{\gamma^1}$ and $\Theta^{\alpha}_{\gamma^2}=\rho_{\gamma^2}$, and their composite is
+The generators $\gamma^1$ and $\gamma^2$ are both odd. Their Hermitian sandwiches are minus the reflections of the previous section, $\Theta_{\gamma^1}=-\rho_{\gamma^1}$ and $\Theta_{\gamma^2}=-\rho_{\gamma^2}$, because $q(\gamma^k)=-1$; the two minus signs multiply to $+1$ in the composite,
 
 $$
-\Theta^{\alpha}_{\gamma^1}\circ\Theta^{\alpha}_{\gamma^2}
-=\Theta^{\alpha}_{\gamma^1\gamma^2}
+\Theta_{\gamma^1}\circ\Theta_{\gamma^2}
+=\Theta_{\gamma^1\gamma^2}
 =\Theta_{\vec e_z},
 $$
 
-an ordinary Hermitian sandwich by the bosonic element $\vec e_z=\gamma^1\gamma^2$: two fermionic steps have composed to a bosonic one and the two signs have cancelled. The composite is a rotation by a quaternion unit, and the parity of the number of factors is the $\mathbb{Z}/2$ behind the split of $O(1,3)$ from $SO(1,3)$.
+the Hermitian sandwich by the bosonic element $\vec e_z=\gamma^1\gamma^2$: two fermionic steps have composed to a bosonic one, the reflection signs have cancelled in the product, and no correction factor is needed because the sign was never in the operator. The composite is a rotation by a quaternion unit, and the parity of the number of factors is the $\mathbb{Z}/2$ behind the split of $O(1,3)$ from $SO(1,3)$.
 
 ## Summary
 
-The ambient Clifford algebra is $\mathbb{Z}/2$-graded, $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, with even part the biquaternion algebra $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ and odd part the slot that carries the Dirac generators. The Hermitian interpretation replaces the inverse of the signed inner conjugation by the **Hermitian adjoint**: the signed Hermitian sandwich is $\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{*}$. The dagger is **even**, so it preserves the parity, and the two sectors $\mathbb{M}_\pm$ of the corpus are its fixed and anti-fixed loci, the eigen-decomposition of the Hermitian structure of the algebra and not an algebra grading.
+The ambient Clifford algebra is $\mathbb{Z}/2$-graded, $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, with even part the biquaternion algebra $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ and odd part the slot that carries the Dirac generators. The operator of the article is the **Hermitian sandwich** $\Theta_x(y)=x\,y\,x^{*}$: the Hermitian adjoint on the right, one parameter, and no second factor. The dagger is **even**, so it preserves the parity, and the two sectors $\mathbb{M}_\pm$ of the corpus are its fixed and anti-fixed loci, the eigen-decomposition of the Hermitian structure of the algebra and not an algebra grading.
 
 The dagger is not the inverse: for invertible $x$ one has $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$, so the two coincide exactly on the real-quaternion slice of unit norm and differ elsewhere by the coefficient-conjugated norm, and the sandwich multiplies the norm by $\lvert \langle x\rangle_{\natural}\rvert^{2}$, being an isometry exactly on the unit slice. The adjoint slice is a compact group, $\mathbb{B}\cong M_2(\mathbb{C})$ with $\mathcal{U}\cong \mathrm{U}(2)$, while the inverse slice is the group of units and the route to the Lorentz group.
 
-The twist $\alpha$ is the conjugation by the volume element, $\alpha(x)=\Omega x\Omega^{-1}$, unchanged from the inverse article because it is the **left** factor; the parity sign is $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ and it is **invisible on the algebra**, $\Theta^{\alpha}_x=\Theta_x$ for $x\in\mathbb{B}$, since every element of the algebra is even. The sign is therefore exactly the fermionic sector, and the composition $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\varepsilon_x\varepsilon_z\Theta_{xz}$ is ordinary whenever the two parities agree, so two fermionic steps compose to a bosonic one. On the vectors the parity sign is visible: $\Theta^{\alpha}_a=-q(a)\rho_a$, so the spatial reflections are carried by the signed member and the time reflection by the unsigned one, and their exchange is the parity word of the reflection count.
+The parity is the scalar sign $\varepsilon_x=(-1)^{\lvert x\rvert}$, and the grade involution is its conjugation by the volume element, $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$. It is **invisible on the algebra**, $\varepsilon_x=+1$ for $x\in\mathbb{B}$, so there is no signed sandwich on the bosonic sector and the composition $\Theta_x\Theta_z=\Theta_{xz}$ is exact. On the odd slot the sign is physical: on the vectors $\Theta_a=q(a)\rho_a$, so the time reflection is the sandwich exactly and the spatial reflections are minus it, with the sign carried by the signature $q(a)=\pm1$ and not by a parity factor of the operator.
 
 ## Summary of Notation
 
@@ -235,11 +222,10 @@ The twist $\alpha$ is the conjugation by the volume element, $\alpha(x)=\Omega x
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | The eigen-decomposition of the dagger; not an algebra grading |
 | $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | The norm; $x^{*}=\sigma(\langle x\rangle_{\natural})\sigma(x)^{-1}$ |
 | $\mathcal{U}=\{x:x^{*}x=1\}$ | The unit slice; $\mathcal{U}\cong \mathrm{U}(2)$ in the matrix model, Lie algebra $\mathbb{M}_-$ |
-| $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$ | The twist as a conjugation by the pseudoscalar |
-| $\Theta^{\alpha}_x(y)=\alpha(x)\,y\,x^{*}$ | Signed Hermitian sandwich; $=\Theta_x$ on $\mathbb{B}$ |
-| $\Theta^{\alpha}_x=\varepsilon_x\Theta_x$ | Parity sign; invisible on the even algebra |
-| $\Theta^{\alpha}_x\Theta^{\alpha}_z=\Theta^{\alpha}_{xz}=\varepsilon_x\varepsilon_z\Theta_{xz}$ | Composition; ordinary for equal parities |
-| $\Theta^{\alpha}_a=-q(a)\rho_a$ ($a\in V$) | The reflection read in the Hermitian pairing |
+| $\alpha(x)=\varepsilon_x x=\Omega x\Omega^{-1}$, $\varepsilon_x=(-1)^{\lvert x\rvert}$ | The grade involution as a scalar sign |
+| $\Theta_x(y)=x\,y\,x^{*}$ | The Hermitian sandwich, the only operator used |
+| $\Theta_x\Theta_z=\Theta_{xz}$ | Exact composition; no sign correction |
+| $\Theta_a=q(a)\rho_a$ ($a\in V$) | The reflection read in the Hermitian pairing |
 | $\mathrm{Cl}^1=\mathbb{B}\gamma$, $\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$ | The odd slot as a coset, with the induced form |
 | $(-1)^F=i\vec e_z\in\mathbb{M}_+$ | Parity of one mode, an even Hermitian element |
 

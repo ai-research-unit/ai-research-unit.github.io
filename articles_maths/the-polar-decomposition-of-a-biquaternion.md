@@ -289,21 +289,21 @@ for $\tilde Q\neq0$, and the scale $2a=\sqrt{2\langle\tilde Q\rangle_{*}}$ is re
 
 *Proof.* The canonical pair satisfies the four conditions by the two theorems above.
 
-For uniqueness, let $(\tilde H,\tilde U)$ satisfy them. From $\tilde Q=\tilde H\tilde U$ and condition 3,
+For uniqueness, let $(\tilde Q_H^\prime,\tilde Q_0^\prime)$ satisfy them. From $\tilde Q=\tilde Q_H^\prime\tilde Q_0^\prime$ and condition 3,
 
 $$
-\tilde Q\tilde Q^{*}=\tilde H\tilde U\tilde U^{*}\tilde H=\tilde H\,\tilde\Pi_{\mathrm f}(\tilde Q)\,\tilde H .
+\tilde Q\tilde Q^{*}=\tilde Q_H^\prime\tilde Q_0^\prime\tilde Q_0^{\prime*}\tilde Q_H^\prime=\tilde Q_H^\prime\,\tilde\Pi_{\mathrm f}(\tilde Q)\,\tilde Q_H^\prime .
 $$
 
-Condition 4 gives $\tilde H\in\tilde H\mathbb{B}=\tilde Q\mathbb{B}=\tilde\Pi_{\mathrm f}(\tilde Q)\mathbb{B}$, so $\tilde\Pi_{\mathrm f}(\tilde Q)\tilde H=\tilde H$, and $\tilde Q\tilde Q^{*}=\tilde H^{2}$. The element $\tilde H$ is therefore a Hermitian positive semidefinite square root of $\tilde Q\tilde Q^{*}$, and the square root in the cone is unique, so $\tilde H=\tilde Q_H$.
+Condition 4 gives $\tilde Q_H^\prime\in\tilde Q_H^\prime\mathbb{B}=\tilde Q\mathbb{B}=\tilde\Pi_{\mathrm f}(\tilde Q)\mathbb{B}$, so $\tilde\Pi_{\mathrm f}(\tilde Q)\tilde Q_H^\prime=\tilde Q_H^\prime$, and $\tilde Q\tilde Q^{*}=(\tilde Q_H^\prime)^{2}$. The element $\tilde Q_H^\prime$ is therefore a Hermitian positive semidefinite square root of $\tilde Q\tilde Q^{*}$, and the square root in the cone is unique, so $\tilde Q_H^\prime=\tilde Q_H$.
 
 Then $\tilde Q_H^{+}\tilde Q_H=\tilde\Pi_{\mathrm f}(\tilde Q)$ by condition 4, and
 
 $$
-\tilde Q_H^{+}\tilde Q=\tilde Q_H^{+}\tilde Q_H\tilde U=\tilde\Pi_{\mathrm f}(\tilde Q)\,\tilde U=\tilde U\tilde U^{*}\tilde U=\tilde U,
+\tilde Q_H^{+}\tilde Q=\tilde Q_H^{+}\tilde Q_H\tilde Q_0^\prime=\tilde\Pi_{\mathrm f}(\tilde Q)\,\tilde Q_0^\prime=\tilde Q_0^\prime\tilde Q_0^{\prime*}\tilde Q_0^\prime=\tilde Q_0^\prime,
 $$
 
-the middle equality by condition 3 and the last by the partial-isometry identity, which condition 3 implies. Hence $\tilde U=\tilde Q_H^{+}\tilde Q=\tilde Q_0$. $\square$
+the middle equality by condition 3 and the last by the partial-isometry identity, which condition 3 implies. Hence $\tilde Q_0^\prime=\tilde Q_H^{+}\tilde Q=\tilde Q_0$. $\square$
 
 **Remark (the two redundant conditions).** The natural statement has six conditions; two are consequences.
 
@@ -317,18 +317,18 @@ Conditions 3 and 4 are therefore independent of the others, and the two omitted 
 *Counterexample 1 (condition 4).* Let $\tilde Q=\tilde\Pi_{\vec u}$ with $\vec u$ a real unit vector, and put
 
 $$
-\tilde H=e_t,\qquad \tilde U=\tilde\Pi_{\vec u}.
+\tilde Q_H^\prime=e_t,\qquad \tilde Q_0^\prime=\tilde\Pi_{\vec u}.
 $$
 
-Then $\tilde Q=e_t\tilde\Pi_{\vec u}$, the element $\tilde H$ is positive definite and $\tilde U$ is a partial isometry with $\tilde U\tilde U^{*}=\tilde\Pi_{\vec u}=\tilde\Pi_{\mathrm f}(\tilde Q)$. But $\tilde H\mathbb{B}=\mathbb{B}$ while $\tilde Q\mathbb{B}=\tilde\Pi_{\vec u}\mathbb{B}$, so condition 4 fails, and $\tilde H$ is not $\tilde Q_H=\tilde\Pi_{\vec u}$.
+Then $\tilde Q=e_t\tilde\Pi_{\vec u}$, the element $\tilde Q_H^\prime$ is positive definite and $\tilde Q_0^\prime$ is a partial isometry with $\tilde Q_0^\prime\tilde Q_0^{\prime*}=\tilde\Pi_{\vec u}=\tilde\Pi_{\mathrm f}(\tilde Q)$. But $\tilde Q_H^\prime\mathbb{B}=\mathbb{B}$ while $\tilde Q\mathbb{B}=\tilde\Pi_{\vec u}\mathbb{B}$, so condition 4 fails, and $\tilde Q_H^\prime$ is not $\tilde Q_H=\tilde\Pi_{\vec u}$.
 
 *Counterexample 2 (condition 3).* With the same $\tilde Q=\tilde\Pi_{\vec u}$, put
 
 $$
-\tilde H=\tilde\Pi_{\vec u},\qquad \tilde U=e_t .
+\tilde Q_H^\prime=\tilde\Pi_{\vec u},\qquad \tilde Q_0^\prime=e_t .
 $$
 
-Then $\tilde Q=\tilde\Pi_{\vec u}e_t$, the element $\tilde H$ is positive semidefinite, $\tilde H\mathbb{B}=\tilde Q\mathbb{B}$, and $\tilde U$ is a partial isometry. But $\tilde U\tilde U^{*}=e_t\neq\tilde\Pi_{\vec u}=\tilde\Pi_{\mathrm f}(\tilde Q)$, so condition 3 fails. The annihilator condition fails as well: the left annihilator of $e_t$ is $0$, while that of $\tilde\Pi_{\vec u}$ is the orthogonal complement of the line of $\tilde\Pi_{\vec u}$.
+Then $\tilde Q=\tilde\Pi_{\vec u}e_t$, the element $\tilde Q_H^\prime$ is positive semidefinite, $\tilde Q_H^\prime\mathbb{B}=\tilde Q\mathbb{B}$, and $\tilde Q_0^\prime$ is a partial isometry. But $\tilde Q_0^\prime\tilde Q_0^{\prime*}=e_t\neq\tilde\Pi_{\vec u}=\tilde\Pi_{\mathrm f}(\tilde Q)$, so condition 3 fails. The annihilator condition fails as well: the left annihilator of $e_t$ is $0$, while that of $\tilde\Pi_{\vec u}$ is the orthogonal complement of the line of $\tilde\Pi_{\vec u}$.
 
 The two examples are the two halves of the statement: the first fixes the positive factor by its ideal, the second fixes the isometry by its projection.
 

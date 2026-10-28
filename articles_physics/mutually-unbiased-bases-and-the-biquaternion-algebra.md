@@ -66,7 +66,7 @@ $$
 \mathcal{B}_k = \bigl\{\tilde\Pi_1(\vec u_k),\ \tilde\Pi_2(\vec u_k)\bigr\}, \qquad k=1,2,3 .
 $$
 
-Explicitly, using $\vec U_x=i\vec e_x$, $\vec U_y=i\vec e_y$, $\vec U_z=i\vec e_z$,
+Explicitly, using $\tilde Q_x=i\vec e_x$, $\tilde Q_y=i\vec e_y$, $\tilde Q_z=i\vec e_z$,
 
 $$
 \mathcal{B}_1 = \Bigl\{\tfrac12(e_t+i \vec e_x),\ \tfrac12(e_t-i \vec e_x)\Bigr\}, \quad
@@ -74,7 +74,7 @@ $$
 \mathcal{B}_3 = \Bigl\{\tfrac12(e_t+i \vec e_z),\ \tfrac12(e_t-i \vec e_z)\Bigr\} .
 $$
 
-Each basis is the eigenbasis of the corresponding involution: $\vec U_x$ takes the values $\pm1$ on $\mathcal{B}_1$, and similarly for $\vec U_y$ on $\mathcal{B}_2$ and $\vec U_z$ on $\mathcal{B}_3$. These are the three coordinate measurements of the qubit.
+Each basis is the eigenbasis of the corresponding involution: $\tilde Q_x$ takes the values $\pm1$ on $\mathcal{B}_1$, and similarly for $\tilde Q_y$ on $\mathcal{B}_2$ and $\tilde Q_z$ on $\mathcal{B}_3$. These are the three coordinate measurements of the qubit.
 
 ## Mutual Unbiasedness of the Coordinate Bases
 
@@ -280,7 +280,7 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 | $\mathrm{Tr}(\tilde\Pi\tilde\Pi_2) = 2\,\mathrm{Sc}(\tilde\Pi\tilde\Pi_2^{*})$ | Trace reading of the Hermitian form (overlap) |
 | $\mathrm{Tr}(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}) = 1/d$ for $b\neq b_2$ | Mutual unbiasedness |
 | $\mathcal{B}_k = \{\tilde\Pi_{1,2}(\vec u_k)\}$ | The three coordinate bases |
-| $\vec U_x=i\vec e_x,\ \vec U_y=i\vec e_y,\ \vec U_z=i\vec e_z$ | Hermitian involutions defining the bases |
+| $\tilde Q_x=i\vec e_x,\ \tilde Q_y=i\vec e_y,\ \tilde Q_z=i\vec e_z$ | Hermitian involutions defining the bases |
 | $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_k)^{*}) = \tfrac12$ ($j\neq k$) | Unbiasedness of the coordinate bases |
 | $\tilde{Ϛ} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ | Reconstruction from a complete MUB set |
 | $\tilde\Pi_\epsilon$ | Bell idempotents (maximally entangled basis) |

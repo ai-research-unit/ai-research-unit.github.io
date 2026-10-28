@@ -69,7 +69,7 @@ These theories attach a graded module to an algebraic object, and the coefficien
 |---|---|---|
 | group cohomology $H^n(G,M)$ | a $G$-module $M$, equivalently a module over the group ring $\mathbb{Z}[G]$ | *Group Cohomology* |
 | group homology $H_n(G,M)$ | a $G$-module; $H_1(G,\mathbb{Z}) = G^{\mathrm{ab}}$ and $M(G) = H_2(G,\mathbb{Z})$ is the Schur multiplier | *Group Cohomology* |
-| Tate cohomology $\hat H^n(G,M)$ | a $G$-module for a finite group $G$; defined in all degrees $n \in \mathbb{Z}$ | *Group Cohomology* |
+| Tate cohomology $H_{\mathrm{Tate}}^n(G,M)$ | a $G$-module for a finite group $G$; defined in all degrees $n \in \mathbb{Z}$ | *Group Cohomology* |
 | the classification of group extensions | an abelian group $M$; $H^2(G,M)$ is the extension classes | *Group Cohomology* |
 | group cohomology through a classifying space | a $G$-module, through $H^*(G;M) \cong H^*(BG;M)$ | *Classifying Spaces and Cohomology Operations* |
 | Galois cohomology $H^n(K,A)$ | a Galois module $A$: $\mu_n$, $\overline K^\times$, $\mathbb{Z}/n$, with the action of $G_K$ | *Galois Cohomology* |

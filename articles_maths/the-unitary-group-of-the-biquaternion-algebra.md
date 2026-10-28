@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The general plain sesquilinear form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside the group of units of the biquaternion algebra, the elements that leave it invariant: the **unitary biquaternions** $\tilde{U}$ with $\tilde{U}^{*}\tilde{U}=e_t$. This is the maximal compact subgroup $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ of $\mathbb{B}^{\times}$, the compact real form of the algebra, and it is the single object through which the whole topology of the group of units is read: the polar decomposition gives a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of the norm-one group onto its compact part $S^{3}$, and the homotopy groups, the generators and the universal cover follow from the resulting homotopy equivalence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
+The general plain sesquilinear form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside the group of units of the biquaternion algebra, the elements that leave it invariant: the **unitary biquaternions** $\tilde Q$ with $\tilde Q^{*}\tilde Q=e_t$. This is the maximal compact subgroup $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ of $\mathbb{B}^{\times}$, the compact real form of the algebra, and it is the single object through which the whole topology of the group of units is read: the polar decomposition gives a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of the norm-one group onto its compact part $S^{3}$, and the homotopy groups, the generators and the universal cover follow from the resulting homotopy equivalence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
 
 This article collects the *Hermitian* half of the topology of the unit group: the unitary slice, its structure, the two retractions that the dagger supplies, and the homotopy invariants. The *bilinear* half — the units as the complement of the null cone, the centre, the distribution of the units among the three classes — is *The Biquaternion Unit Group as a Topological Group* and *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, and the ambient Euclidean topology and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*.
 
@@ -11,20 +11,20 @@ This article collects the *Hermitian* half of the topology of the unit group: th
 **Definition.** The **unitary biquaternions** are
 
 $$
-\mathrm{U}(\mathbb{B})=\{\tilde{U}\in\mathbb{B}:\tilde{U}^{*}\tilde{U}=e_t\}.
+\mathrm{U}(\mathbb{B})=\{\tilde Q\in\mathbb{B}:\tilde Q^{*}\tilde Q=e_t\}.
 $$
 
 **Theorem ($\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$).** $\mathsf{M}_2$ restricts to an isomorphism of groups $\mathsf{M}_2:\mathrm{U}(\mathbb{B})\to \mathrm{U}(2)$. In particular $\mathrm{U}(\mathbb{B})$ is a compact Lie group of real dimension four, and its elements are exactly the biquaternions of the form
 
-$$ \tilde{U}=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ \langle\tilde{q},\tilde{q}\rangle_{\natural}=1, $$
+$$ \tilde Q=A\,\tilde{q},\qquad A\in\mathbb{C},\ |A|=1,\quad \tilde{q}\in\mathbb{H},\ \langle\tilde{q},\tilde{q}\rangle_{\natural}=1, $$
 
 that is, scalar multiples of unit quaternions by phases.
 
-**Proof.** Since $\mathsf{M}_2$ is an algebra isomorphism and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ (*$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*, §*The Four Involutions*), the equation $\tilde{U}^{*}\tilde{U}=e_t$ is equivalent to $\mathsf{M}_2(\tilde{U})^{\dagger}\mathsf{M}_2(\tilde{U})=I$, which defines $\mathrm{U}(2)$; the restriction of an injective homomorphism is an injective homomorphism onto that group. For the normal form: the identity $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{U})$ makes $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$, so if $\zeta^{2}=\langle\tilde{U},\tilde{U}\rangle_{\natural}$ then $\tilde{Q}_3=\zeta^{-1}\tilde{U}$ has $\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=1$; a norm-one element is a unit quaternion (*Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*), and $\tilde{U}=\zeta\tilde{Q}_3$.
+**Proof.** Since $\mathsf{M}_2$ is an algebra isomorphism and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ (*$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*, §*The Four Involutions*), the equation $\tilde Q^{*}\tilde Q=e_t$ is equivalent to $\mathsf{M}_2(\tilde Q)^{\dagger}\mathsf{M}_2(\tilde Q)=I$, which defines $\mathrm{U}(2)$; the restriction of an injective homomorphism is an injective homomorphism onto that group. For the normal form: the identity $\langle\tilde Q,\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$ makes $|\langle\tilde Q,\tilde Q\rangle_{\natural}|=1$, so if $\zeta^{2}=\langle\tilde Q,\tilde Q\rangle_{\natural}$ then $\tilde{Q}_3=\zeta^{-1}\tilde Q$ has $\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=1$; a norm-one element is a unit quaternion (*Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*), and $\tilde Q=\zeta\tilde{Q}_3$.
 
 **Corollary (the determinant and the norm coincide).** On $\mathrm{U}(\mathbb{B})$ the biquaternion norm is the determinant through $\mathsf{M}_2$, and $\langle\cdot\rangle_{\natural}:\mathrm{U}(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $\langle\cdot\rangle_{\natural}$ realises an isomorphism $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$.
 
-**Proof.** $\langle\tilde{U}\tilde{Q}_4,\tilde{U}\tilde{Q}_4\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_4,\tilde{Q}_4\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_t,e_t\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_t$ is unitary of norm $A$. The kernel is $\{\langle\tilde U\rangle_{\natural}=1\}\cap \mathrm{U}(\mathbb{B})$, which is the unit quaternions.
+**Proof.** $\langle\tilde Q\tilde{Q}_4,\tilde Q\tilde{Q}_4\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}\langle\tilde{Q}_4,\tilde{Q}_4\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_t,e_t\rangle_{\natural}=1$, and $|\langle\tilde Q,\tilde Q\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_t$ is unitary of norm $A$. The kernel is $\{\langle\tilde Q\rangle_{\natural}=1\}\cap \mathrm{U}(\mathbb{B})$, which is the unit quaternions.
 
 ## The Structure of the Unitary Group
 
@@ -51,22 +51,22 @@ so $\mathrm{U}(\mathbb{B})$ is a fibre bundle over $S^{2}$ with fibre $T^{2}$.
 **Theorem (polar decomposition).** Every $\tilde{Q}_3\in\mathbb{B}^{\times}$ has a unique decomposition
 
 $$
-\tilde{Q}_3=\tilde{U}\tilde{Q}_2,\qquad \tilde{U}\in \mathrm{U}(\mathbb{B}),\quad \tilde{Q}_2\ \text{Hermitian and positive definite},
+\tilde{Q}_3=\tilde Q\tilde{Q}_2,\qquad \tilde Q\in \mathrm{U}(\mathbb{B}),\quad \tilde{Q}_2\ \text{Hermitian and positive definite},
 $$
 
-with $\tilde{Q}_2=(\tilde{Q}_3^{*}\tilde{Q}_3)^{1/2}$; the map $\tilde{Q}_3\mapsto(\tilde{U},\tilde{Q}_2)$ is a homeomorphism of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})\times\{\text{Hermitian positive definite}\}$.
+with $\tilde{Q}_2=(\tilde{Q}_3^{*}\tilde{Q}_3)^{1/2}$; the map $\tilde{Q}_3\mapsto(\tilde Q,\tilde{Q}_2)$ is a homeomorphism of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})\times\{\text{Hermitian positive definite}\}$.
 
-**Proof.** $\tilde{Q}_3^{*}\tilde{Q}_3$ is Hermitian and positive definite for $\tilde{Q}_3$ a unit, because $\mathrm{Sc}(\tilde{Q}_3^{*}\tilde{Q}_3)=\|\tilde{Q}_3\|_E^{2}>0$ and the Hermitian elements that are positive for the dagger form the cone of the units (*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Hermitian Cone*); a positive definite Hermitian element has a unique positive definite square root $\tilde{Q}_2$, and $\tilde{U}=\tilde{Q}_3\tilde{Q}_2^{-1}$ satisfies $\tilde{U}^{*}\tilde{U}=\tilde{Q}_2^{-1}\tilde{Q}_3^{*}\tilde{Q}_3\tilde{Q}_2^{-1}=e_t$. Uniqueness is the standard argument: $\tilde{Q}_2^{2}=\tilde{Q}_3^{*}\tilde{Q}_3$ has one positive definite root.
+**Proof.** $\tilde{Q}_3^{*}\tilde{Q}_3$ is Hermitian and positive definite for $\tilde{Q}_3$ a unit, because $\mathrm{Sc}(\tilde{Q}_3^{*}\tilde{Q}_3)=\|\tilde{Q}_3\|_E^{2}>0$ and the Hermitian elements that are positive for the dagger form the cone of the units (*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Hermitian Cone*); a positive definite Hermitian element has a unique positive definite square root $\tilde{Q}_2$, and $\tilde Q=\tilde{Q}_3\tilde{Q}_2^{-1}$ satisfies $\tilde Q^{*}\tilde Q=\tilde{Q}_2^{-1}\tilde{Q}_3^{*}\tilde{Q}_3\tilde{Q}_2^{-1}=e_t$. Uniqueness is the standard argument: $\tilde{Q}_2^{2}=\tilde{Q}_3^{*}\tilde{Q}_3$ has one positive definite root.
 
-**Theorem (strong deformation retraction).** For $t\in[0,1]$ put $\tilde{Q}_{2,t}=(1-t)\tilde{Q}_2+t e_t$ and $\tilde{H}(t,\tilde{Q}_3)=\tilde{U}\tilde{Q}_{2,t}$. Then $\tilde{H}$ is a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$:
+**Theorem (strong deformation retraction).** For $t\in[0,1]$ put $\tilde{Q}_{2,t}=(1-t)\tilde{Q}_2+t e_t$ and $\tilde{H}(t,\tilde{Q}_3)=\tilde Q\tilde{Q}_{2,t}$. Then $\tilde{H}$ is a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$:
 
 $$
-\tilde{H}(0,\tilde{Q}_3)=\tilde{Q}_3,\qquad \tilde{H}(1,\tilde{Q}_3)=\tilde{U},\qquad \tilde{H}(t,\tilde{U})=\tilde{U}\ \text{for}\ \tilde{U}\in \mathrm{U}(\mathbb{B}).
+\tilde{H}(0,\tilde{Q}_3)=\tilde{Q}_3,\qquad \tilde{H}(1,\tilde{Q}_3)=\tilde Q,\qquad \tilde{H}(t,\tilde Q)=\tilde Q\ \text{for}\ \tilde Q\in \mathrm{U}(\mathbb{B}).
 $$
 
 Hence $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})$, and $\pi_n(\mathbb{B}^{\times})\cong\pi_n(\mathrm{U}(\mathbb{B}))$ for all $n$.
 
-**Proof.** The eigenvalues of $\tilde{Q}_{2,t}$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{Q}_{2,t}$ is positive definite and $\tilde{U}\tilde{Q}_{2,t}\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{Q}_3$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{Q}_{2,0}=\tilde{Q}_2$, $\tilde{Q}_{2,1}=e_t$ and the fact that a unitary element has $\tilde{Q}_2=e_t$.
+**Proof.** The eigenvalues of $\tilde{Q}_{2,t}$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{Q}_{2,t}$ is positive definite and $\tilde Q\tilde{Q}_{2,t}\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{Q}_3$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{Q}_{2,0}=\tilde{Q}_2$, $\tilde{Q}_{2,1}=e_t$ and the fact that a unitary element has $\tilde{Q}_2=e_t$.
 
 **Corollary (connectedness).** $\mathbb{B}^{\times}$ is connected, and $\mathrm{U}(\mathbb{B})$ is connected.
 
@@ -74,15 +74,15 @@ Hence $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})$, and $\pi_n(\mathbb{B}^
 
 ## The Retraction of the Norm-One Group onto $S^{3}$
 
-**Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{\langle\tilde Q\rangle_{\natural}=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_3\cong\mathbb{Z}$ and vanishing $\pi_1,\pi_2$.
+**Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{\langle\tilde Q_1\rangle_{\natural}=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_3\cong\mathbb{Z}$ and vanishing $\pi_1,\pi_2$.
 
-**Proof.** Let $\tilde{Q}_3\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$. Then $1=\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$, with $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ and $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$ a positive real, so $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=1$ and $\tilde{U}\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element
+**Proof.** Let $\tilde{Q}_3\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{Q}_3=\tilde Q\tilde{Q}_2$. Then $1=\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$, with $|\langle\tilde Q,\tilde Q\rangle_{\natural}|=1$ and $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$ a positive real, so $\langle\tilde Q,\tilde Q\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=1$ and $\tilde Q\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element
 
 $$
 \tilde{Q}_{2,t}=\frac{(1-t)\tilde{Q}_2+te_t}{\langle(1-t)\tilde{Q}_2+te_t\rangle_{\natural}^{1/2}}
 $$
 
-is Hermitian positive definite of norm one (the denominator is a positive real), the map $\tilde{H}(t,\tilde{Q}_3)=\tilde{U}\tilde{Q}_{2,t}$ is continuous and lands in $\mathbb{B}^{\times}_1$, and $\tilde{H}(0,\tilde{Q}_3)=\tilde{Q}_3$, $\tilde{H}(1,\tilde{Q}_3)=\tilde{U}\in S^{3}$, $\tilde{H}(t,\tilde{U})=\tilde{U}$.
+is Hermitian positive definite of norm one (the denominator is a positive real), the map $\tilde{H}(t,\tilde{Q}_3)=\tilde Q\tilde{Q}_{2,t}$ is continuous and lands in $\mathbb{B}^{\times}_1$, and $\tilde{H}(0,\tilde{Q}_3)=\tilde{Q}_3$, $\tilde{H}(1,\tilde{Q}_3)=\tilde Q\in S^{3}$, $\tilde{H}(t,\tilde Q)=\tilde Q$.
 
 **Remark.** $\mathbb{B}^{\times}_1$ is not homeomorphic to $S^{3}$: it is a non-compact real $6$-manifold. It is a closed subgroup of $\mathbb{B}^{\times}$, of real dimension $6$ (*Biquaternion Lie Group and Exponential Structure*, §*The Subgroups and the Real Forms*).
 
@@ -115,45 +115,45 @@ and the universal covers are $(\mathbb{B}^\times)^{\mathrm{cov}}\cong \mathrm{U}
 
 The compact slice is not only the compact real form of the algebra; it is the double cover of the rotation group of the Hermitian subspace.
 
-**Theorem.** The inner conjugation $\tilde{U}\mapsto\Theta_{\tilde{U}}$, $\Theta_{\tilde{U}}(\tilde Q_1)=\tilde{U}\tilde Q_1\tilde{U}^{\dagger}$, restricts to an action of $\mathrm{U}(\mathbb{B})$ on the Hermitian subspace $\mathbb{M}_{+}$ by isometries of the interval form, and the map
+**Theorem.** The inner conjugation $\tilde Q\mapsto\Theta_{\tilde Q}$, $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{\dagger}$, restricts to an action of $\mathrm{U}(\mathbb{B})$ on the Hermitian subspace $\mathbb{M}_{+}$ by isometries of the interval form, and the map
 
 $$
-\mathrm{U}(\mathbb{B})\longrightarrow SO(3),\qquad \tilde{U}\longmapsto \Theta_{\tilde{U}}|_{\mathbb{M}_{+}},
+\mathrm{U}(\mathbb{B})\longrightarrow SO(3),\qquad \tilde Q\longmapsto \Theta_{\tilde Q}|_{\mathbb{M}_{+}},
 $$
 
 is a surjective homomorphism with kernel $\mathrm{U}(1)e_t$, so that $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong PU(2)\cong SO(3)$.
 
-**Proof.** $\Theta_{\tilde{U}}$ is an algebra automorphism and a Euclidean isometry, and it preserves $\mathbb{M}_{+}$ because it preserves the dagger; it preserves the interval form because it is an algebra automorphism and the form is $\langle\cdot\rangle_{\natural}$ on $\mathbb{M}_{+}$. The kernel consists of the $\tilde{U}$ acting trivially on $\mathbb{M}_{+}$, and an automorphism fixing the Hermitian subspace is inner by a central element, so the kernel is the central circle; the quotient $PU(2)$ is the adjoint form of $\mathrm{U}(2)$, isomorphic to $SO(3)$. On the unit quaternions the same map is the classical double cover $S^{3}\to SO(3)$.
+**Proof.** $\Theta_{\tilde Q}$ is an algebra automorphism and a Euclidean isometry, and it preserves $\mathbb{M}_{+}$ because it preserves the dagger; it preserves the interval form because it is an algebra automorphism and the form is $\langle\cdot\rangle_{\natural}$ on $\mathbb{M}_{+}$. The kernel consists of the $\tilde Q$ acting trivially on $\mathbb{M}_{+}$, and an automorphism fixing the Hermitian subspace is inner by a central element, so the kernel is the central circle; the quotient $PU(2)$ is the adjoint form of $\mathrm{U}(2)$, isomorphic to $SO(3)$. On the unit quaternions the same map is the classical double cover $S^{3}\to SO(3)$.
 
 **Remark (the two covers).** The unitary group therefore sits between the two classical double covers of the corpus: $S^{3}\to SO(3)$ on the compact slice, and $S^{3}\times S^{3}\to SO(4)$ for the two-sided action (*Biquaternion Rotations and Lorentz Transformations*). Its full conjugation action on $\mathbb{B}$ is the adjoint action of $\mathrm{U}(2)$ on $M_2(\mathbb{C})$, whose orbits are the level sets of $\mathrm{Sc}$ and $\langle\cdot\rangle_{\natural}$.
 
 ## Worked Examples
 
-**A central element.** $\tilde{U}=Ae_t$ is unitary exactly when $|A|=1$, and then $\langle\tilde{U},\tilde{U}\rangle_{\natural}=A^{2}$, so the centre circle maps onto $S^{1}$ twice.
+**A central element.** $\tilde Q=Ae_t$ is unitary exactly when $|A|=1$, and then $\langle\tilde Q,\tilde Q\rangle_{\natural}=A^{2}$, so the centre circle maps onto $S^{1}$ twice.
 
-**A unit quaternion.** $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde{U},\tilde{U}\rangle_{\natural}=1$, is unitary, is fixed by $\Theta$ only when central, and generates the image of $\pi_3$.
+**A unit quaternion.** $\tilde Q\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde Q,\tilde Q\rangle_{\natural}=1$, is unitary, is fixed by $\Theta$ only when central, and generates the image of $\pi_3$.
 
 **A null scalar multiple.** $\tilde{Q}=A(\vec e_x+i\vec e_y)$ with $A\neq0$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$, so it is not a unit and in particular not unitary; its Euclidean norm is $\sqrt2|A|$.
 
-**A negative determinant.** $\mathrm{U}(2)$ has determinant of modulus one; the slice $SU(2)=\{\langle\tilde U\rangle_{\natural}=1\}\cap \mathrm{U}(\mathbb{B})=S^{3}$ is the unit quaternions, the kernel of $\langle\cdot\rangle_{\natural}$, and the double cover of $SO(3)$.
+**A negative determinant.** $\mathrm{U}(2)$ has determinant of modulus one; the slice $SU(2)=\{\langle\tilde Q\rangle_{\natural}=1\}\cap \mathrm{U}(\mathbb{B})=S^{3}$ is the unit quaternions, the kernel of $\langle\cdot\rangle_{\natural}$, and the double cover of $SO(3)$.
 
 ## Summary
 
-The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_t\}$ are the maximal compact subgroup of $\mathbb{B}^{\times}$, isomorphic to $\mathrm{U}(2)$ through the matrix model and equal to the scalar multiples of the unit quaternions by phases. The group splits as $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ with intersection $\{\pm e_t\}$, so $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}\cong S^{1}\times S^{3}$ as spaces, with maximal torus $T^{2}=S^{1}_{\mathrm{c}}\times S^{1}_{\mathrm{q}}$ and flag variety $\mathrm{U}(\mathbb{B})/T^{2}\cong S^{2}$. The polar decomposition $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$ supplies strong deformation retractions of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of $\mathbb{B}^{\times}_1$ onto $S^{3}$, whence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, $\mathbb{B}^{\times}_1\simeq S^{3}$, $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and universal cover $\mathbb{R}\times S^{3}$. The norm $\langle\cdot\rangle_{\natural}$ is the determinant and $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$; the conjugation action gives $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$, the maximal compact subgroup of $SO^+(1,3)$.
+The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde Q^{*}\tilde Q=e_t\}$ are the maximal compact subgroup of $\mathbb{B}^{\times}$, isomorphic to $\mathrm{U}(2)$ through the matrix model and equal to the scalar multiples of the unit quaternions by phases. The group splits as $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ with intersection $\{\pm e_t\}$, so $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}\cong S^{1}\times S^{3}$ as spaces, with maximal torus $T^{2}=S^{1}_{\mathrm{c}}\times S^{1}_{\mathrm{q}}$ and flag variety $\mathrm{U}(\mathbb{B})/T^{2}\cong S^{2}$. The polar decomposition $\tilde{Q}_3=\tilde Q\tilde{Q}_2$ supplies strong deformation retractions of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of $\mathbb{B}^{\times}_1$ onto $S^{3}$, whence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, $\mathbb{B}^{\times}_1\simeq S^{3}$, $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and universal cover $\mathbb{R}\times S^{3}$. The norm $\langle\cdot\rangle_{\natural}$ is the determinant and $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$; the conjugation action gives $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$, the maximal compact subgroup of $SO^+(1,3)$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_t\}$ | Unitary biquaternions; maximal compact subgroup $\cong \mathrm{U}(2)$ |
+| $\mathrm{U}(\mathbb{B})=\{\tilde Q^{*}\tilde Q=e_t\}$ | Unitary biquaternions; maximal compact subgroup $\cong \mathrm{U}(2)$ |
 | $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ | Product decomposition with $S^{1}\cap S^{3}=\{\pm e_t\}$ |
 | $T^{2}\cong S^{1}\times S^{1}$ | Central maximal torus |
 | $\mathrm{U}(\mathbb{B})/T^{2}\cong P^{1}\cong S^{2}$ | Complete flag variety |
-| $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$ | Polar decomposition; retraction onto $\mathrm{U}(\mathbb{B})$ |
+| $\tilde{Q}_3=\tilde Q\tilde{Q}_2$ | Polar decomposition; retraction onto $\mathrm{U}(\mathbb{B})$ |
 | $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3}$ | Homotopy type of the unit group |
 | $\mathbb{B}^{\times}_1\simeq S^{3}$ | Homotopy type of the norm-one group |
 | $\langle\cdot\rangle_{\natural}:\mathrm{U}(\mathbb{B})\to S^{1}$, kernel $S^{3}$ | Determinant/norm; $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$ |
-| $\Theta_{\tilde{U}}:\mathbb{M}_{+}\to\mathbb{M}_{+}$, kernel $\mathrm{U}(1)$ | $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$ |
+| $\Theta_{\tilde Q}:\mathbb{M}_{+}\to\mathbb{M}_{+}$, kernel $\mathrm{U}(1)$ | $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$ |
 | $(\mathbb{B}^\times)^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$ | Universal cover of the unit group |
 
 ## Further Reading

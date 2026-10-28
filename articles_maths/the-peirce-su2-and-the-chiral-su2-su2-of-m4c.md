@@ -1,0 +1,350 @@
+# __The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$__
+
+## Introduction
+
+**The carrier $\mathbb{C}^4$ carries two different $\mathfrak{su}_2$ structures: the Peirce $\mathfrak{su}_2$, which is irreducible of spin $\tfrac32$ and mixes the two chiralities, and the chiral $\mathfrak{su}_2\times\mathfrak{su}_2$, which preserves the chirality and acts as spin $\tfrac12$ on each chirality.** The first is the algebra of the weight chain of the simple nilpotents; the second is the algebra of the block-diagonal transformations of the two chiral planes. They have dimensions $3$ and $6$, they intersect trivially, and they are not conjugate.
+
+The article states both structures, proves their commutation or anticommutation with $\Gamma$, computes their commutants and associative envelopes, gives the branching of the algebra under each, and compares the two decompositions. It also records the degeneration at $n=2$, where the two structures collapse to the same Cartan.
+
+The spin chain is *The Spin Chain and the Adjoint Decomposition*; the chirality is *The Two Chiralities*; the rank-two split is *The Rank-Two Split*; the mass block is *The Mass Block and the Chiral Polar Decomposition*.
+
+## The Peirce $\mathfrak{su}_2$
+
+**Definition.** The **Peirce generators** are
+
+$$
+J_3=\operatorname{diag}\left(\frac32,\frac12,-\frac12,-\frac32\right),
+$$
+
+$$
+J_+=\sqrt3E_{12}+2E_{23}+\sqrt3E_{34},
+\qquad
+J_-=J_+^{\mathsf T}=\sqrt3E_{21}+2E_{32}+\sqrt3E_{43}.
+$$
+
+The **Peirce $\mathfrak{su}_2$** is the real span of the Hermitian generators
+
+$$
+J_1=\frac{J_++J_-}{2},\qquad
+J_2=\frac{J_+-J_-}{2i},\qquad
+J_3 .
+$$
+
+**Proposition.** The Peirce generators satisfy
+
+$$
+[J_3,J_+]=J_+,\qquad [J_3,J_-]=-J_-,\qquad [J_+,J_-]=2J_3,
+$$
+
+and the Hermitian generators satisfy the $\mathfrak{su}_2$ relations
+
+$$
+[J_1,J_2]=iJ_3,\qquad [J_2,J_3]=iJ_1,\qquad [J_3,J_1]=iJ_2 .
+$$
+
+**Proof.** The first three relations are proved in *The Spin Chain and the Adjoint Decomposition* by the weight computation on the matrix units. The last three follow by taking real and imaginary parts of $J_\pm=J_1\pm iJ_2$.
+
+**The representation is irreducible.** The carrier $\mathbb{C}^4$ is the spin-$\tfrac32$ module: the weights of $J_3$ are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, each once, and the ladder coefficients are $\sqrt3,2,\sqrt3$. A nonzero invariant subspace contains a highest weight vector, which is a multiple of $e_1$, and the lowering chain reaches $e_2,e_3,e_4$; hence the only invariant subspaces are $0$ and $\mathbb{C}^4$.
+
+**The action on the chirality.** The chirality involution is
+
+$$
+\Gamma=\operatorname{diag}(1,-1,1,-1).
+$$
+
+The Cartan generator commutes with it,
+
+$$
+[J_3,\Gamma]=0,
+$$
+
+because both are diagonal. The raising and lowering operators anticommute with it:
+
+$$
+\Gamma J_+\Gamma=-J_+,\qquad
+\Gamma J_-\Gamma=-J_- .
+$$
+
+**Proof.** The matrix $J_3$ is diagonal, so it commutes with the diagonal $\Gamma$. For $J_+$, every nonzero entry $E_{ij}$ has $m_i-m_j=1$ and the two lines have opposite chirality, because the four indices are paired as $(1,3)$ and $(2,4)$ and the chain steps between the pairs. A direct multiplication gives $\Gamma J_+\Gamma=-J_+$; the same for $J_-$.
+
+**The Peirce $\mathfrak{su}_2$ is not contained in the chiral algebra.** Its even part is the line $\mathbb{C}J_3$; its odd part is spanned by $J_+,J_-$ and is two-dimensional. The chiral algebra of §*The Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$* is even and six-dimensional. The intersection is zero: any element of the Peirce algebra that is block-diagonal must have zero coefficients on $J_\pm$, and $J_3$ is not traceless in each chiral block. The two algebras are different subalgebras of $\mathfrak{sl}_4(\mathbb{C})$.
+
+## The Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$
+
+**Definition.** On the chirality $+$ plane $\mathbb{C}^2_+=\operatorname{span}\{e_1,e_3\}$, define
+
+$$
+K_3^L=\frac12(E_{11}-E_{33}),\qquad
+K_+^L=E_{13},\qquad
+K_-^L=E_{31}.
+$$
+
+On the chirality $-$ plane $\mathbb{C}^2_-=\operatorname{span}\{e_2,e_4\}$, define
+
+$$
+K_3^R=\frac12(E_{22}-E_{44}),\qquad
+K_+^R=E_{24},\qquad
+K_-^R=E_{42}.
+$$
+
+The **chiral algebra** is the span of the six matrices
+
+$$
+K_1^L=\frac{K_+^L+K_-^L}{2},\quad
+K_2^L=\frac{K_+^L-K_-^L}{2i},\quad
+K_3^L,
+$$
+
+$$
+K_1^R=\frac{K_+^R+K_-^R}{2},\quad
+K_2^R=\frac{K_+^R-K_-^R}{2i},\quad
+K_3^R.
+$$
+
+**Proposition.** Each triple satisfies the $\mathfrak{su}_2$ relations,
+
+$$
+[K_3^L,K_+^L]=K_+^L,\qquad
+[K_3^L,K_-^L]=-K_-^L,\qquad
+[K_+^L,K_-^L]=2K_3^L,
+$$
+
+and the same with $L$ replaced by $R$. The two triples commute:
+
+$$
+[K_a^L,K_b^R]=0,\qquad a,b=1,2,3.
+$$
+
+The six matrices are linearly independent, and the complex span is $\mathfrak{sl}_2(\mathbb{C})\oplus\mathfrak{sl}_2(\mathbb{C})$, of dimension $6$.
+
+**Proof.** The matrices $K^L$ act only on the coordinates $1,3$ and vanish on $2,4$; in the $2\times2$ block on $\mathbb{C}^2_+$ they are the standard Pauli matrices divided by $2$, so they satisfy the $\mathfrak{su}_2$ relations. The same holds for $K^R$ on the block $\mathbb{C}^2_-$. The two sets act on different blocks, hence commute. The six matrices are independent because their nonzero blocks are independent.
+
+**The chiral algebra preserves the chirality.** Every element of the chiral algebra is block-diagonal,
+
+$$
+X=\begin{pmatrix}X_+&0\\0&X_-\end{pmatrix},
+\qquad
+X_+\in\mathfrak{sl}_2(\mathbb{C}),\quad X_-\in\mathfrak{sl}_2(\mathbb{C}),
+$$
+
+and therefore commutes with
+
+$$
+\Gamma=\begin{pmatrix}I_2&0\\0&-I_2\end{pmatrix}.
+$$
+
+The two chiralities are invariant subspaces:
+
+$$
+X(\mathbb{C}^2_+)\subseteq\mathbb{C}^2_+,\qquad
+X(\mathbb{C}^2_-)\subseteq\mathbb{C}^2_- .
+$$
+
+Each chirality is the fundamental spin-$\tfrac12$ module of one of the two factors. The first factor acts on $\mathbb{C}^2_+$ and trivially on $\mathbb{C}^2_-$; the second acts on $\mathbb{C}^2_-$ and trivially on $\mathbb{C}^2_+$.
+
+**The matrices.** In the standard basis the six generators are
+
+$$
+K_3^L=\begin{pmatrix}\frac12&0&0&0\\0&0&0&0\\0&0&-\frac12&0\\0&0&0&0\end{pmatrix},
+\quad
+K_+^L=\begin{pmatrix}0&0&1&0\\0&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+\quad
+K_-^L=\begin{pmatrix}0&0&0&0\\0&0&0&0\\1&0&0&0\\0&0&0&0\end{pmatrix},
+$$
+
+$$
+K_3^R=\begin{pmatrix}0&0&0&0\\0&\frac12&0&0\\0&0&0&0\\0&0&0&-\frac12\end{pmatrix},
+\quad
+K_+^R=\begin{pmatrix}0&0&0&0\\0&0&0&1\\0&0&0&0\\0&0&0&0\end{pmatrix},
+\quad
+K_-^R=\begin{pmatrix}0&0&0&0\\0&0&0&0\\0&0&0&0\\0&1&0&0\end{pmatrix}.
+$$
+
+The matrices are block-diagonal with respect to the chirality decomposition: the $L$ generators occupy the $(1,1),(1,3),(3,1),(3,3)$ positions, and the $R$ generators occupy the $(2,2),(2,4),(4,2),(4,4)$ positions. The two blocks never mix.
+
+## The Relation between the Two Algebras
+
+**The Cartan of the Peirce algebra in the chiral basis.** The diagonal matrix $J_3$ is block-diagonal, hence in the even part, but it is not traceless in each chiral block. A direct computation gives
+
+$$
+J_3=2K_3^L+2K_3^R+\frac12\Gamma .
+$$
+
+**Proof.** Evaluate both sides on the four basis vectors. On $e_1$: $2\cdot\frac12+0+\frac12=\frac32$. On $e_2$: $0+2\cdot\frac12-\frac12=\frac12$. On $e_3$: $2\cdot(-\frac12)+0+\frac12=-\frac12$. On $e_4$: $0+2\cdot(-\frac12)-\frac12=-\frac32$.
+
+**The Peirce raising and lowering are odd.** The operators $J_\pm$ map between the two chiral blocks. They are not in the chiral algebra, and they anticommute with $\Gamma$. The Peirce algebra is therefore the direct sum of a one-dimensional even part and a two-dimensional odd part:
+
+$$
+\mathfrak{su}_2^{\mathrm{P}}=\mathbb{R}J_3\ \oplus\ \mathbb{R}J_+\oplus\mathbb{R}J_-,
+\qquad
+1+2=3.
+$$
+
+The chiral algebra is purely even:
+
+$$
+\mathfrak{su}_2^L\oplus\mathfrak{su}_2^R=\left\{\begin{pmatrix}X_+&0\\0&X_-\end{pmatrix}:\operatorname{tr}X_+=\operatorname{tr}X_-=0\right\},
+\qquad
+3+3=6.
+$$
+
+**The intersection is zero.** A matrix in both algebras is block-diagonal and in the span of $J_3,J_+,J_-$. The block-diagonal condition kills the $J_\pm$ coefficients, and $J_3$ has block traces $1$ and $-1$, so no nonzero multiple of $J_3$ is traceless in both blocks. Hence the intersection is $0$.
+
+**The sum is nine-dimensional.** The Peirce algebra and the chiral algebra span
+
+$$
+\mathfrak{su}_2^{\mathrm{P}}\oplus(\mathfrak{su}_2^L\oplus\mathfrak{su}_2^R),
+\qquad 3+6=9,
+$$
+
+a nine-dimensional subspace of $\mathfrak{sl}_4(\mathbb{C})$, which has dimension $15$. The remaining six dimensions are the transverse part of the mass block; the mass block itself is eight-dimensional, and the Peirce odd part accounts for two of its dimensions.
+
+## Commutants and Envelopes
+
+**The commutant of the Peirce algebra.** Since the Peirce algebra acts irreducibly on $\mathbb{C}^4$, Schur's lemma gives
+
+$$
+\operatorname{End}_{\mathfrak{su}_2^{\mathrm{P}}}(\mathbb{C}^4)=\mathbb{C}I.
+$$
+
+The associative algebra generated by the Peirce generators is therefore the whole of $M_4(\mathbb{C})$: an algebra acting irreducibly with commutant $\mathbb{C}I$ has double commutant $M_4$, and the double commutant theorem identifies the generated algebra with its double commutant because it is finite-dimensional and unital. The Peirce $\mathfrak{su}_2$ is therefore **irreducible and generating**: its envelope is all of $M_4$, not a proper block subalgebra.
+
+**The commutant of the chiral algebra.** The chiral algebra acts irreducibly on each chiral plane and trivially on the other. An endomorphism commuting with both factors preserves each chiral plane and acts as a scalar on each, by Schur's lemma applied to the two copies of $\mathfrak{sl}_2$. Hence
+
+$$
+\operatorname{End}_{\mathfrak{su}_2^L\oplus\mathfrak{su}_2^R}(\mathbb{C}^4)
+=\mathbb{C}P_+\oplus\mathbb{C}P_-
+=\operatorname{span}\{I,\Gamma\},
+$$
+
+of dimension $2$. The associative envelope of the chiral algebra is the block-diagonal algebra
+
+$$
+\mathcal{A}\oplus\mathcal{D}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}),
+$$
+
+of dimension $8$, which is strictly smaller than $M_4$. The chiral algebra is reducible, and its commutant is larger.
+
+**The contrast.** The Peirce algebra is irreducible with commutant $\mathbb{C}I$ and envelope $M_4$; the chiral algebra is reducible with commutant $\operatorname{span}\{I,\Gamma\}$ and envelope the even part $\mathcal{A}\oplus\mathcal{D}$. The first is a spin-$\tfrac32$ chain; the second is a pair of spin-$\tfrac12$ chains.
+
+## The Branchings
+
+**Under the Peirce algebra.** The carrier is the irreducible module $\mathcal{V}_{3/2}$. The algebra decomposes as
+
+$$
+M_4(\mathbb{C})=\mathcal{V}_0\oplus\mathcal{V}_1\oplus\mathcal{V}_2\oplus\mathcal{V}_3,
+\qquad
+1+3+5+7=16,
+$$
+
+with highest weight vectors $I$, $J_+$, $E_{13}+E_{24}$, $E_{14}$. This is *The Spin Chain and the Adjoint Decomposition*.
+
+**Under the chiral algebra.** The carrier decomposes as
+
+$$
+\mathbb{C}^4=\left(\frac12,0\right)\oplus\left(0,\frac12\right),
+\qquad
+2+2=4,
+$$
+
+where the pair $(a,b)$ denotes the spin-$a$ module of the first factor and the spin-$b$ module of the second. The algebra decomposes as
+
+$$
+M_4(\mathbb{C})=
+(3,1)\oplus(1,3)\oplus(1,1)_\Gamma\oplus(1,1)_I
+\oplus(2,2)_B\oplus(2,2)_C,
+$$
+
+with dimensions
+
+$$
+3+3+1+1+4+4=16.
+$$
+
+The pieces are:
+
+| Piece | Dimension | Identification |
+|---|---|---|
+| $(3,1)$ | $3$ | $\mathfrak{sl}_2^L$ |
+| $(1,3)$ | $3$ | $\mathfrak{sl}_2^R$ |
+| $(1,1)_\Gamma$ | $1$ | $\mathbb{C}\Gamma$ |
+| $(1,1)_I$ | $1$ | $\mathbb{C}I$ |
+| $(2,2)_B$ | $4$ | the mass block $\mathcal{B}$ |
+| $(2,2)_C$ | $4$ | the conjugate mass block $\mathcal{C}$ |
+
+**Proof.** The chiral algebra is $\mathfrak{sl}_2^L\oplus\mathfrak{sl}_2^R$, the traceless part of the block-diagonal algebra. The block-diagonal algebra is $\mathfrak{gl}_2\oplus\mathfrak{gl}_2$, of dimension $8$; it is the sum of the traceless part (dimension $6$) and the two block scalars, spanned by $I$ and $\Gamma$ (dimension $2$). The off-diagonal part is the mass block and its opposite, each a bifundamental $(2,2)$ under the two factors, of dimension $4$. The dimensions add to $16$.
+
+**The traceless algebra.** For $\mathfrak{sl}_4(\mathbb{C})$ one drops the centre $\mathbb{C}I$:
+
+$$
+\mathfrak{sl}_4(\mathbb{C})=
+(3,1)\oplus(1,3)\oplus(1,1)_\Gamma
+\oplus(2,2)_B\oplus(2,2)_C,
+\qquad
+3+3+1+4+4=15.
+$$
+
+The extra singlet $\Gamma$ is the chirality generator; it is traceless and lies in the even part, but it is not in the chiral algebra because it is a block scalar rather than a traceless block.
+
+**The two decompositions are incompatible.** The Peirce decomposition into $\mathcal{V}_0,\dots,\mathcal{V}_3$ and the chiral decomposition into the six pieces above are different. The mass block $\mathcal{B}$ is four-dimensional and contains the Peirce lines $\mathcal{A}_{12},\mathcal{A}_{14},\mathcal{A}_{32},\mathcal{A}_{34}$, which lie in different Peirce modules; the Peirce modules are not chiral-invariant. Neither decomposition refines the other. The Peirce decomposition is the decomposition of the spin-$\tfrac32$ chain; the chiral decomposition is the decomposition of the two spin-$\tfrac12$ chains.
+
+## The Biquaternion Case
+
+**At $n=2$ the two structures degenerate.** The carrier is $\mathbb{C}^2$, the spin-$\tfrac12$ module. The Peirce algebra is the full $\mathfrak{su}_2$ of $2\times2$ traceless Hermitian matrices, of dimension $3$:
+
+$$
+J_3=\operatorname{diag}\left(\frac12,-\frac12\right),\qquad
+J_+=E_{12},\qquad
+J_-=E_{21}.
+$$
+
+The chirality is the root $H=\operatorname{diag}(1,-1)$. The chiral algebra preserving the two lines is the Cartan of $M_2$, of dimension $1$, spanned by $J_3$; it is not a product of two $\mathfrak{su}_2$'s. The Peirce algebra contains the chiral algebra, and the intersection is the Cartan:
+
+$$
+\mathfrak{su}_2^{\mathrm{P}}\cap\mathfrak{su}(1)\oplus\mathfrak{su}(1)=\mathbb{R}J_3,
+\qquad 3\cap1=1.
+$$
+
+At $n=4$ the chiral algebra grows from the Cartan to $\mathfrak{su}_2\oplus\mathfrak{su}_2$ of dimension $6$, and the intersection with the Peirce algebra drops from the Cartan to $0$. The passage from two lines to two planes is the passage from a degenerate chiral algebra to a genuine product of two $\mathfrak{su}_2$'s.
+
+**The general pattern.** For $M_n(\mathbb{C})$ with $n=2m$, the Peirce algebra is the irreducible spin-$\frac{n-1}{2}$ algebra of dimension $3$, and the traceless block-diagonal algebra is $\mathfrak{sl}_m\oplus\mathfrak{sl}_m\oplus\mathbb{C}\Gamma$, of dimension $2(m^2-1)+1$. The **chiral algebra** $\mathfrak{sl}_m\oplus\mathfrak{sl}_m$ has dimension $2(m^2-1)$: it is $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ of dimension $6$ for $n=4$, and $\mathfrak{sl}_3\oplus\mathfrak{sl}_3$ of dimension $16$ for $n=6$. For $n=2$ the two factors are $\mathfrak{sl}_1$, which is zero, and the traceless block-diagonal algebra is the Cartan $\mathbb{C}\Gamma$. The product of two $\mathfrak{su}_2$'s is therefore specific to $n=4$, where each chirality is two-dimensional. The Peirce algebra and the chiral algebra are different for every $n\ge4$; at $n=2$ the chiral algebra is contained in the Peirce algebra.
+
+## Summary
+
+The carrier $\mathbb{C}^4$ carries the Peirce $\mathfrak{su}_2$ of dimension $3$, generated by $J_3=\operatorname{diag}(\tfrac32,\tfrac12,-\tfrac12,-\tfrac32)$ and $J_\pm$ with ladder coefficients $\sqrt3,2,\sqrt3$. It is irreducible of spin $\tfrac32$, its commutant is $\mathbb{C}I$, and its associative envelope is all of $M_4(\mathbb{C})$. It carries the chiral $\mathfrak{su}_2\oplus\mathfrak{su}_2$ of dimension $6$, the block-diagonal traceless transformations of the two chiral planes; it preserves $\Gamma$, acts as spin $\tfrac12$ on each chirality, has commutant $\operatorname{span}\{I,\Gamma\}$, and its envelope is the even part $M_2\oplus M_2$. The two algebras intersect trivially and span a nine-dimensional subspace of $\mathfrak{sl}_4$. Under the Peirce algebra the algebra decomposes as $1+3+5+7$; under the chiral algebra it decomposes as $3+3+1+1+4+4$, with the two mass blocks the bifundamentals $(2,2)$. The two decompositions are incompatible. At $n=2$ the chiral algebra degenerates to the Cartan and the Peirce algebra contains it; at $n=4$ they are distinct.
+
+$$
+\boxed{\ \dim\mathfrak{su}_2^{\mathrm{P}}=3,\quad \dim(\mathfrak{su}_2^L\oplus\mathfrak{su}_2^R)=6,\quad \mathfrak{su}_2^{\mathrm{P}}\cap(\mathfrak{su}_2^L\oplus\mathfrak{su}_2^R)=0,\quad 3+6=9\subset\mathfrak{sl}_4.\ }
+$$
+
+| Object | Dimension | Irreducible? | Commutant | Envelope |
+|---|---|---|---|---|
+| Peirce $\mathfrak{su}_2$ | $3$ | yes, spin $\tfrac32$ | $\mathbb{C}I$ | $M_4(\mathbb{C})$ |
+| Chiral $\mathfrak{su}_2\oplus\mathfrak{su}_2$ | $6$ | no, two spin $\tfrac12$ | $\operatorname{span}\{I,\Gamma\}$ | $M_2\oplus M_2$ |
+| Intersection | $0$ | — | — | — |
+| Sum | $9$ | — | — | — |
+| $\mathfrak{sl}_4$ | $15$ | — | — | — |
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $J_3,J_\pm$ | the Peirce spin-$\tfrac32$ generators |
+| $\mathfrak{su}_2^{\mathrm{P}}$ | the Peirce algebra, the real span of $J_1,J_2,J_3$ |
+| $K_a^L$ | the $\mathfrak{su}_2$ generators on the chirality $+$ plane |
+| $K_a^R$ | the $\mathfrak{su}_2$ generators on the chirality $-$ plane |
+| $\mathfrak{su}_2^L\oplus\mathfrak{su}_2^R$ | the chiral algebra, block-diagonal traceless |
+| $\Gamma$ | the chirality involution |
+| $\mathbb{C}^2_\pm$ | the two chiral planes |
+| $(a,b)$ | the module of spin $a$ for $L$ and spin $b$ for $R$ |
+
+## Further Reading
+
+- Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $\mathfrak{su}_2$, its representations and Schur's lemma.
+- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the branching rules and the symmetric powers.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the double commutant theorem and the envelope of a matrix algebra.
+- [The Spin Chain and the Adjoint Decomposition](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the Peirce spin-$\tfrac32$ chain.
+- [The Two Chiralities](the-two-chiralities-of-m4c.html), for the chirality involution and the chiral blocks.
+- [The Rank-Two Split](the-rank-two-split-of-m4c.html), for the two diagonal $M_2$ factors and the mass block.
+- [The Mass Block and the Chiral Polar Decomposition](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block as a bifundamental.
+- [The Peirce Decomposition](ideals-peirce-decompositions-and-spinors-in-the-biquaternion-algebra.html), for the biquaternion case $n=2$.
