@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Incomplete Definitions of the Spin of an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-incomplete-definitions-of-the-spin-of-an-algebra"><strong>The Incomplete Definitions of the Spin of an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The test.</strong> The biquaternion sector has three observed spin values: $0$ for the scalar, $\tfrac12$ for the fermion, and $1$ for the vector. Since $\mathbb{B}\cong M_2(\mathbb{C})$, a definition is pertinent for the sector only if, applied to $M_2(\mathbb{C})$ alone, it produces exactly
+$$
+\{0,\ \tfrac12,\ 1\}.
+$$
+The companion article, <em>Possible General Definitions of the Spin of an Algebra</em>, presents the five definitions that pass. This article presents the methods that fail. They are not worthless: each captures a part of the structure. They are incomplete as definitions of the spin list.</p>
+<p><strong>The failure modes.</strong> A method can fail in five ways.</p>
+<ol>
+<li><strong>Wrong value:</strong> it returns a number outside the experimental set.</li>
+<li><strong>Incomplete:</strong> it returns a proper subset of the experimental set.</li>
+<li><strong>Overcomplete:</strong> it returns an infinite set, or a set with extra values.</li>
+<li><strong>Normalization:</strong> it returns the coefficient of a generator, not a spin.</li>
+<li><strong>Extra structure:</strong> it needs data beyond the algebra.</li>
+</ol>
+<p><strong>The six algebras.</strong> The test cases are $\mathbb{C}$, the split-complex numbers $\mathbb{D}$, the quaternions $\mathbb{H}$, and the matrix algebras $M_2(\mathbb{C})$, $M_3(\mathbb{C})$, $M_5(\mathbb{C})$. The field is stated in every table.</p>
+<p><strong>Conventions.</strong> The field is $\mathbb{R}$ or $\mathbb{C}$ as stated. The indexing is $1$-based. Matrix notation is used only for the matrix algebras. No Clifford algebra is used. The biquaternion is $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$.</p>
+<h2 id="1-the-failure-table">1. The Failure Table</h2>
+<p><strong>The audit.</strong> The table applies every incomplete method to $M_2(\mathbb{C})$ and compares the result with $\{0,\tfrac12,1\}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>method</th>
+<th>result on $M_2(\mathbb{C})$</th>
+<th>failure</th>
+<th>what it captures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dimension over $\mathbb{C}$</td>
+<td>$\{\tfrac12\}$</td>
+<td>incomplete</td>
+<td>carrier size</td>
+</tr>
+<tr>
+<td>dimension over $\mathbb{R}$</td>
+<td>$\{\tfrac32\}$</td>
+<td>wrong value</td>
+<td>real carrier size</td>
+</tr>
+<tr>
+<td>ladder list</td>
+<td>$\{0,\tfrac12\}$</td>
+<td>incomplete</td>
+<td>Jordan chain</td>
+</tr>
+<tr>
+<td>regular spin</td>
+<td>$\tfrac12$</td>
+<td>incomplete</td>
+<td>maximal chain</td>
+</tr>
+<tr>
+<td>Peirce chain</td>
+<td>$\{0,\tfrac12\}$</td>
+<td>incomplete</td>
+<td>corner chain</td>
+</tr>
+<tr>
+<td>quiver</td>
+<td>$\{0\}$</td>
+<td>wrong value</td>
+<td>Morita class</td>
+</tr>
+<tr>
+<td>spectral count</td>
+<td>$\{0,\tfrac12\}$</td>
+<td>incomplete</td>
+<td>eigenvalue count</td>
+</tr>
+<tr>
+<td>adjoint alone</td>
+<td>$\{0,1\}$</td>
+<td>incomplete</td>
+<td>spin-$1$ carrier</td>
+</tr>
+<tr>
+<td>half-angle</td>
+<td>$\tfrac12$ and $1$</td>
+<td>normalization</td>
+<td>rotor parameter</td>
+</tr>
+<tr>
+<td>unrestricted highest weight</td>
+<td>all $j\ge0$</td>
+<td>overcomplete</td>
+<td>representation label</td>
+</tr>
+<tr>
+<td>unrestricted Casimir</td>
+<td>all $j\ge0$</td>
+<td>overcomplete</td>
+<td>representation label</td>
+</tr>
+<tr>
+<td>unrestricted coadjoint</td>
+<td>all $j\ge0$</td>
+<td>overcomplete</td>
+<td>orbit label</td>
+</tr>
+<tr>
+<td>circle weight</td>
+<td>$0$ or $\{0,\tfrac12\}$ mod $1$</td>
+<td>incomplete</td>
+<td>parity</td>
+</tr>
+<tr>
+<td>ribbon twist</td>
+<td>$0$</td>
+<td>wrong value</td>
+<td>topological spin</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> The methods fall into four families: those that read one carrier (dimension, adjoint), those that read one chain (ladder, Peirce), those that read a coarse invariant (quiver, spectral, circle, ribbon), and those that read a representation label without a bound (highest weight, Casimir, coadjoint). The half-angle is a coordinate of the rotor; its coefficient is a normalization of the generator. The circle weight and the ribbon twist also need extra structure: a circle action or a ribbon category. §2 to §10 give each definition, its table on the six algebras, and the reason for its failure.</p>
+<h2 id="2-dimension-of-a-simple-module">2. Dimension of a Simple Module</h2>
+<p><strong>Definition.</strong> Let $A$ be a finite-dimensional $k$-algebra and $V$ a simple left $A$-module. The <strong>dimension spin</strong> is
+$$
+j=\frac{\dim_k V-1}{2}.
+$$
+The <strong>left list</strong> is the set over the simple modules. The definition uses no nilpotent, no grading, and no triple.</p>
+<p><strong>The six algebras.</strong> The table gives the value over the base field and the value after complexification of the module.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>over $k$</th>
+<th>after complexification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\tfrac12$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\tfrac32$</td>
+<td>$\tfrac12$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>$\tfrac12$</td>
+<td>$\tfrac12$</td>
+</tr>
+<tr>
+<td>$M_3(\mathbb{C})$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$M_5(\mathbb{C})$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it fails on $M_2(\mathbb{C})$.</strong> Over $\mathbb{C}$ the only simple module is $\mathbb{C}^2$, and the formula gives $\tfrac12$; it misses $0$ and $1$. Viewed over $\mathbb{R}$, the same module has real dimension $4$, and the formula gives $\tfrac32$; that is a wrong value. A single carrier cannot produce a list of three.</p>
+<p><strong>The quaternion row.</strong> Over $\mathbb{R}$ the simple module is $\mathbb{H}$ itself, of real dimension $4$, and the formula gives $\tfrac32$. The spin-$\tfrac12$ carrier is $\mathbb{H}$ as a left $\mathbb{H}$-module; after complexification it is two copies of the complex irreducible of dimension $2$, and the formula gives $\tfrac12$. The real dimension counts two copies, so the formula doubles the spin and adds one half.</p>
+<p><strong>What it captures.</strong> The size of the carrier. It gives the defining spin $(n-1)/2$ of $M_n$, and it is the right count of states. It is not the spin of the algebra.</p>
+<p><strong>Verdict.</strong> Incomplete: a proper subset over $\mathbb{C}$, a wrong value over $\mathbb{R}$.</p>
+<h2 id="3-the-nilpotent-ladder">3. The Nilpotent Ladder</h2>
+<p><strong>Definition.</strong> Let $u\in A$ be nilpotent and let
+$$
+\operatorname{ind}(u)=\min\{m:u^m=0\}
+$$
+be the nilpotency index. The <strong>ladder spin</strong> is
+$$
+j=\frac{\operatorname{ind}(u)-1}{2}.
+$$
+The <strong>ladder list</strong> is the set over all nilpotent $u\in A$. The <strong>regular spin</strong> is the maximum of the list.</p>
+<p><strong>The six algebras.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>indices</th>
+<th>ladder list</th>
+<th>regular spin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\{1\}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$\{1\}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\{1\}$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>$\{1,2\}$</td>
+<td>$\{0,\tfrac12\}$</td>
+<td>$\tfrac12$</td>
+</tr>
+<tr>
+<td>$M_3(\mathbb{C})$</td>
+<td>$\{1,2,3\}$</td>
+<td>$\{0,\tfrac12,1\}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$M_5(\mathbb{C})$</td>
+<td>$\{1,\ldots,5\}$</td>
+<td>$\{0,\tfrac12,1,\tfrac32,2\}$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it fails on $M_2(\mathbb{C})$.</strong> The list is $\{0,\tfrac12\}$; it misses $1$. The ladder reads the Jordan chain of a nilpotent. The adjoint spin $1$ is a semisimple weight, not a nilpotent index. The regular spin is $\tfrac12$, so the single-value reading is also incomplete.</p>
+<p><strong>The quaternion row.</strong> The ladder definition gives $0$ for $\mathbb{H}$. $\mathbb{H}$ is a division algebra, so the only nilpotent is $0$. The spin-$\tfrac12$ of the quaternion is not a ladder in $\mathbb{H}$; the ladder lives in the complexification $\mathbb{B}$.</p>
+<p><strong>What it captures.</strong> The Jordan chain of $M_n$. Its maximum equals the defining spin $(n-1)/2$ of the principal triple, and it is the right notion for the regular nilpotent. It cannot see a spectral label without a nilpotent.</p>
+<p><strong>Verdict.</strong> Incomplete: misses the adjoint spin.</p>
+<h2 id="4-the-peirce-chain">4. The Peirce Chain</h2>
+<p><strong>Definition.</strong> A <strong>Peirce chain</strong> is a sequence of nonzero orthogonal idempotents $e_1,\ldots,e_\ell$ in $A$,
+$$
+e_ie_j=\delta_{ij}e_i,
+$$
+such that the off-diagonal corner is nonzero:
+$$
+e_iAe_{i+1}\neq0,\qquad i=1,\ldots,\ell-1.
+$$
+The <strong>chain spin</strong> is
+$$
+j=\frac{\ell-1}{2}.
+$$
+The <strong>Peirce list</strong> is the set over all chains; the maximum is $0$ when no chain of length $2$ exists.</p>
+<p><strong>The six algebras.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>longest chain</th>
+<th>Peirce list</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$1$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$1$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>$2$</td>
+<td>$\{0,\tfrac12\}$</td>
+</tr>
+<tr>
+<td>$M_3(\mathbb{C})$</td>
+<td>$3$</td>
+<td>$\{0,\tfrac12,1\}$</td>
+</tr>
+<tr>
+<td>$M_5(\mathbb{C})$</td>
+<td>$5$</td>
+<td>$\{0,\tfrac12,1,\tfrac32,2\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it fails on $M_2(\mathbb{C})$.</strong> The list is $\{0,\tfrac12\}$; it misses $1$. The Peirce chain reads the corner $e_iAe_{i+1}$. The adjoint spin is not a corner chain.</p>
+<p><strong>The split-complex row.</strong> $\mathbb{D}$ has four idempotents, including $e_+$ and $e_-$, but it is commutative. The corner is
+$$
+e_+\mathbb{D}e_-=0,
+$$
+because every product is symmetric. The two idempotents do not make a chain; the length is $1$ and the spin is $0$. The same algebra has the spectral label $\tfrac12$ from $S=(1,-1)$, but no chain of length $2$ and no ladder. The idempotents alone are not a spin.</p>
+<p><strong>The chirality caution.</strong> The $\pm$ of $e_\pm$ is a copy index. It is not the chirality of the biquaternion. The chirality is the nontrivial central involution of the complexification, $\chi=ij$ with $i$ and $j$ the two commuting imaginary units, $\chi^2=1$; it is central and outside the real biquaternion, equivalently the grading $S\oplus S^{\mathrm c}$. A Peirce pair is not that grading.</p>
+<p><strong>What it captures.</strong> The corner chain of $M_n$. It sees the matrix units and the nonzero corners. It is blind to division algebras and to commutative algebras.</p>
+<p><strong>Verdict.</strong> Incomplete: misses the adjoint spin; it is the combinatorial shadow of the ladder.</p>
+<h2 id="5-the-quiver">5. The Quiver</h2>
+<p><strong>Definition.</strong> Let $A$ be finite-dimensional over a field. Its <strong>Ext quiver</strong> has one vertex for each simple module and one arrow for each basis element of $\operatorname{Ext}^1$ between two simple modules. When the field is algebraically closed, Gabriel's theorem identifies the basic algebra Morita equivalent to $A$ with $kQ/I$, with $Q$ a finite quiver and $I$ an admissible ideal. Let $\ell_Q$ be one plus the maximum number of arrows in a nonzero path of $kQ/I$. The <strong>quiver spin</strong> is
+$$
+j_Q=\frac{\ell_Q-1}{2}.
+$$</p>
+<p><strong>The six algebras.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>quiver</th>
+<th>$\ell_Q$</th>
+<th>spin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>one vertex, no arrows</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>two vertices, no arrows</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>one vertex, no arrows</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>one vertex, no arrows</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$M_3(\mathbb{C})$</td>
+<td>one vertex, no arrows</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$M_5(\mathbb{C})$</td>
+<td>one vertex, no arrows</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it fails on $M_2(\mathbb{C})$.</strong> The quiver gives $0$. It is Morita invariant, so it must give the same value to $M_2(\mathbb{C})$ and $\mathbb{C}$. The matrix size and the multiplicity of the simple module are invisible.</p>
+<p><strong>What it captures.</strong> The Morita class and the representation type. It is the right invariant for the category of modules, not for the spin.</p>
+<p><strong>Verdict.</strong> Wrong value: the Morita shadow.</p>
+<h2 id="6-the-spectral-level-count">6. The Spectral Level Count</h2>
+<p><strong>Definition.</strong> Let $S\in A$ be semisimple over the algebraic closure, and let $L_S$ be left multiplication by $S$ on $A$. Suppose the distinct eigenvalues of $L_S$ are
+$$
+jd,\ (j-1)d,\ \ldots,\ -jd
+$$
+for some $j\in\tfrac12\mathbb{Z}_{\ge0}$ and some nonzero $d$ in the algebraic closure of $k$. The <strong>spectral spin</strong> is the number of levels minus one over two,
+$$
+j=\frac{r-1}{2},
+$$
+where $r=2j+1$ is the number of distinct eigenvalues. The <strong>spectral list</strong> is the set over all such $S$.</p>
+<p><strong>The six algebras.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>spectral list</th>
+<th>witness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\{0\}$</td>
+<td>$S=z$, one eigenvalue</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$\{0,\tfrac12\}$</td>
+<td>$S=(1,-1)$, eigenvalues $\pm1$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\{0,\tfrac12\}$</td>
+<td>$S=i$, eigenvalues $\pm i$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>$\{0,\tfrac12\}$</td>
+<td>$S=\operatorname{diag}(\tfrac12,-\tfrac12)$</td>
+</tr>
+<tr>
+<td>$M_3(\mathbb{C})$</td>
+<td>$\{0,\tfrac12,1\}$</td>
+<td>$S=\operatorname{diag}(1,0,-1)$</td>
+</tr>
+<tr>
+<td>$M_5(\mathbb{C})$</td>
+<td>$\{0,\tfrac12,1,\tfrac32,2\}$</td>
+<td>$S=\operatorname{diag}(2,1,0,-1,-2)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it fails on $M_2(\mathbb{C})$.</strong> The spectral list is $\{0,\tfrac12\}$; it misses $1$. The level count reads the semisimple spectrum on the left regular module. The adjoint spin $1$ is a weight on the adjoint carrier, not a level count on the left regular module.</p>
+<p><strong>The split-complex row.</strong> $S=(1,-1)$ has two eigenvalues $\pm1$, a full string with $d=2$, and the spin $\tfrac12$. There is no nilpotent and no triple. The value is a <strong>grading label</strong>, not a physical spin.</p>
+<p><strong>What it captures.</strong> The number of spectral levels of a semisimple element. It is scale-free and gives $\tfrac12$ to $\mathbb{H}$ and $\mathbb{D}$. It is the right notion for a grading.</p>
+<p><strong>Verdict.</strong> Incomplete: misses the adjoint spin.</p>
+<h2 id="7-the-adjoint-alone">7. The Adjoint Alone</h2>
+<p><strong>Definition.</strong> Let $(S,U,V)$ be a spin triple and let $A$ act on itself by the adjoint action. The weights of $\operatorname{ad}_S$ are the differences $\lambda_i-\lambda_j$ of the weights of $S$. The <strong>adjoint spin</strong> is the top weight
+$$
+j_{\mathrm{ad}}=2j_{\mathrm{def}},
+$$
+where $j_{\mathrm{def}}$ is the defining spin. The <strong>adjoint list</strong> is the set over all triples.</p>
+<p><strong>The six algebras.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>adjoint spin</th>
+<th>adjoint content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$0$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$0$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$1$ in $\mathbb{B}$</td>
+<td>$\{0,1\}$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>$1$</td>
+<td>$\{0,1\}$</td>
+</tr>
+<tr>
+<td>$M_3(\mathbb{C})$</td>
+<td>$2$</td>
+<td>$\{0,1,2\}$</td>
+</tr>
+<tr>
+<td>$M_5(\mathbb{C})$</td>
+<td>$4$</td>
+<td>$\{0,1,2,3,4\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it fails on $M_2(\mathbb{C})$.</strong> The adjoint content is $\{0,1\}$; it misses $\tfrac12$. The adjoint carrier is the spin-$1$ carrier. Read alone, it is not the whole list.</p>
+<p><strong>The material sector.</strong> For $\mathbb{H}$, the adjoint action on the vector part $\operatorname{Im}\mathbb{H}$ is the spin-$1$ representation. The Hermitian generator is $J_k=\tfrac12\operatorname{ad}_{ie_k}$, whose eigenvalues are $0,\pm1$. The raw derivation $\operatorname{ad}_{ie_k}$ has eigenvalues $0,\pm2$, so the factor $\tfrac12$ is the normalization that turns the derivation into the physical generator; the spin is $1$, not $2$. This is the construction of <em>Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</em>.</p>
+<p><strong>The caution for $n\ge3$.</strong> The adjoint of $\mathfrak{gl}_n$ is reducible under the principal $\mathfrak{sl}_2$: it decomposes as $W_0\oplus W_1\oplus\cdots\oplus W_{n-1}$. The centre is $W_0$; the traceless part is $W_1\oplus\cdots\oplus W_{n-1}$. The top component has spin $n-1$, but the physical gauge field in the adjoint has spin $1$. The integer $n-1$ is the $\mathfrak{sl}_2$ content, not the $\mathfrak{su}(n)$ spin.</p>
+<p><strong>What it captures.</strong> The spin-$1$ carrier and the integer-spin sector. It is the right notion for the material sector, and one of the three carriers of the biquaternion.</p>
+<p><strong>Verdict.</strong> Incomplete: misses the defining spin $\tfrac12$.</p>
+<h2 id="8-the-half-angle-and-the-polar-operators">8. The Half-Angle and the Polar Operators</h2>
+<p><strong>The polar decomposition.</strong> A nonzero quaternion has the polar form
+$$
+q=\rho\left(\cos\frac{\theta}{2}+n\sin\frac{\theta}{2}\right),
+$$
+with $\rho>0$ and $n$ a unit imaginary quaternion. The half-angle is the parameter of the double cover $SU(2)\to SO(3)$. It is a property of the quaternion group, not of the spin quantum number.</p>
+<p><strong>Why the half-angle is not the spin.</strong> The spin-$1$ rotation about the $z$-axis is
+$$
+R_z(\theta)=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\end{pmatrix},
+$$
+with the full angle. The spin-$\tfrac12$ rotor is
+$$
+\exp\left(-\frac{i\theta\sigma_z}{2}\right)
+=\begin{pmatrix}e^{-i\theta/2}&0\\0&e^{i\theta/2}\end{pmatrix},
+$$
+with the half-angle. The coefficient $\tfrac12$ is the top eigenvalue of the generator $\sigma_z/2$ in the fundamental representation. For the spin-$1$ adjoint of $\mathfrak{su}(2)$ the generator $J_z$ has eigenvalues $1,0,-1$, and the rotor is $\exp(i\theta J_z)$, with the full angle. The coefficient is not the spin; it is the normalization of the generator in the chosen carrier.</p>
+<p><strong>The six algebras.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>defining coefficient</th>
+<th>adjoint top coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>undefined</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>undefined</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\tfrac12$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>$\tfrac12$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$M_3(\mathbb{C})$</td>
+<td>$\tfrac12$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$M_5(\mathbb{C})$</td>
+<td>$\tfrac12$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it fails on $M_2(\mathbb{C})$.</strong> It gives $\tfrac12$ on the defining carrier and $1$ on the adjoint. That is a coefficient per carrier, not a list. It does not produce $0$.</p>
+<p><strong>What it captures.</strong> The parameter of the rotor and the normalization of the generator. It is the right notion for the polar decomposition.</p>
+<p><strong>Verdict.</strong> A coordinate of the rotor, not a definition of the spin.</p>
+<h2 id="9-the-unrestricted-representation-labels">9. The Unrestricted Representation Labels</h2>
+<p><strong>Highest weight.</strong> Let $\mathfrak{g}$ be a reductive Lie algebra acting on $V$, choose a Cartan and a positive system, and let $\lambda$ be the highest weight. The <strong>highest-weight spin</strong> is $\lambda$; a number requires a chosen $\mathfrak{sl}_2$. For $\mathfrak{sl}_2$ with $\mathfrak{h}=\langle H\rangle$, the spin is $j=\lambda(H)/2$.</p>
+<p><strong>Casimir.</strong> Let $\mathfrak{g}$ be semisimple with an invariant form and Casimir $C$, and let $C|_V=c_V I$. For $\mathfrak{sl}_2$ the <strong>Casimir spin</strong> is
+$$
+j=\frac{-1+\sqrt{1+4c_V}}{2}.
+$$
+The formula uses the Casimir of the chosen $\mathfrak{sl}_2$, not the Casimir of the full algebra.</p>
+<p><strong>Coadjoint orbit.</strong> Let $f\in\mathfrak{g}^*$ and $O_f$ the coadjoint orbit with the Kirillov–Kostant–Souriau form. For $\mathfrak{su}(2)$, with the normalization in which the unit sphere has area $4\pi$, the <strong>orbit spin</strong> is $j=\operatorname{Area}(O_f)/(4\pi)$.</p>
+<p><strong>The six algebras.</strong> The table gives the unrestricted range, that is, the values over all representations of the chosen algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>highest weight</th>
+<th>Casimir</th>
+<th>coadjoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>all $j\ge0$</td>
+<td>all $j\ge0$</td>
+<td>all $j\ge0$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>all $j\ge0$</td>
+<td>all $j\ge0$</td>
+<td>all $j\ge0$</td>
+</tr>
+<tr>
+<td>$M_3(\mathbb{C})$</td>
+<td>all $j$ after a choice of $\mathfrak{sl}_2$</td>
+<td>non-half-integers</td>
+<td>flag variety</td>
+</tr>
+<tr>
+<td>$M_5(\mathbb{C})$</td>
+<td>all $j$ after a choice of $\mathfrak{sl}_2$</td>
+<td>non-half-integers</td>
+<td>flag variety</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it fails on $M_2(\mathbb{C})$.</strong> Over all representations, every $j\ge0$ occurs. The set is infinite; it does not produce the finite experimental list. The restricted versions, read on the natural family, are in the general article.</p>
+<p><strong>On $M_3$ and $M_5$.</strong> The highest weight of $\mathfrak{sl}_n$ is a vector, not a single number. The Casimir of the full algebra on the defining module gives $0.758$ and $1.128$, which are not half-integers. The coadjoint orbit is a flag variety, and the area formula does not produce a single spin. The definitions are $A_1$ definitions; they need a chosen $\mathfrak{sl}_2$ and a chosen representation.</p>
+<p><strong>What they capture.</strong> The labels of a representation: its highest weight, its Casimir, its orbit. They are the right notions for representation theory, not for the algebra's own list.</p>
+<p><strong>Verdict.</strong> Overcomplete: infinite unless restricted.</p>
+<h2 id="10-the-circle-weight-and-the-ribbon-twist">10. The Circle Weight and the Ribbon Twist</h2>
+<p><strong>Circle weight.</strong> Let a circle $T\cong U(1)$ act on $V$, and let $\rho(e^{it})=e^{ijt}$ on the highest-weight space. The <strong>weight</strong> is $j\in\mathbb{R}/\mathbb{Z}$, and the <strong>$2\pi$ sign</strong> is $(-1)^{2j}$. Only $j$ modulo $1$ is defined; the integer part requires a lift.</p>
+<p><strong>Ribbon twist.</strong> Let $\mathcal{C}$ be a ribbon category, $X$ a simple object, and $\theta_X$ its twist. Write $\theta_X=e^{2\pi ih_X}$ with $h_X\in\mathbb{Q}/\mathbb{Z}$; $h_X$ is the <strong>topological spin</strong>.</p>
+<p><strong>The six algebras.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>circle weight</th>
+<th>ribbon twist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$0,\tfrac12$</td>
+<td>$0$ or $\tfrac12$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>$0$ or $\tfrac12$ (mod $1$)</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$M_3(\mathbb{C})$</td>
+<td>$0$ (mod $1$)</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$M_5(\mathbb{C})$</td>
+<td>$0$ (mod $1$)</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why it fails on $M_2(\mathbb{C})$.</strong> The circle weight gives $0$ with the trivial action and $\tfrac12$ modulo $1$ with the natural action. The ribbon twist gives $0$. Both miss $1$. The methods see the parity of the spin, not the integer part.</p>
+<p><strong>What they capture.</strong> The parity and the topological spin. They are the right notions for a ribbon category, not for the algebra's own list. The definition requires a ribbon structure; it is extra data.</p>
+<p><strong>Verdict.</strong> Coarse: the parity shadow.</p>
+<h2 id="11-what-each-method-captures">11. What Each Method Captures</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>method</th>
+<th>invariant</th>
+<th>where it is the right tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dimension</td>
+<td>size of the carrier</td>
+<td>counting states</td>
+</tr>
+<tr>
+<td>ladder</td>
+<td>Jordan chain</td>
+<td>Jordan chains of $M_n$</td>
+</tr>
+<tr>
+<td>Peirce</td>
+<td>corner chain</td>
+<td>matrix units and idempotents</td>
+</tr>
+<tr>
+<td>quiver</td>
+<td>Morita class</td>
+<td>representation type</td>
+</tr>
+<tr>
+<td>spectral</td>
+<td>eigenvalue count</td>
+<td>gradings</td>
+</tr>
+<tr>
+<td>adjoint</td>
+<td>spin-$1$ carrier</td>
+<td>the material sector</td>
+</tr>
+<tr>
+<td>half-angle</td>
+<td>rotor parameter</td>
+<td>polar decomposition</td>
+</tr>
+<tr>
+<td>highest weight</td>
+<td>top weight</td>
+<td>representation theory of $\mathfrak{sl}_2$</td>
+</tr>
+<tr>
+<td>Casimir</td>
+<td>quadratic Casimir</td>
+<td>representation theory of $\mathfrak{sl}_2$</td>
+</tr>
+<tr>
+<td>coadjoint</td>
+<td>orbit area</td>
+<td>geometric quantization of $SU(2)$</td>
+</tr>
+<tr>
+<td>circle weight</td>
+<td>parity</td>
+<td>$2\pi$ spin</td>
+</tr>
+<tr>
+<td>ribbon twist</td>
+<td>topological spin</td>
+<td>ribbon categories</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The common pattern.</strong> Each method is the right tool for its own object. None of them is the spin list of the algebra.</p>
+<h2 id="12-why-they-were-mistaken-for-definitions">12. Why They Were Mistaken for Definitions</h2>
+<p><strong>One carrier instead of three.</strong> The dimension reads the defining module; the adjoint reads the adjoint module. Each gives one value, and the biquaternion needs three. The error is to take the value of one carrier for the list.</p>
+<p><strong>One chain instead of the spectrum.</strong> The ladder reads the Jordan chain of a nilpotent; the Peirce chain reads a chain of idempotents. Both are chains in $M_n$. The adjoint spin is a semisimple weight, not a chain. The error is to take the chain for the whole list.</p>
+<p><strong>One coarse invariant instead of the spin.</strong> The quiver is Morita invariant, the spectral count is a grading label, and the circle weight and the ribbon twist see only the parity. The error is to take an invariant that is constant on the interesting part.</p>
+<p><strong>One representation instead of the algebra.</strong> The highest weight, the Casimir, and the coadjoint orbit are labels of a chosen representation. Over all representations they are infinite; on the natural family they are finite, and the restricted versions are in the general article.</p>
+<p><strong>One normalization instead of the spin.</strong> The half-angle is the coordinate of the rotor; the coefficient in the exponent is the normalization of the generator on the fundamental carrier. The error is to take the coefficient for the eigenvalue.</p>
+<p><strong>The test.</strong> The $M_2(\mathbb{C})$ test separates the five pertinent definitions from these. A method that cannot produce $0$, $\tfrac12$, and $1$ on $M_2(\mathbb{C})$ is not a definition of the biquaternion's spin list.</p>
+<h2 id="13-summary">13. Summary</h2>
+<p><strong>These methods fail the test.</strong> On $M_2(\mathbb{C})$ they give a proper subset, a wrong value, an infinite set, or a coefficient. They are incomplete as definitions of the spin list.</p>
+<p><strong>They are not useless.</strong> Each captures a part: the carrier size, the Jordan chain, the corner chain, the Morita class, the eigenvalue count, the spin-$1$ carrier, the rotor parameter, a representation label, or the parity. §11 records the right use of each.</p>
+<p><strong>The five pertinent definitions are elsewhere.</strong> The triple, the module list, the Casimir list, the highest-weight list, and the orbit list with the cut are in <em>Possible General Definitions of the Spin of an Algebra</em>. They produce $\{0,\tfrac12,1\}$ on $M_2(\mathbb{C})$.</p>
+<p><strong>The list.</strong> The non-pertinent methods are: dimension over $\mathbb{C}$; dimension over $\mathbb{R}$; the ladder list; the regular spin; the Peirce chain; the quiver; the spectral count; the adjoint alone; the half-angle; the unrestricted highest weight; the unrestricted Casimir; the unrestricted coadjoint; the circle weight; the ribbon twist.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-general-definitions-of-the-spin-of-an-algebra.html">Possible General Definitions of the Spin of an Algebra</a>, for the five definitions that pass the $M_2(\mathbb{C})$ test.</li>
+<li><a href="../articles_maths/the-general-definition-of-spin.html">The General Definition of Spin</a>, for the triple definition and the original table of cases.</li>
+<li><a href="../articles_maths/the-approaches-to-spin-weight-half-angle-ladder-and-adjoint.html">The Approaches to Spin: Weight, Half-Angle, Ladder and Adjoint</a>, for the four notions in the corpus.</li>
+<li><a href="../articles_maths/the-polarisation-operator.html">The Polarisation Operator</a>, for the polar decomposition and the half-angle.</li>
+<li><a href="../articles_maths/the-spin-of-a-biquaternion.html">The Spin of a Biquaternion</a>, for the frame pair and the spin-$\tfrac12$ carrier.</li>
+<li><a href="../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html">Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form</a>, for the adjoint spin $1$ of the material sector.</li>
+<li><a href="../articles_reserve/the-spin-of-the-complex-numbers-the-absence-of-a-pair.html">The Spin of the Complex Numbers: The Absence of a Pair</a>, for the triple list $\{0\}$.</li>
+<li><a href="../articles_reserve/the-spin-of-the-split-complex-numbers-a-root-without-a-ladder.html">The Spin of the Split-Complex Numbers: A Root Without a Ladder</a>, for the gap between the spectral label and the ladder.</li>
+<li><a href="../articles_reserve/the-spin-of-the-quaternion-algebra-a-worked-computation.html">The Spin of the Quaternion Algebra: A Worked Computation</a>, for the complexification and the real dimension.</li>
+<li><a href="../articles_reserve/the-principal-pair-of-m2c-a-worked-computation.html">The Spin of the Principal Pair of $M_2(\mathbb{C})$: A Worked Computation</a>, for the list $\{0,\tfrac12,1\}$.</li>
+<li><a href="../articles_reserve/the-principal-pair-of-m3c-a-worked-computation.html">The Spin of the Principal Pair of $M_3(\mathbb{C})$: A Worked Computation</a>, for the list $\{0,1,2\}$.</li>
+<li><a href="../articles_reserve/the-principal-pair-of-m5c-a-worked-computation.html">The Spin of the Principal Pair of $M_5(\mathbb{C})$: A Worked Computation</a>, for the list $\{0,2,4\}$ and the content $0,\ldots,4$.</li>
+<li><a href="../articles_maths/the-spin-chain-and-the-adjoint-decomposition-mnc.html">The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$</a>, for the general adjoint content.</li>
+<li><a href="../articles_maths/chirality-the-conjugate-pair.html">Chirality: The Conjugate Pair</a>, for the grading that is not a spin.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

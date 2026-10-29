@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-representation-the-two-sided-operators-on-the-biquaternion-algebra"><strong>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The $M_4(\mathbb{C})_L$ model assigns to each biquaternion $\tilde Q$ one $4\times4$ matrix, its left regular matrix $\mathsf{M}_4(\tilde Q)$. That is a representation of the algebra $\mathbb{B}$ on itself by left multiplication: the image has complex dimension four, and the product is preserved.</p>
+<p>The operator $x\mapsto a\,x\,b$ is not a left multiplication when $b$ is not a scalar. It needs the right multiplication as well. The pair $(a,b)$ defines the <strong>two-sided operator</strong></p>
+<p>$$
+T_{a,b}(x)=a\,x\,b .
+$$</p>
+<p>The operators $T_{a,b}$ span the whole matrix algebra $M_4(\mathbb{C})$, of complex dimension sixteen. This article builds that representation and its sixteen basis matrices.</p>
+<p><strong>Three objects, three dimensions.</strong> The carrier is the biquaternion algebra $\mathbb{B}$, of complex dimension four. Its left regular image $L(\mathbb{B})=\{\mathsf{M}_4(a)\}$ is a four-dimensional subalgebra of $M_4(\mathbb{C})$. The operator algebra is the tensor product</p>
+<p>$$
+\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\;\cong\;\operatorname{End}_{\mathbb{C}}(\mathbb{B}),
+$$</p>
+<p>of complex dimension sixteen; its <strong>matrix representation</strong> in the coefficient basis is $M_4(\mathbb{C})$. The sixteen basis matrices are the images of the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$.</p>
+<p><strong>The tensor-product question.</strong> Three products must be kept apart. The Kronecker product $L_\mu\otimes L_\nu$ of two $4\times4$ matrices is a $16\times16$ matrix acting on $\mathbb{C}^4\otimes\mathbb{C}^4$; it is <em>not</em> the matrix of $x\mapsto e_\mu x e_\nu$. The Kronecker product of two $2\times2$ matrices <em>is</em> a $4\times4$ matrix, and it gives the two-sided operators through the identification $\mathbb{B}\cong M_2(\mathbb{C})$; the change of basis is written below. The product that builds the sixteen is the tensor product of algebras, $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_\mu R_\nu$, and in matrices it is the ordinary product of two $4\times4$ matrices.</p>
+<p><strong>Conventions.</strong> The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the matrix $\mathsf{M}_4$ are those of <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>. Write $L_a=\mathsf{M}_4(a)$ for left multiplication by $a$, and $R_b$ for right multiplication, $R_b(x)=x\,b$. The coefficient order is $(t,x,y,z)$. The matrix of quaternion conjugation on coefficients is</p>
+<p>$$
+D=\operatorname{diag}(1,-1,-1,-1),
+$$</p>
+<p>and $N(a)=\langle a\rangle_{\natural}=a_t^2+a_x^2+a_y^2+a_z^2$ is the quaternionic norm.</p>
+<p><strong>Boundaries.</strong> The abstract algebra, its two regular representations and its double centraliser are <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>. The family $\{T_{a,b}\}$, its composition, its adjoint and its type criteria are <em>Two-Sided Operators on the Biquaternion Algebra</em>. The model and its four-dimensional image are <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>. The one-sided families are <em>One-Sided Operators on the Biquaternion Algebra</em>. The congruence is <em>$M_4(\mathbb{C})_L$ Model : The Sandwich</em>, and the $2\times2$ model is <em>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>.</p>
+<h2 id="the-four-left-matrices">The Four Left Matrices</h2>
+<p><strong>Definition.</strong> The left regular matrix $L_a=\mathsf{M}_4(a)$ is the $4\times4$ matrix whose $\mu$-th column is the coordinate column of $a\,e_\mu$. On a coefficient column $x$ it acts by $x\mapsto a\,x$.</p>
+<p>The four basis matrices are</p>
+<p>$$
+L_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+L_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+$$</p>
+<p>$$
+L_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p>A general element is $L_a=\sum_\mu a_\mu L_\mu$, with the matrix displayed in the model article:</p>
+<p>$$
+L_a=\begin{pmatrix}
+a_t&-a_x&-a_y&-a_z\\
+a_x&a_t&-a_z&a_y\\
+a_y&a_z&a_t&-a_x\\
+a_z&-a_y&a_x&a_t
+\end{pmatrix}.
+$$</p>
+<p><strong>The image is four-dimensional.</strong> The matrices $L_\mu$ are linearly independent, and every product $L_aL_b=L_{ab}$ stays in their span. So $L(\mathbb{B})$ is a copy of $\mathbb{B}$, not the whole of $M_4(\mathbb{C})$.</p>
+<h2 id="the-four-right-matrices">The Four Right Matrices</h2>
+<p><strong>Definition.</strong> The right multiplication is $R_b(x)=x\,b$. Its matrix is not $\mathsf{M}_4(b)$: the two families commute, and $R_b$ is the commuting partner of $L_b$.</p>
+<p><strong>Proposition.</strong> With $D=\operatorname{diag}(1,-1,-1,-1)$,</p>
+<p>$$
+R_b=D\,L_{b^{\natural}}\,D .
+$$</p>
+<p><em>Proof.</em> On coefficients $D$ is quaternion conjugation, $D x=x^{\natural}$. Hence
+$$
+(D L_b D)(x)=D\bigl(b\,x^{\natural}\bigr)=\bigl(b\,x^{\natural}\bigr)^{\natural}=(x^{\natural})^{\natural}\,b^{\natural}=x\,b^{\natural}=R_{b^{\natural}}(x).
+$$
+Replacing $b$ by $b^{\natural}$ gives the formula. $\square$</p>
+<p>For the basis this reads $R_t=L_t=\mathrm{I}_4$ and, for $k=x,y,z$,</p>
+<p>$$
+R_k=-D\,L_k\,D .
+$$</p>
+<p>Explicitly,</p>
+<p>$$
+R_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+R_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+$$</p>
+<p>$$
+R_y=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+R_z=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p><strong>The two families commute.</strong> $L_aR_b=R_bL_a$, because both sides send $x$ to $a\,x\,b$. This is why the sixteen products below need no ordering convention.</p>
+<h2 id="the-sixteen-basis-matrices">The Sixteen Basis Matrices</h2>
+<p><strong>Definition.</strong> For $\mu,\nu\in\{t,x,y,z\}$ set</p>
+<p>$$
+T_{\mu\nu}=L_\mu\,R_\nu .
+$$</p>
+<p>The matrix $T_{\mu\nu}$ is the matrix of the operator $x\mapsto e_\mu\,x\,e_\nu$. A general two-sided operator is the linear combination</p>
+<p>$$
+T_{a,b}=\sum_{\mu,\nu}a_\mu b_\nu\,T_{\mu\nu},
+$$</p>
+<p>and conversely every element of the family $\{T_{a,b}\}$ is obtained this way.</p>
+<p><strong>Proposition (they are a basis).</strong> The sixteen matrices $T_{\mu\nu}$ are distinct, are signed permutation matrices, have determinant $1$ and rank $4$, and are linearly independent. They are a basis of $M_4(\mathbb{C})$.</p>
+<p><em>Proof.</em> By the theorem of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, the map $a\otimes b^{\mathrm{opp}}\mapsto L_aR_b$ is an isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ are a basis of the left side, so their images $T_{\mu\nu}$ are a basis of the right side. Each is a product of two monomial matrices, hence monomial; each $L_\mu$ and $R_\nu$ has determinant $1$, so the product has determinant $1$; and a monomial $4\times4$ matrix of determinant $1$ has rank $4$. The distinctness is read off the table below. $\square$</p>
+<p><strong>The rule.</strong> Column $j$ of $T_{\mu\nu}$ is the coordinate column of $e_\mu\,e_j\,e_\nu$. In particular the first column, the column of $e_t$, is the coordinate column of $e_\mu e_\nu$.</p>
+<p><strong>The table.</strong> Write a monomial matrix as $(\pi;\epsilon)$, meaning that column $j$ has entry $\epsilon_j$ in row $\pi(j)$, with rows and columns indexed in the order $t,x,y,z$ by $0,1,2,3$. The sixteen matrices are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\mu\backslash\nu$</th>
+<th>$t$</th>
+<th>$x$</th>
+<th>$y$</th>
+<th>$z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$t$</td>
+<td>$(0123;++++)$</td>
+<td>$(1032;+--+)$</td>
+<td>$(2301;++--)$</td>
+<td>$(3210;+-+-)$</td>
+</tr>
+<tr>
+<td>$x$</td>
+<td>$(1032;+-+-)$</td>
+<td>$(0123;--++)$</td>
+<td>$(3210;+--+)$</td>
+<td>$(2301;----)$</td>
+</tr>
+<tr>
+<td>$y$</td>
+<td>$(2301;+--+)$</td>
+<td>$(3210;----)$</td>
+<td>$(0123;-+-+)$</td>
+<td>$(1032;++--)$</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>$(3210;++--)$</td>
+<td>$(2301;+-+-)$</td>
+<td>$(1032;----)$</td>
+<td>$(0123;-++-)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One entry, checked.</strong> The table gives $T_{xy}=(3210;+--+)$. Its columns are, in order, $e_z$, $-e_y$, $-e_x$, $e_t$; that is,
+$$
+T_{xy}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+$$
+The first column is $e_z$, because $e_xe_te_y=e_z$.</p>
+<p><strong>The sixteen matrices, written out.</strong></p>
+<p>$$
+T_{tt}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad T_{tx}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}
+$$</p>
+<p>$$
+T_{ty}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad T_{tz}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}
+$$</p>
+<p>$$
+T_{xt}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad T_{xx}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}
+$$</p>
+<p>$$
+T_{xy}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\qquad T_{xz}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}
+$$</p>
+<p>$$
+T_{yt}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad T_{yx}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix}
+$$</p>
+<p>$$
+T_{yy}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad T_{yz}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}
+$$</p>
+<p>$$
+T_{zt}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},\qquad T_{zx}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix}
+$$</p>
+<p>$$
+T_{zy}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad T_{zz}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}
+$$
+<strong>Composition.</strong> The product of two basis operators is a signed basis operator:
+$$
+T_{\mu\nu}\,T_{\rho\sigma}=T_{e_\mu e_\rho,\;e_\sigma e_\nu}=\epsilon\,\epsilon'\,T_{\mu'\nu'},
+$$
+where $e_\mu e_\rho=\epsilon\,e_{\mu'}$ and $e_\sigma e_\nu=\epsilon'\,e_{\nu'}$. For general parameters,
+$$
+T_{a,b}\,T_{c,d}=T_{ac,\,db}.
+$$
+The sixteen are therefore closed under multiplication up to sign, with the unit $T_{tt}=\mathrm{I}_4$. They are not a group: $-T_{\mu\nu}$ is not one of the sixteen.</p>
+<p><strong>Inverse, trace and determinant.</strong> For $a,b$ with $N(a)N(b)\neq0$,
+$$
+T_{a,b}^{-1}=T_{a^{-1},b^{-1}},\qquad
+\operatorname{Tr}T_{a,b}=4\,a_t b_t,\qquad
+\det T_{a,b}=N(a)^2N(b)^2 .
+$$
+In particular every basis matrix is invertible, with inverse $\pm$ one of the sixteen; the trace is $4$ only for $T_{tt}$ and $0$ for the other fifteen, and the determinant is $1$ for all sixteen.</p>
+<p><strong>Orthogonality.</strong> For the Hilbert–Schmidt inner product $\langle A,B\rangle=\operatorname{Tr}(A^{\dagger}B)$,
+$$
+\operatorname{Tr}\bigl(T_{\mu\nu}^{\dagger}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\,\delta_{\nu\sigma}.
+$$
+The sixteen are an orthogonal basis, each of norm $2$. The normalization is the same $4$ as the trace of a left multiplication, because the coefficient basis has four elements.</p>
+<p><strong>The basis consists of units, its span does not.</strong> Every $T_{\mu\nu}$ is invertible, but a sum need not be. For example
+$$
+T_{tt}+T_{xx}=\operatorname{diag}(0,0,2,2),
+$$
+of rank two. The algebra is simple and has many zero divisors; a basis of invertible monomial matrices does not change that.</p>
+<h2 id="the-tensor-product">The Tensor Product</h2>
+<p><strong>The Kronecker product of the sixteen is not the construction.</strong> The Kronecker product $T_{\mu\nu}\otimes T_{\rho\sigma}$ is a $16\times16$ matrix. It acts on $\mathbb{C}^4\otimes\mathbb{C}^4$, a space of dimension sixteen, not on the carrier $\mathbb{C}^4$. It does not represent $x\mapsto a\,x\,b$.</p>
+<p><strong>The Kronecker product at the $M_2$ level is.</strong> Since $\mathbb{B}\cong M_2(\mathbb{C})$, let $S$ be the Peirce change of <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>:</p>
+<p>$$
+S=\begin{pmatrix}
+\tfrac12&0&0&\tfrac12\\
+0&\tfrac{i}{2}&\tfrac{i}{2}&0\\
+0&\tfrac12&-\tfrac12&0\\
+\tfrac{i}{2}&0&0&-\tfrac{i}{2}
+\end{pmatrix},
+\qquad
+\det S=-\tfrac14 .
+$$</p>
+<p>Its columns are $\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-$; it carries the Peirce column to the coefficient column, and $S^{-1}$ carries the coefficient column to $\operatorname{vec}\mathsf{M}_2(a)$. Then</p>
+<p>$$
+L_a=S\bigl(\mathrm{I}_2\otimes\mathsf{M}_2(a)\bigr)S^{-1},\qquad
+R_b=S\bigl(\mathsf{M}_2(b)^{\mathsf T}\otimes\mathrm{I}_2\bigr)S^{-1},
+$$</p>
+<p>and therefore</p>
+<p>$$
+\boxed{\;T_{a,b}=S\bigl(\mathsf{M}_2(b)^{\mathsf T}\otimes\mathsf{M}_2(a)\bigr)S^{-1}\;}
+$$</p>
+<p>for all $a,b$. In particular, for the basis,</p>
+<p>$$
+T_{\mu\nu}=S\bigl(\mathsf{M}_2(e_\nu)^{\mathsf T}\otimes\mathsf{M}_2(e_\mu)\bigr)S^{-1},
+\qquad \mathsf{M}_2(e_t)=\mathrm{I}_2,\quad \mathsf{M}_2(e_k)=-i\sigma_k .
+$$</p>
+<p>The two Kronecker factors are $2\times2$, not $4\times4$; the result is $4\times4$. The order is fixed: the right parameter $b$ goes in the first factor, transposed, and the left parameter $a$ in the second.</p>
+<p><strong>In the Peirce basis the sixteen remain monomial.</strong> The Peirce change sends $T_{\mu\nu}$ to a monomial matrix with entries in $\{1,-1,i,-i\}$; it does not send it to a matrix unit. The matrix units are the sixteen products $L_{P_i}R_{P_j}$ of the four Peirce elements $P_i$, not the sixteen $T_{\mu\nu}$. The coefficient basis is adapted to the tensor basis; the Peirce basis is adapted to the chiral blocks.</p>
+<p><strong>Another basis conjugates the sixteen.</strong> A change of basis $U$ of $\mathbb{B}$ replaces each $T_{\mu\nu}$ by $U\,T_{\mu\nu}\,U^{-1}$. The sixteen matrices change, the algebra they span does not. The coefficient basis is the one in which they are signed permutations; the Peirce basis is the one in which the left factor is block diagonal.</p>
+<h2 id="the-sandwich-inside-the-sixteen">The Sandwich Inside the Sixteen</h2>
+<p>The <strong>bilinear sandwich</strong> is the member of the family whose two parameters are tied:</p>
+<p>$$
+\Theta_Q=T_{Q,Q^{*}} .
+$$</p>
+<p>It is not a generic two-sided operator. The second slot is $Q^{*}$, not an independent $b$; the sandwich has one complex parameter, and it is quadratic in it,
+$$
+\Theta_{\lambda Q}=\lvert\lambda\rvert^{2}\Theta_Q .
+$$</p>
+<p><strong>The family and the algebra.</strong> The sixteen-dimensional algebra is the span of $\{T_{a,b}\}$ by linear combination. The family itself is the set of <strong>decomposable tensors</strong> $a\otimes b^{\mathrm{opp}}$: an affine cone of complex dimension seven, the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3\subset\mathbb{P}^{15}$. The sandwich is the graph $b=Q^{*}$ inside it: a real cone of dimension seven, because the phase of $Q$ cancels,
+$$
+(e^{i\theta}Q)\,x\,(e^{-i\theta}Q)^{*}=Q\,x\,Q^{*}.
+$$</p>
+<p><strong>Two values.</strong> $Q=e_t$ gives $\Theta_{e_t}=\mathrm{I}_4$. $Q=\vec e_y$ gives $Q^{*}=-\vec e_y$ and
+$$
+\Theta_{\vec e_y}=T_{\vec e_y,-\vec e_y}=-T_{yy}=\operatorname{diag}(1,-1,1,-1).
+$$</p>
+<p><strong>Why the gamma matrices are not sandwiches.</strong> The Dirac generators are five single two-sided operators, not sandwiches:
+$$
+\gamma^0=T_{e_t,\,i\vec e_x},\qquad
+\gamma^k=T_{i\vec e_k,\,\vec e_y},\qquad
+\gamma_5=T_{e_t,\,-i\vec e_z}.
+$$
+Their second slot is free; the sandwiches have $b=Q^{*}$. The gammas do not preserve the Hermitian sector, while every sandwich does. They are four of the sixteen basis operators up to the scalar $i$, and $\gamma_5$ is a fifth; their products give the rest.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p>Take
+$$
+a=(2+i)e_t+(1-i)\vec e_x+3\vec e_y+i\vec e_z,\qquad b=\vec e_x .
+$$
+Then $T_{a,b}=L_aR_x$. In the basis,
+$$
+T_{a,b}=(2+i)T_{tx}+(1-i)T_{xx}+3T_{yx}+iT_{zx},
+$$
+and the four matrices are read off the display above. The sum is
+$$
+T_{a,b}=
+\begin{pmatrix}
+-1+i&-2-i&i&-3\\
+2+i&-1+i&-3&-i\\
+i&-3&1-i&2+i\\
+-3&-i&-2-i&1-i
+\end{pmatrix}.
+$$
+The first column is $a\,e_t\,e_x=a\,e_x$; the other columns are the same product on the other basis elements. The matrix is not monomial: a sum of basis elements is a general matrix.</p>
+<h2 id="summary">Summary</h2>
+<p>The two-sided operators on $\mathbb{B}$ form the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, whose matrix representation in the coefficient basis is $M_4(\mathbb{C})$. The sixteen matrices $T_{\mu\nu}=L_\mu R_\nu$ are a basis. They are built from the four left matrices of the $M_4(\mathbb{C})_L$ model and the four right matrices $R_b=D L_{b^{\natural}}D$, by ordinary matrix multiplication. They are signed permutation matrices of determinant $1$, orthogonal for the Hilbert–Schmidt form, closed under multiplication up to sign, and their span contains singular matrices. The correct tensor product is at the algebra level, or equivalently at the $M_2$ level through the change $S$; the Kronecker product of two $4\times4$ matrices is not the construction. The bilinear sandwich is one member of the family, with the second parameter tied to the first; the Dirac gammas are five members with free second parameters.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, complex dimension $4$</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis</td>
+</tr>
+<tr>
+<td>$L_a=\mathsf{M}_4(a)$</td>
+<td>left multiplication, the $M_4(\mathbb{C})_L$ matrix</td>
+</tr>
+<tr>
+<td>$R_b$</td>
+<td>right multiplication, $x\mapsto xb$</td>
+</tr>
+<tr>
+<td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>quaternion conjugation on coefficients</td>
+</tr>
+<tr>
+<td>$T_{a,b}=L_aR_b$</td>
+<td>the two-sided operator $x\mapsto axb$</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}=L_\mu R_\nu$</td>
+<td>the sixteen basis matrices</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>the Peirce change of the model article, $\det S=-\tfrac14$</td>
+</tr>
+<tr>
+<td>$\Theta_Q=T_{Q,Q^{*}}$</td>
+<td>the bilinear sandwich</td>
+</tr>
+<tr>
+<td>$N(a)=a_t^2+a_x^2+a_y^2+a_z^2$</td>
+<td>the quaternionic norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</a>, for the left matrices and the model</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the abstract algebra and the theorem that it is the endomorphism algebra</li>
+<li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the family, its composition, its adjoint and its type criteria</li>
+<li><a href="one-sided-operators-on-the-biquaternion-algebra.html">One-Sided Operators on the Biquaternion Algebra</a>, for the two regular families</li>
+<li><a href="the-sandwich-in-the-m4c-l-model.html">$M_4(\mathbb{C})_L$ Model : The Sandwich</a>, for the congruence $MXM^{\dagger}$</li>
+<li><a href="m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$</li>
+<li><a href="m2c-model-the-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</a>, for the $2\times2$ model and the Kronecker factors</li>
+<li><a href="../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html">The Dirac Algebra and Biquaternions: A Dictionary</a>, for the gamma matrices as operators</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
