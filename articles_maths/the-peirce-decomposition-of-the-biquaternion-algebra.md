@@ -2,177 +2,207 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has complex dimension four. A root of one, an element $\tilde\Xi$ with
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has complex dimension four. A complete orthogonal family of two nonzero idempotents, an element pair $\tilde\Pi_{+},\tilde\Pi_{-}$ with
+
 $$
-\tilde\Xi^{2}=e_{t},\qquad \tilde\Xi\ne\pm e_{t},
+\tilde\Pi_{\pm}^{2}=\tilde\Pi_{\pm},\qquad
+\tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=0,\qquad
+\tilde\Pi_{+}+\tilde\Pi_{-}=e_{t},
 $$
-produces the two idempotents
-$$
-\tilde\Pi_{\pm}=\frac{e_{t}\pm\tilde\Xi}{2},
-$$
-and the two idempotents cut $\mathbb{B}$ into four complex lines
+
+cuts $\mathbb{B}$ into four complex lines
+
 $$
 \mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t},\qquad s,t\in\{+,-\}.
 $$
-The root is the only input. No family of idempotents is preferred, and no element of a mixed line is chosen.
 
-The article defines the family and the four lines, proves that each line is one-dimensional and that the lines sum directly, computes their multiplication rule, reads the two indices that the root assigns to each line, and identifies the grading. The choice of an element in each line is the subject of *The Peirce Basis of the Biquaternion Algebra*; it needs more than the root. An example is given at the end.
+The family is the only input. The signs are labels of the pair. No element of a mixed line is chosen, and no basis is chosen.
 
-## The Root and the Family
+The article defines the family and the four lines, proves that each line is one-dimensional and that the lines sum directly, computes their multiplication rule, reads the two indices that the family assigns to each line, identifies the two mixed components, records the parity of the cut, and says what the cut does not give. The choice of an element in each line and its gauge are *The Peirce Basis of the Biquaternion Algebra*; the coordinates and the spinors are *Spinors as Peirce Coordinates in the Biquaternion Algebra*. An example is given at the end.
 
-**Definition.** A family $\tilde\Pi_{+},\tilde\Pi_{-}$ is complete, orthogonal and idempotent when
+## The Family
+
+**Definition.** A family $\tilde\Pi_{+},\tilde\Pi_{-}$ is **complete, orthogonal and idempotent** when
+
 $$
 \tilde\Pi_{\pm}^{2}=\tilde\Pi_{\pm},\qquad
 \tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=0,\qquad
 \tilde\Pi_{+}+\tilde\Pi_{-}=e_{t}.
 $$
-It is nondegenerate when $\tilde\Pi_{\pm}\ne0$.
 
-**The root.** For a nondegenerate family put
-$$
-\tilde\Xi=\tilde\Pi_{+}-\tilde\Pi_{-}.
-$$
-Then $\tilde\Xi^{2}=e_{t}$, $\tilde\Xi\ne\pm e_{t}$, and the family is recovered by $\tilde\Pi_{\pm}=(e_{t}\pm\tilde\Xi)/2$. Conversely, every root with $\tilde\Xi\ne\pm e_{t}$ gives a nondegenerate family by these formulas.
+It is **nondegenerate** when $\tilde\Pi_{\pm}\ne0$. The signs $+$ and $-$ are the two labels of the pair; exchanging them exchanges the two indices everywhere and leaves the unordered family unchanged.
 
-**The roots.** Write $\tilde\Xi=a e_{t}+\vec v$ with $a\in\mathbb{C}$ and $\vec v$ a complex vector. Then
-$$
-\tilde\Xi^{2}=(a^{2}-\vec v\cdot\vec v)e_{t}+2a\vec v,
-$$
-so $\tilde\Xi^{2}=e_{t}$ is equivalent to $a^{2}-\vec v\cdot\vec v=1$ and $a\vec v=0$. If $\vec v=0$ then $a=\pm1$, the trivial roots. Otherwise $a=0$ and $\vec v\cdot\vec v=-1$. Writing $\vec v=i\vec u$ gives
-$$
-\tilde\Xi=i\vec u,\qquad \vec u\cdot\vec u=1.
-$$
-The vector $\vec u$ has three complex components subject to one complex equation, hence four real parameters. The two roots $\pm\tilde\Xi$ give the same family with the two idempotents interchanged.
+**The family is not canonical.** The algebra carries no preferred family. Different families give different cuts of the same algebra.
 
-## The Four Lines
+## From One Idempotent to Its Complement
 
-**Definition.** For $s,t\in\{+,-\}$ the Peirce line is $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$.
+**Proposition.** Let $\tilde\Pi\in\mathbb{B}$ be an idempotent with $\tilde\Pi\ne0$ and $\tilde\Pi\ne e_{t}$. Put $\tilde\Pi'=e_{t}-\tilde\Pi$. Then $\tilde\Pi'$ is idempotent, nonzero, orthogonal to $\tilde\Pi$, and $\tilde\Pi+\tilde\Pi'=e_{t}$. Conversely every nondegenerate complete family of two idempotents is obtained in this way from either of its members.
 
-**Theorem.** Let $\tilde\Xi=i\vec u$ be a root with $\vec u\cdot\vec u=1$. Then each $\mathbb{B}_{st}$ is a complex line, and
+**Proof.** $(\tilde\Pi')^{2}=e_{t}-2\tilde\Pi+\tilde\Pi^{2}=e_{t}-\tilde\Pi=\tilde\Pi'$, and $\tilde\Pi\tilde\Pi'=\tilde\Pi-\tilde\Pi^{2}=0=\tilde\Pi'\tilde\Pi$. The member $\tilde\Pi'$ is nonzero because $\tilde\Pi\ne e_{t}$, and $\tilde\Pi$ is nonzero by hypothesis. The converse is the computation $e_{t}-\tilde\Pi_{+}=\tilde\Pi_{-}$ and $e_{t}-\tilde\Pi_{-}=\tilde\Pi_{+}$.
+
+The proposition says that the family is the same data as a nontrivial idempotent, together with the choice of which member carries the label $+$. The Peirce corners of the pair are
+
+$$
+\mathbb{B}_{++}=\tilde\Pi\mathbb{B}\tilde\Pi,\qquad
+\mathbb{B}_{+-}=\tilde\Pi\mathbb{B}\tilde\Pi',\qquad
+\mathbb{B}_{-+}=\tilde\Pi'\mathbb{B}\tilde\Pi,\qquad
+\mathbb{B}_{--}=\tilde\Pi'\mathbb{B}\tilde\Pi'.
+$$
+
+## The Peirce Decompositions
+
+**Definition.** For $s,t\in\{+,-\}$ the **Peirce line** is $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$.
+
+**Lemma.** Let $A$ be a simple unital algebra, and let $e,f\in A$ be nonzero idempotents. Then $eAf\ne0$.
+
+**Proof.** Suppose $eAf=0$. Then $e(AfA)=0$. The set $AfA$ is stable under multiplication on the left and on the right by $A$ and contains $f=f^{2}$, hence it is nonzero; by simplicity $AfA=A$. So $eA=0$, and then $e=e^{2}=0$, against the hypothesis.
+
+**Theorem.** Each $\mathbb{B}_{st}$ is a complex line, and
+
 $$
 \mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--}.
 $$
 
 **Proof.** The sum is direct: if $\sum_{s,t}Q_{st}=0$ with $Q_{st}\in\mathbb{B}_{st}$, then multiplying on the left by $\tilde\Pi_{s}$ and on the right by $\tilde\Pi_{t}$ gives $Q_{st}=0$. It is all of $\mathbb{B}$ because
+
 $$
 \tilde Q=(\tilde\Pi_{+}+\tilde\Pi_{-})\tilde Q(\tilde\Pi_{+}+\tilde\Pi_{-})
 =\sum_{s,t}\tilde\Pi_{s}\tilde Q\tilde\Pi_{t}
 $$
-for every $\tilde Q\in\mathbb{B}$. It remains to compute a corner.
 
-Let $\tilde Q\in\mathbb{B}_{st}$, so that
+for every $\tilde Q\in\mathbb{B}$. Each corner is nonzero: the diagonal corner contains $\tilde\Pi_{s}$, and the mixed corners are nonzero by the lemma, since $\mathbb{B}$ is simple (*The Biquaternion Algebra*). The algebra has complex dimension four, the sum is direct, and it has four nonzero summands; hence each summand is one-dimensional.
+
+### The Biquaternion Case
+
+The four lines are the whole content of the cut. The diagonal lines are
+
 $$
-\tilde\Xi\tilde Q=s\tilde Q,\qquad \tilde Q\tilde\Xi=t\tilde Q.
-$$
-Write $\tilde Q=a e_{t}+\vec v$ with $a\in\mathbb{C}$ and $\vec v$ a complex vector, and decompose
-$$
-\vec v=\alpha\vec u+\vec w,\qquad \vec u\cdot\vec w=0.
-$$
-Since $\vec u^{2}=-e_{t}$ and $\vec u\cdot\vec u=1$, the map $T(\vec w)=\vec u\times\vec w$ satisfies $T^{2}=-\mathrm{id}$ on the plane $\vec u^{\perp}$. The two eigenvalue equations become, in the scalar, the $\vec u$ and the $\vec u^{\perp}$ parts,
-$$
--i\alpha=sa,\qquad ia=s\alpha,\qquad iT(\vec w)=s\vec w,
-$$
-$$
--i\alpha=ta,\qquad ia=t\alpha,\qquad -iT(\vec w)=t\vec w.
+\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{+},\qquad
+\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{-},
 $$
 
-If $s=t$, the last pair gives $\vec w=0$, and the first pair gives $a=-is\alpha$. Hence $\tilde Q$ is a multiple of $\tilde\Pi_{s}$.
+and the two mixed lines are nilpotent lines: every element of $\mathbb{B}_{+-}$ or of $\mathbb{B}_{-+}$ squares to zero. The idempotents $\tilde\Pi_{\pm}$ are primitive, because their corners are lines. The coarse split by the single idempotent $\tilde\Pi_{+}$ and the fine split by the pair have the same four corners.
 
-If $s=-t$, the scalar equations give $a=\alpha=0$, and $\vec w$ is an eigenvector of $T$ with eigenvalue $-is$. The eigenspaces of $T$ are one-dimensional, because $T^{2}=-\mathrm{id}$ on a two-dimensional space. Hence each corner is at most one-dimensional; the direct sum has dimension four, so each corner is exactly one-dimensional.
+**The family has four real parameters.** Under the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$, a nontrivial idempotent is a rank-one projection: its image is a line in $\mathbb{C}^{2}$ and its kernel is a complementary line. The image is a point of $\mathbb{P}^{1}$, of one complex parameter, and the kernel is a point of $\mathbb{P}^{1}$ different from the image, of one complex parameter. The family therefore has complex dimension two, that is real dimension four. The labels $+$ and $-$ are discrete and do not change the dimension.
 
 ## The Multiplication Rule
 
 **Theorem.** For $s,t,u,v\in\{+,-\}$,
+
 $$
 \mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}.
 $$
 
 **Proof.** For $\tilde Q,\tilde Q'\in\mathbb{B}$,
+
 $$
 (\tilde\Pi_{s}\tilde Q\tilde\Pi_{t})(\tilde\Pi_{u}\tilde Q'\tilde\Pi_{v})
 =\tilde\Pi_{s}\tilde Q(\tilde\Pi_{t}\tilde\Pi_{u})\tilde Q'\tilde\Pi_{v}
 =\delta_{tu}\,\tilde\Pi_{s}\tilde Q\tilde Q'\tilde\Pi_{v},
 $$
+
 which lies in $\mathbb{B}_{sv}$ when $t=u$ and is zero otherwise.
 
 The right index of the first factor must equal the left index of the second; the product runs from the left index of the first to the right index of the second. The mixed lines are square-zero, and the diagonal lines are the two idempotent lines.
 
 ## The Two Indices
 
-**Left and right multiplication by the root give the two indices, and their difference is the adjoint index.** For $\tilde Q\in\mathbb{B}_{st}$,
+**The left and right indices are the two idempotents that act as the identity.** For $\tilde Q\in\mathbb{B}_{st}$,
+
 $$
-\tilde\Xi\tilde Q=s\tilde Q,\qquad \tilde Q\tilde\Xi=t\tilde Q,\qquad
-[\tilde\Xi,\tilde Q]=(s-t)\tilde Q.
+\tilde\Pi_{s}\tilde Q=\tilde Q,\qquad \tilde Q\tilde\Pi_{t}=\tilde Q.
 $$
 
-| Corner | $L_{\tilde\Xi}$ | $R_{\tilde\Xi}$ | $\operatorname{ad}_{\tilde\Xi}$ |
-|---|---|---|---|
-| $\mathbb{B}_{++}$ | $+1$ | $+1$ | $0$ |
-| $\mathbb{B}_{+-}$ | $+1$ | $-1$ | $+2$ |
-| $\mathbb{B}_{-+}$ | $-1$ | $+1$ | $-2$ |
-| $\mathbb{B}_{--}$ | $-1$ | $-1$ | $0$ |
+Conversely, if both equations hold, then
 
-**The two spinor spaces.** The spaces
 $$
-S_{+}=\mathbb{B}\tilde\Pi_{+}=\mathbb{B}_{++}\oplus\mathbb{B}_{-+}
-=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{B}_{-+},\qquad
-S_{-}=\mathbb{B}\tilde\Pi_{-}=\mathbb{B}_{+-}\oplus\mathbb{B}_{--}
+\tilde Q=\tilde\Pi_{s}\tilde Q\tilde\Pi_{t}\in\mathbb{B}_{st}.
 $$
-are two-dimensional over $\mathbb{C}$. On each, the root acts by left multiplication with the two simple eigenvalues $+1$ and $-1$, one on the diagonal line and one on the mixed line. The diagonal line is fixed by the root and the mixed line is not. This is the whole spectral data of the root on the two spaces; what it means for the representation theory of the algebra is read elsewhere, at operator level.
 
-**The ladder without a choice of basis.** Left multiplication by any nonzero element of $\mathbb{B}_{+-}$ carries $\mathbb{B}_{-+}$ isomorphically onto $\mathbb{B}_{++}$ and annihilates $\mathbb{B}_{++}$; left multiplication by any nonzero element of $\mathbb{B}_{-+}$ carries $\mathbb{B}_{++}$ isomorphically onto $\mathbb{B}_{-+}$ and annihilates $\mathbb{B}_{+-}$. So the two mixed lines are the raising and lowering operators, up to scale. The scale is not fixed by the root; it is the gauge, treated in *The Peirce Basis of the Biquaternion Algebra*.
+| Corner | Left index | Right index |
+|---|---|---|
+| $\mathbb{B}_{++}$ | $\tilde\Pi_{+}$ | $\tilde\Pi_{+}$ |
+| $\mathbb{B}_{+-}$ | $\tilde\Pi_{+}$ | $\tilde\Pi_{-}$ |
+| $\mathbb{B}_{-+}$ | $\tilde\Pi_{-}$ | $\tilde\Pi_{+}$ |
+| $\mathbb{B}_{--}$ | $\tilde\Pi_{-}$ | $\tilde\Pi_{-}$ |
 
-## The Grading
+The diagonal lines have equal indices and the mixed lines have different indices. The two indices are the Peirce indices.
 
-**The diagonal lines form a subalgebra and the mixed lines form its bimodule: the decomposition is a $\mathbb{Z}/2$-grading.** Put
+## The Two Mixed Components
+
+**Proposition.** Let $u\in\mathbb{B}_{+-}$ be nonzero. Left multiplication by $u$ is an isomorphism from $\mathbb{B}_{-+}$ onto $\mathbb{B}_{++}$, maps $\mathbb{B}_{--}$ onto $\mathbb{B}_{+-}$, and kills $\mathbb{B}_{++}$ and $\mathbb{B}_{+-}$. Let $v\in\mathbb{B}_{-+}$ be nonzero. Left multiplication by $v$ is an isomorphism from $\mathbb{B}_{++}$ onto $\mathbb{B}_{-+}$, maps $\mathbb{B}_{+-}$ onto $\mathbb{B}_{--}$, and kills $\mathbb{B}_{-+}$ and $\mathbb{B}_{--}$.
+
+**Proof.** The corner rule gives $u\mathbb{B}_{-+}\subseteq\mathbb{B}_{++}$, $u\mathbb{B}_{++}=0$, $u\mathbb{B}_{--}\subseteq\mathbb{B}_{+-}$ with $u\tilde\Pi_{-}=u\ne0$, and $u\mathbb{B}_{+-}=0$. The product $\mathbb{B}_{+-}\mathbb{B}_{-+}$ is nonzero by the lemma of §*The Peirce Decompositions*, and $\mathbb{B}_{-+}$ is a line, so $u\mathbb{B}_{-+}\ne0$ for every nonzero $u$. A nonzero linear map between two lines is an isomorphism. The same argument with the signs exchanged gives the statement for $v$, and $v\tilde\Pi_{+}=v\ne0$ is the direct witness.
+
+The two isomorphisms are inverse up to the normalization of the pair. If $\vec\Upsilon_{+-}\in\mathbb{B}_{+-}$ and $\vec\Upsilon_{-+}\in\mathbb{B}_{-+}$ satisfy
+
+$$
+\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+},\qquad
+\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-},
+$$
+
+then left multiplication by $\vec\Upsilon_{-+}$ is the inverse of left multiplication by $\vec\Upsilon_{+-}$ on $\mathbb{B}_{-+}$, and the two maps are inverse isomorphisms between $\mathbb{B}_{-+}$ and $\mathbb{B}_{++}$. Without the normalization, the pair is defined only up to reciprocal scale, and that scale is the gauge treated in *The Peirce Basis of the Biquaternion Algebra*. No basis of either line is fixed by the family.
+
+## The Decomposition as a Grading
+
+**The diagonal lines form a subalgebra, and the mixed part is stable under it on both sides.** Put
+
 $$
 A_{0}=\mathbb{B}_{++}\oplus\mathbb{B}_{--},\qquad
 A_{1}=\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}.
 $$
+
 The product rule reads
+
 $$
 A_{0}A_{0}\subseteq A_{0},\qquad
 A_{0}A_{1}\subseteq A_{1},\qquad
 A_{1}A_{0}\subseteq A_{1},\qquad
 A_{1}A_{1}\subseteq A_{0}.
 $$
-Here $A_{0}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{C}\tilde\Pi_{-}$ is the commutative algebra $\mathbb{C}\times\mathbb{C}$ with unit $e_{t}$, and $A_{1}$ is the sum of the two mixed lines. The parity of a corner $\mathbb{B}_{st}$ is the product $st$, which is $+1$ on the diagonal and $-1$ on the mixed lines.
+
+Here $A_{0}=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{C}\tilde\Pi_{-}$ is the commutative algebra $\mathbb{C}\times\mathbb{C}$ with unit $e_{t}$, and $A_{1}$ is the sum of the two mixed lines. The parity of a corner $\mathbb{B}_{st}$ is the product $st$, which is $+1$ on the diagonal and $-1$ on the mixed lines. The parity is a consequence of the two-term family; it is not an extra input.
 
 ## What the Decomposition Does Not Give
 
-The root gives the four lines and their multiplication. It gives no element of a mixed line, no basis, no gauge and no spinor. The diagonal lines have vectors fixed by the root, the idempotents. The mixed lines do not: each is a complex line with its zero element removed, and the choice of a point in it is an extra datum. That datum, and the freedom that remains after it, are *The Peirce Basis of the Biquaternion Algebra*.
+The family gives the four lines and their multiplication. It gives no element of a mixed line, no basis, no gauge and no spinor. The diagonal lines have canonical vectors, the idempotents. The mixed lines do not: each is a complex line with its zero element removed, and the choice of a point in it is an extra datum. That datum, and the freedom that remains after it, are *The Peirce Basis of the Biquaternion Algebra*.
 
-## Example: The Root $i\vec e_{z}$
+## Example: The Standard Family
 
-This example is given at the end because it is one point in the four-real-parameter space of roots, not a preferred one.
+The standard family is
 
-For $\tilde\Xi=i\vec e_{z}$,
 $$
 \tilde\Pi_{+}=\frac{e_{t}+i\vec e_{z}}{2},\qquad
-\tilde\Pi_{-}=\frac{e_{t}-i\vec e_{z}}{2},
+\tilde\Pi_{-}=\frac{e_{t}-i\vec e_{z}}{2}.
 $$
-and the four lines are spanned by
+
+It is complete, orthogonal and idempotent: the two squares are the two idempotents, the product is zero, and the sum is $e_{t}$. The four lines are spanned by
+
 $$
 \tilde\Pi_{+},\qquad
 \vec\Upsilon_{1}=\frac{i\vec e_{x}-\vec e_{y}}{2},\qquad
 \vec\Upsilon_{2}=\frac{i\vec e_{x}+\vec e_{y}}{2},\qquad
 \tilde\Pi_{-},
 $$
+
 with $\vec\Upsilon_{1}\in\mathbb{B}_{+-}$ and $\vec\Upsilon_{2}\in\mathbb{B}_{-+}$. The products are
+
 $$
 \tilde\Pi_{+}\vec\Upsilon_{1}=\vec\Upsilon_{1}=\vec\Upsilon_{1}\tilde\Pi_{-},\qquad
 \tilde\Pi_{-}\vec\Upsilon_{2}=\vec\Upsilon_{2}=\vec\Upsilon_{2}\tilde\Pi_{+},
 $$
+
 $$
 \vec\Upsilon_{1}\vec\Upsilon_{2}=\tilde\Pi_{+},\qquad
 \vec\Upsilon_{2}\vec\Upsilon_{1}=\tilde\Pi_{-},\qquad
 \vec\Upsilon_{1}^{2}=\vec\Upsilon_{2}^{2}=0,
 $$
-and the other four products vanish. Left multiplication by $\tilde\Xi$ has eigenvalue $+1$ on $\tilde\Pi_{+}$ and $\vec\Upsilon_{1}$, and $-1$ on $\vec\Upsilon_{2}$ and $\tilde\Pi_{-}$.
+
+and the other four products vanish. The standard family is Hermitian; it is one family among the four-real-parameter family of nontrivial idempotents, not a preferred one.
 
 ## Summary
 
-A root $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$ gives the idempotents $\tilde\Pi_{\pm}=(e_{t}\pm\tilde\Xi)/2$ and four complex lines $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$, each of dimension one, with the product rule $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$. The root has four real parameters; the family is the root modulo sign. The diagonal lines are fixed by the root and the mixed lines are nonzero and not fixed. On each spinor space $S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$ the operator $L_{\tilde\Xi}$ has the simple eigenvalues $+1$ and $-1$; on the traceless part $\operatorname{ad}_{\tilde\Xi}$ has the eigenvalues $+2,0,-2$. The four lines are a $\mathbb{Z}/2$-grading. The root fixes the lines but no element inside a mixed line.
+A nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ of two idempotents gives the four complex lines $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$, each of dimension one, with the product rule $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$. The diagonal lines are spanned by the idempotents and the mixed lines are nilpotent lines. The left and right Peirce indices are the two idempotents acting as the identity, and the mixed lines have different indices. The diagonal part is the subalgebra $\mathbb{C}\times\mathbb{C}$ and the two mixed lines are stable under multiplication by it on both sides; the cut carries a parity. The family has four real parameters and is not canonical. It fixes the four lines but no element inside a mixed line, no basis and no gauge.
 
 ## Summary of Notation
 
@@ -180,15 +210,17 @@ A root $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$ gives the idempotents $\ti
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra |
 | $e_{t},\vec e_{x},\vec e_{y},\vec e_{z}$ | The quaternion units |
-| $\tilde\Xi=i\vec u$ | A root of $1$, $\vec u\cdot\vec u=1$ |
-| $\tilde\Pi_{\pm}=\tfrac12(e_{t}\pm\tilde\Xi)$ | The two idempotents |
+| $\tilde\Pi_{\pm}$ | The two idempotents of the family |
 | $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$ | A Peirce line |
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | Nonzero elements of the mixed lines |
+| $A_{0},A_{1}$ | The diagonal and mixed parts |
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the units, the product table and the centre.
-- [Idempotents](idempotents.html), for the roots and the idempotents.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the units, the product table, the centre and simplicity.
+- [Idempotents](idempotents.html), for the classification of the idempotents and the standard pair.
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the choice of an element in each line and the gauge.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the elements of the two spinor spaces.
-- [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general case.
+- [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general family.
+- [Complementary Idempotents and the Peirce Decomposition](complementary-idempotents-and-the-peirce-decomposition.html), for the complement and the general corner rule.
+- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix form of the cut.

@@ -39,7 +39,7 @@ The rewrite uses the operations of §*The Gamma Matrices as Biquaternion Operati
 | article | Clifford use | the rewrite |
 |---|---|---|
 | [The Dirac Equation](../articles_physics/the-dirac-equation-in-biquaternionic-form.html) | $\gamma^0,\gamma^5$, 3 matrix blocks | Already has the $\mathbb{B}$-only form; the matrix block stays as a translation. |
-| [Exercise: Plane-Wave Solutions](../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html) | $\gamma^0,\gamma^5$, 1 matrix block | The spinors are biquaternion columns; the plane-wave algebra is unchanged. |
+| [Exercise: Plane-Wave Solutions](../articles_physics/exercise-plane-wave-solutions-of-the-biquaternion-dirac-equation.html) | $\gamma^0,\gamma^5$, the full matrices | The matrices are displayed once, then translated: $\gamma^0=R_{i\vec e_x}$, $\gamma^k=L_{i\vec e_k}R_{\vec e_y}$, $\gamma_5=R_{-i\vec e_z}$. The spinor is one biquaternion. |
 | [Solutions and the Non-Relativistic Limit](../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html) | $\gamma^0,\gamma^5$, 1 matrix block | Same, plus the Pauli limit. |
 | [Exercise: The Non-Relativistic Limit and the Pauli Equation](../articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html) | $\gamma^0$, 1 matrix block | The Pauli matrices are the quaternion units; substitution. |
 | [Klein–Gordon from the Dirac Square](../articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.html) | $\gamma^\mu$, 5 matrix blocks | The square of the biquaternion operator; the identity is the check. |
@@ -50,7 +50,7 @@ The rewrite uses the operations of §*The Gamma Matrices as Biquaternion Operati
 | [The Quantized Dirac Field](../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html) | $\gamma^0$ | The mode expansion; the modes are biquaternion spinors. |
 | [Exercise: Chirality and the Weyl Spinors](../articles_physics/exercise-chirality-and-the-weyl-spinors.html) | $\gamma^0,\gamma^\mu,\gamma^5$, 1 matrix block | The projectors are $R_{(e_t\pm i\vec e_z)/2}$. |
 
-Why these are easy: the equation, the plane waves, the non-relativistic limit and the energy split are statements about the biquaternion field and its products. The gamma matrices enter as the operator; replacing them by $\varkappa$ and $\varkappa L_{-i\vec e_k}$ changes no solution and no number. The one care point is the external $i$ of the chiral projector, which is not the biquaternion $i$.
+Why these are easy: the equation, the plane waves, the non-relativistic limit and the energy split are statements about the biquaternion field and its products. The gamma matrices enter as the operator; replacing them by the complex-linear dictionary $\gamma^0=R_{i\vec e_x}$, $\gamma^k=L_{i\vec e_k}R_{\vec e_y}$, $\gamma_5=R_{-i\vec e_z}$ on the four-dimensional carrier changes no solution and no number. The real form $\varkappa$, $\varkappa L_{-i\vec e_k}$ is the same Clifford algebra when chirality is not needed. The one care point is the external $i$ of the chiral projector, which is not the biquaternion $i$.
 
 #### A2. The field, its currents and its bilinears (7)
 
@@ -530,6 +530,16 @@ $$
 and the sixteen products $\mathrm{id}$, $\Gamma^\mu$, $\Gamma^\mu\Gamma^\nu$, $\Gamma^\mu\Gamma^\nu\Gamma^\rho$, $\Gamma^0\Gamma^1\Gamma^2\Gamma^3$ are linearly independent. The carrier is $\mathbb{B}$ (eight real), the even operators are $L(\mathbb{B})$, the odd operators are $\varkappa L(\mathbb{B})$, and no symbol is added. The star is part of the biquaternion structure, not an extra import: it is the coefficient conjugation that distinguishes $\mathbb{B}=\mathbb{C}\otimes\mathbb{H}$ from $\mathbb{H}$. The identification of this left-regular model with the physical Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ is the real-linear Daviau dictionary of §*The Bimodule Reading*, not the identity; the model is isomorphic to $\Delta$ as a $\mathrm{Cl}$-module, but the isomorphism is not $\mathbb{B}$-linear.
 
 This was checked on the eight-real basis: the relations hold and the sixteen products have rank sixteen. The symbol $\varkappa$ is the coefficient conjugation; it is not the corpus's $J=L_{-i}$, the complex structure.
+
+**Which complex structure, and which completion.** The $i_{\mathrm{ext}}$ of the table cannot be the coefficient $i$. With $\omega=L_i$ one has $i\omega=-1$, so that frame has no chirality. The chirality $R_{i\vec e_z}$ is $J\omega$ for the complex structure $J=R_{\vec e_z}$, which commutes with the generators and satisfies $J^2=-1$; the corpus's $J=L_{-i}$ equals $-\omega$, so $J\omega=1$, while $i\omega=-1$. The choice of $J$ is a choice of a real unit vector, $J=R_u$ with $u^2=-1$.
+
+A dictionary that is complex-linear in the coefficient $i$ uses a right multiplication for the fourth generator instead. On $\mathbb{B}$ with the spin index on the rows and the chirality index on the columns,
+$$
+\gamma^0=R_{i\vec e_x},\qquad \gamma^k=L_{i\vec e_k}R_{\vec e_y},\qquad \gamma_5=R_{-i\vec e_z},
+$$
+where $\vec e_y$ is the chirality-space epsilon: on the chirality index, $R_{\vec e_y}$ is $i\sigma_y$. There the volume element is $\omega=L_iR_{i\vec e_z}$, not $L_i$, and $i\omega=\gamma_5$. The two frames are isomorphic as real Clifford modules and differ in which structure is manifest: the frame above makes the real algebra and the odd sector manifest, this one the complex Dirac equation and its chiral projectors.
+
+The carrier of this dictionary is the enveloping algebra, not one regular image. $L(\mathbb{B})$ and $R(\mathbb{B})$ have complex dimension four each and meet in the scalars, since $L_{e_t}=R_{e_t}=1$, so their sum is seven-dimensional. Their products span $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$, of complex dimension sixteen (real dimension thirty-two): on the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are the sixteen matrix units. This is why the gammas are $4\times4$, and why neither regular image alone can hold them. The corpus's $M_4(\mathbb{C})_L$ tables are the left factor; in the Peirce basis that image is $\mathrm{diag}(\mathsf M_2(b),\mathsf M_2(b))$, block diagonal, so it preserves the two chiral planes. The gammas exchange the planes and therefore lie outside it.
 
 **The double is the same algebra, written as a direct sum.** $\mathbb{B}\oplus\mathbb{B}\gamma$ is convenient when an article needs the odd sector as an *element*: the supercharge, the graded algebra, a Dirac operator written as one object. It makes the grading manifest. It is not needed for the physics: every odd operator is $\varkappa L_b$, and every product of two odd operators is
 $$

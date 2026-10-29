@@ -12,6 +12,8 @@ Throughout, the element $\tilde Q_1 = Q_{1t} + \vec Q_1$ separates the complex s
 
 **The code.** A product carries a three-letter code. The first letter is $\mathrm G$ for the general product, $\mathrm S$ for its symmetric part and $\mathrm A$ for its antisymmetric part. The second is $\mathrm P$ for the plain product and $\mathrm Q$ for the quaternionic one. The third is $\mathrm A$ for the $\mathbb{C}$-bilinear class and $\mathrm S$ for the sesquilinear class over $(\mathbb{C},\bar{\cdot})$. The twelve codes are $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$, $\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$, $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$ and $\mathrm{AQS}$.
 
+**The names and the codes.** The four general products are the general plain bilinear product $\mathrm{GPA}$, the general quaternionic bilinear product $\mathrm{GQA}$, the general plain sesquilinear product $\mathrm{GPS}$ and the general quaternionic sesquilinear product $\mathrm{GQS}$. The symmetric parts of the four are the symmetric plain bilinear product $\mathrm{SPA}$, the symmetric quaternionic bilinear product $\mathrm{SQA}$, the symmetric plain sesquilinear product $\mathrm{SPS}$ and the symmetric quaternionic sesquilinear product $\mathrm{SQS}$. The antisymmetric parts of the four are the antisymmetric plain bilinear product $\mathrm{APA}$, the antisymmetric quaternionic bilinear product $\mathrm{AQA}$, the antisymmetric plain sesquilinear product $\mathrm{APS}$ and the antisymmetric quaternionic sesquilinear product $\mathrm{AQS}$.
+
 ---
 
 ## The Method of the Decomposition
@@ -53,33 +55,33 @@ Each product is read with its two parts. The four general products come first, t
 
 Throughout the reading, $f$ is the product being read and $s$ and $a$ are its symmetric and its antisymmetric part, defined as in §*The Method of the Decomposition*: the plain interchange of the two arguments in the two $\mathbb{C}$-bilinear families and the conjugate transpose in the two sesquilinear ones.
 
-### The General Plain Bilinear Product
+### The General Plain Bilinear Product (GPA)
 
 $$
 \tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2.
 $$
 
-The general plain bilinear product, the multiplication of the two elements as they stand: scalar part $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ and vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$. It is $\mathbb{C}$-bilinear, **associative**, and $e_t$ is a unit on both sides. It is the only associative product of the twelve.
+The general plain bilinear product, $\mathrm{GPA}$, is the multiplication of the two elements as they stand: scalar part $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ and vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$. It is $\mathbb{C}$-bilinear, **associative**, and $e_t$ is a unit on both sides. It is the only associative product of the twelve.
 
 Its values fill the whole space $\mathbb{B}$.
 
-### The General Quaternionic Bilinear Product
+### The General Quaternionic Bilinear Product (GQA)
 
 $$
 \tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
 $$
 
-The general quaternionic bilinear product, the general plain bilinear product with the first factor read through ${}^{\natural}$. It is $\mathbb{C}$-bilinear, **not associative**, and $e_t$ is a unit on the **left** only. Its exchange is the natural conjugation of its value, $\tilde Q_2^{\natural}\tilde Q_1=(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}$.
+The general quaternionic bilinear product, $\mathrm{GQA}$, is the general plain bilinear product with the first factor read through ${}^{\natural}$. It is $\mathbb{C}$-bilinear, **not associative**, and $e_t$ is a unit on the **left** only. Its exchange is the natural conjugation of its value, $\tilde Q_2^{\natural}\tilde Q_1=(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}$.
 
 Its values fill the whole space $\mathbb{B}$.
 
-### The General Plain Sesquilinear Product
+### The General Plain Sesquilinear Product (GPS)
 
 $$
 \tilde Q_1\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
 $$
 
-The general plain sesquilinear product, the second factor read through the Hermitian conjugation ${}^{*}$. Both products of the pair are the natural conjugates of the two orders of one underlying product,
+The general plain sesquilinear product, $\mathrm{GPS}$, reads the second factor through the Hermitian conjugation ${}^{*}$. Both products of the pair are the natural conjugates of the two orders of one underlying product,
 $$
 \tilde Q_1\tilde Q_2^{*}=\bigl(\overline{\tilde Q}_2\tilde Q_1^{\natural}\bigr)^{\natural},\qquad
 \tilde Q_2\tilde Q_1^{*}=\bigl(\overline{\tilde Q}_1\tilde Q_2^{\natural}\bigr)^{\natural}.
@@ -88,13 +90,13 @@ It is sesquilinear over $(\mathbb{C},\bar{\cdot})$, $\mathbb{C}$-linear in the f
 
 Its values fill the whole space $\mathbb{B}$.
 
-### The General Quaternionic Sesquilinear Product
+### The General Quaternionic Sesquilinear Product (GQS)
 
 $$
 \tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}.
 $$
 
-The general quaternionic sesquilinear product, both slots read through a conjugation. Both products of the pair are the natural conjugates of the two orders of one underlying product,
+The general quaternionic sesquilinear product, $\mathrm{GQS}$, reads both slots through a conjugation. Both products of the pair are the natural conjugates of the two orders of one underlying product,
 $$
 \tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl(\overline{\tilde Q}_2\tilde Q_1\bigr)^{\natural},\qquad
 \tilde Q_2^{\natural}\tilde Q_1^{*}=\bigl(\overline{\tilde Q}_1\tilde Q_2\bigr)^{\natural}.
@@ -103,9 +105,9 @@ It is sesquilinear over $(\mathbb{C},\bar{\cdot})$, **not associative**, and it 
 
 Its values fill the whole space $\mathbb{B}$.
 
-### The Symmetric Plain Bilinear Product
+### The Symmetric Plain Bilinear Product (SPA)
 
-The symmetric part of the general plain bilinear product above.
+The symmetric plain bilinear product, $\mathrm{SPA}$, is the symmetric part of the general plain bilinear product above.
 
 $$
 \tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1.
@@ -113,9 +115,9 @@ $$
 
 The Jordan product $\tilde Q_1\bullet\tilde Q_2$, the general plain bilinear product with the cross term dropped. It is commutative, $e_t$ is a unit on both sides, and it satisfies the **Jordan identity**; it is the only one of the four symmetric parts that does, and it is the only part of the eight that has a unit at all. The identity is not put to the four general products, which are neither symmetrisations nor antisymmetrisations; the counts over the parts are in §*The Counts of the Failures*.
 
-### The Symmetric Quaternionic Bilinear Product
+### The Symmetric Quaternionic Bilinear Product (SQA)
 
-The symmetric part of the general quaternionic bilinear product above.
+The symmetric quaternionic bilinear product, $\mathrm{SQA}$, is the symmetric part of the general quaternionic bilinear product above.
 
 $$
 \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr].
@@ -123,9 +125,9 @@ $$
 
 The quaternion form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ of *The Four General Products and Their Relations over the Biquaternion Algebra* read as a product; its scalar part is $\langle\cdot\rangle$ and its vector part is zero. It is commutative, its values lie in the centre $\mathbb{C}_{\mathbb{B}}$ — it compares two elements and returns a multiple of $e_t$ — and it has no unit. It is **not** a Jordan product.
 
-### The Symmetric Plain Sesquilinear Product
+### The Symmetric Plain Sesquilinear Product (SPS)
 
-The symmetric part of the general plain sesquilinear product above, under the conjugate transpose.
+The symmetric plain sesquilinear product, $\mathrm{SPS}$, is the symmetric part of the general plain sesquilinear product above, under the conjugate transpose.
 
 $$
 \boxed{\;
@@ -138,9 +140,9 @@ $$
 
 The value $\tilde Q_1\tilde Q_2^{*}$ has scalar part $H=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ and vector part $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$; the conjugate transpose sends the value to its conjugate with the vector part negated, $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$, so the half-sum keeps the scalar part and cancels the vector part. The operation is the **Hermitian form** $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* read as a product, and it is **central**: its values lie in the centre $\mathbb{C}_{\mathbb{B}}$. It is **conjugate-commutative**, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, rather than commutative, and it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, conjugate-linear in the second argument. Its algebraic norm is the square read through the form, $s(\tilde Q_2,\tilde Q_2)=\langle\tilde Q_2,\tilde Q_2\rangle_{*}=|Q_{2t}|^{2}+(\vec Q_2,\overline{\vec Q_2})$, which is real and strictly positive off the origin. Being central-valued it has no unit, and it **fails** the Jordan identity on the whole space, with witness $x=y=\vec e_x$, where the two sides are $0$ and $e_t$.
 
-### The Symmetric Quaternionic Sesquilinear Product
+### The Symmetric Quaternionic Sesquilinear Product (SQS)
 
-The symmetric part of the general quaternionic sesquilinear product above, under the conjugate transpose.
+The symmetric quaternionic sesquilinear product, $\mathrm{SQS}$, is the symmetric part of the general quaternionic sesquilinear product above, under the conjugate transpose.
 
 $$
 \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}\bigr)
@@ -150,9 +152,9 @@ $$
 
 since $\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}=\tilde Q_2^{*}\tilde Q_1^{\natural}$. The value $\tilde Q_1^{\natural}\tilde Q_2^{*}$ has scalar part $K=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ and vector part $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$; the conjugate transpose is not the conjugation of the value here — the two cross products cancel between the two orders instead of adding — so the half-sum keeps the scalar part and the mixed term and cancels the cross product. Its scalar part is the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and its vector part is $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$, so its values lie in **no** subspace of the remarkable subspaces. It is **conjugate-commutative**, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, and it **fails** the Jordan identity, with witness $x=y=\vec e_x$ where the two sides are $-e_t$ and $e_t$. Its algebraic norm is not central in general: at $\tilde Q_2=e_t+\vec e_x$ it is $-2\vec e_x$, while the real vector directions, among them $\vec e_x$, carry central algebraic norms.
 
-### The Antisymmetric Plain Bilinear Product
+### The Antisymmetric Plain Bilinear Product (APA)
 
-The antisymmetric part of the general plain bilinear product above.
+The antisymmetric plain bilinear product, $\mathrm{APA}$, is the antisymmetric part of the general plain bilinear product above.
 
 $$
 \tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2.
@@ -160,9 +162,9 @@ $$
 
 The outer product $\tilde Q_1\wedge\tilde Q_2$, the cross product of the two vector parts alone: scalar part zero, vector part $\vec Q_1\times\vec Q_2$. It is alternating, its values lie in the vector subspace $\mathrm{Vect}(\mathbb{B})$, and it satisfies the **Jacobi identity**; it is the only one of the twelve that does. It is half the commutator of the general plain bilinear product, $[\tilde Q_1,\tilde Q_2]=\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1$.
 
-### The Antisymmetric Quaternionic Bilinear Product
+### The Antisymmetric Quaternionic Bilinear Product (AQA)
 
-The antisymmetric part of the general quaternionic bilinear product above.
+The antisymmetric quaternionic bilinear product, $\mathrm{AQA}$, is the antisymmetric part of the general quaternionic bilinear product above.
 
 $$
 \tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
@@ -170,9 +172,9 @@ $$
 
 The quaternionic product with its scalar part removed: scalar part zero, vector part the mixed term with the cross term subtracted. It is alternating, its values lie in the vector subspace, and it **fails** the Jacobi identity, with witness $(e_t,\vec e_x,\vec e_y)$ where the cyclic sum is $-\vec e_z\neq0$. It is half the commutator $[\tilde Q_1,\tilde Q_2]_{\natural}=\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$.
 
-### The Antisymmetric Plain Sesquilinear Product
+### The Antisymmetric Plain Sesquilinear Product (APS)
 
-The antisymmetric part of the general plain sesquilinear product above, under the conjugate transpose.
+The antisymmetric plain sesquilinear product, $\mathrm{APS}$, is the antisymmetric part of the general plain sesquilinear product above, under the conjugate transpose.
 
 $$
 \tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)
@@ -187,9 +189,9 @@ $$
 $$
 which is **not zero** in general: for $\tilde Q_2=\vec e_x+i\vec e_y$ it is $2i\vec e_z$. It has no unit, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, and it **fails** the Jacobi identity, with witness $(e_t,\vec e_x,\vec e_y)$ where the cyclic sum is $\vec e_z$.
 
-### The Antisymmetric Quaternionic Sesquilinear Product
+### The Antisymmetric Quaternionic Sesquilinear Product (AQS)
 
-The antisymmetric part of the general quaternionic sesquilinear product above, under the conjugate transpose.
+The antisymmetric quaternionic sesquilinear product, $\mathrm{AQS}$, is the antisymmetric part of the general quaternionic sesquilinear product above, under the conjugate transpose.
 
 $$
 \boxed{\;
@@ -214,28 +216,28 @@ The bare interchange does not keep the class, and its two halves — the symmetr
 
 ## The Table of the Twelve Products
 
-| the product | the operation | scalar part | vector part | scalars | law | unit | image |
-|---|---|---|---|---|---|---|---|
-| the general plain bilinear product | $\tilde Q_1\tilde Q_2$ | $\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]$ | $+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$ | $\mathbb{C}$ | associative | $e_t$, both sides | all of $\mathbb{B}$ |
-| the general quaternionic bilinear product | $\tilde Q_1^{\natural}\tilde Q_2$ | $\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]$ | $+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $\mathbb{C}$ | not associative | $e_t$, left only | all of $\mathbb{B}$ |
-| the general plain sesquilinear product | $\tilde Q_1\tilde Q_2^{*}$ | $\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $\mathbb{C},\bar{\cdot}$ | not associative | $e_t$, right only | all of $\mathbb{B}$ |
-| the general quaternionic sesquilinear product | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$ | $\mathbb{C},\bar{\cdot}$ | not associative | none | all of $\mathbb{B}$ |
-| the symmetric plain bilinear product | $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | $\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]$ | $+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ | $\mathbb{C}$ | commutative, **Jordan** | $e_t$, both sides | all of $\mathbb{B}$ |
-| the symmetric quaternionic bilinear product | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | $\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]$ | $0$ | $\mathbb{C}$ | commutative, no Jordan | none | the centre $\mathbb{C}_{\mathbb{B}}$ |
-| the symmetric plain sesquilinear product | $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q}_2\tilde Q_1^{\natural}\bigr)$ | $\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]$ | $0$ | $\mathbb{C},\bar{\cdot}$ | conjugate-commutative, no Jordan | none | the centre $\mathbb{C}_{\mathbb{B}}$ |
-| the symmetric quaternionic sesquilinear product | $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)$ | $\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$ | $\mathbb{C},\bar{\cdot}$ | conjugate-commutative, no Jordan | none | no subspace of the remarkable subspaces |
-| the antisymmetric plain bilinear product | $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | $\bigl[0\bigr]$ | $\vec Q_1\times\vec Q_2$ | $\mathbb{C}$ | alternating, **Jacobi** | none | $\mathrm{Vect}(\mathbb{B})$ |
-| the antisymmetric quaternionic bilinear product | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | $\bigl[0\bigr]$ | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $\mathbb{C}$ | alternating, no Jacobi | none | $\mathrm{Vect}(\mathbb{B})$ |
-| the antisymmetric plain sesquilinear product | $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q}_2\tilde Q_1^{\natural}\bigr)$ | $\bigl[0\bigr]$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $\mathbb{C},\bar{\cdot}$ | conjugate-alternating, no Jacobi | none | $\mathrm{Vect}(\mathbb{B})$ |
-| the antisymmetric quaternionic sesquilinear product | $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)$ | $\bigl[0\bigr]$ | $\vec Q_1\times\overline{\vec Q_2}$ | $\mathbb{C},\bar{\cdot}$ | conjugate-alternating, no Jacobi | none | $\mathrm{Vect}(\mathbb{B})$ |
+| the product | the code | the operation | scalar part | vector part | scalars | law | unit | image |
+|---|---|---|---|---|---|---|---|---|
+| the general plain bilinear product | $\mathrm{GPA}$ | $\tilde Q_1\tilde Q_2$ | $\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]$ | $+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$ | $\mathbb{C}$ | associative | $e_t$, both sides | all of $\mathbb{B}$ |
+| the general quaternionic bilinear product | $\mathrm{GQA}$ | $\tilde Q_1^{\natural}\tilde Q_2$ | $\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]$ | $+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $\mathbb{C}$ | not associative | $e_t$, left only | all of $\mathbb{B}$ |
+| the general plain sesquilinear product | $\mathrm{GPS}$ | $\tilde Q_1\tilde Q_2^{*}$ | $\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $\mathbb{C},\bar{\cdot}$ | not associative | $e_t$, right only | all of $\mathbb{B}$ |
+| the general quaternionic sesquilinear product | $\mathrm{GQS}$ | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$ | $\mathbb{C},\bar{\cdot}$ | not associative | none | all of $\mathbb{B}$ |
+| the symmetric plain bilinear product | $\mathrm{SPA}$ | $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | $\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]$ | $+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ | $\mathbb{C}$ | commutative, **Jordan** | $e_t$, both sides | all of $\mathbb{B}$ |
+| the symmetric quaternionic bilinear product | $\mathrm{SQA}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | $\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]$ | $0$ | $\mathbb{C}$ | commutative, no Jordan | none | the centre $\mathbb{C}_{\mathbb{B}}$ |
+| the symmetric plain sesquilinear product | $\mathrm{SPS}$ | $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q}_2\tilde Q_1^{\natural}\bigr)$ | $\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]$ | $0$ | $\mathbb{C},\bar{\cdot}$ | conjugate-commutative, no Jordan | none | the centre $\mathbb{C}_{\mathbb{B}}$ |
+| the symmetric quaternionic sesquilinear product | $\mathrm{SQS}$ | $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)$ | $\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]$ | $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$ | $\mathbb{C},\bar{\cdot}$ | conjugate-commutative, no Jordan | none | no subspace of the remarkable subspaces |
+| the antisymmetric plain bilinear product | $\mathrm{APA}$ | $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | $\bigl[0\bigr]$ | $\vec Q_1\times\vec Q_2$ | $\mathbb{C}$ | alternating, **Jacobi** | none | $\mathrm{Vect}(\mathbb{B})$ |
+| the antisymmetric quaternionic bilinear product | $\mathrm{AQA}$ | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | $\bigl[0\bigr]$ | $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | $\mathbb{C}$ | alternating, no Jacobi | none | $\mathrm{Vect}(\mathbb{B})$ |
+| the antisymmetric plain sesquilinear product | $\mathrm{APS}$ | $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q}_2\tilde Q_1^{\natural}\bigr)$ | $\bigl[0\bigr]$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | $\mathbb{C},\bar{\cdot}$ | conjugate-alternating, no Jacobi | none | $\mathrm{Vect}(\mathbb{B})$ |
+| the antisymmetric quaternionic sesquilinear product | $\mathrm{AQS}$ | $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)$ | $\bigl[0\bigr]$ | $\vec Q_1\times\overline{\vec Q_2}$ | $\mathbb{C},\bar{\cdot}$ | conjugate-alternating, no Jacobi | none | $\mathrm{Vect}(\mathbb{B})$ |
 
-The **first column** is the product; the **second** is the operation as a product of the two elements: the four general products
+The **first column** is the name of the product and the **second** its three-letter code; the **third** is the operation as a product of the two elements: the four general products
 themselves, and for each part the half-sum or the half-difference of the product and its
 class-preserving exchange, written with the second monomial in the collapsed form of the
 exchange, $\overline{\tilde Q_2\tilde Q_1^{*}}=\overline{\tilde Q}_2\tilde Q_1^{\natural}$ for the
 plain sesquilinear product and $\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}=\tilde Q_2^{*}\tilde Q_1^{\natural}$
-for the general quaternionic one. The **third** column is the **scalar part** of the value and the
-**fourth** is the **vector part**, each written out, $0$ where the part vanishes. Here
+for the general quaternionic one. The **fourth** column is the **scalar part** of the value and the
+**fifth** is the **vector part**, each written out, $0$ where the part vanishes. Here
 $\vec Q_2$ and $\overline{\vec Q_2}$ are the vector part of the second element and of its
 coefficientwise conjugate, $(\cdot,\cdot)$ is the bilinear dot product and $\times$ the
 bilinear cross product. The two central operations, the symmetric plain sesquilinear product and the symmetric quaternionic
@@ -351,6 +353,7 @@ The six operations of the two bilinear families are $\mathbb{C}$-bilinear and th
 
 - [Idempotents](idempotents.html), [Nilpotents](nilpotents.html) and [Square Roots of an Element](square-roots-of-an-element.html), for the root problems of the algebra product.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four general products, their developed forms, the identities that link them and their comparison.
+- [The Vector Parts of the Products over the Biquaternion Algebra](the-vector-parts-of-the-products-over-the-biquaternion-algebra.html), for the vector half of the twelve, the two-bit rule, the nine distinct vector parts and the component forms.
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html) and [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the two definitions of the split, the obstruction of the class and the two admissibility conditions.
 - [The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product](the-conjugate-symmetric-and-skew-conjugate-symmetric-parts-of-a-sesquilinear-product.html), for the adapted exchange that keeps the class.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), [Introduction to the General Plain Sesqualgebra](introduction-to-the-general-plain-sesqualgebra.html), [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html) and [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the four general products.

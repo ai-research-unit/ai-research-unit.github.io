@@ -161,7 +161,7 @@ The rank-one row is the full Peirce decomposition seen from one line: $1$ for th
 
 **At $n=2$ the full Peirce decomposition has four lines, and the coarse split of a rank-one idempotent is the same four lines.** The rank-one corners are $1+1+1+1$, and for $p=1$ the coarse split and the full split coincide: there is only one line to separate. This is a feature of $n=2$ and does not persist.
 
-**The diagonal lines carry canonical vectors and the mixed lines do not.** In the algebra $M_2(\mathbb{C})$, the corner $P_kM_2P_k$ is spanned by $P_k$ itself, which is canonical. The mixed corner $P_kM_2P_l$ is spanned by a matrix unit $E_{kl}$ defined only up to a scalar. The biquaternion frame article read that scalar freedom as a second root; the correct reading is the gauge parameter $\lambda$, one complex number for the two mixed lines, acting as $E_{kl}\mapsto\lambda E_{kl}$ and $E_{lk}\mapsto\lambda^{-1}E_{lk}$. The idempotents $P_k$ do not depend on $\lambda$.
+**The diagonal lines carry canonical vectors and the mixed lines do not.** In the algebra $M_2(\mathbb{C})$, the corner $P_kM_2P_k$ is spanned by $P_k$ itself, which is canonical. The mixed corner $P_kM_2P_l$ is spanned by a matrix unit $E_{kl}$ defined only up to a scalar. The biquaternion articles read that scalar freedom as the gauge parameter $\lambda$, one complex number for the two mixed lines, acting as $E_{kl}\mapsto\lambda E_{kl}$ and $E_{lk}\mapsto\lambda^{-1}E_{lk}$. The idempotents $P_k$ do not depend on $\lambda$.
 
 ## What the Decomposition Is Not
 

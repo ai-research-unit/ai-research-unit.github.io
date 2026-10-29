@@ -121,7 +121,7 @@ For $n=3$ it reads $8=6+2$: the frame space has dimension $8$, the family $6$, a
 
 **The projective reading.** A family is $n$ points of $\mathbb{P}^{n-1}$ in general position, that is, a projective frame. A Peirce basis is a lift of that projective frame to a basis of $\mathbb{C}^{n}$, and the gauge is the freedom of the lift: each point may be rescaled independently, with the common rescaling of all $n$ points acting trivially. The decomposition is the projective data; the basis is the lift.
 
-**The biquaternion layer.** For $n=2$ the same count is $3=2+1$ in complex dimensions, that is, $6=4+2$ in real dimensions. The family has four real parameters and the gauge two. The second root used in the biquaternion articles is a point of the gauge, not an extra parameter.
+**The biquaternion layer.** For $n=2$ the same count is $3=2+1$ in complex dimensions, that is, $6=4+2$ in real dimensions. The family has four real parameters and the gauge two. The extra datum used in the biquaternion articles is a point of the gauge, not an extra parameter.
 
 ## What the Basis Is Not
 

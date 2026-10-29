@@ -141,6 +141,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html)
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html)
+- [The Vector Parts of the Products over the Biquaternion Algebra](../articles_maths/the-vector-parts-of-the-products-over-the-biquaternion-algebra.html)
 
 #### The Four Forms and Their Algebraic Norms
 

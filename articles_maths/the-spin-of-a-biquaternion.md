@@ -465,7 +465,7 @@ This is the only definition of spin in the corpus. The element $S$ is the **spin
 - [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html), for the same three carriers read physically, with the observed particle content.
 - [Higher Spin from Tensor Products](../articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html), for the spins beyond the elementary list.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the frame, the corners and the weight table.
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two spin-$\tfrac12$ planes and their weight bases.
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two Peirce planes and their adapted bases.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the irreducibility of the two planes.
 - [The Category of Modules](the-category-of-modules.html), for the associative modules over $\mathbb B$.
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the half-angle theorem.

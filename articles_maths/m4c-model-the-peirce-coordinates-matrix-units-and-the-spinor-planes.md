@@ -14,7 +14,7 @@ $$
 \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
-with $\vec\Upsilon_x=\vec\Upsilon_-$ and $\vec\Upsilon_y=\vec\Upsilon_+$ in the generic labelling of *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The $2\times2$ model is
+with $\vec\Upsilon_x=\vec\Upsilon_{+-}$ and $\vec\Upsilon_y=\vec\Upsilon_{-+}$ in the generic labelling of *Spinors as Peirce Coordinates in the Biquaternion Algebra*. The $2\times2$ model is
 
 $$
 \mathsf M_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
@@ -264,7 +264,7 @@ The Peirce coordinates of the standard pair are the entries of the $2\times2$ mo
 ## Further Reading
 
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners and the Peirce table
-- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two planes, their weight bases and the exchange
+- [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two planes, their adapted bases and the exchange
 - [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $2\times2$ version
 - [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the regular matrix
 - [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the right regular matrix

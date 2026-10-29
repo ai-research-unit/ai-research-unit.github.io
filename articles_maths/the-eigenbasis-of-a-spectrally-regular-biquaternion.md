@@ -14,6 +14,14 @@ $$
 
 is unique. The first two steps use only $B^2\neq0$, so the construction covers the whole spectral-regular sector.
 
+The residual rescaling has a canonical representative up to sign on the complement of the normal locus. There the antisymmetric part of the sesquilinear square,
+
+$$
+\Omega=\tfrac12\bigl(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*\bigr)=\vec Q\times\overline{\vec Q},
+$$
+
+is a nonzero pure element with $i\Omega$ real and $(\Omega,\vec Q)=0$; the real unit vector $n=i\Omega/|\Omega|$ gives the pair $\vec\Upsilon_\pm=-i\,\tilde\Pi_\mp n\tilde\Pi_\pm$, and the only freedom left is the sign of $n$, which is the gauge. On the normal locus, which contains the Hermitian elements and has real codimension two, no such vector exists, and the auxiliary vector of §*The Transverse-Vector Construction* remains necessary. Both statements are proved in §*The Gauge from the Antisymmetric Part*.
+
 The basis has a further property that is easy to miss: it depends on $\tilde Q$ only through the complex line spanned by the vector part. The elements $\tilde Q$ and $a\tilde Q+b e_t$, with $a\neq0$, share the same eigenbasis, while their eigenvalues move affinely. The eigenbasis is therefore attached to a point of $\mathbb{P}^2$, not to a point of $\mathbb{B}$.
 
 The second part of the article reads spinors and the Peirce index in this basis. The two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two Peirce copies. Each has a basis made of one idempotent and one nilpotent of $\mathcal{B}(\tilde Q)$, and left multiplication by $\tilde Q$ acts on each by the same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$. Chirality is a right-multiplication label, not a left eigenvalue: the two gradings are independent, and the four basis vectors are the four cells of their grid.
@@ -24,7 +32,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2.
 $$
 
-The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. A general element is written $\tilde Q_2=Q_{2,t}e_t+\vec Q_2$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$ and natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. The trace is $\operatorname{Tr}(\tilde Q_2)=2Q_{2,t}$, and $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ is the scalar of $\tilde Q_2^{\natural}\tilde Q_2$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ denote left and right multiplication by $\tilde Q_2$.
+The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. A general element is written $\tilde Q_2=Q_{2,t}e_t+\vec Q_2$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$, natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$ and Hermitian conjugation $\tilde Q^*=\overline{Q}_t-\overline{\vec Q}$. The trace is $\operatorname{Tr}(\tilde Q_2)=2Q_{2,t}$, and $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ is the scalar of $\tilde Q_2^{\natural}\tilde Q_2$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ denote left and right multiplication by $\tilde Q_2$.
 
 ## The Spectral Condition and the Root
 
@@ -234,11 +242,83 @@ At least one of the three axes satisfies $Q_\mu^2\neq B^2$ when $B^2\neq0$, beca
 
 The two formulas are the same construction with two different auxiliary vectors. On their common domain they differ by the reciprocal rescaling of the theorem, because both pairs satisfy the same product conditions.
 
+On the complement of the normal locus the auxiliary vector is not needed: the gauge of §*The Gauge from the Antisymmetric Part* is the case $V=n$ of the proposition above, and it is canonical up to sign once the natural conjugation is fixed. On the normal locus the auxiliary vector remains the only route.
+
 **Remark (the normalisation used in this article).** The convention is: use the symmetric formula when $\Sigma^2\neq3B^2$; otherwise use the axis chart of the first $\mu\in\{x,y,z\}$, in that order, with $Q_\mu^2\neq B^2$; and fix the square roots at one representative of each direction $[\vec Q]$, extending along the fibre by $B(a\tilde Q+b e_t)=aB(\tilde Q)$ and $\sqrt{a^2s}=a\sqrt s$ for $a\neq0$. The condition $\Sigma^2=3B^2$ and the axis choice depend on $[\vec Q]$ only. This selects one pair at every spectral-regular $\tilde Q$, and the displayed formulas are homogeneous of degree zero. The choice is pointwise: it assigns a pair to each element, and no continuity of the branch is required. It is a normalisation in the sense of the previous subsection, and it is the one used in the displayed formulas. The axis charts are only a coordinate device: they cover the exceptional cone, where the symmetric formula is singular, and they do not add a second eigenbasis.
+
+### The Gauge from the Antisymmetric Part
+
+**The residual $\mathbb{C}^{\times}$ has a canonical representative up to sign on the complement of the normal locus. It is the antisymmetric part of the sesquilinear square, and it uses no auxiliary vector.**
+
+**Definition (the normal vector).** Put
+
+$$
+\Omega=\tfrac12\bigl(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*\bigr)=\vec Q\times\overline{\vec Q}.
+$$
+
+Write $\vec Q=\vec A+i\vec C$ with $\vec A,\vec C\in\mathbb{R}^3$. Then
+
+$$
+\Omega=-2i\,\vec A\times\vec C,\qquad i\Omega=2\,\vec A\times\vec C,
+$$
+
+so $\Omega$ is pure and $i\Omega$ is real. It is orthogonal to $\vec Q$ in the complex bilinear product, $(\Omega,\vec Q)=0$.
+
+*Proof.* The products $\tilde Q^*\tilde Q$ and $\tilde Q\tilde Q^*$ have the same scalar part, $|Q_t|^2+(\vec Q,\overline{\vec Q})$, so their difference is pure. Expanding the difference gives $2\vec Q\times\overline{\vec Q}$, so the half-difference is $\vec Q\times\overline{\vec Q}$, and $\vec Q\times\overline{\vec Q}=(\vec A+i\vec C)\times(\vec A-i\vec C)=-2i\,\vec A\times\vec C$. The orthogonality is that of a cross product with $\vec Q$.
+
+**Theorem (the gauge).** Suppose $\Omega\neq0$ and put
+
+$$
+n=\frac{i\Omega}{|\Omega|}\in\mathbb{R}^3,\qquad |n|=1.
+$$
+
+Then $(n,\vec Q)=0$ and the pair
+
+$$
+\vec\Upsilon_+=-i\,\tilde\Pi_-\,n\,\tilde\Pi_+,\qquad
+\vec\Upsilon_-=-i\,\tilde\Pi_+\,n\,\tilde\Pi_-
+$$
+
+is admissible: $\vec\Upsilon_+\in\mathbb{B}_{-+}$, $\vec\Upsilon_-\in\mathbb{B}_{+-}$, $\vec\Upsilon_\pm^2=0$, and
+
+$$
+\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad
+\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+.
+$$
+
+*Proof.* The vector $n$ is real and unitary by construction, and $(n,\vec Q)=0$ because $\Omega$ is a cross product with $\vec Q$. The pure element $n$ satisfies $n^2=-e_t$, so $V_\perp=n$ and $V_\perp^2=-e_t$ in the proposition of §*The Transverse-Vector Construction*, whose two square roots are $\alpha=\pm i$. For $u_\pm=\tilde\Pi_\mp n\tilde\Pi_\pm$ the proposition gives $u_+u_-=-\tilde\Pi_-$ and $u_-u_+=-\tilde\Pi_+$, and $\vec\Upsilon_\pm=-i u_\pm$ gives the two identities. The squares vanish because a mixed corner multiplied by itself is zero. Changing the sign of $n$, or the sign of $\alpha$, changes the pair by the reciprocal rescaling with $\mu=-1$.
+
+**Theorem (the normal locus).** The following are equivalent:
+
+$$
+\Omega=0;\qquad
+\tilde Q\tilde Q^*=\tilde Q^*\tilde Q;\qquad
+\tilde Q^*\in\mathbb{C}[\tilde Q];\qquad
+\vec Q=c\,n_0,\quad c\in\mathbb{C}^{\times},\ n_0\in\mathbb{R}^3;\qquad
+\mathrm{Re}\,\vec Q\parallel\mathrm{Im}\,\vec Q .
+$$
+
+On this locus the gauge does not exist, and none can be built from the element: every element of the algebra generated by $\tilde Q$ and $\tilde Q^*$ lies in $\mathbb{C}[\tilde Q]$, which commutes with $\tilde\Pi_\pm$, so every mixed corner of every such element is zero.
+
+*Proof.* The first equivalence is the definition. For an element with distinct eigenvalues, normality is equivalent to $\tilde Q^*$ being a polynomial in $\tilde Q$: the minimal polynomial is squarefree of degree two, so $\mathbb{C}[\tilde Q]$ is the algebra of all functions on the spectrum, and it is closed under the conjugation of the coefficients. If $\tilde Q^*=\alpha\tilde Q+\beta e_t$, every element of $\mathbb{C}[\tilde Q]$ is a linear combination of $\tilde\Pi_+$ and $\tilde\Pi_-$, hence diagonal, and its mixed corners vanish. Finally $\Omega=-2i\,\vec A\times\vec C$, so $\Omega=0$ is $\vec A\times\vec C=0$, the collinearity of $\vec A$ and $\vec C$; with $\vec Q\neq0$ this gives $\vec Q=c\,n_0$ with $n_0$ a real unit vector.
+
+The locus has real codimension two: $\vec Q=c\,n_0$ has the four real parameters of $(c,n_0)\in\mathbb{C}\times S^2$ in the six real dimensions of $\vec Q$. It contains the Hermitian elements, where $\vec C=0$, and the anti-Hermitian ones, where $\vec A=0$.
+
+**Remark (what $\mathrm{Vect}(\tilde Q\tilde Q^*)$ contains).** The antisymmetric parts of the two sesquilinear products at the diagonal are
+
+$$
+\mathrm{APS}(\tilde Q,\tilde Q)=\mathrm{Vect}(\tilde Q\tilde Q^*)
+=2i\,\mathrm{Im}\bigl(\overline{Q}_t\vec Q\bigr)-\Omega,\qquad
+\mathrm{AQS}(\tilde Q,\tilde Q)=\Omega .
+$$
+
+The term $2i\,\mathrm{Im}(\overline{Q}_t\vec Q)$ lies in the real plane spanned by $\vec A$ and $\vec C$, and $\Omega$ is orthogonal to that plane. The normal component of $\mathrm{Vect}(\tilde Q\tilde Q^*)$ is therefore $-\Omega$: it contains the gauge direction, and $\Omega$ is that direction. The scalar $Q_t$ moves the component inside the plane and leaves the normal one unchanged, which is why the gauge depends on $\vec Q$ alone.
+
+**Remark (equivariance).** Let $S$ be a real unit quaternion, $S^*=S^{-1}$. Then $\Omega\mapsto S\Omega S^{-1}$ and $n$ is rotated by $S$, so the gauge is natural for the real form: it is equivariant under the subgroup of the inner automorphisms that preserves the natural conjugation. Under a general inner automorphism the pair is carried to a reciprocal rescaling, as in §*Equivariance under Inner Automorphisms*.
 
 ## The Eigenbasis
 
-**With the normalisation fixed, the four vectors are a basis, and left and right multiplication by $\tilde Q$ are diagonal in it.**
+**With the pair fixed — by the normalisation above or by the antisymmetric gauge — the four vectors are a basis, and left and right multiplication by $\tilde Q$ are diagonal in it.**
 
 ### The Basis and the Multiplication Table
 
@@ -280,7 +360,7 @@ The multiplication of the four basis vectors is the table. The row is the left f
 
 The table is the corner rule written out. It shows that the basis is a system of matrix units, with $\tilde\Pi_+$ and $\tilde\Pi_-$ the two diagonal units and the nilpotents the two off-diagonal units.
 
-**Remark (in what sense the eigenbasis is unique).** The uniqueness is that of the normalised Peirce representative. The operator $L_{\tilde Q}$ has two distinct eigenvalues, and each eigenspace is two-dimensional; any basis of each eigenspace is therefore an eigenbasis of $L_{\tilde Q}$, and the set of eigenbases is not unique. What is unique, with the normalisation of §*The Transverse-Vector Construction*, is the quadruple made of the two spectral idempotents and the two normalised corner generators. Every statement of uniqueness in this article refers to that quadruple.
+**Remark (in what sense the eigenbasis is unique).** The uniqueness is that of the normalised Peirce representative. The operator $L_{\tilde Q}$ has two distinct eigenvalues, and each eigenspace is two-dimensional; any basis of each eigenspace is therefore an eigenbasis of $L_{\tilde Q}$, and the set of eigenbases is not unique. What is unique, with the normalisation of §*The Transverse-Vector Construction* or with the gauge of §*The Gauge from the Antisymmetric Part*, is the quadruple made of the two spectral idempotents and the two normalised corner generators. Every statement of uniqueness in this article refers to that quadruple.
 
 ### The Fourier Reading of the Basis
 
@@ -759,7 +839,8 @@ In the language of physics, the pair of columns is two copies of one Weyl spinor
 | root | $\vec\Xi=-i\vec Q/B$, $\vec\Xi^2=e_t$, $\tilde Q=Q_te_t+iB\vec\Xi$ |
 | idempotents | $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$, unique |
 | nilpotents | $\vec\Upsilon_+\in\mathbb{B}_{-+}$, $\vec\Upsilon_-\in\mathbb{B}_{+-}$, $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ |
-| scale | determined up to $(\mu,\mu^{-1})$; fixed by the normalisation |
+| scale | determined up to $(\mu,\mu^{-1})$; fixed by the normalisation, or by the antisymmetric gauge off the normal locus up to sign |
+| gauge | $n=i\Omega/|\Omega|$ with $\Omega=\tfrac12(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*)=\vec Q\times\overline{\vec Q}$; exists exactly when $\tilde Q$ is not normal |
 | basis | $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; the normalised Peirce basis, unique with the normalisation fixed |
 | left action | $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ |
 | right action | $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$ |
@@ -772,7 +853,7 @@ In the language of physics, the pair of columns is two copies of one Weyl spinor
 | Peirce index | the right index, the eigenvalue of $R_{\tilde Q}$; independent of the left spectrum |
 | boundary | $\mathcal S$ has three strata: the scalar one with no attached basis, the nilpotent and unipotent ones with a flag and a two-parameter gauge, and no eigenbasis |
 
-The construction fails exactly on the spectral-degenerate cone, and the failure has three forms. On the scalar stratum and at the origin every basis is an eigenbasis and none is attached to the element; the one-term decomposition is canonical, and the gauge is the idempotent variety. On the nilpotent and unipotent strata there is no eigenbasis: the canonical data are the line, the flag, and the affine family $e_b=e+b\vec Q$ of Peirce idempotents, and the two-sided action does not repair the defect. The spectral condition is thus the exact domain of the construction, and the central scalar is not part of it.
+The construction fails exactly on the spectral-degenerate cone, and the failure has three forms. On the scalar stratum and at the origin every basis is an eigenbasis and none is attached to the element; the one-term decomposition is canonical, and the gauge is the idempotent variety. On the nilpotent and unipotent strata there is no eigenbasis: the canonical data are the line, the flag, and the affine family $e_b=e+b\vec Q$ of Peirce idempotents, and the two-sided action does not repair the defect. The spectral condition is thus the exact domain of the construction, and the central scalar is not part of it. The gauge has a second boundary inside the domain: on the normal locus the eigenbasis exists but is not canonical, and one auxiliary vector is required.
 
 ## Summary of Notation
 
@@ -783,6 +864,8 @@ The construction fails exactly on the spectral-degenerate cone, and the failure 
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part, the spectral discriminant |
 | $B$ | a fixed square root of $B^2$ |
 | $\vec\Xi=-i\vec Q/B$ | the root, a pure square root of $e_t$ |
+| $\Omega=\tfrac12(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*)$ | the antisymmetric sesquilinear square, $\vec Q\times\overline{\vec Q}=\mathrm{AQS}(\tilde Q,\tilde Q)$ |
+| $n=i\Omega/|\Omega|$ | the real unit normal, the gauge direction off the normal locus |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues |
 | $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$ | the spectral idempotents |
 | $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the Peirce corners |
@@ -808,6 +891,8 @@ The construction fails exactly on the spectral-degenerate cone, and the failure 
 - [$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for computed eigenbases of the standard elements.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.
+- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the gauge of the general Peirce basis and its torsor.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the codes $\mathrm{APS}$ and $\mathrm{AQS}$ and the values of the two sesquilinear antisymmetric parts at the diagonal.
 - [Peirce Carriers and Inner Conjugation](peirce-carriers-and-inner-conjugation.html), for the identification of the minimal left ideals with the spinor spaces and the two Peirce copies.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.
