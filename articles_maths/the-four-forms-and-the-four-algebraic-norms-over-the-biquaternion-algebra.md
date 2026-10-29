@@ -402,6 +402,7 @@ The four carry the letters $P$, $N$, $H$ and $K$, and each letter gives a qualif
 
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four general products whose scalar parts the four forms are, their relations and their comparison.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve products, their scalar parts and their two-slot construction, on which the count of four forms rests.
+- [The Vector Parts of the Products over the Biquaternion Algebra](the-vector-parts-of-the-products-over-the-biquaternion-algebra.html), for the vector half of the twelve, which is not a form but a package of three scalar forms, and for its diagonals.
 - [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html), for the convention of the four pairings — the one bracket, the four names, the four pairs and the trace forms.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm-regular and norm-degenerate partition, the $N$ pair of the last section.
 - [K-Regularity and Degeneracy in the Biquaternion Algebra](k-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the Krein-regular and Krein-degenerate partition, the $K$ pair of the last section.

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists, as a basis attached to the element, exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article *The Spectrum* proves that such a basis exists. This article constructs it, proves that the normalised Peirce representative is unique, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and the Peirce index in it.
+The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article *The Spectrum* proves that such a basis exists. This article constructs it, proves that the Peirce representative is unique once a normalisation is fixed, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and the Peirce index in it. Off the normal locus the pair is determined up to sign by the element itself; on the normal locus a chart is required.
 
-**Place among the Peirce decompositions.** This article is the regular particular case of *The Peirce Decomposition of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is the spectral pair: it exists exactly when $B^2\neq0$, it commutes with $\tilde Q$, and the Peirce matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$. Each couple is therefore a pair of eigenvectors, and the Peirce basis is the eigenbasis. The general theory leaves a reciprocal $\mathbb{C}^\times$ of mixed bases; the normalisation below fixes it.
+**Place among the Peirce decompositions.** This article is the regular particular case of *The Peirce Decomposition of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is the spectral pair: it exists exactly when $B^2\neq0$, it commutes with $\tilde Q$, and the Peirce matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$. Each couple is therefore a pair of eigenvectors, and the Peirce basis is the eigenbasis. The general theory leaves a reciprocal $\mathbb{C}^\times$ of mixed bases; the normalisations below fix it.
 
 The construction has three steps. The root $\vec\Xi=-i\vec Q/B$ is a pure square root of $e_t$ and carries the two spectral idempotents $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$. The two mixed Peirce corners are complex lines, and a generator $\vec\Upsilon_+$ of one of them determines a generator $\vec\Upsilon_-$ of the other by the product condition $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. The pair is then determined up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$. A normalisation fixes $\mu$, and with the normalisation fixed the quadruple
 
@@ -12,15 +12,17 @@ $$
 \mathcal{B}(\tilde Q)=(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-)
 $$
 
-is unique. The first two steps use only $B^2\neq0$, so the construction covers the whole spectral-regular sector.
+is unique. The construction uses only $B^2\neq0$, so it covers the whole spectral-regular sector.
 
-The residual rescaling has a canonical representative up to sign on the complement of the normal locus. There the antisymmetric part of the sesquilinear square,
+The pair is fixed by a **normalisation**, a rule that selects one representative of each orbit of the reciprocal rescaling. Two rules are used in this article. **The chart** is the transverse-vector construction with a fixed auxiliary vector; it is the rule of the displayed formulas, of the worked example and of every table. **The gauge** is the antisymmetric part of the sesquilinear square,
 
 $$
 \Omega=\tfrac12\bigl(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*\bigr)=\vec Q\times\overline{\vec Q},
 $$
 
-is a nonzero pure element with $i\Omega$ real and $(\Omega,\vec Q)=0$; the real unit vector $n=i\Omega/|\Omega|$ gives the pair $\vec\Upsilon_\pm=-i\,\tilde\Pi_\mp n\tilde\Pi_\pm$, and the only freedom left is the sign of $n$, which is the gauge. On the normal locus, which contains the Hermitian elements and has real codimension two, no such vector exists, and the auxiliary vector of §*The Transverse-Vector Construction* remains necessary. Both statements are proved in §*The Gauge from the Antisymmetric Part*.
+which is a nonzero pure element with $i\Omega$ real and $(\Omega,\vec Q)=0$ exactly on the complement of the normal locus. There the real unit vector $n=i\Omega/|\Omega|$ gives the pair $\vec\Upsilon_\pm=-i\,\tilde\Pi_\mp n\tilde\Pi_\pm$ with no auxiliary vector, and the only remaining freedom is the sign of $n$.
+
+The two rules differ by a reciprocal rescaling, $\vec\Upsilon_+^{\mathrm{chart}}=\mu\,\vec\Upsilon_+^{\mathrm{gauge}}$ and $\vec\Upsilon_-^{\mathrm{chart}}=\mu^{-1}\vec\Upsilon_-^{\mathrm{gauge}}$. The two matrices are related by the diagonal similarity $\mathsf M^{\mathrm{chart}}=\operatorname{diag}(1,\mu^{-1})\,\mathsf M^{\mathrm{gauge}}\operatorname{diag}(1,\mu)$, so the determinant, the trace and the spectrum do not depend on the rule. On the normal locus, which contains the Hermitian elements and has real codimension two, the gauge does not exist, and the chart remains the only rule. Both statements are proved in §*The Gauge from the Antisymmetric Part*.
 
 The basis has a further property that is easy to miss: it depends on $\tilde Q$ only through the complex line spanned by the vector part. The elements $\tilde Q$ and $a\tilde Q+b e_t$, with $a\neq0$, share the same eigenbasis, while their eigenvalues move affinely. The eigenbasis is therefore attached to a point of $\mathbb{P}^2$, not to a point of $\mathbb{B}$.
 
@@ -100,7 +102,7 @@ and they are the unique spectral idempotents of $\tilde Q$.
 
 ### The Two Branches
 
-Replacing $B$ by $-B$ replaces $\vec\Xi$ by $-\vec\Xi$. This exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$ and exchanges $\lambda_+$ and $\lambda_-$. The unordered pair of idempotents and the unordered spectrum are unchanged. The branch is therefore a labelling choice, not a second construction; throughout the article the square root is fixed by the normalisation, and the labels follow from it.
+Replacing $B$ by $-B$ replaces $\vec\Xi$ by $-\vec\Xi$. This exchanges $\tilde\Pi_+$ and $\tilde\Pi_-$ and exchanges $\lambda_+$ and $\lambda_-$. The unordered pair of idempotents and the unordered spectrum are unchanged. The branch is therefore a labelling choice, not a second construction; throughout the article the square root is fixed by the convention of the chart, and the labels follow from it.
 
 ## The Corners and the Nilpotents
 
@@ -170,7 +172,11 @@ $$
 
 *Proof.* The three identities are the lemma. Conversely, a pair with these properties has $(\mu\vec\Upsilon_+)(\mu^{-1}\vec\Upsilon_-)=\tilde\Pi_-$, and the mixed corners are lines, so every pair is of this form.
 
-**Remark (the residual freedom).** The theorem says that the algebraic data determine the pair only up to one complex scalar. The scale is not a property of the element; it is the freedom of choosing a generator in the one-dimensional corner. A normalisation is precisely a rule that selects one pair in each orbit.
+**Remark (the residual freedom).** The theorem says that the algebraic data determine the pair only up to one complex scalar. The scale is not a property of the element; it is the freedom of choosing a generator in the one-dimensional corner.
+
+## The Normalisation of the Pair
+
+**A normalisation is a rule that selects one pair in each orbit of the reciprocal rescaling. The lemma leaves the scale free; a normalisation fixes it, either by an auxiliary vector or by the antisymmetric part of the element itself.**
 
 ### The Transverse-Vector Construction
 
@@ -189,7 +195,7 @@ $$
 V_\perp^2=V^2+\frac{(V,\vec Q)^2}{B^2},
 $$
 
-and $V_\perp^2\neq0$ means that the projection $V_\perp$ is not isotropic.
+and $V_\perp^2\neq0$ means that the projection $V_\perp$ is not isotropic. For a pure $V$ the square $V^2=-(V,V)e_t$ is central, so $V_\perp^2$ is a scalar, and the same symbol denotes that scalar.
 
 **Proposition (the pair from a transverse vector).** Let $V$ be pure with $V_\perp^2\neq0$, and put
 
@@ -242,13 +248,11 @@ At least one of the three axes satisfies $Q_\mu^2\neq B^2$ when $B^2\neq0$, beca
 
 The two formulas are the same construction with two different auxiliary vectors. On their common domain they differ by the reciprocal rescaling of the theorem, because both pairs satisfy the same product conditions.
 
-On the complement of the normal locus the auxiliary vector is not needed: the gauge of §*The Gauge from the Antisymmetric Part* is the case $V=n$ of the proposition above, and it is canonical up to sign once the natural conjugation is fixed. On the normal locus the auxiliary vector remains the only route.
-
-**Remark (the normalisation used in this article).** The convention is: use the symmetric formula when $\Sigma^2\neq3B^2$; otherwise use the axis chart of the first $\mu\in\{x,y,z\}$, in that order, with $Q_\mu^2\neq B^2$; and fix the square roots at one representative of each direction $[\vec Q]$, extending along the fibre by $B(a\tilde Q+b e_t)=aB(\tilde Q)$ and $\sqrt{a^2s}=a\sqrt s$ for $a\neq0$. The condition $\Sigma^2=3B^2$ and the axis choice depend on $[\vec Q]$ only. This selects one pair at every spectral-regular $\tilde Q$, and the displayed formulas are homogeneous of degree zero. The choice is pointwise: it assigns a pair to each element, and no continuity of the branch is required. It is a normalisation in the sense of the previous subsection, and it is the one used in the displayed formulas. The axis charts are only a coordinate device: they cover the exceptional cone, where the symmetric formula is singular, and they do not add a second eigenbasis.
+On the complement of the normal locus the auxiliary vector is not needed: the gauge of §*The Gauge from the Antisymmetric Part* is the case $V=n$ of the proposition above, and it is defined up to sign. On the normal locus the auxiliary vector remains the only route.
 
 ### The Gauge from the Antisymmetric Part
 
-**The residual $\mathbb{C}^{\times}$ has a canonical representative up to sign on the complement of the normal locus. It is the antisymmetric part of the sesquilinear square, and it uses no auxiliary vector.**
+**Off the normal locus the pair has a second normalisation, defined up to sign by the element itself. It is the antisymmetric part of the sesquilinear square, and it uses no auxiliary vector.**
 
 **Definition (the normal vector).** Put
 
@@ -295,16 +299,16 @@ $$
 \tilde Q\tilde Q^*=\tilde Q^*\tilde Q;\qquad
 \tilde Q^*\in\mathbb{C}[\tilde Q];\qquad
 \vec Q=c\,n_0,\quad c\in\mathbb{C}^{\times},\ n_0\in\mathbb{R}^3;\qquad
-\mathrm{Re}\,\vec Q\parallel\mathrm{Im}\,\vec Q .
+\mathrm{Re}\,\vec Q\parallel\mathrm{Im}\,\vec Q\quad(\vec Q\neq0\ \text{by}\ B^2\neq0).
 $$
 
 On this locus the gauge does not exist, and none can be built from the element: every element of the algebra generated by $\tilde Q$ and $\tilde Q^*$ lies in $\mathbb{C}[\tilde Q]$, which commutes with $\tilde\Pi_\pm$, so every mixed corner of every such element is zero.
 
-*Proof.* The first equivalence is the definition. For an element with distinct eigenvalues, normality is equivalent to $\tilde Q^*$ being a polynomial in $\tilde Q$: the minimal polynomial is squarefree of degree two, so $\mathbb{C}[\tilde Q]$ is the algebra of all functions on the spectrum, and it is closed under the conjugation of the coefficients. If $\tilde Q^*=\alpha\tilde Q+\beta e_t$, every element of $\mathbb{C}[\tilde Q]$ is a linear combination of $\tilde\Pi_+$ and $\tilde\Pi_-$, hence diagonal, and its mixed corners vanish. Finally $\Omega=-2i\,\vec A\times\vec C$, so $\Omega=0$ is $\vec A\times\vec C=0$, the collinearity of $\vec A$ and $\vec C$; with $\vec Q\neq0$ this gives $\vec Q=c\,n_0$ with $n_0$ a real unit vector.
+*Proof.* The first equivalence is the definition. For an element with distinct eigenvalues, normality is equivalent to $\tilde Q^*$ being a polynomial in $\tilde Q$. If $\tilde Q$ is normal, $L_{\tilde Q^*}$ commutes with $L_{\tilde Q}$, hence preserves each eigenspace $E_\pm$; those are lines, one in each Peirce copy, so $\tilde Q^*$ is diagonal in the eigenbasis and lies in $\mathbb{C}[\tilde Q]$. Conversely the minimal polynomial is squarefree of degree two, so $\mathbb{C}[\tilde Q]$ is the algebra of all functions on the spectrum, and it is closed under the conjugation of the coefficients. If $\tilde Q^*=\alpha\tilde Q+\beta e_t$, every element of $\mathbb{C}[\tilde Q]$ is a linear combination of $\tilde\Pi_+$ and $\tilde\Pi_-$, hence diagonal, and its mixed corners vanish. Finally $\Omega=-2i\,\vec A\times\vec C$, so $\Omega=0$ is $\vec A\times\vec C=0$, the collinearity of $\vec A$ and $\vec C$; with $\vec Q\neq0$ this gives $\vec Q=c\,n_0$ with $n_0$ a real unit vector.
 
-The locus has real codimension two: $\vec Q=c\,n_0$ has the four real parameters of $(c,n_0)\in\mathbb{C}\times S^2$ in the six real dimensions of $\vec Q$. It contains the Hermitian elements, where $\vec C=0$, and the anti-Hermitian ones, where $\vec A=0$.
+The locus has real codimension two: $\vec Q=c\,n_0$ has the four real parameters of $(c,n_0)\in\mathbb{C}\times S^2$ in the six real dimensions of $\vec Q$. It contains the Hermitian elements, where $\vec A=0$ and $\vec C$ is real, and the anti-Hermitian ones, where $\vec C=0$ and $\vec A$ is real.
 
-**Remark (what $\mathrm{Vect}(\tilde Q\tilde Q^*)$ contains).** The antisymmetric parts of the two sesquilinear products at the diagonal are
+**Remark (what $\mathrm{Vect}(\tilde Q\tilde Q^*)$ contains).** The antisymmetric part of the plain sesquilinear product, $\mathrm{APS}$, and that of the quaternionic sesquilinear product, $\mathrm{AQS}$, are the two codes of *Symmetric and Antisymmetric Decomposition of the Four General Products* whose values at the diagonal do not vanish. At $(\tilde Q,\tilde Q)$ they are
 
 $$
 \mathrm{APS}(\tilde Q,\tilde Q)=\mathrm{Vect}(\tilde Q\tilde Q^*)
@@ -316,13 +320,21 @@ The term $2i\,\mathrm{Im}(\overline{Q}_t\vec Q)$ lies in the real plane spanned 
 
 **Remark (equivariance).** Let $S$ be a real unit quaternion, $S^*=S^{-1}$. Then $\Omega\mapsto S\Omega S^{-1}$ and $n$ is rotated by $S$, so the gauge is natural for the real form: it is equivariant under the subgroup of the inner automorphisms that preserves the natural conjugation. Under a general inner automorphism the pair is carried to a reciprocal rescaling, as in §*Equivariance under Inner Automorphisms*.
 
+### The Convention Used in This Article
+
+**The chart is the convention of the displayed formulas, of the worked example and of every table. The gauge is the intrinsic alternative, and it agrees with the chart only up to the reciprocal rescaling.**
+
+The protocol of the chart is: use the symmetric formula when $\Sigma^2\neq3B^2$; otherwise use the axis chart of the first $\mu\in\{x,y,z\}$, in that order, with $Q_\mu^2\neq B^2$; and fix the square roots at one representative of each direction of $\vec Q$, extending along the fibre by $B(a\tilde Q+b e_t)=aB(\tilde Q)$ and $\sqrt{a^2s}=a\sqrt s$ for $a\neq0$. The condition $\Sigma^2=3B^2$ and the axis choice depend on the direction only. This selects one pair at every spectral-regular $\tilde Q$, and the displayed formulas are homogeneous of degree zero. The choice is pointwise: it assigns a pair to each element, and no continuity of the branch is required. The axis charts are only a coordinate device: they cover the exceptional cone, where the symmetric formula is singular, and they do not add a second eigenbasis.
+
+The gauge is not a normalisation of the same kind: it is equivariant under the real inner automorphisms and it needs no auxiliary vector, but it is defined only off the normal locus. The two rules give different matrices for the same element, related by the diagonal similarity $\mathsf M^{\mathrm{chart}}=\operatorname{diag}(1,\mu^{-1})\,\mathsf M^{\mathrm{gauge}}\operatorname{diag}(1,\mu)$. Quantities invariant under the similarity — the determinant, the trace and the spectrum — are properties of the element, not of the convention.
+
 ## The Eigenbasis
 
-**With the pair fixed — by the normalisation above or by the antisymmetric gauge — the four vectors are a basis, and left and right multiplication by $\tilde Q$ are diagonal in it.**
+**With the pair fixed — by the chart of §*The Transverse-Vector Construction* or by the gauge of §*The Gauge from the Antisymmetric Part* — the four vectors are a basis, and left and right multiplication by $\tilde Q$ are diagonal in it.**
 
 ### The Basis and the Multiplication Table
 
-**Definition (the eigenbasis).** For a spectral-regular $\tilde Q$ with the normalisation above, the **eigenbasis** is
+**Definition (the eigenbasis).** For a spectral-regular $\tilde Q$ with the chart of §*The Transverse-Vector Construction*, the **eigenbasis** is
 
 $$
 \mathcal{B}(\tilde Q)=(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-).
@@ -533,7 +545,7 @@ $$
 \vec\Upsilon_-=-\frac{\vec e_x-\vec e_y}{2\sqrt2}-\frac{i}{2}\vec e_z.
 $$
 
-The four basis vectors satisfy the multiplication table, and $\tilde Q=i\sqrt2\,\tilde\Pi_+-i\sqrt2\,\tilde\Pi_-$. The coordinates of the fixed units in this basis are
+The four basis vectors satisfy the multiplication table, and $\tilde Q=i\sqrt2\,\tilde\Pi_+-i\sqrt2\,\tilde\Pi_-$. This element lies on the normal locus: its vector part is real, so $\Omega=\vec Q\times\overline{\vec Q}=0$, and the gauge of §*The Gauge from the Antisymmetric Part* is not available. The example uses the chart, as the tables do. The coordinates of the fixed units in this basis are
 
 | element | $\tilde\Pi_+$ | $\vec\Upsilon_-$ | $\vec\Upsilon_+$ | $\tilde\Pi_-$ |
 |---|---|---|---|---|
@@ -577,13 +589,13 @@ $$
 \tilde Q'=a\tilde Q+b e_t.
 $$
 
-Then $\tilde Q'$ is spectral regular. With the normalisation fixed, its root is the root of $\tilde Q$, its idempotents are the idempotents of $\tilde Q$, and its eigenbasis is the eigenbasis of $\tilde Q$. Its eigenvalues are
+Then $\tilde Q'$ is spectral regular. With the chart fixed, its root is the root of $\tilde Q$, its idempotents are the idempotents of $\tilde Q$, and its eigenbasis is the eigenbasis of $\tilde Q$. Its eigenvalues are
 
 $$
 \lambda_\pm'=a\lambda_\pm+b.
 $$
 
-*Proof.* The vector part of $\tilde Q'$ is $a\vec Q$, so $B'^2=a^2B^2$ and, by the scaling rule of the normalisation, $B'=aB$. Hence
+*Proof.* The vector part of $\tilde Q'$ is $a\vec Q$, so $B'^2=a^2B^2$ and, by the scaling rule of the chart, $B'=aB$. Hence
 
 $$
 \vec\Xi'=-\frac{i(a\vec Q)}{aB}=\vec\Xi.
@@ -612,7 +624,7 @@ The closed-form normalisation is not exactly equivariant, because the auxiliary 
 
 ### The Boundary
 
-The construction is defined on $\{B^2\neq0\}$ and stops on the spectral-degenerate cone $\mathcal S=\{B^2=0\}$. On the cone the two eigenvalues coalesce, the root $\vec\Xi=-i\vec Q/B$ is undefined, and the two spectral idempotents have no limit independent of the path: a sequence of spectral-regular elements converging to a point of the cone produces idempotents whose limit depends on the path. The cone is not one case but three, and each stratum has canonical data of its own.
+The basis is defined on $\{B^2\neq0\}$ and stops on the spectral-degenerate cone $\mathcal S=\{B^2=0\}$. The gauge of §*The Gauge from the Antisymmetric Part* stops earlier, on the normal locus inside $\{B^2\neq0\}$. On the cone the two eigenvalues coalesce, the root $\vec\Xi=-i\vec Q/B$ is undefined, and the two spectral idempotents have no limit independent of the path: a sequence of spectral-regular elements converging to a point of the cone produces idempotents whose limit depends on the path. The cone is not one case but three, and each stratum has canonical data of its own.
 
 **The scalar stratum.** $\vec Q=0$. Then $\tilde Q=Q_te_t$ and $L_{\tilde Q}=Q_t\mathrm{id}$; every basis is an eigenbasis, and the one-term writing $\tilde Q=Q_te_t$ is canonical. No refinement is canonical: every idempotent commutes with $\tilde Q$, so every complete pair $(e,f)$ gives the trivial Peirce form
 
@@ -620,7 +632,7 @@ $$
 e\tilde Qe=Q_te,\qquad e\tilde Qf=0,\qquad f\tilde Qe=0,\qquad f\tilde Qf=Q_tf,
 $$
 
-with both off-diagonal corners zero, and the two diagonal coefficients equal. The gauge is the whole idempotent variety, of complex dimension two. At the origin the eigenvalue is zero as well, and the one-term writing is $0=0\cdot e_t$.
+with both off-diagonal corners zero, and the two diagonal coefficients equal. The gauge freedom is the whole idempotent variety, of complex dimension two. At the origin the eigenvalue is zero as well, and the one-term writing is $0=0\cdot e_t$.
 
 **The nilpotent stratum.** $\vec Q\neq0$, $Q_t=0$, $\vec Q^2=0$. Write $\vec N=\vec Q$. The canonical data are the line $\mathbb{C}\vec N$, the plane $\ker L_{\vec N}=\operatorname{im}L_{\vec N}$, and the flag
 
@@ -839,21 +851,21 @@ In the language of physics, the pair of columns is two copies of one Weyl spinor
 | root | $\vec\Xi=-i\vec Q/B$, $\vec\Xi^2=e_t$, $\tilde Q=Q_te_t+iB\vec\Xi$ |
 | idempotents | $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$, unique |
 | nilpotents | $\vec\Upsilon_+\in\mathbb{B}_{-+}$, $\vec\Upsilon_-\in\mathbb{B}_{+-}$, $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ |
-| scale | determined up to $(\mu,\mu^{-1})$; fixed by the normalisation, or by the antisymmetric gauge off the normal locus up to sign |
+| scale | determined up to $(\mu,\mu^{-1})$; fixed by the chart, or by the gauge off the normal locus up to sign |
 | gauge | $n=i\Omega/|\Omega|$ with $\Omega=\tfrac12(\tilde Q^*\tilde Q-\tilde Q\tilde Q^*)=\vec Q\times\overline{\vec Q}$; exists exactly when $\tilde Q$ is not normal |
-| basis | $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; the normalised Peirce basis, unique with the normalisation fixed |
+| basis | $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$; the normalised Peirce basis, unique once a normalisation is fixed |
 | left action | $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ |
 | right action | $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$ |
 | expansion | $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$, unique |
-| coordinates | algebra isomorphism onto $M_2(\mathbb{C})$, $\det=N$, $\operatorname{tr}=2Q_{2,t}$ |
+| coordinates | algebra isomorphism onto $M_2(\mathbb{C})$, $\det=\langle\tilde Q_2\rangle_{\natural}$, $\operatorname{tr}=2Q_{2,t}$ |
 | diagonal subalgebra | $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-=\operatorname{span}\{e_t,\tilde Q\}$ |
 | dependence | on $[\vec Q]\in\mathbb{P}^2$ only; the spectrum is affine on the fibre |
 | spinors | $S_\pm=\mathbb{B}\tilde\Pi_\pm$, Peirce carriers (minimal left ideals here), complex dimension two |
 | left action on spinors | $\operatorname{diag}(\lambda_+,\lambda_-)$ on each Peirce copy |
 | Peirce index | the right index, the eigenvalue of $R_{\tilde Q}$; independent of the left spectrum |
-| boundary | $\mathcal S$ has three strata: the scalar one with no attached basis, the nilpotent and unipotent ones with a flag and a two-parameter gauge, and no eigenbasis |
+| boundary | $\mathcal S$ has three strata: the scalar one with no attached basis, the nilpotent and unipotent ones with a flag and a two-parameter gauge freedom, and no eigenbasis |
 
-The construction fails exactly on the spectral-degenerate cone, and the failure has three forms. On the scalar stratum and at the origin every basis is an eigenbasis and none is attached to the element; the one-term decomposition is canonical, and the gauge is the idempotent variety. On the nilpotent and unipotent strata there is no eigenbasis: the canonical data are the line, the flag, and the affine family $e_b=e+b\vec Q$ of Peirce idempotents, and the two-sided action does not repair the defect. The spectral condition is thus the exact domain of the construction, and the central scalar is not part of it. The gauge has a second boundary inside the domain: on the normal locus the eigenbasis exists but is not canonical, and one auxiliary vector is required.
+The construction of the basis fails exactly on the spectral-degenerate cone, and the failure has three forms. On the scalar stratum and at the origin every basis is an eigenbasis and none is attached to the element; the one-term decomposition is canonical, and the gauge freedom is the idempotent variety. On the nilpotent and unipotent strata there is no eigenbasis: the canonical data are the line, the flag, and the affine family $e_b=e+b\vec Q$ of Peirce idempotents, and the two-sided action does not repair the defect. The spectral condition is thus the exact domain of the basis, and the central scalar is not part of it. The gauge, as a normalisation, has a second boundary inside the domain: on the normal locus the basis exists, but the pair is fixed only by the chart, and one auxiliary vector is required.
 
 ## Summary of Notation
 
