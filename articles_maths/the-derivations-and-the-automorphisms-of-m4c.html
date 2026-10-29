@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Derivations and the Automorphisms of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-derivations-and-the-automorphisms-of-math0"><strong>The Derivations and the Automorphisms of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>derivation</strong> of $M_4(\mathbb{C})$ is a linear map $D$ with the Leibniz rule</p>
+<p>$$
+D(AB)=D(A)B+AD(B).
+$$</p>
+<p>An <strong>automorphism</strong> is an invertible linear map preserving the product. For the full matrix algebra both structures are as small as they can be: every derivation is inner, $D=\operatorname{ad}_X$ for some $X$, and every automorphism is inner, $A\mapsto UAU^{-1}$ for some invertible $U$. The two statements are the theorems of Wedderburn and Skolem–Noether, and they give</p>
+<p>$$
+\operatorname{Der}(M_4)=\operatorname{ad}\mathfrak{sl}_4\cong\mathfrak{sl}_4,\qquad
+\operatorname{Aut}(M_4)=PGL_4(\mathbb{C}),
+$$</p>
+<p>both of dimension $15$. There are no outer derivations and no outer automorphisms.</p>
+<p>This article states the two theorems, the kernel of the adjoint map, the $*$-structures, the complex-antilinear automorphisms, and the comparison with the biquaternion algebra, whose derivations are only three-dimensional. The Lie algebra itself is <em>The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</em>; the inner automorphisms as a group are <em>The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</em>; the operators of the Peirce decomposition are <em>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="derivations">Derivations</h2>
+<p><strong>Definition.</strong> Let $\operatorname{Der}(M_4)$ be the vector space of derivations of $M_4(\mathbb{C})$, with the bracket $[D_1,D_2]=D_1D_2-D_2D_1$.</p>
+<p><strong>Proposition.</strong> $\operatorname{Der}(M_4)$ is a Lie algebra, and for every $X\in M_4$ the map</p>
+<p>$$
+\operatorname{ad}_X(Y)=[X,Y]
+$$</p>
+<p>is a derivation.</p>
+<p><strong>Proof.</strong> The Jacobi identity gives</p>
+<p>$$
+\operatorname{ad}_X(YZ)=[X,YZ]=[X,Y]Z+Y[X,Z]=\operatorname{ad}_X(Y)Z+Y\operatorname{ad}_X(Z).
+$$</p>
+<p>The bracket of two derivations is a derivation because the commutator of two endomorphisms satisfying the Leibniz rule satisfies it as well.</p>
+<p><strong>Proposition.</strong> The kernel of $\operatorname{ad}:\mathfrak{gl}_4\to\operatorname{Der}(M_4)$ is the centre $\mathbb{C}I$, and the image is $\operatorname{ad}\mathfrak{sl}_4$, of dimension $15$.</p>
+<p><strong>Proof.</strong> $\operatorname{ad}_X=0$ exactly when $X$ commutes with every matrix, that is, when $X$ is scalar. The image of $\operatorname{ad}$ is isomorphic to $\mathfrak{gl}_4/\mathbb{C}I\cong\mathfrak{sl}_4$, of dimension $15$.</p>
+<p><strong>Theorem (Wedderburn).</strong> Every derivation of $M_4(\mathbb{C})$ is inner:</p>
+<p>$$
+\operatorname{Der}(M_4)=\operatorname{ad}\mathfrak{sl}_4,\qquad
+\dim\operatorname{Der}(M_4)=15.
+$$</p>
+<p><strong>Proof.</strong> The theorem is the case $n=4$ of Wedderburn's theorem: every derivation of a central simple algebra over a field is inner. The elementary proof reconstructs $X$ from the images of the matrix units. Fix the units $E_{ij}$ and a derivation $D$. The relation $E_{ij}E_{kl}=\delta_{jk}E_{il}$ forces the entries of $D(E_{ij})$ to be the entries of a single matrix $X$: the entry $(1,k)$ of $D(E_{1j})$ is $X_{jk}$ for $k\ne j$, the entry $(1,j)$ of $D(E_{1j})$ is $X_{jj}-X_{11}$, and the entries of $D(E_{ij})$ in the other positions are the remaining entries of $X$ and $-X$; the consistency of these readings is the Leibniz rule applied to the three-factor identities $E_{ij}E_{jk}E_{ki}=E_{ii}$. With $X$ so reconstructed and normalised by $X_{11}=0$, the map $D-\operatorname{ad}_X$ is a derivation vanishing on every $E_{1j}$, hence on every matrix unit, hence everywhere. So $D=\operatorname{ad}_X$.</p>
+<p><strong>The inner derivations.</strong> The map $\operatorname{ad}$ is an isomorphism $\mathfrak{sl}_4\to\operatorname{Der}(M_4)$, and the derivation $\operatorname{ad}_X$ depends only on the traceless part of $X$. The fifteen-dimensional space of derivations is therefore a copy of $\mathfrak{sl}_4$, and the scalar matrices act trivially.</p>
+<p><strong>The grading.</strong> The derivations act on the Peirce blocks of an idempotent by the rule of <em>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</em>: $\operatorname{ad}_X$ carries $A_{rs}$ to $A_{rs}$ for the diagonal blocks and mixes the off-diagonal blocks according to the entries of $X$. The derivation is determined by its values on the four blocks.</p>
+<h2 id="automorphisms">Automorphisms</h2>
+<p><strong>Definition.</strong> An automorphism of $M_4(\mathbb{C})$ is an invertible linear map $\varphi$ with $\varphi(AB)=\varphi(A)\varphi(B)$ for all $A,B$.</p>
+<p><strong>Proposition.</strong> For every $U\in GL_4(\mathbb{C})$ the map $\operatorname{Inn}_U(A)=UAU^{-1}$ is an automorphism, and $\operatorname{Inn}_U=\operatorname{Inn}_V$ exactly when $V=\lambda U$ for some $\lambda\in\mathbb{C}^{\times}$.</p>
+<p><strong>Proof.</strong> Conjugation preserves products and is invertible. If $UAU^{-1}=VAV^{-1}$ for all $A$, then $V^{-1}U$ commutes with every $A$, hence is scalar.</p>
+<p><strong>Theorem (Skolem–Noether).</strong> Every automorphism of $M_4(\mathbb{C})$ is inner:</p>
+<p>$$
+\operatorname{Aut}(M_4)=PGL_4(\mathbb{C})=GL_4(\mathbb{C})/\mathbb{C}^{\times}I,
+$$</p>
+<p>of dimension $15$. In particular there is no outer automorphism.</p>
+<p><strong>Proof.</strong> The theorem is the case $n=4$ of the Skolem–Noether theorem: every isomorphism of central simple algebras is conjugation by an invertible element. The elementary proof uses the module: an automorphism $\varphi$ makes $\mathbb{C}^{4}$ into a second module for $M_4$ by $A\cdot v=\varphi(A)v$, and the two modules are isomorphic because $M_4$ has a unique irreducible module up to isomorphism; an intertwiner $U$ satisfies $\varphi(A)U=UA$, that is, $\varphi(A)=UAU^{-1}$.</p>
+<p><strong>The centre.</strong> The scalar matrices act trivially, so the automorphism group is the quotient $PGL_4$, not $GL_4$. The determinant of $A$ is preserved by every inner automorphism, but the group is not reduced to $SL_4$: conjugation by $U$ and by $\lambda U$ agree for every $\lambda\ne0$, and the correct statement is $PGL_4\cong SL_4/\mu_4$, where $\mu_4$ is the group of fourth roots of unity acting by scalars.</p>
+<p><strong>The Lie algebra.</strong> The Lie algebra of $\operatorname{Aut}(M_4)$ is $\operatorname{Der}(M_4)=\mathfrak{sl}_4$, and the exponential of a derivation is an automorphism: $\exp(\operatorname{ad}_X)(A)=e^{X}Ae^{-X}$. The exponential map of $PGL_4$ is the exponential of $\mathfrak{sl}_4$ modulo the kernel of the adjoint representation.</p>
+<h2 id="the-math107-structures">The $*$-Structures</h2>
+<p><strong>Definition.</strong> A $*$-derivation is a derivation $D$ with $D(A^{*})=D(A)^{*}$ for all $A$. A $*$-automorphism is an automorphism $\varphi$ with $\varphi(A^{*})=\varphi(A)^{*}$.</p>
+<p><strong>Proposition.</strong> A derivation $\operatorname{ad}_X$ is a $*$-derivation exactly when $X$ is skew-Hermitian, $X^{*}=-X$. The $*$-derivations form the real Lie algebra $\mathfrak{u}(4)$ modulo its centre, isomorphic to $\mathfrak{su}(4)$, of real dimension $15$.</p>
+<p><strong>Proof.</strong> For $Y$ arbitrary,</p>
+<p>$$
+\operatorname{ad}_X(Y)^{*}=[Y,X]^{*}=[X^{*},Y^{*}]=-\operatorname{ad}_{X^{*}}(Y^{*}).
+$$</p>
+<p>The condition $\operatorname{ad}_X(Y^{*})=\operatorname{ad}_X(Y)^{*}$ for all $Y$ is therefore $\operatorname{ad}_X=\operatorname{ad}_{-X^{*}}$, that is, $X+X^{*}$ is scalar. The scalar part acts trivially, so the condition is that the traceless part of $X$ is skew-Hermitian; the skew-Hermitian matrices form $\mathfrak{u}(4)$ of real dimension $16$, and the scalars $i\theta I$ act trivially, leaving $\mathfrak{su}(4)$ of dimension $15$.</p>
+<p><strong>The $*$-automorphisms.</strong> The automorphism $\operatorname{Inn}_U$ is a $*$-automorphism exactly when $U$ is unitary:</p>
+<p>$$
+(UAU^{-1})^{*}=UAU^{-1}\quad\text{for all }A
+\iff
+U^{*}U\in\mathbb{C}^{\times}I.
+$$</p>
+<p>The group of $*$-automorphisms is therefore $PU(4)=U(4)/U(1)$, of real dimension $15$, the compact real form of $PGL_4$.</p>
+<p><strong>The real structure.</strong> For the real form $M_4(\mathbb{R})$ the derivations are $\operatorname{ad}\mathfrak{sl}_4(\mathbb{R})$, of real dimension $15$, and the automorphisms are $PGL_4(\mathbb{R})$. For the quaternionic form $M_2(\mathbb{H})$ the derivations are $\operatorname{ad}\mathfrak{sl}_2(\mathbb{H})$, and the automorphisms are $PGL_2(\mathbb{H})$; the two real forms are <em>The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-antilinear-automorphisms">The Antilinear Automorphisms</h2>
+<p><strong>Definition.</strong> A <strong>complex-antilinear automorphism</strong> is a bijective map $\varphi$ with</p>
+<p>$$
+\varphi(A+B)=\varphi(A)+\varphi(B),\qquad
+\varphi(\lambda A)=\bar\lambda\,\varphi(A),\qquad
+\varphi(AB)=\varphi(A)\varphi(B).
+$$</p>
+<p><strong>Proposition.</strong> Every antilinear automorphism is of the form</p>
+<p>$$
+\varphi(A)=U\bar A U^{-1}
+$$</p>
+<p>for some $U\in GL_4(\mathbb{C})$, and two matrices $U,V$ give the same map exactly when $V=\lambda U$ with $\lambda\in\mathbb{C}^{\times}$.</p>
+<p><strong>Proof.</strong> Composing $\varphi$ with the conjugation $\bar A$ gives a complex-linear automorphism $A\mapsto \varphi(\bar A)$, which is inner by Skolem–Noether: $\varphi(\bar A)=UAU^{-1}$, hence $\varphi(A)=U\bar A U^{-1}$. The ambiguity is the scalar, as for the linear case.</p>
+<p><strong>The group.</strong> The antilinear automorphisms form the coset $PGL_4\cdot\bar{\phantom{A}}$, and</p>
+<p>$$
+\operatorname{Aut}_\mathbb{R}(M_4)=PGL_4(\mathbb{C})\rtimes\mathbb{Z}/2,
+$$</p>
+<p>where the nontrivial element acts by $\bar{\phantom{A}}$. The subgroup of complex-linear automorphisms has index two, and the coset is the set of antilinear ones.</p>
+<p><strong>The real forms again.</strong> An antilinear automorphism of order two is a <strong>real structure</strong> on the algebra; its fixed algebra is a real form. The two possibilities, $\varphi^{2}=\mathrm{id}$ and $\varphi^{2}$ an inner automorphism of order two, correspond to the real and quaternionic structures. The classification is <em>The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</em>; the point here is that the antilinear automorphisms are a single coset, and the real forms are the fixed algebras of its involutions.</p>
+<h2 id="the-biquaternion-comparison">The Biquaternion Comparison</h2>
+<p><strong>The derivations of $\mathbb{B}$.</strong> The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has derivations</p>
+<p>$$
+\operatorname{Der}(\mathbb{B})=\operatorname{ad}\mathbb{B}\cong\mathfrak{sl}_2(\mathbb{C}),
+$$</p>
+<p>of complex dimension $3$, and automorphisms $PGL_2(\mathbb{C})$, of dimension $3$. The inner derivation $\operatorname{ad}_u$ for $u\in\mathbb{B}$ is the infinitesimal rotation of the biquaternion algebra; the three-dimensional algebra is the one generated by the three imaginary units.</p>
+<p><strong>The embedding.</strong> The left factor of the Kronecker decomposition gives an inclusion</p>
+<p>$$
+\mathfrak{sl}_2(\mathbb{C})\cong\operatorname{ad}(\mathbb{B}\otimes I)\subset\operatorname{ad}\mathfrak{sl}_4=\operatorname{Der}(M_4),
+$$</p>
+<p>and the right factor gives a second, commuting copy. The two copies are the two factors of <em>The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</em>, and their sum is a six-dimensional subalgebra of the fifteen derivations. The remaining nine derivations mix the two factors: they are the ones that do not preserve the tensor decomposition.</p>
+<p><strong>The physical interpretation.</strong> The derivations of $\mathbb{B}$ are the gauge rotations of the biquaternion algebra, of dimension three; the derivations of $M_4$ are the gauge rotations of the algebra of two-sided operators, of dimension fifteen. The difference of twelve is the price of the passage from the four-dimensional algebra to its sixteen-dimensional endomorphism algebra, and it is the same difference that separates the biquaternion frame from the gamma frame of <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>Every derivation of $M_4(\mathbb{C})$ is inner, $\operatorname{Der}(M_4)=\operatorname{ad}\mathfrak{sl}_4\cong\mathfrak{sl}_4$ of dimension $15$, with kernel $\mathbb{C}I$; every automorphism is inner, $\operatorname{Aut}(M_4)=PGL_4(\mathbb{C})$ of dimension $15$, with no outer automorphisms. The $*$-derivations are the skew-Hermitian ones, forming $\mathfrak{su}(4)$, and the $*$-automorphisms are $PU(4)$; the antilinear automorphisms form the coset $PGL_4\rtimes\mathbb{Z}/2$. The biquaternion algebra has only a three-dimensional derivation algebra, embedded twice in the fifteen, and the remaining nine derivations mix the two Kronecker factors.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim\operatorname{Der}(M_4)$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(M_4)$</td>
+<td>$\operatorname{ad}\mathfrak{sl}_4$</td>
+</tr>
+<tr>
+<td>Kernel of $\operatorname{ad}$</td>
+<td>$\mathbb{C}I$</td>
+</tr>
+<tr>
+<td>$\dim\operatorname{Aut}(M_4)$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(M_4)$</td>
+<td>$PGL_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>Outer automorphisms</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$*$-derivations</td>
+<td>$\mathfrak{su}(4)$, dimension $15$</td>
+</tr>
+<tr>
+<td>$*$-automorphisms</td>
+<td>$PU(4)$, dimension $15$</td>
+</tr>
+<tr>
+<td>Antilinear automorphisms</td>
+<td>$PGL_4\rtimes\mathbb{Z}/2$</td>
+</tr>
+<tr>
+<td>$\dim\operatorname{Der}(\mathbb{B})$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Der}(M_4)$</td>
+<td>the Lie algebra of derivations</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X$</td>
+<td>the inner derivation $Y\mapsto [X,Y]$</td>
+</tr>
+<tr>
+<td>$\operatorname{Inn}_U$</td>
+<td>the inner automorphism $A\mapsto UAU^{-1}$</td>
+</tr>
+<tr>
+<td>$PGL_4$</td>
+<td>$GL_4/\mathbb{C}^{\times}I$, the automorphism group</td>
+</tr>
+<tr>
+<td>$PU(4)$</td>
+<td>$U(4)/U(1)$, the $*$-automorphism group</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_\mathbb{R}$</td>
+<td>the group of linear and antilinear automorphisms</td>
+</tr>
+<tr>
+<td>$\mu_4$</td>
+<td>the fourth roots of unity, the kernel of $SL_4\to PGL_4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-lie-algebra-gl4-and-sl4-of-m4c.html">The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</a>, for $\mathfrak{sl}_4$ and its root decomposition.</li>
+<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for the derivations on the Peirce blocks.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</a>, for the action of $PGL_4$.</li>
+<li><a href="the-kronecker-factorisation-of-m4c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the two commuting $\mathfrak{sl}_2$'s.</li>
+<li><a href="the-real-forms-of-m4c.html">The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</a>, for the real and quaternionic structures.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the $*$-structures.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for Wedderburn's and Skolem–Noether's theorems.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the derivations of matrix algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quartic, the Discriminant and the Spectral Strata of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quartic-the-discriminant-and-the-spectral-strata-of-math0"><strong>The Quartic, the Discriminant and the Spectral Strata of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every element $A\in M_4(\mathbb{C})$ has a characteristic polynomial of degree four,</p>
+<p>$$
+\chi_A(t)=\det(tI-A)=t^{4}-c_1t^{3}+c_2t^{2}-c_3t+c_4,
+$$</p>
+<p>with $c_1=\operatorname{tr}A$, $c_2$ the second elementary symmetric function of the eigenvalues, $c_3$ the third and $c_4=\det A$. The four roots, counted with multiplicity, are the eigenvalues. The <strong>discriminant</strong> $\Delta$ is the product of the squared differences of the roots,</p>
+<p>$$
+\Delta=\prod_{1\le i<j\le 4}(\lambda_i-\lambda_j)^{2}.
+$$</p>
+<p>It vanishes exactly when two eigenvalues coincide, so it is the polynomial that detects the collision of the spectrum. This article computes $\Delta$ in the coefficients, reduces the quartic to its depressed form and solves it by the resolvent cubic, describes the five spectral strata by the multiplicity pattern and their dimensions, and reads the discriminant locus as the hypersurface where the spectral projectors cease to depend holomorphically on $A$.</p>
+<p>The article is the degree-four member of the family <em>The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$</em> and <em>The Quintic and the Spectral Strata of $M_5(\mathbb{C})$</em>. The general spectral theory, the Jordan form and the Dunford calculus are <em>Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</em>; the root case $H^{4}=I$ is <em>Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</em>. Nothing of those articles is reproved here.</p>
+<h2 id="the-characteristic-quartic">The Characteristic Quartic</h2>
+<p><strong>Definition.</strong> For $A\in M_4(\mathbb{C})$ the characteristic polynomial is $\chi_A(t)=\det(tI-A)$, and its coefficients are</p>
+<p>$$
+c_1=e_1,\qquad c_2=e_2,\qquad c_3=e_3,\qquad c_4=e_4,
+$$</p>
+<p>the elementary symmetric functions of the four eigenvalues.</p>
+<p><strong>Proposition (Newton's identities).</strong> With $p_k=\operatorname{tr}A^{k}$,</p>
+<p>$$
+c_1=p_1,\qquad
+c_2=\tfrac12\bigl(p_1^{2}-p_2\bigr),\qquad
+c_3=\tfrac16\bigl(p_1^{3}-3p_1p_2+2p_3\bigr),
+$$</p>
+<p>and</p>
+<p>$$
+c_4=\tfrac1{24}\bigl(p_1^{4}-6p_1^{2}p_2+3p_2^{2}+8p_1p_3-6p_4\bigr).
+$$</p>
+<p><strong>Proof.</strong> Expand $p_k=\sum_i\lambda_i^{k}$ in the elementary symmetric functions by Newton's recursion $p_k-e_1p_{k-1}+e_2p_{k-2}-\cdots+(-1)^{k-1}e_{k-1}p_1+(-1)^{k}ke_k=0$ for $k\le 4$, and solve for $e_k$. The four formulas are the solutions at $k=1,2,3,4$. The trace of $A^{k}$ is the power sum of the eigenvalues, so the identities hold for the matrix.</p>
+<p><strong>The degree.</strong> The coefficient $c_k$ is a polynomial of degree $k$ in the entries. The determinant $c_4$ has $24$ terms, and $c_2$ and $c_3$ are the sums of the principal minors of order two and three.</p>
+<p><strong>Cayley–Hamilton.</strong> $\chi_A(A)=0$, so every power $A^{n}$ with $n\ge4$ is a linear combination of $I,A,A^{2},A^{3}$, and $\mathbb{C}[A]$ has dimension at most four. The dimension is four exactly when the minimal polynomial has degree four, that is, when $A$ is cyclic.</p>
+<p><strong>The trace and the determinant of the roots.</strong> By Vieta,</p>
+<p>$$
+\sum_i\lambda_i=c_1,\qquad
+\sum_{i<j}\lambda_i\lambda_j=c_2,\qquad
+\sum_{i<j<k}\lambda_i\lambda_j\lambda_k=c_3,\qquad
+\lambda_1\lambda_2\lambda_3\lambda_4=c_4.
+$$</p>
+<h2 id="the-discriminant">The Discriminant</h2>
+<p><strong>Definition.</strong> For a monic quartic with roots $\lambda_1,\dots,\lambda_4$, the <strong>discriminant</strong> is $\Delta=\prod_{i<j}(\lambda_i-\lambda_j)^{2}$.</p>
+<p><strong>The depressed form.</strong> Put $t=y+c_1/4$. The quartic becomes</p>
+<p>$$
+y^{4}+py^{2}+qy+r,
+$$</p>
+<p>with</p>
+<p>$$
+p=c_2-\tfrac38c_1^{2},\qquad
+q=-c_3+\tfrac12c_1c_2-\tfrac18c_1^{3},\qquad
+r=c_4-\tfrac14c_1c_3+\tfrac1{16}c_1^{2}c_2-\tfrac3{256}c_1^{4}.
+$$</p>
+<p>The cubic term is removed by the shift, and the discriminant is unchanged, because differences of roots are unchanged.</p>
+<p><strong>Theorem (the discriminant of the depressed quartic).</strong></p>
+<p>$$
+\Delta=256r^{3}-128p^{2}r^{2}+144pq^{2}r-27q^{4}+16p^{4}r-4p^{3}q^{2}.
+$$</p>
+<p><strong>Proof.</strong> The discriminant is the resultant of the quartic and its derivative, divided by the leading coefficient; for the depressed quartic the resultant is a polynomial in $p,q,r$ that is homogeneous of weighted degree $12$ when $p,q,r$ carry the weights $1,2,3$. The six monomials displayed are the monomials of that weighted degree that occur, and their coefficients are fixed by evaluation at six convenient quartics: $y^{4}-1$, $y^{4}+1$, $(y^{2}-1)^{2}$, $(y-1)^{4}$, $y^{4}+y$ and $y^{4}+y^{2}$. Each evaluation is a direct computation of the root differences, and the resulting linear system has the displayed solution. Equivalently, the formula is the standard discriminant of a quartic, written in the depressed variables.</p>
+<p><strong>The general form.</strong> Substituting $p,q,r$ in the theorem gives $\Delta$ as a polynomial in $c_1,\dots,c_4$ of degree six. In the entries of $A$ it is homogeneous of degree twelve, because $c_k$ has degree $k$ and every monomial of the displayed polynomial has weighted degree twelve.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quartic</th>
+<th>$p,q,r$</th>
+<th>$\Delta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$y^{4}-1$</td>
+<td>$0,0,-1$</td>
+<td>$-256$</td>
+</tr>
+<tr>
+<td>$y^{4}+1$</td>
+<td>$0,0,1$</td>
+<td>$256$</td>
+</tr>
+<tr>
+<td>$(y^{2}-1)^{2}$</td>
+<td>$-2,0,1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$(y-1)^{4}$</td>
+<td>$0,0,0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$y^{4}+y$</td>
+<td>$0,1,0$</td>
+<td>$-27$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The root case.</strong> For $H$ with $H^{4}=I$ and simple spectrum, $\chi_H(t)=t^{4}-1$, so $c_1=c_2=c_3=0$, $c_4=-1$, and $\Delta=-256$. The four roots are $1,-1,i,-i$; the six differences are $2$, $1-i$, $1+i$, $-1-i$, $-1+i$ and $2i$, and the product of their squares is $-256$. The quartic of this article is the deformation of $t^{4}-1$ in which the four roots move independently.</p>
+<p><strong>The vanishing.</strong> $\Delta=0$ exactly when two roots coincide, because a product of squares vanishes exactly when one factor vanishes. The discriminant is therefore the equation of the <strong>discriminant locus</strong>, the set of matrices with a repeated eigenvalue.</p>
+<h2 id="the-resolvent-cubic">The Resolvent Cubic</h2>
+<p><strong>Definition.</strong> For roots $\lambda_1,\dots,\lambda_4$ put</p>
+<p>$$
+z_1=(\lambda_1+\lambda_2)(\lambda_3+\lambda_4),\qquad
+z_2=(\lambda_1+\lambda_3)(\lambda_2+\lambda_4),\qquad
+z_3=(\lambda_1+\lambda_4)(\lambda_2+\lambda_3).
+$$</p>
+<p>The three numbers $z_k$ are the roots of the <strong>resolvent cubic</strong>.</p>
+<p><strong>Theorem (the resolvent in the coefficients).</strong> The resolvent cubic is</p>
+<p>$$
+z^{3}-2c_2z^{2}+\bigl(c_2^{2}+c_1c_3-4c_4\bigr)z-\bigl(c_3^{2}-c_1c_2c_3+c_1^{2}c_4\bigr)=0.
+$$</p>
+<p>In the depressed variables, where $c_1=0$, $c_2=p$, $c_3=-q$ and $c_4=r$, it reads</p>
+<p>$$
+z^{3}-2pz^{2}+\bigl(p^{2}-4r\bigr)z+q^{2}=0.
+$$</p>
+<p><strong>Proof.</strong> The sum $z_1+z_2+z_3$ is twice the second elementary symmetric function, hence $2c_2$. The sum of the pairwise products and the product are computed by expanding in the roots and collecting the elementary symmetric functions; the expansions give $c_2^{2}+c_1c_3-4c_4$ and $c_3^{2}-c_1c_2c_3+c_1^{2}c_4$. The depressed form follows by substituting $c_1=0$, $c_2=p$, $c_3=-q$, $c_4=r$.</p>
+<p><strong>The Ferrari reduction.</strong> Put $t=y+c_1/4$ and suppose the depressed quartic split as</p>
+<p>$$
+y^{4}+py^{2}+qy+r=(y^{2}+uy+v)(y^{2}-uy+w).
+$$</p>
+<p>Comparing coefficients gives $v+w-u^{2}=p$, $u(w-v)=q$ and $vw=r$. Eliminating $v$ and $w$ gives</p>
+<p>$$
+u^{2}\bigl(u^{4}+2pu^{2}+p^{2}-4r\bigr)=q^{2},
+$$</p>
+<p>that is, $z=u^{2}$ is a root of the resolvent cubic. Conversely, every root $z$ of the resolvent with a square root $u$ produces a factorisation.</p>
+<p><strong>The four roots.</strong> Let $z_1,z_2,z_3$ be the roots of the resolvent and let $u_k$ be square roots with $u_1^{2}=-z_1$, $u_2^{2}=-z_2$, $u_3^{2}=-z_3$, chosen so that</p>
+<p>$$
+u_1u_2u_3=-\Bigl(c_3-\tfrac12c_1c_2+\tfrac18c_1^{3}\Bigr),
+$$</p>
+<p>the third elementary symmetric function of the shifted roots. Then the four roots of the quartic are</p>
+<p>$$
+\lambda=\frac{c_1}{4}+\frac12\bigl(u_1+u_2+u_3\bigr),\qquad
+\lambda=\frac{c_1}{4}+\frac12\bigl(u_1-u_2-u_3\bigr),
+$$</p>
+<p>and</p>
+<p>$$
+\lambda=\frac{c_1}{4}+\frac12\bigl(-u_1+u_2-u_3\bigr),\qquad
+\lambda=\frac{c_1}{4}+\frac12\bigl(-u_1-u_2+u_3\bigr).
+$$</p>
+<p><strong>Why the sign condition.</strong> With $y_k$ the shifted roots, whose sum is zero, put $u_1=y_1+y_2$, $u_2=y_1+y_3$ and $u_3=y_1+y_4$. Then $u_k^{2}=(y_1+y_j)^{2}=-z_k$ for the three pairings, and $u_1u_2u_3$ is the elementary symmetric function $e_3(y)$. The four linear combinations displayed recover $y_1,y_2,y_3,y_4$. An arbitrary choice of the three square roots changes the product by a sign and permutes the four values, so the set of four roots is unchanged only when the product is the prescribed one.</p>
+<p><strong>Solvability by radicals.</strong> The reduction solves the quartic by two square roots and one cube root: the resolvent is a cubic, solved by Cardano, and each of its roots contributes a square root. The Galois group of a general quartic is $S_4$, of order $24$, solvable; the resolvent cubic distinguishes the transitive subgroups: $S_4$ when the resolvent is irreducible with non-square discriminant, $A_4$ when it is irreducible with square discriminant, $V_4$ when it splits completely, and $C_4$ or $D_4$ in the remaining cases.</p>
+<h2 id="the-spectral-strata">The Spectral Strata</h2>
+<p><strong>Definition.</strong> Two matrices have the same <strong>spectral type</strong> when their eigenvalues have the same multiplicities. The type is a partition of $4$, written $1^{4}$, $2\,1\,1$, $2\,2$, $3\,1$ or $4$.</p>
+<p><strong>Theorem (the five strata).</strong> The sets of matrices of each type are locally closed algebraic subvarieties of $M_4(\mathbb{C})$. Each contains an open dense orbit, of the following complex dimension.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Multiplicities</th>
+<th>Dimension</th>
+<th>Codimension</th>
+<th>Discriminant locus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1^{4}$</td>
+<td>$1,1,1,1$</td>
+<td>$16$</td>
+<td>$0$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$2\,1\,1$</td>
+<td>$2,1,1$</td>
+<td>$15$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$2\,2$</td>
+<td>$2,2$</td>
+<td>$14$</td>
+<td>$2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$3\,1$</td>
+<td>$3,1$</td>
+<td>$14$</td>
+<td>$2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$4$</td>
+<td>$13$</td>
+<td>$3$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> A matrix of type $1^{4}$ is determined up to conjugation by its four distinct eigenvalues, and the centraliser of a diagonalisable matrix with distinct eigenvalues is the torus $(\mathbb{C}^{\times})^{4}$ of dimension $4$; the orbit has dimension $16-4=12$, and the four eigenvalues add the missing four parameters. For a repeated type, the open dense orbit is the non-derogatory one, with minimal polynomial of degree four and centraliser $\mathbb{C}[A]$ of dimension $4$; the orbit has dimension $12$, and the distinct eigenvalues add the missing parameters. For $2\,1\,1$ the representative $\operatorname{diag}(J_2(a),b,c)$ with $a,b,c$ distinct has centraliser $\mathbb{C}[J_2]\oplus\mathbb{C}\oplus\mathbb{C}$, of dimension $4$, so the orbit has dimension $12$; the three distinct eigenvalues add three parameters, giving $15$. For $2\,2$ the representative $\operatorname{diag}(J_2(a),J_2(b))$ has centraliser of dimension $4$ and orbit dimension $12$; the two distinct eigenvalues add two parameters, giving $14$. For $3\,1$ the representative $\operatorname{diag}(J_3(a),b)$ has centraliser of dimension $4$ and orbit dimension $12$; the two distinct eigenvalues add two parameters, giving $14$. For $4$ the representative $J_4(a)$ has centraliser $\mathbb{C}[J_4]$, of dimension $4$, the orbit has dimension $12$, and the single eigenvalue adds one parameter, giving $13$. The smaller Jordan refinements lie in the closure and have larger centralisers. Each defining condition is the vanishing of a polynomial (the discriminant or its derivatives), so each stratum is locally closed.</p>
+<p><strong>The centraliser.</strong> The open dense orbit of every type has centraliser of dimension exactly $4$, because its minimal polynomial has degree four. The other Jordan refinements have larger centralisers; the scalar matrices, whose centraliser is the whole algebra of dimension $16$, are the extreme case in the type $4$ stratum.</p>
+<p><strong>The refinements.</strong> Inside the stratum of a single eigenvalue $a$, the Jordan type refines the picture: the types $4$, $3\,1$, $2\,2$, $2\,1\,1$ and $1^{4}$ at the same $a$ are the nilpotent orbits of the nilpotent cone of $M_4$, shifted by $aI$. Their dimensions are $12$, $10$, $8$, $6$ and $0$ in the nilpotent cone; at fixed $a$ these are the dimensions of the submanifolds, and allowing $a$ to vary adds one to each, giving $13$, $11$, $9$, $7$ and $1$.</p>
+<p><strong>The closures and the incidence.</strong> The stratum $1^{4}$ is open and dense, and every other stratum lies in its closure. The stratum $4$ lies in the closure of $3\,1$, which lies in the closure of $2\,1\,1$; the stratum $4$ also lies in the closure of $2\,2$. Both $2\,1\,1$ and $2\,2$ lie in the closure of $1^{4}$, and $2\,2$ lies in the closure of $2\,1\,1$ (the collision of the two single eigenvalues), but not conversely. The discriminant locus is the union of the four repeated strata, a hypersurface of degree six in the coefficients and of degree twelve in the entries.</p>
+<p><strong>The spectral projectors.</strong> On the stratum $1^{4}$ the four eigenvalues are distinct and the Lagrange projectors</p>
+<p>$$
+P_k=\prod_{l\ne k}\frac{A-\lambda_lI}{\lambda_k-\lambda_l}
+$$</p>
+<p>are polynomial in $A$ and depend holomorphically on $A$. On the discriminant locus the Lagrange formula degenerates: at a double root the two projectors have no individual limit, and only their sum, the Dunford projector of the repeated eigenvalue, is continuous. The limit is <em>Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</em>, where the Dunford calculus is stated.</p>
+<h2 id="summary">Summary</h2>
+<p>The characteristic quartic $t^{4}-c_1t^{3}+c_2t^{2}-c_3t+c_4$ is computed from the traces by Newton's identities. The discriminant is a polynomial of degree six in the coefficients and twelve in the entries; in the depressed variables it is $256r^{3}-128p^{2}r^{2}+144pq^{2}r-27q^{4}+16p^{4}r-4p^{3}q^{2}$, and it vanishes exactly on the locus of a repeated eigenvalue. The resolvent cubic reduces the quartic to two square roots and one cube root, with the sign condition $u_1u_2u_3=e_3(y)$. The spectrum stratifies the algebra into five types, of dimensions $16$, $15$, $14$, $14$ and $13$, with centraliser dimension four on the open dense orbit of every type and a Jordan refinement inside every repeated type. The root of unity $H^{4}=I$ is the case $t^{4}-1$, of discriminant $-256$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_4(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Degree of the characteristic polynomial</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Degree of the discriminant in the coefficients</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>Degree of the discriminant in the entries</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>Simple spectrum dimension</td>
+<td>$16$ complex, $32$ real</td>
+</tr>
+<tr>
+<td>One double root</td>
+<td>$15$ complex, $30$ real</td>
+</tr>
+<tr>
+<td>Two double roots</td>
+<td>$14$ complex, $28$ real</td>
+</tr>
+<tr>
+<td>Triple root and a simple root</td>
+<td>$14$ complex, $28$ real</td>
+</tr>
+<tr>
+<td>Quadruple root</td>
+<td>$13$ complex, $26$ real</td>
+</tr>
+<tr>
+<td>Centraliser of a non-scalar matrix</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Centraliser of a scalar</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>Discriminant of $t^{4}-1$</td>
+<td>$-256$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\chi_A(t)$</td>
+<td>the characteristic polynomial $\det(tI-A)$</td>
+</tr>
+<tr>
+<td>$c_1,c_2,c_3,c_4$</td>
+<td>the elementary symmetric functions of the spectrum, $c_1=\operatorname{tr}A$, $c_4=\det A$</td>
+</tr>
+<tr>
+<td>$p_k$</td>
+<td>the power sum $\operatorname{tr}A^{k}$</td>
+</tr>
+<tr>
+<td>$p,q,r$</td>
+<td>the coefficients of the depressed quartic $y^{4}+py^{2}+qy+r$</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>the discriminant $\prod_{i<j}(\lambda_i-\lambda_j)^{2}$</td>
+</tr>
+<tr>
+<td>$z_1,z_2,z_3$</td>
+<td>the roots of the resolvent cubic</td>
+</tr>
+<tr>
+<td>$u_1,u_2,u_3$</td>
+<td>the square roots with $u_k^{2}=-z_k$ and $u_1u_2u_3=e_3(y)$</td>
+</tr>
+<tr>
+<td>$J_k(a)$</td>
+<td>the Jordan block of size $k$ at $a$</td>
+</tr>
+<tr>
+<td>$P_k$</td>
+<td>a Lagrange spectral projector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</a>, for the Jordan form, the resolvent and the Dunford calculus.</li>
+<li><a href="the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html">The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$</a>, for the degree-three analogue.</li>
+<li><a href="the-quintic-and-the-spectral-strata-of-m5c.html">The Quintic and the Spectral Strata of $M_5(\mathbb{C})$</a>, for the degree-five analogue and the strata of $M_5$.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-m4c.html">Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$</a>, for the root case $H^{4}=I$.</li>
+<li><a href="the-element-the-coordinates-and-the-trace-of-m4c.html">The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$</a>, for the coordinates and the Jordan decomposition.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</a>, for the orbit–stabiliser reading.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the characteristic polynomial, the resolvent and the Jordan form.</li>
+<li>Igor R. Shafarevich, <em>Basic Algebraic Geometry 1</em> (Springer, 2013), for the strata of matrices of given Jordan type.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

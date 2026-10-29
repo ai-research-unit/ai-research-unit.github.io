@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cartan Decomposition and the Symmetric Space of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cartan-decomposition-and-the-symmetric-space-of-math0"><strong>The Cartan Decomposition and the Symmetric Space of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The unit group $GL_4(\mathbb{C})$ is a real Lie group of dimension $32$. Its <strong>Cartan involution</strong> is</p>
+<p>$$
+\Theta(g)=(g^{*})^{-1},
+$$</p>
+<p>whose fixed subgroup is the unitary group $U(4)$. At the level of the Lie algebra $\mathfrak{gl}_4(\mathbb{C})$, regarded as a real Lie algebra, the involution is</p>
+<p>$$
+\theta(X)=-X^{*},
+$$</p>
+<p>with fixed algebra $\mathfrak{u}(4)$ and $(-1)$-eigenspace the Hermitian matrices. The <strong>Cartan decomposition</strong> is the direct sum</p>
+<p>$$
+\mathfrak{gl}_4(\mathbb{C})=\mathfrak{u}(4)\oplus\operatorname{Herm}_4,
+$$</p>
+<p>of real dimensions $16+16=32$, and at the group level it is the polar decomposition</p>
+<p>$$
+GL_4(\mathbb{C})=U(4)\cdot\operatorname{Herm}_4^{++},
+$$</p>
+<p>where $\operatorname{Herm}_4^{++}$ is the open cone of positive definite Hermitian matrices. The quotient</p>
+<p>$$
+GL_4(\mathbb{C})/U(4)\cong\operatorname{Herm}_4^{++}
+$$</p>
+<p>is a Riemannian symmetric space of non-compact type, of real dimension $16$.</p>
+<p>This article states the involution, the decomposition, the symmetric space, its metric and geodesics, and the relation to the compact and indefinite cases. The polar decomposition of a single element is <em>The Polar Decomposition of $M_4(\mathbb{C})$</em>; the Hermitian structure and the unitary group are <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>; the indefinite case is <em>The Krein Isometry Group and Its Cartan Decomposition</em>.</p>
+<h2 id="the-cartan-involution">The Cartan Involution</h2>
+<p><strong>Definition.</strong> On $GL_4(\mathbb{C})$ the Cartan involution is $\Theta(g)=(g^{*})^{-1}$; on $\mathfrak{gl}_4(\mathbb{C})$ it is $\theta(X)=-X^{*}$.</p>
+<p><strong>Proposition.</strong> $\Theta$ is an involutive automorphism of the group, $\theta$ is an involutive automorphism of the real Lie algebra, and the two are compatible with the exponential.</p>
+<p><strong>Proof.</strong> For the group, $\Theta(gh)=((gh)^{*})^{-1}=(h^{*}g^{*})^{-1}=(g^{*})^{-1}(h^{*})^{-1}=\Theta(g)\Theta(h)$, and $\Theta^{2}(g)=((g^{*})^{-1})^{*}{}^{-1}=g$. For the algebra, $\theta([X,Y])=-[X,Y]^{*}=-[Y^{*},X^{*}]=[-X^{*},-Y^{*}]=[\theta X,\theta Y]$, and $\theta^{2}(X)=-(-X^{*})^{*}=X$. The compatibility is $\Theta(e^{X})=e^{\theta X}$, because $(e^{X})^{*}=e^{X^{*}}$.</p>
+<p><strong>The fixed subgroup.</strong> $\Theta(g)=g$ means $(g^{*})^{-1}=g$, that is, $g^{*}g=I$: the fixed subgroup is $U(4)$.</p>
+<p><strong>The fixed algebra.</strong> $\theta(X)=X$ means $-X^{*}=X$, that is, $X^{*}=-X$: the fixed algebra is $\mathfrak{u}(4)$, of real dimension $16$. The $(-1)$-eigenspace is the space of Hermitian matrices, $\operatorname{Herm}_4=\{X:X^{*}=X\}$, also of real dimension $16$.</p>
+<p><strong>The decomposition.</strong> Every $X\in\mathfrak{gl}_4$ splits uniquely as</p>
+<p>$$
+X=\underbrace{\tfrac12(X-X^{*})}_{\text{skew-Hermitian}}+\underbrace{\tfrac12(X+X^{*})}_{\text{Hermitian}},
+$$</p>
+<p>so</p>
+<p>$$
+\mathfrak{gl}_4(\mathbb{C})=\mathfrak{u}(4)\oplus\operatorname{Herm}_4
+$$</p>
+<p>as real vector spaces. The summands are the eigenspaces of $\theta$ for the eigenvalues $+1$ and $-1$.</p>
+<p><strong>The bracket relations.</strong> The decomposition is a <strong>Cartan decomposition</strong>:</p>
+<p>$$
+[\mathfrak{u},\mathfrak{u}]\subseteq\mathfrak{u},\qquad
+[\mathfrak{u},\mathfrak{p}]\subseteq\mathfrak{p},\qquad
+[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{u},
+$$</p>
+<p>with $\mathfrak{p}=\operatorname{Herm}_4$. The first is closure of the unitary algebra; the second is the statement that the commutator of a skew-Hermitian and a Hermitian matrix is Hermitian; the third is the statement that the commutator of two Hermitian matrices is skew-Hermitian.</p>
+<h2 id="the-symmetric-space">The Symmetric Space</h2>
+<p><strong>Theorem.</strong> The map</p>
+<p>$$
+GL_4(\mathbb{C})/U(4)\longrightarrow\operatorname{Herm}_4^{++},\qquad
+gU(4)\longmapsto (g^{*}g)^{1/2},
+$$</p>
+<p>is a diffeomorphism onto the open cone of positive definite Hermitian matrices. The cone is a symmetric space of non-compact type, of real dimension $16$.</p>
+<p><strong>Proof.</strong> Every $g\in GL_4$ has a unique polar decomposition $g=UP$ with $U\in U(4)$ and $P$ positive definite Hermitian; the map is well defined and bijective, with inverse $P\mapsto P^{1/2}U(4)$. The cone is open in the real vector space $\operatorname{Herm}_4$, of dimension $16$, and it is a symmetric space: the geodesic symmetry at $P$ is $Q\mapsto PQ^{-1}P$, an involutive isometry. The space is of non-compact type because its identity component is the quotient of the non-compact group $GL_4$ by the maximal compact $U(4)$.</p>
+<p><strong>The group action.</strong> $GL_4$ acts on the cone by $g\cdot P=gPg^{*}$, and the action is transitive with stabiliser $U(4)$ at $P=I$. The involution at the identity is $P\mapsto P^{-1}$.</p>
+<p><strong>The metric.</strong> The trace form</p>
+<p>$$
+\langle X,Y\rangle=\operatorname{Re}\operatorname{tr}(X^{*}Y)
+$$</p>
+<p>is a positive definite real inner product on $\mathfrak{gl}_4$, invariant under $U(4)$. It restricts to a $GL_4$-invariant Riemannian metric on the cone by</p>
+<p>$$
+\langle X,Y\rangle_P=\operatorname{tr}(P^{-1}XP^{-1}Y),\qquad X,Y\in T_P\operatorname{Herm}_4=\operatorname{Herm}_4.
+$$</p>
+<p><strong>The geodesics.</strong> The geodesic through $P$ with velocity $H\in\operatorname{Herm}_4$ is</p>
+<p>$$
+P(t)=P^{1/2}\exp\bigl(tP^{-1/2}HP^{-1/2}\bigr)P^{1/2}.
+$$</p>
+<p><strong>Proof.</strong> At $t=0$ the curve is $P$, and its derivative is $P^{1/2}P^{-1/2}HP^{-1/2}P^{1/2}=H$. The curve is the image under the exponential map of the symmetric space, hence a geodesic; the formula is the standard one for the space of positive definite matrices.</p>
+<p><strong>The curvature.</strong> The symmetric space is of non-compact type, so its sectional curvature is non-positive. The flat directions are the directions of the diagonal torus; the negatively curved directions are the off-diagonal Hermitian directions. The space is not of constant curvature except in dimension one.</p>
+<p><strong>The boundary.</strong> The cone $\operatorname{Herm}_4^{++}$ is convex and open in $\operatorname{Herm}_4$; its boundary consists of the positive semidefinite matrices with a nontrivial kernel, stratified by rank. The strata of rank $k$ have dimensions $k^{2}+2k(4-k)$: $16$ for $k=4$ (the open cone) and $15$, $12$, $7$ on the boundary for $k=3,2,1$.</p>
+<p><strong>The proof of the dimension.</strong> A positive semidefinite matrix of rank $k$ has a $k$-dimensional image and a $k$-dimensional positive part: $k^{2}$ parameters for the positive form on the image and $2k(4-k)$ for the choice of the $k$-plane. The total is $2k(4-k)+k^{2}$; at $k=3$ this is $6+9=15$, at $k=2$ it is $8+4=12$, at $k=1$ it is $6+1=7$.</p>
+<h2 id="the-compact-and-indefinite-cases">The Compact and Indefinite Cases</h2>
+<p><strong>The compact dual.</strong> The compact dual of $GL_4(\mathbb{C})/U(4)$ is the group manifold $U(4)$ itself: the complexification of the compact group $U(4)$ is $GL_4$, and the symmetric space is the non-compact dual of the group. The compact duals of the indefinite spaces are the Grassmannians: the compact dual of $SU(1,3)/S(U(1)\times U(3))=\mathbb{CH}^{3}$ is $\mathbb{CP}^{3}$, and the compact dual of $SU(2,2)/S(U(2)\times U(2))$ is $\operatorname{Gr}(2,4)$, both of real dimension $6$ and $8$.</p>
+<p><strong>The indefinite case.</strong> For the form $J=\operatorname{diag}(1,1,-1,-1)$ the same construction gives the Cartan decomposition of $\mathfrak{su}(2,2)$ and the symmetric space $SU(2,2)/S(U(2)\times U(2))$ of real dimension $8$. For $J=\operatorname{diag}(1,-1,-1,-1)$ it gives $SU(1,3)/S(U(1)\times U(3))=\mathbb{CH}^{3}$, of real dimension $6$. The three real forms $\mathfrak{su}(4)$, $\mathfrak{su}(2,2)$ and $\mathfrak{su}(1,3)$ are the compact case, the case of the form of signature $(2,2)$ and the case of signature $(1,3)$; their signatures are computed in <em>The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</em>.</p>
+<p><strong>The Iwasawa decomposition.</strong> $GL_4=U(4)\cdot A\cdot N$, with $A$ the positive diagonal matrices, of real dimension $4$, and $N$ the unipotent upper triangular group, of real dimension $12$; the product $AN$ has dimension $16$, the dimension of the symmetric space. The Iwasawa decomposition is the group-level counterpart of the Gram–Schmidt process. For $SL_4$ the diagonal factor has dimension $3$ and the product $AN$ has dimension $15$.</p>
+<h2 id="the-place-in-the-category">The Place in the Category</h2>
+<p><strong>The involution and the form.</strong> The Cartan involution is the real form of the $*$-structure: it uses the same conjugate transpose as the Hermitian structure of <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>, but it packages it as an involution of the real Lie algebra. The fixed algebra $\mathfrak{u}(4)$ is the compact real form of $\mathfrak{gl}_4$; the $(-1)$-eigenspace is the space of Hermitian matrices, not the traceless part.</p>
+<p><strong>The polar decomposition.</strong> The group-level Cartan decomposition is the polar decomposition $g=UP$, and the symmetric space is the space of the positive factors. The uniqueness of the polar decomposition is the uniqueness of the decomposition; the freedom on the kernel for singular elements is the boundary of the cone.</p>
+<p><strong>The biquaternion comparison.</strong> For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the same construction gives $GL_2(\mathbb{C})/U(2)$, of real dimension $4$, and the cone of positive definite Hermitian $2\times2$ matrices. The passage from $2$ to $4$ doubles the rank of the cone and quadruples its dimension; the Cartan involution is the same formula in both cases.</p>
+<h2 id="summary">Summary</h2>
+<p>The Cartan involution $\Theta(g)=(g^{*})^{-1}$ has fixed subgroup $U(4)$ and induces $\theta(X)=-X^{*}$ on the real Lie algebra, with fixed algebra $\mathfrak{u}(4)$ and $(-1)$-eigenspace $\operatorname{Herm}_4$. The Cartan decomposition is $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$, of real dimensions $16+16$, and at the group level the polar decomposition $GL_4=U(4)\cdot\operatorname{Herm}_4^{++}$. The quotient is the cone of positive definite Hermitian matrices, a symmetric space of non-compact type of real dimension $16$, with non-positive curvature and geodesics $P(t)=P^{1/2}\exp(tP^{-1/2}HP^{-1/2})P^{1/2}$. The compact dual is the group manifold $U(4)$; the indefinite analogues are $\mathbb{CH}^{3}$ and $\operatorname{Gr}(2,4)$, with compact duals $\mathbb{CP}^{3}$ and $\operatorname{Gr}(2,4)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim_\mathbb{R}GL_4(\mathbb{C})$</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>$\dim_\mathbb{R}U(4)$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\dim_\mathbb{R}\operatorname{Herm}_4$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\dim_\mathbb{R}GL_4/U(4)$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>Rank of the symmetric space</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Compact dual of $GL_4/U(4)$</td>
+<td>$U(4)$</td>
+</tr>
+<tr>
+<td>Compact dual of $\mathbb{CH}^{3}$</td>
+<td>$\mathbb{CP}^{3}$, dimension $6$</td>
+</tr>
+<tr>
+<td>$SU(2,2)/S(U(2)\times U(2))$</td>
+<td>dimension $8$</td>
+</tr>
+<tr>
+<td>$SU(1,3)/S(U(1)\times U(3))$</td>
+<td>dimension $6$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Theta(g)=(g^{*})^{-1}$</td>
+<td>the Cartan involution of the group</td>
+</tr>
+<tr>
+<td>$\theta(X)=-X^{*}$</td>
+<td>the Cartan involution of the Lie algebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(4)$</td>
+<td>the skew-Hermitian matrices, the fixed algebra</td>
+</tr>
+<tr>
+<td>$\operatorname{Herm}_4$</td>
+<td>the Hermitian matrices, the $(-1)$-eigenspace</td>
+</tr>
+<tr>
+<td>$\operatorname{Herm}_4^{++}$</td>
+<td>the positive definite Hermitian matrices</td>
+</tr>
+<tr>
+<td>$P(t)$</td>
+<td>the geodesic through $P$ with velocity $H$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-polar-decomposition-of-m4c.html">The Polar Decomposition of $M_4(\mathbb{C})$</a>, for the decomposition of a single element.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the conjugate transpose and the unitary group.</li>
+<li><a href="the-lie-algebra-gl4-and-sl4-of-m4c.html">The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</a>, for the real forms and their signatures.</li>
+<li><a href="the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a>, for the indefinite case.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</a>, for the Grassmannians and the flag variety.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the Cartan decomposition and the symmetric spaces.</li>
+<li>Jacques Faraut and Adam Korányi, <em>Analysis on Symmetric Cones</em> (Oxford, 1994), for the cone of positive definite matrices.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

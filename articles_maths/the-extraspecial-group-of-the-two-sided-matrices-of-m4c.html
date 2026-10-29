@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-extraspecial-group-of-the-two-sided-matrices-of-math0"><strong>The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ of <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>, together with their negatives, form a finite group of order $32$:</p>
+<p>$$
+G=\{\pm T_{\mu\nu}:\mu,\nu\in\{t,x,y,z\}\}.
+$$</p>
+<p>The group is the <strong>central product of two quaternion groups</strong>,</p>
+<p>$$
+G\cong Q_8\circ Q_8,
+$$</p>
+<p>the left multiplications giving one $Q_8$ and the right multiplications the other. It is an <strong>extraspecial</strong> group of order $2^{1+4}$: its centre is $\{\pm I\}$, its quotient $G/\{\pm I\}$ is the four-dimensional space $(\mathbb{Z}/2)^{4}$, and the commutator induces a nondegenerate alternating form on that space. The group has nineteen elements of order two, twelve of order four, seventeen conjugacy classes, and seventeen irreducible representations: sixteen of degree one and one of degree four, the defining representation on $\mathbb{C}^{4}$.</p>
+<p>This article states the group, the two quaternion subgroups, the centre and the exponent, the extraspecial structure, the commutator form, the abelian subgroups, the conjugacy classes and the character count, and the comparison with the two-qubit Pauli group. The operators themselves are <em>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</em> and <em>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</em>; the algebra they generate is <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-group">The Group</h2>
+<p><strong>Definition.</strong> Let $L_\mu$ and $R_\nu$ be the left and right multiplication operators on $\mathbb{B}\cong M_2(\mathbb{C})$ by the four biquaternion units, with $L_t=R_t=I$. The <strong>group of the two-sided matrices</strong> is</p>
+<p>$$
+G=\{\pm L_\mu R_\nu:\mu,\nu\in\{t,x,y,z\}\}.
+$$</p>
+<p><strong>Proposition.</strong> $G$ has order $32$, and its elements are distinct up to sign: the sixteen products $T_{\mu\nu}$ are distinct, no one is the negative of another, and the two signs give thirty-two distinct matrices.</p>
+<p><strong>Proof.</strong> The sixteen $T_{\mu\nu}$ are a basis of $M_4(\mathbb{C})$ by the method article, so they are linearly independent and in particular distinct; $-T_{\mu\nu}=T_{\mu'\nu'}$ would be a linear dependence. The unit is $T_{tt}=I$, and $-I=T_{tt}$ is a distinct element.</p>
+<p><strong>The product rule.</strong> The product is read from the multiplication of the units:</p>
+<p>$$
+(L_\mu R_\nu)(L_{\mu'}R_{\nu'})=L_\mu L_{\mu'}\,R_\nu R_{\nu'}
+$$</p>
+<p>because left and right multiplications commute. The left product $L_\mu L_{\mu'}$ is $\pm L_{\mu''}$ and the right product is $\pm R_{\nu''}$, with the signs fixed by the orientation convention of the units. Hence the product is $\pm T_{\mu''\nu''}$, and $G$ is closed under products and inverses.</p>
+<h2 id="the-two-quaternion-subgroups">The Two Quaternion Subgroups</h2>
+<p><strong>Proposition.</strong> The sets</p>
+<p>$$
+Q_L=\{\pm L_\mu:\mu\in\{t,x,y,z\}\},\qquad
+Q_R=\{\pm R_\nu:\nu\in\{t,x,y,z\}\}
+$$</p>
+<p>are subgroups isomorphic to the quaternion group $Q_8$.</p>
+<p><strong>Proof.</strong> The left multiplications satisfy $L_x^{2}=L_y^{2}=L_z^{2}=-I$ and $L_xL_y=-L_yL_x$; with $L_z=L_xL_y$ up to the orientation sign, the eight elements $\{\pm I,\pm L_x,\pm L_y,\pm L_z\}$ are the quaternion group: one element of order two, six of order four, and the multiplication of $Q_8$. The same holds on the right. $\square$</p>
+<p><strong>The central product.</strong> The two subgroups commute elementwise,</p>
+<p>$$
+L_\mu R_\nu=R_\nu L_\mu,
+$$</p>
+<p>because left and right multiplication commute in an associative algebra, and they meet in</p>
+<p>$$
+Q_L\cap Q_R=\{\pm I\}.
+$$</p>
+<p><strong>Theorem.</strong></p>
+<p>$$
+G=Q_L\,Q_R\cong Q_8\circ Q_8,\qquad |G|=\frac{8\cdot8}{2}=32.
+$$</p>
+<p><strong>Proof.</strong> Every element of $G$ is a product of an element of $Q_L$ and an element of $Q_R$ by definition. The product map $Q_L\times Q_R\to G$ is surjective; its kernel is the pairs $(x,x^{-1})$ with $x\in Q_L\cap Q_R=\{\pm I\}$, of order $2$. Hence $|G|=64/2=32$, and $G$ is the central product, the quotient of $Q_8\times Q_8$ by the diagonal central subgroup of order two.</p>
+<p><strong>The commutator.</strong> The two factors do not commute as abstract groups inside $Q_8\times Q_8$; their images in the central product commute because the identification is central. The commutator of a left and a right element is</p>
+<p>$$
+[L_\mu,R_\nu]=L_\mu R_\nu L_\mu^{-1}R_\nu^{-1}=I,
+$$</p>
+<p>and the nontrivial commutators come from within each $Q_8$: $[L_x,L_y]=-I$ and $[R_x,R_y]=-I$.</p>
+<h2 id="the-centre-and-the-exponent">The Centre and the Exponent</h2>
+<p><strong>Proposition.</strong> The centre of $G$ is $\{\pm I\}$.</p>
+<p><strong>Proof.</strong> An element $L_\mu R_\nu$ commutes with every $L_\alpha$ exactly when $L_\mu$ commutes with $L_\alpha$ for every $\alpha$, which forces $\mu=t$; and it commutes with every $R_\beta$ exactly when $\nu=t$. Hence the central elements are $\pm L_tR_t=\pm I$. $\square$</p>
+<p><strong>Proposition.</strong> The exponent of $G$ is $4$: every element has order at most four, and some have order four.</p>
+<p><strong>Proof.</strong> For $g=L_\mu R_\nu$,</p>
+<p>$$
+g^{2}=L_\mu^{2}R_\nu^{2}=\pm I,
+$$</p>
+<p>because each unit squares to $\pm I$; hence $g^{4}=I$. The elements $L_x$ and $R_x$ have order four, because their squares are $-I\ne I$. $\square$</p>
+<p><strong>The order count.</strong> The elements of order two are $-I$ and the eighteen products $L_\mu R_\nu$ with both $\mu\ne t$ and $\nu\ne t$, taken with both signs: $2+18=20$ elements satisfy $g^{2}=I$, of which nineteen have order exactly two. The remaining twelve elements, with exactly one index equal to $t$, have order four.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Number of elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$19$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$32$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-extraspecial-structure">The Extraspecial Structure</h2>
+<p><strong>Proposition.</strong> $G/\{\pm I\}\cong(\mathbb{Z}/2)^{4}$.</p>
+<p><strong>Proof.</strong> The quotient has order $16$. Its elements are the classes of $L_\mu R_\nu$; the class of $L_\mu R_\nu$ has order two because its square is $\pm I$, and the quotient is abelian because the commutator of any two elements lies in $\{\pm I\}$. A group of order $16$ and exponent two is $(\mathbb{Z}/2)^{4}$. $\square$</p>
+<p><strong>Theorem.</strong> $G$ is extraspecial of order $2^{1+4}$: its centre has order $2$, its quotient by the centre is elementary abelian of order $16$, and its derived subgroup is the centre.</p>
+<p><strong>Proof.</strong> The centre is $\{\pm I\}$ and the quotient is elementary abelian, which is the definition. The derived subgroup is contained in the centre because the quotient is abelian, and contains $-I$ because $[L_x,L_y]=-I$; hence $G'=\{\pm I\}$. $\square$</p>
+<p><strong>The commutator form.</strong> Define</p>
+<p>$$
+b(x\{\pm I\},y\{\pm I\})=[x,y]\in\{\pm I\}\cong\mathbb{F}_2.
+$$</p>
+<p><strong>Proposition.</strong> $b$ is a well-defined alternating bilinear form on $G/\{\pm I\}$, and it is nondegenerate.</p>
+<p><strong>Proof.</strong> The commutator depends only on the classes because the centre is central, and it is alternating because $[x,x]=I$; bilinearity is the identity $[xy,z]=[x,z]\,[y,z]$ in a class-two group. If $x\{\pm I\}$ is in the radical, then $[x,y]=I$ for all $y$, so $x$ is central and the class is the identity. $\square$</p>
+<p><strong>The type.</strong> The nondegenerate alternating form on a four-dimensional symplectic space over $\mathbb{F}_2$ has a symplectic basis $e_1,f_1,e_2,f_2$ with $b(e_i,f_i)=1$ and all other pairings zero; the group is the extraspecial group of that form, of order $2^{1+4}$.</p>
+<h2 id="the-abelian-subgroups">The Abelian Subgroups</h2>
+<p><strong>Proposition.</strong> The subgroup $\langle L_x,R_x\rangle$ is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$.</p>
+<p><strong>Proof.</strong> $L_x$ and $R_x$ commute, $L_x$ has order four, and $L_xR_x$ has order two, because $(L_xR_x)^{2}=L_x^{2}R_x^{2}=(-I)(-I)=I$. Every element of the subgroup is $L_x^{a}(L_xR_x)^{b}$ with $a\in\{0,1,2,3\}$ and $b\in\{0,1\}$, and these eight elements are distinct; the subgroup is abelian of order $8$, isomorphic to $\mathbb{Z}/4\times\mathbb{Z}/2$. $\square$</p>
+<p><strong>The maximal abelian subgroups.</strong> Every abelian subgroup $A$ has $A\cap\{\pm I\}$ of order at most two, and its image in $G/\{\pm I\}$ is a totally isotropic subspace for the commutator form, of dimension at most two. Hence $|A|\le 2\cdot4=8$, and the bound is attained. The maximal abelian subgroups are therefore the inverse images of the maximal totally isotropic planes of $G/\{\pm I\}$, of order $8$.</p>
+<p><strong>The count.</strong> A maximal totally isotropic plane in a four-dimensional symplectic space over $\mathbb{F}_2$ has $3$ nonzero vectors, and there are $15$ nonzero vectors; the number of such planes is $15\cdot 6/(3\cdot 2)=15$. The group has fifteen maximal abelian subgroups, matching the fifteen non-central conjugacy classes below.</p>
+<h2 id="the-conjugacy-classes-and-the-representations">The Conjugacy Classes and the Representations</h2>
+<p><strong>Proposition.</strong> $G$ has seventeen conjugacy classes: the two central classes $\{I\}$ and $\{-I\}$, and fifteen classes of size two.</p>
+<p><strong>Proof.</strong> A non-central element has centraliser of order $16$: the centraliser is the inverse image in $G$ of the orthogonal complement of its class under the commutator form, a three-dimensional subspace of $G/\{\pm I\}$, of order $8$; together with the centre this gives $16$. The class therefore has $32/16=2$ elements. There are $30$ non-central elements, hence $15$ classes of size two. $\square$</p>
+<p><strong>Theorem.</strong> $G$ has seventeen irreducible complex representations: sixteen of degree one and one of degree four, the defining representation on $\mathbb{C}^{4}$.</p>
+<p><strong>Proof.</strong> The number of irreducible representations equals the number of conjugacy classes, seventeen. The sixteen characters of the abelian quotient $G/\{\pm I\}\cong(\mathbb{Z}/2)^{4}$ are sixteen representations of degree one. The sum of the squares of the degrees is $|G|=32$, so the remaining representation has degree $d$ with $d^{2}=32-16=16$, that is, $d=4$. The defining representation is irreducible: the algebra generated by $G$ is $M_4(\mathbb{C})$, because the sixteen $T_{\mu\nu}$ are a basis, so its commutant is $\mathbb{C}I$ and the module $\mathbb{C}^{4}$ is simple. $\square$</p>
+<p><strong>The character table.</strong> The sixteen linear characters take values $\pm1$ on the classes of $L_\mu R_\nu$; the degree-four character is the trace of the defining representation: $\chi(I)=4$, $\chi(-I)=-4$, $\chi(L_\mu R_\nu)=0$ for $\mu,\nu\ne t$, and $\chi(L_\mu)=0$, $\chi(R_\nu)=0$ for the elements of order four, whose trace vanishes because their eigenvalues are $\pm i$ in pairs.</p>
+<p><strong>The Schrödinger representation.</strong> The uniqueness of the degree-four representation is the Stone–von Neumann theorem for the Heisenberg group over $\mathbb{F}_2$: the extraspecial group is the Heisenberg group of the symplectic form, and it has a unique irreducible representation of dimension $2^{2}=4$ on which the centre acts by $-1$.</p>
+<h2 id="the-pauli-comparison">The Pauli Comparison</h2>
+<p><strong>The two-qubit Pauli group.</strong> The Pauli group of two qubits is</p>
+<p>$$
+P_2=\{i^{k}P_1\otimes P_2:k\in\mathbb{Z}/4,\ P_j\in\{I,X,Y,Z\}\},
+$$</p>
+<p>of order $64$, with centre $\{\pm I,\pm iI\}\cong\mathbb{Z}/4$ of order four. The quotient by the centre is $(\mathbb{Z}/2)^{4}$. The commutator pairing takes values in $\{\pm I\}\subset Z(P_2)$ and is nondegenerate on $P_2/Z(P_2)$; the quotient by the smaller subgroup $\{\pm I\}$ is elementary abelian of order $32$.</p>
+<p><strong>The difference.</strong> $G$ and $P_2$ are not isomorphic, although both are built on the same symplectic space. $G$ has order $32$, centre of order $2$ and $G'=\{\pm I\}$; it is extraspecial and nonabelian. $P_2$ has order $64$ and centre $\mathbb{Z}/4$; its quotient by $\{\pm I\}$ is elementary abelian of order $32$, so $P_2$ is not extraspecial. The two share the symplectic space $(\mathbb{Z}/2)^{4}$ of the quotient by the centre, but the kernels of the central extensions differ: $\mathbb{Z}/2$ for $G$ and $\mathbb{Z}/4$ for $P_2$. The group of the two-sided matrices is therefore not the two-qubit Pauli group; it is the extraspecial double cover of the four-dimensional symplectic space over $\mathbb{F}_2$.</p>
+<p><strong>The physical interpretation.</strong> The nineteen elements of order two are the reflections of the two-sided frame; the twelve elements of order four are the quarter turns; the unique four-dimensional representation is the carrier of the algebra. The Clifford frame of <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em> is a different set of generators of the same algebra, and the comparison of $G$ with the Pauli group is the discrete side of the comparison of the two frames.</p>
+<h2 id="summary">Summary</h2>
+<p>The thirty-two matrices $\pm T_{\mu\nu}$ form a group $G$ of order $32$, the central product $Q_8\circ Q_8$ of the left and right quaternion subgroups. Its centre is $\{\pm I\}$, its exponent is $4$, it has nineteen elements of order two and twelve of order four, seventeen conjugacy classes, and seventeen irreducible representations: sixteen of degree one and one of degree four. The quotient $G/\{\pm I\}$ is $(\mathbb{Z}/2)^{4}$ with a nondegenerate alternating commutator form, so $G$ is extraspecial of order $2^{1+4}$; its maximal abelian subgroups have order $8$ and are fifteen in number. The group is not the two-qubit Pauli group: $G$ is nonabelian extraspecial of order $32$ with $G'=\{\pm I\}$, while the two-qubit Pauli group modulo $\{\pm I\}$ is elementary abelian of order $32$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$|G|$</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>Structure</td>
+<td>$Q_8\circ Q_8$</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>$\{\pm I\}$, order $2$</td>
+</tr>
+<tr>
+<td>Exponent</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Elements of order $2$</td>
+<td>$19$</td>
+</tr>
+<tr>
+<td>Elements of order $4$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>$G/\{\pm I\}$</td>
+<td>$(\mathbb{Z}/2)^{4}$</td>
+</tr>
+<tr>
+<td>Derived subgroup</td>
+<td>$\{\pm I\}$</td>
+</tr>
+<tr>
+<td>Conjugacy classes</td>
+<td>$17$</td>
+</tr>
+<tr>
+<td>Irreducible representations</td>
+<td>$16$ of degree $1$, $1$ of degree $4$</td>
+</tr>
+<tr>
+<td>Maximal abelian subgroups</td>
+<td>$15$, of order $8$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{\mu\nu}=L_\mu R_\nu$</td>
+<td>the two-sided operator of the pair $(\mu,\nu)$</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the group $\{\pm T_{\mu\nu}\}$</td>
+</tr>
+<tr>
+<td>$Q_L,Q_R$</td>
+<td>the quaternion subgroups $\{\pm L_\mu\}$ and $\{\pm R_\nu\}$</td>
+</tr>
+<tr>
+<td>$b$</td>
+<td>the commutator form on $G/\{\pm I\}$</td>
+</tr>
+<tr>
+<td>$P_2$</td>
+<td>the two-qubit Pauli group</td>
+</tr>
+<tr>
+<td>$Q_8\circ Q_8$</td>
+<td>the central product of two quaternion groups</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen operators and their product rule.</li>
+<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for the left, right and sandwich operators.</li>
+<li><a href="the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html">The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</a>, for the explicit matrices.</li>
+<li><a href="the-kronecker-factorisation-of-m4c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the two commuting factors.</li>
+<li><a href="the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the Clifford frame.</li>
+<li>Daniel Gorenstein, <em>Finite Groups</em> (Harper and Row, 1968), for extraspecial groups and their representations.</li>
+<li>I. Martin Isaacs, <em>Character Theory of Finite Groups</em> (Dover, 1994), for the character count and the degrees.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

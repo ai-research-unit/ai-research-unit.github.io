@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-sylvester-operator-and-the-kronecker-sum-of-math0"><strong>The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For a pair $A,B$ of matrices of $M_4(\mathbb{C})$ the <strong>Sylvester operator</strong> is the linear map</p>
+<p>$$
+\mathcal S_{A,B}:M_4(\mathbb{C})\longrightarrow M_4(\mathbb{C}),\qquad
+\mathcal S_{A,B}(X)=AX-XB .
+$$</p>
+<p>It is the operator form of the <strong>Sylvester equation</strong> $AX-XB=C$, and it is the difference of a left and a right multiplication, $\mathcal S_{A,B}=L_A-R_B$. Its spectrum, its kernel and its invertibility are therefore read from the spectra of $A$ and $B$ alone, and the three linear matrix equations that the corpus meets — the Sylvester equation, the Lyapunov equation and the discrete equation $AXB-X=C$ — are the same computation in three forms.</p>
+<p>This article states the matrix of $\mathcal S_{A,B}$ in the matrix units, the vec identities, the spectrum, the trace and the determinant, the invertibility criterion, the kernel and the image, and the Kronecker-sum forms of the three equations. It closes with the place of the operator in the category: the adjoint representation, the root space decomposition, and the difference family $\{L_A-R_B\}$ of dimension $31$ inside $\operatorname{End}(M_4)$.</p>
+<p>The spectral theory is <em>Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</em>; the Kronecker product and its two factors are <em>The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</em>; the commutant is <em>$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser</em>; the two-sided operators are <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>; and the Lie algebra is <em>The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</em>. The Clifford-algebra form of the same equation, with the dagger and its adjoint theory, is <em>The Hermitian Sylvester Equation with Hermitian Adjoint</em>, and the spectra of the sums $L_a+R_b$ on a Clifford algebra are <em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em>; the present article is the matrix case, and its criteria are the matrix forms of those. The numerical solution of the equations and their perturbation theory are not treated here.</p>
+<h2 id="the-operator-and-its-matrix">The Operator and Its Matrix</h2>
+<p><strong>Definition.</strong> For $A,B\in M_4(\mathbb{C})$ the Sylvester operator is $\mathcal S_{A,B}(X)=AX-XB$. It is linear, and it is the difference of the two one-sided operators</p>
+<p>$$
+L_A(X)=AX,\qquad R_B(X)=XB,\qquad \mathcal S_{A,B}=L_A-R_B .
+$$</p>
+<p><strong>Proposition.</strong> The operator $\mathcal S_{A,B}$ acts on the sixteen-dimensional complex vector space $M_4(\mathbb{C})$, and it is $\mathbb{C}$-linear.</p>
+<p><strong>Proof.</strong> The product is bilinear, so $X\mapsto AX$ and $X\mapsto XB$ are linear, and so is their difference.</p>
+<p><strong>The matrix in the matrix units.</strong> Write $\operatorname{vec}X$ for the column of length sixteen obtained by stacking the columns of $X$. Then</p>
+<p>$$
+\operatorname{vec}\bigl(\mathcal S_{A,B}(X)\bigr)
+=\bigl(I_4\otimes A-B^{\mathsf T}\otimes I_4\bigr)\operatorname{vec}X .
+$$</p>
+<p><strong>Proof.</strong> The entry $(i,j)$ of $AX$ is $\sum_k A_{ik}X_{kj}$ and the entry $(i,j)$ of $XB$ is $\sum_l X_{il}B_{lj}$. The coefficient of $X_{kj}$ in the first sum is $A_{ik}$ and the coefficient of $X_{il}$ in the second is $B_{lj}$, which is the display.</p>
+<p><strong>The entry form.</strong> With the row index $(i,j)$ and the column index $(k,l)$ of the operator matrix, the entries are</p>
+<p>$$
+\bigl(I_4\otimes A-B^{\mathsf T}\otimes I_4\bigr)_{(i,j),(k,l)}
+=\delta_{jl}A_{ik}-\delta_{ik}B_{lj} .
+$$</p>
+<p>The first term fixes the column of $X$ and reads a row of $A$, the second fixes the row of $X$ and reads a column of $B$; the operator matrix is neither symmetric nor antisymmetric in general.</p>
+<p><strong>The row form.</strong> Stacking the rows instead of the columns gives the similar matrix</p>
+<p>$$
+\operatorname{vec}_{\mathrm r}\bigl(\mathcal S_{A,B}(X)\bigr)
+=\bigl(A\otimes I_4-I_4\otimes B^{\mathsf T}\bigr)\operatorname{vec}_{\mathrm r}X .
+$$</p>
+<p>The two matrices are exchanged by the flip permutation $E_{ij}\mapsto E_{ji}$, so they have the same spectrum; the row form is the one used in the proof of the theorem below.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<p><strong>Proposition (the rank-one eigenvectors).</strong> Let $u$ be an eigenvector of $A$ with eigenvalue $\lambda$ and let $v$ be a left eigenvector of $B$ with eigenvalue $\mu$, that is, $v^{\mathsf T}B=\mu v^{\mathsf T}$. Then $X=uv^{\mathsf T}$ satisfies</p>
+<p>$$
+\mathcal S_{A,B}(X)=(\lambda-\mu)X .
+$$</p>
+<p><strong>Proof.</strong> $Auv^{\mathsf T}-uv^{\mathsf T}B=\lambda uv^{\mathsf T}-\mu uv^{\mathsf T}$.</p>
+<p><strong>Theorem (the spectrum).</strong> For every pair $A,B\in M_4(\mathbb{C})$,</p>
+<p>$$
+\operatorname{spec}\mathcal S_{A,B}
+=\bigl\{\lambda_i(A)-\lambda_j(B):\ 1\le i,j\le 4\bigr\},
+$$</p>
+<p>with algebraic multiplicities.</p>
+<p><strong>Proof.</strong> Choose $P$ and $Q$ invertible with $P^{-1}AP=T_A$ and $Q^{-1}B^{\mathsf T}Q=T_B$ upper triangular; the triangular forms exist by Schur's theorem over $\mathbb{C}$. The row form of the operator matrix is $A\otimes I_4-I_4\otimes B^{\mathsf T}$, and conjugation by $P\otimes Q$ carries it to $T_A\otimes I_4-I_4\otimes T_B$. In the row order $(i,j)$ the first term has the block $(i,k)=(T_A)_{ik}I_4$, hence is block upper triangular, and the second has the block $(i,k)=\delta_{ik}T_B$, hence is block diagonal with upper triangular blocks. The difference is block upper triangular, and each diagonal block is $(T_A)_{ii}I_4-T_B$, which is upper triangular. So the matrix is upper triangular, and its diagonal entries are</p>
+<p>$$
+(T_A)_{ii}-(T_B)_{jj},\qquad 1\le i,j\le 4 .
+$$</p>
+<p>The spectrum is therefore the set of differences, and the diagonal of an upper triangular matrix carries the algebraic multiplicities.</p>
+<p><strong>Corollary (the trace).</strong> $\operatorname{tr}\mathcal S_{A,B}=4\bigl(\operatorname{tr}A-\operatorname{tr}B\bigr)$.</p>
+<p><strong>Proof.</strong> Sum the sixteen eigenvalues: each $\lambda_i$ occurs four times and each $\lambda_j$ occurs four times.</p>
+<p><strong>Corollary (the determinant).</strong> $\det\mathcal S_{A,B}=\prod_{i,j}\bigl(\lambda_i(A)-\lambda_j(B)\bigr)$.</p>
+<p><strong>Proof.</strong> The determinant is the product of the eigenvalues of the operator.</p>
+<p><strong>Corollary (the invertibility criterion).</strong> The operator $\mathcal S_{A,B}$ is invertible exactly when</p>
+<p>$$
+\operatorname{spec}A\cap\operatorname{spec}B=\varnothing .
+$$</p>
+<p><strong>Proof.</strong> The determinant vanishes exactly when one of the factors $\lambda_i-\lambda_j$ vanishes.</p>
+<p>The corollary is the classical criterion of Sylvester: the equation $AX-XB=C$ has a unique solution for every $C$ exactly when the two spectra are disjoint.</p>
+<p><strong>The kernel.</strong> The kernel of $\mathcal S_{A,B}$ is the space of the intertwiners,</p>
+<p>$$
+\ker\mathcal S_{A,B}=\{X\in M_4(\mathbb{C}):AX=XB\}.
+$$</p>
+<p>For $A=B$ it is the commutant of $A$, whose dimension is read from the Jordan form. For a diagonalisable $A$ with eigenvalues of multiplicities $m_1,\dots,m_r$ the commutant has dimension $\sum_s m_s^{2}$; thus it has dimension $4$ for a cyclic matrix, $6$ for $\operatorname{diag}(1,1,2,3)$ and $16$ for a scalar matrix. For $A=B=J_4$ the commutant is the four-dimensional space of polynomials in $J_4$, although every eigenvalue has algebraic multiplicity four: the dimension is read from the Jordan block structure, not from the algebraic multiplicities alone.</p>
+<p><strong>The image for $A=B$.</strong> Let $\operatorname{ad}_A=\mathcal S_{A,A}$. With respect to the trace form $\langle X,Y\rangle=\operatorname{tr}(XY)$,</p>
+<p>$$
+\operatorname{im}\operatorname{ad}_A=(\ker\operatorname{ad}_A)^{\perp},\qquad
+\dim\operatorname{im}\operatorname{ad}_A=16-\dim\mathfrak z(A),
+$$</p>
+<p>where $\mathfrak z(A)$ is the commutant of $A$.</p>
+<p><strong>Proof.</strong> For every $Y$,</p>
+<p>$$
+\operatorname{tr}\bigl(Y[A,X]\bigr)=\operatorname{tr}(YAX)-\operatorname{tr}(YXA)
+=-\operatorname{tr}\bigl([A,Y]X\bigr),
+$$</p>
+<p>so $\operatorname{ad}_A$ is skew-adjoint for the trace form and its image is orthogonal to its kernel; the two dimensions add to sixteen because the form is nondegenerate.</p>
+<h2 id="the-kronecker-sum-and-the-linear-equations">The Kronecker Sum and the Linear Equations</h2>
+<p><strong>Definition.</strong> The <strong>Kronecker sum</strong> of $A$ and $B$ is</p>
+<p>$$
+A\oplus B=A\otimes I_4+I_4\otimes B .
+$$</p>
+<p><strong>Proposition (the vec identities).</strong> For every $X$,</p>
+<p>$$
+\operatorname{vec}(AXB)=(B^{\mathsf T}\otimes A)\operatorname{vec}X,\qquad
+\operatorname{vec}(AX+XB)=\bigl(I_4\otimes A+B^{\mathsf T}\otimes I_4\bigr)\operatorname{vec}X .
+$$</p>
+<p><strong>Proof.</strong> The first identity is the composition of the two one-sided identities, $\operatorname{vec}(AXB)=\operatorname{vec}(A(XB))=(B^{\mathsf T}\otimes A)\operatorname{vec}X$; the second is the sum of the two terms.</p>
+<p><strong>Corollary (the sum equation).</strong> The equation $AX+XB=C$ has a unique solution for every $C$ exactly when</p>
+<p>$$
+\lambda_i(A)+\lambda_j(B)\ne0\qquad\text{for all }i,j .
+$$</p>
+<p><strong>Proof.</strong> $AX+XB=\mathcal S_{A,-B}(X)$, and the spectrum of $-B$ is the set $-\lambda_j(B)$.</p>
+<p>This is the matrix case of the Clifford criterion $\det(L_A+R_B)=\prod_{i,j}(\lambda_i+\mu_j)$ of <em>The Spectra of Self-Adjoint Operators with Hermitian Adjoint</em>: the determinant vanishes exactly when some sum vanishes.</p>
+<p><strong>Theorem (the Sylvester solution).</strong> Suppose that $\operatorname{spec}A\cap\operatorname{spec}B=\varnothing$, and let $\Gamma$ be a simple closed contour that encloses $\operatorname{spec}A$ and excludes $\operatorname{spec}B$. Then the unique solution of $AX-XB=C$ is</p>
+<p>$$
+X=\frac{1}{2\pi i}\oint_\Gamma (zI_4-A)^{-1}C\,(zI_4-B)^{-1}\,dz .
+$$</p>
+<p><strong>Proof.</strong> The contour avoids both spectra, so the integrand is continuous and the integral converges. Write $R_A(z)=(zI_4-A)^{-1}$ and $R_B(z)=(zI_4-B)^{-1}$. The identities</p>
+<p>$$
+A R_A(z)=zR_A(z)-I_4,\qquad R_B(z)B=zR_B(z)-I_4
+$$</p>
+<p>give</p>
+<p>$$
+A R_A(z)C R_B(z)-R_A(z)C R_B(z)B
+=-C R_B(z)+R_A(z)C .
+$$</p>
+<p>The contour encloses $\operatorname{spec}A$ and excludes $\operatorname{spec}B$, so</p>
+<p>$$
+\frac{1}{2\pi i}\oint_\Gamma R_A(z)\,dz=I_4,\qquad
+\frac{1}{2\pi i}\oint_\Gamma R_B(z)\,dz=0 .
+$$</p>
+<p>Integrating the identity therefore gives $AX-XB=C$. The solution is unique by the invertibility criterion.</p>
+<p><strong>The Lyapunov equation.</strong> The equation $AX+XA^*=Q$ is the sum equation with $B=A^*$. Its operator has spectrum $\lambda_i(A)+\overline{\lambda_j(A)}$, so it is invertible exactly when no eigenvalue of $A$ is the negative conjugate of another.</p>
+<p><strong>Proposition (the integral form).</strong> Suppose that $\operatorname{Re}\lambda_i(A)<0$ for every $i$. Then for every $Q$ the equation</p>
+<p>$$
+AX+XA^*=-Q
+$$</p>
+<p>has the unique solution</p>
+<p>$$
+X=\int_0^\infty e^{tA}Qe^{tA^*}\,dt .
+$$</p>
+<p>If $Q$ is Hermitian, so is $X$.</p>
+<p><strong>Proof.</strong> The integrand decays exponentially, because $\|e^{tA}\|\le Ce^{-\gamma t}$ for some $\gamma>0$. Its derivative is</p>
+<p>$$
+\frac{d}{dt}\bigl(e^{tA}Qe^{tA^*}\bigr)
+=Ae^{tA}Qe^{tA^*}+e^{tA}Qe^{tA^*}A^* .
+$$</p>
+<p>Integrating from $0$ to $\infty$ gives $-Q$ on the left, because the limit at infinity vanishes and the value at zero is $Q$; the right side is $AX+XA^*$. The homogeneous equation has only the zero solution, because its operator has spectrum $\lambda_i+\overline{\lambda_j}\ne0$. The Hermitian symmetry follows by taking the conjugate transpose of the integral.</p>
+<p><strong>The discrete equation.</strong> The equation $AXB-X=C$ has the operator form</p>
+<p>$$
+\operatorname{vec}(AXB-X)=\bigl(B^{\mathsf T}\otimes A-I_{16}\bigr)\operatorname{vec}X .
+$$</p>
+<p>The eigenvalues of $B^{\mathsf T}\otimes A$ are the products $\lambda_i(A)\lambda_j(B)$: triangularise $A=P T_A P^{-1}$ and $B^{\mathsf T}=Q T_B Q^{-1}$, and note that $(Q\otimes P)^{-1}(B^{\mathsf T}\otimes A)(Q\otimes P)=T_B\otimes T_A$, a triangular matrix with diagonal products. Hence</p>
+<p>$$
+AXB-X=C\ \text{has a unique solution for every }C
+\iff
+\lambda_i(A)\lambda_j(B)\ne1\ \text{for all }i,j .
+$$</p>
+<h2 id="the-place-in-the-category">The Place in the Category</h2>
+<p><strong>The adjoint representation.</strong> The case $A=B$ is the adjoint operator: $\mathcal S_{A,A}=\operatorname{ad}_A$. For $A=\operatorname{diag}(\lambda_1,\dots,\lambda_4)$ the matrix units are eigenvectors,</p>
+<p>$$
+\operatorname{ad}_A(E_{ij})=(\lambda_i-\lambda_j)E_{ij},
+$$</p>
+<p>so the spectrum of $\operatorname{ad}_A$ is the set of differences, the twelve roots and the zero of the root space decomposition. The kernel is the Cartan subalgebra, of dimension four, and the image is its orthogonal complement for the trace form, of dimension twelve. The derivations are the operators $\operatorname{ad}_A$ with $A$ traceless: they form the fifteen-dimensional algebra of <em>The Derivations and the Automorphisms of $M_4(\mathbb{C})$</em>, because $\operatorname{ad}$ kills the scalars and is injective on the traceless part.</p>
+<p><strong>The difference family.</strong> The Sylvester operators are the elements of the linear subspace</p>
+<p>$$
+\mathcal D=\{L_A-R_B:\ A,B\in M_4(\mathbb{C})\}\subset\operatorname{End}(M_4(\mathbb{C})).
+$$</p>
+<p>The parametrisation $(A,B)\mapsto L_A-R_B$ has kernel the scalars: $L_A=R_B$ forces $A=B$ by evaluation at $I_4$, and then $[A,X]=0$ for every $X$ forces $A$ to be scalar. Hence</p>
+<p>$$
+\dim\mathcal D=16+16-1=31 .
+$$</p>
+<p>The subspace is the difference of the two copies $L(M_4)$ and $R(M_4)$ of $M_4$ inside $\operatorname{End}(M_4)$, whose intersection is the scalars. It is much smaller than the span of the products $L_AR_B$, which is the whole of $\operatorname{End}(M_4)$ of dimension $256$; the products themselves form the cone over the Segre variety, not a linear subspace. The case $B=A$ cuts out the fifteen-dimensional adjoint representation inside $\mathcal D$.</p>
+<p><strong>The flow.</strong> The one-parameter family $X(t)=e^{tA}Ce^{-tB}$ satisfies</p>
+<p>$$
+\frac{d}{dt}X(t)=A X(t)-X(t)B,
+$$</p>
+<p>so the Sylvester operator is the generator of the two-sided flow, and the contour formula of the theorem is the stationary form of the flow when the two spectra are separated.</p>
+<p><strong>The determinant as a resultant.</strong> The determinant $\prod_{i,j}(\lambda_i-\lambda_j)$ is the resultant of the two characteristic polynomials, $\operatorname{Res}(\chi_A,\chi_B)$, up to a sign; the vanishing criterion is therefore the statement that two polynomials have a common root. This is the form in which the criterion is used in the spectral theory of <em>Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The Sylvester operator $\mathcal S_{A,B}(X)=AX-XB$ is a linear operator on the sixteen-dimensional algebra $M_4(\mathbb{C})$. In the column-stacking basis its matrix is $I_4\otimes A-B^{\mathsf T}\otimes I_4$, and its spectrum is the set of differences $\lambda_i(A)-\lambda_j(B)$, with algebraic multiplicities. Its trace is $4(\operatorname{tr}A-\operatorname{tr}B)$, its determinant is the product of the differences, and it is invertible exactly when the spectra of $A$ and $B$ are disjoint. Its kernel is the space of intertwiners $AX=XB$; for $A=B$ it is the commutant, and the image of $\operatorname{ad}_A$ is the orthogonal complement of the commutant for the trace form. The Kronecker sum gives the analogous criteria for $AX+XB=C$ and $AXB-X=C$, and the contour integral gives the solution of the Sylvester equation when the spectra are separated. The operators $\{L_A-R_B\}$ form a subspace of dimension $31$, and the case $A=B$ is the adjoint representation, whose spectrum on the matrix units is the root system of $\mathfrak{sl}_4$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_4(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim M_4$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>Matrix of $\mathcal S_{A,B}$ (column stacking)</td>
+<td>$I_4\otimes A-B^{\mathsf T}\otimes I_4$</td>
+</tr>
+<tr>
+<td>$\operatorname{spec}\mathcal S_{A,B}$</td>
+<td>$\lambda_i(A)-\lambda_j(B)$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\mathcal S_{A,B}$</td>
+<td>$4(\operatorname{tr}A-\operatorname{tr}B)$</td>
+</tr>
+<tr>
+<td>$\det\mathcal S_{A,B}$</td>
+<td>$\prod_{i,j}(\lambda_i(A)-\lambda_j(B))$</td>
+</tr>
+<tr>
+<td>$\mathcal S_{A,B}$ invertible iff</td>
+<td>$\operatorname{spec}A\cap\operatorname{spec}B=\varnothing$</td>
+</tr>
+<tr>
+<td>$\ker\mathcal S_{A,A}$</td>
+<td>the commutant of $A$</td>
+</tr>
+<tr>
+<td>$\dim\{L_A-R_B\}$</td>
+<td>$31$</td>
+</tr>
+<tr>
+<td>$AX+XB=C$ solvable iff</td>
+<td>$\lambda_i(A)+\lambda_j(B)\ne0$</td>
+</tr>
+<tr>
+<td>$AXB-X=C$ solvable iff</td>
+<td>$\lambda_i(A)\lambda_j(B)\ne1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal S_{A,B}$</td>
+<td>the Sylvester operator $X\mapsto AX-XB$</td>
+</tr>
+<tr>
+<td>$L_A,R_B$</td>
+<td>left and right multiplication by $A$ and $B$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_A$</td>
+<td>the commutator operator $X\mapsto AX-XA$</td>
+</tr>
+<tr>
+<td>$\operatorname{vec}X$</td>
+<td>the column of the entries of $X$, stacked by columns</td>
+</tr>
+<tr>
+<td>$\operatorname{vec}_{\mathrm r}X$</td>
+<td>the same entries stacked by rows</td>
+</tr>
+<tr>
+<td>$A\oplus B$</td>
+<td>the Kronecker sum $A\otimes I_4+I_4\otimes B$</td>
+</tr>
+<tr>
+<td>$\operatorname{spec}A$</td>
+<td>the spectrum of $A$, with algebraic multiplicities</td>
+</tr>
+<tr>
+<td>$\mathfrak z(A)$</td>
+<td>the commutant of $A$ in $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathcal D$</td>
+<td>the subspace $\{L_A-R_B\}$ of $\operatorname{End}(M_4)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</a>, for the spectrum, the resolvent and the spectral projectors.</li>
+<li><a href="the-kronecker-factorisation-of-m4c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the Kronecker product and the two factors.</li>
+<li><a href="m4c-model-the-centraliser-and-the-double-centraliser.html">$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser</a>, for the commutant and its dimension.</li>
+<li><a href="m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</a>, for the operators $L_A$, $R_B$ and $T_{A,B}$.</li>
+<li><a href="the-lie-algebra-gl4-and-sl4-of-m4c.html">The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</a>, for the root space decomposition and the derivations.</li>
+<li><a href="the-derivations-and-the-automorphisms-of-m4c.html">The Derivations and the Automorphisms of $M_4(\mathbb{C})$</a>, for $\operatorname{Der}(M_4)=\operatorname{ad}\mathfrak{sl}_4$.</li>
+<li><a href="the-hermitian-sylvester-equation-with-hermitian-adjoint.html">The Hermitian Sylvester Equation with Hermitian Adjoint</a>, for the same equation on a Clifford algebra, with the dagger and the adjunction $L_a^*=L_{a^\dagger}$.</li>
+<li><a href="the-spectra-of-self-adjoint-operators-with-hermitian-adjoint.html">The Spectra of Self-Adjoint Operators with Hermitian Adjoint</a>, for $\det(L_a+R_b)=\prod_{i,j}(\lambda_i+\mu_j)$ and the spectral criterion in the Clifford setting.</li>
+<li><a href="analysis-on-m4c.html">Analysis on $M_4(\mathbb{C})$</a>, for the functional calculus and the resolvent.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m4c.html">The Exponential and the Lie Group of $M_4(\mathbb{C})$</a>, for the flow $e^{tA}Ce^{-tB}$.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge University Press, 1991), for the Sylvester and Lyapunov equations and the Kronecker product.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the spectrum of the Kronecker sum and the resultant criterion.</li>
+<li>Feliks R. Gantmacher, <em>The Theory of Matrices</em> (Chelsea, 1959), for the classical treatment of the matrix equations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation"><strong>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The purpose.</strong> This article carries out one coefficient computation in full. It takes a concrete $4\times4$ matrix, computes its sixteen coefficients in the basis $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, assembles the coefficient matrix, finds its rank, factors it, and reconstructs the matrix. Every step is written out, with the matrices displayed.</p>
+<p><strong>The matrix.</strong>
+$$
+M=\begin{pmatrix}1&2&0&0\\0&1&0&0\\0&0&1&2\\0&0&0&1\end{pmatrix}.
+$$
+It is upper triangular, all diagonal entries are $1$, so $\det M=1$ and $\operatorname{rank}M=4$. Its only nonzero entries are
+$$
+M_{11}=1,\quad M_{12}=2,\quad M_{22}=1,\quad M_{33}=1,\quad M_{34}=2,\quad M_{44}=1 .
+$$</p>
+<p><strong>The punchline, stated first.</strong> The ordinary rank is $4$, the maximal value. The length is $2$: the matrix is a sum of two two-sided operators, and not of one. The two numbers measure different things, and the ordinary rank gives no information about the length. The coefficient rank does.</p>
+<p><strong>The method and its source.</strong> The basis, the orthogonality theorem and the length theorem are <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>. This article is the computation that accompanies it.</p>
+<h2 id="the-formula">The Formula</h2>
+<p><strong>The coefficient.</strong> For $A\in M_4(\mathbb{C})$ and $\mu,\nu\in\{t,x,y,z\}$,
+$$
+c_{\mu\nu}(A)=\tfrac14\operatorname{tr}\bigl(T_{\mu\nu}^{*}A\bigr).
+$$</p>
+<p><strong>Why the factor four.</strong> The matrices $T_{\mu\nu}$ are orthogonal for the Hilbert–Schmidt form:
+$$
+\operatorname{tr}\bigl(T_{\mu\nu}^{*}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
+$$
+The square norm of each is four, so the coefficient carries the factor $\tfrac14$.</p>
+<p><strong>The matrices are real.</strong> Every $T_{\mu\nu}$ is a real signed permutation matrix, so $T_{\mu\nu}^{*}=T_{\mu\nu}^{\mathsf T}$ and
+$$
+\operatorname{tr}\bigl(T_{\mu\nu}^{*}A\bigr)=\sum_{i,j}(T_{\mu\nu})_{ij}A_{ij}.
+$$
+In practice: read the four nonzero positions of $T_{\mu\nu}$, add the corresponding entries of $A$ with their signs, divide by four. No matrix product is needed, though two are shown below as a check.</p>
+<p><strong>The index order.</strong> The labels $t,x,y,z$ correspond to the rows and columns $1,2,3,4$. The first index of $c_{\mu\nu}$ is the left parameter, the second the right parameter. The order is part of the definition; swapping it transposes the coefficient matrix and returns the wrong operator.</p>
+<h2 id="the-sixteen-traces">The Sixteen Traces</h2>
+<h3 id="the-four-diagonal-matrices">The four diagonal matrices</h3>
+<p><strong>$T_{tt}=\mathrm{I}_4$.</strong> The nonzero positions are the diagonal, all with sign $+1$:
+$$
+\operatorname{tr}(T_{tt}^{\mathsf T}M)=M_{11}+M_{22}+M_{33}+M_{44}=1+1+1+1=4,
+\qquad c_{tt}=1 .
+$$</p>
+<p><strong>$T_{xx}=\operatorname{diag}(-1,-1,1,1)$.</strong> The signs are $-,-,+,+$:
+$$
+\operatorname{tr}(T_{xx}^{\mathsf T}M)=-1-1+1+1=0,
+\qquad c_{xx}=0 .
+$$</p>
+<p><strong>$T_{yy}=\operatorname{diag}(-1,1,-1,1)$:</strong>
+$$
+-1+1-1+1=0,
+\qquad c_{yy}=0 .
+$$</p>
+<p><strong>$T_{zz}=\operatorname{diag}(-1,1,1,-1)$:</strong>
+$$
+-1+1+1-1=0,
+\qquad c_{zz}=0 .
+$$</p>
+<p><strong>The reading.</strong> The four diagonal matrices see only the diagonal of $M$. Three of the four sums vanish because the diagonal of $M$ is constant.</p>
+<h3 id="two-full-matrix-products">Two full matrix products</h3>
+<p><strong>The matrix $T_{xt}$.</strong> Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=-1$, $(4,3)=+1$:
+$$
+T_{xt}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+\qquad
+T_{xt}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix}.
+$$</p>
+<p><strong>The product, row by row.</strong> Row $1$ of $T_{xt}^{\mathsf T}$ is $(0,1,0,0)$, so the first row of the product is row $2$ of $M$. Row $2$ is $(-1,0,0,0)$, so the second row is minus row $1$ of $M$. Row $3$ is $(0,0,0,1)$, so the third row is row $4$ of $M$. Row $4$ is $(0,0,-1,0)$, so the fourth row is minus row $3$ of $M$:
+$$
+T_{xt}^{\mathsf T}M=
+\begin{pmatrix}
+0&1&0&0\\
+-1&-2&0&0\\
+0&0&0&1\\
+0&0&-1&-2
+\end{pmatrix}.
+$$
+The trace is $0+(-2)+0+(-2)=-4$, hence
+$$
+c_{xt}=\tfrac14(-4)=-1 .
+$$</p>
+<p><strong>The dot-product check.</strong> The signed positions of $T_{xt}$ give
+$$
+(-1)M_{12}+(+1)M_{21}+(-1)M_{34}+(+1)M_{43}
+=-2+0-2+0=-4 .
+$$</p>
+<p><strong>The matrix $T_{tx}$.</strong> Its nonzero positions are $(1,2)=-1$, $(2,1)=+1$, $(3,4)=+1$, $(4,3)=-1$:
+$$
+T_{tx}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+\qquad
+T_{tx}^{\mathsf T}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
+$$
+The product is
+$$
+T_{tx}^{\mathsf T}M=
+\begin{pmatrix}
+0&1&0&0\\
+-1&-2&0&0\\
+0&0&0&-1\\
+0&0&1&2
+\end{pmatrix},
+$$
+whose trace is $0+(-2)+0+2=0$. Hence
+$$
+c_{tx}=0 .
+$$</p>
+<p><strong>The trap.</strong> The two matrices agree in the first two rows and differ in the last two, and the two coefficients are different: $c_{xt}=-1$ and $c_{tx}=0$. A computation that prints $T_{tx}$ and transposes $T_{xt}$ returns $c_{tx}=-1$, transposes the coefficient matrix, and then fails at the reconstruction. The labels are not symmetric.</p>
+<h3 id="the-ten-remaining-off-diagonal-matrices">The ten remaining off-diagonal matrices</h3>
+<p><strong>The table.</strong> Each row gives the signed positions of $T_{\mu\nu}$ and the resulting sum. Every corresponding entry of $M$ is zero except in the last row.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Matrix</th>
+<th>Signed positions</th>
+<th>Sum</th>
+<th>Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{ty}$</td>
+<td>$(1,3){-}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){+}1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_{tz}$</td>
+<td>$(1,4){-}1$, $(2,3){+}1$, $(3,2){-}1$, $(4,1){+}1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_{yt}$</td>
+<td>$(1,3){-}1$, $(2,4){+}1$, $(3,1){+}1$, $(4,2){-}1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_{zt}$</td>
+<td>$(1,4){-}1$, $(2,3){-}1$, $(3,2){+}1$, $(4,1){+}1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_{xy}$</td>
+<td>$(1,4){+}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){+}1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_{xz}$</td>
+<td>$(1,3){-}1$, $(2,4){-}1$, $(3,1){-}1$, $(4,2){-}1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_{yx}$</td>
+<td>$(1,4){-}1$, $(2,3){-}1$, $(3,2){-}1$, $(4,1){-}1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_{yz}$</td>
+<td>$(1,2){+}1$, $(2,1){+}1$, $(3,4){-}1$, $(4,3){-}1$</td>
+<td>$+2+0-2+0=0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_{zx}$</td>
+<td>$(1,3){+}1$, $(2,4){-}1$, $(3,1){+}1$, $(4,2){-}1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$T_{zy}$</td>
+<td>$(1,2){-}1$, $(2,1){-}1$, $(3,4){-}1$, $(4,3){-}1$</td>
+<td>$-2-0-2-0=-4$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two cancellations.</strong> $T_{yz}$ and $T_{zy}$ are the only off-diagonal matrices whose signed positions meet nonzero entries of $M$, and they meet the same two entries with opposite signs. The sum is $+2-2=0$ for $T_{yz}$ and $-2-2=-4$ for $T_{zy}$. The cancellation in $T_{yz}$ is not an accident of this matrix: it is the sign difference between $L$ and $R$ on the same pair of indices.</p>
+<h3 id="the-coefficient-matrix">The coefficient matrix</h3>
+<p><strong>The result.</strong>
+$$
+c(M)=
+\begin{pmatrix}
+1&0&0&0\\
+-1&0&0&0\\
+0&0&0&0\\
+0&0&-1&0
+\end{pmatrix}.
+$$</p>
+<p><strong>The nonzero entries.</strong> Only three: $c_{tt}=1$, $c_{xt}=-1$, $c_{zy}=-1$. All the others vanish.</p>
+<h2 id="the-rank">The Rank</h2>
+<p><strong>The rows.</strong> Only rows $t$, $x$ and $z$ are nonzero, and rows $t$ and $x$ are proportional: row $x$ is minus row $t$. So the rank is at most $2$.</p>
+<p><strong>A minor.</strong> Take rows $\{t,z\}$ and columns $\{t,y\}$:
+$$
+\det\begin{pmatrix}c_{tt}&c_{ty}\\c_{zt}&c_{zy}\end{pmatrix}
+=\det\begin{pmatrix}1&0\\0&-1\end{pmatrix}=-1\ne0 .
+$$
+So the rank is exactly $2$.</p>
+<p><strong>The length.</strong>
+$$
+\ell(M)=\operatorname{rank}c(M)=2 .
+$$</p>
+<p><strong>What the minor does not show.</strong> The minor shows that two rows and two columns are independent. It does not show which factorisation is simplest; that is the next section.</p>
+<h2 id="reconstruction">Reconstruction</h2>
+<p><strong>The expansion.</strong> Since the only nonzero coefficients are $c_{tt}=1$, $c_{xt}=-1$ and $c_{zy}=-1$,
+$$
+M=T_{tt}-T_{xt}-T_{zy}.
+$$</p>
+<p><strong>The three matrices.</strong>
+$$
+T_{tt}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+\qquad
+-T_{xt}=\begin{pmatrix}0&1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},
+\qquad
+-T_{zy}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
+$$</p>
+<p><strong>The row sums.</strong>
+$$
+\begin{aligned}
+\text{row }1&:\ (1,0,0,0)+(0,1,0,0)+(0,1,0,0)=(1,2,0,0),\\
+\text{row }2&:\ (0,1,0,0)+(-1,0,0,0)+(1,0,0,0)=(0,1,0,0),\\
+\text{row }3&:\ (0,0,1,0)+(0,0,0,1)+(0,0,0,1)=(0,0,1,2),\\
+\text{row }4&:\ (0,0,0,1)+(0,0,-1,0)+(0,0,1,0)=(0,0,0,1).
+\end{aligned}
+$$
+Each row is the row of $M$. The reconstruction is correct.</p>
+<p><strong>The wrong reconstruction.</strong> With the transposed coefficient matrix one would write $M=T_{tt}-T_{tx}-T_{zy}$. The first two rows still agree, but the third and fourth do not:
+$$
+T_{tt}-T_{tx}-T_{zy}
+=\begin{pmatrix}1&2&0&0\\0&1&0&0\\0&0&1&0\\0&0&2&1\end{pmatrix},
+$$
+which is not $M$. The two entries $M_{34}=2$ and $M_{43}=0$ are exchanged. This is the visible cost of the index slip.</p>
+<h2 id="the-factorisation">The Factorisation</h2>
+<p><strong>Split by rows.</strong> The coefficient matrix is
+$$
+c(M)=e_t\,(1,0,0,0)+e_x\,(-1,0,0,0)+e_z\,(0,0,-1,0).
+$$
+The first two terms share the right vector $(1,0,0,0)$, so
+$$
+c(M)=(e_t-e_x)\,(1,0,0,0)+e_z\,(0,0,-1,0).
+$$</p>
+<p><strong>Read the two products.</strong>
+$$
+a_1=e_t-e_x,\quad b_1=e_t,\qquad
+a_2=e_z,\quad b_2=-e_y .
+$$
+Hence
+$$
+M=L_{e_t-e_x}R_{e_t}+L_{e_z}R_{-e_y}
+=L_{e_t-e_x}-L_{e_z}R_{e_y}
+=T_{tt}-T_{xt}-T_{zy}.
+$$</p>
+<p><strong>The two matrices.</strong>
+$$
+L_{e_t-e_x}=\mathrm{I}_4-L_x=
+\begin{pmatrix}1&1&0&0\\-1&1&0&0\\0&0&1&1\\0&0&-1&1\end{pmatrix},
+\qquad
+-L_{e_z}R_{e_y}=-T_{zy}=
+\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix}.
+$$
+Their sum is $M$.</p>
+<p><strong>Why two is the minimum.</strong> The coefficient matrix has rank $2$. A single product would give a coefficient matrix of rank one. So no single two-sided operator equals $M$, and length $2$ is exact.</p>
+<p><strong>The two products are rank four.</strong> Each of $L_{e_t-e_x}$ and $L_{e_z}R_{e_y}$ is an invertible matrix. The sum of two invertible matrices can be singular or not; here it is invertible. The length counts the terms, not the rank of the terms.</p>
+<h2 id="ordinary-rank-is-not-length">Ordinary Rank Is Not Length</h2>
+<p><strong>The two numbers.</strong>
+$$
+\operatorname{rank}M=4,\qquad \ell(M)=2 .
+$$</p>
+<p><strong>Why the ordinary rank is four.</strong> The matrix is upper triangular with unit diagonal, so $\det M=1$ and the four columns are independent.</p>
+<p><strong>Why the length is two.</strong> The coefficient matrix has rank two.</p>
+<p><strong>The matrix is not a left regular matrix.</strong> A left regular matrix $L_a$ has entries $(1,2)=-a_x$ and $(2,1)=+a_x$. The matrix $M$ has $M_{12}=2$ and $M_{21}=0$; it would need $a_x=-2$ and $a_x=0$. So $M$ is not of the form $L_a$: the right factor is needed. This is why the left regular model, of dimension four, cannot contain it.</p>
+<p><strong>The lesson.</strong> Ordinary rank measures the image of the matrix as a linear map. The length measures the least number of two-sided operators whose sum is the matrix. The two are independent: the identity has rank four and length one, the matrix unit $E_{11}$ has rank one and length four, and this matrix has rank four and length two.</p>
+<h2 id="the-recipe">The Recipe</h2>
+<p><strong>The six steps.</strong></p>
+<ol>
+<li>Compute the sixteen traces
+$$
+c_{\mu\nu}=\tfrac14\sum_{i,j}(T_{\mu\nu})_{ij}M_{ij}.
+$$</li>
+<li>Assemble the $4\times4$ coefficient matrix $c(M)$.</li>
+<li>Compute its rank, by $2\times2$ minors or by row reduction. That rank is the length.</li>
+<li>If the rank is one, factor $c=a\,b^{\mathsf T}$ and read off
+$$
+a=\sum_\mu a_\mu e_\mu,\qquad b=\sum_\nu b_\nu e_\nu,\qquad M=L_aR_b .
+$$</li>
+<li>If the rank is $r\ge2$, factor $c=UV$ with $U,V$ of size $4\times r$; the $r$ products are $L_{u_k}R_{v_k}$ for the columns $u_k$ of $U$ and $v_k$ of $V$.</li>
+<li>Reconstruct $M=\sum_{\mu,\nu}c_{\mu\nu}T_{\mu\nu}$ as a check.</li>
+</ol>
+<p><strong>The single-product test.</strong> It is step 3 with threshold one. It has nothing to do with the ordinary rank of $M$.</p>
+<p><strong>A remark on the factorisation.</strong> The factorisation of $c$ is not unique: any invertible $r\times r$ matrix $G$ gives $c=(UG)(G^{-1}V)$, and the $r$ products change while their sum does not. The row-split factorisation used above is the one that keeps each product as simple as possible.</p>
+<h2 id="summary">Summary</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the matrix $M$</td>
+<td>$4\times4$ upper triangular, blocks $\begin{pmatrix}1&2\\0&1\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>nonzero entries of $M$</td>
+<td>$M_{11}=1$, $M_{12}=2$, $M_{22}=1$, $M_{33}=1$, $M_{34}=2$, $M_{44}=1$</td>
+</tr>
+<tr>
+<td>nonzero coefficients</td>
+<td>$c_{tt}=1$, $c_{xt}=-1$, $c_{zy}=-1$</td>
+</tr>
+<tr>
+<td>coefficient matrix</td>
+<td>$\begin{pmatrix}1&0&0&0\\-1&0&0&0\\0&0&0&0\\0&0&-1&0\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>rank of $c(M)$</td>
+<td>$2$, minor on rows $\{t,z\}$ and columns $\{t,y\}$ equal to $-1$</td>
+</tr>
+<tr>
+<td>length</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>ordinary rank</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>determinant</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>minimal decomposition</td>
+<td>$M=L_{e_t-e_x}R_{e_t}-L_{e_z}R_{e_y}=T_{tt}-T_{xt}-T_{zy}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The punchline.</strong> The ordinary rank is $4$, the maximal value, and the length is $2$. Ordinary rank gives no information about length; coefficient rank does.</p>
+<p><strong>The two traps.</strong> The index order is not symmetric: $c_{xt}=-1$ and $c_{tx}=0$, and a transposed coefficient matrix reconstructs a different matrix. The row split is not the column split: the terms combine as $(e_t-e_x)(1,0,0,0)+e_z(0,0,-1,0)$, not as $e_t(1,-1,0,0)+e_z(0,0,-1,0)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,e_x,e_y,e_z$</td>
+<td>the coefficient basis of $\mathbb{B}$, with $e_t=1$ and $e_x^2=e_y^2=e_z^2=-e_t$</td>
+</tr>
+<tr>
+<td>$L_a$</td>
+<td>left multiplication $x\mapsto ax$</td>
+</tr>
+<tr>
+<td>$R_b$</td>
+<td>right multiplication $x\mapsto xb$</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}$</td>
+<td>$L_{e_\mu}R_{e_\nu}$, the sixteen basis matrices</td>
+</tr>
+<tr>
+<td>$c_{\mu\nu}(A)$</td>
+<td>$\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$</td>
+</tr>
+<tr>
+<td>$c(A)$</td>
+<td>the $4\times4$ coefficient matrix</td>
+</tr>
+<tr>
+<td>$\ell(A)$</td>
+<td>the length, $\operatorname{rank}c(A)$</td>
+</tr>
+<tr>
+<td>$T_{xt}^{\mathsf T}$</td>
+<td>the transpose, equal to $T_{xt}^{*}$ because the matrix is real</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen matrices, the multiplication tables, the orthogonality theorem and the length theorem.</li>
+<li><a href="m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</a>, for the construction and the gamma frame.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the algebra and the matrix units.</li>
+<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for the same operators on the sixteen-dimensional algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

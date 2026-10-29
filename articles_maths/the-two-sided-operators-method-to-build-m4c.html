@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-sided-operators-method-to-build-math0"><strong>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The problem.</strong> The algebra $M_4(\mathbb{C})$ is usually introduced as the algebra of $4\times4$ matrices, with the sixteen matrix units $E_{ij}$ as its basis. That presentation starts from matrices. The physics of the corpus starts from the biquaternion algebra $\mathbb{B}$, and the matrices that appear there are left multiplications, right multiplications and gamma matrices. The matrix units are not the objects the physics uses.</p>
+<p><strong>The method.</strong> Start from $\mathbb{B}$ and its carrier $\mathbb{B}\cong\mathbb{C}^4$. For $a,b\in\mathbb{B}$ define the two one-sided operators $L_a(x)=ax$ and $R_b(x)=xb$. The products $T_{a,b}=L_aR_b$, and their sums, form an algebra of operators on a four-dimensional space. That algebra is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. Choosing the coefficient basis of $\mathbb{B}$ turns the operators into $4\times4$ matrices, and the method produces sixteen explicit matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$. This article builds the algebra that way, displays the sixteen matrices, and proves the properties that make them the matrices to use.</p>
+<p><strong>The result.</strong> The sixteen $T_{\mu\nu}$ are signed permutation matrices of determinant one. They are orthogonal for the Hilbert–Schmidt form, with $\operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$. They are closed under multiplication up to sign, and the thirty-two matrices $\pm T_{\mu\nu}$ form a group of order $32$. The coefficients of any matrix in this basis are sixteen traces, and the rank of the coefficient matrix is the length, the least number of products. Every matrix unit is a sum of four of the sixteen, so the matrix-unit basis is the worst basis for the product.</p>
+<p><strong>The terminology.</strong> $M_4(\mathbb{C})$ is the matrix representation of the operator algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, not the biquaternion algebra itself. The biquaternion algebra is four-dimensional and is not a matrix algebra until a basis of the carrier is chosen. The operator algebra is sixteen-dimensional; the choice of the coefficient basis writes it as $M_4(\mathbb{C})$. Three objects are in play, and the article keeps them apart.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What it is</th>
+<th>Dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathcal{E}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$</td>
+<td>the algebra of two-sided operators</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$M_4(\mathbb{C})$</td>
+<td>the matrix representation of $\mathcal{E}$ in a basis of $\mathbb{B}$</td>
+<td>$16$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The carrier is $\mathbb{B}\cong\mathbb{C}^4$; it is not $M_4(\mathbb{C})$.</p>
+<p><strong>The article.</strong> §<em>The Starting Point</em> fixes the algebra and its carrier. §<em>The Two One-Sided Operators</em> displays $L_a$ and $R_b$. §<em>The Method</em> states and proves the construction. §<em>The Sixteen Matrices</em> displays the result and its invariants. §<em>The Group of Order Thirty-Two</em> proves the closure. §<em>Multiplication</em> gives the two tables. §<em>Orthogonality and the Coefficient Formula</em> proves the trace formula. §<em>The Matrix Units in the Method's Basis</em> gives the sixteen expansions and the length. §<em>The Peirce Dictionary</em> identifies the Peirce products. §<em>The Coefficient Matrix and the Length</em> states the computational rule, §<em>The Gamma Frame</em> records the physics frame, and §<em>Why These Matrices</em> states the case. The worked computation is the companion article.</p>
+<p><strong>Sources and boundaries.</strong> The left regular model and its product rules are <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>; the Peirce coordinates are <em>$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>; the operator construction is <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>; the abstract theorem is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>; the Clifford reading is <em>The Dirac Algebra and Biquaternions: A Dictionary</em>. No form, no norm and no topology beyond the Hilbert–Schmidt pairing is used.</p>
+<h2 id="the-starting-point">The Starting Point</h2>
+<p><strong>The algebra.</strong> Let $\mathbb{B}$ be the complexified quaternion algebra, with basis $e_t,e_x,e_y,e_z$ and product
+$$
+e_t^2=e_t,\qquad e_x^2=e_y^2=e_z^2=-e_t,\qquad
+e_xe_y=e_z,\quad e_ye_z=e_x,\quad e_ze_x=e_y,
+$$
+and the reverse products negative: $e_ye_x=-e_z$, $e_ze_y=-e_x$, $e_xe_z=-e_y$. The unit is $e_t$, written $1$ when no confusion is possible.</p>
+<p><strong>The carrier.</strong> The algebra acts on itself by multiplication, so its underlying complex vector space is a four-dimensional carrier. In the basis $(e_t,e_x,e_y,e_z)$ a vector has coordinates $(a_t,a_x,a_y,a_z)$, and the carrier is $\mathbb{C}^4$.</p>
+<p><strong>The algebra is simple but not a division algebra.</strong> It is isomorphic to $M_2(\mathbb{C})$. A nonzero element need not be invertible: the norm
+$$
+N(a)=a_t^2+a_x^2+a_y^2+a_z^2
+$$
+can vanish for $a\ne0$, and then $a$ is a zero divisor. For example $(1+ie_x)(1-ie_x)=1-e_x^2=0$. The units are the elements with $N(a)\ne0$. This matters below: $L_a$ is invertible exactly when $a$ is a unit.</p>
+<p><strong>The multiplication table of the basis.</strong> Row $\mu$, column $\nu$, entry $e_\mu e_\nu$. It is the quaternion table, and it is the left table of §<em>Multiplication</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$e_\mu e_\nu$</th>
+<th>$e_t$</th>
+<th>$e_x$</th>
+<th>$e_y$</th>
+<th>$e_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$e_x$</td>
+<td>$e_y$</td>
+<td>$e_z$</td>
+</tr>
+<tr>
+<td>$e_x$</td>
+<td>$e_x$</td>
+<td>$-e_t$</td>
+<td>$e_z$</td>
+<td>$-e_y$</td>
+</tr>
+<tr>
+<td>$e_y$</td>
+<td>$e_y$</td>
+<td>$-e_z$</td>
+<td>$-e_t$</td>
+<td>$e_x$</td>
+</tr>
+<tr>
+<td>$e_z$</td>
+<td>$e_z$</td>
+<td>$e_y$</td>
+<td>$-e_x$</td>
+<td>$-e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-two-one-sided-operators">The Two One-Sided Operators</h2>
+<h3 id="left-multiplication">Left multiplication</h3>
+<p><strong>Definition.</strong> For $a\in\mathbb{B}$, let $L_a$ be the matrix of $x\mapsto ax$ in the coefficient basis $e_t,e_x,e_y,e_z$, ordered $t,x,y,z$. The map $L$ is the left regular representation.</p>
+<p><strong>The four basis matrices.</strong> With $e_x^2=e_y^2=e_z^2=-e_t$ and $e_xe_y=e_z$, $e_ye_z=e_x$, $e_ze_x=e_y$,</p>
+<p>$$
+L_t=\mathrm{I}_4,\qquad
+L_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p><strong>The laws.</strong> $L_aL_b=L_{ab}$, $L_t=\mathrm{I}_4$, and $L_a$ is invertible exactly when $a$ is a unit. The image $L(\mathbb{B})$ has complex dimension four.</p>
+<h3 id="right-multiplication">Right multiplication</h3>
+<p><strong>Definition.</strong> For $b\in\mathbb{B}$, let $R_b$ be the matrix of $x\mapsto xb$.</p>
+<p><strong>The four basis matrices.</strong></p>
+<p>$$
+R_t=\mathrm{I}_4,\qquad
+R_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+R_y=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+R_z=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p><strong>The relation to the left family.</strong> Let $D=\operatorname{diag}(1,-1,-1,-1)$ and let $b^{\dagger}=(b_t,-b_x,-b_y,-b_z)$ be the quaternion conjugate. Then</p>
+<p>$$
+R_b=D\,L_{b^{\dagger}}\,D .
+$$</p>
+<p><strong>The laws.</strong> $R_aR_b=R_{ba}$, $R_{e_t}=\mathrm{I}_4$, and $R_b$ is invertible exactly when $b$ is a unit. The image $R(\mathbb{B})$ has complex dimension four.</p>
+<h3 id="the-two-sided-matrices">The two-sided matrices</h3>
+<p><strong>Definition.</strong> For $a,b\in\mathbb{B}$,</p>
+<p>$$
+T_{a,b}=L_aR_b .
+$$</p>
+<p><strong>The laws.</strong> $T_{a,b}T_{c,d}=T_{ac,db}$, because $L_aR_bL_cR_d=L_{ac}R_{db}$. The left and right families commute, $L_aR_b=R_bL_a$, and they meet in the scalars:</p>
+<p>$$
+L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\,\mathrm{I}_4 .
+$$</p>
+<p><strong>The basis.</strong> The sixteen matrices</p>
+<p>$$
+T_{\mu\nu}=T_{e_\mu,e_\nu}=L_\mu R_\nu,\qquad \mu,\nu\in\{t,x,y,z\},
+$$</p>
+<p>are a basis of $M_4(\mathbb{C})$. The dimension count is $4\cdot4=16$.</p>
+<p><strong>Every one is a signed permutation.</strong> Each $T_{\mu\nu}$ has exactly one nonzero entry in every row and every column, and that entry is $\pm1$. The left factor permutes and signs the rows; the right factor permutes and signs the columns.</p>
+<h2 id="the-method">The Method</h2>
+<h3 id="the-construction-in-five-steps">The construction in five steps</h3>
+<p><strong>Step 1.</strong> Start from the biquaternion algebra $\mathbb{B}$ and its four-dimensional carrier. No matrix is chosen yet.</p>
+<p><strong>Step 2.</strong> Form the eight one-sided operators $L_t,L_x,L_y,L_z$ and $R_t,R_x,R_y,R_z$. They are linear maps of the carrier to itself.</p>
+<p><strong>Step 3.</strong> Form the products $T_{a,b}=L_aR_b$ and all their linear combinations. This is the algebra generated by the two commuting copies $L(\mathbb{B})$ and $R(\mathbb{B})$.</p>
+<p><strong>Step 4.</strong> Prove that this algebra is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. The proof is the proposition below.</p>
+<p><strong>Step 5.</strong> Choose the coefficient basis of the carrier. The operators become $4\times4$ matrices, and the method produces the sixteen matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$ displayed in §<em>The Sixteen Matrices</em>.</p>
+<p><strong>What the method does not do.</strong> It does not choose a gamma frame, a form, a norm or a grading. Those are further choices inside the matrix algebra. It does not identify $\mathbb{B}$ with $M_4(\mathbb{C})$: $\mathbb{B}$ is four-dimensional, and $M_4(\mathbb{C})$ is the matrix representation of the sixteen-dimensional operator algebra.</p>
+<h3 id="the-theorem">The theorem</h3>
+<p><strong>Proposition (the two-sided map is an isomorphism).</strong> The map
+$$
+\Phi:\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),
+\qquad \Phi(a\otimes b^{\mathrm{opp}})=L_aR_b,
+$$
+is an isomorphism of algebras. Hence
+$$
+\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C}).
+$$</p>
+<p><strong>Proof.</strong> Multiplicativity: in the opposite algebra the product is reversed, so
+$$
+(a\otimes b^{\mathrm{opp}})(c\otimes d^{\mathrm{opp}})=ac\otimes(db)^{\mathrm{opp}},
+$$
+and $\Phi$ of this is $L_{ac}R_{db}=L_aL_cR_dR_b=L_aR_bL_cR_d$, which is the product of the images.</p>
+<p>Injectivity: choose a matrix-unit basis $F_{ij}$ of $\mathbb{B}\cong M_2(\mathbb{C})$. The elements $F_{ij}\otimes F_{kl}^{\mathrm{opp}}$ are a basis of the tensor product, sixteen in number. Their images act by $X\mapsto F_{ij}XF_{kl}$, and since $F_{ij}F_{ab}F_{kl}=\delta_{ja}\delta_{bk}F_{il}$, the image is the matrix unit of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ that sends $F_{jk}$ to $F_{il}$ and the other $F_{ab}$ to $0$. The sixteen images are the sixteen matrix units of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ in the basis $\{F_{ab}\}$; they are linearly independent. So $\Phi$ is injective.</p>
+<p>Dimensions: the domain has dimension $4\cdot4=16$, and the target has dimension $4^2=16$. An injective linear map between spaces of the same finite dimension is an isomorphism.</p>
+<p><strong>The matrices follow.</strong> The coefficient basis of $\mathbb{B}$ is related to the matrix-unit basis by an invertible change of basis. The sixteen images $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$ are the images of the basis $e_\mu\otimes e_\nu^{\mathrm{opp}}$, so they are a basis of $M_4(\mathbb{C})$. No counting of matrix entries is needed: the dimension comes from the two factors.</p>
+<h3 id="what-has-been-built">What has been built</h3>
+<p><strong>The algebra.</strong> After Step 5 the algebra is literally $M_4(\mathbb{C})$: its elements are the $4\times4$ complex matrices, with the usual product. But the construction remembers where each matrix came from. The matrix $T_{\mu\nu}$ is the operator $x\mapsto e_\mu xe_\nu$, and the label $(\mu,\nu)$ is the pair of biquaternions that produces it.</p>
+<p><strong>The two regular images.</strong> $L(\mathbb{B})$ and $R(\mathbb{B})$ are the two four-dimensional subalgebras. They commute and meet in the scalars. Neither is the whole algebra; their products are.</p>
+<p><strong>The matrix units are derived, not primitive.</strong> The standard basis $E_{ij}$ is a basis of the algebra, but it is not the basis the construction produces. The relation between the two is computed in §<em>The Matrix Units in the Method's Basis</em>: every $E_{ij}$ is a sum of four of the $T_{\mu\nu}$.</p>
+<h2 id="the-sixteen-matrices">The Sixteen Matrices</h2>
+<h3 id="the-display">The display</h3>
+<p><strong>The sixteen matrices, in the coefficient basis.</strong> The labels are the two indices: the first is the left parameter, the second the right parameter.</p>
+<p>$$
+T_{tt}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+T_{tx}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+T_{ty}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+T_{tz}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p>$$
+T_{xt}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+T_{xx}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+T_{xy}=\begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix},\qquad
+T_{xz}=\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\-1&0&0&0\\0&-1&0&0\end{pmatrix}.
+$$</p>
+<p>$$
+T_{yt}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+T_{yx}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+T_{yy}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&-1&0\\0&0&0&1\end{pmatrix},\qquad
+T_{yz}=\begin{pmatrix}0&1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}.
+$$</p>
+<p>$$
+T_{zt}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},\qquad
+T_{zx}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+T_{zy}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix},\qquad
+T_{zz}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+$$</p>
+<p><strong>The order of the labels matters.</strong> The two matrices $T_{tx}$ and $T_{xt}$ are different:</p>
+<p>$$
+T_{tx}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&1\\0&0&-1&0\end{pmatrix},\qquad
+T_{xt}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}.
+$$</p>
+<p>They agree in the first two rows and differ in the last two. A computation that confuses them returns the wrong coefficient; the companion article <em>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</em> records the trap.</p>
+<h3 id="the-invariants">The invariants</h3>
+<p><strong>The table.</strong> The trace is the usual trace, the determinant the usual determinant, the rank the usual rank, the order the least $k\ge1$ with $T^k=\mathrm{I}_4$, and the last column is $T^2$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Matrix</th>
+<th>Trace</th>
+<th>Determinant</th>
+<th>Rank</th>
+<th>Order</th>
+<th>Square</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{tt}$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{tx}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{ty}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{tz}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{xt}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{xx}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{xy}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{xz}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{yt}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{yx}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{yy}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{yz}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{zt}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{zx}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{zy}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$T_{zz}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>$2$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pattern.</strong> Every matrix is invertible, of determinant one and of rank four. The trace is $4$ only for $T_{tt}$, the identity, and $0$ for the other fifteen. The order is $4$ exactly when one index is $t$ and the other is spatial: $T_{t\sigma}$ and $T_{\sigma t}$ with $\sigma=x,y,z$ square to $-\mathrm{I}_4$. The two-spatial matrices square to $+\mathrm{I}_4$.</p>
+<p><strong>Proof of the pattern.</strong> The matrix $T_{\mu\nu}$ is a signed permutation, so it is orthogonal and its determinant is $\pm1$. The group $\{\pm T\}$ is generated by the six matrices $L_x,L_y,L_z,R_x,R_y,R_z$, each of determinant $1$ by the displayed matrices, and the determinant is a homomorphism; hence all thirty-two elements have determinant $1$. The trace and the order columns are read from the sixteen displayed matrices: the trace is $4$ only for the identity, and the square is $-\mathrm{I}_4$ exactly for the six matrices with one $t$ index and one spatial index. The square column also follows from the two multiplication tables of §<em>Multiplication</em>.</p>
+<h3 id="the-group-of-order-thirty-two">The group of order thirty-two</h3>
+<p><strong>Theorem.</strong> The thirty-two matrices $\pm T_{\mu\nu}$ are distinct and form a group; it is isomorphic to
+$$
+\bigl(Q_8\times Q_8\bigr)/\{\pm(1,1)\},
+$$
+where $Q_8=\{\pm1,\pm i,\pm j,\pm k\}$, and it has order $32$.</p>
+<p><strong>Proof.</strong> Closure: the product of two elements of $\{\pm T\}$ is
+$$
+(\pm T_{\mu\nu})(\pm T_{\rho\sigma})=\pm T_{\mu\nu}T_{\rho\sigma}=\pm T_{\mu\rho,\sigma\nu},
+$$
+by the composition law of §<em>The Two-Sided Matrices</em>. The result is again in $\{\pm T\}$. The set is finite, contains $\mathrm{I}_4=T_{tt}$, and every element is invertible, so it is a group. Distinctness: $T_{\mu\nu}=T_{\rho\sigma}$ gives $L_{\mu}^{-1}L_{\rho}=R_{\nu}R_{\sigma}^{-1}$, an element of $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\mathrm{I}_4$; both sides are signed basis matrices, so both are $\mathrm{I}_4$, hence $\mu=\rho$ and $\nu=\sigma$. If $T_{\mu\nu}=-T_{\rho\sigma}$, the same argument gives $\mathrm{I}_4=-\mathrm{I}_4$, which is false. So the thirty-two are distinct.</p>
+<p>For the isomorphism, let $Q_8^{L}=\{\pm\mathrm{I}_4,\pm L_x,\pm L_y,\pm L_z\}$ and $Q_8^{R}=\{\pm\mathrm{I}_4,\pm R_x,\pm R_y,\pm R_z\}$. Each is a copy of $Q_8$. They commute and meet in $\{\pm\mathrm{I}_4\}$, so their product has order $8\cdot8/2=32$, and it is the set $\{\pm T_{\mu\nu}\}$. The map $(A,B)\mapsto AB$ from $Q_8^{L}\times Q_8^{R}$ has kernel $\{(1,1),(-1,-1)\}$, hence the displayed quotient.</p>
+<p><strong>The matrices are not a group of order sixteen.</strong> The sixteen $T_{\mu\nu}$ alone are not closed: $T_{tx}T_{xt}=T_{xx}$ is in the set, but $T_{xy}T_{yz}=-T_{zx}$ is not. One sign is missing. The group needs the thirty-two signed matrices.</p>
+<h2 id="multiplication">Multiplication</h2>
+<h3 id="the-two-tables">The two tables</h3>
+<p><strong>The left table.</strong> Row $\mu$, column $\nu$, entry $L_\mu L_\nu$. The product is a signed basis matrix.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$L_\mu L_\nu$</th>
+<th>$L_t$</th>
+<th>$L_x$</th>
+<th>$L_y$</th>
+<th>$L_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_t$</td>
+<td>$L_t$</td>
+<td>$L_x$</td>
+<td>$L_y$</td>
+<td>$L_z$</td>
+</tr>
+<tr>
+<td>$L_x$</td>
+<td>$L_x$</td>
+<td>$-L_t$</td>
+<td>$L_z$</td>
+<td>$-L_y$</td>
+</tr>
+<tr>
+<td>$L_y$</td>
+<td>$L_y$</td>
+<td>$-L_z$</td>
+<td>$-L_t$</td>
+<td>$L_x$</td>
+</tr>
+<tr>
+<td>$L_z$</td>
+<td>$L_z$</td>
+<td>$L_y$</td>
+<td>$-L_x$</td>
+<td>$-L_t$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The right table.</strong> Row $\nu$, column $\sigma$, entry $R_\nu R_\sigma$. It is the table of the opposite quaternion algebra, so the signs sit in the other cells.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$R_\nu R_\sigma$</th>
+<th>$R_t$</th>
+<th>$R_x$</th>
+<th>$R_y$</th>
+<th>$R_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_t$</td>
+<td>$R_t$</td>
+<td>$R_x$</td>
+<td>$R_y$</td>
+<td>$R_z$</td>
+</tr>
+<tr>
+<td>$R_x$</td>
+<td>$R_x$</td>
+<td>$-R_t$</td>
+<td>$-R_z$</td>
+<td>$R_y$</td>
+</tr>
+<tr>
+<td>$R_y$</td>
+<td>$R_y$</td>
+<td>$R_z$</td>
+<td>$-R_t$</td>
+<td>$-R_x$</td>
+</tr>
+<tr>
+<td>$R_z$</td>
+<td>$R_z$</td>
+<td>$-R_y$</td>
+<td>$R_x$</td>
+<td>$-R_t$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two tables are not the same.</strong> The left table is the quaternion table: $L_xL_y=L_z$. The right table is the reverse: $R_xR_y=-R_z$, because $R_aR_b=R_{ba}$ and $e_ye_x=-e_z$. This is the source of every sign in the corpus that looks like a sign error.</p>
+<h3 id="the-product-rule">The product rule</h3>
+<p><strong>The rule.</strong> Read the left table at $(\mu,\rho)$ and the right table at $(\nu,\sigma)$:
+$$
+L_\mu L_\rho=\varepsilon_1L_\lambda,\qquad
+R_\nu R_\sigma=\varepsilon_2R_\tau .
+$$
+Then
+$$
+T_{\mu\nu}T_{\rho\sigma}
+=L_\mu L_\rho\,R_\nu R_\sigma
+=\varepsilon_1\varepsilon_2\,T_{\lambda\tau}.
+$$
+The right index pair is not reversed in the formula; the reversal is already in the right table, whose row is the first factor and whose column is the second.</p>
+<p><strong>In one line.</strong>
+$$
+T_{\mu\nu}T_{\rho\sigma}=\varepsilon_1\varepsilon_2\,T_{\lambda\tau},
+\qquad
+(\lambda,\varepsilon_1)=\text{left table}(\mu,\rho),
+\quad
+(\tau,\varepsilon_2)=\text{right table}(\nu,\sigma).
+$$</p>
+<p><strong>The general law.</strong> $T_{a,b}T_{c,d}=T_{ac,db}$. The product of two two-sided operators is a two-sided operator. The set of all $T_{a,b}$ is closed under multiplication, and it is the whole algebra.</p>
+<h3 id="three-examples">Three examples</h3>
+<p><strong>A product in the set.</strong> $T_{tx}T_{xt}$: the left table at $(t,x)$ gives $L_x$ with sign $+1$; the right table at $(x,t)$ gives $R_x$ with sign $+1$. Hence
+$$
+T_{tx}T_{xt}=T_{xx}.
+$$</p>
+<p><strong>A product with a sign.</strong> $T_{xy}T_{yz}$: the left table at $(x,y)$ gives $L_z$ with sign $+1$; the right table at $(y,z)$ gives $-R_x$. Hence
+$$
+T_{xy}T_{yz}=-T_{zx}.
+$$</p>
+<p><strong>A square.</strong> $T_{zy}T_{zy}$: the left table at $(z,z)$ gives $-L_t$; the right table at $(y,y)$ gives $-R_t$; the product is $(-\mathrm{I}_4)(-\mathrm{I}_4)=\mathrm{I}_4$. This is the entry of the invariant table.</p>
+<h2 id="orthogonality-and-the-coefficient-formula">Orthogonality and the Coefficient Formula</h2>
+<p><strong>Theorem.</strong> For all indices,
+$$
+\operatorname{tr}\bigl(T_{\mu\nu}^{*}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
+$$</p>
+<p><strong>Proof.</strong> Every $T_{\mu\nu}$ is a signed permutation matrix, so it is orthogonal and $T_{\mu\nu}^{*}=T_{\mu\nu}^{-1}$. The inverse is $\pm T_{\mu\nu}$, because $T_{\mu\nu}^{2}=\pm\mathrm{I}_4$ by the invariant table. More generally,
+$$
+T_{\mu\nu}^{*}T_{\rho\sigma}=\pm T_{\mu\nu}T_{\rho\sigma}=\pm T_{\lambda\tau}
+$$
+for some indices $\lambda,\tau$. The trace of $T_{\lambda\tau}$ is $4$ when $\lambda=\tau=t$ and $0$ otherwise, by the invariant table. The indices $\lambda,\tau$ are $t$ exactly when $\mu=\rho$ and $\nu=\sigma$, because the product of two basis quaternions is the identity only when the factors are equal. Hence the trace is $4$ on the diagonal and $0$ off it.</p>
+<p><strong>The trace of a two-sided operator.</strong> For all $a,b\in\mathbb{B}$,
+$$
+\operatorname{tr}(L_aR_b)=4\,a_tb_t .
+$$
+The two sides are bilinear in $(a,b)$, and they agree on the sixteen basis pairs by the invariant table.</p>
+<p><strong>The coefficient formula.</strong> Let $A\in M_4(\mathbb{C})$ and write
+$$
+A=\sum_{\mu,\nu}c_{\mu\nu}(A)\,T_{\mu\nu}.
+$$
+Then
+$$
+c_{\mu\nu}(A)=\tfrac14\operatorname{tr}\bigl(T_{\mu\nu}^{*}A\bigr).
+$$</p>
+<p><strong>Proof.</strong> Multiply the expansion by $T_{\rho\sigma}^{*}$ and take the trace. Orthogonality leaves $4c_{\rho\sigma}$.</p>
+<p><strong>The formula in entries.</strong> Since $T_{\mu\nu}$ is a signed permutation,
+$$
+\operatorname{tr}\bigl(T_{\mu\nu}^{*}A\bigr)
+=\sum_{i,j}(T_{\mu\nu})_{ij}A_{ij},
+$$
+because $T_{\mu\nu}^{*}=T_{\mu\nu}^{\mathsf T}$ and the transpose moves the entry $(i,j)$ to $(j,i)$. In practice one reads the four nonzero positions of $T_{\mu\nu}$ and adds the corresponding entries of $A$ with their signs, then divides by four. The companion article carries out the sixteen sums entry by entry for one matrix.</p>
+<h2 id="the-matrix-units-in-the-methods-basis">The Matrix Units in the Method's Basis</h2>
+<h3 id="the-sixteen-expansions">The sixteen expansions</h3>
+<p><strong>Theorem.</strong> Every matrix unit is a sum of four of the $T_{\mu\nu}$ with coefficients $\pm\tfrac14$:
+$$
+E_{ij}=\tfrac14\sum_{\mu,\nu}\varepsilon^{\,ij}_{\mu\nu}T_{\mu\nu},
+\qquad \varepsilon^{\,ij}_{\mu\nu}\in\{\pm1\},
+$$
+and each row of the coefficient array has exactly four nonzero entries.</p>
+<p><strong>The table.</strong> The matrix units are those of the coefficient basis, the same basis in which the $T_{\mu\nu}$ are displayed.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Matrix unit</th>
+<th>Expansion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{11}$</td>
+<td>$\tfrac14\bigl(T_{tt}-T_{xx}-T_{yy}-T_{zz}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{12}$</td>
+<td>$\tfrac14\bigl(-T_{tx}-T_{xt}+T_{yz}-T_{zy}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{13}$</td>
+<td>$\tfrac14\bigl(-T_{ty}-T_{xz}-T_{yt}+T_{zx}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{14}$</td>
+<td>$\tfrac14\bigl(-T_{tz}+T_{xy}-T_{yx}-T_{zt}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{21}$</td>
+<td>$\tfrac14\bigl(T_{tx}+T_{xt}+T_{yz}-T_{zy}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{22}$</td>
+<td>$\tfrac14\bigl(T_{tt}-T_{xx}+T_{yy}+T_{zz}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{23}$</td>
+<td>$\tfrac14\bigl(T_{tz}-T_{xy}-T_{yx}-T_{zt}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{24}$</td>
+<td>$\tfrac14\bigl(-T_{ty}-T_{xz}+T_{yt}-T_{zx}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{31}$</td>
+<td>$\tfrac14\bigl(T_{ty}-T_{xz}+T_{yt}+T_{zx}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{32}$</td>
+<td>$\tfrac14\bigl(-T_{tz}-T_{xy}-T_{yx}+T_{zt}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{33}$</td>
+<td>$\tfrac14\bigl(T_{tt}+T_{xx}-T_{yy}+T_{zz}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{34}$</td>
+<td>$\tfrac14\bigl(T_{tx}-T_{xt}-T_{yz}-T_{zy}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{41}$</td>
+<td>$\tfrac14\bigl(T_{tz}+T_{xy}-T_{yx}+T_{zt}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{42}$</td>
+<td>$\tfrac14\bigl(T_{ty}-T_{xz}-T_{yt}-T_{zx}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{43}$</td>
+<td>$\tfrac14\bigl(-T_{tx}+T_{xt}-T_{yz}-T_{zy}\bigr)$</td>
+</tr>
+<tr>
+<td>$E_{44}$</td>
+<td>$\tfrac14\bigl(T_{tt}+T_{xx}+T_{yy}-T_{zz}\bigr)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two examples in full.</strong> For $E_{11}$ the four diagonal $T$'s enter with the signs of the coordinates: the trace sum $1-(-1)-(-1)-(-1)=4$ gives the coefficient $1$, while the off-diagonal entries cancel. For $E_{12}$ the four $T$'s with exactly one $t$ index enter; the two $t$-first matrices give the first column, and the two $t$-second matrices give the second.</p>
+<p><strong>The coefficient array is a signed permutation.</strong> In each expansion the four indices $(\mu,\nu)$ are distinct, and each row index and each column index occurs exactly once. The array $\varepsilon^{\,ij}$ is therefore a signed permutation matrix, of rank four.</p>
+<h3 id="length-four">Length four</h3>
+<p><strong>Corollary.</strong> The length of every matrix unit is four:
+$$
+\ell(E_{ij})=4 .
+$$</p>
+<p><strong>Proof.</strong> The length is the rank of the coefficient matrix (Theorem of §<em>The Coefficient Matrix and the Length</em>). The expansion has four nonzero coefficients in a permutation pattern, so the coefficient matrix has rank four.</p>
+<p><strong>The meaning.</strong> The matrix units are the worst possible basis for the product: each of them needs four two-sided operators. A physics table written in matrix units hides a factor of four in every entry. A table written in the method's basis shows one product per entry.</p>
+<h2 id="the-peirce-dictionary">The Peirce Dictionary</h2>
+<p><strong>The Peirce basis.</strong> Let $P_0=\tilde\Pi_+$, $P_1=\vec\Upsilon_y$, $P_2=\vec\Upsilon_x$, $P_3=\tilde\Pi_-$, the four Peirce elements of <em>$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>, in the order $(t,x,y,z)$ of the coefficient basis.</p>
+<p><strong>Theorem.</strong> In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units, with coefficient $+1$:
+$$
+L_{P_i}R_{P_j}=\mathsf{E}_{r(i,j),c(i,j)},
+$$
+where $\mathsf{E}_{rc}$ is the matrix unit of the Peirce basis. The correspondence is the table below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$i\backslash j$</th>
+<th>$0$</th>
+<th>$1$</th>
+<th>$2$</th>
+<th>$3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$\mathsf{E}_{11}$</td>
+<td>$\mathsf{E}_{13}$</td>
+<td>$\mathsf{E}_{31}$</td>
+<td>$\mathsf{E}_{33}$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\mathsf{E}_{21}$</td>
+<td>$\mathsf{E}_{23}$</td>
+<td>$\mathsf{E}_{41}$</td>
+<td>$\mathsf{E}_{43}$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\mathsf{E}_{12}$</td>
+<td>$\mathsf{E}_{14}$</td>
+<td>$\mathsf{E}_{32}$</td>
+<td>$\mathsf{E}_{34}$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\mathsf{E}_{22}$</td>
+<td>$\mathsf{E}_{24}$</td>
+<td>$\mathsf{E}_{42}$</td>
+<td>$\mathsf{E}_{44}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proof.</strong> The four Peirce elements form a system of $2\times2$ matrix units, not four orthogonal idempotents: their table is the matrix-unit table $E_{ij}E_{kl}=\delta_{jk}E_{il}$ of the model article. Multiplying the four elements in the coefficient basis, and conjugating each of the sixteen products $L_{P_i}R_{P_j}$ by the Peirce change $S$, gives a matrix with a single nonzero entry in the Peirce basis, at the position of the table, with value $+1$. The computation is sixteen products of $4\times4$ matrices, and no case is exceptional.</p>
+<p><strong>The two bases are adapted to different questions.</strong> The coefficient basis makes the $T_{\mu\nu}$ signed permutations. The Peirce basis makes the products $L_{P_i}R_{P_j}$ matrix units. Neither basis does both: in the Peirce basis the $T_{\mu\nu}$ are monomial with entries in $\{1,-1,i,-i\}$ but not matrix units; in the coefficient basis the Peirce products are sums of four $T$'s whose coefficient array has rank one, so each is a single product.</p>
+<p><strong>Why the two are consistent.</strong> Both are bases of the same sixteen-dimensional algebra. The change of basis between them is the Peirce change $S$ of the model article, of determinant $-\tfrac14$, and the lengths agree because the length is basis-independent.</p>
+<h2 id="the-coefficient-matrix-and-the-length">The Coefficient Matrix and the Length</h2>
+<p><strong>Definition.</strong> For $A\in M_4(\mathbb{C})$, the coefficient matrix is
+$$
+c(A)=\bigl(c_{\mu\nu}(A)\bigr)_{\mu,\nu\in\{t,x,y,z\}},
+\qquad
+c_{\mu\nu}(A)=\tfrac14\operatorname{tr}\bigl(T_{\mu\nu}^{*}A\bigr).
+$$</p>
+<p><strong>Theorem (reconstruction).</strong> $A=\sum_{\mu,\nu}c_{\mu\nu}(A)T_{\mu\nu}$.</p>
+<p><strong>Theorem (products are outer products).</strong> For $a=\sum_\mu a_\mu e_\mu$ and $b=\sum_\nu b_\nu e_\nu$,
+$$
+c(L_aR_b)=a\,b^{\mathsf T},
+$$
+the outer product of the coordinate column of $a$ and the coordinate column of $b$.</p>
+<p><strong>Proof.</strong> $L_aR_b=\sum_{\mu,\nu}a_\mu b_\nu T_{\mu\nu}$, and the coefficients are unique.</p>
+<p><strong>Corollary.</strong> A matrix is a single two-sided operator exactly when its coefficient matrix has rank at most one. The rank is the length:
+$$
+\ell(A)=\operatorname{rank}c(A).
+$$</p>
+<p><strong>Proof.</strong> A decomposition $A=\sum_{k=1}^{r}L_{a_k}R_{b_k}$ gives $c(A)=\sum_k a_kb_k^{\mathsf T}$, a sum of $r$ rank-one matrices, so $\operatorname{rank}c(A)\le r$. Conversely, a rank-$r$ factorisation $c(A)=UV$ with $U,V$ of size $4\times r$ gives $A=\sum_{k=1}^{r}L_{u_k}R_{v_k}$, where $u_k$ and $v_k$ are the columns. Hence the least $r$ is the rank.</p>
+<p><strong>The algorithm.</strong> In practice:</p>
+<ol>
+<li>Compute the sixteen traces $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$.</li>
+<li>Assemble the $4\times4$ matrix $c(A)$.</li>
+<li>Compute its rank, by minors or by row reduction. That rank is the length.</li>
+<li>If the rank is one, read $c=a b^{\mathsf T}$ and return $A=L_aR_b$.</li>
+<li>If the rank is $r$, factor $c=UV$ with $U,V$ of size $4\times r$ and return the $r$ products $L_{u_k}R_{v_k}$.</li>
+<li>Reconstruct $A=\sum c_{\mu\nu}T_{\mu\nu}$ as a check.</li>
+</ol>
+<p><strong>What the length is not.</strong> It is not the matrix rank. The identity has matrix rank four and length one. The matrix unit $E_{11}$ has matrix rank one and length four. The companion article computes a matrix of matrix rank four and length two.</p>
+<p><strong>The invariance.</strong> The length is invariant under conjugation by $GL_4(\mathbb{C})$, because the two-sided operators are exactly the rank-one matrices, and conjugation preserves rank. It is also invariant under the finite group of order $32$, which permutes the $T_{\mu\nu}$ up to sign.</p>
+<h2 id="the-gamma-frame">The Gamma Frame</h2>
+<p><strong>The five matrices.</strong> In the corpus frame $(\beta,\delta)=(e_y,e_x)$,
+$$
+\gamma^0=iT_{tx},\qquad
+\gamma^1=iT_{xy},\qquad
+\gamma^2=iT_{yy},\qquad
+\gamma^3=iT_{zy},\qquad
+\gamma_5=-iT_{tz}.
+$$</p>
+<p><strong>The Clifford relations.</strong> With the metric $g=\operatorname{diag}(1,-1,-1,-1)$,
+$$
+\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}\mathrm{I}_4,
+\qquad
+\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3,
+\qquad
+\{\gamma_5,\gamma^\mu\}=0.
+$$</p>
+<p><strong>The chirality projectors.</strong>
+$$
+P_{\pm}=\tfrac12\bigl(\mathrm{I}_4\pm\gamma_5\bigr)
+=\tfrac12\bigl(T_{tt}\mp iT_{tz}\bigr).
+$$
+Both are single products up to a scalar: $P_+$ and $P_-$ are linear combinations of two $T$'s, not products themselves.</p>
+<p><strong>The reading.</strong> The gammas are five of the sixteen $T$'s up to the scalar $i$. The products of the gammas are the other eleven, up to scalars. The Dirac algebra is the method's algebra with a chosen five-element frame, not a different algebra.</p>
+<p><strong>The frame is not canonical.</strong> The five displayed matrices are one choice among the frames of the companion article. The basis $\{T_{\mu\nu}\}$ is canonical once the coefficient basis is fixed; the gamma frame inside it is not.</p>
+<h2 id="why-these-matrices">Why These Matrices</h2>
+<p><strong>Six reasons.</strong></p>
+<ol>
+<li><strong>The matrices are the operators.</strong> Each $T_{\mu\nu}$ is $x\mapsto e_\mu xe_\nu$. A table entry written as $T_{\mu\nu}$ says which left and right multiplications produce it. A table entry written as $E_{ij}$ says only which entry of a matrix is nonzero.</li>
+<li><strong>The product is closed up to sign.</strong> The thirty-two matrices $\pm T_{\mu\nu}$ form a group. Products, inverses and powers stay in a finite set. In the matrix-unit basis the product of two basis elements is either zero or a third, but the coefficients of a general product spread over sixteen terms.</li>
+<li><strong>The coefficients are traces.</strong> Orthogonality gives $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$ with norm $2$. There is no linear system to solve.</li>
+<li><strong>The coefficient rank is the length.</strong> The least number of products is the rank of a $4\times4$ matrix. This is the natural measure of complexity of an operator, and it is basis-independent.</li>
+<li><strong>The physics matrices are sparse in this basis.</strong> The gammas, the chirality projectors, the mass bilinear and the Lorentz generators are linear combinations of a few $T$'s with coefficients in $\{1,-1,i,-i\}$.</li>
+<li><strong>The matrix units are the wrong default.</strong> Every $E_{ij}$ has length four. A table in matrix units overstates the number of products by a factor of four in every entry.</li>
+</ol>
+<p><strong>The caveat.</strong> The matrix units remain the canonical basis of the abstract algebra: they are the definition of the product, and the theorems of the category are stated in them. The eigenbasis remains canonical for spectral theory. The Peirce basis remains canonical for the chiral blocks. The sixteen matrices are the default for the operator question, not a replacement for the others.</p>
+<p><strong>A test.</strong> Take a matrix from a physics table. If it is a gamma, a projector, a field strength or a mass term, it has a short expression in the method's basis. Compute the sixteen traces and the rank. If the rank is small, the matrix is a short product, and the table is hiding a product structure. If the rank is four, the matrix is a genuinely complicated operator.</p>
+<h2 id="a-worked-example">A Worked Example</h2>
+<p><strong>The matrix.</strong>
+$$
+M=\begin{pmatrix}1&2&0&0\\0&1&0&0\\0&0&1&2\\0&0&0&1\end{pmatrix}.
+$$</p>
+<p><strong>The coefficients.</strong> The sixteen traces give
+$$
+c(M)=\begin{pmatrix}1&0&0&0\\-1&0&0&0\\0&0&0&0\\0&0&-1&0\end{pmatrix}.
+$$</p>
+<p><strong>The length.</strong> The rank is two, so $\ell(M)=2$, while the matrix rank of $M$ is four. A decomposition is
+$$
+M=L_{e_t-e_x}R_{e_t}+L_{e_z}R_{-e_y}
+=T_{tt}-T_{xt}-T_{zy}.
+$$</p>
+<p><strong>The caution.</strong> The matrix looks like two copies of a Jordan block, but it is not a left regular matrix: in the coefficient basis a left matrix has equal entries $(1,2)$ and $(2,1)$ up to sign, and $M$ has $2$ and $0$. The block look is a property of the coefficient basis, not of the Peirce decomposition.</p>
+<p><strong>The full computation.</strong> <em>The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</em> carries out the sixteen traces, the transpose products, the rank by minors, the factorisation and the reconstruction, entry by entry.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra $M_4(\mathbb{C})$ is built by the two-sided operators method, which produces the sixteen matrices $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, all signed permutations of determinant one. They are orthogonal for the Hilbert–Schmidt form with $\operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, so the coefficients of a matrix are sixteen traces. They are closed under multiplication up to sign, and the thirty-two matrices $\pm T_{\mu\nu}$ form a group of order $32$, isomorphic to $(Q_8\times Q_8)/\{\pm(1,1)\}$. The product rule is read from two $4\times4$ tables, the left quaternion table and the right opposite table. Every matrix unit is a sum of four $T$'s with coefficients $\pm\tfrac14$, so every matrix unit has length four; the matrix-unit basis is the worst basis for the product. In the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are exactly the sixteen matrix units with coefficient $+1$. The coefficient matrix of a product is an outer product, and the rank of the coefficient matrix is the length, the least number of two-sided operators. The gamma frame is five of the sixteen matrices up to the scalar $i$. The sixteen matrices are the default for matrices that come from operators; they do not replace the matrix units for the abstract algebra, the eigenbasis for spectral theory or the Peirce basis for the chiral blocks.</p>
+<p>$$
+\boxed{\ \operatorname{tr}(T_{\mu\nu}^{*}T_{\rho\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma},\qquad
+c_{\mu\nu}(A)=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A),\qquad
+\ell(A)=\operatorname{rank}c(A).\ }
+$$</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_t,e_x,e_y,e_z$</td>
+<td>the coefficient basis, with $e_t=1$ and $e_x^2=e_y^2=e_z^2=-e_t$</td>
+</tr>
+<tr>
+<td>$L_a$</td>
+<td>left multiplication $x\mapsto ax$</td>
+</tr>
+<tr>
+<td>$R_b$</td>
+<td>right multiplication $x\mapsto xb$</td>
+</tr>
+<tr>
+<td>$T_{a,b}=L_aR_b$</td>
+<td>the two-sided operator $x\mapsto axb$</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}$</td>
+<td>$T_{e_\mu,e_\nu}$, the sixteen basis matrices</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix units of the coefficient basis</td>
+</tr>
+<tr>
+<td>$\mathsf{E}_{ij}$</td>
+<td>the matrix units of the Peirce basis</td>
+</tr>
+<tr>
+<td>$P_0,P_1,P_2,P_3$</td>
+<td>the four Peirce elements, in the order $(t,x,y,z)$</td>
+</tr>
+<tr>
+<td>$c(A)$</td>
+<td>the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{*}A)$</td>
+</tr>
+<tr>
+<td>$\ell(A)$</td>
+<td>the length, the least number of products</td>
+</tr>
+<tr>
+<td>$Q_8$</td>
+<td>the quaternion group $\{\pm1,\pm i,\pm j,\pm k\}$</td>
+</tr>
+<tr>
+<td>$\gamma^\mu,\gamma_5$</td>
+<td>the gamma frame of the corpus</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(1,-1,-1,-1)$, the carrier of the right family</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</a>, for the construction, the gamma frame and the product question.</li>
+<li><a href="m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</a>, for the left regular model and its trace and determinant.</li>
+<li><a href="m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the algebra, the matrix units and the construction from the two-sided map.</li>
+<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for the operators $L_a,R_a,T_{a,b}$ on the sixteen-dimensional algebra.</li>
+<li><a href="the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html">The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</a>, for the sixteen traces, the rank and the factorisation of one matrix.</li>
+<li><a href="the-numerical-range-of-the-two-sided-operators-of-m4c.html">The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$</a>, for the field of values of the sandwich on the sixteen-dimensional algebra.</li>
+<li><a href="../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html">The Dirac Algebra and Biquaternions: A Dictionary</a>, for the explicit chiral matrices of one frame.</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

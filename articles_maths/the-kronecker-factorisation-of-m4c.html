@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-kronecker-factorisation-math0"><strong>The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra $M_4(\mathbb{C})$ is the tensor product of two copies of $M_2(\mathbb{C})$:</p>
+<p>$$
+M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes_\mathbb{C}M_2(\mathbb{C}),\qquad
+(A\otimes B)(C\otimes D)=AC\otimes BD.
+$$</p>
+<p>The isomorphism is not a curiosity. It exhibits two four-dimensional subalgebras, $M_2\otimes I$ and $I\otimes M_2$, that commute elementwise, generate the whole algebra, and are each the commutant of the other. It also produces the <strong>flip</strong> $F(x\otimes y)=y\otimes x$, a symmetric unitary involution whose conjugation is the swap of the two factors; the swap is an inner automorphism of $M_4$, and the fixed algebra of the swap is the centraliser of $F$, isomorphic to $M_3(\mathbb{C})\oplus\mathbb{C}$.</p>
+<p>This article states the isomorphism, the two factors, the double centraliser theorem, the flip and its eigenspaces, and the Brauer reading. The two-sided operators on the biquaternion algebra are <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>; the warning that the ambient algebra is the endomorphism algebra of $\mathbb{B}$ and not $\mathbb{B}$ itself is repeated in §<em>The Biquaternion Case</em>. The rank-two split $M_2\oplus M_2$, which is a different decomposition, is <em>The Rank-Two Split of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-isomorphism">The Isomorphism</h2>
+<p><strong>Definition.</strong> Let $\mathbb{C}^4=\mathbb{C}^2\otimes \mathbb{C}^2$ with basis $f_i\otimes g_j$, $i,j\in\{1,2\}$, ordered lexicographically. For $A,B\in M_2(\mathbb{C})$ the <strong>Kronecker product</strong> $A\otimes B$ is the $4\times4$ matrix of the map $x\otimes y\mapsto Ax\otimes By$.</p>
+<p><strong>Proposition.</strong> The Kronecker product is bilinear and satisfies</p>
+<p>$$
+(A\otimes B)(C\otimes D)=AC\otimes BD,\qquad
+I\otimes I=I_4.
+$$</p>
+<p><strong>Proof.</strong> On a decomposable vector $x\otimes y$,</p>
+<p>$$
+(A\otimes B)(C\otimes D)(x\otimes y)=(A\otimes B)(Cx\otimes Dy)=ACx\otimes BDy,
+$$</p>
+<p>and both sides extend by linearity. The unit is the identity on each factor.</p>
+<p><strong>Theorem.</strong> The map $A\otimes B\mapsto A\otimes B$ is an isomorphism of algebras</p>
+<p>$$
+M_2(\mathbb{C})\otimes_\mathbb{C}M_2(\mathbb{C})\longrightarrow M_4(\mathbb{C}).
+$$</p>
+<p><strong>Proof.</strong> The map is a homomorphism by the proposition. It is injective because the sixteen matrices $E_{ij}\otimes E_{kl}$ are linearly independent: $E_{ij}\otimes E_{kl}$ has a single nonzero entry, in the position determined by the pair $(i,k)$ of rows and $(j,l)$ of columns, so the sixteen occupy sixteen distinct positions. Both sides have dimension $16$, so the injective map is an isomorphism.</p>
+<p><strong>The matrix units.</strong> Under the lexicographic ordering,</p>
+<p>$$
+E_{ij}\otimes E_{kl}=E_{2(i-1)+k,\,2(j-1)+l}.
+$$</p>
+<p>The sixteen Kronecker products are the sixteen matrix units, reindexed by pairs.</p>
+<h2 id="the-two-factors">The Two Factors</h2>
+<p><strong>Definition.</strong> The two <strong>factors</strong> of the decomposition are</p>
+<p>$$
+\mathcal{A}=\{A\otimes I:A\in M_2(\mathbb{C})\},\qquad
+\mathcal{B}=\{I\otimes B:B\in M_2(\mathbb{C})\}.
+$$</p>
+<p><strong>Proposition.</strong> $\mathcal{A}$ and $\mathcal{B}$ are subalgebras of $M_4$, each isomorphic to $M_2(\mathbb{C})$ and of dimension $4$. Every element of $\mathcal{A}$ commutes with every element of $\mathcal{B}$, and</p>
+<p>$$
+\mathcal{A}\cap\mathcal{B}=\mathbb{C}I.
+$$</p>
+<p><strong>Proof.</strong> The product formula gives $(A\otimes I)(A'\otimes I)=AA'\otimes I$, so $\mathcal{A}$ is a subalgebra with unit $I\otimes I$; the map $A\mapsto A\otimes I$ is injective, so $\mathcal{A}\cong M_2$. The same holds for $\mathcal{B}$. Commutation is the computation $(A\otimes I)(I\otimes B)=A\otimes B=(I\otimes B)(A\otimes I)$. An element of the intersection is $A\otimes I=I\otimes B$; comparing the entries, $A$ is scalar and $B$ is the same scalar.</p>
+<p><strong>The factors generate the algebra.</strong> The products $ (A\otimes I)(I\otimes B)=A\otimes B$ span all sixteen dimensions, so the algebra generated by $\mathcal{A}\cup\mathcal{B}$ is $M_4$. The two factors are small, but together they are everything.</p>
+<p><strong>The factors are not ideals.</strong> $\mathcal{A}$ is not a two-sided ideal: for $X=A\otimes I$ and $Y=C\otimes D$ with $D$ not scalar, $XY=AC\otimes D$ is not in $\mathcal{A}$. The algebra $M_4$ is simple, so it has no nontrivial two-sided ideals at all.</p>
+<p><strong>The double centraliser.</strong> The commutant of $\mathcal{A}$ in $M_4$ is $\mathcal{B}$, and the commutant of $\mathcal{B}$ is $\mathcal{A}$.</p>
+<p><strong>Proof.</strong> $\mathcal{B}\subseteq\mathcal{A}'$ by commutation. For the reverse inclusion, identify $M_4=\operatorname{End}(\mathbb{C}^{2}\otimes\mathbb{C}^{2})$. The algebra $\mathcal{A}=M_2\otimes I$ is the full algebra of endomorphisms acting on the first factor alone. A map $X$ commuting with all $A\otimes I$ commutes in particular with all the matrix units $E_{ij}\otimes I$; writing $X$ in the basis $f_i\otimes g_j$, the relation $X(E_{ij}\otimes I)=(E_{ij}\otimes I)X$ for all $i,j$ forces $X$ to preserve each $f_i\otimes \mathbb{C}^2$ and to act on it by the same matrix, so $X=I\otimes B$. Hence $\mathcal{A}'=\mathcal{B}$, and symmetrically $\mathcal{B}'=\mathcal{A}$.</p>
+<p><strong>The dimensions.</strong> The theorem is an instance of the double centraliser theorem: $\dim\mathcal{A}=4$, $\dim\mathcal{B}=4$ and $\dim M_4=16=4\cdot4$.</p>
+<h2 id="the-flip">The Flip</h2>
+<p><strong>Definition.</strong> The <strong>flip</strong> is the linear map</p>
+<p>$$
+F:\mathbb{C}^{2}\otimes\mathbb{C}^{2}\longrightarrow\mathbb{C}^{2}\otimes\mathbb{C}^{2},\qquad F(x\otimes y)=y\otimes x.
+$$</p>
+<p>In the basis $f_i\otimes g_j$ its matrix has entries $F_{(i,j),(k,l)}=\delta_{il}\delta_{jk}$.</p>
+<p><strong>Proposition.</strong> $F$ is a symmetric unitary involution:</p>
+<p>$$
+F^{2}=I,\qquad F^{\mathsf T}=F,\qquad F^{*}=F.
+$$</p>
+<p>Its trace is $2$, its determinant is $-1$, and its eigenvalues are $1$ with multiplicity three and $-1$ with multiplicity one.</p>
+<p><strong>Proof.</strong> Applying $F$ twice returns $x\otimes y$, so $F^{2}=I$. The matrix of $F$ in the lexicographic basis is symmetric: the entry at $((i,j),(k,l))$ is $\delta_{il}\delta_{jk}$, symmetric in the two pairs. A real symmetric involution is self-adjoint, hence unitary. The trace is the number of basis vectors fixed by $F$, namely $f_1\otimes g_1$ and $f_2\otimes g_2$, so $\operatorname{tr}F=2$. The eigenvalues are $\pm1$; from $\operatorname{tr}F=2$ and $\operatorname{tr}F^{2}=4$ the multiplicities are three and one, and the determinant is $1^{3}(-1)=-1$.</p>
+<p><strong>The eigenspaces.</strong> On $\mathbb{C}^2\otimes \mathbb{C}^2$ the $+1$ eigenspace of $F$ is $\operatorname{Sym}^{2}\mathbb{C}^{2}$, of dimension $3$; the $-1$ eigenspace is $\Lambda^{2}\mathbb{C}^{2}$, of dimension $1$. On the algebra, the automorphism $\sigma$ has a fixed space of dimension $10$ and an anti-fixed space of dimension $6$: the two dimensions add to $16$, and the fixed space is the subalgebra $M_3\oplus\mathbb{C}$ computed below.</p>
+<p><strong>The swap.</strong> Let $\sigma(X)=FXF$. Then $\sigma$ is an automorphism of $M_4$ of order two, and</p>
+<p>$$
+\sigma(A\otimes B)=B\otimes A.
+$$</p>
+<p><strong>Proof.</strong> $F$ is invertible and conjugation by $F$ is an automorphism; $F^{2}=I$ gives $\sigma^{2}=\mathrm{id}$. For the formula, apply both sides to $x\otimes y$: $\sigma(A\otimes B)(x\otimes y)=F(A\otimes B)(y\otimes x)=F(Ay\otimes Bx)=Bx\otimes Ay=(B\otimes A)(x\otimes y)$.</p>
+<p><strong>The swap is inner.</strong> Every automorphism of $M_4(\mathbb{C})$ is inner, by Skolem–Noether, so $\sigma$ is conjugation by an invertible matrix; the matrix is $F$ itself, which is unitary. The flip is not in $SL_4$, since $\det F=-1$, but the automorphism is insensitive to the scalar: $F$ and $-F$ give the same $\sigma$.</p>
+<p><strong>The fixed algebra.</strong> The fixed algebra of $\sigma$ is the centraliser of $F$,</p>
+<p>$$
+M_4^{\sigma}=\{X:FXF=X\}=\{X:FX=XF\}.
+$$</p>
+<p>Because $F$ is diagonalisable with eigenvalues $1$ of multiplicity three and $-1$ of multiplicity one, its centraliser is</p>
+<p>$$
+M_4^{\sigma}\cong M_3(\mathbb{C})\oplus\mathbb{C},
+$$</p>
+<p>of dimension $10$. The $-1$ eigenspace of $\sigma$ has dimension $6$; it is not a subalgebra, since the product of two anti-fixed elements is fixed.</p>
+<h2 id="the-brauer-reading">The Brauer Reading</h2>
+<p><strong>The class.</strong> In the Brauer group $Br(\mathbb{C})$ the class of $M_n(\mathbb{C})$ is the identity for every $n$: every complex matrix algebra is split. The isomorphism $M_4\cong M_2\otimes M_2$ is the statement</p>
+<p>$$
+[M_2]\,[M_2]=[M_4]=1
+$$</p>
+<p>in $Br(\mathbb{C})$, which is trivial because the group is trivial. Over $\mathbb{R}$ the same product is not trivial: $[M_2(\mathbb{R})]$ is the class of the quaternion algebra, of order two, and $M_2(\mathbb{R})\otimes M_2(\mathbb{R})\cong M_4(\mathbb{R})$ is split. The complex case is the split case of that statement, and the quaternionic structure of <em>The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</em> is the real shadow of it.</p>
+<p><strong>The tensor product of modules.</strong> The isomorphism is the algebra side of the tensor product of the two standard modules: $\mathbb{C}^4=\mathbb{C}^2\otimes \mathbb{C}^2$, and $M_2$ acts on the first factor, $M_2$ on the second. The four-dimensional module of $M_4$ is the tensor product of the two two-dimensional modules, and the flip is the comparison isomorphism of the two orderings.</p>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p><strong>The endomorphism algebra.</strong> The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$. The algebra generated by the two-sided operators $T_{a,b}(x)=axb$ is $\operatorname{End}_\mathbb{C}(\mathbb{B})$, and</p>
+<p>$$
+\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{opp}}\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})\cong M_4(\mathbb{C}).
+$$</p>
+<p>The two factors are the left multiplications $L_a$ and the right multiplications $R_b$. The factor of left multiplications is a copy of $\mathbb{B}$; the factor of right multiplications is a copy of $\mathbb{B}^{\mathrm{opp}}$, which is isomorphic to $\mathbb{B}$ because $\mathbb{B}$ is a matrix algebra. The sixteen operators $T_{\mu\nu}=L_\mu R_\nu$ are the products of the two factors, and they are the matrix units of the tensor product.</p>
+<p><strong>The terminology.</strong> $M_4(\mathbb{C})$ is the matrix representation of the algebra generated by the two-sided operators on $\mathbb{B}$. It is not $\mathbb{B}$ itself, and it is not a matrix representation of $\mathbb{B}$ in the sense of a homomorphism $\mathbb{B}\to M_4$: the left regular representation is the inclusion of the factor $\mathbb{B}\otimes I$, of dimension four, and the full algebra is the endomorphism algebra of the four-dimensional carrier. The distinction is the one stated in <em>The Matrix Algebra $M_4(\mathbb{C})$</em>, §<em>The Full Algebra and the Regular Model</em>.</p>
+<p><strong>The rank-two split is different.</strong> The decomposition $M_4=M_2\oplus M_2$ of <em>The Rank-Two Split of $M_4(\mathbb{C})$</em> is a block-diagonal subalgebra of dimension $8$, attached to a rank-two idempotent. The Kronecker factorisation is an isomorphism of the whole algebra with a tensor product of two four-dimensional algebras, and the two factors are not subalgebras of the block-diagonal split. The first is a grading, the second is a tensor structure.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_4(\mathbb{C})$ is $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ by the Kronecker product. The two factors $M_2\otimes I$ and $I\otimes M_2$ commute, generate the algebra, meet in the scalars, and are mutual commutants. The flip $F(x\otimes y)=y\otimes x$ is a symmetric unitary involution of trace $2$ and determinant $-1$, with eigenspaces $\operatorname{Sym}^{2}\mathbb{C}^{2}$ of dimension $3$ and $\Lambda^{2}\mathbb{C}^{2}$ of dimension $1$; its conjugation is the swap of the factors, an inner automorphism whose fixed algebra is $M_3\oplus\mathbb{C}$ of dimension $10$ and whose anti-fixed space has dimension $6$. The factorisation is the complex split case of the Brauer statement $[M_2][M_2]=[M_4]=1$, and it is the algebra side of $\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim M_2\otimes M_2$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\dim(M_2\otimes I)$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\dim(I\otimes M_2)$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\dim(M_2\otimes I)\cap(I\otimes M_2)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}F$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\det F$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\dim\operatorname{Sym}^2$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$\dim\Lambda^2$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\dim M_4^{\sigma}$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$M_4^{\sigma}$</td>
+<td>$M_3(\mathbb{C})\oplus\mathbb{C}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A\otimes B$</td>
+<td>the Kronecker product, the matrix of $x\otimes y\mapsto Ax\otimes By$</td>
+</tr>
+<tr>
+<td>$\mathcal{A}=M_2\otimes I$</td>
+<td>the first factor, the left action on the first tensor slot</td>
+</tr>
+<tr>
+<td>$\mathcal{B}=I\otimes M_2$</td>
+<td>the second factor, the left action on the second slot</td>
+</tr>
+<tr>
+<td>$F$</td>
+<td>the flip $x\otimes y\mapsto y\otimes x$</td>
+</tr>
+<tr>
+<td>$\sigma(X)=FXF$</td>
+<td>the swap automorphism of order two</td>
+</tr>
+<tr>
+<td>$M_4^{\sigma}$</td>
+<td>the fixed algebra of the swap, the centraliser of $F$</td>
+</tr>
+<tr>
+<td>$[M_n]$</td>
+<td>the Brauer class of $M_n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-sylvester-operator-and-the-kronecker-sum-of-m4c.html">The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</a>, for the operators $L_A$ and $R_B$ and the difference $L_A-R_B$.</li>
+<li><a href="the-numerical-range-and-the-field-of-values-of-m4c.html">The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</a>, for the rule $W(A\otimes I)=W(I\otimes A)=W(A)$.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the full algebra and the regular model.</li>
+<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen operators $T_{\mu\nu}$ and their product rule.</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_\mathbb{C}(\mathbb{B})$.</li>
+<li><a href="the-rank-two-split-of-m4c.html">The Rank-Two Split of $M_4(\mathbb{C})$</a>, for the block-diagonal split, which is not the tensor factorisation.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the unitary group and the Hermitian structure.</li>
+<li><a href="the-real-forms-of-m4c.html">The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</a>, for the real shadow of the Brauer statement.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the double centraliser theorem and the Brauer group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

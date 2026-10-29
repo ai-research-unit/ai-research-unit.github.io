@@ -75,7 +75,7 @@
 \mathbb{B}\;\cong\;\mathrm{Cl}^{+}_{1,3}(\mathbb{R}).
 $$</p>
 <p>The line is a theorem. It is also a boundary. The Clifford algebra has sixteen real dimensions; the even part has eight. The other eight — the odd part, spanned by the four vectors $\gamma^\mu$ and the four trivectors — are <strong>not</strong> in $\mathbb{B}$. No product of even elements is odd, so no inner operation of $\mathbb{B}$ can produce an odd element. The odd part is a module over $\mathbb{B}$, not a subalgebra of it.</p>
-<p>The physics needs that module. Parity is $\gamma^0$. Charge conjugation is $i\gamma^2$. Time reversal is $\gamma^1\gamma^3$. The Dirac adjoint is $\psi^\dagger\gamma^0$. A reflection with normal $u$ is $x\mapsto-\epsilon(u)\,u\,x\,u$. Every one of these is odd. Every one is outside $\mathbb{B}$ as an element. As an operation it is not: the star $\varkappa$ and left multiplication give it, as §<em>The Split: What Can Be Rewritten, and What Cannot</em> and §<em>The Gamma Matrices as Biquaternion Operations</em> show.</p>
+<p>The physics needs that module. Parity is $\gamma^0$. Charge conjugation is $i\gamma^2$. Time reversal is $\gamma^1\gamma^3$. The Dirac adjoint is $\psi^\dagger\gamma^0$. A reflection with normal $u$ is $x\mapsto-\epsilon(u)\,u\,x\,u$. Parity, charge conjugation, the Dirac adjoint and the reflection carry odd elements; time reversal does not: $\gamma^1\gamma^3=-\vec e_y$ is even, a bivector, and belongs to $\mathbb{B}$. It is the antilinear part of $T$ that the even algebra does not supply, and that part is the star. So the discrete operations are not uniformly odd; the odd sector carries $P$ and $C$, and the star carries the antilinearity of $C$ and $T$.</p>
 <p>This article records how far the borrowing goes, and what can replace it.</p>
 <p><strong>The counts.</strong> A scan of the 395 physics articles finds <strong>115</strong> that carry a Clifford marker: an indexed $\gamma$, an explicit gamma-matrix representation, a Clifford symbol $\mathrm{Cl}_{p,q}$, or the dictionary map $\mathsf{M}_4$. Of these, <strong>51</strong> are structural (an explicit matrix block, at least ten indexed gamma occurrences, or at least five Clifford symbols), <strong>47</strong> use the layer in passing, and <strong>17</strong> name it only. <strong>18</strong> write an explicit gamma-matrix representation (the first pass counted 17; the Klein–Gordon article adds one). <strong>52</strong> contain $\gamma^5$ or $\gamma_5$. The borrowing reaches <strong>9 of the 12</strong> categories of <code>physics.md</code>. The first pass counted 109; the six additions are the Klein–Gordon square, the CKM matrix, the trace anomaly, the spinor representation of the Lorentz group, the scalar field in the centre, and the dual equivalence of the Dirac and topological massive gauge fields. Their bands are in the tables below.</p>
 <p><strong>The sharp case.</strong> <em>The Reflection and the Rotation in Biquaternionic Form</em> is the purest instance. Its subject is the part of the Clifford algebra that $\mathbb{B}$ does not contain, and it says so: "The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative." The sentence is exact about elements. It is not a statement about operations: the article's own section <em>Conjugation by $\gamma^0$ Is Complex Conjugation</em> shows that the reflection is conjugation by $\gamma^0$, which is the star $\varkappa$ up to the sign $\epsilon(u)$. The odd generator is the intermediate; the operation is biquaternionic. This is the clearest case of the distinction, not the clearest case of an irreducible import.</p>
@@ -567,10 +567,130 @@ $$</p>
 </table></div>
 <p>The even part is not the problem. $\omega$ and $\gamma^5$ are even, and the chirality projectors $\tfrac12(1\pm\gamma^5)$ are even. The problem is the first, second and fifth rows: the generators, the odd part they span, and the reflection group built from them.</p>
 <p>The layer also imports a metric and a sign. The Clifford metric is $g=\mathrm{diag}(+1,-1,-1,-1)$ on the generators, and the Pin action carries the sign $\epsilon(u)=\pm1$ fixed by $u^2=\epsilon(u)I$. Neither is an element of $\mathbb{B}$; both are data of the Clifford algebra.</p>
+<h2 id="the-algebraic-frame">The Algebraic Frame</h2>
+<p>The dictionary is a chain of isomorphisms, and the audit's vocabulary is exact only when the chain is displayed.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>real dimension</th>
+<th>complex dimension</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Cl}(1,3)$</td>
+<td>$16$</td>
+<td>—</td>
+<td>the Dirac algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$</td>
+<td>$8$</td>
+<td>$4$</td>
+<td>the even slot, the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}(1,3)\otimes_\mathbb{R}\mathbb{C}\cong\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$</td>
+<td>$32$</td>
+<td>$16$</td>
+<td>the ambient matrix algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}^{+}(1,3)\otimes_\mathbb{R}\mathbb{C}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$</td>
+<td>$16$</td>
+<td>$8$</td>
+<td>the complexified even slot</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\otimes_\mathbb{R}\mathbb{C}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$</td>
+<td>$16$</td>
+<td>$8$</td>
+<td>$\mathbb{B}$ is not a real form of $M_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The even slot is real.</strong> Over $\mathbb{R}$ the Dirac algebra is $M_2(\mathbb{H})$, and its even part is $\mathrm{Cl}^{+}(1,3)\cong\mathrm{Cl}(3,0)\cong M_2(\mathbb{C})=\mathbb{B}$, of real dimension $8$. The algebra splits as $\mathrm{Cl}(1,3)=\mathbb{B}\oplus\mathbb{B}u$ for a unit timelike $u$, with the odd slot a copy of $\mathbb{B}$. Complexifying is not the same as adjoining $u$: $\mathrm{Cl}(1,3)\otimes\mathbb{C}\cong M_4(\mathbb{C})$, and the complexified even part is $M_2\oplus M_2$, of complex dimension $8$. The biquaternion algebra embeds as the left factor $M_2\otimes I$ inside $M_4$ (its left regular image); the complexified even Clifford algebra is the block-diagonal $M_2\oplus M_2$ in the chiral frame. Both are copies of $M_2$, but they are different subalgebras of $M_4$: the first is the operator-algebra image, the second the chiral image. The real forms of $M_4(\mathbb{C})$ are $M_4(\mathbb{R})$ and $M_2(\mathbb{H})$, and $\mathbb{B}$ is neither.</p>
+<p><strong>The sixteen and the five.</strong> The sixteen operators $T_{\mu\nu}=L_\mu R_\nu$ are a basis of $\operatorname{End}_\mathbb{C}(\mathbb{B})$. The Clifford basis has $1+4+6+4+1=16$ elements. In the coefficient frame the five gammas are five of the sixteen operators up to the scalar $i$: $\gamma^0=iT_{e_t,e_x}$, $\gamma^k=iT_{e_k,e_y}$, $\gamma_5=-iT_{e_t,e_z}$. The other eleven are the bivectors, the trivectors and the scalar. The five are a <strong>frame</strong>, not a basis: conjugation by any $U\in GL_4$ gives another frame, the subgroup that preserves the span of the generators is the Clifford group, and its even part is the spin group; the stabiliser of the frame itself is the scalars. A frame fixes the Clifford relations; it does not fix a Hermitian structure, a real structure or a charge conjugation.</p>
+<p><strong>The discrete group.</strong> The thirty-two matrices $\pm T_{\mu\nu}$ form $G\cong Q_8\circ Q_8$, an extraspecial group of order $2^{1+4}$: centre $\{\pm I\}$, exponent $4$, nineteen elements of order two, seventeen conjugacy classes, sixteen linear characters and one irreducible representation of degree four, which is the defining one. It is not the two-qubit Pauli group: $G$ is nonabelian, with $G'=\{\pm I\}$ and centre of order $2$, while the two-qubit Pauli group modulo $\{\pm I\}$ is elementary abelian of order $32$; the Pauli group itself has centre $\mathbb{Z}/4$, so it is a central extension by $\mathbb{Z}/4$, not an extraspecial $2$-group.</p>
+<p><strong>Where the algebra is written.</strong> The articles of the $M_4(\mathbb{C})$ category fix the frame piece by piece.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what it fixes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_maths/the-m1-m3-corner-of-m4c.html">The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$</a></td>
+<td>the Peirce corner, the block multiplication and the spin chain</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a></td>
+<td>$\mathrm{Cl}(1,3)$, $\mathrm{Cl}(4,\mathbb{C})\cong M_4$, the gamma relations and the trace orthogonality</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-lie-algebra-gl4-and-sl4-of-m4c.html">The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</a></td>
+<td>the bracket, the roots and the five real forms</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-derivations-and-the-automorphisms-of-m4c.html">The Derivations and the Automorphisms of $M_4(\mathbb{C})$</a></td>
+<td>$\operatorname{Der}=\operatorname{ad}\mathfrak{sl}_4$ and $\operatorname{Aut}=PGL_4$</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-kronecker-factorisation-of-m4c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a></td>
+<td>$\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$ and the two commuting copies</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-real-forms-of-m4c.html">The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</a></td>
+<td>$M_4(\mathbb{R})$, $M_2(\mathbb{H})$ and the theorem that $\mathbb{B}$ is not a real form</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html">The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$</a></td>
+<td>the bivectors, $\mathfrak{so}(4,\mathbb{C})$ and the Pfaffian</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-extraspecial-group-of-the-two-sided-matrices-of-m4c.html">The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$</a></td>
+<td>$G\cong Q_8\circ Q_8$ and its seventeen representations</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html">The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</a></td>
+<td>the bar, the natural conjugation and the star; the conjugate-linear operators and the two Clifford dictionaries</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-vector-and-the-axial-traces-of-m4c.html">The Vector and the Axial Traces of $M_4(\mathbb{C})$</a></td>
+<td>the real-linear embedding, the vector and axial traces, and the trace identity</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-z-grading-and-the-odd-slot-of-m4c.html">The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$</a></td>
+<td>the grade table of the sixteen two-sided operators and the odd slot</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-pin-group-of-the-gamma-frame.html">The Pin Group of the Gamma Frame</a></td>
+<td>$\mathrm{Pin}\not\subseteq\mathbb{B}$, the spin group and the finite gamma group</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-clifford-group-and-the-frame-stabiliser.html">The Clifford Group and the Frame Stabiliser</a></td>
+<td>$\Gamma\to O(4,\mathbb{C})$, the spin group and the stabilisers</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-quartic-the-discriminant-and-the-spectral-strata-of-m4c.html">The Quartic, the Discriminant and the Spectral Strata of $M_4(\mathbb{C})$</a></td>
+<td>the spectrum of a frame element and the centraliser dimension</td>
+</tr>
+<tr>
+<td><a href="../articles_maths/the-cartan-decomposition-and-the-symmetric-space-of-m4c.html">The Cartan Decomposition and the Symmetric Space of $M_4(\mathbb{C})$</a></td>
+<td>$U(4)$, the Hermitian complement and the polar cone</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The terminology.</strong> $M_4(\mathbb{C})$ is the matrix representation of the algebra generated by the two-sided operators on $\mathbb{B}$; it is $\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes_\mathbb{C}\mathbb{B}^{\mathrm{opp}}$, not $\mathbb{B}$, and not a matrix algebra chosen independently of the carrier. The left factor and the right factor each have complex dimension $4$; their sum is $7$; their products span the $16$. This is why the gammas are $4\times4$ and why neither regular image alone can hold them.</p>
+<p>With the frame displayed, the replacement question is sharpened: it is not "can $\mathbb{B}$ do the work of $M_4$" — it cannot, by dimension — but "can the operations on $\mathbb{B}$ be written without the matrix representation". Part II answers that question.</p>
 <h2 id="the-odd-sector-theorem">The Odd-Sector Theorem</h2>
 <p>The obstruction is elementary and exact.</p>
 <p><strong>Proposition.</strong> Let $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$. Every element of $\mathbb{B}$ is even. The product of two even elements is even. Hence no odd element is a product of elements of $\mathbb{B}$, and no algebraic operation of $\mathbb{B}$ produces one.</p>
-<p><em>Proof.</em> The grading is $\mathrm{Cl}=\mathrm{Cl}^{0}\oplus\mathrm{Cl}^{1}$ with $\mathrm{Cl}^{i}\mathrm{Cl}^{j}\subseteq\mathrm{Cl}^{i+j}$. The even part is a subalgebra; the odd part is a two-sided module over it. $\mathbb{B}=\mathrm{Cl}^{0}$. $\square$</p>
+<p><em>Proof.</em> The grading is $\mathrm{Cl}=\mathrm{Cl}^{0}\oplus\mathrm{Cl}^{1}$ with $\mathrm{Cl}^{i}\mathrm{Cl}^{j}\subseteq\mathrm{Cl}^{i+j}$. The even part is a subalgebra; the odd part is a two-sided module over it. $\mathbb{B}=\mathrm{Cl}^{0}$.</p>
 <p>Three consequences follow, and together they are the content of this article.</p>
 <ul>
 <li><strong>The odd elements are not recoverable.</strong> They are not hidden in $\mathbb{B}$ under another name. They are the other half of a larger algebra, and the isomorphism $\mathbb{B}\cong\mathrm{Cl}^{+}$ is precisely the statement that the other half is absent.</li>
@@ -706,12 +826,12 @@ with $\varkappa(b)=\bar b$. The algebra generated by these operations is $\mathr
 <tr>
 <td><a href="../articles_physics/the-reflection-and-the-rotation-in-biquaternionic-form.html">The Reflection and the Rotation</a></td>
 <td>$\gamma^0$, $\gamma^\mu$, $\mathrm{Pin}$</td>
-<td>reflections, parity, time reversal</td>
+<td>reflections, parity and the Pin action</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem</a></td>
-<td>$\gamma^0$, $i\gamma^2$, $\gamma^1\gamma^3$</td>
-<td>$P$, $C$, $T$ on the spinor module</td>
+<td>$\gamma^0$, $i\gamma^2$ (odd); $\gamma^1\gamma^3$ (even)</td>
+<td>$P$ and $C$ on the odd part; $T$'s matrix is in $\mathbb{B}$</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html">Charge Conjugation and the Division Ring</a></td>
@@ -757,7 +877,7 @@ with $\varkappa(b)=\bar b$. The algebra generated by these operations is $\mathr
 </table></div>
 <p>Four of the admissions are explicit. The CPT article writes that the internal matrices of $C$ and $P$ "are odd Clifford elements, outside $\mathbb{B}$". Zitterbewegung writes that $\gamma^0$ "is an <strong>odd</strong> element of the Clifford algebra" and that "an odd element has no representation" in $\mathbb{B}$. The nonlinear Dirac article writes that the Dirac adjoint carries the odd $\gamma^0$ and the axial current carries $\gamma_5$, and that "neither is in the even subalgebra". The reflection article writes the sentence quoted above.</p>
 <p>The corpus knows the boundary. The counts measure how often it is crossed.</p>
-<h3 id="the-math235-users">The $\gamma^5$ Users</h3>
+<h3 id="the-math339-users">The $\gamma^5$ Users</h3>
 <p>The chirality element needs a separate note, because it is <strong>even</strong>: $\gamma^5=i\omega=i\gamma^0\gamma^1\gamma^2\gamma^3$ is the scalar imaginary times the product of four generators, hence grade 4 and even. It is not an odd element, and its use is not an import of the odd part. It is the use of the matrix representation and of the trace.</p>
 <p>Fifty-two articles contain the symbol. The heaviest are:</p>
 <div class="table-scroll"><table>
@@ -1920,7 +2040,7 @@ with $\varkappa(b)=\bar b$. The algebra generated by these operations is $\mathr
 <li><strong>Derivation replacement.</strong> Derive the Clifford algebra, its odd sector and its classification from $\mathbb{B}$ alone. Impossible: the odd sector is an independent real structure, and the classification theorems are theorems about $\mathrm{Cl}$, not about $\mathbb{B}$.</li>
 </ol>
 <p>The useful replacement is the second. It preserves the physics because it is an isomorphism of algebras; it changes the notation because the generators are no longer matrices. The first and third are the senses in which the audit's "no replacement" is correct. The second is the sense in which the answer is yes.</p>
-<h3 id="the-odd-extension-math266">The Odd Extension: $\mathbb{B}\oplus\mathbb{B}\gamma$</h3>
+<h3 id="the-odd-extension-math370">The Odd Extension: $\mathbb{B}\oplus\mathbb{B}\gamma$</h3>
 <p>This section describes the clean presentation of the odd sector. It is <strong>not</strong> needed for the physics: the biquaternion product carries the even sector and the chirality, and the star carries the antilinear operations. The double is the natural presentation when the odd sector is the subject, and it is the form the superalgebra article uses. §<em>The Gamma Matrices as Biquaternion Operations</em> gives the operator form.</p>
 <p>The corpus already contains the algebra. <em>The Superalgebra Reading and the Odd Extension</em> states that one odd generator suffices: $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\gamma$. What it does not state in the form needed here is the multiplication rule and the dictionary of the four generators. They are as follows.</p>
 <p><strong>Theorem (the graded biquaternion form of $\mathrm{Cl}_{1,3}$).</strong> Let $\gamma$ be an odd generator with
@@ -1948,7 +2068,7 @@ The centre of the full algebra is $\mathbb{R}$.</p>
 $$
 (\gamma^0)^2=e_t,\qquad (\gamma^k)^2=-e_t,\qquad \gamma^0\gamma^k+\gamma^k\gamma^0=0,\qquad \gamma^j\gamma^k+\gamma^k\gamma^j=-2\delta_{jk}e_t ,
 $$
-as follows from $\gamma b=\bar b\gamma$ and $\vec e_j\vec e_k+\vec e_k\vec e_j=-2\delta_{jk}e_t$. The volume element is central in $\mathbb{B}$ and anticommutes with every generator, since it is the product of all four. The algebra has real dimension $16$, and the relations are the defining relations of $\mathrm{Cl}_{1,3}$; the universal property gives the isomorphism. For the centre, an element $a+b\gamma$ that commutes with every element of $\mathbb{B}$ has $b=0$ and $a\in\mathbb{C}$; commuting with $\gamma$ then forces $a=\bar a$, so $a\in\mathbb{R}$. The non-centrality of $i$ is the rule $\gamma i=\bar i\gamma=-i\gamma$. $\square$</p>
+as follows from $\gamma b=\bar b\gamma$ and $\vec e_j\vec e_k+\vec e_k\vec e_j=-2\delta_{jk}e_t$. The volume element is central in $\mathbb{B}$ and anticommutes with every generator, since it is the product of all four. The algebra has real dimension $16$, and the relations are the defining relations of $\mathrm{Cl}_{1,3}$; the universal property gives the isomorphism. For the centre, an element $a+b\gamma$ that commutes with every element of $\mathbb{B}$ has $b=0$ and $a\in\mathbb{C}$; commuting with $\gamma$ then forces $a=\bar a$, so $a\in\mathbb{R}$. The non-centrality of $i$ is the rule $\gamma i=\bar i\gamma=-i\gamma$.</p>
 <p>The theorem was checked on the eight-real basis: the product is associative on random elements, the four generators satisfy $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, the volume element is $i$ in the ordering above, and it anticommutes with all four generators. The check is elementary and is recorded because the signs are easy to get wrong.</p>
 <p><strong>What the theorem buys.</strong> The four $4\times4$ gamma matrices are replaced by one odd unit $\gamma$ and the three biquaternion units $i\vec e_k$. The $4\times4$ matrix algebra is replaced by the $2\times2$ biquaternion multiplication table. The algebra is still sixteen-real-dimensional; the odd sector is still there, but it is <strong>one generator</strong>, not four matrices. The physical operations are read in this algebra, up to the phases fixed by the dictionary:</p>
 <div class="table-scroll"><table>
@@ -2008,17 +2128,18 @@ $$
 \gamma^0=R_{i\vec e_x},\qquad \gamma^k=L_{i\vec e_k}R_{\vec e_y},\qquad \gamma_5=R_{-i\vec e_z},
 $$
 where $\vec e_y$ is the chirality-space epsilon: on the chirality index, $R_{\vec e_y}$ is $i\sigma_y$. There the volume element is $\omega=L_iR_{i\vec e_z}$, not $L_i$, and $i\omega=\gamma_5$. The two frames are isomorphic as real Clifford modules and differ in which structure is manifest: the frame above makes the real algebra and the odd sector manifest, this one the complex Dirac equation and its chiral projectors.</p>
-<p><strong>The tensor basis.</strong> The four generators are single elements of the tensor basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$:
+<p><strong>The tensor basis.</strong> In the corpus frame the four generators are single elements of the tensor basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$:
 $$
 \gamma^0=i\,T_{e_t,e_x},\qquad \gamma^k=i\,T_{e_k,e_y},\qquad \gamma_5=-i\,T_{e_t,e_z}.
 $$
-They are not sums, and they are not sandwiches. The sixteen operators $T_{e_\mu,e_\nu}$ are a basis of the operator algebra; in the coefficient matrix representation they are sixteen signed permutation matrices, and in the Peirce basis they are monomial with entries in $\{1,-1,i,-i\}$; the matrix units there are the sixteen products $L_{P_i}R_{P_j}$ of the four Peirce elements. The four generators are four of them up to the scalar $i$; $\gamma_5$ is a fifth, and the products of the generators, including the identity, give the remaining eleven. The simplicity of the gammas — one nonzero entry per row and per column — is a property of the coefficient basis; in the Peirce basis the same gammas are sums of matrix units.</p>
+In that frame they are cells: not sums, and not sandwiches. The sixteen operators $T_{e_\mu,e_\nu}$ are a basis of the operator algebra; in the coefficient matrix representation they are sixteen signed permutation matrices, and in the Peirce basis they are monomial with entries in $\{1,-1,i,-i\}$; the matrix units there are the sixteen products $L_{P_i}R_{P_j}$ of the four Peirce elements. The four generators are four of them up to the scalar $i$; $\gamma_5$ is a fifth, and the products of the generators, including the identity, give the remaining eleven. In fact the sixteen products are exactly the sixteen cells up to units: the identity, the four generators, the six bivectors, the four trivectors and the pseudoscalar enumerate the table. The gammas are a <strong>Clifford frame</strong>, not a basis. The frame displayed is the corpus frame $(\beta,\delta)=(e_y,e_x)$: $e_y$ is the common right factor of the three spatial generators, $e_x$ the right factor of the time generator, and $e_z=-\beta\delta$ the chirality direction. The choice is not canonical. Any orthogonal pair of spatial directions gives a frame; only pairs of coordinate axes make the five into cells, and the grade column and the sign of $\gamma_5$ move with the pair. §<em>A Gamma Frame, and the Choice Behind It</em> of <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em> records the family, tabulates the bijection and the Peirce images, and separates what the frame fixes from what it does not. The simplicity of the gammas — one nonzero entry per row and per column — holds in both bases; in the coefficient basis the entries are $\pm1,\pm i$, and in the Peirce basis the same five are the chiral Dirac matrices of the dictionary, with $\gamma_5$ diagonal.</p>
+<p><strong>Products and sums.</strong> The product set is much smaller than the algebra, and membership is decidable. Expand $M=\sum c_{\mu\nu}T_{\mu\nu}$, with $c_{\mu\nu}=\frac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$. Then $M=L_aR_b$ exactly when $c=ab^{\mathsf T}$, that is, exactly when the coefficient matrix has rank one, and the least number of products summing to $M$ is $\operatorname{rank}c$. Every matrix is a sum of at most four products, and a generic matrix needs four; the products form the closed cone over $\mathbb{P}^3\times\mathbb{P}^3$, of dimension seven, not the algebra of dimension sixteen. Matrix rank does not decide: a single product has rank in $\{0,1,2,4\}$, and the rank-one matrix $E_{11}$ needs four products while the rank-two projector $P_+$ is one. §<em>Products of a Left Matrix and a Right Matrix</em> of the same article states the criterion, the length theorem and the proofs.</p>
 <p><strong>Three levels, not one.</strong> The <strong>operator algebra</strong> is the abstract object: $\mathcal{E}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, generated by the two-sided operators, with the isomorphism $\mathcal{E}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, $a\otimes b\mapsto L_aR_b$. The <strong>matrix representation</strong> is $M_4(\mathbb{C})$, obtained by choosing a basis of $\mathbb{B}$; the coefficient basis gives the tensor matrices $T_{e_\mu,e_\nu}$, the Peirce basis the matrix units $L_{P_i}R_{P_j}$. The <strong>carrier</strong> is $\mathbb{B}\cong\mathbb{C}^4$, on which the operators act. $M_4(\mathbb{C})$ is the matrix representation of the operator algebra — not a different algebra, and not the carrier.</p>
 <p><strong>Building the sixteen from the four.</strong> The article <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em> gives the four left matrices $L_\mu=\mathsf M_4^L(e_\mu)$. The right matrices follow from $R_b=D\,L_{b^{\natural}}\,D$ with $D=\mathrm{diag}(1,-1,-1,-1)$: $R_t=I_4$ and $R_k=-D\,L_k\,D$ for $k=x,y,z$. Then
 $$
 T_{\mu\nu}=L_\mu R_\nu,\qquad \mu,\nu\in\{t,x,y,z\},
 $$
-are sixteen distinct signed permutation matrices, linearly independent, a basis of the matrix representation; in the Peirce basis they remain monomial, with entries in $\{1,-1,i,-i\}$. The tensor product of two $4\times4$ matrices is $16\times16$ and is not this construction; the Kronecker product appears at the $M_2$ level, $T_{a,b}=S\bigl(\mathsf M_2(b)^{\mathsf T}\otimes\mathsf M_2(a)\bigr)S^{-1}$, where $S$ is the Peirce change of the model article, with columns $\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-$ and $\det S=-\tfrac14$, and $S^{-1}$ carries the coefficients $(Q_t,Q_x,Q_y,Q_z)$ to $\mathrm{vec}\,\mathsf M_2(\tilde Q)$. The assignment is a <strong>Clifford frame</strong>: a choice of four anticommuting elements of the tensor basis, not an intrinsic structure of the two-sided family. The biquaternion structure fixes the frame up to a rotation of the spatial triple $(\vec e_x,\vec e_y,\vec e_z)$; the rotation is an algebra automorphism and carries one frame to an equivalent one. The construction is written out, with the sixteen matrices tabulated and checked, in <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>.</p>
+are sixteen distinct signed permutation matrices, linearly independent, a basis of the matrix representation; in the Peirce basis they remain monomial, with entries in $\{1,-1,i,-i\}$. The tensor product of two $4\times4$ matrices is $16\times16$ and is not this construction; the Kronecker product appears at the $M_2$ level, $T_{a,b}=S\bigl(\mathsf M_2(b)^{\mathsf T}\otimes\mathsf M_2(a)\bigr)S^{-1}$, where $S$ is the Peirce change of the model article, with columns $\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-$ and $\det S=-\tfrac14$, and $S^{-1}$ carries the coefficients $(Q_t,Q_x,Q_y,Q_z)$ to $\mathrm{vec}\,\mathsf M_2(\tilde Q)$. The assignment is a <strong>Clifford frame</strong>: a choice of four anticommuting elements of the algebra, which are four cells in the corpus frame, not an intrinsic structure of the two-sided family. The frame depends on an ordered orthonormal pair $(\beta,\delta)$ of spatial directions, and the pair is free: no Clifford relation mentions it. The corpus choice $(\beta,\delta)=(e_y,e_x)$ is a convention, and a pair of non-coordinate directions gives five single products that are not cells. The construction is written out, with the sixteen matrices tabulated and checked, in <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>.</p>
 <p>The algebra of this dictionary is the operator algebra, not one regular image. $L(\mathbb{B})$ and $R(\mathbb{B})$ have complex dimension four each and meet in the scalars, since $L_{e_t}=R_{e_t}=1$, so their sum is seven-dimensional. Their products span the operator algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, whose matrix representation is $M_4(\mathbb{C})$, of complex dimension sixteen (real dimension thirty-two): on the Peirce basis the sixteen products $L_{P_i}R_{P_j}$ are the sixteen matrix units. This is why the gammas are $4\times4$, and why neither regular image alone can hold them. The corpus's $M_4(\mathbb{C})_L$ tables are the left factor; in the Peirce basis that image is $\mathrm{diag}(\mathsf M_2(b),\mathsf M_2(b))$, block diagonal, so it preserves the two chiral planes. The gammas exchange the planes and therefore lie outside it.</p>
 <p><strong>The double is the same algebra, written as a direct sum.</strong> $\mathbb{B}\oplus\mathbb{B}\gamma$ is convenient when an article needs the odd sector as an <em>element</em>: the supercharge, the graded algebra, a Dirac operator written as one object. It makes the grading manifest. It is not needed for the physics: every odd operator is $\varkappa L_b$, and every product of two odd operators is
 $$
@@ -2281,7 +2402,7 @@ which are, up to the scalar $i$, five of the sixteen tensor-basis operators $T_{
 <tr>
 <td>parity, charge conjugation, time reversal, $CPT$</td>
 <td>C</td>
-<td>odd operators $\varkappa L_b$; the exact phases are convention-dependent</td>
+<td>the star for the antilinear parts and left multiplication; $T$'s internal matrix is even</td>
 </tr>
 <tr>
 <td>Dirac adjoint and bilinears</td>
@@ -2324,7 +2445,7 @@ which are, up to the scalar $i$, five of the sixteen tensor-basis operators $T_{
 <h3 id="migration-order">Migration Order</h3>
 <p>The rewrite has a dependency order. The first step is the one the corpus is missing.</p>
 <ol>
-<li><strong>Write the calculus.</strong> Add a single article, or a long section of the dictionary, that states §<em>The Gamma Matrices as Biquaternion Operations</em>: the operator dictionary $\varkappa$, $L$ and $R$, the double as an optional presentation, the trace rules and the sign conventions. Every other article should cite it rather than repeat a gamma-matrix convention. This is the missing piece; the algebra itself is already in the corpus.</li>
+<li><strong>Write the calculus.</strong> The algebra is now written in the $M_4(\mathbb{C})$ category: <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em> states $\mathrm{Cl}(1,3)$, $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$, the gamma relations, the trace orthogonality and the non-canonicity of the frame; <em>The Kronecker Factorisation</em> states $\operatorname{End}_\mathbb{C}(\mathbb{B})\cong\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$; <em>The Quaternionic Structure and the Real Forms</em> states the two real forms; <em>The Extraspecial Group</em> states the discrete structure of the frame. Two operator-theoretic pieces complete the calculus: <a href="../articles_maths/the-sylvester-operator-and-the-kronecker-sum-of-m4c.html">The Sylvester Operator and the Kronecker Sum</a> treats the difference $L_A-R_B$, its spectrum $\lambda_i(A)-\lambda_j(B)$ and the linear equations $AX-XB=C$, $AX+XB=C$ and $AXB-X=C$; <a href="../articles_maths/the-numerical-range-and-the-field-of-values-of-m4c.html">The Numerical Range and the Field of Values</a> treats the numerical radius, the elliptical range of the $2\times2$ compressions, and the disk $\cos(\pi/5)$ of the nilpotent chain. The missing piece is the dictionary section itself: the operator dictionary $\varkappa$, $L$ and $R$, the double as an optional presentation, the trace rules and the sign conventions. Every other article should cite it rather than repeat a gamma-matrix convention.</li>
 <li><strong>Rewrite the dictionary.</strong> <em>The Dirac Algebra and Biquaternions — A Dictionary</em> is the root. Replace the four matrices by $\varkappa$ and $\varkappa L_{-i\vec e_k}$, and keep the old matrix dictionary as a translation table for the articles not yet rewritten. The double $\mathbb{B}\oplus\mathbb{B}\gamma$ is the optional presentation for the two graded-algebra articles.</li>
 <li><strong>Rewrite the Dirac equation and the spinor module.</strong> These are the most cited and they fix the carrier: the bimodule, the left Lorentz action, the right chirality. The Daviau article is the model; it already writes the equation in the space-Clifford form.</li>
 <li><strong>Settle the trace before rewriting the trace articles.</strong> <em>The Fujikawa Method</em> and <em>Anomalies and Anomaly Cancellation</em> are research tasks, not substitutions: the biquaternion trace, the real-linear determinant and the factor of two must be computed and checked against the known coefficient. Until that check exists, leave them in $\mathrm{Cl}$. Then rewrite the EDM, the chiral condensate, the chiral fermions and the bosonization, which use the projector and the bilinear, not the measure.</li>
@@ -2348,6 +2469,7 @@ which are, up to the scalar $i$, five of the sixteen tensor-basis operators $T_{
 <li><strong>The audit's headline is too strong.</strong> "The odd sector cannot be removed by notation" is true for elements and for inner operations. It is too strong for actions: the odd generators are real-linear operations on $\mathbb{B}$, $\gamma^0=\varkappa$ and $\gamma^k=\varkappa L_{-i\vec e_k}$. The correct statement is: <em>the odd sector cannot be removed from the algebra, but it can be carried by the product, the star and left multiplication on $\mathbb{B}$; the odd generator is a presentation, and most articles do not need it.</em></li>
 <li><strong>The rewrite is not uniform.</strong> The biquaternion formalism carries 32 of the 51 articles: the field, the equation, the bilinears, the chiral projectors and the trace of a product; the star is added only where an antilinear operation appears. The star is needed only for the antilinear operations; the odd generator only where the odd element is the subject. Nineteen cannot be rewritten without deleting their subject: twelve are about the Clifford algebra or its relation to another formalism, and seven need a trace or a representation theorem rebuilt.</li>
 <li><strong>The obstruction catalogue's O22 needs a correction.</strong> Left multiplication is chirality-preserving, not chirality-blind; on the Dirac module it acts as $b\oplus\bar b$, not with the same matrix on both halves. Right multiplication is chirality-sensitive. The conclusion — the chiral gauge group is an import — stands.</li>
+<li><strong>One correction on the discrete operations.</strong> Time reversal's internal matrix $\gamma^1\gamma^3=-\vec e_y$ is even and belongs to $\mathbb{B}$; it is parity and charge conjugation that carry odd elements. The first draft's sentence "every one of these is odd", and the CPT row of the odd-object table, said otherwise; both are corrected. The correction changes no count and no split: the CPT article itself states that $T$'s matrix is even, and the replacement of $T$ still needs the star for its antilinear part.</li>
 <li><strong>The operator vocabulary is fixed.</strong> <em>Two-sided</em> is reserved for $T_{a,b}$ with independent parameters; the single-element congruence is a <em>sandwich</em>. The six sector articles have been renamed and the overview rewritten. The mismatch was not cosmetic: it made the Lorentz congruence look like a free two-parameter family and obscured that the gamma matrices are single two-sided operators $T_{a,b}$ in the complex-linear frame — four tensor-basis elements up to the scalar $i$ — and not sandwiches. In the real-linear frame they are star and left multiplications. Neither frame makes them free two-parameter families.</li>
 <li><strong>The trace is not the regular trace.</strong> The regular trace on $\mathbb{B}$ is the sum of the vector and axial Dirac traces, $\operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_{\Delta}+\operatorname{Tr}_{\Delta,\gamma_5}$. The central $i$ has trace $4i$ in the regular trace and $0$ in the vector trace. A biquaternion anomaly computation must use the pair, not the regular trace alone.</li>
 <li><strong>The physics is preserved by construction.</strong> The replacement is an isomorphism of real algebras. The results that depend on the Clifford action are preserved; the imports (gauge group, scales, spin–statistics, index theorem) remain imports. The replacement adds no prediction and removes none; the trace bullet above is the one representation-level exception.</li>

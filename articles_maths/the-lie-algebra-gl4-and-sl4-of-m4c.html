@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lie-algebra-math0-and-math1-of-math2"><strong>The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra $M_4(\mathbb{C})$ is a Lie algebra under the commutator</p>
+<p>$$
+[A,B]=AB-BA,
+$$</p>
+<p>and the two Lie algebras of the category are $\mathfrak{gl}_4(\mathbb{C})=M_4(\mathbb{C})$ with this bracket, of complex dimension $16$, and its traceless ideal $\mathfrak{sl}_4(\mathbb{C})$, of dimension $15$. The first is reductive with centre $\mathbb{C}I$; the second is simple of type $A_3$. The decomposition</p>
+<p>$$
+\mathfrak{gl}_4=\mathfrak{sl}_4\oplus\mathbb{C}I
+$$</p>
+<p>is a direct sum of Lie algebras, and the trace is the only Lie homomorphism from $\mathfrak{gl}_4$ to $\mathbb{C}$.</p>
+<p>This article states the bracket, the centre and the derived algebra, the root space decomposition of $\mathfrak{sl}_4$, the Killing form, the five real forms with their maximal compact subalgebras and signatures, and the subalgebras that the frame and the antisymmetric sector provide. The exponential and the group are <em>The Exponential and the Lie Group of $M_4(\mathbb{C})$</em>; the derivations are <em>The Derivations and the Automorphisms of $M_4(\mathbb{C})$</em>; the antisymmetric sector is <em>The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-bracket-and-the-decomposition">The Bracket and the Decomposition</h2>
+<p><strong>Definition.</strong> $\mathfrak{gl}_4(\mathbb{C})$ is the vector space $M_4(\mathbb{C})$ with the bracket $[A,B]=AB-BA$. It is a complex Lie algebra of dimension $16$.</p>
+<p><strong>Proposition.</strong> The bracket is bilinear, alternating and satisfies the Jacobi identity. The centre is $\mathbb{C}I$, and the derived algebra is</p>
+<p>$$
+[\mathfrak{gl}_4,\mathfrak{gl}_4]=\mathfrak{sl}_4=\{A:\operatorname{tr}A=0\}.
+$$</p>
+<p><strong>Proof.</strong> Bilinearity and alternation are immediate from the associativity of the product. The Jacobi identity is the expansion</p>
+<p>$$
+[A,[B,C]]+[B,[C,A]]+[C,[A,B]]=0,
+$$</p>
+<p>which holds in every associative algebra. A matrix $X$ is central exactly when $XA=AX$ for all $A$, which forces $X$ to be scalar. The trace of a commutator vanishes, so the derived algebra lies in $\mathfrak{sl}_4$; the converse holds because $E_{ij}=[E_{ii},E_{ij}]$ for $i\ne j$ and $E_{ii}-E_{jj}=[E_{ij},E_{ji}]$, and these elements span the traceless matrices.</p>
+<p><strong>The direct sum.</strong> Every matrix splits as</p>
+<p>$$
+A=\bigl(A-\tfrac14\operatorname{tr}(A)I\bigr)+\tfrac14\operatorname{tr}(A)I,
+$$</p>
+<p>with the first term traceless and the second central. Both summands are ideals, and they meet in zero, so</p>
+<p>$$
+\mathfrak{gl}_4=\mathfrak{sl}_4\oplus\mathbb{C}I
+$$</p>
+<p>as Lie algebras. The centre is one-dimensional and the derived algebra is fifteen-dimensional.</p>
+<p><strong>The simplicity.</strong> $\mathfrak{sl}_4(\mathbb{C})$ is simple: it has no nonzero proper ideal.</p>
+<p><strong>Proof.</strong> The proof uses the root decomposition of the next section. Let $\mathfrak{a}\ne0$ be an ideal and let $X\in\mathfrak{a}$ be nonzero. Write $X=H_0+\sum_\alpha X_\alpha$ with $H_0\in\mathfrak{h}$ and $X_\alpha\in\mathbb{C}E_\alpha$. Choose $H\in\mathfrak{h}$ such that the numbers $\alpha(H)$ for the twelve roots and $0$ are all distinct. For a root $\alpha$, the Lagrange projector</p>
+<p>$$
+P_\alpha=\prod_{\gamma\ne\alpha}\frac{\operatorname{ad}_H-\gamma(H)}{\alpha(H)-\gamma(H)},
+$$</p>
+<p>the product running over $\{0\}\cup\{\text{roots}\}$, is a polynomial in $\operatorname{ad}_H$, so $P_\alpha(X)\in\mathfrak{a}$; and $P_\alpha(X)=X_\alpha$. If some $X_\alpha$ is nonzero, then $E_\alpha=E_{ij}\in\mathfrak{a}$ for some $i\ne j$. The brackets</p>
+<p>$$
+[E_{ij},E_{jk}]=E_{ik},\qquad [E_{ki},E_{ij}]=E_{kj},\qquad [E_{ij},E_{ji}]=E_{ii}-E_{jj}
+$$</p>
+<p>then produce every off-diagonal unit and every traceless diagonal matrix, so $\mathfrak{a}=\mathfrak{sl}_4$. If all $X_\alpha$ vanish, then $X=H_0$ is a nonzero diagonal matrix, and $[H_0,E_{ij}]=(h_i-h_j)E_{ij}\ne0$ for some $i\ne j$, so a nonzero root vector lies in $\mathfrak{a}$ and the previous case applies.</p>
+<p><strong>The type.</strong> The root system of $\mathfrak{sl}_4$ is $A_3$: rank three, twelve roots, dimension $3+12=15$.</p>
+<h2 id="the-root-space-decomposition">The Root Space Decomposition</h2>
+<p><strong>The Cartan subalgebra.</strong> Let $\mathfrak{h}$ be the space of traceless diagonal matrices,</p>
+<p>$$
+\mathfrak{h}=\Bigl\{\operatorname{diag}(h_1,h_2,h_3,h_4):\sum_i h_i=0\Bigr\},
+$$</p>
+<p>of dimension $3$. It is abelian and self-normalising.</p>
+<p><strong>The roots.</strong> For $H=\operatorname{diag}(h_1,\dots,h_4)$ define the linear forms $\epsilon_i(H)=h_i$. Then</p>
+<p>$$
+[H,E_{ij}]=(h_i-h_j)E_{ij}=(\epsilon_i-\epsilon_j)(H)\,E_{ij}.
+$$</p>
+<p>The twelve forms $\pm(\epsilon_i-\epsilon_j)$, $i<j$, are the <strong>roots</strong>, and the <strong>root space</strong> of $\alpha=\epsilon_i-\epsilon_j$ is $\mathbb{C}E_{ij}$. The decomposition is</p>
+<p>$$
+\mathfrak{sl}_4=\mathfrak{h}\oplus\bigoplus_{i\ne j}\mathbb{C}E_{ij},\qquad
+\dim\mathfrak{sl}_4=3+12=15.
+$$</p>
+<p><strong>The root lattice.</strong> The simple roots are $\alpha_1=\epsilon_1-\epsilon_2$, $\alpha_2=\epsilon_2-\epsilon_3$ and $\alpha_3=\epsilon_3-\epsilon_4$, forming the chain of the Dynkin diagram $A_3$. The positive roots are the six forms $\epsilon_i-\epsilon_j$ with $i<j$.</p>
+<p><strong>The Chevalley basis.</strong> With $H_i=E_{ii}-E_{i+1,i+1}$ and $E_{ij}$ for $i\ne j$, the brackets are</p>
+<p>$$
+[H_i,E_{jk}]=\bigl(\delta_{ij}-\delta_{i+1,j}-\delta_{ik}+\delta_{i+1,k}\bigr)E_{jk},
+$$</p>
+<p>and</p>
+<p>$$
+[E_{ij},E_{kl}]=\delta_{jk}E_{il}-\delta_{li}E_{kj}.
+$$</p>
+<p>The matrix-unit rule gives the structure constants of $\mathfrak{sl}_4$ in this basis; for distinct $i,j,k$ it specialises to</p>
+<p>$$
+[E_{ij},E_{jk}]=E_{ik},\qquad [E_{ki},E_{ij}]=E_{kj},\qquad [E_{ij},E_{ji}]=E_{ii}-E_{jj}.
+$$</p>
+<p><strong>The adjoint representation.</strong> The map $\operatorname{ad}_X(Y)=[X,Y]$ is a representation of $\mathfrak{sl}_4$ on itself, of dimension $15$, and $\mathfrak{sl}_4$ is simple, so the adjoint representation is irreducible. The weights of $\mathfrak{h}$ on $\mathfrak{sl}_4$ are the roots and zero, with multiplicities one and three.</p>
+<h2 id="the-killing-form">The Killing Form</h2>
+<p><strong>Definition.</strong> The Killing form is $B(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$.</p>
+<p><strong>Theorem.</strong> On $\mathfrak{gl}_4$,</p>
+<p>$$
+B(X,Y)=8\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y),
+$$</p>
+<p>and on $\mathfrak{sl}_4$ the same formula reduces to</p>
+<p>$$
+B(X,Y)=8\operatorname{tr}(XY).
+$$</p>
+<p><strong>Proof.</strong> The endomorphism $\operatorname{ad}_X\operatorname{ad}_Z$ acts on the matrix unit $E_{ij}$ by</p>
+<p>$$
+\operatorname{ad}_X\operatorname{ad}_Z(E_{ij})=(x_{ii}-x_{jj})(z_{ii}-z_{jj})E_{ij},
+$$</p>
+<p>so its trace is</p>
+<p>$$
+\sum_{i,j}(x_{ii}-x_{jj})(z_{ii}-z_{jj})
+=2n\operatorname{tr}(XZ)-2\operatorname{tr}(X)\operatorname{tr}(Z),
+$$</p>
+<p>which at $n=4$ is $8\operatorname{tr}(XZ)-2\operatorname{tr}X\operatorname{tr}Z$. On the traceless subspace the second term vanishes.</p>
+<p><strong>The nondegeneracy.</strong> The form is nondegenerate on $\mathfrak{sl}_4$, because $\operatorname{tr}(XY)$ is nondegenerate on the traceless matrices: if $X$ is traceless and $\operatorname{tr}(XY)=0$ for all traceless $Y$, then $X$ is a scalar, hence zero. On $\mathfrak{gl}_4$ the form is degenerate: $B(I,Y)=8\operatorname{tr}Y-2\cdot4\operatorname{tr}Y=0$ for every $Y$, so the radical is the centre $\mathbb{C}I$.</p>
+<p><strong>The Casimir.</strong> The form identifies $\mathfrak{sl}_4$ with its dual, and the inverse form gives the Casimir element of the adjoint representation, of degree two.</p>
+<h2 id="the-real-forms">The Real Forms</h2>
+<p><strong>Definition.</strong> A <strong>real form</strong> of a complex Lie algebra $\mathfrak{g}$ is a real Lie algebra $\mathfrak{g}_0$ with $\mathfrak{g}_0\otimes_\mathbb{R}\mathbb{C}\cong\mathfrak{g}$.</p>
+<p><strong>Theorem.</strong> The real forms of $\mathfrak{sl}_4(\mathbb{C})$ are, up to isomorphism,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Real form</th>
+<th>Definition</th>
+<th>$\dim$</th>
+<th>Maximal compact</th>
+<th>$\dim\mathfrak{k}$</th>
+<th>Killing signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(4)$</td>
+<td>$\{X:X^{*}=-X,\ \operatorname{tr}X=0\}$</td>
+<td>$15$</td>
+<td>$\mathfrak{su}(4)$</td>
+<td>$15$</td>
+<td>$(0,15)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(1,3)$</td>
+<td>$\{X:X^{*}J+JX=0,\ \operatorname{tr}X=0\}$</td>
+<td>$15$</td>
+<td>$\mathfrak{u}(3)$</td>
+<td>$9$</td>
+<td>$(6,9)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2,2)$</td>
+<td>$\{X:X^{*}J+JX=0,\ \operatorname{tr}X=0\}$</td>
+<td>$15$</td>
+<td>$\mathfrak{s}(\mathfrak{u}(2)\oplus\mathfrak{u}(2))$</td>
+<td>$7$</td>
+<td>$(8,7)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_4(\mathbb{R})$</td>
+<td>the real traceless matrices</td>
+<td>$15$</td>
+<td>$\mathfrak{so}(4)$</td>
+<td>$6$</td>
+<td>$(9,6)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}^{*}(4)=\mathfrak{sl}_2(\mathbb{H})$</td>
+<td>the quaternionic traceless matrices</td>
+<td>$15$</td>
+<td>$\mathfrak{sp}(2)$</td>
+<td>$10$</td>
+<td>$(5,10)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>In the table $J$ is the form $\operatorname{diag}(1,-1,-1,-1)$ for $\mathfrak{su}(1,3)$ and $\operatorname{diag}(1,1,-1,-1)$ for $\mathfrak{su}(2,2)$; $\mathfrak{su}^{*}(4)$ is the algebra of $2\times2$ quaternionic matrices with $\operatorname{Re}\operatorname{tr}X=0$.</p>
+<p><strong>The compact form.</strong> $\mathfrak{su}(4)$ is the compact real form: $X^{*}=-X$ makes the Killing form negative definite. Its complexification is $\mathfrak{sl}_4$, and the conjugation is $X\mapsto -X^{*}$.</p>
+<p><strong>The signatures.</strong> For a real form with Cartan involution $\theta$, the form $B_\theta(X,Y)=-B(X,\theta Y)$ is positive definite, $B$ is negative definite on the fixed algebra $\mathfrak{k}$ and positive definite on its complement $\mathfrak{p}$. The signature column is $(\dim\mathfrak{p},\dim\mathfrak{k})$, with $\dim\mathfrak{p}+\dim\mathfrak{k}=15$.</p>
+<p><strong>The symmetric spaces.</strong> The Cartan decompositions give</p>
+<p>$$
+SU(4)/S(U(1)\times U(3))=\mathbb{CP}^{3},\qquad
+SU(1,3)/S(U(1)\times U(3))=\mathbb{CH}^{3},
+$$</p>
+<p>of real dimension $6$, and</p>
+<p>$$
+SU(2,2)/S(U(2)\times U(2)),\qquad
+SL_4(\mathbb{R})/SO(4),\qquad
+SU^{*}(4)/Sp(2)=H^{5},
+$$</p>
+<p>of real dimensions $8$, $9$ and $5$. The first two are the compact and non-compact complex projective spaces; the third is the Grassmannian of two-planes of signature $(2,2)$; the fourth is the space of positive definite symmetric matrices of determinant one; the fifth is the real hyperbolic five-space.</p>
+<p><strong>The isomorphisms.</strong> $\mathfrak{su}(2,2)\cong\mathfrak{so}(2,4)$, of dimension $15$: the conformal algebra of four-dimensional Minkowski space. $\mathfrak{su}^{*}(4)\cong\mathfrak{so}(5,1)$, the isometry algebra of hyperbolic five-space. $\mathfrak{su}(1,3)$ is the isometry algebra of the indefinite Hermitian form of signature $(1,3)$, and it is the algebra of the Krein isometries of <em>The Krein Isometry Group and Its Cartan Decomposition</em>.</p>
+<h2 id="the-subalgebras-of-the-category">The Subalgebras of the Category</h2>
+<p><strong>The antisymmetric sector.</strong> The antisymmetric matrices form $\mathfrak{so}(4,\mathbb{C})\subset\mathfrak{sl}_4$, of dimension $6$, and</p>
+<p>$$
+\mathfrak{so}(4,\mathbb{C})=\Lambda^{2}_{+}\oplus\Lambda^{2}_{-}\cong\mathfrak{sl}_2\oplus\mathfrak{sl}_2.
+$$</p>
+<p>The two summands are the self-dual and anti-self-dual halves of <em>The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$</em>, and the splitting is the one attached to the Hodge star.</p>
+<p><strong>The chiral pair.</strong> The diagonal subalgebra</p>
+<p>$$
+\mathfrak{s}(\mathfrak{u}(2)\oplus\mathfrak{u}(2))=\Bigl\{\begin{pmatrix}A&0\\0&D\end{pmatrix}:\operatorname{tr}A+\operatorname{tr}D=0\Bigr\}
+$$</p>
+<p>is the compact algebra of the chiral decomposition of the carrier, of dimension $7$. It is $\mathfrak{su}(2)\oplus\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, and the semisimple part $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ is the chiral pair that preserves the chiral splitting of <em>The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</em>.</p>
+<p><strong>The Peirce chain.</strong> The three matrices $J_3=\operatorname{diag}(\tfrac32,\tfrac12,-\tfrac12,-\tfrac32)$ and $J_\pm$ of the principal $\mathfrak{sl}_2$ generate a copy of $\mathfrak{sl}_2$ inside $\mathfrak{sl}_4$, acting irreducibly on $\mathbb{C}^{4}$ as the highest-weight-three representation. It is generated by the simple nilpotents, and it is not the chiral pair: the chain mixes the two chiralities, the pair preserves them.</p>
+<p><strong>The dimensions.</strong> The three subalgebras have dimensions $6$, $7$ and $3$; the first is the antisymmetric sector, the second preserves the chiral splitting, and the third acts irreducibly on $\mathbb{C}^{4}$. None of them is contained in another: the antisymmetric sector has no diagonal matrices, the chiral pair is not antisymmetric, and the chain has both diagonal and block-mixing off-diagonal matrices.</p>
+<h2 id="summary">Summary</h2>
+<p>$\mathfrak{gl}_4(\mathbb{C})$ is the sixteen-dimensional Lie algebra of $4\times4$ matrices under the commutator, with centre $\mathbb{C}I$ and derived algebra $\mathfrak{sl}_4$, so that $\mathfrak{gl}_4=\mathfrak{sl}_4\oplus\mathbb{C}I$. $\mathfrak{sl}_4$ is simple of type $A_3$, of dimension $15$, with a Cartan subalgebra of dimension $3$ and twelve roots $\pm(\epsilon_i-\epsilon_j)$ carried by the matrix units $E_{ij}$. Its Killing form is $8\operatorname{tr}(XY)$, and the form on $\mathfrak{gl}_4$ is $8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$. The five real forms are $\mathfrak{su}(4)$, $\mathfrak{su}(1,3)$, $\mathfrak{su}(2,2)$, $\mathfrak{sl}_4(\mathbb{R})$ and $\mathfrak{su}^{*}(4)$, of maximal compact dimensions $15$, $9$, $7$, $6$ and $10$, with Killing signatures $(0,15)$, $(6,9)$, $(8,7)$, $(9,6)$ and $(5,10)$. The antisymmetric sector, the chiral pair and the principal $\mathfrak{sl}_2$ are subalgebras of dimensions $6$, $7$ and $3$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim_\mathbb{C}\mathfrak{gl}_4$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\dim_\mathbb{C}\mathfrak{sl}_4$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>$\dim\mathfrak{h}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Number of roots</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>$B(X,Y)$ on $\mathfrak{sl}_4$</td>
+<td>$8\operatorname{tr}(XY)$</td>
+</tr>
+<tr>
+<td>Real forms</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$\dim\mathfrak{so}(4,\mathbb{C})$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\dim\mathfrak{su}(2)\oplus\mathfrak{su}(2)$</td>
+<td>$6$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{gl}_4$</td>
+<td>$M_4(\mathbb{C})$ with the commutator</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_4$</td>
+<td>the traceless matrices, the derived algebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{h}$</td>
+<td>the traceless diagonal matrices</td>
+</tr>
+<tr>
+<td>$\epsilon_i$</td>
+<td>the linear form $\operatorname{diag}(h_1,\dots,h_4)\mapsto h_i$</td>
+</tr>
+<tr>
+<td>$\alpha_i$</td>
+<td>the simple roots $\epsilon_i-\epsilon_{i+1}$</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$\mathfrak{k},\mathfrak{p}$</td>
+<td>the compact and non-compact parts of a Cartan decomposition</td>
+</tr>
+<tr>
+<td>$\Lambda^{2}_{\pm}$</td>
+<td>the self-dual and anti-self-dual subalgebras of $\mathfrak{so}(4,\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-sylvester-operator-and-the-kronecker-sum-of-m4c.html">The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</a>, for the adjoint operator $\operatorname{ad}_A$ and the root values.</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the algebra, the trace and the centre.</li>
+<li><a href="the-exponential-and-the-lie-group-of-m4c.html">The Exponential and the Lie Group of $M_4(\mathbb{C})$</a>, for the group and the exponential.</li>
+<li><a href="the-derivations-and-the-automorphisms-of-m4c.html">The Derivations and the Automorphisms of $M_4(\mathbb{C})$</a>, for $\operatorname{Der}(M_4)=\operatorname{ad}\mathfrak{sl}_4$.</li>
+<li><a href="the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-m4c.html">The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$</a>, for $\mathfrak{so}(4,\mathbb{C})=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$.</li>
+<li><a href="the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html">The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</a>, for the chiral pair.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the root systems and the Killing form.</li>
+<li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for the real forms and the Cartan decompositions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

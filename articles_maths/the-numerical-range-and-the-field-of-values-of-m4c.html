@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Numerical Range and the Field of Values of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-numerical-range-and-the-field-of-values-of-math0"><strong>The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For $A\in M_4(\mathbb{C})$ the <strong>field of values</strong>, or <strong>numerical range</strong>, is the set</p>
+<p>$$
+W(A)=\bigl\{x^*Ax:\ x\in\mathbb{C}^{4},\ x^*x=1\bigr\},
+$$</p>
+<p>the image of the unit sphere under the quadratic form of $A$. The general theory — compactness, the containment of the spectrum, the Toeplitz–Hausdorff convexity, the equivalence $\tfrac12\|A\|\le w(A)\le\|A\|$ of the numerical radius with the norm, and the Hermitian and normal cases — is <em>Hermitian Operators and the Numerical Range</em>, stated there for a bounded operator on a Hilbert space. This article does not restate it. It computes the field of values in the four-dimensional case: the support function, the elliptical range theorem of the $2\times2$ compressions with its proof, the field of values of the nilpotent Jordan block $J_4$ as the disk of radius $\cos(\pi/5)$, the rank-one case, the block-diagonal rule, and the comparison with the biquaternion model.</p>
+<p>The spectrum and the resolvent are <em>Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</em>; the singular values and the operator norm are <em>The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</em> and <em>The Polar Decomposition of $M_4(\mathbb{C})$</em>; the Hermitian structure is <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>; the biquaternion matrix is <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>; and the two-dimensional case of the qubit is <em>$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector</em>. The infinite-dimensional theory of the numerical range and the Toeplitz–Hausdorff theorem in that setting are not treated here.</p>
+<h2 id="the-field-of-values-and-its-support-function">The Field of Values and Its Support Function</h2>
+<p><strong>Definition.</strong> $W(A)=\{x^*Ax:\|x\|=1\}$ and $w(A)=\max_{z\in W(A)}|z|$.</p>
+<p><strong>Proposition (the elementary properties).</strong> The set $W(A)$ is compact and connected, it contains the spectrum, and it is invariant under unitary similarity, $W(UAU^*)=W(A)$ for $U\in U(4)$. For scalars $\alpha,\beta$,</p>
+<p>$$
+W(\alpha A+\beta I_4)=\alpha W(A)+\beta .
+$$</p>
+<p><strong>Proof.</strong> The unit sphere is compact and the quadratic form is continuous, so the image is compact; the sphere is connected, so the image is connected. An eigenvector with eigenvalue $\lambda$ gives $\lambda\in W(A)$. The unitary invariance is the substitution $x=Uy$, and the affine rule is the computation $y^*(\alpha A+\beta I)y=\alpha y^*Ay+\beta$.</p>
+<p><strong>Proposition (the Hermitian and normal cases).</strong> For Hermitian $H$,</p>
+<p>$$
+W(H)=[\lambda_{\min}(H),\lambda_{\max}(H)] .
+$$</p>
+<p>For normal $A$,</p>
+<p>$$
+W(A)=\operatorname{conv}\bigl(\operatorname{spec}A\bigr).
+$$</p>
+<p><strong>Proof.</strong> The Rayleigh quotient of a Hermitian matrix lies between the extreme eigenvalues, and both are attained, so the range is the interval. For normal $A=UDU^*$ and unit $x$ with $y=U^*x$,</p>
+<p>$$
+x^*Ax=\sum_{k=1}^{4}|y_k|^{2}\lambda_k,
+$$</p>
+<p>a convex combination of the eigenvalues because $\sum_k|y_k|^{2}=1$; every convex combination is realized by a unit vector with the prescribed moduli.</p>
+<p><strong>The support function.</strong> For a compact convex set $K\subset\mathbb{C}$ let</p>
+<p>$$
+h_K(\alpha)=\max_{z\in K}\operatorname{Re}\bigl(e^{-i\alpha}z\bigr).
+$$</p>
+<p>Then</p>
+<p>$$
+h_{W(A)}(\alpha)=\lambda_{\max}\bigl(\operatorname{Re}(e^{-i\alpha}A)\bigr),
+\qquad
+\operatorname{Re}M=\tfrac12(M+M^*) .
+$$</p>
+<p><strong>Proof.</strong> For a unit $x$,</p>
+<p>$$
+\operatorname{Re}\bigl(e^{-i\alpha}x^*Ax\bigr)
+=x^*\operatorname{Re}(e^{-i\alpha}A)x,
+$$</p>
+<p>and the maximum of the Rayleigh quotient of a Hermitian matrix is its largest eigenvalue.</p>
+<p><strong>Corollary (the half-plane criterion).</strong> $W(A)$ lies in the open right half-plane exactly when $A+A^*$ is positive definite.</p>
+<p><strong>Proof.</strong> $\operatorname{Re}(x^*Ax)=x^*\bigl(\tfrac12(A+A^*)\bigr)x$ is positive for every nonzero $x$ exactly when the Hermitian part is positive definite.</p>
+<p><strong>Corollary (the boundary).</strong> $W(A)$ is the intersection of the half-planes $\operatorname{Re}(e^{-i\alpha}z)\le h_{W(A)}(\alpha)$, and its boundary is the envelope of the supporting lines of these half-planes.</p>
+<p><strong>Proof.</strong> A compact convex set is the intersection of its supporting half-planes.</p>
+<h2 id="the-two-dimensional-ellipse">The Two-Dimensional Ellipse</h2>
+<p><strong>Lemma (the compression).</strong> Let $x,y$ be orthonormal, $V=\operatorname{span}\{x,y\}$, and $A_V=P_VA|_V$. Then $x^*A_Vx=x^*Ax$, $y^*A_Vy=y^*Ay$, and $W(A_V)\subset W(A)$.</p>
+<p><strong>Proof.</strong> For $v\in V$ one has $P_Vv=v$, so $v^*A_Vv=v^*Av$; every unit vector of $V$ is a unit vector of $\mathbb{C}^{4}$, which gives the inclusion.</p>
+<p><strong>Theorem (the elliptical range in dimension two).</strong> Let $T\in M_2(\mathbb{C})$ have eigenvalues $\lambda_1,\lambda_2$. Then $W(T)$ is the closed ellipse with foci $\lambda_1,\lambda_2$ and semi-minor axis</p>
+<p>$$
+b=\frac12\sqrt{\operatorname{tr}(T^*T)-|\lambda_1|^{2}-|\lambda_2|^{2}} .
+$$</p>
+<p>In particular, if $T$ has the single eigenvalue $\lambda$ and the nilpotent part $c$, then $W(T)$ is the disk of radius $|c|/2$ centred at $\lambda$.</p>
+<p><strong>Proof.</strong> By Schur's theorem $T$ is unitarily similar to</p>
+<p>$$
+\begin{pmatrix}\lambda_1&c\\0&\lambda_2\end{pmatrix},\qquad c\ge0,
+$$</p>
+<p>so it suffices to treat this matrix. For $x=(\cos\theta,e^{i\varphi}\sin\theta)$ with $0\le\theta\le\pi/2$,</p>
+<p>$$
+x^*Tx=\lambda_1\cos^{2}\theta+\lambda_2\sin^{2}\theta
++c\,e^{i\varphi}\cos\theta\sin\theta .
+$$</p>
+<p>For fixed $\theta$ this is a circle with centre $s(\theta)=\lambda_1\cos^{2}\theta+\lambda_2\sin^{2}\theta$ and radius $c|\cos\theta\sin\theta|$, and the phase is free. Hence the support function of $W(T)$ is</p>
+<p>$$
+h(\alpha)=\max_{\theta}\Bigl[\operatorname{Re}\bigl(e^{-i\alpha}s(\theta)\bigr)
++c|\cos\theta\sin\theta|\Bigr].
+$$</p>
+<p>Put $u=\cos^{2}\theta$ and $t=2u-1$, so that $|\cos\theta\sin\theta|=\tfrac12\sqrt{1-t^{2}}$, and write $m=\tfrac12(\lambda_1+\lambda_2)$, $f=\tfrac12(\lambda_1-\lambda_2)$. Then $s=m+ft$ and</p>
+<p>$$
+h(\alpha)=\operatorname{Re}(e^{-i\alpha}m)
++\max_{|t|\le1}\Bigl[t\operatorname{Re}(e^{-i\alpha}f)+\tfrac{c}{2}\sqrt{1-t^{2}}\Bigr].
+$$</p>
+<p>The maximum is $\sqrt{\operatorname{Re}(e^{-i\alpha}f)^{2}+(c/2)^{2}}$, by the Cauchy–Schwarz inequality applied to $(t,\sqrt{1-t^{2}})$ and $(\operatorname{Re}(e^{-i\alpha}f),c/2)$. This is the support function of the ellipse with centre $m$, foci $m\pm f$ and semi-minor axis $c/2$. Two compact convex sets with the same support function coincide, so $W(T)$ is that ellipse. Finally,</p>
+<p>$$
+\operatorname{tr}(T^*T)=|\lambda_1|^{2}+|\lambda_2|^{2}+c^{2},
+$$</p>
+<p>so $c=\sqrt{\operatorname{tr}(T^*T)-|\lambda_1|^{2}-|\lambda_2|^{2}}$ and the semi-minor axis is $c/2$. When $\lambda_1=\lambda_2=\lambda$ the foci coincide and the ellipse is the disk of radius $c/2$.</p>
+<p><strong>Corollary (the two-dimensional classification).</strong> For $T\in M_2(\mathbb{C})$ the field of values determines the unitary orbit: its foci are the eigenvalues and twice its semi-minor axis is the modulus of the Schur parameter.</p>
+<p><strong>Proof.</strong> The unitary orbit of a $2\times2$ matrix is determined by its eigenvalues and by $|c|$ in the Schur form; the phases of $c$ are removed by conjugation by a diagonal unitary. The ellipse gives the eigenvalues as its foci and $|c|=2b$.</p>
+<p><strong>Corollary (the compression argument).</strong> Every segment between two points of $W(A)$ lies in $W(A)$, because it lies in the field of values of a two-dimensional compression, which is an ellipse, and that ellipse is contained in $W(A)$.</p>
+<p><strong>Proof.</strong> Apply the lemma to the two unit vectors that realize the two points; the compression is $2\times2$, so its field of values is convex by the theorem.</p>
+<h2 id="the-nilpotent-chain">The Nilpotent Chain</h2>
+<p>Let</p>
+<p>$$
+J_4=\sum_{k=1}^{3}E_{k,k+1}
+=\begin{pmatrix}0&1&0&0\\0&0&1&0\\0&0&0&1\\0&0&0&0\end{pmatrix}.
+$$</p>
+<p><strong>Theorem.</strong> The field of values of $J_4$ is the closed disk</p>
+<p>$$
+W(J_4)=\bigl\{z\in\mathbb{C}:|z|\le\cos(\pi/5)\bigr\},
+\qquad \cos(\pi/5)=\frac{1+\sqrt5}{4}.
+$$</p>
+<p><strong>Proof.</strong> Write $x_k=r_ke^{i\theta_k}$ with $r_k\ge0$ and $\sum_k r_k^{2}=1$. Then</p>
+<p>$$
+x^*J_4x=\sum_{k=1}^{3}\bar x_kx_{k+1}
+=\sum_{k=1}^{3}r_kr_{k+1}\,e^{i(\theta_{k+1}-\theta_k)} .
+$$</p>
+<p>The differences $\delta_k=\theta_{k+1}-\theta_k$ are arbitrary: choose $\theta_1=0$ and $\theta_{k+1}=\theta_k+\delta_k$. Hence, for fixed radii, the set of values is the Minkowski sum of the three circles of radii $r_1r_2$, $r_2r_3$, $r_3r_4$, which is the closed disk of radius</p>
+<p>$$
+\rho(r)=r_1r_2+r_2r_3+r_3r_4 .
+$$</p>
+<p>The field of values is therefore the union of the disks of radii $\rho(r)$ over the unit sphere; because $\rho$ is continuous on a connected sphere, the set of its values is an interval $[0,\rho_{\max}]$, and the union is the disk of radius $\rho_{\max}$. Now $2\rho(r)=r^{\mathsf T}Ar$ with $A$ the adjacency matrix of the path $P_4$, whose eigenvalues are $2\cos(k\pi/5)$, $k=1,2,3,4$. The largest is $2\cos(\pi/5)$, so $\rho_{\max}=\cos(\pi/5)$.</p>
+<p><strong>Corollary.</strong> $w(J_4)=\cos(\pi/5)\approx0.809$, while $\|J_4\|=1$ and $\rho(J_4)=0$.</p>
+<p><strong>Proof.</strong> The numerical radius is the radius of the disk; the operator norm of the shift is one; the only eigenvalue is zero.</p>
+<p><strong>Theorem (the general chain).</strong> For the nilpotent Jordan block $J_n$ of size $n\ge2$,</p>
+<p>$$
+W(J_n)=\Bigl\{z:|z|\le\cos\frac{\pi}{n+1}\Bigr\}.
+$$</p>
+<p><strong>Proof.</strong> The same computation gives the union of disks of radii $\sum_{k=1}^{n-1}r_kr_{k+1}$, which is half the quadratic form of the adjacency matrix of the path $P_n$; its largest eigenvalue is $2\cos(\pi/(n+1))$.</p>
+<p><strong>The three radii.</strong> The nilpotent chain separates the three invariants: $\rho(J_4)=0$, $w(J_4)=\cos(\pi/5)$ and $\|J_4\|=1$. The spectral radius is blind to the nilpotent part, the operator norm sees the whole chain, and the field of values sees the length of the chain through the adjacency spectrum.</p>
+<h2 id="the-rank-one-and-the-block-cases">The Rank-One and the Block Cases</h2>
+<p><strong>Proposition (the rank-one case).</strong> Let $A=uv^*$ with $u,v\ne0$. Then $W(A)$ is the ellipse with foci $0$ and $v^*u$ and semi-minor axis</p>
+<p>$$
+b=\frac12\sqrt{\|u\|^{2}\|v\|^{2}-|v^*u|^{2}} .
+$$</p>
+<p><strong>Proof.</strong> Let $V=\operatorname{span}\{u,v\}$. The matrix $A$ maps $\mathbb{C}^{4}$ into $\mathbb{C}u\subset V$ and vanishes on $V^{\perp}$, because $v^*w=0$ for $w\perp v$; hence $A=P_VAP_V$ and $W(A)=W(A|_V)$. On $V$ the matrix is a $2\times2$ matrix of rank one with trace $v^*u$ and determinant zero, so its eigenvalues are $v^*u$ and $0$. The elliptical range theorem gives the foci, and $\operatorname{tr}(A^*A)=\|u\|^{2}\|v\|^{2}$ gives the semi-minor axis.</p>
+<p><strong>Corollary.</strong> If $v^*u=0$, then $W(uv^*)$ is the disk of radius $\|u\|\,\|v\|/2$ centred at the origin. If $u=v$ is a unit vector, then $W(uv^*)=[0,1]$.</p>
+<p><strong>Proof.</strong> The first statement is the rank-one formula with $v^*u=0$. The second is the Hermitian case for the orthogonal projector of rank one.</p>
+<p><strong>Proposition (the block-diagonal rule).</strong> For $A\in M_m(\mathbb{C})$ and $B\in M_n(\mathbb{C})$,</p>
+<p>$$
+W(A\oplus B)=\operatorname{conv}\bigl(W(A)\cup W(B)\bigr).
+$$</p>
+<p><strong>Proof.</strong> A unit vector of the direct sum splits as $(x,y)$ with $t=\|x\|^{2}$ and $1-t=\|y\|^{2}$; if both are nonzero,</p>
+<p>$$
+(x,y)^*(A\oplus B)(x,y)=t\,\frac{x^*Ax}{\|x\|^{2}}+(1-t)\,\frac{y^*Ay}{\|y\|^{2}},
+$$</p>
+<p>a convex combination of a point of $W(A)$ and a point of $W(B)$, and the endpoint cases are the points themselves. Conversely every convex combination is realized by choosing the norms.</p>
+<p><strong>Corollary (the failure of completeness in dimension four).</strong> The matrices $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus0_2$ have the same field of values, the disk of radius $1/2$, and they are not unitarily similar.</p>
+<p><strong>Proof.</strong> For $T=J_2(0)$ the field of values is the disk of radius $1/2$ by the elliptical range theorem. The block rule gives the disk for both matrices, because $0$ lies in that disk. The ranks are two and one.</p>
+<h2 id="the-place-in-the-category">The Place in the Category</h2>
+<p><strong>The spectrum and the singular values.</strong> The field of values contains the spectrum and lies in the disk of radius $\|A\|$; the numerical radius lies between the spectral radius and the operator norm. The singular values give the radius of the image of the unit sphere, the field of values the radius of the image of the quadratic form. The gap measures the departure from normality: for a normal matrix $w(A)=\|A\|=\rho(A)$, while for the nilpotent chain $\rho(J_4)=0$, $w(J_4)=\cos(\pi/5)$ and $\|J_4\|=1$.</p>
+<p><strong>The Hermitian decomposition.</strong> The support function of $W(A)$ is the largest eigenvalue of $\operatorname{Re}(e^{-i\alpha}A)$, so each supporting line is fixed by the spectrum of a Hermitian matrix built from $A$. The Hermitian part $A+A^*$ gives the directions $0$ and $\pi/2$. The field of values does not determine $A$: $J_2(0)$ and $e^{i\varphi}J_2(0)$ have the same disk for every phase, while their Hermitian parts differ.</p>
+<p><strong>The biquaternion model.</strong> For $\tilde Q\in\mathbb{B}$ the matrix $\mathsf{M}_2(\tilde Q)$ has the ellipse of the elliptical range theorem as its field of values. The left regular matrix is $L_{\tilde Q}=S\bigl(I_2\otimes\mathsf{M}_2(\tilde Q)\bigr)S^{-1}$, and $W(I_2\otimes M)=W(M)$ for every $M$: a unit vector of the tensor product expands as $x=\sum_j e_j\otimes y_j$ with $\sum_j\|y_j\|^{2}=1$, so $x^*(I_2\otimes M)x=\sum_j y_j^*My_j$ is a convex combination of values of $M$. So the field of values of the left regular matrix is the field of values of the $2\times2$ matrix. The Hermitian elements of $\mathbb{M}_+$ have real intervals, and the elements of $\mathbb{M}_-$ have intervals on the imaginary axis. For the two-sided operator $T_{a,b}$ the field of values is that of a different matrix, and it is not determined by the two factors separately.</p>
+<p><strong>The convexity.</strong> The Toeplitz–Hausdorff theorem is the reason the field of values is a convex body; in the finite-dimensional case its only non-trivial input is the ellipse of the two-dimensional compression. In dimension four the body is the envelope of the ellipses of the compressions to the two-dimensional subspaces, and for the nilpotent chain the envelope is a disk.</p>
+<h2 id="summary">Summary</h2>
+<p>The field of values $W(A)=\{x^*Ax:\|x\|=1\}$ of a matrix of $M_4(\mathbb{C})$ is compact, connected and contains the spectrum; it is convex by the Toeplitz–Hausdorff theorem, which the general theory supplies. Its support function is $\lambda_{\max}(\operatorname{Re}(e^{-i\alpha}A))$, and its boundary is the envelope of the corresponding supporting lines. For a $2\times2$ matrix it is the ellipse with foci the eigenvalues and semi-minor axis $\tfrac12\sqrt{\operatorname{tr}(T^*T)-|\lambda_1|^{2}-|\lambda_2|^{2}}$, and this ellipse classifies the unitary orbit. The nilpotent Jordan block $J_4$ has the disk of radius $\cos(\pi/5)=(1+\sqrt5)/4$ as its field of values, while its spectrum is $\{0\}$ and its operator norm is $1$; the general block $J_n$ gives the radius $\cos(\pi/(n+1))$. A rank-one matrix $uv^*$ has an ellipse with foci $0$ and $v^*u$, and a block-diagonal matrix has the convex hull of the two fields of values. The field of values is complete for the unitary orbit in dimension two and incomplete in dimension four.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_4(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W(A)$</td>
+<td>compact, connected, convex, contains $\operatorname{spec}A$</td>
+</tr>
+<tr>
+<td>support function</td>
+<td>$\lambda_{\max}(\operatorname{Re}(e^{-i\alpha}A))$</td>
+</tr>
+<tr>
+<td>Hermitian $H$</td>
+<td>$W(H)=[\lambda_{\min},\lambda_{\max}]$</td>
+</tr>
+<tr>
+<td>normal $A$</td>
+<td>$W(A)=\operatorname{conv}(\operatorname{spec}A)$</td>
+</tr>
+<tr>
+<td>$2\times2$ ellipse</td>
+<td>foci $\lambda_1,\lambda_2$, semi-minor $\tfrac12\sqrt{\operatorname{tr}(T^*T)-|\lambda_1|^{2}-|\lambda_2|^{2}}$</td>
+</tr>
+<tr>
+<td>$W(J_4)$</td>
+<td>disk of radius $\cos(\pi/5)=(1+\sqrt5)/4$</td>
+</tr>
+<tr>
+<td>$w(J_4)$</td>
+<td>$\cos(\pi/5)\approx0.809$</td>
+</tr>
+<tr>
+<td>$\|J_4\|$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\rho(J_4)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$W(J_n)$</td>
+<td>disk of radius $\cos(\pi/(n+1))$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W(A)$</td>
+<td>the field of values, or numerical range, of $A$</td>
+</tr>
+<tr>
+<td>$w(A)$</td>
+<td>the numerical radius $\max_{z\in W(A)}|z|$</td>
+</tr>
+<tr>
+<td>$h_K(\alpha)$</td>
+<td>the support function $\max_{z\in K}\operatorname{Re}(e^{-i\alpha}z)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Re}M$</td>
+<td>the Hermitian part $\tfrac12(M+M^*)$</td>
+</tr>
+<tr>
+<td>$\operatorname{conv}$</td>
+<td>the convex hull</td>
+</tr>
+<tr>
+<td>$J_n$</td>
+<td>the nilpotent Jordan block $\sum_{k=1}^{n-1}E_{k,k+1}$</td>
+</tr>
+<tr>
+<td>$\rho(A)$</td>
+<td>the spectral radius</td>
+</tr>
+<tr>
+<td>$A_V$</td>
+<td>the compression $P_VA|_{V}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="hermitian-operators-and-the-numerical-range.html">Hermitian Operators and the Numerical Range</a>, for the general theory: the Toeplitz–Hausdorff theorem, the radius bounds and the Hermitian and normal characterisations.</li>
+<li><a href="the-numerical-range-of-the-two-sided-operators-of-m4c.html">The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$</a>, for the field of values of the sandwich $T_{a,b}(X)=aXb$, the product bound and its failure.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the Hermitian part and the unitary group.</li>
+<li><a href="the-polar-decomposition-of-m4c.html">The Polar Decomposition of $M_4(\mathbb{C})$</a>, for the singular values and the operator norm.</li>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</a>, for the Frobenius, operator and nuclear norms.</li>
+<li><a href="spectral-theory-and-the-spectral-projectors-of-m4c.html">Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</a>, for the spectrum and the resolvent.</li>
+<li><a href="m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</a>, for the matrix representation of the biquaternion algebra.</li>
+<li><a href="m4c-representation-spin-qubits-and-the-bloch-vector.html">$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector</a>, for the two-dimensional case and the Bloch picture.</li>
+<li><a href="the-kronecker-factorisation-of-m4c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the tensor product and the identity $W(I\otimes M)=W(M)$.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge University Press, 1991), for the field of values and the elliptical range theorem.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the numerical radius and its inequalities.</li>
+<li>Karl E. Gustafson and Duggirala K. M. Rao, <em>Numerical Range: The Field of Values of Linear Operators and Matrices</em> (Springer, 1997), for the general theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-numerical-range-of-the-two-sided-operators-of-math0"><strong>The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For $a,b\in M_4(\mathbb{C})$ the <strong>two-sided operator</strong> is the sandwich</p>
+<p>$$
+T_{a,b}:M_4(\mathbb{C})\longrightarrow M_4(\mathbb{C}),\qquad T_{a,b}(X)=aXb .
+$$</p>
+<p>It is the product $L_aR_b$ of a left and a right multiplication, and it acts on the sixteen-dimensional complex vector space $M_4(\mathbb{C})$. The algebra is a Hilbert space for the <strong>Hilbert–Schmidt form</strong></p>
+<p>$$
+\langle X,Y\rangle=\operatorname{tr}(X^*Y),
+$$</p>
+<p>and the <strong>field of values</strong>, or <strong>numerical range</strong>, of the operator is</p>
+<p>$$
+W(T_{a,b})=\bigl\{\langle X,T_{a,b}(X)\rangle:\ \langle X,X\rangle=1\bigr\}
+=\bigl\{\operatorname{tr}(X^*aXb):\ \operatorname{tr}(X^*X)=1\bigr\}.
+$$</p>
+<p>This article computes it and compares it with the fields of values of the two factors.</p>
+<p>The result is not the product of $W(a)$ and $W(b)$. The product set is only a lower bound: its convex hull always lies in $W(T_{a,b})$, and the inclusion is strict already for the smallest nilpotent. The inclusion closes when one factor is normal, and then $W(T_{a,b})=\operatorname{conv}(W(a)W(b))$. The defect is the correlation of the two factors inside a general Hilbert–Schmidt vector, which is a single matrix and not a pair of vectors.</p>
+<p>The general theory — compactness, convexity, the support function and the Hermitian and normal cases — is <em>Hermitian Operators and the Numerical Range</em>. The four-dimensional case, the elliptical range theorem and the disk of the nilpotent chain are <em>The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</em>. The operators $L_a$, $R_a$ and $T_{a,b}$, their $16\times16$ matrices and their spectrum are <em>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</em>. The same construction on the carrier $\mathbb{B}$ is <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>, whose $4\times4$ matrices $T_{\mu\nu}$ are a different object. The Kronecker product is <em>The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</em>; the difference $L_a-R_b$ is <em>The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</em>; the Hilbert–Schmidt form is <em>The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-setting">The Setting</h2>
+<p><strong>Definition.</strong> For $a,b\in M_4(\mathbb{C})$ the two-sided operator is $T_{a,b}(X)=aXb$. It is $\mathbb{C}$-linear, and it is the sandwich of <em>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</em>, where the operator families are introduced.</p>
+<p><strong>Proposition (the laws of composition).</strong> For all $a,b,c,d$,</p>
+<p>$$
+T_{a,b}T_{c,d}=T_{ac,db},\qquad T_{a,b}^{*}=T_{a^{*},b^{*}} .
+$$</p>
+<p>The operator $T_{a,b}$ is invertible exactly when $a$ and $b$ are, and then $T_{a,b}^{-1}=T_{a^{-1},b^{-1}}$.</p>
+<p><strong>Proof.</strong> The composition is $X\mapsto a(cXd)b=(ac)X(db)$. For the adjoint, $\langle Y,aXb\rangle=\operatorname{tr}(Y^*aXb)=\operatorname{tr}\bigl((a^*Yb^*)^*X\bigr)=\langle a^*Yb^*,X\rangle$. The inverse is the product law with $T_{a,b}T_{a^{-1},b^{-1}}=T_{I,I}$.</p>
+<p><strong>The matrix.</strong> In the row-stacking basis,</p>
+<p>$$
+L_a=a\otimes I_4,\qquad R_b=I_4\otimes b^{\mathsf T},\qquad T_{a,b}=a\otimes b^{\mathsf T},
+$$</p>
+<p>which are the displays of <em>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</em>. In the column-stacking basis the same operator is $b^{\mathsf T}\otimes a$. The two orderings differ by the flip $X\otimes Y\mapsto Y\otimes X$, a unitary permutation of $\mathbb{C}^{16}$, so the field of values and every invariant below are the same in the two conventions. This article writes the row-stacking form.</p>
+<p><strong>Proposition (the invariants).</strong></p>
+<p>$$
+\operatorname{spec}T_{a,b}=\bigl\{\lambda_i(a)\lambda_j(b)\bigr\}_{i,j=1}^{4},
+\qquad
+\operatorname{tr}T_{a,b}=\operatorname{tr}a\,\operatorname{tr}b,
+\qquad
+\det T_{a,b}=(\det a\,\det b)^{4},
+$$</p>
+<p>$$
+\operatorname{rank}T_{a,b}=\operatorname{rank}a\,\operatorname{rank}b,
+\qquad
+\bigl\{s_k(T_{a,b})\bigr\}_{k=1}^{16}=\bigl\{s_i(a)s_j(b)\bigr\}_{i,j=1}^{4},
+$$</p>
+<p>and for every Schatten index $p\in[1,\infty]$,</p>
+<p>$$
+\|T_{a,b}\|_p=\|a\|_p\,\|b\|_p .
+$$</p>
+<p><strong>Proof.</strong> A Kronecker product $A\otimes B$ has spectrum $\{\alpha_i\beta_j\}$, trace $\operatorname{tr}A\operatorname{tr}B$, determinant $(\det A)^{n}(\det B)^{m}$ for $A\in M_m$, $B\in M_n$, rank $\operatorname{rank}A\operatorname{rank}B$, and singular values $s_i(A)s_j(B)$. Here $A=a$ and $B=b^{\mathsf T}$, of size four, and $\operatorname{tr}b^{\mathsf T}=\operatorname{tr}b$, $\det b^{\mathsf T}=\det b$, $s_j(b^{\mathsf T})=s_j(b)$. The Schatten norm is the $\ell^{p}$ norm of the singular values, and a pairwise product of two lists has $\ell^{p}$ norm the product of the two $\ell^{p}$ norms.</p>
+<p><strong>Corollary.</strong> $\|T_{a,b}\|=\|a\|\,\|b\|$ and $\|T_{a,b}\|_{\mathrm{HS}}=\|a\|_{\mathrm{HS}}\|b\|_{\mathrm{HS}}$.</p>
+<p><strong>Remark (the notation).</strong> The letters $T_{a,b}$ also denote the $4\times4$ matrices $T_{\mu\nu}=L_\mu R_\nu$ of <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em> and <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>, acting on the carrier $\mathbb{B}\cong\mathbb{C}^4$. The two are the same sandwich construction applied to the algebra $M_4(\mathbb{C})$ and to the algebra $\mathbb{B}$; the present article always means the operator on the sixteen-dimensional algebra. The same convention is used in <em>The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</em>.</p>
+<p><strong>The field of values.</strong> By the general theory, $W(T_{a,b})$ is compact, connected and convex, it contains the spectrum, and its support function is</p>
+<p>$$
+h(\alpha)=\max_{z\in W(T_{a,b})}\operatorname{Re}\bigl(e^{-i\alpha}z\bigr)
+=\lambda_{\max}\bigl(\operatorname{Re}(e^{-i\alpha}T_{a,b})\bigr),
+\qquad
+\operatorname{Re}M=\tfrac12(M+M^{*}),
+$$</p>
+<p>where the adjoint in $\operatorname{Re}M$ is the Hilbert–Schmidt adjoint.</p>
+<h2 id="the-product-bound">The Product Bound</h2>
+<p><strong>Theorem (the product bound).</strong> For all $a,b$,</p>
+<p>$$
+\operatorname{conv}\bigl(W(a)W(b)\bigr)\subseteq W(T_{a,b}),
+\qquad
+W(a)W(b)=\{xy:\ x\in W(a),\ y\in W(b)\}.
+$$</p>
+<p><strong>Proof.</strong> Let $x=u^{*}au\in W(a)$ and $y=v^{*}bv\in W(b)$ with $\|u\|=\|v\|=1$, and put $X=uv^{*}$. Then $\|X\|_{\mathrm{HS}}=\|u\|\,\|v\|=1$ and</p>
+<p>$$
+\langle X,T_{a,b}(X)\rangle
+=\operatorname{tr}(vu^{*}auv^{*}b)
+=(u^{*}au)\operatorname{tr}(vv^{*}b)
+=(u^{*}au)(v^{*}bv)=xy .
+$$</p>
+<p>Hence $W(a)W(b)\subseteq W(T_{a,b})$, and the convexity of the field of values gives the convex hull.</p>
+<p><strong>Corollary.</strong> $w(a)w(b)\le w(T_{a,b})$, where $w$ is the numerical radius.</p>
+<p><strong>Theorem (the normal factor).</strong> If $a$ is normal, then for every $b$</p>
+<p>$$
+W(T_{a,b})=\operatorname{conv}\bigl(W(a)W(b)\bigr).
+$$</p>
+<p><strong>Proof.</strong> Write $a=U\Lambda U^{*}$ with $\Lambda=\operatorname{diag}(\lambda_1,\dots,\lambda_4)$ and $U$ unitary. The matrix $a\otimes b^{\mathsf T}$ is unitarily similar to $\Lambda\otimes b^{\mathsf T}$, and</p>
+<p>$$
+\Lambda\otimes b^{\mathsf T}=\bigoplus_{i=1}^{4}\lambda_i b^{\mathsf T},
+$$</p>
+<p>a block-diagonal matrix. The field of values of a direct sum is the convex hull of the fields of values of the summands, by the block rule of <em>The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</em>; hence</p>
+<p>$$
+W(T_{a,b})=\operatorname{conv}\left(\bigcup_{i=1}^{4}\lambda_i W(b^{\mathsf T})\right)
+=\operatorname{conv}\left(\bigcup_{i=1}^{4}\lambda_i W(b)\right)
+=\operatorname{conv}\bigl(W(a)W(b)\bigr),
+$$</p>
+<p>because $W(b^{\mathsf T})=W(b)$ and $W(a)=\operatorname{conv}\{\lambda_1,\dots,\lambda_4\}$.</p>
+<p><strong>Corollary.</strong> If $a$ or $b$ is normal, then $W(T_{a,b})=\operatorname{conv}(W(a)W(b))$.</p>
+<p><strong>Proof.</strong> The case of $a$ normal is the theorem; the case of $b$ normal follows from the symmetry below.</p>
+<p><strong>Proposition (symmetry in the two factors).</strong> $W(T_{a,b})=W(T_{b,a})$.</p>
+<p><strong>Proof.</strong> By the model, $T_{a,b}\cong a\otimes b^{\mathsf T}$ and $T_{b,a}\cong b\otimes a^{\mathsf T}$. The flip $X\otimes Y\mapsto Y\otimes X$ is a unitary similarity, so $W(b\otimes a^{\mathsf T})=W(a^{\mathsf T}\otimes b)$; transposition preserves the field of values and $a^{\mathsf T}\otimes b=(a\otimes b^{\mathsf T})^{\mathsf T}$; hence the two fields of values agree.</p>
+<h2 id="the-failure-of-the-product-rule">The Failure of the Product Rule</h2>
+<p><strong>Proposition (the smallest nilpotent).</strong> Let $E_{12}$ be the matrix unit. For $a=b=E_{12}$,</p>
+<p>$$
+W(T_{a,b})=\overline{D}\bigl(0,\tfrac12\bigr),
+\qquad
+\operatorname{conv}\bigl(W(a)W(b)\bigr)=\overline{D}\bigl(0,\tfrac14\bigr),
+$$</p>
+<p>where $\overline{D}(c,r)$ is the closed disk of centre $c$ and radius $r$.</p>
+<p><strong>Proof.</strong> The operator is $T(X)=E_{12}XE_{12}=x_{21}E_{12}$, so</p>
+<p>$$
+\langle X,T(X)\rangle=x_{21}\,\overline{x_{12}} .
+$$</p>
+<p>For $\operatorname{tr}(X^{*}X)=\sum_{i,j}|x_{ij}|^{2}=1$ the Cauchy–Schwarz inequality gives $|x_{21}\overline{x_{12}}|\le\tfrac12\bigl(|x_{21}|^{2}+|x_{12}|^{2}\bigr)\le\tfrac12$, and the value $\tfrac12$ is attained at $|x_{12}|=|x_{21}|=1/\sqrt2$ with the other entries zero. The phase is free, because $x_{21}\overline{x_{12}}$ has the argument $\arg x_{21}-\arg x_{12}$; varying the phases of the two entries with $|x_{12}|=|x_{21}|=1/\sqrt2$ gives every point of the closed disk of radius $\tfrac12$. Hence $W(T_{a,b})$ is that disk.</p>
+<p>For the factors, $W(E_{12})$ is the disk of radius $\tfrac12$: the block $E_{12}$ is $J_2(0)\oplus0_2$, and the elliptical range theorem with the block rule, or the nilpotent chain of <em>The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</em>, gives the disk. The product set is therefore $\{xy:|x|\le\tfrac12,\ |y|\le\tfrac12\}$, the closed disk of radius $\tfrac14$.</p>
+<p><strong>Remark (the origin of the gap).</strong> The product bound is computed on the rank-one matrices $X=uv^{*}$, where the Hilbert–Schmidt unit sphere meets the rank-one variety. A general unit vector $X$ is not of that form, and its value $\operatorname{tr}(X^{*}aXb)$ mixes the two factors. In the example the gap is a factor two in the radius, and it is produced by a matrix $X$ of rank two: the two nonzero entries $x_{12}$ and $x_{21}$ belong to one matrix, not to one vector of each factor.</p>
+<h2 id="the-rank-one-case">The Rank-One Case</h2>
+<p><strong>Theorem (the ellipse of a rank-one sandwich).</strong> Let $a=uv^{*}$ and $b=xy^{*}$ with $u,v,x,y\ne0$. Then $T_{a,b}$ has rank one, $T_{a,b}(X)=\langle vx^{*},X\rangle\,uy^{*}$, and $W(T_{a,b})$ is the closed ellipse with foci $0$ and $\operatorname{tr}a\,\operatorname{tr}b$ and semi-minor axis</p>
+<p>$$
+\frac12\sqrt{\|a\|_{\mathrm{HS}}^{2}\|b\|_{\mathrm{HS}}^{2}
+-\bigl|\operatorname{tr}a\,\operatorname{tr}b\bigr|^{2}} .
+$$</p>
+<p><strong>Proof.</strong> $aXb=u(v^{*}Xx)y^{*}$, so $T_{a,b}(X)=\langle V,X\rangle\,U$ with $U=uy^{*}$ and $V=vx^{*}$ in the Hilbert–Schmidt form. The operator is rank one with</p>
+<p>$$
+\operatorname{tr}T_{a,b}=\langle V,U\rangle
+=(v^{*}u)(y^{*}x)=\operatorname{tr}a\,\operatorname{tr}b,
+\qquad
+\|T_{a,b}\|_{\mathrm{HS}}=\|u\|\,\|y\|\,\|v\|\,\|x\|=\|a\|_{\mathrm{HS}}\|b\|_{\mathrm{HS}} .
+$$</p>
+<p>The compression to the two-dimensional span of $U$ and $V$ — the rank-one case of <em>The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</em> — gives the ellipse with foci the two eigenvalues, $0$ and $\operatorname{tr}T_{a,b}$, and twice the semi-minor axis $\sqrt{\|T\|_{\mathrm{HS}}^{2}-|\operatorname{tr}T|^{2}}$.</p>
+<p><strong>Corollary (the matrix units).</strong> For $a=E_{ij}$ and $b=E_{kl}$:</p>
+<ul>
+<li>if $i\ne j$ or $k\ne l$, then $W(T_{a,b})$ is the closed disk of radius $\tfrac12$ centred at $0$;</li>
+<li>if $i=j$ and $k=l$, then $T_{a,b}$ is an orthogonal projection of rank one and $W(T_{a,b})=[0,1]$.</li>
+</ul>
+<p><strong>Proof.</strong> The trace is $\delta_{ij}\delta_{kl}$ and the Hilbert–Schmidt norm is $1$. In the first case the foci coincide at $0$ and the ellipse is the disk of radius $\tfrac12$. In the second case $T_{a,b}(X)=X_{ik}E_{ik}$ is the orthogonal projection onto the line $\mathbb{C}E_{ik}$, and the field of values of a rank-one projection is $[0,1]$.</p>
+<p><strong>Corollary (the trace-zero disk).</strong> If $T_{a,b}$ has rank one and trace zero, then $W(T_{a,b})$ is the closed disk of radius $\tfrac12\|T_{a,b}\|_{\mathrm{HS}}$.</p>
+<p><strong>Proof.</strong> The ellipse of the theorem has coincident foci at the origin and semi-minor axis $\tfrac12\|T\|_{\mathrm{HS}}$.</p>
+<h2 id="the-hermitian-the-projection-and-the-unitary-cases">The Hermitian, the Projection and the Unitary Cases</h2>
+<p><strong>Proposition (Hermitian factors).</strong> If $a$ and $b$ are Hermitian, then $T_{a,b}$ is self-adjoint for the Hilbert–Schmidt form and</p>
+<p>$$
+W(T_{a,b})=\Bigl[\min_{i,j}\alpha_i\beta_j,\ \max_{i,j}\alpha_i\beta_j\Bigr],
+$$</p>
+<p>where $\alpha_i=\lambda_i(a)$ and $\beta_j=\lambda_j(b)$. In particular the product rule is exact.</p>
+<p><strong>Proof.</strong> $T_{a,b}^{*}=T_{a^{*},b^{*}}=T_{a,b}$. Its eigenvalues are the products $\alpha_i\beta_j$, real; the field of values of a Hermitian matrix is the interval between its extreme eigenvalues.</p>
+<p><strong>Proposition (a projection factor).</strong> If $b$ is a projection of rank $r$, then $W(T_{a,b})=W(a)$. If $a$ is a projection of rank $r$, then $W(T_{a,b})=W(b)$.</p>
+<p><strong>Proof.</strong> Let $b=P$ be a projection of rank $r$. A unitary $V$ puts $VP^{\mathsf T}V^{*}=\operatorname{diag}(I_r,0)$, so $T_{a,b}$ is unitarily similar to $a\otimes\operatorname{diag}(I_r,0)\cong a^{\oplus r}$. The field of values of a direct sum is the convex hull of the fields of values of the summands, and the convex hull of $r$ copies of $W(a)$ is $W(a)$. The case of a projection $a$ follows by symmetry.</p>
+<p><strong>Proposition (unitary factors).</strong> If $a$ and $b$ are unitary, then $T_{a,b}$ is unitary. Its spectrum lies on the unit circle, $W(T_{a,b})$ lies in the closed unit disk, and</p>
+<p>$$
+W(T_{a,b})=\operatorname{conv}\bigl\{\lambda_i(a)\lambda_j(b)\bigr\}.
+$$</p>
+<p><strong>Proof.</strong> $T_{a,b}^{*}T_{a,b}=T_{a^{*}a,bb^{*}}=T_{I,I}$. The spectrum is the set of products of eigenvalues of modulus one, and a unitary matrix has its spectrum in its field of values, which lies in the disk of radius its norm, one. The formula is the corollary of the normal-factor theorem, since unitary matrices are normal.</p>
+<h2 id="the-numerical-radius">The Numerical Radius</h2>
+<p><strong>Theorem (the two-sided radius).</strong> For all $a,b$,</p>
+<p>$$
+w(a)w(b)\ \le\ w(T_{a,b})\ \le\ \|a\|\,\|b\|\ \le\ 4\,w(a)w(b).
+$$</p>
+<p><strong>Proof.</strong> The first inequality is the product bound, because $|xy|$ attains $w(a)w(b)$ on $W(a)W(b)$. The second is $w(T)\le\|T\|=\|a\|\|b\|$, with the norm equality of the corollary above. The third is the general inequality $\|M\|\le 2w(M)$, applied to $a$ and to $b$.</p>
+<p><strong>Remark (the constant four).</strong> The constant is the square of the general norm–radius constant and is not sharp for the two-sided operators. For the matrix unit of the failure example, $w(T)=\tfrac12$ and $w(a)w(b)=\tfrac14$, so the ratio is two. The product bound is attained whenever one factor is normal, by the normal-factor theorem.</p>
+<h2 id="the-two-sided-matrix-unit-and-the-three-radii">The Two-Sided Matrix Unit and the Three Radii</h2>
+<p><strong>Lemma (nilpotent partial isometries).</strong> Let $V\ne0$ be a partial isometry with $V^{2}=0$. Then $W(V)$ is the closed disk of radius $\tfrac12$.</p>
+<p><strong>Proof.</strong> Decompose $x=x_1+x_0$ with $x_1\in\operatorname{ran}V^{*}$ and $x_0\in\ker V$. Then $Vx=Vx_1$, and $Vx_1\in\operatorname{ran}V\subseteq\ker V$ because $V^{2}=0$; also $x_1\perp\operatorname{ran}V$, so $x_1\perp Vx_1$. Hence</p>
+<p>$$
+\langle x,Vx\rangle=\langle x_0,Vx_1\rangle,
+\qquad
+|\langle x,Vx\rangle|\le\|x_0\|\,\|Vx_1\|
+\le\tfrac12\bigl(\|x_0\|^{2}+\|Vx_1\|^{2}\bigr)=\tfrac12\|x\|^{2},
+$$</p>
+<p>because $V$ is isometric on $\operatorname{ran}V^{*}$. For the converse, take a unit $x_1\in\operatorname{ran}V^{*}$ and $x=(x_1+e^{i\varphi}Vx_1)/\sqrt2$; then $\|x\|=1$ and $\langle x,Vx\rangle=\tfrac12 e^{-i\varphi}$. Hence the field of values is the closed disk.</p>
+<p><strong>Proposition (the rank blindness).</strong> $W(T_{E_{12},E_{12}})$ and $W(T_{E_{12}+E_{34},E_{12}+E_{34}})$ are both the closed disk of radius $\tfrac12$, while the ranks of the two operators are $1$ and $4$.</p>
+<p><strong>Proof.</strong> Each factor is a partial isometry with square zero: $E_{12}$ and $E_{12}+E_{34}$ satisfy $AA^{*}A=A$ and $A^{2}=0$. For partial isometries $a,b$, the operator $T_{a,b}$ is a partial isometry, because $T_{a,b}^{*}T_{a,b}=T_{a^{*}a,bb^{*}}$ and $T_{P,Q}(X)=PXQ$ is idempotent and self-adjoint when $P,Q$ are projections. With $a^{2}=b^{2}=0$ one has $T_{a,b}^{2}=T_{a^{2},b^{2}}=0$. The lemma gives the disk, and the rank is $\operatorname{rank}a\operatorname{rank}b$.</p>
+<p><strong>The three radii.</strong> The operator $T_{E_{12},E_{12}}$ reproduces the invariants of the nilpotent block $J_2$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>$T_{E_{12},E_{12}}$</th>
+<th>$J_2$</th>
+<th>$J_4$</th>
+<th>$T_{J_4,I}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rank</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$\{0\}$</td>
+<td>$\{0\}$</td>
+<td>$\{0\}$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>spectral radius</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>numerical radius</td>
+<td>$\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>$\cos(\pi/5)$</td>
+<td>$\cos(\pi/5)$</td>
+</tr>
+<tr>
+<td>operator norm</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>field of values</td>
+<td>disk $\tfrac12$</td>
+<td>disk $\tfrac12$</td>
+<td>disk $\cos(\pi/5)$</td>
+<td>disk $\cos(\pi/5)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last column is the left multiplication $L_{J_4}=T_{J_4,I}$, whose field of values is $W(J_4)$ by the projection factor rule, or by the block form $J_4\otimes I_4$. The sandwich carries the nilpotent chain into the operator algebra without changing its three radii.</p>
+<h2 id="the-place-in-the-category">The Place in the Category</h2>
+<p><strong>The one-sided limits.</strong> $T_{a,I}=L_a$ and $T_{I,b}=R_b$, so</p>
+<p>$$
+W(L_a)=W(a),\qquad W(R_b)=W(b)
+$$</p>
+<p>by the projection rule with the identity, or directly from the block forms $a\otimes I_4$ and $I_4\otimes b^{\mathsf T}$. The two-sided operator is therefore a two-parameter interpolation between the two one-sided operators, and its field of values is controlled by the two but not determined by their product.</p>
+<p><strong>The bounds as a summary.</strong> The spectrum, the product set and the numerical radius are ordered by</p>
+<p>$$
+\{\lambda_i(a)\lambda_j(b)\}\subseteq W(T_{a,b}),
+\qquad
+\operatorname{conv}\bigl(W(a)W(b)\bigr)\subseteq W(T_{a,b})\subseteq\overline{D}\bigl(0,\|a\|\,\|b\|\bigr),
+$$</p>
+<p>and</p>
+<p>$$
+w(a)w(b)\le w(T_{a,b})\le\|a\|\,\|b\|\le4w(a)w(b).
+$$</p>
+<p>The first inclusion is the spectrum theorem, the second the product bound, the third the norm bound.</p>
+<p><strong>What the field of values does not see.</strong> It does not determine the rank, by the two matrix-unit sandwiches above, and it does not determine either factor: $T_{a,b}=T_{ua,vb}$ for scalars with $uv=1$. It is also tied to the Hilbert–Schmidt form: the field of values is computed with the adjoint of the chosen involution, while the spectrum, the trace, the determinant and the rank do not depend on that choice. The spectrum, the determinant and the rank are invariants of the operator alone; the field of values is an invariant of the operator together with the Hilbert-space structure of the algebra.</p>
+<p><strong>The computation.</strong> The support function is the largest eigenvalue of the $16\times16$ Hermitian matrix $\operatorname{Re}(e^{-i\alpha}a\otimes b^{\mathsf T})$, so the field of values is read from the single matrix $a\otimes b^{\mathsf T}$; no search over the unit sphere of $M_4(\mathbb{C})$ is needed.</p>
+<h2 id="summary">Summary</h2>
+<p>The two-sided operator $T_{a,b}(X)=aXb$ acts on the sixteen-dimensional Hilbert space $M_4(\mathbb{C})$ with the Hilbert–Schmidt form. Its matrix is $a\otimes b^{\mathsf T}$; its spectrum is the set of products $\lambda_i(a)\lambda_j(b)$; its trace is $\operatorname{tr}a\operatorname{tr}b$, its determinant $(\det a\,\det b)^{4}$, its rank $\operatorname{rank}a\operatorname{rank}b$, its singular values are the products $s_i(a)s_j(b)$, and every Schatten norm is multiplicative, $\|T_{a,b}\|_p=\|a\|_p\|b\|_p$.</p>
+<p>The field of values contains the convex hull of the product set $W(a)W(b)$, and the inclusion is strict in general: for $a=b=E_{12}$ the field of values is the disk of radius $\tfrac12$ while the product hull is the disk of radius $\tfrac14$. The inclusion is an equality when one factor is normal, and then $W(T_{a,b})=\operatorname{conv}(W(a)W(b))$. For Hermitian factors the field of values is the interval between the extreme products; for a projection factor it collapses to the field of values of the other factor; for unitary factors the operator is unitary. The numerical radius is squeezed between $w(a)w(b)$ and $\|a\|\|b\|$, and the latter is at most four times the former. The matrix-unit sandwich is a nilpotent partial isometry with the three radii of $J_2$: spectral radius zero, numerical radius $\tfrac12$, norm one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value for $M_4(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{a,b}$</td>
+<td>$X\mapsto aXb$ on $M_4(\mathbb{C})$, Hilbert–Schmidt form</td>
+</tr>
+<tr>
+<td>matrix</td>
+<td>$a\otimes b^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$\lambda_i(a)\lambda_j(b)$</td>
+</tr>
+<tr>
+<td>trace</td>
+<td>$\operatorname{tr}a\,\operatorname{tr}b$</td>
+</tr>
+<tr>
+<td>determinant</td>
+<td>$(\det a\,\det b)^{4}$</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$\operatorname{rank}a\,\operatorname{rank}b$</td>
+</tr>
+<tr>
+<td>singular values</td>
+<td>$s_i(a)s_j(b)$</td>
+</tr>
+<tr>
+<td>Schatten norms</td>
+<td>$\|a\|_p\|b\|_p$</td>
+</tr>
+<tr>
+<td>lower bound</td>
+<td>$\operatorname{conv}(W(a)W(b))\subseteq W(T_{a,b})$</td>
+</tr>
+<tr>
+<td>normal factor</td>
+<td>equality</td>
+</tr>
+<tr>
+<td>Hermitian factors</td>
+<td>$[\min\alpha_i\beta_j,\max\alpha_i\beta_j]$</td>
+</tr>
+<tr>
+<td>projection factor</td>
+<td>$W(T_{a,b})=W(a)$</td>
+</tr>
+<tr>
+<td>rank-one factors</td>
+<td>ellipse with foci $0$ and $\operatorname{tr}a\operatorname{tr}b$</td>
+</tr>
+<tr>
+<td>radius bounds</td>
+<td>$w(a)w(b)\le w(T_{a,b})\le\|a\|\|b\|\le4w(a)w(b)$</td>
+</tr>
+<tr>
+<td>$W(T_{E_{12},E_{12}})$</td>
+<td>disk of radius $\tfrac12$</td>
+</tr>
+<tr>
+<td>$W(T_{J_4,I})$</td>
+<td>disk of radius $\cos(\pi/5)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{a,b}$</td>
+<td>the two-sided operator $X\mapsto aXb$ on $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$L_a,R_b$</td>
+<td>left and right multiplication, $T_{a,I}$ and $T_{I,b}$</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle$</td>
+<td>the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$</td>
+</tr>
+<tr>
+<td>$W(A)$</td>
+<td>the field of values: $\{x^{*}Ax:\|x\|=1\}$ for a matrix, $\{\langle X,AX\rangle:\|X\|=1\}$ for an operator on $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$w(A)$</td>
+<td>the numerical radius $\max_{z\in W(A)}|z|$</td>
+</tr>
+<tr>
+<td>$h(\alpha)$</td>
+<td>the support function $\max_{z\in W}\operatorname{Re}(e^{-i\alpha}z)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Re}M$</td>
+<td>the Hermitian part $\tfrac12(M+M^{*})$</td>
+</tr>
+<tr>
+<td>$\operatorname{conv}$</td>
+<td>the convex hull</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix unit</td>
+</tr>
+<tr>
+<td>$J_n$</td>
+<td>the nilpotent Jordan block of size $n$</td>
+</tr>
+<tr>
+<td>$s_i(A)$</td>
+<td>the singular values</td>
+</tr>
+<tr>
+<td>$\|A\|_p$</td>
+<td>the Schatten $p$-norm</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="hermitian-operators-and-the-numerical-range.html">Hermitian Operators and the Numerical Range</a>, for the general theory, the support function and the Toeplitz–Hausdorff theorem.</li>
+<li><a href="the-numerical-range-and-the-field-of-values-of-m4c.html">The Numerical Range and the Field of Values of $M_4(\mathbb{C})$</a>, for the elliptical range theorem, the block rule, the rank-one case and the nilpotent chain.</li>
+<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for $L_a$, $R_a$, $T_{a,b}$, their matrices and their spectrum.</li>
+<li><a href="the-kronecker-factorisation-of-m4c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the Kronecker product and the identity $W(I\otimes M)=W(M)$.</li>
+<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the construction of the algebra from the $4\times4$ matrices $T_{\mu\nu}$.</li>
+<li><a href="m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</a>, for the same sandwich on the carrier $\mathbb{B}$.</li>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</a>, for the Schatten norms and the singular values.</li>
+<li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the Hilbert–Schmidt form and the adjoint.</li>
+<li><a href="the-sylvester-operator-and-the-kronecker-sum-of-m4c.html">The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</a>, for the difference $L_a-R_b$ and the equations $aX\pm Xb=C$.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Topics in Matrix Analysis</em> (Cambridge University Press, 1991), for the field of values, the Kronecker product and the elliptical range theorem.</li>
+<li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the numerical radius and the norm–radius inequalities.</li>
+<li>Karl E. Gustafson and Duggirala K. M. Rao, <em>Numerical Range: The Field of Values of Linear Operators and Matrices</em> (Springer, 1997), for the general theory.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

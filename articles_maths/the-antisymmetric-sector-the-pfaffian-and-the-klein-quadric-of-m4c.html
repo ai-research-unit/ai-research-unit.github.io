@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-antisymmetric-sector-the-pfaffian-and-the-klein-quadric-of-math0"><strong>The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The antisymmetric matrices of order four form a six-dimensional subspace $\Lambda^{2}\mathbb{C}^{4}$ of $M_4(\mathbb{C})$, closed under the commutator and isomorphic to the Lie algebra $\mathfrak{so}(4,\mathbb{C})$. On this sector the determinant has a square root: the <strong>Pfaffian</strong></p>
+<p>$$
+\mathrm{Pf}(A)=a_{12}a_{34}-a_{13}a_{24}+a_{14}a_{23},
+$$</p>
+<p>a quadratic form in the entries with $\mathrm{Pf}(A)^{2}=\det A$. The vanishing of the Pfaffian is the condition for the corresponding two-form to be decomposable, and the six coordinates $p_{ij}$ of a decomposable two-form are the <strong>Plücker coordinates</strong> of a line in $\mathbb{P}^{3}$. The Pfaffian quadric in $\mathbb{P}^{5}$ is therefore the Grassmannian of lines in $\mathbb{P}^{3}$, the <strong>Klein quadric</strong>, a smooth quadric of dimension four with two rulings.</p>
+<p>This article states the identification, the Pfaffian and its invariance, the rank criterion, the Hodge star and the self-dual splitting, the Klein quadric and the Plücker relation, and the two rulings. The determinant and the singular set of the full algebra are <em>The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</em>; the two chiral $\mathfrak{su}_2$'s of the frame are <em>The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</em>, and the relation between them and the splitting below is stated, not reproved.</p>
+<h2 id="the-antisymmetric-sector">The Antisymmetric Sector</h2>
+<p><strong>Definition.</strong> Let $\Lambda^{2}\mathbb{C}^{4}$ be the space of antisymmetric bilinear forms on $\mathbb{C}^{4}$, identified with the matrices $A$ with $A^{\mathsf T}=-A$.</p>
+<p><strong>Proposition.</strong> The space $\Lambda^{2}\mathbb{C}^{4}$ has dimension $6$, with basis $e_{i}\wedge e_{j}$ for $1\le i<j\le4$, and the matrix of $A=\sum_{i<j}a_{ij}e_{i}\wedge e_{j}$ has entries $A_{ij}=a_{ij}$ and $A_{ji}=-a_{ij}$.</p>
+<p><strong>Proof.</strong> An antisymmetric matrix is determined by its entries above the diagonal, of which there are $\binom{4}{2}=6$; the matrices $e_{i}\wedge e_{j}=E_{ij}-E_{ji}$ are linearly independent and span the space.</p>
+<p><strong>The Lie algebra.</strong> The commutator of two antisymmetric matrices is antisymmetric:</p>
+<p>$$
+[A,B]^{\mathsf T}=(AB-BA)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}-A^{\mathsf T}B^{\mathsf T}=BA-AB=-[A,B].
+$$</p>
+<p>So $\Lambda^{2}\mathbb{C}^{4}$ is a Lie subalgebra of $\mathfrak{gl}_4(\mathbb{C})$, isomorphic to $\mathfrak{so}(4,\mathbb{C})$, of dimension $6$.</p>
+<p><strong>The exponentials.</strong> For antisymmetric $A$ the exponential $\exp A$ is orthogonal, $\exp(A)^{\mathsf T}\exp(A)=I$: the series commutes with transposition and $A^{\mathsf T}=-A$ gives $\exp(A)^{\mathsf T}=\exp(-A)=\exp(A)^{-1}$. The image is the identity component $SO(4,\mathbb{C})$.</p>
+<h2 id="the-pfaffian">The Pfaffian</h2>
+<p><strong>Definition.</strong> For an antisymmetric $A$ the <strong>Pfaffian</strong> is</p>
+<p>$$
+\mathrm{Pf}(A)=a_{12}a_{34}-a_{13}a_{24}+a_{14}a_{23}.
+$$</p>
+<p><strong>Theorem.</strong> $\mathrm{Pf}(A)^{2}=\det A$.</p>
+<p><strong>Proof.</strong> Expand $\det A$ by the Leibniz formula and collect the terms. Of the $24$ permutations, the twelve that pair the indices $\{1,2\}$ with $\{3,4\}$ contribute $a_{12}a_{34}$, those that pair $\{1,3\}$ with $\{2,4\}$ contribute $-a_{13}a_{24}$, and those that pair $\{1,4\}$ with $\{2,3\}$ contribute $a_{14}a_{23}$; each group enters with the same sign pattern in the two squares, and the cross terms cancel by antisymmetry. Equivalently, the identity is the case $n=2$ of the general Pfaffian expansion, and it is checked directly on the basis: $\mathrm{Pf}(e_{1}\wedge e_{2}+e_{3}\wedge e_{4})=1$ and $\det=1$.</p>
+<p><strong>The invariance.</strong> For $U\in GL_4(\mathbb{C})$,</p>
+<p>$$
+\mathrm{Pf}(UAU^{\mathsf T})=\det(U)\,\mathrm{Pf}(A).
+$$</p>
+<p><strong>Proof.</strong> Both sides are quadratic in $A$ and multiplicative in $U$; the identity is checked on the basis, where $U(e_{i}\wedge e_{j})U^{\mathsf T}=(Ue_{i})\wedge(Ue_{j})$ and the Pfaffian of a decomposable form $u\wedge v$ is the determinant of the $2\times2$ matrix of coordinates of $u$ and $v$ in a completion to a basis, which scales by $\det U$. For $U\in SO(4)$ the Pfaffian is invariant; for $U$ with $\det U=-1$ it changes sign.</p>
+<p><strong>The rank criterion.</strong> An antisymmetric matrix has even rank. For $A\in\Lambda^{2}\mathbb{C}^{4}$,</p>
+<p>$$
+\operatorname{rank}A=0\iff A=0,\qquad
+\operatorname{rank}A=2\iff \mathrm{Pf}(A)=0,\ A\ne0,\qquad
+\operatorname{rank}A=4\iff \mathrm{Pf}(A)\ne0.
+$$</p>
+<p><strong>Proof.</strong> The rank is even because the matrix is skew for the symmetric form, and the only even ranks in dimension four are $0,2,4$. If the rank is four, the matrix is invertible and $\det A\ne0$, so $\mathrm{Pf}(A)\ne0$. If the rank is two, the kernel has dimension two; choosing a basis adapted to the kernel, the matrix has the form $u\wedge v$ in the remaining two dimensions, of rank two and Pfaffian zero. If the rank is zero the matrix vanishes. The converses follow from the same normal form.</p>
+<p><strong>The normal form.</strong> Every nonzero antisymmetric matrix of rank two is $A=u\wedge v$ for two independent vectors $u,v$; every antisymmetric matrix of rank four is congruent to $e_{1}\wedge e_{2}+e_{3}\wedge e_{4}$, with Pfaffian $1$.</p>
+<h2 id="the-hodge-star-and-the-self-dual-splitting">The Hodge Star and the Self-Dual Splitting</h2>
+<p><strong>Definition.</strong> With the standard symmetric form on $\mathbb{C}^{4}$, the <strong>Hodge star</strong> on $\Lambda^{2}$ is the linear map defined on the basis by</p>
+<p>$$
+*(e_{1}\wedge e_{2})=e_{3}\wedge e_{4},\qquad
+*(e_{1}\wedge e_{3})=-e_{2}\wedge e_{4},\qquad
+*(e_{1}\wedge e_{4})=e_{2}\wedge e_{3},
+$$</p>
+<p>and extended antisymmetrically.</p>
+<p><strong>Proposition.</strong> $*^{2}=I$, and $*$ is symmetric for the form $\langle\omega,\eta\rangle$ defined by $\omega\wedge\eta=\langle\omega,*\eta\rangle\,e_{1}\wedge e_{2}\wedge e_{3}\wedge e_{4}$.</p>
+<p><strong>Proof.</strong> The three displayed values give $*^{2}=1$ on a basis, and the symmetry is the identity $\omega\wedge\eta=\eta\wedge\omega$ together with $*^{2}=1$.</p>
+<p><strong>The splitting.</strong> The eigenvalues of $*$ are $+1$ and $-1$, and the eigenspaces</p>
+<p>$$
+\Lambda^{2}_{+}=\{\omega:*\omega=\omega\},\qquad
+\Lambda^{2}_{-}=\{\omega:*\omega=-\omega\}
+$$</p>
+<p>have dimension $3$ each. A basis of $\Lambda^{2}_{+}$ is</p>
+<p>$$
+e_{1}\wedge e_{2}+e_{3}\wedge e_{4},\qquad
+e_{1}\wedge e_{3}-e_{2}\wedge e_{4},\qquad
+e_{1}\wedge e_{4}+e_{2}\wedge e_{3},
+$$</p>
+<p>and a basis of $\Lambda^{2}_{-}$ is obtained by changing the signs of the second terms.</p>
+<p><strong>The Lie algebra.</strong> The splitting is a splitting of Lie algebras:</p>
+<p>$$
+\mathfrak{so}(4,\mathbb{C})=\Lambda^{2}_{+}\oplus\Lambda^{2}_{-}\cong\mathfrak{sl}_2(\mathbb{C})\oplus\mathfrak{sl}_2(\mathbb{C}).
+$$</p>
+<p><strong>Proof.</strong> The star commutes with the bracket, because it is an isometry of the form and the bracket is built from the metric; hence the two eigenspaces are Lie subalgebras. Each is three-dimensional, and the only three-dimensional simple complex Lie algebra is $\mathfrak{sl}_2$. The two summands commute, since $[\Lambda^{2}_{+},\Lambda^{2}_{-}]\subseteq\Lambda^{2}_{+}\cap\Lambda^{2}_{-}=0$.</p>
+<p><strong>The Pfaffian on the two halves.</strong> For $\omega\in\Lambda^{2}_{+}$,</p>
+<p>$$
+\omega\wedge\omega=\langle\omega,*\omega\rangle\,e_{1}\wedge e_{2}\wedge e_{3}\wedge e_{4}=\langle\omega,\omega\rangle\,e_{1}\wedge e_{2}\wedge e_{3}\wedge e_{4},
+$$</p>
+<p>and the form $\langle\cdot,\cdot\rangle$ is nondegenerate on the three-dimensional space. The restriction of the Pfaffian quadric to $\mathbb{P}(\Lambda^{2}_{+})$ is therefore a smooth conic, and the same holds on $\mathbb{P}(\Lambda^{2}_{-})$. The two conics are the <strong>chiral conics</strong> of the antisymmetric sector.</p>
+<h2 id="the-klein-quadric">The Klein Quadric</h2>
+<p><strong>The Plücker coordinates.</strong> A decomposable two-form $\omega=u\wedge v$ has coordinates</p>
+<p>$$
+p_{ij}=u_{i}v_{j}-u_{j}v_{i},\qquad 1\le i<j\le4,
+$$</p>
+<p>the <strong>Plücker coordinates</strong> of the line $\mathbb{P}(\langle u,v\rangle)\subset\mathbb{P}^{3}$. They satisfy the <strong>Plücker relation</strong></p>
+<p>$$
+p_{12}p_{34}-p_{13}p_{24}+p_{14}p_{23}=0,
+$$</p>
+<p>which is exactly the vanishing of the Pfaffian.</p>
+<p><strong>Theorem (the Klein quadric).</strong> The image of the map</p>
+<p>$$
+\operatorname{Gr}(2,4)\longrightarrow\mathbb{P}(\Lambda^{2}\mathbb{C}^{4})=\mathbb{P}^{5},\qquad
+\langle u,v\rangle\longmapsto[u\wedge v],
+$$</p>
+<p>is the quadric $Q=\{\mathrm{Pf}=0\}$. The map is an isomorphism onto $Q$, and $Q$ is a smooth quadric of dimension $4$.</p>
+<p><strong>Proof.</strong> The map is well defined: a change of basis of $\langle u,v\rangle$ multiplies $u\wedge v$ by the determinant, so the class in $\mathbb{P}^{5}$ is unchanged. It is injective: the line is recovered as the projectivisation of the span of the vectors whose wedge with $\omega$ vanishes, a two-dimensional subspace for a nonzero decomposable $\omega$. Its image lies in $Q$ by the Plücker relation. Conversely, every nonzero $\omega$ with $\mathrm{Pf}(\omega)=0$ has rank two by the rank criterion, hence is decomposable, $\omega=u\wedge v$, and lies in the image. The quadric $Q$ is defined by a nondegenerate quadratic form in six variables, so it is smooth, and its dimension is $5-1=4$. The Grassmannian $\operatorname{Gr}(2,4)$ has dimension $2(4-2)=4$, consistent with the isomorphism.</p>
+<p><strong>The cone.</strong> The affine cone over $Q$ is the set of decomposable two-forms, including zero; it is the determinantal variety of rank-two antisymmetric matrices, of dimension $5$.</p>
+<p><strong>The two rulings.</strong> Through every point of $Q$ pass two planes contained in $Q$:</p>
+<ul>
+<li>the plane of the lines through a fixed point $P\in\mathbb{P}^{3}$;</li>
+<li>the plane of the lines contained in a fixed plane $H\subset\mathbb{P}^{3}$.</li>
+</ul>
+<p>Each family is parametrised by a $\mathbb{P}^{3}$, the dual $\mathbb{P}^{3}$ for the second, and the two families are the <strong>rulings</strong> of $Q$. Two points of $Q$ lie on a common line of $Q$ exactly when the corresponding lines of $\mathbb{P}^{3}$ meet.</p>
+<p><strong>Proof.</strong> The lines through a fixed point $P$ form a $\mathbb{P}^{2}$ in $\mathbb{P}^{3}$, and their Plücker points satisfy the two linear equations $P\wedge\omega=0$, which define a plane in $\mathbb{P}^{5}$; that plane lies in $Q$ because every form in it is decomposable. The same argument applies to the lines in a fixed plane, with the dual equations. The two planes through a point of $Q$ are obtained by taking $P$ on the line and $H$ containing the line. The incidence statement is the Klein correspondence: two lines meet exactly when the corresponding two-forms have a common vector, which is the condition that their Plücker points are joined by a line lying in $Q$.</p>
+<h2 id="the-place-of-the-sector-in-math149">The Place of the Sector in $M_4(\mathbb{C})$</h2>
+<p><strong>The trace form.</strong> On the antisymmetric sector the trace form is nondegenerate, and in the basis $e_{i}\wedge e_{j}$ it is diagonal:</p>
+<p>$$
+\operatorname{tr}\bigl((e_{i}\wedge e_{j})(e_{k}\wedge e_{l})\bigr)=-2\,\delta_{ik}\delta_{jl},
+$$</p>
+<p>so $\operatorname{tr}(A^{2})=-2\sum_{i<j}a_{ij}^{2}$ for $A=\sum a_{ij}e_{i}\wedge e_{j}$. The Killing form of $\mathfrak{so}(4,\mathbb{C})$ is a multiple of this form. On the real sector the trace form is negative definite, which is the compactness of $\mathfrak{so}(4,\mathbb{R})$.</p>
+<p><strong>The determinant.</strong> The determinant of an antisymmetric matrix is the square of its Pfaffian, so on the sector the determinant is a perfect square. The singular set of the sector is the Pfaffian quadric, of dimension $4$ in $\mathbb{P}^{5}$, and not a hypersurface of the same type as the singular set $\{\det=0\}$ of the full algebra.</p>
+<p><strong>The chiral reading.</strong> The two three-dimensional halves $\Lambda^{2}_{\pm}$ are the two chiral pieces of the rotation algebra, and each is an $\mathfrak{sl}_2$. The frame of the algebra carries another pair of $\mathfrak{su}_2$'s, the Peirce chain and the chiral pair of <em>The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</em>; the two pairs are different subalgebras. The star splitting is attached to the metric and the antisymmetric sector, the Peirce splitting to the idempotents and the frame.</p>
+<p><strong>The rank and the idempotents.</strong> An antisymmetric matrix is never an idempotent except zero, and its rank is even; the rank stratification of the sector is $0$, $2$ and $4$, against the five spectral strata of the full algebra. The two stratifications meet at the zero matrix only.</p>
+<h2 id="summary">Summary</h2>
+<p>The antisymmetric sector $\Lambda^{2}\mathbb{C}^{4}$ is six-dimensional, is the Lie algebra $\mathfrak{so}(4,\mathbb{C})$, and carries the Pfaffian, a quadratic form whose square is the determinant. The Pfaffian vanishes exactly on the rank-two forms and is nonzero exactly on the invertible ones; its invariance under congruence is the invariance of the determinant up to the square of $\det U$. The Hodge star splits the sector into the self-dual and anti-self-dual three-spaces, and the Lie algebra into $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$; the Pfaffian restricts to a smooth conic on each chiral plane. In $\mathbb{P}^{5}$ the Pfaffian quadric is the Klein quadric, isomorphic to the Grassmannian of lines in $\mathbb{P}^{3}$, with two rulings by planes. The sector is the even-rank part of the algebra, and its determinant is a square.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim\Lambda^{2}\mathbb{C}^{4}$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\dim\Lambda^{2}_{\pm}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Rank of an antisymmetric matrix</td>
+<td>$0,2,4$</td>
+</tr>
+<tr>
+<td>$\mathrm{Pf}(e_{1}\wedge e_{2}+e_{3}\wedge e_{4})$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\dim\operatorname{Gr}(2,4)=Q$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Ambient projective space</td>
+<td>$\mathbb{P}^{5}$</td>
+</tr>
+<tr>
+<td>Rulings</td>
+<td>two, each parametrised by $\mathbb{P}^{3}$</td>
+</tr>
+<tr>
+<td>Chiral conics</td>
+<td>two smooth conics</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda^{2}\mathbb{C}^{4}$</td>
+<td>the space of antisymmetric matrices, identified with two-forms</td>
+</tr>
+<tr>
+<td>$e_{i}\wedge e_{j}$</td>
+<td>the basis matrix $E_{ij}-E_{ji}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Pf}(A)$</td>
+<td>the Pfaffian $a_{12}a_{34}-a_{13}a_{24}+a_{14}a_{23}$</td>
+</tr>
+<tr>
+<td>$*$</td>
+<td>the Hodge star on $\Lambda^{2}$</td>
+</tr>
+<tr>
+<td>$\Lambda^{2}_{\pm}$</td>
+<td>the self-dual and anti-self-dual eigenspaces of $*$</td>
+</tr>
+<tr>
+<td>$p_{ij}$</td>
+<td>the Plücker coordinates of a decomposable two-form</td>
+</tr>
+<tr>
+<td>$Q=\{\mathrm{Pf}=0\}$</td>
+<td>the Klein quadric in $\mathbb{P}^{5}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Gr}(2,4)$</td>
+<td>the Grassmannian of two-planes in $\mathbb{C}^{4}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-forms-the-norms-and-the-singular-set-of-m4c.html">The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$</a>, for the determinant and the singular set of the full algebra.</li>
+<li><a href="the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html">The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$</a>, for the other pair of chiral subalgebras.</li>
+<li><a href="the-geometry-of-the-idempotents-of-m4c.html">The Geometry of the Idempotents of $M_4(\mathbb{C})$</a>, for the Grassmannians and the flag variety.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</a>, for the Grassmannians $\operatorname{Gr}(1,4)$ and $\operatorname{Gr}(2,4)$.</li>
+<li><a href="the-determinant-and-alternating-forms.html">The Determinant and Alternating Forms</a>, for the determinant and the exterior algebra.</li>
+<li>Werner Greub, <em>Multilinear Algebra</em> (Springer, 1978), for the Pfaffian and the Hodge star.</li>
+<li>Phillip Griffiths and Joseph Harris, <em>Principles of Algebraic Geometry</em> (Wiley, 1978), for the Klein quadric and the Grassmannians.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

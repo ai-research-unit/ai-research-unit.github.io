@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Clifford Group and the Frame Stabiliser — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-clifford-group-and-the-frame-stabiliser"><strong>The Clifford Group and the Frame Stabiliser</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A gamma frame is a choice. The Clifford relations fix the algebra, not the five matrices: any conjugate $U\gamma^\mu U^{-1}$ by an invertible $U$ is another frame, and the frames form a homogeneous space. Two subgroups of $GL_4(\mathbb{C})$ measure the freedom. The <strong>stabiliser of the frame</strong> is the set of $U$ that fix each gamma; it is the group of scalars $\mathbb{C}^{\times}I$. The <strong>Clifford group</strong> is the set of $U$ that preserve the span of the gammas up to a Lorentz transformation; it is larger, of dimension seven, and its even part is the scalars times the spin group. The quotient of the Clifford group by the scalars is the orthogonal group $O(4,\mathbb{C})$.</p>
+<p>The distinction is the exact content of the phrase "the frame is not canonical". The Clifford relations are invariant under the Clifford group; the five-element subset is invariant only under the scalars. The spin group is the even part of Pin and the double cover of $SO(4,\mathbb{C})$; in the biquaternion picture its two factors are the left and right copies of $\mathbb{B}$ inside $M_4(\mathbb{C})$. The finite group of the two-sided matrices is a discrete subgroup of the Clifford group, of order $32$, and its image in the orthogonal group is the group of sign changes of the frame.</p>
+<p>This article fixes the stabilisers, proves the exact sequence, computes the Lie algebra and the dimensions, identifies the spin group and its two biquaternion factors, and places the finite extraspecial group inside the Clifford group. The frame and the five gammas are <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em>; the finite group is <em>The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$</em>; the real Pin group is <em>The Pin Group of the Gamma Frame</em>; the versor group and the double cover are <em>Biquaternion Versors and the Orthogonal Group</em>.</p>
+<h2 id="the-action-on-frames">The Action on Frames</h2>
+<p><strong>The action.</strong> Let $\gamma^0,\gamma^1,\gamma^2,\gamma^3$ be a frame in $M_4(\mathbb{C})$, satisfying
+$$
+\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I,\qquad
+g=\operatorname{diag}(1,-1,-1,-1).
+$$
+For $U\in GL_4(\mathbb{C})$, put
+$$
+U\cdot\gamma^\mu=U\gamma^\mu U^{-1}.
+$$
+The conjugated matrices satisfy the same relations, because conjugation preserves anticommutators and the identity. The action is a left action of $GL_4(\mathbb{C})$ on the set of frames.</p>
+<p><strong>The orbit.</strong> Over $\mathbb{C}$, any two representations of $\mathrm{Cl}(4,\mathbb{C})$ of dimension four are equivalent; the frames form a single orbit. The frame space is therefore the homogeneous space
+$$
+\mathcal{F}\cong GL_4(\mathbb{C})/\operatorname{Stab}(\gamma),
+$$
+where $\operatorname{Stab}(\gamma)$ is the stabiliser of the ordered tuple.</p>
+<p><strong>The stabiliser of the tuple.</strong> The five gammas generate $M_4(\mathbb{C})$: the sixteen antisymmetrised products are a basis. If $U$ commutes with all five, it commutes with the whole algebra, hence lies in its centre:
+$$
+\operatorname{Stab}(\gamma^0,\dots,\gamma^3)
+=\mathbb{C}^{\times}I .
+$$
+This is the exact stabiliser. It has complex dimension one, and the frame space has dimension $16-1=15$.</p>
+<p><strong>The reading.</strong> The scalars are the only freedom that fixes the frame pointwise. A scalar multiple of all the gammas is the same frame in the projective sense; the phase is the kernel of the action. The frame is a section of a bundle whose fibre is the Clifford group modulo the scalars.</p>
+<h2 id="the-clifford-group">The Clifford Group</h2>
+<p><strong>The definition.</strong> The <strong>Clifford group</strong> of the frame is
+$$
+\Gamma=\{U\in GL_4(\mathbb{C}):U\gamma^\mu U^{-1}=\Lambda^{\mu}_{\ \nu}\gamma^\nu
+\text{ for some }\Lambda\in O(4,\mathbb{C})\}.
+$$
+It is the stabiliser of the <strong>span</strong>
+$$
+V_\gamma=\operatorname{span}_{\mathbb{C}}\{\gamma^0,\gamma^1,\gamma^2,\gamma^3\},
+$$
+not of the tuple.</p>
+<p><strong>The map to the orthogonal group.</strong> The assignment $U\mapsto\Lambda$ is a group homomorphism
+$$
+\pi:\Gamma\longrightarrow O(4,\mathbb{C}).
+$$
+It is surjective: every orthogonal transformation of $V_\gamma$ is a product of reflections, and each reflection is implemented by a vector of $V_\gamma$, which lies in $\Gamma$. Its kernel is the set of $U$ acting trivially on $V_\gamma$, which is the stabiliser of the tuple:
+$$
+\ker\pi=\mathbb{C}^{\times}I .
+$$</p>
+<p><strong>The exact sequence.</strong> Therefore
+$$
+\boxed{\;1\longrightarrow\mathbb{C}^{\times}\longrightarrow\Gamma
+\longrightarrow O(4,\mathbb{C})\longrightarrow1\;}
+$$
+is exact. The sequence does not split canonically: the spin group is a double cover of $SO(4,\mathbb{C})$, not a subgroup mapping isomorphically.</p>
+<p><strong>The dimension.</strong> The orthogonal group $O(4,\mathbb{C})$ has dimension $6$, and the kernel has dimension one; hence
+$$
+\dim_{\mathbb{C}}\Gamma=7 .
+$$
+The Clifford group is a complex algebraic group of dimension seven.</p>
+<p><strong>The biquaternion form.</strong> Over $\mathbb{C}$, the Clifford group is the product of the scalars with the Pin group,
+$$
+\Gamma=\mathbb{C}^{\times}\cdot\mathrm{Pin}(4,\mathbb{C}),
+$$
+and its even part is
+$$
+\Gamma^{+}=\mathbb{C}^{\times}\cdot\mathrm{Spin}(4,\mathbb{C}).
+$$
+The scalars are the kernel; the Pin group is the norm-one part. In the real Lorentzian case the corresponding group is $\mathbb{R}^{\times}\cdot\mathrm{Pin}(1,3)$, and the spin group is $\mathrm{Spin}(1,3)\cong\mathbb{B}^{\times}_1$.</p>
+<h2 id="the-lie-algebra">The Lie Algebra</h2>
+<p><strong>The Lie algebra of the Clifford group.</strong> An element $X\in\mathfrak{gl}_4(\mathbb{C})$ is in the Lie algebra of $\Gamma$ when
+$$
+[X,\gamma^\mu]\in V_\gamma
+$$
+for every $\mu$. The solutions are the scalars and the bivectors:
+$$
+\boxed{\;\operatorname{Lie}\Gamma=\mathbb{C}I\oplus\Lambda^{2}V_\gamma\;}
+$$
+of dimension $1+6=7$.</p>
+<p><strong>The proof.</strong> The bivectors satisfy
+$$
+[\gamma^{\mu\nu},\gamma^\rho]
+=2\bigl(g^{\nu\rho}\gamma^\mu-g^{\mu\rho}\gamma^\nu\bigr)\in V_\gamma,
+$$
+so $\Lambda^{2}V_\gamma$ is in the Lie algebra. The scalars commute with everything. Conversely, write $X=X_0+X_1+X_2+X_3+X_4$ in the Clifford basis. The grade-4 part of $[X,\gamma^\mu]$ comes from $X_3$, so $X_3=0$; the grade-3 part comes from $X_4$, so $X_4=0$. With $X=X_0+X_1+X_2$, the grade-0 part of $[X,\gamma^\mu]$ is $2g(X_1,\gamma^\mu)$, which vanishes for all $\mu$ only if $X_1=0$. The remaining terms are the scalar $X_0$ and the bivector $X_2$, both of which give grade-1 commutators. $\square$</p>
+<p><strong>The structure.</strong> The Lie algebra is the direct sum of the centre $\mathbb{C}I$ and the semisimple $\Lambda^{2}V_\gamma\cong\mathfrak{so}(4,\mathbb{C})$. The bracket of two bivectors is a bivector, and the centre is central. The Lie algebra is reductive, not semisimple: the centre is one-dimensional.</p>
+<p><strong>The even and odd parts.</strong> The even part of the Clifford group has Lie algebra
+$$
+\operatorname{Lie}\Gamma^{+}=\mathbb{C}I\oplus\Lambda^{2}V_\gamma,
+$$
+of dimension seven, and the spin group has Lie algebra $\Lambda^{2}V_\gamma$, of dimension six. The odd part of the Clifford group is a coset of the even part, not a subgroup; its tangent space at a point is $V_\gamma$, of dimension four, but it is not a Lie algebra, because the bracket of two vectors is a bivector.</p>
+<h2 id="the-spin-group">The Spin Group</h2>
+<p><strong>The theorem.</strong> The even part of the Clifford group is the scalars times the spin group, and
+$$
+\mathrm{Spin}(4,\mathbb{C})\cong SL_2(\mathbb{C})\times SL_2(\mathbb{C}),
+$$
+of complex dimension six. It is the double cover of $SO(4,\mathbb{C})$.</p>
+<p><strong>The biquaternion factors.</strong> The complexified even Clifford algebra is
+$$
+\mathrm{Cl}^{+}(4,\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}),
+$$
+and its two simple ideals are two copies of $\mathbb{B}$. The spin group is the norm-one part of the product of their unit groups,
+$$
+\mathrm{Spin}(4,\mathbb{C})\cong\bigl(B^{\times}_1\times B^{\times}_1\bigr)/\{\pm1\},
+$$
+the quotient by the simultaneous sign. In the Kronecker factorisation $M_4(\mathbb{C})\cong\mathbb{B}\otimes\mathbb{B}$, the two copies are realized by the left and right multiplication images
+$$
+M_2\otimes I\quad\text{and}\quad I\otimes M_2 .
+$$
+The left factor is the Lorentz action on the spinor; the right factor is the chirality action. The mass block mixes the two; it is the off-diagonal block of <em>The Rank-Two Split of $M_4(\mathbb{C})$</em>.</p>
+<p><strong>The real case.</strong> For the real Lorentzian algebra, the even part is the single biquaternion algebra, and
+$$
+\mathrm{Spin}(1,3)\cong\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C}),
+$$
+of real dimension six. The double cover of $SO^{+}(1,3)$ is the versor map $b\mapsto(\eta\mapsto b\eta b^{*})$ of <em>Biquaternion Versors and the Orthogonal Group</em>. The complex case doubles the factor because the complexification splits the even part into two copies.</p>
+<p><strong>The double cover.</strong> The map
+$$
+\mathrm{Spin}(4,\mathbb{C})\longrightarrow SO(4,\mathbb{C})
+$$
+is two-to-one with kernel $\{\pm1\}$. In the biquaternion form the kernel is the image of the simultaneous sign $(-1,-1)$ under the quotient by $\{\pm1\}$.</p>
+<h2 id="the-stabilisers">The Stabilisers</h2>
+<p><strong>The three groups.</strong> The frame has three nested stabilisers:
+$$
+\mathbb{C}^{\times}I
+\;\subset\;
+\Gamma
+\;\subset\;
+GL_4(\mathbb{C}),
+$$
+with
+$$
+\operatorname{Stab}(\gamma)=\mathbb{C}^{\times}I,\qquad
+\operatorname{Stab}(V_\gamma)=\Gamma .
+$$
+The first fixes the five matrices; the second fixes their span up to an orthogonal transformation; the third fixes nothing.</p>
+<p><strong>The dimensions.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>condition</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Stab}(\gamma)$</td>
+<td>$U\gamma^\mu U^{-1}=\gamma^\mu$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>$U\gamma^\mu U^{-1}=\Lambda^\mu_{\ \nu}\gamma^\nu$</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>$GL_4(\mathbb{C})$</td>
+<td>—</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$O(4,\mathbb{C})$</td>
+<td>$\Lambda$ orthogonal</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(4,\mathbb{C})$</td>
+<td>even part, norm one</td>
+<td>$6$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The projective quotients.</strong> The projective Clifford group is
+$$
+P\Gamma=\Gamma/\mathbb{C}^{\times}I\cong O(4,\mathbb{C}),
+$$
+of dimension six. The projective frame stabiliser is trivial: a frame is a point of $GL_4/\mathbb{C}^{\times}I$. The projective spin group is $SO(4,\mathbb{C})$, and the spin group is its double cover.</p>
+<p><strong>The finite subgroup.</strong> The thirty-two matrices $\pm T_{\mu\nu}$ form a finite subgroup
+$$
+G\subset\Gamma,\qquad |G|=32,
+$$
+extraspecial $Q_8\circ Q_8$. Its image in $O(4,\mathbb{C})$ is the group of sign changes of the four gammas,
+$$
+\pi(G)\cong(\mathbb{Z}/2)^{4},\qquad |\pi(G)|=16,
+$$
+and its kernel is $\{\pm I\}$. Every element has determinant $1$, so $G\subset SL_4(\mathbb{C})$. The finite group is a discrete shadow of the continuous Clifford group: it preserves the frame up to signs, not up to a general Lorentz transformation.</p>
+<p><strong>The even part of the finite group.</strong> The subgroup of $G$ whose image in $O(4,\mathbb{C})$ has an even number of sign changes has order $16$; its image is the order-eight group of even sign changes, which lies in $SO(4,\mathbb{C})$. It is a finite subgroup of the even Clifford group, and its spinor action is by left multiplication.</p>
+<h2 id="the-physical-reading">The Physical Reading</h2>
+<p><strong>The frame is a choice.</strong> The Clifford relations are the invariant object; the five gammas are a section. A change of frame is a conjugation by $GL_4(\mathbb{C})$, and the physics that depends only on the Clifford relations is invariant under the Clifford group. The five-element subset is invariant only under the scalars.</p>
+<p><strong>The symmetry groups.</strong> The Clifford group is the symmetry of the Clifford relations; the spin group is the Lorentz symmetry of the spinor; the scalars are the phase freedom of the frame. The three have different dimensions and different actions, and conflating them is the common error.</p>
+<p><strong>The gauge group.</strong> The Standard Model gauge group is not a subgroup of the Clifford group. It is an external structure on the spinor module, not a conjugation of the frame. The Clifford group contains the Lorentz group and the phase, and no more. This is the exact sense in which the gauge layer is an import; the replacement of the Clifford notation by the biquaternion calculus does not change it.</p>
+<p><strong>The biquaternion reading.</strong> The spin group is the norm-one biquaternion group; the Clifford group adds the scalars; the frame stabiliser is the scalars alone. The two chiral factors of the complex spin group are the left and right copies of $\mathbb{B}$; the mass block is the off-diagonal mixing. The finite extraspecial group is the discrete skeleton of the two-sided basis.</p>
+<h2 id="summary">Summary</h2>
+<p>The frame is a single orbit of $GL_4(\mathbb{C})$ with stabiliser $\mathbb{C}^{\times}I$, of dimension one. The Clifford group $\Gamma$, the stabiliser of the span of the gammas, fits in the exact sequence
+$$
+1\longrightarrow\mathbb{C}^{\times}\longrightarrow\Gamma\longrightarrow O(4,\mathbb{C})\longrightarrow1,
+$$
+has dimension seven, and has Lie algebra $\mathbb{C}I\oplus\Lambda^{2}V_\gamma$. Its even part is $\mathbb{C}^{\times}\cdot\mathrm{Spin}(4,\mathbb{C})$, and the spin group is $SL_2(\mathbb{C})\times SL_2(\mathbb{C})$, the double cover of $SO(4,\mathbb{C})$, of dimension six. The two factors are the left and right copies of $\mathbb{B}$ inside $M_4(\mathbb{C})$. The finite group $G=\{\pm T_{\mu\nu}\}$ of order $32$ is a subgroup of $\Gamma$; its image in $O(4,\mathbb{C})$ is the sign group $(\mathbb{Z}/2)^4$ of order $16$, and its determinant is $1$. The frame stabiliser is the scalars; the even Clifford group is the scalars times the spin group, and the full Clifford group is the scalars times the Pin group; the spin group is the biquaternion versor group in the real case and the product of the two biquaternion factors in the complex case.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>frame space</td>
+<td>$GL_4(\mathbb{C})/\mathbb{C}^{\times}I$, dimension $15$</td>
+</tr>
+<tr>
+<td>frame stabiliser</td>
+<td>$\mathbb{C}^{\times}I$, dimension $1$</td>
+</tr>
+<tr>
+<td>Clifford group</td>
+<td>$\Gamma$, dimension $7$</td>
+</tr>
+<tr>
+<td>exact sequence</td>
+<td>$1\to\mathbb{C}^{\times}\to\Gamma\to O(4,\mathbb{C})\to1$</td>
+</tr>
+<tr>
+<td>Lie algebra</td>
+<td>$\mathbb{C}I\oplus\Lambda^{2}V_\gamma$, dimension $7$</td>
+</tr>
+<tr>
+<td>even Clifford group</td>
+<td>$\mathbb{C}^{\times}\cdot\mathrm{Spin}(4,\mathbb{C})$, dimension $7$</td>
+</tr>
+<tr>
+<td>spin group</td>
+<td>$SL_2(\mathbb{C})\times SL_2(\mathbb{C})$, dimension $6$</td>
+</tr>
+<tr>
+<td>real spin group</td>
+<td>$\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$, dimension $6$</td>
+</tr>
+<tr>
+<td>projective Clifford group</td>
+<td>$O(4,\mathbb{C})$, dimension $6$</td>
+</tr>
+<tr>
+<td>finite subgroup</td>
+<td>$G=\{\pm T_{\mu\nu}\}$, order $32$</td>
+</tr>
+<tr>
+<td>image of $G$</td>
+<td>$(\mathbb{Z}/2)^4$, order $16$</td>
+</tr>
+<tr>
+<td>determinant of $G$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\gamma^\mu$</td>
+<td>the four gammas of the frame</td>
+</tr>
+<tr>
+<td>$V_\gamma$</td>
+<td>the span of the four gammas</td>
+</tr>
+<tr>
+<td>$\Gamma$</td>
+<td>the Clifford group of the frame</td>
+</tr>
+<tr>
+<td>$\Gamma^{+}$</td>
+<td>its even part</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}(4,\mathbb{C})$</td>
+<td>the spin group, the even part of Pin</td>
+</tr>
+<tr>
+<td>$\mathrm{Pin}(4,\mathbb{C})$</td>
+<td>the pin group of the complex space</td>
+</tr>
+<tr>
+<td>$O(4,\mathbb{C})$</td>
+<td>the complex orthogonal group</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}$</td>
+<td>the two-sided operator $L_\mu R_\nu$</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the finite group $\{\pm T_{\mu\nu}\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\times}_1$</td>
+<td>the norm-one biquaternion group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the frame, the Clifford relations and the action of $GL_4$.</li>
+<li><a href="the-extraspecial-group-of-the-two-sided-matrices-of-m4c.html">The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$</a>, for $G\cong Q_8\circ Q_8$ and its representations.</li>
+<li><a href="the-pin-group-of-the-gamma-frame.html">The Pin Group of the Gamma Frame</a>, for the real Pin group and the finite gamma group.</li>
+<li><a href="biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a>, for the spin group as a biquaternion group and the double cover.</li>
+<li><a href="the-star-and-the-conjugate-linear-operators-of-m4c.html">The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</a>, for the two Clifford dictionaries.</li>
+<li><a href="the-kronecker-factorisation-of-m4c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the left and right copies of $\mathbb{B}$.</li>
+<li><a href="the-rank-two-split-of-m4c.html">The Rank-Two Split of $M_4(\mathbb{C})$</a>, for the chiral blocks and the mass block.</li>
+<li><a href="the-z-grading-and-the-odd-slot-of-m4c.html">The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$</a>, for the five gammas inside the two-sided basis.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-grading-and-the-odd-slot-of-math1"><strong>The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Clifford algebra of a four-dimensional space has sixteen basis elements, and they are usually grouped by <strong>grade</strong>: one scalar, four vectors, six bivectors, four trivectors, one pseudoscalar. The grouping is the visible form of the $\mathbb{Z}$-grading of the exterior algebra. The Clifford algebra itself is not $\mathbb{Z}$-graded: the product of two vectors has a scalar part and a bivector part, so the grade is not additive on the product. What the Clifford algebra has is a $\mathbb{Z}$-<strong>filtration</strong>, whose associated graded algebra is the exterior algebra; the parity is the only grading that survives on the algebra itself.</p>
+<p>The biquaternion algebra is the even part. Its product sees the parity and nothing finer: the product of two even elements is even, and the split of the even part into scalars, bivectors and pseudoscalars is not visible in the multiplication table of $\mathbb{B}$ alone. The odd slot is worse: it is a copy of $\mathbb{B}$, of real dimension eight, and the product of two odd elements is even, but the split of the odd slot into four vectors and four trivectors is not a submodule split. Left multiplication by an even element mixes the two.</p>
+<p>The sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ give the exact dictionary. Each of them is one Clifford basis element up to a scalar $\pm1$ or $\pm i$, and the table of their grades is the dictionary between the two-sided index pair and the Clifford grade. The table is not a function of the indices alone: the four vectors are $T_{tx},T_{xy},T_{yy},T_{zy}$, a staircase, not a row or a column. The frame is the choice of that staircase.</p>
+<p>This article fixes the two gradings, describes the odd slot, gives the grade table of the sixteen two-sided operators, and states what the biquaternion product can and cannot see. The Clifford frame is <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em>; the two-sided basis is <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em>; the even slot and the odd slot are <em>Biquaternion Versors and the Orthogonal Group</em>; the traces that read the scalar and pseudoscalar coordinates are <em>The Vector and the Axial Traces of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-two-gradings">The Two Gradings</h2>
+<p><strong>The parity grading.</strong> The Clifford algebra is
+$$
+\mathrm{Cl}(V)=\mathrm{Cl}^{0}\oplus\mathrm{Cl}^{1},
+$$
+the even and odd parts, with
+$$
+\mathrm{Cl}^{i}\mathrm{Cl}^{j}\subseteq\mathrm{Cl}^{i+j\bmod 2}.
+$$
+The grade involution $\alpha$ is $+1$ on $\mathrm{Cl}^{0}$ and $-1$ on $\mathrm{Cl}^{1}$; it is an automorphism. The even part is the biquaternion algebra,
+$$
+\mathrm{Cl}^{0}\cong\mathbb{B}\cong M_2(\mathbb{C}),
+$$
+of real dimension eight; the odd part is a copy of it, $\mathrm{Cl}^{1}=\mathbb{B}u$ for any non-isotropic $u\in V$.</p>
+<p><strong>The filtration.</strong> For $k=0,1,2,3,4$, let $\mathrm{Cl}^{\le k}$ be the span of the products of at most $k$ vectors. Then
+$$
+\mathrm{Cl}^{\le0}\subset\mathrm{Cl}^{\le1}\subset\mathrm{Cl}^{\le2}\subset\mathrm{Cl}^{\le3}\subset\mathrm{Cl}^{\le4}=\mathrm{Cl},
+$$
+with
+$$
+\dim\mathrm{Cl}^{\le k}=\sum_{j=0}^{k}\binom{4}{j},
+\qquad
+\dim\mathrm{Cl}^{\le4}=1+4+6+4+1=16 .
+$$
+The associated graded algebra is the exterior algebra:
+$$
+\operatorname{gr}\mathrm{Cl}\cong\Lambda^{\bullet}V,
+\qquad
+\dim\Lambda^{k}V=\binom{4}{k}.
+$$
+The symbol map sends the filtration layer $\mathrm{Cl}^{\le k}$ to the quotient $\mathrm{Cl}^{\le k}/\mathrm{Cl}^{\le k-1}\cong\Lambda^{k}V$; the Clifford product is the exterior product plus contractions, and the contractions are what destroy the $\mathbb{Z}$-grading.</p>
+<p><strong>The precise statement.</strong> The Clifford algebra is <strong>$\mathbb{Z}$-filtered</strong>, not $\mathbb{Z}$-graded. The $\mathbb{Z}$-grading lives on the exterior algebra $\Lambda^{\bullet}V$, which is the associated graded. The parity is the mod-two reduction of the filtration; it is a genuine grading of $\mathrm{Cl}$, and it is the only one.</p>
+<p><strong>The dimensions.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>grade</th>
+<th>basis</th>
+<th>dimension</th>
+<th>parity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>$I$</td>
+<td>1</td>
+<td>even</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$\gamma^\mu$</td>
+<td>4</td>
+<td>odd</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\gamma^{\mu\nu}$</td>
+<td>6</td>
+<td>even</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$\gamma^{\mu\nu\rho}$</td>
+<td>4</td>
+<td>odd</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\gamma^5$</td>
+<td>1</td>
+<td>even</td>
+</tr>
+</tbody>
+</table></div>
+<p>The even part has dimension $1+6+1=8$; the odd part has dimension $4+4=8$. The odd slot is therefore the sum of the vector and trivector grades, not one grade.</p>
+<h2 id="the-odd-slot">The Odd Slot</h2>
+<p><strong>The split.</strong> As a real vector space,
+$$
+\mathrm{Cl}^{1}=V\oplus\Lambda^{3}V,
+\qquad
+\dim V=4,\quad\dim\Lambda^{3}V=4 .
+$$
+The four vectors are the $\gamma^\mu$; the four trivectors are the $\gamma^{\mu\nu\rho}$. The split is the grade split of the odd part.</p>
+<p><strong>The module structure.</strong> The odd slot is a left $\mathbb{B}$-module, $\mathrm{Cl}^{1}=\mathbb{B}u$, of real dimension eight. The left multiplication by an even element preserves the parity but not the grade: a bivector times a vector is a vector plus a trivector,
+$$
+\gamma^{\mu\nu}\gamma^{\rho}
+=\gamma^{\mu\nu\rho}+g^{\nu\rho}\gamma^{\mu}-g^{\mu\rho}\gamma^{\nu},
+$$
+so the split $V\oplus\Lambda^{3}V$ is <strong>not</strong> a $\mathbb{B}$-submodule split. The odd slot is a copy of $\mathbb{B}$ as a module, but the copy does not respect the vector/trivector split. This is the algebraic reason the split is recovered from the frame, not from the module.</p>
+<p><strong>The Hodge duality.</strong> The four-dimensional Hodge star gives a linear isomorphism
+$$
+*:\Lambda^{1}V\longrightarrow\Lambda^{3}V,
+\qquad
+\gamma^{\mu}\longmapsto \gamma^{\mu\nu\rho}\propto\varepsilon^{\mu\nu\rho\sigma}\gamma_{\sigma}\gamma^{5},
+$$
+with $*^2=\pm1$ on the odd slot. The four pairs
+$$
+(\gamma^{0},\gamma^{123}),\quad
+(\gamma^{1},\gamma^{023}),\quad
+(\gamma^{2},\gamma^{013}),\quad
+(\gamma^{3},\gamma^{012})
+$$
+are the Hodge pairs. Each pair spans a two-dimensional subspace of the odd slot. The Hodge star exchanges the vector and the trivector of the pair, and the Clifford product of the two is a scalar plus a scalar multiple of the pseudoscalar.</p>
+<p><strong>The product rule.</strong> With $u$ a unit timelike vector and $\mathrm{Cl}^{1}=\mathbb{B}u$,
+$$
+(b_1+b_2u)(c_1+c_2u)=(b_1c_1+b_2c_2)+(b_1c_2+b_2c_1)u,
+$$
+for $b_1,b_2,c_1,c_2\in\mathbb{B}$. The odd slot is closed under left multiplication by $\mathbb{B}$ and under the product with itself into the even part. The product of two odd elements is even, and the product of an even and an odd element is odd; this is the parity grading in operation form.</p>
+<h2 id="the-sixteen-two-sided-operators">The Sixteen Two-Sided Operators</h2>
+<p><strong>The theorem.</strong> Each $T_{\mu\nu}=L_\mu R_\nu$ is exactly one Clifford basis element up to a scalar $\pm1$ or $\pm i$. The table is the following; the entry is the Clifford element and its grade.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$T_{\mu\nu}$</th>
+<th>$\nu=t$</th>
+<th>$\nu=x$</th>
+<th>$\nu=y$</th>
+<th>$\nu=z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mu=t$</td>
+<td>$I$ (0)</td>
+<td>$-i\gamma^{0}$ (1)</td>
+<td>$i\gamma^{123}$ (3)</td>
+<td>$i\gamma^{5}$ (4)</td>
+</tr>
+<tr>
+<td>$\mu=x$</td>
+<td>$\gamma^{23}$ (2)</td>
+<td>$-i\gamma^{023}$ (3)</td>
+<td>$-i\gamma^{1}$ (1)</td>
+<td>$\gamma^{01}$ (2)</td>
+</tr>
+<tr>
+<td>$\mu=y$</td>
+<td>$-\gamma^{13}$ (2)</td>
+<td>$i\gamma^{013}$ (3)</td>
+<td>$-i\gamma^{2}$ (1)</td>
+<td>$\gamma^{02}$ (2)</td>
+</tr>
+<tr>
+<td>$\mu=z$</td>
+<td>$\gamma^{12}$ (2)</td>
+<td>$-i\gamma^{012}$ (3)</td>
+<td>$-i\gamma^{3}$ (1)</td>
+<td>$\gamma^{03}$ (2)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The verification.</strong> The table follows from the definitions $L_\mu(x)=e_\mu x$, $R_\nu(x)=xe_\nu$, the multiplication table of the biquaternion units, and the correspondence
+$$
+e_t\mapsto I,\quad e_x\mapsto\gamma^{2}\gamma^{3},\quad e_y\mapsto\gamma^{3}\gamma^{1},\quad e_z\mapsto\gamma^{1}\gamma^{2},\quad i\mapsto i\gamma^{5}.
+$$
+Each product $e_\mu x e_\nu$ is a signed basis element, and the scalar $i$ is the pseudoscalar. The signs are those of the quaternion multiplication table; a direct computation gives the sixteen entries. $\square$</p>
+<p><strong>The counts.</strong> The table has one grade-0 entry, four grade-1 entries, six grade-2 entries, four grade-3 entries and one grade-4 entry:
+$$
+1+4+6+4+1=16 .
+$$
+The counts are the dimensions of the exterior algebra; the table is a bijection between the sixteen two-sided operators and the sixteen Clifford basis elements.</p>
+<p><strong>The five gammas.</strong> The frame is the five entries
+$$
+\gamma^{0}=iT_{tx},\qquad
+\gamma^{1}=iT_{xy},\qquad
+\gamma^{2}=iT_{yy},\qquad
+\gamma^{3}=iT_{zy},\qquad
+\gamma^{5}=-iT_{tz}.
+$$
+The first four are the four vectors; the last is the pseudoscalar. The four vectors are the staircase
+$$
+T_{tx},\ T_{xy},\ T_{yy},\ T_{zy},
+$$
+not a row and not a column. This is the exact sense in which the frame is a choice, not a property of the index pair.</p>
+<p><strong>The Hodge pairs in the table.</strong> The four vector entries are paired with the four trivector entries:
+$$
+T_{tx}\leftrightarrow T_{ty},\qquad
+T_{xy}\leftrightarrow T_{xx},\qquad
+T_{yy}\leftrightarrow T_{yx},\qquad
+T_{zy}\leftrightarrow T_{zx}.
+$$
+Each pair is one Hodge pair $(\gamma^\mu,\gamma^{\nu\rho\sigma})$. The pattern is the frame written twice: the vector entry and its trivector partner differ by the exchange of the second index and the sign of the scalar $i$.</p>
+<h2 id="what-the-biquaternion-product-sees">What the Biquaternion Product Sees</h2>
+<p><strong>The parity.</strong> The product of two even elements is even, and the product of an even and an odd element is odd. This is visible in the multiplication of $\mathbb{B}$ and in the rule for the odd slot; no frame is needed.</p>
+<p><strong>The grade.</strong> The grade is not visible. The multiplication table of $\mathbb{B}$ does not distinguish a scalar from a pseudoscalar: both are central in $\mathbb{B}$, and the product of two bivectors can be a scalar plus a pseudoscalar plus a bivector. The splitting into grades requires the frame, which supplies the $\gamma^\mu$ and hence the grade projectors.</p>
+<p><strong>The central imaginary and the pseudoscalar.</strong> In $\mathbb{B}$ the element $i$ is central. In $\mathrm{Cl}$ the pseudoscalar $\gamma^{5}$ is even but not central: it commutes with the even part and anticommutes with the odd part. The identification $i\mapsto i\gamma^{5}$ is an isomorphism of real algebras, but it does not preserve the centre in the ambient algebra: the image of the centre is the real plane spanned by $I$ and $i\gamma^{5}$, which is central in the even part and not in the whole Clifford algebra. This is the algebraic reason the chirality is not a scalar.</p>
+<p><strong>The odd slot as an operation.</strong> The odd elements are not in $\mathbb{B}$; as operations on $\mathbb{B}$ they are the bar and the left multiplications,
+$$
+\gamma^{0}=\bar{\cdot},\qquad
+\gamma^{k}=\bar{\cdot}L_{-i e_k},
+$$
+in the real-linear dictionary. The grade of the operation is recovered from the frame, not from the biquaternion product. The operation-level statement is <em>The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</em>.</p>
+<p><strong>The two dictionaries.</strong> The complex-linear dictionary
+$$
+\gamma^{0}=R_{i e_x},\qquad
+\gamma^{k}=L_{i e_k}R_{e_y},\qquad
+\gamma^{5}=R_{-i e_z}
+$$
+uses the same five entries up to the scalar $i$; its even part is the complexified even Clifford algebra $M_2\oplus M_2$, not the left factor $\mathbb{B}$. The real-linear dictionary has the left factor as its even part. The grade table is the same in both, because it is a table of the same sixteen two-sided operators against the same abstract Clifford basis; the difference is which operators represent the frame, not the grades.</p>
+<h2 id="the-frame-dependence">The Frame Dependence</h2>
+<p><strong>The canonical part.</strong> The filtration and the parity are canonical: they are defined by the Clifford algebra and the vector space $V$, with no choice of frame. The dimensions $1,4,6,4,1$ are canonical.</p>
+<p><strong>The frame part.</strong> The assignment of a grade to a particular $T_{\mu\nu}$ is frame-dependent. A different frame $\tilde\gamma^\mu=U\gamma^\mu U^{-1}$ gives a different five-element subset of the sixteen two-sided operators and a different staircase of vectors. The grade of the Clifford element is canonical; its expression in the two-sided basis is not.</p>
+<p><strong>The invariant statement.</strong> The correct invariant statement is: the sixteen two-sided operators are a Clifford basis up to scalars; the five gammas are a frame inside it; the grade table is the matrix of the change of basis between the two-sided basis and the Clifford basis. The table above is one such matrix, for the frame of the corpus.</p>
+<h2 id="summary">Summary</h2>
+<p>The Clifford algebra of four dimensions is $\mathbb{Z}$-filtered, with associated graded $\Lambda^{\bullet}V$ of dimensions $1,4,6,4,1$; it is $\mathbb{Z}/2$-graded by parity, and that is the only grading on the algebra itself. The even part is $\mathbb{B}$; the odd part is a copy of $\mathbb{B}$ of real dimension eight, split as four vectors plus four trivectors. The split is not a $\mathbb{B}$-submodule split; it is recovered from the frame by Hodge duality. The sixteen two-sided operators are exactly the sixteen Clifford basis elements up to $\pm1,\pm i$, with the grade table
+$$
+\begin{array}{c|cccc}
+ & t & x & y & z\\ \hline
+t & I & -i\gamma^0 & i\gamma^{123} & i\gamma^5\\
+x & \gamma^{23} & -i\gamma^{023} & -i\gamma^1 & \gamma^{01}\\
+y & -\gamma^{13} & i\gamma^{013} & -i\gamma^2 & \gamma^{02}\\
+z & \gamma^{12} & -i\gamma^{012} & -i\gamma^3 & \gamma^{03}
+\end{array}
+$$
+and the five gammas are $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma^5=-iT_{tz}$. The biquaternion product sees the parity and not the grade; the grade needs the frame. The odd slot is a copy of $\mathbb{B}$ as a module, but the vector/trivector split is not a module split, which is why the geometric content of the odd sector is carried by the dictionary rather than by the product.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>parity</td>
+<td>$\mathrm{Cl}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, $\dim=8+8$</td>
+</tr>
+<tr>
+<td>filtration</td>
+<td>$\operatorname{gr}\mathrm{Cl}\cong\Lambda^{\bullet}V$</td>
+</tr>
+<tr>
+<td>grade dimensions</td>
+<td>$1,4,6,4,1$</td>
+</tr>
+<tr>
+<td>odd slot</td>
+<td>$V\oplus\Lambda^3V$, $4+4$</td>
+</tr>
+<tr>
+<td>Hodge pairs</td>
+<td>$(\gamma^0,\gamma^{123})$, $(\gamma^1,\gamma^{023})$, $(\gamma^2,\gamma^{013})$, $(\gamma^3,\gamma^{012})$</td>
+</tr>
+<tr>
+<td>five gammas</td>
+<td>$iT_{tx},iT_{xy},iT_{yy},iT_{zy},-iT_{tz}$</td>
+</tr>
+<tr>
+<td>scalar</td>
+<td>$T_{tt}=I$</td>
+</tr>
+<tr>
+<td>pseudoscalar</td>
+<td>$T_{tz}=i\gamma^5$</td>
+</tr>
+<tr>
+<td>vectors</td>
+<td>$T_{tx},T_{xy},T_{yy},T_{zy}$</td>
+</tr>
+<tr>
+<td>trivectors</td>
+<td>$T_{ty},T_{xx},T_{yx},T_{zx}$</td>
+</tr>
+<tr>
+<td>bivectors</td>
+<td>$T_{xt},T_{xz},T_{yt},T_{yz},T_{zt},T_{zz}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Cl}(V)$</td>
+<td>the Clifford algebra of the Lorentzian four-space</td>
+</tr>
+<tr>
+<td>$\mathrm{Cl}^{\le k}$</td>
+<td>the filtration layer of products of at most $k$ vectors</td>
+</tr>
+<tr>
+<td>$\operatorname{gr}\mathrm{Cl}$</td>
+<td>the associated graded algebra, $\Lambda^{\bullet}V$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the grade involution</td>
+</tr>
+<tr>
+<td>$\gamma^\mu$</td>
+<td>the four vector gammas</td>
+</tr>
+<tr>
+<td>$\gamma^{\mu\nu}$, $\gamma^{\mu\nu\rho}$</td>
+<td>the bivectors and trivectors</td>
+</tr>
+<tr>
+<td>$\gamma^5$</td>
+<td>the pseudoscalar</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}$</td>
+<td>the two-sided operator $L_\mu R_\nu$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathrm{Cl}^{0}$</td>
+</tr>
+<tr>
+<td>$V$</td>
+<td>the Lorentzian vector space, grade 1</td>
+</tr>
+<tr>
+<td>$\Lambda^3V$</td>
+<td>the trivector space, grade 3</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the five gammas, the Clifford basis and the frame.</li>
+<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the sixteen $T_{\mu\nu}$ and their multiplication table.</li>
+<li><a href="the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>, for $L_a$, $R_a$ and $T_{a,b}$.</li>
+<li><a href="biquaternion-versors-and-the-orthogonal-group.html">Biquaternion Versors and the Orthogonal Group</a>, for the even and odd slots of the envelope.</li>
+<li><a href="the-vector-and-the-axial-traces-of-m4c.html">The Vector and the Axial Traces of $M_4(\mathbb{C})$</a>, for the two coordinates $T_{tt}$ and $T_{tz}$ that the traces read.</li>
+<li><a href="the-star-and-the-conjugate-linear-operators-of-m4c.html">The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$</a>, for the operation-level form of the odd generators.</li>
+<li><a href="the-two-chiralities-of-m4c.html">The Two Chiralities of $M_4(\mathbb{C})$</a>, for the chirality and its relation to the pseudoscalar.</li>
+<li><a href="../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html">The Dirac Algebra and Biquaternions: A Dictionary</a>, for the explicit matrices and the even-part identification.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
