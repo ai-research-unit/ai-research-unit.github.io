@@ -587,6 +587,6 @@ The two products of the series are the product of two boosts, which is a boost t
 - [The Three Eigenspace Decompositions](the-three-eigenspace-decompositions.html), for the three eigenspace decompositions the conjugations cut out.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, the four conjugations and the norm.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Thomas-Wigner rotation of the product of two boosts and the double cover read on the rotor.
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich as an operator, its kernel $U(1)$, its image $CO^{+}(1,3)$ and the factor-by-factor word.
+- [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich as an operator, its kernel $U(1)$, its image $CO^{+}(1,3)$ and the factor-by-factor word.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group, its double cover and the reflections.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the symbols, the root convention and the $*$-unitary convention.

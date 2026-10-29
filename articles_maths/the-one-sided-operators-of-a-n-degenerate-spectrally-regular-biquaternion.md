@@ -546,7 +546,7 @@ with eigenvalues $2,2,0,0$ and singular values $2\sqrt2,2\sqrt2,0,0$. The exampl
 
 - [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the general one-sided theory and the four-factor word.
 - [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent two-block operator at the spectral wall of the regular sector.
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the companion sandwich, the rank-one projection and the cancellation of the phase.
+- [The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion](the-sandwich-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the companion sandwich, the rank-one projection and the cancellation of the phase.
 - [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](the-one-sided-operators-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent case of the same sector pair.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the definition, the spectral decomposition and the spinorial reading of the sector.

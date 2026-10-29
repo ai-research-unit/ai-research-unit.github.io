@@ -1,4 +1,4 @@
-# __The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion__
+# __The Sandwich of a N-Regular, Spectrally Degenerate Biquaternion__
 
 ## Introduction
 
@@ -10,9 +10,9 @@ $$
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
 $$
 
-It is the two-sided operator of the polar decomposition, and its theory in the regular sector is *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion*. On the N-regular, spectrally degenerate sector the sandwich becomes especially simple: it is a positive scalar times a unipotent operator. The scalar is $|Q_t|^2$; on the Jordan part the unipotent operator has one Jordan block of size three and one of size one, while on the scalar line it is the identity.
+It is the sandwich of the polar decomposition, and its theory in the regular sector is *The Sandwich of a N-Regular, Spectrally Regular Biquaternion*. On the N-regular, spectrally degenerate sector the sandwich becomes especially simple: it is a positive scalar times a unipotent operator. The scalar is $|Q_t|^2$; on the Jordan part the unipotent operator has one Jordan block of size three and one of size one, while on the scalar line it is the identity.
 
-The article states the sandwich, proves the Jordan structure, reads the polar decomposition of the operator, computes the fixed directions, and explains how the two spinor slots of the regular article coalesce at the wall. The exponential of the operator is the companion *The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion*.
+The article states the sandwich, proves the Jordan structure, reads the polar decomposition of the operator, computes the fixed directions, and explains how the two spinor slots of the regular article coalesce at the wall. The exponential of the operator is the companion *The Sandwich Exponential of a N-Regular, Spectrally Degenerate Biquaternion*.
 
 ## The Sandwich of the Word
 
@@ -116,7 +116,7 @@ The product $\Theta_{\tilde Q}$ is $\lvert Q_t\rvert^{2}$ times a unipotent oper
 
 In the regular sector the sandwich has two spinor slots, and the rotor angle and the rapidity are doubled on them. On the wall the slots do not disappear; they coalesce into the Jordan chain. The $3\times3$ block and the $1\times1$ block are the remnants of the two slots: one slot keeps a fixed vector, and the other carries the nilpotent chain of length three.
 
-The central phase is invisible in the sandwich, as in the regular sector: $\Theta_{e^{i\alpha}}=\mathrm{id}$. The phase is visible only in the one-sided operator. The sector therefore preserves the one-sided/two-sided contrast: the phase is a one-sided datum, and the sandwich sees only the scale, the boost and the rotor.
+The central phase is invisible in the sandwich, as in the regular sector: $\Theta_{e^{i\alpha}}=\mathrm{id}$. The phase is visible only in the one-sided operator. The sector therefore preserves the one-sided/sandwich contrast: the phase is a one-sided datum, and the sandwich sees only the scale, the boost and the rotor.
 
 ## The Fixed Directions
 
@@ -215,11 +215,11 @@ and the sandwich is the composition of the positive operator $\Theta_{\tilde H}$
 | phase | invisible, $\Theta_{e^{i\alpha}}=\mathrm{id}$ |
 | fixed subspace | the span of $\vec A$ and $e_t+i\vec c$, $\vec c=\vec A\times\vec B/a^2$ |
 
-On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: rank four, spectrum $\lvert Q_t\rvert^{2}$ with geometric multiplicity four, Jordan type $1+1+1+1$, and $\mathsf N=0$. The Jordan data in the table are those of the Jordan part. The exponential of the operator is the companion *The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion*.
+On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: rank four, spectrum $\lvert Q_t\rvert^{2}$ with geometric multiplicity four, Jordan type $1+1+1+1$, and $\mathsf N=0$. The Jordan data in the table are those of the Jordan part. The exponential of the operator is the companion *The Sandwich Exponential of a N-Regular, Spectrally Degenerate Biquaternion*.
 
 ### What the Sandwich Shows
 
-- On the Jordan part the two-sided operator is a scalar times a unipotent operator with a single $3\times3$ block and a single $1\times1$ block; on the scalar line it is a scalar.
+- On the Jordan part the sandwich is a scalar times a unipotent operator with a single $3\times3$ block and a single $1\times1$ block; on the scalar line it is a scalar.
 - Its polar decomposition is the sandwich of the Cartan factors; the factors are positive and $*$-unitary, and their product is unipotent.
 - The two spinor slots of the regular sector coalesce into the Jordan chain.
 - The phase cancels, so the sandwich sees only the scale, the boost and the rotor.
@@ -244,7 +244,7 @@ On the scalar line $\vec\Upsilon=0$ the sandwich is $\lvert Q_t\rvert^{2}I_4$: r
 
 ## Further Reading
 
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html), for the general sandwich and its two slots.
-- [The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion](the-two-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the null rotation and the locked parameter.
+- [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the general sandwich and its two slots.
+- [The Sandwich Exponential of a N-Regular, Spectrally Degenerate Biquaternion](the-sandwich-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the null rotation and the locked parameter.
 - [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the one-sided companion.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the element-level factorization used here.

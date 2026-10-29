@@ -1,16 +1,16 @@
-# __The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion__
+# __The Sandwich of a N-Regular, Spectrally Regular Biquaternion__
 
 ## Introduction
 
 Throughout this article $\tilde Q$ lies in the N-regular, spectrally regular sector $\Sigma_{11}$, so $N\neq0$ and $B^2\neq0$. The sector condition is the domain on which the eigenbasis and the companion constructions are those of the regular case; the wall $B^2=0$ is treated in the companion article of the same title with *Spectrally Degenerate*.
 
-The **Hermitian sandwich** of the biquaternion algebra is the operator
+The **Hermitian sandwich** of the biquaternion algebra, also called the **bilinear sandwich**, is the operator
 
 $$
 \Theta_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},\qquad \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*},
 $$
 
-the two-sided operator whose right factor is the Hermitian conjugate of its left factor. It is the operator that carries the Lorentz group on the algebra: on the norm-one slice it acts on the anti-Hermitian and Hermitian subspaces by the proper orthochronous Lorentz group, and on the full group of units it is that action composed with a dilation.
+the sandwich — the default sandwich of the corpus — whose right factor is the Hermitian conjugate of its left factor. It is the operator that carries the Lorentz group on the algebra: on the norm-one slice it acts on the anti-Hermitian and Hermitian subspaces by the proper orthochronous Lorentz group, and on the full group of units it is that action composed with a dilation.
 
 The polar decomposition writes an element of non-vanishing norm as four factors,
 
@@ -22,9 +22,9 @@ $$
 
 the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\psi\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: **what does each factor do to the operator?** The answer is read one factor at a time, and the phase does nothing.
 
-The article is the vector-side companion of *The Polar Decomposition of a N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*.
+The article is the vector-side companion of *The Polar Decomposition of a N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion*.
 
-The plan is the following. §*The Sandwich of the Word* proves the multiplicativity and the closed form $\Theta_{\tilde Q}=r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. The exponent bookkeeping is in *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Vanishing of the Modulus* records the degenerate case. The article closes with the summary, the notation and the readings.
+The plan is the following. §*The Sandwich of the Word* proves the multiplicativity and the closed form $\Theta_{\tilde Q}=r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. The exponent bookkeeping is in *The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion*. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Vanishing of the Modulus* records the degenerate case. The article closes with the summary, the notation and the readings.
 
 ## Conventions
 
@@ -483,7 +483,7 @@ $$
 \operatorname{spec}\Theta_{\tilde Q}
 =\bigl\{\lambda_+\bar\lambda_+,\ \lambda_+\bar\lambda_-,\ \lambda_-\bar\lambda_+,\ \lambda_-\bar\lambda_-\bigr\}.
 $$
-The sandwich is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\rho\otimes\bar\rho$, the complexified vector representation: the vector weights are the sums of the two spinor weights. The exponent reading of this doubling is in *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*.
+The sandwich is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\rho\otimes\bar\rho$, the complexified vector representation: the vector weights are the sums of the two spinor weights. The exponent reading of this doubling is in *The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion*.
 
 The image of the sandwich on the group of units is $CO^{+}(1,3)$, the kernel is $U(1)$, and the isometry slice is $r=1$, where the image is $SO^{+}(1,3)$. On the norm-one slice the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$. On the null cone the sandwich survives as an operator of complex rank one, with image the line spanned by $\tilde Q\tilde Q^{*}$.
 
@@ -525,7 +525,7 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 ## Further Reading
 
 - [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.
-- [The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the operator exponential, the doubling rule and the cancellation of the phase.
+- [The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the operator exponential, the doubling rule and the cancellation of the phase.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.

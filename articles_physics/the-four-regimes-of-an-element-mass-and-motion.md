@@ -196,7 +196,7 @@ The table does not supply a dynamics. It does not say how an element moves from 
 
 The table does not say that the non-zero nilpotents are physical. On the real material slice they are absent; in the full algebra they are the fermionic ladder, and the corpus's reading of them is algebraic, not a claim about physical statistics.
 
-The table does not say that the cells are Lorentz invariant. The norm is invariant under a norm-one dagger sandwich, and the discriminant is not. A boost preserves $N$ and changes $B$, so it moves a massive element along its mass shell; in particular, it moves a massive element from the rest frame $\Sigma_{10}$ into $\Sigma_{11}$. The mass shell and the light cone are Lorentz invariant; the cells are not. A cell is a spectral type at an instant, not an orbit of the Lorentz group.
+The table does not say that the cells are Lorentz invariant. The norm is invariant under a norm-one bilinear sandwich, and the discriminant is not. A boost preserves $N$ and changes $B$, so it moves a massive element along its mass shell; in particular, it moves a massive element from the rest frame $\Sigma_{10}$ into $\Sigma_{11}$. The mass shell and the light cone are Lorentz invariant; the cells are not. A cell is a spectral type at an instant, not an orbit of the Lorentz group.
 
 ## Physical Interpretations
 

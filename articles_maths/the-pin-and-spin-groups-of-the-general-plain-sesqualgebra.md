@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The product of the general plain sesqualgebra is $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$, and its scalar value is the positive definite Hermitian form $\langle\tilde S,\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_1^{*}\tilde S)$ (*Introduction to the General Plain Sesqualgebra*, *The Four General Products and Their Relations over the Biquaternion Algebra*). The two-sided operator of the product is the dagger sandwich $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$, and the question of this article is the one that the two bilinear twins answer with a level set of a scalar form: **for which parameters is $\Theta_{\tilde Q}$ an isometry of the form?** (*Two-Sided Operators on the General Plain Sesqualgebra*).
+The product of the general plain sesqualgebra is $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$, and its scalar value is the positive definite Hermitian form $\langle\tilde S,\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_1^{*}\tilde S)$ (*Introduction to the General Plain Sesqualgebra*, *The Four General Products and Their Relations over the Biquaternion Algebra*). The two-sided operator of the product is the bilinear sandwich $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$, and the question of this article is the one that the two bilinear twins answer with a level set of a scalar form: **for which parameters is $\Theta_{\tilde Q}$ an isometry of the form?** (*Two-Sided Operators on the General Plain Sesqualgebra*).
 
 The answer is not a shell. The operator is an isometry exactly when its parameter lies in the **$*$-unitary slice** $U=\{\tilde Q : \tilde Q^{*}\tilde Q=e_{t}\}$, and this article reads the pair that the condition defines: the **pin group** $\mathrm{Pin}=U\cong \mathrm{U}(2)$ of the isometry parameters and the **spin group** $\mathrm{Spin}=\mathrm{SU}(2)$ of its determinant-one part. Both are groups of units of the algebra, compact, of real dimensions four and three. The assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ is a group homomorphism whose kernel on the pin group is the central circle $\mathrm{U}(1)e_{t}$, so the image is the inner automorphism group $\mathrm{U}(2)/\mathrm{U}(1)\cong PU(2)\cong SO(3)$, and the restriction to the spin group is the classical two-to-one cover of that rotation group.
 
@@ -16,7 +16,7 @@ $$
 \langle\tilde S,\tilde Q_1\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1^{*}\tilde S\bigr)=\sum_\mu Q_{1\mu}^{*}S_\mu,
 $$
 
-Hermitian, positive definite, of Gram matrix the identity in the basis. The **two-sided operator** of $\tilde Q$ is $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$, the dagger sandwich of the corpus; the assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ is multiplicative in the parameter, $\Theta_{\tilde Q\tilde{Q}_3}=\Theta_{\tilde Q}\circ\Theta_{\tilde{Q}_3}$. The **$*$-unitary slice** is
+Hermitian, positive definite, of Gram matrix the identity in the basis. The **two-sided operator** of $\tilde Q$ is $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$, the bilinear sandwich of the corpus; the assignment $\tilde Q\mapsto\Theta_{\tilde Q}$ is multiplicative in the parameter, $\Theta_{\tilde Q\tilde{Q}_3}=\Theta_{\tilde Q}\circ\Theta_{\tilde{Q}_3}$. The **$*$-unitary slice** is
 
 $$
 U=\{\tilde Q\in\mathbb{B} : \tilde Q^{*}\tilde Q=e_{t}\},
@@ -168,7 +168,7 @@ The general plain sesquilinear form $\langle\tilde S,\tilde Q_1\rangle_{*}=\math
 | Symbol | Meaning |
 |---|---|
 | $\langle\tilde S,\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde Q_1^{*}\tilde S)$ | The general plain sesquilinear form; positive definite, Gram matrix the identity |
-| $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ | The two-sided operator of $\tilde Q$; the dagger sandwich |
+| $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ | The two-sided operator of $\tilde Q$; the bilinear sandwich |
 | $\Theta_{\tilde Q\tilde{Q}_3}=\Theta_{\tilde Q}\circ\Theta_{\tilde{Q}_3}$ | Composition law; the assignment is multiplicative in the parameter |
 | $\Theta_{A\tilde Q}=\lvert A\rvert^{2}\Theta_{\tilde Q}$ | Parameter rule for central $A$; the phase is invisible |
 | $U=\{\tilde Q^{*}\tilde Q=e_{t}\}=\mathrm{U}(2)$ | The $*$-unitary slice; real dimension four |

@@ -104,7 +104,7 @@ so the slice acts on the covariants by the conjugation $\Gamma\mapsto \tilde{Q}_
 
 *Proof.* $\mathfrak{b}_0$ is invariant; a Hermitian form $a_0\mathfrak{b}_0+\sum_k a_k\,ib_k$ is invariant exactly when the triplet $(a_1,a_2,a_3)$ is fixed by every $R\in SO(3)$, hence is zero, since the adjoint representation of $SO(3)$ on $\mathbb{R}^3$ has no nonzero invariant vector.
 
-**Remark (off the slice).** For an invertible $\tilde{Q}$ outside the slice the transformation of the covariants is the two-sided operator $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the General Plain Sesqualgebra*, and the failure of form preservation is the horizontal defect of *Mixed Inner Conjugation and Hermitian Adjoint*: the covariant transforms by the two-sided operator and the form by the right multiplication by $\tilde{Q}\tilde{Q}^{*}$, so the slice is the exact locus on which the covariants are permuted by a conjugation and the forms are preserved.
+**Remark (off the slice).** For an invertible $\tilde{Q}$ outside the slice the transformation of the covariants is the sandwich $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the General Plain Sesqualgebra*, and the failure of form preservation is the horizontal defect of *Mixed Inner Conjugation and Hermitian Adjoint*: the covariant transforms by the sandwich and the form by the right multiplication by $\tilde{Q}\tilde{Q}^{*}$, so the slice is the exact locus on which the covariants are permuted by a conjugation and the forms are preserved.
 
 ## Worked Examples
 

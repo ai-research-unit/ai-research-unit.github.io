@@ -10,7 +10,7 @@ $$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
 $$
 
-The two-sided operator of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion*. This article reads the one-sided factors: the polar word
+The sandwich of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *The Sandwich of a N-Regular, Spectrally Regular Biquaternion*. This article reads the one-sided factors: the polar word
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -20,7 +20,7 @@ $$
 
 with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\psi\ge0$, $\theta\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.
 
-The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\psi/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided sandwich pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion* and *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*.
+The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\psi/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided sandwich pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion* and *The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion*.
 
 The one-sided operator is $\mathbb{C}$-linear, and the map from the parameter to the operator is faithful. It multiplies the complex norm by $\Rho^{2}$. It does not, in general, preserve the two real forms $\mathbb{M}_+$ and $\mathbb{M}_-$. Its block form in the splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is
 
@@ -689,7 +689,7 @@ $$
 
 the image of $\mathbb{M}_-$ has $*$-eigenvalue $-\exp(-2i\alpha)$, and the sectors are reached exactly at $\alpha\equiv0$ and $\alpha\equiv\pi/2$ modulo $\pi$.
 
-The scale acts as $r$, not $r^{2}$. The phase acts as $\exp(i\alpha)$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion* and *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*.
+The scale acts as $r$, not $r^{2}$. The phase acts as $\exp(i\alpha)$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion* and *The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion*.
 
 In the eigenbasis the left multiplication is diagonal,
 $$
@@ -740,7 +740,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 
 ## Further Reading
 
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich, the factor-by-factor doubling rule and the cancellation of the phase.
+- [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich, the factor-by-factor doubling rule and the cancellation of the phase.
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the operator exponential, the half-spin theorem and the weights.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two Peirce spinor spaces and the diagonal action used here.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.

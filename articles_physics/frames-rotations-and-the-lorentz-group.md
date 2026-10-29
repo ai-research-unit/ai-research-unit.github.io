@@ -4,13 +4,13 @@
 
 A frame is a choice of axes, and a motion is a change of frame. The biquaternion algebra supplies both: the norm fixes the form, the unit-norm slice is the space of spin frames, and the sandwich by a unit is the change of frame. The Lorentz group is not a subset of the algebra; it is the quotient of the norm-one group by the central sign, and the algebra carries the double cover.
 
-The article reads the group that carries the motions, the sandwich that acts, the rotations, the boosts, the orbits and the reflections. Its thesis is that a frame is a unit up to sign, that a change of frame is the dagger sandwich, that the interval is the invariant, that a rotation is an algebra automorphism and that a boost is a motion which is not one. It proves nothing; the theorems are in the mathematics articles of the source table.
+The article reads the group that carries the motions, the sandwich that acts, the rotations, the boosts, the orbits and the reflections. Its thesis is that a frame is a unit up to sign, that a change of frame is the bilinear sandwich, that the interval is the invariant, that a rotation is an algebra automorphism and that a boost is a motion which is not one. It proves nothing; the theorems are in the mathematics articles of the source table.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The double covers, the rotor, the dagger sandwich, its kernel, its scaling and its action on the remarkable subspaces | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
+| The double covers, the rotor, the bilinear sandwich, its kernel, its scaling and its action on the remarkable subspaces | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 | The orbits, the rank invariant, the mass shell and the light cone | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 | The reflection formula and the Cartan–Dieudonné theorem | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 | The algebra automorphisms and the real automorphism group | [Biquaternion Automorphisms and Derivations](../articles_maths/biquaternion-automorphisms-and-derivations.html) |
@@ -60,7 +60,7 @@ $$
 $$
 the second component consisting of the conjugate-linear automorphisms.
 
-**The automorphism group is the same abstract group with a different action.** The Lorentz group appears twice: as the quotient of the norm-one group, acting on the material sector by the dagger sandwich, and as the automorphism group of the algebra, acting by inner automorphisms. The two actions agree on the $*$-unitary slice, where the inverse and the Hermitian conjugate coincide; they differ on a boost. Interpreted physically, the same group can be a change of frame and a symmetry of the algebraic structure, and the two interpretations are not the same map.
+**The automorphism group is the same abstract group with a different action.** The Lorentz group appears twice: as the quotient of the norm-one group, acting on the material sector by the bilinear sandwich, and as the automorphism group of the algebra, acting by inner automorphisms. The two actions agree on the $*$-unitary slice, where the inverse and the Hermitian conjugate coincide; they differ on a boost. Interpreted physically, the same group can be a change of frame and a symmetry of the algebraic structure, and the two interpretations are not the same map.
 
 **The boundary of the interpretation.** The identification of $PGL_2(\mathbb{C})$ with $SO^{+}(1,3)$ is an isomorphism of real Lie groups, not of complex groups; the complex group is $SO(3,\mathbb{C})$. A physical Lorentz transformation is the action on $\mathbb{M}_{-}$, not the inner automorphism, and the article does not identify the two.
 
@@ -68,7 +68,7 @@ the second component consisting of the conjugate-linear automorphisms.
 
 ### The Action
 
-For a unit $\tilde Q$, the **dagger sandwich** is
+For a unit $\tilde Q$, the **bilinear sandwich** is
 $$
 \mathrm{H}_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},
 \qquad
@@ -242,7 +242,7 @@ The article does not derive the Lorentz group from the algebra: it reads the gro
 
 ## Summary
 
-The norm-one group $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group, and its compact part $Sp(1)\cong SU(2)$ is the double cover of the spatial rotations. The Lorentz group is the quotient by the central sign, not a subgroup of the quaternion layer; the algebra carries the spin frame. The dagger sandwich $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ is the change of frame: it preserves the two sectors, scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, has kernel $\mathrm{U}(1)e_t$ on the algebra and $\{\pm e_t\}$ on the norm-one slice, and acts as $SO^{+}(1,3)$ there. The interval is the frame-independent object, and the central phase is not a frame.
+The norm-one group $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group, and its compact part $Sp(1)\cong SU(2)$ is the double cover of the spatial rotations. The Lorentz group is the quotient by the central sign, not a subgroup of the quaternion layer; the algebra carries the spin frame. The bilinear sandwich $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ is the change of frame: it preserves the two sectors, scales the norm by $|\langle\tilde Q\rangle_{\natural}|^{2}$, has kernel $\mathrm{U}(1)e_t$ on the algebra and $\{\pm e_t\}$ on the norm-one slice, and acts as $SO^{+}(1,3)$ there. The interval is the frame-independent object, and the central phase is not a frame.
 
 A rotation is a $*$-unitary rotor, an algebra automorphism, with the angle halved in the element and the double cover $Sp(1)\to SO(3)$. A boost is a Hermitian norm-one rotor, not $*$-unitary, and not an automorphism: it preserves the interval and the sectors but not the product, the centre or the vector subspace. Two non-collinear boosts compose to a boost and a Wigner rotation. The orbits are the future and past mass shells and the future and past light cones; a null vector is a zero divisor and has no rest frame. The reflections $\rho_v$ are odd isometries of the vector subspace, images of the Pin group and not inner automorphisms: they are Hermitian sandwiches by the spacelike unit vectors, equal to minus the inner automorphisms; parity lies outside the connected Lorentz group, and chirality exchange is not an element of the group at all.
 
@@ -252,7 +252,7 @@ A rotation is a $*$-unitary rotor, an algebra automorphism, with the angle halve
 | --- | --- |
 | $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ | norm-one group; double cover of $SO^{+}(1,3)$ |
 | $Sp(1)=S^{3}\cong SU(2)$ | unit quaternions; double cover of $SO(3)$ |
-| $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ | dagger sandwich; the change of frame |
+| $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ | bilinear sandwich; the change of frame |
 | $\mathrm{U}(1)e_t$ | kernel of the sandwich on the algebra |
 | $\langle\tilde Q\rangle_{\natural}$ | biquaternion norm; the interval on $\mathbb{M}_{-}$ |
 | $\tilde u=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ | rotation rotor |

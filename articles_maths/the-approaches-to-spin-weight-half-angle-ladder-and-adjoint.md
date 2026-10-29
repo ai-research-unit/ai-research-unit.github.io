@@ -132,7 +132,7 @@ For the spinor, $m=\pm\tfrac12$: the rotor acts by $e^{\pm i\theta/2}$, and the 
 The biquaternion has two operators attached to a unit element $\tilde u$:
 
 - the **one-sided** operator $L_{\tilde u}$, left multiplication;
-- the **two-sided** operator $\Theta_{\tilde u}$, the sandwich $X\mapsto\tilde uX\tilde u^{*}$, whose infinitesimal form is the adjoint action $\operatorname{ad}_{\vec u}$.
+- the **sandwich** $\Theta_{\tilde u}$, the operator $X\mapsto\tilde uX\tilde u^{*}$, whose infinitesimal form is the adjoint action $\operatorname{ad}_{\vec u}$.
 
 The corpus's theorem is exact:
 
@@ -444,7 +444,7 @@ For $M_5$ with $\lambda=(3,2)$, this is $(X-2)^3(X-\tfrac34)^2$, as the content 
 
 - The corpus's approaches to spin are four readings of one invariant. The invariant is $j=\lambda_{\max}(\rho(h))/2$ for a grading $h$; with $S=h/2$, the spin is the highest weight of $S$.
 - The weight reading gives $j=\lambda_{\max}/2$; the biquaternion root $h=2e-1$ gives $j=\tfrac12$ on the spinor and $j=1$ on the traceless part.
-- The half-angle reading gives the exponent $\theta/2$ of the rotor. The coefficient of $\theta$ in $\theta/2$ is not the spin; it coincides with it only at $j=\tfrac12$. The one-sided operator produces the half-angle; the two-sided sandwich produces the full angle, because $\operatorname{ad}=2[\times]$.
+- The half-angle reading gives the exponent $\theta/2$ of the rotor. The coefficient of $\theta$ in $\theta/2$ is not the spin; it coincides with it only at $j=\tfrac12$. The one-sided operator produces the half-angle; the sandwich produces the full angle, because $\operatorname{ad}=2[\times]$.
 - The ladder reading gives $j=(\ell-1)/2$. The triple is the certificate that the weight string is full, not a new definition.
 - The adjoint reading gives integer spins: the vector part has weights $\pm1,0$, spin $1$; the factor $\tfrac12$ in $J_k=\tfrac12\operatorname{ad}_{i\vec e_k}$ is the Hermitian normalisation, not a half-angle.
 - In general $n$, the Jordan type $\lambda$ gives the defining content $\bigoplus_iW_{(\lambda_i-1)/2}$, the spin $(\lambda_1-1)/2$, the adjoint spin $\lambda_1-1=2j$, and the elementary list $\{0,(\lambda_1-1)/2,\lambda_1-1\}$. The possible lists are the principal lists of $M_1,\dots,M_n$; the possible defining spins are $0,\tfrac12,\dots,\tfrac{n-1}{2}$.
@@ -471,7 +471,7 @@ For $M_5$ with $\lambda=(3,2)$, this is $(X-2)^3(X-\tfrac34)^2$, as the content 
 | $p(n)$ | number of partitions of $n$ |
 | $\Sigma_{ij}$ | polar cells of $\mathbb{B}$ |
 | $L_{\tilde u}$ | one-sided operator (left multiplication) |
-| $\Theta_{\tilde u}$ | two-sided operator (sandwich) |
+| $\Theta_{\tilde u}$ | sandwich |
 
 ## Further Reading
 

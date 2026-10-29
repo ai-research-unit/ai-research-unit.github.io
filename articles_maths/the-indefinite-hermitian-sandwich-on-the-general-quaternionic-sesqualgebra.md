@@ -8,11 +8,11 @@ $$
 H_{A}(T) = A\,T\,A^{\dagger} ,
 $$
 
-and this operator is the subject of the article. It is the biquaternion instance of *The Hermitian Sandwich on a Krein Space*, and the indefinite counterpart of the dagger sandwich $\Theta_{\tilde Q_1}(\tilde Q_2) = \tilde Q_1\tilde Q_2\tilde Q_1^{*}$ of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
+and this operator is the subject of the article. It is the biquaternion instance of *The Hermitian Sandwich on a Krein Space*, and the indefinite counterpart of the bilinear sandwich $\Theta_{\tilde Q_1}(\tilde Q_2) = \tilde Q_1\tilde Q_2\tilde Q_1^{*}$ of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
 
 The two sandwiches must not be confused, and the algebra makes the difference visible in coordinates. With the definite adjoint the sandwich is always an operator of the algebra's own family $\{\Theta_{\tilde Q_1}\}$ and the operator is quadratic in the parameter; with the indefinite adjoint the sandwich of a $J$-unitary parameter is an **inner automorphism of the operator algebra**, and the parameter families that are $J$-unitary are exactly the ones computed in *The Krein Isometry Group and Its Cartan Decomposition*. The article determines the sandwich laws, the preservation of the indefinite form, of $J$-self-adjointness and of $J$-positivity, the transport of the kernel and the image, the parameters coming from the algebra, and the contrast with the definite case.
 
-The forms and the algebra are *The Biquaternion Algebra*; the definite form and the dagger sandwich are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and *Two-Sided Operators on the General Plain Sesqualgebra*; the indefinite form and its symmetry are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and *The Fundamental Symmetry of the Form*; its adjoint and the positive cone of the indefinite order are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra* and *The Krein Isometry Group and Its Cartan Decomposition*; the group of $J$-unitary parameters is *The Krein Isometry Group and Its Cartan Decomposition*; and the general operator is *The Hermitian Sandwich on a Krein Space*.
+The forms and the algebra are *The Biquaternion Algebra*; the definite form and the bilinear sandwich are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and *Two-Sided Operators on the General Plain Sesqualgebra*; the indefinite form and its symmetry are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and *The Fundamental Symmetry of the Form*; its adjoint and the positive cone of the indefinite order are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra* and *The Krein Isometry Group and Its Cartan Decomposition*; the group of $J$-unitary parameters is *The Krein Isometry Group and Its Cartan Decomposition*; and the general operator is *The Hermitian Sandwich on a Krein Space*.
 
 $$
 \langle\tilde W,\tilde Q_1\rangle_{\natural*} = (J\tilde Q_1,\tilde W) , \qquad J^{2} = \mathrm{id}, \qquad E^{2} = \mathrm{I}_4 .
@@ -34,9 +34,9 @@ and the fundamental symmetry is the diagonal operator $J = \mathrm{diag}(1,-1,-1
 
 **Remark (four forms, not one).** The quaternion norm $\langle\tilde Q_1,\tilde Q_1\rangle_{\natural} = \sum_\mu Q_{1,\mu}^{2}$ is a complex quadratic form, isotropic on the null cone of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*; the definite form $(\cdot,\cdot)$ is positive definite; the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$ is an indefinite Hermitian structure of signature $(1,3)$, split as $\mathbb{B} = \mathbb{C}_{\mathbb{B}}\perp_{K}\mathbb{V}_{\mathbb{B}}$ into the centre line and the vector subspace; and the general quaternionic bilinear form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* is another object again. The four must not be interchanged, and it is the general quaternionic sesquilinear form that defines the adjoint of this article.
 
-## The Dagger Sandwich
+## The Indefinite Hermitian Sandwich
 
-**Definition.** For operators $A,T\in\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ the **indefinite Hermitian sandwich**, or **dagger sandwich**, is
+**Definition.** For operators $A,T\in\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ the **indefinite Hermitian sandwich**, the bilinear sandwich read with the indefinite form, is
 
 $$
 H_{A}(T) = A\,T\,A^{\dagger} , \qquad A^{\dagger} = JA^{*}J .
@@ -69,7 +69,7 @@ $$
 
 *Proof.* $(\alpha A)^{\dagger} = J(\alpha A)^{*}J = \bar\alpha\,JA^{*}J = \bar\alpha\,A^{\dagger}$, so $(\alpha A)T(\bar\alpha A^{\dagger}) = \lvert\alpha\rvert^{2}ATA^{\dagger}$.
 
-**Remark (linear in the argument, quadratic in the parameter).** The assignment $T\mapsto H_A(T)$ is linear in the argument and homogeneous of degree two in the parameter, and it is blind to the phase of the parameter. This is the operator-level form of the rule that the two-sided operator $\Theta_{\tilde Q_1}$ is quadratic in $\tilde Q_1$ (*Two-Sided Operators on the General Plain Sesqualgebra*), and it is the reason the sandwich is a map of the projective parameter, not a representation of the algebra.
+**Remark (linear in the argument, quadratic in the parameter).** The assignment $T\mapsto H_A(T)$ is linear in the argument and homogeneous of degree two in the parameter, and it is blind to the phase of the parameter. This is the operator-level form of the rule that the sandwich $\Theta_{\tilde Q_1}$ is quadratic in $\tilde Q_1$ (*Two-Sided Operators on the General Plain Sesqualgebra*), and it is the reason the sandwich is a map of the projective parameter, not a representation of the algebra.
 
 ## Preservation of the Form and of J-Positivity
 

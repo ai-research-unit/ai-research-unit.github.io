@@ -2,368 +2,491 @@
 
 ## Introduction
 
-**An algebra alone has no spin. Every definition of the spin of an algebra is a definition of a spin assignment: it names a carrier, a direction, and a rule.** The corpus's definition uses a spin pair $(U,V)$ in the algebra and the triple $(S,U,V)$; this article lists the other general definitions, states what data each needs, and shows that each applies to every finite-dimensional algebra with the stated data.
+**An algebra alone has a finite list of possible spins.** The list is finite because every definition that uses only the algebra is bounded by its dimension. The list is not canonical: different definitions select different subsets of the same range. This article states the definitions independently, computes their lists on six algebras, and compares the answers. It does not adopt one definition as the definition.
 
-**The two ingredients.** A spin has a grading and a ladder. The grading is a semisimple element $S$; its eigenvalues are the weights; the spin is the number of weights minus one over two, which is the top weight when the string is normalized to unit step. The ladder is a nilpotent $u$; its Jordan chain has a length; the spin is half the length minus one half. The corpus's triple is the alignment of the two inside the algebra. The general definitions below supply one or both ingredients, sometimes in the endomorphism algebra of a carrier rather than in the algebra itself.
+**What the list is not.** It is not a single number and not a single formula. The top weight of a chosen carrier, the top weight of the adjoint carrier, the length of a Jordan ladder, the number of spectral levels, and the path length of a quiver give different numbers for the same algebra. The article keeps them apart, states what data each one needs, and records where each one fails.
 
-**The obstruction.** Spin is not Morita invariant. $M_2(\mathbb{C})$ and $\mathbb{C}$ are Morita equivalent, but the biquaternion has a spin-$\tfrac12$ carrier and $\mathbb{C}$ has none of nonzero spin. Hence no definition that depends only on the Morita class can be the physical spin. The definitions split into carrier-dependent ones, which give the physical spin, and Morita-invariant ones, which give a shadow that is $0$ for matrix algebras.
+**The corpus's approaches.** The polar-operator articles read the coefficient of the half-angle in the exponential. The integer-spin article reads the top weight of the adjoint action on the material sector. The principal-pair articles read the top weight of the triple. The articles on the individual algebras read the presence or absence of a ladder or a triple. These are four different readings, and they do not agree on every algebra. The article treats each independently and compares them in §12.
 
-**The answer.** There is no single general definition. There is a list of definitions, each with its data and its range. The **spin spectrum** of an algebra is the set of values they produce on its elementary carriers; a single number requires a choice of carrier. The article ends with a comparison table and a recommendation.
+**The criterion of usefulness.** A definition is not an end in itself. The biquaternion sector has three observed spin values: $0$, $\tfrac12$, $1$. Since $\mathbb{B}\cong M_2(\mathbb{C})$, a definition is pertinent for this sector only if, applied to $M_2(\mathbb{C})$, it produces exactly these three values. A definition that misses one, adds one, or gives a different one is non-pertinent for the sector, whatever its interest elsewhere. §14 applies this test to every definition in the article.
 
-The conventions are those of the corpus. The field $k$ is algebraically closed of characteristic zero; $A$ is a nonzero finite-dimensional unital associative $k$-algebra; $V$ is a finite-dimensional left $A$-module; $M_n=M_n(\mathbb{C})$; $\mathbb{B}$ is the biquaternion; the indexing is $1$-based. No Clifford algebra is used, and no external matrix formalism beyond the examples.
+**The six algebras.** The test cases are the complex numbers $\mathbb{C}$, the split-complex numbers $\mathbb{D}$, the quaternions $\mathbb{H}$, and the matrix algebras $M_2(\mathbb{C})$, $M_3(\mathbb{C})$, $M_5(\mathbb{C})$. The first three are real algebras; the last three are complex algebras. The field is stated in every table, because the dimension of $\mathbb{C}$ is $2$ over $\mathbb{R}$ and $1$ over $\mathbb{C}$.
 
-## 1. The Two Ingredients
-
-### The Grading
-
-**Definition (grading datum).** A **grading datum** on $(A,V)$ is a semisimple endomorphism $S\in\operatorname{End}_k(V)$ with real eigenvalues. The **weights** are the eigenvalues, counted with multiplicity; the **weight string** is the multiset; the **top weight** is $\lambda_{\max}=\max\operatorname{spec}S$; the **width** is $w=\lambda_{\max}-\lambda_{\min}$. The datum is **arithmetic** with step $d>0$ if the distinct eigenvalues are $\mu_1<\cdots<\mu_r$ with $\mu_{i+1}-\mu_i=d$. It is **full** if the distinct eigenvalues are exactly $jd,(j-1)d,\dots,-jd$ for some $j\in\tfrac12\mathbb{Z}_{\ge0}$; equivalently, the spectrum is symmetric and arithmetic with step $d$, and $r=2j+1$.
-
-**Definition (spectral spin).** For a full grading datum, the **spin** is $j=(r-1)/2$; the **top weight** is $jd$. For an arithmetic datum that is not full, the **width spin** is $w/(2d)=(r-1)/2$; it is a coarse substitute, not the spin. The width $w/2=jd$ is the top weight, not the spin, unless $d=1$. For a datum that is not arithmetic, only the width is defined.
-
-**Remark (the factor of two).** The corpus also writes the root $h=2S$. The weights of $h$ are $2j,2j-2,\dots,-2j$, and the spin is half the top weight of $h$. The two notations describe the same triple. This article writes $S$ when the weights are the spin weights and $h$ when they are the root weights.
-
-**Remark (the half-angle).** The rotor is $\exp(\theta h/2)$. The factor $\tfrac12$ is the normalization of the root $h=2S$; it is not the spin. For a spin element $S$ normalized to unit step, the spin is the highest weight, $j$; the factor $\tfrac12$ is present for every $j$. At $j=\tfrac12$ the number $\tfrac12$ and the spin coincide, and at $j=1$ the factor is still $\tfrac12$ while the spin is $1$. The coincidence at $\tfrac12$ is numerical, not structural.
-
-### The Ladder
-
-**Definition (ladder datum).** A **ladder datum** on $(A,V)$ is a nilpotent $u\in\operatorname{End}_k(V)$, or $u\in A$ acting on $V$, with **nilpotency index** $\ell=\operatorname{ind}(u)=\min\{m:u^m=0\}$. The **chain length** is $\ell$; the **ladder spin** is $(\ell-1)/2$. For a general endomorphism $x$, the Jordan–Chevalley decomposition $x=s+n$ gives the grading datum $s$ and the ladder datum $n$; the ladder spin of $n$ is the number.
-
-**Definition (spin datum).** A **spin datum** on $(A,V)$ is a pair $(S,u)$ with $S$ semisimple, $u$ nilpotent, $[S,u]=u$, and the spectrum of $S$ on the chain generated by $u$ equal to $j,j-1,\dots,-j$. The **spin** is $j$. The third element $v$ of the triple is determined by the chain; the corpus's pair $(U,V)$ gives $S=\tfrac12[U,V]$, $u=U$, $v=V$.
-
-**Proposition (the chain lemma).** Let $u\in\operatorname{End}_k(V)$ be nilpotent, with a Jordan chain $x_1,\dots,x_\ell$ such that $ux_1=0$ and $ux_k=x_{k-1}$ for $k\ge2$. Put $j=(\ell-1)/2$ and define
+**The finite range.** Let $A$ be a finite-dimensional unital $k$-algebra and $d=\dim_k A$. Every definition in §§2–8 that uses only $A$, its modules of dimension at most $d$, and the complexification when the definition requires it, produces a subset of
 $$
-Sx_k=(j-k+1)x_k,\qquad
-vx_k=k(\ell-k)x_{k+1}\ (k<\ell),\qquad
-vx_\ell=0 .
+\left\{0,\ \tfrac12,\ 1,\ \tfrac32,\ \ldots,\ d-1\right\}.
 $$
-Then $(S,u,v)$ is a spin triple on the span of the chain. In particular, every nilpotent endomorphism carries a spin datum in $\operatorname{End}_k(V)$.
+The union over those definitions is therefore finite. The proof is a bound in each case: a simple module has dimension at most $d$; a nilpotent has index at most $d$; a Peirce chain has length at most $d$; a quiver path has length at most $d$; a semisimple element has at most $d$ distinct eigenvalues; a spin triple has a carrier of dimension at most $d$, so its defining spin is at most $(d-1)/2$ and its adjoint top is at most $d-1$. This is the precise sense in which the algebra alone has a finite list.
 
-*Proof.* The three relations are checked on the chain. For $k\ge2$, $[S,u]x_k=Sx_{k-1}-uSx_k=(j-k+2)x_{k-1}-(j-k+1)x_{k-1}=x_{k-1}=ux_k$; for $k=1$, $[S,u]x_1=0=ux_1$. Next, $[S,v]x_k=k(\ell-k)(j-k)x_{k+1}-(j-k+1)k(\ell-k)x_{k+1}=-vx_k$. Finally $[u,v]x_k=k(\ell-k)x_k-(k-1)(\ell-k+1)x_k=(2j-2k+2)x_k=2Sx_k$, with the end cases read from $vx_\ell=0$ and $vx_1=(\ell-1)x_2$. The weights of $S$ are $j,j-1,\dots,-j$.
+**What is excluded from the list.** A definition that quantifies over all representations of an external Lie algebra, or that uses an unnormalized continuous scale, can produce infinitely many values. The highest weight over all representations of $\mathfrak{su}(2)$ is the standard example: every $j\ge0$ occurs. Such a definition is a definition of a representation, not of the algebra's own list. The article marks those cases.
 
-**The four cases.** The two ingredients can lie in the algebra, in the carrier's endomorphism algebra, or only one of them can lie in the algebra. The table records the cases used below.
+The conventions are those of the corpus. The field is $\mathbb{R}$ or $\mathbb{C}$ as stated. The indexing is $1$-based. Matrix notation is used only for the matrix algebras. No Clifford algebra is used. The biquaternion is $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$.
 
-| algebra | semisimple grading | nilpotent ladder in $A$ | aligned triple in $A$ | carrier spin |
-|---|---|---|---|---|
-| $\mathbb{B}$ | yes, $\tfrac12\tilde\Xi$ in $A$ | yes, $\vec\Upsilon_-$ | yes | $\tfrac12$ and $1$ |
-| $M_n$ | yes, $S$ in $A$ | yes, $E_{12}+\cdots$ | yes | $(\lambda_1-1)/2$ and $\lambda_1-1$ |
-| $\mathbb{C}\times\mathbb{C}$ | yes, $(1,-1)$ in $A$ | no | no | $0$ |
-| dual numbers | no nontrivial, only scalars | yes, $\varepsilon$ | no | $\tfrac12$ in $\operatorname{End}_k(A)$ |
-| path algebra $A_2$ | yes, $e_1$ (the Euler grading) | yes, the arrow | no | $\tfrac12$ in $\operatorname{End}_k(A)$ |
+## 1. The Six Algebras
 
-The biquaternion and the matrix algebra have both ingredients and their alignment inside the algebra. The split complex numbers have a semisimple element but no ladder, so the spectral label is not a physical spin. The dual numbers have a ladder and no nontrivial grading; the path algebra has both ingredients but no alignment. In both, the chain lemma produces the triple in the endomorphism algebra of the regular representation. This is the precise sense in which the triple is a choice: it is the alignment, and the alignment can be inside $A$ or only inside $\operatorname{End}_k(V)$.
+**The algebras.** The complex numbers are $\mathbb{C}=\mathbb{R}[i]/(i^2+1)$. The split-complex numbers are $\mathbb{D}=\mathbb{R}[j]/(j^2-1)\cong\mathbb{R}\times\mathbb{R}$. The quaternions are $\mathbb{H}=\mathbb{R}\{1,e_x,e_y,e_z\}$ with $e_x^2=e_y^2=e_z^2=-1$ and $e_xe_y=e_z$, cyclically. The matrix algebras are $M_n=M_n(\mathbb{C})$.
 
-**Result.** The triple is the alignment of the grading and the ladder. It is not needed for the width or the length, but it is needed for the spin in the corpus's sense. The chain lemma produces the alignment in $\operatorname{End}_k(V)$ for any nilpotent; the restriction to $A$ is a stronger choice.
+**The basic invariants.** The table records the field, the dimension, the simple modules, the nilpotents, the idempotents, and whether a spin triple exists in the algebra itself.
 
-## 2. The Obstruction: No Morita-Invariant Spin
+| algebra | field | $\dim_k A$ | simple modules | nilpotents | idempotents | triple in $A$ |
+|---|---|---|---|---|---|---|
+| $\mathbb{C}$ | $\mathbb{R}$ | $2$ | $\mathbb{C}$ of dimension $2$ | none | $0,1$ | no |
+| $\mathbb{D}$ | $\mathbb{R}$ | $2$ | $\mathbb{R},\mathbb{R}$ of dimension $1$ | none | $0,1,e_+,e_-$ | no |
+| $\mathbb{H}$ | $\mathbb{R}$ | $4$ | $\mathbb{H}$ of dimension $4$ | none | $0,1$ | no |
+| $M_2(\mathbb{C})$ | $\mathbb{C}$ | $4$ | $\mathbb{C}^2$ of dimension $2$ | index $2$ | matrix units | yes |
+| $M_3(\mathbb{C})$ | $\mathbb{C}$ | $9$ | $\mathbb{C}^3$ of dimension $3$ | index $3$ | matrix units | yes |
+| $M_5(\mathbb{C})$ | $\mathbb{C}$ | $25$ | $\mathbb{C}^5$ of dimension $5$ | index $5$ | matrix units | yes |
 
-### Morita Equivalence
+**The two commutative algebras.** $\mathbb{C}$ is a field: every nonzero element is invertible, the only idempotents are $0$ and $1$, and every bracket vanishes. $\mathbb{D}$ is not a field: it has the idempotents $e_\pm=\tfrac12(1\pm j)$ and the zero divisors $1\pm j$. It is still commutative, so every bracket vanishes and every element is central.
 
-**Definition (Morita equivalence).** Two finite-dimensional $k$-algebras $A$ and $B$ are **Morita equivalent** if their categories of finite-dimensional left modules are equivalent. A property is **Morita invariant** if it is preserved by the equivalence.
+**The quaternions.** $\mathbb{H}$ is a division algebra. Its only nilpotent is $0$ and its only idempotents are $0$ and $1$. It has no spin triple in itself: for every $S\in\mathbb{H}$ the eigenvalues of $\operatorname{ad}_S$ are $0$ and $\pm2i\lvert s\rvert$, where $s$ is the imaginary part, and the value $1$ never occurs, so $[S,U]=U$ has no nonzero real solution. The triple exists in the complexification $\mathbb{B}$.
 
-**Theorem (no Morita-invariant spin).** Let $F$ be a Morita-invariant invariant of finite-dimensional $k$-algebras. Then $F(M_2(k))=F(k)$. The biquaternion $\mathbb{B}\cong M_2(\mathbb{C})$ has a carrier of spin $\tfrac12$ and a carrier of spin $1$; $\mathbb{C}$ has no physical spin. Hence no Morita-invariant invariant can be the physical spin.
-
-*Proof.* The algebra $M_2(k)\cong\operatorname{End}_k(k^2)$ is Morita equivalent to $k$: the functor $V\mapsto e_{11}V$ from $M_2$-modules to $k$-vector spaces is an equivalence, with inverse $W\mapsto k^2\otimes_k W$. The simple $M_2$-module $k^2$ corresponds to $k$. A Morita-invariant $F$ therefore assigns the same value to $M_2(k)$ and $k$. But the physical spin of $\mathbb{B}\cong M_2(\mathbb{C})$ is computed on the carrier $k^2$, of dimension $2$ and spin $\tfrac12$, and on the adjoint, of spin $1$; while $\mathbb{C}$ has only one-dimensional simple modules and no nilpotents, so its physical spin is $0$ under every definition that requires a ladder or a carrier of dimension greater than one. The values differ, and no such $F$ is the physical spin.
-
-**Remark (the two extremes).** The **regular spin** of §5.3 is carrier-dependent and gives $\tfrac12$ for $\mathbb{B}$. The **quiver spin** of §5.4 is Morita invariant and gives $0$ for $\mathbb{B}$. They are the two extremes of the left-module picture; the adjoint carrier adds the value $1$, above both.
-
-**Remark (dimension is not Morita invariant).** The dimension of the simple module is $2$ for $M_2$ and $1$ for $k$, so the dimension definition also distinguishes them. Morita equivalence preserves the category, not the forgetful functor to vector spaces. This is why dimension can see the matrix size.
-
-**Result.** Any definition of the physical spin must name a carrier or a Morita-breaking datum. The algebra alone gives only the Morita-invariant shadow.
-
-## 3. Spectral Definitions
-
-### From an Endomorphism
-
-**Definition.** Let $S\in\operatorname{End}_k(V)$ be semisimple with a full spectrum $jd,(j-1)d,\dots,-jd$. The **spin** is $j=(r-1)/2$; the **top weight** is $jd$. If the spectrum is arithmetic with step $d$ and $r$ distinct eigenvalues but not full, the **width spin** is $w/(2d)=(r-1)/2$.
-
-**The general case.** Every pair $(A,V)$ has $S=0$, with spectrum $\{0\}$ and spin $0$. Every semisimple $S$ with a full spectrum gives a spin. No algebra structure is used beyond the module.
-
-**Example.** In $\mathbb{B}$, take $V=S_+=\mathbb{B}\tilde\Pi_+$ and $S=\tfrac12\tilde\Xi$. The weights are $\pm\tfrac12$; the spin is $\tfrac12$. On $V=\ker\operatorname{tr}$, the weights are $\pm1,0$; the spin is $1$.
-
-**Limitation.** The element $S$ is external data. The definition gives a number for every semisimple $S$, including in a commutative algebra; the top weight is a weight, and the spectral spin is a label, not a physical spin, unless the ladder exists. In $\mathbb{C}\times\mathbb{C}$ the element $S=(1,-1)$ has weights $\pm1$, width $2$ and spectral spin $\tfrac12$, but there is no ladder.
-
-### From a Derivation or a Grading
-
-**Definition.** Let $D\in\operatorname{Der}_k(A)$ and let $V$ be $D$-stable. If $D|_V$ is semisimple, its spectrum is the grading. For a $\mathbb{Z}$-grading $A=\bigoplus_{i\in\mathbb{Z}}A_i$, the **Euler derivation** $D(a)=ia$ for $a\in A_i$ is semisimple, and the degree operator on a graded module gives the weights. If the degrees form a full string $jd,(j-1)d,\dots,-jd$, the **spin** is $j=(r-1)/2$; the top degree is $jd$. For the root grading with degrees $2j,2j-2,\dots,-2j$, the spin is half the top degree. A grading that is not symmetric has a width, not a spin.
-
-**The general case.** The derivation $D=0$ gives spin $0$, so every algebra has the trivial grading. Every derivation has a semisimple part (Jordan–Chevalley in $\operatorname{End}_k(A)$). If $D$ is nilpotent, its semisimple part is $0$, and the spectral definition gives $0$; the ladder definition uses the nilpotent itself.
-
-**Example.** In $\mathbb{B}$, $D=\operatorname{ad}_{\tilde\Xi}$; on $S_+$ the degrees are $\pm1$; on $V$ they are $\pm2,0$. The spins are $\tfrac12$ and $1$.
-
-**Limitation.** A nilpotent derivation, for example $\operatorname{ad}_u$ with $u$ nilpotent, has no nonzero semisimple part; the grading is trivial. The spin, if any, is in the ladder, not the grading. This is the first sign that the two ingredients are independent.
-
-### From the Minimal Polynomial
-
-**Definition.** Let $S\in\operatorname{End}_k(V)$ and let $\mu_S$ be its minimal polynomial. If the distinct roots are $jd,(j-1)d,\dots,-jd$, the **spin** is $j=(r-1)/2$; the **top weight** is $jd$. If $\mu_S$ is squarefree, $r=\deg\mu_S$.
-
-**The general case.** Every endomorphism has a minimal polynomial. The formula applies whenever the roots form a full arithmetic string; otherwise the width spin is the substitute. The zero endomorphism has $\mu_S=X$, $r=1$, and spin $0$ by convention.
-
-**Example.** $S=\operatorname{diag}(1,0,-1)$ has $\mu_S=X(X-1)(X+1)$, $r=3$, $d=1$, spin $1$ and top $1$. $S=\operatorname{diag}(\tfrac12,0,-\tfrac12)$ has $r=3$, $d=\tfrac12$, spin $1$ and top $\tfrac12$; the spectrum is a spin-$1$ string scaled by $\tfrac12$. The naive $(\deg\mu_S-1)/2=1$ is the spin; it equals the top only when the step is $1$. The step gives the normalization, not the spin.
-
-**Limitation.** Multiplicities are invisible; the step gives the top weight, not the spin. A spectrum with gaps has no arithmetic step, and the width spin is then a different number.
-
-## 4. Representation-Theoretic Definitions
-
-### From the Highest Weight
-
-**Definition.** Let $\mathfrak{g}$ be a reductive Lie algebra over $k$, $\rho:\mathfrak{g}\to\operatorname{End}_k(V)$ a representation, and $V$ irreducible. Choose a Cartan $\mathfrak{h}$ and a positive system; the **highest weight** is $\lambda\in\mathfrak{h}^*$. The **spin datum** is $\lambda$. When $\mathfrak{g}=\mathfrak{sl}_2$ and $\mathfrak{h}=\langle H\rangle$, the **spin** is $j=\lambda(H)/2$. When $\operatorname{rank}\mathfrak{g}\ge2$, there is no canonical number; $\lambda$ is the definition.
-
-**The general case.** The zero Lie algebra with the one-dimensional trivial module has $\lambda=0$; every algebra with a $\mathfrak{g}$-action by derivations qualifies; every finite-dimensional reductive module has a highest weight by the standard theorem.
-
-**Example.** In $\mathbb{B}$, $\mathfrak{g}=\mathfrak{sl}_2$, $S_+$ has $\lambda(H)=1$ and $j=\tfrac12$; $V$ has $\lambda(H)=2$ and $j=1$.
-
-**Limitation.** For rank at least $2$ the spin is a weight, not a number. A contraction with the highest coroot gives a number, but it is a convention: for $\mathfrak{so}(5)$ with $\langle e_i,e_j\rangle=\delta_{ij}$, the vector has highest weight $e_1$ and contraction $0$, while the spinor has $(\tfrac12,\tfrac12)$ and contraction $\tfrac12$. The number does not track the physical spin.
-
-### From the Casimir
-
-**Definition.** Let $\mathfrak{g}$ be semisimple with a nondegenerate invariant form, $C=\sum_a x_a x^a$ the Casimir, $V$ irreducible, $C|_V=c_V I$. The **Casimir spin** is $j=(-1+\sqrt{1+4c_V})/2$.
-
-**The general case.** The zero Lie algebra gives $c=0$ and $j=0$; every semisimple $\mathfrak{g}$ with a form and every irreducible $V$ gives a number; the square root exists over $\mathbb{C}$. So the number is defined for every irreducible representation of every semisimple Lie algebra.
-
-**Example.** In $\mathbb{B}$, $S_+$ has $c=\tfrac34$ and $j=\tfrac12$; $V$ has $c=2$ and $j=1$. Both were recomputed.
-
-**Limitation.** The number depends on the normalization of the form. It equals the spin only for $\mathfrak{sl}_2$ with $C=S^2+\tfrac12(UV+VU)$. For $\mathfrak{su}(3)$ in the normalization $c_{\mathrm{adj}}=2h^\vee=6$, the adjoint gives $j=2$, not $1$. The Casimir is a **label**, not the spin, in higher rank.
-
-### From the Dimension
-
-**Definition.** Let $V$ be a simple $A$-module; the **dimension spin** is $j=(\dim_k V-1)/2$.
-
-**The general case.** Every nonzero finite-dimensional algebra has a simple module, obtained as $A$ modulo a maximal left ideal; the zero algebra is excluded. The **left spin list** is the set of these numbers over the simple modules; it is always defined and finite.
-
-**Example.** $\mathbb{B}$ gives $\{\tfrac12\}$; $M_n$ gives $\{(n-1)/2\}$; $\mathbb{C}\times\mathbb{C}$ gives $\{0\}$; the dual numbers give $\{0\}$; the path algebra $A_2$ gives $\{0\}$, because both simple modules are one-dimensional.
-
-**Limitation.** The definition sees only the semisimple part. The path algebra $A_2$ has left list $\{0\}$ but regular spin $\tfrac12$. It is not Morita invariant: $M_2$ gives $\tfrac12$ and $\mathbb{C}$ gives $0$.
-
-## 5. Nilpotent and Combinatorial Definitions
-
-### From the Nilpotency Index
-
-**Definition.** Let $u\in A$ be nilpotent; the **nilpotency index** is $\operatorname{ind}(u)=\min\{m:u^m=0\}$; the **index spin** is $j=(\operatorname{ind}(u)-1)/2$. For a general element $x\in A$, the Jordan–Chevalley decomposition $x=s+n$ over the perfect field $k$ gives the nilpotent part $n$; the **index spin of $x$** is $(\operatorname{ind}(n)-1)/2$.
-
-**The general case.** The element $u=0$ gives $j=0$, so every algebra qualifies. Every element has a Jordan–Chevalley decomposition, so the definition applies to every element of every finite-dimensional algebra over $k$.
-
-**Example.** In $\mathbb{B}$, $u=\vec\Upsilon_-$ has $u^2=0$, index $2$, and $j=\tfrac12$. In $M_n$ of type $(3)$, the index is $3$ and $j=1$. In the dual numbers, $\varepsilon$ has index $2$ and $j=\tfrac12$. In $\mathbb{C}\times\mathbb{C}$ only $0$ is nilpotent, so $j=0$.
-
-**Limitation.** The value depends on the element. The maximum over elements is the **regular spin** of §5.3, a canonical algebra-level definition. The index spin sees only the nilpotent part; a nontrivial semisimple part with a trivial nilpotent part gives $0$.
-
-### From a Peirce Chain
-
-**Definition.** Let $e_1,\dots,e_\ell$ be nonzero orthogonal idempotents in $A$, with $e_i e_j=\delta_{ij}e_i$, and let $u_i\in e_i A e_{i+1}$ with $u_i u_{i+1}\ne0$ for $i=1,\dots,\ell-1$. The **chain spin** is $j=(\ell-1)/2$.
-
-**The general case.** The length $\ell=1$ with $e_1=1_A$ is always available, so every unital algebra qualifies, with spin $0$ if there is no longer chain. Longer chains exist exactly when the algebra has the off-diagonal pattern. For a carrier, the idempotents may be taken in $\operatorname{End}_k(V)$, where the chain lemma uses the Jordan basis.
-
-**Example.** In $\mathbb{B}$, $e_1=\tilde\Pi_+$, $e_2=\tilde\Pi_-$ and $u_1=\vec\Upsilon_-$ give $\ell=2$ and $j=\tfrac12$. In $M_n$, $e_i=E_{ii}$ and $u_i=E_{i,i+1}$ give $\ell=n$ and $j=(n-1)/2$. In the dual numbers, only $e_1=1$ is available, so $\ell=1$ and $j=0$; the nilpotent is a loop, not an off-diagonal arrow. In the path algebra $A_2$, $e_1,e_2$ and the arrow $a$ give $\ell=2$ and $j=\tfrac12$.
-
-**Limitation.** The strict definition uses idempotents in $A$. It misses a loop, as in the dual numbers, and sees an off-diagonal arrow, as in $A_2$. The chain in $\operatorname{End}_k(A)$ is the Jordan chain and sees both.
-
-### From the Jordan Type and the Regular Representation
-
-**Definition.** Let $x\in A$ and let $L_x$ be left multiplication on the regular module $A$. Over $k$ algebraically closed, $L_x$ has a Jordan type $\lambda(x)=(\lambda_1,\dots,\lambda_r)$, a partition of $\dim_k A$. The **regular spin of $x$** is $j(x)=(\lambda_1-1)/2$; the **regular spin of $A$** is $\operatorname{sp}(A)=\max_{x\in A}j(x)$; the **regular content of $x$** is the multiset $\{(\lambda_i-1)/2\}$.
-
-**The general case.** Every finite-dimensional algebra has the regular representation; every $x$ has a Jordan type; the maximum is finite. The regular spin is defined for every finite-dimensional algebra, with value $0$ for a reduced algebra, one with no nonzero nilpotent, such as a product of copies of $k$.
-
-**Proposition (the regular spin is the maximal left-module spin).** For every finite-dimensional left $A$-module $V$ and every $x\in A$, the largest Jordan block of $\rho(x)$ is no larger than the largest Jordan block of $L_x$. Hence $\operatorname{sp}(A)$ is the maximum of the spin over all left modules and all elements.
-
-*Proof.* Every left module is a quotient of a projective module; every projective module is a summand of a free module $A^n$; the Jordan block sizes of a nilpotent endomorphism do not increase under direct sums, summands, or quotients. The maximum is therefore attained on $A$.
-
-**Example.** In $\mathbb{B}$, $x=E_{12}$ gives $L_x$ with blocks $2,2$ and $\operatorname{sp}(\mathbb{B})=\tfrac12$. In $M_n$ with principal nilpotent, the maximal block is $n$ and $\operatorname{sp}(M_n)=(n-1)/2$. In the dual numbers, $\operatorname{sp}=\tfrac12$. In $\mathbb{C}\times\mathbb{C}$, $\operatorname{sp}=0$. In the path algebra $A_2$, $\operatorname{sp}=\tfrac12$.
-
-**Limitation.** The definition is not Morita invariant; it is the maximal carrier-dependent spin, not the spin of a chosen carrier. It sees the nilpotent part, not the semisimple weights: a reduced algebra has regular spin $0$ even if it carries a nontrivial grading. The adjoint carrier is not a left module, so its spin can be larger; in $\mathbb{B}$ the regular spin is $\tfrac12$ and the adjoint spin is $1$.
-
-### From the Quiver
-
-**Definition.** Let $A$ be finite-dimensional over $k$ algebraically closed. By Gabriel's theorem, $A$ is Morita equivalent to a basic algebra $kQ/I$ with $Q$ a finite quiver and $I$ an admissible ideal. Let $\ell_Q$ be one plus the maximum number of arrows in a nonzero path of $kQ/I$. The **quiver spin** is $j_Q=(\ell_Q-1)/2$.
-
-**The general case.** Every finite-dimensional algebra has such a basic algebra, unique up to isomorphism; the quiver spin is always defined. A single vertex with no arrows gives $\ell_Q=1$ and $j=0$; one arrow gives $\ell_Q=2$ and $j=\tfrac12$; a loop with $\varepsilon^2=0$ also gives $\ell_Q=2$ and $j=\tfrac12$.
-
-**Example.** $\mathbb{B}$ and $M_n$ have basic algebra $k$ with no arrows, so $j_Q=0$. $\mathbb{C}\times\mathbb{C}$ has two vertices and no arrows, so $j_Q=0$. The dual numbers have one vertex and one loop, so $j_Q=\tfrac12$. The path algebra $A_2$ has two vertices and one arrow, so $j_Q=\tfrac12$. The path algebra $A_3$ has three vertices and two arrows, so $j_Q=1$.
-
-**Limitation.** The quiver spin is Morita invariant, hence blind to the matrix size and to the multiplicity of the simple module in the regular representation. It is the **shadow** of the spin on the Morita class; it is the definition that survives the theorem of §2.
-
-## 6. Geometric and Topological Definitions
-
-### From a Coadjoint Orbit
-
-**Definition.** Let $\mathfrak{g}=A^-$ be the Lie algebra of $A$; let $f\in\mathfrak{g}^*$ and $O_f=G\cdot f$ the coadjoint orbit, with the Kirillov–Kostant–Souriau form $\omega_f$. For the compact real form $\mathfrak{su}(2)$ of $\mathfrak{sl}_2$, with the normalization in which the unit sphere has area $4\pi$, the **orbit spin** is $j=\operatorname{Area}(O_f)/(4\pi)$. In general, the orbit, or the moment-map value $\lambda$, is the **spin datum**.
-
-**The general case.** Every algebra has $\mathfrak{g}=A^-$; $f=0$ gives the zero orbit and $j=0$; every coadjoint orbit is symplectic. The orbit method assigns an irreducible representation to an integral orbit for compact groups.
-
-**Example.** In $\mathbb{B}$, $\mathfrak{g}=\mathfrak{sl}_2(\mathbb{C})$; on its compact real form, the functional of weight $\lambda=\operatorname{diag}(\tfrac12,-\tfrac12)$ has an orbit of area $2\pi$, so $j=\tfrac12$. The functional of weight $\operatorname{diag}(1,-1)$ has an orbit of area $4\pi$, so $j=1$.
-
-**Limitation.** A number exists only for $A_1$; for higher rank the orbit is the datum. The area formula is normalization-dependent; non-compact orbits require the compact real form.
-
-### From a Circle Weight
-
-**Definition.** Let $G$ be a Lie group acting on $V$, and $T\cong U(1)$ a circle subgroup. On the highest-weight space, $\rho(e^{it})=e^{ijt}$; the **weight** is $j\in\mathbb{R}/\mathbb{Z}$. The **$2\pi$ sign** is $(-1)^{2j}$.
-
-**The general case.** For a finite-dimensional algebra over $\mathbb{R}$ or $\mathbb{C}$, the unit group $G=A^\times$ is a Lie group and the left regular representation is a representation; the trivial circle gives $j=0$. A nontrivial circle is extra data.
-
-**Example.** In $\mathbb{B}$, take $G=SU(2)$ and $T=\{\operatorname{diag}(e^{it},e^{-it})\}$. The spinor has weight $\tfrac12$ and the vector weight $1$; the center $-I$ gives $(-1)^{2j}$.
-
-**Limitation.** Only $j$ modulo $1$ is defined; the integer part requires a lift. The $2\pi$ sign gives only the parity. This is the **spin-structure** side, not the full number.
-
-### From a Ribbon Twist
-
-**Definition.** Let $\mathcal{C}$ be a ribbon category, $X$ a simple object, and $\theta_X$ its twist. Write $\theta_X=e^{2\pi i h_X}$ with $h_X\in\mathbb{Q}/\mathbb{Z}$; $h_X$ is the **topological spin**.
-
-**The general case.** Every finite tensor category with a ribbon structure qualifies; the module category of a factorizable Hopf algebra is the standard source. The unit object has $h=0$. For an algebra $A$, a ribbon structure is extra data: it is available on the module category when $A$ is a Hopf algebra with the required quasitriangular structure, and may not exist otherwise. The trivial ribbon category $\mathrm{Vect}$ gives $h=0$.
-
-**Example.** $\mathrm{Vect}$, the module category of $M_n$, has $\theta=1$ and $h=0$; the topological spin is Morita invariant and blind to the matrix spin.
-
-**Limitation.** The value is modulo $1$, it requires a ribbon structure, and it is not the classical spin.
-
-## 7. The Spin List
-
-**Definition.** Let $A$ be a finite-dimensional algebra. The **left spin list** is
+**The matrix algebras.** $M_n$ has the principal triple
 $$
-L(A)=\left\{\frac{\dim_k S-1}{2}:S\ \text{a simple left module}\right\}.
+S=\operatorname{diag}\left(\tfrac{n-1}{2},\tfrac{n-3}{2},\ldots,-\tfrac{n-1}{2}\right),\qquad
+U=\sum_{i=1}^{n-1}E_{i,i+1},\qquad
+V=\sum_{i=1}^{n-1}i(n-i)E_{i+1,i}.
 $$
-The **regular spin list** is
+The defining module $\mathbb{C}^n$ has weights $\tfrac{n-1}{2},\ldots,-\tfrac{n-1}{2}$. The adjoint module has weights the differences of those numbers, from $-(n-1)$ to $n-1$.
+
+## 2. Dimension of a Simple Module
+
+**Definition (general case).** Let $A$ be a finite-dimensional $k$-algebra and $V$ a simple left $A$-module. The **dimension spin** is
 $$
-R(A)=\left\{\frac{\lambda_1(x)-1}{2}:x\in A\right\}
+j=\frac{\dim_k V-1}{2}.
 $$
-over the regular representation. The **adjoint spin list** is
+The **left list** is the set of these numbers over the simple modules. The definition uses no nilpotent, no grading, and no triple.
+
+**The six algebras.** The table gives the value over the base field and the value after complexification of the module.
+
+| algebra | over $k$ | after complexification |
+|---|---|---|
+| $\mathbb{C}$ | $\tfrac12$ | $0$ |
+| $\mathbb{D}$ | $0$ | $0$ |
+| $\mathbb{H}$ | $\tfrac32$ | $\tfrac12$ |
+| $M_2(\mathbb{C})$ | $\tfrac12$ | $\tfrac12$ |
+| $M_3(\mathbb{C})$ | $1$ | $1$ |
+| $M_5(\mathbb{C})$ | $2$ | $2$ |
+
+**The quaternion row.** Over $\mathbb{R}$ the simple module is $\mathbb{H}$ itself, of real dimension $4$, and the formula gives $\tfrac32$. That is not the spin of the quaternion. The spin-$\tfrac12$ carrier is $\mathbb{H}$ as a left $\mathbb{H}$-module; after complexification it is two copies of the complex irreducible $W_{1/2}$ of dimension $2$, and the formula gives $\tfrac12$. The real dimension counts two copies, so the formula doubles the spin and adds one half. The complexified column is the correct one for the spin. The same correction applies to $\mathbb{C}$: over $\mathbb{R}$ the formula gives $\tfrac12$, over $\mathbb{C}$ it gives $0$.
+
+**What the definition does.** It is finite, intrinsic, and always defined. It gives the defining spin $(n-1)/2$ of $M_n$. It fails on $\mathbb{H}$ over $\mathbb{R}$ and on $\mathbb{C}$ over $\mathbb{R}$: in both cases the real dimension is not the dimension of the complex irreducible. The failure is not a small error; it changes the value from $\tfrac12$ to $\tfrac32$ for $\mathbb{H}$.
+
+**Verdict.** A dimension, not a spin. It coincides with the spin when the carrier is the complex irreducible of a spin triple. It reads only the dimension, so it cannot distinguish the real $4$-dimensional carrier of $\mathbb{H}$, which is two copies of spin $\tfrac12$, from the real $4$-dimensional adjoint, whose content is $0,1$.
+
+## 3. The Nilpotent Ladder
+
+**Definition (general case).** Let $u\in A$ be nilpotent and let
 $$
-J(A)=\left\{\tfrac12\left(\mu_{\max}^{\mathrm{ad}}(S)-\mu_{\min}^{\mathrm{ad}}(S)\right):S\ \text{a spin element in }A\right\},
+\operatorname{ind}(u)=\min\{m:u^m=0\}
 $$
-the half-width of the spectrum of $S$ on the adjoint carrier, which is the adjoint top $2j$; it is empty if $A$ has no spin data. The **spin spectrum** is the union $\Sigma(A)=L(A)\cup R(A)\cup J(A)$.
-
-**The general case.** Every nonzero finite-dimensional algebra has simple modules and a regular representation. The lists $L(A)$ and $R(A)$ are always finite and defined; $J(A)$ is defined when a spin element exists, and is empty otherwise. The spectrum always contains $0$, from the zero element in the regular list.
-
-**Example.** For $\mathbb{B}$, $L=\{\tfrac12\}$, $R=\{0,\tfrac12\}$, $J=\{0,1\}$, so $\Sigma=\{0,\tfrac12,1\}$. For $M_n$ with principal type, $L=\{(n-1)/2\}$, $R=\{0,\tfrac12,\dots,(n-1)/2\}$, $J=\{0,1,\dots,n-1\}$, so $\Sigma=\{0,\tfrac12,1,\dots,n-1\}$. For $\mathbb{C}\times\mathbb{C}$, $L=R=\{0\}$ and $J=\varnothing$, so $\Sigma=\{0\}$. For the dual numbers, $L=\{0\}$, $R=\{0,\tfrac12\}$, $J=\varnothing$, so $\Sigma=\{0,\tfrac12\}$. For the path algebra $A_2$, $L=\{0\}$, $R=\{0,\tfrac12\}$, $J=\varnothing$, so $\Sigma=\{0,\tfrac12\}$.
-
-**The elementary list.** The corpus's **elementary list** is the subset of the spectrum consisting of the three elementary carrier types: the centre, of spin $0$; the defining carrier, of spin $j_{\mathrm{def}}$; and the adjoint carrier, of spin $2j_{\mathrm{def}}$. For $M_n$ with type $\lambda$, it is
+be the nilpotency index. The **ladder spin** is
 $$
-\{0,\ (\lambda_1-1)/2,\ \lambda_1-1\}.
+j=\frac{\operatorname{ind}(u)-1}{2}.
 $$
-The full spectrum contains the intermediate values as well. The elementary list is the list of carrier types, not the list of all summands.
+The **ladder list** is the set over all nilpotent $u\in A$. The **regular spin** is the maximum of the list. The definition uses only the algebra and one nilpotent.
 
-**Remark (the adjoint doubling).** On the adjoint carrier, the weights of $S$ are the differences of the defining weights; the top is $2j_{\mathrm{def}}$, not $j_{\mathrm{def}}$. The factor $2$ is the doubling of the adjoint action, and it is why the integer-spin reading of the corpus attaches $2j$ to the material sector. The adjoint is not a second definition of the same spin; it is a second carrier with doubled weights.
+**The six algebras.** The table gives the possible indices, the ladder list, and the regular spin.
 
-**Result.** The spin of an algebra is a list, not a number. A single number requires a chosen carrier; the list is the invariant that the carrier-dependent definitions produce collectively.
+| algebra | indices | ladder list | regular spin |
+|---|---|---|---|
+| $\mathbb{C}$ | $\{1\}$ | $\{0\}$ | $0$ |
+| $\mathbb{D}$ | $\{1\}$ | $\{0\}$ | $0$ |
+| $\mathbb{H}$ | $\{1\}$ | $\{0\}$ | $0$ |
+| $M_2(\mathbb{C})$ | $\{1,2\}$ | $\{0,\tfrac12\}$ | $\tfrac12$ |
+| $M_3(\mathbb{C})$ | $\{1,2,3\}$ | $\{0,\tfrac12,1\}$ | $1$ |
+| $M_5(\mathbb{C})$ | $\{1,\ldots,5\}$ | $\{0,\tfrac12,1,\tfrac32,2\}$ | $2$ |
 
-## 8. Comparison
+**The quaternion row.** The ladder definition gives $0$ for $\mathbb{H}$. This is not an accident: $\mathbb{H}$ is a division algebra, so the only nilpotent is $0$. The spin-$\tfrac12$ of the quaternion is not a ladder in $\mathbb{H}$. It is the left multiplication on $\mathbb{H}$ as a carrier, and its ladder lives in the complexification: with $S=\tfrac{i}{2}e_z$ and $U=\tfrac{i}{2}e_x-\tfrac12e_y$, the triple is in $\mathbb{B}$, not in $\mathbb{H}$. The definition on $\mathbb{H}$ itself cannot see it.
 
-### The Definitions
+**What the definition does.** It is finite, intrinsic, and gives the Jordan chain of $M_n$. It gives the same values as the defining spin for the principal triple of $M_n$. It gives $0$ to every division algebra and to every reduced commutative algebra. It cannot see a spectral label without a nilpotent.
 
-| definition | datum | formula | general instance | sees |
-|---|---|---|---|---|
-| spectral width | semisimple $S$ | spin $w/(2d)$; top $w/2$ | $S=0$ | the grading |
-| derivation | $D\in\operatorname{Der}A$ | spin from the full string; root: half the top degree | $D=0$ | the algebra grading |
-| highest weight | reductive $\mathfrak{g}$ | $\lambda$; $j=\lambda(H)/2$ for $\mathfrak{sl}_2$ | $\mathfrak{g}=0$ | the reductive action |
-| Casimir | invariant form | $(-1+\sqrt{1+4c})/2$ | $\mathfrak{g}=0$ | the quadratic invariant |
-| dimension | simple $V$ | $(\dim V-1)/2$ | any simple | the semisimple part |
-| minimal polynomial | $S$ | spin $(r-1)/2$; top $(r-1)d/2$ | $S=0$ | the spectrum |
-| nilpotency index | nilpotent $u$ | $(\operatorname{ind}u-1)/2$ | $u=0$ | the ladder |
-| Peirce chain | idempotents | $(\ell-1)/2$ | $\ell=1$ | the off-diagonal chain |
-| regular spin | $A$, $x$ | $(\lambda_1(L_x)-1)/2$ | $x=0$ | the maximal left ladder |
-| quiver | basic $kQ/I$ | $(\ell_Q-1)/2$ | one vertex | the Morita shadow |
-| coadjoint orbit | $f\in\mathfrak{g}^*$ | $\operatorname{Area}/(4\pi)$ for $A_1$ | $f=0$ | the orbit |
-| circle weight | circle $T$ | $j\bmod1$ | trivial $T$ | the weight modulo $1$ |
-| ribbon twist | ribbon structure | $h\bmod1$ | $\mathrm{Vect}$ | the topological spin |
+**Verdict.** The physical ladder spin for $M_n$; not the spin of $\mathbb{H}$ in $\mathbb{H}$; not a nonzero spin for $\mathbb{C}$ or $\mathbb{D}$.
 
-### The Examples
+## 4. The Peirce Chain
 
-| definition | $\mathbb{B}$ | $M_n$ (principal) | $\mathbb{C}\times\mathbb{C}$ | dual numbers | $A_2$ |
+**Definition (general case).** A **Peirce chain** is a sequence of nonzero orthogonal idempotents $e_1,\ldots,e_\ell$ in $A$,
+$$
+e_ie_j=\delta_{ij}e_i,
+$$
+such that the off-diagonal corner is nonzero:
+$$
+e_iAe_{i+1}\neq0,\qquad i=1,\ldots,\ell-1.
+$$
+The **chain spin** is
+$$
+j=\frac{\ell-1}{2}.
+$$
+The **Peirce list** is the set over all chains; the maximum spin is $0$ when no chain of length $2$ exists.
+
+**The six algebras.**
+
+| algebra | longest chain | spin |
+|---|---|---|
+| $\mathbb{C}$ | $1$ | $0$ |
+| $\mathbb{D}$ | $1$ | $0$ |
+| $\mathbb{H}$ | $1$ | $0$ |
+| $M_2(\mathbb{C})$ | $2$ | $\tfrac12$ |
+| $M_3(\mathbb{C})$ | $3$ | $1$ |
+| $M_5(\mathbb{C})$ | $5$ | $2$ |
+
+**The split-complex row.** $\mathbb{D}$ has four idempotents, including $e_+$ and $e_-$, but it is commutative. The corner is
+$$
+e_+\mathbb{D}e_-=0,
+$$
+because every product is symmetric. The two idempotents do not make a chain; the length is $1$ and the spin is $0$. This is the sharpest contrast with the spectral definition: the same algebra has the spectral label $\tfrac12$ from $S=(1,-1)$, but no Peirce chain and no ladder. The idempotents alone are not a spin.
+
+**What the definition does.** It is finite and intrinsic. It sees the matrix chain of $M_n$ and the nonzero corners. It is blind to division algebras and to commutative algebras, including the split-complex numbers. It is not Morita invariant.
+
+**Verdict.** The combinatorial shadow of the ladder; the same list as the ladder on these six; not a general definition of the quaternion spin.
+
+## 5. The Quiver
+
+**Definition (general case).** Let $A$ be finite-dimensional over a field. Its **Ext quiver** has one vertex for each simple module and one arrow for each basis element of $\operatorname{Ext}^1$ between two simple modules. When the field is algebraically closed, Gabriel's theorem identifies the basic algebra Morita equivalent to $A$ with $kQ/I$, with $Q$ a finite quiver and $I$ an admissible ideal. Let $\ell_Q$ be one plus the maximum number of arrows in a nonzero path of $kQ/I$. The **quiver spin** is
+$$
+j_Q=\frac{\ell_Q-1}{2}.
+$$
+
+**The six algebras.**
+
+| algebra | quiver | $\ell_Q$ | spin |
+|---|---|---|---|
+| $\mathbb{C}$ | one vertex, no arrows | $1$ | $0$ |
+| $\mathbb{D}$ | two vertices, no arrows | $1$ | $0$ |
+| $\mathbb{H}$ | one vertex, no arrows | $1$ | $0$ |
+| $M_2(\mathbb{C})$ | one vertex, no arrows | $1$ | $0$ |
+| $M_3(\mathbb{C})$ | one vertex, no arrows | $1$ | $0$ |
+| $M_5(\mathbb{C})$ | one vertex, no arrows | $1$ | $0$ |
+
+**What the definition does.** It is finite, intrinsic, and Morita invariant. That is exactly why it is blind to the spin: $M_n$ is Morita equivalent to $\mathbb{C}$, so it must give the same value, and it gives $0$ for both. The matrix size and the multiplicity of the simple module are invisible. The split-complex algebra has two vertices but no arrows, so it also gives $0$, even though it has two simple modules.
+
+**Verdict.** The Morita shadow. It shows that a Morita-invariant definition must give the same value to $M_n$ and $\mathbb{C}$, so it cannot reproduce the physical spin. It is a useful invariant, but it is not a spin.
+
+## 6. The Spectral Level Count
+
+**Definition (general case).** Let $S\in A$ be semisimple over the algebraic closure, and let $L_S$ be left multiplication by $S$ on $A$. Suppose the distinct eigenvalues of $L_S$ are
+$$
+jd,\ (j-1)d,\ \ldots,\ -jd
+$$
+for some $j\in\tfrac12\mathbb{Z}_{\ge0}$ and some nonzero $d$ in the algebraic closure of $k$. The **spectral spin** is the number of levels minus one over two,
+$$
+j=\frac{r-1}{2},
+$$
+where $r=2j+1$ is the number of distinct eigenvalues. The **top weight** is $jd$. The **spectral list** is the set over all such $S$.
+
+**The scale is not the spin.** The step $d$ is a choice of unit. The level count is invariant under rescaling $S$. The top weight is not: it scales with $d$. For $S=i$ in $\mathbb{H}$ the eigenvalues are $+i$ and $-i$, so $d=2i$, $r=2$, and the spin is $\tfrac12$; the top weight is $i$, which is imaginary. The level count is real and equal to the spin; the top weight is a normalization. This is the precise sense in which a weight is not a spin; the half-angle is a normalization of the same kind.
+
+**The six algebras.**
+
+| algebra | spectral list | witness |
+|---|---|---|
+| $\mathbb{C}$ | $\{0\}$ | $S=z$, one eigenvalue |
+| $\mathbb{D}$ | $\{0,\tfrac12\}$ | $S=(1,-1)$, eigenvalues $\pm1$ |
+| $\mathbb{H}$ | $\{0,\tfrac12\}$ | $S=i$, eigenvalues $\pm i$ |
+| $M_2(\mathbb{C})$ | $\{0,\tfrac12\}$ | $S=\operatorname{diag}(\tfrac12,-\tfrac12)$ |
+| $M_3(\mathbb{C})$ | $\{0,\tfrac12,1\}$ | $S=\operatorname{diag}(1,0,-1)$ |
+| $M_5(\mathbb{C})$ | $\{0,\tfrac12,1,\tfrac32,2\}$ | $S=\operatorname{diag}(2,1,0,-1,-2)$ |
+
+**The split-complex row.** $S=(1,-1)$ has the two eigenvalues $\pm1$, a full string with $d=2$, and the spin $\tfrac12$. There is no nilpotent and no triple. The value is a **grading label**, not a physical spin. It answers the question "how many spectral levels does this element have?", not "what is the spin of a carrier?".
+
+**What the definition does.** It is finite, intrinsic, and gives a list on all six, nonzero except for $\mathbb{C}$. It gives $\tfrac12$ to $\mathbb{H}$ without complexifying the algebra, because $i$ is an element of $\mathbb{H}$ and the eigenvalues of $L_i$ are complex. It gives the defining list $0,\tfrac12,\ldots,(n-1)/2$ to $M_n$. It gives $\tfrac12$ to $\mathbb{D}$, which the ladder and Peirce definitions do not.
+
+**Verdict.** The most general intrinsic definition in this article. It is not sufficient for physics, because it does not require a nilpotent ladder. It produces labels, some of which are not spins of any carrier.
+
+## 7. The Triple and the Top Weight
+
+**Definition (general case).** A **spin triple** in $A$ is a triple $(S,U,V)$ with
+$$
+[S,U]=U,\qquad [S,V]=-V,\qquad [U,V]=2S.
+$$
+On an irreducible carrier, the eigenvalues of $S$ are $j,j-1,\ldots,-j$; the **triple spin** is $j$. Equivalently, a **spin datum** is a pair $(S,u)$ with $S$ semisimple, $u$ nilpotent, $[S,u]=u$, and the spectrum of $S$ on the chain generated by $u$ equal to $j,j-1,\ldots,-j$. The third element is determined on the chain by the relations; the pair $(S,u)$ is the minimal data. The **triple list** is the set over all triples in $A$.
+
+**The six algebras.**
+
+| algebra | principal list | all-triple list |
+|---|---|---|
+| $\mathbb{C}$ | $\{0\}$ | $\{0\}$ |
+| $\mathbb{D}$ | $\{0\}$ | $\{0\}$ |
+| $\mathbb{H}$ | $\{0\}$ in $\mathbb{H}$; $\{0,\tfrac12,1\}$ in $\mathbb{B}$ | $\{0\}$ in $\mathbb{H}$; $\{0,\tfrac12,1\}$ in $\mathbb{B}$ |
+| $M_2(\mathbb{C})$ | $\{0,\tfrac12,1\}$ | $\{0,\tfrac12,1\}$ |
+| $M_3(\mathbb{C})$ | $\{0,1,2\}$ | $\{0,\tfrac12,1,2\}$ |
+| $M_5(\mathbb{C})$ | $\{0,2,4\}$ | $\{0,\tfrac12,1,\tfrac32,2,3,4\}$ |
+
+**The matrix lists.** For $M_n$ with the principal triple, the defining spin is $(n-1)/2$ and the adjoint top is $n-1$; the elementary list is
+$$
+\left\{0,\ \frac{n-1}{2},\ n-1\right\}.
+$$
+Over all triples, a nilpotent of index $\ell\le n$ gives the defining spin $(\ell-1)/2$ and the adjoint top $\ell-1$. The union is
+$$
+\left\{0,\tfrac12,\ldots,\tfrac{n-1}{2}\right\}\cup\{0,1,\ldots,n-1\}.
+$$
+For $n=5$ this is $\{0,\tfrac12,1,\tfrac32,2,3,4\}$; the values $\tfrac52$ and $\tfrac72$ are absent because the defining carrier has at most five levels and the adjoint top is an integer.
+
+**The quaternion row.** $\mathbb{H}$ has no triple in itself. The triple exists in $\mathbb{B}$, where the carrier $\mathbb{H}$ (as a left module) has spin $\tfrac12$ and the adjoint has content $0,1$. The list $\{0,\tfrac12,1\}$ is a list of $\mathbb{B}$, not of $\mathbb{H}$ alone.
+
+**What the definition does.** It is finite and intrinsic for $M_n$. It gives the corpus's elementary list and the adjoint content. It is the definition used in the principal-pair articles and in the biquaternion articles. It is not intrinsic to $\mathbb{C}$, $\mathbb{D}$, or $\mathbb{H}$: those algebras have no nonzero triple, so the list collapses to $\{0\}$ (or to the list of the complexification).
+
+**Verdict.** The corpus's definition. It is the physical one for $M_n$ and for $\mathbb{B}$. It is not the only definition, and it is not available on every algebra without a complexification.
+
+## 8. The Adjoint and Integer Spin
+
+**Definition (general case).** Let $(S,U,V)$ be a spin triple and let $A$ act on itself by the adjoint action. The weights of $\operatorname{ad}_S$ are the differences $\lambda_i-\lambda_j$ of the weights of $S$. The **adjoint spin** is the top weight
+$$
+j_{\mathrm{ad}}=2j_{\mathrm{def}},
+$$
+where $j_{\mathrm{def}}$ is the defining spin. The **adjoint list** is the set over all triples. For the principal triple, the same number is the level spin of the derivation $\operatorname{ad}_S$: its spectrum has $4j+1=2j_{\mathrm{ad}}+1$ levels, so $(\text{levels}-1)/2=j_{\mathrm{ad}}$.
+
+**The six algebras.**
+
+| algebra | adjoint spin | adjoint content |
+|---|---|---|
+| $\mathbb{C}$ | $0$ | $\{0\}$ |
+| $\mathbb{D}$ | $0$ | $\{0\}$ |
+| $\mathbb{H}$ | $1$ in $\mathbb{B}$ | $\{0,1\}$ |
+| $M_2(\mathbb{C})$ | $1$ | $\{0,1\}$ |
+| $M_3(\mathbb{C})$ | $2$ | $\{0,1,2\}$ |
+| $M_5(\mathbb{C})$ | $4$ | $\{0,1,2,3,4\}$ |
+
+**The factor of two.** The adjoint weights are differences of the defining weights. For the principal triple of $M_n$, the defining top is $(n-1)/2$ and the adjoint top is $n-1$. The factor $2$ is not a half-angle and not a second definition of the same spin: it is the doubling of the weights on a different carrier. The defining carrier has spin $(n-1)/2$; the adjoint carrier has spin $n-1$. Both are spins, of different carriers.
+
+**The material sector.** For $\mathbb{H}$, the adjoint action on the vector part $\operatorname{Im}\mathbb{H}$ is the spin-$1$ representation. The Hermitian generator is $J_k=\tfrac12\operatorname{ad}_{ie_k}$, whose eigenvalues are $0,\pm1$. The raw derivation $\operatorname{ad}_{ie_k}$ has eigenvalues $0,\pm2$, so the factor $\tfrac12$ is the normalization that turns the derivation into the physical generator; the spin is $1$, not $2$. The material sector therefore carries the integer spin $1$, while the defining carrier carries $\tfrac12$. This is the construction of *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*: the vector part of $\mathbb{M}_-$ is the spin-$1$ triplet, and the adjoint action supplies the representation.
+
+**The caution for $n\ge3$.** The adjoint of $\mathfrak{sl}_n$ is reducible under the principal $\mathfrak{sl}_2$: it decomposes as $W_0\oplus W_1\oplus\cdots\oplus W_{n-1}$. The top component has spin $n-1$, but the physical gauge field in the adjoint has spin $1$. The integer $n-1$ is the $\mathfrak{sl}_2$ content, not the $\mathfrak{su}(n)$ spin. The corpus's statement "the spin of $\mathfrak{sl}_3$ is $2$" means the top principal $\mathfrak{sl}_2$ component; the gluon has spin $1$. Both statements are correct about different groups.
+
+**Verdict.** A carrier-dependent integer list. It is numerically twice the defining spin for the principal triple, but it is the spin of a different carrier, not a second definition of the same spin. It is the right notion for the material sector.
+
+## 9. The Half-Angle and the Polar Operators
+
+**The polar decomposition.** A nonzero quaternion has the polar form
+$$
+q=\rho\left(\cos\frac{\theta}{2}+n\sin\frac{\theta}{2}\right),
+$$
+with $\rho>0$ and $n$ a unit imaginary quaternion. The half-angle is the parameter of the double cover $SU(2)\to SO(3)$. It is a property of the quaternion group, not of the spin quantum number.
+
+**Why the half-angle is not the spin.** The spin-$1$ rotation about the $z$-axis is
+$$
+R_z(\theta)=\begin{pmatrix}1&0&0\\0&\cos\theta&-\sin\theta\\0&\sin\theta&\cos\theta\end{pmatrix},
+$$
+with the full angle. The spin-$\tfrac12$ rotor is
+$$
+\exp\left(-\frac{i\theta\sigma_z}{2}\right)
+=\begin{pmatrix}e^{-i\theta/2}&0\\0&e^{i\theta/2}\end{pmatrix},
+$$
+with the half-angle. The coefficient $\tfrac12$ is the eigenvalue of the generator $\sigma_z/2$ in the fundamental representation. For the spin-$1$ adjoint of $\mathfrak{su}(2)$ the generator $J_z$ has eigenvalues $1,0,-1$, and the rotor is $\exp(i\theta J_z)$, with the full angle. The coefficient is not the spin; it is the normalization of the generator in the chosen carrier. The half-angle appears only for the spin-$\tfrac12$ carrier.
+
+**The six algebras.** The table gives the coefficient for the defining carrier and for the top adjoint component.
+
+| algebra | defining coefficient | adjoint top coefficient |
+|---|---|---|
+| $\mathbb{C}$ | undefined | undefined |
+| $\mathbb{D}$ | undefined | undefined |
+| $\mathbb{H}$ | $\tfrac12$ | $1$ |
+| $M_2(\mathbb{C})$ | $\tfrac12$ | $1$ |
+| $M_3(\mathbb{C})$ | $\tfrac12$ | $2$ |
+| $M_5(\mathbb{C})$ | $\tfrac12$ | $4$ |
+
+**What the definition does.** The coefficient is the top eigenvalue of the generator: $\tfrac12$ for the fundamental, and $n-1$ for the top adjoint component of $M_n$. It is not a new invariant; it is the weight of the carrier. The half-angle is the special case of the fundamental. The polar-operator articles, for example *The Polarisation Operator*, identify the half-angle with the spin because they work in the biquaternion, whose defining module is the spin-$\tfrac12$ carrier. The half-angle is the parameter of the double cover, and it is $\tfrac12$ only on the fundamental carrier; that identification is a special case, not a general definition.
+
+**Verdict.** A normalization, not a definition. It cannot distinguish the spin of a carrier from the normalization of its generator.
+
+## 10. Representation Labels: Highest Weight, Casimir, Coadjoint Orbit
+
+**Highest weight.** Let $\mathfrak{g}$ be a reductive Lie algebra acting on $V$, choose a Cartan and a positive system, and let $\lambda$ be the highest weight. The **highest-weight spin** is $\lambda$; a number requires a chosen $\mathfrak{sl}_2$. For $\mathfrak{sl}_2$ with $\mathfrak{h}=\langle H\rangle$, the spin is $j=\lambda(H)/2$. On $\mathbb{H}$, the rotation algebra is $\mathfrak{su}(2)$; the defining carrier has $j=\tfrac12$ and the adjoint has $j=1$. On $M_n$, the algebra $\mathfrak{sl}_n$ has a highest weight vector, not a single number; the principal $\mathfrak{sl}_2$ subalgebra gives the triple list of §7. Without that choice, the definition does not produce a spin for $M_3$ or $M_5$.
+
+**Casimir.** Let $\mathfrak{g}$ be semisimple with an invariant form and Casimir $C$, and let $C|_V=c_V I$. For $\mathfrak{sl}_2$ the **Casimir spin** is
+$$
+j=\frac{-1+\sqrt{1+4c_V}}{2}.
+$$
+The formula uses the Casimir of the chosen $\mathfrak{sl}_2$, not the Casimir of the full algebra. On $M_2$ the defining Casimir is $\tfrac34$ and gives $\tfrac12$; the adjoint Casimir is $2$ and gives $1$. On $M_3$ the full $\mathfrak{sl}_3$ Casimir of the defining module is $\tfrac43$, which gives $0.758\ldots$, not a half-integer. On $M_5$ it is $\tfrac{12}{5}$, which gives $1.128\ldots$, not a half-integer. The principal $\mathfrak{sl}_2$ Casimir gives the correct values, $1$ and $2$ on $M_3$ and $2$ and $4$ on $M_5$; the full algebra Casimir does not.
+
+**Coadjoint orbit.** Let $f\in\mathfrak{g}^*$ and $O_f$ the coadjoint orbit with the Kirillov–Kostant–Souriau form. For $\mathfrak{su}(2)$, with the normalization in which the unit sphere has area $4\pi$, the **orbit spin** is $j=\operatorname{Area}(O_f)/(4\pi)$. On $\mathbb{H}$ the orbits give $0,\tfrac12,1,\ldots$; on $M_n$ the orbit is a flag variety, and the area formula does not produce a single spin. The definition is an $A_1$ definition.
+
+**The six algebras.** The table gives the values that the representation labels produce when a principal $\mathfrak{sl}_2$ is chosen. The entries marked "principal" use that subalgebra; the entries marked "$\mathfrak{sl}_3$" or "$\mathfrak{sl}_5$" are the full-algebra Casimirs and are not spins.
+
+| algebra | highest weight | Casimir | coadjoint |
+|---|---|---|---|
+| $\mathbb{C}$ | $0$ | $0$ | $0$ |
+| $\mathbb{D}$ | $0$ | $0$ | $0$ |
+| $\mathbb{H}$ | $\tfrac12,1$ | $\tfrac12,1$ | $0,\tfrac12,1,\ldots$ |
+| $M_2(\mathbb{C})$ | $\tfrac12,1$ | $\tfrac12,1$ | $A_1$ orbit |
+| $M_3(\mathbb{C})$ | $\{0,1,2\}$ with principal $\mathfrak{sl}_2$ | $0.758$ with $\mathfrak{sl}_3$ | flag variety |
+| $M_5(\mathbb{C})$ | $\{0,2,4\}$ with principal $\mathfrak{sl}_2$; content $0,\ldots,4$ | $1.128$ with $\mathfrak{sl}_5$ | flag variety |
+
+**What the definition does.** The highest weight is a vector; a number requires a chosen $\mathfrak{sl}_2$. The Casimir is a number, but the formula is an $\mathfrak{sl}_2$ formula. The coadjoint orbit is an $A_1$ formula. None of them is a general definition of the spin of an algebra; each is a definition of a label of a chosen representation.
+
+**Verdict.** Carrier-dependent labels. They reproduce the triple list when the principal $\mathfrak{sl}_2$ is chosen, and they fail on $M_3$ and $M_5$ when the full algebra is used.
+
+## 11. Topological Labels: Circle Weight and Ribbon Twist
+
+**Circle weight.** Let a circle $T\cong U(1)$ act on $V$, and let $\rho(e^{it})=e^{ijt}$ on the highest-weight space. The **weight** is $j\in\mathbb{R}/\mathbb{Z}$, and the **$2\pi$ sign** is $(-1)^{2j}$. Only $j$ modulo $1$ is defined; the integer part requires a lift. On $\mathbb{C}$, $\mathbb{D}$, and $M_n$ the module category is semisimple with a trivial circle action, so the weight is $0$. On $\mathbb{H}$ the defining carrier has $j=\tfrac12$ and the adjoint has $j=1$, so the values modulo $1$ are $0$ and $\tfrac12$.
+
+**Ribbon twist.** Let $\mathcal{C}$ be a ribbon category, $X$ a simple object, and $\theta_X$ its twist. Write $\theta_X=e^{2\pi ih_X}$ with $h_X\in\mathbb{Q}/\mathbb{Z}$; $h_X$ is the **topological spin**. For the semisimple module categories of $\mathbb{C}$, $\mathbb{D}$, and $M_n$, the twist is trivial on each simple object and $h=0$. For the module category of $\mathbb{H}$ as a Hopf algebra, the twist gives $h=0$ or $\tfrac12$. The definition requires a ribbon structure; it is extra data, not a property of the algebra alone.
+
+**Verdict.** Finite but coarse. The circle weight and the ribbon twist see the parity of the spin, not the integer part. They are shadows, not the algebraic spin.
+
+## 12. Comparison
+
+### The Values
+
+The table collects the lists. A dash means that the definition does not apply without extra data. A set means the list over all admissible data.
+
+| definition | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{H}$ | $M_2$ | $M_3$ | $M_5$ |
+|---|---|---|---|---|---|---|
+| dimension over $k$ | $\tfrac12$ | $0$ | $\tfrac32$ | $\tfrac12$ | $1$ | $2$ |
+| dimension over $\mathbb{C}$ | $0$ | $0$ | $\tfrac12$ | $\tfrac12$ | $1$ | $2$ |
+| regular index | $0$ | $0$ | $0$ | $\tfrac12$ | $1$ | $2$ |
+| ladder list | $\{0\}$ | $\{0\}$ | $\{0\}$ | $\{0,\tfrac12\}$ | $\{0,\tfrac12,1\}$ | $\{0,\ldots,2\}$ |
+| Peirce | $0$ | $0$ | $0$ | $\tfrac12$ | $1$ | $2$ |
+| quiver | $0$ | $0$ | $0$ | $0$ | $0$ | $0$ |
+| spectral | $\{0\}$ | $\{0,\tfrac12\}$ | $\{0,\tfrac12\}$ | $\{0,\tfrac12\}$ | $\{0,\tfrac12,1\}$ | $\{0,\ldots,2\}$ |
+| triple, principal | $\{0\}$ | $\{0\}$ | $\{0\}$ in $\mathbb{H}$; $\{0,\tfrac12,1\}$ in $\mathbb{B}$ | $\{0,\tfrac12,1\}$ | $\{0,1,2\}$ | $\{0,2,4\}$ |
+| triple, all | $\{0\}$ | $\{0\}$ | $\{0\}$ in $\mathbb{H}$; $\{0,\tfrac12,1\}$ in $\mathbb{B}$ | $\{0,\tfrac12,1\}$ | $\{0,\tfrac12,1,2\}$ | $\{0,\tfrac12,1,\tfrac32,2,3,4\}$ |
+| adjoint top | $0$ | $0$ | $1$ in $\mathbb{B}$ | $1$ | $2$ | $4$ |
+| half-angle | — | — | $\tfrac12$; $1$ | $\tfrac12$; $1$ | $\tfrac12$; $2$ | $\tfrac12$; $4$ |
+| circle weight | $0$ | $0$ | $0,\tfrac12$ | $0$ | $0$ | $0$ |
+| Casimir | $0$ | $0$ | $\tfrac12,1$ | $\tfrac12,1$ | $0.758$ | $1.128$ |
+| coadjoint | $0$ | $0$ | $0,\tfrac12,1,\ldots$ | $0,\tfrac12,1,\ldots$ | flag | flag |
+
+### The Coverage
+
+The question is whether a definition computes the list on all six. The table answers it.
+
+| definition | all six? | $M_2(\mathbb{C})$ exact? | gives $\mathbb{H}=\tfrac12$? | gives $M_n=(n-1)/2$? | intrinsic? |
 |---|---|---|---|---|---|
-| dimension | $\tfrac12$ | $(n-1)/2$ | $0$ | $0$ | $0$ |
-| nilpotency (maximum) | $\tfrac12$ | $(n-1)/2$ | $0$ | $\tfrac12$ | $\tfrac12$ |
-| Peirce chain (maximum) | $\tfrac12$ | $(n-1)/2$ | $0$ | $0$ | $\tfrac12$ |
-| regular spin | $\tfrac12$ | $(n-1)/2$ | $0$ | $\tfrac12$ | $\tfrac12$ |
-| quiver spin | $0$ | $0$ | $0$ | $\tfrac12$ | $\tfrac12$ |
-| adjoint spin (triple in $A$) | $1$ | $n-1$ | — | — | — |
+| dimension over $k$ | yes | no, $\{\tfrac12\}$ | no, $\tfrac32$ | yes | yes |
+| dimension over $\mathbb{C}$ | yes | no, $\{\tfrac12\}$ | yes | yes | after complexification |
+| ladder | yes | no, $\{0,\tfrac12\}$ | no, $0$ | yes | yes |
+| Peirce | yes | no, $\{0,\tfrac12\}$ | no, $0$ | yes | yes |
+| quiver | yes | no, $\{0\}$ | no, $0$ | no, $0$ | yes |
+| spectral | yes | no, $\{0,\tfrac12\}$ | yes | yes | yes |
+| triple | no | yes, $\{0,\tfrac12,1\}$ | yes in $\mathbb{B}$ | yes | for $M_n$ |
+| adjoint | no | no, $\{0,1\}$ | no, $1$ in $\mathbb{B}$ | $n-1$ | with triple |
+| half-angle | no | no, normalization | constant | constant | no |
+| highest weight | no | no, all $j$ unrestricted | yes with $A_1$ | with principal $A_1$ | no |
+| Casimir | no | no, all $j$ unrestricted | yes with $A_1$ | full algebra fails | no |
+| coadjoint | no | no, all $j$ | yes with $A_1$ | fails | no |
+| circle, ribbon | yes | no, $\{0,\tfrac12\}$ mod $1$ | modulo $1$ | $0$ | extra structure |
 
-The table shows the divergences. The dual numbers have regular and quiver spin $\tfrac12$ but Peirce and dimension spin $0$; the path algebra $A_2$ has regular, quiver and Peirce spin $\tfrac12$ but dimension spin $0$; the matrix algebra has regular spin $(n-1)/2$ but quiver spin $0$. Each definition sees a different structure.
+**The answer.** No, not every definition computes all six, and only one computes the experimental set on $M_2(\mathbb{C})$. The intrinsic definitions that give a finite list on all six are: dimension, ladder, Peirce, quiver, and spectral. On $M_2(\mathbb{C})$ the ladder, Peirce, and spectral give $\{0,\tfrac12\}$, the dimension gives $\{\tfrac12\}$, and the quiver gives $\{0\}$; none gives $1$. The adjoint gives $\{0,1\}$ and misses $\tfrac12$. Only the triple gives $\{0,\tfrac12,1\}$ exactly; §14 audits every method against this set. On $\mathbb{H}$ the ladder and Peirce give $0$, the dimension gives $\tfrac32$ over $\mathbb{R}$, and the spectral gives $\{0,\tfrac12\}$; the triple gives $\{0,\tfrac12,1\}$ in $\mathbb{B}$. On $M_n$ the all-triple list is $\{0,\tfrac12,\ldots,(n-1)/2\}\cup\{0,1,\ldots,n-1\}$.
 
-### The Verdict
+### The Finite List of Each Algebra
 
-**Two families and a hybrid.**
+The union of the definitions of §§2–8, with the complexification where required, gives the following lists.
 
-1. **Carrier-dependent, physical.** Spectral width, derivation, highest weight, Casimir, dimension, minimal polynomial, nilpotency index, Peirce chain, regular spin, coadjoint orbit, circle weight. They give the biquaternion $\tfrac12$ and $1$, and $M_n$ the values $(\lambda_1-1)/2$ and $\lambda_1-1$. They are not Morita invariant.
-2. **Morita-invariant, shadow.** Quiver spin, ribbon twist. They give $0$ for $M_n$ and $\mathbb{B}$; they are the only definitions that survive the theorem of §2.
+| algebra | possible spins | comment |
+|---|---|---|
+| $\mathbb{C}$ | $\{0,\tfrac12\}$ | $\tfrac12$ is the real dimension; over $\mathbb{C}$ the list is $\{0\}$ |
+| $\mathbb{D}$ | $\{0,\tfrac12\}$ | $\tfrac12$ is spectral; the ladder and Peirce lists are $\{0\}$ |
+| $\mathbb{H}$ | $\{0,\tfrac12,1,\tfrac32\}$ | $\tfrac32$ is the real dimension; the physical list is $\{0,\tfrac12,1\}$ |
+| $M_2(\mathbb{C})$ | $\{0,\tfrac12,1\}$ | only the triple gives this list exactly; see §14 |
+| $M_3(\mathbb{C})$ | $\{0,\tfrac12,1,2\}$ | non-principal triples give $\tfrac12$ |
+| $M_5(\mathbb{C})$ | $\{0,\tfrac12,1,\tfrac32,2,3,4\}$ | no $\tfrac52$ or $\tfrac72$ |
 
-**The hybrid.** Dimension is the simplest carrier-dependent definition, and it is the one most easily mistaken for an algebra invariant: it gives $\tfrac12$ for $\mathbb{B}$, but it is not Morita invariant, because it uses the vector-space dimension rather than the categorical one.
+The table is a union, not a method. On $M_2(\mathbb{C})$ the union coincides with the triple list; no other single method gives it.
 
-**Which to use.** For the physical spin, use a carrier-dependent definition with both ingredients: the spectral spin with a full string, or the regular spin for the ladder. The minimal data are a carrier $V$ and a direction $S$ with a nilpotent ladder. The triple is one way to package the direction; the pair $(S,u)$ or the chain lemma is another. For a Morita-invariant statement, use the quiver or the twist, and accept that it is $0$ for matrix algebras.
+**The two levels of the answer.** The **possible** list is the union over the definitions; it contains labels that are not physical. The **physical** values are the spins of the triple on the chosen carriers. The possible list contains them; it can be strictly larger, as it is for $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$, and for $M_n$ above the defining spin.
 
-**The triple's place.** The triple is the **alignment** of the grading and the ladder. It is not the only way to define a spin, and it is not needed for the width, the dimension, the nilpotency index, or the quiver. It is needed when the spin is required to live in the algebra rather than in the endomorphism algebra of a carrier. The corpus's choice is the strong one; the alternatives are weaker or different, not wrong.
+### The Four Notions in the Corpus
 
-## 9. Checks
+The corpus uses four distinct notions, and the confusion between them is the source of the apparent contradictions.
 
-**The regular spin of $M_n$.** For $n=2,\dots,5$ and every partition $\lambda$ of $n$, seventeen cases in all, the Jordan type of $L_u$ on $M_n$ has maximal block $\lambda_1$; hence $j=(\lambda_1-1)/2$. The computation uses the ranks of the powers of $L_u$ and the exact block count.
+1. **Weight spin.** The top weight of a chosen carrier, with unit step. This is the triple spin $j$ of §7. It is the defining spin $(n-1)/2$ for $M_n$ and $\tfrac12$ for the spinor of $\mathbb{H}$.
+2. **Adjoint spin.** The top weight of the adjoint carrier, $2j$. This is the integer spin of §8. It is $1$ for the vector part of $\mathbb{H}$ and $n-1$ for the adjoint of $M_n$. It is a different carrier, not a doubling of the same spin.
+3. **Ladder spin.** The length of the Jordan chain, $(\ell-1)/2$. This is intrinsic to $M_n$ and gives the same values as the defining weight for the principal triple. It fails on division algebras.
+4. **Level spin.** The number of spectral levels, $(r-1)/2$. This is scale-free, gives $\tfrac12$ to $\mathbb{H}$ and $\mathbb{D}$, and gives the defining list to $M_n$. It is the most general intrinsic definition, but it does not require a ladder.
 
-**The biquaternion.** $\mathbb{B}\cong M_2(\mathbb{C})$; for $u=E_{12}$ the left multiplication on $M_2$ has blocks $2,2$; the maximal block is $2$; $j=\tfrac12$.
+On $M_2(\mathbb{C})$ the four notions are not equivalent. Adjoint spin gives $\{0,1\}$ and misses $\tfrac12$. Ladder spin gives $\{0,\tfrac12\}$ and misses $1$. Level spin gives $\{0,\tfrac12\}$ and misses $1$. Only the triple, read on the trivial, defining, and adjoint carriers, reproduces $\{0,\tfrac12,1\}$; §14 records the audit.
 
-**The Casimir.** On $W_j$ for $j=\tfrac12,1,\tfrac32,2$, the element $C=S^2+\tfrac12(UV+VU)$ is $j(j+1)I$; the triple relations $[S,U]=U$, $[S,V]=-V$, $[U,V]=2S$ hold.
+The half-angle of the polar operators is not a fifth notion. It is the normalization of the generator of the spin-$\tfrac12$ carrier. The integer spin of the adjoint is numerically twice the defining spin for the principal triple, but it is the spin of the adjoint carrier; it is not a redefinition of the defining spin. The quiver and the ribbon twist are shadows.
 
-**The spectra.** $\{-\tfrac12,\tfrac12\}$ has step $1$, $r=2$, spin $\tfrac12$ and top $\tfrac12$; $\{-1,0,1\}$ has step $1$, $r=3$, spin $1$ and top $1$; $\{-\tfrac12,0,\tfrac12\}$ has step $\tfrac12$, $r=3$, spin $1$ and top $\tfrac12$. The naive minimal-polynomial formula $(r-1)/2$ gives the spin; the step gives the top weight, so the two must not be conflated.
+## 13. Checks
 
-**The dual numbers.** $L_\varepsilon$ on $k[\varepsilon]/\varepsilon^2$ has a single block of size $2$; $j=\tfrac12$. The algebra has no off-diagonal Peirce chain and no spin pair in itself; the spin is in $\operatorname{End}_k(A)$.
+**The quaternion adjoint.** With $S=i$, the derivation $\operatorname{ad}_i$ acts on the basis $1,e_x,e_y,e_z$ by
+$$
+\operatorname{ad}_i(1)=0,\quad
+\operatorname{ad}_i(e_x)=2e_y,\quad
+\operatorname{ad}_i(e_y)=-2e_x,\quad
+\operatorname{ad}_i(e_z)=0.
+$$
+The eigenvalues are $0,0,\pm2i$; the level spin is $1$. The Hermitian generator $J_z=\tfrac12\operatorname{ad}_{ie_z}$ has eigenvalues $0,\pm1$; the spin is $1$.
 
-**$\mathbb{C}\times\mathbb{C}$.** The only nilpotent is $0$; the only idempotents are $0,1$; the regular spin is $0$. The element $S=(1,-1)$ has weights $\pm1$, width $2$ and spectral spin $\tfrac12$, but no ladder; the label is spectral, not physical.
+**The quaternion spectral label.** With $S=i$, the eigenvalues are $\pm i$; $r=2$, $d=2i$, and the level spin is $\tfrac12$. The top weight is $i$. The two numbers $\tfrac12$ and $i$ are different objects; only the first is the spin.
 
-**The path algebra $A_2$.** The regular spin is $\tfrac12$; the left simple modules are one-dimensional, so the left list is $\{0\}$; the Peirce chain $e_1\to e_2$ has length $2$ and spin $\tfrac12$; the quiver spin is $\tfrac12$.
+**The split-complex corner.** With $e_\pm=\tfrac12(1\pm j)$, every product is commutative, so $e_+\mathbb{D}e_-=0$. The longest Peirce chain has length $1$; the spin is $0$. The spectral element $S=(1,-1)$ has eigenvalues $\pm1$ and spin $\tfrac12$; the two definitions answer different questions.
 
-**Morita.** $M_2(\mathbb{C})$ is Morita equivalent to $\mathbb{C}$; the dimension list is $\{\tfrac12\}$ versus $\{0\}$; hence the dimension definition is not Morita invariant. The quiver spin is $0$ for both.
+**The matrix content.** For $M_n$ with the principal triple, the adjoint decomposes as
+$$
+\mathfrak{gl}_n=W_0\oplus W_1\oplus\cdots\oplus W_{n-1},
+\qquad
+\dim W_k=2k+1,
+\qquad
+\sum_{k=0}^{n-1}(2k+1)=n^2.
+$$
+For $n=2$ the content is $0,1$; for $n=3$ it is $0,1,2$; for $n=5$ it is $0,1,2,3,4$. The defining carrier has spin $(n-1)/2$; the adjoint top is $n-1$.
 
-**The coadjoint orbit.** For $\mathfrak{su}(2)$ with $\lambda=\operatorname{diag}(\tfrac12,-\tfrac12)$ and the normalization in which the unit sphere has area $4\pi$, the orbit has area $2\pi$; $j=\operatorname{Area}/(4\pi)=\tfrac12$. The orbit of $\operatorname{diag}(1,-1)$ has area $4\pi$ and $j=1$.
+**The lists.** The spectral list of $M_n$ is $0,\tfrac12,\ldots,(n-1)/2$, realized by $\operatorname{diag}(j,j-1,\ldots,-j)$ with repeated eigenvalues. The all-triple list is the union of that list with $0,1,\ldots,n-1$, realized by a nilpotent of index $\ell$ on a block of size $\ell$ and a scalar on the rest.
 
-**The count.** The computations cover seventeen partitions for $n\le5$, four spins for the Casimir, three spectra, and the small examples; all are within the hundred-element limit.
+## 14. The Audit on $M_2(\mathbb{C})$
 
-## 10. Open Questions
+**The criterion.** The biquaternion sector has three observed spin values: $0$ for the scalar, $\tfrac12$ for the fermion, and $1$ for the vector. Since $\mathbb{B}\cong M_2(\mathbb{C})$, a method is pertinent for the sector only if, applied to $M_2(\mathbb{C})$, it produces exactly
+$$
+\{0,\ \tfrac12,\ 1\}.
+$$
+A method that misses a value, adds a value, or gives a different value is non-pertinent, however interesting it is elsewhere. This is the test of usefulness, not of generality.
 
-1. **A canonical direction.** Is there a canonical choice of $S$ or $u$ on a general algebra? The Morita theorem says no for the physical spin; the quiver and the twist are the canonical shadows.
-2. **The gap between the regular and quiver spins.** For $M_n$ the regular spin is $(n-1)/2$ and the quiver spin is $0$; the gap is the matrix size. Is there an intermediate invariant that accounts for the multiplicity of the simple module in the regular representation?
-3. **The spin list.** Is there an algorithm that computes the full spectrum $L(A)\cup R(A)\cup J(A)$ from a presentation of $A$? The left and regular lists are finite, but the adjoint list over all spin elements is not obviously bounded by the quiver.
-4. **Higher rank.** For $\operatorname{rank}\mathfrak{g}\ge2$, the spin is a highest weight, not a number. Is there a canonical contraction that agrees with the physical spin in every case? The $\mathfrak{so}(5)$ example suggests no.
-5. **Loops and off-diagonal chains.** The Peirce chain sees off-diagonal arrows; the regular spin sees loops. The dual numbers and the path algebra $A_2$ are the two minimal examples. Is there a single combinatorial object that unifies them?
-6. **The dual numbers.** Does the corpus want to count the dual numbers as spin-$\tfrac12$? The corpus's definition says no, because there is no pair in the algebra; the regular definition says yes, because there is a ladder in $\operatorname{End}_k(A)$. The answer is a choice of where the triple lives.
+**The recheck.** The table applies every method of §§2–11 to $M_2(\mathbb{C})$. The column "exact?" compares the result with the experimental set.
+
+| method | result on $M_2(\mathbb{C})$ | exact? | reason |
+|---|---|---|---|
+| dimension over $\mathbb{C}$ | $\{\tfrac12\}$ | no | misses $0,1$ |
+| dimension over $\mathbb{R}$ | $\{\tfrac32\}$ | no | wrong value |
+| regular index | $\{\tfrac12\}$ | no | misses $0,1$ |
+| ladder | $\{0,\tfrac12\}$ | no | misses $1$ |
+| Peirce | $\{0,\tfrac12\}$ | no | misses $1$ |
+| quiver | $\{0\}$ | no | wrong value |
+| spectral on $A$ | $\{0,\tfrac12\}$ | no | misses $1$ |
+| triple, principal | $\{0,\tfrac12,1\}$ | yes | — |
+| triple, all | $\{0,\tfrac12,1\}$ | yes | — |
+| adjoint only | $\{0,1\}$ | no | misses $\tfrac12$ |
+| half-angle | $\{0,\tfrac12,1\}$ on three carriers | no | normalization, not a list |
+| highest weight | all $j\ge0$ unrestricted | no | overcomplete |
+| Casimir | all $j\ge0$ unrestricted | no | overcomplete |
+| coadjoint | all $j\ge0$ | no | overcomplete |
+| circle weight | $\{0,\tfrac12\}$ mod $1$ | no | misses $1$ |
+| ribbon twist | $\{0,\tfrac12\}$ | no | misses $1$ |
+
+**The non-pertinent methods.** The list is the result.
+
+- **Wrong value.** The quiver gives $0$, because $M_2(\mathbb{C})$ is Morita equivalent to $\mathbb{C}$. The dimension over $\mathbb{R}$ gives $\tfrac32$, because the real dimension of $\mathbb{C}^2$ is $4$. The circle weight and the ribbon twist see only $0$ and $\tfrac12$ modulo $1$; the value $1$ is invisible.
+- **Incomplete.** The dimension over $\mathbb{C}$ gives only $\tfrac12$. The regular index gives only $\tfrac12$. The ladder and the Peirce chain give $\{0,\tfrac12\}$. The spectral level count on $A$ gives $\{0,\tfrac12\}$. The adjoint gives $\{0,1\}$. Each misses at least one experimental value.
+- **Overcomplete.** The coadjoint orbit, and the highest weight and Casimir taken over all representations, give every $j\ge0$. They do not produce a finite experimental list.
+- **Disguised triple.** The highest weight and the Casimir give $\{0,\tfrac12,1\}$ only when they are evaluated on the three carriers, trivial, defining, and adjoint, that the triple supplies. The spectral count and the dimension also give the set when they are applied to those three carriers. In each case the carriers are the triple's, so the method is a restatement, not an independent definition.
+- **Normalization.** The half-angle gives the coefficient of the angle, not the spin. It equals $\tfrac12$ on the defining carrier and $1$ on the adjoint; the set is read from the carriers, not produced by the half-angle.
+
+**The only pertinent method.** On $M_2(\mathbb{C})$, the triple is the only method that produces exactly $\{0,\tfrac12,1\}$ from the algebra and its modules. The all-triple definition is the intrinsic one; the principal triple coincides with it at $n=2$. The three values are the three carriers: the centre gives $0$, the defining module gives $\tfrac12$, and the adjoint gives $1$.
+
+**What the corpus should take from this.** The ladder, the Peirce chain, the spectral count, the dimension, and the adjoint are descriptions of parts of the biquaternion. They are not definitions of its spin list. The triple is. The polar half-angle is a parametrization of the spin-$\tfrac12$ rotor, not a definition. The integer-spin article's adjoint action is the spin-$1$ carrier, not the whole list. The apparent disagreements between the corpus's articles are the projections of one triple onto different carriers.
 
 ## Summary
 
-- An algebra alone has no spin. A definition names a carrier, a direction, and a rule.
-- The two ingredients are a semisimple grading, which gives the weights, and a nilpotent ladder, which gives the chain. The triple is their alignment.
-- The spectral definitions use the grading; the combinatorial definitions use the ladder; the representation-theoretic definitions use a reductive action; the geometric definitions use an orbit or a circle; the topological definition uses a twist.
-- Every definition has a trivial instance, so every finite-dimensional algebra has a value, often $0$. Positive spin needs nontrivial data.
-- Spin is not Morita invariant: $M_2$ and $\mathbb{C}$ are Morita equivalent but have different physical spins. The quiver and the twist are the Morita-invariant shadows and give $0$ for matrix algebras.
-- The biquaternion has left list $\{\tfrac12\}$, regular list $\{0,\tfrac12\}$ and adjoint list $\{0,1\}$; its spin spectrum is $\{0,\tfrac12,1\}$. $M_n$ has $(n-1)/2$ on the defining carrier and $n-1$ on the adjoint.
-- The dual numbers and the path algebra $A_2$ show that the definitions diverge: the dual numbers have a loop, with regular spin $\tfrac12$ and Peirce spin $0$; $A_2$ has an off-diagonal arrow, with both spins $\tfrac12$.
-- There is no single general definition. The spin of an algebra is a list; a number requires a carrier.
+**There is no single general definition of the spin of an algebra.** There are definitions, each with its data and its range. The algebra alone has a finite list of possible spins, bounded by its dimension; the definitions select subsets of that list. The most general intrinsic definition is the spectral level count; the corpus's physical reading is the triple, which requires a carrier and a ladder. The half-angle is a normalization of the spin-$\tfrac12$ carrier, not the spin. The adjoint spin is the spin of a different carrier, numerically twice the defining spin for the principal triple; it is not a redefinition of the defining spin. The quiver and the ribbon twist are shadows.
 
-## Summary of Notation
+**The six algebras.** The lists are: $\mathbb{C}$ $\{0\}$ or $\{0,\tfrac12\}$; $\mathbb{D}$ $\{0,\tfrac12\}$; $\mathbb{H}$ $\{0,\tfrac12,1\}$ (or $\{0,\tfrac12,1,\tfrac32\}$ with the real dimension); $M_2$ $\{0,\tfrac12,1\}$; $M_3$ $\{0,\tfrac12,1,2\}$; $M_5$ $\{0,\tfrac12,1,\tfrac32,2,3,4\}$. The physical values are the triple spins on the chosen carriers. On $M_2(\mathbb{C})$ they are $0,\tfrac12,1$, the experimental set.
 
-| symbol | meaning |
-|---|---|
-| $A$ | nonzero finite-dimensional unital $k$-algebra |
-| $V$ | finite-dimensional left $A$-module |
-| $S$ | semisimple endomorphism, the spin element |
-| $h=2S$ | root, with doubled weights |
-| $u,v$ | nilpotent ladder elements |
-| $j$ | spin |
-| $W_j$ | irreducible $\mathfrak{sl}_2$-module, dimension $2j+1$ |
-| $\lambda=(\lambda_1,\dots,\lambda_r)$ | partition or Jordan type, $1$-based |
-| $L_x$ | left multiplication by $x$ |
-| $\operatorname{ad}_x$ | commutator by $x$ |
-| $\operatorname{ind}(u)$ | nilpotency index |
-| $\ell$ | chain length |
-| $\ell_Q$ | one plus the maximum arrow length in the quiver |
-| $M_n$ | $M_n(\mathbb{C})$ |
-| $\mathbb{B}$ | biquaternion |
-| $\tilde\Pi_\pm$ | Peirce idempotents |
-| $\vec\Upsilon_\pm$ | Peirce nilpotents |
-| $\tilde\Xi$ | frame root $i\vec e_z$ |
+**The audit is decisive for the biquaternion.** On $M_2(\mathbb{C})$ only the triple gives exactly $\{0,\tfrac12,1\}$. The ladder, the Peirce chain, the spectral count, the dimension, and the adjoint each miss a value or give a wrong one. The highest weight and the Casimir are overcomplete unless they are restricted to the triple's carriers. §14 lists the non-pertinent methods and the reason for each.
 
 ## Further Reading
 
-- [The General Definition of Spin](../articles_maths/the-general-definition-of-spin.html), for the spin pair, the triple and the structure theorem.
-- [The Weight of a Frame Root and the Spin Quantum Number](../articles_maths/the-weight-of-a-frame-root-and-the-spin-quantum-number.html), for the weight-first reading.
-- [The Spin of a Biquaternion](../articles_maths/the-spin-of-a-biquaternion.html), for the biquaternion's three carriers.
-- [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](../articles_maths/the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the chain and the adjoint content.
-- [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint reading and the material sector.
-- [The Casimir Operator](../articles_maths/the-casimir-operator.html), for the eigenvalue $j(j+1)$.
-- [Representations of Lie Algebras](../articles_maths/representations-of-lie-algebras.html), for the highest-weight classification.
-- [Nilpotent Elements and the Jordan–Chevalley Decomposition](../articles_maths/nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the additive decomposition.
-- [Modules over $k[x]$ and the Jordan Form](../articles_maths/modules-over-kx-and-the-jordan-form.html), for the Jordan type.
-- [Peirce Coordinates and Companion Nilpotents](../articles_maths/peirce-coordinates-and-companion-nilpotents.html), for the frame and its nilpotents.
-- [The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$](../articles_maths/the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html), for the orbit picture.
-- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html), for the separation of the half-angle, the Peirce index and the chirality.
+- [The General Definition of Spin](../articles_maths/the-general-definition-of-spin.html), for the triple definition and the original table of cases.
+- [The Approaches to Spin: Weight, Half-Angle, Ladder and Adjoint](../articles_maths/the-approaches-to-spin-weight-half-angle-ladder-and-adjoint.html), for the four notions in the corpus.
+- [The Polarisation Operator](../articles_maths/the-polarisation-operator.html), for the polar decomposition and the half-angle.
+- [The Spin of a Biquaternion](../articles_maths/the-spin-of-a-biquaternion.html), for the frame pair and the spin-$\tfrac12$ carrier.
+- [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint spin $1$ of the material sector.
+- [The Spin of the Complex Numbers: The Absence of a Pair](../articles_reserve/the-spin-of-the-complex-numbers-the-absence-of-a-pair.html), for the triple list $\{0\}$.
+- [The Spin of the Split-Complex Numbers: A Root Without a Ladder](../articles_reserve/the-spin-of-the-split-complex-numbers-a-root-without-a-ladder.html), for the gap between the spectral label and the ladder.
+- [The Spin of the Quaternion Algebra: A Worked Computation](../articles_reserve/the-spin-of-the-quaternion-algebra-a-worked-computation.html), for the complexification and the real dimension.
+- [The Spin of the Principal Pair of $M_2(\mathbb{C})$: A Worked Computation](../articles_reserve/the-principal-pair-of-m2c-a-worked-computation.html), for the list $\{0,\tfrac12,1\}$.
+- [The Spin of the Principal Pair of $M_3(\mathbb{C})$: A Worked Computation](../articles_reserve/the-principal-pair-of-m3c-a-worked-computation.html), for the list $\{0,1,2\}$.
+- [The Spin of the Principal Pair of $M_5(\mathbb{C})$: A Worked Computation](../articles_reserve/the-principal-pair-of-m5c-a-worked-computation.html), for the list $\{0,2,4\}$ and the content $0,\ldots,4$.
+- [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](../articles_maths/the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the general adjoint content.
+- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html), for the grading that is not a spin.

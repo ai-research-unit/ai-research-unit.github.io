@@ -1,4 +1,4 @@
-# __The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion__
+# __The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ $$
 \tilde Q=c\,\tilde\Pi,\qquad c=2Q_t\neq0,\qquad \tilde\Pi^{2}=\tilde\Pi,\qquad \tilde\Pi\neq0,e_t,
 $$
 
-so $\langle\tilde Q\rangle_{\natural}=0$ and $B^{2}\neq0$. The two-sided operator is the Hermitian sandwich
+so $\langle\tilde Q\rangle_{\natural}=0$ and $B^{2}\neq0$. The sandwich is the Hermitian congruence
 
 $$
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
@@ -31,7 +31,7 @@ $$
 \boxed{\;\Theta_{\tilde Q}=4a^{2}\,\Theta_{\tilde Q_0}\;}
 $$
 
-because the positive factor $\Theta_{\tilde Q_H}=4a^{2}\Theta_P$ acts as the scalar $4a^{2}$ on the image of $\Theta_{\tilde Q_0}$. The operator has rank one, spectrum $\{\lvert c\rvert^{2},0,0,0\}$ and is diagonalizable; it is an oblique projection onto a null line, not a nilpotent. The wall $B^{2}=0$ is the boundary at which this projection gives way to the square-zero sandwich of *The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion*.
+because the positive factor $\Theta_{\tilde Q_H}=4a^{2}\Theta_P$ acts as the scalar $4a^{2}$ on the image of $\Theta_{\tilde Q_0}$. The operator has rank one, spectrum $\{\lvert c\rvert^{2},0,0,0\}$ and is diagonalizable; it is an oblique projection onto a null line, not a nilpotent. The wall $B^{2}=0$ is the boundary at which this projection gives way to the square-zero sandwich of *The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion*.
 
 The article is organized as follows. §*The Polar Pair* recalls the rank-one pair and the matrix model. §*The Sandwich* computes the closed form, the rank, the spectrum, the image and the kernel. §*The Polar Decomposition of the Sandwich* reads the pair and proves the scalar collapse. §*The Two Slots* gives the Peirce and singular-vector pictures and the cancellation of the phase. §*The Exponential* computes the one-parameter group. §*Worked Examples* treats a Hermitian and a non-Hermitian idempotent.
 
@@ -345,7 +345,7 @@ $$
 =\exp\bigl(t\Theta_{\tilde Q}\bigr).
 $$
 
-The generator is singular, but the one-parameter group it generates is invertible. The one-sided rate is $c$; the two-sided rate is $\lvert c\rvert^{2}$, the squared modulus. The generator is now an oblique projection rather than a conformal Lorentz transformation.
+The generator is singular, but the one-parameter group it generates is invertible. The one-sided rate is $c$; the sandwich rate is $\lvert c\rvert^{2}$, the squared modulus. The generator is now an oblique projection rather than a conformal Lorentz transformation.
 
 ## Worked Examples
 
@@ -433,10 +433,10 @@ The sandwich is $\Theta_{\tilde Q}=4\Theta_{\tilde\Pi}$, with rank one, eigenval
 
 ## Further Reading
 
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html), for the general sandwich and the conformal Lorentz action.
-- [The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent three-plus-one sandwich at the spectral wall of the regular sector.
+- [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the general sandwich and the conformal Lorentz action.
+- [The Sandwich of a N-Regular, Spectrally Degenerate Biquaternion](the-sandwich-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent three-plus-one sandwich at the spectral wall of the regular sector.
 - [The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the companion one-sided operator and the phase.
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion](the-two-sided-operator-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent sandwich of the same sector pair.
+- [The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion](the-sandwich-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the nilpotent sandwich of the same sector pair.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector, the spinors and the eigenbasis.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the wall $B^{2}=0$ and the canonical Jordan pair.

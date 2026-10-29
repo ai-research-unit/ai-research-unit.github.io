@@ -281,7 +281,7 @@ On the whole algebra the rank of $L_{\tilde Q}$ is $4$ in the $N$-regular case a
 
 *Proof.* The determinant of a square matrix is nonzero exactly when the matrix is invertible, and $\det\mathsf L_+=N$. A nonzero singular $2\times2$ matrix has rank one. On $\mathbb B$ the map $L_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, and in $\mathbb B\cong M_2(\mathbb{C})$ this is exactly $N(\tilde Q)\neq0$; a nonzero singular matrix acts on $M_2(\mathbb{C})$ by left multiplication with rank $2$.
 
-**The sandwich.** The Hermitian sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ has rank $4$ for $N$-regular $\tilde Q$. For nonzero $N$-degenerate $\tilde Q$ it has rank $1$ and its image is a null line, as computed in *The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion* and in its spectrally degenerate companion. The right factor does not preserve the spinor planes, so this rank is not twice the rank on a plane; the two-sided collapse is stronger than the one-sided one.
+**The sandwich.** The Hermitian sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ has rank $4$ for $N$-regular $\tilde Q$. For nonzero $N$-degenerate $\tilde Q$ it has rank $1$ and its image is a null line, as computed in *The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion* and in its spectrally degenerate companion. The right factor does not preserve the spinor planes, so this rank is not twice the rank on a plane; the two-sided collapse is stronger than the one-sided one.
 
 **The vector carrier behaves differently.** On $V=\ker\operatorname{tr}$ the commutator $\mathrm{ad}_{\tilde Q}$ has rank $2$ for every non-central $\tilde Q$, whether $N$-regular or not, and rank $0$ exactly when $\tilde Q$ is central. The rank drop on the null cone is therefore a property of the spinor action alone: it is the disappearance of one of the two components of the spinor, not a change of carrier.
 
@@ -471,7 +471,7 @@ This is the only definition of spin in the corpus. The element $S$ is the **spin
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the half-angle theorem.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the integer-spin reading of the adjoint action.
 - [Operators of the Polar Word: The Common Framework](operators-of-the-polar-word-the-common-framework.html), for the three operators and the polar word.
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the rank one of the sandwich on the null cone.
+- [The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion](the-sandwich-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the rank one of the sandwich on the null cone.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the four sectors and the two conditions.
 - [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m2c-representation-spin-qubits-and-the-bloch-vector.html), for the Hermitian form and the expectation values.
 - [Peirce Carriers and Inner Conjugation](peirce-carriers-and-inner-conjugation.html), for the spinor adjoint.

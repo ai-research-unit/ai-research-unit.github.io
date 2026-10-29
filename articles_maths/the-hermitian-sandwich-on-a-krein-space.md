@@ -12,13 +12,13 @@ the two-sided operator built from $Q$ and its indefinite adjoint. It is the inde
 
 The contrast with the Hilbert case is the interesting part. In Hilbert space the sandwich by a unitary $U$ is a unitary equivalence, so it preserves the Hilbert norm, the spectrum, the positive cone and every spectral subspace. In a Krein space the sandwich by a $J$-unitary $Q$ preserves the indefinite form but not the Hilbert inner product, because a $J$-unitary operator need not be Hilbert-unitary: it is a form-isometry of the indefinite geometry, and the Hilbert norm of the sandwich generally changes. What is preserved is the indefinite geometry — the form, the $J$-positivity, the $J$-self-adjointness, the $J$-unitarity — and what is not preserved is the Hilbert metric; the sandwich therefore fails to transport the spectrum, and this failure is the reason the indefinite theory needs the modular and spectral tools of *Spectral Theory on Krein Spaces* rather than the Hilbert spectral theorem.
 
-This article fixes the dagger sandwich, its adjoint and composition laws, the preservation of the form and of $J$-positivity, the kernel and the image, the automorphism statement on the unitary slice, and the contrast with the Hilbert case.
+This article fixes the bilinear sandwich, its adjoint and composition laws, the preservation of the form and of $J$-positivity, the kernel and the image, the automorphism statement on the unitary slice, and the contrast with the Hilbert case.
 
 The indefinite adjoint is *J-Self-Adjoint and J-Unitary Operators*; the fundamental symmetry and the form are *The Fundamental Symmetry* and *Krein Spaces*; the $J$-positive cone and the order are *The J-Positive Cone and the J-Order* and *Krein Algebras*; the Hilbert-algebra sandwich is *The Adjoint of the Sandwich on a Hermitian Algebra* and *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; the spectral consequences are *Spectral Theory on Krein Spaces*. Those are cited. The space is $K$ with form $[\cdot,\cdot]$, fundamental symmetry $J$, Hilbert adjoint $*$ and indefinite adjoint $\dagger$.
 
-## The Dagger Sandwich
+## The Hermitian Sandwich
 
-**Definition.** For bounded operators $Q, T$ the **Hermitian sandwich** (or **dagger sandwich**) is
+**Definition.** For bounded operators $Q, T$ the **Hermitian sandwich**, the bilinear sandwich read with the indefinite form, is
 
 $$
 H_{Q}(T) = Q\,T\,Q^{\dagger} , \qquad Q^{\dagger} = JQ^{*}J .
@@ -36,7 +36,7 @@ $$
 
 **Proof.** $(\alpha Q)^{\dagger} = \bar\alpha Q^{\dagger}$ and $(\alpha Q)T(\bar\alpha Q^{\dagger}) = |\alpha|^{2}QTQ^{\dagger}$.
 
-**Remark (the Hilbert-algebra sandwich is the definite case).** When $J = \mathrm{id}$ the indefinite adjoint is the Hilbert adjoint, the dagger sandwich is the sandwich $\Theta_Q(T) = QTQ^{*}$ of a Hilbert algebra, and every statement below reduces to the Hilbert one; the indefinite theory is the same family of operations read with a form of nonzero rank.
+**Remark (the Hilbert-algebra sandwich is the definite case).** When $J = \mathrm{id}$ the indefinite adjoint is the Hilbert adjoint, the bilinear sandwich is the sandwich $\Theta_Q(T) = QTQ^{*}$ of a Hilbert algebra, and every statement below reduces to the Hilbert one; the indefinite theory is the same family of operations read with a form of nonzero rank.
 
 ## Preservation of the Form and of J-Positivity
 

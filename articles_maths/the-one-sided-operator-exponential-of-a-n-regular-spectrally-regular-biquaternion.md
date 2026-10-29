@@ -100,7 +100,7 @@ L_{\tilde U_{\mathrm b}}=\exp\Bigl(i\tfrac{\psi}{2}\,L_{\vec u_{\mathrm b}}\Bigr
 \Theta_{\tilde U_{\mathrm b}}\ \Longrightarrow\ \text{rapidity }\psi
 \; }.
 $$
-A spinor transforms by half of what a vector transforms by, and the operator that produces the half is the one-sided one. This is the precise sense in which the spin representation of the polar word is the one-sided operator, and the vector representation is the two-sided one. The spectral form of the same statement is in §*The Spectrum of the Sandwich* of *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion* and §*The Pure Factors and the Full Spin* of *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*.
+A spinor transforms by half of what a vector transforms by, and the operator that produces the half is the one-sided one. This is the precise sense in which the spin representation of the polar word is the one-sided operator, and the vector representation is the two-sided one. The spectral form of the same statement is in §*The Spectrum of the Sandwich* of *The Sandwich of a N-Regular, Spectrally Regular Biquaternion* and §*The Pure Factors and the Full Spin* of *The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion*.
 
 The following table collects the pure factors. The last column is the nontrivial factor in the spectrum of the two-sided operator, that is, in the products $\lambda_i\bar\lambda_j$.
 
@@ -190,7 +190,7 @@ The one-sided operator is the spinor action. On one Peirce column the operator i
 
 The weights add on the tensor product. For the rotor they are $(\theta,0,0,-\theta)$ and for the boost $(\psi,0,0,-\psi)$; the factor two sits in the pairing of the two slots, not in a rescaling of the angle. The one-sided operator sees one slot and does not double.
 
-The four factors give the table of exponents. The scale keeps $\ln r$, the phase keeps $i\alpha$, the boost keeps $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ and the rotor keeps $\tfrac{\theta}{2}\vec u_{\mathrm r}$. The two-sided output is $2\ln r$, $0$, $\psi$ and $\theta$; the doubling and the cancellation are the subject of *The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*.
+The four factors give the table of exponents. The scale keeps $\ln r$, the phase keeps $i\alpha$, the boost keeps $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ and the rotor keeps $\tfrac{\theta}{2}\vec u_{\mathrm r}$. The two-sided output is $2\ln r$, $0$, $\psi$ and $\theta$; the doubling and the cancellation are the subject of *The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion*.
 
 ## Summary of Notation
 
@@ -211,7 +211,7 @@ The four factors give the table of exponents. The scale keeps $\ln r$, the phase
 ## Further Reading
 
 - [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the algebraic companion: the composition laws, the eigenbasis, the block form and the image.
-- [The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the doubling rule and the cancellation of the phase on the other side.
+- [The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the doubling rule and the cancellation of the phase on the other side.
 - [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the element exponential, its logarithm and its spectral reading.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four exponents read in the four coordinate blocks.

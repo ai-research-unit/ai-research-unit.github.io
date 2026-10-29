@@ -19,7 +19,7 @@ $$
 \Phi^{\theta,\rho}_{x}(y) = \theta(x)\,y\,\rho(x) .
 $$
 
-The four members of the family are the **inner conjugation** $\Phi^{\mathrm{id},\mathrm{inv}}_{x}(y) = x\,y\,x^{-1}$, the **signed inner conjugation** $\Phi^{\alpha,\mathrm{inv}}_{x}(y) = \alpha(x)\,y\,x^{-1}$, the **Hermitian sandwich** $\Phi^{\mathrm{id},\dagger}_{x}(y) = x\,y\,x^{\dagger}$, and the **signed Hermitian sandwich** $\Phi^{\alpha,\dagger}_{x}(y) = \alpha(x)\,y\,x^{\dagger}$; the last two are the mixed operators that combine the grading with the adjoint.
+The four members of the family are the **inner conjugation** $\Phi^{\mathrm{id},\mathrm{inv}}_{x}(y) = x\,y\,x^{-1}$, the **signed inner conjugation** $\Phi^{\alpha,\mathrm{inv}}_{x}(y) = \alpha(x)\,y\,x^{-1}$, the **Hermitian sandwich** $\Phi^{\mathrm{id},\dagger}_{x}(y) = x\,y\,x^{\dagger}$, and the **signed Hermitian sandwich** $\Phi^{\alpha,\dagger}_{x}(y) = \alpha(x)\,y\,x^{\dagger}$; the last two are the mixed operators that combine the grading with the adjoint. The last two are the **bilinear sandwich** and its signed version in the vocabulary of the biquaternion layer. The superscript $\dagger$ on $\Phi$ marks the slot that carries the adjoint; it is not part of the operator's name.
 
 **Proposition (multiplicativity in $x$).** For each fixed pair $(\theta,\rho)$ the assignment $x\mapsto\Phi^{\theta,\rho}_{x}$ is multiplicative on the group of units:
 
@@ -81,7 +81,7 @@ and in every case $\Phi^{\mathrm{id},\rho}_{x}$ is the **inner conjugation** $\m
 
 ### Adjoints and Isometries
 
-**Theorem (adjoint).** With respect to the Hermitian–Schmidt form $\langle y,z\rangle = \mathrm{Sc}(y^{\dagger}z)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, the adjoint of the dagger sandwich is the dagger sandwich of the daggered element,
+**Theorem (adjoint).** With respect to the Hermitian–Schmidt form $\langle y,z\rangle = \mathrm{Sc}(y^{\dagger}z)$ of *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, the adjoint of the bilinear sandwich is the bilinear sandwich of $x^{\dagger}$,
 
 $$
 \boxed{\;\bigl(\Phi^{\theta,\dagger}_{x}\bigr)^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}} \qquad (\theta = \mathrm{id},\alpha)\;},
@@ -91,7 +91,7 @@ which was checked for both twists.
 
 **Proof.** This is the two-sided adjoint theorem of *The Adjoint of the One-Sided Action with Hermitian Adjoint*: all the standard involutions commute pairwise and each commutes with the dagger, so the argument transfers verbatim.
 
-**Theorem (isometry).** The dagger sandwich is an isometry of the module form for every $x$ in the unitary slice,
+**Theorem (isometry).** The bilinear sandwich is an isometry of the module form for every $x$ in the unitary slice,
 
 $$
 \boxed{\;x\in U \ \Longrightarrow \ \bigl(\Phi^{\theta,\dagger}_{x}(y),\Phi^{\theta,\dagger}_{x}(z)\bigr) = (y,z) \quad \text{for all } y,z\;} ,
@@ -109,13 +109,13 @@ which for the unsigned twist is exactly $x^{\dagger}x = 1$, that is $x\in U$. In
 
 ### Algebra Homomorphisms
 
-**Theorem (homomorphism).** The unsigned dagger sandwich is an algebra homomorphism exactly on the slice:
+**Theorem (homomorphism).** The unsigned bilinear sandwich is an algebra homomorphism exactly on the slice:
 
 $$
 \Phi^{\mathrm{id},\dagger}_{x}(yz) = \Phi^{\mathrm{id},\dagger}_{x}(y)\,\Phi^{\mathrm{id},\dagger}_{x}(z) \ \ \text{for all } y,z \iff x^{\dagger}x = 1 \iff x\in U ,
 $$
 
-and on the slice it is the inner conjugation $\mathrm{Ad}_x$, an automorphism; this was checked with no mismatch in four hundred tests. The signed dagger sandwich is a homomorphism exactly for $x\in U$ with $x$ even, and for $x\in U$ odd it is **anti-multiplicative** with the sign $-1$, $\Phi^{\alpha,\dagger}_{x}(yz) = -\Phi^{\alpha,\dagger}_{x}(y)\Phi^{\alpha,\dagger}_{x}(z)$.
+and on the slice it is the inner conjugation $\mathrm{Ad}_x$, an automorphism; this was checked with no mismatch in four hundred tests. The signed bilinear sandwich is a homomorphism exactly for $x\in U$ with $x$ even, and for $x\in U$ odd it is **anti-multiplicative** with the sign $-1$, $\Phi^{\alpha,\dagger}_{x}(yz) = -\Phi^{\alpha,\dagger}_{x}(y)\Phi^{\alpha,\dagger}_{x}(z)$.
 
 **Proof.** $\Phi^{\mathrm{id},\dagger}_{x}(yz) = xyzx^{\dagger}$ and $\Phi^{\mathrm{id},\dagger}_{x}(y)\Phi^{\mathrm{id},\dagger}_{x}(z) = xy(x^{\dagger}x)zx^{\dagger}$, so equality for all $y,z$ forces $x^{\dagger}x = 1$; the signed case is the sign $(-1)^{|x|}$ times the unsigned one on homogeneous slice elements by the collapse theorem.
 
@@ -135,7 +135,7 @@ In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$ the slice is 
 
 The family $\Phi^{\theta,\rho}_{x}(y) = \theta(x)y\rho(x)$, with $\theta\in\{\mathrm{id},\alpha\}$ and $\rho\in\{\mathrm{inv},\dagger\}$, contains the **inner conjugation**, the **signed inner conjugation**, the **Hermitian sandwich** and the **signed Hermitian sandwich**, and for each pair $(\theta,\rho)$ the assignment $x\mapsto\Phi^{\theta,\rho}_{x}$ is multiplicative on the units. The two defects are exact: the **horizontal** defect is $\Phi^{\theta,\dagger}_{x}\circ(\Phi^{\theta,\mathrm{inv}}_{x})^{-1} = R_{xx^{\dagger}}$, the right multiplication by $xx^{\dagger}$, and the **vertical** defect is $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi^{\mathrm{id},\rho}_{x}$, the left multiplication by $\alpha(x)x^{-1}$; for homogeneous $x$ the vertical defect is the scalar $(-1)^{|x|}$.
 
-Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the inverse, the signed is the unsigned up to $(-1)^{|x|}$ for homogeneous $x$, and the whole family collapses onto the inner conjugation $\mathrm{Ad}_x$, which is the operator-level reason the involutive, the Hermitian and the signed theories agree there and only there. The dagger sandwich has adjoint $(\Phi^{\theta,\dagger}_{x})^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}}$, it is an isometry of the module form for every $x\in U$ (and an isometry at all only when $\theta(x^{\dagger}x)\,x^{\dagger}x = 1$, which for the unsigned twist is the slice condition), and it is an algebra homomorphism exactly for $x\in U$, where it is the inner conjugation; the signed operators are multiplicative up to the degree sign, exactly multiplicative only on the even part.
+Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the inverse, the signed is the unsigned up to $(-1)^{|x|}$ for homogeneous $x$, and the whole family collapses onto the inner conjugation $\mathrm{Ad}_x$, which is the operator-level reason the involutive, the Hermitian and the signed theories agree there and only there. The bilinear sandwich has adjoint $(\Phi^{\theta,\dagger}_{x})^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}}$, it is an isometry of the module form for every $x\in U$ (and an isometry at all only when $\theta(x^{\dagger}x)\,x^{\dagger}x = 1$, which for the unsigned twist is the slice condition), and it is an algebra homomorphism exactly for $x\in U$, where it is the inner conjugation; the signed operators are multiplicative up to the degree sign, exactly multiplicative only on the even part.
 
 ## Summary of Notation
 
@@ -149,7 +149,7 @@ Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the i
 | $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi^{\mathrm{id},\rho}_{x}$ | Vertical defect |
 | $\alpha(x)x^{-1} = (-1)^{|x|}$ | Vertical defect for homogeneous $x$ |
 | $x\in U$: family collapses onto $\mathrm{Ad}_x$ | Slice agreement |
-| $(\Phi^{\theta,\dagger}_{x})^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}}$ | Adjoint of the dagger sandwich |
+| $(\Phi^{\theta,\dagger}_{x})^{*} = \Phi^{\theta,\dagger}_{x^{\dagger}}$ | Adjoint of the bilinear sandwich |
 
 ## Further Reading
 

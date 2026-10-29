@@ -201,13 +201,13 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [One-Sided Operators on the Biquaternion Algebra](../articles_maths/one-sided-operators-on-the-biquaternion-algebra.html)
 - [Operators of the Polar Word: The Common Framework](../articles_maths/operators-of-the-polar-word-the-common-framework.html)
 - [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html)
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html)
+- [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html)
 - [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-regular-spectrally-degenerate-biquaternion.html)
-- [The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-two-sided-operator-of-a-n-regular-spectrally-degenerate-biquaternion.html)
+- [The Sandwich of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-of-a-n-regular-spectrally-degenerate-biquaternion.html)
 - [The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-degenerate-spectrally-regular-biquaternion.html)
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-operator-of-a-n-degenerate-spectrally-regular-biquaternion.html)
+- [The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-a-n-degenerate-spectrally-regular-biquaternion.html)
 - [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-two-sided-operator-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
+- [The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
 - [The Sandwich in the $M_2(\mathbb{C})$ Model](../articles_maths/the-sandwich-in-the-m2c-model.html)
 - [The Sandwich in the $M_4(\mathbb{C})_L$ Model](../articles_maths/the-sandwich-in-the-m4c-l-model.html)
 
@@ -256,7 +256,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Hamilton Root Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html)
 - [The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html)
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html)
-- [The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html)
+- [The Sandwich Exponential of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-exponential-of-a-n-regular-spectrally-regular-biquaternion.html)
 
 #### Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion
 
@@ -268,7 +268,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Hamilton Root Pairing of the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html)
 - [The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html)
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html)
-- [The Two-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-two-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html)
+- [The Sandwich Exponential of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html)
 
 ### Geometry
 

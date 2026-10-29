@@ -5,9 +5,9 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the one algebra in which every object of the Hermitian theory can be written down in coordinates and checked by hand. It is eight-dimensional over $\mathbb{R}$ and four-dimensional over $\mathbb{C}$, it is isomorphic to the algebra $M_2(\mathbb{C})$ of two-by-two complex matrices, its four conjugations form the Klein four-group of *The Group of Involutions*, and the Hermitian sandwich on it is the map that produces the Lorentz transformation of *Biquaternion Rotations and Lorentz Transformations*. This article is the example article of the Hermitian-adjoint group: it takes the general results — the operator $\Theta_x$, the identities on the Clifford group, the forms, positivity, the unitary slice, complete positivity — and instantiates them in $\mathbb{B}$, so that the reader has one algebra in which all of them are visible at once.
 
-The plan is to recall the dagger of the biquaternion algebra, to identify the general sandwich with the dagger sandwich already used in the corpus, to read off the general identities of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* in the coordinates of the involution lattice, to compute the two sectors and the unitary slice, to see that the dagger of this algebra is a positive involution in the sense of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*, and to identify the slice as $\mathrm{U}(2)$ with determinant-one part $\mathrm{Spin}(3)$. The article carries an example and points to the corpus for the applications.
+The plan is to recall the dagger of the biquaternion algebra, to identify the general sandwich with the bilinear sandwich already used in the corpus, to read off the general identities of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* in the coordinates of the involution lattice, to compute the two sectors and the unitary slice, to see that the dagger of this algebra is a positive involution in the sense of *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*, and to identify the slice as $\mathrm{U}(2)$ with determinant-one part $\mathrm{Spin}(3)$. The article carries an example and points to the corpus for the applications.
 
-The algebra is *The Biquaternion Algebra* and *The Realification and the Effect of the Change of Scalars*; the four conjugations are *The Group of Involutions*; the matrix model is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*; the Hermitian and anti-Hermitian subspaces are *The Six Subspaces*; the dagger sandwich and its Lorentzian application are *Biquaternion Rotations and Lorentz Transformations*; the general operator is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; and the general forms, positivity and slice are *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* and *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
+The algebra is *The Biquaternion Algebra* and *The Realification and the Effect of the Change of Scalars*; the four conjugations are *The Group of Involutions*; the matrix model is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*; the Hermitian and anti-Hermitian subspaces are *The Six Subspaces*; the bilinear sandwich and its Lorentzian application are *Biquaternion Rotations and Lorentz Transformations*; the general operator is *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint*; and the general forms, positivity and slice are *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*, *The Blade Form and the Hermitian Structure with Hermitian Adjoint*, *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* and *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
 
 ## The Dagger of the Biquaternion Algebra
 
@@ -33,13 +33,13 @@ so ${}^{*}$ is a positive involution of $\mathbb{B}$ and $\mathbb{B}$ is in the 
 
 ## The Operator
 
-**Proposition (the sandwich is the dagger sandwich of the corpus).** The operator of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* specialized to $\mathbb{B}$ is the map
+**Proposition (the sandwich is the bilinear sandwich of the corpus).** The operator of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* specialized to $\mathbb{B}$ is the map
 
 $$
 \boxed{\;\Theta_{\tilde{Q}_1}(x) = \tilde{Q}_1\,x\,\tilde{Q}_1^{*} = \mathrm{H}_{\tilde{Q}_1}(x)\;}
 $$
 
-of *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion*, §*The Sandwich of the Word*. Its two general laws read in this algebra as the composition
+of *The Sandwich of a N-Regular, Spectrally Regular Biquaternion*, §*The Sandwich of the Word*. Its two general laws read in this algebra as the composition
 
 $$
 \mathrm{H}_{\tilde{Q}_1\tilde Q_2} = \mathrm{H}_{\tilde{Q}_1}\circ\mathrm{H}_{\tilde Q_2},
@@ -72,9 +72,9 @@ $$
 \langle\mathrm{H}_{\tilde{Q}_1}(x)\rangle_{\natural} = |\langle\tilde{Q}_1\rangle_{\natural}|^{2}\,\langle x\rangle_{\natural}
 $$
 
-is the general similarity statement of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* in its biquaternion form. The operator is *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion*, §*The Sandwich of the Word*; the Lorentzian application is *Biquaternion Rotations and Lorentz Transformations*.
+is the general similarity statement of *The Hermitian Sandwich on a Hermitian Algebra with Hermitian Adjoint* in its biquaternion form. The operator is *The Sandwich of a N-Regular, Spectrally Regular Biquaternion*, §*The Sandwich of the Word*; the Lorentzian application is *Biquaternion Rotations and Lorentz Transformations*.
 
-**Corollary (the operator is not an automorphism off the slice).** $\mathrm{H}_{\tilde{Q}_1}(xy) = \mathrm{H}_{\tilde{Q}_1}(x)\mathrm{H}_{\tilde{Q}_1}(y)$ holds exactly when $\tilde{Q}_1^{*}\tilde{Q}_1 = 1$, which is the general unitality and automorphism theorem of *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*; the insertion between $x$ and $y$ is the defect $\tilde{Q}_1^{*}\tilde{Q}_1$, and the dagger sandwich is an automorphism only on the slice.
+**Corollary (the operator is not an automorphism off the slice).** $\mathrm{H}_{\tilde{Q}_1}(xy) = \mathrm{H}_{\tilde{Q}_1}(x)\mathrm{H}_{\tilde{Q}_1}(y)$ holds exactly when $\tilde{Q}_1^{*}\tilde{Q}_1 = 1$, which is the general unitality and automorphism theorem of *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*; the insertion between $x$ and $y$ is the defect $\tilde{Q}_1^{*}\tilde{Q}_1$, and the bilinear sandwich is an automorphism only on the slice.
 
 ## The Unitary Slice of the Biquaternion Algebra
 
@@ -101,7 +101,7 @@ so the scalar form of the dagger is the standard Hermitian form of $\mathbb{C}^{
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$, with Hermitian conjugation ${}^{*}$, has a **positive** dagger, since $\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_1) = \sum_\mu|Q_{1,\mu}|^{2}$; the scalar form of the dagger is the Euclidean form of the algebra while the Lorentzian signature of the quaternion norm lives on the Hermitian subspace only. The general operator of the Hermitian sandwich is the dagger sandwich $\mathrm{H}_{\tilde{Q}_1}(x) = \tilde{Q}x\tilde{Q}_1^{*}$ of the corpus, with the composition law $\mathrm{H}_{\tilde{Q}_1\tilde Q_2} = \mathrm{H}_{\tilde{Q}_1}\circ\mathrm{H}_{\tilde Q_2}$ and the central rule $\mathrm{H}_{z\tilde{Q}_1} = |z|^{2}\mathrm{H}_{\tilde{Q}_1}$, which is the general parameter-semilinearity in coordinates; the Hermitian and anti-Hermitian sectors are preserved, the norm is scaled by $|\langle\tilde{Q}_1\rangle_{\natural}|^{2}$, and the map is an automorphism exactly on the slice, all of which are the general theorems of the group in one algebra. The **unitary slice is $\mathrm{U}(2)$**, with determinant-one part $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$, compact by the general theorem and distinct from the norm-one slice $SL(2,\mathbb{C})$ that gives the Lorentz action; the forms specialize to the standard Hermitian form of $\mathbb{C}^{4}$ and to the coefficient form twisted by the signature, and the Hermitian cone is the cone of $M_2(\mathbb{C})$ with the Lorentzian cone of $\mathbb{M}_+$ on its diagonal.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$, with Hermitian conjugation ${}^{*}$, has a **positive** dagger, since $\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_1) = \sum_\mu|Q_{1,\mu}|^{2}$; the scalar form of the dagger is the Euclidean form of the algebra while the Lorentzian signature of the quaternion norm lives on the Hermitian subspace only. The general operator of the Hermitian sandwich is the bilinear sandwich $\mathrm{H}_{\tilde{Q}_1}(x) = \tilde{Q}x\tilde{Q}_1^{*}$ of the corpus, with the composition law $\mathrm{H}_{\tilde{Q}_1\tilde Q_2} = \mathrm{H}_{\tilde{Q}_1}\circ\mathrm{H}_{\tilde Q_2}$ and the central rule $\mathrm{H}_{z\tilde{Q}_1} = |z|^{2}\mathrm{H}_{\tilde{Q}_1}$, which is the general parameter-semilinearity in coordinates; the Hermitian and anti-Hermitian sectors are preserved, the norm is scaled by $|\langle\tilde{Q}_1\rangle_{\natural}|^{2}$, and the map is an automorphism exactly on the slice, all of which are the general theorems of the group in one algebra. The **unitary slice is $\mathrm{U}(2)$**, with determinant-one part $\mathrm{SU}(2)\cong\mathrm{Spin}(3)$, compact by the general theorem and distinct from the norm-one slice $SL(2,\mathbb{C})$ that gives the Lorentz action; the forms specialize to the standard Hermitian form of $\mathbb{C}^{4}$ and to the coefficient form twisted by the signature, and the Hermitian cone is the cone of $M_2(\mathbb{C})$ with the Lorentzian cone of $\mathbb{M}_+$ on its diagonal.
 
 ## Summary of Notation
 
@@ -110,7 +110,7 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$, with Hermit
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | Unit and quaternion units, $\vec e_k^{2}=-1$ |
 | $\bar\cdot$, $\bar{\cdot}$, ${}^{*} = \bar\cdot\circ\bar{\cdot}$, $\flat = -{}^{*}$ | The four conjugations |
-| $\mathrm{H}_{\tilde{Q}_1}(x) = \tilde{Q}x\tilde{Q}_1^{*}$ | Dagger sandwich, $=\Theta_{\tilde{Q}_1}$ |
+| $\mathrm{H}_{\tilde{Q}_1}(x) = \tilde{Q}x\tilde{Q}_1^{*}$ | Bilinear sandwich, $=\Theta_{\tilde{Q}_1}$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\langle\cdot\rangle_{\natural}$ | Quaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
 | $U \cong \mathrm{U}(2)$ | Unitary slice, $\mathrm{SU}(2)$ its determinant-one part |

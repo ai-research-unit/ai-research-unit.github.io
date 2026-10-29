@@ -198,5 +198,5 @@ At $\vec\Upsilon=0$ the element is $Q_t e_t$ and $L_{\tilde Q}=Q_t I_4$: spectru
 
 - [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the general one-sided theory.
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Degenerate Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the shear, the exact exponent and the locked angles.
-- [The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the sandwich.
+- [The Sandwich of a N-Regular, Spectrally Degenerate Biquaternion](the-sandwich-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the sandwich.
 - [Exponential Polar Decomposition of a N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the word and the exact logarithm.

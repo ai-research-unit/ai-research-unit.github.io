@@ -18,7 +18,7 @@ The distinction that organises the article is the distinction between three acti
 | --- | --- | --- | --- |
 | left multiplication on spinors | $U(2)$ | the Hermitian form and the spinor norm | the gauge of the spinor |
 | conjugation $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$ | $U(2)/U(1)\cong SO(3)$ | Hermiticity, trace, positivity and the product | the gauge of the state and the frame |
-| dagger sandwich | $SO^{+}(1,3)$ (via the spin cover $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; $SU(2)$ is the compact part) | the norm and the two sectors | the Lorentz group, not a gauge |
+| bilinear sandwich | $SO^{+}(1,3)$ (via the spin cover $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; $SU(2)$ is the compact part) | the norm and the two sectors | the Lorentz group, not a gauge |
 
 The three are often conflated because their compact parts all involve $SU(2)$. They act on different objects and preserve different structures, and the physical reading of each is different.
 
@@ -255,7 +255,7 @@ The $*$-unitary group of the algebra is $U(2)$, not $U(4)$. The full isometry gr
 
 The left action is not an automorphism of the algebra. It preserves the Hermitian form, but it does not preserve Hermiticity or the product. The conjugation is the automorphism, and its effective group is $U(2)/U(1)\cong SO(3)$. The two actions must not be conflated.
 
-The dagger sandwich by the norm-one group is the Lorentz action — the norm-one group is its spin cover — not a gauge group. It preserves the norm and the two sectors, and it acts on the four-vectors; it is a change of frame, not a redundancy of the description.
+The bilinear sandwich by the norm-one group is the Lorentz action — the norm-one group is its spin cover — not a gauge group. It preserves the norm and the two sectors, and it acts on the four-vectors; it is a change of frame, not a redundancy of the description.
 
 The gauge reading is the state-space action. It is not a derivation of the Standard Model gauge group, and it is not a claim that the physical gauge group is $U(2)$.
 

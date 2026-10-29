@@ -474,5 +474,5 @@ The null cone gives rank one. There are no nilpotents and no Jordan blocks: the 
 - [Ideals and Peirce Decomposition of the Split-Complex Algebra](ideals-and-peirce-decomposition-of-the-split-complex-algebra.html), for the minimal ideals and the Peirce corners.
 - [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the unit criterion and the null cone.
 - [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the non-commutative companion where the one-sided operator is the spinor action.
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html), for the non-commutative companion where the sandwich is the vector action.
+- [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the non-commutative companion where the sandwich is the vector action.
 - [Operator and the Polar Decomposition of a Reduced Biquaternion](operator-and-the-polar-decomposition-of-a-reduced-biquaternion.html), for the commutative complex companion with two phases.

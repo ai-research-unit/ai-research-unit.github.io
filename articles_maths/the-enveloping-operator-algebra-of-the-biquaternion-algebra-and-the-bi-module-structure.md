@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An algebra acts on itself in two ways at once: from the left, $\tilde Q_3\mapsto \tilde Q_1\tilde Q_3$, and from the right, $\tilde Q_3\mapsto \tilde Q_3\tilde Q_2$. The corpus studies the two families of operators in *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra*, for the indefinite general plain form, and it uses their commuting product in *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion*, §*The Eigenbasis and the Two Spinor Slots*. What the corpus does not yet carry is the **algebra** in which the pair of actions naturally lives. That algebra is the **enveloping algebra**
+An algebra acts on itself in two ways at once: from the left, $\tilde Q_3\mapsto \tilde Q_1\tilde Q_3$, and from the right, $\tilde Q_3\mapsto \tilde Q_3\tilde Q_2$. The corpus studies the two families of operators in *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra*, for the indefinite general plain form, and it uses their commuting product in *The Sandwich of a N-Regular, Spectrally Regular Biquaternion*, §*The Eigenbasis and the Two Spinor Slots*. What the corpus does not yet carry is the **algebra** in which the pair of actions naturally lives. That algebra is the **enveloping algebra**
 
 $$
 \mathbb B^{\mathrm e} = \mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}},
@@ -45,7 +45,7 @@ $$
 
 *Proof.* $(L_aL_b)(\tilde Q_3)=a(b\tilde Q_3)=(ab)\tilde Q_3=L_{ab}(\tilde Q_3)$; $(R_aR_b)(\tilde Q_3)=(\tilde Q_3 b)a=\tilde Q_3(ba)=R_{ba}(\tilde Q_3)$; and $(L_aR_b)(\tilde Q_3)=a(\tilde Q_3 b)=(a\tilde Q_3)b=(R_bL_a)(\tilde Q_3)$. The last identity is associativity and needs no commutativity.
 
-So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra **anti**-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B^{\mathrm{opp}}$. The two families commute elementwise. This is the whole content of the two-sided operator $\Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ of the corpus, decomposed into its two factors.
+So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra **anti**-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B^{\mathrm{opp}}$. The two families commute elementwise. This is the whole content of the sandwich $\Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ of the corpus, decomposed into its two factors.
 
 **Theorem (the double centraliser).** The commutant of the left multiplications is exactly the right multiplications, and likewise with the roles exchanged:
 
@@ -104,7 +104,7 @@ so that $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$ and the left action of $\mat
 
 *Proof.* Both sides have complex dimension $16$, so it suffices that the map is injective. Let $\sum_i \tilde Q_{1,i}\otimes \tilde Q_{2,i}^{\mathrm{opp}}$ act as zero: $\sum_i \tilde Q_{1,i} \tilde Q_3 \tilde Q_{2,i}=0$ for all $\tilde Q_3\in\mathbb B$. Taking $\tilde Q_3$ running over a basis of matrix units $E_{ab}$ of $\mathbb B\cong M_2(\mathbb C)$ and using the independence of the $E_{ab}$ gives $\sum_i \tilde Q_{1,i}\otimes \tilde Q_{2,i}^{\mathrm{opp}}=0$, so the kernel is trivial. A linear injection between spaces of equal finite dimension is an isomorphism. The endomorphism algebra of the four-dimensional complex space $\mathbb B$ is $M_4(\mathbb C)$.
 
-**Corollary (the two-sided operators are the elementary tensors).** The two-sided operator $\Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ is the image of the elementary tensor $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$, and the mixed operators $L_aR_b$ are the images of $a\otimes b^{\mathrm{opp}}$. The corpus's two-sided family is therefore the set of **rank-one** (elementary) elements of the enveloping algebra, a small subset of it.
+**Corollary (the two-sided operators are the elementary tensors).** The mixed operator $L_aR_b$ is the image of the elementary tensor $a\otimes b^{\mathrm{opp}}$, and the sandwich $\Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde{Q}_1^{*}}$ is the image of $\tilde Q_1\otimes(\tilde{Q}_1^{*})^{\mathrm{opp}}$. The corpus's two-sided family is therefore the set of **rank-one** (elementary) elements of the enveloping algebra, a small subset of it.
 
 ### The Peirce Decomposition of the Enveloping Algebra
 

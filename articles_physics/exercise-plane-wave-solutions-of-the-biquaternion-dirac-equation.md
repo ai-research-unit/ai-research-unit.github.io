@@ -98,13 +98,13 @@ I checked this numerically: the sixteen products are linearly independent, and e
 
 The gammas are linear combinations of these products. That is why they are $4\times4$ matrices in the full $M_4(\mathbb C)$ and not elements of either regular image.
 
-**Sandwiches: the corpus's two-sided operators.** A gamma is a sandwich. The two-sided operator $\Theta_{a,b}=L_aR_b$ sends $x$ to $axb$, and the gammas are the three cases
+**The two-sided products and the gamma matrices.** A gamma is not a sandwich in the strict sense: it is a star or one-sided operator. The two-sided product $T_{a,b}=L_aR_b$ sends $x$ to $axb$, and in the matrix representation the gammas are the three cases
 $$
-\gamma^0=\Theta_{1,\,i\vec e_x},\qquad
-\gamma^k=\Theta_{i\vec e_k,\,\vec e_y},\qquad
-\gamma_5=\Theta_{1,\,-i\vec e_z}.
+\gamma^0=T_{1,\,i\vec e_x},\qquad
+\gamma^k=T_{i\vec e_k,\,\vec e_y},\qquad
+\gamma_5=T_{1,\,-i\vec e_z}.
 $$
-In matrix form $\Theta_{a,b}=\mathsf M_4^L(a)\mathsf M_4^R(b)$. The gamma matrices are products of the corpus's left regular matrix and its right counterpart. The $M_4(\mathbb C)_L$ model supplies one factor of each product.
+In matrix form $T_{a,b}=\mathsf M_4^L(a)\mathsf M_4^R(b)$. The gamma matrices are products of the corpus's left regular matrix and its right counterpart. The $M_4(\mathbb C)_L$ model supplies one factor of each product.
 
 **Comparison with the corpus's $M_4(\mathbb C)_L$ tables.** On the coefficient basis the corpus tabulates the left regular matrices
 $$

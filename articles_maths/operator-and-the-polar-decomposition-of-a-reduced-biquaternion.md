@@ -680,5 +680,5 @@ The zero divisors give rank one. There are no nilpotents and no Jordan blocks: t
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit criterion and the zero divisors.
 - [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), for the spectrum of the left multiplication.
 - [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the non-commutative companion where the one-sided operator is the spinor action.
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html), for the non-commutative companion where the sandwich is the vector action.
+- [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the non-commutative companion where the sandwich is the vector action.
 - [Operator and the Polar Decomposition of a Split-Complex Number](operator-and-the-polar-decomposition-of-a-split-complex-number.html), for the commutative real companion with one hyperbolic angle.

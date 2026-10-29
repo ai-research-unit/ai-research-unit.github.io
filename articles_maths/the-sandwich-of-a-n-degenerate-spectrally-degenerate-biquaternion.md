@@ -1,4 +1,4 @@
-# __The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion__
+# __The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion__
 
 ## Introduction
 
@@ -16,13 +16,13 @@ $$
 \tilde\nu^{2}=0 .
 $$
 
-The word **N-degenerate** refers to $\langle\tilde Q\rangle_{\natural}=0$; the word **spectrally degenerate** to $B^{2}=0$. The two-sided operator is the Hermitian sandwich
+The word **N-degenerate** refers to $\langle\tilde Q\rangle_{\natural}=0$; the word **spectrally degenerate** to $B^{2}=0$. The sandwich is the Hermitian congruence
 
 $$
 \Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
 $$
 
-On this sector the sandwich has rank one and is square-zero. It is the maximal collapse of the two-sided operator: one Jordan block of size two at eigenvalue zero, and two further fixed zero directions. The polar pair of *The Polar Decomposition of a N-Degenerate Biquaternion* survives,
+On this sector the sandwich has rank one and is square-zero. It is the maximal collapse of the sandwich: one Jordan block of size two at eigenvalue zero, and two further fixed zero directions. The polar pair of *The Polar Decomposition of a N-Degenerate Biquaternion* survives,
 
 $$
 \tilde Q=\tilde Q_H\tilde Q_0,
@@ -444,7 +444,7 @@ $$
 
 a unipotent Lorentz flow of Jordan type $2+1+1$. It fixes the kernel hyperplane and shears along the single chain. The generator $\Theta_{\tilde Q}$ is singular; the one-parameter group it generates is invertible.
 
-The one-sided exponential of the companion article is a unipotent shear of the operator space, not a Lorentz transformation. The two-sided exponential is a unipotent Lorentz flow. The difference is the same as in the regular sector, at the level of the slots: the one-sided operator reads one slot and the sandwich pairs two. The analogy stops there. In the regular sector the one-sided slot carries the half-angle $\theta/2$; here there is no angle to halve, and the one-sided exponential is unipotent.
+The one-sided exponential of the companion article is a unipotent shear of the operator space, not a Lorentz transformation. The sandwich exponential is a unipotent Lorentz flow. The difference is the same as in the regular sector, at the level of the slots: the one-sided operator reads one slot and the sandwich pairs two. The analogy stops there. In the regular sector the one-sided slot carries the half-angle $\theta/2$; here there is no angle to halve, and the one-sided exponential is unipotent.
 
 ## Worked Example
 
@@ -598,8 +598,8 @@ The phase $e^{i\beta}$ cancels in the sandwich. The sandwich depends only on $\l
 
 ## Further Reading
 
-- [The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent three-plus-one sandwich at the spectral wall of the regular sector.
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the projection case of the same sector pair.
+- [The Sandwich of a N-Regular, Spectrally Degenerate Biquaternion](the-sandwich-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the unipotent three-plus-one sandwich at the spectral wall of the regular sector.
+- [The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion](the-sandwich-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the projection case of the same sector pair.
 - [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](the-one-sided-operators-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the companion one-sided operator.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the canonical Hermitian pair, the Peirce data and the no-eigenbasis theorem.

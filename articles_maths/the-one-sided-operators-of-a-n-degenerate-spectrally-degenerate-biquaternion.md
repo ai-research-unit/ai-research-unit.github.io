@@ -632,7 +632,7 @@ The phase $e^{i\beta}$ is in $\tilde Q_0$; the singular value $2\lvert c_0\rvert
 
 - [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-degenerate-biquaternion.html), for the same two-block Jordan type with a non-zero eigenvalue.
 - [The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the projection case of the same sector pair.
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion](the-two-sided-operator-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the companion sandwich and the single nilpotent chain.
+- [The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion](the-sandwich-of-a-n-degenerate-spectrally-degenerate-biquaternion.html), for the companion sandwich and the single nilpotent chain.
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the general two-factor pair on the null cone.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the canonical Hermitian pair, the Peirce data and the no-eigenbasis theorem.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the Jordan basis used in the Peirce matrices.

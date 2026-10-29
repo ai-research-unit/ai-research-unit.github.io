@@ -241,7 +241,7 @@ The unsigned operator fixes $e_t$ and $\vec e_x$ and negates the plane $\mathbb{
 
 **Corollary (the sign costs multiplicativity).** The unsigned inner conjugation is an algebra automorphism for every unit, $\mathrm{Ad}_{\tilde Q_6}(\tilde Q_1\tilde Q_2)=\mathrm{Ad}_{\tilde Q_6}(\tilde Q_1)\mathrm{Ad}_{\tilde Q_6}(\tilde Q_2)$. The signed inner conjugation with a parameter in $V$ is **anti**-multiplicative, $\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_1\tilde Q_2)=-\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_1)\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_2)$; both statements were verified on one hundred pairs. This is the concrete cost of the insertion, and it is the reason the signed operators of the corpus are read for their own laws and not as automorphisms.
 
-**Remark (two places for the sign, and the norm reads it).** The corpus inserts the sign on the left factor in $\mathrm{Ad}^{\alpha}$, and it writes the twisted two-sided operator $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, with the sign on the right factor. The two are exchanged by the inverse and by the norm:
+**Remark (two places for the sign, and the norm reads it).** The corpus inserts the sign on the left factor in $\mathrm{Ad}^{\alpha}$, and it writes the twisted sandwich $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$, with the sign on the right factor. The two are exchanged by the inverse and by the norm:
 
 $$
 \boxed{\; \Theta_{\tilde Q_6}=\langle\tilde Q_6\rangle_{\natural}\,\mathrm{Ad}_{\tilde Q_6},
@@ -268,7 +268,7 @@ The sign character $\alpha$ is the switch of the side: the adjoint is a left mul
 
 ## Self-Adjointness under the Four Adjoints
 
-The four adjoints separate on the two families of §*Signed, Unsigned and Associated*. The table gives, for the two-sided operator $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ and for the inner automorphism $\mathrm{Ad}_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{-1}}$, whether the operator equals its own adjoint, for the four forms and four positions of the parameter.
+The four adjoints separate on the two families of §*Signed, Unsigned and Associated*. The table gives, for the twisted sandwich $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ and for the inner automorphism $\mathrm{Ad}_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{-1}}$, whether the operator equals its own adjoint, for the four forms and four positions of the parameter.
 
 | parameter | $\Theta$: plain | $\Theta$: $\natural$ | $\Theta$: $\ast$ | $\Theta$: $\natural\ast$ | $\mathrm{Ad}$: plain | $\mathrm{Ad}$: $\natural$ | $\mathrm{Ad}$: $\ast$ | $\mathrm{Ad}$: $\natural\ast$ |
 |---|---|---|---|---|---|---|---|---|
@@ -318,7 +318,7 @@ The two switches of the twisted right factor, and the four forms that they retur
 | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\natural}=L_{\tilde Q_6^{\natural}}R_{\tilde Q_3^{\natural}}$ | the $\natural$-adjoint, the adjoint for the general quaternionic bilinear form: the sign in place |
 | $(L_{\tilde Q_6}R_{\tilde Q_3})^{\ast}=L_{\tilde Q_6^{\ast}}R_{\tilde Q_3^{\ast}}$ | the Hermitian adjoint; $(L_{\tilde Q_6}R_{\tilde Q_3})^{\natural\ast}=L_{\bar{\tilde Q_3}}R_{\bar{\tilde Q_6}}$ the signed one |
 | $\mathrm{Ad}_{\tilde Q_6}=\tilde Q_6\,\tilde Q\,\tilde Q_6^{-1}$, $\mathrm{Ad}^{\alpha}_{\tilde Q_6}=\tilde Q_6^{\natural}\tilde Q\tilde Q_6^{-1}$ | the unsigned and the signed inner conjugation; $\mathrm{Ad}^{\alpha}=\mathrm{Ad}$ on the centre, $-\mathrm{Ad}$ on $V$ |
-| $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}=\langle\tilde Q_6\rangle_{\natural}\mathrm{Ad}_{\tilde Q_6}$ | the twisted two-sided operator; $\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural}$ the norm |
+| $\Theta_{\tilde Q_6}=L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}=\langle\tilde Q_6\rangle_{\natural}\mathrm{Ad}_{\tilde Q_6}$ | the twisted sandwich; $\langle\tilde Q_6\rangle_{\natural}=\tilde Q_6\tilde Q_6^{\natural}$ the norm |
 
 ## Further Reading
 
