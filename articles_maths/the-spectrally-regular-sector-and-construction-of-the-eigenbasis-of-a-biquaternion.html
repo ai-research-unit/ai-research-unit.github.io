@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-eigenbasis-of-a-spectrally-regular-biquaternion"><strong>The Eigenbasis of a Spectrally Regular Biquaternion</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists, as a basis attached to the element, exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article <em>The Spectrum</em> proves that such a basis exists. This article constructs it, proves that the normalised Peirce representative is unique, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and chirality in it.</p>
+<p>The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists, as a basis attached to the element, exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article <em>The Spectrum</em> proves that such a basis exists. This article constructs it, proves that the normalised Peirce representative is unique, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and the Peirce index in it.</p>
 <p><strong>Place among the Peirce decompositions.</strong> This article is the regular particular case of <em>The Peirce Decomposition of the Biquaternion Algebra</em>. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is the spectral pair: it exists exactly when $B^2\neq0$, it commutes with $\tilde Q$, and the Peirce matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$. Each couple is therefore a pair of eigenvectors, and the Peirce basis is the eigenbasis. The general theory leaves a reciprocal $\mathbb{C}^\times$ of mixed bases; the normalisation below fixes it.</p>
 <p>The construction has three steps. The root $\vec\Xi=-i\vec Q/B$ is a pure square root of $e_t$ and carries the two spectral idempotents $\tilde\Pi_\pm=(e_t\pm\vec\Xi)/2$. The two mixed Peirce corners are complex lines, and a generator $\vec\Upsilon_+$ of one of them determines a generator $\vec\Upsilon_-$ of the other by the product condition $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. The pair is then determined up to the reciprocal rescaling $\vec\Upsilon_+\mapsto\mu\vec\Upsilon_+$, $\vec\Upsilon_-\mapsto\mu^{-1}\vec\Upsilon_-$. A normalisation fixes $\mu$, and with the normalisation fixed the quadruple</p>
 <p>$$
@@ -78,7 +78,7 @@
 $$</p>
 <p>is unique. The first two steps use only $B^2\neq0$, so the construction covers the whole spectral-regular sector.</p>
 <p>The basis has a further property that is easy to miss: it depends on $\tilde Q$ only through the complex line spanned by the vector part. The elements $\tilde Q$ and $a\tilde Q+b e_t$, with $a\neq0$, share the same eigenbasis, while their eigenvalues move affinely. The eigenbasis is therefore attached to a point of $\mathbb{P}^2$, not to a point of $\mathbb{B}$.</p>
-<p>The second part of the article reads spinors and chirality in this basis. The two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two chiralities. Each has a basis made of one idempotent and one nilpotent of $\mathcal{B}(\tilde Q)$, and left multiplication by $\tilde Q$ acts on each by the same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$. Chirality is a right-multiplication label, not a left eigenvalue: the two gradings are independent, and the four basis vectors are the four cells of their grid.</p>
+<p>The second part of the article reads spinors and the Peirce index in this basis. The two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two Peirce copies. Each has a basis made of one idempotent and one nilpotent of $\mathcal{B}(\tilde Q)$, and left multiplication by $\tilde Q$ acts on each by the same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$. Chirality is a right-multiplication label, not a left eigenvalue: the two gradings are independent, and the four basis vectors are the four cells of their grid.</p>
 <p><strong>Notation.</strong> An element is $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $\vec Q^2=-B^2e_t$, where</p>
 <p>$$
 B^2=Q_x^2+Q_y^2+Q_z^2.
@@ -583,8 +583,8 @@ $$</p>
 0\subset\mathbb{C}\vec Q\subset\ker R_{\vec Q}\subset\mathbb{B},
 $$</p>
 <p>not a second basis. Choosing the complement to $\mathbb{C}\vec Q$ in $\ker L_{\vec Q}$ fixes $e$, and then $f=e_t-e$ fixes the complement in $\ker R_{\vec Q}$; the affine family $e_b=e+b\vec Q$ is the freedom of that single choice. The scale of $\vec X$ is a second freedom. The eigenbasis of the regular case is replaced, on the defective strata, by a Jordan basis; a canonical choice of the complement removes both freedoms and selects one quadruple, constructed in <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>.</p>
-<h2 id="spinors-and-chirality">Spinors and Chirality</h2>
-<p><strong>The eigenbasis exhibits the two spinor spaces as the two columns of its matrix model. Each column is a minimal left ideal, each is a complex plane, and each carries both eigenvalues under left multiplication. Chirality is the right index, not the left one.</strong></p>
+<h2 id="spinors-and-the-peirce-index">Spinors and the Peirce Index</h2>
+<p><strong>The eigenbasis exhibits the two spinor spaces as the two columns of its matrix model. Each column is a minimal left ideal, each is a complex plane, and each carries both eigenvalues under left multiplication. The Peirce index is the right index, not the left one; it is not a chirality.</strong></p>
 <p>The general statement is in <em>$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>, §<em>The Left Action on a Couple</em>: the four Peirce vectors split into the couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, and left multiplication acts on each couple by the same matrix. Here that matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$, so each couple is a pair of eigenvectors.</p>
 <h3 id="the-two-spinor-spaces">The Two Spinor Spaces</h3>
 <p><strong>Definition (spinor space).</strong> A <strong>spinor space</strong> of $\mathbb{B}$ is a minimal non-zero left ideal. The two spinor spaces attached to $\tilde Q$ are</p>
@@ -593,7 +593,7 @@ S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\vec\Upsilon_+,
 \qquad
 S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-.
 $$</p>
-<p>A <strong>spinor of first chirality</strong> is an element of $S_+$; a <strong>spinor of second chirality</strong> is an element of $S_-$. Each spinor space has complex dimension two, and</p>
+<p>A <strong>spinor of the first Peirce copy</strong> is an element of $S_+$; a <strong>spinor of the second Peirce copy</strong> is an element of $S_-$. Each spinor space has complex dimension two, and</p>
 <p>$$
 \mathbb{B}=S_+\oplus S_-.
 $$</p>
@@ -605,7 +605,7 @@ S_-\longrightarrow S_+,\quad \xi_-\longmapsto \xi_-\vec\Upsilon_+.
 $$</p>
 <p>The two maps are inverse because $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ and $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$. They are distinct subspaces of $\mathbb{B}$ nevertheless. Chirality is therefore not an invariant of the left module; it is a property of the embedding of the module in the algebra.</p>
 <h3 id="the-left-action-on-a-spinor">The Left Action on a Spinor</h3>
-<p>A spinor of first chirality is</p>
+<p>A spinor of the first Peirce copy is</p>
 <p>$$
 \xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
 $$</p>
@@ -617,7 +617,7 @@ $$</p>
 <p>$$
 L_{\tilde Q}|_{S_+}=\operatorname{diag}(\lambda_+,\lambda_-).
 $$</p>
-<p>A spinor of second chirality is</p>
+<p>A spinor of the second Peirce copy is</p>
 <p>$$
 \xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
 $$</p>
@@ -627,24 +627,24 @@ $$</p>
 \qquad
 L_{\tilde Q}|_{S_-}=\operatorname{diag}(\lambda_+,\lambda_-).
 $$</p>
-<p>The same diagonal matrix acts on the two chiralities. Each chirality therefore contains both eigenvalues, and the spectrum is chirality-blind: knowing the chirality of a spinor tells nothing about which eigenvalue a component carries.</p>
-<h3 id="the-right-action-and-the-definition-of-chirality">The Right Action and the Definition of Chirality</h3>
+<p>The same diagonal matrix acts on the two Peirce copies. Each Peirce copy therefore contains both eigenvalues, and the spectrum is copy-blind: knowing the Peirce copy of a spinor tells nothing about which eigenvalue a component carries.</p>
+<h3 id="the-right-action-and-the-definition-of-the-peirce-index">The Right Action and the Definition of the Peirce Index</h3>
 <p>Right multiplication by $\tilde Q$ is scalar on each spinor space:</p>
 <p>$$
 \xi_+\tilde Q=\lambda_+\xi_+\quad(\xi_+\in S_+),\qquad
 \xi_-\tilde Q=\lambda_-\xi_-\quad(\xi_-\in S_-).
 $$</p>
-<p>Thus $S_+$ is the $\lambda_+$-eigenspace of $R_{\tilde Q}$ and $S_-$ the $\lambda_-$-eigenspace. Chirality is the eigenvalue of the right multiplication, in the same way that the spectral label is the eigenvalue of the left multiplication. The two statements are different: the left action carries both eigenvalues on each chirality, and the right action carries one eigenvalue on each. In particular, chirality is the eigenvalue of the involution $R_{\vec\Xi}$: it is $+1$ on $S_+$ and $-1$ on $S_-$.</p>
+<p>Thus $S_+$ is the $\lambda_+$-eigenspace of $R_{\tilde Q}$ and $S_-$ the $\lambda_-$-eigenspace. The Peirce index is the eigenvalue of the right multiplication, in the same way that the spectral label is the eigenvalue of the left multiplication. The two statements are different: the left action carries both eigenvalues on each Peirce copy, and the right action carries one eigenvalue on each. In particular, chirality is the eigenvalue of the involution $R_{\vec\Xi}$: it is $+1$ on $S_+$ and $-1$ on $S_-$.</p>
 <p><strong>Proposition (the two gradings).</strong> The following two decompositions coexist:</p>
 <ul>
 <li>the left spectral decomposition $\mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}$, the eigenspaces of $L_{\tilde Q}$;</li>
-<li>the right chiral decomposition $\mathbb{B}=S_+\oplus S_-$, the eigenspaces of $R_{\tilde Q}$.</li>
+<li>the right Peirce decomposition $\mathbb{B}=S_+\oplus S_-$, the eigenspaces of $R_{\tilde Q}$.</li>
 </ul>
 <p>The four corners are the intersections:</p>
 <p>$$
 \mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\cap S_t.
 $$</p>
-<p>The four basis vectors are the four cells of the grid, with rows the left spectral index $s$ and columns the chiral index $t$:</p>
+<p>The four basis vectors are the four cells of the grid, with rows the left spectral index $s$ and columns the Peirce index $t$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -672,7 +672,7 @@ $$</p>
 <p>$$
 \tilde Q_2=\tilde Q_2\tilde\Pi_++\tilde Q_2\tilde\Pi_-,
 $$</p>
-<p>a spinor of first chirality plus a spinor of second chirality. In the matrix model the two summands are the two columns:</p>
+<p>a spinor of the first Peirce copy plus a spinor of the second Peirce copy. In the matrix model the two summands are the two columns:</p>
 <p>$$
 \tilde Q_2\longmapsto
 \begin{pmatrix}
@@ -692,21 +692,21 @@ Q_{2,21}&0
 0&Q_{2,22}
 \end{pmatrix}.
 $$</p>
-<p>A general element is therefore not a spinor: it has one spinor component of each chirality. Left multiplication by any $\tilde P\in\mathbb{B}$ acts on both columns by the same matrix $\mathsf M_2^{Q}(\tilde P)$,</p>
+<p>A general element is therefore not a spinor: it has one spinor component of each Peirce copy. Left multiplication by any $\tilde P\in\mathbb{B}$ acts on both columns by the same matrix $\mathsf M_2^{Q}(\tilde P)$,</p>
 <p>$$
 \tilde P\,\tilde Q_2\longmapsto
 \mathsf M_2^{Q}(\tilde P)\,\mathsf M_2^{Q}(\tilde Q_2),
 $$</p>
-<p>so it preserves each chirality. The off-diagonal entries of $\mathsf M_2^{Q}(\tilde P)$ mix the two components inside one column, that is, the two spectral components inside one chirality; they do not mix the two columns.</p>
-<p><strong>Remark (what mixes chirality).</strong> A left multiplication by an element never changes chirality, because $S_\pm$ are left ideals. An operation that changes chirality has to act on the right, or be a two-sided operation. In the matrix picture, right multiplication multiplies the matrix on the right and mixes the two columns. This is the algebraic distinction behind the two kinds of operation: the left action is the action of the algebra on its left modules, and it is chirality-diagonal; a chirality-changing term is not a left multiplication.</p>
+<p>so it preserves each Peirce copy. The off-diagonal entries of $\mathsf M_2^{Q}(\tilde P)$ mix the two components inside one column, that is, the two spectral components inside one Peirce copy; they do not mix the two columns.</p>
+<p><strong>Remark (what mixes the Peirce copies).</strong> A left multiplication by an element never changes the Peirce copy, because $S_\pm$ are left ideals. An operation that changes the Peirce copy has to act on the right, or be a two-sided operation. In the matrix picture, right multiplication multiplies the matrix on the right and mixes the two columns. This is the algebraic distinction behind the two kinds of operation: the left action is the action of the algebra on its left modules, and it is copy-diagonal; a copy-changing term is not a left multiplication.</p>
 <h3 id="the-adjoint">The Adjoint</h3>
 <p>The Hermitian adjoint sends a left ideal to a right ideal:</p>
 <p>$$
 S_+^*=(\mathbb{B}\tilde\Pi_+)^*=\tilde\Pi_+^*\mathbb{B}.
 $$</p>
-<p>It therefore does not act inside the chiral decomposition: the two chiralities are left ideals, and their images are right ideals. A minimal left ideal of $M_2(\mathbb{C})$ is not a right ideal, so the image is not one of the two chiralities. Chirality belongs to the left-ideal decomposition, not to the matrix adjoint. The spinor adjoints and the reality conditions are treated in <em>Peirce Carriers and Inner Conjugation</em> and in the companion articles on the signed adjoints.</p>
+<p>It therefore does not act inside the Peirce decomposition: the two Peirce copies are left ideals, and their images are right ideals. A minimal left ideal of $M_2(\mathbb{C})$ is not a right ideal, so the image is not one of the two Peirce copies. The Peirce index belongs to the left-ideal decomposition, not to the matrix adjoint. The spinor adjoints and the reality conditions are treated in <em>Peirce Carriers and Inner Conjugation</em> and in the companion articles on the signed adjoints.</p>
 <h3 id="physical-interpretation">Physical Interpretation</h3>
-<p>In the language of physics, the pair of columns is the algebraic image of a Dirac spinor: one spinor of each chirality. The two eigenvalues $\lambda_\pm$ play the role of the two mass or energy labels. A spinor of definite chirality has both labels: it is a two-component object whose components are its $\lambda_+$ and $\lambda_-$ parts. A gauge transformation is a left multiplication by a unit, so it preserves chirality; a mass term couples the two chiralities and is therefore not a left multiplication by an element. The general element of $\mathbb{B}$, which has off-diagonal entries, is a pair of spinors, one of each chirality, and its off-diagonal entries mix the two spectral components inside each chirality rather than the two chiralities.</p>
+<p>In the language of physics, the pair of columns is two copies of one Weyl spinor, not a Dirac spinor: the two Peirce copies carry the same left-handed module. The two eigenvalues $\lambda_\pm$ play the role of two mass or energy labels inside each copy. A spinor in a definite Peirce copy has both labels: it is a two-component object whose components are its $\lambda_+$ and $\lambda_-$ parts. A gauge transformation is a left multiplication by a unit, so it preserves the Peirce copy; a copy-flip coupling, such as the right multiplication by one of the nilpotents, couples the two copies and is therefore not a left multiplication by an element. That coupling is not the chiral mass: the chiral mass pairs $S$ with the conjugate module $S^{\mathrm{c}}$, as in <em>Chirality: The Conjugate Pair</em>. The general element of $\mathbb{B}$, which has off-diagonal entries, is a pair of spinors, one of each Peirce copy, and its off-diagonal entries mix the two spectral components inside each Peirce copy rather than the two Peirce copies.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>With $B^2\neq0$, the normalised basis $\mathcal{B}(\tilde Q)=(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is unique, and every $\tilde Q_2\in\mathbb{B}$ has the unique expansion $\tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-$. The two spinor spaces are its two columns.</strong></p>
 <div class="table-scroll"><table>
@@ -775,10 +775,10 @@ $$</p>
 </tr>
 <tr>
 <td>left action on spinors</td>
-<td>$\operatorname{diag}(\lambda_+,\lambda_-)$ on each chirality</td>
+<td>$\operatorname{diag}(\lambda_+,\lambda_-)$ on each Peirce copy</td>
 </tr>
 <tr>
-<td>chirality</td>
+<td>Peirce index</td>
 <td>the right index, the eigenvalue of $R_{\tilde Q}$; independent of the left spectrum</td>
 </tr>
 <tr>
@@ -851,7 +851,7 @@ $$</p>
 </tr>
 <tr>
 <td>$S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
-<td>the spinor spaces, the two chiralities</td>
+<td>the spinor spaces, the two Peirce copies</td>
 </tr>
 <tr>
 <td>$L_{\tilde Q_2}$, $R_{\tilde Q_2}$</td>
@@ -882,13 +882,13 @@ $$</p>
 <li><a href="m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html">$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix</a>, for the fixed model $\mathsf M_2$, the diagonalising matrix $\mathsf C_Q$ and the 4×4 regular matrices.</li>
 <li><a href="worked-examples-of-eigenbasis-of-a-biquaternion.html">Worked Examples of Eigenbasis of a Biquaternion</a>, for computed eigenbases of the standard elements.</li>
 <li><a href="the-peirce-decomposition-in-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the general Peirce construction, the two spinor spaces and the eigenbasis as a particular Peirce matrix.</li>
-<li><a href="peirce-carriers-and-inner-conjugation.html">Peirce Carriers and Inner Conjugation</a>, for the identification of the minimal left ideals with the spinor spaces and the chiral halves.</li>
+<li><a href="peirce-carriers-and-inner-conjugation.html">Peirce Carriers and Inner Conjugation</a>, for the identification of the minimal left ideals with the spinor spaces and the two Peirce copies.</li>
 <li><a href="relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the four sectors and the comparison of the two cones.</li>
 <li><a href="relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html">Relations between the Biquaternion Exponential and the Fourier Kernel</a>, for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.</li>
 <li><a href="the-biquaternion-eigenvalue-decomposition.html">The Biquaternion Eigenvalue Decomposition</a>, for the spectral decomposition in the wider theory.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (2nd edition, Cambridge University Press, 2013), for the spectral projectors, the trace pairing and the matrix models.</li>
 <li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the identification of the biquaternion algebra with $M_2(\mathbb{C})$ and the spinor modules.</li>
-<li>Élie Cartan, <em>The Theory of Spinors</em> (Dover, 1981), for the classical theory of the two chiralities.</li>
+<li>Élie Cartan, <em>The Theory of Spinors</em> (Dover, 1981), for the classical theory of the two Peirce copies.</li>
 </ul>
       </div>
     </main>

@@ -130,7 +130,7 @@ $$</p>
 </tr>
 <tr>
 <td>Spinor spaces</td>
-<td>$S_\pm=\mathbb{C}\Pi_\pm$, two complex lines; one complex spinor coordinate per chirality</td>
+<td>$S_\pm=\mathbb{C}\Pi_\pm$, two complex lines; one complex spinor coordinate per Peirce copy</td>
 </tr>
 <tr>
 <td>Unit group</td>
@@ -532,11 +532,11 @@ $$
 \mathbb{B}_{\mathrm{r}}=S_+\oplus S_-.
 $$
 The notation $S_\pm$ is reserved for these two spaces.</p>
-<p>A <strong>spinor of first chirality</strong> is an element of $S_+$,
+<p>A <strong>spinor of the first Peirce copy</strong> is an element of $S_+$,
 $$
 \xi_+=A_1\Pi_+,\qquad A_1\in\mathbb{C},
 $$
-and a <strong>spinor of second chirality</strong> is an element of $S_-$,
+and a <strong>spinor of the second Peirce copy</strong> is an element of $S_-$,
 $$
 \xi_-=A_2\Pi_-,\qquad A_2\in\mathbb{C}.
 $$
@@ -559,8 +559,8 @@ A_1\longmapsto\lambda_+A_1,
 \qquad
 A_2\longmapsto\lambda_-A_2.
 $$
-A general element $\breve Q_2=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.</p>
-<p><strong>One complex component per chirality.</strong> The base field is $\mathbb{C}$, so each spinor space is a one-dimensional complex vector space, of real dimension two. A spinor has a single complex component, not a pair: the two components displayed above belong to the two different chiralities. The biquaternion case is the one in which a single spinor space is two-dimensional over $\mathbb{C}$ and therefore carries a pair of complex components. The extra dimension there is supplied by the nilpotent direction $\vec\Upsilon_\pm$, which is absent here.</p>
+A general element $\breve Q_2=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each Peirce copy, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.</p>
+<p><strong>One complex component per Peirce copy.</strong> The base field is $\mathbb{C}$, so each spinor space is a one-dimensional complex vector space, of real dimension two. A spinor has a single complex component, not a pair: the two components displayed above belong to the two different chiralities. The biquaternion case is the one in which a single spinor space is two-dimensional over $\mathbb{C}$ and therefore carries a pair of complex components. The extra dimension there is supplied by the nilpotent direction $\vec\Upsilon_\pm$, which is absent here.</p>
 <h3 id="the-matrix-model-and-the-two-columns">The Matrix Model and the Two Columns</h3>
 <p><strong>In the eigenbasis the Peirce matrix of every element is diagonal, the two diagonal entries are the spinor coordinates, and the two columns are the two spinor spaces.</strong></p>
 <p>Write a general element in the eigenbasis as
@@ -585,7 +585,7 @@ S_+=\mathbb{C}\Pi_+\longleftrightarrow\operatorname{span}\{E_{11}\}=\text{column
 \qquad
 S_-=\mathbb{C}\Pi_-\longleftrightarrow\operatorname{span}\{E_{22}\}=\text{column }2.
 $$
-A spinor of first chirality $A_1\Pi_+$ is the first column $(A_1,0)^{T}$; a spinor of second chirality $A_2\Pi_-$ is the second column $(0,A_2)^{T}$. The off-diagonal entries are zero: the mixed Peirce corners vanish, and the matrix units $E_{12},E_{21}$ do not occur. The image of the Peirce model is the diagonal subalgebra of $M_2(\mathbb{C})$, isomorphic to $\mathbb{C}\times\mathbb{C}$.</p>
+A spinor of the first Peirce copy $A_1\Pi_+$ is the first column $(A_1,0)^{T}$; a spinor of the second Peirce copy $A_2\Pi_-$ is the second column $(0,A_2)^{T}$. The off-diagonal entries are zero: the mixed Peirce corners vanish, and the matrix units $E_{12},E_{21}$ do not occur. The image of the Peirce model is the diagonal subalgebra of $M_2(\mathbb{C})$, isomorphic to $\mathbb{C}\times\mathbb{C}$.</p>
 <p>In the basis $(1,j)$ the regular representation is
 $$
 [L_{\breve Q}]_{(1,j)}=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix},
@@ -1043,9 +1043,9 @@ The eigenvalues are distinct complex numbers, the idempotents are primitive, ort
 </tr>
 <tr>
 <td>Spinor coordinates</td>
-<td>one real coefficient per chirality</td>
-<td>one complex coefficient per chirality</td>
-<td>two complex coefficients per chirality</td>
+<td>one real coefficient per Peirce copy</td>
+<td>one complex coefficient per Peirce copy</td>
+<td>two complex coefficients per Peirce copy</td>
 </tr>
 <tr>
 <td>Action of $Q$ on a spinor</td>
@@ -1061,7 +1061,7 @@ The eigenvalues are distinct complex numbers, the idempotents are primitive, ort
 </tr>
 </tbody>
 </table></div>
-<p>Read down a column for one algebra and across a row for one concept. The rows down to the eigenprojections follow one pattern; the rows below them record where the algebras part: whether the idempotents depend on the element and whether they are central, the two mixed square-zero lines of the biquaternion Peirce decomposition, and the biquaternion unit group, which is no longer a product. The last rows record the spinor content: one real coefficient per chirality for the split-complex algebra, one complex coefficient per chirality for the reduced biquaternion algebra, and two complex coefficients per chirality, forming a complex plane, for the biquaternion algebra.</p>
+<p>Read down a column for one algebra and across a row for one concept. The rows down to the eigenprojections follow one pattern; the rows below them record where the algebras part: whether the idempotents depend on the element and whether they are central, the two mixed square-zero lines of the biquaternion Peirce decomposition, and the biquaternion unit group, which is no longer a product. The last rows record the spinor content: one real coefficient per Peirce copy for the split-complex algebra, one complex coefficient per Peirce copy for the reduced biquaternion algebra, and two complex coefficients per Peirce copy, forming a complex plane, for the biquaternion algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

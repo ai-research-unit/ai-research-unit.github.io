@@ -115,7 +115,7 @@ $$</p>
 <p>and the charge contraction is $\tilde{K}_{\mathrm{f}}=ϙ\,\mathrm{F}(\tilde{V})$, the biquaternion form of the Lorentz force of Companion article <em>The Lorentz Force in Biquaternion Form</em>, for the four-force as an anti-Hermitian projection.</p>
 <p>Here $\tau$ is proper time, $t'$ laboratory time, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{M}_+$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.</p>
 <h2 id="the-spin-four-vector">The Spin Four-Vector</h2>
-<p>The spin of a classical particle is a four-vector $\tilde{S}\in\mathbb{M}_-$ subject to the <strong>orthogonality condition</strong></p>
+<p>The <strong>spin vector</strong> of a classical particle is a four-vector $\tilde{S}\in\mathbb{M}_-$ subject to the <strong>orthogonality condition</strong></p>
 <p>$$
 S_\mu v^\mu=0
 \qquad\Longleftrightarrow\qquad
@@ -141,7 +141,7 @@ $$</p>
 \gamma_g=\frac{g\,ϙ}{2m},
 $$</p>
 <p>defined in the instantaneous rest frame. Its covariant completion is the pair $(\tilde{S},\gamma_g)$: the moment is the spatial part of the rest-frame representative of $\tilde{S}$, multiplied by the gyromagnetic ratio. In the absence of a field the moment is constant in the rest frame; the whole content of the following sections is how the covariant equation of motion transports $\tilde{S}$ so that this rest-frame statement is recovered at every instant.</p>
-<p>Two remarks fix the status of the object. First, the orthogonality condition is not an extra postulate but the definition of the spin as an intrinsic, frame-independent direction: any four-vector that satisfies it has only three independent components, and the equation of motion must preserve it. Second, an equivalent description uses an antisymmetric <strong>spin tensor</strong> $S^{\mu\nu}$, related to the spin four-vector by</p>
+<p>Two remarks fix the status of the object. The spin vector is the classical intrinsic angular momentum; it is not the spin of <em>The Spin of a Biquaternion</em>, which is the number $j$. The magnitude of the spin vector is fixed by $j$. First, the orthogonality condition is not an extra postulate but the definition of the spin vector as an intrinsic, frame-independent direction: any four-vector that satisfies it has only three independent components, and the equation of motion must preserve it. Second, an equivalent description uses an antisymmetric <strong>spin tensor</strong> $S^{\mu\nu}$, related to the spin four-vector by</p>
 <p>$$
 S^\mu=\frac{1}{2c}\,\epsilon^{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma},
 $$</p>
@@ -242,7 +242,7 @@ $$</p>
 $$</p>
 <p>in which every object is an element of $\mathbb{M}_-$ or a real scalar, and the equation is manifestly a statement inside the material sector. The transcription is verified by recomputation: for random configurations of $\vec E$, $\vec B$, $\vec v$ and $\vec s$, with an arbitrary $g$, the biquaternion right-hand side equals the component right-hand side to machine precision, with residuals of order $10^{-15}$. Two elementary checks of the component equation confirm its physical content and were carried out on the same random configurations: the orthogonality $S_\mu v^\mu=0$ is preserved to machine precision, and in the rest frame the spatial equation is the gyromagnetic torque $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ while the time equation is $dS^{0}/d\tau=(ϙ/m)\,\vec E\cdot\vec s/c$, which is exactly the rate required by the orthogonality condition rather than an independent statement.</p>
 <p>The transcription is a statement about the <strong>structure</strong> of the equation, and it is worth saying what it does and does not claim. It does not claim that the BMT equation is novel; it is the standard result of Bargmann, Michel and Telegdi. It does not claim to determine $g$; the gyromagnetic factor is an input, and at the tree level of the relativistic quantum theory it equals $2$. What it claims is that the equation's two-term form is the complete list of covariant structures available to a material four-vector, that the field coupling is a projection of an algebra product, and that the orthogonality constraint is the invariant pairing. These are algebraic facts about $\mathbb{B}$ and $\mathbb{M}_-$.</p>
-<h2 id="the-rest-frame-and-the-meaning-of-math165">The Rest Frame and the Meaning of $g$</h2>
+<h2 id="the-rest-frame-and-the-meaning-of-math167">The Rest Frame and the Meaning of $g$</h2>
 <p>The coefficient $\alpha=g/2$ was fixed by the rest-frame torque, and it is instructive to see the rest-frame reduction in full. At $\vec v=\mathbf{0}$ we have $v^\mu=(c,\mathbf{0})$, $S^{0}=0$, and $\tilde{S}=(0,\vec s)$. The field action on the spin is</p>
 <p>$$
 \mathrm{F}(\tilde{S})\Big|_{\rm rest}
@@ -263,7 +263,7 @@ $$</p>
 $$</p>
 <p>in which the two contributions combine to the single value required to keep $S_\mu v^\mu=0$ as the velocity begins to change: the time equation is not a second dynamical law but the statement that the rest-frame spin remains purely spatial in the momentary rest frame. Thus <strong>$g$ and only $g$ is the dynamical input</strong>; everything else in the equation is fixed by covariance and orthogonality.</p>
 <p>The gyromagnetic factor is not determined by the classical model. The relativistic quantum theory of a spin-$\tfrac12$ particle gives the tree-level value $g=2$, and the classical spinning particle with $g=2$ reproduces the corresponding classical limit. The small departure of the measured electronic and muonic moments from $2$, the <strong>anomalous moment</strong> $a=(g-2)/2$, is a quantum-field-theoretic effect and lies outside the classical framework; Companion article <em>The Classical Origin of g = 2 in Biquaternionic Form</em>, for the algebraic origin of the factor two, and Companion article <em>The Empirical Status of the Biquaternion Framework</em>, for the position on the measured anomaly, record the standing treatment. The classical equation itself is agnostic: any $g$ defines a consistent classical spinning particle, and the value of $g$ must be supplied from outside.</p>
-<h2 id="the-degenerate-case-math191-and-the-spin-follows-velocity-property">The Degenerate Case $g=2$ and the Spin-Follows-Velocity Property</h2>
+<h2 id="the-degenerate-case-math193-and-the-spin-follows-velocity-property">The Degenerate Case $g=2$ and the Spin-Follows-Velocity Property</h2>
 <p>At $g=2$ the second term of the BMT equation vanishes identically, and the equation collapses to</p>
 <p>$$
 \boxed{\ \frac{dS^\mu}{d\tau}=\frac{ϙ}{m}\,F^{\mu\nu}S_\nu\ } ,
