@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The K-Degenerate Sector — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-k-degenerate-sector"><strong>The K-Degenerate Sector</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This is the zero half of the Krein partition of the biquaternion algebra: the set on which the Krein norm vanishes, the <strong>null set</strong></p>
+<p>$$
+\mathcal K=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}=0\}
+=\{\tilde Q:|Q_t|=\lVert\vec Q\rVert_E\}.
+$$</p>
+<p>It is a real cone of real codimension one, smooth off its apex, and its partner is <em>The K-Regular Sector</em>. The two articles carry the partition of <em>K-Regularity and Degeneracy in the Biquaternion Algebra</em>; the spectral condition is not used as a subdivision, and §<em>Why There Is No Spectral Split</em> of that article gives the four reasons.</p>
+<p>The sector is <strong>not homogeneous algebraically</strong>. It splits by the algebraic norm into the <strong>doubly null set</strong> $\mathcal K_{\mathrm d}=\mathcal K\cap\mathcal N$, which is the Peirce lines together with the origin, and the <strong>isotropic units</strong> $\mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}$. That split is the trace of the algebraic partition, zero divisors against units, and it is the only refinement of the sector that the corpus uses.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$, and $\varepsilon=(1,-1,-1,-1)$. The forms are</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}},
+$$</p>
+<p>so that $\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert_E^2$ is the <strong>Krein norm</strong>. The <strong>algebraic norm</strong> is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$; it is multiplicative and it decides invertibility. Its zero set is the algebraic null cone $\mathcal N$, and $\mathcal Z=\mathcal N\setminus\{0\}$ is the zero-divisor set. The product is the plain product, with unit $e_t$.</p>
+<h2 id="definition-and-characterisation">Definition and Characterisation</h2>
+<p><strong>Definition.</strong> The <strong>Krein-degenerate sector</strong> is the null set</p>
+<p>$$
+\mathcal K=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}=0\}
+=\{\tilde Q:|Q_t|=\lVert\vec Q\rVert_E\}.
+$$</p>
+<p>Its elements are <strong>isotropic</strong>; the non-zero ones are the <strong>Krein-null</strong> elements.</p>
+<p><strong>Theorem (five descriptions).</strong> For $\tilde Q\neq0$ the following are equivalent:</p>
+<p>(i) $\tilde Q\in\mathcal K$;</p>
+<p>(ii) $|Q_t|=\lVert\vec Q\rVert_E$;</p>
+<p>(iii) the complex line $\mathbb{C}\tilde Q$ is totally isotropic for the Krein form;</p>
+<p>(iv) the real plane $\operatorname{span}_{\mathbb{R}}\{\tilde Q,i\tilde Q\}$ is totally isotropic for the realified form;</p>
+<p>(v) the restriction of the Krein form to $\mathbb{C}\tilde Q$ vanishes identically.</p>
+<p><em>Proof.</em> (i) $\iff$ (ii) is the coordinate form of the norm. On the complex line the form is $\lambda\mapsto|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, which vanishes identically exactly when $\langle\tilde Q\rangle_{\natural*}=0$, and then the line is its own radical: this is (ii) $\iff$ (iii) $\iff$ (v). The real plane is the real space of the complex line, and the real form is the real part of the Hermitian one, so its radical is the real space of the complex radical: (iii) $\iff$ (iv).</p>
+<p><strong>Corollary (the Krein sign on a null line).</strong> A null line is neither positive nor negative definite: it is degenerate, and its radical is the line itself. This is the line criterion of <em>K-Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>Krein Orthogonality and the Complement</em>, read at the value zero.</p>
+<p><strong>Corollary (the scalar part never vanishes off the origin).</strong> Every non-zero element of $\mathcal K$ has $Q_t\neq0$.</p>
+<p><em>Proof.</em> If $Q_t=0$ then $\lVert\vec Q\rVert_E=0$, hence $\vec Q=0$ and $\tilde Q=0$.</p>
+<p><strong>Remark (the null set is not the algebraic null cone).</strong> The two cones are different objects of the same ambient space: $\mathcal N$ has complex dimension three and real dimension six, and $\mathcal K$ is a real hypersurface of real dimension seven. They meet in $\mathcal K_{\mathrm d}$, of real dimension four. The element $e_t+\vec e_x$ is Krein-null and a unit; the element $\vec e_x+i\vec e_y$ is a zero divisor and not Krein-null.</p>
+<h2 id="geometry">Geometry</h2>
+<p><strong>Theorem (a real cone with an apex).</strong> $\mathcal K$ is a real cone of real dimension $7$, invariant under every complex scalar, and smooth off the origin. Its only singular point is the origin.</p>
+<p><em>Proof.</em> The norm is homogeneous of degree two under complex scalars, $\langle\lambda\tilde Q\rangle_{\natural*}=|\lambda|^2\langle\tilde Q\rangle_{\natural*}$, so the zero set is a cone. The gradient in the real coordinates $(\operatorname{Re}Q_t,\operatorname{Im}Q_t,\operatorname{Re}\vec Q,\operatorname{Im}\vec Q)$ is $2(\operatorname{Re}Q_t,\operatorname{Im}Q_t,-\operatorname{Re}\vec Q,-\operatorname{Im}\vec Q)$, which vanishes only at the origin; off it the zero set is a smooth hypersurface. At the origin the cone has its apex.</p>
+<p><strong>Theorem (parametrisation).</strong> The map</p>
+<p>$$
+\Psi:\mathbb{C}^{\times}\times S^5\longrightarrow\mathcal K\setminus\{0\},
+\qquad
+\Psi(Q_t,W)=Q_t(e_t+W),
+$$</p>
+<p>with $S^5=\{W\in\mathbb{C}^3:\lVert W\rVert_E=1\}$, is a bijection. Hence $\mathcal K\setminus\{0\}$ is connected, of real dimension $7$, and homotopy equivalent to $S^1\times S^5$.</p>
+<p><em>Proof.</em> For $\tilde Q\neq0$ null, $Q_t\neq0$ and $W=\vec Q/Q_t$ has $\lVert W\rVert_E=|\lVert\vec Q\rVert_E/|Q_t|=1$; conversely $\langle Q_t(e_t+W)\rangle_{\natural*}=|Q_t|^2(1-\lVert W\rVert_E^2)=0$. The inverse is $\tilde Q\mapsto(Q_t,\vec Q/Q_t)$. The factor $\mathbb{C}^{\times}$ is homotopy equivalent to $S^1$.</p>
+<p><strong>Corollary (one orbit).</strong> The isometry group $\mathrm{U}(1,3)$ acts transitively on $\mathcal K\setminus\{0\}$. Every $\mathrm{U}(1,3)$-invariant function on the punctured null set is constant, so the metric structure of the sector is exhausted by the value of the norm: there is no further metric invariant inside it.</p>
+<p><em>Proof.</em> The parametrisation identifies $\mathcal K\setminus\{0\}$ with $\mathbb{C}^{\times}\times S^5$, and $\mathrm{U}(1,3)$ acts transitively on it by §<em>Why There Is No Spectral Split</em> of the main article.</p>
+<p><strong>Remark (the projective quadric).</strong> The quotient of $\mathcal K\setminus\{0\}$ by the complex scalars is the null quadric of the form in $\mathbb{CP}^3$, a real manifold of dimension $5$; the parametrisation above exhibits the punctured null set as a $\mathbb{C}^{\times}$-bundle over it. The quadric is the boundary of the complex hyperbolic space of <em>The Krein Level Sets and the Hyperbolic Structure</em>.</p>
+<p><strong>Remark (the cone is not pointed).</strong> $\mathcal K$ is invariant under $\tilde Q\mapsto-\tilde Q$, so it contains opposite pairs of rays. It is not convex either: the null elements $e_t+\vec e_x$ and $-e_t+\vec e_x$ have the midpoint $\vec e_x$, of value $-1$.</p>
+<h2 id="the-witt-index">The Witt Index</h2>
+<p><strong>Definition.</strong> A subspace $\mathbb{W}$ is <strong>totally isotropic</strong> when $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=0$ for all $\tilde Q_1,\tilde Q_2\in\mathbb{W}$, equivalently when $\mathbb{W}\subseteq\mathbb{W}^{\perp_K}$, where $\mathbb{W}^{\perp_K}=\{\tilde Q:\langle\tilde Q,\tilde W\rangle_{\natural*}=0\ \text{for every}\ \tilde W\in\mathbb{W}\}$ is the Krein-orthogonal complement; it is <strong>maximal</strong> when it is contained in no larger one. The <strong>Witt index</strong> is the common dimension of the maximal totally isotropic subspaces.</p>
+<p><strong>Theorem (the Witt index).</strong> The Witt index is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$. Every maximal totally isotropic complex subspace is a line, and $\mathbb{C}(e_t+\vec e_x)$ is one; a maximal totally isotropic real subspace is the plane
+$$
+\mathbb{W}_{\mathrm{iso}}=\operatorname{span}_{\mathbb{R}}\{e_t+\vec e_x,\ i(e_t+\vec e_x)\}.
+$$
+Every totally isotropic subspace is contained in a maximal one, and $\mathrm{U}(1,3)$ acts transitively on the maximal ones.</p>
+<p><em>Proof.</em> A totally isotropic subspace meets $\mathbb{V}_{\mathbb{B}}=\operatorname{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ only at the origin, since a non-zero element of $\mathbb{V}_{\mathbb{B}}$ has negative value; it therefore injects into $\mathbb{B}/\mathbb{V}_{\mathbb{B}}$, of real dimension $2$ and complex dimension $1$. Hence its real dimension is at most $2$ and its complex dimension at most $1$. The displayed line and plane are totally isotropic,
+$$
+\langle e_t+\vec e_x,e_t+\vec e_x\rangle_{\natural*}=0,\qquad
+\langle e_t+\vec e_x,i(e_t+\vec e_x)\rangle_{\natural*}=0,\qquad
+\langle i(e_t+\vec e_x),i(e_t+\vec e_x)\rangle_{\natural*}=0,
+$$
+and they attain the bounds. Witt's extension theorem gives the extension property and the transitivity.</p>
+<p><strong>Remark (the real planes).</strong> Every real totally isotropic plane is the realification of a complex isotropic line. A real plane that is not complex would complexify to a complex totally isotropic plane of dimension two, beyond the Witt index one. The maximal real plane $\mathbb{W}_{\mathrm{iso}}$ is not a Peirce line: it is a real plane and not a complex line, and it contains $e_t+\vec e_x$, of algebraic norm $2$.</p>
+<h2 id="the-two-strata">The Two Strata</h2>
+<p><strong>Definition.</strong> The <strong>doubly null set</strong> and the <strong>isotropic units</strong> are</p>
+<p>$$
+\mathcal K_{\mathrm d}=\mathcal K\cap\mathcal N=\{\tilde Q\in\mathcal K:\langle\tilde Q\rangle_{\natural}=0\},\qquad
+\mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}.
+$$</p>
+<p><strong>Theorem (the two strata).</strong> $\mathcal K=\mathcal K_{\mathrm d}\uplus\mathcal K_{\mathrm u}$. The doubly null set is closed in $\mathcal K$, of real dimension $4$; the isotropic units form its open dense complement, of real dimension $7$. The points of $\mathcal K_{\mathrm d}$ are the origin together with the zero divisors of $\mathcal K$; every point of $\mathcal K_{\mathrm u}$ is a unit.</p>
+<p><em>Proof.</em> $\mathcal K_{\mathrm d}$ is the trace on $\mathcal K$ of the closed algebraic null cone, hence closed. On $\mathcal K$ the algebraic norm takes the values determined by the two parameters: in the parametrisation $\Psi$ one has $\langle\Psi(Q_t,W)\rangle_{\natural}=Q_t^2(1+B^2(W))$, which vanishes exactly when $B^2(W)=-1$. With $\lVert W\rVert_E=1$, writing $W=a+ib$ with $a,b\in\mathbb{R}^3$, the conditions $\lVert W\rVert_E=1$ and $B^2(W)=-1$ give $a\cdot b=0$, $|a|^2+|b|^2=1$ and $|a|^2-|b|^2=-1$, hence $a=0$ and $|b|=1$: the set is $\mathbb{C}^{\times}\times(e_t+iS^2)$, of real dimension $4$. An element with $\langle\tilde Q\rangle_{\natural}\neq0$ is not a zero divisor, and being non-zero it is a unit; at the origin the element is neither.</p>
+<p><strong>Corollary (the split is the algebraic partition).</strong> The two strata are exactly the traces on $\mathcal K$ of the three algebraic classes:</p>
+<p>$$
+\mathcal K_{\mathrm u}=\mathcal K\cap\mathbb{B}^{\times},\qquad
+\mathcal K_{\mathrm d}\setminus\{0\}=\mathcal K\cap\mathcal Z,\qquad
+\{0\}=\mathcal K\cap\{0\}.
+$$</p>
+<p><strong>Remark (the correct refinement).</strong> This is why the sector is refined by the algebraic norm and not by the discriminant. The algebraic norm decides invertibility, and invertibility is the property that the products, the sandwich and the polar decomposition follow; the discriminant decides only the separation of the eigenvalues and is not preserved by the isometry group. §<em>Why There Is No Spectral Split</em> of the main article gives the four reasons in full.</p>
+<h2 id="the-doubly-null-stratum">The Doubly Null Stratum</h2>
+<p><strong>Theorem (the Peirce lines).</strong> In the parametrisation above the doubly null set is</p>
+<p>$$
+\mathcal K_{\mathrm d}\setminus\{0\}
+=\mathbb{C}^{\times}\cdot(e_t+iS^2)
+=\{c(e_t+i\vec u)\ :\ c\in\mathbb{C}^{\times},\ \vec u\in S^2\},
+$$</p>
+<p>that is, the union of the complex lines $\mathbb{C}(e_t+i\vec u)$. These are exactly the doubly null Peirce lines, whose idempotents and Peirce decompositions are <em>The Peirce Decomposition of the Biquaternion Algebra</em>, and whose minimal ideals are <em>The Minimal Left Ideals</em>. The parametrisation by $(c,\vec u)$ is a bijection, and $\mathcal K_{\mathrm d}\setminus\{0\}$ is homotopy equivalent to $S^1\times S^2$.</p>
+<p><em>Proof.</em> The computation of the preceding theorem gives the first equality; the identification with the Peirce lines is the classification of <em>The Peirce Decomposition of the Biquaternion Algebra</em>. Injectivity: $c(e_t+i\vec u)=c'(e_t+i\vec u')$ forces $c=c'$ from the scalar parts and then $\vec u=\vec u'$.</p>
+<p><strong>Theorem (the idempotents).</strong> For $\vec u\in S^2$ the element</p>
+<p>$$
+\tilde\Pi_{\vec u}=\tfrac12(e_t+i\vec u)
+$$</p>
+<p>is an idempotent, $\tilde\Pi_{\vec u}^2=\tilde\Pi_{\vec u}$, with complementary idempotent $\tilde\Pi_{-\vec u}=\tfrac12(e_t-i\vec u)$, and</p>
+<p>$$
+\tilde\Pi_{\vec u}+\tilde\Pi_{-\vec u}=e_t,\qquad
+\tilde\Pi_{\vec u}\tilde\Pi_{-\vec u}=0 .
+$$</p>
+<p>The line $\mathbb{C}(e_t+i\vec u)$ is the line of the idempotent, and it is a minimal left ideal.</p>
+<p><em>Proof.</em> $(e_t+i\vec u)^2=e_t+2i\vec u+(i\vec u)^2=e_t+2i\vec u+\vec u^2=2e_t+2i\vec u$, since $\vec u^2=-e_t$; dividing by four gives the idempotent. The complement is computed in the same way, and $(e_t+i\vec u)(e_t-i\vec u)=e_t-\vec u^2=e_t-e_t=0$. The line is a minimal left ideal, by the classification of the doubly null Peirce lines in the cited section.</p>
+<p><strong>Corollary (the algebraic status).</strong> Every non-zero point of $\mathcal K_{\mathrm d}$ is a zero divisor, and the origin is neither a unit nor a zero divisor. The algebraic norm vanishes identically on $\mathcal K_{\mathrm d}$.</p>
+<p><strong>Remark (not the nilpotent cone).</strong> The doubly null set and the nilpotent cone $\{\tilde Q:\tilde Q^2=0\}$ both have real dimension $4$, and they are different cones: $e_t+i\vec e_x$ is doubly null and its square is $2e_t+2i\vec e_x\neq0$, while a non-zero nilpotent has $Q_t=0$ and therefore is not in $\mathcal K$. Their intersection is the origin. The nilpotent cone is the intersection $\mathcal N\cap\mathcal S$ of the algebraic null cone with the spectral-degenerate cone, and the doubly null set is the intersection $\mathcal N\cap\mathcal K$ of the algebraic null cone with the Krein null set; the two intersections are computed from different second conditions.</p>
+<h2 id="the-isotropic-units">The Isotropic Units</h2>
+<p><strong>Theorem (the open stratum).</strong> In the parametrisation of §<em>Geometry</em>,</p>
+<p>$$
+\mathcal K_{\mathrm u}=\mathbb{C}^{\times}\cdot\bigl(e_t+(S^5\setminus iS^2)\bigr)
+=\{Q_t(e_t+W)\ :\ Q_t\in\mathbb{C}^{\times},\ W\in S^5,\ B^2(W)\neq-1\}.
+$$</p>
+<p>It is open and dense in $\mathcal K$, connected, of real dimension $7$, and it is a cone with its apex deleted.</p>
+<p><em>Proof.</em> The complement of $\mathbb{C}^{\times}\cdot(e_t+iS^2)$ in $\mathbb{C}^{\times}\cdot(e_t+S^5)$ is $\mathbb{C}^{\times}\cdot\bigl(e_t+(S^5\setminus iS^2)\bigr)$. The set $iS^2$ is a $2$-sphere in $S^5$, of real codimension three, so its complement is connected and open; multiplying by $\mathbb{C}^{\times}$ and taking the closure adds the apex. The dimension is $2+5=7$.</p>
+<p><strong>Theorem (the algebraic norm on the stratum).</strong> On $\mathcal K_{\mathrm u}$ the algebraic norm takes every non-zero complex value, and the map</p>
+<p>$$
+\mathcal K_{\mathrm u}\longrightarrow\mathbb{C}^{\times},\qquad
+\tilde Q\longmapsto\langle\tilde Q\rangle_{\natural},
+$$</p>
+<p>is surjective. On $\mathcal K_{\mathrm d}$ it is identically zero.</p>
+<p><em>Proof.</em> For $\tilde Q=c(e_t+\vec e_x)$ with $c\neq0$ one has $\langle\tilde Q\rangle_{\natural*}=|c|^2(1-1)=0$ and $\langle\tilde Q\rangle_{\natural}=2c^2$, which ranges over $\mathbb{C}^{\times}$ as $c$ does. On the doubly null set the norm vanishes by definition.</p>
+<p><strong>Corollary (the two strata are not separated by the metric).</strong> Both strata lie in the single orbit $\mathcal K\setminus\{0\}$ of $\mathrm{U}(1,3)$; the isometry group moves a point of $\mathcal K_{\mathrm d}$ to a point of $\mathcal K_{\mathrm u}$. The stratum is an invariant of the algebra, not of the form.</p>
+<p><strong>Remark (the spectral locus).</strong> The spectral-degenerate cone $\mathcal S=\{B^2=0\}$ meets $\mathcal K$ in the origin together with a real cone of dimension $5$, contained in $\mathcal K_{\mathrm u}$: in the parametrisation, $B^2(W)=0$ on $S^5$ is a set of real dimension $3$, and $\mathbb{C}^{\times}$ adds two. Every non-zero point of that intersection is a unit. Nothing in the Krein split depends on it, and it is recorded only because the inner derivation $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on $\mathcal S$.</p>
+<h2 id="multiplication-and-inversion">Multiplication and Inversion</h2>
+<p><strong>Theorem (the sector is not closed under multiplication).</strong> The product of two null elements can be positive, negative or null.</p>
+<p><em>Proof.</em> Three witnesses.</p>
+<ul>
+<li><strong>Null times null, positive product.</strong> $e_t+\vec e_x$ and $e_t-\vec e_x$ are null, and $(e_t+\vec e_x)(e_t-\vec e_x)=2e_t$, of value $4$.</li>
+<li><strong>Null times null, negative product.</strong> $(e_t+\vec e_x)^2=2\vec e_x$, of value $-4$.</li>
+<li><strong>Null times null, null product.</strong> $e_t+\vec e_x$ and $e_t+i\vec e_x$ are null, and
+$$
+(e_t+\vec e_x)(e_t+i\vec e_x)=(1-i)e_t+(1+i)\vec e_x,\qquad
+\langle\cdot\rangle_{\natural*}=2-2=0.
+$$</li>
+</ul>
+<p><strong>Theorem (inversion preserves the null set).</strong> If $\tilde Q$ is a unit then</p>
+<p>$$
+\langle\tilde Q^{-1}\rangle_{\natural*}=\frac{\langle\tilde Q\rangle_{\natural*}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert^2}.
+$$</p>
+<p><em>Proof.</em> $\tilde Q^{-1}=(Q_t-\vec Q)/\langle\tilde Q\rangle_{\natural}$, so the scalar part of the inverse is $Q_t/\langle\tilde Q\rangle_{\natural}$ and its vector part is $-\vec Q/\langle\tilde Q\rangle_{\natural}$; the value follows.</p>
+<p><strong>Corollary (the strata under inversion).</strong> The null set is stable under inversion on its units: $\mathcal K_{\mathrm u}$ is closed under inversion. It is not closed under multiplication. The doubly null set is not inversion-stable, its non-zero points being zero divisors. The isotropic units therefore form a <strong>symmetric subset of the unit group</strong>, not a subgroup.</p>
+<p><strong>Remark (the products of the strata).</strong> The doubly null set is a set of zero divisors, so its products with anything are constrained by the algebraic norm: the product of an element of $\mathcal K_{\mathrm d}$ with any element has algebraic norm zero, hence lies in $\mathcal N$. The isotropic units have non-zero algebraic norm, so their products are units. Neither statement uses the Krein norm, and this is the sense in which the algebraic partition is the finer one inside the sector.</p>
+<h2 id="relation-to-the-algebraic-partition">Relation to the Algebraic Partition</h2>
+<p><strong>Theorem (the three traces).</strong> The null set meets the algebraic classes exactly as follows:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>unit</th>
+<th>zero divisor</th>
+<th>neither</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>$\mathcal K_{\mathrm d}$</strong></td>
+<td>none</td>
+<td>$\mathcal K_{\mathrm d}\setminus\{0\}$</td>
+<td>the origin</td>
+</tr>
+<tr>
+<td><strong>$\mathcal K_{\mathrm u}$</strong></td>
+<td>all</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, of pair $(0,0)$, where the pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natural})$.</p>
+<p><strong>Corollary (the sector straddles the algebraic partition).</strong> The null set is neither contained in the unit group nor in the zero-divisor set: it meets both, and its two strata are exactly the two intersections. The Krein norm alone cannot see the difference, since it vanishes on both; the algebraic norm is the invariant that separates them.</p>
+<p><strong>Remark (the equality case).</strong> The doubly null set is the equality case of the inequality of <em>K-Regularity and Degeneracy in the Biquaternion Algebra</em>, §<em>The degeneracy case: the null set</em>: an algebraic-null element has non-positive Krein norm, and it is Krein-null exactly on the Peirce lines, together with the origin. So the closed negative half-space $\{\langle\cdot\rangle_{\natural*}\le0\}$ contains the whole zero-divisor set, and the doubly null set is where the two cones touch.</p>
+<h2 id="comparison-with-the-regular-sector">Comparison with the Regular Sector</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>degenerate sector</th>
+<th>regular sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>condition</td>
+<td>$\langle\tilde Q\rangle_{\natural*}=0$</td>
+<td>$\langle\tilde Q\rangle_{\natural*}\neq0$</td>
+</tr>
+<tr>
+<td>real dimension</td>
+<td>$7$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>components</td>
+<td>one</td>
+<td>two</td>
+</tr>
+<tr>
+<td>smoothness</td>
+<td>smooth off the origin, apex at the origin</td>
+<td>open submanifold</td>
+</tr>
+<tr>
+<td>homotopy type</td>
+<td>$S^1\times S^5$ up to homotopy</td>
+<td>$S^1\uplus S^5$</td>
+</tr>
+<tr>
+<td>line $\mathbb{C}\tilde Q$</td>
+<td>totally isotropic</td>
+<td>non-degenerate, definite</td>
+</tr>
+<tr>
+<td>algebraic classes</td>
+<td>zero divisors and units</td>
+<td>units and zero divisors</td>
+</tr>
+<tr>
+<td>closed under products</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>closed under inversion</td>
+<td>on the isotropic units</td>
+<td>on the units</td>
+</tr>
+<tr>
+<td>refinement inside</td>
+<td>algebraic norm</td>
+<td>sign and algebraic norm</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two sectors exhaust the algebra.</strong> $\mathbb{B}=\mathcal K\uplus\mathbb{B}^{\natural*}$. The comparison of the algebraic classes is the point of the pair: the regular sector separates units from zero divisors by the sign, and the degenerate sector separates them by the algebraic norm alone.</p>
+<h2 id="consequences">Consequences</h2>
+<p><strong>Left multiplication.</strong> If $\tilde Q\in\mathcal K_{\mathrm u}$ it is a unit, and $L_{\tilde Q}$ is a bijection of complex rank $4$. If $\tilde Q\in\mathcal K_{\mathrm d}$ is non-zero it is a zero divisor, and $L_{\tilde Q}$ has rank $2$; at the origin it has rank $0$. The rank follows the algebraic norm and not the Krein norm: it is constant on $\mathcal K_{\mathrm u}$ and on each point of $\mathcal K_{\mathrm d}$ it is the algebraic rank, by <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, §<em>The Annihilators</em>.</p>
+<p><strong>The sandwich.</strong> The operator $\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by <em>Relations between the N Norm and Spectral Regularity and Degeneracy</em>, §<em>The Sandwich</em>. On the null set it is therefore singular exactly on $\mathcal K_{\mathrm d}$, and invertible on $\mathcal K_{\mathrm u}$. This is the sharpest operator reading of the two strata: the sandwich separates them, and it does so through the algebraic norm.</p>
+<p><strong>The polar decomposition.</strong> The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the unit group. On the null set it therefore exists exactly on $\mathcal K_{\mathrm u}$ and fails on $\mathcal K_{\mathrm d}$; <em>The Polar Decomposition of a N-Regular Biquaternion</em>.</p>
+<p><strong>The adjoint.</strong> The Krein adjoint is defined at every point of the sector, the form being non-degenerate; the sector imposes no restriction on it. The operator theory is <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>.</p>
+<p><strong>The level set.</strong> The sector is the level set of value zero. It bounds both sign regions of the regular sector, and its projective quotient is the null quadric, the boundary of the complex hyperbolic ball of <em>The Krein Level Sets and the Hyperbolic Structure</em>.</p>
+<h2 id="summary">Summary</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>definition</td>
+<td>$\mathcal K=\{\langle\tilde Q\rangle_{\natural*}=0\}=\{|Q_t|=\lVert\vec Q\rVert_E\}$</td>
+</tr>
+<tr>
+<td>descriptions</td>
+<td>totally isotropic line; totally isotropic real plane; every non-zero point has $Q_t\neq0$</td>
+</tr>
+<tr>
+<td>geometry</td>
+<td>real cone of dimension $7$, smooth off the apex, $\mathcal K\setminus\{0\}\cong\mathbb{C}^{\times}\times S^5$, one orbit of $\mathrm{U}(1,3)$</td>
+</tr>
+<tr>
+<td>strata</td>
+<td>$\mathcal K_{\mathrm d}$: Peirce lines and the origin, dimension $4$, zero divisors; $\mathcal K_{\mathrm u}$: isotropic units, dimension $7$, open dense</td>
+</tr>
+<tr>
+<td>doubly null</td>
+<td>$c(e_t+i\vec u)$, the idempotents $\tfrac12(e_t+i\vec u)$ and their complements</td>
+</tr>
+<tr>
+<td>algebraic norm</td>
+<td>$0$ on $\mathcal K_{\mathrm d}$; onto $\mathbb{C}^{\times}$ on $\mathcal K_{\mathrm u}$</td>
+</tr>
+<tr>
+<td>multiplication</td>
+<td>not closed: null times null can be positive, negative or null</td>
+</tr>
+<tr>
+<td>inversion</td>
+<td>preserves the null set, and $\mathcal K_{\mathrm u}$ is inversion-stable</td>
+</tr>
+<tr>
+<td>operators</td>
+<td>rank of left multiplication and the sandwich follow the algebraic norm; the polar decomposition exists exactly on $\mathcal K_{\mathrm u}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The sector is the light cone of the Krein form. It is a single orbit of the isometry group, so the metric structure sees no further subdivision; the only subdivision it admits is algebraic, and it is the split into the Peirce lines and the isotropic units. The doubly null stratum carries the zero divisors and the origin, closed and of dimension four; the isotropic units carry the rest, open and dense and of dimension seven. The Krein norm vanishes on both, and only the algebraic norm tells them apart.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal K$</td>
+<td>the null set, the Krein-degenerate sector</td>
+</tr>
+<tr>
+<td>$\mathcal K_{\mathrm d}=\mathcal K\cap\mathcal N$</td>
+<td>the doubly null set, the Peirce lines and the origin</td>
+</tr>
+<tr>
+<td>$\mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}$</td>
+<td>the isotropic units</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$</td>
+<td>the algebraic null cone</td>
+</tr>
+<tr>
+<td>$\mathcal Z=\mathcal N\setminus\{0\}$</td>
+<td>the zero-divisor set</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert_E^2$</td>
+<td>the Krein norm</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$</td>
+<td>the algebraic norm, which decides invertibility</td>
+</tr>
+<tr>
+<td>$B^2=Q_x^2+Q_y^2+Q_z^2$</td>
+<td>the square of the vector part</td>
+</tr>
+<tr>
+<td>$S^5$</td>
+<td>the unit sphere of $\mathbb{C}^3$</td>
+</tr>
+<tr>
+<td>$iS^2$</td>
+<td>the set of pure imaginary unit vectors, $B^2=-1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}(e_t+i\vec u)$, $\vec u\in S^2$</td>
+<td>the doubly null Peirce lines</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{\vec u}=\tfrac12(e_t+i\vec u)$</td>
+<td>the Hermitian idempotent of the Peirce line</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$</td>
+<td>the sandwich</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-k-regular-sector.html">The K-Regular Sector</a>, for the positive and negative regions and their geometry.</li>
+<li><a href="k-regularity-and-degeneracy-in-the-biquaternion-algebra.html">K-Regularity and Degeneracy in the Biquaternion Algebra</a>, for the partition, the line criterion, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.</li>
+<li><a href="the-krein-level-sets-and-the-hyperbolic-structure.html">The Krein Level Sets and the Hyperbolic Structure</a>, for the level sets, the null quadric and the complex hyperbolic ball.</li>
+<li><a href="the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a>, for the group $\mathrm{U}(1,3)$ and its transitive action.</li>
+<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the algebraic norm, the unit group and the zero-divisor cone.</li>
+<li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the Peirce idempotents behind the doubly null lines.</li>
+<li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the sandwich, the rank of left multiplication and the polar decomposition.</li>
+<li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of a N-Regular Biquaternion</a>, for the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and its failure at the algebraic null cone.</li>
+<li><a href="remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html">Remarkable Subspaces under the General Quaternionic Sesqualgebra</a>, for the restriction of the form to the six remarkable subspaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

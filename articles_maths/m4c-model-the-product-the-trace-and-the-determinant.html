@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-model-the-product-the-trace-and-the-determinant"><strong>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The left regular matrix is the biquaternion read as a linear operator on its own four-dimensional complex space. The assignment is fixed on the basis by the multiplication table, and it is an injective algebra homomorphism whose image is a four-dimensional subalgebra of $M_4(\mathbb{C})$.</p>
+<p>The image is not the whole of $M_4(\mathbb{C})$: the algebra has complex dimension four and the matrix algebra has sixteen. What the regular model loses in surjectivity it gains in structure: the image is the algebra acting on itself, and after a fixed change of basis it is two identical copies of the $2\times2$ model.</p>
+<p>This article owns the assignment, the isomorphism, the signs and the Pauli matrices, the algebra in matrix form, the structure map and the real form, and the sense in which the model is a choice. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The $2\times2$ model is $\mathsf{M}_2$, fixed by
+$$
+\mathsf{M}_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
+$$</p>
+<p><strong>Boundaries.</strong> The right regular matrix is <em>$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser</em>, §<em>The Right Regular Image</em>; the Peirce coordinates are <em>$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>; the trace and the determinant are <em>$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm</em>. The abstract algebra is <em>The Biquaternion Algebra</em>; the $2\times2$ model is <em>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>.</p>
+<h2 id="the-assignment-on-the-basis">The Assignment on the Basis</h2>
+<p><strong>The four units go to four matrices, and the four coefficients go to one matrix.</strong> The <strong>left regular matrix</strong> $\mathsf{M}_4^{L}(\tilde Q)$ is the $4\times4$ matrix whose $\mu$-th column is the coordinate column of the product $\tilde Q e_\mu$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$. The shorter notation $\mathsf{M}_4$ stands for $\mathsf{M}_4^{L}$. The four units go to</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Unit</th>
+<th>Matrix</th>
+<th>Square</th>
+<th>Determinant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$\mathrm I_4$</td>
+<td>$\mathrm I_4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}$</td>
+<td>$-\mathrm I_4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}$</td>
+<td>$-\mathrm I_4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}$</td>
+<td>$-\mathrm I_4$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and a general element is</p>
+<p>$$
+\boxed{\;\mathsf{M}_4(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
+Q_z&-Q_y&Q_x&Q_t
+\end{pmatrix}\;}
+$$</p>
+<p>Every entry is one coefficient of $\tilde Q$, with a sign and no sum. The four entries of each row and each column carry the four coefficients once.</p>
+<p><strong>The inverse map.</strong> Reading the coefficients back off the matrix,</p>
+<p>$$
+\mathsf{M}_4^{-1}:\begin{pmatrix}
+a_{00}&a_{01}&a_{02}&a_{03}\\
+a_{10}&a_{11}&a_{12}&a_{13}\\
+a_{20}&a_{21}&a_{22}&a_{23}\\
+a_{30}&a_{31}&a_{32}&a_{33}
+\end{pmatrix}\longmapsto
+Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,
+$$</p>
+<p>with
+$$
+Q_t=\tfrac14\operatorname{Tr}\mathsf{M}_4(\tilde Q),\qquad
+Q_x=a_{10},\qquad
+Q_y=a_{20},\qquad
+Q_z=a_{30}.
+$$</p>
+<p>The trace formula is the only one that averages; the three vector coefficients are single entries, because the first column is the coordinate column of the element.</p>
+<p><strong>Example.</strong> For $\tilde Q=(2+i)e_t+(1-i)\vec e_x+3\vec e_y+i\vec e_z$,</p>
+<p>$$
+\mathsf{M}_4(\tilde Q)=\begin{pmatrix}
+2+i&-1+i&-3&-i\\
+1-i&2+i&-i&3\\
+3&i&2+i&-1+i\\
+i&-3&1-i&2+i
+\end{pmatrix}.
+$$</p>
+<p>Its trace is $8+4i=4(2+i)$, and its determinant is $(11+2i)^2=117+44i$, because $11+2i=\langle\tilde Q\rangle_{\natural}$.</p>
+<h2 id="the-isomorphism">The Isomorphism</h2>
+<p><strong>Theorem (the left regular matrix is multiplicative and injective).</strong> For all $\tilde P,\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)=\mathsf{M}_4(\tilde P\tilde Q),
+\qquad
+\mathsf{M}_4(\tilde Q)=0\iff\tilde Q=0.
+$$</p>
+<p>Hence $\mathsf{M}_4$ is an injective algebra homomorphism, and its image is a $4$-dimensional complex subalgebra of $M_4(\mathbb{C})$, isomorphic to $\mathbb{B}$ and therefore to $M_2(\mathbb{C})$.</p>
+<p><em>Proof.</em> On the basis, associativity gives $\tilde P(\tilde Q e_\mu)=(\tilde P\tilde Q)e_\mu$ for every $\mu$, so the two matrices agree on the four columns of the identity. The first column of $\mathsf{M}_4(\tilde Q)$ is the coordinate column of $\tilde Q$, so vanishing of the matrix forces all four coefficients to vanish. $\square$</p>
+<p><strong>The image.</strong> Write $M_4(\mathbb{C})_L=\mathsf{M}_4(\mathbb{B})$. It is a complex subspace of dimension $4$ inside the $16$ of $M_4(\mathbb{C})$, closed under multiplication and containing the identity. The inverse of an invertible element is $\mathsf{M}_4(\tilde Q)^{-1}=\mathsf{M}_4(\tilde Q^{-1})$, with $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.</p>
+<p><strong>The image is not everything.</strong> Every two-by-two complex matrix is the image of exactly one biquaternion, but not every four-by-four matrix is. The image has dimension four, the ambient algebra has dimension sixteen, and the twelve missing dimensions are the multiplicity of the two copies. The regular model is therefore an isomorphism onto a subalgebra, not onto the matrix algebra, and the difference is the subject of the rest of the series.</p>
+<p><strong>The left action.</strong> The coefficient space $\mathbb{C}^4$ carries the left action $\tilde Q\cdot x=\mathsf{M}_4(\tilde Q)x$. The space is the algebra $\mathbb{B}$ itself, with left multiplication as the action.</p>
+<h2 id="the-signs-and-the-pauli-matrices">The Signs and the Pauli Matrices</h2>
+<p><strong>The factor $i$ is forced.</strong> The images of the vector units are real matrices squaring to $-\mathrm I_4$, and the image of $i\vec e_k$ is their multiple by $i$. The Hermitian matrices obtained this way are the Pauli matrices repeated in the two copies:</p>
+<p>$$
+\Sigma_k=\mathsf{M}_4(i\vec e_k)=i\mathsf{M}_4(\vec e_k),\qquad
+\mathsf{M}_4(\vec e_k)=-i\Sigma_k,
+$$</p>
+<p>and in the block basis of §<em>The Algebra in Matrix Form</em>
+$$
+\Sigma_1=\operatorname{diag}(\sigma_1,\sigma_1),\qquad
+\Sigma_2=\operatorname{diag}(\sigma_2,\sigma_2),\qquad
+\Sigma_3=\operatorname{diag}(\sigma_3,\sigma_3).
+$$</p>
+<p>In the fixed coefficient basis the same matrices are $S\Sigma_kS^{-1}$, the conjugate block form. Each $\Sigma_k$ is Hermitian and squares to $\mathrm I_4$, so $\mathsf{M}_4(\vec e_k)$ squares to $-\mathrm I_4$. The three anticommute, and their products reproduce the quaternion relations with the correct signs. The factor $i$ is not optional: a real matrix squaring to $-\mathrm I_4$ carries no real line to itself, and the complex structure it defines is the multiplication by $i$ that the representation carries.</p>
+<p><strong>The signs are forced by the cross-relations.</strong> With the assignment above,</p>
+<p>$$
+\mathsf{M}_4(\vec e_x)\mathsf{M}_4(\vec e_y)=\mathsf{M}_4(\vec e_z),
+$$</p>
+<p>not its negative, because $\vec e_x\vec e_y=\vec e_z$ and $\mathsf{M}_4$ is multiplicative. The alternative assignment $\vec e_k\mapsto-\mathsf{M}_4(\vec e_k)$ preserves the squares and reverses every cross-product; it is the composition of $\mathsf{M}_4$ with the anti-automorphism that negates the vector part, so it is an anti-isomorphism, not an algebra isomorphism on the same basis. The sign pattern is determined once the images of the three units are fixed, and the three are determined up to conjugation.</p>
+<p><strong>The Pauli algebra.</strong> The matrices satisfy
+$$
+\Sigma_i\Sigma_j=\delta_{ij}\mathrm I_4+i\epsilon_{ijk}\Sigma_k,
+$$
+the Pauli algebra read twice. The commutator is anti-Hermitian and lies in the image of the anti-Hermitian subspace; the anticommutator is Hermitian and lies in the image of the Hermitian subspace. The two readings differ by the factor $i$, exactly as in the $2\times2$ model.</p>
+<h2 id="the-algebra-in-matrix-form">The Algebra in Matrix Form</h2>
+<p><strong>The block change.</strong> The block reduction uses the four elements
+$$
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
+$$
+with the fixed axis $\vec e_z$. They satisfy
+$$
+\tilde\Pi_+^2=\tilde\Pi_+,\quad \tilde\Pi_-^2=\tilde\Pi_-,\quad \tilde\Pi_+\tilde\Pi_-=0,\quad
+\vec\Upsilon_\pm^2=0,\quad
+\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\quad
+\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,
+$$
+and the change matrix with these four elements as columns is
+$$
+S=\begin{pmatrix}
+\tfrac12&0&0&\tfrac12\\
+0&\tfrac{i}{2}&\tfrac{i}{2}&0\\
+0&\tfrac12&-\tfrac12&0\\
+\tfrac{i}{2}&0&0&-\tfrac{i}{2}
+\end{pmatrix},
+\qquad
+S^{-1}=\begin{pmatrix}
+1&0&0&-i\\
+0&-i&1&0\\
+0&-i&-1&0\\
+1&0&0&i
+\end{pmatrix},
+\qquad
+\det S=-\tfrac14.
+$$</p>
+<p><strong>Theorem (the block reduction).</strong> For every $\tilde Q\in\mathbb{B}$,
+$$
+\boxed{\;S^{-1}\mathsf{M}_4(\tilde Q)S=
+\begin{pmatrix}
+\mathsf{M}_2(\tilde Q)&0\\
+0&\mathsf{M}_2(\tilde Q)
+\end{pmatrix}=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q)\;}
+$$</p>
+<p><em>Proof.</em> The columns of $S$ are $\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-$, in that order. Left multiplication by $\tilde Q$ acts on the first two as the matrix $\mathsf{M}_2(\tilde Q)$ in the basis $(\tilde\Pi_+,\vec\Upsilon_+)$ and on the last two as the same matrix in the basis $(\vec\Upsilon_-,\tilde\Pi_-)$. The multiplication table of the four elements gives the four entries in each block, and the two blocks coincide.</p>
+<p><strong>The product is the matrix product.</strong> For two elements $\tilde Q_1,\tilde Q_2$,
+$$
+\mathsf{M}_4(\tilde Q_1\tilde Q_2)=\mathsf{M}_4(\tilde Q_1)\mathsf{M}_4(\tilde Q_2),\qquad
+\mathsf{M}_4(\tilde Q^n)=\mathsf{M}_4(\tilde Q)^n,\qquad
+\mathsf{M}_4(\tilde Q^{-1})=\mathsf{M}_4(\tilde Q)^{-1}.
+$$
+The third identity holds when either side exists, that is when $\langle\tilde Q\rangle_{\natural}\neq0$.</p>
+<p><strong>The invariants.</strong> The block form turns every invariant of $\mathsf{M}_4(\tilde Q)$ into an invariant of $\mathsf{M}_2(\tilde Q)$ read twice.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Invariant</th>
+<th>$M_2(\mathbb{C})$</th>
+<th>$M_4(\mathbb{C})_L$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trace</td>
+<td>$2Q_t$</td>
+<td>$4Q_t$</td>
+</tr>
+<tr>
+<td>determinant</td>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}^2$</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$0,1,2$</td>
+<td>$0,2,4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The centre.</strong> A matrix commuting with every element of the image is a scalar matrix. The centre of the image is the line $\mathbb{C}\mathrm I_4$, the image of the line $\mathbb{C}e_t$. It is the same line as the centre of $M_4(\mathbb{C})$, and the image is its own centraliser only when the element is scalar.</p>
+<p><strong>The rank.</strong> The rank of $\mathsf{M}_4(\tilde Q)$ is twice the rank of $\mathsf{M}_2(\tilde Q)$, because the two blocks are equal. It takes the values $0,2,4$ and never $1$ or $3$. The null cone is the set of singular regular matrices, and the rank stratification is the even refinement of the $2\times2$ one.</p>
+<h2 id="the-structure-map-the-presentation-and-the-real-form">The Structure Map, the Presentation and the Real Form</h2>
+<p><strong>The structure map.</strong> The scalars act through
+$$
+\varphi:\mathbb{C}\longrightarrow Z\bigl(M_4(\mathbb{C})_L\bigr),\qquad
+\varphi(A)=A\mathrm I_4,
+$$
+whose image is the line of scalar matrices. The scalar action is $M\mapsto AM$, and it is compatible with the product because $A\mathrm I_4$ is central. In the algebra the same map is $\varphi(A)=Ae_t$; the matrix form shows that its image is exactly the centre of the image.</p>
+<p><strong>The presentation.</strong> The images $X=\mathsf{M}_4(\vec e_x)$ and $Y=\mathsf{M}_4(\vec e_y)$ generate $M_4(\mathbb{C})_L$ as a $\mathbb{C}$-algebra with unit, because $\vec e_x$ and $\vec e_y$ generate $\mathbb{B}$ and $\mathsf{M}_4$ is injective. They satisfy
+$$
+X^2=Y^2=-\mathrm I_4,\qquad XY+YX=0,
+$$
+and these are the defining relations. The algebra with two generators and those relations is the quaternion algebra over $\mathbb{C}$, of dimension four; the map from it to the image is nonzero, hence injective because the quaternion algebra is simple, and it is onto for dimension reasons. The matrix reading is that two anticommuting complex structures generate the image, and the fourth basis element is their product.</p>
+<p><strong>The real form.</strong> Read over $\mathbb{R}$, the image has real dimension eight, and
+$$
+J:M_4(\mathbb{C})_L\longrightarrow M_4(\mathbb{C})_L,\qquad J(M)=iM,
+$$
+is a central complex structure, $J^2=-\mathrm{id}$, commuting with both one-sided multiplications. It is the image of multiplication by the central imaginary $i$ of $\mathbb{B}$, and the complex basis $(\mathrm I_4,-i\Sigma_1,-i\Sigma_2,-i\Sigma_3)$ is the image of the complex basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; together with $i$ times it, it gives a real basis of the eight real dimensions. The realified matrix in the basis $(e_\mu,ie_\mu)$ is the block matrix
+$$
+\begin{pmatrix}\operatorname{Re}X&-\operatorname{Im}X\\ \operatorname{Im}X&\operatorname{Re}X\end{pmatrix},
+$$
+with the real and imaginary parts of $X$ in the four blocks.</p>
+<p><strong>Simple and without division.</strong> The image is isomorphic to $M_2(\mathbb{C})$, hence simple, and it is not a division algebra, since $E_{11}E_{22}=0$ with both factors nonzero in the $2\times2$ model. The regular model inherits both properties from the algebra, and the ambient $M_4(\mathbb{C})$ adds no new two-sided ideal to the image.</p>
+<h2 id="the-choice-of-model">The Choice of Model</h2>
+<p><strong>Any two models differ by a change of basis.</strong> A model of the regular representation is a basis of $\mathbb{C}^4$. Let $C\in GL_4(\mathbb{C})$ have as columns the new basis vectors written in the old basis. The matrix of the same element in the new basis is
+$$
+\mathsf{M}_4^{C}(\tilde Q)=C^{-1}\mathsf{M}_4(\tilde Q)C,
+\qquad
+\mathsf{M}_4(\tilde Q)=C\,\mathsf{M}_4^{C}(\tilde Q)\,C^{-1}.
+$$
+Two changes compose,
+$$
+(C_1C_2)^{-1}M(C_1C_2)=C_2^{-1}\bigl(C_1^{-1}MC_1\bigr)C_2,
+$$
+so the models form a single orbit of $GL_4(\mathbb{C})$ acting by conjugation. The fixed coefficient basis is one representative; the block basis is the representative $C=S$ in which the matrix is block diagonal.</p>
+<p><strong>What the choice fixes.</strong> The choice fixes the four columns, the diagonal axis, the two column pairs and the explicit entries of every element. None of these is invariant under conjugation, and none of them is needed to state the algebra. The invariants — the trace and the determinant — are unchanged by the choice, and they are the subject of the articles that follow.</p>
+<p><strong>The conjugations that change nothing.</strong> A matrix $P$ that commutes with the image leaves every regular matrix unchanged, because $P^{-1}\mathsf{M}_4(\tilde Q)P=\mathsf{M}_4(\tilde Q)$. The commutant is the right regular image of <em>$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser</em>, §<em>The Right Regular Image</em>, of dimension four. The conjugations by $GL_4(\mathbb{C})$ that do change the matrices are the changes of basis that move the image inside $M_4(\mathbb{C})$; they give equivalent models, not different algebras.</p>
+<p><strong>The matrix model is a change of coordinates.</strong> It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a quarter of the trace, the central scalar is the square root of the determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two pairs of columns of the model. These are collected in <em>$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm</em> and in <em>$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The assignment $\mathsf{M}_4$ sends $e_t$ to $\mathrm I_4$ and the three vector units to the signed permutation matrices of the multiplication table, and extends by linearity. It is an injective homomorphism of complex algebras, and its image is a four-dimensional subalgebra of $M_4(\mathbb{C})$, isomorphic to $M_2(\mathbb{C})$ but not equal to the whole matrix algebra. The unit is $\mathrm I_4$, the centre is the scalar matrices, and the inverse is the image of the quaternionic conjugate divided by the determinant. The factor $i$ and the signs of the cross-relations are forced by the quaternion relations. The Peirce change $S$ reduces the matrix to two identical $2\times2$ blocks. The model is unique up to conjugation by $GL_4(\mathbb{C})$, and the fixed choice is the one in which the Peirce basis makes the reduction visible.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the basis; $e_t$ the unit, $\vec e_k^2=-e_t$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>an element and its scalar–vector split</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4=\mathsf{M}_4^{L}$</td>
+<td>the left regular matrix</td>
+</tr>
+<tr>
+<td>$M_4(\mathbb{C})_L$</td>
+<td>its image in $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\Sigma_k=\mathsf{M}_4(i\vec e_k)=-i\mathsf{M}_4(\vec e_k)$</td>
+<td>the Pauli matrices, repeated in the two copies</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>the fixed block change, $\det S=-\tfrac14$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm,\vec\Upsilon_\pm$</td>
+<td>the four block-basis elements of the fixed axis</td>
+</tr>
+<tr>
+<td>$Q_t=\tfrac14\operatorname{Tr}\mathsf{M}_4(\tilde Q)$</td>
+<td>the scalar part as a quarter of the trace</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
+<td>the central scalar, the square root of the determinant</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra and its two products</li>
+<li><a href="m4c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the two invariants</li>
+<li><a href="m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the coordinate model and the two blocks</li>
+<li><a href="m4c-representation-worked-examples.html">$M_4(\mathbb{C})_L$ Representation : Worked Examples</a>, for the matrices computed in the model</li>
+<li><a href="m4c-model-the-centraliser-and-the-double-centraliser.html">$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser</a>, §<em>The Right Regular Image</em>, for the commutant</li>
+<li><a href="m2c-model-the-product-the-trace-and-the-determinant.html">$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</a>, for the $2\times2$ model</li>
+<li><a href="matrix-algebras.html">Matrix Algebras</a>, for the structure of $M_n(\mathbb{C})$</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

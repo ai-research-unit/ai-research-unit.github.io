@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion"><strong>The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Throughout this article $\tilde Q$ lies in the N-regular, spectrally regular sector $\Sigma_{11}$, so $N\neq0$ and $B^2\neq0$. The sector condition is the domain on which the eigenbasis and the companion constructions are those of the regular case; the wall $B^2=0$ is treated in the companion article of the same title with <em>Spectrally Degenerate</em>.</p>
+<p>The <strong>Hermitian sandwich</strong> of the biquaternion algebra is the operator</p>
+<p>$$
+\Theta_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},\qquad \Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*},
+$$</p>
+<p>the two-sided operator whose right factor is the Hermitian conjugate of its left factor. It is the operator that carries the Lorentz group on the algebra: on the norm-one slice it acts on the anti-Hermitian and Hermitian subspaces by the proper orthochronous Lorentz group, and on the full group of units it is that action composed with a dilation.</p>
+<p>The polar decomposition writes an element of non-vanishing norm as four factors,</p>
+<p>$$
+\tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=r\exp(i\alpha)\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+\qquad \Rho=r\exp(i\alpha),
+$$</p>
+<p>the four being the scale $r>0$, the central phase $\exp(i\alpha)$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\psi\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the sandwich one factor at a time and answers one question: <strong>what does each factor do to the operator?</strong> The answer is read one factor at a time, and the phase does nothing.</p>
+<p>The article is the vector-side companion of <em>The Polar Decomposition of a N-Regular Biquaternion</em>, §<em>The Operator Reading: the Twist</em>. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the sandwich on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is <em>The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion</em>: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{M}_\pm$ are exchanged at $\alpha=\tfrac{\pi}{2}$. The exponent reading of the two slots is in <em>The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion</em>.</p>
+<p>The plan is the following. §<em>The Sandwich of the Word</em> proves the multiplicativity and the closed form $\Theta_{\tilde Q}=r^{2}\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}$. §<em>The Scale</em> to §<em>The Rotor</em> take the four factors in the order of the word. §<em>The Eigenbasis and the Two Spinor Slots</em> reads the sandwich as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. The exponent bookkeeping is in <em>The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion</em>. §<em>The Image and the Kernel</em> identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §<em>The Vanishing of the Modulus</em> records the degenerate case. The article closes with the summary, the notation and the readings.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the product $\vec e_x\vec e_y=\vec e_z$ and the squares $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$. The scalar imaginary is $i$, central, $i^{2}=-1$. An element is $\tilde Q=Q_te_t+\vec Q$ with the four coefficients $Q_\mu$ complex.</p>
+<p>The three conjugations are the quaternion conjugation $\natural$, the coefficient conjugation $\bar\cdot$ and their composite, the <strong>Hermitian conjugation</strong></p>
+<p>$$
+\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z .
+$$</p>
+<p>The Hermitian and anti-Hermitian subspaces are</p>
+<p>$$
+\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}.
+$$</p>
+<p>On $\mathbb{M}_-$ an element is $\tilde Q_-=ia\,e_t+\vec b$ with $a\in\mathbb{R}$ and $\vec b$ a real vector; on $\mathbb{M}_+$ an element is $\tilde Q_+=a\,e_t+i\vec b$ with the same real data. The two sectors are exchanged by multiplication by $i$, which is central.</p>
+<p>The <strong>norm</strong> of the polar series is the complex number</p>
+<p>$$
+\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},\qquad \tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}\,e_t ,
+$$</p>
+<p>and the <strong>domain</strong> of the polar word is $\langle\tilde Q\rangle_{\natural}\neq0$. The word is</p>
+<p>$$
+\tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
+\Rho=r\exp(i\alpha),\qquad
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr),\qquad
+\tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr),
+$$</p>
+<p>with $r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\alpha=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy</p>
+<p>$$
+\Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
+$$</p>
+<p>The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, the $\sigma_k$ being the Pauli matrices. It is $\mathbb{C}$-linear and satisfies $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, and its determinant is the norm, $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.</p>
+<p>The sandwich is written $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ throughout. It uses the Hermitian conjugate in the right slot and never the inverse; the two coincide only where $\tilde Q$ is $*$-unitary. It is the member $L_{\tilde Q}R_{\tilde Q^{*}}$ of the general two-sided family of <em>Two-Sided Operators on the Biquaternion Algebra</em>, with the second parameter fixed at the Hermitian conjugate of the first; the general family allows the two parameters independently.</p>
+<h2 id="the-sandwich-of-the-word">The Sandwich of the Word</h2>
+<h3 id="elementary-properties">Elementary Properties</h3>
+<p><strong>Proposition.</strong> Let $\tilde Q,\tilde Q'\in\mathbb{B}$ and $\tilde X\in\mathbb{B}$. Then:</p>
+<p><strong>(a)</strong> $\Theta_{\tilde Q\tilde Q'}=\Theta_{\tilde Q}\circ\Theta_{\tilde Q'}$;</p>
+<p><strong>(b)</strong> $\Theta_{\tilde Q}$ is $\mathbb{C}$-linear in $\tilde X$;</p>
+<p><strong>(c)</strong> $\Theta_{\tilde Q}$ is invertible if and only if $\tilde Q$ is invertible, and then $\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}$;</p>
+<p><strong>(d)</strong> $\Theta_{\tilde Q}$ preserves each of $\mathbb{M}_+$ and $\mathbb{M}_-$;</p>
+<p><strong>(e)</strong> $\Theta_{\tilde Q}(e_t)=\tilde Q\tilde Q^{*}$.</p>
+<p><em>Proof.</em> (a) $(\tilde Q\tilde Q')\tilde X(\tilde Q\tilde Q')^{*}=\tilde Q(\tilde Q'\tilde X\tilde Q'^{*})\tilde Q^{*}$. (b) The multiplication and the right factor are $\mathbb{C}$-linear. (c) The inverse of $\Theta_{\tilde Q}$ is $\Theta_{\tilde Q^{-1}}$, because $\tilde Q^{-1}\tilde Q\tilde X\tilde Q^{*}\tilde Q^{-*}=\tilde X$ and $(\tilde Q^{-1})^{*}=(\tilde Q^{*})^{-1}$. (d) If $\tilde X^{*}=\pm\tilde X$, then</p>
+<p>$$
+\bigl(\tilde Q\tilde X\tilde Q^{*}\bigr)^{*}=\tilde Q\tilde X^{*}\tilde Q^{*}=\pm\tilde Q\tilde X\tilde Q^{*}.
+$$</p>
+<p>(e) Put $\tilde X=e_t$.</p>
+<p>The preservation of the two sectors is the structural reason the action splits into two formulas, one per sector, and the reason a sandwich cannot mix the Hermitian and the anti-Hermitian parts.</p>
+<p><strong>Corollary (the scaling of the norm).</strong> For every unit $\tilde Q$ and every $\tilde X$,</p>
+<p>$$
+\boxed{\;\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}\;}.
+$$</p>
+<p><em>Proof.</em> The norm is multiplicative and central, and $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$; hence $\langle\tilde Q\tilde X\tilde Q^{*}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde X\rangle_{\natural}\overline{\langle\tilde Q\rangle_{\natural}}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}$. On the unit-norm slice the sandwich is an isometry of the biquaternion norm.</p>
+<h3 id="the-closed-form">The Closed Form</h3>
+<p><strong>Theorem (the sandwich of the polar word).</strong> Let $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. Then</p>
+<p>$$ \Theta_{\tilde Q}=\Theta_r\circ\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}}, $$</p>
+<p>that is,</p>
+<p>$$
+\boxed{\;\Theta_{\tilde Q}(\tilde X)=r^{2}\,\tilde U_{\mathrm b}\bigl(\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}\bigr)\tilde U_{\mathrm b}\;},
+$$</p>
+<p>and $\Theta_{\exp(i\alpha)}=\mathrm{id}$.</p>
+<p><em>Proof.</em> The Hermitian conjugate of the word is</p>
+<p>$$
+\tilde Q^{*}=\bigl(\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr)^{*}
+=\tilde u_{\mathrm r}^{*}\tilde U_{\mathrm b}^{*}\Rho^{*}
+=\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\bar\Rho
+=\bar\Rho\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b},
+$$</p>
+<p>because the scalars are central. Hence</p>
+<p>$$
+\tilde Q\tilde X\tilde Q^{*}
+=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\bar\Rho
+=\Rho\bar\Rho\,\tilde U_{\mathrm b}\bigl(\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{-1}\bigr)\tilde U_{\mathrm b},
+$$</p>
+<p>and $\Rho\bar\Rho=r^{2}$. The phase has disappeared in the last step.</p>
+<p><strong>Remark (the order).</strong> The rightmost factor of the word acts first: the rotor, then the boost, then the scale. The phase may be inserted anywhere, and so may the scale, because both are central. The boost and the rotor do not commute, so their order is part of the word and cannot be exchanged.</p>
+<p>The theorem is the article in one line. The four sections that follow read its four factors.</p>
+<h2 id="the-scale">The Scale</h2>
+<h3 id="the-factor">The Factor</h3>
+<p>The scale is $r=\exp(\ln r)$, a positive real. It is central, real and Hermitian, $r^{*}=r$, and it is the only factor whose exponent is a real scalar.</p>
+<h3 id="the-sandwich">The Sandwich</h3>
+<p>$$
+\Theta_r(\tilde X)=r\tilde Xr^{*}=r^{2}\tilde X .
+$$</p>
+<p>On $\mathbb{M}_-$ and on $\mathbb{M}_+$ alike, every coordinate is multiplied by $r^{2}$: $a\mapsto r^{2}a$ and $\vec b\mapsto r^{2}\vec b$. The scale is a dilation of ratio $r^{2}$ of the whole algebra, and the only factor that changes the norm of the argument,</p>
+<p>$$
+\langle\Theta_r(\tilde X)\rangle_{\natural}=r^{4}\langle \tilde X\rangle_{\natural}.
+$$</p>
+<h2 id="the-central-phase">The Central Phase</h2>
+<h3 id="the-factor_1">The Factor</h3>
+<p>The phase is $P=\exp(i\alpha)$, central and $*$-unitary,</p>
+<p>$$
+P^{*}=P^{-1}=\exp(-i\alpha),\qquad \langle P\rangle_{\natural}=\exp(2i\alpha).
+$$</p>
+<p>Its exponent is $i\alpha$, purely imaginary and central.</p>
+<h3 id="the-sandwich_1">The Sandwich</h3>
+<p>$$
+\Theta_P(\tilde X)=\exp(i\alpha)\,\tilde X\,\exp(-i\alpha)=\tilde X .
+$$</p>
+<p>The two scalars commute with $\tilde X$ and with each other, and the second is the inverse of the first, so the product is the identity operator.</p>
+<p><strong>The phase is not a half-angle of the sandwich.</strong> The exponent $i\alpha$ is the full generator of the multiplication by $\exp(i\alpha)$ on the module; the sandwich cancels it. It is already half of the argument of the norm, $\langle\tilde Q\rangle_{\natural}=\Rho^{2}=r^{2}\exp(2i\alpha)$, and that is the only doubling in which it takes part. Writing $\exp(i\alpha/2)$ in the word would not change the sandwich, which is the identity either way; it would only change the meaning of the letter $\alpha$, and it would break $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ unless $\alpha$ were redefined as $\arg\langle\tilde Q\rangle_{\natural}$.</p>
+<h3 id="remark-the-cancelled-phase">Remark (the Cancelled Phase)</h3>
+<p>This is the central remark of the article. The phase is the only factor of the word whose sandwich is the identity whatever the value of its parameter. It is not halved, not doubled and not shifted: it is annihilated. Four consequences follow.</p>
+<p><strong>First, the cancellation is exact and global.</strong> It holds for every $\tilde X$, not merely on one subspace, and it uses only two properties, centrality and unitarity. Any central factor of modulus one cancels in any sandwich: if $C$ is central and $C^{*}=C^{-1}$, then</p>
+<p>$$
+C\tilde XC^{*}=\tilde XCC^{-1}=\tilde X .
+$$</p>
+<p><strong>Second, two elements that differ by a phase have the same sandwich.</strong> For a central complex $\lambda$,</p>
+<p>$$
+\Theta_{\lambda\tilde Q}(\tilde X)=\lambda\tilde Q\tilde X\tilde Q^{*}\bar\lambda=|\lambda|^{2}\,\Theta_{\tilde Q}(\tilde X).
+$$</p>
+<p>On the unit circle $|\lambda|=1$ the two sandwiches are equal, so the whole $U(1)$-orbit of $\tilde Q$ has one sandwich. On the positive real axis the sandwich scales by $\lambda^{2}$, which is the scale row of the table. The phase is the unit-modulus part of the centre, and it is exactly the part that disappears.</p>
+<p><strong>Third, the phase is absent from this action but not from the algebra.</strong> It reappears in three places, and the list is the reason the polar word needs it:</p>
+<ul>
+<li>the norm, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\Rho^{2}=r^{2}\exp(2i\alpha)$;</li>
+<li>the determinant, $\det\mathsf M_2(\tilde Q)=\Rho^{2}=r^{2}\exp(2i\alpha)$;</li>
+<li>the module, where left multiplication by $\tilde Q$ acts on the spinor module by the scalar $\Rho=r\exp(i\alpha)$, the twist $\chi(\Rho)=\Rho$ of <em>The Polar Decomposition of a N-Regular Biquaternion</em>, §<em>The Operator Reading: the Twist</em>.</li>
+</ul>
+<p>The first two are quadratic in $\Rho$ and see $2\alpha$; the third is linear and sees $\alpha$; the sandwich multiplies by $\Rho$ on the left and by $\bar\Rho$ on the right and sees $0$.</p>
+<p><strong>Fourth, the spectral reading confirms it.</strong> The eigenvalues of $\Theta_{\tilde Q}$ are the products $\lambda_i\bar\lambda_j$ of the eigenvalues of $\mathsf M_2(\tilde Q)$, as in §<em>The Spectrum of the Sandwich</em>. A phase multiplies every $\lambda_i$ by $\exp(i\alpha)$ and every $\bar\lambda_j$ by $\exp(-i\alpha)$, so every product is unchanged. The cancellation is visible in the spectrum without any computation in coordinates.</p>
+<h2 id="the-boost">The Boost</h2>
+<h3 id="the-factor_2">The Factor</h3>
+<p>The boost is</p>
+<p>$$
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)
+=\cosh\tfrac{\psi}{2}\,e_t+i\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b},
+\qquad \psi\ge0,\qquad \lvert\vec u_{\mathrm b}\rvert=1 .
+$$</p>
+<p>It is Hermitian and of norm one,</p>
+<p>$$
+\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=1,
+$$</p>
+<p>and its square and inverse are</p>
+<p>$$
+\tilde U_{\mathrm b}^{2}=\exp(i\psi\vec u_{\mathrm b}),\qquad
+\tilde U_{\mathrm b}^{-1}=\exp\Bigl(-i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr).
+$$</p>
+<p>The boost is not $*$-unitary, because $\tilde U_{\mathrm b}^{-1}\neq\tilde U_{\mathrm b}$ unless $\psi=0$.</p>
+<h3 id="the-sandwich-on-the-two-sectors">The Sandwich on the Two Sectors</h3>
+<p>The right slot is $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, so the sandwich is a <strong>congruence</strong>,</p>
+<p>$$
+\Theta_{\tilde U_{\mathrm b}}(\tilde X)=\tilde U_{\mathrm b}\,\tilde X\,\tilde U_{\mathrm b},
+$$</p>
+<p>and not a conjugation. Write $b_\parallel=\vec u_{\mathrm b}\cdot\vec b$ and $\vec b_\perp=\vec b-b_\parallel\vec u_{\mathrm b}$.</p>
+<p>On $\mathbb{M}_-$, for $\tilde X=ia\,e_t+\vec b$,</p>
+<p>$$
+\Theta_{\tilde U_{\mathrm b}}(\tilde X)=ia'\,e_t+\vec b',
+\qquad
+a'=a\cosh\psi-b_\parallel\sinh\psi,\qquad
+b_\parallel'=b_\parallel\cosh\psi-a\sinh\psi,\qquad
+\vec b_\perp'=\vec b_\perp .
+$$</p>
+<p>On $\mathbb{M}_+$, for $\tilde X=a\,e_t+i\vec b$,</p>
+<p>$$
+\Theta_{\tilde U_{\mathrm b}}(\tilde X)=a'\,e_t+i\vec b',
+\qquad
+a'=a\cosh\psi+b_\parallel\sinh\psi,\qquad
+b_\parallel'=b_\parallel\cosh\psi+a\sinh\psi,\qquad
+\vec b_\perp'=\vec b_\perp .
+$$</p>
+<p>The two formulas differ only in the signs of the cross terms. The derivation is one line per piece. For the time piece,</p>
+<p>$$
+\tilde U_{\mathrm b}\,(ia\,e_t)\,\tilde U_{\mathrm b}=ia\,\tilde U_{\mathrm b}^{2}
+=ia\cosh\psi-a\sinh\psi\,\vec u_{\mathrm b},
+$$</p>
+<p>and for the vector piece the perpendicular part is fixed and the parallel part is stretched by $\cosh\psi$; the cross terms combine into the formulas above. In the coordinates $(a,b_x,b_y,b_z)$ the matrices of the two actions are</p>
+<p>$$
+B_-(\psi,\vec u_{\mathrm b})=
+\begin{pmatrix}
+\cosh\psi & -\sinh\psi\,\vec u_{\mathrm b}^{\,T}\\
+-\sinh\psi\,\vec u_{\mathrm b} & I_3+(\cosh\psi-1)\vec u_{\mathrm b}\vec u_{\mathrm b}^{\,T}
+\end{pmatrix},
+$$</p>
+<p>$$
+B_+(\psi,\vec u_{\mathrm b})=
+\begin{pmatrix}
+\cosh\psi & \sinh\psi\,\vec u_{\mathrm b}^{\,T}\\
+\sinh\psi\,\vec u_{\mathrm b} & I_3+(\cosh\psi-1)\vec u_{\mathrm b}\vec u_{\mathrm b}^{\,T}
+\end{pmatrix},
+$$</p>
+<p>with $B_+=B_-^{-1}$. Each preserves its form, $B_\pm^{T}G_\pm B_\pm=G_\pm$, where $G_+=\operatorname{diag}(1,-1,-1,-1)$ and $G_-=-G_+=\operatorname{diag}(-1,1,1,1)$.</p>
+<h2 id="the-rotor">The Rotor</h2>
+<h3 id="the-factor_3">The Factor</h3>
+<p>The rotor is</p>
+<p>$$
+\tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr)
+=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r},
+\qquad \theta\in[0,2\pi],\qquad \lvert\vec u_{\mathrm r}\rvert=1 .
+$$</p>
+<p>It is a real quaternion, of norm one, and $*$-unitary,</p>
+<p>$$
+\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
+$$</p>
+<p>Unlike the boost, the rotor is both norm-one and $*$-unitary, and its right slot is therefore the inverse.</p>
+<h3 id="the-sandwich_2">The Sandwich</h3>
+<p>$$
+\Theta_{\tilde u_{\mathrm r}}(\tilde X)=\tilde u_{\mathrm r}\,\tilde X\,\tilde u_{\mathrm r}^{-1}.
+$$</p>
+<p>The sandwich is a conjugation by an invertible element, hence an algebra automorphism. On a general element $\tilde X=X_te_t+\vec X$ it fixes the scalar part and rotates the vector part,</p>
+<p>$$
+\Theta_{\tilde u_{\mathrm r}}(\tilde X)=X_te_t+\mathsf R(\theta,\vec u_{\mathrm r})\,\vec X,
+$$</p>
+<p>where $\mathsf R$ is the Rodrigues rotation</p>
+<p>$$
+\mathsf R(\theta,\vec u_{\mathrm r})=I_3+\sin\theta\,[\vec u_{\mathrm r}]_\times+(1-\cos\theta)\,[\vec u_{\mathrm r}]_\times^{2},
+$$</p>
+<p>or, on a vector $\vec X$,</p>
+<p>$$
+\mathsf R(\theta,\vec u_{\mathrm r})\,\vec X
+=\vec X\cos\theta+(\vec u_{\mathrm r}\times\vec X)\sin\theta
++\vec u_{\mathrm r}(\vec u_{\mathrm r}\cdot\vec X)(1-\cos\theta).
+$$</p>
+<p>On $\mathbb{M}_-$ the rotor fixes the time direction $ie_t$ and rotates $\vec b$; on $\mathbb{M}_+$ it fixes $e_t$ and rotates $i\vec b$. The formula is the same on the two sectors because $i$ is central.</p>
+<h2 id="the-eigenbasis-and-the-two-spinor-slots">The Eigenbasis and the Two Spinor Slots</h2>
+<h3 id="the-two-slots-of-the-sandwich">The Two Slots of the Sandwich</h3>
+<p>Assume $B\neq0$ throughout this section. The sandwich is the composite of two one-sided operators,
+$$
+\Theta_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q},
+\qquad
+\Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
+$$
+The left factor acts on the left slot of $\tilde X$ and the right factor on the right slot. In the eigenbasis matrix model $\mathsf M^{\tilde Q}$ of <em>The N-Regular, Spectrally Regular Sector</em>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em> — not the Pauli model $\mathsf M_2$ of §<em>Conventions</em> — the element $\tilde Q$ is the diagonal matrix
+$$
+\Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
+\qquad
+\lambda_\pm=Q_t\pm iB,
+$$
+and the left factor is $X\mapsto \Delta X$. The right factor is $X\mapsto X\Delta_*$, where $\Delta_*$ is the matrix of $\tilde Q^{*}$ in the same model. The first slot is the column index, a spinor slot; the second slot is the row index, the dual spinor slot.</p>
+<p>In this model the sandwich is $X\mapsto\Delta X\Delta_*$. A first-copy spinor, in the Peirce sense, is a matrix whose second column is zero; the left factor acts by $\Delta$ on its first column, and the right factor then combines the two columns. A second-copy spinor, in the Peirce sense, is a matrix whose first column is zero; the left factor acts by $\Delta$ on its second column, and the right factor again combines the columns. The one-sided operator is the column action alone; the sandwich is the column action followed by the row action.</p>
+<p>The two slots carry the two eigenvalues separately. The left multiplication $L_{\tilde Q}$ has spectrum $\{\lambda_+,\lambda_-\}$, each with multiplicity two. The right multiplication $R_{\tilde Q^{*}}$ has spectrum $\{\bar\lambda_+,\bar\lambda_-\}$, each with multiplicity two, because the eigenvalues of $\tilde Q^{*}$ are the conjugates of those of $\tilde Q$. The two operators commute,
+$$
+L_{\tilde Q}R_{\tilde Q^{*}}=R_{\tilde Q^{*}}L_{\tilde Q},
+$$
+and each is diagonalisable when $B\neq0$. They therefore admit a common eigenbasis, and in that basis the sandwich is diagonal.</p>
+<p><em>Proof.</em> The two multiplications commute because both are products in the associative algebra. A commuting family of diagonalisable operators is simultaneously diagonalisable. The eigenvalues of $L_{\tilde Q}$ are $\lambda_\pm$ by the eigenbasis. In a matrix model, right multiplication by $A$ is a Kronecker product of $A^{T}$ with the identity, so the eigenvalues of $R_{\tilde Q^{*}}$ are those of $\tilde Q^{*}$, namely $\bar\lambda_\pm$, each with multiplicity two.</p>
+<h3 id="the-spectrum-of-the-sandwich">The Spectrum of the Sandwich</h3>
+<p>In the common eigenbasis the left slot contributes one of $\lambda_+,\lambda_-$ and the right slot one of $\bar\lambda_+,\bar\lambda_-$. The eigenvalue of the sandwich is the product:
+$$
+\boxed{\;
+\operatorname{spec}\Theta_{\tilde Q}
+=\bigl\{\lambda_+\bar\lambda_+,\ \lambda_+\bar\lambda_-,\ \lambda_-\bar\lambda_+,\ \lambda_-\bar\lambda_-\bigr\}
+\; }.
+$$
+Equivalently,
+$$
+\Theta_{\tilde Q}\longleftrightarrow
+\operatorname{diag}\bigl(
+\lambda_+\bar\lambda_+,\,
+\lambda_+\bar\lambda_-,\,
+\lambda_-\bar\lambda_+,\,
+\lambda_-\bar\lambda_-
+\bigr)
+$$
+in the common eigenbasis. The two diagonal products are the moduli squared:
+$$
+\lambda_+\bar\lambda_+=|\lambda_+|^{2},
+\qquad
+\lambda_-\bar\lambda_-=|\lambda_-|^{2}.
+$$
+The two off-diagonal products are conjugate to each other:
+$$
+\overline{\lambda_+\bar\lambda_-}=\lambda_-\bar\lambda_+.
+$$</p>
+<p>This is the precise sense in which the sandwich uses <strong>two slots</strong>. A one-sided operator uses one slot and carries the pair $(\lambda_+,\lambda_-)$; the sandwich uses two slots and carries the four products. The factor attached to a slot is the square root of the corresponding product; the exponent reading of that relation is in the companion.</p>
+<p>The common eigenbasis is not the eigenbasis of $L_{\tilde Q}$ in general. It is the tensor product of a left eigenbasis of $L_{\tilde Q}$ and a right eigenbasis of $R_{\tilde Q^{*}}$. The two agree whenever $\tilde Q^{*}$ is diagonal in the eigenbasis of $L_{\tilde Q}$; this includes the Hermitian case $\tilde Q^{*}=\tilde Q$, where the four products are the pairings $\lambda_i\lambda_j$, and also the case in which $\tilde Q^{*}$ lies in the span of the two eigenprojections. In general they differ. For a generic polar word the sandwich mixes the two chiral left ideals $S_+$ and $S_-$ of the one-sided reading; the four products are still exact, but they are not the diagonal entries of the Peirce matrix. The pure factors are the exceptions: a pure boost satisfies $\tilde Q^{*}=\tilde Q$, a pure rotor satisfies $\tilde Q^{*}=\tilde Q^{-1}$, and both commute with their own eigenprojections, so their sandwiches preserve $S_+$ and $S_-$. This does not contradict the preservation of the real forms $\mathbb{M}_\pm$: the splitting $\mathbb{B}=S_+\oplus S_-$ is a complex splitting into left ideals, while $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is a real splitting into Hermitian sectors, and they are different decompositions.</p>
+<h2 id="the-image-and-the-kernel">The Image and the Kernel</h2>
+<p><strong>Theorem.</strong> Let $\Theta:\mathbb{B}^{\times}\to GL_{\mathbb{R}}(\mathbb{B})$ be the sandwich map $\tilde Q\mapsto\Theta_{\tilde Q}$.</p>
+<p><strong>(a)</strong> The kernel is the central unit circle,
+$$
+\ker\Theta=U(1)=\{\lambda e_t:\lambda\in\mathbb{C},\ \lvert\lambda\rvert=1\}.
+$$</p>
+<p><strong>(b)</strong> The image is the linear conformal Lorentz group,
+$$
+\boxed{\;\operatorname{im}\Theta\cong CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)\;},
+$$
+acting on $\mathbb{M}_-$ by a dilation of ratio $r^{2}$ composed with a proper orthochronous Lorentz transformation.</p>
+<p><strong>(c)</strong> On the modulus-one slice $r=1$, the image is $SO^{+}(1,3)$ and the kernel is $U(1)$.</p>
+<p><strong>(d)</strong> On the norm-one slice $\langle\tilde Q\rangle_{\natural}=1$, the image is $SO^{+}(1,3)$ and the kernel is $\{\pm e_t\}$; the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$.</p>
+<p><em>Proof.</em> (a) If $\Theta_{\tilde Q}=\mathrm{id}$, then $\tilde Q\tilde Q^{*}=e_t$ by evaluating at $e_t$, so $\tilde Q^{*}=\tilde Q^{-1}$ and $\tilde Q\tilde X\tilde Q^{-1}=\tilde X$ for every $\tilde X$. Hence $\tilde Q$ is central, $\tilde Q=\lambda e_t$, and $\lvert\lambda\rvert=1$. Conversely, a central $\lambda e_t$ with $\lvert\lambda\rvert=1$ gives the identity, by the computation of §<em>The Central Phase</em>.</p>
+<p>(b) Every unit is $\Rho U$ with $\Rho\in\mathbb{C}^{\times}$ and $U\in SL(2,\mathbb{C})$, the pair unique up to $(\Rho,U)\mapsto(-\Rho,-U)$. The kernel (a) is the unit circle in the first factor, so after that quotient the first factor is $\mathbb{R}_{>0}$ and the second is $SL(2,\mathbb{C})/\{\pm e_t\}=PSL(2,\mathbb{C})\cong SO^{+}(1,3)$:</p>
+<p>$$
+\operatorname{im}\Theta\cong\mathbb{R}_{>0}\times SO^{+}(1,3)=CO^{+}(1,3).
+$$</p>
+<p>(c) At $r=1$ the element is $\exp(i\alpha)U$ with $U\in SL(2,\mathbb{C})$, the pair unique up to $(\alpha,U)\mapsto(\alpha+\pi,-U)$. The kernel is still $U(1)$, and the quotient is $SO^{+}(1,3)$.</p>
+<p>(d) At $\langle\tilde Q\rangle_{\natural}=1$ the element lies in $SL(2,\mathbb{C})$ and the kernel of the action on $\mathbb{M}_-$ is $\{\pm e_t\}$.</p>
+<p><strong>Corollary (the isometry slice).</strong> The sandwich is an isometry of the Lorentzian norm on $\mathbb{M}_-$ exactly when $r=1$. For general $r$,</p>
+<p>$$ L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8}, $$</p>
+<p>so the form is multiplied by $r^{4}$ and the volume by $r^{8}$; the causal type is preserved and the transformation is a similarity of ratio $r^{2}$.</p>
+<p><strong>Remark (what the image is not).</strong> The image is not the $*$-unitary group and not $GL(2,\mathbb{C})$. The $*$-unitary group acts on the spinor module and sees the phase; the sandwich sees only the conformal Lorentz group. The two readings of the same word are the subject of <em>The Polar Decomposition of a N-Regular Biquaternion</em>, §<em>The Operator Reading: the Twist</em>, and of this article.</p>
+<h2 id="the-null-cone">The Null Cone</h2>
+<p>On the null cone $\langle\tilde Q\rangle_{\natural}=0$ the polar word does not exist, but the sandwich does. If $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, the matrix $\mathsf M_2(\tilde Q)$ is a nonzero $2\times2$ matrix of determinant zero, hence of complex rank one. The sandwich therefore has complex rank one, and its image is the complex line spanned by $\tilde Q\tilde Q^{*}$: writing $\mathsf M_2(\tilde Q)=uv^{*}$ with column $u$ and row $v^{*}$,</p>
+<p>$$
+\mathsf M_2(\tilde Q)\,X\,\mathsf M_2(\tilde Q)^{*}
+=u\,(v^{*}Xv)\,u^{*},
+$$</p>
+<p>which is a multiple of $uu^{*}=\mathsf M_2(\tilde Q\tilde Q^{*})$. The element $\tilde Q\tilde Q^{*}$ is nonzero because its trace in the matrix model is the squared Frobenius norm of $\mathsf M_2(\tilde Q)$. The action collapses the eight-dimensional algebra onto one complex line; it is not invertible, and it has no polar reading because the scale, the phase, the boost and the rotor are not available on the cone.</p>
+<p><strong>The degenerate case in coordinates.</strong> Write $\tilde Q=Q^0e_t+Q^k\vec e_k$ and $\vec Q^\natural=(\overline{Q^1},\overline{Q^2},\overline{Q^3})$. For $k=1,2,3$ the scalar component of the image of a vector basis element is</p>
+<p>$$
+\Theta_{\tilde Q}(\vec e_k)^0 = 2i\,\mathrm{Im}\bigl(Q^0\overline{Q^k}\bigr) - \bigl(\vec Q\times\vec Q^\natural\bigr)^k ,
+$$</p>
+<p>which vanishes when all four coefficients of $\tilde Q$ are real, and when $\tilde Q$ is central. On the cone the trace of the rank-one operator is $4\lvert Q^0\rvert^2$, so</p>
+<p>$$
+\Theta_{\tilde Q}\circ\Theta_{\tilde Q}=4\lvert Q^0\rvert^{2}\,\Theta_{\tilde Q} .
+$$</p>
+<p>The operator is therefore nilpotent exactly when $Q^0=0$, and for $Q^0\neq0$ it is a projection up to the scalar $4\lvert Q^0\rvert^{2}$.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian sandwich of the polar word is read factor by factor. The closed form is</p>
+<p>$$
+\Theta_{\tilde Q}=r^{2}\,\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}},
+\qquad
+\Theta_{\exp(i\alpha)}=\mathrm{id}.
+$$</p>
+<p>The scale dilates by $r^{2}$. The phase cancels: the whole $U(1)$-orbit of an element has one sandwich, because the phase is central and $*$-unitary. The boost is a congruence by the Hermitian positive $\tilde U_{\mathrm b}$, and the rotor is an inner automorphism; on the norm-one slice they produce the rapidity $\psi$ and the rotation of angle $\theta$. The norm scales by $\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}$, so the sandwich is an isometry on the unit-norm slice.</p>
+<p>The spectral form of the pairing is the product formula. The left and right slots commute, and their eigenvalues are $\lambda_\pm$ and $\bar\lambda_\pm$. The spectrum of the sandwich is
+$$
+\operatorname{spec}\Theta_{\tilde Q}
+=\bigl\{\lambda_+\bar\lambda_+,\ \lambda_+\bar\lambda_-,\ \lambda_-\bar\lambda_+,\ \lambda_-\bar\lambda_-\bigr\}.
+$$
+The sandwich is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\rho\otimes\bar\rho$, the complexified vector representation: the vector weights are the sums of the two spinor weights. The exponent reading of this doubling is in <em>The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion</em>.</p>
+<p>The image of the sandwich on the group of units is $CO^{+}(1,3)$, the kernel is $U(1)$, and the isometry slice is $r=1$, where the image is $SO^{+}(1,3)$. On the norm-one slice the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$. On the null cone the sandwich survives as an operator of complex rank one, with image the line spanned by $\tilde Q\tilde Q^{*}$.</p>
+<p>The phase is the one factor that the sandwich does not see. It is visible to the norm, to the determinant and to the module, which is why the polar word carries it; it is invisible to the vector action, which is why the sandwich is a representation whose image is the conformal Lorentz group and not the full group of units.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the basis, with $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>the central scalar imaginary, $i^{2}=-1$</td>
+</tr>
+<tr>
+<td>$\tilde Q^{*}$</td>
+<td>the Hermitian conjugation $\overline{\tilde Q^{\natural}}$</td>
+</tr>
+<tr>
+<td>$\natural$, $\bar\cdot$</td>
+<td>the quaternion and coefficient conjugations</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm$</td>
+<td>the Hermitian and anti-Hermitian subspaces, $\tilde Q^{*}=\pm\tilde Q$</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
+<td>the Hermitian sandwich</td>
+</tr>
+<tr>
+<td>$\langle\Theta_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}$</td>
+<td>the scaling of the norm; an isometry on the unit-norm slice</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$</td>
+<td>the complex norm of the polar series</td>
+</tr>
+<tr>
+<td>$\Rho=r\exp(i\alpha)$</td>
+<td>the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>$P=\exp(i\alpha)$</td>
+<td>the central phase factor</td>
+</tr>
+<tr>
+<td>$r>0$, $\alpha\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$</td>
+<td>the scale and the phase angle</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$</td>
+<td>the Hermitian positive unit-norm boost</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$</td>
+<td>the unit real quaternion rotor</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the two eigenvalues of $L_{\tilde Q}$, and of $R_{\tilde Q}$</td>
+</tr>
+<tr>
+<td>$\lambda_i\bar\lambda_j$</td>
+<td>the four eigenvalues of the sandwich in its common eigenbasis</td>
+</tr>
+<tr>
+<td>$\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$</td>
+<td>the matrix of $\tilde Q$ in the eigenbasis matrix model</td>
+</tr>
+<tr>
+<td>$S,S^{*}$</td>
+<td>the spinor space $\mathbb{C}^{2}$ and its dual, with $\mathbb{B}\cong S\otimes S^{*}$</td>
+</tr>
+<tr>
+<td>$\rho,\bar\rho$</td>
+<td>the defining representation on $S$ and its conjugate</td>
+</tr>
+<tr>
+<td>$\mathsf M^{\tilde Q}$</td>
+<td>the eigenbasis matrix model, not the Pauli model $\mathsf M_2$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm$, $S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>the eigenprojections and the two left ideals of the one-sided reading (Peirce index)</td>
+</tr>
+<tr>
+<td>$\psi\ge0$, $\theta\in[0,2\pi]$</td>
+<td>the rapidity and the rotation angle</td>
+</tr>
+<tr>
+<td>$B_\pm$</td>
+<td>the $4\times4$ matrices of the boost on $\mathbb{M}_\pm$</td>
+</tr>
+<tr>
+<td>$\mathsf R(\theta,\vec u_{\mathrm r})$</td>
+<td>the Rodrigues rotation matrix of the rotor</td>
+</tr>
+<tr>
+<td>$G_\pm$</td>
+<td>the matrices of the norm on the two sectors, $G_+=\operatorname{diag}(1,-1,-1,-1)$ and $G_-=-G_+$</td>
+</tr>
+<tr>
+<td>$CO^{+}(1,3)$</td>
+<td>the linear conformal Lorentz group, the image of the sandwich</td>
+</tr>
+<tr>
+<td>$U(1)$</td>
+<td>the kernel of the sandwich, the central unit circle</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=1$</td>
+<td>the norm-one slice, $SL(2,\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html">The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion</a>, for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ by the phase $i$.</li>
+<li><a href="the-two-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html">The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion</a>, for the operator exponential, the doubling rule and the cancellation of the phase.</li>
+<li><a href="the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, §<em>The Eigenbasis, the Nilpotents, and the Peirce Corners</em>, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.</li>
+<li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html">Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion</a>, for the general dictionary between the spectral data and the polar angles when the axes do not commute.</li>
+<li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of a N-Regular Biquaternion</a>, for the four factors, the modulus, the branch and the domain, and §<em>The Operator Reading: the Twist</em>, for the same word read on the spinor module.</li>
+<li><a href="the-polar-decomposition-and-remarkable-subspaces.html">The Polar Decomposition and Remarkable Subspaces</a>, §<em>The Action on the Two Halves</em>, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.</li>
+<li><a href="the-cartan-hermitian-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html">The Cartan Hermitian Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion</a>, for the Hermitian positive and $*$-unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.</li>
+<li><a href="the-quaternion-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html">The Quaternion Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion</a> and <a href="the-hamilton-root-pairing-of-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html">The Hamilton Root Pairing of the Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion</a>, for the two partial two-factor groupings.</li>
+<li><a href="m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</a>, §<em>The Sandwich in the Regular Basis</em>, for the sandwich as a product of the two regular maps.</li>
+<li><a href="completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html">Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint</a>, for the sandwich as a completely positive map and its rank-one place among the completely positive maps.</li>
+<li><a href="biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, for the Lorentz group in biquaternionic form and the double cover.</li>
+<li><a href="operator-and-the-polar-decomposition-of-a-split-complex-number.html">Operator and the Polar Decomposition of a Split-Complex Number</a>, for the commutative case where the sandwich collapses to $\langle Q\rangle_{*}$ times the identity.</li>
+<li><a href="operator-and-the-polar-decomposition-of-a-reduced-biquaternion.html">Operator and the Polar Decomposition of a Reduced Biquaternion</a>, for the commutative case where the sandwich collapses to multiplication by the modulus squared and the phases cancel.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

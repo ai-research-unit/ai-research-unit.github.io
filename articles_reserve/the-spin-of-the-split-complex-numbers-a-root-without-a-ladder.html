@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin of the Split-Complex Numbers: A Root Without a Ladder — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-of-the-split-complex-numbers-a-root-without-a-ladder"><strong>The Spin of the Split-Complex Numbers: A Root Without a Ladder</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The split-complex algebra is the closest commutative algebra to a spin algebra. It has a nontrivial idempotent, a Peirce frame and a root $j$ with $j^2=1$ whose left multiplication has eigenvalues $\pm1$. It still has no spin pair, because the Peirce corners are zero and every element is central.</p>
+<p>The table of cases in <em>The General Definition of Spin</em> has this entry.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>reason for no spin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>commutative</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-result">The Result</h3>
+<p><strong>The split-complex numbers have no spin.</strong> There is no spin pair, no spin triple and no carrier of nonzero spin.</p>
+<p><strong>The root $j$ is not a spin element.</strong> It satisfies $j^2=1$ and its left multiplication has eigenvalues $\pm1$, but it is central: $\operatorname{ad}_j=0$. A spin element must have $\operatorname{ad}_S\neq0$, because $[S,U]=U$ with $U\neq0$.</p>
+<p><strong>The Peirce frame is not a spin pair.</strong> The idempotents $e_\pm=\tfrac12(1\pm j)$ satisfy $e_+e_-=0$. The off-diagonal corners $e_+\mathbb{D}e_-$ and $e_-\mathbb{D}e_+$ are therefore zero, so a pair built from the frame has $U=V=0$.</p>
+<p><strong>Every module is spinless.</strong> $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$; its simple modules are the two lines $\mathbb{R}e_+$ and $\mathbb{R}e_-$, both one-dimensional over $\mathbb{R}$.</p>
+<h3 id="the-contrast-with-the-biquaternion">The Contrast With the Biquaternion</h3>
+<p>The biquaternion $\mathbb{B}$ has a Peirce frame with nonzero corners, and that frame is its spin pair. The split-complex algebra has a Peirce frame with zero corners, and it has no pair. The difference is not the existence of a root or of idempotents. It is the commutativity of the algebra, which collapses the corners.</p>
+<h2 id="the-algebra">The Algebra</h2>
+<h3 id="the-product">The Product</h3>
+<p><strong>Definition.</strong> The split-complex algebra is</p>
+<p>$$
+\mathbb{D}=\mathbb{R}[j]/(j^2-1)=\{a+bj:a,b\in\mathbb{R}\},\qquad j^2=1.
+$$</p>
+<p>The product is</p>
+<p>$$
+(a+bj)(c+dj)=(ac+bd)+(ad+bc)j.
+$$</p>
+<p>The element $j$ is not $\pm1$; it is a new square root of $+1$. The algebra is commutative and associative, with unit $1$. It has zero divisors:</p>
+<p>$$
+(1+j)(1-j)=1-j^2=0.
+$$</p>
+<h3 id="the-idempotents">The Idempotents</h3>
+<p><strong>Proposition.</strong> The idempotents of $\mathbb{D}$ are $0$, $1$, $e_+$ and $e_-$, where</p>
+<p>$$
+e_+=\tfrac12(1+j),\qquad e_-=\tfrac12(1-j).
+$$</p>
+<p><em>Proof.</em> Solve $(a+bj)^2=a+bj$: the equations are $a^2+b^2=a$ and $2ab=b$. The second gives $b=0$ or $a=\tfrac12$. With $b=0$ the first gives $a=0$ or $a=1$. With $a=\tfrac12$ the first gives $b^2=\tfrac14$, so $b=\pm\tfrac12$, which are $e_\pm$.</p>
+<p><strong>The frame relations.</strong> Direct computation gives</p>
+<p>$$
+e_+^2=e_+,\qquad e_-^2=e_-,\qquad e_+e_-=0,\qquad e_++e_-=1,\qquad e_+-e_-=j.
+$$</p>
+<p><strong>Result.</strong> The pair $(e_+,e_-)$ is a complete orthogonal pair of idempotents, and $j=e_+-e_-$ is its root.</p>
+<h3 id="the-direct-sum">The Direct Sum</h3>
+<p>The map</p>
+<p>$$
+\mathbb{D}\longrightarrow\mathbb{R}\oplus\mathbb{R},\qquad a+bj\longmapsto(a+b,\,a-b)
+$$</p>
+<p>is an isomorphism of algebras: it is bijective, and the product is componentwise. In this description $e_+\mapsto(1,0)$ and $e_-\mapsto(0,1)$.</p>
+<p><strong>Result.</strong> $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$. Every element is a pair of real numbers, and every module is a pair of real vector spaces.</p>
+<h2 id="the-peirce-frame">The Peirce Frame</h2>
+<h3 id="the-four-corners">The Four Corners</h3>
+<p>For the idempotent $e_+$ the Peirce decomposition is</p>
+<p>$$
+\mathbb{D}=\mathbb{D}_{++}\oplus\mathbb{D}_{+-}\oplus\mathbb{D}_{-+}\oplus\mathbb{D}_{--},\qquad
+\mathbb{D}_{ab}=e_a\mathbb{D}e_b.
+$$</p>
+<p>The diagonal corners are the lines $\mathbb{D}_{++}=\mathbb{R}e_+$ and $\mathbb{D}_{--}=\mathbb{R}e_-$. The off-diagonal corners vanish:</p>
+<p>$$
+\mathbb{D}_{+-}=e_+\mathbb{D}e_-=\mathbb{D}e_+e_-=0,\qquad
+\mathbb{D}_{-+}=e_-\mathbb{D}e_+=0,
+$$</p>
+<p>because the algebra is commutative and $e_+e_-=0$.</p>
+<p><strong>Result.</strong> The Peirce decomposition collapses:</p>
+<p>$$
+\mathbb{D}=\mathbb{R}e_+\oplus\mathbb{R}e_-.
+$$</p>
+<p>There are no off-diagonal elements, so there is no element with corner signs $+$ and $-$.</p>
+<h3 id="the-root">The Root</h3>
+<p>The root is $h=j=e_+-e_-$. Its square is</p>
+<p>$$
+h^2=e_+^2-2e_+e_-+e_-^2=e_++e_-=1.
+$$</p>
+<p>Left multiplication by $h$ on $\mathbb{D}$ has the matrix</p>
+<p>$$
+L_h=\begin{pmatrix}0&1\\1&0\end{pmatrix}
+$$</p>
+<p>in the basis $(1,j)$, with characteristic polynomial $\lambda^2-1$ and eigenvalues $+1$ and $-1$. The eigenvectors are $e_+$ and $e_-$.</p>
+<p><strong>Result.</strong> The root has the weight string $+1,-1$ under left multiplication. This is the closest the algebra comes to a spin structure, and it is not one: the operator $L_h$ is not the adjoint action of a triple.</p>
+<h3 id="the-adjoint-action-is-zero">The Adjoint Action Is Zero</h3>
+<p>Because $\mathbb{D}$ is commutative, every element is central:</p>
+<p>$$
+\operatorname{ad}_x(y)=xy-yx=0\qquad\text{for all }x,y.
+$$</p>
+<p>In particular $\operatorname{ad}_h=0$, although $L_h$ has eigenvalues $\pm1$. The two operators are different: $L_h$ is left multiplication, $\operatorname{ad}_h$ is the commutator.</p>
+<p><strong>Result.</strong> No element of $\mathbb{D}$ has a nonzero adjoint action.</p>
+<h2 id="why-there-is-no-pair">Why There Is No Pair</h2>
+<h3 id="the-direct-proof">The Direct Proof</h3>
+<p><strong>Proposition.</strong> There is no spin pair in $\mathbb{D}$.</p>
+<p><em>Proof.</em> Suppose $[U,V]\neq0$. But $\mathbb{D}$ is commutative, so $[U,V]=0$ for all $U,V$. Contradiction. Equivalently, the pair conditions with $[U,V]=0$ give $U=0$ and $V=0$, the excluded zero pair.</p>
+<h3 id="the-peirce-proof">The Peirce Proof</h3>
+<p>Suppose a triple $(S,U,V)$ is built from the frame, with $S=\tfrac12h$ and with $U,V$ in the off-diagonal corners. The corner decomposition forces</p>
+<p>$$
+U\in\mathbb{D}_{+-}=0,\qquad V\in\mathbb{D}_{-+}=0.
+$$</p>
+<p>Then $[U,V]=0$, while $2S=h\neq0$, so the third relation fails. The first two relations hold only in the degenerate sense $[S,0]=0$.</p>
+<p><strong>Result.</strong> The frame gives a root and two idempotents, but no ladder. A root without a ladder is not a spin element.</p>
+<h3 id="the-weight-string-without-a-triple">The Weight String Without a Triple</h3>
+<p>It is tempting to read the eigenvalues $\pm1$ of $L_h$ as the weights of a spin-$1$ carrier, or the eigenvalues $\pm\tfrac12$ of $L_{h/2}$ as the weights of a spin-$\tfrac12$ carrier. The reading fails at the ladder. An element $U$ that shifted the weight would need $[h,U]=2U$; but $\mathbb{D}$ is commutative, so $[h,U]=0$. In the Peirce basis the only elements that could move $e_-$ to $e_+$ lie in the corner $\mathbb{D}_{+-}$, which is zero. The eigenvalues of a single operator are not a spin; the spin is the highest weight of an irreducible module of a triple.</p>
+<p><strong>Result.</strong> The string $+1,-1$ is a spectrum, not a spin content.</p>
+<h2 id="the-modules">The Modules</h2>
+<p><strong>Proposition.</strong> The simple $\mathbb{D}$-modules are $\mathbb{R}e_+$ and $\mathbb{R}e_-$, both one-dimensional over $\mathbb{R}$.</p>
+<p><em>Proof.</em> Under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$, a module is a pair $(V_+,V_-)$ of real vector spaces, with $(a,b)$ acting as $a$ on $V_+$ and $b$ on $V_-$. The simple pairs are $(\mathbb{R},0)$ and $(0,\mathbb{R})$.</p>
+<p><strong>Result.</strong> Every finite-dimensional module is a direct sum of copies of the two simple modules. Both are one-dimensional and spinless, because no triple acts.</p>
+<p><strong>Remark (the regular module).</strong> The left regular module is $\mathbb{D}=\mathbb{R}e_+\oplus\mathbb{R}e_-$. Left multiplication by $h$ acts as $+1$ on the first line and $-1$ on the second. The two lines are the simple modules; the eigenvalues of $L_h$ are the scalars by which $h$ acts on them.</p>
+<h2 id="what-is-not-a-spin-here">What Is Not a Spin Here</h2>
+<h3 id="the-root_1">The Root</h3>
+<p>$j$ is a root of $+1$ and the frame root of the pair $(e_+,e_-)$. The word "root" is not "spin". A spin element is the antisymmetric part of a product of two noncommuting elements; $j$ is central and is the difference of two commuting idempotents.</p>
+<h3 id="the-idempotents_1">The Idempotents</h3>
+<p>$e_+$ and $e_-$ are idempotents, and they give a Peirce frame. The frame is a decomposition of the algebra, not a triple. In the biquaternion the frame and the triple coincide; here the frame survives and the triple does not.</p>
+<h3 id="the-value-math137">The Value $0$</h3>
+<p>The algebra has no spin, so it has no spin-$0$ carrier either. A spin-$0$ carrier is a one-dimensional module of a nonzero triple; the triple is absent.</p>
+<h3 id="the-hyperbolic-angle">The Hyperbolic Angle</h3>
+<p>The exponential $e^{j\theta}=\cosh\theta+j\sinh\theta$ parametrizes the hyperbola $a^2-b^2=1$, and the half-angle formulas for $\cosh$ and $\sinh$ are the hyperbolic analogues of the circular ones. They belong to the geometry of the hyperbola, not to a weight of a triple. There is no copy of $\mathfrak{sl}_2$ in the Lie algebra of $\mathbb{D}$, which is abelian.</p>
+<p><strong>Result.</strong> None of the four structures is a spin.</p>
+<h2 id="comparison-with-the-reduced-biquaternion">Comparison With the Reduced Biquaternion</h2>
+<p>The complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ is isomorphic to $\mathbb{C}\oplus\mathbb{C}$, the reduced biquaternion algebra $\mathbb{B}_{\mathrm{r}}$. It has a nontrivial Peirce frame, and its root is central in each factor, so it does not close to a pair. The split-complex algebra is the real two-dimensional model of the same phenomenon: a frame, a root, no ladder.</p>
+<p><strong>Result.</strong> $\mathbb{D}$ and $\mathbb{B}_{\mathrm{r}}$ are the commutative cases with a nontrivial frame. Both have a root; neither has a spin.</p>
+<h2 id="checks">Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$j^2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$e_+^2,e_-^2$</td>
+<td>$e_+,e_-$</td>
+</tr>
+<tr>
+<td>$e_+e_-$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_++e_-$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$e_+-e_-$</td>
+<td>$j$</td>
+</tr>
+<tr>
+<td>corners $e_+\mathbb{D}e_-$, $e_-\mathbb{D}e_+$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$[x,y]$ for $x,y\in\{1,j,e_+,e_-\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>characteristic polynomial of $L_j$</td>
+<td>$\lambda^2-1$</td>
+</tr>
+<tr>
+<td>eigenvalues of $L_j$</td>
+<td>$+1,-1$</td>
+</tr>
+<tr>
+<td>spin pairs</td>
+<td>none</td>
+</tr>
+<tr>
+<td>simple modules</td>
+<td>two, both one-dimensional</td>
+</tr>
+<tr>
+<td>spin</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The split-complex algebra is commutative, so every commutator vanishes and no spin pair exists.</li>
+<li>It has the idempotents $e_\pm=\tfrac12(1\pm j)$ and the root $j=e_+-e_-$, with $j^2=1$.</li>
+<li>The Peirce corners $e_+\mathbb{D}e_-$ and $e_-\mathbb{D}e_+$ are zero, so the ladders a triple needs are forced to zero.</li>
+<li>The root is central, $\operatorname{ad}_j=0$, although left multiplication by $j$ has eigenvalues $\pm1$.</li>
+<li>The eigenvalues $\pm1$ are a spectrum of one operator, not a weight string of a triple.</li>
+<li>The modules are the two lines $\mathbb{R}e_\pm$, both spinless.</li>
+<li>The algebra is the real model of the reduced biquaternion: a frame and a root, but no spin.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>split-complex algebra $\mathbb{R}[j]/(j^2-1)$</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>root, $j^2=1$</td>
+</tr>
+<tr>
+<td>$e_\pm$</td>
+<td>idempotents $\tfrac12(1\pm j)$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{ab}$</td>
+<td>Peirce corner $e_a\mathbb{D}e_b$</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>root $e_+-e_-=j$</td>
+</tr>
+<tr>
+<td>$L_x$</td>
+<td>left multiplication by $x$</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_x$</td>
+<td>$y\mapsto xy-yx$</td>
+</tr>
+<tr>
+<td>$W_j$</td>
+<td>irreducible carrier of a triple, dimension $2j+1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/the-general-definition-of-spin.html">The General Definition of Spin</a>, for the definition, the commutative case and the products.</li>
+<li><a href="the-spin-of-the-complex-numbers-the-absence-of-a-pair.html">The Spin of the Complex Numbers</a>, for the commutative field with no frame at all.</li>
+<li><a href="../articles_maths/the-spin-of-a-biquaternion.html">The Spin of a Biquaternion</a>, for the frame whose corners are nonzero and whose root is a spin element.</li>
+<li><a href="../articles_maths/split-complex-algebra.html">The Split-Complex Algebra</a>, for the product and the idempotents.</li>
+<li><a href="../articles_maths/the-peirce-basis-of-the-split-complex-algebra.html">The Peirce Basis of the Split-Complex Algebra</a>, for the Peirce decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

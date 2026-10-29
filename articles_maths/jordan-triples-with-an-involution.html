@@ -93,8 +93,8 @@ $$</p>
 <p>$$
 \boxed{\;\{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y\;}
 $$</p>
-<p>makes $J$ a Jordan triple system, and the linear map $y\mapsto \{x,y,x\}$ on $J$ is twice the quadratic representation $\mathrm{Jor}_x$, $\{x,y,x\} = 2\,\mathrm{Jor}_x(y)$.</p>
-<p><em>Proof.</em> The symmetry in $x$ and $z$ is the commutativity of $\bullet$; the Jordan triple identity is the linearisation of the Jordan identity $[L_x,L_{x^2}] = 0$, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2\mathrm{Jor}_x(y)$ is the defining formula $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$ read on $y$.</p>
+<p>makes $J$ a Jordan triple system, and the quadratic map $\mathrm{Jor}_x$ satisfies $\{x,y,x\} = 2\,\mathrm{Jor}_x(y)$.</p>
+<p><em>Proof.</em> The symmetry in $x$ and $z$ is the commutativity of $\bullet$; the Jordan triple identity is the linearisation of the Jordan identity, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2\mathrm{Jor}_x(y)$ is the defining formula $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$ read on $y$.</p>
 <p><strong>Definition (morphism).</strong> A <strong>homomorphism</strong> of Jordan triple systems is an $R$-linear map $\varphi$ with $\varphi\{x,y,z\} = \{\varphi x,\varphi y,\varphi z\}$; an <strong>anti-homomorphism</strong> reverses the order of the arguments, and $T$ with the reversed arguments is the <strong>opposite</strong> triple.</p>
 <h2 id="the-involution-of-a-jordan-triple">The Involution of a Jordan Triple</h2>
 <h3 id="definition_1">Definition</h3>
@@ -103,8 +103,8 @@ $$</p>
 \sigma(x+y) = \sigma(x)+\sigma(y), \qquad \sigma(\lambda x) = \varsigma(\lambda)\sigma(x), \qquad \sigma\{x,y,z\} = \{\sigma x,\sigma y,\sigma z\}, \qquad \sigma^2 = \mathrm{id}.
 $$</p>
 <p>It is <strong>linear</strong> when $\varsigma = \mathrm{id}$ and <strong>conjugate-linear</strong> otherwise; a <strong>Jordan triple with involution</strong> is a pair $(T,\sigma)$.</p>
-<p><strong>Theorem.</strong> A $\varsigma$-semilinear involution of a Jordan triple is a bijective morphism of the ternary structure, its restriction to the scalar copy of $R$ is $\varsigma$, and it commutes with the operator $y\mapsto\{x,y,x\}$: $\sigma\{x,y,x\} = \{\sigma x,\sigma y,\sigma x\}$.</p>
-<p><em>Proof.</em> The preservation of the triple product is the third axiom; bijectivity is $\sigma^2 = \mathrm{id}$; the commuting with the outer operator is the product preservation read with the outer variables equal.</p>
+<p><strong>Theorem.</strong> A $\varsigma$-semilinear involution of a Jordan triple is a bijective morphism of the ternary structure, its restriction to the scalar copy of $R$ is $\varsigma$, and it commutes with the map $y\mapsto\{x,y,x\}$: $\sigma\{x,y,x\} = \{\sigma x,\sigma y,\sigma x\}$.</p>
+<p><em>Proof.</em> The preservation of the triple product is the third axiom; bijectivity is $\sigma^2 = \mathrm{id}$; the commuting with the outer map is the product preservation read with the outer variables equal.</p>
 <h3 id="the-fixed-sub-triple">The Fixed Sub-Triple</h3>
 <p><strong>Definition.</strong> The <strong>self-adjoint part</strong> of $(T,\sigma)$ is</p>
 <p>$$

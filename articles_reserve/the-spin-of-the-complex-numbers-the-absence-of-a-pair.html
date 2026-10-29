@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin of the Complex Numbers: The Absence of a Pair — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-of-the-complex-numbers-the-absence-of-a-pair"><strong>The Spin of the Complex Numbers: The Absence of a Pair</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The table of cases in <em>The General Definition of Spin</em> has no spin row for $\mathbb{C}$. It has this entry instead.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>reason for no spin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>commutative</td>
+</tr>
+</tbody>
+</table></div>
+<p>This article states the result, proves the obstruction, and separates the value $0$ from a spin.</p>
+<h3 id="the-result">The Result</h3>
+<p><strong>The complex numbers have no spin.</strong> There is no spin pair in $\mathbb{C}$, so there is no spin triple, no spin element, and no carrier of nonzero spin.</p>
+<p><strong>Every module of $\mathbb{C}$ is spinless.</strong> The algebra is a field; its only simple module is $\mathbb{C}$ itself, and every finite-dimensional module is a direct sum of copies of it.</p>
+<p><strong>The value $0$ is not the spin of $\mathbb{C}$.</strong> The zero pair is excluded by the definition, and a spinless module is not a spin-$0$ carrier.</p>
+<p><strong>Complexification does not help.</strong> $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ is still commutative, so the complexified algebra has no pair either. This is the difference from the quaternion, whose pair appears only after complexification.</p>
+<h3 id="the-one-line-obstruction">The One-Line Obstruction</h3>
+<p>In a commutative algebra $[U,V]=0$ for all $U,V$. A spin pair requires $[U,V]\neq0$. So there is no pair.</p>
+<h2 id="the-obstruction">The Obstruction</h2>
+<h3 id="the-bracket-vanishes">The Bracket Vanishes</h3>
+<p><strong>Proposition.</strong> For all $z,w\in\mathbb{C}$, $[z,w]=zw-wz=0$.</p>
+<p><em>Proof.</em> Multiplication of complex numbers is commutative.</p>
+<p><strong>Corollary (only the zero pair).</strong> If a pair $(U,V)$ satisfies $[U,V]=0$ and $[[U,V],U]=2U$, then $0=2U$, so $U=0$; the relation $[[U,V],V]=-2V$ then gives $V=0$. The only pair satisfying the two double-commutator relations is the zero pair, and it is excluded by $[U,V]\neq0$.</p>
+<p><strong>Result.</strong> The set of spin pairs in $\mathbb{C}$ is empty.</p>
+<h3 id="no-element-can-be-a-spin-element">No Element Can Be a Spin Element</h3>
+<p>A spin element would be $S=\tfrac12[U,V]$. Since every bracket vanishes, $S=0$ for every pair. There is no nonzero element of $\mathbb{C}$ that is the antisymmetric part of a product.</p>
+<p><strong>Result.</strong> The algebra has no spin element.</p>
+<h3 id="no-carrier">No Carrier</h3>
+<p>A carrier is a module for a copy of $\mathfrak{sl}_2$ spanned by $S,U,V$. There is no such triple, so there is no carrier of the triple, and hence no carrier of the algebra in the sense of the definition.</p>
+<p><strong>Result.</strong> No nonzero spin occurs on any module of $\mathbb{C}$.</p>
+<h2 id="what-the-algebra-does-have">What the Algebra Does Have</h2>
+<p>The absence of a pair is not an absence of structure. The algebra has the following, and none of it is a spin pair.</p>
+<p><strong>A field.</strong> Every nonzero element is invertible. There are no zero divisors.</p>
+<p><strong>Two idempotents.</strong> The equation $z^2=z$ has the solutions $z=0$ and $z=1$. There is no nontrivial idempotent, so there is no Peirce decomposition and no corner.</p>
+<p><strong>No nilpotents.</strong> The equation $z^2=0$ has only $z=0$. There is no nilpotent ladder.</p>
+<p><strong>The unit circle.</strong> The elements of modulus $1$ form the group $U(1)$, and the map $\theta\mapsto e^{i\theta}$ is a group homomorphism from $\mathbb{R}$ onto it.</p>
+<p><strong>Every element is central.</strong> The adjoint action of any element is the zero operator, so the adjoint module has only the weight $0$, and it has it for the trivial reason that the operator is zero.</p>
+<p><strong>Result.</strong> The algebra is a field with two idempotents and no nilpotents. None of these structures supplies two elements with a nonzero commutator.</p>
+<h2 id="what-is-not-a-spin-here">What Is Not a Spin Here</h2>
+<h3 id="the-value-math40">The Value $0$</h3>
+<p>It is tempting to say that the module $\mathbb{C}$ has spin $0$, because the only weight of the zero operator is $0$. That is not a spin in the sense of the definition. A spin-$0$ carrier is a one-dimensional module of a nonzero triple on which $S$ acts by $0$; the triple still has nonzero $U,V$ and a nonzero commutator. In $\mathbb{C}$ the triple itself is zero. The definition excludes the zero pair precisely to keep the two cases apart.</p>
+<p><strong>Result.</strong> "Spinless" and "spin $0$" are different. $\mathbb{C}$ is spinless; the centre of the biquaternion is spin $0$.</p>
+<h3 id="the-eigenvalues-of-multiplication">The Eigenvalues of Multiplication</h3>
+<p>Left multiplication by $z\in\mathbb{C}$ on the real plane $\mathbb{C}$ has the matrix $\begin{pmatrix}a&-b\\b&a\end{pmatrix}$ for $z=a+ib$, with eigenvalues $a+ib$ and $a-ib$. These are the two complex eigenvalues of a real operator, not the weights of a triple: there is no $S$ with a spectrum $j,j-1,\dots,-j$ and no ladder relating the eigenvectors. The eigenvalues of multiplication by $z$ are $z$ and $\bar z$; they do not form a weight string of $\mathfrak{sl}_2$.</p>
+<h3 id="the-half-angle">The Half-Angle</h3>
+<p>Polar form writes $z=re^{i\theta}$, and the square root is $\sqrt r\,e^{i\theta/2}$. The half-angle is the parameter of the double cover</p>
+<p>$$
+U(1)\longrightarrow SO(2),\qquad e^{i\theta}\longmapsto R_{2\theta},
+$$</p>
+<p>and it is why a rotation by $2\pi$ acts as $-1$ on a spinor. That is a statement about a covering of groups, not about a weight of a triple on the algebra $\mathbb{C}$. The group $SO(2)$ is abelian, and $\mathfrak{sl}_2$ is not; no copy of $\mathfrak{sl}_2$ lies in the Lie algebra of $U(1)$. The half-angle belongs to the representation theory of the double cover, and the spin of this corpus belongs to the highest weight of a triple. They are different constructions, and the second is empty for $\mathbb{C}$.</p>
+<p><strong>Result.</strong> The half-angle $e^{i\theta/2}$ is not a spin of the algebra $\mathbb{C}$.</p>
+<h3 id="the-centre-of-the-biquaternion">The Centre of the Biquaternion</h3>
+<p>When $\mathbb{C}$ sits inside $\mathbb{B}$ as the centre $\mathbb{C}e_t$, the adjoint action of the biquaternion pair fixes it. The centre is then a spin-$0$ carrier of the biquaternion triple. That spin belongs to the pair in $\mathbb{B}$, not to the algebra $\mathbb{C}$: the acting triple is not contained in $\mathbb{C}$, and the carrier is a subspace of $\mathbb{B}$, not a module of $\mathbb{C}$ alone.</p>
+<p><strong>Result.</strong> The only spin associated with $\mathbb{C}$ is borrowed from a larger algebra.</p>
+<h2 id="the-modules">The Modules</h2>
+<p><strong>Proposition.</strong> Every finite-dimensional $\mathbb{C}$-module is a direct sum of copies of $\mathbb{C}$.</p>
+<p><em>Proof.</em> The algebra is a field, so it is semisimple; its simple module is $\mathbb{C}$; every semisimple module is a direct sum of simple ones.</p>
+<p><strong>Result.</strong> The module theory of $\mathbb{C}$ is the theory of complex vector spaces. There is one simple module, it is one-dimensional over $\mathbb{C}$, and it carries no spin.</p>
+<p><strong>Remark (the real picture).</strong> Read over $\mathbb{R}$, the algebra $\mathbb{C}$ is two-dimensional and its left regular module is $\mathbb{C}$ itself, of real dimension $2$. The real endomorphism ring is $\mathbb{C}$. Neither number produces a spin: a carrier needs a triple, and the triple is absent.</p>
+<h2 id="what-would-be-needed">What Would Be Needed</h2>
+<p>A spin pair needs two elements with a nonzero commutator. Three constructions supply one.</p>
+<ul>
+<li>A noncommutative algebra, such as $M_2(\mathbb{C})$ or $\mathbb{B}$, with two matrix units $E_{12},E_{21}$.</li>
+<li>A noncommutative real algebra whose complexification is a matrix algebra, such as $\mathbb{H}$.</li>
+<li>A noncommutative algebra with a Peirce frame whose corners are nonzero, such as $\mathbb{B}$.</li>
+</ul>
+<p>$\mathbb{C}$ has none of these properties. It is commutative, its only idempotents are $0$ and $1$, and its corners are zero.</p>
+<p><strong>Result.</strong> The smallest matrix algebra with a spin pair is $M_2(\mathbb{C})$, of dimension $4$. The real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; only $\mathbb{H}$ is noncommutative, and its complexification is $M_2(\mathbb{C})$.</p>
+<h2 id="checks">Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[z,w]$ for $z,w\in\{1,i,2+3i,2-5i\}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>idempotents $z^2=z$</td>
+<td>$0,1$</td>
+</tr>
+<tr>
+<td>nilpotents $z^2=0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>spin pairs</td>
+<td>none</td>
+</tr>
+<tr>
+<td>noncentral elements</td>
+<td>none</td>
+</tr>
+<tr>
+<td>simple modules</td>
+<td>one, $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>complexification</td>
+<td>$\mathbb{C}\oplus\mathbb{C}$, commutative</td>
+</tr>
+<tr>
+<td>spin</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The complex numbers are commutative, so every commutator vanishes and no spin pair exists.</li>
+<li>The only pair satisfying the double-commutator relations is $U=V=0$, and the definition excludes it.</li>
+<li>There is no spin element, no spin triple and no carrier of nonzero spin.</li>
+<li>The value $0$ is not a spin: a spinless module and a spin-$0$ carrier are different.</li>
+<li>The half-angle $e^{i\theta/2}$ belongs to the double cover $U(1)\to SO(2)$, not to a weight of a triple on $\mathbb{C}$.</li>
+<li>When $\mathbb{C}$ is the centre of $\mathbb{B}$, its spin $0$ is carried by the biquaternion pair, not by $\mathbb{C}$.</li>
+<li>Complexification gives $\mathbb{C}\oplus\mathbb{C}$, still commutative, so it does not produce a pair.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>complex numbers as an algebra over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$[z,w]$</td>
+<td>$zw-wz$</td>
+</tr>
+<tr>
+<td>$\bar z$</td>
+<td>complex conjugate</td>
+</tr>
+<tr>
+<td>$U(1)$</td>
+<td>unit circle, the double cover of $SO(2)$</td>
+</tr>
+<tr>
+<td>$W_j$</td>
+<td>irreducible carrier of a triple, dimension $2j+1$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>$\tfrac12[U,V]$, the spin element a pair would give; absent here</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/the-general-definition-of-spin.html">The General Definition of Spin</a>, for the definition, the commutative case and the table of cases.</li>
+<li><a href="../articles_maths/the-spin-of-a-biquaternion.html">The Spin of a Biquaternion</a>, for the centre as a spin-$0$ carrier of a larger pair.</li>
+<li><a href="the-spin-of-the-split-complex-numbers-a-root-without-a-ladder.html">The Spin of the Split-Complex Numbers</a>, for the commutative algebra that does have a nontrivial Peirce frame.</li>
+<li><a href="../articles_maths/complex-algebra.html">The Complex Algebra</a>, for the field structure.</li>
+<li><a href="../articles_maths/representations-of-lie-algebras.html">Representations of Lie Algebras</a>, for the modules that a triple would need.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

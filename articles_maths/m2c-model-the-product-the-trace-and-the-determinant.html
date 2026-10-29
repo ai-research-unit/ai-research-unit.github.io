@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-model-the-product-the-trace-and-the-determinant"><strong>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra is a complex algebra of dimension four, and the whole of it is visible in the algebra of two-by-two complex matrices. The map is fixed on the basis by</p>
+<p>$$
+\mathsf{M}_2(e_t)=\mathrm I_2,\qquad
+\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+$$</p>
+<p>and extended by $\mathbb{C}$-linearity. This article owns the assignment itself and the algebra structure it transports: the product, the unit, the centre, the units and their inverses, and the sense in which the assignment is a choice.</p>
+<p>The three matrices are $-i$ times the Pauli matrices. The factor $i$ is forced by $\vec e_k^2=-e_t$, and the signs of the cross-relations are forced by $\vec e_x\vec e_y=\vec e_z$. Both are proved below, and neither is a convention of the representation: they are the algebra read in matrices.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, and $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.</p>
+<p><strong>Boundaries.</strong> The four forms and the four products are <em>$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces</em>; the trace and the determinant are <em>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</em>; the Peirce coordinates, the matrix units and the two spinor planes are <em>$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>. The $4\times4$ regular representation is <em>Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. The algebra itself is <em>The Biquaternion Algebra</em>.</p>
+<h2 id="the-assignment-on-the-basis">The Assignment on the Basis</h2>
+<p><strong>The four units go to four matrices, and the four coefficients go to one matrix.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Unit</th>
+<th>Matrix</th>
+<th>Square</th>
+<th>Determinant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$\mathrm I_2$</td>
+<td>$\mathrm I_2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$\begin{pmatrix}0&-i\\-i&0\end{pmatrix}$</td>
+<td>$-\mathrm I_2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$\begin{pmatrix}0&-1\\1&0\end{pmatrix}$</td>
+<td>$-\mathrm I_2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$\begin{pmatrix}-i&0\\0&i\end{pmatrix}$</td>
+<td>$-\mathrm I_2$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>A general element is therefore</p>
+<p>$$
+\mathsf{M}_2(\tilde Q)=
+\begin{pmatrix}
+Q_t-iQ_z&-iQ_x-Q_y\\
+-iQ_x+Q_y&Q_t+iQ_z
+\end{pmatrix}.
+$$</p>
+<p>The entries are linear combinations of two coefficients each. The four entries and the four coefficients carry the same data in two arrangements, and the arrangement is fixed by the assignment, not chosen per element.</p>
+<p><strong>The inverse map.</strong> Reading the coefficients back off the matrix,</p>
+<p>$$
+\mathsf{M}_2^{-1}:\begin{pmatrix}a&b\\c&d\end{pmatrix}\longmapsto
+Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,
+\qquad
+Q_t=\tfrac{a+d}{2},\quad
+Q_x=\tfrac{i(b+c)}{2},\quad
+Q_y=\tfrac{c-b}{2},\quad
+Q_z=\tfrac{i(a-d)}{2}.
+$$</p>
+<p>The four formulas are the inverse of the four basis matrices, and they are verified by substituting the general matrix.</p>
+<h2 id="the-isomorphism">The Isomorphism</h2>
+<p><strong>Theorem.</strong> The map $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras $\mathbb{B}\to M_2(\mathbb{C})$.</p>
+<p><em>Proof.</em> The map is $\mathbb{C}$-linear by construction. The three vector images satisfy the quaternion relations:</p>
+<p>$$
+\mathsf{M}_2(\vec e_x)^2=\mathsf{M}_2(\vec e_y)^2=\mathsf{M}_2(\vec e_z)^2=-\mathrm I_2,\qquad
+\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y)=\mathsf{M}_2(\vec e_z),
+$$</p>
+<p>with the two cyclic companions. The first identity is the computation $\begin{pmatrix}0&-i\\-i&0\end{pmatrix}^2=-\mathrm I_2$, and the second is the matrix product. Hence $\mathsf{M}_2$ sends the multiplication table of the four units to the multiplication table of their images. Since the four matrices are linearly independent over $\mathbb{C}$, the map is injective; since both spaces have complex dimension four, it is bijective. Multiplicativity on general elements follows from bilinearity.</p>
+<p><strong>Corollary (the image is everything).</strong> Every two-by-two complex matrix is the image of exactly one biquaternion. The algebra and the matrix algebra are the same ring in two notations.</p>
+<p>This is not the case for the split-complex and reduced biquaternion algebras, whose images are proper commutative subalgebras. There the matrix model retains only part of the matrix algebra; here it retains all of it, and every matrix identity is a biquaternion identity.</p>
+<p><strong>Corollary (the centre).</strong> The centre of $\mathbb{B}$ is the line $\mathbb{C}e_t$, and its image is the scalar matrices.</p>
+<p><em>Proof.</em> A matrix commuting with every matrix is a scalar matrix, and $\mathsf{M}_2(Q_te_t)=Q_t\mathrm I_2$.</p>
+<h2 id="the-signs-and-the-pauli-matrices">The Signs and the Pauli Matrices</h2>
+<p><strong>The factor $i$ is forced.</strong> A real matrix squaring to $-\mathrm I_2$ is a complex structure; the three images must be three anticommuting complex structures. The assignment uses the Hermitian Pauli matrices multiplied by $-i$:</p>
+<p>$$
+\mathsf{M}_2(\vec e_k)=-i\sigma_k,\qquad
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad
+\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\quad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+$$</p>
+<p>Each $\sigma_k$ is Hermitian and squares to $\mathrm I_2$, so $-i\sigma_k$ squares to $-\mathrm I_2$. The three anticommute, and their products reproduce the quaternion relations with the correct signs. The factor $i$ is not optional: a real matrix squaring to $-\mathrm I_2$ carries no real line to itself, and the complex structure it defines is the multiplication by $i$ that the representation must carry.</p>
+<p><strong>The signs are forced by the cross-relations.</strong> If $\mathsf{M}_2(\vec e_x)$ and $\mathsf{M}_2(\vec e_y)$ are chosen as above, the product is $\mathsf{M}_2(\vec e_z)$, not $-\mathsf{M}_2(\vec e_z)$. The alternative assignment $\vec e_k\mapsto-\mathsf{M}_2(\vec e_k)$ reverses the sign of every vector image and preserves the squares but reverses the cross-products; it is the composition of $\mathsf M_2$ with the anti-automorphism that negates the vector part, so it is an anti-isomorphism, not an algebra isomorphism on the same basis. The sign pattern is therefore determined once the three matrices are fixed, and the three matrices are determined up to conjugation.</p>
+<p><strong>The null-cone basis.</strong> A second family of models comes from the isotropic basis of the null cone, used in <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em>. In that basis two of the four general products become ordinary matrix products, under the two maps</p>
+<p>$$
+M=\begin{pmatrix}\xi&\alpha\\\beta&\eta\end{pmatrix},
+\qquad
+F\longleftrightarrow\begin{pmatrix}f_\alpha&-f_\beta\\-f_\xi&f_\eta\end{pmatrix},
+$$</p>
+<p>the <strong>outer</strong> product under the first and the <strong>diagonal</strong> product under the second. In this model the images of the null-cone elements are rank-one matrices, square-zero exactly on the pure stratum, rather than Pauli matrices, and the two standard columns are the two coordinate columns. The source also claims a third, the <strong>inner</strong> product; no realization of it was found by exhaustive search, and the claim is not used.</p>
+<p>The two maps differ from $\mathsf M_2$ by the change of basis between the isotropic basis and the corpus's basis, so the family is conjugate to the present model by a matrix in $GL_2(\mathbb{C})$, and the conjugating matrix is that change of basis. It is not used in this corpus as the fixed model, but it is the reason the rank-one matrices of <em>$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</em> are the natural image of the null cone.</p>
+<h2 id="the-algebra-in-matrix-form">The Algebra in Matrix Form</h2>
+<p><strong>The product is the matrix product.</strong> For two elements $\tilde Q_1,\tilde Q_2$,</p>
+<p>$$
+\mathsf{M}_2(\tilde Q_1\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2),\qquad
+\mathsf{M}_2(\tilde Q^n)=\mathsf{M}_2(\tilde Q)^n,\qquad
+\mathsf{M}_2(\tilde Q^{-1})=\mathsf{M}_2(\tilde Q)^{-1}.
+$$</p>
+<p>The third identity holds when either side exists, that is when $\langle\tilde Q\rangle_{\natural}\neq0$.</p>
+<p><strong>The unit and the centre.</strong> The unit is $\mathrm I_2$. A matrix is central exactly when it is scalar, so the centre is $\mathbb{C}e_t$. The scalar matrix $Q_t\mathrm I_2$ is the image of the scalar part, and the traceless part is the image of the vector part.</p>
+<p><strong>Units and inverses.</strong> A biquaternion is a unit exactly when its matrix is invertible, and the inverse is the classical adjugate divided by the determinant:</p>
+<p>$$
+\mathsf{M}_2(\tilde Q)^{-1}=\frac{\operatorname{adj}\mathsf{M}_2(\tilde Q)}{\det\mathsf{M}_2(\tilde Q)},\qquad
+\operatorname{adj}\begin{pmatrix}a&b\\c&d\end{pmatrix}=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}.
+$$</p>
+<p>The identity $\mathsf{M}_2(\tilde Q)\operatorname{adj}\mathsf{M}_2(\tilde Q)=\det\mathsf{M}_2(\tilde Q)\,\mathrm I_2$ is the matrix form of $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$. The adjugate is the image of quaternion conjugation.</p>
+<p><strong>Powers and the exponential.</strong> Powers are matrix powers, and the exponential is the matrix exponential.</p>
+<h2 id="the-structure-map-the-presentation-and-the-real-form">The Structure Map, the Presentation and the Real Form</h2>
+<p><strong>The structure map.</strong> The scalars act through</p>
+<p>$$
+\varphi:\mathbb{C}\longrightarrow Z\bigl(M_2(\mathbb{C})\bigr),\qquad
+\varphi(A)=A\mathrm I_2,
+$$</p>
+<p>whose image is the line of scalar matrices. The scalar action is $M\mapsto AM$, and it is compatible with the product because $A\mathrm I_2$ is central. In the algebra the same map is $\varphi(A)=Ae_t$ of <em>The Biquaternion Algebra</em>, §<em>The Structure Map</em>; the matrix form shows that its image is exactly the centre.</p>
+<p><strong>The presentation.</strong> The images $X=\mathsf{M}_2(\vec e_x)$ and $Y=\mathsf{M}_2(\vec e_y)$ generate $M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra with unit, because $\vec e_x$ and $\vec e_y$ generate $\mathbb{B}$ and $\mathsf{M}_2$ is an isomorphism. They satisfy</p>
+<p>$$
+X^2=Y^2=-\mathrm I_2,\qquad XY+YX=0,
+$$</p>
+<p>and these are the defining relations. The algebra with two generators and those relations is the quaternion algebra over $\mathbb{C}$, of dimension four; the map from it to $M_2(\mathbb{C})$ is nonzero, hence injective because the quaternion algebra is simple, and it is onto for dimension reasons. The matrix reading is that two anticommuting complex structures generate the whole matrix algebra.</p>
+<p><strong>The real form.</strong> Read over $\mathbb{R}$, the algebra $M_2(\mathbb{C})$ has real dimension eight, and</p>
+<p>$$
+J:M_2(\mathbb{C})\longrightarrow M_2(\mathbb{C}),\qquad J(M)=iM,
+$$</p>
+<p>is a central complex structure, $J^2=-\mathrm{id}$, commuting with both one-sided multiplications. It is the image of multiplication by the central imaginary $i$ of $\mathbb{B}$, and the complex basis $(\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3)$ is the image of the complex basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; together with $i$ times it, it gives a real basis of the eight real dimensions. The complex algebra and its realification therefore carry the same product; the complex structure is the extra operator that records which real endomorphisms are multiplication by a complex scalar.</p>
+<p><strong>Simple and without division.</strong> The algebra $M_2(\mathbb{C})$ is simple. A nonzero two-sided ideal contains a nonzero matrix $A$; some entry $a_{ij}$ is nonzero, the product $E_{ji}AE_{ij}=a_{ij}E_{jj}$ lies in the ideal, and the matrix units then generate the identity. It is not a division algebra, since $E_{11}E_{22}=0$ with both factors nonzero. This is the matrix form of the central simplicity and the absence of division proved in <em>The Biquaternion Algebra</em>, §<em>Central Simplicity and the Absence of Division</em>.</p>
+<h2 id="the-choice-of-model">The Choice of Model</h2>
+<p><strong>Any two isomorphisms differ by conjugation.</strong> Let $\mathsf{M}_2'$ be another $\mathbb{C}$-algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$. Then $T=\mathsf{M}_2'\circ\mathsf{M}_2^{-1}$ is an automorphism of $M_2(\mathbb{C})$, and every automorphism of a full matrix algebra is inner:</p>
+<p>$$
+T(M)=PMP^{-1},\qquad P\in GL_2(\mathbb{C}).
+$$</p>
+<p>So the set of models is a single orbit of $GL_2(\mathbb{C})$ acting by conjugation. The fixed model is one representative, chosen so that $\mathsf{M}_2(\vec e_z)$ is diagonal and the two standard diagonal matrix units are fixed. A different choice moves the diagonal axis and the two columns, and it changes which matrix is diagonal, but it does not change the algebra.</p>
+<p><strong>Base change.</strong> A model is a basis of $\mathbb{C}^2$. Let $C\in GL_2(\mathbb{C})$ have as columns the new basis vectors written in the old basis. The matrix of the same element in the new basis is</p>
+<p>$$
+\mathsf{M}_2^{C}(\tilde Q)=C^{-1}\mathsf{M}_2(\tilde Q)C,
+\qquad
+\mathsf{M}_2(\tilde Q)=C\,\mathsf{M}_2^{C}(\tilde Q)\,C^{-1}.
+$$</p>
+<p>This is $T(M)=PMP^{-1}$ with $P=C^{-1}$. Two changes compose,</p>
+<p>$$
+(C_1C_2)^{-1}M(C_1C_2)=C_2^{-1}\bigl(C_1^{-1}MC_1\bigr)C_2,
+$$</p>
+<p>so the models form the single orbit described above. The trace and the determinant are unchanged; the columns, the diagonal axis and the entries are not.</p>
+<p><strong>What the choice fixes.</strong> The choice fixes the two columns, the diagonal axis, the matrix $\epsilon$, and the explicit entries of every element. None of these is invariant under conjugation, and none of them is needed to state the algebra. The invariants — the trace and the determinant — are unchanged by the choice, and they are the subject of the articles that follow.</p>
+<p><strong>The matrix model is a change of coordinates.</strong> It adds no relation and loses no information. Its value is that the coordinate statements are matrix statements: the scalar part is a trace, the central scalar is a determinant, invertibility is a nonzero determinant, the zero divisors are the singular matrices, and the two standard columns are the two columns of the model. These are collected in <em>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</em> and in <em>$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The assignment $\mathsf{M}_2$ sends $e_t$ to $\mathrm I_2$ and the three vector units to $-i\sigma_1,-i\sigma_2,-i\sigma_3$, and extends by linearity. It is an isomorphism of complex algebras, and its image is the whole of $M_2(\mathbb{C})$. The unit is $\mathrm I_2$, the centre is the scalar matrices, units are invertible matrices, and the inverse is the adjugate divided by the determinant. The factor $i$ and the signs of the cross-relations are forced by the quaternion relations. The model is unique up to conjugation by $GL_2(\mathbb{C})$, and the fixed choice is the one in which the standard pair is diagonal.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the basis; $e_t$ the unit, $\vec e_k^2=-e_t$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>an element and its scalar–vector split</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2$</td>
+<td>the fixed $2\times2$ matrix model</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the Pauli matrices; $\mathsf{M}_2(\vec e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\epsilon=\mathsf{M}_2(-\vec e_y)$</td>
+<td>the matrix $\epsilon$</td>
+</tr>
+<tr>
+<td>$Q_t=\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde Q)$</td>
+<td>the scalar part as half the trace</td>
+</tr>
+<tr>
+<td>$\operatorname{adj}$</td>
+<td>the classical adjugate, the image of ${}^{\natural}$</td>
+</tr>
+<tr>
+<td>$GL_2(\mathbb{C})$</td>
+<td>the group of models, acting by conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra and its two products</li>
+<li><a href="m2c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the two invariants</li>
+<li><a href="m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the coordinate model and the two columns</li>
+<li><a href="m2c-representation-worked-examples.html">$M_2(\mathbb{C})$ Representation : Worked Examples</a>, for the eight matrices computed in the model</li>
+<li><a href="m2c-representation-the-conjugations-and-the-adjoints.html">$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints</a>, for the four involutions</li>
+<li><a href="m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</a>, for the regular representation</li>
+<li><a href="matrix-algebras.html">Matrix Algebras</a>, for the structure of $M_n(\mathbb{C})$</li>
+<li><a href="the-realification-of-the-general-quaternionic-algebra.html">The Realification of the General Quaternionic Algebra</a>, for the real reading of the complex model</li>
+<li>F. R. Gantmacher, <em>The Theory of Matrices</em> (Chelsea, 1959).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

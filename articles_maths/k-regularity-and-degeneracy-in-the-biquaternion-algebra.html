@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Regularity and Degeneracy in the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="k-regularity-and-degeneracy-in-the-biquaternion-algebra"><strong>K-Regularity and Degeneracy in the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra carries four norms; the <strong>Krein norm</strong> is the indefinite one, the general quaternionic sesquilinear form read at its two equal arguments. It is real-valued, it is not multiplicative, and it does not decide invertibility. Its zero set is a real cone of codimension one on which units and zero divisors both occur, and its sign is not a ring-theoretic invariant.</p>
+<p>This article defines the Krein norm, records its homogeneity, proves that it is not multiplicative, and separates the algebra into the two cases of its value: the <strong>Krein-regular</strong> case of non-zero value, split into the positive and the negative regions, and the <strong>Krein-degenerate</strong> case of zero value, the null set. The closure of the positive case is the Krein cone. It then compares the metric partition with the algebraic partition of the algebra into units, origin and zero divisors, which is the partition carried by the quaternionic norm, and explains why the Krein problem admits no second axis along the spectral condition: the Krein norm and the spectrum are invariants of different groups, and the plane that the quaternionic norm supports does not transfer. The two halves of the partition are treated in <em>The K-Regular Sector</em> and <em>The K-Degenerate Sector</em>.</p>
+<p><strong>Notation.</strong> An element is $\tilde Q=Q_t e_t+\vec Q$, with $Q_\mu=q_\mu+iq'_\mu$ complex and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the Hermitian conjugation is $\tilde Q^*=\bar Q_t-\overline{\vec Q}$, and the coefficient signs are $\varepsilon=(1,-1,-1,-1)$. The <strong>definite companion</strong> is $\langle\tilde Q_1,\tilde Q_2\rangle_*=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, with $\langle\tilde Q\rangle_*=\lVert\tilde Q\rVert_E^2=\sum_\mu|Q_\mu|^2$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight. The product is the plain product $\tilde P\tilde Q$, associative and with the two-sided unit $e_t$. The <strong>quaternionic norm</strong> is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; it is complex-valued and multiplicative. Its regular and degenerate cases, the unit group and the zero-divisor cone, are the subject of <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>. The form itself, its Gram matrix and its inertia are <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; its fundamental symmetry and the bridge are <em>The Fundamental Symmetry of the Form</em>; this article studies the norm the form carries, with the isotropic elements, the doubly null lines and the cone they close.</p>
+<h2 id="the-krein-norm">The Krein Norm</h2>
+<p>The <strong>Krein norm</strong> is the general quaternionic sesquilinear form read at its two equal arguments,
+$$
+\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu|Q_\mu|^2
+=|Q_t|^2-\lVert\vec Q\rVert_E^2 .
+$$
+It is real-valued and homogeneous of degree two, $\langle\lambda\tilde Q\rangle_{\natural*}=|\lambda|^2\langle\tilde Q\rangle_{\natural*}$ for complex $\lambda$. The form is <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; this article studies the norm it carries.</p>
+<p><strong>Theorem (non-multiplicativity).</strong> The Krein norm is not multiplicative. With $\tilde P=e_t+\vec e_x$ and $\tilde Q=e_t-\vec e_x$,
+$$
+\langle\tilde P\rangle_{\natural*}=\langle\tilde Q\rangle_{\natural*}=0,
+\qquad
+\tilde P\tilde Q=2e_t,
+\qquad
+\langle\tilde P\tilde Q\rangle_{\natural*}=4.
+$$
+Moreover $\tilde P^2=2\vec e_x$ and $\langle\tilde P^2\rangle_{\natural*}=-4$.</p>
+<p><em>Proof.</em> $\tilde P\tilde Q=e_t^2-\vec e_x^2=2e_t$ and $\tilde P^2=e_t+2\vec e_x+\vec e_x^2=2\vec e_x$, since $\vec e_x^2=-e_t$. The values are $|1|^2-|1|^2=0$, $\langle 2e_t\rangle_{\natural*}=4$ and $\langle 2\vec e_x\rangle_{\natural*}=-4$.</p>
+<p><strong>Consequence.</strong> No multiplicative law survives in either direction: the product of two null elements can be regular, and the product of two regular elements can be null (§<em>The regular case: the positive and the negative regions</em>). What is preserved is the homogeneity under complex scalars and the invariance under the isometry group $\mathrm{U}_J(\mathbb{B})\cong\mathrm{U}(1,3)$; multiplication by an algebra element preserves neither the value nor its sign.</p>
+<h2 id="the-two-cases">The Two Cases</h2>
+<p>The value of the Krein norm separates the algebra into three sets.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition on $\langle\tilde Q\rangle_{\natural*}$</th>
+<th>set</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$>0$</td>
+<td>$\mathbb{B}^{\natural*}_{+}=\{|Q_t|>\lVert\vec Q\rVert_E\}$</td>
+<td>the <strong>positive-regular</strong> region</td>
+</tr>
+<tr>
+<td>$<0$</td>
+<td>$\mathbb{B}^{\natural*}_{-}=\{|Q_t|<\lVert\vec Q\rVert_E\}$</td>
+<td>the <strong>negative-regular</strong> region</td>
+</tr>
+<tr>
+<td>$=0$</td>
+<td>$\mathcal K=\{|Q_t|=\lVert\vec Q\rVert_E\}$</td>
+<td>the <strong>null set</strong>, the <strong>Krein-degenerate</strong> case</td>
+</tr>
+</tbody>
+</table></div>
+<p>The <strong>Krein-regular</strong> set is the union
+$$
+\mathbb{B}^{\natural*}=\mathbb{B}^{\natural*}_{+}\uplus\mathbb{B}^{\natural*}_{-}
+=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}\neq0\},
+$$
+and the algebra is the disjoint union
+$$
+\mathbb{B}=\mathbb{B}^{\natural*}_{+}\uplus\mathcal K\uplus\mathbb{B}^{\natural*}_{-}.
+$$
+The split is by the value of the norm, not by invertibility. The origin lies in $\mathcal K$ and is neither a unit nor a zero divisor, and it is the only Krein-degenerate point with vanishing scalar part. Every other point of $\mathcal K$ is a unit or a zero divisor: it is a unit exactly when its algebraic norm does not vanish, and a zero divisor exactly when it does. So the degeneracy case is the origin together with units and zero divisors.</p>
+<p><strong>Remark (the word regular).</strong> In ring theory a regular element is a non-zero-divisor, so the ring-regular set is $\mathbb{B}^{\times}\uplus\{0\}$. The title uses <strong>Krein-regular</strong> in the metric sense: the regular side is the complement of the null set. The two readings are different, and §<em>The Two Partitions</em> shows that the only implication between them is positive implies unit.</p>
+<h2 id="the-regular-case-the-positive-and-the-negative-regions">The regular case: the positive and the negative regions</h2>
+<p><strong>Definition.</strong> The <strong>Krein-regular set</strong> is
+$$
+\mathbb{B}^{\natural*}=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}\neq0\}
+=\mathbb{B}^{\natural*}_{+}\uplus\mathbb{B}^{\natural*}_{-}.
+$$
+It is the complement of the null set, and it is the union of the two sign regions.</p>
+<p><strong>Theorem (the regular set).</strong> The set $\mathbb{B}^{\natural*}$ is open and dense in $\mathbb{B}$, and its complement is the null set $\mathcal K$. The null set is closed, of empty interior and of real codimension one, and it is the common boundary
+$$
+\partial\mathbb{B}^{\natural*}_{+}=\partial\mathbb{B}^{\natural*}_{-}=\mathcal K .
+$$
+The regular set has exactly two connected components, the positive and the negative regions.</p>
+<p><em>Proof.</em> The function $f(\tilde Q)=\langle\tilde Q\rangle_{\natural*}$ is a real polynomial, so its non-zero set is open and its zero set is closed. Off the origin the gradient of $f$ in the real coordinates $(\Re Q_t,\Im Q_t,\Re\vec Q,\Im\vec Q)$ is $2(\Re Q_t,\Im Q_t,-\Re\vec Q,-\Im\vec Q)\neq0$, so the null set is a real hypersurface of real dimension $7$, of empty interior and real codimension one. The sign is locally constant on the complement, and every point of $\mathcal K$ is a boundary point of both sign regions, because $f$ has no local extremum there: the origin is its only critical point, and near the origin $e_t$ and $\vec e_x$ give both signs. The positive region is homotopy equivalent to $S^1$ and the negative region to $S^5$ (<em>The Krein Level Sets and the Hyperbolic Structure</em>), so each is connected; the complement of the null set has at most two components, because the sign takes two values.</p>
+<p><strong>Theorem (positive implies unit).</strong> If $\langle\tilde Q\rangle_{\natural*}>0$, then $\tilde Q$ is a unit of the plain product.</p>
+<p><em>Proof.</em> Positivity gives $|Q_t|>\lVert\vec Q\rVert_E$, hence $Q_t\neq0$. If $\tilde Q$ were a zero divisor, then $\langle\tilde Q\rangle_{\natural}=0$ by the criterion of <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>, so $Q_t^2=-\sum_kQ_k^2$ and
+$$
+|Q_t|^2=\Bigl|\sum_kQ_k^2\Bigr|\leq\sum_k|Q_k|^2=\lVert\vec Q\rVert_E^2,
+$$
+in contradiction with positivity. A non-zero element that is not a zero divisor is a unit.</p>
+<p><strong>Theorem (not a group).</strong> The Krein-regular set is not a group under the plain product and is not stable under it: the Krein-regular elements $\vec e_x$ and $\vec e_x+i\vec e_y$ have the null product $-e_t+i\vec e_z$, and the two null elements $e_t+\vec e_x$ and $e_t-\vec e_x$ have the Krein-regular product $2e_t$. It is stable under multiplication by non-zero complex scalars and under the Krein isometry group.</p>
+<p><em>Proof.</em> Closure under scalars and isometries is the homogeneity and the invariance of §<em>The Krein Norm</em>. The failure of closure under the product is the first example: $\vec e_x(\vec e_x+i\vec e_y)=\vec e_x^2+i\vec e_x\vec e_y=-e_t+i\vec e_z$, of Krein norm $1-1=0$, while $\langle\vec e_x\rangle_{\natural*}=-1$ and $\langle\vec e_x+i\vec e_y\rangle_{\natural*}=-2$. The second example shows that the Krein-degenerate set is not stable either.</p>
+<h3 id="krein-orthogonality-and-the-complement">Krein Orthogonality and the Complement</h3>
+<p><strong>Definition.</strong> Two elements are <strong>Krein-orthogonal</strong>, written $\tilde Q_1\perp_K\tilde Q_2$, when $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=0$; two subspaces are Krein-orthogonal when every element of one is orthogonal to every element of the other. The <strong>Krein-orthogonal complement</strong> of $\mathbb{W}$ is
+$$
+\mathbb{W}^{\perp_K}=\{\tilde Q:\langle\tilde Q,\tilde W\rangle_{\natural*}=0\ \text{for every}\ \tilde W\in\mathbb{W}\}.
+$$</p>
+<p><strong>Example (a self-orthogonal line).</strong> The line $\mathbb{W}=\mathbb{C}(e_t+\vec e_x)$ is isotropic, $\langle e_t+\vec e_x\rangle_{\natural*}=0$, so $\mathbb{W}\subseteq\mathbb{W}^{\perp_K}$ and $\mathbb{W}+\mathbb{W}^{\perp_K}=\mathbb{W}^{\perp_K}$ has dimension three. The sum is not the algebra, and no direct sum decomposition is obtained from that line alone.</p>
+<p><strong>Theorem (the line criterion).</strong> For $\tilde Q\neq0$ the line $\mathbb{C}\tilde Q$ is non-degenerate for the Krein form exactly when $\langle\tilde Q\rangle_{\natural*}\neq0$. In that case
+$$
+\mathbb{B}=\mathbb{C}\tilde Q\oplus(\mathbb{C}\tilde Q)^{\perp_K},
+\qquad
+\dim_{\mathbb{C}}(\mathbb{C}\tilde Q)^{\perp_K}=3,
+$$
+and the restriction of the form to the line is positive definite when the value is positive and negative definite when it is negative. When the value vanishes the line is totally isotropic and lies in its own complement.</p>
+<p><em>Proof.</em> The Gram matrix of the restriction to the line is the single entry $\langle\tilde Q\rangle_{\natural*}$, so the line is non-degenerate exactly when that entry is non-zero, and its sign is the sign of the entry. For a non-degenerate line the complement is non-degenerate and the sum is direct, of dimensions $1$ and $4-1=3$. For a vanishing entry every vector of the line is orthogonal to the line, so the line is its own radical.</p>
+<p><strong>Corollary (the sign of the line).</strong> The line $\mathbb{C}\tilde Q$ is positive definite exactly in the positive-regular case and negative definite exactly in the negative-regular case. The value of the norm, its sign and the definiteness of the line are one datum.</p>
+<h3 id="the-krein-cone">The Krein Cone</h3>
+<p><strong>Definition.</strong> The <strong>Krein cone</strong> is the closure of the positive-regular region,
+$$
+P_K=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}\ge0\}
+=\{\tilde Q:|Q_t|\ge\lVert\vec Q\rVert_E\}.
+$$</p>
+<p><strong>Theorem (the shape of the cone).</strong> $P_K$ is closed, invariant under multiplication by positive real scalars, and star-shaped with respect to the origin. Its interior is the positive-regular region, its boundary is the null set $\mathcal K$, and it is neither convex nor pointed.</p>
+<p><em>Proof.</em> Closedness is the closedness of the inequality. Homogeneity is $\langle\lambda\tilde Q\rangle_{\natural*}=\lambda^2\langle\tilde Q\rangle_{\natural*}$ for real $\lambda>0$, and the straight-line homotopy $\tilde Q\mapsto t\tilde Q$, $t\in[0,1]$, preserves the inequality, so the cone is star-shaped. The interior is the strict inequality and the boundary the equality. The cone is not pointed because it is invariant under $\tilde Q\mapsto-\tilde Q$, so $P_K\cap(-P_K)=P_K$. It is not convex by the example below.</p>
+<p><strong>Example (the cone is not convex).</strong> The elements $e_t+\vec e_y$ and $-e_t+\vec e_y$ both lie in $P_K$, with value $1-1=0$; their midpoint $\vec e_y$ has value $-1$ and lies outside.</p>
+<h2 id="the-degeneracy-case-the-null-set">The degeneracy case: the null set</h2>
+<p><strong>Definition.</strong> The <strong>null set</strong> is
+$$
+\mathcal K=\{\tilde Q:\langle\tilde Q\rangle_{\natural*}=0\}
+=\{\tilde Q:|Q_t|=\lVert\vec Q\rVert_E\}.
+$$
+Its elements are <strong>isotropic</strong>; the non-zero ones are the <strong>Krein-null</strong> elements. The <strong>doubly null set</strong> is
+$$
+\mathcal K_{\mathrm d}=\{\tilde Q\in\mathcal K:\langle\tilde Q\rangle_{\natural}=0\}
+=\mathcal K\cap\mathcal N,
+$$
+where $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$ is the algebraic null cone, whose punctured part is the zero-divisor set $\mathcal Z$.</p>
+<p>The null set is a real cone of real dimension $7$, smooth off the origin, by the gradient computation above. Every non-zero element of it has $Q_t\neq0$; the origin is the only null point with vanishing scalar part.</p>
+<p><strong>Theorem (the doubly null elements).</strong> Let $\tilde Q\neq0$ with $\langle\tilde Q\rangle_{\natural}=0$. Then
+$$
+\langle\tilde Q\rangle_{\natural*}\leq0,
+$$
+and equality holds exactly on the doubly null Peirce lines, that is, exactly when $\tilde Q\in\mathbb{C}(e_t+i\vec u)$ for some $\vec u\in S^2$.</p>
+<p><em>Proof.</em> The vanishing of the algebraic norm gives $Q_t^2=-\sum_kQ_k^2$, hence
+$$
+|Q_t|^2=\Bigl|\sum_kQ_k^2\Bigr|\leq\sum_k|Q_k|^2=\lVert\vec Q\rVert_E^2
+$$
+by the triangle inequality, which is $\langle\tilde Q\rangle_{\natural*}\leq0$. The equality case is the classification of <em>The K-Degenerate Sector</em>, §<em>The Doubly Null Stratum</em>: the lines that are null for both norms are exactly the Peirce lines.</p>
+<p><strong>Corollary (the shape of the doubly null set).</strong> $\mathcal K_{\mathrm d}=\bigcup_{\vec u\in S^2}\mathbb{C}(e_t+i\vec u)$ is a real cone of real dimension $4$.</p>
+<p><em>Proof.</em> Each line is a real plane, and the parameter $\vec u$ runs over $S^2$; distinct unit vectors give distinct lines, so the dimension is $2+2=4$.</p>
+<p><strong>Corollary (the two strata).</strong> The null set splits as
+$$
+\mathcal K=\mathcal K_{\mathrm d}\uplus\mathcal K_{\mathrm u},
+\qquad
+\mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}.
+$$
+The points of $\mathcal K_{\mathrm d}$ are the zero divisors together with the origin; the points of $\mathcal K_{\mathrm u}$ are non-zero and are units. The set $\mathcal K_{\mathrm u}$ is open and dense in $\mathcal K$.</p>
+<p><em>Proof.</em> By the criterion of <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>, a non-zero element is a zero divisor exactly when its algebraic norm vanishes, that is exactly on $\mathcal K_{\mathrm d}$; the origin is the remaining point of $\mathcal K_{\mathrm d}$. The elements of $\mathcal K_{\mathrm u}$ have non-zero algebraic norm, hence are units. The set $\mathcal K_{\mathrm d}$ is closed in $\mathcal K$, being the trace of the closed algebraic null cone, and it has real dimension $4$ by the preceding corollary; a set of dimension $4$ has empty interior in the cone $\mathcal K$ of dimension $7$, so $\mathcal K_{\mathrm d}$ is nowhere dense in $\mathcal K$ and its complement $\mathcal K_{\mathrm u}$ is open and dense.</p>
+<p><strong>Remark (the null set is not the zero-divisor set).</strong> The element $e_t+\vec e_x$ is null and a unit; the element $\vec e_x+i\vec e_y$ is a zero divisor and not null. The null set has real codimension one and the zero-divisor set real codimension two; their intersection is $\mathcal K_{\mathrm d}$, of real dimension four.</p>
+<h2 id="the-two-partitions">The Two Partitions</h2>
+<p>The algebra carries two partitions: the metric partition by the sign of the Krein norm and the algebraic partition by invertibility. The following table records them together; the pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natural})$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sign of $\langle\tilde Q\rangle_{\natural*}$</th>
+<th>unit</th>
+<th>zero divisor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>positive</td>
+<td>$e_t$ $(1,1)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>negative</td>
+<td>$e_t+2\vec e_x$ $(-3,5)$</td>
+<td>$\vec e_x+i\vec e_y$ $(-2,0)$</td>
+</tr>
+<tr>
+<td>null</td>
+<td>$e_t+\vec e_x$ $(0,2)$</td>
+<td>$e_t+i\vec e_x$ $(0,0)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The origin has the pair $(0,0)$ and is neither a unit nor a zero divisor.</p>
+<p><strong>Theorem (the comparison).</strong> The following hold.</p>
+<ol>
+<li>If $\langle\tilde Q\rangle_{\natural*}>0$ then $\tilde Q$ is a unit.</li>
+<li>If $\tilde Q$ is a zero divisor then $\langle\tilde Q\rangle_{\natural*}\leq0$.</li>
+<li>The converses fail: negative units, negative zero divisors, null units and null zero divisors all exist.</li>
+<li>The positive region is contained in the unit group; the zero-divisor set is contained in the closed set $\{\langle\tilde Q\rangle_{\natural*}\le0\}$. Neither inclusion is an equality.</li>
+</ol>
+<p><em>Proof.</em> The first point is §<em>The regular case: the positive and the negative regions</em>. The second is the inequality of §<em>The degeneracy case: the null set</em>, applied to the algebraic null cone. The examples of the table give the third. For the fourth, $e_t+2\vec e_x$ is a negative unit and $e_t+\vec e_x$ is a null unit, so the unit group is not the positive region; $\vec e_x+i\vec e_y$ is a negative zero divisor, so the zero-divisor set is not the null set.</p>
+<p><strong>Remark (the shape of the two degeneracies).</strong> The algebraic null cone has real codimension two, so the unit group is open and dense. The Krein null set has real codimension one. The zero-divisor set lies in the closed set $\{\langle\tilde Q\rangle_{\natural*}\le0\}$ and meets the null set exactly in the non-zero points of the doubly null Peirce lines; elsewhere it lies in the open negative region. The unit group meets the positive region, the negative region and the null set.</p>
+<p><strong>Theorem (the algebraic norm on the null set).</strong> The restriction of the algebraic norm to the null set is onto $\mathbb{C}$; on the punctured null set it is onto $\mathbb{C}^*$. Hence the algebraic norm is not a function of the Krein norm.</p>
+<p><em>Proof.</em> For $\tilde Q=c(e_t+\vec e_x)$ one has $\langle\tilde Q\rangle_{\natural*}=|c|^2(1-1)=0$ and $\langle\tilde Q\rangle_{\natural}=c^2(1+1)=2c^2$. As $c$ ranges over $\mathbb{C}$, or over $\mathbb{C}^*$, the value $2c^2$ ranges over $\mathbb{C}$, or over $\mathbb{C}^*$.</p>
+<p><strong>Remark (the contrast with the quaternionic norm).</strong> For the quaternionic norm the non-zero set is exactly the unit group, and the zero set is the algebraic null cone, whose punctured part is the zero-divisor set. For the Krein norm the non-zero set is a union of two sign regions that is not a group, and the zero set is a real cone of codimension one that meets both the unit group and the zero-divisor set. The independence is two-way: $e_t$ and $\vec e_x$ have the same algebraic norm $1$ and Krein norms $1$ and $-1$, while the null set carries every algebraic norm. The Krein norm measures a metric position; the quaternionic norm measures invertibility.</p>
+<h2 id="why-there-is-no-spectral-split">Why There Is No Spectral Split</h2>
+<p><strong>The question.</strong> The quaternionic norm and the square of the vector part are the constant term and the discriminant of one characteristic polynomial, $p_{\tilde Q}(X)=X^2-2Q_tX+N$ with $N=Q_t^2+B^2$. The corpus therefore reads them as the two coordinates of one plane and cuts that plane into four sectors, one to each spectral pattern. The Krein norm invites the same treatment: one axis the sign of $\langle\tilde Q\rangle_{\natural*}$, the other the vanishing of $B^2$, giving a regular and a degenerate article with two spectral halves each. That plane is declined here. The reason is structural: the Krein norm and the spectral condition are invariants of <strong>different groups</strong>, so the two axes are not commensurable. The four reasons follow, and the last subsection records the refinement that is available.</p>
+<p><strong>The quaternionic plane, and why it works.</strong> On $\mathbb{B}$ the pair $(N,B^2)$ is equivalent to the pair $(2Q_t,N)$, that is, to the characteristic polynomial. Both entries are polynomial invariants of the element under similarity, $\tilde Q\mapsto\tilde P\tilde Q\tilde P^{-1}$ with $\tilde P$ a unit: the trace, the norm and the discriminant are coefficients of $p_{\tilde Q}$, and $p_{\tilde P\tilde Q\tilde P^{-1}}=p_{\tilde Q}$. The four sectors are therefore four <strong>similarity-invariant</strong> conditions, and the four spectral patterns — an eigenvalue zero or not, the two eigenvalues equal or not — are exactly the four cells. The plane is well posed because both axes live in the same invariant ring, that of the algebra automorphisms.</p>
+<h3 id="the-null-set-is-a-single-orbit">The Null Set Is a Single Orbit</h3>
+<p><strong>Theorem (transitivity on the null set).</strong> The isometry group $\mathrm{U}(1,3)$ of the Krein form acts transitively on $\mathcal K\setminus\{0\}$.</p>
+<p><em>Proof.</em> Two steps. First, the group is transitive on the isotropic lines: by Witt's theorem every isometry of a subspace extends, and the null lines are the points of the null quadric, on which $\mathrm{U}(1,3)$ acts transitively. So an isometry carries $\mathbb{C}\tilde Q_1$ to $\mathbb{C}\tilde Q_2$, and the image of $\tilde Q_1$ is $\mu\tilde Q_2$ for some $\mu\neq0$. Second, the stabiliser of a null line acts transitively on the line minus its origin. Let $\tilde Q$ be null and choose $\tilde V$ with $\langle\tilde V,\tilde V\rangle_{\natural*}=1$ and $\langle\tilde V,\tilde Q\rangle_{\natural*}\neq0$, possible because the radical of $\tilde Q^{\perp_K}$ is exactly $\mathbb{C}\tilde Q$. Replacing $\tilde Q$ by a multiple, take $\langle\tilde V,\tilde Q\rangle_{\natural*}=1$. In the basis $(\tilde Q,\tilde V)$ the Gram matrix is
+$$
+E=\begin{pmatrix}0&1\\1&1\end{pmatrix},
+$$
+of signature $(1,1)$, so its orthogonal complement is negative definite and every isometry of the plane extends by the identity. For $\mu\neq0$ the matrix
+$$
+M_\mu=\begin{pmatrix}\mu&b\\0&1/\bar\mu\end{pmatrix},
+\qquad
+2\operatorname{Re}\bigl(b/\mu\bigr)=1-\frac{1}{\lvert\mu\rvert^2},
+$$
+satisfies $M_\mu^{*}EM_\mu=E$ with $E$ that Gram matrix, and $M_\mu\tilde Q=\mu\tilde Q$. Such a $b$ exists for every $\mu\neq0$. Hence the stabiliser rescales the line by any non-zero factor, and the two steps compose.</p>
+<p><strong>Corollary (the spectral type is not a Krein invariant).</strong> Every function on $\mathcal K\setminus\{0\}$ invariant under $\mathrm{U}(1,3)$ is constant there, because the set is a single orbit. The square of the vector part is not constant:
+$$
+B^2(e_t+\vec e_x)=1,\qquad
+B^2\Bigl(e_t+\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)\Bigr)=\tfrac12+\tfrac{i^2}{2}=0,
+$$
+and both elements are null, of Krein norms $1-1=0$ and $1-\tfrac12-\tfrac12=0$. <strong>An isometry of the form therefore carries a spectrally regular null element to a spectrally degenerate one.</strong> The would-be sectors are not stable under $\mathrm{U}(1,3)$, whereas the quaternionic sectors are stable under the unit group acting by conjugation. This is the decisive difference: $B^2$ is an invariant of the algebra and not of the form, and the isometry group contains transformations that are not algebra automorphisms.</p>
+<h3 id="the-krein-norm-is-not-a-spectral-coefficient">The Krein Norm Is Not a Spectral Coefficient</h3>
+<p><strong>The Krein norm is not a function of the characteristic polynomial.</strong> Take $Q_t=1$ and the two vector parts $(i,0,0)$ and $(1,i,i)$. Both give $B^2=-1$ and therefore $N=0$, so both have the same characteristic polynomial $X^2-2X$, and the same spectrum $\{0,2\}$. Their Krein norms are
+$$
+1-\lvert i\rvert^2=0,\qquad
+1-\bigl(1+\lvert i\rvert^2+\lvert i\rvert^2\bigr)=-2.
+$$
+The same polynomial therefore carries a null value and a negative value. The Krein norm is not a coefficient of $p_{\tilde Q}$, and $p_{\tilde Q}$ is not a function of the Krein norm.</p>
+<p><strong>The Krein norm is not similarity-invariant.</strong> For the unit $\tilde P=e_t+2i\vec e_x$ one has $\langle\tilde P\rangle_{\natural}=1+(2i)^2=-3$ and $\tilde P^{-1}=\tfrac13(-e_t+2i\vec e_x)$, and a direct computation gives
+$$
+\tilde P\,\vec e_y\,\tilde P^{-1}=-\tfrac53\vec e_y-\tfrac43 i\vec e_z .
+$$
+The square of the vector part is $25/9-16/9=1$ before and after, as it must be, while the Krein norm moves from $0-1=-1$ to $0-\bigl(25/9+16/9\bigr)=-41/9$. A similarity, which is the natural change of element in the spectral problem, does not preserve the Krein norm; an isometry, which preserves the Krein norm, does not preserve the spectral type. The two problems are carried by different groups, and neither group contains the other.</p>
+<p><strong>In the other direction, $B^2$ is not a function of the Krein norm.</strong> The elements
+$$
+\tilde Q_1=e_t+\tfrac{1}{\sqrt2}\vec e_x,\qquad
+\tilde Q_2=e_t+\tfrac12(\vec e_x+i\vec e_y)
+$$
+have the same Krein norm $\tfrac12$, since $\lVert\vec Q_1\rVert_E^2=\tfrac12=\lVert\vec Q_2\rVert_E^2$, and different vector squares, $\tfrac12$ and $\tfrac14-\tfrac14=0$. Neither condition is a function of the other.</p>
+<h3 id="every-krein-stratum-meets-both-spectral-types">Every Krein Stratum Meets Both Spectral Types</h3>
+<p>The examples of the preceding subsection already show that no Krein stratum is spectrally uniform. The table collects one witness of each type in each stratum.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Krein stratum</th>
+<th>real dimension</th>
+<th>spectrally degenerate witness</th>
+<th>spectrally regular witness</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>positive region</td>
+<td>$8$</td>
+<td>$e_t$, with $B^2=0$</td>
+<td>$e_t+\tfrac12\vec e_x$, with $B^2=\tfrac14$</td>
+</tr>
+<tr>
+<td>negative region</td>
+<td>$8$</td>
+<td>$\vec e_x+i\vec e_y$, with $B^2=0$</td>
+<td>$\vec e_x$, with $B^2=1$</td>
+</tr>
+<tr>
+<td>doubly null set $\mathcal K_{\mathrm d}\setminus\{0\}$</td>
+<td>$4$</td>
+<td>none</td>
+<td>$e_t+i\vec e_x$, with $B^2=-1$</td>
+</tr>
+<tr>
+<td>isotropic units $\mathcal K_{\mathrm u}$</td>
+<td>$7$</td>
+<td>$e_t+\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$, with $B^2=0$</td>
+<td>$e_t+\vec e_x$, with $B^2=1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third row is the sharp one: <strong>the doubly null set off the origin is entirely spectrally regular.</strong> There $N=0$ and $\langle\tilde Q\rangle_{\natural*}=0$ give $Q_t^2+B^2=0$ and $Q_t\neq0$, hence $B^2=-Q_t^2\neq0$. A spectral subdivision would have nothing to subdivide there, and it would still leave both cases to be treated inside each of the other three strata.</p>
+<h3 id="the-split-would-group-the-wrong-things">The Split Would Group the Wrong Things</h3>
+<p>The four cells of the proposed plane are all non-empty, so the plane is definable; it is the grouping that fails.</p>
+<ul>
+<li>The origin is in $\mathcal K_{\mathrm d}$ and is spectrally degenerate, $B^2=0$; the Peirce lines are in $\mathcal K_{\mathrm d}$ and are spectrally regular, $B^2=-Q_t^2\neq0$. A spectral split separates the origin from the Peirce lines, while the algebraic partition groups them: both are zero divisors, and both are doubly null. The natural stratum $\mathcal K_{\mathrm d}$ is destroyed.</li>
+<li>The spectral split separates $\mathcal K_{\mathrm u}$ into the set $\mathcal K_{\mathrm u}\cap\{B^2=0\}$, of real dimension $5$, and its complement, of dimension $7$. The first set is a cone of null elements with a repeated eigenvalue and non-zero algebraic norm; every non-zero point of it is a unit. It is not an object of the Krein theory, and it is not an object of the spectral theory either: it is cut by the algebraic norm and the discriminant together, and the algebraic norm is what decides invertibility there.</li>
+<li>The negative region is cut into the points with a repeated eigenvalue and the rest, although both halves contain units and zero divisors and both have the same Krein sign.</li>
+</ul>
+<p>The plane would therefore produce four articles that are each a mixture of algebraic classes and none of which is invariant under the isometry group of the form.</p>
+<h3 id="what-does-refine-it">What Does Refine It</h3>
+<p>There is a second plane, and it is the one the corpus uses: the Krein value against the <strong>algebraic</strong> value $\langle\tilde Q\rangle_{\natural}$, not the discriminant. Its cells are those of the table of §<em>The Two Partitions</em>: the positive cell of the zero-divisor column is empty, by the theorem that a positive element is a unit, and every other cell is non-empty. Each cell is an invariant set: the Krein value is preserved by $\mathrm{U}(1,3)$ and the algebraic value by the algebra automorphisms, so each cell is carved by a genuine invariant of one of the two structures. The refinement is the trace of the algebraic partition on the three Krein strata, and it is the one that decides the operator theory — the polar decomposition and the sandwich follow $\langle\cdot\rangle_{\natural}$, while the adjoint and the isometries follow $\langle\cdot\rangle_{\natural*}$.</p>
+<p>The two articles that follow this partition are <em>The K-Regular Sector</em>, for the first two rows, and <em>The K-Degenerate Sector</em>, for the last. The spectral condition appears in both only as a remark on the operator theory, never as a subdivision.</p>
+<h2 id="the-two-cases-on-the-remarkable-subspaces">The Two Cases on the Remarkable Subspaces</h2>
+<p>The restriction of the Krein norm to each of the six remarkable subspaces has the realified signature tabulated in <em>Remarkable Subspaces under the General Quaternionic Sesqualgebra</em>. What the signatures leave open is the algebraic status of the null elements, and it is settled here: the equation $\langle\tilde Q\rangle_{\natural*}=0$ has non-zero solutions only on the four Lorentzian subspaces, and there the solutions are units on two of them and zero divisors on the other two.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>remarkable subspace</th>
+<th>non-zero Krein-null elements</th>
+<th>algebraic status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, the centre</td>
+<td>none</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$, the vector subspace</td>
+<td>none</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$, the quaternion subspace</td>
+<td>a cone of dimension $3$</td>
+<td>every one is a unit</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace</td>
+<td>a cone of dimension $3$</td>
+<td>every one is a unit</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{+}$, the Hermitian subspace</td>
+<td>a cone of dimension $3$</td>
+<td>every one is a zero divisor</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_{-}$, the anti-Hermitian subspace</td>
+<td>a cone of dimension $3$</td>
+<td>every one is a zero divisor</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the restrictions).</strong> On the centre the Krein norm is positive definite and on the vector subspace negative definite, so neither carries a non-zero null element; on each of the four four-dimensional subspaces it is Lorentzian, and each carries a null cone of real dimension $3$. The non-zero null elements are units on the quaternion and anti-quaternion subspaces and zero divisors on the Hermitian and anti-Hermitian subspaces. On the last two the null cone is exactly the trace of the doubly null Peirce lines.</p>
+<p><em>Proof.</em> The signatures are the restriction table of the cited article. The algebraic status is read from the coefficients. On the quaternion subspace $Q_t=q_t$ and $Q_k=q_k$ are real, so $\langle\tilde Q\rangle_{\natural}=q_t^2+\sum_kq_k^2$ and $\langle\tilde Q\rangle_{\natural*}=q_t^2-\sum_kq_k^2$; a null element has $q_t^2=\sum_kq_k^2$, hence $\langle\tilde Q\rangle_{\natural}=2q_t^2\neq0$ off the origin, and it is a unit. On the anti-quaternion subspace $Q_t=iq_t$ and $Q_k=iq_k$ with $q_\mu$ real, so $\langle\tilde Q\rangle_{\natural*}=q_t^2-\sum_kq_k^2$ and $\langle\tilde Q\rangle_{\natural}=-(q_t^2+\sum_kq_k^2)$, which is non-zero off the origin. On the Hermitian subspace $Q_t=a_0$ is real and $Q_k=ia_k$ with $a_k$ real, so $\langle\tilde Q\rangle_{\natural}=a_0^2-\sum_ka_k^2$, which vanishes exactly with $\langle\tilde Q\rangle_{\natural*}=a_0^2-\sum_ka_k^2$; a non-zero null element there is a zero divisor. The anti-Hermitian subspace is $i$ times the Hermitian one and has the same property. The traces are the Peirce lines because a null element of $\mathbb{M}_{+}$ is $a_0(e_t+i\vec u)$ with $\vec u=\vec a/|a_0|$ a real unit vector, and $\mathbb{M}_{-}=i\mathbb{M}_{+}$.</p>
+<p><strong>Corollary.</strong> Every non-zero element of the centre, the quaternion subspace and the anti-quaternion subspace is a unit of the plain product. The vector subspace, the Hermitian subspace and the anti-Hermitian subspace contain zero divisors; on the last two a non-zero element is a zero divisor exactly when it is Krein-null, while the vector subspace has no non-zero Krein-null element.</p>
+<p><strong>Remark.</strong> The table records six restrictions, not a cover: a generic null element has all four coefficients non-zero and lies in none of the six subspaces.</p>
+<h2 id="summary">Summary</h2>
+<p>The Krein norm $\langle\tilde Q\rangle_{\natural*}=|Q_t|^2-\lVert\vec Q\rVert_E^2$ is real, indefinite and not multiplicative: $e_t+\vec e_x$ and $e_t-\vec e_x$ are both null and their product $2e_t$ has value four, while the regular elements $\vec e_x$ and $\vec e_x+i\vec e_y$ have a null product. The regular set is therefore not a group, although it is open and dense; it has exactly two connected components, the positive and the negative regions, separated by the null set. The closure of the positive region is the Krein cone $P_K=\{|Q_t|\ge\lVert\vec Q\rVert_E\}$, closed and star-shaped but neither convex nor pointed.</p>
+<p>The comparison with invertibility is one-sided. Every positive element is a unit and every zero divisor has non-positive Krein norm, but negative units, negative zero divisors, null units and null zero divisors all occur. The equality case of the inequality is the doubly null Peirce lines, so the zero-divisor set lies in the closed set $\{\langle\cdot\rangle_{\natural*}\le0\}$ and meets the null set exactly in those lines. The null set splits into the doubly null set, the origin together with the Peirce lines, of real dimension four, and the isotropic units, its open dense complement. The algebraic norm is onto $\mathbb{C}$ on the null set, so it is not a function of the Krein norm; in the other direction $e_t$ and $\vec e_x$ have the same algebraic norm, $1$, and Krein norms of both signs.</p>
+<p>On the six remarkable subspaces the Krein norm is definite on the centre and on the vector subspace, and Lorentzian on the four four-dimensional subspaces; the null elements of the quaternion and anti-quaternion subspaces are units, and those of the Hermitian and anti-Hermitian subspaces are zero divisors.</p>
+<p>The quaternionic norm decides invertibility: its non-zero set is the unit group and its zero set is the algebraic null cone. The Krein norm decides only a metric position, and the two partitions agree only in the implication positive implies unit.</p>
+<p>No spectral split is available. The quaternionic plane works because the norm and the discriminant are two coefficients of one characteristic polynomial, hence two similarity-invariant conditions; the Krein norm is neither a coefficient nor similarity-invariant. The isometry group acts transitively on the non-zero null set, so it carries a spectrally regular null element to a spectrally degenerate one; the Krein norm is not a function of the characteristic polynomial; every Krein stratum meets both spectral types; and the doubly null set off the origin is entirely spectrally regular, so a spectral subdivision would separate the origin from the Peirce lines. The refinement that does exist is the Krein value against the algebraic value, and it is the partition of the two sector articles.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the basis, $e_t$ the identity</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>an element and its scalar–vector split</td>
+</tr>
+<tr>
+<td>$Q_\mu=q_\mu+iq'_\mu$</td>
+<td>the complex coefficients</td>
+</tr>
+<tr>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the coefficient signs</td>
+</tr>
+<tr>
+<td>$\tilde Q^{\natural}=Q_t-\vec Q$</td>
+<td>the natural conjugation</td>
+</tr>
+<tr>
+<td>$\tilde Q^*=\bar Q_t-\overline{\vec Q}$</td>
+<td>the Hermitian conjugation</td>
+</tr>
+<tr>
+<td>$\lVert\tilde Q\rVert_E^2=\sum_\mu|Q_\mu|^2$</td>
+<td>the Euclidean norm</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu|Q_\mu|^2$</td>
+<td>the Krein norm</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$</td>
+<td>the quaternionic norm, the algebraic norm</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\natural*}_{+},\mathbb{B}^{\natural*}_{-}$</td>
+<td>the positive-regular and negative-regular regions</td>
+</tr>
+<tr>
+<td>$\mathcal K=\{\langle\cdot\rangle_{\natural*}=0\}$</td>
+<td>the null set, the Krein-degenerate case</td>
+</tr>
+<tr>
+<td>$P_K=\{\langle\cdot\rangle_{\natural*}\ge0\}$</td>
+<td>the Krein cone, the closure of the positive region</td>
+</tr>
+<tr>
+<td>$\mathcal K_{\mathrm d}=\mathcal K\cap\mathcal N$</td>
+<td>the doubly null set; the Peirce lines and the origin</td>
+</tr>
+<tr>
+<td>$\mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}$</td>
+<td>the isotropic units</td>
+</tr>
+<tr>
+<td>$\mathcal N=\{\langle\cdot\rangle_{\natural}=0\}$</td>
+<td>the algebraic null cone</td>
+</tr>
+<tr>
+<td>$\mathcal Z=\mathcal N\setminus\{0\}$</td>
+<td>the zero-divisor set</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\times}$</td>
+<td>the unit group of the plain product</td>
+</tr>
+<tr>
+<td>$\mathbb{C}(e_t+i\vec u)$, $\vec u\in S^2$</td>
+<td>the doubly null Peirce lines</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the form, its Gram matrix and its inertia.</li>
+<li><a href="the-fundamental-symmetry-of-the-form.html">The Fundamental Symmetry of the Form</a>, for the fundamental symmetry and the bridge $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,J\tilde Q_1\rangle_{*}$.</li>
+<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the quaternionic norm, its multiplicativity, the unit group and the zero-divisor cone.</li>
+<li><a href="the-k-regular-sector.html">The K-Regular Sector</a>, for the positive and negative regions, their geometry, their products and inversion, and their relation to the unit group.</li>
+<li><a href="the-k-degenerate-sector.html">The K-Degenerate Sector</a>, for the null set, the doubly null Peirce lines, the isotropic units and their products.</li>
+<li><a href="the-krein-level-sets-and-the-hyperbolic-structure.html">The Krein Level Sets and the Hyperbolic Structure</a>, for the level sets, the positive region, the negative region, the null set and the complex hyperbolic ball.</li>
+<li><a href="remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.html">Remarkable Subspaces under the General Quaternionic Sesqualgebra</a>, for the restriction of the Krein form to the six remarkable subspaces and their signatures.</li>
+<li><a href="the-krein-isometry-group-and-its-cartan-decomposition.html">The Krein Isometry Group and Its Cartan Decomposition</a>, for the isometry group $\mathrm{U}(1,3)$, its actions and its Cartan decomposition.</li>
+<li><a href="j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html">J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</a>, for the operator theory of the form and the Krein adjoint.</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the comparison of the four forms and of the four norms.</li>
+<li><a href="the-realification-of-the-general-quaternionic-sesqualgebra.html">The Realification of the General Quaternionic Sesqualgebra</a>, for the real matrix of the form and the signature $(2,6)$.</li>
+<li><a href="zero-divisors-of-the-general-quaternionic-algebra.html">Zero Divisors of the General Quaternionic Algebra</a>, for the zero-divisor set and its criterion.</li>
+<li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the Peirce idempotents and the minimal left ideals behind the doubly null lines.</li>
+<li><a href="indefinite-inner-product-spaces.html">Indefinite Inner Product Spaces</a>, for the classification of subspaces and the isotropic structure of an indefinite form.</li>
+<li>János Bognár, <em>Indefinite Inner Product Spaces</em> (Springer, 1974), for the fundamental decomposition and the theory of Krein spaces.</li>
+<li>Thomas Ya. Azizov and Iosif S. Iokhvidov, <em>Linear Operators in Spaces with an Indefinite Metric</em> (Wiley, 1989), for the Pontryagin space and the indefinite metric.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

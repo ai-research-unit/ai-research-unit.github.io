@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-model-the-centraliser-and-the-double-centraliser"><strong>$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>For a non-scalar matrix the elements commuting with it form a commutative algebra, the plane of polynomials in the matrix, of complex dimension two; for a scalar matrix the commutant is the whole matrix algebra, of complex dimension four, which is not commutative. The double centraliser returns the same algebra in every case.</p>
+<p>This article develops the commutant, the double commutant, the three spectral types, the eigenbasis ambiguity and the dimension count. It is the matrix form of <em>$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</em>, §<em>The Commutant</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. The matrix of $\tilde Q$ is $X=\mathsf M_2(\tilde Q)$, and $\mathbb{C}[X]$ is the algebra of polynomials in $X$.</p>
+<p><strong>Boundaries.</strong> The module-theoretic commutant of an element and its double centraliser are <em>The Centraliser</em> and <em>The Category of Modules</em>, §<em>Endomorphisms and the Standard Bimodule</em>; the eigenbasis and its construction are <em>$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</em>; the spectral projectors are <em>$M_2(\mathbb{C})$ Model : The Spectral Projectors</em>.</p>
+<h2 id="the-commutant">The Commutant</h2>
+<p>For $X\in M_2(\mathbb{C})$ the <strong>commutant</strong> or <strong>centraliser</strong> is</p>
+<p>$$
+C(X)=\{Y\in M_2(\mathbb{C}):XY=YX\},
+$$</p>
+<p>a unital subalgebra of $M_2(\mathbb{C})$ containing $\mathbb{C}[X]$. The <strong>double commutant</strong> is $C(C(X))$.</p>
+<p><strong>Theorem.</strong> For every $X$,</p>
+<p>$$
+C(X)=
+\begin{cases}
+M_2(\mathbb{C}), & X=\lambda\mathrm I_2,\\[2pt]
+\mathbb{C}[X]=\operatorname{span}_{\mathbb{C}}\{\mathrm I_2,X\}, & X\neq\lambda\mathrm I_2,
+\end{cases}
+\qquad\text{and}\qquad
+C\bigl(C(X)\bigr)=\mathbb{C}[X].
+$$</p>
+<p>In particular $C(X)$ has complex dimension $4$ for a scalar and complex dimension $2$ for a non-scalar.</p>
+<p><em>Proof.</em> The scalar case is clear. For the non-scalar case, put $X$ in Jordan form. If the eigenvalues are distinct, $X$ is conjugate to $\operatorname{diag}(\lambda_+,\lambda_-)$ with $\lambda_+\neq\lambda_-$; a commuting matrix is diagonal, and every diagonal matrix is a polynomial in $X$ by interpolation at the two eigenvalues. If the eigenvalue is repeated, $X$ is conjugate to $\lambda\mathrm I_2+N$ with $N\neq0$ and $N^2=0$; taking $N=E_{12}$, a matrix commuting with $N$ has the form $\begin{pmatrix}a&b\\0&a\end{pmatrix}=a\mathrm I_2+bN$. In both cases $\mathbb{C}[X]$ has complex dimension two and is maximal commutative, so $C(C(X))=C(X)=\mathbb{C}[X]$. $\square$</p>
+<p><strong>The minimal polynomial.</strong> The same computation reads</p>
+<p>$$
+\mathbb{C}[X]\cong\mathbb{C}[t]\big/\bigl(m_X(t)\bigr),
+$$</p>
+<p>where $m_X$ is the minimal polynomial. The three spectral types are the three factorisations of $m_X$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Type of $X$</th>
+<th>$m_X(t)$</th>
+<th>$\mathbb{C}[X]$</th>
+<th>Dimension over $\mathbb{C}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalar</td>
+<td>$t-\lambda$</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>non-scalar, distinct eigenvalues</td>
+<td>$(t-\lambda_+)(t-\lambda_-)$</td>
+<td>$\mathbb{C}\times\mathbb{C}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>non-scalar, repeated eigenvalue</td>
+<td>$(t-\lambda)^2$</td>
+<td>$\mathbb{C}[\varepsilon]/(\varepsilon^2)$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third row is the algebra of dual numbers: the nilpotent $\varepsilon=N$ squares to zero.</p>
+<h2 id="the-three-types-in-the-eigenbasis">The Three Types in the Eigenbasis</h2>
+<p><strong>Distinct eigenvalues.</strong> Let $X=C\operatorname{diag}(\lambda_+,\lambda_-)C^{-1}$ with $\lambda_+\neq\lambda_-$. Conjugating by $C$,</p>
+<p>$$
+C^{-1}C(X)C=\left\{\begin{pmatrix}a&0\\0&b\end{pmatrix}:a,b\in\mathbb{C}\right\}.
+$$</p>
+<p>The commutant is spanned by the two spectral projectors</p>
+<p>$$
+\Pi_+=\frac{X-\lambda_-\mathrm I_2}{\lambda_+-\lambda_-},\qquad
+\Pi_-=\frac{X-\lambda_+\mathrm I_2}{\lambda_--\lambda_+},
+$$</p>
+<p>which satisfy $\Pi_++\Pi_-=\mathrm I_2$ and $\Pi_+\Pi_-=0$. The isomorphism $\mathbb{C}[X]\to\mathbb{C}\times\mathbb{C}$ is evaluation at the two eigenvalues, $Y\mapsto(\mu_+,\mu_-)$ when $Y=\mu_+\Pi_++\mu_-\Pi_-$.</p>
+<p><strong>Repeated eigenvalue.</strong> Let $X=\lambda\mathrm I_2+N$ with $N\neq0$ and $N^2=0$. The commutant is</p>
+<p>$$
+C(X)=\{a\mathrm I_2+bN\},
+$$</p>
+<p>the dual numbers, with $N$ the nilpotent direction. In the Jordan basis it is the algebra of upper triangular matrices with equal diagonal entries.</p>
+<p><strong>Scalar.</strong> For $X=\lambda\mathrm I_2$ every matrix commutes, $C(X)=M_2(\mathbb{C})$, and $\mathbb{C}[X]=\mathbb{C}\mathrm I_2$.</p>
+<h2 id="the-adjugate-and-the-dagger-in-the-commutant">The Adjugate and the Dagger in the Commutant</h2>
+<p><strong>The adjugate.</strong> By Cayley–Hamilton,</p>
+<p>$$
+\operatorname{adj}X=(\operatorname{Tr}X)\mathrm I_2-X,
+$$</p>
+<p>so the adjugate lies in $\mathbb{C}[X]\subseteq C(X)$ for every $X$. In particular a matrix commutes with its adjugate, and for an invertible $X$ the inverse $X^{-1}=\operatorname{adj}X/\det X$ lies in the commutant as well.</p>
+<p><strong>The dagger.</strong> The Hermitian conjugate lies in the commutant exactly when $X$ is normal:</p>
+<p>$$
+X^{\dagger}\in C(X)\iff XX^{\dagger}=X^{\dagger}X .
+$$</p>
+<p>For a normal matrix the spectral theorem writes $X=U\operatorname{diag}(\lambda_1,\lambda_2)U^{\dagger}$, and $X^{\dagger}=U\operatorname{diag}(\bar\lambda_1,\bar\lambda_2)U^{\dagger}$ is the Lagrange interpolation of the conjugate eigenvalues, hence a polynomial in $X$. For a non-normal matrix the two matrices $X$ and $X^{\dagger}$ do not commute, and the dagger lies outside the commutant.</p>
+<p><strong>The reading.</strong> The commutant is the polynomial algebra for every non-scalar matrix; the adjugate is the degree-one element that is always inside it, and the dagger is the degree-one element that is inside it exactly on the normal locus.</p>
+<h2 id="the-eigenbasis-and-its-ambiguity">The Eigenbasis and Its Ambiguity</h2>
+<p><strong>Proposition.</strong> Let $X$ have distinct eigenvalues. The matrices $C$ with $C^{-1}XC$ diagonal are exactly</p>
+<p>$$
+C=C_0D,\qquad D=\operatorname{diag}(d_+,d_-),\quad d_+d_-\neq0,
+$$</p>
+<p>where $C_0$ is one such matrix.</p>
+<p><em>Proof.</em> The columns of $C$ are eigenvectors, each determined up to a nonzero scalar; the two eigenspaces are one-dimensional and distinct. $\square$</p>
+<p><strong>Corollary.</strong> The eigenbasis is unique up to the independent rescaling of its two columns, and the ambiguity is the group of invertible diagonal matrices, which is the group of units of the commutant in the eigenbasis.</p>
+<p><strong>The degenerate analogue.</strong> For a non-scalar Jordan block there is no eigenbasis, but the commutant still acts: the matrices commuting with $X$ are $\{a\mathrm I_2+bN\}$, and the only unit is $a\neq0$ with $b$ arbitrary, the group $\mathbb{C}^\times\ltimes\mathbb{C}$.</p>
+<h2 id="the-double-centraliser">The Double Centraliser</h2>
+<p><strong>Theorem.</strong> For every $X$,</p>
+<p>$$
+C\bigl(C(X)\bigr)=\mathbb{C}[X].
+$$</p>
+<p><em>Proof.</em> The inclusion $\mathbb{C}[X]\subseteq C(C(X))$ is clear. Conversely, if $X$ is non-scalar, $C(X)=\mathbb{C}[X]$ is maximal commutative, so an element commuting with all of $\mathbb{C}[X]$ commutes with $X$ and lies in $C(X)=\mathbb{C}[X]$. If $X$ is scalar, $C(X)=M_2(\mathbb{C})$ and $C(M_2(\mathbb{C}))=\mathbb{C}\mathrm I_2=\mathbb{C}[X]$. $\square$</p>
+<p><strong>The module reading.</strong> The statement is the double centraliser theorem for the algebra $\mathbb{C}[X]$ acting on $\mathbb{C}^2$: the commutant in $M_2(\mathbb{C})$ of the commutant of $\mathbb{C}[X]$ is $\mathbb{C}[X]$ itself. In the algebra it is the same statement for $\mathbb{C}[\tilde X]$ acting on the defining module (<em>The Category of Modules</em>, §<em>Endomorphisms and the Standard Bimodule</em>).</p>
+<p><strong>The dimension count.</strong> The double centraliser does not enlarge the algebra: the chain</p>
+<p>$$
+\mathbb{C}[X]\subseteq C(C(X))=C(X)
+$$</p>
+<p>is an equality for non-scalar $X$, and for scalar $X$ it reads $\mathbb{C}\mathrm I_2=C(M_2(\mathbb{C}))\subsetneq M_2(\mathbb{C})=C(X)$.</p>
+<h2 id="summary">Summary</h2>
+<p>The commutant of a non-scalar $2\times2$ matrix is the plane $\mathbb{C}[X]=\operatorname{span}\{\mathrm I_2,X\}$, of complex dimension two, and the commutant of a scalar is the whole algebra. The plane is $\mathbb{C}\times\mathbb{C}$ for distinct eigenvalues, with the two spectral projectors as a basis of idempotents, and the dual numbers $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ for a non-scalar Jordan block. The double commutant returns $\mathbb{C}[X]$ in every case. The eigenbasis of a matrix with distinct eigenvalues is unique up to the independent rescaling of its two columns, and that ambiguity is the group of units of the commutant.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C(X)=\{Y:XY=YX\}$</td>
+<td>the commutant</td>
+</tr>
+<tr>
+<td>$C(C(X))$</td>
+<td>the double commutant</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[X]$</td>
+<td>the algebra of polynomials in $X$</td>
+</tr>
+<tr>
+<td>$m_X$</td>
+<td>the minimal polynomial of $X$</td>
+</tr>
+<tr>
+<td>$\Pi_\pm$</td>
+<td>the spectral projectors of a matrix with distinct eigenvalues</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the nilpotent part of a Jordan block, $N^2=0$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[\varepsilon]/(\varepsilon^2)$</td>
+<td>the dual numbers, the commutant of a non-scalar Jordan block</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-category-of-modules.html">The Category of Modules</a>, for the commutant of an element and the double centraliser theorem</li>
+<li><a href="m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html">$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</a>, for the eigenbasis and its construction</li>
+<li><a href="m2c-model-the-spectral-projectors.html">$M_2(\mathbb{C})$ Model : The Spectral Projectors</a>, for the projectors and the Jordan types</li>
+<li><a href="m2c-representation-the-functional-calculus.html">$M_2(\mathbb{C})$ Representation : The Functional Calculus</a>, for the use of the commutant in both reductions</li>
+<li><a href="idempotents.html">Idempotents</a>, for the spectral projectors in the algebra</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

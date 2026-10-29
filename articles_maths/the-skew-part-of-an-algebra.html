@@ -112,12 +112,7 @@ $$</p>
 <p><em>Proof.</em> $[h_2,h_3] \in K$ and $[h_1,K] \subseteq H$, so the triple lies in $H$; the Lie triple system axioms are the Jacobi identity applied three times.</p>
 <p><strong>Remark (the sign).</strong> The grading here is the compatible one and not the Koszul signed one: the bracket is the commutator, which is alternating on the whole algebra, so for two odd elements it is antisymmetric, whereas a super Lie bracket would be symmetric there. The signed reading, with the anticommutator on the odd part, is <em>Graded Lie Algebras and Lie Superalgebras</em>.</p>
 <h3 id="the-adjoint-action">The Adjoint Action</h3>
-<p><strong>Definition.</strong> For $x \in A$ the <strong>adjoint action</strong> is</p>
-<p>$$
-\operatorname{ad}_x : A \longrightarrow A, \qquad \operatorname{ad}_x(y) = [x,y] .
-$$</p>
-<p><strong>Proposition.</strong> For $x \in K(A)$ the operator $\operatorname{ad}_x$ preserves $K(A)$ and $H(A)$, is a derivation of $A$, and the map $x \mapsto \operatorname{ad}_x$ is a homomorphism of Lie algebras $K(A) \to \operatorname{Der}(A)$ whose kernel is $K(A) \cap Z(A)$.</p>
-<p><em>Proof.</em> The preservation is the proposition above. The derivation identity is $\operatorname{ad}_x(yz) = xyz - yzx = (xy - yx)z + y(xz - zx) = \operatorname{ad}_x(y)z + y\operatorname{ad}_x(z)$, using associativity. The bracket of the operators is $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x,\operatorname{ad}_y]$, which is the Jacobi identity; the kernel is the set of $x$ with $[x,y] = 0$ for all $y$, that is $K(A) \cap Z(A)$. The operator theory of $\operatorname{ad}_x$ is <em>The Commutator Operator</em>.</p>
+<p>The adjoint action $\operatorname{ad}_x(y)=[x,y]$ of a skew element, the fact that it preserves the two parts, and its identification with the inner derivations are operator theory: they are <em>The Commutator Operator</em>, §<em>The Adjoint Action</em>, and <em>Derivations and the Peirce Decomposition</em>. They are cited where needed and are not developed here.</p>
 <h3 id="the-module-structure-over-the-jordan-algebra">The Module Structure over the Jordan Algebra</h3>
 <p><strong>Proposition.</strong> Under the symmetrised product, $K(A)$ is stable under multiplication by $H(A)$,</p>
 <p>$$
@@ -165,7 +160,7 @@ $$</p>
 $$</p>
 <p>so $K(A)$ is isomorphic to $B$ with the commutator bracket, that is to the commutator algebra $B^-$ of <em>The Commutator Operator</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The <strong>skew part</strong> $K(A) = \{k : k^* = -k\}$ of an algebra with an involution is a linear subspace with $A = K(A)\oplus H(A)$, where $H(A) = \{h : h^* = h\}$ is the self-adjoint part; the involution acts as minus the identity on $K(A)$ and as the identity on $H(A)$. The skew part is closed under the commutator, so it is a <strong>Lie algebra</strong>, and $K(A)\oplus H(A)$ is a $\mathbb{Z}/2$-graded Lie algebra with the compatible grading, the even part $K(A)$ and the odd part $H(A)$; $H(A)$ is a <strong>Lie triple system</strong> under $\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$. The adjoint action $\operatorname{ad}_x$ of a skew element is a derivation that preserves the two parts, and the map $x \mapsto \operatorname{ad}_x$ is a homomorphism $K(A) \to \operatorname{Der}(A)$ with kernel $K(A)\cap Z(A)$. The symmetrised product makes $K(A)$ stable under multiplication by the Jordan algebra $H(A)$, so the pair carries the two products and is the Jordan pair of the involution. The skew part is the tangent space of the unitary group at the identity, and the Cayley transform produces unitary elements from skew ones. The standard examples are the alternating matrices with the transpose, whose Lie algebra is $\mathfrak{so}_n$, and the skew-Hermitian matrices with the conjugate transpose, whose Lie algebra is $\mathfrak{u}_n$. The involution and the decomposition are <em>Involutive Algebras</em>; the self-adjoint part and its Jordan structure are <em>The Self-Adjoint Part of an Algebra</em>; the Lie theory is <em>Lie Algebras</em> and <em>Graded Lie Algebras and Lie Superalgebras</em>; the unitary elements are <em>Unitary Elements of an Involutive Algebra</em>; and the operator is <em>The Commutator Operator</em>.</p>
+<p>The <strong>skew part</strong> $K(A) = \{k : k^* = -k\}$ of an algebra with an involution is a linear subspace with $A = K(A)\oplus H(A)$, where $H(A) = \{h : h^* = h\}$ is the self-adjoint part; the involution acts as minus the identity on $K(A)$ and as the identity on $H(A)$. The skew part is closed under the commutator, so it is a <strong>Lie algebra</strong>, and $K(A)\oplus H(A)$ is a $\mathbb{Z}/2$-graded Lie algebra with the compatible grading, the even part $K(A)$ and the odd part $H(A)$; $H(A)$ is a <strong>Lie triple system</strong> under $\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$. The adjoint action and the inner derivations are operator theory, cited in §<em>The Adjoint Action</em> and not developed here. The symmetrised product makes $K(A)$ stable under multiplication by the Jordan algebra $H(A)$, so the pair carries the two products and is the Jordan pair of the involution. The skew part is the tangent space of the unitary group at the identity, and the Cayley transform produces unitary elements from skew ones. The standard examples are the alternating matrices with the transpose, whose Lie algebra is $\mathfrak{so}_n$, and the skew-Hermitian matrices with the conjugate transpose, whose Lie algebra is $\mathfrak{u}_n$. The involution and the decomposition are <em>Involutive Algebras</em>; the self-adjoint part and its Jordan structure are <em>The Self-Adjoint Part of an Algebra</em>; the Lie theory is <em>Lie Algebras</em> and <em>Graded Lie Algebras and Lie Superalgebras</em>; the unitary elements are <em>Unitary Elements of an Involutive Algebra</em>; and the operator is <em>The Commutator Operator</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -202,10 +197,6 @@ $$</p>
 <tr>
 <td>$x \bullet y = \tfrac12(xy+yx)$</td>
 <td>the symmetrised product</td>
-</tr>
-<tr>
-<td>$\operatorname{ad}_x(y) = [x,y]$</td>
-<td>the adjoint action</td>
 </tr>
 <tr>
 <td>$\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$</td>

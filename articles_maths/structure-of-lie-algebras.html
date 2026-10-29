@@ -108,7 +108,7 @@ $$</p>
 <p><strong>Definition.</strong> The Lie algebra $\mathrm{G}$ is <strong>semisimple</strong> if $\mathrm{R}(\mathrm{G}) = 0$, equivalently if it has no nonzero solvable ideal; it is <strong>simple</strong> if it is nonabelian and has no nonzero proper ideal; and it is <strong>reductive</strong> if $\mathrm{R}(\mathrm{G}) = \mathrm{Z}(\mathrm{G})$.</p>
 <p><strong>Proposition.</strong> $\mathrm{G}$ is semisimple if and only if it has no nonzero abelian ideal. In particular every simple Lie algebra is semisimple, and the semisimple algebras are exactly the direct sums of simple algebras.</p>
 <p><strong>Proof.</strong> If $\mathrm{G}$ has a nonzero solvable ideal $\mathrm{A} \neq 0$, then the last nonzero term of its derived series is a nonzero abelian ideal of $\mathrm{G}$, because it is a characteristic ideal of $\mathrm{A}$ and $\mathrm{A}$ is an ideal. Conversely a nonzero abelian ideal is solvable, so its presence contradicts semisimplicity. The remaining statements follow from the decomposition theorem proved below.</p>
-<h2 id="the-adjoint-representation-and-derivations">The Adjoint Representation and Derivations</h2>
+<h2 id="the-adjoint-representation">The Adjoint Representation</h2>
 <h3 id="the-adjoint-map">The Adjoint Map</h3>
 <p><strong>Definition.</strong> For $x \in \mathrm{G}$ the <strong>adjoint map</strong> is $\operatorname{ad}_x : \mathrm{G} \to \mathrm{G}$, $\operatorname{ad}_x(y) = [x, y]$. The Jacobi identity is equivalent to</p>
 <p>$$
@@ -122,18 +122,8 @@ $$</p>
 <p>$$
 \ker(\operatorname{ad}) = \mathrm{Z}(\mathrm{G}), \qquad \operatorname{ad}(\mathrm{G}) \cong \mathrm{G}/\mathrm{Z}(\mathrm{G}).
 $$</p>
-<h3 id="derivations-of-a-lie-algebra">Derivations of a Lie Algebra</h3>
-<p><strong>Definition.</strong> A <strong>derivation</strong> of $\mathrm{G}$ is a linear map $D : \mathrm{G} \to \mathrm{G}$ satisfying the Leibniz rule with respect to the bracket,</p>
-<p>$$
-D([x, y]) = [D(x), y] + [x, D(y)].
-$$</p>
-<p>The derivations form a Lie algebra $\operatorname{Der}(\mathrm{G})$ under the commutator $[D_1, D_2] = D_1 D_2 - D_2 D_1$; the <strong>inner derivations</strong> are those of the form $\operatorname{ad}_x$, and they form the subspace $\operatorname{Inn}(\mathrm{G}) = \operatorname{ad}(\mathrm{G})$.</p>
-<p><strong>Proposition.</strong> $\operatorname{Inn}(\mathrm{G})$ is an ideal of $\operatorname{Der}(\mathrm{G})$, and the quotient $\operatorname{Out}(\mathrm{G}) = \operatorname{Der}(\mathrm{G})/\operatorname{Inn}(\mathrm{G})$ is the Lie algebra of <strong>outer derivations</strong>. For a semisimple $\mathrm{G}$ over a field of characteristic zero, $\operatorname{Der}(\mathrm{G}) = \operatorname{Inn}(\mathrm{G})$; every derivation is inner.</p>
-<p><strong>Proof.</strong> For $D \in \operatorname{Der}(\mathrm{G})$ and $x \in \mathrm{G}$ one computes</p>
-<p>$$
-[D, \operatorname{ad}_x](y) = D([x, y]) - [x, D(y)] = [D(x), y] = \operatorname{ad}_{D(x)}(y),
-$$</p>
-<p>so $[D, \operatorname{ad}_x] = \operatorname{ad}_{D(x)} \in \operatorname{Inn}(\mathrm{G})$, which is the ideal property. The vanishing of $\operatorname{Out}(\mathrm{G})$ for semisimple algebras is a standard theorem of the structure theory, proved by showing that a derivation orthogonal to the inner ones annihilates the Killing form and hence vanishes; the result is the infinitesimal form of the statement that the automorphism group of a semisimple algebra has Lie algebra $\operatorname{Der}(\mathrm{G}) = \mathrm{G}$.</p>
+<h3 id="the-derivations">The Derivations</h3>
+<p>The derivations of a Lie algebra, the inner derivations $\operatorname{ad}_x$, the ideal $\operatorname{Inn}(\mathrm{G})\trianglelefteq\operatorname{Der}(\mathrm{G})$ and the inner/outer dichotomy are operator theory: they are <em>Derivations of a Lie Algebra</em>, §<em>Inner and Outer Derivations</em>. They are cited where needed and are not developed here.</p>
 <h2 id="the-killing-form">The Killing Form</h2>
 <h3 id="definition-and-symmetry">Definition and Symmetry</h3>
 <p><strong>Definition.</strong> The <strong>Killing form</strong> of a finite-dimensional Lie algebra $\mathrm{G}$ is the bilinear form</p>
@@ -205,7 +195,7 @@ $$</p>
 <p><strong>A solvable non-nilpotent algebra.</strong> The two-dimensional algebra with basis $x, y$ and $[x, y] = x$ has radical equal to itself, radical series $\mathrm{G}^{(1)} = \langle x\rangle$, $\mathrm{G}^{(2)} = 0$, and lower central series $\mathrm{G}_1 = \langle x\rangle = \mathrm{G}_k$ for all $k \geq 1$; it is solvable of derived length $2$ and not nilpotent. Its Killing form is nonzero but degenerate, and the Levi decomposition is trivial, $\mathrm{G} = \mathrm{G} \rtimes 0$.</p>
 <h2 id="summary">Summary</h2>
 <p>A finite-dimensional Lie algebra over a field of characteristic zero has a largest solvable ideal, the radical $\mathrm{R}$, and a largest nilpotent ideal contained in it, the nilradical; the algebra is semisimple when the radical is zero, and simple when it is nonabelian with no nonzero proper ideal. Solvability and nilpotency are detected by the derived series and the lower central series, and the classes of solvable and nilpotent algebras are closed under subalgebras, quotients, and extensions.</p>
-<p>The adjoint map $x \mapsto \operatorname{ad}_x$ is a representation with kernel the centre, and its image is the ideal of inner derivations inside the Lie algebra of all derivations; for a semisimple algebra every derivation is inner. The Killing form $\kappa(x, y) = \operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$ is symmetric and invariant, its radical is an ideal, and Cartan's criteria give the two decisive tests: $\mathrm{G}$ is solvable exactly when $\kappa(\mathrm{G}, [\mathrm{G}, \mathrm{G}]) = 0$, and $\mathrm{G}$ is semisimple exactly when $\kappa$ is nondegenerate. A semisimple algebra is a direct sum of simple ideals, pairwise orthogonal for $\kappa$ and unique up to order, it is perfect, and by Weyl's theorem all its finite-dimensional representations are completely reducible. Every finite-dimensional Lie algebra of characteristic zero is a semidirect sum $\mathrm{R} \rtimes \mathrm{S}$ of its radical and a semisimple Levi factor.</p>
+<p>The adjoint map $x \mapsto \operatorname{ad}_x$ is a representation with kernel the centre; the derivations, the inner derivations and the inner/outer dichotomy are <em>Derivations of a Lie Algebra</em>. The Killing form $\kappa(x, y) = \operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$ is symmetric and invariant, its radical is an ideal, and Cartan's criteria give the two decisive tests: $\mathrm{G}$ is solvable exactly when $\kappa(\mathrm{G}, [\mathrm{G}, \mathrm{G}]) = 0$, and $\mathrm{G}$ is semisimple exactly when $\kappa$ is nondegenerate. A semisimple algebra is a direct sum of simple ideals, pairwise orthogonal for $\kappa$ and unique up to order, it is perfect, and by Weyl's theorem all its finite-dimensional representations are completely reducible. Every finite-dimensional Lie algebra of characteristic zero is a semidirect sum $\mathrm{R} \rtimes \mathrm{S}$ of its radical and a semisimple Levi factor.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -254,18 +244,6 @@ $$</p>
 <tr>
 <td>$\operatorname{ad}_x(y) = [x, y]$</td>
 <td>Adjoint map; $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x, \operatorname{ad}_y]$</td>
-</tr>
-<tr>
-<td>$\operatorname{Der}(\mathrm{G})$</td>
-<td>Lie algebra of derivations</td>
-</tr>
-<tr>
-<td>$\operatorname{Inn}(\mathrm{G}) = \operatorname{ad}(\mathrm{G})$</td>
-<td>Inner derivations, an ideal of $\operatorname{Der}(\mathrm{G})$</td>
-</tr>
-<tr>
-<td>$\operatorname{Out}(\mathrm{G})$</td>
-<td>Outer derivations, $\operatorname{Der}(\mathrm{G})/\operatorname{Inn}(\mathrm{G})$</td>
 </tr>
 <tr>
 <td>$\kappa(x, y) = \operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$</td>
