@@ -351,7 +351,7 @@ has dimension $1+5=6$; it is the row, the dual of the column. The minimal left i
 - [The Spin Chain and the Adjoint Decomposition of $M_6(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m6c.html), for the action of the Peirce $\mathfrak{su}_2$ on the carrier.
 - [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the chiral halves, which are not minimal ideals.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the rank-one matrices and the tensor product.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the rank-one case.
+- [The Category of Modules](the-category-of-modules.html), for the rank-one case.
 - [Morita Equivalence](morita-equivalence.html), for the equivalence of the module category with vector spaces.
 - [Noetherian and Artinian Rings](noetherian-and-artinian-rings.html), for the classification of the modules.
 - [The Geometry of the Idempotents of $M_6(\mathbb{C})$](the-geometry-of-the-idempotents-of-m6c.html), for the projective space of the minimal ideals.

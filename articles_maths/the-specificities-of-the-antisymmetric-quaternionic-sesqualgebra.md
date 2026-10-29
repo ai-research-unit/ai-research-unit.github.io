@@ -131,7 +131,7 @@ The block is the product of the twelve that is $\langle\cdot,\cdot\rangle_{\natu
 
 - [The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra](the-sesquilinear-pairing-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the Krein form, the pairing of a value with a third element and the invariant forms of the block.
 - [The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra](the-adjoint-operators-of-the-antisymmetric-quaternionic-sesqualgebra.html), for the left multiplication, its adjoint and the operator form of the law.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the model article of the construction, where the discriminating law is the left alternativity.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the model article of the construction, where the discriminating law is the left alternativity.
 - *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*, for the recurrence and the index that the law governs.
 - *Idempotents of the Antisymmetric Quaternionic Sesqualgebra* and [Norm and Invertibility in the Antisymmetric Quaternionic Sesqualgebra](norm-and-invertibility-in-the-antisymmetric-quaternionic-sesqualgebra.html), for the two deliveries on the diagonal.
 - *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*, for the emptiness of the roots of the nonzero central values.

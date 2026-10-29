@@ -14,16 +14,16 @@ The mathematics is proved in *The Spectrum* and *The Eigenbasis of a Spectrally 
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The characteristic polynomial, the discriminant $-4B^2$, the eigenvalues $Q_t\pm iB$ and the two spectral cases | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Spectral Criterion* and §*The Two Cases* |
+| The characteristic polynomial, the discriminant $-4B^2$, the eigenvalues $Q_t\pm iB$ and the two spectral cases | [The Spectrum](../articles_maths/the-spectrum.html), §*The Spectral Criterion* and §*The Two Cases* |
 | The norm $N=Q_t^2+B^2$, its multiplicativity and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), §*The Quaternionic Norm* and §*The $N$-degenerate case* |
-| The operator form $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $L_{\vec Q}^2=-B^2\mathrm{id}$ | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Operator Form of the Criterion* |
-| The spectral idempotents $\tilde\Pi_\pm$, the two-term writing and its uniqueness | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Spectral Decomposition* |
-| The eigenspaces of dimension two and the existence of an eigenbasis | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Eigenbasis of Left Multiplication* |
-| The three strata, their minimal polynomials, centralisers and normal forms | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), §*The Three Strata* |
-| The isotropic line, the canonical flag and the absence of a canonical complement | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Isotropic Line and the Flag* |
-| The normalised Peirce basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the unique expansion | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), §*The Eigenbasis* and §*Expansion of Every Biquaternion* |
-| The four sectors $\Sigma_{ij}$ and the independence of $N\neq0$ and $B^2\neq0$ | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), §*The Four Sectors* |
-| The similarity classification on the cone | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), §*The Similarity Classification* |
+| The operator form $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $L_{\vec Q}^2=-B^2\mathrm{id}$ | [The Spectrum](../articles_maths/the-spectrum.html), §*The Operator Form of the Criterion* |
+| The spectral idempotents $\tilde\Pi_\pm$, the two-term writing and its uniqueness | [The Spectrum](../articles_maths/the-spectrum.html), §*The Spectral Decomposition* |
+| The eigenspaces of dimension two and the existence of an eigenbasis | [The Spectrum](../articles_maths/the-spectrum.html), §*The Eigenbasis of Left Multiplication* |
+| The three strata, their minimal polynomials, centralisers and normal forms | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), §*The Three Strata* |
+| The isotropic line, the canonical flag and the absence of a canonical complement | [The Spectrum](../articles_maths/the-spectrum.html), §*The Isotropic Line and the Flag* |
+| The normalised Peirce basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ and the unique expansion | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html), §*The Eigenbasis* and §*Expansion of Every Biquaternion* |
+| The four sectors $\Sigma_{ij}$ and the independence of $N\neq0$ and $B^2\neq0$ | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), §*The Four Sectors* |
+| The similarity classification on the cone | [The Spectrum](../articles_maths/the-spectrum.html), §*The Similarity Classification* |
 | The exponential and the logarithm in the regular, nilpotent and unipotent regimes | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The Fourier kernel, the root and the root-adapted basis | [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html), §*The Fourier Kernel* and §*Factorization into Complex Fourier Transforms* |
 | The $*$-unitary character and the root criterion | [The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root](../articles_maths/the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html), §*Unitarity of the Character and the Root* |
@@ -607,10 +607,10 @@ The article does not claim that the three strata exhaust the physics of the cone
 
 ## Further Reading
 
-- [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the criterion, the two cases, the three strata and the flag.
-- [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the normalised Peirce basis, the unique expansion and the spinor interpretation.
+- [The Spectrum](../articles_maths/the-spectrum.html), for the criterion, the two cases, the three strata and the flag.
+- [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the normalised Peirce basis, the unique expansion and the spinor interpretation.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum, the eigenprojections and the matrix model.
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two conditions.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two conditions.
 - [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html), for the eigenbasis, the Peirce corners and the spinor structure of $\Sigma_{11}$.
 - [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html), for the unipotent stratum, its flag and its Peirce corners.
 - [The N-Degenerate, Spectrally Regular Sector](../articles_maths/the-n-degenerate-spectrally-regular-sector.html), for the massless zero divisors and the one live mode of $\Sigma_{01}$.

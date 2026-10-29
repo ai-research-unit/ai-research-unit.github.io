@@ -213,7 +213,7 @@ isotropic set appropriate to each.
 
 ## Further Reading
 
-- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the remarkable subspaces, their bases and their elements
+- [The Six Subspaces](the-six-subspaces.html), for the remarkable subspaces, their bases and their elements
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) and [Remarkable Subspaces under the General Quaternionic Algebra](remarkable-subspaces-under-the-general-quaternionic-algebra.html), for the staying-inside statement of the symmetrisation and for the same remarkable subspaces under the other $\mathbb{C}$-bilinear operations
 - [The Quaternion Form as a Product on the Symmetric Quaternionic Algebra](the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.html), for the restrictions of the form and their signatures
 - [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html), for the radical and the isotropic cone

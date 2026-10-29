@@ -69,7 +69,7 @@ It is a solvable ideal containing every solvable ideal. Similarly the **nilradic
 
 **Proof.** If $\mathrm{G}$ has a nonzero solvable ideal $\mathrm{A} \neq 0$, then the last nonzero term of its derived series is a nonzero abelian ideal of $\mathrm{G}$, because it is a characteristic ideal of $\mathrm{A}$ and $\mathrm{A}$ is an ideal. Conversely a nonzero abelian ideal is solvable, so its presence contradicts semisimplicity. The remaining statements follow from the decomposition theorem proved below.
 
-## The Adjoint Representation and Derivations
+## The Adjoint Representation
 
 ### The Adjoint Map
 
@@ -91,25 +91,9 @@ $$
 \ker(\operatorname{ad}) = \mathrm{Z}(\mathrm{G}), \qquad \operatorname{ad}(\mathrm{G}) \cong \mathrm{G}/\mathrm{Z}(\mathrm{G}).
 $$
 
-### Derivations of a Lie Algebra
+### The Derivations
 
-**Definition.** A **derivation** of $\mathrm{G}$ is a linear map $D : \mathrm{G} \to \mathrm{G}$ satisfying the Leibniz rule with respect to the bracket,
-
-$$
-D([x, y]) = [D(x), y] + [x, D(y)].
-$$
-
-The derivations form a Lie algebra $\operatorname{Der}(\mathrm{G})$ under the commutator $[D_1, D_2] = D_1 D_2 - D_2 D_1$; the **inner derivations** are those of the form $\operatorname{ad}_x$, and they form the subspace $\operatorname{Inn}(\mathrm{G}) = \operatorname{ad}(\mathrm{G})$.
-
-**Proposition.** $\operatorname{Inn}(\mathrm{G})$ is an ideal of $\operatorname{Der}(\mathrm{G})$, and the quotient $\operatorname{Out}(\mathrm{G}) = \operatorname{Der}(\mathrm{G})/\operatorname{Inn}(\mathrm{G})$ is the Lie algebra of **outer derivations**. For a semisimple $\mathrm{G}$ over a field of characteristic zero, $\operatorname{Der}(\mathrm{G}) = \operatorname{Inn}(\mathrm{G})$; every derivation is inner.
-
-**Proof.** For $D \in \operatorname{Der}(\mathrm{G})$ and $x \in \mathrm{G}$ one computes
-
-$$
-[D, \operatorname{ad}_x](y) = D([x, y]) - [x, D(y)] = [D(x), y] = \operatorname{ad}_{D(x)}(y),
-$$
-
-so $[D, \operatorname{ad}_x] = \operatorname{ad}_{D(x)} \in \operatorname{Inn}(\mathrm{G})$, which is the ideal property. The vanishing of $\operatorname{Out}(\mathrm{G})$ for semisimple algebras is a standard theorem of the structure theory, proved by showing that a derivation orthogonal to the inner ones annihilates the Killing form and hence vanishes; the result is the infinitesimal form of the statement that the automorphism group of a semisimple algebra has Lie algebra $\operatorname{Der}(\mathrm{G}) = \mathrm{G}$.
+The derivations of a Lie algebra, the inner derivations $\operatorname{ad}_x$, the ideal $\operatorname{Inn}(\mathrm{G})\trianglelefteq\operatorname{Der}(\mathrm{G})$ and the inner/outer dichotomy are operator theory: they are *Derivations of a Lie Algebra*, §*Inner and Outer Derivations*. They are cited where needed and are not developed here.
 
 ## The Killing Form
 
@@ -237,7 +221,7 @@ For $\mathrm{SL}(n, K) \subseteq \mathrm{GL}(n, K)$ the restriction is $\kappa(X
 
 A finite-dimensional Lie algebra over a field of characteristic zero has a largest solvable ideal, the radical $\mathrm{R}$, and a largest nilpotent ideal contained in it, the nilradical; the algebra is semisimple when the radical is zero, and simple when it is nonabelian with no nonzero proper ideal. Solvability and nilpotency are detected by the derived series and the lower central series, and the classes of solvable and nilpotent algebras are closed under subalgebras, quotients, and extensions.
 
-The adjoint map $x \mapsto \operatorname{ad}_x$ is a representation with kernel the centre, and its image is the ideal of inner derivations inside the Lie algebra of all derivations; for a semisimple algebra every derivation is inner. The Killing form $\kappa(x, y) = \operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$ is symmetric and invariant, its radical is an ideal, and Cartan's criteria give the two decisive tests: $\mathrm{G}$ is solvable exactly when $\kappa(\mathrm{G}, [\mathrm{G}, \mathrm{G}]) = 0$, and $\mathrm{G}$ is semisimple exactly when $\kappa$ is nondegenerate. A semisimple algebra is a direct sum of simple ideals, pairwise orthogonal for $\kappa$ and unique up to order, it is perfect, and by Weyl's theorem all its finite-dimensional representations are completely reducible. Every finite-dimensional Lie algebra of characteristic zero is a semidirect sum $\mathrm{R} \rtimes \mathrm{S}$ of its radical and a semisimple Levi factor.
+The adjoint map $x \mapsto \operatorname{ad}_x$ is a representation with kernel the centre; the derivations, the inner derivations and the inner/outer dichotomy are *Derivations of a Lie Algebra*. The Killing form $\kappa(x, y) = \operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$ is symmetric and invariant, its radical is an ideal, and Cartan's criteria give the two decisive tests: $\mathrm{G}$ is solvable exactly when $\kappa(\mathrm{G}, [\mathrm{G}, \mathrm{G}]) = 0$, and $\mathrm{G}$ is semisimple exactly when $\kappa$ is nondegenerate. A semisimple algebra is a direct sum of simple ideals, pairwise orthogonal for $\kappa$ and unique up to order, it is perfect, and by Weyl's theorem all its finite-dimensional representations are completely reducible. Every finite-dimensional Lie algebra of characteristic zero is a semidirect sum $\mathrm{R} \rtimes \mathrm{S}$ of its radical and a semisimple Levi factor.
 
 ## Summary of Notation
 
@@ -253,9 +237,6 @@ The adjoint map $x \mapsto \operatorname{ad}_x$ is a representation with kernel 
 | $\mathrm{N}(\mathrm{G})$ | Nilradical, the largest nilpotent ideal |
 | Semisimple, simple, reductive | $\mathrm{R} = 0$; nonabelian with no nonzero proper ideal; $\mathrm{R} = \mathrm{Z}(\mathrm{G})$ |
 | $\operatorname{ad}_x(y) = [x, y]$ | Adjoint map; $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x, \operatorname{ad}_y]$ |
-| $\operatorname{Der}(\mathrm{G})$ | Lie algebra of derivations |
-| $\operatorname{Inn}(\mathrm{G}) = \operatorname{ad}(\mathrm{G})$ | Inner derivations, an ideal of $\operatorname{Der}(\mathrm{G})$ |
-| $\operatorname{Out}(\mathrm{G})$ | Outer derivations, $\operatorname{Der}(\mathrm{G})/\operatorname{Inn}(\mathrm{G})$ |
 | $\kappa(x, y) = \operatorname{tr}(\operatorname{ad}_x\operatorname{ad}_y)$ | Killing form; symmetric, invariant |
 | $\mathrm{G}^{\perp}$ | Radical of $\kappa$; an ideal; nonzero iff $\mathrm{G}$ not semisimple |
 | $\mathrm{G} = \mathrm{R} \rtimes \mathrm{S}$ | Levi decomposition; $\mathrm{S}$ a semisimple Levi factor |

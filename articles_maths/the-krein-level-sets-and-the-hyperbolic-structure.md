@@ -132,7 +132,7 @@ The sign level sets of the general quaternionic sesquilinear form are the hyperb
 ## Further Reading
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form and its Gram matrix.
-- [K-Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null set and the cone.
+- [K-Regularity and Degeneracy in the Biquaternion Algebra](k-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null set and the cone.
 - [The Fundamental Symmetry of the Form](the-fundamental-symmetry-of-the-form.html), for the bridge $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q},J\tilde{Q}\rangle_{*}$.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$, its maximal compact part, its transitive actions and the symmetric space
 - [Hermitian Symmetric Spaces and the Bergman Metric](hermitian-symmetric-spaces-and-the-bergman-metric.html), for the general ball, its metric, its geodesics and its totally real slices

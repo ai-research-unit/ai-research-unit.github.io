@@ -371,9 +371,9 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the unit group.
-- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
-- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the spectral criterion, the discriminant and the spectral-degenerate cone.
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the Peirce corners.
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
+- [The Spectrum](the-spectrum.html), for the spectral criterion, the discriminant and the spectral-degenerate cone.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

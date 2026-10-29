@@ -6,7 +6,7 @@ The unit group of the biquaternion algebra is a real Lie group of real dimension
 
 This article develops the adjoint operator, the formula, the radical, the signature on the trace-free part, the invariance and the relation to the trace form. It is the matrix form of *Biquaternion Lie Group and Exponential Structure*, §*The Killing Form*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The Lie algebra is $M_2(\mathbb{C})$ read as a real vector space, with bracket $[X,Y]=XY-YX$; the trace is the complex trace, the real part is written $\operatorname{Re}$, and $X=\mathsf M_2(\tilde X)$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The Lie algebra is $M_2(\mathbb{C})$ read as a real vector space, with bracket $[X,Y]=XY-YX$; the trace is the complex trace, the real part is written $\operatorname{Re}$, and $X=\mathsf M_2(\tilde X)$.
 
 **Boundaries.** The Killing form of the algebra, its radical and its signature are *Biquaternion Lie Group and Exponential Structure*, §*The Killing Form*; the plain, quaternionic, Hermitian and Krein forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the trace pairing is *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*.
 
@@ -269,6 +269,6 @@ The Killing form of $\mathfrak{gl}_2(\mathbb{C})$ read over $\mathbb{R}$ is $\ka
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Killing form of the algebra and its signature
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the plain form and its signature
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the trace pairing
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-representation-the-centraliser-and-the-double-centraliser.html), for the commutant and the centre
+- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the commutant and the centre
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the automorphism group and its action
 - [Structure of Lie Algebras](structure-of-lie-algebras.html), for the general theory of the Killing form and semisimplicity

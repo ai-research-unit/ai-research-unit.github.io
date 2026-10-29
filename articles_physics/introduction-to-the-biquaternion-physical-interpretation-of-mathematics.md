@@ -27,7 +27,7 @@ Each article opens with a table of two columns. **Mathematical Content** names t
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The subspace, its basis and its defining involution | [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
+| The subspace, its basis and its defining involution | [The Six Subspaces](../articles_maths/the-six-subspaces.html) |
 | The norm, its signature and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 
 The rows follow the order in which the article uses the results. A row without a link is not allowed: the reader must be able to open the proof of every item the article interprets. A result that the corpus does not contain is named as missing, not written as if it were proved.
@@ -88,52 +88,52 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### The Algebra
 
-- [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html)
+- [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html)
 - [The Element, the Coordinates and the Conjugations](../articles_maths/the-element-the-coordinates-and-the-conjugations.html)
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html)
-- [The Six Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html)
-- [The Lattice of the Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html)
-- [The Three Eigenspace Decompositions](../articles_maths/decompositions-along-the-remarkable-subspaces.html)
+- [The Six Subspaces](../articles_maths/the-six-subspaces.html)
+- [The Subspaces and Their Relations](../articles_maths/the-subspaces-and-their-relations.html)
+- [The Three Eigenspace Decompositions](../articles_maths/the-three-eigenspace-decompositions.html)
 - [The Square of an Element](../articles_maths/the-square-of-an-element.html)
 - [Zero Divisors and Units](../articles_maths/zero-divisors-and-units.html)
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](../articles_maths/m2c-representation-the-matrix-product-and-the-algebra-structure.html)
-- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](../articles_maths/m4c-representation-the-matrix-product-and-the-algebra-structure.html)
-- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](../articles_maths/m2c-representation-the-six-subspaces-as-matrix-conditions.html)
-- [$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions](../articles_maths/m4c-representation-the-six-subspaces-as-matrix-conditions.html)
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](../articles_maths/m2c-model-the-product-the-trace-and-the-determinant.html)
+- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](../articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html)
+- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](../articles_maths/m2c-model-the-six-subspaces-as-matrix-conditions.html)
+- [$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions](../articles_maths/m4c-model-the-six-subspaces-as-matrix-conditions.html)
 
 #### The Frame
 
-- [Nilpotents](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html)
-- [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html)
-- [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-in-the-biquaternion-algebra.html)
+- [Nilpotents](../articles_maths/nilpotents.html)
+- [Idempotents](../articles_maths/idempotents.html)
+- [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](../articles_maths/spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html)
-- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
-- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
+- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
+- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](../articles_maths/m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html)
 
 #### The Modules
 
 - [The Regular Module](../articles_maths/the-regular-module.html)
 - [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html)
-- [The Category of Modules](../articles_maths/modules-over-the-biquaternion-algebra.html)
+- [The Category of Modules](../articles_maths/the-category-of-modules.html)
 - [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html)
 
 #### The Element
 
-- [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
-- [$M_2(\mathbb{C})$ Model : The Spectral Projectors](../articles_maths/m2c-representation-the-spectral-projectors-and-the-nilpotents.html)
-- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](../articles_maths/m4c-representation-the-spectral-projectors-and-the-nilpotents.html)
+- [The Spectrum](../articles_maths/the-spectrum.html)
+- [$M_2(\mathbb{C})$ Model : The Spectral Projectors](../articles_maths/m2c-model-the-spectral-projectors.html)
+- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](../articles_maths/m4c-model-the-spectral-projectors.html)
 - [The Centraliser](../articles_maths/the-centraliser.html)
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](../articles_maths/m2c-representation-the-centraliser-and-the-double-centraliser.html)
-- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](../articles_maths/m4c-representation-the-centraliser-and-the-double-centraliser.html)
-- [The Semisimple–Nilpotent Split](../articles_maths/the-jordan-chevalley-decomposition-of-a-biquaternion.html)
-- [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html)
-- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html)
-- [$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m4c-representation-the-eigenbasis-and-the-diagonalising-matrix.html)
+- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](../articles_maths/m2c-model-the-centraliser-and-the-double-centraliser.html)
+- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](../articles_maths/m4c-model-the-centraliser-and-the-double-centraliser.html)
+- [The Semisimple–Nilpotent Split](../articles_maths/the-semisimple-nilpotent-split.html)
+- [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html)
+- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
+- [$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
 - [Worked Examples of Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-eigenbasis-of-a-biquaternion.html)
-- [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html)
-- [$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix](../articles_maths/m2c-representation-the-jordan-basis-and-the-jordanising-matrix.html)
-- [$M_4(\mathbb{C})_L$ Model : The Jordan Basis and the Jordanising Matrix](../articles_maths/m4c-representation-the-jordan-basis-and-the-jordanising-matrix.html)
-- [Square Roots of an Element](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html)
+- [$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix](../articles_maths/m2c-model-the-jordan-basis-and-the-jordanising-matrix.html)
+- [$M_4(\mathbb{C})_L$ Model : The Jordan Basis and the Jordanising Matrix](../articles_maths/m4c-model-the-jordan-basis-and-the-jordanising-matrix.html)
+- [Square Roots of an Element](../articles_maths/square-roots-of-an-element.html)
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](../articles_maths/m2c-representation-worked-examples.html)
 - [$M_4(\mathbb{C})_L$ Representation : Worked Examples](../articles_maths/m4c-representation-worked-examples.html)
 
@@ -171,7 +171,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### The Spectral Strata and the N Norm
 
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html)
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html)
 - [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html)
 - [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html)
 - [The N-Degenerate, Spectrally Regular Sector](../articles_maths/the-n-degenerate-spectrally-regular-sector.html)
@@ -180,9 +180,9 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Algebra with the K Norm
 
-- [K-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
-- [The K-Regular Sector](../articles_maths/the-krein-norm-regular-sector.html)
-- [The K-Degenerate Sector](../articles_maths/the-krein-norm-degenerate-sector.html)
+- [K-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/k-regularity-and-degeneracy-in-the-biquaternion-algebra.html)
+- [The K-Regular Sector](../articles_maths/the-k-regular-sector.html)
+- [The K-Degenerate Sector](../articles_maths/the-k-degenerate-sector.html)
 
 #### Remarkable Subspaces and the Forms
 
@@ -193,20 +193,20 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 #### Operators
 
-- [Introduction to the Operators of the Biquaternion Algebra](../articles_maths/the-four-general-products-and-operators.html)
+- [Introduction to the Operators of the Biquaternion Algebra](../articles_maths/introduction-to-the-operators-of-the-biquaternion-algebra.html)
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
 - [The Four Adjoints of the Biquaternion Algebra in Examples](../articles_maths/the-four-adjoints-of-the-biquaternion-algebra-in-examples.html)
 - [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html)
 - [One-Sided Operators on the Biquaternion Algebra](../articles_maths/one-sided-operators-on-the-biquaternion-algebra.html)
 - [Operators of the Polar Word: The Common Framework](../articles_maths/operators-of-the-polar-word-the-common-framework.html)
-- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html)
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html)
-- [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html)
-- [The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-degenerate-biquaternion.html)
-- [The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html)
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html)
-- [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/one-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
+- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html)
+- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html)
+- [The One-Sided Operators of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-regular-spectrally-degenerate-biquaternion.html)
+- [The Two-Sided Operator of a N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-two-sided-operator-of-a-n-regular-spectrally-degenerate-biquaternion.html)
+- [The One-Sided Operators of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-degenerate-spectrally-regular-biquaternion.html)
+- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-operator-of-a-n-degenerate-spectrally-regular-biquaternion.html)
+- [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
+- [The Two-Sided Operator of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-two-sided-operator-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
 - [The Sandwich in the $M_2(\mathbb{C})$ Model](../articles_maths/the-sandwich-in-the-m2c-model.html)
 - [The Sandwich in the $M_4(\mathbb{C})_L$ Model](../articles_maths/the-sandwich-in-the-m4c-l-model.html)
 

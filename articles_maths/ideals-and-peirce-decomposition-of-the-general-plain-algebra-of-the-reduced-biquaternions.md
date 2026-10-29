@@ -392,7 +392,7 @@ The general plain algebra $(\mathbb{B}_{\mathrm{r}},\cdot)$ is commutative, so i
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition, the corner subalgebras and the matrix units.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for the radical and the idempotents of an algebra.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the simple companion with its matrix-unit corners.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the simple companion with its matrix-unit corners.
 - [The Specificities of the Algebra of the Reduced Biquaternions](the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the criterion that makes the theory available.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotents.
 - [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit group complementing the ideals.

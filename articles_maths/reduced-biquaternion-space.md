@@ -192,7 +192,7 @@ The algebra is the complexification of the split-complex numbers $\mathbb{D}$ an
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), below this article, for the four general products and the forms and norms they carry.
 - [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the multiplication read as an algebra.
 - [Split-Complex Algebra](split-complex-algebra.html), for the real companion $\mathbb{D}$, the same algebra over $\mathbb{R}$.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the non-commutative companion $\mathbb{B}$, whose three quaternion units collapse here to the single hyperbolic unit $j$.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the non-commutative companion $\mathbb{B}$, whose three quaternion units collapse here to the single hyperbolic unit $j$.
 - [Split-Biquaternion Algebra](split-biquaternion-algebra.html), for the split complex companion $\mathbb{H}_{\mathbb{D}}$.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the product structure of the non-commutative companion, whose three quaternion units collapse here to the single hyperbolic unit $j$.
 - James Cockle, "On a new imaginary in algebra", *Philosophical Magazine* **34** (1849) 37–47, for the tessarines.

@@ -39,9 +39,9 @@ $$
 \boxed{\;\{x,y,z\} = (x\bullet y)\bullet z+(z\bullet y)\bullet x-(x\bullet z)\bullet y\;}
 $$
 
-makes $J$ a Jordan triple system, and the linear map $y\mapsto \{x,y,x\}$ on $J$ is twice the quadratic representation $\mathrm{Jor}_x$, $\{x,y,x\} = 2\,\mathrm{Jor}_x(y)$.
+makes $J$ a Jordan triple system, and the quadratic map $\mathrm{Jor}_x$ satisfies $\{x,y,x\} = 2\,\mathrm{Jor}_x(y)$.
 
-*Proof.* The symmetry in $x$ and $z$ is the commutativity of $\bullet$; the Jordan triple identity is the linearisation of the Jordan identity $[L_x,L_{x^2}] = 0$, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2\mathrm{Jor}_x(y)$ is the defining formula $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$ read on $y$.
+*Proof.* The symmetry in $x$ and $z$ is the commutativity of $\bullet$; the Jordan triple identity is the linearisation of the Jordan identity, which the binary Jordan identity ensures. The identification $\{x,y,x\} = 2\mathrm{Jor}_x(y)$ is the defining formula $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$ read on $y$.
 
 **Definition (morphism).** A **homomorphism** of Jordan triple systems is an $R$-linear map $\varphi$ with $\varphi\{x,y,z\} = \{\varphi x,\varphi y,\varphi z\}$; an **anti-homomorphism** reverses the order of the arguments, and $T$ with the reversed arguments is the **opposite** triple.
 
@@ -57,9 +57,9 @@ $$
 
 It is **linear** when $\varsigma = \mathrm{id}$ and **conjugate-linear** otherwise; a **Jordan triple with involution** is a pair $(T,\sigma)$.
 
-**Theorem.** A $\varsigma$-semilinear involution of a Jordan triple is a bijective morphism of the ternary structure, its restriction to the scalar copy of $R$ is $\varsigma$, and it commutes with the operator $y\mapsto\{x,y,x\}$: $\sigma\{x,y,x\} = \{\sigma x,\sigma y,\sigma x\}$.
+**Theorem.** A $\varsigma$-semilinear involution of a Jordan triple is a bijective morphism of the ternary structure, its restriction to the scalar copy of $R$ is $\varsigma$, and it commutes with the map $y\mapsto\{x,y,x\}$: $\sigma\{x,y,x\} = \{\sigma x,\sigma y,\sigma x\}$.
 
-*Proof.* The preservation of the triple product is the third axiom; bijectivity is $\sigma^2 = \mathrm{id}$; the commuting with the outer operator is the product preservation read with the outer variables equal.
+*Proof.* The preservation of the triple product is the third axiom; bijectivity is $\sigma^2 = \mathrm{id}$; the commuting with the outer map is the product preservation read with the outer variables equal.
 
 ### The Fixed Sub-Triple
 

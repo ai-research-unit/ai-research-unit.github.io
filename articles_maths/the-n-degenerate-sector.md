@@ -415,10 +415,10 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two factors and the Hermitian factor on the cone
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the non-pure stratum as a cell
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the pure stratum as a cell
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link, the projectivisation and the singularity
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the idempotents and the Peirce corners
-- [Nilpotents](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the pure stratum
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the idempotents and the Peirce corners
+- [Nilpotents](nilpotents.html), for the pure stratum
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the rank-one matrices and the determinant
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the complement of the cone
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401--416.

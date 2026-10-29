@@ -6,7 +6,7 @@ The Killing form of the biquaternion algebra is the invariant bilinear form of i
 
 This article develops the adjoint operator, the formula, the radical, the signature, the invariance and the relation to the trace form. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Killing Form*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. The Lie algebra is $\mathbb{B}$ with the bracket $[X,Y]=XY-YX$, read over $\mathbb{C}$ and over $\mathbb{R}$. Write $X=\mathsf{M}_4(\tilde X)$, $Y=\mathsf{M}_4(\tilde Y)$, and $\vec X\cdot\vec Y=X_xY_x+X_yY_y+X_zY_z$. The complex trace is written $\operatorname{tr}$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The Lie algebra is $\mathbb{B}$ with the bracket $[X,Y]=XY-YX$, read over $\mathbb{C}$ and over $\mathbb{R}$. Write $X=\mathsf{M}_4(\tilde X)$, $Y=\mathsf{M}_4(\tilde Y)$, and $\vec X\cdot\vec Y=X_xY_x+X_yY_y+X_zY_z$. The complex trace is written $\operatorname{tr}$.
 
 **Boundaries.** The Killing form of the algebra is *Biquaternion Lie Group and Exponential Structure*, §*The Killing Form*; the four forms are *$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces*; the trace pairing is *$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Killing Form*.
 

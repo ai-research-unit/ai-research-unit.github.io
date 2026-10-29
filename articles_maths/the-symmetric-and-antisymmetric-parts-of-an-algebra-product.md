@@ -392,13 +392,7 @@ The split is used at several places in the corpus, and each use is recorded in t
 
 **The commutator algebra and the special Jordan algebra.** For an associative algebra the two halves are the source of the corpus's Lie and Jordan examples: the commutator algebra $A^{(-)}$ is a Lie algebra, by the theorem of §*The Associator Criterion*, and the symmetrised algebra $A^{+}$ is the special Jordan algebra of *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*. The names are the corpus's: $A^{+}$ from *Jordan Algebras*, and $A^{(-)}$ from *The Commutator Operator*, with $A^-$ the variant of *Associative Algebras*; they denote the algebras written $A^{\wedge}$ and $A^{\bullet}$ above. The dichotomy between the special and the exceptional Jordan algebras is stated in *Special and Exceptional Jordan Algebras*, not here.
 
-**The operator layer.** The two halves are the symmetrisation and the antisymmetrisation of the one-sided multiplications. With $L(x)(y) = xy$ and $R(x)(y) = yx$ the left and right multiplications of *Left and Right Multiplication*,
-
-$$
-x \bullet y = \tfrac{1}{2}(L(x) + R(x))(y), \qquad x \wedge y = \tfrac{1}{2}(L(x) - R(x))(y),
-$$
-
-so the symmetric half is the balanced multiplication and the antisymmetric half is half the **commutator operator** $\mathrm{ad}_x = L(x) - R(x)$ of *The Commutator Operator*. That operator is the inner derivation of the algebra when the product is associative, and it is the reason the bracket belongs to the operator layer rather than to the product. In a unital algebra the sandwich operator of *The Sandwich Operator on an Algebra* recovers the commutator as $T_{a,b}(1) - T_{b,a}(1) = [a,b]$.
+**The operator layer.** The two halves are the symmetrisation and the antisymmetrisation of the one-sided multiplications. That reading, with the left and right multiplications $L(x)$ and $R(x)$, the commutator operator $\operatorname{ad}_x=L(x)-R(x)$ and its property of being an inner derivation in the associative case, is *Left and Right Multiplication*, *The Commutator Operator* and *The Sandwich Operator on an Algebra*; it is cited here and not developed.
 
 **The compatibility and the ternary product.** In the associative case the bracket is not only a Lie bracket and the bullet product not only a Jordan product: the bracket is a derivation of the bullet product, $[x, y \bullet z] = [x,y] \bullet z + y \bullet [x,z]$, and the two halves satisfy the **fundamental identity** that accompanies it,
 
@@ -448,7 +442,6 @@ The passage to the opposite algebra leaves the symmetric half fixed and reverses
 | $n$, $m$ | The projections of a product onto its symmetric and its antisymmetric part, $n^2 = n$, $m^2 = m$, $pq = 0$, $n+m = \mathrm{id}$ |
 | $\Sigma$ | The unhalved symmetrisation $\Sigma(m)(x,y) = m(x,y) + m(y,x)$, which satisfies $\Sigma^2 = 2\Sigma$ and is used in §*The Collapse in Characteristic 2* |
 | Lie-admissible, Jordan-admissible | $A^{\wedge}$ satisfies Jacobi; $A^{\bullet}$ satisfies the Jordan identity |
-| $L(x)$, $R(x)$, $\mathrm{ad}_x$, $T_{a,b}$ | Left and right multiplication, the commutator operator $L(x) - R(x)$, the sandwich $T_{a,b}(x) = axb$ |
 
 ## Further Reading
 

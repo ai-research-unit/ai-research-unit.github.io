@@ -163,4 +163,4 @@ The characteristic polynomial $X^2-2tX+M$ separates the three cells; the minimal
 - [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, multiplicativity, the inverse and the three-way classification.
 - [Complex Algebra](complex-algebra.html), for the algebra and its real and imaginary subspaces.
 - [Modulus–Unit Polar Decomposition of Complex Numbers](modulus-unit-polar-decomposition-of-complex-numbers.html), for the unit circle and the polar form.
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four-sector case in the biquaternion algebra.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four-sector case in the biquaternion algebra.

@@ -322,7 +322,7 @@ The two switches of the twisted right factor, and the four forms that they retur
 
 ## Further Reading
 
-- [Introduction to the Operators of the Biquaternion Algebra](the-four-general-products-and-operators.html), for the products-to-operators bridge that the adjoints above serve, for the theorem that the plain product gives minus the reflection and the sign gives the reflection, and for the two switches $\sigma$ and $\alpha$ that the last table of this article names
+- [Introduction to the Operators of the Biquaternion Algebra](introduction-to-the-operators-of-the-biquaternion-algebra.html), for the products-to-operators bridge that the adjoints above serve, for the theorem that the plain product gives minus the reflection and the sign gives the reflection, and for the two switches $\sigma$ and $\alpha$ that the last table of this article names
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms the four adjoints belong to, their Gram matrices, their signatures and their notation table of the four adjoints
 - [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their group and their linearity
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the Conway operator basis on which the associate reverses the factors, and the regular representations $L_a$ and $R_b$ that transpose into one another

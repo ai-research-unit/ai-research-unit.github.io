@@ -114,7 +114,7 @@ and $\breve Q^{\flat}=-\breve Q^{*}=(-q_{\blacktriangle},q'_{\blacktriangle},q_{
 
 **The coordinate planes of the four-vector representation are the remarkable subspaces.**
 
-The fixed and anti-fixed spaces of the three conjugations are the coordinate planes of the real basis: the complex line $\mathbb{C}=\mathbb{R}\{1,i\}$ and its companion $\mathbb{C}j=\mathbb{R}\{j,ij\}$ of the tessarine sign, the planes $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ of the bar, and the planes $\mathbb{R}\{1,ij\}$ and $\mathbb{R}\{i,j\}$ of the star. Their defining equations, bases, dimensions and closure under the multiplication are the tables of *Introduction to the Remarkable Subspaces of the Reduced Biquaternions*, *The Three Eigenspace Decompositions* and *The Lattice of the Subspaces*, and the four lines $\mathbb{R}$, $\mathbb{R}i$, $\mathbb{R}j$ and $\mathbb{R}ij$ are the **atoms** of the quadruple, the common eigenlines of the two involutions.
+The fixed and anti-fixed spaces of the three conjugations are the coordinate planes of the real basis: the complex line $\mathbb{C}=\mathbb{R}\{1,i\}$ and its companion $\mathbb{C}j=\mathbb{R}\{j,ij\}$ of the tessarine sign, the planes $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ of the bar, and the planes $\mathbb{R}\{1,ij\}$ and $\mathbb{R}\{i,j\}$ of the star. Their defining equations, bases, dimensions and closure under the multiplication are the tables of *Introduction to the Remarkable Subspaces of the Reduced Biquaternions*, *The Three Eigenspace Decompositions* and *The Subspaces and Their Relations*, and the four lines $\mathbb{R}$, $\mathbb{R}i$, $\mathbb{R}j$ and $\mathbb{R}ij$ are the **atoms** of the quadruple, the common eigenlines of the two involutions.
 
 ## The Algebraic Norms in Coordinates
 
@@ -181,4 +181,4 @@ The reduced biquaternion element is a real quadruple $\breve Q=(q_{\blacktriangl
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), for the multiplication table in the abstract.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the conjugations and their fixed spaces.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), for the four products and the norms.
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the coordinate planes.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the coordinate planes.

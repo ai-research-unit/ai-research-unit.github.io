@@ -18,8 +18,8 @@ The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composit
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The roots of $+1$, the halving map and the idempotents | [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
-| Orthogonality, completeness, primitivity and the Peirce decomposition | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-in-the-biquaternion-algebra.html) |
+| The roots of $+1$, the halving map and the idempotents | [Idempotents](../articles_maths/idempotents.html) |
+| Orthogonality, completeness, primitivity and the Peirce decomposition | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The positive cone, the order interval and its extreme points | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
 | The plain form and the Hilbert–Schmidt pairing (the same on $\mathbb{M}_+$, with $\operatorname{Tr}=2\operatorname{Sc}$) | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
 | The $*$-unitary group and the matrix-unitary condition | [The Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html) |
@@ -216,8 +216,8 @@ The nontrivial Hermitian idempotents are the pure states and the Hermitian roots
 
 ## Further Reading
 
-- [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification, the halving map and the pair map.
-- [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-in-the-biquaternion-algebra.html), for orthogonality, primitivity and the Peirce components.
+- [Idempotents](../articles_maths/idempotents.html), for the classification, the halving map and the pair map.
+- [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html), for orthogonality, primitivity and the Peirce components.
 - [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html), for the order interval and its extreme points.
 - [The Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), for the $*$-unitary group and the matrix-unitary condition.
 - [Tensor Products of Algebras](../articles_maths/tensor-products-of-algebras.html), for $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$.

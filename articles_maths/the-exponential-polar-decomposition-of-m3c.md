@@ -337,4 +337,4 @@ $$
 - [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for the right polar decomposition and the singular case.
 - [The Exponential and the Lie Group of $M_3(\mathbb{C})$](the-exponential-and-the-lie-group-of-m3c.html), for the exponential and its image.
 - [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the Hermitian cone and the star.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the split comparison.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the split comparison.

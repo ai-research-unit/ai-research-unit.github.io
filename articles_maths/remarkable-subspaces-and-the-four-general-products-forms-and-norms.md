@@ -14,7 +14,7 @@ The chain decides what each level can see. The **product** is the finest object:
 
 Two facts organise the article. First, the four products have the **same value set** on each subspace, because the two conjugations that distinguish them preserve every subspace of the list; the four differ in the structure they leave on the value, not in where they send a pair. Second, the symmetrisation and the bracket close on more subspaces than the product; the symmetrisation closes on the same subspaces for all four products, while the bracket closure depends on the product, and the Jordan and Jacobi identities decide which closures are algebras. The result is a small table of algebras, carried by six subspaces and four products, and it is stated in $\S$*The Four General Products* and justified subspace by subspace.
 
-The article assumes the algebra and the conjugations of *The Biquaternion Algebra* and the subspaces, bases and dimensions of *The Six Subspaces*. The products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*; the forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the two halves of a product are *Symmetric and Antisymmetric Decomposition of the Four General Products*; and the coordinate blocks are *The Lattice of the Subspaces*. None of that is restated. What the article adds is the reading of the chain on the six subspaces, the common value set, the collapse patterns, the real and imaginary parts of the restrictions, the signatures, and the separation the subspaces impose on the four norms. The physical interpretation of the two sectors is deferred to *The Informational Sector: States, Observables and Probability* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and is recalled only in $\S$*The Material Interpretation*. The article replaces the three earlier articles that treated the four general products, the four forms and the four algebraic norms on the remarkable subspaces separately.
+The article assumes the algebra and the conjugations of *The Biquaternion Algebra* and the subspaces, bases and dimensions of *The Six Subspaces*. The products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*; the forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the two halves of a product are *Symmetric and Antisymmetric Decomposition of the Four General Products*; and the coordinate blocks are *The Subspaces and Their Relations*. None of that is restated. What the article adds is the reading of the chain on the six subspaces, the common value set, the collapse patterns, the real and imaginary parts of the restrictions, the signatures, and the separation the subspaces impose on the four norms. The physical interpretation of the two sectors is deferred to *The Informational Sector: States, Observables and Probability* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and is recalled only in $\S$*The Material Interpretation*. The article replaces the three earlier articles that treated the four general products, the four forms and the four algebraic norms on the remarkable subspaces separately.
 
 ## Notational Conventions
 
@@ -31,7 +31,7 @@ The six subspaces and their real bases are these.
 | $\mathbb{M}_+$ | $Q_t\in\mathbb{R}$, $Q_k\in i\mathbb{R}$ | $e_t,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$ | $4$ | $A_1\oplus B_2$ |
 | $\mathbb{M}_-$ | $Q_t\in i\mathbb{R}$, $Q_k\in\mathbb{R}$ | $ie_t,\ \vec e_x,\ \vec e_y,\ \vec e_z$ | $4$ | $A_2\oplus B_1$ |
 
-The four **coordinate blocks** of *The Lattice of the Subspaces* are
+The four **coordinate blocks** of *The Subspaces and Their Relations* are
 
 $$
 A_1=\mathbb{R}e_t,\qquad A_2=\mathbb{R}(ie_t),\qquad
@@ -249,7 +249,7 @@ The signatures are these.
 
 ## The Centre Subspace
 
-**The centre is both a Jordan algebra and a Lie algebra, and it is the only subspace that is a Lie algebra for all four products.** A central element is $Ae_t$ with $A\in\mathbb{C}$. The subspace is the fixed set of the natural conjugation ${}^{\natural}$, of real dimension two and complex dimension one, and it is the centre of the algebra. In the blocks of *The Lattice of the Subspaces* it is $A_1\oplus A_2$.
+**The centre is both a Jordan algebra and a Lie algebra, and it is the only subspace that is a Lie algebra for all four products.** A central element is $Ae_t$ with $A\in\mathbb{C}$. The subspace is the fixed set of the natural conjugation ${}^{\natural}$, of real dimension two and complex dimension one, and it is the centre of the algebra. In the blocks of *The Subspaces and Their Relations* it is $A_1\oplus A_2$.
 
 ### The Four General Products
 
@@ -858,8 +858,8 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four products, their coordinate rules, their relations and their comparison.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms and the algebraic norms themselves, their Gram matrices, their isometry groups and their separation.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve operations, the two exchanges and the Jordan and Jacobi failures used here.
-- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the six subspaces, their defining conditions, their bases, their dimensions and their role.
-- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the coordinate blocks, the pairwise intersections, the sums and the three decompositions.
+- [The Six Subspaces](the-six-subspaces.html), for the six subspaces, their defining conditions, their bases, their dimensions and their role.
+- [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the coordinate blocks, the pairwise intersections, the sums and the three decompositions.
 - [The Sesquilinear Symmetrised Product](the-sesquilinear-symmetrised-product.html) and [The Sesquilinear Commutator](the-sesquilinear-commutator.html), for the plain reading's own halves.
 - [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html), for the convention of the four pairings, the four names and the pairs, and for the interpretations of the four on the algebra and on the material sector.
 - [The Four General Products: Composition, Probability, Causality, Gauge](../articles_physics/the-four-general-products-composition-probability-causality-gauge.html), for the physical interpretations of the four forms and their signature table on the remarkable subspaces.

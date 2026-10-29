@@ -150,7 +150,7 @@ Consequently the minimal polynomial separates exactly the four sectors and adds 
 
 *Proof.* The coefficients $2t$ and $q\bar q$ give $t$ and $b^2=t^2-q\bar q$; the eigenvalues $t\pm b$ follow up to order. If $b\neq0$, the minimal polynomial is $p_q$; if $b=0$, it is $X-t$ and its square is $p_q$. The four root patterns are two distinct non-zero roots, two distinct roots with one zero, a double non-zero root, and a double root at zero; they are the four sectors.
 
-In the biquaternion algebra, as *[The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html)* proves, the minimal polynomial refines the degenerate cone into a scalar, a nilpotent and a unipotent stratum, and the last two are defective. In $\mathbb{D}$ no refinement exists, because the algebra is reduced and every element is semisimple.
+In the biquaternion algebra, as *[The Spectrum](the-spectrum.html)* proves, the minimal polynomial refines the degenerate cone into a scalar, a nilpotent and a unipotent stratum, and the last two are defective. In $\mathbb{D}$ no refinement exists, because the algebra is reduced and every element is semisimple.
 
 ## The Place of the Case Among the Algebras of the Corpus
 

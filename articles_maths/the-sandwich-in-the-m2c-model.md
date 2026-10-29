@@ -12,7 +12,7 @@ In the matrix model it is the congruence $X\mapsto MXM^{\dagger}$. On the anti-H
 
 This article develops the sandwich in the matrix model. It is the matrix form of *The Polar Decomposition and Remarkable Subspaces*, §*The Action on the Two Halves* and §*Which Subspaces the Sandwich Preserves*, and the $2\times2$ counterpart of *The Sandwich in the $M_4(\mathbb{C})_L$ Model*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian matrices, and $\mathbb{M}_-$, the anti-Hermitian matrices. The quaternionic norm is $N=\det M$. The modulus is $r=|\det M|^{1/2}$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian matrices, and $\mathbb{M}_-$, the anti-Hermitian matrices. The quaternionic norm is $N=\det M$. The modulus is $r=|\det M|^{1/2}$.
 
 **Boundaries.** The sandwich as an operator, its kernel and its image are *Operators of the Polar Word: The Common Framework*; the polar decomposition of the element is *The Polar Decomposition of a Biquaternion*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the matrix polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
@@ -186,6 +186,6 @@ The sandwich $\Theta_Q(X)=QXQ^{*}$ is the matrix congruence $MXM^{\dagger}$. It 
 - [Operators of the Polar Word: The Common Framework](operators-of-the-polar-word-the-common-framework.html), for the sandwich as an operator
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the factors
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the matrix factors
-- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the subspaces
+- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the subspaces
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group
 - [Quadratic Forms and Polarisation](quadratic-forms-and-polarisation.html), for the congruence

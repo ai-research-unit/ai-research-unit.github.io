@@ -345,7 +345,7 @@ $$
 M_2:\mathbb B\longrightarrow M_2(\mathbb C),\qquad M_2(e_t)=I,\qquad M_2(\vec e_k)=-i\sigma_k,
 $$
 
-with $\sigma_k$ the Pauli matrices, and the isomorphism is one of complex algebras, not only of real ones (*$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*). The determinant is the biquaternion norm,
+with $\sigma_k$ the Pauli matrices, and the isomorphism is one of complex algebras, not only of real ones (*$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*). The determinant is the biquaternion norm,
 
 $$
 \det M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},
@@ -573,5 +573,5 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 - *Exponential Polar Decomposition of Biquaternions*, for the same four factors read as exponentials, with the two logarithms and the boundary limits at the cone.
 - *The Quaternion Pairing of the Polar Decomposition of Biquaternions*, *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions* and *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the three regroupings of the four factors.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), §*Finite-Dimensional Representations of the Lorentz Group*, for the spin-$j$ modules and the non-unitarity, and §*The Double Covers and the Lorentz Group*, for the double cover.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the regular modules and the bi-module structure used in §*What the Algebra Carries*.
+- [The Category of Modules](the-category-of-modules.html), for the regular modules and the bi-module structure used in §*What the Algebra Carries*.
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html) and [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two-factor pair that the word refines and its behaviour on the cone.

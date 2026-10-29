@@ -289,5 +289,5 @@ The single $\lambda$ of the biquaternion algebra is the $n=2$ case of the patter
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the Peirce coordinates and the table.
 - [The $M_2$ Corner of $M_3(\mathbb{C})$](the-m2-corner-of-m3c.html), for the biquaternion corner and its single parameter.
 - [Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m3c.html), for the root and the idempotents that the gauge fixes.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the single $\mu$ of the biquaternion frame.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the single $\mu$ of the biquaternion frame.
 - [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the compact real form and the global phase.

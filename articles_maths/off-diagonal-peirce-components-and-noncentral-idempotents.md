@@ -94,7 +94,7 @@ $$
 The diagonal terms cancel, and the result lies in $N = eAf \oplus fAe$. Conversely, every element of $N$ is a commutator with $e$:
 
 $$
-[e, eaf] = e(eaf) - (eaf)e = eaf, \qquad [e, fae] = e(fae) - (fae)e = -fae .
+[e, eaf] = eaf, \qquad [e, fae] = -fae .
 $$
 
 Therefore
@@ -103,39 +103,27 @@ $$
 \boxed{\;[e,A] = N\;} .
 $$
 
-The off-diagonal part is exactly the image of the inner derivation $\operatorname{ad}_e(x) = [e,x]$. Its kernel is the centraliser
+The elements that commute with $e$ are exactly the diagonal part $D$; this is the $r=2$ case of the theorem of *The Centraliser and the Diagonal Peirce Part*.
+
+### The values on the corners
+
+On the four corners the commutator with $e$ takes the values
 
 $$
-C(e) = \{x : ex = xe\} = D,
+[e,eae] = 0, \quad [e,faf] = 0, \quad [e,eaf] = eaf, \quad [e,fae] = -fae .
 $$
 
-which is the diagonal part. This is the $r=2$ case of the theorem of *The Centraliser and the Diagonal Peirce Part*: the centraliser of an idempotent is its diagonal Peirce part.
-
-### The eigenspaces of the commutator
-
-The map $\operatorname{ad}_e$ acts on the four corners by
+Thus $A$ is the direct sum
 
 $$
-\operatorname{ad}_e(eae) = 0, \quad \operatorname{ad}_e(faf) = 0, \quad \operatorname{ad}_e(eaf) = eaf, \quad \operatorname{ad}_e(fae) = -fae .
+A = \underbrace{fAe}_{-1} \oplus \underbrace{(eAe \oplus fAf)}_{0} \oplus \underbrace{eAf}_{+1} ,
 $$
 
-Thus $A$ is the direct sum of the eigenspaces of $\operatorname{ad}_e$ for the eigenvalues $0, 1, -1$:
-
-$$
-A = \underbrace{fAe}_{-1} \oplus \underbrace{(eAe \oplus fAf)}_{0} \oplus \underbrace{eAf}_{+1} .
-$$
-
-On the diagonal part, $\operatorname{ad}_e = 0$; on the off-diagonal part, $\operatorname{ad}_e^2 = \mathrm{id}$. Hence $\operatorname{ad}_e^2$ is the projection onto $N$ with kernel $D$, and
-
-$$
-\pi = 1_A - \operatorname{ad}_e^2 .
-$$
-
-The Peirce decomposition is therefore the eigenspace decomposition of the inner derivation $\operatorname{ad}_e$, and the diagonal projection is the spectral projection of $\operatorname{ad}_e$ for the eigenvalue $0$. The eigenvalues $+1$ and $-1$ are the two off-diagonal directions.
+where the label is the value $\lambda$ in $[e,x] = \lambda x$. The operator reading of this decomposition — the inner derivation $\operatorname{ad}_e$, its eigenspaces and its spectral projection — is *The Commutator Operator*, §*The Adjoint Action*; it is cited and not developed here.
 
 ### The grading
 
-The eigenspace decomposition can be read as a $\mathbb{Z}$-grading. Put
+The value decomposition can be read as a $\mathbb{Z}$-grading. Put
 
 $$
 A_{-1} = fAe, \qquad A_0 = eAe \oplus fAf, \qquad A_1 = eAf .
@@ -147,7 +135,7 @@ $$
 \boxed{\;A = A_{-1} \oplus A_0 \oplus A_1, \qquad A_p A_q \subseteq A_{p+q}\;},
 $$
 
-with $A_p = 0$ for $|p| > 1$. The multiplication table verifies the grading: $A_1 A_1 = 0 = A_2$, $A_{-1} A_{-1} = 0 = A_{-2}$, $A_1 A_{-1} \subseteq A_0$, $A_{-1} A_1 \subseteq A_0$, and $A_0$ acts on $A_{\pm 1}$ by left and right multiplication. The Peirce decomposition is the graded decomposition of $A$ by the eigenvalues of $\operatorname{ad}_e$, with the degree $p$ equal to the eigenvalue.
+with $A_p = 0$ for $|p| > 1$. The multiplication table verifies the grading: $A_1 A_1 = 0 = A_2$, $A_{-1} A_{-1} = 0 = A_{-2}$, $A_1 A_{-1} \subseteq A_0$, $A_{-1} A_1 \subseteq A_0$, and $A_0$ acts on $A_{\pm 1}$ by left and right multiplication. The Peirce decomposition is the graded decomposition of $A$ by the values of the commutator with $e$, with the degree $p$ equal to the value.
 
 The grading is a property of the single idempotent $e$. It does not extend to the family of eigenprojectors of a general split separable element with more than two eigenvalues: there the off-diagonal part is a sum over pairs and the product of two off-diagonal pieces can have a third index, as explained in *The Centraliser and the Diagonal Peirce Part*.
 
@@ -270,7 +258,7 @@ $$
 A = eAe \oplus eAf \oplus fAe \oplus fAf,
 $$
 
-with diagonal part $D = eAe \oplus fAf$ and off-diagonal part $N = eAf \oplus fAe$. The diagonal part is a unital subalgebra, the off-diagonal part is a $D$-bimodule, and $N^2 \subseteq D$. The centraliser of $e$ is $C(e) = D$, and the image of the inner derivation $\operatorname{ad}_e$ is $N$: the off-diagonal part is exactly the set of commutators $[e,x]$. The Peirce decomposition is the eigenspace decomposition of $\operatorname{ad}_e$ for the eigenvalues $0, +1, -1$, equivalently the $\mathbb{Z}$-grading with $A_{-1} = fAe$, $A_0 = D$, $A_1 = eAf$.
+with diagonal part $D = eAe \oplus fAf$ and off-diagonal part $N = eAf \oplus fAe$. The diagonal part is a unital subalgebra, the off-diagonal part is a $D$-bimodule, and $N^2 \subseteq D$. The centraliser of $e$ is $C(e) = D$, and the set of commutators $[e,x]$ is $N$. The Peirce decomposition is the value decomposition $[e,x]=\lambda x$ for $\lambda = 0, +1, -1$, equivalently the $\mathbb{Z}$-grading with $A_{-1} = fAe$, $A_0 = D$, $A_1 = eAf$.
 
 The idempotent $e$ is central if and only if $N = 0$, if and only if $A \cong Ae \times Af$. In that case the Peirce decomposition is a product decomposition. If $e$ is noncentral, $N \neq 0$ and the decomposition is not a product. The two-sided ideal $AeA$ need not be proper: it is the whole algebra when $A$ is simple and $e\neq0$. The corner $fAf$ is always a subalgebra, but it is a quotient algebra of $A$ exactly in the central case. The left ideal $Ae$ and the right ideal $eA$ are proper whenever $e\neq1$.
 
@@ -287,8 +275,8 @@ The off-diagonal part measures noncentrality, not noncommutativity. A nonzero $N
 | $D = eAe \oplus fAf$ | The diagonal Peirce part; equal to $C(e)$ |
 | $N = eAf \oplus fAe$ | The off-diagonal Peirce part; equal to $[e,A]$ |
 | $\pi(x) = exe + fxf$ | The projection onto $D$ along $N$ |
-| $\operatorname{ad}_e(x) = ex - xe$ | The inner derivation; $\ker \operatorname{ad}_e = D$, $\operatorname{im} \operatorname{ad}_e = N$ |
-| $A_{-1} = fAe$, $A_0 = D$, $A_1 = eAf$ | The $\mathbb{Z}$-grading by the eigenvalues of $\operatorname{ad}_e$ |
+| $[e,x] = ex - xe$ | The commutator with $e$; it vanishes on $D$, equals $x$ on $A_1$ and $-x$ on $A_{-1}$ |
+| $A_{-1} = fAe$, $A_0 = D$, $A_1 = eAf$ | The $\mathbb{Z}$-grading by the values of the commutator with $e$ |
 | $Ae$ | The left ideal $eAe \oplus fAe$ generated by $e$ |
 | $eA$ | The right ideal $eAe \oplus eAf$ generated by $e$ |
 | $AeA$ | The two-sided ideal generated by $e$; equal to $A$ when $A$ is simple and $e\neq0$ |

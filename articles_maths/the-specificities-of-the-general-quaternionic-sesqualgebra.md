@@ -168,7 +168,7 @@ The consequences are the specificities of the block. The product is linear in th
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the left-alternativity criterion and the parity obstruction, the twin of the present article.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the left-alternativity criterion and the parity obstruction, the twin of the present article.
 - [The Specificities of the General Quaternionic Algebra](the-specificities-of-the-general-quaternionic-algebra.html), for the isotope criterion of the natural product.
 - [Introduction to the General Quaternionic Sesqualgebra](introduction-to-the-general-quaternionic-sesqualgebra.html), for the product, its table, the first-slot reading of the scalar form and the failure of the ternary identity.
 - [Introduction to the Symmetric Quaternionic Sesqualgebra](introduction-to-the-symmetric-quaternionic-sesqualgebra.html), for the symmetrisation $\mathrm{SQS}$, which shares the two actions of $e_t$ and fails the star identity, and for the sibling $\mathrm{SPS}$.

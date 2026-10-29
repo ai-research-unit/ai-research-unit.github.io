@@ -435,4 +435,4 @@ The Wirtinger calculus gives the holomorphic functions; the holomorphic function
 - [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form, the norms and the real codimension $2$.
 - [Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the spectral theorem and the projectors.
 - [The Exponential and the Lie Group of $M_5(\mathbb{C})$](the-exponential-and-the-lie-group-of-m5c.html), for the exponential and the logarithm.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion side and the boundary against Fueter theory.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion side and the boundary against Fueter theory.

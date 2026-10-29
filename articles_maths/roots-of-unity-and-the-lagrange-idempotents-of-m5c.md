@@ -399,5 +399,5 @@ The root set is the homogeneous space $PGL_5/T$, of complex dimension $20$; the 
 - [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the four-parameter gauge that rescales the simple nilpotents and fixes the idempotents.
 - [Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the Dunford calculus and the limit of the Lagrange projectors at a repeated eigenvalue.
 - [The Quintic and the Spectral Strata of $M_5(\mathbb{C})$](the-quintic-and-the-spectral-strata-of-m5c.html), for the characteristic quintic, its lack of a general radical solution and the spectral stratification.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the order-two case, the four Peirce lines and the matrix model $M_2(\mathbb{C})$ of the biquaternion algebra.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the order-two case, the four Peirce lines and the matrix model $M_2(\mathbb{C})$ of the biquaternion algebra.
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the general construction at order $n$.

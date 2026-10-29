@@ -564,4 +564,4 @@ The idempotents are exactly $0,1,\Pi_{+}=\tfrac12(1+j),\Pi_{-}=\tfrac12(1-j)$. T
 - [Ideals and Peirce Decomposition of the Split-Complex Algebra](ideals-and-peirce-decomposition-of-the-split-complex-algebra.html), for the two minimal ideals and the Peirce decomposition.
 - [Norm and Invertibility in the Split-Complex Algebra](norm-and-invertibility-in-the-split-complex-algebra.html), for the shell of the plain algebraic norm at $1$.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), the complex commutative case, where the same four-point pattern is read over $\mathbb{C}$ and the roots of $-1$ are four.
-- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), the non-commutative case, where the roots of $+1$ and the idempotents form larger families.
+- [Idempotents](idempotents.html), the non-commutative case, where the roots of $+1$ and the idempotents form larger families.

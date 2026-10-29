@@ -4,7 +4,7 @@
 
 Two conditions cut the quaternion algebra into four cells: the vanishing of the quaternion norm and the vanishing of the squared length of the vector part. Because the norm is positive definite, one of the four cells is empty and the other three are nonempty. The three are the **sectors**: the non-real quaternions, the real axis minus the origin, and the origin. This article defines the cells, proves that exactly three are nonempty, describes each sector, computes its dimension and closure, and records the absence of defective elements and of nonzero norm-degenerate elements. A summary table collects the four cells.
 
-The algebra is [Quaternion Algebra](quaternion-algebra.html); the norm is [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html); the spectral criterion is [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html); the comparison of the two conditions is [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html); the biquaternion analogue is [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html).
+The algebra is [Quaternion Algebra](quaternion-algebra.html); the norm is [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html); the spectral criterion is [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html); the comparison of the two conditions is [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html); the biquaternion analogue is [The Spectrum](the-spectrum.html).
 
 **Notation.** $\tilde q=q_t+\vec q=q_t e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\vec q^2=-|\vec q|^2e_t$, $\tilde q^{\natural}=q_t-\vec q$, $\langle\tilde q\rangle_{\natural}=q_t^2+|\vec q|^2$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$, $s=|\vec q|$.
 
@@ -105,7 +105,7 @@ $$\mathbb H^\times=\mathbb H\setminus\{0\}=\Sigma_{11}\cup\Sigma_{10}.$$
 
 **Corollary (the sectors are exhaustive).** The three nonempty sectors are exactly the combinations that the positive definite norm permits; the fourth is forbidden. The table of the previous section is therefore complete.
 
-**Remark (the contrast with the biquaternion algebra).** In $\mathbb B$ all four sectors are nonempty: the sector $\Sigma_{01}$ that is empty in $\mathbb H$ is present there, and its nonzero points are zero divisors. In $\mathbb H$ that sector is empty because the norm is definite. The comparison is in [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html).
+**Remark (the contrast with the biquaternion algebra).** In $\mathbb B$ all four sectors are nonempty: the sector $\Sigma_{01}$ that is empty in $\mathbb H$ is present there, and its nonzero points are zero divisors. In $\mathbb H$ that sector is empty because the norm is definite. The comparison is in [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html).
 
 ## Summary
 
@@ -138,5 +138,5 @@ Every element is semisimple, so there is no defective element and no defective s
 - [Eigenvalue Decomposition and Eigenbasis of a Quaternion](eigenvalue-decomposition-and-eigenbasis-of-a-quaternion.html), for the eigenbasis of the non-real sector.
 - [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html), for the two forms and the chain of invariants.
 - [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html), for the norms of the eight algebras.
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors of $\mathbb B$ and their comparison with $\mathbb H$.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors of $\mathbb B$ and their comparison with $\mathbb H$.
 - [The Eight Algebras Compared](the-eight-algebras-compared.html), for the place of $\mathbb H$ among the eight.

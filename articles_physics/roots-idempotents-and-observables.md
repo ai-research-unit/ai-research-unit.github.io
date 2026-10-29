@@ -12,14 +12,14 @@ The article owns no theorem. Every classification, bijection and count is stated
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The classification of the roots of $+1$: the two central roots, the purely imaginary family and the non-trivial family | [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
-| The halving map, the pair map and the spectral resolution of a root | [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
-| The idempotents, orthogonality, completeness, primitivity and the Peirce decomposition | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-in-the-biquaternion-algebra.html) |
+| The classification of the roots of $+1$: the two central roots, the purely imaginary family and the non-trivial family | [Idempotents](../articles_maths/idempotents.html) |
+| The halving map, the pair map and the spectral resolution of a root | [Idempotents](../articles_maths/idempotents.html) |
+| The idempotents, orthogonality, completeness, primitivity and the Peirce decomposition | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The sectors $\mathbb{M}_\pm$, the Hermitian conjugation and the trace | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The restrictions of the forms to the remarkable subspaces | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
-| The roots of $-1$ and their relation to the roots of $+1$ | [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
+| The roots of $-1$ and their relation to the roots of $+1$ | [Idempotents](../articles_maths/idempotents.html) |
 | The root sets and idempotent sets of the twelve structures | [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
-| The roots of a general element and the failure of the square-root formula off the cone | [Square Roots of an Element](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html) |
+| The roots of a general element and the failure of the square-root formula off the cone | [Square Roots of an Element](../articles_maths/square-roots-of-an-element.html) |
 
 ## One Equation, Two Objects
 
@@ -171,10 +171,10 @@ The Hermitian roots are read as the involutive observables, the nontrivial Hermi
 
 ## Further Reading
 
-- [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html), for the centre and the criterion for a $\mathbb{C}$-algebra structure.
-- [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification, the halving map and the pair map.
-- [Nilpotents](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the other central value and the nilpotent cone.
-- [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-in-the-biquaternion-algebra.html), for orthogonality, primitivity and the ideals an idempotent generates.
+- [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html), for the centre and the criterion for a $\mathbb{C}$-algebra structure.
+- [Idempotents](../articles_maths/idempotents.html), for the classification, the halving map and the pair map.
+- [Nilpotents](../articles_maths/nilpotents.html), for the other central value and the nilpotent cone.
+- [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html), for orthogonality, primitivity and the ideals an idempotent generates.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the sectors, the conjugations and the trace.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the sector, the Bloch ball and the Born pairing.
 - [The Born Rule from the Hermitian Form — Derivation and Comparison](the-born-rule-as-a-trace-formula-derivation-and-comparison.html), for the Born formula and its trace reading.

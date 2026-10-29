@@ -216,7 +216,7 @@ The frame carries an $\mathfrak{sl}_2$ with $J_3=\sum_k\big(\tfrac{n+1}{2}-k\big
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the root and the grading used at even $n$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the chain $N_k=E_{k,k+1}$ that becomes the ladder.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-mnc.html), for the corners that the carrier is not.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion case at $n=2$, the only case of genuine spinors.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion case at $n=2$, the only case of genuine spinors.
 - [The Spin Chain and the Adjoint Decomposition of $M_3(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m3c.html), the case $n=3$.
 - [The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), the case $n=4$.
 - [The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m5c.html), the case $n=5$.

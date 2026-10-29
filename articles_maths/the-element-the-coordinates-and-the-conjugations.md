@@ -140,7 +140,7 @@ A real subspace of $\mathbb{B}$ of real dimension four need not be closed under 
 
 **Remark (the two real spaces, of dimensions eight and four).** The two dimensions must not be confused. The restriction of scalars of the complex reading is the eight-dimensional space above, whose extension of scalars back to $\mathbb{C}$ has complex dimension eight; the extension of scalars of a real form is the four-dimensional complex space $\mathbb{B}$ itself. What returns the complex reading from the eight-dimensional space is the operator $J$, not a scalar extension. The version of this caution for the algebra and its base rings, where $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, is *The Realification and the Effect of the Change of Scalars*.
 
-**Remark (the remarkable subspaces in the real reading).** The remarkable subspaces are real subspaces, and the complex structure sorts them: the centre and the vector subspace are carried to themselves by $J$ and are the only two that are complex subspaces, of complex dimensions one and three, while the other four are real forms, exchanged in two pairs by $J$. The remarkable subspaces are defined in *The Six Subspaces*, and the action of the central imaginary unit upon them is *The Lattice of the Subspaces*.
+**Remark (the remarkable subspaces in the real reading).** The remarkable subspaces are real subspaces, and the complex structure sorts them: the centre and the vector subspace are carried to themselves by $J$ and are the only two that are complex subspaces, of complex dimensions one and three, while the other four are real forms, exchanged in two pairs by $J$. The remarkable subspaces are defined in *The Six Subspaces*, and the action of the central imaginary unit upon them is *The Subspaces and Their Relations*.
 
 ### What the View Adds
 
@@ -166,6 +166,6 @@ The marks and their case rules are those of *Conventions in Mathematics*.
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the product and the axioms.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the product and the axioms.
 - [The Group of Involutions](the-group-of-involutions.html), for the Klein group and the orbits.
-- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the fixed spaces.
+- [The Six Subspaces](the-six-subspaces.html), for the fixed spaces.

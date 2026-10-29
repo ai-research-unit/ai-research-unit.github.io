@@ -6,7 +6,7 @@ The regular model carries two copies of the spinor module. A Hermitian element a
 
 This article develops the Hermitian basis, the spin operators, the pure and general states, the Bloch vector and the doubling. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and
 $$
 \Sigma_k=\mathsf{M}_4(i\vec e_k),
 \qquad
@@ -15,7 +15,7 @@ $$
 In the Peirce basis, $\Sigma_k=\operatorname{diag}(\sigma_k,\sigma_k)$; in the fixed coefficient basis the block form is conjugated by $S$.
 The Hermitian subspace is $\mathbb{M}_+$. A state is written $\tilde\varrho$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb{R}^3$.
 
-**Boundaries.** The two spinor planes are *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the spectral projectors are *$M_4(\mathbb{C})_L$ Representation : The Spectral Projectors and the Nilpotents*; the physical reading is *The Pauli Correspondence and the Matrix Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
+**Boundaries.** The two spinor planes are *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the spectral projectors are *$M_4(\mathbb{C})_L$ Model : The Spectral Projectors*; the physical reading is *The Pauli Correspondence and the Matrix Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
 
 ## The Hermitian Basis
 
@@ -272,8 +272,8 @@ The Hermitian basis of the regular image is $\mathrm I_4$ and the three Pauli ma
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two copies
-- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors
+- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two copies
+- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the projectors
 - [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m2c-representation-spin-qubits-and-the-bloch-vector.html), for the $2\times2$ version
 - [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html), for the spinor
 - [The Pauli Correspondence and the Matrix Image](../articles_physics/the-pauli-correspondence-and-the-matrix-image.html), for the physical reading

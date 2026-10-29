@@ -174,4 +174,4 @@ The reduced biquaternion $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ i
 - [The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions](the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.html), for the diagonal model of the algebra.
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the invertibility criterion.
 - [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the real change of basis of determinant $\tfrac14$.
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the companion whose image is the whole matrix algebra.
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the companion whose image is the whole matrix algebra.

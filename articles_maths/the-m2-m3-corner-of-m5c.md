@@ -315,4 +315,4 @@ $$
 - [The Rank-Two Split of $M_5(\mathbb{C})$](the-rank-two-split-of-m5c.html), for the corners $4+6+6+9$ and the two-sided Peirce table.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the four-parameter gauge and the simple nilpotents.
 - [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the modules of the corner and of the whole algebra.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion model $M_2(\mathbb{C})$ inside the corner.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion model $M_2(\mathbb{C})$ inside the corner.

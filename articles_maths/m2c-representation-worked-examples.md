@@ -6,7 +6,7 @@ This article computes eight matrices, one after another, through the same checkl
 
 The article is the matrix counterpart of *Worked Examples of Eigenbasis of a Biquaternion* and *Worked Examples of Exponential Polar Decomposition of Biquaternions*: the same kind of computation, read in the model $\mathsf{M}_2$ rather than in the algebra.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, its matrix is
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, its matrix is
 
 $$
 X=\mathsf{M}_2(\tilde Q)=
@@ -27,7 +27,7 @@ $$
 
 for $X=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. The trace is $\operatorname{Tr}X=2Q_t$ and the determinant is $\det X=Q_t^2+Q_x^2+Q_y^2+Q_z^2=\langle\tilde Q\rangle_{\natural}$. The variable of the characteristic polynomial is written $t$, and the two eigenvalues are $\lambda_\pm$.
 
-**Boundaries.** The construction of the model is *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*; the eigenbasis is *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*; the spectral projectors and the nilpotents are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*; the polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the rank-one matrices are *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the group cases are *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
+**Boundaries.** The construction of the model is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*; the eigenbasis is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the spectral projectors and the nilpotents are *$M_2(\mathbb{C})$ Model : The Spectral Projectors*; the polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the rank-one matrices are *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the group cases are *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
 ## The Method
 
@@ -339,7 +339,7 @@ one has $N=C\operatorname{diag}(1+i,1-i)C^{-1}$.
 
 **The polar factors.** $|N|=\sqrt2\,\mathrm I_2$ and $V=N/\sqrt2$; the $*$-unitary factor has determinant $1$, so $N/\sqrt2\in SU(2)$.
 
-**The algebra reading.** $\tilde Q=e_t-\vec e_y$, $\vec Q=-\vec e_y$, $B=1$ and $\vec\Xi=i\vec e_y$. The spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_y)$, which are Hermitian. In a $*$-unitary eigenbasis the pair of nilpotents is exchanged by the star. This is the normal case of *$M_2(\mathbb{C})$ Representation : The Eigenbasis and the Diagonalising Matrix*, §*The Normal Case*.
+**The algebra reading.** $\tilde Q=e_t-\vec e_y$, $\vec Q=-\vec e_y$, $B=1$ and $\vec\Xi=i\vec e_y$. The spectral idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_y)$, which are Hermitian. In a $*$-unitary eigenbasis the pair of nilpotents is exchanged by the star. This is the normal case of *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*, §*The Normal Case*.
 
 **The flags.** The matrix is normal, neither Hermitian nor $*$-unitary. It is the example that separates normality from the two special normal types.
 
@@ -388,10 +388,10 @@ The eight matrices are read through one checklist: coordinates, trace and determ
 
 ## Further Reading
 
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the model and the coordinates
-- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis, the normal case and the diagonalising matrix
-- [$M_2(\mathbb{C})$ Model : The Spectral Projectors](m2c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors and the Jordan types
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-representation-the-centraliser-and-the-double-centraliser.html), for the commutant and the minimal polynomial
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the model and the coordinates
+- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis, the normal case and the diagonalising matrix
+- [$M_2(\mathbb{C})$ Model : The Spectral Projectors](m2c-model-the-spectral-projectors.html), for the projectors and the Jordan types
+- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the commutant and the minimal polynomial
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the polar factors and the singular case
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the rank-one and determinantal readings
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the trace and the determinant

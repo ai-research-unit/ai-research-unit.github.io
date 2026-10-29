@@ -308,9 +308,9 @@ The first and the fourth rows are the same decomposition read as a right multipl
 
 ## Further Reading
 
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the two idempotents, the four Peirce lines and the multiplication table.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the two idempotents, the four Peirce lines and the multiplication table.
 - [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](the-column-ideals-of-a-matrix-ring.html), for the identification of the nilpotents with the matrix units.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the simple module, $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ and the classification of left modules.
+- [The Category of Modules](the-category-of-modules.html), for the simple module, $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ and the classification of left modules.
 - [The Weight of a Frame Root and the Spin Quantum Number](the-weight-of-a-frame-root-and-the-spin-quantum-number.html), for the highest weight, the half-weight normalisation and the weights of the Peirce carrier and of the traceless part.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint-action reading of integer spin and the symmetric traceless tensors.
 - [Conjugate-Linear Maps and the Conjugate Dual](conjugate-linear-maps-and-the-conjugate-dual.html), for the conjugate module $M^{\varsigma}$ and the semilinear maps.

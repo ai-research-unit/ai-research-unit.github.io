@@ -276,5 +276,5 @@ The corner is a unital $*$-algebra exactly when $P=P^{*}$. For a non-Hermitian i
 - [The Rank-Two Split of $M_3(\mathbb{C})$](the-rank-two-split-of-m3c.html), for the four corners $4+2+2+1$ and the mass block.
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the trace, the determinant and the unit group.
 - [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the star and the positive definite form.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion algebra as $M_{2}(\mathbb{C})$.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion algebra as $M_{2}(\mathbb{C})$.
 - [Matrix Algebras](matrix-algebras.html), for the algebra $M_{2}(\mathbb{C})$ and its matrix units.

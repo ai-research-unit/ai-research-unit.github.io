@@ -255,5 +255,5 @@ has $B_1^2=1+i^2=0$ and is a unit, with $Q_{1t}^2+B_1^2=1$.
 
 - [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the product and the conjugate.
 - [The Square of an Element](the-square-of-an-element.html), for the square and the pure isotropic case.
-- [Nilpotents](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the pure family of the zero divisors.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra and the basis.
+- [Nilpotents](nilpotents.html), for the pure family of the zero divisors.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the basis.

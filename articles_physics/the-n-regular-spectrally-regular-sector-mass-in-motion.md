@@ -14,9 +14,9 @@ The name of the cell is deliberately double. **Mass in motion** is the timelike 
 | --- | --- |
 | The definition, the five descriptions and the geometry of the cell | [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html) |
 | The spectrum, the spectral idempotents and the two-term writing | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
-| The eigenbasis and the Peirce corners | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html) |
+| The eigenbasis and the Peirce corners | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html) |
 | The spinor spaces and the Peirce index | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
-| The independence of the two conditions | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html) |
+| The independence of the two conditions | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | The four-vector dictionary and the mass shell | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
 | The spectral reading of a four-momentum | [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) |
 | The polar word and the unit group | [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html) |

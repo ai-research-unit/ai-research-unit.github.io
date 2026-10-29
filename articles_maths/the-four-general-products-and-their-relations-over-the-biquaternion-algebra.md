@@ -579,8 +579,8 @@ The four are told apart on one element by the square: $\mathrm{Sc}(\tilde Q\tild
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the element, the basis and the four conjugations.
-- [Introduction to the Operators of the Biquaternion Algebra](the-four-general-products-and-operators.html), for the four readings, the group they form, the slot family and the table of the slots.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, the element, the basis and the four conjugations.
+- [Introduction to the Operators of the Biquaternion Algebra](introduction-to-the-operators-of-the-biquaternion-algebra.html), for the four readings, the group they form, the slot family and the table of the slots.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four scalar parts as forms and their diagonals as algebraic norms.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve products and the two halves of each general product.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four products read on the remarkable subspaces.

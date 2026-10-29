@@ -12,8 +12,8 @@ The results used are these.
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The subspace, its basis and its coordinate blocks | [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
-| The roots of $+1$ and the Hermitian idempotents | [Square Roots of One and the Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
+| The subspace, its basis and its coordinate blocks | [The Six Subspaces](../articles_maths/the-six-subspaces.html) |
+| The roots of $+1$ and the Hermitian idempotents | [Idempotents](../articles_maths/idempotents.html) |
 | The norm, the spectrum and the positive cone | [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html) |
 | The eigenvalue decomposition, the normality criterion and the non-normal pair | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The four forms and their restrictions | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
@@ -387,7 +387,7 @@ Eight statements of this article are not properties of the vector space $\mathbb
 | The level sets are the groups the physics uses | $\tilde U\tilde U^{*}=e_t$ gives $U(2)$; $\langle\tilde U\rangle_{\natural}=1$ gives $SL(2,\mathbb{C})$; the Euclidean sphere is not used | [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The operator dictionary is the adjointness dictionary | observables $\mathbb{M}_+$, generators $\mathbb{M}_-$, unitaries $U(2)$; $\tilde H=iA$ for $A\in\mathbb{M}_-$ | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
 | One operator carries both evolutions | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, evaluated at a $*$-unitary or an idempotent parameter | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
-| Projections come from one sector only | no non-zero idempotent lies in $\mathbb{M}_-$ | [Square Roots of One and the Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), [Ideals and the Peirce Decomposition](../articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-sesqualgebra.html) |
+| Projections come from one sector only | no non-zero idempotent lies in $\mathbb{M}_-$ | [Idempotents](../articles_maths/idempotents.html), [Ideals and the Peirce Decomposition](../articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-sesqualgebra.html) |
 | Two pairings, because one is not Hermitian | interval $\langle\cdot,\cdot\rangle_{\natural}$, probability $\langle\cdot,\cdot\rangle_{*}$; on $\mathbb{M}_-$ they coincide on the space part and differ in the sign of the time part, on $\mathbb{M}_+$ they coincide on the time part and differ in the sign of the space part | [Hermitian Forms over Algebras and Norms](../articles_maths/hermitian-forms-over-algebras-and-norms.html), [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | No alternating companion on the sector | the four forms are real on $\mathbb{M}_+$, so their imaginary parts vanish | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 
@@ -475,8 +475,8 @@ The article establishes the algebra of the sector and its interpretation as a tw
 
 ## Further Reading
 
-- [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html), for the definition and the basis of $\mathbb{M}_+$.
-- [Square Roots of One and the Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents and the roots of $+1$.
+- [The Six Subspaces](../articles_maths/the-six-subspaces.html), for the definition and the basis of $\mathbb{M}_+$.
+- [Idempotents](../articles_maths/idempotents.html), for the idempotents and the roots of $+1$.
 - [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html), for the positive cone and the spectral decomposition.
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the normality criterion and the non-normal pair.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the biorthogonal pairing and its difference from the Born form.

@@ -26,8 +26,8 @@ The four cells are treated one to an article: *The N-Regular, Spectrally Regular
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The norm, the null cone and its two strata | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| The characteristic polynomial, the discriminant and the two eigenvalues | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
-| The independence of the two conditions and the four sectors | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html) |
+| The characteristic polynomial, the discriminant and the two eigenvalues | [The Spectrum](../articles_maths/the-spectrum.html) |
+| The independence of the two conditions and the four sectors | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | The doubly regular sector | [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html) |
 | The norm-regular, spectrally degenerate sector | [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) |
 | The norm-degenerate, spectrally regular sector | [The N-Degenerate, Spectrally Regular Sector](../articles_maths/the-n-degenerate-spectrally-regular-sector.html) |

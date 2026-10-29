@@ -173,9 +173,9 @@ The reduced biquaternion space decomposes in three ways along its remarkable sub
 
 ## Further Reading
 
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the spaces and their characters.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the spaces and their characters.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the involutions, their commutativity and their fixed spaces.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotents and the two lines.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the Peirce decomposition and the $\mathbb{Z}_{2}$-grading.
 - [Comparison of the Remarkable Subspaces](comparison-of-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the spaces at a glance and their closure.
-- [The Three Eigenspace Decompositions](decompositions-along-the-remarkable-subspaces.html), for the non-commutative companion.
+- [The Three Eigenspace Decompositions](the-three-eigenspace-decompositions.html), for the non-commutative companion.

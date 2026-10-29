@@ -330,4 +330,4 @@ The two-sided Peirce table has the block pattern $(i,j)(j,k)\subseteq(i,k)$, wit
 - [The $M_2\oplus M_3$ Corner of $M_5(\mathbb{C})$](the-m2-m3-corner-of-m5c.html), for the block stabiliser, the two corner tori and the relative scale $1+2+1=4$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the gauge parameters regrouped by the block structure.
 - [The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$](the-modules-and-the-minimal-left-ideals-of-m5c.html), for the modules of the corners and the bimodule.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion algebra in the $M_2$ corner.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion algebra in the $M_2$ corner.

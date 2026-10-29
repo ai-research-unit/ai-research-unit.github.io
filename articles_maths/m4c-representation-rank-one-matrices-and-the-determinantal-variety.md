@@ -6,7 +6,7 @@ The zero divisors of the biquaternion algebra are the nonzero elements of vanish
 
 This article develops the factorisation, the two strata of the regular determinantal variety, the annihilators and the geometry of the cone. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*. The title is inherited from the $2\times2$ article; the object in the regular model is the rank-two double of a rank-one matrix.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. The norm is $N=Q_t^2+B^2$, and $\det\mathsf{M}_4(\tilde Q)=N^2$. A vector of $\mathbb{C}^2$ is a column $u$, a covector is a row $v^{\mathsf T}$, and $uv^{\mathsf T}$ is the matrix of entries $(uv^{\mathsf T})_{ij}=u_iv_j$. The Peirce basis identifies the image with the block matrices $\operatorname{diag}(A,A)$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The norm is $N=Q_t^2+B^2$, and $\det\mathsf{M}_4(\tilde Q)=N^2$. A vector of $\mathbb{C}^2$ is a column $u$, a covector is a row $v^{\mathsf T}$, and $uv^{\mathsf T}$ is the matrix of entries $(uv^{\mathsf T})_{ij}=u_iv_j$. The Peirce basis identifies the image with the block matrices $\operatorname{diag}(A,A)$.
 
 **Boundaries.** The null cone and its stratification are *The N-Degenerate Sector*; the nilpotents are *Nilpotents*; the rank-one elements and the Peirce corners are *The Peirce Decomposition of the Biquaternion Algebra*; the singular matrices as a determinantal variety are also treated in *The Determinant and Alternating Forms*.
 
@@ -177,10 +177,10 @@ A nonzero singular matrix in the regular image has rank two and is the double of
 ## Further Reading
 
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the null cone and its strata
-- [Nilpotents](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotent cone
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the rank-one elements and the corners
+- [Nilpotents](nilpotents.html), for the nilpotent cone
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the rank-one elements and the corners
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link and its topology
-- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units
+- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units
 - [$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the $2\times2$ version
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for determinantal varieties

@@ -6,7 +6,7 @@ The units of the biquaternion algebra are the invertible matrices, and the deter
 
 This article develops the group picture: the isomorphism, the determinant sequence and its splittings, the geometry of the level sets, and the relation to the $*$-unitary group through the polar decomposition. It is the matrix form of *The Biquaternion Unit Group as a Topological Group* and of *The N-Regular Sector*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=\det\mathsf{M}_2(\tilde Q)$. The unit group of the algebra is $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$, and the norm-one group is $\mathbb{B}^{\times}_1=\{\tilde Q:N=1\}$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=\det\mathsf{M}_2(\tilde Q)$. The unit group of the algebra is $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$, and the norm-one group is $\mathbb{B}^{\times}_1=\{\tilde Q:N=1\}$.
 
 **Boundaries.** The unit group as a topological group, its homotopy and its covering are *The Biquaternion Unit Group as a Topological Group*; the norm-one group and the polar factors are *The Polar Decomposition of a N-Regular Biquaternion*; the $*$-unitary group is *The Unitary Group of the Biquaternion Algebra*; the level sets of the norm and the sector are *The N-Regular Sector*; the polar decomposition of a matrix is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 

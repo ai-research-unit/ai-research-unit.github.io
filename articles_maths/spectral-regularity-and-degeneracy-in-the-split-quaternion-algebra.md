@@ -206,5 +206,5 @@ The matrix model $\mathbb H_{\mathrm s}\cong M_2(\mathbb R)$ has determinant $t^
 - [Split-Quaternion Spectral Theory](split-quaternion-spectral-theory.html), for the spectrum, the left and right eigenvalue problems and the resolvent.
 - [Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-split-quaternion-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the two cones and the chain of invariants.
 - [The Four Sectors of the Split-Quaternion Algebra](the-four-sectors-of-the-split-quaternion-algebra.html), for the partition, the descriptions and the table of dimensions.
-- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the complex analogue.
+- [The Spectrum](the-spectrum.html), for the complex analogue.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the characteristic polynomial, diagonalisability and the Jordan form.

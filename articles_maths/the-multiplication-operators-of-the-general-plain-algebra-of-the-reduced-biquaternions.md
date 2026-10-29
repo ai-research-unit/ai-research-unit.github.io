@@ -184,4 +184,4 @@ For an element $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ the left an
 - [The Forms of the Algebra of the Reduced Biquaternions](the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the adjoint rule and the conformal group of $\langle\cdot,\cdot\rangle$.
 - [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the invertibility criterion on the elements and the operators.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the image and the kernel of the operator.
-- [Introduction to the Operators of the Biquaternion Algebra](the-four-general-products-and-operators.html), for the non-commutative companion with its full enveloping algebra.
+- [Introduction to the Operators of the Biquaternion Algebra](introduction-to-the-operators-of-the-biquaternion-algebra.html), for the non-commutative companion with its full enveloping algebra.

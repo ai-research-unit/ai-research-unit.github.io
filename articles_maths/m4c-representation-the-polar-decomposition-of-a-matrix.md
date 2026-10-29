@@ -6,7 +6,7 @@ Every invertible regular matrix is the product of a positive Hermitian matrix an
 
 This article develops the matrix polar decomposition, its refinement by the determinant, its closed form, its behaviour on the singular matrices, and the singular value decomposition. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det\mathsf{M}_4(\tilde Q)=N^2$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The $*$-unitary group of the image is $\mathrm U(\mathbb{B})\cong U(2)$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det\mathsf{M}_4(\tilde Q)=N^2$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The $*$-unitary group of the image is $\mathrm U(\mathbb{B})\cong U(2)$.
 
 **Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*; the groups are *$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the sandwich action is *The Sandwich in the $M_4(\mathbb{C})_L$ Model*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 

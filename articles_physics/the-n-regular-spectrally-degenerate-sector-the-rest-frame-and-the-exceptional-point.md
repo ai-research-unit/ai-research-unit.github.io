@@ -14,8 +14,8 @@ The article reads both faces. It states the cell and its geometry, reads the sca
 | --- | --- |
 | The definition, the five descriptions and the geometry of the cell | [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) |
 | The two regimes, the centraliser and the Peirce data | [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html), §*The Two Regimes* |
-| The Jordan basis and the canonical flag | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html) |
-| The repeated eigenvalue and the discriminant | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The Jordan basis and the canonical flag | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html) |
+| The repeated eigenvalue and the discriminant | [The Spectrum](../articles_maths/the-spectrum.html) |
 | The exponential and the logarithm in the degenerate regimes | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The four-vector dictionary and the rest frame | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
 | The spectral reading of a four-momentum | [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) |

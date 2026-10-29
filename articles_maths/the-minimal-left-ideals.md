@@ -72,5 +72,5 @@ By Schur's lemma the endomorphisms of the simple module are the scalars, $\opera
 
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the spaces, their weight bases and the two actions.
 - [The Regular Module](the-regular-module.html), for the ideals as submodules and the simplicity of the algebra.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the classification of all modules.
+- [The Category of Modules](the-category-of-modules.html), for the classification of all modules.
 - [Primitive Idempotents and Minimal Left Ideals](primitive-idempotents-and-minimal-left-ideals.html), for the general criterion.

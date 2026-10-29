@@ -12,9 +12,9 @@ The biquaternion algebra supplies the second sign only after one step: the centr
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The Peirce sign, the Peirce table and $S_+\cong S_-\cong S$ | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-in-the-biquaternion-algebra.html) |
+| The Peirce sign, the Peirce table and $S_+\cong S_-\cong S$ | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The nilpotents as matrix units and the column ideals | [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html) |
-| The simple module, $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ and $\mathbb{B}\cong S\oplus S$ | [The Category of Modules](../articles_maths/modules-over-the-biquaternion-algebra.html) |
+| The simple module, $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ and $\mathbb{B}\cong S\oplus S$ | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
 | The conjugate module, its real isomorphism and its complex inequivalence | [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) |
 | The central idempotents $e_\pm=\tfrac12(1\pm ij)$, the chirality $\chi=ij$ and its action on $\Delta$ | [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) |
 | The invariant pairing $\beta$ and the mass operator $D_m$ | [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) |

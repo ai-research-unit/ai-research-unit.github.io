@@ -6,7 +6,7 @@ The four involutions of the biquaternion algebra become four matrix operations i
 
 This article proves the four formulas, identifies the fixed spaces and relates the operations to the right regular matrix. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. The four involutions are
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The four involutions are
 $$
 \tilde Q^{\natural}=Q_t-\vec Q,\qquad
 \overline{\tilde Q}=\overline{Q_t}+\overline{\vec Q},\qquad
@@ -15,7 +15,7 @@ $$
 $$
 The matrix is $M=\mathsf{M}_4(\tilde Q)$.
 
-**Boundaries.** The fixed spaces are *$M_4(\mathbb{C})_L$ Representation : The Six Subspaces as Matrix Conditions*; the four forms are *$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces*; the right regular matrix is *$M_4(\mathbb{C})_L$ Representation : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
+**Boundaries.** The fixed spaces are *$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions*; the four forms are *$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces*; the right regular matrix is *$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
 
 ## The Four Involutions
 
@@ -163,8 +163,8 @@ The four involutions become the transpose, the entrywise conjugation, the conjug
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions](m4c-representation-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
-- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the relation with the right matrix
+- [$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
+- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the relation with the right matrix
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the $2\times2$ dictionary
 - [The Group of Involutions](the-group-of-involutions.html), for the abstract involutions
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the operator-level adjoints

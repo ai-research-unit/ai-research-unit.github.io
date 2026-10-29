@@ -180,7 +180,7 @@ $$
 = \pm\,\tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*},
 $$
 
-so $\Phi_{\tilde U_{\mathrm L}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself. The field biquaternions of the electro-gravimagnetic programme therefore all transform by the same formula: the potential and the charge–current lie in $\mathbb{M}_-$, and the field strength and the power–force lie in $\mathbb{M}_+$, so each is carried to an element of its own sector by the conjugation whose component form that programme works out boost by boost. No second transformation law is needed, which is the reason the programme's transformation lemma agrees with the corpus's rotor action term for term.
+so $\Phi_{\tilde U_{\mathrm L}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself.
 
 **It is not an algebra automorphism.** For a product,
 

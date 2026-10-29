@@ -4,7 +4,7 @@
 
 An involution of an algebra selects the elements it fixes: the **self-adjoint part** $H(A) = A^+$, whose elements satisfy $h^* = h$. The selection is not a subalgebra in the ordinary sense, because the product of two self-adjoint elements need not be self-adjoint; it is a subalgebra of the **symmetrised** algebra, closed under the Jordan product $x \bullet y = \tfrac12(xy + yx)$. The self-adjoint part is therefore a Jordan algebra.
 
-This article develops the self-adjoint part, the symmetrised product and the Jordan axioms it satisfies, the quadratic representation that replaces the missing associativity of the Jordan product, and the standard examples of the symmetric matrices with the transpose and of the Hermitian matrices with the conjugate transpose. The involution on the elements and the decomposition $A = A^+ \oplus A^-$ are *Involutive Algebras*; the Jordan algebras themselves, their classification and their structure theory are *Jordan Algebras* of the same reading unit; the complementary skew part, its Lie algebra and its Jordan module structure are *The Skew Part of an Algebra*, in *Anti-symmetric Algebras*; the unitary elements are *Unitary Elements of an Involutive Algebra*; and the positivity, the order and the norms of the self-adjoint part are Part II and *Hilbert Algebras*.
+This article develops the self-adjoint part, the symmetrised product and the Jordan axioms it satisfies, and the standard examples of the symmetric matrices with the transpose and of the Hermitian matrices with the conjugate transpose. The involution on the elements and the decomposition $A = A^+ \oplus A^-$ are *Involutive Algebras*; the Jordan algebras themselves, their classification and their structure theory are *Jordan Algebras* of the same reading unit; the complementary skew part, its Lie algebra and its Jordan module structure are *The Skew Part of an Algebra*, in *Anti-symmetric Algebras*; the unitary elements are *Unitary Elements of an Involutive Algebra*; and the positivity, the order and the norms of the self-adjoint part are Part II and *Hilbert Algebras*.
 
 Throughout, $k$ is a field of characteristic not two, $A$ is a unital associative $k$-algebra with unit $1$, $\sigma$ is an involution of $A$, and the image of an element is written $x^* = \sigma(x)$. The self-adjoint part is $H(A) = \{h \in A : h^* = h\}$, the skew part is $K(A) = A^- = \{k \in A : k^* = -k\}$, the symmetrised product is $x \bullet y = \tfrac12(xy + yx)$, and the unit is self-adjoint because $1^* = 1$.
 
@@ -72,17 +72,7 @@ and the two expansions agree term by term, using only the associativity of the p
 
 ### The Quadratic Representation
 
-**Definition.** For a self-adjoint element $x$ the **quadratic representation** is the operator
-
-$$
-\mathrm{Jor}_x : H(A) \longrightarrow H(A), \qquad \mathrm{Jor}_x(y) = 2\,(x \bullet (x \bullet y)) - (x \bullet x) \bullet y .
-$$
-
-**Proposition.** The quadratic representation is $k$-linear in $y$ and satisfies $\mathrm{Jor}_x(y) = xyx$ when read through the associative product of $A$; it is therefore determined by the associative product, and $\mathrm{Jor}_x = 2L(x)^2 - L(x^2)$, where $L(x)$ is the left multiplication of the Jordan algebra by $x$.
-
-*Proof.* Expand in the associative product: $x\bullet(x\bullet y) = \tfrac14(x^2y + 2xyx + yx^2)$ and $(x\bullet x)\bullet y = \tfrac12(x^2y + yx^2)$, so $2(x\bullet(x\bullet y)) - (x\bullet x)\bullet y = xyx$. The operator $L(x)$ acts by $L(x)y = x\bullet y$, and the double product expansion gives the displayed independence from the associator.
-
-**Corollary.** The quadratic representation satisfies $\mathrm{Jor}_x(x) = x^3$ and $\mathrm{Jor}_1 = \mathrm{id}$; the map $x \mapsto \mathrm{Jor}_x$ is quadratic in $x$, and it is the substitute for the missing associativity of the Jordan product, in the sense that the products of three elements in $H(A)$ are governed by it.
+The quadratic representation $\mathrm{Jor}_x(y)=2\,(x\bullet(x\bullet y))-(x\bullet x)\bullet y$, the identity $\mathrm{Jor}_x(y)=xyx$ in the associative product, and the fundamental formula it satisfies are operator theory: they are *The Left and Right Multiplication Operators on a Jordan Algebra*, §*The Quadratic Representation*, and *The Jordan Multiplication Operators*, §*The Quadratic Representation*. They are cited where needed and are not developed here.
 
 ## The Elementary Elements
 
@@ -120,7 +110,7 @@ Let $A = B \times B^{\mathrm{opp}}$ with the exchange involution $(b,c)^* = (c,b
 
 ## Summary
 
-The **self-adjoint part** $H(A) = \{h : h^* = h\}$ of an algebra with an involution is a linear subspace with $A = H(A)\oplus K(A)$, where $K(A) = \{k : k^* = -k\}$ is the skew part; the unit lies in $H(A)$, and the decomposition $x = \tfrac12(x+x^*) + \tfrac12(x-x^*)$ is the eigenvalue decomposition of the involution. The symmetrised product $x\bullet y = \tfrac12(xy+yx)$ makes $H(A)$ a **Jordan algebra**, commutative, with the Jordan identity inherited from the associativity of $A$; the powers in the Jordan product coincide with the ordinary powers, and the subalgebra generated by one element is associative. The **quadratic representation** $\mathrm{Jor}_x(y) = 2(x\bullet(x\bullet y)) - (x\bullet x)\bullet y$ equals $xyx$ in the associative product and supplies the missing associativity. The complementary skew part carries the Lie algebra, the graded structure and the Jordan module of *The Skew Part of an Algebra*, and it is not developed here. The standard examples are the symmetric matrices with the transpose and the Hermitian matrices with the conjugate transpose, whose positive and normed theory belongs to *Hilbert Algebras*. The general involution and the decomposition are *Involutive Algebras*; the Jordan algebras are *Jordan Algebras* of the same reading unit; the unitary elements are *Unitary Elements of an Involutive Algebra*.
+The **self-adjoint part** $H(A) = \{h : h^* = h\}$ of an algebra with an involution is a linear subspace with $A = H(A)\oplus K(A)$, where $K(A) = \{k : k^* = -k\}$ is the skew part; the unit lies in $H(A)$, and the decomposition $x = \tfrac12(x+x^*) + \tfrac12(x-x^*)$ is the eigenvalue decomposition of the involution. The symmetrised product $x\bullet y = \tfrac12(xy+yx)$ makes $H(A)$ a **Jordan algebra**, commutative, with the Jordan identity inherited from the associativity of $A$; the powers in the Jordan product coincide with the ordinary powers, and the subalgebra generated by one element is associative. The quadratic representation and the fundamental formula it satisfies are operator theory and are cited in §*The Quadratic Representation*. The complementary skew part carries the Lie algebra, the graded structure and the Jordan module of *The Skew Part of an Algebra*, and it is not developed here. The standard examples are the symmetric matrices with the transpose and the Hermitian matrices with the conjugate transpose, whose positive and normed theory belongs to *Hilbert Algebras*. The general involution and the decomposition are *Involutive Algebras*; the Jordan algebras are *Jordan Algebras* of the same reading unit; the unitary elements are *Unitary Elements of an Involutive Algebra*.
 
 ## Summary of Notation
 
@@ -133,8 +123,6 @@ The **self-adjoint part** $H(A) = \{h : h^* = h\}$ of an algebra with an involut
 | $K(A) = A^-$ | the skew elements, $k^* = -k$, the complement |
 | $x \bullet y = \tfrac12(xy+yx)$ | the symmetrised product |
 | $x^{\circ n}$ | the Jordan powers |
-| $\mathrm{Jor}_x(y) = xyx$ | the quadratic representation |
-| $L(x)$ | the left multiplication of the Jordan algebra |
 
 ## Further Reading
 

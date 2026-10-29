@@ -210,7 +210,7 @@ The four factors give the table of exponents. The scale keeps $\ln r$, the phase
 
 ## Further Reading
 
-- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the algebraic companion: the composition laws, the eigenbasis, the block form and the image.
+- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the algebraic companion: the composition laws, the eigenbasis, the block form and the image.
 - [The Two-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the doubling rule and the cancellation of the phase on the other side.
 - [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the element exponential, its logarithm and its spectral reading.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles.

@@ -49,7 +49,7 @@ and the real dimension of the group is the sum $6+2=8$.
 
 **Remark (no splitting along the centre).** The sequence does not split by the central circle: the restriction of $\det$ to $\mathbb{C}^\times e_t$ is the squaring map $A\mapsto A^{2}$, which is two-to-one, and not an isomorphism. A splitting is supplied instead by the real directions.
 
-**Proposition (the matrix identifications).** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure* the determinant gives
+**Proposition (the matrix identifications).** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant* the determinant gives
 
 $$
 \boxed{\; \mathbb{B}^\times\cong GL_2(\mathbb{C}),\qquad \mathbb{B}^\times_1\cong SL_2(\mathbb{C}),\qquad \mathbb{C}^\times e_t\cong \mathbb{C}^\times I \;},

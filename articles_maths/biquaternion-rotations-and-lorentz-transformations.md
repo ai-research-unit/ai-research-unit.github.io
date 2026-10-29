@@ -52,7 +52,7 @@ The sandwich preserves both Hermitian sectors, scales the biquaternion norm by $
 
 ## Orbits and the Invariants
 
-The sandwich preserves the rank of the matrix image $\mathsf{M}_2(\tilde Q_3)$ (*$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*) and scales the biquaternion norm by $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.
+The sandwich preserves the rank of the matrix image $\mathsf{M}_2(\tilde Q_3)$ (*$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*) and scales the biquaternion norm by $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.
 
 | invariant | value | meaning |
 |---|---|---|
@@ -106,7 +106,7 @@ on the algebra. The one-sided action is its diagonal restriction, and the Lorent
 
 ## The Group of Units
 
-The group of units is the $\natural$-regular set, $\mathbb{B}^{\times} = \{\tilde{Q} : \langle\tilde{Q}\rangle_{\natural} \neq 0\}$, which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group of invertible matrices, since the biquaternion norm is the determinant (*$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*):
+The group of units is the $\natural$-regular set, $\mathbb{B}^{\times} = \{\tilde{Q} : \langle\tilde{Q}\rangle_{\natural} \neq 0\}$, which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group of invertible matrices, since the biquaternion norm is the determinant (*$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*):
 
 $$
 \mathbb{B}^{\times} \cong GL_2(\mathbb{C}),
@@ -140,7 +140,7 @@ so the finite-dimensional polynomial representations of $SL(2,\mathbb{C})$ are o
 
 ## The Defining Representation and the Weyl Spinors
 
-The defining representation of $SL(2,\mathbb{C})$ is $V_{1/2} = \mathbb{C}^2$, the polynomial representation of highest weight $1$. It is the same space that appears in *The Category of Modules* as the unique simple module of the algebra $\mathbb{B}$, and the isomorphism $\mathbb{B} \cong \operatorname{End}_{\mathbb{C}}(V_{1/2})$ is the content of the matrix realization (*$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*): choosing a basis of $V_{1/2}$ writes each element of the algebra as a $2 \times 2$ matrix, and the choice of basis is the only freedom in doing so. Under the Lorentz group the defining representation and its conjugate are the two **Weyl spinors**: $V_{1/2} = (\tfrac{1}{2}, 0)$ is the left-handed one and $\overline{V_{1/2}} = (0, \tfrac{1}{2})$ is the right-handed one; they are not isomorphic as complex representations, and parity exchanges them. In the algebra each is a Peirce column on which the one-sided operator acts, the realization in *The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion*, §*The Eigenbasis and the Two Spinor Spaces*. Their direct sum is the **Dirac spinor**
+The defining representation of $SL(2,\mathbb{C})$ is $V_{1/2} = \mathbb{C}^2$, the polynomial representation of highest weight $1$. It is the same space that appears in *The Category of Modules* as the unique simple module of the algebra $\mathbb{B}$, and the isomorphism $\mathbb{B} \cong \operatorname{End}_{\mathbb{C}}(V_{1/2})$ is the content of the matrix realization (*$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*): choosing a basis of $V_{1/2}$ writes each element of the algebra as a $2 \times 2$ matrix, and the choice of basis is the only freedom in doing so. Under the Lorentz group the defining representation and its conjugate are the two **Weyl spinors**: $V_{1/2} = (\tfrac{1}{2}, 0)$ is the left-handed one and $\overline{V_{1/2}} = (0, \tfrac{1}{2})$ is the right-handed one; they are not isomorphic as complex representations, and parity exchanges them. In the algebra each is a Peirce column on which the one-sided operator acts, the realization in *The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion*, §*The Eigenbasis and the Two Spinor Spaces*. Their direct sum is the **Dirac spinor**
 
 $$
 \Delta = V_{1/2} \oplus \overline{V_{1/2}} = (\tfrac{1}{2},0) \oplus (0,\tfrac{1}{2}), \qquad \dim_{\mathbb{C}} \Delta = 4,
@@ -243,9 +243,9 @@ The group of units is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$, of real dimen
 
 ## Further Reading
 
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the operator theory of the dagger sandwich: composition, factorisation through the polar word, spectra, kernel $U(1)$, image $CO^{+}(1,3)$ and the scaling of the norm.
+- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html), for the operator theory of the dagger sandwich: composition, factorisation through the polar word, spectra, kernel $U(1)$, image $CO^{+}(1,3)$ and the scaling of the norm.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the six remarkable subspaces, the operators that preserve all of them, and the infinitesimal split.
-- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](one-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the one-sided reading and the half-spin.
+- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the one-sided reading and the half-spin.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008).
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001).
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997).

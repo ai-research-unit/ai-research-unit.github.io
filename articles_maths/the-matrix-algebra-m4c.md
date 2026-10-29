@@ -372,7 +372,7 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the trace, the determinant, the characteristic polynomial, the singular values and the polar decomposition.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $GL_4$, $SL_4$, $U(4)$ and their Lie algebras.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the general algebra at order $n$.
-- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the four-dimensional regular model and its different trace and determinant.
+- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the four-dimensional regular model and its different trace and determinant.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root that produces the idempotents.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the sixteen corners of the full algebra.
 - [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the element and its trace.

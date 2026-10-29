@@ -162,4 +162,4 @@ Each of the four general products of the reduced biquaternion algebra has a left
 - [The Multiplication Operators of the Algebra of the Reduced Biquaternions](the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the plain operator alone.
 - [Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions](introduction-to-the-2x2-matrix-element-representation-of-reduced-biquaternions.html), for the matrices of the element.
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the invertibility criterion.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the non-commutative companion with its one simple module of dimension two.
+- [The Category of Modules](the-category-of-modules.html), for the non-commutative companion with its one simple module of dimension two.

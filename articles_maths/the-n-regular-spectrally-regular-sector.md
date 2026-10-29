@@ -1082,13 +1082,13 @@ The sector is the generic sector. It is the set of units with distinct non-zero 
 
 ## Further Reading
 
-- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the construction in full generality, the normalisation, the expansion of an arbitrary biquaternion and the spinor reading.
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction in full generality, the normalisation, the expansion of an arbitrary biquaternion and the spinor reading.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the unipotents and the scalar line.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its strata and the unit group.
-- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the discriminant, the spectral criterion and the spectral-degenerate cone.
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the Peirce corners and the minimal ideals.
+- [The Spectrum](the-spectrum.html), for the discriminant, the spectral criterion and the spectral-degenerate cone.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal ideals.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt N$ and the unit factor.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow.

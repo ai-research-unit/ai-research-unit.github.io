@@ -150,7 +150,7 @@ $$
 A=\bigoplus_{i,j=1}^{r}A_{ij}
 $$
 
-is therefore stable under $*$, and the spectral decomposition of $h$ is adapted to it: $h$ acts on $A_{ij}$ by $\lambda_i$ on the left and by $\lambda_j$ on the right, so $h\in\bigoplus_i A_{ii}$, the eigenspace of $L_h$ for $\lambda_i$ is $e_iA=\bigoplus_jA_{ij}$, and the diagonal corner $A_{ii}$ is the common eigenspace of $L_h$ and $R_h$ for $\lambda_i$.
+is therefore stable under $*$, and the spectral decomposition of $h$ is adapted to it: $h$ acts on $A_{ij}$ by $\lambda_i$ on the left and by $\lambda_j$ on the right, so $h\in\bigoplus_i A_{ii}$; the elements $x$ with $hx=\lambda_i x$ are $e_iA=\bigoplus_jA_{ij}$, and the diagonal corner $A_{ii}$ is the set of elements with $hx=\lambda_i x$ and $xh=\lambda_i x$.
 
 *Proof.* The identity $A_{ij}^*=A_{ji}$ follows from $(e_ix e_j)^*=e_j^*x^*e_i^*=e_jx^*e_i$. The diagonal corners are closed under multiplication and under $*$, and $e_i$ is their unit. The action of $h$ is $h(e_ix e_j)=(\lambda_ie_i)x e_j=\lambda_i e_ix e_j$, and similarly on the right.
 

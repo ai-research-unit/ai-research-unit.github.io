@@ -2,331 +2,419 @@
 
 ## Introduction
 
-This is one of the worked exercises on the biquaternion Dirac equation. It exists to test its parent article, *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, which supplies the field, the two natural spinor bases, the plane-wave solution structure, the covariant normalisations, the spin sums, and the biquaternionic mass-shell condition.
+This is a worked exercise on the biquaternion Dirac equation, written **in the biquaternion algebra**. No gamma matrix and no four-component column is used: the symbols $\gamma^\mu$ and $\gamma_5$ below name left and right multiplications, not matrices. The parent article, *The Biquaternion Dirac Equation — Solutions and the Non-Relativistic Limit*, supplies the equation, the field, the two bases, and the mass shell. The present exercise re-derives the parent's results in the algebra and supplies what the parent leaves implicit: the explicit spinors, the normalisation in the biquaternion pairing, the spin sums as operator identities, the massless limit, the algebra of the generators and the change of basis.
 
-We assume the parent article throughout and do not re-derive the equation. We take over from it: the spinor-module form of the equation, $(i\gamma^\mu\partial_\mu-m)\psi=0$; the two bases, **chiral** and **Dirac**; the plane-wave branches $\psi=w(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and $\psi=v(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ with $E=+\sqrt{\vec p^2+m^2}$; the momentum-space equations $(\not p-m)w=0$ and $(\not p+m)v=0$; the wave biquaternion and the mass-shell condition. The value of an exercise of this kind lies in the worked solutions, so each problem is carried to a definite answer.
-
-The six problems are: **(1)** write out $w^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ explicitly at rest and at general momentum; **(2)** verify the covariant normalisations $\bar w w=2m$, $\bar v v=-2m$ and the orthogonality $\bar w v=0$; **(3)** verify the spin sums; **(4)** take the massless limit and exhibit the helicity–chirality locking; **(5)** verify the gamma-matrix algebra in the two representations and determine how the Lorentz generators change basis; **(6)** verify the biquaternionic mass-shell condition.
+The translation is a dictionary of operators. A Dirac spinor is a biquaternion $\tilde\Psi$. Write $R_a$ and $L_a$ for right and left multiplication,
 
 $$
-g=\mathrm{diag}(+1,-1,-1,-1),\qquad \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,
+R_a(\tilde Q)=\tilde Q a,\qquad L_a(\tilde Q)=a\tilde Q .
 $$
 
-so that with the four-momentum $p^\mu=(E,\vec p)$ and $p_\mu=(E,-\vec p)$, the slash is $\not p=\gamma^\mu p_\mu=\gamma^0E-\boldsymbol\gamma\cdot\vec p$. This $g$ is **not** the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ carried by the $ict'$ gradient; the two are negatives, $g=-\eta$, and they yield the same $\Box$. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution sections we use natural units $\hbar=c=1$, restoring $\hbar$ and $c$ in Problem 6. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r){}^{*}}\xi^{(s)}=\delta^{rs}$ and the same for $\eta^{(r)}$, and $\chi_\pm$ are the helicity eigenspinors $\boldsymbol\sigma\cdot\vec u_p\,\chi_\pm=\pm\chi_\pm$.
+Then the Dirac generators and the chirality operator are
+
+$$
+\gamma^0=R_{i\vec e_x},\qquad \gamma^k=L_{i\vec e_k}R_{\vec e_y},\qquad \gamma_5=R_{-i\vec e_z}.
+$$
+
+The check is the algebra itself. Since $R$ and $L$ commute and $(i\vec e_x)^2=(i\vec e_k)^2=e_t$, while $\vec e_y^2=-e_t$,
+
+$$
+(\gamma^0)^2=R_{e_t}=1,\qquad (\gamma^k)^2=L_{e_t}R_{-e_t}=-1,
+$$
+
+$$
+\gamma^0\gamma^k+\gamma^k\gamma^0=L_{i\vec e_k}\bigl(R_{i\vec e_z}+R_{-i\vec e_z}\bigr)=0,\qquad
+\gamma^j\gamma^k+\gamma^k\gamma^j=L_{\vec e_j\vec e_k+\vec e_k\vec e_j}=0 .
+$$
+
+So $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, without a matrix.
+
+**The field and its two Peirce components.** Let
+
+$$
+\tilde\Pi_+=\frac{e_t+i\vec e_z}{2},\qquad \tilde\Pi_-=\frac{e_t-i\vec e_z}{2},
+$$
+
+be the Peirce idempotents, and let
+
+$$
+\vec\Upsilon_x=\frac{i\vec e_x-\vec e_y}{2},\qquad \vec\Upsilon_y=\frac{i\vec e_x+\vec e_y}{2}
+$$
+
+be the off-diagonal matrix units, so that $\{\tilde\Pi_+,\vec\Upsilon_y\}$ is a basis of $\mathbb{B}\tilde\Pi_+$ and $\{\vec\Upsilon_x,\tilde\Pi_-\}$ is a basis of $\mathbb{B}\tilde\Pi_-$. A two-component spinor $\chi=(\chi_1,\chi_2)$ is realised in the algebra by
+
+$$
+\Psi_+(\chi)=\chi_1\tilde\Pi_++\chi_2\vec\Upsilon_y\in\mathbb{B}\tilde\Pi_+,\qquad
+\Psi_-(\chi)=\chi_1\vec\Upsilon_x+\chi_2\tilde\Pi_-\in\mathbb{B}\tilde\Pi_- .
+$$
+
+The field is
+
+$$
+\tilde\Psi=\Psi_+(\psi_+)+\Psi_-(\psi_-),
+$$
+
+with $\psi_\pm\in\mathbb{C}^2$ its two Peirce coordinates. The Peirce components are $\tilde\Psi_\pm=\tilde\Psi\tilde\Pi_\pm$. In the chiral basis they are the two chiralities, $\psi_+$ left-handed and $\psi_-$ right-handed, and they are selected by the projectors
+
+$$
+P_L=\frac{1-\gamma_5}{2}=R_{\tilde\Pi_+},\qquad P_R=\frac{1+\gamma_5}{2}=R_{\tilde\Pi_-},
+\qquad \tilde\Psi_+=P_L\tilde\Psi,\quad \tilde\Psi_-=P_R\tilde\Psi .
+$$
+
+In the Dirac basis the same two components are the large and the small component; they are still the Peirce components, but there they are not the chirality projectors.
+
+**The momentum-space operator.** For a plane wave of four-momentum $p^\mu=(E,\vec p)$, the Dirac operator is
+
+$$
+\not p=\gamma^0E-\gamma^k p_k=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y},
+$$
+
+and the equation is $\not p\,\tilde\Psi=m\tilde\Psi$. Written on the element,
+
+$$
+E\,\tilde\Psi\,i\vec e_x-(\vec p\cdot\vec e)\,\tilde\Psi\,\vec e_y=m\,\tilde\Psi .
+$$
+
+In Peirce coordinates this is the pair
+
+$$
+(E-\boldsymbol\sigma\cdot\vec p)\,\psi_-=m\,\psi_+,\qquad
+(E+\boldsymbol\sigma\cdot\vec p)\,\psi_+=m\,\psi_- ,
+$$
+
+in the chiral basis, and
+
+$$
+(E-m)\,\psi_+=(\boldsymbol\sigma\cdot\vec p)\,\psi_-,\qquad
+(E+m)\,\psi_-=(\boldsymbol\sigma\cdot\vec p)\,\psi_+
+$$
+
+in the Dirac basis. The two pairs are the same equation in the two bases.
+
+**Conventions.** Natural units $\hbar=c=1$ in the solutions; $\hbar$ and $c$ are restored in Problem 6. The metric of the spacetime gradient is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the Clifford metric of the generators is $g=-\eta$. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r)\dagger}\xi^{(s)}=\delta^{rs}$; $\chi_\pm$ are the helicity eigenspinors, $\boldsymbol\sigma\cdot\vec u_p\,\chi_\pm=\pm\chi_\pm$, with $\vec u_p=\vec p/|\vec p|$. The Hermitian conjugate $^*$ is the coefficient conjugation composed with the quaternion conjugation, $\tilde Q^*=\overline{\tilde Q^\natural}$, and under the matrix representation $\mathsf{M}_2$ it is the conjugate transpose.
+
+The six problems are: **(1)** the spinors at rest and at general momentum; **(2)** the covariant normalisation and the orthogonality; **(3)** the spin sums; **(4)** the massless limit and the helicity–chirality locking; **(5)** the algebra of the generators and the change of basis; **(6)** the biquaternionic mass shell.
 
 ## Problem 1: The spinors at rest and at general momentum
 
-**Statement.** Starting from $(\not p-m)w=0$ and $(\not p+m)v=0$, write out $w^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ explicitly at rest and at general momentum.
+**Statement.** Solve $\not p\,\tilde w=m\tilde w$ and $\not p\,\tilde v=-m\tilde v$ explicitly at rest and at general momentum, in the chiral and in the Dirac basis.
 
-**Solution.** In the Dirac basis, $\gamma^0=\mathrm{diag}(I_2,-I_2)$ and $\gamma^k=\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix}$, so
-
-$$
-\not p-m=\begin{pmatrix}(E-m)I_2 & -\boldsymbol\sigma\cdot\vec p\\[2pt] \boldsymbol\sigma\cdot\vec p & -(E+m)I_2\end{pmatrix}.
-$$
-
-Writing $w=(w_A,w_B)$, the equation $(\not p-m)w=0$ becomes the pair
+**Solution.** The equation was written above as a pair on the Peirce coordinates. In the **chiral basis** the pair is
 
 $$
-(E-m)w_A=\boldsymbol\sigma\cdot\vec p\,w_B,\qquad (E+m)w_B=\boldsymbol\sigma\cdot\vec p\,w_A .
+(E-\boldsymbol\sigma\cdot\vec p)\,\psi_-=m\psi_+,\qquad (E+\boldsymbol\sigma\cdot\vec p)\,\psi_+=m\psi_- .
 $$
 
-The second equation gives $w_B=\dfrac{\boldsymbol\sigma\cdot\vec p}{E+m}w_A$, and the first is then satisfied automatically on the mass shell $E^2=\vec p^2+m^2$; the upper two-spinor $w_A$ is free. Choosing $w_A=\sqrt{E+m}\,\xi^{(r)}$ and using $\dfrac{\boldsymbol\sigma\cdot\vec p}{E+m}=\dfrac{\boldsymbol\sigma\cdot\vec p}{\sqrt{E+m}\sqrt{E+m}}$ together with $\sqrt{E^2-m^2}=|\vec p|$ gives the parent's positive-frequency spinors,
+Eliminating $\psi_-$ gives $(E^2-\vec p^2)\psi_+=m^2\psi_+$, so the pair is soluble exactly on the mass shell $E^2=\vec p^2+m^2$. For the positive-frequency branch, take $\psi_+=\sqrt{E\mp|\vec p|}\,\chi_\pm$; the first equation gives $\psi_-=\sqrt{E\pm|\vec p|}\,\chi_\pm$. The helicity label is fixed by the sign: the two solutions are
 
 $$
-\boxed{\;w^{(r)}(\vec p)=\begin{pmatrix}\sqrt{E+m}\,\xi^{(r)}\\[2pt] \sqrt{E-m}\,(\boldsymbol\sigma\cdot\vec u_p)\,\xi^{(r)}\end{pmatrix},\qquad \vec u_p=\frac{\vec p}{|\vec p|} }.
+\boxed{\;\tilde w_\pm(\vec p)=\sqrt{E\mp|\vec p|}\;\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\;\Psi_-(\chi_\pm)\;}
 $$
 
-For the negative-frequency branch, $(\not p+m)v=0$ reads, in the same basis,
+For the negative-frequency branch, the same pair with $m\to-m$ gives $\psi_+=-\sqrt{E\mp|\vec p|}\,\chi_\pm$ and $\psi_-=\sqrt{E\pm|\vec p|}\,\chi_\pm$:
 
 $$
-(E+m)v_A=\boldsymbol\sigma\cdot\vec p\,v_B,\qquad (E-m)v_B=\boldsymbol\sigma\cdot\vec p\,v_A,
+\boxed{\;\tilde v_\pm(\vec p)=-\sqrt{E\mp|\vec p|}\;\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\;\Psi_-(\chi_\pm)\;}
 $$
 
-so $v_A=\dfrac{\boldsymbol\sigma\cdot\vec p}{E+m}v_B$, and with $v_B=\sqrt{E+m}\,\eta^{(r)}$,
+**At rest.** With $\vec p=0$ and $E=m$, the two branches lie in the right ideals $\mathbb{B}\frac12(1\pm i\vec e_x)$:
 
 $$
-\boxed{\;v^{(r)}(\vec p)=\begin{pmatrix}\sqrt{E-m}\,(\boldsymbol\sigma\cdot\vec u_p)\,\eta^{(r)}\\[2pt] \sqrt{E+m}\,\eta^{(r)}\end{pmatrix} }.
+\tilde w(0)\,(1-i\vec e_x)=0,\qquad \tilde v(0)\,(1+i\vec e_x)=0 .
 $$
 
-**At rest.** Setting $\vec p=0$, $E=m$, the general formulas collapse to
+Equivalently, the positive-frequency amplitude has equal Peirce coordinates and the negative-frequency amplitude has opposite ones:
 
 $$
-w^{(r)}(0)=\sqrt{2m}\begin{pmatrix}\xi^{(r)}\\0\end{pmatrix},\qquad v^{(r)}(0)=\sqrt{2m}\begin{pmatrix}0\\\eta^{(r)}\end{pmatrix},
+\tilde w_\pm(0)=\sqrt{m}\,\bigl(\Psi_+(\chi_\pm)+\Psi_-(\chi_\pm)\bigr),\qquad
+\tilde v_\pm(0)=\sqrt{m}\,\bigl(-\Psi_+(\chi_\pm)+\Psi_-(\chi_\pm)\bigr).
 $$
 
-that is,
+The two rest amplitudes are therefore the two eigenspaces of $R_{i\vec e_x}$; each is two-dimensional over $\mathbb{C}$, and the two spin states are the two choices of $\chi_\pm$.
+
+**The Dirac basis.** The change of basis is right multiplication by the unit biquaternion
 
 $$
-w^{(1)}(0)=\sqrt{2m}\begin{pmatrix}1\\0\\0\\0\end{pmatrix},\quad w^{(2)}(0)=\sqrt{2m}\begin{pmatrix}0\\1\\0\\0\end{pmatrix},\quad v^{(1)}(0)=\sqrt{2m}\begin{pmatrix}0\\0\\1\\0\end{pmatrix},\quad v^{(2)}(0)=\sqrt{2m}\begin{pmatrix}0\\0\\0\\1\end{pmatrix}.
+\tilde W=\frac{e_t+\vec e_y}{\sqrt2},\qquad \tilde W^{-1}=\tilde W^{\natural}=\frac{e_t-\vec e_y}{\sqrt2},
 $$
 
-At rest the positive-frequency spinors live entirely in the upper pair of components and the negative-frequency spinors entirely in the lower pair.
-
-**At general momentum.** Writing $\vec u_p=(\sin\theta\cos\phi,\ \sin\theta\sin\phi,\ \cos\theta)$,
+as Problem 5 shows. In the Dirac basis the pair is $(E-m)\psi_+=(\boldsymbol\sigma\cdot\vec p)\psi_-$ and $(E+m)\psi_-=(\boldsymbol\sigma\cdot\vec p)\psi_+$, and the solutions are
 
 $$
-\boldsymbol\sigma\cdot\vec u_p=\begin{pmatrix}\cos\theta & \exp(-i\phi)\sin\theta\\[2pt] \exp(i\phi)\sin\theta & -\cos\theta\end{pmatrix}.
-$$
-
-Substituting into the boxed formulas gives the explicit components
-
-$$
-w^{(1)}=\begin{pmatrix}\sqrt{E+m}\\0\\ \sqrt{E-m}\cos\theta\\ \sqrt{E-m}\,\exp(i\phi)\sin\theta\end{pmatrix},\qquad
-w^{(2)}=\begin{pmatrix}0\\ \sqrt{E+m}\\ \sqrt{E-m}\,\exp(-i\phi)\sin\theta\\ -\sqrt{E-m}\cos\theta\end{pmatrix},
+\boxed{\;\tilde w^{(r)}(\vec p)=\sqrt{E+m}\;\Psi_+(\xi^{(r)})+\sqrt{E-m}\;\Psi_-(\boldsymbol\sigma\cdot\vec u_p\,\xi^{(r)})\;}
 $$
 
 $$
-v^{(1)}=\begin{pmatrix}\sqrt{E-m}\cos\theta\\ \sqrt{E-m}\,\exp(i\phi)\sin\theta\\ \sqrt{E+m}\\0\end{pmatrix},\qquad
-v^{(2)}=\begin{pmatrix}\sqrt{E-m}\,\exp(-i\phi)\sin\theta\\ -\sqrt{E-m}\cos\theta\\0\\ \sqrt{E+m}\end{pmatrix}.
+\boxed{\;\tilde v^{(r)}(\vec p)=\sqrt{E-m}\;\Psi_+(\boldsymbol\sigma\cdot\vec u_p\,\eta^{(r)})+\sqrt{E+m}\;\Psi_-(\eta^{(r)})\;}
 $$
 
-At $\vec p=0$ these reduce to the rest forms, and they solve the momentum-space equations identically for all $\vec p$. The two free two-spinors give the two spin states of the particle (for $w$) and of the antiparticle (for $v$), so the positive- and negative-frequency solution spaces are each two-dimensional over $\mathbb C$, and together they span the four-dimensional amplitude space.
+At rest these collapse to a single Peirce component,
+
+$$
+\tilde w^{(r)}(0)=\sqrt{2m}\,\Psi_+(\xi^{(r)}),\qquad
+\tilde v^{(r)}(0)=\sqrt{2m}\,\Psi_-(\eta^{(r)}),
+$$
+
+which is the biquaternion statement that the large component of the rest spinor is the first Peirce component. Both formulas are the parent's, with the four-component column replaced by the pair of Peirce coordinates.
+
+**Explicit components.** With $\vec u_p=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)$ and the helicity spinors
+
+$$
+\chi_+=\begin{pmatrix}\cos(\theta/2)\\ e^{i\phi}\sin(\theta/2)\end{pmatrix},\qquad
+\chi_-=\begin{pmatrix}-e^{-i\phi}\sin(\theta/2)\\ \cos(\theta/2)\end{pmatrix},
+$$
+
+the chiral solutions have the coordinate pairs
+
+$$
+(\psi_+,\psi_-)=\bigl(\sqrt{E\mp|\vec p|}\,\chi_\pm,\ \sqrt{E\pm|\vec p|}\,\chi_\pm\bigr),
+$$
+
+and the Dirac solutions have
+
+$$
+(\psi_+,\psi_-)=\bigl(\sqrt{E+m}\,\xi^{(r)},\ \sqrt{E-m}\,(\boldsymbol\sigma\cdot\vec u_p)\,\xi^{(r)}\bigr).
+$$
+
+These are the four-component spinors of the parent, read as coordinates in the two Peirce components rather than as entries of a column.
 
 ## Problem 2: Covariant normalisation and orthogonality
 
-**Statement.** Verify $\bar w^{(r)}w^{(s)}=2m\,\delta^{rs}$, $\bar v^{(r)}v^{(s)}=-2m\,\delta^{rs}$, and $\bar w^{(r)}v^{(s)}=0$, together with the Hermitian products.
+**Statement.** Verify $\bar w^{(r)}w^{(s)}=2m\delta^{rs}$, $\bar v^{(r)}v^{(s)}=-2m\delta^{rs}$, $\bar w^{(r)}v^{(s)}=0$, and the Hermitian products.
 
-**Solution.** The Dirac adjoint in the Dirac basis is $\bar w=w^\dagger\gamma^0=(w_A^\dagger,-w_B^\dagger)$, so $\bar w\,w=w_A^\dagger w_A-w_B^\dagger w_B$. The single algebraic input is the identity for unit $\vec u_p$,
-
-$$
-(\boldsymbol\sigma\cdot\vec u_p)^2=|\vec u_p|^2I_2=I_2.
-$$
-
-Then
+**Solution.** Write $\bar w w=\langle\tilde w,\tilde w\rangle_{\mathrm D}$ for the Dirac bilinear. The Dirac adjoint is the Hermitian pairing twisted by the representative of $\gamma^0$. In the chiral basis,
 
 $$
-\bar w^{(r)}w^{(s)}
-=(E+m)\,\xi^{(r){}^{*}}\xi^{(s)}-(E-m)\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\vec u_p)^2\xi^{(s)}
-=(E+m)\delta^{rs}-(E-m)\delta^{rs}=2m\,\delta^{rs}.
+\langle\tilde\Psi,\tilde\Phi\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde\Psi^{*}\tilde\Phi\,i\vec e_x\bigr)
+=\psi_+^\dagger\phi_-+\psi_-^\dagger\phi_+ ,
 $$
 
-For the negative-frequency branch the order of the two terms is reversed,
+and in the Dirac basis the twist is $i\vec e_z$, the representative of $\gamma^0$ there. The single algebraic input is the unit-vector identity
 
 $$
-\bar v^{(r)}v^{(s)}
-=(E-m)\,\eta^{(r){}^{*}}(\boldsymbol\sigma\cdot\vec u_p)^2\eta^{(s)}-(E+m)\,\eta^{(r){}^{*}}\eta^{(s)}
-=(E-m)\delta^{rs}-(E+m)\delta^{rs}=-2m\,\delta^{rs}.
+(i\vec u_p)^2=e_t,
 $$
 
-This relative minus sign is the standard signature of the negative-frequency branch. For the cross term,
+which is the biquaternion form of $(\boldsymbol\sigma\cdot\vec u_p)^2=I_2$.
+
+For the chiral solutions, $\psi_+=\sqrt{E\mp|\vec p|}\,\chi_\pm$ and $\psi_-=\sqrt{E\pm|\vec p|}\,\chi_\pm$. The Hermitian product is diagonal,
 
 $$
-\bar w^{(r)}v^{(s)}
-=\sqrt{E^2-m^2}\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\vec u_p)\eta^{(s)}
--\sqrt{E^2-m^2}\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\vec u_p)\eta^{(s)}=0,
+\mathrm{Tr}\bigl(\tilde w_\pm^{*}\tilde w_\pm\bigr)=\psi_+^\dagger\psi_++\psi_-^\dagger\psi_-=(E\mp|\vec p|)+(E\pm|\vec p|)=2E,
 $$
 
-since $\boldsymbol\sigma\cdot\vec u_p$ is Hermitian and the two terms cancel exactly. The Hermitian products follow from the same formulas without the $\gamma^0$:
+and the Dirac pairing is
 
 $$
-w^{(r){}^{*}}w^{(s)}=(E+m)\delta^{rs}+(E-m)\delta^{rs}=2E\,\delta^{rs},
+\langle\tilde w_\pm,\tilde w_\pm\rangle_{\mathrm D}
+=\psi_+^\dagger\psi_-+\psi_-^\dagger\psi_+
+=\sqrt{E^2-\vec p^2}\,\chi_\pm^\dagger\chi_\pm+\sqrt{E^2-\vec p^2}\,\chi_\pm^\dagger\chi_\pm=2m .
 $$
 
-$$
-v^{(r){}^{*}}v^{(s)}=(E-m)\delta^{rs}+(E+m)\delta^{rs}=2E\,\delta^{rs}.
-$$
-
-Finally, the mixed Hermitian product of the parent article requires opposite momenta and likewise vanishes:
+Opposite helicities are orthogonal, $\langle\tilde w_+,\tilde w_-\rangle_{\mathrm D}=0$. For the negative-frequency branch the first coordinate carries the minus sign, and the same computation gives $-2m$. The mixed term cancels because the two products are opposite:
 
 $$
-w^{(r){}^{*}}(\vec p)\,v^{(s)}(-\vec p)
-=\sqrt{E^2-m^2}\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\vec u_p)\eta^{(s)}
--\sqrt{E^2-m^2}\,\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\vec u_p)\eta^{(s)}=0 .
+\langle\tilde w_\pm,\tilde v_\pm\rangle_{\mathrm D}
+=\sqrt{E^2-\vec p^2}\,\chi_\pm^\dagger\chi_\pm-\sqrt{E^2-\vec p^2}\,\chi_\pm^\dagger\chi_\pm=0 .
 $$
 
-The bilinear $\bar w w$ is a Lorentz scalar, and its value $2m$ is the covariant normalisation; $\bar w w$ is not the probability density, which is the positive quantity $w^\dagger w=2E$. As a numerical check, for $m=1$, $|\vec p|=0.6$ (hence $E=1.16619$), direct evaluation gives $\bar w w=2.0000$, $\bar v v=-2.0000$, $\bar w v=0$, and $w^\dagger w=v^\dagger v=2.3324=2E$, all to machine precision.
+In the Dirac basis the same three statements hold with the twist $i\vec e_z$, and the spin labels $r,s$ replace the helicity labels. The Hermitian products are
+
+$$
+\mathrm{Tr}\bigl(\tilde w^{*}\tilde w\bigr)=2E,\qquad \mathrm{Tr}\bigl(\tilde v^{*}\tilde v\bigr)=2E,
+$$
+
+and the mixed Hermitian product vanishes at opposite momenta,
+
+$$
+\mathrm{Tr}\bigl(\tilde w^{(r)*}(\vec p)\,\tilde v^{(s)}(-\vec p)\bigr)=0,
+$$
+
+which is the parent's relation with the spin labels $r,s$.
+
+The bilinear $\bar ww=\langle\tilde w,\tilde w\rangle_{\mathrm D}$ is a Lorentz scalar and its value $2m$ is the covariant normalisation; it is not the probability density, which is the positive quantity $\mathrm{Tr}(\tilde w^*\tilde w)=2E$. As a numerical check, for $m=1$ and $|\vec p|=0.6$, hence $E=1.166190$, direct evaluation gives $\bar ww=2.0000$, $\bar vv=-2.0000$, $\bar wv=0$, and $\mathrm{Tr}(\tilde w^*\tilde w)=\mathrm{Tr}(\tilde v^*\tilde v)=2.3324=2E$.
 
 ## Problem 3: The spin sums
 
-**Statement.** Verify the completeness relations (spin sums) $\sum_{r=1}^{2}w^{(r)}\bar w^{(r)}=\not p+m$ and $\sum_{r=1}^{2}v^{(r)}\bar v^{(r)}=\not p-m$.
-
-**Solution.** The spin sum is the outer product $w\bar w$, which is a $4\times4$ matrix. Using $\bar w=(w_A^\dagger,-w_B^\dagger)$ and the two-spinor completeness $\sum_r\xi^{(r)}\xi^{(r){}^{*}}=I_2$,
+**Statement.** Verify the completeness relations
 
 $$
-w^{(r)}\bar w^{(r)}
-=\begin{pmatrix}w_Au_A^\dagger & -w_Au_B^\dagger\\[2pt] w_Bu_A^\dagger & -w_Bu_B^\dagger\end{pmatrix}
-\;\xrightarrow[\text{sum over }r]{}\;
-\begin{pmatrix}(E+m)I_2 & -(\boldsymbol\sigma\cdot\vec p)\\[2pt] \boldsymbol\sigma\cdot\vec p & -(E-m)I_2\end{pmatrix},
+\sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\not p+m,\qquad
+\sum_{\pm}\tilde v_\pm\,\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\not p-m .
 $$
 
-where in the off-diagonal blocks we used $\sum_r\xi^{(r)}\xi^{(r){}^{*}}(\boldsymbol\sigma\cdot\vec u_p)=\boldsymbol\sigma\cdot\vec u_p$ and its Hermitian conjugate. In the Dirac basis,
+**Solution.** The left-hand side is an operator on $\mathbb{B}$, not a matrix: for every $\tilde\Phi$,
 
 $$
-\not p+m=\gamma^0E-\boldsymbol\gamma\cdot\vec p+m
-=\begin{pmatrix}(E+m)I_2 & -\boldsymbol\sigma\cdot\vec p\\[2pt] \boldsymbol\sigma\cdot\vec p & -(E-m)I_2\end{pmatrix},
+\sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\tilde\Phi\rangle_{\mathrm D}
+=\sum_{\pm}\tilde w_\pm\bigl(\psi_{\pm,+}^\dagger\phi_-+\psi_{\pm,-}^\dagger\phi_+\bigr).
 $$
 
-since $-\boldsymbol\gamma\cdot\vec p=\begin{pmatrix}0&-\boldsymbol\sigma\cdot\vec p\\ \boldsymbol\sigma\cdot\vec p&0\end{pmatrix}$ and $-E+m=-(E-m)$. This is exactly the matrix obtained above, so
+On the chiral solutions, $\psi_{\pm,+}=\sqrt{E\mp|\vec p|}\,\chi_\pm$ and $\psi_{\pm,-}=\sqrt{E\pm|\vec p|}\,\chi_\pm$. The two-spinor completeness relations are $\sum_\pm\chi_\pm\chi_\pm^\dagger=I_2$ and $\sum_\pm(\pm1)\chi_\pm\chi_\pm^\dagger=\boldsymbol\sigma\cdot\vec u_p$. Substituting, the four Peirce blocks are
 
 $$
-\sum_{r=1}^{2}w^{(r)}(\vec p)\,\bar w^{(r)}(\vec p)=\not p+m .
+\sum_\pm\psi_{\pm,+}\psi_{\pm,-}^\dagger=mI_2,\qquad
+\sum_\pm\psi_{\pm,+}\psi_{\pm,+}^\dagger=EI_2-|\vec p|\,\boldsymbol\sigma\cdot\vec u_p,
 $$
 
-The negative-frequency sum is identical in structure with the roles of the two blocks interchanged. Carrying it out with $\sum_r\eta^{(r)}\eta^{(r){}^{*}}=I_2$,
+and their conjugates. Restoring the algebra, $E I_2-|\vec p|\,\boldsymbol\sigma\cdot\vec u_p$ is $E-p_k\sigma_k$ and $mI_2$ is $m$, so
 
 $$
-\sum_{r=1}^{2}v^{(r)}(\vec p)\,\bar v^{(r)}(\vec p)
-=\begin{pmatrix}-(E-m)I_2 & -\boldsymbol\sigma\cdot\vec p\\[2pt] \boldsymbol\sigma\cdot\vec p & -(E+m)I_2\end{pmatrix}
-=\not p-m .
+\sum_{\pm}\tilde w_\pm\,\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}
+=E\,R_{i\vec e_x}-p_k\,L_{i\vec e_k}R_{\vec e_y}+m=\not p+m .
 $$
 
-The two spin sums are consistent with the normalisations of Problem 2, since taking the trace of $\sum w\bar w$ over the particle space returns $4m$, the trace of $\not p+m$, and the projectors annihilate one another on shell:
+The negative-frequency sum is identical in structure with the roles of the two Peirce components interchanged, and gives $\not p-m$.
+
+**The on-shell identity.** The two sums are consistent with the normalisations because the trace of $\not p+m$ over the four-dimensional amplitude space is $4m$, and because
 
 $$
-(\not p+m)(\not p-m)=\not p^2-m^2=(p_\mu p_\nu\gamma^\mu\gamma^\nu)-m^2=(p^2-m^2)I_4=0,
+(\not p+m)(\not p-m)=\not p^2-m^2 .
 $$
 
-using $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}$ and $p^2=E^2-\vec p^2=m^2$. This is the algebraic statement that the two branches close the amplitude space.
+The operator $\not p$ squares to a multiple of the identity:
 
-**Check in the chiral basis.** The same relations hold in the chiral basis with the helicity index $\pm$ replacing $r$, once the negative-frequency chiral spinors of Problem 4 are used: $\sum_\pm w_\pm\bar w_\pm=\not p+m$ and $\sum_\pm v_\pm\bar v_\pm=\not p-m$, where the sums use $\sum_\pm\chi_\pm\chi_\pm^\dagger=I_2$ and $\sum_\pm(\pm1)\chi_\pm\chi_\pm^\dagger=\boldsymbol\sigma\cdot\vec u_p$. A numerical evaluation at the same kinematics confirms both equalities to machine precision.
+$$
+\not p^2=E^2R_{(i\vec e_x)^2}-p_jp_kL_{i\vec e_j}R_{\vec e_y}L_{i\vec e_k}R_{\vec e_y}
+=E^2-p_jp_kL_{-\vec e_j\vec e_k}R_{-e_t}
+=E^2-\vec p^2 ,
+$$
+
+the cross terms vanishing because $R_{i\vec e_x}$ and $L_{i\vec e_k}R_{\vec e_y}$ anticommute. On the mass shell $\not p^2=m^2$, so the two branches close the amplitude space, exactly as $(\not p+m)(\not p-m)=0$ in the matrix language.
+
+**Check in the Dirac basis.** The same relations hold with the spin index $r$ replacing the helicity index, once the Dirac-basis spinors of Problem 1 are used:
+
+$$
+\sum_{r=1}^{2}\tilde w^{(r)}\bigl\langle\tilde w^{(r)},\cdot\bigr\rangle_{\mathrm D}=\not p+m,\qquad
+\sum_{r=1}^{2}\tilde v^{(r)}\bigl\langle\tilde v^{(r)},\cdot\bigr\rangle_{\mathrm D}=\not p-m .
+$$
+
+The proof uses $\sum_r\xi^{(r)}\xi^{(r)\dagger}=I_2$ in place of the helicity sums. A numerical evaluation at the same kinematics confirms both equalities on a basis of $\mathbb{B}$.
 
 ## Problem 4: The massless limit and helicity–chirality locking
 
-**Statement.** In the chiral basis, exhibit the massless limit and show how helicity locks to chirality.
+**Statement.** Take $m=0$ and exhibit the helicity–chirality locking in the Peirce components.
 
-**Solution.** In the chiral basis, $\gamma^0=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}$, $\gamma^k=\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix}$, so
-
-$$
-\not p=\begin{pmatrix}0 & E-\boldsymbol\sigma\cdot\vec p\\[2pt] E+\boldsymbol\sigma\cdot\vec p & 0\end{pmatrix},\qquad
-\not p-m=\begin{pmatrix}-m & E-\boldsymbol\sigma\cdot\vec p\\[2pt] E+\boldsymbol\sigma\cdot\vec p & -m\end{pmatrix}.
-$$
-
-The parent article gives the positive-frequency chiral spinors, indexed by helicity,
+**Solution.** In the chiral basis the massless equation $\not p\,\tilde\Psi=0$ splits into its two Peirce components,
 
 $$
-w_\pm(\vec p)=\begin{pmatrix}\sqrt{E\mp|\vec p|}\;\chi_\pm\\[2pt] \sqrt{E\pm|\vec p|}\;\chi_\pm\end{pmatrix},
+\bigl(\not p\,\tilde\Psi\bigr)\tilde\Pi_+=0,\qquad \bigl(\not p\,\tilde\Psi\bigr)\tilde\Pi_-=0,
 $$
 
-with the upper block left-handed and the lower block right-handed. Verifying the equation is immediate: the upper component of $(\not p-m)w_\pm$ is $-m\sqrt{E\mp|\vec p|}+(E\mp|\vec p|)\sqrt{E\pm|\vec p|}$, which vanishes because $(E\mp|\vec p|)\sqrt{E\pm|\vec p|}=m\sqrt{E\mp|\vec p|}$; the lower component vanishes identically by the same identity.
-
-The parent article displays the chiral positive-frequency spinors but does not write the chiral negative-frequency spinors; we construct them here, since the massless limit needs them. With the ansatz $v_\pm=(a\chi_\pm,b\chi_\pm)$, the equation $(\not p+m)v_\pm=0$ requires $ma=-(E\mp|\vec p|)b$ and $mb=-(E\pm|\vec p|)a$. The choice $b=\sqrt{E\pm|\vec p|}$ gives $a=-\sqrt{E\mp|\vec p|}$, so
+which are the two Weyl equations
 
 $$
-v_\pm(\vec p)=\begin{pmatrix}-\sqrt{E\mp|\vec p|}\,\chi_\pm\\[2pt] \sqrt{E\pm|\vec p|}\,\chi_\pm\end{pmatrix}.
+(E-\boldsymbol\sigma\cdot\vec p)\,\psi_-=0,\qquad (E+\boldsymbol\sigma\cdot\vec p)\,\psi_+=0 .
 $$
 
-The relative minus sign is fixed by the normalisation $\bar v_\pm v_\pm=-2m$; with it, the chiral spinors reproduce all the results of Problems 2 and 3.
-
-**Massless limit.** Set $m=0$, so that $E=|\vec p|$. Then
+For $m=0$ the dispersion is $E=|\vec p|$, and the positive-frequency solutions of Problem 1 become
 
 $$
-w_+(\vec p)\longrightarrow\sqrt{2E}\begin{pmatrix}0\\\chi_+\end{pmatrix},\qquad
-w_-(\vec p)\longrightarrow\sqrt{2E}\begin{pmatrix}\chi_-\\0\end{pmatrix},
+\tilde w_+(\vec p)=\sqrt{2E}\,\Psi_-(\chi_+),\qquad
+\tilde w_-(\vec p)=\sqrt{2E}\,\Psi_+(\chi_-).
 $$
 
-and likewise for $v_\pm$. Each solution becomes a single Weyl spinor of definite chirality, and the two labels are locked: **positive helicity goes with right-handedness and negative helicity with left-handedness**. This is the precise sense of the parent's statement that a massless fermion of definite helicity has definite chirality. The locking is what the mass term destroys: in the chiral basis the mass term is the off-diagonal entry $-m$ in $\not p-m$, and it is the only term in the equation that couples the two chiralities.
-
-**The Weyl equations.** On shell, $\not p\,\psi=0$ splits into the two equations $(E-\boldsymbol\sigma\cdot\vec p)\psi_R=0$ and $(E+\boldsymbol\sigma\cdot\vec p)\psi_L=0$. With $E=|\vec p|$ these read
+The first has only the right-handed Peirce component, the second only the left-handed one. The two labels are locked: **positive helicity goes with right-handedness and negative helicity with left-handedness.** In the algebra this is the statement that $\tilde w_+$ is annihilated by $P_L$ and $\tilde w_-$ by $P_R$:
 
 $$
-\boldsymbol\sigma\cdot\vec u_p\,\psi_R=+\psi_R,\qquad \boldsymbol\sigma\cdot\vec u_p\,\psi_L=-\psi_L,
+P_L\tilde w_+=0,\qquad P_R\tilde w_-=0 .
 $$
 
-which is the helicity–chirality locking again. Restoring $c$ and $\hbar$ and passing to the time-dependent form gives the parent's Weyl equations $i\hbar\,\partial/\partial t'\psi_R=c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_R$ and $i\hbar\,\partial/\partial t'\psi_L=-c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_L$, where $p$ is the momentum operator (the parent writes the unit direction $\vec u_p$ in the plane-wave formulas; in the operator equations the momentum is $p=-i\hbar\nabla$). Each Weyl equation has a two-dimensional solution space, and the Dirac equation is recovered as the pair.
+The mass term is the only term that couples the two Peirce components: in the chiral pair, $m\psi_+$ and $m\psi_-$ are the off-diagonal entries, and setting $m=0$ decouples them. At fixed momentum each Weyl equation selects one complex helicity state, and the two together give the two massless states; the Dirac equation is recovered as the pair. Restoring $c$ and $\hbar$ and passing to the time-dependent form gives the parent's Weyl equations $i\hbar\,\partial_{t'}\psi_R=c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_R$ and $i\hbar\,\partial_{t'}\psi_L=-c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_L$, with $p=-i\hbar\nabla$ in the operator equations.
 
-## Problem 5: The gamma-matrix algebra and the change of basis
+## Problem 5: The algebra of the generators and the change of basis
 
-**Statement.** Verify the Clifford algebra in the chiral and Dirac representations, identify $\gamma_5$, and determine how the Lorentz generators change basis.
+**Statement.** Verify the Clifford relations in the algebra, identify $\gamma_5$, and determine how the generators change under the change of basis.
 
-**Solution.** In both representations the gamma matrices have the block forms
-
-$$
-\text{chiral:}\quad \gamma^0_c=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix},\quad \gamma^k_c=\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix};
-$$
+**Solution.** The relations were verified in the introduction from the multiplication table. The chirality operator is
 
 $$
-\text{Dirac:}\quad \gamma^0_d=\begin{pmatrix}I_2&0\\0&-I_2\end{pmatrix},\quad \gamma^k_d=\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix}.
+\gamma_5=R_{-i\vec e_z},\qquad \gamma_5^2=R_{(-i\vec e_z)^2}=1,
 $$
 
-The spatial generators are the **same** in the two representations; only $\gamma^0$ differs. Direct multiplication gives $(\gamma^0)^2=I_4$, $(\gamma^k)^2=-I_4$, $\gamma^0\gamma^k=-\gamma^k\gamma^0$, and $\gamma^j\gamma^k=-\gamma^k\gamma^j$ for $j\neq k$ (the last because $\sigma_j\sigma_k=-\sigma_k\sigma_j$ off diagonal). Hence $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$ in both bases, as the parent states. The chirality operator is
+and it anticommutes with every generator: with $\gamma^0=R_{i\vec e_x}$ and $\gamma^k=L_{i\vec e_k}R_{\vec e_y}$,
 
 $$
-\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3:
-\qquad \gamma_5^c=\begin{pmatrix}-I_2&0\\0&I_2\end{pmatrix},\qquad
-\gamma_5^d=\begin{pmatrix}0&I_2\\I_2&0\end{pmatrix}.
-$$
-
-In both bases $\gamma_5^2=I_4$ and $\gamma_5$ anticommutes with every generator, $\{\gamma_5,\gamma^\mu\}=0$; the projectors $P_L=\tfrac12(1-\gamma_5)$, $P_R=\tfrac12(1+\gamma_5)$ select the chiralities, and in the chiral basis they are simply the two diagonal blocks.
-
-**Change of basis.** The parent states that the two bases are related by a fixed $*$-unitary transformation but does not exhibit it; we construct it here. Define
-
-$$
-U=\frac{1}{\sqrt2}\begin{pmatrix}I_2&I_2\\-I_2&I_2\end{pmatrix},\qquad
-U^\dagger=\frac{1}{\sqrt2}\begin{pmatrix}I_2&-I_2\\I_2&I_2\end{pmatrix}.
-$$
-
-Then $U^\dagger U=I_4$, so $U$ is $*$-unitary, and a direct computation gives
-
-$$
-U\gamma^\mu_c\,U^\dagger=\gamma^\mu_d,\qquad U\gamma_5^c\,U^\dagger=\gamma_5^d .
-$$
-
-The two ingredients are that $U$ commutes with each spatial $\gamma^k_c$, so the spatial generators are unchanged, and that $U\gamma^0_cU^\dagger$ produces the diagonal $\gamma^0_d$ and swaps the diagonal $\gamma_5^c$ for the off-diagonal $\gamma_5^d$. Since $\gamma^\mu_d=U\gamma^\mu_cU^\dagger$, the spinor transforms as $\psi_d=U\psi_c$.
-
-**The Lorentz generators.** The generators of the spinor representation are $S^{\mu\nu}=\tfrac{i}{4}[\gamma^\mu,\gamma^\nu]$, related to the parent's tensor bilinear by $\sigma^{\mu\nu}=\tfrac i2[\gamma^\mu,\gamma^\nu]=2S^{\mu\nu}$. In the chiral basis they evaluate to
-
-$$
-S^{jk}_c=\tfrac12\epsilon^{jkl}\begin{pmatrix}\sigma_l&0\\0&\sigma_l\end{pmatrix}
-=\tfrac12\epsilon^{jkl}\,\sigma_l\otimes I_2,
+\gamma_5\gamma^0+\gamma^0\gamma_5=R_{-i\vec e_z i\vec e_x+i\vec e_x(-i\vec e_z)}=0,
 \qquad
-S^{tk}_c=\tfrac i2\begin{pmatrix}-\sigma_k&0\\0&\sigma_k\end{pmatrix}
-=\tfrac i2\,\gamma_5^c\,(\sigma_k\otimes I_2).
+\gamma_5\gamma^k+\gamma^k\gamma_5=L_{i\vec e_k}\bigl(R_{-i\vec e_z\vec e_y+\vec e_y(-i\vec e_z)}\bigr)=0 .
 $$
 
-Both are block diagonal, so both preserve chirality, $[S^{\mu\nu},\gamma_5]=0$; but they differ in their action on the two chiralities. The rotation generators are **even**: they act with the same sign on the left- and right-handed blocks. The boost generators are **odd**: they act with opposite signs, which is the algebraic reason a boost rotates the two chiralities in opposite senses while leaving each in its own chirality. For a general change of basis the generators transform by conjugation, $S^{\mu\nu}_d=U S^{\mu\nu}_c U^\dagger$, and here explicitly
+The projectors are $P_L=R_{\tilde\Pi_+}$ and $P_R=R_{\tilde\Pi_-}$; they satisfy $P_L+P_R=1$, $P_LP_R=0$, and $P_L\gamma_5=-P_L$, $P_R\gamma_5=P_R$. They are the Peirce projectors of the algebra, not matrices.
+
+**The change of basis.** Right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$ is a unit-norm biquaternion, and it sends the chiral basis to the Dirac basis:
 
 $$
-S^{jk}_d=S^{jk}_c,\qquad
-S^{tk}_d=\tfrac i2\,\gamma_5^d\,(\sigma_k\otimes I_2)
-=\tfrac i2\begin{pmatrix}0&\sigma_k\\\sigma_k&0\end{pmatrix}.
+\tilde\Psi_d=\tilde\Psi_c\,\tilde W .
 $$
 
-In the Dirac basis the rotation generators are again block diagonal, while the boost generators are block **off-diagonal**; this is the representation in which the non-relativistic reduction separates large and small components (the next exercise). Finally, the structure matches the geometric-algebra dictionary of the companion articles: the chirality-even generators are built from $\sigma_l$ alone and correspond to the real-quaternion rotation generators in $\mathbb H_{\mathbb B}$, whereas the chirality-odd boost generators carry the extra factor $\gamma_5$ and correspond to the Hermitian (boost) generators in $\mathbb M_+$.
+The generators transform by conjugation. Since $\tilde W^{-1}i\vec e_x\tilde W=i\vec e_z$ and $\tilde W^{-1}(-i\vec e_z)\tilde W=i\vec e_x$,
+
+$$
+\gamma^0_d=R_{i\vec e_z},\qquad \gamma^k_d=\gamma^k=L_{i\vec e_k}R_{\vec e_y},\qquad \gamma_5^d=R_{i\vec e_x}.
+$$
+
+The spatial generators are unchanged because $\tilde W^{-1}\vec e_y\tilde W=\vec e_y$; only $\gamma^0$ and $\gamma_5$ change. In the Dirac basis $\gamma^0_d$ is diagonal on the Peirce components, which is why that basis separates the large and the small component in the non-relativistic limit. The $4\times4$ matrix $U$ of the parent is the regular representation of this right multiplication on the four-dimensional space of the two Peirce coordinates.
+
+**The Lorentz generators.** The generators of the spinor representation are $S^{\mu\nu}=\frac i4[\gamma^\mu,\gamma^\nu]$. In the algebra they are again left and right multiplications:
+
+$$
+S^{0k}=\frac i4[\gamma^0,\gamma^k]=-\frac i2\,L_{i\vec e_k}R_{i\vec e_z},\qquad
+S^{jk}=\frac i4[\gamma^j,\gamma^k]=\frac i2\,L_{\vec e_j\vec e_k}.
+$$
+
+Both are block diagonal on the Peirce components, so $[S^{\mu\nu},\gamma_5]=0$. The rotations $S^{jk}$ carry no chirality factor and act with the same sign on the two components; the boosts $S^{0k}$ carry the chirality sign, since $R_{i\vec e_z}=-\gamma_5$ and
+
+$$
+S^{0k}=\frac i2\,L_{i\vec e_k}\,\gamma_5 .
+$$
+
+This is the algebraic content of the parent's statement that rotations are chirality-even and boosts are chirality-odd. The signs are the ones of the exercise: the commutator $[\gamma^0,\gamma^k]$ is $-2L_{i\vec e_k}R_{i\vec e_z}$ with the present convention.
 
 ## Problem 6: The biquaternionic mass-shell condition
 
-**Statement.** Verify the biquaternionic mass-shell condition of the parent article and recover the relativistic energy–momentum relation.
+**Statement.** Verify the mass-shell condition of the parent and recover the relativistic energy–momentum relation.
 
-**Solution.** The parent's plane-wave ansatz carries the wave biquaternion $\tilde P/\hbar$, which the parent identifies with the four-wavevector
-
-$$
-\tilde P/\hbar=\frac{i\omega}{c}\,e_t+\vec k,\qquad \vec k=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z .
-$$
-
-This is an element of the material sector $\mathbb M_-$: imaginary scalar part, real vector part. Since the biquaternion norm of $\mathbb B$ is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$,
+**Solution.** The plane-wave ansatz carries the wave biquaternion
 
 $$
-\langle\tilde P/\hbar\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}=\left(\frac{i\omega}{c}\right)^2+k_1^2+k_2^2+k_3^2=-\frac{\omega^2}{c^2}+\vec k^2 .
+\tilde P/\hbar=\frac{i\omega}{c}\,e_t+\vec k,\qquad \vec k=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z ,
 $$
 
-The relativistic dispersion relation is $\omega^2=c^2\vec k^2+\dfrac{m^2c^4}{\hbar^2}$, so
+an element of the material sector $\mathbb{M}_-$: imaginary scalar part and real vector part. The biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, so
+
+$$
+\langle\tilde P/\hbar\rangle_{\natural}=\left(\frac{i\omega}{c}\right)^2+k_1^2+k_2^2+k_3^2=-\frac{\omega^2}{c^2}+\vec k^2 .
+$$
+
+The dispersion relation is $\omega^2=c^2\vec k^2+m^2c^4/\hbar^2$. Substituting,
 
 $$
 \langle\tilde P/\hbar\rangle_{\natural}=-\frac{1}{c^2}\left(c^2\vec k^2+\frac{m^2c^4}{\hbar^2}\right)+\vec k^2=-\frac{m^2c^2}{\hbar^2},
 $$
 
-which is exactly the parent's condition
+which is the parent's condition
 
 $$
 \boxed{\;\tilde P\tilde P^{\natural}=-m^2c^2\;}.
 $$
 
-Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the wave biquaternion is $\tilde P/\hbar$; the biquaternion norm being quadratic, $\langle\tilde P/\hbar\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-m^2c^2/\hbar^2$, exactly as $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}=-m^2c^2$ in the companion kinematics. The mass-shell condition is therefore not a new postulate: it is the statement that the four-wavevector is a timelike vector of $\mathbb M_-$ with the same biquaternion norm as the four-momentum.
+Equivalently, with $E=\hbar\omega$ and $\vec p=\hbar\vec k$, the norm is quadratic, so $\langle\tilde P/\hbar\rangle_{\natural}=\langle\tilde P\rangle_{\natural}/\hbar^2=-m^2c^2/\hbar^2$. The mass shell is not a new postulate: it is the statement that the four-wavevector is a timelike element of $\mathbb{M}_-$ with the same biquaternion norm as the four-momentum.
 
-The two roots of the dispersion relation, $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$, are the two frequency branches, and they are precisely the positive- and negative-frequency spinors $w$ and $v$ constructed above; the two spin labels within each branch give the four-dimensional complex solution space that the parent article quotes for the massive equation. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $|\vec p|=1\ \mathrm{MeV}/c$, the dispersion relation gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the corresponding wave biquaternion has $\langle\tilde P/\hbar\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-m^2c^2/\hbar^2$ to one part in $10^{15}$.
+The two roots $\omega=\pm\sqrt{c^2\vec k^2+m^2c^4/\hbar^2}$ are the two frequency branches, and they are the two families $\tilde w$ and $\tilde v$ constructed above; the two spin labels within each branch give the four-dimensional complex solution space. As a numerical check, for an electron ($mc^2=0.510998950\ \mathrm{MeV}$) at $|\vec p|=1\ \mathrm{MeV}/c$, the dispersion gives $E=1.122996\ \mathrm{MeV}$ and $E^2-\vec p^2c^2=0.261120\ \mathrm{MeV}^2=(mc^2)^2$; the wave biquaternion has $\langle\tilde P/\hbar\rangle_{\natural}=-6.706054\times10^{24}\ \mathrm{m}^{-2}$, agreeing with $-m^2c^2/\hbar^2$ to the digits shown.
 
 ## Summary
 
-The six problems test the parent article's plane-wave solutions and confirm them.
+The six problems test the parent's plane-wave solutions and confirm them in the algebra.
 
-1. **The spinors.** In the Dirac basis the solutions are $w^{(r)}=\big(\sqrt{E+m}\,\xi^{(r)},\ \sqrt{E-m}\,(\boldsymbol\sigma\cdot\vec u_p)\xi^{(r)}\big)^T$ and $v^{(r)}=\big(\sqrt{E-m}\,(\boldsymbol\sigma\cdot\vec u_p)\eta^{(r)},\ \sqrt{E+m}\,\eta^{(r)}\big)^T$, with explicit rest and general-momentum forms.
-2. **Normalisation.** The covariant normalisations $\bar w^{(r)}w^{(s)}=2m\delta^{rs}$, $\bar v^{(r)}v^{(s)}=-2m\delta^{rs}$, and the orthogonality $\bar w^{(r)}v^{(s)}=0$ all follow from the single identity $(\boldsymbol\sigma\cdot\vec u_p)^2=I_2$; the Hermitian products are $2E\delta^{rs}$.
-3. **Spin sums.** The completeness relations $\sum_r w^{(r)}\bar w^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ follow from the two-spinor completeness relation, and satisfy $(\not p+m)(\not p-m)=0$ on shell.
-4. **Massless limit.** In the chiral basis each helicity eigenstate becomes a single Weyl spinor, with positive helicity locking to right-handedness and negative helicity to left-handedness; the mass term is the only term coupling the two chiralities.
-5. **Basis change.** The chiral and Dirac representations obey the same Clifford algebra with $g=\mathrm{diag}(+1,-1,-1,-1)$; the $*$-unitary $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ interpolates between them, and the Lorentz generators transform by conjugation, rotations acting chirality-even and boosts chirality-odd.
-6. **Mass shell.** The biquaternionic condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the biquaternion-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.
+1. **The spinors.** In the chiral basis, $\tilde w_\pm=\sqrt{E\mp|\vec p|}\,\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\,\Psi_-(\chi_\pm)$ and $\tilde v_\pm=-\sqrt{E\mp|\vec p|}\,\Psi_+(\chi_\pm)+\sqrt{E\pm|\vec p|}\,\Psi_-(\chi_\pm)$; in the Dirac basis, $\tilde w^{(r)}=\sqrt{E+m}\,\Psi_+(\xi^{(r)})+\sqrt{E-m}\,\Psi_-(\boldsymbol\sigma\cdot\vec u_p\,\xi^{(r)})$ and $\tilde v^{(r)}=\sqrt{E-m}\,\Psi_+(\boldsymbol\sigma\cdot\vec u_p\,\eta^{(r)})+\sqrt{E+m}\,\Psi_-(\eta^{(r)})$. At rest the positive-frequency amplitude has equal Peirce coordinates and the negative-frequency amplitude opposite ones; in the Dirac basis each sits in a single Peirce component.
+2. **Normalisation.** The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$; the Hermitian products are $2E$.
+3. **Spin sums.** The completeness relations $\sum\tilde w\,\langle\tilde w,\cdot\rangle_{\mathrm D}=\not p+m$ and $\sum\tilde v\,\langle\tilde v,\cdot\rangle_{\mathrm D}=\not p-m$ hold as operator identities on $\mathbb{B}$, and $(\not p+m)(\not p-m)=0$ on shell.
+4. **Massless limit.** Each helicity eigenstate becomes a single Peirce component, with positive helicity right-handed and negative helicity left-handed; the mass term is the only coupling of the two components.
+5. **Generators.** The Clifford algebra is the multiplication table: $\gamma^0=R_{i\vec e_x}$, $\gamma^k=L_{i\vec e_k}R_{\vec e_y}$, $\gamma_5=R_{-i\vec e_z}$; the change of basis is right multiplication by $\tilde W=(e_t+\vec e_y)/\sqrt2$, which sends $\gamma^0$ to $R_{i\vec e_z}$ and leaves $\gamma^k$ unchanged; the Lorentz generators are $S^{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$ and $S^{jk}=\frac i2L_{\vec e_j\vec e_k}$.
+6. **Mass shell.** The condition $\tilde P\tilde P^{\natural}=-m^2c^2$ is the biquaternion-norm statement $\langle\tilde P/\hbar\rangle_{\natural}=-m^2c^2/\hbar^2$, and reproduces $E^2=\vec p^2c^2+m^2c^4$.
 
-Two items needed in this exercise are not displayed in the parent article: the chiral negative-frequency spinors $v_\pm$ (constructed in Problem 4) and the explicit change-of-basis matrix $U$ (constructed in Problem 5). The parent states the existence of both but does not exhibit them; the constructions above are the ones that reproduce its stated results.
+Two objects are needed by the exercise and are not displayed in the parent: the chiral negative-frequency spinors $\tilde v_\pm$ (Problem 1) and the change-of-basis biquaternion $\tilde W$ (Problem 5). The constructions above reproduce the parent's stated results.
 
 ## Summary of Notation
 
@@ -335,18 +423,19 @@ Two items needed in this exercise are not displayed in the parent article: the c
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\gamma^\mu$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators; $g=-\eta$ |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
-| $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Feynman slash of $p^\mu=(E,\vec p)$ |
-| $\bar\psi=\psi^\dagger\gamma^0$ | Dirac adjoint |
-| $w^{(r)}(\vec p),\,v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (Dirac basis) |
-| $w_\pm(\vec p),\,v_\pm(\vec p)$ | Helicity-indexed spinors (chiral basis) |
-| $\xi^{(r)},\eta^{(r)}$; $\chi_\pm$ | Two-spinors; helicity eigenspinors, $\boldsymbol\sigma\cdot\vec u_p\chi_\pm=\pm\chi_\pm$ |
-| $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ | $*$-Unitary change of basis, $\gamma^\mu_d=U\gamma^\mu_cU^\dagger$ |
-| $S^{\mu\nu}=\tfrac i4[\gamma^\mu,\gamma^\nu]$ | Lorentz generators of the spinor representation |
-| $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Wave biquaternion (four-wavevector) |
-| $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternionic mass-shell condition |
+| $R_a,L_a$ | Right and left multiplication, $R_a(\tilde Q)=\tilde Q a$, $L_a(\tilde Q)=a\tilde Q$ |
+| $\gamma^0=R_{i\vec e_x}$, $\gamma^k=L_{i\vec e_k}R_{\vec e_y}$ | The Dirac generators as algebra operations |
+| $\gamma_5=R_{-i\vec e_z}$ | Chirality operator |
+| $\tilde\Pi_\pm=\frac12(e_t\pm i\vec e_z)$ | Peirce idempotents; $P_{L,R}=R_{\tilde\Pi_\pm}$ |
+| $\vec\Upsilon_x,\vec\Upsilon_y$ | Off-diagonal matrix units |
+| $\Psi_\pm(\chi)$ | Spinor realised in $\mathbb B\tilde\Pi_\pm$ |
+| $\tilde\Psi=\Psi_+(\psi_+)+\Psi_-(\psi_-)$ | The Dirac field as a biquaternion |
+| $\langle\tilde\Psi,\tilde\Phi\rangle_{\mathrm D}=\mathrm{Tr}(\tilde\Psi^*\tilde\Phi\,i\vec e_x)$ | Dirac pairing in the chiral basis |
+| $\not p=E R_{i\vec e_x}-p_kL_{i\vec e_k}R_{\vec e_y}$ | Momentum-space Dirac operator |
+| $\tilde W=(e_t+\vec e_y)/\sqrt2$ | Change of basis, chiral $\to$ Dirac |
+| $S^{0k}=-\frac i2L_{i\vec e_k}R_{i\vec e_z}$, $S^{jk}=\frac i2L_{\vec e_j\vec e_k}$ | Lorentz generators |
+| $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Wave biquaternion |
+| $\tilde P\tilde P^{\natural}=-m^2c^2$ | Mass-shell condition |
 
 ## Further Reading
 
@@ -354,4 +443,4 @@ Two items needed in this exercise are not displayed in the parent article: the c
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the spin sums, the chiral and Dirac representations, and the Lorentz generators.
 - M. E. Peskin and D. V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the two representations, the spinor normalisation, and the completeness relations.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford algebra and the spinor representations.
-- The parent article of this exercise: *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, and its companion [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html).
+- The parent article of this exercise: [The Biquaternion Dirac Equation — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html), and its companions [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html).

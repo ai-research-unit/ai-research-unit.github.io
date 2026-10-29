@@ -365,7 +365,7 @@ The root orbit is $PGL_{3}/T$, of dimension $6$; it is a $3!$-fold cover of the 
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the algebra, its matrix units, its trace and its determinant.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), for the decomposition of the algebra by the three Lagrange idempotents.
 - [The Cubic, the Discriminant and the Spectral Strata of $M_3(\mathbb{C})$](the-cubic-the-discriminant-and-the-spectral-strata-of-m3c.html), for the characteristic cubic, the discriminant and the degeneration of the projectors at a repeated root.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the order-two case and the biquaternion frame.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the order-two case and the biquaternion frame.
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the spectral theorem for diagonalisable matrices.
 - [Interpolation Theory](interpolation-theory.html), for the Lagrange interpolation formula in one variable.
 - [Flag Manifolds](flag-manifolds.html), for the flag variety, its dimension and its homogeneous description.

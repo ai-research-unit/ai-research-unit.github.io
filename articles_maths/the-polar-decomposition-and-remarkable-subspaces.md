@@ -24,7 +24,7 @@ Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} 
 
 The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
-The symbols $r$, $\zeta$, $\alpha$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\zeta$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of a N-Regular Biquaternion*. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *The Six Subspaces*, and the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$ are those of *The Lattice of the Subspaces*.
+The symbols $r$, $\zeta$, $\alpha$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\zeta$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of a N-Regular Biquaternion*. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *The Six Subspaces*, and the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$ are those of *The Subspaces and Their Relations*.
 
 No physics is invoked; the physical interpretation is cited where it clarifies the algebra.
 
@@ -53,7 +53,7 @@ The two axes are unit elements of the algebra as well: $\vec u_{\mathrm b}$ and 
 
 ## The Four Coordinate Blocks
 
-The four **coordinate blocks** of the algebra are the pieces into which the eight real coordinates group (*The Lattice of the Subspaces*, §*Remarkable Subspaces and the Coordinate Blocks*):
+The four **coordinate blocks** of the algebra are the pieces into which the eight real coordinates group (*The Subspaces and Their Relations*, §*Remarkable Subspaces and the Coordinate Blocks*):
 
 $$
 A_1 = \mathbb{R}e_t , \qquad A_2 = \mathbb{R}(ie_t) , \qquad B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\} , \qquad B_2 = \operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\} .
@@ -86,7 +86,7 @@ Because the four exponents lie in the four blocks and the four blocks add to the
 
 ## The Blocks and the Four Grades
 
-Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto i\vec e_k$ (*The Lattice of the Subspaces*, §*Remarkable Subspaces and the Coordinate Blocks*), the four blocks are the four Clifford grades.
+Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto i\vec e_k$ (*The Subspaces and Their Relations*, §*Remarkable Subspaces and the Coordinate Blocks*), the four blocks are the four Clifford grades.
 
 | block | $A_1$ | $B_2$ | $B_1$ | $A_2$ |
 |---|---|---|---|---|
@@ -123,7 +123,7 @@ The naming of the two vector blocks is the trap the comparison article records: 
 
 ## The Six Subspaces as Sums of the Blocks
 
-Every remarkable subspace is a sum of two of the four blocks (*The Lattice of the Subspaces*, §*Remarkable Subspaces and the Coordinate Blocks* and §*The Lattice of the Fixed Spaces*), and the sums are the following.
+Every remarkable subspace is a sum of two of the four blocks (*The Subspaces and Their Relations*, §*Remarkable Subspaces and the Coordinate Blocks* and §*The Lattice of the Fixed Spaces*), and the sums are the following.
 
 | subspace | defining condition | blocks | real dimension |
 |---|---|---|---|
@@ -582,11 +582,11 @@ The two products of the series are the product of two boosts, which is a boost t
 - *The Polar Decomposition in Subspaces*, for the same restriction read sector by sector on the physics side: the norm of each subspace, the criteria for a trivial boost and a trivial rotor, and the worked examples of every sector. Its boost has rapidity $\psi$ and the sign $-i$, where the maths series has rapidity $\tfrac{\psi}{2}$ and the sign $+i$ in the same closed form, so for the same element the parameter of the maths series is twice the one used there; the sign of the imaginary unit is the orientation of the axis and carries nothing more.
 - *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the Hermitian positive and $*$-unitary factors, and for the split of the exponents into $\mathbb{M}_+$ and $\mathbb{M}_-$ that the incidence of this article reproduces.
 - *The Hamilton Root Pairing of the Polar Decomposition of Biquaternions* and *The Quaternion Pairing of the Polar Decomposition of Biquaternions*, for the two partial pairings of the same four factors and their domains, which are the two regroupings the incidence of this article does not see.
-- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the six subspaces one by one, their bases, their dimensions, their elements and their ideals.
-- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the four coordinate blocks, the intersections, the lattice of the fixed spaces and the action of the conjugations on the subspaces.
-- [The Three Eigenspace Decompositions](decompositions-along-the-remarkable-subspaces.html), for the three eigenspace decompositions the conjugations cut out.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations and the norm.
+- [The Six Subspaces](the-six-subspaces.html), for the six subspaces one by one, their bases, their dimensions, their elements and their ideals.
+- [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the four coordinate blocks, the intersections, the lattice of the fixed spaces and the action of the conjugations on the subspaces.
+- [The Three Eigenspace Decompositions](the-three-eigenspace-decompositions.html), for the three eigenspace decompositions the conjugations cut out.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, the four conjugations and the norm.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the Thomas-Wigner rotation of the product of two boosts and the double cover read on the rotor.
-- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich as an operator, its kernel $U(1)$, its image $CO^{+}(1,3)$ and the factor-by-factor word.
+- [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich as an operator, its kernel $U(1)$, its image $CO^{+}(1,3)$ and the factor-by-factor word.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group, its double cover and the reflections.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the symbols, the root convention and the $*$-unitary convention.

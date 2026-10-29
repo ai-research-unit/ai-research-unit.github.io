@@ -6,7 +6,7 @@ The biquaternion algebra carries four involutions: quaternion conjugation, compl
 
 This article develops the four operations and their fixed spaces. It also records the warning that makes the table usable: complex conjugation is not the entrywise conjugation of the matrix. It is the matrix form of *The Group of Involutions*, §*The Four Involutions and Their Matrix Images*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The four involutions are
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The four involutions are
 
 $$
 \tilde Q^{\natural}=Q_t-\vec Q,\qquad
@@ -17,7 +17,7 @@ $$
 
 The antisymmetric matrix is $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$, with $\epsilon^{\mathsf T}=-\epsilon$ and $\epsilon^{-1}=-\epsilon$.
 
-**Boundaries.** The conjugations and their fixed spaces are *The Group of Involutions*; the four adjoints of linear maps are *The Four Adjoints of the Biquaternion Algebra in Examples*; the four forms are *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the subspaces fixed by the involutions are *$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions*.
+**Boundaries.** The conjugations and their fixed spaces are *The Group of Involutions*; the four adjoints of linear maps are *The Four Adjoints of the Biquaternion Algebra in Examples*; the four forms are *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the subspaces fixed by the involutions are *$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*.
 
 ## The Four Involutions
 
@@ -134,7 +134,7 @@ $$
 
 Its fixed space is the anti-Hermitian matrices, and its anti-fixed space is the Hermitian ones. The two rows of the table for ${}^{*}$ and ${}^{\flat}$ are exchanged, as they must be, because $\flat=-{}^{*}$.
 
-**The trace and determinant.** On the Hermitian subspace the trace is real and the determinant has signature $(1,3)$; on the anti-Hermitian subspace the trace is purely imaginary and the determinant has signature $(3,1)$. The two statements are the matrix form of the reality conditions of the two sectors, and they are proved in *$M_2(\mathbb{C})$ Representation : The Six Subspaces as Matrix Conditions*.
+**The trace and determinant.** On the Hermitian subspace the trace is real and the determinant has signature $(1,3)$; on the anti-Hermitian subspace the trace is purely imaginary and the determinant has signature $(3,1)$. The two statements are the matrix form of the reality conditions of the two sectors, and they are proved in *$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*.
 
 ## The Four Adjoints
 
@@ -206,6 +206,6 @@ The four involutions of the algebra become the adjugate, the $\epsilon$-dressed 
 - [The Group of Involutions](the-group-of-involutions.html), for the four involutions
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the operator-level adjoints
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the four forms
-- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the model
-- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the material reading
+- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the model
+- [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the material reading

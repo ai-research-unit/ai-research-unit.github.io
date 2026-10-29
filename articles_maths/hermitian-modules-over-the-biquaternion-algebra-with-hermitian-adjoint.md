@@ -207,13 +207,13 @@ The **$*$-unitary slice** $U=\mathrm{U}(2)$ acts on every Hermitian module by $*
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the classification of the modules, the simple module, the projective-not-free dichotomy and the endomorphism algebra.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the idempotents, the off-diagonal elements, the Peirce decomposition and the minimal left ideals.
+- [The Category of Modules](the-category-of-modules.html), for the classification of the modules, the simple module, the projective-not-free dichotomy and the endomorphism algebra.
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), for $L_{\tilde Q_1}^{*}=L_{\tilde{Q}_1^{*}}$, the uniqueness of the invariant form and the module picture of the regular module.
 - [Two-Sided Operators on the General Plain Sesqualgebra](two-sided-operators-on-the-general-plain-sesqualgebra.html), for the sandwich, the cone and the definite slice viewed as a group of operators.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positivity of the involution that makes every restriction positive definite.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), [Spin Representations and Clifford Modules with Inner Conjugation](spin-representations-and-clifford-modules-with-inner-conjugation.html) and [Dirac Operators with Hermitian Adjoint](dirac-operators-with-hermitian-adjoint.html), for the spinor module, the chirality, the volume element and the Dirac operator.
+- [The Category of Modules](the-category-of-modules.html), [Spin Representations and Clifford Modules with Inner Conjugation](spin-representations-and-clifford-modules-with-inner-conjugation.html) and [Dirac Operators with Hermitian Adjoint](dirac-operators-with-hermitian-adjoint.html), for the spinor module, the chirality, the volume element and the Dirac operator.
 - [Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint](hermitian-modules-over-a-hermitian-algebra-with-hermitian-adjoint.html), for the general module axiom, Schur uniqueness and the isotropic ideal.
 - [The Adjoint of the One-Sided Action with Hermitian Adjoint](the-adjoint-of-the-one-sided-action-with-hermitian-adjoint.html), for the $*$-structure on the operator algebra.
 - [Dirac Operators with Hermitian Adjoint](dirac-operators-with-hermitian-adjoint.html), for the formal self-adjointness, the positivity of the square and the finite-dimensional model.

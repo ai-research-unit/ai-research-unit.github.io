@@ -21,7 +21,7 @@ The framework results used here are those of the companion articles:
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the biquaternionic Dirac equation, its linear off-diagonal mass term, and the relation of the massive equation to the massless one.
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the massive spin-1 equation that the same feedback produces.
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra, the conjugations, the metric and the d'Alembertian.
-- Companion article *Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Comparison of the Remarkable Subspaces*, for the idempotents, the zero divisors and the conjugations.
+- Companion article *Idempotents* and *Comparison of the Remarkable Subspaces*, for the idempotents, the zero divisors and the conjugations.
 - Companion article *The Number of Generations and the Biquaternion Algebra*, for the corpus's standing position that the algebra accommodates but does not derive the particle spectrum.
 
 ## The Mass Term as a Field

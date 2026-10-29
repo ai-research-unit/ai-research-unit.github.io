@@ -28,7 +28,7 @@ $$
 
 a fibre bundle over $\operatorname{Gr}(p,6)$ with the contractible fibre of complements. The full flag variety $GL_6/B$ has dimension $15$; the partial flags and their incidence relations organise the idempotents, and the gauge is the fibre of the frame bundle.
 
-The article assumes the Grassmannians and the orbit–stabilizer count of *The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$* and the Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$*. It uses the elementary geometry of homogeneous spaces. The idempotents of the biquaternion algebra are *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the spectral geometry is *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*.
+The article assumes the Grassmannians and the orbit–stabilizer count of *The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$* and the Peirce decomposition of *The Peirce Decomposition of $M_6(\mathbb{C})$*. It uses the elementary geometry of homogeneous spaces. The idempotents of the biquaternion algebra are *Idempotents*; the spectral geometry is *The Sextic and the Spectral Strata of $M_6(\mathbb{C})$*.
 
 ## The Idempotents
 
@@ -361,4 +361,4 @@ The full flag variety $GL_6/B$ has dimension $15$, with the iterated bundle $5+4
 - [The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m6c.html), for the gauge torus.
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for the general theory of $\operatorname{Gr}(p,n)$.
 - [Flag Manifolds](flag-manifolds.html), for the general theory of $GL_n/B$ and the incidence.
-- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the rank-one case.
+- [Idempotents](idempotents.html), for the rank-one case.

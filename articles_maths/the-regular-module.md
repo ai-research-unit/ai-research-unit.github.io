@@ -220,6 +220,6 @@ The simple module $S=\mathbb{B}\tilde\Pi_+$, its basis, its left action and its 
 
 ## Further Reading
 
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the frame.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the frame.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the simple submodules.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the classification.
+- [The Category of Modules](the-category-of-modules.html), for the classification.

@@ -187,5 +187,5 @@ The identity is equivalent to the projector classification of the block: a right
 - [Introduction to the Antisymmetric Plain Sesqualgebra](introduction-to-the-antisymmetric-plain-sesqualgebra.html), for the product, its image and its two one-sided actions.
 - [The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra](the-adjoint-operators-and-the-sandwich-of-the-antisymmetric-plain-sesqualgebra.html), for the left and right multiplications of the block.
 - [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the model in which the projector classification is proved.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the model of a specificities article, and [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the left twin.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the model of a specificities article, and [Introduction to the Antisymmetric Quaternionic Algebra](introduction-to-the-antisymmetric-quaternionic-algebra.html), for the left twin.
 - [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the conjugate exchange behind the split.

@@ -24,7 +24,7 @@ The physical content is the **light ray**: a rank-one element, a direction and a
 | The zero-divisor cone, its rulings and the massless limit | [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html) |
 | The primitive idempotents and the minimal left ideals | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
 | The spectrum and the two-term writing | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
-| The independence of the two conditions | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html) |
+| The independence of the two conditions | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | The four-vector dictionary and the light cone | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
 | The spectral reading of a four-momentum | [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) |
 | The indefinite form and the cone | [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html) |

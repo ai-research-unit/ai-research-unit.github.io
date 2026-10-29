@@ -12,7 +12,7 @@ which is the dagger sandwich $\mathrm{H}_{\tilde Q_1}$ of the corpus. This artic
 
 The result that organises the article is that **the operator is quadratic in the parameter, while the adjoint is linear in it**. Composition reads $\Theta_{\tilde Q_1\tilde Q_2}=\Theta_{\tilde Q_1}\circ\Theta_{\tilde Q_2}$ on the nose, but $\Theta_{A\tilde Q_1}=\lvert A\rvert^{2}\Theta_{\tilde Q_1}$ for a central $A$: the map $\tilde Q_1\mapsto\Theta_{\tilde Q_1}$ is multiplicative and not additive, and it is blind to the central phase. Two consequences are worked out. The Hermitian and the anti-Hermitian elements **give the same operators**, because $\Theta_{-\tilde Q_1}=\Theta_{\tilde Q_1}$ and $\Theta_{i\tilde Q_1}=\Theta_{\tilde Q_1}$; and a two-sided operator is **never skew-adjoint** unless it vanishes, because the sandwich cannot change the sign of the quadratic form it carries. Both contrast with the one-sided case of the companion article, where the parameter enters linearly and the two sectors give skew and self-adjoint operators respectively.
 
-The article is pure algebra. The algebra, the dagger and the remarkable subspaces are *The Biquaternion Algebra*; the sandwich is *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion*, and on the spinor module *The Polar Decomposition of a N-Regular Biquaternion*, §*The Operator Reading: the Twist*, and the sandwich in the regular basis is *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*; the general operator on a Clifford algebra is *Two-Sided Operators on a Clifford Algebra with Hermitian Adjoint*, whose instance this article is.
+The article is pure algebra. The algebra, the dagger and the remarkable subspaces are *The Biquaternion Algebra*; the sandwich is *The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion*, and on the spinor module *The Polar Decomposition of a N-Regular Biquaternion*, §*The Operator Reading: the Twist*, and the sandwich in the regular basis is *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*; the general operator on a Clifford algebra is *Two-Sided Operators on a Clifford Algebra with Hermitian Adjoint*, whose instance this article is.
 
 ## The Scalar Form and the Definite Structure of the Algebra
 
@@ -148,7 +148,7 @@ $$
 U = \{\,\tilde{Q}\in\mathbb{B} : \tilde{Q}^{*}\tilde{Q} = e_t\,\}.
 $$
 
-In the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$ of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure* the dagger is the conjugate transpose, so $U$ is the $*$-unitary group $\mathrm{U}(2)$ of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
+In the matrix model $\mathbb{B}\cong M_{2}(\mathbb{C})$ of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant* the dagger is the conjugate transpose, so $U$ is the $*$-unitary group $\mathrm{U}(2)$ of real dimension four, with determinant-one part $\mathrm{SU}(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
 
 **Theorem (the $*$-unitary two-sided operators).** For $\tilde Q_1\in\mathbb{B}$, the operator $\Theta_{\tilde Q_1}$ is $*$-unitary, $\langle\Theta_{\tilde Q_1}\tilde Q_3,\Theta_{\tilde Q_1}\tilde Q_2\rangle_{*}=\langle\tilde Q_3,\tilde Q_2\rangle_{*}$ for all $\tilde Q_2,\tilde Q_3$, if and only if $\tilde Q_1^{*}\tilde Q_1$ is a central scalar of modulus one:
 
@@ -188,7 +188,7 @@ $$
 \Theta_{\tilde{Q}}(e_t) = e_t \iff \tilde{Q}\in U .
 $$
 
-In the matrix model $\mathsf{M}_2(\Theta_{\tilde{Q}}(e_t)) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\mathsf{M}_2(\tilde{Q})$ (*$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*).
+In the matrix model $\mathsf{M}_2(\Theta_{\tilde{Q}}(e_t)) = M M^{\dagger}$ is the Gram matrix of the columns of $M=\mathsf{M}_2(\tilde{Q})$ (*$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*).
 
 *Proof.* The first display is the definition; $\tilde{Q}\tilde{Q}^{*}$ is Hermitian because $(\tilde{Q}\tilde{Q}^{*})^{\dagger}=\tilde{Q}\tilde{Q}^{*}$; positivity is the positivity of the Gram matrix; and $\tilde{Q}\tilde{Q}^{*}=e_t$ is the defining condition of the slice.
 
@@ -255,7 +255,7 @@ The biquaternion algebra $\mathbb{B}$ with its Hermitian conjugation carries the
 ## Further Reading
 
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the Hermitian adjoint side by side with the other three adjoints and for the reading of the suffix of the family as the name of the adjoint
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, the four conjugations, the remarkable subspaces and the scalar form.
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the quaternion norm, the invertibility criterion and the group of units, to be kept apart from the positive definite form of this article.
 - [One-Sided Operators on the General Plain Sesqualgebra](one-sided-operators-on-the-general-plain-sesqualgebra.html), the companion article, where the parameter enters linearly and the sectors give skew and self-adjoint operators.
 - [The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint](the-hermitian-sandwich-in-the-biquaternion-algebra-with-hermitian-adjoint.html), for the same operator in coordinates, the forms, positivity and the slice.

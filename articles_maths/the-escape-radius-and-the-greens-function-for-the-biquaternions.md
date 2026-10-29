@@ -167,6 +167,6 @@ For a non-central parameter the general pluripotential theory does not apply unc
 - [The Biquaternion Mandelbrot Set and the Connectedness Locus](the-biquaternion-mandelbrot-set-and-the-connectedness-locus.html), for the collapse of the square and the conditional radius.
 - [The Escape Radius and the Green's Function](the-escape-radius-and-the-greens-function.html), for the classical object and its normalization.
 - [The Biquaternion Holomorphic Dynamics and the Jacobian](the-biquaternion-holomorphic-dynamics-and-the-jacobian.html), for the Fatou set, the dynamical Julia set and the several definitions of the Julia set.
-- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the four inverse branches of the square and the cone of roots of zero.
+- [Square Roots of an Element](square-roots-of-an-element.html), for the four inverse branches of the square and the cone of roots of zero.
 - [Several Complex Variables](several-complex-variables.html), for the plurisubharmonic tools and the several-variable theory the general case would need.
 - [The Self-Similar Measure and the Invariant Measure](the-self-similar-measure-and-the-invariant-measure.html) and [Multifractal Analysis and the Legendre Transform](multifractal-analysis-and-the-legendre-transform.html), for the measure-theoretic statements of the category.

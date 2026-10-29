@@ -134,7 +134,7 @@ The quantity $B^2$ is the scalar of the square of the pure part, $\vec Q^2=-B^2e
 ## Further Reading
 
 - [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the split and the coefficients.
-- [Nilpotents](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the elements whose square vanishes.
-- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the elements fixed by their square.
-- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the degenerate cone.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the product and the basis.
+- [Nilpotents](nilpotents.html), for the elements whose square vanishes.
+- [Idempotents](idempotents.html), for the elements fixed by their square.
+- [The Spectrum](the-spectrum.html), for the degenerate cone.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the product and the basis.

@@ -6,7 +6,7 @@ The exponential, the logarithm and the square roots of a matrix are three values
 
 This article develops the calculus; the exponential series, its determinant identity, its closed forms, the one-parameter subgroups and the kernel; the logarithm equation, its branch families, the principal branch and its derivative; and the square-root equation, solved in the commutant and classified by spectral type. It is the matrix form of *Biquaternion Elementary Functions* and of *Square Roots of an Element*, §*The Reduction* to §*The Classification*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The image of $\tilde Q$ is $X=\mathsf M_2(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, and $\operatorname{tr}X=2Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}$. In the square-root sections the complex square of the vector part is $(\vec Q,\vec Q)=B^2$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The image of $\tilde Q$ is $X=\mathsf M_2(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, and $\operatorname{tr}X=2Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}$. In the square-root sections the complex square of the vector part is $(\vec Q,\vec Q)=B^2$.
 
 **Boundaries.** The general holomorphic calculus is *Holomorphic Functional Calculus*; the biquaternion closed form and the logarithm are *Biquaternion Elementary Functions*; the Lie algebra and the correspondence are *Biquaternion Lie Group and Exponential Structure*; the algebra classification of square roots is *Square Roots of an Element*; the roots of $\pm1$ and of $0$ are *Idempotents* and *Nilpotents*; the polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
@@ -171,7 +171,7 @@ an unbounded curve in the Hermitian matrices. The first is the compact case and 
 
 The phase is the centre, the rotor is the compact direction, the boost is the non-compact direction, and the unipotent line is the exponential of a nilpotent. The four are the basic real types; a general exponential line is their product after a conjugation and a complex scaling.
 
-**The subgroup lies in a centraliser.** Every $\exp(tX)$ commutes with $X$, so the image of $\varphi_X$ lies in the group of units of $C(X)=\{Y:XY=YX\}$ (*$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser*). For a non-scalar $X$ that centraliser is the plane $\mathbb{C}[X]$, so a one-parameter subgroup is a real curve in a commutative surface.
+**The subgroup lies in a centraliser.** Every $\exp(tX)$ commutes with $X$, so the image of $\varphi_X$ lies in the group of units of $C(X)=\{Y:XY=YX\}$ (*$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*). For a non-scalar $X$ that centraliser is the plane $\mathbb{C}[X]$, so a one-parameter subgroup is a real curve in a commutative surface.
 
 ## The Kernel of the Exponential
 
@@ -223,7 +223,7 @@ $$
 Y=C\operatorname{diag}(\mu_1,\mu_2)C^{-1},\qquad e^{\mu_1}=\lambda_1,\quad e^{\mu_2}=\lambda_2 .
 $$
 
-*Proof.* If $\exp Y=X$ then $Y$ commutes with $\exp Y=X$, so $Y$ lies in the commutant $C(X)$, which for distinct eigenvalues is the diagonal algebra in the basis $C$ (*$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser*). Hence $Y=C\operatorname{diag}(\mu_1,\mu_2)C^{-1}$, and exponentiating gives $e^{\mu_i}=\lambda_i$. Conversely, any such $Y$ exponentiates to $X$.
+*Proof.* If $\exp Y=X$ then $Y$ commutes with $\exp Y=X$, so $Y$ lies in the commutant $C(X)$, which for distinct eigenvalues is the diagonal algebra in the basis $C$ (*$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*). Hence $Y=C\operatorname{diag}(\mu_1,\mu_2)C^{-1}$, and exponentiating gives $e^{\mu_i}=\lambda_i$. Conversely, any such $Y$ exponentiates to $X$.
 
 **The branches.** Each equation $e^{\mu}=\lambda$ with $\lambda\neq0$ has the solutions
 $$
@@ -334,7 +334,7 @@ the one whose eigenvalues lie in the right half-plane. The next sections solve t
 
 *Proof.* $YX=Y^3=XY$.
 
-**Consequence.** Every square root of $X$ lies in the commutant $C(X)$ of *$M_2(\mathbb{C})$ Representation : The Centraliser and the Double Centraliser*, and the commutant has a normal form according to the spectral type of $X$:
+**Consequence.** Every square root of $X$ lies in the commutant $C(X)$ of *$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*, and the commutant has a normal form according to the spectral type of $X$:
 
 | Type of $X$ | $C(X)$ | Root ansatz |
 |---|---|---|
@@ -503,11 +503,11 @@ A square root commutes with its matrix, so the square-root equation is solved in
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the biquaternion closed form, the logarithm and the branch families
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the one-parameter subgroups and the Lie correspondence
 - [$M_4(\mathbb{C})_L$ Representation : The Functional Calculus](m4c-representation-the-functional-calculus.html), for the $4\times4$ version
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the model
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-representation-the-centraliser-and-the-double-centraliser.html), for the commutant used in both reductions
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the model
+- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the commutant used in both reductions
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the polar factors
-- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the algebra classification and its proofs
-- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots of $+1$
-- [Nilpotents](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the roots of $0$
-- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-representation-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis
+- [Square Roots of an Element](square-roots-of-an-element.html), for the algebra classification and its proofs
+- [Idempotents](idempotents.html), for the roots of $+1$
+- [Nilpotents](nilpotents.html), for the roots of $0$
+- [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2nd ed. 2015), for the matrix exponential, the logarithm and the one-parameter subgroups

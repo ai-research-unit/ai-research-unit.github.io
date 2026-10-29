@@ -178,7 +178,7 @@ One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone 
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the signatures of the Lorentzian slices
 - [Quaternion Geometry](quaternion-geometry.html), for the Hopf fibration and the homogeneous sphere $S^{2}$
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for $V_{2}(\mathbb{R}^{4})$ and the unit tangent bundle of $S^{3}$
-- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots of $-1$ and $+1$
+- [Idempotents](idempotents.html), for the roots of $-1$ and $+1$
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002).
 - Glen E. Bredon, *Topology and Geometry* (Graduate Texts in Mathematics 139, Springer, 1993), for the link of a cone.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).

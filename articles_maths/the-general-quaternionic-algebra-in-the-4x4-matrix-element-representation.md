@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The left regular representation $\mathsf{M}_4$ of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure* carries the algebra acting on itself, and it makes the natural conjugation ${}^{\natural}$ visible as the **transposition** of the regular matrix, $\mathsf{M}_4(\tilde{Q}_1^{\natural})=\mathsf{M}_4(\tilde{Q}_1)^{\mathsf{T}}$. This article is the companion of *$M_2(\mathbb{C})$ Representation : The General Quaternionic Algebra of Biquaternions*, and it reads the group *Topology on the Introduction to the General Quaternionic Algebra of Biquaternions* on the regular matrices: the quaternionic product becomes the product of the transposed regular matrix with the second factor, and the general quaternionic bilinear form becomes the trace pairing with the transposed second factor, with the factor $2$ that the dimension of the module brings.
+The left regular representation $\mathsf{M}_4$ of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant* carries the algebra acting on itself, and it makes the natural conjugation ${}^{\natural}$ visible as the **transposition** of the regular matrix, $\mathsf{M}_4(\tilde{Q}_1^{\natural})=\mathsf{M}_4(\tilde{Q}_1)^{\mathsf{T}}$. This article is the companion of *$M_2(\mathbb{C})$ Representation : The General Quaternionic Algebra of Biquaternions*, and it reads the group *Topology on the Introduction to the General Quaternionic Algebra of Biquaternions* on the regular matrices: the quaternionic product becomes the product of the transposed regular matrix with the second factor, and the general quaternionic bilinear form becomes the trace pairing with the transposed second factor, with the factor $2$ that the dimension of the module brings.
 
 The regular representation has one advantage over the $2\times2$ realization in this group: the characteristic operation ${}^{\natural}$ is a transposition, and the transposition is the operation that the regular matrix already carries. The general quaternionic bilinear form therefore needs no adjugate, and the determinant of the regular matrix is the square of the norm, the two factors being the two copies of the simple module.
 
@@ -161,8 +161,8 @@ The left regular representation reads the natural conjugation as the transpositi
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the representation and its first properties
-- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-representation-the-matrix-product-and-the-algebra-structure.html), for the further reading of the regular representation
+- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the representation and its first properties
+- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the further reading of the regular representation
 - [Introduction to the General Quaternionic Algebra](introduction-to-the-general-quaternionic-algebra.html), for the quaternionic product on the algebra
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form on the algebra
 - [$M_2(\mathbb{C})$ Representation : The General Quaternionic Algebra of Biquaternions](the-general-quaternionic-algebra-in-the-2x2-matrix-element-representation.html), for the companion reading of the group

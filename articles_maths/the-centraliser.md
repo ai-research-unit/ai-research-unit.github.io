@@ -111,6 +111,6 @@ The four types of the split — scalar, semisimple, Jordan, nilpotent — are th
 
 ## Further Reading
 
-- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the discriminant and the two eigenvalues.
-- [The Semisimple–Nilpotent Split](the-jordan-chevalley-decomposition-of-a-biquaternion.html), for the decomposition.
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-representation-the-centraliser-and-the-double-centraliser.html), for the matrix form.
+- [The Spectrum](the-spectrum.html), for the discriminant and the two eigenvalues.
+- [The Semisimple–Nilpotent Split](the-semisimple-nilpotent-split.html), for the decomposition.
+- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the matrix form.

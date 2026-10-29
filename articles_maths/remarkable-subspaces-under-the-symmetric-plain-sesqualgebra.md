@@ -118,7 +118,7 @@ Under the product of the symmetric plain sesqualgebra every value is central, an
 - [Introduction to the Symmetric Plain Sesqualgebra](introduction-to-the-symmetric-plain-sesqualgebra.html), for the product and its central image.
 - [The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra](the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.html), for the restriction of the form to the remarkable subspaces.
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), the sibling article whose pattern this one follows.
-- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the subspaces and their definitions.
-- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the relations between them.
+- [The Six Subspaces](the-six-subspaces.html), for the subspaces and their definitions.
+- [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the relations between them.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms restricted to the remarkable real subspaces.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the closure of the remarkable subspaces under the four general products of the space.

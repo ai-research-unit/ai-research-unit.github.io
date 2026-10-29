@@ -159,5 +159,5 @@ The reduced biquaternion algebra is commutative, associative and unital, and it 
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotent coordinates and the minimal ideals.
 - [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the unit group and its complement.
 - [Operators on the Reduced Biquaternions](operators-on-the-reduced-biquaternions.html), for the multiplication operators of the four products.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the non-commutative companion and the one simple module of dimension two.
+- [The Category of Modules](the-category-of-modules.html), for the non-commutative companion and the one simple module of dimension two.
 - [Split-Biquaternion Element Representation Theory](split-biquaternion-element-representation-theory.html), for the non-commutative semisimple companion with its two four-dimensional simple modules.

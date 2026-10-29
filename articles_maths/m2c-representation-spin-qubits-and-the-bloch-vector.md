@@ -6,9 +6,9 @@ The $2\times2$ model is the smallest matrix picture of the algebra, and it is th
 
 This article develops the dictionary. It states the spin operators and their algebra, the pure states as the rank-one Hermitian idempotents on the null cone, the general state and its Bloch vector, and the measurement formulae that read the vector back off the matrix. It proves the identities in the matrix model and leaves their physical interpretation to *The Pauli Correspondence and the Matrix Image*, which reads the same identities physically and states what they do not claim.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*: $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\mathsf M_2(e_t)=\mathrm I_2$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, the scalar part is $Q_t=\tfrac12\operatorname{Tr}\mathsf M_2(\tilde Q)$, and the quaternionic norm is $N=\det\mathsf M_2(\tilde Q)$. The Hermitian subspace is $\mathbb M_+$ and the anti-Hermitian subspace is $\mathbb M_-$. A state is written $\tilde{\varrho}$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb R^3$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*: $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\mathsf M_2(e_t)=\mathrm I_2$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, the scalar part is $Q_t=\tfrac12\operatorname{Tr}\mathsf M_2(\tilde Q)$, and the quaternionic norm is $N=\det\mathsf M_2(\tilde Q)$. The Hermitian subspace is $\mathbb M_+$ and the anti-Hermitian subspace is $\mathbb M_-$. A state is written $\tilde{\varrho}$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb R^3$.
 
-**Boundaries.** The Born pairing and the Hilbert structure of the spinor module are *Spin and the Three Elementary Carriers*; the mixedness and phase-fibre interpretations of the same matrices are *The Pauli Correspondence and the Matrix Image*; the state geometry as a slice of the light cone is *The Bloch Ball as the Normalised Slice of the Future Light Cone*; the pure states as idempotents are *Roots, Idempotents and Observables*; the spectral projectors of a general element are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
+**Boundaries.** The Born pairing and the Hilbert structure of the spinor module are *Spin and the Three Elementary Carriers*; the mixedness and phase-fibre interpretations of the same matrices are *The Pauli Correspondence and the Matrix Image*; the state geometry as a slice of the light cone is *The Bloch Ball as the Normalised Slice of the Future Light Cone*; the pure states as idempotents are *Roots, Idempotents and Observables*; the spectral projectors of a general element are *$M_2(\mathbb{C})$ Model : The Spectral Projectors*.
 
 ## The Hermitian Basis
 
@@ -297,8 +297,8 @@ The Hermitian units of the algebra map to the Pauli matrices, $\mathsf M_2(i\vec
 
 ## Further Reading
 
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the assignment and the Pauli correspondence
-- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for $\mathbb M_+$ as the Hermitian matrices
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the assignment and the Pauli correspondence
+- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for $\mathbb M_+$ as the Hermitian matrices
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the null cone and its two strata
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant as the norm
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the trace pairing

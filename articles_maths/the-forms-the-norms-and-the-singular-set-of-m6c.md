@@ -20,7 +20,7 @@ a complex hypersurface of complex dimension $35$ and real codimension two. The s
 
 The Hermitian form is definite, so there is no null cone: the only isotropic vector is $0$. The singular set is a cone, but it is not the isotropic cone of the form. This is the contrast with the biquaternion algebra, whose trace form is indefinite, whose null cone is the zero-divisor cone, and whose link is a five-dimensional manifold.
 
-The article assumes the Hermitian form of *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$* and the rank strata of *The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$*. It uses no topology beyond the finite-dimensional metric. The singular values of a matrix are also used in *The Polar Decomposition of $M_6(\mathbb{C})$*; the biquaternion comparison is *The Biquaternion Algebra and Its Vector Spaces*.
+The article assumes the Hermitian form of *The Involution and the Hermitian Structure of $M_6(\mathbb{C})$* and the rank strata of *The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$*. It uses no topology beyond the finite-dimensional metric. The singular values of a matrix are also used in *The Polar Decomposition of $M_6(\mathbb{C})$*; the biquaternion comparison is *The Biquaternion Algebra*.
 
 ## The Forms
 
@@ -389,5 +389,5 @@ The Hermitian form has the single isotropic vector $0$. The biquaternion algebra
 - [The Rank-Two and Rank-Three Splits of $M_6(\mathbb{C})$](the-rank-two-and-rank-three-splits-of-m6c.html), for the rank strata of the mass block.
 - [The Polar Decomposition of $M_6(\mathbb{C})$](the-polar-decomposition-of-m6c.html), for the singular values and the positive factor.
 - [The Topology of $M_6(\mathbb{C})$](the-topology-of-m6c.html), for the complement of the singular set and the link.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the biquaternion null cone.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the biquaternion null cone.
 - [The Matrix Algebra $M_6(\mathbb{C})$](the-matrix-algebra-m6c.html), for the matrix units and the rank.

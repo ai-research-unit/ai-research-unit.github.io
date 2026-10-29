@@ -74,15 +74,7 @@ and the triple product is again self-adjoint.
 
 ### The Adjoint Action
 
-**Definition.** For $x \in A$ the **adjoint action** is
-
-$$
-\operatorname{ad}_x : A \longrightarrow A, \qquad \operatorname{ad}_x(y) = [x,y] .
-$$
-
-**Proposition.** For $x \in K(A)$ the operator $\operatorname{ad}_x$ preserves $K(A)$ and $H(A)$, is a derivation of $A$, and the map $x \mapsto \operatorname{ad}_x$ is a homomorphism of Lie algebras $K(A) \to \operatorname{Der}(A)$ whose kernel is $K(A) \cap Z(A)$.
-
-*Proof.* The preservation is the proposition above. The derivation identity is $\operatorname{ad}_x(yz) = xyz - yzx = (xy - yx)z + y(xz - zx) = \operatorname{ad}_x(y)z + y\operatorname{ad}_x(z)$, using associativity. The bracket of the operators is $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x,\operatorname{ad}_y]$, which is the Jacobi identity; the kernel is the set of $x$ with $[x,y] = 0$ for all $y$, that is $K(A) \cap Z(A)$. The operator theory of $\operatorname{ad}_x$ is *The Commutator Operator*.
+The adjoint action $\operatorname{ad}_x(y)=[x,y]$ of a skew element, the fact that it preserves the two parts, and its identification with the inner derivations are operator theory: they are *The Commutator Operator*, §*The Adjoint Action*, and *Derivations and the Peirce Decomposition*. They are cited where needed and are not developed here.
 
 ### The Module Structure over the Jordan Algebra
 
@@ -166,7 +158,7 @@ so $K(A)$ is isomorphic to $B$ with the commutator bracket, that is to the commu
 
 ## Summary
 
-The **skew part** $K(A) = \{k : k^* = -k\}$ of an algebra with an involution is a linear subspace with $A = K(A)\oplus H(A)$, where $H(A) = \{h : h^* = h\}$ is the self-adjoint part; the involution acts as minus the identity on $K(A)$ and as the identity on $H(A)$. The skew part is closed under the commutator, so it is a **Lie algebra**, and $K(A)\oplus H(A)$ is a $\mathbb{Z}/2$-graded Lie algebra with the compatible grading, the even part $K(A)$ and the odd part $H(A)$; $H(A)$ is a **Lie triple system** under $\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$. The adjoint action $\operatorname{ad}_x$ of a skew element is a derivation that preserves the two parts, and the map $x \mapsto \operatorname{ad}_x$ is a homomorphism $K(A) \to \operatorname{Der}(A)$ with kernel $K(A)\cap Z(A)$. The symmetrised product makes $K(A)$ stable under multiplication by the Jordan algebra $H(A)$, so the pair carries the two products and is the Jordan pair of the involution. The skew part is the tangent space of the unitary group at the identity, and the Cayley transform produces unitary elements from skew ones. The standard examples are the alternating matrices with the transpose, whose Lie algebra is $\mathfrak{so}_n$, and the skew-Hermitian matrices with the conjugate transpose, whose Lie algebra is $\mathfrak{u}_n$. The involution and the decomposition are *Involutive Algebras*; the self-adjoint part and its Jordan structure are *The Self-Adjoint Part of an Algebra*; the Lie theory is *Lie Algebras* and *Graded Lie Algebras and Lie Superalgebras*; the unitary elements are *Unitary Elements of an Involutive Algebra*; and the operator is *The Commutator Operator*.
+The **skew part** $K(A) = \{k : k^* = -k\}$ of an algebra with an involution is a linear subspace with $A = K(A)\oplus H(A)$, where $H(A) = \{h : h^* = h\}$ is the self-adjoint part; the involution acts as minus the identity on $K(A)$ and as the identity on $H(A)$. The skew part is closed under the commutator, so it is a **Lie algebra**, and $K(A)\oplus H(A)$ is a $\mathbb{Z}/2$-graded Lie algebra with the compatible grading, the even part $K(A)$ and the odd part $H(A)$; $H(A)$ is a **Lie triple system** under $\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$. The adjoint action and the inner derivations are operator theory, cited in §*The Adjoint Action* and not developed here. The symmetrised product makes $K(A)$ stable under multiplication by the Jordan algebra $H(A)$, so the pair carries the two products and is the Jordan pair of the involution. The skew part is the tangent space of the unitary group at the identity, and the Cayley transform produces unitary elements from skew ones. The standard examples are the alternating matrices with the transpose, whose Lie algebra is $\mathfrak{so}_n$, and the skew-Hermitian matrices with the conjugate transpose, whose Lie algebra is $\mathfrak{u}_n$. The involution and the decomposition are *Involutive Algebras*; the self-adjoint part and its Jordan structure are *The Self-Adjoint Part of an Algebra*; the Lie theory is *Lie Algebras* and *Graded Lie Algebras and Lie Superalgebras*; the unitary elements are *Unitary Elements of an Involutive Algebra*; and the operator is *The Commutator Operator*.
 
 ## Summary of Notation
 
@@ -179,7 +171,6 @@ The **skew part** $K(A) = \{k : k^* = -k\}$ of an algebra with an involution is 
 | $H(A) = A^+$ | the self-adjoint elements, $h^* = h$ |
 | $[x,y] = xy - yx$ | the commutator |
 | $x \bullet y = \tfrac12(xy+yx)$ | the symmetrised product |
-| $\operatorname{ad}_x(y) = [x,y]$ | the adjoint action |
 | $\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$ | the Lie triple product on $H(A)$ |
 | $\mathrm{U}(A)$ | the unitary group, $u^*u = uu^* = 1$ |
 | $\mathfrak{so}_n$, $\mathfrak{u}_n$ | the skew parts of the matrix examples |

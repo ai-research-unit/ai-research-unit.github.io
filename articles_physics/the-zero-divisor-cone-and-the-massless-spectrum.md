@@ -13,7 +13,7 @@ The article owns no theorem. It states the nesting, the invertibility criterion 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The zero divisors, their two families and their relation to the idempotents | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| The roots of $0$, the nilpotent cone, index two and the position among the remarkable subspaces | [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
+| The roots of $0$, the nilpotent cone, index two and the position among the remarkable subspaces | [Nilpotents](../articles_maths/nilpotents.html) |
 | The norm, its multiplicativity, the inverse and the group of units | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four forms, the interval and the signature on the two sectors | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The restrictions of the forms and the norms to the material sector | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
@@ -296,7 +296,7 @@ The cone also has a canonical two-factor decomposition, which the four-factor wo
 ## Further Reading
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the two families and their relation to the idempotents.
-- [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the classification, the index and the remarkable subspaces.
+- [Nilpotents](../articles_maths/nilpotents.html), for the classification, the index and the remarkable subspaces.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for multiplicativity, the inverse and the group of units.
 - *Exponential Polar Decomposition of Biquaternions*, for the polar word, the boundary-value theorem and the two strata.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the cone as a singular object and its projectivisation.

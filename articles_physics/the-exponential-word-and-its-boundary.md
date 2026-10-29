@@ -26,7 +26,7 @@ with $r>0$, $\alpha\in(-\pi/2,\pi/2]$, $\psi\ge0$, $\theta\in[0,2\pi]$, and $\ve
 | The exponential word, the defect and the single logarithm | *Exponential Polar Decomposition of Biquaternions* |
 | The kernel, the fibre and the section of the word map | *Exponential Polar Decomposition of Biquaternions* |
 | The two strata of the zero-divisor cone | *Exponential Polar Decomposition of Biquaternions* |
-| The minimal idempotents and the pure roots of $+1$ | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
+| The minimal idempotents and the pure roots of $+1$ | [Idempotents](../articles_maths/idempotents.html) |
 | The exponential closed forms and the kernel | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 
 ## The Word
@@ -271,7 +271,7 @@ The algebra supplies no rate, no dynamics and no massless particle. It supplies 
 - [The Polar Decomposition of a N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, their ranges and the uniqueness.
 - *Exponential Polar Decomposition of Biquaternions*, for the defect, the boundary limits and the two strata.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the kernel.
-- [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the minimal idempotents.
+- [Idempotents](../articles_maths/idempotents.html), for the minimal idempotents.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the physical reading of the four factors in the interior.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the two strata read physically.
 - [The Exponential, the Logarithm and the Generator](the-exponential-the-logarithm-and-the-generator.html), for the logarithm side of the same boundary.

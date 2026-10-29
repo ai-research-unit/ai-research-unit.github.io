@@ -438,7 +438,7 @@ The square of an element of the general plain sesqualgebra is the Hermitian elem
 - [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html), for the positive cone that the square of the block generates.
 - [Square Roots of a General Element in the General Plain Sesqualgebra](square-roots-of-a-general-element-in-the-general-plain-sesqualgebra.html), for the general reduction of the root equation of which the roots of $+1$ are one central case.
 - [Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra](square-roots-of-zero-and-the-nilpotents-of-the-general-plain-sesqualgebra.html), for the roots of $0$, which the same square excludes, and the nilpotents of index three.
-- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the parent's roots of $+1$ and the halving map, whose Hermitian half is the set computed here.
+- [Idempotents](idempotents.html), for the parent's roots of $+1$ and the halving map, whose Hermitian half is the set computed here.
 - [Square Roots of One and the Idempotents of the Quaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.html), for the idempotents of the associative product, whose Hermitian half the block keeps.
 - [Zero Divisors of the General Plain Sesqualgebra](zero-divisors-of-the-general-plain-sesqualgebra.html), for the criterion $C=0$ that no root of $+1$ satisfies and among which the idempotents sit.
 - [The Specificities of the General Plain Sesqualgebra](the-specificities-of-the-general-plain-sesqualgebra.html), for the right-composition law and the projector criterion whose projector family is the whole plain idempotent set.

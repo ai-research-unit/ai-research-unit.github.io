@@ -233,7 +233,7 @@ In the general quaternionic bilinear product the square is the central element $
 - [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html), §*Powers, the Square and the Roots* and §*The Nilpotent*, for the general definition of a root of a central value, of a nilpotent and of its index.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for isotopes and the way a change of product moves the nilpotents.
 - [Square Roots of One and the Idempotents of the General Quaternionic Algebra](square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.html), for the reduction, the roots of $+1$ and the idempotents of the product.
-- [Nilpotents](square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the plain nilpotents, the pure isotropic cone of real dimension four, the index two and the plain roots of $0$.
+- [Nilpotents](nilpotents.html), for the plain nilpotents, the pure isotropic cone of real dimension four, the index two and the plain roots of $0$.
 - [Zero Divisors of the General Quaternionic Algebra](zero-divisors-of-the-general-quaternionic-algebra.html), for the criterion, the two families and the annihilators.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, its multiplicativity and the criterion.
 - [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html), for the square-zero sets of the four general products side by side.

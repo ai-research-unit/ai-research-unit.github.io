@@ -274,7 +274,7 @@ The polar decomposition $Q=ru\exp(s\varepsilon)$ exposes the defect as the parab
 - [Dual-Numbers Element Representations](dual-numbers-element-representations.html), for the regular representation.
 - [Spectral Regularity and Degeneracy in the Dual-Number Algebra](spectral-regularity-and-degeneracy-in-the-dual-number-algebra.html), for the characteristic polynomial, the minimal polynomial dichotomy and the one-term decomposition.
 - [Relations between the Dual Norm and Spectral Degeneracy](relations-between-the-dual-norm-and-spectral-degeneracy.html), for the comparison of the norm and the defect.
-- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-spectrally-degenerate-sector-and-construction-of-the-jordan-basis-of-a-biquaternion.html), for the three strata of the biquaternion spectral-degenerate cone.
+- [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the three strata of the biquaternion spectral-degenerate cone.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for semisimplicity, defect and the additive decomposition.
 - [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html), for the structure theorem behind the module picture.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the Jordan form and the geometric multiplicity.

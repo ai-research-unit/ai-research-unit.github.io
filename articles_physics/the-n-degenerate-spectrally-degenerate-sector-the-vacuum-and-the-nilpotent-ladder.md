@@ -22,7 +22,7 @@ The physical content is therefore the **vacuum and its nilpotent excitations**. 
 | The nilpotent cone, the ladder and the ladder action | [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html) |
 | The zero-divisor cone and its strata | [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html) |
 | The primitive idempotents and the minimal left ideals | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
-| The independence of the two conditions | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html) |
+| The independence of the two conditions | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | The four-vector dictionary and the origin | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
 | The indefinite form and the cone | [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html) |
 

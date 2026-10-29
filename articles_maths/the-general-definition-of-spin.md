@@ -371,7 +371,7 @@ The complex algebra $\mathbb{B}$ has two real forms, $\mathbb{H}$ and $\mathbb{H
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the Peirce coordinates and the half-angle.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the corners and the frame.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the frame and its nilpotents.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for $\mathbb{B}$.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for $\mathbb{B}$.
 - [The Quaternion Algebra](quaternion-algebra.html), [The Split-Quaternion Algebra](split-quaternion-algebra.html), [The Split-Complex Algebra](split-complex-algebra.html), and [Introduction to the General Plain Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the cases.
 - [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the spin-two chain.
 - [Chirality: The Conjugate Pair](chirality-the-conjugate-pair.html), for the central sign $\chi=ij$ and the Peirce index.

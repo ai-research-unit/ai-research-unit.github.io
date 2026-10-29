@@ -6,7 +6,7 @@ The trace of the regular matrix is four times the scalar part and the determinan
 
 This article develops the two invariants, the four algebraic norms as matrix invariants, the characteristic and minimal polynomials, and the singular locus. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. Write $\mathsf{M}_4(\tilde Q)=M$, $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\lambda_\pm=Q_t\pm iB$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. Write $\mathsf{M}_4(\tilde Q)=M$, $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\lambda_\pm=Q_t\pm iB$.
 
 **Boundaries.** The determinant as a group homomorphism is *$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the rank stratification is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*; the four forms are *$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces*. The $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*.
 

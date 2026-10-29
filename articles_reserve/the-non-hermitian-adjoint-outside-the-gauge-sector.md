@@ -2,30 +2,26 @@
 
 ## Scope
 
-This file lists only what is still in the corpus. Four clauses already deleted are not listed: the two pointers in *Conventions in the Biquaternion Universe* and *The Six Subspaces*, the form clause in *The Exponential and the Generator*, and the duplicate notation row in *Charge Conjugation and the Division Ring*.
+This file is an **inventory**, not a list of defects. It records every remaining place outside the gauge sector where a conjugation is written with an inverse, and states for each whether the Hermitian adjoint could stand in its place.
+
+The answer divides the corpus in four groups, and only one of them is an exception:
+
+| group | articles | lines | can the star replace the inverse? |
+|---|---|---|---|
+| star is not the adjoint | 2 | 3 | no |
+| star is the adjoint | 3 | 10 | yes, value unchanged |
+| bivector law, star not applicable | 7 | 21 | no |
+| outside the algebra | 3 | 8 | no sandwich exists |
+
+Four clauses already deleted are not listed: the two pointers in *Conventions in the Biquaternion Universe* and *The Six Subspaces*, the form clause in *The Exponential and the Generator*, and the duplicate notation row in *Charge Conjugation and the Division Ring*.
 
 Quotations are verbatim, except that link targets inside a quoted paragraph are rebased to this file's location.
 
-Eight articles remain. They fall in three groups.
+Nine articles cannot be written with the star: two in group 1 and the seven in group 3. Three more can, with no change of value. Three are outside the algebra. Fifteen articles, forty-two lines, one defect.
 
-| group | count | can the inverse be removed? |
-|---|---|---|
-| pure boost | 2 | no: $U^{*}=U$ |
-| exact substitution | 3 | yes |
-| Clifford layer | 3 | no: not a biquaternion sandwich |
+The earlier version of this file counted eight articles, omitted the seven bivector-law articles entirely, and left the exercise's false conclusion standing. The quotations and line numbers of the original eight entries are unchanged.
 
-| # | article | lines | group |
-|---|---|---|---|
-| 1 | [Exercise: Duality Rotation and the Riemann-Silberstein Vector](../articles_physics/exercise-duality-rotation-and-the-riemann-silberstein-vector.html) | 318, 331 | boost |
-| 2 | [The Eigenspinor](../articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html) | 77 | boost |
-| 3 | [The Neutrino and Majorana Fermions](../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) | 61, 120 | exact |
-| 4 | [The Biquaternion Basis of a Unified Field Fibre Bundle](../articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html) | 116, 220 | exact |
-| 5 | [The Skyrme Model and the Topological Baryon](../articles_physics/the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) | 21, 50, 58, 150, 223, 273 | exact |
-| 6 | [Charge Conjugation and the Division Ring](../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html) | 7, 62, 107, 137 | Clifford |
-| 7 | [The CPT Theorem](../articles_physics/the-cpt-theorem-in-biquaternionic-form.html) | 242, 307, 336 | Clifford |
-| 8 | [Antilinear Structure and the Two Kinds of Mass](../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html) | 193 | Clifford |
-
-## 1. Pure Boost: No Hermitian Form
+## 1. The Star Is Not the Adjoint: Three Lines
 
 ### 1. [Exercise: Duality Rotation and the Riemann-Silberstein Vector](../articles_physics/exercise-duality-rotation-and-the-riemann-silberstein-vector.html), lines 318, 331
 
@@ -61,7 +57,9 @@ The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the 
 
 **Remaining issue.** Line 318 writes $\tilde U^{-1}\tilde F\tilde U$ and proves it correct. Line 331 says the rotation needs $\tilde U\tilde F\tilde U^{*}$ and the boost needs this other ordering. The inverse cannot become the star: at line 290 the boost rotor is Hermitian, $\tilde U^{*}=\tilde U$, and the star gives $\tilde U\tilde F\tilde U$, which line 312 shows is wrong.
 
-**Decision needed.** Either keep the inverse, which is correct and is the natural conjugate on this slice, or find one action that covers boost and rotation together. The article reports that second option as open in its parent.
+**Remaining defect.** The inverse is correct and must stay. The defect is the conclusion drawn from it. Lines 331 and 359 state that the rotation needs $\tilde U\tilde F\tilde U^{*}$, the boost needs $\tilde U^{-1}\tilde F\tilde U$, and therefore that "no single one of these adjoint actions" is the Lorentz transformation law of $\tilde F$. That is false. The rotation agrees because a real rotation rotor satisfies $\tilde u^{*}=\tilde u^{\natural}=\tilde u^{-1}$: it is the degenerate case of one law, not a second law. The residual disagreement is a convention, since part (a) rotates the field actively by $+\varphi$ while part (b) boosts the frame passively by $+v_b$.
+
+**No action on the formula.** The conclusion at lines 331 and 359 needs correcting in the article; the inverse stays.
 
 ### 2. [The Eigenspinor](../articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html), line 77
 
@@ -75,9 +73,9 @@ $$
 
 **Remaining issue.** Line 59 states $\tilde U^{*}=\tilde U$ for the boost. Line 77 conjugates the eigenprojections by $\tilde U^{-1}$. The star would fix them instead of moving them, so the inverse must stay. The natural conjugate $\tilde U^{\natural}$ is equal to it and is already defined at line 57.
 
-**Decision needed.** Whether to write $\tilde U^{\natural}$ in place of $\tilde U^{-1}$. This is a substitution of notation, not of value.
+**No action.** The inverse is the quaternion conjugate, the natural conjugation on this slice. Writing $\tilde U^{\natural}$ is a notation choice, not a correction.
 
-## 2. Exact Substitution Available
+## 2. The Star Is the Adjoint: No Action
 
 ### 3. [The Neutrino and Majorana Fermions](../articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.html), lines 61, 120
 
@@ -183,7 +181,29 @@ $$
 
 **Fix.** $\tilde U^{-1}\to\tilde U^{\natural}$ at all six lines (21, 50, 58, 150, 223, 273). Value unchanged. This one changes a standard convention: the left-invariant current is normally written with the inverse.
 
-## 3. Clifford Layer: Cannot Be Removed
+## 3. The Bivector Law: Seven Articles the Earlier Version Omitted
+
+The field strength is a bivector, and its law is $\tilde F_2=\tilde U^{\natural}\tilde F\tilde U=\tilde U^{-1}\tilde F\tilde U$. These articles state it and were not listed before.
+
+| article | lines |
+|---|---|
+| [Conventions in the Biquaternion Universe](../articles_physics/conventions-in-the-biquaternion-universe.html) | 385 |
+| [Higher Multipoles and the Field-Strength Decomposition](../articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html) | 260, 382, 414 |
+| [The Boost of a Plane Wave as a Rotation and a Dilation](../articles_physics/the-boost-of-a-plane-wave-as-a-rotation-and-a-dilation.html) | 20, 25, 167, 172, 214 |
+| [The Lorentz Force in Biquaternion Form](../articles_physics/the-lorentz-force-in-biquaternion-form.html) | 507, 522, 630 |
+| [The Relativistic Quadrupole](../articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.html) | 208, 404 |
+| [The Relativistic Particle in an External Field](../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html) | 296 |
+| [Exercise: The Electromagnetic Field of a Moving Charge](../articles_physics/exercise-the-electromagnetic-field-of-a-moving-charge.html) | 293, 306, 334, 346, 364, 400 |
+
+The sharpest statement is in *The Relativistic Particle in an External Field*, line 296:
+
+> With that convention the four-velocity, the four-momentum, and the four-force all transform by the **vector** rule, $\tilde{Q}_{\mathrm L} = \tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}^{*}$, because all three lie in $\mathbb{M}_-$. The field strength does **not**: it transforms by the **bivector** rule $\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$, the same rule used in the Lorentz-force article.
+
+*The Lorentz Force* states the same distinction at line 504: "The field strength is *not* a four-vector, and it does not transform like one."
+
+None of the seven is a defect. They are listed because the earlier version of this file claimed to be complete.
+
+## 4. Clifford Layer: Cannot Be Removed
 
 ### 6. [Charge Conjugation and the Division Ring](../articles_physics/charge-conjugation-and-the-division-ring-in-biquaternionic-form.html), lines 7, 62, 107, 137
 
@@ -230,8 +250,11 @@ The word "charge conjugation" is used at four levels in the corpus, and the tabl
 
 | group | articles | lines | action |
 |---|---|---|---|
-| pure boost | 2 | 3 | decision needed; the inverse is correct |
-| exact substitution | 3 | 10 | $\tilde U^{-1}\to\tilde U^{\natural}$ or $^{\dagger}$, $C^{-1}\to C^{\dagger}$ |
-| Clifford layer | 3 | 8 | none; outside $\mathbb{B}$ |
+| star is not the adjoint | 2 | 3 | inverse stays; correct the conclusion at 331 and 359 |
+| star is the adjoint | 3 | 10 | none; value unchanged |
+| bivector law, star not applicable | 7 | 21 | none; listed for completeness |
+| outside the algebra | 3 | 8 | none |
 
-Eight articles, twenty-one lines. Three of the eight can be cleaned by substitution. Two cannot be written with the star at all. Three are not biquaternion sandwiches.
+Fifteen articles, forty-two lines, one defect. Nine articles cannot be written with the star. Six can: three by substitution with no change of value, three because no biquaternion sandwich exists.
+
+The one defect is not an adjoint. It is the sentence in *Exercise: Duality Rotation and the Riemann-Silberstein Vector* that reads a convention difference as a missing law. The law is $\tilde F_2=\tilde U^{\natural}\tilde F\tilde U$, and the corpus states it in eight articles.

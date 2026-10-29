@@ -295,8 +295,8 @@ The comparison with the neighbouring algebras is the comparison of discriminants
 - [Dual-Numbers Element Representations](dual-numbers-element-representations.html), for the regular representation in the basis $(1,\varepsilon)$.
 - [The Defective Sector of the Dual-Number Algebra](the-defective-sector-of-the-dual-number-algebra.html), for the defect, its two strata, the module picture and the polar decomposition.
 - [Relations between the Dual Norm and Spectral Degeneracy](relations-between-the-dual-norm-and-spectral-degeneracy.html), for the comparison of the norm and the defect and the chain of invariants.
-- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the same distinction on the biquaternion spectral-degenerate cone.
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors in the biquaternion algebra.
+- [The Spectrum](the-spectrum.html), for the same distinction on the biquaternion spectral-degenerate cone.
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors in the biquaternion algebra.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the additive decomposition $Q=a\cdot1+b\varepsilon$.
 - [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html), for the Jordan block and the module picture of the defect.
 - [The Eigenvalue Decomposition of an Element](the-eigenvalue-decomposition-of-an-element.html), for the spectral decomposition in the general theory.

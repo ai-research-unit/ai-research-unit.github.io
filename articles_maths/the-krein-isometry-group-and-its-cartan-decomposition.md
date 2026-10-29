@@ -305,7 +305,7 @@ On the operators, the three pairings give the transpose, the Hermitian adjoint a
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the three pairings, their isometry groups and their signatures
 - [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra](j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.html), for the adjoints of the algebra's families and the indefinite spectral data
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form and its Gram matrix.
-- [K-Regularity and Degeneracy in the Biquaternion Algebra](krein-norm-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null set and the positive cone.
+- [K-Regularity and Degeneracy in the Biquaternion Algebra](k-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the null set and the positive cone.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets and the complex hyperbolic space as the space of positive lines
 - [The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra](the-indefinite-hermitian-sandwich-on-the-general-quaternionic-sesqualgebra.html), for the sandwich by a $J$-unitary parameter
 - [Unitary and Isometric Operators of the Form](unitary-and-isometric-operators-of-the-form.html), for the general isometry monoid and its group of units

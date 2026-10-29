@@ -209,8 +209,8 @@ The algebra carries the quaternion conjugation ${}^{\natural}$, $\mathbb{C}$-lin
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the algebra, its basis and its tensor product
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its basis and its tensor product
 - [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the four maps and the scalar–vector form of the product
-- [The Six Subspaces](introduction-to-the-remarkable-subspaces.html), for the six subspaces of the three splittings, one to a section
-- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the relations between the six and the lattice they form
+- [The Six Subspaces](the-six-subspaces.html), for the six subspaces of the three splittings, one to a section
+- [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the relations between the six and the lattice they form
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the matrix images of the four maps

@@ -146,13 +146,13 @@ The map $J$ of §*The Complex Structure* is the other side of the same coin: it 
 
 **The conjugations of the next article cut the real space into fixed and anti-fixed spaces, and this article names them only.**
 
-The six fixed and anti-fixed spaces of the bar, the tessarine sign and the star are the **remarkable subspaces** of the space, and they are defined one to a section in *The Six Subspaces*, with the two decompositions they produce in *The Three Eigenspace Decompositions* and the table of all of them in *The Lattice of the Subspaces*. Three of them are read from the coordinates already fixed here:
+The six fixed and anti-fixed spaces of the bar, the tessarine sign and the star are the **remarkable subspaces** of the space, and they are defined one to a section in *The Six Subspaces*, with the two decompositions they produce in *The Three Eigenspace Decompositions* and the table of all of them in *The Subspaces and Their Relations*. Three of them are read from the coordinates already fixed here:
 
 - the fixed space of the **tessarine sign** is the **scalar line** $\mathbb{C}=\{A:A\in\mathbb{C}\}$, of real dimension two, spanned by $1,i$;
 - the anti-fixed space of the **tessarine sign** is the **$j$-line**, of real dimension two, spanned by $j,ij$;
 - the fixed space of the **bar** is the **real subalgebra** $\{a+bj:a,b\in\mathbb{R}\}$, of real dimension two, the split-complex numbers inside $\mathbb{B}_{\mathrm{r}}$.
 
-**Remark (the algebra is commutative, so its ring centre is not a proper subspace).** Unlike the biquaternion algebra, whose centre is the scalar line $\mathbb{C}e_t$ and one of its remarkable subspaces, the reduced biquaternion algebra is commutative, so its **ring centre is the whole algebra** and the scalar line is not its centre but its scalar line. Where the biquaternion category reads a *central* subspace, this category reads the **scalar line**, and the difference is taken up in *The Lattice of the Subspaces*. The warning is stated here because it bears on every later use of the word *central*: in this category *central* names an element of the scalar line $\mathbb{C}$, or the property of commuting with everything, which here is shared by every element.
+**Remark (the algebra is commutative, so its ring centre is not a proper subspace).** Unlike the biquaternion algebra, whose centre is the scalar line $\mathbb{C}e_t$ and one of its remarkable subspaces, the reduced biquaternion algebra is commutative, so its **ring centre is the whole algebra** and the scalar line is not its centre but its scalar line. Where the biquaternion category reads a *central* subspace, this category reads the **scalar line**, and the difference is taken up in *The Subspaces and Their Relations*. The warning is stated here because it bears on every later use of the word *central*: in this category *central* names an element of the scalar line $\mathbb{C}$, or the property of commuting with everything, which here is shared by every element.
 
 ## Summary
 
@@ -188,5 +188,5 @@ A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in wh
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html), below this article, for the four general products and the clause that decides which slot carries a conjugation.
 - [The Four-Vector Element Representation of the Reduced Biquaternions](the-four-vector-element-representation-of-the-reduced-biquaternions.html), for the real quadruple and the complex pair as element representations.
 - [Conventions in Mathematics](conventions-in-mathematics.html), §*The Elements and their Coefficients*, for the scalar part, the $j$-part and the two complex coordinates.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.
 - [The Split-Complexoid as a Vector Space over $\mathbb{R}$](the-split-complexoid-as-a-vector-space-over-r.html), for the real companion $\mathbb{D}$ and its self-interpretation over the algebra.

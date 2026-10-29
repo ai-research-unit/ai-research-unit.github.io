@@ -192,6 +192,6 @@ A spinor of $\mathbb{B}$ is an element of $S_{+}=\mathbb{B}\tilde\Pi_{+}$ or $S_
 
 ## Further Reading
 
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the four lines.
-- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-in-the-biquaternion-algebra.html), for the basis, the coordinates and the gauge.
-- [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the units and the centre.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the four lines.
+- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the coordinates and the gauge.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the units and the centre.

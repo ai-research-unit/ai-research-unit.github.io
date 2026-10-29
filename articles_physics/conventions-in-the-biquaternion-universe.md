@@ -936,7 +936,7 @@ The phase gate of the gate articles is a rotation about $\vec e_z$, a non-centra
 
 The roots carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*) and the nilpotent $\tilde{\nu}$ (§*The Nilpotent Convention*): the **xi**, in the two cases.
 
-A **root of $1$** of the algebra is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{\Xi}^2 = \lambda e_t$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *Square Roots of a General Element in the Biquaternion Algebra*; the roots the series uses are the roots of $1$.
+A **root of $1$** of the algebra is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{\Xi}^2 = \lambda e_t$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *Square Roots of an Element*; the roots the series uses are the roots of $1$.
 
 **The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents (§*The Nilpotent Convention*), and the class is relative to the product; the roots of a value in the four general products are those of *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
@@ -963,7 +963,7 @@ An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2
 
 **The case rule splits the glyph, as it does in the mathematical corpus.** The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Pi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\pi}$; those of the complex, split-complex, dual and reduced biquaternion layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The series works in $\mathbb{B}$ and writes $\tilde{\Pi}$ throughout; the other glyphs are the mathematical corpus's, and the layer fixes the glyph.
 
-A non-zero idempotent $\tilde{\Pi}$ generates the **minimal left ideal** $\mathbb{B}\tilde{\Pi}$, which is the state module of the companion articles; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of *Square Roots of One and the Idempotents of the Biquaternion Algebra* and its companions in the mathematical corpus.
+A non-zero idempotent $\tilde{\Pi}$ generates the **minimal left ideal** $\mathbb{B}\tilde{\Pi}$, which is the state module of the companion articles; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of *Idempotents* and its companions in the mathematical corpus.
 
 **The coordinates carry the letter of the idempotent**: in $\mathbb{B}$ the idempotent is $\tilde{\Pi} = \Pi_te_t + \Pi_x\vec e_x + \Pi_y\vec e_y + \Pi_z\vec e_z$ with $\Pi_\mu = \pi_\mu + i\pi'_\mu$, its scalar part $\Pi_t$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$; in $\mathbb{H}$ it is $\tilde\pi = \pi_te_t + \pi_x\vec e_x + \pi_y\vec e_y + \pi_z\vec e_z$ with real $\pi_\mu$.
 
@@ -1015,7 +1015,7 @@ The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, th
 
 ## The Four-Vector Representation
 
-The algebra is read as the quadruple of its complex coefficients, in *The Biquaternion Algebra and Its Vector Spaces*, §*The Coordinate Systems*. Each unit is one coordinate place,
+The algebra is read as the quadruple of its complex coefficients, in *The Biquaternion Algebra*, §*The Coordinate Systems*. Each unit is one coordinate place,
 
 $$
 e_t \longleftrightarrow (1,0,0,0), \qquad \vec e_x \longleftrightarrow (0,1,0,0), \qquad \vec e_y \longleftrightarrow (0,0,1,0), \qquad \vec e_z \longleftrightarrow (0,0,0,1),

@@ -86,7 +86,7 @@ so the algebra contains **four copies of the complex field** — the scalar line
 
 **The reduced biquaternion list is the biquaternion list collapsed by the commutativity, and the closure pattern is the visible difference.**
 
-In the biquaternion category the remarkable subspaces are also the fixed and anti-fixed spaces of the involutions and the idempotent lines, but the algebra is not commutative, the vector subspace has real dimension three, and the fixed spaces of the two involutions are richer: the tessarine sign fixes only the scalar line, the bar fixes a four-dimensional split-quaternion subspace, and the star fixes a real plane of the Hermitian elements. In the reduced biquaternion case the two involutions are two generators of $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ acting on a four-dimensional space, so their fixed spaces are two-dimensional planes, and the three involutions with their three fixed planes exhaust the list. The closure comparison is the sharp one: the biquaternion has the same subalgebra and ideal structure on fewer spaces, and the reduced biquaternion shows the closure of a coordinate plane as a purely combinatorial fact about the signs of its two basis elements, read from the character table. The comparison is *The Lattice of the Subspaces* of the biquaternion category.
+In the biquaternion category the remarkable subspaces are also the fixed and anti-fixed spaces of the involutions and the idempotent lines, but the algebra is not commutative, the vector subspace has real dimension three, and the fixed spaces of the two involutions are richer: the tessarine sign fixes only the scalar line, the bar fixes a four-dimensional split-quaternion subspace, and the star fixes a real plane of the Hermitian elements. In the reduced biquaternion case the two involutions are two generators of $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ acting on a four-dimensional space, so their fixed spaces are two-dimensional planes, and the three involutions with their three fixed planes exhaust the list. The closure comparison is the sharp one: the biquaternion has the same subalgebra and ideal structure on fewer spaces, and the reduced biquaternion shows the closure of a coordinate plane as a purely combinatorial fact about the signs of its two basis elements, read from the character table. The comparison is *The Subspaces and Their Relations* of the biquaternion category.
 
 ## Summary
 
@@ -108,9 +108,9 @@ The eight remarkable subspaces of the reduced biquaternion algebra are the six c
 
 ## Further Reading
 
-- [Introduction to the Remarkable Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the defining equations, bases and norms.
+- [The Six Subspaces](introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the defining equations, bases and norms.
 - [Decompositions Along the Remarkable Subspaces](decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.html), for the block decomposition, the halvings and the idempotent decomposition.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), for the fixed and anti-fixed spaces.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the two minimal ideals and the Peirce decomposition.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), for the idempotents and the two lines.
-- [The Lattice of the Subspaces](comparison-of-the-remarkable-subspaces.html), for the non-commutative companion.
+- [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the non-commutative companion.

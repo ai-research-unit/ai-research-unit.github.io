@@ -4,7 +4,7 @@
 
 This article introduces **Jordan algebras**: commutative algebras over a commutative ring whose product satisfies a single identity in place of associativity, the **Jordan identity**. The subject is developed here as pure algebra, and no physical interpretation is used anywhere. The treatment is introductory.
 
-The base structure is a **commutative ring** $R$ with identity $1 \neq 0$. The corpus's broad sense of "algebra" — a module with a bilinear product, not assumed associative, commutative or unital — is the setting, as in *Algebras*, and the Jordan product fails associativity for the same structural reason that the Lie bracket does, sois the nearest general precedent. Here the product is commutative; the compensating identity is the Jordan identity rather than the Jacobi identity.
+The base structure is a **commutative ring** $R$ with identity $1 \neq 0$. The corpus's broad sense of "algebra" — a module with a bilinear product, not assumed associative, commutative or unital — is the setting, as in *Algebras*, and the Jordan product fails associativity for the same structural reason that the Lie bracket does, so is the nearest general precedent. Here the product is commutative; the compensating identity is the Jordan identity rather than the Jacobi identity.
 
 The product itself has a **symmetric** origin. If $A$ is an associative algebra with product $(x, y) \mapsto xy$, then the symmetrised product
 
@@ -20,19 +20,13 @@ $$
 
 reconstructs $x \bullet y$ from squares. The square $x \mapsto x^2$ is the degree-two part of the product, and the symmetrisation is exactly the passage from an ordered product to the unordered one, in the sense of *Symmetric Powers*. The Jordan identity is what survives of associativity after the order of the factors is forgotten.
 
-The article defines Jordan algebras and their symmetrised examples, proves the Jordan identity for $A^+$, establishes power associativity, constructs the trace form and proves its invariance under derivations, describes the Peirce decomposition attached to an idempotent, and states the classification of the formally real finite-dimensional algebras. The companion articletreats the matrix algebras $H_n(D)$, the exceptional Albert algebra, and the special/exceptional dichotomy, treats the degree-two case.
+The article defines Jordan algebras and their symmetrised examples, proves the Jordan identity for $A^+$, establishes power associativity, describes the Peirce decomposition attached to an idempotent, and states the classification of the formally real finite-dimensional algebras. The multiplication operators, the trace form and the derivations are the operator layer and are cited, not developed. The companion article treats the matrix algebras $H_n(D)$, the exceptional Albert algebra, and the special/exceptional dichotomy, treats the degree-two case.
 
 ## The Jordan Product
 
 ### Definition
 
-Let $J$ be an $R$-module with a bilinear map $\bullet : J \times J \to J$. For $x \in J$ write $x^2 = x \bullet x$, and for a fixed $x$ let $L_x \in \operatorname{End}_R(J)$ be the **multiplication operator**
-
-$$
-L_x(y) = x \bullet y .
-$$
-
-The pair $(J, \bullet)$ is a **Jordan algebra** if $\bullet$ is commutative,
+Let $J$ be an $R$-module with a bilinear map $\bullet : J \times J \to J$. For $x \in J$ write $x^2 = x \bullet x$. The pair $(J, \bullet)$ is a **Jordan algebra** if $\bullet$ is commutative,
 
 $$
 x \bullet y = y \bullet x ,
@@ -44,13 +38,7 @@ $$
 x^2 \bullet (y \bullet x) = (x^2 \bullet y) \bullet x
 $$
 
-holds for all $x, y \in J$. In operator form the identity is
-
-$$
-[L_x, L_{x^2}] = 0 ,
-$$
-
-where $[S, T] = ST - TS$ is the commutator of endomorphisms. The algebra is **unital** if there is an element $1 \in J$ with $1 \bullet x = x$ for all $x$; it is then automatically the two-sided unit because $\bullet$ is commutative. A **homomorphism** of Jordan algebras is an $R$-linear map preserving the product, $f(x \bullet y) = f(x) \bullet f(y)$; it is **unital** if it preserves $1$.
+holds for all $x, y \in J$. The identity says that the two ways of bracketing $x^2$, $y$ and $x$ agree; its operator form $[L_x,L_{x^2}]=0$ is *The Jordan Multiplication Operators*, §*The Jordan Identity in Operator Form*, and is not used here. The algebra is **unital** if there is an element $1 \in J$ with $1 \bullet x = x$ for all $x$; it is then automatically the two-sided unit because $\bullet$ is commutative. A **homomorphism** of Jordan algebras is an $R$-linear map preserving the product, $f(x \bullet y) = f(x) \bullet f(y)$; it is **unital** if it preserves $1$.
 
 **Remark.** No coefficient such as $\tfrac{1}{2}$ appears in the axioms, so the definition makes sense over an arbitrary commutative ring. The symmetrised product of an associative algebra, by contrast, is usually written with $\tfrac{1}{2}$ and then requires $2$ invertible; when $2$ is not invertible the product $x \bullet y = xy + yx$ serves, and the two differ only by the unit $2$.
 
@@ -58,29 +46,23 @@ where $[S, T] = ST - TS$ is the commutator of endomorphisms. The algebra is **un
 
 The identity as stated involves only one element $x$ and one further element $y$. It can be restated in several equivalent ways, of which the following are the most useful.
 
-**Proposition.** Let $(J, \bullet)$ be a commutative $R$-algebra. The Jordan identity $x^2 \bullet (y \bullet x) = (x^2 \bullet y) \bullet x$ for all $x, y \in J$ is equivalent to the operator identity
+**Proposition.** Let $(J, \bullet)$ be a commutative $R$-algebra. The Jordan identity implies, by polarisation, the **linearised identity**
 
 $$
-\boxed{\;[L_x, L_{x^2}] = 0 \qquad \text{for all } x \in J\;} .
+\boxed{\;2\,(x \bullet w) \bullet (y \bullet x) + x^2 \bullet (y \bullet w) = 2\,\bigl((x \bullet w) \bullet y\bigr) \bullet x + (x^2 \bullet y) \bullet w\;}
 $$
 
-It implies, by polarisation, the **linearised identity**
+for all $x, w, y \in J$. Conversely, the linearised identity at $w = x$ gives $3\,x^2 \bullet (y \bullet x) = 3\,(x^2 \bullet y) \bullet x$, so the two are equivalent when $3$ is invertible in $R$.
+
+*Proof.* Work in $J \otimes_R R[t]$, which is a Jordan algebra by base change of the axioms. Since $(x + tw)^2 = x^2 + 2t\,(x \bullet w) + t^2 w^2$, the Jordan identity for the element $x + tw$ reads
 
 $$
-[L_w, L_{x^2}] + 2\,[L_x, L_{x \bullet w}] = 0 \qquad \text{for all } x, w \in J ,
+(x^2 + 2t\,x \bullet w + t^2 w^2) \bullet \bigl(y \bullet (x + tw)\bigr) = \bigl((x^2 + 2t\,x \bullet w + t^2 w^2) \bullet y\bigr) \bullet (x + tw),
 $$
 
-and, when $2$ is invertible in $R$, the **cyclic** form
+and the coefficient of $t$ is the displayed identity. A polynomial identity over $R[t]$ has vanishing coefficients. At $w = x$ the identity reads $3\,x^2 \bullet (y \bullet x) = 3\,(x^2 \bullet y) \bullet x$, so it returns the Jordan identity when $3$ is invertible.
 
-$$
-[L_x, L_{y \bullet z}] + [L_y, L_{z \bullet x}] + [L_z, L_{x \bullet y}] = 0 \qquad \text{for all } x, y, z \in J .
-$$
-
-The cyclic form at $z = x$ is the linearised identity, so it implies it over any commutative ring. Conversely, the linearised identity at $w = x$ reads $3\,[L_x, L_{x^2}] = 0$, so the three forms are equivalent whenever $2$ and $3$ are invertible in $R$.
-
-*Proof.* Commutativity identifies $L_x(y) = x \bullet y$ and $L_{x^2}(y) = x^2 \bullet y$, so the identity $x^2 \bullet (y \bullet x) = (x^2 \bullet y) \bullet x$ for all $y$ is exactly $[L_x, L_{x^2}] = 0$; this needs no hypothesis on $2$. For the polarised forms, work in $J \otimes_R R[t]$, which is a Jordan algebra by base change of the axioms. Since $(x + tw)^2 = x^2 + 2t\,(x \bullet w) + t^2 w^2$ and $L_{x + tw} = L_x + tL_w$, the expansion of $[L_{x + tw}, L_{(x+tw)^2}] = 0$ has $t$-coefficient $[L_w, L_{x^2}] + 2\,[L_x, L_{x \bullet w}]$, and a polynomial identity over $R[t]$ has vanishing coefficients. Similarly, expanding $[L_{x + sy + tz}, L_{(x+sy+tz)^2}] = 0$ shows that the coefficient of $st$ is twice the cyclic sum, so the cyclic form follows when $2$ is invertible. The specialisations $z = x$ and $w = x$ are immediate.
-
-The content of the axiom is therefore: multiplication by $x$ and multiplication by $x^2$ commute, and this continues to hold after linearisation. Despite the absence of associativity, the operators $L_x$ and $L_{x^2}$ generate a commutative algebra of endomorphisms, which is what makes the powers of a single element manageable.
+The content of the axiom is therefore: the two ways of bracketing $x^2$, $y$ and $x$ agree, and this continues to hold after linearisation. The operator reading, in which the identity is the commutativity of the multiplication operators $L_x$ and $L_{x^2}$, is *The Jordan Multiplication Operators*, §*The Jordan Identity in Operator Form*.
 
 ### Power Associativity
 
@@ -94,13 +76,13 @@ satisfy $x^m \bullet x^n = x^{m+n}$ for all $m, n \geq 1$.
 
 **Theorem.** Every Jordan algebra is power associative.
 
-*Proof (sketch).* The Jordan identity states $[L_x, L_{x^2}] = 0$, so $L_x$ commutes with $L_{x^2}$. All powers $x^n$ are obtained from $x$ by iterating $L_x$, since $x^{n+1} = L_x(x^n)$; hence the submodule spanned by the powers is stable under $L_x$. The assertion $x^m \bullet x^n = x^{m+n}$ is proved by induction on $m + n$. For $m + n \leq 2$ it is immediate from the definitions. For the induction step one uses the identity $L_{x^2}L_x = L_x L_{x^2}$, rewritten as
+*Proof (sketch).* The Jordan identity is the elementwise identity
 
 $$
 x^2 \bullet (x \bullet y) = x \bullet (x^2 \bullet y) \qquad \text{for all } y,
 $$
 
-to move two of the factors past one another: writing $x^{m+1} \bullet x^n = x \bullet (x^m \bullet x^n)$ and using the induction hypothesis, together with the displayed identity to commute the powers of $x$, gives $x^{m+n+1}$. The induction is standard and is carried out in any of the references below.
+which says that the powers $x^2$ and $x$ may be moved past one another. The powers $x^n$ are obtained by iterating the map $y \mapsto x \bullet y$, so the submodule spanned by them is stable under that map. The assertion $x^m \bullet x^n = x^{m+n}$ is proved by induction on $m+n$. For $m+n \leq 2$ it is immediate from the definitions. For the step one writes $x^{m+1}\bullet x^n = x\bullet(x^m\bullet x^n)$ and uses the induction hypothesis, together with the displayed identity, to commute the powers of $x$; this gives $x^{m+n+1}$. The induction is standard and is carried out in any of the references below.
 
 **Corollary.** In a Jordan algebra every element generates a commutative associative subalgebra, spanned by its powers. In particular, for each $x$ in a unital Jordan algebra the substitution $t \mapsto x$ is a surjective algebra homomorphism $R[t] \to J$ onto that subalgebra.
 
@@ -150,69 +132,9 @@ A **spin factor** is a Jordan algebra of degree two built from a quadratic form 
 
 If $\mathbb{O}$ denotes the octonions, the algebra $H_3(\mathbb{O})$ of Hermitian $3 \times 3$ matrices over $\mathbb{O}$ with the symmetrised product is a Jordan algebra of dimension $27$. It is the **Albert algebra**, and it is exceptional: it does not embed into any $A^+$ with $A$ associative. It is the smallest exceptional Jordan algebra and the only one among the finite-dimensional formally real algebras; the details, including the verification that the symmetrised product satisfies the Jordan identity, are in *Non-Associative Algebras and the Property Ladder*. The naive symmetrisation of matrix multiplication works only because the diagonal entries are required to be real, that is, fixed by the octonion conjugation; without that restriction the symmetrised product fails the Jordan identity.
 
-## The Trace Form and Derivations
+## The Operator Layer
 
-### The Trace Form
-
-Let $J$ be a Jordan algebra that is free of finite rank as an $R$-module. The **trace form** is
-
-$$
-T : J \times J \longrightarrow R, \qquad T(x, y) = \operatorname{tr}(L_{x \bullet y}).
-$$
-
-It is symmetric and $R$-bilinear, because $\bullet$ is commutative and $L$ is linear in its subscript. Its name records the special case: if $2$ is invertible and $J = A^+$ for an associative algebra $A$ that is free of finite rank, then $L_x = \tfrac{1}{2}(\lambda_x + \rho_x)$, where $\lambda_x$ and $\rho_x$ are the operators of left and right multiplication by $x$ on $A$; for $A = M_n(R)$ each of them has trace $n\operatorname{tr}(x)$, obtained by writing the operator in the basis of matrix units, so
-
-$$
-T(x, y) = \tfrac{1}{2}\bigl(\operatorname{tr}(\lambda_{x\bullet y}) + \operatorname{tr}(\rho_{x\bullet y})\bigr) = n\operatorname{tr}(x\bullet y) = n\operatorname{tr}(xy)
-$$
-
-with the halved product $x \bullet y = \tfrac12(xy + yx)$, and the trace form is the associative trace form $\operatorname{tr}(xy)$ up to the scalar $n$.
-
-**Proposition.** Let $J$ be a Jordan algebra and let $\delta \in \operatorname{End}_R(J)$ be a **derivation**, that is, an $R$-linear map with
-
-$$
-\delta(x \bullet y) = \delta(x) \bullet y + x \bullet \delta(y)
-$$
-
-for all $x, y$. Then $T(\delta x, y) + T(x, \delta y) = 0$; derivations are skew with respect to the trace form.
-
-*Proof.* The derivation identity is equivalent to the operator identity
-
-$$
-\delta L_x = L_{\delta x} + L_x \delta, \qquad \text{equivalently} \qquad [\delta, L_x] = L_{\delta x},
-$$
-
-because both sides applied to $y$ give $\delta(x \bullet y) = \delta x \bullet y + x \bullet \delta y$. Hence
-
-$$
-\operatorname{tr}\bigl([\delta, L_{x \bullet y}]\bigr) = \operatorname{tr}\bigl(L_{\delta(x \bullet y)}\bigr) = \operatorname{tr}\bigl(L_{\delta x \bullet y} + L_{x \bullet \delta y}\bigr) = T(\delta x, y) + T(x, \delta y),
-$$
-
-where the last equality is the definition of $T$ and the linearity of $L$ in its subscript. The left-hand side is the trace of a commutator and therefore vanishes.
-
-**Corollary.** The trace form is invariant under every one-parameter group of automorphisms generated by a derivation: for a derivation $\delta$, the bilinear form $T$ is annihilated by the infinitesimal action $\delta$, so any automorphism of the form $\exp(\delta)$ (when defined) preserves $T$.
-
-### Derivations
-
-The set of derivations of a Jordan algebra $J$ is written $\operatorname{Der}(J)$. It is a submodule of $\operatorname{End}_R(J)$, closed under the commutator: if $\delta, \eta$ are derivations then so is $[\delta, \eta]$. Indeed,
-
-$$
-\delta\eta(x\bullet y) = \delta(\eta x\bullet y + x\bullet \eta y) = \delta\eta x\bullet y + \eta x\bullet \delta y + \delta x\bullet \eta y + x\bullet \delta\eta y
-$$
-
-and
-
-$$
-\eta\delta(x\bullet y) = \eta\delta x\bullet y + \delta x\bullet \eta y + \eta x\bullet \delta y + x\bullet \eta\delta y ,
-$$
-
-so subtracting, the two cross terms cancel and
-
-$$
-[\delta,\eta](x\bullet y) = [\delta,\eta]x \bullet y + x \bullet [\delta,\eta]y .
-$$
-
-Thus $\operatorname{Der}(J)$ is a **Lie algebra** under the commutator, in the sense. It is the infinitesimal automorphism algebra of $J$. The **inner derivations** are the elements of the span of the operators $[L_x, L_y]$; that these are derivations is a consequence of the linearised identity of the proposition above, and they form an ideal of $\operatorname{Der}(J)$.
+The trace form, its symmetry and its invariance under derivations, and the Lie algebra $\operatorname{Der}(J)$ of derivations of a Jordan algebra are operator theory: they are *The Jordan Multiplication Operators*, §*The Trace Form* and §*Inner Derivations*. They are cited where the corpus needs them and are not used here; the structure of this article is read with the product alone.
 
 ## The Peirce Decomposition
 
@@ -220,31 +142,31 @@ Thus $\operatorname{Der}(J)$ is a **Lie algebra** under the commutator, in the s
 
 An element $e \in J$ is an **idempotent** if $e^2 = e$. Idempotents in a Jordan algebra play the role that spectral projections play in an associative algebra.
 
-**Theorem.** Let $e$ be an idempotent of a Jordan algebra $J$ over a ring in which $2$ is invertible. Then
+**Theorem.** Let $e$ be an idempotent of a Jordan algebra $J$ over a ring in which $2$ is invertible. Then every $x \in J$ satisfies the **cubic identity**
 
 $$
-\boxed{\;2 L_e^3 - 3 L_e^2 + L_e = 0\;} ,
+\boxed{\;2\,e \bullet \bigl(e \bullet (e \bullet x)\bigr) - 3\,e \bullet (e \bullet x) + e \bullet x = 0\;} .
 $$
 
-as an identity of endomorphisms of $J$. Equivalently, $L_e(L_e - 1)(2L_e - 1) = 0$, so over a field the only possible eigenvalues of $L_e$ are $0$, $1$ and $\tfrac{1}{2}$.
-
-*Proof.* Use the linearised identity $[L_w, L_{x^2}] + 2\,[L_x, L_{x \bullet w}] = 0$ with $x = e$ and $w$ arbitrary; since $e^2 = e$ it reads
+*Proof.* Apply the linearised identity above with $x = e$ and $y = e$:
 
 $$
-[L_w, L_e] + 2\,[L_e, L_{e \bullet w}] = 0 .
+2\,(e \bullet w) \bullet e + e \bullet (e \bullet w) = 2\,\bigl((e \bullet w) \bullet e\bigr) \bullet e + (e \bullet e) \bullet w .
 $$
 
-Evaluate both sides on the element $e$ and put $Z = e \bullet (w \bullet e) = (e \bullet w) \bullet e$, the two expressions being equal by the Jordan identity with $x = e$, $y = w$. Now $L_wL_e e = L_e w$, $L_eL_w e = Z$, $L_eL_{e\bullet w}e = L_eZ$ and $L_{e\bullet w}L_e e = Z$, so the identity becomes $L_e w - 3Z + 2L_eZ = 0$, that is,
+Since $\bullet$ is commutative and $e \bullet e = e$, the left side is $3\,e \bullet (e \bullet w)$ and the right side is $2\,e \bullet \bigl(e \bullet (e \bullet w)\bigr) + e \bullet w$; rearranging gives the identity with $x = w$.
+
+Because $t(t-1)(2t-1)$ has simple roots, the cubic identity splits every element into three components:
 
 $$
-L_e w - 3L_e^2 w + 2L_e^3 w = 0
+x_1 = 2\,e \bullet (e \bullet x) - e \bullet x, \qquad x_{1/2} = 4\,e \bullet x - 4\,e \bullet (e \bullet x), \qquad x_0 = x - 3\,e \bullet x + 2\,e \bullet (e \bullet x),
 $$
 
-for every $w \in J$. Hence $2L_e^3 - 3L_e^2 + L_e = 0$, which factors as $L_e(L_e - 1)(2L_e - 1) = 0$.
+with $x = x_1 + x_{1/2} + x_0$ and $e \bullet x_\lambda = \lambda x_\lambda$ for $\lambda = 0, \tfrac12, 1$.
 
 ### The Peirce Spaces
 
-The theorem gives a direct sum decomposition of $J$ for each idempotent $e$:
+The components give a direct sum decomposition of $J$ for each idempotent $e$:
 
 $$
 \boxed{\;J = J_1(e) \oplus J_{1/2}(e) \oplus J_0(e), \qquad J_\lambda(e) = \{x \in J : e \bullet x = \lambda x\}\;}.
@@ -270,7 +192,7 @@ $$
 x_1^2 + x_2^2 + \cdots + x_k^2 = 0 \quad \Longrightarrow \quad x_1 = x_2 = \cdots = x_k = 0 .
 $$
 
-In a formally real Jordan algebra a sum of squares vanishes only if every term does, so the squares behave like nonnegative real numbers and $x^2 = 0$ forces $x = 0$. Formal reality rules out nilpotent elements, since $x^n = 0$ with $n \geq 2$ and $x^{n-1} \neq 0$ would give $(x^{n-1})^2 = 0$. The associated *order*, the **positive cone** it defines, and the equivalent criterion that the trace form be positive definite are not covered here; they are *Jordan Algebras and the Positive Cone*, in Part III, where the order is available, and are named only.
+In a formally real Jordan algebra a sum of squares vanishes only if every term does, so the squares behave like nonnegative real numbers and $x^2 = 0$ forces $x = 0$. Formal reality rules out nilpotent elements, since $x^n = 0$ with $n \geq 2$ and $x^{n-1} \neq 0$ would give $(x^{n-1})^2 = 0$. The associated *order*, the **positive cone** it defines, and the equivalent criterion that the trace form be positive definite — the trace form is *The Jordan Multiplication Operators*, §*The Trace Form* — are not covered here; they are *Jordan Algebras and the Positive Cone*, in Part III, where the order is available, and are named only.
 
 ### The Classification
 
@@ -289,7 +211,7 @@ The list separates the spin factors from the matrix family because the overlap i
 
 ## Summary
 
-A **Jordan algebra** is a commutative $R$-algebra $(J, \bullet)$ satisfying the Jordan identity $x^2 \bullet (y \bullet x) = (x^2 \bullet y) \bullet x$, equivalently $[L_x, L_{x^2}] = 0$. The symmetrised product $x \bullet y = xy + yx$ of an associative algebra $A$ makes $A^+$ a Jordan algebra, and the proof reduces to the equality of the two expansions $2(x^2yx + x^3y + yx^3 + xyx^2)$ and $2(x^2yx + yx^3 + x^3y + xyx^2)$. Every Jordan algebra is power associative, so each element generates a commutative associative subalgebra. The trace form $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ is symmetric, and every derivation is skew for it. An idempotent $e$ produces the Peirce decomposition $J = J_1(e)\oplus J_{1/2}(e)\oplus J_0(e)$, because $L_e$ satisfies $2L_e^3 - 3L_e^2 + L_e = 0$ and has spectrum in $\{0, 1, \tfrac12\}$. Over $\mathbb{R}$, the formally real finite-dimensional Jordan algebras are the direct sums of $\mathbb{R} = JSpin_0$, the spin factors $JSpin_n$ with $n \geq 2$, the Hermitian matrix algebras $H_n$ over $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with $n \geq 3$, and the exceptional Albert algebra $H_3(\mathbb{O})$.
+A **Jordan algebra** is a commutative $R$-algebra $(J, \bullet)$ satisfying the Jordan identity $x^2 \bullet (y \bullet x) = (x^2 \bullet y) \bullet x$, which implies the linearised identity displayed in §*The Jordan Identity and Its Equivalent Forms*. The symmetrised product $x \bullet y = xy + yx$ of an associative algebra $A$ makes $A^+$ a Jordan algebra, and the proof reduces to the equality of the two expansions $2(x^2yx + x^3y + yx^3 + xyx^2)$ and $2(x^2yx + yx^3 + x^3y + xyx^2)$. Every Jordan algebra is power associative, so each element generates a commutative associative subalgebra. An idempotent $e$ produces the Peirce decomposition $J = J_1(e)\oplus J_{1/2}(e)\oplus J_0(e)$: the cubic identity $2\,e\bullet(e\bullet(e\bullet x))-3\,e\bullet(e\bullet x)+e\bullet x=0$ splits every element into three components with $e\bullet x_\lambda=\lambda x_\lambda$, $\lambda\in\{0,\tfrac12,1\}$. Over $\mathbb{R}$, the formally real finite-dimensional Jordan algebras are the direct sums of $\mathbb{R} = JSpin_0$, the spin factors $JSpin_n$ with $n \geq 2$, the Hermitian matrix algebras $H_n$ over $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with $n \geq 3$, and the exceptional Albert algebra $H_3(\mathbb{O})$.
 
 ## Summary of Notation
 
@@ -298,18 +220,12 @@ A **Jordan algebra** is a commutative $R$-algebra $(J, \bullet)$ satisfying the 
 | $R$ | Commutative ring with identity $1 \neq 0$ |
 | $(J, \bullet)$ | Jordan algebra: commutative product with the Jordan identity |
 | $x^2 = x \bullet x$ | Square in a Jordan algebra |
-| $L_x$ | Multiplication operator $y \mapsto x \bullet y$ |
-| $\lambda_x$, $\rho_x$ | Left and right multiplication by $x$ in an associative algebra |
-| $[S, T] = ST - TS$ | Commutator of endomorphisms |
 | $x^n$ | Jordan powers, defined by $x^{n+1} = x \bullet x^n$ |
 | $A^+$ | Symmetrisation of an associative algebra, $x \bullet y = xy + yx$ |
 | $D$ | A composition algebra: $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ or $\mathbb{O}$; distinct from $\mathbb{D}$, the split complex numbers |
 | $H_n(D)$ | Hermitian $n \times n$ matrices over $D$ |
 | $JSpin_n$, $JSpin(V)$ | Spin factor of a quadratic form; constructed in *Spin Factors and the Clifford Envelope with Inner Conjugation* (Part II) |
 | $H_3(\mathbb{O})$ | Albert algebra, the exceptional $27$-dimensional Jordan algebra |
-| $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ | Trace form |
-| $\operatorname{Der}(J)$ | Lie algebra of derivations of $J$ |
-| $\delta$ | A derivation, $\delta(x\bullet y) = \delta x \bullet y + x \bullet \delta y$ |
 | $e$ | Idempotent, $e^2 = e$ |
 | $J_\lambda(e)$ | Peirce spaces for $\lambda \in \{0, \tfrac12, 1\}$ |
 | Formally real | $\sum x_i^2 = 0 \Rightarrow x_i = 0$ |

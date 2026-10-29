@@ -6,7 +6,7 @@ The biquaternion algebra carries four products and four forms. In the matrix mod
 
 This article writes the dictionary. It is the matrix form of *The Four General Products and Their Relations over the Biquaternion Algebra* and of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the algebra-side statements are cited and not repeated.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*: $\tilde Q=Q_te_t+\vec Q$, $B^2=Q_x^2+Q_y^2+Q_z^2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, and $\epsilon=\mathsf{M}_2(-\vec e_y)$. The four products are
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*: $\tilde Q=Q_te_t+\vec Q$, $B^2=Q_x^2+Q_y^2+Q_z^2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, and $\epsilon=\mathsf{M}_2(-\vec e_y)$. The four products are
 
 $$
 \tilde P\tilde Q,\qquad \tilde P^{\natural}\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad \tilde P^{\natural}\tilde Q^{*},

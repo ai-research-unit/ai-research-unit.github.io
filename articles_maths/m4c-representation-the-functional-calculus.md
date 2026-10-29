@@ -6,7 +6,7 @@ The exponential, the logarithm and the square roots of a regular matrix are thre
 
 This article develops the calculus; the exponential series, its determinant identity, its closed forms, the one-parameter subgroups and the kernel; the logarithm equation, its branch families, the principal branch and its derivative; and the square-root equation, solved in the relative commutant and classified by spectral type. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Functional Calculus*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. The image of $\tilde Q$ is $X=\mathsf{M}_4(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, the eigenvalues of $X$ are $Q_t\pm iB$, each double, and $\operatorname{tr}X=4Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}^2$. In the square-root sections the roots considered lie in the regular image unless the ambient case is named explicitly.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The image of $\tilde Q$ is $X=\mathsf{M}_4(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, the eigenvalues of $X$ are $Q_t\pm iB$, each double, and $\operatorname{tr}X=4Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}^2$. In the square-root sections the roots considered lie in the regular image unless the ambient case is named explicitly.
 
 **Boundaries.** The general holomorphic calculus is *Holomorphic Functional Calculus*; the biquaternion closed form and the logarithm are *Biquaternion Elementary Functions*; the Lie algebra and the correspondence are *Biquaternion Lie Group and Exponential Structure*; the algebra classification of square roots is *Square Roots of an Element*; the roots of $\pm1$ and of $0$ are *Idempotents* and *Nilpotents*; the polar decomposition is *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Functional Calculus*.
 
@@ -495,10 +495,10 @@ The square roots in the image are the images of the biquaternion roots: four for
 
 - [Holomorphic Functional Calculus](holomorphic-functional-calculus.html), for the general calculus and its convergence
 - [$M_2(\mathbb{C})$ Representation : The Functional Calculus](m2c-representation-the-functional-calculus.html), for the $2\times2$ version
-- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the nilpotents and the rank-two projectors
-- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-representation-the-centraliser-and-the-double-centraliser.html), for the relative commutant
+- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the nilpotents and the rank-two projectors
+- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the relative commutant
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the biquaternion logarithm
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Lie correspondence
-- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the algebra classification
-- [Idempotents](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots of one
-- [The Eigenbasis of a Spectrally Regular Biquaternion](the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html), for the spectral basis
+- [Square Roots of an Element](square-roots-of-an-element.html), for the algebra classification
+- [Idempotents](idempotents.html), for the roots of one
+- [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the spectral basis

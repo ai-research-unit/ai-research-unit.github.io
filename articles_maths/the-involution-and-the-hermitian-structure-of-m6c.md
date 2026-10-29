@@ -22,7 +22,7 @@ $$
 
 The skew-Hermitian matrices form the real Lie algebra $\mathfrak{u}(6)$ of dimension $36$; the traceless skew-Hermitian matrices form $\mathfrak{su}(6)$ of dimension $35$. The form is definite, so its only isotropic vector is $0$. This is the sharp contrast with the biquaternion algebra, whose conjugation is $\mathbb{C}$-linear and whose trace form has a nonzero null cone.
 
-The article assumes the coordinates and the trace pairing of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$*. It uses no topology beyond the finite-dimensional metric. The polar decomposition is *The Polar Decomposition of $M_6(\mathbb{C})$*; the $*$-unitary group is *The Exponential and the Lie Group of $M_6(\mathbb{C})$*; the real forms of the biquaternion algebra are *The Biquaternion Algebra and Its Vector Spaces*.
+The article assumes the coordinates and the trace pairing of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$*. It uses no topology beyond the finite-dimensional metric. The polar decomposition is *The Polar Decomposition of $M_6(\mathbb{C})$*; the $*$-unitary group is *The Exponential and the Lie Group of $M_6(\mathbb{C})$*; the real forms of the biquaternion algebra are *The Biquaternion Algebra*.
 
 ## The Conjugate Transpose
 
@@ -366,5 +366,5 @@ The definite form has no nonzero isotropic vector. The biquaternion algebra, who
 - [The Exponential and the Lie Group of $M_6(\mathbb{C})$](the-exponential-and-the-lie-group-of-m6c.html), for the exponential $\mathfrak{u}(6)\to U(6)$.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_6(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m6c.html), for the adjoint action of $U(6)$ and $PU(6)$.
 - [The Topology of $M_6(\mathbb{C})$](the-topology-of-m6c.html), for the unit sphere and the Frobenius metric.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the biquaternion conjugation and its null cone.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the biquaternion conjugation and its null cone.
 - [Hermitian Forms and Unitary Geometry](hermitian-forms-and-unitary-geometry.html), for the general theory.

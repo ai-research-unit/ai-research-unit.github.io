@@ -169,7 +169,7 @@ and they are the fixed and the anti-fixed subspaces of ${}^{*}$; in particular $
 
 **Proof.** The two definitions are the definitions of the fixed and anti-fixed sets of the involution ${}^{*}$ of the algebra, that is, of the Hermitian and the anti-Hermitian subspaces of *The Biquaternion Algebra*; the decomposition into the two halves is the order-two property of the involution, in the form of *Hermitian and Skew-Hermitian Elements*.
 
-**Remark.** This is the first place where the sesquilinear reading meets the remarkable subspaces: two of the remarkable subspaces, $\mathbb{M}_+$ and $\mathbb{M}_-$, are the halves that the involution ${}^{*}$ of the sesquilinear datum cuts out, while the other four are the halves of the other conjugations (*The Lattice of the Subspaces*). The pairing is not an analogy: the fixed and anti-fixed sets of an involution are the two halves of any sesqualgebra, and here they carry their corpus names.
+**Remark.** This is the first place where the sesquilinear reading meets the remarkable subspaces: two of the remarkable subspaces, $\mathbb{M}_+$ and $\mathbb{M}_-$, are the halves that the involution ${}^{*}$ of the sesquilinear datum cuts out, while the other four are the halves of the other conjugations (*The Subspaces and Their Relations*). The pairing is not an analogy: the fixed and anti-fixed sets of an involution are the two halves of any sesqualgebra, and here they carry their corpus names.
 
 ### The Other Exchange, and the Scalar and the Vector Part
 

@@ -6,7 +6,7 @@ The minimal left ideals of the biquaternion algebra form a projective line, and 
 
 This article develops the parametrisation, the action and its kernel, the chart and the Möbius formula, the idempotents, the orbits and the cross-ratio. It is the matrix form of *The Category of Modules*, §*The Projective Line and the Möbius Action*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$.
 
 **Boundaries.** The lattice of left ideals and the parametrisation by $\mathbb{P}^1$ are *The Category of Modules*, §*The Lattice of Left Ideals*; the automorphism group and its identification with $PGL_2$ are *Biquaternion Automorphisms and Derivations*; the real structure on the lattice is *The Category of Modules*, §*The Projective Line and the Möbius Action*.
 
@@ -206,9 +206,9 @@ The minimal left ideals are the sets $I_L$ of matrices whose image lies in a lin
 
 ## Further Reading
 
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the lattice, the projective line and the Möbius action
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the lattice, the projective line and the Möbius action
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for $PGL_2$ and the automorphism group
-- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-representation-the-centraliser-and-the-double-centraliser.html), for the commutant of an element
+- [$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m2c-model-the-centraliser-and-the-double-centraliser.html), for the commutant of an element
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the quaternionic structure and the real structure
-- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the module reading of the minimal left ideals
+- [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the matrix units
+- [The Category of Modules](the-category-of-modules.html), for the module reading of the minimal left ideals

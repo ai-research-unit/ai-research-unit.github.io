@@ -84,7 +84,7 @@ defines a symmetric $R^{\varsigma}$-bilinear form on $J(A)$, the trace form of t
 
 **Proof.** $\tau(x \circ y) = \tfrac12\bigl(\tau(xy) + \tau(yx)\bigr) = \tau(xy)$ by the trace property, and $\tau(xy) = \tau(yx)$ shows the symmetry. The $R^{\varsigma}$-bilinearity is inherited from the product.
 
-**Remark.** For $A = M_n(\mathbb{C})$ with the ordinary trace the form is $\mathrm{Tr}(x \circ y) = \mathrm{Tr}(xy)$, and on Hermitian $x, y$ it takes real values, being the trace of the product of two Hermitian matrices; it is the trace form of the Jordan algebra and not a form on the ambient algebra, and its general theory, its non-degeneracy and its role in the classification are *Jordan Algebras*, §*The Trace Form*. No positivity, no order and no distance is claimed of it here.
+**Remark.** For $A = M_n(\mathbb{C})$ with the ordinary trace the form is $\mathrm{Tr}(x \circ y) = \mathrm{Tr}(xy)$, and on Hermitian $x, y$ it takes real values, being the trace of the product of two Hermitian matrices; it is the trace form of the Jordan algebra and not a form on the ambient algebra, and its general theory and its non-degeneracy are *The Jordan Multiplication Operators*, §*The Trace Form*. No positivity, no order and no distance is claimed of it here.
 
 ## Idempotents and the Peirce Decomposition
 

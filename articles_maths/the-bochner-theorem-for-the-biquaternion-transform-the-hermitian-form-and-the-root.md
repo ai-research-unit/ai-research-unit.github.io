@@ -301,7 +301,7 @@ Bochner's theorem for the biquaternion transform is a theorem about the general 
 - [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html), for the positivity of the Hermitian conjugation and the cone $P=\{\tilde Q\tilde Q^{*}\}$.
 - [Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint](hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.html), for the classification of the Hermitian forms and the unit form of signature $(8,0)$.
 - [Remarkable Subspaces under the General Plain Sesqualgebra](remarkable-subspaces-under-the-general-plain-sesqualgebra.html), for the restriction of the form to the remarkable subspaces.
-- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the classification of the roots of $-1$, $-0$ and $+1$.
+- [Square Roots of an Element](square-roots-of-an-element.html), for the classification of the roots of $-1$, $-0$ and $+1$.
 - [Quaternion Harmonic Analysis](quaternion-harmonic-analysis.html), for the quaternion case that does hold, the positivity theorem of the real roots.
 - [Positive Definite Functions and Hermitian Kernels](positive-definite-functions-and-hermitian-kernels.html), [Reproducing Kernel Hilbert Spaces](reproducing-kernel-hilbert-spaces.html) and [Positive Definite Distributions](positive-definite-distributions.html), for Bochner's theorem, the Aronszajn theorem and the Bochner–Schwartz theorem in the classical setting.
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the symbols of the roots, the conjugations and the pairings.

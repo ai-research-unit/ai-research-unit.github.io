@@ -339,7 +339,7 @@ The spectrum does not split the sector into two open halves. The spectrally regu
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the four factors and the group of units
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the open dense cell
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan cone
-- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants
+- [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four cells and the chain of invariants
 - [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the determinant sequence, the centre and the covering
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the polar retraction, the homotopy groups and the universal cover
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the boundary of the sector and its link

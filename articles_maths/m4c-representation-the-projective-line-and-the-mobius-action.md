@@ -6,7 +6,7 @@ The minimal left ideals of the biquaternion algebra form a projective line, and 
 
 This article develops the parametrisation, the action and its kernel, the chart and the Möbius formula, the idempotents, the orbits and the cross-ratio. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Representation : The Matrix Product and the Algebra Structure*. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$. The regular matrices are written in the eigenbasis, where $\mathsf{M}_4(\tilde Q)=\operatorname{diag}(A,A)$ with $A=\mathsf{M}_2(\tilde Q)$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$. The regular matrices are written in the eigenbasis, where $\mathsf{M}_4(\tilde Q)=\operatorname{diag}(A,A)$ with $A=\mathsf{M}_2(\tilde Q)$.
 
 **Boundaries.** The lattice of ideals and the parametrisation by $\mathbb{P}^1$ are *The Category of Modules*, §*The Lattice of Left Ideals*; the automorphism group is *Biquaternion Automorphisms and Derivations*; the real structure is *The Category of Modules*, §*The Projective Line and the Möbius Action*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
 
@@ -163,8 +163,8 @@ The minimal right ideals of the regular image are the rank-two ideals $J_L=\{M:\
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two columns
+- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two columns
 - [$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector](m4c-representation-spin-qubits-and-the-bloch-vector.html), for the real picture
 - [$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action](m2c-representation-the-projective-line-and-the-mobius-action.html), for the $2\times2$ version
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the lattice of ideals
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the lattice of ideals
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the automorphism group

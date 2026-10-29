@@ -11,7 +11,7 @@ The statement is a reading, not a theorem. The spectrum, the eigenprojections an
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The spectrum, the eigenprojections and the two-term writing | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
-| The degenerate case and the scalar vertex | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The degenerate case and the scalar vertex | [The Spectrum](../articles_maths/the-spectrum.html) |
 | The Hermitian case and the Hermitian idempotents | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The four-vector dictionary and the interval | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
 | The boost spectrum and the Doppler factors | [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html) |
@@ -285,11 +285,11 @@ No dynamics is supplied. The article reads one element at one instant; it does n
 
 ## Further Reading
 
-- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the degenerate case.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/the-spectrum.html) for the degenerate case.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html), for the four-vector dictionary and the mass shell.
 - [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html), for the boost spectrum and the Doppler factors.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the massless limit and the null stratum.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the pure states that the idempotents represent.
 - [The Roots of a General Element: Mass, Frames and the Mass Shell](the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html), for the mass shell read as a level set.
 - [The Hamilton Pairing: Mass as Modulus and the Complex Angle](the-hamilton-pairing-mass-as-modulus-and-the-complex-angle.html), for the mass as a modulus and the complex angle of the frame.
-- [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](physical-interpretation-of-spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the general reading of the spectrum and of the degenerate strata.
+- [Physical Interpretation of Spectral Regularity and Degeneracy in the Biquaternion Algebra](physical-interpretation-of-the-spectrum.html), for the general reading of the spectrum and of the degenerate strata.

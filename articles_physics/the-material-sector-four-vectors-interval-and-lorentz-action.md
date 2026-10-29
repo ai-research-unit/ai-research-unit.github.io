@@ -10,14 +10,14 @@ The results used are these.
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The subspace, its basis and its coordinate blocks | [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
+| The subspace, its basis and its coordinate blocks | [The Six Subspaces](../articles_maths/the-six-subspaces.html) |
 | The norm, its signature and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The zero divisors and the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The units of the algebra in the sector, the complement of the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four forms and their restrictions | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | The commutator and the Lie algebra | [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html) |
 | The sandwich and the adjoint action | [Two-Sided Operators on the General Plain Sesqualgebra](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.html) |
-| The eigenvalue decomposition, the eigenprojections and the degenerate case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The eigenvalue decomposition, the eigenprojections and the degenerate case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), [The Spectrum](../articles_maths/the-spectrum.html) |
 
 ## The Results It Uses
 
@@ -304,9 +304,9 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 ## Further Reading
 
-- [Introduction to the Remarkable Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html), for the definition and the basis of $\mathbb{M}_-$.
+- [The Six Subspaces](../articles_maths/the-six-subspaces.html), for the definition and the basis of $\mathbb{M}_-$.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its signature and the inverse formula.
-- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) for the degenerate case.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/the-spectrum.html) for the degenerate case.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the cone and the zero divisors.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the unit group.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) and [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four forms and their restrictions.

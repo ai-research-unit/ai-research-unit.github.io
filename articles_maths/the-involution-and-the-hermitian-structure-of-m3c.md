@@ -257,6 +257,6 @@ The Hermitian spectral theorem gives $H=U\Lambda U^{*}$ with $\Lambda$ real diag
 - [The Forms, the Norms and the Singular Set of $M_3(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m3c.html), for the determinant, the norms and the singular set.
 - [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for the symmetric space $GL_{3}/U(3)$.
 - [The Exponential and the Lie Group of $M_3(\mathbb{C})$](the-exponential-and-the-lie-group-of-m3c.html), for $U(3)$ and $SU(3)$.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the null cone of the biquaternion form.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the comparison with the biquaternion zero divisors.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the null cone of the biquaternion form.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the comparison with the biquaternion zero divisors.
 - [Hermitian Adjoints on a Hermitian Algebra](hermitian-adjoints-on-a-hermitian-algebra.html), for the general theory of the star and the adjoint.

@@ -6,7 +6,7 @@ Every invertible complex matrix is the product of a positive Hermitian matrix an
 
 This article develops the matrix polar decomposition, its refinement by the determinant, its behaviour on the singular matrices, and the singular value decomposition. It is the matrix form of *The Polar Decomposition of a N-Regular Biquaternion*, §*The Matrix Picture*, and of *The Polar Decomposition of a N-Degenerate Biquaternion*, §*The Matrix Picture*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*. The norm is $N=\det M$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The $*$-unitary group is $U(2)$ and the special $*$-unitary group is $SU(2)$.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The norm is $N=\det M$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The $*$-unitary group is $U(2)$ and the special $*$-unitary group is $SU(2)$.
 
 **Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*, of the regular element *The Polar Decomposition of a N-Regular Biquaternion*, and of the degenerate element *The Polar Decomposition of a N-Degenerate Biquaternion*; the sandwich action of the factors is *The Sandwich in the $M_2(\mathbb{C})$ Model*; the groups are *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 

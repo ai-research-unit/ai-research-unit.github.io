@@ -161,7 +161,7 @@ $$
 \mathrm{J}_{ij}=H\bigl(e_{i}Ae_{j}\oplus e_{j}Ae_{i}\bigr) \quad (i\neq j).
 $$
 
-They are the eigenspaces of the Jordan multiplication $L_{h}$ with eigenvalues $\lambda_{i}$ and $(\lambda_{i}+\lambda_{j})/2$, by *The Eigenvalue Decomposition in a Jordan Algebra*, §*The Multiplication Operator and the Peirce Midpoints*. The **diagonal Peirce part**
+They are the eigenspaces of multiplication by $h$ in the Jordan algebra, with eigenvalues $\lambda_{i}$ and $(\lambda_{i}+\lambda_{j})/2$, by *The Eigenvalue Decomposition in a Jordan Algebra*, §*The Action of the Element and the Peirce Midpoints*. The **diagonal Peirce part**
 
 $$
 D=\bigoplus_{i=1}^{r}\mathrm{J}_{ii}=\bigoplus_{i=1}^{r}H(e_{i}Ae_{i})

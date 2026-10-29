@@ -10,11 +10,11 @@ The results used are these.
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The algebra, its basis, its eight real coordinates and the complex structure $J:\tilde Q\mapsto i\tilde Q$ | [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html) |
+| The algebra, its basis, its eight real coordinates and the complex structure $J:\tilde Q\mapsto i\tilde Q$ | [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html) |
 | The involutions, the Klein four-group and the orbits of an element | [The Group of Involutions](../articles_maths/the-group-of-involutions.html) |
-| The six subspaces, their bases and their defining conditions | [The Six Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html) |
-| The three decompositions of the algebra | [The Three Eigenspace Decompositions](../articles_maths/decompositions-along-the-remarkable-subspaces.html) |
-| The four coordinate blocks, the intersections, the sums and the action of $J$ | [The Lattice of the Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html) |
+| The six subspaces, their bases and their defining conditions | [The Six Subspaces](../articles_maths/the-six-subspaces.html) |
+| The three decompositions of the algebra | [The Three Eigenspace Decompositions](../articles_maths/the-three-eigenspace-decompositions.html) |
+| The four coordinate blocks, the intersections, the sums and the action of $J$ | [The Subspaces and Their Relations](../articles_maths/the-subspaces-and-their-relations.html) |
 | The four forms, their restrictions and the alternating companion | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 
 ## The Results It Uses
@@ -276,7 +276,7 @@ The physical interpretation is a division of labour. The area pairing is the **s
 
 The intersection table says which two subspaces share a block. Read as an index, it answers a prior question: **where can a proposed interpretation be posed at all?** A composition needs a subspace on which the product closes; an observable needs a subspace on which the Hermitian form is real; a state needs a subspace on which positivity makes sense; a gauge generator needs a subspace on which the bracket closes. The table does not supply those structures; it says which subspace carries which.
 
-The three decompositions say which operation preserves which split, and therefore which objects it acts on and which it keeps. Read together with the table, they give the grammar of the category: before asking what an object means, ask which subspace it lives in and which operation preserves that subspace. That is why *The Lattice of the Subspaces* is the reference table of the category, and why an interpretation that names a subspace without naming the operation that keeps it has not yet been posed.
+The three decompositions say which operation preserves which split, and therefore which objects it acts on and which it keeps. Read together with the table, they give the grammar of the category: before asking what an object means, ask which subspace it lives in and which operation preserves that subspace. That is why *The Subspaces and Their Relations* is the reference table of the category, and why an interpretation that names a subspace without naming the operation that keeps it has not yet been posed.
 
 **The boundary.** The index is a statement of where a question is well posed, not an answer to it. A subspace that carries a product does not thereby carry a dynamics, and a subspace that carries a form does not thereby carry a measurement.
 
@@ -318,10 +318,10 @@ The article interprets the linear structure, the involutions, the four real-type
 
 ## Further Reading
 
-- [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html), for the space, its basis and its complex structure.
+- [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html), for the space, its basis and its complex structure.
 - [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group, its subgroups and its orbits.
-- [The Six Subspaces](../articles_maths/introduction-to-the-remarkable-subspaces.html), for the six subspaces one by one.
-- [The Three Eigenspace Decompositions](../articles_maths/decompositions-along-the-remarkable-subspaces.html) and [The Lattice of the Subspaces](../articles_maths/comparison-of-the-remarkable-subspaces.html), for the three decompositions, the coordinate blocks and the intersection table.
+- [The Six Subspaces](../articles_maths/the-six-subspaces.html), for the six subspaces one by one.
+- [The Three Eigenspace Decompositions](../articles_maths/the-three-eigenspace-decompositions.html) and [The Subspaces and Their Relations](../articles_maths/the-subspaces-and-their-relations.html), for the three decompositions, the coordinate blocks and the intersection table.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the restrictions of the forms and the area pairing.
 - [Conventions in the Biquaternion Universe](conventions-in-the-biquaternion-universe.html), for the coordinate dictionary and the choice of the material sector.
 - [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) and [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the two sectors.

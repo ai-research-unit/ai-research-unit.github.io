@@ -28,9 +28,9 @@ It is **linear** when $\varsigma = \mathrm{id}$ and **conjugate-linear** when $\
 
 **Remark.** The Jordan product is commutative, so the equation $\sigma(a\bullet b) = \sigma(a)\bullet\sigma(b)$ is the same as $\sigma(a\bullet b) = \sigma(b)\bullet\sigma(a)$; a map of order two on a Jordan algebra that reverses the product therefore preserves it, and the two notions of *Involutive Algebras* — the involution and the involutive automorphism — coincide as far as the product is concerned. The linear case is exactly an involutive automorphism of $J$; the conjugate-linear case is a new object.
 
-**Proposition.** The map $\sigma$ is bijective, its restriction to the copy $F\cdot 1$ of the scalars is $\varsigma$, it preserves the powers, $\sigma(a^n) = \sigma(a)^n$ for every $n \ge 0$, and it commutes with the quadratic representation, $\sigma\circ U_{a,b} = U_{\sigma(a),\sigma(b)}\circ\sigma$, so that $\sigma\,U_a\,\sigma^{-1} = U_{\sigma(a)}$.
+**Proposition.** The map $\sigma$ is bijective, its restriction to the copy $F\cdot 1$ of the scalars is $\varsigma$, it preserves the powers, $\sigma(a^n) = \sigma(a)^n$ for every $n \ge 0$, and it is compatible with the quadratic product, $\sigma\bigl(U_{a,b}(x)\bigr) = U_{\sigma(a),\sigma(b)}\bigl(\sigma(x)\bigr)$, so that $\sigma\,U_a\,\sigma^{-1} = U_{\sigma(a)}$.
 
-*Proof.* Bijectivity is $\sigma^2 = \mathrm{id}$. The restriction is $\sigma(\lambda\cdot1) = \varsigma(\lambda)\cdot1$. Powers are preserved by multiplicativity and additivity. For the quadratic representation, $\sigma(a\bullet(b\bullet x)) = \sigma(a)\bullet(\sigma(b)\bullet\sigma(x))$ and the defining formula $U_{a,b} = L_aL_b+L_bL_a-L_{a\bullet b}$ is carried to its analogue at $\sigma(a),\sigma(b)$.
+*Proof.* Bijectivity is $\sigma^2 = \mathrm{id}$. The restriction is $\sigma(\lambda\cdot1) = \varsigma(\lambda)\cdot1$. Powers are preserved by multiplicativity and additivity. For the quadratic product, $\sigma(a\bullet(b\bullet x)) = \sigma(a)\bullet(\sigma(b)\bullet\sigma(x))$, and the defining formula $U_{a,b}(x)=a\bullet(b\bullet x)+b\bullet(a\bullet x)-(a\bullet b)\bullet x$ is carried to its analogue at $\sigma(a),\sigma(b)$.
 
 **Corollary.** The map $\sigma$ is an automorphism of the Jordan algebra $J$ in the $\varsigma$-semilinear sense; in the linear case it is an involutive automorphism and the fixed set is a Jordan subalgebra, by *Involutive Algebras*; in the conjugate-linear case the fixed set is only a linear space over the fixed field and needs the decomposition below.
 
@@ -70,7 +70,7 @@ where $i \in K$ satisfies $\varsigma(i) = -i$ and $K = F\oplus Fi$; the sum is d
 
 *Proof.* If $\sigma(x) = x$ and $\sigma(y) = y$ then $\sigma(x\bullet y) = \sigma(x)\bullet\sigma(y) = x\bullet y$.
 
-**Corollary.** The self-adjoint part is the Jordan algebra of the fixed points, and in the linear case it is exactly the fixed subalgebra of the involutive automorphism $\sigma$. The quadratic representation of $H(J)$ is the restriction of that of $J$, because $U_{x,y}$ for self-adjoint $x,y$ is self-adjoint as an operator: $U_{x,y}$ commutes with $\sigma$ by the proposition above.
+**Corollary.** The self-adjoint part is the Jordan algebra of the fixed points, and in the linear case it is exactly the fixed subalgebra of the involutive automorphism $\sigma$. The quadratic product of $H(J)$ is the restriction of that of $J$, because $U_{x,y}$ for self-adjoint $x,y$ is compatible with $\sigma$ by the proposition above.
 
 ## Formal Reality of the Involution
 

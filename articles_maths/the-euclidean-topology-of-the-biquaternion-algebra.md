@@ -42,7 +42,7 @@ $$
 
 and the constant $\sqrt{2}$ cannot be lowered.
 
-**Proof.** Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\mathsf{M}_2(\tilde{Q})\|_F=\sqrt2\|\tilde{Q}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
+**Proof.** Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\mathsf{M}_2(\tilde{Q})\|_F=\sqrt2\|\tilde{Q}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
 $$
 \sqrt2\,\|\tilde{Q}_1\tilde{Q}_2\|_E=\|\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)\|_F\leq\|\mathsf{M}_2(\tilde{Q}_1)\|_F\|\mathsf{M}_2(\tilde{Q}_2)\|_F=2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E,
 $$
@@ -78,7 +78,7 @@ $$
 \mathbb{M}_{+}\cong\mathbb{M}_{-}\cong\mathbb{R}^{4} \;}.
 $$
 
-**Proof.** Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of *The Lattice of the Subspaces*.
+**Proof.** Each is a linear subspace of $\mathbb{B}$, and the homotopy above preserves it. The dimensions are those of *The Subspaces and Their Relations*.
 
 **Corollary.** Every map into $\mathbb{B}$ is null-homotopic, and $\mathbb{B}$ carries no topological obstruction of its own; the topology of the algebra is entirely the topology of its distinguished subsets — the unit group, the null cone and the spheres.
 

@@ -13,7 +13,7 @@ The first is additive and blind to the vector part; the second is multiplicative
 
 This article develops the two invariants and what they decide. It is the matrix form of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*The Four Algebraic Norms*, and of *The Spectrum*, §*The Characteristic Polynomial*.
 
-**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*: $\tilde Q=Q_te_t+\vec Q$, $B^2=Q_x^2+Q_y^2+Q_z^2$, and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are written $\lambda_\pm=Q_t\pm iB$, with $B$ a chosen square root of $B^2$; the pair is unordered and the choice of $B$ exchanges the two labels.
+**Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*: $\tilde Q=Q_te_t+\vec Q$, $B^2=Q_x^2+Q_y^2+Q_z^2$, and $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$. The eigenvalues are written $\lambda_\pm=Q_t\pm iB$, with $B$ a chosen square root of $B^2$; the pair is unordered and the choice of $B$ exchanges the two labels.
 
 **Boundaries.** The four forms and their norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the spectral condition is *The Spectrum*; the rank-one case is *$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the polar decomposition is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the groups defined by the determinant are *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
@@ -173,10 +173,10 @@ The trace is twice the scalar part and the determinant is the quaternionic norm.
 ## Further Reading
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four norms
-- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the characteristic polynomial and the criterion
+- [The Spectrum](the-spectrum.html), for the characteristic polynomial and the criterion
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the singular matrices
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the modulus
-- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-representation-the-six-subspaces-as-matrix-conditions.html), for the determinants on the subspaces
+- [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the determinants on the subspaces
 - [$M_2(\mathbb{C})$ Representation : The Killing Form](m2c-representation-the-killing-form.html), for the trace form on the Lie algebra
 - [The N-Regular Sector](the-n-regular-sector.html), for the norm on the units
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the null cone

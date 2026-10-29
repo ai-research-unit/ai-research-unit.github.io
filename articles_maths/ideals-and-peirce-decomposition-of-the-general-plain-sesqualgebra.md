@@ -373,7 +373,7 @@ The proper right $\star$-ideals are the sets $R_w=\{\tilde Q_1:w\tilde Q_1=0\}$,
 - [Hermitian Idempotents and the Peirce Decomposition](hermitian-idempotents-and-the-peirce-decomposition.html) — the transposed Peirce table of a derived operation and the corner as a sesqualgebra.
 - [Ideals and Quotients of a Sesqualgebra](ideals-and-quotients-of-a-sesqualgebra.html) — the ideals of a general sesqualgebra.
 - [Simple Sesqualgebras and Minimal Ideals](simple-sesqualgebras-and-minimal-ideals.html) — the two notions of simplicity and the one-sided case.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html) — the twin in the algebra, with the Peirce corners.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html) — the twin in the algebra, with the Peirce corners.
 - [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) — the model in which the four lines are the four matrix entries.
 - [Zero Divisors of the General Plain Sesqualgebra](zero-divisors-of-the-general-plain-sesqualgebra.html) — the elements of the mixed lines.
 - [Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint](hermitian-modules-over-the-biquaternion-algebra-with-hermitian-adjoint.html) — the simple Hermitian module $\mathbb{B}\tilde\Pi_+$, its Gram matrix $\frac12\mathrm{I}_2$ and the $*$-representation, of which §*The Matrix Representations from the Right Ideals* gives the index set.

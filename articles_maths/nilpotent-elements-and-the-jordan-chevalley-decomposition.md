@@ -291,7 +291,7 @@ The companion matrix of $f^2$ with $f = x^p - t$ over $k = \mathbb{F}_p(t)$ has 
 
 ### The biquaternion case
 
-Under the matrix model $\mathbb{B} \cong M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*, the element
+Under the matrix model $\mathbb{B} \cong M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*, the element
 
 $$
 a = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} = I + E_{12}

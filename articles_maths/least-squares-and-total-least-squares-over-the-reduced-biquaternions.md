@@ -441,4 +441,4 @@ The three approximation problems over the reduced biquaternion algebra — least
 - [Reduced Biquaternion Spectral Theory](reduced-biquaternion-spectral-theory.html), for the spectrum and the singular values of the algebra.
 - [Compact Operators](compact-operators.html), for the singular values and the Schatten classes.
 - [Quaternion Augmented Statistics](quaternion-augmented-statistics.html), for the least squares problem in the non-commutative quaternion statistics.
-- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-representation-the-matrix-product-and-the-algebra-structure.html), for the non-commutative companion of the matrix dictionary.
+- [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the non-commutative companion of the matrix dictionary.

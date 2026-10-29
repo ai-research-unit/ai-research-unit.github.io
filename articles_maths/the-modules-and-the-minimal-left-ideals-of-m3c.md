@@ -270,5 +270,5 @@ The carrier of the spin chain is $M_{3}P_{1}\cong\mathbb{C}^{3}$, with weights $
 - [The Matrix Algebra $M_3(\mathbb{C})$](the-matrix-algebra-m3c.html), for the matrix units and the tensor product.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), for the normalized frame and the exchange.
 - [The Two-Parameter Gauge of $M_3(\mathbb{C})$](the-two-parameter-gauge-of-m3c.html), for the $\mathbb{C}^{\times}$-torsor of the exchange.
-- [The Biquaternion Algebra](the-biquaternion-algebra-and-its-vector-spaces.html), for the $n=2$ case and the spinorial module.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the $n=2$ case and the spinorial module.
 - [Modules over an Algebra](modules-over-an-algebra.html), for the general theory of modules and simple modules.

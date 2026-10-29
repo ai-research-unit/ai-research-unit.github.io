@@ -464,14 +464,14 @@ This is the only definition of spin in the corpus. The element $S$ is the **spin
 - [The Weight of a Frame Root and the Spin Quantum Number](the-weight-of-a-frame-root-and-the-spin-quantum-number.html), for the general definition of carrier, weight and spin.
 - [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html), for the same three carriers read physically, with the observed particle content.
 - [Higher Spin from Tensor Products](../articles_physics/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html), for the spins beyond the elementary list.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the frame, the corners and the weight table.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the frame, the corners and the weight table.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two spin-$\tfrac12$ planes and their weight bases.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the irreducibility of the two planes.
-- [The Category of Modules](modules-over-the-biquaternion-algebra.html), for the associative modules over $\mathbb B$.
+- [The Category of Modules](the-category-of-modules.html), for the associative modules over $\mathbb B$.
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the half-angle theorem.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the integer-spin reading of the adjoint action.
 - [Operators of the Polar Word: The Common Framework](operators-of-the-polar-word-the-common-framework.html), for the three operators and the polar word.
-- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the rank one of the sandwich on the null cone.
+- [The Two-Sided Operator of a N-Degenerate, Spectrally Regular Biquaternion](the-two-sided-operator-of-a-n-degenerate-spectrally-regular-biquaternion.html), for the rank one of the sandwich on the null cone.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the four sectors and the two conditions.
 - [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m2c-representation-spin-qubits-and-the-bloch-vector.html), for the Hermitian form and the expectation values.
 - [Peirce Carriers and Inner Conjugation](peirce-carriers-and-inner-conjugation.html), for the spinor adjoint.

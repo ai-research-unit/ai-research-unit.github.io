@@ -172,5 +172,5 @@ The norm, the characteristic polynomial and the minimal polynomial form a strict
 - [The Four Sectors of the Split-Quaternion Algebra](the-four-sectors-of-the-split-quaternion-algebra.html), for the definitions, the non-emptiness and the dimensions of the sectors.
 - [Split-Quaternion Norm and Invertibility](split-quaternion-norm-and-invertibility.html), for the norm, its isotropy and the zero divisors.
 - [Split-Quaternion Zero Divisors](split-quaternion-zero-divisors.html), for the zero-divisor cone, the minimal ideals and the nilpotents.
-- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the complex analogue, where the two cones are both complex.
+- [The Spectrum](the-spectrum.html), for the complex analogue, where the two cones are both complex.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the characteristic and minimal polynomials.

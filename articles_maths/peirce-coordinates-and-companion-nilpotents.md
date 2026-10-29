@@ -32,9 +32,9 @@ The characteristic is not $2$ where the halving $e=(1_A+h)/2$ is used. The one-i
 
 **Definition.** The **Peirce corners** of $e$ are the four subspaces $A_{st}=e_sAe_t$, with $e_+=e$ and $e_-=f$. The **companion corner** of $e$ is $A_{-+}=fAe$, and a **companion nilpotent** is a nonzero element of it.
 
-**Proposition (the corners are the joint eigenspaces).** The operators $L_e(x)=ex$ and $R_e(x)=xe$ commute, are idempotent, and on the corners take the values
+**Proposition (the corners are the joint eigenspaces).** Multiplication by $e$ on the left and on the right commutes, and on the corners takes the values
 
-| corner | $L_e$ | $R_e$ |
+| corner | $ex$ | $xe$ |
 |---|---|---|
 | $A_{++}$ | $1$ | $1$ |
 | $A_{+-}$ | $1$ | $0$ |
@@ -195,17 +195,17 @@ $$
 h=2e-1_A=e-f .
 $$
 
-**Proposition.** $h^2=1_A$. The left multiplication $L_h$ has eigenvalue $+1$ on $A_{++}$ and $A_{+-}$ and $-1$ on $A_{-+}$ and $A_{--}$; the right multiplication $R_h$ has eigenvalue $+1$ on $A_{++}$ and $A_{-+}$ and $-1$ on $A_{+-}$ and $A_{--}$. The inner derivation $\operatorname{ad}_h=L_h-R_h$ has eigenvalues $0$ on the diagonal corners and $+2$ on $A_{+-}$, $-2$ on $A_{-+}$.
+**Proposition.** $h^2=1_A$. Multiplication by $h$ on the left is $+1$ on $A_{++}$ and $A_{+-}$ and $-1$ on $A_{-+}$ and $A_{--}$; on the right it is $+1$ on $A_{++}$ and $A_{-+}$ and $-1$ on $A_{+-}$ and $A_{--}$. The difference $hx-xh$ vanishes on the diagonal corners and equals $+2x$ on $A_{+-}$ and $-2x$ on $A_{-+}$.
 
-*Proof.* On $A_{st}$, $L_h$ is $+1$ for $s=+$ and $-1$ for $s=-$, and $R_h$ is $+1$ for $t=+$ and $-1$ for $t=-$. The difference is $s-t$.
+*Proof.* On $A_{st}$, $hx$ is $+x$ for $s=+$ and $-x$ for $s=-$, and $xh$ is $+x$ for $t=+$ and $-x$ for $t=-$. The difference is $(s-t)x$.
 
-**Corollary.** On the carrier $C(e)$ the left multiplication by $h$ has eigenvalue $+1$ on $D$ and $-1$ on the companion corner. The Peirce decomposition therefore supplies a canonical $\mathbb{Z}_2$ grading of the carrier, with the companion coordinates in the odd part. It supplies no finer splitting: the odd part is a single eigenspace, of dimension $\dim_k fAe$ over $k$.
+**Corollary.** On the carrier $C(e)$ multiplication by $h$ on the left is $+1$ on $D$ and $-1$ on the companion corner. The Peirce decomposition therefore supplies a canonical $\mathbb{Z}_2$ grading of the carrier, with the companion coordinates in the odd part. It supplies no finer splitting: the odd part is a single eigenspace, of dimension $\dim_k fAe$ over $k$.
 
 **Remark.** The grading element is canonical, but the grading is only $\mathbb{Z}_2$. A weight string of the form $\lambda,\lambda-2,\dots,-\lambda$ needs an $\mathfrak{sl}_2$ triple, not one idempotent. The triple and the spin number are the subject of *The Weight of a Frame Root and the Spin Quantum Number*; the definition of the spinor read from $C(e)$ is *Spinors as Peirce Coordinates*.
 
 ## Summary
 
-An idempotent gives four corners, the joint eigenspaces of $L_e$ and $R_e$, with the multiplication table $A_{st}A_{uv}\subseteq\delta_{tu}A_{sv}$. The mixed corners are square-zero, so every element of $fAe$ is a companion nilpotent. The carrier $C(e)=Ae=D\oplus fAe$ is the fixed space of $R_e$ and is stable under left multiplication. The companion count $s$ is the least number of generators of $fAe$ over $D=eAe$, and the coordinate vector has $1+s$ entries over $D$; it is a basis exactly when $fAe$ is free, which holds when $D$ is a division ring. In $M_N(k)$ with an idempotent of rank $r$, $s=\lceil N/r\rceil-1$, and for a primitive idempotent $s=N-1$, so the biquaternion case $N=2$ is the only one with a single companion. The frame root $h=2e-1_A$ gives the $\mathbb{Z}_2$ grading of the carrier, with $+1$ on $D$ and $-1$ on the companion corner.
+An idempotent gives four corners, the joint eigenspaces of multiplication by $e$ on the left and on the right, with the multiplication table $A_{st}A_{uv}\subseteq\delta_{tu}A_{sv}$. The mixed corners are square-zero, so every element of $fAe$ is a companion nilpotent. The carrier $C(e)=Ae=D\oplus fAe$ is the set of elements $x$ with $xe=x$ and is stable under left multiplication. The companion count $s$ is the least number of generators of $fAe$ over $D=eAe$, and the coordinate vector has $1+s$ entries over $D$; it is a basis exactly when $fAe$ is free, which holds when $D$ is a division ring. In $M_N(k)$ with an idempotent of rank $r$, $s=\lceil N/r\rceil-1$, and for a primitive idempotent $s=N-1$, so the biquaternion case $N=2$ is the only one with a single companion. The frame root $h=2e-1_A$ gives the $\mathbb{Z}_2$ grading of the carrier, with $+1$ on $D$ and $-1$ on the companion corner.
 
 ## Summary of Notation
 
@@ -220,9 +220,9 @@ An idempotent gives four corners, the joint eigenspaces of $L_e$ and $R_e$, with
 | $D=eAe$ | The diagonal corner algebra with identity $e$ |
 | $fAe=A_{-+}$ | The companion corner, square-zero |
 | $s$ | The least number of generators of $fAe$ over $D$ |
-| $C(e)=Ae$ | The Peirce carrier, the fixed space of $R_e$ |
+| $C(e)=Ae$ | The Peirce carrier, the elements with $xe=x$ |
 | $h=2e-1_A$ | The frame root |
-| $L_h,R_h,\operatorname{ad}_h$ | Left, right and inner-derivation action of $h$ |
+| $hx$, $xh$ | Left and right multiplication by $h$ |
 
 ## Further Reading
 

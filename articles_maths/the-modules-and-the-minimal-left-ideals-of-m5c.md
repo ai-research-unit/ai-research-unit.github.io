@@ -301,4 +301,4 @@ The commutant of $M_5$ is $\mathbb{C}I$, the bicommutant is $M_5$, and the algeb
 - [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the lines $A_{kl}$ and the distinction from the ideals.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the column and row ideals of the frame.
 - [The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m5c.html), for the carrier as the spin-two module.
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion minimal left ideals and the spinor.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion minimal left ideals and the spinor.

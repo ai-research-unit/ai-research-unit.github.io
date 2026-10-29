@@ -18,7 +18,7 @@ This article reads that structure in the biquaternion algebra. The spectral deco
 | The spectral theorem for a normal element | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The matrix model and the determinant | [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html) |
 | The Hermitian norm of the flow and the norm deficit $\lVert\rho\rVert^2-1$ | [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), §*Normality, Unitarity and the Hermitian Norm of the Flow* |
-| The degenerate case and the non-semisimple class | [The Spectrum](../articles_maths/spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
+| The degenerate case and the non-semisimple class | [The Spectrum](../articles_maths/the-spectrum.html) |
 
 ## The Two Eigenbases
 

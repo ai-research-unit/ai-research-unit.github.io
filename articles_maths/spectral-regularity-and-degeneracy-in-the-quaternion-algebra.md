@@ -109,7 +109,7 @@ a real line through the origin, closed in $\mathbb H$, of dimension one and meas
 
 **Corollary.** Among the three, $\mathbb H$ is the only division algebra, the only one with a definite vector form, and the only one with no defective element; its degenerate locus is the smallest possible nonempty one, a line.
 
-**Remark.** In $\mathbb B$ the spectral cone $B^2=0$ is distinct from the null cone of the norm, $Q_t^2+B^2=0$; the first is where the eigenvalues coalesce, the second where the element is a zero divisor. See [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html).
+**Remark.** In $\mathbb B$ the spectral cone $B^2=0$ is distinct from the null cone of the norm, $Q_t^2+B^2=0$; the first is where the eigenvalues coalesce, the second where the element is a zero divisor. See [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html).
 
 ## Summary
 
@@ -142,5 +142,5 @@ Every element is semisimple, because $\mathbb R[\tilde q]$ is $\mathbb R$ or $\m
 - [Eigenvalue Decomposition and Eigenbasis of a Quaternion](eigenvalue-decomposition-and-eigenbasis-of-a-quaternion.html), for the centraliser, the eigenlines and the eigenbasis.
 - [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the two quadratic conditions.
 - [The Three Sectors of the Quaternion Algebra](the-three-sectors-of-the-quaternion-algebra.html), for the three nonempty sectors and the empty fourth.
-- [The Spectrum](spectral-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the biquaternion cone and its strata.
+- [The Spectrum](the-spectrum.html), for the biquaternion cone and its strata.
 - [Split-Quaternion Algebra](split-quaternion-algebra.html), for the split-quaternion multiplication and the element $1+\vec e_x+\vec e_y$.

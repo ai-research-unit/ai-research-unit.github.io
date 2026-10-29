@@ -76,7 +76,7 @@ and the Hausdorff measure in dimension $s$ of the attractor is positive and fini
 
 **Proposition (the square root and its branches).** For $\tilde Q_2\in\mathbb{B}$ the equation $\tilde Q_1^2=\tilde Q_2$ is solved by the square-root formula of the algebra: writing the root as $\tilde Q_1=Q_{1t}e_t+\vec Q_1$, its scalar part is $Q_{1t}=\pm\sqrt{x}$ for the two solutions $x_\pm=\tfrac12(Q_{2t}\pm\sqrt{n})$ of the reduced quadratic in $x=Q_{1t}^2$, and there are generically four roots, falling to two in the degenerate cases and to none for a non-zero nilpotent $\tilde Q_2$ (*Square Roots of an Element*). On the regular part of the square map the roots are therefore the values of finitely many local branches.
 
-**Proof.** The count is the corollary on the number of roots of *Square Roots of an Element*: four roots when $(\vec Q,\vec Q)\neq0$ and $n\neq0$, two in the degenerate cases, and none for a rootless element, the example being a non-zero nilpotent of the algebra; the square map is the polynomial $M\mapsto M^2$ in the matrix model (*$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*).
+**Proof.** The count is the corollary on the number of roots of *Square Roots of an Element*: four roots when $(\vec Q,\vec Q)\neq0$ and $n\neq0$, two in the degenerate cases, and none for a rootless element, the example being a non-zero nilpotent of the algebra; the square map is the polynomial $M\mapsto M^2$ in the matrix model (*$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*).
 
 **Remark (the Julia set as the attractor of the branches).** Off the critical set the inverse branches $f_j$ of $\tilde Q\mapsto\tilde Q^2$ — four local branches on the regular part — map small disks into small disks and, where the branches are contractions, generate an iterated function system whose attractor is the local piece of the Julia set; the inverse branch of the quadratic map is the classical *graph-directed* or *multi-valued* system. **The biquaternion Julia set is the attractor of the inverse branches on the regular part, and on the cone branches collapse and the system loses maps**, which is the constructive form of the obstruction of *The Zero Divisors and the Singular Julia Sets*.
 
@@ -110,6 +110,6 @@ The affine maps of the biquaternion algebra are of three kinds, left-affine, rig
 
 - [Fractal Geometry](fractal-geometry.html) and [Iterated Function Systems in the Complex Plane](iterated-function-systems-in-the-complex-plane.html), for the attractor theorem, the open set condition and the similarity dimension used here.
 - [The Matrix Element Representation and the Biquaternion Dynamics](the-matrix-element-representation-and-the-biquaternion-dynamics.html), for the norm comparison that gives the Lipschitz bound.
-- [Square Roots of an Element](square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the square root and its branches.
+- [Square Roots of an Element](square-roots-of-an-element.html), for the square root and its branches.
 - [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the cone on which the branches collapse.
 - [The Hausdorff Dimension of the Biquaternion Julia Sets](the-hausdorff-dimension-of-the-biquaternion-julia-sets.html), for the dimension of the quadratic fractal as against the systems.

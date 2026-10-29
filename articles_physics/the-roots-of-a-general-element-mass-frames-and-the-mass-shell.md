@@ -18,11 +18,11 @@ The article owns no theorem. It states the algebraic classification, with its so
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The plain square root problem, the four roots, the degenerate rows and the four-parameter family | [Square Roots of an Element](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html) |
+| The plain square root problem, the four roots, the degenerate rows and the four-parameter family | [Square Roots of an Element](../articles_maths/square-roots-of-an-element.html) |
 | The four roots, the branch count and the root table by regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The root sets of the twelve products and the four existence classes | [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html) |
-| The roots of $0$ and the nilpotents | [Nilpotents](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
-| The roots of $+1$ and the idempotents | [Idempotents](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
+| The roots of $0$ and the nilpotents | [Nilpotents](../articles_maths/nilpotents.html) |
+| The roots of $+1$ and the idempotents | [Idempotents](../articles_maths/idempotents.html) |
 | The norm, its multiplicativity and the inverse | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four forms and the interval | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | The $2\times2$ matrix model and the eigenvalues of the mass operator | [$M_2(\mathbb{C})$ Representation : The General Plain Sesqualgebra of Biquaternions](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
