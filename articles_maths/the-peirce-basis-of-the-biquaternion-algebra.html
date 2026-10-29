@@ -70,202 +70,194 @@
       <div class="article-body">
         <h1 id="the-peirce-basis-of-the-biquaternion-algebra"><strong>The Peirce Basis of the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A root of one gives the Peirce decomposition of the biquaternion algebra $\mathbb{B}$: the four lines are fixed by the root. A <strong>Peirce basis</strong> is more. It is a choice of one nonzero element in each line, with the multiplication rule of the lines. The two diagonal elements are forced by the idempotents. The two mixed elements are not: the root fixes each mixed line as a set, but it does not choose a point in it.</p>
-<p>The extra datum is a nonzero element of one mixed line. Once it is chosen, the element of the other mixed line is forced by the product normalization. The remaining freedom is a nonzero complex scale, the <strong>gauge</strong>. So a basis is a root together with a gauge, and the gauge is not a property of the root.</p>
-<p>The article proves that every root admits a basis, gives the construction from a root and a transverse vector, computes the coordinates and their product, states the gauge as a torsor, its stabiliser and its gauge fixings, proves that every basis of a fixed family is conjugate to the constructed one, and counts the real dimensions. The second root is treated in a remark at the end. No family is preferred. An example is given at the end.</p>
+<p>A complete orthogonal family of two idempotents $\tilde\Pi_{+},\tilde\Pi_{-}$ cuts the biquaternion algebra into four complex lines $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$. The diagonal lines are spanned by the idempotents, and those vectors are canonical. The mixed lines have no canonical nonzero element.</p>
+<p>A <strong>Peirce basis</strong> is a choice of one nonzero element in each mixed line, normalized so that the two elements multiply to the two idempotents. The diagonal elements are then forced. The choice of one mixed element determines the other: for every nonzero $u\in\mathbb{B}_{+-}$ there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$, and then $vu=\tilde\Pi_{-}$. The remaining freedom is a nonzero complex scale, the <strong>gauge</strong>. A basis is therefore a family together with a point of the gauge torsor.</p>
+<p>The article defines the basis, proves existence by the nilpotent route, computes the gauge, the coordinates, the product and the determinant, states the torsor and its stabilizer, gives the matrix-unit reading, counts the real dimensions, treats the Hermitian gauge, and gives the standard family as an example.</p>
 <h2 id="definition">Definition</h2>
-<p>Let $\tilde\Pi_{+},\tilde\Pi_{-}$ be a nondegenerate complete family, with root $\tilde\Xi=\tilde\Pi_{+}-\tilde\Pi_{-}$, and let $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$.</p>
-<p><strong>Definition.</strong> A <strong>Peirce basis</strong> relative to the family is a family $E_{st}\in\mathbb{B}_{st}$, one element for each pair $s,t\in\{+,-\}$, such that
-$$
-E_{st}E_{uv}=\delta_{tu}E_{sv},\qquad E_{ss}=\tilde\Pi_{s}.
-$$
-The diagonal elements are therefore $E_{++}=\tilde\Pi_{+}$ and $E_{--}=\tilde\Pi_{-}$. The mixed elements are nonzero, and they satisfy
-$$
-E_{+-}E_{-+}=\tilde\Pi_{+},\qquad E_{-+}E_{+-}=\tilde\Pi_{-},\qquad
-E_{+-}^{2}=E_{-+}^{2}=0.
+<p>Let $\tilde\Pi_{+},\tilde\Pi_{-}$ be a nondegenerate complete family, with corners $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$.</p>
+<p><strong>Definition.</strong> A <strong>Peirce basis</strong> of the family is a pair of nonzero elements</p>
+<p>$$
+\vec\Upsilon_{+-}\in\mathbb{B}_{+-},\qquad
+\vec\Upsilon_{-+}\in\mathbb{B}_{-+}
 $$</p>
-<h2 id="from-the-root-to-a-basis">From the Root to a Basis</h2>
-<p><strong>Theorem.</strong> Let $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$. Let $\vec v$ be a complex vector with
-$$
-\vec u\cdot\vec v=0,\qquad q=\vec v\cdot\vec v\ne0.
-$$
-Put
-$$
-\vec\Upsilon_{+-}=\vec v+i\,\vec u\times\vec v,\qquad
-\vec\Upsilon_{-+}=\frac{-\vec v+i\,\vec u\times\vec v}{4q}.
-$$
-Then
-$$
-E_{++}=\tilde\Pi_{+},\quad E_{+-}=\vec\Upsilon_{+-},\quad
-E_{-+}=\vec\Upsilon_{-+},\quad E_{--}=\tilde\Pi_{-}
-$$
-is a Peirce basis. Such a $\vec v$ exists: the transverse plane is two-dimensional, and its isotropic vectors form two complex lines, so any other vector works.</p>
-<p><strong>Proof.</strong> Let $T=\vec u\times\vec v$. Since $\vec u\cdot\vec v=0$ and $\vec u\cdot\vec u=1$,
-$$
-\vec u\cdot T=0,\qquad \vec v\cdot T=0,\qquad T\cdot T=q,
-$$
-$$
-\vec v\,T=q\vec u,\qquad T\vec v=-q\vec u,\qquad
-\vec u\,T=-\vec v,\qquad T\vec u=\vec v.
-$$
-Then
-$$
-\vec\Upsilon_{+-}^{2}=(\vec v+iT)^{2}
-=\vec v^{2}-T^{2}+i(\vec vT+T\vec v)=-q+q+0=0,
-$$
-and similarly $\vec\Upsilon_{-+}^{2}=0$. For the product,
-$$
-\vec\Upsilon_{+-}\vec\Upsilon_{-+}
-=\frac{(\vec v+iT)(-\vec v+iT)}{4q}
-=\frac{-\vec v^{2}+i(\vec vT-T\vec v)-T^{2}}{4q}
-=\frac{2q+2i q\vec u}{4q}
-=\tilde\Pi_{+},
-$$
-and the same computation with the signs exchanged gives $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-}$. A direct computation with the same relations gives the corner conditions
-$$
+<p>with</p>
+<p>$$
+\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+},\qquad
+\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-}.
+$$</p>
+<p>The four elements of the basis are $\tilde\Pi_{+},\vec\Upsilon_{+-},\vec\Upsilon_{-+},\tilde\Pi_{-}$. The corner rule gives</p>
+<p>$$
 \tilde\Pi_{+}\vec\Upsilon_{+-}=\vec\Upsilon_{+-}=\vec\Upsilon_{+-}\tilde\Pi_{-},\qquad
-\tilde\Pi_{-}\vec\Upsilon_{-+}=\vec\Upsilon_{-+}=\vec\Upsilon_{-+}\tilde\Pi_{+}.
-$$
-All other products vanish by the product rule of the lines. Hence the four elements form a Peirce basis.</p>
-<p><strong>What the construction uses.</strong> The root $\vec u$ fixes the two mixed lines. The vector $\vec v$ chooses a point in $\mathbb{B}_{+-}$ and, through the normalization, a point in $\mathbb{B}_{-+}$. The conditions are: $\vec v$ is transverse to $\vec u$, and $\vec v$ is not isotropic, $q\ne0$. These are conditions on the extra datum, not on the root. The root has a transverse plane, but it chooses no vector in it.</p>
-<p><strong>The gauge is the scale of $\vec v$.</strong> For $\lambda\in\mathbb{C}^{\times}$, replace $\vec v$ by $\lambda\vec v$. Then
-$$
-\vec\Upsilon_{+-}\mapsto\lambda\,\vec\Upsilon_{+-},\qquad
-\vec\Upsilon_{-+}\mapsto\lambda^{-1}\vec\Upsilon_{-+}.
-$$
-So the same root and the same family carry a one-parameter family of bases. The parameter $\lambda$ is the gauge. The basis is determined by the root and by $\vec v$, modulo this scale. If $\vec v$ is normalized by $\vec v\cdot\vec v=1$, the scale is reduced to $\lambda=\pm1$; the unnormalized $\vec v$ is the object that carries the full gauge.</p>
-<h2 id="coordinates">Coordinates</h2>
-<p>For $\tilde Q\in\mathbb{B}$ write
-$$
-\tilde Q=Q_{++}\tilde\Pi_{+}+Q_{+-}E_{+-}+Q_{-+}E_{-+}+Q_{--}\tilde\Pi_{-}.
-$$
-The four coefficients are the <strong>Peirce coordinates</strong> of $\tilde Q$. They are complex numbers, and they depend on the basis.</p>
-<p><strong>The product.</strong> If $\tilde Q'$ has coordinates $Q'_{st}$, the coordinates of $\tilde Q\tilde Q'$ are
-$$
-\begin{aligned}
-Q''_{++}&=Q_{++}Q'_{++}+Q_{+-}Q'_{-+},\\
-Q''_{+-}&=Q_{++}Q'_{+-}+Q_{+-}Q'_{--},\\
-Q''_{-+}&=Q_{-+}Q'_{++}+Q_{--}Q'_{-+},\\
-Q''_{--}&=Q_{-+}Q'_{+-}+Q_{--}Q'_{--}.
-\end{aligned}
-$$
-This is the product rule of the lines written in coordinates.</p>
-<p><strong>The norm.</strong> A direct expansion gives
-$$
-Q_{++}Q_{--}-Q_{+-}Q_{-+}=Q_{t}^{2}+Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2},
-$$
-where $\tilde Q=Q_{t}e_{t}+Q_{x}\vec e_{x}+Q_{y}\vec e_{y}+Q_{z}\vec e_{z}$. The left side is therefore independent of the basis, as it must be.</p>
-<h2 id="the-gauge">The Gauge</h2>
-<p><strong>A change of basis of the same family.</strong> Let $E_{st}$ and $F_{st}$ be two bases of the same family. Each line is one-dimensional and the diagonal elements are fixed, so
-$$
-F_{st}=c_{st}E_{st},\qquad c_{++}=c_{--}=1.
-$$
-The product $F_{+-}F_{-+}=\tilde\Pi_{+}$ gives $c_{+-}c_{-+}=1$. Put $t=c_{-+}$. Then
-$$
-F_{+-}=t^{-1}E_{+-},\qquad F_{-+}=tE_{-+},\qquad t\in\mathbb{C}^{\times}.
-$$
-This is the <strong>gauge transformation</strong>. In the construction above, $t=\lambda^{-1}$.</p>
-<p><strong>The gauge group.</strong> The same transformation reads
-$$
-E_{st}\longmapsto d_{s}d_{t}^{-1}E_{st},\qquad d_{+},d_{-}\in\mathbb{C}^{\times}.
-$$
-The pairs $(d_{+},d_{-})$ and $(\mu d_{+},\mu d_{-})$ agree on every line, because $(\mu d_{s})(\mu d_{t})^{-1}=d_{s}d_{t}^{-1}$. The <strong>gauge group</strong> is therefore
-$$
-G=(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}\cong\mathbb{C}^{\times},\qquad t=d_{-}d_{+}^{-1}.
-$$
-The quotient is by the scalars, which act trivially. The same definition applies to a system of matrix units for $n$ orthogonal idempotents in $M_{n}(\mathbb{C})$:
-$$
-G=(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^{n-1},\qquad
-E_{ij}\longmapsto d_{i}d_{j}^{-1}E_{ij},
-$$
-and for $n=2$ this is the group above. The dimension $n-1$ is the number of independent rescalings of the lines.</p>
-<p><strong>The bases form a torsor.</strong> Fix the family $F$ and let $\mathcal{B}(F)$ be the set of its Peirce bases. Then $\mathcal{B}(F)$ is a $G$-torsor: the action is free and transitive.</p>
-<p><em>Free.</em> If $d_{s}d_{t}^{-1}=1$ for all $s,t$, then $d_{+}=d_{-}$, and the pair is the diagonal class, the identity of $G$.</p>
-<p><em>Transitive.</em> For bases $E$ and $F$, write $F_{st}=c_{st}E_{st}$ as above and take $d_{+}=c_{+-}$, $d_{-}=1$. Then $d_{+}d_{-}^{-1}=c_{+-}$ and $d_{-}d_{+}^{-1}=c_{+-}^{-1}=c_{-+}$, so the action carries $E$ to $F$.</p>
-<p>A torsor is not a group: it has no identity, because no basis is distinguished. <strong>The group $G$ is the gauge group; a choice of basis is a point of $\mathcal{B}(F)$.</strong> The root fixes the family and hence the torsor, but no point of it.</p>
-<p><strong>The stabiliser.</strong> The action is free, so the stabiliser of a basis in $G$ is trivial. In the unit group the same fact reads as follows. The units that fix the two idempotents are
-$$
-\tilde U=a\tilde\Pi_{+}+b\tilde\Pi_{-},\qquad a,b\in\mathbb{C}^{\times},
-$$
-and conjugation by $\tilde U$ acts on the basis by
-$$
-E_{+-}\longmapsto\frac{b}{a}E_{+-},\qquad E_{-+}\longmapsto\frac{a}{b}E_{-+}.
-$$
-The map $\tilde U\mapsto(a,b)$ is an isomorphism $U(F)\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, and the centre is the diagonal $a=b$, so
-$$
-G\cong U(F)/Z(\mathbb{B}^{\times}),
-$$
-and the stabiliser of a basis in $U(F)$ is the centre. Two bases are therefore conjugate by a unit, with $t=a/b$, and the conjugating unit is unique up to the centre. This is the inner form of the torsor statement.</p>
-<p><strong>Coordinates under the gauge.</strong> The element is fixed, so
-$$
-Q'_{st}=Q_{st}\,d_{t}d_{s}^{-1},
-$$
-that is,
-$$
-Q'_{++}=Q_{++},\qquad Q'_{+-}=tQ_{+-},\qquad
-Q'_{-+}=t^{-1}Q_{-+},\qquad Q'_{--}=Q_{--}.
-$$
-The product and the norm above are unchanged.</p>
-<p><strong>Gauge fixing.</strong> A <strong>gauge fixing</strong> is a section of the torsor: a rule that selects one basis in each family. Two remarks separate a condition on a basis from a choice of one.</p>
-<ul>
-<li>The nonvanishing of the mixed elements and the product normalization $E_{+-}E_{-+}=\tilde\Pi_{+}$ are part of the definition of a basis. They do not fix $t$: the rescaled pair $(t^{-1}E_{+-},tE_{-+})$ is again a basis.</li>
-<li>The Hermitian condition $E_{+-}^{*}=E_{-+}$, when the root is Hermitian, reduces the orbit to $|t|=1$. It restricts the gauge but does not fix it: a circle remains.</li>
-</ul>
-<p>A point of the torsor requires an extra datum. In the construction above that datum is the transverse vector $\vec v$; the section is defined over the families together with a chosen transverse direction, not over the root alone. The gauge is not a symmetry of the algebra: it changes the coordinates, not the element and not the lines.</p>
-<h2 id="dimensions">Dimensions</h2>
-<p><strong>The count is $6=4+2$ in real dimensions.</strong></p>
-<p>A basis is a family together with a nonzero element of one mixed line. The family is a root modulo sign; a root is $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$, which has two complex parameters, that is four real. The nonzero element of a complex line has two real parameters. Hence the bases have
-$$
-4+2=6
-$$
-real parameters.</p>
-<p>The fiber over a family is the torsor $\mathcal{B}(F)$, whose group $G$ has one complex parameter, that is two real parameters. So
-$$
-\underbrace{6}_{\text{bases}}=\underbrace{4}_{\text{families}}+\underbrace{2}_{\text{gauge}}.
+\tilde\Pi_{-}\vec\Upsilon_{-+}=\vec\Upsilon_{-+}=\vec\Upsilon_{-+}\tilde\Pi_{+},
 $$</p>
-<p><strong>A check against the construction.</strong> The root $\vec u$ has four real parameters. The transverse vector $\vec v$ modulo scale is a point of a complex projective line, of two real parameters. The pair $(\vec u,\vec v)$ modulo scale therefore has six real parameters. This is the same count.</p>
-<h2 id="example-the-root-math120">Example: The Root $i\vec e_{z}$</h2>
-<p>This example is given at the end because it is one point in the four-real-parameter space of roots, not a preferred one.</p>
-<p>For $\tilde\Xi=i\vec e_{z}$ take $\vec v=\vec e_{x}$. Then $q=1$ and the construction gives
-$$
-\vec\Upsilon_{+-}=\vec e_{x}+i\vec e_{y},\qquad
-\vec\Upsilon_{-+}=\frac{-\vec e_{x}+i\vec e_{y}}{4}.
-$$
-The rescalings
-$$
-\vec\Upsilon_{1}=\frac{i}{2}\vec\Upsilon_{+-}=\frac{i\vec e_{x}-\vec e_{y}}{2},\qquad
-\vec\Upsilon_{2}=-2i\,\vec\Upsilon_{-+}=\frac{i\vec e_{x}+\vec e_{y}}{2}
-$$
-give the pair often written down. It satisfies
-$$
-\vec\Upsilon_{1}\vec\Upsilon_{2}=\tilde\Pi_{+},\qquad
-\vec\Upsilon_{2}\vec\Upsilon_{1}=\tilde\Pi_{-},\qquad
-\vec\Upsilon_{1}^{2}=\vec\Upsilon_{2}^{2}=0.
-$$
-The rescaling is a gauge transformation with $t=-2i$.</p>
-<h2 id="remark-the-second-root">Remark: The Second Root</h2>
-<p><strong>A transverse root is a basis, not a second primitive.</strong> Call $\tilde\Xi'$ transverse to $\tilde\Xi$ when
-$$
-\tilde\Xi\tilde\Xi'+\tilde\Xi'\tilde\Xi=0,\qquad \tilde\Xi'^{2}=e_{t}.
-$$
-In a basis $E$ of the family of $\tilde\Xi$, every transverse root is
-$$
-\tilde\Xi'=\tau E_{+-}+\tau^{-1}E_{-+},\qquad \tau\in\mathbb{C}^{\times},
-$$
-and conversely. The diagonal part of $\tilde\Xi'$ commutes with $\tilde\Xi$ and the mixed part anticommutes, so a transverse element is purely mixed; its square is $\tau\sigma e_{t}$, and $\tau\sigma=1$.</p>
-<p><strong>It is a point of the torsor.</strong> A transverse root determines a basis with no further choice:
-$$
-E_{+-}=\frac12\left(\tilde\Xi'+\frac12[\tilde\Xi,\tilde\Xi']\right),\qquad
-E_{-+}=\frac12\left(\tilde\Xi'-\frac12[\tilde\Xi,\tilde\Xi']\right).
-$$
-For $\tilde\Xi'=\tau E_{+-}+\tau^{-1}E_{-+}$ one has $\tfrac12[\tilde\Xi,\tilde\Xi']=\tau E_{+-}-\tau^{-1}E_{-+}$, so these give $\tau E_{+-}$ and $\tau^{-1}E_{-+}$, whose product is $\tilde\Pi_{+}$. The inverse map is $\tilde\Xi'=E_{+-}+E_{-+}$. Hence the transverse roots are in canonical bijection with the Peirce bases: a transverse root is exactly a point of the gauge torsor. The root gives the family and the torsor; the transverse root chooses the point, that is, the basis. It produces no new idempotents: those come from $\tilde\Xi$ alone.</p>
-<p><strong>In $M_{n}(\mathbb{C})$.</strong> A transverse root exists only when the two eigenvalues of $\tilde\Xi$ have equal multiplicity, so $n=2m$; for odd $n$ there is none. In blocks,
-$$
-\tilde\Xi'=\begin{pmatrix}0&A\\A^{-1}&0\end{pmatrix},\qquad A\in GL_{m}(\mathbb{C}),
-$$
-and the transverse roots have $m^{2}$ complex parameters. For a family of $n$ idempotents the gauge has $n-1=2m-1$ parameters. The two counts agree only for $m=1$, that is $n=2$. For $n>2$ a transverse root does not determine a frame: it identifies the two blocks through $A$ but fixes no basis inside either block. The second root is therefore a phenomenon of dimension two. In higher dimension the torsor and its gauge group are the general notion, and no single element plays its role.</p>
+<p>and the products in the other directions vanish. In particular,</p>
+<p>$$
+\vec\Upsilon_{+-}^{2}=\vec\Upsilon_{-+}^{2}=0,
+$$</p>
+<p>so both mixed elements are nilpotents. The four elements satisfy the multiplication table of the four $2\times2$ matrix units, with $\tilde\Pi_{\pm}$ on the diagonal.</p>
+<p><strong>The diagonal is forced.</strong> If a nonzero diagonal element is written $c\tilde\Pi_{s}$, then idempotence gives $c^{2}=c$, hence $c=1$. The diagonal elements of a Peirce basis are therefore the idempotents themselves; they are not a choice.</p>
+<p><strong>The mixed elements are a choice.</strong> A nonzero $\vec\Upsilon_{+-}$ can be rescaled, and the product normalization forces the reciprocal rescaling of $\vec\Upsilon_{-+}$. That freedom is the gauge of §<em>The Gauge</em>.</p>
+<h2 id="existence-the-nilpotent-route">Existence: The Nilpotent Route</h2>
+<p><strong>Theorem.</strong> Every nondegenerate complete family of two idempotents of $\mathbb{B}$ admits a Peirce basis. More precisely, for every nonzero $u\in\mathbb{B}_{+-}$ there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$, and then $vu=\tilde\Pi_{-}$. The Peirce bases of the family are in bijection with the nonzero elements of $\mathbb{B}_{+-}$, and also with the nonzero elements of $\mathbb{B}_{-+}$.</p>
+<p><strong>Proof.</strong> Let $u\in\mathbb{B}_{+-}$ be nonzero. By the corner rule, left multiplication by $u$ maps $\mathbb{B}_{-+}$ into $\mathbb{B}_{++}$ and annihilates $\mathbb{B}_{++}$. The product $\mathbb{B}_{+-}\mathbb{B}_{-+}$ is nonzero by the lemma of <em>The Peirce Decomposition of the Biquaternion Algebra</em>, §<em>The Peirce Decompositions</em>; since $\mathbb{B}_{-+}$ is a line, $u\mathbb{B}_{-+}\ne0$. A nonzero linear map between two lines is an isomorphism, so there is a unique $v\in\mathbb{B}_{-+}$ with $uv=\tilde\Pi_{+}$.</p>
+<p>Now $vu\in\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{-}$. It is nonzero: if $vu=0$, then $u(vu)=0$, but $(uv)u=\tilde\Pi_{+}u=u\ne0$. Write $vu=\lambda\tilde\Pi_{-}$ with $\lambda\ne0$. Then</p>
+<p>$$
+u=uvu=\lambda u,
+$$</p>
+<p>so $\lambda=1$ and $vu=\tilde\Pi_{-}$. Thus $(u,v)$ is a basis.</p>
+<p>Conversely, a basis gives its first element $u=\vec\Upsilon_{+-}$, and the partner is unique by the argument above. The map from bases to nonzero elements of $\mathbb{B}_{+-}$ is therefore bijective. The same argument with the signs exchanged gives the bijection with the nonzero elements of $\mathbb{B}_{-+}$.</p>
+<p><strong>The idempotents are products of the two nilpotents.</strong> The theorem gives</p>
+<p>$$
+\tilde\Pi_{+}=\vec\Upsilon_{+-}\vec\Upsilon_{-+},\qquad
+\tilde\Pi_{-}=\vec\Upsilon_{-+}\vec\Upsilon_{+-}.
+$$</p>
+<p>The mixed elements are nilpotents, and each idempotent is the product of the two in the appropriate order.</p>
+<p><strong>The gauge is the reciprocal scaling.</strong> If $u$ is replaced by $\lambda u$, then $v$ is replaced by $\lambda^{-1}v$, and the pair remains a basis. Every $\lambda\in\mathbb{C}^{\times}$ gives a basis. This one-parameter scaling is the whole freedom of the construction; it is computed in §<em>The Gauge</em>.</p>
+<h2 id="coordinates">Coordinates</h2>
+<p>Every element has a unique expansion</p>
+<p>$$
+\tilde Q=Q_{++}\tilde\Pi_{+}+Q_{+-}\vec\Upsilon_{+-}+Q_{-+}\vec\Upsilon_{-+}+Q_{--}\tilde\Pi_{-},
+$$</p>
+<p>with $Q_{st}\in\mathbb{C}$. The numbers $Q_{st}$ are the <strong>Peirce coordinates</strong> of $\tilde Q$ in the basis.</p>
+<p><strong>The product.</strong> If $\tilde Q'$ has coordinates $Q'_{st}$, then</p>
+<p>$$
+Q''_{++}=Q_{++}Q'_{++}+Q_{+-}Q'_{-+},\qquad
+Q''_{+-}=Q_{++}Q'_{+-}+Q_{+-}Q'_{--},
+$$</p>
+<p>$$
+Q''_{-+}=Q_{-+}Q'_{++}+Q_{--}Q'_{-+},\qquad
+Q''_{--}=Q_{-+}Q'_{+-}+Q_{--}Q'_{--}.
+$$</p>
+<p>The coordinates multiply as $2\times2$ matrices. This is the product rule of the four lines written in the basis.</p>
+<p><strong>The determinant.</strong> The four basis elements satisfy the multiplication table of the matrix units, so the coordinate map</p>
+<p>$$
+\tilde\Pi_{+}\mapsto E_{11},\quad
+\vec\Upsilon_{+-}\mapsto E_{12},\quad
+\vec\Upsilon_{-+}\mapsto E_{21},\quad
+\tilde\Pi_{-}\mapsto E_{22}
+$$</p>
+<p>is an algebra isomorphism from $\mathbb{B}$ onto $M_{2}(\mathbb{C})$. The determinant of the coordinate matrix is therefore the determinant of the element in the matrix model, that is the quaternionic norm:</p>
+<p>$$
+Q_{++}Q_{--}-Q_{+-}Q_{-+}=\langle\tilde Q\rangle_{\natural}
+=Q_{t}^{2}+Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}.
+$$</p>
+<p>The identity is independent of the basis: a change of basis conjugates the coordinate matrix and leaves its determinant unchanged.</p>
+<h2 id="the-gauge">The Gauge</h2>
+<p><strong>A change of basis of the same family.</strong> Every other basis of the same family has the form</p>
+<p>$$
+\vec\Upsilon'_{+-}=t_{+}t_{-}^{-1}\vec\Upsilon_{+-},\qquad
+\vec\Upsilon'_{-+}=t_{-}t_{+}^{-1}\vec\Upsilon_{-+},\qquad
+t_{+},t_{-}\in\mathbb{C}^{\times},
+$$</p>
+<p>with the diagonal elements unchanged.</p>
+<p><strong>Proof.</strong> Each primed mixed element is a nonzero multiple of the unprimed one, say $\vec\Upsilon'_{+-}=c_{+}\vec\Upsilon_{+-}$ and $\vec\Upsilon'_{-+}=c_{-}\vec\Upsilon_{-+}$. The product normalization gives $c_{+}c_{-}=1$. Set $t_{+}=c_{+}$ and $t_{-}=1$; then $c_{+}=t_{+}t_{-}^{-1}$ and $c_{-}=t_{-}t_{+}^{-1}$. The converse is a direct check.</p>
+<p><strong>The effective gauge.</strong> Put $t=t_{-}t_{+}^{-1}$. Then</p>
+<p>$$
+\vec\Upsilon'_{+-}=t^{-1}\vec\Upsilon_{+-},\qquad
+\vec\Upsilon'_{-+}=t\,\vec\Upsilon_{-+}.
+$$</p>
+<p>A common scalar in $t_{+}$ and $t_{-}$ acts trivially, because $(ct_{+})(ct_{-})^{-1}=t_{+}t_{-}^{-1}$. The effective group is</p>
+<p>$$
+G=(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}\cong\mathbb{C}^{\times},
+$$</p>
+<p>of real dimension two. The parameter $t$ is the single complex gauge parameter of the biquaternion case.</p>
+<p><strong>The bases form a torsor.</strong> Fix the family. The set $\mathcal{B}(F)$ of its Peirce bases is a $G$-torsor: the action is free and transitive.</p>
+<ul>
+<li><em>Free:</em> if a gauge element fixes both mixed elements, then $t_{+}t_{-}^{-1}=1$ and $t_{-}t_{+}^{-1}=1$, so $t_{+}=t_{-}$; the class in $G$ is the identity.</li>
+<li><em>Transitive:</em> given two bases, their first mixed elements are nonzero multiples, $u'=cu$; set $t_{+}=c$, $t_{-}=1$, and the product normalization forces the second mixed element to be $c^{-1}v$, which is the transformed basis.</li>
+</ul>
+<p>Equivalently, the map $u\mapsto$ the basis with first element $u$ is a bijection</p>
+<p>$$
+\mathcal{B}(F)\cong\mathbb{B}_{+-}\setminus\{0\},
+$$</p>
+<p>and $G$ acts on the right-hand side by $u\mapsto t^{-1}u$. No basis is distinguished.</p>
+<p><strong>The stabilizer.</strong> In $G$, the action is free, so the stabilizer of a basis is trivial. In the unit group, the units that fix the family are</p>
+<p>$$
+U=a\tilde\Pi_{+}+b\tilde\Pi_{-},\qquad a,b\in\mathbb{C}^{\times}.
+$$</p>
+<p>Conjugation by $U$ gives</p>
+<p>$$
+U\vec\Upsilon_{+-}U^{-1}=\frac{a}{b}\vec\Upsilon_{+-},\qquad
+U\vec\Upsilon_{-+}U^{-1}=\frac{b}{a}\vec\Upsilon_{-+}.
+$$</p>
+<p>The map $U\mapsto(a,b)$ is an isomorphism from the stabilizer of the family in $\mathbb{B}^{\times}$ onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. The centre of $\mathbb{B}$ is $\mathbb{C}e_{t}$, and the centre of the unit group is the diagonal $a=b$. The quotient is $G$. A unit fixes a basis exactly when $a=b$, that is exactly when it is central. Two bases of the same family are conjugate by a unit, unique up to the centre.</p>
+<p><strong>Coordinates under the gauge.</strong> With $t=t_{-}t_{+}^{-1}$,</p>
+<p>$$
+Q'_{++}=Q_{++},\qquad
+Q'_{+-}=tQ_{+-},\qquad
+Q'_{-+}=t^{-1}Q_{-+},\qquad
+Q'_{--}=Q_{--}.
+$$</p>
+<p>The product and the determinant are unchanged: the same element is read in another basis.</p>
+<p><strong>Gauge fixing.</strong> A gauge fixing is a point of the torsor, that is a nonzero element of one mixed line. The nonvanishing and the product normalization are part of the definition of a basis and do not fix the scale. The Hermitian condition restricts the gauge but does not fix it; see below.</p>
+<p><strong>The Hermitian gauge.</strong> Suppose the family is Hermitian, $\tilde\Pi_{\pm}^{*}=\tilde\Pi_{\pm}$, with the positive definite Hermitian form of the algebra. Then:</p>
+<ul>
+<li>A Hermitian basis exists. Choose a nonzero $u\in\mathbb{B}_{+-}$. Then $u^{*}\in\mathbb{B}_{-+}$ and $uu^{*}\in\mathbb{B}_{++}=\mathbb{C}\tilde\Pi_{+}$. The element $uu^{*}$ is Hermitian and nonzero, and $\mathrm{Sc}(uu^{*})>0$ by positive definiteness; write $uu^{*}=\lambda\tilde\Pi_{+}$ with $\lambda>0$, since $\mathrm{Sc}(\tilde\Pi_{+})=\frac12$. Replace $u$ by $\lambda^{-1/2}u$; then $uu^{*}=\tilde\Pi_{+}$. Now $u^{*}u\in\mathbb{B}_{--}=\mathbb{C}\tilde\Pi_{-}$ is nonzero, because $u(u^{*}u)=0$ would give $(uu^{*})u=u=0$; write $u^{*}u=\mu\tilde\Pi_{-}$. Then $u=uu^{*}u=\mu u$, so $\mu=1$. Thus $\vec\Upsilon_{+-}=u$ and $\vec\Upsilon_{-+}=u^{*}$ are a Hermitian basis.</li>
+<li>The Hermitian bases are the bases with $\vec\Upsilon_{-+}=\vec\Upsilon_{+-}^{*}$. Under the gauge, this condition reads $t\vec\Upsilon_{-+}=\bar t^{-1}\vec\Upsilon_{-+}$, so $t\bar t=1$. The Hermitian bases are therefore a $U(1)$-torsor, of real dimension one.</li>
+<li>The Hermitian condition does not fix a basis; a circle of bases remains. A gauge fixing in the Hermitian case is a point of that circle.</li>
+</ul>
+<h2 id="systems-of-matrix-units">Systems of Matrix Units</h2>
+<p><strong>Definition.</strong> A <strong>system of $2\times2$ matrix units</strong> in $\mathbb{B}$ is a family</p>
+<p>$$
+\tilde\Pi_{+},\quad\vec\Upsilon_{+-},\quad\vec\Upsilon_{-+},\quad\tilde\Pi_{-}
+$$</p>
+<p>with the multiplication table</p>
+<p>$$
+\tilde\Pi_{+}^{2}=\tilde\Pi_{+},\quad
+\tilde\Pi_{-}^{2}=\tilde\Pi_{-},\quad
+\tilde\Pi_{+}\tilde\Pi_{-}=\tilde\Pi_{-}\tilde\Pi_{+}=0,
+$$</p>
+<p>$$
+\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+},\quad
+\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-},\quad
+\vec\Upsilon_{+-}^{2}=\vec\Upsilon_{-+}^{2}=0.
+$$</p>
+<p>A Peirce basis is exactly such a system. The coordinate map of §<em>Coordinates</em> sends it to the four elementary matrices, so a system of matrix units is the same data as an algebra isomorphism $\mathbb{B}\to M_{2}(\mathbb{C})$ in which the family is the standard diagonal pair.</p>
+<p><strong>Uniqueness up to conjugation.</strong> Every two systems of $2\times2$ matrix units of $\mathbb{B}$ are conjugate by a unit, and the conjugating unit is unique up to the centre.</p>
+<p><strong>Proof.</strong> For two systems of the same family, the two bases differ by the gauge of §<em>The Gauge</em>, and that gauge is conjugation by $U=t_{+}\tilde\Pi_{+}+t_{-}\tilde\Pi_{-}$; the conjugating unit is unique up to a common scalar, that is up to the centre. For two systems of different families, pass to the matrix model. A nontrivial idempotent of $M_{2}(\mathbb{C})$ is a rank-one projection; choose a basis of $\mathbb{C}^{2}$ in which its image is the first coordinate line and its kernel the second. The projection is then $E_{11}$, and the mixed units are determined up to the diagonal torus. Every automorphism of $M_{2}(\mathbb{C})$ is inner, so the conjugation descends to $\mathbb{B}$. The centralizer of a full system of matrix units is the centre. Each system is therefore conjugate to the standard one, and any two systems are conjugate to each other; the unit is unique up to the centre.</p>
+<h2 id="dimensions">Dimensions</h2>
+<p><strong>The family.</strong> A nondegenerate family is the same data as a nontrivial idempotent, by <em>The Peirce Decomposition of the Biquaternion Algebra</em>, §<em>From One Idempotent to Its Complement</em>. In the matrix model a nontrivial idempotent is a rank-one projection: its image is a line, of one complex parameter, and its kernel is a complementary line, of one complex parameter. The family therefore has complex dimension two, that is real dimension four.</p>
+<p><strong>The basis.</strong> Fix the family. A basis is a nonzero element of one mixed line, by §<em>Existence: The Nilpotent Route</em>. A complex line with its zero removed has complex dimension one, that is real dimension two. The basis is the family together with this point, so the basis space has real dimension $4+2=6$.</p>
+<p><strong>The gauge.</strong> The effective gauge is $\mathbb{C}^{\times}$, of real dimension two. It is the fibre of the map from bases to families. The count is</p>
+<p>$$
+\underbrace{4}_{\text{family}}+\underbrace{2}_{\text{mixed element}}=\underbrace{6}_{\text{basis}},
+\qquad
+\underbrace{6}_{\text{basis}}-\underbrace{2}_{\text{gauge}}=\underbrace{4}_{\text{family}}.
+$$</p>
+<p>The family is the input and the mixed element is the choice.</p>
+<h2 id="example-the-standard-family-and-basis">Example: The Standard Family and Basis</h2>
+<p>The standard family is</p>
+<p>$$
+\tilde\Pi_{+}=\frac{e_{t}+i\vec e_{z}}{2},\qquad
+\tilde\Pi_{-}=\frac{e_{t}-i\vec e_{z}}{2},
+$$</p>
+<p>and the standard mixed units are</p>
+<p>$$
+\vec\Upsilon_{+-}=\frac{i\vec e_{x}-\vec e_{y}}{2},\qquad
+\vec\Upsilon_{-+}=\frac{i\vec e_{x}+\vec e_{y}}{2}.
+$$</p>
+<p>They satisfy</p>
+<p>$$
+\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+},\qquad
+\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-},\qquad
+\vec\Upsilon_{+-}^{2}=\vec\Upsilon_{-+}^{2}=0.
+$$</p>
+<p>The gauge transformation is</p>
+<p>$$
+\vec\Upsilon'_{+-}=t^{-1}\vec\Upsilon_{+-},\qquad
+\vec\Upsilon'_{-+}=t\vec\Upsilon_{-+},
+$$</p>
+<p>for $t\in\mathbb{C}^{\times}$. The standard basis is Hermitian, $\vec\Upsilon_{-+}=\vec\Upsilon_{+-}^{*}$; the Hermitian gauges are the circle $|t|=1$, so the standard basis is one point of a $U(1)$-family and not a canonical one.</p>
+<p>The coordinate matrix of an element is</p>
+<p>$$
+\begin{pmatrix}
+Q_{++} & Q_{+-}\\
+Q_{-+} & Q_{--}
+\end{pmatrix},
+$$</p>
+<p>with determinant $Q_{++}Q_{--}-Q_{+-}Q_{-+}=\langle\tilde Q\rangle_{\natural}$.</p>
 <h2 id="summary">Summary</h2>
-<p>A Peirce basis of a nondegenerate family of $\mathbb{B}$ is a choice $E_{st}\in\mathbb{B}_{st}$ with $E_{st}E_{uv}=\delta_{tu}E_{sv}$ and $E_{ss}=\tilde\Pi_{s}$. The root fixes the four lines but not the mixed elements. To build a basis one adds a transverse vector $\vec v$, with $\vec u\cdot\vec v=0$ and $\vec v\cdot\vec v\ne0$; the formulas $\vec\Upsilon_{+-}=\vec v+i\vec u\times\vec v$ and $\vec\Upsilon_{-+}=(-\vec v+i\vec u\times\vec v)/(4\vec v\cdot\vec v)$ give the mixed elements, and the product normalization is then automatic. The scale of $\vec v$ is the gauge, $E'_{+-}=t^{-1}E_{+-}$ and $E'_{-+}=tE_{-+}$. The bases of a fixed family form a torsor under $G\cong\mathbb{C}^{\times}$; the action is free, so the stabiliser of a basis in $G$ is trivial, and in the unit group it is the centre. Nonvanishing and product normalization belong to the definition of a basis and leave $t$ free; the Hermitian condition restricts the gauge to $|t|=1$ but does not fix it. The coordinates multiply by the four-term rule, and the norm is $Q_{++}Q_{--}-Q_{+-}Q_{-+}$. Every basis of a fixed family is conjugate to the constructed one. The dimensions are $6=4+2$: six real for the bases, four for the families, two for the gauge. A second root is a point of the torsor, hence a gauge choice; a single such element exists only in dimension two.</p>
+<p>A Peirce basis of a nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ is a pair of nonzero mixed elements $\vec\Upsilon_{+-}\in\mathbb{B}_{+-}$ and $\vec\Upsilon_{-+}\in\mathbb{B}_{-+}$ with $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$ and $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-}$. The diagonal elements are the idempotents and are forced. Existence is the nilpotent route: every nonzero element of one mixed line has a unique partner in the other, and the two idempotents are the two products. The bases are a $\mathbb{C}^{\times}$-torsor, equivalently the nonzero elements of one mixed line; the gauge is the reciprocal scaling, free and transitive. In the unit group the stabilizer of a basis is the centre. The Hermitian condition restricts the gauge to $U(1)$ and does not fix it. The coordinate matrix is a $2\times2$ matrix model, and its determinant is the quaternionic norm. The dimensions are $6=4+2$ real.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -276,53 +268,47 @@ and the transverse roots have $m^{2}$ complex parameters. For a family of $n$ id
 </thead>
 <tbody>
 <tr>
-<td>$\mathbb{B}$</td>
-<td>The biquaternion algebra</td>
-</tr>
-<tr>
-<td>$\tilde\Xi=i\vec u$</td>
-<td>The root, with $\vec u\cdot\vec u=1$</td>
-</tr>
-<tr>
 <td>$\tilde\Pi_{\pm}$</td>
-<td>The complete family of two idempotents</td>
+<td>The two idempotents of the family</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$</td>
 <td>A Peirce line</td>
 </tr>
 <tr>
-<td>$E_{st}$</td>
-<td>A Peirce basis, with $E_{ss}=\tilde\Pi_{s}$</td>
-</tr>
-<tr>
 <td>$\vec\Upsilon_{+-},\vec\Upsilon_{-+}$</td>
-<td>The mixed elements of a basis</td>
+<td>The mixed units of a basis</td>
 </tr>
 <tr>
 <td>$Q_{st}$</td>
-<td>The Peirce coordinates of $\tilde Q$</td>
+<td>The Peirce coordinates</td>
 </tr>
 <tr>
 <td>$\mathcal{B}(F)$</td>
-<td>The set of Peirce bases of the family $F$</td>
+<td>The set of bases of the family $F$</td>
 </tr>
 <tr>
 <td>$G=(\mathbb{C}^{\times})^{2}/\mathbb{C}^{\times}$</td>
-<td>The gauge group, a $\mathbb{C}^{\times}$</td>
+<td>The effective gauge group</td>
 </tr>
 <tr>
-<td>$t$</td>
-<td>The gauge parameter, $t=d_{-}d_{+}^{-1}$</td>
+<td>$t_{+},t_{-},t$</td>
+<td>The gauge parameters, with $t=t_{-}t_{+}^{-1}$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>The quaternionic norm</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the four lines and the root.</li>
-<li><a href="spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Biquaternion Algebra</a>, for the elements of the two spinor spaces.</li>
-<li><a href="idempotents.html">Idempotents</a>, for the roots and the idempotents.</li>
-<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the units and the centre.</li>
+<li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the family, the four lines and the product rule.</li>
+<li><a href="spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html">Spinors as Peirce Coordinates in the Biquaternion Algebra</a>, for the coordinates of the two spinor spaces.</li>
+<li><a href="m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the matrix model and the coordinate isomorphism.</li>
+<li><a href="the-peirce-decomposition-in-n-dimensions.html">The Peirce Decomposition in $n$ Dimensions</a>, for the general gauge $(\mathbb{C}^{\times})^{n}/\mathbb{C}^{\times}$.</li>
+<li><a href="biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the inner automorphisms used in §<em>Systems of Matrix Units</em>.</li>
+<li><a href="idempotents.html">Idempotents</a>, for the classification of the idempotents and the standard pair.</li>
 </ul>
       </div>
     </main>

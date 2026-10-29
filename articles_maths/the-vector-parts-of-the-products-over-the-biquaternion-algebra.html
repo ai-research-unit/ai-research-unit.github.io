@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Vector Parts of the Products over the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-vector-parts-of-the-products-over-the-biquaternion-algebra"><strong>The Vector Parts of the Products over the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The twelve products of <em>Symmetric and Antisymmetric Decomposition of the Four General Products</em> split every value into a scalar part and a vector part. The scalar parts are the four forms of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, and they are studied as forms. The vector parts are the other half, and this article treats them as what they are: vector-valued maps, one to a product, with a table, a diagonal, an image, a symmetry and a behaviour on the remarkable subspaces.</p>
+<p>The vector part is not a scalar form. It is a map into the three-dimensional complex vector subspace $\mathrm{Vect}(\mathbb{B})$, and the scalar theory applies to its three contractions with the basis vectors. The article states this distinction first, then reads the twelve vector parts one by one, then develops the properties that are common to them. The two results that organise the table are the <strong>two-bit rule</strong> for the four general products and the <strong>loss of distinctions</strong>: the twelve products carry nine distinct vector parts on the complex space, not twelve, because the two central symmetric products have zero vector part and because the quaternionic bilinear and the plain sesquilinear products share their vector part with their antisymmetric parts.</p>
+<p>The article assumes the four general products of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, the twelve products and their codes of <em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>, and the four forms of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>. The element, the basis and the three conjugations are those of <em>The Biquaternion Algebra</em>; the remarkable subspaces are those of <em>The Six Subspaces</em>; the two switches are those of <em>Introduction to the Operators of the Biquaternion Algebra</em>. The diagonal of the plain product is also computed in <em>The Square of an Element</em>, the diagonal of the general quaternionic sesquilinear product in <em>The Square of the General Quaternionic Sesquilinear Product and the Two Halves</em>, and the diagonal of the block in <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>.</p>
+<p>Throughout, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $Q_{1t},Q_{2t}\in\mathbb{C}$ and $\vec Q_1,\vec Q_2\in\mathrm{Vect}(\mathbb{B})$. The coefficientwise conjugation is $\overline{\cdot}$, the natural conjugation is ${}^{\natural}$, the Hermitian conjugation is ${}^{*}=\overline{\cdot}\circ{}^{\natural}$, the complex bilinear dot product is $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$, and the complex bilinear cross product is $\vec Q_1\times\vec Q_2$. The vector subspace is $\mathrm{Vect}(\mathbb{B})$, the centre is $\mathbb{C}_{\mathbb{B}}$, the real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$. The codes are those of the decomposition article: $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ for the four general products, $\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$ for their symmetric parts, and $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$ for their antisymmetric parts.</p>
+<h2 id="the-vector-part-of-a-product">The Vector Part of a Product</h2>
+<p><strong>Definition (the vector part).</strong> For a biquaternion $\tilde Q=Q_te_t+\vec Q$, the <strong>scalar part</strong> and the <strong>vector part</strong> are</p>
+<p>$$
+\mathrm{Sc}(\tilde Q)=Q_t,\qquad \mathrm{Vec}(\tilde Q)=\vec Q ,
+$$</p>
+<p>so that $\tilde Q=\mathrm{Sc}(\tilde Q)e_t+\mathrm{Vec}(\tilde Q)$. They are the two projections of the scalar–vector split, and both are $\mathbb{C}$-linear:</p>
+<p>$$
+\mathrm{Sc}(\tilde Q)=\tfrac12\bigl(\tilde Q+\tilde Q^{\natural}\bigr),\qquad
+\mathrm{Vec}(\tilde Q)=\tfrac12\bigl(\tilde Q-\tilde Q^{\natural}\bigr).
+$$</p>
+<p><strong>Definition (the vector part of a product).</strong> For a product $f$ of the twelve, the <strong>vector part of $f$</strong> is the map</p>
+<p>$$
+V_f(\tilde Q_1,\tilde Q_2)=\mathrm{Vec}\bigl(f(\tilde Q_1,\tilde Q_2)\bigr).
+$$</p>
+<p>The product is reconstructed from its two parts,</p>
+<p>$$
+f(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\bigl(f(\tilde Q_1,\tilde Q_2)\bigr)e_t+V_f(\tilde Q_1,\tilde Q_2),
+$$</p>
+<p>and the scalar part is one of the four forms, while $V_f$ is the new object. The map $V_f$ is $\mathbb{C}$-bilinear when $f$ is one of the six products of the two bilinear families, and sesquilinear over $(\mathbb{C},\bar{\cdot})$ when $f$ is one of the six products of the two sesquilinear families. Its values lie in $\mathrm{Vect}(\mathbb{B})$.</p>
+<p><strong>The vector part is not a form.</strong> A form of the corpus is scalar-valued: it is the scalar part of a product read in two arguments, bilinear or sesquilinear by its second slot. The vector part is vector-valued, so it has no scalar Gram matrix and no signature of its own. What replaces the scalar form is a family of three scalar forms, one to a vector of the subspace: for $w\in\mathrm{Vect}(\mathbb{B})$ put</p>
+<p>$$
+\varphi_{f,w}(\tilde Q_1,\tilde Q_2)=\bigl(w,V_f(\tilde Q_1,\tilde Q_2)\bigr).
+$$</p>
+<p>For $f$ bilinear, $\varphi_{f,w}$ is a complex bilinear form; for $f$ sesquilinear, it is sesquilinear over $(\mathbb{C},\bar{\cdot})$. The three coordinate forms with $w=\vec e_x,\vec e_y,\vec e_z$ determine $V_f$, and $V_f$ determines them. This is the precise sense in which a vector part is a package of three scalar forms. The four forms of the corpus are the scalar parts; they are not a fifth member of the package of three.</p>
+<p><strong>The natural quadratic invariants.</strong> The scalar forms of $V_f$ are not the only scalars it carries. The complex bilinear square $(V_f,V_f)$ and the real square $(V_f,\overline{V_f})$ are the two natural scalar quantities attached to the vector part; the second is the Euclidean square of the vector. They are quartic in the arguments for a general product, and they are the natural invariants when no vector $w$ is chosen.</p>
+<h2 id="the-rule-for-the-four-general-products">The Rule for the Four General Products</h2>
+<p>The four general products obey one rule. Put $\varepsilon=0$ for the two products whose second slot is plain, $\mathrm{GPA}$ and $\mathrm{GQA}$, and $\varepsilon=1$ for the two whose second slot is the Hermitian conjugation, $\mathrm{GPS}$ and $\mathrm{GQS}$. Write</p>
+<p>$$
+\vec Q_2^{\varepsilon}=
+\begin{cases}
+\vec Q_2, & \varepsilon=0,\\
+\overline{\vec Q_2}, & \varepsilon=1,
+\end{cases}
+\qquad
+Q_{2t}^{\varepsilon}=
+\begin{cases}
+Q_{2t}, & \varepsilon=0,\\
+\overline{Q_{2t}}, & \varepsilon=1.
+\end{cases}
+$$</p>
+<p>Let $\alpha$ be the sign of the vector part of the second factor and $\beta$ the sign of the vector part of the first factor:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>first slot</th>
+<th>second slot</th>
+<th>$\varepsilon$</th>
+<th>$\alpha$</th>
+<th>$\beta$</th>
+<th>$\alpha\beta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$</td>
+<td>plain</td>
+<td>plain</td>
+<td>$0$</td>
+<td>$+$</td>
+<td>$+$</td>
+<td>$+$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>natural</td>
+<td>plain</td>
+<td>$0$</td>
+<td>$+$</td>
+<td>$-$</td>
+<td>$-$</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}$</td>
+<td>plain</td>
+<td>star</td>
+<td>$1$</td>
+<td>$-$</td>
+<td>$+$</td>
+<td>$-$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>natural</td>
+<td>star</td>
+<td>$1$</td>
+<td>$-$</td>
+<td>$-$</td>
+<td>$+$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the vector part of a general product).</strong> For the four general products,</p>
+<p>$$
+\boxed{\;V_f(\tilde Q_1,\tilde Q_2)=\alpha\,Q_{1t}\vec Q_2^{\varepsilon}+\beta\,Q_{2t}^{\varepsilon}\vec Q_1+\alpha\beta\,\vec Q_1\times\vec Q_2^{\varepsilon}\;}
+$$</p>
+<p>and the scalar part is</p>
+<p>$$
+\mathrm{Sc}\bigl(f(\tilde Q_1,\tilde Q_2)\bigr)=Q_{1t}Q_{2t}^{\varepsilon}-\alpha\beta\,\bigl(\vec Q_1,\vec Q_2^{\varepsilon}\bigr).
+$$</p>
+<p><em>Proof.</em> The first factor is $\tilde Q_1^{\natural}$ for $\beta=-1$ and $\tilde Q_1$ for $\beta=+1$, so it is $Q_{1t}+\beta\vec Q_1$. The second factor is $\tilde Q_2$ for $\varepsilon=0$ and $\tilde Q_2^{*}=Q_{2t}^{\varepsilon}-\vec Q_2^{\varepsilon}$ for $\varepsilon=1$; in both cases it is $Q_{2t}^{\varepsilon}+\alpha\vec Q_2^{\varepsilon}$ with $\alpha=+1$ for $\varepsilon=0$ and $\alpha=-1$ for $\varepsilon=1$. The quaternion product of $Q_{1t}+\beta\vec Q_1$ and $Q_{2t}^{\varepsilon}+\alpha\vec Q_2^{\varepsilon}$ has scalar part $Q_{1t}Q_{2t}^{\varepsilon}-\alpha\beta(\vec Q_1,\vec Q_2^{\varepsilon})$ and vector part $\alpha Q_{1t}\vec Q_2^{\varepsilon}+\beta Q_{2t}^{\varepsilon}\vec Q_1+\alpha\beta\,\vec Q_1\times\vec Q_2^{\varepsilon}$, which is the display.</p>
+<p><strong>Remark (the two bits).</strong> The sign $\alpha$ is read on the <strong>second</strong> slot: it is $+$ for the plain and $-$ for the star. The sign $\beta$ is read on the <strong>first</strong> slot: it is $+$ for the plain and $-$ for the natural conjugation. The cross term carries the product $\alpha\beta$. The first mixed term carries $\alpha$, the second carries $\beta$, and the two are the two switches of <em>Introduction to the Operators of the Biquaternion Algebra</em> read on the vector part rather than on the scalar form. The four general vector parts are therefore the four sign choices of two independent bits, not a list of four unrelated formulas.</p>
+<h2 id="the-table-of-the-twelve-vector-parts">The Table of the Twelve Vector Parts</h2>
+<p>The table lists the twelve products with their codes, their vector parts, their diagonals, their symmetries and their images. The diagonal is $V_f(\tilde Q,\tilde Q)$ at the single element $\tilde Q=Q_te_t+\vec Q$; the symmetry is the relation between $V_f(\tilde Q_1,\tilde Q_2)$ and $V_f(\tilde Q_2,\tilde Q_1)$, read with the coefficientwise conjugation in the sesquilinear families.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>code</th>
+<th>vector part</th>
+<th>diagonal</th>
+<th>symmetry</th>
+<th>image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the general plain bilinear product</td>
+<td>$\mathrm{GPA}$</td>
+<td>$Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$</td>
+<td>$2Q_t\vec Q$</td>
+<td>neither</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>the general quaternionic bilinear product</td>
+<td>$\mathrm{GQA}$</td>
+<td>$Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$</td>
+<td>$0$</td>
+<td>alternating</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>the general plain sesquilinear product</td>
+<td>$\mathrm{GPS}$</td>
+<td>$-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$</td>
+<td>$-Q_t\overline{\vec Q}+\overline{Q_t}\vec Q-\vec Q\times\overline{\vec Q}$</td>
+<td>conjugate-alternating</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>the general quaternionic sesquilinear product</td>
+<td>$\mathrm{GQS}$</td>
+<td>$-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$</td>
+<td>$-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q+\vec Q\times\overline{\vec Q}$</td>
+<td>neither</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>the symmetric plain bilinear product</td>
+<td>$\mathrm{SPA}$</td>
+<td>$Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$</td>
+<td>$2Q_t\vec Q$</td>
+<td>symmetric</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>the symmetric quaternionic bilinear product</td>
+<td>$\mathrm{SQA}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>zero</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>the symmetric plain sesquilinear product</td>
+<td>$\mathrm{SPS}$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>zero</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>the symmetric quaternionic sesquilinear product</td>
+<td>$\mathrm{SQS}$</td>
+<td>$-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$</td>
+<td>$-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$</td>
+<td>conjugate-symmetric</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>the antisymmetric plain bilinear product</td>
+<td>$\mathrm{APA}$</td>
+<td>$\vec Q_1\times\vec Q_2$</td>
+<td>$0$</td>
+<td>alternating</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>the antisymmetric quaternionic bilinear product</td>
+<td>$\mathrm{AQA}$</td>
+<td>$Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$</td>
+<td>$0$</td>
+<td>alternating</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>the antisymmetric plain sesquilinear product</td>
+<td>$\mathrm{APS}$</td>
+<td>$-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$</td>
+<td>$-Q_t\overline{\vec Q}+\overline{Q_t}\vec Q-\vec Q\times\overline{\vec Q}$</td>
+<td>conjugate-alternating</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>the antisymmetric quaternionic sesquilinear product</td>
+<td>$\mathrm{AQS}$</td>
+<td>$\vec Q_1\times\overline{\vec Q_2}$</td>
+<td>$\vec Q\times\overline{\vec Q}$</td>
+<td>conjugate-alternating</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The <strong>vector part</strong> column is $V_f$; the <strong>diagonal</strong> column is $V_f$ at the two equal arguments; the <strong>symmetry</strong> column is the class of the map under the exchange of the arguments, with the coefficientwise conjugation in the sesquilinear families; and the <strong>image</strong> column is the image of $V_f$ on the whole space. Ten rows fill the vector subspace and two rows, $\mathrm{SQA}$ and $\mathrm{SPS}$, are the zero map. The table has repetitions: the rows $\mathrm{GQA}$ and $\mathrm{AQA}$ are identical, the rows $\mathrm{GPS}$ and $\mathrm{APS}$ are identical, and the two zero rows are identical. The next section proves that these are the only repetitions on the complex space.</p>
+<h2 id="the-nine-vector-parts">The Nine Vector Parts</h2>
+<p><strong>Theorem (the vector part loses the central symmetric parts).</strong> The twelve vector parts satisfy</p>
+<p>$$
+\boxed{\;V_{\mathrm{GQA}}=V_{\mathrm{AQA}},\qquad V_{\mathrm{GPS}}=V_{\mathrm{APS}},\qquad V_{\mathrm{SQA}}=V_{\mathrm{SPS}}=0\;}
+$$</p>
+<p>and these three identities are the only coincidences among the twelve on the complex space. The twelve products therefore carry <strong>nine distinct vector parts</strong>.</p>
+<p><em>Proof.</em> The symmetric part of the general quaternionic bilinear product is the quaternion form read as a product, $\mathrm{SQA}(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$, which is central; its vector part is zero. Hence $V_{\mathrm{GQA}}=V_{\mathrm{SQA}}+V_{\mathrm{AQA}}=V_{\mathrm{AQA}}$. The symmetric part of the general plain sesquilinear product is the Hermitian form read as a product, $\mathrm{SPS}(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$, which is central; hence $V_{\mathrm{GPS}}=V_{\mathrm{APS}}$. The two central products themselves have zero vector part. The nine remaining classes are separated by the three pairs in the next table.</p>
+<p><strong>Theorem (the separation).</strong> The nine classes are pairwise distinct, and the three pairs $(\vec e_t,\vec e_x)$, $(\vec e_x,\vec e_y)$ and $(\vec e_x,i\vec e_y)$ separate them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>$(\vec e_t,\vec e_x)$</th>
+<th>$(\vec e_x,\vec e_y)$</th>
+<th>$(\vec e_x,i\vec e_y)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_z$</td>
+<td>$i\vec e_z$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}=\mathrm{AQA}$</td>
+<td>$\vec e_x$</td>
+<td>$-\vec e_z$</td>
+<td>$-i\vec e_z$</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}=\mathrm{APS}$</td>
+<td>$-\vec e_x$</td>
+<td>$-\vec e_z$</td>
+<td>$i\vec e_z$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>$-\vec e_x$</td>
+<td>$\vec e_z$</td>
+<td>$-i\vec e_z$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>$\vec e_x$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>$-\vec e_x$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>$0$</td>
+<td>$\vec e_z$</td>
+<td>$i\vec e_z$</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>$0$</td>
+<td>$\vec e_z$</td>
+<td>$-i\vec e_z$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each row is different from every other, so the nine classes are distinct. The table also shows where the coincidences come from: $\mathrm{GPA}$ and $\mathrm{GQA}$ differ only in the sign of the cross term and of the second mixed term; $\mathrm{GPS}$ and $\mathrm{GQS}$ differ in the sign of the second mixed term and of the cross term; $\mathrm{SPA}$ and $\mathrm{SQS}$ differ in the sign and in the coefficientwise conjugation of the two mixed terms; and $\mathrm{APA}$ and $\mathrm{AQS}$ differ only at the complex pair.</p>
+<p><strong>Corollary (the vector part does not determine the product).</strong> The map $f\mapsto V_f$ has fibres $\{\mathrm{GQA},\mathrm{AQA}\}$, $\{\mathrm{GPS},\mathrm{APS}\}$ and $\{\mathrm{SQA},\mathrm{SPS}\}$. In each fibre the two products have different scalar parts — the quaternionic form against zero, the Hermitian form against zero, and the quaternionic form against the Hermitian form — so the pair $(\mathrm{Sc}\circ f,V_f)$ determines $f$, while $V_f$ alone does not. The vector part is one half of the product; the scalar part is the other, and the two are needed together.</p>
+<h2 id="the-four-general-vector-parts">The Four General Vector Parts</h2>
+<h3 id="the-general-plain-bilinear-product-gpa">The General Plain Bilinear Product (GPA)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{GPA}}=Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2.
+$$</p>
+<p>It is $\mathbb{C}$-bilinear and neither symmetric nor alternating: its symmetric part is $V_{\mathrm{SPA}}=Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ and its alternating part is $V_{\mathrm{APA}}=\vec Q_1\times\vec Q_2$, so $V_{\mathrm{GPA}}=V_{\mathrm{SPA}}+V_{\mathrm{APA}}$. Its diagonal is $2Q_t\vec Q$, which vanishes exactly on the centre and on the vector subspace; it is the vector part of the square computed in <em>The Square of an Element</em>. Its image is all of $\mathrm{Vect}(\mathbb{B})$, since at $\tilde Q_1=\vec e_t$ and $\tilde Q_2=\vec w$ it is $\vec w$. On pure vectors it is the cross product $\vec Q_1\times\vec Q_2$. Its scalar part is the plain form $P$. When one argument is central, only the mixed term of the other survives, and the vector part is a complex multiple of the other vector part.</p>
+<h3 id="the-general-quaternionic-bilinear-product-gqa">The General Quaternionic Bilinear Product (GQA)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{GQA}}=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
+$$</p>
+<p>It is $\mathbb{C}$-bilinear and <strong>alternating</strong>, $V_{\mathrm{GQA}}(\tilde Q_2,\tilde Q_1)=-V_{\mathrm{GQA}}(\tilde Q_1,\tilde Q_2)$, and its diagonal is zero. It equals $V_{\mathrm{AQA}}$ because the symmetric part $\mathrm{SQA}$ is central. Its image is all of $\mathrm{Vect}(\mathbb{B})$. On pure vectors it is $-\vec Q_1\times\vec Q_2$. It is the reflection of the plain vector part in $Q_{1t}\vec Q_2$,</p>
+<p>$$
+V_{\mathrm{GQA}}=2Q_{1t}\vec Q_2-V_{\mathrm{GPA}},\qquad
+V_{\mathrm{GPA}}+V_{\mathrm{GQA}}=2Q_{1t}\vec Q_2,
+$$</p>
+<p>which is the vector form of the splitting identity of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>. Its scalar part is the quaternionic form $N$. The square of the product is central, $N(\tilde Q)e_t$, and the vanishing of the diagonal is that statement. It is the only general product whose vector part is alternating.</p>
+<h3 id="the-general-plain-sesquilinear-product-gps">The General Plain Sesquilinear Product (GPS)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{GPS}}=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
+$$</p>
+<p>It is sesquilinear over $(\mathbb{C},\bar{\cdot})$ and <strong>conjugate-alternating</strong>,</p>
+<p>$$
+V_{\mathrm{GPS}}(\tilde Q_1,\tilde Q_2)=-\overline{V_{\mathrm{GPS}}(\tilde Q_2,\tilde Q_1)}.
+$$</p>
+<p>Its diagonal is the vector part of the Hermitian square $\tilde Q\tilde Q^{*}$, hence a purely imaginary vector; it vanishes exactly when $\tilde Q\tilde Q^{*}$ is central, that is, when the Hermitian square has no vector part. It equals $V_{\mathrm{APS}}$ because $\mathrm{SPS}$ is central. Its image is all of $\mathrm{Vect}(\mathbb{B})$. On pure vectors it is $-\vec Q_1\times\overline{\vec Q_2}$. It is the plain vector part read on $(\tilde Q_1,\tilde Q_2^{*})$,</p>
+<p>$$
+V_{\mathrm{GPS}}(\tilde Q_1,\tilde Q_2)=V_{\mathrm{GPA}}(\tilde Q_1,\tilde Q_2^{*}),
+$$</p>
+<p>which is the vector form of the slot identity. Its scalar part is the Hermitian form $H$.</p>
+<h3 id="the-general-quaternionic-sesquilinear-product-gqs">The General Quaternionic Sesquilinear Product (GQS)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{GQS}}=-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}.
+$$</p>
+<p>It is sesquilinear and neither conjugate-symmetric nor conjugate-alternating. It splits into its conjugate-symmetric and conjugate-alternating halves,</p>
+<p>$$
+V_{\mathrm{GQS}}=V_{\mathrm{SQS}}+V_{\mathrm{AQS}},
+\qquad
+V_{\mathrm{SQS}}=-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1,
+\qquad
+V_{\mathrm{AQS}}=\vec Q_1\times\overline{\vec Q_2}.
+$$</p>
+<p>Its diagonal is $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q+\vec Q\times\overline{\vec Q}$; its real part is the real vector $-2(a\vec p+b\vec q)$ and its imaginary part is $-2i\,\vec p\times\vec q$ for $Q_t=a+ib$ and $\vec Q=\vec p+i\vec q$, so the two parts are orthogonal. Its image is all of $\mathrm{Vect}(\mathbb{B})$. On pure vectors it is $\vec Q_1\times\overline{\vec Q_2}$. It is the quaternionic vector part read on $(\tilde Q_1,\tilde Q_2^{*})$,</p>
+<p>$$
+V_{\mathrm{GQS}}(\tilde Q_1,\tilde Q_2)=V_{\mathrm{GQA}}(\tilde Q_1,\tilde Q_2^{*}),
+$$</p>
+<p>and it satisfies $V_{\mathrm{GPS}}+V_{\mathrm{GQS}}=-2Q_{1t}\overline{\vec Q_2}$. Its scalar part is the Krein form $K$. It is the only general product whose vector part has both a conjugate-symmetric and a conjugate-alternating piece.</p>
+<h2 id="the-four-symmetric-vector-parts">The Four Symmetric Vector Parts</h2>
+<h3 id="the-symmetric-plain-bilinear-product-spa">The Symmetric Plain Bilinear Product (SPA)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{SPA}}=Q_{1t}\vec Q_2+Q_{2t}\vec Q_1.
+$$</p>
+<p>It is symmetric, $V_{\mathrm{SPA}}(\tilde Q_1,\tilde Q_2)=V_{\mathrm{SPA}}(\tilde Q_2,\tilde Q_1)$, and it is the symmetrisation of the plain vector part,</p>
+<p>$$
+V_{\mathrm{SPA}}=\tfrac12\bigl(V_{\mathrm{GPA}}(\tilde Q_1,\tilde Q_2)+V_{\mathrm{GPA}}(\tilde Q_2,\tilde Q_1)\bigr).
+$$</p>
+<p>Its diagonal is $2Q_t\vec Q$, the same as that of $\mathrm{GPA}$; it vanishes on the centre and on the vector subspace. Its image is all of $\mathrm{Vect}(\mathbb{B})$. On pure vectors it vanishes identically. Its scalar part is the plain form $P$. The zero set is $Q_{1t}\vec Q_2=-Q_{2t}\vec Q_1$; off the centre and the vector subspace it forces the two vector parts to be proportional.</p>
+<h3 id="the-symmetric-quaternionic-bilinear-product-sqa">The Symmetric Quaternionic Bilinear Product (SQA)</h3>
+<p>The vector part is zero:</p>
+<p>$$
+V_{\mathrm{SQA}}=0.
+$$</p>
+<p>The product is central-valued, $\mathrm{SQA}(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$, the quaternion form read as a product. The vector part has zero diagonal, zero image and zero values on pure vectors. It is one of the two products of the twelve whose vector part vanishes identically.</p>
+<h3 id="the-symmetric-plain-sesquilinear-product-sps">The Symmetric Plain Sesquilinear Product (SPS)</h3>
+<p>The vector part is zero:</p>
+<p>$$
+V_{\mathrm{SPS}}=0.
+$$</p>
+<p>The product is central-valued, $\mathrm{SPS}(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$, the Hermitian form read as a product. The vector part has zero diagonal, zero image and zero values on pure vectors. It is the second of the two products whose vector part vanishes identically.</p>
+<h3 id="the-symmetric-quaternionic-sesquilinear-product-sqs">The Symmetric Quaternionic Sesquilinear Product (SQS)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{SQS}}=-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1.
+$$</p>
+<p>It is conjugate-symmetric,</p>
+<p>$$
+V_{\mathrm{SQS}}(\tilde Q_1,\tilde Q_2)=\overline{V_{\mathrm{SQS}}(\tilde Q_2,\tilde Q_1)},
+$$</p>
+<p>and it is the conjugate-symmetric half of the general quaternionic sesquilinear vector part,</p>
+<p>$$
+V_{\mathrm{SQS}}=\tfrac12\bigl(V_{\mathrm{GQS}}(\tilde Q_1,\tilde Q_2)+\overline{V_{\mathrm{GQS}}(\tilde Q_2,\tilde Q_1)}\bigr).
+$$</p>
+<p>Its diagonal is $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$, a real vector. It vanishes exactly when $Q_t=0$ or $\vec Q=iQ_t\vec r$ with $\vec r$ a real vector. Its image is all of $\mathrm{Vect}(\mathbb{B})$, and its diagonal image is the real vector subspace $\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$. On pure vectors it vanishes. Its scalar part is the Krein form $K$; the values of the product itself lie in no remarkable subspace of <em>The Six Subspaces</em>.</p>
+<h2 id="the-four-antisymmetric-vector-parts">The Four Antisymmetric Vector Parts</h2>
+<h3 id="the-antisymmetric-plain-bilinear-product-apa">The Antisymmetric Plain Bilinear Product (APA)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{APA}}=\vec Q_1\times\vec Q_2.
+$$</p>
+<p>It is alternating and satisfies the Jacobi identity; it is the Lie bracket of the vector subspace, which is isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, and the article that develops it is <em>The Lie Algebra of the Antisymmetric Plain Algebra</em>. Its diagonal is zero, its image is all of $\mathrm{Vect}(\mathbb{B})$, and on pure vectors it is the cross product. Its scalar part is zero. Its quadratic invariant is the Lagrange identity</p>
+<p>$$
+\bigl(\vec Q_1\times\vec Q_2,\vec Q_1\times\vec Q_2\bigr)
+=\bigl(\vec Q_1,\vec Q_1\bigr)\bigl(\vec Q_2,\vec Q_2\bigr)-\bigl(\vec Q_1,\vec Q_2\bigr)^2,
+$$</p>
+<p>and it vanishes exactly when the two vector parts are linearly dependent.</p>
+<h3 id="the-antisymmetric-quaternionic-bilinear-product-aqa">The Antisymmetric Quaternionic Bilinear Product (AQA)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{AQA}}=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
+$$</p>
+<p>It is alternating, and it equals $V_{\mathrm{GQA}}$ because the symmetric part $\mathrm{SQA}$ is central. Its diagonal is zero, its image is all of $\mathrm{Vect}(\mathbb{B})$, and on pure vectors it is $-\vec Q_1\times\vec Q_2$. Its scalar part is zero. It fails the Jacobi identity at $(\vec e_t,\vec e_x,\vec e_y)$ with cyclic sum $-\vec e_z$, as <em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</em> records. It is the antisymmetric part of the quaternionic bilinear product.</p>
+<h3 id="the-antisymmetric-plain-sesquilinear-product-aps">The Antisymmetric Plain Sesquilinear Product (APS)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{APS}}=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}.
+$$</p>
+<p>It is conjugate-alternating, and it equals $V_{\mathrm{GPS}}$ because the symmetric part $\mathrm{SPS}$ is central. Its diagonal is the vector part of $\tilde Q\tilde Q^{*}$, a purely imaginary vector; its image is all of $\mathrm{Vect}(\mathbb{B})$; on pure vectors it is $-\vec Q_1\times\overline{\vec Q_2}$. Its scalar part is zero. It fails the Jacobi identity at $(\vec e_t,\vec e_x,\vec e_y)$ with cyclic sum $\vec e_z$ and at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, as <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em> records. It is the antisymmetric part of the general plain sesquilinear product.</p>
+<h3 id="the-antisymmetric-quaternionic-sesquilinear-product-aqs">The Antisymmetric Quaternionic Sesquilinear Product (AQS)</h3>
+<p>The vector part is</p>
+<p>$$
+V_{\mathrm{AQS}}=\vec Q_1\times\overline{\vec Q_2}.
+$$</p>
+<p>It is conjugate-alternating. Its diagonal is</p>
+<p>$$
+\vec Q\times\overline{\vec Q}=-2i\,\vec p\times\vec q,
+\qquad \vec Q=\vec p+i\vec q,
+$$</p>
+<p>a purely imaginary vector, and it vanishes exactly when $\vec Q$ is a complex multiple of a real vector. Its image is all of $\mathrm{Vect}(\mathbb{B})$, and on pure vectors it is $\vec Q_1\times\overline{\vec Q_2}$. Its scalar part is zero. It fails the Jacobi identity at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, as <em>The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</em> records. On the real subspace it equals $V_{\mathrm{APA}}$. It is the antisymmetric part of the general quaternionic sesquilinear product.</p>
+<h2 id="the-diagonal-and-the-square">The Diagonal and the Square</h2>
+<p><strong>Definition.</strong> The <strong>diagonal</strong> of a vector part is</p>
+<p>$$
+D_f(\tilde Q)=V_f(\tilde Q,\tilde Q)=\mathrm{Vec}\bigl(f(\tilde Q,\tilde Q)\bigr).
+$$</p>
+<p>It is the vector part of the square of the element. The table groups the twelve diagonals by their value.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>products</th>
+<th>diagonal</th>
+<th>image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$, $\mathrm{SPA}$</td>
+<td>$2Q_t\vec Q$</td>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{APA}$, $\mathrm{AQA}$</td>
+<td>$0$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}$, $\mathrm{APS}$</td>
+<td>$-Q_t\overline{\vec Q}+\overline{Q_t}\vec Q-\vec Q\times\overline{\vec Q}$</td>
+<td>$i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>$-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q+\vec Q\times\overline{\vec Q}$</td>
+<td>$\{r+is:\ r,s\in\mathrm{Vect}_{\mathbb{R}}(\mathbb{B}),\ r\cdot s=0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>$-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$</td>
+<td>$\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>$\vec Q\times\overline{\vec Q}$</td>
+<td>$i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition (homogeneity).</strong> The diagonal of a $\mathbb{C}$-bilinear product is homogeneous of degree two over $\mathbb{C}$, $D_f(\lambda\tilde Q)=\lambda^2D_f(\tilde Q)$, and the diagonal of a sesquilinear product is homogeneous of degree two in the real sense, $D_f(\lambda\tilde Q)=\lvert\lambda\rvert^2D_f(\tilde Q)$.</p>
+<p><em>Proof.</em> For a bilinear product, $f(\lambda\tilde Q,\lambda\tilde Q)=\lambda^2f(\tilde Q,\tilde Q)$; for a sesquilinear product, $f(\lambda\tilde Q,\lambda\tilde Q)=\lambda\overline{\lambda}f(\tilde Q,\tilde Q)=\lvert\lambda\rvert^2f(\tilde Q,\tilde Q)$. The vector part carries the scalar.</p>
+<p><strong>Proposition (the GQS diagonal and orthogonality).</strong> Write $Q_t=a+ib$ and $\vec Q=\vec p+i\vec q$ with $a,b\in\mathbb{R}$ and $\vec p,\vec q\in\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$. Then</p>
+<p>$$
+D_{\mathrm{GQS}}(\tilde Q)=-2(a\vec p+b\vec q)-2i\,\vec p\times\vec q,
+$$</p>
+<p>and its real and imaginary parts are orthogonal. Conversely, every pair of orthogonal real vectors is the real and imaginary parts of a value of $D_{\mathrm{GQS}}$.</p>
+<p><em>Proof.</em> The mixed terms give $-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q=-2(a\vec p+b\vec q)$, which is real, and the cross term gives $\vec Q\times\overline{\vec Q}=-2i\,\vec p\times\vec q$, which is purely imaginary. The real part lies in the plane spanned by $\vec p,\vec q$, while the imaginary part is perpendicular to that plane, so the two are orthogonal. For the converse, let $r,s$ be orthogonal real vectors; take $\vec p=r/\lvert r\rvert$, $\vec q=-(\lvert s\rvert/2)(\hat s\times\hat p)$, $a=-\lvert r\rvert/2$ and $b=0$, and the display returns $r+is$; the degenerate cases follow by continuity and by the zero vector.</p>
+<p><strong>The zero sets of the diagonals.</strong> The diagonal of $\mathrm{GPA}$ or $\mathrm{SPA}$ vanishes exactly on the centre and on the vector subspace, $Q_t=0$ or $\vec Q=0$. The diagonals of $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{APA}$ and $\mathrm{AQA}$ vanish identically. The diagonal of $\mathrm{SQS}$ vanishes exactly when $Q_t=0$ or $\vec Q=iQ_t\vec r$ with $\vec r$ real. The diagonal of $\mathrm{AQS}$ vanishes exactly when $\vec Q$ is a complex multiple of a real vector. The diagonal of $\mathrm{GPS}$ or $\mathrm{APS}$ vanishes exactly when $\tilde Q\tilde Q^{*}$ is central, that is, when the Hermitian square has no vector part. The diagonal of $\mathrm{GQS}$ vanishes exactly when the two equations $a\vec p+b\vec q=0$ and $\vec p\times\vec q=0$ hold.</p>
+<p><strong>Remark (the diagonal is not a form).</strong> The diagonal is a quadratic map, not a bilinear or sesquilinear form. This is the same distinction as for the vector part itself, read at the two equal arguments. The diagonal of $\mathrm{GPS}$ is the object studied in <em>The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</em>, and the diagonal of $\mathrm{GQS}$ is the vector part of the square studied in <em>The Square of the General Quaternionic Sesquilinear Product and the Two Halves</em>.</p>
+<h2 id="the-behaviour-on-the-subspaces">The Behaviour on the Subspaces</h2>
+<p><strong>The centre.</strong> If both arguments are central, all twelve vector parts vanish. More generally, if one argument is central, every vector part collapses to a scalar multiple of the other vector part, and the multiplier is $Q_{1t}$ or $\overline{Q_{1t}}$ for the first argument and $Q_{2t}$ or $\overline{Q_{2t}}$ for the second, with the sign of the slot:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>central argument</th>
+<th>the surviving vector parts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q_1\in\mathbb{C}_{\mathbb{B}}$</td>
+<td>$V_{\mathrm{GPA}}=V_{\mathrm{GQA}}=V_{\mathrm{SPA}}=V_{\mathrm{AQA}}=Q_{1t}\vec Q_2$; $V_{\mathrm{GPS}}=V_{\mathrm{GQS}}=V_{\mathrm{SQS}}=V_{\mathrm{APS}}=-Q_{1t}\overline{\vec Q_2}$; the other four vanish</td>
+</tr>
+<tr>
+<td>$\tilde Q_2\in\mathbb{C}_{\mathbb{B}}$</td>
+<td>$V_{\mathrm{GPA}}=V_{\mathrm{SPA}}=Q_{2t}\vec Q_1$; $V_{\mathrm{GQA}}=V_{\mathrm{AQA}}=-Q_{2t}\vec Q_1$; $V_{\mathrm{GPS}}=V_{\mathrm{APS}}=\overline{Q_{2t}}\vec Q_1$; $V_{\mathrm{GQS}}=V_{\mathrm{SQS}}=-\overline{Q_{2t}}\vec Q_1$; the other four vanish</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The vector subspace.</strong> On pure vectors, $\tilde Q_1=\vec Q_1$ and $\tilde Q_2=\vec Q_2$, the mixed terms drop and only the cross term survives. The twelve vector parts fall to five:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>products</th>
+<th>vector part on $\mathrm{Vect}(\mathbb{B})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$, $\mathrm{APA}$</td>
+<td>$\vec Q_1\times\vec Q_2$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$, $\mathrm{AQA}$</td>
+<td>$-\vec Q_1\times\vec Q_2$</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}$, $\mathrm{APS}$</td>
+<td>$-\vec Q_1\times\overline{\vec Q_2}$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$, $\mathrm{AQS}$</td>
+<td>$\vec Q_1\times\overline{\vec Q_2}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each general vector part coincides with its antisymmetric part on the vector subspace, and each symmetric part vanishes there. On the vector subspace the vector part is therefore the cross product alone.</p>
+<p><strong>The real subspace.</strong> On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the coefficientwise conjugation is the identity and the twelve vector parts fall to eight. The collisions are</p>
+<p>$$
+V_{\mathrm{GQA}}=V_{\mathrm{AQA}},\qquad
+V_{\mathrm{GPS}}=V_{\mathrm{APS}},\qquad
+V_{\mathrm{APA}}=V_{\mathrm{AQS}},\qquad
+V_{\mathrm{SQA}}=V_{\mathrm{SPS}}=0,
+$$</p>
+<p>and the eight representatives are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>vector part on $\mathbb{H}_{\mathbb{B}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$</td>
+<td>$Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>$Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}$</td>
+<td>$-Q_{1t}\vec Q_2+Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>$-Q_{1t}\vec Q_2-Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>$Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>$-Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>$\vec Q_1\times\vec Q_2$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Hermitian subspace.</strong> On $\mathbb{M}_+$, write $\tilde Q_1=a+i\vec p$ and $\tilde Q_2=b+i\vec q$ with $a,b\in\mathbb{R}$ and $\vec p,\vec q\in\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$. The twelve vector parts fall to seven:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>vector part on $\mathbb{M}_+$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}=\mathrm{GPS}=\mathrm{APS}$</td>
+<td>$-\vec p\times\vec q+i(a\vec q+b\vec p)$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}=\mathrm{GQS}=\mathrm{AQA}$</td>
+<td>$\vec p\times\vec q+i(a\vec q-b\vec p)$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>$i(a\vec q+b\vec p)$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>$i(a\vec q-b\vec p)$</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>$-\vec p\times\vec q$</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>$\vec p\times\vec q$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}=\mathrm{SPS}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The identities behind the table are $V_{\mathrm{GPS}}=V_{\mathrm{GPA}}$ and $V_{\mathrm{GQS}}=V_{\mathrm{GQA}}$ on $\mathbb{M}_+$, because $\tilde Q^{*}=\tilde Q$ there, together with $V_{\mathrm{SPS}}=V_{\mathrm{GPS}}-V_{\mathrm{APS}}=0$. On the anti-Hermitian subspace $\mathbb{M}_-$ the same argument with $\tilde Q^{*}=-\tilde Q$ gives $V_{\mathrm{GPS}}=-V_{\mathrm{GPA}}$ and $V_{\mathrm{GQS}}=-V_{\mathrm{GQA}}$.</p>
+<h2 id="the-symmetries-of-the-vector-parts">The Symmetries of the Vector Parts</h2>
+<p>The exchange of the two arguments classifies the vector parts by the same four symmetries that classify the parts of the products. The following table gives the class, the identity and the products.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>identity</th>
+<th>products</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>symmetric</td>
+<td>$V(\tilde Q_1,\tilde Q_2)=V(\tilde Q_2,\tilde Q_1)$</td>
+<td>$\mathrm{SPA}$</td>
+</tr>
+<tr>
+<td>alternating</td>
+<td>$V(\tilde Q_1,\tilde Q_2)=-V(\tilde Q_2,\tilde Q_1)$</td>
+<td>$\mathrm{GQA}$, $\mathrm{APA}$, $\mathrm{AQA}$</td>
+</tr>
+<tr>
+<td>conjugate-symmetric</td>
+<td>$V(\tilde Q_1,\tilde Q_2)=\overline{V(\tilde Q_2,\tilde Q_1)}$</td>
+<td>$\mathrm{SQS}$</td>
+</tr>
+<tr>
+<td>conjugate-alternating</td>
+<td>$V(\tilde Q_1,\tilde Q_2)=-\overline{V(\tilde Q_2,\tilde Q_1)}$</td>
+<td>$\mathrm{GPS}$, $\mathrm{APS}$, $\mathrm{AQS}$</td>
+</tr>
+<tr>
+<td>neither</td>
+<td>—</td>
+<td>$\mathrm{GPA}$, $\mathrm{GQS}$</td>
+</tr>
+<tr>
+<td>zero</td>
+<td>$V=0$</td>
+<td>$\mathrm{SQA}$, $\mathrm{SPS}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the class of the vector part).</strong> The vector part of a product has the symmetry of the part of the product: it is symmetric for the symmetric part of a bilinear product, alternating for the antisymmetric part of a bilinear product, conjugate-symmetric for the symmetric part of a sesquilinear product, and conjugate-alternating for the antisymmetric part of a sesquilinear product. The vector parts of the four general products are not all of one class: the plain bilinear is neither, the quaternionic bilinear is alternating, the plain sesquilinear is conjugate-alternating, and the quaternionic sesquilinear is neither.</p>
+<p><em>Proof.</em> The four definitions of the parts give the four identities term by term. For the bilinear pair, the exchange is the swap and the vector part of the swapped value is the swapped vector part; for the sesquilinear pair, the exchange is the swap followed by the coefficientwise conjugation, and the vector part of the conjugated value is the conjugated vector part because the conjugation is real-linear on the vector subspace. The general rows follow from the decompositions $V_{\mathrm{GPA}}=V_{\mathrm{SPA}}+V_{\mathrm{APA}}$ and $V_{\mathrm{GQS}}=V_{\mathrm{SQS}}+V_{\mathrm{AQS}}$.</p>
+<p><strong>Remark (the vector part can be more symmetric than the product).</strong> The general quaternionic bilinear product is not alternating — its scalar part is symmetric — but its vector part is alternating. The general plain sesquilinear product is not conjugate-alternating as a product — its scalar part is conjugate-symmetric — but its vector part is. The symmetry of the vector part is the symmetry of the vector half, not of the whole value; the scalar half carries the other symmetry, and the two halves together are neither.</p>
+<h2 id="the-component-forms">The Component Forms</h2>
+<p><strong>Definition (the component forms).</strong> For $f$ of the twelve and $w\in\mathrm{Vect}(\mathbb{B})$, the <strong>component form</strong> is</p>
+<p>$$
+\varphi_{f,w}(\tilde Q_1,\tilde Q_2)=\bigl(w,V_f(\tilde Q_1,\tilde Q_2)\bigr).
+$$</p>
+<p>For $f$ bilinear it is a complex bilinear form, with Gram matrix $G_{ij}=\varphi_{f,w}(e_i,e_j)$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\varphi(\sum c_ie_i,\sum d_je_j)=\sum c_iG_{ij}d_j$. For $f$ sesquilinear it is sesquilinear over $(\mathbb{C},\bar{\cdot})$, with the same entries and $\varphi(\sum c_ie_i,\sum d_je_j)=\sum c_iG_{ij}\overline{d_j}$.</p>
+<p><strong>Theorem (the component forms of the twelve).</strong> The three coordinate forms of each vector part have the following classes, Gram matrices and ranks.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>products</th>
+<th>class of $\varphi$</th>
+<th>Gram matrix</th>
+<th>rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$</td>
+<td>bilinear</td>
+<td>neither; symmetric part the $\mathrm{SPA}$ form, alternating part the $\mathrm{APA}$ form</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>bilinear</td>
+<td>alternating</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>bilinear</td>
+<td>symmetric</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>zero</td>
+<td>zero</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>bilinear</td>
+<td>alternating</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}$, $\mathrm{APS}$</td>
+<td>sesquilinear</td>
+<td>conjugate-alternating; skew-Hermitian</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPS}$</td>
+<td>zero</td>
+<td>zero</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>sesquilinear</td>
+<td>conjugate-symmetric; Hermitian</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>sesquilinear</td>
+<td>conjugate-alternating; skew-Hermitian</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>sesquilinear</td>
+<td>sum of a Hermitian rank $2$ and a skew-Hermitian rank $2$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The ranks and the symmetry types are read from the matrices. For $\mathrm{GPA}$ and $w=\vec e_x$ the matrix is</p>
+<p>$$
+G_x=
+\begin{pmatrix}
+0&1&0&0\\
+1&0&0&0\\
+0&0&0&1\\
+0&0&-1&0
+\end{pmatrix},
+$$</p>
+<p>of rank $4$; its symmetric part has rank $2$ and its alternating part rank $2$, and they are the matrices of $V_{\mathrm{SPA}}$ and $V_{\mathrm{APA}}$. The matrices for $w=\vec e_y$ and $w=\vec e_z$ are the cyclic permutations of $G_x$. For $\mathrm{GQA}$ and $w=\vec e_x$ the matrix is</p>
+<p>$$
+N_x=
+\begin{pmatrix}
+0&1&0&0\\
+-1&0&0&0\\
+0&0&0&-1\\
+0&0&1&0
+\end{pmatrix},
+$$</p>
+<p>skew of rank $4$; the other two are its cyclic permutations. The zero rows are immediate. For the sesquilinear rows, the Gram matrix of a conjugate-symmetric form is Hermitian and that of a conjugate-alternating form is skew-Hermitian, by the two definitions read in the entries; the ranks are computed from the same matrices. The row of $\mathrm{GQS}$ is the sum of the rows of $\mathrm{SQS}$ and $\mathrm{AQS}$; its Hermitian part is the $\mathrm{SQS}$ matrix, its skew-Hermitian part is the $\mathrm{AQS}$ matrix, and its rank is $4$.</p>
+<p><strong>Remark (the diagonal of a component form).</strong> At the two equal arguments,</p>
+<p>$$
+\varphi_{f,w}(\tilde Q,\tilde Q)=\bigl(w,D_f(\tilde Q)\bigr).
+$$</p>
+<p>For a conjugate-symmetric component form this is real, and for a conjugate-alternating one it is purely imaginary; this is the scalar-form reading of the real and imaginary characters of the diagonals of $\mathrm{SQS}$ and of $\mathrm{AQS}$.</p>
+<h2 id="the-relations-among-the-twelve">The Relations among the Twelve</h2>
+<p>The twelve vector parts are linked by the following identities, in which $\tau$ is the swap of the two arguments and the bar is the coefficientwise conjugation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>identity</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_{\mathrm{GQA}}=V_{\mathrm{AQA}}$, $V_{\mathrm{GPS}}=V_{\mathrm{APS}}$, $V_{\mathrm{SQA}}=V_{\mathrm{SPS}}=0$</td>
+<td>the three coincidences</td>
+</tr>
+<tr>
+<td>$V_{\mathrm{GPA}}=V_{\mathrm{SPA}}+V_{\mathrm{APA}}$, $V_{\mathrm{GQS}}=V_{\mathrm{SQS}}+V_{\mathrm{AQS}}$</td>
+<td>the two reconstructions</td>
+</tr>
+<tr>
+<td>$V_{\mathrm{GPA}}+V_{\mathrm{GQA}}=2Q_{1t}\vec Q_2$, $V_{\mathrm{GPS}}+V_{\mathrm{GQS}}=-2Q_{1t}\overline{\vec Q_2}$</td>
+<td>the two sums</td>
+</tr>
+<tr>
+<td>$V_{\mathrm{GQA}}=2Q_{1t}\vec Q_2-V_{\mathrm{GPA}}$, $V_{\mathrm{GQS}}=-2Q_{1t}\overline{\vec Q_2}-V_{\mathrm{GPS}}$</td>
+<td>the two reflections</td>
+</tr>
+<tr>
+<td>$V_{\mathrm{GPS}}(\tilde Q_1,\tilde Q_2)=V_{\mathrm{GPA}}(\tilde Q_1,\tilde Q_2^{*})$, $V_{\mathrm{GQS}}(\tilde Q_1,\tilde Q_2)=V_{\mathrm{GQA}}(\tilde Q_1,\tilde Q_2^{*})$</td>
+<td>the two slot identities</td>
+</tr>
+<tr>
+<td>$V_{\mathrm{SPA}}=\tfrac12(V_{\mathrm{GPA}}+V_{\mathrm{GPA}}\circ\tau)$, $V_{\mathrm{APA}}=\tfrac12(V_{\mathrm{GPA}}-V_{\mathrm{GPA}}\circ\tau)$</td>
+<td>the two bilinear halves</td>
+</tr>
+<tr>
+<td>$V_{\mathrm{SQS}}=\tfrac12(V_{\mathrm{GQS}}+\overline{V_{\mathrm{GQS}}\circ\tau})$, $V_{\mathrm{AQS}}=\tfrac12(V_{\mathrm{GQS}}-\overline{V_{\mathrm{GQS}}\circ\tau})$</td>
+<td>the two sesquilinear halves</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first row collects the coincidences, the second and third the reconstructions and the two sums, and the rest the reflections, the slot identities and the two half formulas. The scalar parts obey the companion identities of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, and the two sets together reconstruct the twelve products.</p>
+<h2 id="summary">Summary</h2>
+<p>The vector parts of the twelve products are vector-valued maps into the complex vector subspace, not scalar forms. The four general products obey one two-bit rule: the first slot fixes the sign of the second mixed term, the second slot fixes the sign of the first mixed term, and the cross term carries the product of the two signs. The twelve vector parts take nine distinct values on the complex space: the two central symmetric products have zero vector part, and the quaternionic bilinear and the plain sesquilinear products share their vector part with their antisymmetric parts. The nine are separated by three pairs of basis elements, and the vector part alone therefore does not determine the product; the pair of the scalar part and the vector part does.</p>
+<p>Each product was read with its own properties: its diagonal, its image, its value on pure vectors, its symmetry and its role in the algebra. The diagonals give the vector parts of the squares: $2Q_t\vec Q$ for the plain bilinear pair; zero for the quaternionic bilinear product, the two central symmetric products and the two bilinear antisymmetric products; the Hermitian square $\mathrm{Vec}(\tilde Q\tilde Q^{*})$ for the plain sesquilinear pair; a real vector for $\mathrm{SQS}$; a purely imaginary vector for $\mathrm{AQS}$; and a real-plus-imaginary pair with orthogonal parts for $\mathrm{GQS}$. On the centre all vector parts vanish; on the vector subspace only the cross term survives and the twelve fall to five; on the real subspace they fall to eight; on the Hermitian subspace they fall to seven. The component forms are three scalar forms to a vector part: rank $4$ with a rank-$2$ symmetric and a rank-$2$ alternating part for the plain bilinear product, alternating rank $4$ for the quaternionic bilinear product, Hermitian or skew-Hermitian of rank $2$ or $4$ in the sesquilinear families.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Vec}(\tilde Q)=\vec Q$</td>
+<td>the vector part of an element</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}(\mathbb{B})$</td>
+<td>the complex vector subspace, the image of the vector parts</td>
+</tr>
+<tr>
+<td>$\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$</td>
+<td>the real vector subspace, the real vectors</td>
+</tr>
+<tr>
+<td>$V_f(\tilde Q_1,\tilde Q_2)=\mathrm{Vec}(f(\tilde Q_1,\tilde Q_2))$</td>
+<td>the vector part of the product $f$</td>
+</tr>
+<tr>
+<td>$D_f(\tilde Q)=V_f(\tilde Q,\tilde Q)$</td>
+<td>the diagonal, the vector part of the square</td>
+</tr>
+<tr>
+<td>$\varphi_{f,w}(\tilde Q_1,\tilde Q_2)=(w,V_f(\tilde Q_1,\tilde Q_2))$</td>
+<td>the component form in the direction $w$</td>
+</tr>
+<tr>
+<td>$\varepsilon$, $\alpha$, $\beta$</td>
+<td>the second-slot bit, the second-slot sign and the first-slot sign of the general rule</td>
+</tr>
+<tr>
+<td>$\vec Q_2^{\varepsilon}$, $Q_{2t}^{\varepsilon}$</td>
+<td>the second vector part and scalar read with or without the coefficientwise conjugation</td>
+</tr>
+<tr>
+<td>$\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$</td>
+<td>the four general products</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$</td>
+<td>the four symmetric parts</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$</td>
+<td>the four antisymmetric parts</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$</td>
+<td>the centre, the real quaternion subspace and the Hermitian and anti-Hermitian subspaces</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html">Symmetric and Antisymmetric Decomposition of the Four General Products</a>, for the twelve products, their codes and their scalar and vector parts.</li>
+<li><a href="the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>, for the four general products and the splitting identities used here.</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the scalar parts and the four degenerate sets.</li>
+<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a> and <a href="the-six-subspaces.html">The Six Subspaces</a>, for the basis, the conjugations and the remarkable subspaces.</li>
+<li><a href="introduction-to-the-operators-of-the-biquaternion-algebra.html">Introduction to the Operators of the Biquaternion Algebra</a>, for the two switches behind the two-bit rule.</li>
+<li><a href="the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.html">The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra</a>, <a href="the-square-of-an-element.html">The Square of an Element</a> and <a href="the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html">The Square of the General Quaternionic Sesquilinear Product and the Two Halves</a>, for the diagonals.</li>
+<li><a href="the-lie-algebra-of-the-antisymmetric-plain-algebra.html">The Lie Algebra of the Antisymmetric Plain Algebra</a>, <a href="the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.html">The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra</a> and <a href="the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html">The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra</a>, for the three antisymmetric vector parts and their failures.</li>
+<li><a href="the-algebraic-structures-over-the-biquaternion-c-space.html">The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</a>, for the names and the laws of the twelve.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
