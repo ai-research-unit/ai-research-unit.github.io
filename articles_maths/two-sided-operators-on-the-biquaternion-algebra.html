@@ -75,145 +75,240 @@
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),
 $$</p>
 <p>whose Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\mathrm{diag}(1,-1,-1,-1)$, and let $F^{\approx}$ be the associate, or transpose, of a $\mathbb{C}$-linear map for this form (<em>The Four Adjoints of the Biquaternion Algebra in Examples</em>).</p>
-<p>For $\tilde Q_5,\tilde Q_3\in\mathbb{B}$ define the <strong>two-sided operator</strong></p>
+<p>For $\tilde Q_1,\tilde Q_2\in\mathbb{B}$ define the <strong>two-sided operator</strong></p>
 <p>$$
-L_{\tilde Q_5}R_{\tilde Q_3}:\mathbb{B}\longrightarrow\mathbb{B},\qquad
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)(\tilde Q)=\tilde Q_5\,\tilde Q\,\tilde Q_3 ,
+T_{\tilde Q_1,\tilde Q_2}:\mathbb{B}\longrightarrow\mathbb{B},\qquad
+T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\,\tilde Q_3\,\tilde Q_2 ,
 $$</p>
-<p>the product of a left and a right multiplication, with the two parameters independent. These operators are the subject of the article. They contain the one-sided ones as the two boundary cases $\tilde Q_3=e_t$ and $\tilde Q_5=e_t$, they contain every inner automorphism, and they are the elements of the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ read on the algebra itself.</p>
-<p>The article is the parallel of <em>One-Sided Operators on the Biquaternion Algebra</em>, section for section, and the parallel is what isolates the cost of the second parameter. Three things change. The composition law <strong>reverses the second slot</strong>, $\tilde Q_3$ and $\tilde D$ exchanging their places, because the right multiplications form an anti-representation. The adjoint <strong>swaps the two parameters</strong>, $(L_{\tilde Q_5}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5}$, because association is the transpose for the plain form, whereas the Hermitian dagger and the quaternionic adjoint keep the parameter they act on. And the criteria become criteria on the <strong>product</strong> of the parameters: self-adjointness is $\tilde Q_3=\lambda\tilde Q_5$, preservation of the form is $\tilde Q_3\tilde Q_5=\pm e_t$, multiplicativity is $\tilde Q_5\tilde Q_3=e_t$. No norm enters any of the three, which is the second sharp difference from the quaternionic pair, where the corresponding criteria turn on $\langle\cdot\rangle_{\natural}$. It is for the same reason that the form selects no shell of parameters, and the isometry group of the family is computed in §<em>The Isometry Group and the Absence of a Pin Group</em>: every unit acts, with the second parameter forced to $\pm\tilde Q_5^{-1}$, and the form's own quadratic form is not multiplicative, so the level set that would serve as a pin group is not a group.</p>
+<p>the product of a left and a right multiplication, with the two parameters independent. The subscripts are read by position and not by number: <strong>the first subscript is the left multiplier, the second the right multiplier, and the argument is the third slot.</strong> The notation is the one of the ordinary two-sided multiplication of <em>The Sesquilinear Sandwich on the Biquaternion</em>, $T_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_3$, and it is the product of the corpus's one-sided operators,</p>
+<p>$$
+T_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}.
+$$</p>
+<p>These operators are the subject of the article. They contain the one-sided ones as the two boundary cases $\tilde Q_2=e_t$ and $\tilde Q_1=e_t$, they contain every inner automorphism, and they are the elements of the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ read on the algebra itself.</p>
+<p>The article is the parallel of <em>One-Sided Operators on the Biquaternion Algebra</em>, with one extra section, §<em>The Sandwich</em>, for the diagonal member that the sector articles study. The parallel is what isolates the cost of the second parameter. Three things change. The composition law <strong>reverses the second slot</strong>, $\tilde Q_2$ and $\tilde Q_4$ exchanging their places, because the right multiplications form an anti-representation. The adjoint <strong>swaps the two parameters</strong>, $(T_{\tilde Q_1,\tilde Q_2})^{\approx}=T_{\tilde Q_2,\tilde Q_1}$, because association is the transpose for the plain form, whereas the quaternionic adjoint keeps the side and the parameter. And the criteria become criteria on the <strong>pair</strong> and on its <strong>product</strong>: self-adjointness is $\tilde Q_2=\lambda\tilde Q_1$, preservation of the form is $\tilde Q_2\tilde Q_1=\pm e_t$, multiplicativity, for a nonzero operator, is $\tilde Q_1\tilde Q_2=e_t$. No norm enters any of the three, which is the second sharp difference from the quaternionic pair, where the corresponding criteria turn on $\langle\cdot\rangle_{\natural}$. It is for the same reason that the form selects no shell of parameters, and the isometry group of the family is computed in §<em>The Isometry Group and the Absence of a Pin Group</em>: every unit acts, with the second parameter forced to $\pm\tilde Q_1^{-1}$, and the form's own quadratic form is not multiplicative, so the level set that would serve as a pin group is not a group.</p>
+<p><strong>The bilinear sandwich is the diagonal of the family.</strong> The sector articles <em>The Sandwich of a N-Regular, Spectrally Regular Biquaternion</em> and its three companions study the member</p>
+<p>$$
+\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}},
+$$</p>
+<p>whose two parameters are tied by the Hermitian conjugation. §<em>The Bilinear Sandwich</em> defines it, separates it from the literal diagonal $T_{\tilde Q,\tilde Q}$ and from the inner automorphism $T_{\tilde Q,\tilde Q^{-1}}$, and records the dependence on the parameter: the family is bilinear in its pair of parameters, while the bilinear sandwich is quadratic in its single parameter, $\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q}$. The matrix readings are <em>The Sandwich in the $M_2(\mathbb{C})$ Model</em> and <em>The Sandwich in the $M_4(\mathbb{C})_L$ Model</em>.</p>
 <p>The algebra, the conjugations and the remarkable subspaces are <em>The Biquaternion Algebra</em>, <em>The Group of Involutions</em> and <em>The Six Subspaces</em>; the form and its pairings are <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the enveloping algebra and the two-sided operators as its elements are <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>; the one-sided factors are <em>One-Sided Operators on the Biquaternion Algebra</em>.</p>
 <h2 id="the-two-sided-family">The Two-Sided Family</h2>
-<p><strong>Definition.</strong> For $\tilde Q_5,\tilde Q_3\in\mathbb{B}$ the <strong>two-sided operator of the pair $(\tilde Q_5,\tilde Q_3)$</strong> is the $\mathbb{C}$-linear map</p>
+<p><strong>Definition.</strong> For $\tilde Q_1,\tilde Q_2\in\mathbb{B}$ the <strong>two-sided operator of the pair $(\tilde Q_1,\tilde Q_2)$</strong> is the $\mathbb{C}$-linear map</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)(\tilde Q)=\tilde Q_5\,\tilde Q\,\tilde Q_3 .
+T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\,\tilde Q_3\,\tilde Q_2 .
 $$</p>
+<p>The order of the subscripts is the order of the reading, left factor first, right factor second; no reversal is hidden in the definition. The reversal appears only in the composition law, where it belongs.</p>
 <p><strong>Proposition (the family contains the one-sided operators).</strong> With the unit in one slot,</p>
 <p>$$
-L_{\tilde Q_5}R_{e_t}=L_{\tilde Q_5},\qquad L_{e_t}R_{\tilde Q_3}=R_{\tilde Q_3}.
+T_{\tilde Q_1,e_t}=L_{\tilde Q_1},\qquad T_{e_t,\tilde Q_2}=R_{\tilde Q_2}.
 $$</p>
-<p>The family is therefore the two-parameter extension of the one-sided pair, and the criteria below specialise to the criteria of the one-sided article at $\tilde Q_3=e_t$.</p>
+<p>The family is therefore the two-parameter extension of the one-sided pair, and the criteria below specialise to the criteria of the one-sided article at $\tilde Q_2=e_t$.</p>
 <p><em>Proof.</em> The unit acts by the identity in each slot.</p>
-<p><strong>Proposition (bilinearity and the spanning set).</strong> The assignment $(\tilde Q_5,\tilde Q_3)\mapsto L_{\tilde Q_5}R_{\tilde Q_3}$ is bilinear and injective in each slot when the other parameter is fixed and a unit. The sixteen operators $e_\mu[\,]e_\nu$, $\mu,\nu\in\{t,x,y,z\}$, are linearly independent and therefore form a basis of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$:</p>
+<p><strong>Proposition (bilinearity and the spanning set).</strong> The assignment $(\tilde Q_1,\tilde Q_2)\mapsto T_{\tilde Q_1,\tilde Q_2}$ is bilinear and injective in each slot when the other parameter is fixed and a unit. The sixteen operators $e_\mu[\,]e_\nu$, $\mu,\nu\in\{t,x,y,z\}$, are linearly independent and therefore form a basis of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$:</p>
 <p>$$
-\dim_{\mathbb{C}}\mathrm{Span}\{\,L_{\tilde Q_5}R_{\tilde Q_3}\,\}=16 .
+\dim_{\mathbb{C}}\mathrm{Span}\{\,T_{\tilde Q_1,\tilde Q_2}\,\}=16 .
 $$</p>
-<p><em>Proof.</em> Bilinearity is the distributivity of the product. For the independence, the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ is isomorphic to $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ through $A\otimes B\mapsto L_AR_B$, and it has complex dimension $16$ (<em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>); the independence of the sixteen basis elements was verified by elimination on their matrices. Injectivity in the first slot at a unit $\tilde Q_3$ follows from $L_{\tilde Q_5}R_{\tilde Q_3}(e_t)=\tilde Q_5\tilde Q_3$ and the invertibility of $\tilde Q_3$.</p>
-<p><strong>Remark (the image is the decomposable tensors).</strong> Under the isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ the two-sided operators are the images of the <strong>decomposable</strong> tensors, and a general endomorphism is a sum of them. That is the precise sense in which the two-sided family is the algebraic skeleton of the full operator algebra, and it is also why a sum of two-sided operators need not be two-sided: the decomposable tensors do not form a subspace.</p>
+<p><em>Proof.</em> Bilinearity is the distributivity of the product. For the independence, the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ is isomorphic to $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ through $A\otimes B\mapsto L_AR_B=T_{A,B}$, and it has complex dimension $16$ (<em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>); the independence of the sixteen basis elements was verified by elimination on their matrices. Injectivity in the first slot at a unit $\tilde Q_2$ follows from $T_{\tilde Q_1,\tilde Q_2}(e_t)=\tilde Q_1\tilde Q_2$ and the invertibility of $\tilde Q_2$; the second slot is the same argument.</p>
+<p><strong>Remark (the image is the decomposable tensors).</strong> Under the isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ the two-sided operators are the images of the <strong>decomposable</strong> tensors, and a general endomorphism is a sum of them. Projectively the image is the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of dimension six, so the cone of two-sided operators has complex dimension seven, and a general element of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is a sum of at most four of them. That is the precise sense in which the two-sided family is the algebraic skeleton of the full operator algebra, and it is also why a sum of two-sided operators need not be two-sided: the decomposable tensors do not form a subspace. The count is also the answer to the dimension puzzle: the <strong>parameters</strong> are eight complex numbers, the <strong>operators</strong> they generate by linear combination are sixteen-dimensional, because the map is bilinear and not linear.</p>
 <h2 id="the-composition-law">The Composition Law</h2>
-<p><strong>Theorem (composition).</strong> For all $\tilde Q_5,\tilde Q_3,\tilde Q_4,\tilde D\in\mathbb{B}$,</p>
+<p><strong>Theorem (composition).</strong> For all $\tilde Q_1,\tilde Q_2,\tilde Q_3,\tilde Q_4\in\mathbb{B}$,</p>
 <p>$$
-\boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)\circ\bigl(L_{\tilde Q_4}R_{\tilde D}\bigr)=L_{\tilde Q_5\tilde Q_4}\,R_{\tilde D\tilde Q_3} \;},
+\boxed{\; T_{\tilde Q_1,\tilde Q_2}\circ T_{\tilde Q_3,\tilde Q_4}
+=T_{\tilde Q_1\tilde Q_3,\ \tilde Q_4\tilde Q_2} \;},
 $$</p>
 <p>the parameters of the second slot reversing their order.</p>
-<p><em>Proof.</em> $\tilde Q_5\bigl(\tilde Q_4\tilde Q\tilde D\bigr)\tilde Q_3=\tilde Q_5\tilde Q_4\,\tilde Q\,\tilde D\tilde Q_3$ by associativity.</p>
-<p><strong>Corollary (the family is a monoid with reversed right factors).</strong> The composition law makes the set of two-sided operators a submonoid of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, isomorphic to the image of the monoid $\mathbb{B}\times\mathbb{B}^{\mathrm{opp}}$ under the bilinear map, with multiplication $(\tilde Q_5,\tilde Q_3)(\tilde Q_4,\tilde D)=(\tilde Q_5\tilde Q_4,\tilde D\tilde Q_3)$. The reversal in the second factor is the reason the family is not a direct product of two copies of the algebra.</p>
-<p><strong>Corollary (invertibility and the units).</strong> The operator $L_{\tilde Q_5}R_{\tilde Q_3}$ is invertible if and only if $\tilde Q_5$ and $\tilde Q_3$ are units, with inverse</p>
+<p><em>Proof.</em> $T_{\tilde Q_1,\tilde Q_2}\bigl(T_{\tilde Q_3,\tilde Q_4}(\tilde Q)\bigr)=\tilde Q_1\bigl(\tilde Q_3\tilde Q\tilde Q_4\bigr)\tilde Q_2=\tilde Q_1\tilde Q_3\,\tilde Q\,\tilde Q_4\tilde Q_2$ by associativity.</p>
+<p><strong>Corollary (the family is a monoid with reversed right factors).</strong> The composition law makes the set of two-sided operators a submonoid of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, isomorphic to the image of the monoid $\mathbb{B}\times\mathbb{B}^{\mathrm{opp}}$ under the bilinear map, with multiplication $(\tilde Q_1,\tilde Q_2)(\tilde Q_3,\tilde Q_4)=(\tilde Q_1\tilde Q_3,\tilde Q_4\tilde Q_2)$. The reversal in the second factor is the reason the family is not a direct product of two copies of the algebra.</p>
+<p><strong>Corollary (invertibility and the units).</strong> The operator $T_{\tilde Q_1,\tilde Q_2}$ is invertible if and only if $\tilde Q_1$ and $\tilde Q_2$ are units, with inverse</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{-1}=L_{\tilde Q_5^{-1}}R_{\tilde Q_3^{-1}} .
+\bigl(T_{\tilde Q_1,\tilde Q_2}\bigr)^{-1}=T_{\tilde Q_1^{-1},\tilde Q_2^{-1}} .
 $$</p>
-<p>The group of invertible two-sided operators is therefore the image of $\mathbb{B}^{\times}\times\mathbb{B}^{\times}$, and the kernel of the parametrisation is $\{(\lambda e_t,\lambda^{-1}e_t)\}$: the two-sided operator is the identity exactly for $\tilde Q_5\tilde Q_3=e_t$ with $\tilde Q_5$ central.</p>
-<p><em>Proof.</em> The inverse is verified by the composition law. For the converse, if the operator is invertible then it is injective, so $\tilde Q_5$ and $\tilde Q_3$ are units: a nonzero kernel of $\tilde Q_5$, say $\tilde Q_5\tilde Q_1=0$, gives $L_{\tilde Q_5}R_{\tilde Q_3}(\tilde Q_1\tilde Q_2)=0$ for every $\tilde Q_2$. For the kernel of the parametrisation, $L_{\tilde Q_5}R_{\tilde Q_3}=\mathrm{id}$ reads $\tilde Q_5\tilde Q\tilde Q_3=\tilde Q$ for all $\tilde Q$; at $\tilde Q=e_t$ this gives $\tilde Q_5\tilde Q_3=e_t$, and substituting back gives $\tilde Q_5\tilde Q=\tilde Q\tilde Q_5$ for all $\tilde Q$, so $\tilde Q_5$ is central and $\tilde Q_3=\tilde Q_5^{-1}$ has the same central value.</p>
+<p>The group of invertible two-sided operators is therefore the image of $\mathbb{B}^{\times}\times\mathbb{B}^{\times}$, and the kernel of the parametrisation is $\{(\lambda e_t,\lambda^{-1}e_t)\}$: the two-sided operator is the identity exactly for $\tilde Q_1\tilde Q_2=e_t$ with $\tilde Q_1$ central.</p>
+<p><em>Proof.</em> The inverse is verified by the composition law. For the converse, if the operator is invertible then it is injective, so $\tilde Q_1$ and $\tilde Q_2$ are units: a nonzero kernel of $\tilde Q_1$, say $\tilde Q_1\tilde Q=0$, gives $T_{\tilde Q_1,\tilde Q_2}(\tilde Q\tilde Q')=0$ for every $\tilde Q'$. For the kernel of the parametrisation, $T_{\tilde Q_1,\tilde Q_2}=\mathrm{id}$ reads $\tilde Q_1\tilde Q\tilde Q_2=\tilde Q$ for all $\tilde Q$; at $\tilde Q=e_t$ this gives $\tilde Q_1\tilde Q_2=e_t$, and substituting back gives $\tilde Q_1\tilde Q=\tilde Q\tilde Q_1$ for all $\tilde Q$, so $\tilde Q_1$ is central and $\tilde Q_2=\tilde Q_1^{-1}$ has the same central value.</p>
 <p><strong>Corollary (the powers stay in the family).</strong> For every $n\ge1$,</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{n}=L_{\tilde Q_5^{n}}R_{\tilde Q_3^{n}} .
+\bigl(T_{\tilde Q_1,\tilde Q_2}\bigr)^{n}=T_{\tilde Q_1^{n},\tilde Q_2^{n}} .
 $$</p>
-<p><em>Proof.</em> Induction on the composition law. The corollary is the reason the exponential of a two-sided operator generally leaves the family: $\exp(L_{\tilde Q_5}R_{\tilde Q_3})$ is the operator $\tilde Q\mapsto\sum_{n\ge0}\frac{1}{n!}\tilde Q_5^{n}\tilde Q\tilde Q_3^{n}$, and a sum of decomposable tensors $\tilde Q_5^{n}\otimes\tilde Q_3^{n}$ is decomposable in degenerate cases only. In the one-sided case the same computation gives $\exp(L_{\tilde Q_5})=L_{\exp(\tilde Q_5)}$ and $\exp(R_{\tilde Q_3})=R_{\exp(\tilde Q_3)}$, because the parameter enters once and the series is the exponential of the parameter.</p>
+<p><em>Proof.</em> Induction on the composition law. The corollary is the reason the exponential of a two-sided operator generally leaves the family: $\exp(T_{\tilde Q_1,\tilde Q_2})$ is the operator $\tilde Q\mapsto\sum_{n\ge0}\frac{1}{n!}\tilde Q_1^{n}\tilde Q\tilde Q_2^{n}$, and a sum of decomposable tensors $\tilde Q_1^{n}\otimes\tilde Q_2^{n}$ is decomposable in degenerate cases only. In the one-sided case the same computation gives $\exp(L_{\tilde Q_1})=L_{\exp(\tilde Q_1)}$ and $\exp(R_{\tilde Q_2})=R_{\exp(\tilde Q_2)}$, because the parameter enters once and the series is the exponential of the parameter.</p>
+<h2 id="the-bilinear-sandwich">The Bilinear Sandwich</h2>
+<p><strong>Definition.</strong> The <strong>bilinear sandwich</strong> of $\tilde Q\in\mathbb{B}$ is the two-sided operator whose second parameter is the Hermitian conjugate of the first. <strong>It is the default sandwich: an article that writes <em>the sandwich</em> with no qualifier means this operator.</strong> The qualifier <em>bilinear</em> names the family it is cut from, the bilinear family $T_{a,b}$; it does not say that the operator is bilinear in $\tilde Q$, which it is not, as the next paragraph shows. The sector articles call it simply the <strong>sandwich</strong>.</p>
+<p>$$
+\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}=L_{\tilde Q}R_{\tilde Q^{*}},\qquad
+\Theta_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*}.
+$$</p>
+<p>It is the member of the family on the graph $\tilde Q_2=\tilde Q_1^{*}$, and it is the object of the sector articles <em>The Sandwich of a N-Regular, Spectrally Regular Biquaternion</em>, <em>The Sandwich of a N-Regular, Spectrally Degenerate Biquaternion</em>, <em>The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion</em> and <em>The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion</em>, and of the two exponential companions.</p>
+<p><strong>One bilinear family, one quadratic sandwich.</strong> The family is <strong>bilinear</strong> in the pair $(\tilde Q_1,\tilde Q_2)$: the operator depends linearly on each parameter with the other fixed. The bilinear sandwich restricts the pair to the graph $\tilde Q_2=\tilde Q_1^{*}$. That graph is real-linear and not complex-linear, and the restriction of a bilinear map to it is <strong>quadratic</strong>, not sesquilinear:</p>
+<p>$$
+\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q},\qquad
+\Theta_{\tilde Q+\tilde P}=\Theta_{\tilde Q}+\Theta_{\tilde P}+T_{\tilde Q,\tilde P^{*}}+T_{\tilde P,\tilde Q^{*}} .
+$$</p>
+<p><strong>Not the sesquilinear sandwich.</strong> The two qualifiers are complementary. The <em>sesquilinear sandwich</em> $S_{a,b}=T_{a,b}\circ\varkappa$, that is $S_{a,b}(\tilde X)=a\tilde X^{*}b$, of <em>The Sesquilinear Sandwich on the Biquaternion</em> puts the star on the <strong>argument</strong>. The bilinear sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ puts it on the <strong>second parameter</strong> and leaves the argument alone. The two agree only on the fixed space of the star, $\tilde X=\tilde X^{*}$, and are different operators on the algebra. The adjective <em>sesquilinear</em> describes $S$; the bilinear sandwich is quadratic in $\tilde Q$. The family has two independent complex parameters; the bilinear sandwich has one complex parameter, entering twice, once conjugated. It is quadratic because it is the graph $(\tilde Q,\tilde Q^{*})$ inside a bilinear family.</p>
+<p><strong>The diagonal that closes.</strong> The literal diagonal $T_{\tilde Q,\tilde Q}$, $\tilde X\mapsto\tilde Q\tilde X\tilde Q$, is not a subfamily. For non-commuting $\tilde Q,\tilde P$,</p>
+<p>$$
+T_{\tilde Q,\tilde Q}\circ T_{\tilde P,\tilde P}
+=T_{\tilde Q\tilde P,\ \tilde P\tilde Q}
+\neq T_{\tilde Q\tilde P,\ \tilde Q\tilde P},
+$$</p>
+<p>so the square does not compose. The starred diagonal does close, because the star is an anti-automorphism, $(\tilde Q\tilde P)^{*}=\tilde P^{*}\tilde Q^{*}$:</p>
+<p>$$
+\Theta_{\tilde Q}\circ\Theta_{\tilde P}
+=T_{\tilde Q\tilde P,\ \tilde P^{*}\tilde Q^{*}}
+=T_{\tilde Q\tilde P,\ (\tilde Q\tilde P)^{*}}
+=\Theta_{\tilde Q\tilde P}.
+$$</p>
+<p><strong>Proposition (the sandwich is a homomorphism of the unit group).</strong> On the units,</p>
+<p>$$
+\Theta_{\tilde Q}\,\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P},
+$$</p>
+<p>so $\Theta$ is a group homomorphism $\mathbb{B}^{\times}\to GL_{\mathbb{C}}(\mathbb{B})$. It is not faithful. For $\lambda\in\mathbb{C}$,</p>
+<p>$$
+\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q},
+\qquad
+\Theta_{\tilde Q}=\mathrm{id}\iff \tilde Q=\lambda e_t\ \text{with}\ \lvert\lambda\rvert=1 .
+$$</p>
+<p>The kernel is the central unit circle $U(1)$, so the sandwich descends injectively to $\mathbb{B}^{\times}/U(1)$ and the central phase is invisible: $\Theta_{e^{i\alpha}}=\mathrm{id}$.</p>
+<p><em>Proof.</em> The multiplicativity is the computation above. For the scaling, $\lambda\tilde Q\,\tilde X\,(\lambda\tilde Q)^{*}=\lvert\lambda\rvert^{2}\tilde Q\tilde X\tilde Q^{*}$. For the kernel, $\Theta_{\tilde Q}=\mathrm{id}$ at $\tilde X=e_t$ gives $\tilde Q\tilde Q^{*}=e_t$, so $\tilde Q$ is invertible with inverse $\tilde Q^{*}$; the identity then reads $\tilde Q\tilde X=\tilde X\tilde Q$ for all $\tilde X$, so $\tilde Q$ is central, and $\tilde Q\tilde Q^{*}=\lvert\tilde Q\rvert^{2}e_t=e_t$ gives $\lvert\tilde Q\rvert=1$.</p>
+<p><strong>Proposition (the two sectors are preserved).</strong> If $\tilde X^{*}=\tilde X$ then $(\tilde Q\tilde X\tilde Q^{*})^{*}=\tilde Q\tilde X\tilde Q^{*}$, and if $\tilde X^{*}=-\tilde X$ then the image is anti-Hermitian. The sandwich preserves each of the two real sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.</p>
+<p><strong>The matrix reading.</strong> In the model $M_2(\mathbb{C})$ the sandwich is the congruence</p>
+<p>$$
+\Theta_M(X)=MXM^{\dagger},\qquad M=\mathsf M_2(\tilde Q),
+$$</p>
+<p>with $\det(MXM^{\dagger})=\lvert\det M\rvert^{2}\det X$. In the algebra,</p>
+<p>$$
+N\bigl(\Theta_{\tilde Q}(\tilde X)\bigr)=\lvert N(\tilde Q)\rvert^{2}N(\tilde X),
+$$</p>
+<p>where $N=\langle\cdot\rangle_{\natural}$ is the quaternionic norm. The sandwich is therefore, in general, a congruence and not an automorphism. For a unit $\tilde Q$, $\Theta_{\tilde Q}(\tilde X\tilde Y)=\Theta_{\tilde Q}(\tilde X)\Theta_{\tilde Q}(\tilde Y)$ holds exactly when $\tilde Q^{*}\tilde Q$ is central, that is when $\tilde Q$ is a scalar multiple of a $*$-unitary element.</p>
+<p><strong>Three diagonal operators, three different objects.</strong> The family contains three natural diagonal subfamilies, and they must not be confused:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>formula</th>
+<th>property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bilinear sandwich</td>
+<td>$T_{\tilde Q,\tilde Q^{*}}$</td>
+<td>congruence; preserves $\mathbb{M}_+$ and $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>inner automorphism</td>
+<td>$T_{\tilde Q,\tilde Q^{-1}}$</td>
+<td>algebra automorphism</td>
+</tr>
+<tr>
+<td>literal diagonal</td>
+<td>$T_{\tilde Q,\tilde Q}$</td>
+<td>not closed under composition</td>
+</tr>
+</tbody>
+</table></div>
+<p>The sandwich uses the star; the automorphism uses the inverse; the literal diagonal uses the same element twice and closes only for commuting parameters. Only the second is a representation of the algebra by automorphisms; only the first is the conformal Lorentz congruence of the sector articles.</p>
+<p><strong>The adjoint of the sandwich.</strong> For the plain form and for the Hermitian form alike, the adjoint of the sandwich is the sandwich of the conjugate parameter:</p>
+<p>$$
+\bigl(\Theta_{\tilde Q}\bigr)^{\approx}=\Theta_{\tilde Q^{*}},
+\qquad
+\bigl(\Theta_{\tilde Q}\bigr)^{\dagger}=\Theta_{\tilde Q^{*}} .
+$$</p>
+<p>The first identity is the swap theorem below applied to the pair $(\tilde Q,\tilde Q^{*})$; the second is the computation $\langle \tilde Q\tilde X\tilde Q^{*},\tilde Y\rangle_{*}=\langle\tilde X,\tilde Q^{*}\tilde Y\tilde Q\rangle_{*}$ with the Hermitian form $\langle\tilde X_1,\tilde X_2\rangle_{*}=\mathrm{Sc}(\tilde X_1\tilde X_2^{*})$. Consequently the sandwich is self-adjoint for either form exactly when $\tilde Q^{*}=\lambda\tilde Q$ for some $\lambda\in\mathbb{C}$.</p>
 <h2 id="the-adjoint-and-the-swap">The Adjoint and the Swap</h2>
-<p><strong>Theorem (the adjoint exchanges the parameters).</strong> For all $\tilde Q_5,\tilde Q_3\in\mathbb{B}$,</p>
+<p><strong>Theorem (the adjoint exchanges the parameters).</strong> For all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,</p>
 <p>$$
-\boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5} \;}.
+\boxed{\; \bigl(T_{\tilde Q_1,\tilde Q_2}\bigr)^{\approx}=T_{\tilde Q_2,\tilde Q_1} \;}.
 $$</p>
-<p><em>Proof.</em> The transpose of a composite reverses the order, $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ (<em>The Four Adjoints of the Biquaternion Algebra in Examples</em>), and the transposes of the factors are the crossed one-sided operators, $(L_{\tilde Q_5})^{\approx}=R_{\tilde Q_5}$ and $(R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}$ (<em>One-Sided Operators on the Biquaternion Algebra</em>):</p>
+<p><em>Proof.</em> The transpose of a composite reverses the order, $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ (<em>The Four Adjoints of the Biquaternion Algebra in Examples</em>), and the transposes of the factors are the crossed one-sided operators, $(L_{\tilde Q_1})^{\approx}=R_{\tilde Q_1}$ and $(R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}$ (<em>One-Sided Operators on the Biquaternion Algebra</em>):</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=\bigl(R_{\tilde Q_3}\bigr)^{\approx}\bigl(L_{\tilde Q_5}\bigr)^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5}.
+\bigl(T_{\tilde Q_1,\tilde Q_2}\bigr)^{\approx}=\bigl(R_{\tilde Q_2}\bigr)^{\approx}\bigl(L_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_2}R_{\tilde Q_1}=T_{\tilde Q_2,\tilde Q_1}.
 $$</p>
-<p><strong>Remark (swap, not conjugation).</strong> The adjoint of a two-sided operator is a two-sided operator with the two parameters interchanged. The quaternionic pair of the corpus has the opposite behaviour: there the adjoint for the quaternionic form keeps the parameter, $(L_{\tilde Q_5})^{N}=L_{\tilde Q_5^{\natural}}$ and $(\Theta_{\tilde Q_5})^{N}=\Theta_{\tilde Q_5^{\natural}}$, so a type criterion is a criterion on one parameter. Here every type criterion is symmetric or antisymmetric in the pair $(\tilde Q_5,\tilde Q_3)$, and the whole article turns on that single difference. This is §<em>The Adjoint and the Swap</em> referred to by the one-sided article.</p>
+<p><strong>Remark (swap, not conjugation).</strong> The adjoint of a two-sided operator is a two-sided operator with the two parameters interchanged. The quaternionic pair of the corpus has the opposite behaviour: there the adjoint for the quaternionic form keeps the parameter, $(L_{\tilde Q_1})^{N}=L_{\tilde Q_1^{\natural}}$ and $(\Theta_{\tilde Q_1})^{N}=\Theta_{\tilde Q_1^{\natural}}$, so a type criterion is a criterion on one parameter. Here every type criterion is symmetric or antisymmetric in the pair $(\tilde Q_1,\tilde Q_2)$, and the whole article turns on that single difference.</p>
 <h2 id="the-self-adjoint-and-the-skew-adjoint-sectors">The Self-Adjoint and the Skew-Adjoint Sectors</h2>
-<p><strong>Theorem (the self-adjoint criterion).</strong> For $\tilde Q_5\neq0$ the operator $L_{\tilde Q_5}R_{\tilde Q_3}$ is self-adjoint if and only if the two parameters are proportional,</p>
+<p><strong>Theorem (the self-adjoint criterion).</strong> For $\tilde Q_1\neq0$ the operator $T_{\tilde Q_1,\tilde Q_2}$ is self-adjoint if and only if the two parameters are proportional,</p>
 <p>$$
-\boxed{\; \bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=L_{\tilde Q_5}R_{\tilde Q_3}
-\iff \tilde Q_3=\lambda\tilde Q_5\quad\text{for some }\lambda\in\mathbb{C} \;}.
+\boxed{\; \bigl(T_{\tilde Q_1,\tilde Q_2}\bigr)^{\approx}=T_{\tilde Q_1,\tilde Q_2}
+\iff \tilde Q_2=\lambda\tilde Q_1\quad\text{for some }\lambda\in\mathbb{C} \;}.
 $$</p>
-<p>Consequently the self-adjoint two-sided operators are the scalar multiples $\lambda\,L_{\tilde Q_5}R_{\tilde Q_5}$ of the diagonal products, together with the zero operator.</p>
-<p><em>Proof.</em> In the matrix model put $A=\mathsf M_2(\tilde Q_5)\neq0$ and $B=\mathsf M_2(\tilde Q_3)$, so that the swap theorem reads $BXA=AXB$ for every $X\in M_2(\mathbb{C})$. Testing on the matrix units $X=E_{ij}$ gives $B_{ki}A_{jl}=A_{ki}B_{jl}$ for all $i,j,k,l$. Since $A\neq0$, choose $(k_0,i_0)$ with $A_{k_0i_0}\neq0$ and put $\lambda=B_{k_0i_0}/A_{k_0i_0}$; then $B_{jl}=\lambda A_{jl}$ for all $j,l$, so $B=\lambda A$ and $\tilde Q_3=\lambda\tilde Q_5$. The argument uses no inverse, so it covers the zero divisors as well. Conversely $\tilde Q_3=\lambda\tilde Q_5$ gives $\tilde Q_3\tilde Q\tilde Q_5=\lambda\tilde Q_5\tilde Q\tilde Q_5=\tilde Q_5\tilde Q\lambda\tilde Q_5=\tilde Q_5\tilde Q\tilde Q_3$.</p>
+<p>Consequently the self-adjoint two-sided operators are the scalar multiples $\lambda\,T_{\tilde Q_1,\tilde Q_1}$ of the diagonal products, together with the zero operator.</p>
+<p><em>Proof.</em> In the matrix model put $A=\mathsf M_2(\tilde Q_1)\neq0$ and $B=\mathsf M_2(\tilde Q_2)$, so that the swap theorem reads $BXA=AXB$ for every $X\in M_2(\mathbb{C})$. Testing on the matrix units $X=E_{ij}$ gives $B_{ki}A_{jl}=A_{ki}B_{jl}$ for all $i,j,k,l$. Since $A\neq0$, choose $(k_0,i_0)$ with $A_{k_0i_0}\neq0$ and put $\lambda=B_{k_0i_0}/A_{k_0i_0}$; then $B_{jl}=\lambda A_{jl}$ for all $j,l$, so $B=\lambda A$ and $\tilde Q_2=\lambda\tilde Q_1$. The argument uses no inverse, so it covers the zero divisors as well. Conversely $\tilde Q_2=\lambda\tilde Q_1$ gives $\tilde Q_1\tilde Q\lambda\tilde Q_1=\lambda\tilde Q_1\tilde Q\tilde Q_1=T_{\tilde Q_1,\tilde Q_2}(\tilde Q)$.</p>
 <p><strong>Theorem (the skew sector is trivial).</strong> No nonzero two-sided operator is skew-adjoint:</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)^{\approx}=-L_{\tilde Q_5}R_{\tilde Q_3}
-\iff L_{\tilde Q_5}R_{\tilde Q_3}=0 .
+\bigl(T_{\tilde Q_1,\tilde Q_2}\bigr)^{\approx}=-T_{\tilde Q_1,\tilde Q_2}
+\iff T_{\tilde Q_1,\tilde Q_2}=0 .
 $$</p>
-<p><em>Proof.</em> Skew-adjointness is $L_{\tilde Q_3}R_{\tilde Q_5}=-L_{\tilde Q_5}R_{\tilde Q_3}$, that is $\tilde Q_3\tilde Q\tilde Q_5=-\tilde Q_5\tilde Q\tilde Q_3$ for all $\tilde Q$. Taking the scalar part and using the cyclicity of $\mathrm{Sc}$,</p>
-<p>$$
-\mathrm{Sc}\bigl(\tilde Q_3\tilde Q\tilde Q_5\bigr)=\mathrm{Sc}\bigl(\tilde Q\tilde Q_5\tilde Q_3\bigr)
-=-\mathrm{Sc}\bigl(\tilde Q_5\tilde Q\tilde Q_3\bigr)=-\mathrm{Sc}\bigl(\tilde Q\tilde Q_5\tilde Q_3\bigr),
-$$</p>
-<p>so $\mathrm{Sc}(\tilde Q\tilde Q_5\tilde Q_3)=0$ for all $\tilde Q$, and the non-degeneracy of the form gives $\tilde Q_5\tilde Q_3=0$; the same argument with the parameters read in the other order gives $\tilde Q_3\tilde Q_5=0$. At $\tilde Q=e_t$ the defining identity then reads $\tilde Q_3\tilde Q_5=-\tilde Q_5\tilde Q_3$, so both products vanish. A zero divisor pair with $\tilde Q_5\tilde Q_3=\tilde Q_3\tilde Q_5=0$ and both parameters nonzero nevertheless fails the identity on a general element, and the cases were settled by elimination: for every fixed nonzero $\tilde Q_3$, both null and non-null, the linear system in $\tilde Q_5$ has only the solution $\tilde Q_5=0$.</p>
-<p><strong>Corollary (the two sectors at the boundary).</strong> At $\tilde Q_3=e_t$ the two criteria of this section give the one-sided criteria: $\tilde Q_3=\lambda\tilde Q_5$ becomes $\tilde Q_5$ central, and the skew condition becomes $\tilde Q_5=0$. The one-sided type criteria are therefore the boundary case of the two-sided ones, and the pair of articles is one theorem read on a family and on its slice.</p>
+<p><em>Proof.</em> Skew-adjointness is $T_{\tilde Q_2,\tilde Q_1}=-T_{\tilde Q_1,\tilde Q_2}$, that is $\tilde Q_2\tilde X\tilde Q_1=-\tilde Q_1\tilde X\tilde Q_2$ for all $\tilde X$. In the matrix model put $A=\mathsf M_2(\tilde Q_1)$ and $B=\mathsf M_2(\tilde Q_2)$, so the identity reads $BXA=-AXB$ for every $X$. On the matrix units it gives $B_{ki}A_{jl}=-A_{ki}B_{jl}$ for all $i,j,k,l$. If $A=0$ the operator is zero; otherwise choose $(k_0,i_0)$ with $A_{k_0i_0}\neq0$ and put $\mu=-B_{k_0i_0}/A_{k_0i_0}$; then $B_{jl}=\mu A_{jl}$ for all $j,l$, so $B=\mu A$. Substituting back gives $2\mu AXA=0$ for all $X$, and since $A\neq0$ the product $AXA$ is not identically zero, so $\mu=0$ and $B=0$. Conversely the zero operator is skew-adjoint.</p>
+<p><strong>Corollary (the two sectors at the boundary).</strong> At $\tilde Q_2=e_t$ the two criteria of this section give the one-sided criteria: $\tilde Q_2=\lambda\tilde Q_1$ becomes $\tilde Q_1$ central, and the skew condition becomes $\tilde Q_1=0$. The one-sided type criteria are therefore the boundary case of the two-sided ones, and the pair of articles is one theorem read on a family and on its slice.</p>
 <h2 id="automorphisms-of-the-form-and-multiplicative-operators">Automorphisms of the Form and Multiplicative Operators</h2>
-<p><strong>Theorem (the automorphisms of the form inside the family).</strong> The operator $L_{\tilde Q_5}R_{\tilde Q_3}$ preserves the general plain bilinear form,</p>
+<p><strong>Theorem (the automorphisms of the form inside the family).</strong> The operator $T_{\tilde Q_1,\tilde Q_2}$ preserves the general plain bilinear form,</p>
 <p>$$
-\bigl\langle L_{\tilde Q_5}R_{\tilde Q_3}\tilde Q_1,\ L_{\tilde Q_5}R_{\tilde Q_3}\tilde Q_2\bigr\rangle=\langle\tilde Q_1,\tilde Q_2\rangle\qquad\text{for all }\tilde Q_1,\tilde Q_2,
+\bigl\langle T_{\tilde Q_1,\tilde Q_2}\tilde X_1,\ T_{\tilde Q_1,\tilde Q_2}\tilde X_2\bigr\rangle=\langle\tilde X_1,\tilde X_2\rangle\qquad\text{for all }\tilde X_1,\tilde X_2,
 $$</p>
-<p>if and only if $\tilde Q_3\tilde Q_5=\pm e_t$, that is if and only if $\tilde Q_3=\pm\tilde Q_5^{-1}$. In that case the operator is $\pm\mathrm{Ad}_{\tilde Q_5}$, the inner automorphism of $\tilde Q_5$ up to sign.</p>
-<p><em>Proof.</em> If the operator preserves the form it is injective, because the form is non-degenerate, hence $\tilde Q_5$ and $\tilde Q_3$ are units. Put $\tilde Q_6=\tilde Q_3\tilde Q_5$, so that $\tilde Q_3=\tilde Q_6\tilde Q_5^{-1}$, and compute with the cyclicity of the scalar part:</p>
+<p>if and only if $\tilde Q_2\tilde Q_1=\pm e_t$, that is if and only if $\tilde Q_2=\pm\tilde Q_1^{-1}$. In that case the operator is $\pm\mathrm{Ad}_{\tilde Q_1}$, the inner automorphism of $\tilde Q_1$ up to sign.</p>
+<p><em>Proof.</em> If the operator preserves the form it is injective, because the form is non-degenerate, hence $\tilde Q_1$ and $\tilde Q_2$ are units. Put $\tilde Q_6=\tilde Q_2\tilde Q_1$, so that $\tilde Q_2=\tilde Q_6\tilde Q_1^{-1}$, and compute with the cyclicity of the scalar part:</p>
 <p>$$
-\mathrm{Sc}\bigl(\tilde Q_5\tilde Q_1\tilde Q_3\tilde Q_5\tilde Q_2\tilde Q_3\bigr)
-=\mathrm{Sc}\bigl(\tilde Q_5\tilde Q_1\tilde Q_6\tilde Q_2\tilde Q_6\tilde Q_5^{-1}\bigr)
-=\mathrm{Sc}\bigl(\tilde Q_6\tilde Q_1\tilde Q_6\tilde Q_2\bigr)
-=\bigl\langle\tilde Q_1,\tilde Q_6\tilde Q_2\tilde Q_6\bigr\rangle .
+\mathrm{Sc}\bigl(\tilde Q_1\tilde X_1\tilde Q_2\tilde Q_1\tilde X_2\tilde Q_2\bigr)
+=\mathrm{Sc}\bigl(\tilde Q_1\tilde X_1\tilde Q_6\tilde X_2\tilde Q_6\tilde Q_1^{-1}\bigr)
+=\mathrm{Sc}\bigl(\tilde Q_6\tilde X_1\tilde Q_6\tilde X_2\bigr)
+=\bigl\langle\tilde X_1,\tilde Q_6\tilde X_2\tilde Q_6\bigr\rangle .
 $$</p>
-<p>Preservation is therefore equivalent to $\tilde Q_6\tilde Q\tilde Q_6=\tilde Q$ for all $\tilde Q$, which by the one-sided theorem forces $\tilde Q_6=\pm e_t$ (<em>One-Sided Operators on the Biquaternion Algebra</em>, §<em>Which Multiplications Preserve the Form</em>). Conversely $\tilde Q_3=\tilde Q_5^{-1}$ gives the inner automorphism, which preserves the form, and $\tilde Q_3=-\tilde Q_5^{-1}$ gives its negative, which preserves the form up to the sign $(-1)^{2}=1$.</p>
-<p><strong>Theorem (the multiplicative operators).</strong> The operator $L_{\tilde Q_5}R_{\tilde Q_3}$ is multiplicative,</p>
+<p>Preservation is therefore equivalent to $\tilde Q_6\tilde X\tilde Q_6=\tilde X$ for all $\tilde X$, which by the one-sided theorem forces $\tilde Q_6=\pm e_t$ (<em>One-Sided Operators on the Biquaternion Algebra</em>, §<em>Which Multiplications Preserve the Form</em>). Conversely $\tilde Q_2=\tilde Q_1^{-1}$ gives the inner automorphism, which preserves the form, and $\tilde Q_2=-\tilde Q_1^{-1}$ gives its negative, which preserves the form up to the sign $(-1)^{2}=1$.</p>
+<p><strong>Theorem (the multiplicative operators).</strong> A nonzero operator $T_{\tilde Q_1,\tilde Q_2}$ is multiplicative,</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)(\tilde Q_1)\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)(\tilde Q_2)=\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)(\tilde Q_1\tilde Q_2)\qquad\text{for all }\tilde Q_1,\tilde Q_2,
+\bigl(T_{\tilde Q_1,\tilde Q_2}\tilde X_1\bigr)\bigl(T_{\tilde Q_1,\tilde Q_2}\tilde X_2\bigr)=T_{\tilde Q_1,\tilde Q_2}\bigl(\tilde X_1\tilde X_2\bigr)\qquad\text{for all }\tilde X_1,\tilde X_2,
 $$</p>
-<p>if and only if $\tilde Q_5\tilde Q_3=e_t$, that is $\tilde Q_3=\tilde Q_5^{-1}$; and then it is the inner automorphism $\mathrm{Ad}_{\tilde Q_5}$, an automorphism of the algebra for every unit $\tilde Q_5$.</p>
-<p><em>Proof.</em> The left side is $\tilde Q_5\tilde Q_1\tilde Q_3\tilde Q_5\tilde Q_2\tilde Q_3$ and the right side is $\tilde Q_5\tilde Q_1\tilde Q_2\tilde Q_3$, so with $\tilde Q_7=\tilde Q_5\tilde Q_3$ the identity reads $\tilde Q_5\tilde Q_1\tilde Q_7\tilde Q_2\tilde Q_3=\tilde Q_5\tilde Q_1\tilde Q_2\tilde Q_3$ for all $\tilde Q_1,\tilde Q_2$. At $\tilde Q_1=e_t$ and for units $\tilde Q_5,\tilde Q_3$ this is $\tilde Q_7\tilde Q_2=\tilde Q_2$ for all $\tilde Q_2$, hence $\tilde Q_7=e_t$, that is $\tilde Q_3=\tilde Q_5^{-1}$; conversely $\tilde Q_5\tilde Q_3=e_t$ makes the two sides equal for all $\tilde Q_1,\tilde Q_2$, and the operator is $\tilde Q\mapsto\tilde Q_5\tilde Q\tilde Q_5^{-1}$.</p>
-<p><strong>Corollary (multiplicative and form preserving).</strong> The two-sided operators that are multiplicative and preserve the form at once are exactly the inner automorphisms $\mathrm{Ad}_{\tilde Q_5}$ with $\tilde Q_5$ a unit, without the sign $-\mathrm{Ad}_{\tilde Q_5}$: the sign that the criterion of the first theorem allows is excluded by multiplicativity.</p>
-<p><strong>Corollary (the partial law of the central product).</strong> Suppose the product of the two parameters is central, that is $\tilde Q_3\tilde Q_5=\mu e_t$ with $\mu=\mathrm{Sc}(\tilde Q_3\tilde Q_5)$. Then for all $\tilde Q_1,\tilde Q_2$,</p>
+<p>if and only if $\tilde Q_1\tilde Q_2=e_t$, that is $\tilde Q_2=\tilde Q_1^{-1}$; and then it is the inner automorphism $\mathrm{Ad}_{\tilde Q_1}$, an automorphism of the algebra for every unit $\tilde Q_1$.</p>
+<p><em>Proof.</em> The left side is $\tilde Q_1\tilde X_1\tilde Q_2\tilde Q_1\tilde X_2\tilde Q_2$ and the right side is $\tilde Q_1\tilde X_1\tilde X_2\tilde Q_2$, so the identity reads</p>
 <p>$$
-\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\tilde Q_1\bigr)\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\tilde Q_2\bigr)
-=(\tilde Q_3\tilde Q_5)\,\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)(\tilde Q_1\tilde Q_2)
-=\mu\,\bigl(L_{\tilde Q_5}R_{\tilde Q_3}\bigr)(\tilde Q_1\tilde Q_2),
+\tilde Q_1\tilde X_1\bigl(\tilde Q_2\tilde Q_1-e_t\bigr)\tilde X_2\tilde Q_2=0\qquad\text{for all }\tilde X_1,\tilde X_2 .
 $$</p>
-<p>and the multiplier is the central scalar $\tilde Q_3\tilde Q_5$, not a norm. The condition is automatic for $\tilde Q_3=\tilde Q_5^{-1}$, which is the exact criterion of the theorem above, but it is weaker: it holds for every pair whose product falls in the centre $\mathbb{C}e_t$, and the operator is then multiplicative up to that central scalar.</p>
-<p><em>Proof.</em> $\tilde Q_3\tilde Q_5$ is central by hypothesis, so it may be moved across $\tilde Q_1$ in $\tilde Q_5\tilde Q_1(\tilde Q_3\tilde Q_5)\tilde Q_2\tilde Q_3$; substituting $\tilde Q_3\tilde Q_5=\mu e_t$ gives the second form.</p>
-<p><strong>Remark (no norm enters, and the law is the weaker for it).</strong> The quaternionic pair of the corpus reads the same two questions through the norm and carries the correspondingly stronger law: there $\Theta_{\tilde Q_5}(\tilde Q_1)\Theta_{\tilde Q_5}(\tilde Q_2)=\langle\tilde Q_5\rangle_{\natural}\,\Theta_{\tilde Q_5}(\tilde Q_1\tilde Q_2)$ holds for <strong>every</strong> parameter, with the norm as the scalar, and genuine multiplicativity up to a scalar is the condition $\langle\tilde Q_5\rangle_{\natural}=1$. Here the criteria are $\tilde Q_3\tilde Q_5=\pm e_t$ and $\tilde Q_5\tilde Q_3=e_t$: conditions on the product of the two parameters, in which no norm and no conjugation appears, and the partial law above holds only when that product is central. The two shapes are not the same theorem with different letters; the plain form carries no twist for a norm to absorb, so it loses the parameter-free law and keeps the criterion.</p>
+<p>In the matrix model the algebra is $M_2(\mathbb{C})$, where $AXC=0$ for all $X$ forces $A=0$ or $C=0$. Since $\tilde Q_1$ and $\tilde Q_2$ are nonzero, the identity first gives $(\tilde Q_2\tilde Q_1-e_t)\tilde X_2\tilde Q_2=0$ for all $\tilde X_2$, and then $\tilde Q_2\tilde Q_1=e_t$. The product $\tilde Q_2\tilde Q_1=e_t$ makes both parameters units, and then $\tilde Q_1\tilde Q_2=e_t$ and $\tilde Q_2=\tilde Q_1^{-1}$; conversely $\tilde Q_1\tilde Q_2=e_t$ makes the two sides equal for all $\tilde X_1,\tilde X_2$, and the operator is $\tilde X\mapsto\tilde Q_1\tilde X\tilde Q_1^{-1}$.</p>
+<p><strong>Remark (the zero operator).</strong> The zero operator is multiplicative and its product of parameters is $0$, not $e_t$. It is the only exception: if either parameter is zero the operator is zero, so the criterion is read on the nonzero operators.</p>
+<p><strong>Corollary (multiplicative and form preserving).</strong> The two-sided operators that are multiplicative and preserve the form at once are exactly the inner automorphisms $\mathrm{Ad}_{\tilde Q_1}$ with $\tilde Q_1$ a unit, without the sign $-\mathrm{Ad}_{\tilde Q_1}$: the sign that the criterion of the first theorem allows is excluded by multiplicativity.</p>
+<p><strong>Corollary (the partial law of the central product).</strong> Suppose the product of the two parameters is central, that is $\tilde Q_2\tilde Q_1=\mu e_t$ with $\mu=\mathrm{Sc}(\tilde Q_2\tilde Q_1)$. Then for all $\tilde X_1,\tilde X_2$,</p>
+<p>$$
+\bigl(T_{\tilde Q_1,\tilde Q_2}\tilde X_1\bigr)\bigl(T_{\tilde Q_1,\tilde Q_2}\tilde X_2\bigr)
+=(\tilde Q_2\tilde Q_1)\,T_{\tilde Q_1,\tilde Q_2}(\tilde X_1\tilde X_2)
+=\mu\,T_{\tilde Q_1,\tilde Q_2}(\tilde X_1\tilde X_2),
+$$</p>
+<p>and the multiplier is the central scalar $\tilde Q_2\tilde Q_1$, not a norm. The condition is automatic for $\tilde Q_2=\tilde Q_1^{-1}$, which is the exact criterion of the theorem above, but it is weaker: it holds for every pair whose product falls in the centre $\mathbb{C}e_t$, and the operator is then multiplicative up to that central scalar.</p>
+<p><em>Proof.</em> $\tilde Q_2\tilde Q_1$ is central by hypothesis, so it may be moved across $\tilde X_1$ in $\tilde Q_1\tilde X_1(\tilde Q_2\tilde Q_1)\tilde X_2\tilde Q_2$; substituting $\tilde Q_2\tilde Q_1=\mu e_t$ gives the second form.</p>
+<p><strong>Remark (no norm enters, and the law is the weaker for it).</strong> The quaternionic pair of the corpus reads the same two questions through the norm and carries the correspondingly stronger law: there $\Theta_{\tilde Q_1}(\tilde X_1)\Theta_{\tilde Q_1}(\tilde X_2)=\langle\tilde Q_1\rangle_{\natural}\,\Theta_{\tilde Q_1}(\tilde X_1\tilde X_2)$ holds for <strong>every</strong> parameter, with the norm as the scalar, and genuine multiplicativity up to a scalar is the condition $\langle\tilde Q_1\rangle_{\natural}=1$. Here the criteria are $\tilde Q_2\tilde Q_1=\pm e_t$ and $\tilde Q_1\tilde Q_2=e_t$: conditions on the product of the two parameters, in which no norm and no conjugation appears, and the partial law above holds only when that product is central. The two shapes are not the same theorem with different letters; the plain form carries no twist for a norm to absorb, so it loses the parameter-free law and keeps the criterion.</p>
 <h2 id="the-isometry-group-and-the-absence-of-a-pin-group">The Isometry Group and the Absence of a Pin Group</h2>
-<p><strong>Theorem (the isometries of the family).</strong> The map $L_{\tilde Q_5}R_{\tilde Q_3}$ is an isometry of the plain form if and only if $\tilde Q_3\tilde Q_5=\pm e_t$. Equivalently, every unit $\tilde Q_5$ acts, with $\tilde Q_3=\pm\tilde Q_5^{-1}$, and the isometry group of the family is the image of the pairs $(\tilde Q_5,\pm\tilde Q_5^{-1})$.</p>
-<p><em>Proof.</em> The operator is invertible exactly when both parameters are units, and an invertible isometry has inverse its adjoint, so $L_{\tilde Q_5}R_{\tilde Q_3}\circ L_{\tilde Q_3}R_{\tilde Q_5}=\mathrm{id}$. By the composition law the composite is $L_{\tilde Q_5\tilde Q_3}R_{\tilde Q_5\tilde Q_3}$, and $L_{\tilde A}R_{\tilde A}=\mathrm{id}$ holds exactly when $\tilde A$ is central with $\tilde A^{2}=e_t$, that is $\tilde A=\pm e_t$. Hence $\tilde Q_5\tilde Q_3=\pm e_t$, and the pairs with $\tilde Q_3=\pm\tilde Q_5^{-1}$ are exactly the solutions.</p>
+<p><strong>Theorem (the isometries of the family).</strong> The map $T_{\tilde Q_1,\tilde Q_2}$ is an isometry of the plain form if and only if $\tilde Q_2\tilde Q_1=\pm e_t$. Equivalently, every unit $\tilde Q_1$ acts, with $\tilde Q_2=\pm\tilde Q_1^{-1}$, and the isometry group of the family is the image of the pairs $(\tilde Q_1,\pm\tilde Q_1^{-1})$.</p>
+<p><em>Proof.</em> The operator is invertible exactly when both parameters are units, and an invertible isometry has inverse its adjoint, so $T_{\tilde Q_1,\tilde Q_2}\circ T_{\tilde Q_2,\tilde Q_1}=\mathrm{id}$. By the composition law the composite is $T_{\tilde Q_1\tilde Q_2,\tilde Q_1\tilde Q_2}$, and $T_{\tilde A,\tilde A}=\mathrm{id}$ holds exactly when $\tilde A$ is central with $\tilde A^{2}=e_t$, that is $\tilde A=\pm e_t$. Hence $\tilde Q_1\tilde Q_2=\pm e_t$, equivalently $\tilde Q_2\tilde Q_1=\pm e_t$ for units, and the pairs with $\tilde Q_2=\pm\tilde Q_1^{-1}$ are exactly the solutions.</p>
 <p><strong>Corollary (the two cosets and the dimension).</strong> The isometries of the family are the operators</p>
 <p>$$
-L_{\tilde Q_5}R_{\tilde Q_5^{-1}}=\mathrm{Ad}_{\tilde Q_5},\qquad L_{\tilde Q_5}R_{-\tilde Q_5^{-1}}=-\mathrm{Ad}_{\tilde Q_5},
+T_{\tilde Q_1,\tilde Q_1^{-1}}=\mathrm{Ad}_{\tilde Q_1},\qquad T_{\tilde Q_1,-\tilde Q_1^{-1}}=-\mathrm{Ad}_{\tilde Q_1},
 $$</p>
-<p>and the two assignments are well defined and distinct. On a unit the inner automorphism depends on $\tilde Q_5$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}^{\times}$, so the group is $\{\pm\mathrm{Ad}_{\tilde Q_5}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\}$, of complex dimension three; it is not all of $O_4(\mathbb{C})$, which has dimension six. The factor $\{\pm1\}$ is discrete and $\mathbb{B}^{\times}/\mathbb{C}^{\times}$ is connected, so the two cosets are the two components of the group.</p>
-<p><strong>The quadratic form is the obstruction.</strong> Put $\mathfrak{Q}(\tilde Q)=\mathrm{Sc}(\tilde Q^{2})$, the quadratic form polarised to the plain bilinear form. It is <strong>not</strong> multiplicative: $\mathfrak{Q}(i\vec e_z)=\mathfrak{Q}(i\vec e_y)=1$, while the product has $\mathfrak{Q}\bigl((i\vec e_z)(i\vec e_y)\bigr)=-1$. The level set $\{\mathfrak{Q}=\pm1\}$ is therefore not closed under multiplication, and no scalar condition on one parameter can cut a subgroup out of the family.</p>
-<p><strong>Corollary (no pin group inside the family, and the kernel).</strong> The isometry group of the plain form inside this family is $\{\pm\mathrm{Ad}_{\tilde Q_5}\}$, of complex dimension three, and it is not a pin group. A pin group needs a multiplicative form whose level set is a subgroup, and $\mathfrak{Q}$ is not multiplicative; the pin group of the quadratic space is the one built in the Clifford algebra, of dimension six, and it is not contained in the family. The isometry condition here is a condition on the <strong>pair</strong> of parameters, $\tilde Q_3\tilde Q_5=\pm e_t$, not on either parameter alone. The kernel of $(\tilde Q_5,\tilde Q_3)\mapsto L_{\tilde Q_5}R_{\tilde Q_3}$ is $\{(\lambda e_t,\lambda^{-1}e_t)\}\cong\mathbb{C}^{\times}$, so the isometry group is the quotient of the pairs $(\tilde Q_5,\pm\tilde Q_5^{-1})$ by this kernel.</p>
-<p><em>Proof.</em> A pin group inside the algebra would need a multiplicative form whose level set is a subgroup; $\mathfrak{Q}$ is not multiplicative, so its level sets inside $\mathbb{B}$ are not groups, and the pin group of the quadratic space lives in the Clifford algebra instead. Its dimension is six, against the three of the family, so it is not a subgroup. The kernel is computed in <em>The Two-Sided Family</em>.</p>
+<p>and the two assignments are well defined and distinct. On a unit the inner automorphism depends on $\tilde Q_1$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}^{\times}$, so the group is $\{\pm\mathrm{Ad}_{\tilde Q_1}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\}$, of complex dimension three; it is not all of $O_4(\mathbb{C})$, which has dimension six. The factor $\{\pm1\}$ is discrete and $\mathbb{B}^{\times}/\mathbb{C}^{\times}$ is connected, so the two cosets are the two components of the group.</p>
+<p><strong>The quadratic form is the obstruction.</strong> Put $\mathfrak{Q}(\tilde Q)=\mathrm{Sc}(\tilde Q^{2})$, the quadratic form polarised to the plain bilinear form. It is <strong>not</strong> multiplicative: the two elements $(5e_t+4\vec e_x)/3$ and $(5e_t+4\vec e_y)/3$ both have $\mathfrak{Q}=1$, while their product has $\mathfrak{Q}=-431/81$. The level set $\{\mathfrak{Q}=\pm1\}$ is therefore not closed under multiplication, and no scalar condition on one parameter can cut a subgroup out of the family.</p>
+<p><strong>Corollary (no pin group inside the family, and the kernel).</strong> The isometry group of the plain form inside this family is $\{\pm\mathrm{Ad}_{\tilde Q_1}\}$, of complex dimension three, and it is not a pin group. A pin group needs a multiplicative form whose level set is a subgroup, and $\mathfrak{Q}$ is not multiplicative; the pin group of the quadratic space is the one built in the Clifford algebra, of dimension six, and it is not contained in the family. The isometry condition here is a condition on the <strong>pair</strong> of parameters, $\tilde Q_2\tilde Q_1=\pm e_t$, not on either parameter alone. The kernel of $(\tilde Q_1,\tilde Q_2)\mapsto T_{\tilde Q_1,\tilde Q_2}$ is $\{(\lambda e_t,\lambda^{-1}e_t)\}\cong\mathbb{C}^{\times}$, so the isometry group is the quotient of the pairs $(\tilde Q_1,\pm\tilde Q_1^{-1})$ by this kernel.</p>
 <p><strong>The reflections lie outside the family.</strong> For $\tilde Q_4$ with $\mathfrak{Q}(\tilde Q_4)\neq0$ the reflection of the plain form in the direction $\tilde Q_4$ is</p>
 <p>$$
 \rho_{\tilde Q_4}(\tilde Q)=\tilde Q-\frac{2\langle\tilde Q,\tilde Q_4\rangle}{\mathfrak{Q}(\tilde Q_4)}\tilde Q_4 .
 $$</p>
-<p><em>Proof.</em> The reflection formula is the definition of the reflection of a quadratic space, so $\rho_{\tilde Q_4}$ is an isometry and its determinant is $-1$. For the second statement, three cases exhaust the directions. If $\tilde Q_4=\lambda e_t$ is central, $\rho_{\lambda e_t}=\operatorname{diag}(-1,1,1,1)$: it negates the centre, so it is not $+\mathrm{Ad}$, and if it were $-\mathrm{Ad}_{\tilde Q_5}$ then $\mathrm{Ad}_{\tilde Q_5}$ would act as $-\mathrm{id}$ on $V$, of determinant $-1$, whereas every inner automorphism acts on $V$ with determinant $+1$. If $\tilde Q_4\in V$ is pure, $\rho_{\tilde Q_4}$ fixes the centre and acts as $-1$ on the line $\mathbb{C}\tilde Q_4$ and as $+1$ on its orthogonal complement in $V$, so it is neither $+\mathrm{Ad}$, whose restriction to $V$ has determinant $+1$, nor $-\mathrm{Ad}$, which negates the centre. If $\tilde Q_4$ is mixed, $\rho_{\tilde Q_4}(e_t)=e_t-2Q_{4t}\mathfrak{Q}(\tilde Q_4)^{-1}\tilde Q_4$ has a nonzero vector part, so the reflection moves the centre, while $\pm\mathrm{Ad}$ preserves the line $\mathbb{C}e_t$. Equivalently, under $\mathrm{End}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$ a two-sided operator is the elementary tensor $\tilde Q_5\otimes\tilde Q_3$, and the coefficient matrix of a reflection is not one.</p>
+<p><em>Proof.</em> The reflection formula is the definition of the reflection of a quadratic space, so $\rho_{\tilde Q_4}$ is an isometry and its determinant is $-1$. For the second statement, three cases exhaust the directions. If $\tilde Q_4=\lambda e_t$ is central, $\rho_{\lambda e_t}=\operatorname{diag}(-1,1,1,1)$: it negates the centre, so it is not $+\mathrm{Ad}$, and if it were $-\mathrm{Ad}_{\tilde Q_1}$ then $\mathrm{Ad}_{\tilde Q_1}$ would act as $-\mathrm{id}$ on $V$, of determinant $-1$, whereas every inner automorphism acts on $V$ with determinant $+1$. If $\tilde Q_4\in V$ is pure, $\rho_{\tilde Q_4}$ fixes the centre and acts as $-1$ on the line $\mathbb{C}\tilde Q_4$ and as $+1$ on its orthogonal complement in $V$, so it is neither $+\mathrm{Ad}$, whose restriction to $V$ has determinant $+1$, nor $-\mathrm{Ad}$, which negates the centre. If $\tilde Q_4$ is mixed, $\rho_{\tilde Q_4}(e_t)=e_t-2Q_{4t}\mathfrak{Q}(\tilde Q_4)^{-1}\tilde Q_4$ has a nonzero vector part, so the reflection moves the centre, while $\pm\mathrm{Ad}$ preserves the line $\mathbb{C}e_t$. Equivalently, under $\mathrm{End}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$ a two-sided operator is the elementary tensor $\tilde Q_1\otimes\tilde Q_2$, and the coefficient matrix of a reflection is not one.</p>
 <p>A product of two reflections in directions of $V$ is back in the family, $\rho_{\vec e_x}\rho_{\vec e_y}=\mathrm{Ad}_{\vec e_z}$ for the orthogonal pure directions, and every such product is an inner automorphism; a product of an odd number of reflections is not two-sided, and a product of two reflections of the whole space in general directions need not be. The improper isometries are therefore not operators of the algebra: their carrier is the Clifford algebra of the form, in its odd slot, where the reflection in a non-isotropic vector is $\rho_u(v)=-uvu^{-1}$ (<em>Biquaternion Versors and the Orthogonal Group</em>, <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>).</p>
-<p><strong>Remark (the quaternionic twin, in one line).</strong> There the sandwich $\Theta_{\tilde Q_5}$ is an isometry exactly when $\langle\tilde Q_5\rangle_{\natural}=\pm1$, the level set is a group because the norm is multiplicative, and the reflections of the vector subspace lie inside the family. Here nothing is selected, the shell is not a group, and the reflections lie outside. The difference has one source: the plain form is the scalar part of the algebra's own product, while the quaternionic form carries the norm as a twist.</p>
+<p><strong>Remark (the quaternionic twin, in one line).</strong> There the sandwich $\Theta_{\tilde Q_1}$ is an isometry exactly when $\langle\tilde Q_1\rangle_{\natural}=\pm1$, the level set is a group because the norm is multiplicative, and the reflections of the vector subspace lie inside the family. Here nothing is selected, the shell is not a group, and the reflections lie outside. The difference has one source: the plain form is the scalar part of the algebra's own product, while the quaternionic form carries the norm as a twist.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>The identity and its multiples.</strong> $L_{e_t}R_{e_t}=\mathrm{id}$, self-adjoint and form preserving; the central multiples $\lambda\,\mathrm{id}=L_{\lambda e_t}R_{e_t}$ are self-adjoint for every $\lambda$, preserve the form only for $\lambda=\pm1$, and are multiplicative only for $\lambda=1$: the three criteria are genuinely different, and the example separates them.</p>
-<p><strong>A mixed operator.</strong> The operator $\tilde Q\mapsto \vec e_x\tilde Q\vec e_y=L_{\vec e_x}R_{\vec e_y}$ has $\tilde Q_3\tilde Q_5=\vec e_y\vec e_x=-\vec e_z$, so by the criteria it is neither self-adjoint (the parameters are not proportional), nor form preserving ($-\vec e_z\neq\pm e_t$), nor multiplicative. Its adjoint is $L_{\vec e_y}R_{\vec e_x}$, the parameter pair exchanged, and the two operators differ, since $\vec e_x\vec e_z\vec e_y$ and $\vec e_y\vec e_z\vec e_x$ have opposite signs.</p>
-<p><strong>An inner automorphism.</strong> For the pure unit $\tilde Q_5=\vec e_x$ one has $\tilde Q_5^{-1}=-\vec e_x$, so</p>
+<p><strong>The identity and its multiples.</strong> $T_{e_t,e_t}=\mathrm{id}$, self-adjoint and form preserving; the central multiples $\lambda\,\mathrm{id}=T_{\lambda e_t,e_t}$ are self-adjoint for every $\lambda$, preserve the form only for $\lambda=\pm1$, and are multiplicative only for $\lambda=1$: the three criteria are genuinely different, and the example separates them.</p>
+<p><strong>A mixed operator.</strong> The operator $\tilde Q\mapsto \vec e_x\tilde Q\vec e_y=T_{\vec e_x,\vec e_y}$ has $\tilde Q_2\tilde Q_1=\vec e_y\vec e_x=-\vec e_z$, so by the criteria it is neither self-adjoint (the parameters are not proportional), nor form preserving ($-\vec e_z\neq\pm e_t$), nor multiplicative. Its adjoint is $T_{\vec e_y,\vec e_x}$, the parameter pair exchanged, and the two operators differ, since $\vec e_x\vec e_z\vec e_y$ and $\vec e_y\vec e_z\vec e_x$ have opposite signs.</p>
+<p><strong>An inner automorphism.</strong> For the pure unit $\tilde Q_1=\vec e_x$ one has $\tilde Q_1^{-1}=-\vec e_x$, so</p>
 <p>$$
-\mathrm{Ad}_{\vec e_x}=L_{\vec e_x}R_{\vec e_x^{-1}}=L_{\vec e_x}R_{-\vec e_x},
+\mathrm{Ad}_{\vec e_x}=T_{\vec e_x,\vec e_x^{-1}}=T_{\vec e_x,-\vec e_x},
 $$</p>
-<p>and the three criteria hold at once: the parameters are proportional with $\lambda=-1$, so the operator is self-adjoint; $\tilde Q_3\tilde Q_5=(-\vec e_x)\vec e_x=e_t$, so it preserves the form; and $\tilde Q_3=\tilde Q_5^{-1}$, so it is multiplicative. It is the least degenerate two-sided operator after the identity, and the example exercises the three criteria on one object.</p>
-<p><strong>A self-adjoint operator with a null parameter.</strong> For $\tilde Q_5=e_t+i\vec e_z$, a zero divisor with $\tilde Q_5^{2}=2\tilde Q_5\neq e_t$, the diagonal operator $L_{\tilde Q_5}R_{\tilde Q_5}$ is self-adjoint by the criterion $\tilde Q_3=\lambda\tilde Q_5$ with $\lambda=1$, although the parameter is not a unit. The example records that self-adjointness is a condition on the pair and not on invertibility, in contrast with the form-preserving criterion, which forces both parameters to be units.</p>
-<p><strong>A diagonal operator multiplicative up to sign.</strong> For the pure unit $\tilde Q_5=\tilde Q_3=\vec e_x$ the product of the parameters is $\tilde Q_3\tilde Q_5=\vec e_x^{2}=-e_t$, central, so the partial law applies with the scalar $-1$:</p>
+<p>and the three criteria hold at once: the parameters are proportional with $\lambda=-1$, so the operator is self-adjoint; $\tilde Q_2\tilde Q_1=(-\vec e_x)\vec e_x=e_t$, so it preserves the form; and $\tilde Q_2=\tilde Q_1^{-1}$, so it is multiplicative. It is the least degenerate two-sided operator after the identity, and the example exercises the three criteria on one object.</p>
+<p><strong>A self-adjoint operator with a null parameter.</strong> For $\tilde Q=e_t+i\vec e_z$, a zero divisor with $\tilde Q^{2}=2\tilde Q\neq e_t$, the diagonal operator $T_{\tilde Q,\tilde Q}$ is self-adjoint by the criterion $\tilde Q_2=\lambda\tilde Q_1$ with $\lambda=1$, although the parameter is not a unit. The example records that self-adjointness is a condition on the pair and not on invertibility, in contrast with the form-preserving criterion, which forces both parameters to be units.</p>
+<p><strong>A diagonal operator multiplicative up to sign.</strong> For the pure unit $\tilde Q_1=\tilde Q_2=\vec e_x$ the product of the parameters is $\tilde Q_2\tilde Q_1=\vec e_x^{2}=-e_t$, central, so the partial law applies with the scalar $-1$:</p>
 <p>$$
-\bigl(L_{\vec e_x}R_{\vec e_x}\tilde Q_1\bigr)\bigl(L_{\vec e_x}R_{\vec e_x}\tilde Q_2\bigr)=-\bigl(L_{\vec e_x}R_{\vec e_x}\bigr)(\tilde Q_1\tilde Q_2),
+\bigl(T_{\vec e_x,\vec e_x}\tilde X_1\bigr)\bigl(T_{\vec e_x,\vec e_x}\tilde X_2\bigr)=-T_{\vec e_x,\vec e_x}(\tilde X_1\tilde X_2),
 $$</p>
-<p>and the operator $\tilde Q\mapsto \vec e_x\tilde Q\vec e_x$ is anti-multiplicative. It is the negative of the inner automorphism $\mathrm{Ad}_{\vec e_x}$, since $\vec e_x^{-1}=-\vec e_x$; the example is the least degenerate instance of the partial law, and it separates the central-product family from the genuinely multiplicative operators of the theorem. A general parameter does not qualify: for $\tilde Q_5=1+\vec e_x+(1+2i)\vec e_y$ the square is not central, and no scalar makes the product law hold.</p>
+<p>and the operator $\tilde Q\mapsto \vec e_x\tilde Q\vec e_x$ is anti-multiplicative. It is the negative of the inner automorphism $\mathrm{Ad}_{\vec e_x}$, since $\vec e_x^{-1}=-\vec e_x$; the example is the least degenerate instance of the partial law, and it separates the central-product family from the genuinely multiplicative operators of the theorem. A general parameter does not qualify: for $\tilde Q_1=1+\vec e_x+(1+2i)\vec e_y$ the product with itself is not central, and no scalar makes the product law hold.</p>
+<p><strong>The sandwich of a central phase.</strong> For $\tilde Q=e^{i\alpha}e_t$ the sandwich is $\Theta_{\tilde Q}=\mathrm{id}$: the phase is invisible. For $\tilde Q=\vec e_x$ the sandwich is $\Theta_{\vec e_x}(\tilde X)=-\vec e_x\tilde X\vec e_x$, an involution, because $\vec e_x^{2}=-e_t$ and the sandwich is multiplicative. The two examples are the two extremes of the sandwich family: the central scalar collapses it to the identity, the pure unit gives a genuine involution.</p>
 <h2 id="summary">Summary</h2>
-<p>The two-sided operators are the products $L_{\tilde Q_5}R_{\tilde Q_3}(\tilde Q)=\tilde Q_5\tilde Q\tilde Q_3$ of a left and a right multiplication with independent parameters; they contain the one-sided ones at the boundary cases and they are the decomposable tensors of the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, whose products span the whole operator algebra of complex dimension sixteen. Composition reverses the second slot, $(\tilde Q_5,\tilde Q_3)(\tilde Q_4,\tilde D)=(\tilde Q_5\tilde Q_4,\tilde D\tilde Q_3)$, and the adjoint for the general plain bilinear form swaps the two parameters. The type, automorphism and multiplicativity criteria are criteria on the product of the pair: self-adjoint exactly when $\tilde Q_3=\lambda\tilde Q_5$, never skew-adjoint except for the zero operator, form preserving exactly when $\tilde Q_3\tilde Q_5=\pm e_t$, multiplicative exactly when $\tilde Q_5\tilde Q_3=e_t$; when the product $\tilde Q_3\tilde Q_5$ is merely central the operator is still multiplicative up to that central scalar, which is the weaker and differently shaped analogue of the quaternionic law $\Theta_{\tilde Q_5}(\tilde Q_1)\Theta_{\tilde Q_5}(\tilde Q_2)=\langle\tilde Q_5\rangle_{\natural}\Theta_{\tilde Q_5}(\tilde Q_1\tilde Q_2)$. The multiplicative and form-preserving operators are the inner automorphisms of the units, and no norm enters any criterion — the sharp contrast with the quaternionic pair of the corpus. At $\tilde Q_3=e_t$ all the criteria reduce to the one-sided ones.</p>
-<p>The isometries of the family are the two cosets $\pm\mathrm{Ad}_{\tilde Q_5}$, of complex dimension three, reached by every unit with the second parameter forced to $\pm\tilde Q_5^{-1}$ and no condition on a norm, and the two cosets are the two components; the shell $\mathfrak{Q}=\pm1$ is not closed, so the form has no pin group; the kernel is $\mathbb{C}^{\times}$; and the reflections, of determinant $-1$, lie outside the family.</p>
+<p>The two-sided operators are the products $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2$ of a left and a right multiplication with independent parameters; they contain the one-sided ones at the boundary cases and they are the decomposable tensors of the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$, whose products span the whole operator algebra of complex dimension sixteen. The parameters are eight complex numbers and the operator algebra sixteen complex dimensions, because the map is bilinear. Composition reverses the second slot, $(\tilde Q_1,\tilde Q_2)(\tilde Q_3,\tilde Q_4)=(\tilde Q_1\tilde Q_3,\tilde Q_4\tilde Q_2)$, and the adjoint for the general plain bilinear form swaps the two parameters. The type criteria are criteria on the pair, and the automorphism and multiplicativity criteria on the product: self-adjoint exactly when $\tilde Q_2=\lambda\tilde Q_1$ (for $\tilde Q_1\neq0$), never skew-adjoint except for the zero operator, form preserving exactly when $\tilde Q_2\tilde Q_1=\pm e_t$, multiplicative for a nonzero operator exactly when $\tilde Q_1\tilde Q_2=e_t$; when the product $\tilde Q_2\tilde Q_1$ is merely central the operator is still multiplicative up to that central scalar, which is the weaker and differently shaped analogue of the quaternionic law $\Theta_{\tilde Q_1}(\tilde X_1)\Theta_{\tilde Q_1}(\tilde X_2)=\langle\tilde Q_1\rangle_{\natural}\Theta_{\tilde Q_1}(\tilde X_1\tilde X_2)$. The multiplicative and form-preserving operators are the inner automorphisms of the units, and no norm enters any criterion — the sharp contrast with the quaternionic pair of the corpus. At $\tilde Q_2=e_t$ all the criteria reduce to the one-sided ones.</p>
+<p>The bilinear sandwich is the diagonal $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$, the member on the graph of the Hermitian conjugation. The family is bilinear and the bilinear sandwich is its restriction to the graph of the conjugation, hence quadratic in $\tilde Q$: $\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q}$. The bilinear sandwich is a group homomorphism on the units with kernel $U(1)$, it preserves the two real sectors, and in the matrix model it is the congruence $X\mapsto MXM^{\dagger}$.</p>
+<p>The isometries of the family are the two cosets $\pm\mathrm{Ad}_{\tilde Q_1}$, of complex dimension three, reached by every unit with the second parameter forced to $\pm\tilde Q_1^{-1}$ and no condition on a norm, and the two cosets are the two components; the shell $\mathfrak{Q}=\pm1$ is not closed, so the family contains no pin group; the kernel is $\mathbb{C}^{\times}$; and the reflections, of determinant $-1$, lie outside the family.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -232,11 +327,11 @@ $$</p>
 <td>The associate, or transpose, of $F$ for this form</td>
 </tr>
 <tr>
-<td>$L_{\tilde Q_5}R_{\tilde Q_3}(\tilde Q)=\tilde Q_5\tilde Q\tilde Q_3$</td>
-<td>The two-sided operator of the pair $(\tilde Q_5,\tilde Q_3)$</td>
+<td>$T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2$</td>
+<td>The two-sided operator of the pair $(\tilde Q_1,\tilde Q_2)$; first subscript left, second right, argument third</td>
 </tr>
 <tr>
-<td>$L_{\tilde Q_5}R_{\tilde Q_3}=L_{\tilde Q_5}$ at $\tilde Q_3=e_t$</td>
+<td>$T_{\tilde Q_1,e_t}=L_{\tilde Q_1}$, $T_{e_t,\tilde Q_2}=R_{\tilde Q_2}$</td>
 <td>The one-sided operators as boundary cases</td>
 </tr>
 <tr>
@@ -244,43 +339,55 @@ $$</p>
 <td>Basis of the family; independent, spanning $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$</td>
 </tr>
 <tr>
-<td>$(\tilde Q_5,\tilde Q_3)(\tilde Q_4,\tilde D)=(\tilde Q_5\tilde Q_4,\tilde D\tilde Q_3)$</td>
+<td>$T_{\tilde Q_1,\tilde Q_2}\circ T_{\tilde Q_3,\tilde Q_4}=T_{\tilde Q_1\tilde Q_3,\tilde Q_4\tilde Q_2}$</td>
 <td>Composition; the second slot reverses</td>
 </tr>
 <tr>
-<td>$(L_{\tilde Q_5}R_{\tilde Q_3})^{n}=L_{\tilde Q_5^{n}}R_{\tilde Q_3^{n}}$</td>
+<td>$(T_{\tilde Q_1,\tilde Q_2})^{n}=T_{\tilde Q_1^{n},\tilde Q_2^{n}}$</td>
 <td>Powers stay in the family</td>
 </tr>
 <tr>
-<td>$(L_{\tilde Q_5}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_5}$</td>
+<td>$(T_{\tilde Q_1,\tilde Q_2})^{\approx}=T_{\tilde Q_2,\tilde Q_1}$</td>
 <td>The adjoint swaps the parameters</td>
 </tr>
 <tr>
-<td>Self-adjoint $\iff\tilde Q_3=\lambda\tilde Q_5$</td>
-<td>Type criterion of the family</td>
+<td>Self-adjoint $\iff\tilde Q_2=\lambda\tilde Q_1$</td>
+<td>Type criterion of the family, for $\tilde Q_1\neq0$</td>
 </tr>
 <tr>
 <td>Skew-adjoint $\iff$ the operator is $0$</td>
 <td>The skew sector is trivial</td>
 </tr>
 <tr>
-<td>$L_{\tilde Q_5}R_{\tilde Q_3}$ preserves the form $\iff \tilde Q_3\tilde Q_5=\pm e_t$</td>
+<td>$T_{\tilde Q_1,\tilde Q_2}$ preserves the form $\iff \tilde Q_2\tilde Q_1=\pm e_t$</td>
 <td>The automorphisms of the form in the family</td>
 </tr>
 <tr>
-<td>$L_{\tilde Q_5}R_{\tilde Q_3}$ multiplicative $\iff \tilde Q_5\tilde Q_3=e_t$</td>
-<td>Then $L_{\tilde Q_5}R_{\tilde Q_5^{-1}}=\mathrm{Ad}_{\tilde Q_5}$</td>
+<td>$T_{\tilde Q_1,\tilde Q_2}$ multiplicative $\iff \tilde Q_1\tilde Q_2=e_t$</td>
+<td>For a nonzero operator; then $T_{\tilde Q_1,\tilde Q_1^{-1}}=\mathrm{Ad}_{\tilde Q_1}$</td>
 </tr>
 <tr>
-<td>$\tilde Q_3\tilde Q_5$ central $\implies$ multiplicative up to $\tilde Q_3\tilde Q_5$</td>
+<td>$\tilde Q_2\tilde Q_1$ central $\implies$ multiplicative up to $\tilde Q_2\tilde Q_1$</td>
 <td>The partial law; the scalar is the central product, not a norm</td>
 </tr>
 <tr>
-<td>$(\tilde Q_5,\tilde Q_3)\mapsto L_{\tilde Q_5}R_{\tilde Q_3}$</td>
+<td>$(\tilde Q_1,\tilde Q_2)\mapsto T_{\tilde Q_1,\tilde Q_2}$</td>
 <td>Bilinear; injective in each slot at a unit; kernel $\{(\lambda e_t,\lambda^{-1}e_t)\}$</td>
 </tr>
 <tr>
-<td>$\{\pm\mathrm{Ad}_{\tilde Q_5}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\}$</td>
+<td>$\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$</td>
+<td>The bilinear sandwich; the diagonal on the graph of the Hermitian conjugation; quadratic in $\tilde Q$, $\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q}$</td>
+</tr>
+<tr>
+<td>$\Theta_{\tilde Q}\Theta_{\tilde P}=\Theta_{\tilde Q\tilde P}$, $\Theta_{\lambda\tilde Q}=\lvert\lambda\rvert^{2}\Theta_{\tilde Q}$</td>
+<td>The bilinear sandwich is a group homomorphism on the units; kernel $U(1)$</td>
+</tr>
+<tr>
+<td>$(\Theta_{\tilde Q})^{\approx}=\Theta_{\tilde Q^{*}}$, $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\tilde Q^{*}}$</td>
+<td>The adjoint of the sandwich, for the plain and the Hermitian forms</td>
+</tr>
+<tr>
+<td>$\{\pm\mathrm{Ad}_{\tilde Q_1}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\}$</td>
 <td>The isometries of the family, of complex dimension three, in two components</td>
 </tr>
 <tr>
@@ -295,10 +402,12 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>, for the four adjoints of one two-sided operator and the self-adjointness criteria, of which the association column is the first</li>
-<li><a href="one-sided-operators-on-the-biquaternion-algebra.html">One-Sided Operators on the Biquaternion Algebra</a>, the companion article, for the factors $L_{\tilde Q_5}$ and $R_{\tilde Q_3}$, the swap $L^{\approx}=R$, and the one-sided form-preserving theorem used in the proof of the isometry criterion.</li>
-<li><a href="the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>, for the associate $F^{\approx}$, the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, and the reversal $(FG)^{\approx}=G^{\approx}F^{\approx}$.</li>
+<li><a href="the-four-adjoints-of-the-biquaternion-algebra-in-examples.html">The Four Adjoints of the Biquaternion Algebra in Examples</a>, for the four adjoints of one two-sided operator and the self-adjointness criteria, of which the association column is the first; the associate $F^{\approx}$, the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, and the reversal $(FG)^{\approx}=G^{\approx}F^{\approx}$.</li>
+<li><a href="one-sided-operators-on-the-biquaternion-algebra.html">One-Sided Operators on the Biquaternion Algebra</a>, the companion article, for the factors $L_{\tilde Q_1}$ and $R_{\tilde Q_2}$, the swap $L^{\approx}=R$, and the one-sided form-preserving theorem used in the proof of the form-preserving criterion.</li>
+<li><a href="the-sesquilinear-sandwich-on-the-biquaternion.html">The Sesquilinear Sandwich on the Biquaternion</a>, for the ordinary two-sided multiplication $T_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_3$ whose notation this article uses, and for the sesquilinear sandwich $S_{a,b}(\tilde X)=a\tilde X^{*}b$, a different operator: its star is on the argument, not on the right parameter.</li>
 <li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ as the operator algebra and the two-sided operators as the decomposable tensors.</li>
+<li><a href="the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html">The Sandwich of a N-Regular, Spectrally Regular Biquaternion</a>, for the sandwich $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ on the regular sector: multiplicativity, the closed form, the scale, the cancelled phase, the image $CO^{+}(1,3)$ and the two spinor slots.</li>
+<li><a href="the-sandwich-in-the-m2c-model.html">The Sandwich in the $M_2(\mathbb{C})$ Model</a> and <a href="the-sandwich-in-the-m4c-l-model.html">The Sandwich in the $M_4(\mathbb{C})_L$ Model</a>, for the congruence reading, the two halves and the Lorentz action.</li>
 <li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the place of $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ among the pairings of the algebra.</li>
 <li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the null parameters and the complementary zero divisor pairs that the skew criterion excludes.</li>
 <li><a href="square-roots-of-an-element.html">Square Roots of an Element</a>, for the square-root problem in the algebra, whose solutions are the involutive parameters of the form-preserving criterion.</li>
