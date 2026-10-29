@@ -208,8 +208,8 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Sandwich of a N-Degenerate, Spectrally Regular Biquaternion](../articles_maths/the-sandwich-of-a-n-degenerate-spectrally-regular-biquaternion.html)
 - [The One-Sided Operators of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operators-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
 - [The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion](../articles_maths/the-sandwich-of-a-n-degenerate-spectrally-degenerate-biquaternion.html)
-- [The Sandwich in the $M_2(\mathbb{C})$ Model](../articles_maths/the-sandwich-in-the-m2c-model.html)
-- [The Sandwich in the $M_4(\mathbb{C})_L$ Model](../articles_maths/the-sandwich-in-the-m4c-l-model.html)
+- [$M_2(\mathbb{C})$ Model : The Sandwich](../articles_maths/the-sandwich-in-the-m2c-model.html)
+- [$M_4(\mathbb{C})_L$ Model : The Sandwich](../articles_maths/the-sandwich-in-the-m4c-l-model.html)
 
 ### Topology
 

@@ -8,7 +8,7 @@ This article develops the matrix polar decomposition, its refinement by the dete
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The norm is $N=\det M$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The $*$-unitary group is $U(2)$ and the special $*$-unitary group is $SU(2)$.
 
-**Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*, of the regular element *The Polar Decomposition of a N-Regular Biquaternion*, and of the degenerate element *The Polar Decomposition of a N-Degenerate Biquaternion*; the sandwich action of the factors is *The Sandwich in the $M_2(\mathbb{C})$ Model*; the groups are *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
+**Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*, of the regular element *The Polar Decomposition of a N-Regular Biquaternion*, and of the degenerate element *The Polar Decomposition of a N-Degenerate Biquaternion*; the sandwich action of the factors is *$M_2(\mathbb{C})$ Model : The Sandwich*; the groups are *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
 ## The Matrix Polar Decomposition
 
@@ -242,6 +242,6 @@ Every invertible matrix is uniquely $M=PV$ with $P$ positive definite and $V$ $*
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the singular element
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the general statement
 - [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m2c-representation-gl2-sl2-and-the-determinant.html), for the group decomposition
-- [The Sandwich in the $M_2(\mathbb{C})$ Model](the-sandwich-in-the-m2c-model.html), for the action of the factors
+- [$M_2(\mathbb{C})$ Model : The Sandwich](the-sandwich-in-the-m2c-model.html), for the action of the factors
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $U(2)$
 - [Eigenvalues and Diagonalisation](eigenvalues-and-diagonalisation.html), for the matrix polar decomposition

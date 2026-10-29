@@ -262,6 +262,7 @@ The assignment $\mathsf{M}_4$ sends $e_t$ to $\mathrm I_4$ and the three vector 
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and its two products
 - [$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the two invariants
 - [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the coordinate model and the two blocks
+- [$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices that span the full operator algebra
 - [$M_4(\mathbb{C})_L$ Representation : Worked Examples](m4c-representation-worked-examples.html), for the matrices computed in the model
 - [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the commutant
 - [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model

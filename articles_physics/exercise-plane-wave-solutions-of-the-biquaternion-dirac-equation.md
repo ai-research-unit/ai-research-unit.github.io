@@ -77,9 +77,9 @@ The corpus carries three matrix languages for the same four-dimensional space, a
 |---|---|---|---|
 | $M_2(\mathbb C)$ | $b\mapsto\mathsf M_2(b)$ | complex dimension 4 | the biquaternion and its product |
 | $M_4(\mathbb C)_L$ | $b\mapsto L_b$ | complex dimension 4 | an isomorphic copy of $\mathbb B$; the left action, $\mathrm{diag}\bigl(\mathsf M_2(b),\mathsf M_2(b)\bigr)$ in the Peirce basis |
-| $M_4(\mathbb C)=\mathbb B^{\mathrm e}$ | $\mathbb B\otimes\mathbb B^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb C}(\mathbb B)$ | complex dimension 16 | the gammas, and every complex-linear operator |
+| $M_4(\mathbb C)$ (matrix representation) | a basis of $\mathbb B$ in $\mathbb B\otimes\mathbb B^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb C}(\mathbb B)$ | complex dimension 16 | the gammas, and every complex-linear operator |
 
-The middle row is the point. $M_2(\mathbb C)$ and $M_4(\mathbb C)_L$ are two pictures of the same four-dimensional algebra, not two sizes of Clifford algebra. The left regular image is a four-dimensional algebra, closed under products. The gammas generate a sixteen-dimensional algebra, so they cannot all lie in it. They live in the third row, the enveloping algebra, which the corpus builds from the left and the right multiplications.
+The middle row is the point. $M_2(\mathbb C)$ and $M_4(\mathbb C)_L$ are two pictures of the same four-dimensional algebra, not two sizes of Clifford algebra. The left regular image is a four-dimensional algebra, closed under products. The gammas generate a sixteen-dimensional algebra, so they cannot all lie in it. They live in the third row, the operator algebra whose matrix representation is $M_4(\mathbb C)$; the corpus builds it from the left and the right multiplications.
 
 **How four and four become sixteen.** The two regular images are not disjoint. Each has complex dimension four, and they meet in the scalars, because $L_{e_t}=R_{e_t}=1$. Their sum therefore has dimension $4+4-1=7$, not $16$. The direct sum $\mathbb B\oplus\mathbb B$ has complex dimension eight, but it is not the operator algebra: the map $(a,b)\mapsto L_aR_b$ is bilinear, so the span of its image is the tensor product, of dimension sixteen. Adding the right version to the left version does not double anything; multiplying does.
 
@@ -87,7 +87,7 @@ Composition does. The operator $L_aR_b$ is bilinear in the pair $(a,b)$, so the 
 $$
 \{L_aR_b\}=L(\mathbb B)\cdot R(\mathbb B)\;\cong\;\mathbb B\otimes\mathbb B^{\mathrm{opp}},
 $$
-of complex dimension $4\times4=16$. This is the doubling: $4+4=7$, but $4\times4=16$. The product of two operators is a new operator, and the product of the two four-dimensional families fills the whole enveloping algebra.
+of complex dimension $4\times4=16$. This is the doubling: $4+4=7$, but $4\times4=16$. The product of two operators is a new operator, and the product of the two four-dimensional families fills the whole operator algebra.
 
 The count is exact on the Peirce basis. With $\mathcal P=(\tilde\Pi_+,\vec\Upsilon_y,\vec\Upsilon_x,\tilde\Pi_-)$, the sixteen products $L_{P_i}R_{P_j}$ are, up to a permutation, the sixteen matrix units $E_{rc}$ of $M_4(\mathbb C)$ in the carrier order $\mathcal P$:
 $$
@@ -98,7 +98,7 @@ I checked this numerically: the sixteen products are linearly independent, and e
 
 The gammas are linear combinations of these products. That is why they are $4\times4$ matrices in the full $M_4(\mathbb C)$ and not elements of either regular image.
 
-**The two-sided products and the gamma matrices.** A gamma is not a sandwich in the strict sense: it is a star or one-sided operator. The two-sided product $T_{a,b}=L_aR_b$ sends $x$ to $axb$, and in the matrix representation the gammas are the three cases
+**The two-sided products and the gamma matrices.** A gamma is not a sandwich: it is a single two-sided operator $T_{a,b}=L_aR_b$ whose pair $(a,b)$ is fixed by the gamma index, or a star/left multiplication in the real-linear frame. A sandwich has the second slot tied to the first, $b=a^{*}$; the gamma frame leaves it free. The two-sided product $T_{a,b}=L_aR_b$ sends $x$ to $axb$, and in the matrix representation the gammas are the three cases
 $$
 \gamma^0=T_{1,\,i\vec e_x},\qquad
 \gamma^k=T_{i\vec e_k,\,\vec e_y},\qquad

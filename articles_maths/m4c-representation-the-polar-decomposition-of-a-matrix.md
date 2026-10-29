@@ -8,7 +8,7 @@ This article develops the matrix polar decomposition, its refinement by the dete
 
 **Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det\mathsf{M}_4(\tilde Q)=N^2$. A matrix is **positive** when it is Hermitian with non-negative eigenvalues, and **positive definite** when the eigenvalues are positive. The $*$-unitary group of the image is $\mathrm U(\mathbb{B})\cong U(2)$.
 
-**Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*; the groups are *$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the sandwich action is *The Sandwich in the $M_4(\mathbb{C})_L$ Model*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
+**Boundaries.** The polar decomposition of the element is *The Polar Decomposition of a Biquaternion*; the groups are *$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*; the sandwich action is *$M_4(\mathbb{C})_L$ Model : The Sandwich*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
 ## The Matrix Polar Decomposition
 
@@ -249,7 +249,7 @@ Every invertible regular matrix is uniquely $M=PV$ with $P$ positive definite He
 ## Further Reading
 
 - [$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m4c-representation-gl2-sl2-and-the-determinant.html), for the groups
-- [The Sandwich in the $M_4(\mathbb{C})_L$ Model](the-sandwich-in-the-m4c-l-model.html), for the action of the factors
+- [$M_4(\mathbb{C})_L$ Model : The Sandwich](the-sandwich-in-the-m4c-l-model.html), for the action of the factors
 - [$M_2(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m2c-representation-the-polar-decomposition-of-a-matrix.html), for the $2\times2$ version
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the algebra
 - [The Polar Decomposition of a N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the singular case

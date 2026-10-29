@@ -15,7 +15,7 @@ $$
 \mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
 
-**Boundaries.** The subspaces and their relations are *The Six Subspaces* and *The Subspaces and Their Relations*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the polar action on them is *The Polar Decomposition and Remarkable Subspaces*; the matrix form of that action is *The Sandwich in the $M_2(\mathbb{C})$ Model*.
+**Boundaries.** The subspaces and their relations are *The Six Subspaces* and *The Subspaces and Their Relations*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the polar action on them is *The Polar Decomposition and Remarkable Subspaces*; the matrix form of that action is *$M_2(\mathbb{C})$ Model : The Sandwich*.
 
 ## The Table
 
@@ -190,6 +190,6 @@ The six remarkable subspaces are the scalar matrices, the traceless matrices, th
 - [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the three splits and the intersections
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the forms restricted to the subspaces
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the subspaces
-- [The Sandwich in the $M_2(\mathbb{C})$ Model](the-sandwich-in-the-m2c-model.html), for the matrix action on the two Hermitian subspaces
+- [$M_2(\mathbb{C})$ Model : The Sandwich](the-sandwich-in-the-m2c-model.html), for the matrix action on the two Hermitian subspaces
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
 - [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the comparison of the two Hermitian subspaces

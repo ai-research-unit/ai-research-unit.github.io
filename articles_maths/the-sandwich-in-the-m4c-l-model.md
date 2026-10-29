@@ -1,4 +1,4 @@
-# __The Sandwich in the $M_4(\mathbb{C})_L$ Model__
+# __$M_4(\mathbb{C})_L$ Model : The Sandwich__
 
 ## Introduction
 
@@ -8,11 +8,11 @@ $$
 $$
 In the regular model it is the congruence $X\mapsto MXM^{\dagger}$ on $4\times4$ matrices. On the anti-Hermitian half the congruence is a Lorentz transformation on a four-dimensional real subspace; on the Hermitian half it is a congruence of a real quadratic form, governed by Sylvester's law of inertia. The two readings differ by the central factor $i$ that exchanges the halves.
 
-This article develops the sandwich in the regular model. It is the $4\times4$ counterpart of *The Sandwich in the $M_2(\mathbb{C})$ Model*.
+This article develops the sandwich in the regular model. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Sandwich*.
 
 **Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian elements, and $\mathbb{M}_-$, the anti-Hermitian elements. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det M=N^2$. Write $r=\lvert N\rvert^{1/2}=\lvert\det M\rvert^{1/4}$.
 
-**Boundaries.** The sandwich as an operator is *Operators of the Polar Word: The Common Framework*; the polar decomposition is *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the $2\times2$ version is *The Sandwich in the $M_2(\mathbb{C})$ Model*.
+**Boundaries.** The sandwich as an operator is *Operators of the Polar Word: The Common Framework*; the polar decomposition is *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Sandwich*. The sixteen basis matrices are *$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
 
 ## The Congruence
 
@@ -148,6 +148,6 @@ The sandwich is the congruence $X\mapsto MXM^{\dagger}$ on the regular matrices.
 
 - [$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the factors
 - [$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the subspaces
-- [The Sandwich in the $M_2(\mathbb{C})$ Model](the-sandwich-in-the-m2c-model.html), for the $2\times2$ version
+- [$M_2(\mathbb{C})$ Model : The Sandwich](the-sandwich-in-the-m2c-model.html), for the $2\times2$ version
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the subspaces
 - [Operators of the Polar Word: The Common Framework](operators-of-the-polar-word-the-common-framework.html), for the operator

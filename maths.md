@@ -6744,6 +6744,9 @@
 <a href="articles_maths/two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>
 <!-- the products $L_{\tilde A}R_{\tilde B}(\tilde Y)=\tilde A\tilde Y\tilde B$ of a left and a right multiplication; composition, the adjoint that swaps the two parameters, and the type, form-preserving and multiplicativity criteria of the family, with no norm entering; the isometry side: the two cosets $\pm\mathrm{Ad}_{\tilde A}$, of complex dimension three in $O_4(\mathbb{C})$, every unit acting with no condition on the parameter, the quadratic form $\mathrm{Sc}(\tilde A^2)$ not multiplicative so its shells $\{\pm1\}$ are not groups, the kernel $\mathbb{C}^\times$ with the normalised section $SL_2(\mathbb{C})$, and the reflections of determinant $-1$, outside the two-sided family; the section absorbs the retired *The Pin and Spin Groups of the Biquaternion Algebra* -->
 
+<a href="articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</a>
+<!-- the sixteen two-sided operators $T_{\mu\nu}=L_\mu R_\nu$ as a basis of $M_4(\mathbb{C})$: the four left matrices of the model, the four right matrices $R_b=D L_{b^{\natural}}D$, the table in signed-permutation notation with the sixteen matrices written out, the composition $T_{a,b}T_{c,d}=T_{ac,db}$, the trace $4a_tb_t$, the determinant $N(a)^2N(b)^2$, the Hilbert–Schmidt orthogonality and the signed closure; the Kronecker form $S(\mathsf{M}_2(b)^{\mathsf T}\otimes\mathsf{M}_2(a))S^{-1}$ at the $M_2$ level, and why the Kronecker product of two $4\times4$ matrices is not the construction; the sandwich as the member $T_{Q,Q^{*}}$, and the gamma matrices as five members with free second parameter. -->
+
 <a href="articles_maths/one-sided-operators-on-the-biquaternion-algebra.html">One-Sided Operators on the Biquaternion Algebra</a>
 <!-- the left and the right multiplications $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$ and $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$, their composition laws and their adjoint: association swaps the two families, the self-adjoint sector is the centre, the skew sector is trivial, and the one-sided automorphisms of the form are $\pm\mathrm{id}$ -->
 
@@ -6777,10 +6780,10 @@
 <a href="articles_maths/the-sandwich-of-a-n-degenerate-spectrally-degenerate-biquaternion.html">The Sandwich of a N-Degenerate, Spectrally Degenerate Biquaternion</a>
 <!-- the sandwich of a nilpotent: rank one and square-zero, the single chain $\tilde\Pi_-\mapsto4a^2\tilde\Pi_+\mapsto0$, the image the null line $\mathbb{C}\tilde\Pi_+$, the kernel hyperplane, the Jordan form $J_2(0)\oplus0\oplus0$, the scalar collapse $\Theta_{\tilde Q}=4a^2\Theta_{\tilde Q_0}$ through the nilpotent partial isometry, the orthogonal singular slots, and the unipotent Lorentz flow. -->
 
-<a href="articles_maths/the-sandwich-in-the-m2c-model.html">The Sandwich in the $M_2(\mathbb{C})$ Model</a>
+<a href="articles_maths/the-sandwich-in-the-m2c-model.html">$M_2(\mathbb{C})$ Model : The Sandwich</a>
 <!-- the sandwich as the congruence $MXM^{\dagger}$, the preservation of the two halves, the Lorentz action on the anti-Hermitian half, the congruence on the Hermitian half, the factor $r^4$ and the image $CO^{+}(1,3)$. -->
 
-<a href="articles_maths/the-sandwich-in-the-m4c-l-model.html">The Sandwich in the $M_4(\mathbb{C})_L$ Model</a>
+<a href="articles_maths/the-sandwich-in-the-m4c-l-model.html">$M_4(\mathbb{C})_L$ Model : The Sandwich</a>
 <!-- the congruence, the two halves, the Lorentz action, the determinant scaling and the conformal group. -->
 
 ### Topology
