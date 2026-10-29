@@ -4,7 +4,7 @@
 
 This article computes eight matrices, one after another, through the same checklist: the biquaternion coordinates, the trace and the determinant, the characteristic and minimal polynomials, the spectrum, the rank, the diagonalising matrix or the Jordan chain, the commutant, the spectral projectors, the polar factors and the normality flags. The eight are chosen so that each exhibits one structure: a scalar, a Jordan block, a matrix with distinct eigenvalues, a singular matrix, a rank-one matrix, a $*$-unitary matrix, a Hermitian matrix and a normal matrix that is neither Hermitian nor $*$-unitary.
 
-The article is the matrix counterpart of *Worked Examples of Eigenbasis of a Biquaternion* and *Worked Examples of Exponential Polar Decomposition of Biquaternions*: the same kind of computation, read in the model $\mathsf{M}_2$ rather than in the algebra.
+The article is the matrix counterpart of *Worked Examples of an Eigenbasis of a Biquaternion* and *Worked Examples of Exponential Polar Decomposition of Biquaternions*: the same kind of computation, read in the model $\mathsf{M}_2$ rather than in the algebra.
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, its matrix is
 
@@ -396,5 +396,5 @@ The eight matrices are read through one checklist: coordinates, trace and determ
 - [$M_2(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m2c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the rank-one and determinantal readings
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the trace and the determinant
 - [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m2c-representation-gl2-sl2-and-the-determinant.html), for the group reading
-- [Worked Examples of Eigenbasis of a Biquaternion](worked-examples-of-eigenbasis-of-a-biquaternion.html), for the same computations in the algebra
+- [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for the same computations in the algebra
 - *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the polar computations in the algebra

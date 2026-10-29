@@ -129,7 +129,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html)
 - [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
 - [$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix](../articles_maths/m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html)
-- [Worked Examples of Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-eigenbasis-of-a-biquaternion.html)
+- [Worked Examples of an Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.html)
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html)
 - [$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix](../articles_maths/m2c-model-the-jordan-basis-and-the-jordanising-matrix.html)
 - [$M_4(\mathbb{C})_L$ Model : The Jordan Basis and the Jordanising Matrix](../articles_maths/m4c-model-the-jordan-basis-and-the-jordanising-matrix.html)

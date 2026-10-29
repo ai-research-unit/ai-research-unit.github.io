@@ -1,4 +1,4 @@
-# __Worked Examples of Eigenbasis of a Biquaternion__
+# __Worked Examples of an Eigenbasis of a Biquaternion__
 
 ## Introduction
 
