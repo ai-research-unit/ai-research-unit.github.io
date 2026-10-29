@@ -286,8 +286,6 @@ Each of the following is an algebra of the corpus that has no identity, with the
 
 - **The zero algebra.** The algebra $\{0\}$ has $1 = 0$ and is the degenerate case of §*Trivial Cases and the Hypothesis $1 \neq 0$*; it is the unique unital algebra whose identity is also its zero element.
 
-- **The commutator algebra $A^-$.** It has no identity for nonzero $A$: an identity $e$ of any algebra satisfies $e \cdot e = e$, while the product of $A^-$ is the commutator, so $e \cdot e = [e,e] = 0$ and hence $e = 0$, which forces $A = 0$. The construction is that of *Associative Algebras*, §*The Universal Enveloping Algebra*, and it shows that a non-associative algebra of the corpus may be non-unital as well, for a reason independent of the failure of associativity.
-
 These are the non-unital algebras of the corpus, and they are not deficient for it: each is an algebra in the sense fixed in *Algebras*, and a construction that needs an identity is applied to its unitisation, §*The Unitisation*.
 
 ## Summary
@@ -298,7 +296,7 @@ The **unit group** $A^\times$ is a group; it is specialised to $\mathrm{GL}_n(R)
 
 An **idempotent** $e$, one with $e^2 = e$, gives the **Peirce decomposition** $A = eAe \oplus eAf \oplus fAe \oplus fAf$ with $f = 1_A - e$, a direct sum of $R$-submodules whose diagonal corners $eAe$ and $fAf$ are subalgebras with identities $e$ and $f$ and whose products obey $(e_iAe_j)(e_kAe_l) \subseteq \delta_{jk}e_iAe_l$. The decomposition is generally finer than the decomposition of $A$ by its ideals: when $e$ is **central** the two off-diagonal corners vanish and the sum becomes a product $A \cong Ae \times A(1_A - e)$ of unital algebras with identities $e$ and $1_A - e$, and when $e$ is not central, as for $E_{11} \in M_2(k)$, the Peirce pieces are not ideals and no product is obtained. The trivial idempotents $0$ and $1_A$ give nothing, the division algebras and the field $\mathbb{C}$ have no others, and the split-complex algebra with its two central idempotents $(1 \pm j)/2$ is the smallest case in which the product is nontrivial.
 
-The non-unital algebras of the corpus are the polynomials of positive degree, the square-zero ideals, the proper ideals that carry no identity of their own, the commutator algebra $A^-$, and the zero algebra; each is pointed to its own article, and a proper ideal that does carry an identity, such as the augmentation ideal of $k[\mathbb{Z}/2]$ over a field of characteristic not $2$, is a unital algebra and not on the list.
+The non-unital algebras of the corpus are the polynomials of positive degree, the square-zero ideals, the proper ideals that carry no identity of their own, and the zero algebra; each is pointed to its own article, and a proper ideal that does carry an identity, such as the augmentation ideal of $k[\mathbb{Z}/2]$ over a field of characteristic not $2$, is a unital algebra and not on the list.
 
 ## Summary of Notation
 
@@ -312,7 +310,6 @@ The non-unital algebras of the corpus are the polynomials of positive degree, th
 | unit, $u$ | An invertible element, as fixed in *Rings*, §*Units*; the corpus also says of a ring that it "need not have a unit" in the sense of an identity, the sense this article calls unital |
 | $A^\times$ | The unit group, as in *Centre, Units, Zero Divisors and Division Algebras*, §*Units* |
 | $\mathrm{GL}_n(R) = M_n(R)^\times$ | The units of the matrix algebra, $\det A \in R^\times$, as in *Matrix Algebras* |
-| $x \bullet y = \tfrac12(xy + yx)$ | The symmetrised product, unital with identity $I$ in $M_n(k)$; *Jordan Algebras* writes the same symmetrisation as $xy + yx$, differing by the unit $2$ |
 | $k^\times G \subseteq k[G]^\times$ | Units of a group algebra over a field $k$, as in *Group Algebras*, §*Units and Zero Divisors* |
 | $(x) \subseteq R[x]$ | The polynomials of positive degree, a non-unital algebra |
 | $A^+ = A \oplus R$ | The unitisation, with $(a,r)(b,s) = (ab+rb+sa, rs)$ and identity $(0,1)$; not the symmetrised algebra $A^+$ of *Jordan Algebras* |

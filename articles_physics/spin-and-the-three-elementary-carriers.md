@@ -30,22 +30,22 @@ The article has two theses. First, the **three carrier types are the elementary 
 
 ## The Three Elementary Carriers
 
-| carrier | action | complex dimension | weights of $\tfrac12\tilde\Xi$ | $j$ | physical reading |
+| carrier | action | complex dimension | weights of $\tilde S_{\vec u}$ | $j$ | physical reading |
 |---|---|---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | $\operatorname{ad}$ | $1$ | $0$ | $0$ | scalar, no internal index |
 | $S_+=\mathbb{B}\tilde\Pi_+$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | two-state spinor |
 | $S_-=\mathbb{B}\tilde\Pi_-$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | the second copy |
 | $V=\ker\operatorname{tr}$ | $\operatorname{ad}$ | $3$ | $+1,0,-1$ | $1$ | vector, three polarisations |
 
-The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.
+The definition is the pair-first one of *The Spin of a Biquaternion*: a spin pair satisfies $[U,V]\neq0$, $[[U,V],U]=2U$ and $[[U,V],V]=-2V$; its spin element is the antisymmetric part of the product, and the spin is the highest weight of that element on the carrier. The frame supplies the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$, with spin element $\tilde S_{\vec u}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12\tilde\Xi$ and triple $(\tilde S_{\vec u},\vec\Upsilon_-,\vec\Upsilon_+)$ satisfying $[\tilde S_{\vec u},\vec\Upsilon_-]=\vec\Upsilon_-$, $[\tilde S_{\vec u},\vec\Upsilon_+]=-\vec\Upsilon_+$ and $[\vec\Upsilon_-,\vec\Upsilon_+]=2\tilde S_{\vec u}$. The frame root is $\tilde\Xi=2\tilde S_{\vec u}$. The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.
 
 ## Why There Is No Fourth
 
 Here *elementary* means an isomorphism class of nonzero irreducible invariant subspaces of $\mathbb{B}$ under one of the two actions, left multiplication or the commutator. Two subspaces define the same carrier when the actions are isomorphic. A general Lie-algebra module is not of this form. The left action has one irreducible type: every minimal left ideal is isomorphic to $S$, and $S_+$ and $S_-$ are two representatives. The adjoint action has two: the centre $\mathbb{C}_{\mathbb{B}}$ and the traceless part $V$. The algebra itself is reducible under both.
 
-The algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and $M_2(\mathbb{C})$ is simple. It has one isomorphism class of simple modules, of complex dimension two, and every finite-dimensional left module is a direct sum of copies of it. On that module the root $h=\tilde\Xi$ is a traceless $2\times2$ matrix with $h^2=1$, so its eigenvalues are $\pm1$ and the weights of $J_3=\tfrac12h$ are $\pm\tfrac12$. The associative left action therefore sees only $j=\tfrac12$. A unital one-dimensional module would be a unital algebra map $M_2(\mathbb{C})\to\mathbb{C}$; its kernel is a two-sided ideal, so by simplicity it is $0$ or the whole algebra, and neither is possible. Hence no one-dimensional module exists, and the left action has no $j=0$.
+The algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and $M_2(\mathbb{C})$ is simple. It has one isomorphism class of simple modules, of complex dimension two, and every finite-dimensional left module is a direct sum of copies of it. On that module the spin element $\tilde S_{\vec u}=\tilde\Xi/2$ is a traceless $2\times2$ matrix with $(2\tilde S_{\vec u})^2=1$; its weights are $\pm\tfrac12$ and $j=\tfrac12$. The associative left action therefore sees only $j=\tfrac12$. A unital one-dimensional module would be a unital algebra map $M_2(\mathbb{C})\to\mathbb{C}$; its kernel is a two-sided ideal, so by simplicity it is $0$ or the whole algebra, and neither is possible. Hence no one-dimensional module exists, and the left action has no $j=0$.
 
-The adjoint action is a Lie action. As a Lie algebra, $\mathbb{B}=\mathbb{C}e_t\oplus V$ with $V\cong\mathfrak{sl}_2(\mathbb{C})$. The centre is trivial, so $j=0$; the traceless part is the three-dimensional irreducible module, with weights $+2,0,-2$ under $\mathrm{ad}_h$ and $+1,0,-1$ under $\mathrm{ad}_{h/2}$, so $j=1$. There is no other irreducible invariant subspace.
+The adjoint action is a Lie action. As a Lie algebra, $\mathbb{B}=\mathbb{C}e_t\oplus V$ with $V\cong\mathfrak{sl}_2(\mathbb{C})$. The centre is trivial, so $j=0$; the traceless part is the three-dimensional irreducible module, with weights $+1,0,-1$ under $\mathrm{ad}_{\tilde S_{\vec u}}$, so $j=1$. There is no other irreducible invariant subspace.
 
 The two constructions together give the elementary list
 $$
@@ -70,7 +70,7 @@ No observed elementary particle carries another spin. Four boundaries keep the t
 - **The graviton is not observed.** Spin $2$ is the quantum of the metric deviation, constructed from the symmetric traceless square of $V$. It belongs to the tensor construction, not to $\mathbb{B}$ alone.
 - **Hadrons are composites.** The $\Delta(1232)$ and the $\Omega^-$ have spin $\tfrac32$, the tensor mesons have spin $2$, and the $N(1680)$ has spin $\tfrac52$; all are bound states of quarks and gluons, not elementary particles.
 - **The match is not a prediction.** The Standard Model assigns the spins by hand. The algebra reproduces the set $\{0,\tfrac12,1\}$ and says nothing about which particle carries which spin, nor about masses, generations, charges or colours.
-- **The spin is the rotation spin.** The number $j$ is half the highest weight of the frame root, equivalently the highest weight of the rotation generator $h/2$ on the carrier, for $\mathrm{Spin}(3)\subset\mathbb B^{\times}$; the full Lorentz label is $(j_L,j_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
+- **The spin is the rotation spin.** The number $j$ is the highest weight of the spin element $\tilde S_{\vec u}=\tilde\Xi/2$ on the carrier, the rotation generator for $\mathrm{Spin}(3)\subset\mathbb B^{\times}$; the full Lorentz label is $(j_L,j_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
 
 Two further physical qualifications belong to the carrier, not to the table.
 

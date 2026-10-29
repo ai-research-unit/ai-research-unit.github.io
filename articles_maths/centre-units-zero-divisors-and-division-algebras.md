@@ -7,7 +7,7 @@ The ideal theory of *Ideals and Quotients of Algebras* divides an algebra by its
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$, and $A$ is an $R$-algebra. The centre, the group of units and the notion of a zero divisor are meaningful for a general algebra, but the theory is at its sharpest for a **unital associative** algebra, and most statements below assume unitality and associativity and say so. The base ring stays a commutative ring except where the classical theorems require a field; those places are flagged.
 
-The article closes with the **regular module** $A_A$: the algebra acting on itself by right multiplication. Its submodules are the right ideals, and the simplicity of $A_A$ is exactly the division-algebra condition. This is the bridge from elements to modules, and it prepares the module theory of category 08.
+The article closes with the **regular module** $A_A$: the algebra acting on itself by right multiplication. Its submodules are the right ideals, and the simplicity of $A_A$ is exactly the division-algebra condition. This is the bridge from elements to modules, and it prepares the module theory of *Linear Spaces over Algebras*.
 
 ## The Centre
 

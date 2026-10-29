@@ -127,7 +127,7 @@ This is the origin of the Hecke algebra and of the name of its parameter: the al
 
 *Proof.* The count is Tits' theorem together with the number of conjugacy classes, and the two displayed actions satisfy the quadratic relation: $q^2 = (q-1)q+q$ for the trivial one and $1 = -(q-1)+q$ for the sign one.
 
-**Remark (the degenerate values).** At a root of unity the algebra need not be semisimple, and its representation theory at such a value is the **modular** theory of the Hecke algebra, whose cells and crystals are the deep part of the subject; the classification of the simple modules at a root of unity is due to Kazhdan–Lusztig's conjectures in the Lie-theoretic case and to the theory of the canonical basis in general, and it is where the algebra interacts with *Quantum Groups*, which is its quantum-group counterpart in the category *Algebras* above. That theory uses the structure of the crystal and the geometry of a building, hence Part III, and it is not used here.
+**Remark (the degenerate values).** At a root of unity the algebra need not be semisimple, and its representation theory at such a value is the **modular** theory of the Hecke algebra, whose cells and crystals are the deep part of the subject; the classification of the simple modules at a root of unity is due to Kazhdan–Lusztig's conjectures in the Lie-theoretic case and to the theory of the canonical basis in general, and it is where the algebra interacts with *Quantum Groups*, which is its quantum-group counterpart in the category *Higher Algebra* below. That theory uses the structure of the crystal and the geometry of a building, hence Part III, and it is not used here.
 
 ## The Degenerate Cases: $q = 0$ and the NilCoxeter Algebra
 

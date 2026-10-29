@@ -240,7 +240,7 @@ which is the signed sum of the six associators. Collecting the twelve monomials 
 
 **Corollary.** An associative algebra is Lie-admissible, because its associator vanishes; and a commutative algebra is Lie-admissible, because its commutator vanishes. The identity of the theorem is thus the exact measure of what associativity contributes to the Jacobi identity, and the case of the commutative algebras shows that the criterion is not a disguised form of associativity.
 
-The first clause of the corollary is the standard construction of a Lie algebra from an associative one, the passage from $A$ to its commutator algebra. The commutator algebra is defined in *Associative Algebras*, §*The Universal Enveloping Algebra*, and it is exhibited there as one of the algebras that fail associativity, in §*Algebras That Fail Associativity*; the bracket with its Jacobi identity is *The Commutator Operator*, §*The Commutator Bracket*, where the identity is proved and not repeated here.
+The first clause of the corollary is the standard construction of a Lie algebra from an associative one, the passage from $A$ to its commutator algebra. The commutator algebra is defined in *The Commutator Operator*, §*The Commutator Bracket*, where the bracket with its Jacobi identity is proved and not repeated here.
 
 ### Jordan-Admissible Algebras
 

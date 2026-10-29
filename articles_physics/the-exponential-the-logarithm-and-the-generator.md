@@ -177,7 +177,7 @@ The first three rows are the reversible processes. Every unit is $\exp\tilde L$,
 
 The fourth row is the zero divisor. It has no logarithm because it is not a unit, and it has no generator because it is not in the image of the exponential. The cone is the wall: a process on the cone cannot be continuously undone inside the algebra.
 
-The fifth row is the irreversible channel. An irreversible completely positive trace-preserving map is a sum of conjugations, not a single conjugation, so it is not of the form $\tilde U(\cdot)\tilde U^{-1}$ and it has no single algebraic generator. When such a map has a generator, the generator is a Lindbladian superoperator acting on the state space, not an element of $\mathbb{B}$. That object belongs to *Quantum Channels and the Reversible/Irreversible Dichotomy*, and it is a different kind of generator: a generator of a semigroup of maps, not the logarithm of one element.
+The fifth row is the irreversible channel. An irreversible completely positive trace-preserving map is a sum of conjugations, not a single conjugation, so it has no single algebraic generator. When such a map has a generator, the generator is a Lindbladian superoperator acting on the state space, not an element of $\mathbb{B}$. That object belongs to *Quantum Channels and the Reversible/Irreversible Dichotomy*, and it is a different kind of generator: a generator of a semigroup of maps, not the logarithm of one element.
 
 The algebra therefore answers the question in one direction only. It supplies the generators of the reversible processes, and it says that the irreversible ones have none of the same kind. It does not supply the Lindbladian, the dynamics, or the arrow of time.
 

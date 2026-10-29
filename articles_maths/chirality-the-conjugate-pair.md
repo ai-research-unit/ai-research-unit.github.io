@@ -159,6 +159,8 @@ $$
 
 *Proof.* The first display is the definition of the $\epsilon$-dressed conjugate action: on $S$ the element $i$ acts as $iI$, and on $S^{\mathrm{c}}$ it acts as $\epsilon\overline{iI}\epsilon^{-1}=-iI$. The second is the product with the scalar $iI_4$ that represents $j$.
 
+*Remark (the dictionary sign).* The representative $\rho(j)=iI_4$ is what makes $\rho(\chi)=+\gamma_5$. The $\mathbb{C}$-linear extension of the algebra dictionary $\mathsf{M}_4:\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ must then carry $\mathsf{M}_4(j)=-i_{\mathrm{Cl}}$, since $\mathsf{M}_4(i)=-\omega$ and $\mathsf{M}_4(\chi)=\mathsf{M}_4(i)\mathsf{M}_4(j)$ is to equal $+\gamma_5$. The other extension, $\mathsf{M}_4(j)=+i_{\mathrm{Cl}}$, sends $\chi$ to $-\gamma_5$ and exchanges $e_+$ and $e_-$, that is, the labels left and right. The exchange is a relabelling of the two summands and not a complex conjugation of the spinor: it leaves $\bar\Psi\Psi$ invariant and reverses $\bar\Psi\gamma_5\Psi$. The two signs must not be mixed in one computation. The dictionary is [The Dirac Algebra and Biquaternions: A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html).
+
 **Theorem (the chiral projectors).** The operators
 
 $$
@@ -230,13 +232,13 @@ The proposition is the precise reason the mass is a pairing and not an operator 
 
 **The corpus has one definition of spin, and three other words sit beside it. None of the three is a second definition.**
 
-**The definition.** In *The Spin of a Biquaternion*, a root $h=2e-1$ acts on a carrier $(W,\rho)$, its eigenvalues are the weights, and the spin is half the highest weight,
+**The definition.** In *The Spin of a Biquaternion*, a spin triple $(H,U,V)$ of the complexified algebra acts on a carrier $(W,\rho)$, the eigenvalues of $\rho(H)$ are the weights, and the spin is half the highest weight,
 
 $$
 j=\frac{\lambda_{\max}(\rho(h))}{2}.
 $$
 
-On the Peirce carrier the weights of $h$ are $\pm1$, so $j=\tfrac12$. On the traceless part under the adjoint action the weights of $h$ are $+2,0,-2$, so $j=1$. This is the only definition used in the corpus. The half-angle $\theta/2$ of the polar decomposition is the exponential coordinate of the weight $\tfrac12$ on the spinor carrier: the rotor $\exp(\theta\vec u/2)$ acts on a single slot with exponents $\pm i\theta/2$. The half-angle is not the spin and it is not a normalisation of the spin. The factor $\tfrac12$ is not a chirality; it is why a spinor rotation has period $4\pi$ rather than $2\pi$.
+On the Peirce carrier the Cartan is the frame root $H=h=\tilde\Xi$, its weights are $\pm1$, so $j=\tfrac12$. On the traceless part under the adjoint action the weights of $h$ are $+2,0,-2$, so $j=1$. This is the only definition used in the corpus. The half-angle $\theta/2$ of the polar decomposition is the exponential coordinate of the weight $\tfrac12$ on the spinor carrier: the rotor $\exp(\theta\vec u/2)$ acts on a single slot with exponents $\pm i\theta/2$. The half-angle is not the spin and it is not a normalisation of the spin. The factor $\tfrac12$ is not a chirality; it is why a spinor rotation has period $4\pi$ rather than $2\pi$.
 
 **The Peirce index.** The sign $P=R_{i\vec e_z}$ grades $S_+\cong S_-$. It is a **copy label**, not a spin and not a chirality. It says which of two isomorphic copies a vector lies in.
 

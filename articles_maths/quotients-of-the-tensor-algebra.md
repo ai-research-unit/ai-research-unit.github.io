@@ -5,7 +5,7 @@
 
 The tensor algebra $T(V)$ of *Tensor Powers and the Free Algebra* is the free associative algebra on the module $V$, and its universal property says that every linear map $V \to A$ into a unital associative algebra extends uniquely to an algebra homomorphism $T(V) \to A$. An algebra presented by generators and relations is obtained by imposing relations, that is, by dividing $T(V)$ by the two-sided ideal they generate. This article develops that general construction: which ideals of $T(V)$ are available, what universal property the quotient satisfies, how the grading behaves, and what the construction produces on the number systems.
 
-The construction is general. The **symmetric algebra** $\operatorname{Sym}(V)$, the **exterior algebra** $\Lambda(V)$ and the **Clifford algebra** $\mathrm{Cl}(V,\mathfrak{Q})$ are three particular quotients of $T(V)$, by relations of degree two, and they are named here only to locate them within the general framework; their theory — bases, universal properties, determinants, quadratic forms — belongs to categories 06, 07 and 14 and is not developed in this article. What is fixed here is the mechanism of quotienting, not any one quotient.
+The construction is general. The **symmetric algebra** $\operatorname{Sym}(V)$, the **exterior algebra** $\Lambda(V)$ and the **Clifford algebra** $\mathrm{Cl}(V,\mathfrak{Q})$ are three particular quotients of $T(V)$, by relations of degree two, and they are named here only to locate them within the general framework; their theory — bases, universal properties, determinants, quadratic forms — belongs to categories 06, 07 and 11 and is not developed in this article. What is fixed here is the mechanism of quotienting, not any one quotient.
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $V$ is an $R$-module. The ideal theory of *Ideals and Quotients of Algebras* is used throughout, and the tensor algebra is assumed from *Tensor Powers and the Free Algebra*.
 
@@ -141,9 +141,9 @@ $$
 v \otimes w + w \otimes v = \mathfrak{b}(v,w)\cdot 1, \qquad v \otimes v = \mathfrak{Q}(v)\cdot 1 \qquad (v, w \in V),
 $$
 
-so the symmetric part of the product in degree two is fixed by $\mathfrak{b}$ and only the alternating part is free; the two families are equivalent over any $R$ in which $2$ is invertible. Its theory belongs to category 14.
+so the symmetric part of the product in degree two is fixed by $\mathfrak{b}$ and only the alternating part is free; the two families are equivalent over any $R$ in which $2$ is invertible. Its theory belongs to category 11.
 
-The quadratic form $m$ and the Clifford algebra it defines are objects of **Part II**, treated in *Clifford Algebras*; the construction is named here only because it is the third quotient of $T(V)$, and nothing in this part is proved with it.
+The quadratic form $m$ and the Clifford algebra it defines are objects of **this Part**, treated in *Clifford Algebras*; the construction is named here only because it is the third quotient of $T(V)$, and nothing in this part is proved with it.
 
 **The universal enveloping algebra.** For a Lie algebra $\mathrm{G}$ with bracket $[\cdot,\cdot]$, the **universal enveloping algebra** is
 

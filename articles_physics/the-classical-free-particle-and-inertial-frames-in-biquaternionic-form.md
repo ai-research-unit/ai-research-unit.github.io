@@ -143,7 +143,7 @@ $$
 R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{\mathrm r} \in \mathbb{H}_{\mathbb{B}} ,
 $$
 
-which is $*$-unitary, $R^{-1} = R^{\natural} = R^{*}$, and acts on the vector part by $R(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)R^{-1}$, rotating $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ by the angle $\theta$ about the axis $\vec u_{\mathrm r}$. A general Lorentz transformation has its rotor in the full algebra. The classification is that of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, and the action of the real-quaternion rotors on the vector part is the same adjoint action that the companion article *The Reflection and the Rotation in Biquaternionic Form* develops.
+which is $*$-unitary, $R^{-1} = R^{\natural} = R^{*}$, and acts on the vector part by $R(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)R^{*}$, rotating $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ by the angle $\theta$ about the axis $\vec u_{\mathrm r}$. A general Lorentz transformation has its rotor in the full algebra. The classification is that of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, and the action of the real-quaternion rotors on the vector part is the same adjoint action that the companion article *The Reflection and the Rotation in Biquaternionic Form* develops.
 
 ### The Relativity Principle
 
@@ -257,7 +257,7 @@ The transcription is transparent under the isomorphism $\mathsf{M}_2$ of the alg
 | Four-force $f^\mu$ | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\mathbb{M}_-$ |
 | Lorentz transformation $\Lambda^\mu{}_\nu$ | rotor conjugation $\tilde U_{\mathrm L}(\cdot)\tilde U_{\mathrm L}^{*}$ | rotor in $\mathbb{B}$ |
 | Boost | $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | $\mathbb{M}_+$ |
-| Spatial rotation | $R(\cdot)R^{-1}$ | $\mathbb{H}_{\mathbb{B}}$ |
+| Spatial rotation | $R(\cdot)R^{*}$ | $\mathbb{H}_{\mathbb{B}}$ |
 | Galilean boost (NR limit) | $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \mapsto (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \vec Vt'$, $t' \mapsto t'$ | shear of $\mathbb{M}_-$ |
 
 The table shows that the algebra makes no new prediction for the free particle. Its value is classificatory: it separates the objects that live in the material sector from the transformations that act on it, and it separates the compact rotations, which survive the non-relativistic limit exactly, from the boosts, which do not.

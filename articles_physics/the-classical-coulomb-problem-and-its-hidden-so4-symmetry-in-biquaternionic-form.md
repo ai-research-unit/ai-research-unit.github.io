@@ -234,7 +234,7 @@ The biquaternion algebra contains the following objects of the Coulomb problem.
 
 **The real three-space.** The vectors $\vec r, \vec p, \vec L, \vec A$ all lie in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-$, which is the configuration three-space. The angular momentum is the vector part of the product $\vec r\vec p$, $\vec L = \operatorname{Vect}(\vec r\vec p)$, and its conservation is the vanishing of the commutator $[\vec r,\vec F]$.
 
-**The rotation group.** The unit real quaternions $R$ act by $R(\cdot)R^{-1}$ and rotate all six generators as vectors: $R\vec LR^{-1}$ is the rotated angular momentum, and the same for $\vec A$. The algebra carries the $\mathrm{SU}(2)$ of spatial rotations in its own commutator, $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$.
+**The rotation group.** The unit real quaternions $R$, for which $R^{*}=R^{-1}$, act by the Hermitian sandwich $R(\cdot)R^{*}$ and rotate all six generators as vectors: $R\vec LR^{*}$ is the rotated angular momentum, and the same for $\vec A$. The algebra carries the $\mathrm{SU}(2)$ of spatial rotations in its own commutator, $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$.
 
 **The central scalars.** The energy, the potential and the coupling are real multiples of $e_t$; the Casimir value $m\kappa^2/(8|E|)$ and the energy–eccentricity relation are scalar statements.
 

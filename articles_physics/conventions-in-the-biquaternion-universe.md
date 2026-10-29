@@ -298,7 +298,7 @@ $$
 \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \bar Q_te_t - \bar Q_x\vec e_x - \bar Q_y\vec e_y - \bar Q_z\vec e_z, \qquad \tilde Q^{\flat} = -\tilde Q^{*} .
 $$
 
-**The fourth mark is a sign, not a fourth conjugation.** $\flat=-{}^{*}$ is the negative of the star, it reverses products with a twist, $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$, and it is an involution of the underlying real space only, not of the ring. Its fixed space is the material sector $\mathbb{M}_-$, and the sector split is its work in the series. It is retained for that split, for the bilinear pairings built on it, and for the real-form question of Dirac against Majorana fermions. It is not the mass — the retired form $\tilde\nabla\tilde\Psi=m\tilde\Psi^\flat$ conflated the two — and it is not the charge conjugation of the module, which is the conjugate-linear pseudoautomorphism $\Pi A^{*}\Pi^{-1}$ owned by *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*.
+**The fourth mark is a sign, not a fourth conjugation.** $\flat=-{}^{*}$ is the negative of the star, it reverses products with a twist, $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$, and it is an involution of the underlying real space only, not of the ring. Its fixed space is the material sector $\mathbb{M}_-$, and the sector split is its work in the series. It is retained for that split, for the bilinear pairings built on it, and for the real-form question of Dirac against Majorana fermions. It is not the mass — the retired form $\tilde\nabla\tilde\Psi=m\tilde\Psi^\flat$ conflated the two — and it is not the charge conjugation of the module, the operation defined in *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*.
 
 **The biquaternion norm.** The natural sign carries the algebra's **biquaternion norm**,
 
@@ -1011,7 +1011,7 @@ The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, th
 
 ### The Spin Convention
 
-**The word spin has one definition.** It is $j=\lambda_{\max}(\rho(h))/2$ on a carrier $(W,\rho)$, under the frame root $h=2e-1$, and it is stated in *The Spin of a Biquaternion*. The **spin operator** is $\tilde S_{\vec u}=h/2$; the half-angle is its exponential coordinate; the Peirce index is a copy label; and the chirality is $\chi=ij$, the central sign of the complexification. A classical vector is a **spin vector**, or intrinsic angular momentum, and the continuous $2+1$ parameter is a **statistics parameter**; neither is a second definition.
+**The word spin has one definition.** It is $j=\lambda_{\max}(\rho(H))/2$ on a carrier $(W,\rho)$ of a spin triple $(H,U,V)$, with $[H,U]=2U$, $[H,V]=-2V$ and $[U,V]=H$; for a frame root $H=2e-1$. It is stated in *The Spin of a Biquaternion*. The **spin operator** is $\tilde S_{\vec u}=h/2$; the half-angle is its exponential coordinate; the Peirce index is a copy label; and the chirality is $\chi=ij$, the central sign of the complexification. A classical vector is a **spin vector**, or intrinsic angular momentum, and the continuous $2+1$ parameter is a **statistics parameter**; neither is a second definition.
 
 ## The Four-Vector Representation
 

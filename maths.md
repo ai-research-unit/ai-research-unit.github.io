@@ -616,9 +616,6 @@
 <a href="articles_maths/algebras-a-general-introduction.html">Algebras</a>
 <!-- modules over a commutative ring; what an algebra is (an $R$-module with a bilinear product); the relation to modules; associativity, unit and commutativity; ideals and quotients; constructions, including the tensor and free algebras. -->
 
-<a href="articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html">The Symmetric and Antisymmetric Parts of an Algebra Product</a>
-<!-- the splitting of a bilinear product into its commutative and its anticommutative half, $xy=x\bullet y+x\wedge y$ with $x\bullet y=\tfrac12(xy+yx)$ and $x\wedge y=\tfrac12(xy-yx)$, unique over a field of characteristic not $2$; the split as the exchange $x\otimes y\mapsto y\otimes x$ on the tensor square and as the direct sum of the symmetric products and the antisymmetric products, with the structure constants splitting as $\binom{n+1}{2}n$ and $\binom{n}{2}n$; the symmetrisation as the polarisation of the square, $(x+y)^2-x^2-y^2=2(x\bullet y)$; the Lie-admissible algebras, whose antisymmetrisation satisfies the Jacobi identity, with the associator criterion that decides it; the Jordan-admissible algebras, whose symmetrisation satisfies the Jordan identity; the independence of the two conditions, with a Lie-admissible algebra that is not Jordan-admissible and a Jordan-admissible algebra that is not Lie-admissible; the opposite algebra, and the relatives $x\bullet y+\lambda(x\wedge y)$ with the same symmetric half; the collapse of the split in characteristic $2$; and the uses in the operator layer, in the ternary product, in the biquaternion products and in deformation quantisation. -->
-
 <a href="articles_maths/associative-algebras.html">Associative Algebras</a>
 <!-- the associative algebras; associativity as a polynomial identity; the associator, and the power-associativity that outlives it; the free associative algebra and the tensor algebra; the universal enveloping algebra of a Lie algebra as the associative algebra attached to a non-associative one; the algebras that fail associativity. -->
 
@@ -697,75 +694,6 @@
 <a href="articles_maths/tensor-products-of-algebras.html">Tensor Products of Algebras</a>
 <!-- the product formula $(a\otimes b)(a'\otimes b')=(aa')\otimes(bb')$, unit, commuting images, the pushout, the coproduct, the free product. -->
 
-<a href="articles_maths/hopf-algebras.html">Hopf Algebras</a>
-<!-- algebras, coalgebras and bialgebras; the antipode. -->
-
-<a href="articles_maths/quantum-groups.html">Quantum Groups</a>
-<!-- quantised enveloping algebras; the quantum plane. -->
-
-<a href="articles_maths/deformation-quantization.html">Deformation Quantization</a>
-<!-- star products and formal deformations of an algebra; the relation to the Poisson algebras and to the deformation theory of this part. -->
-
-<a href="articles_maths/koszul-duality.html">Koszul Duality</a>
-<!-- Koszul algebras and their duals; the relation to quadratic algebras and to the operads of this part. -->
-
-<a href="articles_maths/differential-graded-algebras.html">Differential Graded Algebras</a>
-<!-- differential graded algebras and their homology; the relation to the homological algebra of this part. -->
-
-<a href="articles_maths/differential-graded-categories.html">Differential Graded Categories</a>
-<!-- differential graded categories and their modules; the relation to the derived categories of this part. -->
-
-<a href="articles_maths/a-infinity-and-l-infinity-algebras.html">A-Infinity and L-Infinity Algebras</a>
-<!-- $A_\infty$-algebras and their morphisms; the relation to the differential graded algebras of this part and to homotopy theory. -->
-
-<a href="articles_maths/calabi-yau-algebras.html">Calabi–Yau Algebras</a>
-<!-- Calabi–Yau algebras and their Hochschild homology; the relation to the derived categories of this part. -->
-
-<a href="articles_maths/module-categories.html">Module Categories</a>
-<!-- the category of modules over a ring; functors and natural transformations between module categories. -->
-
-<a href="articles_maths/abelian-and-grothendieck-categories.html">Abelian and Grothendieck Categories</a>
-<!-- additive and abelian categories; kernels, cokernels and exact sequences; the Freyd–Mitchell embedding theorem; the relation to the module categories of this part; the Grothendieck categories, the categories with a generator and all colimits, and the Gabriel–Popescu theorem. -->
-
-<a href="articles_maths/homological-algebra.html">Homological Algebra</a>
-<!-- chain complexes and homology; exact sequences and the snake lemma; projective and injective resolutions; the relation to the modules of this part. -->
-
-<a href="articles_maths/derived-functors.html">Derived Functors</a>
-<!-- left and right derived functors; the long exact sequence. -->
-
-<a href="articles_maths/ext-and-tor.html">Ext and Tor</a>
-<!-- the functors Ext and Tor and their interpretations; the universal coefficient theorem; the Künneth formula; the applications to algebraic topology belong to Part II. -->
-
-<a href="articles_maths/spectral-sequences.html">Spectral Sequences</a>
-<!-- the notion of a spectral sequence; filtration and convergence; the Grothendieck spectral sequence; the Leray–Serre sequence of a fibration belongs to Part II. -->
-
-<a href="articles_maths/derived-categories.html">Derived Categories</a>
-<!-- the derived category of an abelian category; triangulated categories; the relation to derived functors. -->
-
-<a href="articles_maths/k-theory-of-rings.html">K-Theory of Rings</a>
-<!-- the Grothendieck group $K_0$ of a ring and the projective modules that generate it; $K_1$ and the determinant; the higher K-groups are treated in Part II, where the topological constructions they need are available. -->
-
-<a href="articles_maths/hochschild-homology.html">Hochschild Homology</a>
-<!-- the Hochschild homology and cohomology of an algebra; the relation to the trace and to the determinant. -->
-
-<a href="articles_maths/cyclic-homology.html">Cyclic Homology</a>
-<!-- cyclic homology and its relation to Hochschild homology; the cyclic bicomplex; the Connes exact sequence relating the two; the trace map from Hochschild homology; the applications to the spectral triples and the noncommutative geometry of Part IV. -->
-
-<a href="articles_maths/deformation-theory.html">Deformation Theory</a>
-<!-- deformations of algebras and of modules; the Kodaira–Spencer map; obstruction theory; the applications to moduli belong to Part II. -->
-
-<a href="articles_maths/operads.html">Operads</a>
-<!-- operads and their algebras; the little disks operad; the relation to the algebras of this part; the homotopy-theoretic applications belong to Part II; the bar and cobar constructions, and the algebra of operads. -->
-
-<a href="articles_maths/topoi.html">Topoi</a>
-<!-- elementary and Grothendieck topoi; the logical and categorical content; the relation to the categories of this part; sheaves on a topological space belong to Part II. -->
-
-<a href="articles_maths/sheaves-on-sites.html">Sheaves on Sites</a>
-<!-- Grothendieck topologies and sites; sheaves on a site; the categorical content; the cohomological theory on a topological space belongs to Part II. -->
-
-<a href="articles_maths/descent-theory.html">Descent Theory</a>
-<!-- descent for sheaves and for modules; the relation to Grothendieck topologies; the geometric applications belong to Part II. -->
-
 ### Operator Theory
 
 <a href="articles_maths/the-sandwich-operator-on-an-algebra.html">The Sandwich Operator on an Algebra</a>
@@ -774,23 +702,14 @@
 <a href="articles_maths/the-sandwich-operators-on-the-peirce-components.html">The Sandwich Operators on the Peirce Components</a>
 <!-- the sandwich $T_{a,b}(x)=axb$ in the Peirce decomposition; the block from the source corner $A_{rs}$ to the target corner $A_{il}$ as $x\mapsto a_{ir}xb_{sl}$; the single-block sandwich of homogeneous parameters and the corner-shifting pattern; the diagonal sandwich of diagonal parameters; the elementary sandwiches $E_{ij}=T_{e_i,e_j}$ as the four Peirce projections, complete and pairwise orthogonal with $E_{ij}E_{kl}=\delta_{ik}\delta_{jl}E_{ij}$; the composition $T_{a,b}T_{c,d}=T_{ac,db}$ as the action of the enveloping algebra; the Kronecker form $a\otimes b^{\mathsf T}$ in the scalar case; and the matrix, split, upper-triangular and biquaternion examples. -->
 
-<a href="articles_maths/the-commutator-operator.html">The Commutator Operator</a>
-<!-- the commutator $x\mapsto [a,x]$ as an inner derivation; the inner derivations and the centre as their kernel. -->
-
 <a href="articles_maths/derivations-and-the-peirce-decomposition.html">Derivations and the Peirce Decomposition</a>
 <!-- the derivations of an algebra and the inner derivations $\operatorname{ad}_a$; the identity $\delta(e)=\delta(e)e+e\delta(e)$ and the theorem $\delta(e)\in N=A_{01}\oplus A_{10}$; the evaluation map $\operatorname{ev}_e:\operatorname{Der}(A)\to N$, its surjectivity by the inner derivation $\operatorname{ad}_{-x_{01}+x_{10}}$, and the exact sequence $0\to\operatorname{Der}(A,e)\to\operatorname{Der}(A)\to N\to0$; the Peirce-preserving derivations as the kernel, with diagonal block matrix, corner derivations and bimodule derivations coupled on $A_{01}A_{10}$ and $A_{10}A_{01}$; the decomposition $\delta=\operatorname{ad}_a+\delta_0$ with $a\in N$ unique and the corner-shifting blocks of $\operatorname{ad}_{a_{01}}$ and $\operatorname{ad}_{a_{10}}$; the central simple case $\operatorname{Der}(A)=\operatorname{Inn}(A)$, $\operatorname{Der}(A,e)=\operatorname{ad}_D$; the matrix, dual-number and split examples; and the Hochschild reading $Z^1=\operatorname{Der}$, $B^1=\operatorname{Inn}$. -->
-
-<a href="articles_maths/the-hochschild-differential-as-an-operator.html">The Hochschild Differential as an Operator</a>
-<!-- the Hochschild differential and its square-zero property; the cochain complex and the cohomology it defines. -->
 
 <a href="articles_maths/left-and-right-multiplication.html">Left and Right Multiplication</a>
 <!-- the one-sided multiplications of an algebra and the anti-homomorphism onto the opposite algebra; the associator as the obstruction to their commutation. -->
 
 <a href="articles_maths/left-and-right-multiplication-on-the-diagonal-peirce-part.html">Left and Right Multiplication on the Diagonal Peirce Part</a>
 <!-- the left and right multiplications $L_a(x)=ax$, $R_a(x)=xa$, their commutation $L_aR_b=R_bL_a=T_{a,b}$ and the regular representations; the idempotent operators $L_e,R_e$, their joint eigenspaces on the four Peirce corners, and the table of eigenvalues; the diagonal part $D=A_{00}\oplus A_{11}$ as the kernel of the commutator $\operatorname{ad}_e=L_e-R_e$, the centraliser $C_A(e)$ and the subalgebra isomorphic to $A_{00}\times A_{11}$; the off-diagonal part $N$ as the image of $\operatorname{ad}_e$ with $\operatorname{ad}_e^2=P_N$ and $P_D=I-L_e-R_e+2L_eR_e$; the $\mathbb{Z}/2$-grading $A=D\oplus N$ with $N^2\subseteq D$; the diagonal operators $L_d=\operatorname{diag}(L_{d_0},L_{d_0},L_{d_1},L_{d_1})$ and $R_d=\operatorname{diag}(R_{d_0},R_{d_1},R_{d_0},R_{d_1})$ and their faithful restrictions to $D$; and the matrix, split, upper-triangular and biquaternion examples. -->
-
-<a href="articles_maths/the-weight-of-a-frame-root-and-the-spin-quantum-number.html">The Weight of a Frame Root and the Spin Quantum Number</a>
-<!-- the definitions of generator, carrier, weight, weight space, weight string, highest weight and spin; the frame root $h=2e-1_A$ and its action by $L_h$, $R_h$ and $\operatorname{ad}_h$; the Peirce weight table $s$, $t$ and $s-t$ on the corner $A_{st}$; the weight shift $L_h=\operatorname{ad}_h+R_h$ and the passage from $\pm1$ on the carrier to $\pm2,0$ on the traceless part; the $\mathfrak{sl}_2$ triple $(u,v,h)$ with $[u,v]=h$ and the closure criterion $h\in[A_{+-},A_{-+}]$; the highest-weight theorem and $j=\lambda/2=(\lambda_{\max}-\lambda_{\min})/4$; the failure of the Peirce triple for a primitive idempotent of $M_N(k)$ when $N>2$; the two carriers of the biquaternion with $j=\tfrac12$ and $j=1$; the rotor $\exp(\theta\vec e_z/2)$ and the half-angle; and the Hermitian real form. -->
 
 <a href="articles_maths/the-signed-sandwich-on-an-algebra.html">The Signed Sandwich on an Algebra</a>
 <!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on an algebra; the reflections it realises and its relation to the unsigned sandwich. -->
@@ -807,7 +726,7 @@
 ### * Theory
 
 <a href="articles_maths/involutive-algebras.html">Involutive Algebras</a>
-<!-- an involution of an algebra, that is an anti-automorphism of order two, form-free, together with the involutive automorphism that preserves the product: the definition, the opposite algebra with the coset $\operatorname{Anti}(A)=\sigma\operatorname{Aut}(A)$, the centre, the group of units and the two conjugate elements $a+\sigma(a)$ and $a\sigma(a)$; the decomposition $A=A^+\oplus A^-$ when $2\neq0$ and its collapse in characteristic two, where the symmetric and the skew elements coincide; the skew elements as a Lie algebra under the commutator, so that $A^-\oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra, and the symmetric elements as a Jordan algebra under $x\circ y=\tfrac12(xy+yx)$, a subalgebra exactly when its elements commute pairwise, so that the fixed set of an anti-automorphism is a Jordan algebra and may still be an algebra (the diagonal matrices inside the upper triangular ones) while the fixed set of an involutive automorphism is always a subalgebra and the algebra is $\mathbb{Z}/2$-graded; the induced involution on a quotient by a $\sigma$-stable ideal, the exchange involution on $A\times A^{\mathrm{op}}$ whose fixed set is the diagonal, whose swap on $A\times A$ is instead an involutive automorphism, and the tensor product $\sigma\otimes\tau$ with its symmetric and skew parts; and the scalars, that is the $\varsigma$-semilinear involutions, the restriction to $F\cdot1$, the first and the second kind by the centre, and the descent $(B\otimes_FK)^{\mathrm{id}\otimes\varsigma}=B\otimes1$ for a quadratic extension. No form, no norm, no distance: the adjoint involutions, the orthogonal and the symplectic type and the trace and the reduced norm belong to *Hilbert Algebras*, and the graded algebra to *Superalgebras and Graded Structures*. -->
+<!-- an involution of an algebra, that is an anti-automorphism of order two, form-free, together with the involutive automorphism that preserves the product: the definition, the opposite algebra with the coset $\operatorname{Anti}(A)=\sigma\operatorname{Aut}(A)$, the centre, the group of units and the two conjugate elements $a+\sigma(a)$ and $a\sigma(a)$; the decomposition $A=A^+\oplus A^-$ when $2\neq0$ and its collapse in characteristic two; the two parts and the articles that own their product laws; the induced involution on a quotient by a $\sigma$-stable ideal, the exchange involution on $A\times A^{\mathrm{op}}$ whose fixed set is the diagonal, whose swap on $A\times A$ is instead an involutive automorphism, and the tensor product $\sigma\otimes\tau$ with its symmetric and skew parts; and the scalars, that is the $\varsigma$-semilinear involutions, the restriction to $F\cdot1$, the first and the second kind by the centre, and the descent $(B\otimes_FK)^{\mathrm{id}\otimes\varsigma}=B\otimes1$ for a quadratic extension. No form, no norm, no distance: the adjoint involutions, the orthogonal and the symplectic type and the trace and the reduced norm belong to *Hilbert Algebras*, and the graded algebra to *Superalgebras and Graded Structures*. -->
 
 <a href="articles_maths/opposite-algebras-and-anti-isomorphisms.html">Opposite Algebras and Anti-Isomorphisms</a>
 <!-- the opposite algebra and the anti-isomorphisms onto it; an involution as an isomorphism $A\to A^{\mathrm{op}}$. -->
@@ -822,10 +741,7 @@
 <!-- algebras with a grading and an involution compatible with it; the graded involution and the super-involution. -->
 
 <a href="articles_maths/unitary-elements-of-an-involutive-algebra.html">Unitary Elements of an Involutive Algebra</a>
-<!-- the elements with $u^*u = uu^* = 1$; the group of unitary elements, its Lie algebra of skew elements and their relation to the self-adjoint part. -->
-
-<a href="articles_maths/the-self-adjoint-part-of-an-algebra.html">The Self-Adjoint Part of an Algebra</a>
-<!-- the self-adjoint elements $H(A)$ and their Jordan structure under the symmetrised product; the symmetric and the skew parts. -->
+<!-- the elements with $u^*u = uu^* = 1$; the group of unitary elements as the fixed subgroup of $\theta(g)=(g^*)^{-1}$, and the relation between a unitary and its self-adjoint and skew parts; the skew tangent space and the Cayley transform are *The Skew Part of an Algebra*. -->
 
 <a href="articles_maths/the-eigenvalue-decomposition-of-a-self-adjoint-element.html">The Eigenvalue Decomposition of a Self-Adjoint Element</a>
 <!-- the self-adjoint element $h^*=h$ and its eigenvalue decomposition $h=\sum_i\lambda_i e_i$; the permutation law $e_i^*=e_{\pi(i)}$, $\lambda_{\pi(i)}=\varsigma(\lambda_i)$; the equivalence of Hermitian $e_i$ and fixed $\lambda_i$; the first kind, where every eigenprojector of a self-adjoint element is Hermitian, and the second kind, where the non-fixed eigenvalues occur in conjugate pairs and the projectors are exchanged; the orbit idempotents $g_J=\sum_{i\in J}e_i$ and the decomposition over the fixed field, with the two-element orbit $\frac{s}{2}g_J+btv_J$ where $v_J$ is skew and $v_J^2=g_J$; the Peirce corners $A_{ij}^*=A_{ji}$; and the conjugate transpose, transpose, entrywise-conjugation and repeated-eigenvalue examples. -->
@@ -980,6 +896,9 @@
 
 ### * Theory
 
+<a href="articles_maths/the-self-adjoint-part-of-an-algebra.html">The Self-Adjoint Part of an Algebra</a>
+<!-- the self-adjoint elements $H(A)$ of an algebra with involution and their Jordan algebra under the symmetrised product $x\bullet y=\tfrac12(xy+yx)$; the decomposition $A=H(A)\oplus K(A)$; the Jordan axioms, the powers and the quadratic representation; the symmetric-matrix and Hermitian-matrix examples. The complementary skew part and its Lie algebra are *The Skew Part of an Algebra*. -->
+
 <a href="articles_maths/jordan-algebras-with-an-involution.html">Jordan Algebras with an Involution</a>
 <!-- a Jordan algebra with a conjugate-linear involution that preserves the Jordan product: the self-adjoint part $H(J)$, the decomposition $J=H(J)\oplus iH(J)$, the formal reality of the involution, and the realisation of a special Jordan algebra as the symmetrisation of an associative $\ast$-algebra. -->
 
@@ -1061,6 +980,9 @@
 <a href="articles_maths/representations-of-lie-algebras.html">Representations of Lie Algebras</a>
 <!-- modules, weights, highest weight, the universal enveloping algebra $U(\mathrm{G})$ and the PBW theorem. -->
 
+<a href="articles_maths/the-general-definition-of-spin.html">The General Definition of Spin</a>
+<!-- the general definition of spin for an algebra over a field of characteristic zero: the spin pair $(U,V)$ with $[U,V]\neq0$, $[[U,V],U]=2U$ and $[[U,V],V]=-2V$, the spin element $S=\tfrac12[U,V]$ as the antisymmetric part of the product, and the triple $(S,U,V)$ with $[S,U]=U$, $[S,V]=-V$ and $[U,V]=2S$ (the other articles write $H=2S$); the carrier of the triple and the carrier of the algebra under the associative or the adjoint action, the weights as the eigenvalues of $\rho(S)$, the highest weight and the spin $j=\lambda_{\max}$; the structure theorem that every finite-dimensional carrier is a direct sum of the irreducibles $W_j$ of dimension $2j+1$ and weights $j,j-1,\dots,-j$, with the spin content, the multiplicity formula $m_j=\mu(j)-\mu(j+1)$, the Casimir $j(j+1)$ and the period $2\pi$ or $4\pi$; the elementary carriers as the simple left modules and the irreducible $\operatorname{ad}(A)$-stable subspaces of the adjoint module, with the elementary list against the adjoint's spin content; the principal pair of $M_n(\mathbb{C})$ with the defining spin $(n-1)/2$, the adjoint content $0,\dots,n-1$ and the elementary list $\{0,(n-1)/2,n-1\}$, and the balanced Peirce pair of $M_{2r}(\mathbb{C})$ with the spins $0,\tfrac12,1$; the table of the cases $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$, $\mathbb{B}$, $M_2$ to $M_6$ and the split biquaternion, against the commutative algebras $\mathbb{C}$, $\mathbb{D}$, the dual numbers and $\mathbb{B}_{\mathrm{r}}$, which admit no spin pair and no spin; the warning that the adjoint's content is integral for $\mathbb{B}$ and the principal $M_n$ but not for every pair; the real forms and the three types; and the separation of the definition from the dimension, the rank, the Peirce index, the half-angle and the Casimir. -->
+
 <a href="articles_maths/lie-algebra-cohomology.html">Lie Algebra Cohomology</a>
 <!-- the cohomology of a Lie algebra; the Chevalley–Eilenberg complex; the relation to deformation theory and to group cohomology; the deformations of a Lie algebra and their classification by the second cohomology group. -->
 
@@ -1096,6 +1018,12 @@
 <a href="articles_maths/the-adjoint-action-of-a-lie-algebra.html">The Adjoint Action of a Lie Algebra</a>
 <!-- the adjoint action $x\mapsto \operatorname{ad}_x$; the Jacobi identity as its derivation property and the centre as its kernel. -->
 
+<a href="articles_maths/the-commutator-operator.html">The Commutator Operator</a>
+<!-- the commutator $x\mapsto [a,x]$ on an associative algebra as an inner derivation; the antisymmetrisation of the left and the right multiplication; the adjoint action and the centre as its kernel; the commutators of the multiplication operators; the antisymmetric sandwich; the matrix, quaternion and commutative examples. -->
+
+<a href="articles_maths/the-weight-of-a-frame-root-and-the-spin-quantum-number.html">The Weight of a Frame Root and the Spin Quantum Number</a>
+<!-- the definitions of generator, carrier, weight, weight space, weight string, highest weight and spin; the frame root $h=2e-1_A$ and its action by $L_h$, $R_h$ and $\operatorname{ad}_h$; the Peirce weight table $s$, $t$ and $s-t$ on the corner $A_{st}$; the weight shift $L_h=\operatorname{ad}_h+R_h$ and the passage from $\pm1$ on the carrier to $\pm2,0$ on the traceless part; the $\mathfrak{sl}_2$ triple $(u,v,h)$ with $[u,v]=h$ and the closure criterion $h\in[A_{+-},A_{-+}]$; the highest-weight theorem and $j=\lambda/2=(\lambda_{\max}-\lambda_{\min})/4$; the failure of the Peirce triple for a primitive idempotent of $M_N(k)$ when $N>2$; the two carriers of the biquaternion with $j=\tfrac12$ and $j=1$; the rotor $\exp(\theta\vec e_z/2)$ and the half-angle; and the Hermitian real form. -->
+
 <a href="articles_maths/the-signed-sandwich-on-a-graded-algebra.html">The Signed Sandwich on a Graded Algebra</a>
 <!-- the two-sided sandwich $x\mapsto axb$ twisted by the grade involution, $x\mapsto a\,\alpha(x)\,b$, on a graded algebra; the reflections it realises and its relation to the unsigned sandwich. -->
 
@@ -1109,6 +1037,9 @@
 <!-- the action of a graded module over a graded algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
 
 ### * Theory
+
+<a href="articles_maths/the-skew-part-of-an-algebra.html">The Skew Part of an Algebra</a>
+<!-- the skew elements $K(A)$ of an algebra with involution; the commutator and the Lie algebra $K(A)$; the $\mathbb{Z}/2$-graded Lie algebra $K(A)\oplus H(A)$ with the compatible grading and the Lie triple system on $H(A)$; the adjoint action and the derivations; the Jordan pair $(H(A),K(A))$; the tangent space of the unitary group and the Cayley transform; the alternating-matrix and skew-Hermitian-matrix examples. -->
 
 <a href="articles_maths/real-forms-of-a-complex-lie-algebra.html">Real Forms of a Complex Lie Algebra</a>
 <!-- the real forms of a complex Lie algebra; the conjugation and the classification by the Satake diagram. -->
@@ -1158,6 +1089,51 @@
 
 <a href="articles_maths/grassmann-variables-and-berezin-integration.html">Grassmann Variables and Berezin Integration</a>
 <!-- odd generators and the $\mathbb{Z}/2$ grading; the Grassmann algebra as the exterior algebra on odd generators; differentiation with respect to an odd variable; Berezin integration, the change-of-variables formula and the Berezinian; the relation to the exterior and symmetric algebras. -->
+
+## Higher Algebra
+
+### Theory
+
+<a href="articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html">The Symmetric and Antisymmetric Parts of an Algebra Product</a>
+<!-- the splitting of a bilinear product into its commutative and its anticommutative half, $xy=x\bullet y+x\wedge y$ with $x\bullet y=\tfrac12(xy+yx)$ and $x\wedge y=\tfrac12(xy-yx)$, unique over a field of characteristic not $2$; the split as the exchange $x\otimes y\mapsto y\otimes x$ on the tensor square and as the direct sum of the symmetric products and the antisymmetric products, with the structure constants splitting as $\binom{n+1}{2}n$ and $\binom{n}{2}n$; the symmetrisation as the polarisation of the square, $(x+y)^2-x^2-y^2=2(x\bullet y)$; the Lie-admissible algebras, whose antisymmetrisation satisfies the Jacobi identity, with the associator criterion that decides it; the Jordan-admissible algebras, whose symmetrisation satisfies the Jordan identity; the independence of the two conditions, with a Lie-admissible algebra that is not Jordan-admissible and a Jordan-admissible algebra that is not Lie-admissible; the opposite algebra, and the relatives $x\bullet y+\lambda(x\wedge y)$ with the same symmetric half; the collapse of the split in characteristic $2$; and the uses in the operator layer, in the ternary product, in the biquaternion products and in deformation quantisation. -->
+
+<a href="articles_maths/hopf-algebras.html">Hopf Algebras</a>
+<!-- algebras, coalgebras and bialgebras; the antipode. -->
+
+<a href="articles_maths/quantum-groups.html">Quantum Groups</a>
+<!-- quantised enveloping algebras; the quantum plane. -->
+
+<a href="articles_maths/deformation-quantization.html">Deformation Quantization</a>
+<!-- star products and formal deformations of an algebra; the relation to the Poisson algebras and to the deformation theory of this part. -->
+
+<a href="articles_maths/koszul-duality.html">Koszul Duality</a>
+<!-- Koszul algebras and their duals; the relation to quadratic algebras and to the operads of this part. -->
+
+<a href="articles_maths/differential-graded-algebras.html">Differential Graded Algebras</a>
+<!-- differential graded algebras and their homology; the relation to the homological algebra of this part. -->
+
+<a href="articles_maths/differential-graded-categories.html">Differential Graded Categories</a>
+<!-- differential graded categories and their modules; the relation to the derived categories of this part. -->
+
+<a href="articles_maths/a-infinity-and-l-infinity-algebras.html">A-Infinity and L-Infinity Algebras</a>
+<!-- $A_\infty$-algebras and their morphisms; the relation to the differential graded algebras of this part and to homotopy theory. -->
+
+<a href="articles_maths/calabi-yau-algebras.html">Calabi–Yau Algebras</a>
+<!-- Calabi–Yau algebras and their Hochschild homology; the relation to the derived categories of this part. -->
+
+<a href="articles_maths/operads.html">Operads</a>
+<!-- operads and their algebras; the little disks operad; the relation to the algebras of this part; the homotopy-theoretic applications belong to Part II; the bar and cobar constructions, and the algebra of operads. -->
+
+<a href="articles_maths/topoi.html">Topoi</a>
+<!-- elementary and Grothendieck topoi; the logical and categorical content; the relation to the categories of this part; sheaves on a topological space belong to Part II. -->
+
+<a href="articles_maths/sheaves-on-sites.html">Sheaves on Sites</a>
+<!-- Grothendieck topologies and sites; sheaves on a site; the categorical content; the cohomological theory on a topological space belongs to Part II. -->
+
+<a href="articles_maths/descent-theory.html">Descent Theory</a>
+<!-- descent for sheaves and for modules; the relation to Grothendieck topologies; the geometric applications belong to Part II. -->
+
+### * Theory
 
 ## Linear Spaces over Algebras
 
@@ -1211,6 +1187,39 @@
 <a href="articles_maths/cluster-algebras.html">Cluster Algebras</a>
 <!-- cluster algebras and their seeds; the Laurent phenomenon; the relation to quiver representations. -->
 
+<a href="articles_maths/module-categories.html">Module Categories</a>
+<!-- the category of modules over a ring; functors and natural transformations between module categories. -->
+
+<a href="articles_maths/abelian-and-grothendieck-categories.html">Abelian and Grothendieck Categories</a>
+<!-- additive and abelian categories; kernels, cokernels and exact sequences; the Freyd–Mitchell embedding theorem; the relation to the module categories of this part; the Grothendieck categories, the categories with a generator and all colimits, and the Gabriel–Popescu theorem. -->
+
+<a href="articles_maths/homological-algebra.html">Homological Algebra</a>
+<!-- chain complexes and homology; exact sequences and the snake lemma; projective and injective resolutions; the relation to the modules of this part. -->
+
+<a href="articles_maths/derived-functors.html">Derived Functors</a>
+<!-- left and right derived functors; the long exact sequence. -->
+
+<a href="articles_maths/ext-and-tor.html">Ext and Tor</a>
+<!-- the functors Ext and Tor and their interpretations; the universal coefficient theorem; the Künneth formula; the applications to algebraic topology belong to Part II. -->
+
+<a href="articles_maths/spectral-sequences.html">Spectral Sequences</a>
+<!-- the notion of a spectral sequence; filtration and convergence; the Grothendieck spectral sequence; the Leray–Serre sequence of a fibration belongs to Part II. -->
+
+<a href="articles_maths/derived-categories.html">Derived Categories</a>
+<!-- the derived category of an abelian category; triangulated categories; the relation to derived functors. -->
+
+<a href="articles_maths/k-theory-of-rings.html">K-Theory of Rings</a>
+<!-- the Grothendieck group $K_0$ of a ring and the projective modules that generate it; $K_1$ and the determinant; the higher K-groups are treated in Part II, where the topological constructions they need are available. -->
+
+<a href="articles_maths/hochschild-homology.html">Hochschild Homology</a>
+<!-- the Hochschild homology and cohomology of an algebra; the relation to the trace and to the determinant. -->
+
+<a href="articles_maths/cyclic-homology.html">Cyclic Homology</a>
+<!-- cyclic homology and its relation to Hochschild homology; the cyclic bicomplex; the Connes exact sequence relating the two; the trace map from Hochschild homology; the applications to the spectral triples and the noncommutative geometry of Part IV. -->
+
+<a href="articles_maths/deformation-theory.html">Deformation Theory</a>
+<!-- deformations of algebras and of modules; the Kodaira–Spencer map; obstruction theory; the applications to moduli belong to Part II. -->
+
 ### Operator Theory
 
 <a href="articles_maths/left-and-right-multiplication-of-a-module.html">Left and Right Multiplication of a Module</a>
@@ -1233,6 +1242,9 @@
 
 <a href="articles_maths/the-graded-action-on-a-module-over-a-bimodule-over-an-algebra.html">The Graded Action on a Module over a Bimodule over an Algebra</a>
 <!-- the action of a graded module over a module over an algebra; the compatibility of the action with the grading and the sign rule it imposes. -->
+
+<a href="articles_maths/the-hochschild-differential-as-an-operator.html">The Hochschild Differential as an Operator</a>
+<!-- the Hochschild differential and its square-zero property; the cochain complex and the cohomology it defines. -->
 
 ### * Theory
 
@@ -6738,7 +6750,7 @@
 <!-- the left and the right multiplications $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$ and $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$, their composition laws and their adjoint: association swaps the two families, the self-adjoint sector is the centre, the skew sector is trivial, and the one-sided automorphisms of the form are $\pm\mathrm{id}$ -->
 
 <a href="articles_maths/the-spin-of-a-biquaternion.html">The Spin of a Biquaternion</a>
-<!-- the spin operator $\tilde S_{\vec u}=\tfrac12 i\vec u$ as a Hermitian element and half a frame root; the $\mathfrak{sl}_2$ triple of the frame, with $\tfrac12\tilde\Xi$ and the two nilpotents as ladder; the three elementary carrier types, represented by four spaces: the spinor plane $\tfrac12$, the traceless part $1$, the centre $0$; the proof that there is no fourth elementary invariant subspace, from the left and adjoint decompositions of $\mathbb{B}$; the observed elementary spins, the Higgs at $0$, the twelve quarks and leptons at $\tfrac12$, the photon, $W^\pm$, $Z$ and eight gluons at $1$, and the graviton and higher-spin hadrons excluded; the Casimir operator against the central element; the spin projectors as the idempotents acting on the left; the rotor and the half-angle; the tensor products $\tfrac32,2$; the determinant of $L_{\tilde Q}$ on a spinor plane equal to the norm, the rank $2$ on the $N$-regular set and $1$ on the null cone, and half the rank as the quantity that is $1$ and $\tfrac12$ without being the spin; the six vocabularies of the corpus; and the four uses of the word spin -->
+<!-- the spin pair $(\vec\Upsilon_-,\vec\Upsilon_+)$ of the frame and its spin element $\tilde S_{\vec u}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12 i\vec u$, the antisymmetric part of the product, Hermitian and half the frame root; the $\mathfrak{sl}_2$ triple of the frame, with $\tilde S_{\vec u}$ and the two nilpotents; the three elementary carrier types, represented by four spaces: the spinor plane $\tfrac12$, the traceless part $1$, the centre $0$; the proof that there is no fourth elementary invariant subspace, from the left and adjoint decompositions of $\mathbb{B}$; the observed elementary spins, the Higgs at $0$, the twelve quarks and leptons at $\tfrac12$, the photon, $W^\pm$, $Z$ and eight gluons at $1$, and the graviton and higher-spin hadrons excluded; the Casimir operator against the central element; the spin projectors as the idempotents acting on the left; the rotor and the half-angle; the tensor products $\tfrac32,2$; the determinant of $L_{\tilde Q}$ on a spinor plane equal to the norm, the rank $2$ on the $N$-regular set and $1$ on the null cone, and half the rank as the quantity that is $1$ and $\tfrac12$ without being the spin; the six vocabularies of the corpus; and the four uses of the word spin -->
 
 <a href="articles_maths/operators-of-the-polar-word-the-common-framework.html">Operators of the Polar Word: The Common Framework</a>
 <!-- the three operators $L_{\tilde Q}$, $R_{\tilde Q}$ and $\Theta_{\tilde Q}$, their multiplicativity, the doubling rule $\Theta_{\tilde Q}=\Theta_{\tilde Q_H}\Theta_{\tilde Q_0}$, and the table of the four sectors with the rank, the spectrum, the Jordan type and the image. -->

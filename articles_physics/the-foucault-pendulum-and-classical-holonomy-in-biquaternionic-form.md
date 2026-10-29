@@ -14,7 +14,7 @@ $$
 \vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b, \qquad [\vec a,\vec b] = 2\,\vec a\times\vec b .
 $$
 
-A rotation by angle $\theta$ about the unit axis $\vec u_{\mathrm r}$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$, acting by $\vec a \mapsto R\vec aR^{-1}$.
+A rotation by angle $\theta$ about the unit axis $\vec u_{\mathrm r}$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$, acting by $\vec a \mapsto R\vec aR^{*}$.
 
 ## Inertial and Rotating Frames
 
@@ -23,13 +23,13 @@ A rotation by angle $\theta$ about the unit axis $\vec u_{\mathrm r}$ is impleme
 Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\vec u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family
 
 $$
-R(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{-1}(t') = R^{\natural}(t') ,
+R(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{*}(t') = R^{\natural}(t') = R^{-1}(t') ,
 $$
 
-so that after a time $t'$ the frame has turned by the angle $\Omega t'$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{-1}$; a vector with fixed inertial components has rotating-frame components
+so that after a time $t'$ the frame has turned by the angle $\Omega t'$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{*}$; a vector with fixed inertial components has rotating-frame components
 
 $$
-\vec a_{\text{rot}}(t') = R^{-1}(t')\,\vec a_{\text{in}}\,R(t') .
+\vec a_{\text{rot}}(t') = R^{*}(t')\,\vec a_{\text{in}}\,R(t') .
 $$
 
 ### The Time Derivative in the Rotating Frame
@@ -245,7 +245,7 @@ $$
 R(T_{\text{day}}) = \cos\pi + \sin\pi\,\vec u = -e_t .
 $$
 
-The rotor is therefore $-e_t$, not $e_t$: the lift of a full rotation to the real quaternions is minus the identity, the familiar two-valuedness of the rotation group. The adjoint action of $-e_t$ is the identity, however, since $(-e_t)\vec a(-e_t)^{-1} = \vec a$, and the vector quantities of the problem cannot distinguish $R$ from $-R$. The full-frame rotation is therefore trivial for the pendulum's swing direction, as it must be after a closed day, and the precession of $2\pi\sin\lambda$ is the rotation of that direction **relative to the local frame**, that is, about the local vertical, not the full rotation about the Earth's axis.
+The rotor is therefore $-e_t$, not $e_t$: the lift of a full rotation to the real quaternions is minus the identity, the familiar two-valuedness of the rotation group. The adjoint action of $-e_t$ is the identity, however, since $(-e_t)\vec a(-e_t)^{*} = \vec a$, and the vector quantities of the problem cannot distinguish $R$ from $-R$. The full-frame rotation is therefore trivial for the pendulum's swing direction, as it must be after a closed day, and the precession of $2\pi\sin\lambda$ is the rotation of that direction **relative to the local frame**, that is, about the local vertical, not the full rotation about the Earth's axis.
 
 This is worth a remark about the double cover. The lift of the one-day loop to $SU(2)$ is the path from $e_t$ to $-e_t$, a path that does not close; but the classical pendulum is described by vectors, on which the group acts through the adjoint representation, and the adjoint representation factors through $SO(3)$, where the loop does close. There is no observable spinor sign for a structureless pendulum, because a spinor sign is a statement about the action on a half-integer-spin state, and the bob carries spin zero. The geometric phase of the present article is an element of the rotation group; whether it lifts to one or the other element of the double cover is a question that has no physical content for a spinless classical system.
 
@@ -303,7 +303,7 @@ The effect is the purely geometric end of the spin-zero subcategory: it involves
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subalgebra (rotation rotors) |
 | $\vec\Omega$ | Angular velocity of the rotating frame; real vector |
 | $\Omega = |\vec\Omega|$, $\vec u = \vec\Omega/\Omega$ | Angular speed; rotation axis |
-| $R(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\vec u$ | Frame rotor; $\vec a_{\text{rot}} = R^{-1}\vec a_{\text{in}}R$ |
+| $R(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\vec u$ | Frame rotor; $\vec a_{\text{rot}} = R^{*}\vec a_{\text{in}}R$ |
 | $\vec a_{\text{in}}$, $\vec a_{\text{rot}}$ | Inertial and rotating-frame components of a vector |
 | $[\vec a,\vec b] = 2\vec a\times\vec b$ | Commutator of two real vectors |
 | $-m[\vec\Omega,d\vec\rho/dt']$ | Coriolis force as a commutator |

@@ -126,7 +126,7 @@ and the anti-automorphisms of $A$ form a coset of the automorphism group in the 
 
 **Definition.** An **involution** of $A$ is an isomorphism $\sigma : A \to A^{\mathrm{opp}}$ with $\sigma^2 = \mathrm{id}$, equivalently a $k$-linear map with $\sigma(ab) = \sigma(b)\sigma(a)$, $\sigma(1) = 1$ and $\sigma \circ \sigma = \mathrm{id}$.
 
-The definition is the one of *Involutive Algebras*, where the involution, its symmetric and skew elements, the Lie algebra of the skew elements and the Jordan algebra of the symmetric ones are developed; the present article records only the place of the involution in the calculus of the opposite algebra.
+The definition is the one of *Involutive Algebras*, where the involution and its decomposition into the symmetric and skew elements are developed; the Lie algebra of the skew part and the Jordan algebra of the self-adjoint part are *The Skew Part of an Algebra* and *The Self-Adjoint Part of an Algebra*; the present article records only the place of the involution in the calculus of the opposite algebra.
 
 **Proposition.** A $k$-linear map $\sigma : A \to A$ is an involution exactly when $\iota_A \circ \sigma : A \to A^{\mathrm{opp}}$ is an isomorphism of algebras and $\sigma \circ \sigma = \mathrm{id}_A$. Under the dictionary the involutions of $A$ correspond bijectively to the anti-automorphisms of $A$ of order two, that is, to the elements of order two in the coset $\operatorname{Anti}(A,A)$.
 

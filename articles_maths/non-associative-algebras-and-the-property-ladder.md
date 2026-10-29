@@ -198,13 +198,7 @@ Hence power-associativity does not imply flexibility, and with the algebra $P$ a
 
 ## The Neighbouring Theories
 
-**Remark.** The ladder reaches two theories that this article does not develop. The first is the one of *Jordan Algebras*, later in this Part: over a field of characteristic not 2 one symmetrises the product of any algebra by
-
-$$
-x \bullet y = \tfrac{1}{2}(xy + yx) ,
-$$
-
-which is commutative in every case and, for $\mathbb{H}$ and for $\mathbb{O}$, satisfies the **Jordan identity**; the identity itself, and the class of Jordan algebras, belong to that article and are not stated here. The second is the one of *Division Algebras*, later in this category, and of *Normed Division Algebras and the Hurwitz Theorem*, in Part II: the norm of $\mathbb{O}$, the composition identity it satisfies, and the Hurwitz theorem that no other algebra over $\mathbb{R}$ carries such a norm, are stated there. What this article contributes to both is the ladder: it is exactly the list of identities that remains available at the rung of $\mathbb{O}$, that is, alternativity, flexibility, power-associativity and the Moufang identities, with associativity gone.
+**Remark.** The ladder reaches two theories that this article does not develop. The first is the one of *Jordan Algebras*, later in this Part: the symmetrised product, the Jordan identity and the class of Jordan algebras are defined and developed there; this article uses the symmetrised product only in the one example $Q$ and states none of their theory. The second is the one of *Division Algebras*, later in this category, and of *Normed Division Algebras and the Hurwitz Theorem*, in Part II: the norm of $\mathbb{O}$, the composition identity it satisfies, and the Hurwitz theorem that no other algebra over $\mathbb{R}$ carries such a norm, are stated there. What this article contributes to both is the ladder: it is exactly the list of identities that remains available at the rung of $\mathbb{O}$, that is, alternativity, flexibility, power-associativity and the Moufang identities, with associativity gone.
 
 **Remark.** The ladder is also the reason the phrase "non-associative" is not the name of a class of algebras with a structure theory: the class of all non-associative algebras is too large for one, and the corpus never uses the phrase except as the background of the rungs above. An algebra in this category is studied through the subset of the ladder it satisfies.
 

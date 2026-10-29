@@ -145,7 +145,6 @@ The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$ | Biquaternion algebra, the complex Clifford algebra of dimension two |
 | $\mathrm{Cl}_{n,m}$, $n=p+q$ | Real Clifford algebra; $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ |
 | $K$ | Division ring of $\mathrm{Cl}_{n,m}$: $\mathbb{R}$ if $p-q\equiv0,2$, $\mathbb{H}$ if $p-q\equiv4,6\pmod 8$ |
-| $A\mapsto\bar{A}=\Pi A^{*}\Pi^{-1}$ | Charge-conjugation pseudoautomorphism; conjugate-linear |
 | $\Pi$ | Charge-conjugation matrix; $\Pi\gamma_{\vec u_a}\Pi^{-1}=-\gamma_{\vec u_a}$, fixed only up to a scalar |
 | $\bar{\xi}^{\,\bar\alpha}=\Pi^{\bar\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
 | $\Pi\bar{\Pi}=\pm I$ | Determines $C^{2}$: $+I\Rightarrow C^{2}=1$, $-I\Rightarrow C^{2}=-1$ |

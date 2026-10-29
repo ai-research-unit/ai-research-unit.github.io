@@ -10,7 +10,7 @@ $$
 
 an anti-automorphism of order two, the same map as in *Involutive Rings*, now read together with the scalars and the product that the algebra carries. Two kinds of order-two map live on an algebra, and they must not be confused. The **involution** reverses the product, and an **involutive automorphism** preserves it; on a commutative algebra the two are the same maps, on a non-commutative algebra they are not, and every statement about fixed elements must therefore say which map it is about. The involution is the notion of this article; the involutive automorphism is the second notion that the product makes possible.
 
-The product contributes two structures that a linear space cannot carry. The **skew** elements, the elements with $\sigma(x) = -x$, are closed under the commutator $[x,y] = xy - yx$, so they form a Lie algebra; the **symmetric** elements, the elements with $\sigma(x) = x$, are closed under the symmetrised product $x \bullet y = \tfrac12(xy + yx)$, so they form a Jordan algebra. The fixed set of an involution is therefore always a Jordan algebra, and it is an algebra exactly when its elements commute among themselves: when $A$ is commutative it is a subalgebra, and when $A$ is not it may still be one — the diagonal matrices inside the upper triangular ones are the instance below — but it need not be. For an involutive automorphism the fixed set is always a subalgebra and the whole algebra is $\mathbb{Z}/2$-graded, so the grading is the property that an anti-automorphism fails to have, and the product of a symmetric and a skew element is skew only when the two commute. The contrast between the two kinds of order-two map is one of the subjects below.
+The involution contributes one structure on the algebra: the decomposition into the elements fixed by $\sigma$ and the elements negated by it, $A = A^+ \oplus A^-$ when $2 \neq 0$. The two parts are not subalgebras in general, and the product laws they inherit are studied in the two categories that own them: *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*, for the fixed part, and *The Skew Part of an Algebra*, in *Anti-symmetric Algebras*, for the negated part. This article defines the decomposition and does not develop either product. For an involutive automorphism the fixed set is always a subalgebra and the whole algebra is $\mathbb{Z}/2$-graded, so the grading is the property that an anti-automorphism fails to have; the contrast between the two kinds of order-two map is one of the subjects below.
 
 The scalars contribute a third. An involution of the $F$-algebra $A$ may be $F$-linear, or it may be twisted by an involution $\varsigma$ of $F$ so that $\sigma(\lambda a) = \varsigma(\lambda)\sigma(a)$; the twisted case is the one that produces the involutions of the second kind and the descent from $B \otimes_F K$ to $B$. The algebra case carries one sign only: $\sigma(1) = 1$ forces $\sigma^2(1) = 1$, so the sign $\sigma^2 = -\mathrm{id}$ of the linear-space article has no unital counterpart here.
 
@@ -124,49 +124,11 @@ $$
 
 **Proof.** A linear involution is an $F$-linear map of order two, which $\sigma$ is, and the summands of the general theory are $A^+$ and $A^-$.
 
-**Remark (characteristic two).** Let $2 = 0$ in $F$. Then $x = -x$ for every $x$, so the skew elements and the symmetric elements coincide, $A^+ = A^-$, the sum $A^+ + A^-$ is all of $A$ but not direct, and the map $p_+$ of the theorem is not available. The point of the failure is the same as in *Involutive Linear Spaces*: the classifications and the decompositions that use the two eigenvalues $\pm 1$ are not available, and the article says which of its statements survive. The Lie structure of the next subsection survives, because $[x,y] = xy-yx = xy+yx$ there; the Jordan structure is not available, because $\tfrac12$ does not exist, and a Jordan product in characteristic two would have to be defined by the anticommutator $xy+yx$ instead, which is a different notion.
+**Remark (characteristic two).** Let $2 = 0$ in $F$. Then $x = -x$ for every $x$, so the skew elements and the symmetric elements coincide, $A^+ = A^-$, the sum $A^+ + A^-$ is all of $A$ but not direct, and the map $p_+$ of the theorem is not available. The point of the failure is the same as in *Involutive Linear Spaces*: the classifications and the decompositions that use the two eigenvalues $\pm 1$ are not available, and the article says which of its statements survive. The skew part still carries its Lie structure in characteristic two, because the sign that distinguishes the bracket from the anticommutator disappears there; the Jordan structure on the symmetric part is not available, because $\tfrac12$ does not exist. Both readings are developed in the two articles that own them.
 
-### The Skew Elements Form a Lie Algebra
+### The Two Parts
 
-**Definition.** On $A$ the **commutator** is $[x,y] = xy - yx$; it is $F$-bilinear, alternating, $[x,x] = 0$, and it satisfies the Jacobi identity, so $A$ with the commutator is a Lie algebra over $F$ in the sense of *Lie Algebras*.
-
-**Theorem.** Let $\sigma$ be an involution of $A$. Then
-
-$$
-\boxed{\;[A^+, A^+] \subseteq A^-, \qquad [A^+, A^-] \subseteq A^+, \qquad [A^-, A^-] \subseteq A^-\;} .
-$$
-
-In particular $A^-$ is a Lie subalgebra, $A^+$ is a module over it, and $A^- \oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra whose even part is $A^-$ and whose odd part is $A^+$.
-
-**Proof.** For symmetric $x$ and $y$, $\sigma(xy) = \sigma(y)\sigma(x) = yx$, so $\sigma([x,y]) = yx - xy = -[x,y]$ and $[x,y]$ is skew. For symmetric $x$ and skew $y$, $\sigma(xy) = \sigma(y)\sigma(x) = (-y)x = -yx$, so $\sigma([x,y]) = -yx + xy = [x,y]$ and $[x,y]$ is symmetric. For skew $x$ and $y$, $\sigma(xy) = \sigma(y)\sigma(x) = (-y)(-x) = yx$, so $\sigma([x,y]) = yx - xy = -[x,y]$ and $[x,y]$ is skew. The Jacobi identity is inherited from $A$, and the grading statement is the three inclusions with the degrees $\deg A^- = 0$ and $\deg A^+ = 1$.
-
-**Example.** On $M_n(F)$ with the transpose the skew elements are the antisymmetric matrices, of dimension $n(n-1)/2$ for $2 \neq 0$, and the theorem says that the commutator of two antisymmetric matrices is antisymmetric; for $n = 3$ they form a three-dimensional Lie algebra, and the bracket of two of its basis elements is again a basis element. Nothing of this kind exists on a bare linear space: the bracket needs the product, and this is the first place where the algebra is more than its underlying space.
-
-### The Symmetric Elements Form a Jordan Algebra
-
-**Definition.** On $A$ the **symmetrised product** is $x \bullet y = \tfrac12(xy + yx)$, defined when $2 \neq 0$; it is commutative, $F$-bilinear, and satisfies the Jordan identity, so $A$ with it is a Jordan algebra in the sense of *Jordan Algebras*.
-
-**Theorem.** Let $2 \neq 0$ and let $\sigma$ be an involution of $A$. Then $A^+$ is closed under the symmetrised product, so $A^+$ is a Jordan subalgebra of $A$. Moreover $A^+$ is closed under the ordinary product if and only if its elements commute pairwise, that is $[x,y] = 0$ for all $x, y \in A^+$; in particular $A^+$ is a subalgebra whenever $A$ is commutative.
-
-**Proof.** For symmetric $x$ and $y$, $\sigma(xy) = \sigma(y)\sigma(x) = yx$ and $\sigma(yx) = xy$, so $\sigma(x \bullet y) = \tfrac12(yx + xy) = x \bullet y$ and $x \bullet y$ is symmetric. For the criterion, $xy \in A^+$ says $\sigma(xy) = xy$, that is $yx = xy$; the condition is therefore $[x,y] = 0$ for all symmetric $x$ and $y$, and it holds for all pairs as soon as $A$ is commutative.
-
-**Remark (the fixed set may still be an algebra).** $A$ need not be commutative for $A^+$ to be a subalgebra, because the criterion is only that the symmetric elements commute among themselves. On the algebra $T$ of upper triangular $2 \times 2$ matrices the map
-
-$$
-\sigma\begin{pmatrix} a & b \\ 0 & d \end{pmatrix} = \begin{pmatrix} d & -b \\ 0 & a \end{pmatrix}
-$$
-
-is an involution: it is additive and $F$-linear, its square is the identity, and it reverses products. Its fixed set is the algebra of diagonal matrices, a subalgebra of the non-commutative $T$ that is properly contained in it. So the symmetric elements of an involution may be a proper subalgebra, and the Jordan algebra of the theorem is the general statement: the centre is the symmetric part of an involution when the involution is chosen so that its fixed set is the centre, as the invariants of a form do in Part II.
-
-**Example (the failure).** In $M_2(F)$ with $2 \neq 0$ take the symmetric matrices $S_1 = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}$ and $S_2 = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}$; then
-
-$$
-S_1S_2 = \begin{pmatrix} 1 & 2 \\ 1 & 2 \end{pmatrix}, \qquad S_2S_1 = \begin{pmatrix} 1 & 1 \\ 2 & 2 \end{pmatrix},
-$$
-
-neither of which is symmetric, while $S_1 \bullet S_2$, their average, is. The fixed set of the transpose is thus a Jordan algebra of dimension $3$ that is not an algebra, and the product of two symmetric elements is symmetric precisely when the two commute; for the transpose the symmetric matrices of $M_n(F)$ therefore form an algebra only when $n = 1$.
-
-**Remark (no grading here).** For the transpose the decomposition $A = A^+ \oplus A^-$ is not a grading of the algebra: with $S = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$ symmetric and $K = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$ skew, the product $SK = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$ is neither symmetric nor skew. The product of a symmetric and a skew element is skew exactly when the two commute, so an anti-automorphism does not grade the algebra, and only an automorphism does.
+The two summands are studied in the categories that own them. The skew part $A^-$ is closed under the commutator and is a Lie algebra; the theory is *The Skew Part of an Algebra*, in *Anti-symmetric Algebras*, where the bracket, the graded structure formed with $A^+$ and the examples are developed. The symmetric part $A^+$ is closed under the symmetrised product and is a Jordan algebra; the theory is *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*, where the Jordan axioms, the quadratic representation and the examples are developed. Neither product is used in this article, and the characteristic-two caveat is recorded with each.
 
 ### Involutive Automorphisms and the Fixed Subalgebra
 
@@ -226,13 +188,13 @@ exhibits $a$ as a symmetric element plus an element of $I$.
 
 **Definition.** On the algebra $A \times A^{\mathrm{opp}}$ the product is $(a_1,a_2)(b_1,b_2) = (a_1b_1,\; b_2a_2)$ and the **exchange** is $\sigma(a_1,a_2) = (a_2,a_1)$.
 
-**Theorem.** The exchange is an $F$-linear involution of $A \times A^{\mathrm{opp}}$, its fixed set is the diagonal $\{(a,a) : a \in A\}$, of the same dimension as $A$, and its skew elements are the antidiagonal $\{(a,-a) : a \in A\}$. The diagonal is closed under the symmetrised product, and it is a subalgebra if and only if $A$ is commutative.
+**Theorem.** The exchange is an $F$-linear involution of $A \times A^{\mathrm{opp}}$, its fixed set is the diagonal $\{(a,a) : a \in A\}$, of the same dimension as $A$, and its skew elements are the antidiagonal $\{(a,-a) : a \in A\}$. The diagonal is a subalgebra if and only if $A$ is commutative.
 
-**Proof.** For $x = (a_1,a_2)$ and $y = (b_1,b_2)$ the products are $xy = (a_1b_1, b_2a_2)$ and $\sigma(y)\sigma(x) = (b_2,b_1)(a_2,a_1) = (b_2a_2,\; a_1b_1)$, so $\sigma(xy) = (b_2a_2, a_1b_1) = \sigma(y)\sigma(x)$; the map is additive, $F$-linear, fixes $(1,1)$ and has square the identity. An element is fixed exactly when $a_1 = a_2$ and is negated exactly when $a_1 = -a_2$. For the closure, $(a,a)(b,b) = (ab,ba)$ and $(a,a) \bullet (b,b) = (a \bullet b,\; a \bullet b)$, so the diagonal is stable under the symmetrised product and the ordinary product stays in it exactly when $ab = ba$ for all $a, b$.
+**Proof.** For $x = (a_1,a_2)$ and $y = (b_1,b_2)$ the products are $xy = (a_1b_1, b_2a_2)$ and $\sigma(y)\sigma(x) = (b_2,b_1)(a_2,a_1) = (b_2a_2,\; a_1b_1)$, so $\sigma(xy) = (b_2a_2, a_1b_1) = \sigma(y)\sigma(x)$; the map is additive, $F$-linear, fixes $(1,1)$ and has square the identity. An element is fixed exactly when $a_1 = a_2$ and is negated exactly when $a_1 = -a_2$. For the closure, $(a,a)(b,b) = (ab,ba)$, so the diagonal is stable under the ordinary product exactly when $ab = ba$ for all $a, b$.
 
-**Corollary (universality).** Every $F$-algebra $A$ is the fixed set of an involution of an $F$-algebra, namely of the exchange of $A \times A^{\mathrm{opp}}$, and the diagonal is isomorphic to $A$ as a Jordan algebra; and $A \times A^{\mathrm{opp}}$ is commutative if and only if $A$ is.
+**Corollary (universality).** Every $F$-algebra $A$ is the fixed set of an involution of an $F$-algebra, namely of the exchange of $A \times A^{\mathrm{opp}}$; and $A \times A^{\mathrm{opp}}$ is commutative if and only if $A$ is.
 
-**Proof.** The fixed set is the diagonal by the theorem, and $a \mapsto (a,a)$ is an isomorphism of $A$ onto the diagonal that carries the symmetrised product of $A$ to the symmetrised product of the diagonal, by $(a,a) \bullet (b,b) = (a \bullet b, a \bullet b)$. For the commutativity, the products of $(a,1)$ and $(b,1)$ are $(ab,1)$ and $(ba,1)$, so commutativity forces $ab = ba$; conversely if $A$ is commutative then $A^{\mathrm{opp}} = A$ and the product is componentwise.
+**Proof.** The fixed set is the diagonal by the theorem, and $a \mapsto (a,a)$ maps $A$ bijectively onto it. For the commutativity, the products of $(a,1)$ and $(b,1)$ are $(ab,1)$ and $(ba,1)$, so commutativity forces $ab = ba$; conversely if $A$ is commutative then $A^{\mathrm{opp}} = A$ and the product is componentwise.
 
 **Remark.** The construction is the algebra analogue of the swap of *Involutive Groups* and of the exchange of *Involutive Rings*; it shows that the existence of an involution costs nothing once the opposite algebra is at hand, and the informative question is therefore not whether an algebra carries an involution but which involution it carries. The opposite algebra in the second factor is what makes the swap reverse products: on $A \times A$ with the componentwise product the same swap satisfies $\sigma(xy) = \sigma(x)\sigma(y)$ and is an **involutive automorphism**, with the diagonal as its fixed subalgebra, and the two constructions are the two kinds of order-two map of the introduction, exhibited on one algebra. The involutions of $A \times A^{\mathrm{opp}}$ that are not the exchange, and the question of which involutions of a product are equivalent to the exchange, belong to the classification of the involutions of a semisimple algebra, which is Part II work when it is read from a form.
 
@@ -320,7 +282,7 @@ so the commutative $F$-algebra $B$ is recovered from its scalar extension $B \ot
 
 **Rings.** *Involutive Rings* gives the same map with the field removed: there the involution of a ring is an anti-automorphism of order two, the datum is an order-two isomorphism $A \to A^{\mathrm{opp}}$, and the $\sigma$-ideals, the $\sigma$-prime notions and the reduced questions are its subject. The present article adds the field $F$, the $F$-linearity and the scalar twisting, and the $\varsigma$-semilinear case exists only here.
 
-**Linear spaces.** *Involutive Linear Spaces* gives a map of order two on a space that carries no product. An algebra involution is such a map on the underlying space, so every statement about the involution alone is the linear-space statement, as the corollary of the additive decomposition records; what the algebra adds is the Lie structure on $A^-$, the Jordan structure on $A^+$, the grading of the involutive automorphism and the two kinds through the centre. The second sign of the linear case, $\theta^2 = -\mathrm{id}$, disappears here, by the remark at the definition.
+**Linear spaces.** *Involutive Linear Spaces* gives a map of order two on a space that carries no product. An algebra involution is such a map on the underlying space, so every statement about the involution alone is the linear-space statement, as the corollary of the additive decomposition records; what the algebra adds is the decomposition into the two parts, the grading of the involutive automorphism and the two kinds through the centre. The second sign of the linear case, $\theta^2 = -\mathrm{id}$, disappears here, by the remark at the definition.
 
 ---
 
@@ -328,7 +290,7 @@ so the commutative $F$-algebra $B$ is recovered from its scalar extension $B \ot
 
 An involution of a unital associative $F$-algebra $A$ is an $F$-linear anti-automorphism $\sigma$ with $\sigma^2 = \mathrm{id}$, the same datum as an $F$-algebra isomorphism $A \to A^{\mathrm{opp}}$ of order two; a second kind of order-two map, the involutive automorphism, preserves the product, and the two coincide exactly on a commutative algebra. When $A$ carries an involution the anti-automorphisms of $A$ form a coset $\operatorname{Anti}(A) = \sigma\operatorname{Aut}(A)$, the composite of two of them is an automorphism, and the involutions among them are those $\sigma\alpha$ with $(\sigma\alpha)^2 = \mathrm{id}$. The centre and the group of units are stable, the restriction to the units is an anti-automorphism of order two of the group, and the elements $a+\sigma(a)$, $a\sigma(a)$ and $\sigma(a)a$ are symmetric.
 
-Over a field with $2 \neq 0$ the involution decomposes the algebra, $A = A^+ \oplus A^-$, the symmetric and the skew elements; the skew elements are closed under the commutator, so $A^-$ is a Lie subalgebra, $A^+$ is a module over it and $A^- \oplus A^+$ is a $\mathbb{Z}/2$-graded Lie algebra; the symmetric elements are closed under the symmetrised product, so $A^+$ is a Jordan algebra, and it is a subalgebra exactly when its elements commute pairwise, so it is one when $A$ is commutative and it may be a proper subalgebra when $A$ is not, the diagonal matrices inside the upper triangular algebra being the instance; the failure is exhibited by the two symmetric matrices $S_1$ and $S_2$ that do not commute. For an involutive automorphism $\alpha$ the fixed set $A^+$ is instead always a subalgebra and $A = A^+ \oplus A^-$ is a $\mathbb{Z}/2$-grading, and an inner $\alpha$ is $\operatorname{ad}_u$ with $u^2$ central. In characteristic two the symmetric and the skew elements coincide, the decomposition and the Jordan structure are unavailable, and the Lie structure survives.
+Over a field with $2 \neq 0$ the involution decomposes the algebra, $A = A^+ \oplus A^-$, into the symmetric and the skew elements, the eigenspaces of $\sigma$ for the eigenvalues $1$ and $-1$; the decomposition is the eigenvalue decomposition of the involution, and the two parts are studied in *The Self-Adjoint Part of an Algebra* and *The Skew Part of an Algebra*. For an involutive automorphism $\alpha$ the fixed set $A^+$ is always a subalgebra and $A = A^+ \oplus A^-$ is a $\mathbb{Z}/2$-grading, and an inner $\alpha$ is $\operatorname{ad}_u$ with $u^2$ central. In characteristic two the symmetric and the skew elements coincide, and the decomposition is unavailable.
 
 A $\sigma$-stable ideal has an induced involution on its quotient, with $(A^+ + I)/I \subseteq (A/I)^{\bar\sigma}$ and equality when $2 \neq 0$; the exchange involution on $A \times A^{\mathrm{opp}}$ has the diagonal as its fixed set, so every algebra is the fixed set of an involution of an algebra, and the swap on $A \times A$ is the involutive automorphism with the diagonal as its fixed subalgebra; the tensor product carries $\sigma \otimes \tau$, with symmetric part $A^+ \otimes B^+ \oplus A^- \otimes B^-$; and on $\operatorname{End}_F(V)$ the map $\Phi_T$ is an involutive automorphism while the transpose is an involution. A $\varsigma$-semilinear involution twists the scalars, is $F$-linear exactly when $\varsigma = \mathrm{id}$, and is of the first or the second kind according to its restriction to the centre; for a quadratic extension $K/F$ the involution $\tau \otimes \varsigma$ on $B \otimes_F K$, with $\tau$ an involution of $B$, is of the second kind, its fixed algebra is $(B^+ \otimes 1) \oplus (B^- \otimes t)$ with $t$ the $\varsigma$-skew element of $K$, and in the commutative case it is the descent, with fixed algebra $B \otimes 1 \cong B$.
 
@@ -344,8 +306,6 @@ A $\sigma$-stable ideal has an induced involution on its quotient, with $(A^+ + 
 | $A^\sigma$, $A^+$ | the symmetric elements, $\{a : \sigma(a) = a\}$, the fixed set |
 | $A^-$ | the skew elements, $\{a : \sigma(a) = -a\}$ |
 | $A^{\mathrm{opp}}$ | the opposite algebra, $a \cdot b = ba$ |
-| $[x,y]$ | the commutator $xy - yx$ |
-| $x \bullet y$ | the symmetrised product $\tfrac12(xy + yx)$, when $2 \neq 0$ |
 | $\operatorname{Anti}(A)$ | the anti-automorphisms of $A$, a coset $\sigma \operatorname{Aut}(A)$ |
 | $A \times A^{\mathrm{opp}}$ | with the product $(a_1,a_2)(b_1,b_2) = (a_1b_1, b_2a_2)$, and the exchange $\sigma(a_1,a_2) = (a_2,a_1)$ |
 | $\Phi_T$ | the involutive automorphism $X \mapsto TXT$ of $\operatorname{End}_F(V)$, $T^2 = \mathrm{id}$ |
@@ -358,7 +318,6 @@ A $\sigma$-stable ideal has an induced involution on its quotient, with $(A^+ + 
 
 - Paul M. Cohn, *Algebra*, volume 1 (Wiley, second edition, 1982), for algebras with involution, the opposite algebra and the elementary properties of an anti-automorphism.
 - Serge Lang, *Algebra* (Springer, third edition, 2002), for the semilinear maps, the descent from a quadratic extension and the trace of a quadratic extension.
-- Nathan Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for the symmetric and skew elements of a ring with involution and the structures they carry.
+- Nathan Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for the symmetric and skew elements of a ring with involution.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the involutions of a simple algebra, the first and the second kind and the descent of a central simple algebra over a quadratic extension.
-- Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for the Jordan algebra of the symmetric elements of an involution and the Lie algebra of the skew elements.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the classification of the involutions of a central simple algebra, which is Part II work and is named here only at the boundary.

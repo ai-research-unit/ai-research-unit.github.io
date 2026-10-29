@@ -7,7 +7,7 @@ This article studies the first of the two axioms that the corpus adds to the bro
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is an $R$-algebra in the broad sense, unless a sentence names a stronger hypothesis. Associativity is the only hypothesis added: $A$ is not assumed commutative and not assumed unital. The article is algebraic throughout and uses no distance, no norm and no limit.
 
-The constructions that other articles own are cited and not repeated. The tensor algebra $T(M)$ and its universal property belong to *Tensor Powers and the Free Algebra*; the formalism of ideals and quotients to *Ideals and Quotients of Algebras*; the linearisation of the identities below associativity to *Non-Associative Algebras and the Property Ladder*; the unit group and the regular module to *Centre, Units, Zero Divisors and Division Algebras*; the matrix algebra to *Matrix Algebras*; the Lie algebra to *Lie Algebras*; and the enveloping algebra, its filtration and the Poincaré–Birkhoff–Witt theorem to *Universal Enveloping Algebras*. The relevant module theory is that of *Modules*.
+The constructions that other articles own are cited and not repeated. The tensor algebra $T(M)$ and its universal property belong to *Tensor Powers and the Free Algebra*; the formalism of ideals and quotients to *Ideals and Quotients of Algebras*; the linearisation of the identities below associativity to *Non-Associative Algebras and the Property Ladder*; the unit group and the regular module to *Centre, Units, Zero Divisors and Division Algebras*; and the matrix algebra to *Matrix Algebras*. The relevant module theory is that of *Modules*.
 
 ## Associativity and the Associator
 
@@ -79,27 +79,9 @@ The definition is that of *Non-Associative Algebras and the Property Ladder*, wh
 
 **Theorem (the converse fails).** There are power-associative algebras that are not associative.
 
-*Proof.* Let $k$ be a field of characteristic not $2$ and let $B = M_2(k)$ carry the **symmetrised product**
+*Proof.* The octonions $\mathbb{O}$ are alternative, hence power-associative by Artin's theorem, and they are not associative: over a field of characteristic not $2$ the associator is nonzero, with $[e_1,e_2,e_4] = 2e_7$ on the basis of *Non-Associative Algebras and the Property Ladder*, §*What the Ladder Does Not Decide*. The octonions are therefore the witness.
 
-$$
-x \bullet y = \tfrac{1}{2}(xy + yx),
-$$
-
-the algebra $B$ of *Non-Associative Algebras and the Property Ladder*, §*What the Ladder Does Not Decide*, where it is proved power-associative by the computation $z^{\circ n} = z^n$ of the powers of a single matrix. That verification is not repeated; what is needed here is that $B$ fails associativity, which is a failure on a different triple. With $x = E_{11}$, $y = E_{12}$ and $z = E_{21}$,
-
-$$
-(x \bullet y) \bullet z = \tfrac12 E_{12} \bullet E_{21} = \tfrac14(E_{12}E_{21} + E_{21}E_{12}) = \tfrac14 I,
-$$
-
-while
-
-$$
-x \bullet (y \bullet z) = E_{11} \bullet \tfrac12 I = \tfrac12\bigl(E_{11}\tfrac12 I + \tfrac12 I E_{11}\bigr) = \tfrac12 E_{11},
-$$
-
-and $\tfrac14 I \neq \tfrac12 E_{11}$, since the characteristic is not $2$. Hence $B$ is power-associative and not associative.
-
-**Remark.** The example $B$ is the algebra used in *Non-Associative Algebras and the Property Ladder* to separate power-associativity from alternativity. Since an associative algebra is alternative, the failure of alternativity recorded there is already a failure of associativity, and the same algebra witnesses the strictness of the implication of §*Linearisation and Power-Associativity*.
+**Remark.** The witness is the top rung of the ladder of *Non-Associative Algebras and the Property Ladder*: the octonions satisfy every identity below associativity and fail associativity itself, so they separate power-associativity from associativity directly.
 
 **Remark (third-power associativity).** The weakest of the identities of the ladder, the single identity $x^2 x = x x^2$, is a consequence of associativity: it is flexibility with $y = x$, and every associative algebra is flexible. It is strictly weaker than power-associativity. The commutative algebra $A$ of *Non-Associative Algebras and the Property Ladder*, §*What the Ladder Does Not Decide*, is flexible, so by commutativity it satisfies $x^2 x = x x^2$, and it is not power-associative; hence third-power associativity does not imply power-associativity, and the implication is strict, the converse direction being immediate from $x^2x = x x^2 = x^3$.
 
@@ -135,50 +117,6 @@ The theorem is the precise sense in which $T(M)$ is *the* free associative algeb
 
 **Corollary.** For the free module $R^{(X)}$ on a set $X$ the tensor algebra is the free algebra, $R\langle X\rangle \cong T\bigl(R^{(X)}\bigr)$; and a choice of generators of $A$ and the induced surjection $R\langle X\rangle \to A$ present it as a quotient of a free one, $A \cong R\langle X\rangle/I$, the general form of a presentation by generators and relations (*Tensor Powers and the Free Algebra*, §*The Universal Property*).
 
-## The Universal Enveloping Algebra
-
-Associativity is not the only structure that a bilinear product may carry: the anti-symmetric product of a Lie algebra, defined and studied in *Lie Algebras*, satisfies the Jacobi identity in place of associativity. The two are related in both directions. In one direction every associative algebra carries a Lie algebra structure; in the other every Lie algebra carries a universal associative algebra.
-
-**Definition.** Let $A$ be an associative $R$-algebra. The **commutator algebra** $A^-$ is the $R$-module $A$ with the product
-
-$$
-[x,y] = xy - yx .
-$$
-
-**Theorem.** For an associative algebra $A$, the commutator product is bilinear and anti-symmetric and satisfies the Jacobi identity
-
-$$
-[x,[y,z]] + [y,[z,x]] + [z,[x,y]] = 0 ,
-$$
-
-so that $A^-$ is a Lie algebra. Equivalently, every associative algebra is a Lie algebra under the commutator. The theorem is proved in *Lie Algebras*, §*The Relationship with Associative Algebras*, and it is the reason that the Lie algebras of Part I are not foreign objects: they are the anti-symmetric shadows of associative ones.
-
-**Definition.** Let $\mathrm{G}$ be a Lie algebra over $R$ with bracket $[\cdot,\cdot]$, as introduced in *Lie Algebras*. The **universal enveloping algebra** $\mathrm{U}(\mathrm{G})$ is the associative $R$-algebra, with identity, characterised by the following universal property: for every associative unital $R$-algebra $A$ and every $R$-linear map $\varphi : \mathrm{G} \to A$ satisfying
-
-$$
-\varphi([x,y]) = \varphi(x)\varphi(y) - \varphi(y)\varphi(x),
-$$
-
-there is a unique unital $R$-algebra homomorphism $\Phi : \mathrm{U}(\mathrm{G}) \to A$ with $\Phi \circ \iota = \varphi$, where $\iota : \mathrm{G} \to \mathrm{U}(\mathrm{G})$ is the canonical $R$-linear map. Equivalently, $\iota$ is a Lie algebra homomorphism $\mathrm{G} \to \mathrm{U}(\mathrm{G})^-$, and there is a natural bijection
-
-$$
-\operatorname{Hom}_{\mathsf{Lie}_R}\bigl(\mathrm{G}, A^-\bigr) \;\cong\; \operatorname{Hom}_{\mathsf{Alg}_R}\bigl(\mathrm{U}(\mathrm{G}), A\bigr).
-$$
-
-In the language of adjoint functors, the enveloping algebra functor $U$ is left adjoint to the commutator functor $A \mapsto A^-$. The construction of $\mathrm{U}(\mathrm{G})$ as the quotient $T(\mathrm{G})/\langle x \otimes y - y \otimes x - [x,y]\rangle$ of the tensor algebra by the two-sided ideal generated by the displayed relations, and the proof of the universal property, belong to *Universal Enveloping Algebras*; only the statement is used here.
-
-**Theorem (Poincaré–Birkhoff–Witt).** Let $k$ be a field, let $\mathrm{G}$ be a Lie algebra over $k$ and let $(x_i)_{i \in I}$ be a basis of $\mathrm{G}$, totally ordered. Then the ordered monomials
-
-$$
-\boxed{\;x_{i_1}^{a_1} x_{i_2}^{a_2} \cdots x_{i_r}^{a_r}, \qquad i_1 < i_2 < \cdots < i_r, \quad a_j \geq 1\;},
-$$
-
-together with the identity, form a $k$-basis of $\mathrm{U}(\mathrm{G})$. Consequently the canonical map $\iota : \mathrm{G} \to \mathrm{U}(\mathrm{G})$ is injective, and the associated graded of the degree filtration is the symmetric algebra, $\operatorname{gr} \mathrm{U}(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G})$.
-
-The theorem and its proof are those of *Universal Enveloping Algebras*, §*The Filtration and the Poincaré–Birkhoff–Witt Theorem*, where the filtration, the diamond lemma argument and the Poincaré series are given; they are quoted here.
-
-**Remark.** The pair of constructions shows the exact relation between associativity and its failure. The functor $A \mapsto A^-$ forgets associativity and keeps the commutator; the functor $U$ restores an associative product in the most economical way, and the adjunction says that the two are inverse in the only sense available: an algebra homomorphism $\mathrm{U}(\mathrm{G}) \to A$ is the same thing as a linear map $\mathrm{G} \to A$ that respects the bracket. When $\mathrm{G}$ is abelian the bracket vanishes and $\mathrm{U}(\mathrm{G}) = \operatorname{Sym}(\mathrm{G})$, the symmetric algebra; when $\mathrm{G}$ is the Lie algebra of a Lie group, $\mathrm{U}(\mathrm{G})$ is the algebra whose modules are the representations of the group, a statement of Parts II and III. The enveloping algebra is the one construction of this article that is genuinely new, and it is the reason an associative algebra is attached in a canonical way to every non-associative one.
-
 ## The Model: Matrix and Endomorphism Algebras
 
 The model associative algebra is the endomorphism algebra of a module, and every associative algebra embeds in one.
@@ -213,23 +151,11 @@ The theorem is the reason the representation theory of the corpus is written as 
 
 Each of the following is a named object of the corpus for which associativity fails, with the article that records it.
 
-- **The commutator algebra $A^-$.** For an associative $A$ that is not commutative, the anti-symmetric product $[x,y] = xy - yx$ is not associative. In $A = M_2(k)$,
-
-$$
-[[E_{11}, E_{12}], E_{21}] = [E_{12}, E_{21}] = E_{11} - E_{22}, \qquad [E_{11}, [E_{12}, E_{21}]] = [E_{11}, E_{11} - E_{22}] = 0,
-$$
-
-so the two bracketings differ. The construction and its properties are in *Lie Algebras*, §*The Relationship with Associative Algebras*.
-
-- **A Lie algebra under its bracket.** The definition of *Lie Algebras* imposes anti-symmetry and the Jacobi identity rather than associativity, and the cross product algebra on $\mathbb{R}^3$ is the simplest example. Associativity fails at once: $(e_1 \times e_2) \times e_2 = e_3 \times e_2 = -e_1$, while $e_1 \times (e_2 \times e_2) = 0$. The cross product is named as a non-example in *Algebras*.
-
 - **The octonions $\mathbb{O}$.** The octonion algebra is alternative, flexible, power-associative and satisfies the Moufang identities, and it is not associative: over a field of characteristic not $2$ its associator is nonzero, with $[e_1, e_2, e_4] = 2e_7$ on the basis of *Non-Associative Algebras and the Property Ladder*. It is the extreme rung of the doubling ladder $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}$ at which associativity is lost while power-associativity survives.
 
 - **The sixteen-dimensional Cayley–Dickson algebra.** One further doubling past the octonions produces an algebra that is not even alternative and has zero divisors, recorded as such in *Non-Associative Algebras and the Property Ladder*.
 
-- **The Jordan algebras.** A commutative algebra satisfying the Jordan identity $x^2(yx) = (x^2y)x$ is not associative in general: the symmetrised product $x \bullet y = \tfrac12(xy + yx)$ of an associative algebra is a Jordan algebra (*Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*), and for $M_2(k)$ over a field of characteristic not $2$ the result is the commutative unital algebra $B$ of §*Linearisation and Power-Associativity*, which is not associative.
-
-- **The strictness witnesses of the ladder.** The algebra $A$ with basis $u, v$ and products $u^2 = v$, $uv = vu = v$, $v^2 = 0$ is flexible and not power-associative, and so not associative; the symmetrised matrix algebra $B$ of §*Linearisation and Power-Associativity* is power-associative and not associative. Both are in *Non-Associative Algebras and the Property Ladder*, §*What the Ladder Does Not Decide*.
+- **The strictness witness of the ladder.** The algebra $A$ with basis $u, v$ and products $u^2 = v$, $uv = vu = v$, $v^2 = 0$ is flexible and not power-associative, and so not associative; it is in *Non-Associative Algebras and the Property Ladder*, §*What the Ladder Does Not Decide*.
 
 Associativity is thus an axiom that the corpus's non-associative objects visibly fail, and the ladder measures where each of them stands.
 
@@ -247,15 +173,15 @@ Associativity is assumed in most of the corpus, and it is used at specific point
 
 - **Presentations by generators and relations.** The quotient presentations $\mathbb{C} = \mathbb{R}\langle x\rangle/(x^2+1)$, $\mathbb{D} = \mathbb{R}\langle x\rangle/(x^2-1)$, $\mathbb{D}' = \mathbb{R}\langle x\rangle/(x^2)$ and $\mathbb{H} = \mathbb{R}\langle x,y\rangle/(x^2+1, y^2+1, xy+yx)$ are presentations of associative algebras, in the form and the notation of *Quotients of the Tensor Algebra*, and the free algebra on which the last of them is built is the free associative algebra of this article.
 
-Associativity is therefore not an incidental hypothesis. It is what makes the product of an algebra act on its ideals, on its modules and on its homology; it holds for the matrix algebras, the endomorphism algebras, the polynomial algebras, the group algebras, the tensor algebra, the algebras of *The Symmetric Algebra of a Module* and *The Exterior Algebra*, the enveloping algebras and the algebras of the number systems, with the octonions and the algebras of the ladder the named exceptions.
+Associativity is therefore not an incidental hypothesis. It is what makes the product of an algebra act on its ideals, on its modules and on its homology; it holds for the matrix algebras, the endomorphism algebras, the polynomial algebras, the group algebras, the tensor algebra and the algebras of the number systems, with the octonions and the algebras of the ladder the named exceptions.
 
 ## Summary
 
 An $R$-algebra is **associative** when $(xy)z = x(yz)$ for all $x, y, z$. The identity is a **polynomial identity**, and it is expressed by the **associator** $[x,y,z] = (xy)z - x(yz)$, which is $R$-trilinear; the algebra is associative exactly when the associator vanishes identically, and because the associator is trilinear it is enough to check the identity on a spanning set, or on a basis when $A$ is free. Associativity is inherited by subalgebras, quotients and homomorphic images and preserved by direct sums and tensor products.
 
-Associativity implies **power-associativity**, the associativity of the subalgebra generated by any one element, and hence every identity of the ladder of *Non-Associative Algebras and the Property Ladder*; the converse fails, the symmetrised matrix algebra $M_2(k)$ with $x \bullet y = \tfrac12(xy + yx)$ being power-associative and not associative. The **free associative algebra** $R\langle X\rangle$ is the monoid algebra of the free monoid on $X$, with basis the words and the universal property that every map $X \to A$ into an associative unital algebra extends uniquely; the **tensor algebra** $T(M) = \bigoplus_{n \geq 0} M^{\otimes n}$ is the free associative algebra on a module, with the adjunction $T \dashv U$ of *Tensor Powers and the Free Algebra*. The **universal enveloping algebra** $\mathrm{U}(\mathrm{G})$ is the associative algebra attached to a Lie algebra by the adjunction $U \dashv (-)^-$ with the commutator functor, and by the **Poincaré–Birkhoff–Witt theorem** the Lie algebra sits inside it with associated graded the symmetric algebra; both statements are quoted from *Universal Enveloping Algebras*.
+Associativity implies **power-associativity**, the associativity of the subalgebra generated by any one element, and hence every identity of the ladder of *Non-Associative Algebras and the Property Ladder*; the converse fails, the octonions being power-associative and not associative. The **free associative algebra** $R\langle X\rangle$ is the monoid algebra of the free monoid on $X$, with basis the words and the universal property that every map $X \to A$ into an associative unital algebra extends uniquely; the **tensor algebra** $T(M) = \bigoplus_{n \geq 0} M^{\otimes n}$ is the free associative algebra on a module, with the adjunction $T \dashv U$ of *Tensor Powers and the Free Algebra*.
 
-The model associative algebra is $\operatorname{End}_R(M)$, with $M_n(R) \cong \operatorname{End}_R(R^n)$ as its matrix case, and a unital $A$-module is the same thing as a homomorphism $A \to \operatorname{End}_R(M)$. The algebras of the corpus that fail associativity are the commutator algebras $A^-$, the Lie algebras and the cross product on $\mathbb{R}^3$, the octonions, the sixteen-dimensional Cayley–Dickson algebra, the Jordan algebras that are not associative and the strictness witnesses of the ladder. Associativity is assumed in the corpus where it is needed: for the product of ideals and powers of an ideal, for modules and representations, for the bar resolution of Hochschild homology, and for the presentations of the number systems by generators and relations.
+The model associative algebra is $\operatorname{End}_R(M)$, with $M_n(R) \cong \operatorname{End}_R(R^n)$ as its matrix case, and a unital $A$-module is the same thing as a homomorphism $A \to \operatorname{End}_R(M)$. The algebras named in this article that fail associativity are the octonions, the sixteen-dimensional Cayley–Dickson algebra and the strictness witness of the ladder. Associativity is assumed in the corpus where it is needed: for the product of ideals and powers of an ideal, for modules and representations, for the bar resolution of Hochschild homology, and for the presentations of the number systems by generators and relations.
 
 ## Summary of Notation
 
@@ -269,20 +195,11 @@ The model associative algebra is $\operatorname{End}_R(M)$, with $M_n(R) \cong \
 | $R\langle x_1,\dots,x_n\rangle$ | The free associative algebra on $n$ generators |
 | $T(M) = \bigoplus_{n \geq 0} M^{\otimes n}$ | The tensor algebra, the free associative algebra on $M$; $T(R^{(X)}) \cong R\langle X\rangle$ |
 | $T \dashv U$ | Tensor algebra left adjoint to the forgetful functor to $R$-modules |
-| $A^-$ | The commutator algebra of an associative algebra, $[x,y] = xy - yx$ |
-| $[x,y] = xy - yx$ | The commutator bracket of $A^-$, of arity two, distinct from the ternary associator $[x,y,z]$ |
-| $\mathrm{G}$, $\mathrm{U}(\mathrm{G})$ | A Lie algebra and its universal enveloping algebra |
-| $U \dashv (-)^-$ | Enveloping algebra left adjoint to the commutator functor |
-| $\iota : \mathrm{G} \to \mathrm{U}(\mathrm{G})$ | The canonical map, injective by Poincaré–Birkhoff–Witt |
-| $\operatorname{Sym}(\mathrm{G})$ | The symmetric algebra, $\cong \operatorname{gr} \mathrm{U}(\mathrm{G})$ |
 | $M_n(R)$, $E_{ij}$ | The matrix algebra and its matrix units, $E_{ij}E_{kl} = \delta_{jk}E_{il}$ |
-| $\operatorname{Hom}_{\mathsf{Lie}_R}$, $\operatorname{Hom}_{\mathsf{Alg}_R}$ | Homomorphisms of Lie algebras, and of unital associative $R$-algebras |
 | $\operatorname{End}_R(M)$, $L_a$ | The endomorphism algebra and the left multiplication $L_a(x) = ax$ |
-| $x \bullet y = \tfrac12(xy + yx)$ | The symmetrised product, commutative and generally non-associative; *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*, writes the same symmetrisation as $xy + yx$, the two differing by the unit $2$ |
 
 ## Further Reading
 
-- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the structure theory of associative algebras, the free algebra and the enveloping algebra.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the structure theory of associative algebras and the free algebra.
 - Paul M. Cohn, *Free Rings and Their Relations* (Academic Press, 2nd ed. 1985), for the free associative algebra and its quotients.
-- Jacques Dixmier, *Enveloping Algebras* (North-Holland, 1977), for the universal enveloping algebra and the Poincaré–Birkhoff–Witt theorem in full.
 - A. A. Albert, *Power-associative rings* (Transactions of the American Mathematical Society, 1948), for power-associativity and the identities that generate it.
