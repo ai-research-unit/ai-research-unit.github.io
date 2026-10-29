@@ -139,7 +139,7 @@ S_+=\mathbb{R}\Pi_+,
 S_-=\mathbb{R}\Pi_-,
 $$
 
-and a spinor of first chirality is $\xi_+=a_1\Pi_+$, with coordinates $(a_1,0)$, while a spinor of second chirality is $\xi_-=a_2\Pi_-$, with coordinates $(0,a_2)$.
+and a spinor of the first Peirce copy is $\xi_+=a_1\Pi_+$, with coordinates $(a_1,0)$, while a spinor of the second Peirce copy is $\xi_-=a_2\Pi_-$, with coordinates $(0,a_2)$.
 
 When $q'\neq0$ the eigenvalues are distinct, and every eigenbasis is
 
@@ -247,7 +247,7 @@ $$
 
 The trace is $10=8+2$ and the determinant is $16=8\cdot2$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of second chirality is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
+**Spinors.** A spinor of the first Peirce copy is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
 \mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
 $$
@@ -324,7 +324,7 @@ $$
 
 The trace is $6=8-2$ and the determinant is $-16=8\cdot(-2)$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of second chirality is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
+**Spinors.** A spinor of the first Peirce copy is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
 \mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
 $$
@@ -401,7 +401,7 @@ $$
 
 The trace is $-10=-8-2$ and the determinant is $16=(-8)(-2)$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of second chirality is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
+**Spinors.** A spinor of the first Peirce copy is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
 \mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
 $$
@@ -478,7 +478,7 @@ $$
 
 The trace is $2=-1+3$ and the determinant is $-3=(-1)\cdot3$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of second chirality is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
+**Spinors.** A spinor of the first Peirce copy is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
 \mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
 $$
@@ -555,7 +555,7 @@ $$
 
 The trace is $0$ and the determinant is $-1$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of second chirality is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
+**Spinors.** A spinor of the first Peirce copy is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
 \mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
 $$
@@ -612,7 +612,7 @@ M_Q=2I_2,
 C^{-1}M_QC=\begin{pmatrix}2&0\\0&2\end{pmatrix}.
 $$
 
-**Spinors.** A spinor of first chirality is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of second chirality is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
+**Spinors.** A spinor of the first Peirce copy is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
 \mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
 $$
@@ -661,7 +661,7 @@ M_Q=-2I_2,
 C^{-1}M_QC=\begin{pmatrix}-2&0\\0&-2\end{pmatrix}.
 $$
 
-**Spinors.** A spinor of first chirality is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of second chirality is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
+**Spinors.** A spinor of the first Peirce copy is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
 \mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
 $$
@@ -724,7 +724,7 @@ $$
 
 The matrix has rank one and determinant zero. Its image is the line of $\Pi_+$ and its kernel is the line of $\Pi_-$.
 
-**Spinors.** A spinor of first chirality is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of second chirality is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
+**Spinors.** A spinor of the first Peirce copy is $\xi_+=a_1\Pi_+$ with $a_1\in\mathbb{R}$, and a spinor of the second Peirce copy is $\xi_-=a_2\Pi_-$ with $a_2\in\mathbb{R}$. A general element is $Q_2=a_1\Pi_++a_2\Pi_-$, with matrix
 $$
 \mathsf M(Q_2)=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix}
 $$

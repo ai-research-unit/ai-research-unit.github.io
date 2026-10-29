@@ -287,7 +287,7 @@ S_+\longleftrightarrow\left\{\begin{pmatrix}A_1&0\\0&0\end{pmatrix}:A_1\in\mathb
 \qquad
 S_-\longleftrightarrow\left\{\begin{pmatrix}0&0\\0&A_2\end{pmatrix}:A_2\in\mathbb{C}\right\}.
 $$
-A spinor of first chirality is $\xi_+=A_1\Pi_+$ and is represented by the first column $(A_1,0)^{\mathsf T}$; a spinor of second chirality is $\xi_-=A_2\Pi_-$ and is represented by the second column $(0,A_2)^{\mathsf T}$. The general element is the sum of one spinor of each chirality, and its two coordinates are the two diagonal entries.
+A spinor of the first Peirce copy is $\xi_+=A_1\Pi_+$ and is represented by the first column $(A_1,0)^{\mathsf T}$; a spinor of the second Peirce copy is $\xi_-=A_2\Pi_-$ and is represented by the second column $(0,A_2)^{\mathsf T}$. The general element is the sum of one spinor of each Peirce copy, and its two coordinates are the two diagonal entries.
 
 Under multiplication by $\breve Q$ the two columns are scaled independently:
 $$

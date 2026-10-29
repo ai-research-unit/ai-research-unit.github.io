@@ -167,7 +167,7 @@ $$
 = \omega_L\,\vec r\times\vec u_t\;},
 $$
 
-the Larmor/Bloch equation for the classical spin, with $|\vec r| = 1$. The classical spin is the saddle point of the spin-1/2 path integral, and its dynamics is precession on the sphere.
+the Larmor/Bloch equation for the classical spin vector, with $|\vec r| = 1$. The classical spin vector is the saddle point of the spin-1/2 path integral, and its dynamics is precession on the sphere.
 
 ### The Classical Limit as a Phase-Space Problem
 

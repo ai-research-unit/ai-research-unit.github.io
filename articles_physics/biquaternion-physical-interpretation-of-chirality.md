@@ -33,7 +33,7 @@ $$
 
 It is implemented by the element $i\vec e_z\in\mathbb{B}$, it is $\mathbb{B}$-linear, and it grades two copies of one module. The centre of $\mathbb{B}$ is $\mathbb{C}e_t$, with no nontrivial idempotent; no element of $\mathbb{B}$ implements a grading into two non-isomorphic summands.
 
-The conjugate module $S^{\mathrm{c}}$ is $S$ with the conjugate scalar action. It is isomorphic to $S$ as a real module and not isomorphic to $S$ as a complex module. The complexification $\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, with $j$ a new central imaginary unit, has the central idempotents
+The conjugate module $S^{\mathrm{c}}$ is $S$ with the conjugate scalar action. It is isomorphic to $S$ as a real $\mathbb{B}_{\mathbb{R}}$-module and not isomorphic to $S$ as a complex $\mathbb{B}_{\mathbb{R}}$-module. The complexification $\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$, with $j$ a new central imaginary unit, has the central idempotents
 
 $$
 e_+=\tfrac12(1+ij),\qquad e_-=\tfrac12(1-ij),
@@ -69,7 +69,7 @@ $$
 \beta(s,t)=s^{\dagger}t,
 $$
 
-up to a scalar. The scalar is the mass. The pairing is off-diagonal and chirality-odd; it is not a $\mathbb{B}$-linear operator, and it is not the Peirce nilpotent.
+up to a scalar. The scalar is the mass. The pairing is off-diagonal and chirality-odd; it is not a $\mathbb{B}_{\mathbb{R}}$-linear operator, and it is not the Peirce nilpotent.
 
 ## The Chiral Multiplet
 
@@ -85,9 +85,9 @@ $$
 
 ## The Peirce Index Is a Copy Label
 
-**The interpretation.** The Peirce plane $S_+$ is a copy of $S$. A field in $S_+$ is a left-handed field, not a second chirality. The two Peirce planes are two copies of one Lorentz module; the left action does not distinguish them. A gauge action by left multiplication acts identically on $S_+$ and $S_-$, so it is vector-like on the copies. The weak chirality is the Lorentz chirality, not the Peirce index.
+**The interpretation.** The Peirce plane $S_+$ is a copy of $S$. A field in $S_+$ is a copy of a left-handed field, not a second chirality. The two Peirce planes are two copies of one Lorentz module; the left action does not distinguish them. A gauge action by left multiplication acts identically on $S_+$ and $S_-$, so it is vector-like on the copies. The weak chirality is the Lorentz chirality, not the Peirce index.
 
-**The boundary.** The Peirce index is a legitimate label: it names the two copies, and the nilpotent $R_{\vec\Upsilon_x}$, with $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, flips it. It is not the label the weak interaction uses. The phrase "Peirce chirality", where it occurs in the corpus, is a misnomer for this copy index.
+**The boundary.** The Peirce index is a legitimate label: it names the two copies, and the nilpotent $R_{\vec\Upsilon_x}$, with $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, flips it. It is not the label the weak interaction uses. Calling this copy index a chirality is a misnomer.
 
 ## The Mass Is a Pairing
 
@@ -105,7 +105,7 @@ D_m=\begin{pmatrix}0&m\\ \bar m&0\end{pmatrix},
 \chi D_m\chi=-D_m,
 $$
 
-and it is not $\mathbb{B}$-linear. The mass exists as a pairing between two inequivalent halves, not as an equivariant map between them.
+and it is not $\mathbb{B}_{\mathbb{R}}$-linear. The mass exists as a pairing between two inequivalent halves, not as an equivariant map between them.
 
 **The boundary.** No mass value, no mass spectrum and no dynamics are supplied. The Peirce nilpotent $R_{\vec\Upsilon_x}:S_+\to S_-$ is a $\mathbb{B}$-linear copy flip; it is a different coupling, and calling it a mass is a model choice, not the Standard Model mass.
 
@@ -117,15 +117,15 @@ and it is not $\mathbb{B}$-linear. The mass exists as a pairing between two ineq
 
 ## The Central Phase: Vector-Like or Axial
 
-**The interpretation.** A central phase $\lambda\in U(1)$ acts on the regular module $S\oplus S$ as $\lambda$ on both copies: it is vector-like. The same phase acts on the Dirac module $S\oplus S^{\mathrm{c}}$ as $\lambda$ on $S$ and $\bar\lambda$ on $S^{\mathrm{c}}$: it is axial, with opposite charges. The mass bilinear has charge $-2$ under the axial phase and is not invariant; it is invariant under the vector phase. The algebra alone does not choose the module. The gauge principle must say whether it acts on the algebra or on the Dirac module.
+**The interpretation.** A central phase $\lambda\in U(1)$ acts on the regular module $S\oplus S$ as $\lambda$ on both copies: it is vector-like. The same phase acts on the Dirac module $S\oplus S^{\mathrm{c}}$ as $\lambda$ on $S$ and $\bar\lambda$ on $S^{\mathrm{c}}$: it is axial, with opposite charges. The mass bilinear transforms by $\bar\lambda^2$ under the axial phase and is not invariant; it is invariant under the vector phase. The algebra alone does not choose the representation. The gauge principle must say whether the fermions sit in $S\oplus S$ or in $\Delta$.
 
 **The boundary.** This is a statement about the module, not a derivation of the Standard Model gauge group. The centre of $\mathbb{B}$ supplies an abelian phase; it does not supply the non-abelian weak group, and it does not decide between the vector-like and axial interpretations.
 
 ## The Grading of the Spectral Triple
 
-**The interpretation.** For the biquaternion spectral triple, whose algebra is $\mathbb{B}$, the finite Hilbert space must be the Dirac module $\Delta$, not the simple module $S$. On $S$, every $\mathbb{B}$-linear operator is scalar, so there is no nontrivial grading commuting with the left action. A grading $\operatorname{diag}(1,-1)$ on a two-dimensional $S$ does not commute with a general left multiplication. The chirality of the triple is the operator $\chi$ on $\Delta$.
+**The interpretation.** A spectral triple with algebra $\mathbb{B}$ and finite Hilbert space $S$ cannot carry a nontrivial chirality. On $S$, every $\mathbb{B}$-linear operator is scalar, so the only grading commuting with the left action is trivial; a grading $\operatorname{diag}(1,-1)$ on a two-dimensional $S$ does not commute with a general left multiplication. The finite Hilbert space that carries the chiral grading is the Dirac module $\Delta$, with $\chi=\operatorname{diag}(-I_2,I_2)$. This is the module-level condition the finite part of the triple must meet.
 
-**The boundary.** This is a consistency condition on the finite part of the triple, not a construction of the triple. The analytic axioms, the Dirac operator and the spectral action are outside the article.
+**The boundary.** This is a consistency condition on the finite part of the triple, not a construction of the triple. The candidate in *The Spectral Triple of the Biquaternion Algebra* takes the finite space to be $\Delta=S\oplus S^{\mathrm{c}}$, with the chirality $\chi=\operatorname{diag}(-I_2,I_2)$; the single module $S$ carries no nontrivial grading. The analytic axioms, the Dirac operator and the spectral action are outside the article.
 
 ## Limits
 
@@ -134,14 +134,14 @@ and it is not $\mathbb{B}$-linear. The mass exists as a pairing between two ineq
 - **No mass value and no spectrum.** The pairing is fixed up to a scalar; the scalar is dynamical.
 - **No dynamics.** Nothing here says how a field moves between the halves in time.
 - **The left/right naming is a convention.** The physics is the pair and the grading, not the names.
-- **The central phase's module is an input.** Vector-like on the algebra, axial on the Dirac module; the algebra alone does not choose.
+- **The central phase's representation is an input.** Vector-like on $S\oplus S$, axial on $\Delta$; the algebra alone does not choose.
 - **The Peirce copy flip is not the chiral mass.** The two couplings act on different pairs of spaces and have different invariance.
 - **No claim that every fermion is a Dirac pair.** Weyl and Majorana fermions are separate cases.
 - **No claim that chirality is an element of $\mathbb{B}$.** It is an endomorphism of $\Delta$ outside the algebra, equivalently the central element $ij$ of the complexification.
 
 ## Summary
 
-Chirality is the central sign of the conjugate pair. The Peirce sign $P=R_{i\vec e_z}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades $S_+\cong S_-\cong S$; it is a copy index. The chiral sign $\chi=ij$ is the nontrivial central involution of $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$ and grades $S$ against $S^{\mathrm{c}}$. On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ it is $\operatorname{diag}(-I,I)$. The mass is the unique invariant sesquilinear pairing between the two halves, off-diagonal and chirality-odd; it is not a $\mathbb{B}$-linear operator. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair. The central phase is vector-like on the algebra and axial on the Dirac module, and the algebra alone does not choose between the two interpretations.
+Chirality is the central sign of the conjugate pair. The Peirce sign $P=R_{i\vec e_z}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades $S_+\cong S_-\cong S$; it is a copy index. The chiral sign $\chi=ij$ is the nontrivial central involution of $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$ as real algebras, and grades $S$ against $S^{\mathrm{c}}$. On the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ it is $\operatorname{diag}(-I,I)$. The mass is the unique invariant sesquilinear pairing between the two halves, off-diagonal and chirality-odd; it is not a $\mathbb{B}_{\mathbb{R}}$-linear operator. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair. The central phase is vector-like on $S\oplus S$ and axial on $\Delta$, and the algebra alone does not choose between the two interpretations.
 
 $$
 \boxed{\;
@@ -174,7 +174,7 @@ $$
 
 - [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html), for the definitions, the two no-go theorems, the central idempotents and the pairing.
 - [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the carrier count, the module structure and the distinction between the Peirce index and the Lorentz chirality.
-- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chiral projectors, the mass selection rule and the gauge discussion.
-- [The Spectral Triple of the Biquaternion Algebra](the-spectral-triple-of-the-biquaternion-algebra.html), for the finite Hilbert space and the chirality of the triple.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chiral projectors, the mass selection rule and the gauge discussion, stated there in the $\gamma_5$ language.
+- [The Spectral Triple of the Biquaternion Algebra](the-spectral-triple-of-the-biquaternion-algebra.html), for the candidate triple with the finite space $\Delta$ and the central chirality.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint-action reading of integer spin, which is a representation label and not a chirality.
 - [The Two Chiralities of $M_4(\mathbb{C})$](../articles_maths/the-two-chiralities-of-m4c.html), for the comparison with the matrix case.

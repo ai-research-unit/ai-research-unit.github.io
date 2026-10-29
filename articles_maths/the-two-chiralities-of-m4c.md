@@ -302,9 +302,9 @@ and $e_2,e_4$ have chirality $-1$ while $e_1,e_3$ have chirality $+1$. The Peirc
 
 ## The Biquaternion Case
 
-**At $n=2$ the chirality is the root itself.** The biquaternion algebra is $M_2(\mathbb{C})$, the root $H$ has order two, $H^2=I$, and the chirality is $\Gamma=H$. The general formula $\Gamma=H^2$ degenerates to the identity and is replaced by the root itself.
+**At $n=2$ the matrix-model chirality is the root itself, and it is not the biquaternion chirality.** The biquaternion algebra is $M_2(\mathbb{C})$, the root $H$ has order two, $H^2=I$, and the general formula $\Gamma=H^2$ degenerates: the matrix-model chirality is $\Gamma=H$. This $\Gamma$ grades the carrier into the two eigenspaces of the Peirce root. Those eigenspaces are lines; they are the two weight lines of the frame, and each minimal left ideal, a column, contains one line of each sign. They are not the two Peirce copies. The chirality of the biquaternion Dirac field is the separate central sign $\chi=ij$ of *Chirality: The Conjugate Pair*, which grades $S$ against $S^{\mathrm{c}}$; it is not an eigenspace of $H$.
 
-The two chiralities are the two eigenspaces of $H$, which are lines. The chiral blocks are
+The two matrix-model chiralities are the two eigenspaces of $H$, which are lines. The chiral blocks are
 
 $$
 \mathcal{A}=P_+M_2P_+,\quad
@@ -315,7 +315,7 @@ $$
 
 each of dimension $1$, and the mass block is a line. The chiral algebra is the Cartan of $M_2$, of dimension $1$, not a product of two $\mathfrak{su}_2$'s. The product $\mathfrak{su}_2\times\mathfrak{su}_2$ is a feature of the four-dimensional carrier, where each chirality is a plane.
 
-**The degeneration.** At $n=2$ the two chiralities are lines, and the mass block is a line. At $n=4$ the two chiralities are planes and the mass block is four-dimensional. The passage from $n=2$ to $n=4$ replaces the two lines by two planes and the one mass line by a four-dimensional mass block. The chirality involution survives, but its eigenspaces grow.
+**The degeneration.** At $n=2$ the two matrix-model chiralities are lines, and the mass block is a line. At $n=4$ the two chiralities are planes and the mass block is four-dimensional. The passage from $n=2$ to $n=4$ replaces the two lines by two planes and the one mass line by a four-dimensional mass block. The chirality involution survives, but its eigenspaces grow.
 
 ## Summary
 
@@ -326,7 +326,7 @@ M_4(\mathbb{C})=\mathcal{A}\oplus\mathcal{B}\oplus\mathcal{C}\oplus\mathcal{D},
 \qquad 4+4+4+4=16,
 $$
 
-with $\mathcal{A},\mathcal{D}\cong M_2(\mathbb{C})$ and $\mathcal{B},\mathcal{C}$ the mass blocks. The even part $\mathcal{A}\oplus\mathcal{D}$ is the centraliser of $\Gamma$, of dimension eight; the odd part $\mathcal{B}\oplus\mathcal{C}$ is the mass block and its opposite, of dimension eight. The chirality is the $\mathbb{Z}/2$ quotient of the $\mathbb{Z}/4$ grading. The two chiralities are subspaces of the carrier, not minimal left ideals; the minimal left ideals of $M_4$ are the four-dimensional spaces $M_4P_k$. The chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ preserves $\Gamma$ and acts as spin-$\tfrac12$ on each chirality; the Peirce $\mathfrak{sl}_2$ is irreducible and mixes the chiralities. At $n=2$ the chirality is the root itself and the two chiralities are lines.
+with $\mathcal{A},\mathcal{D}\cong M_2(\mathbb{C})$ and $\mathcal{B},\mathcal{C}$ the mass blocks. The even part $\mathcal{A}\oplus\mathcal{D}$ is the centraliser of $\Gamma$, of dimension eight; the odd part $\mathcal{B}\oplus\mathcal{C}$ is the mass block and its opposite, of dimension eight. The chirality is the $\mathbb{Z}/2$ quotient of the $\mathbb{Z}/4$ grading. The two chiralities are subspaces of the carrier, not minimal left ideals; the minimal left ideals of $M_4$ are the four-dimensional spaces $M_4P_k$. The chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ preserves $\Gamma$ and acts as spin-$\tfrac12$ on each chirality; the Peirce $\mathfrak{sl}_2$ is irreducible and mixes the chiralities. At $n=2$ the matrix-model chirality is the root itself and its two eigenspaces are lines; the biquaternion chirality is the central sign $\chi=ij$ of *Chirality: The Conjugate Pair*.
 
 $$
 \boxed{\ \Gamma=H^2,\quad \Gamma^2=I,\quad \operatorname{tr}\Gamma=0,\quad \mathbb{C}^4=\mathbb{C}^2_+\oplus\mathbb{C}^2_-,\quad M_4=\mathcal{A}\oplus\mathcal{B}\oplus\mathcal{C}\oplus\mathcal{D},\quad 4+4+4+4=16.\ }

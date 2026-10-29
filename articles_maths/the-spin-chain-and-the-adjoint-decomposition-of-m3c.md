@@ -307,7 +307,7 @@ the trace line and the adjoint $\mathfrak{sl}_{2}$. The biquaternion algebra is 
 
 In $M_{3}(\mathbb{C})$ the carrier is $\mathbb{C}^{3}=\operatorname{Sym}^{2}(\mathbb{C}^{2})$, the weights are $1,0,-1$, and the ladder coefficients are $\sqrt2,\sqrt2$. The adjoint is $1+3+5$. **There is no half-integer weight in the $M_{3}$ decomposition**: every weight of $\operatorname{ad}_{J_{3}}$ is an integer, and every irreducible summand has odd dimension. The half-integer weights occur only in the two-dimensional carrier of the biquaternion case; this is the precise sense in which the biquaternion algebra is the spinorial case and $M_{3}(\mathbb{C})$ is not.
 
-**The spin is the weight of the Peirce chain.** The highest weight of the carrier is $1$, so the spin is $1$. The highest weight of the $5$ is $2$, so its spin is $2$; the highest weight of the $3$ is $1$, so its spin is $1$; the trace has spin $0$. The three spins $0,1,2$ are the three summands $1,3,5$, and the dimensions are $2j+1$.
+**The spin is half the highest weight of the root, equivalently the highest weight of $J_3=h/2$.** The highest weight of the carrier is $1$, so the spin is $1$. The highest weight of the $5$ is $2$, so its spin is $2$; the highest weight of the $3$ is $1$, so its spin is $1$; the trace has spin $0$. The three spins $0,1,2$ are the three summands $1,3,5$, and the dimensions are $2j+1$.
 
 ## Summary
 

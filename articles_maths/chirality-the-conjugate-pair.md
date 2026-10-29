@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Chirality is the grading of the conjugate pair, not the sign of the Peirce decomposition.** The Peirce sign is an inner involution of the regular module; its two eigenspaces are minimal left ideals and both are isomorphic to the simple module $S$. The chiral sign is the nontrivial central involution of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$; its two eigenspaces are $S$ and its conjugate $S^{\mathrm{c}}$, which are not isomorphic. The article proves the two no-go statements that separate the notions, constructs the chiral grading, identifies it with the central idempotents $\tfrac12(1\pm ij)$, and shows that the mass is the off-diagonal invariant pairing between the two halves, not an algebra element and not a Peirce nilpotent. A final section separates the four uses of the word spin in the corpus: the highest weight, the Peirce index, the chirality and the adjoint action. No Clifford algebra is used.
+**Chirality is the grading of the conjugate pair, not the sign of the Peirce decomposition.** The Peirce sign is an inner involution of the regular module; its two eigenspaces are minimal left ideals and both are isomorphic to the simple module $S$. The chiral sign is the nontrivial central involution of the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}$; its two eigenspaces are $S$ and its conjugate $S^{\mathrm{c}}$, which are not isomorphic. The article proves the no-go statements that separate the notions, constructs the chiral grading, identifies it with the central idempotents $\tfrac12(1\pm ij)$, and shows that the mass is the off-diagonal invariant pairing between the two halves, not an algebra element and not a Peirce nilpotent. A section separates the one definition of spin from the three labels that sit beside it: the Peirce index, the chirality and the adjoint carrier. No Clifford algebra is used.
 
 The Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the simple module and its endomorphisms are *The Category of Modules*; the conjugate module is *Conjugate-Linear Maps and the Conjugate Dual*; the matrix model and its $\epsilon$ are *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*; the invariant form of the spinor module is *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*. The physical interpretation is *Biquaternion Physical Interpretation of Chirality*.
 
@@ -65,7 +65,7 @@ $$
 
 both isomorphic to $S$.
 
-*Proof.* An endomorphism $T$ of the left module $\mathbb{B}$ is determined by $T(e_t)=q$, and then $T(a)=T(ae_t)=aT(e_t)=aq=R_q(a)$. The composite of right multiplications is $R_qR_{q'}=R_{q'q}$, so $R_q^2=\mathrm{id}$ is $q^2=e_t$. The polynomial $X^2-1$ has distinct roots, so a non-central $q$ with $q^2=e_t$ has eigenvalues $+1$ and $-1$, each with a one-dimensional eigenspace in the matrix model; the two idempotents $\tfrac12(e_t\pm q)$ are primitive and their left ideals are minimal. If $q$ is central, then $q=\pm e_t$ because $Z(\mathbb{B})=\mathbb{C}e_t$ and the only central idempotents of $\mathbb{C}$ are $0$ and $e_t$.
+*Proof.* An endomorphism $T$ of the left module $\mathbb{B}$ is determined by $T(e_t)=q$, and then $T(a)=T(ae_t)=aT(e_t)=aq=R_q(a)$. The composite of right multiplications is $R_qR_{q'}=R_{q'q}$, so $R_q^2=\mathrm{id}$ is $q^2=e_t$. The polynomial $X^2-1$ has distinct roots, so a non-central $q$ with $q^2=e_t$ has eigenvalues $+1$ and $-1$, each with a one-dimensional eigenspace in the matrix model; the two idempotents $\tfrac12(e_t\pm q)$ are primitive and their left ideals are minimal. If $q$ is central, then $q=\lambda e_t$ with $\lambda\in\mathbb{C}$ and $\lambda^2=1$, so $q=\pm e_t$.
 
 **Corollary (the no-go for the regular module).** No element of $\mathbb{B}$ grades $\mathbb{B}$ into two non-isomorphic summands. The regular module is $S\oplus S$, and every inner $\pm$ grading of it grades copies of $S$.
 
@@ -79,9 +79,11 @@ This is the precise sense in which the Peirce sign is not a chirality. It is a l
 
 **Corollary.** Every nontrivial involution $q\in\mathbb{B}_{\mathbb{R}}$ is non-central, and the grading $R_q$ is a copy grading by the previous theorem. A nontrivial central $\pm$ requires an extension of the algebra.
 
-The corollary is the reason chirality cannot be an element of the biquaternion algebra. The algebra has one central sign, the trivial one; every other sign is a sign inside the fibre $S$, not a sign between two inequivalent fibres.
+The corollary is the reason chirality cannot be an element of the biquaternion algebra. The algebra has one central sign, the trivial one; every other sign is a sign between copies of the same fibre $S$, not between two inequivalent fibres.
 
 ## The Conjugate Module
+
+**Convention.** In this section and below, a module is a complex module, and $\operatorname{Hom}_{\mathbb{B}_{\mathbb{R}}}$ and $\operatorname{End}_{\mathbb{B}_{\mathbb{R}}}$ are taken in the category of complex modules: the maps are $\mathbb{C}$-linear as well as $\mathbb{B}_{\mathbb{R}}$-linear. Real-linear maps are distinguished explicitly when they are meant.
 
 **Definition.** Let $S$ be the simple left $\mathbb{B}$-module. The **conjugate module** $S^{\mathrm{c}}$ is the same additive group with the scalar action
 
@@ -89,15 +91,15 @@ $$
 \lambda\cdot s=\bar\lambda s,\qquad a\cdot s=as,
 $$
 
-for $\lambda\in\mathbb{C}$ and $a\in\mathbb{B}_{\mathbb{R}}$.
+for $\lambda\in\mathbb{C}$ and $a\in\mathbb{B}_{\mathbb{R}}$. In the notation of *Conjugate-Linear Maps and the Conjugate Dual*, $S^{\mathrm{c}}=S^{\varsigma}$ for $\varsigma$ the complex conjugation.
 
 **Proposition.** $S^{\mathrm{c}}$ is a complex module over the real algebra $\mathbb{B}_{\mathbb{R}}$. The action map $a\mapsto L_a$ is conjugate-linear in $a$, so $S^{\mathrm{c}}$ is not a complex $\mathbb{B}$-module. The identity map $\mathrm{id}:S\to S^{\mathrm{c}}$ is a real-linear isomorphism and is $\mathbb{B}_{\mathbb{R}}$-linear; it is not complex-linear.
 
 *Proof.* For $\lambda\in\mathbb{C}$ and $a\in\mathbb{B}_{\mathbb{R}}$, $L_a(\lambda\cdot s)=L_a(\bar\lambda s)=\bar\lambda L_a(s)=\lambda\cdot L_a(s)$, so the action is complex-linear in the vector and the module axioms hold. In the algebra variable, $L_{\lambda a}=\bar\lambda L_a$ on $S^{\mathrm{c}}$, so the action is conjugate-linear in $a$. The identity satisfies $\mathrm{id}(as)=a\cdot\mathrm{id}(s)$, and $\mathrm{id}(\lambda s)=\lambda s$ while $\lambda\cdot\mathrm{id}(s)=\bar\lambda s$, so it is not complex-linear.
 
-**Theorem (real isomorphism, complex inequivalence).** $S$ and $S^{\mathrm{c}}$ are isomorphic as real $\mathbb{B}_{\mathbb{R}}$-modules and are not isomorphic as complex $\mathbb{B}_{\mathbb{R}}$-modules. Every $\mathbb{B}_{\mathbb{R}}$-linear map $T:S\to S^{\mathrm{c}}$ is zero.
+**Theorem (real isomorphism, complex inequivalence).** $S$ and $S^{\mathrm{c}}$ are isomorphic as real $\mathbb{B}_{\mathbb{R}}$-modules and are not isomorphic as complex $\mathbb{B}_{\mathbb{R}}$-modules. Every $\mathbb{C}$-linear $\mathbb{B}_{\mathbb{R}}$-linear map $T:S\to S^{\mathrm{c}}$, and every such map $S^{\mathrm{c}}\to S$, is zero.
 
-*Proof.* The identity is the real isomorphism. For the complex statement, a $\mathbb{C}$-linear map $T:S\to S^{\mathrm{c}}$ is, on the underlying space, a conjugate-linear map $T(s)=C\bar s$, and $T(as)=aT(s)$ reads $C\bar A=AC$ for every $A\in M_2(\mathbb{C})$. Taking $A=E_{12}$ and $A=E_{21}$ gives $C=cI$; taking $A=\operatorname{diag}(1,i)$ gives $c\operatorname{diag}(1,-i)=c\operatorname{diag}(1,i)$, hence $c=0$. So $T=0$.
+*Proof.* The identity is the real isomorphism. For the complex statement, a $\mathbb{C}$-linear map $T:S\to S^{\mathrm{c}}$ is, on the underlying space, a conjugate-linear map $T(s)=C\bar s$ with $C=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, and $T(as)=aT(s)$ reads $C\bar A=AC$ for every $A\in M_2(\mathbb{C})$. Taking $A=\operatorname{diag}(1,-1)$ gives $b=c=0$, so $C=\operatorname{diag}(a,d)$; taking $A=E_{12}$ then gives $a=d=0$. So $C=0$. The same computation with the roles of $S$ and $S^{\mathrm{c}}$ exchanged gives the vanishing of every $\mathbb{C}$-linear map $S^{\mathrm{c}}\to S$.
 
 **Corollary.** Chirality is a complex phenomenon: the two halves are real-isomorphic and complex-inequivalent. The distinction is invisible to the real algebra and visible to its complex representations.
 
@@ -148,7 +150,7 @@ $$
 \rho(a)=\operatorname{diag}\bigl(\mathsf{M}_2(a),\ \epsilon\,\overline{\mathsf{M}_2(a)}\,\epsilon^{-1}\bigr),
 $$
 
-and the action extends to $\mathbb{B}[j]$ by $\rho(j)=iI_4$. Then
+and the nontrivial extension to $\mathbb{B}[j]$ is $\rho(j)=iI_4$ (the other choice, $\rho(j)=\operatorname{diag}(iI_2,-iI_2)$, gives the trivial grading). Then
 
 $$
 \rho(i)=\operatorname{diag}(iI_2,-iI_2),\qquad
@@ -206,7 +208,7 @@ $$
 
 The algebra fixes the shape $\beta$ and not the number $m$; the number is the mass.
 
-**Proposition (the mass operator is off-diagonal and chirality-odd).** Relative to the positive Hermitian form on $\Delta$, the operator $D_m$ defined by $\beta(s,t)=\langle (s,0),D_m(0,t)\rangle$ is
+**Proposition (the mass operator is off-diagonal and chirality-odd).** Relative to the positive Hermitian form on $\Delta$, the Hermitian operator $D_m$ with $\beta(s,t)=\langle (s,0),D_m(0,t)\rangle$ is
 
 $$
 D_m=\begin{pmatrix}0&m\\ \bar m&0\end{pmatrix},
@@ -216,41 +218,47 @@ $$
 
 *Proof.* The pairing is off-diagonal, so $D_m$ maps $S$ to $S^{\mathrm{c}}$ and $S^{\mathrm{c}}$ to $S$; the matrix form follows. The sign is $\chi D_m\chi=(-1)(+1)D_m=-D_m$ on each off-diagonal block.
 
-**Proposition (the mass is not a module map).** For $m\neq0$, $D_m$ is not $\mathbb{B}_{\mathbb{R}}$-linear. A $\mathbb{B}_{\mathbb{R}}$-linear off-diagonal map $S\to S^{\mathrm{c}}$ would be an intertwiner, and $\operatorname{Hom}_{\mathbb{B}_{\mathbb{R}}}(S,S^{\mathrm{c}})=0$.
+**Proposition (the mass is not a module map).** For $m\neq0$, $D_m$ is not $\mathbb{B}_{\mathbb{R}}$-linear. A $\mathbb{C}$-linear $\mathbb{B}_{\mathbb{R}}$-linear off-diagonal map $S\to S^{\mathrm{c}}$ would be an intertwiner, and $\operatorname{Hom}_{\mathbb{B}_{\mathbb{R}}}(S,S^{\mathrm{c}})=0$.
 
-*Proof.* The off-diagonal block of a $\mathbb{B}_{\mathbb{R}}$-linear $D_m$ is a $\mathbb{B}_{\mathbb{R}}$-linear map $S\to S^{\mathrm{c}}$; by the non-isomorphism theorem it is zero, so $m=0$. The same argument applies to the other off-diagonal block.
+*Proof.* The off-diagonal block of a $\mathbb{C}$-linear $\mathbb{B}_{\mathbb{R}}$-linear $D_m$ is a $\mathbb{C}$-linear $\mathbb{B}_{\mathbb{R}}$-linear map $S\to S^{\mathrm{c}}$; by the non-isomorphism theorem it is zero, so $m=0$. The same argument applies to the other off-diagonal block.
 
 The proposition is the precise reason the mass is a pairing and not an operator of the algebra. It exists because the two halves are inequivalent: there is no equivariant map between them, but there is an invariant bilinear between them. The mass is the scale of that bilinear.
 
 **The Peirce nilpotent is not the chiral mass.** The right multiplication $R_{\vec\Upsilon_x}:S_+\to S_-$ is $\mathbb{B}$-linear, hence $\mathbb{B}_{\mathbb{R}}$-linear, and it flips the Peirce index. It is a copy flip. The chiral mass $D_m$ is not $\mathbb{B}_{\mathbb{R}}$-linear and flips the chiral index. The two couplings act on different pairs of spaces and have different invariance; they must not be identified.
 
-## The Other Uses of the Word Spin
+## The Word Spin and the Labels Beside It
 
-The corpus uses "spin" for four different objects. They are not rivals; they answer different questions, and conflating them is the source of the "Peirce chirality" misnomer.
+**The corpus has one definition of spin, and three other words sit beside it. None of the three is a second definition.**
 
-**The highest weight.** In *The Weight of a Frame Root and the Spin Quantum Number*, a root $h=2e-1$ acts on a carrier, its eigenvalues are weights, and the spin is half the highest weight, $j=\lambda/2$. On the Peirce carrier the weights are $\pm1$, so $j=\tfrac12$; on the traceless part under the adjoint action the weights are $+2,0,-2$, so $j=1$. This spin is a **magnitude**: it measures the size of the representation. The factor $\tfrac12$ is the normalisation of the spin, and it is the same factor that makes a spinor rotation periodic in $4\pi$ rather than $2\pi$.
+**The definition.** In *The Spin of a Biquaternion*, a root $h=2e-1$ acts on a carrier $(W,\rho)$, its eigenvalues are the weights, and the spin is half the highest weight,
 
-**The Peirce index.** The sign $P=R_{i\vec e_z}$ grades $S_+\cong S_-$. This is a **copy label**, not a chirality and not a magnitude. It says which of two isomorphic copies a vector lies in.
+$$
+j=\frac{\lambda_{\max}(\rho(h))}{2}.
+$$
 
-**The chirality.** The central sign $\chi=ij$ grades $S$ against $S^{\mathrm{c}}$. This is a **sign**, not a magnitude: it says which of two inequivalent halves a field lies in. A field can carry both a spin magnitude and a chiral sign; the two are independent labels.
+On the Peirce carrier the weights of $h$ are $\pm1$, so $j=\tfrac12$. On the traceless part under the adjoint action the weights of $h$ are $+2,0,-2$, so $j=1$. This is the only definition used in the corpus. The half-angle $\theta/2$ of the polar decomposition is the exponential coordinate of the weight $\tfrac12$ on the spinor carrier: the rotor $\exp(\theta\vec u/2)$ acts on a single slot with exponents $\pm i\theta/2$. The half-angle is not the spin and it is not a normalisation of the spin. The factor $\tfrac12$ is not a chirality; it is why a spinor rotation has period $4\pi$ rather than $2\pi$.
 
-**The adjoint action.** In *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, the spin-one representation is the adjoint action of the rotation algebra on the material sector $\mathbb{M}_-$, and the higher integer spins are symmetric traceless tensors of that sector. This is a **representation** of the rotation group, not a grading. It supplies the integer-spin multiplets, not the chiral halves.
+**The Peirce index.** The sign $P=R_{i\vec e_z}$ grades $S_+\cong S_-$. It is a **copy label**, not a spin and not a chirality. It says which of two isomorphic copies a vector lies in.
 
-| Use | Object | Carrier | What it labels | Chirality? |
-| --- | --- | --- | --- | --- |
-| Highest weight | $h=2e-1$, weights $\lambda$, $j=\lambda/2$ | a carrier $W$ | the size of the representation | no |
-| Peirce index | $P=R_{i\vec e_z}$ | $S_+\oplus S_-$ | the copy | no |
-| Chirality | $\chi=ij$ | $S\oplus S^{\mathrm{c}}$ | the chiral half | yes |
-| Adjoint / integer spin | $\operatorname{ad}_{\vec e_k}$ on $\mathbb{M}_-$ | $\mathbb{M}_-$, symmetric traceless tensors | the integer-spin multiplet | no |
+**The chirality.** The central sign $\chi=ij$ grades $S$ against $S^{\mathrm{c}}$. It is a **sign**, not a magnitude and not a spin. It says which of two inequivalent halves a field lies in. A field can carry both a spin and a chiral sign; the two are independent labels.
 
-The highest-weight spin and the adjoint spin are representation labels; the Peirce index is a copy label; only the chirality is a grading into inequivalent halves. A theory needs all four labels, and the algebra supplies each of them at a different level: the root supplies the weights, the Peirce decomposition supplies the copies, the adjoint action supplies the integer-spin multiplets, and the complexification supplies the chiral grading.
+**The adjoint carrier.** In *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, the spin-one carrier is the adjoint action of the rotation algebra on the material sector $\mathbb{M}_-$, and the higher integer carriers are symmetric traceless tensors of that sector. The carrier is not a definition: its spin is $j=1$ by the definition above, read on $V$ with the operator $h/2$. It supplies the integer-spin multiplets, not the chiral halves.
+
+| object | definition | carrier | role |
+| --- | --- | --- | --- |
+| spin | $j=\lambda_{\max}(\rho(h))/2$ | a carrier $W$ | the number |
+| Peirce index | $P=R_{i\vec e_z}$ | $S_+\oplus S_-$ | the copy |
+| chirality | $\chi=ij$ | $S\oplus S^{\mathrm{c}}$ | the chiral half |
+| adjoint carrier | $\rho=\operatorname{ad}$, operator $h/2$ | $\mathbb{M}_-$, symmetric traceless tensors | the integer-spin multiplet |
+
+**The one definition and the three labels answer different questions.** The root supplies the weights; the Peirce decomposition supplies the copies; the complexification supplies the chiral sign; the adjoint action supplies a carrier on which the same definition gives the integer spins. Only the first row is the definition of spin.
 
 ## Summary
 
 Chirality is the central sign of the complexification, not the inner sign of the Peirce decomposition. The Peirce sign $P=R_{i\vec e_z}$ is implemented by the element $i\vec e_z\in\mathbb{B}$ and grades the two minimal left ideals $S_+\cong S_-\cong S$. The chiral sign $\chi=ij$ is the nontrivial central involution of
 
 $$
-\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B},
+\mathbb{B}[j]=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}_{\mathbb{R}}\cong\mathbb{B}\oplus\mathbb{B}\quad\text{(as real algebras)},
 \qquad
 e_\pm=\tfrac12(1\pm ij),
 $$
@@ -265,14 +273,14 @@ P=R_{i\vec e_z}\in\mathbb{B},\quad S_+\cong S_-\cong S.
 \;}
 $$
 
-| Sign | Operator | Type | Eigenspaces | Modules |
+| Sign | Operator | Type | Eigenspaces | Carrier |
 | --- | --- | --- | --- | --- |
-| Peirce index | $P=R_{i\vec e_z}$ | inner, non-central | $S_+$, $S_-$ | $S$, $S$ |
-| Chirality | $\chi=ij$ | central, outside $\mathbb{B}$ | $S$, $S^{\mathrm{c}}$ | $S$, $S^{\mathrm{c}}$ |
-| Sector | ${}^{*}$ | antilinear involution | $\mathbb{M}_+$, $\mathbb{M}_-$ | real subspaces |
-| Spectral | $H=i\vec e_z$ | root of $+1$ in $\mathbb{B}$ | $S_+$, $S_-$ | $S$, $S$ |
+| Peirce index | $P=R_{i\vec e_z}$ | inner, non-central | $S_+$, $S_-$ | $S_+\oplus S_-$ |
+| Chirality | $\chi=ij$ | central, outside $\mathbb{B}$ | $S$, $S^{\mathrm{c}}$ | $\Delta$ |
+| Sector | ${}^{*}$ | antilinear involution | $\mathbb{M}_+$, $\mathbb{M}_-$ | $\mathbb{B}_{\mathbb{R}}$ |
+| Root | $H=i\vec e_z$ | root of $+1$ in $\mathbb{B}$ | $S_+$, $S_-$ | $S_+\oplus S_-$ |
 
-The first and the fourth rows are the same decomposition read as an operator and as a root. The third row is a real-form split of the algebra, not a grading of the module. Only the second row is chirality.
+The first and the fourth rows are the same decomposition read as a right multiplication and as an algebra element. The third row is a real-form split of the algebra, not a grading of the module. Only the second row is chirality.
 
 ## Summary of Notation
 
@@ -306,4 +314,6 @@ The first and the fourth rows are the same decomposition read as an operator and
 - [Conjugate-Linear Maps and the Conjugate Dual](conjugate-linear-maps-and-the-conjugate-dual.html), for the conjugate module $M^{\varsigma}$ and the semilinear maps.
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the matrix model, the $\epsilon$-dressed conjugation and the adjugate.
 - [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html), for the positive Hermitian form used to pass from the pairing to the mass operator.
+- [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the half-angle of the rotor and the spinor action on a single slot.
+- [Biquaternion Physical Interpretation of Chirality](../articles_physics/biquaternion-physical-interpretation-of-chirality.html), for the physical reading of the same grading, the mass-as-pairing and the limits.
 - [The Two Chiralities of $M_4(\mathbb{C})$](the-two-chiralities-of-m4c.html), for the comparison with the matrix case, where the chirality is the $\mathbb{Z}/2$ quotient of a $\mathbb{Z}/4$ root grading.

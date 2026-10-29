@@ -24,7 +24,7 @@ S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},
 \mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}.
 $$
 
-The two planes are the **two state spaces** of the spin-$\tfrac12$ carrier. They are distinct subspaces, module-isomorphic, metrically identical and Hilbert-orthogonal, and the mass coupling is the pair of right multiplications by the two nilpotents that carries one onto the other and back. The doubling is a copy of one carrier, not a second particle.
+The two planes are the **two state spaces** of the spin-$\tfrac12$ carrier. They are distinct subspaces, module-isomorphic, metrically identical and Hilbert-orthogonal, and the copy-flip coupling is the pair of right multiplications by the two nilpotents that carries one onto the other and back. That coupling is not the chiral mass, which pairs $S$ with the conjugate module $S^{\mathrm{c}}$. The doubling is a copy of one carrier, not a second particle.
 
 The article has two theses. First, the **three carrier types are the elementary list of $\mathbb{B}$**, and the observed elementary spins are exactly that list. Second, within the spin-$\tfrac12$ carrier the two copies are **not two views of one object**: the module structure belongs to the plain bilinear product, the Hilbert structure to the plain sesquilinear product, and the complement to right multiplication. The sharpest evidence for the separation is that the algebra's own bilinear form is degenerate on the carrier, with Gram matrix $\operatorname{diag}(\tfrac12,0)$. The module has no norm of its own, and the metric is added by the second slot.
 
@@ -70,7 +70,7 @@ No observed elementary particle carries another spin. Four boundaries keep the t
 - **The graviton is not observed.** Spin $2$ is the quantum of the metric deviation, constructed from the symmetric traceless square of $V$. It belongs to the tensor construction, not to $\mathbb{B}$ alone.
 - **Hadrons are composites.** The $\Delta(1232)$ and the $\Omega^-$ have spin $\tfrac32$, the tensor mesons have spin $2$, and the $N(1680)$ has spin $\tfrac52$; all are bound states of quarks and gluons, not elementary particles.
 - **The match is not a prediction.** The Standard Model assigns the spins by hand. The algebra reproduces the set $\{0,\tfrac12,1\}$ and says nothing about which particle carries which spin, nor about masses, generations, charges or colours.
-- **The spin is the rotation spin.** The number $j$ is the highest weight for $\mathrm{Spin}(3)\subset\mathbb B^{\times}$; the full Lorentz label is $(j_L,j_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
+- **The spin is the rotation spin.** The number $j$ is half the highest weight of the frame root, equivalently the highest weight of the rotation generator $h/2$ on the carrier, for $\mathrm{Spin}(3)\subset\mathbb B^{\times}$; the full Lorentz label is $(j_L,j_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
 
 Two further physical qualifications belong to the carrier, not to the table.
 
@@ -221,7 +221,7 @@ $$
 
 the spinor space is the ideal of the level $|0\rangle$ and the complement is the ideal of the level $|1\rangle$. The nilpotents that exchange the two are the raising and lowering operators of the mode, and their nilpotency is the algebraic form of the statement that two raises erase the state. The **occupation reading** is that the doubling is the ground and the excited ideal, or the empty and the occupied ideal, of a single fermionic mode.
 
-The reading is one of several and not a decision. The same map that reads as a chirality flip reads as a level shift, and the two vocabularies are different readings of one algebraic fact: the mass section uses the column, the occupation reading uses the level, and neither is derived from the other.
+The reading is one of several and not a decision. The same map that reads as a copy flip reads as a level shift, and the two vocabularies are different readings of one algebraic fact: the copy-flip section uses the column, the occupation reading uses the level, and neither is derived from the other.
 
 ## The Isomorphism Is a Right Multiplication
 
@@ -248,21 +248,23 @@ The naive basis swap is **not** the map. The relabelling $\tilde\Pi_+\leftrighta
 
 Two properties of the map are worth naming. It is **$\mathbb{C}$-linear and $\mathbb{B}$-linear on the left**, so it preserves the module structure and the Lorentz action. It is **not invertible as an element of the algebra**, because $\vec\Upsilon_x^2=0$ and a nilpotent is not a unit; its inverse between the modules is the right multiplication by $\vec\Upsilon_y$, and the two maps compose to the identity on each side. So the *element* is not invertible while the *map* is an isomorphism: the inverse is another right multiplication, not an inverse element.
 
-That asymmetry is the algebraic form of a physical statement. The complement is a copy, and the operation that reaches it is a nilpotent: a step whose generator squares to zero. The next section reads that step as the mass.
+That asymmetry is the algebraic form of a physical statement. The complement is a copy, and the operation that reaches it is a nilpotent: a step whose generator squares to zero. The next section separates that step from the chiral mass.
 
 ## The Mass Coupling
 
-The corpus's chirality-off-diagonal mass is a right multiplication, and the pair of right multiplications by $\vec\Upsilon_x$ and $\vec\Upsilon_y$ moves a state from $S$ to its complement and back. The reading rests on three algebraic facts.
+The coupling supplied by the two ideals is a **copy flip**, not the chiral mass. The corpus once called it the chirality-off-diagonal mass; that name conflated the Peirce index with the Lorentz chirality. The pair of right multiplications by $\vec\Upsilon_x$ and $\vec\Upsilon_y$ moves a state from $S$ to its complement and back, and the reading rests on three algebraic facts.
 
-- **The mass is off-diagonal.** A coupling that is $\mathbb{B}$-linear on the left cannot be a left multiplication by an element of $\mathbb{B}$: the left action preserves each ideal, since the ideals are left ideals. Such a coupling is a right multiplication, and right multiplication is what the module theory supplies.
+- **The copy flip is off-diagonal.** A coupling that is $\mathbb{B}$-linear on the left cannot be a left multiplication by an element of $\mathbb{B}$: the left action preserves each ideal, since the ideals are left ideals. Such a coupling is a right multiplication, and right multiplication is what the module theory supplies.
 - **The generator is null, the map is an isometry.** The natural generator is the matrix unit $\vec\Upsilon_x$: it has vanishing norm and $\vec\Upsilon_x^2=0$, so it is not a unit of the algebra. The map it induces is nevertheless an isometry of the two Hilbert structures, because $\vec\Upsilon_x\vec\Upsilon_x^{*}=\tilde\Pi_+$ and $\xi\tilde\Pi_+=\xi$ for every $\xi\in S$: the idempotent is a right identity on the carrier. The nilpotence is a property of the chosen generator and not of the map: the representatives that induce the same map differ by an element of $\operatorname{Ann}(S)=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$, and some of them are units. The inverse between the modules is the right multiplication by $\vec\Upsilon_y$.
-- **The coupling flips the column.** It sends $\tilde\Pi_+\mapsto\vec\Upsilon_x$ and $\vec\Upsilon_y\mapsto\tilde\Pi_-$, so the column index changes. In the corpus's chirality-off-diagonal convention that column index is the chirality, and the mass term is a chirality flip. In the spectral-triple reading the same off-diagonal entry is the finite Dirac operator, odd under the chirality, and the two ideals are the two eigenspaces of its chirality.
+- **The copy flip changes the column.** It sends $\tilde\Pi_+\mapsto\vec\Upsilon_x$ and $\vec\Upsilon_y\mapsto\tilde\Pi_-$, so the column index changes. That index is the **Peirce index**, not a chirality: the two ideals are isomorphic, and a chirality must separate inequivalent halves. In the spectral-triple reading the finite Dirac operator is off-diagonal between $S$ and $S^{\mathrm{c}}$, not between the two Peirce copies.
 
-> **The mass is the right multiplication that takes a state to the other state space.**
+> **The copy flip is the right multiplication that takes a state to the other Peirce copy. It is not the mass.**
 
-The reading has a boundary that must be stated in the same breath. **The article gives the algebraic mechanism and no mass value and no mass spectrum.** The number belongs to the dynamical articles, where the mass is a parameter of the equation and not a property of the doubling. What the algebra supplies is the **shape** of the coupling: off-diagonal, column-flipping, generated by a nilpotent matrix unit. What it does not supply is its size.
+The reading has a boundary that must be stated in the same breath. **The article gives the algebraic mechanism of the copy flip and no mass value and no mass spectrum.** The number belongs to the dynamical articles, where the mass is a parameter of the equation and not a property of the doubling. What the algebra supplies is the **shape** of the copy flip: off-diagonal, column-changing, generated by a nilpotent matrix unit. What it does not supply is its size.
 
-A convention warning belongs here, because the corpus uses the word *chirality* in two ways. The two ideals are sometimes called the two chiralities — more precisely, the two **Peirce copies** — and the two Lorentz chiralities are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$. These are different objects. The ideals are isomorphic as modules; $S$ and $S^{\mathrm{c}}$ are not isomorphic as complex representations. The mass coupling of this section moves between the two **ideals**, and the chirality flip it performs is the column flip of the first convention. It is not the passage to the conjugate representation.
+**The chiral mass is a different coupling.** It is the invariant sesquilinear pairing $\beta:S\times S^{\mathrm{c}}\to\mathbb{C}$ of *Chirality: The Conjugate Pair*, off-diagonal in the grading $\chi=ij$ and odd under it. It is not $\mathbb{B}_{\mathbb{R}}$-linear, so it is not a right multiplication and not an element of the algebra; it exists because $S$ and $S^{\mathrm{c}}$ are real-isomorphic and complex-inequivalent. A biquaternion is a section of $S\oplus S$ and carries no chirality; the Dirac field is the pair in $\Delta=S\oplus S^{\mathrm{c}}$. The two couplings must not be identified: the copy flip is $\mathbb{B}$-linear and moves between isomorphic copies, while the chiral mass is not $\mathbb{B}_{\mathbb{R}}$-linear and moves between inequivalent halves.
+
+A convention warning belongs here, because the corpus uses the word *chirality* in two ways. The two ideals are sometimes called the two chiralities — more precisely, the two **Peirce copies** — and the two Lorentz chiralities are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$. These are different objects. The ideals are isomorphic as modules; $S$ and $S^{\mathrm{c}}$ are not isomorphic as complex representations. The copy flip of this section moves between the two **ideals**, and it is the column flip of the first convention. It is not the passage to the conjugate representation, and it is not the chiral mass.
 
 ## Three Complements
 
@@ -338,11 +340,11 @@ A fourth separation is about the sectors. The carrier meets each of $\mathbb{M}_
 
 The doubling adds its own separations:
 
-- **No mass value and no spectrum.** The mass coupling is a shape; the number is dynamical.
+- **No mass value and no spectrum.** The copy-flip coupling is a shape; the number is dynamical.
 - **No choice between the readings of the doubling.** The second Peirce copy, the occupation ladder and the conjugate state space are readings of one algebraic fact.
 - **The coincidence is conditional.** The module and Hilbert complements coincide for the Hermitian vacuum pair; for a general idempotent they separate.
 - **One pair of ideals only.** The general idempotent $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ generates a minimal left ideal for every unit vector, and its complement is a different subspace. The article treats the coordinate pair.
-- **No dynamics.** Nothing here says how a state moves between the copies in time, or why the mass has the value it has.
+- **No dynamics.** Nothing here says how a state moves between the copies in time, or why the chiral mass has the value it has.
 
 ## The Two Structures Side by Side
 
@@ -355,7 +357,7 @@ The module structure makes the carrier an **arena**: the algebra is the algebra 
 
 The two structures separate the two physical data of a spinor.
 
-- **The spin is a module datum.** The double cover acts faithfully on the module, $-e_t$ acts as $-\mathrm{id}$, and that is where spin-$\tfrac12$ lives.
+- **The spin is read on the module.** The double cover acts faithfully on the module, $-e_t$ acts as $-\mathrm{id}$, and that is where spin-$\tfrac12$ lives.
 - **The ray is a Hilbert datum.** The form is blind to the sign and to the phase, so the state is a ray and not a vector.
 - **The vacuum is a module datum.** The choice of idempotent $\tilde\Pi_+$ selects the module, and the module is fixed only up to the equivalence of idempotents.
 - **The normalisation is a Hilbert datum.** $\langle\psi,\psi\rangle_{*}=1$ is a condition on the form and makes the amplitudes into probabilities.
@@ -368,7 +370,7 @@ The physics corpus states the same three values through different constructions.
 
 | reading | construction | carrier | value |
 |---|---|---|---|
-| the half-angle | the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on a spinor, and the half-angle $\theta/2$ is the weight | $S_\pm$ under $L$ | $\tfrac12$ |
+| the half-angle | the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on a spinor, and the half-angle $\theta/2$ is the exponential coordinate of the weight | $S_\pm$ under $L$ | $\tfrac12$ |
 | the adjoint integer | the halved inner derivations $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
 | the scalar | the rotations act trivially on the centre | $\mathbb{C}_{\mathbb{B}}$ under $\operatorname{ad}$ | $0$ |
 | the two-level state | the Peirce plane as a Hilbert space, with the Born pairing | $S_\pm$ under $L$ | $\tfrac12$ |
@@ -385,16 +387,16 @@ The first four rows live on elementary carriers of $\mathbb{B}$ itself. The last
 - **The two planes are one carrier type.** $S_+$ and $S_-$ are module-isomorphic copies of the same spin-$\tfrac12$ carrier. Boundary: two copies, not two particles.
 - **One carrier, two structures, two jobs.** The state space is not one structure but two: the composition structure that makes the algebra act, and the probability structure that makes the states pair. Boundary: a statement about the algebraic structures, and it adds no identity between composition and probability.
 - **The module is composition.** The plain product composes two elements, and the module is that composition read with one factor held fixed. Boundary: an interpretation of the algebra's law, not a dynamics.
-- **The spin is a module datum, the ray is a Hilbert datum.** The double cover acts faithfully on the module, while the Hilbert structure is blind to the phase and yields the ray. Boundary: a separation of two known facts by the two structures.
+- **The spin is read on the module; the ray is a Hilbert datum.** The double cover acts faithfully on the module, while the Hilbert structure is blind to the phase and yields the ray. Boundary: a separation of two known facts by the two structures.
 - **The observable algebra is the endomorphism algebra.** $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$, so the observables are the Hermitian elements of the endomorphism algebra of the carrier and the trace formula is the pairing of the two structures. Boundary: the identification of the spinor and the qubit is not made.
 - **The carrier has no norm of its own.** The algebra's form is degenerate on $S$, so an unnormalised spinor is what the module gives, and normalisation is added by the metric. Boundary: a statement about the two forms.
 - **The Born rule is a product, not a postulate.** The probability pairing is the scalar part of the plain sesquilinear product, so positivity is the definiteness of a form and the trace formula is the scalar pairing. Boundary: the derivation and its bounds are *The Born Rule from the Hermitian Form*.
 - **The spinor and the qubit are one carrier read twice.** The Weyl spinor of the Lorentz action and the two-level state of the informational sector inhabit one complex plane, once as the defining module and once as the Hilbert space. Boundary: the carrier is one; the physics of the two readings is not thereby identified.
 - **Quantisation is the second slot.** The step from the plain product to the plain sesquilinear product is exactly the step from the module structure to the Hilbert structure. Boundary: the algebra supplies the pairing and no equation of motion and no measure.
 - **The state space is doubled.** The algebra offers two copies of the same state space, module-isomorphic and Hilbert-orthogonal. Boundary: a counting statement; it adds no second particle.
-- **The mass takes a state to its complement.** The chirality-off-diagonal mass is the right multiplication by the nilpotent $\vec\Upsilon_x$, which carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and flips the column. Boundary: the mechanism is algebraic; the mass value and the spectrum are not in the article.
-- **The mass generator is null and off-diagonal.** The coupling cannot be a left multiplication, because the left action preserves the ideals; its natural generator is the nilpotent matrix unit, so the generator is not a unit, while the map it induces is an isometry. Boundary: a statement about the shape of the coupling, not its strength.
-- **The two ideals are the two levels of one mode.** The columns are the empty and the occupied ideal of a single fermionic mode, and the nilpotents that exchange them are the raising and lowering operators. Boundary: the same pair reads as two Peirce chiralities and as two levels; the article does not choose.
+- **The copy flip takes a state to its complement.** It is the right multiplication by the nilpotent $\vec\Upsilon_x$, which carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and changes the column. Boundary: it is not the chiral mass; the mechanism is algebraic, and the mass value and the spectrum are not in the article.
+- **The copy-flip generator is null and off-diagonal.** The coupling cannot be a left multiplication, because the left action preserves the ideals; its natural generator is the nilpotent matrix unit, so the generator is not a unit, while the map it induces is an isometry. Boundary: a statement about the shape of the coupling, not its strength.
+- **The two ideals are the two levels of one mode.** The columns are the empty and the occupied ideal of a single fermionic mode, and the nilpotents that exchange them are the raising and lowering operators. Boundary: the same pair reads as two Peirce copies and as two levels; the article does not choose.
 - **The second vacuum is the other idempotent.** The two one-mode ideals are the two vacuum choices, and no algebraic fact selects one. Boundary: the module is unique; only the vacuum is a choice.
 - **The module and Hilbert complements coincide.** The decomposition into the two ideals is at once a module decomposition and an orthogonal decomposition of Hilbert spaces. Boundary: the coincidence uses the Hermiticity of the vacuum idempotent; it fails for a general idempotent.
 - **The algebra's own form does not see the split.** $S^{\perp_B}$ is a third subspace, sharing only the nilpotent with $S$ and the idempotent with the module complement, so the orthogonal reading of the doubling needs the metric and not the composition form. Boundary: a statement about the two forms.
@@ -407,14 +409,14 @@ The first four rows live on elementary carriers of $\mathbb{B}$ itself. The last
 - **No fourth elementary spin.** The closure is for $\mathbb B$ alone; higher spin requires a tensor product and is not excluded.
 - **No measurement postulate and no Born derivation.** The Born rule is cited from its owner; the article states where it sits among the structures.
 - **No identification of the two physics.** The carrier is one, but the spinor index is not identified with the qubit's two levels.
-- **No mass value and no spectrum.** The article states the coupling's algebraic shape; the number is dynamical.
+- **No mass value and no spectrum.** The article states the copy flip's algebraic shape; the number is dynamical.
 - **No choice between the interpretations of the doubling.** The second Peirce copy, the occupation ladder and the conjugate state space are three readings of one algebraic fact.
 - **The coincidence is conditional.** The module and Hilbert complements coincide for the Hermitian vacuum pair. For a general idempotent they separate.
 - **One pair of ideals only.** The general idempotent generates a minimal left ideal for every unit vector, and its complement is a different subspace.
 - **Not the dual and not a sector.** The dual is the right ideal reached by ${}^{*}$; the sectors cut across both ideals.
 - **The algebra's form is not the metric.** It is indefinite and degenerate on $S$; the positive definite form is $\langle\cdot,\cdot\rangle_{*}$.
 - **One ideal is one Peirce copy.** The two ideals are isomorphic; the two Lorentz chiralities are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$.
-- **No dynamics.** Nothing here says how a state moves between the copies in time, or why the mass has the value it has.
+- **No dynamics.** Nothing here says how a state moves between the copies in time, or why the chiral mass has the value it has.
 
 ## Summary
 
@@ -426,7 +428,7 @@ Within the spin-$\tfrac12$ carrier, the spinor space $S=\mathbb{B}\tilde\Pi_+=\m
 
 The same carrier carries a second structure from the plain sesquilinear product: a positive definite Hermitian form of Gram matrix $\tfrac12 I_2$, the Born pairing and the normalisation. The two structures do not coincide: the algebra's own bilinear form is degenerate on the carrier, $\operatorname{diag}(\tfrac12,0)$, with radical the nilpotent line. The module is composition and the Hilbert space is probability; the spin is a module datum and the ray a Hilbert datum; the vacuum is a module choice and the normalisation a metric condition.
 
-The algebra also splits into two minimal left ideals, the second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, module-isomorphic to $S$ through right multiplication by $\vec\Upsilon_x$ and Hilbert-orthogonal to it. The mass coupling is the pair of right multiplications by the two nilpotents, off-diagonal and column-flipping; the natural generators are null, the induced maps are isometries, and the nilpotence is a choice of generator and not an invariant. The complement is not the dual, not a second representation and not a sector. Three complements must be kept apart: the module and Hilbert complements coincide, the algebra's-own-form complement $S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ is a third subspace, and the coincidence of the first two is conditional on the Hermiticity of the vacuum idempotent.
+The algebra also splits into two minimal left ideals, the second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, module-isomorphic to $S$ through right multiplication by $\vec\Upsilon_x$ and Hilbert-orthogonal to it. The copy-flip coupling is the pair of right multiplications by the two nilpotents, off-diagonal and column-changing; it is not the chiral mass. The natural generators are null, the induced maps are isometries, and the nilpotence is a choice of generator and not an invariant. The complement is not the dual, not a second representation and not a sector. Three complements must be kept apart: the module and Hilbert complements coincide, the algebra's-own-form complement $S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ is a third subspace, and the coincidence of the first two is conditional on the Hermiticity of the vacuum idempotent.
 
 ## Summary of Notation
 

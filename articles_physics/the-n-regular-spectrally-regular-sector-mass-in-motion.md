@@ -15,7 +15,7 @@ The name of the cell is deliberately double. **Mass in motion** is the timelike 
 | The definition, the five descriptions and the geometry of the cell | [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html) |
 | The spectrum, the spectral idempotents and the two-term writing | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The eigenbasis and the Peirce corners | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-spectrally-regular-sector-and-construction-of-the-eigenbasis-of-a-biquaternion.html) |
-| The spinor spaces and chirality | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
+| The spinor spaces and the Peirce index | [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html) |
 | The independence of the two conditions | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-quaternionic-norm-and-spectral-regularity-and-degeneracy.html) |
 | The four-vector dictionary and the mass shell | [The Material Sector: Four-Vectors, Interval and Lorentz Action](the-material-sector-four-vectors-interval-and-lorentz-action.html) |
 | The spectral reading of a four-momentum | [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html) |
@@ -145,7 +145,7 @@ L_{\tilde Q}\big|_{S_+}=L_{\tilde Q}\big|_{S_-}
 =\operatorname{diag}(\lambda_+,\lambda_-).
 $$
 
-A spinor of either chirality therefore carries both modes. Chirality is the right eigenvalue, not the left one: right multiplication by $\tilde Q$ acts as $\lambda_+$ on $S_+$ and $\lambda_-$ on $S_-$. The physical reading is that a spinor is not a mode; it is a two-component object, and the two components are the two modes. The two chiralities are the two ways of splitting the algebra, not the two modes.
+A spinor of either Peirce copy therefore carries both modes. The Peirce index is the right eigenvalue, not the left one: right multiplication by $\tilde Q$ acts as $\lambda_+$ on $S_+$ and $\lambda_-$ on $S_-$. The physical reading is that a spinor is not a mode; it is a two-component object, and the two components are the two modes. The two Peirce copies are the two ways of splitting the algebra, not the two modes, and they are not chiralities.
 
 ### The Peirce Data
 
@@ -187,7 +187,7 @@ The boundary of the cell is the arrangement. A path inside the cell that reaches
 - **The two terms are two null components, not two particles.** Each term is a complex multiple of a minimal idempotent. Their sum is one element, their coefficients sum to $2iE/c$, and their product is $-m^2c^2$. A two-particle reading would need two independent mass-shell conditions; the cell has one.
 - **The causal sign is the sign of the norm.** Timelike and spacelike momenta share the cell because both conditions are non-zero; they differ in the sign of $N$ and in the placement of the eigenvalues on the imaginary axis. The cell is a spectral type, and the causal class is a second invariant read from the same element.
 - **The eigenbasis is a frame attached to the element.** The two eigenspaces are unique; the idempotents are unique; the nilpotents inside each eigenspace are a gauge. The frame is not a laboratory frame, and the mode basis is not a measurement basis until a laboratory frame is chosen.
-- **A spinor carries both modes.** Each minimal ideal is a complex plane on which the left action is diagonal with both eigenvalues. Chirality is the right eigenvalue. The reading is the algebraic form of the two-component spinor, not a derivation of the spin-statistics theorem.
+- **A spinor carries both modes.** Each minimal ideal is a complex plane on which the left action is diagonal with both eigenvalues. The Peirce index is the right eigenvalue. The reading is the algebraic form of the two-component spinor, not a derivation of the spin-statistics theorem.
 - **The cell lies in the domain of the polar word.** Every element has a scale, a phase, a boost and a rotor. The frame is a coordinate on the cell; the word exists on the whole cell and degenerates on the boundary, failing when the modulus vanishes ($N=0$) and losing its axis data when the eigenvalues coalesce ($B=0$).
 - **The cell is generic.** Its complement is the union of the two complex hypersurfaces $N=0$ and $B^2=0$, of measure zero. A generic element is a unit with two distinct modes; each cone is one complex equation, hence two real conditions, and a degeneracy is the vanishing of one of the two.
 - **Invertibility is reversibility.** The element has an inverse, a logarithm up to the branch lattice, and a one-parameter group. The cell is the regime in which the element is a reversible process with a generator.
@@ -200,7 +200,7 @@ The two eigenvalues are not two energies and not two particles. The sum of the c
 
 The cell contains the spacelike branch. The name "mass in motion" describes the timelike branch; a spacelike momentum has $N>0$ and its "mass" is imaginary. The cell is not a causal class.
 
-The spinor reading is algebraic. The two minimal ideals are the two chiral spaces of the algebra; the identification with physical chirality and with the spin-statistics theorem is an extra step, not a theorem of the cell.
+The spinor reading is algebraic. The two minimal ideals are copies of one module, distinguished by the Peirce index; they are not the two chiral halves. The identification with physical chirality and with the spin-statistics theorem is an extra step, not a theorem of the cell.
 
 No dynamics is supplied. The cell is a property of one element at one instant; the article does not say how the element evolves, and it does not supply a mass spectrum.
 

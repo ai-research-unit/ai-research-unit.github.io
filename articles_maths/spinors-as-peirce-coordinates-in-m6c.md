@@ -94,7 +94,7 @@ $$
 j=\frac{6-1}{2}=\tfrac52 .
 $$
 
-This is the algebraic definition of the spin of the spinor: the highest weight of $J_3$ on the left space $M_6P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=6$ it gives $\tfrac52$ and the column has $2j+1=6$ components.
+This is the definition of *The Spin of a Biquaternion* read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_6P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=6$ it gives $\tfrac52$ and the column has $2j+1=6$ components.
 
 The column has six entries. Under the chain, $J_3$ has weights $\tfrac52,\tfrac32,\tfrac12,-\tfrac12,-\tfrac32,-\tfrac52$, so the column is the spin-$\tfrac52$ space. The chirality $H^{3}$ splits it $3+3$. The number of components is $2j+1=6$, as it must be for the irreducible space of spin $j=\tfrac52$.
 

@@ -4,7 +4,7 @@
 
 The biquaternion algebra is one object, and it carries more than one physical interpretation. The Mathematical menu starts from the algebraic objects — the vector space, the product, the form, the involution — and proves their properties. This category runs the other way. It starts from the articles of the Mathematical menu and asks what each mathematical structure can be read as, physically. The unit of an article is a mathematical result, not a physical object.
 
-The category carries thirty-five articles that interpret results in addition to this introduction. Each of the thirty-five follows the same form: it links one or several articles of the Mathematical menu, then gives the physical interpretations of that result. Such an article opens with the source table: the mathematical content it uses, each row linked to the mathematics article that owns it. It states those results in brief, with their sources. It then gives the physical interpretations, one by one, each labelled and each with its boundary. The article proves nothing: the proof is in the mathematics article, one click away.
+The category carries thirty-six articles that interpret results in addition to this introduction. Each of the thirty-six follows the same form: it links one or several articles of the Mathematical menu, then gives the physical interpretations of that result. Such an article opens with the source table: the mathematical content it uses, each row linked to the mathematics article that owns it. It states those results in brief, with their sources. It then gives the physical interpretations, one by one, each labelled and each with its boundary. The article proves nothing: the proof is in the mathematics article, one click away.
 
 The articles follow the four blocks of the Mathematical menu — algebra, topology, analysis and geometry — and the physics menu groups them by the block they read. The algebra block is the largest, because the same algebra carries the material sector, the informational sector and the operators between them.
 
@@ -80,9 +80,9 @@ This category is not a prerequisite of any other, and no other category is a pre
 
 ## The Mathematical Corpus about Biquaternions
 
-The list below reproduces the *Biquaternions* category of the Mathematical menu: one hundred and forty-six entries, grouped as the menu groups them. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that this category has not yet read.
+The list below reproduces the *Biquaternions* category of the Mathematical menu: one hundred and forty-seven entries, grouped as the menu groups them. Every entry is a mathematics article, and every link opens it directly. The list is the source of this category: an article of the category links to one or several of these entries, and the entries it does not use are the part of the corpus that this category has not yet read.
 
-The category reads a second corpus as well. The *Biquaternion Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-five further entries, the derived structures of the biquaternion complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternion Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and eighty-one entries, and they are the full mathematical source of the category.
+The category reads a second corpus as well. The *Biquaternion Algebraic Structures* category of the Mathematical menu carries one hundred and thirty-five further entries, the derived structures of the biquaternion complex space: the general plain, quaternionic and sesquilinear algebras, their symmetric and antisymmetric parts, and the comparisons across the twelve. The list below does not reproduce them, because it is already long and the derived structures are read where they are used. An article of the category that interprets one of them links the entry directly, in the *Biquaternion Algebraic Structures* category, exactly as it links an entry of the list. The two corpora together carry two hundred and eighty-two entries, and they are the full mathematical source of the category.
 
 ### Algebra
 
@@ -115,6 +115,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 - [The Regular Module](../articles_maths/the-regular-module.html)
 - [The Minimal Left Ideals](../articles_maths/the-minimal-left-ideals.html)
 - [The Category of Modules](../articles_maths/modules-over-the-biquaternion-algebra.html)
+- [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html)
 
 #### The Element
 
@@ -303,10 +304,10 @@ The index is not a publication plan. It is the map of the sources, and the categ
 ## Summary
 
 - The category reads the mathematics physically.
-- It carries thirty-five articles that interpret results. Each links one or several articles of the Mathematical menu, states their results, then gives labelled physical interpretations with their boundaries.
+- It carries thirty-six articles that interpret results. Each links one or several articles of the Mathematical menu, states their results, then gives labelled physical interpretations with their boundaries.
 - The category owns no theorem; the proof stays in the mathematics article.
 - One result may carry several interpretations, and the interpretation names the sector, the regime and the question.
-- The index lists the one hundred and forty-six entries of the *Biquaternions* category, grouped as the Mathematical menu groups them. The category also reads the one hundred and thirty-five entries of the *Biquaternion Algebraic Structures* category, two hundred and eighty-one in all.
+- The index lists the one hundred and forty-seven entries of the *Biquaternions* category, grouped as the Mathematical menu groups them. The category also reads the one hundred and thirty-five entries of the *Biquaternion Algebraic Structures* category, two hundred and eighty-two in all.
 
 ## Summary of Notation
 

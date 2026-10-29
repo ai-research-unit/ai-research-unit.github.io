@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A biquaternion has no spin. A **carrier** of the algebra has one: the spin is half the highest weight of the frame root on that carrier. The general definition of carrier, weight and spin is *The Weight of a Frame Root and the Spin Quantum Number*; this article computes the carriers of $\mathbb{B}$ and states which spins occur on $\mathbb{B}$ alone.
+A biquaternion has no spin. A **carrier** of the algebra has one: the spin is half the highest weight of the frame root on that carrier. This article states the definition used throughout the corpus and computes the carriers of $\mathbb{B}$; it also states which spins occur on $\mathbb{B}$ alone. The general setting of carrier, weight and highest weight is *The Weight of a Frame Root and the Spin Quantum Number*.
 
 The output is exact. **The algebra has three elementary carrier types, represented by four spaces, and their spins are $0$, $\tfrac12$ and $1$.** The centre $\mathbb C e_t$ under the adjoint action gives $0$; each Peirce plane $S_\pm=\mathbb B\tilde\Pi_\pm$ under left multiplication gives $\tfrac12$; the traceless part $V=\ker\operatorname{tr}$ under the adjoint action gives $1$. An **elementary carrier** is an isomorphism class of nonzero irreducible invariant subspaces of $\mathbb B$ under one of the two actions, left multiplication or the commutator; the classes are the trivial one, the two-dimensional simple one and the adjoint one, and there is no fourth. Every finite-dimensional associative module of $\mathbb B\cong M_2(\mathbb C)$ is a direct sum of copies of the two-dimensional simple module, so the left action sees only $\tfrac12$. The adjoint action adds the trivial centre and the three-dimensional traceless part, so it sees $0$ and $1$. The complete elementary list of $\mathbb B$ alone is therefore $\{0,\tfrac12,1\}$.
 
@@ -325,40 +325,75 @@ Five boundaries keep the match honest.
 - **The match is a label match.** The Standard Model assigns the spins by hand. The algebra reproduces the set $\{0,\tfrac12,1\}$ and does not predict which particle has which spin, nor the masses, the generations, the charges or the colours.
 - **The massless spin-$1$ count is two, not three.** The carrier $V$ has three states. For a massless vector field the longitudinal state is removed by gauge invariance, leaving the two helicities of the photon and the gluon. The algebra supplies the triplet; the massless restriction is a separate physical input, treated in *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*.
 - **The weak chirality is not the Peirce index.** The two Peirce planes $S_\pm$ are isomorphic as left modules, so the left action does not distinguish them. The chirality that the weak interaction couples to is the Lorentz chirality, not the copy index.
-- **Spin here is the rotation spin.** The number $j$ is the highest weight for the rotation subgroup $\mathrm{Spin}(3)\subset\mathbb B^{\times}$. The full Lorentz label is a pair $(j_L,j_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
+- **Spin here is the rotation spin.** The number $j$ is the highest weight of the rotation generator $\tilde S_{\vec u}=h/2$ for the subgroup $\mathrm{Spin}(3)\subset\mathbb B^{\times}$. The full Lorentz label is a pair $(j_L,j_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
 - **Spin–statistics is not derived.** The half-integer carriers are associative modules and the integer carriers are adjoint modules, but the link from that split to Fermi and Bose statistics is an independent theorem, treated in *The Spin–Statistics Theorem in Biquaternionic Form*.
 
 **What is claimed.** The set of elementary carrier spins of $\mathbb B$ is exactly the set of spins that have been observed for elementary particles. That is a structural alignment of the algebra with the observed spectrum. It is not a derivation of the spectrum.
 
-## The Approaches in the Corpus
+## The One Definition of Spin
 
-**The corpus states spin in six vocabularies, all attached to one frame root: the half-angle, the adjoint integer, the Peirce carrier, the highest weight, the Hermitian operator and the group element.**
+**The corpus has one definition of spin. Every other use of the word is the name of an operator, of a carrier, or of a physical interpretation of the number that the definition supplies.**
 
-| approach | what it calls spin | the frame reading |
-|---|---|---|
-| half-angle of the rotor | the half-angle $\theta/2$ in $\exp(\tfrac{\theta}{2}\vec u)$ | the weight $\pm\tfrac12$ of $L_{\tilde S_{\vec u}}$ on the spinor |
-| adjoint on the vector part | the integer weights $+1,0,-1$ of the vector part, and $0$ on the scalar direction $ie_t$ | $\mathrm{ad}_{\tilde\Xi}$ on $V$ ($+2,0,-2$) and on $\mathbb C_{\mathbb B}$ ($0$), halved to $+1,0,-1$ and $0$ |
-| Peirce carrier / minimal left ideal | the weight $\pm\tfrac12$ on the plane, the spinor being the coordinate | the left module $S_\pm$ |
-| highest weight | $j=\lambda_{\max}/2$ | the general definition of *The Weight of a Frame Root and the Spin Quantum Number* |
-| Hermitian operator | the element $\tilde S_{\vec u}=\tfrac12 i\vec u$ | the element whose left and adjoint actions give the weights |
-| spin group | the rotation double cover $\mathrm{Spin}(3)$, contained in $\mathbb B^{\times}$; the Lorentz double cover is $\mathbb B^{\times}_{1}\cong SL(2,\mathbb C)$ | the rotor group $\{\pm\exp(\tfrac{\theta}{2}\vec u)\}$ for rotations; its $2\pi$ element is $-e_t$ on the spinor and $+e_t$ on the vector. This row fixes integrality, not the value of $j$ |
+**Definition (spin).** Let $e$ be an idempotent of $\mathbb{B}$ with frame root $h=2e-1$, and let $(W,\rho)$ be a **carrier**: a finite-dimensional complex vector space with either an associative action of $\mathbb{B}$ or a Lie action. The **weights** of the carrier are the eigenvalues of $\rho(h)$. The **spin** of the carrier is
 
-**The half-angle and the integer are the same root on two carriers.** The polar-word articles read the exponent $\theta/2$ of the one-sided operator; *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form* reads the adjoint action on the material sector. The first is the weight of $L_{\tilde S_{\vec u}}$ on $S_\pm$; the second is the weight of $\mathrm{ad}_{\tilde S_{\vec u}}$ on $V\oplus\mathbb C_{\mathbb B}$, where $\tilde S_{\vec u}=\tfrac12\tilde\Xi$. On $S_+$ the adjoint action of $\tilde\Xi$ has weights $0,-2$ and $R_{\tilde\Xi}=+1$, so $L_{\tilde\Xi}$ has weights $+1,-1$ and $L_{\tilde S_{\vec u}}$ has $\pm\tfrac12$. On $S_-$ the adjoint weights are $+2,0$ and $R_{\tilde\Xi}=-1$, so $L_{\tilde S_{\vec u}}$ again has $\pm\tfrac12$. On the vector the adjoint string $+2,0,-2$ of $\mathrm{ad}_{\tilde\Xi}$ is read as $+1,0,-1$ of $\mathrm{ad}_{\tilde S_{\vec u}}$, because $V$ is the adjoint of the defining module. Neither reading is more fundamental: the same element has both, and the carrier selects.
+$$
+\boxed{\;j=\frac{\lambda_{\max}\bigl(\rho(h)\bigr)}{2}\;}
+$$
 
-**The carrier is prior to the word.** The minimal-left-ideal article and the Peirce-carrier article describe the same two planes; the spinor is the coordinate on a plane, the operator is the element whose action gives the weight, and the group is the exponentiated rotor. The readings do not all say the same kind of thing. The half-angle, the adjoint integer, the Peirce carrier and the highest weight land on one number, the highest weight of $\frac12\tilde\Xi$ on a carrier; that number is the definition. The Hermitian operator is the element whose action produces the weights, and the spin group fixes only the integrality, through the sign of a full turn. The table is a dictionary, not six proofs of one statement.
+For an irreducible $\mathfrak{sl}_2$ module the weight string is symmetric, $\lambda_{\max}=-\lambda_{\min}$, so $j=(\lambda_{\max}-\lambda_{\min})/4$.
 
-## What the Word Spin Names
+The same formula is read on any distinguished $\mathfrak{sl}_2$ triple with Cartan $H$: $j=\lambda_{\max}(\rho(H))$. For the frame root, $H=h/2$. The $M_n(\mathbb{C})$ chains use this form, because for $n>2$ their principal $\mathfrak{sl}_2$ is not the Peirce triple of a single idempotent.
 
-**The word names four different objects, and the article uses the first three.**
+This is the only definition of spin in the corpus. The operator $\tilde S_{\vec u}=h/2$ is the **spin operator**: its spectrum supplies the weights and hence the number $j$, and it is not itself a definition. The phrase "the spin of the electron" is the physics name for the number $j$ of the carrier that describes the electron; it is an interpretation of $j$, not a second definition.
 
-- The **spin operator** $\tilde S_{\vec u}$, an element of the algebra, Hermitian and half a root.
-- The **spin quantum number** $j$, the highest weight of $\tilde S_{\vec u}$ on a carrier; it is a label of the carrier, not of an element.
-- The **spinor**, a coordinate on a Peirce carrier, in the sense of *Spinors as Peirce Coordinates*.
-- The **spin group** $\mathrm{Spin}(3)$, the double cover of the rotation group, a subgroup of the units of $\mathbb H$; it is the subject of *The Two-Sided Operators and the Spin Group* and is not an element of the algebra in the sense of the first three.
+**Remark (why half the highest weight, and not the highest weight).** The normalisation is the one in which the defining carrier of $\mathbb{B}$ has highest weight $2j=1$. With that normalisation the Peirce plane has $j=\tfrac12$, the traceless part has $j=1$ and the centre has $j=0$. Any other normalisation would rename the same three numbers.
 
-**Remark (chirality is a fifth word).** The chirality of a spinor plane is the eigenvalue of the right action of the root: $R_{\tilde\Xi}=+1$ on $S_+$ and $R_{\tilde\Xi}=-1$ on $S_-$. It is not the spin weight, which is the eigenvalue of the left action and is $+\tfrac12,-\tfrac12$ on both planes. The two planes have the same spin and opposite chirality; the two words are independent, and the factor two of §*The Table* is the identity $L_{\tilde\Xi}=\mathrm{ad}_{\tilde\Xi}+R_{\tilde\Xi}$ read on the two planes.
+## One Definition, Several Carriers
 
-**Remark (spin is not a function of an element).** The phrase "the spin of $\tilde Q$" has no meaning. What has a spin is a carrier with an action; $\tilde Q$ acts on the carrier and its spectrum is read there. The phrase "the spin of a particle" is the physics name for the label of the carrier that describes it; the phrase "the spin of a biquaternion" has no element-level referent; it is shorthand for the carrier and its weight.
+**The same definition is read on several carriers. The carriers differ; the number does not.**
+
+| carrier | action $\rho$ | eigenvalues of $\rho(h)$ | spin $j$ | article |
+|---|---|---|---|---|
+| $S_+=\mathbb{B}\tilde\Pi_+$ | left multiplication $L$ | $+1,-1$ | $\tfrac12$ | *Spinors as Peirce Coordinates* |
+| $S_-=\mathbb{B}\tilde\Pi_-$ | left multiplication $L$ | $+1,-1$ | $\tfrac12$ | *The Minimal Left Ideals* |
+| $V=\mathbb{B}_{+-}\oplus\mathbb{C}\tilde\Xi\oplus\mathbb{B}_{-+}$ | commutator $\mathrm{ad}$ | $+2,0,-2$ | $1$ | *Integer-Spin Quantization* |
+| $\mathbb{C} e_t$ | commutator $\mathrm{ad}$ | $0$ | $0$ | *The Scalar Field in the Centre* |
+| $S^{\otimes n}$ | Lie triple on the tensor product | $n,n-2,\dots,-n$ | $\tfrac n2$ | *Higher Spin from Tensor Products* |
+
+**The Lorentz layer has a second label.** A field in the representation $\tau^{l\bar l}$ restricts to the rotation subgroup as the string of spins $\lvert l-\bar l\rvert,\lvert l-\bar l\rvert+1,\dots,l+\bar l$. The number $j$ of this article is half a highest weight, and on a single irreducible rotation carrier it is the top spin of such a string: $(\tfrac12,\tfrac12)$ contains a carrier of $j=1$, and the Rarita–Schwinger pair $\tau^{1,\frac12}\oplus\tau^{\frac12,1}$ contains a carrier of $j=\tfrac32$. The Bhabha–Gel'fand–Yaglom literature labels the whole representation by the other end, $s=\lvert l-\bar l\rvert$: $0$ for the vector and $\tfrac12$ for the Rarita–Schwinger pair. The two numbers agree on the defining module, where both are $\tfrac12$, and they differ as soon as the string has more than one term. This article writes the second as the **Bhabha spin**, or the **Lorentz difference**, never as $j$; which spin a Bhabha field propagates is fixed by its field equation and its subsidiary conditions, not by the label alone.
+
+**The half-angle is a coordinate, not a second definition.** On $S_\pm$ the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts as $\exp(-i\theta L_{\tilde S_{\vec u}})$. The exponent $\theta/2$ is the exponential coordinate of the weight $\tfrac12$; it is not the weight and it is not $j$. On $V$ the same rotor produces the phase $\theta$, because the weight there is $1$. The half-angle is therefore a consequence of the weight, on the carrier where the weight is one half.
+
+**The adjoint integer is the same definition.** On $V$ the commutator of the root has weights $+2,0,-2$. The spin operator is $h/2$, not $h$, so the weights of $\mathrm{ad}_{\tilde S_{\vec u}}$ are $+1,0,-1$ and $j=1$. The integer $1$ is the highest weight of $\tilde S_{\vec u}$ on $V$, exactly as $\tfrac12$ is the highest weight of $\tilde S_{\vec u}$ on $S_\pm$.
+
+**The Peirce index is not a spin.** The right action of the root is $R_{\tilde\Xi}=+1$ on $S_+$ and $R_{\tilde\Xi}=-1$ on $S_-$. That sign labels the two copies of one left module; it is neither a weight of $\tilde S_{\vec u}$ nor a chirality. The left weights are $+\tfrac12,-\tfrac12$ on both planes. The factor two is the identity $L_{\tilde\Xi}=\mathrm{ad}_{\tilde\Xi}+R_{\tilde\Xi}$ read on the two planes.
+
+**The group fixes integrality, not the value.** The rotor group $\{\pm\exp(\tfrac{\theta}{2}\vec u)\}$ is the double cover of the rotation group. Its $2\pi$ element is $-e_t$ on the spinor and $+e_t$ on the vector; it separates half-integer from integer $j$. It does not supply $j$: the weight does.
+
+**The Wigner label is the same number, read physically.** A particle of spin $s$ is described by a carrier of dimension $2s+1$ whose highest weight is $2s$. The Standard Model assigns $s$ by hand. The algebra reproduces the set $\{0,\tfrac12,1\}$ and does not select which particle carries which value.
+
+## What Is Not a Definition
+
+- **Not the half-angle.** The half-angle $\theta/2$ is the exponential coordinate of the weight on a spin-$\tfrac12$ carrier. It is not $j$ and it is not a property of the rotor alone.
+- **Not the unnormalised adjoint weight.** The commutator of $\tilde\Xi$ has weights $+2,0,-2$; the spin operator is $\tilde\Xi/2$, and its weights are $+1,0,-1$. Quoting the commutator weight as the spin omits the normalisation.
+- **Not the Peirce index.** The right action of the root, $R_{\tilde\Xi}=\pm1$, labels two isomorphic copies. It is not a weight of the spin operator and it is not a chirality.
+- **Not the spin vector.** The classical four-vector $S^\mu$, and the mean spin $\langle\vec S\rangle$ of a state, are intrinsic angular momenta. They are observables whose magnitude is fixed by $j$; the vector is not the number.
+- **Not the $2+1$ statistics parameter.** The continuous $s$ of an anyon, defined by the rotation phase $\exp(2\pi i s)$, is a statistics parameter. It coincides with $j$ in $3+1$ dimensions and not in $2+1$.
+- **Not the spin group.** The group $\mathrm{Spin}(3)$ fixes which $j$ are integral or half-integral under a full turn. It does not give the value of $j$.
+- **Not the spinor, and not the element.** A spinor is a coordinate on a Peirce carrier. A biquaternion is an element. Neither has a spin; the carrier has one.
+
+**Remark (spin is not a function of an element).** The phrase "the spin of $\tilde Q$" has no meaning. What has a spin is a carrier with an action; $\tilde Q$ acts on the carrier and its spectrum is read there. The phrase "the spin of a biquaternion" is shorthand for the carrier and its weight.
+
+## What the Word Names
+
+**The word appears in four grammatical roles. Only the second is the definition.**
+
+- The **spin operator** $\tilde S_{\vec u}=h/2$, an element of the algebra, Hermitian and half a root. It is the operator whose weights define $j$.
+- The **spin** $j$, the highest weight of $\tilde S_{\vec u}$ on a carrier. This is the definition.
+- The **spinor**, a coordinate on a Peirce carrier, in the sense of *Spinors as Peirce Coordinates*. It is the carrier's coordinate, not the number.
+- The **spin group** $\mathrm{Spin}(3)$, the double cover of the rotation group, a subgroup of the units of $\mathbb H$. It is the group that fixes integrality.
+
+**Remark (the Peirce index is not a fifth role).** The right action of the root gives $R_{\tilde\Xi}=+1$ on $S_+$ and $-1$ on $S_-$. That sign is the **Peirce index**: the two planes are isomorphic, and the index distinguishes two copies of one module. It is not the spin weight, which is the left eigenvalue $+\tfrac12,-\tfrac12$ on both planes, and it is not a chirality. The chirality is the central sign $\chi=ij$, which grades $S$ against $S^{\mathrm{c}}$, as in *Chirality: The Conjugate Pair*.
 
 ## Summary
 
@@ -373,7 +408,7 @@ Five boundaries keep the match honest.
 - On $\mathbb B$ alone the elementary spins are exactly $0,\tfrac12,1$: the elementary carriers are the isomorphism classes of nonzero irreducible invariant subspaces under left multiplication or the commutator; the associative ones give only $\tfrac12$, and the adjoint ones give $0$ and $1$. There is no fourth elementary value.
 - The three values are the spins of all observed elementary particles: $0$ for the Higgs, $\tfrac12$ for the quarks and leptons, $1$ for the photon, $W^{\pm}$, $Z$ and gluons. The match is structural and not predictive.
 - Higher spins are not forbidden; they require a tensor product, and they are $\tfrac32,2,\dots$.
-- Spin is a property of a carrier, not of an element; chirality is the right root eigenvalue and is independent of the spin weight.
+- Spin is a property of a carrier, not of an element; the right root eigenvalue is the Peirce index, not a chirality, and it is independent of the spin weight.
 - The determinant of $L_{\tilde Q}$ on a spinor plane is the norm $N(\tilde Q)$: the rank is $2$ on the $N$-regular set and $1$ on the nonzero null cone, while the weights of the root and the spin stay $\pm1$ and $\tfrac12$. Half the rank is the quantity that is $1$ and $\tfrac12$; it counts components, not spin. Spin $0$ is the centre, not the zero element.
 
 ## Summary of Notation

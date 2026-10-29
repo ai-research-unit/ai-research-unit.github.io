@@ -81,7 +81,7 @@ $$
 \quad\Longrightarrow\quad
 \mu_+=e^{i\theta/2},\qquad \mu_-=e^{-i\theta/2}.
 $$
-**Theorem (the half-spin is the one-sided operator).** The one-sided operator produces the half-angle and the half-rapidity; the two-sided sandwich produces the full angle and the full rapidity. The rotor case is
+**Theorem (the one-sided operator is the spinor action).** The one-sided operator produces the half-angle and the half-rapidity; the two-sided sandwich produces the full angle and the full rapidity. The rotor case is
 $$
 \boxed{\;
 L_{\tilde u_{\mathrm r}}=\exp\Bigl(\tfrac{\theta}{2}\,L_{\vec u_{\mathrm r}}\Bigr)
@@ -155,11 +155,11 @@ each weight twice. The one-sided operator is $2\rho$ as a left module: two copie
 
 **Factor by factor.** For a general word the factors do not commute and $\lambda_\pm$ are not $e^{\pm i\theta/2}$ or $e^{\mp\psi/2}$. There is no single half-angle of a general polar word; the additive relation is the statement for the pure factors and for commuting axes.
 
-**The whole of $L$ is twisted.** $L_{\tilde Q}$ also carries the scale $r$ and the phase $e^{i\alpha}$. The half-spin statement concerns the norm-one, phase-one part $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the full operator is the twisted spinor representation of the module.
+**The whole of $L$ is twisted.** $L_{\tilde Q}$ also carries the scale $r$ and the phase $e^{i\alpha}$. The spinor statement concerns the norm-one, phase-one part $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the full operator is the twisted spinor representation of the module.
 
 **The double cover.** Replacing $\tilde u_{\mathrm r}$ by $-\tilde u_{\mathrm r}$ leaves the sandwich unchanged and changes $L$ by $-1$. On the norm-one slice the sandwich determines the element only up to sign; $L$ distinguishes the sign. The half-angle is therefore defined only after the lift to the double cover is chosen, and $L$ is the operator that carries the choice.
 
-**Corollary (the one-sided operator is the spinor action, hence the half-spin).** The operator $L_{\tilde Q}$ is the action of $\tilde Q$ on a single spinor. It preserves chirality, acts by the same $\Delta$ on $S_+$ and $S_-$, and its rotor and boost exponents are half those of the two-sided sandwich.
+**Corollary (the one-sided operator is the spinor action).** The operator $L_{\tilde Q}$ is the action of $\tilde Q$ on a single spinor. It preserves chirality, acts by the same $\Delta$ on $S_+$ and $S_-$, and its rotor and boost exponents are half those of the two-sided sandwich.
 
 ## The Exponents of the Four Factors
 
@@ -186,7 +186,7 @@ $$
 
 On $\Sigma_{11}$ it is diagonalisable, with the eigenvalues $e^{t\lambda_\pm}$, each twice, where $\lambda_\pm=Q_t\pm iB$; its determinant is $\exp(4tQ_t)$ and its trace is $4e^{tQ_t}\cos(tB)$. The one-sided rate is the eigenvalue $\lambda_\pm$, not its square.
 
-The half-spin is the one-sided operator. On one Peirce column the operator is the Weyl spinor $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$; the rotor carries $e^{\pm i\theta/2}$ and the boost $e^{\mp\psi/2}$, so the slot carries the half-angle and the half-rapidity. The whole of $L$ is two copies of that spinor, one per Peirce column, and the two Lorentz chiralities are the two tensor slots of $\mathbb{B}\cong S\otimes S^{*}$, not the two Peirce columns.
+The one-sided operator is the spinor action. On one Peirce column the operator is the Weyl spinor $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$; the rotor carries $e^{\pm i\theta/2}$ and the boost $e^{\mp\psi/2}$, so the slot carries the half-angle and the half-rapidity. The whole of $L$ is two copies of that spinor, one per Peirce column, and the two Lorentz chiralities are the two tensor slots of $\mathbb{B}\cong S\otimes S^{*}$, not the two Peirce columns.
 
 The weights add on the tensor product. For the rotor they are $(\theta,0,0,-\theta)$ and for the boost $(\psi,0,0,-\psi)$; the factor two sits in the pairing of the two slots, not in a rescaling of the angle. The one-sided operator sees one slot and does not double.
 

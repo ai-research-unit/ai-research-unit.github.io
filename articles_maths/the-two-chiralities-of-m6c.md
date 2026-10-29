@@ -93,7 +93,7 @@ and $\mathbb{C}^6=V_+\oplus V_-$, with $\dim V_\pm=3$.
 
 **Remark (the halves are not ideals).** Each chiral half is a three-dimensional subspace of the carrier. It is not a left ideal of $M_6$, not a minimal left ideal, and not a corner of the algebra. The minimal left ideals of $M_6$ are the six-dimensional columns. **The chiral halves live in the carrier; the chiral blocks live in the algebra.**
 
-**Remark (the name chirality).** The involution is a $\mathbb{Z}/2$ grading, and the word records that. It does not by itself produce chiral spinors. At $n=6$ each half is a three-dimensional module of the chiral algebra, of spin $1$; it is not the two-dimensional spin-$\tfrac12$ module that the word spinor requires. The genuine chiral spinors occur at $n=4$, where the halves are two-dimensional of spin $\tfrac12$, and at $n=2$, where each of the two columns carries a two-component spinor of definite chirality. The $3+3$ split of $M_6$ is a chiral block decomposition of the algebra, not a decomposition into Weyl spinors.
+**Remark (the name chirality).** The involution is a $\mathbb{Z}/2$ grading, and the word records that. It does not by itself produce chiral spinors. At $n=6$ each half is a three-dimensional module of the chiral algebra, of spin $1$; it is not the two-dimensional spin-$\tfrac12$ module that the word spinor requires. The genuine chiral spinors occur at $n=4$, where the halves are two-dimensional of spin $\tfrac12$, and at $n=2$, where each of the two columns is a copy of the two-component spinor module $S$; the chirality is the separate central sign $\chi=ij$, which grades that module against its conjugate $S^{\mathrm{c}}$, not the column index. The $3+3$ split of $M_6$ is a chiral block decomposition of the algebra, not a decomposition into Weyl spinors.
 
 ### The Chiral Blocks
 
@@ -405,9 +405,9 @@ $$
 1+1+1+1=4,
 $$
 
-with mass block of dimension $1$. The two chiralities are the two coordinate lines. The two minimal left ideals of $M_2$ are the two columns, each of dimension two, and each column contains one of the lines.
+with mass block of dimension $1$. The two matrix-model chiralities are the two coordinate lines; the biquaternion chirality is the separate central sign $\chi=ij$ of *Chirality: The Conjugate Pair*, which grades $S$ against $S^{\mathrm{c}}$. The two minimal left ideals of $M_2$ are the two columns, each of dimension two, and each column contains one of the lines.
 
-**Proof.** The two eigenspaces are the two coordinate lines; the columns of $M_2$ are the two minimal left ideals, each of dimension two, and each contains one of the lines. In the $1+1$ split the two lines are the two chiral halves.
+**Proof.** The two eigenspaces are the two coordinate lines; the columns of $M_2$ are the two minimal left ideals, each of dimension two, and each contains one of the lines. In the $1+1$ split the two lines are the two matrix-model chiral halves.
 
 ### The Pattern
 

@@ -604,9 +604,9 @@ The two readings are compared in the table.
 
 **The eigenprojection and the projector.** The element $\tilde\Pi_+$ is the eigenprojection of the eigenvalue decomposition. The operator $L_{\tilde\Pi_+}$ is the spectral projector onto the $\lambda_+$-eigenspace of $L_{\tilde Q}$: it sends $\tilde Q_2$ to $\tilde\Pi_+\tilde Q_2$, the first Peirce component, and its image is the two-dimensional right ideal $\tilde\Pi_+\mathbb{B}$. The two objects must not be confused: $L_{\tilde\Pi_+}$ is an operator on the four-dimensional algebra, while the spectral projector of the multiplication map is defined on the algebra itself.
 
-## Spinors and Chirality
+## Spinors and the Peirce Index
 
-**A spinor space of $\mathbb{B}$ is a minimal nonzero left ideal. The two spinor spaces are $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, each a complex plane, and the algebra is their direct sum.** This is the specialisation of §*Spinors and Chirality* of *The Eigenbasis of a Spectrally Regular Biquaternion*.
+**A spinor space of $\mathbb{B}$ is a minimal nonzero left ideal. The two spinor spaces are $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$, each a complex plane, and the algebra is their direct sum.** This is the specialisation of §*Spinors and the Peirce Index* of *The Eigenbasis of a Spectrally Regular Biquaternion*.
 
 ### The Two Spinor Spaces
 
@@ -620,7 +620,7 @@ each of complex dimension two, and
 $$
 \mathbb{B}=S_+\oplus S_-.
 $$
-A **spinor of first chirality** is an element of $S_+$; a **spinor of second chirality** is an element of $S_-$.
+A **spinor of the first Peirce copy** is an element of $S_+$; a **spinor of the second Peirce copy** is an element of $S_-$.
 
 **The module structure.** Left multiplication makes $S_+$ and $S_-$ left $\mathbb{B}$-modules, and each is a complex plane: a spinor has two complex coordinates. The two are isomorphic as left modules: right multiplication by $\vec\Upsilon_-$ maps $S_+$ onto $S_-$, with inverse right multiplication by $\vec\Upsilon_+$, because
 $$
@@ -633,9 +633,9 @@ $$
 $$
 They are nevertheless distinct subspaces of $\mathbb{B}$, and the direct sum is the whole algebra.
 
-### The Left Action and the Definition of Chirality
+### The Left Action and the Definition of the Peirce Index
 
-In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$, a spinor of first chirality is
+In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$, a spinor of the first Peirce copy is
 $$
 \xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,\qquad Q_{2,11},Q_{2,21}\in\mathbb{C},
 $$
@@ -647,7 +647,7 @@ so the coordinate pair is sent to
 $$
 (Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\;\lambda_-Q_{2,21}).
 $$
-A spinor of second chirality is an element of $S_-$,
+A spinor of the second Peirce copy is an element of $S_-$,
 $$
 \xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,\qquad Q_{2,12},Q_{2,22}\in\mathbb{C}.
 $$
@@ -672,7 +672,7 @@ The two spinor spaces and their coordinates are collected in the table.
 $$
 \tilde Q_2=\tilde Q_2\tilde\Pi_++\tilde Q_2\tilde\Pi_-,
 $$
-and the two summands are a spinor of first chirality and a spinor of second chirality. In the eigenbasis coordinates they are
+and the two summands are a spinor of the first Peirce copy and a spinor of the second Peirce copy. In the eigenbasis coordinates they are
 $$
 \tilde Q_2\longmapsto(Q_{2,11},Q_{2,12},Q_{2,21},Q_{2,22}),
 \qquad
@@ -680,9 +680,9 @@ $$
 \qquad
 \tilde Q_2\tilde\Pi_-\longmapsto(Q_{2,12},Q_{2,22}).
 $$
-A general element is therefore not a spinor: it has one spinor component of each chirality.
+A general element is therefore not a spinor: it has one spinor component of each Peirce copy.
 
-**Complex dimensions.** Each spinor has two complex components, hence four real parameters. The two spinor spaces have complex dimension two and real dimension four each, and their direct sum has the complex dimension four and the real dimension eight of $\mathbb{B}$. The label "first" versus "second" is fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing the square root by its negative, or exchanging the two labels, exchanges the two chiralities.
+**Complex dimensions.** Each spinor has two complex components, hence four real parameters. The two spinor spaces have complex dimension two and real dimension four each, and their direct sum has the complex dimension four and the real dimension eight of $\mathbb{B}$. The label "first" versus "second" is fixed by the convention $\tilde\Pi_+=(e_t+\vec\Xi)/2$; replacing the square root by its negative, or exchanging the two labels, exchanges the two Peirce copies.
 
 ### Matrices and the Column Correspondence
 
@@ -715,7 +715,7 @@ S_-=\mathbb{B}\tilde\Pi_-\longleftrightarrow\operatorname{span}\{E_{12},E_{22}\}
 $$
 The first column of $\mathsf M_2^{Q}(\tilde Q_2)$ is the coordinate vector of $\tilde Q_2\tilde\Pi_+$, the second is the coordinate vector of $\tilde Q_2\tilde\Pi_-$.
 
-A spinor of first chirality
+A spinor of the first Peirce copy
 $$
 \xi_+=\alpha\tilde\Pi_++\beta\vec\Upsilon_+
 \longleftrightarrow
@@ -725,7 +725,7 @@ is represented by the matrix
 $$
 \begin{pmatrix}\alpha&0\\\beta&0\end{pmatrix},
 $$
-whose first column is $\xi_+$ and whose second column is zero. A spinor of second chirality
+whose first column is $\xi_+$ and whose second column is zero. A spinor of the second Peirce copy
 $$
 \xi_-=\gamma\vec\Upsilon_-+\delta\tilde\Pi_-
 \longleftrightarrow
@@ -825,7 +825,7 @@ $$
 The $\lambda_+$-eigenspace of $L_{\tilde Q}$ is the right ideal $\tilde\Pi_+\mathbb{B}$, with basis $(\tilde\Pi_+,\vec\Upsilon_-)$; the $\lambda_-$-eigenspace is $\tilde\Pi_-\mathbb{B}$, with basis $(\vec\Upsilon_+,\tilde\Pi_-)$. The two left ideals $S_+,S_-$ are the eigenspaces of $R_{\tilde Q}$, with eigenvalues $\lambda_+,\lambda_-$ respectively. On each left ideal the restriction of $L_{\tilde Q}$ has the distinct eigenvalues $(\lambda_+,\lambda_-)$, so the eigenbasis of that restriction is unique up to two independent scales.
 
 **Spinors.**
-A spinor of first chirality is an element of $S_+$,
+A spinor of the first Peirce copy is an element of $S_+$,
 $$
 \xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
 \qquad (Q_{2,11},Q_{2,21})\in\mathbb{C}^2,
@@ -836,7 +836,7 @@ $$
 \qquad\text{that is,}\qquad
 (Q_{2,11},Q_{2,21})\longmapsto(\lambda_+Q_{2,11},\;\lambda_-Q_{2,21}).
 $$
-A spinor of second chirality is an element of $S_-$,
+A spinor of the second Peirce copy is an element of $S_-$,
 $$
 \xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
 \qquad (Q_{2,12},Q_{2,22})\in\mathbb{C}^2,

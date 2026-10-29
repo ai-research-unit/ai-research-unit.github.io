@@ -79,21 +79,23 @@ $$
 
 The angle $\theta$ is the statistics angle, and it is continuous because the product $e\Phi$ is continuous. The model was the historical origin of anyons, and it shows why the statistics is not quantized in $2+1$ dimensions: the flux is not quantized for a general source, so neither is the phase. The relation to the Aharonov–Bohm discussion of the Wilson-loop construction is direct: the exchange phase is half the holonomy, and the holonomy is the loop observable.
 
-### Spin and Statistics in 2+1 Dimensions
+### The Statistics Parameter and the Rotation Phase
 
-The statistics angle and the spin are linked, as they are in $3+1$ dimensions, but the link is weaker. A rotation of a particle by $2\pi$ multiplies its state by $\exp(2\pi i s)$, and the exchange phase is the phase of a rotation by $\pi$ of the relative coordinate, so that
+**The $2+1$-dimensional phase parameter is not the biquaternion spin.** In this article $s$ is the **statistics parameter**, defined by the rotation phase: a rotation by $2\pi$ multiplies the state by $\exp(2\pi i s)$. It is not the spin of *The Spin of a Biquaternion*, which is half the highest weight of a frame root on a carrier and takes the discrete values $0,\tfrac12,1$ on $\mathbb{B}$. The two agree in $3+1$ dimensions, where $s$ is an integer or half-integer and coincides with the spin of the little-group representation; in $2+1$ dimensions $s$ is continuous and the biquaternion definition does not apply.
+
+The statistics angle and $s$ are linked, as the angle and the spin are in $3+1$ dimensions, but the link is weaker. The exchange phase is the phase of a rotation by $\pi$ of the relative coordinate, so that
 
 $$
 \boxed{\;\theta = 2\pi s \pmod{2\pi}\;}.
 $$
 
-In $3+1$ dimensions the spin $s$ is an integer or half-integer, so the phase $\exp(2\pi is)$ is $\pm1$ and the statistics is bosonic or fermionic; the relation then reproduces the integer-spin/half-integer-spin dichotomy of the spin–statistics theorem. In $2+1$ dimensions the spin of the flux–charge composite need not be an integer or half-integer: the composite carries an angular momentum from the charge–flux field configuration — a fractional value — so that $s$ is continuous and $\theta$ is arbitrary. The composite's spin is the statistics angle measured in units of $2\pi$, $s=\dfrac{\theta}{2\pi}=\dfrac{e\Phi}{4\pi\hbar}$, consistent with the relation above; the precise value depends on the normalization of the bound-state angular momentum and is standard.
+In $3+1$ dimensions $s$ is an integer or half-integer, so the phase $\exp(2\pi is)$ is $\pm1$ and the statistics is bosonic or fermionic; the relation then reproduces the integer-spin/half-integer-spin dichotomy of the spin–statistics theorem. In $2+1$ dimensions the statistics parameter of the flux–charge composite need not be an integer or half-integer: the composite carries an angular momentum from the charge–flux field configuration — a fractional value — so that $s$ is continuous and $\theta$ is arbitrary. The composite's statistics parameter is the statistics angle measured in units of $2\pi$, $s=\dfrac{\theta}{2\pi}=\dfrac{e\Phi}{4\pi\hbar}$, consistent with the relation above; the precise value depends on the normalization of the bound-state angular momentum and is standard.
 
-The framework's interpretation is that the spin–statistics relation is a $3+1$-dimensional statement. The material sector carries integer spin and the informational sector half-integer spin, and the classification into bosons and fermions follows from the two possibilities for the phase $\exp(2\pi is)$. An anyon's spin is neither integer nor half-integer, so the anyon sits **outside the two-sector classification**: its phase $\exp(2\pi i s)$ is neither $+1$ nor $-1$, and it cannot be assigned to either sector. The framework's sharp distinction between the sectors is a feature of the four-dimensional Lorentz group and does not survive the reduction to three dimensions, and the anyon is the observable that records the difference.
+The framework's interpretation is that the spin–statistics relation is a $3+1$-dimensional statement. The material sector carries integer spin and the informational sector half-integer spin, and the classification into bosons and fermions follows from the two possibilities for the phase $\exp(2\pi is)$. An anyon's statistics parameter is neither integer nor half-integer, so the anyon sits **outside the two-sector classification**: its phase $\exp(2\pi i s)$ is neither $+1$ nor $-1$, and it cannot be assigned to either sector. The framework's sharp distinction between the sectors is a feature of the four-dimensional Lorentz group and does not survive the reduction to three dimensions, and the anyon is the observable that records the difference.
 
 ### The Generalized Spin–Statistics Theorem in 2+1 Dimensions
 
-The relation $\theta=2\pi s$ is the two-dimensional form of the spin–statistics theorem, and it is worth stating how it differs from the four-dimensional theorem. In $3+1$ dimensions the theorem states that a field quantized with commutators must carry integer spin and one quantized with anticommutators half-integer spin, and the proof uses Lorentz invariance, locality, and the positivity of the norm. In $2+1$ dimensions the statement that survives is the equality of the exchange phase with the phase of the rotation by $2\pi$; what does not survive is the quantization of the spin. The reason is group-theoretic: in four dimensions the rotation subgroup in the little group of a massive particle is $\mathrm{SO}(3)$, whose $*$-unitary representations have half-integer or integer weights, whereas in three dimensions the effective rotation is a single angle and its representations — labelled by $\exp(2\pi is)$ — have an arbitrary real $s$. The theorem is therefore not weakened by a loss of rigour but by a change of the group that enforces it.
+The relation $\theta=2\pi s$ is the two-dimensional form of the spin–statistics theorem, and it is worth stating how it differs from the four-dimensional theorem. In $3+1$ dimensions the theorem states that a field quantized with commutators must carry integer spin and one quantized with anticommutators half-integer spin, and the proof uses Lorentz invariance, locality, and the positivity of the norm. In $2+1$ dimensions the statement that survives is the equality of the exchange phase with the phase of the rotation by $2\pi$; what does not survive is the quantisation of the statistics parameter. The reason is group-theoretic: in four dimensions the rotation subgroup in the little group of a massive particle is $\mathrm{SO}(3)$, whose $*$-unitary representations have half-integer or integer weights, whereas in three dimensions the effective rotation is a single angle and its representations — labelled by $\exp(2\pi is)$ — have an arbitrary real $s$. The theorem is therefore not weakened by a loss of rigour but by a change of the group that enforces it.
 
 The companion article *The Spin–Statistics Theorem in Biquaternionic Form* establishes the four-dimensional version, and its central statement is the dichotomy of the two phase classes. The two-dimensional interpretation of that article's argument is that the dichotomy is exactly what fails: the exchange phase is no longer drawn from a two-element set, because the rotation group no longer supplies a discrete set of weights. This is the group-theoretic content of fractional statistics, and it is the sense in which the anyon's statistics is not a small deformation of Bose or Fermi statistics but the appearance of a new continuum of possibilities.
 
@@ -139,7 +141,7 @@ $$
 s = \frac{\theta}{2\pi}=\frac{ϙ^2}{2k}\;}.
 $$
 
-For $k=2$ and $ϙ=1$ the angle is $\pi/2$ and the spin is $\tfrac14$: the semion, the simplest anyon, with the statistics of neither a boson nor a fermion and a spin of a quarter. The level $k$ must be an integer for the quantum theory to be consistent on a closed spatial manifold, which is the quantization of the coupling that the flux–charge model lacked; the charge $ϙ$ is an integer in the abelian theory.
+For $k=2$ and $ϙ=1$ the angle is $\pi/2$ and the statistics parameter is $\tfrac14$: the semion, the simplest anyon, with the statistics of neither a boson nor a fermion and a statistics parameter of one quarter. The level $k$ must be an integer for the quantum theory to be consistent on a closed spatial manifold, which is the quantization of the coupling that the flux–charge model lacked; the charge $ϙ$ is an integer in the abelian theory.
 
 The linking number was verified by direct computation. The Gauss integral
 
@@ -233,7 +235,7 @@ The relation of the anyon's angle to the vacuum angle is worth recording, with a
 
 ## Open Questions
 
-1. **The fractional spin and the sectors.** The anyon's spin is the one case in this subcategory that the material/informational split does not classify. Is there a three-dimensional reduction of the framework — a biquaternion algebra over a two-dimensional space, or a contraction of the four-dimensional structure — in which the spin is naturally continuous and the two sectors merge into a single continuous label? If not, the split is a four-dimensional accident.
+1. **The fractional statistics parameter and the sectors.** The anyon's statistics parameter is the one case in this subcategory that the material/informational split does not classify. Is there a three-dimensional reduction of the framework — a biquaternion algebra over a two-dimensional space, or a contraction of the four-dimensional structure — in which the spin is naturally continuous and the two sectors merge into a single continuous label? If not, the split is a four-dimensional accident.
 
 2. **The statistics angle as a holonomy parameter.** The anyon's angle is a property of the braid representation, not of the algebra. Is there a biquaternion object — a phase in the maximal torus of a group generated by the algebra — whose eigenvalue is the statistics angle, in the way that the mass and the spin appear as parameters of the algebra's representations? The framework's parameters so far are all discrete or continuous but fixed by the representation; the statistics angle would be the first continuous parameter attached to a representation's monodromy.
 
@@ -266,11 +268,11 @@ In the biquaternion framework the braiding phase is a holonomy and the exchange 
 | $\Phi$ | Magnetic flux of the composite |
 | $\exp(i\theta)=\exp(ie\Phi/2\hbar)$ | Exchange phase; half the Aharonov–Bohm phase $\exp(ie\Phi/\hbar)$ |
 | $\theta=2\pi s$ | Spin–statistics relation in $2+1$ dimensions |
-| $s$ | Spin of the anyon; $s=ϙ^2/2k$ for the Chern–Simons anyon |
+| $s$ | Statistics parameter of the anyon; $s=ϙ^2/2k$ for the Chern–Simons anyon |
 | $S_{\mathrm{CS}}=\frac{k}{4\pi}\int\varepsilon^{\mu\nu\rho}A_\mu\partial_\nu A_\rho$ | Abelian Chern–Simons action; level $k$ |
 | $W_R(C)=\mathrm{Tr}_R\,\mathcal{P}\exp(i\oint_C A)$ | Wilson loop; the observable of the topological theory |
 | $\langle W_{ϙ_1}(C_1)W_{ϙ_2}(C_2)\rangle=\exp(2\pi i\frac{ϙ_1ϙ_2}{k}\mathrm{Lk})$ | Loop correlator; exponential of the linking number |
-| $\theta=\pi ϙ^2/k$, $s=ϙ^2/2k$ | Statistics angle and spin of the charge-$ϙ$ anyon at level $k$ |
+| $\theta=\pi ϙ^2/k$, $s=ϙ^2/2k$ | Statistics angle and parameter of the charge-$ϙ$ anyon at level $k$ |
 | $\mathrm{Lk}=\frac{1}{4\pi}\oint\oint\frac{(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))\cdot(d(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z)\times d(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))}{|x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^3}$ | Gauss linking integral; $=\pm1$ for the Hopf link (verified) |
 | $a\times b=\sum_c N_{ab}^c c$ | Fusion rules; multiplicities from tensor products |
 | $d_a$ | Quantum dimension |

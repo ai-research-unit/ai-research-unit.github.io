@@ -234,7 +234,7 @@ $$
 
 Hence $\xi\vec\Upsilon_-$ lies in $S_-$ for every $\xi\in S_+$, and $S_-\vec\Upsilon_-=0$; right multiplication by $\vec\Upsilon_+$ does the reverse. The two maps are inverse on the planes, and both blocks move together: the exchange is a single right multiplication, not a pair of independent maps on the two copies.
 
-**Chirality.** Left multiplication preserves each block; right multiplication swaps them. The two blocks are the two chiralities, and the only operation of the algebra that relates them is multiplication on the right by a mixed unit.
+**Peirce index.** Left multiplication preserves each block; right multiplication swaps them. The two blocks are the two Peirce copies, not two chiralities, and the only operation of the algebra that relates them is multiplication on the right by a mixed unit.
 
 ## The Nilpotents as Off-Diagonal Units
 

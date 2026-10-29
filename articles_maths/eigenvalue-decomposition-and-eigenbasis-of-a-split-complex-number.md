@@ -28,7 +28,7 @@ Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi
 | Peirce decomposition | $\mathbb{D}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$, with zero off-diagonal corners |
 | Eigenbasis | $(\Pi_+,\Pi_-)$, with eigenvalues $\lambda_+,\lambda_-$ |
 | Matrix model | $M(Q_2)=\operatorname{diag}(a_1,a_2)$; the regular matrix is $\begin{pmatrix}q&q'\\q'&q\end{pmatrix}$ |
-| Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, two real lines; one real spinor coordinate per chirality |
+| Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, two real lines; one real spinor coordinate per Peirce copy |
 | Unit group | $\mathbb{D}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ |
 
 **Conventions.** The notation is fixed in *Conventions in Mathematics*: the algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$, $j^2=+1$, general element $Q=q+jq'$ with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, conjugate $\bar Q=q-jq'$, idempotents $\Pi_\pm=\tfrac12(1\pm j)$ and idempotent coordinates $Q_\pm=q\pm q'$, so that $Q=Q_+\Pi_+ + Q_-\Pi_-$. The norm is $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$. The eigenvalues are written $\lambda_\pm=Q_\pm=q\pm q'$; a test scalar in the definition of an eigenvalue is written $\mu$, so the letter $\lambda$ is reserved for the two eigenvalues. The two spinor spaces are $S_\pm=\mathbb{R}\Pi_\pm$, with real spinor coordinates $a_1,a_2$, the two diagonal entries of the matrix in the eigenbasis; after complexification the coefficients are complex. The base is $\mathbb{R}$, as throughout the category.
@@ -361,11 +361,11 @@ $$
 $$
 The notation $S_\pm$ is reserved for these two spaces.
 
-A **spinor of first chirality** is an element of $S_+$,
+A **spinor of the first Peirce copy** is an element of $S_+$,
 $$
 \xi_+=a_1\Pi_+,\qquad a_1\in\mathbb{R},
 $$
-and a **spinor of second chirality** is an element of $S_-$,
+and a **spinor of the second Peirce copy** is an element of $S_-$,
 $$
 \xi_-=a_2\Pi_-,\qquad a_2\in\mathbb{R}.
 $$
@@ -389,7 +389,7 @@ a_1\longmapsto\lambda_+a_1,
 \qquad
 a_2\longmapsto\lambda_-a_2.
 $$
-A general element $Q_2=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each chirality, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
+A general element $Q_2=\xi_++\xi_-$ is not a spinor: it is the sum of one spinor of each Peirce copy, and its two components $\xi_+,\xi_-$ are the two summands in the direct sum.
 
 **Complexification.** The article is over $\mathbb{R}$, so the spinors above have real coefficients. After extension of scalars, $\mathbb{D}_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\cong\mathbb{C}\times\mathbb{C}$, the same formulas hold with $a_1,a_2\in\mathbb{C}$ and $\lambda_\pm\in\mathbb{C}$, and the spinor spaces become the complex lines
 $$
@@ -426,7 +426,7 @@ S_+=\mathbb{R}\Pi_+\longleftrightarrow\operatorname{span}\{E_{11}\}=\text{column
 \qquad
 S_-=\mathbb{R}\Pi_-\longleftrightarrow\operatorname{span}\{E_{22}\}=\text{column }2.
 $$
-A spinor of first chirality $\xi_+=a_1\Pi_+$ is the first column $(a_1,0)^{T}$; a spinor of second chirality $\xi_-=a_2\Pi_-$ is the second column $(0,a_2)^{T}$. The off-diagonal entries are zero: the mixed Peirce corners vanish, and the matrix units $E_{12},E_{21}$ do not occur. The image of the Peirce model is the diagonal subalgebra of $M_2(\mathbb{R})$, isomorphic to $\mathbb{R}\times\mathbb{R}$.
+A spinor of the first Peirce copy $\xi_+=a_1\Pi_+$ is the first column $(a_1,0)^{T}$; a spinor of the second Peirce copy $\xi_-=a_2\Pi_-$ is the second column $(0,a_2)^{T}$. The off-diagonal entries are zero: the mixed Peirce corners vanish, and the matrix units $E_{12},E_{21}$ do not occur. The image of the Peirce model is the diagonal subalgebra of $M_2(\mathbb{R})$, isomorphic to $\mathbb{R}\times\mathbb{R}$.
 
 In the basis $(1,j)$ the regular representation is
 $$
@@ -766,11 +766,11 @@ The table compares the decomposition across the three algebras; in the biquatern
 | Coordinates of a general element in the eigenbasis | $(a_1,a_2)$ | $(A_1,A_2)$ | $(a_{11},a_{12},a_{21},a_{22})$ |
 | Nilpotents in the eigenbasis | none | none | $\vec\Upsilon_\pm$ in the two mixed corners |
 | Spinor spaces | $S_\pm=\mathbb{R}\Pi_\pm$, real lines | $S_\pm=\mathbb{C}\Pi_\pm$, complex lines | $S_\pm=\mathbb{B}\tilde\Pi_\pm\cong\mathbb{C}^2$, complex planes |
-| Spinor coordinates | one real coefficient per chirality | one complex coefficient per chirality | two complex coefficients per chirality |
+| Spinor coordinates | one real coefficient per Peirce copy | one complex coefficient per Peirce copy | two complex coefficients per Peirce copy |
 | Action of $Q$ on a spinor | scalar: $\lambda_+$ on $S_+$, $\lambda_-$ on $S_-$ | scalar: $\lambda_+$ on $S_+$, $\lambda_-$ on $S_-$ | $\lambda_+$ on the first coordinate, $\lambda_-$ on the second |
 | Unit group | $\cong\mathbb{R}^\times\times\mathbb{R}^\times$ | $\cong\mathbb{C}^\times\times\mathbb{C}^\times$ | $\mathbb{B}^\times$; eigenvalue map surjective, not injective, not a homomorphism |
 
-Read down a column for one algebra and across a row for one concept. The rows down to the eigenprojections follow one pattern; the rows below them record where the algebras part: whether the idempotents depend on the element and whether they are central, the two mixed square-zero lines of the biquaternion Peirce decomposition, and the biquaternion unit group, which is no longer a product. The last rows record the spinor content: one real coefficient per chirality for the split-complex algebra, one complex coefficient per chirality for the reduced biquaternion algebra, and two complex coefficients per chirality, forming a complex plane, for the biquaternion algebra.
+Read down a column for one algebra and across a row for one concept. The rows down to the eigenprojections follow one pattern; the rows below them record where the algebras part: whether the idempotents depend on the element and whether they are central, the two mixed square-zero lines of the biquaternion Peirce decomposition, and the biquaternion unit group, which is no longer a product. The last rows record the spinor content: one real coefficient per Peirce copy for the split-complex algebra, one complex coefficient per Peirce copy for the reduced biquaternion algebra, and two complex coefficients per Peirce copy, forming a complex plane, for the biquaternion algebra.
 
 ## Summary of Notation
 

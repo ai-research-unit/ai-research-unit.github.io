@@ -157,9 +157,9 @@ $$
 \begin{pmatrix}0&1\\0&0\end{pmatrix}.
 $$
 
-The two standard nilpotents are the two off-diagonal matrix units, and every other nilpotent is a conjugate of one of them. The statement is the matrix form of the fact that the nilpotent cone of $\mathbb{B}$ is the zero element together with a single conjugacy class, with the two chiralities corresponding to the two off-diagonal positions.
+The two standard nilpotents are the two off-diagonal matrix units, and every other nilpotent is a conjugate of one of them. The statement is the matrix form of the fact that the nilpotent cone of $\mathbb{B}$ is the zero element together with a single conjugacy class, with the two nilpotent lines corresponding to the two off-diagonal positions.
 
-**The two chiralities.** The two off-diagonal units are not conjugate by a diagonal element of the standard torus; they are exchanged by the Weyl element $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, which is the image of a unit of $\mathbb{B}$ exchanging the two idempotents. The exchange is an inner automorphism, so the two nilpotents are conjugate in $M_2(\mathbb{C})$; the labels $x$ and $y$ are a choice of which is which.
+**The two nilpotent lines.** The two off-diagonal units are not conjugate by a diagonal element of the standard torus; they are exchanged by the Weyl element $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, which is the image of a unit of $\mathbb{B}$ exchanging the two idempotents. The exchange is an inner automorphism, so the two nilpotents are conjugate in $M_2(\mathbb{C})$; the labels $x$ and $y$ are a choice of which is which. The two positions are the two Peirce copies, not two chiralities: the chirality of the biquaternion Dirac field is the central sign $\chi=ij$ of *Chirality: The Conjugate Pair*, which grades $S$ against $S^{\mathrm{c}}$.
 
 ## The Two Spinor Planes
 
@@ -256,7 +256,7 @@ $$
 
 The exchange is a bijection of two planes. It is neither a left multiplication nor an algebra automorphism, and it is not canonical: the normalisation of the mixed basis is free up to the reciprocal scaling of §*Systems of Matrix Units*.
 
-**Chirality.** Left multiplication preserves each column; right multiplication mixes them. A term that couples the two chiralities therefore cannot be a left multiplication. It must be a right multiplication, and the element that performs it is the one carried to an off-diagonal matrix unit.
+**Peirce index.** Left multiplication preserves each column; right multiplication mixes them. A term that couples the two Peirce copies therefore cannot be a left multiplication. It must be a right multiplication, and the element that performs it is the one carried to an off-diagonal matrix unit.
 
 ### The Star
 

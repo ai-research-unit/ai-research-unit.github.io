@@ -315,7 +315,7 @@ The spaces $S_\pm$ are the spinor spaces, the Peirce carriers and here the minim
 
 ### Spinors and the $2\times2$ Model
 
-A spinor of first chirality is an element of $S_+$,
+A spinor of the first Peirce copy is an element of $S_+$,
 
 $$
 \xi_+=Q_{2,11}\tilde\Pi_++Q_{2,21}\vec\Upsilon_+,
@@ -329,7 +329,7 @@ $$
 \tilde Q\xi_+=\lambda_+Q_{2,11}\tilde\Pi_++\lambda_-Q_{2,21}\vec\Upsilon_+.
 $$
 
-A spinor of second chirality is an element of $S_-$,
+A spinor of the second Peirce copy is an element of $S_-$,
 
 $$
 \xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}\tilde\Pi_-,
@@ -345,7 +345,7 @@ $$
 
 The same diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ acts on the coordinates of both spinor spaces.
 
-Every element of $\mathbb{B}$ splits as $\tilde P=\tilde P\tilde\Pi_++\tilde P\tilde\Pi_-$, a spinor of first chirality plus a spinor of second chirality. A general element is therefore a pair of spinors, not a spinor.
+Every element of $\mathbb{B}$ splits as $\tilde P=\tilde P\tilde\Pi_++\tilde P\tilde\Pi_-$, a spinor of the first Peirce copy plus a spinor of the second Peirce copy. A general element is therefore a pair of spinors, not a spinor.
 
 The assignment
 

@@ -9,7 +9,7 @@ S_{-}=\mathbb{B}\tilde\Pi_{-}=\mathbb{B}_{+-}\oplus\mathbb{B}_{--}.
 $$
 The spinor is the algebra element itself. The Peirce coordinates are its coefficients in a basis; they describe the spinor, but they are not the spinor.
 
-The root fixes the two spinor spaces and the two lines inside each. It does not fix a basis adapted to those lines, because the mixed line has no vector fixed by the root. The choice of a nonzero vector in the mixed line is the gauge. The article defines the spinor spaces, gives the eigenbasis of the root and the ladder, the gauge action and the invariants, and the chirality. An example is given at the end.
+The root fixes the two spinor spaces and the two lines inside each. It does not fix a basis adapted to those lines, because the mixed line has no vector fixed by the root. The choice of a nonzero vector in the mixed line is the gauge. The article defines the spinor spaces, gives the eigenbasis of the root and the ladder, the gauge action and the invariants, and the Peirce index. An example is given at the end.
 
 ## The Two Spinor Spaces
 
@@ -118,9 +118,9 @@ are gauge-invariant. In the Hermitian gauge the real number $|a|^{2}+|c|^{2}$ is
 
 **What is not an invariant.** The pair $(a,c)$ is not; it is a coordinate description, and under the gauge it becomes $(a,t^{-1}c)$. A single spinor is not determined by its zero pattern alone: the invariant coordinate $a$ is intrinsic as well.
 
-## Chirality
+## The Peirce Index
 
-**The right index is the chirality.** Right multiplication by the root acts by
+**The right index is the Peirce index.** Right multiplication by the root acts by
 $$
 \tilde\psi_{+}\tilde\Xi=+\tilde\psi_{+},\qquad
 \tilde\psi_{-}\tilde\Xi=-\tilde\psi_{-}.
@@ -130,7 +130,7 @@ $$
 \tilde Q\tilde\Pi_{+}=\tilde Q\quad\text{on }S_{+},\qquad
 \tilde Q\tilde\Pi_{-}=\tilde Q\quad\text{on }S_{-}.
 $$
-The chirality is the spinor-space label, not an extra grading.
+The Peirce index is the spinor-space label, not an extra grading.
 
 ## Right Multiplication
 
@@ -176,7 +176,7 @@ The eigenvalues of $L_{\tilde\Xi}$ are $+1$ for $a$ and $-1$ for $c$. Under the 
 
 ## Summary
 
-A spinor of $\mathbb{B}$ is an element of $S_{+}=\mathbb{B}\tilde\Pi_{+}$ or $S_{-}=\mathbb{B}\tilde\Pi_{-}$. The root fixes the eigenvalues $\pm1$ of $L_{\tilde\Xi}$; an eigenbasis requires a nonzero vector in each mixed line, and the choice is the gauge. The ladder is left multiplication by the mixed vectors, normalized by $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$. The gauge acts by $a'=a$, $c'=t^{-1}c$, $b'=tb$, $d'=d$, and leaves the spinor fixed. The invariant coordinate $a$ (or $d$) and the vanishing of $c$ (or $b$) are the invariants; the ratio is not. Chirality is the right index, $R_{\tilde\Xi}=\pm1$. Right multiplication exchanges the two spaces through the mixed elements, and its star is a right Peirce row, not the other space.
+A spinor of $\mathbb{B}$ is an element of $S_{+}=\mathbb{B}\tilde\Pi_{+}$ or $S_{-}=\mathbb{B}\tilde\Pi_{-}$. The root fixes the eigenvalues $\pm1$ of $L_{\tilde\Xi}$; an eigenbasis requires a nonzero vector in each mixed line, and the choice is the gauge. The ladder is left multiplication by the mixed vectors, normalized by $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$. The gauge acts by $a'=a$, $c'=t^{-1}c$, $b'=tb$, $d'=d$, and leaves the spinor fixed. The invariant coordinate $a$ (or $d$) and the vanishing of $c$ (or $b$) are the invariants; the ratio is not. The Peirce index is the right index, $R_{\tilde\Xi}=\pm1$; it is not a chirality. Right multiplication exchanges the two spaces through the mixed elements, and its star is a right Peirce row, not the other space.
 
 ## Summary of Notation
 

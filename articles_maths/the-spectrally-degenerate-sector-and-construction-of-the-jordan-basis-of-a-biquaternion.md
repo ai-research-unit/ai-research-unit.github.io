@@ -575,7 +575,7 @@ R_{\tilde Q}(\tilde\Pi_+)=Q_t\tilde\Pi_++\vec\Upsilon_-,\qquad
 R_{\tilde Q}(\vec\Upsilon_+)=Q_t\vec\Upsilon_++\tilde\Pi_-.
 $$
 
-In particular the two chiralities are the two blocks of the left action, and the right action mixes $S_+$ into $S_++S_-$.
+In particular the two Peirce copies are the two blocks of the left action, and the right action mixes $S_+$ into $S_++S_-$.
 
 *Proof.* The left action is the theorem of §*The Basis and the Left Action* read on the two chains $(\tilde\Pi_+,\vec\Upsilon_+)$ and $(\vec\Upsilon_-,\tilde\Pi_-)$. The right action is computed in the table. ∎
 
@@ -588,7 +588,7 @@ The four labels are collected in the table.
 | $\vec\Upsilon_+$ | $\mathbb{B}_{-+}$ | $S_+$ | $Q_t\vec\Upsilon_++\tilde\Pi_+$ | $Q_t\vec\Upsilon_++\tilde\Pi_-$ |
 | $\tilde\Pi_-$ | $\mathbb{B}_{--}$ | $S_-$ | $Q_t\tilde\Pi_-+\vec\Upsilon_-$ | $Q_t\tilde\Pi_-$ |
 
-**Remark (chirality).** In the regular case right multiplication is scalar on each $S_\pm$, and chirality is a right-multiplication label. Here it is not: $S_-$ is an eigenspace of $R_{\tilde Q}$, but $S_+$ is not invariant, and its image carries a $Q_t$ part in $S_+$ and a nilpotent part in $S_-$. Chirality survives as the label of the two minimal left ideals and of the two blocks of the left action.
+**Remark (the Peirce index).** In the regular case right multiplication is scalar on each $S_\pm$, and the Peirce index is a right-multiplication label. Here it is not: $S_-$ is an eigenspace of $R_{\tilde Q}$, but $S_+$ is not invariant, and its image carries a $Q_t$ part in $S_+$ and a nilpotent part in $S_-$. The Peirce index survives as the label of the two minimal left ideals and of the two blocks of the left action.
 
 ## Multiplication, Inversion, and the Exponential
 

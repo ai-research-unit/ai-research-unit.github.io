@@ -94,7 +94,7 @@ $$
 j=\frac{4-1}{2}=\tfrac32 .
 $$
 
-This is the algebraic definition of the spin of the spinor: the highest weight of $J_3$ on the left space $M_4P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=4$ it gives $\tfrac32$ and the column has $2j+1=4$ components.
+This is the definition of *The Spin of a Biquaternion* read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_4P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=4$ it gives $\tfrac32$ and the column has $2j+1=4$ components.
 
 The column has four entries. Under the chain, $J_3$ has weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, so the column is the spin-$\tfrac32$ space. The chirality $H^{2}$ splits it $2+2$. The biquaternion case $n=2$ is the only case whose Peirce column is a spin-$\tfrac12$ pair.
 

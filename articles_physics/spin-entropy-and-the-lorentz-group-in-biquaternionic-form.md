@@ -203,11 +203,11 @@ In every case the entropy increases, the increase is larger for a purer state an
 
 For a massive particle the four-velocity is timelike and the little group is $SU(2)$; its irreducible representations are the spin representations, labelled by $s = 0,\tfrac12,1,\dots$, and the one-particle Hilbert space at fixed four-velocity is the carrier of the spin-$s$ representation. The entropy of a spin-$s$ state is a function on that carrier, invariant under the little group, and the orbit-space statement of the qubit case generalizes: the entropy is constant on the orbit of the state under the compact subgroup.
 
-Two group-theoretic facts organise the interpretation. First, the mass and the spin are the Casimir labels of the Poincaré group,
+Two group-theoretic facts organise the interpretation. First, the mass and the spin label are the Casimir labels of the Poincaré group,
 $$
 P^2 = m^2c^2, \qquad -W^2 = m^2c^2\,s(s+1),
 $$
-with $W^\mu$ the Pauli–Lubanski vector; they label the irreducible representation, not the state. Second, the entropy is *not* a Casimir; it is a function on the representation space, constant on the little-group orbits. The pair $(m,s)$ says which representation a particle belongs to; the entropy is one invariant of the orbit within it that a given state occupies. The Lorentz group maps the representation to itself and the orbit to an orbit, and at sharp momentum it maps each orbit to itself, because the map is the $*$-unitary little-group action. This is the precise group-theoretic sense in which spin entropy is a frame-independent property of a momentum eigenstate.
+with $W^\mu$ the Pauli–Lubanski vector; they label the irreducible representation, not the state. The label $s$ is the number $j$ of *The Spin of a Biquaternion*, read on the little-group carrier. Second, the entropy is *not* a Casimir; it is a function on the representation space, constant on the little-group orbits. The pair $(m,s)$ says which representation a particle belongs to; the entropy is one invariant of the orbit within it that a given state occupies. The Lorentz group maps the representation to itself and the orbit to an orbit, and at sharp momentum it maps each orbit to itself, because the map is the $*$-unitary little-group action. This is the precise group-theoretic sense in which spin entropy is a frame-independent property of a momentum eigenstate.
 
 ### Massless particles and helicity
 

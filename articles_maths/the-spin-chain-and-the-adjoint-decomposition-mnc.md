@@ -4,7 +4,7 @@
 
 **The chain of simple nilpotents is the ladder of an $\mathfrak{sl}_2$, the carrier is $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$ of spin $(n-1)/2$, and the adjoint decomposes as $1+3+\cdots+(2n-1)$.** This is the last step of the construction: spin is the weight of the Peirce chain, not a separate structure imposed on the algebra.
 
-The article defines the $\mathfrak{sl}_2$ of the frame, proves the commutation relations with the ladder coefficients $\sqrt{k(n-k)}$, identifies the carrier with the symmetric power, proves the adjoint decomposition by weight multiplicities, and reads the chirality at even $n$. It closes with the warning that governs the whole corpus: for $n>2$ the full carrier is not a spinor module, and only the case $n=2$ produces spinors from the Peirce carrier; the chiral halves of $n=4$ are the remaining spinor spaces.
+The article defines the $\mathfrak{sl}_2$ of the frame, proves the commutation relations with the ladder coefficients $\sqrt{k(n-k)}$, identifies the carrier with the symmetric power, proves the adjoint decomposition by weight multiplicities, and reads the even-$n$ grading. It closes with the warning that governs the whole corpus: for $n>2$ the full carrier is not a spinor module, and only the case $n=2$ produces spinors from the Peirce carrier; the graded halves of $n=4$ are the remaining spinor spaces.
 
 The frame and the nilpotents come from *The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$*; the idempotents and the grading from *Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$*.
 
@@ -119,36 +119,36 @@ of total dimension $\sum_{r=0}^{n-1}(2r+1)=n^{2}$.
 
 **The case $n=2$.** The decomposition is $1+3$: the centre and $\mathfrak{sl}_2$ itself. The biquaternion algebra, read as $M_2(\mathbb{C})$, is the adjoint module of its own $\mathfrak{sl}_2$ plus the centre. The carrier is the two-dimensional spin-$\tfrac12$ module, which is the spinor module of the biquaternion article.
 
-## Chirality at Even $n$
+## The Even-$n$ Grading
 
-**For even $n$ the root has a canonical involution, and it splits the carrier in two.** Let $n=2m$ and put
+**For even $n$ the root has a canonical involution, and it grades the carrier in two.** Let $n=2m$ and put
 
 $$
 \Gamma=H^{m}=\sum_{k=1}^{n}\zeta_k^{m}E_{kk}=\sum_{k=1}^{n}(-1)^{k-1}E_{kk}.
 $$
 
-Then $\Gamma^{2}=I$, $\Gamma$ commutes with $H$, and $\Gamma$ is the chirality involution. It splits
+Then $\Gamma^{2}=I$ and $\Gamma$ commutes with $H$. It is a $\mathbb{Z}/2$ **grading** of the carrier, not a chirality, and it splits
 
 $$
 \mathbb{C}^{n}=\mathbb{C}^{m}_{+}\oplus\mathbb{C}^{m}_{-},\qquad
 \mathbb{C}^{m}_{\pm}=\operatorname{span}\{e_k:\pm(-1)^{k-1}=1\}.
 $$
 
-**The Peirce chain mixes the two halves.** The ladder $J_+$ maps $e_k$ to $e_{k-1}$, so it changes $(-1)^{k-1}$ and therefore exchanges the two halves. The carrier is irreducible under the Peirce $\mathfrak{sl}_2$ and does not split. This is the precise sense in which the Peirce spin and the chirality are different structures: the first is irreducible on $\mathbb{C}^{n}$, the second is a $\mathbb{Z}/2$ grading that the first does not preserve.
+**The Peirce chain mixes the two halves.** The ladder $J_+$ maps $e_k$ to $e_{k-1}$, so it changes $(-1)^{k-1}$ and therefore exchanges the two halves. The carrier is irreducible under the Peirce $\mathfrak{sl}_2$ and does not split. This is the precise sense in which the Peirce spin and the grading are different structures: the first is irreducible on $\mathbb{C}^{n}$, the second is a $\mathbb{Z}/2$ grading that the first does not preserve.
 
-**The chiral algebra preserves the halves.** The subalgebra of $M_n(\mathbb{C})$ that commutes with $\Gamma$ is $M_m(\mathbb{C})\oplus M_m(\mathbb{C})$, acting on $\mathbb{C}^{m}_{+}\oplus\mathbb{C}^{m}_{-}$. Its principal $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ is the **chiral algebra**. On the carrier,
+**The grading-preserving algebra.** The subalgebra of $M_n(\mathbb{C})$ that commutes with $\Gamma$ is $M_m(\mathbb{C})\oplus M_m(\mathbb{C})$, acting on $\mathbb{C}^{m}_{+}\oplus\mathbb{C}^{m}_{-}$. Its principal $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ is the **grading algebra**. On the carrier,
 
 $$
 \mathbb{C}^{n}\cong V_{m}\oplus V_{m}
 $$
 
-under the chiral pair, where $V_{m}$ is the spin-$(m-1)/2$ module of dimension $m$: for $n=4$, two spin-$\tfrac12$ modules; for $n=6$, two spin-$1$ modules. The mass block of the chiral decomposition is the off-diagonal part, which is precisely the part the Peirce chain uses to move between the halves.
+under the pair, where $V_{m}$ is the spin-$(m-1)/2$ module of dimension $m$: for $n=4$, two spin-$\tfrac12$ modules; for $n=6$, two spin-$1$ modules. The off-diagonal block is the part the Peirce chain uses to move between the halves.
 
-**At $n=2$.** $m=1$, $\Gamma=H=\operatorname{diag}(1,-1)$, the two halves are the two coordinate lines, and the chiral algebra is $\mathfrak{sl}_2$ acting on each line trivially. This degenerate case is the biquaternion one: the two minimal left ideals are the two columns, each of dimension two and each of definite chirality, while the two one-dimensional halves are the two coordinate lines. The two columns carry the two Weyl spinor representations; the halves do not.
+**At $n=2$.** $m=1$, $\Gamma=H=\operatorname{diag}(1,-1)$, and the two halves are the two coordinate lines. The carrier is a minimal left ideal, a column; $\Gamma$ splits that column into its two coordinate lines. The two columns are copies of the simple module $S$, distinguished by the Peirce index, and each column contains both lines. This degenerate case is the biquaternion one. The biquaternion chirality is not $\Gamma$: it is the central sign $\chi=ij$ of the complexification, which grades $S$ against $S^{\mathrm{c}}$ and is treated in *Chirality: The Conjugate Pair*.
 
-### The Three Labels
+### The Three Readings of the Root
 
-**The left action carries the spin weight, the right action carries the chirality, and the adjoint carries their difference.** On the matrix unit $E_{kl}$,
+**The left action carries the spin, the right action carries the Peirce index, and the adjoint carries their difference.** On the matrix unit $E_{kl}$,
 
 $$
 L_{J_3}(E_{kl})=j_kE_{kl},\qquad
@@ -172,15 +172,19 @@ $$
 
 and the multiplicative form of the identity is $L_H=\operatorname{Ad}_H\circ R_H$. In the additive labels, $(k-1)=(k-l)+(l-1)$.
 
-The **spin** is the left reading: $j_k=\tfrac{n-1}{2}-(k-1)$ is an affine function of $k-1$, and the highest left weight is $(n-1)/2$. The **chirality** is the right reading: the right action of $H$ has the constant eigenvalue $\zeta^{l-1}$ on the minimal left ideal $M_nE_{ll}$, so that ideal carries the right label $l-1$; at even $n$ its $m$-th power is the sign $(-1)^{l-1}$, and on the carrier the same sign is the eigenvalue of $\Gamma=H^m$. The **grade** is the difference $k-l$, which is the weight of $\operatorname{ad}_{J_3}$ up to sign. Spin and chirality are independent labels of the same corner; the identity $L_{J_3}=\operatorname{ad}_{J_3}+R_{J_3}$ is the precise sense in which the adjoint grade is their difference and not a third independent label.
+The **spin** is the left reading: $j_k=\tfrac{n-1}{2}-(k-1)$ is an affine function of $k-1$, and the highest left weight is $(n-1)/2$. The **Peirce index** is the right reading: the right action of $H$ has the constant eigenvalue $\zeta^{l-1}$ on the minimal left ideal $M_nE_{ll}$, so that ideal carries the label $l-1$. The label is constant on the ideal and distinguishes copies; it is not a weight of $J_3$, not a spin, and not a chirality. The **grade** is the difference $k-l$, which is the weight of $\operatorname{ad}_{J_3}$ up to sign.
 
-The half-angle is not a fourth label. It is the exponential coordinate of the left weight on a spin-$\tfrac12$ carrier: when the left weights are $\pm\tfrac12$, the rotor $\exp(\tfrac{\theta}{2}u)$ acts with exponents $\pm\theta/2$, so the halved angle is the weight's exponential coordinate, not a separate definition of spin.
+**The even-$n$ grading is not the Peirce index.** At even $n$, $R_H^{m}=(-1)^{l-1}$ is constant on the ideal $M_nE_{ll}$: it labels the copy. The grading $\Gamma=L_H^{m}=\operatorname{diag}\bigl((-1)^{k-1}\bigr)$ acts on the carrier and splits it. The two are different operators, $L$ and $R$, and neither is a chirality.
+
+Spin and the Peirce index are independent labels of the same corner; the identity $L_{J_3}=\operatorname{ad}_{J_3}+R_{J_3}$ is the precise sense in which the adjoint grade is their difference and not a third independent label.
+
+The half-angle is not a fourth label. It is the exponential coordinate of the left weight on a spin-$\tfrac12$ carrier: when the left weights are $\pm\tfrac12$, the rotor $\exp(\tfrac{\theta}{2}u)$ acts with exponents $\pm\theta/2$, so the half-angle is the exponential coordinate of the weight, not a separate definition of spin.
 
 ## Spin, Carrier, Spinor
 
-**The word spin in this construction names the weight of the Peirce chain.** The chain of simple nilpotents generates an $\mathfrak{sl}_2$, the carrier is its irreducible module of highest weight $(n-1)/2$, and the adjoint decomposes into the modules of integer spin $0,1,\dots,n-1$. This is an algebraic statement about the frame; it uses no metric and no Clifford algebra.
+**The spin in this construction is the highest weight of $J_3$.** The chain of simple nilpotents generates an $\mathfrak{sl}_2$, the carrier is its irreducible module of highest weight $(n-1)/2$, and the adjoint decomposes into the modules of integer spin $0,1,\dots,n-1$. This is an algebraic statement about the frame; it uses no metric and no Clifford algebra.
 
-**The carrier is a spinor module only at $n=2$.** At $n=2$ the carrier is $\mathbb{C}^{2}=\operatorname{Sym}^{1}(\mathbb{C}^{2})$, of spin $\tfrac12$, and a spin-$\tfrac12$ module is what the word spinor denotes. At $n=4$ the chiral halves are spin-$\tfrac12$ modules and may be called spinors; the full carrier is spin $\tfrac32$ and is not. At $n=3,5$ the spin is $1,2$ and there is no spinor at all. At $n=6$ the chiral halves are spin $1$ and the full carrier is spin $\tfrac52$.
+**The carrier is a spinor module only at $n=2$.** At $n=2$ the carrier is $\mathbb{C}^{2}=\operatorname{Sym}^{1}(\mathbb{C}^{2})$, of spin $\tfrac12$, and a spin-$\tfrac12$ module is what the word spinor denotes. At $n=4$ the two graded halves are spin-$\tfrac12$ modules and may be called spinors; the full carrier is spin $\tfrac32$ and is not. At $n=3,5$ the spin is $1,2$ and there is no spinor at all. At $n=6$ the graded halves are spin $1$ and the full carrier is spin $\tfrac52$.
 
 **The carrier is not a Peirce corner.** The corner $A_{kl}$ has dimension $1$ for every $n$, while the carrier has dimension $n$; they never coincide in dimension for $n\ge2$. The corner is a space of maps between two lines, and the carrier is a space of vectors.
 
@@ -190,7 +194,7 @@ The half-angle is not a fourth label. It is the exponential coordinate of the le
 
 ## Summary
 
-The frame carries an $\mathfrak{sl}_2$ with $J_3=\sum_k\big(\tfrac{n+1}{2}-k\big)E_{kk}$ and $J_\pm=\sum_k\sqrt{k(n-k)}\,E_{k,k\pm1}$, with $[J_+,J_-]=2J_3$. The carrier is $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$, irreducible of spin $(n-1)/2$, with ladder coefficients $\sqrt{k(n-k)}$. The adjoint decomposes as $1+3+\cdots+(2n-1)$: the centre plus the traceless part, one irreducible summand per weight. On $E_{kl}$ the left action of $J_3$ has weight $j_k$, the right action has $j_l$, and the adjoint has $j_k-j_l$, so the spin is the left reading, the chirality is the right reading, and the grade is their difference. At even $n$ the chirality involution $\Gamma=H^{n/2}$ splits the carrier into two halves of dimension $n/2$, which the Peirce chain exchanges and the chiral algebra preserves. The carrier is a spinor module only at $n=2$, and at the chiral halves of $n=4$; otherwise it is the spin-$(n-1)/2$ module and should not be called a spinor.
+The frame carries an $\mathfrak{sl}_2$ with $J_3=\sum_k\big(\tfrac{n+1}{2}-k\big)E_{kk}$ and $J_\pm=\sum_k\sqrt{k(n-k)}\,E_{k,k\pm1}$, with $[J_+,J_-]=2J_3$. The carrier is $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$, irreducible of spin $(n-1)/2$, with ladder coefficients $\sqrt{k(n-k)}$. The adjoint decomposes as $1+3+\cdots+(2n-1)$: the centre plus the traceless part, one irreducible summand per weight. On $E_{kl}$ the left action of $J_3$ has weight $j_k$, the right action has $j_l$, and the adjoint has $j_k-j_l$, so the spin is the left reading, the Peirce index is the right reading, and the grade is their difference. At even $n$ the grading involution $\Gamma=H^{n/2}$ splits the carrier into two halves of dimension $n/2$, which the Peirce chain exchanges and the grading algebra preserves. The carrier is a spinor module only at $n=2$, and at the graded halves of $n=4$; otherwise it is the spin-$(n-1)/2$ module and should not be called a spinor.
 
 ## Summary of Notation
 
@@ -201,15 +205,15 @@ The frame carries an $\mathfrak{sl}_2$ with $J_3=\sum_k\big(\tfrac{n+1}{2}-k\big
 | $c_k=\sqrt{k(n-k)}$ | the ladder coefficient, $k=1,\dots,n-1$ |
 | $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$ | the carrier, of spin $(n-1)/2$ |
 | $V_{d}$ | the irreducible module of dimension $d$ |
-| $\Gamma=H^{n/2}$ | the chirality involution for even $n$ |
-| $\mathbb{C}^{m}_{\pm}$ | the two chiral halves, $m=n/2$ |
+| $\Gamma=H^{n/2}$ | the grading involution for even $n$ |
+| $\mathbb{C}^{m}_{\pm}$ | the two graded halves, $m=n/2$ |
 
 ## Further Reading
 
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for $\mathfrak{sl}_2$-modules, symmetric powers and weight multiplicities.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the adjoint action and the Jordan form.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the algebra and its trace form.
-- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the root and the grading that the chirality uses.
+- [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the root and the grading used at even $n$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the chain $N_k=E_{k,k+1}$ that becomes the ladder.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-mnc.html), for the corners that the carrier is not.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the biquaternion case at $n=2$, the only case of genuine spinors.

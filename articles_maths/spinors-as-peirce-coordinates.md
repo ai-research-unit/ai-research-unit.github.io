@@ -98,7 +98,7 @@ and $kE_{12}$ is a proper left-invariant subspace: $E_{11}E_{12}=E_{12}$, $E_{22
 
 **It is not defined by minimality.** The carrier is defined by the idempotent before any minimality is mentioned. The closure of $C(e)$ under left multiplication is a consequence of the product rule, and its minimality is a theorem about semisimple algebras, proved in *Primitive Idempotents and Minimal Left Ideals*. The order is: idempotent, carrier, coordinates, weight. Irreducibility is a theorem about the carrier; it is not the spinor condition, and the irreducible carrier of $M_3$ with $e=E_{11}$ is the counterexample.
 
-**The number of coordinates is not the spin.** A carrier of dimension $N$ over $k$ is not a spin-$N$ object. The spin is a weight of a frame root on the carrier, and it requires an $\mathfrak{sl}_2$ triple that the idempotent alone does not supply; the weight condition above is the part of that triple that the half-root supplies. That is the subject of *The Weight of a Frame Root and the Spin Quantum Number*.
+**The number of coordinates is not the spin.** A carrier of dimension $N$ over $k$ is not a spin-$N$ object. The spin is half the highest weight of a frame root on the carrier, and it requires an $\mathfrak{sl}_2$ triple that the idempotent alone does not supply; the weight condition above is the part of that triple that the half-root supplies. That is the subject of *The Weight of a Frame Root and the Spin Quantum Number*.
 
 ## Examples
 

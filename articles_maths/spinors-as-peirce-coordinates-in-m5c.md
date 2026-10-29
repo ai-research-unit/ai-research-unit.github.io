@@ -94,7 +94,7 @@ $$
 j=\frac{5-1}{2}=2 .
 $$
 
-This is the algebraic definition of the spin of the spinor: the highest weight of $J_3$ on the left space $M_5P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=5$ it gives $2$ and the column has $2j+1=5$ components.
+This is the definition of *The Spin of a Biquaternion* read on the spinor: the highest weight of $J_3=h/2$ on the left space $M_5P_l$. For $n=2$ it gives $j=\tfrac12$ and the column is the two-component spinor. For $n=5$ it gives $2$ and the column has $2j+1=5$ components.
 
 The column has five entries. Under the chain, $J_3$ has weights $2,1,0,-1,-2$, so the column is the spin-$2$ space. A balanced chiral split does not exist; a split $2+3$ requires an extra sign function.
 

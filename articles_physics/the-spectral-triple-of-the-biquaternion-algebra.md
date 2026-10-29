@@ -6,7 +6,7 @@ A spectral triple is a triple $(\mathcal{A},\mathcal{H},D)$ consisting of an alg
 
 This article asks whether the biquaternion algebra $\mathbb{B}$ supports such a triple, and what the framework's structures contribute to it. The findings are the following.
 
-1. **The algebra and the Hilbert space are already present, and the Dirac operator is the framework's.** The framework's algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, its spinor space is the module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ (or, in the field-theoretic setting, the square-integrable spinor fields on spacetime), and the operator is the biquaternion Dirac operator $\mathcal{D}=\tilde\nabla+m$ of *The Feynman Propagator in Biquaternionic Form*, with the linear, chirality-off-diagonal mass. A candidate triple therefore exists with no new objects introduced: $(\mathbb{B},L^2(\text{spinors}),\mathcal{D})$, or its commutative generalisation $C^\infty(M)\otimes\mathbb{B}$. What the article checks is which axioms this candidate satisfies and which it does not.
+1. **The algebra and the Hilbert space are already present, and the Dirac operator is the framework's.** The framework's algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. Its chiral spinor space is the Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ of *Chirality: The Conjugate Pair*, of complex dimension four (or, in the field-theoretic setting, the square-integrable sections of $\Delta$ on spacetime), and the operator is the biquaternion Dirac operator $\mathcal{D}=\tilde\nabla+D_F$ of *The Feynman Propagator in Biquaternionic Form*, with the off-diagonal mass. The algebra acts through its real form $\mathbb{B}_{\mathbb{R}}$, by the defining representation on $S$ and by the conjugate on $S^{\mathrm{c}}$. A candidate triple therefore exists: $(\mathbb{B}_{\mathbb{R}},L^2(\Delta),\mathcal{D})$, or its almost-commutative generalisation $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$. The simple module $S$ alone cannot carry the chirality: every $\mathbb{B}$-linear operator on it is scalar, so the only grading of $S$ is trivial; the two Peirce copies $S_+\cong S_-$ are copies, not chiral halves. What the article checks is which axioms this candidate satisfies and which it does not.
 
 2. **The framework's real structure $\flat$ is an antilinear involution, and this is the article's sharpest algebraic point.** The spectral triple's real structure $J$ is an antilinear operator whose sign $J^2=\pm1$, together with the two signs of its commutation with $D$ and with the chirality, fixes the triple's **KO-dimension** modulo eight. The framework's real structure is $\flat=-{}^{*}$, and it was verified explicitly that
 $$
@@ -46,29 +46,45 @@ whose signs fix the **KO-dimension** of the triple modulo eight, with $\chi$ the
 
 The candidate is assembled from objects the series already has.
 
-**The algebra.** $\mathcal{A}=\mathbb{B}$ acting on its module by left multiplication, or, for a field theory on a manifold, $\mathcal{A}=C^\infty(M)\otimes\mathbb{B}$ acting on sections of the associated bundle. The first is the finite case and the second is the almost-commutative case; the finite case is what the algebra alone can be checked against, and the second is what a physical model would need.
+**The algebra.** $\mathcal{A}=\mathbb{B}_{\mathbb{R}}$ acting on $\Delta$: by the defining representation on $S$ and by the conjugate representation on $S^{\mathrm{c}}$, so that $\mathcal{A}$ acts complex-linearly on the Hilbert space. For a field theory on a manifold, $\mathcal{A}=C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$ acting on sections of the associated bundle. The first is the finite case and the second is the almost-commutative case; the finite case is what the algebra alone can be checked against, and the second is what a physical model would need.
 
-**The Hilbert space.** $\mathcal{H}=$ the completion of the spinor module (or of the space of spinor fields) under the inner product induced by the plain form,
+**The Hilbert space.** $\mathcal{H}=$ the completion of $\Delta=S\oplus S^{\mathrm{c}}$ (or of the space of its sections) under the inner product induced by the plain form,
 $$
 \langle \tilde\Psi,\tilde\Phi\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde\Psi^{*}\tilde\Phi\big) = 2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde\Psi^{*}\tilde\Phi\big),
 $$
-which is the framework's real form on the module. The identification is worth recording: the triple's Hilbert space is not imported, because the framework's plain form already supplies an inner product on the module, and it is positive definite on the module by construction.
+which is the framework's real form on the module. The identification is worth recording: the triple's Hilbert space is not imported, because the framework's plain form already supplies an inner product on $\Delta$, and it is positive definite by construction. The regular module $S\oplus S$ is the vector-like carrier; its two summands are the Peirce copies, and they carry no chirality.
 
-**The operator.** $\mathcal{D}=\tilde\nabla+m$ with the linear, chirality-off-diagonal mass. Its two properties are exactly the two the definition asks for: it is self-adjoint with respect to the pairing above (the mass term being the framework's real-mass term), and its commutator with a multiplication operator is multiplication by the biquaternionic gradient of the multiplier, a zeroth-order operator and hence bounded on the smooth domain. Whether the resolvent is compact is the analytic question, and it is the same question as the finiteness of the determinant's spectrum: on a compact manifold the spectrum of $\mathcal{D}$ is discrete and its growth is linear, which is the dimension statement of the next sections.
-
-**The chirality.** The framework's chirality operator is the one that distinguishes the two minimal left ideals, and it is the triple's $\chi$. It is an involution in the algebraic sense, and its relation to $J$ is one of the three signs of the reality axiom.
-
-**The commutator with the algebra, and the first-order condition.** The operator's commutator with a left multiplication is computed directly. For $a\in\mathbb{B}$ acting by left multiplication $L_a$,
+**The operator.** $\mathcal{D}=\tilde\nabla+D_F$, where $D_F$ is the off-diagonal mass in the $S,S^{\mathrm{c}}$ blocks,
 $$
-[\mathcal{D},L_a]\tilde\Psi = \bar e_\mu\,\partial_\mu(a\tilde\Psi)-a\,\bar e_\mu\partial_\mu\tilde\Psi + R_{m}(a\tilde\Psi)-a\,R_{m}(\tilde\Psi) = L_{\bar e_\mu\partial_\mu a}\tilde\Psi ,
+D_F=\begin{pmatrix}0&m\\ \bar m&0\end{pmatrix}.
 $$
-because the mass term is a **right** multiplication $R_{m}$ and $R_{m}(a\tilde\Psi)=a\tilde\Psi m=aR_{m}(\tilde\Psi)$; the mass contributes nothing to $[\mathcal{D},L_a]$, and the commutator is the zeroth-order left multiplication by the biquaternion gradient of $a$ — bounded on the smooth domain, as the definition requires. The first-order axiom then holds exactly, since every left multiplication commutes with every right multiplication by associativity:
+It is self-adjoint with respect to the pairing above, and its commutator with a multiplication operator is multiplication by the biquaternionic gradient of the multiplier, a zeroth-order operator and hence bounded on the smooth domain. The mass is not $\mathbb{B}_{\mathbb{R}}$-linear for $m\neq0$: it is a pairing between inequivalent halves, not an element of the algebra. Whether the resolvent is compact is the analytic question, and it is the same question as the finiteness of the determinant's spectrum: on a compact manifold the spectrum of $\mathcal{D}$ is discrete and its growth is linear, which is the dimension statement of the next sections.
+
+**The chirality.** The triple's chirality is the central sign of the complexification,
+$$
+\chi=ij=\operatorname{diag}(-I_2,I_2)
+$$
+on $\Delta=S\oplus S^{\mathrm{c}}$, the nontrivial central involution of $\mathbb{B}[j]\cong\mathbb{B}\oplus\mathbb{B}$. It is an involution, it is self-adjoint, it commutes with the $\mathbb{B}_{\mathbb{R}}$ action, and it anticommutes with $D_F$. The Peirce index $P=R_{i\vec e_z}$ is not this operator: it grades $S_+\cong S_-\cong S$, two isomorphic copies. Its relation to $J$ is one of the three signs of the reality axiom.
+
+**The commutator with the algebra, and the first-order condition.** The gradient part of the commutator is computed directly. For $a\in\mathbb{B}_{\mathbb{R}}$ acting by $L_a$,
+$$
+[\tilde\nabla,L_a]\tilde\Psi = \bar e_\mu\,\partial_\mu(a\tilde\Psi)-a\,\bar e_\mu\partial_\mu\tilde\Psi = L_{\bar e_\mu\partial_\mu a}\tilde\Psi ,
+$$
+so the commutator is the zeroth-order left multiplication by the biquaternion gradient of $a$ — bounded on the smooth domain, as the definition requires.
+
+The mass does not drop out. In the $S,S^{\mathrm{c}}$ blocks $L_a=\operatorname{diag}(A,\bar A)$ and $D_F$ is off-diagonal, so
+$$
+[D_F,L_a]=\begin{pmatrix}0&m(\bar A-A)\\ \bar m(A-\bar A)&0\end{pmatrix},
+$$
+which is nonzero for a non-scalar $a$. The first-order condition $[[\mathcal{D},L_a],JbJ^{-1}]=0$ is therefore not automatic for the chiral triple, and it is not verified here.
+
+For the **vector-like** candidate on the regular module, the mass is the right multiplication $R_m$, which commutes with every left multiplication, and the mass drops out:
 $$
 \boxed{\;\big[\,[\mathcal{D},L_a],\,R_b\,\big] = 0\quad\text{for all } a,b\in\mathbb{B}\;},
 $$
-and this was verified numerically: $\|L_aR_b-R_bL_a\|$ is zero to machine precision (maximum absolute entry $1.99\times10^{-15}$ over fifty random pairs), and with the mass included the double commutator is likewise zero ($1.83\times10^{-15}$). The framework's right-multiplication mass, which was the article's suspected difficulty, is in fact invisible to the first-order condition for exactly the reason it is a right multiplication.
+and this was verified numerically: $\|L_aR_b-R_bL_a\|$ is zero to machine precision (maximum absolute entry $1.99\times10^{-15}$ over fifty random pairs), and with the mass included the double commutator is likewise zero ($1.83\times10^{-15}$). The vector-like copy flip is invisible to the first-order condition for the reason it is a right multiplication. That statement is about the regular module; it does not transfer to the chiral mass.
 
-**What the candidate does not supply.** The triple's *dimension* in the sense of the eigenvalue growth requires the manifold and the operator's ellipticity; the *finiteness* requires a projective module over the algebra and a connection on it; and *Poincaré duality* requires the $K$-theoretic pairing, which for a finite-dimensional algebra is algebraic but is not automatic. The algebra supplies the reality structure, the bounded-commutator property, and the first-order condition, and the next section examines the first of these in detail.
+**What the candidate does not supply.** The triple's *dimension* in the sense of the eigenvalue growth requires the manifold and the operator's ellipticity; the *finiteness* requires a projective module over the algebra and a connection on it; and *Poincaré duality* requires the $K$-theoretic pairing, which for a finite-dimensional algebra is algebraic but is not automatic. The *finite-space* choice is not automatic either: the simple module $S$ admits no nontrivial chiral grading, so the chiral triple needs $\Delta$ and the real form $\mathbb{B}_{\mathbb{R}}$. The algebra supplies the reality structure, the bounded-commutator property, and the vector-like first-order condition, and the next section examines the first of these in detail.
 
 ## The Real Structure and the KO-Dimension
 
@@ -101,9 +117,9 @@ The triple's dimension is read from the operator's spectrum, and the framework's
 $$
 \boxed{\;\mathrm{Tr}\,\exp(-t'D^2)\;\sim\;{t'}^{-d/2}\quad(t'\to0^+)\;},
 $$
-and the coefficients of the small-$t'$ expansion are the Seeley–DeWitt coefficients $a_k$ of the determinant article. The identification is exact: the divergent part of the trace is governed by $a_{d/2}$, and for the biquaternion Dirac operator on four-dimensional spacetime that coefficient is $a_2$, so the spectral dimension is $d=4$. The framework adds its multiplicity: the trace runs over the module, whose two complex dimensions multiply the density of eigenvalues, and the anisotropy of the level-2 metric does not enter because the triple is built on the Euclidean (or Riemannian) operator, the Euclidean rotation being the framework's sector identification of the functional-integral article.
+and the coefficients of the small-$t'$ expansion are the Seeley–DeWitt coefficients $a_k$ of the determinant article. The identification is exact: the divergent part of the trace is governed by $a_{d/2}$, and for the biquaternion Dirac operator on four-dimensional spacetime that coefficient is $a_2$, so the spectral dimension is $d=4$. The framework adds its multiplicity: the trace runs over the module, whose four complex dimensions multiply the density of eigenvalues, and the anisotropy of the level-2 metric does not enter because the triple is built on the Euclidean (or Riemannian) operator, the Euclidean rotation being the framework's sector identification of the functional-integral article.
 
-**What the framework contributes.** The dimension four is not derived from the algebra; it is the dimension of the manifold the operator differentiates. The framework's contribution is the same as in the determinant and anomaly articles: it names the space on which the trace is taken and counts its dimensions. It is worth saying plainly, because the spectral triple's literature sometimes reads a dimension out of a finite geometry, that here the finite algebra's module is two-complex-dimensional and the four-dimensionality comes from the differential operator.
+**What the framework contributes.** The dimension four is not derived from the algebra; it is the dimension of the manifold the operator differentiates. The framework's contribution is the same as in the determinant and anomaly articles: it names the space on which the trace is taken and counts its dimensions. It is worth saying plainly, because the spectral triple's literature sometimes reads a dimension out of a finite geometry, that here the finite algebra's module is four-complex-dimensional and the four-dimensionality comes from the differential operator.
 
 **The finite part.** A finite spectral triple — one with finite-dimensional $\mathcal{H}$ and bounded $D$ — has a compact resolvent trivially and a spectral dimension zero, since its spectrum is finite. The biquaternion algebra's finite triple is therefore of KO-dimension type but dimension zero in the spectral sense; a *dimensionful* triple requires the algebra $C^\infty(M)\otimes\mathbb{B}$ and a first-order elliptic operator. This is an important qualification: the framework's algebra alone does not give a four-dimensional spectral triple, and only the almost-commutative version does.
 
@@ -119,7 +135,7 @@ and for $\mathcal{A}=C^\infty(M)$ with $D$ the Dirac operator this reproduces th
 
 **The framework's analogous move.** The framework's metric is likewise an output: the Lorentzian signature is not postulated but is the level-1 biquaternion norm read on the material sector with the time coefficient written $ict'$, and the minus sign comes from $i^2=-1$ alone. The two constructions are different — one recovers a distance from a non-commutative algebra, the other recovers a signature from a biquaternion norm — but they have the same shape, and it is worth stating the similarity and its limit. The limit is that the framework's derivation is algebraic and finite-dimensional (the levels of the metric are the four complex coefficients of the biquaternion norm), whereas the spectral triple's is analytic and requires the operator's commutator norms. A reader should not conflate the two: the framework derives a signature, not a distance, and the spectral triple derives a distance, not a signature.
 
-**The almost-commutative case.** If one takes $\mathcal{A}=C^\infty(M)\otimes\mathbb{B}$, then the triple is almost commutative, and the distance formula recovers the product geometry $M\times F$ for a finite geometry $F$. Whether the biquaternion finite factor satisfies the axioms that select a physically interesting $F$ is the question of the next section, and this article does not answer it.
+**The almost-commutative case.** If one takes $\mathcal{A}=C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$, then the triple is almost commutative, and the distance formula recovers the product geometry $M\times F$ for a finite geometry $F$. Whether the biquaternion finite factor satisfies the axioms that select a physically interesting $F$ is the question of the next section, and this article does not answer it.
 
 ## Inner Fluctuations, Gauge Fields, and the Spectral Action
 
@@ -153,13 +169,15 @@ D = D_M\otimes I_F+\chi\otimes D_F ,
 $$
 with $D_M$ the Dirac operator of the manifold, $\chi$ the chirality, $D_F$ a finite matrix acting on $\mathcal{H}_F$, and the tensor product's cross term the only coupling. The construction's content is in the two fluctuation channels: inner fluctuations of $D_M$ give the gauge fields, and the off-diagonal part of $D_F$ gives the scalar (Higgs) field, while the spectral action of the previous section expands the whole in the heat-kernel coefficients. This is the standard almost-commutative framework (Connes 1996; Chamseddine and Connes 1997).
 
-**The finite operator is the framework's mass term.** For the biquaternion candidate, $\mathcal{A}_F=\mathbb{B}$ and $\mathcal{H}_F=\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$, so $D_F$ is a $2\times2$ matrix on the module. The requirement that $D_F$ be odd under the chirality — that it anticommute with $\chi$ — is exactly the structure of the series' mass term: the linear, chirality-off-diagonal mass is
+**The finite operator is the framework's mass term.** For the biquaternion candidate, $\mathcal{A}_F=\mathbb{B}_{\mathbb{R}}$ and $\mathcal{H}_F=\Delta=S\oplus S^{\mathrm{c}}\cong\mathbb{C}^4$, so $D_F$ is a $4\times4$ matrix with two $2\times2$ off-diagonal blocks. The requirement that $D_F$ be odd under the chirality — that it anticommute with $\chi$ — fixes the block form: the off-diagonal mass is
 $$
-D_F = \begin{pmatrix}0 & m\\ m & 0\end{pmatrix},
+D_F = \begin{pmatrix}0 & m\\ \bar m & 0\end{pmatrix},
 \qquad
-D_F\,\chi+\chi\,D_F = 0 ,
+\chi=\begin{pmatrix}-I_2&0\\0&I_2\end{pmatrix},
+\qquad
+D_F\,\chi+\chi\,D_F = 0 .
 $$
-where $\chi=\mathrm{diag}(1,-1)$ in the module's chiral basis. This was verified explicitly: the anticommutator vanishes identically, and $D_F^2=m^2I$ gives the two eigenvalues $\pm m$, the expected particle and antiparticle masses. The identification is exact and it is the article's second genuine point: **the series' chirality-off-diagonal mass term is a finite Dirac operator of an almost-commutative spectral triple**, and it is odd under the chirality for the same reason a finite geometry's $D_F$ is — it couples the two minimal left ideals and therefore the two chiralities.
+This was verified explicitly: the anticommutator vanishes identically, and $D_F^2=|m|^2I$ gives the two eigenvalues $\pm|m|$, the expected particle and antiparticle masses. The identification is exact: **the series' off-diagonal mass is a finite Dirac operator of an almost-commutative spectral triple**, and it is odd under the chirality because it couples $S$ to $S^{\mathrm{c}}$. It does **not** couple the two Peirce copies: that copy flip is $\mathbb{B}$-linear and is not the chiral mass.
 
 **Consequences.** Three consequences follow and are worth stating.
 
@@ -173,12 +191,12 @@ where $\chi=\mathrm{diag}(1,-1)$ in the module's chiral basis. This was verified
 
 **Established (framework and algebra).**
 
-- The biquaternion candidate triple: algebra $\mathbb{B}$ (or $C^\infty(M)\otimes\mathbb{B}$), Hilbert space the completion of the spinor module under the framework's plain form, operator $\mathcal{D}=\tilde\nabla+m$; the Hilbert space and the operator are the series' own objects and no new structure is introduced.
+- The biquaternion candidate triple: algebra $\mathbb{B}_{\mathbb{R}}$ (or $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$), Hilbert space the completion of $\Delta=S\oplus S^{\mathrm{c}}$ under the framework's plain form, operator $\mathcal{D}=\tilde\nabla+D_F$; the Hilbert space and the operator are the series' own objects and no new structure is introduced.
 - The framework's real structure satisfies $\flat^2=+1$ exactly: $\flat(\tilde Q)=-\tilde Q^{*}$ gives $\flat(\flat(\tilde Q))=\tilde Q$; verified on explicit quaternion matrices, so $\epsilon=+1$.
 - Four-dimensional Euclidean spin geometry's charge conjugation has $C^2=-1$: verified on the Hermitian Euclidean generators $\gamma^k=\left(\begin{smallmatrix}0&\sigma_k\\ \sigma_k&0\end{smallmatrix}\right)$, $\gamma^4=\mathrm{diag}(I_2,-I_2)$ with $\{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}I_4$, $(\gamma^5)^2=I_4$, where $C=\gamma^2\gamma^4$ gives $C^2=-I_4$ exactly and $C\gamma^5C^{-1}=\gamma^5$, with $C\gamma^\mu C^{-1}$ equal to $\pm(\gamma^\mu)^T$ — the sign depending on the index and on the representation, as it does in the standard normalisations. The framework's sign $\epsilon=+1$ and this $\epsilon=-1$ differ, and the difference requires the module's quaternionic structure (equivalently $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$) rather than the central circle: composition with a central phase leaves $\epsilon=+1$.
-- The commutator of $\mathcal{D}$ with a left multiplication is the zeroth-order left multiplication $L_{\bar e_\mu\partial_\mu a}$, hence bounded, and the right-multiplication mass contributes nothing to it; consequently the first-order condition $[[\mathcal{D},L_a],R_b]=0$ holds exactly.
-- The series' chirality-off-diagonal mass term is a finite Dirac operator: $D_F=\left(\begin{smallmatrix}0&m\\ m&0\end{smallmatrix}\right)$ anticommutes with the chirality $\chi=\mathrm{diag}(1,-1)$ and satisfies $D_F^2=m^2I$ with eigenvalues $\pm m$; both verified (anticommutator exactly $0$, square to $1.1\times10^{-16}$). The framework's mass is therefore the almost-commutative triple's finite part and not an added ingredient.
-- The finite algebra's module is two-complex-dimensional and its finite triple has spectral dimension zero; a dimension-four triple requires the almost-commutative algebra and a first-order elliptic operator. The spectral dimension and the heat-kernel coefficient $a_{d/2}$ are two interpretations of one small-$t'$ expansion.
+- The gradient part of the commutator of $\mathcal{D}$ with a left multiplication is the zeroth-order left multiplication $L_{\bar e_\mu\partial_\mu a}$, hence bounded. For the vector-like regular-module candidate the right-multiplication copy flip commutes with the left action, so the first-order condition $[[\mathcal{D},L_a],R_b]=0$ holds exactly. For the chiral triple, $[D_F,L_a]$ is nonzero and the condition is not checked here.
+- The series' off-diagonal mass is a finite Dirac operator: $D_F=\left(\begin{smallmatrix}0&m\\ \bar m&0\end{smallmatrix}\right)$ on $\Delta=S\oplus S^{\mathrm{c}}$ anticommutes with the chirality $\chi=\mathrm{diag}(-I_2,I_2)$ and satisfies $D_F^2=|m|^2I$ with eigenvalues $\pm|m|$; both verified (anticommutator exactly $0$, square to $1.1\times10^{-16}$). The framework's mass is therefore the almost-commutative triple's finite part and not an added ingredient.
+- The finite algebra's module $\Delta$ is four-complex-dimensional and its finite triple has spectral dimension zero; a dimension-four triple requires the almost-commutative algebra and a first-order elliptic operator. The spectral dimension and the heat-kernel coefficient $a_{d/2}$ are two interpretations of one small-$t'$ expansion.
 - The framework's metric-as-output (a signature from the level-1 form on the material sector) and the triple's distance formula (a distance from $D$) are similar in shape and different in content; the framework derives a signature, not a distance.
 
 **Standard, and transcribed.**
@@ -197,37 +215,37 @@ where $\chi=\mathrm{diag}(1,-1)$ in the module's chiral basis. This was verified
 
 **Open.**
 
-- Whether $C^\infty(M)\otimes\mathbb{B}$ with the framework's Dirac operator satisfies orientability and Poincaré duality is not checked here; the first-order condition, by contrast, does hold, and was verified. Orientability would require exhibiting a Hochschild cycle representing the volume form, and Poincaré duality the non-degeneracy of the $K$-theoretic intersection form — neither attempted here.
+- Whether $C^\infty(M)\otimes\mathbb{B}_{\mathbb{R}}$ with the framework's Dirac operator satisfies orientability and Poincaré duality is not checked here; the first-order condition holds for the vector-like regular-module candidate; for the chiral finite triple it is not checked. Orientability would require exhibiting a Hochschild cycle representing the volume form, and Poincaré duality the non-degeneracy of the $K$-theoretic intersection form — neither attempted here.
 - Whether the finite geometry selected by the biquaternion algebra is physically interesting — and whether the series' gauge-group content can be recovered as inner fluctuations — is a gauge-field-category question and is not addressed.
 - The exact sense in which the module's quaternionic structure supplies the $\epsilon=-1$ real structure of the triple is stated qualitatively (via $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$) and is not constructed explicitly.
 
 ## Summary
 
-The spectral triple of the biquaternion algebra is the candidate $(\mathbb{B},\mathcal{H},\mathcal{D})$, with $\mathcal{H}$ the completion of the spinor module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ under the trace pairing $\langle\tilde\Psi,\tilde\Phi\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Phi)$ and $\mathcal{D}=\tilde\nabla+m$ the framework's Dirac operator with the linear chirality-off-diagonal mass. The algebra's real structure is $\flat=-{}^{*}$, and
+The spectral triple of the biquaternion algebra is the candidate $(\mathbb{B}_{\mathbb{R}},\mathcal{H},\mathcal{D})$, with $\mathcal{H}$ the completion of the Dirac module $\Delta=S\oplus S^{\mathrm{c}}\cong\mathbb{C}^4$ under the trace pairing $\langle\tilde\Psi,\tilde\Phi\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Phi)$ and $\mathcal{D}=\tilde\nabla+D_F$ the framework's Dirac operator with the off-diagonal mass $D_F=\left(\begin{smallmatrix}0&m\\ \bar m&0\end{smallmatrix}\right)$. The algebra's real structure is $\flat=-{}^{*}$, and
 $$
 \flat^2 = +1 ,
 $$
-an antilinear involution with $\epsilon=+1$, whereas four-dimensional Euclidean spin geometry's charge conjugation has $C^2=-1$; both signs were verified explicitly, and the reconciliation requires the module's quaternionic structure, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, not the central circle. The bounded-commutator property holds — $[\mathcal{D},L_a]=L_{\bar e_\mu\partial_\mu a}$ — and the first-order condition $[[\mathcal{D},L_a],R_b]=0$ therefore holds exactly, the right-multiplication mass being invisible to it; both were verified to machine precision. The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t'D^2)\sim {t'}^{-d/2}$ and coincides with the Seeley–DeWitt data of the determinant and anomaly articles, giving $d=4$ for the almost-commutative triple and $d=0$ for the bare finite algebra; the distance formula's metric-as-output is the spectral triple's counterpart of the framework's signature-as-output, similar in shape and different in content; and inner fluctuations, the gauge group, and the spectral action $\mathrm{Tr}f(D_A/\Lambda)$ are the standard neighbouring construction, cited and not developed here.
+an antilinear involution with $\epsilon=+1$, whereas four-dimensional Euclidean spin geometry's charge conjugation has $C^2=-1$; both signs were verified explicitly, and the reconciliation requires the module's quaternionic structure, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$, not the central circle. The gradient part of the bounded-commutator property holds — $[\tilde\nabla,L_a]=L_{\bar e_\mu\partial_\mu a}$ — and the first-order condition $[[\mathcal{D},L_a],R_b]=0$ holds exactly for the vector-like regular-module candidate, the right-multiplication copy flip being invisible to it; both were verified to machine precision. For the chiral triple the mass is not $\mathbb{B}_{\mathbb{R}}$-linear, and the condition is not checked. The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-t'D^2)\sim {t'}^{-d/2}$ and coincides with the Seeley–DeWitt data of the determinant and anomaly articles, giving $d=4$ for the almost-commutative triple and $d=0$ for the bare finite algebra; the distance formula's metric-as-output is the spectral triple's counterpart of the framework's signature-as-output, similar in shape and different in content; and inner fluctuations, the gauge group, and the spectral action $\mathrm{Tr}f(D_A/\Lambda)$ are the standard neighbouring construction, cited and not developed here.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $(\mathcal{A},\mathcal{H},D)$ | Spectral triple: algebra, Hilbert space, Dirac operator |
-| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, the candidate $\mathcal{A}$ |
-| $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | Spinor module, the candidate $\mathcal{H}$ |
-| $\mathcal{D}=\tilde\nabla+m$ | Biquaternion Dirac operator, the candidate $D$ |
+| $\mathbb{B}_{\mathbb{R}}$ | Biquaternion algebra as a real algebra, the candidate $\mathcal{A}$ |
+| $\Delta=S\oplus S^{\mathrm{c}}\cong\mathbb{C}^4$ | Dirac module, the candidate $\mathcal{H}$ |
+| $\mathcal{D}=\tilde\nabla+D_F$ | Biquaternion Dirac operator, the candidate $D$ |
 | $\langle\tilde\Psi,\tilde\Phi\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Phi)$ | Inner product induced by the trace reading of the Hermitian form |
 | $J$ | Real structure of a spectral triple; antilinear |
 | $\epsilon,\epsilon_2,\epsilon_3$ | Signs $J^2=\epsilon$, $JD=\epsilon_2DJ$, $J\chi=\epsilon_3\chi J$ |
-| $\chi$ | Chirality operator of the triple |
+| $\chi=ij$ | Chirality operator of the triple, $\operatorname{diag}(-I_2,I_2)$ on $\Delta$ |
 | $\flat=-{}^{*}$ | The framework's real structure; $\flat^2=+1$ |
 | $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ | Quaternionic structure of the module |
 | $d(x,y)=\sup\{\vert\varphi(a)-\omega(a)\vert:\|[D,a]\|\le1\}$ | Distance formula |
 | $\mathrm{Tr}\,\exp(-t'D^2)\sim {t'}^{-d/2}$ | Heat-kernel growth; the spectral dimension |
 | $D_A=D+\sum a_i[D,b_i]$ | Inner fluctuation; the gauge field |
 | $\mathrm{Tr}\,f(D_A/\Lambda)$ | Spectral action |
-| $\mathcal{A}_F,\mathcal{H}_F,D_F$ | Finite algebra, finite Hilbert space, finite Dirac operator |
+| $\mathcal{A}_F,\mathcal{H}_F,D_F$ | Finite algebra $\mathbb{B}_{\mathbb{R}}$, finite Hilbert space $\Delta$, finite Dirac operator (the off-diagonal mass) |
 | $D=D_M\otimes I_F+\chi\otimes D_F$ | Product geometry of an almost-commutative triple |
 | $L_a,R_b$ | Left and right multiplication; $[L_a,R_b]=0$ |
 

@@ -284,7 +284,7 @@ $$
 
 and never mixes the two ideals. The two spinor spaces are the two null lines of the split form. The word spinor is algebraic: an element of a Peirce carrier, which here is a minimal left ideal. The weight of $S_\pm$ under the boost is $\pm\phi$, not $\pm\phi/2$. The Lorentz spinor of $SO^{+}(1,1)$, of weight $\pm\phi/2$, is a different module; it is not an element of $\mathbb{D}$.
 
-The two ideals are also the two Peirce components. They are not the two Lorentz chiralities; the algebra is two-dimensional, and its two invariant lines are the null lines of the vector representation. The distinction is the same as in the biquaternion, where the Peirce chiralities are not the Lorentz chiralities.
+The two ideals are also the two Peirce components. They are not the two Lorentz chiralities; the algebra is two-dimensional, and its two invariant lines are the null lines of the vector representation. The distinction is the same as in the biquaternion, where the Peirce copies are not the Lorentz chiralities.
 
 ### The Matrix Picture
 

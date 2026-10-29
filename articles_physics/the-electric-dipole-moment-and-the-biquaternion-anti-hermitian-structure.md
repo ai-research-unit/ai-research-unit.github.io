@@ -48,7 +48,7 @@ $$
 
 where $\boldsymbol{\sigma}$ are the Pauli matrices acting on the spin and the coefficient $d$ is the EDM. The explicit $i$ is required for a Hermitian Lagrangian, and it is the first appearance of the article's central point: the insertion is anti-Hermitian, and the coefficient must be multiplied by $i$ to give a real (Hermitian) interaction.
 
-**Discrete symmetries.** Under parity $\mathbf{P}$, the electric field is a vector ($\vec E\to-\vec E$) and the spin is a pseudovector ($\boldsymbol{\sigma}\to+\boldsymbol{\sigma}$), so $\vec E\cdot\boldsymbol{\sigma}\to-\vec E\cdot\boldsymbol{\sigma}$: the EDM term is $\mathbf{P}$-odd. Under time reversal $\mathbf{T}$, the electric field is $\mathbf{T}$-even and the spin is $\mathbf{T}$-odd, so the term is again odd. Under $\mathbf{C}$ the term is even. Hence the EDM is $\mathbf{P}$- and $\mathbf{T}$-odd, and by the CPT theorem it is $\mathbf{CP}$-odd: a nonvanishing $d$ requires a source of CP violation. The magnetic-moment term, $-\vec\mu\cdot\vec B$, is $\mathbf{P}$-even and $\mathbf{T}$-even, and the contrast is exact: the two operators differ by the presence of $\gamma_5$, which is the chirality operator and the source of the parity and CP properties.
+**Discrete symmetries.** Under parity $\mathbf{P}$, the electric field is a vector ($\vec E\to-\vec E$) and the spin vector is a pseudovector ($\boldsymbol{\sigma}\to+\boldsymbol{\sigma}$), so $\vec E\cdot\boldsymbol{\sigma}\to-\vec E\cdot\boldsymbol{\sigma}$: the EDM term is $\mathbf{P}$-odd. Under time reversal $\mathbf{T}$, the electric field is $\mathbf{T}$-even and the spin vector is $\mathbf{T}$-odd, so the term is again odd. Under $\mathbf{C}$ the term is even. Hence the EDM is $\mathbf{P}$- and $\mathbf{T}$-odd, and by the CPT theorem it is $\mathbf{CP}$-odd: a nonvanishing $d$ requires a source of CP violation. The magnetic-moment term, $-\vec\mu\cdot\vec B$, is $\mathbf{P}$-even and $\mathbf{T}$-even, and the contrast is exact: the two operators differ by the presence of $\gamma_5$, which is the chirality operator and the source of the parity and CP properties.
 
 **The dimension and the size.** The EDM has the dimensions of electric charge times length. In natural units, $d$ is dimensionless times a length, i.e. $[\mathrm{GeV}^{-1}]$; the conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$. For a fermion of mass $m_f$ and a new-physics scale $\Lambda$, the standard dimensional estimate of a CP-violating contribution is
 
@@ -116,7 +116,7 @@ $$
 \sigma^{0k}\gamma_5 = i\,\Sigma^k ,
 $$
 
-which was verified entry by entry: $\sigma^{01}\gamma_5 = i\,\mathrm{diag}(\sigma^1,\sigma^1)$, and similarly for the other two components. The identity shows both facts at once — that $\sigma^{0k}\gamma_5$ is $i$ times a Hermitian matrix (hence anti-Hermitian), and that the matrix it multiplies is the spin.
+which was verified entry by entry: $\sigma^{01}\gamma_5 = i\,\mathrm{diag}(\sigma^1,\sigma^1)$, and similarly for the other two components. The identity shows both facts at once — that $\sigma^{0k}\gamma_5$ is $i$ times a Hermitian matrix (hence anti-Hermitian), and that the matrix it multiplies is the spin matrix.
 
 Substituting into the Lagrangian, with $F_{0k}=E_k$ and the sum over $k$,
 

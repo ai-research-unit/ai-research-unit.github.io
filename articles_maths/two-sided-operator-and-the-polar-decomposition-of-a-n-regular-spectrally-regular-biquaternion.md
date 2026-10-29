@@ -358,7 +358,7 @@ $$
 $$
 and the left factor is $X\mapsto \Delta X$. The right factor is $X\mapsto X\Delta_*$, where $\Delta_*$ is the matrix of $\tilde Q^{*}$ in the same model. The first slot is the column index, a spinor slot; the second slot is the row index, the dual spinor slot.
 
-In this model the sandwich is $X\mapsto\Delta X\Delta_*$. A first-chirality spinor, in the Peirce sense, is a matrix whose second column is zero; the left factor acts by $\Delta$ on its first column, and the right factor then combines the two columns. A second-chirality spinor, in the Peirce sense, is a matrix whose first column is zero; the left factor acts by $\Delta$ on its second column, and the right factor again combines the columns. The one-sided operator is the column action alone; the sandwich is the column action followed by the row action.
+In this model the sandwich is $X\mapsto\Delta X\Delta_*$. A first-copy spinor, in the Peirce sense, is a matrix whose second column is zero; the left factor acts by $\Delta$ on its first column, and the right factor then combines the two columns. A second-copy spinor, in the Peirce sense, is a matrix whose first column is zero; the left factor acts by $\Delta$ on its second column, and the right factor again combines the columns. The one-sided operator is the column action alone; the sandwich is the column action followed by the row action.
 
 The two slots carry the two eigenvalues separately. The left multiplication $L_{\tilde Q}$ has spectrum $\{\lambda_+,\lambda_-\}$, each with multiplicity two. The right multiplication $R_{\tilde Q^{*}}$ has spectrum $\{\bar\lambda_+,\bar\lambda_-\}$, each with multiplicity two, because the eigenvalues of $\tilde Q^{*}$ are the conjugates of those of $\tilde Q$. The two operators commute,
 $$

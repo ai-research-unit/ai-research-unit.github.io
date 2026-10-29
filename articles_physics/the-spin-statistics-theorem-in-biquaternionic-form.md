@@ -16,7 +16,7 @@ The division between what is established and what is only transcribed is stated 
 
 The theorem has three independent inputs, and it is useful to record which of them the biquaternion framework supplies.
 
-1. **The Lorentz representation.** Spin is a label of a representation of the double cover $SL(2,\mathbb{C})$ of the restricted Lorentz group. The covering homomorphism has kernel $\{\pm e_t\}$, so a representation either descends to $SO^+(1,3)$ — the integer-spin case — or is a genuine two-valued representation of the cover — the half-integer-spin case.
+1. **The Lorentz representation.** Spin is the number $j$ of *The Spin of a Biquaternion*, read as the label of a representation of the double cover $SL(2,\mathbb{C})$ of the restricted Lorentz group. The covering homomorphism has kernel $\{\pm e_t\}$, so a representation either descends to $SO^+(1,3)$ — the integer-spin case — or is a genuine two-valued representation of the cover — the half-integer-spin case.
 2. **Locality (microcausality).** Observables at spacelike separation must commute. Fermion fields are not observables; their bilinears are. If the field anticommutes with itself at spacelike separation, the bilinears commute; if it commutes, the bilinears do not. So locality does not by itself forbid either bracket for a spinor field: it forbids one of them only in conjunction with positivity.
 3. **Positivity.** The inner product on the state space must be positive definite and the Hamiltonian bounded below. For a half-integer-spin field, commuting modes give negative-norm states and a Hamiltonian unbounded below; anticommuting modes give the positive-definite fermionic Fock space and a bounded Hamiltonian.
 

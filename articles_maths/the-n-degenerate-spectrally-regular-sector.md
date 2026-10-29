@@ -178,9 +178,9 @@ The zero coefficient is the only trace of the norm degeneracy in the Peirce data
 
 **The eigenbasis.** Since $B^2\neq0$, the root $\vec\Xi=-i\vec Q/B$ and the pair $(\tilde\Pi_+,\tilde\Pi_-)$ are defined, and the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ exists. The pair is the pair $\{\tilde\Pi,\tilde\Pi'\}$, with the labels fixed by the chosen square root; the construction in full generality is in *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Eigenbasis*, and its specialisation to $\Sigma_{11}$ is in *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners*. With the branch $B=-iQ_t$ one has $\lambda_+=c=2Q_t$, and the left action in the basis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ has the diagonal values $(c,c,0,0)$. The other branch exchanges the labels and gives $(0,0,c,c)$. The zero eigenvalue is carried by the two basis vectors of the $\lambda_-$-eigenspace $\tilde\Pi_-\mathbb{B}$, namely $\vec\Upsilon_+$ and $\tilde\Pi_-$; the spectral decomposition, by contrast, has one zero coefficient.
 
-## Spinors and Chirality
+## Spinors and the Peirce Index
 
-**Each spinor space is a Peirce carrier, a complex plane with a basis made of one idempotent and one nilpotent; in this sector it is also a minimal left ideal. In this sector one eigenvalue is zero, so left multiplication acts on each chirality as $\operatorname{diag}(c,0)$, and the second chirality is the right annihilator.**
+**Each spinor space is a Peirce carrier, a complex plane with a basis made of one idempotent and one nilpotent; in this sector it is also a minimal left ideal. In this sector one eigenvalue is zero, so left multiplication acts on each Peirce copy as $\operatorname{diag}(c,0)$, and the second Peirce copy is the right annihilator.**
 
 The two spinor spaces are
 $$
@@ -190,7 +190,7 @@ S_-=\mathbb{B}e_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}e_-,
 \qquad
 \mathbb{B}=S_+\oplus S_-,
 $$
-each of complex dimension two. A **spinor of first chirality** is an element of $S_+$, a **spinor of second chirality** an element of $S_-$. The labelling is the one of §*Peirce Data*, with the branch $B=-iQ_t$, so that $\lambda_+=c=2Q_t$ and $\lambda_-=0$. This is the specialisation of §*Spinors and Chirality* of *The Eigenbasis of a Spectrally Regular Biquaternion*.
+each of complex dimension two. A **spinor of the first Peirce copy** is an element of $S_+$, a **spinor of the second Peirce copy** an element of $S_-$. The labelling is the one of §*Peirce Data*, with the branch $B=-iQ_t$, so that $\lambda_+=c=2Q_t$ and $\lambda_-=0$. This is the specialisation of §*Spinors and the Peirce Index* of *The Eigenbasis of a Spectrally Regular Biquaternion*.
 
 ### The Left Action
 
@@ -199,7 +199,7 @@ $$
 \tilde Q_2=Q_{2,11}e_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}e_-,
 \qquad Q_{2,ij}\in\mathbb{C}.
 $$
-A spinor of first chirality is
+A spinor of the first Peirce copy is
 $$
 \xi_+=Q_{2,11}e_++Q_{2,21}\vec\Upsilon_+,
 $$
@@ -209,7 +209,7 @@ $$
 \qquad
 (Q_{2,11},Q_{2,21})\longmapsto(c\,Q_{2,11},0).
 $$
-A spinor of second chirality is
+A spinor of the second Peirce copy is
 $$
 \xi_-=Q_{2,12}\vec\Upsilon_-+Q_{2,22}e_-,
 $$
@@ -223,9 +223,9 @@ Thus
 $$
 L_{\tilde Q}|_{S_+}=L_{\tilde Q}|_{S_-}=\operatorname{diag}(c,0).
 $$
-Each chirality carries both eigenvalues, and one component of each is annihilated. This is the spinorial form of the Peirce matrix $\operatorname{diag}(c,0)$: the zero coefficient is a value on a component, not a missing direction.
+Each Peirce copy carries both eigenvalues, and one component of each is annihilated. This is the spinorial form of the Peirce matrix $\operatorname{diag}(c,0)$: the zero coefficient is a value on a component, not a missing direction.
 
-### The Right Action and Chirality
+### The Right Action and the Peirce Index
 
 Right multiplication by $\tilde Q=c\,e_+$ is
 $$
@@ -233,13 +233,13 @@ $$
 \qquad
 \xi_-\tilde Q=0\quad(\xi_-\in S_-),
 $$
-because $e_+$ acts as the identity on the right of $S_+$ and $S_-e_+=0$. Chirality is the right eigenvalue, as in the general article: here $R_{\tilde Q}$ is $c$ on $S_+$ and $0$ on $S_-$. The second chirality is therefore the right annihilator,
+because $e_+$ acts as the identity on the right of $S_+$ and $S_-e_+=0$. The Peirce index is the right eigenvalue, as in the general article: here $R_{\tilde Q}$ is $c$ on $S_+$ and $0$ on $S_-$. The second Peirce copy is therefore the right annihilator,
 $$
 S_-=\ker R_{\tilde Q}=B(\tilde Q),
 $$
 while the left annihilator $A(\tilde Q)=\ker L_{\tilde Q}$ is the other plane, spanned by $\vec\Upsilon_+$ and $e_-$, which is the $\lambda_-$-eigenspace of $L_{\tilde Q}$.
 
-The spinor spaces and the eigenspaces of $L_{\tilde Q}$ are transverse: each spinor space contains one vector of each eigenspace, and each eigenspace contains one vector of each spinor space. A chirality is therefore not an eigenspace of $L_{\tilde Q}$.
+The spinor spaces and the eigenspaces of $L_{\tilde Q}$ are transverse: each spinor space contains one vector of each eigenspace, and each eigenspace contains one vector of each spinor space. A Peirce copy is therefore not an eigenspace of $L_{\tilde Q}$.
 
 ### The Matrix Picture
 
@@ -258,7 +258,7 @@ $$
 \mathsf M_2^{Q}(\tilde Q)=
 \begin{pmatrix}c&0\\0&0\end{pmatrix}.
 $$
-The first column is $S_+$, the second is $S_-$, and the two rows are the two spectral eigenspaces of $L_{\tilde Q}$. A general element is a pair of spinors, one of each chirality, and is not itself a spinor.
+The first column is $S_+$, the second is $S_-$, and the two rows are the two spectral eigenspaces of $L_{\tilde Q}$. A general element is a pair of spinors, one of each Peirce copy, and is not itself a spinor.
 
 ## Multiplication
 
@@ -467,7 +467,7 @@ The sector is the idempotent sector. It is the set of non-zero scalar multiples 
 | $E_{12}=(\vec e_x+i\vec e_y)/2$ | the nilpotent of the mixed corner $\mathbb{B}_{+-}$ |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication, with $L_{\tilde Q}^2=2Q_tL_{\tilde Q}$ |
 | $A(\tilde Q)=\ker L_{\tilde Q}$ | the left annihilator, a right ideal |
-| $B(\tilde Q)=\ker R_{\tilde Q}$ | the right annihilator, a left ideal; equal to $S_-$ |\n| $S_\pm=\mathbb{B}e_\pm$ | the spinor spaces, the two chiralities |\n| $Q_{2,ij}$ | the coordinates of a general element in the eigenbasis |\n| $\mathsf M_2^{Q}$ | the matrix model attached to the eigenbasis |
+| $B(\tilde Q)=\ker R_{\tilde Q}$ | the right annihilator, a left ideal; equal to $S_-$ |\n| $S_\pm=\mathbb{B}e_\pm$ | the spinor spaces, the two Peirce copies |\n| $Q_{2,ij}$ | the coordinates of a general element in the eigenbasis |\n| $\mathsf M_2^{Q}$ | the matrix model attached to the eigenbasis |
 
 ## Further Reading
 

@@ -224,7 +224,7 @@ S_-=\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_-\oplus\mathbb{C}\tilde\Pi_-,
 \qquad
 \mathbb{B}=S_+\oplus S_- .
 $$
-A spinor of first chirality is an element of $S_+$; a spinor of second chirality is an element of $S_-$. In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$,
+A spinor of the first Peirce copy is an element of $S_+$; a spinor of the second Peirce copy is an element of $S_-$. In the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ of $S_+$,
 $$
 \xi_+=\alpha\,\tilde\Pi_++\beta\,\vec\Upsilon_+,
 \qquad
@@ -253,9 +253,9 @@ $$
 \boxed{\;[L_{\tilde Q}]=\begin{pmatrix}\Delta&0\\0&\Delta\end{pmatrix},
 \qquad \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}\; }.
 $$
-The one-sided operator therefore acts by the **same** diagonal matrix on the two spinor spaces and never mixes the two chiralities. The two copies are not an accident of notation: $S_+$ and $S_-$ are distinct minimal left ideals, and left multiplication preserves each of them separately. Neither $S_+$ nor $S_-$ is an eigenspace of $L_{\tilde Q}$: each carries both eigenvalues, and the eigenspaces of $L_{\tilde Q}$ are the right ideals $\tilde\Pi_\pm\mathbb{B}$ of §*The Eigenbasis*.
+The one-sided operator therefore acts by the **same** diagonal matrix on the two spinor spaces and never mixes the two Peirce copies. The two copies are not an accident of notation: $S_+$ and $S_-$ are distinct minimal left ideals, and left multiplication preserves each of them separately. Neither $S_+$ nor $S_-$ is an eigenspace of $L_{\tilde Q}$: each carries both eigenvalues, and the eigenspaces of $L_{\tilde Q}$ are the right ideals $\tilde\Pi_\pm\mathbb{B}$ of §*The Eigenbasis*.
 
-**The label is the Peirce index.** The words first and second chirality name the two Peirce components $S_+$ and $S_-$; they are a copy label, not a Lorentz chirality. Both components carry the same spinor representation, and the two Lorentz chiralities are the two tensor slots of §*The Weight Relation and the Two Copies*.
+**The label is the Peirce index.** The words first and second copy name the two Peirce components $S_+$ and $S_-$; they are a copy label, not a Lorentz chirality. Both components carry the same spinor representation, and the two Lorentz chiralities are the two tensor slots of §*The Weight Relation and the Two Copies*.
 
 In the eigenbasis matrix model $\mathsf M^{\tilde Q}$ — not the Pauli model $\mathsf M_2$ of §*Conventions* — with
 $$
@@ -270,7 +270,7 @@ S_+\longleftrightarrow\operatorname{span}\{E_{11},E_{21}\},
 \qquad
 S_-\longleftrightarrow\operatorname{span}\{E_{12},E_{22}\}.
 $$
-Multiplication by $\tilde Q$ is left multiplication by $\Delta$ on the matrix, hence the same $\Delta$ acts on each column. The two columns are the two chiralities; the one-sided operator sees one copy of $\Delta$ per column.
+Multiplication by $\tilde Q$ is left multiplication by $\Delta$ on the matrix, hence the same $\Delta$ acts on each column. The two columns are the two Peirce copies; the one-sided operator sees one copy of $\Delta$ per column.
 
 ## The Two Real Forms
 
@@ -742,7 +742,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 
 - [The Two-Sided Operator of a N-Regular, Spectrally Regular Biquaternion](two-sided-operator-and-the-polar-decomposition-of-a-n-regular-spectrally-regular-biquaternion.html), for the sandwich, the factor-by-factor doubling rule and the cancellation of the phase.
 - [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the operator exponential, the half-spin theorem and the weights.
-- [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two chiral spinor spaces and the diagonal action used here.
+- [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two Peirce spinor spaces and the diagonal action used here.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four exponents read against the six remarkable subspaces and the sector blocks, and §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the infinitesimal split of the rotor and the boost.

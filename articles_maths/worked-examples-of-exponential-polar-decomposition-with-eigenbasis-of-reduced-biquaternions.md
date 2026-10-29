@@ -46,7 +46,7 @@ which is the matrix form of $\breve Q=C_+\Pi_++C_-\Pi_-$.
 $$
 [L_{\breve Q_2}]=\begin{pmatrix}A_1&0\\0&A_2\end{pmatrix}.
 $$
-Its first column $A_1\Pi_+$ is a spinor of first chirality and its second column $A_2\Pi_-$ a spinor of second chirality. On $S_+$ multiplication by $\breve Q$ is the scalar $C_+$ and on $S_-$ it is the scalar $C_-$.
+Its first column $A_1\Pi_+$ is a spinor of the first Peirce copy and its second column $A_2\Pi_-$ a spinor of the second Peirce copy. On $S_+$ multiplication by $\breve Q$ is the scalar $C_+$ and on $S_-$ it is the scalar $C_-$.
 
 **Case by case.** The two basis matrices $[L_{\Pi_+}]$ and $[L_{\Pi_-}]$ are the same in all eight cases, because the idempotents do not depend on the element. In every case $\breve Q=C_+\Pi_++C_-\Pi_-$, so the Peirce components are $\breve Q\Pi_+=C_+\Pi_+$ and $\breve Q\Pi_-=C_-\Pi_-$, and the matrix is diagonal.
 
@@ -75,7 +75,7 @@ In cases 2, 3 and 7 the two eigenvalues coincide, so the element is a complex sc
 $$
 [L_{\breve Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
-the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
+the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second column $a_2\Pi_-$ a spinor of the second Peirce copy. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
 
 ### Case 2: $1+i$
 
@@ -87,7 +87,7 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 $$
 [L_{\breve Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
-the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
+the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second column $a_2\Pi_-$ a spinor of the second Peirce copy. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
 
 ### Case 3: $i$
 
@@ -99,7 +99,7 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 $$
 [L_{\breve Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
-the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
+the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second column $a_2\Pi_-$ a spinor of the second Peirce copy. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
 
 ### Case 4: $ij$
 
@@ -111,7 +111,7 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 $$
 [L_{\breve Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
-the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
+the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second column $a_2\Pi_-$ a spinor of the second Peirce copy. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
 
 ### Case 5: $j$
 
@@ -123,7 +123,7 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 $$
 [L_{\breve Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
-the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
+the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second column $a_2\Pi_-$ a spinor of the second Peirce copy. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
 
 ### Case 6: $\tfrac54+\tfrac34j$
 
@@ -135,7 +135,7 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 $$
 [L_{\breve Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
-the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
+the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second column $a_2\Pi_-$ a spinor of the second Peirce copy. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
 
 ### Case 7: $-1$
 
@@ -147,7 +147,7 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 $$
 [L_{\breve Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
-the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
+the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second column $a_2\Pi_-$ a spinor of the second Peirce copy. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
 
 ### Case 8: $1+j$
 
@@ -159,7 +159,7 @@ the first column $a_1\Pi_+$ is a spinor of first chirality and the second column
 $$
 [L_{\breve Q_2}]=\begin{pmatrix}a_1&0\\0&a_2\end{pmatrix};
 $$
-the first column $a_1\Pi_+$ is a spinor of first chirality and the second column $a_2\Pi_-$ a spinor of second chirality. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
+the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second column $a_2\Pi_-$ a spinor of the second Peirce copy. For $\breve Q$ itself the coordinates are $(a_1,a_2)=(C_+,C_-)$.
 
 ## Summary
 

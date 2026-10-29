@@ -81,7 +81,7 @@ For the special case in which the parameter space is a sphere of directions and 
 
 ### The Coadjoint Orbit
 
-The classical spin is a point of the coadjoint orbit of the rotation group. In the algebra it is a real pure quaternion
+The classical spin vector is a point of the coadjoint orbit of the rotation group. In the algebra it is a real pure quaternion
 
 $$
 \tilde S\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-,\qquad \langle\tilde S\rangle_{\natural}=\vec S^2=S^2 ,
@@ -145,7 +145,7 @@ $$
 =2\pi(1-\cos\theta_0)=\Omega\;},
 $$
 
-the **solid angle** subtended by the cycle of directions. This is Hannay's angle for the classical spin: it equals the solid angle of the loop on the sphere of directions.
+the **solid angle** subtended by the cycle of directions. This is Hannay's angle for the classical spin vector: it equals the solid angle of the loop on the sphere of directions.
 
 ### Parallel Transport and the Holonomy
 
@@ -283,7 +283,7 @@ The one place where the quantum counterpart enters the discussion is the formula
 Hannay's angle is the classical geometric phase of an adiabatically cycled system, and in the biquaternion algebra it is the holonomy of the rotor that carries a fixed axis to the slowly varying direction.
 
 - Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\Delta\theta_k=-\partial/\partial I_k\,\oint\mathcal A_\mu dR^\mu$, the action-derivative of the Berry phase.
-- The classical spin is a point of the coadjoint orbit $\langle\tilde S\rangle_{\natural}=S^2$, with $H=\vec\omega\cdot\vec S$ generating the rotor flow $d\vec S/dt'=\vec\omega\times\vec S$.
+- The classical spin vector is a point of the coadjoint orbit $\langle\tilde S\rangle_{\natural}=S^2$, with $H=\vec\omega\cdot\vec S$ generating the rotor flow $d\vec S/dt'=\vec\omega\times\vec S$.
 - The direction $\vec u_x=\tilde u\vec e_z\tilde u^{*}$ defines a rotor field; the geodesic (shortest) rotor is $\tilde u_g=\cos\frac{\theta_0}{2}+\sin\frac{\theta_0}{2}\vec u_y$ with $\vec u_y$ in the plane perpendicular to $\vec e_z$, and its body-frame twist about the direction is $\omega_b^{\parallel}=-(1-\cos\theta_0)d\phi/dt'$, so that the Hannay angle is $-\oint\omega_b^{\parallel}dt'=\Omega$.
 - Integrating the twist around a cycle of solid angle $\Omega$ gives Hannay's angle $\Delta\theta_{\mathrm{Hannay}}=\Omega$, the holonomy of the connection $\mathcal A=(1-\cos\theta)d\phi$ with curvature $\sin\theta\,d\theta\wedge d\phi$.
 - The exact rotating-frame solution of the uniformly precessing field gives the same $\Omega$.

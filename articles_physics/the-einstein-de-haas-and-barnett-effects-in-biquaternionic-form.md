@@ -22,7 +22,7 @@ $$
 \gamma = g\,\frac{ϙ}{2m},
 $$
 
-with $\vec S$ the spin angular momentum of the carrier and $\gamma$ its gyromagnetic ratio. The moment and the spin are parallel for a positive $g$ and antiparallel for a negative one; the electron, with $ϙ = -e$ and $g\approx 2$, has its moment antiparallel to its spin. In the biquaternion algebra both are material axial vectors,
+with $\vec S$ the spin angular momentum of the carrier and $\gamma$ its gyromagnetic ratio. The moment and the spin vector are parallel for a positive $g$ and antiparallel for a negative one; the electron, with $ϙ = -e$ and $g\approx 2$, has its moment antiparallel to its spin vector. In the biquaternion algebra both are material axial vectors,
 
 $$
 \vec\mu = \mu_k\vec e_k,
@@ -171,7 +171,7 @@ The historical outcome of the measurement is the part relevant here. The measure
 
 ### The Rotating Frame
 
-The inverse effect is the magnetization of a rotating body. Let the body rotate with angular velocity $\vec\omega$, and let the analysis be performed in the frame that rotates with it. In that frame the spin is at rest, and the only change from the laboratory description is the rotation of the frame itself. The spin's equation of motion in the rotating frame is obtained from the Larmor equation of the companion article *Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form* by subtracting the frame's rotation,
+The inverse effect is the magnetization of a rotating body. Let the body rotate with angular velocity $\vec\omega$, and let the analysis be performed in the frame that rotates with it. In that frame the spin vector is at rest, and the only change from the laboratory description is the rotation of the frame itself. The spin's equation of motion in the rotating frame is obtained from the Larmor equation of the companion article *Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form* by subtracting the frame's rotation,
 
 $$
 d\vec S_{\rm rot}/dt' = \gamma\,\vec S\times\vec B - \vec\omega\times\vec S
@@ -249,7 +249,7 @@ Because the reciprocity is exact for the coupling, both effects measure the same
 
 ## Relation to the Quantum Treatment
 
-The spin is treated here as an intrinsic angular momentum of the body, precessing classically in the effective field and coupling to the body by conservation of total angular momentum. The quantum treatment of the same spin is given in the companion articles *Spin-1/2 Quantum Physics in Biquaternionic Form* and *Exercise: Spin Precession in a Magnetic Field*, where the spin is an $\mathbb{M}_+$ observable and the precession is the evolution of an idempotent. The spin-rotation coupling $-\vec\Omega\cdot\vec S$ is the same operator in both descriptions; what the classical treatment adds is that the rotation of the *body* is a material rotor, not a state, and what the quantum treatment adds is the state and the Born rule. The reciprocal pair of effects is classical in its kinematics — conservation of angular momentum and the rotating frame suffice — and it is the same in the two descriptions.
+The spin vector is treated here as an intrinsic angular momentum of the body, precessing classically in the effective field and coupling to the body by conservation of total angular momentum. The quantum treatment of the same spin is given in the companion articles *Spin-1/2 Quantum Physics in Biquaternionic Form* and *Exercise: Spin Precession in a Magnetic Field*, where the spin is an $\mathbb{M}_+$ observable and the precession is the evolution of an idempotent. The spin-rotation coupling $-\vec\Omega\cdot\vec S$ is the same operator in both descriptions; what the classical treatment adds is that the rotation of the *body* is a material rotor, not a state, and what the quantum treatment adds is the state and the Born rule. The reciprocal pair of effects is classical in its kinematics — conservation of angular momentum and the rotating frame suffice — and it is the same in the two descriptions.
 
 ## Summary
 
