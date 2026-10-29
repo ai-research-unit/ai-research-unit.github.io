@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Skew Part of an Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-skew-part-of-an-algebra"><strong>The Skew Part of an Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>An involution of an algebra selects the elements it negates: the <strong>skew part</strong> $K(A) = A^-$, whose elements satisfy $k^* = -k$. The selection is not a subalgebra in the ordinary sense, because the product of two skew elements need not be skew; it is closed under the commutator $[x,y] = xy - yx$, so it is a Lie algebra, and it is stable under the symmetrised product with the self-adjoint part, so the pair of the two parts carries the two products of the involution. Together the two parts form a $\mathbb{Z}/2$-graded Lie algebra, and the skew part is the tangent space of the unitary group at the identity.</p>
+<p>This article develops the skew part, the commutator and the Lie algebra it defines, the graded Lie algebra formed with the self-adjoint part, the module structure over the Jordan algebra $H(A)$, the tangent space of the unitary group, the Cayley transform, and the standard examples of the alternating matrices with the transpose and of the skew-Hermitian matrices with the conjugate transpose. The involution and the decomposition $A = A^+ \oplus A^-$ are <em>Involutive Algebras</em>; the self-adjoint part and its Jordan structure are <em>The Self-Adjoint Part of an Algebra</em>, in <em>Symmetric Algebras</em>; the Lie algebras, their structure theory and their graded version are <em>Lie Algebras</em> and <em>Graded Lie Algebras and Lie Superalgebras</em>; the unitary elements are <em>Unitary Elements of an Involutive Algebra</em>; and the operator $\operatorname{ad}_x$ is <em>The Commutator Operator</em>.</p>
+<p>Throughout, $k$ is a field of characteristic not two, $A$ is a unital associative $k$-algebra, $\sigma$ is an involution of $A$, and the image of an element is written $x^* = \sigma(x)$. The self-adjoint part is $H(A) = A^+ = \{h : h^* = h\}$, the skew part is $K(A) = A^- = \{k : k^* = -k\}$, the commutator is $[x,y] = xy - yx$, and the symmetrised product is $x \bullet y = \tfrac12(xy + yx)$.</p>
+<h2 id="the-skew-part">The Skew Part</h2>
+<h3 id="definition-and-the-decomposition">Definition and the Decomposition</h3>
+<p><strong>Definition.</strong> The <strong>skew part</strong> of $(A,\sigma)$ is</p>
+<p>$$
+K(A) = A^- = \{k \in A : k^* = -k\},
+$$</p>
+<p>the <strong>self-adjoint part</strong> is $H(A) = A^+ = \{h \in A : h^* = h\}$, the <strong>commutator</strong> is $[x,y] = xy - yx$, and the <strong>symmetrised product</strong> is $x \bullet y = \tfrac12(xy + yx)$.</p>
+<p><strong>Proposition.</strong> $K(A)$ and $H(A)$ are $k$-linear subspaces with</p>
+<p>$$
+\boxed{\;A = K(A) \oplus H(A), \qquad x = \tfrac12(x - x^*) + \tfrac12(x + x^*)\;},
+$$</p>
+<p>and the involution acts as minus the identity on $K(A)$ and as the identity on $H(A)$; the two spaces are the eigenspaces of $\sigma$ for the eigenvalues $-1$ and $1$.</p>
+<p><em>Proof.</em> The involution is linear of order two, so its eigenvalues lie in $\{1,-1\}$; the averaging decomposition displayed is legitimate because $2$ is invertible, and the two summands are the negated and the fixed elements. The sum is direct because an element that is both fixed and negated satisfies $x = -x$, hence $x = 0$.</p>
+<h3 id="the-product-inclusions">The Product Inclusions</h3>
+<p><strong>Proposition.</strong> The commutator and the symmetrised product satisfy</p>
+<p>$$
+\boxed{\;[H,H] \subseteq K, \qquad [H,K] \subseteq H, \qquad [K,K] \subseteq K\;},
+$$</p>
+<p>$$
+\boxed{\;H \bullet H \subseteq H, \qquad K \bullet K \subseteq H, \qquad H \bullet K \subseteq K\;}.
+$$</p>
+<p><em>Proof.</em> For self-adjoint $x$ and $y$, $(xy)^* = yx$ and $(yx)^* = xy$, so $[x,y]^* = (xy - yx)^* = yx - xy = -[x,y]$ and $x \bullet y$ is fixed. For self-adjoint $x$ and skew $y$, $(xy)^* = (-y)x = -yx$ and $(yx)^* = x(-y) = -xy$, so $[x,y]^* = -yx + xy = [x,y]$ and $x \bullet y$ is negated. For skew $x$ and $y$, $(xy)^* = (-y)(-x) = yx$ and $(yx)^* = xy$, so $[x,y]^* = yx - xy = -[x,y]$ and $x \bullet y$ is fixed.</p>
+<h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
+<h3 id="the-commutator-on-the-skew-part">The Commutator on the Skew Part</h3>
+<p><strong>Definition.</strong> On $A$ the <strong>commutator</strong> is $[x,y] = xy - yx$; it is $k$-bilinear, alternating, $[x,x] = 0$, and it satisfies the Jacobi identity</p>
+<p>$$
+[x,[y,z]] + [y,[z,x]] + [z,[x,y]] = 0 ,
+$$</p>
+<p>so $A$ with the commutator is a Lie algebra over $k$ in the sense of <em>Lie Algebras</em>.</p>
+<p><strong>Theorem.</strong> $K(A)$ is a Lie subalgebra of $A$ under the commutator, and the bracket makes $K(A) \oplus H(A)$ a $\mathbb{Z}/2$-graded Lie algebra with the compatible grading of <em>Graded Lie Algebras and Lie Superalgebras</em>, the even part being $K(A)$ and the odd part $H(A)$.</p>
+<p><em>Proof.</em> The closure $[K,K] \subseteq K$ is the third inclusion of the proposition, and the Jacobi identity is inherited from the associativity of the product of $A$, as in <em>Lie Algebras</em>, §<em>The Commutator Bracket</em>. The remaining two inclusions $[K,H] \subseteq H$ and $[H,H] \subseteq K$ are the other two lines, so the bracket respects the parity with $\deg K = 0$ and $\deg H = 1$.</p>
+<p><strong>Corollary.</strong> $H(A)$ is a <strong>Lie triple system</strong> under</p>
+<p>$$
+\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]] ,
+$$</p>
+<p>and the triple product is again self-adjoint.</p>
+<p><em>Proof.</em> $[h_2,h_3] \in K$ and $[h_1,K] \subseteq H$, so the triple lies in $H$; the Lie triple system axioms are the Jacobi identity applied three times.</p>
+<p><strong>Remark (the sign).</strong> The grading here is the compatible one and not the Koszul signed one: the bracket is the commutator, which is alternating on the whole algebra, so for two odd elements it is antisymmetric, whereas a super Lie bracket would be symmetric there. The signed reading, with the anticommutator on the odd part, is <em>Graded Lie Algebras and Lie Superalgebras</em>.</p>
+<h3 id="the-adjoint-action">The Adjoint Action</h3>
+<p><strong>Definition.</strong> For $x \in A$ the <strong>adjoint action</strong> is</p>
+<p>$$
+\operatorname{ad}_x : A \longrightarrow A, \qquad \operatorname{ad}_x(y) = [x,y] .
+$$</p>
+<p><strong>Proposition.</strong> For $x \in K(A)$ the operator $\operatorname{ad}_x$ preserves $K(A)$ and $H(A)$, is a derivation of $A$, and the map $x \mapsto \operatorname{ad}_x$ is a homomorphism of Lie algebras $K(A) \to \operatorname{Der}(A)$ whose kernel is $K(A) \cap Z(A)$.</p>
+<p><em>Proof.</em> The preservation is the proposition above. The derivation identity is $\operatorname{ad}_x(yz) = xyz - yzx = (xy - yx)z + y(xz - zx) = \operatorname{ad}_x(y)z + y\operatorname{ad}_x(z)$, using associativity. The bracket of the operators is $\operatorname{ad}_{[x,y]} = [\operatorname{ad}_x,\operatorname{ad}_y]$, which is the Jacobi identity; the kernel is the set of $x$ with $[x,y] = 0$ for all $y$, that is $K(A) \cap Z(A)$. The operator theory of $\operatorname{ad}_x$ is <em>The Commutator Operator</em>.</p>
+<h3 id="the-module-structure-over-the-jordan-algebra">The Module Structure over the Jordan Algebra</h3>
+<p><strong>Proposition.</strong> Under the symmetrised product, $K(A)$ is stable under multiplication by $H(A)$,</p>
+<p>$$
+H(A) \bullet K(A) \subseteq K(A), \qquad H(A) \bullet H(A) \subseteq H(A), \qquad K(A) \bullet K(A) \subseteq H(A),
+$$</p>
+<p>so the pair $\bigl(H(A),K(A)\bigr)$ carries the two products.</p>
+<p><em>Proof.</em> The three inclusions are the second display of the proposition above. The pair is the <strong>Jordan pair</strong> of the involution; the verification of the remaining module axioms is the computation linking the two products, and the structure theory of Jordan pairs belongs to <em>Jordan Algebras</em>.</p>
+<h2 id="the-tangent-space-of-the-unitary-group">The Tangent Space of the Unitary Group</h2>
+<p><strong>Theorem.</strong> The skew elements are the elements that make $1 + tx$ unitary to first order in $t$: expanding</p>
+<p>$$
+(1+tx)^*(1+tx) = 1 + t(x + x^*) + t^2 x^*x
+$$</p>
+<p>shows that the coefficient of $t$ vanishes exactly when $x^* = -x$, that is exactly when $x$ is skew. Consequently $K(A)$ is the algebraic tangent space of the unitary group $\mathrm{U}(A)$ at the identity, and the Lie bracket of two skew elements is the second-order shadow of the group commutator: the coefficient of the leading term in the expansion of $(1+tx)(1+ty)(1+tx)^{-1}(1+ty)^{-1}$ lies in the span of $[x,y]$.</p>
+<p><em>Proof.</em> The expansion displayed is the definition of the product; the linear term vanishes exactly for $x^* = -x$. For the second statement one expands the four factors to second order; the quadratic part involves $[x,y]$ and the identities $x^* = -x$, $y^* = -y$, and it is the standard identification of the bracket with the commutator of the group, whose totality belongs to the theory of <em>Involutive Groups</em> and of the linear groups of Part II.</p>
+<p><strong>Corollary.</strong> For every unitary $u$ the elements $u + u^*$ and $u u^*$ are self-adjoint, and $u - u^*$ is skew. The unitary elements therefore decompose in the affine form</p>
+<p>$$
+\boxed{\;u = \tfrac12(u + u^*) + \tfrac12(u - u^*)\;},
+$$</p>
+<p>the first summand self-adjoint and the second skew, which is the decomposition $A = A^+\oplus A^-$ applied to $u$.</p>
+<h2 id="the-cayley-transform">The Cayley Transform</h2>
+<p><strong>Proposition.</strong> Let $\kappa$ be a skew element with $1 - \kappa$ invertible, and set</p>
+<p>$$
+\boxed{\;u = (1+\kappa)(1-\kappa)^{-1}\;} .
+$$</p>
+<p>Then $u$ is unitary, and its inverse is $(1-\kappa)(1+\kappa)^{-1}$. In particular the unitary group contains the image of the Cayley transform of the skew elements, and the transform is the algebraic substitute for the exponential of the Lie algebra: its first-order term at $\kappa = 0$ is $2\kappa$.</p>
+<p><em>Proof.</em> Compute $u^* = \bigl((1-\kappa)^{-1}\bigr)^*(1+\kappa)^*$. Since $(1-\kappa)^* = 1 + \kappa$ and $(1+\kappa)^* = 1-\kappa$, and since the involution reverses inverses, $u^* = (1+\kappa)^{-1}(1-\kappa)$. The factors $1+\kappa$ and $1-\kappa$ commute, so</p>
+<p>$$
+u^*u = (1+\kappa)^{-1}(1-\kappa)(1+\kappa)(1-\kappa)^{-1} = (1+\kappa)^{-1}(1-\kappa^2)(1-\kappa)^{-1} = (1+\kappa)^{-1}(1+\kappa)(1-\kappa)(1-\kappa)^{-1} = 1,
+$$</p>
+<p>and the same computation with the factors in the other order gives $uu^* = 1$. The derivative statement is the expansion $u = (1+\kappa)(1 + \kappa + \kappa^2 + \cdots) = 1 + 2\kappa + O(\kappa^2)$ for nilpotent or small $\kappa$.</p>
+<p>The exponential $\exp(\kappa)$ is not available in a bare $k$-algebra; the formal series identifies the Lie algebra of the skew elements with the unitary group, as in the theory of the linear groups, and the convergent reading belongs to <em>Hilbert Algebras</em> and to Part II.</p>
+<h2 id="the-examples">The Examples</h2>
+<h3 id="the-transpose-on-a-matrix-algebra">The Transpose on a Matrix Algebra</h3>
+<p>Let $A = M_n(k)$ with $X^* = X^{\mathsf{T}}$ and $2 \neq 0$. The skew part is the space of the alternating matrices, of dimension $n(n-1)/2$, and the theorem says that the commutator of two alternating matrices is alternating; for $n = 3$ they form a three-dimensional Lie algebra, the Lie algebra $\mathfrak{so}_3$ of the orthogonal group. The self-adjoint part is the space of the symmetric matrices, of dimension $n(n+1)/2$, and the two dimensions add to $n^2$, as the decomposition requires.</p>
+<h3 id="the-conjugate-transpose-on-a-complex-matrix-algebra">The Conjugate Transpose on a Complex Matrix Algebra</h3>
+<p>Let $A = M_n(\mathbb{C})$ with the conjugate transpose $X^* = \overline{X}^{\mathsf{T}}$. The skew part is the space of the skew-Hermitian matrices, the Lie algebra $\mathfrak{u}_n$ of the unitary group in the real reading; the self-adjoint part is the space of the Hermitian matrices. The scalars here are the complex numbers with the conjugation, so the involution on $A$ is $\varsigma$-semilinear; the Hermitian form and the positive definiteness of the self-adjoint part belong to <em>Hilbert Algebras</em>.</p>
+<h3 id="the-trivial-involution">The Trivial Involution</h3>
+<p>Let $\sigma = \mathrm{id}_A$. Then $K(A) = 0$ and $H(A) = A$; the skew part vanishes and the Lie algebra is the zero algebra.</p>
+<h3 id="the-inversion-on-a-group-algebra">The Inversion on a Group Algebra</h3>
+<p>Let $A = k[G]$ with the involution $g^* = g^{-1}$. Then the skew part is spanned by the differences $g - g^{-1}$ for $g$ not of order two, and the self-adjoint part by the elements $g + g^{-1}$ and by the $g$ of order two. The bracket of two skew elements is again skew, by the theorem.</p>
+<h3 id="the-exchange-involution">The Exchange Involution</h3>
+<p>Let $A = B \times B^{\mathrm{opp}}$ with the exchange involution $(b,c)^* = (c,b)$. The skew part is the antidiagonal $\{(b,-b)\} \cong B$, and the bracket is</p>
+<p>$$
+[(b,-b),(b',-b')] = ([b,b'],\,-[b,b']) ,
+$$</p>
+<p>so $K(A)$ is isomorphic to $B$ with the commutator bracket, that is to the commutator algebra $B^-$ of <em>The Commutator Operator</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>skew part</strong> $K(A) = \{k : k^* = -k\}$ of an algebra with an involution is a linear subspace with $A = K(A)\oplus H(A)$, where $H(A) = \{h : h^* = h\}$ is the self-adjoint part; the involution acts as minus the identity on $K(A)$ and as the identity on $H(A)$. The skew part is closed under the commutator, so it is a <strong>Lie algebra</strong>, and $K(A)\oplus H(A)$ is a $\mathbb{Z}/2$-graded Lie algebra with the compatible grading, the even part $K(A)$ and the odd part $H(A)$; $H(A)$ is a <strong>Lie triple system</strong> under $\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$. The adjoint action $\operatorname{ad}_x$ of a skew element is a derivation that preserves the two parts, and the map $x \mapsto \operatorname{ad}_x$ is a homomorphism $K(A) \to \operatorname{Der}(A)$ with kernel $K(A)\cap Z(A)$. The symmetrised product makes $K(A)$ stable under multiplication by the Jordan algebra $H(A)$, so the pair carries the two products and is the Jordan pair of the involution. The skew part is the tangent space of the unitary group at the identity, and the Cayley transform produces unitary elements from skew ones. The standard examples are the alternating matrices with the transpose, whose Lie algebra is $\mathfrak{so}_n$, and the skew-Hermitian matrices with the conjugate transpose, whose Lie algebra is $\mathfrak{u}_n$. The involution and the decomposition are <em>Involutive Algebras</em>; the self-adjoint part and its Jordan structure are <em>The Self-Adjoint Part of an Algebra</em>; the Lie theory is <em>Lie Algebras</em> and <em>Graded Lie Algebras and Lie Superalgebras</em>; the unitary elements are <em>Unitary Elements of an Involutive Algebra</em>; and the operator is <em>The Commutator Operator</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>the field of scalars, of characteristic not two</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>a unital associative $k$-algebra</td>
+</tr>
+<tr>
+<td>$\sigma$, $x^* = \sigma(x)$</td>
+<td>the involution and the adjoint of an element</td>
+</tr>
+<tr>
+<td>$K(A) = A^-$</td>
+<td>the skew elements, $k^* = -k$</td>
+</tr>
+<tr>
+<td>$H(A) = A^+$</td>
+<td>the self-adjoint elements, $h^* = h$</td>
+</tr>
+<tr>
+<td>$[x,y] = xy - yx$</td>
+<td>the commutator</td>
+</tr>
+<tr>
+<td>$x \bullet y = \tfrac12(xy+yx)$</td>
+<td>the symmetrised product</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_x(y) = [x,y]$</td>
+<td>the adjoint action</td>
+</tr>
+<tr>
+<td>$\{h_1,h_2,h_3\} = [h_1,[h_2,h_3]]$</td>
+<td>the Lie triple product on $H(A)$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(A)$</td>
+<td>the unitary group, $u^*u = uu^* = 1$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}_n$, $\mathfrak{u}_n$</td>
+<td>the skew parts of the matrix examples</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, 1968), for the Jordan pair of an involution and the module structure on the skew part.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em> (American Mathematical Society, 1998), for the symmetric and skew parts of an involution of a central simple algebra.</li>
+<li>Israel Nathan Herstein, <em>Rings with Involution</em> (University of Chicago Press, 1976), for the symmetric and the skew elements of a ring with involution and their Lie structure.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the Lie algebra structure and the graded reading.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

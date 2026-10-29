@@ -77,16 +77,16 @@
 <p>$$
 \vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b, \qquad [\vec a,\vec b] = 2\,\vec a\times\vec b .
 $$</p>
-<p>A rotation by angle $\theta$ about the unit axis $\vec u_{\mathrm r}$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$, acting by $\vec a \mapsto R\vec aR^{-1}$.</p>
+<p>A rotation by angle $\theta$ about the unit axis $\vec u_{\mathrm r}$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$, acting by $\vec a \mapsto R\vec aR^{*}$.</p>
 <h2 id="inertial-and-rotating-frames">Inertial and Rotating Frames</h2>
 <h3 id="the-rotor-of-the-frame">The Rotor of the Frame</h3>
 <p>Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\vec u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family</p>
 <p>$$
-R(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{-1}(t') = R^{\natural}(t') ,
+R(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{*}(t') = R^{\natural}(t') = R^{-1}(t') ,
 $$</p>
-<p>so that after a time $t'$ the frame has turned by the angle $\Omega t'$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{-1}$; a vector with fixed inertial components has rotating-frame components</p>
+<p>so that after a time $t'$ the frame has turned by the angle $\Omega t'$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{*}$; a vector with fixed inertial components has rotating-frame components</p>
 <p>$$
-\vec a_{\text{rot}}(t') = R^{-1}(t')\,\vec a_{\text{in}}\,R(t') .
+\vec a_{\text{rot}}(t') = R^{*}(t')\,\vec a_{\text{in}}\,R(t') .
 $$</p>
 <h3 id="the-time-derivative-in-the-rotating-frame">The Time Derivative in the Rotating Frame</h3>
 <p>Differentiating the second relation and using $dR/dt'  R^{-1} = \tfrac{1}{2}\vec\Omega$ as a pure quaternion — which holds because $\vec\Omega$ is the angular velocity of the frame and the rotor is its half-angle exponential — gives</p>
@@ -220,7 +220,7 @@ $$</p>
 <p>$$
 R(T_{\text{day}}) = \cos\pi + \sin\pi\,\vec u = -e_t .
 $$</p>
-<p>The rotor is therefore $-e_t$, not $e_t$: the lift of a full rotation to the real quaternions is minus the identity, the familiar two-valuedness of the rotation group. The adjoint action of $-e_t$ is the identity, however, since $(-e_t)\vec a(-e_t)^{-1} = \vec a$, and the vector quantities of the problem cannot distinguish $R$ from $-R$. The full-frame rotation is therefore trivial for the pendulum's swing direction, as it must be after a closed day, and the precession of $2\pi\sin\lambda$ is the rotation of that direction <strong>relative to the local frame</strong>, that is, about the local vertical, not the full rotation about the Earth's axis.</p>
+<p>The rotor is therefore $-e_t$, not $e_t$: the lift of a full rotation to the real quaternions is minus the identity, the familiar two-valuedness of the rotation group. The adjoint action of $-e_t$ is the identity, however, since $(-e_t)\vec a(-e_t)^{*} = \vec a$, and the vector quantities of the problem cannot distinguish $R$ from $-R$. The full-frame rotation is therefore trivial for the pendulum's swing direction, as it must be after a closed day, and the precession of $2\pi\sin\lambda$ is the rotation of that direction <strong>relative to the local frame</strong>, that is, about the local vertical, not the full rotation about the Earth's axis.</p>
 <p>This is worth a remark about the double cover. The lift of the one-day loop to $SU(2)$ is the path from $e_t$ to $-e_t$, a path that does not close; but the classical pendulum is described by vectors, on which the group acts through the adjoint representation, and the adjoint representation factors through $SO(3)$, where the loop does close. There is no observable spinor sign for a structureless pendulum, because a spinor sign is a statement about the action on a half-integer-spin state, and the bob carries spin zero. The geometric phase of the present article is an element of the rotation group; whether it lifts to one or the other element of the double cover is a question that has no physical content for a spinless classical system.</p>
 <h2 id="relation-to-other-geometric-phases">Relation to Other Geometric Phases</h2>
 <p>The Foucault precession is the oldest and simplest member of the family of geometric phases. Two remarks locate it.</p>
@@ -288,7 +288,7 @@ $$</p>
 </tr>
 <tr>
 <td>$R(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\vec u$</td>
-<td>Frame rotor; $\vec a_{\text{rot}} = R^{-1}\vec a_{\text{in}}R$</td>
+<td>Frame rotor; $\vec a_{\text{rot}} = R^{*}\vec a_{\text{in}}R$</td>
 </tr>
 <tr>
 <td>$\vec a_{\text{in}}$, $\vec a_{\text{rot}}$</td>

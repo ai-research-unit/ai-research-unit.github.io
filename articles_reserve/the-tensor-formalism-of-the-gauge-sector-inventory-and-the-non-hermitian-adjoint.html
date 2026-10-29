@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tensor Formalism of the Gauge Sector: Where It Is, and the Nine Non-Hermitian Adjoints — Biquaternion Universe</title>
+  <title>The Tensor Formalism of the Gauge Sector: Where It Is, and the Non-Hermitian Adjoint — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,12 +68,13 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-tensor-formalism-of-the-gauge-sector-where-it-is-and-the-nine-non-hermitian-adjoints"><strong>The Tensor Formalism of the Gauge Sector: Where It Is, and the Nine Non-Hermitian Adjoints</strong></h1>
+        <h1 id="the-tensor-formalism-of-the-gauge-sector-where-it-is-and-the-non-hermitian-adjoint"><strong>The Tensor Formalism of the Gauge Sector: Where It Is, and the Non-Hermitian Adjoint</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The gauge articles of the physics corpus use two descriptions at once. One is the biquaternion algebra: a product, an involution, a trace. The other is a component description: an index $\mu$, a derivative $\partial_\mu$, a one-form $A_\mu$, a two-form $F_{\mu\nu}$. The second description is not contained in the first. It is a foreign layer, and this article records where it sits.</p>
-<p>Two counts organise the record. <strong>Thirty-seven articles</strong> use the component description, in eight of the twelve categories of <code>physics.md</code>. The count uses at least three occurrences of the core tokens $A_\mu$, $F_{\mu\nu}$ or $[D_\mu,D_\nu]$. <strong>Nine occurrences in seven articles</strong> write the field strength as $F\mapsto UFU^{-1}$, with an inverse where the algebra supplies an adjoint.</p>
-<p>The second count is the sharp one. On the unitary slice $U^{-1}=U^{*}$, so the nine formulas are numerically Hermitian. Off the slice they are not. The problem is therefore not an error of value; it is an error of provenance: a law of the Hermitian algebra written with an operation the Hermitian algebra does not own.</p>
-<p>This article is an inventory. It does not propose a replacement, and it does not claim that one is available.</p>
+<p>One count organises the record, and it replaces the count of an earlier version of this article. <strong>Fifteen articles that use the component description write at least one conjugation with an inverse</strong>, $X\mapsto GXG^{-1}$, where the algebra supplies an involution that could stand in its place. The field-strength law alone, $F\mapsto UFU^{-1}$, is written on <strong>thirty-three lines in ten of those articles</strong>.</p>
+<p>The earlier version reported nine occurrences in seven articles. That number was a count of distinct statement sites, not of written occurrences, and it was wrong in three ways. It included <em>Confinement and the Loss of Partonic Information</em>, which writes no field strength at all. It listed <em>Electroweak Theory</em> and <em>Instantons and Solitons</em> only as adjacent, although both write the field-strength law. And it omitted <em>The Stueckelberg Mechanism</em>, which writes it once. The corrected lists are below, with a line number for every entry.</p>
+<p>The defect is not an error of value. On the compact slice $U^{-1}=U^{*}$, so every formula listed here is numerically equal to its Hermitian form. The defect is one of provenance: a law of the algebra written with an operation the algebra does not own.</p>
+<p>This article is an inventory. It does not propose a replacement for the component layer, and it does not claim that one is available.</p>
 <h2 id="what-the-formalism-is">What the Formalism Is</h2>
 <p>The component description consists of four objects and two operations.</p>
 <div class="table-scroll"><table>
@@ -144,523 +145,248 @@ $$</p>
 <li><strong>The formula hides its hypothesis.</strong> It is correct for the gauge groups the corpus uses — $SU(2)$, unit quaternions — but the correctness comes from unitarity, and the formula does not say so.</li>
 <li><strong>The formula invites a false identification.</strong> Because $UFU^{-1}$ and $UFU^{*}$ coincide on the slice, the first is often read as a sandwich with the right factor inverted. It is not: it is an automorphism, and the sandwich is a congruence. They coincide on the slice and part company off it.</li>
 </ul>
-<p>The nine occurrences are all on the slice. That is why the problem has stayed invisible: every gauge parameter in the corpus is unitary, so no computation can expose the difference.</p>
-<h3 id="the-nine-occurrences-in-seven-articles">The Nine Occurrences in Seven Articles</h3>
+<p>The last point is where a blanket repair fails. The algebra has two involutions that reverse an element, and they coincide with the inverse on different slices.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>conjugating element</th>
+<th>class</th>
+<th>$G^{-1}$ equals</th>
+<th>is $G^{*}=G^{-1}$?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$SU(2)$ element, unit real quaternion</td>
+<td>compact</td>
+<td>$G^{*}$ and $G^{\natural}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>unit-norm Lorentz rotor, including a boost</td>
+<td>non-compact</td>
+<td>$G^{\natural}$ only</td>
+<td>no</td>
+</tr>
+<tr>
+<td>odd Clifford element $\Pi$</td>
+<td>pseudoautomorphism</td>
+<td>$\Pi$ itself, $\Pi^{2}=\pm1$</td>
+<td>yes, up to sign</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the replacement of $U^{-1}$ by $U^{*}$ is silent in the compact articles, and it is wrong on the Lorentz slice. There the correct rewrite is $U^{-1}\to U^{\natural}$. The example is the boost rotor of <em>Exercise: Duality Rotation and the Riemann–Silberstein Vector</em>,
+$$
+\tilde U_{\mathrm b}=\cosh\tfrac{\psi}{2}\,e_t+i\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b},
+\qquad
+\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},
+\qquad
+\tilde U_{\mathrm b}^{\natural}=\tilde U_{\mathrm b}^{-1}.
+$$
+A blind substitution of ${}^{*}$ for ${}^{-1}$ therefore doubles the rapidity instead of reversing it. That article records the failure explicitly: the rotation is reproduced by $\tilde U\tilde F\tilde U^{*}$, the boost only by $\tilde U^{-1}\tilde F\tilde U$.</p>
+<p>One gauge article sits on the non-compact slice. <em>Curved Spacetime and the Biquaternion Framework</em> writes the connection on the spinor module as
+$$
+\vec\Gamma_\mu \longmapsto \tilde U\vec\Gamma_\mu\tilde U^{-1}
+-\left(\partial/\partial Q_\mu\,\tilde U\right)\tilde U^{-1},
+$$
+with $\tilde U$ a Lorentz rotor, an element of $SL(2,\mathbb{C})$ rather than $SU(2)$. There the inverse is load-bearing and the star is not its equal. The earlier version's statement that every gauge parameter in the corpus is unitary is false for this article.</p>
+<h2 id="the-field-strength-law-ten-articles-thirty-three-lines">The Field-Strength Law: Ten Articles, Thirty-Three Lines</h2>
+<p>The law $F\mapsto UFU^{-1}$ is written on the following lines. The count is of distinct lines; a line that states the law twice is counted once.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>article</th>
-<th style="text-align: right;">occurrences</th>
-<th>what the inverse does</th>
+<th>lines</th>
+<th style="text-align: right;">count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a></td>
-<td style="text-align: right;">3</td>
-<td>states the law, derives it from covariance, restates it in the summary</td>
+<td>10, 131, 136, 198, 202, 292, 334, 366</td>
+<td style="text-align: right;">8</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a></td>
-<td style="text-align: right;">1</td>
-<td>componentwise law; proves the packaged curvature is not $U\mathcal F U^{-1}$</td>
+<td>43, 82, 105, 111, 229, 232, 235, 383</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a></td>
+<td>232, 235, 236, 351</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity in Biquaternionic Form</a></td>
-<td style="text-align: right;">1</td>
-<td>covariance of $D_\lambda F_{\mu\nu}$ and the Jacobi identity</td>
+<td>84, 285, 319</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
+<td>72, 230</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a></td>
-<td style="text-align: right;">1</td>
-<td>inventory item: the adjoint action a gauge theory requires</td>
+<td>52, 236</td>
+<td style="text-align: right;">2</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a></td>
+<td>84, 315</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a></td>
+<td>31, 52</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a></td>
+<td>226</td>
 <td style="text-align: right;">1</td>
-<td>the same inventory, in the reality-class paragraph</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/wilson-loops-in-biquaternionic-form.html">Wilson Loops in Biquaternionic Form</a></td>
+<td>5</td>
 <td style="text-align: right;">1</td>
-<td>gauge invariance of the traced holonomy</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information in Biquaternionic Form</a></td>
-<td style="text-align: right;">1</td>
-<td>Haar average of automorphisms onto the commutant</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Non-Abelian Gauge Fields.</strong> The article introduces $F_{\mathrm g,\mu\nu}=\tilde U F_{\mu\nu}\tilde U^{-1}$ at the definition, derives it from the covariance of $D_\mu$, and repeats it in the summary. The derivation uses $U(ab)U^{-1}=(UaU^{-1})(UbU^{-1})$ at every step.</p>
-<p><strong>The Yang–Mills Equation.</strong> The componentwise law is $\tilde U F_{\mu\nu}\tilde U^{-1}$. The article then proves that the packaged curvature $\mathcal F$ does <strong>not</strong> inherit the single-conjugation law, because $\tilde U^{-1}$ does not pass through the basis products $\bar e_\mu e_\nu$. The negative result is a statement about the adjoint action and would read the same with $U^{*}$.</p>
-<p><strong>Gauge Curvature and the Bianchi Identity.</strong> The same law is used to prove that $D_\lambda F_{\mu\nu}$ is covariant and that the Bianchi identity is the Jacobi identity of the covariant derivatives. Both proofs are properties of the automorphism.</p>
-<p><strong>The QCD Agenda.</strong> The adjoint law appears once, as one item in the list of what a gauge theory must supply. The article's point is that the available factor is $SU(2)$, not colour.</p>
-<p><strong>The Standard Model Agenda.</strong> The same law, in the paragraph on the reality class of the connection. The question there is whether the connection can be placed in a fixed Hermitian eigenspace.</p>
-<p><strong>Wilson Loops.</strong> The field strength transforms by conjugation, $\tilde F\mapsto Q\tilde F Q^{-1}$. The gauge invariance of the loop is the invariance of the trace under that action.</p>
-<p><strong>Confinement.</strong> The colour-singlet conditional expectation $E(\tilde Q)=\int_G dU\,U\tilde Q U^{-1}$ averages automorphisms. Its fixed-point algebra is the commutant of the group.</p>
-<h3 id="adjacent-occurrences-outside-the-nine">Adjacent Occurrences, Outside the Nine</h3>
-<p>The same inverse appears in laws that are not the field-strength law. They are listed so that the nine are not mistaken for the whole of the problem.</p>
+<p>The three additions to the earlier list are <em>Electroweak</em>, <em>Instantons</em> and <em>Stueckelberg</em>. The removal is <em>Confinement</em>, which writes $E(\tilde Q)=\int_G dU\,U\tilde Q U^{-1}$ — a Haar average of automorphisms, not a field strength.</p>
+<h2 id="the-gauge-articles-fifteen">The Gauge Articles: Fifteen</h2>
+<p>Every article below uses the component layer and writes at least one sandwich with an inverse. The representative formula is the first occurrence in the article that is not a repetition in a summary.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>article</th>
-<th>object</th>
+<th>representative</th>
+<th>line</th>
+<th style="text-align: right;">element</th>
+<th>$G^{*}=G^{-1}$?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields</a></td>
-<td>the connection law $A_\mu\mapsto UA_\mu U^{-1}+\tfrac{i}{\kappa}(\partial_\mu U)U^{-1}$</td>
+<td>$F_{\mathrm g,\mu\nu}=\tilde QF_{\mu\nu}\tilde Q^{-1}$</td>
+<td>10</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation</a></td>
+<td>$F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>43</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure</a></td>
-<td>the same connection law, and the current $J_\nu\mapsto UJ_\nu U^{-1}$</td>
+<td>$\mathcal A_{2,\mu}=\tilde U\mathcal A_\mu\tilde U^{-1}+\tfrac{i}{\kappa}(\partial_\mu\tilde U)\tilde U^{-1}$</td>
+<td>54</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity</a></td>
+<td>$F_{\mathrm g,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>84</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics — A Research Agenda</a></td>
+<td>$F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>52</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model — A Research Agenda</a></td>
+<td>$F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>84</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory — A Research Agenda</a></td>
-<td>the connection law and its summary table</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons</a></td>
-<td>the packaged curvature $\mathcal F_2\neq \tilde U\mathcal F\tilde U^{-1}$</td>
+<td>$F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$</td>
+<td>72</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/wilson-loops-in-biquaternionic-form.html">Wilson Loops</a></td>
-<td>the connection law and the holonomy $U(C)\mapsto Q\,U(C)\,Q^{-1}$</td>
+<td>$\tilde F\mapsto Q\tilde FQ^{-1}$</td>
+<td>5</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information</a></td>
+<td>$E(\tilde Q)=\int_G dU\,U\tilde QU^{-1}$</td>
+<td>183</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit</a></td>
+<td>$A_\mu\mapsto\tilde QA_\mu\tilde Q^{-1}+\tfrac{i}{\kappa}(\partial_\mu\tilde Q)\tilde Q^{-1}$</td>
+<td>280</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
+<td>$\vec\Gamma_\mu\mapsto\tilde U\vec\Gamma_\mu\tilde U^{-1}-(\partial_\mu\tilde U)\tilde U^{-1}$</td>
+<td>255</td>
+<td style="text-align: right;">$SL(2,\mathbb{C})$</td>
+<td><strong>no</strong></td>
+</tr>
+<tr>
+<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons</a></td>
+<td>$\mathcal F_2=\tfrac12\sum(\tilde UF_{\mu\nu}\tilde U^{-1})\bar e_\mu e_\nu$</td>
+<td>235</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
 </tr>
 <tr>
 <td><a href="../articles_physics/the-hopf-fibration-and-the-biquaternion-gauge-bundle.html">The Hopf Fibration and the Biquaternion Gauge Bundle</a></td>
-<td>the conjugation of a vector $\vec u\mapsto \tilde U\vec u\tilde U^{-1}$</td>
+<td>$\vec u\mapsto\tilde U\vec u\tilde U^{-1}$</td>
+<td>70</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism</a></td>
+<td>$\tilde\Phi\mapsto U\tilde\Phi U^{-1}$</td>
+<td>201</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism</a></td>
+<td>$F_{2,\mu\nu}=UF_{\mu\nu}U^{-1}$</td>
+<td>226</td>
+<td style="text-align: right;">$SU(2)$</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table></div>
-<p>These are the same defect in different places. A repair of the nine that leaves these untouched would be a repair of a count, not of a formalism.</p>
-<h2 id="the-categories">The Categories</h2>
-<p>The component description appears in eight of the twelve categories of <code>physics.md</code>. Four categories do not use it at all.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>category</th>
-<th style="text-align: right;">physics.md</th>
-<th style="text-align: right;">articles</th>
-<th>subsections</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Biquaternion Universe</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Biquaternion Physical Interpretation of Mathematics</td>
-<td style="text-align: right;">42</td>
-<td style="text-align: right;">0</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Biquaternion Non Relativistic Quantum Theory</td>
-<td style="text-align: right;">187</td>
-<td style="text-align: right;">1</td>
-<td>Particles of spin 1/2 (1)</td>
-</tr>
-<tr>
-<td>Biquaternion Non Relativistic Non Quantum Theory</td>
-<td style="text-align: right;">424</td>
-<td style="text-align: right;">0</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Biquaternion Electromagnetism</td>
-<td style="text-align: right;">511</td>
-<td style="text-align: right;">3</td>
-<td>no subsection (3)</td>
-</tr>
-<tr>
-<td>Biquaternion Relativity</td>
-<td style="text-align: right;">588</td>
-<td style="text-align: right;">1</td>
-<td>no subsection (1)</td>
-</tr>
-<tr>
-<td>Biquaternion Relativistic Quantum Theory</td>
-<td style="text-align: right;">650</td>
-<td style="text-align: right;">2</td>
-<td>Generalities (1); Particles of spin 1 and above (1)</td>
-</tr>
-<tr>
-<td>Biquaternion Relativistic Non Quantum Theory</td>
-<td style="text-align: right;">812</td>
-<td style="text-align: right;">1</td>
-<td>Generalities (1)</td>
-</tr>
-<tr>
-<td>Biquaternion Quantum Fields</td>
-<td style="text-align: right;">871</td>
-<td style="text-align: right;">4</td>
-<td>Generalities (1); Particles of spin 1 and above (3)</td>
-</tr>
-<tr>
-<td>Biquaternion Particle Physics and Gauge Fields</td>
-<td style="text-align: right;">1087</td>
-<td style="text-align: right;">24</td>
-<td>Generalities (11); Particles of spin 1/2 (4); Particles of spin 1 and above (7); Focus on informational aspects (2)</td>
-</tr>
-<tr>
-<td>Biquaternion Gravity and Cosmology</td>
-<td style="text-align: right;">1256</td>
-<td style="text-align: right;">1</td>
-<td>no subsection (1)</td>
-</tr>
-<tr>
-<td>Biquaternion Thermodynamics and Statistical Mechanics</td>
-<td style="text-align: right;">1291</td>
-<td style="text-align: right;">0</td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
-<p>Subsection names follow <code>physics.md</code>. The dagger marks the seven articles of the non-Hermitian adjoint.</p>
-<h2 id="the-articles-by-category">The Articles by Category</h2>
-<h3 id="biquaternion-non-relativistic-quantum-theory-1">Biquaternion Non Relativistic Quantum Theory (1)</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>article</th>
-<th>subsection</th>
-<th style="text-align: right;">tokens</th>
-<th><code>[A,A]</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.html">The Berry Phase and Geometric Phases in Biquaternionic Form</a></td>
-<td>Particles of spin 1/2</td>
-<td style="text-align: right;">17</td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-electromagnetism-3">Biquaternion Electromagnetism (3)</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>article</th>
-<th>subsection</th>
-<th style="text-align: right;">tokens</th>
-<th><code>[A,A]</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/maxwells-theory-on-non-commutative-spaces-and-quaternions.html">Maxwell's Theory on Non-Commutative Spaces and Quaternions</a></td>
-<td>—</td>
-<td style="text-align: right;">19</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-and-self-quantized-charge.html">The Algebrodynamical Programme: Nonlinear Cauchy–Riemann Conditions, Self-Quantized Charge, and Induced Causal Geometry</a></td>
-<td>—</td>
-<td style="text-align: right;">8</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/gauge-transformations-of-the-first-and-second-kind-in-biquaternionic-form.html">Gauge Transformations of the First and Second Kind in Biquaternionic Form</a></td>
-<td>—</td>
-<td style="text-align: right;">3</td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-relativity-1">Biquaternion Relativity (1)</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>article</th>
-<th>subsection</th>
-<th style="text-align: right;">tokens</th>
-<th><code>[A,A]</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/the-relativistic-particle-in-an-external-field-in-biquaternionic-form.html">The Relativistic Particle in an External Field, in Biquaternionic Form</a></td>
-<td>—</td>
-<td style="text-align: right;">3</td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-relativistic-quantum-theory-2">Biquaternion Relativistic Quantum Theory (2)</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>article</th>
-<th>subsection</th>
-<th style="text-align: right;">tokens</th>
-<th><code>[A,A]</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html">Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</a></td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">6</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-relativistic-action-and-the-stationary-action-principle-in-biquaternionic-form.html">The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">3</td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-relativistic-non-quantum-theory-1">Biquaternion Relativistic Non Quantum Theory (1)</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>article</th>
-<th>subsection</th>
-<th style="text-align: right;">tokens</th>
-<th><code>[A,A]</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">9</td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-quantum-fields-4">Biquaternion Quantum Fields (4)</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>article</th>
-<th>subsection</th>
-<th style="text-align: right;">tokens</th>
-<th><code>[A,A]</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/wilson-loops-in-biquaternionic-form.html">Wilson Loops in Biquaternionic Form</a> †</td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">13</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-theta-vacuum-in-biquaternionic-form.html">The Theta Vacuum in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">10</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a></td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">7</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a></td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">6</td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="biquaternion-particle-physics-and-gauge-fields-24">Biquaternion Particle Physics and Gauge Fields (24)</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>article</th>
-<th>subsection</th>
-<th style="text-align: right;">tokens</th>
-<th><code>[A,A]</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html">Gauge Curvature and the Bianchi Identity in Biquaternionic Form</a> †</td>
-<td>Generalities</td>
-<td style="text-align: right;">151</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a> †</td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">117</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-yang-mills-equation-in-biquaternionic-form.html">The Yang–Mills Equation in Biquaternionic Form</a> †</td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">97</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">53</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html">Lattice Gauge Theory and the Biquaternion Path Integral</a></td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">47</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a></td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">30</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html">The Standard Model under the Biquaternion Framework — A Research Agenda</a> †</td>
-<td>Generalities</td>
-<td style="text-align: right;">25</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html">The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</a></td>
-<td>Particles of spin 1/2</td>
-<td style="text-align: right;">24</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html">Electroweak Theory under the Biquaternion Framework — A Research Agenda</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">22</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">21</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html">The Covariant Derivative and Gauge Connection in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">20</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a> †</td>
-<td>Generalities</td>
-<td style="text-align: right;">18</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a></td>
-<td>Particles of spin 1/2</td>
-<td style="text-align: right;">12</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">11</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a></td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">11</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a></td>
-<td>Particles of spin 1/2</td>
-<td style="text-align: right;">9</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a></td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">8</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html">The W and Z Bosons in Biquaternionic Form</a></td>
-<td>Particles of spin 1 and above</td>
-<td style="text-align: right;">7</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">6</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-electric-dipole-moment-and-the-biquaternion-anti-hermitian-structure.html">The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure</a></td>
-<td>Particles of spin 1/2</td>
-<td style="text-align: right;">6</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html">Electric–Magnetic Duality and the Modular Group in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">4</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</a></td>
-<td>Focus on informational aspects</td>
-<td style="text-align: right;">4</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html">The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</a></td>
-<td>Focus on informational aspects</td>
-<td style="text-align: right;">4</td>
-<td>—</td>
-</tr>
-<tr>
-<td><a href="../articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</a></td>
-<td>Generalities</td>
-<td style="text-align: right;">3</td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Below the threshold.</strong> <a href="../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">Confinement and the Loss of Partonic Information</a> belongs to the informational aspects of this category and is the seventh article of the non-Hermitian list. It writes the holonomy $U(C)=\mathcal P\exp(i\oint A_\mu\,dx^\mu)$ and no field strength, so it falls below the three-token threshold used for these tables. It is counted in §<em>The Non-Hermitian Adjoint</em>.</p>
-<h3 id="biquaternion-gravity-and-cosmology-1">Biquaternion Gravity and Cosmology (1)</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>article</th>
-<th>subsection</th>
-<th style="text-align: right;">tokens</th>
-<th><code>[A,A]</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a></td>
-<td>—</td>
-<td style="text-align: right;">3</td>
-<td>—</td>
-</tr>
-</tbody>
-</table></div>
+<p>Fourteen of the fifteen are on the compact slice, where the inverse and the star agree and no number changes. One is not. The distinction is not a detail of bookkeeping: it decides which repair is correct.</p>
 <h2 id="what-the-counts-do-not-say">What the Counts Do Not Say</h2>
 <ul>
-<li><strong>They do not report an arithmetic error.</strong> All nine parameters are unitary, so all nine formulas are numerically equal to the Hermitian form. No result in the corpus changes if $U^{-1}$ is replaced by $U^{*}$.</li>
-<li><strong>They do not single out the seven as bad articles.</strong> The seven are the places where the field-strength law is written. The same inverse appears in the connection laws of the articles listed above, and the index calculus appears in thirty-seven articles. The seven are the visible edge of a larger layer.</li>
-<li><strong>They do not prescribe a replacement.</strong> The formalism is foreign to the algebra, and no article in the corpus removes it. What the count establishes is the size of the task and the places where it is exact.</li>
+<li><strong>They do not report an arithmetic error.</strong> On the compact slice all parameters are unitary, so every formula there is numerically equal to its Hermitian form. No result in the corpus changes if $U^{-1}$ is replaced by $U^{*}$ in those articles.</li>
+<li><strong>They do not licence one global replacement.</strong> The Lorentz articles — the curved-spacetime connection, and two articles outside the gauge sector — need $U^{-1}\to U^{\natural}$, not $U^{-1}\to U^{*}$. A corpus-wide search and replace with the star would break them.</li>
+<li><strong>They do not single out the fifteen as bad articles.</strong> The fifteen are the places where the component layer and the inverse meet. The same inverse appears in articles that do not use the component layer at all; the companion article <em>The Non-Hermitian Adjoint Outside the Gauge Sector</em> counts them, and records the four that are now written with the Hermitian sandwich.</li>
+<li><strong>They do not prescribe a replacement for the component layer.</strong> The index and the derivative remain external. What the count establishes is the size of the layer and the exact places where its algebra is written with an operation it does not own.</li>
 </ul>
 <h2 id="conclusion">Conclusion</h2>
 <p>The gauge sector of the corpus is written on two layers. The algebra supplies the product, the involution and the trace; the tensor layer supplies the index, the derivative and the fourfold and sixfold copies. The two are not the same object, and the second is not an extension of the first.</p>
-<p>The non-Hermitian adjoint is the sharpest trace of the split. It is an automorphism written where the algebra offers a congruence, an inverse written where the algebra offers an adjoint. On the unitary slice the two coincide, which is why the corpus has not had to notice. Off the slice they differ by the square of the modulus.</p>
-<p>Nine occurrences in seven articles, nine unitary parameters, one defect.</p>
+<p>The non-Hermitian adjoint is the sharpest trace of the split. It is an automorphism written where the algebra offers a congruence, an inverse written where the algebra offers an adjoint. On the compact slice the two coincide, which is why the corpus has not had to notice. Off that slice they part company, and the articles that live off it are the ones that fix the repair.</p>
+<p>Fifteen gauge articles, thirty-three lines for the field-strength law alone, one non-compact case.</p>
       </div>
     </main>
   </div>

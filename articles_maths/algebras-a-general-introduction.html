@@ -164,23 +164,8 @@ $$</p>
 <p>where $1$ is the unit of the algebra. A unital associative algebra in which every nonzero element has an inverse is called a <strong>division algebra</strong>.</p>
 <p><strong>Key difference from the field case.</strong> Over a field, a division algebra requires every nonzero element to be invertible. Over a commutative ring with zero divisors, this is impossible for any algebra of rank greater than 1, because the zero divisors of $R$ become zero divisors in the algebra. So the notion of a division algebra is most useful when $R$ is at least an integral domain, and the classical theorems (Frobenius, Wedderburn) require $R$ to be a field.</p>
 <h3 id="replacing-associativity">Replacing Associativity</h3>
-<p>Associativity is not the only possible identity that a bilinear product can satisfy. There are other identities, and algebras satisfying them are studied in their own right. The most important is the <strong>Jacobi identity</strong>.</p>
-<p>A bilinear product $[\cdot, \cdot]$ is <strong>antisymmetric</strong> if</p>
-<p>$$
-[u, v] = -[v, u]
-$$</p>
-<p>for all $u, v \in A$. It satisfies the <strong>Jacobi identity</strong> if</p>
-<p>$$
-[u, [v, w]] + [v, [w, u]] + [w, [u, v]] = 0
-$$</p>
-<p>for all $u, v, w \in A$. An algebra over a commutative ring $R$ equipped with an antisymmetric product satisfying the Jacobi identity is called a <strong>Lie algebra</strong>. The product is called the <strong>Lie bracket</strong>.</p>
-<p>The Jacobi identity is the replacement for associativity. It says that the failure of the bracket to be associative is controlled: the three nested brackets sum to zero. This is the precise sense in which the identity substitutes for associativity.</p>
-<p>Lie algebras are not associative in general. The cross product on $\mathbb{R}^3$ is the simplest example: it is antisymmetric and satisfies the Jacobi identity, but it is not associative.</p>
-<p>Another important identity is the <strong>Jordan identity</strong>:</p>
-<p>$$
-u(v(uu)) = (uv)(uu).
-$$</p>
-<p>An algebra over a commutative ring $R$ equipped with a commutative product satisfying the Jordan identity is called a <strong>Jordan algebra</strong>. They are not associative in general.</p>
+<p>Associativity is not the only identity that a bilinear product can satisfy, and the corpus studies algebras with other identities in their own right. Two families stand beside the associative one: the <strong>antisymmetric</strong> algebras, whose product is alternating and satisfies the Jacobi identity, and the <strong>commutative</strong> algebras, whose product is symmetric and satisfies the Jordan identity. Their definitions, their structure theory and their examples belong to <em>Anti-symmetric Algebras</em> and <em>Symmetric Algebras</em>, two categories of this Part, and the comparison of the two products is <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> in <em>Higher Algebra</em>. Nothing of either theory is used here.</p>
+<p>The point for the general definition is only that the broad sense of an algebra imposes no identity at all. Associativity, commutativity, the Jacobi identity and the Jordan identity are successive choices of a product law, and the hierarchy below records the ladder that is defined by associativity alone.</p>
 <h3 id="the-hierarchy-of-algebraic-structures">The Hierarchy of Algebraic Structures</h3>
 <p>The hierarchy of algebraic structures over a fixed commutative ring $R$, from weakest to strongest, is as follows:</p>
 <ol>

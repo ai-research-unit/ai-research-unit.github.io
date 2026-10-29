@@ -90,7 +90,7 @@ $$</p>
 <p>$$
 \vec v = d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt', \qquad \vec a = d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/d{t'}^2, \qquad \vec p = m\vec v, \qquad \vec F = m\vec a ,
 $$</p>
-<p>each obtained from the others by differentiation with respect to the scalar parameter $t'$ or by multiplication by the central scalar $m$. The three directions are rotated among themselves by the unit real quaternions, and the rotation is the adjoint action $R(\cdot)R^{-1}$ of the companion article <em>The Reflection and the Rotation in Biquaternionic Form</em>.</p>
+<p>each obtained from the others by differentiation with respect to the scalar parameter $t'$ or by multiplication by the central scalar $m$. The three directions are rotated among themselves by the unit real quaternions, and the rotation is the adjoint action $R(\cdot)R^{*}$ of the companion article <em>The Reflection and the Rotation in Biquaternionic Form</em>.</p>
 <h3 id="scalars-are-central">Scalars Are Central</h3>
 <p>Every quantity in the list above that is not a vector is a central scalar. The mass is $m e_t$; the kinetic energy is $\tfrac12m|\vec v|^2 e_t$; the potential of a central force will be $V(r)e_t$; the time is the parameter multiplying $ie_t$. In each case the algebra element is a multiple of the identity, hence commutes with everything, and hence transforms trivially under every rotation and every frame change. This triviality is a feature and not a defect: it is why the scalar quantities of non-relativistic mechanics are frame-independent numbers and why the rotation group acts on the vector quantities alone.</p>
 <p>The placement of the scalars along $e_t$ also fixes their sector. A real scalar multiple of $e_t$ is Hermitian and lies in $\mathbb{M}_+$, so the energy and the potential are elements of the <strong>informational</strong> sector, while the configuration — position, momentum, force — lies in the vector part of the <strong>material</strong> sector. The central-scalar limit is therefore not a confinement to one sector: it uses the central direction of $\mathbb{M}_+$ for the scalar data and the vector directions of $\mathbb{M}_-$ for the configuration, and it leaves the vector directions of $\mathbb{M}_+$ untouched.</p>
@@ -114,9 +114,9 @@ $$</p>
 <li>a central scalar energy $\tilde{E} = E e_t$.</li>
 </ul>
 <p>No element of this list has a nonzero vector part in $\mathbb{M}_+$, and none has a noncentral scalar part. The vector part of the configuration is entirely in $\mathbb{M}_-$; the scalar data are entirely in the central part of $\mathbb{M}_+$.</p>
-<p>The reason the potential may depend on the position only through $|\vec r|$ is that it is a central scalar and therefore rotation-invariant. Under a rotation rotor $R \in \mathbb{H}_{\mathbb{B}}$ with $R R^{\natural} = e_t$, the position transforms as $\vec r \mapsto R\vec rR^{-1}$, and the biquaternion norm is invariant,</p>
+<p>The reason the potential may depend on the position only through $|\vec r|$ is that it is a central scalar and therefore rotation-invariant. Under a rotation rotor $R \in \mathbb{H}_{\mathbb{B}}$ with $R R^{\natural} = e_t$ — so that $R^{*}=R^{\natural}=R^{-1}$ — the position transforms as $\vec r \mapsto R\vec rR^{*}$, and the biquaternion norm is invariant,</p>
 <p>$$
-\langle R\vec rR^{-1}\rangle_{\natural} = R\,\langle \vec r\rangle_{\natural}\,R^{-1} = \langle \vec r\rangle_{\natural} ,
+\langle R\vec rR^{*}\rangle_{\natural} = R\,\langle \vec r\rangle_{\natural}\,R^{*} = \langle \vec r\rangle_{\natural} ,
 $$</p>
 <p>because the biquaternion norm is a central scalar. Hence $V(|\vec r|)e_t$ is unchanged by every rotation: a central scalar potential is automatically spherically symmetric, and its symmetry is trivial in the sense of the preceding section.</p>
 <h2 id="two-limits-distinguished">Two Limits, Distinguished</h2>
@@ -198,7 +198,7 @@ $$</p>
 <p>with the general solution $u = 1/p + C\cos(\theta - \theta_0)$, hence $r = p/(1 + e\cos(\theta-\theta_0))$ with $e = Cp$. This is the conic section of the Kepler and Coulomb problems, and the two following articles are its development.</p>
 <h2 id="the-rotation-group-and-the-bracket-algebra">The Rotation Group and the Bracket Algebra</h2>
 <h3 id="rotations">Rotations</h3>
-<p>The rotations of the real three-space are the adjoint actions of the unit real quaternions $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$, acting by $\vec a \mapsto R\vec aR^{-1}$. The group is $SU(2)$, the double cover of $SO(3)$, and its Lie algebra is the three-dimensional real space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$ closed under the commutator, since</p>
+<p>The rotations of the real three-space are the adjoint actions of the unit real quaternions $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$, acting by $\vec a \mapsto R\vec aR^{*}$. The group is $SU(2)$, the double cover of $SO(3)$, and its Lie algebra is the three-dimensional real space $\operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$ closed under the commutator, since</p>
 <p>$$
 [\vec e_\mu, \vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda .
 $$</p>
@@ -211,7 +211,7 @@ $$</p>
 <p>which is the classical form of the commutation relations of the quantum angular momentum. The bracket is a bracket on functions of the phase-space variables $(x_k, p_k)$, with $\{x_i, p_j\} = \delta_{ij}$ and $\{x_i, x_j\} = \{p_i, p_j\} = 0$; its conventions are those of the companion article <em>Similitudes Between the Poisson Bracket and the Quantum Commutator</em>.</p>
 <p>It is important not to conflate two algebras that the notation makes look alike. The commutator $[\vec a,\vec b]$ of the quaternion algebra is a product in a three-dimensional subspace and equals twice the cross product; the Poisson bracket $\{L_i, L_j\}$ is a derivative operation on the six-dimensional phase space. They produce the same three-dimensional algebra because the angular momentum is built from the cross product of the position and momentum, but they are different operations on different spaces. The algebra's commutator can be evaluated at a single instant and involves only the current vectors; the Poisson bracket relates the angular momentum to the Hamiltonian flow and requires the phase-space structure. The central-scalar limit uses both, and the companion article on the bracket treats their relation in detail.</p>
 <h3 id="numerical-checks">Numerical Checks</h3>
-<p>Several identities used above were verified by explicit computation with complex-coefficient quaternions and with numerical differentiation of phase-space functions. The quaternion product of two real vectors was confirmed to be $\vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b$ and the commutator to be $[\vec a,\vec b] = 2\,\vec a\times\vec b$; the vector part of $\vec r\vec p$ was confirmed to equal $\vec r\times\vec p$; the central-force criterion $[\vec r,\vec F] = 0$ was confirmed to hold exactly when $\vec r\times\vec F = 0$; and the bracket $\{L_i, L_j\} = \epsilon_{ijk}L_k$ was confirmed by central-difference evaluation of the Poisson bracket at several representative phase-space points, with a maximum deviation of order $10^{-11}$. The rotation-rotor identity $R\vec aR^{-1}$ for $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$ was confirmed to rotate a vector by the angle $\theta$ about $\vec u$ while preserving the biquaternion norm.</p>
+<p>Several identities used above were verified by explicit computation with complex-coefficient quaternions and with numerical differentiation of phase-space functions. The quaternion product of two real vectors was confirmed to be $\vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b$ and the commutator to be $[\vec a,\vec b] = 2\,\vec a\times\vec b$; the vector part of $\vec r\vec p$ was confirmed to equal $\vec r\times\vec p$; the central-force criterion $[\vec r,\vec F] = 0$ was confirmed to hold exactly when $\vec r\times\vec F = 0$; and the bracket $\{L_i, L_j\} = \epsilon_{ijk}L_k$ was confirmed by central-difference evaluation of the Poisson bracket at several representative phase-space points, with a maximum deviation of order $10^{-11}$. The rotation-rotor identity $R\vec aR^{*}$ for $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$ was confirmed to rotate a vector by the angle $\theta$ about $\vec u$ while preserving the biquaternion norm.</p>
 <h2 id="what-the-limit-excludes">What the Limit Excludes</h2>
 <p>The central-scalar limit is a restriction, and it is worth recording exactly what is left out, because the omitted structures are the subjects of the sibling subcategories.</p>
 <p><strong>Internal vectors are excluded.</strong> An element $i\vec s \in \mathbb{M}_+$ with $\vec s$ a real vector is an internal vector degree of freedom. It would transform as a vector under rotations, it would precess under torques, and its coupling to the orbital motion would produce the spin-orbit and magnetic phenomena. The limit sets it to zero. This is the spin-zero restriction, and it is why the effects of this subcategory carry no intrinsic magnetism.</p>
@@ -234,7 +234,7 @@ $$</p>
 \frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
 $$</p>
 <p>whose inverse-square solution is the conic section $r = p/(1 + e\cos(\theta-\theta_0))$ with $p = L^2/(m\kappa)$.</p>
-<p>The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{-1}$, with Lie algebra $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ in the real three-space; the components of $\vec L$ satisfy $\{L_i,L_j\} = \epsilon_{ijk}L_k$ under the Poisson bracket, which is a phase-space operation and is not the quaternion commutator. The limit excludes internal vectors (spin), noncentral scalars, and noncentral vector couplings; those structures are the subjects of the sibling subcategories.</p>
+<p>The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{*}$, with Lie algebra $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ in the real three-space; the components of $\vec L$ satisfy $\{L_i,L_j\} = \epsilon_{ijk}L_k$ under the Poisson bracket, which is a phase-space operation and is not the quaternion commutator. The limit excludes internal vectors (spin), noncentral scalars, and noncentral vector couplings; those structures are the subjects of the sibling subcategories.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -318,7 +318,7 @@ $$</p>
 </tr>
 <tr>
 <td>$R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$</td>
-<td>Rotation rotor; $\vec a\mapsto R\vec aR^{-1}$</td>
+<td>Rotation rotor; $\vec a\mapsto R\vec aR^{*}$</td>
 </tr>
 <tr>
 <td>$[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$</td>

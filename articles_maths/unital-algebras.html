@@ -259,16 +259,13 @@ $$</p>
 <li>
 <p><strong>The zero algebra.</strong> The algebra $\{0\}$ has $1 = 0$ and is the degenerate case of §<em>Trivial Cases and the Hypothesis $1 \neq 0$</em>; it is the unique unital algebra whose identity is also its zero element.</p>
 </li>
-<li>
-<p><strong>The commutator algebra $A^-$.</strong> It has no identity for nonzero $A$: an identity $e$ of any algebra satisfies $e \cdot e = e$, while the product of $A^-$ is the commutator, so $e \cdot e = [e,e] = 0$ and hence $e = 0$, which forces $A = 0$. The construction is that of <em>Associative Algebras</em>, §<em>The Universal Enveloping Algebra</em>, and it shows that a non-associative algebra of the corpus may be non-unital as well, for a reason independent of the failure of associativity.</p>
-</li>
 </ul>
 <p>These are the non-unital algebras of the corpus, and they are not deficient for it: each is an algebra in the sense fixed in <em>Algebras</em>, and a construction that needs an identity is applied to its unitisation, §<em>The Unitisation</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>A unital $R$-algebra is an $R$-algebra with an element $1$ satisfying $1x = x1 = x$; the identity is unique. The <strong>canonical map</strong> $\eta(r) = r1_A$ is a unital ring homomorphism whose image lies in the centre, and the resulting equivalence is the article's spine: a unital $R$-algebra is the same thing as an associative ring $A$ with identity together with a unital ring homomorphism $R \to Z(A)$, the two constructions being inverse; in particular the rings with identity are exactly the unital $\mathbb{Z}$-algebras. If $1 = 0$ then $A = \{0\}$, so a nonzero unital algebra has $1 \neq 0$, the standing hypothesis under which the corpus states its ring- and field-based results and the reason the definition of a simple algebra in <em>Ideals and Quotients of Algebras</em> speaks of a <em>nonzero</em> algebra.</p>
 <p>The <strong>unit group</strong> $A^\times$ is a group; it is specialised to $\mathrm{GL}_n(R)$ for $M_n(R)$, to the subgroup containing $k^\times G$ for $k[G]$, to $k^\times$ for $k[x]$, to $A \setminus \{0\}$ for a division algebra, the general theory being that of <em>Centre, Units, Zero Divisors and Division Algebras</em>. The <strong>unitisation</strong> $A^+ = A \oplus R$ with $(a,r)(b,s) = (ab + rb + sa, rs)$ is unital with identity $(0,1)$, contains $A$ as a two-sided ideal with $A^+/A \cong R$, is associative exactly when $A$ is, and is characterised by the universal property that every homomorphism $A \to B$ into a unital associative algebra extends uniquely to a unital homomorphism $A^+ \to B$; it is left adjoint to the forgetful functor, and for unital $A$ it is $A \times R$. A homomorphism of unital algebras sends $1_A$ to an idempotent and is unital exactly when that idempotent is $1_B$, equivalently when it carries some unit to a unit; a unital homomorphism restricts to a group homomorphism of the unit groups.</p>
 <p>An <strong>idempotent</strong> $e$, one with $e^2 = e$, gives the <strong>Peirce decomposition</strong> $A = eAe \oplus eAf \oplus fAe \oplus fAf$ with $f = 1_A - e$, a direct sum of $R$-submodules whose diagonal corners $eAe$ and $fAf$ are subalgebras with identities $e$ and $f$ and whose products obey $(e_iAe_j)(e_kAe_l) \subseteq \delta_{jk}e_iAe_l$. The decomposition is generally finer than the decomposition of $A$ by its ideals: when $e$ is <strong>central</strong> the two off-diagonal corners vanish and the sum becomes a product $A \cong Ae \times A(1_A - e)$ of unital algebras with identities $e$ and $1_A - e$, and when $e$ is not central, as for $E_{11} \in M_2(k)$, the Peirce pieces are not ideals and no product is obtained. The trivial idempotents $0$ and $1_A$ give nothing, the division algebras and the field $\mathbb{C}$ have no others, and the split-complex algebra with its two central idempotents $(1 \pm j)/2$ is the smallest case in which the product is nontrivial.</p>
-<p>The non-unital algebras of the corpus are the polynomials of positive degree, the square-zero ideals, the proper ideals that carry no identity of their own, the commutator algebra $A^-$, and the zero algebra; each is pointed to its own article, and a proper ideal that does carry an identity, such as the augmentation ideal of $k[\mathbb{Z}/2]$ over a field of characteristic not $2$, is a unital algebra and not on the list.</p>
+<p>The non-unital algebras of the corpus are the polynomials of positive degree, the square-zero ideals, the proper ideals that carry no identity of their own, and the zero algebra; each is pointed to its own article, and a proper ideal that does carry an identity, such as the augmentation ideal of $k[\mathbb{Z}/2]$ over a field of characteristic not $2$, is a unital algebra and not on the list.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -309,10 +306,6 @@ $$</p>
 <tr>
 <td>$\mathrm{GL}_n(R) = M_n(R)^\times$</td>
 <td>The units of the matrix algebra, $\det A \in R^\times$, as in <em>Matrix Algebras</em></td>
-</tr>
-<tr>
-<td>$x \bullet y = \tfrac12(xy + yx)$</td>
-<td>The symmetrised product, unital with identity $I$ in $M_n(k)$; <em>Jordan Algebras</em> writes the same symmetrisation as $xy + yx$, differing by the unit $2$</td>
 </tr>
 <tr>
 <td>$k^\times G \subseteq k[G]^\times$</td>
