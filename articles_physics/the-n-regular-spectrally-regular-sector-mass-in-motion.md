@@ -236,6 +236,6 @@ No dynamics is supplied. The cell is a property of one element at one instant; t
 - [The Spectral Reading of a Four-Vector](the-spectral-reading-of-a-four-vector.html), for the Doppler pair and the two-term writing.
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the polar word.
 - [Frames, Rotations and the Lorentz Group](frames-rotations-and-the-lorentz-group.html), for the sandwich and the boost.
-- [Spin and the Two State Spaces](spin-and-the-two-state-spaces.html), for the minimal ideals.
+- [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the minimal ideals.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the boundary $N=0$.
 - [The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), for the boundary $B=0$.

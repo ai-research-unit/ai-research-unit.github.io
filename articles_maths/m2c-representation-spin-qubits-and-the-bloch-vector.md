@@ -8,7 +8,7 @@ This article develops the dictionary. It states the spin operators and their alg
 
 **Conventions.** The algebra and the model are those of *$M_2(\mathbb{C})$ Representation : The Matrix Product and the Algebra Structure*: $\mathsf M_2(\vec e_k)=-i\sigma_k$ and $\mathsf M_2(e_t)=\mathrm I_2$. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, the scalar part is $Q_t=\tfrac12\operatorname{Tr}\mathsf M_2(\tilde Q)$, and the quaternionic norm is $N=\det\mathsf M_2(\tilde Q)$. The Hermitian subspace is $\mathbb M_+$ and the anti-Hermitian subspace is $\mathbb M_-$. A state is written $\tilde{\varrho}$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb R^3$.
 
-**Boundaries.** The Born pairing and the Hilbert structure of the spinor module are *Spin and the Two State Spaces*; the mixedness and phase-fibre interpretations of the same matrices are *The Pauli Correspondence and the Matrix Image*; the state geometry as a slice of the light cone is *The Bloch Ball as the Normalised Slice of the Future Light Cone*; the pure states as idempotents are *Roots, Idempotents and Observables*; the spectral projectors of a general element are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
+**Boundaries.** The Born pairing and the Hilbert structure of the spinor module are *Spin and the Three Elementary Carriers*; the mixedness and phase-fibre interpretations of the same matrices are *The Pauli Correspondence and the Matrix Image*; the state geometry as a slice of the light cone is *The Bloch Ball as the Normalised Slice of the Future Light Cone*; the pure states as idempotents are *Roots, Idempotents and Observables*; the spectral projectors of a general element are *$M_2(\mathbb{C})$ Representation : The Spectral Projectors and the Nilpotents*.
 
 ## The Hermitian Basis
 
@@ -239,7 +239,7 @@ $$
 \operatorname{Tr}\bigl(\rho\,\mathsf M_2(\tilde H)\bigr)=h_t+\vec r\cdot\vec h ,
 $$
 
-which is the affine function of the state determined by the four numbers $(h_t,\vec h)$. The Born pairing of *Spin and the Two State Spaces* is the same identity written with the state idempotent.
+which is the affine function of the state determined by the four numbers $(h_t,\vec h)$. The Born pairing of *Spin and the Three Elementary Carriers* is the same identity written with the state idempotent.
 
 ## The Qubit as a Spinor
 
@@ -257,7 +257,7 @@ $$
 r_k=\xi^{\dagger}\sigma_k\xi .
 $$
 
-The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the Peirce carrier $\mathbb B\tilde\Pi_+$, which is the minimal left ideal here, and the module structure that makes it a Hilbert space is the second structure of *Spin and the Two State Spaces*.
+The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the Peirce carrier $\mathbb B\tilde\Pi_+$, which is the minimal left ideal here, and the module structure that makes it a Hilbert space is the second structure of *Spin and the Three Elementary Carriers*.
 
 **The mixed case.** A general state is a convex combination of pure ones,
 
@@ -303,6 +303,6 @@ The Hermitian units of the algebra map to the Pauli matrices, $\mathsf M_2(i\vec
 - [$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m2c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant as the norm
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the trace pairing
 - [The Pauli Correspondence and the Matrix Image](../articles_physics/the-pauli-correspondence-and-the-matrix-image.html), for the physical interpretation of these identities
-- [Spin and the Two State Spaces](../articles_physics/spin-and-the-two-state-spaces.html), for the Hilbert structure of the module
+- [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html), for the Hilbert structure of the module
 - [The Bloch Ball as the Normalised Slice of the Future Light Cone](../articles_physics/the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the state geometry
 - G. B. Folland, *Quantum Field Theory: A Tourist Guide for Mathematicians* (AMS, 2008), for the Pauli and Bloch conventions.

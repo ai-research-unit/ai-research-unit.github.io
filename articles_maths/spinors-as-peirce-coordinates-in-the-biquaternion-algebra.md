@@ -9,7 +9,7 @@ S_{-}=\mathbb{B}\tilde\Pi_{-}=\mathbb{B}_{+-}\oplus\mathbb{B}_{--}.
 $$
 The spinor is the algebra element itself. The Peirce coordinates are its coefficients in a basis; they describe the spinor, but they are not the spinor.
 
-The root fixes the two spinor spaces and their weights. It does not fix a weight basis inside a spinor space, because the mixed line has no vector fixed by the root. The choice of a nonzero vector in the mixed line is the gauge. The article defines the spinor spaces, gives the weight basis, the spin and the ladder, the gauge action and the invariants, and the chirality. An example is given at the end.
+The root fixes the two spinor spaces and the two lines inside each. It does not fix a basis adapted to those lines, because the mixed line has no vector fixed by the root. The choice of a nonzero vector in the mixed line is the gauge. The article defines the spinor spaces, gives the eigenbasis of the root and the ladder, the gauge action and the invariants, and the chirality. An example is given at the end.
 
 ## The Two Spinor Spaces
 
@@ -31,53 +31,49 @@ $$
 $$
 The first spinor uses the right index $+$, the second the right index $-$. The decomposition is unique, and $\tilde Q\mapsto(\tilde Q\tilde\Pi_{+},\tilde Q\tilde\Pi_{-})$ is an isomorphism of vector spaces $\mathbb{B}\to S_{+}\oplus S_{-}$. The sum is direct: if $\tilde Y=\tilde Y\tilde\Pi_{+}=\tilde Y\tilde\Pi_{-}$, then $\tilde Y=\tilde Y\tilde\Pi_{+}\tilde\Pi_{-}=0$.
 
-**The left action.** The algebra acts on each spinor space by left multiplication. For $A\in\mathbb{B}$ and $\tilde\psi\in S_{\pm}$, the element $A\tilde\psi$ lies in $S_{\pm}$, because $S_{\pm}$ is closed under left multiplication by $\mathbb{B}$. This is the action that defines the spin.
+**The left action.** The algebra acts on each spinor space by left multiplication. For $A\in\mathbb{B}$ and $\tilde\psi\in S_{\pm}$, the element $A\tilde\psi$ lies in $S_{\pm}$, because $S_{\pm}$ is closed under left multiplication by $\mathbb{B}$. This is the action used throughout; its spectral reading belongs to the operator category.
 
-## The Weight Basis
+## The Eigenbasis of the Root
 
-**The root fixes the weights, not the basis.** Let $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$, $\tilde\Pi_{\pm}=(e_{t}\pm\tilde\Xi)/2$, and $J_{3}=\tfrac12\tilde\Xi$. On the four lines,
+**The root fixes the two eigenvalues, not the basis.** Let $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$ and $\tilde\Pi_{\pm}=(e_{t}\pm\tilde\Xi)/2$. On the four lines,
 $$
-L_{J_{3}}\tilde\Pi_{+}=+\tfrac12\tilde\Pi_{+},\qquad
-L_{J_{3}}\tilde\Pi_{-}=-\tfrac12\tilde\Pi_{-},
+L_{\tilde\Xi}\tilde\Pi_{+}=+\tilde\Pi_{+},\qquad
+L_{\tilde\Xi}\tilde\Pi_{-}=-\tilde\Pi_{-},
 $$
 $$
-L_{J_{3}}\mathbb{B}_{+-}=+\tfrac12\,\mathbb{B}_{+-},\qquad
-L_{J_{3}}\mathbb{B}_{-+}=-\tfrac12\,\mathbb{B}_{-+}.
+L_{\tilde\Xi}\mathbb{B}_{+-}=+\mathbb{B}_{+-},\qquad
+L_{\tilde\Xi}\mathbb{B}_{-+}=-\mathbb{B}_{-+}.
 $$
-So each spinor space has the two weights $+\tfrac12$ and $-\tfrac12$. The diagonal line is fixed by the root; the mixed line is not.
+So each spinor space has the two simple eigenvalues $+1$ and $-1$. The diagonal line is fixed by the root; the mixed line is not.
 
-**A weight basis.** Choose any nonzero $\vec\Upsilon_{-+}\in\mathbb{B}_{-+}$ and any nonzero $\vec\Upsilon_{+-}\in\mathbb{B}_{+-}$. Then
+**An eigenbasis.** Choose any nonzero $\vec\Upsilon_{-+}\in\mathbb{B}_{-+}$ and any nonzero $\vec\Upsilon_{+-}\in\mathbb{B}_{+-}$. Then
 $$
 (\tilde\Pi_{+},\vec\Upsilon_{-+})\quad\text{is a basis of }S_{+},\qquad
 (\vec\Upsilon_{+-},\tilde\Pi_{-})\quad\text{is a basis of }S_{-}.
 $$
-These are **weight bases**: the first vector of each pair has weight $+\tfrac12$, the second $-\tfrac12$.
+These are **eigenbases**: the first vector of each pair has eigenvalue $+1$, the second $-1$.
 
-**The spin.** A positive spinor has the expansion
+**The coordinates.** A positive spinor has the expansion
 $$
 \tilde\psi_{+}=a\tilde\Pi_{+}+c\vec\Upsilon_{-+},\qquad a,c\in\mathbb{C}.
 $$
-The highest weight is $+\tfrac12$, so $S_{+}$ is irreducible of spin
-$$
-j=\frac12,\qquad 2j+1=2.
-$$
-The same holds on $S_{-}$, with $\vec\Upsilon_{+-}$ of weight $+\tfrac12$ and $\tilde\Pi_{-}$ of weight $-\tfrac12$. The spin is the highest weight; it does not depend on the choice of the mixed vector.
+The two eigenvalues are simple and do not depend on the choice of the mixed vector. No further spectral datum of the root is used in this article.
 
 **The ladder.** Normalize the two mixed vectors so that
 $$
 \vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+},\qquad
 \vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-}.
 $$
-Then left multiplication by $\vec\Upsilon_{+-}$ raises the weight and left multiplication by $\vec\Upsilon_{-+}$ lowers it:
+Then left multiplication by $\vec\Upsilon_{+-}$ raises the eigenvalue by $2$ and left multiplication by $\vec\Upsilon_{-+}$ lowers it by $2$:
 $$
 L_{\vec\Upsilon_{+-}}\vec\Upsilon_{-+}=\tilde\Pi_{+},\qquad
 L_{\vec\Upsilon_{-+}}\tilde\Pi_{+}=\vec\Upsilon_{-+},
 $$
-and the other two products vanish. The highest-weight vector of $S_{+}$ is $\tilde\Pi_{+}$, which is fixed by the root. The lowest-weight vector is $\vec\Upsilon_{-+}$, which is not. The normalization of the pair is a gauge choice; without it the ladder is defined only up to scale.
+and the other two products vanish. The diagonal vector of $S_{+}$ is $\tilde\Pi_{+}$, which is fixed by the root. The mixed vector is $\vec\Upsilon_{-+}$, which is not. The normalization of the pair is a gauge choice; without it the ladder is defined only up to scale.
 
 ## The Gauge
 
-**A change of weight basis.** Let $E_{st}$ and $F_{st}$ be two Peirce bases of the same family, with $F_{+-}=t^{-1}E_{+-}$ and $F_{-+}=tE_{-+}$. The spinor element is fixed. Its coordinates change by
+**A change of eigenbasis.** Let $E_{st}$ and $F_{st}$ be two Peirce bases of the same family, with $F_{+-}=t^{-1}E_{+-}$ and $F_{-+}=tE_{-+}$. The spinor element is fixed. Its coordinates change by
 $$
 a'=a,\qquad c'=t^{-1}c,\qquad b'=tb,\qquad d'=d,
 $$
@@ -86,7 +82,7 @@ $$
 \tilde\psi_{+}=a\tilde\Pi_{+}+cE_{-+},\qquad
 \tilde\psi_{-}=bE_{+-}+d\tilde\Pi_{-}.
 $$
-The coordinates are the coefficients in the two weight bases; the elements $\tilde\psi_{\pm}$ do not change.
+The coordinates are the coefficients in the two eigenbases; the elements $\tilde\psi_{\pm}$ do not change.
 
 **The gauge is not a symmetry of the spinor.** It changes the coordinates, not the element. A statement about a spinor is gauge-invariant only if it is a statement about the element.
 
@@ -176,11 +172,11 @@ with $\vec\Upsilon_{1}\vec\Upsilon_{2}=\tilde\Pi_{+}$. A positive spinor is
 $$
 \tilde\psi_{+}=a\tilde\Pi_{+}+c\vec\Upsilon_{2}.
 $$
-Its weights under $J_{3}=\tfrac12 i\vec e_{z}$ are $+\tfrac12$ for $a$ and $-\tfrac12$ for $c$. Under the gauge $\vec\Upsilon_{1}\mapsto t^{-1}\vec\Upsilon_{1}$, $\vec\Upsilon_{2}\mapsto t\vec\Upsilon_{2}$, the coordinates become $a'=a$, $c'=t^{-1}c$. The invariants are $a$ and the truth value of $c=0$.
+The eigenvalues of $L_{\tilde\Xi}$ are $+1$ for $a$ and $-1$ for $c$. Under the gauge $\vec\Upsilon_{1}\mapsto t^{-1}\vec\Upsilon_{1}$, $\vec\Upsilon_{2}\mapsto t\vec\Upsilon_{2}$, the coordinates become $a'=a$, $c'=t^{-1}c$. The invariants are $a$ and the truth value of $c=0$.
 
 ## Summary
 
-A spinor of $\mathbb{B}$ is an element of $S_{+}=\mathbb{B}\tilde\Pi_{+}$ or $S_{-}=\mathbb{B}\tilde\Pi_{-}$. The root fixes the weights $\pm\tfrac12$ under $J_{3}=\tfrac12\tilde\Xi$; a weight basis requires a nonzero vector in each mixed line, and the choice is the gauge. The spin is $j=\tfrac12$, the highest weight. The ladder is left multiplication by the mixed vectors, normalized by $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$. The gauge acts by $a'=a$, $c'=t^{-1}c$, $b'=tb$, $d'=d$, and leaves the spinor fixed. The invariant coordinate $a$ (or $d$) and the vanishing of $c$ (or $b$) are the invariants; the ratio is not. Chirality is the right index, $R_{\tilde\Xi}=\pm1$. Right multiplication exchanges the two spaces through the mixed elements, and its star is a right Peirce row, not the other space.
+A spinor of $\mathbb{B}$ is an element of $S_{+}=\mathbb{B}\tilde\Pi_{+}$ or $S_{-}=\mathbb{B}\tilde\Pi_{-}$. The root fixes the eigenvalues $\pm1$ of $L_{\tilde\Xi}$; an eigenbasis requires a nonzero vector in each mixed line, and the choice is the gauge. The ladder is left multiplication by the mixed vectors, normalized by $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$. The gauge acts by $a'=a$, $c'=t^{-1}c$, $b'=tb$, $d'=d$, and leaves the spinor fixed. The invariant coordinate $a$ (or $d$) and the vanishing of $c$ (or $b$) are the invariants; the ratio is not. Chirality is the right index, $R_{\tilde\Xi}=\pm1$. Right multiplication exchanges the two spaces through the mixed elements, and its star is a right Peirce row, not the other space.
 
 ## Summary of Notation
 
@@ -189,15 +185,13 @@ A spinor of $\mathbb{B}$ is an element of $S_{+}=\mathbb{B}\tilde\Pi_{+}$ or $S_
 | $S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$ | The two spinor spaces |
 | $\tilde\psi_{\pm}$ | A spinor in $S_{\pm}$ |
 | $\tilde\Pi_{\pm}$ | The idempotents of the family |
-| $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The mixed vectors of a weight basis |
-| $a,c$ | The weight coordinates of $\tilde\psi_{+}$ |
-| $b,d$ | The weight coordinates of $\tilde\psi_{-}$ |
-| $J_{3}=\tfrac12\tilde\Xi$ | The spin operator |
+| $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The mixed vectors of an eigenbasis |
+| $a,c$ | The coordinates of $\tilde\psi_{+}$ in that eigenbasis |
+| $b,d$ | The coordinates of $\tilde\psi_{-}$ in that eigenbasis |
 | $t$ | The gauge parameter |
 
 ## Further Reading
 
-- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the four lines and the weights.
+- [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-in-the-biquaternion-algebra.html), for the four lines.
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-in-the-biquaternion-algebra.html), for the basis, the coordinates and the gauge.
-- [The Weight of a Frame Root and the Spin Quantum Number](the-weight-of-a-frame-root-and-the-spin-quantum-number.html), for the highest weight and the spin.
 - [The Biquaternion Algebra and Its Vector Spaces](the-biquaternion-algebra-and-its-vector-spaces.html), for the units and the centre.

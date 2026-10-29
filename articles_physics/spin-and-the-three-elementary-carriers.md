@@ -1,36 +1,88 @@
-# __Spin and the Two State Spaces__
+# __Spin and the Three Elementary Carriers__
 
 ## Introduction
 
-The spinor space of the biquaternion framework is the Peirce carrier of $\tilde\Pi_+$, which in this algebra is the minimal left ideal
+The biquaternion algebra $\mathbb{B}$ has three elementary carrier types, represented by four spaces, and their spins are $0$, $\tfrac12$ and $1$. The centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ carries $0$ under the adjoint action; each Peirce plane $S_\pm=\mathbb{B}\tilde\Pi_\pm$ carries $\tfrac12$ under left multiplication; the traceless part $V=\ker\operatorname{tr}$ carries $1$ under the adjoint action. There is no fourth elementary value. Every finite-dimensional associative module of $\mathbb{B}\cong M_2(\mathbb{C})$ is a direct sum of copies of the two-dimensional simple module, so the left action sees only $\tfrac12$; the adjoint action adds the trivial centre and the three-dimensional traceless part, so it sees $0$ and $1$.
 
-$$
-S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},
-\qquad
-\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),
-\qquad
-\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
-$$
+These are also the spins of every observed elementary particle. The Higgs boson is $0$; the six quarks and the six leptons are $\tfrac12$; the photon, the $W^\pm$, the $Z$ and the eight gluons are $1$. No observed elementary particle carries another spin. The graviton of spin $2$ is not an observed particle, and the hadrons of spin $\tfrac32$, $2$ and higher are bound states. The match is a match of labels: the algebra supplies the set, and it does not select which particle carries which spin.
 
-of complex dimension two. The algebra acts on it by left multiplication, and the action carries the defining representation of the double cover of the Lorentz group. That is one structure. The same carrier also carries a positive definite Hermitian form and a Born pairing, and that is a second structure, belonging to a different product of the same algebra.
-
-The algebra also offers a **second copy**. The plain product splits it into two minimal left ideals,
+The spin-$\tfrac12$ carrier is also the place where the algebra offers **two copies**. The plain product splits it into two minimal left ideals,
 
 $$
 \mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-,
 \qquad
+\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),
+\qquad
 \tilde\Pi_-=e_t-\tilde\Pi_+=\tfrac12(e_t-i\vec e_z),
 $$
 
-and the second summand, $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$ with $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, is the complementary ideal. It is a left module isomorphic to $S$, metrically identical, and a different subspace. The mass coupling is the pair of right multiplications by the two nilpotents that carries $S$ onto its complement and back.
+with
 
-The article's thesis is that the structures are **not two views of one object**, and that the doubling is a copy and not a second particle. The module structure belongs to the plain bilinear product, the Hilbert structure to the plain sesquilinear product, and the complement to the right multiplication. The sharpest evidence for the separation is that the algebra's own bilinear form is degenerate on the carrier: its Gram matrix is $\operatorname{diag}(\tfrac12,0)$. The module has no norm of its own, and the metric is added by the second slot.
+$$
+S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\},
+\qquad
+\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}.
+$$
+
+The two planes are the **two state spaces** of the spin-$\tfrac12$ carrier. They are distinct subspaces, module-isomorphic, metrically identical and Hilbert-orthogonal, and the mass coupling is the pair of right multiplications by the two nilpotents that carries one onto the other and back. The doubling is a copy of one carrier, not a second particle.
+
+The article has two theses. First, the **three carrier types are the elementary list of $\mathbb{B}$**, and the observed elementary spins are exactly that list. Second, within the spin-$\tfrac12$ carrier the two copies are **not two views of one object**: the module structure belongs to the plain bilinear product, the Hilbert structure to the plain sesquilinear product, and the complement to right multiplication. The sharpest evidence for the separation is that the algebra's own bilinear form is degenerate on the carrier, with Gram matrix $\operatorname{diag}(\tfrac12,0)$. The module has no norm of its own, and the metric is added by the second slot.
+
+## The Three Elementary Carriers
+
+| carrier | action | complex dimension | weights of $\tfrac12\tilde\Xi$ | $j$ | physical reading |
+|---|---|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | $\operatorname{ad}$ | $1$ | $0$ | $0$ | scalar, no internal index |
+| $S_+=\mathbb{B}\tilde\Pi_+$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | two-state spinor |
+| $S_-=\mathbb{B}\tilde\Pi_-$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | the second copy |
+| $V=\ker\operatorname{tr}$ | $\operatorname{ad}$ | $3$ | $+1,0,-1$ | $1$ | vector, three polarisations |
+
+The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.
+
+## Why There Is No Fourth
+
+Here *elementary* means an isomorphism class of nonzero irreducible invariant subspaces of $\mathbb{B}$ under one of the two actions, left multiplication or the commutator. Two subspaces define the same carrier when the actions are isomorphic. A general Lie-algebra module is not of this form. The left action has one irreducible type: every minimal left ideal is isomorphic to $S$, and $S_+$ and $S_-$ are two representatives. The adjoint action has two: the centre $\mathbb{C}_{\mathbb{B}}$ and the traceless part $V$. The algebra itself is reducible under both.
+
+The algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, and $M_2(\mathbb{C})$ is simple. It has one isomorphism class of simple modules, of complex dimension two, and every finite-dimensional left module is a direct sum of copies of it. On that module the root $h=\tilde\Xi$ is a traceless $2\times2$ matrix with $h^2=1$, so its eigenvalues are $\pm1$ and the weights of $J_3=\tfrac12h$ are $\pm\tfrac12$. The associative left action therefore sees only $j=\tfrac12$. A unital one-dimensional module would be a unital algebra map $M_2(\mathbb{C})\to\mathbb{C}$; its kernel is a two-sided ideal, so by simplicity it is $0$ or the whole algebra, and neither is possible. Hence no one-dimensional module exists, and the left action has no $j=0$.
+
+The adjoint action is a Lie action. As a Lie algebra, $\mathbb{B}=\mathbb{C}e_t\oplus V$ with $V\cong\mathfrak{sl}_2(\mathbb{C})$. The centre is trivial, so $j=0$; the traceless part is the three-dimensional irreducible module, with weights $+2,0,-2$ under $\mathrm{ad}_h$ and $+1,0,-1$ under $\mathrm{ad}_{h/2}$, so $j=1$. There is no other irreducible invariant subspace.
+
+The two constructions together give the elementary list
+$$
+\{0,\tfrac12,1\},
+$$
+and no other value occurs on $\mathbb{B}$ alone. Higher spin is not forbidden. It requires a tensor product or a larger algebra, and it is the subject of *Higher Spin from Tensor Products*; the spin-$2$ graviton, for instance, is the traceless symmetric part of the square of $V$.
+
+## The Observed Elementary Spins
+
+**The three elementary carrier spins are the spins of the established elementary particles.**
+
+| spin | established elementary particles | carrier in $\mathbb{B}$ |
+|---|---|---|
+| $0$ | Higgs boson $H$ | centre $\mathbb{C}_{\mathbb{B}}$ |
+| $\tfrac12$ | quarks $u,d,c,s,t,b$; leptons $e,\mu,\tau,\nu_e,\nu_\mu,\nu_\tau$ | Peirce plane $S_\pm$ |
+| $1$ | photon $\gamma$; $W^+,W^-,Z$; eight gluons $g$ | traceless part $V$ |
+
+The quarks and the gluons are established elementary particles, although they are observed only as confined constituents of hadrons and jets, never as free particles; the table counts them by flavour and by colour.
+
+No observed elementary particle carries another spin. Four boundaries keep the table from overclaiming.
+
+- **The graviton is not observed.** Spin $2$ is the quantum of the metric deviation, constructed from the symmetric traceless square of $V$. It belongs to the tensor construction, not to $\mathbb{B}$ alone.
+- **Hadrons are composites.** The $\Delta(1232)$ and the $\Omega^-$ have spin $\tfrac32$, the tensor mesons have spin $2$, and the $N(1680)$ has spin $\tfrac52$; all are bound states of quarks and gluons, not elementary particles.
+- **The match is not a prediction.** The Standard Model assigns the spins by hand. The algebra reproduces the set $\{0,\tfrac12,1\}$ and says nothing about which particle carries which spin, nor about masses, generations, charges or colours.
+- **The spin is the rotation spin.** The number $j$ is the highest weight for $\mathrm{Spin}(3)\subset\mathbb B^{\times}$; the full Lorentz label is $(j_L,j_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
+
+Two further physical qualifications belong to the carrier, not to the table.
+
+- **The massless spin-$1$ count is two.** $V$ has three states. For a massless field the longitudinal state is removed by gauge invariance, leaving the two helicities of the photon and the gluon. The algebra supplies the triplet; the massless restriction is a separate input.
+- **The weak chirality is not the Peirce index.** $S_+$ and $S_-$ are isomorphic as left modules, so the left action does not distinguish them. The chirality of the weak interaction is the Lorentz chirality, not the copy index.
 
 ## The Results It Uses
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The plain product as an associative unital law, with its multiplication table and basis | [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra-and-its-vector-spaces.html) |
+| The three elementary carriers and their spins $0,\tfrac12,1$ | [The Spin of a Biquaternion](../articles_maths/the-spin-of-a-biquaternion.html) |
 | The idempotents, the Peirce decomposition, the minimal left ideals and the matrix units | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-in-the-biquaternion-algebra.html) |
 | The module theory: the simple module, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$ | [The Category of Modules](../articles_maths/modules-over-the-biquaternion-algebra.html) |
 | The column ideal of a matrix ring: one idempotent and $n-1$ nilpotents | [The Column Ideals of a Matrix Ring: One Idempotent and \(n-1\) Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html) |
@@ -85,7 +137,7 @@ Three module-theoretic facts carry the reading.
 
 The third fact is the physical content of the module structure. The action is faithful, and it does not descend to the Lorentz group: $-e_t$ acts as $-\mathrm{id}$ on $S$ while it acts trivially by conjugation on the four-vectors of $\mathbb{M}_-$. The double cover therefore appears on the module side and not on the four-vector side, and **spin-$\tfrac12$ is a module datum**. It is a property of how the algebra acts on the carrier, not of a form on the carrier.
 
-One caution belongs here, because it is easy to state wrongly. **A single minimal left ideal is one Peirce chirality, not two.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the same defining representation; they differ by the Peirce idempotent, not by the Lorentz chirality. The two Lorentz chiralities are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling below treats the second ideal; this section treats one carrier and its two structures.
+One caution belongs here, because it is easy to state wrongly. **A single minimal left ideal is one Peirce copy, not two.** The ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are both isomorphic to $S$ and carry the same defining representation; they differ by the Peirce idempotent, not by the Lorentz chirality. The two Lorentz chiralities are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$, which are non-isomorphic as complex representations. The doubling below treats the second ideal; this section treats one carrier and its two structures.
 
 ## The Probability Structure: the Second Slot
 
@@ -203,14 +255,14 @@ That asymmetry is the algebraic form of a physical statement. The complement is 
 The corpus's chirality-off-diagonal mass is a right multiplication, and the pair of right multiplications by $\vec\Upsilon_x$ and $\vec\Upsilon_y$ moves a state from $S$ to its complement and back. The reading rests on three algebraic facts.
 
 - **The mass is off-diagonal.** A coupling that is $\mathbb{B}$-linear on the left cannot be a left multiplication by an element of $\mathbb{B}$: the left action preserves each ideal, since the ideals are left ideals. Such a coupling is a right multiplication, and right multiplication is what the module theory supplies.
-- **The generator is null, the map is an isometry.** The natural generator is the matrix unit $\vec\Upsilon_x$: it has vanishing norm and $\vec\Upsilon_x^2=0$, so it is not a unit of the algebra. The map it induces is nevertheless an isometry of the two Hilbert structures, because $\vec\Upsilon_x\vec\Upsilon_x^{*}=\tilde\Pi_+$ acts as the identity on $S$. The nilpotence is a property of the chosen generator and not of the map: the representatives that induce the same map differ by an element of $\operatorname{Ann}(S)=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$, and some of them are units. The inverse between the modules is the right multiplication by $\vec\Upsilon_y$.
+- **The generator is null, the map is an isometry.** The natural generator is the matrix unit $\vec\Upsilon_x$: it has vanishing norm and $\vec\Upsilon_x^2=0$, so it is not a unit of the algebra. The map it induces is nevertheless an isometry of the two Hilbert structures, because $\vec\Upsilon_x\vec\Upsilon_x^{*}=\tilde\Pi_+$ and $\xi\tilde\Pi_+=\xi$ for every $\xi\in S$: the idempotent is a right identity on the carrier. The nilpotence is a property of the chosen generator and not of the map: the representatives that induce the same map differ by an element of $\operatorname{Ann}(S)=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$, and some of them are units. The inverse between the modules is the right multiplication by $\vec\Upsilon_y$.
 - **The coupling flips the column.** It sends $\tilde\Pi_+\mapsto\vec\Upsilon_x$ and $\vec\Upsilon_y\mapsto\tilde\Pi_-$, so the column index changes. In the corpus's chirality-off-diagonal convention that column index is the chirality, and the mass term is a chirality flip. In the spectral-triple reading the same off-diagonal entry is the finite Dirac operator, odd under the chirality, and the two ideals are the two eigenspaces of its chirality.
 
 > **The mass is the right multiplication that takes a state to the other state space.**
 
 The reading has a boundary that must be stated in the same breath. **The article gives the algebraic mechanism and no mass value and no mass spectrum.** The number belongs to the dynamical articles, where the mass is a parameter of the equation and not a property of the doubling. What the algebra supplies is the **shape** of the coupling: off-diagonal, column-flipping, generated by a nilpotent matrix unit. What it does not supply is its size.
 
-A convention warning belongs here, because the corpus uses the word *chirality* in two ways. The two ideals are sometimes called the two chiralities — more precisely, the two **Peirce chiralities** — and the two Lorentz chiralities are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$. These are different objects. The ideals are isomorphic as modules; $S$ and $S^{\mathrm{c}}$ are not isomorphic as complex representations. The mass coupling of this section moves between the two **ideals**, and the chirality flip it performs is the column flip of the first convention. It is not the passage to the conjugate representation.
+A convention warning belongs here, because the corpus uses the word *chirality* in two ways. The two ideals are sometimes called the two chiralities — more precisely, the two **Peirce copies** — and the two Lorentz chiralities are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$. These are different objects. The ideals are isomorphic as modules; $S$ and $S^{\mathrm{c}}$ are not isomorphic as complex representations. The mass coupling of this section moves between the two **ideals**, and the chirality flip it performs is the column flip of the first convention. It is not the passage to the conjugate representation.
 
 ## Three Complements
 
@@ -287,7 +339,7 @@ A fourth separation is about the sectors. The carrier meets each of $\mathbb{M}_
 The doubling adds its own separations:
 
 - **No mass value and no spectrum.** The mass coupling is a shape; the number is dynamical.
-- **No choice between the readings of the doubling.** The second Peirce chirality, the occupation ladder and the conjugate state space are readings of one algebraic fact.
+- **No choice between the readings of the doubling.** The second Peirce copy, the occupation ladder and the conjugate state space are readings of one algebraic fact.
 - **The coincidence is conditional.** The module and Hilbert complements coincide for the Hermitian vacuum pair; for a general idempotent they separate.
 - **One pair of ideals only.** The general idempotent $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ generates a minimal left ideal for every unit vector, and its complement is a different subspace. The article treats the coordinate pair.
 - **No dynamics.** Nothing here says how a state moves between the copies in time, or why the mass has the value it has.
@@ -310,8 +362,27 @@ The two structures separate the two physical data of a spinor.
 
 The state space is normalised by the metric and selected by the vacuum, and the two acts are of different kinds: one is a pairing, the other is a choice of generator. The two structures also meet the corpus's word **quantisation**. The insertion of the star into the second slot, the step from $\tilde Q_1\tilde Q_2$ to $\tilde Q_1\tilde Q_2^{*}$, is what turns the composition pairing into the probability pairing. Read on the carrier, the spinor space is **compositional before the step and probabilistic after it**. The step is not an added axiom; it is the choice of what to put in the second slot.
 
+## The Readings in the Physics Corpus
+
+The physics corpus states the same three values through different constructions. The table is a dictionary, not a set of competing definitions.
+
+| reading | construction | carrier | value |
+|---|---|---|---|
+| the half-angle | the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts on a spinor, and the half-angle $\theta/2$ is the weight | $S_\pm$ under $L$ | $\tfrac12$ |
+| the adjoint integer | the halved inner derivations $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ act on the vector part of the material sector; the scalar direction $ie_t$ is annihilated | $V$ under $\operatorname{ad}$; $\mathbb{C} ie_t$ | $1$; $0$ |
+| the scalar | the rotations act trivially on the centre | $\mathbb{C}_{\mathbb{B}}$ under $\operatorname{ad}$ | $0$ |
+| the two-level state | the Peirce plane as a Hilbert space, with the Born pairing | $S_\pm$ under $L$ | $\tfrac12$ |
+| the tensor powers of the spinor | the symmetric part of $S^{\otimes 2j}$ | $S^{\otimes 2j}$ | $j$ |
+| the tensor powers of the vector | symmetric traceless rank-$s$ tensors of $V$ | $V^{\otimes s}$ | integer $s$ |
+
+The first four rows live on elementary carriers of $\mathbb{B}$ itself. The last two rows are not elementary: they are the construction that produces the higher spins, and they lie outside the closure proved in §*Why There Is No Fourth*. The half-angle row and the two-level row are the same carrier read through the rotor and through the metric; they do not add a second spin-$\tfrac12$ object.
+
 ## Physical Readings
 
+- **Three carrier types, three spins.** The centre, the Peirce plane and the traceless part carry $0$, $\tfrac12$ and $1$. Boundary: the classification is by carrier and action; it does not assign a particle to a carrier.
+- **The elementary list is closed on $\mathbb B$ alone.** The elementary carriers are the isomorphism classes of nonzero irreducible invariant subspaces under left multiplication or the commutator; the associative ones give only $\tfrac12$, the adjoint ones give $0$ and $1$, and there is no fourth value. Boundary: closure is for $\mathbb B$ alone; tensor products give higher spin.
+- **The elementary list matches the observed list.** The spins $0$, $\tfrac12$ and $1$ are the spins of all observed elementary particles. Boundary: a label match, not a derivation of the particle content.
+- **The two planes are one carrier type.** $S_+$ and $S_-$ are module-isomorphic copies of the same spin-$\tfrac12$ carrier. Boundary: two copies, not two particles.
 - **One carrier, two structures, two jobs.** The state space is not one structure but two: the composition structure that makes the algebra act, and the probability structure that makes the states pair. Boundary: a statement about the algebraic structures, and it adds no identity between composition and probability.
 - **The module is composition.** The plain product composes two elements, and the module is that composition read with one factor held fixed. Boundary: an interpretation of the algebra's law, not a dynamics.
 - **The spin is a module datum, the ray is a Hilbert datum.** The double cover acts faithfully on the module, while the Hilbert structure is blind to the phase and yields the ray. Boundary: a separation of two known facts by the two structures.
@@ -330,20 +401,28 @@ The state space is normalised by the metric and selected by the vacuum, and the 
 
 ## Limits
 
+- **No prediction of the particle content.** The three spins match the observed elementary spins, but the algebra does not say which particle carries which spin, nor why the list is realised.
+- **No empirical derivation.** The match is a structural alignment of labels; the Standard Model assigns the spins independently.
+- **No spin-statistics derivation.** The split between the associative and adjoint carriers is algebraic; the link to Fermi and Bose statistics is a separate theorem.
+- **No fourth elementary spin.** The closure is for $\mathbb B$ alone; higher spin requires a tensor product and is not excluded.
 - **No measurement postulate and no Born derivation.** The Born rule is cited from its owner; the article states where it sits among the structures.
 - **No identification of the two physics.** The carrier is one, but the spinor index is not identified with the qubit's two levels.
 - **No mass value and no spectrum.** The article states the coupling's algebraic shape; the number is dynamical.
-- **No choice between the interpretations of the doubling.** The second Peirce chirality, the occupation ladder and the conjugate state space are three readings of one algebraic fact.
+- **No choice between the interpretations of the doubling.** The second Peirce copy, the occupation ladder and the conjugate state space are three readings of one algebraic fact.
 - **The coincidence is conditional.** The module and Hilbert complements coincide for the Hermitian vacuum pair. For a general idempotent they separate.
 - **One pair of ideals only.** The general idempotent generates a minimal left ideal for every unit vector, and its complement is a different subspace.
 - **Not the dual and not a sector.** The dual is the right ideal reached by ${}^{*}$; the sectors cut across both ideals.
 - **The algebra's form is not the metric.** It is indefinite and degenerate on $S$; the positive definite form is $\langle\cdot,\cdot\rangle_{*}$.
-- **One ideal is one Peirce chirality.** The two ideals are isomorphic; the two Lorentz chiralities are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$.
+- **One ideal is one Peirce copy.** The two ideals are isomorphic; the two Lorentz chiralities are the defining representation and its conjugate, $S$ and $S^{\mathrm{c}}$.
 - **No dynamics.** Nothing here says how a state moves between the copies in time, or why the mass has the value it has.
 
 ## Summary
 
-The spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ is the Peirce carrier of the plain algebra, and it is a minimal left ideal, with a forced basis of one idempotent and one nilpotent. As a module it is the unique simple module, with $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$; the left action is the defining representation of the double cover, and $-e_t$ acts as $-\mathrm{id}$, which is where spin-$\tfrac12$ lives.
+$\mathbb{B}$ alone has three elementary carrier types, represented by four spaces, and exactly three elementary spins: the centre carries $0$, each Peirce plane carries $\tfrac12$, and the traceless part carries $1$. The associative modules give only $\tfrac12$, because $\mathbb{B}\cong M_2(\mathbb{C})$ has a single simple module of dimension two; the adjoint modules give $0$ and $1$, because $\mathbb{B}=\mathbb{C}e_t\oplus\mathfrak{sl}_2(\mathbb{C})$. There is no fourth elementary value. Higher spin requires a tensor product.
+
+The three values are the spins of all observed elementary particles: $0$ for the Higgs, $\tfrac12$ for the twelve quarks and leptons, $1$ for the photon, the $W^\pm$, the $Z$ and the eight gluons. No observed elementary particle carries another spin. The graviton of spin $2$ is not observed, and the higher-spin hadrons are composites. The match is a match of labels, not a prediction of the particle content.
+
+Within the spin-$\tfrac12$ carrier, the spinor space $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ is the Peirce carrier of the plain algebra, and it is a minimal left ideal, with a forced basis of one idempotent and one nilpotent. As a module it is the unique simple module, with $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$; the left action is the defining representation of the double cover, and $-e_t$ acts as $-\mathrm{id}$, which is where spin-$\tfrac12$ lives.
 
 The same carrier carries a second structure from the plain sesquilinear product: a positive definite Hermitian form of Gram matrix $\tfrac12 I_2$, the Born pairing and the normalisation. The two structures do not coincide: the algebra's own bilinear form is degenerate on the carrier, $\operatorname{diag}(\tfrac12,0)$, with radical the nilpotent line. The module is composition and the Hilbert space is probability; the spin is a module datum and the ray a Hilbert datum; the vacuum is a module choice and the normalisation a metric condition.
 
@@ -353,6 +432,8 @@ The algebra also splits into two minimal left ideals, the second column $\mathbb
 
 | symbol | meaning |
 | --- | --- |
+| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre, the spin-$0$ carrier |
+| $V=\ker\operatorname{tr}$ | the traceless part, the spin-$1$ carrier |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=e_t-\tilde\Pi_+$ | the vacuum idempotent and its Peirce complement |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | the nilpotent matrix units $E_{12}$ and $E_{21}$ |
 | $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ | the spinor space, the Peirce carrier, first column |
@@ -363,14 +444,16 @@ The algebra also splits into two minimal left ideals, the second column $\mathbb
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hilbert form of the second slot |
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ | the algebra's own bilinear form |
 | $B_S=\operatorname{diag}(\tfrac12,0)$ | the restriction of the algebra's form to $S$ |
-| $S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ | its orthogonal complement of $S$ |
+| $S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ | the orthogonal complement of $S$ |
 | $S^{*}=\tilde\Pi_+\mathbb{B}$ | the dual, a right ideal, not the complement |
 | $\bar{\cdot}$ | the coefficient conjugation, $\bar S=\mathbb{B}\tilde\Pi_-$ |
 
 ## Further Reading
 
+- [The Spin of a Biquaternion](../articles_maths/the-spin-of-a-biquaternion.html), for the three carrier types, the proof that there is no fourth elementary invariant subspace, and the observed-spin table.
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-in-the-biquaternion-algebra.html), for the corners, the matrix units and the minimal ideals.
 - [The Category of Modules](../articles_maths/modules-over-the-biquaternion-algebra.html), for simplicity, the endomorphism ring and the regular module.
+- [Higher Spin from Tensor Products](higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html), for the spins beyond the elementary list.
 - [The Column Ideals of a Matrix Ring: One Idempotent and \(n-1\) Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html), for the structural count of the basis.
 - [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html), for the positive definite form and its Gram matrix.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the probability structure.

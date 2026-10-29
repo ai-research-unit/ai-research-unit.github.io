@@ -255,7 +255,7 @@ $$
 $$
 The one-sided operator therefore acts by the **same** diagonal matrix on the two spinor spaces and never mixes the two chiralities. The two copies are not an accident of notation: $S_+$ and $S_-$ are distinct minimal left ideals, and left multiplication preserves each of them separately. Neither $S_+$ nor $S_-$ is an eigenspace of $L_{\tilde Q}$: each carries both eigenvalues, and the eigenspaces of $L_{\tilde Q}$ are the right ideals $\tilde\Pi_\pm\mathbb{B}$ of §*The Eigenbasis*.
 
-**The label is the Peirce chirality.** The words first and second chirality name the two Peirce components $S_+$ and $S_-$. They are not the two Lorentz chiralities: both components carry the same spinor representation, and the two Lorentz chiralities are the two tensor slots of §*The Weight Relation and the Two Copies*.
+**The label is the Peirce index.** The words first and second chirality name the two Peirce components $S_+$ and $S_-$; they are a copy label, not a Lorentz chirality. Both components carry the same spinor representation, and the two Lorentz chiralities are the two tensor slots of §*The Weight Relation and the Two Copies*.
 
 In the eigenbasis matrix model $\mathsf M^{\tilde Q}$ — not the Pauli model $\mathsf M_2$ of §*Conventions* — with
 $$
@@ -697,7 +697,7 @@ $$
 \qquad
 \lambda_\pm=Q_t\pm iB .
 $$
-The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ are the two Peirce chiralities. On each, with the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ or $(\vec\Upsilon_-,\tilde\Pi_-)$, the operator is the same matrix
+The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-$ are the two Peirce copies. On each, with the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_+)$ or $(\vec\Upsilon_-,\tilde\Pi_-)$, the operator is the same matrix
 $$
 \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 $$
@@ -727,7 +727,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and skew-symmetrized multiplication blocks |
 | $\lambda_\pm=Q_t\pm iB$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the two eigenvalues of $L_{\tilde Q}$ |
 | $\tilde\Pi_\pm,\vec\Upsilon_\pm$ | the eigenprojections and the normalised nilpotents of the eigenbasis |
-| $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two spinor spaces (Peirce chirality), the Peirce carriers (minimal left ideals here) |
+| $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two spinor spaces (Peirce copy), the Peirce carriers (minimal left ideals here) |
 | $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$ | the common spinor matrix on $S_+$ and $S_-$ |
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, with $\mathbb{B}\cong S\otimes S^{*}$ |
 | $\rho,\bar\rho$ | the defining representation on $S$ and its conjugate |

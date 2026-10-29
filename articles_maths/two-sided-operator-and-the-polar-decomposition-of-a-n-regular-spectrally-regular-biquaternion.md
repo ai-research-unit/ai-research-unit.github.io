@@ -513,7 +513,7 @@ The phase is the one factor that the sandwich does not see. It is visible to the
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, with $\mathbb{B}\cong S\otimes S^{*}$ |
 | $\rho,\bar\rho$ | the defining representation on $S$ and its conjugate |
 | $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
-| $\tilde\Pi_\pm$, $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the eigenprojections and the two left ideals of the one-sided reading (Peirce chirality) |
+| $\tilde\Pi_\pm$, $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the eigenprojections and the two left ideals of the one-sided reading (Peirce index) |
 | $\psi\ge0$, $\theta\in[0,2\pi]$ | the rapidity and the rotation angle |
 | $B_\pm$ | the $4\times4$ matrices of the boost on $\mathbb{M}_\pm$ |
 | $\mathsf R(\theta,\vec u_{\mathrm r})$ | the Rodrigues rotation matrix of the rotor |

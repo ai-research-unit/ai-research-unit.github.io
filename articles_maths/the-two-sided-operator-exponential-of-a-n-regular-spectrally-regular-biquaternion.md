@@ -108,7 +108,7 @@ The weights add. For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm
 
 **The sandwich has no half-angle of its own.** It is the vector representation, of dimension four; its weights are the sums. The half-angle $\theta/2$ and the half-rapidity $\psi/2$ live on a single slot, in *The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion*, §*The Exponential Polar Word on a Spinor*. The sandwich is the double of the half-spin, not a half-spin itself.
 
-**The two Peirce chiralities are not the two Lorentz chiralities.** The two columns $S_+$ and $S_-$ carry the same Weyl representation $\rho$; the two Lorentz chiralities are the two tensor slots $S$ and $S^{*}$, that is the left and right slots.
+**The two Peirce copies are not the two Lorentz chiralities.** The two columns $S_+$ and $S_-$ carry the same Weyl representation $\rho$; the two Lorentz chiralities are the two tensor slots $S$ and $S^{*}$, that is the left and right slots.
 
 **The addition is at the level of generators.** For a general word the two slot exponents do not combine into one rapidity and one angle unless the axes commute. The four products $\lambda_i\bar\lambda_j$ remain exact; the split into a boost and a rotation is the content of §*The Boost* and §*The Rotor* for commuting axes. For a pure non-central factor the eigenvalue $1$ occurs twice in the list; for the scale the value $r^{2}$ occurs four times, and for the phase the value $1$ occurs four times.
 

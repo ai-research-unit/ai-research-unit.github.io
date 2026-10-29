@@ -215,7 +215,7 @@ More generally, for a Hermitian observable $\tilde H=h_t e_t+i\vec h$ the expect
 $$
 \operatorname{Tr}\bigl(\rho_4\,\mathsf M_4(\tilde H)\bigr)=h_t+\vec r\cdot\vec h,
 $$
-which is the affine function of the state determined by the four numbers $(h_t,\vec h)$. The Born pairing of *Spin and the Two State Spaces* is the same identity written with the state idempotent, and the doubling cancels because both copies carry the same state.
+which is the affine function of the state determined by the four numbers $(h_t,\vec h)$. The Born pairing of *Spin and the Three Elementary Carriers* is the same identity written with the state idempotent, and the doubling cancels because both copies carry the same state.
 
 ## The Qubit as a Spinor
 
@@ -228,7 +228,7 @@ a rank-two projector with Bloch vector
 $$
 r_k=\xi^{\dagger}\sigma_k\xi.
 $$
-The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the Peirce carrier $\mathbb B\tilde\Pi_+$, which is the minimal left ideal here, and the module structure that makes it a Hilbert space is the second structure of *Spin and the Two State Spaces*.
+The vector $\xi$ is defined up to a phase, $\xi\mapsto e^{i\alpha}\xi$, and the phase cancels in $\rho$: the state is the ray, not the vector. In the algebra the spinor is an element of the Peirce carrier $\mathbb B\tilde\Pi_+$, which is the minimal left ideal here, and the module structure that makes it a Hilbert space is the second structure of *Spin and the Three Elementary Carriers*.
 
 **The mixed case.** A general state is a convex combination of pure ones,
 $$
@@ -275,5 +275,5 @@ The Hermitian basis of the regular image is $\mathrm I_4$ and the three Pauli ma
 - [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-representation-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two copies
 - [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](m4c-representation-the-spectral-projectors-and-the-nilpotents.html), for the projectors
 - [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m2c-representation-spin-qubits-and-the-bloch-vector.html), for the $2\times2$ version
-- [Spin and the Two State Spaces](../articles_physics/spin-and-the-two-state-spaces.html), for the spinor
+- [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html), for the spinor
 - [The Pauli Correspondence and the Matrix Image](../articles_physics/the-pauli-correspondence-and-the-matrix-image.html), for the physical reading

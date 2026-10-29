@@ -16,7 +16,7 @@ $$
 $$
 The root is the only input. No family of idempotents is preferred, and no element of a mixed line is chosen.
 
-The article defines the family and the four lines, proves that each line is one-dimensional and that the lines sum directly, computes their multiplication rule, reads the weights of the root and the spin of the spinor space, and identifies the grading. The choice of an element in each line is the subject of *The Peirce Basis of the Biquaternion Algebra*; it needs more than the root. An example is given at the end.
+The article defines the family and the four lines, proves that each line is one-dimensional and that the lines sum directly, computes their multiplication rule, reads the two indices that the root assigns to each line, and identifies the grading. The choice of an element in each line is the subject of *The Peirce Basis of the Biquaternion Algebra*; it needs more than the root. An example is given at the end.
 
 ## The Root and the Family
 
@@ -97,31 +97,28 @@ which lies in $\mathbb{B}_{sv}$ when $t=u$ and is zero otherwise.
 
 The right index of the first factor must equal the left index of the second; the product runs from the left index of the first to the right index of the second. The mixed lines are square-zero, and the diagonal lines are the two idempotent lines.
 
-## The Weights
+## The Two Indices
 
-**Left and right multiplication by the root give the two indices, and their difference is the adjoint weight.** For $\tilde Q\in\mathbb{B}_{st}$,
+**Left and right multiplication by the root give the two indices, and their difference is the adjoint index.** For $\tilde Q\in\mathbb{B}_{st}$,
 $$
 \tilde\Xi\tilde Q=s\tilde Q,\qquad \tilde Q\tilde\Xi=t\tilde Q,\qquad
 [\tilde\Xi,\tilde Q]=(s-t)\tilde Q.
 $$
 
-| Corner | $L_{\tilde\Xi}$ | $R_{\tilde\Xi}$ | $\operatorname{ad}_{\tilde\Xi}$ | $\operatorname{ad}_{J_{3}}$, $J_{3}=\tfrac12\tilde\Xi$ |
-|---|---|---|---|---|
-| $\mathbb{B}_{++}$ | $+1$ | $+1$ | $0$ | $0$ |
-| $\mathbb{B}_{+-}$ | $+1$ | $-1$ | $+2$ | $+1$ |
-| $\mathbb{B}_{-+}$ | $-1$ | $+1$ | $-2$ | $-1$ |
-| $\mathbb{B}_{--}$ | $-1$ | $-1$ | $0$ | $0$ |
+| Corner | $L_{\tilde\Xi}$ | $R_{\tilde\Xi}$ | $\operatorname{ad}_{\tilde\Xi}$ |
+|---|---|---|---|
+| $\mathbb{B}_{++}$ | $+1$ | $+1$ | $0$ |
+| $\mathbb{B}_{+-}$ | $+1$ | $-1$ | $+2$ |
+| $\mathbb{B}_{-+}$ | $-1$ | $+1$ | $-2$ |
+| $\mathbb{B}_{--}$ | $-1$ | $-1$ | $0$ |
 
-**The spin of the spinor space.** The space
+**The two spinor spaces.** The spaces
 $$
 S_{+}=\mathbb{B}\tilde\Pi_{+}=\mathbb{B}_{++}\oplus\mathbb{B}_{-+}
-=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{B}_{-+}
+=\mathbb{C}\tilde\Pi_{+}\oplus\mathbb{B}_{-+},\qquad
+S_{-}=\mathbb{B}\tilde\Pi_{-}=\mathbb{B}_{+-}\oplus\mathbb{B}_{--}
 $$
-is two-dimensional over $\mathbb{C}$. The operator $J_{3}=\tfrac12\tilde\Xi$ acts on it with weight $+\tfrac12$ on $\tilde\Pi_{+}$ and $-\tfrac12$ on $\mathbb{B}_{-+}$. The highest weight is $\tfrac12$, so $S_{+}$ is irreducible of spin
-$$
-j=\frac12,\qquad 2j+1=2.
-$$
-The highest-weight vector is $\tilde\Pi_{+}$, which is fixed by the root. The lowest-weight line $\mathbb{B}_{-+}$ has no vector fixed by the root. The same holds on $S_{-}=\mathbb{B}\tilde\Pi_{-}$, with $\tilde\Pi_{-}$ of weight $-\tfrac12$ and $\mathbb{B}_{+-}$ of weight $+\tfrac12$. The spin is the highest weight; it is the same for every root.
+are two-dimensional over $\mathbb{C}$. On each, the root acts by left multiplication with the two simple eigenvalues $+1$ and $-1$, one on the diagonal line and one on the mixed line. The diagonal line is fixed by the root and the mixed line is not. This is the whole spectral data of the root on the two spaces; what it means for the representation theory of the algebra is read elsewhere, at operator level.
 
 **The ladder without a choice of basis.** Left multiplication by any nonzero element of $\mathbb{B}_{+-}$ carries $\mathbb{B}_{-+}$ isomorphically onto $\mathbb{B}_{++}$ and annihilates $\mathbb{B}_{++}$; left multiplication by any nonzero element of $\mathbb{B}_{-+}$ carries $\mathbb{B}_{++}$ isomorphically onto $\mathbb{B}_{-+}$ and annihilates $\mathbb{B}_{+-}$. So the two mixed lines are the raising and lowering operators, up to scale. The scale is not fixed by the root; it is the gauge, treated in *The Peirce Basis of the Biquaternion Algebra*.
 
@@ -171,11 +168,11 @@ $$
 \vec\Upsilon_{2}\vec\Upsilon_{1}=\tilde\Pi_{-},\qquad
 \vec\Upsilon_{1}^{2}=\vec\Upsilon_{2}^{2}=0,
 $$
-and the other four products vanish. The weights under $J_{3}=\tfrac12 i\vec e_{z}$ are $+\tfrac12$ on $\tilde\Pi_{+}$ and $\vec\Upsilon_{1}$, and $-\tfrac12$ on $\vec\Upsilon_{2}$ and $\tilde\Pi_{-}$.
+and the other four products vanish. Left multiplication by $\tilde\Xi$ has eigenvalue $+1$ on $\tilde\Pi_{+}$ and $\vec\Upsilon_{1}$, and $-1$ on $\vec\Upsilon_{2}$ and $\tilde\Pi_{-}$.
 
 ## Summary
 
-A root $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$ gives the idempotents $\tilde\Pi_{\pm}=(e_{t}\pm\tilde\Xi)/2$ and four complex lines $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$, each of dimension one, with the product rule $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$. The root has four real parameters; the family is the root modulo sign. The diagonal lines are fixed by the root and the mixed lines are nonzero and not fixed. On the spinor space $S_{+}=\mathbb{B}\tilde\Pi_{+}$ the operator $J_{3}=\tfrac12\tilde\Xi$ has highest weight $\tfrac12$, so the spinor has spin $j=\tfrac12$; on the traceless part $\operatorname{ad}_{J_{3}}$ has weights $+1,0,-1$. The four lines are a $\mathbb{Z}/2$-grading. The root fixes the lines but no element inside a mixed line.
+A root $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$ gives the idempotents $\tilde\Pi_{\pm}=(e_{t}\pm\tilde\Xi)/2$ and four complex lines $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$, each of dimension one, with the product rule $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$. The root has four real parameters; the family is the root modulo sign. The diagonal lines are fixed by the root and the mixed lines are nonzero and not fixed. On each spinor space $S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$ the operator $L_{\tilde\Xi}$ has the simple eigenvalues $+1$ and $-1$; on the traceless part $\operatorname{ad}_{\tilde\Xi}$ has the eigenvalues $+2,0,-2$. The four lines are a $\mathbb{Z}/2$-grading. The root fixes the lines but no element inside a mixed line.
 
 ## Summary of Notation
 
@@ -187,7 +184,6 @@ A root $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$ gives the idempotents $\ti
 | $\tilde\Pi_{\pm}=\tfrac12(e_{t}\pm\tilde\Xi)$ | The two idempotents |
 | $\mathbb{B}_{st}=\tilde\Pi_{s}\mathbb{B}\tilde\Pi_{t}$ | A Peirce line |
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | Nonzero elements of the mixed lines |
-| $J_{3}=\tfrac12\tilde\Xi$ | The spin operator on the spinor space |
 
 ## Further Reading
 
@@ -195,5 +191,4 @@ A root $\tilde\Xi=i\vec u$ with $\vec u\cdot\vec u=1$ gives the idempotents $\ti
 - [Square Roots of One and the Idempotents of the Biquaternion Algebra](square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots and the idempotents.
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-in-the-biquaternion-algebra.html), for the choice of an element in each line and the gauge.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the elements of the two spinor spaces.
-- [The Weight of a Frame Root and the Spin Quantum Number](the-weight-of-a-frame-root-and-the-spin-quantum-number.html), for the definition of the highest weight and the spin.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general case.

@@ -151,7 +151,7 @@ $$
 $$
 each weight twice. The one-sided operator is $2\rho$ as a left module: two copies of the Weyl spinor, not the Dirac spinor $\rho\oplus\bar\rho$. One Peirce column is one Weyl spinor; the whole of $L$ is two of them. The precise phrase is therefore: the one-sided operator, restricted to one Peirce component, is the half-spin.
 
-**The two Peirce chiralities are not the two Lorentz chiralities.** Both $S_+$ and $S_-$ carry the same representation $\rho$; they differ by the Peirce idempotent, not by the Lorentz chirality. The two Lorentz chiralities are the two tensor factors $S$ and $S^{*}$, that is the left and right slots.
+**The two Peirce copies are not the two Lorentz chiralities.** Both $S_+$ and $S_-$ carry the same representation $\rho$; they differ by the Peirce idempotent, not by the Lorentz chirality. The two Lorentz chiralities are the two tensor factors $S$ and $S^{*}$, that is the left and right slots.
 
 **Factor by factor.** For a general word the factors do not commute and $\lambda_\pm$ are not $e^{\pm i\theta/2}$ or $e^{\mp\psi/2}$. There is no single half-angle of a general polar word; the additive relation is the statement for the pure factors and for commuting axes.
 

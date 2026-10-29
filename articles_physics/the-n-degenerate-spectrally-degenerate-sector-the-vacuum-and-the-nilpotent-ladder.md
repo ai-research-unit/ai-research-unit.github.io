@@ -264,5 +264,5 @@ No dynamics is supplied. The cell says what the vacuum and the nilpotents are at
 - [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html), for the nine interpretations of the nilpotent.
 - [The N-Degenerate, Spectrally Regular Sector: The Massless Regime](the-n-degenerate-spectrally-regular-sector-the-massless-regime.html), for the other degenerate cell.
 - [The N-Regular, Spectrally Degenerate Sector: The Rest Frame and the Exceptional Point](the-n-regular-spectrally-degenerate-sector-the-rest-frame-and-the-exceptional-point.html), for the defective unit.
-- [Spin and the Two State Spaces](spin-and-the-two-state-spaces.html), for the rungs and the state space.
+- [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the rungs and the state space.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the nesting of the cones.

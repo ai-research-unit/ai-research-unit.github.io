@@ -294,5 +294,5 @@ No dynamics is supplied. The group is the group of reversible changes of basis; 
 - [The Polar Decomposition and Its Three Pairings](the-polar-decomposition-and-its-three-pairings.html), for the amplitude–frame split.
 - [Element and Operator Representations: The Three Actions](the-element-and-operator-representations.html), for the left action, the inner automorphism and the sandwich.
 - [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html), for $U(1,3)$ and the compact part.
-- [Spin and the Two State Spaces](spin-and-the-two-state-spaces.html), for the spinor spaces and the double cover.
+- [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the spinor spaces and the double cover.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the Born form.
