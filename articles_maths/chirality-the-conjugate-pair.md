@@ -230,30 +230,25 @@ The proposition is the precise reason the mass is a pairing and not an operator 
 
 ## The Word Spin and the Labels Beside It
 
-**The corpus has one definition of spin, and three other words sit beside it. None of the three is a second definition.**
+**The maths corpus has no definition of spin. It has a weight computation, and three labels that sit beside it.**
 
-**The definition.** In *The Spin of a Biquaternion*, a spin triple $(H,U,V)$ of the complexified algebra acts on a carrier $(W,\rho)$, the eigenvalues of $\rho(H)$ are the weights, and the spin is half the highest weight,
+**The weight.** A grading element $h$ of the complexified algebra acts on a carrier $(W,\rho)$; the eigenvalues of $\rho(h)$ are the weights, and the highest weight is $\lambda_{\max}(\rho(h))$. On the Peirce carrier the root $h=\tilde\Xi$ has weights $\pm1$; on the traceless part under the adjoint action the weights of $h$ are $+2,0,-2$. These are representation-theoretic data. The passage from the highest weight to a physical spin needs the rotation generator, the rest-frame one-particle space and the unit $\hbar$, and none of them is supplied by the algebra. The half-angle $\theta/2$ of the polar decomposition is the exponential coordinate of the weight $\tfrac12$ on the spinor carrier: the rotor $\exp(\theta\vec u/2)$ acts on a single slot with exponents $\pm i\theta/2$. The half-angle is not a weight and not a normalisation of one. The factor $\tfrac12$ is not a chirality; it is why a spinor rotation has period $4\pi$ rather than $2\pi$.
 
-$$
-j=\frac{\lambda_{\max}(\rho(h))}{2}.
-$$
+**The Peirce index.** The sign $P=R_{i\vec e_z}$ grades $S_+\cong S_-$. It is a **copy label**, not a weight and not a chirality. It says which of two isomorphic copies a vector lies in.
 
-On the Peirce carrier the Cartan is the frame root $H=h=\tilde\Xi$, its weights are $\pm1$, so $j=\tfrac12$. On the traceless part under the adjoint action the weights of $h$ are $+2,0,-2$, so $j=1$. This is the only definition used in the corpus. The half-angle $\theta/2$ of the polar decomposition is the exponential coordinate of the weight $\tfrac12$ on the spinor carrier: the rotor $\exp(\theta\vec u/2)$ acts on a single slot with exponents $\pm i\theta/2$. The half-angle is not the spin and it is not a normalisation of the spin. The factor $\tfrac12$ is not a chirality; it is why a spinor rotation has period $4\pi$ rather than $2\pi$.
+**The chirality.** The central sign $\chi=ij$ grades $S$ against $S^{\mathrm{c}}$. It is a **sign**, not a magnitude and not a weight. It says which of two inequivalent halves a field lies in. A field can carry both a weight and a chiral sign; the two are independent labels.
 
-**The Peirce index.** The sign $P=R_{i\vec e_z}$ grades $S_+\cong S_-$. It is a **copy label**, not a spin and not a chirality. It says which of two isomorphic copies a vector lies in.
-
-**The chirality.** The central sign $\chi=ij$ grades $S$ against $S^{\mathrm{c}}$. It is a **sign**, not a magnitude and not a spin. It says which of two inequivalent halves a field lies in. A field can carry both a spin and a chiral sign; the two are independent labels.
-
-**The adjoint carrier.** In *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, the spin-one carrier is the adjoint action of the rotation algebra on the material sector $\mathbb{M}_-$, and the higher integer carriers are symmetric traceless tensors of that sector. The carrier is not a definition: its spin is $j=1$ by the definition above, read on $V$ with the operator $h/2$. It supplies the integer-spin multiplets, not the chiral halves.
+**The adjoint carrier.** In *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, the integer carriers are the adjoint action of the rotation algebra on the material sector $\mathbb{M}_-$ and its symmetric traceless tensors. The carrier is not a definition: its highest weight is $2$ on $V$, so the half-weight is $1$, read with the operator $h/2$. It supplies the integer multiplets, not the chiral halves.
 
 | object | definition | carrier | role |
 | --- | --- | --- | --- |
-| spin | $j=\lambda_{\max}(\rho(h))/2$ | a carrier $W$ | the number |
+| weight | $\lambda_{\max}(\rho(h))$ | a carrier $W$ | the top weight |
+| half-weight | $\lambda_{\max}(\rho(h))/2$ | a carrier $W$ | the label $j$ |
 | Peirce index | $P=R_{i\vec e_z}$ | $S_+\oplus S_-$ | the copy |
 | chirality | $\chi=ij$ | $S\oplus S^{\mathrm{c}}$ | the chiral half |
-| adjoint carrier | $\rho=\operatorname{ad}$, operator $h/2$ | $\mathbb{M}_-$, symmetric traceless tensors | the integer-spin multiplet |
+| adjoint carrier | $\rho=\operatorname{ad}$, operator $h/2$ | $\mathbb{M}_-$, symmetric traceless tensors | the integer multiplet |
 
-**The one definition and the three labels answer different questions.** The root supplies the weights; the Peirce decomposition supplies the copies; the complexification supplies the chiral sign; the adjoint action supplies a carrier on which the same definition gives the integer spins. Only the first row is the definition of spin.
+**The weights and the three labels answer different questions.** The root supplies the weights; the Peirce decomposition supplies the copies; the complexification supplies the chiral sign; the adjoint action supplies a carrier on which the same weight computation gives the integer labels. No row is a definition of spin.
 
 ## Summary
 
@@ -311,7 +306,6 @@ The first and the fourth rows are the same decomposition read as a right multipl
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the two idempotents, the four Peirce lines and the multiplication table.
 - [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](the-column-ideals-of-a-matrix-ring.html), for the identification of the nilpotents with the matrix units.
 - [The Category of Modules](the-category-of-modules.html), for the simple module, $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$ and the classification of left modules.
-- [The Weight of a Frame Root and the Spin Quantum Number](the-weight-of-a-frame-root-and-the-spin-quantum-number.html), for the highest weight, the half-weight normalisation and the weights of the Peirce carrier and of the traceless part.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint-action reading of integer spin and the symmetric traceless tensors.
 - [Conjugate-Linear Maps and the Conjugate Dual](conjugate-linear-maps-and-the-conjugate-dual.html), for the conjugate module $M^{\varsigma}$ and the semilinear maps.
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the matrix model, the $\epsilon$-dressed conjugation and the adjugate.

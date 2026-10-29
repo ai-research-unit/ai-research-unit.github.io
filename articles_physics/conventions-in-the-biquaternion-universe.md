@@ -1011,7 +1011,7 @@ The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, th
 
 ### The Spin Convention
 
-**The word spin has one definition.** It is $j=\lambda_{\max}(\rho(H))/2$ on a carrier $(W,\rho)$ of a spin triple $(H,U,V)$, with $[H,U]=2U$, $[H,V]=-2V$ and $[U,V]=H$; for a frame root $H=2e-1$. It is stated in *The Spin of a Biquaternion*. The **spin operator** is $\tilde S_{\vec u}=h/2$; the half-angle is its exponential coordinate; the Peirce index is a copy label; and the chirality is $\chi=ij$, the central sign of the complexification. A classical vector is a **spin vector**, or intrinsic angular momentum, and the continuous $2+1$ parameter is a **statistics parameter**; neither is a second definition.
+**Spin is the intrinsic angular momentum of a particle.** In the rest frame the one-particle states satisfy $S^2=\hbar^2s(s+1)$ and $S_z=\hbar m_s$, with $s$ an integer or half-integer and $m_s=-s,\dots,s$; relativistically $s$ labels the little-group $SU(2)$ representation, and for a massless particle the label is helicity. The algebra supplies the rotation action and the weights of its generator on a carrier, but neither the rest-frame one-particle space nor the unit $\hbar$: those are physical inputs. The half-angle is the exponential coordinate of the rotor; the Peirce index is a copy label; and the chirality is $\chi=ij$, the central sign of the complexification. A classical vector is a **spin vector**, or intrinsic angular momentum, and the continuous $2+1$ parameter is a **statistics parameter**; neither is a second definition.
 
 ## The Four-Vector Representation
 

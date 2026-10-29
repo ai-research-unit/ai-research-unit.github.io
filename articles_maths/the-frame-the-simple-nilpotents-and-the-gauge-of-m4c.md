@@ -6,7 +6,7 @@
 
 The article constructs the frame from a basis adapted to the spectral flag, states the matrix-unit rule, isolates the three simple nilpotents $E_{12},E_{23},E_{34}$, computes the gauge action and its cocycle, and counts the parameters: $12$ complex from the root and $3$ complex from the gauge, $15$ in all. The idempotents are gauge invariant. The gauge is not a second root: at $n=2$ the old "second root" is exactly a point of the gauge, and for $n=4$ there is no second root at all, only the three parameters.
 
-The idempotents are from *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$*; the corners are *The Peirce Decomposition of $M_4(\mathbb{C})$*; the spin chain that uses the nilpotents as ladder steps is *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$*; the count of the root set is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*. The general construction is *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$* for $M_n(\mathbb{C})$.
+The idempotents are from *Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$*; the corners are *The Peirce Decomposition of $M_4(\mathbb{C})$*; the principal $\mathfrak{sl}_2$ uses the nilpotents as ladder steps; the count of the root set is *The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$*. The general construction is *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$* for $M_n(\mathbb{C})$.
 
 ## The Adapted Frame
 
@@ -365,7 +365,6 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for bases, dual bases and the matrix of a linear map.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root that fixes the flag.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the corners that the units span.
-- [The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the chain of nilpotents as a ladder.
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the coarse split and the mass block.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the general construction at order $n$.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion frame and the parameter $\lambda$.

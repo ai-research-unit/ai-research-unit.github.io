@@ -167,7 +167,7 @@ The rank-one row is the full Peirce decomposition seen from one line: $1$ for th
 
 **The Peirce decomposition is a direct-sum decomposition of the algebra, not a list of spinors.** The summands $A_{kl}$ are spaces of linear maps between the lines of a flag. An element of $A_{kl}$ is a map $V_l\to V_k$, not a spinor. The decomposition is a statement about the algebra as a module over itself, not about a representation of a spin group.
 
-**Not every Peirce element is a spinor.** The corner $A_{kl}$ is one-dimensional, and every nonzero element of it is a map of rank one between two lines. Calling such an element a spinor would make every matrix unit a spinor, which is false. A spinor, where the word applies, is a vector of the carrier module of the spin chain, introduced in *The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$*; it is not an element of a Peirce corner.
+**Not every Peirce element is a spinor.** The corner $A_{kl}$ is one-dimensional, and every nonzero element of it is a map of rank one between two lines. Calling such an element a spinor would make every matrix unit a spinor, which is false. A spinor, where the word applies, is a vector of the carrier module of the principal $\mathfrak{sl}_2$; it is not an element of a Peirce corner.
 
 **The carrier is not a corner.** For $n=2$ the carrier is $\mathbb{C}^{2}$, isomorphic to a minimal left ideal; for $n\ge3$ the carrier is $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$, of dimension $n$, and it is not isomorphic to any Peirce corner. The corner $A_{kl}$ has dimension $1$ for every $n$; the carrier has dimension $n$. They never coincide in dimension for $n\ge2$.
 
@@ -193,7 +193,6 @@ A root with simple spectrum gives a complete flag, and the Peirce corners $A_{kl
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for block matrices, ranks and the spectral decomposition.
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the idempotents that produce the flag.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-mnc.html), for the vectors inside the corner lines.
-- [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the carrier, which is not a corner.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion case $n=2$, where the coarse and the fine splits coincide.
 - [The Peirce Decomposition of $M_3(\mathbb{C})$](the-peirce-decomposition-of-m3c.html), the case $n=3$.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), the case $n=4$.

@@ -104,7 +104,7 @@ $$
 
 defined in the instantaneous rest frame. Its covariant completion is the pair $(\tilde{S},\gamma_g)$: the moment is the spatial part of the rest-frame representative of $\tilde{S}$, multiplied by the gyromagnetic ratio. In the absence of a field the moment is constant in the rest frame; the whole content of the following sections is how the covariant equation of motion transports $\tilde{S}$ so that this rest-frame statement is recovered at every instant.
 
-Two remarks fix the status of the object. The spin vector is the classical intrinsic angular momentum; it is not the spin of *The Spin of a Biquaternion*, which is the number $j$. The magnitude of the spin vector is fixed by $j$. First, the orthogonality condition is not an extra postulate but the definition of the spin vector as an intrinsic, frame-independent direction: any four-vector that satisfies it has only three independent components, and the equation of motion must preserve it. Second, an equivalent description uses an antisymmetric **spin tensor** $S^{\mu\nu}$, related to the spin four-vector by
+Two remarks fix the status of the object. The spin vector is the classical intrinsic angular momentum; it is not the spin quantum number of the little-group representation. The magnitude of the spin vector is fixed by that number. First, the orthogonality condition is not an extra postulate but the definition of the spin vector as an intrinsic, frame-independent direction: any four-vector that satisfies it has only three independent components, and the equation of motion must preserve it. Second, an equivalent description uses an antisymmetric **spin tensor** $S^{\mu\nu}$, related to the spin four-vector by
 
 $$
 S^\mu=\frac{1}{2c}\,\epsilon^{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma},

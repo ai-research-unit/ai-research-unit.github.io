@@ -6,7 +6,7 @@ This article is the analytic companion of *The Sandwich of a N-Regular, Spectral
 
 The sandwich is quadratic in the element, so it is not a representation, and there is no identity $\exp(t\Theta_{\tilde Q})=\Theta_{\exp(t\tilde Q)}$. What replaces it is the spectral form: on $\Sigma_{11}$ the sandwich is diagonalisable, and its exponential is obtained by exponentiating its four eigenvalues. The absence of an element identity is itself the doubling: the sandwich squares the modulus and pairs the two slots, and the exponent of the pair is the sum of the two slot exponents.
 
-The plan is the following. §*The Operator Exponential* reads the spectrum of the group. §*The Exponents of the Factors* gives the scale, the boost and the rotor. §*The Pure Factors and the Full Spin* and §*The Vector Representation as the Double of the Half-Spin* give the representation-theoretic form. §*The Angle Bookkeeping* states the doubling rule. The article closes with the summary, the notation and the readings.
+The plan is the following. §*The Operator Exponential* reads the spectrum of the group. §*The Exponents of the Factors* gives the scale, the boost and the rotor. §*The Pure Factors and the Full Rotor* and §*The Vector Representation as the Double of the Half-Angle* give the representation-theoretic form. §*The Angle Bookkeeping* states the doubling rule. The article closes with the summary, the notation and the readings.
 
 ## The Operator Exponential
 
@@ -57,7 +57,7 @@ The exponent is $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ and the output is the rapid
 
 The exponent is $\tfrac{\theta}{2}\vec u_{\mathrm r}$ and the output is the rotation of angle $\theta$ about $\vec u_{\mathrm r}$. The parameter of the factor is half the parameter of its image. The rotor is $*$-unitary, so the two slots carry opposite signs; the sandwich conjugates instead of composing the two exponents, and the conjugation by $\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ is the rotation of angle $\theta$. Equivalently, the double cover $SU(2)\to SO(3)$ sends $\pm\tilde u_{\mathrm r}$ to the same rotation, and the parameter $\theta$ of the image is twice the parameter $\theta/2$ of the rotor. The sandwich sees the rotation and not the sign; the sign is the extra data of the one-sided operator.
 
-## The Pure Factors and the Full Spin
+## The Pure Factors and the Full Rotor
 
 For each pure factor, read with the other factors absent, the products are elementary. The scale $r$ has $\lambda_\pm=r$ and products $r^{2}$. The central phase has $\lambda_\pm=\exp(i\alpha)$ and products $\exp(i\alpha)\exp(-i\alpha)=1$. The boost has
 $$
@@ -92,7 +92,7 @@ For a general word the two factors do not commute, and the common eigenbasis is 
 
 **Corollary (the sandwich is the two-slot operator).** The sandwich acts on the left and the right slots of the matrix model. Its spectrum is the four products $\lambda_i\bar\lambda_j$. The one-sided operator is the restriction to one slot; the sandwich is the pairing of the two slots. The half-angle of the rotor and the half-rapidity of the boost belong to one slot; their doubles belong to the pair.
 
-## The Vector Representation as the Double of the Half-Spin
+## The Vector Representation as the Double of the Half-Angle
 
 The two slots are the two tensor factors of $\mathbb{B}\cong S\otimes S^{*}$, where $S=\mathbb{C}^{2}$ is the spinor space and $S^{*}$ its dual. The left factor acts on $S$, the right on $S^{*}$, and the sandwich is
 $$
@@ -181,6 +181,6 @@ The spectral reading is the product formula. The one-slot pair of the rotor is $
 ## Further Reading
 
 - [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the algebraic companion: the closed form, the factor actions, the two slots and the image.
-- [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the half-spin on a single slot.
+- [The One-Sided Operator Exponential of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-a-n-regular-spectrally-regular-biquaternion.html), for the half-angle on a single slot.
 - [Exponential Polar Decomposition of a N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the element exponential, its logarithm and its spectral reading.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles.

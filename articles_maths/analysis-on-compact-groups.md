@@ -253,7 +253,7 @@ and only finitely many multiplicities are nonzero; the characters multiply as $\
 
 **The circle and the torus.** $\operatorname{Irr}(S^1) = \{\chi_n : n \in \mathbb{Z}\}$ with $\chi_n(\theta) = \exp(2\pi i n\theta)$ and $d_n = 1$; the transform is the Fourier series of *Harmonic Analysis on Groups*, §The Standard Cases, and the orthogonality relation is the elementary $\int_0^1 \exp(2\pi i(n-m)\theta)d\theta = \delta_{nm}$. For $T^n$ the dual is $\mathbb{Z}^n$ with characters $\chi_m(x) = \exp(2\pi i\langle m,x\rangle)$ and the theory is the multiple Fourier series.
 
-**$SU(2)$ and $SO(3)$.** The irreducible unitary representations of $K = SU(2)$ are the symmetric powers $V_j$ of the defining two-dimensional representation, indexed by the **spin** $j \in \frac{1}{2}\mathbb{Z}_{\geq 0}$, of dimension $d_j = 2j+1$. The character is determined by the conjugacy class of the diagonal element $t_\theta = \operatorname{diag}(\exp(i\theta),\exp(-i\theta))$:
+**$SU(2)$ and $SO(3)$.** The irreducible unitary representations of $K = SU(2)$ are the symmetric powers $V_j$ of the defining two-dimensional representation, indexed by $j \in \frac{1}{2}\mathbb{Z}_{\geq 0}$, of highest weight $2j$ and dimension $d_j = 2j+1$. The character is determined by the conjugacy class of the diagonal element $t_\theta = \operatorname{diag}(\exp(i\theta),\exp(-i\theta))$:
 
 $$
 \chi_j(t_\theta) = \frac{\sin\bigl((2j+1)\theta\bigr)}{\sin\theta} , \qquad 0 \leq \theta \leq \pi ,

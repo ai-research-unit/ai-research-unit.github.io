@@ -228,7 +228,6 @@ An adapted frame $(v_1,\dots,v_n)$ gives the matrix units $E_{kl}=v_k\ell_l$, wi
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for bases, dual bases and the matrix of a linear map.
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-mnc.html), for the root that fixes the flag.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-mnc.html), for the corners that the units span.
-- [The Spin Chain and the Adjoint Decomposition of $M_n(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-mnc.html), for the chain of nilpotents as a ladder.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion frame and the parameter $\lambda$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), the case $n=3$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), the case $n=4$.

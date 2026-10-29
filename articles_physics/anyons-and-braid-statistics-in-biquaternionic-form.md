@@ -81,7 +81,7 @@ The angle $\theta$ is the statistics angle, and it is continuous because the pro
 
 ### The Statistics Parameter and the Rotation Phase
 
-**The $2+1$-dimensional phase parameter is not the biquaternion spin.** In this article $s$ is the **statistics parameter**, defined by the rotation phase: a rotation by $2\pi$ multiplies the state by $\exp(2\pi i s)$. It is not the spin of *The Spin of a Biquaternion*, which is half the highest weight of a frame root on a carrier and takes the discrete values $0,\tfrac12,1$ on $\mathbb{B}$. The two agree in $3+1$ dimensions, where $s$ is an integer or half-integer and coincides with the spin of the little-group representation; in $2+1$ dimensions $s$ is continuous and the biquaternion definition does not apply.
+**The $2+1$-dimensional phase parameter is not the spin quantum number.** In this article $s$ is the **statistics parameter**, defined by the rotation phase: a rotation by $2\pi$ multiplies the state by $\exp(2\pi i s)$. It is not the spin of the $3+1$-dimensional little-group representation, which is an integer or half-integer. The two agree in $3+1$ dimensions; in $2+1$ dimensions $s$ is continuous and no spin quantum number of that kind exists.
 
 The statistics angle and $s$ are linked, as the angle and the spin are in $3+1$ dimensions, but the link is weaker. The exchange phase is the phase of a rotation by $\pi$ of the relative coordinate, so that
 

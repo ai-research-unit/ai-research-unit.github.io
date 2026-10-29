@@ -146,7 +146,7 @@ $$
 
 **Proof.** A matrix in $L_+$ has zero second block-column; its first block-column has a top part in $\mathcal{A}=\Pi M\Pi$ and a bottom part in $\mathcal{C}=QM\Pi$. The left action of $\mathcal{A}\oplus\mathcal{D}$ preserves the row decomposition and acts on the two parts by $\mathcal{A}$ and $\mathcal{D}$ respectively. The same argument with the second block-column gives $L_-\cong\mathcal{B}\oplus\mathcal{D}$.
 
-**The two carrier spaces of the spin chain.** The spin chain of *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$* has one carrier, $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$. The rank-two split has two carrier spaces, $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$, one per chirality. They are the modules of the two $M_2$ factors:
+**The two carrier spaces of the principal $\mathfrak{sl}_2$.** The principal $\mathfrak{sl}_2$ of the frame has one carrier, $\mathbb{C}^4=\operatorname{Sym}^3(\mathbb{C}^2)$. The rank-two split has two carrier spaces, $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$, one per chirality. They are the modules of the two $M_2$ factors:
 
 $$
 \mathcal{A}\ \text{acts on}\ \mathbb{C}^2_+,
@@ -154,7 +154,7 @@ $$
 \mathcal{D}\ \text{acts on}\ \mathbb{C}^2_- .
 $$
 
-The maps in $\mathcal{B}$ go from $\mathbb{C}^2_-$ to $\mathbb{C}^2_+$; the maps in $\mathcal{C}$ go from $\mathbb{C}^2_+$ to $\mathbb{C}^2_-$. The two carrier spaces are two-dimensional; the spin chain carrier is four-dimensional. They are different objects with similar names.
+The maps in $\mathcal{B}$ go from $\mathbb{C}^2_-$ to $\mathbb{C}^2_+$; the maps in $\mathcal{C}$ go from $\mathbb{C}^2_+$ to $\mathbb{C}^2_-$. The two carrier spaces are two-dimensional; the principal $\mathfrak{sl}_2$ carrier is four-dimensional. They are different objects with similar names.
 
 **The mass block.** The corner
 

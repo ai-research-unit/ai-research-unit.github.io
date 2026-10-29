@@ -38,7 +38,7 @@ $$
 1,3,5,7,9
 $$
 
-are the dimensions of the adjoint summands of *The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$*.
+are the dimensions of the adjoint summands of the principal $\mathfrak{sl}_2$.
 
 The Hermitian trace form $\operatorname{tr}(A^*B)$, the Frobenius form, is positive definite and has **no null cone**; the singular set is not a null cone of the metric. The complex bilinear pairing $\operatorname{tr}(AB)$ is indefinite, and its isotropic cone is a different set. The article assumes the matrix algebra, the trace and the involution; it uses the spectral theorem only through the definition of the operator norm, and it proves the basic inequalities directly.
 
@@ -195,7 +195,7 @@ and complex codimension $(5-r)^2$. The exact rank-$r$ stratum $M_5^{(r)}\setminu
 
 **Proof.** The derivative of the determinant vanishes exactly where the adjugate vanishes, i.e., at rank at most $3$; the rank-$4$ points are smooth. The singular locus of $M_5^{(3)}$ is $M_5^{(2)}$, and so on.
 
-**Remark.** **The successive codimensions of the rank strata are the odd numbers $1,3,5,7,9$.** The codimensions are the squares $1,4,9,16,25$; their differences are $3,5,7,9$ and the first is $1$. These are the dimensions of the adjoint summands $V_0,\dots,V_4$ of *The Spin Chain and the Adjoint Decomposition of $M_5(\mathbb{C})$*. The coincidence is a numerical pattern of the two stratifications; the rank strata and the adjoint summands are different objects.
+**Remark.** **The successive codimensions of the rank strata are the odd numbers $1,3,5,7,9$.** The codimensions are the squares $1,4,9,16,25$; their differences are $3,5,7,9$ and the first is $1$. These are the dimensions of the adjoint summands $V_0,\dots,V_4$ of the principal $\mathfrak{sl}_2$. The coincidence is a numerical pattern of the two stratifications; the rank strata and the adjoint summands are different objects.
 
 ### The Singular Locus
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A spinor is not a column of a matrix, and it is not every irreducible Peirce carrier. It is a coordinate vector on a subspace that one idempotent singles out inside an algebra, **when that subspace carries the spin-$\tfrac12$ weight of the frame root**. The idempotent fixes the subspace, its companion corner supplies the extra coordinate directions, and the diagonal corner supplies the coefficients. This article states that definition in a general finite-dimensional algebra, proves when the subspace is irreducible, identifies the weight condition that makes it a spinor space, and separates the algebraic object from the pictures that a matrix model provides.
+A spinor is not a column of a matrix, and it is not every irreducible Peirce carrier. It is a coordinate vector on a subspace that one idempotent singles out inside an algebra, **when that subspace carries the highest-weight-one weight of the frame root**. The idempotent fixes the subspace, its companion corner supplies the extra coordinate directions, and the diagonal corner supplies the coefficients. This article states that definition in a general finite-dimensional algebra, proves when the subspace is irreducible, identifies the weight condition that makes it a spinor space, and separates the algebraic object from the pictures that a matrix model provides.
 
 The subspace is the **Peirce carrier**
 
@@ -56,7 +56,7 @@ $$
 
 each weight occurring once over $D=eAe$; that is, $C(e)=L_+\oplus L_-$ with $hx=\pm x$ for $x\in L_\pm$. A **spinor frame** is the pair of $e$ and a companion frame $(\nu_1,\dots,\nu_s)$; in that frame the spinor is its coordinate vector $(d_0;d_1,\dots,d_s)\in D^{1+s}$.
 
-When the weight condition fails, $C(e)$ is a **Peirce carrier** and its coordinate vector is a Peirce coordinate, not a spinor. The definition has four ingredients: an idempotent, the subspace it fixes on the right, the companion corner that completes it, and the weight condition on the half-root. The last condition supplies the spin-$\tfrac12$ structure; irreducibility alone does not.
+When the weight condition fails, $C(e)$ is a **Peirce carrier** and its coordinate vector is a Peirce coordinate, not a spinor. The definition has four ingredients: an idempotent, the subspace it fixes on the right, the companion corner that completes it, and the weight condition on the half-root. The last condition supplies the highest-weight-one structure; irreducibility alone does not.
 
 **Theorem (the matrix case).** Let $A=M_N(k)$ and $e=E_{11}$. Then $C(e)$ is a spinor space exactly when $N=2$.
 
@@ -98,7 +98,7 @@ and $kE_{12}$ is a proper left-invariant subspace: $E_{11}E_{12}=E_{12}$, $E_{22
 
 **It is not defined by minimality.** The carrier is defined by the idempotent before any minimality is mentioned. The closure of $C(e)$ under left multiplication is a consequence of the product rule, and its minimality is a theorem about semisimple algebras, proved in *Primitive Idempotents and Minimal Left Ideals*. The order is: idempotent, carrier, coordinates, weight. Irreducibility is a theorem about the carrier; it is not the spinor condition, and the irreducible carrier of $M_3$ with $e=E_{11}$ is the counterexample.
 
-**The number of coordinates is not the spin.** A carrier of dimension $N$ over $k$ is not a spin-$N$ object. The spin is half the highest weight of the Cartan of an $\mathfrak{sl}_2$ triple on the carrier, and it requires a triple that the idempotent alone does not supply; the weight condition above is the part of that triple that the half-root supplies. That is the subject of *The Weight of a Frame Root and the Spin Quantum Number*.
+**The number of coordinates is not a weight.** A carrier of dimension $N$ over $k$ is not a weight-$N$ object. A weight needs a grading element and an action on the carrier; the idempotent alone supplies only the $\mathbb{Z}_2$ grading, not a weight string. A weight string of the form $\lambda,\lambda-2,\dots,-\lambda$ needs an $\mathfrak{sl}_2$ triple, and the triple is extra data.
 
 ## Examples
 
@@ -139,7 +139,7 @@ with two simple components, the two chiralities; a primitive idempotent of eithe
 | $6$ | $M_8(\mathbb{C})$ | $3$ | $7$ | $8$ |
 | $8$ | $M_{16}(\mathbb{C})$ | $4$ | $15$ | $16$ |
 
-**The Clifford reading.** In this table "spinor dimension" is the dimension of the Clifford module carried by the Peirce ideal, not a claim that the half-root alone supplies the weights $\pm\tfrac12$. The Clifford spin structure is the action of the bivectors. At $N=2$ the Peirce root and the Clifford vector agree, and the two-dimensional ideal is the spin-$\tfrac12$ module. At $N=4$ the four-dimensional ideal is the Dirac module; under the volume element it splits into two two-dimensional half-spin modules of spin $\tfrac12$. The Peirce carrier is the module; the bivector action is what makes it a spinor representation.
+**The Clifford reading.** In this table "spinor dimension" is the dimension of the Clifford module carried by the Peirce ideal, not a claim that the half-root alone supplies the weights $\pm\tfrac12$. The Clifford spin structure is the action of the bivectors. At $N=2$ the Peirce root and the Clifford vector agree, and the two-dimensional ideal is the highest-weight-one module. At $N=4$ the four-dimensional ideal is the Dirac module; under the volume element it splits into two two-dimensional half-spin modules of spin $\tfrac12$. The Peirce carrier is the module; the bivector action is what makes it a spinor representation.
 
 ## Summary
 
@@ -169,4 +169,4 @@ In a semisimple algebra the primitive idempotents are exactly the idempotents wi
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and the corner algebras.
 - Yurij A. Drozd and Vladimir V. Kirichenko, *Finite Dimensional Algebras* (Springer, 1994), for primitive idempotents and the local corners.
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 2nd ed. 1992), for the module-theoretic reading of the carrier.
-- The corpus articles *Peirce Coordinates and Companion Nilpotents*, for the coordinate theory, and *The Weight of a Frame Root and the Spin Quantum Number*, for the passage from the carrier to the spin.
+- The corpus article *Peirce Coordinates and Companion Nilpotents*, for the coordinate theory.

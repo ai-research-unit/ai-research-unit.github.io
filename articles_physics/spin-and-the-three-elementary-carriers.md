@@ -37,7 +37,7 @@ The article has two theses. First, the **three carrier types are the elementary 
 | $S_-=\mathbb{B}\tilde\Pi_-$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | the second copy |
 | $V=\ker\operatorname{tr}$ | $\operatorname{ad}$ | $3$ | $+1,0,-1$ | $1$ | vector, three polarisations |
 
-The definition is the pair-first one of *The Spin of a Biquaternion*: a spin pair satisfies $[U,V]\neq0$, $[[U,V],U]=2U$ and $[[U,V],V]=-2V$; its spin element is the antisymmetric part of the product, and the spin is the highest weight of that element on the carrier. The frame supplies the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$, with spin element $\tilde S_{\vec u}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12\tilde\Xi$ and triple $(\tilde S_{\vec u},\vec\Upsilon_-,\vec\Upsilon_+)$ satisfying $[\tilde S_{\vec u},\vec\Upsilon_-]=\vec\Upsilon_-$, $[\tilde S_{\vec u},\vec\Upsilon_+]=-\vec\Upsilon_+$ and $[\vec\Upsilon_-,\vec\Upsilon_+]=2\tilde S_{\vec u}$. The frame root is $\tilde\Xi=2\tilde S_{\vec u}$. The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.
+Spin is the intrinsic angular momentum of a particle; in the rest frame it is the little-group label, and the labels $0,\tfrac12,1$ of the three carriers are the physical labels. The frame supplies the pair $(\vec\Upsilon_-,\vec\Upsilon_+)$, with spin element $\tilde S_{\vec u}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]=\tfrac12\tilde\Xi$ and triple $(\tilde S_{\vec u},\vec\Upsilon_-,\vec\Upsilon_+)$ satisfying $[\tilde S_{\vec u},\vec\Upsilon_-]=\vec\Upsilon_-$, $[\tilde S_{\vec u},\vec\Upsilon_+]=-\vec\Upsilon_+$ and $[\vec\Upsilon_-,\vec\Upsilon_+]=2\tilde S_{\vec u}$. The frame root is $\tilde\Xi=2\tilde S_{\vec u}$. The two planes are two copies of one carrier type; the table lists them separately because the article uses both. The three types are the centre, the plane and the traceless part. The right action repeats the plane and adds no type. The dimensions are complex: one, two and three. Over the reals they are two, four and six, and the physical scalar and vector are real forms of the centre and of the traceless part.
 
 ## Why There Is No Fourth
 
@@ -82,7 +82,6 @@ Two further physical qualifications belong to the carrier, not to the table.
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The plain product as an associative unital law, with its multiplication table and basis | [The Biquaternion Algebra](../articles_maths/the-biquaternion-algebra.html) |
-| The three elementary carriers and their spins $0,\tfrac12,1$ | [The Spin of a Biquaternion](../articles_maths/the-spin-of-a-biquaternion.html) |
 | The idempotents, the Peirce decomposition, the minimal left ideals and the matrix units | [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The module theory: the simple module, $\mathbb{B}\cong S\oplus S$ and $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$ | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
 | The column ideal of a matrix ring: one idempotent and $n-1$ nilpotents | [The Column Ideals of a Matrix Ring: One Idempotent and \(n-1\) Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html) |
@@ -452,7 +451,6 @@ The algebra also splits into two minimal left ideals, the second column $\mathbb
 
 ## Further Reading
 
-- [The Spin of a Biquaternion](../articles_maths/the-spin-of-a-biquaternion.html), for the three carrier types, the proof that there is no fourth elementary invariant subspace, and the observed-spin table.
 - [The Peirce Decomposition](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners, the matrix units and the minimal ideals.
 - [The Category of Modules](../articles_maths/the-category-of-modules.html), for simplicity, the endomorphism ring and the regular module.
 - [Higher Spin from Tensor Products](higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html), for the spins beyond the elementary list.

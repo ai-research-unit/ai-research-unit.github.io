@@ -336,6 +336,7 @@ $$
 
 ## Further Reading
 
+- [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the real intervals of the Hermitian elements.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the conjugate transpose, the spectral theorem, the Frobenius norm and the $*$-unitary group.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the positive definite cone, the trace form and the operator norms.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $U(4)$, $\mathfrak{u}(4)$, $\mathfrak{su}(4)$ and the compact real forms.

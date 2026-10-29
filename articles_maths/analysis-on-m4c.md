@@ -459,6 +459,7 @@ $$
 
 ## Further Reading
 
+- [The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$](the-sylvester-operator-and-the-kronecker-sum-of-m4c.html), for the contour integral for the Sylvester equation.
 - Walter Rudin, *Function Theory in the Unit Ball of $\mathbb{C}^n$* (Springer, 1980), for holomorphic functions, the Cauchy–Riemann equations, harmonic functions and the Poisson integral in several variables.
 - Lars Hörmander, *An Introduction to Complex Analysis in Several Variables* (North-Holland, 1990), for the several-variable Cauchy–Riemann theory.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the functional calculus, the derivative of the determinant and the matrix exponential.

@@ -207,7 +207,7 @@ Two group-theoretic facts organise the interpretation. First, the mass and the s
 $$
 P^2 = m^2c^2, \qquad -W^2 = m^2c^2\,s(s+1),
 $$
-with $W^\mu$ the Pauli–Lubanski vector; they label the irreducible representation, not the state. The label $s$ is the number $j$ of *The Spin of a Biquaternion*, read on the little-group carrier. Second, the entropy is *not* a Casimir; it is a function on the representation space, constant on the little-group orbits. The pair $(m,s)$ says which representation a particle belongs to; the entropy is one invariant of the orbit within it that a given state occupies. The Lorentz group maps the representation to itself and the orbit to an orbit, and at sharp momentum it maps each orbit to itself, because the map is the $*$-unitary little-group action. This is the precise group-theoretic sense in which spin entropy is a frame-independent property of a momentum eigenstate.
+with $W^\mu$ the Pauli–Lubanski vector; they label the irreducible representation, not the state. The label $s$ is the spin quantum number of the little-group representation. Second, the entropy is *not* a Casimir; it is a function on the representation space, constant on the little-group orbits. The pair $(m,s)$ says which representation a particle belongs to; the entropy is one invariant of the orbit within it that a given state occupies. The Lorentz group maps the representation to itself and the orbit to an orbit, and at sharp momentum it maps each orbit to itself, because the map is the $*$-unitary little-group action. This is the precise group-theoretic sense in which spin entropy is a frame-independent property of a momentum eigenstate.
 
 ### Massless particles and helicity
 

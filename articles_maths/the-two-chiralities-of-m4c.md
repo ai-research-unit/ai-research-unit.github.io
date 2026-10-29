@@ -280,9 +280,9 @@ $$
 =\left\{\begin{pmatrix}A&0\\0&D\end{pmatrix}:\operatorname{tr}A=\operatorname{tr}D=0\right\}
 $$
 
-act on $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$ separately. They commute with $\Gamma$, they have dimension $3+3=6$, and each chirality is a spin-$\tfrac12$ module for one of the two factors. The compact real form is $\mathfrak{su}_2\oplus\mathfrak{su}_2$.
+act on $\mathbb{C}^2_+$ and $\mathbb{C}^2_-$ separately. They commute with $\Gamma$, they have dimension $3+3=6$, and each chirality is a highest-weight-one module for one of the two factors. The compact real form is $\mathfrak{su}_2\oplus\mathfrak{su}_2$.
 
-**The Peirce algebra mixes the chiralities.** The spin-$\tfrac32$ generators of *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$* are
+**The Peirce algebra mixes the chiralities.** The generators $J_3,J_\pm$ of the principal $\mathfrak{sl}_2$ are
 
 $$
 J_3=\operatorname{diag}\left(\frac32,\frac12,-\frac12,-\frac32\right),
@@ -298,7 +298,7 @@ $$
 
 and $e_2,e_4$ have chirality $-1$ while $e_1,e_3$ have chirality $+1$. The Peirce $\mathfrak{sl}_2$ is irreducible on $\mathbb{C}^4$, so it has no invariant subspace that is one chirality. It is not contained in the chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, and the chiral algebra is not contained in it: they are different three- and six-dimensional subalgebras of $\mathfrak{sl}_4$.
 
-**The two chains.** The Peirce chain is the weight chain of the spin-$\tfrac32$ module; it runs through both chiralities. The chiral chain is the pair of spin-$\tfrac12$ chains, one in each chirality; it preserves $\Gamma$ and does not mix. The first is the chain of the flag; the second is the chain of the two planes. The comparison, with the branching rules, is *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$*.
+**The two chains.** The Peirce chain is the weight chain of the highest-weight-three module; it runs through both chiralities. The chiral chain is the pair of highest-weight-one chains, one in each chirality; it preserves $\Gamma$ and does not mix. The first is the chain of the flag; the second is the chain of the two planes. The comparison, with the branching rules, is *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$*.
 
 ## The Biquaternion Case
 
@@ -326,7 +326,7 @@ M_4(\mathbb{C})=\mathcal{A}\oplus\mathcal{B}\oplus\mathcal{C}\oplus\mathcal{D},
 \qquad 4+4+4+4=16,
 $$
 
-with $\mathcal{A},\mathcal{D}\cong M_2(\mathbb{C})$ and $\mathcal{B},\mathcal{C}$ the mass blocks. The even part $\mathcal{A}\oplus\mathcal{D}$ is the centraliser of $\Gamma$, of dimension eight; the odd part $\mathcal{B}\oplus\mathcal{C}$ is the mass block and its opposite, of dimension eight. The chirality is the $\mathbb{Z}/2$ quotient of the $\mathbb{Z}/4$ grading. The two chiralities are subspaces of the carrier, not minimal left ideals; the minimal left ideals of $M_4$ are the four-dimensional spaces $M_4P_k$. The chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ preserves $\Gamma$ and acts as spin-$\tfrac12$ on each chirality; the Peirce $\mathfrak{sl}_2$ is irreducible and mixes the chiralities. At $n=2$ the matrix-model chirality is the root itself and its two eigenspaces are lines; the biquaternion chirality is the central sign $\chi=ij$ of *Chirality: The Conjugate Pair*.
+with $\mathcal{A},\mathcal{D}\cong M_2(\mathbb{C})$ and $\mathcal{B},\mathcal{C}$ the mass blocks. The even part $\mathcal{A}\oplus\mathcal{D}$ is the centraliser of $\Gamma$, of dimension eight; the odd part $\mathcal{B}\oplus\mathcal{C}$ is the mass block and its opposite, of dimension eight. The chirality is the $\mathbb{Z}/2$ quotient of the $\mathbb{Z}/4$ grading. The two chiralities are subspaces of the carrier, not minimal left ideals; the minimal left ideals of $M_4$ are the four-dimensional spaces $M_4P_k$. The chiral $\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ preserves $\Gamma$ and acts as highest-weight-one on each chirality; the Peirce $\mathfrak{sl}_2$ is irreducible and mixes the chiralities. At $n=2$ the matrix-model chirality is the root itself and its two eigenspaces are lines; the biquaternion chirality is the central sign $\chi=ij$ of *Chirality: The Conjugate Pair*.
 
 $$
 \boxed{\ \Gamma=H^2,\quad \Gamma^2=I,\quad \operatorname{tr}\Gamma=0,\quad \mathbb{C}^4=\mathbb{C}^2_+\oplus\mathbb{C}^2_-,\quad M_4=\mathcal{A}\oplus\mathcal{B}\oplus\mathcal{C}\oplus\mathcal{D},\quad 4+4+4+4=16.\ }
@@ -369,5 +369,4 @@ $$
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the corners of the rank-two idempotent $P_+$.
 - [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block and its polar decomposition.
 - [The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$](the-peirce-su2-and-the-chiral-su2-su2-of-m4c.html), for the two chains.
-- [The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the irreducible spin-$\tfrac32$ chain.
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion case $n=2$.

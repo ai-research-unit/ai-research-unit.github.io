@@ -316,6 +316,7 @@ $$
 
 ## Further Reading
 
+- [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the comparison of the numerical radius with the singular values.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the polar decomposition, the singular value decomposition and the closest $*$-unitary problem.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the positive definite cone, the operator and nuclear norms, and the geometry of matrices.
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the Cartan decomposition and the symmetric space $GL_4/U(4)$.

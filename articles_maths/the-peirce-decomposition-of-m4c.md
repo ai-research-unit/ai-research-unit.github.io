@@ -102,7 +102,7 @@ $$
 \mathfrak{sl}_4(\mathbb{C})=3\oplus5\oplus7
 $$
 
-as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots,7$. The column $\mathbb{C}^{4}$ has spin $\tfrac32$. Both statements are *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$*; they are recorded here because the number of lines and the number of components must agree with them.
+as a direct sum of irreducible $\mathfrak{sl}_2$-spaces of dimensions $3,5,\dots,7$. The column $\mathbb{C}^{4}$ has highest weight $3$. Both statements are the standard $\mathfrak{sl}_2$ computation on the column; they are recorded here because the number of lines and the number of components must agree with them.
 
 ## What the Cut Does Not Give
 

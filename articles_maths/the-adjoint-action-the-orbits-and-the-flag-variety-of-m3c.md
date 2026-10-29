@@ -149,7 +149,7 @@ $$
 
 and the nilpotent cone is the union of the three orbits.
 
-**The principal orbit and the carrier.** A principal nilpotent $N$ has a cyclic vector $v$ with $v,Nv,N^{2}v$ a basis; the triple is the **Jordan chain**. The chain is the carrier $\mathbb{C}^{3}$ read with the action of $N$, and the raising operator of *The Triplet: Spin One and the Adjoint $1+3+5$ of $M_3(\mathbb{C})$* is read in this basis. The principal orbit is the open dense orbit in the nilpotent cone, and its dimension $6$ is the dimension of the cone.
+**The principal orbit and the carrier.** A principal nilpotent $N$ has a cyclic vector $v$ with $v,Nv,N^{2}v$ a basis; the triple is the **Jordan chain**. The chain is the carrier $\mathbb{C}^{3}$ read with the action of $N$, and the raising operator of the principal $\mathfrak{sl}_2$ is read in this basis. The principal orbit is the open dense orbit in the nilpotent cone, and its dimension $6$ is the dimension of the cone.
 
 **Worked example.** For $N=E_{12}+E_{23}$ the vector $e_{1}$ is cyclic: $e_{1},Ne_{1}=e_{2},N^{2}e_{1}=e_{3}$ is the standard basis. The centraliser is $\{aI+bN+cN^{2}\}$, of dimension $3$. The orbit has dimension $6$ and is the set of nilpotents of rank two, an open dense subset of the nilpotent cone.
 

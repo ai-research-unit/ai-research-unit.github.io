@@ -201,7 +201,7 @@ $$
 
 **Corollary.** On the carrier $C(e)$ multiplication by $h$ on the left is $+1$ on $D$ and $-1$ on the companion corner. The Peirce decomposition therefore supplies a canonical $\mathbb{Z}_2$ grading of the carrier, with the companion coordinates in the odd part. It supplies no finer splitting: the odd part is a single eigenspace, of dimension $\dim_k fAe$ over $k$.
 
-**Remark.** The grading element is canonical, but the grading is only $\mathbb{Z}_2$. A weight string of the form $\lambda,\lambda-2,\dots,-\lambda$ needs an $\mathfrak{sl}_2$ triple, not one idempotent. The triple and the spin number are the subject of *The Weight of a Frame Root and the Spin Quantum Number*; the definition of the spinor read from $C(e)$ is *Spinors as Peirce Coordinates*.
+**Remark.** The grading element is canonical, but the grading is only $\mathbb{Z}_2$. A weight string of the form $\lambda,\lambda-2,\dots,-\lambda$ needs an $\mathfrak{sl}_2$ triple, not one idempotent. The triple and its weight string are standard representation theory; the definition of the spinor read from $C(e)$ is *Spinors as Peirce Coordinates*.
 
 ## Summary
 

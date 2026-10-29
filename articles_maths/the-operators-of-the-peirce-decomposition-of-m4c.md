@@ -45,6 +45,8 @@ $$
 
 **Proof.** The identities are the associativity of the product: $a(Xb)=(aX)b$ and $(ab)X=a(bX)$, while $X(ba)=(Xb)a$. The adjoint is the difference of the left and right multiplications.
 
+**A note on the symbols.** Here $a,b\in M_4(\mathbb{C})$, the operators act on $M_4(\mathbb{C})\cong\mathbb{C}^{16}$, and the matrices below are $16\times16$. The article *$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra* uses the same letters for $a,b\in\mathbb{B}$, acting on $\mathbb{B}\cong\mathbb{C}^4$ and giving $4\times4$ matrices. The two are the same sandwich construction applied to $A=M_4(\mathbb{C})$ and to $A=\mathbb{B}$; the determinant is $\det T_{a,b}=\det L_a\det R_b$, which is $(\det a)^4(\det b)^4$ here and $N(a)^2N(b)^2$ there.
+
 **The matrices.** Vectorise $M_4$ by columns, so that $X$ is a column of $16$ entries. Then
 
 $$
@@ -202,7 +204,7 @@ $$
 [\operatorname{ad}_a,\operatorname{ad}_b]=\operatorname{ad}_{[a,b]},
 $$
 
-so the map $\mathfrak{sl}_4\to\operatorname{Der}(M_4)$ is an isomorphism of Lie algebras. The derivations act on $M_4$ by the adjoint action, and the decomposition of $M_4$ under $\mathfrak{sl}_4$ is the adjoint decomposition $1+3+5+7$ of *The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$*.
+so the map $\mathfrak{sl}_4\to\operatorname{Der}(M_4)$ is an isomorphism of Lie algebras. The derivations act on $M_4$ by the adjoint action, and the decomposition of $M_4$ under $\mathfrak{sl}_4$ is the adjoint decomposition $1+3+5+7$ under the principal $\mathfrak{sl}_2$.
 
 **The biquaternion case.** For $M_2(\mathbb{C})$, the same theorem gives
 
@@ -315,5 +317,7 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Kronecker product and the vectorisation of matrix equations.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the corners and the multiplication rule.
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the two-sided Peirce table.
+- [The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$](the-numerical-range-of-the-two-sided-operators-of-m4c.html), for the field of values of $T_{a,b}$ and the product bound.
 - [The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$](the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html), for the conjugation action and its orbits.
-- [The Spin Chain and the Adjoint Decomposition of $M_4(\mathbb{C})$](the-spin-chain-and-the-adjoint-decomposition-of-m4c.html), for the adjoint decomposition under $\mathfrak{sl}_4$.
+- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of the algebra from the sandwich map and the four-dimensional case.
+- [$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the same construction on the four-dimensional carrier.

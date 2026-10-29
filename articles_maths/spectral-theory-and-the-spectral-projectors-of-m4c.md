@@ -385,6 +385,8 @@ $$
 
 ## Further Reading
 
+- [The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$](the-sylvester-operator-and-the-kronecker-sum-of-m4c.html), for the resultant criterion $\operatorname{spec}A\cap\operatorname{spec}B=\varnothing$.
+- [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the field of values as a spectral enclosure.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the characteristic polynomial, the Jordan form, the minimal polynomial and the spectral projectors.
 - Tosio Kato, *Perturbation Theory for Linear Operators* (Springer, 1995), for the Riesz projectors, the resolvent and the perturbation of eigenvalues.
 - Nelson Dunford and Jacob T. Schwartz, *Linear Operators, Part I* (Interscience, 1958), for the holomorphic functional calculus and the spectral mapping theorem.

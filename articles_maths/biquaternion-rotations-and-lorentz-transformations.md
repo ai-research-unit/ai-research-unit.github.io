@@ -234,7 +234,7 @@ The group of units is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$, of real dimen
 | $\mathrm{U}(2)$ | $*$-Unitary biquaternions; maximal compact subgroup of $\mathbb{B}^{\times}$ |
 | $(\lambda_1,\lambda_2)$ | Highest weight of an algebraic representation of $GL_2(\mathbb{C})$ |
 | $\operatorname{Sym}^{\lambda_1-\lambda_2}(\mathbb{C}^2)\otimes(\det)^{\lambda_2}$ | The irreducible representation of $GL_2(\mathbb{C})$ of highest weight $(\lambda_1,\lambda_2)$ |
-| $V_j$ | Irreducible representation of spin $j$, highest weight $2j$, dimension $2j+1$ |
+| $V_j$ | Irreducible representation of highest weight $2j$, dimension $2j+1$ |
 | $(m,n)=V_m\boxtimes V_n$ | Finite-dimensional irreducible representation of the Lorentz group |
 | $(\tfrac12,0)$, $(0,\tfrac12)$ | Left- and right-handed Weyl spinors |
 | $(\tfrac12,\tfrac12)$ | Four-vector representation, $V_{1/2}\otimes\overline{V_{1/2}}$ |
@@ -245,7 +245,7 @@ The group of units is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$, of real dimen
 
 - [The Sandwich of a N-Regular, Spectrally Regular Biquaternion](the-sandwich-of-a-n-regular-spectrally-regular-biquaternion.html), for the operator theory of the bilinear sandwich: composition, factorisation through the polar word, spectra, kernel $U(1)$, image $CO^{+}(1,3)$ and the scaling of the norm.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the six remarkable subspaces, the operators that preserve all of them, and the infinitesimal split.
-- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the one-sided reading and the half-spin.
+- [The One-Sided Operators of a N-Regular, Spectrally Regular Biquaternion](the-one-sided-operators-of-a-n-regular-spectrally-regular-biquaternion.html), for the one-sided reading and the half-angle.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008).
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001).
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997).

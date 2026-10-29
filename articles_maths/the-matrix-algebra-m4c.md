@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The **matrix algebra** $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices under the product. It is the ambient algebra of this category: the root, the idempotents, the Peirce corners, the frame, the spin chain and the chiralities are all structures on it. This article fixes the algebra itself: the matrix units, the trace, the determinant, the centre, the simplicity, the real dimension, the unit group $GL_4(\mathbb{C})$ and the projective group $PGL_4(\mathbb{C})$.
+The **matrix algebra** $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices under the product. It is the ambient algebra of this category: the root, the idempotents, the Peirce corners, the frame, the principal $\mathfrak{sl}_2$ and the chiralities are all structures on it. This article fixes the algebra itself: the matrix units, the trace, the determinant, the centre, the simplicity, the real dimension, the unit group $GL_4(\mathbb{C})$ and the projective group $PGL_4(\mathbb{C})$.
 
 Throughout, $M_4=M_4(\mathbb{C})=\operatorname{End}(\mathbb{C}^4)$, $I$ is the identity, and $A^*=\bar A^{\mathsf T}$ is the conjugate transpose. No positive definite form, no norm and no topology are used; the positive definite trace form and the topology are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$* and *The Topology of $M_4(\mathbb{C})$*. The element, its coordinates and the trace are *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*.
 
 The algebra is **central simple** of complex dimension $16$ and real dimension $32$. It has centre $\mathbb{C}I$, no proper two-sided ideal, and many zero divisors. Its unit group is $GL_4(\mathbb{C})$, of complex dimension $16$; its projective group is $PGL_4(\mathbb{C})$, of complex dimension $15$. The group $PGL_4$ is the group of frames modulo overall scale, and it is the group that acts on the root and on the gauge in the articles that follow.
 
-**The full algebra and the regular model.** The $M_4(\mathbb{C})_L$ articles study the four-dimensional subalgebra of $M_4(\mathbb{C})$ that is the image of the left regular representation of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$. That image is not the full algebra: it is a copy of $M_2(\mathbb{C})$ inside $M_4(\mathbb{C})$, of complex dimension $4$, and its trace and determinant are the biquaternion trace and norm. The present article and the rest of this category treat the full sixteen-dimensional algebra. The distinction is stated precisely in §*The Full Algebra and the Regular Model*.
+**The full algebra and the regular model.** The $M_4(\mathbb{C})_L$ articles study the four-dimensional subalgebra of $M_4(\mathbb{C})$ that is the image of the left regular representation of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$. That image is not the full algebra: it is a copy of $M_2(\mathbb{C})$ inside $M_4(\mathbb{C})$, of complex dimension $4$, and its trace and determinant are the biquaternion trace and norm. The present article and the rest of this category treat the full sixteen-dimensional algebra. The distinction is stated precisely in §*The Full Algebra and the Regular Model*. A construction of the algebra from the two-sided operators on a smaller matrix algebra is §*A Construction from the Two-Sided Operators*; it is one route to the algebra, not a definition.
 
 ## The Algebra and the Matrix Units
 
@@ -327,9 +327,19 @@ and the image is a four-dimensional subalgebra of $M_4(\mathbb{C})$ isomorphic t
 
 **The $L$ model is not a quotient.** The full algebra does not contain the regular model as an ideal, because it is simple. The model is a subalgebra, and the full algebra is a larger algebra of the same matrix size. The category $M_4(\mathbb{C})$ is about the larger algebra; the $M_4(\mathbb{C})_L$ category is about the representation of $\mathbb{B}$. The two should not be identified.
 
+## A Construction from the Two-Sided Operators
+
+**The map.** For $a,b\in M_n(\mathbb{C})$ put $T_{a,b}(X)=aXb$. The map $a\otimes b^{\mathrm{opp}}\mapsto T_{a,b}$ is an algebra isomorphism
+$$
+M_n(\mathbb{C})\otimes_\mathbb{C}M_n(\mathbb{C})^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_n(\mathbb{C}))\cong M_{n^2}(\mathbb{C}),
+$$
+because the images of the matrix-unit basis of the tensor product are the matrix units of $\operatorname{End}_{\mathbb{C}}(M_n(\mathbb{C}))$.
+
+**The case $n=2$.** With $\mathbb{B}\cong M_2(\mathbb{C})$ this gives $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$. In the coefficient basis the images are the sixteen $T_{\mu\nu}=L_\mu R_\nu$; they are not the matrix units, and every $E_{ij}$ is a sum of four of them. The construction reaches the square orders $n^2$ and, in the two-factor form, the products $mn$: it gives $M_4$ and $M_9$, and $M_6$ from $M_2$ and $M_3$, but not $M_3$ or $M_5$. It is one construction of the algebra, not a definition, and it chooses no gamma frame. The full account, with the sixteen matrices, the multiplication tables and the coefficient formula, is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*.
+
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The unit group is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and skew-Hermitian parts of real dimension $16$ each, and the $*$-unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_L$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified.
+The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The unit group is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and skew-Hermitian parts of real dimension $16$ each, and the $*$-unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_L$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified. A second construction gives the algebra as $M_2(\mathbb{C})\otimes M_2(\mathbb{C})^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_2(\mathbb{C}))$, hence as $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$; in the coefficient basis its basis is not the matrix-unit basis, and every matrix unit is a sum of four of its elements.
 
 $$
 \boxed{\ \dim_\mathbb{C}M_4(\mathbb{C})=16,\quad \dim_\mathbb{R}=32,\quad Z(M_4)=\mathbb{C}I,\quad \dim_\mathbb{C}PGL_4=15,\quad \dim_\mathbb{C}SL_4=15.\ }
@@ -361,9 +371,15 @@ $$
 | $GL_4$, $SL_4$, $PGL_4$ | the unit group, the determinant-one subgroup, the projective group |
 | $\mathfrak{u}(4)$, $\mathfrak{su}(4)$ | the skew-Hermitian algebra and its traceless part |
 | $\operatorname{Herm}_4$ | the Hermitian matrices |
+| $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ |
 | $B$ | the Borel subgroup of upper triangular matrices |
 | $\Sigma=\{\det=0\}$ | the singular set |
-| $L$ | the left regular representation of $\mathbb{B}$, with image $M_4(\mathbb{C})_L$ |
+| $L$ | the left regular representation of $\mathbb{B}$, with image $M_4(\mathbb{C})_L$; $L_a=L(a)$ |
+| $R_b$ | right multiplication on $A$, $R_b(X)=Xb$ |
+| $T_{a,b}=L_aR_b$ | the two-sided operator $X\mapsto aXb$ |
+| $F_{ij}$ | matrix units of $A=M_n(\mathbb{C})$ in the construction |
+| $c^{\lambda}_{\ \mu\rho}$ | structure constants of $\mathbb{B}$, $e_\mu e_\rho=\sum_\lambda c^{\lambda}_{\ \mu\rho}e_\lambda$ |
+| $N$ | the biquaternion norm, $N(a)=a_t^2+a_x^2+a_y^2+a_z^2$ |
 
 ## Further Reading
 
@@ -372,6 +388,9 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the trace, the determinant, the characteristic polynomial, the singular values and the polar decomposition.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for $GL_4$, $SL_4$, $U(4)$ and their Lie algebras.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the general algebra at order $n$.
+- [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen matrices $T_{\mu\nu}$, their product tables, the coefficient formula and the length.
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract theorem $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.
+- [$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra](m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html), for the sixteen matrices $T_{\mu\nu}$, the gamma frame and the product question.
 - [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the four-dimensional regular model and its different trace and determinant.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root that produces the idempotents.
 - [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the sixteen corners of the full algebra.

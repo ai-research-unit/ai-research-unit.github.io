@@ -296,6 +296,7 @@ $$
 
 ## Further Reading
 
+- [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the numerical radius against the operator norm.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the singular values, the unitarily invariant norms, the determinant and the rank stratification.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Schatten norms, the duality of the operator and nuclear norms and the spectral radius.
 - Joe Harris, *Algebraic Geometry: A First Course* (Springer, 1992), for determinantal varieties and their dimensions.

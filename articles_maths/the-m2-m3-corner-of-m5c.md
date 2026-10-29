@@ -250,7 +250,7 @@ The corner $PM_5P\cong M_2(\mathbb{C})$ is the algebra of the biquaternion model
 
 **Proof.** The compression is multiplicative on the block, and the trace of $\operatorname{diag}(A,0)$ is the trace of $A$.
 
-**Remark.** **The corner is the biquaternion algebra, but the word spinor is not transferred to $M_5$.** The $M_2$ corner has a two-dimensional module, the spinor of the biquaternion model; the whole algebra $M_5$ has the five-dimensional carrier, of spin $2$. The corner is a subalgebra, and its module is not a module of $M_5$ unless it is induced. The distinction is the subject of *The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$*.
+**Remark.** **The corner is the biquaternion algebra, but the word spinor is not transferred to $M_5$.** The $M_2$ corner has a two-dimensional module, the spinor of the biquaternion model; the whole algebra $M_5$ has the five-dimensional carrier, of highest weight $4$. The corner is a subalgebra, and its module is not a module of $M_5$ unless it is induced. The distinction is the subject of *The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$*.
 
 ### The $M_3$ Corner
 

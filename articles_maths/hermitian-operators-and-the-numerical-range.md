@@ -148,3 +148,4 @@ The numerical range $W(T)=\{\langle Tx,x\rangle:\|x\|=1\}$ of a bounded operator
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 2nd ed. 1982), for the numerical range, its convexity and its elementary examples.
 - Karl E. Gustafson and Duggirala K. M. Rao, *Numerical Range: The Field of Values of Linear Operators and Matrices* (Springer, 1997), for the systematic theory and the sharp constant of the norm equivalence.
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge University Press, 1991), for the numerical range of matrices and the elliptical range theorem.
+- [The Numerical Range and the Field of Values of $M_4(\mathbb{C})$](the-numerical-range-and-the-field-of-values-of-m4c.html), for the elliptical range theorem with proof in dimension two, the disk $\cos(\pi/5)$ of the nilpotent chain, and the rank-one and block cases in dimension four.
