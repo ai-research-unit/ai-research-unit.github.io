@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Topology of $\mathbb{C}^2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-topology-of-math0"><strong>The Topology of $\mathbb{C}^2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article treats the topology of the complex two-space as a real four-dimensional space: the Euclidean topology, the norm as a proper map, the unit ball and the unit sphere, the complement of the origin, and the homotopy type of the general linear group. It is the first of the three topological articles of the category; the compactifications are <em>The Compactifications of $\mathbb{C}^2$</em> and the unit sphere read as a bundle is <em>The Unit Sphere and the Hopf Fibration</em>.</p>
+<p>The article treats the space and its subsets only. The complex structure, the three canonical forms and the holomorphic structure are not topological data, and the point of the article is to say exactly what the topology does and does not see. The general theory of the fundamental group and of covering spaces is <em>The Fundamental Group and Covering Spaces</em>; the homology is <em>Simplicial and Singular Homology</em>; the homotopy groups and the fibrations are <em>Homotopy Groups and Fibrations</em>; and the topology of the real space $\mathbb{R}^4$ is <em>Real Topology</em>. None of these is restated here.</p>
+<p><strong>The topology of $\mathbb{C}^2$ is the topology of $\mathbb{R}^4$.</strong> The complex structure is an extra operator, invisible to every topological invariant. The article makes that statement precise: the space is contractible, the punctured space is homotopy equivalent to the sphere $S^3$, and the general linear group is homotopy equivalent to $S^1\times S^3$.</p>
+<h2 id="the-euclidean-topology">The Euclidean Topology</h2>
+<p><strong>The norm and the distance make $\mathbb{C}^2$ a metric space isometric to $\mathbb{R}^4$, and the topology is the product topology of the four real coordinates.</strong></p>
+<p><strong>Definition.</strong> The <strong>norm</strong> of $z=(z_1,z_2)$ is
+$$
+\lVert z\rVert=\sqrt{\lvert z_1\rvert^2+\lvert z_2\rvert^2},
+$$
+the <strong>distance</strong> is $d(z,w)=\lVert z-w\rVert$, and the <strong>topology</strong> is the metric topology of $d$.</p>
+<p><strong>Proposition (the linear isometry).</strong> The map
+$$
+\Phi:\mathbb{C}^2\longrightarrow\mathbb{R}^4,\qquad (z_1,z_2)\longmapsto(x_1,y_1,x_2,y_2),
+$$
+with $z_k=x_k+iy_k$, is a linear isometry onto $\mathbb{R}^4$ with the Euclidean norm. Hence the topology of $\mathbb{C}^2$ is the Euclidean topology of $\mathbb{R}^4$, equivalently the product of the two Euclidean topologies of the coordinate planes.</p>
+<p><em>Proof.</em> The map is bijective and real-linear, and
+$$
+\lVert z\rVert^2=\lvert z_1\rvert^2+\lvert z_2\rvert^2=x_1^2+y_1^2+x_2^2+y_2^2=\lVert\Phi(z)\rVert^2.
+$$
+A linear isometry is a homeomorphism, and the Euclidean topology of $\mathbb{R}^4$ is the product topology of the four coordinates.</p>
+<p><strong>Proposition (the independence of the norm).</strong> Any two norms on $\mathbb{C}^2$ are equivalent, so the topology does not depend on the choice of the norm.</p>
+<p><em>Proof.</em> This is the finite-dimensional statement that all norms on $\mathbb{R}^n$ are equivalent, applied through the linear isomorphism $\Phi$.</p>
+<p><strong>Theorem (contractibility).</strong> The space $\mathbb{C}^2$ is contractible.</p>
+<p><em>Proof.</em> The straight-line homotopy
+$$
+H:[0,1]\times\mathbb{C}^2\longrightarrow\mathbb{C}^2,\qquad H(t,z)=(1-t)z,
+$$
+is continuous, with $H(0,z)=z$ and $H(1,z)=0$.</p>
+<p><strong>Corollary (the invariants).</strong> The space $\mathbb{C}^2$ is path-connected and simply connected, its homotopy groups vanish in every degree,
+$$
+\pi_n(\mathbb{C}^2)=0\qquad(n\ge1),
+$$
+and its homology is that of a point, $H_0(\mathbb{C}^2;\mathbb{Z})=\mathbb{Z}$ and $H_k(\mathbb{C}^2;\mathbb{Z})=0$ for $k\ge1$.</p>
+<p><em>Proof.</em> A contractible space is homotopy equivalent to a point, and the homotopy and homology groups are homotopy invariants.</p>
+<p><strong>Proposition (the global properties).</strong> The space $\mathbb{C}^2$ is not compact, it is complete, it is $\sigma$-compact, and it is second countable.</p>
+<p><em>Proof.</em> The sequence $(n,0)$ has no convergent subsequence, so the space is not compact. A Cauchy sequence in $\mathbb{C}^2$ has Cauchy coordinate sequences in $\mathbb{C}\cong\mathbb{R}^2$, which converge, so the space is complete. It is the countable union of the closed balls of integer radius, and it has a countable base of products of rational balls.</p>
+<p>The invariants are collected below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>underlying space</td>
+<td>$\mathbb{R}^4$</td>
+</tr>
+<tr>
+<td>real dimension</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>compact</td>
+<td>no</td>
+</tr>
+<tr>
+<td>connected</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>simply connected</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>contractible</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>homotopy groups</td>
+<td>$\pi_n=0$ for $n\ge1$</td>
+</tr>
+<tr>
+<td>homology</td>
+<td>$H_0=\mathbb{Z}$, $H_k=0$ for $k\ge1$</td>
+</tr>
+<tr>
+<td>complete</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\sigma$-compact</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>second countable</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-norm-as-a-proper-map">The Norm as a Proper Map</h2>
+<p><strong>The norm is a proper map: the preimage of a compact set is compact. This is the metric form of the finite dimension of the space, and it is what makes the closed balls compact.</strong></p>
+<p><strong>Definition.</strong> A continuous map $f:X\to Y$ of locally compact spaces is <strong>proper</strong> when $f^{-1}(K)$ is compact for every compact $K\subset Y$.</p>
+<p><strong>Theorem (properness of the norm).</strong> The norm
+$$
+\lVert\cdot\rVert:\mathbb{C}^2\longrightarrow[0,\infty)
+$$
+is continuous, surjective and proper.</p>
+<p><em>Proof.</em> Continuity is the triangle inequality. Surjectivity is the existence of the vector $(r,0)$ for $r\ge0$. For properness, let $K\subset[0,\infty)$ be compact; then $K\subset[0,R]$ for some $R$, and
+$$
+\lVert\cdot\rVert^{-1}(K)\subset\{z:\lVert z\rVert\le R\},
+$$
+the closed ball of radius $R$. That ball is closed and bounded in $\mathbb{R}^4$, hence compact by Heine–Borel, and a closed subset of a compact set is compact.</p>
+<p><strong>Corollary (Heine–Borel).</strong> A subset of $\mathbb{C}^2$ is compact exactly when it is closed and bounded.</p>
+<p><em>Proof.</em> This is Heine–Borel in $\mathbb{R}^4$ read through the isometry $\Phi$. The direct half is the theorem above: a bounded set lies in a closed ball, and a closed subset of a compact set is compact.</p>
+<p><strong>Corollary (closed balls are compact).</strong> For every $R\ge0$, the closed ball
+$$
+\overline{B}^4_R=\{z:\lVert z\rVert\le R\}
+$$
+is compact, and the sphere $S^3_R=\{z:\lVert z\rVert=R\}$ is compact.</p>
+<p><em>Proof.</em> The ball is closed and bounded, hence compact; the sphere is a closed subset of the ball.</p>
+<p><strong>Remark (properness is a finite-dimensional phenomenon).</strong> The unit ball of an infinite-dimensional normed space is not compact, so the norm there is not proper. <strong>Properness is exactly the property that fails in infinite dimensions and holds here because the space is $\mathbb{R}^4$.</strong> It is the reason every closed bounded subset is compact, and it is used below to compactify the space by one point.</p>
+<h2 id="the-unit-ball-and-the-unit-sphere">The Unit Ball and the Unit Sphere</h2>
+<p><strong>The open unit ball is homeomorphic to the whole space, the closed unit ball is a compact manifold with boundary the unit sphere, and the unit sphere is compact, connected and simply connected but not contractible.</strong></p>
+<p><strong>Definition.</strong> The <strong>open unit ball</strong>, the <strong>closed unit ball</strong> and the <strong>unit sphere</strong> are
+$$
+B^4=\{z:\lVert z\rVert<1\},\qquad \overline{B}^4=\{z:\lVert z\rVert\le1\},\qquad S^3=\{z:\lVert z\rVert=1\}.
+$$</p>
+<p><strong>Proposition (the open ball is the space).</strong> The map
+$$
+B^4\longrightarrow\mathbb{C}^2,\qquad w\longmapsto\frac{w}{1-\lVert w\rVert},
+$$
+is a homeomorphism with inverse $z\mapsto z/(1+\lVert z\rVert)$.</p>
+<p><em>Proof.</em> For $\lVert w\rVert<1$ the denominator is positive; for $z\in\mathbb{C}^2$, the point $z/(1+\lVert z\rVert)$ has norm $\lVert z\rVert/(1+\lVert z\rVert)<1$. The two formulas are inverse by direct computation, and both are continuous.</p>
+<p><strong>Proposition (the closed ball).</strong> The closed ball $\overline{B}^4$ is compact, contractible and a topological manifold with boundary $S^3$.</p>
+<p><em>Proof.</em> It is closed and bounded, hence compact; it is convex, hence contractible by the straight-line homotopy to the origin; and it is the standard closed ball of $\mathbb{R}^4$, whose boundary is the unit sphere.</p>
+<p><strong>Theorem (the sphere).</strong> The sphere $S^3$ is compact, connected, path-connected and simply connected. Its homology is
+$$
+H_0(S^3;\mathbb{Z})=\mathbb{Z},\qquad H_3(S^3;\mathbb{Z})=\mathbb{Z},\qquad H_k(S^3;\mathbb{Z})=0\quad(k\neq0,3),
+$$
+and its homotopy groups begin with $\pi_1(S^3)=\pi_2(S^3)=0$ and $\pi_3(S^3)=\mathbb{Z}$.</p>
+<p><em>Proof.</em> The sphere is closed and bounded, hence compact; it is connected and path-connected for every $n\ge1$; it is simply connected for $n\ge2$ (<em>The Fundamental Group and Covering Spaces</em>); its homology is computed by the standard cell decomposition $S^n=e^0\cup e^n$ (<em>Simplicial and Singular Homology</em>); and the Hurewicz theorem gives $\pi_3(S^3)\cong H_3(S^3)=\mathbb{Z}$ because the sphere is simply connected (<em>Homotopy Groups and Fibrations</em>).</p>
+<p><strong>Theorem (not contractible).</strong> The sphere $S^3$ is not contractible, and there is no retraction of the closed ball $\overline{B}^4$ onto $S^3$.</p>
+<p><em>Proof.</em> If $S^3$ were contractible, its homology would be that of a point, contradicting $H_3(S^3)=\mathbb{Z}$. If $r:\overline{B}^4\to S^3$ were a retraction and $i:S^3\to\overline{B}^4$ the inclusion, then $r\circ i=\mathrm{id}$ on $S^3$, so on homology $r_*\circ i_*=\mathrm{id}$ on $H_3(S^3)=\mathbb{Z}$. But $H_3(\overline{B}^4)=0$ because the ball is contractible, and $i_*:H_3(S^3)\to H_3(\overline{B}^4)$ is therefore the zero map, a contradiction.</p>
+<p><strong>Remark (the Brouwer theorem).</strong> The non-existence of a retraction is equivalent to the Brouwer fixed point theorem for the closed ball: a fixed-point-free continuous map $f:\overline{B}^4\to\overline{B}^4$ produces a retraction by following the ray from $f(x)$ through $x$ to the boundary. <strong>The topology of the sphere is therefore the topological content of the fixed point theorem</strong>, and the fixed point theorem is the reason the sphere cannot be contracted inside the ball (<em>Real Topology</em> and <em>Differential Topology</em>).</p>
+<p>The three spaces are compared below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>Definition</th>
+<th>Compact</th>
+<th>Contractible</th>
+<th>Boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>open ball $B^4$</td>
+<td>$\lVert z\rVert<1$</td>
+<td>no</td>
+<td>yes</td>
+<td>$S^3$ in the closure</td>
+</tr>
+<tr>
+<td>closed ball $\overline{B}^4$</td>
+<td>$\lVert z\rVert\le1$</td>
+<td>yes</td>
+<td>yes</td>
+<td>$S^3$</td>
+</tr>
+<tr>
+<td>sphere $S^3$</td>
+<td>$\lVert z\rVert=1$</td>
+<td>yes</td>
+<td>no</td>
+<td>empty</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-complement-of-the-origin">The Complement of the Origin</h2>
+<p><strong>The complement of the origin is homeomorphic to $S^3\times(0,\infty)$ and deformation retracts onto the unit sphere; it is therefore homotopy equivalent to $S^3$.</strong></p>
+<p><strong>Theorem (polar coordinates).</strong> The map
+$$
+\mathbb{C}^2\setminus\{0\}\longrightarrow S^3\times(0,\infty),\qquad z\longmapsto\left(\frac{z}{\lVert z\rVert},\lVert z\rVert\right),
+$$
+is a homeomorphism, with inverse $(\theta,r)\mapsto r\theta$.</p>
+<p><em>Proof.</em> The map is continuous, and so is the inverse. It is bijective: every nonzero $z$ is $r\theta$ with $r=\lVert z\rVert>0$ and $\theta=z/\lVert z\rVert\in S^3$, and the pair is unique.</p>
+<p><strong>Corollary (the deformation retraction).</strong> The map
+$$
+r:\mathbb{C}^2\setminus\{0\}\longrightarrow S^3,\qquad r(z)=\frac{z}{\lVert z\rVert},
+$$
+is a deformation retraction, with homotopy
+$$
+H(t,z)=\bigl((1-t)+t/\lVert z\rVert\bigr)z.
+$$</p>
+<p><em>Proof.</em> At $t=0$ the map is the identity; at $t=1$ it is $r$; the formula is continuous on $\mathbb{C}^2\setminus\{0\}$ because $\lVert z\rVert>0$; and $r$ restricted to $S^3$ is the identity.</p>
+<p><strong>Corollary (the invariants).</strong> The punctured space is path-connected and simply connected, and
+$$
+\pi_1=\pi_2=0,\qquad \pi_3=\mathbb{Z},\qquad H_0=\mathbb{Z},\qquad H_3=\mathbb{Z},
+$$
+with all other reduced homology groups zero.</p>
+<p><em>Proof.</em> It is homotopy equivalent to $S^3$, whose invariants are those of the theorem above.</p>
+<p><strong>Proposition (not the space).</strong> The punctured space $\mathbb{C}^2\setminus\{0\}$ is not homeomorphic to $\mathbb{C}^2$.</p>
+<p><em>Proof.</em> The space $\mathbb{C}^2$ has $H_3=0$ because it is contractible, while the punctured space has $H_3=\mathbb{Z}$.</p>
+<p><strong>Remark (the link of the origin).</strong> The sphere $S^3$ is the <strong>link</strong> of the origin in $\mathbb{C}^2$: it is the intersection of a small sphere around the origin with the space, and its topology records the local structure of the singularity at the origin. <strong>In real dimension four the link of a point is a three-dimensional sphere</strong>, and the complement of the point is a cylinder over that link. The same picture in the plane gives a circle: $\mathbb{C}\setminus\{0\}\cong S^1\times(0,\infty)$, which is the punctured plane of <em>Complex Topology</em>.</p>
+<p><strong>Remark (the fundamental group of a punctured space).</strong> Removing a point from $\mathbb{R}^n$ does not change the fundamental group when $n\ge3$, because the complement deformation retracts onto $S^{n-1}$, which is simply connected. <strong>The plane is the exception</strong>: $\mathbb{R}^2\setminus\{0\}\simeq S^1$ has fundamental group $\mathbb{Z}$. The space $\mathbb{C}^2$ is on the simply connected side of that divide.</p>
+<h2 id="the-group-math139">The Group $\mathrm{GL}_2(\mathbb{C})$</h2>
+<p><strong>The general linear group is an open dense complex Lie group of real dimension eight; it deformation retracts onto the unitary group, and its homotopy type is that of $S^1\times S^3$.</strong></p>
+<p><strong>Definition.</strong> The <strong>general linear group</strong> is
+$$
+\mathrm{GL}_2(\mathbb{C})=\{A\in M_2(\mathbb{C}):\det A\neq0\},
+$$
+with the topology of $M_2(\mathbb{C})\cong\mathbb{C}^4\cong\mathbb{R}^8$.</p>
+<p><strong>Proposition (open, dense and connected).</strong> The group $\mathrm{GL}_2(\mathbb{C})$ is open and dense in $M_2(\mathbb{C})$, it is a complex Lie group of complex dimension $4$ and real dimension $8$, it is connected, and it is not compact.</p>
+<p><em>Proof.</em> The complement is the zero set of the determinant, a closed set with empty interior, so the group is open and dense. Multiplication and inversion are polynomial and rational, hence holomorphic. For connectedness, the polar decomposition below retracts the group onto the connected group $\mathrm{U}(2)$. The sequence $nI$ has no convergent subsequence, so the group is not compact.</p>
+<p><strong>Theorem (polar decomposition).</strong> Every $A\in\mathrm{GL}_2(\mathbb{C})$ is uniquely
+$$
+A=UP,\qquad U\in\mathrm{U}(2),\qquad P=P^{*}>0,
+$$
+with $P$ positive definite Hermitian. The map $A\mapsto U$ is continuous, and the homotopy
+$$
+H(t,A)=U\,P^{t},\qquad P^{t}=\exp(t\log P),
+$$
+is a deformation retraction of $\mathrm{GL}_2(\mathbb{C})$ onto $\mathrm{U}(2)$.</p>
+<p><em>Proof.</em> The matrix $A^{*}A$ is positive definite Hermitian, so it has a unique positive definite Hermitian square root $P=(A^{*}A)^{1/2}$; then $U=AP^{-1}$ satisfies $U^{*}U=P^{-1}A^{*}AP^{-1}=I$, so $U$ is unitary. The uniqueness follows from the uniqueness of the square root. The functional calculus makes $P^{t}$ continuous in $(t,P)$, and $P^{0}=I$, $P^{1}=P$, so the homotopy runs from $A$ to $U$.</p>
+<p><strong>Proposition (the unitary group).</strong> The unitary group is compact, connected and of real dimension $4$, and there is a diffeomorphism of manifolds
+$$
+\mathrm{U}(2)\longrightarrow\mathrm{SU}(2)\times\mathrm{U}(1),\qquad A\longmapsto\bigl(A\operatorname{diag}(\det(A)^{-1},1),\det A\bigr).
+$$
+Moreover $\mathrm{SU}(2)$ is homeomorphic to $S^3$.</p>
+<p><em>Proof.</em> The unitary group is closed and bounded in $M_2(\mathbb{C})$, hence compact, and it is the image of the connected space $\mathrm{SU}(2)\times\mathrm{U}(1)$ under the multiplication map, hence connected. The displayed map has inverse $(B,d)\mapsto B\operatorname{diag}(d,1)$: the first component has determinant $1$ and is unitary, and the two maps are smooth and inverse. Finally,
+$$
+\mathrm{SU}(2)=\left\{\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}:\alpha,\beta\in\mathbb{C},\ \lvert\alpha\rvert^2+\lvert\beta\rvert^2=1\right\},
+$$
+and the map to $S^3$, $\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}\mapsto(\alpha,\beta)$, is a homeomorphism.</p>
+<p><strong>Corollary (the homotopy type).</strong> There are homotopy equivalences
+$$
+\mathrm{GL}_2(\mathbb{C})\simeq\mathrm{U}(2)\simeq S^1\times S^3.
+$$
+Hence
+$$
+\pi_1(\mathrm{GL}_2(\mathbb{C}))=\mathbb{Z},\qquad \pi_2(\mathrm{GL}_2(\mathbb{C}))=0,\qquad \pi_3(\mathrm{GL}_2(\mathbb{C}))=\mathbb{Z}.
+$$</p>
+<p><em>Proof.</em> The polar decomposition is a deformation retraction onto $\mathrm{U}(2)$; the diffeomorphism $\mathrm{U}(2)\cong\mathrm{SU}(2)\times\mathrm{U}(1)\cong S^3\times S^1$ gives the second equivalence; and the homotopy groups of a product are the products of the homotopy groups, with $\pi_1(S^1)=\mathbb{Z}$, $\pi_2(S^1)=0$, $\pi_3(S^1)=0$ and $\pi_1(S^3)=\pi_2(S^3)=0$, $\pi_3(S^3)=\mathbb{Z}$.</p>
+<p><strong>Proposition (not simply connected).</strong> The group $\mathrm{GL}_2(\mathbb{C})$ is not simply connected. The loop $t\mapsto\operatorname{diag}(e^{2\pi it},1)$ is not nullhomotopic.</p>
+<p><em>Proof.</em> The determinant sends the loop to $t\mapsto e^{2\pi it}$, a generator of $\pi_1(\mathbb{C}^{\times})=\mathbb{Z}$. A nullhomotopy of the loop would give a nullhomotopy of its determinant, which does not exist.</p>
+<p><strong>Proposition (the special linear group).</strong> The special linear group $\mathrm{SL}_2(\mathbb{C})=\{A:\det A=1\}$ is a complex Lie group of real dimension $6$, and the polar decomposition retracts it onto $\mathrm{SU}(2)\cong S^3$. In particular $\mathrm{SL}_2(\mathbb{C})$ is simply connected and $\pi_3(\mathrm{SL}_2(\mathbb{C}))=\mathbb{Z}$.</p>
+<p><em>Proof.</em> For $A\in\mathrm{SL}_2(\mathbb{C})$, the polar decomposition $A=UP$ has $1=\det A=\det U\det P=\det P$ with $\det P>0$ real, so $\det P=1$ and $\det U=1$; hence $U\in\mathrm{SU}(2)$. The retraction is the same homotopy as above.</p>
+<p><strong>Proposition (the determinant fibration).</strong> The determinant
+$$
+\det:\mathrm{GL}_2(\mathbb{C})\longrightarrow\mathbb{C}^{\times}
+$$
+is a surjective submersion with fibre $\mathrm{SL}_2(\mathbb{C})$, and its long exact sequence gives
+$$
+\pi_1(\mathrm{GL}_2(\mathbb{C}))\cong\mathbb{Z},\qquad \pi_2(\mathrm{GL}_2(\mathbb{C}))=0,\qquad \pi_3(\mathrm{GL}_2(\mathbb{C}))\cong\mathbb{Z}.
+$$</p>
+<p><em>Proof.</em> The determinant is a surjective Lie group homomorphism with kernel $\mathrm{SL}_2(\mathbb{C})$; a surjective homomorphism of Lie groups with closed kernel is a principal bundle over its image, hence a fibration. It is surjective because $\operatorname{diag}(d,1)$ has determinant $d$, and its derivative is surjective at every point. The relevant part of the exact sequence is
+$$
+0=\pi_4(\mathbb{C}^{\times})\to\pi_3(\mathrm{SL}_2)\to\pi_3(\mathrm{GL}_2)\to\pi_3(\mathbb{C}^{\times})=0,
+$$
+$$
+0=\pi_2(\mathrm{SL}_2)\to\pi_2(\mathrm{GL}_2)\to\pi_2(\mathbb{C}^{\times})=0,
+$$
+$$
+0=\pi_1(\mathrm{SL}_2)\to\pi_1(\mathrm{GL}_2)\to\pi_1(\mathbb{C}^{\times})=\mathbb{Z}\to\pi_0(\mathrm{SL}_2)=0,
+$$
+using $\mathrm{SL}_2\simeq S^3$ and $\mathbb{C}^{\times}\simeq S^1$.</p>
+<p>The groups are compared below. The column <em>homotopy type</em> records a space to which the group is homotopy equivalent.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Definition</th>
+<th>Real dimension</th>
+<th>Homotopy type</th>
+<th>$\pi_1$</th>
+<th>$\pi_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GL}_2(\mathbb{C})$</td>
+<td>$\det A\neq0$</td>
+<td>$8$</td>
+<td>$S^1\times S^3$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SL}_2(\mathbb{C})$</td>
+<td>$\det A=1$</td>
+<td>$6$</td>
+<td>$S^3$</td>
+<td>$0$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)$</td>
+<td>$A^{*}A=I$</td>
+<td>$4$</td>
+<td>$S^1\times S^3$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)$</td>
+<td>$A^{*}A=I$, $\det A=1$</td>
+<td>$3$</td>
+<td>$S^3$</td>
+<td>$0$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\times}$</td>
+<td>$z\neq0$</td>
+<td>$2$</td>
+<td>$S^1$</td>
+<td>$\mathbb{Z}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the maximal compact subgroup).</strong> The unitary group $\mathrm{U}(2)$ is a maximal compact subgroup of $\mathrm{GL}_2(\mathbb{C})$, and the polar decomposition is the Cartan decomposition of the group. <strong>The group is an open eight-dimensional manifold homotopy equivalent to a compact four-dimensional manifold</strong>, which is why its low-dimensional topology is that of $S^1\times S^3$ and not that of a point. The general theory of the classical groups is <em>The Classical Groups of $\mathbb{C}^2$</em>, and the matrix computations are the $M_2(\mathbb{C})$ Model articles of the biquaternion category.</p>
+<h2 id="what-the-topology-does-not-see">What the Topology Does Not See</h2>
+<p><strong>The topology sees the real dimension and nothing else; the complex structure, the Hermitian form and the holomorphic structure are extra data that no topological invariant records.</strong></p>
+<p>The space $\mathbb{C}^2$ is homeomorphic to $\mathbb{R}^4$ and to the quaternions $\mathbb{H}$ read as a real vector space. Every real-linear isomorphism $\mathbb{C}^2\to\mathbb{R}^4$ is a homeomorphism, and it need not send the complex structure $J$ to the standard complex structure of $\mathbb{R}^4$; indeed $\mathbb{R}^4$ carries a whole family of complex structures, all with the same underlying topological space.</p>
+<p><strong>Remark (the topology of the space and the topology of the structure).</strong> The complex structure is visible in the <strong>sheaf of holomorphic functions</strong>, in the <strong>Hermitian metric</strong>, and in the <strong>operator $J$</strong>, but not in the underlying topological space. <strong>Two complex structures on $\mathbb{R}^4$ give the same topological space and different complex geometry.</strong> This is why the topology of $\mathbb{C}^2$ is exhausted by the statements above, and why the analysis and the geometry of the space are separate articles.</p>
+<p><strong>Remark (the compactifications).</strong> The one-point compactification of $\mathbb{C}^2$ is the sphere $S^4$, which admits no complex structure at all; the projective compactification is $\mathbb{CP}^2$, which is a complex manifold. <strong>The choice of compactification is a choice of how much structure is added at infinity</strong>, and it is the subject of the next article. The topology of the space alone does not select either.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex two-space is isometric to $\mathbb{R}^4$ with the Euclidean norm, and its topology is the Euclidean topology of $\mathbb{R}^4$. It is contractible, path-connected and simply connected, with $\pi_n=0$ for all $n\ge1$ and the homology of a point; it is complete, $\sigma$-compact and second countable, and it is not compact. The norm is a proper map, so closed balls are compact and Heine–Borel holds. The open unit ball is homeomorphic to the whole space, the closed unit ball is a compact contractible manifold with boundary $S^3$, and the sphere $S^3$ is compact, connected, simply connected, of homology $\mathbb{Z}$ in degrees $0$ and $3$, and not contractible; there is no retraction of the ball onto its boundary.</p>
+<p>The complement of the origin is homeomorphic to $S^3\times(0,\infty)$ and deformation retracts onto $S^3$, so it is simply connected with $\pi_3=\mathbb{Z}$ and $H_3=\mathbb{Z}$; it is not homeomorphic to the whole space. The general linear group $\mathrm{GL}_2(\mathbb{C})$ is an open dense complex Lie group of real dimension $8$; the polar decomposition retracts it onto the compact unitary group $\mathrm{U}(2)\cong\mathrm{SU}(2)\times\mathrm{U}(1)\cong S^3\times S^1$, so it has the homotopy type of $S^1\times S^3$, with $\pi_1=\mathbb{Z}$, $\pi_2=0$ and $\pi_3=\mathbb{Z}$, and it is not simply connected. The special linear group $\mathrm{SL}_2(\mathbb{C})$ retracts onto $\mathrm{SU}(2)\cong S^3$ and is simply connected. The topology sees the real dimension only; the complex structure is extra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lVert z\rVert=\sqrt{\lvert z_1\rvert^2+\lvert z_2\rvert^2}$</td>
+<td>the Euclidean norm</td>
+</tr>
+<tr>
+<td>$d(z,w)=\lVert z-w\rVert$</td>
+<td>the distance</td>
+</tr>
+<tr>
+<td>$B^4$</td>
+<td>the open unit ball, homeomorphic to $\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$\overline{B}^4$</td>
+<td>the closed unit ball, compact with boundary $S^3$</td>
+</tr>
+<tr>
+<td>$S^3$</td>
+<td>the unit sphere, $\lVert z\rVert=1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^2\setminus\{0\}\cong S^3\times(0,\infty)$</td>
+<td>the punctured space and its polar coordinates</td>
+</tr>
+<tr>
+<td>$\mathrm{GL}_2(\mathbb{C})$</td>
+<td>the invertible matrices, homotopy equivalent to $S^1\times S^3$</td>
+</tr>
+<tr>
+<td>$\mathrm{SL}_2(\mathbb{C})$</td>
+<td>the matrices of determinant $1$, homotopy equivalent to $S^3$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)$, $\mathrm{SU}(2)$</td>
+<td>the unitary and special unitary groups</td>
+</tr>
+<tr>
+<td>proper map</td>
+<td>a map whose preimage of every compact set is compact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="real-topology.html">Real Topology</a>, for the topology of $\mathbb{R}^4$, compactness, Heine–Borel and the Brouwer theorem.</li>
+<li><a href="complex-topology.html">Complex Topology</a>, for the one-dimensional analogue, the punctured plane and the circle.</li>
+<li><a href="the-fundamental-group-and-covering-spaces.html">The Fundamental Group and Covering Spaces</a>, for simple connectivity and the fundamental group.</li>
+<li><a href="simplicial-and-singular-homology.html">Simplicial and Singular Homology</a>, for the homology of the spheres and the cell decomposition.</li>
+<li><a href="homotopy-groups-and-fibrations.html">Homotopy Groups and Fibrations</a>, for the homotopy groups, the Hurewicz theorem and the long exact sequence.</li>
+<li><a href="the-compactifications-of-the-complex-two-space.html">The Compactifications of $\mathbb{C}^2$</a>, the next article, for the one-point and the projective compactifications.</li>
+<li><a href="the-unit-sphere-and-the-hopf-fibration.html">The Unit Sphere and the Hopf Fibration</a>, the next article, for the bundle structure of $S^3$.</li>
+<li><a href="the-classical-groups-of-the-complex-two-space.html">The Classical Groups of $\mathbb{C}^2$</a>, for the groups $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$ and $\mathrm{SU}(2)$ and their actions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

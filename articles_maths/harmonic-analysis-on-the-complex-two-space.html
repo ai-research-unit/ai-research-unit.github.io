@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonic Analysis on $\mathbb{C}^2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="harmonic-analysis-on-math0"><strong>Harmonic Analysis on $\mathbb{C}^2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The additive group $\mathbb{C}^2$ is, as a real topological group, the group $\mathbb{R}^4$. Its characters, its Haar measure, its Fourier transform and its convolution are therefore the objects of Euclidean harmonic analysis in four real dimensions, and the whole theory of <em>Fourier Analysis on Euclidean Spaces</em> applies without change. What the complex structure adds is a second reading: the group $\mathbb{C}^2$ is also a complex vector space, the rotations by $i$ are a distinguished orthogonal transformation $J$, and the characters that are holomorphic in $z$ form a complex two-parameter family whose integrals are entire functions. The harmonic analysis of $\mathbb{C}^2$ is the Euclidean theory together with the spectral theory of the Laplacian, the Radon transform, and the spherical harmonics of the sphere $S^3$.</p>
+<p>This article treats the group structure and the characters, the Fourier transform and its properties, convolution, the Paley–Wiener theorem, the Radon transform, the spherical harmonics of $S^3$, and the Laplacian. The holomorphic analysis is <em>Analysis on $\mathbb{C}^2$</em>; the topology of the space and the sphere is <em>The Topology of $\mathbb{C}^2$</em> and <em>The Unit Sphere and the Hopf Fibration</em>; the differential forms are <em>Differential Forms and Stokes' Theorem</em>; the general Euclidean theory is <em>Fourier Analysis on Euclidean Spaces</em>.</p>
+<p><strong>The harmonic analysis of $\mathbb{C}^2$ is the harmonic analysis of $\mathbb{R}^4$ with a complex bookkeeping.</strong> The Fourier transform is the four-dimensional transform; the complex structure enters through the identification of the dual with $\mathbb{C}^2$ by the Hermitian pairing, through the holomorphic characters, and through the decomposition of the spherical harmonics under the unitary group. The Laplacian is the Euclidean Laplacian, and its harmonic functions are the functions whose restriction to every complex line is harmonic only when the function is pluriharmonic.</p>
+<h2 id="the-additive-group-and-its-characters">The Additive Group and Its Characters</h2>
+<p><strong>The group $\mathbb{C}^2$ is $\mathbb{R}^4$ with the ordinary addition; its Haar measure is Lebesgue measure, and its characters are the exponentials of the real-linear functionals.</strong></p>
+<p><strong>Proposition (the group).</strong> The additive group $\mathbb{C}^2$ is a locally compact abelian group isomorphic to $\mathbb{R}^4$. The isomorphism is
+$$
+z=x+iy\longmapsto(x_1,y_1,x_2,y_2)\in\mathbb{R}^4,
+$$
+and the Haar measure is Lebesgue measure $dz=dx_1\,dy_1\,dx_2\,dy_2$.</p>
+<p><em>Proof.</em> The map is an isomorphism of topological groups, and Lebesgue measure is translation invariant and unique up to a positive constant, which is fixed by the identification.</p>
+<p><strong>Definition.</strong> A <strong>character</strong> of $\mathbb{C}^2$ is a continuous homomorphism $\chi:\mathbb{C}^2\to S^1$. Every character is of the form
+$$
+\chi_\xi(z)=e^{2\pi i\operatorname{Re}\langle z,\xi\rangle},\qquad \xi\in\mathbb{C}^2,
+$$
+where $\langle z,\xi\rangle=\sum_kz_k\overline{\xi_k}$ is the Hermitian form.</p>
+<p><em>Proof.</em> A character of $\mathbb{R}^4$ is $x\mapsto e^{2\pi i x\cdot u}$ for a unique $u\in\mathbb{R}^4$; under the identification, $x\cdot u=\operatorname{Re}\langle z,\xi\rangle$ for a unique $\xi\in\mathbb{C}^2$, because the map $\xi\mapsto\operatorname{Re}\langle\cdot,\xi\rangle$ is an isomorphism of real vector spaces.</p>
+<p><strong>Proposition (the dual group).</strong> The map $\xi\mapsto\chi_\xi$ is an isomorphism of topological groups from $\mathbb{C}^2$ onto the dual group $\widehat{\mathbb{C}^2}$, and the pairing
+$$
+\mathbb{C}^2\times\mathbb{C}^2\longrightarrow S^1,\qquad (z,\xi)\longmapsto e^{2\pi i\operatorname{Re}\langle z,\xi\rangle},
+$$
+is a Pontryagin duality pairing.</p>
+<p><em>Proof.</em> The characters form a group under pointwise multiplication, and $\chi_\xi\chi_\eta=\chi_{\xi+\eta}$; the map is continuous, bijective and open by the identification with $\mathbb{R}^4$.</p>
+<p><strong>Remark (the two pairings).</strong> The Hermitian pairing $\langle z,\xi\rangle$ is complex-linear in $z$ and conjugate-linear in $\xi$; the <strong>bilinear pairing</strong> $z\cdot\xi=\sum_kz_k\xi_k$ is complex-linear in both. <strong>The characters are the exponentials of the real part of either pairing</strong>, and the two readings differ by the complex structure: $\operatorname{Re}\langle z,\xi\rangle=\operatorname{Re}(z\cdot\bar\xi)$. The holomorphic characters of the next sections use the bilinear pairing and are not unitary.</p>
+<h2 id="the-fourier-transform">The Fourier Transform</h2>
+<p><strong>The Fourier transform on $\mathbb{C}^2$ is the Fourier transform on $\mathbb{R}^4$ written in complex coordinates; it is an isometry of $L^2$, it exchanges differentiation with multiplication, and it inverts by the same transform with the opposite sign.</strong></p>
+<p><strong>Definition.</strong> For $f\in L^1(\mathbb{C}^2)$, the <strong>Fourier transform</strong> is
+$$
+\widehat f(\xi)=\int_{\mathbb{C}^2}f(z)\,e^{-2\pi i\operatorname{Re}\langle z,\xi\rangle}\,dz,\qquad \xi\in\mathbb{C}^2.
+$$</p>
+<p><strong>Theorem (inversion and Plancherel).</strong> The Fourier transform extends to a unitary operator
+$$
+\widehat{\phantom{f}}:L^2(\mathbb{C}^2)\longrightarrow L^2(\mathbb{C}^2)
+$$
+with inverse
+$$
+f(z)=\int_{\mathbb{C}^2}\widehat f(\xi)\,e^{2\pi i\operatorname{Re}\langle z,\xi\rangle}\,d\xi
+$$
+for $f$ in the Schwartz class, and
+$$
+\lVert\widehat f\rVert_2=\lVert f\rVert_2.
+$$</p>
+<p><em>Proof.</em> These are the inversion theorem and the Plancherel theorem for $\mathbb{R}^4$, transported by the identification of the previous section; they are proved in <em>Fourier Analysis on Euclidean Spaces</em>.</p>
+<p><strong>Proposition (the basic properties).</strong> For $f,g\in L^2(\mathbb{C}^2)$ and $a\in\mathbb{C}^2$,
+$$
+\widehat{f(\cdot-a)}(\xi)=e^{-2\pi i\operatorname{Re}\langle a,\xi\rangle}\widehat f(\xi),\qquad
+\widehat{e^{2\pi i\operatorname{Re}\langle z,a\rangle}f}(\xi)=\widehat f(\xi-a),
+$$
+$$
+\widehat{f(\lambda z)}(\xi)=\lambda^{-4}\widehat f(\xi/\lambda)\quad(\lambda>0),\qquad
+\widehat{\overline{f}}(\xi)=\overline{\widehat f(-\xi)}.
+$$
+For a Schwartz function $f$ and a multi-index $\alpha$,
+$$
+\widehat{\partial^\alpha f}(\xi)=(2\pi i)^{\lvert\alpha\rvert}\xi^\alpha\widehat f(\xi),\qquad
+\widehat{z^\alpha f}(\xi)=\left(\frac{i}{2\pi}\right)^{\lvert\alpha\rvert}\partial^\alpha\widehat f(\xi),
+$$
+where $\partial^\alpha$ is the real partial derivative and $\xi^\alpha$ the corresponding monomial in the real coordinates.</p>
+<p><em>Proof.</em> Each identity is a change of variables, an integration by parts, or a differentiation under the integral sign; the constants come from the $2\pi$ normalization.</p>
+<p><strong>Remark (the complex notation).</strong> In the complex coordinates $z_k=x_k+iy_k$ and $\xi_k=u_k+iv_k$, the pairing is
+$$
+\operatorname{Re}\langle z,\xi\rangle=x_1u_1+y_1v_1+x_2u_2+y_2v_2,
+$$
+so the transform is the four-dimensional transform in the variables $(x_1,y_1,x_2,y_2)$ and $(u_1,v_1,u_2,v_2)$. <strong>The complex structure does not change the transform; it changes the interpretation of the frequencies.</strong> A frequency $\xi$ is a real-linear functional on $\mathbb{C}^2$, and the complex-linear functionals are the subclass $\xi$ with the second-order relation of the next section.</p>
+<h2 id="convolution">Convolution</h2>
+<p><strong>Convolution on $\mathbb{C}^2$ is convolution on $\mathbb{R}^4$; it is commutative and associative, it turns the Fourier transform into a pointwise product, and $L^1$ is a Banach algebra under it.</strong></p>
+<p><strong>Definition.</strong> For $f,g\in L^1(\mathbb{C}^2)$,
+$$
+(f*g)(z)=\int_{\mathbb{C}^2}f(z-w)g(w)\,dw.
+$$</p>
+<p><strong>Theorem (Young and the group algebra).</strong> Convolution is commutative and associative, and
+$$
+\lVert f*g\rVert_1\le\lVert f\rVert_1\lVert g\rVert_1,\qquad
+\lVert f*g\rVert_p\le\lVert f\rVert_1\lVert g\rVert_p\quad(1\le p\le\infty).
+$$
+For $f,g\in L^1$, the transform of the convolution is
+$$
+\widehat{f*g}=\widehat f\,\widehat g.
+$$</p>
+<p><em>Proof.</em> The inequalities are Young's inequality for $\mathbb{R}^4$; the product formula is Fubini's theorem and the character property $\chi_\xi(z-w)=\chi_\xi(z)\chi_\xi(-w)$.</p>
+<p><strong>Theorem (approximate identities).</strong> Let $\varphi\in L^1$ with $\int\varphi=1$ and set $\varphi_\epsilon(z)=\epsilon^{-4}\varphi(z/\epsilon)$. Then for $f\in L^p$, $1\le p<\infty$,
+$$
+f*\varphi_\epsilon\longrightarrow f\quad\text{in }L^p,
+$$
+and for $f$ continuous and bounded the convergence is uniform on compact sets.</p>
+<p><em>Proof.</em> The proof is the standard approximation argument of <em>Fourier Analysis on Euclidean Spaces</em>: the mass of $\varphi_\epsilon$ concentrates at the origin, and the continuity of translations in $L^p$ gives the convergence.</p>
+<p><strong>Remark (the algebra and the transform).</strong> The Fourier transform is an isomorphism from the Banach algebra $L^1(\mathbb{C}^2)$ with convolution onto a closed subalgebra of $C_0(\widehat{\mathbb{C}^2})$ with pointwise multiplication. <strong>The algebra is not unital</strong>, because a unit would be a function whose transform is identically $1$, and no $L^1$ function has that transform; the approximate identities replace the unit. The same statements hold on $\mathbb{R}^4$, and the complex structure plays no role in this section.</p>
+<h2 id="the-paleywiener-theorem">The Paley–Wiener Theorem</h2>
+<p><strong>A function of compact support has a Fourier transform that extends to an entire function of exponential type on the complexified dual, and the type is the radius of the support; the theorem characterizes compact support by the growth of the extension.</strong></p>
+<p><strong>Theorem (Paley–Wiener for $\mathbb{R}^4$).</strong> Let $R>0$. A function $f\in L^2(\mathbb{R}^4)$ is supported in the closed ball of radius $R$ if and only if its Fourier transform extends to an entire function $F$ on $\mathbb{C}^4$ such that for every $\eta\in\mathbb{R}^4$,
+$$
+\int_{\mathbb{R}^4}\lvert F(\xi+i\eta)\rvert^2\,d\xi\le C\,e^{4\pi R\lVert\eta\rVert}
+$$
+for a constant $C$, and
+$$
+\lvert F(\zeta)\rvert\le C'\,e^{2\pi R\lVert\operatorname{Im}\zeta\rVert}.
+$$
+The extension is the Fourier–Laplace transform
+$$
+F(\zeta)=\int_{\mathbb{R}^4}f(x)\,e^{-2\pi i x\cdot\zeta}\,dx.
+$$</p>
+<p><em>Proof.</em> This is the Paley–Wiener theorem of <em>Fourier Analysis on Euclidean Spaces</em>, in the $L^2$ form; the direct part is the analytic continuation of the integral, and the converse is the theorem of Paley and Wiener.</p>
+<p><strong>Theorem (the holomorphic reading on $\mathbb{C}^2$).</strong> Let $f\in L^2(\mathbb{C}^2)$ be supported in the ball $\lVert z\rVert\le R$. Then the <strong>holomorphic Fourier transform</strong>
+$$
+\mathcal{F}f(\xi)=\int_{\mathbb{C}^2}f(z)\,e^{-2\pi i\,z\cdot\xi}\,dz,\qquad z\cdot\xi=z_1\xi_1+z_2\xi_2,
+$$
+is an entire function of $\xi\in\mathbb{C}^2$ of exponential type $R$:
+$$
+\lvert\mathcal{F}f(\xi)\rvert\le C\,e^{2\pi R\lVert\xi\rVert}.
+$$
+Conversely, an entire function of exponential type $R$ that satisfies the $L^2$ growth condition of the Paley–Wiener theorem is the holomorphic Fourier transform of a function supported in the ball of radius $R$.</p>
+<p><em>Proof.</em> The integral is entire because $f$ is compactly supported and the exponential is entire in $\xi$; the bound is the estimate $\lvert e^{-2\pi i z\cdot\xi}\rvert\le e^{2\pi R\lVert\xi\rVert}$ on the support. The converse is the Paley–Wiener theorem applied to the real-linear functionals $z\mapsto\operatorname{Re}(z\cdot\xi)$, which form a real four-dimensional space of frequencies; the exponential type in the complex norm is the radius of the support.</p>
+<p><strong>Remark (the two transforms).</strong> The transform $\mathcal{F}$ is <strong>not</strong> the restriction of the group Fourier transform $\widehat{\phantom{f}}$ to real $\xi$: the character $e^{-2\pi iz\cdot\xi}$ has modulus $e^{2\pi\operatorname{Im}(z\cdot\xi)}$, which is not $1$, so it is a holomorphic character of the complex group and not a unitary character of the real group. <strong>The group transform is unitary and lives on $\mathbb{R}^4$; the holomorphic transform is entire and lives on $\mathbb{C}^2$</strong>, and the Paley–Wiener theorem is the bridge between the support of $f$ and the growth of the entire function. The holomorphic transform is the one used in several complex variables, where the support condition is replaced by the condition that $f$ be compactly supported in the domain.</p>
+<h2 id="the-radon-transform">The Radon Transform</h2>
+<p><strong>The Radon transform integrates a function over the affine hyperplanes of $\mathbb{R}^4$; the Fourier slice theorem expresses its one-dimensional Fourier transform as the Fourier transform of $f$ along the normal, and it inverts by integrating over the sphere of normals.</strong></p>
+<p><strong>Definition.</strong> For $\omega\in S^3\subset\mathbb{R}^4$ and $t\in\mathbb{R}$, let
+$$
+Rf(\omega,t)=\int_{\{x\in\mathbb{R}^4:x\cdot\omega=t\}}f(x)\,d\sigma(x),
+$$
+where $d\sigma$ is the Lebesgue measure on the hyperplane. The function $Rf$ is defined on $S^3\times\mathbb{R}$.</p>
+<p><strong>Theorem (the Fourier slice theorem).</strong> For $f\in L^1(\mathbb{R}^4)$,
+$$
+\int_{\mathbb{R}}Rf(\omega,t)\,e^{-2\pi i\lambda t}\,dt=\widehat f(\lambda\omega),\qquad \omega\in S^3,\ \lambda\in\mathbb{R}.
+$$</p>
+<p><em>Proof.</em> Write the left-hand side as an integral over $\mathbb{R}^4$ with the delta function of $x\cdot\omega-t$, or apply Fubini to the decomposition of $\mathbb{R}^4$ into the hyperplanes orthogonal to $\omega$; the one-dimensional integral of the character over the hyperplane gives the four-dimensional character at $\lambda\omega$.</p>
+<p><strong>Theorem (inversion).</strong> For suitable $f$,
+$$
+f(x)=\int_{S^3}\int_{\mathbb{R}}\widehat f(\lambda\omega)\,e^{2\pi i\lambda\,x\cdot\omega}\,\lvert\lambda\rvert^{3}\,d\lambda\,d\omega,
+$$
+and, equivalently, $f$ is recovered from $Rf$ by differentiating $Rf$ three times in $t$ and integrating over $S^3$.</p>
+<p><em>Proof.</em> The Fourier inversion formula in polar coordinates $\xi=\lambda\omega$ gives the first display, with $d\xi=\lvert\lambda\rvert^{3}d\lambda\,d\omega$; the Fourier slice theorem replaces $\widehat f(\lambda\omega)$ by the one-dimensional transform of $Rf$, and the differentiation in $t$ produces the factor $\lambda^3$.</p>
+<p><strong>Remark (the complex lines).</strong> The Radon transform of $\mathbb{C}^2$ has a second version: integration over the <strong>complex lines</strong>. An affine complex line is $\{a+\lambda b:\lambda\in\mathbb{C}\}$ for $a,b\in\mathbb{C}^2$ with $b\neq0$, and the space of such lines is $\mathbb{CP}^2$ minus the point $[0:0:1]$, a complex surface: the line is $\alpha z_1+\beta z_2=\gamma$ with $(\alpha,\beta)\neq(0,0)$, and the triple $[\alpha:\beta:\gamma]$ is its class. <strong>The complex-line transform is the analytical counterpart of the real hyperplane transform</strong>, and its inversion uses a Cauchy–Fantappiè kernel rather than a power of the Laplacian; it is the transform behind the Bochner–Martinelli formula of <em>The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$</em>.</p>
+<h2 id="spherical-harmonics">Spherical Harmonics</h2>
+<p><strong>The spherical harmonics of $S^3$ are the restrictions of the harmonic homogeneous polynomials; they diagonalise the Laplacian of the sphere, and the space of degree $k$ has dimension $(k+1)^2$.</strong></p>
+<p><strong>Definition.</strong> A <strong>spherical harmonic of degree $k$</strong> on $S^3\subset\mathbb{R}^4$ is the restriction to $S^3$ of a homogeneous polynomial $P$ of degree $k$ in the four real variables that is harmonic, $\Delta P=0$. The space is denoted $\mathcal{H}_k$.</p>
+<p><strong>Theorem (the dimension and the eigenvalue).</strong> The space $\mathcal{H}_k$ has dimension
+$$
+\dim\mathcal{H}_k=(k+1)^2,
+$$
+and each $Y\in\mathcal{H}_k$ is an eigenfunction of the Laplace–Beltrami operator $\Delta_{S^3}$ with eigenvalue
+$$
+-k(k+2).
+$$</p>
+<p><em>Proof.</em> The harmonic homogeneous polynomials of degree $k$ in $n$ variables have dimension $\binom{n+k-1}{k}-\binom{n+k-3}{k-2}$; for $n=4$ this is $\binom{k+3}{3}-\binom{k+1}{3}=(k+1)^2$. The eigenvalue is the standard one for the sphere $S^{n-1}$, $-k(k+n-2)$, with $n=4$.</p>
+<p><strong>Theorem (the decomposition).</strong> The spaces $\mathcal{H}_k$ are mutually orthogonal in $L^2(S^3)$ and
+$$
+L^2(S^3)=\bigoplus_{k=0}^{\infty}\mathcal{H}_k
+$$
+as an orthogonal direct sum; the sum is dense, and the convergence is in $L^2$.</p>
+<p><em>Proof.</em> The restrictions of the homogeneous harmonic polynomials are dense in $L^2(S^3)$ by the Weierstrass approximation theorem and the decomposition of polynomials into harmonic pieces; the orthogonality follows from the divergence theorem applied to $P\Delta Q-Q\Delta P$ on the ball.</p>
+<p><strong>Remark (the Hopf fibration and the unitary action).</strong> The group $\mathrm{U}(2)$ acts on $\mathbb{C}^2$ and on $S^3$, and it commutes with the Laplacian; <strong>the spaces $\mathcal{H}_k$ are invariant under $\mathrm{U}(2)$ and decompose into irreducible unitary representations</strong>. The circle $S^1$ of scalar multiplications acts by the Hopf fibration $S^3\to S^2$, and the weight of this action is the difference of the bihomogeneous degrees of the monomials. The monomials $z^\alpha\bar z^\beta$ with $\lvert\alpha\rvert+\lvert\beta\rvert=k$ span the polynomials of degree $k$, and the harmonic ones are obtained by subtracting the multiples of $\lVert z\rVert^2$; the bookkeeping is the one of the Hopf fibration of <em>The Unit Sphere and the Hopf Fibration</em>.</p>
+<p><strong>Remark (the addition formula and the Funk–Hecke formula).</strong> For each $k$ there is a reproducing kernel $Z_k(x,y)$ on $S^3\times S^3$, the <strong>zonal spherical harmonic</strong>, which depends only on the inner product $x\cdot y$ and satisfies
+$$
+\int_{S^3}Z_k(x,y)Y(y)\,d\sigma(y)=Y(x),\qquad Y\in\mathcal{H}_k.
+$$
+<strong>The Funk–Hecke formula</strong> expresses the integral of $Y$ against a function of $x\cdot y$ as a constant multiple of $Y(x)$; the constants are the eigenvalues of the convolution operators on the sphere and are given by Gegenbauer polynomials. The formula is the spherical analogue of the Fourier convolution theorem.</p>
+<h2 id="the-laplacian">The Laplacian</h2>
+<p><strong>The Laplacian of $\mathbb{C}^2$ is the Euclidean Laplacian of $\mathbb{R}^4$; it is $4\partial\bar\partial$, its fundamental solution is a constant times $\lvert z\rvert^{-2}$, and its harmonic functions satisfy the mean value property.</strong></p>
+<p><strong>Definition.</strong> The <strong>Laplacian</strong> on $\mathbb{C}^2$ is
+$$
+\Delta=\sum_{k=1}^{2}\left(\frac{\partial^2}{\partial x_k^2}+\frac{\partial^2}{\partial y_k^2}\right)
+=4\left(\frac{\partial^2}{\partial z_1\partial\bar z_1}+\frac{\partial^2}{\partial z_2\partial\bar z_2}\right).
+$$</p>
+<p><strong>Proposition (the Fourier multiplier).</strong> For a Schwartz function $f$,
+$$
+\widehat{\Delta f}(\xi)=-4\pi^2\lVert\xi\rVert^2\widehat f(\xi),
+$$
+where $\lVert\xi\rVert^2=\lvert\xi_1\rvert^2+\lvert\xi_2\rvert^2$. Hence $\Delta$ is self-adjoint on $L^2$ and its spectrum is $(-\infty,0]$.</p>
+<p><em>Proof.</em> The Fourier transform of a real second derivative is $(2\pi i)^2$ times the square of the frequency; summing over the four real coordinates gives the display. The symbol is real and nonpositive, so the operator is self-adjoint with the stated spectrum.</p>
+<p><strong>Theorem (the fundamental solution).</strong> The function
+$$
+E(z)=\frac{1}{4\pi^2\lVert z\rVert^2}
+$$
+satisfies
+$$
+-\Delta E=\delta_0
+$$
+in the sense of distributions on $\mathbb{C}^2$.</p>
+<p><em>Proof.</em> For $n=4$ the fundamental solution of $-\Delta$ is $\frac{1}{(n-2)\omega_{n-1}}\lVert x\rVert^{2-n}$ with $\omega_3=2\pi^2$; this gives the constant. The distributional computation is the one of <em>Fourier Analysis on Euclidean Spaces</em>.</p>
+<p><strong>Theorem (the mean value property).</strong> Let $u$ be harmonic on a domain containing the closed ball $\overline{B}(a,r)$. Then
+$$
+u(a)=\frac{1}{\omega_3}\int_{S^3}u(a+r\omega)\,d\omega,
+$$
+and $u$ is $C^\infty$; harmonic functions are real analytic.</p>
+<p><em>Proof.</em> The mean value property is the Euclidean one in four dimensions; the regularity follows from the representation $u=u*\varphi_\epsilon$ with a radial approximate identity, or from the fundamental solution.</p>
+<p><strong>Remark (harmonic against pluriharmonic).</strong> Every pluriharmonic function is harmonic, because $\Delta=4\sum_k\partial^2/\partial z_k\partial\bar z_k$ is the trace of the Hermitian matrix of the mixed derivatives; <strong>the converse fails</strong>, and $\lvert z_1\rvert^2-\lvert z_2\rvert^2$ is harmonic but not pluriharmonic. The two notions are the real and the complex readings of the same operator: harmonic functions are the solutions of $\Delta u=0$, and pluriharmonic functions are the real parts of holomorphic functions. The distinction is developed in <em>Analysis on $\mathbb{C}^2$</em>.</p>
+<p><strong>Remark (the Kähler Laplacian).</strong> The Laplacian is the Laplacian associated with the <strong>flat Kähler metric</strong> of $\mathbb{C}^2$: the Kähler form is closed and parallel, and $\Delta$ is $4\partial\bar\partial$ acting on functions. <strong>The harmonic analysis of $\mathbb{C}^2$ is therefore the spectral analysis of the flat Kähler Laplacian</strong>, and the spherical harmonics of $S^3$ are its eigenfunctions on the sphere, with the eigenvalues $-k(k+2)$ of the Laplace–Beltrami operator.</p>
+<h2 id="summary">Summary</h2>
+<p>The additive group $\mathbb{C}^2$ is $\mathbb{R}^4$; its characters are $\chi_\xi(z)=e^{2\pi i\operatorname{Re}\langle z,\xi\rangle}$, its Haar measure is Lebesgue measure, and its Fourier transform is the four-dimensional transform, unitary on $L^2$ and inverting by the opposite character. Convolution is the convolution of $\mathbb{R}^4$; it makes $L^1$ a commutative Banach algebra without unit, and the transform turns it into pointwise multiplication. The Paley–Wiener theorem characterizes compact support by the growth of the Fourier–Laplace extension; in the complex reading, the holomorphic Fourier transform $\mathcal{F}f(\xi)=\int f(z)e^{-2\pi iz\cdot\xi}dz$ is entire of exponential type equal to the radius of the support.</p>
+<p>The Radon transform integrates over the affine hyperplanes of $\mathbb{R}^4$; the Fourier slice theorem identifies its one-dimensional transform with the Fourier transform along the normal, and the inversion differentiates three times and integrates over $S^3$. The spherical harmonics of $S^3$ are the restrictions of the harmonic homogeneous polynomials; the space of degree $k$ has dimension $(k+1)^2$ and the eigenvalue $-k(k+2)$, and $L^2(S^3)$ is their orthogonal direct sum. The Laplacian is the Euclidean Laplacian, equal to $4\partial\bar\partial$, with fundamental solution $1/(4\pi^2\lVert z\rVert^2)$ and with the mean value property; the pluriharmonic functions are the harmonic functions that are real parts of holomorphic functions, and the distinction is the one of <em>Analysis on $\mathbb{C}^2$</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$z=x+iy$</td>
+<td>the complex and real coordinates of $\mathbb{C}^2\cong\mathbb{R}^4$</td>
+</tr>
+<tr>
+<td>$\chi_\xi(z)=e^{2\pi i\operatorname{Re}\langle z,\xi\rangle}$</td>
+<td>the unitary character of frequency $\xi$</td>
+</tr>
+<tr>
+<td>$\widehat f(\xi)$</td>
+<td>the Fourier transform on the group</td>
+</tr>
+<tr>
+<td>$\mathcal{F}f(\xi)$</td>
+<td>the holomorphic Fourier transform, with the bilinear pairing</td>
+</tr>
+<tr>
+<td>$f*g$</td>
+<td>the convolution</td>
+</tr>
+<tr>
+<td>$Rf(\omega,t)$</td>
+<td>the Radon transform over the hyperplane $x\cdot\omega=t$</td>
+</tr>
+<tr>
+<td>$\mathcal{H}_k$</td>
+<td>the spherical harmonics of degree $k$ on $S^3$</td>
+</tr>
+<tr>
+<td>$\Delta_{S^3}$</td>
+<td>the Laplace–Beltrami operator of the sphere</td>
+</tr>
+<tr>
+<td>$\Delta=4\partial\bar\partial$</td>
+<td>the Euclidean Laplacian of $\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$E(z)=1/(4\pi^2\lVert z\rVert^2)$</td>
+<td>the fundamental solution of $-\Delta$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-complex-two-space.html">Complex Two-Space</a>, for the space, the realification and the Hermitian form.</li>
+<li><a href="the-realification-of-the-complex-two-space.html">The Realification of $\mathbb{C}^2$</a>, for the identification with $\mathbb{R}^4$ and the complex structure $J$.</li>
+<li><a href="the-topology-of-the-complex-two-space.html">The Topology of $\mathbb{C}^2$</a>, for the group structure and the sphere $S^3$.</li>
+<li><a href="the-unit-sphere-and-the-hopf-fibration.html">The Unit Sphere and the Hopf Fibration</a>, for the Hopf fibration and the action of $S^1$ on $S^3$.</li>
+<li><a href="analysis-on-the-complex-two-space.html">Analysis on $\mathbb{C}^2$</a>, for the harmonic and pluriharmonic functions and the Laplacian.</li>
+<li><a href="the-dbar-problem-and-the-bochner-martinelli-integral.html">The $\bar\partial$-Problem and the Bochner–Martinelli Integral on $\mathbb{C}^2$</a>, for the complex-line transform and the boundary kernel.</li>
+<li><a href="fourier-analysis-on-euclidean-spaces.html">Fourier Analysis on Euclidean Spaces</a>, for the Fourier transform, convolution, the Paley–Wiener theorem and the fundamental solution.</li>
+<li><a href="differential-forms-and-stokes-theorem.html">Differential Forms and Stokes' Theorem</a>, for the calculus of forms and the divergence theorem.</li>
+<li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the glyphs and the typographic conventions of the corpus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hénon Maps — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-henon-maps"><strong>The Hénon Maps</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Hénon family is the simplest family of polynomial automorphisms of $\mathbb{C}^2$ whose dynamics is not affine:
+$$
+H_{a,c}(z,w)=\bigl(z^2+c-aw,\ z\bigr),\qquad a\in\mathbb{C}^{\times},\ c\in\mathbb{C}.
+$$
+The map has degree two and constant Jacobian determinant $a$; it is a polynomial automorphism for every $a\neq0$, with inverse
+$$
+H_{a,c}^{-1}(z,w)=\left(w,\ \frac{w^2+c-z}{a}\right).
+$$
+<strong>The family is the $\mathbb{C}^2$ analogue of the quadratic family $z\mapsto z^2+c$</strong>: the second coordinate stores the previous value of the first, and the parameter $a$ couples the two coordinates. For $a=0$ the map degenerates to $(z^2+c,z)$, whose dynamics is that of the quadratic map; for $a\neq0$ the coupling makes the map invertible and produces the horseshoe, the fractal Julia sets and the connectedness locus.</p>
+<p>This article treats the family and its inverse, the Jacobian and the two regimes of contraction and expansion, the horseshoe for large $\lvert a\rvert$, the degree growth and the entropy, the Julia sets, the connectedness locus, and the quadratic family as the limit $a\to0$. The polynomial automorphisms are <em>The Affine and Polynomial Automorphisms of $\mathbb{C}^2$</em>; the degree and the dynamical degree are the ones of that article; the topology of $\mathbb{C}^2$ is <em>The Topology of $\mathbb{C}^2$</em>.</p>
+<p><strong>The Hénon map is the degree-two polynomial automorphism, and its iteration is the model of a nonuniformly hyperbolic holomorphic dynamical system in two variables.</strong> The degree doubles at each iteration, the entropy is $\log 2$, and the Julia set is a fractal subset of $\mathbb{C}^2$ whose structure depends on the parameter $a$ and on the connectedness of the orbits.</p>
+<h2 id="the-family-and-its-inverse">The Family and Its Inverse</h2>
+<p><strong>The Hénon map is a polynomial automorphism of degree two with inverse of degree two; its second coordinate is the previous first coordinate, and the parameter $a$ is the Jacobian.</strong></p>
+<p><strong>Definition.</strong> The <strong>Hénon map</strong> with parameters $a\in\mathbb{C}^{\times}$ and $c\in\mathbb{C}$ is
+$$
+H_{a,c}(z,w)=\bigl(z^2+c-aw,\ z\bigr).
+$$</p>
+<p><strong>Proposition (the inverse).</strong> The map $H_{a,c}$ is a polynomial automorphism of $\mathbb{C}^2$, and its inverse is
+$$
+H_{a,c}^{-1}(z,w)=\left(w,\ \frac{w^2+c-z}{a}\right).
+$$</p>
+<p><em>Proof.</em> If $(z',w')=H(z,w)$, then $w'=z$ and $z'=z^2+c-aw$, so $w=(z'^2+c-w')/a$. The two maps are polynomial and inverse to each other.</p>
+<p><strong>Proposition (the degree).</strong> The map $H_{a,c}$ has degree $2$, and its inverse has degree $2$. The composition $H_{a,c}^n$ has degree $2^n$.</p>
+<p><em>Proof.</em> The first component has degree $2$ and the second degree $1$; the inverse has the same degrees. The degree of a composition is at most the product of the degrees, and for the Hénon map the top-degree term $z^2$ is not cancelled by the composition, so the degree doubles at each step.</p>
+<p><strong>Remark (the real Hénon map).</strong> For $a,c\in\mathbb{R}$ the map preserves the real locus $\mathbb{R}^2\subset\mathbb{C}^2$, and its restriction is the classical real Hénon map. <strong>The complex Hénon map is the complexification of the real one</strong>, and the real dynamics is the intersection of the complex dynamics with $\mathbb{R}^2$.</p>
+<p><strong>Remark (the group generated).</strong> The iterates $H^n$ have degrees $2^n$, so they are all distinct; the cyclic group generated by $H$ is infinite. <strong>The Hénon map is a tame polynomial automorphism</strong>, by the Jung–van der Kulk theorem, but its dynamical behaviour is not tame at all.</p>
+<h2 id="the-jacobian-and-the-two-regimes">The Jacobian and the Two Regimes</h2>
+<p><strong>The Jacobian determinant is the constant $a$; the map contracts area for $\lvert a\rvert<1$, preserves it for $\lvert a\rvert=1$, and expands it for $\lvert a\rvert>1$.</strong></p>
+<p><strong>Proposition (the Jacobian).</strong> The complex Jacobian matrix of $H_{a,c}$ is
+$$
+JH_{a,c}(z,w)=\begin{pmatrix}2z&-a\\1&0\end{pmatrix},
+$$
+and its determinant is
+$$
+\det JH_{a,c}=a.
+$$
+The real Jacobian determinant is $\lvert a\rvert^2$.</p>
+<p><em>Proof.</em> The partial derivatives are direct; the determinant of the matrix is $a$. The real Jacobian determinant of a holomorphic map is the square of the modulus of the complex one, by <em>Analysis on $\mathbb{C}^2$</em>.</p>
+<p><strong>Proposition (the three regimes).</strong> For $\lvert a\rvert<1$ the map is <strong>dissipative</strong>: it contracts the volume by the factor $\lvert a\rvert^2$ at every point. For $\lvert a\rvert=1$ it is <strong>area preserving</strong>, and for $a=1$ it preserves the holomorphic symplectic form $dz\wedge dw$; for general $\lvert a\rvert=1$ it multiplies the form by the constant $a$. For $\lvert a\rvert>1$ it is <strong>expanding</strong> in volume.</p>
+<p><em>Proof.</em> The real Jacobian determinant is $\lvert a\rvert^2$, constant; the pullback of the volume form is $\lvert a\rvert^2$ times the volume form. The pullback of $dz\wedge dw$ is $\det JH\cdot dz\wedge dw=a\,dz\wedge dw$, which is the form itself exactly when $a=1$.</p>
+<p><strong>Remark (the inverse and the regimes).</strong> The inverse has Jacobian determinant $a^{-1}$; <strong>the dissipation of $H$ is the expansion of $H^{-1}$</strong>, and the two directions of time are not symmetric unless $\lvert a\rvert=1$. The stable and unstable manifolds are the curves along which the forward and backward contractions occur.</p>
+<p><strong>Remark (the area-preserving case).</strong> For $a=1$ the map is a complex symplectic automorphism of the affine plane, and for general $\lvert a\rvert=1$ it is symplectic up to the constant factor $a$; it is the discrete analogue of a Hamiltonian system. <strong>The conservative case is the boundary between the dissipative and the expanding regimes</strong>, and its dynamics is the most delicate of the three.</p>
+<h2 id="the-horseshoe">The Horseshoe</h2>
+<p><strong>For large $\lvert a\rvert$ the Hénon map has a hyperbolic horseshoe: on a Cantor set it is topologically conjugate to the full shift on two symbols.</strong></p>
+<p><strong>Theorem (the horseshoe).</strong> For $\lvert a\rvert$ sufficiently large and $c$ fixed, the non-wandering set of $H_{a,c}$ contains a compact invariant set $\Lambda$ on which $H_{a,c}$ is topologically conjugate to the full shift on two symbols. The set $\Lambda$ is a Cantor set, and the Julia set of $H_{a,c}$ is a Cantor set.</p>
+<p><em>Proof.</em> This is the theorem of Devaney and Nitecki for the real Hénon map, and its complex version: for large $\lvert a\rvert$ the map sends a suitable rectangle into a thin horseshoe, the two branches of which cross the rectangle in the two vertical strips; the invariant set is the intersection of the preimages, a Cantor set, and the coding by the two branches gives the conjugacy. The details are in the theory of hyperbolic dynamics.</p>
+<p><strong>Remark (the geometry of the horseshoe).</strong> The horseshoe is the image of a rectangle bent into a U-shape and placed back over itself, so that the two arms cross the original rectangle in two strips. <strong>The two strips are the two symbols</strong>, and the invariant set is the set of points whose orbit stays in the rectangle forever, coded by the sequence of strips.</p>
+<p><strong>Remark (the real picture).</strong> For the real Hénon map the horseshoe is visible in the plane; the two arms of the horseshoe are the two branches of the unstable manifold. <strong>In $\mathbb{C}^2$ the horseshoe sits in a real four-dimensional ambient space</strong>, and its intersection with $\mathbb{R}^2$ is the real horseshoe.</p>
+<p><strong>Remark (the Julia set in the horseshoe regime).</strong> For large $\lvert a\rvert$ the Julia set is a Cantor set, and the map is uniformly hyperbolic on it. <strong>The entropy is concentrated on the horseshoe</strong>, and the rest of the dynamics is the basin of infinity.</p>
+<h2 id="degree-growth-and-entropy">Degree Growth and Entropy</h2>
+<p><strong>The degree of $H^n$ is $2^n$; the dynamical degree is $2$, and the topological entropy is $\log 2$.</strong></p>
+<p><strong>Theorem (the degree growth).</strong> For every $a\neq0$ and $c$,
+$$
+\deg H_{a,c}^n=2^n.
+$$</p>
+<p><em>Proof.</em> The degree of $H$ is $2$; the top-degree term of the first component of $H^n$ is the square of the top-degree term of the first component of $H^{n-1}$, and the linear term $-aw$ does not cancel it. Hence the degree doubles at each step.</p>
+<p><strong>Definition.</strong> The <strong>dynamical degree</strong> of a polynomial automorphism $F$ is
+$$
+\lambda(F)=\lim_{n\to\infty}\bigl(\deg F^n\bigr)^{1/n}.
+$$
+For the Hénon map, $\lambda(H_{a,c})=2$.</p>
+<p><strong>Theorem (the entropy).</strong> The topological entropy of $H_{a,c}$ is
+$$
+h_{\mathrm{top}}(H_{a,c})=\log 2.
+$$</p>
+<p><em>Proof.</em> For a polynomial automorphism of $\mathbb{C}^2$ the topological entropy is the logarithm of the dynamical degree, by the theorem of Bedford–Lyubich–Smillie; the dynamical degree is $2$ by the degree growth. The entropy is independent of $a$ and $c$.</p>
+<p><strong>Remark (the entropy and the horseshoe).</strong> The entropy $\log 2$ is the entropy of the full shift on two symbols, and it is realised on the horseshoe of the large-$\lvert a\rvert$ regime. <strong>The degree growth is the algebraic shadow of the horseshoe</strong>: the two branches of the horseshoe are the two preimages counted by the degree.</p>
+<p><strong>Remark (the entropy and the parameters).</strong> The topological entropy is constant in the family, but the <strong>measure-theoretic</strong> entropy and the Lyapunov exponents depend on the parameter and on the invariant measure. <strong>The equilibrium measure</strong> of the Hénon map has entropy $\log 2$ and Lyapunov exponents $\chi^+>0$ and $\chi^-<0$ with $\chi^++\chi^-=\log\lvert a\rvert$, the sum being the logarithm of the Jacobian.</p>
+<h2 id="the-julia-sets">The Julia Sets</h2>
+<p><strong>The filled Julia sets $K^\pm$ are the sets of points with bounded forward and backward orbits; their boundaries are $J^\pm$, and the Julia set is $J=J^+\cap J^-$.</strong></p>
+<p><strong>Definition.</strong> The <strong>filled Julia sets</strong> are
+$$
+K^+=\{z\in\mathbb{C}^2:\{H^n(z)\}_{n\ge0}\text{ is bounded}\},\qquad
+K^-=\{z\in\mathbb{C}^2:\{H^{-n}(z)\}_{n\ge0}\text{ is bounded}\},
+$$
+and the <strong>Julia sets</strong> are
+$$
+J^+=\partial K^+,\qquad J^-=\partial K^-,\qquad J=J^+\cap J^-.
+$$</p>
+<p><strong>Proposition (the basic properties).</strong> The sets $K^\pm$ are closed and invariant under $H^{\pm1}$; $J^\pm$ are invariant under $H$, and $J$ is invariant under $H$ and $H^{-1}$. The set $K^+$ is the set of points that do not escape to infinity under forward iteration, and $K^-$ is the set of points that do not escape under backward iteration.</p>
+<p><em>Proof.</em> The boundedness of the forward orbit is preserved by $H$ and by $H^{-1}$ on $K^+$ by definition; the boundary of an invariant set is invariant. The escape to infinity is the complement of $K^+$ for a polynomial map of degree at least two.</p>
+<p><strong>Theorem (the large-$\lvert a\rvert$ case).</strong> For $\lvert a\rvert$ sufficiently large, $J^+=J^-$ and the common set is a Cantor set; it is the horseshoe of the previous section.</p>
+<p><em>Proof.</em> In the horseshoe regime the map is uniformly hyperbolic on the non-wandering set, and the forward and backward Julia sets coincide with the horseshoe; the horseshoe is a Cantor set.</p>
+<p><strong>Remark (the dissipative case).</strong> For $\lvert a\rvert<1$ the map contracts area, and $K^+$ is a compact invariant set whose structure depends on the parameter; it can have positive area or be a fractal. <strong>The Julia set $J$ is the intersection of the boundaries of the two filled Julia sets</strong>, and its Hausdorff dimension depends on the parameter and is computed from the Lyapunov exponents and the pressure formula.</p>
+<p><strong>Remark (the currents).</strong> The Green functions
+$$
+G^\pm(z)=\lim_{n\to\infty}\frac{1}{2^n}\log^+\lVert H^{\pm n}(z)\rVert
+$$
+are plurisubharmonic, and their currents $T^\pm=\frac{i}{\pi}\partial\bar\partial G^\pm$ are the <strong>Green currents</strong>. <strong>The equilibrium measure is $\mu=T^+\wedge T^-$</strong>, its support is the Julia set $J$, and its entropy is $\log 2$. The currents are the natural invariant objects of the complex dynamics, and the Julia set is the support of their intersection.</p>
+<h2 id="the-connectedness-locus">The Connectedness Locus</h2>
+<p><strong>The connectedness locus is the set of parameters $(a,c)$ for which the Julia set is connected; it is the $\mathbb{C}^2$ analogue of the Mandelbrot set.</strong></p>
+<p><strong>Definition.</strong> The <strong>connectedness locus</strong> of the Hénon family is
+$$
+\mathcal{C}=\{(a,c)\in\mathbb{C}^{\times}\times\mathbb{C}:J_{a,c}\text{ is connected}\}.
+$$</p>
+<p><strong>Proposition (the complement).</strong> The complement of $\mathcal{C}$ is the <strong>disconnected locus</strong>, the set of parameters for which $J_{a,c}$ is not connected. The connectedness locus is closed in the parameter space.</p>
+<p><em>Proof.</em> The Julia set depends continuously on the parameter in the Hausdorff topology on compact sets; the set of parameters with connected Julia set is closed. The disconnected locus is the complement by definition.</p>
+<p><strong>Theorem (the structure).</strong> The connectedness locus is a closed subset of the parameter space with nonempty interior, hence of real dimension $4$; its boundary is the <strong>Hénon Mandelbrot set</strong>. For fixed $c$ and $\lvert a\rvert$ sufficiently large, the parameter is outside $\mathcal{C}$; for $a\to0$, $\mathcal{C}$ converges to the Mandelbrot set of the quadratic family.</p>
+<p><em>Proof.</em> The closedness is the continuity of the Julia set; the hyperbolic parameters, which have an attracting cycle and a connected Julia set, form a nonempty open subset. The boundary is the bifurcation locus, by definition the Hénon Mandelbrot set. The degeneration as $a\to0$ is the theorem of Hubbard–Oberste-Vorth on the Hénon map as a perturbation of the quadratic map. The precise formulation is in the theory of complex dynamics in several variables.</p>
+<p><strong>Remark (the Mandelbrot set as a slice).</strong> The quadratic family is the slice $a=0$ of the Hénon family, and the Mandelbrot set is the connectedness locus of that slice. <strong>The Hénon connectedness locus is a thickening of the Mandelbrot set in the $a$-direction</strong>, and its slices by fixed $a$ are the "Hénon Julia sets" of the parameter $c$.</p>
+<p><strong>Remark (the real slice).</strong> For real $a,c$ the connectedness locus intersects $\mathbb{R}^2$ in the real connectedness locus of the real Hénon map; <strong>the real slice is the set of parameters for which the real Julia set is connected</strong>, and it is the visible part of the complex picture.</p>
+<h2 id="the-quadratic-family-as-a-limit">The Quadratic Family as a Limit</h2>
+<p><strong>As $a\to0$ the Hénon map degenerates to $(z^2+c,z)$, whose dynamics is the quadratic family; the Hénon family is a deformation of the quadratic family.</strong></p>
+<p><strong>Proposition (the degenerate limit).</strong> For $a=0$ the map
+$$
+H_{0,c}(z,w)=\bigl(z^2+c,\ z\bigr)
+$$
+is not invertible, and its dynamics is the quadratic dynamics of $z\mapsto z^2+c$ on the first coordinate; the second coordinate is the previous value of the first.</p>
+<p><em>Proof.</em> The first coordinate evolves by $z_{n+1}=z_n^2+c$, and the second coordinate is $z_{n-1}$; the map is the suspension of the quadratic map by the shift on the orbit.</p>
+<p><strong>Theorem (the limit of the connectedness locus).</strong> As $a\to0$, the connectedness locus $\mathcal{C}_a$ converges to the Mandelbrot set $\mathcal{M}$ of the quadratic family, in the sense of the Hausdorff convergence of the slices and of the currents.</p>
+<p><em>Proof.</em> This is the theorem of Hubbard and Oberste-Vorth on the Hénon map as a perturbation of the quadratic map; the precise statement is in the theory of complex dynamics in several variables. The mechanism is that the coupling $a$ tends to zero, the second coordinate is rescaled by $a$, and the first coordinate converges to the quadratic map.</p>
+<p><strong>Remark (the parameter space).</strong> The Hénon family has two complex parameters, and the quadratic family is the boundary slice $a=0$. <strong>The Hénon connectedness locus is a two-dimensional deformation of the Mandelbrot set</strong>, and the deformation is the subject of the parameter-space theory of the Hénon maps.</p>
+<p><strong>Remark (the real Hénon map).</strong> The real Hénon map with the classical parameters has a strange attractor, and the complex Hénon map is its complexification. <strong>The fractal geometry of the real attractor is the shadow of the complex Julia set</strong>, and the complex methods give the rigorous theory of the real phenomena.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hénon map $H_{a,c}(z,w)=(z^2+c-aw,z)$ is a polynomial automorphism of degree two with constant Jacobian $a$; its inverse is $(w,(w^2+c-z)/a)$. For $\lvert a\rvert<1$ it is dissipative, for $\lvert a\rvert=1$ it is area preserving and symplectic, and for $\lvert a\rvert>1$ it expands area. For large $\lvert a\rvert$ it has a hyperbolic horseshoe on a Cantor set, topologically conjugate to the full shift on two symbols, and its Julia set is a Cantor set.</p>
+<p>The degree of $H^n$ is $2^n$, the dynamical degree is $2$, and the topological entropy is $\log 2$; the entropy is realised on the horseshoe and on the equilibrium measure. The filled Julia sets $K^\pm$ are the sets of bounded forward and backward orbits, the Julia sets are their boundaries, and $J=J^+\cap J^-$ is the support of the equilibrium measure $T^+\wedge T^-$. The connectedness locus is the set of parameters with connected Julia set; it is a real four-dimensional subset of the parameter space, its boundary is the Hénon Mandelbrot set, and it converges to the Mandelbrot set as $a\to0$, where the Hénon map degenerates to the quadratic family.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H_{a,c}(z,w)=(z^2+c-aw,z)$</td>
+<td>the Hénon map</td>
+</tr>
+<tr>
+<td>$a$</td>
+<td>the Jacobian determinant, the coupling parameter</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>the additive parameter</td>
+</tr>
+<tr>
+<td>$K^\pm$</td>
+<td>the filled Julia sets of the forward and backward orbits</td>
+</tr>
+<tr>
+<td>$J^\pm=\partial K^\pm$</td>
+<td>the Julia sets</td>
+</tr>
+<tr>
+<td>$J=J^+\cap J^-$</td>
+<td>the Julia set</td>
+</tr>
+<tr>
+<td>$G^\pm$</td>
+<td>the Green functions</td>
+</tr>
+<tr>
+<td>$T^\pm=\frac{i}{\pi}\partial\bar\partial G^\pm$</td>
+<td>the Green currents</td>
+</tr>
+<tr>
+<td>$\mathcal{C}$</td>
+<td>the connectedness locus</td>
+</tr>
+<tr>
+<td>$\mathcal{M}$</td>
+<td>the Mandelbrot set of the quadratic family</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-complex-two-space.html">Complex Two-Space</a>, for the space and the polynomial maps.</li>
+<li><a href="the-affine-and-polynomial-automorphisms-of-the-complex-two-space.html">The Affine and Polynomial Automorphisms of $\mathbb{C}^2$</a>, the previous article, for the degree, the tame automorphisms and the Jacobian.</li>
+<li><a href="the-topology-of-the-complex-two-space.html">The Topology of $\mathbb{C}^2$</a>, for the compactness and the escape to infinity.</li>
+<li><a href="the-ball-and-the-bicylinder.html">The Ball and the Bicylinder in $\mathbb{C}^2$</a>, for the model domains and the boundary geometry.</li>
+<li><a href="hyperbolic-dynamics-and-anosov-systems.html">Hyperbolic Dynamics and Anosov Systems</a>, for the horseshoe and the uniformly hyperbolic theory.</li>
+<li><a href="several-complex-variables.html">Several Complex Variables</a>, for the plurisubharmonic Green functions and the currents.</li>
+<li><a href="the-mandelbrot-set-and-the-quadratic-family.html">The Mandelbrot Set and the Quadratic Family</a>, for the one-dimensional Mandelbrot set and the Julia sets.</li>
+<li><a href="the-dual-number-quadratic-family.html">The Dual-Number Quadratic Family</a>, for the degenerate analogue in the dual numbers.</li>
+<li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the glyphs and the typographic conventions of the corpus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

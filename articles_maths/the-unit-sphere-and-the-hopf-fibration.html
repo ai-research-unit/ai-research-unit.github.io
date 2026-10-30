@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Unit Sphere and the Hopf Fibration — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-unit-sphere-and-the-hopf-fibration"><strong>The Unit Sphere and the Hopf Fibration</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article treats the unit sphere $S^3\subset\mathbb{C}^2$ and the map
+$$
+h:S^3\longrightarrow\mathbb{CP}^1,\qquad h(z_1,z_2)=[z_1:z_2],
+$$
+the <strong>Hopf map</strong>. The map is a fibre bundle with fibre the circle $S^1$, its base is the two-sphere, its total space is the three-sphere, and its class generates $\pi_3(S^2)\cong\mathbb{Z}$. The article computes the bundle, the exact sequence of homotopy groups, the linking number of two fibres, and the identification $S^3\cong\mathrm{SU}(2)$.</p>
+<p>The article is the third of the topological articles of the category. The topology of $\mathbb{C}^2$ is <em>The Topology of $\mathbb{C}^2$</em>; the compactifications, and the role of the Hopf map as the attaching map of the projective compactification, are <em>The Compactifications of $\mathbb{C}^2$</em>; the homotopy groups and the general Hopf fibrations are <em>Homotopy Groups and Fibrations</em>; the linking number is <em>Knot Theory</em>; and the quaternionic model of the sphere is <em>Quaternion Topology</em> and <em>Introduction to Topology on the Quaternions</em>. None of these is restated here.</p>
+<p><strong>The Hopf map is the simplest nontrivial circle bundle whose total space is a sphere.</strong> It is locally a product $S^2\times S^1$, globally not, and its nontriviality is measured by the first Chern class and by the Hopf invariant. The fibres are circles, any two of them are linked once, and the total space is the Lie group $\mathrm{SU}(2)$.</p>
+<h2 id="the-unit-sphere">The Unit Sphere</h2>
+<p><strong>The unit sphere $S^3$ is a compact, connected, simply connected three-dimensional manifold and a Lie group; it is the total space of the Hopf bundle.</strong></p>
+<p><strong>Definition.</strong> The <strong>unit sphere</strong> is
+$$
+S^3=\{z=(z_1,z_2)\in\mathbb{C}^2:\lVert z\rVert=1\}.
+$$</p>
+<p><strong>Proposition (the manifold and its invariants).</strong> The sphere $S^3$ is a compact, connected, simply connected smooth manifold of dimension $3$, with
+$$
+H_0(S^3;\mathbb{Z})=H_3(S^3;\mathbb{Z})=\mathbb{Z},\qquad H_1=H_2=0,
+$$
+and
+$$
+\pi_1(S^3)=\pi_2(S^3)=0,\qquad \pi_3(S^3)=\mathbb{Z}.
+$$</p>
+<p><em>Proof.</em> The sphere is closed and bounded in $\mathbb{C}^2\cong\mathbb{R}^4$, hence compact; it is connected for dimension at least $1$ and simply connected for dimension at least $2$ (<em>The Fundamental Group and Covering Spaces</em>); its homology is computed by the cell decomposition $S^3=e^0\cup e^3$ (<em>Simplicial and Singular Homology</em>); and the Hurewicz theorem gives $\pi_3(S^3)\cong H_3(S^3)=\mathbb{Z}$ because the sphere is simply connected (<em>Homotopy Groups and Fibrations</em>).</p>
+<p><strong>Proposition (the unitary action).</strong> The unitary group $\mathrm{U}(2)$ acts transitively on $S^3$ by $A\cdot z=Az$, and the stabilizer of $e_1=(1,0)$ is the diagonal circle
+$$
+\left\{\begin{pmatrix}1&0\\0&\lambda\end{pmatrix}:\lvert\lambda\rvert=1\right\}\cong\mathrm{U}(1).
+$$
+Hence $S^3\cong\mathrm{U}(2)/\mathrm{U}(1)$ as a homogeneous space. The special unitary group $\mathrm{SU}(2)$ acts transitively and freely, and $S^3\cong\mathrm{SU}(2)$ as a manifold.</p>
+<p><em>Proof.</em> Every unit vector is the first column of a unitary matrix, so the action is transitive. A unitary matrix fixing $e_1$ has first column $e_1$ and is diagonal with a unit entry in the second place. The special unitary group acts transitively because it contains the unitary matrices of determinant $1$ that send $e_1$ to any unit vector; the stabilizer is trivial because a special unitary matrix with first column $e_1$ is the identity.</p>
+<p><strong>Remark (the sphere as a Lie group).</strong> The identification $S^3\cong\mathrm{SU}(2)$ is proved in the last section; it makes the sphere a compact Lie group, hence parallelizable. <strong>The group structure is not visible from the inclusion $S^3\subset\mathbb{C}^2$ alone</strong>, but it is the structure that the Hopf map exploits.</p>
+<p>The invariants are collected below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Invariant</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real dimension</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>compact</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>connected</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>simply connected</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$H_0,H_3$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$H_1,H_2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\pi_1,\pi_2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\pi_3$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-hopf-map">The Hopf Map</h2>
+<p><strong>The Hopf map sends a unit vector of $\mathbb{C}^2$ to the complex line it spans; its fibres are circles, and the map is a smooth surjection onto the two-sphere.</strong></p>
+<p><strong>Definition.</strong> The <strong>Hopf map</strong> is
+$$
+h:S^3\longrightarrow\mathbb{CP}^1,\qquad h(z_1,z_2)=[z_1:z_2].
+$$</p>
+<p>The map is well defined because $(z_1,z_2)\neq(0,0)$ on $S^3$, and it is smooth because it is the restriction of the smooth quotient map $\mathbb{C}^2\setminus\{0\}\to\mathbb{CP}^1$. The base is homeomorphic to $S^2$ by <em>The Subspaces of $\mathbb{C}^2$</em>, and the identification is written
+$$
+\mathbb{CP}^1\longrightarrow S^2,\qquad [w_1:w_2]\longmapsto\frac{w_1}{w_2}\in\mathbb{C}\cup\{\infty\},
+$$
+with the value $\infty$ at $[1:0]$.</p>
+<p><strong>Proposition (the fibres).</strong> For a unit vector $w=(w_1,w_2)\in S^3$, the fibre over $[w_1:w_2]$ is
+$$
+h^{-1}([w_1:w_2])=\{\lambda w:\lambda\in\mathbb{C},\ \lvert\lambda\rvert=1\}\cong S^1.
+$$
+The fibres are the orbits of the action of $\mathrm{U}(1)$ on $S^3$ by scalar multiplication, and two fibres are either equal or disjoint.</p>
+<p><em>Proof.</em> If $h(z)=[w]$, then $z=\lambda w$ for some $\lambda\in\mathbb{C}^{\times}$; the condition $\lVert z\rVert=\lVert w\rVert=1$ gives $\lvert\lambda\rvert=1$. Conversely, every $\lambda w$ with $\lvert\lambda\rvert=1$ lies in $S^3$ and has the same class as $w$. The action is free: $\lambda w=w$ with $w\neq0$ forces $\lambda=1$.</p>
+<p><strong>Corollary (the quotient).</strong> The map $h$ is the quotient map of the free action of $\mathrm{U}(1)$ on $S^3$, and
+$$
+S^3/\mathrm{U}(1)\cong\mathbb{CP}^1\cong S^2.
+$$</p>
+<p><em>Proof.</em> The fibres are exactly the orbits, and a continuous surjection with compact fibres from a compact Hausdorff space to a Hausdorff space is a quotient map.</p>
+<p><strong>Proposition (the standard fibres).</strong> The fibre over $[1:0]$ is
+$$
+C_1=\{(e^{i\theta},0):\theta\in\mathbb{R}\},
+$$
+the fibre over $[0:1]$ is
+$$
+C_2=\{(0,e^{i\theta}):\theta\in\mathbb{R}\},
+$$
+and these two circles lie in perpendicular complex coordinate planes of $\mathbb{C}^2$.</p>
+<p><em>Proof.</em> The fibre over $[1:0]$ consists of the unit multiples of $(1,0)$, and the fibre over $[0:1]$ of the unit multiples of $(0,1)$.</p>
+<p><strong>Remark (the map is a submersion).</strong> The differential of $h$ has rank $2$ at every point of $S^3$: the kernel is the tangent line of the fibre, and the quotient is the two-dimensional tangent space of $S^2$. <strong>The map is therefore a submersion, and every fibre is a smoothly embedded circle.</strong> The local product structure is made explicit in the next section.</p>
+<h2 id="the-bundle">The Bundle</h2>
+<p><strong>The Hopf map is a locally trivial fibre bundle with fibre $S^1$ and structure group $\mathrm{U}(1)$; it is the unit sphere bundle of the tautological line bundle over $\mathbb{CP}^1$, and it is not trivial.</strong></p>
+<p><strong>Theorem (local trivializations).</strong> Over the two standard charts
+$$
+U_2=\{[w_1:w_2]:w_2\neq0\},\qquad U_1=\{[w_1:w_2]:w_1\neq0\},
+$$
+the map $h$ is trivial. On $U_2$, with $t=w_1/w_2$, the map
+$$
+\varphi_2:h^{-1}(U_2)\longrightarrow U_2\times S^1,\qquad \varphi_2(z)=\left([z_1:z_2],\frac{z_2}{\lvert z_2\rvert}\right),
+$$
+is a homeomorphism with inverse
+$$
+(t,\lambda)\longmapsto\frac{\lambda(t,1)}{\sqrt{1+\lvert t\rvert^2}}.
+$$
+On $U_1$, with $s=w_2/w_1$, the analogous map uses $z_1/\lvert z_1\rvert$. On the overlap, the transition function is
+$$
+g_{12}(t)=\frac{t}{\lvert t\rvert}\in\mathrm{U}(1).
+$$</p>
+<p><em>Proof.</em> The inverse formula has norm $1$ and class $[t:1]$, and the two formulas are inverse by direct computation. The second component of $\varphi_2$ is unchanged when $z$ is multiplied by a unit scalar, so the trivialization is $\mathrm{U}(1)$-equivariant. The transition is computed by applying $\varphi_1$ to the point $\lambda(t,1)/\sqrt{1+\lvert t\rvert^2}$, whose first coordinate has modulus $\lvert t\rvert/\sqrt{1+\lvert t\rvert^2}$ and phase $\lambda t/\lvert t\rvert$.</p>
+<p><strong>Corollary (the structure group).</strong> The Hopf map is a principal $\mathrm{U}(1)$-bundle, with the action
+$$
+(z_1,z_2)\cdot\lambda=(\lambda z_1,\lambda z_2),\qquad \lvert\lambda\rvert=1.
+$$</p>
+<p><em>Proof.</em> The local trivializations are equivariant for the action, and the action is free and transitive on each fibre.</p>
+<p><strong>Proposition (the tautological bundle).</strong> The Hopf bundle is the unit sphere bundle of the tautological line bundle
+$$
+\mathcal{O}(-1)=\{([w],v):w\in\mathbb{C}^2\setminus\{0\},\ v\in\mathbb{C} w\}\longrightarrow\mathbb{CP}^1,
+$$
+and the first Chern class of $\mathcal{O}(-1)$ is a generator of $H^2(\mathbb{CP}^1;\mathbb{Z})\cong\mathbb{Z}$.</p>
+<p><em>Proof.</em> The unit sphere bundle consists of the pairs $([w],v)$ with $\lVert v\rVert=1$ and $v\in\mathbb{C} w$. The map $v\mapsto([v],v)$ is a homeomorphism from $S^3$ onto that bundle, and its projection to $\mathbb{CP}^1$ is $h$. The transition function $g_{12}(t)=t/\lvert t\rvert$ has winding number $1$ around the origin, so the first Chern number is $\pm1$; the sign depends on the orientation convention, and the class is a generator.</p>
+<p><strong>Proposition (non-triviality).</strong> The Hopf bundle is not trivial. Equivalently, there is no homeomorphism $S^3\cong S^2\times S^1$.</p>
+<p><em>Proof.</em> If the bundle were trivial, its total space would be $S^2\times S^1$, whose fundamental group is $\mathbb{Z}$; but $\pi_1(S^3)=0$. The non-vanishing first Chern class gives the same conclusion.</p>
+<p><strong>Remark (why the bundle is not detected by covering spaces).</strong> The total space $S^3$ is simply connected, so the bundle cannot be detected by the monodromy of a covering. <strong>The obstruction is the first Chern class</strong>, a degree-two cohomology class, and it is the reason the Hopf bundle is the standard example of a non-trivial bundle over a simply connected base.</p>
+<p>The bundle is summarised below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>total space</td>
+<td>$S^3$</td>
+</tr>
+<tr>
+<td>base</td>
+<td>$\mathbb{CP}^1\cong S^2$</td>
+</tr>
+<tr>
+<td>fibre</td>
+<td>$S^1$</td>
+</tr>
+<tr>
+<td>structure group</td>
+<td>$\mathrm{U}(1)$</td>
+</tr>
+<tr>
+<td>first Chern class</td>
+<td>a generator of $H^2(S^2;\mathbb{Z})$</td>
+</tr>
+<tr>
+<td>trivial</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\pi_1$ of the total space</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\pi_3$ of the total space</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-homotopy-exact-sequence">The Homotopy Exact Sequence</h2>
+<p><strong>The Hopf bundle yields the exact sequence that computes the low homotopy groups of $S^2$; in particular $\pi_3(S^2)\cong\mathbb{Z}$, generated by the Hopf map.</strong></p>
+<p><strong>Theorem (the exact sequence).</strong> The fibration
+$$
+S^1\longrightarrow S^3\stackrel{h}{\longrightarrow}S^2
+$$
+gives the exact sequence
+$$
+\cdots\longrightarrow\pi_n(S^1)\longrightarrow\pi_n(S^3)\longrightarrow\pi_n(S^2)\longrightarrow\pi_{n-1}(S^1)\longrightarrow\cdots
+$$
+and, in low degrees,
+$$
+0=\pi_3(S^1)\to\pi_3(S^3)=\mathbb{Z}\to\pi_3(S^2)\to\pi_2(S^1)=0,
+$$
+$$
+0=\pi_2(S^3)\to\pi_2(S^2)\to\pi_1(S^1)=\mathbb{Z}\to\pi_1(S^3)=0,
+$$
+$$
+0=\pi_1(S^3)\to\pi_1(S^2)\to\pi_0(S^1)=0.
+$$
+Hence
+$$
+\pi_1(S^2)=0,\qquad \pi_2(S^2)\cong\mathbb{Z},\qquad \pi_3(S^2)\cong\mathbb{Z}.
+$$</p>
+<p><em>Proof.</em> This is the long exact sequence of the fibration (<em>Homotopy Groups and Fibrations</em>), together with $\pi_k(S^1)=0$ for $k\ge2$, $\pi_1(S^1)=\mathbb{Z}$, $\pi_0(S^1)=0$, and $\pi_1(S^3)=\pi_2(S^3)=0$, $\pi_3(S^3)=\mathbb{Z}$.</p>
+<p><strong>Corollary (the generator).</strong> The map
+$$
+h_*:\pi_3(S^3)\longrightarrow\pi_3(S^2)
+$$
+is an isomorphism, and the class of the Hopf map generates $\pi_3(S^2)\cong\mathbb{Z}$.</p>
+<p><em>Proof.</em> The exact sequence gives $0\to\pi_3(S^3)\to\pi_3(S^2)\to0$, so $h_*$ is an isomorphism. The generator of $\pi_3(S^3)$ is the class of the identity, and its image is the class of $h$.</p>
+<p><strong>Proposition (the Hopf invariant).</strong> The Hopf invariant of $h$ is $1$. The map $h$ is essential, that is, not nullhomotopic, although it induces the zero map on reduced homology.</p>
+<p><em>Proof.</em> The Hopf invariant is the integer computed from a form whose pullback is exact; for the Hopf map it is $1$ (<em>Homotopy Groups and Fibrations</em>). The map is essential because its class in $\pi_3(S^2)$ is a generator. On homology, $h$ sends $H_2(S^3)=0$ to $H_2(S^2)=\mathbb{Z}$ and $H_3(S^3)=\mathbb{Z}$ to $H_3(S^2)=0$, so it is zero in every positive degree.</p>
+<p><strong>Remark (homology against homotopy).</strong> The Hopf map is the standard witness that homology does not determine homotopy: it is invisible to homology and non-trivial in homotopy. <strong>The first non-trivial homotopy group above the dimension of the target is $\pi_3(S^2)$</strong>, and the Hopf map is its generator.</p>
+<p>The low homotopy groups are collected below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\pi_1(S^1)$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\pi_k(S^1)$, $k\ge2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\pi_1(S^3)$, $\pi_2(S^3)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\pi_3(S^3)$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\pi_1(S^2)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\pi_2(S^2)$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\pi_3(S^2)$</td>
+<td>$\mathbb{Z}$, generated by $h$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-linking-of-two-fibres">The Linking of Two Fibres</h2>
+<p><strong>Any two distinct fibres of the Hopf fibration are linked circles, with linking number $1$.</strong></p>
+<p><strong>Definition.</strong> Let $K_1$ and $K_2$ be two disjoint oriented knots in $S^3$. The <strong>linking number</strong> $\operatorname{lk}(K_1,K_2)$ is the algebraic intersection number of $K_2$ with a Seifert surface of $K_1$; it is symmetric, $\operatorname{lk}(K_1,K_2)=\operatorname{lk}(K_2,K_1)$ (<em>Knot Theory</em>).</p>
+<p><strong>Theorem (the standard pair).</strong> The circles
+$$
+C_1=\{(e^{i\theta},0)\},\qquad C_2=\{(0,e^{i\theta})\}
+$$
+have linking number $1$.</p>
+<p><em>Proof.</em> The set
+$$
+\Sigma=\{(z_1,z_2)\in S^3:\operatorname{Im}z_2=0,\ \operatorname{Re}z_2\ge0\}
+$$
+is a closed disk: it is the graph of $z_2=\sqrt{1-\lvert z_1\rvert^2}$ over the closed unit disk in the $z_1$-plane. Its boundary is $C_1$. The circle $C_2$ meets $\Sigma$ exactly at the point $(0,1)$: a point of $C_2$ has $z_1=0$ and $z_2=e^{i\theta}$, and the conditions $\operatorname{Im}z_2=0$, $\operatorname{Re}z_2\ge0$ leave $\theta=0$. The intersection is transverse, since the tangent plane of $\Sigma$ at $(0,1)$ is $\{(v,0):v\in\mathbb{C}\}$ and the tangent line of $C_2$ is $\{(0,it):t\in\mathbb{R}\}$, which meet only at $0$. The intersection number is therefore $\pm1$, and with the orientations induced by increasing $\theta$ on both circles it is $+1$.</p>
+<p><strong>Theorem (any two fibres).</strong> Any two distinct fibres of $h$ have linking number $1$.</p>
+<p><em>Proof.</em> The group $\mathrm{GL}_2(\mathbb{C})$ acts on $S^3$ by
+$$
+A\cdot z=\frac{Az}{\lVert Az\rVert},
+$$
+and the action is smooth and sends fibres to fibres, because $h(A\cdot z)=[Az]=A\cdot[z]$. The group $\mathrm{GL}_2(\mathbb{C})$ is connected, so the action preserves the orientation of $S^3$; it covers the action of $\mathrm{PGL}_2(\mathbb{C})$ on $\mathbb{CP}^1$, which is $3$-transitive, hence $2$-transitive. Therefore any two distinct fibres are carried to $C_1$ and $C_2$ by an orientation-preserving homeomorphism of $S^3$, and the linking number is invariant under such a homeomorphism. The standard pair has linking number $1$, so every pair does.</p>
+<p><strong>Corollary (the Hopf invariant is the linking number).</strong> The Hopf invariant of $h$ equals the linking number of two fibres, and both are $1$.</p>
+<p><em>Proof.</em> For a map $S^3\to S^2$, the Hopf invariant equals the linking number of the preimages of two regular values (<em>Homotopy Groups and Fibrations</em>); the Hopf invariant of $h$ is $1$ and the linking number is $1$ by the theorem.</p>
+<p><strong>Remark (the geometry of the fibres).</strong> The fibres are disjoint circles that are pairwise linked; the fibration is a <strong>linking of circles</strong>, and the linking number is the same for every pair. <strong>The Hopf map is the standard example of a fibration whose fibres are linked</strong>, and the linking is the geometric content of the generator of $\pi_3(S^2)$.</p>
+<h2 id="the-identification-with-math243">The Identification with $\mathrm{SU}(2)$</h2>
+<p><strong>The sphere $S^3$ is the Lie group $\mathrm{SU}(2)$, the group of unit quaternions; in this model the Hopf map is the orbit map of the conjugation action, $q\mapsto qiq^{-1}$, and the fibre is the circle of unit complex numbers.</strong></p>
+<p><strong>Theorem ($S^3\cong\mathrm{SU}(2)$).</strong> The map
+$$
+\mathrm{SU}(2)\longrightarrow S^3,\qquad
+\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}\longmapsto(\alpha,\beta),
+$$
+is a homeomorphism. With the quaternion multiplication on $S^3$, it is an isomorphism of Lie groups.</p>
+<p><em>Proof.</em> A matrix of the displayed form is unitary and has determinant $\lvert\alpha\rvert^2+\lvert\beta\rvert^2=1$, so it lies in $\mathrm{SU}(2)$; conversely, the unitarity and the determinant condition force the form. The map is continuous, bijective, with continuous inverse $(\alpha,\beta)\mapsto\begin{pmatrix}\alpha&\beta\\-\overline{\beta}&\overline{\alpha}\end{pmatrix}$. The multiplication of these matrices is the multiplication of the quaternions $\alpha+\beta j$, so the map is a group isomorphism.</p>
+<p><strong>Proposition (the Hopf map in the quaternionic model).</strong> Under the identification $S^3\cong\mathrm{SU}(2)$, the Hopf map is
+$$
+h(q)=q\,i\,q^{-1},\qquad q\in S^3,
+$$
+with values in the unit imaginary quaternions, which form a two-sphere. Its fibre over $i$ is the circle $\mathrm{U}(1)=\{a+bi:\lvert a\rvert^2+\lvert b\rvert^2=1\}$.</p>
+<p><em>Proof.</em> For a unit quaternion $q$, the quaternion $qiq^{-1}$ is imaginary, because it is conjugate to $i$, and it has norm $1$; hence it lies in the unit imaginary quaternions. The map is surjective because every unit imaginary quaternion is conjugate to $i$. The fibre over $i$ is the set of unit quaternions commuting with $i$, which is the unit complex numbers.</p>
+<p><strong>Proposition (the homogeneous description).</strong> The Hopf bundle is the quotient
+$$
+\mathrm{SU}(2)\longrightarrow\mathrm{SU}(2)/\mathrm{U}(1)\cong S^2
+$$
+by the left action of the diagonal circle
+$$
+\lambda\longmapsto\begin{pmatrix}\lambda&0\\0&\overline{\lambda}\end{pmatrix},\qquad \lvert\lambda\rvert=1.
+$$
+The left action of $\mathrm{SU}(2)$ by group multiplication is transitive and free, and the Hopf map is equivariant for it.</p>
+<p><em>Proof.</em> Under the identification of the theorem, left multiplication by $\operatorname{diag}(\lambda,\overline{\lambda})$ sends $(\alpha,\beta)$ to $(\lambda\alpha,\lambda\beta)$, which is the scalar multiplication defining the fibres; since the circle is abelian, the same orbits are the orbits of the right action used in the local trivializations. The quotient is $\mathbb{CP}^1\cong S^2$. The left action of $\mathrm{SU}(2)$ on itself is transitive and free.</p>
+<p><strong>Remark (the four Hopf fibrations).</strong> The Hopf map is the complex member of a family of four fibrations, one for each normed division algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Scalars</th>
+<th>Total space</th>
+<th>Base</th>
+<th>Fibre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$S^1$</td>
+<td>$S^1$</td>
+<td>$S^0$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$S^3$</td>
+<td>$S^2$</td>
+<td>$S^1$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$S^7$</td>
+<td>$S^4$</td>
+<td>$S^3$</td>
+</tr>
+<tr>
+<td>$\mathbb{O}$</td>
+<td>$S^{15}$</td>
+<td>$S^8$</td>
+<td>$S^7$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The complex row is the subject of this article</strong>; the quaternionic and octonionic rows are <em>Homotopy Groups and Fibrations</em>, and the quaternionic sphere is <em>Quaternion Topology</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The unit sphere $S^3\subset\mathbb{C}^2$ is a compact, connected, simply connected three-manifold, with $H_3=\mathbb{Z}$ and $\pi_3=\mathbb{Z}$. The Hopf map $h(z_1,z_2)=[z_1:z_2]$ sends $S^3$ onto $\mathbb{CP}^1\cong S^2$, and its fibre over a point is the circle of unit multiples of a representative, so the fibres are the orbits of the free $\mathrm{U}(1)$ action by scalar multiplication. The map is a principal $\mathrm{U}(1)$-bundle, locally trivial over the two standard charts, with transition function $t/\lvert t\rvert$ of winding number $1$; it is the unit sphere bundle of the tautological line bundle, its first Chern class is a generator, and the bundle is not trivial because $S^3$ is simply connected and $S^2\times S^1$ is not.</p>
+<p>The exact sequence of the fibration gives $\pi_1(S^2)=0$, $\pi_2(S^2)=\mathbb{Z}$ and $\pi_3(S^2)=\mathbb{Z}$, the last generated by the Hopf map, whose Hopf invariant is $1$. The fibres are linked circles: the standard pair has linking number $1$, and the $\mathrm{GL}_2(\mathbb{C})$ action, which is orientation-preserving and $2$-transitive on the base, carries any pair of distinct fibres to the standard pair. The sphere is the Lie group $\mathrm{SU}(2)$ of unit quaternions, and in that model the Hopf map is $q\mapsto qiq^{-1}$, the quotient of $\mathrm{SU}(2)$ by the diagonal circle.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S^3=\{z\in\mathbb{C}^2:\lVert z\rVert=1\}$</td>
+<td>the unit sphere</td>
+</tr>
+<tr>
+<td>$h(z_1,z_2)=[z_1:z_2]$</td>
+<td>the Hopf map $S^3\to\mathbb{CP}^1$</td>
+</tr>
+<tr>
+<td>$C_1=\{(\lambda,0):\lvert\lambda\rvert=1\}$</td>
+<td>the fibre over $[1:0]$</td>
+</tr>
+<tr>
+<td>$C_2=\{(0,\lambda):\lvert\lambda\rvert=1\}$</td>
+<td>the fibre over $[0:1]$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)$</td>
+<td>the structure group, acting by scalar multiplication</td>
+</tr>
+<tr>
+<td>$\mathcal{O}(-1)$</td>
+<td>the tautological line bundle over $\mathbb{CP}^1$</td>
+</tr>
+<tr>
+<td>$\operatorname{lk}(K_1,K_2)$</td>
+<td>the linking number of two oriented knots</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)$</td>
+<td>the special unitary group, isomorphic to $S^3$</td>
+</tr>
+<tr>
+<td>$q\mapsto qiq^{-1}$</td>
+<td>the Hopf map in the quaternionic model</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-topology-of-the-complex-two-space.html">The Topology of $\mathbb{C}^2$</a>, the previous article, for the sphere as a topological space.</li>
+<li><a href="the-compactifications-of-the-complex-two-space.html">The Compactifications of $\mathbb{C}^2$</a>, the previous article, for the Hopf map as the attaching map at infinity.</li>
+<li><a href="the-subspaces-of-the-complex-two-space.html">The Subspaces of $\mathbb{C}^2$</a>, for the projective line and the complex directions.</li>
+<li><a href="homotopy-groups-and-fibrations.html">Homotopy Groups and Fibrations</a>, for the long exact sequence, the Hopf invariant and the four Hopf fibrations.</li>
+<li><a href="the-fundamental-group-and-covering-spaces.html">The Fundamental Group and Covering Spaces</a>, for simple connectivity and covering spaces.</li>
+<li><a href="knot-theory.html">Knot Theory</a>, for the linking number and Seifert surfaces.</li>
+<li><a href="quaternion-topology.html">Quaternion Topology</a>, for the quaternionic sphere and its topology.</li>
+<li><a href="introduction-to-topology-on-the-quaternions.html">Introduction to Topology on the Quaternions</a>, for the topology of the quaternion algebra.</li>
+<li><a href="the-classical-groups-of-the-complex-two-space.html">The Classical Groups of $\mathbb{C}^2$</a>, for $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their homogeneous spaces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

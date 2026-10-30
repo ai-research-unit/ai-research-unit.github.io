@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Endomorphisms of the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-endomorphisms-of-the-biquaternion-algebra"><strong>The Endomorphisms of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}$ is a complex vector space of dimension four, and its multiplication is a bilinear map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$. A third structure is easy to overlook: the complex-linear maps of $\mathbb{B}$ into itself. They form an algebra under composition, the <strong>endomorphism algebra</strong> $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. A basis of $\mathbb{B}$ turns each map into a $4\times4$ matrix, and the algebra into $M_4(\mathbb{C})$.</p>
+<p>This article opens the group <em>Operators</em> of the Biquaternions chapter and takes that route to $M_4(\mathbb{C})$: the operator space first, the matrix algebra as its coordinate form, and then the operators that the multiplication singles out. The route is basis-free until matrices are wanted. It separates three questions that the notation often merges: what an operator is, how it is written as a matrix, and which operators the algebra structure distinguishes.</p>
+<p><strong>The scope of the word.</strong> In this article an <strong>endomorphism</strong> is a $\mathbb{C}$-linear map $\mathbb{B}\to\mathbb{B}$, with no condition of preserving the product. The maps that preserve the product are the <strong>algebra</strong> endomorphisms; for $\mathbb{B}$ every nonzero unital one is invertible, and they form the group $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})$, of dimension three. The two uses of the word are separated in §<em>The Two Kinds of Endomorphism</em>, and confusing them is the first trap of the subject.</p>
+<p><strong>The other route.</strong> The corpus also builds $M_4(\mathbb{C})$ from the two-sided operators $T_{a,b}=L_aR_b$. That is the route of <em>The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</em> and of <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>. The two routes reach the same algebra and answer different questions: the endomorphism route says what the algebra is, the two-sided route says how the multiplication generates it. §<em>The Bridge to the Two-Sided Operators</em> compares them.</p>
+<p><strong>Three objects.</strong> The rest of the article keeps apart the carrier, its left regular image and its full operator algebra.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Elements</th>
+<th>Complex dimension</th>
+<th>Matrix form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternions</td>
+<td>$4$</td>
+<td>$2\times2$ in the $M_2(\mathbb{C})$ model</td>
+</tr>
+<tr>
+<td>$L(\mathbb{B})$</td>
+<td>the left multiplications $x\mapsto ax$</td>
+<td>$4$</td>
+<td>a $4\times4$ subalgebra</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>all complex-linear maps</td>
+<td>$16$</td>
+<td>$M_4(\mathbb{C})$ after a basis</td>
+</tr>
+</tbody>
+</table></div>
+<p>$L(\mathbb{B})$ and $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ are both made of $4\times4$ matrices in the coefficient basis. They are not the same object: the first has dimension four, the second dimension sixteen. The subscript $L$ in $M_4(\mathbb{C})_L$ records the first.</p>
+<p><strong>Boundaries.</strong> The algebra, its basis and its multiplication are <em>The Biquaternion Algebra</em>. The matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is <em>$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. The ambient operator space in general is <em>The Operators on an Algebra</em>; the regular representations and the double centraliser are <em>The Regular Representation as an Algebra of Operators</em>. The two-sided operators are <em>Two-Sided Operators on the Biquaternion Algebra</em>, and their matrix form is <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>. The abstract isomorphism with the enveloping algebra is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>. The article is pure algebra: no bilinear form, no topology, and the only norm it uses is the multiplicative quaternionic norm.</p>
+<h2 id="the-carrier-and-its-linear-maps">The Carrier and Its Linear Maps</h2>
+<p><strong>Definition.</strong> The <strong>carrier</strong> of the biquaternion algebra is the underlying complex vector space of $\mathbb{B}$, with basis</p>
+<p>$$
+e_t,\ \vec e_x,\ \vec e_y,\ \vec e_z ,
+$$</p>
+<p>in the order $(t,x,y,z)$. A vector is written $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and its <strong>coordinate column</strong> is $(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}\in\mathbb{C}^4$. The carrier is $\mathbb{C}^4$; the algebra is the carrier with its multiplication added.</p>
+<p><strong>Definition (operator).</strong> An <strong>operator</strong> on $\mathbb{B}$ is a map $F:\mathbb{B}\to\mathbb{B}$ that is complex-linear:</p>
+<p>$$
+F(x+\lambda y)=F(x)+\lambda F(y)
+$$</p>
+<p>for all $x,y\in\mathbb{B}$ and all $\lambda\in\mathbb{C}$. The operators form the <strong>endomorphism algebra</strong> $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ under addition and composition, with the identity map as unit.</p>
+<p><strong>Proposition (dimension).</strong> $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ has complex dimension $16$.</p>
+<p><em>Proof.</em> A linear map is determined by the four images $F(e_t),F(\vec e_x),F(\vec e_y),F(\vec e_z)$, and each image has four complex coordinates. The data are therefore $4\times4=16$ complex numbers, and every choice of them defines one and only one linear map.</p>
+<p><strong>Remark (the base field is part of the data).</strong> Read as a real algebra, $\mathbb{B}$ has real dimension eight, and $\operatorname{End}_{\mathbb{R}}(\mathbb{B})\cong M_8(\mathbb{R})$ has real dimension sixty-four. The complex-linear maps form the subspace of real dimension thirty-two on which the real structure $J$, the multiplication by $i$, is respected:</p>
+<p>$$
+\operatorname{End}_{\mathbb{C}}(\mathbb{B})=\{F\in\operatorname{End}_{\mathbb{R}}(\mathbb{B}):FJ=JF\}.
+$$</p>
+<p>The coefficient conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$ are conjugate-linear, so they are <strong>not</strong> elements of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$; they belong to $\operatorname{End}_{\mathbb{R}}(\mathbb{B})$. The natural conjugation $\natural$, which fixes the coefficients and changes the sign of the three vector units, is $\mathbb{C}$-linear, and it is an element of the complex endomorphism algebra, although it is an anti-automorphism and not an algebra endomorphism. This distinction is the reason the four adjoints of the corpus are not all complex-linear: an adjoint built with ${}^{*}$ or $\bar{\cdot}$ is a conjugate-linear map of the operator space, while the plain transpose is complex-linear.</p>
+<h2 id="the-matrix-of-an-endomorphism">The Matrix of an Endomorphism</h2>
+<p><strong>Definition (matrix in a basis).</strong> Fix the basis $\mathcal{B}=(e_t,\vec e_x,\vec e_y,\vec e_z)$. The <strong>matrix</strong> $[F]_{\mathcal{B}}$ is the $4\times4$ complex matrix whose $j$-th column is the coordinate column of $F(e_j)$, the $j$-th basis vector.</p>
+<p><strong>Proposition (the matrix represents the operator).</strong> The assignment $F\mapsto[F]_{\mathcal{B}}$ is an isomorphism of complex algebras</p>
+<p>$$
+\operatorname{End}_{\mathbb{C}}(\mathbb{B})\longrightarrow M_4(\mathbb{C}),
+$$</p>
+<p>that is, $[F+G]=[F]+[G]$, $[F\circ G]=[F]\,[G]$, and $[\mathrm{id}]=\mathrm{I}_4$. It is bijective.</p>
+<p><em>Proof.</em> The $j$-th column of $[F\circ G]$ is $(F\circ G)(e_j)=F(G(e_j))$, which is $[F]$ times the $j$-th column of $[G]$; this is the matrix product. Addition and the identity are immediate. Bijectivity is the dimension count of the previous section, or the reconstruction of $F$ from its four columns.</p>
+<p><strong>Proposition (change of basis).</strong> Let $\mathcal{B}'$ be another basis, and let $S$ be the matrix whose columns are the coordinates of the vectors of $\mathcal{B}'$ in $\mathcal{B}$. Then</p>
+<p>$$
+[F]_{\mathcal{B}'}=S^{-1}\,[F]_{\mathcal{B}}\,S .
+$$</p>
+<p><em>Proof.</em> Both sides have the same $j$-th column: the coordinate column of $F$ applied to the $j$-th vector of $\mathcal{B}'$, read in $\mathcal{B}'$.</p>
+<p><strong>Remark (the isomorphism is not canonical).</strong> There is no basis-free identification of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ with the algebra of $4\times4$ matrices. The operator space is canonical; its matrix form depends on a basis, and two bases give two conjugate matrix algebras. A statement about an operator is therefore a statement invariant under $[F]\mapsto S^{-1}[F]S$. This is why the corpus can speak of <em>the</em> matrix algebra $M_4(\mathbb{C})$ only after a basis has been fixed, and why it names the basis: the coefficient basis in the $M_4(\mathbb{C})_L$ model, the Peirce basis for the chiral blocks.</p>
+<p><strong>Definition (trace, determinant, spectrum).</strong> The <strong>trace</strong> and the <strong>determinant</strong> of an operator are those of any of its matrices,</p>
+<p>$$
+\operatorname{tr}F=\operatorname{tr}[F]_{\mathcal{B}},\qquad \det F=\det[F]_{\mathcal{B}} .
+$$</p>
+<p>They are well defined, because $\operatorname{tr}(S^{-1}AS)=\operatorname{tr}A$ and $\det(S^{-1}AS)=\det A$. The <strong>characteristic polynomial</strong> $\chi_F(\lambda)=\det(\lambda\,\mathrm{id}-F)$ and the <strong>spectrum</strong> are well defined for the same reason. The <strong>rank</strong> of $F$ is the rank of any of its matrices, and it is the dimension of its image.</p>
+<h2 id="the-two-kinds-of-endomorphism">The Two Kinds of Endomorphism</h2>
+<p><strong>Definition (algebra endomorphism).</strong> An <strong>algebra endomorphism</strong> of $\mathbb{B}$ is a linear map $F$ with</p>
+<p>$$
+F(xy)=F(x)F(y),\qquad F(e_t)=e_t .
+$$</p>
+<p>The second condition is unitality. The algebra endomorphisms that are bijective form the <strong>automorphism group</strong> $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$.</p>
+<p><strong>Theorem (every nonzero algebra endomorphism is an automorphism).</strong> Let $F:\mathbb{B}\to\mathbb{B}$ be a nonzero unital algebra endomorphism. Then $F$ is bijective.</p>
+<p><em>Proof.</em> The kernel of $F$ is a two-sided ideal of $\mathbb{B}$. The algebra is simple, so the kernel is $0$ or $\mathbb{B}$. It is not $\mathbb{B}$, because $F(e_t)=e_t\neq0$. Hence $F$ is injective, and an injective linear map of a finite-dimensional space to itself is bijective.</p>
+<p><strong>Theorem (the automorphism group).</strong> $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})$, of complex dimension $3$.</p>
+<p><em>Proof.</em> Fix an isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$. Every automorphism of a central simple algebra is inner, by the Skolem–Noether theorem, so it has the form $x\mapsto uxu^{-1}$ for a unit $u$. The units that give the identity are the central ones, $\mathbb{C}^\times\mathrm{I}_2$. Hence the group is $GL_2(\mathbb{C})/\mathbb{C}^\times\cong PGL_2(\mathbb{C})$, of dimension $4-1=3$.</p>
+<p><strong>Definition (derivation).</strong> A <strong>derivation</strong> of $\mathbb{B}$ is a linear map $\delta$ with the Leibniz rule</p>
+<p>$$
+\delta(xy)=\delta(x)y+x\,\delta(y).
+$$</p>
+<p>The derivations form the subspace $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})$ of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.</p>
+<p><strong>Proposition (the derivations are the inner ones).</strong> Every derivation of $\mathbb{B}$ is inner,</p>
+<p>$$
+\delta=\operatorname{ad}_a=L_a-R_a,\qquad \operatorname{ad}_a(x)=ax-xa,
+$$</p>
+<p>and $\operatorname{ad}_a=0$ exactly when $a$ is central. Hence $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$, of complex dimension $3$. In particular every derivation is a sum of a left and a right multiplication.</p>
+<p><em>Proof.</em> The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is central simple, so every derivation is inner; this is the standard theorem for central simple algebras. The kernel of $a\mapsto\operatorname{ad}_a$ is the centre $\mathbb{C}e_t$, by definition of the centre. The dimension is $4-1=3$, and the identity $\operatorname{ad}_a=L_a-R_a$ is the definition.</p>
+<p><strong>Remark (a subspace against a group).</strong> The derivations are cut out by a condition linear in the operator, so they form a subspace of dimension three. The automorphisms are cut out by a condition quadratic in the operator, so they form a group and not a subspace: the sum of two automorphisms is generally not an automorphism. The two dimensions agree, three and three, because the derivations are the tangent space of the group at the identity. This is the rule of <em>The Operators on an Algebra</em>, read on $\mathbb{B}$.</p>
+<h2 id="the-canonical-operators-of-the-multiplication">The Canonical Operators of the Multiplication</h2>
+<h3 id="left-multiplication">Left Multiplication</h3>
+<p><strong>Definition.</strong> For $a\in\mathbb{B}$, the <strong>left multiplication</strong> by $a$ is</p>
+<p>$$
+L_a:\mathbb{B}\longrightarrow\mathbb{B},\qquad L_a(x)=ax .
+$$</p>
+<p><strong>Proposition (the laws).</strong> For all $a,b\in\mathbb{B}$,</p>
+<p>$$
+L_aL_b=L_{ab},\qquad L_{e_t}=\mathrm{id},\qquad L_a\ \text{is invertible}\iff a\ \text{is a unit}.
+$$</p>
+<p>The assignment $a\mapsto L_a$ is an injective algebra homomorphism $\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and its image $L(\mathbb{B})$ is a subalgebra of dimension four.</p>
+<p><em>Proof.</em> $(L_aL_b)(x)=a(bx)=(ab)x=L_{ab}(x)$. The unit is $L_{e_t}(x)=x$. The inverse of $L_a$ is $L_{a^{-1}}$ when $a$ is a unit, and if $L_a$ is invertible then $a=L_a(e_t)$ is a unit. Injectivity: $L_a=0$ gives $a=L_a(e_t)=0$. The image is closed under composition and addition and has dimension four, since the four $L_\mu$ are the images of a basis and are independent by injectivity.</p>
+<p><strong>The matrix.</strong> In the coefficient basis,</p>
+<p>$$
+L_a=\begin{pmatrix}
+a_t&-a_x&-a_y&-a_z\\
+a_x&a_t&-a_z&a_y\\
+a_y&a_z&a_t&-a_x\\
+a_z&-a_y&a_x&a_t
+\end{pmatrix}.
+$$</p>
+<p><strong>The invariants.</strong> $\operatorname{tr}L_a=4a_t$, $\det L_a=N(a)^2$, with $N(a)=a_t^2+a_x^2+a_y^2+a_z^2$ the quaternionic norm.</p>
+<h3 id="right-multiplication">Right Multiplication</h3>
+<p><strong>Definition.</strong> For $b\in\mathbb{B}$, the <strong>right multiplication</strong> is</p>
+<p>$$
+R_b:\mathbb{B}\longrightarrow\mathbb{B},\qquad R_b(x)=xb .
+$$</p>
+<p><strong>Proposition (the laws).</strong> For all $a,b\in\mathbb{B}$,</p>
+<p>$$
+R_aR_b=R_{ba},\qquad R_{e_t}=\mathrm{id},\qquad L_aR_b=R_bL_a .
+$$</p>
+<p>The assignment $b\mapsto R_b$ is an injective anti-homomorphism $\mathbb{B}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and its image $R(\mathbb{B})$ is a subalgebra of dimension four.</p>
+<p><em>Proof.</em> $(R_aR_b)(x)=(xb)a=x(ba)=R_{ba}(x)$; the commutation is associativity, $(ax)b=a(xb)$; injectivity is $R_b(e_t)=b$; the dimension is four as for $L$.</p>
+<p><strong>The relation to the left family.</strong> Let $D$ be the natural conjugation, $D(x)=x^{\natural}$, with matrix</p>
+<p>$$
+D=\operatorname{diag}(1,-1,-1,-1).
+$$</p>
+<p>Then</p>
+<p>$$
+R_b=D\,L_{b^{\natural}}\,D .
+$$</p>
+<p><em>Proof.</em> On coordinates $D$ is the conjugation, so $(DL_bD)(x)=D\bigl(b\,x^{\natural}\bigr)=(b\,x^{\natural})^{\natural}=x\,b^{\natural}=R_{b^{\natural}}(x)$. Replacing $b$ by $b^{\natural}$ gives the formula.</p>
+<h3 id="the-conjugation">The Conjugation</h3>
+<p><strong>Definition.</strong> The <strong>natural conjugation</strong> is the linear map</p>
+<p>$$
+D:\mathbb{B}\longrightarrow\mathbb{B},\qquad D(x)=x^{\natural}=x_t e_t-x_x\vec e_x-x_y\vec e_y-x_z\vec e_z .
+$$</p>
+<p><strong>Proposition.</strong> $D$ is a $\mathbb{C}$-linear involution, $D^2=\mathrm{id}$, and an anti-automorphism, $D(xy)=D(y)D(x)$. Its matrix is $\operatorname{diag}(1,-1,-1,-1)$, so $\operatorname{tr}D=-2$ and $\det D=-1$. It is neither a left nor a right multiplication.</p>
+<p><em>Proof.</em> Linearity and the square are read on the basis: $D$ fixes $e_t$ and changes the sign of the three vector units. The anti-automorphism is the standard property of the quaternion conjugation, extended by $\mathbb{C}$-linearity. If $D=L_a$, then $a=D(e_t)=e_t$ and $D=L_{e_t}=\mathrm{id}$, which is false; the same argument with $R_b$ gives $b=e_t$ and the same contradiction.</p>
+<p><strong>Remark (which conjugations are endomorphisms).</strong> Of the corpus's three conjugations, only $\natural$ is $\mathbb{C}$-linear. The coefficient conjugation $\bar{\cdot}$ and the Hermitian conjugation ${}^{*}$ conjugate the complex coefficients, so they are conjugate-linear and live in $\operatorname{End}_{\mathbb{R}}(\mathbb{B})\setminus\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. An operator statement that uses $\bar{\cdot}$ or ${}^{*}$ is a real-linear statement, even when the carrier is written over $\mathbb{C}$.</p>
+<h3 id="the-double-centraliser">The Double Centraliser</h3>
+<p><strong>Definition (commutant).</strong> For a subset $\mathcal{S}\subseteq\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, the <strong>commutant</strong> is</p>
+<p>$$
+\mathcal{S}'=\{T\in\operatorname{End}_{\mathbb{C}}(\mathbb{B}):TS=ST\ \text{for every }S\in\mathcal{S}\}.
+$$</p>
+<p><strong>Theorem (the double centraliser).</strong> In $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$,</p>
+<p>$$
+L(\mathbb{B})'=R(\mathbb{B}),\qquad R(\mathbb{B})'=L(\mathbb{B}),\qquad \bigl(L(\mathbb{B})\cup R(\mathbb{B})\bigr)'=\mathbb{C}\,\mathrm{id},
+$$</p>
+<p>and the bicommutant of $L(\mathbb{B})$ is $L(\mathbb{B})$ itself.</p>
+<p><em>Proof.</em> Let $T$ commute with every $L_a$. Evaluating at $e_t$,</p>
+<p>$$
+T(x)=T(L_x(e_t))=L_x(T(e_t))=x\,T(e_t)=R_{T(e_t)}(x),
+$$</p>
+<p>so $T=R_b$ with $b=T(e_t)$, and $R(\mathbb{B})\subseteq L(\mathbb{B})'$. The reverse inclusion is $L_aR_b=R_bL_a$. The proof of $R(\mathbb{B})'=L(\mathbb{B})$ is the same with the roles exchanged: $T(x)=T(R_x(e_t))=R_x(T(e_t))=T(e_t)\,x=L_{T(e_t)}(x)$. An operator commuting with both families is therefore $R_b$ with $b$ central, hence $b\in\mathbb{C}e_t$ and $T=\lambda\,\mathrm{id}$. Finally $L(\mathbb{B})''=R(\mathbb{B})'=L(\mathbb{B})$.</p>
+<p><strong>Remark (what the theorem says).</strong> The two regular families are mutual commutants and each is its own bicommutant. They are as large as two commuting families can be: nothing outside $R(\mathbb{B})$ commutes with all left multiplications. This is the double centraliser theorem for the regular bimodule, and it is the structural reason the left and right actions of the corpus are both available and both of the same size.</p>
+<p><strong>Corollary (the intersection).</strong> $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\,\mathrm{id}$, so the sum $L(\mathbb{B})+R(\mathbb{B})$ has dimension $4+4-1=7$.</p>
+<p><em>Proof.</em> If $L_a=R_b$, then $a=L_a(e_t)=R_b(e_t)=b$ and $ax=xa$ for all $x$, so $a$ is central. The converse is immediate.</p>
+<h2 id="the-ladder-and-the-generation-theorem">The Ladder and the Generation Theorem</h2>
+<h3 id="the-generation-theorem">The Generation Theorem</h3>
+<p><strong>Theorem (the two families generate every operator).</strong> The algebra generated by $L(\mathbb{B})\cup R(\mathbb{B})$ is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.</p>
+<p><em>Proof.</em> Fix an isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ and matrix units $F_{ij}$, $i,j\in\{1,2\}$. For $X=\sum_{a,b}x_{ab}F_{ab}$,</p>
+<p>$$
+L_{F_{ij}}R_{F_{kl}}(X)=F_{ij}XF_{kl}=\sum_{a,b}x_{ab}\,F_{ij}F_{ab}F_{kl}=x_{jk}\,F_{il},
+$$</p>
+<p>since $F_{ij}F_{ab}F_{kl}=\delta_{ja}\delta_{bk}F_{il}$. On the four-dimensional space with basis $F_{ab}$, this operator sends the single basis vector $F_{jk}$ to $F_{il}$ and all other basis vectors to zero. It is therefore the matrix unit $E_{(il),(jk)}$ of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. As $(i,j,k,l)$ runs over the sixteen choices, these are the sixteen matrix units of the operator space in the basis $F_{ab}$, so they span it. The products $L_aR_b$ therefore span the operator space.</p>
+<p><strong>Corollary (the products are a basis in the coefficient basis).</strong> With $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, the sixteen matrices are a basis of $M_4(\mathbb{C})$.</p>
+<p><em>Proof.</em> Every product $L_aR_b$ is a linear combination of the sixteen $T_{\mu\nu}$, by bilinearity in $a$ and $b$, and the products span by the generation theorem. The sixteen $T_{\mu\nu}$ therefore span, and sixteen vectors in a space of dimension sixteen are a basis.</p>
+<h3 id="the-ladder">The Ladder</h3>
+<p>Each of $L(\mathbb{B})$ and $R(\mathbb{B})$ contains $\mathbb{C}\,\mathrm{id}$ and sits in the sum, and the sum sits in the whole space:</p>
+<p>$$
+\mathbb{C}\,\mathrm{id}\;\subset\;L(\mathbb{B})\;\subset\;L(\mathbb{B})+R(\mathbb{B})\;\subset\;\operatorname{End}_{\mathbb{C}}(\mathbb{B}),
+$$</p>
+<p>and the same chain holds with $R(\mathbb{B})$ in place of $L(\mathbb{B})$. The dimensions are $1$, $4$, $7$, $16$; the derivations form a three-dimensional subspace of the sum, and the automorphisms a three-dimensional group inside the unit group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Definition</th>
+<th>Kind</th>
+<th>Complex dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scalars</td>
+<td>$\lambda\,\mathrm{id}$</td>
+<td>subspace</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$L(\mathbb{B})$</td>
+<td>$x\mapsto ax$</td>
+<td>subalgebra</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$R(\mathbb{B})$</td>
+<td>$x\mapsto xb$</td>
+<td>subalgebra</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$L(\mathbb{B})+R(\mathbb{B})$</td>
+<td>sums of the two</td>
+<td>subspace, not a subalgebra</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>$\delta(xy)=\delta(x)y+x\delta(y)$</td>
+<td>subspace</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>all linear maps</td>
+<td>algebra</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>multiplicative bijections</td>
+<td>group</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (why the sum is not a subalgebra).</strong> The algebra generated by the two families is the whole space, of dimension sixteen, while the sum has dimension seven. If the sum were closed under composition it would be the generated algebra, which it is not. Some single product $L_aR_b$ therefore lies outside the sum: the dimension count shows that the sum is not closed, and expanding a product of two of its elements gives such a product.</p>
+<p><strong>Remark (the two threes).</strong> The derivations sit inside the sum, because $\operatorname{ad}_a=L_a-R_a$, and they have dimension three. The automorphisms are not a subspace at all; their dimension three is the dimension of the tangent space, in agreement with the general rule of <em>The Operators on an Algebra</em>.</p>
+<h2 id="the-bridge-to-the-two-sided-operators">The Bridge to the Two-Sided Operators</h2>
+<h3 id="the-elementary-tensors">The Elementary Tensors</h3>
+<p><strong>Definition.</strong> For $a,b\in\mathbb{B}$, the <strong>two-sided operator</strong> is</p>
+<p>$$
+T_{a,b}=L_aR_b,\qquad T_{a,b}(x)=a\,x\,b .
+$$</p>
+<p>It is an element of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, the product of a left and a right multiplication.</p>
+<p><strong>Theorem (the enveloping description).</strong> The map</p>
+<p>$$
+\Phi:\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad a\otimes b^{\mathrm{opp}}\mapsto T_{a,b},
+$$</p>
+<p>is an isomorphism of algebras. In particular every operator is a sum of products $L_aR_b$.</p>
+<p><em>Proof.</em> Multiplicativity is $(a\otimes b^{\mathrm{opp}})(c\otimes d^{\mathrm{opp}})=ac\otimes(db)^{\mathrm{opp}}\mapsto L_{ac}R_{db}=L_aR_bL_cR_d$. Injectivity and surjectivity follow from the generation theorem: the sixteen $T_{\mu\nu}$ are a basis, and the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ are a basis of the tensor product. The full proof, with the matrix-unit computation, is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>.</p>
+<p><strong>The sixteen matrices.</strong> In the coefficient basis the products $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$ are signed permutation matrices of determinant one. They satisfy the composition, trace, determinant and orthogonality laws</p>
+<p>$$
+T_{a,b}T_{c,d}=T_{ac,db},\qquad
+\operatorname{tr}T_{a,b}=4a_tb_t,\qquad
+\det T_{a,b}=N(a)^2N(b)^2,
+$$</p>
+<p>$$
+\operatorname{tr}\bigl(T_{\mu\nu}^{\dagger}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
+$$</p>
+<p>They are displayed and tabulated in <em>$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>.</p>
+<h3 id="the-cone-of-products-and-the-length">The Cone of Products and the Length</h3>
+<p><strong>The family is not the space.</strong> The set $\{T_{a,b}\}$ is the set of decomposable tensors $a\otimes b^{\mathrm{opp}}$ under the isomorphism. It is an affine cone of complex dimension seven, the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3\subset\mathbb{P}^{15}$. It is not the whole sixteen-dimensional algebra; only its linear span is.</p>
+<p><strong>The length.</strong> Every operator has a unique expansion</p>
+<p>$$
+M=\sum_{\mu,\nu}c_{\mu\nu}(M)\,T_{\mu\nu},\qquad
+c_{\mu\nu}(M)=\tfrac14\operatorname{tr}\bigl(T_{\mu\nu}^{\dagger}M\bigr).
+$$</p>
+<p>$M$ is a single product $L_aR_b$ exactly when the <strong>coefficient matrix</strong> $c(M)$ has rank at most one, that is, when $c(M)=a\,b^{\mathsf T}$; for $M\neq0$ this is rank one. In general the <strong>length</strong> is</p>
+<p>$$
+\ell(M)=\min\{r:M=T_{a_1,b_1}+\cdots+T_{a_r,b_r}\}=\operatorname{rank}c(M),
+$$</p>
+<p>so every operator is a sum of at most four products, and a generic operator needs four.</p>
+<p><strong>Remark (rank does not determine length).</strong> The matrix rank of $M$ does not fix the length. The projection $E_{11}$ of §<em>Worked Example</em> has rank one and length four, while the chirality projector $P_+=\tfrac12(T_{tt}-iT_{tz})$ has rank two and length one. No test on the rank of $M$ alone decides whether $M$ is a product.</p>
+<h3 id="the-two-routes-compared">The Two Routes Compared</h3>
+<p>The two constructions of $M_4(\mathbb{C})$ answer different questions.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Endomorphism route</th>
+<th>Two-sided route</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Starts with</td>
+<td>the vector space $\mathbb{B}$</td>
+<td>the algebra $\mathbb{B}$ and its multiplication</td>
+</tr>
+<tr>
+<td>Basic objects</td>
+<td>arbitrary linear maps $F$</td>
+<td>$L_a$, $R_b$, $T_{a,b}$</td>
+</tr>
+<tr>
+<td>What is primary</td>
+<td>the operator space $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>the two regular actions</td>
+</tr>
+<tr>
+<td>Natural basis</td>
+<td>matrix units $E_{ij}$, after a basis of $\mathbb{B}$</td>
+<td>the family $\{T_{a,b}\}$ is canonical; the sixteen $T_{\mu\nu}$ are a basis after the coefficient basis</td>
+</tr>
+<tr>
+<td>Product table</td>
+<td>$E_{ij}E_{kl}=\delta_{jk}E_{il}$</td>
+<td>$T_{a,b}T_{c,d}=T_{ac,db}$</td>
+</tr>
+<tr>
+<td>Extra structure</td>
+<td>trace, determinant, spectrum, rank</td>
+<td>bimodule, $L(\mathbb{B})$, $R(\mathbb{B})$, Peirce corners, length</td>
+</tr>
+<tr>
+<td>Main risk</td>
+<td>forgetting the multiplication</td>
+<td>confusing the family with its span</td>
+</tr>
+</tbody>
+</table></div>
+<p>The endomorphism route is the answer to "what is the algebra?". The two-sided route is the answer to "how does the biquaternion multiplication generate it?". Neither replaces the other. The abstract bridge is the isomorphism of §<em>The Elementary Tensors</em>; the concrete bridge is the basis $T_{\mu\nu}$.</p>
+<p><strong>Why the two-sided route is clean here.</strong> The equality $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is a property of the central simple algebra. For a general unital finite-dimensional algebra $A$, the map $A\otimes A^{\mathrm{opp}}\to\operatorname{End}_k(A)$ has the multiplication algebra as its image, which may be strictly smaller than the endomorphism algebra, and it may also have a kernel. For the dual numbers, $A\otimes A^{\mathrm{opp}}$ and $\operatorname{End}_k(A)$ both have dimension four, the image has dimension two, and the kernel has dimension two. The biquaternion algebra is central simple, so the map is both injective and surjective, the two-sided operators span the whole space, and no operator is lost.</p>
+<h3 id="the-three-objects-called-matrices">The Three Objects Called Matrices</h3>
+<p>The notation $M_4(\mathbb{C})$ hides three different objects in the corpus, and the difference is a frequent source of confusion.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Object</th>
+<th>What an element is</th>
+<th>Complex dimension</th>
+<th>Where it is written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>a biquaternion</td>
+<td>$4$</td>
+<td>$2\times2$ matrix in the $M_2(\mathbb{C})$ model</td>
+</tr>
+<tr>
+<td>$M_4(\mathbb{C})_L=L(\mathbb{B})$</td>
+<td>a left multiplication</td>
+<td>$4$</td>
+<td>$4\times4$ matrix, block diagonal in the Peirce basis</td>
+</tr>
+<tr>
+<td>$M_4(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>an arbitrary operator</td>
+<td>$16$</td>
+<td>$4\times4$ matrix in a basis of $\mathbb{B}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The second row is a subalgebra of the third, not a quotient and not a different matrix size. A $4\times4$ matrix can therefore be an element of the four-dimensional left model or an element of the sixteen-dimensional operator algebra; the matrix size alone does not tell which. The label and the context do.</p>
+<h2 id="what-the-endomorphism-view-explains">What the Endomorphism View Explains</h2>
+<p><strong>The dimension sixteen.</strong> It is $4\times4$: four basis vectors, four coordinates each. No multiplication is used.</p>
+<p><strong>The trace and the determinant of a left multiplication.</strong> In the Peirce basis of <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>, $L_a$ is two copies of the $2\times2$ matrix of $a$,</p>
+<p>$$
+S^{-1}L_aS=\operatorname{diag}\bigl(\mathsf{M}_2(a),\mathsf{M}_2(a)\bigr),
+$$</p>
+<p>so every eigenvalue of $\mathsf{M}_2(a)$ occurs twice. Hence $\operatorname{tr}L_a=2\operatorname{tr}\mathsf{M}_2(a)=4a_t$ and $\det L_a=\det\mathsf{M}_2(a)^2=N(a)^2$. The formulas of the $M_4(\mathbb{C})_L$ model are read off the operator spectrum, without a determinant computation.</p>
+<p><strong>Why the two regular families are mutual commutants.</strong> An operator commuting with every left multiplication is a right multiplication, and conversely. The proof is the two-line evaluation at $e_t$ of §<em>The Double Centraliser</em>, and it does not use matrices.</p>
+<p><strong>Why there is no canonical matrix form.</strong> The operator space is canonical, but the identification with $M_4(\mathbb{C})$ needs a basis. The coefficient basis and the Peirce basis are two bases of $\mathbb{B}$, and they give two conjugate matrix algebras; a gamma frame is a further choice inside the operator algebra, not a basis of the carrier. A statement that survives a change of basis is a statement about operators; one that does not is a statement about a table.</p>
+<p><strong>What the view does not supply.</strong> It supplies no multiplication on the carrier, no gamma frame, no form, no norm, no grading and no physical interpretation. Those are further structures on the operator space, and each is a choice. The endomorphism view is the layer below them: it says which space the choices are made in.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p><strong>The projection onto the scalar line.</strong> Let</p>
+<p>$$
+P:\mathbb{B}\longrightarrow\mathbb{B},\qquad P(\tilde Q)=\tilde Q_t\,e_t .
+$$</p>
+<p>It is complex-linear, idempotent, of rank one, and its matrix in the coefficient basis is</p>
+<p>$$
+P=E_{11}=\begin{pmatrix}1&0&0&0\\0&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix}.
+$$</p>
+<p>Its invariants are $\operatorname{tr}P=1$, $\det P=0$ and $\operatorname{rank}P=1$.</p>
+<p><strong>It is not a left multiplication.</strong> If $P=L_a$, then $a=P(e_t)=e_t$, so $L_a=\mathrm{id}$, while $P\neq\mathrm{id}$. The same argument excludes $R_b$.</p>
+<p><strong>Its length is four.</strong> The coefficient matrix is</p>
+<p>$$
+c(P)=\tfrac14\operatorname{diag}(1,-1,-1,-1),
+$$</p>
+<p>of rank four, so</p>
+<p>$$
+P=\tfrac14\bigl(T_{tt}-T_{xx}-T_{yy}-T_{zz}\bigr)
+$$</p>
+<p>is a sum of four products and of no fewer. The simplest rank-one projection is therefore not a single two-sided operator. This is the sharpest small example of the difference between the matrix rank of an operator and its length in the two-sided basis.</p>
+<p><strong>A check of basis independence.</strong> In any other basis the matrix of $P$ is $S^{-1}E_{11}S$, which is generally not diagonal, but its trace, determinant and rank are unchanged. The operator is the same; only its array of numbers moves.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex-linear maps of the biquaternion algebra into itself form the endomorphism algebra $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. A basis of $\mathbb{B}$ identifies it with $M_4(\mathbb{C})$, and the identification is a choice: a change of basis conjugates the matrices and preserves the trace, the determinant, the spectrum and the rank. The multiplication singles out the left multiplications $L_a$, the right multiplications $R_b$ and the natural conjugation $D$; the first two are four-dimensional subalgebras, their mutual commutants, and together they generate the whole operator space. The derivations are the three-dimensional inner derivations $L_a-R_a$, and the automorphisms form the three-dimensional group $PGL_2(\mathbb{C})$. The two-sided operators $T_{a,b}=L_aR_b$ are the elementary tensors of the enveloping algebra; their span is the whole operator space, but the family itself is a seven-dimensional cone, and the least number of products in a sum is the rank of the coefficient matrix. The endomorphism route and the two-sided route reach the same algebra from opposite ends: the first defines the space, the second exhibits the generating operators. The label $M_4(\mathbb{C})_L$ denotes the four-dimensional left regular image, not the sixteen-dimensional endomorphism algebra, although both are written with $4\times4$ matrices.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, complex dimension $4$</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>the complex-linear operators on $\mathbb{B}$, dimension $16$</td>
+</tr>
+<tr>
+<td>$[F]_{\mathcal{B}}$</td>
+<td>the matrix of $F$ in the basis $\mathcal{B}$</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>the change-of-basis matrix, $[F]_{\mathcal{B}'}=S^{-1}[F]_{\mathcal{B}}S$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr},\det,\operatorname{rank}$</td>
+<td>the basis-independent invariants of an operator</td>
+</tr>
+<tr>
+<td>$L_a$</td>
+<td>left multiplication, $x\mapsto ax$</td>
+</tr>
+<tr>
+<td>$R_b$</td>
+<td>right multiplication, $x\mapsto xb$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>the natural conjugation, $\operatorname{diag}(1,-1,-1,-1)$</td>
+</tr>
+<tr>
+<td>$N(a)$</td>
+<td>the quaternionic norm, $a_t^2+a_x^2+a_y^2+a_z^2$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(a)$</td>
+<td>the $2\times2$ matrix of $a$ in the $M_2(\mathbb{C})$ model</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_a=L_a-R_a$</td>
+<td>the inner derivation by $a$</td>
+</tr>
+<tr>
+<td>$T_{a,b}=L_aR_b$</td>
+<td>the two-sided operator, $x\mapsto axb$</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$</td>
+<td>the sixteen basis operators</td>
+</tr>
+<tr>
+<td>$c(M)$</td>
+<td>the coefficient matrix, $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{\dagger}M)$</td>
+</tr>
+<tr>
+<td>$\ell(M)$</td>
+<td>the length, equal to $\operatorname{rank}c(M)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra, its basis and its multiplication</li>
+<li><a href="introduction-to-the-operators-of-the-biquaternion-algebra.html">Introduction to the Operators of the Biquaternion Algebra</a>, for the narrower question that follows this article: what the four general products decide about an operator, and what they leave to the choice of element and insertion</li>
+<li><a href="the-matrix-algebra-m4c.html">The Matrix Algebra $M_4(\mathbb{C})$</a>, for the matrix algebra and the distinction from the regular model</li>
+<li><a href="two-sided-operators-on-the-biquaternion-algebra.html">Two-Sided Operators on the Biquaternion Algebra</a>, for the plain family $T_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}$ and its criteria</li>
+<li><a href="the-two-sided-operators-method-to-build-m4c.html">The Two-Sided Operators Method to Build $M_4(\mathbb{C})$</a>, for the construction from $L_a$ and $R_b$ and the sixteen matrices</li>
+<li><a href="m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html">$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra</a>, for the tables, the gamma frame and the product question</li>
+<li><a href="the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html">The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</a>, for the abstract isomorphism $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</li>
+<li><a href="the-operators-on-an-algebra.html">The Operators on an Algebra</a>, for the general ambient space and the subspace-group rule</li>
+<li><a href="the-regular-representation-as-an-algebra-of-operators.html">The Regular Representation as an Algebra of Operators</a>, for the double centraliser of the regular bimodule</li>
+<li><a href="m4c-model-the-centraliser-and-the-double-centraliser.html">$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser</a>, for the centraliser of a single regular matrix</li>
+<li><a href="the-derivations-and-the-automorphisms-of-m4c.html">The Derivations and the Automorphisms of $M_4(\mathbb{C})$</a>, for the derivations and automorphisms at matrix level</li>
+<li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the notation of the corpus</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

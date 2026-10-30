@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Subspaces of $\mathbb{C}^2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-subspaces-of-math0"><strong>The Subspaces of $\mathbb{C}^2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article classifies the subspaces of the complex two-space: the complex subspaces, the real subspaces, the subspaces selected by the three canonical forms, and the Grassmannians that parametrise them. It is the place where the forms of the previous article acquire a geometric meaning: the isotropic lines of $B$ and the Lagrangian planes of $\omega$ and $\Omega$ are subspaces, and their classification is the first geometric statement of the category.</p>
+<p>The article treats the subspaces as sets and as points of a Grassmannian. It does not treat the topology of the Grassmannians beyond their dimension and their identification, which are <em>Grassmannians and Stiefel Manifolds</em> and <em>Projective Geometry</em>; it does not treat the group actions, which are <em>The Classical Groups of $\mathbb{C}^2$</em>; and it does not treat the projective compactification, which is <em>The Compactifications of $\mathbb{C}^2$</em>.</p>
+<p><strong>The two classifications that matter are the complex one, which has three terms, and the real one, which has five dimensions but only two kinds of plane in the middle.</strong> The article states both, then reads the forms on them.</p>
+<h2 id="the-complex-subspaces">The Complex Subspaces</h2>
+<p><strong>A complex subspace of $\mathbb{C}^2$ has dimension $0$, $1$ or $2$, and the subspaces of dimension one are the points of the projective line.</strong></p>
+<p><strong>Definition.</strong> A <strong>complex subspace</strong> is a subset $W\subset\mathbb{C}^2$ closed under addition and under multiplication by complex scalars. A <strong>complex line</strong> is a complex subspace of dimension $1$; a <strong>complex hyperplane</strong> is a complex subspace of dimension $1$ in the dual sense, that is the kernel of a nonzero complex-linear form.</p>
+<p><strong>Proposition (the three dimensions).</strong> The complex subspaces are $\{0\}$, the complex lines $L=\mathbb{C}v$ with $v\neq0$, and $\mathbb{C}^2$.</p>
+<p><em>Proof.</em> A subspace of dimension $0$ is $\{0\}$ and one of dimension $2$ is the whole space. In dimension $1$ every nonzero vector spans the space, so the subspace is $\mathbb{C}v$; two nonzero vectors span the same line exactly when each is a complex multiple of the other.</p>
+<p><strong>Definition.</strong> The <strong>projective line</strong> is the set of complex lines,
+$$
+\mathbb{CP}^1=\{L\subset\mathbb{C}^2:\dim_{\mathbb{C}}L=1\}=\bigl(\mathbb{C}^2\setminus\{0\}\bigr)/\mathbb{C}^{\times},
+$$
+with homogeneous coordinates $[z_1:z_2]$, the class of $(z_1,z_2)$. The charts $z_2\neq0$ and $z_1\neq0$ identify $\mathbb{CP}^1$ with two copies of $\mathbb{C}$, glued by $t\mapsto 1/t$.</p>
+<p><strong>Proposition (the projective line is a sphere).</strong> The space $\mathbb{CP}^1$ is homeomorphic to $S^2$, and its real dimension is $2$.</p>
+<p><em>Proof.</em> The chart $z_2\neq0$ gives $[z_1:z_2]=[t:1]$ with $t=z_1/z_2$, and the chart $z_1\neq0$ gives $[1:s]$ with $s=z_2/z_1=1/t$; the two copies of $\mathbb{C}$ are glued by $t\mapsto 1/t$ on the punctured plane, which is the one-point compactification of $\mathbb{C}$, hence $S^2$. The real dimension is the complex dimension plus one, that is $2$.</p>
+<p><strong>Proposition (two lines span, two hyperplanes meet).</strong> Two distinct complex lines span $\mathbb{C}^2$; two distinct complex hyperplanes meet only at the origin.</p>
+<p><em>Proof.</em> Two distinct lines $L_1,L_2$ have $L_1\cap L_2=\{0\}$ and dimensions adding to $2$, so their sum has dimension $2$. Two distinct hyperplanes $H_1=\ker\ell_1$ and $H_2=\ker\ell_2$ have intersection of dimension $1+1-2=0$, since the two forms are independent and $H_1+H_2=\mathbb{C}^2$.</p>
+<h3 id="the-flag-and-the-lattice-of-subspaces">The Flag and the Lattice of Subspaces</h3>
+<p><strong>The complex subspaces form the lattice $\{0\}\subset L\subset\mathbb{C}^2$, and a maximal chain is a flag determined by one line.</strong></p>
+<p><strong>Definition.</strong> A <strong>flag</strong> of $\mathbb{C}^2$ is a chain
+$$
+0\subset L\subset\mathbb{C}^2,\qquad \dim_{\mathbb{C}}L=1,
+$$
+and the <strong>flag variety</strong> $\mathrm{Fl}(1,2;\mathbb{C}^2)$ is the set of such chains.</p>
+<p><strong>Proposition (the flag variety is the projective line).</strong> The map $L\mapsto(0\subset L\subset\mathbb{C}^2)$ is a bijection $\mathbb{CP}^1\to\mathrm{Fl}(1,2;\mathbb{C}^2)$.</p>
+<p><em>Proof.</em> The chain is determined by its middle term, and every line occurs in exactly one such chain.</p>
+<p><strong>Remark (a lattice, not a chain).</strong> The set of complex subspaces is $\{0\}\cup\mathbb{CP}^1\cup\{\mathbb{C}^2\}$, ordered by inclusion. <strong>It is a lattice of height two and not a chain</strong>: two distinct lines are incomparable, and their join is the whole space while their meet is the origin. A flag is a maximal chain, and the lattice is the union of all the maximal chains, one for each line.</p>
+<h3 id="the-dual">The Dual</h3>
+<p><strong>The dual space has the same dimension, the annihilator reverses the inclusions, and a complex line corresponds to a hyperplane.</strong></p>
+<p><strong>Definition.</strong> The <strong>dual space</strong> is $V^{*}=\operatorname{Hom}_{\mathbb{C}}(V,\mathbb{C})$, with dual basis $\ell^{1},\ell^{2}$ defined by $\ell^{k}(z)=z_k$. The <strong>annihilator</strong> of a subspace $W$ is
+$$
+W^{\circ}=\{\ell\in V^{*}:\ell(w)=0\text{ for all }w\in W\}.
+$$</p>
+<p><strong>Proposition (the dimension formula).</strong> For every subspace $W$, $\dim W+\dim W^{\circ}=2$, and $W^{\circ\circ}=W$ under the identification $V^{**}=V$.</p>
+<p><em>Proof.</em> Choose a basis of $W$ and extend it to a basis of $V$; the dual basis of the extension has exactly $2-\dim W$ elements that vanish on $W$, and they are a basis of $W^{\circ}$. The double annihilator has the same dimension as $W$ and contains it, hence equals it.</p>
+<p><strong>Corollary (lines against hyperplanes).</strong> The annihilator is a bijection between the complex lines and the complex hyperplanes, and a line $L$ is contained in a hyperplane $H$ exactly when $H^{\circ}\subset L^{\circ}$.</p>
+<p><em>Proof.</em> A line has annihilator of dimension $1$, hence a hyperplane, and the correspondence is reversed by the dimension formula and involutive by $W^{\circ\circ}=W$. The inclusion reverses under the annihilator.</p>
+<p><strong>Remark (no canonical isomorphism with the dual).</strong> The space and its dual are isomorphic, both of dimension $2$, but <strong>there is no canonical isomorphism between them</strong>: one is supplied by a nondegenerate bilinear form. The form $B$ supplies a symmetric one, $v\mapsto B(v,\cdot)$; the form $\omega$ supplies an alternating one, $v\mapsto\omega(v,\cdot)$, whose inverse is its negative. The choice is a choice of form, and the two choices give different identifications.</p>
+<h2 id="the-real-subspaces">The Real Subspaces</h2>
+<p><strong>A real subspace has dimension $0$ to $4$; in dimension $2$ there are exactly two kinds, the complex lines and the totally real planes, and in dimension $3$ there is only one kind.</strong></p>
+<p><strong>Definition.</strong> A <strong>real subspace</strong> is a subset closed under addition and under multiplication by real scalars. Its <strong>real dimension</strong> is written $\dim_{\mathbb{R}}W$.</p>
+<p><strong>Proposition (the dimensions).</strong> The real subspaces of $\mathbb{C}^2$ have dimensions $0,1,2,3,4$, and the Grassmannian $\mathrm{Gr}_k(\mathbb{R}^4)$ of $k$-planes has dimension $k(4-k)$.</p>
+<p><em>Proof.</em> The dimension formula is the standard one for the Grassmannian of a real vector space: a $k$-plane is the row space of a $k\times4$ matrix of rank $k$, and the parameters are $4k$ minus the $k^2$ parameters of the stabiliser $\mathrm{GL}_k(\mathbb{R})$. The values at $k=0,1,2,3,4$ are $0,3,4,3,0$.</p>
+<p><strong>Definition.</strong> A real subspace $W$ is <strong>$J$-invariant</strong> when $JW=W$, and <strong>totally real</strong> when $W\cap JW=\{0\}$.</p>
+<p><strong>Proposition ($J$-invariant is complex).</strong> A real subspace is $J$-invariant exactly when it is a complex subspace; in particular its real dimension is even.</p>
+<p><em>Proof.</em> If $JW=W$, the multiplication by $i$ preserves $W$, so $W$ is closed under complex scalars. Conversely a complex subspace is closed under $J$. The real dimension of a complex subspace is twice its complex dimension, hence even.</p>
+<p><strong>Theorem (the two kinds of real plane).</strong> Every real $2$-plane of $\mathbb{C}^2$ is either a complex line or a totally real plane, and the two classes are disjoint.</p>
+<p><em>Proof.</em> Let $W$ be a real $2$-plane. The intersection $W\cap JW$ is $J$-invariant, hence complex, so its real dimension is $0$ or $2$. If it is $2$, then $W\cap JW=W$ and $W=JW$, so $W$ is a complex line. If it is $0$, then $W$ is totally real. The two cases are mutually exclusive because a complex line has $W\cap JW=W\neq\{0\}$.</p>
+<p><strong>Proposition (the real $3$-planes).</strong> Every real $3$-plane contains a complex line and is not totally real; no real $3$-plane is complex.</p>
+<p><em>Proof.</em> For a real $3$-plane $W$, $\dim(W+JW)\le4$ gives $\dim(W\cap JW)\ge2$; the intersection is $J$-invariant, hence contains a complex line. A complex subspace has even real dimension, so $W$ is not complex.</p>
+<p><strong>Corollary (the real lines).</strong> Every real line is totally real.</p>
+<p><em>Proof.</em> A real line fixed by $J$ would be a complex subspace of real dimension $1$, which is impossible.</p>
+<p>The real subspaces are collected below. The two middle rows are the content of the theorem.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k$</th>
+<th>Real $k$-planes</th>
+<th>Complex among them</th>
+<th>Dimension of $\mathrm{Gr}_k(\mathbb{R}^4)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>the origin</td>
+<td>the origin</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>real lines</td>
+<td>none</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>complex lines and totally real planes</td>
+<td>the complex lines, a $2$-parameter family</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>real hyperplanes</td>
+<td>none</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>the whole space</td>
+<td>the whole space</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the two families of planes).</strong> The complex lines form a $2$-parameter family inside the $4$-parameter family of real $2$-planes; the totally real planes form the complement, an open dense set. <strong>A real $2$-plane is therefore either complex or totally real, with no intermediate case, and the condition is read on the single number $\dim(W\cap JW)$.</strong></p>
+<h2 id="the-isotropic-lines-of-math159">The Isotropic Lines of $B$</h2>
+<p><strong>The isotropic cone of $B$ is the union of two complex lines; the two lines are real $2$-planes whose links in the unit sphere are two linked circles, and the cone has no real point outside the origin.</strong></p>
+<p><strong>Theorem (the cone is two lines).</strong> The set $\{z:B(z,z)=0\}$ is $L_+\cup L_-$, where
+$$
+L_+=\{z_1=iz_2\},\qquad L_-=\{z_1=-iz_2\},
+$$
+and the two lines meet only at the origin.</p>
+<p><em>Proof.</em> This is the theorem of <em>The Three Canonical Forms on $\mathbb{C}^2$</em>: $B(z,z)=(z_1+iz_2)(z_1-iz_2)$ and $\mathbb{C}$ is a domain.</p>
+<p><strong>Proposition (the real picture).</strong> The complex cone $B=0$ has no real point except the origin. Its two components are real $2$-planes, and each meets the unit sphere $S^3$ in a great circle; the two circles are disjoint.</p>
+<p><em>Proof.</em> If $z\in\mathbb{R}^4$ and $B(z,z)=0$, then $z_1^2+z_2^2=0$ with $z_1,z_2$ real, hence $z_1=z_2=0$. Each line $L_\pm$ is a real $2$-plane through the origin, and its intersection with $S^3$ is a great circle. The two lines meet only at the origin, so the two circles are disjoint.</p>
+<p><strong>Remark (the two circles are linked).</strong> The circles $L_+\cap S^3$ and $L_-\cap S^3$ are two fibres of the Hopf fibration, over the two points $[i:1]$ and $[-i:1]$ of $\mathbb{CP}^1$. <strong>Two distinct fibres of the Hopf fibration have linking number $1$</strong>, so the two circles are linked despite being disjoint (<em>The Unit Sphere and the Hopf Fibration</em>).</p>
+<p><strong>Remark (the real and imaginary parts are two quadrics).</strong> The equation $B(z,z)=0$ is one complex equation and therefore two real equations, $\operatorname{Re}B(z,z)=0$ and $\operatorname{Im}B(z,z)=0$. Each defines a real quadric of signature $(2,2)$, a cone over a torus in $S^3$. <strong>Their intersection is the isotropic cone $B=0$, the union of the two complex lines $L_+\cup L_-$</strong>, which meets $S^3$ in the two linked circles above. The complex cone is not the zero set of a single real quadratic form: it is the intersection of the two real cones, not their union.</p>
+<p><strong>Remark (the image in $\mathbb{CP}^1$).</strong> The projectivisation of the cone is the set of its complex lines, that is the two points
+$$
+[i:1],\qquad[-i:1]
+$$
+of $\mathbb{CP}^1$. <strong>The quadric $B=0$ meets the line at infinity in these two points</strong>, and the projective picture of the cone is a pair of points, not a curve.</p>
+<p><strong>Remark (the comparison with the split-complex null quadric).</strong> In the split-complex plane the null quadric $x^2-y^2=0$ is the union of the two real lines $x=\pm y$. <strong>The complex cone is the same phenomenon one complex dimension higher</strong>: the two real lines become two complex lines, each of real dimension $2$, and the real points of the complex cone collapse to the origin because the two lines are not defined over $\mathbb{R}$. The split-complex picture is <em>Split-Complex Null Quadric and Projective Geometry</em>.</p>
+<h2 id="the-lagrangian-planes">The Lagrangian Planes</h2>
+<p><strong>The Lagrangian subspaces of the two alternating forms are of two different kinds: the complex lines for the holomorphic form and the $\Omega$-Lagrangian planes, a $3$-parameter family inside the $4$-parameter family of totally real planes, for the Kähler form.</strong></p>
+<p><strong>Definition.</strong> Let $\sigma$ be a nondegenerate alternating form on a real vector space of dimension $2n$. A subspace $W$ is <strong>isotropic</strong> when $\sigma|_{W}=0$, and <strong>Lagrangian</strong> when it is isotropic of dimension $n$.</p>
+<p><strong>Theorem ($\omega$-Lagrangian lines).</strong> For the holomorphic symplectic form $\omega$, the Lagrangian subspaces are exactly the complex lines, and the space of them is $\mathbb{CP}^1$.</p>
+<p><em>Proof.</em> The complex dimension is $2$, so a Lagrangian complex subspace has complex dimension $1$, and every complex line is isotropic because $\omega$ is alternating and $\mathbb{C}$-bilinear. The classification of the isotropic subspaces is the theorem of <em>The Three Canonical Forms on $\mathbb{C}^2$</em>.</p>
+<p><strong>Definition.</strong> The <strong>Kähler form</strong> is $\Omega=-\operatorname{Im}H=\sum_k dx_k\wedge dy_k$, a real symplectic form on $\mathbb{R}^4$.</p>
+<p><strong>Theorem ($\Omega$-Lagrangian planes).</strong> A real $2$-plane $W$ is Lagrangian for $\Omega$ exactly when $\Omega|_{W}=0$; every such plane is totally real; and the set of them is a $3$-parameter family, the homogeneous space $\mathrm{U}(2)/\mathrm{O}(2)$.</p>
+<p><em>Proof.</em> If $W$ contained a complex line $L$, then $\Omega|_{L}$ would be the area form of $L$, nondegenerate, so $\Omega|_{W}\neq0$; hence $W$ is totally real. The unitary group acts transitively on the Lagrangian planes and the stabiliser of the coordinate plane $\mathbb{R}^2\subset\mathbb{C}^2$ is $\mathrm{O}(2)$, so the family is $\mathrm{U}(2)/\mathrm{O}(2)$ of dimension $4-1=3$.</p>
+<p><strong>Proposition (a totally real plane need not be Lagrangian).</strong> The plane $W=\operatorname{span}_{\mathbb{R}}\{e_1,e_2\}$ is Lagrangian, while the plane $W'=\operatorname{span}_{\mathbb{R}}\{e_1,ie_1+e_2\}$ is totally real and not Lagrangian.</p>
+<p><em>Proof.</em> Both are totally real: $Je_1=ie_1$ is not in the span of $e_1,e_2$, and $J(ie_1+e_2)=-e_1+ie_2$ is not in the span of $e_1,ie_1+e_2$. On the first, $\Omega(e_1,e_2)=0$; on the second, $\Omega(e_1,ie_1+e_2)=1$.</p>
+<p><strong>Remark (two Lagrangians, two geometries).</strong> The $\omega$-Lagrangian lines are complex and form a compact $2$-parameter family; the $\Omega$-Lagrangian planes are totally real and form a $3$-parameter family that is not compact. <strong>The two words Lagrangian refer to two different forms, and no plane is Lagrangian for both</strong>: a complex line is $\omega$-Lagrangian and $\Omega$-symplectic, and an $\Omega$-Lagrangian plane is totally real and therefore contains no $\omega$-Lagrangian line.</p>
+<h2 id="the-grassmannians">The Grassmannians</h2>
+<p><strong>The complex Grassmannians of $\mathbb{C}^2$ are a point, a sphere and a point; the real ones are a projective space, a quadric hypersurface and a projective space.</strong></p>
+<p><strong>Definition.</strong> The <strong>Grassmannian</strong> $\mathrm{Gr}_k(F^n)$ is the set of $k$-dimensional subspaces of the vector space $F^n$ over the field $F$.</p>
+<p><strong>Proposition (the complex Grassmannians).</strong> The complex Grassmannians of $\mathbb{C}^2$ are
+$$
+\mathrm{Gr}_0=\{\{0\}\},\qquad \mathrm{Gr}_1=\mathbb{CP}^1\cong S^2,\qquad \mathrm{Gr}_2=\{\mathbb{C}^2\},
+$$
+of real dimensions $0,2,0$.</p>
+<p><em>Proof.</em> The only subspaces of dimensions $0$ and $2$ are the origin and the whole space, and the one-dimensional ones are the complex lines.</p>
+<p><strong>Proposition (the real Grassmannians).</strong> The real Grassmannians of $\mathbb{R}^4$ are
+$$
+\mathrm{Gr}_1=\mathbb{RP}^3,\qquad \mathrm{Gr}_2=\text{a quadric hypersurface in }\mathbb{P}^5,\qquad \mathrm{Gr}_3=\mathbb{RP}^3,
+$$
+of dimensions $3,4,3$.</p>
+<p><em>Proof.</em> A real line is a point of $\mathbb{RP}^3$ and a real hyperplane is a point of the dual projective space, again $\mathbb{RP}^3$. A real $2$-plane is the row space of a $2\times4$ matrix of rank $2$, and the Plücker coordinates are the six $2\times2$ minors, subject to the single quadratic Plücker relation; the image is the Klein quadric in $\mathbb{P}^5$, of dimension $4$.</p>
+<p>The dimensions are collected below. The complex Grassmannian of complex dimension $k(2-k)$ has real dimension $2k(2-k)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$k$</th>
+<th>$\mathrm{Gr}_k(\mathbb{C}^2)$</th>
+<th>Real dimension</th>
+<th>$\mathrm{Gr}_k(\mathbb{R}^4)$</th>
+<th>Real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>a point</td>
+<td>$0$</td>
+<td>a point</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\mathbb{CP}^1\cong S^2$</td>
+<td>$2$</td>
+<td>$\mathbb{RP}^3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>a point</td>
+<td>$0$</td>
+<td>the Klein quadric</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>—</td>
+<td>—</td>
+<td>$\mathbb{RP}^3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>—</td>
+<td>—</td>
+<td>a point</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (incidence).</strong> A complex line and a complex hyperplane are incident when the line is contained in the hyperplane, which under the annihilator is the condition $H^{\circ}\subset L^{\circ}$. <strong>In the projective line the incidence is the equality of a point and its image under the duality</strong>, and the flag variety $\mathrm{Fl}(1,2;\mathbb{C}^2)$ is again $\mathbb{CP}^1$. The general theory is <em>Grassmannians and Stiefel Manifolds</em> and <em>Projective Geometry</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex subspaces of $\mathbb{C}^2$ are the origin, the complex lines and the whole space; the lines form $\mathbb{CP}^1\cong S^2$, and a flag $0\subset L\subset\mathbb{C}^2$ is determined by its line. The dual space has dimension $2$, the annihilator satisfies $\dim W+\dim W^{\circ}=2$, and it exchanges lines and hyperplanes; there is no canonical isomorphism $V\cong V^{*}$ without a bilinear form.</p>
+<p>The real subspaces have dimensions $0$ to $4$. A real $2$-plane is either a complex line or a totally real plane, according as $\dim(W\cap JW)$ is $2$ or $0$; a real $3$-plane always contains a complex line and is never totally real; a real line is always totally real. The isotropic cone of $B$ is the union of the two complex lines $z_1=\pm iz_2$, which meet only at the origin; it has no real point except the origin, its two components meet $S^3$ in two linked great circles, and its projectivisation is the two points $[i:1]$ and $[-i:1]$ of $\mathbb{CP}^1$. The Lagrangian subspaces are the complex lines for $\omega$, forming $\mathbb{CP}^1$, and the $\Omega$-Lagrangian planes, the $3$-parameter family $\mathrm{U}(2)/\mathrm{O}(2)$ of totally real planes, for $\Omega$; no plane is Lagrangian for both. The Grassmannians are $\mathrm{Gr}_0$ a point, $\mathrm{Gr}_1=\mathbb{CP}^1$, $\mathrm{Gr}_2$ a point in the complex case, and $\mathbb{RP}^3$, the Klein quadric and $\mathbb{RP}^3$ in the real case.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{CP}^1$</td>
+<td>the projective line, the set of complex lines of $\mathbb{C}^2$, homeomorphic to $S^2$</td>
+</tr>
+<tr>
+<td>$[z_1:z_2]$</td>
+<td>the homogeneous coordinates of a complex line</td>
+</tr>
+<tr>
+<td>$\mathrm{Fl}(1,2;\mathbb{C}^2)$</td>
+<td>the flag variety $\{0\subset L\subset\mathbb{C}^2\}$, identified with $\mathbb{CP}^1$</td>
+</tr>
+<tr>
+<td>$V^{*}$</td>
+<td>the dual space, with dual basis $\ell^{1},\ell^{2}$</td>
+</tr>
+<tr>
+<td>$W^{\circ}$</td>
+<td>the annihilator of $W$, of dimension $2-\dim W$</td>
+</tr>
+<tr>
+<td>$JW$</td>
+<td>the image of $W$ under the complex structure</td>
+</tr>
+<tr>
+<td>totally real</td>
+<td>$W\cap JW=\{0\}$</td>
+</tr>
+<tr>
+<td>$L_\pm=\{z_1=\pm iz_2\}$</td>
+<td>the two isotropic lines of $B$</td>
+</tr>
+<tr>
+<td>$\Omega=\sum_k dx_k\wedge dy_k$</td>
+<td>the Kähler form</td>
+</tr>
+<tr>
+<td>$\mathrm{Gr}_k(F^n)$</td>
+<td>the Grassmannian of $k$-subspaces of $F^n$</td>
+</tr>
+<tr>
+<td>$\Lambda_2=\mathrm{U}(2)/\mathrm{O}(2)$</td>
+<td>the Lagrangian Grassmannian of $\Omega$, of dimension $3$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-complex-two-space.html">Complex Two-Space</a>, for the space, the bases and the complex structure.</li>
+<li><a href="the-three-canonical-forms-on-the-complex-two-space.html">The Three Canonical Forms on $\mathbb{C}^2$</a>, for the definitions of $B$, $\omega$ and $\Omega$ and the isotropic and Lagrangian computations.</li>
+<li><a href="the-realification-of-the-complex-two-space.html">The Realification of $\mathbb{C}^2$</a>, for the real reading of the subspaces and the map $J$.</li>
+<li><a href="the-isotropic-cone-of-the-bilinear-form.html">The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$</a>, for the cone, its real picture and its projective image.</li>
+<li><a href="the-unit-sphere-and-the-hopf-fibration.html">The Unit Sphere and the Hopf Fibration</a>, for the two linked circles and the fibration of $S^3$.</li>
+<li><a href="the-classical-groups-of-the-complex-two-space.html">The Classical Groups of $\mathbb{C}^2$</a>, for the group actions on the lines and on the Lagrangian planes.</li>
+<li><a href="grassmannians-and-stiefel-manifolds.html">Grassmannians and Stiefel Manifolds</a>, for the general theory of the Grassmannians and the Plücker embedding.</li>
+<li><a href="projective-geometry.html">Projective Geometry</a>, for the projective line, the duality and the incidence.</li>
+<li><a href="split-complex-null-quadric-and-projective-geometry.html">Split-Complex Null Quadric and Projective Geometry</a>, for the real two-line cone that this cone complexifies.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

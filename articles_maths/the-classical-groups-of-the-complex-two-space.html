@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Classical Groups of $\mathbb{C}^2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-classical-groups-of-math0"><strong>The Classical Groups of $\mathbb{C}^2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The space $\mathbb{C}^2$ carries the three canonical forms of <em>The Three Canonical Forms on $\mathbb{C}^2$</em>, and each form defines a group of linear transformations preserving it. The determinant defines the special linear group, the Hermitian form defines the unitary group, the complex bilinear form defines the complex orthogonal group, and the holomorphic symplectic form defines the complex symplectic group. <strong>In complex dimension two the last two groups are unexpectedly small</strong>: the identity component of the complex orthogonal group is one-dimensional and abelian, and the complex symplectic group coincides with the special linear group.</p>
+<p>This article treats the groups, their defining forms, their dimensions and topology, their inclusions and intersections, their actions on the sphere $S^3$ and on the projective line $\mathbb{CP}^1$, and the polar and Iwasawa decompositions. The forms are from <em>The Three Canonical Forms on $\mathbb{C}^2$</em>; the sphere and the Hopf fibration are from <em>The Unit Sphere and the Hopf Fibration</em>; the automorphisms of the ball and of the bicylinder are from <em>The Ball and the Bicylinder in $\mathbb{C}^2$</em>; the general theory of Lie groups is <em>Lie Groups and Lie Algebras</em>.</p>
+<p><strong>The four complex groups and the two real forms are tied by the intersections $U(2)\cap SL_2(\mathbb C)=SU(2)$ and $Sp(2,\mathbb C)\cap U(2)=SU(2)$.</strong> The first identity is the statement that a unitary matrix of determinant one is special unitary; the second is the statement that in rank one the symplectic group is the special linear group. <strong>The compact group $SU(2)$ is the common core of the symplectic, the special linear and the unitary groups</strong>, and it is the group of the sphere $S^3$.</p>
+<h2 id="the-groups-and-their-defining-forms">The Groups and Their Defining Forms</h2>
+<p><strong>Each classical group is the stabiliser of one of the canonical forms: the determinant, the Hermitian form $H$, the bilinear form $B$, or the symplectic form $\omega$.</strong></p>
+<p><strong>Definition.</strong> The <strong>classical groups of $\mathbb{C}^2$</strong> are
+$$
+\begin{aligned}
+GL_2(\mathbb{C})&=\{A\in M_2(\mathbb{C}):\det A\neq0\},\\
+SL_2(\mathbb{C})&=\{A\in GL_2(\mathbb{C}):\det A=1\},\\
+U(2)&=\{A\in GL_2(\mathbb{C}):A^{*}A=I\},\\
+SU(2)&=U(2)\cap SL_2(\mathbb{C}),\\
+O(2,\mathbb{C})&=\{A\in GL_2(\mathbb{C}):A^{T}A=I\},\\
+SO(2,\mathbb{C})&=O(2,\mathbb{C})\cap SL_2(\mathbb{C}),\\
+Sp(2,\mathbb{C})&=\{A\in GL_2(\mathbb{C}):A^{T}\Omega A=\Omega\},
+\end{aligned}
+$$
+where $\Omega=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.</p>
+<p><strong>Proposition (the defining forms).</strong> The group $U(2)$ is the stabiliser of the Hermitian form $H(z,w)=z_1\overline{w_1}+z_2\overline{w_2}$; the group $O(2,\mathbb{C})$ is the stabiliser of the bilinear form $B(z,w)=z_1w_1+z_2w_2$; the group $Sp(2,\mathbb{C})$ is the stabiliser of the symplectic form $\omega$; and $SL_2(\mathbb{C})$ is the kernel of the determinant.</p>
+<p><em>Proof.</em> The identities $H(Az,Aw)=H(z,w)$, $B(Az,Aw)=B(z,w)$ and $\omega(Az,Aw)=\omega(z,w)$ are exactly the matrix equations $A^*A=I$, $A^TA=I$ and $A^T\Omega A=\Omega$. The determinant is a homomorphism $GL_2(\mathbb{C})\to\mathbb{C}^*$ with kernel $SL_2(\mathbb{C})$.</p>
+<p><strong>Proposition (the symplectic group is special linear).</strong> In complex dimension two,
+$$
+Sp(2,\mathbb{C})=SL_2(\mathbb{C}).
+$$</p>
+<p><em>Proof.</em> For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, the equation $A^T\Omega A=\Omega$ is equivalent to $ad-bc=1$, as a direct computation shows. Hence $Sp(2,\mathbb{C})$ is the set of matrices of determinant one.</p>
+<p><strong>Proposition (the orthogonal group is abelian).</strong> The group $SO(2,\mathbb{C})$ is isomorphic to $\mathbb{C}^*$, and
+$$
+O(2,\mathbb{C})=SO(2,\mathbb{C})\rtimes\mathbb{Z}_2.
+$$
+In particular $SO(2,\mathbb{C})$ is abelian and one-dimensional.</p>
+<p><em>Proof.</em> A matrix of $SO(2,\mathbb{C})$ is of the form $\begin{pmatrix}c&s\\-s&c\end{pmatrix}$ with $c^2+s^2=1$. The map $c+is\mapsto\begin{pmatrix}c&s\\-s&c\end{pmatrix}$ is an isomorphism onto $\mathbb{C}^*$, with inverse $t\mapsto\frac12(t+t^{-1})I+\frac{1}{2i}(t-t^{-1})J$. The determinant $-1$ element $\operatorname{diag}(1,-1)$ conjugates the matrix to its inverse, so the group is the semidirect product with $\mathbb{Z}_2$.</p>
+<p><strong>Remark (the two real forms).</strong> The group $GL_2(\mathbb{C})$ has the compact real form $U(2)$ and the split real form $GL_2(\mathbb{R})$; $SL_2(\mathbb{C})$ has $SU(2)$ and $SL_2(\mathbb{R})$; $SO(2,\mathbb{C})$ has $SO(2)$ and $SO(1,1)$; $Sp(2,\mathbb{C})=SL_2(\mathbb{C})$ has $SU(2)$ and $Sp(2,\mathbb{R})=SL_2(\mathbb{R})$. <strong>The compact real form is the fixed point set of the Cartan involution</strong>, and it is the maximal compact subgroup.</p>
+<h2 id="dimensions-and-topology">Dimensions and Topology</h2>
+<p><strong>The complex groups have complex dimensions $4,3,1,3$, and real dimensions $8,6,2,6$; the compact groups have real dimensions $4,3,1$. The compact groups are homotopy equivalent to their complex ambient groups, and the fundamental groups are $\mathbb{Z}$ for $GL_2$ and $SO(2,\mathbb{C})$, trivial for $SL_2$ and $Sp(2,\mathbb{C})$.</strong></p>
+<p><strong>Proposition (the dimensions).</strong> The dimensions are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>$\dim_{\mathbb{C}}$</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL_2(\mathbb{C})$</td>
+<td>4</td>
+<td>8</td>
+</tr>
+<tr>
+<td>$SL_2(\mathbb{C})$</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td>$SO(2,\mathbb{C})$</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$O(2,\mathbb{C})$</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>$Sp(2,\mathbb{C})$</td>
+<td>3</td>
+<td>6</td>
+</tr>
+<tr>
+<td>$U(2)$</td>
+<td>—</td>
+<td>4</td>
+</tr>
+<tr>
+<td>$SU(2)$</td>
+<td>—</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$SO(2)$</td>
+<td>—</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div>
+<p>and $O(2,\mathbb{C})$ and $O(2)$ have two connected components.</p>
+<p><em>Proof.</em> The complex dimensions are the dimensions of the Lie algebras: $\mathfrak{gl}_2$ has dimension $4$, $\mathfrak{sl}_2$ and $\mathfrak{sp}_2$ have dimension $3$, $\mathfrak{so}_2$ has dimension $1$. The real dimensions of $U(2)$ and $SU(2)$ are the real dimensions of their Lie algebras $\mathfrak{u}(2)$ and $\mathfrak{su}(2)$, of dimensions $4$ and $3$. The orthogonal groups have two components, distinguished by the determinant.</p>
+<p><strong>Proposition (the topology).</strong> The inclusions $U(2)\subset GL_2(\mathbb{C})$ and $SU(2)\subset SL_2(\mathbb{C})$ are homotopy equivalences; $SU(2)\cong S^3$ is simply connected, and
+$$
+\pi_1(GL_2(\mathbb{C}))=\pi_1(U(2))=\mathbb{Z},\qquad
+\pi_1(SL_2(\mathbb{C}))=\pi_1(SU(2))=0.
+$$
+Moreover $SO(2,\mathbb{C})\cong\mathbb{C}^*$ has $\pi_1=\mathbb{Z}$, and $O(2,\mathbb{C})$ has two components each homotopy equivalent to $S^1$.</p>
+<p><em>Proof.</em> The polar decomposition $GL_2(\mathbb{C})=U(2)\cdot P$ retracts $GL_2(\mathbb{C})$ onto $U(2)$, and $SL_2(\mathbb{C})=SU(2)\cdot P_0$ retracts onto $SU(2)$; the same argument with the Gram–Schmidt decomposition gives the homotopy equivalences. The group $SU(2)$ is the unit sphere $S^3$ by <em>The Unit Sphere and the Hopf Fibration</em>. The group $\mathbb{C}^*$ is homotopy equivalent to $S^1$.</p>
+<p><strong>Remark (the centres).</strong> The centres are
+$$
+Z(GL_2)=\mathbb{C}^*,\quad Z(SL_2)=\{\pm I\},\quad Z(U(2))=U(1),\quad Z(SU(2))=\{\pm I\},
+$$
+and $Z(Sp(2,\mathbb{C}))=Z(SL_2)=\{\pm I\}$; the group $SO(2,\mathbb{C})\cong\mathbb{C}^*$ is abelian, so its centre is the whole group. <strong>The projective groups are the quotients by the centres</strong>:
+$$
+PGL_2(\mathbb{C})=GL_2(\mathbb{C})/\mathbb{C}^*\cong PSL_2(\mathbb{C})=SL_2(\mathbb{C})/\{\pm I\},
+$$
+and $PU(2)=U(2)/U(1)\cong PSU(2)=SU(2)/\{\pm I\}\cong SO(3)$.</p>
+<p><em>Proof.</em> The centres are computed from the definitions; the isomorphism $PGL_2\cong PSL_2$ is the fact that every invertible matrix is a scalar multiple of a matrix of determinant one. The isomorphism $PSU(2)\cong SO(3)$ is the adjoint representation of $SU(2)$ on its Lie algebra $\mathfrak{su}(2)\cong\mathbb{R}^3$, with kernel $\{\pm I\}$.</p>
+<h2 id="inclusions-and-intersections">Inclusions and Intersections</h2>
+<p><strong>The compact group $SU(2)$ is the intersection of the unitary group with the special linear group and with the symplectic group; the real rotation group $SO(2)$ is the intersection of the unitary group with the complex orthogonal group.</strong></p>
+<p><strong>Theorem (the intersections).</strong> The following identities hold:
+$$
+\begin{aligned}
+U(2)\cap SL_2(\mathbb{C})&=SU(2),\\
+U(2)\cap Sp(2,\mathbb{C})&=SU(2),\\
+U(2)\cap O(2,\mathbb{C})&=O(2),\\
+U(2)\cap SO(2,\mathbb{C})&=SO(2),\\
+SL_2(\mathbb{C})\cap O(2,\mathbb{C})&=SO(2,\mathbb{C}),\\
+Sp(2,\mathbb{C})\cap O(2,\mathbb{C})&=SO(2,\mathbb{C}),\\
+SU(2)\cap SO(2,\mathbb{C})&=SO(2).
+\end{aligned}
+$$</p>
+<p><em>Proof.</em> The first identity is the definition of $SU(2)$. The second follows from $Sp(2,\mathbb{C})=SL_2(\mathbb{C})$. For the third, a matrix that is both unitary and complex orthogonal satisfies $A^*A=A^TA=I$, hence $A^*=A^T$, that is, $A$ is real; a real unitary matrix is orthogonal. The fourth is the third intersected with $\det=1$. The fifth is $O\cap SL=SO$. The sixth follows from $Sp=SL$. The seventh is the fourth, because $SU(2)\subset U(2)$ and $SU(2)\subset SL_2$.</p>
+<p><strong>Remark (the inclusions).</strong> The inclusions form the diagram
+$$
+SU(2)\subset U(2)\subset GL_2(\mathbb{C}),\qquad
+SU(2)\subset SL_2(\mathbb{C})\subset GL_2(\mathbb{C}),
+$$
+$$
+SO(2)\subset U(2),\qquad SO(2)\subset SO(2,\mathbb{C})\subset SL_2(\mathbb{C}),
+$$
+and $Sp(2,\mathbb{C})=SL_2(\mathbb{C})$. <strong>The group $SU(2)$ sits at the centre of the diagram</strong>: it is contained in $U(2)$, in $SL_2(\mathbb{C})$ and in $Sp(2,\mathbb{C})$, and its images generate the compact parts of the three groups.</p>
+<p><strong>Remark (the maximal compact subgroups).</strong> The maximal compact subgroups are
+$$
+U(2)\subset GL_2(\mathbb{C}),\qquad SU(2)\subset SL_2(\mathbb{C}),\qquad SO(2)\subset SO(2,\mathbb{C}),\qquad SU(2)\subset Sp(2,\mathbb{C}).
+$$
+<strong>The compact group is the fixed point set of the Cartan involution</strong> $A\mapsto(A^*)^{-1}$ in the unitary case, and the corresponding involutions in the other cases.</p>
+<h2 id="the-actions-on-math144-and-math145">The Actions on $S^3$ and $\mathbb{CP}^1$</h2>
+<p><strong>The unitary groups act transitively on the sphere and on the projective line; the complex groups act transitively on the projective line and on the sphere, but not by isometries; the orthogonal group preserves the two isotropic points of the projective line.</strong></p>
+<p><strong>Proposition (the action on $S^3$).</strong> The groups $U(2)$ and $SU(2)$ act transitively on $S^3$. The stabiliser of a point in $U(2)$ is a circle $U(1)$, so $S^3=U(2)/U(1)$; the stabiliser in $SU(2)$ is trivial, so $SU(2)\to S^3$ is a diffeomorphism.</p>
+<p><em>Proof.</em> For $v\in S^3$ there is a unitary matrix sending $e_1$ to $v$; the stabiliser of $e_1$ in $U(2)$ is the set of matrices acting on the orthogonal complement by a unit scalar, a circle. In $SU(2)$ the scalar must have determinant one, hence is $1$, so the stabiliser is trivial; the orbit map is bijective, and it is a diffeomorphism because $SU(2)$ is compact.</p>
+<p><strong>Proposition (the action on $\mathbb{CP}^1$).</strong> The groups $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$, $U(2)$ and $SU(2)$ act transitively on $\mathbb{CP}^1$. The kernels are $\mathbb{C}^*$, $\{\pm I\}$, $U(1)$ and $\{\pm I\}$ respectively, so the faithful quotients are $PGL_2(\mathbb{C})\cong PSL_2(\mathbb{C})$, $PU(2)\cong SO(3)$ and $PSU(2)\cong SO(3)$.</p>
+<p><em>Proof.</em> A nonzero vector can be sent to any other by an invertible matrix, which gives the transitivity of $GL_2$; the other groups act transitively because their orbits are open and closed, or by the same explicit construction with determinant and unitary conditions. The kernels are the scalars that act trivially on the projective line, that is, the centres.</p>
+<p><strong>Remark (the Möbius group).</strong> The faithful action of $PGL_2(\mathbb{C})$ on $\mathbb{CP}^1$ is the action of the Möbius transformations
+$$
+z\longmapsto\frac{az+b}{cz+d},\qquad ad-bc\neq0.
+$$
+<strong>The group is sharply $3$-transitive</strong>: it sends any three distinct points to any three distinct points, and the stabiliser of a point is the Borel subgroup of upper triangular matrices. The subgroup $PU(2)\cong SO(3)$ is the group of the round metric of $S^2=\mathbb{CP}^1$.</p>
+<p><strong>Remark (the orthogonal group and the isotropic points).</strong> The group $O(2,\mathbb{C})$ preserves the bilinear form $B$, hence preserves the two isotropic points $[\pm i:1]$ of <em>The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$</em>. <strong>It acts on $\mathbb{CP}^1$ by permuting the two points and preserving the pair</strong>, so its image in $PGL_2(\mathbb{C})$ is the normaliser of the diagonal torus, of dimension $1$; it does not act transitively.</p>
+<h2 id="the-decompositions">The Decompositions</h2>
+<p><strong>The polar decomposition writes every invertible matrix as a unitary matrix times a positive definite Hermitian matrix, and the Iwasawa decomposition writes it as a unitary matrix times an upper triangular matrix with positive diagonal.</strong></p>
+<p><strong>Theorem (the polar decomposition).</strong> Every $A\in GL_2(\mathbb{C})$ is uniquely of the form
+$$
+A=UP,\qquad U\in U(2),\quad P=P^*>0.
+$$
+The same holds with $GL_2$ replaced by $SL_2$ and $U(2)$ by $SU(2)$, with $\det P=1$.</p>
+<p><em>Proof.</em> The matrix $A^*A$ is positive definite Hermitian, so it has a unique positive definite square root $P=(A^*A)^{1/2}$; then $U=AP^{-1}$ satisfies $U^*U=I$. The determinant condition is $\det U\det P=1$, and $\det P>0$, so $\det U=1$ when $\det A=1$.</p>
+<p><strong>Theorem (the Iwasawa decomposition).</strong> Every $A\in GL_2(\mathbb{C})$ is uniquely of the form
+$$
+A=U\,D\,N,\qquad U\in U(2),
+$$
+where $D$ is diagonal with positive real entries and $N$ is upper triangular with ones on the diagonal:
+$$
+D=\begin{pmatrix}a&0\\0&b\end{pmatrix},\quad a,b>0,\qquad
+N=\begin{pmatrix}1&n\\0&1\end{pmatrix},\quad n\in\mathbb{C}.
+$$
+The same holds for $SL_2(\mathbb{C})$ with $U\in SU(2)$ and $ab=1$.</p>
+<p><em>Proof.</em> The Gram–Schmidt process applied to the columns of $A$ produces the decomposition; the positivity of the diagonal is the choice of the positive square roots, and the unitarity of $U$ follows from the construction. The uniqueness is the uniqueness of the Gram–Schmidt decomposition.</p>
+<p><strong>Remark (the two decompositions).</strong> The polar decomposition is the diffeomorphism $GL_2(\mathbb{C})\cong U(2)\times P$, and the Iwasawa decomposition is the diffeomorphism $GL_2(\mathbb{C})\cong U(2)\times D\times N$. <strong>The two exhibit the compact group as the retract and the solvable group as the noncompact directions</strong>; the dimensions are $8=4+4$ and $8=4+2+2$, and similarly $6=3+3$ and $6=3+1+2$ for $SL_2(\mathbb{C})$.</p>
+<h2 id="summary">Summary</h2>
+<p>The classical groups of $\mathbb{C}^2$ are $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$, $U(2)$, $SU(2)$, $O(2,\mathbb{C})$ and $Sp(2,\mathbb{C})$, defined by invertibility, the determinant, the Hermitian form, the bilinear form and the symplectic form. The real dimensions are $8,6,4,3,2,6$ for $GL_2,SL_2,U(2),SU(2),SO(2,\mathbb{C}),Sp(2,\mathbb{C})$; the groups $GL_2$ and $SO(2,\mathbb{C})$ have fundamental group $\mathbb{Z}$, and $SL_2$ and $Sp(2,\mathbb{C})$ are simply connected.</p>
+<p>The key identities are $Sp(2,\mathbb{C})=SL_2(\mathbb{C})$, $SO(2,\mathbb{C})\cong\mathbb{C}^*$, and
+$$
+U(2)\cap SL_2(\mathbb{C})=U(2)\cap Sp(2,\mathbb{C})=SU(2),\qquad
+U(2)\cap O(2,\mathbb{C})=O(2),
+$$
+with $SU(2)\cong S^3$ as the common compact core. The groups act transitively on $S^3$ and on $\mathbb{CP}^1$ according to their kernels, the projective quotients are $PGL_2\cong PSL_2$ and $PU(2)\cong PSU(2)\cong SO(3)$, and the polar and Iwasawa decompositions exhibit the compact and the solvable directions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL_2(\mathbb{C})$</td>
+<td>invertible complex $2\times2$ matrices</td>
+</tr>
+<tr>
+<td>$SL_2(\mathbb{C})$</td>
+<td>determinant one</td>
+</tr>
+<tr>
+<td>$U(2)$</td>
+<td>unitary matrices, stabiliser of $H$</td>
+</tr>
+<tr>
+<td>$SU(2)$</td>
+<td>special unitary, $U(2)\cap SL_2$</td>
+</tr>
+<tr>
+<td>$O(2,\mathbb{C})$</td>
+<td>complex orthogonal, stabiliser of $B$</td>
+</tr>
+<tr>
+<td>$SO(2,\mathbb{C})$</td>
+<td>determinant one, isomorphic to $\mathbb{C}^*$</td>
+</tr>
+<tr>
+<td>$Sp(2,\mathbb{C})$</td>
+<td>symplectic, equal to $SL_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\Omega=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$</td>
+<td>the symplectic matrix</td>
+</tr>
+<tr>
+<td>$PGL_2,PSL_2,PU(2),PSU(2)$</td>
+<td>the projective quotients by the centres</td>
+</tr>
+<tr>
+<td>$S^3=SU(2)$</td>
+<td>the unit sphere as the compact group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-complex-two-space.html">Complex Two-Space</a>, for the space and the forms.</li>
+<li><a href="the-three-canonical-forms-on-the-complex-two-space.html">The Three Canonical Forms on $\mathbb{C}^2$</a>, for $H$, $B$ and $\omega$ and the groups they define.</li>
+<li><a href="the-subspaces-of-the-complex-two-space.html">The Subspaces of $\mathbb{C}^2$</a>, for the lines, the Lagrangian planes and the isotropic lines.</li>
+<li><a href="the-endomorphisms-of-the-complex-two-space.html">The Endomorphisms of $\mathbb{C}^2$</a>, for $M_2(\mathbb{C})$, $GL_2$ and $PGL_2$.</li>
+<li><a href="the-flat-kahler-structure-of-the-complex-two-space.html">The Flat Kähler Structure of $\mathbb{C}^2$</a>, for $\mathbb{C}^2\rtimes U(2)$ and the holomorphic isometries.</li>
+<li><a href="the-isotropic-cone-of-the-bilinear-form.html">The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$</a>, the previous article, for the two isotropic points and the orthogonal action.</li>
+<li><a href="the-unit-sphere-and-the-hopf-fibration.html">The Unit Sphere and the Hopf Fibration</a>, for $S^3\cong SU(2)$ and the Hopf fibration.</li>
+<li><a href="the-ball-and-the-bicylinder.html">The Ball and the Bicylinder in $\mathbb{C}^2$</a>, for $PU(2,1)$ and the automorphisms of the ball.</li>
+<li><a href="lie-groups.html">Lie Groups</a>, for the general theory of the groups and their Lie algebras.</li>
+<li><a href="conventions-in-mathematics.html">Conventions in Mathematics</a>, for the glyphs and the typographic conventions of the corpus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

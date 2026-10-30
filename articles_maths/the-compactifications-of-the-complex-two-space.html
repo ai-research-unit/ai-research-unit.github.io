@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Compactifications of $\mathbb{C}^2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-compactifications-of-math0"><strong>The Compactifications of $\mathbb{C}^2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A compactification of $\mathbb{C}^2$ is a compact Hausdorff space containing a dense copy of $\mathbb{C}^2$. There are many, and this article treats the two standard ones: the <strong>one-point compactification</strong>, which adds a single point at infinity and is the sphere $S^4$, and the <strong>projective compactification</strong>, which adds a complex projective line at infinity and is the projective plane $\mathbb{CP}^2$. The closed unit ball is the common model from which both are read: the ball keeps the sphere at infinity, the one-point compactification collapses it to a point, and the projective compactification attaches it to a two-sphere by the Hopf map.</p>
+<p>The article treats the constructions, the cell decompositions, the homology, the Euler characteristic, the line at infinity and the proof that the two compactifications are not homeomorphic. It does not treat the topology of $\mathbb{C}^2$ itself, which is <em>The Topology of $\mathbb{C}^2$</em>; it does not treat the Hopf fibration in detail, which is <em>The Unit Sphere and the Hopf Fibration</em>; and it does not treat projective geometry in general, which is <em>Projective Geometry</em> and <em>Grassmannians and Stiefel Manifolds</em>. The characteristic classes used in one remark are <em>Characteristic Classes</em>.</p>
+<p><strong>The two compactifications are both compact four-dimensional manifolds containing $\mathbb{C}^2$ densely, and they are not homeomorphic.</strong> The reason is visible in the boundary: the one-point compactification adds a point, the projective one adds a two-sphere, and the two-sphere carries a non-trivial two-dimensional homology class.</p>
+<h2 id="the-sphere-at-infinity">The Sphere at Infinity</h2>
+<p><strong>The open unit ball is $\mathbb{C}^2$, its boundary is the sphere $S^3$, and the three compactifications are three ways of treating that boundary.</strong></p>
+<p>The open ball $B^4$ is homeomorphic to $\mathbb{C}^2$ by <em>The Topology of $\mathbb{C}^2$</em>, and its closure $\overline{B}^4$ is a compact manifold with boundary
+$$
+\partial\overline{B}^4=S^3.
+$$
+The boundary is the <strong>sphere at infinity</strong>: a sequence in $\mathbb{C}^2$ tends to infinity exactly when its radial coordinate tends to infinity, and the angular coordinate records the direction. The three treatments are collected below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Space</th>
+<th>Treatment of the boundary $S^3$</th>
+<th>Boundary of the compactification</th>
+<th>Compact</th>
+<th>Manifold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>closed ball $\overline{B}^4$</td>
+<td>kept</td>
+<td>$S^3$</td>
+<td>yes</td>
+<td>with boundary</td>
+</tr>
+<tr>
+<td>one-point compactification $S^4$</td>
+<td>collapsed to a point</td>
+<td>a point</td>
+<td>yes</td>
+<td>without boundary</td>
+</tr>
+<tr>
+<td>projective compactification $\mathbb{CP}^2$</td>
+<td>attached to $\mathbb{CP}^1$ by the Hopf map</td>
+<td>$\mathbb{CP}^1=S^2$</td>
+<td>yes</td>
+<td>without boundary</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the boundary is a choice).</strong> The space $\mathbb{C}^2$ alone does not determine a boundary at infinity: the sphere $S^3$ is a choice of radial compactification, and the three compactifications are three quotients of that choice. <strong>The one-point compactification forgets the direction, the projective compactification records the complex direction, and the closed ball records the real direction.</strong> This is the organising idea of the article.</p>
+<h2 id="the-one-point-compactification">The One-Point Compactification</h2>
+<p><strong>The one-point compactification adds a single point to $\mathbb{C}^2$ and is homeomorphic to the sphere $S^4$.</strong></p>
+<p><strong>Definition.</strong> Let $X$ be a locally compact Hausdorff space. The <strong>one-point compactification</strong> is the set $X^{+}=X\cup\{\infty\}$ with the topology whose open sets are the open sets of $X$ together with the sets $U$ containing $\infty$ such that $X\setminus U$ is compact in $X$.</p>
+<p><strong>Proposition (the axioms).</strong> For a locally compact, non-compact Hausdorff space $X$, the space $X^{+}$ is compact and Hausdorff, and $X$ is an open dense subset of $X^{+}$.</p>
+<p><em>Proof.</em> The open sets of $X$ are open in $X^{+}$; a set containing $\infty$ is open exactly when its complement in $X$ is compact. The space is compact: an open cover of $X^{+}$ contains a member $U$ with $\infty\in U$, whose complement $K=X\setminus U$ is compact, and finitely many members cover $K$. It is Hausdorff: two points of $X$ are separated by open sets of $X$, and a point $x\in X$ and $\infty$ are separated by a compact neighborhood of $x$ and its complement. The set $X$ is open, since $\{\infty\}$ is closed; it is dense, since a neighborhood of $\infty$ has compact complement, which is not all of $X$ because $X$ is not compact, so it meets $X$.</p>
+<p><strong>Theorem (the one-point compactification of $\mathbb{C}^2$ is $S^4$).</strong> There is a homeomorphism
+$$
+(\mathbb{C}^2)^{+}\longrightarrow S^4
+$$
+that is the inverse of the stereographic projection on $\mathbb{C}^2$ and sends $\infty$ to the north pole.</p>
+<p><em>Proof.</em> Identify $\mathbb{C}^2$ with $\mathbb{R}^4$. The inverse stereographic projection from the north pole $N=(0,0,0,0,1)$ is
+$$
+\sigma^{-1}(u)=\left(\frac{2u}{1+\lVert u\rVert^2},\frac{\lVert u\rVert^2-1}{1+\lVert u\rVert^2}\right)\in S^4\subset\mathbb{R}^5,
+$$
+a homeomorphism $\mathbb{R}^4\to S^4\setminus\{N\}$. As $\lVert u\rVert\to\infty$, the image tends to $N$. Extending by $\infty\mapsto N$ gives a continuous bijection from the one-point compactification onto the compact Hausdorff space $S^4$, hence a homeomorphism.</p>
+<p><strong>Proposition (uniqueness and minimality).</strong> The one-point compactification is unique up to homeomorphism. For every compactification $Y$ of a locally compact, non-compact Hausdorff space $X$, the identity of $X$ extends to a continuous surjection $Y\to X^{+}$ sending $Y\setminus X$ to $\infty$.</p>
+<p><em>Proof.</em> Two one-point compactifications are homeomorphic by the identity on $X$ extended by $\infty\mapsto\infty$. For the second statement, define $f:Y\to X^{+}$ by $f(y)=y$ for $y\in X$ and $f(y)=\infty$ otherwise. A locally compact dense subset of a compact Hausdorff space is open, so the preimage of an open set of $X$ is open in $Y$; the preimage of a neighborhood of $\infty$ is the complement in $Y$ of a compact subset of $X$, which is closed in the Hausdorff space $Y$, hence open. The map is surjective and continuous.</p>
+<p><strong>Corollary (the smallest compactification).</strong> The one-point compactification is the smallest compactification of $\mathbb{C}^2$: every other compactification maps onto $S^4$ by a continuous surjection that is the identity on $\mathbb{C}^2$.</p>
+<p><em>Proof.</em> This is the proposition applied to $X=\mathbb{C}^2$ and $X^{+}=S^4$.</p>
+<p><strong>Proposition (the topological invariants).</strong> The sphere $S^4$ is compact, connected, simply connected and of dimension $4$, with
+$$
+H_0(S^4;\mathbb{Z})=H_4(S^4;\mathbb{Z})=\mathbb{Z},\qquad H_k(S^4;\mathbb{Z})=0\quad(k=1,2,3),
+$$
+and Euler characteristic $2$. Its homotopy groups begin with $\pi_1(S^4)=\pi_2(S^4)=\pi_3(S^4)=0$.</p>
+<p><em>Proof.</em> The sphere is the boundary of the closed ball of $\mathbb{R}^5$, hence compact; it is connected and simply connected for dimension at least $2$; its cell decomposition $S^4=e^0\cup e^4$ gives the homology; and the low homotopy groups vanish because $S^4$ is $3$-connected (<em>Homotopy Groups and Fibrations</em>).</p>
+<p><strong>Remark (the point at infinity).</strong> In $S^4$ all directions of escape are identified: every sequence with $\lVert z_n\rVert\to\infty$, whatever the angular behaviour, converges to the same point $\infty$. <strong>The one-point compactification is direction-blind.</strong> This is exactly what the projective compactification refines.</p>
+<p><strong>Remark (no complex structure).</strong> The sphere $S^4$ admits no almost complex structure, so the one-point compactification cannot be made a complex manifold compatible with $\mathbb{C}^2$. The obstruction is read on the Chern classes: a closed almost complex $4$-manifold satisfies $c_1^2=2\chi+3\sigma$, which for $S^4$ gives $4$, while $H^2(S^4;\mathbb{Z})=0$ forces $c_1=0$ and $c_1^2=0$ (<em>Characteristic Classes</em>). <strong>The one-point compactification is the compactification of the real space, not of the complex one.</strong></p>
+<h2 id="the-projective-compactification">The Projective Compactification</h2>
+<p><strong>The projective compactification adds a complex projective line at infinity, and the result is the complex projective plane $\mathbb{CP}^2$, a compact complex manifold of complex dimension two.</strong></p>
+<p><strong>Definition.</strong> The <strong>complex projective plane</strong> is the set of complex lines through the origin of $\mathbb{C}^3$,
+$$
+\mathbb{CP}^2=\bigl(\mathbb{C}^3\setminus\{0\}\bigr)/\mathbb{C}^{\times},
+$$
+with homogeneous coordinates $[Z_0:Z_1:Z_2]$, the class of $(Z_0,Z_1,Z_2)$.</p>
+<p><strong>Proposition (the affine chart).</strong> The map
+$$
+\mathbb{C}^2\longrightarrow\mathbb{CP}^2,\qquad(z_1,z_2)\longmapsto[1:z_1:z_2]
+$$
+is a homeomorphism onto the open set $U_0=\{Z_0\neq0\}$, whose complement is the <strong>line at infinity</strong>
+$$
+L_\infty=\{[0:Z_1:Z_2]\}\cong\mathbb{CP}^1.
+$$
+Hence $\mathbb{CP}^2=\mathbb{C}^2\sqcup\mathbb{CP}^1$ as a set, with $\mathbb{C}^2$ open and dense.</p>
+<p><em>Proof.</em> The map is injective, and its image is exactly $U_0$, since $[Z_0:Z_1:Z_2]=[1:Z_1/Z_0:Z_2/Z_0]$ for $Z_0\neq0$. The complement is the set $Z_0=0$, which is the projectivisation of the plane $Z_0=0\cong\mathbb{C}^2$, hence a projective line. The map is continuous with continuous inverse $[Z_0:Z_1:Z_2]\mapsto(Z_1/Z_0,Z_2/Z_0)$ on $U_0$.</p>
+<p><strong>Proposition (the manifold structure).</strong> The space $\mathbb{CP}^2$ is compact, Hausdorff, connected and second countable, and it is a complex manifold of complex dimension $2$ and real dimension $4$. The three charts $U_i=\{Z_i\neq0\}$ are copies of $\mathbb{C}^2$, with holomorphic transition maps.</p>
+<p><em>Proof.</em> The space is the quotient of the compact sphere $S^5\subset\mathbb{C}^3$ by the compact group $\mathrm{U}(1)$ acting by scalar multiplication, hence compact, Hausdorff and second countable; it is the continuous image of the connected sphere, hence connected. On $U_i$ the coordinates $Z_j/Z_i$ give a chart to $\mathbb{C}^2$, and the transition $Z_k/Z_i=(Z_k/Z_j)(Z_j/Z_i)$ is holomorphic on the overlap.</p>
+<p><strong>Proposition (the line at infinity is a sphere).</strong> The line at infinity $L_\infty$ is homeomorphic to $\mathbb{CP}^1$, hence to $S^2$. It is the set of complex directions of $\mathbb{C}^2$, and it has real codimension $2$ in $\mathbb{CP}^2$.</p>
+<p><em>Proof.</em> The line $L_\infty=\{[0:Z_1:Z_2]\}$ is the projective line of the plane $Z_0=0$, and $\mathbb{CP}^1$ is homeomorphic to $S^2$ (<em>The Subspaces of $\mathbb{C}^2$</em>). Its real dimension is $2$, against the real dimension $4$ of $\mathbb{CP}^2$.</p>
+<p><strong>Theorem (the attaching map is the Hopf map).</strong> The projective compactification is obtained from the closed ball by attaching its boundary sphere $S^3$ to $\mathbb{CP}^1$ along the Hopf map
+$$
+h:S^3\longrightarrow\mathbb{CP}^1,\qquad h(z_1,z_2)=[z_1:z_2].
+$$
+Equivalently, $\mathbb{CP}^2$ is the quotient of the disjoint union $\overline{B}^4\sqcup\mathbb{CP}^1$ that identifies each boundary point $z\in S^3$ with $h(z)$.</p>
+<p><em>Proof.</em> The open ball is $\mathbb{C}^2$, the boundary is $S^3$, and the inclusion $\mathbb{C}^2\to\mathbb{CP}^2$ has the complement $L_\infty=\mathbb{CP}^1$. A sequence $z_n\in\mathbb{C}^2$ with $\lVert z_n\rVert\to\infty$ converges in $\mathbb{CP}^2$ to $[0:w]$ exactly when the classes $[z_n]\in\mathbb{CP}^1$ converge to $[0:w]$, that is when the directions $z_n/\lVert z_n\rVert$ approach the fibre of $h$ over $[0:w]$. Hence the boundary is attached by $h$.</p>
+<p><strong>Remark (the two boundaries).</strong> The closed ball keeps the real directions $S^3$; the projective compactification collapses each circle of real directions inside a complex line to the single complex direction, which is a point of $\mathbb{CP}^1=S^2$. <strong>The Hopf map is exactly the map from real directions to complex directions</strong>, and it is the attaching map of the projective compactification. Its fibres are the circles of real directions that differ by a complex scalar.</p>
+<h2 id="the-cell-decomposition">The Cell Decomposition</h2>
+<p><strong>The projective plane has one cell in each even dimension, which gives its homology, its Euler characteristic and its signature; the sphere $S^4$ has one cell in dimensions zero and four.</strong></p>
+<p><strong>Theorem (the cells of $\mathbb{CP}^2$).</strong> The projective plane decomposes as
+$$
+\mathbb{CP}^2=e^0\sqcup e^2\sqcup e^4,
+$$
+where
+$$
+e^0=\{[0:0:1]\},\qquad e^2=\{[0:1:Z_2]\},\qquad e^4=\{[1:Z_1:Z_2]\},
+$$
+so that $e^{2k}\cong\mathbb{C}^k\cong\mathbb{R}^{2k}$. The closure of $e^{2k}$ is $\mathbb{CP}^k$.</p>
+<p><em>Proof.</em> A point of $\mathbb{CP}^2$ has a first nonzero coordinate; the three possibilities $Z_0\neq0$, $Z_0=0$ and $Z_1\neq0$, and $Z_0=Z_1=0$ and $Z_2\neq0$ give the three cells. The cell $e^{2k}$ is parametrized by the $k$ free coordinates after the first nonzero one, hence is a copy of $\mathbb{C}^k$. The closure of $e^{2k}$ is the set of points whose first $2-k$ coordinates vanish, which is $\mathbb{CP}^k$.</p>
+<p><strong>Corollary (the Euler characteristic).</strong> The Euler characteristic of $\mathbb{CP}^2$ is
+$$
+\chi(\mathbb{CP}^2)=1+1+1=3.
+$$</p>
+<p><em>Proof.</em> The Euler characteristic is the alternating sum of the number of cells in each dimension; there is one cell in dimensions $0$, $2$ and $4$, and none in odd dimensions.</p>
+<p><strong>Theorem (the homology).</strong> The homology of $\mathbb{CP}^2$ with integer coefficients is
+$$
+H_0=\mathbb{Z},\qquad H_1=0,\qquad H_2=\mathbb{Z},\qquad H_3=0,\qquad H_4=\mathbb{Z}.
+$$
+The group $H_2$ is generated by the class of the line at infinity, and $H_4$ by the fundamental class.</p>
+<p><em>Proof.</em> The cellular chain complex has one generator in dimensions $0$, $2$ and $4$, and all boundary maps vanish because there are no cells in odd dimensions. The generator of $H_2$ is the 2-cell, whose closure is $\mathbb{CP}^1=L_\infty$.</p>
+<p><strong>Theorem (the cohomology ring and the signature).</strong> The cohomology ring of $\mathbb{CP}^2$ is
+$$
+H^{*}(\mathbb{CP}^2;\mathbb{Z})=\mathbb{Z}[\alpha]/(\alpha^3),\qquad \deg\alpha=2,
+$$
+where $\alpha$ is the class dual to a line. Its square is the class of a point, evaluated by $\alpha^2([\mathbb{CP}^2])=1$. The intersection form on $H^2(\mathbb{CP}^2;\mathbb{R})$ is the $1\times1$ matrix $(1)$, and the signature of $\mathbb{CP}^2$ is $1$.</p>
+<p><em>Proof.</em> The ring is generated by the hyperplane class $\alpha$, and $\alpha^3=0$ because there is no cohomology in degree $6$. The product $\alpha^2$ is dual to the intersection of two generic lines, which is one point; hence $\alpha^2([\mathbb{CP}^2])=1$. The intersection form is therefore $(1)$, of signature $1$.</p>
+<p><strong>Theorem (the sphere).</strong> The sphere $S^4$ has the cell decomposition $S^4=e^0\cup e^4$, homology
+$$
+H_0=\mathbb{Z},\qquad H_1=H_2=H_3=0,\qquad H_4=\mathbb{Z},
+$$
+Euler characteristic $2$, and signature $0$.</p>
+<p><em>Proof.</em> The sphere is the boundary of a 5-ball, with one 0-cell and one 4-cell; the boundary maps vanish; the intersection form on $H^2(S^4;\mathbb{R})=0$ is trivial.</p>
+<p>The two decompositions are compared below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Invariant</th>
+<th>$S^4$</th>
+<th>$\mathbb{CP}^2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cells</td>
+<td>$e^0\cup e^4$</td>
+<td>$e^0\cup e^2\cup e^4$</td>
+</tr>
+<tr>
+<td>$H_0$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$H_1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$H_2$</td>
+<td>$0$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$H_3$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$H_4$</td>
+<td>$\mathbb{Z}$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>Euler characteristic</td>
+<td>$2$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>signature</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the two attaching maps).</strong> Both spaces are built from a 4-cell. In $S^4$ the boundary $S^3$ of the 4-cell is collapsed to a point, so the attaching map is constant. In $\mathbb{CP}^2$ the boundary is attached to the 2-cell $L_\infty$ by the Hopf map, and the Hopf map is essential. <strong>The 2-cell is what gives $H_2=\mathbb{Z}$; the Hopf attaching map is what makes $\alpha^2=1$ and the signature $1$.</strong> The next article computes the Hopf map and its Hopf invariant.</p>
+<h2 id="the-line-at-infinity">The Line at Infinity</h2>
+<p><strong>The line at infinity is a complex projective line, hence a two-sphere; it records the complex directions of $\mathbb{C}^2$, and it is the boundary that the one-point compactification replaces by a point.</strong></p>
+<p>Each point $[0:Z_1:Z_2]$ of $L_\infty$ is the complex line $\mathbb{C}(Z_1,Z_2)\subset\mathbb{C}^2$, that is a complex direction. The affine line
+$$
+a z_1+b z_2=c,\qquad (a,b)\neq(0,0),
+$$
+has closure
+$$
+aZ_1+bZ_2=cZ_0
+$$
+in $\mathbb{CP}^2$, and its point at infinity is $[0:b:-a]$, the direction of the line. Two affine lines are parallel exactly when their points at infinity coincide, so <strong>parallel lines meet at infinity, and every two distinct projective lines meet in exactly one point.</strong></p>
+<p><strong>Proposition (directions: real against complex).</strong> The set of real rays of $\mathbb{C}^2$ is $S^3$; the set of complex lines is $\mathbb{CP}^1=S^2$; and the map between them is the Hopf map $h(z)=[z_1:z_2]$. Its fibre over a complex line is the circle of real rays contained in that line.</p>
+<p><em>Proof.</em> A real ray is a point of $S^3$. A complex line is a point of $\mathbb{CP}^1$. The map $h$ sends a real ray to the complex line it spans, and the fibre is the set of real rays in that complex line, a circle.</p>
+<p><strong>Remark (what the two compactifications add).</strong> The one-point compactification adds one point, which is the common limit of all directions; the projective compactification adds one point for each complex direction, that is a two-sphere. <strong>The boundary of the projective compactification is the space of complex directions, and the boundary of the one-point compactification is the space of no direction at all.</strong> This is the precise sense in which the projective compactification is finer.</p>
+<p><strong>Remark (the line at infinity is not a boundary in the manifold sense).</strong> The set $L_\infty$ is a complex submanifold of real codimension $2$, not the boundary of a manifold with boundary. <strong>The compactification is a closed manifold; the line at infinity is a submanifold inside it</strong>, and the complement $\mathbb{CP}^2\setminus L_\infty=\mathbb{C}^2$ is open and dense. The closed ball is the only one of the three spaces that has a genuine boundary.</p>
+<h2 id="why-the-two-are-not-homeomorphic">Why the Two Are Not Homeomorphic</h2>
+<p><strong>The sphere $S^4$ and the projective plane $\mathbb{CP}^2$ are both compact four-dimensional manifolds containing $\mathbb{C}^2$ densely, and they are not homeomorphic: their second homology groups differ.</strong></p>
+<p><strong>Theorem (the obstruction).</strong> The groups $H_2(S^4;\mathbb{Z})=0$ and $H_2(\mathbb{CP}^2;\mathbb{Z})=\mathbb{Z}$ are not isomorphic, so there is no homeomorphism $S^4\to\mathbb{CP}^2$.</p>
+<p><em>Proof.</em> A homeomorphism induces an isomorphism on homology; the two groups differ.</p>
+<p><strong>Corollary (the other invariants).</strong> The two spaces also differ in Euler characteristic, $2$ against $3$, in signature, $0$ against $1$, and in the second homotopy group, $0$ against $\mathbb{Z}$. Any one of these separates them.</p>
+<p><em>Proof.</em> These are homotopy invariants, computed above.</p>
+<p><strong>Theorem (the identity extends one way only).</strong> The identity of $\mathbb{C}^2$ extends to a continuous surjection
+$$
+\pi:\mathbb{CP}^2\longrightarrow S^4
+$$
+that collapses the line at infinity to the point at infinity. It does not extend to a continuous map $S^4\to\mathbb{CP}^2$.</p>
+<p><em>Proof.</em> Define $\pi([1:z_1:z_2])=(z_1,z_2)$ and $\pi([0:Z_1:Z_2])=\infty$. On the affine chart $\pi$ is the identity, hence continuous. At a point of $L_\infty$, a sequence $[1:z_1^n:z_2^n]$ converging to $[0:Z_1:Z_2]$ has $\lVert(z_1^n,z_2^n)\rVert\to\infty$, so $\pi$ sends the sequence to $\infty$; hence $\pi$ is continuous. For the second statement, suppose $F:S^4\to\mathbb{CP}^2$ extends the identity. The sequences $(n,0)$ and $(0,n)$ in $\mathbb{C}^2$ both tend to $\infty$ in $S^4$, so
+$$
+F(\infty)=\lim_{n\to\infty}[1:n:0]=[0:1:0],\qquad F(\infty)=\lim_{n\to\infty}[1:0:n]=[0:0:1],
+$$
+which is impossible.</p>
+<p><strong>Remark (the meaning of the asymmetry).</strong> The projective compactification is finer than the one-point compactification: it separates the directions that the one-point compactification identifies. <strong>The collapse map $\pi$ is the statement that $S^4$ is a quotient of $\mathbb{CP}^2$</strong>, and the failure of the reverse extension is the statement that the directions cannot be recovered from the one-point compactification.</p>
+<p><strong>Remark (the complex structures).</strong> The projective plane is a complex manifold, and the one-point compactification is not even almost complex. <strong>The complex structure of $\mathbb{C}^2$ extends to $\mathbb{CP}^2$ and does not extend to $S^4$.</strong> This is the deepest difference between the two compactifications: the projective one is the holomorphic compactification, the one-point one is the real compactification.</p>
+<p>The two spaces are compared below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>$S^4$</th>
+<th>$\mathbb{CP}^2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real dimension</td>
+<td>$4$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>compact</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>connected</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>simply connected</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\pi_2$</td>
+<td>$0$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$H_2$</td>
+<td>$0$</td>
+<td>$\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>Euler characteristic</td>
+<td>$2$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>signature</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>almost complex</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>added boundary</td>
+<td>a point</td>
+<td>$\mathbb{CP}^1=S^2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The one-point compactification of $\mathbb{C}^2$ adds a single point and is the sphere $S^4$; it is the smallest compactification, and every compactification maps onto it. The projective compactification adds a complex projective line and is the projective plane $\mathbb{CP}^2$; it is a compact complex manifold of real dimension $4$, with $\mathbb{CP}^2=\mathbb{C}^2\sqcup\mathbb{CP}^1$ and the line at infinity a two-sphere of complex directions. The closed ball is the common model: it keeps the real-direction sphere $S^3$, the one-point compactification collapses it to a point, and the projective compactification attaches it to $\mathbb{CP}^1$ by the Hopf map.</p>
+<p>The cell decompositions are $\mathbb{CP}^2=e^0\cup e^2\cup e^4$ and $S^4=e^0\cup e^4$. Hence $\mathbb{CP}^2$ has homology $\mathbb{Z}$ in degrees $0$, $2$ and $4$, Euler characteristic $3$, cohomology ring $\mathbb{Z}[\alpha]/(\alpha^3)$ and signature $1$; the sphere has homology $\mathbb{Z}$ in degrees $0$ and $4$, Euler characteristic $2$ and signature $0$. The two are not homeomorphic, because $H_2$ is $\mathbb{Z}$ against $0$; the same separation is read on $\pi_2$, on the Euler characteristic and on the signature. The identity of $\mathbb{C}^2$ extends to a continuous surjection $\mathbb{CP}^2\to S^4$ collapsing the line at infinity, but not to a map $S^4\to\mathbb{CP}^2$, because the limit at infinity in the projective plane depends on the direction. The projective compactification is holomorphic, the one-point compactification is not even almost complex.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X^{+}=X\cup\{\infty\}$</td>
+<td>the one-point compactification</td>
+</tr>
+<tr>
+<td>$S^4$</td>
+<td>the one-point compactification of $\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^2$</td>
+<td>the projective plane, the space of complex lines in $\mathbb{C}^3$</td>
+</tr>
+<tr>
+<td>$[Z_0:Z_1:Z_2]$</td>
+<td>homogeneous coordinates on $\mathbb{CP}^2$</td>
+</tr>
+<tr>
+<td>$U_0=\{Z_0\neq0\}$</td>
+<td>the affine chart, a copy of $\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$L_\infty=\{[0:Z_1:Z_2]\}$</td>
+<td>the line at infinity, a copy of $\mathbb{CP}^1=S^2$</td>
+</tr>
+<tr>
+<td>$e^{2k}$</td>
+<td>the cell of real dimension $2k$, a copy of $\mathbb{C}^k$</td>
+</tr>
+<tr>
+<td>$\chi$</td>
+<td>the Euler characteristic</td>
+</tr>
+<tr>
+<td>$\alpha\in H^2(\mathbb{CP}^2;\mathbb{Z})$</td>
+<td>the hyperplane class, with $\alpha^3=0$ and $\alpha^2=1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-topology-of-the-complex-two-space.html">The Topology of $\mathbb{C}^2$</a>, the previous article, for the space, the ball and the sphere.</li>
+<li><a href="the-unit-sphere-and-the-hopf-fibration.html">The Unit Sphere and the Hopf Fibration</a>, the next article, for the Hopf map that attaches the boundary of the projective compactification.</li>
+<li><a href="the-subspaces-of-the-complex-two-space.html">The Subspaces of $\mathbb{C}^2$</a>, for the projective line and the complex directions.</li>
+<li><a href="projective-geometry.html">Projective Geometry</a>, for the projective plane, duality and the line at infinity in general.</li>
+<li><a href="grassmannians-and-stiefel-manifolds.html">Grassmannians and Stiefel Manifolds</a>, for the Grassmannians and the cell decompositions of the projective spaces.</li>
+<li><a href="simplicial-and-singular-homology.html">Simplicial and Singular Homology</a>, for the cellular homology used in the computations.</li>
+<li><a href="characteristic-classes.html">Characteristic Classes</a>, for the Chern classes and the identity $c_1^2=2\chi+3\sigma$ used in the remark on $S^4$.</li>
+<li><a href="real-topology.html">Real Topology</a>, for the one-point compactification of $\mathbb{R}^n$ and stereographic projection.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

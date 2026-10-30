@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Three Canonical Forms on $\mathbb{C}^2$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-three-canonical-forms-on-math0"><strong>The Three Canonical Forms on $\mathbb{C}^2$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex two-space carries three canonical forms: the Hermitian form $H$, the complex bilinear symmetric form $B$ and the complex bilinear alternating form $\omega$. They are defined in <em>Complex Two-Space</em> and announced there; this article computes them. It gives their Gram matrices, their symmetry and nondegeneracy, their isotropic sets, their real and imaginary parts, the relations among them, and the distinction between $\operatorname{Im}H$ and $\omega$, which is the point at which the three are most often confused.</p>
+<p>The article treats the forms on the space alone. The isometry groups are <em>The Classical Groups of $\mathbb{C}^2$</em>; the Kähler structure they define is <em>The Flat Kähler Structure of $\mathbb{C}^2$</em>; the real signatures are also read in <em>The Realification of $\mathbb{C}^2$</em>, and the computations are repeated here only where the complex statement needs them. The general theory of bilinear and sesquilinear forms is <em>Bilinear Forms</em> and <em>The Sesquilinear Structure of the Endomorphism Algebra</em>; this article does not restate it.</p>
+<p><strong>The three forms are of three different kinds and are not three normalisations of one object.</strong> $H$ is sesquilinear and definite; $B$ is symmetric and indefinite; $\omega$ is alternating and nondegenerate. The first carries the metric, the second the isotropic cone, the third the holomorphic symplectic structure. One table at the end of the article collects them.</p>
+<h2 id="the-hermitian-form">The Hermitian Form</h2>
+<p><strong>The Hermitian form is the positive definite sesquilinear form of the space; its Gram matrix is the identity and its norm is the Euclidean norm.</strong></p>
+<p><strong>Definition.</strong> The <strong>Hermitian form</strong> is
+$$
+H(z,w)=z_1\overline{w_1}+z_2\overline{w_2}.
+$$</p>
+<p><strong>Proposition (the Gram matrix).</strong> In the complex basis $e_1,e_2$ the Gram matrix is the identity,
+$$
+\bigl(H(e_j,e_k)\bigr)_{j,k}=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> $H(e_1,e_1)=1$, $H(e_1,e_2)=0$, $H(e_2,e_1)=0$, $H(e_2,e_2)=1$.</p>
+<p><strong>Proposition (sesquilinearity and positivity).</strong> The form is linear in the first slot and conjugate-linear in the second,
+$$
+H(\lambda z,w)=\lambda H(z,w),\qquad H(z,\lambda w)=\overline{\lambda}H(z,w),
+$$
+it is Hermitian, $H(w,z)=\overline{H(z,w)}$, and it is positive definite, $H(z,z)>0$ for $z\neq0$.</p>
+<p><em>Proof.</em> The two linearity rules are read on the definition. The Hermitian symmetry is the identity $\overline{z_k\overline{w_k}}=w_k\overline{z_k}$ summed over $k$. The positivity is $\sum_k\lvert z_k\rvert^2$, a sum of non-negative terms, zero only when both coordinates vanish.</p>
+<p><strong>Remark (the only definite form of the three).</strong> The form $H$ is the only one of the three whose isotropic set is the origin. <strong>Its signature over $\mathbb{R}$ is $(4,0)$, and it is the form that defines the topology of the space.</strong> The other two have non-trivial isotropic sets and indefinite real pictures; their role is geometric and not metric.</p>
+<p>The real and imaginary parts of $H$ are computed in <em>The Realification of $\mathbb{C}^2$</em>: the real part is the Euclidean metric $g$ of signature $(4,0)$ and the imaginary part is the symplectic form $-\Omega$, where $\Omega=\sum_k dx_k\wedge dy_k$ is the Kähler form. The relation is
+$$
+H=g-i\Omega,\qquad \Omega(z,w)=g(Jz,w),
+$$
+and it is the reason the Hermitian form carries both the metric and the symplectic structure of the space.</p>
+<h2 id="the-complex-bilinear-form-math36">The Complex Bilinear Form $B$</h2>
+<p><strong>The complex bilinear form is symmetric and nondegenerate; its isotropic set is the union of two complex lines, and in suitable holomorphic coordinates it is the product $uv$.</strong></p>
+<p><strong>Definition.</strong> The <strong>complex bilinear form</strong> is
+$$
+B(z,w)=z_1w_1+z_2w_2.
+$$</p>
+<p><strong>Proposition (symmetry, Gram matrix and nondegeneracy).</strong> The form is $\mathbb{C}$-bilinear and symmetric, $B(w,z)=B(z,w)$; its Gram matrix in the complex basis is the identity; and it is nondegenerate.</p>
+<p><em>Proof.</em> Bilinearity and symmetry are read on the definition. The Gram matrix is $B(e_j,e_k)=\delta_{jk}$, of determinant $1$, hence invertible, which is nondegeneracy.</p>
+<p><strong>Theorem (the isotropic cone).</strong> The isotropic set of $B$ is the union of the two complex lines
+$$
+L_+=\{z:z_1=iz_2\},\qquad L_-=\{z:z_1=-iz_2\},
+$$
+and the two lines meet only at the origin.</p>
+<p><em>Proof.</em> $B(z,z)=z_1^2+z_2^2=(z_1+iz_2)(z_1-iz_2)$. The field $\mathbb{C}$ is a domain, so the product vanishes exactly when one factor does, that is $z_1=-iz_2$ or $z_1=iz_2$. A point of both lines satisfies $2z_1=0$ and $2iz_2=0$, hence is the origin.</p>
+<p><strong>Theorem (the normal form $uv$).</strong> In the holomorphic coordinates
+$$
+u=z_1+iz_2,\qquad v=z_1-iz_2,
+$$
+the form is $B=uv$, and the two isotropic lines are the coordinate axes $u=0$ and $v=0$.</p>
+<p><em>Proof.</em> The change of coordinates is invertible, with $z_1=\tfrac12(u+v)$ and $z_2=\tfrac{1}{2i}(u-v)$, and $uv=(z_1+iz_2)(z_1-iz_2)=z_1^2+z_2^2$. The axis $u=0$ is $z_1=-iz_2$, and the axis $v=0$ is $z_1=iz_2$.</p>
+<p><strong>Remark (a hyperbolic form in complex coordinates).</strong> The normal form $B=uv$ is the complex analogue of the hyperbolic form $x^2-y^2$ of the split-complex plane. <strong>The form is indefinite in the strongest sense: over $\mathbb{C}$ it has no signature, because a complex number is not ordered, and its realification has signature $(2,2)$ for both the real and the imaginary part.</strong> The absence of a signature over $\mathbb{C}$ is not a defect of the computation: it is the statement that the form has isotropic vectors in abundance, and a definite form has none.</p>
+<p>The two isotropic lines are complex lines, hence $J$-invariant, but they are selected by $B$ and not by $J$: every complex line is $J$-invariant, and only two of them are isotropic. They are the two points of $\mathbb{CP}^1$ at which the quadric $B=0$ meets the line at infinity (<em>The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$</em>).</p>
+<p><strong>Proposition (the behaviour under $J$).</strong> The form is anti-invariant under the complex structure,
+$$
+B(Jz,Jw)=-B(z,w).
+$$</p>
+<p><em>Proof.</em> $B(iz,iw)=i^2B(z,w)=-B(z,w)$.</p>
+<p><strong>Remark (two different isometry groups).</strong> The unitary group preserves $H$, and the complex orthogonal group $\mathrm{O}(2,\mathbb{C})$ preserves $B$. The two groups are different, because $U^{*}U=I$ does not imply $U^{T}U=I$: a unitary matrix need not be complex orthogonal. <strong>Their intersection is the real orthogonal group $\mathrm{O}(2)$</strong>, the matrices that are at once real and unitary (<em>The Classical Groups of $\mathbb{C}^2$</em>).</p>
+<h2 id="the-holomorphic-symplectic-form-math85">The Holomorphic Symplectic Form $\omega$</h2>
+<p><strong>The holomorphic symplectic form is alternating and nondegenerate; it vanishes on every complex line, and it is the form whose powers give the complex volume.</strong></p>
+<p><strong>Definition.</strong> The <strong>holomorphic symplectic form</strong> is
+$$
+\omega(z,w)=z_1w_2-z_2w_1.
+$$</p>
+<p><strong>Proposition (alternation, Gram matrix and nondegeneracy).</strong> The form is $\mathbb{C}$-bilinear and alternating, $\omega(w,z)=-\omega(z,w)$; its Gram matrix in the complex basis is
+$$
+\bigl(\omega(e_j,e_k)\bigr)_{j,k}=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+$$
+of determinant $1$; and it is nondegenerate.</p>
+<p><em>Proof.</em> The alternation is the exchange of the two coordinates. The entries are $\omega(e_1,e_2)=1$, $\omega(e_2,e_1)=-1$ and the two diagonal entries $\omega(e_k,e_k)=0$. The determinant is $1$.</p>
+<p><strong>Proposition (the form is decomposable).</strong> As a complex $2$-form, $\omega=dz_1\wedge dz_2$; in particular $\omega\wedge\omega=0$ and
+$$
+\omega\wedge\overline{\omega}=2\,\Omega^2=4\,dx_1\wedge dy_1\wedge dx_2\wedge dy_2,
+$$
+where $\Omega=\sum_k dx_k\wedge dy_k$ is the Kähler form.</p>
+<p><em>Proof.</em> The evaluation of $dz_1\wedge dz_2$ on a pair $(z,w)$ is $z_1w_2-z_2w_1$. The square of a $2$-form in two complex variables vanishes because there are only two holomorphic directions. For the last identity, $dz_k\wedge d\overline{z_k}=-2i\,dx_k\wedge dy_k$, and the product of the two gives the coefficient $4$ after the sign of the reordering; the computation is one line in the real basis.</p>
+<p><strong>Theorem (the isotropic subspaces).</strong> For $z\neq0$, $\omega(z,w)=0$ exactly when $w$ is a complex multiple of $z$. Hence the complex subspaces isotropic for $\omega$ are exactly the complex lines, and every complex line is isotropic.</p>
+<p><em>Proof.</em> If $w=\lambda z$, the alternation gives $\omega(z,\lambda z)=\lambda\omega(z,z)=0$. Conversely, suppose $\omega(z,w)=0$ with $z\neq0$. If $z_2\neq0$, the equation reads $w_1=(z_1/z_2)w_2$, so $w=(w_2/z_2)\,z$; the case $z_2=0$ gives $z_1\neq0$ and $\omega(z,w)=z_1w_2=0$, so $w_2=0$ and $w=(w_1/z_1)\,z$.</p>
+<p><strong>Remark (the Lagrangian lines).</strong> A <strong>Lagrangian</strong> subspace of a symplectic space is an isotropic subspace of half the dimension. <strong>In complex dimension two the Lagrangian subspaces of $\omega$ are exactly the complex lines</strong>, and the space of them is $\mathbb{CP}^1$. This is the opposite of the behaviour of the Kähler form, on which the complex lines are symplectic and the Lagrangian planes are the totally real ones (<em>The Subspaces of $\mathbb{C}^2$</em>).</p>
+<p><strong>Proposition (the behaviour under $J$).</strong> The form is anti-invariant under the complex structure,
+$$
+\omega(Jz,Jw)=-\omega(z,w),
+$$
+so both $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ change sign under $J$.</p>
+<p><em>Proof.</em> $\omega(iz,iw)=i^2\omega(z,w)=-\omega(z,w)$, and the real and imaginary parts inherit the sign.</p>
+<p><strong>Remark (the two real symplectic forms).</strong> The real and imaginary parts of $\omega$ are
+$$
+\operatorname{Re}\omega=dx_1\wedge dx_2-dy_1\wedge dy_2,\qquad \operatorname{Im}\omega=dx_1\wedge dy_2-dx_2\wedge dy_1,
+$$
+both nondegenerate, both anti-invariant under $J$. <strong>They are a pair of symplectic forms orthogonal under the wedge pairing</strong>, $\operatorname{Re}\omega\wedge\operatorname{Im}\omega=0$, and their squares are equal, $\operatorname{Re}\omega\wedge\operatorname{Re}\omega=\operatorname{Im}\omega\wedge\operatorname{Im}\omega$. No one of them is the Kähler form.</p>
+<h2 id="the-relations-among-the-three">The Relations among the Three</h2>
+<p><strong>The three forms are related by the conjugation of the coefficients and by the Lagrange identity; the relations are algebraic and do not make any one of them a function of the others.</strong></p>
+<p><strong>Proposition (the Hermitian form is the bilinear form on the conjugate).</strong> For $z,w\in\mathbb{C}^2$,
+$$
+H(z,w)=B(z,\overline{w}),
+$$
+where $\overline{w}=(\overline{w_1},\overline{w_2})$ is the coefficientwise conjugate.</p>
+<p><em>Proof.</em> $B(z,\overline{w})=z_1\overline{w_1}+z_2\overline{w_2}=H(z,w)$.</p>
+<p><strong>Proposition (the Lagrange identity).</strong> For all $z,w\in\mathbb{C}^2$,
+$$
+B(z,w)^2+\omega(z,w)^2=B(z,z)\,B(w,w).
+$$</p>
+<p><em>Proof.</em> Write $a=z_1$, $b=z_2$, $c=w_1$, $d=w_2$. The identity is $(ac+bd)^2+(ad-bc)^2=(a^2+b^2)(c^2+d^2)$, which is the multiplicativity of the complex modulus read on the two complex numbers $a+ib$ and $c+id$.</p>
+<p><strong>Proposition (the normal forms in the coordinates $u,v$).</strong> In the coordinates $u=z_1+iz_2$ and $v=z_1-iz_2$,
+$$
+B=uv,\qquad \omega=\tfrac{i}{2}(uv'-vu'),\qquad H=\tfrac12\bigl(u\overline{u'}+v\overline{v'}\bigr),
+$$
+where $u',v'$ are the coordinates of the second argument.</p>
+<p><em>Proof.</em> The first is the theorem of the previous section. For the second, $uv'-vu'=-2i(z_1w_2-z_2w_1)=-2i\omega$. For the third, $u\overline{u'}+v\overline{v'}=2(z_1\overline{w_1}+z_2\overline{w_2})=2H$.</p>
+<p><strong>Remark (the three forms in one coordinate system).</strong> In the coordinates $u,v$ the three forms are the product, the symplectic form and the Euclidean metric, and the space is the product of two lines. <strong>The coordinates $u,v$ are holomorphic, so the types of the forms are preserved: $B$ stays symmetric, $\omega$ stays alternating and $H$ stays Hermitian.</strong> The normal form displays the isotropic cone as the union of the axes and the Lagrangian lines as the axes themselves.</p>
+<h2 id="the-distinction-between-math162-and-math163">The Distinction between $\operatorname{Im}H$ and $\omega$</h2>
+<p><strong>The forms $\operatorname{Im}H$ and $\omega$ are both alternating and both nondegenerate, and they are not the same form; the negative of the first is the Kähler form, the second is the holomorphic symplectic form.</strong></p>
+<p>The two are compared in the table below. The comparison is the answer to the most frequent confusion of the category.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Property</th>
+<th>$\operatorname{Im}H$</th>
+<th>$\omega$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>valued in</td>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{C}$</td>
+</tr>
+<tr>
+<td>type as a complex form</td>
+<td>$(1,1)$</td>
+<td>$(2,0)$</td>
+</tr>
+<tr>
+<td>behaviour under $J$</td>
+<td>invariant: $\operatorname{Im}H(Jz,Jw)=\operatorname{Im}H(z,w)$</td>
+<td>anti-invariant: $\omega(Jz,Jw)=-\omega(z,w)$</td>
+</tr>
+<tr>
+<td>on a complex line</td>
+<td>minus the area form, nondegenerate</td>
+<td>zero</td>
+</tr>
+<tr>
+<td>Lagrangian subspaces</td>
+<td>the $\Omega$-Lagrangian planes: a $3$-parameter family inside the totally real planes</td>
+<td>the complex lines, $\mathbb{CP}^1$</td>
+</tr>
+<tr>
+<td>role</td>
+<td>Kähler form, metric and symplectic structure</td>
+<td>holomorphic volume form</td>
+</tr>
+<tr>
+<td>relation to the metric</td>
+<td>$\Omega=-\operatorname{Im}H=g(J\cdot,\cdot)$</td>
+<td>$\omega\wedge\overline{\omega}=2\Omega^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the two are not proportional).</strong> There is no constant $\lambda\in\mathbb{C}$ with $\operatorname{Im}H=\lambda\omega$; the two forms have different values on the same pair and different isotropic subspaces.</p>
+<p><em>Proof.</em> On the pair $z=(1,0)$, $w=(i,0)$ one has $\operatorname{Im}H(z,w)=-1$ and $\omega(z,w)=0$. On the pair $z=(1,0)$, $w=(0,1)$ one has $\operatorname{Im}H(z,w)=0$ and $\omega(z,w)=1$. A proportional pair cannot take a zero and a non-zero value on the same pair, so no constant exists.</p>
+<p><strong>Remark (the geometric content of the distinction).</strong> The form $\operatorname{Im}H$ pairs a vector with the conjugate of another; the form $\omega$ pairs two vectors directly. <strong>The first sees the complex structure and is invariant under it; the second sees the holomorphic structure and changes sign under it.</strong> On a complex line, the first measures area and the second vanishes. This is why the Kähler form is $\Omega=-\operatorname{Im}H$ and the holomorphic symplectic form is $\omega$, and why the two are never substituted one for the other.</p>
+<p><strong>Remark (the consequence for the Lagrangian planes).</strong> A plane that is Lagrangian for $\Omega$ cannot contain a complex line, because $\Omega$ is nondegenerate on every complex line; hence it is totally real. <strong>The $\Omega$-Lagrangian planes are a $3$-parameter family inside the $4$-parameter family of totally real planes, and a complex line is never $\Omega$-Lagrangian.</strong> The two notions of Lagrangian therefore select different classes of planes: the $\omega$-Lagrangian lines are complex, the $\Omega$-Lagrangian planes are totally real.</p>
+<h2 id="gram-matrices-and-the-real-pictures">Gram Matrices and the Real Pictures</h2>
+<p><strong>The Gram matrices in the complex basis are the identity, the identity and the standard symplectic matrix; in the real basis the six real forms take the normal forms collected below.</strong></p>
+<p><strong>Theorem (the complex Gram matrices).</strong> In the complex basis $e_1,e_2$,
+$$
+G_H=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad G_B=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad G_\omega=\begin{pmatrix}0&1\\-1&0\end{pmatrix}.
+$$</p>
+<p><em>Proof.</em> The entries are computed in the three propositions above.</p>
+<p>The real pictures are read in the real basis $e_1,ie_1,e_2,ie_2$, in this order.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Real form</th>
+<th>Matrix, up to the order of the blocks</th>
+<th>Signature or rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Re}H$</td>
+<td>$I_4$</td>
+<td>$(4,0)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Im}H$</td>
+<td>$\operatorname{diag}(J_0,J_0)$ with $J_0=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$</td>
+<td>symplectic, rank $4$</td>
+</tr>
+<tr>
+<td>$\operatorname{Re}B$</td>
+<td>$\operatorname{diag}(1,-1,1,-1)$</td>
+<td>$(2,2)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Im}B$</td>
+<td>two blocks $\begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>$(2,2)$</td>
+</tr>
+<tr>
+<td>$\operatorname{Re}\omega$</td>
+<td>$\begin{pmatrix}0&A\\-A&0\end{pmatrix}$, $A=\operatorname{diag}(1,-1)$</td>
+<td>symplectic, rank $4$</td>
+</tr>
+<tr>
+<td>$\operatorname{Im}\omega$</td>
+<td>$\begin{pmatrix}0&B\\-B&0\end{pmatrix}$, $B=\begin{pmatrix}0&1\\1&0\end{pmatrix}$</td>
+<td>symplectic, rank $4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Remark (the sign of the Kähler form).</strong> The form $\operatorname{Im}H$ is $-\Omega$, with $\Omega=\sum_k dx_k\wedge dy_k$. <strong>The sign is not a convention of notation but the statement that $\Omega$ is positive on the complex lines</strong>: on the line spanned by $e_1$, $\Omega(e_1,ie_1)=1$, while $\operatorname{Im}H(e_1,ie_1)=-1$. The Kähler form is taken positive, and the Hermitian form is $H=g-i\Omega$.</p>
+<h2 id="summary">Summary</h2>
+<p>The space $\mathbb{C}^2$ carries three canonical forms. The Hermitian form $H(z,w)=\sum_k z_k\overline{w_k}$ is sesquilinear, positive definite, of Gram matrix $I_2$ and of real signature $(4,0)$; it gives the Euclidean norm and, with the complex structure, the decomposition $H=g-i\Omega$ into the metric and the Kähler form. The complex bilinear form $B(z,w)=\sum_k z_kw_k$ is symmetric, nondegenerate and of Gram matrix $I_2$; its isotropic set is the union of the two complex lines $z_1=\pm iz_2$, and in the holomorphic coordinates $u=z_1+iz_2$, $v=z_1-iz_2$ it is the product $B=uv$. The holomorphic symplectic form $\omega(z,w)=z_1w_2-z_2w_1$ is alternating, nondegenerate and of Gram matrix $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$; it vanishes on every complex line, so the complex lines are its Lagrangian subspaces, and its square is zero while $\omega\wedge\overline{\omega}=2\Omega^2$.</p>
+<p>The three are related by $H(z,w)=B(z,\overline{w})$, by the Lagrange identity $B(z,w)^2+\omega(z,w)^2=B(z,z)B(w,w)$, and by their normal forms in the coordinates $u,v$. The distinction between $\operatorname{Im}H$ and $\omega$ is the central one: $\operatorname{Im}H$ is real, of type $(1,1)$, invariant under $J$, nondegenerate on every complex line and equal to $-\Omega$; $\omega$ is complex, of type $(2,0)$, anti-invariant under $J$, zero on every complex line and related to $\Omega$ only by the quadratic identity $\omega\wedge\overline{\omega}=2\Omega^2$. The Kähler form is $\Omega=-\operatorname{Im}H$, never $\omega$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H(z,w)=\sum_k z_k\overline{w_k}$</td>
+<td>the Hermitian form, Gram matrix $I_2$, signature $(4,0)$</td>
+</tr>
+<tr>
+<td>$g=\operatorname{Re}H$</td>
+<td>the Euclidean metric</td>
+</tr>
+<tr>
+<td>$\Omega=-\operatorname{Im}H=\sum_k dx_k\wedge dy_k$</td>
+<td>the Kähler form, positive on the complex lines</td>
+</tr>
+<tr>
+<td>$B(z,w)=\sum_k z_kw_k$</td>
+<td>the complex bilinear symmetric form, Gram matrix $I_2$</td>
+</tr>
+<tr>
+<td>$L_\pm=\{z_1=\pm iz_2\}$</td>
+<td>the two isotropic lines of $B$</td>
+</tr>
+<tr>
+<td>$u=z_1+iz_2$, $v=z_1-iz_2$</td>
+<td>the holomorphic coordinates in which $B=uv$</td>
+</tr>
+<tr>
+<td>$\omega(z,w)=z_1w_2-z_2w_1=dz_1\wedge dz_2$</td>
+<td>the holomorphic symplectic form, Gram matrix $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$\omega\wedge\overline{\omega}=2\Omega^2$</td>
+<td>the relation between the holomorphic and the Kähler forms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-complex-two-space.html">Complex Two-Space</a>, the previous article, for the definitions of the forms and the space.</li>
+<li><a href="the-realification-of-the-complex-two-space.html">The Realification of $\mathbb{C}^2$</a>, for the real and imaginary parts, the signatures and the dictionary.</li>
+<li><a href="the-subspaces-of-the-complex-two-space.html">The Subspaces of $\mathbb{C}^2$</a>, for the isotropic lines, the Lagrangian lines and the Lagrangian planes.</li>
+<li><a href="the-isotropic-cone-of-the-bilinear-form.html">The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$</a>, for the cone as a real object and its image in $\mathbb{CP}^1$.</li>
+<li><a href="the-flat-kahler-structure-of-the-complex-two-space.html">The Flat Kähler Structure of $\mathbb{C}^2$</a>, for the metric, the Kähler form and the isometries.</li>
+<li><a href="the-classical-groups-of-the-complex-two-space.html">The Classical Groups of $\mathbb{C}^2$</a>, for the groups that preserve each form.</li>
+<li><a href="bilinear-forms.html">Bilinear Forms</a>, for the general theory of symmetric and alternating forms.</li>
+<li><a href="the-sesquilinear-structure-of-the-endomorphism-algebra.html">The Sesquilinear Structure of the Endomorphism Algebra</a>, for the general theory of Hermitian forms.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
