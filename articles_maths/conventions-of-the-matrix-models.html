@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conventions of the Representations — Biquaternion Universe</title>
+  <title>Conventions of the Matrix Models — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,11 +68,11 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="conventions-of-the-representations"><strong>Conventions of the Representations</strong></h1>
+        <h1 id="conventions-of-the-matrix-models"><strong>Conventions of the Matrix Models</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The algebra is read in matrices in two ways, and the two answer different questions. The <strong>$2\times2$ isomorphism</strong> $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a complex matrix of the algebra's own size; the <strong>$4\times4$ regular representation</strong> reads multiplication as a linear map on the algebra taken as a complex vector space, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$.</p>
 <p>The algebra is $M_2(\mathbb{C})$ and it is never $M_4(\mathbb{C})$. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and the retired label $M_4(\mathbb{C})_L$ is read as $\mathbb{B}_L$.</p>
-<p>The order is: the table of objects, the $2\times2$ isomorphism with its four forced images and its trace and determinant, the $4\times4$ regular representation in the canonical Peirce frame. The article assumes the base of <em>Conventions in Mathematics</em> and the Peirce convention of <em>Conventions of the Special Elements</em>, whose standard pair fixes the frame.</p>
+<p>The order is: the table of objects, the $2\times2$ isomorphism with its four forced images and its trace and determinant, the $4\times4$ regular representation in the canonical Peirce frame. The article assumes the base of <em>Conventions in Mathematics</em> and the Peirce convention of <em>Conventions of the Special Elements and the Peirce Decomposition</em>, whose standard pair fixes the frame.</p>
 <h2 id="the-matrix-models">The Matrix Models</h2>
 <p><strong>The biquaternion algebra is $M_2(\mathbb{C})$, and it is never $M_4(\mathbb{C})$.</strong> Two kinds of matrix model read it, and they answer different questions. The <strong>isomorphism</strong> $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a $2\times2$ complex matrix, of the algebra's own size. The <strong>regular representation</strong> reads multiplication as a linear map on the algebra taken as a complex vector space, and its target is $\mathrm{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$; its image is a four-dimensional subspace of that ambient algebra, not the ambient algebra. The two are different representations, not two sizes of one.</p>
 <div class="table-scroll"><table>
@@ -144,7 +144,7 @@ The determinant is multiplicative, which is what makes the matrix model compute 
 <p><strong>The maps.</strong> Left multiplication is the linear map $\rho_L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, and right multiplication is $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The target is the ambient operator algebra $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$.</p>
 <p><strong>The copy is named, the ambient is not.</strong> The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and $\mathbb{B}_R$ is the commutant of $\mathbb{B}_L$ in $M_4(\mathbb{C})$.</p>
 <p>A bare $M_4(\mathbb{C})_{\mathbb{B}}$ means the left copy; the side is $L$ unless written. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is an operator algebra, carries no biquaternion structure and takes no biquaternion name.</p>
-<p><strong>The subscript names the action, not a tensor slot.</strong> $L$ is left multiplication and $R$ is right multiplication, read as on $L_{\tilde Q}$ and $R_{\tilde Q}$ in <em>Conventions of the Operators and the Calculus</em>, §<em>The Operators</em>. In the canonical frame below the left copy is the second tensor factor and the right copy the first, and another choice of frame exchanges the two slots without exchanging the two actions. A subscript naming a slot would therefore change meaning with the frame, and the action does not.</p>
+<p><strong>The subscript names the action, not a tensor slot.</strong> $L$ is left multiplication and $R$ is right multiplication, read as on $L_{\tilde Q}$ and $R_{\tilde Q}$ in <em>Conventions of the Operators and the Differential Calculus</em>, §<em>The Operators</em>. In the canonical frame below the left copy is the second tensor factor and the right copy the first, and another choice of frame exchanges the two slots without exchanging the two actions. A subscript naming a slot would therefore change meaning with the frame, and the action does not.</p>
 <p><strong>The canonical frame is the Peirce frame of the standard pair.</strong> The matrix model fixes the family and the two mixed units,
 $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
@@ -155,7 +155,7 @@ $$
 \tilde\Pi_+^2=\tilde\Pi_+,\quad \tilde\Pi_-^2=\tilde\Pi_-,\quad \tilde\Pi_+\tilde\Pi_-=0,\quad
 \vec\Upsilon_\pm^2=0,\quad \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\quad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+ .
 $$
-So $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_+$ first and those of $\mathbb{B}\tilde\Pi_-$ second. This is the frame of the $\mathsf{M}_2$ model, and it is a choice of frame inside the matrix model. The Peirce convention fixes no family (<em>Conventions of the Special Elements</em>, §<em>The Biquaternion Peirce Convention</em>), and the choice here is not a preferred pair: it is the frame the matrix model is written in.</p>
+So $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_+$ first and those of $\mathbb{B}\tilde\Pi_-$ second. This is the frame of the $\mathsf{M}_2$ model, and it is a choice of frame inside the matrix model. The Peirce convention fixes no family (<em>Conventions of the Special Elements and the Peirce Decomposition</em>, §<em>The Biquaternion Peirce Convention</em>), and the choice here is not a preferred pair: it is the frame the matrix model is written in.</p>
 <p><strong>In this frame the two copies are the two tensor factors.</strong>
 $$
 \rho_L(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),\qquad
@@ -177,7 +177,7 @@ $$
 \det\mathsf{M}_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},\qquad
 \operatorname{tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t .
 $$</p>
-<p><strong>The gamma frame.</strong> The five Dirac generators are two-sided operators of the canonical frame, with $L$ and $R$ the left and right multiplications of <em>Conventions of the Operators and the Calculus</em>, §<em>The Operators</em>:
+<p><strong>The gamma frame.</strong> The five Dirac generators are two-sided operators of the canonical frame, with $L$ and $R$ the left and right multiplications of <em>Conventions of the Operators and the Differential Calculus</em>, §<em>The Operators</em>:
 $$
 \gamma^0=iR_{\vec e_x},\qquad
 \gamma^1=iL_{\vec e_x}R_{\vec e_y},\qquad

@@ -77,14 +77,14 @@
 <h2 id="spin-is-the-casimir-label">Spin Is the Casimir Label</h2>
 <p><strong>The label.</strong> Spin is the highest weight $s$ of the rotation action on a carrier, defined by the Casimir:</p>
 <p>$$
-\tilde J^2=\hbar^2s(s+1)\,e_t .
+\tilde S^2=\hbar^2s(s+1)\,e_t .
 $$</p>
 <p>On an irreducible carrier the Casimir is a scalar, so $s$ is one number for the whole carrier. The number of states is $2s+1$. The spin is a real number, $s\in\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector and not a complex number.</p>
-<p><strong>The direction is a state label.</strong> The component along an axis needs an axis: $J_3=\hbar m$ on the state $|s,m\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.</p>
+<p><strong>The direction is a state label.</strong> The component along an axis needs an axis: $\tilde S_3=\hbar s_z$ on the state $|s,s_z\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.</p>
 <p><strong>The classical picture.</strong> A coherent state $|\vec u\rangle$ of maximal spin along $\vec u$ has</p>
 <p>$$
-\langle\vec J\rangle=\hbar s\,\vec u,\qquad
-\langle\vec J^2\rangle=\hbar^2s(s+1).
+\langle\vec S\rangle=\hbar s\,\vec u,\qquad
+\langle\vec S^2\rangle=\hbar^2s(s+1).
 $$</p>
 <p>The expectation is a vector of length $\hbar s$; the Casimir length is $\hbar\sqrt{s(s+1)}$. The two agree only in the limit $s\gg1$. The vector is a shadow of the representation, not the representation.</p>
 <p><strong>The boundary.</strong> The direction is a continuous coordinate on the sphere of states. The spin is the discrete label of the carrier, and it does not vary with the direction.</p>
@@ -128,7 +128,7 @@ $$</p>
 <p><strong>Why these two and not another pair.</strong> These are the two actions the product supplies without a choice: left multiplication and conjugation. The right action is the mirror of the left and gives the same list. Other actions require extra data, such as a form or a grading, and are not carried by the product alone.</p>
 <h2 id="the-scalar-spin-zero">The Scalar: Spin Zero</h2>
 <p><strong>The carrier.</strong> The centre $Z=\mathbb{C}e_t$ is fixed by conjugation: $u(z e_t)u^{-1}=z e_t$. The Casimir vanishes, the spin is $0$, and the carrier has one state.</p>
-<p><strong>The generator.</strong> $J_k e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.</p>
+<p><strong>The generator.</strong> $\tilde S_k e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.</p>
 <p><strong>The physical interpretation.</strong> A scalar field. The carrier $Z=\mathbb{C}e_t$ is a complex line, two real dimensions; its real form $\mathbb{R}e_t$ is the real scalar of one degree of freedom. The Higgs is the observed spin-zero instance; its internal components are extra data, not a larger spin.</p>
 <p><strong>What the carrier does not carry.</strong> No direction, no polarization, no double-cover sign: a $2\pi$ rotation acts as the identity on $Z$.</p>
 <h2 id="the-spinor-spin-one-half">The Spinor: Spin One Half</h2>
@@ -164,18 +164,18 @@ $$</p>
 \varepsilon_\pm=\mp\tfrac{1}{\sqrt2}(\vec e_x\pm i\vec e_y),\qquad\varepsilon_0=\vec e_z ,
 $$</p>
 <p>the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive.</p>
-<p><strong>The operators.</strong> With $J_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$,</p>
+<p><strong>The operators.</strong> With $\tilde S^{(\mathrm{adj})}_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$,</p>
 <p>$$
-J^2=2\hbar^2\operatorname{id}_V,\qquad
-J_3\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
-J_3\varepsilon_0=0 .
+\tilde S^{(\mathrm{adj})\,2}=2\hbar^2\operatorname{id}_V,\qquad
+\tilde S^{(\mathrm{adj})}_3\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
+\tilde S^{(\mathrm{adj})}_3\varepsilon_0=0 .
 $$</p>
-<p>The Casimir follows from $C=J_3^2+\tfrac12(J_+J_-+J_-J_+)$ and the ladder actions</p>
+<p>The Casimir follows from $C=(\tilde S^{(\mathrm{adj})}_3)^2+\tfrac12(\tilde S^{(\mathrm{adj})}_+\tilde S^{(\mathrm{adj})}_-+\tilde S^{(\mathrm{adj})}_-\tilde S^{(\mathrm{adj})}_+)$ and the ladder actions</p>
 <p>$$
-J_+\varepsilon_-=\sqrt2\,\hbar\,\varepsilon_0,\qquad
-J_+\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_+,\qquad
-J_-\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_0,\qquad
-J_-\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_-,
+\tilde S^{(\mathrm{adj})}_+\varepsilon_-=\sqrt2\,\hbar\,\varepsilon_0,\qquad
+\tilde S^{(\mathrm{adj})}_+\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_+,\qquad
+\tilde S^{(\mathrm{adj})}_-\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_0,\qquad
+\tilde S^{(\mathrm{adj})}_-\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_-,
 $$</p>
 <p>which give $C=2\hbar^2$ on all three states. The value is $\hbar^2s(s+1)$ at $s=1$. There are three states.</p>
 <p><strong>The physical interpretation.</strong> A vector field. In the rest frame of a massive vector the three weights are the three polarizations. For a massless one the longitudinal state is removed and two helicities remain. The photon, the $W^\pm$, the $Z$ and the gluons are the observed instances.</p>
@@ -197,7 +197,7 @@ $$</p>
 <p>$$
 W^\mu=\tfrac12\epsilon^{\mu\nu\rho\sigma}M_{\nu\rho}P_\sigma .
 $$</p>
-<p>In the rest frame $W^0=0$ and $\vec W=mc\vec J$, so $\vec W^2=m^2c^2\hbar^2s(s+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $W^\mu W_\mu=-N\hbar^2s(s+1)=m^2c^2\hbar^2s(s+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.</p>
+<p>In the rest frame $W^0=0$ and $\vec W=mc\vec S$, so $\vec W^2=m^2c^2\hbar^2s(s+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $W^\mu W_\mu=-N\hbar^2s(s+1)=m^2c^2\hbar^2s(s+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.</p>
 <p><strong>The Lorentz label.</strong> Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under conjugation it carries the four-vector $(\tfrac12,\tfrac12)$. The conjugate chirality $(0,\tfrac12)$ is the conjugate module $S^{\mathrm c}$, with a conjugate-linear action; it is not a complex $\mathbb{B}$-module. The rotation spin $s$ is the little-group label; it is not the full Lorentz label, and the split of the four-vector into $0\oplus1$ is the work of the compact subgroup.</p>
 <h2 id="spin-and-statistics">Spin and Statistics</h2>
 <p><strong>The sign.</strong> The exchange sign of a spin-$s$ state is $(-1)^{2s}$: integer spin gives $+1$, half-integer spin gives $-1$.</p>
@@ -264,12 +264,12 @@ $$</p>
 <td>The spin-half operators</td>
 </tr>
 <tr>
-<td>$J_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$</td>
+<td>$\tilde S^{(\mathrm{adj})}_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$</td>
 <td>The spin-one generators</td>
 </tr>
 <tr>
-<td>$C=J_1^2+J_2^2+J_3^2$</td>
-<td>The Casimir</td>
+<td>$C=\tilde S^{(\mathrm{adj})\,2}$</td>
+<td>The Casimir, $\sum_k(\tilde S^{(\mathrm{adj})}_k)^2$</td>
 </tr>
 <tr>
 <td>$s$</td>

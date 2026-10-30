@@ -72,7 +72,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article is the first of the seven conventions articles of the mathematical corpus, and the one that fixes the base: the base and its units, the shape of a generic element and its coefficients, the remarkable subspaces and the conjugations. It assumes nothing beyond the vocabulary of a set, a group and a ring, which it recalls only where a convention depends on it.</p>
 <p>It states conventions only. The proofs and the properties of the objects it names belong to the articles cited beside them. A convention recorded here is not a claim that the alternative is wrong: several of these choices are freely made where either choice would be defensible, and what is not free is <em>consistency</em>, since every later article inherits them.</p>
-<p>The six companion articles carry the rest, in dependency order: <em>Conventions of the Products and the Forms</em>, <em>Conventions of the Norms and the Unitary Convention</em>, <em>Conventions of the Special Elements</em>, <em>Conventions of the Representations</em>, <em>Conventions of the Operators and the Calculus</em>, and <em>Conventions of the Indices, the Notation and the Corpus</em>. The first fixes the twelve products and the four forms, the second the norms and the unitary convention, the third the glyphs of the root, the idempotent and the nilpotent with the Peirce decomposition they generate, the fourth the two matrix models, the fifth the operators and the calculus, and the sixth the indices, the working conventions of the corpus and the typography.</p>
+<p>The six companion articles carry the rest, in dependency order: <em>Conventions of the Twelve Products and the Four Forms</em>, <em>Conventions of the Norms and the Unitary Convention</em>, <em>Conventions of the Special Elements and the Peirce Decomposition</em>, <em>Conventions of the Matrix Models</em>, <em>Conventions of the Operators and the Differential Calculus</em>, and <em>Conventions of the Indices, the Notation and the Corpus</em>. The first fixes the twelve products and the four forms, the second the norms and the unitary convention, the third the glyphs of the root, the idempotent and the nilpotent with the Peirce decomposition they generate, the fourth the two matrix models, the fifth the operators and the calculus, and the sixth the indices, the working conventions of the corpus and the typography.</p>
 <p>The order is the order of dependence. The base is read first; the products come before the forms, the forms before the norms; the special elements follow the base and precede the representations, whose canonical frame is their Peirce frame; the calculus follows the products and the forms; and the indices come last because they index the six. The table at the end of the article is the index of the glyphs of the whole series.</p>
 <h2 id="groups-rings-and-operations">Groups, Rings and Operations</h2>
 <p>A group is written multiplicatively by default, with unit $e$ and inverse $x^{-1}$, and additively when it is the underlying group of a ring, with zero $0$ and inverse $-x$. A ring is a triple $(R, +, \cdot)$; a ring need not be commutative and need not have a unit, and the article that introduces it says which conventions it adopts. A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. A module is written with its scalars on the left unless the article says otherwise, and the side matters as soon as the ring is non-commutative. Products are written by juxtaposition: $ab$ for the product in a group or an algebra, $fv$ for the action of a scalar on a vector. The <strong>symmetrised (Jordan) product</strong> is written with a bullet, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and the circle $\circ$ is kept for the <strong>composition of maps</strong>, as in $\mathrm{H}_{\tilde Q}\circ\mathrm{H}_{\sqrt{\mu}\,\tilde J}$.</p>
@@ -238,7 +238,7 @@ so the ascending triangle is the coefficient of $e_1$ and the descending triangl
 $$
 Q_1+Q_2=(Q_{1\blacktriangle}+Q_{2\blacktriangle},\,Q_{1\blacktriangledown}+Q_{2\blacktriangledown}),\qquad \lambda Q=(\lambda Q_{\blacktriangle},\,\lambda Q_{\blacktriangledown}),
 $$
-and a form on two points is written with two arguments, $H(Q_1,Q_2)$, as <em>Conventions of the Products and the Forms</em>, §<em>The Form Convention</em> requires.</p>
+and a form on two points is written with two arguments, $H(Q_1,Q_2)$, as <em>Conventions of the Twelve Products and the Four Forms</em>, §<em>The Form Convention</em> requires.</p>
 <p><strong>A point of the space is not written $z$.</strong> The articles of the Duo-Complex Numbers category write a point as $Q$ and do not use $z$ for it, in agreement with <em>Several Complex Variables</em>, which writes a point of $\mathbb{C}^n$ as $Q$. The glyph of the point and the glyph of the complex element are the same, and the pair tells them apart: a bare $Q$ with no triangle is the complex number $Q=q+iq'$, and a point is always written as the pair.</p>
 <h2 id="the-remarkable-subspaces-of-biquaternions">The Remarkable Subspaces of Biquaternions</h2>
 <p>The eight real parameters of a general element group into <strong>remarkable subspaces</strong>: the centre, the vector subspace, the quaternion and antiquaternion halves, and the Hermitian and anti-Hermitian halves. Each is cut out by a conjugation:</p>
@@ -596,7 +596,7 @@ $$</p>
 </tr>
 <tr>
 <td>$P$, $N$, $H$, $K$</td>
-<td>The letters of the four forms and algebraic norms of the biquaternion layer — plain, quaternionic, Hermitian and Krein — each naming the form with two arguments and the norm with one; $P$ and not $B$, which is the complex modulus of the vector part and the right annihilator (<em>Conventions of the Products and the Forms</em>, §<em>The Form Convention</em>)</td>
+<td>The letters of the four forms and algebraic norms of the biquaternion layer — plain, quaternionic, Hermitian and Krein — each naming the form with two arguments and the norm with one; $P$ and not $B$, which is the complex modulus of the vector part and the right annihilator (<em>Conventions of the Twelve Products and the Four Forms</em>, §<em>The Form Convention</em>)</td>
 </tr>
 <tr>
 <td>$\Phi$-regular, $\Phi$-degenerate</td>
@@ -612,23 +612,23 @@ $$</p>
 </tr>
 <tr>
 <td>$\bullet$</td>
-<td>The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and, with the slot subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$, the four <strong>symmetric products</strong> of <em>Conventions of the Products and the Forms</em>, §<em>The Twelve Products and Their Names</em>; the circle $\circ$ is reserved for the composition of maps</td>
+<td>The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and, with the slot subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$, the four <strong>symmetric products</strong> of <em>Conventions of the Twelve Products and the Four Forms</em>, §<em>The Twelve Products and Their Names</em>; the circle $\circ$ is reserved for the composition of maps</td>
 </tr>
 <tr>
 <td>$\wedge$</td>
-<td>The antisymmetrised product, $x \wedge y = \tfrac{1}{2}(xy - yx)$, and, with the same subscripts, the four <strong>antisymmetric products</strong> of <em>Conventions of the Products and the Forms</em>, §<em>The Twelve Products and Their Names</em>. On differential forms the same glyph is the exterior product, $\alpha\wedge\beta$, a different use</td>
+<td>The antisymmetrised product, $x \wedge y = \tfrac{1}{2}(xy - yx)$, and, with the same subscripts, the four <strong>antisymmetric products</strong> of <em>Conventions of the Twelve Products and the Four Forms</em>, §<em>The Twelve Products and Their Names</em>. On differential forms the same glyph is the exterior product, $\alpha\wedge\beta$, a different use</td>
 </tr>
 <tr>
 <td>$\bar{\cdot}, {}^{\natural}, {}_{\mathrm{ts}}, {}^{*}, {}^{\flat}, {}^{\dagger}$</td>
-<td>The conjugations of an algebra with an involution — the bar, the natural sign ${}^{\natural}$, the tessarine sign ${}_{\mathrm{ts}}$ of $\mathbb{B}_{\mathrm{r}}$, the star, the anti-Hermitian sign — and the adjoint of an operator; §<em>The Conjugations</em> and <em>Conventions of the Operators and the Calculus</em>, §<em>The Operators</em>, fix their meanings</td>
+<td>The conjugations of an algebra with an involution — the bar, the natural sign ${}^{\natural}$, the tessarine sign ${}_{\mathrm{ts}}$ of $\mathbb{B}_{\mathrm{r}}$, the star, the anti-Hermitian sign — and the adjoint of an operator; §<em>The Conjugations</em> and <em>Conventions of the Operators and the Differential Calculus</em>, §<em>The Operators</em>, fix their meanings</td>
 </tr>
 <tr>
 <td>$\tilde\Pi$, $\tilde\pi$, $\Pi$, $\Pi_\pm$</td>
-<td>An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$, the split-complex and reduced biquaternion ones writing the sign pair $\Pi_\pm$ (<em>Conventions of the Special Elements</em>, §<em>The Idempotent Convention</em>)</td>
+<td>An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$, the split-complex and reduced biquaternion ones writing the sign pair $\Pi_\pm$ (<em>Conventions of the Special Elements and the Peirce Decomposition</em>, §<em>The Idempotent Convention</em>)</td>
 </tr>
 <tr>
 <td>$\tilde\Xi$, $\tilde\xi$, $\Xi$</td>
-<td>A root of $1$: the biquaternion layer writes $\tilde\Xi$, the quaternion layer $\tilde\xi$, and the tilde-free layers $\Xi$ (<em>Conventions of the Special Elements</em>, §<em>The Root Convention</em>)</td>
+<td>A root of $1$: the biquaternion layer writes $\tilde\Xi$, the quaternion layer $\tilde\xi$, and the tilde-free layers $\Xi$ (<em>Conventions of the Special Elements and the Peirce Decomposition</em>, §<em>The Root Convention</em>)</td>
 </tr>
 <tr>
 <td>$\tilde\nu$</td>
@@ -676,7 +676,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Form}(\tilde Q_1,\tilde Q_2)$, $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$</td>
-<td>The generic form and the generic norm (<em>Conventions of the Products and the Forms</em>, §<em>The Form Convention</em>)</td>
+<td>The generic form and the generic norm (<em>Conventions of the Twelve Products and the Four Forms</em>, §<em>The Form Convention</em>)</td>
 </tr>
 <tr>
 <td>$\langle\tilde Q_1,\tilde Q_2\rangle$, $\langle\tilde Q\rangle$</td>
@@ -687,7 +687,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853). The original formulation, and the source of the quaternion conjugation and its notation.</li>
+<li>James Cockle, "On a new imaginary in algebra", <em>Philosophical Magazine</em> <strong>34</strong> (1849) 37–47. The tessarines, the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ that the corpus records as the reduced biquaternions, and the earliest occurrence of the hyperbolic versor.</li>
 <li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.</li>
+<li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.</li>
 <li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998). Algebras with involution, the first and the second kind, and the classification of their involutions.</li>
 <li>Nicolas Bourbaki, <em>Éléments de mathématique</em> (Hermann, then Springer). The model for a notation fixed once and used without variation.</li>
 </ul>

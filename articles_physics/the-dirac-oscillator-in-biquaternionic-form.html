@@ -172,8 +172,8 @@ $$</p>
 <p>$$
 \frac{1}{\hbar}\,\boldsymbol\sigma\cdot\vec L =
 \begin{cases}
-+l, & j = l + \tfrac12 \\[2pt]
--(l+1), & j = l - \tfrac12
++l, & s_{\mathrm{tot}} = l + \tfrac12 \\[2pt]
+-(l+1), & s_{\mathrm{tot}} = l - \tfrac12
 \end{cases}
 $$</p>
 <p>so that, using $\vec p^2 + m^2\omega^2\vec r^2 - 3m\hbar\omega = 2m\hbar\omega N$ and $N = 2n_r + l$,</p>
@@ -181,12 +181,12 @@ $$</p>
 \boxed{\;E^2 = m^2c^4 + 2m\hbar\omega c^2\left(N - \frac{\boldsymbol\sigma\cdot\vec L}{\hbar}\right)
 =
 \begin{cases}
-m^2c^4 + 4m\hbar\omega c^2\,n_r, & j = l+\tfrac12, \\[4pt]
-m^2c^4 + 2m\hbar\omega c^2\left(2n_r + 2l + 1\right), & j = l-\tfrac12 .
+m^2c^4 + 4m\hbar\omega c^2\,n_r, & s_{\mathrm{tot}} = l+\tfrac12, \\[4pt]
+m^2c^4 + 2m\hbar\omega c^2\left(2n_r + 2l + 1\right), & s_{\mathrm{tot}} = l-\tfrac12 .
 \end{cases}\;}
 $$</p>
-<p>This is the Dirac-oscillator spectrum. Its structure is the two-branch pattern familiar from the literature: one branch is a tower in the radial quantum number $n_r$ alone, the other a tower shifted by the orbital quantum number; both are positive, so $E^2 \geq m^2c^4$ and the spectrum has a gap. The ground state has $n_r = 0$, $l = 0$, $j = \tfrac12$, and energy $E = \pm mc^2$; the first excited level stands at $E^2 = m^2c^4 + 4m\hbar\omega c^2$.</p>
-<p>The $j = l+\tfrac12$ branch depends on $n_r$ and <strong>not on $l$</strong>. This is the characteristic degeneracy of the Dirac oscillator: for every $l$ with $j = l+\tfrac12$, the state with $n_r = 0$ has the same energy $E = \pm mc^2$, so the ground level is infinitely degenerate. The degeneracy is not an artefact of the truncation or of a particular gauge: it follows from the exact operator identity above, because the spin–orbit term cancels the oscillator zero point precisely for the aligned states. It is the same zero-mode structure that appears in the supersymmetric interpretation of the biquaternion section below, and it is the reason the model is called a "pseudo-oscillator": the spatial oscillator and the spin–orbit term conspire to produce a degeneracy pattern different from the non-relativistic oscillator's.</p>
+<p>This is the Dirac-oscillator spectrum. Its structure is the two-branch pattern familiar from the literature: one branch is a tower in the radial quantum number $n_r$ alone, the other a tower shifted by the orbital quantum number; both are positive, so $E^2 \geq m^2c^4$ and the spectrum has a gap. The ground state has $n_r = 0$, $l = 0$, $s_{\mathrm{tot}} = \tfrac12$, and energy $E = \pm mc^2$; the first excited level stands at $E^2 = m^2c^4 + 4m\hbar\omega c^2$.</p>
+<p>The $s_{\mathrm{tot}} = l+\tfrac12$ branch depends on $n_r$ and <strong>not on $l$</strong>. This is the characteristic degeneracy of the Dirac oscillator: for every $l$ with $s_{\mathrm{tot}} = l+\tfrac12$, the state with $n_r = 0$ has the same energy $E = \pm mc^2$, so the ground level is infinitely degenerate. The degeneracy is not an artefact of the truncation or of a particular gauge: it follows from the exact operator identity above, because the spin–orbit term cancels the oscillator zero point precisely for the aligned states. It is the same zero-mode structure that appears in the supersymmetric interpretation of the biquaternion section below, and it is the reason the model is called a "pseudo-oscillator": the spatial oscillator and the spin–orbit term conspire to produce a degeneracy pattern different from the non-relativistic oscillator's.</p>
 <p>The two branches can be written in the unified form</p>
 <p>$$
 E^2 = m^2c^4 + 4m\hbar\omega c^2\,n_r
@@ -216,7 +216,7 @@ $$</p>
 <p>$$
 H_{\mathrm{osc}} \approx \frac{\vec p^2}{2m} + \tfrac12 m\omega^2\vec r^2 ,
 $$</p>
-<p>whose levels would be $\hbar\omega(N+\tfrac32)$ if it were the whole of the operator. But the <strong>physical</strong> second-order operator has the zero point removed and carries in addition the spin–orbit term $-2m\omega\boldsymbol\sigma\cdot\vec L$; in the energy, the relation $E - mc^2 \approx \mathcal{Q}^\dagger \mathcal{Q}/(2m)$, which follows from $E^2 - m^2c^4 = c^2\mathcal{Q}^\dagger \mathcal{Q}$ at leading order, contributes $-\hbar\omega\,\boldsymbol\sigma\cdot\vec L/\hbar$, whose eigenvalues $-\hbar\omega\,l$ (for $j = l+\tfrac12$) and $+\hbar\omega(l+1)$ (for $j = l-\tfrac12$) exceed the oscillator spacing $\hbar\omega$ in magnitude by the orbital factor. It is therefore not legitimate to treat the term as a small perturbation of the non-relativistic oscillator. The non-relativistic limit of the Dirac oscillator is the oscillator <strong>with a spin–orbit coupling of order $\omega$</strong>, and its spectrum is the branch structure derived above, not the pure oscillator spectrum. This is a standard feature of the model, and it is the reason the Dirac oscillator is used as a test of relativistic confinement rather than as a mere relativistic correction to the oscillator.</p>
+<p>whose levels would be $\hbar\omega(N+\tfrac32)$ if it were the whole of the operator. But the <strong>physical</strong> second-order operator has the zero point removed and carries in addition the spin–orbit term $-2m\omega\boldsymbol\sigma\cdot\vec L$; in the energy, the relation $E - mc^2 \approx \mathcal{Q}^\dagger \mathcal{Q}/(2m)$, which follows from $E^2 - m^2c^4 = c^2\mathcal{Q}^\dagger \mathcal{Q}$ at leading order, contributes $-\hbar\omega\,\boldsymbol\sigma\cdot\vec L/\hbar$, whose eigenvalues $-\hbar\omega\,l$ (for $s_{\mathrm{tot}} = l+\tfrac12$) and $+\hbar\omega(l+1)$ (for $s_{\mathrm{tot}} = l-\tfrac12$) exceed the oscillator spacing $\hbar\omega$ in magnitude by the orbital factor. It is therefore not legitimate to treat the term as a small perturbation of the non-relativistic oscillator. The non-relativistic limit of the Dirac oscillator is the oscillator <strong>with a spin–orbit coupling of order $\omega$</strong>, and its spectrum is the branch structure derived above, not the pure oscillator spectrum. This is a standard feature of the model, and it is the reason the Dirac oscillator is used as a test of relativistic confinement rather than as a mere relativistic correction to the oscillator.</p>
 <p>The comparison isolates where the relativistic content lives. In the free theory, the spin–orbit coupling is a $1/c^2$ correction; in the oscillator it is present at leading order because the confining substitution is itself linear in the position and frame-odd. The biquaternion framework reads this as the statement that the substitution shifts the <strong>odd</strong> part of the operator, and the odd part is precisely what the square converts into an even operator with a spin–orbit component.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <p>Three structural statements can now be made in the algebra.</p>
@@ -245,8 +245,8 @@ $$</p>
 E^2 = m^2c^4 + 2m\hbar\omega c^2\left(N - \frac{\boldsymbol\sigma\cdot\vec L}{\hbar}\right)
 =
 \begin{cases}
-m^2c^4 + 4m\hbar\omega c^2\,n_r, & j = l+\tfrac12, \\[4pt]
-m^2c^4 + 2m\hbar\omega c^2\left(2n_r+2l+1\right), & j = l-\tfrac12,
+m^2c^4 + 4m\hbar\omega c^2\,n_r, & s_{\mathrm{tot}} = l+\tfrac12, \\[4pt]
+m^2c^4 + 2m\hbar\omega c^2\left(2n_r+2l+1\right), & s_{\mathrm{tot}} = l-\tfrac12,
 \end{cases}
 $$</p>
 <p>with the aligned branch independent of $l$ and hence an infinitely degenerate level at $E = \pm mc^2$. In one dimension the spin–orbit term is absent and the spectrum is $E^2 = m^2c^4 + 2m\hbar\omega c^2 n$, $n = 0,1,2,\dots$. In the biquaternion framework the substitution shifts the frame-odd part of the gradient; the square is central except for a Hermitian spin–orbit remainder in $\mathbb{M}_+$; the zero-point cancellation is a quaternion commutator; and the zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops.</p>
