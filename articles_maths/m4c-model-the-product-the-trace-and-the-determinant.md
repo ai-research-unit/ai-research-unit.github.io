@@ -8,7 +8,7 @@ The image is not the whole of $M_4(\mathbb{C})$: the algebra has complex dimensi
 
 This article owns the assignment, the isomorphism, the signs and the Pauli matrices, the algebra in matrix form, the structure map and the real form, and the sense in which the model is a choice. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The $2\times2$ model is $\mathsf{M}_2$, fixed by
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, and the $2\times2$ model is $\mathsf{M}_2$, fixed by
 $$
 \mathsf{M}_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}.
 $$
@@ -19,23 +19,25 @@ $$
 
 **The four units go to four matrices, and the four coefficients go to one matrix.** The **left regular matrix** $\mathsf{M}_4^{L}(\tilde Q)$ is the $4\times4$ matrix of left multiplication in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. The shorter notation $\mathsf{M}_4^{L}$ stands for $\mathsf{M}_4^{L}(\tilde Q)$. Write $L_\mu=\mathsf M_4^{L}(e_\mu)$ for the four unit matrices. The four units go to
 
-| Unit | Matrix | Square | Determinant |
+| Unit | Matrix $L_\mu$ | Square | Determinant |
 |---|---|---|---|
-| $e_t$ | $\mathrm I_4$ | $\mathrm I_4$ | $1$ |
-| $\vec e_x$ | $\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix}$ | $-\mathrm I_4$ | $1$ |
-| $\vec e_y$ | $\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}$ | $-\mathrm I_4$ | $1$ |
-| $\vec e_z$ | $\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}$ | $-\mathrm I_4$ | $1$ |
+| $e_t$ | $L_t=\mathrm I_4$ | $\mathrm I_4$ | $1$ |
+| $\vec e_x$ | $L_x=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix}$ | $-\mathrm I_4$ | $1$ |
+| $\vec e_y$ | $L_y=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}$ | $-\mathrm I_4$ | $1$ |
+| $\vec e_z$ | $L_z=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}$ | $-\mathrm I_4$ | $1$ |
 
-equivalently
+equivalently, with $\mathsf M_2$ the $2\times2$ model of *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant* and $\mathsf M_2(\vec e_k)=-i\sigma_k$,
 
 $$
-L_t=\mathrm I_4,\qquad
-L_x=-i\,\mathrm I_2\otimes\sigma_1,\qquad
-L_y=-i\,\mathrm I_2\otimes\sigma_2,\qquad
-L_z=-i\,\mathrm I_2\otimes\sigma_3,
+\boxed{\;\begin{aligned}
+L_t&=\mathrm I_2\otimes\mathsf M_2(e_t)=\mathrm I_2\otimes\mathrm I_2=\mathrm I_4,\\
+L_x&=\mathrm I_2\otimes\mathsf M_2(\vec e_x)=\mathrm I_2\otimes\begin{pmatrix}0&-i\\-i&0\end{pmatrix}=-i\,\mathrm I_2\otimes\sigma_1,\\
+L_y&=\mathrm I_2\otimes\mathsf M_2(\vec e_y)=\mathrm I_2\otimes\begin{pmatrix}0&-1\\1&0\end{pmatrix}=-i\,\mathrm I_2\otimes\sigma_2,\\
+L_z&=\mathrm I_2\otimes\mathsf M_2(\vec e_z)=\mathrm I_2\otimes\begin{pmatrix}-i&0\\0&i\end{pmatrix}=-i\,\mathrm I_2\otimes\sigma_3.
+\end{aligned}\;}
 $$
 
-and a general element is
+A general element is
 
 $$
 \boxed{\;\mathsf{M}_4^{L}(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)
@@ -259,7 +261,7 @@ The assignment $\mathsf{M}_4^{L}$ sends $e_t$ to $\mathrm I_4$ and the three vec
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis; $e_t$ the unit, $\vec e_k^2=-e_t$ |
 | $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
 | $\mathsf{M}_4^{L}=\mathsf{M}_4^{L}(\tilde Q)$ | the left regular matrix |
-| $L_\mu=\mathsf M_4^{L}(e_\mu)$ | the canonical-frame matrix of $e_\mu$: $L_t=\mathrm I_4$, $L_k=-i\mathrm I_2\otimes\sigma_k$ |
+| $L_\mu=\mathsf M_4^{L}(e_\mu)=\mathrm I_2\otimes\mathsf M_2(e_\mu)$ | the canonical-frame matrix of $e_\mu$: $L_t=\mathrm I_4$, $L_k=-i\mathrm I_2\otimes\sigma_k$ |
 | $M_4(\mathbb{C})_{\mathbb{B},L}$ | its image in $M_4(\mathbb{C})$ |
 | $\Sigma_k=\mathsf{M}_4^{L}(i\vec e_k)=-i\mathsf{M}_4^{L}(\vec e_k)$ | the Pauli matrices, repeated in the two copies |
 | $C_{\Pi}$ | the Peirce change: its columns are the four Peirce elements in coefficient coordinates, $\det C_{\Pi}=-\tfrac14$ |

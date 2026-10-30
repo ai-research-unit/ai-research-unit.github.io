@@ -20,15 +20,14 @@ $$
 
 of complex dimension sixteen; its **matrix representation** in the canonical frame is $M_4(\mathbb{C})$. The sixteen basis matrices are the images of the sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$.
 
-**The tensor-product question.** Three products must be kept apart. The Kronecker product $L_\mu\otimes L_\nu$ of two $4\times4$ matrices is a $16\times16$ matrix acting on $\mathbb{C}^4\otimes\mathbb{C}^4$; it is *not* the matrix of $\tilde Q_3\mapsto e_\mu\tilde Q_3 e_\nu$. The Kronecker product of two $2\times2$ matrices *is* a $4\times4$ matrix, and in the canonical frame it gives the two-sided operators directly through the identification $\mathbb{B}\cong M_2(\mathbb{C})$; the formula is written below. The product that builds the sixteen is the tensor product of algebras, $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_\mu R_\nu$, and in matrices it is the ordinary product of two $4\times4$ matrices.
+**The tensor-product question.** Three products must be kept apart. The Kronecker product $L_\mu\otimes L_\nu$ of two $4\times4$ matrices is a $16\times16$ matrix acting on $\mathbb{C}^4\otimes\mathbb{C}^4$; it is *not* the matrix of $\tilde Q_3\mapsto e_\mu\tilde Q_3 e_\nu$. The Kronecker product of two $2\times2$ matrices *is* a $4\times4$ matrix, and in the canonical frame it gives the two-sided operators through the identification $\mathbb{B}\cong M_2(\mathbb{C})$; that display is the legacy Pauli form recorded in the remark of §*The Four Right Matrices*. The construction used here is the ordinary product $T_{\mu\nu}=L_\mu R_\nu$ of two $4\times4$ matrices, with $R_\nu$ read from $L_\nu$ by transposition and one exchange. The product that builds the sixteen is the tensor product of algebras, $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_\mu R_\nu$, and in matrices it is the ordinary product of two $4\times4$ matrices.
 
 **Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Write $L_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)$ for left multiplication by $\tilde Q$, and $R_{\tilde Q}$ for right multiplication, $R_{\tilde Q}(\tilde Q_3)=\tilde Q_3\tilde Q$; write $L_\mu=L_{e_\mu}$ and $R_\mu=R_{e_\mu}$ for the four basis matrices. A matrix written without a superscript is in the canonical frame; in the coefficient basis the same operators are $L_{\tilde Q}^{\mathrm{coef}}=C_{\Pi}L_{\tilde Q}C_{\Pi}^{-1}$ and $R_{\tilde Q}^{\mathrm{coef}}=C_{\Pi}R_{\tilde Q}C_{\Pi}^{-1}$, with $C_{\Pi}$ the Peirce change of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*. Matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, the Peirce frame, where
 
 $$
 L_{\tilde Q}=\mathrm I_2\otimes\mathsf M_2(\tilde Q),
-\qquad
-\mathsf M_2(e_t)=\mathrm I_2,\quad \mathsf M_2(e_k)=-i\sigma_k .
 $$
+with $\mathsf M_2$ the $2\times2$ model; the four basis matrices are displayed in the next section.
 
 The notation $e_\mu$ is the unit of the basis in the direction $\mu$, so $e_k=\vec e_k$ for $k=x,y,z$. The coefficient coordinates $(t,x,y,z)$, that is, the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, are used only where they are named; there the matrix of quaternion conjugation is $D=\operatorname{diag}(1,-1,-1,-1)$, and $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ is the quaternionic norm.
 
@@ -50,16 +49,7 @@ L_y=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
 L_z=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
 $$
 
-Equivalently
-
-$$
-L_t=\mathrm I_4,\qquad
-L_x=-i\,\mathrm I_2\otimes\sigma_1,\qquad
-L_y=-i\,\mathrm I_2\otimes\sigma_2,\qquad
-L_z=-i\,\mathrm I_2\otimes\sigma_3,
-$$
-
-and a general element is
+A general element is
 
 $$
 L_{\tilde Q}=\mathrm I_2\otimes\mathsf M_2(\tilde Q)=
@@ -77,20 +67,30 @@ $$
 
 **Definition.** The right multiplication is $R_{\tilde Q}(\tilde Q_3)=\tilde Q_3\tilde Q$. Its matrix is not $\mathsf{M}_4^{L}(\tilde Q)$: the two families commute, and $R_{\tilde Q}$ is the commuting partner of $L_{\tilde Q}$.
 
-**Proposition.** In the canonical frame
+**Proposition (the right matrix is a transpose of the left one).** Let $\mathsf S$ be the permutation of the canonical frame that fixes the two idempotents and exchanges the two mixed Peirce units,
 
 $$
-R_{\tilde Q}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2 .
+\mathsf S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
+\mathsf S\vec\Upsilon_+=\vec\Upsilon_-,\qquad
+\mathsf S\vec\Upsilon_-=\vec\Upsilon_+ .
 $$
 
-*Proof.* Left multiplication is $L_{\tilde Q}=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, so it acts on the second tensor factor. Right multiplication acts on the first: if $X=\mathsf M_2(\tilde Q_3)$ is the $2\times2$ matrix of $\tilde Q_3$, then $\mathsf M_2(\tilde Q_3\tilde Q)=X\mathsf M_2(\tilde Q)$, and on the vectorised matrix $\operatorname{vec}X$ the map is $\operatorname{vec}X\mapsto\operatorname{vec}(X\mathsf M_2(\tilde Q))=(\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2)\operatorname{vec}X$.
-
-For the basis this reads $R_t=\mathrm I_4$ and, for $k=x,y,z$,
+Then
 
 $$
-R_x=-i\,\sigma_1\otimes\mathrm I_2,\qquad
-R_y=+i\,\sigma_2\otimes\mathrm I_2,\qquad
-R_z=-i\,\sigma_3\otimes\mathrm I_2 .
+\boxed{\;R_{\tilde Q}=\mathsf S\,L_{\tilde Q}^{\mathsf T}\,\mathsf S^{-1}\;}
+$$
+
+for every $\tilde Q$.
+
+*Proof.* Left multiplication is $L_{\tilde Q}=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$, so it acts on the second tensor factor; transposition gives $L_{\tilde Q}^{\mathsf T}=\mathrm I_2\otimes\mathsf M_2(\tilde Q)^{\mathsf T}$. The permutation $\mathsf S$ exchanges the two tensor factors, the copy index and the spinor index, so $\mathsf S L_{\tilde Q}^{\mathsf T}\mathsf S^{-1}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. Right multiplication acts on the first factor: if $X=\mathsf M_2(\tilde Q_3)$ is the $2\times2$ matrix of $\tilde Q_3$, then $\mathsf M_2(\tilde Q_3\tilde Q)=X\mathsf M_2(\tilde Q)$, and on the vectorised matrix $\operatorname{vec}X$ the map is $\operatorname{vec}X\mapsto(\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2)\operatorname{vec}X$. Hence the boxed identity.
+
+For the basis, $\mathsf S L_t^{\mathsf T}\mathsf S^{-1}=L_t$, and $R_k=\mathsf S L_k^{\mathsf T}\mathsf S^{-1}$; since $L_x$ and $L_z$ are symmetric and $L_y$ is antisymmetric,
+
+$$
+R_x=\mathsf S L_x\mathsf S^{-1},\qquad
+R_y=-\mathsf S L_y\mathsf S^{-1},\qquad
+R_z=\mathsf S L_z\mathsf S^{-1}.
 $$
 
 Explicitly,
@@ -105,9 +105,20 @@ R_y=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
 R_z=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}.
 $$
 
-In the coefficient basis the same operator reads $R_{\tilde Q}^{\mathrm{coef}}=D L_{\tilde Q^{\natural}}^{\mathrm{coef}}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, the matrix of quaternion conjugation there. The formula is a statement about that basis, not about the operator: in the canonical frame it becomes $R_{\tilde Q}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$.
+In the coefficient basis the same operator reads $R_{\tilde Q}^{\mathrm{coef}}=D L_{\tilde Q^{\natural}}^{\mathrm{coef}}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, the matrix of quaternion conjugation there. The formula is a statement about that basis, not about the operator: in the canonical frame it becomes $R_{\tilde Q}=\mathsf S L_{\tilde Q}^{\mathsf T}\mathsf S^{-1}$.
 
 **The two families commute.** $L_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q_1}$, because both sides send $\tilde Q_3$ to $\tilde Q_1\tilde Q_3\tilde Q_2$. This is why the sixteen products below need no ordering convention. The right image is $R(\mathbb{B})=M_4(\mathbb{C})_{\mathbb{B},R}$.
+
+**Remark (the Pauli shorthand, legacy).** The earlier articles display the same matrices in the Pauli shorthand. With $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices,
+
+$$
+L_k=-i\,\mathrm I_2\otimes\sigma_k,\qquad
+R_x=-i\,\sigma_1\otimes\mathrm I_2,\quad
+R_y=+i\,\sigma_2\otimes\mathrm I_2,\quad
+R_z=-i\,\sigma_3\otimes\mathrm I_2,
+$$
+
+and for general parameters $R_{\tilde Q}=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2$. These are evaluations of the L-based identities above; they are kept as a dictionary, not used in the construction of $R$ and $T$. The same shorthand displays the gammas of §*A Gamma Frame, and the Choice Behind It*; the definitions there are in terms of $L$, $R$ and $T$.
 
 ## The Sixteen Basis Matrices
 
@@ -127,26 +138,25 @@ and conversely every element of the family $\{T_{\tilde Q_1,\tilde Q_2}\}$ is ob
 
 **Proposition (they are a basis).** The sixteen matrices $T_{\mu\nu}$ are distinct, invertible, of determinant $1$ and rank $4$, and are linearly independent. They are a basis of $M_4(\mathbb{C})$.
 
-*Proof.* By the theorem of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, the map $\tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}}\mapsto L_{\tilde Q_1}R_{\tilde Q_2}$ is an isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ are a basis of the left side, so their images $T_{\mu\nu}$ are a basis of the right side. In the canonical frame each is a Kronecker product $A_\nu^{\mathsf T}\otimes A_\mu$ of two invertible $2\times2$ matrices, so it is invertible, of determinant $1$ and rank $4$. Distinct pairs give distinct products, because the four $A_\mu$ are linearly independent.
+*Proof.* By the theorem of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, the map $\tilde Q_1\otimes\tilde Q_2^{\mathrm{opp}}\mapsto L_{\tilde Q_1}R_{\tilde Q_2}$ is an isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The sixteen elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ are a basis of the left side, so their images $T_{\mu\nu}$ are a basis of the right side. Each is $T_{\mu\nu}=L_\mu R_\nu$, with $L_\mu$ invertible and $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ invertible, so it is invertible, of determinant $\det L_\mu\det R_\nu=1$ and rank $4$. Distinct pairs give distinct products, because the map is injective on the sixteen elementary tensors.
 
 **The rule.** Column $j$ of $T_{\mu\nu}$ is the coordinate column of $e_\mu\,P_j\,e_\nu$ in the canonical frame $P_j=\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-$. In the coefficient basis, where the $j$-th basis vector is $e_j$, that column is the coordinate column of $e_\mu e_j e_\nu$.
 
-**The table.** Write $A_t=\mathrm I_2$ and $A_k=-i\sigma_k$, so that $L_\mu=\mathrm I_2\otimes A_\mu$ and $R_\nu=A_\nu^{\mathsf T}\otimes\mathrm I_2$. Then
+**The table.** The right matrices are read from the left ones,
+
+| $\nu$ | $t$ | $x$ | $y$ | $z$ |
+|---|---|---|---|---|
+| $R_\nu$ | $L_t$ | $\mathsf S L_x\mathsf S^{-1}$ | $-\mathsf S L_y\mathsf S^{-1}$ | $\mathsf S L_z\mathsf S^{-1}$ |
+
+and the sixteen are the ordinary products
 
 $$
-T_{\mu\nu}=L_\mu R_\nu=A_\nu^{\mathsf T}\otimes A_\mu,
+T_{\mu\nu}=L_\mu R_\nu=L_\mu\,\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1}.
 $$
 
-that is,
+No tensor product of $4\times4$ matrices enters, and no change of basis is needed.
 
-| $\mu\backslash\nu$ | $t$ | $k=x,y,z$ |
-|---|---|---|
-| $t$ | $\mathrm I_4$ | $-i\,\sigma_k^{\mathsf T}\otimes\mathrm I_2$ |
-| $j=x,y,z$ | $-i\,\mathrm I_2\otimes\sigma_j$ | $-\sigma_k^{\mathsf T}\otimes\sigma_j$ |
-
-The sixteen are the four blocks of this table; the tensor factors are $2\times2$, the product is $4\times4$, and no change of basis is needed. The factor $-i$ is the one of $\mathsf M_2(e_k)=-i\sigma_k$, carried by the left factor.
-
-**One entry, checked.** The table gives $T_{xy}=-\sigma_y^{\mathsf T}\otimes\sigma_x=\sigma_2\otimes\sigma_1$,
+**One entry, checked.** The table gives $T_{xy}=L_xR_y=-L_x\mathsf S L_y\mathsf S^{-1}$,
 $$
 T_{xy}=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix}.
 $$
@@ -154,44 +164,44 @@ Its first column is the coordinate column of $e_x\tilde\Pi_+e_y=i\tilde\Pi_-$, b
 
 **The sixteen, in four families.** The four families are
 $$
-T_{tt}=\mathrm I_4,\qquad
-T_{tk}=-i\,\sigma_k^{\mathsf T}\otimes\mathrm I_2,\qquad
-T_{kt}=-i\,\mathrm I_2\otimes\sigma_k,\qquad
-T_{jk}=-\sigma_k^{\mathsf T}\otimes\sigma_j .
+T_{tt}=L_t,\qquad
+T_{tk}=R_k,\qquad
+T_{kt}=L_k,\qquad
+T_{jk}=L_jR_k .
 $$
 
 **The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$,
 $$
-T_{tt}=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-T_{tx}=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
+T_{tt}=L_tR_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+T_{tx}=L_tR_x=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
 $$
 $$
-T_{ty}=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-T_{tz}=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
+T_{ty}=L_tR_y=\begin{pmatrix}0&0&1&0\\0&0&0&1\\-1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+T_{tz}=L_tR_z=\begin{pmatrix}-i&0&0&0\\0&-i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix},
 $$
 $$
-T_{xt}=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
-T_{xx}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+T_{xt}=L_xR_t=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
+T_{xx}=L_xR_x=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
 $$
-T_{xy}=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix},\qquad
-T_{xz}=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
+T_{xy}=L_xR_y=\begin{pmatrix}0&0&0&-i\\0&0&-i&0\\0&i&0&0\\i&0&0&0\end{pmatrix},\qquad
+T_{xz}=L_xR_z=\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
 $$
 $$
-T_{yt}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-T_{yx}=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
+T_{yt}=L_yR_t=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+T_{yx}=L_yR_x=\begin{pmatrix}0&0&0&i\\0&0&-i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},
 $$
 $$
-T_{yy}=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix},\qquad
-T_{yz}=\begin{pmatrix}0&i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix},
+T_{yy}=L_yR_y=\begin{pmatrix}0&0&0&-1\\0&0&1&0\\0&1&0&0\\-1&0&0&0\end{pmatrix},\qquad
+T_{yz}=L_yR_z=\begin{pmatrix}0&i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&i&0\end{pmatrix},
 $$
 $$
-T_{zt}=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
-T_{zx}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+T_{zt}=L_zR_t=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},\qquad
+T_{zx}=L_zR_x=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
 $$
 $$
-T_{zy}=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
-T_{zz}=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
+T_{zy}=L_zR_y=\begin{pmatrix}0&0&-i&0\\0&0&0&i\\i&0&0&0\\0&-i&0&0\end{pmatrix},\qquad
+T_{zz}=L_zR_z=\begin{pmatrix}-1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&-1\end{pmatrix}.
 $$
 
 Each has four nonzero entries, one in each row and each column, and the nonzero entries are $\pm1$ or $\pm i$. The coefficient basis is the conjugate display: there the same sixteen are the signed permutation matrices $T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}\,T_{\mu\nu}\,C_{\Pi}^{-1}$.
@@ -223,7 +233,7 @@ The sixteen are an orthogonal basis, each of norm $2$. The normalization is the 
 
 **The basis consists of units, its span does not.** Every $T_{\mu\nu}$ is invertible, but a sum need not be. For example
 $$
-T_{tt}+T_{xx}=\mathrm I_4-\sigma_1\otimes\sigma_1=
+T_{tt}+T_{xx}=\mathrm I_4+L_xR_x=
 \begin{pmatrix}1&0&0&-1\\0&1&-1&0\\0&-1&1&0\\-1&0&0&1\end{pmatrix},
 $$
 of rank two. The algebra is simple and has many zero divisors; a basis of invertible matrices does not change that.
@@ -232,27 +242,13 @@ of rank two. The algebra is simple and has many zero divisors; a basis of invert
 
 **The Kronecker product of the sixteen is not the construction.** The Kronecker product $T_{\mu\nu}\otimes T_{\rho\sigma}$ is a $16\times16$ matrix. It acts on $\mathbb{C}^4\otimes\mathbb{C}^4$, a space of dimension sixteen, not on the carrier $\mathbb{C}^4$. It does not represent $\tilde Q_3\mapsto\tilde Q_1\tilde Q_3\tilde Q_2$.
 
-**The Kronecker product at the $M_2$ level is exact.** In the canonical frame the two one-sided matrices are already Kronecker products,
+**The construction is the ordinary matrix product.** The two one-sided matrices are known, and
 
 $$
-L_{\tilde Q_1}=\mathrm I_2\otimes\mathsf M_2(\tilde Q_1),\qquad
-R_{\tilde Q_2}=\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathrm I_2,
+\boxed{\;T_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}=L_{\tilde Q_1}\,\mathsf S\,L_{\tilde Q_2}^{\mathsf T}\,\mathsf S^{-1}\;}
 $$
 
-and therefore
-
-$$
-\boxed{\;T_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}=\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf M_2(\tilde Q_1)\;}
-$$
-
-for all $\tilde Q_1,\tilde Q_2$. In particular, for the basis,
-
-$$
-T_{\mu\nu}=\mathsf M_2(e_\nu)^{\mathsf T}\otimes\mathsf M_2(e_\mu),
-\qquad \mathsf M_2(e_t)=\mathrm I_2,\quad \mathsf M_2(e_k)=-i\sigma_k .
-$$
-
-The two Kronecker factors are $2\times2$, not $4\times4$; the result is $4\times4$. The order is fixed: the right parameter $\tilde Q_2$ goes in the first factor, transposed, and the left parameter $\tilde Q_1$ in the second.
+for all $\tilde Q_1,\tilde Q_2$; in particular $T_{\mu\nu}=L_\mu\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$. The product is the ordinary product of two $4\times4$ matrices. The first factor is the left matrix of $\tilde Q_1$; the second is the right matrix of $\tilde Q_2$, the transpose of the left matrix of $\tilde Q_2$ in the exchanged Peirce frame. The Pauli–Kronecker form $T_{\mu\nu}=\mathsf M_2(e_\nu)^{\mathsf T}\otimes\mathsf M_2(e_\mu)$ is the legacy evaluation of this identity, recorded in the remark of §*The Four Right Matrices*.
 
 **The coefficient basis is the conjugate display.** The Peirce change $C_{\Pi}$ of *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant*,
 $$
@@ -267,16 +263,16 @@ C_{\Pi}=\begin{pmatrix}
 $$
 has the Peirce elements $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ as columns. In that basis the same operators read
 $$
-L_{\tilde Q_1}^{\mathrm{coef}}=C_{\Pi}\bigl(\mathrm I_2\otimes\mathsf M_2(\tilde Q_1)\bigr)C_{\Pi}^{-1},\qquad
-R_{\tilde Q_2}^{\mathrm{coef}}=C_{\Pi}\bigl(\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathrm I_2\bigr)C_{\Pi}^{-1},
+L_{\tilde Q_1}^{\mathrm{coef}}=C_{\Pi}L_{\tilde Q_1}C_{\Pi}^{-1},\qquad
+R_{\tilde Q_2}^{\mathrm{coef}}=C_{\Pi}R_{\tilde Q_2}C_{\Pi}^{-1},
 \qquad
-T_{\tilde Q_1,\tilde Q_2}^{\mathrm{coef}}=C_{\Pi}\bigl(\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf M_2(\tilde Q_1)\bigr)C_{\Pi}^{-1},
+T_{\tilde Q_1,\tilde Q_2}^{\mathrm{coef}}=C_{\Pi}T_{\tilde Q_1,\tilde Q_2}C_{\Pi}^{-1},
 $$
-and the sixteen are the signed permutation matrices $T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}\,T_{\mu\nu}\,C_{\Pi}^{-1}$. The conjugation changes the entries, not the tensor factors.
+and the sixteen are the signed permutation matrices $T_{\mu\nu}^{\mathrm{coef}}=C_{\Pi}\,T_{\mu\nu}\,C_{\Pi}^{-1}$. The conjugation changes the entries, not the algebra.
 
-**In the canonical frame the sixteen are tensor products, not matrix units.** Each $T_{\mu\nu}$ is a Kronecker product of two $2\times2$ matrices and is not a $4\times4$ matrix unit. The matrix units are the sixteen products $L_{P_i}R_{P_j}$ of the four Peirce elements $P_i$, not the sixteen $T_{\mu\nu}$. The canonical frame is adapted to both the chiral blocks and the tensor basis, and this is why the gamma construction closes on it.
+**In the canonical frame the sixteen are not matrix units.** Each $T_{\mu\nu}=L_\mu R_\nu$ is a product of two invertible matrices and is not a $4\times4$ matrix unit. The matrix units are the sixteen products $L_{P_i}R_{P_j}$ of the four Peirce elements $P_i$, not the sixteen $T_{\mu\nu}$. The canonical frame is adapted to both the chiral blocks and the tensor basis, and this is why the gamma construction closes on it.
 
-**Another basis conjugates the sixteen.** A change of basis $U$ of $\mathbb{B}$ replaces each $T_{\mu\nu}$ by $U\,T_{\mu\nu}\,U^{-1}$. The sixteen matrices change, the algebra they span does not. The coefficient basis is the one in which they are signed permutations; the canonical frame is the one in which they are the Kronecker products above.
+**Another basis conjugates the sixteen.** A change of basis $U$ of $\mathbb{B}$ replaces each $T_{\mu\nu}$ by $U\,T_{\mu\nu}\,U^{-1}$. The sixteen matrices change, the algebra they span does not. The coefficient basis is the one in which they are signed permutations; the canonical frame is the one in which they are the products of the left matrices and the exchange above.
 
 ## The Sandwich Inside the Sixteen
 
@@ -298,11 +294,11 @@ $$
 
 **Two values.** $\tilde Q=e_t$ gives $\Theta_{e_t}=\mathrm{I}_4$. $\tilde Q=\vec e_y$ gives $\tilde Q^{*}=-\vec e_y$ and
 $$
-\Theta_{\vec e_y}=T_{\vec e_y,-\vec e_y}=-T_{yy}=-\sigma_2\otimes\sigma_2=
+\Theta_{\vec e_y}=T_{\vec e_y,-\vec e_y}=-T_{yy}=
 \begin{pmatrix}0&0&0&1\\0&0&-1&0\\0&-1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 
-**The gamma matrices are not sandwiches.** They are five cells of the tensor basis with a free second parameter; §*The Gamma Frame* treats them.
+**The gamma matrices are not sandwiches.** They are $i$ times five cells of the tensor basis in the reference frame, and the pair of directions in those cells is free; §*A Gamma Frame, and the Choice Behind It* treats them.
 
 ## A Gamma Frame, and the Choice Behind It
 
@@ -310,53 +306,53 @@ $$
 
 **The five operators.** In the reference frame the Dirac generators are five cells multiplied by $i$:
 $$
-\gamma^0=iT_{e_t,e_x},\qquad
+\boxed{\;\gamma^0=iT_{e_t,e_x},\qquad
 \gamma^1=iT_{e_x,e_y},\qquad
 \gamma^2=iT_{e_y,e_y},\qquad
 \gamma^3=iT_{e_z,e_y},\qquad
-\gamma_5=-iT_{e_t,e_z}.
+\gamma_5=-iT_{e_t,e_z}\;}
 $$
 In the canonical frame they are
 $$
-\gamma^0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
-\gamma^1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+\gamma^0=iT_{e_t,e_x}=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma^1=iT_{e_x,e_y}=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
 $$
 $$
-\gamma^2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
-\gamma^3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
+\gamma^2=iT_{e_y,e_y}=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma^3=iT_{e_z,e_y}=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},
 $$
 $$
-\gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
+\gamma_5=-iT_{e_t,e_z}=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
 $$
 Each has trace $0$, determinant $1$ and rank $4$.
 
 **The grading construction.** The frame is generated by the left action and one grading of the multiplicity factor. Take
 $$
-G=\sigma_2\otimes\mathrm I_2,\qquad \Gamma_t=\sigma_1\otimes\mathrm I_2=iT_{e_t,e_x},
+G=-iT_{ty},\qquad \Gamma_t=iT_{e_t,e_x},
 $$
-where $\Gamma_t$ is the exchange of the two copies (not a right multiplication), and set
+where $\Gamma_t$ is the exchange of the two copies; it is $iT_{e_t,e_x}=iR_x$, a right multiplication of the reference frame, and set
 $$
-\Gamma_k=L_{i\vec e_k}G=\sigma_2\otimes\sigma_k .
+\Gamma_k=L_{i\vec e_k}G .
 $$
-Because $L_{i\vec e_k}=\mathrm I_2\otimes\sigma_k$ in the canonical frame, the product $L_{i\vec e_k}G$ is $(\mathrm I_2\otimes\sigma_k)(\sigma_2\otimes\mathrm I_2)=\sigma_2\otimes\sigma_k$: no rotation is needed, and no change of spinor basis. The four $\Gamma_\mu$ all square to $+\mathrm I_4$ and anticommute in pairs. The Lorentzian generators are the same frame with the spatial generators multiplied by $i$,
+The grading $G$ acts on the copy index and $L_{i\vec e_k}$ on the spinor index, so the product acts on the two indices separately: no rotation is needed, and no change of spinor basis. The four $\Gamma_\mu$ all square to $+\mathrm I_4$ and anticommute in pairs. The Lorentzian generators are the same frame with the spatial generators multiplied by $i$,
 $$
-\gamma^0=\Gamma_t,\qquad \gamma^k=i\Gamma_k=i\,\sigma_2\otimes\sigma_k,
+\gamma^0=\Gamma_t,\qquad \gamma^k=i\Gamma_k,
 $$
-so that $(\gamma^0)^2=\mathrm I_4$ and $(\gamma^k)^2=-\mathrm I_4$. The pseudoscalar is $\gamma_5=-iT_{e_t,e_z}=-\sigma_3\otimes\mathrm I_2$.
+so that $(\gamma^0)^2=\mathrm I_4$ and $(\gamma^k)^2=-\mathrm I_4$. The pseudoscalar is $\gamma_5=-iT_{e_t,e_z}$.
 
-**What the rotation was.** The same left action with the grading read along $\sigma_3$ instead gives
+**What the rotation was.** The same left action with the grading read along the third spatial direction instead gives
 $$
-\Gamma_k=L_{i\vec e_k}(\sigma_3\otimes\mathrm I_2)=\sigma_3\otimes\sigma_k,
+\Gamma_k=L_{i\vec e_k}G_z,\qquad G_z=+iT_{tz},
 $$
 the Peirce grading. The two frames use the same left action and the same left matrices $L_k$; they differ only by the choice of direction in the multiplicity plane. That choice is a basis change of the copy label, not an algebraic obstruction.
 
-**The invariant.** No change of basis removes the $-i$. The unit $\vec e_k$ acts as an operator of square $-\mathrm I_4$, so its eigenvalues are $\pm i$; a gamma-like matrix with $\Gamma_k^2=+\mathrm I_4$ cannot represent $\vec e_k$. The closest gamma set is the Pauli set $-\sigma_k$, and that is what the frame uses: $\Gamma_k=\sigma_2\otimes\sigma_k$ is the gamma-like square root, and $\gamma^k=i\Gamma_k$ is the Lorentzian generator. The coefficient basis, where the four left matrices are real signed permutations, is the same representation with the $i$ hidden in the change of basis $C_{\Pi}$.
+**The invariant.** No change of basis removes the $-i$. The unit $\vec e_k$ acts as an operator of square $-\mathrm I_4$, so its eigenvalues are $\pm i$; a gamma-like matrix with $\Gamma_k^2=+\mathrm I_4$ cannot represent $\vec e_k$. The unit $i\vec e_k$ has square $+\mathrm I_4$, and its left matrix $L_{i\vec e_k}$ is the gamma-like square root in the spinor factor: the frame uses $\Gamma_k=L_{i\vec e_k}G$, and $\gamma^k=i\Gamma_k$ is the Lorentzian generator. The coefficient basis, where the four left matrices are real signed permutations, is the same representation with the $i$ hidden in the change of basis $C_{\Pi}$.
 
 **The gamma-built set is another representation.** The four matrices
 $$
 \mathrm I_4,\qquad \Gamma_t\Gamma_1,\qquad \Gamma_t\Gamma_2,\qquad -\Gamma_1\Gamma_2
 $$
-square to $-\mathrm I_4$ in the three vector slots, anticommute, and multiply as the quaternion units. They are a valid representation of $\mathbb{B}$, and they are not the left action: $\Gamma_t\Gamma_1=i\sigma_3\otimes\sigma_1$ is not $\mathrm I_2\otimes\sigma_1=L_{i\vec e_x}$. Choosing the Pauli set as the gamma frame is a choice of representation, not the only one; it is the choice that makes the generators of the frame the left matrices times one grading.
+square to $-\mathrm I_4$ in the three vector slots, anticommute, and multiply as the quaternion units. They are a valid representation of $\mathbb{B}$, and they are not the left action: the two diagonal blocks of $\Gamma_t\Gamma_1$ differ by a sign, whereas those of $L_{i\vec e_x}$ are equal. Choosing this block as the gamma frame is a choice of representation, not the only one; it is the choice that makes the generators of the frame the left matrices times one grading.
 
 **The frame is a choice of two directions.** The following normal form gives a frame for every orthogonal pair. Let $\beta,\delta$ be unit spatial directions, orthogonal:
 $$
@@ -376,7 +372,7 @@ $$
 $$
 *Proof.* $(\gamma^0)^2=-R_{\delta^2}=\mathrm{I}_4$; $(\gamma^k)^2=-L_{e_k^2}R_{\beta^2}=-\mathrm{I}_4$; $\gamma^0\gamma^k+\gamma^k\gamma^0=-L_{e_k}(R_{\delta\beta}+R_{\beta\delta})=0$; $\gamma^j\gamma^k+\gamma^k\gamma^j=-L_{e_je_k+e_ke_j}R_{\beta^2}=0$. For the pseudoscalar the left factor is $L_{e_te_xe_ye_z}=L_{-e_t}$ and the right factor is $R_{\beta^3\delta}=R_{-\beta\delta}$; the two signs cancel, so the product is $T_{e_t,\beta\delta}$.
 
-The reference frame is $(\beta,\delta)=(e_y,e_x)$, so $\beta\delta=-e_z$. It is the frame the physics articles use, and in the canonical frame it is the one displayed above: $\gamma^0=\sigma_1\otimes\mathrm I_2$ and $\gamma^k=i\sigma_2\otimes\sigma_k$. The earlier articles wrote the same five matrices after the Peirce change; the change is now the identity.
+The reference frame is $(\beta,\delta)=(e_y,e_x)$, so $\beta\delta=-e_z$. It is the frame the physics articles use, and in the canonical frame it is the one displayed above. The earlier articles wrote the same five matrices after the Peirce change; the change is now the identity.
 
 **The pair is the choice.** The five operators determine the pair: $\delta$ is the right factor of $\gamma^0$, and $\beta$ is the right factor of $\gamma^1$. Distinct pairs therefore give distinct frames, not two descriptions of one frame. For the corpus pair $(e_y,e_x)$ the five are cells. If $\beta$ is not one of $e_x,e_y,e_z$, the three spatial generators are not cells: $\gamma^k=iT_{e_k,\beta}=i\sum_\nu\beta_\nu T_{k\nu}$ is a single product of coefficient rank one, supported on several cells. If $\delta$ is not a coordinate axis, $\gamma^0$ is not a cell either. The cell property is a property of the pair, not of the construction.
 
@@ -411,7 +407,7 @@ The fourth column is $c$, the coefficient that makes the product equal $c\,T_{\m
 
 *Proof.* Direct multiplication with $T_{\mu\nu}T_{\rho\sigma}=T_{e_\mu e_\rho,\,e_\sigma e_\nu}$; the sixteen entries are distinct, so the products are the sixteen cells in some order, each with a unit coefficient. The pseudoscalar is the last row multiplied by $i$, which is the identity $\gamma_5=iT_{e_t,\beta\delta}$ with $\beta\delta=-e_z$.
 
-**In the canonical frame: the Dirac representation.** For this frame,
+**In the canonical frame: the Dirac representation.** In the Pauli shorthand of the remark, for this frame,
 $$
 \gamma^0=\begin{pmatrix}0&\mathrm{I}_2\\\mathrm{I}_2&0\end{pmatrix},\qquad
 \gamma^k=\begin{pmatrix}0&\sigma_k\\-\sigma_k&0\end{pmatrix},\qquad
@@ -521,7 +517,7 @@ $$
 $$
 In particular $\operatorname{rank}M=4$ exactly when $\tilde Q_1$ and $\tilde Q_2$ are units, and no product has rank $3$.
 
-*Proof.* By §*The Tensor Product*, $T_{\tilde Q_1,\tilde Q_2}=\mathsf{M}_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf{M}_2(\tilde Q_1)$. The singular values of a Kronecker product are the pairwise products of the singular values of the factors, so its rank is the product of the ranks. For $\mathsf{M}_2(\tilde Q_1)$ the determinant is $\langle\tilde Q_1\rangle_{\natural}$, so the rank is $2$ when $\langle\tilde Q_1\rangle_{\natural}\neq0$, $1$ when $\tilde Q_1\neq0$ and $\langle\tilde Q_1\rangle_{\natural}=0$, and $0$ when $\tilde Q_1=0$; the same holds for $\tilde Q_2$.
+*Proof.* By the legacy Pauli form of §*The Four Right Matrices*, $T_{\tilde Q_1,\tilde Q_2}=\mathsf{M}_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf{M}_2(\tilde Q_1)$. The singular values of a Kronecker product are the pairwise products of the singular values of the factors, so its rank is the product of the ranks. For $\mathsf{M}_2(\tilde Q_1)$ the determinant is $\langle\tilde Q_1\rangle_{\natural}$, so the rank is $2$ when $\langle\tilde Q_1\rangle_{\natural}\neq0$, $1$ when $\tilde Q_1\neq0$ and $\langle\tilde Q_1\rangle_{\natural}=0$, and $0$ when $\tilde Q_1=0$; the same holds for $\tilde Q_2$.
 
 **Theorem 5 (the two ranks are independent).** Neither $\operatorname{rank}M$ nor $\operatorname{rank}c(M)$ determines the other.
 (i) The rank-one matrix $M_1=(u_2+u_3)(u_2+u_3)^{\mathsf T}$, with $u_i$ the $i$-th standard column of $\mathbb{C}^4$, has $\operatorname{rank}M_1=1$ and $\ell(M_1)=4$.
@@ -598,7 +594,7 @@ The following are candidate articles, not results. None of them is written, and 
 
 ## Summary
 
-The two-sided operators on $\mathbb{B}$ form the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, whose matrix representation in the canonical frame is $M_4(\mathbb{C})$. The sixteen matrices $T_{\mu\nu}=L_\mu R_\nu$ are a basis. They are built from the four left matrices $L_\mu=\mathrm I_2\otimes\mathsf M_2(e_\mu)$ and the four right matrices $R_\nu=\mathsf M_2(e_\nu)^{\mathsf T}\otimes\mathrm I_2$, by ordinary matrix multiplication, so each is the Kronecker product $T_{\mu\nu}=\mathsf M_2(e_\nu)^{\mathsf T}\otimes\mathsf M_2(e_\mu)$. They are invertible, of determinant $1$, orthogonal for the Hilbert–Schmidt form, closed under multiplication up to sign, and their span contains singular matrices. The correct tensor product is at the algebra level and, in the canonical frame, at the $M_2$ level with no change of basis; the Kronecker product of two $4\times4$ matrices is not the construction. The bilinear sandwich is one member of the family, with the second parameter tied to the first. The Dirac gammas are $i$ times the five products $L_{e_t}R_\delta$ and $L_{e_k}R_\beta$ for a pair $(\beta,\delta)$ of orthogonal spatial directions; the reference frame takes $(e_y,e_x)$. Nothing selects the pair. Only pairs of coordinate axes make the five into cells; a generic pair gives five single products of coefficient rank one, each spread over several cells. The pair is a free parameter of the construction: no Clifford relation mentions it. What survives a change of pair are the relations, the isomorphism with $\mathrm{Cl}_{1,3}(\mathbb{C})$, and the type of each generator (right multiplication or two-sided); what does not survive is the matrices, the cell labels, the grade column and the sign of $\gamma_5$. In the corpus frame the sixteen products of the five gammas are the sixteen cells up to units.
+The two-sided operators on $\mathbb{B}$ form the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, whose matrix representation in the canonical frame is $M_4(\mathbb{C})$. The sixteen matrices $T_{\mu\nu}=L_\mu R_\nu$ are a basis. They are built from the four left matrices and the four right matrices, each right matrix read from the corresponding left one by one fixed exchange of the two mixed Peirce units: $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ and $T_{\mu\nu}=L_\mu R_\nu=L_\mu\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, by ordinary matrix multiplication. The Pauli–Kronecker display $T_{\mu\nu}=\mathsf M_2(e_\nu)^{\mathsf T}\otimes\mathsf M_2(e_\mu)$ is the legacy evaluation of the same identity. They are invertible, of determinant $1$, orthogonal for the Hilbert–Schmidt form, closed under multiplication up to sign, and their span contains singular matrices. The correct product is at the algebra level, and in matrices it is the ordinary product of a left matrix and a right matrix; the Kronecker product of two $4\times4$ matrices is not the construction, and the $M_2$ Kronecker display is its legacy form. The bilinear sandwich is one member of the family, with the second parameter tied to the first. The Dirac gammas are $i$ times the five products $L_{e_t}R_\delta$ and $L_{e_k}R_\beta$ for a pair $(\beta,\delta)$ of orthogonal spatial directions; the reference frame takes $(e_y,e_x)$. Nothing selects the pair. Only pairs of coordinate axes make the five into cells; a generic pair gives five single products of coefficient rank one, each spread over several cells. The pair is a free parameter of the construction: no Clifford relation mentions it. What survives a change of pair are the relations, the isomorphism with $\mathrm{Cl}_{1,3}(\mathbb{C})$, and the type of each generator (right multiplication or two-sided); what does not survive is the matrices, the cell labels, the grade column and the sign of $\gamma_5$. In the corpus frame the sixteen products of the five gammas are the sixteen cells up to units.
 
 For the product question, write $M=\sum c_{\mu\nu}T_{\mu\nu}$ with $c(M)_{\mu\nu}=\tfrac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$. Then $M=L_{\tilde Q_1}R_{\tilde Q_2}$ exactly when $c(M)=[Q_1][Q_2]^{\mathsf T}$, that is, exactly when $c(M)$ has rank one. The least number of products in a sum is $\operatorname{rank}c(M)$; every matrix is a sum of at most four, and a generic matrix needs four. The product set is the closed cone over the Segre $\mathbb{P}^3\times\mathbb{P}^3$, of dimension seven, not the algebra of dimension sixteen. Matrix rank does not decide the question: the rank-one block $M_1=(u_2+u_3)(u_2+u_3)^{\mathsf T}$ needs four products, while $P_+$ has rank two and is one product.
 
@@ -614,12 +610,13 @@ For the product question, write $M=\sum c_{\mu\nu}T_{\mu\nu}$ with $c(M)_{\mu\nu
 | $T_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}$ | the two-sided operator $\tilde Q_3\mapsto\tilde Q_1\tilde Q_3\tilde Q_2$ |
 | $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ | the coordinate column of $\tilde Q$ |
 | $T_{\mu\nu}=L_\mu R_\nu$ | the sixteen basis matrices |
+| $\mathsf S$ | the exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; $R_{\tilde Q}=\mathsf S L_{\tilde Q}^{\mathsf T}\mathsf S^{-1}$ |
 | $C_{\Pi}$ | the Peirce change, $\det C_{\Pi}=-\tfrac14$, from the canonical frame to the coefficient basis |
 | $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ | the bilinear sandwich |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic norm, the determinant of $\mathsf M_2(\tilde Q)$ |
 | $\beta,\delta$ | the two right directions of a frame, $\beta^2=\delta^2=-e_t$, $\beta\delta=-\delta\beta$ |
-| $G=\sigma_2\otimes\mathrm I_2$ | the grading in the multiplicity factor of the gamma frame |
-| $\Gamma_t,\Gamma_1,\Gamma_2,\Gamma_3$ | $\Gamma_t=\sigma_1\otimes\mathrm I_2$, $\Gamma_k=L_{i\vec e_k}G=\sigma_2\otimes\sigma_k$ |
+| $G=-iT_{ty}$ | the grading in the multiplicity factor of the gamma frame |
+| $\Gamma_t,\Gamma_1,\Gamma_2,\Gamma_3$ | $\Gamma_t=iT_{e_t,e_x}$, $\Gamma_k=L_{i\vec e_k}G$ |
 | $\gamma^0,\gamma^1,\gamma^2,\gamma^3,\gamma_5$ | one Dirac frame; five cells multiplied by $i$ in the reference frame |
 | $c(M)$ | the coefficient matrix, $c(M)_{\mu\nu}=\tfrac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$ |
 | $\ell(M)$ | the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |

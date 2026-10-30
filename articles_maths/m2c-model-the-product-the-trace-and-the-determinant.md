@@ -13,9 +13,17 @@ $$
 
 and extended by $\mathbb{C}$-linearity. This article owns the assignment itself and the algebra structure it transports: the product, the unit, the centre, the units and their inverses, and the sense in which the assignment is a choice.
 
-The three matrices are $-i$ times the Pauli matrices. The factor $i$ is forced by $\vec e_k^2=-e_t$, and the signs of the cross-relations are forced by $\vec e_x\vec e_y=\vec e_z$. Both are proved below, and neither is a convention of the representation: they are the algebra read in matrices.
+The three matrices are $-i$ times the Pauli matrices,
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices, and $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.
+$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix},
+$$
+
+so that $\mathsf M_2(\vec e_k)=-i\sigma_k$. The factor $i$ is forced by $\vec e_k^2=-e_t$, and the signs of the cross-relations are forced by $\vec e_x\vec e_y=\vec e_z$. Both are proved below, and neither is a convention of the representation: they are the algebra read in matrices.
+
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The central scalar is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$. The matrices $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices defined above, and $\epsilon=\mathsf{M}_2(-\vec e_y)=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$.
 
 **Boundaries.** The four forms and the four products are *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the trace and the determinant are *$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*; the Peirce coordinates, the matrix units and the two spinor planes are *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*. The $4\times4$ regular representation is *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_{\mathbb{B},L}$ of Biquaternions*. The algebra itself is *The Biquaternion Algebra*.
 
@@ -23,12 +31,12 @@ The three matrices are $-i$ times the Pauli matrices. The factor $i$ is forced b
 
 **The four units go to four matrices, and the four coefficients go to one matrix.**
 
-| Unit | Matrix | Square | Determinant |
-|---|---|---|---|
-| $e_t$ | $\mathrm I_2$ | $\mathrm I_2$ | $1$ |
-| $\vec e_x$ | $\begin{pmatrix}0&-i\\-i&0\end{pmatrix}$ | $-\mathrm I_2$ | $1$ |
-| $\vec e_y$ | $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ | $-\mathrm I_2$ | $1$ |
-| $\vec e_z$ | $\begin{pmatrix}-i&0\\0&i\end{pmatrix}$ | $-\mathrm I_2$ | $1$ |
+| Unit | Matrix | Pauli form | Square | Determinant |
+|---|---|---|---|---|
+| $e_t$ | $\mathrm I_2$ | — | $\mathrm I_2$ | $1$ |
+| $\vec e_x$ | $\begin{pmatrix}0&-i\\-i&0\end{pmatrix}$ | $-i\sigma_1$ | $-\mathrm I_2$ | $1$ |
+| $\vec e_y$ | $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ | $-i\sigma_2$ | $-\mathrm I_2$ | $1$ |
+| $\vec e_z$ | $\begin{pmatrix}-i&0\\0&i\end{pmatrix}$ | $-i\sigma_3$ | $-\mathrm I_2$ | $1$ |
 
 A general element is therefore
 
@@ -37,7 +45,8 @@ $$
 \begin{pmatrix}
 Q_t-iQ_z&-iQ_x-Q_y\\
 -iQ_x+Q_y&Q_t+iQ_z
-\end{pmatrix}.
+\end{pmatrix}
+=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3).
 $$
 
 The entries are linear combinations of two coefficients each. The four entries and the four coefficients carry the same data in two arrangements, and the arrangement is fixed by the assignment, not chosen per element.
@@ -79,13 +88,9 @@ This is not the case for the split-complex and reduced biquaternion algebras, wh
 
 ## The Signs and the Pauli Matrices
 
-**The factor $i$ is forced.** A real matrix squaring to $-\mathrm I_2$ is a complex structure; the three images must be three anticommuting complex structures. The assignment uses the Hermitian Pauli matrices multiplied by $-i$:
-
+**The factor $i$ is forced.** A real matrix squaring to $-\mathrm I_2$ is a complex structure; the three images must be three anticommuting complex structures. The assignment uses the Hermitian Pauli matrices of the Introduction multiplied by $-i$:
 $$
-\mathsf{M}_2(\vec e_k)=-i\sigma_k,\qquad
-\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad
-\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\quad
-\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+\mathsf{M}_2(\vec e_k)=-i\sigma_k.
 $$
 
 Each $\sigma_k$ is Hermitian and squares to $\mathrm I_2$, so $-i\sigma_k$ squares to $-\mathrm I_2$. The three anticommute, and their products reproduce the quaternion relations with the correct signs. The factor $i$ is not optional: a real matrix squaring to $-\mathrm I_2$ carries no real line to itself, and the complex structure it defines is the multiplication by $i$ that the representation must carry.
@@ -200,7 +205,7 @@ The assignment $\mathsf{M}_2$ sends $e_t$ to $\mathrm I_2$ and the three vector 
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis; $e_t$ the unit, $\vec e_k^2=-e_t$ |
 | $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
 | $\mathsf{M}_2$ | the fixed $2\times2$ matrix model |
-| $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices; $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
+| $\sigma_1,\sigma_2,\sigma_3$ | the Pauli matrices $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $\begin{pmatrix}0&-i\\i&0\end{pmatrix}$, $\begin{pmatrix}1&0\\0&-1\end{pmatrix}$; $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
 | $\epsilon=\mathsf{M}_2(-\vec e_y)$ | the matrix $\epsilon$ |
 | $Q_t=\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde Q)$ | the scalar part as half the trace |
 | $\operatorname{adj}$ | the classical adjugate, the image of ${}^{\natural}$ |
