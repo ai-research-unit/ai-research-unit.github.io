@@ -115,7 +115,7 @@ and for $f$ continuous and bounded the convergence is uniform on compact sets.
 
 *Proof.* The proof is the standard approximation argument of *Fourier Analysis on Euclidean Spaces*: the mass of $\varphi_\epsilon$ concentrates at the origin, and the continuity of translations in $L^p$ gives the convergence.
 
-**Remark (the algebra and the transform).** The Fourier transform is an isomorphism from the Banach algebra $L^1(\mathbb{C}^2)$ with convolution onto a closed subalgebra of $C_0(\widehat{\mathbb{C}^2})$ with pointwise multiplication. **The algebra is not unital**, because a unit would be a function whose transform is identically $1$, and no $L^1$ function has that transform; the approximate identities replace the unit. The same statements hold on $\mathbb{R}^4$, and the complex structure plays no role in this section.
+**Remark (the algebra and the transform).** The Fourier transform is an injective homomorphism from the Banach algebra $L^1(\mathbb{C}^2)$ with convolution into the algebra $C_0(\widehat{\mathbb{C}^2})$ with pointwise multiplication; its image is dense in the sup norm but is not closed. **The algebra is not unital**, because a unit would be a function whose transform is identically $1$, and no $L^1$ function has that transform; the approximate identities replace the unit. The same statements hold on $\mathbb{R}^4$, and the complex structure plays no role in this section.
 
 ## The Paley–Wiener Theorem
 

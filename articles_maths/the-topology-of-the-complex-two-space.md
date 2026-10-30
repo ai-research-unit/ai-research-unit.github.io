@@ -180,7 +180,7 @@ with all other reduced homology groups zero.
 
 *Proof.* The space $\mathbb{C}^2$ has $H_3=0$ because it is contractible, while the punctured space has $H_3=\mathbb{Z}$.
 
-**Remark (the link of the origin).** The sphere $S^3$ is the **link** of the origin in $\mathbb{C}^2$: it is the intersection of a small sphere around the origin with the space, and its topology records the local structure of the singularity at the origin. **In real dimension four the link of a point is a three-dimensional sphere**, and the complement of the point is a cylinder over that link. The same picture in the plane gives a circle: $\mathbb{C}\setminus\{0\}\cong S^1\times(0,\infty)$, which is the punctured plane of *Complex Topology*.
+**Remark (the link of the origin).** The sphere $S^3$ is the **link** of the origin in $\mathbb{C}^2$: it is the intersection of a small sphere around the origin with the space, and its topology records the local structure of the space at the origin. **In real dimension four the link of a point is a three-dimensional sphere**, and the complement of the point is a cylinder over that link. The same picture in the plane gives a circle: $\mathbb{C}\setminus\{0\}\cong S^1\times(0,\infty)$, which is the punctured plane of *Complex Topology*.
 
 **Remark (the fundamental group of a punctured space).** Removing a point from $\mathbb{R}^n$ does not change the fundamental group when $n\ge3$, because the complement deformation retracts onto $S^{n-1}$, which is simply connected. **The plane is the exception**: $\mathbb{R}^2\setminus\{0\}\simeq S^1$ has fundamental group $\mathbb{Z}$. The space $\mathbb{C}^2$ is on the simply connected side of that divide.
 

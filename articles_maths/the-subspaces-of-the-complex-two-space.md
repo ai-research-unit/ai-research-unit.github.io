@@ -155,7 +155,7 @@ of $\mathbb{CP}^1$. **The quadric $B=0$ meets the line at infinity in these two 
 
 *Proof.* Both are totally real: $Je_1=ie_1$ is not in the span of $e_1,e_2$, and $J(ie_1+e_2)=-e_1+ie_2$ is not in the span of $e_1,ie_1+e_2$. On the first, $\Omega(e_1,e_2)=0$; on the second, $\Omega(e_1,ie_1+e_2)=1$.
 
-**Remark (two Lagrangians, two geometries).** The $\omega$-Lagrangian lines are complex and form a compact $2$-parameter family; the $\Omega$-Lagrangian planes are totally real and form a $3$-parameter family that is not compact. **The two words Lagrangian refer to two different forms, and no plane is Lagrangian for both**: a complex line is $\omega$-Lagrangian and $\Omega$-symplectic, and an $\Omega$-Lagrangian plane is totally real and therefore contains no $\omega$-Lagrangian line.
+**Remark (two Lagrangians, two geometries).** The $\omega$-Lagrangian lines are complex and form a compact $2$-parameter family; the $\Omega$-Lagrangian planes are totally real and form a compact $3$-parameter family, the Lagrangian Grassmannian $\mathrm{U}(2)/\mathrm{O}(2)$. **The two words Lagrangian refer to two different forms, and no plane is Lagrangian for both**: a complex line is $\omega$-Lagrangian and $\Omega$-symplectic, and an $\Omega$-Lagrangian plane is totally real and therefore contains no $\omega$-Lagrangian line.
 
 ## The Grassmannians
 

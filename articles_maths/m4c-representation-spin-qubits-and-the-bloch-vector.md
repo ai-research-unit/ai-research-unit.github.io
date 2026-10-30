@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector__
+# __$M_4(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector__
 
 ## Introduction
 
@@ -6,24 +6,26 @@ The regular model carries two copies of the spinor module. A Hermitian element a
 
 This article develops the Hermitian basis, the spin operators, the pure and general states, the Bloch vector and the doubling. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and
 $$
-\Sigma_k=\mathsf{M}_4(i\vec e_k),
+\Sigma_k=\mathsf{M}_4^{L}(i\vec e_k),
 \qquad
-\mathsf{M}_4(\vec e_k)=-i\Sigma_k.
+\mathsf{M}_4^{L}(\vec e_k)=-i\Sigma_k.
 $$
 In the Peirce basis, $\Sigma_k=\operatorname{diag}(\sigma_k,\sigma_k)$; in the fixed coefficient basis the block form is conjugated by $S$.
 The Hermitian subspace is $\mathbb{M}_+$. A state is written $\tilde\varrho$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb{R}^3$.
 
-**Boundaries.** The two spinor planes are *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the spectral projectors are *$M_4(\mathbb{C})_L$ Model : The Spectral Projectors*; the physical reading is *The Pauli Correspondence and the Matrix Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
+**Boundaries.** The two spinor planes are *$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the spectral projectors are *$M_4(\mathbb{C})$ Model : The Spectral Projectors*; the physical reading is *The Pauli Correspondence and the Matrix Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Hermitian Basis
 
-**The Pauli matrices are the images of the Hermitian units.** Since $\mathsf{M}_4$ is $\mathbb{C}$-linear,
+**The Pauli matrices are the images of the Hermitian units.** Since $\mathsf{M}_4^{L}$ is $\mathbb{C}$-linear,
 $$
-\mathsf{M}_4(\vec e_k)=-i\Sigma_k,
+\mathsf{M}_4^{L}(\vec e_k)=-i\Sigma_k,
 \qquad
-\mathsf{M}_4(i\vec e_k)=\Sigma_k.
+\mathsf{M}_4^{L}(i\vec e_k)=\Sigma_k.
 $$
 
 | unit | image | square | Hermitian |
@@ -34,7 +36,7 @@ $$
 
 **The general element.** Expanding on the basis,
 $$
-\mathsf{M}_4(\tilde Q)=Q_t\mathrm I_4-i\bigl(Q_x\Sigma_1+Q_y\Sigma_2+Q_z\Sigma_3\bigr).
+\mathsf{M}_4^{L}(\tilde Q)=Q_t\mathrm I_4-i\bigl(Q_x\Sigma_1+Q_y\Sigma_2+Q_z\Sigma_3\bigr).
 $$
 
 **The Hermitian condition.** An element lies in $\mathbb{M}_+$ exactly when $Q_t$ is real and the three $Q_k$ are purely imaginary:
@@ -44,7 +46,7 @@ $$
 $$
 Its image is
 $$
-\mathsf{M}_4(\tilde Q)=q_t\mathrm I_4+q'_x\Sigma_1+q'_y\Sigma_2+q'_z\Sigma_3.
+\mathsf{M}_4^{L}(\tilde Q)=q_t\mathrm I_4+q'_x\Sigma_1+q'_y\Sigma_2+q'_z\Sigma_3.
 $$
 In the Peirce basis it is
 $$
@@ -65,7 +67,7 @@ $$
 $$
 \tilde S_k=\tfrac{\hbar}{2}i\vec e_k,
 \qquad
-\mathsf{M}_4(\tilde S_k)=\tfrac{\hbar}{2}\Sigma_k.
+\mathsf{M}_4^{L}(\tilde S_k)=\tfrac{\hbar}{2}\Sigma_k.
 $$
 They are Hermitian elements of $\mathbb{M}_+$; in the Peirce basis their images are block-diagonal Hermitian matrices.
 
@@ -133,7 +135,7 @@ $$
 \tilde\varrho=\tfrac12\bigl(e_t+i\vec r\bigr),
 \qquad \vec r\in\mathbb{R}^3,
 \qquad
-\mathsf{M}_4(\tilde\varrho)=\operatorname{diag}(\rho,\rho)
+\mathsf{M}_4^{L}(\tilde\varrho)=\operatorname{diag}(\rho,\rho)
 \quad\text{(Peirce basis)},
 \qquad
 \rho=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr).
@@ -193,7 +195,7 @@ $$
 r_k=2\bigl\langle\tilde{\varrho},i\vec e_k\bigr\rangle.
 $$
 
-*Proof.* The first identity follows from $\operatorname{Tr}\Sigma_k=0$ and $\operatorname{Tr}(\Sigma_j\Sigma_k)=4\delta_{jk}$, together with the normalization $\rho_4=\tfrac12\mathrm I_2\otimes\rho$. The second is the trace pairing of *$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces* applied to $\tilde{\varrho}$ and $i\vec e_k$, with the factor two of the duplication.
+*Proof.* The first identity follows from $\operatorname{Tr}\Sigma_k=0$ and $\operatorname{Tr}(\Sigma_j\Sigma_k)=4\delta_{jk}$, together with the normalization $\rho_4=\tfrac12\mathrm I_2\otimes\rho$. The second is the trace pairing of *$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces* applied to $\tilde{\varrho}$ and $i\vec e_k$, with the factor two of the duplication.
 
 **The reconstruction.** The three numbers $r_k$ determine the state, because
 $$
@@ -241,7 +243,7 @@ and the Bloch vector is the corresponding convex combination of the pure Bloch v
 $$
 S^3\longrightarrow S^2,\qquad \xi\longmapsto\vec r
 $$
-is the Hopf fibration, with fibre $S^1$; in the regular model the total space is the diagonal $S^3$ inside $S^3\times S^3$, and the base sphere and the fibre are the same. The left action preserves each copy and the right action mixes them, so the two copies give the two chiralities of *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
+is the Hopf fibration, with fibre $S^1$; in the regular model the total space is the diagonal $S^3$ inside $S^3\times S^3$, and the base sphere and the fibre are the same. The left action preserves each copy and the right action mixes them, so the two copies give the two chiralities of *$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
 **The copy label.** The doubled spinor is not a spinor of the four-level system: it is two copies of the same spinor, and the state is the product of the maximally mixed copy label with the algebraic state. The phase circle over each pure state is the fibre of *The Pauli Correspondence and the Matrix Image*.
 
@@ -263,7 +265,7 @@ The Hermitian basis of the regular image is $\mathrm I_4$ and the three Pauli ma
 
 | Symbol | Meaning |
 |---|---|
-| $\Sigma_k=\mathsf{M}_4(i\vec e_k)$ | the Pauli matrices, block diagonal in the Peirce basis |
+| $\Sigma_k=\mathsf{M}_4^{L}(i\vec e_k)$ | the Pauli matrices, block diagonal in the Peirce basis |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | the pure state of the algebra |
 | $\tfrac12(\mathrm I_4+\vec u\cdot\vec\Sigma)$ | its rank-two projector |
 | $\rho_4=\tfrac12\mathrm I_2\otimes\rho$ | the normalized $4\times4$ state |
@@ -272,8 +274,8 @@ The Hermitian basis of the regular image is $\mathrm I_4$ and the three Pauli ma
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two copies
-- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the projectors
+- [$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two copies
+- [$M_4(\mathbb{C})$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the projectors
 - [$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m2c-representation-spin-qubits-and-the-bloch-vector.html), for the $2\times2$ version
 - [Spin and the Three Elementary Carriers](../articles_physics/spin-and-the-three-elementary-carriers.html), for the spinor
 - [The Pauli Correspondence and the Matrix Image](../articles_physics/the-pauli-correspondence-and-the-matrix-image.html), for the physical reading

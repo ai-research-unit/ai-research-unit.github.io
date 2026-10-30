@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant__
+# __$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant__
 
 ## Introduction
 
@@ -6,23 +6,25 @@ The units of the biquaternion algebra are the invertible matrices, and the deter
 
 This article develops the group picture in the regular model: the isomorphism, the determinant sequence and its splittings, the geometry of the level sets, the $*$-unitary group and the polar decomposition, the Bruhat decomposition, the centre and the double covers. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and $\det\mathsf{M}_4(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$. The unit group of the algebra is $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$, and the norm-one group is $\mathbb{B}^{\times}_1=\{\tilde Q:N=1\}$. The image is $M_4(\mathbb{C})_L=\mathsf{M}_4(\mathbb{B})$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The norm is $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, and $\det\mathsf{M}_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$. The unit group of the algebra is $\mathbb{B}^{\times}=\{\tilde Q:N\neq0\}$, and the norm-one group is $\mathbb{B}^{\times}_1=\{\tilde Q:N=1\}$. The image is $M_4(\mathbb{C})_{\mathbb{B},L}=\mathsf{M}_4^{L}(\mathbb{B})$.
 
-**Boundaries.** The unit group as a topological group, its homotopy and its covering are *The Biquaternion Unit Group as a Topological Group*; the norm-one group and the polar factors are *The Polar Decomposition of a N-Regular Biquaternion*; the $*$-unitary group is *The Unitary Group of the Biquaternion Algebra*; the level sets of the norm and the sector are *The N-Regular Sector*; the polar decomposition of a matrix is *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*.
+**Boundaries.** The unit group as a topological group, its homotopy and its covering are *The Biquaternion Unit Group as a Topological Group*; the norm-one group and the polar factors are *The Polar Decomposition of a N-Regular Biquaternion*; the $*$-unitary group is *The Unitary Group of the Biquaternion Algebra*; the level sets of the norm and the sector are *The N-Regular Sector*; the polar decomposition of a matrix is *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Group Isomorphism
 
-**Theorem.** The map $\mathsf{M}_4$ restricts to an isomorphism of complex Lie groups
+**Theorem.** The map $\mathsf{M}_4^{L}$ restricts to an isomorphism of complex Lie groups
 $$
-\mathbb{B}^{\times}\longrightarrow GL_4(\mathbb{C})_L=\mathsf{M}_4(\mathbb{B}^{\times}),\qquad
-\tilde Q\longmapsto\mathsf{M}_4(\tilde Q),
+\mathbb{B}^{\times}\longrightarrow GL_4(\mathbb{C})_{\mathbb{B},L}=\mathsf{M}_4^{L}(\mathbb{B}^{\times}),\qquad
+\tilde Q\longmapsto\mathsf{M}_4^{L}(\tilde Q),
 $$
 onto a closed complex subgroup of $GL_4(\mathbb{C})$ isomorphic to $GL_2(\mathbb{C})$, and it carries the norm-one subgroup onto a subgroup of $SL_4(\mathbb{C})$ isomorphic to $SL_2(\mathbb{C})$:
 $$
 \{\tilde Q:\langle\tilde Q\rangle_{\natural}=1\}\cong SL_2(\mathbb{C})\subset SL_4(\mathbb{C}).
 $$
 
-*Proof.* The map is an injective algebra homomorphism, so it carries units to invertible matrices and inverses to inverses. It is holomorphic because it is complex linear in the four coefficients. The determinant of the image is the square of the norm, so the image of the norm-one set has determinant one and lies in $SL_4(\mathbb{C})$; its abstract group is $SL_2(\mathbb{C})$ because $\mathsf{M}_4$ is isomorphic to $\mathsf{M}_2$ on the algebra.
+*Proof.* The map is an injective algebra homomorphism, so it carries units to invertible matrices and inverses to inverses. It is holomorphic because it is complex linear in the four coefficients. The determinant of the image is the square of the norm, so the image of the norm-one set has determinant one and lies in $SL_4(\mathbb{C})$; its abstract group is $SL_2(\mathbb{C})$ because $\mathsf{M}_4^{L}$ is isomorphic to $\mathsf{M}_2$ on the algebra.
 
 **The inverse is polynomial.** The inverse matrix is the adjugate divided by the determinant, and both are polynomial in the entries; on the open set where the determinant is nonzero the inverse is holomorphic. The group isomorphism is therefore biholomorphic onto its image.
 
@@ -36,14 +38,14 @@ $$
 $$
 1\longrightarrow SL_2(\mathbb{C})\longrightarrow GL_2(\mathbb{C})\xrightarrow{\ \det\ }\mathbb{C}^{\times}\longrightarrow1.
 $$
-The kernel of the determinant is $SL_2(\mathbb{C})$ by definition; the determinant is surjective because $\operatorname{diag}(\lambda,1)$ has determinant $\lambda$; and $SL_2$ is normal because the determinant is a homomorphism. In the regular model the same sequence is read on the image, with $\det\mathsf{M}_4(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$.
+The kernel of the determinant is $SL_2(\mathbb{C})$ by definition; the determinant is surjective because $\operatorname{diag}(\lambda,1)$ has determinant $\lambda$; and $SL_2$ is normal because the determinant is a homomorphism. In the regular model the same sequence is read on the image, with $\det\mathsf{M}_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$.
 
 **The non-central splitting.** The sequence splits, but not centrally. The map
 $$
 s:\mathbb{C}^{\times}\to GL_2(\mathbb{C}),\qquad
 s(\lambda)=\operatorname{diag}(\lambda,1),
 $$
-is a homomorphism with $\det s(\lambda)=\lambda$, so $GL_2\cong SL_2\rtimes\mathbb{C}^{\times}$ as a semidirect product, the action of $\lambda$ on $SL_2$ being conjugation by $\operatorname{diag}(\lambda,1)$. In the regular model the same splitting is the image under $\mathsf{M}_4$, with $\mathsf{M}_4(\operatorname{diag}(\lambda,1))$ block diagonal.
+is a homomorphism with $\det s(\lambda)=\lambda$, so $GL_2\cong SL_2\rtimes\mathbb{C}^{\times}$ as a semidirect product, the action of $\lambda$ on $SL_2$ being conjugation by $\operatorname{diag}(\lambda,1)$. In the regular model the same splitting is the image under $\mathsf{M}_4^{L}$, with $\mathsf{M}_4^{L}(\operatorname{diag}(\lambda,1))$ block diagonal.
 
 **No central splitting.** A central splitting would send $\lambda$ to a scalar matrix $\mu(\lambda)\mathrm I_4$ with $\det(\mu(\lambda)\mathrm I_4)=\mu(\lambda)^4=\lambda$. A homomorphism $\mu$ would give $\mu(1)=1$ and $\mu(-1)^4=-1$, while $\mu((-1)(-1))=\mu(1)=1$; hence $\mu(-1)^4=1$, a contradiction. There is therefore no subgroup of the image isomorphic to $\mathbb{C}^{\times}$, central in the image, and mapping isomorphically to the determinant. The obstruction is the fourth power in the determinant of a scalar matrix in the regular model, and it is the group-level form of the fact that the norm of a central element is a square and the determinant is its square.
 
@@ -80,7 +82,7 @@ $$
 $$
 with the diagonal embedding. In the regular model the same action is read blockwise, and the level set is the image of the $2\times2$ one.
 
-**The cone.** The level set $c=0$ is the null cone, and it is not smooth: it is the cone over the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$, with the apex at the origin. The apex is the only singular point, and it is the image of the zero element. In the regular model the cone is the intersection of the image with the determinant-zero locus, and it is the subject of *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*.
+**The cone.** The level set $c=0$ is the null cone, and it is not smooth: it is the cone over the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$, with the apex at the origin. The apex is the only singular point, and it is the image of the zero element. In the regular model the cone is the intersection of the image with the determinant-zero locus, and it is the subject of *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*.
 
 ## The Unit Group and the $*$-Unitary Group
 
@@ -88,7 +90,7 @@ with the diagonal embedding. In the regular model the same action is read blockw
 $$
 \mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong U(2),
 $$
-embedded in $U(4)$ by $\mathsf{M}_4$. It is the maximal compact subgroup of the image.
+embedded in $U(4)$ by $\mathsf{M}_4^{L}$. It is the maximal compact subgroup of the image.
 
 **The special $*$-unitary subgroup.** The intersection with the norm-one group is $SU(2)$, of real dimension three, the group of rotation rotors. It is the maximal compact subgroup of $SL_2$, and in the regular model it is the diagonal copy $\operatorname{diag}(U,U)$ of $SU(2)$ inside $SU(4)$.
 
@@ -96,11 +98,11 @@ embedded in $U(4)$ by $\mathsf{M}_4$. It is the maximal compact subgroup of the 
 $$
 GL_4(\mathbb{C})_L=Herm^{>0}_L\cdot U(2)_L,
 $$
-and the product is unique, because the two factors are the images of the $2\times2$ factors and $\mathsf{M}_4$ is injective. Passing to determinants, $\det P=r^4$ and $\det V=\zeta^4$ with $|\zeta|=1$. On the norm-one group the decomposition restricts to
+and the product is unique, because the two factors are the images of the $2\times2$ factors and $\mathsf{M}_4^{L}$ is injective. Passing to determinants, $\det P=r^4$ and $\det V=\zeta^4$ with $|\zeta|=1$. On the norm-one group the decomposition restricts to
 $$
 SL_2(\mathbb{C})=Herm^{>0}_1\cdot SU(2),
 $$
-with $Herm^{>0}_1$ the positive Hermitian matrices of determinant one. The two factors have real dimensions three and three, and the product is a diffeomorphism. The statement is developed in *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*.
+with $Herm^{>0}_1$ the positive Hermitian matrices of determinant one. The two factors have real dimensions three and three, and the product is a diffeomorphism. The statement is developed in *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*.
 
 **The topology.** The image of $GL_2(\mathbb{C})$ is connected and has the homotopy type of $U(2)$; its fundamental group is $\mathbb{Z}$, generated by the determinant circle. The norm-one subgroup is simply connected and has the homotopy type of $SU(2)=S^3$. The determinant sequence is the fibration that exhibits the first statement from the second. The details are *The Biquaternion Unit Group as a Topological Group*, §*The Homotopy Groups*.
 
@@ -126,7 +128,7 @@ GL_2(\mathbb{C})=B\sqcup BwB.
 $$
 The first cell has complex dimension three and the big cell complex dimension four; the big cell is the nonvanishing locus of the entry $c$, hence open and dense. In the regular model the same decomposition is read on the two blocks, with the Weyl element doubled.
 
-**The regular reading.** The Borel subgroup of the image is the stabiliser of a minimal left ideal, and the big cell is the complement of the stabiliser. The two cells are the two orbits of the Borel subgroup on the projective line, and the projective line is *$M_4(\mathbb{C})_L$ Representation : The Projective Line and the Möbius Action*.
+**The regular reading.** The Borel subgroup of the image is the stabiliser of a minimal left ideal, and the big cell is the complement of the stabiliser. The two cells are the two orbits of the Borel subgroup on the projective line, and the projective line is *$M_4(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
 
 ## The Centre and the Projective Group
 
@@ -142,7 +144,7 @@ of complex dimension three. It is the group of algebra automorphisms of $M_2(\ma
 
 ## The Double Cover
 
-**The common kernel.** Three actions of $SL_2(\mathbb{C})$ have the same kernel $\{\pm\mathrm I_2\}$: conjugation on $M_2(\mathbb{C})$, conjugation on the Hermitian matrices, and the Möbius action on $\mathbb{P}^1$. In the regular model the same three actions have kernel $\{\pm\mathrm I_4\}$, because $\mathsf{M}_4(-\mathrm I_2)=-\mathrm I_4$. In each case the kernel is the centre of $SL_2$, and the quotient is the image.
+**The common kernel.** Three actions of $SL_2(\mathbb{C})$ have the same kernel $\{\pm\mathrm I_2\}$: conjugation on $M_2(\mathbb{C})$, conjugation on the Hermitian matrices, and the Möbius action on $\mathbb{P}^1$. In the regular model the same three actions have kernel $\{\pm\mathrm I_4\}$, because $\mathsf{M}_4^{L}(-\mathrm I_2)=-\mathrm I_4$. In each case the kernel is the centre of $SL_2$, and the quotient is the image.
 
 **The rotation cover.** The conjugation action of $SU(2)$ on the Hermitian traceless matrices
 $$
@@ -218,7 +220,7 @@ The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are 
 |---|---|
 | $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ | the unit group |
 | $\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$ | the norm-one group |
-| $\mathsf{M}_4$ | the left regular matrix, $\det\mathsf{M}_4(\tilde Q)=N^2$ |
+| $\mathsf{M}_4^{L}$ | the left regular matrix, $\det\mathsf{M}_4^{L}(\tilde Q)=N^2$ |
 | $\mathbb{C}^{\times}\mathrm I_4$ | the centre of the image |
 | $U(2)_L$ | the $*$-unitary subgroup, maximal compact |
 | $SU(2)_L$ | the rotation rotors, $\operatorname{diag}(U,U)$ |
@@ -234,9 +236,9 @@ The units of $\mathbb{B}$ are $GL_2(\mathbb{C})$, and the norm-one elements are 
 - [The N-Regular Sector](the-n-regular-sector.html), for the sector and its level sets
 - [The Polar Decomposition of a N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the unit factor
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $U(2)$
-- [$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
-- [$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the factorization
+- [$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
+- [$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the factorization
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the double covers of $SO(3)$ and $SO^+(1,3)$
-- [$M_4(\mathbb{C})_L$ Representation : The Projective Line and the Möbius Action](m4c-representation-the-projective-line-and-the-mobius-action.html), for the Möbius cover
+- [$M_4(\mathbb{C})$ Representation : The Projective Line and the Möbius Action](m4c-representation-the-projective-line-and-the-mobius-action.html), for the Möbius cover
 - [$M_2(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant](m2c-representation-gl2-sl2-and-the-determinant.html), for the $2\times2$ version
 - [Lie Groups](lie-groups.html), for $GL_2$ and $SL_2$

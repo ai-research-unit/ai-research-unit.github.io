@@ -314,7 +314,7 @@ Each of the four marks has a fixed space, and each of these is one of the **rema
 
 The tilde-marked glyphs a reader meets in every article are collected here, with the role, the formula, the space and the meaning of each, after the section that defines the conjugations and before the sections that define the norms. The basis, the central $i$, the charges, the pure elements, the glyphs of the reduced biquaternion layer and the tilde-free relations carry no tilde and are collected in §*Summary of Notation*.
 
-**Scope: tilde glyphs only.** Every catalogued symbol carries a tilde. Four kinds of glyph are outside the scope and are not listed among the allowed uses: a matrix, $I_n$, $\mathsf{M}_2$, $\mathsf{M}_4$; a pure element written with an arrow, $\vec Q$, $\vec q$, $\vec u$, $\vec U$, $\vec\Xi$, $\vec\Upsilon$, $\vec\pi$; a mark that is not an element; and every glyph of the reduced, tilde-free layers, $\Pi_\pm$, $\Xi_\pm$. The first is fixed by the rule that a matrix carries no tilde, §*General Matrix Conventions*; the others are elements of other layers or of no layer at all. The operator section states the rule that pairs the two marks; it is not a catalogue of arrowed glyphs.
+**Scope: tilde glyphs only.** Every catalogued symbol carries a tilde. Four kinds of glyph are outside the scope and are not listed among the allowed uses: a matrix, $I_n$, $\mathsf{M}_2$, $\mathsf{M}_4^{L}$; a pure element written with an arrow, $\vec Q$, $\vec q$, $\vec u$, $\vec U$, $\vec\Xi$, $\vec\Upsilon$, $\vec\pi$; a mark that is not an element; and every glyph of the reduced, tilde-free layers, $\Pi_\pm$, $\Xi_\pm$. The first is fixed by the rule that a matrix carries no tilde, §*General Matrix Conventions*; the others are elements of other layers or of no layer at all. The operator section states the rule that pairs the two marks; it is not a catalogue of arrowed glyphs.
 
 The tilde marks a quaternionic factor. A base glyph counts every numbered and subscripted variant.
 
@@ -1031,33 +1031,61 @@ $$
 
 ## The Matrix Representations
 
-The algebra is read in matrices in two ways, and the two answer different questions. The **4×4 reading** is the regular representation: multiplication by an element becomes a linear map on the coefficient quadruple, and the matrices are operators on that quadruple. The **2×2 reading** is the isomorphism $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$: the elements themselves become complex matrices. They are different representations, not two sizes of one: the $4\times4$ matrices act on $\mathbb{C}^4$ and the $2\times2$ matrices on $\mathbb{C}^2$.
+The algebra is read in matrices in two ways, and the two answer different questions. The **2×2 reading** is the isomorphism $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$: the elements themselves become complex matrices, and this is the only reading whose matrices are of the algebra's own size. The **4×4 reading** is the regular representation $\rho_L : \mathbb{B} \to \mathrm{End}_{\mathbb{C}}(\mathbb{B}) = M_4(\mathbb{C})$: an element becomes the operator of left multiplication on the algebra taken as a complex vector space, and its matrix acts on the coordinate column of the frame. The image is the four-dimensional subspace $\mathbb{B}_L$ of $M_4(\mathbb{C})$, not the ambient algebra: the two readings are different representations, not two sizes of one, and only $\mathsf{M}_2$ is an isomorphism of the algebra onto matrices of its own size.
 
 ### General Matrix Conventions
 
-**A matrix carries no tilde, and the ban is absolute.** The tilde marks an element of the algebra, not its image. The identity is $I_n$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_4(e_t)=I_4$, and the image of an element is written $\mathsf{M}_2(\tilde Q)$ or $\mathsf{M}_4(\tilde Q)$, with the tilde inside the argument. **An array of biquaternions carries no tilde either.** A matrix whose entries are biquaternions is written $\mathsf{Q}=(\tilde Q_{\lambda\rho})\in\mathbb{B}^{n\times m}$: the tildes sit on the entries, and the array that holds them has none, whatever its size and whatever its entries. The identity matrix never takes a tilde; nor do the regular matrices $\mathsf{M}_4$ and $\mathsf{M}_4^{R}$, whose subscript gives the size and whose superscript, where present, gives the side of the multiplication. The same ban covers a matrix of biquaternions and a colour matrix.
+**A matrix carries no tilde, and the ban is absolute.** The tilde marks an element of the algebra, not its image. The identity is $I_n$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_4^{L}(e_t)=I_4$, and the image of an element is written $\mathsf{M}_2(\tilde Q)$ or $\mathsf{M}_4^{L}(\tilde Q)$, with the tilde inside the argument. **An array of biquaternions carries no tilde either.** A matrix whose entries are biquaternions is written $\mathsf{Q}=(\tilde Q_{\lambda\rho})\in\mathbb{B}^{n\times m}$: the tildes sit on the entries, and the array that holds them has none, whatever its size and whatever its entries. The identity matrix never takes a tilde; nor do the regular matrices $\mathsf{M}_4^{L}$ and $\mathsf{M}_4^{R}$, whose subscript gives the size and whose superscript gives the side of the multiplication. The same ban covers a matrix of biquaternions and a colour matrix.
 
-**The ban is on the array, not on its argument.** The writings $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4(\tilde Q)$ are correct because the tilde stays inside the argument. A tilde on the array — $\tilde I_n$, $\tilde{\mathsf{M}}_2$, $\tilde{\mathcal Q}$, or $\tilde Q$ where the matrix $\mathsf{M}_2(\tilde Q)$ is meant — is forbidden and is a defect to be rewritten, not a variant to be read: no object is behind it, and the element it would name is already named by the argument.
+**The ban is on the array, not on its argument.** The writings $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4^{L}(\tilde Q)$ are correct because the tilde stays inside the argument. A tilde on the array — $\tilde I_n$, $\tilde{\mathsf{M}}_2$, $\tilde{\mathcal Q}$, or $\tilde Q$ where the matrix $\mathsf{M}_2(\tilde Q)$ is meant — is forbidden and is a defect to be rewritten, not a variant to be read: no object is behind it, and the element it would name is already named by the argument.
 
-**The letter $M$ belongs to matrices.** It names a matrix and nothing else: the images $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4(\tilde Q)$, the matrix algebras $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$, and an entrywise matrix in a proof. No element of the algebra is written $M$, with or without a tilde.
+**The letter $M$ belongs to matrices.** It names a matrix and nothing else: the images $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4^{L}(\tilde Q)$, the matrix algebras $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$, and an entrywise matrix in a proof. No element of the algebra is written $M$, with or without a tilde.
+
+**The copy is named, the ambient is not.** The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and each is the commutant of the other. $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the ambient operator algebra and is never called a biquaternion algebra. The writing $M_4(\mathbb{C})_L$, read as the name of an algebra, is retired and is read here as $M_4(\mathbb{C})_{\mathbb{B},L}$; the same holds on the right. The convention is fixed in *Conventions in Mathematics*, §*The Matrix Models*.
 
 ### The 4×4 Matrix Representation
 
-Multiplication is read as a linear map on the coefficient quadruple, in *The Element and Operator Representations*. The four units act by
+**The canonical frame.** The frame is fixed in *Conventions in Mathematics*, §*The Matrix Models*: the standard pair and the mixed units
 
 $$
-\mathsf{M}_4(e_t) = I_4 = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \qquad
-\mathsf{M}_4(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix},
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
 $$
 
+with $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$, in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. In this frame
+
 $$
-\mathsf{M}_4(\vec e_y) = \begin{pmatrix} 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \end{pmatrix}, \qquad
-\mathsf{M}_4(\vec e_z) = \begin{pmatrix} 0 & 0 & 0 & -1 \\ 0 & 0 & -1 & 0 \\ 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix},
+\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),\qquad
+\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2 ,
 $$
 
-and each of the three vector matrices squares to $-I_4$, as $\vec e_k^2 = -e_t$ requires. For a general element, left multiplication by $\tilde{Q}$ is the matrix $\mathsf{M}_4(\tilde{Q})$, and right multiplication is the same construction, giving $\mathsf{M}_4^{R}(e_t) = I_4$ and $\mathsf{M}_4^{R}(\vec e_k) = \eta\,\mathsf{M}_4(\vec e_k)^{\mathsf{T}}\eta$, with $\eta = \operatorname{diag}(-1,+1,+1,+1)$. The two sides are distinguished on purpose and are not interchangeable: $\mathsf{M}_4^{R}(\tilde{Q})$ is not $\mathsf{M}_4(\tilde{Q})^{\mathsf{T}}$, and what relates them is the metric, not a relabelling.
+so that the left copy is the set $I_2\otimes A$ and the right copy the set $B\otimes I_2$: the regular matrix is the $2\times2$ matrix taken twice, once per tensor factor. The first factor is the multiplicity, the second the matrix of the element.
 
-The determinant and the trace of the two regular matrices, the relation between $\mathsf{M}_4^{R}$ and $\mathsf{M}_4$, and the volume identity $\det\mathsf{M}_4(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}^2$ are *The $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
+**The invariants.** With $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$,
+
+$$
+\det\mathsf{M}_4^{L}(\tilde Q)=\det\mathsf{M}_4^{R}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},
+\qquad
+\operatorname{tr}\mathsf{M}_4^{L}(\tilde Q)=\operatorname{tr}\mathsf{M}_4^{R}(\tilde Q)=4\,\mathrm{Sc}(\tilde Q).
+$$
+
+The determinant is the square of the biquaternion norm and the trace is four times the scalar part; both are properties of the element, read in the regular representation. The explicit frame, the product, the determinant and the volume identity are *The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* in the mathematics corpus, and the operator reading is *The Element and Operator Representations*.
+
+**No entry is read without the frame.** Another gauge or another order of the four basis elements gives another matrix of the same operator; the block formula holds in the canonical frame alone. The explicit matrices of the model articles are in the coefficient basis, and $S$ carries them to the canonical frame. The copy and the element are what the frame does not change.
+
+### The Clifford Map
+
+**The Clifford map is $\iota_{\mathrm{Cl}}$, and it is not a regular matrix.** The articles on the Dirac algebra identify the biquaternion algebra with the even subalgebra of $\mathrm{Cl}_{1,3}$ by
+
+$$
+\iota_{\mathrm{Cl}}(e_t)=I_4,\qquad
+\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3,\qquad
+\iota_{\mathrm{Cl}}(\vec e_y)=\gamma^3\gamma^1,\qquad
+\iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2,\qquad
+\iota_{\mathrm{Cl}}(i)=-\gamma^0\gamma^1\gamma^2\gamma^3 .
+$$
+
+The two are different objects: $\mathsf{M}_4^{L}$ is the matrix of left multiplication on $\mathbb{B}$, in the canonical frame, while $\iota_{\mathrm{Cl}}$ identifies $\mathbb{B}$ with the even subalgebra of $\mathrm{Cl}_{1,3}$. Their images are both $4\times4$ matrices, and that is all they share. A bare $\mathsf{M}_4$ is written for neither. The regular matrices carry $L$ or $R$, and the Clifford map carries $\iota_{\mathrm{Cl}}$; the dictionary is *The Dirac Algebra and Biquaternions — A Dictionary*.
 
 ### The 2×2 Matrix Representation
 
@@ -1479,6 +1507,8 @@ The tilde-marked element glyphs are collected in §*The Most Common Quaternions 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
+| $M_4(\mathbb{C})_{\mathbb{B},L}$, $\mathbb{B}_L$ | The image of the left regular representation $\rho_L$, a four-dimensional subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$; its commutant is $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B},R}$, the image of $\rho_R$ |
+| $\iota_{\mathrm{Cl}}$ | The identification of $\mathbb{B}$ with the even subalgebra of $\mathrm{Cl}_{1,3}$, $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3$ and $\iota_{\mathrm{Cl}}(i)=-\gamma^0\gamma^1\gamma^2\gamma^3$; a Clifford map, not a regular matrix |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde q'$ | The antiquaternion part of $\tilde Q=\tilde q+i\tilde q'$: the quaternion with real coefficients $q'_t\,e_t+q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z$, the split by the coefficient prime (§*The Quaternion and Antiquaternion Subspaces*) |

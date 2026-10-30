@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes__
+# __$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The left regular matrix reads a biquaternion as an operator on its own four-dime
 
 This article develops the Peirce table, the coordinate isomorphism, the systems of matrix units, the two planes and the left and right actions in the $4\times4$ model. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*. It uses no form, no norm and no module.
 
-**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the left regular matrix $\mathsf M_4$ are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*: the $\mu$-th column of $\mathsf M_4(\tilde Q)$ is the coordinate column of $\tilde Q e_\mu$. The standard pair and the standard nilpotents are
+**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the left regular matrix $\mathsf M_4$ are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*: the $\mu$-th column of $\mathsf M_4(\tilde Q)$ is the coordinate column of $\tilde Q e_\mu$. The standard pair and the standard nilpotents are
 
 $$
 \tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
@@ -34,7 +34,9 @@ $$
 =\begin{pmatrix}\mathsf M_2(\tilde Q)&0\\0&\mathsf M_2(\tilde Q)\end{pmatrix}.
 $$
 
-**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the $2\times2$ picture is *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the right regular matrix is *$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser*. The module reading is *The Minimal Left Ideals* and is not used here.
+**Boundaries.** The abstract Peirce decomposition is *The Peirce Decomposition of the Biquaternion Algebra*; the two planes and the exchange are *Spinors as Peirce Coordinates in the Biquaternion Algebra*; the $2\times2$ picture is *$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*; the right regular matrix is *$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*. The module reading is *The Minimal Left Ideals* and is not used here.
+
+**Frame.** The Peirce basis used below is the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*; a matrix in the coefficient basis is carried to it by the change $S$ of *The Product, the Trace and the Determinant*, with $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Peirce Table
 
@@ -266,6 +268,6 @@ The Peirce coordinates of the standard pair are the entries of the $2\times2$ mo
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners and the Peirce table
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the two planes, their adapted bases and the exchange
 - [$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the $2\times2$ version
-- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the regular matrix
-- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the right regular matrix
+- [$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the regular matrix
+- [$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the right regular matrix
 - [Nilpotents](nilpotents.html), for the nilpotent cone

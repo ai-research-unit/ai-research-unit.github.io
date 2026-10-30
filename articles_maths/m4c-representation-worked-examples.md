@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : Worked Examples__
+# __$M_4(\mathbb{C})$ Representation : Worked Examples__
 
 ## Introduction
 
@@ -6,9 +6,9 @@ This article computes eight regular matrices through the same checklist used in 
 
 The article is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : Worked Examples* and the capstone of the series.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. In the Peirce basis,
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. In the Peirce basis,
 $$
-S^{-1}\mathsf{M}_4(\tilde Q)S=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q)=\operatorname{diag}(A,A),
+S^{-1}\mathsf{M}_4^{L}(\tilde Q)S=\mathrm I_2\otimes\mathsf{M}_2(\tilde Q)=\operatorname{diag}(A,A),
 \qquad
 A=\mathsf{M}_2(\tilde Q),
 $$
@@ -23,9 +23,11 @@ Q_x=\tfrac{i(b+c)}{2},\quad
 Q_y=\tfrac{c-b}{2},\quad
 Q_z=\tfrac{i(a-d)}{2},
 $$
-for $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. The trace is $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, each twice.
+for $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. The trace is $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2$, and the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, each twice.
 
-**Boundaries.** The construction is *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*; the eigenbasis is *$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix*; the projectors are *$M_4(\mathbb{C})_L$ Model : The Spectral Projectors*; the polar factors are *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*; the rank is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*; the groups are *$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
+**Boundaries.** The construction is *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*; the eigenbasis is *$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the projectors are *$M_4(\mathbb{C})$ Model : The Spectral Projectors*; the polar factors are *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the rank is *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the groups are *$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant*.
+
+**Frame.** The Peirce basis used below is the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*; a matrix in the coefficient basis is carried to it by the change $S$ of *The Product, the Trace and the Determinant*, with $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Method
 
@@ -261,7 +263,7 @@ The checks are collected in one table.
 
 | Article | Subject | Key formula |
 |---|---|---|
-| The Matrix Product and the Algebra Structure | the model | $\mathsf{M}_4(\tilde Q)$ injective, $\operatorname{diag}(A,A)$ in the Peirce basis |
+| The Matrix Product and the Algebra Structure | the model | $\mathsf{M}_4^{L}(\tilde Q)$ injective, $\operatorname{diag}(A,A)$ in the Peirce basis |
 | The Four Words and the Four Traces | the trace pairing | $\operatorname{Tr}(XY)=4\langle\tilde X,\tilde Y\rangle$ |
 | Peirce Coordinates, Matrix Units and the Spinor Planes | the corners and the spinors | the four entries, each doubled; the two planes $\mathbb{B}\Pi_\pm$ |
 | Trace, Determinant and the Biquaternion Norm | the invariants | $\operatorname{Tr}X=4Q_t$, $\det X=N^2$ |
@@ -276,7 +278,7 @@ The checks are collected in one table.
 | The Six Subspaces as Matrix Conditions | the real forms | Hermitian, anti-Hermitian, quaternion, anti-quaternion |
 | Worked Examples | this article | the eight matrices and the roster |
 | $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant | the groups | $\det X=N^2$, $\ker\det=\{N=\pm1\}$ |
-| The Functional Calculus | the exponential, the logarithm and the roots | $\exp X=\mathsf{M}_4(\exp\tilde Q)$, $\log X=\mathsf{M}_4(\log\tilde Q)$, $X^{1/2}=(X+\sqrt N\mathrm I_4)/\sqrt{\tfrac12\operatorname{Tr}X+2\sqrt N}$ |
+| The Functional Calculus | the exponential, the logarithm and the roots | $\exp X=\mathsf{M}_4^{L}(\exp\tilde Q)$, $\log X=\mathsf{M}_4^{L}(\log\tilde Q)$, $X^{1/2}=(X+\sqrt N\mathrm I_4)/\sqrt{\tfrac12\operatorname{Tr}X+2\sqrt N}$ |
 | The Sandwich as a Matrix Congruence | the action | $X\mapsto MXM^{\dagger}$, $\det$ scales by $\lvert N\rvert^4$ |
 | The Projective Line and the Möbius Action | the ideals | $J_L$, $z\mapsto(az+b)/(cz+d)$ |
 
@@ -288,7 +290,7 @@ The eight examples exhibit the scalar, the Jordan block, the distinct case, the 
 
 | Symbol | Meaning |
 |---|---|
-| $X=\mathsf{M}_4(\tilde Q)$ | the regular matrix |
+| $X=\mathsf{M}_4^{L}(\tilde Q)$ | the regular matrix |
 | $A=\mathsf{M}_2(\tilde Q)$ | the $2\times2$ block |
 | $\tau=2Q_t$, $\delta=N$ | the trace and determinant of $A$ |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, each twice |
@@ -297,8 +299,8 @@ The eight examples exhibit the scalar, the Jordan block, the distinct case, the 
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the model
-- [$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the basis
+- [$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the model
+- [$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the basis
 - [$M_2(\mathbb{C})$ Representation : Worked Examples](m2c-representation-worked-examples.html), for the $2\times2$ version
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for the algebra
 - *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the algebra

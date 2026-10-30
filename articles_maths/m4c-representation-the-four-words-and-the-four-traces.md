@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces__
+# __$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces__
 
 ## Introduction
 
@@ -6,22 +6,24 @@ The four products of the biquaternion algebra become four words in the regular m
 
 This article writes the dictionary. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces*, and the proof is the same trace identity with the normalization changed.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. Write
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. Write
 $$
-X=\mathsf{M}_4(\tilde P),\qquad Y=\mathsf{M}_4(\tilde Q),\qquad \operatorname{Sc}\tilde R=\tfrac14\operatorname{Tr}\mathsf{M}_4(\tilde R).
+X=\mathsf{M}_4^{L}(\tilde P),\qquad Y=\mathsf{M}_4^{L}(\tilde Q),\qquad \operatorname{Sc}\tilde R=\tfrac14\operatorname{Tr}\mathsf{M}_4^{L}(\tilde R).
 $$
-The two matrix involutions are the transpose and the conjugate transpose. By *$M_4(\mathbb{C})_L$ Representation : The Conjugations and the Adjoints*,
+The two matrix involutions are the transpose and the conjugate transpose. By *$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints*,
 $$
-\mathsf{M}_4(\tilde P^{\natural})=X^{\mathsf T},\qquad \mathsf{M}_4(\tilde P^{*})=X^{\dagger}.
+\mathsf{M}_4^{L}(\tilde P^{\natural})=X^{\mathsf T},\qquad \mathsf{M}_4^{L}(\tilde P^{*})=X^{\dagger}.
 $$
 
-**Boundaries.** The four products and their relations are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the conjugations are *$M_4(\mathbb{C})_L$ Representation : The Conjugations and the Adjoints*; the trace and determinant are *$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm*.
+**Boundaries.** The four products and their relations are *The Four General Products and Their Relations over the Biquaternion Algebra*; the four forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the conjugations are *$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints*; the trace and determinant are *$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Two Matrices and the Two Involutions
 
 Write
 $$
-X=\mathsf{M}_4(\tilde P),\qquad Y=\mathsf{M}_4(\tilde Q).
+X=\mathsf{M}_4^{L}(\tilde P),\qquad Y=\mathsf{M}_4^{L}(\tilde Q).
 $$
 The two involutions of the model are the adjugate and the conjugate transpose:
 $$
@@ -30,10 +32,10 @@ X^{\dagger}=\overline{X^{\mathsf T}}.
 $$
 They are the images of quaternion conjugation and of Hermitian conjugation:
 $$
-\mathsf{M}_4(\tilde P^{\natural})=N^{-1}\operatorname{adj}X,\qquad
-\mathsf{M}_4(\tilde P^{*})=X^{\dagger},
+\mathsf{M}_4^{L}(\tilde P^{\natural})=N^{-1}\operatorname{adj}X,\qquad
+\mathsf{M}_4^{L}(\tilde P^{*})=X^{\dagger},
 $$
-where $N=\langle\tilde P\rangle_{\natural}$. The scalar is forced by the size: the adjugate of a $4\times4$ matrix is homogeneous of degree three, while $\mathsf{M}_4(\tilde P^{\natural})$ is linear, so the two differ by the quadratic norm. The adjugate is an anti-automorphism, $\operatorname{adj}(XY)=\operatorname{adj}(Y)\operatorname{adj}(X)$, and it satisfies $X\operatorname{adj}X=(\det X)\mathrm I_4$. The dagger is an anti-automorphism of the real algebra, $(XY)^{\dagger}=Y^{\dagger}X^{\dagger}$. Both are involutions: $\operatorname{adj}(\operatorname{adj}X)=X$ and $(X^{\dagger})^{\dagger}=X$.
+where $N=\langle\tilde P\rangle_{\natural}$. The scalar is forced by the size: the adjugate of a $4\times4$ matrix is homogeneous of degree three, while $\mathsf{M}_4^{L}(\tilde P^{\natural})$ is linear, so the two differ by the quadratic norm. The adjugate is an anti-automorphism, $\operatorname{adj}(XY)=\operatorname{adj}(Y)\operatorname{adj}(X)$, and it satisfies $X\operatorname{adj}X=(\det X)\mathrm I_4$. The dagger is an anti-automorphism of the real algebra, $(XY)^{\dagger}=Y^{\dagger}X^{\dagger}$. Both are involutions: $\operatorname{adj}(\operatorname{adj}X)=X$ and $(X^{\dagger})^{\dagger}=X$.
 
 ## The Four Words
 
@@ -66,7 +68,7 @@ $$
 \tfrac14\operatorname{Tr}(X^{\mathsf T}Y^{\dagger})=\langle\tilde P,\tilde Q\rangle_{\natural*}.
 $$
 
-*Proof.* The scalar part of a product is one quarter of its $4\times4$ trace, because the trace of $\mathsf{M}_4(\tilde R)$ is $4R_t$. The four products are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and their matrices are the four words of the table. The trace of a product of images is the image of the trace, and the identities follow. $\square$
+*Proof.* The scalar part of a product is one quarter of its $4\times4$ trace, because the trace of $\mathsf{M}_4^{L}(\tilde R)$ is $4R_t$. The four products are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, and their matrices are the four words of the table. The trace of a product of images is the image of the trace, and the identities follow. $\square$
 
 **The coefficient forms.** Written on the coefficients,
 
@@ -130,7 +132,7 @@ In matrices, these are the cyclicity of the trace,
 $$
 \operatorname{Tr}(X_PX_XY_Q)=\operatorname{Tr}(X_X X_P^{\mathsf T}Y_Q),
 $$
-and the transpose identity $X_P^{\mathsf T}=\mathsf{M}_4(\tilde P^{\natural})$. The invariance is the reason the trace pairing is the natural duality of the regular bimodule.
+and the transpose identity $X_P^{\mathsf T}=\mathsf{M}_4^{L}(\tilde P^{\natural})$. The invariance is the reason the trace pairing is the natural duality of the regular bimodule.
 
 ## The Four Words in the Algebra
 
@@ -153,7 +155,7 @@ $$
 (X^{\mathsf T}Y^{\dagger})^{\dagger}=Y\overline{X}.
 $$
 
-*Proof.* The dagger is an anti-automorphism and the transpose is an anti-automorphism; the two commute with each other, because both act entrywise after transposition. The entrywise conjugate is $\overline{X}=\mathsf{M}_4(\overline{\tilde P})$, and $(X^{\mathsf T})^{\dagger}=\overline{X}$. $\square$
+*Proof.* The dagger is an anti-automorphism and the transpose is an anti-automorphism; the two commute with each other, because both act entrywise after transposition. The entrywise conjugate is $\overline{X}=\mathsf{M}_4^{L}(\overline{\tilde P})$, and $(X^{\mathsf T})^{\dagger}=\overline{X}$. $\square$
 
 The four words are therefore closed under the dagger up to the exchange of the two arguments and the entrywise conjugation, which is the matrix form of the Klein group of the four involutions.
 
@@ -165,16 +167,16 @@ The four products are the four words $XY$, $X^{\mathsf T}Y$, $XY^{\dagger}$ and 
 
 | Symbol | Meaning |
 |---|---|
-| $X=\mathsf{M}_4(\tilde P)$, $Y=\mathsf{M}_4(\tilde Q)$ | the regular matrices |
-| $X^{\mathsf T}=\mathsf{M}_4(\tilde P^{\natural})$ | the transpose as quaternion conjugation |
-| $X^{\dagger}=\mathsf{M}_4(\tilde P^{*})$ | the conjugate transpose |
+| $X=\mathsf{M}_4^{L}(\tilde P)$, $Y=\mathsf{M}_4^{L}(\tilde Q)$ | the regular matrices |
+| $X^{\mathsf T}=\mathsf{M}_4^{L}(\tilde P^{\natural})$ | the transpose as quaternion conjugation |
+| $X^{\dagger}=\mathsf{M}_4^{L}(\tilde P^{*})$ | the conjugate transpose |
 | $\tfrac14\operatorname{Tr}$ | the scalar part in the regular model |
 | $G_{\mathrm{plain}},G_{\natural},G_{*},G_{\natural*}$ | the four Gram matrices |
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the two involutions
-- [$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the trace
+- [$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the two involutions
+- [$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the trace
 - [$M_2(\mathbb{C})$ Representation : The Four Words and the Four Traces](m2c-representation-the-four-words-and-the-four-traces.html), for the $2\times2$ dictionary
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the products
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the forms

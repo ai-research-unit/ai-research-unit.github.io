@@ -105,24 +105,29 @@ The matrix acts on a two-component column. That column is the **spinor**, and th
 
 ### The $4\times4$ Left Regular Element
 
-The left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$. Its invariants are the doubled invariants:
+The left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*. Its invariants are the doubled invariants:
 
 $$
 \det\mathsf{M}_4^{L}(\tilde Q)=N^2, \qquad \operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t.
 $$
 
-In a basis adapted to the two minimal left ideals the matrix is block diagonal,
+In that frame the matrix has two equal blocks,
 
 $$
-\mathsf{M}_4^{L}(\tilde Q)\cong\begin{pmatrix}A_+(\tilde Q)&0\\0&A_-(\tilde Q)\end{pmatrix},
-\qquad A_\pm(\tilde Q)\sim\mathsf{M}_2(\tilde Q),
+\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),
 $$
 
-and each block has trace $2Q_t$ and determinant $N$. The regular picture is the spinor picture taken twice. The two blocks are the two column chiralities; left multiplication preserves each of them, which is why the matrix is block diagonal.
+and the two diagonal blocks are the same $\mathsf{M}_2(\tilde Q)$, each with trace $2Q_t$ and determinant $N$. The two blocks are the two column chiralities; left multiplication preserves each of them, which is why the two blocks are equal and not merely block-diagonal.
 
 The determinant is a **volume**, not the norm. On a four-position it is $s^4$, on a four-velocity $c^4$, on an on-shell four-momentum $m^4c^4$, and on a lightlike four-vector it vanishes. The square does not change the zero set, so the light-cone statement survives the doubling, but it changes the degree: an identity that holds to the first power of $N$ in the $2\times2$ picture holds to the second power here.
 
-The right regular matrix $\mathsf{M}_4^{R}(\tilde Q)$ is the matrix of $X\mapsto X\tilde Q$. It is not the transpose of the left one; the relation uses the sign matrix $D=\operatorname{diag}(-1,1,1,1)$, and the two matrices are genuinely different as soon as the algebra is non-commutative. The left copy preserves the two column chiralities and the right copy is the only one that can move between them. This is the structural reason the mass term is a right multiplication, and it is read in the operator article.
+The right regular matrix $\mathsf{M}_4^{R}(\tilde Q)$ is the matrix of $X\mapsto X\tilde Q$. In the same frame
+
+$$
+\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2,
+$$
+
+so it is not the transpose of the left matrix, which is $I_2\otimes\mathsf{M}_2(\tilde Q)^{\mathsf T}$; the two are related by the transpose followed by the flip of the two factors. The left copy preserves the two column chiralities and the right copy is the only one that can move between them. This is the structural reason the mass term is a right multiplication, and it is read in the operator article.
 
 ## The Operator Representations
 

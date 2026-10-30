@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Model : The Spectral Projectors__
+# __$M_4(\mathbb{C})$ Model : The Spectral Projectors__
 
 ## Introduction
 
@@ -6,27 +6,29 @@ A spectrally regular biquaternion has two distinct eigenvalues, and its regular 
 
 This article develops the projectors, the spectral decomposition, the nilpotents and the residue formula. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Spectral Projectors*, and it absorbs the $4\times4$ spectral material of the former *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$ and a chosen square root $B$. The spectral direction is
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$, with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$ and a chosen square root $B$. The spectral direction is
 $$
 \vec\Xi=-\frac{i}{B}\vec Q,\qquad
 \tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi),\qquad
 \lambda_\pm=Q_t\pm iB.
 $$
-The projectors are $\rho_\pm=\mathsf{M}_4(\tilde\Pi_\pm)$.
+The projectors are $\rho_\pm=\mathsf{M}_4^{L}(\tilde\Pi_\pm)$.
 
-**Boundaries.** The spectral criterion is *The Spectrum*; the construction of the eigenbasis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the diagonalising matrix is *$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix*; the degenerate cone is *$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Spectral Projectors*.
+**Boundaries.** The spectral criterion is *The Spectrum*; the construction of the eigenbasis and of the nilpotents is *The Eigenbasis of a Spectrally Regular Biquaternion*; the diagonalising matrix is *$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the degenerate cone is *$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Spectral Projectors*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Spectral Projectors
 
 **Definition.**
 
 $$
-\rho_+=\tfrac12\bigl(\mathrm I_4+\mathsf{M}_4(\vec\Xi)\bigr),
+\rho_+=\tfrac12\bigl(\mathrm I_4+\mathsf{M}_4^{L}(\vec\Xi)\bigr),
 \qquad
-\rho_-=\tfrac12\bigl(\mathrm I_4-\mathsf{M}_4(\vec\Xi)\bigr).
+\rho_-=\tfrac12\bigl(\mathrm I_4-\mathsf{M}_4^{L}(\vec\Xi)\bigr).
 $$
 
-**Proposition.** The matrices $\rho_\pm$ are idempotents of rank two and trace two, they are complementary, and they commute with $M=\mathsf{M}_4(\tilde Q)$:
+**Proposition.** The matrices $\rho_\pm$ are idempotents of rank two and trace two, they are complementary, and they commute with $M=\mathsf{M}_4^{L}(\tilde Q)$:
 $$
 \rho_+^2=\rho_+,\quad
 \rho_-^2=\rho_-,\quad
@@ -37,13 +39,13 @@ $$
 
 *Proof.* The element $\vec\Xi$ has square $e_t$, because $\vec Q^2=-B^2e_t$, so $\tilde\Pi_\pm^2=\tilde\Pi_\pm$ and $\tilde\Pi_+\tilde\Pi_-=0$. Applying the algebra homomorphism gives the four identities. The trace is $\tfrac12(4\pm0)=2$, and an idempotent of trace two has rank two. The commutation follows from
 $$
-M=Q_t\mathrm I_4+iB\,\mathsf{M}_4(\vec\Xi),
+M=Q_t\mathrm I_4+iB\,\mathsf{M}_4^{L}(\vec\Xi),
 $$
-which exhibits $M$ as a polynomial in $\mathsf{M}_4(\vec\Xi)$. $\square$
+which exhibits $M$ as a polynomial in $\mathsf{M}_4^{L}(\vec\Xi)$. $\square$
 
 **Not Hermitian in general.** For a general complex element the projectors are not Hermitian: $\rho_\pm^{\dagger}$ is the projector of the conjugate direction. They are Hermitian exactly when $\vec\Xi$ is Hermitian, in particular when the element lies in the Hermitian or the anti-Hermitian subspace.
 
-**The column spaces.** Since $M\rho_+=\lambda_+\rho_+$ and $M\rho_-=\lambda_-\rho_-$, the column space of $\rho_+$ is the eigenspace of $\lambda_+$, of dimension two, and the column space of $\rho_-$ is the eigenspace of $\lambda_-$, of dimension two. The two eigenspaces are complementary. In the Peirce basis they are the two coordinate planes $E_+$ and $E_-$ of *$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
+**The column spaces.** Since $M\rho_+=\lambda_+\rho_+$ and $M\rho_-=\lambda_-\rho_-$, the column space of $\rho_+$ is the eigenspace of $\lambda_+$, of dimension two, and the column space of $\rho_-$ is the eigenspace of $\lambda_-$, of dimension two. The two eigenspaces are complementary. In the Peirce basis they are the two coordinate planes $E_+$ and $E_-$ of *$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*.
 
 ## The Spectral Decomposition
 
@@ -58,8 +60,8 @@ $$
 *Proof.* Expand the right side:
 $$
 \lambda_+\rho_++\lambda_-\rho_-
-=\tfrac12(\lambda_++\lambda_-)\mathrm I_4+\tfrac12(\lambda_+-\lambda_-)\mathsf{M}_4(\vec\Xi)
-=Q_t\mathrm I_4+iB\,\mathsf{M}_4(\vec\Xi)=M.
+=\tfrac12(\lambda_++\lambda_-)\mathrm I_4+\tfrac12(\lambda_+-\lambda_-)\mathsf{M}_4^{L}(\vec\Xi)
+=Q_t\mathrm I_4+iB\,\mathsf{M}_4^{L}(\vec\Xi)=M.
 $$
 $\square$
 
@@ -81,7 +83,7 @@ The formulas are the images of the $2\times2$ Lagrange polynomials, and they sho
 
 **The signed projector.**
 $$
-\rho_+-\rho_-=\mathsf{M}_4(\vec\Xi)=-\frac{i}{B}\mathsf{M}_4(\vec Q),
+\rho_+-\rho_-=\mathsf{M}_4^{L}(\vec\Xi)=-\frac{i}{B}\mathsf{M}_4^{L}(\vec Q),
 \qquad
 M=Q_t\mathrm I_4+iB(\rho_+-\rho_-).
 $$
@@ -91,8 +93,8 @@ The scalar part is carried by the identity and the vector part by the signed pro
 
 **Definition.** Let $\vec\Upsilon_\pm^{\mathrm{spec}}$ be the spectral nilpotents of the algebra, the mixed Peirce elements of the eigenbasis. Their images
 $$
-N_-=\mathsf{M}_4(\vec\Upsilon_-^{\mathrm{spec}}),\qquad
-N_+=\mathsf{M}_4(\vec\Upsilon_+^{\mathrm{spec}})
+N_-=\mathsf{M}_4^{L}(\vec\Upsilon_-^{\mathrm{spec}}),\qquad
+N_+=\mathsf{M}_4^{L}(\vec\Upsilon_+^{\mathrm{spec}})
 $$
 are the **spectral nilpotents** of the regular model.
 
@@ -104,7 +106,7 @@ N_+N_-=\rho_-,\qquad
 \rho_-N_+=N_+=N_+\rho_+.
 $$
 
-*Proof.* Apply $\mathsf{M}_4$ to the Peirce relations of the algebra. The rank is two because in the Peirce basis the matrix is the doubled off-diagonal unit $\operatorname{diag}(E_{12},E_{12})$ or $\operatorname{diag}(E_{21},E_{21})$. $\square$
+*Proof.* Apply $\mathsf{M}_4^{L}$ to the Peirce relations of the algebra. The rank is two because in the Peirce basis the matrix is the doubled off-diagonal unit $\operatorname{diag}(E_{12},E_{12})$ or $\operatorname{diag}(E_{21},E_{21})$. $\square$
 
 **The Jordan form.** A nonzero nilpotent of the regular image is conjugate to the direct sum of two Jordan blocks $\begin{pmatrix}0&1\\0&0\end{pmatrix}$. The two nilpotents $N_\pm$ are conjugate to each other and to the doubled off-diagonal units; the labels record the mixed corner, not a conjugacy class. The nilpotent is the off-diagonal entry that survives when the two eigenvalues coalesce.
 
@@ -158,7 +160,7 @@ and the nilpotents are the doubled off-diagonal units with the labels exchanged.
 
 ## Summary
 
-For a spectrally regular element the two spectral projectors are $\rho_\pm=\tfrac12(\mathrm I_4\pm\mathsf{M}_4(\vec\Xi))$ with $\vec\Xi=-i\vec Q/B$. They are complementary rank-two idempotents of trace two, they commute with $M$, and $M=\lambda_+\rho_++\lambda_-\rho_-$ with $\lambda_\pm=Q_t\pm iB$. The two spectral nilpotents are the doubled off-diagonal units; they are square-zero, rank two, and satisfy $N_-N_+=\rho_+$ and $N_+N_-=\rho_-$. On the standard axis the projectors are the doubled diagonal units and the nilpotents the doubled off-diagonal units, with the labels exchanged. On the cone the construction fails.
+For a spectrally regular element the two spectral projectors are $\rho_\pm=\tfrac12(\mathrm I_4\pm\mathsf{M}_4^{L}(\vec\Xi))$ with $\vec\Xi=-i\vec Q/B$. They are complementary rank-two idempotents of trace two, they commute with $M$, and $M=\lambda_+\rho_++\lambda_-\rho_-$ with $\lambda_\pm=Q_t\pm iB$. The two spectral nilpotents are the doubled off-diagonal units; they are square-zero, rank two, and satisfy $N_-N_+=\rho_+$ and $N_+N_-=\rho_-$. On the standard axis the projectors are the doubled diagonal units and the nilpotents the doubled off-diagonal units, with the labels exchanged. On the cone the construction fails.
 
 ## Summary of Notation
 
@@ -166,15 +168,15 @@ For a spectrally regular element the two spectral projectors are $\rho_\pm=\tfra
 |---|---|
 | $\vec\Xi=-i\vec Q/B$ | the spectral direction |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec\Xi)$ | the spectral idempotents |
-| $\rho_\pm=\mathsf{M}_4(\tilde\Pi_\pm)$ | the rank-two spectral projectors |
+| $\rho_\pm=\mathsf{M}_4^{L}(\tilde\Pi_\pm)$ | the rank-two spectral projectors |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, each double |
 | $N_\pm$ | the rank-two spectral nilpotents |
 | $S$ | the Peirce change |
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis
-- [$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the cone
+- [$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the eigenbasis
+- [$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety](m4c-representation-rank-one-matrices-and-the-determinantal-variety.html), for the cone
 - [$M_2(\mathbb{C})$ Model : The Spectral Projectors](m2c-model-the-spectral-projectors.html), for the $2\times2$ version
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction
 - [Nilpotents](nilpotents.html), for the nilpotent cone

@@ -63,7 +63,7 @@ $$
 z=x_1e_1+y_1(ie_1)+x_2e_2+y_2(ie_2).
 $$
 
-**Remark (the real basis is not a complex basis).** The four real basis vectors are dependent over $\mathbb{C}$, since $ie_1=i\,e_1$ and $ie_2=i\,e_2$. **The real basis has four elements and the complex basis two; the complex basis is a sublist of the real one, but it spans only over $\mathbb{C}$, and the real basis spans only over $\mathbb{R}$.**
+**Remark (the real basis is not a complex basis).** The four real basis vectors are dependent over $\mathbb{C}$, since $ie_1=i\,e_1$ and $ie_2=i\,e_2$. **The real basis has four elements and the complex basis two; the complex basis is a sublist of the real one, but it is a basis only over $\mathbb{C}$, and the real basis is a basis only over $\mathbb{R}$.**
 
 The coordinates are gathered below. The subscript $k$ labels the complex coordinate and takes the values $1,2$; it never labels a real coordinate, and the real coordinates $x_k,y_k$ carry the same $k$ as the complex coordinate they compose.
 

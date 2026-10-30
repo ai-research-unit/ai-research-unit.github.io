@@ -119,34 +119,34 @@ $$
 with $\omega^2 = -I_4$, and it commutes with every even element and anticommutes with every generator:
 
 $$
-\omega\gamma^\mu = -\gamma^\mu\omega, \qquad \omega\mathsf{M}_4(\tilde{Q}) = \mathsf{M}_4(\tilde{Q})\omega \quad (\tilde{Q} \in \mathbb{B}).
+\omega\gamma^\mu = -\gamma^\mu\omega, \qquad \omega\iota_{\mathrm{Cl}}(\tilde{Q}) = \iota_{\mathrm{Cl}}(\tilde{Q})\omega \quad (\tilde{Q} \in \mathbb{B}).
 $$
 
 ## The Isomorphism: $\mathbb{B}$ is the Even Subalgebra
 
 ### The map
 
-The biquaternion algebra is identified with the even subalgebra of $\mathrm{Cl}_{1,3}$ — the algebra of the metric $g = \mathrm{diag}(+1,-1,-1,-1)$ — by the $\mathbb{R}$-linear map $\mathsf{M}_4$ defined on the quaternion basis by
+The biquaternion algebra is identified with the even subalgebra of $\mathrm{Cl}_{1,3}$ — the algebra of the metric $g = \mathrm{diag}(+1,-1,-1,-1)$ — by the $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ defined on the quaternion basis by
 
 $$
-\mathsf{M}_4(e_t) = I_4, \qquad
-\mathsf{M}_4(\vec e_x) = \gamma^2\gamma^3, \qquad
-\mathsf{M}_4(\vec e_y) = \gamma^3\gamma^1, \qquad
-\mathsf{M}_4(\vec e_z) = \gamma^1\gamma^2,
+\iota_{\mathrm{Cl}}(e_t) = I_4, \qquad
+\iota_{\mathrm{Cl}}(\vec e_x) = \gamma^2\gamma^3, \qquad
+\iota_{\mathrm{Cl}}(\vec e_y) = \gamma^3\gamma^1, \qquad
+\iota_{\mathrm{Cl}}(\vec e_z) = \gamma^1\gamma^2,
 $$
 
 and on the scalar imaginary by
 
 $$
-\mathsf{M}_4(i) = -\omega = -\gamma^0\gamma^1\gamma^2\gamma^3 .
+\iota_{\mathrm{Cl}}(i) = -\omega = -\gamma^0\gamma^1\gamma^2\gamma^3 .
 $$
 
-The sign of $\mathsf{M}_4(i)$ is the one free choice in the correspondence — the scalar imaginary corresponds to the pseudoscalar up to a sign — and it is fixed here so that the three imaginary quaternion units come out as the three timelike bivectors with **positive** signs, $\mathsf{M}_4(i\vec e_k) = \gamma^0\gamma^k$. This is the clean form the mostly-minus convention allows: the three spacelike bivectors take the positive orientation and the three timelike bivectors take the positive sign, with the single minus absorbed into $\mathsf{M}_4(i)$.
+The sign of $\iota_{\mathrm{Cl}}(i)$ is the one free choice in the correspondence — the scalar imaginary corresponds to the pseudoscalar up to a sign — and it is fixed here so that the three imaginary quaternion units come out as the three timelike bivectors with **positive** signs, $\iota_{\mathrm{Cl}}(i\vec e_k) = \gamma^0\gamma^k$. This is the clean form the mostly-minus convention allows: the three spacelike bivectors take the positive orientation and the three timelike bivectors take the positive sign, with the single minus absorbed into $\iota_{\mathrm{Cl}}(i)$.
 
-Since $\mathsf{M}_4$ is $\mathbb{R}$-linear and $i$ commutes with the $e_\mu$, this determines $\mathsf{M}_4$ on all of $\mathbb{B}$: writing $\tilde{Q} = \sum_\mu (q_\mu + i q'_\mu)e_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$,
+Since $\iota_{\mathrm{Cl}}$ is $\mathbb{R}$-linear and $i$ commutes with the $e_\mu$, this determines $\iota_{\mathrm{Cl}}$ on all of $\mathbb{B}$: writing $\tilde{Q} = \sum_\mu (q_\mu + i q'_\mu)e_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$,
 
 $$
-\mathsf{M}_4(\tilde{Q}) = \sum_{\mu\in\{t,x,y,z\}} q_\mu\,\mathsf{M}_4(e_\mu) + \sum_{\mu\in\{t,x,y,z\}} q'_\mu\,\mathsf{M}_4(i)\mathsf{M}_4(e_\mu) = \sum_{\mu\in\{t,x,y,z\}} q_\mu\,\mathsf{M}_4(e_\mu) - \sum_{\mu\in\{t,x,y,z\}} q'_\mu\,\omega\,\mathsf{M}_4(e_\mu).
+\iota_{\mathrm{Cl}}(\tilde{Q}) = \sum_{\mu\in\{t,x,y,z\}} q_\mu\,\iota_{\mathrm{Cl}}(e_\mu) + \sum_{\mu\in\{t,x,y,z\}} q'_\mu\,\iota_{\mathrm{Cl}}(i)\iota_{\mathrm{Cl}}(e_\mu) = \sum_{\mu\in\{t,x,y,z\}} q_\mu\,\iota_{\mathrm{Cl}}(e_\mu) - \sum_{\mu\in\{t,x,y,z\}} q'_\mu\,\omega\,\iota_{\mathrm{Cl}}(e_\mu).
 $$
 
 ### Why it is an isomorphism
@@ -160,21 +160,21 @@ $$
 (\gamma^2\gamma^3)(\gamma^3\gamma^1) = \gamma^1\gamma^2 .
 $$
 
-The last identity reproduces $\vec e_x \vec e_y = \vec e_z$ exactly, since $\mathsf{M}_4(\vec e_z) = \gamma^1\gamma^2$. Moreover $\omega^2 = -I_4$ and $\omega$ commutes with each spacelike bivector, so $\mathsf{M}_4(i) = -\omega$ behaves as central $i$:
+The last identity reproduces $\vec e_x \vec e_y = \vec e_z$ exactly, since $\iota_{\mathrm{Cl}}(\vec e_z) = \gamma^1\gamma^2$. Moreover $\omega^2 = -I_4$ and $\omega$ commutes with each spacelike bivector, so $\iota_{\mathrm{Cl}}(i) = -\omega$ behaves as central $i$:
 
 $$
-\mathsf{M}_4(i)^2 = -I_4, \qquad \mathsf{M}_4(i)\mathsf{M}_4(\vec e_k) = \mathsf{M}_4(\vec e_k)\mathsf{M}_4(i).
+\iota_{\mathrm{Cl}}(i)^2 = -I_4, \qquad \iota_{\mathrm{Cl}}(i)\iota_{\mathrm{Cl}}(\vec e_k) = \iota_{\mathrm{Cl}}(\vec e_k)\iota_{\mathrm{Cl}}(i).
 $$
 
 *The map is multiplicative.* Computing all $8\times 8$ products of the real basis $\{e_t,\vec e_x,\vec e_y,\vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ confirms
 
 $$
-\boxed{\;\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_2)\;}
+\boxed{\;\iota_{\mathrm{Cl}}(\tilde{Q}_1\tilde{Q}_2) = \iota_{\mathrm{Cl}}(\tilde{Q}_1)\,\iota_{\mathrm{Cl}}(\tilde{Q}_2)\;}
 $$
 
 for every basis pair. The check is exhaustive on the basis, hence holds on all of $\mathbb{B}$.
 
-*The map is injective, and its image is exactly the even part.* The eight matrices $\mathsf{M}_4(e_t),\dots,\mathsf{M}_4(i\vec e_z)$ are linearly independent over $\mathbb{R}$ — the real span of the eight images has dimension $8$ — and each is a product of an even number of generators, hence lies in the even subalgebra $\mathrm{Cl}_{1,3}^+$. The even subalgebra also has real dimension $8$, so the image is all of it and $\mathsf{M}_4$ is a bijection.
+*The map is injective, and its image is exactly the even part.* The eight matrices $\iota_{\mathrm{Cl}}(e_t),\dots,\iota_{\mathrm{Cl}}(i\vec e_z)$ are linearly independent over $\mathbb{R}$ — the real span of the eight images has dimension $8$ — and each is a product of an even number of generators, hence lies in the even subalgebra $\mathrm{Cl}_{1,3}^+$. The even subalgebra also has real dimension $8$, so the image is all of it and $\iota_{\mathrm{Cl}}$ is a bijection.
 
 This establishes
 
@@ -188,7 +188,7 @@ The isomorphism is not unique: any assignment that preserves the relations diffe
 
 ### Biquaternions in gamma-matrix form
 
-The first table is the dictionary in the direction biquaternion $\to$ Clifford. It is the image of the real basis of $\mathbb{B}$ under $\mathsf{M}_4$. All eight entries were computed by multiplying the representation matrices fixed above; the two nontrivial ones are the pseudoscalar column and the imaginary-quaternion rows.
+The first table is the dictionary in the direction biquaternion $\to$ Clifford. It is the image of the real basis of $\mathbb{B}$ under $\iota_{\mathrm{Cl}}$. All eight entries were computed by multiplying the representation matrices fixed above; the two nontrivial ones are the pseudoscalar column and the imaginary-quaternion rows.
 
 | Biquaternion | Clifford element | Value in the representation |
 |---|---|---|
@@ -201,7 +201,7 @@ The first table is the dictionary in the direction biquaternion $\to$ Clifford. 
 | $i\,\vec e_y$ | $-\omega\,(\gamma^3\gamma^1) = +\gamma^0\gamma^2$ | timelike bivector |
 | $i\,\vec e_z$ | $-\omega\,(\gamma^1\gamma^2) = +\gamma^0\gamma^3$ | timelike bivector |
 
-The three quaternion units become the three **spacelike** bivectors, the scalar imaginary becomes **minus the pseudoscalar**, and the three imaginary quaternion units become the three **timelike** bivectors — all with positive signs. With the mostly-minus generators no mixed sign pattern arises: the single minus sits on $\mathsf{M}_4(i)$, which is the freedom the correspondence already carries. The map on the quaternion units reproduces $\vec e_x \vec e_y = \vec e_z$ exactly, since $(\gamma^2\gamma^3)(\gamma^3\gamma^1) = \gamma^1\gamma^2$.
+The three quaternion units become the three **spacelike** bivectors, the scalar imaginary becomes **minus the pseudoscalar**, and the three imaginary quaternion units become the three **timelike** bivectors — all with positive signs. With the mostly-minus generators no mixed sign pattern arises: the single minus sits on $\iota_{\mathrm{Cl}}(i)$, which is the freedom the correspondence already carries. The map on the quaternion units reproduces $\vec e_x \vec e_y = \vec e_z$ exactly, since $(\gamma^2\gamma^3)(\gamma^3\gamma^1) = \gamma^1\gamma^2$.
 
 ### Clifford bivectors in biquaternion form
 
@@ -226,22 +226,22 @@ Inverting the table gives the direction Clifford $\to$ biquaternion. This is the
 The six bivectors split into the three spacelike ones, $\gamma^1\gamma^2, \gamma^1\gamma^3, \gamma^2\gamma^3$, which correspond to the quaternion units $\vec e_k$, and the three timelike ones, $\gamma^0\gamma^1, \gamma^0\gamma^2, \gamma^0\gamma^3$, which correspond to $i \vec e_k$. With the mostly-minus generators **both groups carry positive signs**:
 
 $$
-\mathsf{M}_4(\vec e_x) = \gamma^2\gamma^3, \quad \mathsf{M}_4(\vec e_y) = \gamma^3\gamma^1, \quad \mathsf{M}_4(\vec e_z) = \gamma^1\gamma^2, \qquad
-\mathsf{M}_4(i\vec e_x) = \gamma^0\gamma^1, \quad \mathsf{M}_4(i\vec e_y) = \gamma^0\gamma^2, \quad \mathsf{M}_4(i\vec e_z) = \gamma^0\gamma^3 .
+\iota_{\mathrm{Cl}}(\vec e_x) = \gamma^2\gamma^3, \quad \iota_{\mathrm{Cl}}(\vec e_y) = \gamma^3\gamma^1, \quad \iota_{\mathrm{Cl}}(\vec e_z) = \gamma^1\gamma^2, \qquad
+\iota_{\mathrm{Cl}}(i\vec e_x) = \gamma^0\gamma^1, \quad \iota_{\mathrm{Cl}}(i\vec e_y) = \gamma^0\gamma^2, \quad \iota_{\mathrm{Cl}}(i\vec e_z) = \gamma^0\gamma^3 .
 $$
 
 The two representative entries, written out, are
 
 $$
-\mathsf{M}_4(\vec e_x)=\gamma^2\gamma^3=\begin{pmatrix}-i\sigma_1&0\\0&-i\sigma_1\end{pmatrix}
+\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3=\begin{pmatrix}-i\sigma_1&0\\0&-i\sigma_1\end{pmatrix}
 =\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},\qquad
-\mathsf{M}_4(i\vec e_x)=\gamma^0\gamma^1=\begin{pmatrix}-\sigma_1&0\\0&\sigma_1\end{pmatrix}
+\iota_{\mathrm{Cl}}(i\vec e_x)=\gamma^0\gamma^1=\begin{pmatrix}-\sigma_1&0\\0&\sigma_1\end{pmatrix}
 =\begin{pmatrix}0&-1&0&0\\-1&0&0&0\\0&0&0&1\\0&0&1&0\end{pmatrix},
 $$
 
 so the quaternion unit $\vec e_x$ becomes $-i\sigma_1$ block-diagonally and $i\vec e_x$ becomes the two blocks with opposite signs, the positive sign on the second.
 
-The only sign in the dictionary is the minus on $\mathsf{M}_4(i) = -\omega$, and it is the single sign the correspondence leaves free. The reason the mixed pattern of the opposite-generator convention does not arise is visible in the products:
+The only sign in the dictionary is the minus on $\iota_{\mathrm{Cl}}(i) = -\omega$, and it is the single sign the correspondence leaves free. The reason the mixed pattern of the opposite-generator convention does not arise is visible in the products:
 
 $$
 (\gamma^2\gamma^3)(\gamma^3\gamma^1) = +\gamma^1\gamma^2, \qquad
@@ -253,11 +253,11 @@ so the three spacelike products close with positive signs and reproduce $\vec e_
 
 ## Products and Non-Commutativity
 
-The reason the dictionary is worth writing down is that both algebras are non-commutative in the same way, so that the map $\mathsf{M}_4$ carries products to products. This section records the product correspondence and the checks that establish it.
+The reason the dictionary is worth writing down is that both algebras are non-commutative in the same way, so that the map $\iota_{\mathrm{Cl}}$ carries products to products. This section records the product correspondence and the checks that establish it.
 
 ### The quaternion table in gamma-matrix form
 
-Under $\mathsf{M}_4$, the quaternion multiplication rules become identities among bivectors. The three cyclic products are
+Under $\iota_{\mathrm{Cl}}$, the quaternion multiplication rules become identities among bivectors. The three cyclic products are
 
 $$
 (\gamma^2\gamma^3)(\gamma^3\gamma^1) = \gamma^1\gamma^2, \qquad
@@ -271,8 +271,8 @@ matching $\vec e_x \vec e_y = \vec e_z$, $\vec e_y \vec e_z = \vec e_x$, $\vec e
 
 The claim is not verified only on the case that suggested it. The following four general products use four different pairs of dictionary entries, including both spacelike and timelike bivectors, and each is confirmed by direct multiplication of the representation matrices:
 
-1. **Two spacelike bivectors.** $(\gamma^2\gamma^3)(\gamma^3\gamma^1) = \gamma^1\gamma^2$; the biquaternion side is $\vec e_x \vec e_y = \vec e_z$, and $\mathsf{M}_4(\vec e_z) = \gamma^1\gamma^2$.
-2. **Two timelike bivectors.** $(\gamma^0\gamma^1)(\gamma^0\gamma^2) = -(\gamma^0)^2\gamma^1\gamma^2 = -\gamma^1\gamma^2 = -\vec e_z$; the biquaternion side is $(i\vec e_x)(i\vec e_y) = i^2\vec e_x \vec e_y = -\vec e_z$, and $\mathsf{M}_4(-\vec e_z) = -\gamma^1\gamma^2$.
+1. **Two spacelike bivectors.** $(\gamma^2\gamma^3)(\gamma^3\gamma^1) = \gamma^1\gamma^2$; the biquaternion side is $\vec e_x \vec e_y = \vec e_z$, and $\iota_{\mathrm{Cl}}(\vec e_z) = \gamma^1\gamma^2$.
+2. **Two timelike bivectors.** $(\gamma^0\gamma^1)(\gamma^0\gamma^2) = -(\gamma^0)^2\gamma^1\gamma^2 = -\gamma^1\gamma^2 = -\vec e_z$; the biquaternion side is $(i\vec e_x)(i\vec e_y) = i^2\vec e_x \vec e_y = -\vec e_z$, and $\iota_{\mathrm{Cl}}(-\vec e_z) = -\gamma^1\gamma^2$.
 3. **One of each.** $(\gamma^0\gamma^3)(\gamma^0\gamma^1) = -(\gamma^0)^2\gamma^3\gamma^1 = -\gamma^3\gamma^1 = -\vec e_y$; the biquaternion side is $(i\vec e_z)(i\vec e_x) = i^2\vec e_z \vec e_x = -\vec e_y$.
 4. **Mixed, non-cyclic.** $(\gamma^1\gamma^2)(\gamma^3\gamma^1) = -\gamma^2\gamma^3 = -\vec e_x$; the biquaternion side is $(\vec e_z)(\vec e_y) = \vec e_z \vec e_y = -\vec e_x$.
 
@@ -294,14 +294,14 @@ are one half of the corresponding bivectors. Reading them off the bivector table
 | $\sigma^{31}$ | $\tfrac{1}{2}\vec e_y$ | $\sigma^{02}$ | $+\tfrac{1}{2}i\,\vec e_y$ |
 | $\sigma^{12}$ | $+\tfrac{1}{2}\vec e_z$ | $\sigma^{03}$ | $+\tfrac{1}{2}i\,\vec e_z$ |
 
-The spacelike generators $\sigma^{jk}$ are the half-quaternion-units and the boost generators $\sigma^{0k}$ are the half-imaginary-quaternion-units, both with positive signs. The commutator $[\sigma^{\mu\nu},\sigma^{\rho\sigma}]$ on the left corresponds to the biquaternion commutator on the right, since $\mathsf{M}_4$ is multiplicative.
+The spacelike generators $\sigma^{jk}$ are the half-quaternion-units and the boost generators $\sigma^{0k}$ are the half-imaginary-quaternion-units, both with positive signs. The commutator $[\sigma^{\mu\nu},\sigma^{\rho\sigma}]$ on the left corresponds to the biquaternion commutator on the right, since $\iota_{\mathrm{Cl}}$ is multiplicative.
 
 ### Multiplication by the pseudoscalar
 
 The pseudoscalar is minus the image of $i$ and is central in the even algebra, so multiplication by $\omega$ on a Clifford even element corresponds exactly to multiplication by $-i$ on the biquaternion:
 
 $$
-\omega\,\mathsf{M}_4(\tilde{Q}) = \mathsf{M}_4(-i\,\tilde{Q}), \qquad \tilde{Q} \in \mathbb{B}.
+\omega\,\iota_{\mathrm{Cl}}(\tilde{Q}) = \iota_{\mathrm{Cl}}(-i\,\tilde{Q}), \qquad \tilde{Q} \in \mathbb{B}.
 $$
 
 This is checked on the whole real basis. On the spacelike bivectors it reads $\omega(\gamma^2\gamma^3) = -\gamma^0\gamma^1$, $\omega(\gamma^3\gamma^1) = -\gamma^0\gamma^2$, $\omega(\gamma^1\gamma^2) = -\gamma^0\gamma^3$: multiplication by the pseudoscalar exchanges the spacelike and timelike bivector subspaces, which is the algebraic content of the Hodge duality of the bivectors in four dimensions. Since the dictionary maps the spacelike group to the quaternion units and the timelike group to the imaginary quaternion units, the operation is simply "multiply by $-i$" — equivalently "multiply by $i$ and reverse orientation".
@@ -327,19 +327,19 @@ Every odd element is $\gamma^0$ times an even element. On the four-vectors this 
 
 $$
 x_0\gamma^0 + x_1\gamma^1 + x_2\gamma^2 + x_3\gamma^3
-= \gamma^0\,\mathsf{M}_4\!\left(x_0\,e_t + i x_1\,\vec e_x + i x_2\,\vec e_y + i x_3\,\vec e_z\right),
+= \gamma^0\,\iota_{\mathrm{Cl}}\!\left(x_0\,e_t + i x_1\,\vec e_x + i x_2\,\vec e_y + i x_3\,\vec e_z\right),
 $$
 
 an identity verified by multiplying the representation matrices. The biquaternion in parentheses lies in the **Hermitian subspace** $\mathbb{M}_+$, whose basis is $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$, and with the mostly-minus generators its coefficients are all positive: the mixed $(-,-,+)$ pattern of the opposite convention, which came from the same source as the mixed timelike-bivector signs, does not appear here. The four trivectors are likewise
 
 $$
-\gamma^\mu\gamma^\nu\gamma^\rho = \gamma^0\,\mathsf{M}_4(w), \qquad w \in \mathbb{M}_-,
+\gamma^\mu\gamma^\nu\gamma^\rho = \gamma^0\,\iota_{\mathrm{Cl}}(w), \qquad w \in \mathbb{M}_-,
 $$
 
 as checked on the four trivector basis elements. So the odd part of $\mathrm{Cl}_{1,3}$ decomposes as
 
 $$
-\mathrm{Cl}_{1,3}^{\mathrm{odd}} = \gamma^0\,\mathsf{M}_4(\mathbb{M}_+) \;\oplus\; \gamma^0\,\mathsf{M}_4(\mathbb{M}_-),
+\mathrm{Cl}_{1,3}^{\mathrm{odd}} = \gamma^0\,\iota_{\mathrm{Cl}}(\mathbb{M}_+) \;\oplus\; \gamma^0\,\iota_{\mathrm{Cl}}(\mathbb{M}_-),
 $$
 
 with the vector subspace corresponding to the Hermitian subspace and the trivector subspace to the anti-Hermitian subspace. Multiplying every entry of the biquaternion table above by $\gamma^0$ therefore produces the odd dictionary; the frame $\gamma^0$ is the one arbitrary choice in it, and it is fixed once and for all by the representation.
@@ -366,7 +366,7 @@ The four natural real subspaces of $\mathbb{B}$ are the fixed-point sets of the 
 | $\mathbb{M}_+$ (Hermitian) | $e_t,\; i\vec e_x,\; i\vec e_y,\; i\vec e_z$ | $I_4,\; \gamma^0\gamma^1,\; \gamma^0\gamma^2,\; \gamma^0\gamma^3$ |
 | $\mathbb{M}_-$ (anti-Hermitian) | $ie_t,\; \vec e_x,\; \vec e_y,\; \vec e_z$ | $-\omega,\; \gamma^2\gamma^3,\; \gamma^3\gamma^1,\; \gamma^1\gamma^2$ |
 
-The pattern is clean: the real-quaternion subspace is the identity together with the **spacelike** bivectors, its multiple by $i$ is minus the pseudoscalar together with the **timelike** bivectors, and the two Hermitian sectors are obtained by taking the scalar part from one of these and the vector part from the other. The informational subspace $\mathbb{M}_+$ is the identity plus the timelike bivectors; the material subspace $\mathbb{M}_-$ is the pseudoscalar plus the spacelike bivectors. The single minus in the table is the sign of $\mathsf{M}_4(i)$, and it appears exactly wherever $i$ itself appears; it is not a separate sign pattern. Multiplication by the pseudoscalar — that is, by $i$ — exchanges the two sectors, which is the Clifford form of the identity $i\mathbb{M}_+ = \mathbb{M}_-$.
+The pattern is clean: the real-quaternion subspace is the identity together with the **spacelike** bivectors, its multiple by $i$ is minus the pseudoscalar together with the **timelike** bivectors, and the two Hermitian sectors are obtained by taking the scalar part from one of these and the vector part from the other. The informational subspace $\mathbb{M}_+$ is the identity plus the timelike bivectors; the material subspace $\mathbb{M}_-$ is the pseudoscalar plus the spacelike bivectors. The single minus in the table is the sign of $\iota_{\mathrm{Cl}}(i)$, and it appears exactly wherever $i$ itself appears; it is not a separate sign pattern. Multiplication by the pseudoscalar — that is, by $i$ — exchanges the two sectors, which is the Clifford form of the identity $i\mathbb{M}_+ = \mathbb{M}_-$.
 
 Two consequences follow immediately and are worth recording. First, the timelike bivectors, which are the Lorentz boosts, carry the purely imaginary vector part of $\mathbb{M}_+$: the boost generators live in the informational sector, as stated in *The Informational Sector: States, Observables and Probability*. Second, the two sectors carry the mirror biquaternion norms: on the basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$ of $\mathbb{M}_-$ the form $\langle\cdot\rangle_{\natural}$ is negative in the first direction and positive in the other three, while on the basis $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ of $\mathbb{M}_+$ it is positive in the first direction and negative in the other three. Since quaternion conjugation fixes $i$, one has $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, so the interchange $i\mathbb{M}_+ = \mathbb{M}_-$ reverses the sign of the biquaternion norm. The two sectors are thus mirror images, and the Clifford images reflect this: the identity becomes the pseudoscalar, which has the opposite square.
 
@@ -381,26 +381,26 @@ $$
 =\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
 $$
 
-where $i_{\mathrm{Cl}}$ is the scalar imaginary of the **complexified** Clifford algebra, not the biquaternion imaginary. The two are different objects: the biquaternion imaginary $i$ has image $-\omega$ under $\mathsf{M}_4$, so in the dictionary
+where $i_{\mathrm{Cl}}$ is the scalar imaginary of the **complexified** Clifford algebra, not the biquaternion imaginary. The two are different objects: the biquaternion imaginary $i$ has image $-\omega$ under $\iota_{\mathrm{Cl}}$, so in the dictionary
 
 $$
-\boxed{\;\gamma_5 \;=\; -i_{\mathrm{Cl}}\,\mathsf{M}_4(i) \;=\; \Phi_{\mathbb{C}}\!\left(-i_{\mathrm{Cl}}\, i\right)\;},
+\boxed{\;\gamma_5 \;=\; -i_{\mathrm{Cl}}\,\iota_{\mathrm{Cl}}(i) \;=\; \Phi_{\mathbb{C}}\!\left(-i_{\mathrm{Cl}}\, i\right)\;},
 $$
 
-where $\Phi_{\mathbb{C}}$ is the $\mathbb{C}$-linear extension of $\mathsf{M}_4$ to $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$. In words: **the chirality operator is the product of the two commuting square roots of $-1$**, the external complex unit $i_{\mathrm{Cl}}$ of the complexified Clifford algebra and the biquaternion imaginary $i$ (whose Clifford image is minus the pseudoscalar). This is the precise sense in which $\gamma_5$ is *not* an element of $\mathbb{B}$: it needs both square roots, and their product is a new central element of the complexified algebra.
+where $\Phi_{\mathbb{C}}$ is the $\mathbb{C}$-linear extension of $\iota_{\mathrm{Cl}}$ to $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$. In words: **the chirality operator is the product of the two commuting square roots of $-1$**, the external complex unit $i_{\mathrm{Cl}}$ of the complexified Clifford algebra and the biquaternion imaginary $i$ (whose Clifford image is minus the pseudoscalar). This is the precise sense in which $\gamma_5$ is *not* an element of $\mathbb{B}$: it needs both square roots, and their product is a new central element of the complexified algebra.
 
-The formula fixes the image of the second imaginary only after a choice. Since $j\notin\mathbb{B}$, $\mathsf{M}_4$ does not determine $\mathsf{M}_4(j)$; the $\mathbb{C}$-linear extension to $\mathbb{B}[j]$ requires one binary choice. The convention that $\gamma_5$ is the image of $\chi=ij$ selects it:
+The formula fixes the image of the second imaginary only after a choice. Since $j\notin\mathbb{B}$, $\iota_{\mathrm{Cl}}$ does not determine $\iota_{\mathrm{Cl}}(j)$; the $\mathbb{C}$-linear extension to $\mathbb{B}[j]$ requires one binary choice. The convention that $\gamma_5$ is the image of $\chi=ij$ selects it:
 
 $$
-\boxed{\;\mathsf{M}_4(j)=-i_{\mathrm{Cl}}\quad\Longleftrightarrow\quad \mathsf{M}_4(\chi)=\mathsf{M}_4(i)\mathsf{M}_4(j)=+\gamma_5\;},\qquad \chi=ij .
+\boxed{\;\iota_{\mathrm{Cl}}(j)=-i_{\mathrm{Cl}}\quad\Longleftrightarrow\quad \iota_{\mathrm{Cl}}(\chi)=\iota_{\mathrm{Cl}}(i)\iota_{\mathrm{Cl}}(j)=+\gamma_5\;},\qquad \chi=ij .
 $$
 
-The other choice, $\mathsf{M}_4(j)=+i_{\mathrm{Cl}}$, gives $\mathsf{M}_4(\chi)=-\gamma_5$: it exchanges the two central idempotents $e_\pm=\tfrac12(1\pm\chi)$, hence the labels left and right, and no physical statement changes with it. The mass bilinear is even under that exchange, $\bar\Psi\Psi\mapsto\bar\Psi\Psi$, while the axial bilinear is odd, $\bar\Psi\gamma_5\Psi\mapsto-\bar\Psi\gamma_5\Psi$; the two choices must therefore not be mixed inside one computation. The sign is visible in the chiral trace: writing $\tilde Q=\sum_\mu(q_\mu+iq'_\mu)e_\mu$ with real $q_\mu,q'_\mu$, one has $\operatorname{Tr}(\gamma_5\mathsf{M}_4(\tilde Q))=4i_{\mathrm{Cl}}q'_t=4i_{\mathrm{Cl}}\operatorname{Im}\operatorname{Sc}(\tilde Q)$, and the opposite extension reverses it. The mass operator is blind to the choice, $\chi D_m\chi=-D_m$, while the axial current is not, which is why a mixed convention leaves the spectrum right and the axial couplings wrong.
+The other choice, $\iota_{\mathrm{Cl}}(j)=+i_{\mathrm{Cl}}$, gives $\iota_{\mathrm{Cl}}(\chi)=-\gamma_5$: it exchanges the two central idempotents $e_\pm=\tfrac12(1\pm\chi)$, hence the labels left and right, and no physical statement changes with it. The mass bilinear is even under that exchange, $\bar\Psi\Psi\mapsto\bar\Psi\Psi$, while the axial bilinear is odd, $\bar\Psi\gamma_5\Psi\mapsto-\bar\Psi\gamma_5\Psi$; the two choices must therefore not be mixed inside one computation. The sign is visible in the chiral trace: writing $\tilde Q=\sum_\mu(q_\mu+iq'_\mu)e_\mu$ with real $q_\mu,q'_\mu$, one has $\operatorname{Tr}(\gamma_5\iota_{\mathrm{Cl}}(\tilde Q))=4i_{\mathrm{Cl}}q'_t=4i_{\mathrm{Cl}}\operatorname{Im}\operatorname{Sc}(\tilde Q)$, and the opposite extension reverses it. The mass operator is blind to the choice, $\chi D_m\chi=-D_m$, while the axial current is not, which is why a mixed convention leaves the spectrum right and the axial couplings wrong.
 
 The defining properties are verified directly:
 
 $$
-\gamma_5^2 = I_4, \qquad \gamma_5\gamma^\mu = -\gamma^\mu\gamma_5, \qquad \gamma_5\,\mathsf{M}_4(\tilde{Q}) = \mathsf{M}_4(\tilde{Q})\,\gamma_5 \quad (\tilde{Q} \in \mathbb{B}).
+\gamma_5^2 = I_4, \qquad \gamma_5\gamma^\mu = -\gamma^\mu\gamma_5, \qquad \gamma_5\,\iota_{\mathrm{Cl}}(\tilde{Q}) = \iota_{\mathrm{Cl}}(\tilde{Q})\,\gamma_5 \quad (\tilde{Q} \in \mathbb{B}).
 $$
 
 $\gamma_5$ anticommutes with every generator and commutes with every even element, hence with the whole biquaternion image.
@@ -436,13 +436,13 @@ the decomposition of the complexified even algebra into its two chiral halves.
 
 ### Two families of idempotents, not to be confused
 
-The chirality projectors are **not** the same as the pure-state idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \mu i)$ of the informational sector, in which $\mu$ is a unit pure real quaternion and $i$ is the biquaternion imaginary. Under the dictionary, with $\mu = \mu_k \vec e_k$ and $\mathsf{M}_4(\mu)$ a spacelike bivector $b$ satisfying $b^2 = -I_4$,
+The chirality projectors are **not** the same as the pure-state idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \mu i)$ of the informational sector, in which $\mu$ is a unit pure real quaternion and $i$ is the biquaternion imaginary. Under the dictionary, with $\mu = \mu_k \vec e_k$ and $\iota_{\mathrm{Cl}}(\mu)$ a spacelike bivector $b$ satisfying $b^2 = -I_4$,
 
 $$
-\tfrac{1}{2}\bigl(e_t + \mu i\bigr) \;\longmapsto\; \tfrac{1}{2}\bigl(I_4 + b\,\omega\bigr) \;=\; \tfrac{1}{2}\bigl(I_4 + \mathsf{M}_4(\mu)\omega\bigr),
+\tfrac{1}{2}\bigl(e_t + \mu i\bigr) \;\longmapsto\; \tfrac{1}{2}\bigl(I_4 + b\,\omega\bigr) \;=\; \tfrac{1}{2}\bigl(I_4 + \iota_{\mathrm{Cl}}(\mu)\omega\bigr),
 $$
 
-which is idempotent, because $(b\omega)^2 = b^2\omega^2 = (-1)(-1) = +1$, but is **not central**: it does not commute with the even algebra, since $b$ does not. For example, $\tfrac{1}{2}(e_t + i\vec e_z)$ maps to $\tfrac{1}{2}(I_4 + \gamma^0\gamma^3)$, which squares to itself and does not commute with $\mathsf{M}_4(\vec e_x) = \gamma^2\gamma^3$. So the dictionary separates two idempotent families that both carry the name $\tilde\Pi_{1,2}$ in the corpus:
+which is idempotent, because $(b\omega)^2 = b^2\omega^2 = (-1)(-1) = +1$, but is **not central**: it does not commute with the even algebra, since $b$ does not. For example, $\tfrac{1}{2}(e_t + i\vec e_z)$ maps to $\tfrac{1}{2}(I_4 + \gamma^0\gamma^3)$, which squares to itself and does not commute with $\iota_{\mathrm{Cl}}(\vec e_x) = \gamma^2\gamma^3$. So the dictionary separates two idempotent families that both carry the name $\tilde\Pi_{1,2}$ in the corpus:
 
 - the **chirality projectors** $\tfrac{1}{2}(1 \pm \gamma_5) \leftrightarrow \tfrac{1}{2}(e_t \mp i_{\mathrm{Cl}} i)$, central, two of them, splitting the complexified algebra;
 - the **state idempotents** $\tfrac{1}{2}(1 + b\omega) \leftrightarrow \tfrac{1}{2}(e_t + \mu i)$, non-central, parametrized by a unit vector and the Bloch sphere.
@@ -462,7 +462,7 @@ $$
 the sign $+$ on the scalar and the pseudoscalar following from the even number of transpositions. Under the dictionary this is exactly quaternion conjugation:
 
 $$
-\mathsf{M}_4(\tilde{Q}^{\natural}) = \mathrm{rev}\bigl(\mathsf{M}_4(\tilde{Q})\bigr),
+\iota_{\mathrm{Cl}}(\tilde{Q}^{\natural}) = \mathrm{rev}\bigl(\iota_{\mathrm{Cl}}(\tilde{Q})\bigr),
 $$
 
 checked on the eight real basis elements, whose images under ${}^{\natural}$ carry precisely the signs $+$ on $e_t, i$ and $-$ on $\vec e_k, i\vec e_k$ that reversal carries on $I_4, \omega$ and the bivectors.
@@ -472,13 +472,13 @@ checked on the eight real basis elements, whose images under ${}^{\natural}$ car
 The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. Its Clifford image is the product with the reversal,
 
 $$
-\mathsf{M}_4(\tilde{Q})\,\mathrm{rev}\bigl(\mathsf{M}_4(\tilde{Q})\bigr) = \mathsf{M}_4\bigl(\tilde{Q}\tilde{Q}^{\natural}\bigr),
+\iota_{\mathrm{Cl}}(\tilde{Q})\,\mathrm{rev}\bigl(\iota_{\mathrm{Cl}}(\tilde{Q})\bigr) = \iota_{\mathrm{Cl}}\bigl(\tilde{Q}\tilde{Q}^{\natural}\bigr),
 $$
 
 which is central. When the biquaternion norm is **real** — in particular on both $\mathbb{M}_-$ and $\mathbb{M}_+$ — this is a scalar matrix,
 
 $$
-\mathsf{M}_4(\tilde{Q})\,\mathrm{rev}\bigl(\mathsf{M}_4(\tilde{Q})\bigr) = \langle\tilde{Q}\rangle_{\natural}\,I_4, \qquad \tilde{Q} \in \mathbb{M}_- \text{ or } \mathbb{M}_+,
+\iota_{\mathrm{Cl}}(\tilde{Q})\,\mathrm{rev}\bigl(\iota_{\mathrm{Cl}}(\tilde{Q})\bigr) = \langle\tilde{Q}\rangle_{\natural}\,I_4, \qquad \tilde{Q} \in \mathbb{M}_- \text{ or } \mathbb{M}_+,
 $$
 
 verified with general real coefficients on each sector. For the material four-vectors this is the Minkowski interval. Writing $\tilde{V} = i v_0 e_t + v_1\vec e_x + v_2\vec e_y + v_3\vec e_z \in \mathbb{M}_-$,
@@ -497,10 +497,10 @@ $$
 \mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2).
 $$
 
-Two cautions about traces, since the dictionary introduces a second one. First, the trace in the corpus formula is the trace of the $2\times 2$ matrix representing the biquaternion; it is not the trace of the $4\times 4$ Clifford matrix. Second, the two are different functions: the $4\times 4$ trace of an even element is $\mathrm{Tr}\,\mathsf{M}_4(\tilde{Q}) = 4\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q})$ — for example $\mathrm{Tr}\,\mathsf{M}_4(e_t) = 4$ and $\mathrm{Tr}\,\mathsf{M}_4(i) = \mathrm{Tr}\,\omega = 0$ — while the $2\times 2$ trace is $\mathrm{Tr}_2(\tilde{Q}) = 2Q_t$, so that
+Two cautions about traces, since the dictionary introduces a second one. First, the trace in the corpus formula is the trace of the $2\times 2$ matrix representing the biquaternion; it is not the trace of the $4\times 4$ Clifford matrix. Second, the two are different functions: the $4\times 4$ trace of an even element is $\mathrm{Tr}\,\iota_{\mathrm{Cl}}(\tilde{Q}) = 4\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q})$ — for example $\mathrm{Tr}\,\iota_{\mathrm{Cl}}(e_t) = 4$ and $\mathrm{Tr}\,\iota_{\mathrm{Cl}}(i) = \mathrm{Tr}\,\omega = 0$ — while the $2\times 2$ trace is $\mathrm{Tr}_2(\tilde{Q}) = 2Q_t$, so that
 
 $$
-\mathrm{Tr}\,\mathsf{M}_4(\tilde{Q}) = 2\,\mathrm{Re}\,\mathrm{Tr}_2(\tilde{Q}).
+\mathrm{Tr}\,\iota_{\mathrm{Cl}}(\tilde{Q}) = 2\,\mathrm{Re}\,\mathrm{Tr}_2(\tilde{Q}).
 $$
 
 The trace formula itself is a statement internal to $\mathbb{B}$ and needs no translation.
@@ -552,16 +552,16 @@ $$
 and it is a biquaternion-valued operator, hence **even** under the dictionary. Its Clifford representative is
 
 $$
-\mathsf{M}_4(\tilde{\nabla}) = I_4\,\partial/\partial Q_t + (\gamma^2\gamma^3)\,\partial/\partial Q_x + (\gamma^3\gamma^1)\,\partial/\partial Q_y + (\gamma^1\gamma^2)\,\partial/\partial Q_z,
+\iota_{\mathrm{Cl}}(\tilde{\nabla}) = I_4\,\partial/\partial Q_t + (\gamma^2\gamma^3)\,\partial/\partial Q_x + (\gamma^3\gamma^1)\,\partial/\partial Q_y + (\gamma^1\gamma^2)\,\partial/\partial Q_z,
 $$
 
 an even operator. It is a square root of the d'Alembertian in the reversal sense,
 
 $$
-\mathsf{M}_4(\tilde{\nabla})\,\mathrm{rev}\bigl(\mathsf{M}_4(\tilde{\nabla})\bigr) = \Box\,I_4,
+\iota_{\mathrm{Cl}}(\tilde{\nabla})\,\mathrm{rev}\bigl(\iota_{\mathrm{Cl}}(\tilde{\nabla})\bigr) = \Box\,I_4,
 $$
 
-which is the image of $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the biquaternion norm: $\mathsf{M}_4(\tilde{P})\,\mathrm{rev}(\mathsf{M}_4(\tilde{P})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.
+which is the image of $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, since reversal corresponds to quaternion conjugation. Its symbol squares to the biquaternion norm: $\iota_{\mathrm{Cl}}(\tilde{P})\,\mathrm{rev}(\iota_{\mathrm{Cl}}(\tilde{P})) = (k_0^2 + k_1^2 + k_2^2 + k_3^2)I_4$.
 
 The gamma-matrix Dirac operator is the **odd** element
 
@@ -569,13 +569,13 @@ $$
 \not\partial = \gamma^\mu\partial/\partial Q_\mu, \qquad \not\partial^2 = \bigl(-(1/c^2)\partial^2/\partial {t'}^2 + \Delta\bigr)I_4 = \Box\,I_4,
 $$
 
-where the second identity is the ordinary Clifford relation, verified symbolically on the symbols. So the algebra contains **two** square roots of $\Box$: the odd Dirac operator $\not\partial$ and the even gradient $\mathsf{M}_4(\tilde{\nabla})$, which are square roots in different graded pieces, the odd one with the general plain bilinear product and the even one with the reversal. They are not the same operator, and the dictionary does not identify them; what relates them is the frame of the previous section, through which every odd element is written as a fixed odd element times an even one. The statement in the parent article that $\tilde{\nabla}$ "plays the role of the Dirac operator" is therefore a statement about the role — both are square roots of the wave operator and both express first-order relativistic equations — and not an identification of the two operators.
+where the second identity is the ordinary Clifford relation, verified symbolically on the symbols. So the algebra contains **two** square roots of $\Box$: the odd Dirac operator $\not\partial$ and the even gradient $\iota_{\mathrm{Cl}}(\tilde{\nabla})$, which are square roots in different graded pieces, the odd one with the general plain bilinear product and the even one with the reversal. They are not the same operator, and the dictionary does not identify them; what relates them is the frame of the previous section, through which every odd element is written as a fixed odd element times an even one. The statement in the parent article that $\tilde{\nabla}$ "plays the role of the Dirac operator" is therefore a statement about the role — both are square roots of the wave operator and both express first-order relativistic equations — and not an identification of the two operators.
 
 ## Summary
 
 This article is a dictionary between the Dirac gamma-matrix algebra and the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.
 
-**The two are the same algebra up to size.** The biquaternion algebra is the even subalgebra of the real Clifford algebra of the metric $g = \mathrm{diag}(+1,-1,-1,-1)$, $\mathbb{B} \cong \mathrm{Cl}_{1,3}^{+}$, of real dimension $8$; the full algebra has dimension $16$. The isomorphism $\mathsf{M}_4$ is fixed by $\vec e_x \mapsto \gamma^2\gamma^3$, $\vec e_y \mapsto \gamma^3\gamma^1$, $\vec e_z \mapsto \gamma^1\gamma^2$, $i \mapsto -\omega = -\gamma^0\gamma^1\gamma^2\gamma^3$, and is verified by exhaustive multiplication on a basis.
+**The two are the same algebra up to size.** The biquaternion algebra is the even subalgebra of the real Clifford algebra of the metric $g = \mathrm{diag}(+1,-1,-1,-1)$, $\mathbb{B} \cong \mathrm{Cl}_{1,3}^{+}$, of real dimension $8$; the full algebra has dimension $16$. The isomorphism $\iota_{\mathrm{Cl}}$ is fixed by $\vec e_x \mapsto \gamma^2\gamma^3$, $\vec e_y \mapsto \gamma^3\gamma^1$, $\vec e_z \mapsto \gamma^1\gamma^2$, $i \mapsto -\omega = -\gamma^0\gamma^1\gamma^2\gamma^3$, and is verified by exhaustive multiplication on a basis.
 
 **The two signs of the metric are distinct but share the even part.** The algebra of this article's metric is $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$ in the standard counting, while the opposite-sign algebra $\mathrm{Cl}_{3,1}$ — three generators squaring to $+1$, one to $-1$ — is $\mathrm{Cl}_{3,1} \cong M_4(\mathbb{R})$; the two are non-isomorphic over $\mathbb{R}$. They nevertheless share the even subalgebra, $\mathrm{Cl}_{1,3}^{+} \cong \mathrm{Cl}_{3,1}^{+} \cong M_2(\mathbb{C}) \cong \mathbb{B}$, so the dictionary of even elements is the same for either sign of $g$; the sign changes only the character of the odd part and the reality of $\gamma_5$.
 
@@ -583,13 +583,13 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 
 **The dictionary of even basis elements is:** $e_t \leftrightarrow I_4$, $\vec e_k \leftrightarrow$ spacelike bivectors, $i \leftrightarrow -\omega$, and $i\vec e_k \leftrightarrow$ timelike bivectors, **all with positive signs**. The single minus sits on $i$ itself and is the sign the correspondence leaves free.
 
-**Products go to products.** $\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\mathsf{M}_4(\tilde{Q}_2)$; the quaternion multiplication table becomes the multiplication table of the bivectors, and the Lorentz generators $\sigma^{\mu\nu} = \tfrac{1}{2}\gamma^\mu\gamma^\nu$ are half the corresponding biquaternions, with boosts in the imaginary-quaternion directions. Multiplication by $\omega$ is multiplication by $-i$.
+**Products go to products.** $\iota_{\mathrm{Cl}}(\tilde{Q}_1\tilde{Q}_2) = \iota_{\mathrm{Cl}}(\tilde{Q}_1)\iota_{\mathrm{Cl}}(\tilde{Q}_2)$; the quaternion multiplication table becomes the multiplication table of the bivectors, and the Lorentz generators $\sigma^{\mu\nu} = \tfrac{1}{2}\gamma^\mu\gamma^\nu$ are half the corresponding biquaternions, with boosts in the imaginary-quaternion directions. Multiplication by $\omega$ is multiplication by $-i$.
 
-**The odd part is reached by a frame.** The generators and trivectors are not biquaternions; every vector is $\gamma^0\mathsf{M}_4(w)$ with $w \in \mathbb{M}_+$ and every trivector is $\gamma^0\mathsf{M}_4(w)$ with $w \in \mathbb{M}_-$.
+**The odd part is reached by a frame.** The generators and trivectors are not biquaternions; every vector is $\gamma^0\iota_{\mathrm{Cl}}(w)$ with $w \in \mathbb{M}_+$ and every trivector is $\gamma^0\iota_{\mathrm{Cl}}(w)$ with $w \in \mathbb{M}_-$.
 
 **The four real subspaces have simple images.** $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are the spacelike and timelike bivector groups with and without the identity and pseudoscalar; $\mathbb{M}_+$ is the identity plus the timelike bivectors; and $\mathbb{M}_-$ is the pseudoscalar plus the spacelike bivectors.
 
-**Chirality is the product of two complex structures.** $\gamma_5 = i_{\mathrm{Cl}}\omega = -\Phi_{\mathbb{C}}(i_{\mathrm{Cl}} i)$, the sign being that of $\mathsf{M}_4(i)$; the extension to $\mathbb{B}[j]$ carries $\mathsf{M}_4(j)=-i_{\mathrm{Cl}}$, so that $\mathsf{M}_4(\chi)=+\gamma_5$; its projectors are the central idempotents $\tfrac{1}{2}(e_t \mp i_{\mathrm{Cl}} i)$, distinct from the non-central state idempotents $\tfrac{1}{2}(e_t + \mu i)$.
+**Chirality is the product of two complex structures.** $\gamma_5 = i_{\mathrm{Cl}}\omega = -\Phi_{\mathbb{C}}(i_{\mathrm{Cl}} i)$, the sign being that of $\iota_{\mathrm{Cl}}(i)$; the extension to $\mathbb{B}[j]$ carries $\iota_{\mathrm{Cl}}(j)=-i_{\mathrm{Cl}}$, so that $\iota_{\mathrm{Cl}}(\chi)=+\gamma_5$; its projectors are the central idempotents $\tfrac{1}{2}(e_t \mp i_{\mathrm{Cl}} i)$, distinct from the non-central state idempotents $\tfrac{1}{2}(e_t + \mu i)$.
 
 **Conjugation is reversal, and the biquaternion norm is the Clifford norm with reversal**, giving the Minkowski interval on $\mathbb{M}_-$ and its mirror on $\mathbb{M}_+$.
 
@@ -606,7 +606,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ | $ict'$ metric, belonging to the gradient |
 | $\gamma^\mu$ | Gamma matrices, $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -I_4$ |
-| $\mathsf{M}_4$ | Isomorphism $\mathbb{B} \to \mathrm{Cl}_{1,3}^{+}$ |
+| $\iota_{\mathrm{Cl}}$ | Isomorphism $\mathbb{B} \to \mathrm{Cl}_{1,3}^{+}$ |
 | $\Phi_{\mathbb{C}}$ | Its $\mathbb{C}$-linear extension |
 | $\gamma_5 = i_{\mathrm{Cl}}\omega$ | Chirality operator |
 | $\tilde\Pi_{L,R} = \tfrac{1}{2}(1 \pm \gamma_5)$ | Chirality projectors |

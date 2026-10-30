@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Projective Line and the Möbius Action__
+# __$M_4(\mathbb{C})$ Representation : The Projective Line and the Möbius Action__
 
 ## Introduction
 
@@ -6,15 +6,17 @@ The minimal left ideals of the biquaternion algebra form a projective line, and 
 
 This article develops the parametrisation, the action and its kernel, the chart and the Möbius formula, the idempotents, the orbits and the cross-ratio. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$. The regular matrices are written in the eigenbasis, where $\mathsf{M}_4(\tilde Q)=\operatorname{diag}(A,A)$ with $A=\mathsf{M}_2(\tilde Q)$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. A vector of $\mathbb{C}^2$ is a column $\xi$, a line is written $[\xi]$, and the projective line is $\mathbb{P}^1(\mathbb{C})$. The chart is $z=\xi_1/\xi_2$ on the open set $\xi_2\neq0$. The regular matrices are written in the eigenbasis, where $\mathsf{M}_4^{L}(\tilde Q)=\operatorname{diag}(A,A)$ with $A=\mathsf{M}_2(\tilde Q)$.
 
 **Boundaries.** The lattice of ideals and the parametrisation by $\mathbb{P}^1$ are *The Category of Modules*, §*The Lattice of Left Ideals*; the automorphism group is *Biquaternion Automorphisms and Derivations*; the real structure is *The Category of Modules*, §*The Projective Line and the Möbius Action*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Lines and the Minimal Left Ideals
 
 For a line $L\in\mathbb{P}^1(\mathbb{C})$ put
 $$
-J_L=\{M\in\mathsf{M}_4(\mathbb{B}):\operatorname{im}M\subseteq L\oplus L\}.
+J_L=\{M\in\mathsf{M}_4^{L}(\mathbb{B}):\operatorname{im}M\subseteq L\oplus L\}.
 $$
 The adjoint $J_L^{\dagger}=\{M^{\dagger}:M\in J_L\}$ is a minimal left ideal. The two families are exchanged by the dagger, and they define the same projective line; the computation below is stated for the right ideals because left multiplication then gives the standard Möbius formula, and the left-ideal statement is the adjoint read backwards.
 
@@ -34,7 +36,7 @@ These are the adjoint mirrors of the two minimal left ideals $\mathbb{B}\tilde\P
 
 ## The Action of $GL_2(\mathbb{C})$
 
-For $M\in\mathsf{M}_4(\mathbb{B}^{\times})$ and a line $L$, put
+For $M\in\mathsf{M}_4^{L}(\mathbb{B}^{\times})$ and a line $L$, put
 $$
 M\cdot L=ML.
 $$
@@ -50,7 +52,7 @@ $$
 $$
 \ker=\mathbb{C}^{\times}\mathrm I_4,
 \qquad
-\mathsf{M}_4(\mathbb{B}^{\times})/\mathbb{C}^{\times}\mathrm I_4\cong PGL_2(\mathbb{C}).
+\mathsf{M}_4^{L}(\mathbb{B}^{\times})/\mathbb{C}^{\times}\mathrm I_4\cong PGL_2(\mathbb{C}).
 $$
 The action factors through $PGL_2(\mathbb{C})$, which is the automorphism group of $M_2(\mathbb{C})$ and, by transport, of the biquaternion algebra. On idempotents the same action reads
 $$
@@ -88,11 +90,11 @@ A **rank-two idempotent of the image** is a matrix $\Pi\neq0$ with $\Pi^2=\Pi$ a
 
 **Proposition.** Every rank-two idempotent of the image with image $W\oplus W$ and kernel $K\oplus K$ is
 $$
-\Pi=\mathsf{M}_4(u\eta),
+\Pi=\mathsf{M}_4^{L}(u\eta),
 $$
 where $u$ spans $W$ and $\eta$ is the linear form with $\eta(u)=1$ and $\eta(K)=0$. The fibre of the map $\Pi\mapsto\operatorname{im}\Pi$ over $W$ is an affine line, parametrised by the kernel $K\neq W$.
 
-*Proof.* The product $u\eta$ satisfies $(u\eta)^2=u\eta(u)\eta=u\eta$, has image $W$ and kernel $K$. Its image under $\mathsf{M}_4$ is a rank-two idempotent with image $W\oplus W$ and kernel $K\oplus K$. Conversely a rank-two idempotent of the image with image $W\oplus W$ is determined by its kernel, and the formula recovers it. The kernels $K\neq W$ form the affine line $\mathbb{P}^1\setminus\{W\}$. $\square$
+*Proof.* The product $u\eta$ satisfies $(u\eta)^2=u\eta(u)\eta=u\eta$, has image $W$ and kernel $K$. Its image under $\mathsf{M}_4^{L}$ is a rank-two idempotent with image $W\oplus W$ and kernel $K\oplus K$. Conversely a rank-two idempotent of the image with image $W\oplus W$ is determined by its kernel, and the formula recovers it. The kernels $K\neq W$ form the affine line $\mathbb{P}^1\setminus\{W\}$. $\square$
 
 **The conjugacy class.** Every rank-two idempotent of the image is conjugate, in the image, to $\operatorname{diag}(1,1,0,0)$. The image of the $GL_2$ action is transitive on the pairs (image, kernel) of lines, and the stabiliser of the standard idempotent is the diagonal torus of complex dimension two. The class in the image therefore has complex dimension two. In the ambient $GL_4$ the same projector has an eight-dimensional conjugacy class, because the image and the kernel can vary independently in $\mathbb{C}^4$; the image is the two-dimensional subfamily with image and kernel of the form $W\oplus W$ and $K\oplus K$.
 
@@ -132,7 +134,7 @@ $$
 $$
 In the chart $\xi_i=(z_i,1)^{\mathsf T}$ this is the cross-ratio formula of the preceding section, because $[\xi_i,\xi_j]=z_i-z_j$.
 
-**Invariance in the regular model.** For $M=\mathsf{M}_4(\tilde Q)$ acting on $L\oplus L$ by the same $2\times2$ matrix $A$ on each copy,
+**Invariance in the regular model.** For $M=\mathsf{M}_4^{L}(\tilde Q)$ acting on $L\oplus L$ by the same $2\times2$ matrix $A$ on each copy,
 $$
 [M\xi,M\eta]=\det(A)\,[\xi,\eta]=N\,[\xi,\eta],
 $$
@@ -142,7 +144,7 @@ so every bracket in the numerator and the denominator is multiplied by the same 
 
 ## The Real Structure
 
-**The real form.** On the real quaternion subspace the unit-norm group is $SU(2)$, and the projective line of complex lines is replaced by the sphere of real directions. The quotient of $SU(2)$ by its centre is $SO(3)$, and the action on the real projective line is the rotation action on the Bloch sphere. The regular model carries two copies of the spinor space, and the two copies give the same Bloch vector in *$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector*.
+**The real form.** On the real quaternion subspace the unit-norm group is $SU(2)$, and the projective line of complex lines is replaced by the sphere of real directions. The quotient of $SU(2)$ by its centre is $SO(3)$, and the action on the real projective line is the rotation action on the Bloch sphere. The regular model carries two copies of the spinor space, and the two copies give the same Bloch vector in *$M_4(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector*.
 
 **The compact picture.** The compact real form of $PGL_2(\mathbb{C})$ is $PU(2)\cong SO(3)$, and the projective line with its real structure is the two-sphere. The Möbius action restricts to the rotation action, and the cross-ratio restricts to the conformal invariant of four points on the sphere.
 
@@ -163,8 +165,8 @@ The minimal right ideals of the regular image are the rank-two ideals $J_L=\{M:\
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two columns
-- [$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector](m4c-representation-spin-qubits-and-the-bloch-vector.html), for the real picture
+- [$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the two columns
+- [$M_4(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector](m4c-representation-spin-qubits-and-the-bloch-vector.html), for the real picture
 - [$M_2(\mathbb{C})$ Representation : The Projective Line and the Möbius Action](m2c-representation-the-projective-line-and-the-mobius-action.html), for the $2\times2$ version
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the lattice of ideals
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the automorphism group

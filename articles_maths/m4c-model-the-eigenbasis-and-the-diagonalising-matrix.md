@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix__
+# __$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix__
 
 ## Introduction
 
@@ -6,14 +6,16 @@ A spectrally regular biquaternion has an eigenbasis of four vectors. In the regu
 
 This article constructs the eigenbasis, proves the diagonal form, computes the diagonalising matrix and its determinant, and describes the freedom of the choice. It absorbs the $4\times4$ material of the former *The Spectrally Regular Sector and Eigenbasis of a Biquaternion in Matrix Element Representations* and is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The $2\times2$ diagonalising matrix is
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The element is $\tilde Q=Q_te_t+\vec Q$ with $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$, and $B$ is a chosen square root. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The $2\times2$ diagonalising matrix is
 $$
 \mathsf{C}_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},
 \qquad
 \det\mathsf{C}_Q=2B(B-Q_z).
 $$
 
-**Boundaries.** The projectors and nilpotents are *$M_4(\mathbb{C})_L$ Model : The Spectral Projectors*; the centraliser is *$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser*; the $2\times2$ diagonalising matrix is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the construction of the spectral basis is *The Eigenbasis of a Spectrally Regular Biquaternion*.
+**Boundaries.** The projectors and nilpotents are *$M_4(\mathbb{C})$ Model : The Spectral Projectors*; the centraliser is *$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*; the $2\times2$ diagonalising matrix is *$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix*; the construction of the spectral basis is *The Eigenbasis of a Spectrally Regular Biquaternion*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Eigenbasis
 
@@ -49,7 +51,7 @@ because left multiplication acts on the row index of the matrix units and the co
 
 **Definition.** The **regular diagonalising matrix** $\mathsf{C}_Q^{(4)}$ is the matrix whose columns are the coordinate columns of $P_{11},P_{12},P_{21},P_{22}$ in the fixed basis. By construction,
 $$
-\bigl(\mathsf{C}_Q^{(4)}\bigr)^{-1}\mathsf{M}_4(\tilde Q)\,\mathsf{C}_Q^{(4)}
+\bigl(\mathsf{C}_Q^{(4)}\bigr)^{-1}\mathsf{M}_4^{L}(\tilde Q)\,\mathsf{C}_Q^{(4)}
 =\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-).
 $$
 
@@ -148,7 +150,7 @@ M=U\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)U^{\dagger},
 U\in U(4).
 $$
 
-*Proof.* The map $\mathsf{M}_4$ is injective and satisfies $\mathsf{M}_4(\tilde Q^{*})=M^{\dagger}$, so $MM^{\dagger}=M^{\dagger}M$ is equivalent to $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$. For a normal element the spectral projectors are Hermitian, and the distinct eigenspaces are orthogonal. $\square$
+*Proof.* The map $\mathsf{M}_4^{L}$ is injective and satisfies $\mathsf{M}_4^{L}(\tilde Q^{*})=M^{\dagger}$, so $MM^{\dagger}=M^{\dagger}M$ is equivalent to $\tilde Q\tilde Q^{*}=\tilde Q^{*}\tilde Q$. For a normal element the spectral projectors are Hermitian, and the distinct eigenspaces are orthogonal. $\square$
 
 **The $*$-unitary ambiguity.** In the normal case the freedom is reduced to
 $$
@@ -156,7 +158,7 @@ U(2)\times U(2),
 $$
 the $*$-unitary changes inside the two eigenspaces. The determinant of the $*$-unitary diagonalising matrix has modulus one.
 
-**The real quaternion case.** For a real quaternion $h=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the matrix $M=\mathsf{M}_4(h)$ is real and satisfies $M^{\mathsf T}M=(q_t^2+q_x^2+q_y^2+q_z^2)\mathrm I_4$. The eigenbasis can be chosen real. The two copies of the defining representation are then two copies of the same real matrix.
+**The real quaternion case.** For a real quaternion $h=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the matrix $M=\mathsf{M}_4^{L}(h)$ is real and satisfies $M^{\mathsf T}M=(q_t^2+q_x^2+q_y^2+q_z^2)\mathrm I_4$. The eigenbasis can be chosen real. The two copies of the defining representation are then two copies of the same real matrix.
 
 ## Change from One Element to Another
 
@@ -186,7 +188,7 @@ The eigenbasis is the basis of $\mathbb{C}^4$ formed by the coordinate columns o
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the projectors
-- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the ambiguity
+- [$M_4(\mathbb{C})$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the projectors
+- [$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the ambiguity
 - [$M_2(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix](m2c-model-the-eigenbasis-and-the-diagonalising-matrix.html), for the $2\times2$ matrix
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction

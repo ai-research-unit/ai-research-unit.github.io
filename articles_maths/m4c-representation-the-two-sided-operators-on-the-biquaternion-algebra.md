@@ -1,8 +1,8 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra__
+# __$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra__
 
 ## Introduction
 
-The $M_4(\mathbb{C})_L$ model assigns to each biquaternion $\tilde Q$ one $4\times4$ matrix, its left regular matrix $\mathsf{M}_4(\tilde Q)$. This article is one of a series; it records the construction and one gamma frame, and it does not fix the frame for the corpus. That is a representation of the algebra $\mathbb{B}$ on itself by left multiplication: the image has complex dimension four, and the product is preserved.
+The $4\times4$ model reads each biquaternion $\tilde Q$ as one $4\times4$ matrix, its left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$, whose image is the four-dimensional copy $M_4(\mathbb{C})_{\mathbb{B},L}$. This article is one of a series; it records the construction and one gamma frame, and it takes the frame of the corpus from *Conventions in Mathematics*, §*The Matrix Models*. That is a representation of the algebra $\mathbb{B}$ on itself by left multiplication: the image has complex dimension four, and the product is preserved.
 
 The operator $x\mapsto a\,x\,b$ is not a left multiplication when $b$ is not a scalar. It needs the right multiplication as well. The pair $(a,b)$ defines the **two-sided operator**
 
@@ -12,7 +12,7 @@ $$
 
 The operators $T_{a,b}$ span the whole matrix algebra $M_4(\mathbb{C})$, of complex dimension sixteen. This article builds that representation and its sixteen basis matrices. The construction is the case $n=2$ of $M_n(\mathbb{C})\otimes M_n(\mathbb{C})^{\mathrm{opp}}\cong M_{n^2}(\mathbb{C})$; it is recorded as one construction route in *The Matrix Algebra $M_4(\mathbb{C})$*, §*A Construction from the Two-Sided Operators*.
 
-**Three objects, three dimensions.** The carrier is the biquaternion algebra $\mathbb{B}$, of complex dimension four. Its left regular image $L(\mathbb{B})=\{\mathsf{M}_4(a)\}$ is a four-dimensional subalgebra of $M_4(\mathbb{C})$. The operator algebra is the tensor product
+**Three objects, three dimensions.** The carrier is the biquaternion algebra $\mathbb{B}$, of complex dimension four. Its left regular image $L(\mathbb{B})=\{\mathsf{M}_4^{L}(a)\}$ is a four-dimensional subalgebra of $M_4(\mathbb{C})$. The operator algebra is the tensor product
 
 $$
 \mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\;\cong\;\operatorname{End}_{\mathbb{C}}(\mathbb{B}),
@@ -22,7 +22,7 @@ of complex dimension sixteen; its **matrix representation** in the coefficient b
 
 **The tensor-product question.** Three products must be kept apart. The Kronecker product $L_\mu\otimes L_\nu$ of two $4\times4$ matrices is a $16\times16$ matrix acting on $\mathbb{C}^4\otimes\mathbb{C}^4$; it is *not* the matrix of $x\mapsto e_\mu x e_\nu$. The Kronecker product of two $2\times2$ matrices *is* a $4\times4$ matrix, and it gives the two-sided operators through the identification $\mathbb{B}\cong M_2(\mathbb{C})$; the change of basis is written below. The product that builds the sixteen is the tensor product of algebras, $e_\mu\otimes e_\nu^{\mathrm{opp}}\mapsto L_\mu R_\nu$, and in matrices it is the ordinary product of two $4\times4$ matrices.
 
-**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the matrix $\mathsf{M}_4$ are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. Write $L_a=\mathsf{M}_4(a)$ for left multiplication by $a$, and $R_b$ for right multiplication, $R_b(x)=x\,b$. The coefficient order is $(t,x,y,z)$. The matrix of quaternion conjugation on coefficients is
+**Conventions.** The algebra, the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the matrix $\mathsf{M}_4^{L}$ are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. Write $L_a=\mathsf{M}_4^{L}(a)$ for left multiplication by $a$, and $R_b$ for right multiplication, $R_b(x)=x\,b$. The coefficient order is $(t,x,y,z)$. The matrix of quaternion conjugation on coefficients is
 
 $$
 D=\operatorname{diag}(1,-1,-1,-1),
@@ -30,11 +30,11 @@ $$
 
 and $N(a)=\langle a\rangle_{\natural}=a_t^2+a_x^2+a_y^2+a_z^2$ is the quaternionic norm.
 
-**Boundaries.** The abstract algebra, its two regular representations and its double centraliser are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The family $\{T_{a,b}\}$, its composition, its adjoint and its type criteria are *Two-Sided Operators on the Biquaternion Algebra*. The model and its four-dimensional image are *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The one-sided families are *One-Sided Operators on the Biquaternion Algebra*. The congruence is *$M_4(\mathbb{C})_L$ Model : The Sandwich*, and the $2\times2$ model is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*.
+**Boundaries.** The abstract algebra, its two regular representations and its double centraliser are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. The family $\{T_{a,b}\}$, its composition, its adjoint and its type criteria are *Two-Sided Operators on the Biquaternion Algebra*. The model and its four-dimensional image are *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The one-sided families are *One-Sided Operators on the Biquaternion Algebra*. The congruence is *$M_4(\mathbb{C})$ Model : The Sandwich*, and the $2\times2$ model is *$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant*.
 
 ## The Four Left Matrices
 
-**Definition.** The left regular matrix $L_a=\mathsf{M}_4(a)$ is the $4\times4$ matrix whose $\mu$-th column is the coordinate column of $a\,e_\mu$. On a coefficient column $x$ it acts by $x\mapsto a\,x$.
+**Definition.** The left regular matrix $L_a=\mathsf{M}_4^{L}(a)$ is the $4\times4$ matrix whose $\mu$-th column is the coordinate column of $a\,e_\mu$. On a coefficient column $x$ it acts by $x\mapsto a\,x$.
 
 The four basis matrices are
 
@@ -63,7 +63,7 @@ $$
 
 ## The Four Right Matrices
 
-**Definition.** The right multiplication is $R_b(x)=x\,b$. Its matrix is not $\mathsf{M}_4(b)$: the two families commute, and $R_b$ is the commuting partner of $L_b$.
+**Definition.** The right multiplication is $R_b(x)=x\,b$. Its matrix is not $\mathsf{M}_4^{L}(b)$: the two families commute, and $R_b$ is the commuting partner of $L_b$.
 
 **Proposition.** With $D=\operatorname{diag}(1,-1,-1,-1)$,
 
@@ -201,7 +201,7 @@ of rank two. The algebra is simple and has many zero divisors; a basis of invert
 
 **The Kronecker product of the sixteen is not the construction.** The Kronecker product $T_{\mu\nu}\otimes T_{\rho\sigma}$ is a $16\times16$ matrix. It acts on $\mathbb{C}^4\otimes\mathbb{C}^4$, a space of dimension sixteen, not on the carrier $\mathbb{C}^4$. It does not represent $x\mapsto a\,x\,b$.
 
-**The Kronecker product at the $M_2$ level is.** Since $\mathbb{B}\cong M_2(\mathbb{C})$, let $S$ be the Peirce change of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*:
+**The Kronecker product at the $M_2$ level is.** Since $\mathbb{B}\cong M_2(\mathbb{C})$, let $S$ be the Peirce change of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*:
 
 $$
 S=\begin{pmatrix}
@@ -269,7 +269,7 @@ $$
 
 **Status.** This section records one frame, not the frame. The Clifford relations hold for every frame of the normal form below; the cell table holds for one frame only.
 
-**The five operators.** In the corpus frame the Dirac generators are five cells multiplied by $i$:
+**The five operators.** In the reference frame the Dirac generators are five cells multiplied by $i$:
 $$
 \gamma^0=iT_{e_t,e_x},\qquad
 \gamma^1=iT_{e_x,e_y},\qquad
@@ -309,7 +309,7 @@ $$
 $$
 *Proof.* $(\gamma^0)^2=-R_{\delta^2}=\mathrm{I}_4$; $(\gamma^k)^2=-L_{e_k^2}R_{\beta^2}=-\mathrm{I}_4$; $\gamma^0\gamma^k+\gamma^k\gamma^0=-L_{e_k}(R_{\delta\beta}+R_{\beta\delta})=0$; $\gamma^j\gamma^k+\gamma^k\gamma^j=-L_{e_je_k+e_ke_j}R_{\beta^2}=0$. For the pseudoscalar the left factor is $L_{e_te_xe_ye_z}=L_{-e_t}$ and the right factor is $R_{\beta^3\delta}=R_{-\beta\delta}$; the two signs cancel, so the product is $T_{e_t,\beta\delta}$.
 
-The corpus frame is $(\beta,\delta)=(e_y,e_x)$, so $\beta\delta=-e_z$.
+The reference frame is $(\beta,\delta)=(e_y,e_x)$, so $\beta\delta=-e_z$. It is the frame the physics articles use; it is not the canonical frame of *Conventions in Mathematics*, which is the Peirce frame of the regular matrix.
 
 **The pair is the choice.** The five operators determine the pair: $\delta$ is the right factor of $\gamma^0$, and $\beta$ is the right factor of $\gamma^1$. Distinct pairs therefore give distinct frames, not two descriptions of one frame. For the corpus pair $(e_y,e_x)$ the five are cells. If $\beta$ is not one of $e_x,e_y,e_z$, the three spatial generators are not cells: $\gamma^k=iT_{e_k,\beta}=i\sum_\nu\beta_\nu T_{k\nu}$ is a single product of coefficient rank one, supported on several cells. If $\delta$ is not a coordinate axis, $\gamma^0$ is not a cell either. The cell property is a property of the pair, not of the construction.
 
@@ -356,7 +356,7 @@ P_\pm=\tfrac12(\mathrm{I}_4\pm\gamma_5)=\tfrac12\bigl(T_{tt}\pm iT_{e_t,\beta\de
 $$
 In the Peirce basis $P_+=\operatorname{diag}(0,0,1,1)$ and $P_-=\operatorname{diag}(1,1,0,0)$. Both have rank two, and the second parameter has quaternionic norm zero. They are single two-sided operators, but not cells: a single product can be singular, and a single product need not be a cell.
 
-**Why the left regular model cannot hold them.** A product $L_aR_b$ lies in the left image $L(\mathbb{B})$ only when $b$ is a scalar, since $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\mathrm{I}_4$. The right factors here are $\delta$, $\beta$ and $\beta\delta$, all spatial, so no gamma and no $\gamma_5$ lies in $L(\mathbb{B})$. The left image is block diagonal in the Peirce basis, $S^{-1}L_aS=\operatorname{diag}(\mathsf{M}_2(a),\mathsf{M}_2(a))$, so it preserves the two chiral blocks; the four generators exchange them. The Dirac algebra is not contained in $M_4(\mathbb{C})_L$; it needs the two-sided operators.
+**Why the left regular model cannot hold them.** A product $L_aR_b$ lies in the left image $L(\mathbb{B})$ only when $b$ is a scalar, since $L(\mathbb{B})\cap R(\mathbb{B})=\mathbb{C}\mathrm{I}_4$. The right factors here are $\delta$, $\beta$ and $\beta\delta$, all spatial, so no gamma and no $\gamma_5$ lies in $L(\mathbb{B})$. The left image is block diagonal in the Peirce basis, $S^{-1}L_aS=\operatorname{diag}(\mathsf{M}_2(a),\mathsf{M}_2(a))$, so it preserves the two chiral blocks; the four generators exchange them. The Dirac algebra is not contained in $M_4(\mathbb{C})_{\mathbb{B},L}$; it needs the two-sided operators.
 
 **The Lorentz generators.** For this frame the six commutators
 $$
@@ -516,11 +516,11 @@ The following are candidate articles, not results. None of them is written, and 
 - The Peirce image of a general frame, and the spinor-basis change that relates two frames.
 - The Segre length in physics: the equations are known, since the matrices of length at most $r$ are the locus $\operatorname{rank}c\le r$, cut out by the $(r+1)\times(r+1)$ minors; what is not known is which physical operators have length two or three, and why.
 - The two-sided Dirac operator against the left gradient: the dictionary at the level of differential operators, not only of matrices.
-- The odd sector, the module structure and the reality conditions in a frame that is not the corpus frame.
+- The odd sector, the module structure and the reality conditions in a frame that is not the reference frame.
 
 ## Summary
 
-The two-sided operators on $\mathbb{B}$ form the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, whose matrix representation in the coefficient basis is $M_4(\mathbb{C})$. The sixteen matrices $T_{\mu\nu}=L_\mu R_\nu$ are a basis. They are built from the four left matrices of the $M_4(\mathbb{C})_L$ model and the four right matrices $R_b=D L_{b^{\natural}}D$, by ordinary matrix multiplication. They are signed permutation matrices of determinant $1$, orthogonal for the Hilbert–Schmidt form, closed under multiplication up to sign, and their span contains singular matrices. The correct tensor product is at the algebra level, or equivalently at the $M_2$ level through the change $S$; the Kronecker product of two $4\times4$ matrices is not the construction. The bilinear sandwich is one member of the family, with the second parameter tied to the first. The Dirac gammas are the five products $L_{e_t}R_\delta$ and $L_{e_k}R_\beta$ for a pair $(\beta,\delta)$ of orthogonal spatial directions; the corpus takes $(e_y,e_x)$. Nothing selects the pair. Only pairs of coordinate axes make the five into cells; a generic pair gives five single products of coefficient rank one, each spread over several cells. The pair is a free parameter of the construction: no Clifford relation mentions it. What survives a change of pair are the relations, the isomorphism with $\mathrm{Cl}_{1,3}(\mathbb{C})$, and the type of each generator (right multiplication or two-sided); what does not survive is the matrices, the cell labels, the grade column and the sign of $\gamma_5$. In the corpus frame the sixteen products of the five gammas are the sixteen cells up to units.
+The two-sided operators on $\mathbb{B}$ form the algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, whose matrix representation in the coefficient basis is $M_4(\mathbb{C})$. The sixteen matrices $T_{\mu\nu}=L_\mu R_\nu$ are a basis. They are built from the four left matrices of the $M_4(\mathbb{C})_{\mathbb{B},L}$ model and the four right matrices $R_b=D L_{b^{\natural}}D$, by ordinary matrix multiplication. They are signed permutation matrices of determinant $1$, orthogonal for the Hilbert–Schmidt form, closed under multiplication up to sign, and their span contains singular matrices. The correct tensor product is at the algebra level, or equivalently at the $M_2$ level through the change $S$; the Kronecker product of two $4\times4$ matrices is not the construction. The bilinear sandwich is one member of the family, with the second parameter tied to the first. The Dirac gammas are the five products $L_{e_t}R_\delta$ and $L_{e_k}R_\beta$ for a pair $(\beta,\delta)$ of orthogonal spatial directions; the reference frame takes $(e_y,e_x)$. Nothing selects the pair. Only pairs of coordinate axes make the five into cells; a generic pair gives five single products of coefficient rank one, each spread over several cells. The pair is a free parameter of the construction: no Clifford relation mentions it. What survives a change of pair are the relations, the isomorphism with $\mathrm{Cl}_{1,3}(\mathbb{C})$, and the type of each generator (right multiplication or two-sided); what does not survive is the matrices, the cell labels, the grade column and the sign of $\gamma_5$. In the corpus frame the sixteen products of the five gammas are the sixteen cells up to units.
 
 For the product question, write $M=\sum c_{\mu\nu}T_{\mu\nu}$ with $c(M)_{\mu\nu}=\tfrac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$. Then $M=L_aR_b$ exactly when $c(M)=ab^{\mathsf T}$, that is, exactly when $c(M)$ has rank one. The least number of products in a sum is $\operatorname{rank}c(M)$; every matrix is a sum of at most four, and a generic matrix needs four. The product set is the closed cone over the Segre $\mathbb{P}^3\times\mathbb{P}^3$, of dimension seven, not the algebra of dimension sixteen. Matrix rank does not decide the question: $E_{11}$ has rank one and needs four products, while $P_+$ has rank two and is one product.
 
@@ -530,7 +530,7 @@ For the product question, write $M=\sum c_{\mu\nu}T_{\mu\nu}$ with $c(M)_{\mu\nu
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra, complex dimension $4$ |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the coefficient basis |
-| $L_a=\mathsf{M}_4(a)$ | left multiplication, the $M_4(\mathbb{C})_L$ matrix |
+| $L_a=\mathsf{M}_4^{L}(a)$ | left multiplication, the $M_4(\mathbb{C})_{\mathbb{B},L}$ matrix |
 | $R_b$ | right multiplication, $x\mapsto xb$ |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | quaternion conjugation on coefficients |
 | $T_{a,b}=L_aR_b$ | the two-sided operator $x\mapsto axb$ |
@@ -539,19 +539,19 @@ For the product question, write $M=\sum c_{\mu\nu}T_{\mu\nu}$ with $c(M)_{\mu\nu
 | $\Theta_Q=T_{Q,Q^{*}}$ | the bilinear sandwich |
 | $N(a)=a_t^2+a_x^2+a_y^2+a_z^2$ | the quaternionic norm |
 | $\beta,\delta$ | the two right directions of a frame, $\beta^2=\delta^2=-e_t$, $\beta\delta=-\delta\beta$ |
-| $\gamma^0,\gamma^1,\gamma^2,\gamma^3,\gamma_5$ | one Dirac frame; five cells multiplied by $i$ in the corpus frame |
+| $\gamma^0,\gamma^1,\gamma^2,\gamma^3,\gamma_5$ | one Dirac frame; five cells multiplied by $i$ in the reference frame |
 | $c(M)$ | the coefficient matrix, $c(M)_{\mu\nu}=\tfrac14\operatorname{Tr}(T_{\mu\nu}^{\dagger}M)$ |
 | $\ell(M)$ | the least number of products summing to $M$; equal to $\operatorname{rank}c(M)$ |
 | $\Sigma^{\mu\nu}=\tfrac{i}{2}[\gamma^\mu,\gamma^\nu]$ | the Lorentz generators, six even cells |
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the left matrices and the model
+- [$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m4c-model-the-product-the-trace-and-the-determinant.html), for the left matrices and the model
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the abstract algebra and the theorem that it is the endomorphism algebra
 - [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the construction of $M_4(\mathbb{C})$ from the sandwich map and the change to the matrix-unit basis
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the family, its composition, its adjoint and its type criteria
 - [One-Sided Operators on the Biquaternion Algebra](one-sided-operators-on-the-biquaternion-algebra.html), for the two regular families
-- [$M_4(\mathbb{C})_L$ Model : The Sandwich](the-sandwich-in-the-m4c-l-model.html), for the congruence $MXM^{\dagger}$
-- [$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$
+- [$M_4(\mathbb{C})$ Model : The Sandwich](the-sandwich-in-the-m4c-l-model.html), for the congruence $MXM^{\dagger}$
+- [$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the Peirce basis, the chiral blocks and the matrix units $L_{P_i}R_{P_j}$
 - [$M_2(\mathbb{C})$ Model : The Product, the Trace and the Determinant](m2c-model-the-product-the-trace-and-the-determinant.html), for the $2\times2$ model and the Kronecker factors
 - [The Dirac Algebra and Biquaternions: A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html), for the explicit chiral matrices of one frame, the Peirce match and the chirality

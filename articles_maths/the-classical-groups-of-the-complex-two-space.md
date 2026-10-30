@@ -37,7 +37,7 @@ $$
 
 *Proof.* For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$, the equation $A^T\Omega A=\Omega$ is equivalent to $ad-bc=1$, as a direct computation shows. Hence $Sp(2,\mathbb{C})$ is the set of matrices of determinant one.
 
-**Proposition (the orthogonal group is abelian).** The group $SO(2,\mathbb{C})$ is isomorphic to $\mathbb{C}^*$, and
+**Proposition (the identity component is abelian).** The group $SO(2,\mathbb{C})$ is isomorphic to $\mathbb{C}^*$, and
 $$
 O(2,\mathbb{C})=SO(2,\mathbb{C})\rtimes\mathbb{Z}_2.
 $$

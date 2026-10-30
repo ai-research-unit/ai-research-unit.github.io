@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Conjugations and the Adjoints__
+# __$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints__
 
 ## Introduction
 
@@ -6,29 +6,31 @@ The four involutions of the biquaternion algebra become four matrix operations i
 
 This article proves the four formulas, identifies the fixed spaces and relates the operations to the right regular matrix. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The four involutions are
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The four involutions are
 $$
 \tilde Q^{\natural}=Q_t-\vec Q,\qquad
 \overline{\tilde Q}=\overline{Q_t}+\overline{\vec Q},\qquad
 \tilde Q^{*}=\overline{\tilde Q^{\natural}},\qquad
 \tilde Q^{\flat}=-\tilde Q^{*}.
 $$
-The matrix is $M=\mathsf{M}_4(\tilde Q)$.
+The matrix is $M=\mathsf{M}_4^{L}(\tilde Q)$.
 
-**Boundaries.** The fixed spaces are *$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions*; the four forms are *$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces*; the right regular matrix is *$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
+**Boundaries.** The fixed spaces are *$M_4(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*; the four forms are *$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces*; the right regular matrix is *$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser*, §*The Right Regular Image*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Four Involutions
 
 **Theorem.** For every $\tilde Q$,
 
 $$
-\mathsf{M}_4(\tilde Q^{\natural})=M^{\mathsf T},\qquad
-\mathsf{M}_4(\overline{\tilde Q})=\overline M,\qquad
-\mathsf{M}_4(\tilde Q^{*})=M^{\dagger},\qquad
-\mathsf{M}_4(\tilde Q^{\flat})=-M^{\dagger}.
+\mathsf{M}_4^{L}(\tilde Q^{\natural})=M^{\mathsf T},\qquad
+\mathsf{M}_4^{L}(\overline{\tilde Q})=\overline M,\qquad
+\mathsf{M}_4^{L}(\tilde Q^{*})=M^{\dagger},\qquad
+\mathsf{M}_4^{L}(\tilde Q^{\flat})=-M^{\dagger}.
 $$
 
-*Proof.* The first is checked entrywise: transposing the displayed matrix changes the signs of the three vector coefficients, which is quaternion conjugation. The second is immediate because every entry of $M$ is a coefficient of $\tilde Q$ with a sign, so conjugating the entries conjugates the coefficients. The third follows from the first two: $M^{\dagger}=\overline{M^{\mathsf T}}=\mathsf{M}_4(\overline{\tilde Q^{\natural}})=\mathsf{M}_4(\tilde Q^{*})$. The fourth is the definition of $\flat$. $\square$
+*Proof.* The first is checked entrywise: transposing the displayed matrix changes the signs of the three vector coefficients, which is quaternion conjugation. The second is immediate because every entry of $M$ is a coefficient of $\tilde Q$ with a sign, so conjugating the entries conjugates the coefficients. The third follows from the first two: $M^{\dagger}=\overline{M^{\mathsf T}}=\mathsf{M}_4^{L}(\overline{\tilde Q^{\natural}})=\mathsf{M}_4^{L}(\tilde Q^{*})$. The fourth is the definition of $\flat$. $\square$
 
 **The table.**
 
@@ -55,14 +57,14 @@ The fourth is the negative of the third, $\flat=-{}^{*}$; it is an involution, b
 
 **Quaternion conjugation is transposition.** The identity
 $$
-\mathsf{M}_4(\tilde Q^{\natural})=M^{\mathsf T}
+\mathsf{M}_4^{L}(\tilde Q^{\natural})=M^{\mathsf T}
 $$
 is the cleanest statement of the regular model. The fixed matrices are the symmetric ones; the condition $M^{\mathsf T}=M$ is $Q^{\natural}=Q$, hence $\vec Q=0$. The fixed space is the centre and the anti-fixed space is the vector subspace.
 
 **The adjugate is the transpose scaled by the norm.**
 $$
 \operatorname{adj}M=\langle\tilde Q\rangle_{\natural}\,M^{\mathsf T}
-=\langle\tilde Q\rangle_{\natural}\,\mathsf{M}_4(\tilde Q^{\natural}).
+=\langle\tilde Q\rangle_{\natural}\,\mathsf{M}_4^{L}(\tilde Q^{\natural}).
 $$
 *Proof.* For invertible $M$, the adjugate is $\det(M)M^{-1}=N^2M^{-1}$, and $M^{-1}=M^{\mathsf T}/N$, so the formula holds. Both sides are polynomial in the coefficients and the invertible elements are dense, so the identity extends to all $\tilde Q$. $\square$
 
@@ -78,7 +80,7 @@ but it is not an involution: $\operatorname{adj}(\operatorname{adj}M)=N^4M$. It 
 
 **The right regular matrix.** The transpose also determines the right regular matrix:
 $$
-\mathsf{M}_4^{R}(\tilde Q)=D\,M^{\mathsf T}D=D\,\mathsf{M}_4(\tilde Q^{\natural})D,
+\mathsf{M}_4^{R}(\tilde Q)=D\,M^{\mathsf T}D=D\,\mathsf{M}_4^{L}(\tilde Q^{\natural})D,
 \qquad
 D=\operatorname{diag}(1,-1,-1,-1).
 $$
@@ -88,7 +90,7 @@ The sign matrix $D$ is the price of using the basis $e_t,\vec e_x,\vec e_y,\vec 
 
 **Complex conjugation is entrywise.** In the regular model,
 $$
-\mathsf{M}_4(\overline{\tilde Q})=\overline M,
+\mathsf{M}_4^{L}(\overline{\tilde Q})=\overline M,
 $$
 with no dressing. This is the main simplification with respect to the $2\times2$ model, where the entrywise conjugate is the image of a fifth involution, $\sigma(\tilde Q)=\overline{Q_t}-\overline{Q_x}\vec e_x+\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z$, and complex conjugation must be dressed by $\epsilon$.
 
@@ -100,13 +102,13 @@ with no dressing. This is the main simplification with respect to the $2\times2$
 
 **The dagger is the conjugate transpose.**
 $$
-\mathsf{M}_4(\tilde Q^{*})=M^{\dagger}=\overline{M}^{\mathsf T}.
+\mathsf{M}_4^{L}(\tilde Q^{*})=M^{\dagger}=\overline{M}^{\mathsf T}.
 $$
 The fixed matrices are the Hermitian ones, the image of $\mathbb{M}_+$, and the anti-fixed ones are the anti-Hermitian matrices, the image of $\mathbb{M}_-$. The trace is real on the Hermitian subspace and purely imaginary on the anti-Hermitian one.
 
 **The anti-Hermitian conjugation.**
 $$
-\mathsf{M}_4(\tilde Q^{\flat})=-M^{\dagger}.
+\mathsf{M}_4^{L}(\tilde Q^{\flat})=-M^{\dagger}.
 $$
 Its fixed space is the anti-Hermitian image and its anti-fixed space is the Hermitian one. The two rows of the table for ${}^{*}$ and ${}^{\flat}$ are exchanged, as they must be, because $\flat=-{}^{*}$.
 
@@ -114,7 +116,7 @@ Its fixed space is the anti-Hermitian image and its anti-fixed space is the Herm
 
 ## The Four Adjoints
 
-**The four words.** The four involutions are the switches of the four forms. With $X=\mathsf{M}_4(\tilde P)$ and $Y=\mathsf{M}_4(\tilde Q)$,
+**The four words.** The four involutions are the switches of the four forms. With $X=\mathsf{M}_4^{L}(\tilde P)$ and $Y=\mathsf{M}_4^{L}(\tilde Q)$,
 $$
 \tfrac14\operatorname{Tr}(XY)=\langle\tilde P,\tilde Q\rangle,\qquad
 \tfrac14\operatorname{Tr}(X^{\mathsf T}Y)=\langle\tilde P,\tilde Q\rangle_{\natural},
@@ -163,8 +165,8 @@ The four involutions become the transpose, the entrywise conjugation, the conjug
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
-- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the relation with the right matrix
+- [$M_4(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the fixed spaces
+- [$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), §*The Right Regular Image*, for the relation with the right matrix
 - [$M_2(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m2c-representation-the-conjugations-and-the-adjoints.html), for the $2\times2$ dictionary
 - [The Group of Involutions](the-group-of-involutions.html), for the abstract involutions
 - [The Four Adjoints of the Biquaternion Algebra in Examples](the-four-adjoints-of-the-biquaternion-algebra-in-examples.html), for the operator-level adjoints

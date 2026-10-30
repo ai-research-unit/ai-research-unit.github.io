@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions__
+# __$M_4(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ The six remarkable subspaces of the biquaternion algebra are the fixed and anti-
 
 This article collects the six descriptions, their dimensions, traces and determinants. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu$ real. The four involutions are
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. Write $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu$ real. The four involutions are
 $$
 \tilde Q^{\natural}=Q_t-\vec Q,\qquad
 \overline{\tilde Q}=\overline{Q_t}+\overline{\vec Q},\qquad
@@ -14,11 +14,13 @@ $$
 \tilde Q^{\flat}=-\tilde Q^{*}.
 $$
 
-**Boundaries.** The subspaces are defined in *The Six Subspaces*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the trace and determinant are *$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*.
+**Boundaries.** The subspaces are defined in *The Six Subspaces*; the four forms restricted to them are *Remarkable Subspaces and the Four General Products, Forms and Norms*; the trace and determinant are *$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Table
 
-The table gives the condition on a matrix $M=\mathsf{M}_4(\tilde Q)$ **inside the image** $M_4(\mathbb{C})_L$, the real dimension of the subspace, and the determinant of the $2\times2$ image.
+The table gives the condition on a matrix $M=\mathsf{M}_4^{L}(\tilde Q)$ **inside the image** $M_4(\mathbb{C})_{\mathbb{B},L}$, the real dimension of the subspace, and the determinant of the $2\times2$ image.
 
 | Subspace | Defining condition | Condition on $M$ in the image | Real dim. | Trace | $\det\mathsf{M}_2(\tilde Q)$ |
 |---|---|---|---|---|---|
@@ -38,7 +40,7 @@ The determinant of $M$ is the square of the determinant of the $2\times2$ image 
 **The scalar matrices.**
 
 $$
-\mathsf{M}_4(Q_te_t)=Q_t\mathrm I_4,
+\mathsf{M}_4^{L}(Q_te_t)=Q_t\mathrm I_4,
 \qquad
 \operatorname{Tr}M=4Q_t,
 \qquad
@@ -65,13 +67,13 @@ M^{\mathsf T}=-M,
 $$
 because the transpose is quaternion conjugation and $Q^{\natural}=-Q$ exactly when $Q_t=0$. The image is the three-dimensional complex space of regular matrices with zero scalar part, of real dimension six. It is closed under the commutator and not under the product.
 
-**The two chiral halves.** The three matrices $\mathsf{M}_4(\vec e_k)$ are real and skew-symmetric. They span a three-dimensional subspace of the six-dimensional space of complex skew matrices, one of the two chiral halves of $\mathfrak{so}_4(\mathbb{C})$. The other half is not in the image. This is the regular analogue of the traceless matrices being all of $\mathfrak{sl}_2(\mathbb{C})$: in $M_4(\mathbb{C})$ the traceless condition alone is fifteen-dimensional, and the image selects a three-dimensional subspace.
+**The two chiral halves.** The three matrices $\mathsf{M}_4^{L}(\vec e_k)$ are real and skew-symmetric. They span a three-dimensional subspace of the six-dimensional space of complex skew matrices, one of the two chiral halves of $\mathfrak{so}_4(\mathbb{C})$. The other half is not in the image. This is the regular analogue of the traceless matrices being all of $\mathfrak{sl}_2(\mathbb{C})$: in $M_4(\mathbb{C})$ the traceless condition alone is fifteen-dimensional, and the image selects a three-dimensional subspace.
 
 ## The Quaternion Subspace
 
 **The real matrices.**
 $$
-\mathsf{M}_4(\tilde Q)=\overline{\mathsf{M}_4(\tilde Q)}
+\mathsf{M}_4^{L}(\tilde Q)=\overline{\mathsf{M}_4^{L}(\tilde Q)}
 \iff
 Q_\mu\in\mathbb{R}\ \text{for all }\mu.
 $$
@@ -85,7 +87,7 @@ The image is the space of real matrices of the regular form, of real dimension f
 
 **The purely imaginary matrices.**
 $$
-\mathsf{M}_4(\tilde Q)=-\overline{\mathsf{M}_4(\tilde Q)}
+\mathsf{M}_4^{L}(\tilde Q)=-\overline{\mathsf{M}_4^{L}(\tilde Q)}
 \iff
 Q_\mu\in i\mathbb{R}\ \text{for all }\mu.
 $$
@@ -97,7 +99,7 @@ The image is the space of purely imaginary matrices of the regular form, of real
 
 **The Hermitian matrices.**
 $$
-\mathsf{M}_4(\tilde Q)^{\dagger}=\mathsf{M}_4(\tilde Q)
+\mathsf{M}_4^{L}(\tilde Q)^{\dagger}=\mathsf{M}_4^{L}(\tilde Q)
 \iff
 \tilde Q^{*}=\tilde Q.
 $$
@@ -107,13 +109,13 @@ The image is the space of Hermitian matrices of the regular form, of real dimens
 
 **The anti-Hermitian matrices.**
 $$
-\mathsf{M}_4(\tilde Q)^{\dagger}=-\mathsf{M}_4(\tilde Q)
+\mathsf{M}_4^{L}(\tilde Q)^{\dagger}=-\mathsf{M}_4^{L}(\tilde Q)
 \iff
 \tilde Q^{*}=-\tilde Q.
 $$
 The image is the space of anti-Hermitian matrices of the regular form, of real dimension four. The trace is purely imaginary on it, and the determinant of the $2\times2$ image takes both signs, opposite to the Hermitian determinant.
 
-**The warning repeated.** The ambient Hermitian matrices are sixteen real-dimensional; the image of $\mathbb{M}_+$ is the four-dimensional subspace of Hermitian matrices of the form $\mathsf{M}_4(\tilde Q)$ with $\tilde Q^{*}=\tilde Q$. The distinction is the regular analogue of the fact that a general $2\times2$ Hermitian matrix need not be of the form $\mathsf{M}_2(\tilde Q)$; there the image is everything, here it is not.
+**The warning repeated.** The ambient Hermitian matrices are sixteen real-dimensional; the image of $\mathbb{M}_+$ is the four-dimensional subspace of Hermitian matrices of the form $\mathsf{M}_4^{L}(\tilde Q)$ with $\tilde Q^{*}=\tilde Q$. The distinction is the regular analogue of the fact that a general $2\times2$ Hermitian matrix need not be of the form $\mathsf{M}_2(\tilde Q)$; there the image is everything, here it is not.
 
 ## How They Fit Together
 
@@ -150,6 +152,6 @@ The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian a
 
 - [The Six Subspaces](the-six-subspaces.html), for the definitions
 - [The Subspaces and Their Relations](the-subspaces-and-their-relations.html), for the intersections
-- [$M_4(\mathbb{C})_L$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the matrix involutions
-- [$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
+- [$M_4(\mathbb{C})$ Representation : The Conjugations and the Adjoints](m4c-representation-the-conjugations-and-the-adjoints.html), for the matrix involutions
+- [$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm](m4c-representation-trace-determinant-and-the-biquaternion-norm.html), for the determinant
 - [$M_2(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m2c-model-the-six-subspaces-as-matrix-conditions.html), for the $2\times2$ version

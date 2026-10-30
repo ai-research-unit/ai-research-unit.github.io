@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Model : The Sandwich__
+# __$M_4(\mathbb{C})$ Model : The Sandwich__
 
 ## Introduction
 
@@ -10,9 +10,11 @@ In the regular model it is the congruence $X\mapsto MXM^{\dagger}$ on $4\times4$
 
 This article develops the sandwich in the regular model. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Model : The Sandwich*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian elements, and $\mathbb{M}_-$, the anti-Hermitian elements. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det M=N^2$. Write $r=\lvert N\rvert^{1/2}=\lvert\det M\rvert^{1/4}$.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The sandwich is $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$, and its matrix is $\Theta_M(X)=MXM^{\dagger}$. The two sectors are $\mathbb{M}_+$, the Hermitian elements, and $\mathbb{M}_-$, the anti-Hermitian elements. The norm is $N=\langle\tilde Q\rangle_{\natural}$, and $\det M=N^2$. Write $r=\lvert N\rvert^{1/2}=\lvert\det M\rvert^{1/4}$.
 
-**Boundaries.** The sandwich as an operator is *Operators of the Polar Word: The Common Framework*; the polar decomposition is *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Sandwich*. The sixteen basis matrices are *$M_4(\mathbb{C})_L$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
+**Boundaries.** The sandwich as an operator is *Operators of the Polar Word: The Common Framework*; the polar decomposition is *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the action on the subspaces is *The Polar Decomposition and Remarkable Subspaces*; the $2\times2$ version is *$M_2(\mathbb{C})$ Model : The Sandwich*. The sixteen basis matrices are *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Congruence
 
@@ -20,7 +22,7 @@ This article develops the sandwich in the regular model. It is the $4\times4$ co
 $$
 \Theta_M(X)=MXM^{\dagger}
 $$
-is the image of the sandwich $\Theta_{\tilde Q}(\tilde X)$ under $\mathsf{M}_4$. It is complex linear in $X$ and invertible. It is not an algebra automorphism in general: the identity
+is the image of the sandwich $\Theta_{\tilde Q}(\tilde X)$ under $\mathsf{M}_4^{L}$. It is complex linear in $X$ and invertible. It is not an algebra automorphism in general: the identity
 $$
 \Theta_M(XY)=\Theta_M(X)\,\Theta_M(Y)
 $$
@@ -79,7 +81,7 @@ $$
 $$
 The rotor acts by rotating $\vec b$ and fixing $a$; the boost acts by a hyperbolic transformation mixing $a$ and the component of $\vec b$ along its axis, and fixing the orthogonal component. The two actions are the rotation and the boost of the Lorentz group, and their product is a general proper orthochronous transformation.
 
-**The general element.** For $M=r\zeta\mathsf{M}_4(U)$ with $\lvert N(U)\rvert=1$,
+**The general element.** For $M=r\zeta\mathsf{M}_4^{L}(U)$ with $\lvert N(U)\rvert=1$,
 $$
 \Theta_M=r^2\,\Theta_U,
 $$
@@ -146,8 +148,8 @@ The sandwich is the congruence $X\mapsto MXM^{\dagger}$ on the regular matrices.
 
 ## Further Reading
 
-- [$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the factors
-- [$M_4(\mathbb{C})_L$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the subspaces
+- [$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix](m4c-representation-the-polar-decomposition-of-a-matrix.html), for the factors
+- [$M_4(\mathbb{C})$ Model : The Six Subspaces as Matrix Conditions](m4c-model-the-six-subspaces-as-matrix-conditions.html), for the subspaces
 - [$M_2(\mathbb{C})$ Model : The Sandwich](the-sandwich-in-the-m2c-model.html), for the $2\times2$ version
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the action on the subspaces
 - [Operators of the Polar Word: The Common Framework](operators-of-the-polar-word-the-common-framework.html), for the operator

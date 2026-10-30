@@ -12,9 +12,11 @@ $$
 
 the quaternionic norm of the gradient. This article asks for a first-order operator $D$ whose square is $\Box$, or the shifted operator $\Box-\lambda$ for a complex number $\lambda$.
 
-The question has two answers, and they are different. A **single square** is one first-order operator $D$ with $D^2=(\Box-\lambda)I$. A **factorisation** is a product $D_-D_+=(\Box-\lambda)I$ of two first-order operators. The single square is the stronger equation: its kernel is a chiral half of the second-order solution space. The factorisation is the weaker pair: when the two factors are distinct, the two first-order equations together are equivalent to the second-order equation. At $\lambda=0$ the two coincide at the level of the operator, but the kernel of the root is still a half.
+The question has two answers, and they are different. A **single square** is one first-order operator $D$ with $D^2=(\Box-\lambda)I$. A **factorisation** is a product $D_-D_+=(\Box-\lambda)I$ of two first-order operators. The single square is the stronger equation: its kernel is a chiral half of the second-order solution space. The factorisation is the weaker pair: when the two factors are distinct, the two first-order equations together are equivalent to the second-order equation. At $\lambda=0$ the two coincide at the level of the operator, but the kernel of the root is still a half. A **Clifford root** is a first-order operator of the form $D=\sum_\mu\Gamma^\mu\partial/\partial Q_\mu+B$ with constant matrices $\Gamma^\mu,B$; this article classifies the Clifford roots.
 
-**The results.** The d'Alembertian has no first-order root on the two-dimensional simple module of $\mathbb{B}$. The minimal carrier is four-dimensional, the regular module $\mathbb{B}\cong S_+\oplus S_-$. The three elements $i\vec e_k$ supply a rank-three Clifford system inside the algebra; the fourth generator is not a left multiplication by an element of $\mathbb{B}$, but the two-sided direction that exchanges the two minimal left ideals. On the regular module the unshifted root is $\mathsf D=\sum_\mu\Gamma^\mu\partial/\partial Q_\mu$, with $\mathsf D^2=\Box I$. The shifted operator has a single root exactly when the zero-order term is a pseudoscalar $c\Gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)$.
+**The results.** The d'Alembertian has no Clifford root on the two-dimensional simple module of $\mathbb{B}$. The minimal carrier is four-dimensional, the regular module $\mathbb{B}\cong S_+\oplus S_-$. The three elements $i\vec e_k$ supply a rank-three Clifford system inside the algebra; the fourth generator is not a left multiplication by an element of $\mathbb{B}$, but the two-sided direction that exchanges the two minimal left ideals. On the regular module the unshifted root is $\mathsf D=\sum_\mu\Gamma^\mu\partial/\partial Q_\mu$, with $\mathsf D^2=\Box I$. The shifted operator has a single root exactly when the zero-order term is a pseudoscalar $c\Gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)$.
+
+**The two matrix sizes.** The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ (*$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes*). The gradient takes values in that algebra, and the d'Alembertian is its scalar norm; the target representation is $M_2(\mathbb{C})$, not $M_4(\mathbb{C})$. The four-dimensional space of this article is the regular module $\mathbb{B}$, on which the algebra acts by left multiplication. The $M_4(\mathbb{C})$ that appears below is the algebra of **operators** on that module, the enveloping algebra $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, not a second representation of $\mathbb{B}$. The distinction is the reason the root is two-sided: the d'Alembertian is a scalar operator read in the algebra, while the root lives in the operator algebra of the regular module.
 
 The article is mathematics. The d'Alembertian is the norm of the gradient, and no physical interpretation is used. The conventions are those of *Conventions in Mathematics* and *The Differential Operators, the Products, the Forms and the D'Alembertian*; the two-sided operators are *Two-Sided Operators on the Biquaternion Algebra* and *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the minimal left ideals are *The Minimal Left Ideals* and *Spinors as Peirce Coordinates in the Biquaternion Algebra*.
 
@@ -53,7 +55,7 @@ $$
 
 with $\Delta_Q=\sum_{k\in\{x,y,z\}}\partial^2/\partial Q_k^2$. The operator is scalar: it multiplies by $e_t$ and acts coefficient by coefficient.
 
-**The d'Alembertian is not the partner operator.** The plain bilinear norm of the gradient is $\partial^2/\partial Q_t^2-\Delta_Q$, a different operator, and it has a different root. This article treats $\Box$ only. The two operators are distinguished in *The Differential Operators, the Products, the Forms and the D'Alembertian*, and the distinction is fixed by the form, not by a choice of sign.
+**The d'Alembertian is not the partner operator.** The plain bilinear norm of the gradient is $\partial^2/\partial Q_t^2-\Delta_Q$, a different operator, and its root is a different Clifford system. This article treats $\Box$ only. The two operators are distinguished in *The Differential Operators, the Products, the Forms and the D'Alembertian*, and the distinction is fixed by the form, not by a choice of sign.
 
 ### The Symbol
 
@@ -118,7 +120,7 @@ The three conditions separate. The first is the **Clifford condition**; it invol
 
 $$
 I,\qquad \Gamma^\mu,\qquad \Gamma^\mu\Gamma^\nu\ (\mu<\nu),\qquad
-\Gamma^\mu\Gamma_5,\qquad \Gamma_5,
+\Gamma^\mu\Gamma^\nu\Gamma^\rho\ (\mu<\nu<\rho),\qquad \Gamma_5,
 \qquad \Gamma_5=\Gamma^t\Gamma^x\Gamma^y\Gamma^z,
 $$
 
@@ -237,7 +239,6 @@ R_uG=R_{\tilde\Pi_+u}-R_{\tilde\Pi_-u}
 =R_{u\tilde\Pi_-}-R_{u\tilde\Pi_+}=-GR_u .
 $$
 
-
 ### The Four Generators
 
 Define
@@ -312,12 +313,11 @@ $$
 =\Box I_4 .
 $$
 
-
 The operator $\mathsf D$ is a two-sided differential operator: each $\Gamma^\mu$ is a two-sided constant operator, so $\mathsf D$ is a sum of terms $T_{a,b}\partial/\partial Q_\mu$. It acts on $\mathbb{B}$-valued fields, and its square is the scalar d'Alembertian.
 
 **The kernel at $\lambda=0$.** The equation $\mathsf D\psi=0$ is the unshifted root. In the chiral frame of §*The Chiral Form* it decouples into $D_-\psi_-=0$ and $D_+\psi_+=0$; its kernel is a chiral half of the full solution space of $\Box\psi=0$.
 
-**Non-uniqueness.** The root is unique up to similarity, not canonical. The frame depends on the choice of the Peirce basis and of the exchange $u$; the biquaternion structure gives a canonical decomposition into the two minimal left ideals, but not a canonical matrix frame. The sign of $\Gamma_5$ and the exchange of $c$ with $-c$ give the same operator up to a change of frame.
+**Non-uniqueness.** The root is unique up to similarity, not canonical. The canonical frame fixes the Peirce basis, and the root still depends on the exchange $u$; the biquaternion structure gives a canonical decomposition into the two minimal left ideals, but not a canonical root. The sign of $\Gamma_5$ and the exchange of $c$ with $-c$ give the same operator up to a change of frame.
 
 ## The Shifted D'Alembertian
 
@@ -341,7 +341,6 @@ $$
 R_\lambda^2=\mathsf D^2+c(\mathsf D\Gamma_5+\Gamma_5\mathsf D)+c^2\Gamma_5^2
 =\Box I_4+c^2I_4=(\Box-\lambda)I_4 .
 $$
-
 
 **Theorem (the converse).** Every constant-coefficient root of $\Box-\lambda$ with principal symbol $\sum_\mu K_\mu\Gamma^\mu$ is of the form $R_\lambda=\mathsf D+c\Gamma_5$ with $c^2=-\lambda$, up to similarity.
 
@@ -470,7 +469,7 @@ The table classifies the carriers on which the constant-coefficient Clifford ans
 The Clifford algebra $\mathbb{C}\mathrm{l}_4$ has a unique irreducible module up to isomorphism, so any two frames of the root are related by an invertible matrix:
 
 $$
-\Gamma'^\mu=S\Gamma^\mu S^{-1},\qquad B'=SBS^{-1},\qquad S\in GL_4(\mathbb{C}).
+\Gamma^{\prime\mu}=S\Gamma^\mu S^{-1},\qquad B'=SBS^{-1},\qquad S\in GL_4(\mathbb{C}).
 $$
 
 The biquaternion structure does not select a canonical matrix frame. It selects the decomposition $\mathbb{B}=S_+\oplus S_-$, the exchange $u$, and the grading $G$; the adapted basis and the identification of the two summands with $S$ are choices. The volume element is canonical up to the sign of the orientation of the four generators, and the two signs of $c$ give the same operator up to the exchange $\Gamma_5\mapsto-\Gamma_5$. The root is unique up to similarity, not canonical.
@@ -513,7 +512,7 @@ the same expression as the determinant of the left regular matrix of the gradien
 
 ## Summary
 
-The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ is the quaternionic norm of the gradient and a scalar second-order operator. It has no first-order root on the two-dimensional simple module of $\mathbb{B}$: the three generators $i\vec e_k$ supply a rank-three Clifford system, and no fourth element of the algebra anticommutes with all three. The minimal carrier is the four-dimensional regular module $\mathbb{B}=S_+\oplus S_-$; the fourth generator is the two-sided exchange of the two minimal left ideals, and the three spatial generators are the left multiplications corrected by the grading. The unshifted root is $\mathsf D=\sum_\mu\Gamma^\mu\partial/\partial Q_\mu$, with $\mathsf D^2=\Box I$. The shifted operator $\Box-\lambda$ has a single root exactly when the zero-order term is the pseudoscalar $c\Gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)=\Box-\kappa^2$. The single root has a chiral half as its kernel; for $\kappa\ne0$, the scalar factorisation captures the full second-order kernel as the sum of its two first-order factors. The determinant of the single root is $(\Box-\lambda)^2$, the same expression as the determinant of the left regular matrix of the gradient at $\lambda=0$. The root is unique up to similarity, not canonical; the biquaternion structure supplies the decomposition and the exchange, not a preferred matrix frame.
+The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ is the quaternionic norm of the gradient and a scalar second-order operator. The algebra itself is $M_2(\mathbb{C})$; the four-dimensional carrier is its regular module, and the $M_4(\mathbb{C})$ of the root is the operator algebra on that module, not a second representation of $\mathbb{B}$. It has no Clifford root on the two-dimensional simple module of $\mathbb{B}$: the three generators $i\vec e_k$ supply a rank-three Clifford system, and no fourth element of the algebra anticommutes with all three. The minimal carrier is the four-dimensional regular module $\mathbb{B}=S_+\oplus S_-$; the fourth generator is the two-sided exchange of the two minimal left ideals, and the three spatial generators are the left multiplications corrected by the grading. The unshifted root is $\mathsf D=\sum_\mu\Gamma^\mu\partial/\partial Q_\mu$, with $\mathsf D^2=\Box I$. The shifted operator $\Box-\lambda$ has a single root exactly when the zero-order term is the pseudoscalar $c\Gamma_5$ with $c^2=-\lambda$; a scalar shift admits only the factorisation $(\mathsf D-\kappa)(\mathsf D+\kappa)=\Box-\kappa^2$. The single root has a chiral half as its kernel; for $\kappa\ne0$, the scalar factorisation captures the full second-order kernel as the sum of its two first-order factors. The determinant of the single root is $(\Box-\lambda)^2$, the same expression as the determinant of the left regular matrix of the gradient at $\lambda=0$. The root is unique up to similarity, not canonical; the biquaternion structure supplies the decomposition and the exchange, not a preferred matrix frame.
 
 ## Summary of Notation
 
@@ -533,10 +532,12 @@ The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ is the quaternionic 
 | $u=\vec\Upsilon_{+-}+\vec\Upsilon_{-+}$ | the exchange, $u^2=e_t$ |
 | $R_u$, $G=R_{\tilde\Pi_+}-R_{\tilde\Pi_-}$ | the exchange operator and the grading |
 | $P_\pm=\frac12(I\pm\Gamma_5)$ | the chiral projectors |
+| $Q_\pm=\frac{1}{2\kappa}(\kappa I\pm\mathsf D)$ | the spectral projectors of the scalar factorisation, $\kappa\ne0$ |
 
 ## Further Reading
 
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the derivative conventions and the gradient.
+- [The $M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the target representation of the algebra.
 - [Biquaternion Analysis](biquaternion-analysis.html), for the gradient, its conjugate and the d'Alembertian at length.
 - [The Differential Operators, the Products, the Forms and the D'Alembertian](the-differential-operators-the-products-the-forms-and-the-d-alembertian.html), for the four forms, the four norms and the definition of the d'Alembertian.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the two summands of the regular module.

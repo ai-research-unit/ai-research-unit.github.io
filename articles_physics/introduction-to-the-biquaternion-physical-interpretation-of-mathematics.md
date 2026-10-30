@@ -230,6 +230,7 @@ The category reads a second corpus as well. The *Biquaternion Algebraic Structur
 
 - [Biquaternion Analysis](../articles_maths/biquaternion-analysis.html)
 - [The Differential Operators, the Products, the Forms and the D'Alembertian](../articles_maths/the-differential-operators-the-products-the-forms-and-the-d-alembertian.html)
+- [The First-Order Root of the Biquaternion D'Alembertian](../articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.html)
 - [Biquaternion Regular Functions](../articles_maths/biquaternion-regular-functions.html)
 - [Fueter Theory for Biquaternions](../articles_maths/fueter-theory-for-biquaternions.html)
 - [Biquaternion Integration](../articles_maths/biquaternion-integration.html)

@@ -1,4 +1,4 @@
-# __$M_4(\mathbb{C})_L$ Representation : The Functional Calculus__
+# __$M_4(\mathbb{C})$ Representation : The Functional Calculus__
 
 ## Introduction
 
@@ -6,9 +6,11 @@ The exponential, the logarithm and the square roots of a regular matrix are thre
 
 This article develops the calculus; the exponential series, its determinant identity, its closed forms, the one-parameter subgroups and the kernel; the logarithm equation, its branch families, the principal branch and its derivative; and the square-root equation, solved in the relative commutant and classified by spectral type. It is the $4\times4$ counterpart of *$M_2(\mathbb{C})$ Representation : The Functional Calculus*.
 
-**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant*. The image of $\tilde Q$ is $X=\mathsf{M}_4(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, the eigenvalues of $X$ are $Q_t\pm iB$, each double, and $\operatorname{tr}X=4Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}^2$. In the square-root sections the roots considered lie in the regular image unless the ambient case is named explicitly.
+**Conventions.** The algebra and the model are those of *$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant*. The image of $\tilde Q$ is $X=\mathsf{M}_4^{L}(\tilde Q)$. The vector part has complex square $B^2=Q_x^2+Q_y^2+Q_z^2$, the eigenvalues of $X$ are $Q_t\pm iB$, each double, and $\operatorname{tr}X=4Q_t$, $\det X=\langle\tilde Q\rangle_{\natural}^2$. In the square-root sections the roots considered lie in the regular image unless the ambient case is named explicitly.
 
-**Boundaries.** The general holomorphic calculus is *Holomorphic Functional Calculus*; the biquaternion closed form and the logarithm are *Biquaternion Elementary Functions*; the Lie algebra and the correspondence are *Biquaternion Lie Group and Exponential Structure*; the algebra classification of square roots is *Square Roots of an Element*; the roots of $\pm1$ and of $0$ are *Idempotents* and *Nilpotents*; the polar decomposition is *$M_4(\mathbb{C})_L$ Representation : The Polar Decomposition of a Matrix*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Functional Calculus*.
+**Boundaries.** The general holomorphic calculus is *Holomorphic Functional Calculus*; the biquaternion closed form and the logarithm are *Biquaternion Elementary Functions*; the Lie algebra and the correspondence are *Biquaternion Lie Group and Exponential Structure*; the algebra classification of square roots is *Square Roots of an Element*; the roots of $\pm1$ and of $0$ are *Idempotents* and *Nilpotents*; the polar decomposition is *$M_4(\mathbb{C})$ Representation : The Polar Decomposition of a Matrix*; the $2\times2$ version is *$M_2(\mathbb{C})$ Representation : The Functional Calculus*.
+
+**Frame.** Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of *Conventions in Mathematics*, §*The Matrix Models*, is the Peirce frame reached by the change $S$ of *The Product, the Trace and the Determinant*: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.
 
 ## The Functional Calculus
 
@@ -28,15 +30,15 @@ f(X)=\sum_{k\ge0}\frac{f^{(k)}(\lambda)}{k!}N^k .
 $$
 The two formulas are the residue theorem read on the spectral types. They show that $f(X)$ depends only on the values of $f$ on the spectrum, and on the derivatives at a repeated eigenvalue.
 
-**The regular identity.** If $X=\mathsf{M}_4(\tilde Q)$ and $f$ is holomorphic on a neighbourhood of the spectrum of $\tilde Q$, the resolvent identity
+**The regular identity.** If $X=\mathsf{M}_4^{L}(\tilde Q)$ and $f$ is holomorphic on a neighbourhood of the spectrum of $\tilde Q$, the resolvent identity
 $$
-(z\mathrm I_4-\mathsf{M}_4(\tilde Q))^{-1}=\mathsf{M}_4\bigl((z e_t-\tilde Q)^{-1}\bigr)
+(z\mathrm I_4-\mathsf{M}_4^{L}(\tilde Q))^{-1}=\mathsf{M}_4\bigl((z e_t-\tilde Q)^{-1}\bigr)
 $$
 and the contour integral give
 $$
-f\bigl(\mathsf{M}_4(\tilde Q)\bigr)=\mathsf{M}_4\bigl(f(\tilde Q)\bigr).
+f\bigl(\mathsf{M}_4^{L}(\tilde Q)\bigr)=\mathsf{M}_4\bigl(f(\tilde Q)\bigr).
 $$
-Every function of a regular matrix in the image therefore lies in the image, and the calculus on the image is the biquaternion calculus read through $\mathsf{M}_4$.
+Every function of a regular matrix in the image therefore lies in the image, and the calculus on the image is the biquaternion calculus read through $\mathsf{M}_4^{L}$.
 
 **Proposition (the calculus is a homomorphism).** For two functions holomorphic on a common neighbourhood of the spectrum,
 $$
@@ -71,9 +73,9 @@ $$
 $$
 The series converges for every $X$, uniformly on bounded sets, by comparison with $e^{\lVert X\rVert}$. The series is the Cauchy integral of $e^z$ written as a power series at the origin.
 
-**The algebra identity.** Since $\mathsf{M}_4$ is an algebra homomorphism and the series is an infinite sum of products,
+**The algebra identity.** Since $\mathsf{M}_4^{L}$ is an algebra homomorphism and the series is an infinite sum of products,
 $$
-\exp\mathsf{M}_4(\tilde Q)=\mathsf{M}_4\bigl(\exp\tilde Q\bigr),
+\exp\mathsf{M}_4^{L}(\tilde Q)=\mathsf{M}_4\bigl(\exp\tilde Q\bigr),
 $$
 where the exponential on the right is the biquaternion exponential of *Biquaternion Elementary Functions*. The identity is the reason every formula below is the image of an algebra formula.
 
@@ -91,10 +93,10 @@ $$
 $$
 In the regular image this reads
 $$
-\det\exp\mathsf{M}_4(\tilde Q)=\exp(4Q_t)=\bigl(e^{2Q_t}\bigr)^2.
+\det\exp\mathsf{M}_4^{L}(\tilde Q)=\exp(4Q_t)=\bigl(e^{2Q_t}\bigr)^2.
 $$
 
-*Proof.* Triangularise $X$, exponentiate the triangular form, and multiply the diagonal entries $e^{\lambda_i}$; the product is $e^{\sum\lambda_i}=e^{\operatorname{tr}X}$. For the image, $\operatorname{tr}\mathsf{M}_4(\tilde Q)=4Q_t$.
+*Proof.* Triangularise $X$, exponentiate the triangular form, and multiply the diagonal entries $e^{\lambda_i}$; the product is $e^{\sum\lambda_i}=e^{\operatorname{tr}X}$. For the image, $\operatorname{tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t$.
 
 **The norm-one consequence.** If $Q_t=0$, then $\det\exp X=1$. Since the exponential is connected and starts at the identity, its image lies in the component $N=1$ of the determinant-one set, so
 $$
@@ -125,32 +127,32 @@ $$
 $$
 \exp X\,\exp Y=\exp\Bigl(X+Y+\tfrac12[X,Y]+\tfrac1{12}\bigl([X,[X,Y]]-[Y,[X,Y]]\bigr)+\cdots\Bigr).
 $$
-The exponential is a local isomorphism from the Lie algebra to the group, not a global homomorphism. The defect is the Lie bracket, whose trace form is the subject of *$M_4(\mathbb{C})_L$ Representation : The Killing Form*.
+The exponential is a local isomorphism from the Lie algebra to the group, not a global homomorphism. The defect is the Lie bracket, whose trace form is the subject of *$M_4(\mathbb{C})$ Representation : The Killing Form*.
 
 ## The Closed Form of the Exponential
 
 **Theorem.** Let $\tilde Q=Q_te_t+\vec Q$ and let $B$ be a square root of $Q_x^2+Q_y^2+Q_z^2$. Then
 $$
 \boxed{\;
-\exp\mathsf{M}_4(\tilde Q)
-=e^{Q_t}\left(\cos B\,\mathrm I_4+\frac{\sin B}{B}\,\mathsf{M}_4(\vec Q)\right)
+\exp\mathsf{M}_4^{L}(\tilde Q)
+=e^{Q_t}\left(\cos B\,\mathrm I_4+\frac{\sin B}{B}\,\mathsf{M}_4^{L}(\vec Q)\right)
 \;}
 $$
 with $\sin B/B$ read as $1$ when $B=0$.
 
-*Proof.* The images $\mathsf{M}_4(\vec e_k)$ satisfy $\mathsf{M}_4(\vec e_k)^2=-\mathrm I_4$ and anticommute in pairs, so $\mathsf{M}_4(\vec Q)^2=-B^2\mathrm I_4$. The even and odd powers sum to the two trigonometric series. At $B=0$ the square vanishes and the series truncates to $\mathrm I_4+\mathsf{M}_4(\vec Q)$.
+*Proof.* The images $\mathsf{M}_4^{L}(\vec e_k)$ satisfy $\mathsf{M}_4^{L}(\vec e_k)^2=-\mathrm I_4$ and anticommute in pairs, so $\mathsf{M}_4^{L}(\vec Q)^2=-B^2\mathrm I_4$. The even and odd powers sum to the two trigonometric series. At $B=0$ the square vanishes and the series truncates to $\mathrm I_4+\mathsf{M}_4^{L}(\vec Q)$.
 
-| Regime | Condition | $\exp\mathsf{M}_4(\tilde Q)$ |
+| Regime | Condition | $\exp\mathsf{M}_4^{L}(\tilde Q)$ |
 |---|---|---|
-| Oscillatory | $B\neq0$ | $e^{Q_t}\bigl(\cos B\,\mathrm I_4+\frac{\sin B}{B}\mathsf{M}_4(\vec Q)\bigr)$ |
+| Oscillatory | $B\neq0$ | $e^{Q_t}\bigl(\cos B\,\mathrm I_4+\frac{\sin B}{B}\mathsf{M}_4^{L}(\vec Q)\bigr)$ |
 | Scalar | $B=0$, $\vec Q=0$ | $e^{Q_t}\mathrm I_4$ |
-| Nilpotent | $B=0$, $\vec Q\neq0$ | $e^{Q_t}\bigl(\mathrm I_4+\mathsf{M}_4(\vec Q)\bigr)$ |
+| Nilpotent | $B=0$, $\vec Q\neq0$ | $e^{Q_t}\bigl(\mathrm I_4+\mathsf{M}_4^{L}(\vec Q)\bigr)$ |
 
-**The spectral reading.** The eigenvalues of $\mathsf{M}_4(\tilde Q)$ are $Q_t\pm iB$, each double, and those of the exponential are $e^{Q_t\pm iB}$, each double. The formula is the spectral theorem written with the two rank-two eigenprojections. It is also the functional calculus of $e^z$ read on the two distinct eigenvalues.
+**The spectral reading.** The eigenvalues of $\mathsf{M}_4^{L}(\tilde Q)$ are $Q_t\pm iB$, each double, and those of the exponential are $e^{Q_t\pm iB}$, each double. The formula is the spectral theorem written with the two rank-two eigenprojections. It is also the functional calculus of $e^z$ read on the two distinct eigenvalues.
 
 ## One-Parameter Subgroups
 
-A **one-parameter subgroup** of the regular group is a Lie-group homomorphism $\varphi:\mathbb{R}\to\mathsf{M}_4(\mathbb{B}^{\times})$. For $X$ in the image, the **exponential line**
+A **one-parameter subgroup** of the regular group is a Lie-group homomorphism $\varphi:\mathbb{R}\to\mathsf{M}_4^{L}(\mathbb{B}^{\times})$. For $X$ in the image, the **exponential line**
 $$
 \varphi_X(t)=\exp(tX)
 $$
@@ -167,9 +169,9 @@ is one, by the group law. Its **infinitesimal generator** is $\varphi_X'(0)=X$.
 | Generator | Subgroup | Formula | Type |
 |---|---|---|---|
 | $i e_t$ | central phase | $e^{it}\mathrm I_4$ | circle |
-| $\vec e_k$ | rotor | $\cos t\,\mathrm I_4+\sin t\,\mathsf{M}_4(\vec e_k)$ | compact, in $SO(4)$ |
-| $i\vec e_k$ | boost | $\cosh t\,\mathrm I_4+\sinh t\,\mathsf{M}_4(i\vec e_k)$ | non-compact |
-| $\vec P$, $\vec P^2=0$ | unipotent | $\mathrm I_4+t\,\mathsf{M}_4(\vec P)$ | parabolic |
+| $\vec e_k$ | rotor | $\cos t\,\mathrm I_4+\sin t\,\mathsf{M}_4^{L}(\vec e_k)$ | compact, in $SO(4)$ |
+| $i\vec e_k$ | boost | $\cosh t\,\mathrm I_4+\sinh t\,\mathsf{M}_4^{L}(i\vec e_k)$ | non-compact |
+| $\vec P$, $\vec P^2=0$ | unipotent | $\mathrm I_4+t\,\mathsf{M}_4^{L}(\vec P)$ | parabolic |
 
 The phase is the centre, the rotor is the compact direction, the boost is the non-compact direction, and the unipotent line is the exponential of a nilpotent. The four are the basic real types; a general exponential line is their product after a conjugation and a complex scaling.
 
@@ -192,13 +194,13 @@ The kernel is the union of these conjugacy classes. In the algebra, for $m\neq n
 $$
 Q_t=\pi im,\qquad B=\pi n,\qquad m,n\in\mathbb{Z},\quad m\equiv n\pmod 2.
 $$
-The regular model doubles the eigenvalues but does not change the condition, because $\mathsf{M}_4$ is injective.
+The regular model doubles the eigenvalues but does not change the condition, because $\mathsf{M}_4^{L}$ is injective.
 
 **Example.** The element
 $$
 \tilde Q=\pi i\,e_t+\pi\,\vec e_z
 $$
-has $\mathsf{M}_4(\tilde Q)$ with eigenvalues $0,0,2\pi i,2\pi i$, so $\exp\mathsf{M}_4(\tilde Q)=\mathrm I_4$, while $\det\mathsf{M}_4(\tilde Q)=0$: a zero divisor of rank two lies in the kernel. The exponential therefore does not detect invertibility of the exponent.
+has $\mathsf{M}_4^{L}(\tilde Q)$ with eigenvalues $0,0,2\pi i,2\pi i$, so $\exp\mathsf{M}_4^{L}(\tilde Q)=\mathrm I_4$, while $\det\mathsf{M}_4^{L}(\tilde Q)=0$: a zero divisor of rank two lies in the kernel. The exponential therefore does not detect invertibility of the exponent.
 
 ## The Logarithm Equation
 
@@ -209,11 +211,11 @@ $$
 
 **Theorem.** A matrix of the image has a logarithm in the image if and only if it is invertible.
 
-*Proof.* If $X=\exp Y$ then $\det X=e^{\operatorname{tr}Y}\neq0$. Conversely, if $X=\mathsf{M}_4(\tilde Q)$ is invertible, then $\tilde Q$ is a unit and has a biquaternion logarithm $\tilde Y$; its image is a logarithm of $X$.
+*Proof.* If $X=\exp Y$ then $\det X=e^{\operatorname{tr}Y}\neq0$. Conversely, if $X=\mathsf{M}_4^{L}(\tilde Q)$ is invertible, then $\tilde Q$ is a unit and has a biquaternion logarithm $\tilde Y$; its image is a logarithm of $X$.
 
 **The algebra identity.**
 $$
-\log\mathsf{M}_4(\tilde Q)=\mathsf{M}_4(\log\tilde Q),
+\log\mathsf{M}_4^{L}(\tilde Q)=\mathsf{M}_4^{L}(\log\tilde Q),
 $$
 for every branch of the biquaternion logarithm. The identity is the reason the branch structure of the regular model is the branch structure of the algebra.
 
@@ -229,7 +231,7 @@ In the regular model $\operatorname{tr}\log X=4\mu$ and $\log\det X=2\log N$, wi
 
 ## The Branches of the Logarithm
 
-**Theorem.** Let $X=\mathsf{M}_4(\tilde Q)$ be diagonalisable with distinct eigenvalues $\lambda_+\neq\lambda_-$, and let $X=C\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)C^{-1}$. Then the logarithms in the image are exactly
+**Theorem.** Let $X=\mathsf{M}_4^{L}(\tilde Q)$ be diagonalisable with distinct eigenvalues $\lambda_+\neq\lambda_-$, and let $X=C\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)C^{-1}$. Then the logarithms in the image are exactly
 $$
 Y=C\operatorname{diag}(\mu_+,\mu_+,\mu_-,\mu_-)C^{-1},
 \qquad
@@ -279,7 +281,7 @@ The three cases are collected in one table.
 
 **The principal branch.** Let $\operatorname{Log}$ be the branch of the complex logarithm with imaginary part in $(-\pi,\pi)$, defined on $\mathbb{C}\setminus(-\infty,0]$. The **principal logarithm** of a matrix in the image is the logarithm whose eigenvalues are the principal logarithms of the eigenvalues of $X$. It is defined when no eigenvalue lies on the closed negative real axis, that is, on the **principal domain**
 $$
-\Omega=\bigl\{X\in\mathsf{M}_4(\mathbb{B}^{\times}):\ \operatorname{spec}X\cap(-\infty,0]=\varnothing\bigr\}.
+\Omega=\bigl\{X\in\mathsf{M}_4^{L}(\mathbb{B}^{\times}):\ \operatorname{spec}X\cap(-\infty,0]=\varnothing\bigr\}.
 $$
 In the algebra the condition is the same on $\lambda_\pm$.
 
@@ -352,9 +354,9 @@ the one whose eigenvalues lie in the right half-plane. In the distinct case the 
 
 *Proof.* $YX=Y^3=XY$.
 
-**Consequence.** Every root in the image lies in the relative commutant $C_L(X)$, which is the image of the centraliser of $\tilde Q$. The root is therefore $\mathsf{M}_4(\tilde R)$ with $\tilde R^2=\tilde Q$, and the problem reduces to the biquaternion equation.
+**Consequence.** Every root in the image lies in the relative commutant $C_L(X)$, which is the image of the centraliser of $\tilde Q$. The root is therefore $\mathsf{M}_4^{L}(\tilde R)$ with $\tilde R^2=\tilde Q$, and the problem reduces to the biquaternion equation.
 
-**The ambient roots.** A $4\times4$ matrix $X$ can have roots outside the image. For example, a scalar $X=\lambda\mathrm I_4$ has roots that act with different signs on the two copies, and those roots are not of the form $\mathsf{M}_4(\tilde R)$. The classification below is the classification in the image; the ambient classification is the classification of the $4\times4$ Jordan types and is larger.
+**The ambient roots.** A $4\times4$ matrix $X$ can have roots outside the image. For example, a scalar $X=\lambda\mathrm I_4$ has roots that act with different signs on the two copies, and those roots are not of the form $\mathsf{M}_4^{L}(\tilde R)$. The classification below is the classification in the image; the ambient classification is the classification of the $4\times4$ Jordan types and is larger.
 
 ## The Spectral Cases
 
@@ -378,13 +380,13 @@ There are four roots when $\lambda_+\lambda_-\neq0$, and two roots when one eige
 
 If $\lambda\neq0$, the roots in the image are the two matrices
 $$
-Y=\pm\left(\sqrt{\lambda}\,\mathrm I_4+\frac{\mathsf{M}_4(\tilde N)}{2\sqrt{\lambda}}\right).
+Y=\pm\left(\sqrt{\lambda}\,\mathrm I_4+\frac{\mathsf{M}_4^{L}(\tilde N)}{2\sqrt{\lambda}}\right).
 $$
 If $\lambda=0$, there is no root in the image.
 
-*Proof.* By the reduction $Y=a\mathrm I_4+b\mathsf{M}_4(\tilde N)$, and
+*Proof.* By the reduction $Y=a\mathrm I_4+b\mathsf{M}_4^{L}(\tilde N)$, and
 $$
-Y^2=a^2\mathrm I_4+2ab\,\mathsf{M}_4(\tilde N).
+Y^2=a^2\mathrm I_4+2ab\,\mathsf{M}_4^{L}(\tilde N).
 $$
 For $\lambda\neq0$ the conditions are $a^2=\lambda$ and $2ab=1$, which give the two roots. For $\lambda=0$ they are $a^2=0$ and $2ab=1$, which are incompatible.
 
@@ -436,7 +438,7 @@ Since $\operatorname{Tr}X=2(\lambda_++\lambda_-)$, the denominator is $\sqrt{\tf
 
 **The $2\times2$ comparison.** In the $2\times2$ model the eigenvalues are $\lambda_+,\lambda_-$, $\operatorname{Tr}X=\lambda_++\lambda_-$, and $\sqrt N=\sqrt{\det X}$. The denominator is $\sqrt{\operatorname{Tr}X+2\sqrt N}$, and the formula is the $2\times2$ one. In the regular model the trace is doubled, and the half-trace appears.
 
-**The special cases.** For a scalar $X=\lambda\mathrm I_4$ the formula, with the consistent choice $\sqrt N=\lambda$, gives $\sqrt{\lambda}\,\mathrm I_4$. For a Jordan block $X=\lambda\mathrm I_4+\mathsf{M}_4(\tilde N)$ with $\lambda\neq0$ it gives $\sqrt{\lambda}\,\mathrm I_4+\mathsf{M}_4(\tilde N)/(2\sqrt{\lambda})$, the root of the repeated-eigenvalue theorem. For a singular matrix with one nonzero eigenvalue it gives the root with eigenvalues $\sqrt{\lambda_+},0$, each repeated.
+**The special cases.** For a scalar $X=\lambda\mathrm I_4$ the formula, with the consistent choice $\sqrt N=\lambda$, gives $\sqrt{\lambda}\,\mathrm I_4$. For a Jordan block $X=\lambda\mathrm I_4+\mathsf{M}_4^{L}(\tilde N)$ with $\lambda\neq0$ it gives $\sqrt{\lambda}\,\mathrm I_4+\mathsf{M}_4^{L}(\tilde N)/(2\sqrt{\lambda})$, the root of the repeated-eigenvalue theorem. For a singular matrix with one nonzero eigenvalue it gives the root with eigenvalues $\sqrt{\lambda_+},0$, each repeated.
 
 ## The Classification
 
@@ -457,13 +459,13 @@ Since $\operatorname{Tr}X=2(\lambda_++\lambda_-)$, the denominator is $\sqrt{\tf
 
 **A singular element.** Take $\tilde Q=e_t+i\vec e_x$. Then $Q_t=1$, $B^2=-1$, $\lambda_+=0$, $\lambda_-=2$, $N=0$. The eigenvalues are distinct and one is zero, so there are two roots in the image; the principal root is $X/\sqrt2$, with eigenvalues $0$ and $\sqrt2$, each repeated. The determinant of the root is $0$, so the root is singular, as it must be.
 
-**A nilpotent.** Take $\tilde Q=\vec e_x+i\vec e_y$. Then $Q_t=0$ and $B^2=0$, so $\lambda_\pm=0$ and $\tilde Q^2=0$. There is no root in the image. The ambient $4\times4$ nilpotent $\mathsf{M}_4(\tilde Q)$ has rank two and does have a root in $M_4(\mathbb{C})$, but that root is not regular.
+**A nilpotent.** Take $\tilde Q=\vec e_x+i\vec e_y$. Then $Q_t=0$ and $B^2=0$, so $\lambda_\pm=0$ and $\tilde Q^2=0$. There is no root in the image. The ambient $4\times4$ nilpotent $\mathsf{M}_4^{L}(\tilde Q)$ has rank two and does have a root in $M_4(\mathbb{C})$, but that root is not regular.
 
 ## Summary
 
-The functional calculus applies a holomorphic function to a matrix by the Cauchy integral. On the regular image it is the image of the biquaternion calculus, $\mathsf{M}_4(f(\tilde Q))=f(\mathsf{M}_4(\tilde Q))$; the eigenvalues are doubled, and the branches are not.
+The functional calculus applies a holomorphic function to a matrix by the Cauchy integral. On the regular image it is the image of the biquaternion calculus, $\mathsf{M}_4^{L}(f(\tilde Q))=f(\mathsf{M}_4^{L}(\tilde Q))$; the eigenvalues are doubled, and the branches are not.
 
-The exponential is the entire case, and it is the image of the biquaternion exponential, $\exp\mathsf{M}_4(\tilde Q)=\mathsf{M}_4(\exp\tilde Q)$. Its determinant is $\exp(4Q_t)$, and its norm is $e^{2Q_t}$. The closed form is $e^{Q_t}(\cos B\,\mathrm I_4+(\sin B/B)\mathsf{M}_4(\vec Q))$, with the nilpotent limit at $B=0$. The one-parameter subgroups are the exponential lines, with the four elementary types phase, rotor, boost and unipotent. The kernel consists of the diagonalisable matrices with eigenvalues in $2\pi i\mathbb{Z}$, a union of conjugacy classes that contains zero divisors.
+The exponential is the entire case, and it is the image of the biquaternion exponential, $\exp\mathsf{M}_4^{L}(\tilde Q)=\mathsf{M}_4^{L}(\exp\tilde Q)$. Its determinant is $\exp(4Q_t)$, and its norm is $e^{2Q_t}$. The closed form is $e^{Q_t}(\cos B\,\mathrm I_4+(\sin B/B)\mathsf{M}_4^{L}(\vec Q))$, with the nilpotent limit at $B=0$. The one-parameter subgroups are the exponential lines, with the four elementary types phase, rotor, boost and unipotent. The kernel consists of the diagonalisable matrices with eigenvalues in $2\pi i\mathbb{Z}$, a union of conjugacy classes that contains zero divisors.
 
 The logarithms of a regular matrix in the image are the images of the biquaternion logarithms. For distinct eigenvalues they form a $\mathbb{Z}^2$-family, one integer per eigenvalue repeated twice; for a non-scalar repeated eigenvalue they form a $\mathbb{Z}$-family; for a scalar they are the translates of a scalar logarithm by the kernel. The principal logarithm is defined when the spectrum avoids the closed negative real axis.
 
@@ -475,7 +477,7 @@ The square roots in the image are the images of the biquaternion roots: four for
 |---|---|
 | $f(X)=\frac{1}{2\pi i}\oint f(z)(z\mathrm I_4-X)^{-1}dz$ | the functional calculus |
 | $\exp X=\sum_m X^m/m!$ | the matrix exponential |
-| $X=\mathsf{M}_4(\tilde Q)$ | the regular matrix |
+| $X=\mathsf{M}_4^{L}(\tilde Q)$ | the regular matrix |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the complex square of the vector part |
 | $\det(\exp X)=\exp(\operatorname{tr}X)$ | the determinant identity |
 | $\varphi_X(t)=\exp(tX)$ | the one-parameter subgroup |
@@ -495,8 +497,8 @@ The square roots in the image are the images of the biquaternion roots: four for
 
 - [Holomorphic Functional Calculus](holomorphic-functional-calculus.html), for the general calculus and its convergence
 - [$M_2(\mathbb{C})$ Representation : The Functional Calculus](m2c-representation-the-functional-calculus.html), for the $2\times2$ version
-- [$M_4(\mathbb{C})_L$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the nilpotents and the rank-two projectors
-- [$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the relative commutant
+- [$M_4(\mathbb{C})$ Model : The Spectral Projectors](m4c-model-the-spectral-projectors.html), for the nilpotents and the rank-two projectors
+- [$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser](m4c-model-the-centraliser-and-the-double-centraliser.html), for the relative commutant
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the biquaternion logarithm
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Lie correspondence
 - [Square Roots of an Element](square-roots-of-an-element.html), for the algebra classification
