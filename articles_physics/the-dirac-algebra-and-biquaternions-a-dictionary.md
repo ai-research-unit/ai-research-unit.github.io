@@ -539,7 +539,7 @@ The same fact shows up as a closure failure. Left multiplication by a general el
 
 **The consequence: multiplication is chirality-blind.** The two mechanisms differ again in what they do to the two chiral components of a Dirac module. Conjugation and central multiplication are the framework's gauge and Lorentz actions, and the question that the series' electroweak articles ask — can an action distinguish the left-handed from the right-handed fermion? — is answered by the mechanism, not by the group: left multiplication acts on the two components with the **same** representation, so no multiplication can give them inequivalent ones. This is the vector-like obstruction, and it is a property of $\mathbb{B}$ rather than of any particular gauge group.
 
-What lies outside that mechanism is precisely the operations that must treat the two chiralities *differently* or *exchange* them in a single step. They are not multiplications and have no representative in $\mathbb{B}$: the parity-reflecting frame element $\gamma^0$ and the energy-sign split built on it, the internal matrices of charge conjugation and parity, the chiral gauge coupling the electroweak article requires, and the odd form of a first-order operator — the Feynman slash. The slash is the mildest case, because $\mathbb{B}$ carries a first-order operator of its own, the even gradient $\tilde{\nabla}$, as the next section relates; the others have no such substitute. All of them are catalogued together as **O22** in the companion catalogue of obstructions, where the vector-like property is stated as the algebraic fact it is.
+What lies outside that mechanism is precisely the operations that must treat the two chiralities *differently* or *exchange* them in a single step. They are not multiplications and have no representative in $\mathbb{B}$: the parity-reflecting frame element $\gamma^0$ and the energy-sign split built on it, the internal matrices of charge conjugation and parity, the chiral gauge coupling the electroweak article requires, and the odd form of a first-order operator — the Feynman contraction. The contraction is the mildest case, because $\mathbb{B}$ carries a first-order operator of its own, the even gradient $\tilde{\nabla}$, as the next section relates; the others have no such substitute. All of them are catalogued together as **O22** in the companion catalogue of obstructions, where the vector-like property is stated as the algebraic fact it is.
 
 ## The Dirac Operator and the Gradient
 
@@ -566,10 +566,10 @@ which is the image of $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, since re
 The gamma-matrix Dirac operator is the **odd** element
 
 $$
-\not\partial = \gamma^\mu\partial/\partial Q_\mu, \qquad \not\partial^2 = \bigl(-(1/c^2)\partial^2/\partial {t'}^2 + \Delta\bigr)I_4 = \Box\,I_4,
+\gamma^{\rho}\partial/\partial x^{\rho}, \qquad (\gamma^{\nu}\partial/\partial x^{\nu})^2 = \bigl(-(1/c^2)\partial^2/\partial {t'}^2 + \Delta\bigr)I_4 = \Box\,I_4,
 $$
 
-where the second identity is the ordinary Clifford relation, verified symbolically on the symbols. So the algebra contains **two** square roots of $\Box$: the odd Dirac operator $\not\partial$ and the even gradient $\iota_{\mathrm{Cl}}(\tilde{\nabla})$, which are square roots in different graded pieces, the odd one with the general plain bilinear product and the even one with the reversal. They are not the same operator, and the dictionary does not identify them; what relates them is the frame of the previous section, through which every odd element is written as a fixed odd element times an even one. The statement in the parent article that $\tilde{\nabla}$ "plays the role of the Dirac operator" is therefore a statement about the role — both are square roots of the wave operator and both express first-order relativistic equations — and not an identification of the two operators.
+where the second identity is the ordinary Clifford relation, verified symbolically on the symbols. So the algebra contains **two** square roots of $\Box$: the odd Dirac operator $\gamma^{\mu}\partial/\partial x^{\mu}$ and the even gradient $\iota_{\mathrm{Cl}}(\tilde{\nabla})$, which are square roots in different graded pieces, the odd one with the general plain bilinear product and the even one with the reversal. They are not the same operator, and the dictionary does not identify them; what relates them is the frame of the previous section, through which every odd element is written as a fixed odd element times an even one. The statement in the parent article that $\tilde{\nabla}$ "plays the role of the Dirac operator" is therefore a statement about the role — both are square roots of the wave operator and both express first-order relativistic equations — and not an identification of the two operators.
 
 ## Summary
 
@@ -617,7 +617,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and complex subspaces |
 | $S = \mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$ |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_k \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient |
-| $\not\partial = \gamma^\mu\partial/\partial Q_\mu$ | Gamma-matrix Dirac operator |
+| $\gamma^{\nu}\partial/\partial x^{\nu}$ | Gamma-matrix Dirac operator |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form (unchanged) |
 
 ## Further Reading

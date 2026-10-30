@@ -39,25 +39,25 @@ with all other anticommutators vanishing. The parent article's spinors satisfy
 $$
 \bar w^{(r)}w^{(s)}=2m\,\delta^{rs},\qquad \bar v^{(r)}v^{(s)}=-2m\,\delta^{rs},
 \qquad
-\sum_{r=1}^2 w^{(r)}\bar w^{(r)}=\not p+m,\qquad
-\sum_{r=1}^2 v^{(r)}\bar v^{(r)}=\not p-m .
+\sum_{r=1}^2 w^{(r)}\bar w^{(r)}=\gamma^{\mu} p_{\mu}+m,\qquad
+\sum_{r=1}^2 v^{(r)}\bar v^{(r)}=\gamma^{\nu} p_{\nu}-m .
 $$
 
 Contracting the mode operators against the vacuum gives the two elementary two-point functions. The **positive-frequency** piece is
 
 $$
 W_+(x-y)\;=\;\langle 0|\,\psi^{\mathrm{fop}}(x)\,\bar{\psi^{\mathrm{fop}}}(y)\,|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p+m\big)\,\exp(-ip\cdot(x-y)),
+=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\gamma^{\mu} p_{\mu}+m\big)\,\exp(-ip\cdot(x-y)),
 $$
 
 in which only the $a^{\mathrm{fop}} a^{\mathrm{fop}\dagger}$ contraction survives, and the **negative-frequency** piece is
 
 $$
 W_-(x-y)\;=\;\langle 0|\,\bar{\psi^{\mathrm{fop}}}(y)\,\psi^{\mathrm{fop}}(x)\,|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p-m\big)\,\exp(+ip\cdot(x-y)),
+=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\gamma^{\mu} p_{\mu}-m\big)\,\exp(+ip\cdot(x-y)),
 $$
 
-in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expressions $\not p$ is **on shell**, $\not p=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$, because the spatial integral retains only the mass-shell modes. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
+in which only $b^{\mathrm{fop}} b^{\mathrm{fop}\dagger}$ survives. In both expressions $\gamma^{\mu} p_{\mu}$ is **on shell**, $\gamma^{\mu} p_{\mu}=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$, because the spatial integral retains only the mass-shell modes. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
 
 Time ordering for a fermion field carries the anticommutation sign:
 
@@ -73,7 +73,7 @@ The two $\theta$ functions can be represented by a single four-dimensional integ
 
 $$
 \boxed{\;S_F(x-y)\;=\;i\int\!\frac{d^4p}{(2\pi)^4}\;
-\exp(-ip\cdot(x-y))\;\frac{\not p+m}{p^2-m^2+i\epsilon},
+\exp(-ip\cdot(x-y))\;\frac{\gamma^{\mu} p_{\mu}+m}{p^2-m^2+i\epsilon},
 \qquad \epsilon\to0^+\;}.
 $$
 
@@ -96,22 +96,22 @@ The $+E_{\vec p}$ pole is displaced **below** the real axis and the $-E_{\vec p}
 The residues are
 
 $$
-\operatorname*{Res}_{p^0=+E_{\vec p}}\frac{\not p+m}{(p^0)^2-E_{\vec p}^2}
-=\frac{\not p_{+}+m}{2E_{\vec p}},
+\operatorname*{Res}_{p^0=+E_{\vec p}}\frac{\gamma^{\rho} p_{\rho}+m}{(p^0)^2-E_{\vec p}^2}
+=\frac{\gamma^{\mu} (p_{+})_{\mu}+m}{2E_{\vec p}},
 \qquad
-\operatorname*{Res}_{p^0=-E_{\vec p}}\frac{\not p+m}{(p^0)^2-E_{\vec p}^2}
-=\frac{\not p_{-}+m}{-2E_{\vec p}},
+\operatorname*{Res}_{p^0=-E_{\vec p}}\frac{\gamma^{\sigma} p_{\sigma}+m}{(p^0)^2-E_{\vec p}^2}
+=\frac{\gamma^{\nu} (p_{-})_{\nu}+m}{-2E_{\vec p}},
 $$
 
-with $\not p_{+}=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ and $\not p_{-}=-\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$. Using the identity
+with $\gamma^{\mu} (p_{+})_{\mu}=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ and $\gamma^{\mu} (p_{-})_{\mu}=-\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$. Using the identity
 
 $$
-\not p_{-}+m=-\big(\not p_{+}(-\vec p)-m\big),
+\gamma^{\mu} (p_{-})_{\mu}+m=-\big(\gamma^{\nu} (p_{+})_{\nu}(-\vec p)-m\big),
 $$
 
 and substituting $\vec p\to-\vec p$ in the spatial integral, the two contributions become exactly $+W_+$ for $x^0-y^0>0$ and $-W_-$ for $x^0-y^0<0$. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus. That the *same* $i$ does both is the reason the covariant form is not merely a notational convenience; it is the statement that the contour and the time ordering are one piece of data.
 
-**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ in natural units, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(\not p-m)w^{(r)}=0$ and $(\not p+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r w^{(r)}\bar w^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ gives a maximum deviation of $4.4\times10^{-16}$; the matrix identity $(\not p-m)(\not p+m)=(p^2-m^2)I_4$, which uses $\not p^{\,2}=p^2I_4$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p^0$ integral along the real axis reproduces the residue expressions for both signs of $x^0-y^0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x^0-y^0)W_+-\theta(y^0-x^0)W_-$.
+**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ in natural units, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(\gamma^{\mu} p_{\mu}-m)w^{(r)}=0$ and $(\gamma^{\mu} p_{\mu}+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r w^{(r)}\bar w^{(r)}=\gamma^{\mu} p_{\mu}+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\gamma^{\mu} p_{\mu}-m$ gives a maximum deviation of $4.4\times10^{-16}$; the matrix identity $(\gamma^{\mu} p_{\mu}-m)(\gamma^{\nu} p_{\nu}+m)=(p^2-m^2)I_4$, which uses $(\gamma^\mu p_\mu)^2=p^2I_4$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p^0$ integral along the real axis reproduces the residue expressions for both signs of $x^0-y^0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x^0-y^0)W_+-\theta(y^0-x^0)W_-$.
 
 ## Feynman, Retarded, and Advanced: What Selects the Contour
 
@@ -142,8 +142,8 @@ $$
 whose two frequency branches $E=\pm E_{\vec p}$ are the two poles above. Inverting the relation gives the biquaternion form of the momentum-space amplitude,
 
 $$
-\boxed{\;S_F(p)\;=\;\frac{i(\not p+m)}{p^2-m^2+i\epsilon}
-\;=\;-\,\frac{i(\not p+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon}\;},
+\boxed{\;S_F(p)\;=\;\frac{i(\gamma^{\mu} p_{\mu}+m)}{p^2-m^2+i\epsilon}
+\;=\;-\,\frac{i(\gamma^{\nu} p_{\nu}+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon}\;},
 $$
 
 the denominator being the **deformed mass-shell operator** $\mathcal{M}(\tilde{P})=\tilde{P}\tilde{P}^{\natural}+m^2$, shifted by $-i\epsilon$. The prescription is thus a deformation of the scalar on which the mass shell is defined, not an addition to the algebra.
@@ -162,10 +162,10 @@ But the selection is still analytic, not algebraic. The step "continue the uniqu
 
 ## The Propagator as a Distribution
 
-It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated expression $(\not p+m)/(p^2-m^2)$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\not p-m$ off the mass shell into a distributional inverse on all of momentum space. The propagator satisfies
+It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated expression $(\gamma^{\mu} p_{\mu}+m)/(p^2-m^2)$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\gamma^{\mu} p_{\mu}-m$ off the mass shell into a distributional inverse on all of momentum space. The propagator satisfies
 
 $$
-(i\not\partial/\partial Q_x-m)\,S_F(x-y)=i\,\delta^{(4)}(x-y)
+(i\gamma^{\mu}\partial/\partial x^{\mu}-m)\,S_F(x-y)=i\,\delta^{(4)}(x-y)
 $$
 
 in the distributional sense, and this is a statement that holds for the Feynman, retarded, and advanced choices alike — because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x^0\gtrless y^0$.
@@ -180,7 +180,7 @@ At finite temperature the time-ordered two-point function is not given by a vacu
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard field theory, transcribed.** The mode expansion and the mode anticommutators of the companion article; the two elementary two-point functions $W_+$ and $W_-$ and their spin sums; the covariant representation of $S_F$ with its contour; the identification of the pole displacements with the Feynman, retarded, and advanced propagators; the distributional equation $(i\not\partial-m)S_F=i\delta$; and the finite-temperature reduction to the Matsubara sum. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
+**Standard field theory, transcribed.** The mode expansion and the mode anticommutators of the companion article; the two elementary two-point functions $W_+$ and $W_-$ and their spin sums; the covariant representation of $S_F$ with its contour; the identification of the pole displacements with the Feynman, retarded, and advanced propagators; the distributional equation $(i\gamma^{\mu}\partial/\partial x^{\mu}-m)S_F=i\delta$; and the finite-temperature reduction to the Matsubara sum. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the read-list articles.
 
 **What the biquaternion notation provides.** The deformed mass-shell scalar $\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon$; the pole set as the two branches of one algebraic condition; and the location of the deformation in the centre $\mathbb{C}_{\mathbb{B}}$, along the $ict'$ axis of the material sector $\mathbb{M}_-$.
 
@@ -198,7 +198,7 @@ The honest summary of the algebra's role is the one we gave in the introduction.
 The Feynman propagator of the biquaternion Dirac field is the time-ordered two-point function $S_F(x-y)=\langle 0|T \psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$. Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
 
 $$
-S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{\not p+m}{p^2-m^2+i\epsilon}.
+S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,\exp(-ip\cdot(x-y))\frac{\gamma^{\mu} p_{\mu}+m}{p^2-m^2+i\epsilon}.
 $$
 
 The $p^0$ integral has poles at $p^0=\pm(E_{\vec p}-i\epsilon/2E_{\vec p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x^0-y^0>0$ and above for $x^0-y^0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus.
@@ -206,7 +206,7 @@ The $p^0$ integral has poles at $p^0=\pm(E_{\vec p}-i\epsilon/2E_{\vec p})$: the
 Writing the wave biquaternion $\tilde{P}=iE\,e_t+\vec p$, so that $\tilde{P}\tilde{P}^{\natural}=-p^2$, the propagator amplitude becomes
 
 $$
-S_F(p)=-\frac{i(\not p+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon},
+S_F(p)=-\frac{i(\gamma^{\mu} p_{\mu}+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon},
 $$
 
 and the prescription is a deformation of the mass-shell scalar. The deformation $-i\epsilon\,e_t$ lies in the centre $\mathbb{C}_{\mathbb{B}}$ and along the $ict'$ axis of the material sector $\mathbb{M}_-$. The Feynman, retarded, and advanced propagators differ only in whether the two pole displacements are opposite or common; the algebra provides the complex plane and the axis of the deformation but not its orientation, which is a boundary condition on the distributional inverse. The algebra therefore adds notation and a natural home for the $i\epsilon$, not the selection of the Feynman contour.
@@ -227,10 +227,10 @@ and the prescription is a deformation of the mass-shell scalar. The deformation 
 | $\psi$, $\bar\psi=\psi^\dagger\gamma^0$ | Spinor-module representative and its adjoint |
 | $\gamma^\mu$, $g=\mathrm{diag}(+1,-1,-1,-1)$ | Gamma matrices and Clifford metric |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | Spacetime metric of the $ict'$ gradient |
-| $p^\mu=(E,\vec p)$, $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and Feynman slash |
+| $p^\mu=(E,\vec p)$, $\gamma^{\mu} p_{\mu}=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and its contraction |
 | $\psi^{\mathrm{fop}}$, $a_r^{\mathrm{fop}}(\vec p)$, $b_r^{\mathrm{fop}}(\vec p)$ | Quantized field; particle and antiparticle modes |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency plane-wave spinors |
-| $\bar w w=2m$, $\bar v v=-2m$, $\sum_r w\bar w=\not p+m$, $\sum_r v\bar v=\not p-m$ | Parent article's normalizations and spin sums |
+| $\bar w w=2m$, $\bar v v=-2m$, $\sum_r w\bar w=\gamma^{\mu} p_{\mu}+m$, $\sum_r v\bar v=\gamma^{\mu} p_{\mu}-m$ | Parent article's normalizations and spin sums |
 | $W_\pm(x-y)$ | Positive- and negative-frequency two-point functions |
 | $S_F(x-y)=\langle 0|T \psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$ | Feynman propagator |
 | $\tilde{P}=iE\,e_t+\vec p$ | Wave biquaternion, $\tilde{P}\tilde{P}^{\natural}=-p^2$ |

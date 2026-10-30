@@ -12,7 +12,7 @@ The article is organised as follows. The next section sets up the two diagrams, 
 
 ### Kinematics
 
-Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $\not p_i = m$ on shell, $m = m_e$. The **Mandelstam variables** are
+Let the incoming electrons carry four-momenta $p_1, p_2$ and the outgoing electrons $p_3, p_4$, with the mass shell $p_i^2 = m^2$ and $\gamma^\mu p_{i\mu} = m$ on shell, $m = m_e$. The **Mandelstam variables** are
 
 $$
 s = (p_1+p_2)^2 = (p_3+p_4)^2,
@@ -74,16 +74,16 @@ Squaring and averaging over the two initial spins and summing over the two final
 
 $$
 \frac14\sum_{\mathrm{spins}}|\mathcal M|^2
-= \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[\gamma^\mu(\not p_1+m)\gamma^\nu(\not p_3+m)]\operatorname{Tr}[\gamma_\mu(\not p_2+m)\gamma_\nu(\not p_4+m)]
+= \frac{e^4}{4}\Big\{ \frac{1}{t^2}\operatorname{Tr}[\gamma^\mu(\gamma^{\rho} (p_{1})_{\rho}+m)\gamma^\nu(\gamma^{\sigma} (p_{3})_{\sigma}+m)]\operatorname{Tr}[\gamma_\mu(\gamma^{\lambda} (p_{2})_{\lambda}+m)\gamma_\nu(\gamma^{\alpha} (p_{4})_{\alpha}+m)]
 $$
 $$
-\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[\gamma^\mu(\not p_2+m)\gamma^\nu(\not p_3+m)]\operatorname{Tr}[\gamma_\mu(\not p_1+m)\gamma_\nu(\not p_4+m)]
+\qquad\qquad + \frac{1}{u^2}\operatorname{Tr}[\gamma^\mu(\gamma^{\rho} (p_{2})_{\rho}+m)\gamma^\nu(\gamma^{\sigma} (p_{3})_{\sigma}+m)]\operatorname{Tr}[\gamma_\mu(\gamma^{\lambda} (p_{1})_{\lambda}+m)\gamma_\nu(\gamma^{\alpha} (p_{4})_{\alpha}+m)]
 $$
 $$
-\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[(\not p_3+m)\gamma^\mu(\not p_1+m)\gamma^\nu(\not p_4+m)\gamma_\mu(\not p_2+m)\gamma_\nu] \Big\},
+\qquad\qquad - \frac{2}{tu}\operatorname{Tr}[(\gamma^{\rho} (p_{3})_{\rho}+m)\gamma^\mu(\gamma^{\sigma} (p_{1})_{\sigma}+m)\gamma^\nu(\gamma^{\lambda} (p_{4})_{\lambda}+m)\gamma_\mu(\gamma^{\alpha} (p_{2})_{\alpha}+m)\gamma_\nu] \Big\},
 $$
 
-using the spin sum $\sum_s w^s(p)\bar w^s(p) = \not p+m$ and the trace identity $\operatorname{Tr}[\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma] = 4(\eta^{\mu\nu}\eta^{\rho\sigma}-\eta^{\mu\rho}\eta^{\nu\sigma}+\eta^{\mu\sigma}\eta^{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
+using the spin sum $\sum_s w^s(p)\bar w^s(p) = \gamma^{\mu} p_{\mu}+m$ and the trace identity $\operatorname{Tr}[\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma] = 4(\eta^{\mu\nu}\eta^{\rho\sigma}-\eta^{\mu\rho}\eta^{\nu\sigma}+\eta^{\mu\sigma}\eta^{\nu\rho})$, with odd traces vanishing. Evaluating the three traces gives
 
 $$
 \boxed{\;

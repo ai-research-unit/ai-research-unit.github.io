@@ -275,6 +275,12 @@ Each row reads $T_{\mu\nu}$ as a unit coefficient times the $\gamma$-product; th
 
 **The comparison map.** The $\mathbb{R}$-linear map $\iota_{\mathrm{Cl}}$ of the Dirac articles is read in cells as $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$ and $\iota_{\mathrm{Cl}}(i)=T_{tz}$, equivalently $\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3$, $\iota_{\mathrm{Cl}}(\vec e_y)=\gamma^3\gamma^1$, $\iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2$ and $\iota_{\mathrm{Cl}}(i)=-\gamma^0\gamma^1\gamma^2\gamma^3$. Its image is the real span of the eight cells $T_{\mu t}$ and $T_{\mu z}$, of real dimension $8$, and it satisfies $\iota_{\mathrm{Cl}}(i\tilde Q)=T_{tz}\,\iota_{\mathrm{Cl}}(\tilde Q)$. It is $\mathbb{R}$-linear and not $\mathbb{C}$-linear: it is the comparison with the even subalgebra of $\mathrm{Cl}_{1,3}$, not a second representation of $\mathbb{B}$.
 
+**The slash is not used.** The Dirac slash is not part of the notation of the matrix models. A contraction with a momentum is written $\gamma^\mu p_\mu$, and a contraction with a derivative $\gamma^\mu\partial/\partial x^\mu$ in the real-time coordinates $x^\mu=(ct',x,y,z)$. The contraction with $\partial/\partial Q_\mu$ is not used: since $\partial/\partial Q_t=-i/c\,\partial/\partial t'$ it squares to $\partial^2/\partial Q_t^2-\Delta$, which differs from $\Box=\partial^2/\partial Q_t^2+\Delta$ by $-2\Delta$. The identity $(i\gamma^\mu\partial/\partial x^\mu)^2=\Box$ holds for the real-time derivative and only for it. The momentum contraction is a cell sum in the chosen frame,
+$$
+\gamma^\mu p_\mu=iT_{tx}p_t-i\bigl(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z\bigr),
+$$
+so the frame is visible and no formula is frame-free by accident.
+
 ## Summary
 
 The **$2\times2$ isomorphism** $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, the three vector units to $-i$ times the Pauli matrices, and $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace of the image is twice the scalar part, the determinant is the biquaternion norm $\langle\tilde Q\rangle_{\natural}$, and the determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus.

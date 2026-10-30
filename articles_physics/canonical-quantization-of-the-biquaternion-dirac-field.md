@@ -113,8 +113,8 @@ $$
 $$
 
 $$
-\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\not p+m,\qquad
-\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\not p-m .
+\sum_{r=1}^{2}w^{(r)}(\vec p)\bar w^{(r)}(\vec p)=\gamma^{\mu} p_{\mu}+m,\qquad
+\sum_{r=1}^{2}v^{(r)}(\vec p)\bar v^{(r)}(\vec p)=\gamma^{\nu} p_{\nu}-m .
 $$
 
 Quantization consists in replacing the constant coefficients of the classical expansion by operators:
@@ -411,7 +411,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
 | $\bar w w=2m$, $w^\dagger w=2E_{\vec p}$ | Covariant and Hermitian normalizations |
-| $p^\mu=(E_{\vec p},\vec p)$, $\not p=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and Feynman slash |
+| $p^\mu=(E_{\vec p},\vec p)$, $\gamma^{\mu} p_{\mu}=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and its contraction |
 | $\tilde P\tilde P^{\natural}=-m^2c^2\,e_t$ | Biquaternionic mass-shell condition |
 | $\psi^{\mathrm{fop}}$, $a^{\mathrm{fop}}_r(\vec p)$, $b^{\mathrm{fop}}_r(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
 | $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Mode anticommutator |

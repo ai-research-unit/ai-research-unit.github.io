@@ -157,7 +157,7 @@ which follows from the two on-shell conditions $w(p_2)$ and $\bar w(p_2)$ and is
 
 $$
 2m\,\bar w(p_2)\gamma^\mu\gamma_5 w(p)
-= \bar w(p_2)\left(\gamma^\mu\gamma_5\,\not p + \not p_2\,\gamma^\mu\gamma_5\right)w(p),
+= \bar w(p_2)\left(\gamma^\mu\gamma_5\,\gamma^{\rho} p_{\rho} + \gamma^{\nu} (p_{2})_{\nu}\,\gamma^\mu\gamma_5\right)w(p),
 $$
 
 which is the same statement for the axial current and is used in the analysis of the axial anomaly.

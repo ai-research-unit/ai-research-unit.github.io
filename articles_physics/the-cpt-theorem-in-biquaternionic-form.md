@@ -144,10 +144,10 @@ Two remarks on conventions. First, the phases of $\eta_C$ and $\eta_T$ are not f
 
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was the general solution
 $$
-\psi=(\not p+m)\chi\,\exp(-ip\cdot x)+(\not p-m)\chi_2\,\exp(+ip\cdot x),
+\psi=(\gamma^{\mu} p_{\mu}+m)\chi\,\exp(-ip\cdot x)+(\gamma^{\nu} p_{\nu}-m)\chi_2\,\exp(+ip\cdot x),
 \qquad p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\quad E_{\vec p}^2=\vec p^2+m^2,
 $$
-with $\not p=\gamma^0E_{\vec p}-\boldsymbol{\gamma}\cdot\vec p$ and $\chi,\chi_2$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(i\gamma^\mu\partial/\partial Q_\mu-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
+with $\gamma^{\mu} p_{\mu}=\gamma^0E_{\vec p}-\boldsymbol{\gamma}\cdot\vec p$ and $\chi,\chi_2$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(i\gamma^\mu\partial/\partial Q_\mu-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
 $$
 (m,\vec p)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
 $$
@@ -155,10 +155,10 @@ each with the corresponding $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and with both fre
 
 The individual checks are worth a word each, because they test different parts of the structure.
 
-- **$C$.** The identity $\eta_C\gamma^{\mu*}\eta_C^{-1}=-\gamma^\mu$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(\not p+m)\chi$,
+- **$C$.** The identity $\eta_C\gamma^{\mu*}\eta_C^{-1}=-\gamma^\mu$ was verified as a $4\times4$ matrix identity for all four $\mu$, and the transformed field was confirmed to solve the equation. The same computation identifies *which* solution the transform produces: for a positive-frequency amplitude $w=(\gamma^{\mu} p_{\mu}+m)\chi$,
   $$
-  \eta_C\,w^{*}=i\gamma^2(\not p^{*}+m)\chi^{*}=i(-\not p+m)\gamma^2\chi^{*}
-  =-i\,(\not p-m)\,\gamma^2\chi^{*},
+  \eta_C\,w^{*}=i\gamma^2((\gamma^{\mu} p_{\mu})^{\ast}+m)\chi^{*}=i(-\gamma^{\nu} p_{\nu}+m)\gamma^2\chi^{*}
+  =-i\,(\gamma^{\rho} p_{\rho}-m)\,\gamma^2\chi^{*},
   $$
   a negative-frequency amplitude. So $C$ exchanges the two branches; in the mode expansion it exchanges the particle operator $a^{\mathrm{fop}}$ with the antiparticle operator $b^{\mathrm{fop}}$, which is the operator-level statement that the conserved charge reverses sign. This was checked on the same three cases.
 - **$P$.** The commutator/anticommutator conditions on $\eta_P$ were verified for $\mu=0$ and $k=1,2,3$, and the reflected field was confirmed to solve the equation. The transform keeps the positive-frequency branch positive-frequency and reverses the momentum, $\vec p\mapsto-\vec p$.
@@ -323,7 +323,7 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 | $\tilde{\Psi}$, $\tilde{\Psi}^{\flat}$ | Biquaternion Dirac field and its anti-Hermitian conjugate |
 | $\psi=(\psi_L,\psi_R)^{T}$ | Spinor-module representative; $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$ |
 | $\gamma^\mu$, $g=\mathrm{diag}(+1,-1,-1,-1)$ | Block gamma matrices and Clifford metric; $\eta=-g$ |
-| $\not p=\gamma^0E_{\vec p}-\boldsymbol{\gamma}\cdot\vec p$ | Feynman slash; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
+| $\gamma^{\mu} p_{\mu}=\gamma^0E_{\vec p}-\boldsymbol{\gamma}\cdot\vec p$ | Feynman contraction; $p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
 | $\gamma_5=i\omega$, $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ | Chirality operator and volume element; $\eta_{CPT}=i\omega=\gamma_5$ |
 | $P_{L,R}=\tfrac12(I_4\mp\gamma_5)$ | Chiral projectors |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (solutions article) |

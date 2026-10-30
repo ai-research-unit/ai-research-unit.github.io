@@ -44,20 +44,20 @@ $$
 = \Box,
 $$
 
-so the same $\Box$ results whichever way the sign is assigned. With the Clifford metric fixed at $g$, the slash of a four-momentum $p^\mu = (E,\vec p)$ is $\not{p} = \gamma^\mu p_\mu = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p$, since $p_\mu = (E,-\vec p)$ in this signature. A reader who prefers instead to attach $\eta$ to the generators must set $\gamma_{\mathrm{alt}}^\mu = i\gamma^\mu$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\gamma_{\mathrm{alt}}^\mu\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
+so the same $\Box$ results whichever way the sign is assigned. With the Clifford metric fixed at $g$, the contraction of a four-momentum $p^\mu = (E,\vec p)$ is $\gamma^\mu p_\mu = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p$, since $p_\mu = (E,-\vec p)$ in this signature. A reader who prefers instead to attach $\eta$ to the generators must set $\gamma_{\mathrm{alt}}^\mu = i\gamma^\mu$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\gamma_{\mathrm{alt}}^\mu\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
 
 ## The Dirac field and its two bases
 
 In the spinor module, the biquaternionic Dirac equation is the standard Dirac equation
 
 $$
-(i\hbar\gamma^\mu\partial/\partial Q_\mu - mc)\psi = 0,
+(i\hbar\gamma^\mu\partial/\partial x^\mu - mc)\psi = 0,
 $$
 
 or, in natural units,
 
 $$
-(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0,
+(i\gamma^\mu\partial/\partial x^\mu - m)\psi = 0,
 $$
 
 with $\psi$ a four-component complex Dirac spinor. The biquaternion field $\tilde{\Psi}$ of the companion article is the algebra-level representative of this spinor: it is the element of $\mathbb{B} \cong M_2(\mathbb{C})$ that acts on, and encodes, the two-component spinor module, and the operator $\tilde{\nabla}$ is its Dirac operator. The mass term of the companion article is the linear, chirality-off-diagonal coupling of its chiral pair — the algebra-level representative of the spinor mass term above. The conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ is a separate object, the algebra's real structure (the fixed space of $\flat$ is the anti-Hermitian sector $\mathbb{M}_-$), and is *not* the mass term.
@@ -88,10 +88,10 @@ $$
 \psi(x) = w(\vec p)\, \exp(-i(Et' - \vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))), \qquad E = +\sqrt{\vec p^2 + m^2},
 $$
 
-where $w(\vec p)$ is a four-component constant spinor. Substituting into $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$ gives the momentum-space Dirac equation
+where $w(\vec p)$ is a four-component constant spinor. Substituting into $(i\gamma^\mu\partial/\partial x^\mu - m)\psi = 0$ gives the momentum-space Dirac equation
 
 $$
-(\not{p} - m)\,w(\vec p) = 0, \qquad \not{p} = \gamma^\mu p_\mu = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p,
+(\gamma^\mu p_\mu - m)\,w(\vec p) = 0, \qquad \gamma^\mu p_\mu = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p,
 $$
 
 using the mostly-minus metric, so that the spatial part enters with a minus sign. Squaring gives the mass-shell condition $p^2 = E^2 - \vec p^2 = m^2$.
@@ -122,7 +122,7 @@ $$
 w_\pm(\vec p) = \begin{pmatrix} \sqrt{E \mp |\vec p|}\; \chi_\pm \\[2pt] \sqrt{E \pm |\vec p|}\; \chi_\pm \end{pmatrix},
 $$
 
-with the upper block left-handed and the lower block right-handed. One checks directly that this satisfies $(\not{p}-m)w_\pm = 0$: the upper equation is $(E\mp|\vec p|)\sqrt{E\pm|\vec p|} = m\sqrt{E\mp|\vec p|}$, which reduces to $E^2 - \vec p^2 = m^2$. At high energy the coefficient $E \mp |\vec p|$ of the upper component tends to zero for the matching sign, so each helicity-eigenstate solution becomes dominated by a single chirality — the statement that a massless fermion has definite handedness. The two bases are related by a fixed $*$-unitary transformation, and the two spin states may equally be labelled by helicity or by the index $r$; the labelling is a convention.
+with the upper block left-handed and the lower block right-handed. One checks directly that this satisfies $(\gamma^\mu p_\mu-m)w_\pm = 0$: the upper equation is $(E\mp|\vec p|)\sqrt{E\pm|\vec p|} = m\sqrt{E\mp|\vec p|}$, which reduces to $E^2 - \vec p^2 = m^2$. At high energy the coefficient $E \mp |\vec p|$ of the upper component tends to zero for the matching sign, so each helicity-eigenstate solution becomes dominated by a single chirality — the statement that a massless fermion has definite handedness. The two bases are related by a fixed $*$-unitary transformation, and the two spin states may equally be labelled by helicity or by the index $r$; the labelling is a convention.
 
 The general positive-energy solution is an arbitrary linear combination $w = a_1 w^{(1)} + a_2 w^{(2)}$, so the positive-frequency solution space at fixed $\vec p$ is two-dimensional over $\mathbb{C}$.
 
@@ -137,10 +137,10 @@ $$
 Substituting gives the momentum-space equation
 
 $$
-(\not{p} + m)\,v(\vec p) = 0,
+(\gamma^\mu p_\mu + m)\,v(\vec p) = 0,
 $$
 
-with the same $\not{p} = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p$. In the Dirac basis the pair reads $(E+m)v_A = \boldsymbol{\sigma}\cdot\vec p\,v_B$ and $(E-m)v_B = \boldsymbol{\sigma}\cdot\vec p\,v_A$, and the two solutions are
+with the same $\gamma^\mu p_\mu = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p$. In the Dirac basis the pair reads $(E+m)v_A = \boldsymbol{\sigma}\cdot\vec p\,v_B$ and $(E-m)v_B = \boldsymbol{\sigma}\cdot\vec p\,v_A$, and the two solutions are
 
 $$
 \boxed{\;v^{(r)}(\vec p) = \begin{pmatrix} \sqrt{E-m}\,(\boldsymbol{\sigma}\cdot\vec u_p)\,\eta^{(r)} \\[2pt] \sqrt{E+m}\,\eta^{(r)} \end{pmatrix}, \qquad r = 1,2\;},
@@ -202,8 +202,8 @@ the last relation requiring the opposite momentum, as usual. Three normalization
 The **spin sums** (completeness relations) close the solution set over the spin index:
 
 $$
-\sum_{r=1}^{2} w^{(r)}(\vec p)\,\bar{w}^{(r)}(\vec p) = \not{p} + m, \qquad
-\sum_{r=1}^{2} v^{(r)}(\vec p)\,\bar{v}^{(r)}(\vec p) = \not{p} - m .
+\sum_{r=1}^{2} w^{(r)}(\vec p)\,\bar{w}^{(r)}(\vec p) = \gamma^\mu p_\mu + m, \qquad
+\sum_{r=1}^{2} v^{(r)}(\vec p)\,\bar{v}^{(r)}(\vec p) = \gamma^\mu p_\mu - m .
 $$
 
 These are the algebraic statement that the four solutions at fixed momentum form a basis of the amplitude space, and they are the ingredient that later exercises will need in order to sum over spins.
@@ -435,7 +435,7 @@ select the two components, and the biquaternion algebra contains their algebraic
 
 ## Summary
 
-The biquaternionic Dirac equation, in its spinor-module form $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\bar{w} = \not{p}+m$, $\sum_r v\bar{v} = \not{p}-m$.
+The biquaternionic Dirac equation, in its spinor-module form $(i\gamma^\mu\partial/\partial x^\mu - m)\psi = 0$, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\bar{w} = \gamma^\mu p_\mu+m$, $\sum_r v\bar{v} = \gamma^\mu p_\mu-m$.
 
 The spinor bilinears have a clean biquaternion interpretation. The conserved vector current is the four-vector $\tilde{J} = ic\,j^0e_t + \vec j$ in the material sector $\mathbb{M}_-$, while the rank-one Hermitian form built from a single two-component spinor is exactly the idempotent $\tfrac{1}{2}(e_t + i\vec u)$ of the informational sector $\mathbb{M}_+$, so a Weyl spinor is a pure state of the informational sector. The scalar and pseudoscalar bilinears are the real and imaginary parts of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$.
 
@@ -468,7 +468,7 @@ whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \ma
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
 | $\bar{\psi} = \psi^\dagger\gamma^0$ | Dirac adjoint |
 | $w^{(r)}(\vec p),\, v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors |
-| $p^\mu = (E,\vec p)$, $\not{p} = \gamma^0E - \boldsymbol{\gamma}\cdot\vec p$ | Four-momentum and Feynman slash |
+| $p^\mu = (E,\vec p)$, $\gamma^\mu p_\mu = \gamma^0E - \boldsymbol{\gamma}\cdot\vec p$ | Four-momentum and its contraction |
 | $j^\mu = \bar{\psi}\gamma^\mu\psi$ | Conserved Dirac current |
 | $\tilde{J} = ic\,j^0e_t + \vec j \in \mathbb{M}_-$ | Current as a material-sector biquaternion |
 | $\rho = \psi\psi^\dagger \mapsto \tfrac{1}{2}(e_t + i\vec u)$ | Spin bilinear as an $\mathbb{M}_+$ idempotent |

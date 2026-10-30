@@ -175,7 +175,7 @@ The determinant of a fermionic fluctuation operator is the place where the frame
 $$
 \int\mathcal{D}\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi\;\exp(\,\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi) = \det\mathcal{D},
 \qquad
-\mathcal{D} = i\partial\!\!\!/ - m ,
+\mathcal{D} = i\gamma^\mu\partial/\partial x^\mu - m ,
 $$
 which is standard. In the framework the spinor field is carried by the spinor module and the mass term is the chirality-off-diagonal, right-multiplication operator of the conventions article; the determinant is therefore that of a module operator whose chiral structure is nontrivial.
 
@@ -258,7 +258,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $K(t')=\mathrm{Tr}\,\exp(-t'S^{(2)})$, $K\sim(4\pi t')^{-d/2}\sum a_n {t'}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
-| $\mathcal{D}=i\partial\!\!\!/-m$ | Fermionic fluctuation operator |
+| $\mathcal{D}=i\gamma^\mu\partial/\partial x^\mu-m$ | Fermionic fluctuation operator |
 | $\det\mathcal{D}=|\det\mathcal{D}|\exp(i\phi_{\mathcal{D}})$ | Complex (chiral) fermion determinant |
 | $\eta(\mathcal{D})$ | Eta invariant; spectral asymmetry of the phase |
 

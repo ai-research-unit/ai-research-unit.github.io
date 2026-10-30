@@ -229,7 +229,7 @@ a product of Lebesgue measures on the coefficients, one per biquaternion compone
 
 **Fermionic fields.** For a fermionic field the functional integral is over Grassmann-valued fields, and the Gaussian integral returns a determinant rather than an inverse square root,
 $$
-\int\mathcal{D}\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi\;\exp(\,\tilde\Psi^{\natural}\big(i\partial\!\!\!/\,-m\big)\tilde\Psi) = \det\big(i\partial\!\!\!/\,-m\big),
+\int\mathcal{D}\tilde\Psi^{\natural}\mathcal{D}\tilde\Psi\;\exp(\,\tilde\Psi^{\natural}\big(i\gamma^\mu\partial/\partial x^\mu-m\big)\tilde\Psi) = \det\big(i\gamma^\mu\partial/\partial x^\mu-m\big),
 $$
 with the spinor structure carried by the module and the mass term linear and chirality-off-diagonal as the conventions require. The Grassmann integral and the determinant are standard; the biquaternion content is the spinor module on which the operator acts and the mass term's right-multiplication form. The fermionic path integral is developed in its own place in the corpus and is not rebuilt here.
 
@@ -292,7 +292,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $t'\mapsto-i\tau$, $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ | Wick rotation; $\exp(iS)\to \exp(-S_E)$ |
 | $O$, $O_{\mathrm c}$, $O_{\mathrm{cc}}=O$ | Region, causal complement, causal completeness (localisation) |
 | $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ | Wedge modular Hamiltonian (the worked causally complete region) |
-| $\det(i\partial\!\!\!/\,-m)$ | Fermionic Gaussian result (Grassmann integral) |
+| $\det(i\gamma^\mu\partial/\partial x^\mu-m)$ | Fermionic Gaussian result (Grassmann integral) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

@@ -1,4 +1,4 @@
-# __The Clifford Layer Is the Cell Layer: The Exact Correspondence, the Two Levels, and the Full Inventory__
+# __The Clifford Layer Is the Cell Layer: The Exact Correspondence, the Two Equalities, and the Full Inventory__
 
 ## Introduction
 
@@ -22,29 +22,24 @@ One caveat, stated once. The complex statement is exact. Over $\mathbb{R}$ the s
 
 **No article is converted.** Every formula that writes a gamma gains a second equality with the cell form. The gamma stays; the cell form is added beside it. The isomorphism is what guarantees that the second equality exists, and it is exact over $\mathbb{C}$. One article in the corpus uses a larger algebra by design and is marked separately.
 
+**Three articles were patched before this pass.** The two *Conventions of the Matrix Models* articles and *$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra* already carry both notations, so they are listed with the patched articles and are not to be patched again. Duplication among them is normal: a conventions article fixes the frame, the representation article derives it, and the second corpus repeats the first so that each corpus stands alone.
+
 What differs between articles is only the length of the second equality:
 
-- **Level 1 — one cell per gamma.** Each gamma in the formula is a single cell, so the second equality is a single sandwich $a\,\psi\,b$. No sum, no trace, no frame. The gamma side and the cell side have the same length.
-- **Level 2 — several cells.** The formula contains an operator, a trace, or the frame as a set, so the second equality is a sum of cells, a linear functional on cells, or a list. It is longer than the gamma side and no shorter form exists.
+- **One-term equality — one cell per gamma.** Each gamma in the formula is a single cell, so the second equality is a single sandwich $a\,\psi\,b$. No sum, no trace, no frame. The gamma side and the cell side have the same length.
+- **Multi-term equality — several cells.** The formula contains an operator, a trace, or the frame as a set, so the second equality is a sum of cells, a linear functional on cells, or a list. It is longer than the gamma side and no shorter form exists.
 
 The gamma matrices are a coordinate on the cell algebra. They are never a third algebra. An article that writes them is a cell-algebra article in a particular basis, and every display of it can carry the cell equality underneath.
 
-**The counts.** A scan of the 403 physics articles and the 2,390 mathematics articles counts an article when its text contains $\gamma^0$, $\gamma^1$, $\gamma^3$, $\gamma^\mu$, $\gamma^\nu$, $\gamma_5$ or $\gamma^5$, or the phrase "gamma matrices". The ambiguous $\gamma^2$ is excluded: it is also the Lorentz factor, a spectral projector and the Euler constant. Two files that the scan caught were false positives and are removed by hand: a notation list that mentions the macro `\slashed`, and a field exercise where $\gamma$ is only the Lorentz factor.
+**The counts.** A scan of the 403 physics articles and the 2,390 mathematics articles counts an article when its text contains any $\gamma$ carrying a Dirac index, upper or lower and in any position, or the phrase "gamma matrix" in either number. A bare $\gamma$ with no index is excluded: it is also the Lorentz factor, a spectral projector and the Euler constant. Two files that a looser scan caught are false positives and are removed by hand: a notation list that mentions the retired macro `\slashed`, and a field exercise where $\gamma$ is only the Lorentz factor.
 
-| measure | mathematics | physics |
-|---|---:|---:|
-| articles in the corpus | 2,390 | 403 |
-| gamma users | **20** | **86** |
-| Level 1 — pure biquaternion is enough | 6 | 46 |
-| Level 2 — the cell algebra is needed | 14 | 39 |
-| uses an algebra larger than the cell algebra | 0 | 1 |
-| write an explicit gamma-matrix display | 4 | 22 |
+The scan finds **108** gamma-using articles, **20** in mathematics and **88** in physics. Three of them are already patched and are listed only in §*The Patched Articles*; the other **105** form the inventory, where **52** carry a one-term equality, **52** a multi-term equality, and **1** lies outside the cell algebra. The table with the patched row, the in-cell row and the dagger row is §*The Counts*.
 
-The split is a judgment about the subject of each article, not about its symbol count. An article with eighty gammas can be Level 1, and an article with two can be Level 2. The tables below give the reason for every row.
+The split is a judgment about the subject of each article, not about its symbol count. An article with eighty gammas can have a one-term equality, and an article with two can have a multi-term one. The tables below give the reason for every row.
 
 ## The Correspondence
 
-**The sixteen products.** The products of the five generators are the sixteen cells, each with a coefficient of unit modulus. The table is the dictionary in both directions.
+**The sixteen products.** The products of the five generators are the sixteen cells, each with a coefficient of unit modulus. The table is the dictionary in both directions. Over $\mathbb{R}$ the two sides are the opposite forms, $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
 
 | product | cell | product | cell |
 |---|---|---|---|
@@ -59,17 +54,15 @@ The split is a judgment about the subject of each article, not about its symbol 
 
 The five generators are the first five rows, each equal to $i$ times a cell, and every cell is a product of generators up to the phase shown. A calculation written in cells is therefore a calculation written in gammas, and the passage between the two is a substitution of notation, in either direction.
 
-**Real forms.** The complexified Clifford algebra and the complex cell algebra are the same algebra. Over $\mathbb{R}$ the generators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$; the dictionary map of *The Dirac Algebra and Biquaternions — A Dictionary* is the real-linear comparison that carries one into the other. Nothing in the corpus depends on the real form, because every gamma statement in it is complex-linear.
-
-**The Level 1 dictionary.** When the article needs no general cell, the generators act as fixed sandwiches. With $L_a(\psi)=a\psi$ and $R_b(\psi)=\psi b$,
+**The one-term dictionary.** When the article needs no general cell, the generators act as fixed sandwiches. With $L_a(\psi)=a\psi$ and $R_b(\psi)=\psi b$,
 $$
 \gamma^0\psi=\psi\,(i\vec e_x),\qquad
 \gamma^k\psi=i\vec e_k\,\psi\,\vec e_y,\qquad
 \gamma_5\psi=-i\,\psi\,\vec e_z .
 $$
-Each is a product of the spinor with fixed units, on the left, on the right, or both. That is pure biquaternion notation: no array, no operator symbol, no trace.
+Each is a product of the spinor with fixed units, on the left, on the right, or both. That is pure biquaternion notation: no array, no operator symbol, no trace. Each line was checked numerically on random states; the residual is zero.
 
-**The Level 2 dictionary.** When the article needs a general cell, it writes $T_{a,b}=L_aR_b$ and never a matrix. The cell product is $T_{a,b}T_{c,d}=T_{ac,db}$, and the trace over the carrier is the regular trace of the pair. A gamma chain is then a product of five or fewer generators, hence one cell up to phase, and a trace of a gamma chain is a trace of a cell.
+**The multi-term dictionary.** When the article needs a general cell, it writes $T_{a,b}=L_aR_b$ and never a matrix. The cell product is $T_{a,b}T_{c,d}=T_{ac,db}$, and the trace over the carrier is the regular trace of the pair. A gamma chain is then a product of five or fewer generators, hence one cell up to phase, and a trace of a gamma chain is a trace of a cell.
 
 ## The Method: A Second Equality, Not a Replacement
 
@@ -85,14 +78,9 @@ an identity in $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ written beside the origin
 2. A sum of generators is a sum of cells. Keep the sum. Collapsing it into one cell is possible only when the terms cancel, and usually they do not.
 3. A trace is a linear functional on cells. For one cell $\operatorname{tr}T_{a,b}=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$, so the trace of a gamma chain is four times a product of scalar parts.
 
-**Worked examples.** Each line below was checked numerically on random states; the residual is zero.
+**Worked examples.**
 
-*The generators.* With $T_{a,b}\psi=a\psi b$ and $L_{e_t}=R_{e_t}=\mathbf 1$,
-$$
-\gamma^0\psi=i\psi e_x,\qquad
-\gamma^k\psi=i e_k\,\psi\,e_y,\qquad
-\gamma_5\psi=-i\psi e_z .
-$$
+*The generators.* With $T_{a,b}\psi=a\psi b$ and $L_{e_t}=R_{e_t}=\mathbf 1$, the sandwiches are those of the one-term dictionary, $\gamma^0\psi=i\psi e_x$, $\gamma^k\psi=i e_k\,\psi\,e_y$ and $\gamma_5\psi=-i\psi e_z$.
 
 *A product.* From the table, $\gamma^0\gamma^1=T_{e_x,e_z}$, hence $\gamma^0\gamma^1\psi=e_x\psi e_z$.
 
@@ -136,7 +124,7 @@ Tracelessness is automatic: the coefficient of every generator is $\pm i$, whose
 - If the cell side needs a general cell, name $a$ and $b$ explicitly on the first use.
 - Do not rewrite the prose beyond one apposition. The text still speaks of gamma matrices; the display carries the second reading, and a name-only mention takes the cell in parentheses. An article is enriched when its formulas are, not when its vocabulary is.
 
-**Name-only mentions.** A mention that carries a structural statement — a frame, a grading, a parity element — keeps its gamma word and gains the cell in apposition; thirteen articles were patched this way. A mention that is only a pointer or a statement of scope is deleted, and its row leaves the inventory; four articles were treated this way. The list is §*The Patched Articles*.
+**Name-only mentions.** A mention that carries a structural statement — a frame, a grading, a parity element — keeps its gamma word and gains the cell in apposition; a mention that is only a pointer or a statement of scope is deleted. The rule, the counts and the list are in §*The Patched Articles*.
 
 **The cost is the number of terms.** The length of the second equality is what Parts I and II count.
 
@@ -150,50 +138,48 @@ Tracelessness is automatic: the coefficient of every generator is $\pm i$, whose
 | $\operatorname{tr}$ | $4\,\mathrm{Sc}\otimes\mathrm{Sc}$ | 1 functional |
 | the frame, Pin, grading | a list or a group | many |
 
-A one-term row is Level 1. A multi-term row is Level 2. No row is impossible.
+A one-term row is the one-term equality. A multi-term row is the multi-term equality. No row is impossible.
 
-**The one literal gap.** Over $\mathbb{C}$ the identity is exact. Over $\mathbb{R}$ the generators span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$; the two are not isomorphic, and the equality requires the complexification. An article that uses a real structure — $C$, Majorana, CPT — must therefore state the form, and its second equality is a statement about the complexification, not a substitution inside the real algebra. That is what the dagger marks in Part II.
+**The one literal gap.** Over $\mathbb{C}$ the identity is exact. Over $\mathbb{R}$ the generators span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$; the two are not isomorphic, and the equality requires the complexification. An article that uses a real structure — $C$, Majorana, CPT — must therefore state the form, and its second equality is a statement about the complexification, not a substitution inside the real algebra. No computation in the corpus depends on which form is written; the requirement is bookkeeping, and that is what the dagger marks in Part II.
 
 ## Part I — The Mathematics Articles
 
-**Twenty articles.** Fourteen need the cell algebra as an object; six are already pure biquaternion, with a gamma only in a comparison. The list is the $M_4(\mathbb{C})$ layer and its immediate neighbours, and nothing else. The last column says how the article's gammas read once the dictionary is applied: as biquaternion elements at Level 1, as cells at Level 2. Rows follow the order of `maths.md`, and an italic row marks the category.
+**Eighteen articles.** Twelve need the cell algebra as an object; six are already pure biquaternion, with a gamma only in a comparison. The two patched articles of the mathematics corpus, *Conventions of the Matrix Models* and *$M_4(\mathbb{C})$ Representation*, are listed only in §*The Patched Articles*. The list is the $M_4(\mathbb{C})$ layer and its immediate neighbours, and nothing else. The last column says how the article's gammas read once the dictionary is applied: as biquaternion elements for the one-term equality, as cells for the multi-term equality. Rows follow the order of `maths.md`, and an italic row marks the category.
 
-| article | $\gamma$ | level | note |
+| article | $\gamma$ | equality | note |
 |---|---:|---|---|
 | *— Introduction and Conventions —* | | | |
-| [Conventions of the Matrix Models](../articles_maths/conventions-of-the-matrix-models.html) | 24 | 2 | both notations, with the dictionary |
 | *— Symmetric Algebras —* | | | |
-| [The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System](../articles_maths/the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html) | 11 | 2 | traces of gamma products |
+| [The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System](../articles_maths/the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html) | 11 | multi | traces of gamma products |
 | *— Algebras with a degree-2 form —* | | | |
-| [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) | 11 | 1 | $\mathrm{Cl}(3,0)$ mapped to the quaternion units |
-| [The Number Systems as Clifford Algebras](../articles_maths/the-number-systems-as-clifford-algebras.html) | 5 | 1 | the isomorphism $\gamma_\mu\mapsto i\vec e_\mu$ is the subject |
+| [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) | 11 | one | $\mathrm{Cl}(3,0)$ mapped to the quaternion units |
+| [The Number Systems as Clifford Algebras](../articles_maths/the-number-systems-as-clifford-algebras.html) | 5 | one | the isomorphism $\gamma_\mu\mapsto i\vec e_\mu$ is the subject |
 | *— Sesqualgebras with a degree-2 form —* | | | |
-| [Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint](../articles_maths/spinor-adjoints-and-the-dirac-adjoint-with-hermitian-adjoint.html) | 2 | 2 | the Dirac adjoint and $\gamma_5$ |
+| [Spinor Adjoints and the Dirac Adjoint with Hermitian Adjoint](../articles_maths/spinor-adjoints-and-the-dirac-adjoint-with-hermitian-adjoint.html) | 2 | multi | the Dirac adjoint and $\gamma_5$ |
 | *— Analysis on Algebras —* | | | |
-| [The Dirac–Kähler Equation](../articles_maths/the-dirac-kahler-equation.html) | 2 | 2 | gamma matrices of the Kähler equation |
+| [The Dirac–Kähler Equation](../articles_maths/the-dirac-kahler-equation.html) | 2 | multi | gamma matrices of the Kähler equation |
 | *— Geometry on Algebras —* | | | |
-| [Curves and Surfaces in the Biquaternion Moving Frame](../articles_maths/curves-and-surfaces-in-the-biquaternion-moving-frame.html) | 9 | 1 | $\gamma_\mu=i\vec e_\mu$; the moving frame is $\mathbb{B}$ |
+| [Curves and Surfaces in the Biquaternion Moving Frame](../articles_maths/curves-and-surfaces-in-the-biquaternion-moving-frame.html) | 9 | one | $\gamma_\mu=i\vec e_\mu$; the moving frame is $\mathbb{B}$ |
 | *— Biquaternions —* | | | |
-| [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) | 4 | 2 | $\chi$ mapped to $\gamma_5$ in $M_4$ |
-| [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html) | 114 | 2 | the cells and the frame; the reference article |
-| [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html) | 14 | 1 | the envelope $\mathrm{Cl}=\mathbb{B}\oplus\mathbb{B}\xi$; versors are $\mathbb{B}$ elements |
+| [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html) | 4 | multi | $\chi$ mapped to $\gamma_5$ in $M_4$ |
+| [Biquaternion Versors and the Orthogonal Group](../articles_maths/biquaternion-versors-and-the-orthogonal-group.html) | 14 | one | the envelope $\mathrm{Cl}=\mathbb{B}\oplus\mathbb{B}\xi$; versors are $\mathbb{B}$ elements |
 | *— Biquaternion Algebraic Structures —* | | | |
-| [The Fierz–Kofink Identities and the Classification of Spinors](../articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html) | 48 | 2 | the sixteen bilinears and their completeness |
+| [The Fierz–Kofink Identities and the Classification of Spinors](../articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html) | 48 | multi | the sixteen bilinears and their completeness |
 | *— Split-Biquaternions —* | | | |
-| [Complex Split Biquaternions and the Clifford Algebra Cl(3)](../articles_maths/complex-split-biquaternions-and-the-clifford-algebra-cl3.html) | 10 | 1 | $\mathrm{Cl}(3)$ and the split biquaternions |
-| [Split-Biquaternion Algebraic Element Representations](../articles_maths/split-biquaternion-algebraic-element-representations.html) | 6 | 1 | $\mathrm{Cl}(0,3)$ mapped to split biquaternions |
+| [Complex Split Biquaternions and the Clifford Algebra Cl(3)](../articles_maths/complex-split-biquaternions-and-the-clifford-algebra-cl3.html) | 10 | one | $\mathrm{Cl}(3)$ and the split biquaternions |
+| [Split-Biquaternion Algebraic Element Representations](../articles_maths/split-biquaternion-algebraic-element-representations.html) | 6 | one | $\mathrm{Cl}(0,3)$ mapped to split biquaternions |
 | *— $M_4(\mathbb{C})$ —* | | | |
-| [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](../articles_maths/the-two-sided-operators-method-to-build-m4c.html) | 15 | 2 | constructs $M_4$ from $L$ and $R$ |
-| [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](../articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html) | 68 | 2 | conjugate-linear operators on the cells |
-| [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html) | 51 | 2 | the frame and the complexified algebra |
-| [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](../articles_maths/the-z-grading-and-the-odd-slot-of-m4c.html) | 47 | 2 | the grading and the odd slot |
-| [The Vector and the Axial Traces of $M_4(\mathbb{C})$](../articles_maths/the-vector-and-the-axial-traces-of-m4c.html) | 70 | 2 | traces over the carrier |
-| [The Pin Group of the Gamma Frame](../articles_maths/the-pin-group-of-the-gamma-frame.html) | 26 | 2 | Pin from the frame |
-| [The Clifford Group and the Frame Stabiliser](../articles_maths/the-clifford-group-and-the-frame-stabiliser.html) | 26 | 2 | the frame stabiliser |
+| [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](../articles_maths/the-two-sided-operators-method-to-build-m4c.html) | 15 | multi | constructs $M_4$ from $L$ and $R$ |
+| [The Star and the Conjugate-Linear Operators of $M_4(\mathbb{C})$](../articles_maths/the-star-and-the-conjugate-linear-operators-of-m4c.html) | 68 | multi | conjugate-linear operators on the cells |
+| [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html) | 51 | multi | the frame and the complexified algebra |
+| [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](../articles_maths/the-z-grading-and-the-odd-slot-of-m4c.html) | 47 | multi | the grading and the odd slot |
+| [The Vector and the Axial Traces of $M_4(\mathbb{C})$](../articles_maths/the-vector-and-the-axial-traces-of-m4c.html) | 70 | multi | traces over the carrier |
+| [The Pin Group of the Gamma Frame](../articles_maths/the-pin-group-of-the-gamma-frame.html) | 26 | multi | Pin from the frame |
+| [The Clifford Group and the Frame Stabiliser](../articles_maths/the-clifford-group-and-the-frame-stabiliser.html) | 26 | multi | the frame stabiliser |
 
 ## Part II — The Physics Articles
 
-**Eighty-six articles.** Forty-six have a one-term second equality: each gamma in them is a fixed sandwich. Thirty-nine need several terms, because the frame, the trace, the grading or the representation is the subject. One uses an algebra larger than the cell algebra and is listed separately. Rows follow the order of `physics.md`, and an italic row marks the category. The two levels are tabled apart, so one category can appear in both.
+**Eighty-seven articles.** Forty-six have a one-term second equality: each gamma in them is a fixed sandwich. Forty need several terms, because the frame, the trace, the grading or the representation is the subject. One uses an algebra larger than the cell algebra and is listed separately. The last physics article, *Conventions of the Matrix Models* (physics), is patched and is listed only in §*The Patched Articles*. Rows follow the order of `physics.md`, and an italic row marks the category. The two equalities are tabled apart, so one category can appear in both.
 
 **What a one-term equality looks like.** A gamma is a cell, and a cell acts by two multiplications. In the canonical frame
 $$
@@ -201,9 +187,9 @@ $$
 \gamma^k\psi=i e_k\,\psi\,e_y,\qquad
 \gamma_5\psi=-i\psi e_z .
 $$
-Each line is a product of the spinor with fixed units: on the right for $\gamma^0$ and $\gamma_5$, on both sides for the three spacelike generators. The multipliers do not depend on the spinor, on the momentum, or on the state. That is Level 1. Under the display, the second line writes $\psi$, $e_x$, $e_y$, $e_z$ and gives each gamma one of the three forms. It needs no $4\times4$ array, no general $T_{a,b}$ and no trace over a carrier. The Dirac equation, its plane-wave solutions, the chiral projectors, the non-relativistic limit and the bound-state computations all fall here, because every gamma in them is one of the three lines above.
+Each line is a product of the spinor with fixed units: on the right for $\gamma^0$ and $\gamma_5$, on both sides for the three spacelike generators. The multipliers do not depend on the spinor, on the momentum, or on the state. That is the one-term equality. Under the display, the second line writes $\psi$, $e_x$, $e_y$, $e_z$ and gives each gamma one of the three forms. It needs no $4\times4$ array, no general $T_{a,b}$ and no trace over a carrier. The Dirac equation, its plane-wave solutions, the chiral projectors, the non-relativistic limit and the bound-state computations all fall here, because every gamma in them is one of the three lines above.
 
-Level 1 is a property of the content, not of the current typesetting. Several Level 1 articles still print a gamma block in a comparison or an appendix, and it stays there; the note in the table says what the cell equality under it is.
+The one-term equality is a property of the content, not of the current typesetting. Several one-term articles still print a gamma block in a comparison or an appendix, and it stays there; the note in the table says what the cell equality under it is.
 
 **What makes the equality longer.** Four subjects, and each one adds terms rather than removing the gammas:
 
@@ -212,13 +198,13 @@ Level 1 is a property of the content, not of the current typesetting. Several Le
 - **The grading and the odd slot.** The $\mathbb{Z}$-grading, the $\mathbb{Z}_2$ fermion parity, the superalgebra reading, the odd extension, the nilpotent element. These articles need the decomposition of the sixteen cells into even and odd, which is a statement about the cell algebra.
 - **The representation.** The spinor module and its Lorentz action, spin $3/2$, triality, the spinor representation of the Lorentz group, spacetime algebra as the subject. The representation is the object, and the gammas are its matrix units.
 
-Two further articles are Level 2 for a different reason: *Matter Makes Space* and *The Biquaternion Basis of a Unified-Field Fibre Bundle* audit an external construction, so the external gamma generators must be exhibited and compared.
+Two further articles have a multi-term equality for a different reason: *Matter Makes Space* and *The Biquaternion Basis of a Unified-Field Fibre Bundle* audit an external construction, so the external gamma generators must be exhibited and compared.
 
 **What the dagger means.** A dagger marks a statement whose second equality holds but whose proof does not transfer in one step. The four groups are the trace, the index, the real structure and the representation theorem. In each, the symbols can be replaced by cells, but the argument uses a property of the matrix representation that has no one-line cell counterpart. The trace of $\gamma_5$ against a heat kernel, the Fredholm index of the Dirac operator, the charge-conjugation matrix that makes a spinor real, and the spin-statistics link between spin and bracket each require the proof to be rebuilt. The dagger is a statement about the proof, not about the physics: the result stands, and its biquaternion form is a computation still to be written.
 
-**The counts do not follow the symbol count.** *The Dirac Algebra and Biquaternions — A Dictionary* has 287 gammas and is Level 2, because the dictionary is its subject. *Maxwell's Equations in Biquaternionic Form* has 3 gammas, all in a Further Reading citation, and is Level 1. The classification follows what the article does with the algebra, not how often it writes it.
+**The counts do not follow the symbol count.** *The Dirac Algebra and Biquaternions — A Dictionary* has 287 gammas and a multi-term equality, because the dictionary is its subject. *Maxwell's Equations in Biquaternionic Form* has 3 gammas, all in a Further Reading citation, and a one-term equality. The classification follows what the article does with the algebra, not how often it writes it.
 
-### Level 1 — pure biquaternion (46)
+### The one-term equality (46)
 
 | article | $\gamma$ | the second equality |
 |---|---:|---|
@@ -275,14 +261,14 @@ Two further articles are Level 2 for a different reason: *Matter Makes Space* an
 | [The W and Z Bosons in Biquaternionic Form](../articles_physics/the-w-and-z-bosons-in-biquaternionic-form.html) | 7 | $\gamma$ in the quoted couplings |
 | [Confinement and the Loss of Partonic Information in Biquaternionic Form](../articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html) | 0 | the Dirac operator, fixed sandwiches |
 
-### Level 2 — the cell algebra (39)
+### The multi-term equality (40)
 
 | article | $\gamma$ | what remains |
 |---|---:|---|
 | *— Biquaternion Universe —* | | |
 | [What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions](../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html) | 2 | the catalogue of obstructions |
 | *— Biquaternion Universe Conventions —* | | |
-| [Conventions of the Matrix Models](../articles_physics/conventions-of-the-matrix-models.html) | 92 | both notations, with the dictionary |
+| [Conventions of the Operators and the Calculus](../articles_physics/conventions-of-the-operators-and-the-calculus.html) | 5 | the frame named as five of the sixteen operators |
 | *— Biquaternion Physical Interpretation of Mathematics —* | | |
 | [The Square-Zero Element: Nilpotency as Mode, Differential and Supercharge](../articles_physics/the-square-zero-element-nilpotency-as-mode-differential-and-supercharge.html) | 3 | nilpotency and the odd slot |
 | *— Biquaternion Electromagnetism —* | | |
@@ -305,6 +291,7 @@ Two further articles are Level 2 for a different reason: *Matter Makes Space* an
 | *— Biquaternion Quantum Fields —* | | |
 | [The Grading, Fermion Parity and the Two Sectors in Biquaternionic Form](../articles_physics/the-grading-and-fermion-parity-in-biquaternionic-form.html) | 23 | the $\mathbb{Z}_2$ grading and the odd slot |
 | [The Superalgebra Reading and the Odd Extension in Biquaternionic Form](../articles_physics/the-superalgebra-reading-and-the-odd-extension-in-biquaternionic-form.html) | 13 | the graded commutator |
+| [The LSZ Reduction Formula in Biquaternionic Form](../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html) | 1 | the slash as a sum of four cells |
 | [The Spin–Statistics Theorem in Biquaternionic Form](../articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.html) | 19 | † the representation theorem |
 | [The CPT Theorem in Biquaternionic Form](../articles_physics/the-cpt-theorem-in-biquaternionic-form.html) | 140 | † the antiunitary operations |
 | [The Trace Anomaly in Biquaternionic Form](../articles_physics/the-trace-anomaly-in-biquaternionic-form.html) | 1 | † the trace of the Dirac operator |
@@ -334,19 +321,21 @@ Two further articles are Level 2 for a different reason: *Matter Makes Space* an
 |---|---:|---|
 | [Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions](../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html) | 2 | $\mathrm{Cl}(7)$ bioctonions; only the leptonic $\mathrm{Cl}(3)$ factor is $\mathbb{B}$ |
 
-This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article studies a complex split bioctonion algebra, $\mathrm{Cl}(7)$, and the leptonic $\mathrm{Cl}(3)$ factor alone is $\mathbb{B}$. It is listed for completeness. Its cell equality would need a larger Clifford algebra, not the sixteen cells, and it is not counted among the 105 in-scope articles.
+This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article studies a complex split bioctonion algebra, $\mathrm{Cl}(7)$, and the leptonic $\mathrm{Cl}(3)$ factor alone is $\mathbb{B}$. It is listed for completeness. Its cell equality would need a larger Clifford algebra, not the sixteen cells, and it is not counted among the 107 in-scope articles.
 
 ## The Patched Articles
 
-**The pass.** A mention that carries a structural statement is kept, and the cell is written beside it. A mention that is only a pointer, a name, or a statement of scope is removed. Thirteen articles were patched, six in mathematics and seven in physics; four articles were purged of their gamma mention. Rows follow the order of the menus, and an italic row marks the category.
+**The pass.** A mention that carries a structural statement is kept, and the cell is written beside it. A mention that is only a pointer, a name, or a statement of scope is removed. Sixteen articles are patched, eight in mathematics and eight in physics. Thirteen were patched in this pass, six in mathematics and seven in physics, and the other three are the standing sources that were patched before it. Four articles were purged of their gamma mention. Rows follow the order of the menus, and an italic row marks the category.
 
 ### The Mathematics Articles
 
 | article | the gamma that stays | the cell added |
 |---|---|---|
 | *— Introduction and Conventions —* | | |
+| [Conventions of the Matrix Models (mathematics)](../articles_maths/conventions-of-the-matrix-models.html) | the five generators, the sixteen products and the comparison map | $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$; the sixteen products are the sixteen cells |
 | [Conventions of the Operators and the Differential Calculus](../articles_maths/conventions-of-the-operators-and-the-differential-calculus.html) | the gamma frame is five of the sixteen operators, up to $i$ | $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
 | *— Biquaternions —* | | |
+| [$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra](../articles_maths/m4c-representation-the-two-sided-operators-on-the-biquaternion-algebra.html) | the frame derived from the grading; the canonical arrays | $\gamma^0=iT_{e_t,e_x}$, $\gamma^1=iT_{e_x,e_y}$, $\gamma^2=iT_{e_y,e_y}$, $\gamma^3=iT_{e_z,e_y}$, $\gamma_5=-iT_{e_t,e_z}$ |
 | [The Endomorphisms of the Biquaternion Algebra](../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html) | a gamma frame is a further choice; the view supplies no gamma frame | five of the sixteen cells, up to $i$; no five cells singled out up to $i$ |
 | *— $M_4(\mathbb{C})$ —* | | |
 | [The Matrix Algebra $M_4(\mathbb{C})$](../articles_maths/the-matrix-algebra-m4c.html) | it chooses no gamma frame | no five of the sixteen cells $T_{\mu\nu}$ are singled out up to $i$ |
@@ -359,6 +348,7 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 | article | the gamma that stays | the cell added |
 |---|---|---|
 | *— Biquaternion Universe Conventions —* | | |
+| [Conventions of the Matrix Models (physics)](../articles_physics/conventions-of-the-matrix-models.html) | the same five generators and the same sixteen products | the same five cells, repeated for this corpus |
 | [Conventions of the Operators and the Calculus](../articles_physics/conventions-of-the-operators-and-the-calculus.html) | the gamma frame | $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
 | *— Biquaternion Universe —* | | |
 | [What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions](../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html) | the parity-reflecting frame element $\gamma^0$; $\gamma^0$ anticommutes with the grading | $\gamma^0=iT_{tx}$; $iT_{tx}$ anticommutes with it |
@@ -368,18 +358,18 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 | [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector](../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html) | no gamma matrix enters | no cell $T_{\mu\nu}$ enters |
 | *— Biquaternion Quantum Fields —* | | |
 | [The Trace Anomaly in Biquaternionic Form](../articles_physics/the-trace-anomaly-in-biquaternionic-form.html) | the $\gamma^\mu$; gamma matrices | the five cells $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$; the cells $T_{\mu\nu}$ |
-| [The LSZ Reduction Formula in Biquaternionic Form](../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html) | $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | $=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ |
+| [The LSZ Reduction Formula in Biquaternionic Form](../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html) | $\gamma^\mu p_\mu=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | $=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ |
 | [The S-Matrix in Biquaternionic Form](../articles_physics/the-s-matrix-in-biquaternionic-form.html) | $\bar\psi=\psi^\dagger\gamma^0$; the slash | $=i\psi^\dagger T_{tx}$; $=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ |
 
 **Removed, not patched.** Four mentions carried no structure. In *The Coefficient Matrix of a Two-Sided Operator* the Further Reading line loses "and the gamma frame". In *Biquaternion Physical Interpretation of Chirality* it loses "stated there in the $\gamma_5$ language". In *The Klein–Gordon Propagator and Its Green's Functions* the sentence loses "and no gamma matrix appears". In *The Spinor Representation of the Lorentz Group* the two prose mentions become "the Dirac matrices", and the comparison with $\tfrac14[\gamma^a,\gamma^b]$ becomes "the Lorentz algebra". The first article is not in the inventory; the other three rows leave Part II, and the counts are adjusted.
 
 ## What the Split Says
 
-**The correspondence is an identity, not a comparison.** The sixteen cells are the sixteen gamma products up to phase, and the cell algebra is the complexified Clifford algebra. A gamma calculation is therefore a cell calculation in a particular basis, and a cell calculation is a biquaternion calculation with two actions. Nothing is imported at Level 2 except the coordinate: $T_{a,b}=L_aR_b$ is the composition of two multiplications in $\mathbb{B}$.
+**The correspondence is an identity, not a comparison.** The sixteen cells are the sixteen gamma products up to phase, and the cell algebra is the complexified Clifford algebra. A gamma calculation is therefore a cell calculation in a particular basis, and a cell calculation is a biquaternion calculation with two actions. Nothing is imported at the multi-term equality except the coordinate: $T_{a,b}=L_aR_b$ is the composition of two multiplications in $\mathbb{B}$.
 
 **The earlier count of 19 unrewritable articles was wrong.** It counted what the left action $\mathbb{B}_L$ can reach, not what the algebra can reach. The odd part is outside $\mathbb{B}_L$ and inside $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$; an article about parity, charge conjugation or the grading is an article about the second action, not an article about a foreign algebra.
 
-**Level 1 is the common case, not the goal.** Fifty-two of the 105 in-scope articles carry a one-term equality. The remaining fifty-three carry several terms, and that is a statement about their subject, not about their possibility.
+**The one-term equality is the common case, not the goal.** Fifty-two of the 105 inventory articles carry a one-term equality and fifty-two carry several terms; the last one lies outside the cell algebra. The split is a statement about each subject, not about its possibility.
 
 **The dagger entries are recomputations, not obstructions.** Thirteen articles state a result whose proof uses a trace over the four-dimensional carrier, a Fredholm index, or a real structure. The statement gains its cell equality; the proof must be redone in the cell algebra. They fall into four groups:
 
@@ -388,21 +378,21 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 - **The real structure.** *The Majorana Equation*, *The Neutrino and Majorana Fermions*.
 - **The representation theorems.** *The CPT Theorem*, *The Spin–Statistics Theorem*, *Fermion Doubling and Nielsen–Ninomiya*.
 
-**The real forms are the only literal gap.** Over $\mathbb{C}$ the identity is exact. Over $\mathbb{R}$ the generators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the cells span $\mathrm{Cl}_{3,1}(\mathbb{R})$; the dictionary map carries one into the other, and no computation in the corpus depends on which form is written. A future article that needs a real structure should state the form explicitly.
-
 ## The Counts
 
 | | mathematics | physics | total |
 |---|---:|---:|---:|
 | articles in the corpus | 2,390 | 403 | 2,793 |
-| gamma users | 20 | 86 | 106 |
-| in the cell algebra | 20 | 85 | 105 |
-| Level 1 — pure biquaternion | 6 | 46 | 52 |
-| Level 2 — the cell algebra | 14 | 39 | 53 |
+| gamma users | 20 | 88 | 108 |
+| already patched, §*The Patched Articles* | 2 | 1 | 3 |
+| in the inventory | 18 | 87 | 105 |
+| in the cell algebra | 18 | 86 | 104 |
+| one-term equality | 6 | 46 | 52 |
+| multi-term equality | 12 | 40 | 52 |
 | uses a larger algebra | 0 | 1 | 1 |
 | of which dagger (proof to rebuild) | 0 | 13 | 13 |
-| explicit gamma-matrix display | 4 | 22 | 26 |
+| explicit gamma-matrix display | 2 | 21 | 23 |
 
 ## Conclusion
 
-**The Clifford layer is the cell layer.** The five generators are five cells, the sixteen products are the sixteen cells, and the cell algebra is the biquaternion algebra acting on itself on both sides. Every article in the cell algebra can therefore carry the cell equality beside its gammas: 52 with one term, 53 with several, and 13 of the latter with a proof to recompute. One article uses the bioctonions and lies outside the sixteen cells by construction. Nothing is deleted from the formulas: the gamma side stays, and the cell side is added. The gamma matrices are a basis, not a boundary. The odd sector is a second action, not a foreign body.
+**The Clifford layer is the cell layer.** The five generators are five cells, the sixteen products are the sixteen cells, and the cell algebra is the biquaternion algebra acting on itself on both sides. Every article in the cell algebra can therefore carry the cell equality beside its gammas: 52 with one term, 52 with several, and 13 of the latter with a proof to recompute. One article uses the bioctonions and lies outside the sixteen cells by construction. Nothing is deleted from the formulas: the gamma side stays, and the cell side is added. The gamma matrices are a basis, not a boundary. The odd sector is a second action, not a foreign body.

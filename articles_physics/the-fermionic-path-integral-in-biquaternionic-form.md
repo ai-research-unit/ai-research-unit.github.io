@@ -40,7 +40,7 @@ Three properties of the action are used below.
 
 **Its phase is central.** $iS$ is a central element of $\mathbb{C}_{\mathbb{B}}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.
 
-**Its kinetic part is Hermitian and its mass part is the linear chiral pair.** $\bar\psi\,i\not\partial\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the *Euclidean* continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.
+**Its kinetic part is Hermitian and its mass part is the linear chiral pair.** $\bar\psi\,i\gamma^{\mu}\partial/\partial x^{\mu}\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the *Euclidean* continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.
 
 ### Sources
 
@@ -78,7 +78,7 @@ $$
 S_0=\sum_{a,b}\bar\psi_a M_{ab}\psi_b ,
 $$
 
-where $M$ is the matrix of the bilinear (for the field, the operator $i\not\partial-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:
+where $M$ is the matrix of the bilinear (for the field, the operator $i\gamma^{\mu}\partial/\partial x^{\mu}-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:
 
 $$
 \boxed{\;\int\prod_ad\bar\psi_a\,d\psi_a\;\exp(-\bar\psi M\psi)=\det M\;}.
@@ -123,7 +123,7 @@ to machine precision (ratio $1+0i$), and the four two-point amplitudes divided b
 **For the field** the same computation gives the free generating functional
 
 $$
-Z_0[\eta,\bar\eta]=\det\big(i\not\partial-m\big)\;
+Z_0[\eta,\bar\eta]=\det\big(i\gamma^{\mu}\partial/\partial x^{\mu}-m\big)\;
 \exp\Big[\,i\!\int d^4x\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big],
 $$
 
@@ -134,13 +134,13 @@ where $S_F$ is the propagator amplitude of the companion article in configuratio
 Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, the momentum-space kernel is
 
 $$
-S_F(p)=-\frac{i(\not p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
+S_F(p)=-\frac{i(\gamma^{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$
 
 the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict'$ axis of the material sector:
 
 $$
-\det\big(i\not\partial-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
+\det\big(i\gamma^{\mu}\partial/\partial x^{\mu}-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
 $$
 
 formally, with the standard subtractions understood. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.
@@ -246,7 +246,7 @@ The phase of the determinant is where the fermionic integral's analytic content 
 
 The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ and the sources odd. The phase is central and lies in $\mathbb{M}_-$ along the $ict'$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.
 
-The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[\bar\eta M^{-1}\eta]$; and for the field the kernel is the propagator companion's $S_F(p)=-i(\not p+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$.
+The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[\bar\eta M^{-1}\eta]$; and for the field the kernel is the propagator companion's $S_F(p)=-i(\gamma^{\mu} p_{\mu}+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$.
 
 For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\psi\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ offers the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\psi(\tau+\beta)=-\psi(\tau)$, verified to nine decimals and equivalent to $\omega_n=(2n+1)\pi/\beta$.
 
@@ -265,8 +265,8 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\int\prod d\bar\psi d\psi\,\exp(-\bar\psi M\psi)=\det M$ | Gaussian = determinant |
 | $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order) |
 | $Z[\eta,\bar\eta]=\det M\,\exp[\bar\eta M^{-1}\eta]$ | Free generating functional |
-| $Z_0[\eta,\bar\eta]=\det(i\not\partial-m)\exp[i\!\int\bar\eta S_F\eta]$ | Field-level free functional |
-| $S_F(p)=-\frac{i(\not p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel in the deformed-mass-shell form |
+| $Z_0[\eta,\bar\eta]=\det(i\gamma^{\mu}\partial/\partial x^{\mu}-m)\exp[i\!\int\bar\eta S_F\eta]$ | Field-level free functional |
+| $S_F(p)=-\frac{i(\gamma^{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon}$ | Kernel in the deformed-mass-shell form |
 | $\int d\psi_{2N}\cdots d\psi_1\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; source of the field-to-conjugate pairing |
 | $\exp(iS)\to \exp(-S_{\mathrm{E}})$ | Wick rotation ($ict'$ direction becomes real) |

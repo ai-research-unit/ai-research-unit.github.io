@@ -163,7 +163,7 @@ The articles are rendered with KaTeX on the page, and the following rules are ob
   commutative Jordan algebra over $\mathbb{R}$ of degree two***. A statement already displayed as a
   Theorem, a Proposition or a Proof is not bolded; the convention applies to the prose of a Remark and
   to the lead sentence of a section that states an outcome.
-- The third derivative is written `d^3/dt^3`, and the macro `\slashed` is available. The characters `|`, `{`, `}`, `<` and `>` inside mathematics need no escaping.
+- The third derivative is written `d^3/dt^3`. The macro `\slashed` is retired and is not used; a gamma contraction is written out, as *Conventions of the Matrix Models* states. The characters `|`, `{`, `}`, `<` and `>` inside mathematics need no escaping.
 - A malformed formula is rendered in red on the page rather than reported as an error, so mathematics is checked by eye and not by the absence of a warning.
 
 ## Summary

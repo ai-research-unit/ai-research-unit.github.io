@@ -23,7 +23,7 @@ The article states the index theorem as the standard result it is, derives the s
 On a four-manifold with a spin structure and a gauge bundle in a representation $R$ of the structure group, the twisted Dirac operator is
 
 $$
-\slashed{D}_R \;=\; \gamma^\mu D_\mu ,
+\mathcal{D}_R \;=\; \gamma^\mu D_\mu ,
 \qquad
 D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal A_\mu^{R} ,
 $$
@@ -31,15 +31,15 @@ $$
 with $\gamma^\mu$ the Clifford generators, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality grading $\gamma_5$ into the positive and negative chirality zero-mode spaces,
 
 $$
-\ker\slashed{D}_R \;=\; \ker^+\!\slashed{D}_R \oplus \ker^-\!\slashed{D}_R ,
+\ker\mathcal{D}_R \;=\; \ker^+\!\mathcal{D}_R \oplus \ker^-\!\mathcal{D}_R ,
 \qquad
-n_\pm=\dim\ker^\pm\!\slashed{D}_R .
+n_\pm=\dim\ker^\pm\!\mathcal{D}_R .
 $$
 
 The **index** is the difference
 
 $$
-\mathrm{ind}\,\slashed{D}_R \;=\; n_+ - n_- ,
+\mathrm{ind}\,\mathcal{D}_R \;=\; n_+ - n_- ,
 $$
 
 an integer that is invariant under continuous deformations of the connection and the metric because it is an integer-valued continuous function. In the biquaternionic framework the operator is the one built from $\tilde\nabla$; the algebraic form of the massless Dirac equation is $\tilde\nabla\psi=0$, and *The Dirac Equation in Biquaternionic Form* shows that $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ with $\Box=\partial^2/\partial Q_t^2+\Delta$, so the operator is the square root of the framework's d'Alembertian. The index is the property of this operator that the rest of the article computes.
@@ -49,7 +49,7 @@ an integer that is invariant under continuous deformations of the connection and
 For a closed even-dimensional spin manifold $M$ and a twisted Dirac operator, the index is the integral of a characteristic class,
 
 $$
-\boxed{\;\mathrm{ind}\,\slashed{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge \mathrm{A}(TM)\;},
+\boxed{\;\mathrm{ind}\,\mathcal{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge \mathrm{A}(TM)\;},
 $$
 
 where $\mathrm{ch}(E_R)$ is the Chern character of the twisted bundle and $\mathrm{A}(TM)$ is the A-roof genus of the tangent bundle. This is the Atiyah–Singer index theorem; it is standard and is transcribed here, not derived. Its power in the gauge-theoretic setting is that the right-hand side is purely topological: it depends on the bundle data and not on the shape of the connection.
@@ -57,7 +57,7 @@ where $\mathrm{ch}(E_R)$ is the Chern character of the twisted bundle and $\math
 On the flat four-dimensional slice that the framework uses, the tangent bundle is trivial and its A-roof genus is $1$ to all orders that contribute: $\mathrm{A}=1-\frac{p_1}{24}+\cdots$ requires the Pontryagin class of a curved manifold, which is absent. The index is therefore the degree-four part of the Chern character alone. With the trace in the representation $R$ and the standard normalisation, the degree-four part is proportional to $\mathrm{Tr}_R(F\wedge F)$, so that
 
 $$
-\boxed{\;\mathrm{ind}\,\slashed{D}_R \;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}_R\bigl(F\wedge F\bigr)
+\boxed{\;\mathrm{ind}\,\mathcal{D}_R \;=\; \frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}_R\bigl(F\wedge F\bigr)
 \;=\; 2\,T(R)\,Ϙ\;},
 $$
 
@@ -74,9 +74,9 @@ $$
 Both are computed from the same commutation relations $[T_a,T_b]=\varepsilon_{abc}T_c$ that define $\mathrm{SU}(2)\subset\mathbb M_-$ in *Non-Abelian Gauge Fields in Biquaternionic Form*, so the group theory here is the framework's group theory. The index formula then reads
 
 $$
-\boxed{\;\mathrm{ind}\,\slashed{D}_{\text{defining}}=Ϙ ,
+\boxed{\;\mathrm{ind}\,\mathcal{D}_{\text{defining}}=Ϙ ,
 \qquad
-\mathrm{ind}\,\slashed{D}_{\text{adjoint}}=4Ϙ\;}.
+\mathrm{ind}\,\mathcal{D}_{\text{adjoint}}=4Ϙ\;}.
 $$
 
 For a self-dual configuration of charge $Ϙ=k>0$, the index is exhausted by positive-chirality modes, $n_+=k$ and $n_-=0$ in the defining representation, and $n_+=4k$ and $n_-=0$ in the adjoint. A single BPST instanton therefore supports one fermion zero mode in the doublet and four in the triplet.
@@ -84,7 +84,7 @@ For a self-dual configuration of charge $Ϙ=k>0$, the index is exhausted by posi
 **The abelian specialisation.** For the Hopf bundle over the two-sphere, the same theorem reduces to the two-dimensional statement
 
 $$
-\mathrm{ind}\,\slashed{D}_n \;=\; \frac{1}{2\pi}\int_{S^2}F \;=\; n ,
+\mathrm{ind}\,\mathcal{D}_n \;=\; \frac{1}{2\pi}\int_{S^2}F \;=\; n ,
 $$
 
 the Chern number of the bundle, which the previous article computed to be one for the minimal bundle. The number of zero modes of the Dirac operator in a charge-$n$ background is $|n|$, with the sign of $n$ giving the chirality. The two-sphere case is the simplest instance of the same counting: index equals topological charge, and the charge is a winding number of the algebra's group.
@@ -92,7 +92,7 @@ the Chern number of the bundle, which the previous article computed to be one fo
 **Boundary corrections.** On a manifold with boundary the index acquires a boundary contribution, and the theorem is replaced by the Atiyah–Patodi–Singer form
 
 $$
-\mathrm{ind}\,\slashed{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge\mathrm{A}(TM) - \frac{h+\eta(0)}{2},
+\mathrm{ind}\,\mathcal{D}_R \;=\; \int_M \mathrm{ch}(E_R)\wedge\mathrm{A}(TM) - \frac{h+\eta(0)}{2},
 $$
 
 where $h$ is the dimension of the space of boundary zero modes and $\eta(0)$ is the eta invariant of the boundary Dirac operator. The correction is a boundary term, and it is the reason a background with a nontrivial boundary can support zero modes whose count is not given by the bulk integral alone. The framework's instanton boundary is the three-sphere of *The Hopf Fibration and the Biquaternion Gauge Bundle*, and the eta invariant is a spectral invariant of the operator restricted to that boundary; its evaluation is a standard analytic computation and is not an algebraic statement about $\mathbb B$.
@@ -132,12 +132,12 @@ so the abelian index density is the framework's own invariant $I_2$ up to a cons
 The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $\mathrm{U}(1)$ gauge field whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of *The Hopf Fibration and the Biquaternion Gauge Bundle* is the case $n=1$. The twisted Dirac index is
 
 $$
-\mathrm{ind}\,\slashed{D}_n=\int_{S^2}\mathrm{ch}(L)\wedge\mathrm{A}(TS^2)=\int_{S^2}c_1(L)=n ,
+\mathrm{ind}\,\mathcal{D}_n=\int_{S^2}\mathrm{ch}(L)\wedge\mathrm{A}(TS^2)=\int_{S^2}c_1(L)=n ,
 $$
 
 since the A-roof genus of a two-manifold is $1$. The count of zero modes is therefore $|n|$, with the sign of $n$ selecting the chirality, and for $n=1$ there is exactly one zero mode. This is the standard result that a charge-$n$ background binds one fermion mode per unit charge, and it is the abelian counterpart of the $n_+=k$ count in the defining representation.
 
-The zero modes can be exhibited explicitly, and they are the framework's charged harmonics on the sphere. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article, the massless two-component equation $\slashed{D}\psi=0$ separates, and the positive-chirality solutions are the sections
+The zero modes can be exhibited explicitly, and they are the framework's charged harmonics on the sphere. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article, the massless two-component equation $\mathcal{D}\psi=0$ separates, and the positive-chirality solutions are the sections
 
 $$
 \psi_n^{(m)}=f_n^{(m)}(\theta)\,\exp(im\phi),
@@ -160,7 +160,7 @@ $$
 and the moduli space of the background has dimension $8k$, twice this number. The relation is not a coincidence. The instanton moduli are the collective coordinates, and the adjoint zero modes are the fermionic partners of those coordinates in the supersymmetric quantum physics whose ground states are the instanton states: each bosonic collective coordinate of the ADHM moduli space of *The ADHM Construction and Biquaternion Instanton Data* is paired with a fermionic zero mode, so the $8k$ bosonic coordinates of the framed moduli space correspond to $4k$ adjoint zero modes counted with one chirality and to the doubled count in the full Dirac spectrum. The index
 
 $$
-\mathrm{ind}\,\slashed{D}_{\text{adjoint}}=4k=\tfrac12\dim_{\mathbb R}\mathcal M_k
+\mathrm{ind}\,\mathcal{D}_{\text{adjoint}}=4k=\tfrac12\dim_{\mathbb R}\mathcal M_k
 $$
 
 is the precise form of this statement for $SU(2)$.
@@ -192,10 +192,10 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace |
 | $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; Dirac operator |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
-| $\slashed{D}_R=\gamma^\mu D_\mu$ | Twisted Dirac operator in representation $R$ |
-| $\gamma_5$ | Chirality grading; $\ker\slashed{D}_R=\ker^+\oplus\ker^-$ |
+| $\mathcal{D}_R=\gamma^\mu D_\mu$ | Twisted Dirac operator in representation $R$ |
+| $\gamma_5$ | Chirality grading; $\ker\mathcal{D}_R=\ker^+\oplus\ker^-$ |
 | $n_\pm$ | Dimensions of the positive/negative chirality zero-mode spaces |
-| $\mathrm{ind}\,\slashed{D}_R=n_+-n_-$ | Index of the Dirac operator |
+| $\mathrm{ind}\,\mathcal{D}_R=n_+-n_-$ | Index of the Dirac operator |
 | $\mathrm{ch}(E_R)\wedge\mathrm{A}(TM)$ | Index density; $\mathrm{A}=1$ on the flat slice |
 | $T(R)$ | Dynkin index; $T(\text{defining})=\tfrac12$, $T(\text{adjoint})=2$ |
 | $R$ | Defining (dim 2) or adjoint (dim 3) representation of $\mathrm{SU}(2)$ |
