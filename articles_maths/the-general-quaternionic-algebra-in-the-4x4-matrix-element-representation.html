@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The General Quaternionic Algebra in the $4\times4$ Left Regular Representation $\mathbb{B}_L$ — Biquaternion Universe</title>
+  <title>The General Quaternionic Algebra in the $4\times4$ Left Regular Representation — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,7 +68,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-general-quaternionic-algebra-in-the-math0-left-regular-representation-math1"><strong>The General Quaternionic Algebra in the $4\times4$ Left Regular Representation $\mathbb{B}_L$</strong></h1>
+        <h1 id="the-general-quaternionic-algebra-in-the-math0-left-regular-representation"><strong>The General Quaternionic Algebra in the $4\times4$ Left Regular Representation</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The left regular representation reads the algebra acting on itself. In the canonical frame of <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>, the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, the matrix of left multiplication is block diagonal, $I_2\otimes\mathsf M_2(\tilde Q)$, and the natural conjugation ${}^{\natural}$ is the signed reversal of the four Peirce coordinates,
 $$
@@ -118,7 +118,7 @@ $$
 \mathsf M_4^{L}(\tilde Q\star\tilde Q)=C\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}\,\mathsf M_4^{L}(\tilde Q)
 =\mathsf M_4^{L}(\tilde Q^{\natural})\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}I_4,
 $$
-because $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$. The square of the product is therefore the scalar matrix of the norm, and the determinant identity $\det\mathsf M_4^{L}(\tilde Q)^2=\langle\tilde Q\rangle_{\natural}^{4}$ returns $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$.</p>
+because $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$. The square of the product is therefore the scalar matrix of the norm, and taking determinants gives $\det\mathsf M_4^{L}(\tilde Q)^2=\langle\tilde Q\rangle_{\natural}^{4}$, in agreement with $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$.</p>
 <p><strong>The two-sided structure.</strong> The right multiplications commute with the left ones, so the sixteen products $T_{\mu\nu}=\mathsf M_4^{L}(e_\mu)\mathsf M_4^{R}(e_\nu)$ need no ordering convention. In the canonical frame the left copy is the block-diagonal family $I_2\otimes A$ and the right copy the block-scalar family $A^{\mathsf T}\otimes I_2$; they are mutual commutants, and their intersection is the scalars.</p>
 <h2 id="the-general-quaternionic-bilinear-form-in-the-regular-representation">The General Quaternionic Bilinear Form in the Regular Representation</h2>
 <p><strong>Theorem (the trace pairing).</strong> For all biquaternions,
@@ -134,14 +134,14 @@ $$
 =2\langle\tilde Q\rangle_{\natural}=2\det\mathsf M_2(\tilde Q),
 $$
 while $\det\mathsf M_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}$. The factor two is the dimension of the module: the regular trace is four times the scalar part, where the $2\times2$ trace is twice it.</p>
-<p><strong>The Gram matrix and the signature.</strong> In the coefficient basis the Gram matrix of the form is $I_4$; in the canonical frame it is the conjugate $S^{\mathsf T}I_4S$, and the signature of the realification is unchanged, $(4,4)$. The form is indefinite and non-degenerate.</p>
-<p><strong>The null set.</strong> The form vanishes exactly when $\langle\tilde Q\rangle_{\natural}=0$, that is when the block $\mathsf M_2(\tilde Q)$ is singular. The regular matrix then has rank two, and the null set is the zero-divisor cone, of real dimension $6$ in $\mathbb R^8$. It is distinct from the complex cone of the plain bilinear form.</p>
+<p><strong>The Gram matrix and the signature.</strong> In the coefficient basis the Gram matrix of the form is $I_4$; in the canonical frame it is the congruent matrix $S^{\mathsf T}I_4S$, and the signature of the realification is unchanged, $(4,4)$. The form is indefinite and non-degenerate.</p>
+<p><strong>The null set.</strong> The form vanishes exactly when $\langle\tilde Q\rangle_{\natural}=0$, that is when the block $\mathsf M_2(\tilde Q)$ is singular. The regular matrix then has rank at most two, and the null set is the zero-divisor cone, of real dimension $6$ in $\mathbb R^8$. It is not the null set of the plain form, which is $\{0\}$.</p>
 <p><strong>The automorphisms.</strong> The isometry group is the complex orthogonal group $O_4(\mathbb C)$, of complex dimension $6$, whose realification is the split group $O(4,4)$. The transposition-carrier $C(\cdot)^{\mathsf T}C^{-1}$ is an isometry, and the conjugations by the units form its inner part.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>The identity.</strong> For $\tilde Q=e_t$, $\mathsf M_4^{L}(e_t)=I_4$ and $\tfrac12\operatorname{Tr}(I_4)=2=2\langle e_t\rangle_{\natural}$; also $\det\mathsf M_4^{L}(e_t)=1=\langle e_t\rangle_{\natural}^{2}$.</p>
 <p><strong>A basis element.</strong> For $\tilde Q=\vec e_x$,
 $$
-\mathsf M_4^{L}(\vec e_x)=-\sigma_1\otimes I_2
+\mathsf M_4^{L}(\vec e_x)=-i\,I_2\otimes\sigma_1
 =\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
 $$
 and $C\mathsf M_4^{L}(\vec e_x)^{\mathsf T}C^{-1}=-\mathsf M_4^{L}(\vec e_x)$. The product theorem at $\vec e_x\star\vec e_x=\vec e_x^{\natural}\vec e_x=-\vec e_x^{2}=e_t$ reads
@@ -232,7 +232,7 @@ $$
 $$
 the plain, the quaternionic, the Hermitian and the Krein form. The factor is $\tfrac14$ where the $2\times2$ model has $\tfrac12$, because the regular trace is four times the scalar part where the $2\times2$ trace is twice it.</p>
 <h2 id="summary">Summary</h2>
-<p>The left regular representation in the canonical frame is $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The natural conjugation is the signed reversal $\mathsf M_4^{L}(\tilde Q^{\natural})=C\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the conjugate transpose. The quaternionic product is the carried product $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$, whose square is the scalar matrix $\langle\tilde Q\rangle_{\natural}I_4$. The general quaternionic bilinear form is the trace pairing $\tfrac12\operatorname{Tr}(\mathsf M_4^{L}(\tilde Q_1)C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; its diagonal is twice the algebraic norm, its realification has signature $(4,4)$, its null set is the zero-divisor cone of real dimension $6$, and its automorphism group is $O_4(\mathbb C)$, of realification $O(4,4)$.</p>
+<p>The left regular representation in the canonical frame is $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, with trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$. The natural conjugation is the signed reversal $\mathsf M_4^{L}(\tilde Q^{\natural})=C\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1}$ with $C=-\sigma_2\otimes\sigma_2$, and the Hermitian conjugation is the conjugate transpose. The quaternionic product is the carried product $\mathsf M_4^{L}(\tilde Q_1\star\tilde Q_2)=C\mathsf M_4^{L}(\tilde Q_1)^{\mathsf T}C^{-1}\mathsf M_4^{L}(\tilde Q_2)$, whose square is the scalar matrix $\langle\tilde Q\rangle_{\natural}I_4$. The general quaternionic bilinear form is the trace pairing $\tfrac12\operatorname{Tr}(\mathsf M_4^{L}(\tilde Q_1)C\mathsf M_4^{L}(\tilde Q_2)^{\mathsf T}C^{-1})=2\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; its diagonal is twice the algebraic norm, its realification has signature $(4,4)$, its null set is the zero-divisor cone of real dimension $6$, and its isometry group is $O_4(\mathbb C)$, of realification $O(4,4)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -268,7 +268,7 @@ the plain, the quaternionic, the Hermitian and the Krein form. The factor is $\t
 </tr>
 <tr>
 <td>$O_4(\mathbb C)$, $O(4,4)$</td>
-<td>the automorphism group and its realification</td>
+<td>the isometry group and its realification</td>
 </tr>
 </tbody>
 </table></div>
