@@ -76,6 +76,8 @@ A subscript is written with the underscore, `_`, inside the math delimiters, and
 
 **The two parts are named by their star.** The Hermitian part is $\tilde Q_{\mathrm H}$, the fixed element of the star, and the anti-Hermitian part is $\tilde Q_{\mathrm A}$, its anti-fixed element: $\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A}$ is the split read on the coefficients, defined in *Conventions in the Biquaternion Universe*, §*The Hermitian and Anti-Hermitian Subspaces*. The words **informational** and **material** name $\tilde Q_{\mathrm H}$ and $\tilde Q_{\mathrm A}$ in the physical articles. The two letters label the parts of one element and not two fields, so no label passes into the coefficients: $\tilde Q_{\mathrm H}$ and $\tilde Q_{\mathrm A}$ keep the names $Q_t,Q_x,Q_y,Q_z$ and select the slots.
 
+**An angular-momentum total takes the role subscript, and its projection the axis.** A spin label is $s$ with projection $s_z$; the total of an orbital and a spin part, or of several spins, is $s_{\mathrm{tot}}$ with projection $s_{\mathrm{tot},z}$, and the operator is $\tilde S_{\mathrm{tot},k}=\tilde L_k+\tilde S_k$. The subscript $k$ is the vector index of the operator, and the three components close on $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$. The projection is not a component of the operator: it is the scalar weight, the eigenvalue of $\tilde S_{\mathrm{tot},3}$ on $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, and it names the axis $z$ on which the measurement is made. The role is repeated in the projection so that $s_{1z}$, $s_{2z}$ and $s_{\mathrm{tot},z}$ are told apart without the context; the operator keeps the vector index $k$, and the weight never takes it. The role and the axis share one pair of braces, $s_{\mathrm{tot},z}$, with a comma between them.
+
 **A sign is a subscript where the statement needs one**, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_+$ and $\tilde\Pi_-$. In the reduced biquaternion layer the sign belongs to the idempotent pair and to its coordinates, $\Pi_\pm$, $Q_{+}$ and $Q_{-}$, the two basis coordinates carrying the triangles, $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, and a numbered element putting its number first in either case, $Q_{1+}$ and $Q_{1\blacktriangle}$; the element they build is $\breve Q$. The sign is read with the glyph: $\tilde Q_\pm$ names an element of the sector $\mathbb{M}_\pm$, while $Q_\pm$ names the idempotent coordinates of $\breve Q$.
 
 The forms a subscript takes are these.
@@ -95,7 +97,7 @@ A unit element is not a physical unit. The series uses the SI, the coefficients 
 
 Two superscript tokens run beside the element marks. $\mathrm{fop}$ marks the Fock operator, the one glyph that is not an element; $\mathrm{opp}$ marks the opposite algebra, and it is written on an algebra name. The Fock mark comes first and the dagger follows it, $a^{\mathrm{fop}\dagger}$.
 
-A subscript is written with the underscore and one token. It is a component or a label, never a derivative. A coefficient carries a letter index and a counted element a number; a subscript either counts or names, and a role label is carried once into the coefficients. A sign is a subscript where the statement needs one. The allowed forms are the digit, the letter, two indices, a sign, an upright word and a grouped expression.
+A subscript is written with the underscore and one token. It is a component or a label, never a derivative. A coefficient carries a letter index and a counted element a number; a subscript either counts or names, and a role label is carried once into the coefficients. A sign is a subscript where the statement needs one. The allowed forms are the digit, the letter, two indices, a sign, an upright word and a grouped expression. An **angular-momentum total** takes the role subscript, $s_{\mathrm{tot}}$, and its projection the axis, $s_{\mathrm{tot},z}$; the operator carries the vector index, $\tilde S_{\mathrm{tot},k}$.
 
 ## Summary of Notation
 
@@ -108,6 +110,7 @@ A subscript is written with the underscore and one token. It is a component or a
 | $^{\mathrm{fop}}$ | The Fock-operator mark, the one glyph that is not an element |
 | $^{\mathrm{opp}}$ | The opposite algebra, written on an algebra name |
 | $Q_{\mathrm{f}t}$, $Q_{n+1}$, $\tilde\Pi_\pm$, $\mathbb{B}_{\mathrm{r}}$ | The subscript forms: letter index, grouped expression, sign, upright word |
+| $s_{\mathrm{tot}}$, $s_{\mathrm{tot},z}$, $\tilde S_{\mathrm{tot},k}$ | Total angular-momentum label, its projection, and the operator, which carries the vector index $k$ |
 
 ## Further Reading
 
