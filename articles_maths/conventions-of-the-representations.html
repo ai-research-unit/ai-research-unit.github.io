@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conventions of the Representations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conventions-of-the-representations"><strong>Conventions of the Representations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra is read in matrices in two ways, and the two answer different questions. The <strong>$2\times2$ isomorphism</strong> $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a complex matrix of the algebra's own size; the <strong>$4\times4$ regular representation</strong> reads multiplication as a linear map on the algebra taken as a complex vector space, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$.</p>
+<p>The algebra is $M_2(\mathbb{C})$ and it is never $M_4(\mathbb{C})$. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and the retired label $M_4(\mathbb{C})_L$ is read as $\mathbb{B}_L$.</p>
+<p>The order is: the table of objects, the $2\times2$ isomorphism with its four forced images and its trace and determinant, the $4\times4$ regular representation in the canonical Peirce frame. The article assumes the base of <em>Conventions in Mathematics</em> and the Peirce convention of <em>Conventions of the Special Elements</em>, whose standard pair fixes the frame.</p>
+<h2 id="the-matrix-models">The Matrix Models</h2>
+<p><strong>The biquaternion algebra is $M_2(\mathbb{C})$, and it is never $M_4(\mathbb{C})$.</strong> Two kinds of matrix model read it, and they answer different questions. The <strong>isomorphism</strong> $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ reads the element itself as a $2\times2$ complex matrix, of the algebra's own size. The <strong>regular representation</strong> reads multiplication as a linear map on the algebra taken as a complex vector space, and its target is $\mathrm{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$; its image is a four-dimensional subspace of that ambient algebra, not the ambient algebra. The two are different representations, not two sizes of one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>writing</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the algebra</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>the isomorphism</td>
+<td>$\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$</td>
+<td>the element read as a $2\times2$ matrix</td>
+</tr>
+<tr>
+<td>the ambient</td>
+<td>$M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>operators on the algebra as a vector space</td>
+</tr>
+<tr>
+<td>the left copy</td>
+<td>$\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B},L}=\rho_L(\mathbb{B})$</td>
+<td>four-dimensional subalgebra</td>
+</tr>
+<tr>
+<td>the right copy</td>
+<td>$\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B},R}=\rho_R(\mathbb{B})$</td>
+<td>the commutant of $\mathbb{B}_L$</td>
+</tr>
+<tr>
+<td>the matrix of an element</td>
+<td>$\mathsf{M}_4^{L}(\tilde Q)$, $\mathsf{M}_4^{R}(\tilde Q)$</td>
+<td>the matrices of $\rho_L(\tilde Q)$, $\rho_R(\tilde Q)$ in the frame the article names; canonical by default</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-22-isomorphism">The 2×2 Isomorphism</h3>
+<p><strong>The map.</strong> The isomorphism is $\mathbb{C}$-linear, multiplicative and bijective,
+$$
+\mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),\qquad
+\mathsf{M}_2(\tilde Q_1+\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)+\mathsf{M}_2(\tilde Q_2),\qquad
+\mathsf{M}_2(\tilde Q_1\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2),
+$$
+and it is the reading every numerical check in the corpus is performed with.</p>
+<p><strong>The four unit images.</strong> The images of the units are fixed once, because every article depends on them agreeing:
+$$
+\mathsf{M}_2(e_t)=I_2,\qquad
+\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+$$
+with $\mathsf{M}_2(i)=iI_2$ on the central scalar. The three vector images are $-i\sigma_k$, with $\sigma_k$ the Pauli matrices, and $\mathbb{C}$-linearity gives the Hermitian units, $\mathsf{M}_2(i\vec e_k)=i\,\mathsf{M}_2(\vec e_k)$.</p>
+<p><strong>The assignment is forced.</strong> $\vec e_k^2=-e_t$ requires the factor $i$, and $\vec e_x\vec e_y=\vec e_z$ fixes the sign. The three images cannot be made real, nor all three negated; <em>The $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> derives both.</p>
+<p><strong>No frame is needed.</strong> The isomorphism is a map of algebras and does not depend on a frame of $\mathbb{B}$. The four matrices above are the images of the units, not the entries of a matrix read in a basis, and no Peirce family enters. The frame enters only in the regular representation of §<em>The 4×4 Regular Representation</em>, which reads an operator on the algebra.</p>
+<p><strong>The invariants.</strong> The determinant of the image is the biquaternion norm and its trace is twice the scalar part,
+$$
+\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},\qquad
+\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t .
+$$
+The determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus; the invertibility criterion, the group of units and the unit-norm group are read from it.</p>
+<h3 id="the-44-regular-representation">The 4×4 Regular Representation</h3>
+<p><strong>The maps.</strong> Left multiplication is the linear map $\rho_L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, and right multiplication is $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The target is the ambient operator algebra $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$.</p>
+<p><strong>The copy is named, the ambient is not.</strong> The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and $\mathbb{B}_R$ is the commutant of $\mathbb{B}_L$ in $M_4(\mathbb{C})$.</p>
+<p>A bare $M_4(\mathbb{C})_{\mathbb{B}}$ means the left copy; the side is $L$ unless written. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is an operator algebra, carries no biquaternion structure and takes no biquaternion name.</p>
+<p><strong>The subscript names the action, not a tensor slot.</strong> $L$ is left multiplication and $R$ is right multiplication, read as on $L_{\tilde Q}$ and $R_{\tilde Q}$ in <em>Conventions of the Operators and the Calculus</em>, §<em>The Operators</em>. In the canonical frame below the left copy is the second tensor factor and the right copy the first, and another choice of frame exchanges the two slots without exchanging the two actions. A subscript naming a slot would therefore change meaning with the frame, and the action does not.</p>
+<p><strong>The canonical frame is the Peirce frame of the standard pair.</strong> The matrix model fixes the family and the two mixed units,
+$$
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
+$$
+which satisfy
+$$
+\tilde\Pi_+^2=\tilde\Pi_+,\quad \tilde\Pi_-^2=\tilde\Pi_-,\quad \tilde\Pi_+\tilde\Pi_-=0,\quad
+\vec\Upsilon_\pm^2=0,\quad \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\quad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+ .
+$$
+So $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$ is a Peirce basis, and the frame is that basis in that order: the two elements of $\mathbb{B}\tilde\Pi_+$ first and those of $\mathbb{B}\tilde\Pi_-$ second. This is the frame of the $\mathsf{M}_2$ model, and it is a choice of frame inside the matrix model. The Peirce convention fixes no family (<em>Conventions of the Special Elements</em>, §<em>The Biquaternion Peirce Convention</em>), and the choice here is not a preferred pair: it is the frame the matrix model is written in.</p>
+<p><strong>In this frame the two copies are the two tensor factors.</strong>
+$$
+\rho_L(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),\qquad
+\rho_R(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2 .
+$$
+So the left copy is the set of matrices $I_2\otimes A$ and the right copy the set $B\otimes I_2$: in the $4\times4$ matrix of an element the four blocks are $\mathsf{M}_2(\tilde Q)$, $0$, $0$, $\mathsf{M}_2(\tilde Q)$ on the left, and $M_{11}I_2$, $M_{21}I_2$, $M_{12}I_2$, $M_{22}I_2$ on the right, where $M_{ij}$ are the entries of $\mathsf{M}_2(\tilde Q)$. The regular matrix is the $2\times2$ matrix taken twice.</p>
+<p><strong>The four unit matrices.</strong> The left images of the four units are
+$$
+\mathsf{M}_4^{L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+\mathsf{M}_4^{L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+$$
+$$
+\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix},
+$$
+each equal to $I_2\otimes\mathsf{M}_2(\vec e_k)$. A general element is their linear combination, $\mathsf{M}_4^{L}(\tilde Q)=Q_t\mathsf{M}_4^{L}(e_t)+Q_x\mathsf{M}_4^{L}(\vec e_x)+Q_y\mathsf{M}_4^{L}(\vec e_y)+Q_z\mathsf{M}_4^{L}(\vec e_z)$.</p>
+<p><strong>The invariants.</strong> With $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$,
+$$
+\det\mathsf{M}_4^{L}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},\qquad
+\operatorname{tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t .
+$$</p>
+<p><strong>The gamma frame.</strong> The five Dirac generators are two-sided operators of the canonical frame, with $L$ and $R$ the left and right multiplications of <em>Conventions of the Operators and the Calculus</em>, §<em>The Operators</em>:
+$$
+\gamma^0=iR_{\vec e_x},\qquad
+\gamma^1=iL_{\vec e_x}R_{\vec e_y},\qquad
+\gamma^2=iL_{\vec e_y}R_{\vec e_y},\qquad
+\gamma^3=iL_{\vec e_z}R_{\vec e_y},\qquad
+\gamma_5=-iR_{\vec e_z}.
+$$
+In the canonical frame their matrices are
+$$
+\gamma^0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma^1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+$$
+$$
+\gamma^2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma^3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
+$$
+and they satisfy $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ and $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$. The sixteen products of the frame are the sixteen cells $L_{e_\mu}R_{e_\nu}$, each with a coefficient of unit modulus; the table, the proof and the choice of frame are §<em>A Gamma Frame, and the Choice Behind It</em> of <em>$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em>. The frame is one frame among many: another orthogonal pair gives another set of five matrices, the relations survive, and the cell labels do not.</p>
+<p><strong>The frame is not the object.</strong> Another gauge, another order of the four basis elements, or another Peirce family gives another matrix of the same operator; the two formulas above hold in the canonical frame alone. An article that uses another frame says so and gives the change of frame. What the frame does not change is the copy and the element: the matrix is an image of the element, never the element and never the algebra.</p>
+<p><strong>The explicit matrices are written in the canonical frame.</strong> The model articles display $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ in the canonical Peirce frame. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display $S(I_2\otimes\mathsf{M}_2)S^{-1}$, with the change $S$ of <em>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant</em>. The articles whose subject is the transpose dictionary use the coefficient basis, because quaternion conjugation is transposition there, and each declares it. An article that uses another frame declares it; an entry is read only with the frame that produced it.</p>
+<p><strong>The label $M_4(\mathbb{C})_L$ is retired.</strong> It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes $M_4(\mathbb{C})_L$ is read as $M_4(\mathbb{C})_{\mathbb{B},L}$, and one that writes $M_4(\mathbb{C})_R$ as $M_4(\mathbb{C})_{\mathbb{B},R}$. The same rule governs the matrices: a bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the superscript $L$ or $R$.</p>
+<h2 id="summary">Summary</h2>
+<p>The <strong>$2\times2$ isomorphism</strong> $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, the three vector units to $-i$ times the Pauli matrices, and $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace of the image is twice the scalar part, the determinant is the biquaternion norm $\langle\tilde Q\rangle_{\natural}$, and the determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus.</p>
+<p>The <strong>$4\times4$ regular representation</strong> is $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$ and $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image of $\rho_L$ is the four-dimensional subalgebra $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B},L}$ of the ambient $M_4(\mathbb{C})$, and $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B},R}$ is its commutant; the ambient is an operator algebra and takes no biquaternion name. The side is $L$ unless written.</p>
+<p>The <strong>canonical frame</strong> is the Peirce frame of the standard pair: $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, with the four Peirce components in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. In it the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right matrix is $\mathsf{M}_2(\tilde Q)\otimes I_2$, with the left coupling to the second tensor factor and the right to the first.</p>
+<p>The label $M_4(\mathbb{C})_L$ is retired: it named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$</td>
+<td>The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$</td>
+<td>The trace, twice the scalar part</td>
+</tr>
+<tr>
+<td>$\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$</td>
+<td>The determinant, the biquaternion norm</td>
+</tr>
+<tr>
+<td>$\rho_L,\rho_R$</td>
+<td>Left and right multiplication as linear maps</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B},L}$</td>
+<td>The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$</td>
+<td>The left regular matrix in the canonical frame</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)\otimes I_2$</td>
+<td>The right regular matrix in the canonical frame</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm$, $\vec\Upsilon_\pm$</td>
+<td>The standard pair and its two mixed units, which fix the frame</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.</li>
+<li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

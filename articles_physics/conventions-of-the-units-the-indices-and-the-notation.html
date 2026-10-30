@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conventions of the Units, the Indices and the Notation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conventions-of-the-units-the-indices-and-the-notation"><strong>Conventions of the Units, the Indices and the Notation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>These are the conventions of the units, of the two superscript tokens and of the subscripts. They are the last of the series because every earlier article depends on them, and they assume the base of <em>Conventions in the Biquaternion Universe</em> and the operators of <em>Conventions of the Operators and the Calculus</em>.</p>
+<p>The order is from the physical to the typographical. The SI units come first, with the rule that the coefficients of one element share one unit and with the two writings of the temporal slot. Then the two superscript tokens, $\mathrm{fop}$ and $\mathrm{opp}$. Then the subscript, which counts or names and is never a derivative.</p>
+<h2 id="physical-units">Physical Units</h2>
+<p><strong>A unit element is not a physical unit.</strong> The base $e_t,\vec e_x,\vec e_y,\vec e_z$ of <em>Conventions in the Biquaternion Universe</em>, §<em>The Base and Its Units</em> is algebraic: its structure constants are $0$ or $\pm1$, and the biquaternion norm is a sum of four squares of coefficients. No element of $\mathbb{B}$ carries a metre, a second or a kilogram. A physical unit enters only where an element is <strong>identified</strong> with a physical quantity, and that identification is a convention of the article that makes it, not a property of the algebra. The phrase <em>unit element</em> names a basis element and <em>physical unit</em> names a convention of measurement; the two are never exchanged.</p>
+<p><strong>The series uses the SI.</strong> Length is measured in metres, time in seconds, mass in kilograms, temperature in kelvin and charge in coulomb. The derived units follow from these, and the ones the articles use are collected here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Symbol</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Length</td>
+<td>$x,y,z$; $ict'$ in the length coordinate</td>
+<td>metre ($\mathrm{m}$)</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>$t'$ in the time coordinate</td>
+<td>second ($\mathrm{s}$)</td>
+</tr>
+<tr>
+<td>Mass</td>
+<td>$m$</td>
+<td>kilogram ($\mathrm{kg}$)</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>$T$</td>
+<td>kelvin ($\mathrm{K}$)</td>
+</tr>
+<tr>
+<td>Electric charge</td>
+<td>$ϙ$</td>
+<td>coulomb ($\mathrm{C}$)</td>
+</tr>
+<tr>
+<td>Speed</td>
+<td>$c$, $c_0$</td>
+<td>$\mathrm{m\,s^{-1}}$</td>
+</tr>
+<tr>
+<td>Momentum</td>
+<td>$\vec p$</td>
+<td>$\mathrm{kg\,m\,s^{-1}}$</td>
+</tr>
+<tr>
+<td>Energy</td>
+<td>$E$</td>
+<td>joule ($\mathrm{J}$)</td>
+</tr>
+<tr>
+<td>Action, angular momentum, spin</td>
+<td>$S$, $S_0$, $I_\mu$, $\theta$, $\vec L$, $\tilde S_3$</td>
+<td>joule-second ($\mathrm{J\,s}$)</td>
+</tr>
+<tr>
+<td>Metric coefficient, time writing</td>
+<td>$g_{tt}=-c^2$</td>
+<td>$\mathrm{m^2\,s^{-2}}$</td>
+</tr>
+<tr>
+<td>Inverse length</td>
+<td>$\mu=mc/\hbar$</td>
+<td>$\mathrm{m^{-1}}$</td>
+</tr>
+<tr>
+<td>Inverse temperature</td>
+<td>$\beta=\hbar/(k_BT)$</td>
+<td>second ($\mathrm{s}$)</td>
+</tr>
+<tr>
+<td>Planck constants</td>
+<td>$h$, $\hbar$</td>
+<td>joule-second ($\mathrm{J\,s}$)</td>
+</tr>
+<tr>
+<td>Boltzmann constant</td>
+<td>$k_B$</td>
+<td>$\mathrm{J\,K^{-1}}$</td>
+</tr>
+<tr>
+<td>Gravitational constant</td>
+<td>$G$</td>
+<td>$\mathrm{m^3\,kg^{-1}\,s^{-2}}$</td>
+</tr>
+<tr>
+<td>Permittivity and permeability</td>
+<td>$\epsilon$, $\mu$</td>
+<td>$\mathrm{F\,m^{-1}}$, $\mathrm{H\,m^{-1}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The coefficients of one element share one unit.</strong> The biquaternion norm is a sum of four squares of the coefficients of a single element, so the four terms are commensurable only if the four coefficients carry the same unit. The requirement is per element and not across elements: the coefficients of a four-displacement are lengths and its norm a length squared, the coefficients of a four-velocity are speeds and its norm a speed squared, and the temporal slot of a four-potential carries $\phi/c$ rather than $\phi$ so that its four components share the unit of the vector potential. The unit is the unit of the quantity the element represents, and it is supplied by the identification.</p>
+<p><strong>The two writings of the temporal slot.</strong> In the length coordinate the material position is $\tilde R = ict'\,e_t+\vec q$, with time measured in metres; this is the corpus's default. In the time coordinate the temporal component is $it'$, time stays in seconds, and the conversion is carried by the metric coefficient $g_{tt}=-c^2$. The quadratic form is one and the same, $\langle\tilde R\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2$; the two differ only in where the factor $c$ is written, and an article that uses the second states it where the temporal slot is read.</p>
+<p><strong>Dimensionless and dimensionful.</strong> A pure number — the fine-structure constant $\alpha$, the ratio $g=2$, the phase $S/\hbar$, the trace normalisation $2$ — carries no unit and no conversion. A dimensionful constant is a unit conversion and is written with its unit. No dimensionful constant is derived by the algebra: $c$, $\hbar$, $k_B$, $G$, $m$ and $ϙ$ are inserted at the places where the structure requires a scale. The metrology says the same thing from the other side. Since the 2019 revision the SI fixes $c$, $h$, the elementary charge and $k_B$ by definition and realises the units from them, while a dimensionless constant such as $\alpha$ has to be measured. An article that sets a constant to one — $c=1$, $\hbar=1$ or $G=1$ — says so locally, and the constant returns wherever a dimensional statement is at issue.</p>
+<p><strong>A caution on $\mu$.</strong> The letter $\mu$ names the permeability in $c=1/\sqrt{\epsilon\mu}$ and the inverse Compton length in $\mu=mc/\hbar$, and it is the direction label in $e_\mu$ and $Q_\mu$. The corpus distinguishes the uses by context; an article should not use two of them in one expression.</p>
+<h2 id="the-superscripts">The Superscripts</h2>
+<p>Two superscript tokens run beside the marks of the elements and the marks of the conjugations, and neither is to be read for the other:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Token</th>
+<th>Written on</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$^{\mathrm{fop}}$</td>
+<td>a Fock-operator glyph</td>
+<td>an operator on the Fock space, the Fock-operator mark</td>
+</tr>
+<tr>
+<td>$^{\mathrm{opp}}$</td>
+<td>an algebra name</td>
+<td>the opposite algebra, the algebra with the reversed product</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The mark, and its one use.</strong> The marks of the elements say what a glyph <strong>is</strong>, not that it is an <strong>operator</strong> (<em>Conventions of the Operators and the Calculus</em>, §<em>The Operators</em>). The single exception is the <strong>Fock layer</strong>, whose operators act on a Fock space and are <strong>not</strong> elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph and read as part of it:</p>
+<p>$$
+a^{\mathrm{fop}},\quad b^{\mathrm{fop}},\quad a^{\mathrm{fop}\dagger},\quad b^{\mathrm{fop}\dagger},\quad \psi^{\mathrm{fop}},\quad N^{\mathrm{fop}},\quad H^{\mathrm{fop}},\quad F^{\mathrm{fop}},\quad Ϙ^{\mathrm{fop}},\quad U^{\mathrm{fop}} .
+$$</p>
+<p>The mark says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $\vec p=-i\hbar\nabla$ keeps its element glyph and never takes the Fock mark, the quadratures $x$ and $p$ of the oscillator are written $x$ and $p$, the spin $S_k=\tfrac{\hbar}{2}\sigma_k$ is written $S_k$, and the parity, charge-conjugation and time-reversal maps $P$, $C$ and $T$ carry no mark. Where a ladder is meant as an element of the algebra it is written with the element's glyph, the truncated pair $\vec\Upsilon_1,\vec\Upsilon_2$, and the abstract ladder operator keeps the mark, $a^{\mathrm{fop}}$.</p>
+<p><strong>It combines with the dagger, the mark first.</strong> The dagger is the general adjoint (<em>Conventions of the Operators and the Calculus</em>, §<em>The Operators</em>); the superscript marks the Fock operator. Where both are written on the same glyph, the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$. The dagger alone never says that its glyph is an operator, and the superscript alone never says that the Fock operator is self-adjoint; the two are read together, so that $a^{\mathrm{fop}\dagger}$ is the adjoint of the ladder and $N^{\mathrm{fop}}$ is written without an adjoint because it is self-adjoint.</p>
+<p><strong>The opposite algebra carries a different token.</strong> The reversed-product algebra is written with the superscript $\mathrm{opp}$, $\mathbb{B}^{\mathrm{opp}}$, $A^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$, on an <strong>algebra name</strong>, where the Fock mark is written on a <strong>Fock-operator glyph</strong>. The two tokens are distinct and neither is read for the other: $a^{\mathrm{fop}}$ is never an opposite algebra, and $\mathbb{B}^{\mathrm{opp}}$ is never an operator.</p>
+<h2 id="the-subscripts">The Subscripts</h2>
+<p>A subscript is written with the underscore, <code>_</code>, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.</p>
+<p><strong>A subscript is never a partial derivative.</strong> The subscript marks a component or a label, a partial derivative is written with $\partial$, and the rule is fixed in <em>Conventions of the Operators and the Calculus</em>, §<em>Conventions for Derivation</em>.</p>
+<p><strong>A coefficient carries a letter index and an element a number.</strong> In the quaternionic layers a coefficient is indexed by the direction it multiplies, $Q_x$ and $q_x$, and an element that is counted carries a number on its tilde, $\tilde Q_1, \tilde Q_2$. In the commutative layers, which have no direction, both the element and its coefficients carry the number of the element, $Q_1 = q_1 + iq'_1$. The two indices are of different kinds, a letter against a number, so a coefficient index is never read as the number of an element, nor the reverse.</p>
+<p><strong>It is allowed to add subscripts when several elements of the same kind are used.</strong> The permission covers the general elements, the units, the roots, the idempotents and the nilpotents alike: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.</p>
+<p><strong>A subscript counts, or it names.</strong> A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a <strong>role label</strong>, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm r}$.</p>
+<p><strong>A role-labelled element carries its label in its coefficients.</strong> The generic element-valued field is $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$, and its components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$: the label $\mathrm f$ belongs to the element and is carried once into the component subscript, beside the direction, so that the components are $Q_{\mathrm{f}t}$ and $Q_{\mathrm{f}\mu}$; it does not count a family. A numbered family is unaffected, $\tilde Q_1=Q_{1t}e_t+\vec Q_1$.</p>
+<p><strong>The two parts are named by their star.</strong> The Hermitian part is $\tilde Q_{\mathrm H}$, the fixed element of the star, and the anti-Hermitian part is $\tilde Q_{\mathrm A}$, its anti-fixed element: $\tilde Q=\tilde Q_{\mathrm H}+\tilde Q_{\mathrm A}$ is the split read on the coefficients, defined in <em>Conventions in the Biquaternion Universe</em>, §<em>The Hermitian and Anti-Hermitian Subspaces</em>. The words <strong>informational</strong> and <strong>material</strong> name $\tilde Q_{\mathrm H}$ and $\tilde Q_{\mathrm A}$ in the physical articles. The two letters label the parts of one element and not two fields, so no label passes into the coefficients: $\tilde Q_{\mathrm H}$ and $\tilde Q_{\mathrm A}$ keep the names $Q_t,Q_x,Q_y,Q_z$ and select the slots.</p>
+<p><strong>A sign is a subscript where the statement needs one</strong>, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_+$ and $\tilde\Pi_-$. In the reduced biquaternion layer the sign belongs to the idempotent pair and to its coordinates, $\Pi_\pm$, $Q_{+}$ and $Q_{-}$, the two basis coordinates carrying the triangles, $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$, and a numbered element putting its number first in either case, $Q_{1+}$ and $Q_{1\blacktriangle}$; the element they build is $\breve Q$. The sign is read with the glyph: $\tilde Q_\pm$ names an element of the sector $\mathbb{M}_\pm$, while $Q_\pm$ names the idempotent coordinates of $\breve Q$.</p>
+<p>The forms a subscript takes are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>The subscript is</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a digit</td>
+<td>$\tilde Q_1$, $\tilde Q_2$</td>
+</tr>
+<tr>
+<td>a letter</td>
+<td>$Q_k$, $Q_\mu$</td>
+</tr>
+<tr>
+<td>two indices</td>
+<td>$Q_{ab}$</td>
+</tr>
+<tr>
+<td>a sign</td>
+<td>$\tilde\Pi_\pm$</td>
+</tr>
+<tr>
+<td>an upright word</td>
+<td>$\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm r}$</td>
+</tr>
+<tr>
+<td>a grouped expression</td>
+<td>$Q_{n+1}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>A unit element is not a physical unit. The series uses the SI, the coefficients of one element share one unit, and the default temporal slot is $ict'$ in metres, with $it'$ and $g_{tt}=-c^2$ stated where an article uses it. A dimensionless number carries no unit and no conversion, and $\mu$ is read by context among the permeability, the inverse Compton length and the direction label.</p>
+<p>Two superscript tokens run beside the element marks. $\mathrm{fop}$ marks the Fock operator, the one glyph that is not an element; $\mathrm{opp}$ marks the opposite algebra, and it is written on an algebra name. The Fock mark comes first and the dagger follows it, $a^{\mathrm{fop}\dagger}$.</p>
+<p>A subscript is written with the underscore and one token. It is a component or a label, never a derivative. A coefficient carries a letter index and a counted element a number; a subscript either counts or names, and a role label is carried once into the coefficients. A sign is a subscript where the statement needs one. The allowed forms are the digit, the letter, two indices, a sign, an upright word and a grouped expression.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SI</td>
+<td>Metre, second, kilogram, kelvin, coulomb, with the derived units built on them</td>
+</tr>
+<tr>
+<td>$ict'$, $\vec q$</td>
+<td>The default material coordinate, time measured in metres</td>
+</tr>
+<tr>
+<td>$it'$, $g_{tt}=-c^2$</td>
+<td>The second writing of the temporal slot, time in seconds; stated where used</td>
+</tr>
+<tr>
+<td>$\mu$</td>
+<td>Permeability, inverse Compton length $\mu=mc/\hbar$, or direction label; read by context</td>
+</tr>
+<tr>
+<td>$^{\mathrm{fop}}$</td>
+<td>The Fock-operator mark, the one glyph that is not an element</td>
+</tr>
+<tr>
+<td>$^{\mathrm{opp}}$</td>
+<td>The opposite algebra, written on an algebra name</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{f}t}$, $Q_{n+1}$, $\tilde\Pi_\pm$, $\mathbb{B}_{\mathrm{r}}$</td>
+<td>The subscript forms: letter index, grouped expression, sign, upright word</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>, for the base these conventions qualify.</li>
+<li><a href="conventions-of-the-operators-and-the-calculus.html">Conventions of the Operators and the Calculus</a>, for the operators that take the Fock mark and the derivative that is never a subscript.</li>
+<li><a href="../articles_maths/conventions-in-mathematics.html">Conventions in Mathematics</a>, for the same subscript rules on the mathematical corpus.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

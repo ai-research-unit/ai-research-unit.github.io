@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conventions of the Products and the Forms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conventions-of-the-products-and-the-forms"><strong>Conventions of the Products and the Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra carries twelve products and four forms. This article fixes their names, their codes and the letters of the forms, and it stops at the form: the norm is the form read at its two equal arguments and is the subject of <em>Conventions of the Norms and the Unitary Convention</em>.</p>
+<p>The products come first because they are algebraic and need no form. Four general products answer the four choices of conjugation on the two slots, and each splits into a symmetric and an antisymmetric part. The three-letter code names the operation by its first letter and the two slots by the second and the third, and the same code is read on the reduced biquaternion space, where four of the twelve name no new operation.</p>
+<p>The form comes second. A form is the scalar part of a product, with a conjugation named on each slot; the corpus writes a generic form $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$, and the four brackets $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ name the four. The letters $P$, $N$, $H$ and $K$ name each form with two arguments and the corresponding norm with one, and the last section fixes how the names are read in a layer.</p>
+<p>The article assumes the base of <em>Conventions in Mathematics</em>; the norm is read in the companion article, and the calculus that applies the forms to the gradient in <em>Conventions of the Operators and the Calculus</em>.</p>
+<h2 id="the-twelve-products-and-their-names">The Twelve Products and Their Names</h2>
+<p>The algebra carries <strong>four general products</strong> — one to each of the four choices of the two slots, the first factor read as it stands or through ${}^{\natural}$ and the second as it stands or through ${}^{*}$ — and each of the four splits into a <strong>symmetric part</strong> and an <strong>antisymmetric part</strong>, so that the complex space carries <strong>twelve products</strong> in all. The names are these, with the three-letter code the band articles write them by:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>The general product</th>
+<th>Its symmetric part</th>
+<th>Its antisymmetric part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The general plain bilinear product ($\mathrm{GPA}$)</td>
+<td>The symmetric plain bilinear product ($\mathrm{SPA}$)</td>
+<td>The antisymmetric plain bilinear product ($\mathrm{APA}$)</td>
+</tr>
+<tr>
+<td>The general quaternionic bilinear product ($\mathrm{GQA}$)</td>
+<td>The symmetric quaternionic bilinear product ($\mathrm{SQA}$)</td>
+<td>The antisymmetric quaternionic bilinear product ($\mathrm{AQA}$)</td>
+</tr>
+<tr>
+<td>The general plain sesquilinear product ($\mathrm{GPS}$)</td>
+<td>The symmetric plain sesquilinear product ($\mathrm{SPS}$)</td>
+<td>The antisymmetric plain sesquilinear product ($\mathrm{APS}$)</td>
+</tr>
+<tr>
+<td>The general quaternionic sesquilinear product ($\mathrm{GQS}$)</td>
+<td>The symmetric quaternionic sesquilinear product ($\mathrm{SQS}$)</td>
+<td>The antisymmetric quaternionic sesquilinear product ($\mathrm{AQS}$)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The code is read letter by letter.</strong> The first letter says which of the three operations of a row — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one, whose first slot is read as it stands, and $\mathrm Q$ the one whose first slot carries the intrinsic conjugation, ${}^{\natural}$ in the quaternionic layers and ${}_{\mathrm{ts}}$ in $\mathbb{B}_{\mathrm{r}}$; and the third says the family — $\mathrm A$ the <strong>algebra</strong> over $\mathbb{C}$, whose three products are $\mathbb{C}$-bilinear, and $\mathrm S$ the <strong>sesqualgebra</strong> over $(\mathbb{C},\bar{\cdot})$, whose three products are sesquilinear. The four general products are the multiplications of the four general structures; the eight parts are the symmetric and antisymmetric products beside them; and the twelve codes together name the twelve algebraic structures of <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<p><strong>The same code on the reduced biquaternion space.</strong> The construction is not special to $\mathbb{B}$. On the commutative algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ — the reduced biquaternions, equivalently the tessarines or the double-complex numbers — the same four general products exist, $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$, and each splits into a symmetric and an antisymmetric part by the two exchanges. Because the algebra is <strong>commutative</strong>, four of the twelve codes name no new operation there: $\mathrm{SPA} = \mathrm{GPA}$ and $\mathrm{SQS} = \mathrm{GQS}$, while $\mathrm{APA} = 0$ and $\mathrm{AQS} = 0$. The space therefore carries <strong>eight distinct algebraic structures</strong> — $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and the four live halves $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$ — and the twelve slots, the four that collapse and the eight that remain are <em>The Four Products, Their Forms and Their Algebraic Norms</em> and <em>The Specificities of the Algebra of the Reduced Biquaternions</em>. The letter $\mathrm Q$ keeps its sense there — the first slot read through ${}_{\mathrm{ts}}$, the tessarine conjugation $j\mapsto-j$ (and $ij\mapsto-ij$) — as in the band above.</p>
+<p><strong>The definitions.</strong> Write the two elements $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $\vec Q_1=(Q_{1x},Q_{1y},Q_{1z})$ and $\vec Q_2=(Q_{2x},Q_{2y},Q_{2z})$; $(\vec Q_1,\vec Q_2)$ is the Euclidean inner product, $\vec Q_1\times\vec Q_2$ the cross product in the units $\vec e_x,\vec e_y,\vec e_z$, and $\overline{\vec Q_2}$ the coefficientwise conjugation. Every product is the sum of a scalar part, a multiple of $e_t$, and a vector part.</p>
+<p><strong>The four general products</strong>, one to each choice of the two slots.</p>
+<p><strong>The general plain bilinear product</strong>, the multiplication of the algebra, associative, with $e_t$ a unit on both sides:</p>
+<p>$$
+\tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2 .
+$$</p>
+<p><strong>The general plain sesquilinear product</strong>, the second factor read through ${}^{*}$, not associative, with $e_t$ a unit on the right only:</p>
+<p>$$
+\tilde Q_1\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
+$$</p>
+<p><strong>The general quaternionic bilinear product</strong>, the first factor read through ${}^{\natural}$, not associative, with $e_t$ a unit on the left only:</p>
+<p>$$
+\tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .
+$$</p>
+<p><strong>The general quaternionic sesquilinear product</strong>, both slots read through a conjugation, not associative, with a unit on neither side:</p>
+<p>$$
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2} .
+$$</p>
+<p><strong>The four symmetric parts</strong>, written with the <strong>full dot</strong> $\bullet$, the four half-sums under the exchange that keeps the class of the product — the interchange for the two bilinear products, the conjugate transpose for the two sesquilinear ones. The subscript names the slots as it does for the forms: none for the plain bilinear product, ${}_{\natural}$ for the quaternionic bilinear, ${}_{*}$ for the plain sesquilinear and ${}_{\natural*}$ for the quaternionic sesquilinear.</p>
+<p><strong>The symmetric plain bilinear product</strong>, the half-sum of the two orders, the <strong>Jordan product</strong> $\tilde Q_1\bullet\tilde Q_2$, written $\star$ in the symmetric-plain band of the physics corpus:</p>
+<p>$$
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1 .
+$$</p>
+<p><strong>The symmetric plain sesquilinear product</strong>, the half-sum under the conjugate transpose, the <strong>Hermitian form</strong> $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, central-valued:</p>
+<p>$$
+\tilde Q_1\bullet_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr] .
+$$</p>
+<p><strong>The symmetric quaternionic bilinear product</strong>, the half-sum of the two orders, the <strong>quaternion form</strong> $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, central-valued:</p>
+<p>$$
+\tilde Q_1\bullet_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr] .
+$$</p>
+<p><strong>The symmetric quaternionic sesquilinear product</strong>, the half-sum under the conjugate transpose:</p>
+<p>$$
+\tilde Q_1\bullet_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 .
+$$</p>
+<p><strong>The four antisymmetric parts</strong>, written with the <strong>wedge</strong> $\wedge$, the four half-differences under the same exchange; all four have zero scalar part and lie in the vector subspace.</p>
+<p><strong>The antisymmetric plain bilinear product</strong>, the half-difference of the two orders, the <strong>outer product</strong> $\tilde Q_1\wedge\tilde Q_2$:</p>
+<p>$$
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2 .
+$$</p>
+<p><strong>The antisymmetric plain sesquilinear product</strong>, the half-difference under the conjugate transpose, the vector part $\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$:</p>
+<p>$$
+\tilde Q_1\wedge_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
+$$</p>
+<p><strong>The antisymmetric quaternionic bilinear product</strong>, the half-difference of the two orders:</p>
+<p>$$
+\tilde Q_1\wedge_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .
+$$</p>
+<p><strong>The antisymmetric quaternionic sesquilinear product</strong>, the half-difference under the conjugate transpose, the cross product $\vec Q_1\times\overline{\vec Q_2}$:</p>
+<p>$$
+\tilde Q_1\wedge_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2} .
+$$</p>
+<p><strong>The reconstruction.</strong> The dot and the wedge rebuild the four general products, so the eight parts carry the whole content of the twelve, one identity to a slot:</p>
+<p>$$
+\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2,\qquad
+\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\bullet_{*}\tilde Q_2+\tilde Q_1\wedge_{*}\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\bullet_{\natural}\tilde Q_2+\tilde Q_1\wedge_{\natural}\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2 .
+$$</p>
+<p><strong>The two antisymmetrisations are not one.</strong> The eight parts above come from the exchange that keeps the class of the product; the <strong>bare interchange</strong> of the two arguments gives a second antisymmetrisation and different objects — the symmetrised sesquilinear product and the <strong>sesquilinear commutator</strong>,</p>
+<p>$$
+[\tilde Q_1,\tilde Q_2]_\varsigma=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
+$$</p>
+<p>whose values lie in the skew-Hermitian part. <strong>The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.</strong> The two are not the same operation (<em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>; <em>The Sesquilinear Commutator and the Symmetrised Product on the Biquaternion</em>), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.</p>
+<p>The products themselves — their coordinates, their laws, their units and their images — are <em>Symmetric and Antisymmetric Decomposition of the Four General Products</em>, and the grid of the four general products is <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>.</p>
+<h2 id="the-form-convention">The Form Convention</h2>
+<p><strong>The order is product, then form, then norm.</strong> A form is the scalar part of a product, with a conjugation named on each slot; the norm is that form at its two equal arguments, and it is read in <em>Conventions of the Norms and the Unitary Convention</em>. The product comes first and needs no form: the four general products are algebraic, and only their scalar parts are forms.</p>
+<p>The corpus writes a <strong>generic form</strong> and a <strong>generic norm</strong>, the norm being the form read at its two equal arguments:</p>
+<p>$$
+\mathrm{Form}(\tilde Q_1,\tilde Q_2) , \qquad \mathrm{Norm}(\tilde Q) = \mathrm{Form}(\tilde Q,\tilde Q) .
+$$</p>
+<p><strong>One bracket, two arities.</strong> A <strong>bracket</strong> names a <strong>form</strong> when it carries two arguments and its <strong>algebraic norm</strong> when it carries one, the single argument standing for the two equal ones. Each form is built from its own conjugation in the first argument and its own in the second, and the bracket's subscript records the two. Written out, the <strong>plain form</strong> is</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2) , \qquad \langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle ,
+$$</p>
+<p>the <strong>quaternionic form</strong> is</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2) , \qquad \langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural} ,
+$$</p>
+<p>the <strong>Hermitian form</strong> is</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}) , \qquad \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*} ,
+$$</p>
+<p>and the <strong>Krein form</strong> is</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}) , \qquad \langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*} .
+$$</p>
+<p><strong>One letter, two arities.</strong> The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde Q_1,\tilde Q_2)$ is the plain form and $P(\tilde Q)$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $B(\tilde Q)$ is the right annihilator of the plain product. <strong>$P$ is the scalar part of the plain product</strong>, with no conjugation on either slot: it is not the plain product, and it is not a reading of $N$. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, §<em>Regular and Degenerate Biquaternions</em>.</p>
+<p><strong>The bracket carries the mark that is not the identity in the layer</strong>, and the four brackets collapse two-and-two wherever one mark degenerates. The cases are worked layer by layer in <em>Conventions of the Norms and the Unitary Convention</em>, §<em>The Six Layer Tables</em>.</p>
+<p>The distinction is one of <strong>notation, not of substance</strong>: the pair is the form and the norm of the statement at hand. The two definitions — the form of an operation as its scalar part read in two arguments, bilinear or sesquilinear by its second slot, and the algebraic norm as that form at its two equal arguments — and the four brackets, $\langle\cdot,\cdot\rangle$ the plain, $\langle\cdot,\cdot\rangle_{*}$ the Hermitian, $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic and $\langle\cdot,\cdot\rangle_{\natural*}$ the Krein, are <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
+<p><strong>The four names stand on the four scalar parts.</strong> One name runs over the three levels of the product, the form and the norm: the form is the scalar part of the product in the named slots, and the norm is the form at two equal arguments. The <strong>plain</strong> bracket is the scalar part of the plain bilinear product, the <strong>quaternionic</strong> bracket that of the quaternionic bilinear product, the <strong>Hermitian</strong> bracket that of the plain sesquilinear product, and the <strong>Krein</strong> bracket that of the quaternionic sesquilinear product. Read on one argument the four are the <strong>plain norm</strong>, the <strong>Hermitian norm</strong>, the <strong>quaternionic norm</strong> and the <strong>Krein norm</strong>. The four products, their forms and their norms go together, one to a row:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Form</th>
+<th>Letter</th>
+<th>Norm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the general plain bilinear</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle$</td>
+<td>$P$</td>
+<td>the plain norm $\langle\tilde Q\rangle$</td>
+</tr>
+<tr>
+<td>the general quaternionic bilinear</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$</td>
+<td>$N$</td>
+<td>the quaternionic norm $\langle\tilde Q\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>the general plain sesquilinear</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{*}$</td>
+<td>$H$</td>
+<td>the Hermitian norm $\langle\tilde Q\rangle_{*}$</td>
+</tr>
+<tr>
+<td>the general quaternionic sesquilinear</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$</td>
+<td>$K$</td>
+<td>the Krein norm $\langle\tilde Q\rangle_{\natural*}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The names are read in the layer where the map they mark exists.</strong> In $\mathbb{B}_{\mathrm{r}}$ the <strong>quaternionic</strong> name becomes the <strong>tessarine</strong> and the <strong>Krein</strong> name the <strong>tessarine-Hermitian</strong>, their brackets carrying ${}_{\mathrm{ts}}$ and ${}_{\mathrm{ts}*}$; the plain and the Hermitian keep their names.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra carries four general products, one to each choice of the conjugation on the two slots: the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear. Each splits into a symmetric and an antisymmetric part, so that the twelve names are the four general products, their four symmetric parts and their four antisymmetric parts. The code is read letter by letter: $\mathrm G$, $\mathrm S$ or $\mathrm A$ for the operation, $\mathrm P$ or $\mathrm Q$ for the first slot, $\mathrm A$ or $\mathrm S$ for the second. On the reduced biquaternion space the algebra is commutative and four of the twelve collapse, leaving eight distinct structures.</p>
+<p>A form is the scalar part of a product, with a conjugation named on each slot, and the generic form is $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$; the generic norm is that form at its two equal arguments. A bracket names the form with two arguments and the algebraic norm with one, its subscript recording the pair of slots. The plain bracket is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the quaternionic $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, the Hermitian $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and the Krein $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.</p>
+<p>The four letters are $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, each naming the form with two arguments and the norm with one. The bracket carries the mark that is not the identity in the layer, and the four collapse two-and-two wherever a mark degenerates. In the reduced biquaternions the quaternionic name becomes the tessarine and the Krein name the tessarine-Hermitian, their brackets carrying ${}_{\mathrm{ts}}$ and ${}_{\mathrm{ts}*}$.</p>
+<p>The distinction between the form and the norm is one of <strong>notation, not of substance</strong>: the pair is the form and the norm of the statement at hand. The norm reading of the four letters, the qualified regular and degenerate, and the layer-by-layer tables are the subject of <em>Conventions of the Norms and the Unitary Convention</em>.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$</td>
+<td>The four general products: plain bilinear, quaternionic bilinear, plain sesquilinear, quaternionic sesquilinear</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$</td>
+<td>Their four symmetric parts</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$</td>
+<td>Their four antisymmetric parts</td>
+</tr>
+<tr>
+<td>$\mathrm{Form}(\tilde Q_1,\tilde Q_2)$</td>
+<td>The generic form, the form of the statement at hand</td>
+</tr>
+<tr>
+<td>$\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$</td>
+<td>The generic norm, the form at its two equal arguments</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle$</td>
+<td>The plain form; $\langle\tilde Q\rangle$ the plain norm</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$</td>
+<td>The quaternionic form; $\langle\tilde Q\rangle_{\natural}$ the quaternionic norm</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{*}$</td>
+<td>The Hermitian form; $\langle\tilde Q\rangle_{*}$ the Hermitian norm</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$</td>
+<td>The Krein form; $\langle\tilde Q\rangle_{\natural*}$ the Krein norm</td>
+</tr>
+<tr>
+<td>$P$, $N$, $H$, $K$</td>
+<td>The letters of the four, each the form with two arguments and the norm with one</td>
+</tr>
+<tr>
+<td>${}_{\mathrm{ts}}$, ${}_{\mathrm{ts}*}$</td>
+<td>The tessarine and tessarine-Hermitian brackets of the reduced biquaternions</td>
+</tr>
+<tr>
+<td>$\bullet$, $\wedge$</td>
+<td>The symmetrised and antisymmetrised product, on the exchange that keeps the class of the product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998). Algebras with involution, the first and the second kind, and the classification of their involutions.</li>
+<li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.</li>
+<li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

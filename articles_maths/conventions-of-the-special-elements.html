@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conventions of the Special Elements — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conventions-of-the-special-elements"><strong>Conventions of the Special Elements</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A root, an idempotent and a nilpotent are not new kinds of object: each is an element of the algebra, and the glyph records what the element is known to be at the point of use. This article fixes those glyphs, their case rule, their coordinates and their subscripts, and then the Peirce convention, which fixes the words and the glyphs of the decomposition that a complete family of idempotents generates.</p>
+<p>The special elements are read after the base because their case rule is the case rule of the elements, and before the representations because the canonical frame of the matrix model is the Peirce frame of the standard pair. The order is: the root, the idempotent, the nilpotent, then the general Peirce convention and its biquaternion reading.</p>
+<p>The article assumes <em>Conventions in Mathematics</em>, whose §<em>The Conjugations</em> fixes the star that the Hermitian idempotent uses, and it is assumed by <em>Conventions of the Representations</em>, whose §<em>The 4×4 Regular Representation</em> writes the canonical frame in the standard pair and its mixed units.</p>
+<h2 id="the-special-elements-root-idempotent-and-nilpotent">The Special Elements: Root, Idempotent and Nilpotent</h2>
+<p><strong>The special glyphs are notational.</strong> A root $\tilde\Xi$, an idempotent $\tilde\Pi$ or a nilpotent $\tilde\nu$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use.</p>
+<h3 id="the-root-convention">The Root Convention</h3>
+<p>The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§<em>The Idempotent Convention</em>) and the nilpotent $\tilde\nu$ (§<em>The Nilpotent Convention</em>): the <strong>xi</strong>, in the two cases.</p>
+<p>A <strong>root of $1$</strong> of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2 = 1$. More generally a <strong>root of a central value</strong> $\lambda$ is an element with $\tilde\Xi^2 = \lambda e_t$; the roots of the three central values $-1, 0, +1$ are determined in <em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>, and the general problem is <em>Square Roots of an Element</em>.</p>
+<p><strong>The square is read in a named product</strong>, the algebra product unless the statement names another, as for the nilpotents: the class is relative to the product, and the roots of a value are read product by product in <em>Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<p><strong>The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.</strong> The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Xi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\xi$; those of the complex, split-complex and dual layers carry the plain capital, $\Xi$; and those of the reduced biquaternion layer carry the same plain capital, $\Xi$, no tilde being written where there is no quaternionic factor.</p>
+<p><strong>The coordinates carry the letter of the root</strong>: in $\mathbb{B}$ the root is $\tilde\Xi = \Xi_te_t + \Xi_x\vec e_x + \Xi_y\vec e_y + \Xi_z\vec e_z$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_t$ and its vector part $\vec\Xi = \vec\xi + i\vec\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_te_t + \xi_x\vec e_x + \xi_y\vec e_y + \xi_z\vec e_z$ with real $\xi_\mu$.</p>
+<p><strong>It is allowed to add subscripts when several roots are used.</strong> <strong>The subscript of a root is numeric when it counts and a role label when it names.</strong> Where more than one occurs the roots are numbered, $\tilde\Xi_1, \tilde\Xi_2$, as for the nilpotents and for the idempotent pairs other than the complete sign pair of §<em>The Idempotent Convention</em>; where a root plays a named role, it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.</p>
+<p>The root glyph is therefore <strong>split by the case rule</strong>, and the split is the reason the convention is stated:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Xi$</td>
+<td>A root of $1$ of the complex, split-complex or dual layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\Xi_\pm$</td>
+<td>A root of $1$ of the reduced biquaternion layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\tilde\xi$</td>
+<td>A root of $1$ of the quaternion or split-quaternion layer</td>
+</tr>
+<tr>
+<td>$\tilde\Xi$</td>
+<td>A root of $1$ of the biquaternion or split-biquaternion layer</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-idempotent-convention">The Idempotent Convention</h3>
+<p>The convention of <em>The Elements and their Coefficients</em> fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the corpus uses it throughout.</p>
+<p>An <strong>idempotent</strong> of the algebra is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. An idempotent fixed by the star, $\tilde\Pi^{*} = \tilde\Pi$, is a <strong>Hermitian idempotent</strong>, and the rank-one Hermitian idempotents of $\mathbb{M}_+$, the Hermitian subspace, are the <strong>pure states</strong>.</p>
+<p><strong>The case rule splits the glyph, as it does for the elements.</strong> The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Pi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\pi$; those of the complex and dual layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The same splitting of the identity is written $\tilde\pi_{1,2}$ in $\mathbb{H}_{\mathrm{s}}$ (<em>Split-Quaternion Idempotents and Projections</em>), while the split-complex layer $\mathbb{D}$ (<em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em>) and the reduced biquaternion layer $\mathbb{B}_{\mathrm{r}}$ write the complete pair with the signs, $\Pi_\pm$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$; the idempotents of the split-biquaternion layer are the $\tilde\Pi_{1,2}$ of <em>Split-Biquaternion Idempotents and Projections</em>, and the layer fixes the glyph.</p>
+<p>The involution here is the star on the elements, as <em>The Conjugations</em> fixes it, and <em>Conventions in the Biquaternion Universe</em> writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.</p>
+<p><strong>The coordinates carry the letter of the idempotent</strong>: in $\mathbb{B}$ the idempotent is $\tilde\Pi = \Pi_te_t + \Pi_x\vec e_x + \Pi_y\vec e_y + \Pi_z\vec e_z$ with $\Pi_\mu = \pi_\mu + i\pi'_\mu$, its scalar part $\Pi_t$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$; in $\mathbb{H}$ it is $\tilde\pi = \pi_te_t + \pi_x\vec e_x + \pi_y\vec e_y + \pi_z\vec e_z$ with real $\pi_\mu$.</p>
+<p><strong>It is allowed to add subscripts when several idempotents are used.</strong> <strong>The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.</strong> A pair is $\tilde\Pi_1, \tilde\Pi_2$; a second pair occurring in the same statement takes the next numbers, $\tilde\Pi_3, \tilde\Pi_4$; and a family indexed by a direction is written with its argument, $\tilde\Pi_\pm(\tilde\Xi)$. When a pair is <strong>complete</strong>, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, its two members may be written $\tilde\Pi_+$ and $\tilde\Pi_-$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element. The split-complex and reduced biquaternion layers write their complete pair with the signs throughout, $\Pi_\pm$. The Peirce indices of the reduced biquaternion layer are the same signs, $\mathbb{B}_{\sigma\tau}=\{\breve Q:\Pi_\sigma \breve Q\Pi_\tau=\breve Q\}$ with $\sigma,\tau\in\{+,-\}$, the two signs a pair read on the left and on the right, so that a corner such as $\mathbb{B}_{++}$ is never a coordinate and never a doubled label. The coordinates of the element in that pair are the <strong>idempotent coordinates</strong>, written with the sign of the member, $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$, so that $\breve Q=Q_{+}\Pi_++Q_{-}\Pi_-$; the sign marks a coordinate of the idempotent pair and the triangle a basis coordinate, so that a numbered element is read the same way, $Q_{1+}$ and $Q_{1-}$ for the idempotent coordinates of $\breve Q_{1}$ and $Q_{1\blacktriangle}$ and $Q_{1\blacktriangledown}$ for its basis coordinates.</p>
+<p>A non-zero idempotent $\tilde\Pi$ generates the <strong>minimal left ideal</strong> $\mathbb{B}\tilde\Pi$; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of <em>Idempotents of the General Plain Algebra</em> and its companions.</p>
+<p>The idempotent glyph is therefore <strong>split by the case rule</strong>, and the split is the reason the convention is stated:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi$</td>
+<td>An idempotent of the complex, split-complex or dual layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\Pi_\pm$</td>
+<td>A complete sign pair of idempotents of the split-complex or reduced biquaternion layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\tilde\pi$</td>
+<td>An idempotent of the quaternion or split-quaternion layer</td>
+</tr>
+<tr>
+<td>$\tilde\Pi$</td>
+<td>An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-nilpotent-convention">The Nilpotent Convention</h3>
+<p>The nilpotents carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§<em>The Idempotent Convention</em>): the lower-case $\tilde\nu$ of the quaternion and split-quaternion layers and the upper-case $\tilde\Upsilon$ of the biquaternion and split-biquaternion layers, as the case rule requires. <strong>The capital is an upsilon and not a $Y$.</strong></p>
+<p>A <strong>nilpotent</strong> of the algebra is an element $\tilde\nu$ whose square vanishes,</p>
+<p>$$
+\tilde\nu^2 = 0 .
+$$</p>
+<p><strong>The square is read in a named product</strong>, the algebra product unless the statement names another: the corpus writes nilpotents in the four general products of <em>Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> as well, and the class is relative to the product — an element square-zero in the plain product need not be square-zero in the general plain sesquilinear one, and in the plain antisymmetric block every central element is square-zero, the unit among them. <strong>No nilpotent is a Hermitian idempotent</strong>, a Hermitian nilpotent being zero, so no nilpotent is a pure state; it is nevertheless the partner of the idempotent in a minimal left ideal — for the standard pair $\mathbb{B}\vec\Upsilon_2 = \mathbb{B}\tilde\Pi_1$ — and its products with its star are Hermitian idempotents of that ideal.</p>
+<p><strong>The coordinates carry the letter of the nilpotent</strong>: in $\mathbb{B}$ the nilpotent is $\tilde\Upsilon = \Upsilon_te_t + \Upsilon_x\vec e_x + \Upsilon_y\vec e_y + \Upsilon_z\vec e_z$ with $\Upsilon_\mu = \nu_\mu + i\nu'_\mu$, its scalar part $\Upsilon_t$ and its vector part $\vec\Upsilon = \vec\nu + i\vec\nu'$; in $\mathbb{H}$ it is $\tilde\nu = \nu_te_t + \nu_x\vec e_x + \nu_y\vec e_y + \nu_z\vec e_z$ with real $\nu_\mu$.</p>
+<p><strong>It is allowed to add subscripts when several nilpotents are used.</strong> <strong>The subscript of a nilpotent is numeric when it counts and a role label when it names</strong>, as for the idempotents apart from their complete sign pair: where more than one occurs a pair is $\tilde\nu_1, \tilde\nu_2$, a second pair in the same statement takes the next numbers, and where a nilpotent plays a named role it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.</p>
+<p>The nilpotents have no classification of the idempotent kind. The square-zero set is not one family, and which set it is depends on the product: the elements of zero norm under the general quaternionic product, the pure isotropic vectors under the associative one. The standard units and the instances are those of <em>Nilpotents of the General Quaternionic Algebra</em>, <em>Idempotents of the General Plain Algebra</em> and <em>The Peirce Decomposition of the Biquaternion Algebra</em>. The standard pair of nilpotents is the two off-diagonal Peirce units of the last of these, $\vec\Upsilon_1$ and $\vec\Upsilon_2$, exchanged by the star.</p>
+<p>The nilpotent glyph is therefore <strong>split by the case rule</strong>, and the split is the reason the convention is stated:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Upsilon$</td>
+<td>A nilpotent of the complex, split-complex or dual layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\tilde\nu$</td>
+<td>A nilpotent of the quaternion or split-quaternion layer</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon$</td>
+<td>A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates; where it spans a mixed Peirce component it is written $\tilde\Upsilon_{ij}$ (§<em>The Peirce Convention</em>)</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon$, $\vec\nu$</td>
+<td>A pure nilpotent, written with the arrow and without the tilde by the priority rule of <em>Conventions in Mathematics</em>, §<em>The Centre and the Vector Subspace</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The standard pair carries the arrow, not the tilde.</strong> The two off-diagonal Peirce units are pure, $\vec\Upsilon_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec\Upsilon_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by <em>Conventions in Mathematics</em>, §<em>The Centre and the Vector Subspace</em> the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec\Upsilon_1, \vec\Upsilon_2$ and never $\tilde\Upsilon_1, \tilde\Upsilon_2$. The tilde is kept for the general nilpotent $\tilde\Upsilon$, which may carry a scalar part and is not pure.</p>
+<h2 id="the-peirce-convention">The Peirce Convention</h2>
+<h3 id="the-general-peirce-convention">The General Peirce Convention</h3>
+<p><strong>Introduction.</strong> A Peirce decomposition writes an algebra as a direct sum of Peirce components, one for each ordered pair of members of a complete family of orthogonal idempotents. This convention fixes the words and the glyphs for those components; the articles state the properties.</p>
+<p><strong>Scope.</strong> $A$ is an associative algebra with unit $1$ over a field. Indices are 1-based. Every Peirce article uses the four levels below and no others.</p>
+<p><strong>The family.</strong> A family $\Pi_1,\dots,\Pi_n$ is <strong>complete, orthogonal and idempotent</strong> when</p>
+<p>$$
+\Pi_i^2=\Pi_i,\qquad \Pi_i\Pi_j=0\ (i\ne j),\qquad \sum_{i=1}^{n}\Pi_i=1 .
+$$</p>
+<p>The subscripts are numeric, 1-based, and the family is unordered. A family that does not sum to $1$ is not a Peirce family; adjoining the complement is a construction of the articles, not part of this convention. The sign pair $\Pi_+,\Pi_-$ belongs to §<em>The Idempotent Convention</em> and is not repeated here.</p>
+<p><strong>The decomposition.</strong> The Peirce decomposition relative to the family is</p>
+<p>$$
+A=\bigoplus_{i,j=1}^{n}A_{ij},\qquad A_{ij}=\Pi_iA\Pi_j .
+$$</p>
+<p>The left index is written first. The summands are <strong>Peirce components</strong>, and the array of them is the <strong>Peirce table</strong>. The components multiply by the rule: the second index of the first factor must equal the first index of the second, otherwise the product is zero. So $A_{ij}A_{jq}\subseteq A_{iq}$, and $A_{ij}A_{pq}=0$ when $j\ne p$.</p>
+<p>The decomposition is <strong>canonical</strong>: it depends on the family and on nothing else. A component is called a <strong>line</strong> when it is one-dimensional. The word <strong>fine</strong> is used only for a maximal family, when every component is a line. The word <strong>complete</strong> refers only to $\sum_i\Pi_i=1$. The word <strong>full</strong> is not used.</p>
+<p><strong>The basis and the gauge.</strong> A <strong>Peirce basis</strong> is a choice of one nonzero element in each line, with</p>
+<p>$$
+E_{ij}E_{jq}=E_{iq},\qquad E_{ii}=\Pi_i .
+$$</p>
+<p>It exists only when the components are lines, it is not canonical, and every statement using it says so: "in a Peirce basis", "in the basis adapted to the family".</p>
+<p>The <strong>Peirce gauge</strong> is the replacement</p>
+<p>$$
+E_{ij}\longmapsto t_it_j^{-1}E_{ij},\qquad t_i\ne0,
+$$</p>
+<p>which leaves the family, the components and the products fixed. With a star, $\lvert t_i\rvert=1$ and the gauge is a torus of phases.</p>
+<p>A <strong>Peirce frame</strong> is a Peirce basis together with the data that selects it.</p>
+<p><strong>Coordinates and spinors.</strong> The <strong>Peirce coordinates</strong> of an element $Q\in A$ are the numbers $Q_{ij}$ in $Q=\sum_{i,j}Q_{ij}E_{ij}$. The coordinates carry the glyph of the element, by the case rule of the layer: $q_{ij}$ for a real element, $Q_{ij}$ for a complex one, $\tilde q_{ij}$ or $\tilde Q_{ij}$ for a quaternion, split-quaternion, biquaternion or split-biquaternion one. No separate letter is used for a coordinate.</p>
+<p>A <strong>spinor</strong> is the tuple of $n$ coordinates of one row of the table, at fixed left index,</p>
+<p>$$
+\psi=(\psi_1,\dots,\psi_n),\qquad \psi_j=Q_{ij}\ \text{for fixed } i .
+$$</p>
+<p>When a spinor is treated as an object of its own, its entries are written $\psi_j$; they are the coordinates $Q_{ij}$ of one row. The gauge acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$, which is its overall phase. The word <strong>spinor</strong> belongs to this level only: it is never used for an element of $A$ at the two levels above.</p>
+<p><strong>Glyphs of the units.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Unit</th>
+<th>Glyph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diagonal unit</td>
+<td>The idempotent, $\Pi_i$</td>
+</tr>
+<tr>
+<td>Off-diagonal unit, abstract algebra</td>
+<td>The nilpotent glyph, $\Upsilon_{ij}$, with tilde or arrow by the case rule</td>
+</tr>
+<tr>
+<td>Off-diagonal unit, in $M_n$</td>
+<td>The matrix unit, $E_{ij}$, 1-based</td>
+</tr>
+<tr>
+<td>Several units in one component</td>
+<td>Counting subscript, $\Upsilon_{ij,1},\dots,\Upsilon_{ij,m}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>$E_{ij}$ is written only when the objects are matrices. In an abstract algebra the generic letter $E$ is not used.</p>
+<p><strong>What is not a Peirce notion.</strong> A root of unity, an eigenvalue, a grading, a weight, a Cartan subalgebra. A root may produce a family, through its Lagrange idempotents; the family is then a Peirce family like any other, and the root adds nothing to the Peirce vocabulary. Neither is an ordered or nested reading of the family: an order on the indices, a sequence of cuts, a cumulative sum of the members. When an article reads the family step by step, it says so there, and the reading is called there what it is.</p>
+<p><strong>Excluded vocabulary.</strong> Left ideal, right ideal, minimal left ideal, carrier, module and representation are not used at the levels of the family and of the decomposition, and are not used to define a spinor. A sum $\bigoplus_jA_{ij}$ or $\bigoplus_iA_{ij}$ is a <strong>row</strong> or a <strong>column</strong> of the Peirce table, never a component and never a carrier. If another article needs an ideal, it names it there, under its own name, with an explicit pointer.</p>
+<p><strong>Symbols.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Pi_i$</td>
+<td>A member of the complete orthogonal family</td>
+</tr>
+<tr>
+<td>$A_{ij}$</td>
+<td>A Peirce component, left index first</td>
+</tr>
+<tr>
+<td>$\Upsilon_{ij}$</td>
+<td>An off-diagonal Peirce unit, a nilpotent</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>A matrix unit, only in $M_n$</td>
+</tr>
+<tr>
+<td>$Q_{ij}$, $\psi_j$</td>
+<td>A Peirce coordinate, and the entry of a spinor</td>
+</tr>
+<tr>
+<td>$\Xi$</td>
+<td>A root of unity, by the case rule</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The summary sentence.</strong> The family gives the components, the decomposition is canonical, the basis is chosen, the gauge is its freedom, and the spinor is a tuple of coordinates in that basis.</p>
+<h3 id="the-biquaternion-peirce-convention">The Biquaternion Peirce Convention</h3>
+<p><strong>Introduction.</strong> The general Peirce convention read in the biquaternion algebra $\mathbb{B}$. It adds nothing to the family and fixes nothing about it; it fixes only the glyphs and the case rule of the layer.</p>
+<p><strong>Scope.</strong> $A=\mathbb{B}$, with unit $e_t$. The upper-case tilde is written in this layer, and a pure element carries the arrow and no tilde. Indices are numeric, 1-based. The four levels of §<em>The General Peirce Convention</em> are used, and no others.</p>
+<p><strong>The family.</strong> A complete, orthogonal and idempotent family $\tilde\Pi_1,\tilde\Pi_2$ in $\mathbb{B}$. The family is arbitrary: this convention fixes no pair, and no pair is preferred. The canonical frame of the matrix model is written in the standard pair and its mixed units, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$; that is a choice of frame, owned by <em>Conventions of the Representations</em>, §<em>The Matrix Models</em>, and it fixes nothing here. The glyph is governed by §<em>The Idempotent Convention</em>.</p>
+<p><strong>The decomposition.</strong></p>
+<p>$$
+\mathbb{B}=A_{11}\oplus A_{12}\oplus A_{21}\oplus A_{22},\qquad A_{ij}=\tilde\Pi_i\mathbb{B}\tilde\Pi_j .
+$$</p>
+<p>The left index is written first. The summands are Peirce components and the array is the Peirce table. The components multiply by the rule: the second index of the first factor must equal the first index of the second, otherwise the product is zero. So $A_{ij}A_{jq}\subseteq A_{iq}$, and $A_{ij}A_{pq}=0$ when $j\ne p$. The decomposition is canonical: it depends on the family and on nothing else.</p>
+<p><strong>The basis and the gauge.</strong> The diagonal units are the idempotents themselves,</p>
+<p>$$
+\tilde\Pi_1\in A_{11},\qquad \tilde\Pi_2\in A_{22},
+$$</p>
+<p>and the mixed units carry the nilpotent glyph, with the arrow where the element is pure,</p>
+<p>$$
+\tilde\Upsilon_{12}\in A_{12},\qquad \tilde\Upsilon_{21}\in A_{21}.
+$$</p>
+<p>A Peirce basis is a choice of these two units, and every statement using it says so. The gauge is</p>
+<p>$$
+\tilde\Upsilon_{ij}\longmapsto t_it_j^{-1}\tilde\Upsilon_{ij},\qquad t_1,t_2\ne0,
+$$</p>
+<p>which leaves the family, the components and the products fixed. With a star, $\lvert t_i\rvert=1$ and the gauge is a torus of phases.</p>
+<p><strong>Coordinates and spinors.</strong> An element is</p>
+<p>$$
+\tilde Q=\tilde Q_{11}\tilde\Pi_1+\tilde Q_{12}\tilde\Upsilon_{12}+\tilde Q_{21}\tilde\Upsilon_{21}+\tilde Q_{22}\tilde\Pi_2,
+$$</p>
+<p>and the four complex numbers $\tilde Q_{ij}$ are its Peirce coordinates, carrying the glyph of the element, indexed by the left index first. A spinor is a pair of coordinates in one row:</p>
+<p>$$
+\psi_1=(\tilde Q_{11},\tilde Q_{12}),\qquad \psi_2=(\tilde Q_{21},\tilde Q_{22}).
+$$</p>
+<p>The gauge acts on a spinor by $\psi_j\mapsto t_j\psi_j$, up to the common factor $t_i$ of the row, which is its overall phase. The word spinor belongs to this level only.</p>
+<p><strong>Glyphs of the units.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Unit</th>
+<th>Glyph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diagonal, $A_{11}$, $A_{22}$</td>
+<td>$\tilde\Pi_1$, $\tilde\Pi_2$</td>
+</tr>
+<tr>
+<td>Mixed, $A_{12}$, $A_{21}$</td>
+<td>$\tilde\Upsilon_{12}$, $\tilde\Upsilon_{21}$, with the arrow where pure</td>
+</tr>
+<tr>
+<td>Several units in one line</td>
+<td>Counting subscript, $\tilde\Upsilon_{12,1},\dots$</td>
+</tr>
+<tr>
+<td>Quaternion or split-quaternion layer</td>
+<td>$\tilde\pi_1,\tilde\pi_2$ and $\tilde\nu_{12},\tilde\nu_{21}$</td>
+</tr>
+<tr>
+<td>Complex, split-complex or dual layer</td>
+<td>$\Pi_1,\Pi_2$ and $\Upsilon_{12},\Upsilon_{21}$</td>
+</tr>
+<tr>
+<td>Matrix model of $\mathbb{B}$</td>
+<td>$E_{ij}$, 1-based, only there</td>
+</tr>
+</tbody>
+</table></div>
+<p>No generic $E$ is written outside the matrix model, and no tilde on a pure element.</p>
+<p><strong>What is not a Peirce notion.</strong> A root of unity, an eigenvalue, a grading, a weight, a Cartan subalgebra. Neither is an ordered or nested reading of the family: an order on the indices, a sequence of cuts, a cumulative sum of the members.</p>
+<p><strong>Excluded vocabulary.</strong> Left ideal, right ideal, minimal left ideal, carrier, module, representation and spinor plane. The sums $A_{11}\oplus A_{12}$ and $A_{11}\oplus A_{21}$ are a row and a column of the Peirce table, never a component.</p>
+<p><strong>Symbols.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Pi_1$, $\tilde\Pi_2$</td>
+<td>The complete orthogonal pair</td>
+</tr>
+<tr>
+<td>$A_{ij}$</td>
+<td>A Peirce component, left index first</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon_{12}$, $\tilde\Upsilon_{21}$</td>
+<td>The mixed Peirce units, nilpotents</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>A matrix unit, only in the matrix model</td>
+</tr>
+<tr>
+<td>$\tilde Q_{ij}$, $\psi_j$</td>
+<td>A Peirce coordinate, and the entry of a spinor</td>
+</tr>
+<tr>
+<td>$t_1$, $t_2$</td>
+<td>The gauge parameters</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The summary sentence.</strong> The family gives the four components, the decomposition is canonical, the two mixed units are chosen, the gauge is their freedom, and the spinor is a pair of coordinates in one row.</p>
+<h2 id="summary">Summary</h2>
+<p>A <strong>root</strong> of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2=1$, and a root of a central value $\lambda$ is an element with $\tilde\Xi^2=\lambda e_t$; the square is read in a named product, the algebra product unless the statement names another. The glyph is split by the case rule: $\Xi$ in the tilde-free layers, $\tilde\xi$ in the quaternion and split-quaternion layers, $\tilde\Xi$ in the biquaternion and split-biquaternion layers, the reduced biquaternion layer writing the sign pair $\Xi_\pm$. The coordinates carry the letter of the root, and the subscript counts when it only distinguishes occurrences and names when it is a role label.</p>
+<p>An <strong>idempotent</strong> is an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$. An idempotent fixed by the star is <strong>Hermitian</strong>, and the rank-one Hermitian idempotents of $\mathbb{M}_+$ are the <strong>pure states</strong>. The glyph is $\Pi$ in the tilde-free layers, $\tilde\pi$ in the quaternion and split-quaternion layers, $\tilde\Pi$ in the biquaternion and split-biquaternion layers; the two members of a complete sign pair are $\Pi_\pm$ and take the sign rather than a number. A non-zero idempotent generates the minimal left ideal $\mathbb{B}\tilde\Pi$.</p>
+<p>A <strong>nilpotent</strong> is an element whose square vanishes, $\tilde\nu^2=0$, the square again read in a named product. The glyph is $\Upsilon$ in the tilde-free layers, $\tilde\nu$ in the quaternion and split-quaternion layers and $\tilde\Upsilon$ in the biquaternion and split-biquaternion layers; a pure nilpotent carries the arrow and no tilde. The nilpotents have no classification of the idempotent kind, because the square-zero set depends on the product.</p>
+<p>The <strong>Peirce convention</strong> fixes the four levels of a Peirce decomposition — the family, the components, the multiplication rule and the array — for an associative algebra with unit and then for $\mathbb{B}$. A complete, orthogonal and idempotent family $\tilde\Pi_1,\dots,\tilde\Pi_n$ gives $\mathbb{B}=\bigoplus_{ij}A_{ij}$ with $A_{ij}=\tilde\Pi_i\mathbb{B}\tilde\Pi_j$, the left index first, and the components multiply by $A_{ij}A_{jq}\subseteq A_{iq}$, with $A_{ij}A_{pq}=0$ when $j\neq p$. The decomposition depends on the family and on nothing else, and the canonical frame of the matrix model is the Peirce frame of the standard pair.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Xi$, $\tilde\xi$, $\tilde\Xi$</td>
+<td>A root of $1$ in the tilde-free, quaternion and biquaternion layers</td>
+</tr>
+<tr>
+<td>$\Xi_\pm$</td>
+<td>A root of $1$ of the reduced biquaternion layer, the two signs</td>
+</tr>
+<tr>
+<td>$\Pi$, $\tilde\pi$, $\tilde\Pi$</td>
+<td>An idempotent in the tilde-free, quaternion and biquaternion layers; $\tilde\Pi$ also the pure state and the left ideal $\mathbb{B}\tilde\Pi$</td>
+</tr>
+<tr>
+<td>$\Pi_\pm$</td>
+<td>The two members of a complete sign pair of idempotents</td>
+</tr>
+<tr>
+<td>$\Upsilon$, $\tilde\nu$, $\tilde\Upsilon$</td>
+<td>A nilpotent in the tilde-free, quaternion and biquaternion layers</td>
+</tr>
+<tr>
+<td>$\vec\Xi$, $\vec\nu$, $\vec\Upsilon$</td>
+<td>A pure root and a pure nilpotent</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_1,\dots,\tilde\Pi_n$</td>
+<td>A complete, orthogonal and idempotent family</td>
+</tr>
+<tr>
+<td>$A_{ij}=\tilde\Pi_i\mathbb{B}\tilde\Pi_j$</td>
+<td>A Peirce component; the left index first</td>
+</tr>
+<tr>
+<td>$A_{ij}A_{jq}\subseteq A_{iq}$</td>
+<td>The multiplication rule of the components</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Benjamin Peirce, "Linear Associative Algebra", <em>American Journal of Mathematics</em> <strong>4</strong> (1881) 97–229. The original Peirce decomposition, from which the components and the multiplication rule of §<em>The General Peirce Convention</em> take their name.</li>
+<li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998). Algebras with involution, the first and the second kind, and the classification of their involutions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

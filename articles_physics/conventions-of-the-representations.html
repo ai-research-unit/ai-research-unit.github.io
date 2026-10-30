@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conventions of the Representations — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conventions-of-the-representations"><strong>Conventions of the Representations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra is written in three presentations: the coefficient quadruple, the $2\times2$ isomorphism and the $4\times4$ regular representation. This article carries the last two, after the four-vector. It assumes the base of <em>Conventions in the Biquaternion Universe</em> and the products of <em>Conventions of the Products and the Forms</em>.</p>
+<p>The order is deliberate. The $2\times2$ isomorphism comes first because it is the representation of the element, the one the numerical checks use and the one whose four images are forced. The $4\times4$ regular representation comes second because it is the representation of the operator of multiplication, and it is read only after the frame is named. The Clifford map closes the article, and it is neither of the two.</p>
+<h2 id="the-four-vector-representation">The Four-Vector Representation</h2>
+<p>The algebra is read as the quadruple of its complex coefficients, in <em>The Biquaternion Algebra</em>, §<em>The Coordinate Systems</em>. Each unit is one coordinate place,</p>
+<p>$$
+e_t \longleftrightarrow (1,0,0,0), \qquad \vec e_x \longleftrightarrow (0,1,0,0), \qquad \vec e_y \longleftrightarrow (0,0,1,0), \qquad \vec e_z \longleftrightarrow (0,0,0,1),
+$$</p>
+<p>so that an element is its quadruple of coefficients,</p>
+<p>$$
+\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \;\longleftrightarrow\; (Q_t, Q_x, Q_y, Q_z).
+$$</p>
+<p><strong>No index is raised or lowered anywhere in the series.</strong> On $\mathbb{C}^4$ there is no pairing with which to move one, and the $ict'$ convention is what puts the metric into the coefficient — $(ict', \vec q)$ rather than a contraction rule — so that the interval is the sum of squares with no explicit scalar product. The article owns the product in components.</p>
+<h2 id="the-matrix-representations">The Matrix Representations</h2>
+<p>The algebra is read in matrices in two ways, and the two answer different questions. The <strong>2×2 reading</strong> is the isomorphism $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$: the elements themselves become complex matrices, and this is the only reading whose matrices are of the algebra's own size. The <strong>4×4 reading</strong> is the regular representation $\rho_L : \mathbb{B} \to \mathrm{End}_{\mathbb{C}}(\mathbb{B}) = M_4(\mathbb{C})$: an element becomes the operator of left multiplication on the algebra taken as a complex vector space, and its matrix acts on the coordinate column of the frame. The image is the four-dimensional subspace $\mathbb{B}_L$ of $M_4(\mathbb{C})$, not the ambient algebra: the two readings are different representations, not two sizes of one, and only $\mathsf{M}_2$ is an isomorphism of the algebra onto matrices of its own size.</p>
+<h3 id="general-matrix-conventions">General Matrix Conventions</h3>
+<p><strong>A matrix carries no tilde, and the ban is absolute.</strong> The tilde marks an element of the algebra, not its image. The identity is $I_n$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_4^{L}(e_t)=I_4$, and the image of an element is written $\mathsf{M}_2(\tilde Q)$ or $\mathsf{M}_4^{L}(\tilde Q)$, with the tilde inside the argument. <strong>An array of biquaternions carries no tilde either.</strong> A matrix whose entries are biquaternions is written $\mathsf{Q}=(\tilde Q_{\lambda\rho})\in\mathbb{B}^{n\times m}$: the tildes sit on the entries, and the array that holds them has none, whatever its size and whatever its entries. The identity matrix never takes a tilde; nor do the regular matrices $\mathsf{M}_4^{L}$ and $\mathsf{M}_4^{R}$, whose subscript gives the size and whose superscript gives the side of the multiplication. The same ban covers a matrix of biquaternions and a colour matrix.</p>
+<p><strong>The ban is on the array, not on its argument.</strong> The writings $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4^{L}(\tilde Q)$ are correct because the tilde stays inside the argument. A tilde on the array — $\tilde I_n$, $\tilde{\mathsf{M}}_2$, $\tilde{\mathcal Q}$, or $\tilde Q$ where the matrix $\mathsf{M}_2(\tilde Q)$ is meant — is forbidden and is a defect to be rewritten, not a variant to be read: no object is behind it, and the element it would name is already named by the argument.</p>
+<p><strong>The letter $M$ belongs to matrices.</strong> It names a matrix and nothing else: the images $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_4^{L}(\tilde Q)$, the matrix algebras $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$, and an entrywise matrix in a proof. No element of the algebra is written $M$, with or without a tilde.</p>
+<p><strong>The copy is named, the ambient is not.</strong> The left copy is $\mathbb{B}_L=\rho_L(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},L}$, and the right copy is $\mathbb{B}_R=\rho_R(\mathbb{B})$, also written $M_4(\mathbb{C})_{\mathbb{B},R}$. Each is a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$, and each is the commutant of the other. $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the ambient operator algebra and is never called a biquaternion algebra. The writing $M_4(\mathbb{C})_L$, read as the name of an algebra, is retired and is read here as $M_4(\mathbb{C})_{\mathbb{B},L}$; the same holds on the right. The convention is fixed in <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>.</p>
+<h3 id="the-22-matrix-representation">The 2×2 Matrix Representation</h3>
+<p>The algebra is read as the complex $2 \times 2$ matrices, under the isomorphism</p>
+<p>$$
+\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C}),
+$$</p>
+<p>in <em>The Element and Operator Representations</em>, and this is the representation every numerical check in the series is performed with. The four unit images are fixed here, once, because every article depends on them agreeing. The three vector units are the Pauli matrices times $-i$:</p>
+<p>$$
+\mathsf{M}_2(e_t) = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I_2, \qquad
+\mathsf{M}_2(\vec e_x) = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad
+\mathsf{M}_2(\vec e_y) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad
+\mathsf{M}_2(\vec e_z) = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
+$$</p>
+<p>with the central scalar mapping to $\mathsf{M}_2(i) = iI_2$. Because $\mathsf{M}_2$ is $\mathbb{C}$-linear, the Hermitian units require no separate choice, $\mathsf{M}_2(i\vec e_k) = i\,\mathsf{M}_2(\vec e_k)$.</p>
+<p><strong>The trace is the trace of this image.</strong> The Hermitian form is defined on the algebra and needs no matrix. The trace is defined only here, on the image, and it is a reading of the Hermitian form in this presentation, not a second pairing. The series writes</p>
+<p>$$
+\operatorname{Tr}(\tilde{Q}) := \operatorname{Tr}\mathsf{M}_2(\tilde{Q}).
+$$</p>
+<p>On the units $\operatorname{Tr}(e_t) = 2$ and $\operatorname{Tr}(\vec e_k) = 0$, so on a general element $2\,\mathrm{Sc}(\tilde{Q}) = \operatorname{Tr}(\tilde{Q})$. That factor $2$ is not a normalisation but a consequence of $\mathsf{M}_2(e_t) = I_2$: it comes with the four images above and cannot be divided out. The probability pairing is written in the Hermitian form and read in the trace where the $2\times2$ image is used, the Born rule among them,</p>
+<p>$$
+2\langle\tilde Q_1,\tilde Q_2\rangle_{*}=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*}),\qquad 2\,\mathrm{Sc}(\tilde Q)=\operatorname{Tr}(\tilde Q),
+$$</p>
+<p>and this is the only place in the section where the trace appears. An unsubscripted trace means this one; a regular matrix has its own, written with its subscript. The identity $2\,\operatorname{Sc}(\tilde{Q}_1\tilde{Q}_2) = \operatorname{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the same reading applied to the plain form, not a probability statement. The same element in the regular $4\times4$ representation has trace $4\,\mathrm{Sc}(\tilde{Q})$, twice the trace of the $2\times2$ image: the factor belongs to the presentation, not to the element.</p>
+<p><strong>The determinant is the norm.</strong> The determinant of the image is the biquaternion norm, $\det\mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$, and it is multiplicative, which is what makes the matrix model compute every norm in the series. The invertibility criterion, the group of units and the unit-norm group are read from it; the derivations are <em>The $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>.</p>
+<p><strong>The assignment is forced, not chosen.</strong> $\vec e_k^2 = -e_t$ requires the factor $i$ and $\vec e_x \vec e_y = \vec e_z$ fixes the sign, so neither the factor nor the sign in the three vector images could have been otherwise. A reviewer must not "correct" the assignment by making the three images real, nor by negating all three. <em>The $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> derives both.</p>
+<p><strong>Never conjugate the matrix entries on their own.</strong> Conjugating the entries of $\mathsf{M}_2(\tilde{Q})$ is <em>not</em> the image of any involution of the algebra: it negates the images of $\vec e_x$ and $\vec e_z$ while leaving $\mathsf{M}_2(\vec e_y)$, which has real entries, untouched, and so it destroys the sector dictionary. The four conjugations $\natural$, $\bar{\phantom{Q}}$, ${}^{*}$ and $\flat$ are evaluated through the matrix formulas recorded in <em>The Element and Operator Representations</em>, never by conjugating entries.</p>
+<p><strong>The realisation is a convention of presentation, not of content.</strong> The isomorphisms that preserve the subspace dictionary are the $\mathsf{M}_{2,\mathrm{S}} = S\mathsf{M}_2 S^{-1}$ with $S$ $*$-unitary up to a nonzero complex scalar, and an arbitrary invertible $S$ destroys the dictionary. The practical consequence is that a mistake of translation between the algebra and its matrices is repaired <strong>here</strong> — by correcting the assignment or the explicit factors of $i$ — and never by altering the biquaternion norm, the $ict'$ assignment or the sector split.</p>
+<p><strong>A bare $\mathsf{M}_2$ means this isomorphism and nothing else.</strong> A plain $\mathsf{M}_2$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\varphi$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde{\Phi} = \varphi\,e_t$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde{U}}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\mathsf{M}_2$ is not any of them.</p>
+<h3 id="the-44-matrix-representation">The 4×4 Matrix Representation</h3>
+<p><strong>The reading.</strong> The $4\times4$ reading is the regular representation, and it answers a different question from the $2\times2$ isomorphism: it reads an element as the operator of multiplication on the algebra taken as a complex vector space. Left multiplication is $\rho_L:\mathbb{B}\to\mathrm{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$,
+$$
+\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2,
+$$
+and right multiplication is $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$. The image is the four-dimensional subspace $\mathbb{B}_L=\rho_L(\mathbb{B})$ of the ambient $M_4(\mathbb{C})$, not the ambient algebra, and likewise $\mathbb{B}_R$ on the right. Each copy is a subalgebra isomorphic to $M_2(\mathbb{C})$, and each is the commutant of the other.</p>
+<p><strong>The canonical frame.</strong> The frame is fixed in <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>: the standard pair and the mixed units
+$$
+\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z),\qquad
+\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y),
+$$
+with $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$, in the order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$. Another gauge or another order of the four basis elements gives another matrix of the same operator; the formulas below hold in this frame.</p>
+<p><strong>The block formula.</strong> In the canonical frame the regular matrix is the $2\times2$ image taken twice, once per tensor factor:
+$$
+\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),\qquad
+\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2 .
+$$
+The first factor is the multiplicity and the second the matrix of the element. The left copy is the set of matrices $I_2\otimes A$ and the right copy the set $B\otimes I_2$: in the $4\times4$ matrix of an element the four blocks are $\mathsf{M}_2(\tilde Q)$, $0$, $0$, $\mathsf{M}_2(\tilde Q)$ on the left, and $M_{11}I_2$, $M_{21}I_2$, $M_{12}I_2$, $M_{22}I_2$ on the right, where $M_{ij}$ are the entries of $\mathsf{M}_2(\tilde Q)$.</p>
+<p><strong>The four unit matrices.</strong> The left images of the four units are
+$$
+\mathsf{M}_4^{L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+\mathsf{M}_4^{L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
+$$
+$$
+\mathsf{M}_4^{L}(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+\mathsf{M}_4^{L}(\vec e_z)=\begin{pmatrix}-i&0&0&0\\0&i&0&0\\0&0&-i&0\\0&0&0&i\end{pmatrix}.
+$$
+Each is $I_2\otimes\mathsf{M}_2(\vec e_k)$ with the $2\times2$ images of §<em>The 2×2 Matrix Representation</em>, and a general element is the linear combination
+$$
+\mathsf{M}_4^{L}(\tilde Q)=Q_t\,\mathsf{M}_4^{L}(e_t)+Q_x\,\mathsf{M}_4^{L}(\vec e_x)+Q_y\,\mathsf{M}_4^{L}(\vec e_y)+Q_z\,\mathsf{M}_4^{L}(\vec e_z).
+$$</p>
+<p><strong>The gamma frame.</strong> The five Dirac generators are two-sided operators of the frame, built from the left and right multiplications $L_{\tilde Q}$ and $R_{\tilde Q}$ of <em>Conventions of the Operators and the Calculus</em>, §<em>The Operators</em>: the left factor is a unit and the right factor a spatial unit,
+$$
+\gamma^0=iR_{\vec e_x},\qquad
+\gamma^1=iL_{\vec e_x}R_{\vec e_y},\qquad
+\gamma^2=iL_{\vec e_y}R_{\vec e_y},\qquad
+\gamma^3=iL_{\vec e_z}R_{\vec e_y},\qquad
+\gamma_5=-iR_{\vec e_z}.
+$$
+In the canonical frame they are the Dirac matrices
+$$
+\gamma^0=\begin{pmatrix}0&0&1&0\\0&0&0&1\\1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma^1=\begin{pmatrix}0&0&0&1\\0&0&1&0\\0&-1&0&0\\-1&0&0&0\end{pmatrix},
+$$
+$$
+\gamma^2=\begin{pmatrix}0&0&0&-i\\0&0&i&0\\0&i&0&0\\-i&0&0&0\end{pmatrix},\qquad
+\gamma^3=\begin{pmatrix}0&0&1&0\\0&0&0&-1\\-1&0&0&0\\0&1&0&0\end{pmatrix},\qquad
+\gamma_5=\begin{pmatrix}-1&0&0&0\\0&-1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix}.
+$$
+They obey the Clifford relations and the chirality identity
+$$
+\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad
+(\gamma^0)^2=I_4,\quad(\gamma^k)^2=-I_4,\qquad
+\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3,\qquad
+\gamma_5\gamma^\mu=-\gamma^\mu\gamma_5 .
+$$</p>
+<p><strong>The sixteen products are the sixteen cells.</strong> With $\mu,\nu\in\{t,x,y,z\}$ the cell is the two-sided operator $L_{e_\mu}R_{e_\nu}$, left multiplication by $e_\mu$ followed by right multiplication by $e_\nu$. The sixteen products of the gamma frame are these cells, each with a coefficient of unit modulus:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>grade</th>
+<th>$\gamma$-product</th>
+<th>cell $L_{e_\mu}R_{e_\nu}$</th>
+<th>cell in the $\gamma$'s</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$1$</td>
+<td>$L_{e_t}R_{e_t}$</td>
+<td>$L_{e_t}R_{e_t}=1$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\gamma^0$</td>
+<td>$L_{e_t}R_{e_x}$</td>
+<td>$L_{e_t}R_{e_x}=-i\gamma^0$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\gamma^1$</td>
+<td>$L_{e_x}R_{e_y}$</td>
+<td>$L_{e_x}R_{e_y}=-i\gamma^1$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\gamma^2$</td>
+<td>$L_{e_y}R_{e_y}$</td>
+<td>$L_{e_y}R_{e_y}=-i\gamma^2$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\gamma^3$</td>
+<td>$L_{e_z}R_{e_y}$</td>
+<td>$L_{e_z}R_{e_y}=-i\gamma^3$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma^0\gamma^1$</td>
+<td>$L_{e_x}R_{e_z}$</td>
+<td>$L_{e_x}R_{e_z}=\gamma^0\gamma^1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma^0\gamma^2$</td>
+<td>$L_{e_y}R_{e_z}$</td>
+<td>$L_{e_y}R_{e_z}=\gamma^0\gamma^2$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma^0\gamma^3$</td>
+<td>$L_{e_z}R_{e_z}$</td>
+<td>$L_{e_z}R_{e_z}=\gamma^0\gamma^3$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma^1\gamma^2$</td>
+<td>$L_{e_z}R_{e_t}$</td>
+<td>$L_{e_z}R_{e_t}=\gamma^1\gamma^2$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma^1\gamma^3$</td>
+<td>$L_{e_y}R_{e_t}$</td>
+<td>$L_{e_y}R_{e_t}=-\gamma^1\gamma^3$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\gamma^2\gamma^3$</td>
+<td>$L_{e_x}R_{e_t}$</td>
+<td>$L_{e_x}R_{e_t}=\gamma^2\gamma^3$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\gamma^0\gamma^1\gamma^2$</td>
+<td>$L_{e_z}R_{e_x}$</td>
+<td>$L_{e_z}R_{e_x}=-i\gamma^0\gamma^1\gamma^2$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\gamma^0\gamma^1\gamma^3$</td>
+<td>$L_{e_y}R_{e_x}$</td>
+<td>$L_{e_y}R_{e_x}=i\gamma^0\gamma^1\gamma^3$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\gamma^0\gamma^2\gamma^3$</td>
+<td>$L_{e_x}R_{e_x}$</td>
+<td>$L_{e_x}R_{e_x}=-i\gamma^0\gamma^2\gamma^3$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\gamma^1\gamma^2\gamma^3$</td>
+<td>$L_{e_t}R_{e_y}$</td>
+<td>$L_{e_t}R_{e_y}=i\gamma^1\gamma^2\gamma^3$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\gamma^0\gamma^1\gamma^2\gamma^3$</td>
+<td>$L_{e_t}R_{e_z}$</td>
+<td>$L_{e_t}R_{e_z}=i\gamma_5=-\gamma^0\gamma^1\gamma^2\gamma^3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Read a row from the left: the product is $c$ times the cell, with $c\in\{1,-1,i,-i\}$. Read it from the right: the cell is $\bar c$ times the product. The last row is the pseudoscalar, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3=-iL_{e_t}R_{e_z}$. The cells are labelled by the frame units, not by spacetime indices: $L_{e_\mu}R_{e_\nu}$ with $\mu,\nu\in\{t,x,y,z\}$ is not the stress–energy tensor $T_{\mu\nu}$ of the physics articles. The full table, with the proof and the choice of frame, is §<em>A Gamma Frame, and the Choice Behind It</em> of <em>$M_4(\mathbb{C})$ Representation : The Two-Sided Operators on the Biquaternion Algebra</em> in the mathematics corpus.</p>
+<p><strong>The invariants.</strong> With $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$,
+$$
+\det\mathsf{M}_4^{L}(\tilde Q)=\det\mathsf{M}_4^{R}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},
+\qquad
+\operatorname{tr}\mathsf{M}_4^{L}(\tilde Q)=\operatorname{tr}\mathsf{M}_4^{R}(\tilde Q)=4\,\mathrm{Sc}(\tilde Q).
+$$
+The determinant is the square of the biquaternion norm and the trace is four times the scalar part; both are properties of the element, read in the regular representation. The explicit frame, the product, the determinant and the volume identity are <em>The General Quaternionic Algebra in the $4\times4$ Left Regular Representation</em> in the mathematics corpus, and the operator reading is <em>The Element and Operator Representations</em>.</p>
+<p><strong>No entry is read without the frame.</strong> Another gauge or another order of the four basis elements gives another matrix of the same operator; the block formula holds in the canonical frame alone. The explicit matrices of the mathematics model articles are in the coefficient basis, and $S$ carries them to the canonical frame; the physics articles use the canonical frame. The copy and the element are what the frame does not change.</p>
+<h3 id="the-clifford-map">The Clifford Map</h3>
+<p><strong>The Clifford map is $\iota_{\mathrm{Cl}}$, and it is not a regular matrix.</strong> The articles on the Dirac algebra identify the biquaternion algebra with the even subalgebra of $\mathrm{Cl}_{1,3}$ by</p>
+<p>$$
+\iota_{\mathrm{Cl}}(e_t)=I_4,\qquad
+\iota_{\mathrm{Cl}}(\vec e_x)=\gamma^2\gamma^3,\qquad
+\iota_{\mathrm{Cl}}(\vec e_y)=\gamma^3\gamma^1,\qquad
+\iota_{\mathrm{Cl}}(\vec e_z)=\gamma^1\gamma^2,\qquad
+\iota_{\mathrm{Cl}}(i)=-\gamma^0\gamma^1\gamma^2\gamma^3 .
+$$
+The five generators are the matrices of §<em>The 4×4 Matrix Representation</em>, read in the same frame.</p>
+<p>The two are different objects: $\mathsf{M}_4^{L}$ is the matrix of left multiplication on $\mathbb{B}$, in the canonical frame, while $\iota_{\mathrm{Cl}}$ identifies $\mathbb{B}$ with the even subalgebra of $\mathrm{Cl}_{1,3}$. Their images are both $4\times4$ matrices, and that is all they share. A bare $\mathsf{M}_4$ is written for neither. The regular matrices carry $L$ or $R$, and the Clifford map carries $\iota_{\mathrm{Cl}}$; the dictionary is <em>The Dirac Algebra and Biquaternions — A Dictionary</em>.</p>
+<h2 id="summary">Summary</h2>
+<p>The four-vector presentation reads the element as its quadruple of complex coefficients, one place to a unit. No index is raised or lowered anywhere in the series; the coefficient and the element are read in the same position.</p>
+<p>The $2\times2$ isomorphism $\mathsf{M}_2$ is fixed by four images: $e_t\mapsto I_2$, and the three vector units to $-i$ times the Pauli matrices, with $\mathsf{M}_2(i)=iI_2$ on the central scalar. The assignment is forced by $\vec e_k^2=-e_t$ and by $\vec e_x\vec e_y=\vec e_z$. The trace is twice the scalar part, the determinant is the biquaternion norm, and conjugating entries on their own is not an involution of the algebra. A bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.</p>
+<p>The $4\times4$ representation is the regular one, $\rho_L$ and $\rho_R$, and its image is a four-dimensional subalgebra of the ambient $M_4(\mathbb{C})$, not the ambient algebra. In the canonical Peirce frame the left matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$ and the right is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$. The four unit matrices are written out, the five gamma matrices are two-sided operators of that frame, and their sixteen products are the sixteen cells $L_{e_\mu}R_{e_\nu}$, each with a coefficient of unit modulus. The determinant is the square of the norm and the trace is four times the scalar part. No entry is read without its frame, and no frame changes the element or the copy.</p>
+<p>The Clifford map $\iota_{\mathrm{Cl}}$ identifies the algebra with the even subalgebra of $\mathrm{Cl}_{1,3}$. It is not a regular matrix, and the two share only the size of their images.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$</td>
+<td>The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$</td>
+<td>The trace, twice the scalar part</td>
+</tr>
+<tr>
+<td>$\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$</td>
+<td>The determinant, the biquaternion norm</td>
+</tr>
+<tr>
+<td>$\rho_L,\rho_R$</td>
+<td>Left and right multiplication as linear maps, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B},L}$</td>
+<td>The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$</td>
+<td>The regular matrix in the canonical frame</td>
+</tr>
+<tr>
+<td>$\gamma^0,\dots,\gamma^3,\gamma_5$</td>
+<td>The five Dirac generators of the canonical frame</td>
+</tr>
+<tr>
+<td>$\iota_{\mathrm{Cl}}$</td>
+<td>The identification with the even subalgebra of $\mathrm{Cl}_{1,3}$; not a regular matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>, for the algebra and the element glyphs.</li>
+<li><a href="conventions-of-the-products-and-the-forms.html">Conventions of the Products and the Forms</a>, for the products the matrix product mirrors.</li>
+<li><a href="conventions-of-the-operators-and-the-calculus.html">Conventions of the Operators and the Calculus</a>, for the left and right multiplications these matrices represent.</li>
+<li><a href="the-element-and-operator-representations.html">Element and Operator Representations: The Three Actions</a>, companion article, for the coefficient space and the three actions.</li>
+<li><a href="../articles_maths/m4c-model-the-product-the-trace-and-the-determinant.html">$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Product, the Trace and the Determinant</a>, for the change of frame between the coefficient basis and the canonical frame.</li>
+<li><a href="the-dirac-algebra-and-biquaternions-a-dictionary.html">The Dirac Algebra and Biquaternions — A Dictionary</a>, for the Clifford map.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

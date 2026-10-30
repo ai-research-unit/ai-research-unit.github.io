@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conventions of the Norms and the Pairings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="conventions-of-the-norms-and-the-pairings"><strong>Conventions of the Norms and the Pairings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>These are the conventions of the norms and of the pairings. The norm of a form is the form at its two equal arguments, so the four norms are fixed with the four forms; the article assumes the products and the forms of <em>Conventions of the Products and the Forms</em> and the base of <em>Conventions in the Biquaternion Universe</em>.</p>
+<p>The order follows the reading. The four norms are named by one letter each, with two arities; the qualified words regular and degenerate are fixed; the unitary convention fixes what norm one means in each layer and separates it from the star-unitary condition. The polar word follows, with its four factors and its domain, the two norms it is read against, the four objects called a boost, the four-momentum, the trace and the normalised state, and the three pairings with their non-nested domains.</p>
+<p>The article states conventions only; the existence and uniqueness of the word are proved in <em>The Polar Decomposition of a N-Regular Biquaternion</em>, and the pairings in <em>The Polar Decomposition and Its Three Pairings</em>.</p>
+<h2 id="the-four-algebraic-norms-and-the-unitary-convention">The Four Algebraic Norms and the Unitary Convention</h2>
+<p><strong>The definition of a norm.</strong> The norm of a form is that form read at its two equal arguments,</p>
+<p>$$
+\mathrm{Norm}(\tilde{Q}) = \mathrm{Form}(\tilde{Q},\tilde{Q}) ,
+$$</p>
+<p>and the convention is one of <strong>notation, not of substance</strong>: the pair is the form and the norm of the statement at hand, and the four forms above and the four norms below are its instances.</p>
+<p><strong>Bars around a complex element are the ordinary complex modulus.</strong> For $Q=q+iq'$,</p>
+<p>$$
+\lvert Q\rvert=\sqrt{Q\bar Q}=\sqrt{q^2+q'^2},
+$$</p>
+<p>a real and non-negative number. The bars are the modulus and not a bracket of the layer: the algebraic norms keep their bracket, $\langle Q\rangle=Q^2$ and $\langle Q\rangle_{*}=Q\bar Q$. The same bars apply to a complex coefficient of a biquaternion, $\lvert Q_\mu\rvert=\sqrt{q_\mu^2+{q'_\mu}^2}$; over $\mathbb{C}$ the square of the modulus is the Hermitian norm, $\lvert Q\rvert^2=\langle Q\rangle_{*}$.</p>
+<p><strong>The argument of a complex element is written $\arg Q_t$.</strong> For $Q_t\neq0$ it is the angle of the polar form,</p>
+<p>$$
+Q_t=\lvert Q_t\rvert\,e^{i\arg Q_t},
+$$</p>
+<p>defined modulo $2\pi$; the branch is stated where the argument is used, and the principal argument in $(-\pi,\pi]$ is written $\operatorname{Arg}Q_t$. The same letter applies to a complex coefficient of a biquaternion, $\arg Q_\mu$, with $\lvert Q_\mu\rvert$ the modulus above.</p>
+<p><strong>The four algebraic norms.</strong> Each pair gives one norm, the diagonal of its form. <strong>One bracket, two arities:</strong> the bracket names the form when it carries two arguments and the algebraic norm when it carries one, so the plain bracket is the form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ and the norm $\langle\tilde{Q}\rangle = \langle\tilde{Q},\tilde{Q}\rangle$, and the same holds for the Hermitian, the quaternionic and the Krein. Read with one argument, the value lies in $\mathbb{C}$ for the two bilinear norms and in $\mathbb{R}$ for the two sesquilinear norms, because a sesquilinear form has a real diagonal. The four names are those of the four forms with <em>norm</em> in place of <em>form</em>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>form</th>
+<th>letter</th>
+<th>algebraic norm</th>
+<th>value</th>
+<th>realified signature</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$</td>
+<td>plain</td>
+<td>$P$</td>
+<td>$Q_t^2-Q_x^2-Q_y^2-Q_z^2$</td>
+<td>$\mathbb{C}$</td>
+<td>$(4,4)$</td>
+<td>complex cone</td>
+</tr>
+<tr>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$</td>
+<td>quaternionic</td>
+<td>$N$</td>
+<td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
+<td>$\mathbb{C}$</td>
+<td>$(4,4)$</td>
+<td>multiplicative; zero-divisor cone</td>
+</tr>
+<tr>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$</td>
+<td>Hermitian</td>
+<td>$H$</td>
+<td>$\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$</td>
+<td>$\mathbb{R}$</td>
+<td>$(8,0)$</td>
+<td>definite; topology</td>
+</tr>
+<tr>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*})$</td>
+<td>Krein</td>
+<td>$K$</td>
+<td>$\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$</td>
+<td>$\mathbb{R}$</td>
+<td>$(2,6)$</td>
+<td>indefinite</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One letter, two arities.</strong> The four also carry one letter each, $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $K$ for the Krein, the letter naming the form with two arguments and the algebraic norm with one: $P(\tilde{Q}_1,\tilde{Q}_2)$ is the plain form and $P(\tilde{Q})$ the plain norm, and the same holds for the other three. The plain norm is written $P$ and not $B$, because $B$ is the complex modulus of the vector part, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. The letters and the four qualified notions of a regular and a degenerate biquaternion are those of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, §<em>Regular and Degenerate Biquaternions</em>.</p>
+<p>The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology. The signature column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. Read on one argument the four are the plain norm, the Hermitian norm, the quaternionic norm and the Krein norm. The other sense of the word, the <strong>topological norm</strong>, is the square root of the definite one, $\lVert\tilde{Q}\rVert_E = \bigl(\langle\tilde{Q}\rangle_{*}\bigr)^{1/2}$, and it is <em>The Norm Defined by a Form</em>. The four products, their forms and their norms go together, one to a row:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Form</th>
+<th>Letter</th>
+<th>Norm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the general plain bilinear</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle$</td>
+<td>$P$</td>
+<td>the plain norm $\langle\tilde{Q}\rangle$</td>
+</tr>
+<tr>
+<td>the general quaternionic bilinear</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$</td>
+<td>$N$</td>
+<td>the quaternionic norm $\langle\tilde{Q}\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>the general plain sesquilinear</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$</td>
+<td>$H$</td>
+<td>the Hermitian norm $\langle\tilde{Q}\rangle_{*}$</td>
+</tr>
+<tr>
+<td>the general quaternionic sesquilinear</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$</td>
+<td>$K$</td>
+<td>the Krein norm $\langle\tilde{Q}\rangle_{\natural*}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The qualified regular and the qualified degenerate.</strong> For a letter $\Phi$ of the four, a biquaternion is <strong>$\Phi$-regular</strong> when $\Phi(\tilde{Q})\neq0$ and <strong>$\Phi$-degenerate</strong> when $\Phi(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the unit group and $N$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified <em>regular</em> is the spectral one, $B^{2}\neq0$, of <em>The Spectrum</em>, so the letter is never omitted.</p>
+<h3 id="the-unitary-convention">The Unitary Convention</h3>
+<p><strong>The convention is the unit-element convention, and the heading keeps its old name because the corpus cites it by that name.</strong> The glyphs $U$, $\tilde u$ and $\tilde U$, in the three cases of the case rule, mark an element of <strong>norm one</strong>; for the biquaternion algebra that norm is $N$ and only $N$. It does not mark a $*$-unitary element: the $*$-unitary condition is a different condition, stated at the end of the section.</p>
+<p>A unit element carries its own glyph, the <strong>$u$</strong> in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$, as in the mathematical corpus (§<em>The Unitary Convention</em> of <em>Conventions in Mathematics</em>): the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. <strong>The exponential is written $\exp(\cdot)$</strong>, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.</p>
+<p><strong>"Norm one" is fixed layer by layer.</strong> The glyph names no set by itself. The layers used in the physics are these, and the norm of each is the one in the table:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Glyph</th>
+<th>The norm</th>
+<th>The condition</th>
+<th>The norm-one elements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$U$</td>
+<td>$\lvert Q\rvert=(Q\bar Q)^{1/2}$, the modulus</td>
+<td>$\lvert Q\rvert=1$</td>
+<td>$\mathrm{U}(1)=S^{1}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, quaternion</td>
+<td>$\tilde u$</td>
+<td>$\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$</td>
+<td>$\langle\tilde q\rangle_{\natural}=1$</td>
+<td>$Sp(1)=S^{3}=\mathrm{SU}(2)$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathrm{s}}$, split-quaternion</td>
+<td>$\tilde u$</td>
+<td>$\langle\tilde q\rangle_{\natural}$</td>
+<td>$\langle\tilde q\rangle_{\natural}=1$</td>
+<td>$\mathrm{SL}_{2}(\mathbb{R})$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, biquaternion</td>
+<td>$\tilde U$</td>
+<td>$\langle\tilde Q\rangle_{\natural}$ and no other</td>
+<td>$\langle\tilde Q\rangle_{\natural}=e_t$</td>
+<td>$\mathbb{B}^{\times}_{1}\cong\mathrm{SL}(2,\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The real, split-complex, dual, reduced-biquaternion and split-biquaternion layers are tabulated in <em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and <strong>the rotors are these elements</strong>: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.</p>
+<p><strong>For the biquaternion layer the norm is $N$ and no other.</strong> The glyph $\tilde U$ is the $N$-norm-one element,</p>
+<p>$$
+\mathbb{B}^{\times}_{1}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=e_t\}\cong\mathrm{SL}(2,\mathbb{C}),
+$$</p>
+<p>and the other three norms of the layer are not unit-element conditions. Their level sets are named for completeness and carry no glyph:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Letter</th>
+<th>Norm</th>
+<th>The level set</th>
+<th>What it is</th>
+<th>Defines $\tilde U$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>$\langle\tilde Q\rangle$</td>
+<td>$Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}=e_t$</td>
+<td>the complex hyperboloid of the plain norm</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>$Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=e_t$</td>
+<td>$\mathbb{B}^{\times}_{1}$, the norm-one units</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>$\langle\tilde Q\rangle_{*}$</td>
+<td>$\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}=1$</td>
+<td>the unit sphere of the Hermitian norm</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>$\langle\tilde Q\rangle_{\natural*}$</td>
+<td>$\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}=1$</td>
+<td>the indefinite level set of the Krein norm</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only $N$ decides invertibility</strong>, which is the reason it is the norm of the glyph: $\{N=0\}$ is the origin together with the zero divisors, while the other three degenerate sets contain units. The phrase "the norm in view" belongs to the polar decompositions, where the author names the norm in the text and takes its level set; it is not a licence to read one glyph under four norms.</p>
+<p><strong>$*$-Unitary is not norm one.</strong> The $*$-unitary group is</p>
+<p>$$
+\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong\mathrm{U}(2)=S^{1}\cdot S^{3},
+$$</p>
+<p>of real dimension four, written upright because it is a group. Its elements are <strong>$*$-unitary elements</strong>, not unit elements, and the two conditions are independent:</p>
+<ul>
+<li>neither set contains the other: $\mathrm{U}(2)\cap\mathrm{SL}(2,\mathbb{C})=\mathrm{SU}(2)=S^{3}$, the unit quaternions;</li>
+<li>the Hermitian level set $\{H=1\}$ contains $\mathrm{U}(2)$ strictly, since it is the unit sphere of $\mathbb{R}^{8}$ of dimension seven and $\mathrm{U}(2)$ has dimension four;</li>
+<li>the $N$-norm-one set $\mathbb{B}^{\times}_{1}$ does not contain $\mathrm{U}(2)$, because $\mathrm{U}(2)\not\subset\mathrm{SL}(2,\mathbb{C})$.</li>
+</ul>
+<p>A boost is a unit element and is not $*$-unitary: $\tilde U_{\mathrm b}$ is $N$-norm one and $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}\neq e_t$. A $*$-unitary element whose determinant is not one is $*$-unitary and is not a unit element. The glyph asserts the first and never the second; an article that needs a $*$-unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.</p>
+<p><strong>The norm and the group condition exist only where their involution does</strong>: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, all four marks over $\mathbb{B}$ and the split-biquaternions.</p>
+<p><strong>The case rule splits the glyph</strong>, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.</p>
+<p><strong>The coordinates carry the letter of the unit element</strong>: in $\mathbb{B}$ it is $\tilde U = U_te_t + U_x\vec e_x + U_y\vec e_y + U_z\vec e_z$ with $U_\mu = u_\mu + iu'_\mu$ and vector part $\vec U = \vec u + i\vec u'$; in $\mathbb{H}$ it is $\tilde u = u_te_t + u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with real $u_\mu$. <strong>A coordinate carries the label of its direction</strong>, as the base does: the scalar coordinate is $U_t$ and the vector coordinates are $U_x, U_y, U_z$, and likewise $u_t, u_x, u_y, u_z$ for the quaternion-layer element $\tilde u$; a role label is written in the upright roman where the statement names a role. <strong>It is allowed to add subscripts when several unit elements are used</strong>, $\tilde U_1, \tilde U_2$.</p>
+<p><strong>The letter $u$ names a unit element and nothing else.</strong> A velocity, a speed, a Lorentz factor and a rapidity are never written $u$ or $U$: the letter of a motion is $v$, and the four-velocity is the element $\tilde V$. A $*$-unitary group is written $\mathrm{U}(1)$, $SU(2)$, $SU(3)$, and its Lie algebra in the upright roman, $\mathrm{u}(1)$, $\mathrm{su}(2)$, $\mathrm{su}(3)$.</p>
+<p><strong>The boost is a unit element, not a letter.</strong> The boost of rapidity $\psi$ along the unit $\vec u_{\mathrm b}$ is
+$$
+\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
+$$
+a Hermitian element of norm one; it carries the glyph $\tilde U$ of every unit element. It is the <strong>frame rotor</strong>; the four-vector factor $\mathcal B=\tilde U_{\mathrm b}^{-2}$ is a different object, and §<em>The Polar Word and the Three Pairings</em> separates the four objects called a boost. Where an infinitesimal generator is needed it is read from the exponential as the pure element $\tfrac12 i\vec u_{\mathrm b}$, and the Lorentz brackets are written on the pure elements $\tfrac12\vec e_k$ and $\tfrac12 i\vec e_k$. No letter $K$ is introduced for the Lorentz boost.</p>
+<h2 id="the-polar-word-and-the-three-pairings">The Polar Word and the Three Pairings</h2>
+<p>The series writes one polar word and reads it in three bracketings. The word, its factors and the three readings are fixed here once: the polar-decomposition articles of the <em>Biquaternions</em> category prove the statements and the physics articles interpret them, but all of them use these symbols with these meanings.</p>
+<h3 id="the-word-and-its-factors">The Word and Its Factors</h3>
+<p><strong>The domain.</strong> The word exists on the complement of the zero-divisor cone, $\langle\tilde Q\rangle_{\natural}\neq0$, and on no larger set. The existence and uniqueness are those of <em>The Polar Decomposition of a N-Regular Biquaternion</em>.</p>
+<p><strong>The word.</strong> Every element off the cone is the ordered product</p>
+<p>$$
+\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\qquad r>0,\qquad \alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}],\qquad \psi_w\ge0,\qquad \theta\in[0,2\pi],
+$$</p>
+<p>with the factors of the table. The order is forced: the scale and the phase are central, the Hermitian positive boost stands on the left of the real rotor, and the rotor is what remains after the Hermitian part is divided out.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>factor</th>
+<th>glyph</th>
+<th>range</th>
+<th>type</th>
+<th>action on the algebra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>scale</td>
+<td>$r$</td>
+<td>$r>0$</td>
+<td>real central scalar</td>
+<td>dilation by $r^2$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>central phase</td>
+<td>$\exp(i\alpha)$</td>
+<td>$\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$</td>
+<td>central unit</td>
+<td>scalar multiplication</td>
+</tr>
+<tr>
+<td>3</td>
+<td>boost</td>
+<td>$\tilde U_{\mathrm b}(\psi_w)=\cosh\frac{\psi_w}{2}e_t+i\sinh\frac{\psi_w}{2}\vec u_{\mathrm b}$</td>
+<td>$\psi_w\ge0$, $\vec u_{\mathrm b}$ a unit real vector</td>
+<td>Hermitian positive, $\det=1$</td>
+<td>congruence $X\mapsto\tilde U_{\mathrm b}(\psi_w)X\tilde U_{\mathrm b}(\psi_w)^{*}$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>rotor</td>
+<td>$\tilde u_{\mathrm r}=\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\theta\in[0,2\pi]$, $\vec u_{\mathrm r}$ a unit real vector</td>
+<td>real unit quaternion</td>
+<td>conjugation $X\mapsto\tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The word is not the exponential.</strong> The four factors are a section of the word map, not of the exponential map; the two coincide only when the exponents commute. The defect is the Baker–Campbell–Hausdorff term, and it is recorded in <em>The Exponential Word and Its Boundary</em>.</p>
+<h3 id="the-two-norms-of-the-word">The Two Norms of the Word</h3>
+<p>The modulus is the square root of the <strong>quaternionic</strong> norm, and it is not the square root of the Hermitian norm. The two norms measure different things, and the corpus uses both.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>bracket</th>
+<th>name</th>
+<th>value</th>
+<th>role in the word</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$</td>
+<td>quaternionic norm</td>
+<td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2$, complex</td>
+<td>the modulus, $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch; multiplicative; vanishing is the cone</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$</td>
+<td>Hermitian norm</td>
+<td>$\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$, real and non-negative</td>
+<td>the total size; it carries the topology and never enters the existence condition of the word</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two warnings.</strong> First, a square root of the Hermitian norm is the <strong>topological norm</strong>, not the polar modulus: the polar modulus is complex and the topological norm is real, so the two are not interchangeable. Second, the polar articles write $E^2=\sum_\mu\lvert Q_\mu\rvert^2$ for the Hermitian norm. That $E$ is not the physical energy: for a four-momentum it is $m^2c^2\cosh 2\psi$ in the notation below, not $m^2c^4\cosh^2\psi$. A formula that needs the energy takes it from the four-momentum, not from this $E^2$.</p>
+<h3 id="the-four-objects-called-a-boost">The Four Objects Called a Boost</h3>
+<p>Four different objects carry the word <em>boost</em>, and the factor of two between them is the most common error in the corpus. They are separated here once. The kinematic rapidity is $\psi$; the word's parameter is $\psi_w$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>glyph</th>
+<th>formula</th>
+<th>exponent angle</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>frame rotor</td>
+<td>$\tilde U_{\mathrm b}(\psi)$</td>
+<td>$\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$</td>
+<td>$\psi/2$</td>
+<td>the Lorentz rotor; its congruence is the boost of rapidity $\psi$; linear in the spinor</td>
+</tr>
+<tr>
+<td>four-vector factor</td>
+<td>$\mathcal B=\tilde U_{\mathrm b}(\psi)^{-2}$</td>
+<td>$\cosh\psi\,e_t-i\sinh\psi\,\vec u_{\mathrm b}$</td>
+<td>$-\psi$</td>
+<td>the inverse square of the frame rotor; the factor a four-vector element carries</td>
+</tr>
+<tr>
+<td>generator</td>
+<td>$\tfrac12 i\psi\vec u_{\mathrm b}$</td>
+<td>—</td>
+<td>—</td>
+<td>the Hermitian element whose exponential is $\tilde U_{\mathrm b}(\psi)$</td>
+</tr>
+<tr>
+<td>rapidities</td>
+<td>$\psi,\ \psi_w$</td>
+<td>real, $\psi\ge0$</td>
+<td>—</td>
+<td>$\psi$ kinematic; $\psi_w=2\psi$ for a four-vector element, whose word axis is opposite the frame axis</td>
+</tr>
+</tbody>
+</table></div>
+<p>The fourth factor of the word, $\tilde u_{\mathrm r}$, is a rotation and not a boost. The word <em>boost</em> alone is not a name: a statement must say whether it means the frame rotor, the four-vector factor, the generator or a rapidity. In the word table the letter $\vec u_{\mathrm b}$ names the axis of the word's factor; for a transformation it coincides with the frame axis, and for a four-vector it is opposite it.</p>
+<p><strong>Linear and bilinear.</strong> The frame rotor acts on a spinor by left multiplication, $\chi\mapsto\tilde U_{\mathrm b}(\psi)\chi$, and on a four-vector by the congruence $X\mapsto\tilde U_{\mathrm b}(\psi)X\tilde U_{\mathrm b}(\psi)^{*}$. A four-vector is bilinear in the spinor, so the factor that the four-vector element itself carries is the inverse square, $\mathcal B=\tilde U_{\mathrm b}(\psi)^{-2}=e^{-i\psi\vec u_{\mathrm b}}$: the same boost, read twice. The word stores the boost in the frame rotor and deposits it twice in the four-vector; its parameter is $\psi_w=2\psi$.</p>
+<h3 id="the-four-momentum">The Four-Momentum</h3>
+<p>Let $\tilde P=i(E/c)e_t+\vec p$ with $E=mc^2\cosh\psi$ and $\vec p=mc\sinh\psi\,\hat p$, so that $\psi$ is the kinematic rapidity. Then</p>
+<p>$$
+\tilde P=imc\,\mathcal B,\qquad \mathcal B=e^{-i\psi\hat p},\qquad \Rho=imc,\qquad \Theta=-i\psi,\qquad \vec U=\hat p,
+$$</p>
+<p>with $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}=\lvert\vec p\rvert$, and the eigenvalues are</p>
+<p>$$
+\lambda_\pm=Q_t\pm iB=imc\,e^{\pm\psi}=\Rho\,e^{\pm i\Theta}.
+$$</p>
+<p>The word's parameter here is $\psi_w=2\psi$, and the third factor of the word is $\mathcal B$, whose axis is $-\hat p$. The frame rotor $\tilde U_{\mathrm b}(\psi)$ has the axis $+\hat p$.</p>
+<p><strong>Three errors to avoid.</strong> Writing $\Theta=+i\psi$ swaps the two eigenvalues. Writing $\psi$ for the word parameter when the element is a four-vector halves the word's rapidity, because $\psi_w=2\psi$. Taking the frame rotor $\tilde U_{\mathrm b}(\psi)$ for the four-vector factor gives $imc\,\tilde U_{\mathrm b}(\psi)$, a four-vector of rapidity $\psi/2$. The Hamilton axis $\vec U=\vec Q/B$ points along the momentum; the word's axis in $\mathcal B$ points opposite it, because $\mathcal B=e^{-i\psi\hat p}$ is a boost of rapidity $\psi$ about $-\hat p$.</p>
+<h3 id="the-trace-and-the-normalised-state">The Trace and the Normalised State</h3>
+<p>The trace is the trace of the $2\times2$ image and nothing else,</p>
+<p>$$
+\operatorname{Tr}\tilde Q=\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\,\tilde Q=2Q_t.
+$$</p>
+<p>The factor $2$ is forced by $\mathsf M_2(e_t)=I_2$ and cannot be divided out. It cancels in every ratio, and the Born weight is a ratio:</p>
+<p>$$
+p=\frac{\langle\tilde{Ϛ},\tilde H\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}=\frac{\operatorname{Tr}(\tilde{Ϛ}\tilde H)}{\operatorname{Tr}\tilde{Ϛ}},
+\qquad \operatorname{Tr}\tilde{Ϛ}=1\iff\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12 .
+$$</p>
+<p>A normalised state therefore has trace one; the factor $2$ belongs in the definition of the trace and cancels in the probability. Dropping it from the trace or inserting it in the ratio are the two opposite mistakes.</p>
+<h3 id="the-domains-of-the-three-pairings">The Domains of the Three Pairings</h3>
+<p>The three pairings are three bracketings of the same word, and their domains differ. The table records the condition for the <strong>factorisation</strong> and the condition for the <strong>construction</strong>, which are not the same statement.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pairing</th>
+<th>factorisation</th>
+<th>factorisation exists</th>
+<th>construction exists</th>
+<th>witness of failure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>word</td>
+<td>$r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}\neq0$</td>
+<td>same</td>
+<td>any element of the cone</td>
+</tr>
+<tr>
+<td>quaternion</td>
+<td>$\tilde q\,e^{i\tilde\Psi}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}\neq0$</td>
+<td>$\tilde q_r\neq0$ (on this domain)</td>
+<td>$i\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=-2$ but $\tilde q_r=0$</td>
+</tr>
+<tr>
+<td>Hamilton</td>
+<td>$\Rho\,e^{\vec U\Theta}$</td>
+<td>$\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$</td>
+<td>same</td>
+<td>$e_t+\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=1$ but $\langle\vec Q,\vec Q\rangle_{\natural}=0$</td>
+</tr>
+<tr>
+<td>Cartan</td>
+<td>$\tilde Q_H\tilde Q_0$</td>
+<td>$\langle\tilde Q\rangle_{\natural}\neq0$</td>
+<td>same</td>
+<td>$e_t+i\vec e_x$: on the cone; the generalized form gives a partial isometry</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The domains are not nested.</strong> The quaternion construction fails at $\tilde q_r=0$; the Hamilton pairing fails when the vector part is null; the Cartan pairing is the widest and is total off the cone. The generalized polar decomposition extends the Cartan pairing to the cone with a partial isometry, and it is <em>The Polar Decomposition of a Biquaternion</em>.</p>
+<p><strong>The tangent equation on the domain of the word.</strong> The equation $\tan\tilde\Psi=\tilde q_r^{-1}\tilde q_i$ fails to have a real solution in exactly one case, when $\tilde q_r^{-1}\tilde q_i$ is a unit pure quaternion. That case forces $\langle\tilde Q\rangle_{\natural}=0$: writing $\tilde q_i=\tilde q_rT$ with $T$ a unit pure quaternion makes the real inner product of $\tilde q_r$ and $\tilde q_i$ vanish and their norms equal, so the difference of the squared norms and the cross term both vanish. On the complement of the cone, therefore, the construction exists exactly when $\tilde q_r\neq0$. The condition $\tilde q_r\neq0$ alone is not sufficient on the whole algebra: $e_t+i\vec e_x$ has $\tilde q_r=e_t$ and lies on the cone, where the word does not exist. The article's "exactly" is correct on the word's domain; its claim that the set $\{\tilde q_r\neq0\}$ lies inside that domain is not.</p>
+<h2 id="summary">Summary</h2>
+<p>Each form has a norm, and each norm takes one letter, $P$, $N$, $H$ or $K$, used with two arguments for the form and with one for the norm. Regular and degenerate are qualified by the letter, because only the $N$ pair gives the unit partition, and the unqualified word regular is spectral. Norm one is fixed layer by layer by the unitary convention, and for the biquaternion layer it is $N$ and no other; the star-unitary condition is a different condition, and only $N$ decides invertibility. The letter $u$ names a unit element and nothing else.</p>
+<p>The polar word is $\tilde Q=r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ on the complement of the zero-divisor cone. It is a section of the word map, not of the exponential. The modulus is the square root of the quaternionic norm, not of the Hermitian one; the Hermitian norm is the topological norm and never enters the existence condition. Four objects carry the word <em>boost</em>, and the factor of two between the frame rotor and the four-vector factor is the most common error in the corpus; for a four-momentum $\Rho=imc$, $\Theta=-i\psi$ and the word parameter is $\psi_w=2\psi$.</p>
+<p>The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$, and the factor two is forced and cancels in the Born ratio; a normalised state has trace one. The three pairings are three bracketings of one word, and their domains are not nested: the quaternion construction can fail where the word exists, the Hamilton pairing can fail where both exist, and the Cartan pairing is the widest off the cone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$, $N$, $H$, $K$</td>
+<td>The four norms, the diagonals of the plain, quaternionic, Hermitian and Krein forms</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\tilde Q\tilde Q^{\natural}$</td>
+<td>The biquaternion norm, the multiplicative one; its zero set is the zero-divisor cone</td>
+</tr>
+<tr>
+<td>$H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$</td>
+<td>The Hermitian norm, real and non-negative</td>
+</tr>
+<tr>
+<td>$\Phi$-regular, $\Phi$-degenerate</td>
+<td>$\Phi(\tilde Q)\neq0$ and $\Phi(\tilde Q)=0$; only the $N$ pair is the unit partition</td>
+</tr>
+<tr>
+<td>$\Rho,\Theta,\vec U,B$</td>
+<td>The Hamilton data of the polar word; $\Rho=imc$, $\Theta=-i\psi$, $\vec U=\hat p$, $B=\lvert\vec p\rvert$ for a four-momentum</td>
+</tr>
+<tr>
+<td>$\psi$, $\psi_w$</td>
+<td>The kinematic rapidity and the word parameter, $\psi_w=2\psi$ for a four-vector</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b}$, $\mathcal B$</td>
+<td>The frame rotor and the four-vector factor $\mathcal B=\tilde U_{\mathrm b}^{-2}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\tilde Q=2Q_t$</td>
+<td>The trace of the $2\times2$ image; a normalised state has trace one</td>
+</tr>
+<tr>
+<td>$p=\operatorname{Tr}(\tilde{Ϛ}\tilde H)/\operatorname{Tr}\tilde{Ϛ}$</td>
+<td>The Born weight, a ratio in which the factor two cancels</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>, for the algebra and the element glyphs.</li>
+<li><a href="conventions-of-the-products-and-the-forms.html">Conventions of the Products and the Forms</a>, for the four forms whose diagonals are these norms.</li>
+<li><a href="conventions-of-the-representations.html">Conventions of the Representations</a>, for the $2\times2$ image whose trace is used here.</li>
+<li><a href="the-polar-decomposition-and-its-three-pairings.html">The Polar Decomposition and Its Three Pairings</a>, for the domains and the proofs.</li>
+<li><a href="../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of a N-Regular Biquaternion</a>, for the existence and uniqueness of the word.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
