@@ -94,25 +94,22 @@ $$
 \mathsf M_4^{L}(\tilde Q)=Q_tL_t+Q_xL_x+Q_yL_y+Q_zL_z=I_2\otimes\mathsf M_2(\tilde Q).
 $$
 
-**The four right matrices.** Write $R_\nu=\mathsf M_4^{R}(e_\nu)$. Right multiplication is the transpose of left multiplication in the exchanged Peirce frame. Let $\mathsf S$ be the permutation that fixes the two idempotents and exchanges the two mixed Peirce units,
+**The four right matrices.** Write $R_\nu=\mathsf M_4^{R}(e_\nu)$. Right multiplication is the transpose of left multiplication in the exchanged Peirce frame. Let $\mathsf S$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
 $$
 \mathsf S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
 \mathsf S\vec\Upsilon_+=\vec\Upsilon_-,\qquad
 \mathsf S\vec\Upsilon_-=\vec\Upsilon_+,
 $$
-the permutation of the second and third coordinates of the canonical frame. Then
+the permutation of the second and third coordinates of the canonical frame. Its matrix there is
 $$
-\boxed{\;\mathsf M_4^{R}(\tilde Q)=\mathsf S\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1},\qquad
-R_\nu=\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1}\;}
+\mathsf S=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
 $$
-and, unit by unit,
+symmetric and involutive, $\mathsf S^{\mathsf T}=\mathsf S=\mathsf S^{-1}$, of trace $2$ and determinant $-1$; in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. It is a linear involution of the carrier, not an algebra map, not one of the sixteen cells and not a one-sided multiplication. The right matrix is then
 $$
-R_t=L_t,\qquad
-R_x=\mathsf S L_x\mathsf S^{-1},\qquad
-R_y=-\mathsf S L_y\mathsf S^{-1},\qquad
-R_z=\mathsf S L_z\mathsf S^{-1},
+\mathsf M_4^{R}(\tilde Q)=\mathsf S\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1},\qquad
+R_\nu=\mathsf S\,L_\nu^{\mathsf T}\,\mathsf S^{-1}.
 $$
-the sign of $R_y$ being the one of the antisymmetric $L_y$. Explicitly,
+Explicitly,
 $$
 R_t=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
 R_x=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
@@ -155,12 +152,12 @@ $$
 
 The sixteen, with their left and right factors, are
 $$
-\begin{aligned}
+\boxed{\;\begin{aligned}
 &T_{tt}=L_tR_t,\quad T_{tx}=L_tR_x,\quad T_{ty}=L_tR_y,\quad T_{tz}=L_tR_z,\\
 &T_{xt}=L_xR_t,\quad T_{xx}=L_xR_x,\quad T_{xy}=L_xR_y,\quad T_{xz}=L_xR_z,\\
 &T_{yt}=L_yR_t,\quad T_{yx}=L_yR_x,\quad T_{yy}=L_yR_y,\quad T_{yz}=L_yR_z,\\
 &T_{zt}=L_zR_t,\quad T_{zx}=L_zR_x,\quad T_{zy}=L_zR_y,\quad T_{zz}=L_zR_z.
-\end{aligned}
+\end{aligned}\;}
 $$
 
 **The sixteen, entry by entry.** In the canonical frame, grouped by the left index $\mu$,
@@ -282,7 +279,7 @@ The **canonical frame** is the Peirce frame of the standard pair: $\tilde\Pi_\pm
 
 The label $M_4(\mathbb{C})_L$ is retired: it named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$.
 
-The **four left matrices** $L_\mu=\mathsf{M}_4^{L}(e_\mu)$ and the **four right matrices** $R_\nu=\mathsf{M}_4^{R}(e_\nu)$ are written out, with the $L\leftrightarrow R$ correspondence $R_t=L_t$, $R_x=\mathsf S L_x\mathsf S^{-1}$, $R_y=-\mathsf S L_y\mathsf S^{-1}$ and $R_z=\mathsf S L_z\mathsf S^{-1}$, that is $\mathsf{M}_4^{R}(\tilde Q)=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$.
+The **four left matrices** $L_\mu=\mathsf{M}_4^{L}(e_\mu)$ and the **four right matrices** $R_\nu=\mathsf{M}_4^{R}(e_\nu)$ are written out, with the $L\leftrightarrow R$ correspondence $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$, that is $\mathsf{M}_4^{R}(\tilde Q)=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$.
 
 The **sixteen basis matrices** are the products $T_{\mu\nu}=L_\mu R_\nu$, in four families: $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$ and $T_{jk}=L_jR_k$. They are written entry by entry in the canonical frame, and the gamma table reads each of them as a unit coefficient times a product of the five generators.
 
@@ -299,8 +296,8 @@ The **Clifford structure** is the algebra of the cells: $e_\mu\otimes e_\nu^{\ma
 | $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B},L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |
 | $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q)$ | The left regular matrix in the canonical frame |
 | $\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2=\mathsf S\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$ | The right regular matrix in the canonical frame |
-| $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$ |
-| $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_t=L_t$, $R_x=\mathsf S L_x\mathsf S^{-1}$, $R_y=-\mathsf S L_y\mathsf S^{-1}$, $R_z=\mathsf S L_z\mathsf S^{-1}$ |
+| $\mathsf S$ | The exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis |
+| $L_\mu=\mathsf M_4^{L}(e_\mu)$, $R_\mu=\mathsf M_4^{R}(e_\mu)$ | The four left and the four right matrices; the correspondence is $R_\nu=\mathsf S L_\nu^{\mathsf T}\mathsf S^{-1}$ |
 | $T_{\mu\nu}=L_\mu R_\nu$ | The sixteen basis matrices; $T_{tt}=L_t$, $T_{tk}=R_k$, $T_{kt}=L_k$, $T_{jk}=L_jR_k$; their complex span is $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$ |
 | $\gamma^\mu,\gamma_5$ | The generators of the canonical frame, $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
 | $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=T_{\mu t}$, $\iota_{\mathrm{Cl}}(i)=T_{tz}$ |

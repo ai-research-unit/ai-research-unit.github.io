@@ -74,7 +74,7 @@ $$
 
 **Definition.** The right multiplication is $R_{\tilde Q}(\tilde Q_3)=\tilde Q_3\tilde Q$. Its matrix is not $\mathsf{M}_4^{L}(\tilde Q)$: the two families commute, and $R_{\tilde Q}$ is the commuting partner of $L_{\tilde Q}$.
 
-**Proposition (the right matrix is a transpose of the left one).** Let $\mathsf S$ be the permutation of the canonical frame that fixes the two idempotents and exchanges the two mixed Peirce units,
+**Proposition (the right matrix is a transpose of the left one).** Let $\mathsf S$ be the linear involution of the carrier that fixes the two idempotents and exchanges the two mixed Peirce units,
 
 $$
 \mathsf S\tilde\Pi_\pm=\tilde\Pi_\pm,\qquad
@@ -82,7 +82,13 @@ $$
 \mathsf S\vec\Upsilon_-=\vec\Upsilon_+ .
 $$
 
-Then
+**The matrix.** In the canonical frame
+$$
+\mathsf S=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+$$
+the permutation of the second and third coordinates. It is symmetric and involutive, $\mathsf S^{\mathsf T}=\mathsf S=\mathsf S^{-1}$, of trace $2$ and determinant $-1$; in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the same operator is the reflection $\operatorname{diag}(1,1,-1,1)$, which fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$. It is a linear involution of the carrier, not an algebra map, not one of the sixteen cells and not a one-sided multiplication.
+
+With this exchange,
 
 $$
 \boxed{\;R_{\tilde Q}=\mathsf S\,L_{\tilde Q}^{\mathsf T}\,\mathsf S^{-1}\;}
@@ -629,7 +635,7 @@ For the product question, write $M=\sum c_{\mu\nu}T_{\mu\nu}$ with $c(M)_{\mu\nu
 | $T_{\tilde Q_1,\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}$ | the two-sided operator $\tilde Q_3\mapsto\tilde Q_1\tilde Q_3\tilde Q_2$ |
 | $[Q]=(Q_t,Q_x,Q_y,Q_z)^{\mathsf T}$ | the coordinate column of $\tilde Q$ |
 | $T_{\mu\nu}=L_\mu R_\nu$ | the sixteen basis matrices |
-| $\mathsf S$ | the exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; $R_{\tilde Q}=\mathsf S L_{\tilde Q}^{\mathsf T}\mathsf S^{-1}$ |
+| $\mathsf S$ | the exchange of $\vec\Upsilon_+$ and $\vec\Upsilon_-$ fixing $\tilde\Pi_\pm$; the swap of the second and third canonical coordinates, $\operatorname{diag}(1,1,-1,1)$ in the coefficient basis; $R_{\tilde Q}=\mathsf S L_{\tilde Q}^{\mathsf T}\mathsf S^{-1}$ |
 | $C_{\Pi}$ | the Peirce change, $\det C_{\Pi}=-\tfrac14$, from the canonical frame to the coefficient basis |
 | $\Theta_{\tilde Q}=T_{\tilde Q,\tilde Q^{*}}$ | the bilinear sandwich |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic norm, the determinant of $\mathsf M_2(\tilde Q)$ |
