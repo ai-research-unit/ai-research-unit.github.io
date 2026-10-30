@@ -97,7 +97,7 @@ The real dimensions are $1$ and $3$, and they add to the real dimension $4$ of $
 
 ### The Rotor Part
 
-The unit factor is a unit real quaternion, and the corpus calls it a **rotor**: it is the rotor part of the decomposition. The symbol is $\tilde u_{\mathrm r}$, the one used in *Modulus–Unit Polar Decomposition of Quaternions* and in the biquaternion articles, where it is the fourth factor of the word. *Conventions in Mathematics* (§*Symbols*) writes a rotor $\tilde u$ when no other unit is in play. In the exponential form it is
+The unit factor is a unit real quaternion, and the corpus calls it a **rotor**: it is the rotor part of the decomposition. The symbol is $\tilde u_{\mathrm r}$, the one used in *Modulus–Unit Polar Decomposition of Quaternions* and in the biquaternion articles, where it is the fourth factor of the word. *Conventions in Mathematics*, §*Summary of Notation* writes a rotor $\tilde u$ when no other unit is in play. In the exponential form it is
 
 $$
 \tilde u_{\mathrm r}=\exp(\vec v)=\cos\theta+\vec n\sin\theta, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .

@@ -89,10 +89,10 @@ where $\vec u$ is a unit real vector. This is a **unit real quaternion**: it lie
 The **observables** are obtained by multiplying the generators by $-i\hbar$:
 
 $$
-\tilde S_{\mathrm{tot},k} = -i\hbar\, g_k = \tfrac{i\hbar}{2} \vec e_k \quad(\text{for spin-}\tfrac12), \qquad [\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}] = i\hbar\,\epsilon_{ijk}\tilde S_{\mathrm{tot},k} .
+\tilde S_k = -i\hbar\, g_k = \tfrac{i\hbar}{2} \vec e_k \quad(\text{for spin-}\tfrac12), \qquad [\tilde S_i,\tilde S_j] = i\hbar\,\epsilon_{ijk}\tilde S_k .
 $$
 
-The verification is one line: $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}] = (-i\hbar)^2 [g_i,g_j] = -\hbar^2(-\epsilon_{ijk}g_k) = \hbar^2\epsilon_{ijk}g_k$, while $i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k} = i\hbar\epsilon_{ijk}(-i\hbar g_k) = \hbar^2\epsilon_{ijk}g_k$. The two agree. The passage between the two pictures is the standard one: the Hermitian observables $\tilde S_{\mathrm{tot},k}$ generate the $*$-unitary rotations through $\exp(-i\theta\,\vec u_k\tilde S_{\mathrm{tot},k}/\hbar)$, and the anti-Hermitian generators $g_k$ are the elements of the Lie algebra.
+The verification is one line: $[\tilde S_i,\tilde S_j] = (-i\hbar)^2 [g_i,g_j] = -\hbar^2(-\epsilon_{ijk}g_k) = \hbar^2\epsilon_{ijk}g_k$, while $i\hbar\epsilon_{ijk}\tilde S_k = i\hbar\epsilon_{ijk}(-i\hbar g_k) = \hbar^2\epsilon_{ijk}g_k$. The two agree. The passage between the two pictures is the standard one: the Hermitian observables $\tilde S_k$ generate the $*$-unitary rotations through $\exp(-i\theta\,\vec u_k\tilde S_k/\hbar)$, and the anti-Hermitian generators $g_k$ are the elements of the Lie algebra.
 
 A structural remark is in order. For two Hermitian elements $\tilde Q_1 = Q_{1t} e_t + i\vec Q_1$ and $\tilde Q_2 = Q_{2t} e_t + i\vec Q_2$ of $\mathbb{M}_+$, the companion article computes
 
@@ -100,7 +100,7 @@ $$
 [\tilde Q_1,\tilde Q_2] = -2\,(\vec Q_1\times\vec Q_2),
 $$
 
-which is a pure real quaternion, an element of $\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$. In particular the commutator of two observables is not another observable but a **rotation generator**. The angular-momentum commutation relations are therefore a statement about the quaternion product: the right-hand side $i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$ is a rotation generator — $i$ times a Hermitian observable, hence anti-Hermitian.
+which is a pure real quaternion, an element of $\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$. In particular the commutator of two observables is not another observable but a **rotation generator**. The angular-momentum commutation relations are therefore a statement about the quaternion product: the right-hand side $i\hbar\epsilon_{ijk}\tilde S_k$ is a rotation generator — $i$ times a Hermitian observable, hence anti-Hermitian.
 
 ## The Orbital Angular Momentum Operator
 
@@ -280,7 +280,7 @@ $$
 \{\tilde S_{\mathrm{tot},+},\tilde S_{\mathrm{tot},-}\} = 2\,\tilde S_{\mathrm{tot}}^2 - 2\,\tilde S_{\mathrm{tot},3}^2 ,
 $$
 
-and act on the coupled states as $S_{\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle = \hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle$. For the spin part alone,
+and act on the coupled states as $\tilde S_{\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle = \hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle$. For the spin part alone,
 
 $$
 [\tilde{S}_3,\tilde{S}_\pm] = \pm\hbar\,\tilde{S}_\pm, \qquad

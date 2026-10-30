@@ -116,7 +116,7 @@ a nonzero element of the second idempotent line. The next power is $(\breve Q_{\
 
 **Corollary (the nilpotent set of every product is the two lines).** For the three products that have a nonzero nilpotent, the nilpotent set is the null cone $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, and the nilpotency index is the one of the table; the multiplication has no nonzero nilpotent.
 
-**Remark (the glyph).** The nilpotents of the reduced biquaternion layer carry, in the convention of *Conventions of the Special Elements*, §*The Nilpotent Convention*, the plain capital and **no tilde**; but the only nilpotents here lie on the two idempotent lines and are already named by the idempotents, so this article names none of them and reads them as the cone.
+**Remark (the glyph).** The nilpotents of the reduced biquaternion layer carry, in the convention of *Conventions of the Special Elements and the Peirce Decomposition*, §*The Nilpotent Convention*, the plain capital and **no tilde**; but the only nilpotents here lie on the two idempotent lines and are already named by the idempotents, so this article names none of them and reads them as the cone.
 
 ## The Radical
 
@@ -163,6 +163,6 @@ The two **bilinear** products split in opposite ways — the plain one has no no
 - [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the algebra, its product and its structure as a direct product of two fields.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the null cone and the maximal ideals.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html), above this article, for the idempotents and the projections.
-- [Conventions in Mathematics](conventions-in-mathematics.html), §*The Nilpotents*, for the glyph of the nilpotent of the layer.
+- [Conventions of the Special Elements and the Peirce Decomposition](conventions-of-the-special-elements-and-the-peirce-decomposition.html), §*The Nilpotent Convention*, for the glyph of the nilpotent of the layer.
 - [Nilpotents](nilpotents.html), the non-commutative counterpart, for the two nilpotent families of the larger algebra.
 - [Dual-Numbers Zero Divisors](dual-numbers-zero-divisors.html), for the companion with nonzero square-zero elements, the dual numbers, whose imaginary line is square-zero.

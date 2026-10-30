@@ -222,7 +222,7 @@ The **multiplicative** one is $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktr
 
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the multiplication, the idempotents and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html), above this article, for the tessarine sign and the star that define the four slots.
-- [Conventions in Mathematics](conventions-in-mathematics.html), §*The Conjugations*, for the rule that the algebraic norm is the diagonal of a form.
+- [Conventions of the Norms and the Unitary Convention](conventions-of-the-norms-and-the-unitary-convention.html), §*The Norm Convention*, for the rule that the algebraic norm is the diagonal of a form.
 - [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the multiplication read as an algebra.
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html), below this article, for the algebraic norm of the multiplication and the criterion of invertibility.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four general products of the non-commutative companion and the two slots they carry.

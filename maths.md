@@ -15,19 +15,19 @@
 <a href="articles_maths/conventions-in-mathematics.html">Conventions in Mathematics</a>
 <!-- the first of the seven conventions articles and the one that fixes the base: groups, rings and operations; the base and its units, with the replacement of Hamilton's $i,j,k$ by $e_t,\vec e_x,\vec e_y,\vec e_z$; the element and its coefficients, the case rule and the tilde, the duo-complex points; the remarkable subspaces, the centre and the vector subspace, the quaternion and antiquaternion subspaces, the Hermitian and anti-Hermitian ones; the conjugations, the bar, the natural sign, the star and the flat, layer by layer; and the index of the glyphs of the series. conventions only. -->
 
-<a href="articles_maths/conventions-of-the-products-and-the-forms.html">Conventions of the Products and the Forms</a>
+<a href="articles_maths/conventions-of-the-twelve-products-and-the-four-forms.html">Conventions of the Twelve Products and the Four Forms</a>
 <!-- the twelve products and their names: the four general products, their symmetric and antisymmetric parts, the three-letter code read letter by letter, and the reduced biquaternion space where four of the twelve collapse; the form as the scalar part of a product, the generic form and norm, the four brackets and their letters $P$, $N$, $H$, $K$, the table of the four, and the names in each layer. the norms are in the next article. -->
 
 <a href="articles_maths/conventions-of-the-norms-and-the-unitary-convention.html">Conventions of the Norms and the Unitary Convention</a>
 <!-- the four algebraic norms read with one argument, the qualified regular and degenerate, and the six layer tables with the form, the algebraic norm, the realified signature and the role of each bracket; the unitary convention layer by layer, with the unit circle, the unit hyperbola, the two dual lines and the unit groups; the letters $U$ and $u$ inside and outside the layers. -->
 
-<a href="articles_maths/conventions-of-the-special-elements.html">Conventions of the Special Elements</a>
+<a href="articles_maths/conventions-of-the-special-elements-and-the-peirce-decomposition.html">Conventions of the Special Elements and the Peirce Decomposition</a>
 <!-- the root, the idempotent and the nilpotent as glyphs and not as new objects, with their case rule, coordinates and subscripts; the general Peirce convention and its biquaternion reading, the four levels, the Peirce components, the multiplication rule and the canonical frame of the standard pair. -->
 
-<a href="articles_maths/conventions-of-the-representations.html">Conventions of the Representations</a>
+<a href="articles_maths/conventions-of-the-matrix-models.html">Conventions of the Matrix Models</a>
 <!-- the two matrix models: the $2\times2$ isomorphism and its four forced images, the trace and the determinant; the $4\times4$ regular representation, the left and right copies, the canonical Peirce frame, the gamma frame and the retirement of the label $M_4(\mathbb{C})_L$. -->
 
-<a href="articles_maths/conventions-of-the-operators-and-the-calculus.html">Conventions of the Operators and the Calculus</a>
+<a href="articles_maths/conventions-of-the-operators-and-the-differential-calculus.html">Conventions of the Operators and the Differential Calculus</a>
 <!-- the operator that is its element, the named operators, the sandwich, the dagger, the array rule and the Fock exception; the derivative marks, the unhalved coordinate derivative, the gradient and the d'Alembertian; the plain, quaternionic, Hermitian and Krein products read on the gradient. -->
 
 <a href="articles_maths/conventions-of-the-indices-the-notation-and-the-corpus.html">Conventions of the Indices, the Notation and the Corpus</a>

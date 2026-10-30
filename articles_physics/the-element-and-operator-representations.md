@@ -105,7 +105,7 @@ The matrix acts on a two-component column. That column is the **spinor**, and th
 
 ### The $4\times4$ Left Regular Element
 
-The left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*. Its invariants are the doubled invariants:
+The left regular matrix $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix of the map $X\mapsto \tilde Q X$ in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*. Its invariants are the doubled invariants:
 
 $$
 \det\mathsf{M}_4^{L}(\tilde Q)=N^2, \qquad \operatorname{Tr}\mathsf{M}_4^{L}(\tilde Q)=4Q_t.

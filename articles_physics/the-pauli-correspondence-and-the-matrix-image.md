@@ -87,7 +87,7 @@ $$
 \mathsf M_4^{L}(\tilde Q)\in M_4(\mathbb{C}).
 $$
 
-The first is the matrix of the element as it acts on the spinor module $S\cong\mathbb{C}^2$. The second is the matrix of the element as it acts on the algebra, taken as a module over itself, in the canonical frame of *Conventions in Mathematics*, §*The Matrix Models*.
+The first is the matrix of the element as it acts on the spinor module $S\cong\mathbb{C}^2$. The second is the matrix of the element as it acts on the algebra, taken as a module over itself, in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*.
 
 The two are the same object seen through two kinds of data. $\mathsf M_2(\tilde Q)$ is the matrix of an element acting on the data an object acts on; $\mathsf M_4^{L}(\tilde Q)$ is the matrix of an element acting on the objects themselves. The regular module is $S\oplus S$, split by the two minimal left ideals, which are the two column chiralities. In that frame the regular image is block diagonal with two equal blocks, $\mathsf M_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$, and
 

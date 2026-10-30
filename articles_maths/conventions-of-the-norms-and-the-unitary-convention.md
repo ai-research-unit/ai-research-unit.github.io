@@ -6,11 +6,11 @@ The norm is the form at its two equal arguments. This article owns the one-argum
 
 The norm is not one object across the layers. The complex, split-complex, dual, reduced biquaternion, quaternion and biquaternion layers do not share a norm, and a glyph such as $U$ names no set by itself. The article therefore fixes the condition layer by layer before it fixes the glyph, and the tables are read as one row per bracket that survives on the layer.
 
-The order is: the norm reading of the four letters, the qualified regular and degenerate, the six layer tables, the unitary convention, and the letters $U$ and $u$ outside the layers. The article assumes the products and the forms of *Conventions of the Products and the Forms*, and it is assumed in turn by the calculus of *Conventions of the Operators and the Calculus*.
+The order is: the norm reading of the four letters, the qualified regular and degenerate, the six layer tables, the unitary convention, and the letters $U$ and $u$ outside the layers. The article assumes the products and the forms of *Conventions of the Twelve Products and the Four Forms*, and it is assumed in turn by the calculus of *Conventions of the Operators and the Differential Calculus*.
 
 ## The Norm Convention
 
-**One letter, two arities.** The four letters $P$, $N$, $H$ and $K$ fixed in *Conventions of the Products and the Forms* name each form with two arguments and the corresponding algebraic norm with one: $P(\tilde Q)$ is the plain norm, $N(\tilde Q)$ the quaternionic, $H(\tilde Q)$ the Hermitian and $K(\tilde Q)$ the Krein, and the bracket of the same subscript does the same. This article reads that second arity.
+**One letter, two arities.** The four letters $P$, $N$, $H$ and $K$ fixed in *Conventions of the Twelve Products and the Four Forms* name each form with two arguments and the corresponding algebraic norm with one: $P(\tilde Q)$ is the plain norm, $N(\tilde Q)$ the quaternionic, $H(\tilde Q)$ the Hermitian and $K(\tilde Q)$ the Krein, and the bracket of the same subscript does the same. This article reads that second arity.
 
 **The qualified regular and the qualified degenerate.** In $\mathbb{B}$, for a letter $\Phi$ of the four, a biquaternion is **$\Phi$-regular** when $\Phi(\tilde Q)\neq0$ and **$\Phi$-degenerate** when $\Phi(\tilde Q)=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $\natural$-regular is the unit group and $\natural$-degenerate the non-units. $P$-degenerate and $K$-degenerate contain units, $P(e_t+\vec e_x)=K(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
 

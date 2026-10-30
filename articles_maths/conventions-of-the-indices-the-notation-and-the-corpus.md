@@ -4,7 +4,7 @@
 
 This article closes the series with the marks that are read on a glyph rather than on the object: the superscript tokens, the subscript rules and their admitted forms, the working conventions of the corpus and the typography of the source. It assumes the six companions, whose glyphs it indexes.
 
-The superscripts come first because they are two tokens and nothing else; the subscripts next, because their rule depends on the derivation convention fixed in *Conventions of the Operators and the Calculus*. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.
+The superscripts come first because they are two tokens and nothing else; the subscripts next, because their rule depends on the derivation convention fixed in *Conventions of the Operators and the Differential Calculus*. The working conventions of the corpus follow — the menus, the groups inside a category, the article files, the skeleton and the boundaries — and the typography closes the article.
 
 The article is the last of the seven and the index of the notation: the table below collects the tokens and the working marks that belong to the corpus rather than to the algebra, while the table of *Conventions in Mathematics* collects the glyphs of the algebra.
 
@@ -19,7 +19,7 @@ Two superscript tokens run beside the marks of the elements and the marks of the
 
 Two further upright superscripts belong to objects outside the algebra — $\mathrm{fn}$ on a function and $\mathrm{spin}$ on a group element — and are recorded in §*Summary of Notation*.
 
-**The mark, and its one use.** The marks of the elements say what a glyph **is**, not that it is an **operator** (*Conventions of the Operators and the Calculus*, §*The Operators*). The single exception is the **Fock layer** of the physical corpus, whose operators act on a Fock space and are **not** elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph:
+**The mark, and its one use.** The marks of the elements say what a glyph **is**, not that it is an **operator** (*Conventions of the Operators and the Differential Calculus*, §*The Operators*). The single exception is the **Fock layer** of the physical corpus, whose operators act on a Fock space and are **not** elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph:
 
 $$
 a^{\mathrm{fop}},\quad b^{\mathrm{fop}},\quad a^{\mathrm{fop}\dagger},\quad \psi^{\mathrm{fop}},\quad N^{\mathrm{fop}},\quad H^{\mathrm{fop}},\quad F^{\mathrm{fop}},\quad Q^{\mathrm{fop}},\quad U^{\mathrm{fop}} .
@@ -27,7 +27,7 @@ $$
 
 The mark says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $\vec p$, the position $x$, the spin $S$ and the parity, charge-conjugation and reversal maps $P$, $C$ and $T$ carry no superscript, because each keeps the glyph of its element or is a map with a glyph of its own.
 
-**It combines with the dagger, the mark first.** The dagger is the general adjoint (*Conventions of the Operators and the Calculus*, §*The Operators*). Where both marks fall on one glyph the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.
+**It combines with the dagger, the mark first.** The dagger is the general adjoint (*Conventions of the Operators and the Differential Calculus*, §*The Operators*). Where both marks fall on one glyph the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.
 
 **The opposite algebra carries a different token.** The **opposite algebra**, whose multiplication is reversed, $a\cdot b=ba$, carries the superscript $\mathrm{opp}$ — $A^{\mathrm{opp}}$, $\mathbb{B}^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$ — and it is the **algebra name** that takes the mark; the Fock token $\mathrm{fop}$ marks a Fock-operator glyph. The two meanings are separated by the token itself and not by context.
 
@@ -35,7 +35,7 @@ The mark says exactly one thing — the glyph is not an element, it is an operat
 
 A subscript is written with the underscore, `_`, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.
 
-**A subscript is never a partial derivative.** The subscript marks a component or a label, a partial derivative is written with $\partial$, and the rule is fixed in *Conventions of the Operators and the Calculus*, §*Conventions for Derivation*.
+**A subscript is never a partial derivative.** The subscript marks a component or a label, a partial derivative is written with $\partial$, and the rule is fixed in *Conventions of the Operators and the Differential Calculus*, §*Conventions for Derivation*.
 
 **A coefficient carries a letter index and an element a number.** In the quaternionic layers a coefficient is indexed by the direction it multiplies, $Q_x$ and $q_x$, and an element that is counted carries a number on its tilde, $\tilde Q_1, \tilde Q_2$. In the commutative layers, which have no direction, both the element and its coefficients carry the number of the element, $Q_1 = q_1 + iq'_1$. The two indices are of different kinds, a letter against a number, so a coefficient index is never read as the number of an element, nor the reverse.
 

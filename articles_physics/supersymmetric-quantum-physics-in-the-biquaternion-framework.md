@@ -213,7 +213,7 @@ The pair $(A_\omega,A_\omega^\dagger)$ is a supersymmetric pair in the sense of 
 $$
 E^2 = m^2c^4 + 2m\hbar\omega c^2\left(N - \frac{\boldsymbol\sigma\cdot\vec L}{\hbar}\right),
 \qquad
-E^2 = m^2c^4 + 4m\hbar\omega c^2\,n_r \ \ (j = l+\tfrac12),
+E^2 = m^2c^4 + 4m\hbar\omega c^2\,n_r \ \ (s_{\mathrm{tot}} = l+\tfrac12),
 $$
 
 is the partner-symmetric spectrum of the factorisation, with the aligned branch and the anti-aligned branch being the two graded sectors.

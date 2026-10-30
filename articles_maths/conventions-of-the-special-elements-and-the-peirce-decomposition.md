@@ -1,4 +1,4 @@
-# __Conventions of the Special Elements__
+# __Conventions of the Special Elements and the Peirce Decomposition__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ A root, an idempotent and a nilpotent are not new kinds of object: each is an el
 
 The special elements are read after the base because their case rule is the case rule of the elements, and before the representations because the canonical frame of the matrix model is the Peirce frame of the standard pair. The order is: the root, the idempotent, the nilpotent, then the general Peirce convention and its biquaternion reading.
 
-The article assumes *Conventions in Mathematics*, whose §*The Conjugations* fixes the star that the Hermitian idempotent uses, and it is assumed by *Conventions of the Representations*, whose §*The 4×4 Regular Representation* writes the canonical frame in the standard pair and its mixed units.
+The article assumes *Conventions in Mathematics*, whose §*The Conjugations* fixes the star that the Hermitian idempotent uses, and it is assumed by *Conventions of the Matrix Models*, whose §*The 4×4 Regular Representation* writes the canonical frame in the standard pair and its mixed units.
 
 ## The Special Elements: Root, Idempotent and Nilpotent
 
@@ -177,7 +177,7 @@ $E_{ij}$ is written only when the objects are matrices. In an abstract algebra t
 
 **Scope.** $A=\mathbb{B}$, with unit $e_t$. The upper-case tilde is written in this layer, and a pure element carries the arrow and no tilde. Indices are numeric, 1-based. The four levels of §*The General Peirce Convention* are used, and no others.
 
-**The family.** A complete, orthogonal and idempotent family $\tilde\Pi_1,\tilde\Pi_2$ in $\mathbb{B}$. The family is arbitrary: this convention fixes no pair, and no pair is preferred. The canonical frame of the matrix model is written in the standard pair and its mixed units, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$; that is a choice of frame, owned by *Conventions of the Representations*, §*The Matrix Models*, and it fixes nothing here. The glyph is governed by §*The Idempotent Convention*.
+**The family.** A complete, orthogonal and idempotent family $\tilde\Pi_1,\tilde\Pi_2$ in $\mathbb{B}$. The family is arbitrary: this convention fixes no pair, and no pair is preferred. The canonical frame of the matrix model is written in the standard pair and its mixed units, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ and $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$; that is a choice of frame, owned by *Conventions of the Matrix Models*, §*The Matrix Models*, and it fixes nothing here. The glyph is governed by §*The Idempotent Convention*.
 
 **The decomposition.**
 

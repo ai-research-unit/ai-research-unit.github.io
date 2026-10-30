@@ -1,4 +1,4 @@
-# __Conventions of the Products and the Forms__
+# __Conventions of the Twelve Products and the Four Forms__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ The products come first because they are algebraic and need no form. Four genera
 
 The form comes second. A form is the scalar part of a product, with a conjugation named on each slot; the corpus writes a generic form $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$, and the four brackets $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ name the four. The letters $P$, $N$, $H$ and $K$ name each form with two arguments and the corresponding norm with one, and the last section fixes how the names are read in a layer.
 
-The article assumes the base of *Conventions in Mathematics*; the norm is read in the companion article, and the calculus that applies the forms to the gradient in *Conventions of the Operators and the Calculus*.
+The article assumes the base of *Conventions in Mathematics*; the norm is read in the companion article, and the calculus that applies the forms to the gradient in *Conventions of the Operators and the Differential Calculus*.
 
 ## The Twelve Products and Their Names
 

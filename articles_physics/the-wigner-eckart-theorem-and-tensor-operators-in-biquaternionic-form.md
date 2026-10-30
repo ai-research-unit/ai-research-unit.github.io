@@ -210,7 +210,7 @@ $$
 c_{s_{\mathrm{tot}}}=\frac{\langle s_{\mathrm{tot}}\|\tilde V\|s_{\mathrm{tot}}\rangle}{\langle s_{\mathrm{tot}}\|\tilde S_{\mathrm{tot}}\|s_{\mathrm{tot}}\rangle},
 $$
 
-with $c_{s_{\mathrm{tot}}}=\langle s_{\mathrm{tot}}\|\tilde V\|s_{\mathrm{tot}}\rangle/\langle s_{\mathrm{tot}}\|\tilde S_{\mathrm{tot}}\|s_{\mathrm{tot}}\rangle$, where the reduced matrix element of the angular momentum is $\sqrt2\hbar$ on the triplet in the convention used here. This is the operator form of the vector model of the atom: within a multiplet, only the component of a vector operator along $\tilde J$ is effective. For the two-spin system it gives the familiar statement that on the triplet the one-particle spin contributes half of the total, with the transverse components projecting onto $\tilde S$.
+with $c_{s_{\mathrm{tot}}}=\langle s_{\mathrm{tot}}\|\tilde V\|s_{\mathrm{tot}}\rangle/\langle s_{\mathrm{tot}}\|\tilde S_{\mathrm{tot}}\|s_{\mathrm{tot}}\rangle$, where the reduced matrix element of the angular momentum is $\sqrt2\hbar$ on the triplet in the convention used here. This is the operator form of the vector model of the atom: within a multiplet, only the component of a vector operator along $\tilde S_{\mathrm{tot}}$ is effective. For the two-spin system it gives the familiar statement that on the triplet the one-particle spin contributes half of the total, with the transverse components projecting onto $\tilde S$.
 
 ### Rank-two operators and the quadrupole
 

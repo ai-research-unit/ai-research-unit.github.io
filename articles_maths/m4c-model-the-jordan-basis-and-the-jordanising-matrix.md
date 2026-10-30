@@ -16,7 +16,7 @@ with $u,v\in\mathbb{C}^2$ orthonormal. The $2\times2$ Jordanising matrix is $\ma
 
 **Boundaries.** The flag, the corners, the Jordan pair and the canonical pair are *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the $2\times2$ Jordanising matrix and its determinant are *$M_2(\mathbb{C})$ Model : The Jordan Basis and the Jordanising Matrix*; the projectors are *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Spectral Projectors*; the centraliser is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser*; the eigenbasis model is *$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Eigenbasis and the Diagonalising Matrix*.
 
-**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Representations*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The Jordanising matrix below is displayed in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because its columns are the $P_{ij}$ in coefficient coordinates; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*.
+**Frame.** Unless a basis is named, matrices are written in the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, where $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)$. The Jordanising matrix below is displayed in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, because its columns are the $P_{ij}$ in coefficient coordinates; the two displays differ by the change $S$ of *The Product, the Trace and the Determinant*.
 
 ## The Jordan Basis
 

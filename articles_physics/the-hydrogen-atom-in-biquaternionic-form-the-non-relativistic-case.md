@@ -270,20 +270,20 @@ and the relevant basis is the coupled one, $|n,l,s_{\mathrm{tot}},s_{\mathrm{tot
 **The spectrum is the Sommerfeld/Dirac form.** Writing $\alpha=e^2/(4\pi\epsilon_0\hbar c)$ for the fine-structure constant, the exact bound-state energies are
 
 $$
-E_{nj} = mc^2\left[1+\frac{(Z\alpha)^2}{\bigl(n-\delta_j\bigr)^2}\right]^{-1/2},
+E_{n,s_{\mathrm{tot}}} = mc^2\left[1+\frac{(Z\alpha)^2}{\bigl(n-\delta_{s_{\mathrm{tot}}}\bigr)^2}\right]^{-1/2},
 \qquad
-\delta_j = j+\tfrac12-\sqrt{\bigl(j+\tfrac12\bigr)^2-(Z\alpha)^2},
+\delta_{s_{\mathrm{tot}}} = s_{\mathrm{tot}}+\tfrac12-\sqrt{\bigl(s_{\mathrm{tot}}+\tfrac12\bigr)^2-(Z\alpha)^2},
 $$
 
 whose expansion in $(Z\alpha)^2$ returns the non-relativistic $E_n$ at leading order and the fine structure
 
 $$
-\Delta E_{\text{fs}} = -\frac{mc^2(Z\alpha)^4}{2n^3}\left(\frac{1}{j+\tfrac12}-\frac{3}{4n}\right)
+\Delta E_{\text{fs}} = -\frac{mc^2(Z\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12}-\frac{3}{4n}\right)
 $$
 
 at the next order. The Darwin term, the relativistic kinetic correction and the gyromagnetic factor $g=2$ appear in the same expansion, as the framework's Dirac articles and the Foldy–Wouthuysen exercise develop.
 
-**The framework's algebraic content moves to the vector slots.** In the non-relativistic problem the spin is a spectator and the whole Hamiltonian sits in the scalar slot. Relativistically the spin is dynamical, its slot is occupied by part of the Hamiltonian, and the sector structure — the observable/generator split and the coupling $[\tilde J_i,\tilde J_j]=i\hbar\epsilon_{ijk}\tilde J_k$ — does work that it does not do here. Whether the framework adds anything to the standard Dirac–Coulomb solution beyond that rearrangement is a question for the relativistic article; this article makes no claim about it, and the title is restricted to the non-relativistic case for that reason.
+**The framework's algebraic content moves to the vector slots.** In the non-relativistic problem the spin is a spectator and the whole Hamiltonian sits in the scalar slot. Relativistically the spin is dynamical, its slot is occupied by part of the Hamiltonian, and the sector structure — the observable/generator split and the coupling $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}]=i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$ — does work that it does not do here. Whether the framework adds anything to the standard Dirac–Coulomb solution beyond that rearrangement is a question for the relativistic article; this article makes no claim about it, and the title is restricted to the non-relativistic case for that reason.
 
 ## Summary
 

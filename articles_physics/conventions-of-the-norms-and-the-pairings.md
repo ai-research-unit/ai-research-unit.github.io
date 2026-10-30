@@ -60,7 +60,7 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 
 **The convention is the unit-element convention, and the heading keeps its old name because the corpus cites it by that name.** The glyphs $U$, $\tilde u$ and $\tilde U$, in the three cases of the case rule, mark an element of **norm one**; for the biquaternion algebra that norm is $N$ and only $N$. It does not mark a $*$-unitary element: the $*$-unitary condition is a different condition, stated at the end of the section.
 
-A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$, as in the mathematical corpus (§*The Unitary Convention* of *Conventions in Mathematics*): the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.
+A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$, as in the mathematical corpus (§*The Unitary Convention* of *Conventions of the Norms and the Unitary Convention*): the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$.
 
 **"Norm one" is fixed layer by layer.** The glyph names no set by itself. The layers used in the physics are these, and the norm of each is the one in the table:
 
@@ -71,7 +71,7 @@ A unit element carries its own glyph, the **$u$** in the two cases, beside the r
 | $\mathbb{H}_{\mathrm{s}}$, split-quaternion | $\tilde u$ | $\langle\tilde q\rangle_{\natural}$ | $\langle\tilde q\rangle_{\natural}=1$ | $\mathrm{SL}_{2}(\mathbb{R})$ |
 | $\mathbb{B}$, biquaternion | $\tilde U$ | $\langle\tilde Q\rangle_{\natural}$ and no other | $\langle\tilde Q\rangle_{\natural}=e_t$ | $\mathbb{B}^{\times}_{1}\cong\mathrm{SL}(2,\mathbb{C})$ |
 
-The real, split-complex, dual, reduced-biquaternion and split-biquaternion layers are tabulated in *Conventions in Mathematics*, §*The Unitary Convention*. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and **the rotors are these elements**: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.
+The real, split-complex, dual, reduced-biquaternion and split-biquaternion layers are tabulated in *Conventions of the Norms and the Unitary Convention*, §*The Unitary Convention*. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and **the rotors are these elements**: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.
 
 **For the biquaternion layer the norm is $N$ and no other.** The glyph $\tilde U$ is the $N$-norm-one element,
 

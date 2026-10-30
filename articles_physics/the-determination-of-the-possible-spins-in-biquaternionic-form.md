@@ -15,18 +15,18 @@ The article fixes what spin is, gives the two lists, interprets each carrier phy
 **The label.** Spin is the highest weight $s$ of the rotation action on a carrier, defined by the Casimir:
 
 $$
-\tilde J^2=\hbar^2s(s+1)\,e_t .
+\tilde S^2=\hbar^2s(s+1)\,e_t .
 $$
 
 On an irreducible carrier the Casimir is a scalar, so $s$ is one number for the whole carrier. The number of states is $2s+1$. The spin is a real number, $s\in\tfrac12\mathbb{Z}_{\ge0}$; it is a scalar label, not a vector and not a complex number.
 
-**The direction is a state label.** The component along an axis needs an axis: $J_3=\hbar m$ on the state $|s,m\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.
+**The direction is a state label.** The component along an axis needs an axis: $\tilde S_3=\hbar s_z$ on the state $|s,s_z\rangle$. The axis is a measurement setting. At $s=0$ the axis labels nothing, so a direction cannot be the definition of spin.
 
 **The classical picture.** A coherent state $|\vec u\rangle$ of maximal spin along $\vec u$ has
 
 $$
-\langle\vec J\rangle=\hbar s\,\vec u,\qquad
-\langle\vec J^2\rangle=\hbar^2s(s+1).
+\langle\vec S\rangle=\hbar s\,\vec u,\qquad
+\langle\vec S^2\rangle=\hbar^2s(s+1).
 $$
 
 The expectation is a vector of length $\hbar s$; the Casimir length is $\hbar\sqrt{s(s+1)}$. The two agree only in the limit $s\gg1$. The vector is a shadow of the representation, not the representation.
@@ -59,7 +59,7 @@ The spin-half carrier occurs twice, as the two Peirce planes; it is one isomorph
 
 **The carrier.** The centre $Z=\mathbb{C}e_t$ is fixed by conjugation: $u(z e_t)u^{-1}=z e_t$. The Casimir vanishes, the spin is $0$, and the carrier has one state.
 
-**The generator.** $J_k e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.
+**The generator.** $\tilde S_k e_t=0$ for all $k$. There is no axis to choose and no ladder: the representation is trivial.
 
 **The physical interpretation.** A scalar field. The carrier $Z=\mathbb{C}e_t$ is a complex line, two real dimensions; its real form $\mathbb{R}e_t$ is the real scalar of one degree of freedom. The Higgs is the observed spin-zero instance; its internal components are extra data, not a larger spin.
 
@@ -118,21 +118,21 @@ $$
 
 the signs being the Condon–Shortley phase, chosen so that the ladder coefficients are positive.
 
-**The operators.** With $J_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$,
+**The operators.** With $\tilde S^{(\mathrm{adj})}_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$,
 
 $$
-J^2=2\hbar^2\operatorname{id}_V,\qquad
-J_3\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
-J_3\varepsilon_0=0 .
+\tilde S^{(\mathrm{adj})\,2}=2\hbar^2\operatorname{id}_V,\qquad
+\tilde S^{(\mathrm{adj})}_3\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad
+\tilde S^{(\mathrm{adj})}_3\varepsilon_0=0 .
 $$
 
-The Casimir follows from $C=J_3^2+\tfrac12(J_+J_-+J_-J_+)$ and the ladder actions
+The Casimir follows from $C=(\tilde S^{(\mathrm{adj})}_3)^2+\tfrac12(\tilde S^{(\mathrm{adj})}_+\tilde S^{(\mathrm{adj})}_-+\tilde S^{(\mathrm{adj})}_-\tilde S^{(\mathrm{adj})}_+)$ and the ladder actions
 
 $$
-J_+\varepsilon_-=\sqrt2\,\hbar\,\varepsilon_0,\qquad
-J_+\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_+,\qquad
-J_-\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_0,\qquad
-J_-\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_-,
+\tilde S^{(\mathrm{adj})}_+\varepsilon_-=\sqrt2\,\hbar\,\varepsilon_0,\qquad
+\tilde S^{(\mathrm{adj})}_+\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_+,\qquad
+\tilde S^{(\mathrm{adj})}_-\varepsilon_+=\sqrt2\,\hbar\,\varepsilon_0,\qquad
+\tilde S^{(\mathrm{adj})}_-\varepsilon_0=\sqrt2\,\hbar\,\varepsilon_-,
 $$
 
 which give $C=2\hbar^2$ on all three states. The value is $\hbar^2s(s+1)$ at $s=1$. There are three states.
@@ -171,7 +171,7 @@ $$
 W^\mu=\tfrac12\epsilon^{\mu\nu\rho\sigma}M_{\nu\rho}P_\sigma .
 $$
 
-In the rest frame $W^0=0$ and $\vec W=mc\vec J$, so $\vec W^2=m^2c^2\hbar^2s(s+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $W^\mu W_\mu=-N\hbar^2s(s+1)=m^2c^2\hbar^2s(s+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.
+In the rest frame $W^0=0$ and $\vec W=mc\vec S$, so $\vec W^2=m^2c^2\hbar^2s(s+1)$. With the corpus norm convention, in which the norm of the four-momentum is $N=-m^2c^2$, the invariant is $W^\mu W_\mu=-N\hbar^2s(s+1)=m^2c^2\hbar^2s(s+1)$. The rotation Casimir is the rest-frame shadow of the covariant invariant.
 
 **The Lorentz label.** Under left multiplication by $SL(2,\mathbb{C})$ the algebra carries the chiral spinor $(\tfrac12,0)$ with multiplicity two; under conjugation it carries the four-vector $(\tfrac12,\tfrac12)$. The conjugate chirality $(0,\tfrac12)$ is the conjugate module $S^{\mathrm c}$, with a conjugate-linear action; it is not a complex $\mathbb{B}$-module. The rotation spin $s$ is the little-group label; it is not the full Lorentz label, and the split of the four-vector into $0\oplus1$ is the work of the compact subgroup.
 
@@ -195,7 +195,7 @@ where $\Omega$ is the oriented solid angle of the loop, with the orientation fix
 
 **The two quantities.** The direction is the loop on the sphere; the spin is the coefficient of the term. The Berry phase of the spin-$s$ coherent state carries the factor $s$, and the classical Hannay angle does not. The factor is the label; the trajectory is the direction.
 
-**The boundary.** The vector picture is the classical limit. The spin vector $\langle\vec J\rangle=\hbar s\vec u$ is an expectation value, not the definition. The definition is the Casimir label.
+**The boundary.** The vector picture is the classical limit. The spin vector $\langle\vec S\rangle=\hbar s\vec u$ is an expectation value, not the definition. The definition is the Casimir label.
 
 ## What the Framework Does Not Say
 
@@ -231,8 +231,8 @@ The physical interpretation is the scalar, the spinor and the vector, and the ob
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | The copy of the carrier at the axis $\vec u$ |
 | $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ | The nilpotent mixed units |
 | $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ | The spin-half operators |
-| $J_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$ | The spin-one generators |
-| $C=J_1^2+J_2^2+J_3^2$ | The Casimir |
+| $\tilde S^{(\mathrm{adj})}_k=\tfrac{\hbar}{2}\mathrm{ad}_{i\vec e_k}$ | The spin-one generators |
+| $C=\tilde S^{(\mathrm{adj})\,2}$ | The Casimir, $\sum_k(\tilde S^{(\mathrm{adj})}_k)^2$ |
 | $s$ | The spin label |
 | $\vec u$ | A unit real pure quaternion, an axis |
 | $N=\langle\tilde P\rangle_\natural$ | The biquaternion norm of the four-momentum; $N=-m^2c^2$ |

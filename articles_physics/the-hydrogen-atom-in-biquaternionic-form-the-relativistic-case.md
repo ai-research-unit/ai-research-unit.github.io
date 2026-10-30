@@ -12,7 +12,7 @@ with $\mathfrak{Z}$ the nuclear charge. It is the relativistic completion of the
 
 The article asks what the biquaternion framework contributes to this problem, and the honest answer is stated before the derivation.
 
-- **Algebraic, and recomputed here.** The total angular momentum $\tilde S_{\mathrm{tot},k} = L_k e_t + \tilde S_k$, with the orbital part in the scalar slot and the spin part in the vector slots, closes on the angular-momentum algebra. The spin–orbit operator $L_k\tilde S_k$ is a Hermitian element of the informational sector $\mathbb{M}_+$; it commutes with $\tilde S_{\mathrm{tot},k}$, but not with $L_k$ or $\tilde S_k$ separately, which is the algebraic statement that the spin is no longer a spectator. The relativistic level is labelled by $(n,j)$ and not by $(n,l)$: the $l$-degeneracy is lifted, and at fixed $n$ and $s_{\mathrm{tot}}$ the two states $l = j\pm\tfrac12$ are degenerate. All of this is checked below.
+- **Algebraic, and recomputed here.** The total angular momentum $\tilde S_{\mathrm{tot},k} = L_k e_t + \tilde S_k$, with the orbital part in the scalar slot and the spin part in the vector slots, closes on the angular-momentum algebra. The spin–orbit operator $L_k\tilde S_k$ is a Hermitian element of the informational sector $\mathbb{M}_+$; it commutes with $\tilde S_{\mathrm{tot},k}$, but not with $L_k$ or $\tilde S_k$ separately, which is the algebraic statement that the spin is no longer a spectator. The relativistic level is labelled by $(n,s_{\mathrm{tot}})$ and not by $(n,l)$: the $l$-degeneracy is lifted, and at fixed $n$ and $s_{\mathrm{tot}}$ the two states $l = s_{\mathrm{tot}}\pm\tfrac12$ are degenerate. All of this is checked below.
 - **Transcribed, not derived.** The exact bound-state energies are the standard Sommerfeld–Dirac spectrum, quoted in full in its place. The transcription reproduces them and predicts no deviation. Its non-relativistic limit and fine structure are worked through in the companion article *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and its exercise, which is where the elimination of the small component lives; the exact bound-state solution itself is the standard radial Dirac–Coulomb one, and it is not reproduced anywhere in the corpus. No independent biquaternionic derivation is claimed.
 - **Gap, left visible.** The corpus's biquaternion Dirac equation carries the **linear**, chirality-off-diagonal mass pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, and this mass term passes through a local central phase: the central $\mathrm{U}(1)$ (fermion number) is exact for the massive field, and the symmetry the mass breaks is the axial one. The algebra-level electromagnetic coupling is therefore available in the massive case, and its precise form is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra; the Coulomb field is introduced here in the **spinor-module transcription**, where the algebra and the module agree, and the spectrum is transcribed. This is the gap that remains, and it is not closed by notation.
 - **Conditional, and input.** The transcription is written for continuous functions, and a numerical realization of it needs a finite basis, which the corpus does not carry. The framework puts one condition on that basis — the small component must be generated from the large by the framework's own operator — and the condition is the non-relativistic relation of the companion exercise read the other way round; with a field present the covariance identity forces the covariant version of the operator and the phase of the basis. The basis sets themselves, and the variational argument that makes the condition necessary, are input.
@@ -97,7 +97,7 @@ $$
 \bigl[L_k\tilde S_k,\ \tilde S_j\bigr] \neq 0 .
 $$
 
-The first of these is the statement that $l$ is no longer a good quantum number; the second is the statement that the spin has become dynamical. Both were recomputed in an explicit $\tfrac12 \otimes 1$ representation, where the $6\times6$ operators satisfy $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}] = i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$, the operator $L_k\tilde S_k$ commutes with every $\tilde S_{\mathrm{tot},j}$, and its commutators with $L_j$ and $\tilde S_j$ are nonzero; the eigenvalues of $L_k\tilde S_k$ are the two values $+\tfrac{\hbar^2}{2}$ and $-\hbar^2$ for $j = \tfrac32$ and $s_{\mathrm{tot}} = \tfrac12$ respectively, in agreement with the general formula below.
+The first of these is the statement that $l$ is no longer a good quantum number; the second is the statement that the spin has become dynamical. Both were recomputed in an explicit $\tfrac12 \otimes 1$ representation, where the $6\times6$ operators satisfy $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}] = i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$, the operator $L_k\tilde S_k$ commutes with every $\tilde S_{\mathrm{tot},j}$, and its commutators with $L_j$ and $\tilde S_j$ are nonzero; the eigenvalues of $L_k\tilde S_k$ are the two values $+\tfrac{\hbar^2}{2}$ and $-\hbar^2$ for $s_{\mathrm{tot}} = \tfrac32$ and $s_{\mathrm{tot}} = \tfrac12$ respectively, in agreement with the general formula below.
 
 ## Total Angular Momentum and the Good Quantum Numbers
 
@@ -163,7 +163,7 @@ Expanding in powers of $(\mathfrak{Z}\alpha)^2$ reproduces the non-relativistic 
 
 $$
 \boxed{\;E_{n s_{\mathrm{tot}}} = mc^2 - \frac{mc^2(\mathfrak{Z}\alpha)^2}{2n^2}
-- \frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{j+\tfrac12} - \frac{3}{4n}\right)
+- \frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12} - \frac{3}{4n}\right)
 + O\bigl((\mathfrak{Z}\alpha)^6\bigr)\;}.
 $$
 
@@ -176,22 +176,22 @@ $$
 and the next is the **fine structure**
 
 $$
-\Delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{j+\tfrac12} - \frac{3}{4n}\right),
+\Delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12} - \frac{3}{4n}\right),
 $$
 
-whose $s_{\mathrm{tot}}$-dependence is the $l$-splitting read off the exact formula. The expansion was recomputed exactly, in rational arithmetic, for every $n \le 4$ and every $s_{\mathrm{tot}}$ allowed at that $n$: the coefficient of $(\mathfrak{Z}\alpha)^2$ is $-1/(2n^2)$ and the coefficient of $(\mathfrak{Z}\alpha)^4$ is $-\tfrac{1}{2n^3}(\tfrac{1}{j+1/2}-\tfrac{3}{4n})$ in every case, with no discrepancy.
+whose $s_{\mathrm{tot}}$-dependence is the $l$-splitting read off the exact formula. The expansion was recomputed exactly, in rational arithmetic, for every $n \le 4$ and every $s_{\mathrm{tot}}$ allowed at that $n$: the coefficient of $(\mathfrak{Z}\alpha)^2$ is $-1/(2n^2)$ and the coefficient of $(\mathfrak{Z}\alpha)^4$ is $-\tfrac{1}{2n^3}(\tfrac{1}{s_{\mathrm{tot}}+1/2}-\tfrac{3}{4n})$ in every case, with no discrepancy.
 
 The fine-structure shift decomposes into three physical contributions — the relativistic kinetic correction, the spin–orbit term, and the Darwin term — which the companion exercise obtains from the Foldy–Wouthuysen expansion. Their sum equals the exact $(\mathfrak{Z}\alpha)^4$ coefficient for every level with $n \le 6$, which was rechecked here in exact rational arithmetic; that agreement is the quantitative sense in which the framework's spin–orbit operator $L_k\tilde S_k$ carries the right coupling. The Darwin term is a pure scalar (its origin is the $l = 0$ value of the same elimination) and the kinetic term is scalar; only the spin–orbit term is a non-central $\mathbb{M}_+$ observable, which is why the spin anomaly of the spectrum is the one the sector structure makes visible.
 
 ### Degeneracy and its redistribution
 
-The relativistic spectrum has the same **total** state count at each $n$ as the non-relativistic one, redistributed across the new labels. At fixed $n$ the values of $s_{\mathrm{tot}}$ are $\tfrac12, \tfrac32, \dots, n-\tfrac12$. For each $s_{\mathrm{tot}} < n - \tfrac12$ there are two orbital values $l = s_{\mathrm{tot}} \mp \tfrac12$ and $2s_{\mathrm{tot}}+1$ magnetic values; for $j = n-\tfrac12$ only $l = n-1$ is available. Counting,
+The relativistic spectrum has the same **total** state count at each $n$ as the non-relativistic one, redistributed across the new labels. At fixed $n$ the values of $s_{\mathrm{tot}}$ are $\tfrac12, \tfrac32, \dots, n-\tfrac12$. For each $s_{\mathrm{tot}} < n - \tfrac12$ there are two orbital values $l = s_{\mathrm{tot}} \mp \tfrac12$ and $2s_{\mathrm{tot}}+1$ magnetic values; for $s_{\mathrm{tot}} = n-\tfrac12$ only $l = n-1$ is available. Counting,
 
 $$
 2\sum_{s_{\mathrm{tot}}=1/2}^{n-3/2}(2s_{\mathrm{tot}}+1) \;+\; \bigl(2(n-\tfrac12)+1\bigr) = 2n^2 ,
 $$
 
-which was verified for $n \le 6$. So the framework's state space is not enlarged or reduced by the relativistic treatment; what changes is the **splitting** of the $2n^2$ states into levels $E_{n s_{\mathrm{tot}}}$ that depend on $s_{\mathrm{tot}}$ as well as $n$. The non-relativistic $l$-degeneracy among states of the same $n$ is gone, replaced by the $l = j \mp \tfrac12$ degeneracy at fixed $s_{\mathrm{tot}}$; in the limit $\mathfrak{Z}\alpha \to 0$ the $\delta_{s_{\mathrm{tot}}}$ corrections collapse and the full non-relativistic degeneracy is restored.
+which was verified for $n \le 6$. So the framework's state space is not enlarged or reduced by the relativistic treatment; what changes is the **splitting** of the $2n^2$ states into levels $E_{n s_{\mathrm{tot}}}$ that depend on $s_{\mathrm{tot}}$ as well as $n$. The non-relativistic $l$-degeneracy among states of the same $n$ is gone, replaced by the $l = s_{\mathrm{tot}} \mp \tfrac12$ degeneracy at fixed $s_{\mathrm{tot}}$; in the limit $\mathfrak{Z}\alpha \to 0$ the $\delta_{s_{\mathrm{tot}}}$ corrections collapse and the full non-relativistic degeneracy is restored.
 
 ## Minimal Coupling and the Massive Sector
 
@@ -328,21 +328,21 @@ Three entries deserve a sentence. The first is that the algebraic content is rea
 
 ## Summary
 
-The relativistic hydrogen atom in biquaternionic form is the Dirac–Coulomb problem, and what the framework contributes to it is algebraic. The total angular momentum $\tilde S_{\mathrm{tot},k} = L_k e_t + \tilde S_k$ has its orbital part in the scalar slot and its spin part in the vector slots, and it closes on $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}] = i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$ with $\tilde S_{\mathrm{tot}}^{\,2} \to \hbar^2 s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)$. The spin–orbit operator $L_k\tilde S_k = \tfrac{\hbar}{2}i L_k\vec e_k$ is a Hermitian element of $\mathbb{M}_+$; it commutes with $\tilde S_{\mathrm{tot},j}$ but not with $L_j$ or $\tilde S_j$, which is the algebraic content of "the spin is no longer a spectator". The relativistic level is labelled by $(n,s_{\mathrm{tot}},s_{\mathrm{tot},z})$, the $l$-degeneracy is lifted, and the residual degeneracy joins $l = j\mp\tfrac12$ at fixed $s_{\mathrm{tot}}$, with the total count $2n^2$ unchanged.
+The relativistic hydrogen atom in biquaternionic form is the Dirac–Coulomb problem, and what the framework contributes to it is algebraic. The total angular momentum $\tilde S_{\mathrm{tot},k} = L_k e_t + \tilde S_k$ has its orbital part in the scalar slot and its spin part in the vector slots, and it closes on $[\tilde S_{\mathrm{tot},i},\tilde S_{\mathrm{tot},j}] = i\hbar\epsilon_{ijk}\tilde S_{\mathrm{tot},k}$ with $\tilde S_{\mathrm{tot}}^{\,2} \to \hbar^2 s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)$. The spin–orbit operator $L_k\tilde S_k = \tfrac{\hbar}{2}i L_k\vec e_k$ is a Hermitian element of $\mathbb{M}_+$; it commutes with $\tilde S_{\mathrm{tot},j}$ but not with $L_j$ or $\tilde S_j$, which is the algebraic content of "the spin is no longer a spectator". The relativistic level is labelled by $(n,s_{\mathrm{tot}},s_{\mathrm{tot},z})$, the $l$-degeneracy is lifted, and the residual degeneracy joins $l = s_{\mathrm{tot}}\mp\tfrac12$ at fixed $s_{\mathrm{tot}}$, with the total count $2n^2$ unchanged.
 
 The exact bound-state energies are the Sommerfeld–Dirac formula
 
 $$
 E_{n s_{\mathrm{tot}}} = mc^2\left[1 + \frac{(\mathfrak{Z}\alpha)^2}{\bigl(n-\delta_{s_{\mathrm{tot}}}\bigr)^2}\right]^{-1/2},
 \qquad
-\delta_{s_{\mathrm{tot}}} = j+\tfrac12 - \sqrt{\bigl(j+\tfrac12\bigr)^2 - (\mathfrak{Z}\alpha)^2},
+\delta_{s_{\mathrm{tot}}} = s_{\mathrm{tot}}+\tfrac12 - \sqrt{\bigl(s_{\mathrm{tot}}+\tfrac12\bigr)^2 - (\mathfrak{Z}\alpha)^2},
 $$
 
 whose expansion
 
 $$
 E_{n s_{\mathrm{tot}}} = mc^2 - \frac{mc^2(\mathfrak{Z}\alpha)^2}{2n^2}
-- \frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{j+\tfrac12}-\frac{3}{4n}\right) + O\bigl((\mathfrak{Z}\alpha)^6\bigr)
+- \frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\left(\frac{1}{s_{\mathrm{tot}}+\tfrac12}-\frac{3}{4n}\right) + O\bigl((\mathfrak{Z}\alpha)^6\bigr)
 $$
 
 returns the non-relativistic $E_n$ at leading order and the fine structure at the next, the latter verified by exact rational arithmetic against the kinetic, spin–orbit, and Darwin terms of the companion exercise. The spectrum is the standard one and no deviation is predicted.
@@ -377,7 +377,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $L_k\tilde S_k$ | Spin–orbit operator, in $\mathbb{M}_+$; eigenvalues $\tfrac{\hbar^2}{2}[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34]$ |
 | $|n,l,s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Coupled relativistic basis |
 | $E_{n s_{\mathrm{tot}}}$, $\delta_{s_{\mathrm{tot}}}$ | Exact Sommerfeld–Dirac energy and its $s_{\mathrm{tot}}$-dependent shift |
-| $\Delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\bigl(\frac{1}{j+1/2}-\frac{3}{4n}\bigr)$ | Fine-structure shift |
+| $\Delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\bigl(\frac{1}{s_{\mathrm{tot}}+1/2}-\frac{3}{4n}\bigr)$ | Fine-structure shift |
 | $\mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$ | Spinor module carrying the field $\psi$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2) = 2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading at normalisation (expectation values) |
 | $D = \tilde\nabla+\frac{iϙ}{\hbar}\tilde A$ | Covariant derivative (minimal-coupling article) |

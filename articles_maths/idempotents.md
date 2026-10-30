@@ -41,7 +41,7 @@ $$
 (\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
 $$
 
-and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *The Six Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions of the Special Elements*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), the two members of a complete pair with the two signs, $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$, the subscript $+$ naming the member attached to $+1$, and a generic element $\tilde Q$.
+and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *The Six Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions of the Special Elements and the Peirce Decomposition*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), the two members of a complete pair with the two signs, $\tilde\Pi_{+}$ and $\tilde\Pi_{-}$, the subscript $+$ naming the member attached to $+1$, and a generic element $\tilde Q$.
 
 The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families and the Hermitian idempotent, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots and idempotents of their own, and they are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, *Square Roots of One and the Idempotents of the General Quaternionic Algebra* and *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*.
 
@@ -344,7 +344,7 @@ $$
 
 and equally in the other order. The difference is $\tfrac12(e_t+\tilde\Xi)-\tfrac12(e_t-\tilde\Xi)=\tilde\Xi$.
 
-The pair is written with the two signs rather than with two numbers, as §*The Idempotent Convention* of *Conventions of the Special Elements* provides for a complete pair: the subscript $+$ names the member attached to $+1$, the subscript $-$ the member attached to $-1$.
+The pair is written with the two signs rather than with two numbers, as §*The Idempotent Convention* of *Conventions of the Special Elements and the Peirce Decomposition* provides for a complete pair: the subscript $+$ names the member attached to $+1$, the subscript $-$ the member attached to $-1$.
 
 The trivial roots give the trivial pairs: the pair of $+e_t$ is $(e_t,0)$ and the pair of $-e_t$ is $(0,e_t)$. Every root therefore carries exactly two idempotents, and the next section computes what the two do together.
 

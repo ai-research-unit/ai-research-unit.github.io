@@ -116,7 +116,7 @@ namely the four elements $1,-1,j,-j$ of *Square Roots of One and the Idempotents
 $$
 X=\pm i\,\Pi_+\pm i\,\Pi_-,
 $$
-that is the four elements $\pm i$ and $\pm ij$, the roots of $-1$ of *Conventions of the Special Elements*, §*The Root Convention*; they are the roots of one multiplied by $i$. The example shows that the four-root count is shared by $1$ and $-1$ and that the two sets are the translate of one another by $i$.
+that is the four elements $\pm i$ and $\pm ij$, the roots of $-1$ of *Conventions of the Special Elements and the Peirce Decomposition*, §*The Root Convention*; they are the roots of one multiplied by $i$. The example shows that the four-root count is shared by $1$ and $-1$ and that the two sets are the translate of one another by $i$.
 
 The agreement of the three special cases with the direct computations of the companion articles is the check that the general method and those computations are the same computation.
 

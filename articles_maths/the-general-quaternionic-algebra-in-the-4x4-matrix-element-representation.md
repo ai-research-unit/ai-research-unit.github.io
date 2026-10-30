@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The left regular representation reads the algebra acting on itself. In the canonical frame of *Conventions of the Representations*, §*The Matrix Models*, the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, the matrix of left multiplication is block diagonal, $I_2\otimes\mathsf M_2(\tilde Q)$, and the natural conjugation ${}^{\natural}$ is the signed reversal of the four Peirce coordinates,
+The left regular representation reads the algebra acting on itself. In the canonical frame of *Conventions of the Matrix Models*, §*The Matrix Models*, the Peirce frame $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$, the matrix of left multiplication is block diagonal, $I_2\otimes\mathsf M_2(\tilde Q)$, and the natural conjugation ${}^{\natural}$ is the signed reversal of the four Peirce coordinates,
 $$
 \mathsf M_4^{L}(\tilde Q^{\natural})=C\,\mathsf M_4^{L}(\tilde Q)^{\mathsf T}C^{-1},\qquad C=-\sigma_2\otimes\sigma_2,
 $$

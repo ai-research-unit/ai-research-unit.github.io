@@ -243,7 +243,7 @@ Such a pair exists: choose a complement of $\mathbb{C}\vec Q$ in $\ker L_{\vec Q
 
 ### The Canonical Frame
 
-**The definite Hermitian form selects one value of $b$.** The form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of *Conventions of the Products and the Forms*, §*The Form Convention*, and $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$ on the sector off the scalar line.
+**The definite Hermitian form selects one value of $b$.** The form is $\langle X,Y\rangle_*=\operatorname{Sc}(XY^*)$ of *Conventions of the Twelve Products and the Four Forms*, §*The Form Convention*, and $\langle\vec Q\rangle_*=\sum\lvert Q_k\rvert^2>0$ on the sector off the scalar line.
 
 **Theorem (the canonical pair).** Put $\vec\Upsilon_-=\vec Q$ and
 
