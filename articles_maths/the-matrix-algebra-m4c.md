@@ -61,7 +61,7 @@ $$
 
 This is the matrix product. It is the formula that the Peirce coordinates generalize to an arbitrary frame in *The Peirce Decomposition of $M_4(\mathbb{C})$*.
 
-**The opposite algebra.** The map $A\mapsto A^{\mathsf T}$ is an anti-automorphism, $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$, and it is an isomorphism $M_4\to M_4^{\mathrm{op}}$. The algebra is isomorphic to its opposite, as every matrix algebra is.
+**The opposite algebra.** The map $A\mapsto A^{\mathsf T}$ is an anti-automorphism, $(AB)^{\mathsf T}=B^{\mathsf T}A^{\mathsf T}$, and it is an isomorphism $M_4\to M_4^{\mathrm{opp}}$. The algebra is isomorphic to its opposite, as every matrix algebra is.
 
 ## The Trace and the Determinant
 

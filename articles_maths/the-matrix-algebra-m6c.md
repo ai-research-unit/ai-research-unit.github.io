@@ -221,7 +221,7 @@ be the left and right multiplications on $M_6$.
 **Proposition.** $L$ and $R$ are faithful algebra homomorphisms, $L_A R_B=R_B L_A$ for all $A,B$, and the map
 
 $$
-M_6\otimes M_6^{\mathrm{op}}\longrightarrow\operatorname{End}(M_6),
+M_6\otimes M_6^{\mathrm{opp}}\longrightarrow\operatorname{End}(M_6),
 \qquad
 A\otimes B\longmapsto L_A R_B
 $$

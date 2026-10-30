@@ -13,8 +13,8 @@ The frame and the nilpotents come from *The Frame, the Simple Nilpotents and the
 **The diagonal weights and the two ladder operators.** Let $E_{kl}$ be the matrix units of an adapted frame, $k,l=1,\dots,n$. Put
 
 $$
-j_k=\frac{n+1}{2}-k,\qquad
-J_3=\sum_{k=1}^{n}j_kE_{kk},
+s_k=\frac{n+1}{2}-k,\qquad
+J_3=\sum_{k=1}^{n}s_kE_{kk},
 $$
 
 $$
@@ -36,7 +36,7 @@ so they span a Lie algebra isomorphic to $\mathfrak{sl}_2(\mathbb{C})$.
 *Proof.* On the matrix units,
 
 $$
-[J_3,E_{kl}]=(j_k-j_l)E_{kl}=(l-k)E_{kl},
+[J_3,E_{kl}]=(s_k-s_l)E_{kl}=(l-k)E_{kl},
 $$
 
 so $[J_3,E_{k,k+1}]=E_{k,k+1}$ and $[J_3,E_{k+1,k}]=-E_{k+1,k}$. For the second relation, $[E_{k,k+1},E_{l+1,l}]=\delta_{k,l}\big(E_{kk}-E_{k+1,k+1}\big)$, hence
@@ -48,12 +48,12 @@ $$
 The coefficient of $E_{kk}$ is $c_k^{2}-c_{k-1}^{2}$ with $c_0=c_n=0$, and
 
 $$
-k(n-k)-(k-1)(n-k+1)=n+1-2k=2j_k,
+k(n-k)-(k-1)(n-k+1)=n+1-2k=2s_k,
 $$
 
 so the sum is $2J_3$. $\square$
 
-**The coefficients are forced.** If $J_\pm=\sum a_kE_{k,k\pm1}$ and $[J_+,J_-]=2J_3$, then $a_k^{2}-a_{k-1}^{2}=2j_k=n+1-2k$, so $a_k^{2}=k(n-k)$ and $a_k$ is determined up to sign. The symmetric choice $a_k>0$ is the one taken here; the sign is a convention on the phase of each basis vector.
+**The coefficients are forced.** If $J_\pm=\sum a_kE_{k,k\pm1}$ and $[J_+,J_-]=2J_3$, then $a_k^{2}-a_{k-1}^{2}=2s_k=n+1-2k$, so $a_k^{2}=k(n-k)$ and $a_k$ is determined up to sign. The symmetric choice $a_k>0$ is the one taken here; the sign is a convention on the phase of each basis vector.
 
 **The real form.** With the trace form of *The Matrix Algebra $M_n(\mathbb{C})$*, $J_3^{*}=J_3$ and $J_+^{*}=J_-$, so the real span of $iJ_3$, $i(J_++J_-)$ and $J_+-J_-$ is $\mathfrak{su}(2)$. The complex span is $\mathfrak{sl}_2(\mathbb{C})$.
 
@@ -62,10 +62,10 @@ so the sum is $2J_3$. $\square$
 **The algebra acts on $\mathbb{C}^{n}$, and the chain acts as the ladder of a highest weight module.** Let $e_k=v_k$ be the frame vectors, so $E_{kl}e_m=\delta_{lm}e_k$. Then
 
 $$
-J_3e_k=j_ke_k,\qquad J_+e_k=c_{k-1}e_{k-1},\qquad J_-e_k=c_ke_{k+1},
+J_3e_k=s_ke_k,\qquad J_+e_k=c_{k-1}e_{k-1},\qquad J_-e_k=c_ke_{k+1},
 $$
 
-with the convention that the coefficients vanish at the ends. The vector $e_1$ is annihilated by $J_+$ and has the largest weight $j_1=(n-1)/2$.
+with the convention that the coefficients vanish at the ends. The vector $e_1$ is annihilated by $J_+$ and has the largest weight $s_1=(n-1)/2$.
 
 **Proposition.** $\mathbb{C}^{n}$ is irreducible under this action, and is isomorphic to $\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$ as a module of spin $(n-1)/2$.
 
@@ -75,9 +75,9 @@ $$
 J_3=\tfrac12(x\partial_x-y\partial_y),\qquad J_+=x\partial_y,\qquad J_-=y\partial_x
 $$
 
-give the same weights $j_k$ and the same coefficients $\sqrt{k(n-k)}$ after normalising the monomials to unit length. $\square$
+give the same weights $s_k$ and the same coefficients $\sqrt{k(n-k)}$ after normalising the monomials to unit length. $\square$
 
-**The dimension check.** $\dim\operatorname{Sym}^{n-1}(\mathbb{C}^{2})=n$, and the weights are $j_1,j_2,\dots,j_n$, equally spaced by $1$. This is the spin-$(n-1)/2$ module.
+**The dimension check.** $\dim\operatorname{Sym}^{n-1}(\mathbb{C}^{2})=n$, and the weights are $s_1,s_2,\dots,s_n$, equally spaced by $1$. This is the spin-$(n-1)/2$ module.
 
 **The carrier is not the algebra.** The carrier is $\mathbb{C}^{n}$, of dimension $n$; the algebra is $\operatorname{End}(\mathbb{C}^{n})$, of dimension $n^{2}$. The Peirce corners have dimension $1$ each. The carrier is the module on which the chain acts, not a corner and not a subspace of the algebra.
 
@@ -151,9 +151,9 @@ under the pair, where $V_{m}$ is the spin-$(m-1)/2$ module of dimension $m$: for
 **The left action carries the spin, the right action carries the Peirce index, and the adjoint carries their difference.** On the matrix unit $E_{kl}$,
 
 $$
-L_{J_3}(E_{kl})=j_kE_{kl},\qquad
-R_{J_3}(E_{kl})=j_lE_{kl},\qquad
-\operatorname{ad}_{J_3}(E_{kl})=(j_k-j_l)E_{kl}=(l-k)E_{kl},
+L_{J_3}(E_{kl})=s_kE_{kl},\qquad
+R_{J_3}(E_{kl})=s_lE_{kl},\qquad
+\operatorname{ad}_{J_3}(E_{kl})=(s_k-s_l)E_{kl}=(l-k)E_{kl},
 $$
 
 so that
@@ -172,7 +172,7 @@ $$
 
 and the multiplicative form of the identity is $L_H=\operatorname{Ad}_H\circ R_H$. In the additive labels, $(k-1)=(k-l)+(l-1)$.
 
-The **spin** is the left reading: $j_k=\tfrac{n-1}{2}-(k-1)$ is an affine function of $k-1$, and the highest left weight is $(n-1)/2$. The **Peirce index** is the right reading: the right action of $H$ has the constant eigenvalue $\zeta^{l-1}$ on the minimal left ideal $M_nE_{ll}$, so that ideal carries the label $l-1$. The label is constant on the ideal and distinguishes copies; it is not a weight of $J_3$, not a spin, and not a chirality. The **grade** is the difference $k-l$, which is the weight of $\operatorname{ad}_{J_3}$ up to sign.
+The **spin** is the left reading: $s_k=\tfrac{n-1}{2}-(k-1)$ is an affine function of $k-1$, and the highest left weight is $(n-1)/2$. The **Peirce index** is the right reading: the right action of $H$ has the constant eigenvalue $\zeta^{l-1}$ on the minimal left ideal $M_nE_{ll}$, so that ideal carries the label $l-1$. The label is constant on the ideal and distinguishes copies; it is not a weight of $J_3$, not a spin, and not a chirality. The **grade** is the difference $k-l$, which is the weight of $\operatorname{ad}_{J_3}$ up to sign.
 
 **The even-$n$ grading is not the Peirce index.** At even $n$, $R_H^{m}=(-1)^{l-1}$ is constant on the ideal $M_nE_{ll}$: it labels the copy. The grading $\Gamma=L_H^{m}=\operatorname{diag}\bigl((-1)^{k-1}\bigr)$ acts on the carrier and splits it. The two are different operators, $L$ and $R$, and neither is a chirality.
 
@@ -194,13 +194,13 @@ The half-angle is not a fourth label. It is the exponential coordinate of the le
 
 ## Summary
 
-The frame carries an $\mathfrak{sl}_2$ with $J_3=\sum_k\big(\tfrac{n+1}{2}-k\big)E_{kk}$ and $J_\pm=\sum_k\sqrt{k(n-k)}\,E_{k,k\pm1}$, with $[J_+,J_-]=2J_3$. The carrier is $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$, irreducible of spin $(n-1)/2$, with ladder coefficients $\sqrt{k(n-k)}$. The adjoint decomposes as $1+3+\cdots+(2n-1)$: the centre plus the traceless part, one irreducible summand per weight. On $E_{kl}$ the left action of $J_3$ has weight $j_k$, the right action has $j_l$, and the adjoint has $j_k-j_l$, so the spin is the left reading, the Peirce index is the right reading, and the grade is their difference. At even $n$ the grading involution $\Gamma=H^{n/2}$ splits the carrier into two halves of dimension $n/2$, which the Peirce chain exchanges and the grading algebra preserves. The carrier is a spinor module only at $n=2$, and at the graded halves of $n=4$; otherwise it is the spin-$(n-1)/2$ module and should not be called a spinor.
+The frame carries an $\mathfrak{sl}_2$ with $J_3=\sum_k\big(\tfrac{n+1}{2}-k\big)E_{kk}$ and $J_\pm=\sum_k\sqrt{k(n-k)}\,E_{k,k\pm1}$, with $[J_+,J_-]=2J_3$. The carrier is $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$, irreducible of spin $(n-1)/2$, with ladder coefficients $\sqrt{k(n-k)}$. The adjoint decomposes as $1+3+\cdots+(2n-1)$: the centre plus the traceless part, one irreducible summand per weight. On $E_{kl}$ the left action of $J_3$ has weight $s_k$, the right action has $s_l$, and the adjoint has $s_k-s_l$, so the spin is the left reading, the Peirce index is the right reading, and the grade is their difference. At even $n$ the grading involution $\Gamma=H^{n/2}$ splits the carrier into two halves of dimension $n/2$, which the Peirce chain exchanges and the grading algebra preserves. The carrier is a spinor module only at $n=2$, and at the graded halves of $n=4$; otherwise it is the spin-$(n-1)/2$ module and should not be called a spinor.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $j_k=\tfrac{n+1}{2}-k$ | the weight of $e_k$ |
+| $s_k=\tfrac{n+1}{2}-k$ | the weight of $e_k$ |
 | $J_3,J_\pm$ | the generators of the Peirce $\mathfrak{sl}_2$ |
 | $c_k=\sqrt{k(n-k)}$ | the ladder coefficient, $k=1,\dots,n-1$ |
 | $\mathbb{C}^{n}=\operatorname{Sym}^{n-1}(\mathbb{C}^{2})$ | the carrier, of spin $(n-1)/2$ |

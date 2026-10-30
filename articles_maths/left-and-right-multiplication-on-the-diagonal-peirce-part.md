@@ -52,7 +52,7 @@ They are the regular representations of $A$ on itself.
 
 *Proof.* (a), (b) and (c) are associativity: $L_{ab}(x)=(ab)x=a(bx)=L_aL_b(x)$, $R_{ab}(x)=x(ab)=(xa)b=R_bR_a(x)$, and $L_aR_b(x)=a(xb)=(ax)b=R_bL_a(x)$. (d) is the unit. (e) $L_a=0$ gives $a=L_a(1)=0$, and $R_a=0$ gives $a=R_a(1)=0$.
 
-**Remark.** The left regular representation $a\mapsto L_a$ is an algebra homomorphism $A\to\operatorname{End}_k(A)$, and the right regular representation $a\mapsto R_a$ is an algebra anti-homomorphism. The two representations commute, and their product is the sandwich representation of the enveloping algebra $A\otimes A^{\mathrm{op}}$. The identities are those of *Left and Right Multiplication*; the article uses them without further proof.
+**Remark.** The left regular representation $a\mapsto L_a$ is an algebra homomorphism $A\to\operatorname{End}_k(A)$, and the right regular representation $a\mapsto R_a$ is an algebra anti-homomorphism. The two representations commute, and their product is the sandwich representation of the enveloping algebra $A\otimes A^{\mathrm{opp}}$. The identities are those of *Left and Right Multiplication*; the article uses them without further proof.
 
 ### The operators of an idempotent
 

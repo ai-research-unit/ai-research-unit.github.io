@@ -133,12 +133,12 @@ So the two rulings of the quadric are moved independently, the first by $A$ and 
 **Theorem (the sandwiches span the full endomorphism algebra).** The linear span of the sandwiches is
 
 $$
-\operatorname{span}\{T_{A,B}\}=\operatorname{End}\bigl(M_2(\mathbb{R})\bigr)\cong M_4(\mathbb{R})\cong M_2(\mathbb{R})\otimes M_2(\mathbb{R})^{\mathrm{op}},
+\operatorname{span}\{T_{A,B}\}=\operatorname{End}\bigl(M_2(\mathbb{R})\bigr)\cong M_4(\mathbb{R})\cong M_2(\mathbb{R})\otimes M_2(\mathbb{R})^{\mathrm{opp}},
 $$
 
 of dimension sixteen.
 
-**Proof.** The map $A\otimes B^{\mathsf T}\mapsto T_{A,B}$ is a linear isomorphism from $M_2\otimes M_2$ onto the span, since the two spaces have dimension sixteen and the map is injective: if $\sum A_iXB_i=0$ for all $X$, the matrix units $X=E_{jk}$ give $\sum A_iE_{jk}B_i=0$ for all $j,k$, which forces the tensor to vanish. The identification $M_2\otimes M_2^{\mathrm{op}}\cong M_4(\mathbb{R})$ is the standard isomorphism for a central simple algebra.
+**Proof.** The map $A\otimes B^{\mathsf T}\mapsto T_{A,B}$ is a linear isomorphism from $M_2\otimes M_2$ onto the span, since the two spaces have dimension sixteen and the map is injective: if $\sum A_iXB_i=0$ for all $X$, the matrix units $X=E_{jk}$ give $\sum A_iE_{jk}B_i=0$ for all $j,k$, which forces the tensor to vanish. The identification $M_2\otimes M_2^{\mathrm{opp}}\cong M_4(\mathbb{R})$ is the standard isomorphism for a central simple algebra.
 
 **Corollary (the Kronecker form).** With the column-stacking vectorisation,
 

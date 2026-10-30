@@ -50,6 +50,8 @@ One structural fact governs the whole series, so it is worth isolating. **The sc
 
 The split is also a split of **roles**, and the two roles belong to the two **factors** of the tensor product and cannot be exchanged. The central unit $i$ is the scalar imaginary: it is what enters the phase $\exp(iS/\hbar)$, and it multiplies a whole element from inside the centre. The three units $\vec e_x,\vec e_y,\vec e_z$ are the vector directions: they are the relativistic and rotational structure, and they enter through the quaternion factor. A central scalar and a vector direction are different kinds of object — one commutes with everything, the other rotates — so no product of the four general products may read $i$ through the quaternion direction or a unit through the scalar one. The mirror statement, that the two conjugations act on the two factors separately, is the subject of *The Four General Products: Composition, Probability, Causality, Gauge*.
 
+**The opposite algebra is written with three letters.** The opposite of the biquaternion algebra, with the product reversed, is $\mathbb{B}^{\mathrm{opp}}$, with $a\cdot_{\mathrm{opp}}b=ba$; the same three-letter superscript is used for any algebra, $A^{\mathrm{opp}}$. The two-letter form $\mathrm{op}$ is not used for the opposite algebra: it is reserved for the operator norm $\|A\|_{\mathrm{op}}$ and for the quantized objects written with it, such as $p^{\mathrm{op}}$ and $\psi^{\mathrm{op}\mu}$.
+
 As a complex algebra $\mathbb{B}$ is isomorphic to the full matrix algebra,
 
 $$

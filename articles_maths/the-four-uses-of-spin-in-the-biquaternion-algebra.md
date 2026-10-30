@@ -98,7 +98,7 @@ is a Lie-algebra homomorphism. This is **not** an algebra homomorphism of $\math
 
 That difference of kind is the source of every confusion in this subject. The two structures are both canonical, both induced by the product, and they are not two versions of one thing.
 
-**Right multiplication.** The map $X\mapsto XQ$ is an algebra anti-homomorphism; it makes $\mathbb{B}$ a right module, and since $\mathbb{B}^{\mathrm{op}}\cong\mathbb{B}$ it gives the same constituents as the left structure. Up to equivalence there are therefore two structures: the associative one and the Lie one.
+**Right multiplication.** The map $X\mapsto XQ$ is an algebra anti-homomorphism; it makes $\mathbb{B}$ a right module, and since $\mathbb{B}^{\mathrm{opp}}\cong\mathbb{B}$ it gives the same constituents as the left structure. Up to equivalence there are therefore two structures: the associative one and the Lie one.
 
 ## The Left Module: Dimension Two
 

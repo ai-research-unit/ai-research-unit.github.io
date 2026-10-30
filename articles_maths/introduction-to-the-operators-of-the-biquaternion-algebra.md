@@ -383,7 +383,7 @@ The same two switches are read on one operator, with the conjugation in the righ
 | $\mathrm{id}$, $\natural$, ${}^{*}$, $\natural{}^{*}$ | the four readings, the elements of $\mathbb{Z}_2\times\mathbb{Z}_2$; (none), (${}^{\natural}$), (${}^{*}$), (both) |
 | $\star_{K_1K_2}$ | the general slot product, $x\star_{K_1K_2}y=K_1(x)K_2(y)$ with $K_1\in\{\mathrm{id},\natural\}$ and $K_2\in\{\mathrm{id},\varsigma\}$ |
 | $\varsigma$ | the involution that defines the class, $\natural$ or ${}^{*}$; $\varsigma=\mathrm{id}$ for the bilinear class |
-| $\star^{\mathrm{op}}$ | the opposite product, $x\star^{\mathrm{op}}y=y\star x$ |
+| $\star^{\mathrm{opp}}$ | the opposite product, $x\star^{\mathrm{opp}}y=y\star x$ |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the four general products: one table, the two insertions |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\ast}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural\ast}$ | their scalar parts, the four pairings, Gram matrices $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ |
 | ${}^{\approx}$, ${}^{*}$, ${}^{N}$, ${}^{\natural\ast}$ | the four adjoints, decided by the four general products |

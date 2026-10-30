@@ -74,7 +74,7 @@ It is tempting to say that the module $\mathbb{C}$ has spin $0$, because the onl
 
 ### The Eigenvalues of Multiplication
 
-Left multiplication by $z\in\mathbb{C}$ on the real plane $\mathbb{C}$ has the matrix $\begin{pmatrix}a&-b\\b&a\end{pmatrix}$ for $z=a+ib$, with eigenvalues $a+ib$ and $a-ib$. These are the two complex eigenvalues of a real operator, not the weights of a triple: there is no $S$ with a spectrum $j,j-1,\dots,-j$ and no ladder relating the eigenvectors. The eigenvalues of multiplication by $z$ are $z$ and $\bar z$; they do not form a weight string of $\mathfrak{sl}_2$.
+Left multiplication by $z\in\mathbb{C}$ on the real plane $\mathbb{C}$ has the matrix $\begin{pmatrix}a&-b\\b&a\end{pmatrix}$ for $z=a+ib$, with eigenvalues $a+ib$ and $a-ib$. These are the two complex eigenvalues of a real operator, not the weights of a triple: there is no $S$ with a spectrum $s,s-1,\dots,-s$ and no ladder relating the eigenvectors. The eigenvalues of multiplication by $z$ are $z$ and $\bar z$; they do not form a weight string of $\mathfrak{sl}_2$.
 
 ### The Half-Angle
 

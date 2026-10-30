@@ -55,7 +55,7 @@ $$
 a(mb)=(am)b \qquad (a \in A,\ b \in B,\ m \in M).
 $$
 
-Every left $A$-module is a right $A^{\mathrm{opp}}$-module and conversely, where $A^{\mathrm{opp}}$ is the **opposite algebra**, the $R$-module $A$ with the reversed product $a \cdot_{\mathrm{op}} b = ba$. Thus the theory of right modules is the theory of left modules over the opposite algebra, and it suffices to develop one side. The left regular module ${}_A A$ is an $(A,A)$-bimodule, with left action by multiplication and right action also by multiplication, the two commuting by associativity.
+Every left $A$-module is a right $A^{\mathrm{opp}}$-module and conversely, where $A^{\mathrm{opp}}$ is the **opposite algebra**, the $R$-module $A$ with the reversed product $a \cdot_{\mathrm{opp}} b = ba$. Thus the theory of right modules is the theory of left modules over the opposite algebra, and it suffices to develop one side. The left regular module ${}_A A$ is an $(A,A)$-bimodule, with left action by multiplication and right action also by multiplication, the two commuting by associativity.
 
 ### The action as a homomorphism
 
@@ -270,7 +270,7 @@ The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in gen
 | $R$ | commutative ring with identity $1 \neq 0$ |
 | $F$, $K$ | fields |
 | $A$ | unital associative $R$-algebra, generally noncommutative |
-| $A^{\mathrm{opp}}$ | opposite algebra, product $a \cdot_{\mathrm{op}} b = ba$ |
+| $A^{\mathrm{opp}}$ | opposite algebra, product $a \cdot_{\mathrm{opp}} b = ba$ |
 | $A^{\times}$ | group of units of $A$ |
 | $Z(A)$ | centre of $A$ |
 | $1_A$ | unit of $A$ |

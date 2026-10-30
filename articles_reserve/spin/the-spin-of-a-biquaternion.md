@@ -80,7 +80,7 @@ In the doubled notation of the Peirce tables, with $\tilde\Xi=2\tilde S_{\vec u}
 
 **Remark (normalisation).** The pair is not unique. The reciprocal rescaling $\vec\Upsilon_-\mapsto\mu\vec\Upsilon_-$, $\vec\Upsilon_+\mapsto\mu^{-1}\vec\Upsilon_+$ preserves the two products and hence the three relations. What is canonical is $\tilde S_{\vec u}$ and the unordered pair of nilpotent lines. The product is nonzero, $[\vec\Upsilon_-,\vec\Upsilon_+]=\tilde\Xi\neq0$, because a complete pair has $\tilde\Pi_+\neq\tilde\Pi_-$: $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$. The pair therefore meets the nonzero condition of *The General Definition of Spin*.
 
-**Remark (the spin element and the root).** The frame root is twice the spin element, $\tilde\Xi=2\tilde S_{\vec u}$. On a carrier the eigenvalues of $\tilde S_{\vec u}$ are the weights, and $j$ is the highest; the eigenvalues of $\tilde\Xi$ are twice the weights. The doubled form $\tilde\Xi$ is the one in which the frame root and the Peirce idempotents are written, and in the principal chains of $M_n$ it gives integer weights; it is the same triple, with $H=2S$ in the notation of the general article.
+**Remark (the spin element and the root).** The frame root is twice the spin element, $\tilde\Xi=2\tilde S_{\vec u}$. On a carrier the eigenvalues of $\tilde S_{\vec u}$ are the weights, and $s$ is the highest; the eigenvalues of $\tilde\Xi$ are twice the weights. The doubled form $\tilde\Xi$ is the one in which the frame root and the Peirce idempotents are written, and in the principal chains of $M_n$ it gives integer weights; it is the same triple, with $H=2S$ in the notation of the general article.
 
 **The ladder on the spinor.** On $S_+=\mathbb B\tilde\Pi_+$, with the couple $(\tilde\Pi_+,\vec\Upsilon_+)$ as basis, the left multiplications are
 
@@ -104,7 +104,7 @@ Three natural actions occur — left multiplication, right multiplication and th
 
 **The plane $S_+=\mathbb B\tilde\Pi_+$ is a spin-$\tfrac12$ carrier, and so is $S_-$.**
 
-On $S_+$ the operator $L_{\tilde S_{\vec u}}$ has the two weights $+\tfrac12$ on $\tilde\Pi_+$ and $-\tfrac12$ on $\vec\Upsilon_+$; the weights of $L_{\tilde\Xi}$ are their doubles, $+1$ and $-1$. The highest weight is $\tfrac12$, so $j=\tfrac12$, and the dimension is $2j+1=2$. The two weight lines are one-dimensional, and the ladder of §*The Spin Triple of the Frame* joins them, so the carrier is irreducible. The same computation on $S_-$ gives the weights $+\tfrac12$ on $\vec\Upsilon_-$ and $-\tfrac12$ on $\tilde\Pi_-$.
+On $S_+$ the operator $L_{\tilde S_{\vec u}}$ has the two weights $+\tfrac12$ on $\tilde\Pi_+$ and $-\tfrac12$ on $\vec\Upsilon_+$; the weights of $L_{\tilde\Xi}$ are their doubles, $+1$ and $-1$. The highest weight is $\tfrac12$, so $s=\tfrac12$, and the dimension is $2s+1=2$. The two weight lines are one-dimensional, and the ladder of §*The Spin Triple of the Frame* joins them, so the carrier is irreducible. The same computation on $S_-$ gives the weights $+\tfrac12$ on $\vec\Upsilon_-$ and $-\tfrac12$ on $\tilde\Pi_-$.
 
 **Remark (the two planes are isomorphic).** The two planes are distinct subspaces, but they are isomorphic as left modules: the exchange of §*Right Multiplication* of *Spinors as Peirce Coordinates in the Biquaternion Algebra* is a bijection and commutes with the left action. The left regular module therefore decomposes as
 
@@ -116,7 +116,7 @@ $$
 
 **The traceless part $V=\mathbb B_{+-}\oplus\mathbb C\tilde\Xi\oplus\mathbb B_{-+}$ is a spin-$1$ carrier for the commutator.**
 
-The space $V$ is the pure part, the kernel of the trace, of complex dimension three. On the basis $(\vec\Upsilon_-,\tilde\Xi,\vec\Upsilon_+)$ the commutator $\mathrm{ad}_{\tilde S_{\vec u}}$ is diagonal with weights $+1,0,-1$: the spin element acts on the two nilpotents by $\pm1$ and on the root by $0$. The highest weight is $1$, so $j=1$, and the dimension is $3$. The ladder is $\mathrm{ad}_{\vec\Upsilon_-}$ raising and $\mathrm{ad}_{\vec\Upsilon_+}$ lowering.
+The space $V$ is the pure part, the kernel of the trace, of complex dimension three. On the basis $(\vec\Upsilon_-,\tilde\Xi,\vec\Upsilon_+)$ the commutator $\mathrm{ad}_{\tilde S_{\vec u}}$ is diagonal with weights $+1,0,-1$: the spin element acts on the two nilpotents by $\pm1$ and on the root by $0$. The highest weight is $1$, so $s=1$, and the dimension is $3$. The ladder is $\mathrm{ad}_{\vec\Upsilon_-}$ raising and $\mathrm{ad}_{\vec\Upsilon_+}$ lowering.
 
 The space $V$ is not a Peirce corner and not an associative module: left multiplication by $\tilde\Pi_+$ sends $\tilde\Xi$ to $\tilde\Pi_+$, which has trace one. It is a module for the Lie triple only, and that is the carrier on which the integer spin lives.
 
@@ -124,11 +124,11 @@ The space $V$ is not a Peirce corner and not an associative module: left multipl
 
 **The centre $\mathbb C_{\mathbb B}=\mathbb C e_t$, the real span of $e_t$ and $ie_t$, is the spin-$0$ carrier.**
 
-Every inner derivation annihilates the centre, so $\mathrm{ad}_{\tilde S_{\vec u}}=0$ there and the only weight is $0$. The highest weight is $0$, so $j=0$, and the dimension is one. A scalar field with no internal quantum number can be placed here. The physical Higgs is a Lorentz scalar, but it also carries electroweak quantum numbers that the centre does not supply.
+Every inner derivation annihilates the centre, so $\mathrm{ad}_{\tilde S_{\vec u}}=0$ there and the only weight is $0$. The highest weight is $0$, so $s=0$, and the dimension is one. A scalar field with no internal quantum number can be placed here. The physical Higgs is a Lorentz scalar, but it also carries electroweak quantum numbers that the centre does not supply.
 
 ### The Table
 
-| carrier | action | complex dimension | weights of $\tilde S_{\vec u}$ | $j$ | Casimir |
+| carrier | action | complex dimension | weights of $\tilde S_{\vec u}$ | $s$ | Casimir |
 |---|---|---|---|---|---|
 | $S_+$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | $\tfrac34$ |
 | $S_-$ | $L$ | $2$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | $\tfrac34$ |
@@ -145,13 +145,13 @@ Every inner derivation annihilates the centre, so $\mathrm{ad}_{\tilde S_{\vec u
 
 **Definition (elementary carrier).** An **elementary carrier** of $\mathbb B$ is an isomorphism class of nonzero irreducible invariant subspaces of $\mathbb B$ under one of the two actions: left multiplication $L$ (associative) or the commutator $\mathrm{ad}$ (Lie). Two subspaces define the same carrier when the actions are isomorphic. *On $\mathbb B$ alone* means that the space is a subspace of $\mathbb B$ and the action is the restriction of one of these two. A general Lie-algebra module, such as the four-dimensional irreducible module of $\mathfrak{sl}_2(\mathbb C)$, is not of this form: its action is not the restriction of $\mathrm{ad}$ to a subspace of $\mathbb B$.
 
-**The associative action sees only $\tfrac12$.** The algebra is simple, $\mathbb B\cong M_2(\mathbb C)$, so it has one isomorphism class of simple modules, of complex dimension two. Every finite-dimensional left module is a direct sum of copies of it. On the simple module the spin element $\tilde S=h/2$ is a traceless $2\times2$ matrix with $(2\tilde S)^{2}=1$; the weights of $\tilde S$ are $\pm\tfrac12$, and $j$ is the highest of them, $\tfrac12$. A unital one-dimensional module would be a unital algebra map $M_2(\mathbb C)\to\mathbb C$. Its kernel is a two-sided ideal, so by simplicity it is $0$ or the whole algebra; neither is possible for a unital map into a one-dimensional algebra. Hence no one-dimensional module exists, and $j=0$ is not available to the left action.
+**The associative action sees only $\tfrac12$.** The algebra is simple, $\mathbb B\cong M_2(\mathbb C)$, so it has one isomorphism class of simple modules, of complex dimension two. Every finite-dimensional left module is a direct sum of copies of it. On the simple module the spin element $\tilde S_{\vec u}=h/2$ is a traceless $2\times2$ matrix with $(2\tilde S_{\vec u})^{2}=1$; the weights of $\tilde S_{\vec u}$ are $\pm\tfrac12$, and $s$ is the highest of them, $\tfrac12$. A unital one-dimensional module would be a unital algebra map $M_2(\mathbb C)\to\mathbb C$. Its kernel is a two-sided ideal, so by simplicity it is $0$ or the whole algebra; neither is possible for a unital map into a one-dimensional algebra. Hence no one-dimensional module exists, and $s=0$ is not available to the left action.
 
-**The adjoint action adds $0$ and $1$.** As a Lie algebra, $\mathbb B=\mathbb C e_{t}\oplus V$ with $V=\ker\operatorname{tr}\cong\mathfrak{sl}_2(\mathbb C)$. The centre is trivial, so $j=0$. The traceless part is the three-dimensional irreducible module, with weights $+1,0,-1$ under $\mathrm{ad}_{h/2}$, so $j=1$. The adjoint action has no other irreducible invariant subspace.
+**The adjoint action adds $0$ and $1$.** As a Lie algebra, $\mathbb B=\mathbb C e_{t}\oplus V$ with $V=\ker\operatorname{tr}\cong\mathfrak{sl}_2(\mathbb C)$. The centre is trivial, so $s=0$. The traceless part is the three-dimensional irreducible module, with weights $+1,0,-1$ under $\mathrm{ad}_{h/2}$, so $s=1$. The adjoint action has no other irreducible invariant subspace.
 
-**The right action adds nothing.** On $S_+$ the right action is the constant $R_{h}=+1$, that is $R_{\tilde S}=+\tfrac12$; on $S_-$ it is $R_{h}=-1$, that is $R_{\tilde S}=-\tfrac12$. The right regular module is the same two-dimensional simple module read from the other side, so the right action adds no carrier type and no value of $j$.
+**The right action adds nothing.** On $S_+$ the right action is the constant $R_{h}=+1$, that is $R_{\tilde S_{\vec u}}=+\tfrac12$; on $S_-$ it is $R_{h}=-1$, that is $R_{\tilde S_{\vec u}}=-\tfrac12$. The right regular module is the same two-dimensional simple module read from the other side, so the right action adds no carrier type and no value of $s$.
 
-**The union.** The left action has one irreducible type: every minimal left ideal is isomorphic to $S_+=\mathbb B\tilde\Pi_+$, so $S_+$ and $S_-$ are two representatives of one carrier. The adjoint action has two irreducible types: the centre $\mathbb C_{\mathbb B}$ and the traceless part $V$. The algebra $\mathbb B$ itself is reducible under both, so it is not elementary. The elementary carriers are therefore the trivial, the two-dimensional simple and the adjoint, with $j=0$, $\tfrac12$ and $1$, and there are no others. Hence the elementary list is
+**The union.** The left action has one irreducible type: every minimal left ideal is isomorphic to $S_+=\mathbb B\tilde\Pi_+$, so $S_+$ and $S_-$ are two representatives of one carrier. The adjoint action has two irreducible types: the centre $\mathbb C_{\mathbb B}$ and the traceless part $V$. The algebra $\mathbb B$ itself is reducible under both, so it is not elementary. The elementary carriers are therefore the trivial, the two-dimensional simple and the adjoint, with $s=0$, $\tfrac12$ and $1$, and there are no others. Hence the elementary list is
 $$
 \{0,\tfrac12,1\},
 $$
@@ -161,7 +161,7 @@ and no other value occurs on $\mathbb B$ alone. Higher spin is not forbidden; it
 
 ## The Casimir
 
-**The element $\tilde S_x^2+\tilde S_y^2+\tilde S_z^2$ is central and equals $\tfrac34 e_t$; the Casimir operator is the sum of the squares of the action, and it equals $j(j+1)$ on an irreducible carrier.**
+**The element $\tilde S_x^2+\tilde S_y^2+\tilde S_z^2$ is central and equals $\tfrac34 e_t$; the Casimir operator is the sum of the squares of the action, and it equals $s(s+1)$ on an irreducible carrier.**
 
 Each coordinate operator squares to $\tfrac14 e_t$, because $(i\vec e_k)^2=i^2\vec e_k^2=(-1)(-1)=e_t$. Hence
 
@@ -171,7 +171,7 @@ $$
 
 The sum is a central element, and it acts by the scalar $\tfrac34$ on every carrier, whatever the action. It is therefore not the Casimir operator: the Casimir is the operator $\sum_k\rho(\tilde S_k)^2$, and it depends on the action $\rho$.
 
-| carrier | action | $\sum_k\rho(\tilde S_k)^2$ | $j(j+1)$ |
+| carrier | action | $\sum_k\rho(\tilde S_k)^2$ | $s(s+1)$ |
 |---|---|---|---|
 | $S_\pm$ | $L$ | $\tfrac34\,\mathrm{id}$ | $\tfrac34$ |
 | $V$ | $\mathrm{ad}$ | $2\,\mathrm{id}$ | $2$ |
@@ -214,7 +214,7 @@ $$
 
 On $S_+$ the eigenvalues of $L_{\tilde S_{\vec u}}$ are $\pm\tfrac12$, so those of $L_{\tilde u(\theta)}$ are $e^{\mp i\theta/2}$. On $V$ the eigenvalues of $\mathrm{ad}_{\tilde S_{\vec u}}$ are $+1,0,-1$, so those of $\mathrm{Ad}_{\tilde u(\theta)}$ are $e^{\mp i\theta},1$.
 
-**The half-angle is the exponential of the weight, not the spin.** The exponent in $L_{\tilde u}$ is $\theta/2$ because the weight of $L_{\tilde S}$ is $\tfrac12$; on the vector the weight is $1$ and the exponent is $\theta$. The same rotor has two exponents on two carriers. The half-angle is not a property of the rotor alone and it is not the spin quantum number; it is the exponential coordinate of the weight on the carrier.
+**The half-angle is the exponential of the weight, not the spin.** The exponent in $L_{\tilde u}$ is $\theta/2$ because the weight of $L_{\tilde S_{\vec u}}$ is $\tfrac12$; on the vector the weight is $1$ and the exponent is $\theta$. The same rotor has two exponents on two carriers. The half-angle is not a property of the rotor alone and it is not the spin quantum number; it is the exponential coordinate of the weight on the carrier.
 
 **The double cover.** At $\theta=2\pi$ the rotor is $-e_t$; it acts on the spinor by $L_{\tilde u(2\pi)}=-\mathrm{id}$ and on the vector by $\mathrm{Ad}_{\tilde u(2\pi)}=\mathrm{id}$. The sign is the central sign of the double cover, visible on the spinor and invisible on the vector. The two periods separate the half-integer from the integer carriers; the spin-statistics theorem is not a consequence of the algebra and is treated with the physics.
 
@@ -222,7 +222,7 @@ On $S_+$ the eigenvalues of $L_{\tilde S_{\vec u}}$ are $\pm\tfrac12$, so those 
 
 **Tensor products of the elementary carriers give the higher spins; on $\mathbb B$ itself the elementary carriers carry only $0,\tfrac12,1$.**
 
-The tensor products are taken for the Lie triple, with $X\cdot(\xi\otimes\eta)=X\xi\otimes\eta+\xi\otimes X\eta$; they are not modules over the associative algebra, which has no coproduct. The weights of the spin element $\tilde S=\tilde\Xi/2$ add, and the weight string of the product is the sum of the strings of the factors.
+The tensor products are taken for the Lie triple, with $X\cdot(\xi\otimes\eta)=X\xi\otimes\eta+\xi\otimes X\eta$; they are not modules over the associative algebra, which has no coproduct. The weights of the spin element $\tilde S_{\vec u}=\tilde\Xi/2$ add, and the weight string of the product is the sum of the strings of the factors.
 
 | product | complex dimension | decomposition | spins |
 |---|---|---|---|
@@ -299,11 +299,11 @@ $$
 $$
 contain no $\tilde Q$. Hence for every $\tilde Q$, the eigenvalues of $L_{\tilde S_{\vec u}}$ on $S_\pm$ are $+\tfrac12$ and $-\tfrac12$, and the spin is $\tfrac12$ on both sides of the cone. A null spinor with one nonzero component still has weight $+\tfrac12$ or $-\tfrac12$; it has one component, not another spin. Half the rank counts the components; the highest weight gives the spin.
 
-**The zero field is not spin $0$.** At $\tilde Q=0$ the half-rank is $0$, but the carrier is still $S_\pm$ with $j=\tfrac12$. Spin $0$ is the centre $\mathbb C_{\mathbb B}$ under the adjoint action, where the highest weight itself vanishes. The two zeros have different causes: one is a vanishing element, the other a trivial action.
+**The zero field is not spin $0$.** At $\tilde Q=0$ the half-rank is $0$, but the carrier is still $S_\pm$ with $s=\tfrac12$. Spin $0$ is the centre $\mathbb C_{\mathbb B}$ under the adjoint action, where the highest weight itself vanishes. The two zeros have different causes: one is a vanishing element, the other a trivial action.
 
 **The four sectors.** The two conditions cut $\mathbb B$ into the four cells of *The N-Regular, Spectrally Regular Sector* and its companions. With $\tilde Q\neq0$:
 
-| sector | $N$ | $B^{2}$ | $\operatorname{rank}L_{\tilde Q}|_{S_\pm}$ | $\operatorname{rank}\mathrm{ad}_{\tilde Q}|_{V}$ | $j$ on $S_\pm$ |
+| sector | $N$ | $B^{2}$ | $\operatorname{rank}L_{\tilde Q}|_{S_\pm}$ | $\operatorname{rank}\mathrm{ad}_{\tilde Q}|_{V}$ | $s$ on $S_\pm$ |
 |---|---|---|---|---|---|
 | $\Sigma_{11}$ | $\neq0$ | $\neq0$ | $2$ | $2$ | $\tfrac12$ |
 | $\Sigma_{10}$ | $\neq0$ | $0$ | $2$ | $2$ | $\tfrac12$ |
@@ -329,7 +329,7 @@ Five boundaries keep the match honest.
 - **The match is a label match.** The Standard Model assigns the spins by hand. The algebra reproduces the set $\{0,\tfrac12,1\}$ and does not predict which particle has which spin, nor the masses, the generations, the charges or the colours.
 - **The massless spin-$1$ count is two, not three.** The carrier $V$ has three states. For a massless vector field the longitudinal state is removed by gauge invariance, leaving the two helicities of the photon and the gluon. The algebra supplies the triplet; the massless restriction is a separate physical input, treated in *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*.
 - **The weak chirality is not the Peirce index.** The two Peirce planes $S_\pm$ are isomorphic as left modules, so the left action does not distinguish them. The chirality that the weak interaction couples to is the Lorentz chirality, not the copy index.
-- **Spin here is the rotation spin.** The number $j$ is the highest weight of the rotation generator $\tilde S_{\vec u}=\tilde\Xi/2$ for the subgroup $\mathrm{Spin}(3)\subset\mathbb B^{\times}$. The full Lorentz label is a pair $(j_L,j_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
+- **Spin here is the rotation spin.** The number $s$ is the highest weight of the rotation generator $\tilde S_{\vec u}=\tilde\Xi/2$ for the subgroup $\mathrm{Spin}(3)\subset\mathbb B^{\times}$. The full Lorentz label is a pair $(s_L,s_R)$, and the massless case uses helicity. The table uses the rotation spin, which is the standard particle-data label.
 - **Spin–statistics is not derived.** The half-integer carriers are associative modules and the integer carriers are adjoint modules, but the link from that split to Fermi and Bose statistics is an independent theorem, treated in *The Spin–Statistics Theorem in Biquaternionic Form*.
 
 **What is claimed.** The set of elementary carrier spins of $\mathbb B$ is exactly the set of spins that have been observed for elementary particles. That is a structural alignment of the algebra with the observed spectrum. It is not a derivation of the spectrum.
@@ -357,32 +357,32 @@ The three relations $[S,U]=U$, $[S,V]=-V$ and $[U,V]=2S$ follow, and $(S,U,V)$ i
 **Definition (carrier, spin).** A **carrier** is a finite-dimensional complex module $(W,\rho)$ of $\mathcal A$, associative or Lie, whose restriction to the triple is a representation of $\mathfrak{sl}_2$. The **weights** of the carrier are the eigenvalues of $\rho(S)$. The **spin** of the carrier is
 
 $$
-\boxed{\;j=\lambda_{\max}\bigl(\rho(S)\bigr)=\max\operatorname{spec}\rho(S)\;}
+\boxed{\;s=\lambda_{\max}\bigl(\rho(S)\bigr)=\max\operatorname{spec}\rho(S)\;}
 $$
 
-For an irreducible module the weight string is $j,j-1,\dots,-j$, so $\lambda_{\max}=-\lambda_{\min}=j$. Over $\mathbb{C}$ every finite-dimensional $\mathfrak{sl}_2$ module is completely reducible, so the highest-weight decomposition is automatic and no hypothesis on $W$ is needed beyond the triple and the representation.
+For an irreducible module the weight string is $s,s-1,\dots,-s$, so $\lambda_{\max}=-\lambda_{\min}=s$. Over $\mathbb{C}$ every finite-dimensional $\mathfrak{sl}_2$ module is completely reducible, so the highest-weight decomposition is automatic and no hypothesis on $W$ is needed beyond the triple and the representation.
 
 **Remark (the nonzero condition).** If $[U,V]=0$, the antisymmetric part of the product vanishes and there is no spin element. The double-commutator conditions then force $U=V=0$: $[[U,V],U]=0=2U$ and $[[U,V],V]=0=-2V$. The zero pair is the zero representation of $\mathfrak{sl}_2$, not a spin structure, and the single condition $[U,V]\neq0$ excludes it.
 
-**Remark (central element).** If a candidate spin element $s$ is central in $\mathcal A$, no spin pair has spin element $s$: centrality gives $[s,u]=0$ for every $u$, so $[s,u]=u$ forces $u=0$, and then $[u,v]=2s$ forces $s=0$. The eigenvalues of $\rho(s)$ are then all equal, the weight string is constant, and there is no spin. This is what excludes the idempotents $e=0$ and $e=e_t=1$: their frame roots $h=\mp1$ are central, so the candidates $s=h/2=\mp\tfrac12$ carry no pair and the formal values $j=\mp\tfrac12$ are not spins.
+**Remark (central element).** If a candidate spin element $x$ is central in $\mathcal A$, no spin pair has spin element $x$: centrality gives $[x,u]=0$ for every $u$, so $[x,u]=u$ forces $u=0$, and then $[u,v]=2x$ forces $x=0$. The eigenvalues of $\rho(x)$ are then all equal, the weight string is constant, and there is no spin. This is what excludes the idempotents $e=0$ and $e=e_t=1$: their frame roots $h=\mp1$ are central, so the candidates $x=h/2=\mp\tfrac12$ carry no pair and the formal values $s=\mp\tfrac12$ are not spins.
 
-**Remark (reducible carrier).** For a reducible $W$ the number $j$ is the maximum over the irreducible summands; the full invariant is the multiset of their highest weights. The left regular module, for instance, is $2\cdot\tfrac12$: the weights of $\tilde S_{\vec u}$ are $+\tfrac12,-\tfrac12,+\tfrac12,-\tfrac12$, $j=\tfrac12$, and the multiset of highest weights is $\{\tfrac12,\tfrac12\}$.
+**Remark (reducible carrier).** For a reducible $W$ the number $s$ is the maximum over the irreducible summands; the full invariant is the multiset of their highest weights. The left regular module, for instance, is $2\cdot\tfrac12$: the weights of $\tilde S_{\vec u}$ are $+\tfrac12,-\tfrac12,+\tfrac12,-\tfrac12$, $s=\tfrac12$, and the multiset of highest weights is $\{\tfrac12,\tfrac12\}$.
 
-**Proposition (frame root).** Let $e$ be an idempotent of $\mathbb{B}$ with frame root $h=2e-e_t$. If $(h/2,u,v)$ is a spin triple, then the spin is $j=\lambda_{\max}(\rho(h/2))$, and $h/2$ is the spin element. For $e=0$ and $e=e_t$ the root $h=\mp1$ is central and there is no pair.
+**Proposition (frame root).** Let $e$ be an idempotent of $\mathbb{B}$ with frame root $h=2e-e_t$. If $(h/2,u,v)$ is a spin triple, then the spin is $s=\lambda_{\max}(\rho(h/2))$, and $h/2$ is the spin element. For $e=0$ and $e=e_t$ the root $h=\mp1$ is central and there is no pair.
 
 **Proposition (principal chain).** For $M_n(\mathbb{C})$, let $J_3=\sum_{k=1}^{n}\bigl(\tfrac{n+1}{2}-k\bigr)E_{kk}$, $J_+=\sum_{k=1}^{n-1}\sqrt{k(n-k)}\,E_{k,k+1}$ and $J_-=\sum_{k=1}^{n-1}\sqrt{k(n-k)}\,E_{k+1,k}$. The triple $(J_3,J_+,J_-)$ is a spin triple, with $[J_3,J_\pm]=\pm J_\pm$ and $[J_+,J_-]=2J_3$. It is not a frame root for $n>2$: $J_3$ has eigenvalues $(n-1)/2,(n-3)/2,\dots,-(n-1)/2$, while a frame root $2e-e_t$ has eigenvalues $\pm1$ only. On the defining carrier $\mathbb{C}^n$ the spin is $(n-1)/2$; on the adjoint it is $0,1,\dots,n-1$ on $\mathrm{gl}_n$ and $1,\dots,n-1$ on $\mathfrak{sl}_n$.
 
 **Remark (the balanced Peirce triple).** For even $n$ and an idempotent of rank $r=n/2$, the Peirce root $h$ is traceless and $h/2$ closes to a spin triple different from the principal one. Its adjoint carrier decomposes as $r^2(V_1\oplus V_0)$: the $r^2$ vectors of weight $+1$ generate $r^2$ copies of $V_1$, and the weight-$0$ space has dimension $2r^2$, of which $r^2$ vectors are the lowers of the $V_1$'s and $r^2$ are the highest weights of the $V_0$'s. The defining carrier is $r\cdot\tfrac12$, so the elementary spins are again $0,\tfrac12,1$. At $n=2$, $r=1$ and the decomposition is $V_1\oplus V_0$, the biquaternion case.
 
-This is the only definition of spin in the corpus. The element $S$ is the **spin operator**: its eigenvalues are the weights, and its highest eigenvalue is $j$. The phrase "the spin of the electron" is the physics name for the number $j$ of the carrier that describes the electron; it is an interpretation of $j$, not a second definition.
+This is the only definition of spin in the corpus. The element $S$ is the **spin operator**: its eigenvalues are the weights, and its highest eigenvalue is $s$. The phrase "the spin of the electron" is the physics name for the number $s$ of the carrier that describes the electron; it is an interpretation of $s$, not a second definition.
 
-**Remark (why the antisymmetric part).** For the frame, the spin element is $\tilde S_{\vec u}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]$, the antisymmetric part of the nilpotent product. The symmetric part is $\tfrac12\{\vec\Upsilon_-,\vec\Upsilon_+\}=\tfrac12(\tilde\Pi_++\tilde\Pi_-)=\tfrac12 e_t$, a central scalar with no weight. The antisymmetric part is therefore the whole weight content of the product, and the factor $\tfrac12$ is the antisymmetrisation, not a normalisation choice. The doubled element $H=2S=\tilde\Xi$ is the form in which the frame root is written, and in the principal chains of $M_n$ it gives integer weights; it is the same triple and it names the same $j$.
+**Remark (why the antisymmetric part).** For the frame, the spin element is $\tilde S_{\vec u}=\tfrac12[\vec\Upsilon_-,\vec\Upsilon_+]$, the antisymmetric part of the nilpotent product. The symmetric part is $\tfrac12\{\vec\Upsilon_-,\vec\Upsilon_+\}=\tfrac12(\tilde\Pi_++\tilde\Pi_-)=\tfrac12 e_t$, a central scalar with no weight. The antisymmetric part is therefore the whole weight content of the product, and the factor $\tfrac12$ is the antisymmetrisation, not a normalisation choice. The doubled element $H=2S=\tilde\Xi$ is the form in which the frame root is written, and in the principal chains of $M_n$ it gives integer weights; it is the same triple and it names the same $s$.
 
 ## One Definition, Several Carriers
 
 **The same definition is read on several carriers. The carriers differ; the number does not.**
 
-| carrier | action $\rho$ | eigenvalues of $\rho(\tilde S_{\vec u})$ | spin $j$ | article |
+| carrier | action $\rho$ | eigenvalues of $\rho(\tilde S_{\vec u})$ | spin $s$ | article |
 |---|---|---|---|---|
 | $S_+=\mathbb{B}\tilde\Pi_+$ | left multiplication $L$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | *Spinors as Peirce Coordinates* |
 | $S_-=\mathbb{B}\tilde\Pi_-$ | left multiplication $L$ | $+\tfrac12,-\tfrac12$ | $\tfrac12$ | *The Minimal Left Ideals* |
@@ -390,26 +390,26 @@ This is the only definition of spin in the corpus. The element $S$ is the **spin
 | $\mathbb{C} e_t$ | commutator $\mathrm{ad}$ | $0$ | $0$ | *The Scalar Field in the Centre* |
 | $S_+^{\otimes n}$ | Lie triple on the tensor product | $\tfrac n2,\tfrac n2-1,\dots,-\tfrac n2$ | $\tfrac n2$ | *Higher Spin from Tensor Products* |
 
-**The Lorentz layer has a second label.** A field in the representation $\tau^{l\bar l}$ restricts to the rotation subgroup as the string of spins $\lvert l-\bar l\rvert,\lvert l-\bar l\rvert+1,\dots,l+\bar l$. The number $j$ of this article is a highest weight, and on a single irreducible rotation carrier it is the top spin of such a string: $(\tfrac12,\tfrac12)$ contains a carrier of $j=1$, and the Rarita–Schwinger pair $\tau^{1,\frac12}\oplus\tau^{\frac12,1}$ contains a carrier of $j=\tfrac32$. The Bhabha–Gel'fand–Yaglom literature labels the whole representation by the other end, $s=\lvert l-\bar l\rvert$: $0$ for the vector and $\tfrac12$ for the Rarita–Schwinger pair. The two numbers agree on the defining module, where both are $\tfrac12$, and they differ as soon as the string has more than one term. This article writes the second as the **Bhabha spin**, or the **Lorentz difference**, never as $j$; which spin a Bhabha field propagates is fixed by its field equation and its subsidiary conditions, not by the label alone.
+**The Lorentz layer has a second label.** A field in the representation $\tau^{(s_L,s_R)}$ restricts to the rotation subgroup as the string of spins $\lvert s_L-s_R\rvert,\lvert s_L-s_R\rvert+1,\dots,s_L+s_R$. The number $s$ of this article is a highest weight, and on a single irreducible rotation carrier it is the top spin of such a string: $(\tfrac12,\tfrac12)$ contains a carrier of $s=1$, and the Rarita–Schwinger pair $\tau^{1,\frac12}\oplus\tau^{\frac12,1}$ contains a carrier of $s=\tfrac32$. The Bhabha–Gel'fand–Yaglom literature labels the whole representation by the other end, $\varsigma=\lvert s_L-s_R\rvert$: $0$ for the vector and $\tfrac12$ for the Rarita–Schwinger pair. The two numbers agree on the defining module, where both are $\tfrac12$, and they differ as soon as the string has more than one term. This article writes the second as the **Bhabha spin**, or the **Lorentz difference**, never as $s$; which spin a Bhabha field propagates is fixed by its field equation and its subsidiary conditions, not by the label alone.
 
-**The half-angle is a coordinate, not a second definition.** On $S_\pm$ the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts as $\exp(-i\theta L_{\tilde S_{\vec u}})$. The exponent $\theta/2$ is the exponential coordinate of the weight $\tfrac12$; it is not the weight and it is not $j$. On $V$ the same rotor produces the phase $\theta$, because the weight there is $1$. The half-angle is therefore a consequence of the weight, on the carrier where the weight is one half.
+**The half-angle is a coordinate, not a second definition.** On $S_\pm$ the rotor $\exp(\tfrac{\theta}{2}\vec u)$ acts as $\exp(-i\theta L_{\tilde S_{\vec u}})$. The exponent $\theta/2$ is the exponential coordinate of the weight $\tfrac12$; it is not the weight and it is not $s$. On $V$ the same rotor produces the phase $\theta$, because the weight there is $1$. The half-angle is therefore a consequence of the weight, on the carrier where the weight is one half.
 
-**The adjoint integer is the same definition.** On $V$ the spin element $\tilde S_{\vec u}$ has weights $+1,0,-1$, so $j=1$. Its highest eigenvalue is $j$, exactly as on $S_\pm$.
+**The adjoint integer is the same definition.** On $V$ the spin element $\tilde S_{\vec u}$ has weights $+1,0,-1$, so $s=1$. Its highest eigenvalue is $s$, exactly as on $S_\pm$.
 
 **The Peirce index is not a spin.** The right action of the root is $R_{\tilde\Xi}=+1$ on $S_+$ and $R_{\tilde\Xi}=-1$ on $S_-$, that is $R_{\tilde S_{\vec u}}=\pm\tfrac12$. That sign labels the two copies of one left module; it is neither a weight of $\tilde S_{\vec u}$ nor a chirality. The left weights of $\tilde S_{\vec u}$ are $+\tfrac12,-\tfrac12$ on both planes. The factor two is the identity $L_{\tilde\Xi}=\mathrm{ad}_{\tilde\Xi}+R_{\tilde\Xi}$ read on the two planes.
 
-**The group fixes integrality, not the value.** The rotor group $\{\pm\exp(\tfrac{\theta}{2}\vec u)\}$ is the double cover of the rotation group. Its $2\pi$ element is $-e_t$ on the spinor and $+e_t$ on the vector; it separates half-integer from integer $j$. It does not supply $j$: the weight does.
+**The group fixes integrality, not the value.** The rotor group $\{\pm\exp(\tfrac{\theta}{2}\vec u)\}$ is the double cover of the rotation group. Its $2\pi$ element is $-e_t$ on the spinor and $+e_t$ on the vector; it separates half-integer from integer $s$. It does not supply $s$: the weight does.
 
 **The Wigner label is the same number, read physically.** A particle of spin $s$ is described by a carrier of dimension $2s+1$ whose highest weight is $s$. The Standard Model assigns $s$ by hand. The algebra reproduces the set $\{0,\tfrac12,1\}$ and does not select which particle carries which value.
 
 ## What Is Not a Definition
 
-- **Not the half-angle.** The half-angle $\theta/2$ is the exponential coordinate of the weight on a spin-$\tfrac12$ carrier. It is not $j$ and it is not a property of the rotor alone.
-- **Not the doubled weight.** The frame root $\tilde\Xi=2\tilde S_{\vec u}$ has weights $+2,0,-2$ on $V$; the spin element $\tilde S_{\vec u}$ has weights $+1,0,-1$, and $j=1$ is the highest. Quoting the root weight $2$ as the spin forgets the factor two between the root and the spin element.
+- **Not the half-angle.** The half-angle $\theta/2$ is the exponential coordinate of the weight on a spin-$\tfrac12$ carrier. It is not $s$ and it is not a property of the rotor alone.
+- **Not the doubled weight.** The frame root $\tilde\Xi=2\tilde S_{\vec u}$ has weights $+2,0,-2$ on $V$; the spin element $\tilde S_{\vec u}$ has weights $+1,0,-1$, and $s=1$ is the highest. Quoting the root weight $2$ as the spin forgets the factor two between the root and the spin element.
 - **Not the Peirce index.** The right action of the root, $R_{\tilde\Xi}=\pm1$, equivalently $R_{\tilde S_{\vec u}}=\pm\tfrac12$, labels two isomorphic copies. It is not a weight of the spin element and it is not a chirality.
-- **Not the spin vector.** The classical four-vector $S^\mu$, and the mean spin $\langle\vec S\rangle$ of a state, are intrinsic angular momenta. They are observables whose magnitude is fixed by $j$; the vector is not the number.
-- **Not the $2+1$ statistics parameter.** The continuous $s$ of an anyon, defined by the rotation phase $\exp(2\pi i s)$, is a statistics parameter. It coincides with $j$ in $3+1$ dimensions and not in $2+1$.
-- **Not the spin group.** The group $\mathrm{Spin}(3)$ fixes which $j$ are integral or half-integral under a full turn. It does not give the value of $j$.
+- **Not the spin vector.** The classical four-vector $S^\mu$, and the mean spin $\langle\vec S\rangle$ of a state, are intrinsic angular momenta. They are observables whose magnitude is fixed by $s$; the vector is not the number.
+- **Not the $2+1$ statistics parameter.** The continuous $\vartheta$ of an anyon, defined by the rotation phase $\exp(2\pi i\vartheta)$, is a statistics parameter. It coincides with $s$ in $3+1$ dimensions and not in $2+1$.
+- **Not the spin group.** The group $\mathrm{Spin}(3)$ fixes which $s$ are integral or half-integral under a full turn. It does not give the value of $s$.
 - **Not the spinor, and not the element.** A spinor is a coordinate on a Peirce carrier. A biquaternion is an element. Neither has a spin; the carrier has one.
 
 **Remark (spin is not a function of an element).** The phrase "the spin of $\tilde Q$" has no meaning. What has a spin is a carrier with an action; $\tilde Q$ acts on the carrier and its spectrum is read there. The phrase "the spin of a biquaternion" is shorthand for the carrier and its weight.
@@ -418,8 +418,8 @@ This is the only definition of spin in the corpus. The element $S$ is the **spin
 
 **The word appears in four grammatical roles. Only the second is the definition.**
 
-- The **spin element** $\tilde S_{\vec u}=h/2$, an element of the algebra, Hermitian, half a root, and the antisymmetric part of the product of the two frame nilpotents. Its eigenvalues on a carrier define $j$.
-- The **spin** $j$, the highest weight of $\tilde S_{\vec u}$ on a carrier. This is the definition.
+- The **spin element** $\tilde S_{\vec u}=h/2$, an element of the algebra, Hermitian, half a root, and the antisymmetric part of the product of the two frame nilpotents. Its eigenvalues on a carrier define $s$.
+- The **spin** $s$, the highest weight of $\tilde S_{\vec u}$ on a carrier. This is the definition.
 - The **spinor**, a coordinate on a Peirce carrier, in the sense of *Spinors as Peirce Coordinates*. It is the carrier's coordinate, not the number.
 - The **spin group** $\mathrm{Spin}(3)$, the double cover of the rotation group, a subgroup of the units of $\mathbb H$. It is the group that fixes integrality.
 
@@ -451,8 +451,8 @@ This is the only definition of spin in the corpus. The element $S$ is the **spin
 | $\tilde S_{\vec u}$, $\vec\Upsilon_-$, $\vec\Upsilon_+$ | the spin triple of the frame |
 | $S_\pm=\mathbb B\tilde\Pi_\pm$ | the spin-$\tfrac12$ carriers |
 | $V=\mathbb B_{+-}\oplus\mathbb C\tilde\Xi\oplus\mathbb B_{-+}$ | the spin-$1$ carrier, the traceless part |
-| $W_j$ | the spin-$j$ carrier in a tensor product |
-| $j$ | the spin quantum number, the highest weight of the spin element $\tilde S_{\vec u}$ |
+| $W_s$ | the spin-$s$ carrier in a tensor product |
+| $s$ | the spin quantum number, the highest weight of the spin element $\tilde S_{\vec u}$ |
 | $H=2\tilde S_{\vec u}$ | the doubled Cartan, equal to the frame root $\tilde\Xi$ |
 | elementary carrier | a nonzero irreducible invariant subspace of $\mathbb B$ under $L$ or $\mathrm{ad}$; the spaces are $\mathbb C e_t$, $S_\pm$, $V$ |
 | $\sum_k\rho(\tilde S_k)^2$ | the Casimir operator on the carrier |

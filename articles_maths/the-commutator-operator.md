@@ -146,7 +146,7 @@ where $A_{a,b}(x) = (a, x, b)$ is the associator operator of *The Sandwich Opera
 
 *Proof.* For the first, $L(a)L(b)(x) = a(bx) = (ab)x = L(ab)(x)$ and $L(b)L(a)(x) = L(ba)(x)$, so the difference is $L(ab - ba) = L([a,b])$. For the second, $R(a)R(b)(x) = (xb)a = x(ba) = R(ba)(x)$ and $R(b)R(a)(x) = R(ab)(x)$, so $[R(a),R(b)] = R(ba - ab) = R(-[a,b])$. The third is the theorem of the associator in *The Sandwich Operator on an Algebra*.
 
-**Corollary.** The map $L$ is an injective homomorphism of Lie algebras $A^{(-)} \to \operatorname{End}_k(A)$, so $L(A)$ is a Lie subalgebra isomorphic to $A^{(-)}$; the map $-R$ is an injective homomorphism of Lie algebras, so $R(A)$ is a Lie subalgebra isomorphic to the opposite algebra $A^{(-)\mathrm{op}}$; and the two images commute exactly when every associator vanishes, that is for an associative algebra for all pairs.
+**Corollary.** The map $L$ is an injective homomorphism of Lie algebras $A^{(-)} \to \operatorname{End}_k(A)$, so $L(A)$ is a Lie subalgebra isomorphic to $A^{(-)}$; the map $-R$ is an injective homomorphism of Lie algebras, so $R(A)$ is a Lie subalgebra isomorphic to the opposite algebra $A^{(-)\mathrm{opp}}$; and the two images commute exactly when every associator vanishes, that is for an associative algebra for all pairs.
 
 *Proof.* The theorem shows that $L([a,b]) = [L(a),L(b)]$ and that $R([b,a]) = [R(a),R(b)]$, the second being the statement that $-R$ is a homomorphism; injectivity of $L$ and of $R$ is the statement, from *The Operators on an Algebra*, that $L(a) = 0$ or $R(a) = 0$ forces $a = 0$ in a unital algebra. Commutativity of the two images is the vanishing of $[L(a),R(b)] = -A_{a,b}$ for all $a$ and $b$, which by *The Sandwich Operator on an Algebra* is associativity.
 

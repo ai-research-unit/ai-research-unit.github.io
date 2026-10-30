@@ -157,7 +157,7 @@ $$
 \sum_{s=0}^{4}\sum_{m=-s}^{s}t^m=\sum_{r=-4}^{4}(5-|r|)t^r,
 $$
 
-which is the character of $\mathfrak{gl}_5$ under $\operatorname{ad}_{J_3}$. Since both modules are semisimple and have the same character, the sum of the five cyclic modules is the whole algebra and the decomposition is direct. The summand $V(j)$ is the $V_j$ of the Clebsch–Gordan decomposition.
+which is the character of $\mathfrak{gl}_5$ under $\operatorname{ad}_{J_3}$. Since both modules are semisimple and have the same character, the sum of the five cyclic modules is the whole algebra and the decomposition is direct. The summand $V(s)$ is the $V_s$ of the Clebsch–Gordan decomposition.
 
 **Corollary.** The highest weights $0,1,2,3,4$ occur once each, and the chain vectors are a set of highest weight vectors, one per summand. The adjoint module is multiplicity-free.
 

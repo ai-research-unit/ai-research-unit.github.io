@@ -209,7 +209,7 @@ $$
 M_5=\bigoplus_{j=1}^{5}M_5E_{jj},
 $$
 
-and each summand is a minimal left ideal isomorphic to $V$. The endomorphism ring of the left regular module is $M_5^{\mathrm{op}}\cong M_5$.
+and each summand is a minimal left ideal isomorphic to $V$. The endomorphism ring of the left regular module is $M_5^{\mathrm{opp}}\cong M_5$.
 
 **Proof.** The column decomposition is the direct sum; each column is minimal and isomorphic to $V$; the endomorphisms of the left regular module are the right multiplications, which form the opposite algebra, isomorphic to $M_5$ by the transpose.
 

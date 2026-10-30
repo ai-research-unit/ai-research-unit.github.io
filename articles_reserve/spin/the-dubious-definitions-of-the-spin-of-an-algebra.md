@@ -892,7 +892,7 @@ The defining module has weights $\pm\tfrac12$; the adjoint has weights $0,\pm1$;
 
 **7. The adjoint was confused with the spin.** The adjoint of $\mathfrak{so}(3)$ on $\mathbb{R}^3$ is the spin-$1$ representation. The adjoint of $\mathfrak{so}(3,1)$ on $\mathbb{R}^4$ is the six-dimensional antisymmetric tensor, not the four-vector. The adjoint of $\mathbb{B}$ is a carrier of the rotation subgroup; its spatial part is the triplet. The triplet carries spin $1$; it is not the definition of spin $1$, and the higher integer carriers are symmetric traceless tensors, not the adjoint of $M_n$ for $n>2$.
 
-**8. The Bhabha label was confused with the spin.** The Bhabha–Gel'fand–Yaglom label $s=\lvert l-\bar l\rvert$ is the lowest spin in the Lorentz string carried by $\tau^{l\bar l}$. It is not the physical spin. The vector $\tau^{\frac12,\frac12}$ has $s=0$ by this label and contains the spin-$1$ Proca field; the physical spin is fixed by the field equation and its constraints. The label is a representation datum, and the corpus's own maths article says so.
+**8. The Bhabha label was confused with the spin.** The Bhabha–Gel'fand–Yaglom label $\varsigma=\lvert s_L-s_R\rvert$ is the lowest spin in the Lorentz string carried by $\tau^{(s_L,s_R)}$. It is not the physical spin. The vector $\tau^{\frac12,\frac12}$ has $\varsigma=0$ by this label and contains the spin-$1$ Proca field; the physical spin is fixed by the field equation and its constraints. The label is a representation datum, and the corpus's own maths article says so.
 
 ### The Four "General Definitions", One by One
 
@@ -922,10 +922,10 @@ The purge removes the doctrine, not the algebra. Five statements survive as corr
 **1. The rotation triple of $\mathbb{B}$.** The elements
 
 $$
-S_k=\tfrac{i}{2}\vec e_k,\qquad [S_i,S_j]=i\epsilon_{ijk}S_k,
+\tilde S_k=\tfrac{i}{2}\vec e_k,\qquad [\tilde S_i,\tilde S_j]=i\epsilon_{ijk}\tilde S_k,
 $$
 
-are the rotation generators in the Hermitian subspace. On the Peirce plane $S_+=\mathbb{B}\tilde\Pi_+$ the left action $L_{S_z}$ has weights $\pm\tfrac12$. On the traceless part $V=\ker\operatorname{tr}$ the adjoint action $\operatorname{ad}_{S_z}$ has weights $+1,0,-1$. These are the spin-$\tfrac12$ and spin-$1$ representations of the rotation group. This is a statement about the rotation action, not a definition of spin.
+are the rotation generators in the Hermitian subspace. On the Peirce plane $S_+=\mathbb{B}\tilde\Pi_+$ the left action $L_{\tilde S_z}$ has weights $\pm\tfrac12$. On the traceless part $V=\ker\operatorname{tr}$ the adjoint action $\operatorname{ad}_{\tilde S_z}$ has weights $+1,0,-1$. These are the spin-$\tfrac12$ and spin-$1$ representations of the rotation group. This is a statement about the rotation action, not a definition of spin.
 
 **2. The centre is the trivial carrier.** $\mathbb{C}_{\mathbb{B}}$ carries the trivial representation of the rotation group. It is the carrier of a scalar field. It is not "spin $0$" by definition; it is the space on which the rotation acts trivially.
 

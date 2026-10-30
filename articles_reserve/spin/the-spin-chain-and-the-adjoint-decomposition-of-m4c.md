@@ -102,10 +102,10 @@ $$
 
 **Proof.** These are the entries of the matrices $J_\pm$. The coefficient of $J_+e_{k+1}$ is $\sqrt{k(4-k)}$ for $k=1,2,3$: $\sqrt3$, $\sqrt{4}=2$, $\sqrt3$. The same coefficients occur in the lowering direction because $J_-=J_+^{\mathsf T}$.
 
-**The coefficients are the standard spin-$\tfrac32$ ladder coefficients.** For $J_+e_{k+1}$ the weight is $m=\tfrac32-k$ and the spin is $j=\tfrac32$, and the standard coefficient is
+**The coefficients are the standard spin-$\tfrac32$ ladder coefficients.** For $J_+e_{k+1}$ the weight is $m=\tfrac32-k$ and the spin is $s=\tfrac32$, and the standard coefficient is
 
 $$
-\sqrt{(j-m)(j+m+1)}=\sqrt{k(4-k)}.
+\sqrt{(s-m)(s+m+1)}=\sqrt{k(4-k)}.
 $$
 
 The three values are $\sqrt3,2,\sqrt3$. They are not all equal: the chain is not the unweighted shift of the simple nilpotents. The simple nilpotents $E_{12},E_{23},E_{34}$ are the steps of the chain with coefficient $1$; the ladder operators of the spin structure are the weighted sums with coefficients $\sqrt3,2,\sqrt3$. The two structures are different: the nilpotents are the Peirce chain, the ladder is the spin chain. The article *The Peirce $\mathfrak{su}_2$ and the Chiral $\mathfrak{su}_2\times\mathfrak{su}_2$ of $M_4(\mathbb{C})$* develops the comparison.

@@ -181,7 +181,7 @@ $$
 m_s=\mu(s)-\mu(s+1).
 $$
 
-*Proof.* The module $W_s$ has the weights $s,s-1,\dots,-s$, one each. It contributes one to $\mu(m)$ exactly when $s\ge\lvert m\rvert$ and $s-m$ is an integer. Subtract the formula for $s+1$ from the formula for $s$; every term cancels except $m_j$.
+*Proof.* The module $W_s$ has the weights $s,s-1,\dots,-s$, one each. It contributes one to $\mu(m)$ exactly when $s\ge\lvert m\rvert$ and $s-m$ is an integer. Subtract the formula for $s+1$ from the formula for $s$; every term cancels except $m_s$.
 
 Apply it:
 
