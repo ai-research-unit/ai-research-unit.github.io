@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser — Biquaternion Universe</title>
+  <title>$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,12 +68,13 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="math0-model-the-centraliser-and-the-double-centraliser"><strong>$M_4(\mathbb{C})_L$ Model : The Centraliser and the Double Centraliser</strong></h1>
+        <h1 id="math0-model-the-centraliser-and-the-double-centraliser"><strong>$M_4(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The centraliser of a regular matrix is larger than the centraliser of the corresponding $2\times2$ matrix, because the regular representation contains two copies of the defining module. The extra freedom is the mixing of the two copies. The relative centraliser inside the image is smaller, and the double centraliser of the whole image is the right regular image.</p>
 <p>This article computes the three objects, their dimensions in each spectral type, and the eigenbasis ambiguity they describe. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</em>.</p>
-<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>. Write $M=\mathsf{M}_4(\tilde Q)$, $A=\mathsf{M}_2(\tilde Q)$, and use the Peirce basis in which $M=\mathrm I_2\otimes A$. The centraliser of $M$ in $M_4(\mathbb{C})$ is written $C(M)$; the relative centraliser in the image is $C_{L}(M)$; the image and the right image are $M_4(\mathbb{C})_L$ and $M_4(\mathbb{C})_R$.</p>
-<p><strong>Boundaries.</strong> The right image and the double centraliser of the whole image are treated in §<em>The Right Regular Image</em> below; the eigenbasis is <em>$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix</em>; the $2\times2$ commutant is <em>$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. Write $M=\mathsf{M}_4^{L}(\tilde Q)$, $A=\mathsf{M}_2(\tilde Q)$, and use the Peirce basis in which $M=\mathrm I_2\otimes A$. The centraliser of $M$ in $M_4(\mathbb{C})$ is written $C(M)$; the relative centraliser in the image is $C_{L}(M)$; the image and the right image are $M_4(\mathbb{C})_{\mathbb{B},L}$ and $M_4(\mathbb{C})_{\mathbb{B},R}$.</p>
+<p><strong>Boundaries.</strong> The right image and the double centraliser of the whole image are treated in §<em>The Right Regular Image</em> below; the eigenbasis is <em>$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</em>; the $2\times2$ commutant is <em>$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</em>.</p>
+<p><strong>Frame.</strong> The Peirce basis used below is the canonical frame of <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>; a matrix in the coefficient basis is carried to it by the change $S$ of <em>The Product, the Trace and the Determinant</em>, with $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.</p>
 <h2 id="the-commutant">The Commutant</h2>
 <p><strong>Theorem.</strong> In the Peirce basis,
 $$
@@ -116,16 +117,16 @@ $$
 in the order (first copy, second copy), with eight free complex parameters. When $A$ is a Jordan block, each block is a polynomial in $A$, still with eight parameters.</p>
 <p><strong>Definition.</strong> The <strong>relative centraliser</strong> is the part of the commutant that lies in the image:
 $$
-C_L(M)=\{X\in M_4(\mathbb{C})_L:XM=MX\}.
+C_L(M)=\{X\in M_4(\mathbb{C})_{\mathbb{B},L}:XM=MX\}.
 $$</p>
 <p><strong>Theorem.</strong>
 $$
-C_L(M)=L(C(\tilde Q))=\{\mathsf{M}_4(\tilde R):\tilde R\tilde Q=\tilde Q\tilde R\},
+C_L(M)=L(C(\tilde Q))=\{\mathsf{M}_4^{L}(\tilde R):\tilde R\tilde Q=\tilde Q\tilde R\},
 \qquad
 \dim_{\mathbb{C}}C_L(M)=
 \begin{cases}4,&\tilde Q\text{ scalar},\\2,&\tilde Q\text{ non-scalar}.\end{cases}
 $$</p>
-<p><em>Proof.</em> An element of the image is $\mathsf{M}_4(\tilde R)$, and it commutes with $\mathsf{M}_4(\tilde Q)$ exactly when $\tilde R$ commutes with $\tilde Q$, by injectivity. The centraliser of a non-scalar element of $M_2(\mathbb{C})$ is the algebra it generates, of dimension two; the centraliser of a scalar is the whole algebra, of dimension four. $\square$</p>
+<p><em>Proof.</em> An element of the image is $\mathsf{M}_4^{L}(\tilde R)$, and it commutes with $\mathsf{M}_4^{L}(\tilde Q)$ exactly when $\tilde R$ commutes with $\tilde Q$, by injectivity. The centraliser of a non-scalar element of $M_2(\mathbb{C})$ is the algebra it generates, of dimension two; the centraliser of a scalar is the whole algebra, of dimension four. $\square$</p>
 <p><strong>The gap.</strong> For a non-scalar element the full commutant has dimension eight and the relative commutant has dimension two. The six extra dimensions are the mixing of the two copies: they are visible in $M_4(\mathbb{C})$ but not in the image. For a scalar element the full commutant is all of $M_4(\mathbb{C})$, dimension sixteen, while the relative commutant is the four-dimensional image.</p>
 <p><strong>The minimal polynomial.</strong> The same computation reads
 $$
@@ -179,12 +180,12 @@ again of dimension eight, with $\mathrm I_2\otimes N$ the nilpotent direction. T
 <h2 id="the-adjugate-and-the-dagger-in-the-commutant">The Adjugate and the Dagger in the Commutant</h2>
 <p><strong>The transpose.</strong> If $B$ commutes with $M$, then $B^{\mathsf T}$ commutes with $M^{\mathsf T}$, not with $M$. Hence
 $$
-C(M)^{\mathsf T}=C(M^{\mathsf T})=C(\mathsf{M}_4(\tilde Q^{\natural})),
+C(M)^{\mathsf T}=C(M^{\mathsf T})=C(\mathsf{M}_4^{L}(\tilde Q^{\natural})),
 $$
 which is the centraliser of the quaternion conjugate. The two centralisers coincide only when $\tilde Q^{\natural}$ is a polynomial in $\tilde Q$, that is, when $\tilde Q$ is scalar or lies in a two-dimensional subalgebra closed under conjugation.</p>
 <p><strong>The dagger.</strong> The same argument gives
 $$
-C(M)^{\dagger}=C(M^{\dagger})=C(\mathsf{M}_4(\tilde Q^{*})),
+C(M)^{\dagger}=C(M^{\dagger})=C(\mathsf{M}_4^{L}(\tilde Q^{*})),
 $$
 and the commutant is stable under the dagger exactly when $M$ is normal, because then $M^{*}$ is a polynomial in $M$. For a normal element the spectral projectors lie in the commutant; for a non-normal element they do not.</p>
 <p><strong>The adjugate.</strong> The adjugate is $N M^{\mathsf T}$, so it lies in $C(M)$ exactly when $M^{\mathsf T}$ does. For a quaternion element, $M^{\mathsf T}$ is proportional to $M^{-1}$ and therefore commutes with $M$; the adjugate then lies in the commutant, as it does in the $2\times2$ model.</p>
@@ -222,14 +223,14 @@ The dimension is one when $\tilde Q$ is scalar and two otherwise.</p>
 <td>$\mathbb{C}[M]$, dimension $2$ or $1$</td>
 </tr>
 <tr>
-<td>the left image $M_4(\mathbb{C})_L$</td>
-<td>$M_4(\mathbb{C})_R$, dimension $4$</td>
-<td>$M_4(\mathbb{C})_L$</td>
+<td>the left image $M_4(\mathbb{C})_{\mathbb{B},L}$</td>
+<td>$M_4(\mathbb{C})_{\mathbb{B},R}$, dimension $4$</td>
+<td>$M_4(\mathbb{C})_{\mathbb{B},L}$</td>
 </tr>
 <tr>
-<td>the right image $M_4(\mathbb{C})_R$</td>
-<td>$M_4(\mathbb{C})_L$, dimension $4$</td>
-<td>$M_4(\mathbb{C})_R$</td>
+<td>the right image $M_4(\mathbb{C})_{\mathbb{B},R}$</td>
+<td>$M_4(\mathbb{C})_{\mathbb{B},L}$, dimension $4$</td>
+<td>$M_4(\mathbb{C})_{\mathbb{B},R}$</td>
 </tr>
 </tbody>
 </table></div>
@@ -244,23 +245,23 @@ Q_y&-Q_z&Q_t&Q_x\\
 Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}\;}
 $$
-It differs from $\mathsf{M}_4(\tilde Q)$ only in the signs of the entries that mix the vector coordinates. It is anti-multiplicative,
+It differs from $\mathsf{M}_4^{L}(\tilde Q)$ only in the signs of the entries that mix the vector coordinates. It is anti-multiplicative,
 $$
 \mathsf{M}_4^{R}(\tilde P)\mathsf{M}_4^{R}(\tilde Q)=\mathsf{M}_4^{R}(\tilde Q\tilde P),
 $$
-injective, and its image $M_4(\mathbb{C})_R$ is the commutant of the left image. With $D=\operatorname{diag}(1,-1,-1,-1)$,
+injective, and its image $M_4(\mathbb{C})_{\mathbb{B},R}$ is the commutant of the left image. With $D=\operatorname{diag}(1,-1,-1,-1)$,
 $$
-\mathsf{M}_4^{R}(\tilde Q)=D\,\mathsf{M}_4(\tilde Q)^{\mathsf T}D
-=D\,\mathsf{M}_4(\tilde Q^{\natural})D,
+\mathsf{M}_4^{R}(\tilde Q)=D\,\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}D
+=D\,\mathsf{M}_4^{L}(\tilde Q^{\natural})D,
 \qquad
-\mathsf{M}_4(\tilde Q)^{\mathsf T}=\mathsf{M}_4(\tilde Q^{\natural}).
+\mathsf{M}_4^{L}(\tilde Q)^{\mathsf T}=\mathsf{M}_4^{L}(\tilde Q^{\natural}).
 $$
 In the Peirce basis it is not block diagonal: it mixes the two copies, while left multiplication preserves each of them. Both images have complex dimension four, and their intersection is the scalar line $\mathbb{C}\mathrm I_4$.</p>
 <p><strong>The double centraliser theorem.</strong> The commutant of the left image is the right image, and conversely:
 $$
-\{T:T\mathsf{M}_4(\tilde Q)=\mathsf{M}_4(\tilde Q)T\ \text{for all }\tilde Q\}=M_4(\mathbb{C})_R,
+\{T:T\mathsf{M}_4^{L}(\tilde Q)=\mathsf{M}_4^{L}(\tilde Q)T\ \text{for all }\tilde Q\}=M_4(\mathbb{C})_{\mathbb{B},R},
 \qquad
-\{T:T M_R=M_RT\ \text{for all }M_R\}=M_4(\mathbb{C})_L.
+\{T:T M_R=M_RT\ \text{for all }M_R\}=M_4(\mathbb{C})_{\mathbb{B},L}.
 $$
 If $T$ commutes with every left multiplication, then $T(\tilde X)=T(\tilde X e_t)=\tilde X\,T(e_t)$, so $T$ is right multiplication. The converse is associativity, and the second statement is the same argument with the sides exchanged.</p>
 <h2 id="summary">Summary</h2>
@@ -299,7 +300,7 @@ If $T$ commutes with every left multiplication, then $T(\tilde X)=T(\tilde X e_t
 <td>the right regular matrix</td>
 </tr>
 <tr>
-<td>$M_4(\mathbb{C})_R$</td>
+<td>$M_4(\mathbb{C})_{\mathbb{B},R}$</td>
 <td>the right image</td>
 </tr>
 <tr>
@@ -311,7 +312,7 @@ If $T$ commutes with every left multiplication, then $T(\tilde X)=T(\tilde X e_t
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-sylvester-operator-and-the-kronecker-sum-of-m4c.html">The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</a>, for the commutant as the kernel of $\mathcal S_{A,A}$ and the image of $\operatorname{ad}_A$.</li>
-<li><a href="m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html">$M_4(\mathbb{C})_L$ Model : The Eigenbasis and the Diagonalising Matrix</a>, for the ambiguity</li>
+<li><a href="m4c-model-the-eigenbasis-and-the-diagonalising-matrix.html">$M_4(\mathbb{C})$ Model : The Eigenbasis and the Diagonalising Matrix</a>, for the ambiguity</li>
 <li><a href="m2c-model-the-centraliser-and-the-double-centraliser.html">$M_2(\mathbb{C})$ Model : The Centraliser and the Double Centraliser</a>, for the $2\times2$ version</li>
 <li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra generated by one element</li>
 </ul>

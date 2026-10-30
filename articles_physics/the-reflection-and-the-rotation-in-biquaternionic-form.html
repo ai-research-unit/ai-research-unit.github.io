@@ -73,7 +73,7 @@
 <p>The companion articles of the relativistic quantum series build the biquaternion Dirac algebra and use it: <em>The Dirac Algebra and Biquaternions — A Dictionary</em> fixes the isomorphism between the biquaternions and the even Clifford algebra; <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> constructs the module on which the algebra acts; <em>Exercise: Chirality and the Weyl Spinors</em> develops the chiral projectors. This article is about a structure that all three use but none names: the <strong>grading of the Dirac algebra by reflection parity</strong>, and the identification of one element — the timelike generator $\gamma^0$ — as the hinge on which the whole structure turns.</p>
 <p>The subject is the following observation, made precise. The biquaternion algebra $\mathbb{B}$ is isomorphic to the <strong>even</strong> part of the Clifford algebra $\mathrm{Cl}_{1,3}$. Its elements include the Lorentz rotors, which act on four-vectors by conjugation; and its elements are at the same time the points of the rotation group. The generators $\gamma^\mu$, by contrast, are <strong>odd</strong>: they are not biquaternions at all, they lie outside the even part, and they are not rotors. They act on spinors and they <strong>exchange the two chiralities</strong>. The odd/even split of the Clifford algebra is therefore not a bookkeeping device. It is the split between the transformations that <em>turn</em> and the transformations that <em>reflect</em>, and chirality — the property that separates the two Weyl spinors — is precisely what the odd part changes and the even part preserves.</p>
 <p>The article is organized as follows. The first section reconciles the two ways a single element of the algebra is used — as an object and as an operator. The second establishes the grading, by the classical theorem that every orthogonal transformation is a product of reflections. The third introduces the frame $\gamma^0$ and shows that the Clifford metric is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus convention of the series a statement about the objects rather than a choice. The fourth shows that conjugation by $\gamma^0$ is complex conjugation on $\mathbb{B}$, so that the frame, the sector swap, and the reflection are one operator. The fifth and sixth give the spaces of rotations and of reflections, and answer the question of how many reflections a given Lorentz transformation needs. The last two sections draw the consequence for chirality and explain why the Pauli algebra cannot carry it.</p>
-<p>The conventions are those of the series: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$; the scalar imaginary $i$; the sectors $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$; the Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ of the generators; and the isomorphism $\mathsf{M}_4$ of the dictionary article, under which $\mathsf{M}_4(\vec e_\mu)$ is a spacelike bivector, $\mathsf{M}_4(e_t) = I_4$, and $\mathsf{M}_4(i) = -\omega$ with $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ the pseudoscalar. No convention is changed here.</p>
+<p>The conventions are those of the series: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$; the scalar imaginary $i$; the sectors $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$; the Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ of the generators; and the isomorphism $\iota_{\mathrm{Cl}}$ of the dictionary article, under which $\iota_{\mathrm{Cl}}(\vec e_\mu)$ is a spacelike bivector, $\iota_{\mathrm{Cl}}(e_t) = I_4$, and $\iota_{\mathrm{Cl}}(i) = -\omega$ with $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ the pseudoscalar. No convention is changed here.</p>
 <h2 id="one-algebra-read-twice">One Algebra, Read Twice</h2>
 <p>A single element of a matrix algebra is at once a <strong>point</strong> and an <strong>operator</strong>. This is not a peculiarity of the biquaternions; it is what a matrix algebra is. The quaternions show it most plainly: a unit quaternion is a point of the three-sphere, and it is also the rotation that acts on vectors by conjugation. The same quaternion, read two ways.</p>
 <p>The biquaternion algebra inherits this doubling, and the series uses it constantly:</p>
@@ -86,7 +86,7 @@
 <p>$$
 \tilde{Q} \mapsto \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}
 $$</p>
-<p>implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and the action reduces to $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of <em>The Lorentz Transformation as a Biquaternionic Rotation</em>. In the Clifford representation the same action is the sandwich $x\mapsto\Lambda x\Lambda^{\mathrm{Cl}}$ by $\Lambda=\mathsf{M}_4(\tilde U_{\mathrm L})$, where $\Lambda^{\mathrm{Cl}}=\mathsf{M}_4(\tilde U_{\mathrm L}^{*})$ is the Clifford image of the Hermitian conjugate. It is the conjugation by $\Lambda$ only on the $*$-unitary slice, where that conjugate is the inverse.</p>
+<p>implements the Lorentz transformation of the material vector $\tilde{Q}\in\mathbb{M}_-$. For a pure boost the rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and the action reduces to $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$; for a general element of $SL(2,\mathbb{C})$ the general form is required. Both facts are those of <em>The Lorentz Transformation as a Biquaternionic Rotation</em>. In the Clifford representation the same action is the sandwich $x\mapsto\Lambda x\Lambda^{\mathrm{Cl}}$ by $\Lambda=\iota_{\mathrm{Cl}}(\tilde U_{\mathrm L})$, where $\Lambda^{\mathrm{Cl}}=\iota_{\mathrm{Cl}}(\tilde U_{\mathrm L}^{*})$ is the Clifford image of the Hermitian conjugate. It is the conjugation by $\Lambda$ only on the $*$-unitary slice, where that conjugate is the inverse.</p>
 <p>The odd elements are not in $\mathbb{B}$, so they have no biquaternion representative. They lie in the odd part of $\mathrm{Cl}_{1,3}$ and act on vectors by the two-sided map of the Pin group,</p>
 <p>$$
 \rho(u): x \mapsto -\,\epsilon(u)\,u\,x\,u, \qquad u\ \text{odd},\ u^2 = \epsilon(u)\,I_4,\ \epsilon(u)=\pm1 ,
@@ -133,9 +133,9 @@ $$</p>
 <h2 id="the-frame-math63-and-the-hermitian-sector">The Frame $\gamma^0$ and the Hermitian Sector</h2>
 <p>The odd part is reached from the even part by a frame, and the frame is the timelike generator. Every vector is</p>
 <p>$$
-x_\mu\gamma^\mu = \gamma^0\,\mathsf{M}_4(w), \qquad w \in \mathbb{M}_+ ,
+x_\mu\gamma^\mu = \gamma^0\,\iota_{\mathrm{Cl}}(w), \qquad w \in \mathbb{M}_+ ,
 $$</p>
-<p>with all coefficients positive; every trivector is $\gamma^0\mathsf{M}_4(w_2)$ with $w_2\in\mathbb{M}_-$. The correspondence is coefficient by coefficient:</p>
+<p>with all coefficients positive; every trivector is $\gamma^0\iota_{\mathrm{Cl}}(w_2)$ with $w_2\in\mathbb{M}_-$. The correspondence is coefficient by coefficient:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -164,11 +164,11 @@ $$</p>
 </table></div>
 <p>The generators therefore <em>are</em> the Hermitian-sector basis, pushed through $\gamma^0$: the scalar direction $e_t$ becomes the time generator, the three imaginary-quaternion directions $i\vec e_\mu$ become the three spatial generators. And in the other direction, the frame maps the even algebra onto its generators:</p>
 <p>$$
-\mathsf{M}_4(\mathbb{M}_+) = \mathrm{span}\{I_4,\ \gamma^0\gamma^1,\ \gamma^0\gamma^2,\ \gamma^0\gamma^3\},
+\iota_{\mathrm{Cl}}(\mathbb{M}_+) = \mathrm{span}\{I_4,\ \gamma^0\gamma^1,\ \gamma^0\gamma^2,\ \gamma^0\gamma^3\},
 $$</p>
 <p>the identity together with the <strong>timelike bivectors</strong>. Since the timelike bivectors generate the boosts, this says that the Hermitian sector is the boost sector — exactly the statement of <em>The Lorentz Transformation as a Biquaternionic Rotation</em>, that the pure boosts are the Hermitian elements of $SL(2,\mathbb{C})$. The real-quaternion sector plays the dual role for the other family,</p>
 <p>$$
-\mathsf{M}_4(\mathbb{H}_{\mathbb{B}}) = \mathrm{span}\{I_4,\ \gamma^2\gamma^3,\ \gamma^3\gamma^1,\ \gamma^1\gamma^2\},
+\iota_{\mathrm{Cl}}(\mathbb{H}_{\mathbb{B}}) = \mathrm{span}\{I_4,\ \gamma^2\gamma^3,\ \gamma^3\gamma^1,\ \gamma^1\gamma^2\},
 $$</p>
 <p>the identity together with the spacelike bivectors, which generate the spatial rotations.</p>
 <p>The decisive consequence concerns the <strong>metric</strong>. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on the two sector bases gives</p>
@@ -188,17 +188,17 @@ $$</p>
 <p>The frame $\gamma^0$ is not merely a bookkeeping element. It has a definite action on the algebra, and it is the action that defines the split $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$.</p>
 <p>For every $\tilde{Q}\in\mathbb{B}$,</p>
 <p>$$
-\boxed{\;\gamma^0\,\mathsf{M}_4(\tilde{Q})\,\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)\;},
+\boxed{\;\gamma^0\,\iota_{\mathrm{Cl}}(\tilde{Q})\,\gamma^0 = \iota_{\mathrm{Cl}}(\tilde{Q}^*)\;},
 $$</p>
 <p>where $\tilde{Q}^*$ is the complex conjugate, $i\mapsto -i$ with the quaternion units fixed. Since complex conjugation is exactly the map that fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, this says that <strong>conjugation by $\gamma^0$ is complex conjugation</strong>: it is the spacetime-side avatar of the split $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, the rotation sector and its imaginary multiple. It preserves each of $\mathbb{M}_{\pm}$, because it commutes with the Hermitian conjugation whose eigenspaces they are; the sector exchange is multiplication by $i$, not a conjugation.</p>
 <p>Among the four generators, $\gamma^0$ is unique in this. The spatial generators reflect instead: $\gamma^k$ fixes $\vec e_k$ and negates the two units $\vec e_j$ with $j\neq k$, and it acts dually on the imaginary units, negating $i\vec e_k$ and fixing the other two. They are linear involutions on the quaternion units, not conjugations. Only the time direction conjugates.</p>
 <p>The frame completes the Clifford interpretation of the conjugations of $\mathbb{B}$. Clifford reversal $\mathrm{rev}$, the anti-automorphism that reverses the order of the factors in a product, acts on the biquaternions as <strong>quaternion conjugation</strong>:</p>
 <p>$$
-\mathrm{rev}\big(\mathsf{M}_4(\tilde{Q})\big) = \mathsf{M}_4(\tilde{Q}^{\natural}) .
+\mathrm{rev}\big(\iota_{\mathrm{Cl}}(\tilde{Q})\big) = \iota_{\mathrm{Cl}}(\tilde{Q}^{\natural}) .
 $$</p>
 <p>Composing the reversal with the frame conjugation gives the Hermitian conjugation:</p>
 <p>$$
-\mathsf{M}_4(\tilde{Q}^{*}) = \gamma^0\,\mathrm{rev}\big(\mathsf{M}_4(\tilde{Q})\big)\,\gamma^0 .
+\iota_{\mathrm{Cl}}(\tilde{Q}^{*}) = \gamma^0\,\mathrm{rev}\big(\iota_{\mathrm{Cl}}(\tilde{Q})\big)\,\gamma^0 .
 $$</p>
 <p>So the two elementary conjugations of the algebra have separate Clifford interpretations — reversal for the quaternion conjugation, the frame for the complex one — and ${}^{*}$ is their composite.</p>
 <p>There is a consequence worth recording, because it bears on the mass term. The algebra's real structure is the anti-Hermitian conjugation $\flat = -{}^{*}$, and the identity above shows that $\gamma^0$ is <em>inside</em> it: the frame, with its complex-conjugation and reflection properties, is one of the two ingredients of $\flat$. A formulation of the mass built on $\flat$ therefore carries the frame, but in the guise of a reality condition rather than of a generator; the linear and chirality-off-diagonal mass term of <em>The Dirac Equation in Biquaternionic Form</em> displays it openly instead. This is an observation about how the frame is packaged, not a derivation; it is stated here because it is the reason the frame is easy to overlook.</p>
@@ -208,7 +208,7 @@ $$</p>
 <p>$$
 SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L}\in\mathbb{B} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = 1\},
 $$</p>
-<p>a group of real dimension $6$, the double cover of $SO^+(1,3)$. Its Lie algebra is the span of the six bivectors, the images of $\vec e_\mu$ and $i\vec e_\mu$ under $\mathsf{M}_4$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in <em>Relativistic Mechanics in Biquaternionic Form</em> and <em>Exercise: Boosting a Four-Velocity and Rapidity Composition</em>, on spinors in <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, on states in <em>Quantum Physics in Biquaternionic Form</em>, and in the composition of rotations of <em>Exercise: The Thomas Precession</em>.</p>
+<p>a group of real dimension $6$, the double cover of $SO^+(1,3)$. Its Lie algebra is the span of the six bivectors, the images of $\vec e_\mu$ and $i\vec e_\mu$ under $\iota_{\mathrm{Cl}}$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in <em>Relativistic Mechanics in Biquaternionic Form</em> and <em>Exercise: Boosting a Four-Velocity and Rapidity Composition</em>, on spinors in <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, on states in <em>Quantum Physics in Biquaternionic Form</em>, and in the composition of rotations of <em>Exercise: The Thomas Precession</em>.</p>
 <p>Two subfamilies are worth separating, because the series uses them differently:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -235,11 +235,11 @@ $$</p>
 </tbody>
 </table></div>
 <p>The boosts do not close under multiplication — the product of two non-collinear boosts is a boost plus a Thomas–Wigner rotation — so they form a submanifold of $SL(2,\mathbb{C})$ rather than a subgroup. The two families are exponentials of the two sector algebras: the boosts of elements of $\mathbb{M}_+$, namely the timelike bivectors $i\vec u$, and the spatial rotations of elements of $\mathbb{H}_{\mathbb{B}}$, namely the spacelike bivectors $\vec u_{jk}$.</p>
-<p><strong>The reflections.</strong> A reflection is an odd element of unit norm, and its data is its <strong>normal</strong>, a unit vector $u$. Writing the vectors as $\gamma^0\mathsf{M}_4(w)$ with $w\in\mathbb{M}_+$, the unit vectors are</p>
+<p><strong>The reflections.</strong> A reflection is an odd element of unit norm, and its data is its <strong>normal</strong>, a unit vector $u$. Writing the vectors as $\gamma^0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_+$, the unit vectors are</p>
 <p>$$
-u = \gamma^0\mathsf{M}_4(w), \qquad w\in\mathbb{M}_+, \quad \langle w\rangle_{\natural} = \pm 1 ,
+u = \gamma^0\iota_{\mathrm{Cl}}(w), \qquad w\in\mathbb{M}_+, \quad \langle w\rangle_{\natural} = \pm 1 ,
 $$</p>
-<p>the timelike normals for $\langle w\rangle_{\natural} = +1$ and the spacelike ones for $\langle w\rangle_{\natural} = -1$. The canonical reflection is the frame itself, $\gamma^0 = \gamma^0\mathsf{M}_4(e_t)$: its normal is the identity $e_t$ of $\mathbb{B}$.</p>
+<p>the timelike normals for $\langle w\rangle_{\natural} = +1$ and the spacelike ones for $\langle w\rangle_{\natural} = -1$. The canonical reflection is the frame itself, $\gamma^0 = \gamma^0\iota_{\mathrm{Cl}}(e_t)$: its normal is the identity $e_t$ of $\mathbb{B}$.</p>
 <p>The reflections do <strong>not</strong> form a group, and this is the sharp difference from the rotations. Multiplying two reflections gives an even element — a rotation — so the set of reflections is a single coset of the rotation group, not closed under multiplication. Its dimension is $3$, the dimension of the unit quadric, against the $6$ of the rotations. The two together form the Pin group,</p>
 <p>$$
 \mathrm{Pin}(1,3) = \mathrm{Spin}(1,3) \cdot \{\text{unit vectors}\},
@@ -343,7 +343,7 @@ $$</p>
 <p>$$
 v = -\cos\frac{\theta}{2}\,\gamma^j + \sin\frac{\theta}{2}\,\gamma^k , \qquad v^2 = -I_4 ,
 $$</p>
-<p>so that $\gamma^j v = \cos\frac{\theta}{2}I_4 + \sin\frac{\theta}{2}\gamma^j\gamma^k$. A generic Lorentz transformation fixes no plane at all — a boost and a rotation in non-parallel planes destroy every fixed direction — so by Cartan–Dieudonné it requires four reflections, the maximum. In these factorisations $u$ and $v$ are unit vectors in the Clifford sense, $u^2 = \pm I_4$; the generators $\mathsf{M}_4(i\vec e_\mu)$ themselves have $N = -1$ and are not rotors, the rotors being their exponentials.</p>
+<p>so that $\gamma^j v = \cos\frac{\theta}{2}I_4 + \sin\frac{\theta}{2}\gamma^j\gamma^k$. A generic Lorentz transformation fixes no plane at all — a boost and a rotation in non-parallel planes destroy every fixed direction — so by Cartan–Dieudonné it requires four reflections, the maximum. In these factorisations $u$ and $v$ are unit vectors in the Clifford sense, $u^2 = \pm I_4$; the generators $\iota_{\mathrm{Cl}}(i\vec e_\mu)$ themselves have $N = -1$ and are not rotors, the rotors being their exponentials.</p>
 <p>So the answer to the question is: <strong>pure boosts and pure spatial rotations are products of two reflections; a generic Lorentz transformation is not, and needs four.</strong> The set of transformations admitting a two-reflection form is exactly the set fixing a plane, a proper submanifold of $SL(2,\mathbb{C})$ — the Thomas–Wigner rotation of a general composed boost is what carries a transformation out of it.</p>
 <h2 id="why-chirality-needs-a-reflection">Why Chirality Needs a Reflection</h2>
 <p>The chirality operator of the series is</p>
@@ -424,10 +424,10 @@ $$</p>
 <p><strong>The grading is the reflection count.</strong> By Cartan–Dieudonné, an orthogonal transformation is a product of reflections and its determinant is $(-1)^{\text{count}}$. The split $\mathrm{Cl}_{1,3} = \mathrm{Cl}_{1,3}^{+}\oplus\mathrm{Cl}_{1,3}^{-}$ is that parity.</p>
 </li>
 <li>
-<p><strong>The frame and the metric.</strong> Every vector is $\gamma^0\mathsf{M}_4(w)$ with $w\in\mathbb{M}_+$, and $\mathsf{M}_4(\mathbb{M}_+)$ is the identity together with the timelike bivectors — the boost sector. The biquaternion norm on the Hermitian basis is $g = \mathrm{diag}(+1,-1,-1,-1)$, and on the material basis $\eta = -g$. The Clifford metric is the biquaternion norm of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.</p>
+<p><strong>The frame and the metric.</strong> Every vector is $\gamma^0\iota_{\mathrm{Cl}}(w)$ with $w\in\mathbb{M}_+$, and $\iota_{\mathrm{Cl}}(\mathbb{M}_+)$ is the identity together with the timelike bivectors — the boost sector. The biquaternion norm on the Hermitian basis is $g = \mathrm{diag}(+1,-1,-1,-1)$, and on the material basis $\eta = -g$. The Clifford metric is the biquaternion norm of the objects the generators represent, so the mostly-minus convention is forced rather than chosen.</p>
 </li>
 <li>
-<p><strong>Conjugation by $\gamma^0$ is complex conjugation.</strong> $\gamma^0\mathsf{M}_4(\tilde{Q})\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)$: it fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, hence preserves each of $\mathbb{M}_{\pm}$. Together with reversal, which is quaternion conjugation, it composes into ${}^{*}$. The real structure $\flat = -{}^{*}$ therefore carries the frame within it.</p>
+<p><strong>Conjugation by $\gamma^0$ is complex conjugation.</strong> $\gamma^0\iota_{\mathrm{Cl}}(\tilde{Q})\gamma^0 = \iota_{\mathrm{Cl}}(\tilde{Q}^*)$: it fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, hence preserves each of $\mathbb{M}_{\pm}$. Together with reversal, which is quaternion conjugation, it composes into ${}^{*}$. The real structure $\flat = -{}^{*}$ therefore carries the frame within it.</p>
 </li>
 <li>
 <p><strong>Rotations and reflections have different spaces.</strong> The rotations are the unit-norm biquaternions, a group of dimension $6$ with the bivectors as Lie algebra. The reflections are the odd unit elements, a single coset of dimension $3$ organised by their $\mathbb{M}_+$ normals, not a group. Together they are $\mathrm{Pin}(1,3)$. <strong>Anti-linear maps shift the correspondence by one:</strong> their determinant carries an extra $-1$, so an even internal matrix acts as a reflection and an odd one as a proper transformation — which is how $T$ (even) is a reflection while $C$ (odd) is not.</p>
@@ -460,8 +460,8 @@ $$</p>
 <td>Clifford algebra and its even/odd parts</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_4$</td>
-<td>Isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$, $\mathsf{M}_4(e_t) = I_4$, $\mathsf{M}_4(i) = -\omega$</td>
+<td>$\iota_{\mathrm{Cl}}$</td>
+<td>Isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$, $\iota_{\mathrm{Cl}}(e_t) = I_4$, $\iota_{\mathrm{Cl}}(i) = -\omega$</td>
 </tr>
 <tr>
 <td>$g = \mathrm{diag}(+1,-1,-1,-1)$</td>
@@ -492,15 +492,15 @@ $$</p>
 <td>Pin action of an odd unit element; $u^2=\epsilon(u)I_4$</td>
 </tr>
 <tr>
-<td>$\mathrm{rev}(\mathsf{M}_4(\tilde{Q})) = \mathsf{M}_4(\tilde{Q}^{\natural})$</td>
+<td>$\mathrm{rev}(\iota_{\mathrm{Cl}}(\tilde{Q})) = \iota_{\mathrm{Cl}}(\tilde{Q}^{\natural})$</td>
 <td>Clifford reversal is quaternion conjugation</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_4(\tilde{Q}^{*}) = \gamma^0\mathrm{rev}(\mathsf{M}_4(\tilde{Q}))\gamma^0$</td>
+<td>$\iota_{\mathrm{Cl}}(\tilde{Q}^{*}) = \gamma^0\mathrm{rev}(\iota_{\mathrm{Cl}}(\tilde{Q}))\gamma^0$</td>
 <td>Hermitian conjugation</td>
 </tr>
 <tr>
-<td>$\gamma^0\mathsf{M}_4(\tilde{Q})\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)$</td>
+<td>$\gamma^0\iota_{\mathrm{Cl}}(\tilde{Q})\gamma^0 = \iota_{\mathrm{Cl}}(\tilde{Q}^*)$</td>
 <td>Conjugation by the frame is complex conjugation</td>
 </tr>
 <tr>
@@ -513,11 +513,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
-<td>Hermitian sector; $\mathsf{M}_4(\mathbb{M}_+)$ = identity + timelike bivectors (boosts)</td>
+<td>Hermitian sector; $\iota_{\mathrm{Cl}}(\mathbb{M}_+)$ = identity + timelike bivectors (boosts)</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>Real-quaternion sector; $\mathsf{M}_4(\mathbb{H}_{\mathbb{B}})$ = identity + spacelike bivectors (spatial rotations)</td>
+<td>Real-quaternion sector; $\iota_{\mathrm{Cl}}(\mathbb{H}_{\mathbb{B}})$ = identity + spacelike bivectors (spatial rotations)</td>
 </tr>
 <tr>
 <td>$\det M$</td>
@@ -535,7 +535,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>Companion articles in this series: <a href="the-dirac-algebra-and-biquaternions-a-dictionary.html">The Dirac Algebra and Biquaternions — A Dictionary</a> (the isomorphism $\mathsf{M}_4$, the sign conventions, and the chirality operator used throughout); <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a> (the linear, chirality-off-diagonal mass term); <a href="the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a> (the module, the one-sided spinor action, and the two factors $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$); <a href="exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a> (the projectors and the two Weyl modules); <a href="the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a> (the boost rotor, its Hermiticity, and the rotor conjugation); <a href="the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a>; <a href="exercise-the-thomas-precession.html">Exercise: The Thomas Precession</a> (the composition of non-collinear boosts); <a href="exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a>.</li>
+<li>Companion articles in this series: <a href="the-dirac-algebra-and-biquaternions-a-dictionary.html">The Dirac Algebra and Biquaternions — A Dictionary</a> (the isomorphism $\iota_{\mathrm{Cl}}$, the sign conventions, and the chirality operator used throughout); <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a> (the linear, chirality-off-diagonal mass term); <a href="the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html">The Spinor Module in Biquaternionic Form and Its Lorentz Action</a> (the module, the one-sided spinor action, and the two factors $\mathrm{SU}(2)\oplus\mathrm{SU}(2)$); <a href="exercise-chirality-and-the-weyl-spinors.html">Exercise: Chirality and the Weyl Spinors</a> (the projectors and the two Weyl modules); <a href="the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a> (the boost rotor, its Hermiticity, and the rotor conjugation); <a href="the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations</a>; <a href="exercise-the-thomas-precession.html">Exercise: The Thomas Precession</a> (the composition of non-collinear boosts); <a href="exercise-boosting-a-four-velocity-and-rapidity-composition.html">Exercise: Boosting a Four-Velocity and Rapidity Composition</a>.</li>
 <li>On the physics of chirality: <a href="chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>; <a href="the-neutrino-and-majorana-fermions-in-biquaternionic-form.html">The Neutrino and Majorana Fermions in Biquaternionic Form</a>; <a href="the-cpt-theorem-in-biquaternionic-form.html">The CPT Theorem in Biquaternionic Form</a> (the anti-linear discrete symmetries of the last subsection); <a href="zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a> (the mass as the coupling between the chiralities); <a href="exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a> (the reduction to the Pauli algebra).</li>
 <li>Foundational articles: <a href="introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a>; <a href="the-material-sector-four-vectors-interval-and-lorentz-action.html">The Material Sector: Four-Vectors, Interval and Lorentz Action</a>; <a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>; <a href="conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>.</li>
 <li>On the Clifford structures used here: <a href="../articles_maths/clifford-algebras.html">Clifford Algebras</a>; <em>Clifford Algebras in finite dimensions</em>; <em>Spinors</em>; <a href="the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html">The Spinor Representation of the Lorentz Group in Biquaternionic Form</a>.</li>

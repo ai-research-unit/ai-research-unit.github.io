@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm — Biquaternion Universe</title>
+  <title>$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,12 +68,13 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="math0-representation-trace-determinant-and-the-biquaternion-norm"><strong>$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm</strong></h1>
+        <h1 id="math0-representation-trace-determinant-and-the-biquaternion-norm"><strong>$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The trace of the regular matrix is four times the scalar part and the determinant is the square of the quaternionic norm. The doubling of the spectrum squares the determinant and doubles the trace; the norm itself survives as a quarter-trace of a word, not as the determinant.</p>
 <p>This article develops the two invariants, the four algebraic norms as matrix invariants, the characteristic and minimal polynomials, and the singular locus. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</em>.</p>
-<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>. Write $\mathsf{M}_4(\tilde Q)=M$, $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\lambda_\pm=Q_t\pm iB$.</p>
-<p><strong>Boundaries.</strong> The determinant as a group homomorphism is <em>$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</em>; the rank stratification is <em>$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety</em>; the four forms are <em>$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces</em>. The $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. Write $\mathsf{M}_4^{L}(\tilde Q)=M$, $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, $B^2=Q_x^2+Q_y^2+Q_z^2$ and $\lambda_\pm=Q_t\pm iB$.</p>
+<p><strong>Boundaries.</strong> The determinant as a group homomorphism is <em>$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</em>; the rank stratification is <em>$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</em>; the four forms are <em>$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces</em>. The $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</em>.</p>
+<p><strong>Frame.</strong> Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>, is the Peirce frame reached by the change $S$ of <em>The Product, the Trace and the Determinant</em>: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.</p>
 <h2 id="the-trace">The Trace</h2>
 <p><strong>The trace is four times the scalar part.</strong></p>
 <p>$$
@@ -105,7 +106,7 @@ M\text{ invertible}\iff\tilde Q\text{ is a unit}\iff\langle\tilde Q\rangle_{\nat
 $$
 The inverse is
 $$
-M^{-1}=\mathsf{M}_4(\tilde Q^{-1})=\frac{\mathsf{M}_4(\tilde Q^{\natural})}{\langle\tilde Q\rangle_{\natural}}
+M^{-1}=\mathsf{M}_4^{L}(\tilde Q^{-1})=\frac{\mathsf{M}_4^{L}(\tilde Q^{\natural})}{\langle\tilde Q\rangle_{\natural}}
 =\frac{M^{\mathsf T}}{\langle\tilde Q\rangle_{\natural}},
 $$
 because the transpose is quaternion conjugation in the regular model. Compare the $2\times2$ formula, where the numerator is the adjugate; in the $4\times4$ model the adjugate is degree three and the transpose is the linear object.</p>
@@ -153,7 +154,7 @@ because the transpose is quaternion conjugation in the regular model. Compare th
 </tr>
 </tbody>
 </table></div>
-<p><em>Proof.</em> The block form and the identities $M^{\mathsf T}=\mathsf{M}_4(\tilde Q^{\natural})$, $M^{\dagger}=\mathsf{M}_4(\tilde Q^{*})$ reduce each quarter-trace to the scalar part of the corresponding product. For the quaternionic norm, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; for the Hermitian norm, $\tilde Q^{*}\tilde Q=He_t$; for the Krein norm, $\tilde Q^{\natural}\tilde Q^{*}=Ke_t$. The plain norm is $\tilde Q^2$ read in the scalar part. $\square$</p>
+<p><em>Proof.</em> The block form and the identities $M^{\mathsf T}=\mathsf{M}_4^{L}(\tilde Q^{\natural})$, $M^{\dagger}=\mathsf{M}_4^{L}(\tilde Q^{*})$ reduce each quarter-trace to the scalar part of the corresponding product. For the quaternionic norm, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$; for the Hermitian norm, $\tilde Q^{*}\tilde Q=He_t$; for the Krein norm, $\tilde Q^{\natural}\tilde Q^{*}=Ke_t$. The plain norm is $\tilde Q^2$ read in the scalar part. $\square$</p>
 <p><strong>The quaternionic norm is not the determinant.</strong> In the $2\times2$ model $\det\mathsf{M}_2(\tilde Q)=N$. In the $4\times4$ model $\det M=N^2$, and $N$ itself is the quarter-trace of $M^{\mathsf T}M$. The determinant is the square of the norm because the regular representation contains two copies of the defining module; the norm is recovered from the matrix by a word, not by the determinant.</p>
 <p><strong>The signatures.</strong> The Hermitian norm is positive definite; the Krein norm has signature $(2,6)$ on the real algebra; the plain and quaternionic norms are complex-valued and have no sign. The table is the regular-model form of the four-norm table of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
 <h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
@@ -197,7 +198,7 @@ is the triangle inequality for the four squares $Q_\mu^2$, with equality exactly
 </thead>
 <tbody>
 <tr>
-<td>$M=\mathsf{M}_4(\tilde Q)$</td>
+<td>$M=\mathsf{M}_4^{L}(\tilde Q)$</td>
 <td>the regular matrix</td>
 </tr>
 <tr>
@@ -220,9 +221,9 @@ is the triangle inequality for the four squares $Q_\mu^2$, with equality exactly
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="m4c-representation-the-four-words-and-the-four-traces.html">$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces</a>, for the trace normalization</li>
-<li><a href="m4c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_4(\mathbb{C})_L$ Representation : Rank-One Matrices and the Determinantal Variety</a>, for the null cone</li>
-<li><a href="m4c-representation-gl2-sl2-and-the-determinant.html">$M_4(\mathbb{C})_L$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a>, for the groups</li>
+<li><a href="m4c-representation-the-four-words-and-the-four-traces.html">$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces</a>, for the trace normalization</li>
+<li><a href="m4c-representation-rank-one-matrices-and-the-determinantal-variety.html">$M_4(\mathbb{C})$ Representation : Rank-One Matrices and the Determinantal Variety</a>, for the null cone</li>
+<li><a href="m4c-representation-gl2-sl2-and-the-determinant.html">$M_4(\mathbb{C})$ Representation : $GL_2(\mathbb{C})$, $SL_2(\mathbb{C})$ and the Determinant</a>, for the groups</li>
 <li><a href="m2c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_2(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the $2\times2$ version</li>
 <li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the norms</li>
 </ul>

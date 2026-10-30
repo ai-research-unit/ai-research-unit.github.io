@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$M_4(\mathbb{C})_L$ Representation : The Killing Form — Biquaternion Universe</title>
+  <title>$M_4(\mathbb{C})$ Representation : The Killing Form — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,12 +68,13 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="math0-representation-the-killing-form"><strong>$M_4(\mathbb{C})_L$ Representation : The Killing Form</strong></h1>
+        <h1 id="math0-representation-the-killing-form"><strong>$M_4(\mathbb{C})$ Representation : The Killing Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The Killing form of the biquaternion algebra is the invariant bilinear form of its Lie algebra. In the regular model it is a complex bilinear form on a four-dimensional subspace of $M_4(\mathbb{C})$, degenerate along the centre and proportional to the Euclidean form on the vector part. Its real part has signature $(3,3)$ on the trace-free part.</p>
 <p>This article develops the adjoint operator, the formula, the radical, the signature, the invariance and the relation to the trace form. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : The Killing Form</em>.</p>
-<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>. The Lie algebra is $\mathbb{B}$ with the bracket $[X,Y]=XY-YX$, read over $\mathbb{C}$ and over $\mathbb{R}$. Write $X=\mathsf{M}_4(\tilde X)$, $Y=\mathsf{M}_4(\tilde Y)$, and $\vec X\cdot\vec Y=X_xY_x+X_yY_y+X_zY_z$. The complex trace is written $\operatorname{tr}$.</p>
-<p><strong>Boundaries.</strong> The Killing form of the algebra is <em>Biquaternion Lie Group and Exponential Structure</em>, §<em>The Killing Form</em>; the four forms are <em>$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces</em>; the trace pairing is <em>$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm</em>; the $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : The Killing Form</em>.</p>
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. The Lie algebra is $\mathbb{B}$ with the bracket $[X,Y]=XY-YX$, read over $\mathbb{C}$ and over $\mathbb{R}$. Write $X=\mathsf{M}_4^{L}(\tilde X)$, $Y=\mathsf{M}_4^{L}(\tilde Y)$, and $\vec X\cdot\vec Y=X_xY_x+X_yY_y+X_zY_z$. The complex trace is written $\operatorname{tr}$.</p>
+<p><strong>Boundaries.</strong> The Killing form of the algebra is <em>Biquaternion Lie Group and Exponential Structure</em>, §<em>The Killing Form</em>; the four forms are <em>$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces</em>; the trace pairing is <em>$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</em>; the $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : The Killing Form</em>.</p>
+<p><strong>Frame.</strong> Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>, is the Peirce frame reached by the change $S$ of <em>The Product, the Trace and the Determinant</em>: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.</p>
 <h2 id="the-adjoint-operator">The Adjoint Operator</h2>
 <p>For $X\in M_4(\mathbb{C})$ the <strong>adjoint operator</strong> is
 $$
@@ -82,9 +83,9 @@ $$
 \operatorname{ad}_X(Y)=[X,Y]=XY-YX.
 $$
 It is complex linear, hence real linear on the thirty-two real dimensions, and it is a derivation of the matrix algebra.</p>
-<p><strong>The image.</strong> For $X=\mathsf{M}_4(\tilde X)$, the adjoint preserves the image:
+<p><strong>The image.</strong> For $X=\mathsf{M}_4^{L}(\tilde X)$, the adjoint preserves the image:
 $$
-\operatorname{ad}_X(\mathsf{M}_4(\tilde Y))=\mathsf{M}_4([\tilde X,\tilde Y]).
+\operatorname{ad}_X(\mathsf{M}_4^{L}(\tilde Y))=\mathsf{M}_4^{L}([\tilde X,\tilde Y]).
 $$
 Hence the adjoint of the regular model is the image of the adjoint of the algebra, and the Killing form of the image is the Killing form of $\mathbb{B}$.</p>
 <p><strong>The matrix units.</strong> In the eigenbasis of a diagonal element, $\operatorname{ad}_X(E_{ij})=(x_i-x_j)E_{ij}$, so the adjoint is diagonal with the differences of the eigenvalues. The eigenvalues of $\operatorname{ad}_X$ are the differences of the eigenvalues of $X$, each repeated according to the multiplicity.</p>
@@ -181,9 +182,9 @@ $$
 with ratio $-2$; on the centre the trace form is positive and the Killing form vanishes. The trace form sees the centre, the Killing form does not.</p>
 <p><strong>The Casimir.</strong> On the vector subspace, with the complex form $\kappa_{\mathbb{C}}=-8\vec X\cdot\vec Y$, the dual of $\vec e_k$ is $-\vec e_k/8$, and the Casimir is
 $$
-\Omega=-\frac18\sum_{k=1}^{3}\mathsf{M}_4(\vec e_k)^2.
+\Omega=-\frac18\sum_{k=1}^{3}\mathsf{M}_4^{L}(\vec e_k)^2.
 $$
-Since $\mathsf{M}_4(\vec e_k)^2=-\mathrm I_4$, the Casimir is $\Omega=\tfrac38\mathrm I_4$, the same scalar $\tfrac38$ as in the $2\times2$ model, acting on each copy of the defining module.</p>
+Since $\mathsf{M}_4^{L}(\vec e_k)^2=-\mathrm I_4$, the Casimir is $\Omega=\tfrac38\mathrm I_4$, the same scalar $\tfrac38$ as in the $2\times2$ model, acting on each copy of the defining module.</p>
 <h2 id="summary">Summary</h2>
 <p>The complex Killing form of the regular image is $2\operatorname{tr}(XY)-\tfrac12\operatorname{tr}X\operatorname{tr}Y=-8\vec X\cdot\vec Y$; the real form is $-16\operatorname{Re}(\vec X\cdot\vec Y)$, of signature $(3,3)$ on the trace-free part. The radical is the centre, of complex dimension one and real dimension two. The form is invariant and degenerate, and it differs from the nondegenerate trace form by the centre and by a factor. The compact real form is negative definite on the vector part; the split real form is indefinite.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -219,8 +220,8 @@ Since $\mathsf{M}_4(\vec e_k)^2=-\mathrm I_4$, the Casimir is $\Omega=\tfrac38\m
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="m4c-representation-the-four-words-and-the-four-traces.html">$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces</a>, for the trace pairing</li>
-<li><a href="m4c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_4(\mathbb{C})_L$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the trace</li>
+<li><a href="m4c-representation-the-four-words-and-the-four-traces.html">$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces</a>, for the trace pairing</li>
+<li><a href="m4c-representation-trace-determinant-and-the-biquaternion-norm.html">$M_4(\mathbb{C})$ Representation : Trace, Determinant and the Biquaternion Norm</a>, for the trace</li>
 <li><a href="m2c-representation-the-killing-form.html">$M_2(\mathbb{C})$ Representation : The Killing Form</a>, for the $2\times2$ version</li>
 <li><a href="biquaternion-lie-group-and-exponential-structure.html">Biquaternion Lie Group and Exponential Structure</a>, for the Lie algebra</li>
 <li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the forms</li>

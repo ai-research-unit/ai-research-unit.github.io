@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector — Biquaternion Universe</title>
+  <title>$M_4(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,25 +68,26 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="math0-representation-spin-qubits-and-the-bloch-vector"><strong>$M_4(\mathbb{C})_L$ Representation : Spin, Qubits and the Bloch Vector</strong></h1>
+        <h1 id="math0-representation-spin-qubits-and-the-bloch-vector"><strong>$M_4(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The regular model carries two copies of the spinor module. A Hermitian element acts on the two copies by the same $2\times2$ matrix, so its Bloch vector is repeated: the algebra's state is read twice, and the copy label is unpolarized. The pure states of the algebra become rank-two projectors, not rank-one projectors, and the normalized $4\times4$ density matrix is a product of the maximally mixed copy label with the algebraic state.</p>
 <p>This article develops the Hermitian basis, the spin operators, the pure and general states, the Bloch vector and the doubling. It is the $4\times4$ counterpart of <em>$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector</em>.</p>
-<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})_L$ Model : The Product, the Trace and the Determinant</em>. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and
+<p><strong>Conventions.</strong> The algebra and the model are those of <em>$M_4(\mathbb{C})$ Model : The Product, the Trace and the Determinant</em>. The Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, and
 $$
-\Sigma_k=\mathsf{M}_4(i\vec e_k),
+\Sigma_k=\mathsf{M}_4^{L}(i\vec e_k),
 \qquad
-\mathsf{M}_4(\vec e_k)=-i\Sigma_k.
+\mathsf{M}_4^{L}(\vec e_k)=-i\Sigma_k.
 $$
 In the Peirce basis, $\Sigma_k=\operatorname{diag}(\sigma_k,\sigma_k)$; in the fixed coefficient basis the block form is conjugated by $S$.
 The Hermitian subspace is $\mathbb{M}_+$. A state is written $\tilde\varrho$ and its Bloch vector $\vec r=(r_1,r_2,r_3)\in\mathbb{R}^3$.</p>
-<p><strong>Boundaries.</strong> The two spinor planes are <em>$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>; the spectral projectors are <em>$M_4(\mathbb{C})_L$ Model : The Spectral Projectors</em>; the physical reading is <em>The Pauli Correspondence and the Matrix Image</em>; the $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector</em>.</p>
+<p><strong>Boundaries.</strong> The two spinor planes are <em>$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>; the spectral projectors are <em>$M_4(\mathbb{C})$ Model : The Spectral Projectors</em>; the physical reading is <em>The Pauli Correspondence and the Matrix Image</em>; the $2\times2$ version is <em>$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector</em>.</p>
+<p><strong>Frame.</strong> Unless a basis is named, matrices are written in the coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The canonical frame of <em>Conventions in Mathematics</em>, §<em>The Matrix Models</em>, is the Peirce frame reached by the change $S$ of <em>The Product, the Trace and the Determinant</em>: $S^{-1}\mathsf M_4^{L}(\tilde Q)S=I_2\otimes\mathsf M_2(\tilde Q)$.</p>
 <h2 id="the-hermitian-basis">The Hermitian Basis</h2>
-<p><strong>The Pauli matrices are the images of the Hermitian units.</strong> Since $\mathsf{M}_4$ is $\mathbb{C}$-linear,
+<p><strong>The Pauli matrices are the images of the Hermitian units.</strong> Since $\mathsf{M}_4^{L}$ is $\mathbb{C}$-linear,
 $$
-\mathsf{M}_4(\vec e_k)=-i\Sigma_k,
+\mathsf{M}_4^{L}(\vec e_k)=-i\Sigma_k,
 \qquad
-\mathsf{M}_4(i\vec e_k)=\Sigma_k.
+\mathsf{M}_4^{L}(i\vec e_k)=\Sigma_k.
 $$</p>
 <div class="table-scroll"><table>
 <thead>
@@ -120,7 +121,7 @@ $$</p>
 </table></div>
 <p><strong>The general element.</strong> Expanding on the basis,
 $$
-\mathsf{M}_4(\tilde Q)=Q_t\mathrm I_4-i\bigl(Q_x\Sigma_1+Q_y\Sigma_2+Q_z\Sigma_3\bigr).
+\mathsf{M}_4^{L}(\tilde Q)=Q_t\mathrm I_4-i\bigl(Q_x\Sigma_1+Q_y\Sigma_2+Q_z\Sigma_3\bigr).
 $$</p>
 <p><strong>The Hermitian condition.</strong> An element lies in $\mathbb{M}_+$ exactly when $Q_t$ is real and the three $Q_k$ are purely imaginary:
 $$
@@ -129,7 +130,7 @@ $$
 $$
 Its image is
 $$
-\mathsf{M}_4(\tilde Q)=q_t\mathrm I_4+q'_x\Sigma_1+q'_y\Sigma_2+q'_z\Sigma_3.
+\mathsf{M}_4^{L}(\tilde Q)=q_t\mathrm I_4+q'_x\Sigma_1+q'_y\Sigma_2+q'_z\Sigma_3.
 $$
 In the Peirce basis it is
 $$
@@ -147,7 +148,7 @@ $$</p>
 $$
 \tilde S_k=\tfrac{\hbar}{2}i\vec e_k,
 \qquad
-\mathsf{M}_4(\tilde S_k)=\tfrac{\hbar}{2}\Sigma_k.
+\mathsf{M}_4^{L}(\tilde S_k)=\tfrac{\hbar}{2}\Sigma_k.
 $$
 They are Hermitian elements of $\mathbb{M}_+$; in the Peirce basis their images are block-diagonal Hermitian matrices.</p>
 <p><strong>The algebra.</strong> The Pauli matrices satisfy
@@ -202,7 +203,7 @@ $$
 \tilde\varrho=\tfrac12\bigl(e_t+i\vec r\bigr),
 \qquad \vec r\in\mathbb{R}^3,
 \qquad
-\mathsf{M}_4(\tilde\varrho)=\operatorname{diag}(\rho,\rho)
+\mathsf{M}_4^{L}(\tilde\varrho)=\operatorname{diag}(\rho,\rho)
 \quad\text{(Peirce basis)},
 \qquad
 \rho=\tfrac12\bigl(\mathrm I_2+\vec r\cdot\vec\sigma\bigr).
@@ -251,7 +252,7 @@ and, in the algebra, twice the trace pairing against the Hermitian units,
 $$
 r_k=2\bigl\langle\tilde{\varrho},i\vec e_k\bigr\rangle.
 $$</p>
-<p><em>Proof.</em> The first identity follows from $\operatorname{Tr}\Sigma_k=0$ and $\operatorname{Tr}(\Sigma_j\Sigma_k)=4\delta_{jk}$, together with the normalization $\rho_4=\tfrac12\mathrm I_2\otimes\rho$. The second is the trace pairing of <em>$M_4(\mathbb{C})_L$ Representation : The Four Words and the Four Traces</em> applied to $\tilde{\varrho}$ and $i\vec e_k$, with the factor two of the duplication.</p>
+<p><em>Proof.</em> The first identity follows from $\operatorname{Tr}\Sigma_k=0$ and $\operatorname{Tr}(\Sigma_j\Sigma_k)=4\delta_{jk}$, together with the normalization $\rho_4=\tfrac12\mathrm I_2\otimes\rho$. The second is the trace pairing of <em>$M_4(\mathbb{C})$ Representation : The Four Words and the Four Traces</em> applied to $\tilde{\varrho}$ and $i\vec e_k$, with the factor two of the duplication.</p>
 <p><strong>The reconstruction.</strong> The three numbers $r_k$ determine the state, because
 $$
 \rho_4=\tfrac14\Bigl(\mathrm I_4+r_k\Sigma_k\Bigr),
@@ -293,7 +294,7 @@ and the Bloch vector is the corresponding convex combination of the pure Bloch v
 $$
 S^3\longrightarrow S^2,\qquad \xi\longmapsto\vec r
 $$
-is the Hopf fibration, with fibre $S^1$; in the regular model the total space is the diagonal $S^3$ inside $S^3\times S^3$, and the base sphere and the fibre are the same. The left action preserves each copy and the right action mixes them, so the two copies give the two chiralities of <em>$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>.</p>
+is the Hopf fibration, with fibre $S^1$; in the regular model the total space is the diagonal $S^3$ inside $S^3\times S^3$, and the base sphere and the fibre are the same. The left action preserves each copy and the right action mixes them, so the two copies give the two chiralities of <em>$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>.</p>
 <p><strong>The copy label.</strong> The doubled spinor is not a spinor of the four-level system: it is two copies of the same spinor, and the state is the product of the maximally mixed copy label with the algebraic state. The phase circle over each pure state is the fibre of <em>The Pauli Correspondence and the Matrix Image</em>.</p>
 <h2 id="where-the-correspondence-stops">Where the Correspondence Stops</h2>
 <p><strong>The Pauli matrices are not elements of the algebra.</strong> They are the images of $i\vec e_k$, and the algebra's own units are $-i\sigma_k$, doubled. A statement about the $\Sigma_k$ must be translated back through the factor $i$ before it is a statement about $\mathbb B$; the commutator of two Pauli matrices is $i$ times a Pauli matrix, and the commutator of two algebra units is an algebra unit.</p>
@@ -312,7 +313,7 @@ is the Hopf fibration, with fibre $S^1$; in the regular model the total space is
 </thead>
 <tbody>
 <tr>
-<td>$\Sigma_k=\mathsf{M}_4(i\vec e_k)$</td>
+<td>$\Sigma_k=\mathsf{M}_4^{L}(i\vec e_k)$</td>
 <td>the Pauli matrices, block diagonal in the Peirce basis</td>
 </tr>
 <tr>
@@ -339,8 +340,8 @@ is the Hopf fibration, with fibre $S^1$; in the regular model the total space is
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})_L$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the two copies</li>
-<li><a href="m4c-model-the-spectral-projectors.html">$M_4(\mathbb{C})_L$ Model : The Spectral Projectors</a>, for the projectors</li>
+<li><a href="m4c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html">$M_4(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</a>, for the two copies</li>
+<li><a href="m4c-model-the-spectral-projectors.html">$M_4(\mathbb{C})$ Model : The Spectral Projectors</a>, for the projectors</li>
 <li><a href="m2c-representation-spin-qubits-and-the-bloch-vector.html">$M_2(\mathbb{C})$ Representation : Spin, Qubits and the Bloch Vector</a>, for the $2\times2$ version</li>
 <li><a href="../articles_physics/spin-and-the-three-elementary-carriers.html">Spin and the Three Elementary Carriers</a>, for the spinor</li>
 <li><a href="../articles_physics/the-pauli-correspondence-and-the-matrix-image.html">The Pauli Correspondence and the Matrix Image</a>, for the physical reading</li>
