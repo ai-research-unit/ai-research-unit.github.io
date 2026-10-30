@@ -152,7 +152,7 @@ $$
 
 and the right factor gives a second, commuting copy. The two copies are the two factors of *The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$*, and their sum is a six-dimensional subalgebra of the fifteen derivations. The remaining nine derivations mix the two factors: they are the ones that do not preserve the tensor decomposition.
 
-**The physical interpretation.** The derivations of $\mathbb{B}$ are the gauge rotations of the biquaternion algebra, of dimension three; the derivations of $M_4$ are the gauge rotations of the algebra of two-sided operators, of dimension fifteen. The difference of twelve is the price of the passage from the four-dimensional algebra to its sixteen-dimensional endomorphism algebra, and it is the same difference that separates the biquaternion frame from the gamma frame of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$*.
+**The physical interpretation.** The derivations of $\mathbb{B}$ are the gauge rotations of the biquaternion algebra, of dimension three; the derivations of $M_4$ are the gauge rotations of the algebra of two-sided operators, of dimension fifteen. The difference of twelve is the price of the passage from the four-dimensional algebra to its sixteen-dimensional endomorphism algebra, and it is the same difference that separates the biquaternion frame from the gamma frame — five of the sixteen cells, up to $i$ — of *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$*.
 
 ## Summary
 

@@ -174,7 +174,7 @@ $$
 
 - [Chirality: The Conjugate Pair](../articles_maths/chirality-the-conjugate-pair.html), for the definitions, the two no-go theorems, the central idempotents and the pairing.
 - [Spin and the Three Elementary Carriers](spin-and-the-three-elementary-carriers.html), for the carrier count, the module structure and the distinction between the Peirce index and the Lorentz chirality.
-- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chiral projectors, the mass selection rule and the gauge discussion, stated there in the $\gamma_5$ language.
+- [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html), for the chiral projectors, the mass selection rule and the gauge discussion.
 - [The Spectral Triple of the Biquaternion Algebra](the-spectral-triple-of-the-biquaternion-algebra.html), for the candidate triple with the finite space $\Delta$ and the central chirality.
 - [Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint-action reading of integer spin, which is a representation label and not a chirality.
 - [The Two Chiralities of $M_4(\mathbb{C})$](../articles_maths/the-two-chiralities-of-m4c.html), for the comparison with the matrix case.

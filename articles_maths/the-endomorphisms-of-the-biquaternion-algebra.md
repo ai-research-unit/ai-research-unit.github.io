@@ -374,9 +374,9 @@ so every eigenvalue of $\mathsf{M}_2(\tilde Q_1)$ occurs twice. Hence $\operator
 
 **Why the two regular families are mutual commutants.** An operator commuting with every left multiplication is a right multiplication, and conversely. The proof is the two-line evaluation at $e_t$ of §*The Double Centraliser*, and it does not use matrices.
 
-**Why there is no canonical matrix form.** The operator space is canonical, but the identification with $M_4(\mathbb{C})$ needs a basis. The coefficient basis and the Peirce basis are two bases of $\mathbb{B}$, and they give two conjugate matrix algebras; a gamma frame is a further choice inside the operator algebra, not a basis of the carrier. A statement that survives a change of basis is a statement about operators; one that does not is a statement about a table.
+**Why there is no canonical matrix form.** The operator space is canonical, but the identification with $M_4(\mathbb{C})$ needs a basis. The coefficient basis and the Peirce basis are two bases of $\mathbb{B}$, and they give two conjugate matrix algebras; a gamma frame — five of the sixteen cells, up to $i$ — is a further choice inside the operator algebra, not a basis of the carrier. A statement that survives a change of basis is a statement about operators; one that does not is a statement about a table.
 
-**What the view does not supply.** It supplies no multiplication on the carrier, no gamma frame, no form, no norm, no grading and no physical interpretation. Those are further structures on the operator space, and each is a choice. The endomorphism view is the layer below them: it says which space the choices are made in.
+**What the view does not supply.** It supplies no multiplication on the carrier, no gamma frame (no five cells singled out up to $i$), no form, no norm, no grading and no physical interpretation. Those are further structures on the operator space, and each is a choice. The endomorphism view is the layer below them: it says which space the choices are made in.
 
 ## Worked Example
 

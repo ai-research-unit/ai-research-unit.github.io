@@ -34,8 +34,8 @@ The gamma matrices are a coordinate on the cell algebra. They are never a third 
 | measure | mathematics | physics |
 |---|---:|---:|
 | articles in the corpus | 2,390 | 403 |
-| gamma users | **20** | **89** |
-| Level 1 — pure biquaternion is enough | 6 | 49 |
+| gamma users | **20** | **86** |
+| Level 1 — pure biquaternion is enough | 6 | 46 |
 | Level 2 — the cell algebra is needed | 14 | 39 |
 | uses an algebra larger than the cell algebra | 0 | 1 |
 | write an explicit gamma-matrix display | 4 | 22 |
@@ -134,7 +134,9 @@ Tracelessness is automatic: the coefficient of every generator is $\pm i$, whose
 - Put the second equality on the same display, after `\qquad`, or on the line immediately below. The reader must see both at once.
 - If the computation is long, write the equality once and refer to it. Do not repeat it at every step.
 - If the cell side needs a general cell, name $a$ and $b$ explicitly on the first use.
-- Do not rewrite the prose. The text still speaks of gamma matrices; the display carries the second reading. An article is enriched when its formulas are, not when its vocabulary is.
+- Do not rewrite the prose beyond one apposition. The text still speaks of gamma matrices; the display carries the second reading, and a name-only mention takes the cell in parentheses. An article is enriched when its formulas are, not when its vocabulary is.
+
+**Name-only mentions.** A mention that carries a structural statement — a frame, a grading, a parity element — keeps its gamma word and gains the cell in apposition; thirteen articles were patched this way. A mention that is only a pointer or a statement of scope is deleted, and its row leaves the inventory; four articles were treated this way. The list is §*The Patched Articles*.
 
 **The cost is the number of terms.** The length of the second equality is what Parts I and II count.
 
@@ -191,7 +193,7 @@ A one-term row is Level 1. A multi-term row is Level 2. No row is impossible.
 
 ## Part II — The Physics Articles
 
-**Eighty-nine articles.** Forty-nine have a one-term second equality: each gamma in them is a fixed sandwich. Thirty-nine need several terms, because the frame, the trace, the grading or the representation is the subject. One uses an algebra larger than the cell algebra and is listed separately. Rows follow the order of `physics.md`, and an italic row marks the category. The two levels are tabled apart, so one category can appear in both.
+**Eighty-six articles.** Forty-six have a one-term second equality: each gamma in them is a fixed sandwich. Thirty-nine need several terms, because the frame, the trace, the grading or the representation is the subject. One uses an algebra larger than the cell algebra and is listed separately. Rows follow the order of `physics.md`, and an italic row marks the category. The two levels are tabled apart, so one category can appear in both.
 
 **What a one-term equality looks like.** A gamma is a cell, and a cell acts by two multiplications. In the canonical frame
 $$
@@ -216,24 +218,21 @@ Two further articles are Level 2 for a different reason: *Matter Makes Space* an
 
 **The counts do not follow the symbol count.** *The Dirac Algebra and Biquaternions — A Dictionary* has 287 gammas and is Level 2, because the dictionary is its subject. *Maxwell's Equations in Biquaternionic Form* has 3 gammas, all in a Further Reading citation, and is Level 1. The classification follows what the article does with the algebra, not how often it writes it.
 
-### Level 1 — pure biquaternion (49)
+### Level 1 — pure biquaternion (46)
 
 | article | $\gamma$ | the second equality |
 |---|---:|---|
 | *— Biquaternion Physical Interpretation of Mathematics —* | | |
-| [Biquaternion Physical Interpretation of Chirality](../articles_physics/biquaternion-physical-interpretation-of-chirality.html) | 1 | $\gamma_5$ named once; the argument is $\mathbb{B}$ |
 | [The Roots of a General Element: Mass, Frames and the Mass Shell](../articles_physics/the-roots-of-a-general-element-mass-frames-and-the-mass-shell.html) | 3 | $\gamma_5$ as the chirality involution |
 | *— Biquaternion Electromagnetism —* | | |
 | [Maxwell's Equations in the Biquaternionic Formulation](../articles_physics/maxwells-equations-in-biquaternionic-form.html) | 3 | $\gamma$ only in a Further Reading reference |
 | [The Field-Strength Biquaternion and Its Invariants](../articles_physics/the-field-strength-biquaternion-and-its-invariants.html) | 7 | $\gamma_\mu=i\vec e_\mu$ |
-| [Electromagnetism in Media — The Local Complex Structure at Work](../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html) | 0 | mentions the matrices; no symbol |
+| [Electromagnetism in Media — The Local Complex Structure at Work](../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html) | 1 | $\gamma_5=-iT_{tz}$ in the name-collision note |
 | *— Biquaternion Relativity —* | | |
 | [Noether's Theorem in Biquaternionic Form](../articles_physics/noethers-theorem-in-biquaternionic-form.html) | 2 | $\gamma_5$ in the axial current |
-| [The Spinor Representation of the Lorentz Group in Biquaternionic Form](../articles_physics/the-spinor-representation-of-the-lorentz-group-in-biquaternionic-form.html) | 0 | mentions the matrices; no symbol |
 | *— Biquaternion Relativistic Quantum Theory —* | | |
 | [Møller Scattering in Biquaternionic Form](../articles_physics/moller-scattering-in-biquaternionic-form.html) | 19 | $\gamma$ in the quoted vertex |
 | [Bhabha Scattering in Biquaternionic Form](../articles_physics/bhabha-scattering-in-biquaternionic-form.html) | 4 | $\gamma$ in the quoted vertex |
-| [The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form](../articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html) | 0 | mentions the matrices; no symbol |
 | [The Dirac Equation in Biquaternionic Form](../articles_physics/the-dirac-equation-in-biquaternionic-form.html) | 84 | already has the $\mathbb{B}$-only form |
 | [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](../articles_physics/the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html) | 49 | same, plus the Pauli limit |
 | [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](../articles_physics/the-gordon-decomposition-in-biquaternionic-form.html) | 82 | the current split is algebraic |
@@ -251,11 +250,11 @@ Two further articles are Level 2 for a different reason: *Matter Makes Space* an
 | [Zitterbewegung in Biquaternionic Form](../articles_physics/zitterbewegung-in-biquaternionic-form.html) | 22 | the velocity as a left multiplication |
 | [The Dirac Oscillator in Biquaternionic Form](../articles_physics/the-dirac-oscillator-in-biquaternionic-form.html) | 12 | the oscillator algebra |
 | [The Dirac Path Integral in Biquaternionic Form](../articles_physics/the-dirac-path-integral-in-biquaternionic-form.html) | 9 | the Dirac operator |
-| [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector](../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html) | 0 | mentions the matrices; no symbol |
+| [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector](../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html) | 0 | no gamma matrix, no cell $T_{\mu\nu}$, enters |
 | [Dual Equivalence of the Dirac and Topologically Massive Gauge Fields](../articles_physics/dual-equivalence-of-the-dirac-and-topologically-massive-gauge-fields.html) | 1 | $\gamma^\mu$ in a quoted current |
 | *— Biquaternion Quantum Fields —* | | |
 | [The Wick Theorem in Biquaternionic Form](../articles_physics/the-wick-theorem-in-biquaternionic-form.html) | 1 | the Dirac operator |
-| [The S-Matrix in Biquaternionic Form](../articles_physics/the-s-matrix-in-biquaternionic-form.html) | 1 | $\bar\psi=\psi^\dagger\gamma^0$ in a table |
+| [The S-Matrix in Biquaternionic Form](../articles_physics/the-s-matrix-in-biquaternionic-form.html) | 1 | $\bar\psi=i\psi^\dagger T_{tx}$ and the slash, in a table |
 | [Canonical Quantization of the Biquaternion Dirac Field](../articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.html) | 27 | the adjoint and the anticommutator |
 | [The Quantized Dirac Field in Biquaternionic Form](../articles_physics/the-quantized-dirac-field-in-biquaternionic-form.html) | 14 | the mode expansion |
 | [The Fermionic Fock Space in Biquaternionic Form](../articles_physics/the-fermionic-fock-space-in-biquaternionic-form.html) | 1 | the $\gamma^\mu$ are odd operators, as the article says |
@@ -335,7 +334,44 @@ Two further articles are Level 2 for a different reason: *Matter Makes Space* an
 |---|---:|---|
 | [Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions](../articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html) | 2 | $\mathrm{Cl}(7)$ bioctonions; only the leptonic $\mathrm{Cl}(3)$ factor is $\mathbb{B}$ |
 
-This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article studies a complex split bioctonion algebra, $\mathrm{Cl}(7)$, and the leptonic $\mathrm{Cl}(3)$ factor alone is $\mathbb{B}$. It is listed for completeness. Its cell equality would need a larger Clifford algebra, not the sixteen cells, and it is not counted among the 108 in-scope articles.
+This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article studies a complex split bioctonion algebra, $\mathrm{Cl}(7)$, and the leptonic $\mathrm{Cl}(3)$ factor alone is $\mathbb{B}$. It is listed for completeness. Its cell equality would need a larger Clifford algebra, not the sixteen cells, and it is not counted among the 105 in-scope articles.
+
+## The Patched Articles
+
+**The pass.** A mention that carries a structural statement is kept, and the cell is written beside it. A mention that is only a pointer, a name, or a statement of scope is removed. Thirteen articles were patched, six in mathematics and seven in physics; four articles were purged of their gamma mention. Rows follow the order of the menus, and an italic row marks the category.
+
+### The Mathematics Articles
+
+| article | the gamma that stays | the cell added |
+|---|---|---|
+| *— Introduction and Conventions —* | | |
+| [Conventions of the Operators and the Differential Calculus](../articles_maths/conventions-of-the-operators-and-the-differential-calculus.html) | the gamma frame is five of the sixteen operators, up to $i$ | $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
+| *— Biquaternions —* | | |
+| [The Endomorphisms of the Biquaternion Algebra](../articles_maths/the-endomorphisms-of-the-biquaternion-algebra.html) | a gamma frame is a further choice; the view supplies no gamma frame | five of the sixteen cells, up to $i$; no five cells singled out up to $i$ |
+| *— $M_4(\mathbb{C})$ —* | | |
+| [The Matrix Algebra $M_4(\mathbb{C})$](../articles_maths/the-matrix-algebra-m4c.html) | it chooses no gamma frame | no five of the sixteen cells $T_{\mu\nu}$ are singled out up to $i$ |
+| [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](../articles_maths/the-derivations-and-the-automorphisms-of-m4c.html) | the gamma frame | five of the sixteen cells, up to $i$ |
+| [The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$](../articles_maths/the-real-forms-of-m4c.html) | the Clifford frame | five of the sixteen cells, up to $i$ |
+| [The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$](../articles_maths/the-extraspecial-group-of-the-two-sided-matrices-of-m4c.html) | the Clifford frame | five of the sixteen cells, up to $i$ |
+
+### The Physics Articles
+
+| article | the gamma that stays | the cell added |
+|---|---|---|
+| *— Biquaternion Universe Conventions —* | | |
+| [Conventions of the Operators and the Calculus](../articles_physics/conventions-of-the-operators-and-the-calculus.html) | the gamma frame | $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$ |
+| *— Biquaternion Universe —* | | |
+| [What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions](../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html) | the parity-reflecting frame element $\gamma^0$; $\gamma^0$ anticommutes with the grading | $\gamma^0=iT_{tx}$; $iT_{tx}$ anticommutes with it |
+| *— Biquaternion Electromagnetism —* | | |
+| [Electromagnetism in Media — The Local Complex Structure at Work](../articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.html) | the fifth gamma matrix | $\gamma_5=-iT_{tz}$ |
+| *— Biquaternion Relativistic Quantum Theory —* | | |
+| [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector](../articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html) | no gamma matrix enters | no cell $T_{\mu\nu}$ enters |
+| *— Biquaternion Quantum Fields —* | | |
+| [The Trace Anomaly in Biquaternionic Form](../articles_physics/the-trace-anomaly-in-biquaternionic-form.html) | the $\gamma^\mu$; gamma matrices | the five cells $\gamma^0=iT_{tx}$, $\gamma^1=iT_{xy}$, $\gamma^2=iT_{yy}$, $\gamma^3=iT_{zy}$, $\gamma_5=-iT_{tz}$; the cells $T_{\mu\nu}$ |
+| [The LSZ Reduction Formula in Biquaternionic Form](../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html) | $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | $=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ |
+| [The S-Matrix in Biquaternionic Form](../articles_physics/the-s-matrix-in-biquaternionic-form.html) | $\bar\psi=\psi^\dagger\gamma^0$; the slash | $=i\psi^\dagger T_{tx}$; $=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ |
+
+**Removed, not patched.** Four mentions carried no structure. In *The Coefficient Matrix of a Two-Sided Operator* the Further Reading line loses "and the gamma frame". In *Biquaternion Physical Interpretation of Chirality* it loses "stated there in the $\gamma_5$ language". In *The Klein–Gordon Propagator and Its Green's Functions* the sentence loses "and no gamma matrix appears". In *The Spinor Representation of the Lorentz Group* the two prose mentions become "the Dirac matrices", and the comparison with $\tfrac14[\gamma^a,\gamma^b]$ becomes "the Lorentz algebra". The first article is not in the inventory; the other three rows leave Part II, and the counts are adjusted.
 
 ## What the Split Says
 
@@ -343,7 +379,7 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 
 **The earlier count of 19 unrewritable articles was wrong.** It counted what the left action $\mathbb{B}_L$ can reach, not what the algebra can reach. The odd part is outside $\mathbb{B}_L$ and inside $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$; an article about parity, charge conjugation or the grading is an article about the second action, not an article about a foreign algebra.
 
-**Level 1 is the common case, not the goal.** Fifty-five of the 108 in-scope articles carry a one-term equality. The remaining fifty-three carry several terms, and that is a statement about their subject, not about their possibility.
+**Level 1 is the common case, not the goal.** Fifty-two of the 105 in-scope articles carry a one-term equality. The remaining fifty-three carry several terms, and that is a statement about their subject, not about their possibility.
 
 **The dagger entries are recomputations, not obstructions.** Thirteen articles state a result whose proof uses a trace over the four-dimensional carrier, a Fredholm index, or a real structure. The statement gains its cell equality; the proof must be redone in the cell algebra. They fall into four groups:
 
@@ -359,9 +395,9 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 | | mathematics | physics | total |
 |---|---:|---:|---:|
 | articles in the corpus | 2,390 | 403 | 2,793 |
-| gamma users | 20 | 89 | 109 |
-| in the cell algebra | 20 | 88 | 108 |
-| Level 1 — pure biquaternion | 6 | 49 | 55 |
+| gamma users | 20 | 86 | 106 |
+| in the cell algebra | 20 | 85 | 105 |
+| Level 1 — pure biquaternion | 6 | 46 | 52 |
 | Level 2 — the cell algebra | 14 | 39 | 53 |
 | uses a larger algebra | 0 | 1 | 1 |
 | of which dagger (proof to rebuild) | 0 | 13 | 13 |
@@ -369,4 +405,4 @@ This is the only row whose gammas do not fit in $M_4(\mathbb{C})$. The article s
 
 ## Conclusion
 
-**The Clifford layer is the cell layer.** The five generators are five cells, the sixteen products are the sixteen cells, and the cell algebra is the biquaternion algebra acting on itself on both sides. Every article in the cell algebra can therefore carry the cell equality beside its gammas: 55 with one term, 53 with several, and 13 of the latter with a proof to recompute. One article uses the bioctonions and lies outside the sixteen cells by construction. Nothing is deleted: the gamma side stays, and the cell side is added. The gamma matrices are a basis, not a boundary. The odd sector is a second action, not a foreign body.
+**The Clifford layer is the cell layer.** The five generators are five cells, the sixteen products are the sixteen cells, and the cell algebra is the biquaternion algebra acting on itself on both sides. Every article in the cell algebra can therefore carry the cell equality beside its gammas: 52 with one term, 53 with several, and 13 of the latter with a proof to recompute. One article uses the bioctonions and lies outside the sixteen cells by construction. Nothing is deleted from the formulas: the gamma side stays, and the cell side is added. The gamma matrices are a basis, not a boundary. The odd sector is a second action, not a foreign body.

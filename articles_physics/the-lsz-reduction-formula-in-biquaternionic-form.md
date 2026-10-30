@@ -260,7 +260,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $Z=\lim_{p^2\to m^2}(m^2-p^2)D_F(p^2)=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$ | Wave-function renormalization (residue) |
 | $\langle f\lvert S\rvert i\rangle$ | S-matrix element from the reduction |
 | $\exp(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{R}))=\exp(\,ip\cdot x)$ | Central-phase plane wave (external leg) |
-| $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Spinor mass-shell operator |
+| $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p=iT_{tx}E-i(T_{xy}p_x+T_{yy}p_y+T_{zy}p_z)$ | Spinor mass-shell operator |
 | $\tilde Q_{\mathrm{amp}}$ | Constant biquaternion amplitude of the central-phase plane wave; a bound element of $\mathbb{B}$ with a complex scalar part, hence the majuscule |
 | $w^{(r)},v^{(r)}$ | External spinors; $\sum_r w^{(r)}\bar w^{(r)}=\not p+m$ |
 | $Z=Z_-+Z_+$ | Scalar-sector splitting of the residue (sum) |
