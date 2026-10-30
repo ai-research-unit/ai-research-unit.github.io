@@ -96,7 +96,7 @@ $$</p>
 <p>Three properties of the action are used below.</p>
 <p><strong>It is even.</strong> The action is quadratic in the fermionic field, hence bosonic: it commutes with fermion parity and is a $c$-number functional of the field. This is why $\exp(iS)$ is a genuine phase and not an operator.</p>
 <p><strong>Its phase is central.</strong> $iS$ is a central element of $\mathbb{C}_{\mathbb{B}}$. The generalities companion's finding applies unchanged: the phase of the fermionic path integral is canonical, and it is not a choice of a spin axis.</p>
-<p><strong>Its kinetic part is Hermitian and its mass part is the linear chiral pair.</strong> $\bar\psi\,i\gamma^{\mu}\partial/\partial x^{\mu}\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the <em>Euclidean</em> continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.</p>
+<p><strong>Its kinetic part is Hermitian and its mass part is the linear chiral pair.</strong> $\bar\psi\,i\gamma^{\mu}\partial/\partial Q_\mu\,\psi$ is Hermitian up to a total derivative; $\bar\psi m\psi$ couples the two chiralities, as the mass-term convention requires. At the level of the path integral this is the statement that the <em>Euclidean</em> continuation of the kinetic operator is anti-Hermitian and that of the mass is Hermitian, which is what makes the determinant real or complex in the two cases respectively.</p>
 <h3 id="sources">Sources</h3>
 <p>The sources are Grassmann-valued: the generating functional</p>
 <p>$$
@@ -118,7 +118,7 @@ $$</p>
 <p>$$
 S_0=\sum_{a,b}\bar\psi_a M_{ab}\psi_b ,
 $$</p>
-<p>where $M$ is the matrix of the bilinear (for the field, the operator $i\gamma^{\mu}\partial/\partial x^{\mu}-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:</p>
+<p>where $M$ is the matrix of the bilinear (for the field, the operator $i\gamma^{\mu}\partial/\partial Q_\mu-m$ between the source-free boundary conditions). The Gaussian Berezin integral is the determinant:</p>
 <p>$$
 \boxed{\;\int\prod_ad\bar\psi_a\,d\psi_a\;\exp(-\bar\psi M\psi)=\det M\;}.
 $$</p>
@@ -147,7 +147,7 @@ $$</p>
 <p>to machine precision (ratio $1+0i$), and the four two-point amplitudes divided by $\det M$, in the order $(a,b)=(0,0),(0,1),(1,0),(1,1)$, are $1.023132849-0.154659617i$, $-0.437541309+0.182419035i$, $-0.847323199-0.22075347i$ and $1.512227363+0.003965631i$, which are exactly $(M^{-1})_{00},(M^{-1})_{01},(M^{-1})_{10},(M^{-1})_{11}$. The index order $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$ is visible in the middle two entries, which differ: $M$ is not symmetric, and the anticommuting order of the measure fixes which index each of the two fields contracts with.</p>
 <p><strong>For the field</strong> the same computation gives the free generating functional</p>
 <p>$$
-Z_0[\eta,\bar\eta]=\det\big(i\gamma^{\mu}\partial/\partial x^{\mu}-m\big)\;
+Z_0[\eta,\bar\eta]=\det\big(i\gamma^{\mu}\partial/\partial Q_\mu-m\big)\;
 \exp\Big[\,i\!\int d^4x\,d^4y\;\bar\eta(x)\,S_F(x-y)\,\eta(y)\Big],
 $$</p>
 <p>where $S_F$ is the propagator amplitude of the companion article in configuration space. The determinant, the trace-log and the systematic evaluation of the functional determinant are outside this article's subject; what belongs here is the biquaternion form of the result.</p>
@@ -158,7 +158,7 @@ S_F(p)=-\frac{i(\gamma^{\mu} p_{\mu}+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsil
 $$</p>
 <p>the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict'$ axis of the material sector:</p>
 <p>$$
-\det\big(i\gamma^{\mu}\partial/\partial x^{\mu}-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
+\det\big(i\gamma^{\mu}\partial/\partial Q_\mu-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
 $$</p>
 <p>formally, with the standard subtractions understood. The generalities companion's finding is inherited: the algebra names the axis of the deformation, the boundary condition chooses its orientation, and the determinant does not distinguish them.</p>
 <h2 id="the-pfaffian-and-the-real-structure">The Pfaffian and the Real Structure</h2>
@@ -280,7 +280,7 @@ $$</p>
 <td>Free generating functional</td>
 </tr>
 <tr>
-<td>$Z_0[\eta,\bar\eta]=\det(i\gamma^{\mu}\partial/\partial x^{\mu}-m)\exp[i\!\int\bar\eta S_F\eta]$</td>
+<td>$Z_0[\eta,\bar\eta]=\det(i\gamma^{\mu}\partial/\partial Q_\mu-m)\exp[i\!\int\bar\eta S_F\eta]$</td>
 <td>Field-level free functional</td>
 </tr>
 <tr>

@@ -88,7 +88,7 @@ $$</p>
 <p>$$
 \epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial Q_\rho\,\psi_\sigma = -i\,\gamma^{\mu\sigma\rho}\partial/\partial Q_\rho\,\psi_\sigma,
 $$</p>
-<p>which the companion dictionary fixes once the chirality operator is $\gamma_5=i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3$ and the antisymmetrized products are taken with unit weight. That identity also fixes the relative sign of the mass terms: the pair displayed above is the one in which the trivector form carries the same minus as the Dirac operator of the companion article, $(i\gamma^{\mu}\partial/\partial x^{\mu}-m)\psi=0$, and it is the pair whose positive-frequency solutions have the rest-frame frequency $\omega=m$, as the reduction below shows.</p>
+<p>which the companion dictionary fixes once the chirality operator is $\gamma_5=i_{\mathrm{Cl}}\gamma^0\gamma^1\gamma^2\gamma^3$ and the antisymmetrized products are taken with unit weight. That identity also fixes the relative sign of the mass terms: the pair displayed above is the one in which the trivector form carries the same minus as the Dirac operator of the companion article, $(i\gamma^{\mu}\partial/\partial Q_\mu-m)\psi=0$, and it is the pair whose positive-frequency solutions have the rest-frame frequency $\omega=m$, as the reduction below shows.</p>
 <p>The equation is the Euler–Lagrange equation of the Rarita–Schwinger Lagrangian, whose kinetic term is the same antisymmetrized combination and whose mass term is the antisymmetrized pair $\bar{\psi}_\mu\gamma^{\mu\nu}\psi_\nu$,</p>
 <p>$$
 \mathcal{L} = -\tfrac12\,\bar{\psi}_\mu\,\epsilon^{\mu\nu\rho\sigma}\gamma_5\gamma_\nu\partial/\partial Q_\rho\,\psi_\sigma - \tfrac12\,m\,\bar{\psi}_\mu\gamma^{\mu\nu}\psi_\nu ,
@@ -97,7 +97,7 @@ $$</p>
 <h3 id="the-constraint-and-the-reduction">The constraint and the reduction</h3>
 <p>The massive equation implies the trace in two contractions, and the same two contractions deliver the reduced dynamics. Write $S := \gamma^\sigma\psi_\sigma$ for the trace spinor. Taking the divergence of the equation kills the kinetic term, because $\gamma^{\mu\sigma\rho}$ is antisymmetric in its first and third indices, and leaves, using $\gamma^{\mu\sigma} = \gamma^\mu\gamma^\sigma - g^{\mu\sigma}$,</p>
 <p>$$
-0 = \gamma^{\mu\sigma}\partial/\partial x^\mu\,\psi_\sigma = \gamma^{\nu}\partial/\partial x^{\nu}\,S - \partial^\sigma\psi_\sigma .
+0 = \gamma^{\mu\sigma}\partial/\partial Q_\mu\,\psi_\sigma = \gamma^{\nu}\partial/\partial Q_\nu\,S - \partial^\sigma\psi_\sigma .
 $$</p>
 <p>Contracting the equation with $\gamma_\mu$ instead, and using the two traces $\gamma_\mu\gamma^{\mu\sigma\rho} = 2\gamma^{\sigma\rho}$ and $\gamma_\mu\gamma^{\mu\sigma} = 3\gamma^\sigma$, leaves</p>
 <p>$$
@@ -110,11 +110,11 @@ $$</p>
 <p>and with it the divergence $\partial^\mu\psi_\mu = 0$ follows from the first relation. The trace is therefore a consequence of the massive equation and not an independent condition.</p>
 <p>The trace in turn linearises the double product. Multiplying the identity $\gamma^\mu\gamma^\sigma = \gamma^{\mu\sigma}+g^{\mu\sigma}$ by $\psi_\sigma$ and summing over $\sigma$ gives $\gamma^{\mu\sigma}\psi_\sigma = -g^{\mu\mu}\psi_\mu$ when the trace vanishes, with no sum on $\mu$. Substituting this, and the vanishing of $\gamma^{\sigma\rho}\partial/\partial Q_\rho\,\psi_\sigma$ and of $\gamma^\sigma\partial^\mu\psi_\sigma = \partial^\mu S$, into the equation written through $\gamma^{\mu\sigma\rho} = \gamma^\mu\gamma^{\sigma\rho}-g^{\mu\sigma}\gamma^\rho+g^{\mu\rho}\gamma^\sigma$, leaves</p>
 <p>$$
-E_\mu = \bigl(i\gamma^{\nu}\partial/\partial x^{\nu} - m\bigr)\psi_\mu \qquad\text{(no sum on }\mu\text{)} ,
+E_\mu = \bigl(i\gamma^{\nu}\partial/\partial Q_\nu - m\bigr)\psi_\mu \qquad\text{(no sum on }\mu\text{)} ,
 $$</p>
 <p>which vanishes exactly when the component Dirac equation holds,</p>
 <p>$$
-(i\gamma^{\nu}\partial/\partial x^{\nu} - m)\psi_\mu = 0 \quad\text{for each }\mu .
+(i\gamma^{\nu}\partial/\partial Q_\nu - m)\psi_\mu = 0 \quad\text{for each }\mu .
 $$</p>
 <p>The antisymmetrized equation is thus equivalent to the Dirac equation on each component together with the trace, and, through them, the divergence. The mass term regenerates the Dirac operator on each component, so that the reduced dynamics is the one the companion Dirac article supplies. The trace constraint removes one Dirac spinor's worth of components from the sixteen, and it is the part of the reduction that the algebra can state as a single contraction.</p>
 <p>The massless case separates the constraints, and the separation is what the gauge freedom is for. For $m=0$ the same two contractions no longer force the trace: $\gamma^\mu\psi_\mu=0$ is not contained in the equation, and adjoining it lowers the solution space from six dimensions to four. The divergence is a different matter, because its four components are linear combinations of the components of the equation: $\partial^\mu\psi_\mu=0$ remains a consequence of the equation even when the mass vanishes. It is in the massless case that the <strong>gauge freedom</strong></p>
@@ -167,7 +167,7 @@ $$</p>
 <h3 id="the-equivalent-constraint-form">The equivalent constraint form</h3>
 <p>For the free field the antisymmetrized equation is equivalent to the pair of equations</p>
 <p>$$
-\boxed{\;(i\gamma^{\nu}\partial/\partial x^{\nu}-m)\psi_\mu = 0 \quad\text{for each }\mu, \qquad \gamma^\mu\psi_\mu = 0\;},
+\boxed{\;(i\gamma^{\nu}\partial/\partial Q_\nu-m)\psi_\mu = 0 \quad\text{for each }\mu, \qquad \gamma^\mu\psi_\mu = 0\;},
 $$</p>
 <p>in the following sense. If each component satisfies the Dirac equation, if the trace constraint holds and if the divergence constraint $\partial^\mu\psi_\mu=0$ holds, then the antisymmetrized equation follows; conversely, the antisymmetrized equation implies the component Dirac equations and the trace, and in the massive case the divergence as well. The reduction is standard for the free theory, and it is the form adapted to the algebra, because the Dirac equation on a biquaternion component is exactly the biquaternionic Dirac equation of the companion article, and the trace constraint is an algebraic condition on the index contraction. In the rest frame the two descriptions have the same four-dimensional solution space, and the explicit computation below verifies this.</p>
 <p>The biquaternion trace constraint is the vanishing of the contraction of the vector index with the basis units,</p>
@@ -179,7 +179,7 @@ $$</p>
 <h3 id="setting-up">Setting up</h3>
 <p>Take the field at rest and of positive frequency, so that each component is proportional to $\exp(-imt'/\hbar)$ in natural units, and the derivative is $\partial/\partial Q_t\to -im$. The Dirac operator becomes</p>
 <p>$$
-i\gamma^{\mu}\partial/\partial x^{\mu} - m \;\longrightarrow\; i\gamma^0(-im) - m = m\left(\gamma^0 - I_4\right),
+i\gamma^{\mu}\partial/\partial Q_\mu - m \;\longrightarrow\; i\gamma^0(-im) - m = m\left(\gamma^0 - I_4\right),
 $$</p>
 <p>acting on each component. Since $\gamma^0 = \mathrm{diag}(I_2,-I_2)$, the operator $m(\gamma^0-I_4)$ annihilates exactly the <strong>upper</strong> components and annihilates nothing else; the Dirac equation on the spatial components therefore forces them to their upper two-component parts.</p>
 <h3 id="the-trace-constraint-at-rest">The trace constraint at rest</h3>
