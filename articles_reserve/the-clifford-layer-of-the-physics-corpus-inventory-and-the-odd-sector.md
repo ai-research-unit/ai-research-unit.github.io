@@ -292,7 +292,6 @@ Two further articles are Level 2 for a different reason: *Matter Makes Space* an
 | [The Conformal Group in Biquaternionic Form](../articles_physics/the-conformal-group-in-biquaternionic-form.html) | 4 | the conformal algebra from $(\gamma_\mu,\gamma_5,1)$ |
 | *— Biquaternion Relativistic Quantum Theory —* | | |
 | [The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module](../articles_physics/the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html) | 1 | why spin 0 escapes the module |
-| [The First-Order Root of the Biquaternion Klein–Gordon Operator](../articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.html) | 77 | the $\gamma$ frame written as cells |
 | [The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation](../articles_physics/the-chiral-algebra-of-biquaternions-and-the-cyclic-representation-of-the-dirac-equation.html) | 6 | the cyclic representation |
 | [The Dirac Algebra and Biquaternions — A Dictionary](../articles_physics/the-dirac-algebra-and-biquaternions-a-dictionary.html) | 287 | the dictionary itself, kept side by side |
 | [The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form](../articles_physics/the-dirac-hestenes-equation-and-spacetime-algebra-in-biquaternionic-form.html) | 24 | spacetime algebra is the subject |

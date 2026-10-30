@@ -539,7 +539,7 @@ The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q$ is the quaternionic 
 - [Conventions in Mathematics](conventions-in-mathematics.html), for the derivative conventions and the gradient.
 - [The $M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes](m2c-model-the-peirce-coordinates-matrix-units-and-the-spinor-planes.html), for the target representation of the algebra.
 - [Biquaternion Analysis](biquaternion-analysis.html), for the gradient, its conjugate and the d'Alembertian at length.
-- [The Differential Operators, the Products, the Forms and the D'Alembertian](the-differential-operators-the-products-the-forms-and-the-d-alembertian.html), for the four forms, the four norms and the definition of the d'Alembertian.
+- [Conventions of the Operators and the Differential Calculus](conventions-of-the-operators-and-the-differential-calculus.html), for the four forms, the four norms and the definition of the d'Alembertian.
 - [The Minimal Left Ideals](the-minimal-left-ideals.html), for the two summands of the regular module.
 - [Spinors as Peirce Coordinates in the Biquaternion Algebra](spinors-as-peirce-coordinates-in-the-biquaternion-algebra.html), for the Peirce bases, the mixed units and the exchange.
 - [Two-Sided Operators on the Biquaternion Algebra](two-sided-operators-on-the-biquaternion-algebra.html), for the operators $T_{\tilde Q_1,\tilde Q_2}$ and their composition.
