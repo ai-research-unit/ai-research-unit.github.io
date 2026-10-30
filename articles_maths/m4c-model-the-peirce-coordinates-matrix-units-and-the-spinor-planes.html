@@ -93,9 +93,9 @@ $$</p>
 =\begin{pmatrix}\mathsf M_2(\tilde Q)&0\\0&\mathsf M_2(\tilde Q)\end{pmatrix}
 =I_2\otimes\mathsf M_2(\tilde Q),
 $$</p>
-<p>and the change matrix $\mathsf S$, whose columns are these four elements in coefficient coordinates, carries the Peirce column to the coefficient column: $\mathsf M_{4,\mathrm{coef}}^{L}=\mathsf S\,(I_2\otimes\mathsf M_2)\,\mathsf S^{-1}$.</p>
+<p>and the Peirce change $C_{\Pi}$, whose columns are these four elements in coefficient coordinates, carries the Peirce column to the coefficient column: $\mathsf M_{4,\mathrm{coef}}^{L}=C_{\Pi}\,(I_2\otimes\mathsf M_2)\,C_{\Pi}^{-1}$.</p>
 <p><strong>Boundaries.</strong> The abstract Peirce decomposition is <em>The Peirce Decomposition of the Biquaternion Algebra</em>; the two planes and the exchange are <em>Spinors as Peirce Coordinates in the Biquaternion Algebra</em>; the $2\times2$ picture is <em>$M_2(\mathbb{C})$ Model : Peirce Coordinates, Matrix Units and the Spinor Planes</em>; the right regular matrix is <em>$M_4(\mathbb{C})_{\mathbb{B}}$ Model : The Centraliser and the Double Centraliser</em>. The module reading is <em>The Minimal Left Ideals</em> and is not used here.</p>
-<p><strong>Frame.</strong> Unless a basis is named, matrices are written in the canonical frame of <em>Conventions of the Matrix Models</em>, §<em>The Matrix Models</em>, the Peirce frame $\mathcal P$; there $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: with $S$ the change of <em>The Product, the Trace and the Determinant</em>, the same operator reads $S(I_2\otimes\mathsf M_2(\tilde Q))S^{-1}$ there.</p>
+<p><strong>Frame.</strong> Unless a basis is named, matrices are written in the canonical frame of <em>Conventions of the Matrix Models</em>, §<em>The Matrix Models</em>, the Peirce frame $\mathcal P$; there $\mathsf{M}_4^{L}(\tilde Q)=I_2\otimes\mathsf M_2(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))$. The coefficient basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the conjugate display: with $C_{\Pi}$ the Peirce change of <em>The Product, the Trace and the Determinant</em>, the same operator reads $C_{\Pi}(I_2\otimes\mathsf M_2(\tilde Q))C_{\Pi}^{-1}$ there.</p>
 <h2 id="the-peirce-table">The Peirce Table</h2>
 <p><strong>The four Peirce elements multiply as the four matrix units, and the table is the same table as in the $2\times2$ model.</strong></p>
 <div class="table-scroll"><table>
@@ -154,7 +154,7 @@ $$</p>
 \qquad
 \mathsf{M}_4^{L}(\vec\Upsilon_+)=I_2\otimes E_{21}=\operatorname{diag}(E_{21},E_{21}).
 $$</p>
-<p>Each has rank two, each is an idempotent or a square-zero element. In the coefficient basis the same four matrices are $S(I_2\otimes E_{ij})S^{-1}$, whose entries are the coefficients of the corresponding Peirce element.</p>
+<p>Each has rank two, each is an idempotent or a square-zero element. In the coefficient basis the same four matrices are $C_{\Pi}(I_2\otimes E_{ij})C_{\Pi}^{-1}$, whose entries are the coefficients of the corresponding Peirce element.</p>
 <p><strong>Proposition.</strong> Every element has a unique expansion</p>
 <p>$$
 \tilde Q=a_{11}\tilde\Pi_++a_{12}\vec\Upsilon_-+a_{21}\vec\Upsilon_++a_{22}\tilde\Pi_-,
@@ -164,7 +164,7 @@ $$</p>
 \mathsf{M}_4^{L}(\tilde Q)=\operatorname{diag}(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q))
 =I_2\otimes\mathsf M_2(\tilde Q),
 \qquad
-\mathsf M_{4,\mathrm{coef}}^{L}(\tilde Q)=\mathsf S\bigl(I_2\otimes\mathsf M_2(\tilde Q)\bigr)\mathsf S^{-1}.
+\mathsf M_{4,\mathrm{coef}}^{L}(\tilde Q)=C_{\Pi}\bigl(I_2\otimes\mathsf M_2(\tilde Q)\bigr)C_{\Pi}^{-1}.
 $$</p>
 <p><em>Proof.</em> The Peirce basis is a basis, so the expansion is unique and the map is a linear bijection. It is multiplicative because the images of the four basis elements are the four matrix units. The second statement follows by applying the first to each basis element and extending by linearity; it is the explicit form of the block theorem of §<em>The Two Spinor Planes in the Regular Model</em>.</p>
 <p><strong>The corner coordinates.</strong> The four coefficients are recovered by the trace pairing of the $2\times2$ model,</p>
@@ -272,8 +272,8 @@ $$</p>
 <td>the Peirce basis, ordered by contiguous planes</td>
 </tr>
 <tr>
-<td>$\mathsf S$</td>
-<td>the matrix whose columns are the four Peirce elements in coefficient coordinates</td>
+<td>$C_{\Pi}$</td>
+<td>the Peirce change: its columns are the four Peirce elements in coefficient coordinates</td>
 </tr>
 <tr>
 <td>$\mathsf M_2(\tilde Q)$</td>

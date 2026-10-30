@@ -228,35 +228,35 @@ of real dimension $6$. In the biquaternion basis it is
 $$
 \mathrm{G}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\ \oplus\ \operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
-the first summand being the <strong>rotation generators</strong> (anti-Hermitian, in $\mathbb{H}_{\mathbb{B}}$) and the second the <strong>boost generators</strong> (Hermitian, in $\mathbb{M}_+$). Write
+the first summand being the <strong>rotation generators</strong> (anti-Hermitian, in $\mathbb{H}_{\mathbb{B}}$) and the second the <strong>boost generators</strong> (Hermitian, in $\mathbb{M}_+$). The rotation generators are the vector units, and the boost generators are their $i$-multiples,
 $$
-J_k=\vec e_k,\qquad K_k=i \vec e_k \qquad (k=1,2,3),
+\vec e_k,\qquad K_k=i \vec e_k \qquad (k=1,2,3),
 $$
-so that $J_k$ generate rotations and $K_k$ generate boosts. With $\varepsilon_{jkl}$ the Levi-Civita symbol ($\vec e_x\vec e_y=\vec e_z$), the commutation relations, computed by direct expansion in the quaternion basis, are
+so that $\vec e_k$ generate rotations and $K_k$ generate boosts. With $\varepsilon_{jkl}$ the Levi-Civita symbol ($\vec e_x\vec e_y=\vec e_z$), the commutation relations, computed by direct expansion in the quaternion basis, are
 $$
-\boxed{\;[J_j,J_k]=2\varepsilon_{jkl}J_l,\qquad
-[J_j,K_k]=2\varepsilon_{jkl}K_l,\qquad
-[K_j,K_k]=-2\varepsilon_{jkl}J_l\;}.
+\boxed{\;[\vec e_j,\vec e_k]=2\varepsilon_{jkl}\vec e_l,\qquad
+[\vec e_j,K_k]=2\varepsilon_{jkl}K_l,\qquad
+[K_j,K_k]=-2\varepsilon_{jkl}\vec e_l\;}.
 $$
 The first two say that the rotations form a subalgebra $\mathrm{SU}(2)\cong\mathrm{SO}(3)$ (the compact part) and that the boosts transform as a vector under it. The third is the infinitesimal statement that <strong>the boosts do not close</strong>: the bracket of two boost generators is a rotation generator. This is the Lie-algebraic origin of the Thomas–Wigner rotation and of the non-closure of the preceding section.</p>
 <p><strong>Relation to $\mathrm{SO}(1,3)$ and to $\mathrm{SL}(2,\mathbb{C})$.</strong> The real Lie algebra $\mathrm{G}$ is isomorphic to the Lie algebra $\mathrm{SO}(1,3)$ of the Lorentz group, the isomorphism being the infinitesimal form of $\mathrm{Ad}$. It is also, by definition, the real Lie algebra underlying the complex Lie algebra $\mathrm{SL}(2,\mathbb{C})$. The exponential map $\exp:\mathrm{G}\to SL(2,\mathbb{C})$ is neither injective nor surjective. It is not injective: an element $M$ maps to $e_t$ exactly when it is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$, so the preimage of $e_t$ is nonzero — indeed a union of conjugacy classes, not a discrete set. It is not surjective either: for example, a matrix with a nontrivial Jordan block and eigenvalue $-1$ is not the exponential of any traceless matrix. What is true is that every unit-norm biquaternion is a <strong>product</strong> of exponentials, because the group is connected and $\exp$ is a local diffeomorphism at the identity. The Cartan decomposition makes this explicit: a boost is the exponential of a boost generator and a rotation is the exponential of a rotation generator, so every rotor is
 $$
 \tilde U_{\mathrm L}=\exp(M)\exp(N),\qquad
 M\in\operatorname{span}_{\mathbb{R}}\{K_1,K_2,K_3\},\quad
-N\in\operatorname{span}_{\mathbb{R}}\{J_1,J_2,J_3\}.
+N\in\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}.
 $$
 The exponential map and its failure of surjectivity are treated in the companion article on the biquaternion exponential.</p>
-<p><strong>The Killing form.</strong> The Lie algebra is semisimple, and its Killing form is nondegenerate. In the basis $(J_1,J_2,J_3,K_1,K_2,K_3)$ it is diagonal,
+<p><strong>The Killing form.</strong> The Lie algebra is semisimple, and its Killing form is nondegenerate. In the basis $(\vec e_x,\vec e_y,\vec e_z,K_1,K_2,K_3)$ it is diagonal,
 $$
-B(J_j,J_k)=-16\,\delta_{jk},\qquad
+B(\vec e_j,\vec e_k)=-16\,\delta_{jk},\qquad
 B(K_j,K_k)=+16\,\delta_{jk},\qquad
-B(J_j,K_k)=0,
+B(\vec e_j,K_k)=0,
 $$
 (computed from $B(M,N)=\operatorname{tr}(\operatorname{ad}M\,\operatorname{ad}N)$ in this algebra). Its signature is therefore $(3,3)$: negative definite on the compact rotation subalgebra and positive definite on the complementary boost directions. The indefiniteness is the Lie-algebraic expression of the non-compactness of $SL(2,\mathbb{C})$ and of the Lorentz group.</p>
-<h2 id="the-two-math179-halves">The Two $\mathrm{SU}(2)$ Halves</h2>
+<h2 id="the-two-math180-halves">The Two $\mathrm{SU}(2)$ Halves</h2>
 <p>The complexification of the real Lie algebra $\mathrm{G}$ splits. Let $\mathsf{i}$ denote the <strong>complexification unit</strong>, which is a formal scalar and is not the scalar imaginary $i\in\mathbb{B}$. Define
 $$
-N_k^{\pm}=\frac{1}{2}\bigl(J_k\pm \mathsf{i}\,K_k\bigr)
+N_k^{\pm}=\frac{1}{2}\bigl(\vec e_k\pm \mathsf{i}\,K_k\bigr)
 =\frac{1}{2}\bigl(\vec e_k\pm \mathsf{i}\,(i \vec e_k)\bigr),\qquad k=1,2,3 .
 $$
 A direct computation using the commutation relations above gives
@@ -273,7 +273,7 @@ $$
 $$
 The two summands are the <strong>self-dual</strong> and <strong>anti-self-dual</strong> halves of the complexified Lorentz algebra. The rotation generators are the diagonal combination,
 $$
-J_k=N_k^++N_k^-,
+\vec e_k=N_k^++N_k^-,
 $$
 and the boost generators are the off-diagonal combination,
 $$
@@ -418,7 +418,7 @@ Consequently:</p>
 <li>If $m+n\in\tfrac12+\mathbb{Z}$, the element $-e_t$ acts as $-\mathrm{id}$, and the representation does <strong>not</strong> descend: it is a genuine <strong>spin representation</strong> of the double cover $SL(2,\mathbb{C})$. This is the <strong>half-integer-spin</strong> case: $(\tfrac12,0)$, $(0,\tfrac12)$, $(\tfrac32,0)$, and so on.</li>
 </ul>
 <p>The defining spinor $(\tfrac12,0)$ is the simplest example: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde U_{\mathrm L}$ act differently on every spinor, whereas they act identically on every four-vector. In particular a rotation by $2\pi$, which is $e_t$ in the four-vector representation, is $-e_t$ on the spinor module; a rotation by $4\pi$ is the identity on both. The spinor therefore carries a genuine two-valued representation, and the sign of a spinor is a degree of freedom invisible to any four-vector. The companion article on the spinor module develops the spinor action and the bilinear pairings in detail; the point recorded here is its representation-theoretic classification.</p>
-<h2 id="math331-unitary-representations">$*$-Unitary Representations</h2>
+<h2 id="math332-unitary-representations">$*$-Unitary Representations</h2>
 <p>A representation is <strong>$*$-unitary</strong> if it carries an invariant positive-definite Hermitian form. On the defining module $V_{1/2}=\mathbb{C}^2$ the standard Hermitian form is invariant under $SU(2)$, so $V_{1/2}$ is $*$-unitary for the compact form; it is <strong>not</strong> $*$-unitary for $SL(2,\mathbb{C})$, because the non-compact hyperbolic one-parameter subgroups — the boosts of the preceding sections — do not preserve any positive-definite form. More generally a non-compact simple group has no nontrivial finite-dimensional $*$-unitary representation, since the image would lie in a compact group. Hence the only finite-dimensional $*$-unitary representation of the Lorentz group is the trivial one, and no finite-dimensional representation carries a boost on a positive-definite state space.</p>
 <p><strong>Physical interpretation: why the Lorentz action is not $*$-unitary.</strong> Unitarity is what selects the representations that carry a positive-definite probability, so the statement that the finite-dimensional representations of $SL(2,\mathbb{C})$ are not $*$-unitary is the statement that a boost cannot be implemented by a finite-dimensional $*$-unitary operator: a boost is unbounded, and a finite-dimensional $*$-unitary representation of a non-compact group would have compact image. The parameter that makes a boost unbounded is the rapidity, and it is exactly the parameter that a finite multiplet cannot carry.</p>
 <p><strong>The principal series.</strong> Physics recovers unitarity by passing to infinite-dimensional representations. Let $P=MAN$ be the Borel subgroup of upper triangular matrices, with
@@ -438,7 +438,7 @@ the <strong>principal series</strong>: $*$-unitary by construction, irreducible 
 $$
 SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R}),
 $$
-the double cover of $SO(1,2)$, generated in the algebra by the boost $K_k$ whose plane is space-like together with the rotation $J_k$ about the same axis. It is the non-compact rank-one real form of $SL(2,\mathbb{C})$, and it is the same group the companion article <em>The Harmonic Oscillator in Biquaternionic Form</em> meets as the dynamical group $Sp(2,\mathbb{R})$ of the oscillator's squeezings. Its $*$-unitary dual is <strong>not</strong> the principal series of $SL(2,\mathbb{C})$: being of rank one it consists of the trivial representation, the <strong>discrete series</strong> with parameters in $-\tfrac12\mathbb{N}$, the <strong>continuous series</strong> with a real parameter, and the complementary series. Its homogeneous spaces are the two hyperboloids of $\mathbb{R}^{1,2}$: the time-like one, whose vector stabiliser is the compact $\mathrm{U}(1)$, and the space-like one, whose vector stabiliser is the non-compact one-parameter subgroup of boosts.</p>
+the double cover of $SO(1,2)$, generated in the algebra by the boost $K_k$ whose plane is space-like together with the rotation $\vec e_k$ about the same axis. It is the non-compact rank-one real form of $SL(2,\mathbb{C})$, and it is the same group the companion article <em>The Harmonic Oscillator in Biquaternionic Form</em> meets as the dynamical group $Sp(2,\mathbb{R})$ of the oscillator's squeezings. Its $*$-unitary dual is <strong>not</strong> the principal series of $SL(2,\mathbb{C})$: being of rank one it consists of the trivial representation, the <strong>discrete series</strong> with parameters in $-\tfrac12\mathbb{N}$, the <strong>continuous series</strong> with a real parameter, and the complementary series. Its homogeneous spaces are the two hyperboloids of $\mathbb{R}^{1,2}$: the time-like one, whose vector stabiliser is the compact $\mathrm{U}(1)$, and the space-like one, whose vector stabiliser is the non-compact one-parameter subgroup of boosts.</p>
 <p><strong>The three spaces, and the three spinor models.</strong> Two groups and three transitive spaces are what a spinfoam boundary uses:
 $$
 S^2=SU(2)/\mathrm{U}(1),\qquad H^\pm=SU(1,1)/\mathrm{U}(1),\qquad H^{sl}\ (\text{stabiliser }SO(1,1)),
@@ -464,7 +464,7 @@ $$
 {\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\theta},
 $$
 about the axis $\vec u_x\times\vec u_y$; the boost factor has the composite rapidity $\cosh\psi_{\mathrm c}=\cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\theta$. Every unit-norm biquaternion has a unique polar decomposition $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ into a boost and a rotation.</p>
-<p>The real Lie algebra is $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rotations $J_k=\vec e_k$ and boosts $K_k=i\vec e_k$, with $[K_j,K_k]=-2\varepsilon_{jkl}J_l$; its complexification splits into two commuting $\mathrm{SU}(2)$'s, the self-dual and anti-self-dual halves. The finite-dimensional irreducibles are the $(m,n)$, $m,n\in\tfrac12\mathbb{Z}_{\geq0}$, of dimension $(2m+1)(2n+1)$; the biquaternion algebra carries $(\tfrac12,\tfrac12)$ under conjugation. Representations with $m+n\in\mathbb{Z}$ descend to $SO^+(1,3)$; those with $m+n\in\tfrac12+\mathbb{Z}$ are genuine spin representations of the double cover.</p>
+<p>The real Lie algebra is $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rotations $\vec e_k$ and boosts $K_k=i\vec e_k$, with $[K_j,K_k]=-2\varepsilon_{jkl}\vec e_l$; its complexification splits into two commuting $\mathrm{SU}(2)$'s, the self-dual and anti-self-dual halves. The finite-dimensional irreducibles are the $(m,n)$, $m,n\in\tfrac12\mathbb{Z}_{\geq0}$, of dimension $(2m+1)(2n+1)$; the biquaternion algebra carries $(\tfrac12,\tfrac12)$ under conjugation. Representations with $m+n\in\mathbb{Z}$ descend to $SO^+(1,3)$; those with $m+n\in\tfrac12+\mathbb{Z}$ are genuine spin representations of the double cover.</p>
 <p>The group that carries the transformations is represented as follows. The group of units is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$, of real dimension $8$, with the unit-norm subgroup $SL(2,\mathbb{C})$, the maximal compact subgroups $\mathrm{U}(2)$ and $SU(2)$, and the finite-dimensional algebraic representations of $GL_2(\mathbb{C})$ parameterised by the highest weight $(\lambda_1,\lambda_2)$. The defining module $V_{1/2}=\mathbb{C}^2$ is self-dual, and its conjugate is the other chirality: the two are the Weyl spinors, their sum is the Dirac spinor and their tensor product the four-vector representation $(\tfrac12,\tfrac12)$; the adjoint representation is $(1,0)\oplus(0,1)$. Tensor products obey the Clebsch–Gordan rule, with the ballot numbers counting the total-spin sectors of the tensor powers of the spinor. Unitarity is preserved by complexification only for the compact subgroup $SU(2)$; the only finite-dimensional $*$-unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the $*$-unitary representations are the infinite-dimensional principal and complementary series, the mode content of a field on the mass shell. The subgroup fixing a space-like direction is $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$, the double cover of $SO(1,2)$, whose $*$-unitary dual is the discrete and continuous series rather than the principal series of the full group; it acts on the sphere $S^2=SU(2)/\mathrm{U}(1)$ and on the two hyperboloids $H^\pm=SU(1,1)/\mathrm{U}(1)$ and $H^{sl}$, each modelled on one or two spinors of the defining module with the definite or the indefinite pairing.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -536,11 +536,11 @@ about the axis $\vec u_x\times\vec u_y$; the boost factor has the composite rapi
 <td>Cartan (polar) decomposition: boost times rotation</td>
 </tr>
 <tr>
-<td>$J_k=\vec e_k$, $K_k=i\vec e_k$</td>
+<td>$\vec e_k$, $K_k=i\vec e_k$</td>
 <td>Rotation and boost generators</td>
 </tr>
 <tr>
-<td>$[J_j,J_k]=2\varepsilon_{jkl}J_l$, $[J_j,K_k]=2\varepsilon_{jkl}K_l$, $[K_j,K_k]=-2\varepsilon_{jkl}J_l$</td>
+<td>$[\vec e_j,\vec e_k]=2\varepsilon_{jkl}\vec e_l$, $[\vec e_j,K_k]=2\varepsilon_{jkl}K_l$, $[K_j,K_k]=-2\varepsilon_{jkl}\vec e_l$</td>
 <td>Lie brackets</td>
 </tr>
 <tr>
